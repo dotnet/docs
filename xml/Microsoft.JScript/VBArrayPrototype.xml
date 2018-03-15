@@ -1,7 +1,10 @@
-<Type Name="VBArrayPrototype" FullName="Microsoft.JScript.VBArrayPrototype">
+﻿<Type Name="VBArrayPrototype" FullName="Microsoft.JScript.VBArrayPrototype">
   <TypeSignature Language="C#" Value="public class VBArrayPrototype : Microsoft.JScript.JSObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VBArrayPrototype extends Microsoft.JScript.JSObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.VBArrayPrototype" />
+  <TypeSignature Language="VB.NET" Value="Public Class VBArrayPrototype&#xA;Inherits JSObject" />
+  <TypeSignature Language="F#" Value="type VBArrayPrototype = class&#xA;    inherit JSObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VBArrayPrototype : Microsoft::JScript::JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -21,6 +24,9 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.VBArrayConstructor constructor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.JScript.VBArrayConstructor constructor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.VBArrayPrototype.constructor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property constructor As VBArrayConstructor" />
+      <MemberSignature Language="F#" Value="member this.constructor : Microsoft.JScript.VBArrayConstructor" Usage="Microsoft.JScript.VBArrayPrototype.constructor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::VBArrayConstructor ^ constructor { Microsoft::JScript::VBArrayConstructor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -41,6 +47,9 @@
       <MemberSignature Language="C#" Value="public static int dimensions (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 dimensions(object thisob) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.VBArrayPrototype.dimensions(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function dimensions (thisob As Object) As Integer" />
+      <MemberSignature Language="F#" Value="static member dimensions : obj -&gt; int" Usage="Microsoft.JScript.VBArrayPrototype.dimensions thisob" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int dimensions(System::Object ^ thisob);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -71,6 +80,9 @@
       <MemberSignature Language="C#" Value="public static object getItem (object thisob, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object getItem(object thisob, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.VBArrayPrototype.getItem(System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function getItem (thisob As Object, ParamArray args As Object()) As Object" />
+      <MemberSignature Language="F#" Value="static member getItem : obj * obj[] -&gt; obj" Usage="Microsoft.JScript.VBArrayPrototype.getItem (thisob, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ getItem(System::Object ^ thisob, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -116,6 +128,9 @@
       <MemberSignature Language="C#" Value="public static int lbound (object thisob, object dimension);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 lbound(object thisob, object dimension) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.VBArrayPrototype.lbound(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function lbound (thisob As Object, dimension As Object) As Integer" />
+      <MemberSignature Language="F#" Value="static member lbound : obj * obj -&gt; int" Usage="Microsoft.JScript.VBArrayPrototype.lbound (thisob, dimension)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int lbound(System::Object ^ thisob, System::Object ^ dimension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -148,6 +163,9 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayObject toArray (object thisob, Microsoft.JScript.Vsa.VsaEngine engine);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.ArrayObject toArray(object thisob, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.VBArrayPrototype.toArray(System.Object,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function toArray (thisob As Object, engine As VsaEngine) As ArrayObject" />
+      <MemberSignature Language="F#" Value="static member toArray : obj * Microsoft.JScript.Vsa.VsaEngine -&gt; Microsoft.JScript.ArrayObject" Usage="Microsoft.JScript.VBArrayPrototype.toArray (thisob, engine)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::ArrayObject ^ toArray(System::Object ^ thisob, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -181,6 +199,9 @@
       <MemberSignature Language="C#" Value="public static int ubound (object thisob, object dimension);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ubound(object thisob, object dimension) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.VBArrayPrototype.ubound(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ubound (thisob As Object, dimension As Object) As Integer" />
+      <MemberSignature Language="F#" Value="static member ubound : obj * obj -&gt; int" Usage="Microsoft.JScript.VBArrayPrototype.ubound (thisob, dimension)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ubound(System::Object ^ thisob, System::Object ^ dimension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="TransactionStatus" FullName="System.EnterpriseServices.TransactionStatus">
+﻿<Type Name="TransactionStatus" FullName="System.EnterpriseServices.TransactionStatus">
   <TypeSignature Language="C#" Value="public enum TransactionStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TransactionStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.TransactionStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TransactionStatus" />
+  <TypeSignature Language="F#" Value="type TransactionStatus = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TransactionStatus" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="Aborted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionStatus Aborted = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionStatus.Aborted" />
+      <MemberSignature Language="VB.NET" Value="Aborted" />
+      <MemberSignature Language="F#" Value="Aborted = 4" Usage="System.EnterpriseServices.TransactionStatus.Aborted" />
+      <MemberSignature Language="C++ CLI" Value="Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -38,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The transaction is aborted.</summary>
       </Docs>
@@ -46,6 +53,9 @@
       <MemberSignature Language="C#" Value="Aborting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionStatus Aborting = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionStatus.Aborting" />
+      <MemberSignature Language="VB.NET" Value="Aborting" />
+      <MemberSignature Language="F#" Value="Aborting = 3" Usage="System.EnterpriseServices.TransactionStatus.Aborting" />
+      <MemberSignature Language="C++ CLI" Value="Aborting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -54,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The transaction is in the process of aborting.</summary>
       </Docs>
@@ -62,6 +73,9 @@
       <MemberSignature Language="C#" Value="Commited" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionStatus Commited = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionStatus.Commited" />
+      <MemberSignature Language="VB.NET" Value="Commited" />
+      <MemberSignature Language="F#" Value="Commited = 0" Usage="System.EnterpriseServices.TransactionStatus.Commited" />
+      <MemberSignature Language="C++ CLI" Value="Commited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -70,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The transaction has committed.</summary>
       </Docs>
@@ -78,6 +93,9 @@
       <MemberSignature Language="C#" Value="LocallyOk" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionStatus LocallyOk = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionStatus.LocallyOk" />
+      <MemberSignature Language="VB.NET" Value="LocallyOk" />
+      <MemberSignature Language="F#" Value="LocallyOk = 1" Usage="System.EnterpriseServices.TransactionStatus.LocallyOk" />
+      <MemberSignature Language="C++ CLI" Value="LocallyOk" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -86,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The transaction has neither committed nor aborted.</summary>
       </Docs>
@@ -94,6 +113,9 @@
       <MemberSignature Language="C#" Value="NoTransaction" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.TransactionStatus NoTransaction = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.TransactionStatus.NoTransaction" />
+      <MemberSignature Language="VB.NET" Value="NoTransaction" />
+      <MemberSignature Language="F#" Value="NoTransaction = 2" Usage="System.EnterpriseServices.TransactionStatus.NoTransaction" />
+      <MemberSignature Language="C++ CLI" Value="NoTransaction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -102,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.TransactionStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>No transactions are being used through <see cref="M:System.EnterpriseServices.ServiceDomain.Enter(System.EnterpriseServices.ServiceConfig)" />.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="PrintDialog" FullName="System.Windows.Forms.PrintDialog">
+﻿<Type Name="PrintDialog" FullName="System.Windows.Forms.PrintDialog">
   <TypeSignature Language="C#" Value="public sealed class PrintDialog : System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintDialog extends System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PrintDialog" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrintDialog&#xA;Inherits CommonDialog" />
+  <TypeSignature Language="F#" Value="type PrintDialog = class&#xA;    inherit CommonDialog" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintDialog sealed : System::Windows::Forms::CommonDialog" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="public PrintDialog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintDialog.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintDialog();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -85,6 +90,9 @@
       <MemberSignature Language="C#" Value="public bool AllowCurrentPage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowCurrentPage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintDialog.AllowCurrentPage" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowCurrentPage As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowCurrentPage : bool with get, set" Usage="System.Windows.Forms.PrintDialog.AllowCurrentPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowCurrentPage { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -116,6 +124,9 @@
       <MemberSignature Language="C#" Value="public bool AllowPrintToFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowPrintToFile" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintDialog.AllowPrintToFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowPrintToFile As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowPrintToFile : bool with get, set" Usage="System.Windows.Forms.PrintDialog.AllowPrintToFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowPrintToFile { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +154,9 @@
       <MemberSignature Language="C#" Value="public bool AllowSelection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowSelection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintDialog.AllowSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowSelection As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowSelection : bool with get, set" Usage="System.Windows.Forms.PrintDialog.AllowSelection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowSelection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -169,6 +183,9 @@
       <MemberSignature Language="C#" Value="public bool AllowSomePages { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowSomePages" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintDialog.AllowSomePages" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowSomePages As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowSomePages : bool with get, set" Usage="System.Windows.Forms.PrintDialog.AllowSomePages" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowSomePages { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -206,6 +223,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PrintDocument Document { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PrintDocument Document" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintDialog.Document" />
+      <MemberSignature Language="VB.NET" Value="Public Property Document As PrintDocument" />
+      <MemberSignature Language="F#" Value="member this.Document : System.Drawing.Printing.PrintDocument with get, set" Usage="System.Windows.Forms.PrintDialog.Document" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrintDocument ^ Document { System::Drawing::Printing::PrintDocument ^ get(); void set(System::Drawing::Printing::PrintDocument ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -241,6 +261,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PrinterSettings PrinterSettings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PrinterSettings PrinterSettings" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintDialog.PrinterSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrinterSettings As PrinterSettings" />
+      <MemberSignature Language="F#" Value="member this.PrinterSettings : System.Drawing.Printing.PrinterSettings with get, set" Usage="System.Windows.Forms.PrintDialog.PrinterSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrinterSettings ^ PrinterSettings { System::Drawing::Printing::PrinterSettings ^ get(); void set(System::Drawing::Printing::PrinterSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -254,7 +277,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -278,6 +301,9 @@
       <MemberSignature Language="C#" Value="public bool PrintToFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PrintToFile" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintDialog.PrintToFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrintToFile As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PrintToFile : bool with get, set" Usage="System.Windows.Forms.PrintDialog.PrintToFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PrintToFile { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -302,6 +328,9 @@
       <MemberSignature Language="C#" Value="public override void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintDialog.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="printDialog.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -320,6 +349,9 @@
       <MemberSignature Language="C#" Value="protected override bool RunDialog (IntPtr hwndOwner);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool RunDialog(native int hwndOwner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintDialog.RunDialog(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function RunDialog (hwndOwner As IntPtr) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.RunDialog : nativeint -&gt; bool" Usage="printDialog.RunDialog hwndOwner" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool RunDialog(IntPtr hwndOwner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -342,6 +374,9 @@
       <MemberSignature Language="C#" Value="public bool ShowHelp { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowHelp" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintDialog.ShowHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowHelp As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowHelp : bool with get, set" Usage="System.Windows.Forms.PrintDialog.ShowHelp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowHelp { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -383,6 +418,9 @@
       <MemberSignature Language="C#" Value="public bool ShowNetwork { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowNetwork" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintDialog.ShowNetwork" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowNetwork As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowNetwork : bool with get, set" Usage="System.Windows.Forms.PrintDialog.ShowNetwork" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowNetwork { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -415,6 +453,9 @@
       <MemberSignature Language="C#" Value="public bool UseEXDialog { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseEXDialog" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintDialog.UseEXDialog" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseEXDialog As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseEXDialog : bool with get, set" Usage="System.Windows.Forms.PrintDialog.UseEXDialog" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseEXDialog { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

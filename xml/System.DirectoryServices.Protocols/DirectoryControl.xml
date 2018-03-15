@@ -1,7 +1,10 @@
-<Type Name="DirectoryControl" FullName="System.DirectoryServices.Protocols.DirectoryControl">
+﻿<Type Name="DirectoryControl" FullName="System.DirectoryServices.Protocols.DirectoryControl">
   <TypeSignature Language="C#" Value="public class DirectoryControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DirectoryControl extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DirectoryControl" />
+  <TypeSignature Language="VB.NET" Value="Public Class DirectoryControl" />
+  <TypeSignature Language="F#" Value="type DirectoryControl = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectoryControl" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public DirectoryControl (string type, byte[] value, bool isCritical, bool serverSide);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, unsigned int8[] value, bool isCritical, bool serverSide) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryControl.#ctor(System.String,System.Byte[],System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, value As Byte(), isCritical As Boolean, serverSide As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DirectoryControl : string * byte[] * bool * bool -&gt; System.DirectoryServices.Protocols.DirectoryControl" Usage="new System.DirectoryServices.Protocols.DirectoryControl (type, value, isCritical, serverSide)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryControl(System::String ^ type, cli::array &lt;System::Byte&gt; ^ value, bool isCritical, bool serverSide);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -47,6 +53,9 @@
       <MemberSignature Language="C#" Value="public virtual byte[] GetValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] GetValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryControl.GetValue" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValue () As Byte()" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : unit -&gt; byte[]&#xA;override this.GetValue : unit -&gt; byte[]" Usage="directoryControl.GetValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ GetValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -67,6 +76,9 @@
       <MemberSignature Language="C#" Value="public bool IsCritical { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCritical" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryControl.IsCritical" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsCritical As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCritical : bool with get, set" Usage="System.DirectoryServices.Protocols.DirectoryControl.IsCritical" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCritical { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -94,6 +106,9 @@
       <MemberSignature Language="C#" Value="public bool ServerSide { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ServerSide" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryControl.ServerSide" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServerSide As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ServerSide : bool with get, set" Usage="System.DirectoryServices.Protocols.DirectoryControl.ServerSide" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ServerSide { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -121,6 +136,9 @@
       <MemberSignature Language="C#" Value="public string Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirectoryControl.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="System.DirectoryServices.Protocols.DirectoryControl.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ThreadPool" FullName="System.Threading.ThreadPool">
+﻿<Type Name="ThreadPool" FullName="System.Threading.ThreadPool">
   <TypeSignature Language="C#" Value="public static class ThreadPool" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ThreadPool extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadPool" />
+  <TypeSignature Language="VB.NET" Value="Public Class ThreadPool" />
+  <TypeSignature Language="F#" Value="type ThreadPool = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ThreadPool abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.ThreadPool</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -87,10 +90,23 @@
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName="BindHandle">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Binds an operating system handle to the <see cref="T:System.Threading.ThreadPool" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BindHandle">
       <MemberSignature Language="C#" Value="public static bool BindHandle (IntPtr osHandle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool BindHandle(native int osHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.BindHandle(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BindHandle (osHandle As IntPtr) As Boolean" />
+      <MemberSignature Language="F#" Value="static member BindHandle : nativeint -&gt; bool" Usage="System.Threading.ThreadPool.BindHandle osHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool BindHandle(IntPtr osHandle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +149,9 @@
       <MemberSignature Language="C#" Value="public static bool BindHandle (System.Runtime.InteropServices.SafeHandle osHandle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool BindHandle(class System.Runtime.InteropServices.SafeHandle osHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.BindHandle(System.Runtime.InteropServices.SafeHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BindHandle (osHandle As SafeHandle) As Boolean" />
+      <MemberSignature Language="F#" Value="static member BindHandle : System.Runtime.InteropServices.SafeHandle -&gt; bool" Usage="System.Threading.ThreadPool.BindHandle osHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool BindHandle(System::Runtime::InteropServices::SafeHandle ^ osHandle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -181,6 +200,9 @@
       <MemberSignature Language="C#" Value="public static void GetAvailableThreads (out int workerThreads, out int completionPortThreads);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetAvailableThreads([out] int32&amp; workerThreads, [out] int32&amp; completionPortThreads) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.GetAvailableThreads(System.Int32@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub GetAvailableThreads (ByRef workerThreads As Integer, ByRef completionPortThreads As Integer)" />
+      <MemberSignature Language="F#" Value="static member GetAvailableThreads :  *  -&gt; unit" Usage="System.Threading.ThreadPool.GetAvailableThreads (workerThreads, completionPortThreads)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GetAvailableThreads([Runtime::InteropServices::Out] int % workerThreads, [Runtime::InteropServices::Out] int % completionPortThreads);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -239,6 +261,9 @@
       <MemberSignature Language="C#" Value="public static void GetMaxThreads (out int workerThreads, out int completionPortThreads);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetMaxThreads([out] int32&amp; workerThreads, [out] int32&amp; completionPortThreads) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.GetMaxThreads(System.Int32@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub GetMaxThreads (ByRef workerThreads As Integer, ByRef completionPortThreads As Integer)" />
+      <MemberSignature Language="F#" Value="static member GetMaxThreads :  *  -&gt; unit" Usage="System.Threading.ThreadPool.GetMaxThreads (workerThreads, completionPortThreads)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GetMaxThreads([Runtime::InteropServices::Out] int % workerThreads, [Runtime::InteropServices::Out] int % completionPortThreads);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -302,6 +327,9 @@
       <MemberSignature Language="C#" Value="public static void GetMinThreads (out int workerThreads, out int completionPortThreads);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetMinThreads([out] int32&amp; workerThreads, [out] int32&amp; completionPortThreads) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.GetMinThreads(System.Int32@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub GetMinThreads (ByRef workerThreads As Integer, ByRef completionPortThreads As Integer)" />
+      <MemberSignature Language="F#" Value="static member GetMinThreads :  *  -&gt; unit" Usage="System.Threading.ThreadPool.GetMinThreads (workerThreads, completionPortThreads)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GetMinThreads([Runtime::InteropServices::Out] int % workerThreads, [Runtime::InteropServices::Out] int % completionPortThreads);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -357,10 +385,23 @@
         <altmember cref="M:System.Threading.ThreadPool.GetAvailableThreads(System.Int32@,System.Int32@)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="QueueUserWorkItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.ThreadPool</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Queues a method for execution. The method executes when a thread pool thread becomes available.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="QueueUserWorkItem">
       <MemberSignature Language="C#" Value="public static bool QueueUserWorkItem (System.Threading.WaitCallback callBack);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool QueueUserWorkItem(class System.Threading.WaitCallback callBack) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QueueUserWorkItem (callBack As WaitCallback) As Boolean" />
+      <MemberSignature Language="F#" Value="static member QueueUserWorkItem : System.Threading.WaitCallback -&gt; bool" Usage="System.Threading.ThreadPool.QueueUserWorkItem callBack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool QueueUserWorkItem(System::Threading::WaitCallback ^ callBack);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -424,6 +465,9 @@
       <MemberSignature Language="C#" Value="public static bool QueueUserWorkItem (System.Threading.WaitCallback callBack, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool QueueUserWorkItem(class System.Threading.WaitCallback callBack, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.QueueUserWorkItem(System.Threading.WaitCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QueueUserWorkItem (callBack As WaitCallback, state As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member QueueUserWorkItem : System.Threading.WaitCallback * obj -&gt; bool" Usage="System.Threading.ThreadPool.QueueUserWorkItem (callBack, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool QueueUserWorkItem(System::Threading::WaitCallback ^ callBack, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -485,10 +529,23 @@
           <paramref name="callBack" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterWaitForSingleObject">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.ThreadPool</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a delegate that is waiting for a <see cref="T:System.Threading.WaitHandle" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RegisterWaitForSingleObject">
       <MemberSignature Language="C#" Value="public static System.Threading.RegisteredWaitHandle RegisterWaitForSingleObject (System.Threading.WaitHandle waitObject, System.Threading.WaitOrTimerCallback callBack, object state, int millisecondsTimeOutInterval, bool executeOnlyOnce);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.RegisteredWaitHandle RegisterWaitForSingleObject(class System.Threading.WaitHandle waitObject, class System.Threading.WaitOrTimerCallback callBack, object state, int32 millisecondsTimeOutInterval, bool executeOnlyOnce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As Integer, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
+      <MemberSignature Language="F#" Value="static member RegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * int * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.RegisterWaitForSingleObject (waitObject, callBack, state, millisecondsTimeOutInterval, executeOnlyOnce)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ RegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, int millisecondsTimeOutInterval, bool executeOnlyOnce);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -563,6 +620,9 @@
       <MemberSignature Language="C#" Value="public static System.Threading.RegisteredWaitHandle RegisterWaitForSingleObject (System.Threading.WaitHandle waitObject, System.Threading.WaitOrTimerCallback callBack, object state, long millisecondsTimeOutInterval, bool executeOnlyOnce);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.RegisteredWaitHandle RegisterWaitForSingleObject(class System.Threading.WaitHandle waitObject, class System.Threading.WaitOrTimerCallback callBack, object state, int64 millisecondsTimeOutInterval, bool executeOnlyOnce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int64,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As Long, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
+      <MemberSignature Language="F#" Value="static member RegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * int64 * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.RegisterWaitForSingleObject (waitObject, callBack, state, millisecondsTimeOutInterval, executeOnlyOnce)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ RegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, long millisecondsTimeOutInterval, bool executeOnlyOnce);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -637,6 +697,9 @@
       <MemberSignature Language="C#" Value="public static System.Threading.RegisteredWaitHandle RegisterWaitForSingleObject (System.Threading.WaitHandle waitObject, System.Threading.WaitOrTimerCallback callBack, object state, TimeSpan timeout, bool executeOnlyOnce);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.RegisteredWaitHandle RegisterWaitForSingleObject(class System.Threading.WaitHandle waitObject, class System.Threading.WaitOrTimerCallback callBack, object state, valuetype System.TimeSpan timeout, bool executeOnlyOnce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.TimeSpan,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, timeout As TimeSpan, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
+      <MemberSignature Language="F#" Value="static member RegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * TimeSpan * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.RegisterWaitForSingleObject (waitObject, callBack, state, timeout, executeOnlyOnce)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ RegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, TimeSpan timeout, bool executeOnlyOnce);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -712,6 +775,9 @@
       <MemberSignature Language="C#" Value="public static System.Threading.RegisteredWaitHandle RegisterWaitForSingleObject (System.Threading.WaitHandle waitObject, System.Threading.WaitOrTimerCallback callBack, object state, uint millisecondsTimeOutInterval, bool executeOnlyOnce);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.RegisteredWaitHandle RegisterWaitForSingleObject(class System.Threading.WaitHandle waitObject, class System.Threading.WaitOrTimerCallback callBack, object state, unsigned int32 millisecondsTimeOutInterval, bool executeOnlyOnce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.RegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.UInt32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As UInteger, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
+      <MemberSignature Language="F#" Value="static member RegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * uint32 * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.RegisterWaitForSingleObject (waitObject, callBack, state, millisecondsTimeOutInterval, executeOnlyOnce)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ RegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, System::UInt32 millisecondsTimeOutInterval, bool executeOnlyOnce);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.ThreadPool</AssemblyName>
@@ -804,6 +870,9 @@
       <MemberSignature Language="C#" Value="public static bool SetMaxThreads (int workerThreads, int completionPortThreads);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SetMaxThreads(int32 workerThreads, int32 completionPortThreads) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.SetMaxThreads(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetMaxThreads (workerThreads As Integer, completionPortThreads As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="static member SetMaxThreads : int * int -&gt; bool" Usage="System.Threading.ThreadPool.SetMaxThreads (workerThreads, completionPortThreads)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SetMaxThreads(int workerThreads, int completionPortThreads);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -861,6 +930,9 @@
       <MemberSignature Language="C#" Value="public static bool SetMinThreads (int workerThreads, int completionPortThreads);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SetMinThreads(int32 workerThreads, int32 completionPortThreads) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.SetMinThreads(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SetMinThreads (workerThreads As Integer, completionPortThreads As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="static member SetMinThreads : int * int -&gt; bool" Usage="System.Threading.ThreadPool.SetMinThreads (workerThreads, completionPortThreads)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SetMinThreads(int workerThreads, int completionPortThreads);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -927,6 +999,8 @@
       <MemberSignature Language="C#" Value="public static bool UnsafeQueueNativeOverlapped (System.Threading.NativeOverlapped* overlapped);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool UnsafeQueueNativeOverlapped(valuetype System.Threading.NativeOverlapped* overlapped) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.UnsafeQueueNativeOverlapped(System.Threading.NativeOverlapped*)" />
+      <MemberSignature Language="F#" Value="static member UnsafeQueueNativeOverlapped : nativeptr&lt;System.Threading.NativeOverlapped&gt; -&gt; bool" Usage="System.Threading.ThreadPool.UnsafeQueueNativeOverlapped overlapped" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool UnsafeQueueNativeOverlapped(System::Threading::NativeOverlapped* overlapped);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -978,6 +1052,9 @@
       <MemberSignature Language="C#" Value="public static bool UnsafeQueueUserWorkItem (System.Threading.WaitCallback callBack, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool UnsafeQueueUserWorkItem(class System.Threading.WaitCallback callBack, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.UnsafeQueueUserWorkItem(System.Threading.WaitCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UnsafeQueueUserWorkItem (callBack As WaitCallback, state As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member UnsafeQueueUserWorkItem : System.Threading.WaitCallback * obj -&gt; bool" Usage="System.Threading.ThreadPool.UnsafeQueueUserWorkItem (callBack, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool UnsafeQueueUserWorkItem(System::Threading::WaitCallback ^ callBack, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1029,10 +1106,23 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UnsafeRegisterWaitForSingleObject">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a delegate to wait for a <see cref="T:System.Threading.WaitHandle" />, but does not propagate the calling stack to the worker thread.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="UnsafeRegisterWaitForSingleObject">
       <MemberSignature Language="C#" Value="public static System.Threading.RegisteredWaitHandle UnsafeRegisterWaitForSingleObject (System.Threading.WaitHandle waitObject, System.Threading.WaitOrTimerCallback callBack, object state, int millisecondsTimeOutInterval, bool executeOnlyOnce);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.RegisteredWaitHandle UnsafeRegisterWaitForSingleObject(class System.Threading.WaitHandle waitObject, class System.Threading.WaitOrTimerCallback callBack, object state, int32 millisecondsTimeOutInterval, bool executeOnlyOnce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UnsafeRegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As Integer, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
+      <MemberSignature Language="F#" Value="static member UnsafeRegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * int * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject (waitObject, callBack, state, millisecondsTimeOutInterval, executeOnlyOnce)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ UnsafeRegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, int millisecondsTimeOutInterval, bool executeOnlyOnce);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1095,6 +1185,9 @@
       <MemberSignature Language="C#" Value="public static System.Threading.RegisteredWaitHandle UnsafeRegisterWaitForSingleObject (System.Threading.WaitHandle waitObject, System.Threading.WaitOrTimerCallback callBack, object state, long millisecondsTimeOutInterval, bool executeOnlyOnce);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.RegisteredWaitHandle UnsafeRegisterWaitForSingleObject(class System.Threading.WaitHandle waitObject, class System.Threading.WaitOrTimerCallback callBack, object state, int64 millisecondsTimeOutInterval, bool executeOnlyOnce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.Int64,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UnsafeRegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As Long, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
+      <MemberSignature Language="F#" Value="static member UnsafeRegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * int64 * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject (waitObject, callBack, state, millisecondsTimeOutInterval, executeOnlyOnce)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ UnsafeRegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, long millisecondsTimeOutInterval, bool executeOnlyOnce);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1157,6 +1250,9 @@
       <MemberSignature Language="C#" Value="public static System.Threading.RegisteredWaitHandle UnsafeRegisterWaitForSingleObject (System.Threading.WaitHandle waitObject, System.Threading.WaitOrTimerCallback callBack, object state, TimeSpan timeout, bool executeOnlyOnce);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.RegisteredWaitHandle UnsafeRegisterWaitForSingleObject(class System.Threading.WaitHandle waitObject, class System.Threading.WaitOrTimerCallback callBack, object state, valuetype System.TimeSpan timeout, bool executeOnlyOnce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.TimeSpan,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UnsafeRegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, timeout As TimeSpan, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
+      <MemberSignature Language="F#" Value="static member UnsafeRegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * TimeSpan * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject (waitObject, callBack, state, timeout, executeOnlyOnce)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ UnsafeRegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, TimeSpan timeout, bool executeOnlyOnce);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1220,6 +1316,9 @@
       <MemberSignature Language="C#" Value="public static System.Threading.RegisteredWaitHandle UnsafeRegisterWaitForSingleObject (System.Threading.WaitHandle waitObject, System.Threading.WaitOrTimerCallback callBack, object state, uint millisecondsTimeOutInterval, bool executeOnlyOnce);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.RegisteredWaitHandle UnsafeRegisterWaitForSingleObject(class System.Threading.WaitHandle waitObject, class System.Threading.WaitOrTimerCallback callBack, object state, unsigned int32 millisecondsTimeOutInterval, bool executeOnlyOnce) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject(System.Threading.WaitHandle,System.Threading.WaitOrTimerCallback,System.Object,System.UInt32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UnsafeRegisterWaitForSingleObject (waitObject As WaitHandle, callBack As WaitOrTimerCallback, state As Object, millisecondsTimeOutInterval As UInteger, executeOnlyOnce As Boolean) As RegisteredWaitHandle" />
+      <MemberSignature Language="F#" Value="static member UnsafeRegisterWaitForSingleObject : System.Threading.WaitHandle * System.Threading.WaitOrTimerCallback * obj * uint32 * bool -&gt; System.Threading.RegisteredWaitHandle" Usage="System.Threading.ThreadPool.UnsafeRegisterWaitForSingleObject (waitObject, callBack, state, millisecondsTimeOutInterval, executeOnlyOnce)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::RegisteredWaitHandle ^ UnsafeRegisterWaitForSingleObject(System::Threading::WaitHandle ^ waitObject, System::Threading::WaitOrTimerCallback ^ callBack, System::Object ^ state, System::UInt32 millisecondsTimeOutInterval, bool executeOnlyOnce);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1280,45 +1379,5 @@
         <permission cref="T:System.Security.SecurityCriticalAttribute">Requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="BindHandle">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Binds an operating system handle to the <see cref="T:System.Threading.ThreadPool" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RegisterWaitForSingleObject">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading.ThreadPool</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers a delegate that is waiting for a <see cref="T:System.Threading.WaitHandle" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="QueueUserWorkItem">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading.ThreadPool</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Queues a method for execution. The method executes when a thread pool thread becomes available.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="UnsafeRegisterWaitForSingleObject">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers a delegate to wait for a <see cref="T:System.Threading.WaitHandle" />, but does not propagate the calling stack to the worker thread.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

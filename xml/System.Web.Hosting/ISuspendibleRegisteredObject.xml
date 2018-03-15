@@ -1,7 +1,10 @@
-<Type Name="ISuspendibleRegisteredObject" FullName="System.Web.Hosting.ISuspendibleRegisteredObject">
+﻿<Type Name="ISuspendibleRegisteredObject" FullName="System.Web.Hosting.ISuspendibleRegisteredObject">
   <TypeSignature Language="C#" Value="public interface ISuspendibleRegisteredObject : System.Web.Hosting.IRegisteredObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISuspendibleRegisteredObject implements class System.Web.Hosting.IRegisteredObject" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ISuspendibleRegisteredObject" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISuspendibleRegisteredObject&#xA;Implements IRegisteredObject" />
+  <TypeSignature Language="F#" Value="type ISuspendibleRegisteredObject = interface&#xA;    interface IRegisteredObject" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISuspendibleRegisteredObject : System::Web::Hosting::IRegisteredObject" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public Action Suspend ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Action Suspend() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ISuspendibleRegisteredObject.Suspend" />
+      <MemberSignature Language="VB.NET" Value="Public Function Suspend () As Action" />
+      <MemberSignature Language="F#" Value="abstract member Suspend : unit -&gt; Action" Usage="iSuspendibleRegisteredObject.Suspend " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Action ^ Suspend();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

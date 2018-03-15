@@ -1,7 +1,10 @@
-<Type Name="HostExecutionContext" FullName="System.Threading.HostExecutionContext">
+﻿<Type Name="HostExecutionContext" FullName="System.Threading.HostExecutionContext">
   <TypeSignature Language="C#" Value="public class HostExecutionContext : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HostExecutionContext extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.HostExecutionContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class HostExecutionContext&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type HostExecutionContext = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HostExecutionContext : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,10 +38,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.HostExecutionContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HostExecutionContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.HostExecutionContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HostExecutionContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +85,9 @@
       <MemberSignature Language="C#" Value="public HostExecutionContext (object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.HostExecutionContext.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As Object)" />
+      <MemberSignature Language="F#" Value="new System.Threading.HostExecutionContext : obj -&gt; System.Threading.HostExecutionContext" Usage="new System.Threading.HostExecutionContext state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HostExecutionContext(System::Object ^ state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -104,6 +122,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.HostExecutionContext CreateCopy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.HostExecutionContext CreateCopy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.HostExecutionContext.CreateCopy" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateCopy () As HostExecutionContext" />
+      <MemberSignature Language="F#" Value="abstract member CreateCopy : unit -&gt; System.Threading.HostExecutionContext&#xA;override this.CreateCopy : unit -&gt; System.Threading.HostExecutionContext" Usage="hostExecutionContext.CreateCopy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::HostExecutionContext ^ CreateCopy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -135,11 +156,27 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases resources used by the current instance of the <see cref="T:System.Threading.HostExecutionContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.HostExecutionContext.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="hostExecutionContext.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -178,6 +215,9 @@
       <MemberSignature Language="C#" Value="public virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.HostExecutionContext.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="hostExecutionContext.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -217,9 +257,12 @@
       </Docs>
     </Member>
     <Member MemberName="State">
-      <MemberSignature Language="C#" Value="protected object State { get; set; }" />
+      <MemberSignature Language="C#" Value="protected internal object State { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object State" />
       <MemberSignature Language="DocId" Value="P:System.Threading.HostExecutionContext.State" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Property State As Object" />
+      <MemberSignature Language="F#" Value="member this.State : obj with get, set" Usage="System.Threading.HostExecutionContext.State" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Object ^ State { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -250,25 +293,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Threading.HostExecutionContext" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases resources used by the current instance of the <see cref="T:System.Threading.HostExecutionContext" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

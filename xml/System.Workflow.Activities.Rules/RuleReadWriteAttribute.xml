@@ -1,7 +1,10 @@
-<Type Name="RuleReadWriteAttribute" FullName="System.Workflow.Activities.Rules.RuleReadWriteAttribute">
+﻿<Type Name="RuleReadWriteAttribute" FullName="System.Workflow.Activities.Rules.RuleReadWriteAttribute">
   <TypeSignature Language="C#" Value="public abstract class RuleReadWriteAttribute : System.Workflow.Activities.Rules.RuleAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RuleReadWriteAttribute extends System.Workflow.Activities.Rules.RuleAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleReadWriteAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class RuleReadWriteAttribute&#xA;Inherits RuleAttribute" />
+  <TypeSignature Language="F#" Value="type RuleReadWriteAttribute = class&#xA;    inherit RuleAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleReadWriteAttribute abstract : System::Workflow::Activities::Rules::RuleAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="protected RuleReadWriteAttribute (string path, System.Workflow.Activities.Rules.RuleAttributeTarget target);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.Workflow.Activities.Rules.RuleAttributeTarget target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleReadWriteAttribute.#ctor(System.String,System.Workflow.Activities.Rules.RuleAttributeTarget)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (path As String, target As RuleAttributeTarget)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleReadWriteAttribute : string * System.Workflow.Activities.Rules.RuleAttributeTarget -&gt; System.Workflow.Activities.Rules.RuleReadWriteAttribute" Usage="new System.Workflow.Activities.Rules.RuleReadWriteAttribute (path, target)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RuleReadWriteAttribute(System::String ^ path, System::Workflow::Activities::Rules::RuleAttributeTarget target);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -40,6 +46,9 @@
       <MemberSignature Language="C#" Value="public string Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleReadWriteAttribute.Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="System.Workflow.Activities.Rules.RuleReadWriteAttribute.Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -58,6 +67,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Activities.Rules.RuleAttributeTarget Target { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.Activities.Rules.RuleAttributeTarget Target" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleReadWriteAttribute.Target" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target As RuleAttributeTarget" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Workflow.Activities.Rules.RuleAttributeTarget" Usage="System.Workflow.Activities.Rules.RuleReadWriteAttribute.Target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleAttributeTarget Target { System::Workflow::Activities::Rules::RuleAttributeTarget get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

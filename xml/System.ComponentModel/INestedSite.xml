@@ -1,7 +1,10 @@
-<Type Name="INestedSite" FullName="System.ComponentModel.INestedSite">
-  <TypeSignature Language="C#" Value="public interface INestedSite : IServiceProvider, System.ComponentModel.ISite" />
+﻿<Type Name="INestedSite" FullName="System.ComponentModel.INestedSite">
+  <TypeSignature Language="C#" Value="public interface INestedSite : System.ComponentModel.ISite" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INestedSite implements class System.ComponentModel.ISite, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.INestedSite" />
+  <TypeSignature Language="VB.NET" Value="Public Interface INestedSite&#xA;Implements ISite" />
+  <TypeSignature Language="F#" Value="type INestedSite = interface&#xA;    interface ISite&#xA;    interface IServiceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class INestedSite : System::ComponentModel::ISite" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -19,9 +22,6 @@
     <Interface>
       <InterfaceName>System.ComponentModel.ISite</InterfaceName>
     </Interface>
-    <Interface>
-      <InterfaceName>System.IServiceProvider</InterfaceName>
-    </Interface>
   </Interfaces>
   <Docs>
     <summary>Provides the ability to retrieve the full nested name of a component.</summary>
@@ -32,6 +32,9 @@
       <MemberSignature Language="C#" Value="public string FullName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FullName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.INestedSite.FullName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullName As String" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="System.ComponentModel.INestedSite.FullName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

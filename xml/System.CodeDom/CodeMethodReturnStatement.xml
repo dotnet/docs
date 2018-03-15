@@ -1,7 +1,10 @@
-<Type Name="CodeMethodReturnStatement" FullName="System.CodeDom.CodeMethodReturnStatement">
+﻿<Type Name="CodeMethodReturnStatement" FullName="System.CodeDom.CodeMethodReturnStatement">
   <TypeSignature Language="C#" Value="public class CodeMethodReturnStatement : System.CodeDom.CodeStatement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeMethodReturnStatement extends System.CodeDom.CodeStatement" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeMethodReturnStatement" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeMethodReturnStatement&#xA;Inherits CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeMethodReturnStatement = class&#xA;    inherit CodeStatement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeMethodReturnStatement : System::CodeDom::CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -43,10 +46,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodReturnStatement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeMethodReturnStatement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodReturnStatement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeMethodReturnStatement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -66,6 +80,9 @@
       <MemberSignature Language="C#" Value="public CodeMethodReturnStatement (System.CodeDom.CodeExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeMethodReturnStatement.#ctor(System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (expression As CodeExpression)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeMethodReturnStatement : System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeMethodReturnStatement" Usage="new System.CodeDom.CodeMethodReturnStatement expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeMethodReturnStatement(System::CodeDom::CodeExpression ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -89,6 +106,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression Expression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression Expression" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeMethodReturnStatement.Expression" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expression As CodeExpression" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeMethodReturnStatement.Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Expression { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -115,14 +135,5 @@
         <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeMethodReturnStatement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

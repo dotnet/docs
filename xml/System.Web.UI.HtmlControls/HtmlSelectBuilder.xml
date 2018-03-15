@@ -1,7 +1,10 @@
-<Type Name="HtmlSelectBuilder" FullName="System.Web.UI.HtmlControls.HtmlSelectBuilder">
+﻿<Type Name="HtmlSelectBuilder" FullName="System.Web.UI.HtmlControls.HtmlSelectBuilder">
   <TypeSignature Language="C#" Value="public class HtmlSelectBuilder : System.Web.UI.ControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlSelectBuilder extends System.Web.UI.ControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlSelectBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class HtmlSelectBuilder&#xA;Inherits ControlBuilder" />
+  <TypeSignature Language="F#" Value="type HtmlSelectBuilder = class&#xA;    inherit ControlBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlSelectBuilder : System::Web::UI::ControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="public HtmlSelectBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlSelectBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlSelectBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +74,9 @@
       <MemberSignature Language="C#" Value="public override bool AllowWhitespaceLiterals ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool AllowWhitespaceLiterals() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlSelectBuilder.AllowWhitespaceLiterals" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AllowWhitespaceLiterals () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.AllowWhitespaceLiterals : unit -&gt; bool" Usage="htmlSelectBuilder.AllowWhitespaceLiterals " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool AllowWhitespaceLiterals();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +104,9 @@
       <MemberSignature Language="C#" Value="public override Type GetChildControlType (string tagName, System.Collections.IDictionary attribs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type GetChildControlType(string tagName, class System.Collections.IDictionary attribs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlSelectBuilder.GetChildControlType(System.String,System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildControlType (tagName As String, attribs As IDictionary) As Type" />
+      <MemberSignature Language="F#" Value="override this.GetChildControlType : string * System.Collections.IDictionary -&gt; Type" Usage="htmlSelectBuilder.GetChildControlType (tagName, attribs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetChildControlType(System::String ^ tagName, System::Collections::IDictionary ^ attribs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

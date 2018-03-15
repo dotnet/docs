@@ -1,7 +1,10 @@
-<Type Name="GridViewDeletedEventHandler" FullName="System.Web.UI.WebControls.GridViewDeletedEventHandler">
+﻿<Type Name="GridViewDeletedEventHandler" FullName="System.Web.UI.WebControls.GridViewDeletedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void GridViewDeletedEventHandler(object sender, GridViewDeletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridViewDeletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewDeletedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub GridViewDeletedEventHandler(sender As Object, e As GridViewDeletedEventArgs)" />
+  <TypeSignature Language="F#" Value="type GridViewDeletedEventHandler = delegate of obj * GridViewDeletedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void GridViewDeletedEventHandler(System::Object ^ sender, GridViewDeletedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

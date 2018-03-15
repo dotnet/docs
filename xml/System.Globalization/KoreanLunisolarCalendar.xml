@@ -1,7 +1,10 @@
-<Type Name="KoreanLunisolarCalendar" FullName="System.Globalization.KoreanLunisolarCalendar">
+﻿<Type Name="KoreanLunisolarCalendar" FullName="System.Globalization.KoreanLunisolarCalendar">
   <TypeSignature Language="C#" Value="public class KoreanLunisolarCalendar : System.Globalization.EastAsianLunisolarCalendar" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit KoreanLunisolarCalendar extends System.Globalization.EastAsianLunisolarCalendar" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.KoreanLunisolarCalendar" />
+  <TypeSignature Language="VB.NET" Value="Public Class KoreanLunisolarCalendar&#xA;Inherits EastAsianLunisolarCalendar" />
+  <TypeSignature Language="F#" Value="type KoreanLunisolarCalendar = class&#xA;    inherit EastAsianLunisolarCalendar" />
+  <TypeSignature Language="C++ CLI" Value="public ref class KoreanLunisolarCalendar : System::Globalization::EastAsianLunisolarCalendar" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization.Calendars</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -51,6 +54,8 @@
       <MemberSignature Language="C#" Value="public KoreanLunisolarCalendar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanLunisolarCalendar.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KoreanLunisolarCalendar();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -79,6 +84,9 @@
       <MemberSignature Language="C#" Value="protected override int DaysInYearBeforeMinSupportedYear { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DaysInYearBeforeMinSupportedYear" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.KoreanLunisolarCalendar.DaysInYearBeforeMinSupportedYear" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DaysInYearBeforeMinSupportedYear As Integer" />
+      <MemberSignature Language="F#" Value="member this.DaysInYearBeforeMinSupportedYear : int" Usage="System.Globalization.KoreanLunisolarCalendar.DaysInYearBeforeMinSupportedYear" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int DaysInYearBeforeMinSupportedYear { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -113,6 +121,9 @@
       <MemberSignature Language="C#" Value="public override int[] Eras { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32[] Eras" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.KoreanLunisolarCalendar.Eras" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Eras As Integer()" />
+      <MemberSignature Language="F#" Value="member this.Eras : int[]" Usage="System.Globalization.KoreanLunisolarCalendar.Eras" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;int&gt; ^ Eras { cli::array &lt;int&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -144,6 +155,9 @@
       <MemberSignature Language="C#" Value="public override int GetEra (DateTime time);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetEra(valuetype System.DateTime time) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.KoreanLunisolarCalendar.GetEra(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEra (time As DateTime) As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetEra : DateTime -&gt; int" Usage="koreanLunisolarCalendar.GetEra time" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetEra(DateTime time);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -181,6 +195,9 @@
       <MemberSignature Language="C#" Value="public const int GregorianEra = 1;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 GregorianEra = (1)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.KoreanLunisolarCalendar.GregorianEra" />
+      <MemberSignature Language="VB.NET" Value="Public Const GregorianEra As Integer  = 1" />
+      <MemberSignature Language="F#" Value="val mutable GregorianEra : int" Usage="System.Globalization.KoreanLunisolarCalendar.GregorianEra" />
+      <MemberSignature Language="C++ CLI" Value="public: int GregorianEra = 1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -217,6 +234,9 @@
       <MemberSignature Language="C#" Value="public override DateTime MaxSupportedDateTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MaxSupportedDateTime" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.KoreanLunisolarCalendar.MaxSupportedDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MaxSupportedDateTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.MaxSupportedDateTime : DateTime" Usage="System.Globalization.KoreanLunisolarCalendar.MaxSupportedDateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime MaxSupportedDateTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>
@@ -248,6 +268,9 @@
       <MemberSignature Language="C#" Value="public override DateTime MinSupportedDateTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime MinSupportedDateTime" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.KoreanLunisolarCalendar.MinSupportedDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MinSupportedDateTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.MinSupportedDateTime : DateTime" Usage="System.Globalization.KoreanLunisolarCalendar.MinSupportedDateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property DateTime MinSupportedDateTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization.Calendars</AssemblyName>

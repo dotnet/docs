@@ -1,7 +1,10 @@
-<Type Name="IXmlDictionary" FullName="System.Xml.IXmlDictionary">
+﻿<Type Name="IXmlDictionary" FullName="System.Xml.IXmlDictionary">
   <TypeSignature Language="C#" Value="public interface IXmlDictionary" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXmlDictionary" />
   <TypeSignature Language="DocId" Value="T:System.Xml.IXmlDictionary" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXmlDictionary" />
+  <TypeSignature Language="F#" Value="type IXmlDictionary = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXmlDictionary" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -50,6 +53,9 @@
       <MemberSignature Language="C#" Value="public bool TryLookup (int key, out System.Xml.XmlDictionaryString result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLookup(int32 key, [out] class System.Xml.XmlDictionaryString&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlDictionary.TryLookup(System.Int32,System.Xml.XmlDictionaryString@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryLookup (key As Integer, ByRef result As XmlDictionaryString) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryLookup : int *  -&gt; bool" Usage="iXmlDictionary.TryLookup (key, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryLookup(int key, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -85,6 +91,9 @@
       <MemberSignature Language="C#" Value="public bool TryLookup (string value, out System.Xml.XmlDictionaryString result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLookup(string value, [out] class System.Xml.XmlDictionaryString&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlDictionary.TryLookup(System.String,System.Xml.XmlDictionaryString@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryLookup (value As String, ByRef result As XmlDictionaryString) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryLookup : string *  -&gt; bool" Usage="iXmlDictionary.TryLookup (value, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryLookup(System::String ^ value, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -120,6 +129,9 @@
       <MemberSignature Language="C#" Value="public bool TryLookup (System.Xml.XmlDictionaryString value, out System.Xml.XmlDictionaryString result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLookup(class System.Xml.XmlDictionaryString value, [out] class System.Xml.XmlDictionaryString&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlDictionary.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryLookup (value As XmlDictionaryString, ByRef result As XmlDictionaryString) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryLookup : System.Xml.XmlDictionaryString *  -&gt; bool" Usage="iXmlDictionary.TryLookup (value, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryLookup(System::Xml::XmlDictionaryString ^ value, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>

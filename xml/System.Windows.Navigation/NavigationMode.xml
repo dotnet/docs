@@ -1,7 +1,10 @@
-<Type Name="NavigationMode" FullName="System.Windows.Navigation.NavigationMode">
+﻿<Type Name="NavigationMode" FullName="System.Windows.Navigation.NavigationMode">
   <TypeSignature Language="C#" Value="public enum NavigationMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NavigationMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigationMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NavigationMode" />
+  <TypeSignature Language="F#" Value="type NavigationMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class NavigationMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="Back" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Navigation.NavigationMode Back = unsigned int8(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationMode.Back" />
+      <MemberSignature Language="VB.NET" Value="Back" />
+      <MemberSignature Language="F#" Value="Back = 1" Usage="System.Windows.Navigation.NavigationMode.Back" />
+      <MemberSignature Language="C++ CLI" Value="Back" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Navigating back to the most recent content in back navigation history. This occurs when the **GoBack** method is called.</summary>
       </Docs>
@@ -49,6 +56,9 @@
       <MemberSignature Language="C#" Value="Forward" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Navigation.NavigationMode Forward = unsigned int8(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationMode.Forward" />
+      <MemberSignature Language="VB.NET" Value="Forward" />
+      <MemberSignature Language="F#" Value="Forward = 2" Usage="System.Windows.Navigation.NavigationMode.Forward" />
+      <MemberSignature Language="C++ CLI" Value="Forward" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -57,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Navigating to the most recent content on forward navigation history. This occurs when the **GoForward** method is called.</summary>
       </Docs>
@@ -65,6 +76,9 @@
       <MemberSignature Language="C#" Value="New" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Navigation.NavigationMode New = unsigned int8(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationMode.New" />
+      <MemberSignature Language="VB.NET" Value="New" />
+      <MemberSignature Language="F#" Value="New = 0" Usage="System.Windows.Navigation.NavigationMode.New" />
+      <MemberSignature Language="C++ CLI" Value="New" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Navigating to new content. This occurs when the **Navigate** method is called, or when **Source** property is set.</summary>
       </Docs>
@@ -81,6 +96,9 @@
       <MemberSignature Language="C#" Value="Refresh" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Navigation.NavigationMode Refresh = unsigned int8(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.NavigationMode.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Refresh" />
+      <MemberSignature Language="F#" Value="Refresh = 3" Usage="System.Windows.Navigation.NavigationMode.Refresh" />
+      <MemberSignature Language="C++ CLI" Value="Refresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -89,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Navigation.NavigationMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Reloading the current content. This occurs when the **Refresh** method is called.</summary>
       </Docs>

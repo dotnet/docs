@@ -1,7 +1,10 @@
-<Type Name="TriggerAction" FullName="Microsoft.SqlServer.Server.TriggerAction">
+﻿<Type Name="TriggerAction" FullName="Microsoft.SqlServer.Server.TriggerAction">
   <TypeSignature Language="C#" Value="public enum TriggerAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TriggerAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.TriggerAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TriggerAction" />
+  <TypeSignature Language="F#" Value="type TriggerAction = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TriggerAction" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="AlterAppRole" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterAppRole = int32(138)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterAppRole" />
+      <MemberSignature Language="VB.NET" Value="AlterAppRole" />
+      <MemberSignature Language="F#" Value="AlterAppRole = 138" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterAppRole" />
+      <MemberSignature Language="C++ CLI" Value="AlterAppRole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -37,6 +43,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>138</MemberValue>
       <Docs>
         <summary>An ALTER APPLICATION ROLE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -45,6 +52,9 @@
       <MemberSignature Language="C#" Value="AlterAssembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterAssembly = int32(102)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterAssembly" />
+      <MemberSignature Language="VB.NET" Value="AlterAssembly" />
+      <MemberSignature Language="F#" Value="AlterAssembly = 102" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterAssembly" />
+      <MemberSignature Language="C++ CLI" Value="AlterAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -54,6 +64,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>102</MemberValue>
       <Docs>
         <summary>An ALTER ASSEMBLY Transact-SQL statement was executed.</summary>
       </Docs>
@@ -62,6 +73,9 @@
       <MemberSignature Language="C#" Value="AlterBinding" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterBinding = int32(175)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterBinding" />
+      <MemberSignature Language="VB.NET" Value="AlterBinding" />
+      <MemberSignature Language="F#" Value="AlterBinding = 175" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterBinding" />
+      <MemberSignature Language="C++ CLI" Value="AlterBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -71,6 +85,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>175</MemberValue>
       <Docs>
         <summary>An ALTER_REMOTE_SERVICE_BINDING event type was specified when an event notification was created on the database or server instance.</summary>
       </Docs>
@@ -79,6 +94,9 @@
       <MemberSignature Language="C#" Value="AlterFunction" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterFunction = int32(62)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterFunction" />
+      <MemberSignature Language="VB.NET" Value="AlterFunction" />
+      <MemberSignature Language="F#" Value="AlterFunction = 62" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterFunction" />
+      <MemberSignature Language="C++ CLI" Value="AlterFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -88,6 +106,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>62</MemberValue>
       <Docs>
         <summary>An ALTER FUNCTION Transact-SQL statement was executed.</summary>
       </Docs>
@@ -96,6 +115,9 @@
       <MemberSignature Language="C#" Value="AlterIndex" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterIndex = int32(25)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterIndex" />
+      <MemberSignature Language="VB.NET" Value="AlterIndex" />
+      <MemberSignature Language="F#" Value="AlterIndex = 25" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterIndex" />
+      <MemberSignature Language="C++ CLI" Value="AlterIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -105,6 +127,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>An ALTER INDEX Transact-SQL statement was executed.</summary>
       </Docs>
@@ -113,6 +136,9 @@
       <MemberSignature Language="C#" Value="AlterLogin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterLogin = int32(145)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterLogin" />
+      <MemberSignature Language="VB.NET" Value="AlterLogin" />
+      <MemberSignature Language="F#" Value="AlterLogin = 145" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterLogin" />
+      <MemberSignature Language="C++ CLI" Value="AlterLogin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -122,6 +148,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>145</MemberValue>
       <Docs>
         <summary>An ALTER LOGIN Transact-SQL statement was executed.</summary>
       </Docs>
@@ -130,6 +157,9 @@
       <MemberSignature Language="C#" Value="AlterPartitionFunction" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterPartitionFunction = int32(192)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterPartitionFunction" />
+      <MemberSignature Language="VB.NET" Value="AlterPartitionFunction" />
+      <MemberSignature Language="F#" Value="AlterPartitionFunction = 192" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterPartitionFunction" />
+      <MemberSignature Language="C++ CLI" Value="AlterPartitionFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -139,6 +169,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>192</MemberValue>
       <Docs>
         <summary>An ALTER PARTITION FUNCTION Transact-SQL statement was executed.</summary>
       </Docs>
@@ -147,6 +178,9 @@
       <MemberSignature Language="C#" Value="AlterPartitionScheme" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterPartitionScheme = int32(195)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterPartitionScheme" />
+      <MemberSignature Language="VB.NET" Value="AlterPartitionScheme" />
+      <MemberSignature Language="F#" Value="AlterPartitionScheme = 195" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterPartitionScheme" />
+      <MemberSignature Language="C++ CLI" Value="AlterPartitionScheme" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -156,6 +190,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>195</MemberValue>
       <Docs>
         <summary>An ALTER PARTITION SCHEME Transact-SQL statement was executed.</summary>
       </Docs>
@@ -164,6 +199,9 @@
       <MemberSignature Language="C#" Value="AlterProcedure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterProcedure = int32(52)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterProcedure" />
+      <MemberSignature Language="VB.NET" Value="AlterProcedure" />
+      <MemberSignature Language="F#" Value="AlterProcedure = 52" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterProcedure" />
+      <MemberSignature Language="C++ CLI" Value="AlterProcedure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -173,6 +211,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>52</MemberValue>
       <Docs>
         <summary>An ALTER PROCEDURE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -181,6 +220,9 @@
       <MemberSignature Language="C#" Value="AlterQueue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterQueue = int32(158)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterQueue" />
+      <MemberSignature Language="VB.NET" Value="AlterQueue" />
+      <MemberSignature Language="F#" Value="AlterQueue = 158" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterQueue" />
+      <MemberSignature Language="C++ CLI" Value="AlterQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -190,6 +232,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>158</MemberValue>
       <Docs>
         <summary>An ALTER QUEUE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -198,6 +241,9 @@
       <MemberSignature Language="C#" Value="AlterRole" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterRole = int32(135)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterRole" />
+      <MemberSignature Language="VB.NET" Value="AlterRole" />
+      <MemberSignature Language="F#" Value="AlterRole = 135" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterRole" />
+      <MemberSignature Language="C++ CLI" Value="AlterRole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -207,6 +253,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>135</MemberValue>
       <Docs>
         <summary>An ALTER ROLE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -215,6 +262,9 @@
       <MemberSignature Language="C#" Value="AlterRoute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterRoute = int32(165)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterRoute" />
+      <MemberSignature Language="VB.NET" Value="AlterRoute" />
+      <MemberSignature Language="F#" Value="AlterRoute = 165" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterRoute" />
+      <MemberSignature Language="C++ CLI" Value="AlterRoute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -224,6 +274,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>165</MemberValue>
       <Docs>
         <summary>An ALTER ROUTE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -232,6 +283,9 @@
       <MemberSignature Language="C#" Value="AlterSchema" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterSchema = int32(142)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterSchema" />
+      <MemberSignature Language="VB.NET" Value="AlterSchema" />
+      <MemberSignature Language="F#" Value="AlterSchema = 142" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterSchema" />
+      <MemberSignature Language="C++ CLI" Value="AlterSchema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -241,6 +295,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>142</MemberValue>
       <Docs>
         <summary>An ALTER SCHEMA Transact-SQL statement was executed.</summary>
       </Docs>
@@ -249,6 +304,9 @@
       <MemberSignature Language="C#" Value="AlterService" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterService = int32(162)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterService" />
+      <MemberSignature Language="VB.NET" Value="AlterService" />
+      <MemberSignature Language="F#" Value="AlterService = 162" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterService" />
+      <MemberSignature Language="C++ CLI" Value="AlterService" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -258,6 +316,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>162</MemberValue>
       <Docs>
         <summary>An ALTER SERVICE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -266,6 +325,9 @@
       <MemberSignature Language="C#" Value="AlterTable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterTable = int32(22)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterTable" />
+      <MemberSignature Language="VB.NET" Value="AlterTable" />
+      <MemberSignature Language="F#" Value="AlterTable = 22" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterTable" />
+      <MemberSignature Language="C++ CLI" Value="AlterTable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -275,6 +337,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>An ALTER TABLE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -283,6 +346,9 @@
       <MemberSignature Language="C#" Value="AlterTrigger" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterTrigger = int32(72)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterTrigger" />
+      <MemberSignature Language="VB.NET" Value="AlterTrigger" />
+      <MemberSignature Language="F#" Value="AlterTrigger = 72" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterTrigger" />
+      <MemberSignature Language="C++ CLI" Value="AlterTrigger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -292,6 +358,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>72</MemberValue>
       <Docs>
         <summary>An ALTER TRIGGER Transact-SQL statement was executed.</summary>
       </Docs>
@@ -300,6 +367,9 @@
       <MemberSignature Language="C#" Value="AlterUser" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterUser = int32(132)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterUser" />
+      <MemberSignature Language="VB.NET" Value="AlterUser" />
+      <MemberSignature Language="F#" Value="AlterUser = 132" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterUser" />
+      <MemberSignature Language="C++ CLI" Value="AlterUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -309,6 +379,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>132</MemberValue>
       <Docs>
         <summary>An ALTER USER Transact-SQL statement was executed.</summary>
       </Docs>
@@ -317,6 +388,9 @@
       <MemberSignature Language="C#" Value="AlterView" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction AlterView = int32(42)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.AlterView" />
+      <MemberSignature Language="VB.NET" Value="AlterView" />
+      <MemberSignature Language="F#" Value="AlterView = 42" Usage="Microsoft.SqlServer.Server.TriggerAction.AlterView" />
+      <MemberSignature Language="C++ CLI" Value="AlterView" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -326,6 +400,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>42</MemberValue>
       <Docs>
         <summary>An ALTER VIEW Transact-SQL statement was executed.</summary>
       </Docs>
@@ -334,6 +409,9 @@
       <MemberSignature Language="C#" Value="CreateAppRole" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateAppRole = int32(137)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateAppRole" />
+      <MemberSignature Language="VB.NET" Value="CreateAppRole" />
+      <MemberSignature Language="F#" Value="CreateAppRole = 137" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateAppRole" />
+      <MemberSignature Language="C++ CLI" Value="CreateAppRole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -343,6 +421,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>137</MemberValue>
       <Docs>
         <summary>A CREATE APPLICATION ROLE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -351,6 +430,9 @@
       <MemberSignature Language="C#" Value="CreateAssembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateAssembly = int32(101)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateAssembly" />
+      <MemberSignature Language="VB.NET" Value="CreateAssembly" />
+      <MemberSignature Language="F#" Value="CreateAssembly = 101" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateAssembly" />
+      <MemberSignature Language="C++ CLI" Value="CreateAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -360,6 +442,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>101</MemberValue>
       <Docs>
         <summary>A CREATE ASSEMBLY Transact-SQL statement was executed.</summary>
       </Docs>
@@ -368,6 +451,9 @@
       <MemberSignature Language="C#" Value="CreateBinding" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateBinding = int32(174)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateBinding" />
+      <MemberSignature Language="VB.NET" Value="CreateBinding" />
+      <MemberSignature Language="F#" Value="CreateBinding = 174" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateBinding" />
+      <MemberSignature Language="C++ CLI" Value="CreateBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -377,6 +463,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>174</MemberValue>
       <Docs>
         <summary>A CREATE_REMOTE_SERVICE_BINDING event type was specified when an event notification was created on the database or server instance.</summary>
       </Docs>
@@ -385,6 +472,9 @@
       <MemberSignature Language="C#" Value="CreateContract" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateContract = int32(154)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateContract" />
+      <MemberSignature Language="VB.NET" Value="CreateContract" />
+      <MemberSignature Language="F#" Value="CreateContract = 154" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateContract" />
+      <MemberSignature Language="C++ CLI" Value="CreateContract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -394,6 +484,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>154</MemberValue>
       <Docs>
         <summary>A CREATE CONTRACT Transact-SQL statement was executed.</summary>
       </Docs>
@@ -402,6 +493,9 @@
       <MemberSignature Language="C#" Value="CreateEventNotification" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateEventNotification = int32(74)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateEventNotification" />
+      <MemberSignature Language="VB.NET" Value="CreateEventNotification" />
+      <MemberSignature Language="F#" Value="CreateEventNotification = 74" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateEventNotification" />
+      <MemberSignature Language="C++ CLI" Value="CreateEventNotification" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -411,6 +505,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>74</MemberValue>
       <Docs>
         <summary>A CREATE EVENT NOTIFICATION Transact-SQL statement was executed.</summary>
       </Docs>
@@ -419,6 +514,9 @@
       <MemberSignature Language="C#" Value="CreateFunction" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateFunction = int32(61)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateFunction" />
+      <MemberSignature Language="VB.NET" Value="CreateFunction" />
+      <MemberSignature Language="F#" Value="CreateFunction = 61" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateFunction" />
+      <MemberSignature Language="C++ CLI" Value="CreateFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -428,6 +526,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>61</MemberValue>
       <Docs>
         <summary>A CREATE FUNCTION Transact-SQL statement was executed.</summary>
       </Docs>
@@ -436,6 +535,9 @@
       <MemberSignature Language="C#" Value="CreateIndex" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateIndex = int32(24)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateIndex" />
+      <MemberSignature Language="VB.NET" Value="CreateIndex" />
+      <MemberSignature Language="F#" Value="CreateIndex = 24" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateIndex" />
+      <MemberSignature Language="C++ CLI" Value="CreateIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -445,6 +547,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>A CREATE INDEX Transact-SQL statement was executed.</summary>
       </Docs>
@@ -453,6 +556,9 @@
       <MemberSignature Language="C#" Value="CreateLogin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateLogin = int32(144)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateLogin" />
+      <MemberSignature Language="VB.NET" Value="CreateLogin" />
+      <MemberSignature Language="F#" Value="CreateLogin = 144" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateLogin" />
+      <MemberSignature Language="C++ CLI" Value="CreateLogin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -462,6 +568,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>144</MemberValue>
       <Docs>
         <summary>A CREATE LOGIN Transact-SQL statement was executed.</summary>
       </Docs>
@@ -470,6 +577,9 @@
       <MemberSignature Language="C#" Value="CreateMsgType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateMsgType = int32(151)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateMsgType" />
+      <MemberSignature Language="VB.NET" Value="CreateMsgType" />
+      <MemberSignature Language="F#" Value="CreateMsgType = 151" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateMsgType" />
+      <MemberSignature Language="C++ CLI" Value="CreateMsgType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -479,6 +589,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>151</MemberValue>
       <Docs>
         <summary>A CREATE MESSAGE TYPE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -487,6 +598,9 @@
       <MemberSignature Language="C#" Value="CreatePartitionFunction" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreatePartitionFunction = int32(191)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreatePartitionFunction" />
+      <MemberSignature Language="VB.NET" Value="CreatePartitionFunction" />
+      <MemberSignature Language="F#" Value="CreatePartitionFunction = 191" Usage="Microsoft.SqlServer.Server.TriggerAction.CreatePartitionFunction" />
+      <MemberSignature Language="C++ CLI" Value="CreatePartitionFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -496,6 +610,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>191</MemberValue>
       <Docs>
         <summary>A CREATE PARTITION FUNCTION Transact-SQL statement was executed.</summary>
       </Docs>
@@ -504,6 +619,9 @@
       <MemberSignature Language="C#" Value="CreatePartitionScheme" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreatePartitionScheme = int32(194)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreatePartitionScheme" />
+      <MemberSignature Language="VB.NET" Value="CreatePartitionScheme" />
+      <MemberSignature Language="F#" Value="CreatePartitionScheme = 194" Usage="Microsoft.SqlServer.Server.TriggerAction.CreatePartitionScheme" />
+      <MemberSignature Language="C++ CLI" Value="CreatePartitionScheme" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -513,6 +631,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>194</MemberValue>
       <Docs>
         <summary>A CREATE PARTITION SCHEME Transact-SQL statement was executed.</summary>
       </Docs>
@@ -521,6 +640,9 @@
       <MemberSignature Language="C#" Value="CreateProcedure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateProcedure = int32(51)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateProcedure" />
+      <MemberSignature Language="VB.NET" Value="CreateProcedure" />
+      <MemberSignature Language="F#" Value="CreateProcedure = 51" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateProcedure" />
+      <MemberSignature Language="C++ CLI" Value="CreateProcedure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -530,6 +652,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>51</MemberValue>
       <Docs>
         <summary>A CREATE PROCEDURE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -538,6 +661,9 @@
       <MemberSignature Language="C#" Value="CreateQueue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateQueue = int32(157)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateQueue" />
+      <MemberSignature Language="VB.NET" Value="CreateQueue" />
+      <MemberSignature Language="F#" Value="CreateQueue = 157" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateQueue" />
+      <MemberSignature Language="C++ CLI" Value="CreateQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -547,6 +673,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>157</MemberValue>
       <Docs>
         <summary>A CREATE QUEUE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -555,6 +682,9 @@
       <MemberSignature Language="C#" Value="CreateRole" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateRole = int32(134)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateRole" />
+      <MemberSignature Language="VB.NET" Value="CreateRole" />
+      <MemberSignature Language="F#" Value="CreateRole = 134" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateRole" />
+      <MemberSignature Language="C++ CLI" Value="CreateRole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -564,6 +694,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>134</MemberValue>
       <Docs>
         <summary>A CREATE ROLE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -572,6 +703,9 @@
       <MemberSignature Language="C#" Value="CreateRoute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateRoute = int32(164)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateRoute" />
+      <MemberSignature Language="VB.NET" Value="CreateRoute" />
+      <MemberSignature Language="F#" Value="CreateRoute = 164" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateRoute" />
+      <MemberSignature Language="C++ CLI" Value="CreateRoute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -581,6 +715,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>164</MemberValue>
       <Docs>
         <summary>A CREATE ROUTE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -589,6 +724,9 @@
       <MemberSignature Language="C#" Value="CreateSchema" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateSchema = int32(141)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateSchema" />
+      <MemberSignature Language="VB.NET" Value="CreateSchema" />
+      <MemberSignature Language="F#" Value="CreateSchema = 141" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateSchema" />
+      <MemberSignature Language="C++ CLI" Value="CreateSchema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -598,6 +736,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>141</MemberValue>
       <Docs>
         <summary>A CREATE SCHEMA Transact-SQL statement was executed.</summary>
       </Docs>
@@ -606,6 +745,9 @@
       <MemberSignature Language="C#" Value="CreateSecurityExpression" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateSecurityExpression = int32(31)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateSecurityExpression" />
+      <MemberSignature Language="VB.NET" Value="CreateSecurityExpression" />
+      <MemberSignature Language="F#" Value="CreateSecurityExpression = 31" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateSecurityExpression" />
+      <MemberSignature Language="C++ CLI" Value="CreateSecurityExpression" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -615,6 +757,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>31</MemberValue>
       <Docs>
         <summary>Not available.</summary>
       </Docs>
@@ -623,6 +766,9 @@
       <MemberSignature Language="C#" Value="CreateService" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateService = int32(161)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateService" />
+      <MemberSignature Language="VB.NET" Value="CreateService" />
+      <MemberSignature Language="F#" Value="CreateService = 161" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateService" />
+      <MemberSignature Language="C++ CLI" Value="CreateService" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -632,6 +778,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>161</MemberValue>
       <Docs>
         <summary>A CREATE SERVICE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -640,6 +787,9 @@
       <MemberSignature Language="C#" Value="CreateSynonym" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateSynonym = int32(34)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateSynonym" />
+      <MemberSignature Language="VB.NET" Value="CreateSynonym" />
+      <MemberSignature Language="F#" Value="CreateSynonym = 34" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateSynonym" />
+      <MemberSignature Language="C++ CLI" Value="CreateSynonym" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -649,6 +799,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>34</MemberValue>
       <Docs>
         <summary>A CREATE SYNONYM Transact-SQL statement was executed.</summary>
       </Docs>
@@ -657,6 +808,9 @@
       <MemberSignature Language="C#" Value="CreateTable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateTable = int32(21)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateTable" />
+      <MemberSignature Language="VB.NET" Value="CreateTable" />
+      <MemberSignature Language="F#" Value="CreateTable = 21" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateTable" />
+      <MemberSignature Language="C++ CLI" Value="CreateTable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -666,6 +820,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>A CREATE TABLE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -674,6 +829,9 @@
       <MemberSignature Language="C#" Value="CreateTrigger" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateTrigger = int32(71)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateTrigger" />
+      <MemberSignature Language="VB.NET" Value="CreateTrigger" />
+      <MemberSignature Language="F#" Value="CreateTrigger = 71" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateTrigger" />
+      <MemberSignature Language="C++ CLI" Value="CreateTrigger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -683,6 +841,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>71</MemberValue>
       <Docs>
         <summary>A CREATE TRIGGER Transact-SQL statement was executed.</summary>
       </Docs>
@@ -691,6 +850,9 @@
       <MemberSignature Language="C#" Value="CreateType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateType = int32(91)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateType" />
+      <MemberSignature Language="VB.NET" Value="CreateType" />
+      <MemberSignature Language="F#" Value="CreateType = 91" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateType" />
+      <MemberSignature Language="C++ CLI" Value="CreateType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -700,6 +862,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>91</MemberValue>
       <Docs>
         <summary>A CREATE TYPE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -708,6 +871,9 @@
       <MemberSignature Language="C#" Value="CreateUser" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateUser = int32(131)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateUser" />
+      <MemberSignature Language="VB.NET" Value="CreateUser" />
+      <MemberSignature Language="F#" Value="CreateUser = 131" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateUser" />
+      <MemberSignature Language="C++ CLI" Value="CreateUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -717,6 +883,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>131</MemberValue>
       <Docs>
         <summary>A CREATE USER Transact-SQL statement was executed.</summary>
       </Docs>
@@ -725,6 +892,9 @@
       <MemberSignature Language="C#" Value="CreateView" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction CreateView = int32(41)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.CreateView" />
+      <MemberSignature Language="VB.NET" Value="CreateView" />
+      <MemberSignature Language="F#" Value="CreateView = 41" Usage="Microsoft.SqlServer.Server.TriggerAction.CreateView" />
+      <MemberSignature Language="C++ CLI" Value="CreateView" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -734,6 +904,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>41</MemberValue>
       <Docs>
         <summary>A CREATE VIEW Transact-SQL statement was executed.</summary>
       </Docs>
@@ -742,6 +913,9 @@
       <MemberSignature Language="C#" Value="Delete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction Delete = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.Delete" />
+      <MemberSignature Language="VB.NET" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 3" Usage="Microsoft.SqlServer.Server.TriggerAction.Delete" />
+      <MemberSignature Language="C++ CLI" Value="Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -751,6 +925,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A DELETE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -759,6 +934,9 @@
       <MemberSignature Language="C#" Value="DenyObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DenyObject = int32(171)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DenyObject" />
+      <MemberSignature Language="VB.NET" Value="DenyObject" />
+      <MemberSignature Language="F#" Value="DenyObject = 171" Usage="Microsoft.SqlServer.Server.TriggerAction.DenyObject" />
+      <MemberSignature Language="C++ CLI" Value="DenyObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -768,6 +946,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>171</MemberValue>
       <Docs>
         <summary>A DENY Object Permissions Transact-SQL statement was executed.</summary>
       </Docs>
@@ -776,6 +955,9 @@
       <MemberSignature Language="C#" Value="DenyStatement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DenyStatement = int32(168)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DenyStatement" />
+      <MemberSignature Language="VB.NET" Value="DenyStatement" />
+      <MemberSignature Language="F#" Value="DenyStatement = 168" Usage="Microsoft.SqlServer.Server.TriggerAction.DenyStatement" />
+      <MemberSignature Language="C++ CLI" Value="DenyStatement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -785,6 +967,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>168</MemberValue>
       <Docs>
         <summary>A DENY Transact-SQL statement was executed.</summary>
       </Docs>
@@ -793,6 +976,9 @@
       <MemberSignature Language="C#" Value="DropAppRole" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropAppRole = int32(139)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropAppRole" />
+      <MemberSignature Language="VB.NET" Value="DropAppRole" />
+      <MemberSignature Language="F#" Value="DropAppRole = 139" Usage="Microsoft.SqlServer.Server.TriggerAction.DropAppRole" />
+      <MemberSignature Language="C++ CLI" Value="DropAppRole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -802,6 +988,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>139</MemberValue>
       <Docs>
         <summary>A DROP APPLICATION ROLE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -810,6 +997,9 @@
       <MemberSignature Language="C#" Value="DropAssembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropAssembly = int32(103)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropAssembly" />
+      <MemberSignature Language="VB.NET" Value="DropAssembly" />
+      <MemberSignature Language="F#" Value="DropAssembly = 103" Usage="Microsoft.SqlServer.Server.TriggerAction.DropAssembly" />
+      <MemberSignature Language="C++ CLI" Value="DropAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -819,6 +1009,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>103</MemberValue>
       <Docs>
         <summary>A DROP ASSEMBLY Transact-SQL statement was executed.</summary>
       </Docs>
@@ -827,6 +1018,9 @@
       <MemberSignature Language="C#" Value="DropBinding" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropBinding = int32(176)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropBinding" />
+      <MemberSignature Language="VB.NET" Value="DropBinding" />
+      <MemberSignature Language="F#" Value="DropBinding = 176" Usage="Microsoft.SqlServer.Server.TriggerAction.DropBinding" />
+      <MemberSignature Language="C++ CLI" Value="DropBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -836,6 +1030,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>176</MemberValue>
       <Docs>
         <summary>A DROP_REMOTE_SERVICE_BINDING event type was specified when an event notification was created on the database or server instance.</summary>
       </Docs>
@@ -844,6 +1039,9 @@
       <MemberSignature Language="C#" Value="DropContract" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropContract = int32(156)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropContract" />
+      <MemberSignature Language="VB.NET" Value="DropContract" />
+      <MemberSignature Language="F#" Value="DropContract = 156" Usage="Microsoft.SqlServer.Server.TriggerAction.DropContract" />
+      <MemberSignature Language="C++ CLI" Value="DropContract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -853,6 +1051,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>156</MemberValue>
       <Docs>
         <summary>A DROP CONTRACT Transact-SQL statement was executed.</summary>
       </Docs>
@@ -861,6 +1060,9 @@
       <MemberSignature Language="C#" Value="DropEventNotification" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropEventNotification = int32(76)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropEventNotification" />
+      <MemberSignature Language="VB.NET" Value="DropEventNotification" />
+      <MemberSignature Language="F#" Value="DropEventNotification = 76" Usage="Microsoft.SqlServer.Server.TriggerAction.DropEventNotification" />
+      <MemberSignature Language="C++ CLI" Value="DropEventNotification" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -870,6 +1072,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>76</MemberValue>
       <Docs>
         <summary>A DROP EVENT NOTIFICATION Transact-SQL statement was executed.</summary>
       </Docs>
@@ -878,6 +1081,9 @@
       <MemberSignature Language="C#" Value="DropFunction" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropFunction = int32(63)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropFunction" />
+      <MemberSignature Language="VB.NET" Value="DropFunction" />
+      <MemberSignature Language="F#" Value="DropFunction = 63" Usage="Microsoft.SqlServer.Server.TriggerAction.DropFunction" />
+      <MemberSignature Language="C++ CLI" Value="DropFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -887,6 +1093,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>63</MemberValue>
       <Docs>
         <summary>A DROP FUNCTION Transact-SQL statement was executed.</summary>
       </Docs>
@@ -895,6 +1102,9 @@
       <MemberSignature Language="C#" Value="DropIndex" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropIndex = int32(26)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropIndex" />
+      <MemberSignature Language="VB.NET" Value="DropIndex" />
+      <MemberSignature Language="F#" Value="DropIndex = 26" Usage="Microsoft.SqlServer.Server.TriggerAction.DropIndex" />
+      <MemberSignature Language="C++ CLI" Value="DropIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -904,6 +1114,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>A DROP INDEX Transact-SQL statement was executed.</summary>
       </Docs>
@@ -912,6 +1123,9 @@
       <MemberSignature Language="C#" Value="DropLogin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropLogin = int32(146)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropLogin" />
+      <MemberSignature Language="VB.NET" Value="DropLogin" />
+      <MemberSignature Language="F#" Value="DropLogin = 146" Usage="Microsoft.SqlServer.Server.TriggerAction.DropLogin" />
+      <MemberSignature Language="C++ CLI" Value="DropLogin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -921,6 +1135,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>146</MemberValue>
       <Docs>
         <summary>A DROP LOGIN Transact-SQL statement was executed.</summary>
       </Docs>
@@ -929,6 +1144,9 @@
       <MemberSignature Language="C#" Value="DropMsgType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropMsgType = int32(153)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropMsgType" />
+      <MemberSignature Language="VB.NET" Value="DropMsgType" />
+      <MemberSignature Language="F#" Value="DropMsgType = 153" Usage="Microsoft.SqlServer.Server.TriggerAction.DropMsgType" />
+      <MemberSignature Language="C++ CLI" Value="DropMsgType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -938,6 +1156,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>153</MemberValue>
       <Docs>
         <summary>A DROP MESSAGE TYPE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -946,6 +1165,9 @@
       <MemberSignature Language="C#" Value="DropPartitionFunction" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropPartitionFunction = int32(193)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropPartitionFunction" />
+      <MemberSignature Language="VB.NET" Value="DropPartitionFunction" />
+      <MemberSignature Language="F#" Value="DropPartitionFunction = 193" Usage="Microsoft.SqlServer.Server.TriggerAction.DropPartitionFunction" />
+      <MemberSignature Language="C++ CLI" Value="DropPartitionFunction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -955,6 +1177,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>193</MemberValue>
       <Docs>
         <summary>A DROP PARTITION FUNCTION Transact-SQL statement was executed.</summary>
       </Docs>
@@ -963,6 +1186,9 @@
       <MemberSignature Language="C#" Value="DropPartitionScheme" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropPartitionScheme = int32(196)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropPartitionScheme" />
+      <MemberSignature Language="VB.NET" Value="DropPartitionScheme" />
+      <MemberSignature Language="F#" Value="DropPartitionScheme = 196" Usage="Microsoft.SqlServer.Server.TriggerAction.DropPartitionScheme" />
+      <MemberSignature Language="C++ CLI" Value="DropPartitionScheme" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -972,6 +1198,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>196</MemberValue>
       <Docs>
         <summary>A DROP PARTITION SCHEME Transact-SQL statement was executed.</summary>
       </Docs>
@@ -980,6 +1207,9 @@
       <MemberSignature Language="C#" Value="DropProcedure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropProcedure = int32(53)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropProcedure" />
+      <MemberSignature Language="VB.NET" Value="DropProcedure" />
+      <MemberSignature Language="F#" Value="DropProcedure = 53" Usage="Microsoft.SqlServer.Server.TriggerAction.DropProcedure" />
+      <MemberSignature Language="C++ CLI" Value="DropProcedure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -989,6 +1219,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>53</MemberValue>
       <Docs>
         <summary>A DROP PROCEDURE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -997,6 +1228,9 @@
       <MemberSignature Language="C#" Value="DropQueue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropQueue = int32(159)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropQueue" />
+      <MemberSignature Language="VB.NET" Value="DropQueue" />
+      <MemberSignature Language="F#" Value="DropQueue = 159" Usage="Microsoft.SqlServer.Server.TriggerAction.DropQueue" />
+      <MemberSignature Language="C++ CLI" Value="DropQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1006,6 +1240,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>159</MemberValue>
       <Docs>
         <summary>A DROP QUEUE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1014,6 +1249,9 @@
       <MemberSignature Language="C#" Value="DropRole" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropRole = int32(136)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropRole" />
+      <MemberSignature Language="VB.NET" Value="DropRole" />
+      <MemberSignature Language="F#" Value="DropRole = 136" Usage="Microsoft.SqlServer.Server.TriggerAction.DropRole" />
+      <MemberSignature Language="C++ CLI" Value="DropRole" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1023,6 +1261,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>136</MemberValue>
       <Docs>
         <summary>A DROP ROLE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1031,6 +1270,9 @@
       <MemberSignature Language="C#" Value="DropRoute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropRoute = int32(166)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropRoute" />
+      <MemberSignature Language="VB.NET" Value="DropRoute" />
+      <MemberSignature Language="F#" Value="DropRoute = 166" Usage="Microsoft.SqlServer.Server.TriggerAction.DropRoute" />
+      <MemberSignature Language="C++ CLI" Value="DropRoute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1040,6 +1282,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>166</MemberValue>
       <Docs>
         <summary>A DROP ROUTE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1048,6 +1291,9 @@
       <MemberSignature Language="C#" Value="DropSchema" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropSchema = int32(143)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropSchema" />
+      <MemberSignature Language="VB.NET" Value="DropSchema" />
+      <MemberSignature Language="F#" Value="DropSchema = 143" Usage="Microsoft.SqlServer.Server.TriggerAction.DropSchema" />
+      <MemberSignature Language="C++ CLI" Value="DropSchema" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1057,6 +1303,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>143</MemberValue>
       <Docs>
         <summary>A DROP SCHEMA Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1065,6 +1312,9 @@
       <MemberSignature Language="C#" Value="DropSecurityExpression" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropSecurityExpression = int32(33)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropSecurityExpression" />
+      <MemberSignature Language="VB.NET" Value="DropSecurityExpression" />
+      <MemberSignature Language="F#" Value="DropSecurityExpression = 33" Usage="Microsoft.SqlServer.Server.TriggerAction.DropSecurityExpression" />
+      <MemberSignature Language="C++ CLI" Value="DropSecurityExpression" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1074,6 +1324,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>33</MemberValue>
       <Docs>
         <summary>Not available.</summary>
       </Docs>
@@ -1082,6 +1333,9 @@
       <MemberSignature Language="C#" Value="DropService" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropService = int32(163)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropService" />
+      <MemberSignature Language="VB.NET" Value="DropService" />
+      <MemberSignature Language="F#" Value="DropService = 163" Usage="Microsoft.SqlServer.Server.TriggerAction.DropService" />
+      <MemberSignature Language="C++ CLI" Value="DropService" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1091,6 +1345,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>163</MemberValue>
       <Docs>
         <summary>A DROP SERVICE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1099,6 +1354,9 @@
       <MemberSignature Language="C#" Value="DropSynonym" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropSynonym = int32(36)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropSynonym" />
+      <MemberSignature Language="VB.NET" Value="DropSynonym" />
+      <MemberSignature Language="F#" Value="DropSynonym = 36" Usage="Microsoft.SqlServer.Server.TriggerAction.DropSynonym" />
+      <MemberSignature Language="C++ CLI" Value="DropSynonym" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1108,6 +1366,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>36</MemberValue>
       <Docs>
         <summary>A DROP SYNONYM Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1116,6 +1375,9 @@
       <MemberSignature Language="C#" Value="DropTable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropTable = int32(23)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropTable" />
+      <MemberSignature Language="VB.NET" Value="DropTable" />
+      <MemberSignature Language="F#" Value="DropTable = 23" Usage="Microsoft.SqlServer.Server.TriggerAction.DropTable" />
+      <MemberSignature Language="C++ CLI" Value="DropTable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1125,6 +1387,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>A DROP TABLE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1133,6 +1396,9 @@
       <MemberSignature Language="C#" Value="DropTrigger" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropTrigger = int32(73)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropTrigger" />
+      <MemberSignature Language="VB.NET" Value="DropTrigger" />
+      <MemberSignature Language="F#" Value="DropTrigger = 73" Usage="Microsoft.SqlServer.Server.TriggerAction.DropTrigger" />
+      <MemberSignature Language="C++ CLI" Value="DropTrigger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1142,6 +1408,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>73</MemberValue>
       <Docs>
         <summary>A DROP TRIGGER Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1150,6 +1417,9 @@
       <MemberSignature Language="C#" Value="DropType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropType = int32(93)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropType" />
+      <MemberSignature Language="VB.NET" Value="DropType" />
+      <MemberSignature Language="F#" Value="DropType = 93" Usage="Microsoft.SqlServer.Server.TriggerAction.DropType" />
+      <MemberSignature Language="C++ CLI" Value="DropType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1159,6 +1429,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>93</MemberValue>
       <Docs>
         <summary>A DROP TYPE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1167,6 +1438,9 @@
       <MemberSignature Language="C#" Value="DropUser" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropUser = int32(133)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropUser" />
+      <MemberSignature Language="VB.NET" Value="DropUser" />
+      <MemberSignature Language="F#" Value="DropUser = 133" Usage="Microsoft.SqlServer.Server.TriggerAction.DropUser" />
+      <MemberSignature Language="C++ CLI" Value="DropUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1176,6 +1450,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>133</MemberValue>
       <Docs>
         <summary>A DROP USER Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1184,6 +1459,9 @@
       <MemberSignature Language="C#" Value="DropView" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction DropView = int32(43)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.DropView" />
+      <MemberSignature Language="VB.NET" Value="DropView" />
+      <MemberSignature Language="F#" Value="DropView = 43" Usage="Microsoft.SqlServer.Server.TriggerAction.DropView" />
+      <MemberSignature Language="C++ CLI" Value="DropView" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1193,6 +1471,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>43</MemberValue>
       <Docs>
         <summary>A DROP VIEW Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1201,6 +1480,9 @@
       <MemberSignature Language="C#" Value="GrantObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction GrantObject = int32(170)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.GrantObject" />
+      <MemberSignature Language="VB.NET" Value="GrantObject" />
+      <MemberSignature Language="F#" Value="GrantObject = 170" Usage="Microsoft.SqlServer.Server.TriggerAction.GrantObject" />
+      <MemberSignature Language="C++ CLI" Value="GrantObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1210,6 +1492,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>170</MemberValue>
       <Docs>
         <summary>A GRANT OBJECT Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1218,6 +1501,9 @@
       <MemberSignature Language="C#" Value="GrantStatement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction GrantStatement = int32(167)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.GrantStatement" />
+      <MemberSignature Language="VB.NET" Value="GrantStatement" />
+      <MemberSignature Language="F#" Value="GrantStatement = 167" Usage="Microsoft.SqlServer.Server.TriggerAction.GrantStatement" />
+      <MemberSignature Language="C++ CLI" Value="GrantStatement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1227,6 +1513,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>167</MemberValue>
       <Docs>
         <summary>A GRANT Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1235,6 +1522,9 @@
       <MemberSignature Language="C#" Value="Insert" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction Insert = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.Insert" />
+      <MemberSignature Language="VB.NET" Value="Insert" />
+      <MemberSignature Language="F#" Value="Insert = 1" Usage="Microsoft.SqlServer.Server.TriggerAction.Insert" />
+      <MemberSignature Language="C++ CLI" Value="Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1244,6 +1534,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An INSERT Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1252,6 +1543,9 @@
       <MemberSignature Language="C#" Value="Invalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction Invalid = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.Invalid" />
+      <MemberSignature Language="VB.NET" Value="Invalid" />
+      <MemberSignature Language="F#" Value="Invalid = 0" Usage="Microsoft.SqlServer.Server.TriggerAction.Invalid" />
+      <MemberSignature Language="C++ CLI" Value="Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1261,6 +1555,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An invalid trigger action, one that is not exposed to the user, occurred.</summary>
       </Docs>
@@ -1269,6 +1564,9 @@
       <MemberSignature Language="C#" Value="RevokeObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction RevokeObject = int32(172)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.RevokeObject" />
+      <MemberSignature Language="VB.NET" Value="RevokeObject" />
+      <MemberSignature Language="F#" Value="RevokeObject = 172" Usage="Microsoft.SqlServer.Server.TriggerAction.RevokeObject" />
+      <MemberSignature Language="C++ CLI" Value="RevokeObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1278,6 +1576,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>172</MemberValue>
       <Docs>
         <summary>A REVOKE OBJECT Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1286,6 +1585,9 @@
       <MemberSignature Language="C#" Value="RevokeStatement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction RevokeStatement = int32(169)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.RevokeStatement" />
+      <MemberSignature Language="VB.NET" Value="RevokeStatement" />
+      <MemberSignature Language="F#" Value="RevokeStatement = 169" Usage="Microsoft.SqlServer.Server.TriggerAction.RevokeStatement" />
+      <MemberSignature Language="C++ CLI" Value="RevokeStatement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1295,6 +1597,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>169</MemberValue>
       <Docs>
         <summary>A REVOKE Transact-SQL statement was executed.</summary>
       </Docs>
@@ -1303,6 +1606,9 @@
       <MemberSignature Language="C#" Value="Update" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.SqlServer.Server.TriggerAction Update = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.SqlServer.Server.TriggerAction.Update" />
+      <MemberSignature Language="VB.NET" Value="Update" />
+      <MemberSignature Language="F#" Value="Update = 2" Usage="Microsoft.SqlServer.Server.TriggerAction.Update" />
+      <MemberSignature Language="C++ CLI" Value="Update" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1312,6 +1618,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.SqlServer.Server.TriggerAction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>An UPDATE Transact-SQL statement was executed.</summary>
       </Docs>

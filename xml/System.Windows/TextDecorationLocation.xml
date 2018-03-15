@@ -1,7 +1,10 @@
-<Type Name="TextDecorationLocation" FullName="System.Windows.TextDecorationLocation">
+﻿<Type Name="TextDecorationLocation" FullName="System.Windows.TextDecorationLocation">
   <TypeSignature Language="C#" Value="public enum TextDecorationLocation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextDecorationLocation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.TextDecorationLocation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TextDecorationLocation" />
+  <TypeSignature Language="F#" Value="type TextDecorationLocation = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TextDecorationLocation" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@ Text decoration types
       <MemberSignature Language="C#" Value="Baseline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextDecorationLocation Baseline = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecorationLocation.Baseline" />
+      <MemberSignature Language="VB.NET" Value="Baseline" />
+      <MemberSignature Language="F#" Value="Baseline = 3" Usage="System.Windows.TextDecorationLocation.Baseline" />
+      <MemberSignature Language="C++ CLI" Value="Baseline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -45,6 +51,7 @@ Text decoration types
       <ReturnValue>
         <ReturnType>System.Windows.TextDecorationLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The vertical position of a baseline.</summary>
       </Docs>
@@ -53,6 +60,9 @@ Text decoration types
       <MemberSignature Language="C#" Value="OverLine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextDecorationLocation OverLine = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecorationLocation.OverLine" />
+      <MemberSignature Language="VB.NET" Value="OverLine" />
+      <MemberSignature Language="F#" Value="OverLine = 1" Usage="System.Windows.TextDecorationLocation.OverLine" />
+      <MemberSignature Language="C++ CLI" Value="OverLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,6 +71,7 @@ Text decoration types
       <ReturnValue>
         <ReturnType>System.Windows.TextDecorationLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The vertical position of an overline.</summary>
       </Docs>
@@ -69,6 +80,9 @@ Text decoration types
       <MemberSignature Language="C#" Value="Strikethrough" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextDecorationLocation Strikethrough = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecorationLocation.Strikethrough" />
+      <MemberSignature Language="VB.NET" Value="Strikethrough" />
+      <MemberSignature Language="F#" Value="Strikethrough = 2" Usage="System.Windows.TextDecorationLocation.Strikethrough" />
+      <MemberSignature Language="C++ CLI" Value="Strikethrough" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +91,7 @@ Text decoration types
       <ReturnValue>
         <ReturnType>System.Windows.TextDecorationLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The vertical position of a strikethrough.</summary>
       </Docs>
@@ -85,6 +100,9 @@ Text decoration types
       <MemberSignature Language="C#" Value="Underline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.TextDecorationLocation Underline = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.TextDecorationLocation.Underline" />
+      <MemberSignature Language="VB.NET" Value="Underline" />
+      <MemberSignature Language="F#" Value="Underline = 0" Usage="System.Windows.TextDecorationLocation.Underline" />
+      <MemberSignature Language="C++ CLI" Value="Underline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -93,6 +111,7 @@ Text decoration types
       <ReturnValue>
         <ReturnType>System.Windows.TextDecorationLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The vertical position of an underline. This is the default value.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="DataGridColumnReorderingEventArgs" FullName="System.Windows.Controls.DataGridColumnReorderingEventArgs">
+﻿<Type Name="DataGridColumnReorderingEventArgs" FullName="System.Windows.Controls.DataGridColumnReorderingEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridColumnReorderingEventArgs : System.Windows.Controls.DataGridColumnEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridColumnReorderingEventArgs extends System.Windows.Controls.DataGridColumnEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridColumnReorderingEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridColumnReorderingEventArgs&#xA;Inherits DataGridColumnEventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridColumnReorderingEventArgs = class&#xA;    inherit DataGridColumnEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridColumnReorderingEventArgs : System::Windows::Controls::DataGridColumnEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public DataGridColumnReorderingEventArgs (System.Windows.Controls.DataGridColumn dataGridColumn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.DataGridColumn dataGridColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumnReorderingEventArgs.#ctor(System.Windows.Controls.DataGridColumn)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DataGridColumnReorderingEventArgs : System.Windows.Controls.DataGridColumn -&gt; System.Windows.Controls.DataGridColumnReorderingEventArgs" Usage="new System.Windows.Controls.DataGridColumnReorderingEventArgs dataGridColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridColumnReorderingEventArgs(System::Windows::Controls::DataGridColumn ^ dataGridColumn);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -37,6 +42,9 @@
       <MemberSignature Language="C#" Value="public bool Cancel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Cancel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumnReorderingEventArgs.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Cancel : bool with get, set" Usage="System.Windows.Controls.DataGridColumnReorderingEventArgs.Cancel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +64,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Control DragIndicator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Control DragIndicator" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumnReorderingEventArgs.DragIndicator" />
+      <MemberSignature Language="VB.NET" Value="Public Property DragIndicator As Control" />
+      <MemberSignature Language="F#" Value="member this.DragIndicator : System.Windows.Controls.Control with get, set" Usage="System.Windows.Controls.DataGridColumnReorderingEventArgs.DragIndicator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Control ^ DragIndicator { System::Windows::Controls::Control ^ get(); void set(System::Windows::Controls::Control ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +85,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Control DropLocationIndicator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Control DropLocationIndicator" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumnReorderingEventArgs.DropLocationIndicator" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropLocationIndicator As Control" />
+      <MemberSignature Language="F#" Value="member this.DropLocationIndicator : System.Windows.Controls.Control with get, set" Usage="System.Windows.Controls.DataGridColumnReorderingEventArgs.DropLocationIndicator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Control ^ DropLocationIndicator { System::Windows::Controls::Control ^ get(); void set(System::Windows::Controls::Control ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

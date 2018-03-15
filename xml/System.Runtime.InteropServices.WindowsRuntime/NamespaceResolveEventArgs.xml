@@ -1,7 +1,10 @@
-<Type Name="NamespaceResolveEventArgs" FullName="System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs">
+﻿<Type Name="NamespaceResolveEventArgs" FullName="System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs">
   <TypeSignature Language="C#" Value="public class NamespaceResolveEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NamespaceResolveEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class NamespaceResolveEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type NamespaceResolveEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NamespaceResolveEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="public NamespaceResolveEventArgs (string namespaceName, System.Reflection.Assembly requestingAssembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string namespaceName, class System.Reflection.Assembly requestingAssembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs.#ctor(System.String,System.Reflection.Assembly)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (namespaceName As String, requestingAssembly As Assembly)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs : string * System.Reflection.Assembly -&gt; System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs" Usage="new System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs (namespaceName, requestingAssembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamespaceResolveEventArgs(System::String ^ namespaceName, System::Reflection::Assembly ^ requestingAssembly);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -46,6 +52,9 @@
       <MemberSignature Language="C#" Value="public string NamespaceName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NamespaceName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs.NamespaceName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceName As String" />
+      <MemberSignature Language="F#" Value="member this.NamespaceName : string" Usage="System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs.NamespaceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -65,6 +74,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Assembly RequestingAssembly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Assembly RequestingAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs.RequestingAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestingAssembly As Assembly" />
+      <MemberSignature Language="F#" Value="member this.RequestingAssembly : System.Reflection.Assembly" Usage="System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs.RequestingAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ RequestingAssembly { System::Reflection::Assembly ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +96,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Reflection.Assembly&gt; ResolvedAssemblies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Reflection.Assembly&gt; ResolvedAssemblies" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs.ResolvedAssemblies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResolvedAssemblies As Collection(Of Assembly)" />
+      <MemberSignature Language="F#" Value="member this.ResolvedAssemblies : System.Collections.ObjectModel.Collection&lt;System.Reflection.Assembly&gt;" Usage="System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs.ResolvedAssemblies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Reflection::Assembly ^&gt; ^ ResolvedAssemblies { System::Collections::ObjectModel::Collection&lt;System::Reflection::Assembly ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

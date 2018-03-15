@@ -1,7 +1,10 @@
-<Type Name="Console" FullName="System.Console">
+﻿<Type Name="Console" FullName="System.Console">
   <TypeSignature Language="C#" Value="public static class Console" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed Console extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Console" />
+  <TypeSignature Language="VB.NET" Value="Public Class Console" />
+  <TypeSignature Language="F#" Value="type Console = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Console abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Console</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -178,6 +181,9 @@
       <MemberSignature Language="C#" Value="public static ConsoleColor BackgroundColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.ConsoleColor BackgroundColor" />
       <MemberSignature Language="DocId" Value="P:System.Console.BackgroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property BackgroundColor As ConsoleColor" />
+      <MemberSignature Language="F#" Value="member this.BackgroundColor : ConsoleColor with get, set" Usage="System.Console.BackgroundColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property ConsoleColor BackgroundColor { ConsoleColor get(); void set(ConsoleColor value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -226,10 +232,23 @@
         <permission cref="T:System.Security.Permissions.UIPermission">for modifying safe top-level windows and subwindows. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.SafeTopLevelWindows" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Beep">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Plays the sound of a beep through the console speaker.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Beep">
       <MemberSignature Language="C#" Value="public static void Beep ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Beep() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Beep" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Beep ()" />
+      <MemberSignature Language="F#" Value="static member Beep : unit -&gt; unit" Usage="System.Console.Beep " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Beep();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -280,6 +299,9 @@
       <MemberSignature Language="C#" Value="public static void Beep (int frequency, int duration);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Beep(int32 frequency, int32 duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Beep(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Beep (frequency As Integer, duration As Integer)" />
+      <MemberSignature Language="F#" Value="static member Beep : int * int -&gt; unit" Usage="System.Console.Beep (frequency, duration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Beep(int frequency, int duration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -339,6 +361,9 @@
       <MemberSignature Language="C#" Value="public static int BufferHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 BufferHeight" />
       <MemberSignature Language="DocId" Value="P:System.Console.BufferHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property BufferHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.BufferHeight : int with get, set" Usage="System.Console.BufferHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int BufferHeight { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -397,6 +422,9 @@
       <MemberSignature Language="C#" Value="public static int BufferWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 BufferWidth" />
       <MemberSignature Language="DocId" Value="P:System.Console.BufferWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property BufferWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.BufferWidth : int with get, set" Usage="System.Console.BufferWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int BufferWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -453,6 +481,9 @@
       <MemberSignature Language="C#" Value="public static event ConsoleCancelEventHandler CancelKeyPress;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ConsoleCancelEventHandler CancelKeyPress" />
       <MemberSignature Language="DocId" Value="E:System.Console.CancelKeyPress" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event CancelKeyPress As ConsoleCancelEventHandler " />
+      <MemberSignature Language="F#" Value="member this.CancelKeyPress : ConsoleCancelEventHandler " Usage="member this.CancelKeyPress : System.ConsoleCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event ConsoleCancelEventHandler ^ CancelKeyPress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -511,6 +542,9 @@
       <MemberSignature Language="C#" Value="public static bool CapsLock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool CapsLock" />
       <MemberSignature Language="DocId" Value="P:System.Console.CapsLock" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CapsLock As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CapsLock : bool" Usage="System.Console.CapsLock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool CapsLock { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -540,6 +574,9 @@
       <MemberSignature Language="C#" Value="public static void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Clear ()" />
+      <MemberSignature Language="F#" Value="static member Clear : unit -&gt; unit" Usage="System.Console.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -595,6 +632,9 @@
       <MemberSignature Language="C#" Value="public static int CursorLeft { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 CursorLeft" />
       <MemberSignature Language="DocId" Value="P:System.Console.CursorLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property CursorLeft As Integer" />
+      <MemberSignature Language="F#" Value="member this.CursorLeft : int with get, set" Usage="System.Console.CursorLeft" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int CursorLeft { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -642,6 +682,9 @@
       <MemberSignature Language="C#" Value="public static int CursorSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 CursorSize" />
       <MemberSignature Language="DocId" Value="P:System.Console.CursorSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property CursorSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.CursorSize : int with get, set" Usage="System.Console.CursorSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int CursorSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -690,6 +733,9 @@
       <MemberSignature Language="C#" Value="public static int CursorTop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 CursorTop" />
       <MemberSignature Language="DocId" Value="P:System.Console.CursorTop" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property CursorTop As Integer" />
+      <MemberSignature Language="F#" Value="member this.CursorTop : int with get, set" Usage="System.Console.CursorTop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int CursorTop { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -737,6 +783,9 @@
       <MemberSignature Language="C#" Value="public static bool CursorVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool CursorVisible" />
       <MemberSignature Language="DocId" Value="P:System.Console.CursorVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property CursorVisible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CursorVisible : bool with get, set" Usage="System.Console.CursorVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool CursorVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -780,6 +829,9 @@
       <MemberSignature Language="C#" Value="public static System.IO.TextWriter Error { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.IO.TextWriter Error" />
       <MemberSignature Language="DocId" Value="P:System.Console.Error" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Error As TextWriter" />
+      <MemberSignature Language="F#" Value="member this.Error : System.IO.TextWriter" Usage="System.Console.Error" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IO::TextWriter ^ Error { System::IO::TextWriter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -840,6 +892,9 @@
       <MemberSignature Language="C#" Value="public static ConsoleColor ForegroundColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.ConsoleColor ForegroundColor" />
       <MemberSignature Language="DocId" Value="P:System.Console.ForegroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property ForegroundColor As ConsoleColor" />
+      <MemberSignature Language="F#" Value="member this.ForegroundColor : ConsoleColor with get, set" Usage="System.Console.ForegroundColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property ConsoleColor ForegroundColor { ConsoleColor get(); void set(ConsoleColor value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -892,6 +947,9 @@
       <MemberSignature Language="C#" Value="public static System.IO.TextReader In { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.IO.TextReader In" />
       <MemberSignature Language="DocId" Value="P:System.Console.In" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property In As TextReader" />
+      <MemberSignature Language="F#" Value="member this.In : System.IO.TextReader" Usage="System.Console.In" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IO::TextReader ^ In { System::IO::TextReader ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -943,6 +1001,9 @@
       <MemberSignature Language="C#" Value="public static System.Text.Encoding InputEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Text.Encoding InputEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Console.InputEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property InputEncoding As Encoding" />
+      <MemberSignature Language="F#" Value="member this.InputEncoding : System.Text.Encoding with get, set" Usage="System.Console.InputEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Encoding ^ InputEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -985,6 +1046,9 @@
       <MemberSignature Language="C#" Value="public static bool IsErrorRedirected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool IsErrorRedirected" />
       <MemberSignature Language="DocId" Value="P:System.Console.IsErrorRedirected" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsErrorRedirected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsErrorRedirected : bool" Usage="System.Console.IsErrorRedirected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsErrorRedirected { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1017,6 +1081,9 @@
       <MemberSignature Language="C#" Value="public static bool IsInputRedirected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool IsInputRedirected" />
       <MemberSignature Language="DocId" Value="P:System.Console.IsInputRedirected" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsInputRedirected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInputRedirected : bool" Usage="System.Console.IsInputRedirected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsInputRedirected { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1049,6 +1116,9 @@
       <MemberSignature Language="C#" Value="public static bool IsOutputRedirected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool IsOutputRedirected" />
       <MemberSignature Language="DocId" Value="P:System.Console.IsOutputRedirected" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsOutputRedirected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsOutputRedirected : bool" Usage="System.Console.IsOutputRedirected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsOutputRedirected { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1081,6 +1151,9 @@
       <MemberSignature Language="C#" Value="public static bool KeyAvailable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool KeyAvailable" />
       <MemberSignature Language="DocId" Value="P:System.Console.KeyAvailable" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property KeyAvailable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.KeyAvailable : bool" Usage="System.Console.KeyAvailable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool KeyAvailable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1130,6 +1203,9 @@
       <MemberSignature Language="C#" Value="public static int LargestWindowHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 LargestWindowHeight" />
       <MemberSignature Language="DocId" Value="P:System.Console.LargestWindowHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LargestWindowHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.LargestWindowHeight : int" Usage="System.Console.LargestWindowHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int LargestWindowHeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1158,6 +1234,9 @@
       <MemberSignature Language="C#" Value="public static int LargestWindowWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 LargestWindowWidth" />
       <MemberSignature Language="DocId" Value="P:System.Console.LargestWindowWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LargestWindowWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.LargestWindowWidth : int" Usage="System.Console.LargestWindowWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int LargestWindowWidth { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1182,10 +1261,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MoveBufferArea">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies a specified source area of the screen buffer to a specified destination area.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="MoveBufferArea">
       <MemberSignature Language="C#" Value="public static void MoveBufferArea (int sourceLeft, int sourceTop, int sourceWidth, int sourceHeight, int targetLeft, int targetTop);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MoveBufferArea(int32 sourceLeft, int32 sourceTop, int32 sourceWidth, int32 sourceHeight, int32 targetLeft, int32 targetTop) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.MoveBufferArea(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub MoveBufferArea (sourceLeft As Integer, sourceTop As Integer, sourceWidth As Integer, sourceHeight As Integer, targetLeft As Integer, targetTop As Integer)" />
+      <MemberSignature Language="F#" Value="static member MoveBufferArea : int * int * int * int * int * int -&gt; unit" Usage="System.Console.MoveBufferArea (sourceLeft, sourceTop, sourceWidth, sourceHeight, targetLeft, targetTop)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MoveBufferArea(int sourceLeft, int sourceTop, int sourceWidth, int sourceHeight, int targetLeft, int targetTop);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1256,6 +1348,9 @@
       <MemberSignature Language="C#" Value="public static void MoveBufferArea (int sourceLeft, int sourceTop, int sourceWidth, int sourceHeight, int targetLeft, int targetTop, char sourceChar, ConsoleColor sourceForeColor, ConsoleColor sourceBackColor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MoveBufferArea(int32 sourceLeft, int32 sourceTop, int32 sourceWidth, int32 sourceHeight, int32 targetLeft, int32 targetTop, char sourceChar, valuetype System.ConsoleColor sourceForeColor, valuetype System.ConsoleColor sourceBackColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.MoveBufferArea(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Char,System.ConsoleColor,System.ConsoleColor)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub MoveBufferArea (sourceLeft As Integer, sourceTop As Integer, sourceWidth As Integer, sourceHeight As Integer, targetLeft As Integer, targetTop As Integer, sourceChar As Char, sourceForeColor As ConsoleColor, sourceBackColor As ConsoleColor)" />
+      <MemberSignature Language="F#" Value="static member MoveBufferArea : int * int * int * int * int * int * char * ConsoleColor * ConsoleColor -&gt; unit" Usage="System.Console.MoveBufferArea (sourceLeft, sourceTop, sourceWidth, sourceHeight, targetLeft, targetTop, sourceChar, sourceForeColor, sourceBackColor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MoveBufferArea(int sourceLeft, int sourceTop, int sourceWidth, int sourceHeight, int targetLeft, int targetTop, char sourceChar, ConsoleColor sourceForeColor, ConsoleColor sourceBackColor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1335,6 +1430,9 @@
       <MemberSignature Language="C#" Value="public static bool NumberLock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool NumberLock" />
       <MemberSignature Language="DocId" Value="P:System.Console.NumberLock" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NumberLock As Boolean" />
+      <MemberSignature Language="F#" Value="member this.NumberLock : bool" Usage="System.Console.NumberLock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool NumberLock { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1360,10 +1458,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenStandardError">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Acquires the standard error stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OpenStandardError">
       <MemberSignature Language="C#" Value="public static System.IO.Stream OpenStandardError ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream OpenStandardError() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.OpenStandardError" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenStandardError () As Stream" />
+      <MemberSignature Language="F#" Value="static member OpenStandardError : unit -&gt; System.IO.Stream" Usage="System.Console.OpenStandardError " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Stream ^ OpenStandardError();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1413,6 +1524,9 @@
       <MemberSignature Language="C#" Value="public static System.IO.Stream OpenStandardError (int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream OpenStandardError(int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.OpenStandardError(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenStandardError (bufferSize As Integer) As Stream" />
+      <MemberSignature Language="F#" Value="static member OpenStandardError : int -&gt; System.IO.Stream" Usage="System.Console.OpenStandardError bufferSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Stream ^ OpenStandardError(int bufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1452,10 +1566,23 @@
         <altmember cref="M:System.Console.SetError(System.IO.TextWriter)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenStandardInput">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Acquires the standard input stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OpenStandardInput">
       <MemberSignature Language="C#" Value="public static System.IO.Stream OpenStandardInput ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream OpenStandardInput() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.OpenStandardInput" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenStandardInput () As Stream" />
+      <MemberSignature Language="F#" Value="static member OpenStandardInput : unit -&gt; System.IO.Stream" Usage="System.Console.OpenStandardInput " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Stream ^ OpenStandardInput();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1504,6 +1631,9 @@
       <MemberSignature Language="C#" Value="public static System.IO.Stream OpenStandardInput (int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream OpenStandardInput(int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.OpenStandardInput(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenStandardInput (bufferSize As Integer) As Stream" />
+      <MemberSignature Language="F#" Value="static member OpenStandardInput : int -&gt; System.IO.Stream" Usage="System.Console.OpenStandardInput bufferSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Stream ^ OpenStandardInput(int bufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1552,10 +1682,23 @@
         <altmember cref="M:System.Console.SetIn(System.IO.TextReader)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenStandardOutput">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Acquires the standard output stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OpenStandardOutput">
       <MemberSignature Language="C#" Value="public static System.IO.Stream OpenStandardOutput ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream OpenStandardOutput() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.OpenStandardOutput" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenStandardOutput () As Stream" />
+      <MemberSignature Language="F#" Value="static member OpenStandardOutput : unit -&gt; System.IO.Stream" Usage="System.Console.OpenStandardOutput " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Stream ^ OpenStandardOutput();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1604,6 +1747,9 @@
       <MemberSignature Language="C#" Value="public static System.IO.Stream OpenStandardOutput (int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream OpenStandardOutput(int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.OpenStandardOutput(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenStandardOutput (bufferSize As Integer) As Stream" />
+      <MemberSignature Language="F#" Value="static member OpenStandardOutput : int -&gt; System.IO.Stream" Usage="System.Console.OpenStandardOutput bufferSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Stream ^ OpenStandardOutput(int bufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1656,6 +1802,9 @@
       <MemberSignature Language="C#" Value="public static System.IO.TextWriter Out { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.IO.TextWriter Out" />
       <MemberSignature Language="DocId" Value="P:System.Console.Out" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Out As TextWriter" />
+      <MemberSignature Language="F#" Value="member this.Out : System.IO.TextWriter" Usage="System.Console.Out" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::IO::TextWriter ^ Out { System::IO::TextWriter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1704,6 +1853,9 @@
       <MemberSignature Language="C#" Value="public static System.Text.Encoding OutputEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Text.Encoding OutputEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Console.OutputEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property OutputEncoding As Encoding" />
+      <MemberSignature Language="F#" Value="member this.OutputEncoding : System.Text.Encoding with get, set" Usage="System.Console.OutputEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Encoding ^ OutputEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1756,6 +1908,9 @@
       <MemberSignature Language="C#" Value="public static int Read ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 Read() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Read" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Read () As Integer" />
+      <MemberSignature Language="F#" Value="static member Read : unit -&gt; int" Usage="System.Console.Read " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int Read();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1812,10 +1967,23 @@
         <altmember cref="M:System.Console.WriteLine" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadKey">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Obtains the next character or function key pressed by the user.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadKey">
       <MemberSignature Language="C#" Value="public static ConsoleKeyInfo ReadKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ConsoleKeyInfo ReadKey() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.ReadKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadKey () As ConsoleKeyInfo" />
+      <MemberSignature Language="F#" Value="static member ReadKey : unit -&gt; ConsoleKeyInfo" Usage="System.Console.ReadKey " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static ConsoleKeyInfo ReadKey();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1877,6 +2045,9 @@
       <MemberSignature Language="C#" Value="public static ConsoleKeyInfo ReadKey (bool intercept);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.ConsoleKeyInfo ReadKey(bool intercept) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.ReadKey(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadKey (intercept As Boolean) As ConsoleKeyInfo" />
+      <MemberSignature Language="F#" Value="static member ReadKey : bool -&gt; ConsoleKeyInfo" Usage="System.Console.ReadKey intercept" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static ConsoleKeyInfo ReadKey(bool intercept);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1941,6 +2112,9 @@
       <MemberSignature Language="C#" Value="public static string ReadLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ReadLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.ReadLine" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadLine () As String" />
+      <MemberSignature Language="F#" Value="static member ReadLine : unit -&gt; string" Usage="System.Console.ReadLine " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ReadLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2036,6 +2210,9 @@
       <MemberSignature Language="C#" Value="public static void ResetColor ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ResetColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.ResetColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ResetColor ()" />
+      <MemberSignature Language="F#" Value="static member ResetColor : unit -&gt; unit" Usage="System.Console.ResetColor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ResetColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2082,6 +2259,9 @@
       <MemberSignature Language="C#" Value="public static void SetBufferSize (int width, int height);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBufferSize(int32 width, int32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.SetBufferSize(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetBufferSize (width As Integer, height As Integer)" />
+      <MemberSignature Language="F#" Value="static member SetBufferSize : int * int -&gt; unit" Usage="System.Console.SetBufferSize (width, height)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetBufferSize(int width, int height);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2143,6 +2323,9 @@
       <MemberSignature Language="C#" Value="public static void SetCursorPosition (int left, int top);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCursorPosition(int32 left, int32 top) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.SetCursorPosition(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCursorPosition (left As Integer, top As Integer)" />
+      <MemberSignature Language="F#" Value="static member SetCursorPosition : int * int -&gt; unit" Usage="System.Console.SetCursorPosition (left, top)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCursorPosition(int left, int top);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2207,6 +2390,9 @@
       <MemberSignature Language="C#" Value="public static void SetError (System.IO.TextWriter newError);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetError(class System.IO.TextWriter newError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.SetError(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetError (newError As TextWriter)" />
+      <MemberSignature Language="F#" Value="static member SetError : System.IO.TextWriter -&gt; unit" Usage="System.Console.SetError newError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetError(System::IO::TextWriter ^ newError);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2262,6 +2448,9 @@
       <MemberSignature Language="C#" Value="public static void SetIn (System.IO.TextReader newIn);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIn(class System.IO.TextReader newIn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.SetIn(System.IO.TextReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIn (newIn As TextReader)" />
+      <MemberSignature Language="F#" Value="static member SetIn : System.IO.TextReader -&gt; unit" Usage="System.Console.SetIn newIn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIn(System::IO::TextReader ^ newIn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2317,6 +2506,9 @@
       <MemberSignature Language="C#" Value="public static void SetOut (System.IO.TextWriter newOut);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetOut(class System.IO.TextWriter newOut) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.SetOut(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetOut (newOut As TextWriter)" />
+      <MemberSignature Language="F#" Value="static member SetOut : System.IO.TextWriter -&gt; unit" Usage="System.Console.SetOut newOut" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetOut(System::IO::TextWriter ^ newOut);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2376,6 +2568,9 @@
       <MemberSignature Language="C#" Value="public static void SetWindowPosition (int left, int top);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetWindowPosition(int32 left, int32 top) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.SetWindowPosition(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetWindowPosition (left As Integer, top As Integer)" />
+      <MemberSignature Language="F#" Value="static member SetWindowPosition : int * int -&gt; unit" Usage="System.Console.SetWindowPosition (left, top)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetWindowPosition(int left, int top);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2440,6 +2635,9 @@
       <MemberSignature Language="C#" Value="public static void SetWindowSize (int width, int height);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetWindowSize(int32 width, int32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.SetWindowSize(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetWindowSize (width As Integer, height As Integer)" />
+      <MemberSignature Language="F#" Value="static member SetWindowSize : int * int -&gt; unit" Usage="System.Console.SetWindowSize (width, height)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetWindowSize(int width, int height);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2499,6 +2697,9 @@
       <MemberSignature Language="C#" Value="public static string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property string Title" />
       <MemberSignature Language="DocId" Value="P:System.Console.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Console.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2543,6 +2744,9 @@
       <MemberSignature Language="C#" Value="public static bool TreatControlCAsInput { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool TreatControlCAsInput" />
       <MemberSignature Language="DocId" Value="P:System.Console.TreatControlCAsInput" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property TreatControlCAsInput As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TreatControlCAsInput : bool with get, set" Usage="System.Console.TreatControlCAsInput" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool TreatControlCAsInput { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2596,6 +2800,9 @@
       <MemberSignature Language="C#" Value="public static int WindowHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 WindowHeight" />
       <MemberSignature Language="DocId" Value="P:System.Console.WindowHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property WindowHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.WindowHeight : int with get, set" Usage="System.Console.WindowHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int WindowHeight { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2652,6 +2859,9 @@
       <MemberSignature Language="C#" Value="public static int WindowLeft { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 WindowLeft" />
       <MemberSignature Language="DocId" Value="P:System.Console.WindowLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property WindowLeft As Integer" />
+      <MemberSignature Language="F#" Value="member this.WindowLeft : int with get, set" Usage="System.Console.WindowLeft" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int WindowLeft { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2708,6 +2918,9 @@
       <MemberSignature Language="C#" Value="public static int WindowTop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 WindowTop" />
       <MemberSignature Language="DocId" Value="P:System.Console.WindowTop" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property WindowTop As Integer" />
+      <MemberSignature Language="F#" Value="member this.WindowTop : int with get, set" Usage="System.Console.WindowTop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int WindowTop { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2760,6 +2973,9 @@
       <MemberSignature Language="C#" Value="public static int WindowWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 WindowWidth" />
       <MemberSignature Language="DocId" Value="P:System.Console.WindowWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property WindowWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.WindowWidth : int with get, set" Usage="System.Console.WindowWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int WindowWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2812,10 +3028,23 @@
         <exception cref="T:System.IO.IOException">Error reading or writing information.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Console</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the text representation of the specified value or values to the standard output stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public static void Write (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (value As Boolean)" />
+      <MemberSignature Language="F#" Value="static member Write : bool -&gt; unit" Usage="System.Console.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2868,6 +3097,9 @@
       <MemberSignature Language="C#" Value="public static void Write (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (value As Char)" />
+      <MemberSignature Language="F#" Value="static member Write : char -&gt; unit" Usage="System.Console.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2915,6 +3147,9 @@
       <MemberSignature Language="C#" Value="public static void Write (char[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(char[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (buffer As Char())" />
+      <MemberSignature Language="F#" Value="static member Write : char[] -&gt; unit" Usage="System.Console.Write buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(cli::array &lt;char&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2951,6 +3186,9 @@
       <MemberSignature Language="C#" Value="public static void Write (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (value As Decimal)" />
+      <MemberSignature Language="F#" Value="static member Write : decimal -&gt; unit" Usage="System.Console.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3003,6 +3241,9 @@
       <MemberSignature Language="C#" Value="public static void Write (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (value As Double)" />
+      <MemberSignature Language="F#" Value="static member Write : double -&gt; unit" Usage="System.Console.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3055,6 +3296,9 @@
       <MemberSignature Language="C#" Value="public static void Write (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (value As Integer)" />
+      <MemberSignature Language="F#" Value="static member Write : int -&gt; unit" Usage="System.Console.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3107,6 +3351,9 @@
       <MemberSignature Language="C#" Value="public static void Write (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (value As Long)" />
+      <MemberSignature Language="F#" Value="static member Write : int64 -&gt; unit" Usage="System.Console.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3159,6 +3406,9 @@
       <MemberSignature Language="C#" Value="public static void Write (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (value As Object)" />
+      <MemberSignature Language="F#" Value="static member Write : obj -&gt; unit" Usage="System.Console.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3211,6 +3461,9 @@
       <MemberSignature Language="C#" Value="public static void Write (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (value As Single)" />
+      <MemberSignature Language="F#" Value="static member Write : single -&gt; unit" Usage="System.Console.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3263,6 +3516,9 @@
       <MemberSignature Language="C#" Value="public static void Write (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (value As String)" />
+      <MemberSignature Language="F#" Value="static member Write : string -&gt; unit" Usage="System.Console.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3315,6 +3571,9 @@
       <MemberSignature Language="C#" Value="public static void Write (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (value As UInteger)" />
+      <MemberSignature Language="F#" Value="static member Write : uint32 -&gt; unit" Usage="System.Console.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3372,6 +3631,9 @@
       <MemberSignature Language="C#" Value="public static void Write (ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (value As ULong)" />
+      <MemberSignature Language="F#" Value="static member Write : uint64 -&gt; unit" Usage="System.Console.Write value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3429,6 +3691,9 @@
       <MemberSignature Language="C#" Value="public static void Write (string format, object arg0);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(string format, object arg0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (format As String, arg0 As Object)" />
+      <MemberSignature Language="F#" Value="static member Write : string * obj -&gt; unit" Usage="System.Console.Write (format, arg0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3508,6 +3773,9 @@
       <MemberSignature Language="C#" Value="public static void Write (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (format As String, ParamArray arg As Object())" />
+      <MemberSignature Language="F#" Value="static member Write : string * obj[] -&gt; unit" Usage="System.Console.Write (format, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3598,6 +3866,9 @@
       <MemberSignature Language="C#" Value="public static void Write (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (buffer As Char(), index As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="static member Write : char[] * int * int -&gt; unit" Usage="System.Console.Write (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3651,6 +3922,9 @@
       <MemberSignature Language="C#" Value="public static void Write (string format, object arg0, object arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(string format, object arg0, object arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (format As String, arg0 As Object, arg1 As Object)" />
+      <MemberSignature Language="F#" Value="static member Write : string * obj * obj -&gt; unit" Usage="System.Console.Write (format, arg0, arg1)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3732,6 +4006,9 @@
       <MemberSignature Language="C#" Value="public static void Write (string format, object arg0, object arg1, object arg2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(string format, object arg0, object arg1, object arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (format As String, arg0 As Object, arg1 As Object, arg2 As Object)" />
+      <MemberSignature Language="F#" Value="static member Write : string * obj * obj * obj -&gt; unit" Usage="System.Console.Write (format, arg0, arg1, arg2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3815,6 +4092,9 @@
       <MemberSignature Language="C#" Value="public static void Write (string format, object arg0, object arg1, object arg2, object arg3);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Write(string format, object arg0, object arg1, object arg2, object arg3) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.Write(System.String,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Write (format As String, arg0 As Object, arg1 As Object, arg2 As Object, arg3 As Object)" />
+      <MemberSignature Language="F#" Value="static member Write : string * obj * obj * obj * obj -&gt; unit" Usage="System.Console.Write (format, arg0, arg1, arg2, arg3)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Write(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2, System::Object ^ arg3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3916,6 +4196,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine ()" />
+      <MemberSignature Language="F#" Value="static member WriteLine : unit -&gt; unit" Usage="System.Console.WriteLine " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3967,6 +4250,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (value As Boolean)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : bool -&gt; unit" Usage="System.Console.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4021,6 +4307,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (char value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(char value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (value As Char)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : char -&gt; unit" Usage="System.Console.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(char value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4072,6 +4361,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (char[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(char[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.Char[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (buffer As Char())" />
+      <MemberSignature Language="F#" Value="static member WriteLine : char[] -&gt; unit" Usage="System.Console.WriteLine buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(cli::array &lt;char&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4115,6 +4407,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (value As Decimal)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : decimal -&gt; unit" Usage="System.Console.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4168,6 +4463,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (value As Double)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : double -&gt; unit" Usage="System.Console.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4221,6 +4519,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (value As Integer)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : int -&gt; unit" Usage="System.Console.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4274,6 +4575,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (value As Long)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : int64 -&gt; unit" Usage="System.Console.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4327,6 +4631,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (value As Object)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : obj -&gt; unit" Usage="System.Console.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4381,6 +4688,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (value As Single)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : single -&gt; unit" Usage="System.Console.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4434,6 +4744,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (value As String)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : string -&gt; unit" Usage="System.Console.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4488,6 +4801,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (value As UInteger)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : uint32 -&gt; unit" Usage="System.Console.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4546,6 +4862,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (value As ULong)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : uint64 -&gt; unit" Usage="System.Console.WriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4604,6 +4923,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (string format, object arg0);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(string format, object arg0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (format As String, arg0 As Object)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : string * obj -&gt; unit" Usage="System.Console.WriteLine (format, arg0)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::String ^ format, System::Object ^ arg0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4683,6 +5005,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (string format, params object[] arg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(string format, object[] arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (format As String, ParamArray arg As Object())" />
+      <MemberSignature Language="F#" Value="static member WriteLine : string * obj[] -&gt; unit" Usage="System.Console.WriteLine (format, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4772,6 +5097,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (char[] buffer, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(char[] buffer, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (buffer As Char(), index As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : char[] * int * int -&gt; unit" Usage="System.Console.WriteLine (buffer, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(cli::array &lt;char&gt; ^ buffer, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4827,6 +5155,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (string format, object arg0, object arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(string format, object arg0, object arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.String,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (format As String, arg0 As Object, arg1 As Object)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : string * obj * obj -&gt; unit" Usage="System.Console.WriteLine (format, arg0, arg1)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4909,6 +5240,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (string format, object arg0, object arg1, object arg2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(string format, object arg0, object arg1, object arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.String,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (format As String, arg0 As Object, arg1 As Object, arg2 As Object)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : string * obj * obj * obj -&gt; unit" Usage="System.Console.WriteLine (format, arg0, arg1, arg2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -4993,6 +5327,9 @@
       <MemberSignature Language="C#" Value="public static void WriteLine (string format, object arg0, object arg1, object arg2, object arg3);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteLine(string format, object arg0, object arg1, object arg2, object arg3) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Console.WriteLine(System.String,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WriteLine (format As String, arg0 As Object, arg1 As Object, arg2 As Object, arg3 As Object)" />
+      <MemberSignature Language="F#" Value="static member WriteLine : string * obj * obj * obj * obj -&gt; unit" Usage="System.Console.WriteLine (format, arg0, arg1, arg2, arg3)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteLine(System::String ^ format, System::Object ^ arg0, System::Object ^ arg1, System::Object ^ arg2, System::Object ^ arg3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5075,75 +5412,5 @@
         <altmember cref="M:System.Console.Write(System.String,System.Object)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System.Console</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the text representation of the specified value or values to the standard output stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Beep">
-      <AssemblyInfo>
-        <AssemblyName>System.Console</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Plays the sound of a beep through the console speaker.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="OpenStandardOutput">
-      <AssemblyInfo>
-        <AssemblyName>System.Console</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Acquires the standard output stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="OpenStandardError">
-      <AssemblyInfo>
-        <AssemblyName>System.Console</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Acquires the standard error stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="OpenStandardInput">
-      <AssemblyInfo>
-        <AssemblyName>System.Console</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Acquires the standard input stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadKey">
-      <AssemblyInfo>
-        <AssemblyName>System.Console</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Obtains the next character or function key pressed by the user.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="MoveBufferArea">
-      <AssemblyInfo>
-        <AssemblyName>System.Console</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies a specified source area of the screen buffer to a specified destination area.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

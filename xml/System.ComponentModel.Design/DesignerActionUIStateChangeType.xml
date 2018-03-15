@@ -1,7 +1,10 @@
-<Type Name="DesignerActionUIStateChangeType" FullName="System.ComponentModel.Design.DesignerActionUIStateChangeType">
+﻿<Type Name="DesignerActionUIStateChangeType" FullName="System.ComponentModel.Design.DesignerActionUIStateChangeType">
   <TypeSignature Language="C#" Value="public enum DesignerActionUIStateChangeType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DesignerActionUIStateChangeType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionUIStateChangeType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DesignerActionUIStateChangeType" />
+  <TypeSignature Language="F#" Value="type DesignerActionUIStateChangeType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DesignerActionUIStateChangeType" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="Hide" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.DesignerActionUIStateChangeType Hide = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.DesignerActionUIStateChangeType.Hide" />
+      <MemberSignature Language="VB.NET" Value="Hide" />
+      <MemberSignature Language="F#" Value="Hide = 1" Usage="System.ComponentModel.Design.DesignerActionUIStateChangeType.Hide" />
+      <MemberSignature Language="C++ CLI" Value="Hide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -36,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionUIStateChangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The smart tag panel is being hidden.</summary>
       </Docs>
@@ -44,6 +51,9 @@
       <MemberSignature Language="C#" Value="Refresh" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.DesignerActionUIStateChangeType Refresh = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.DesignerActionUIStateChangeType.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Refresh" />
+      <MemberSignature Language="F#" Value="Refresh = 2" Usage="System.ComponentModel.Design.DesignerActionUIStateChangeType.Refresh" />
+      <MemberSignature Language="C++ CLI" Value="Refresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionUIStateChangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The smart tag panel is being refreshed.</summary>
       </Docs>
@@ -60,6 +71,9 @@
       <MemberSignature Language="C#" Value="Show" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.DesignerActionUIStateChangeType Show = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.DesignerActionUIStateChangeType.Show" />
+      <MemberSignature Language="VB.NET" Value="Show" />
+      <MemberSignature Language="F#" Value="Show = 0" Usage="System.ComponentModel.Design.DesignerActionUIStateChangeType.Show" />
+      <MemberSignature Language="C++ CLI" Value="Show" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -68,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionUIStateChangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The smart tag panel is being displayed.</summary>
       </Docs>

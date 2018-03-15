@@ -1,7 +1,10 @@
-<Type Name="NetTcpContextBindingElement" FullName="System.ServiceModel.Configuration.NetTcpContextBindingElement">
+﻿<Type Name="NetTcpContextBindingElement" FullName="System.ServiceModel.Configuration.NetTcpContextBindingElement">
   <TypeSignature Language="C#" Value="public class NetTcpContextBindingElement : System.ServiceModel.Configuration.NetTcpBindingElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetTcpContextBindingElement extends System.ServiceModel.Configuration.NetTcpBindingElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetTcpContextBindingElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class NetTcpContextBindingElement&#xA;Inherits NetTcpBindingElement" />
+  <TypeSignature Language="F#" Value="type NetTcpContextBindingElement = class&#xA;    inherit NetTcpBindingElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetTcpContextBindingElement : System::ServiceModel::Configuration::NetTcpBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,10 +30,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.NetTcpContextBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NetTcpContextBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetTcpContextBindingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetTcpContextBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -46,6 +60,9 @@
       <MemberSignature Language="C#" Value="public NetTcpContextBindingElement (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetTcpContextBindingElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.NetTcpContextBindingElement : string -&gt; System.ServiceModel.Configuration.NetTcpContextBindingElement" Usage="new System.ServiceModel.Configuration.NetTcpContextBindingElement name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetTcpContextBindingElement(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +84,9 @@
       <MemberSignature Language="C#" Value="protected override Type BindingElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BindingElementType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpContextBindingElement.BindingElementType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property BindingElementType As Type" />
+      <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.NetTcpContextBindingElement.BindingElementType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -85,6 +105,9 @@
       <MemberSignature Language="C#" Value="public Uri ClientCallbackAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ClientCallbackAddress" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpContextBindingElement.ClientCallbackAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientCallbackAddress As Uri" />
+      <MemberSignature Language="F#" Value="member this.ClientCallbackAddress : Uri with get, set" Usage="System.ServiceModel.Configuration.NetTcpContextBindingElement.ClientCallbackAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ClientCallbackAddress { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -108,6 +131,9 @@
       <MemberSignature Language="C#" Value="public bool ContextManagementEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ContextManagementEnabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpContextBindingElement.ContextManagementEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextManagementEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ContextManagementEnabled : bool with get, set" Usage="System.ServiceModel.Configuration.NetTcpContextBindingElement.ContextManagementEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContextManagementEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -132,6 +158,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Security.ProtectionLevel ContextProtectionLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel ContextProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpContextBindingElement.ContextProtectionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextProtectionLevel As ProtectionLevel" />
+      <MemberSignature Language="F#" Value="member this.ContextProtectionLevel : System.Net.Security.ProtectionLevel with get, set" Usage="System.ServiceModel.Configuration.NetTcpContextBindingElement.ContextProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel ContextProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -139,7 +168,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("contextProtectionLevel", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -152,9 +181,11 @@
       </Docs>
     </Member>
     <Member MemberName="InitializeFrom">
-      <MemberSignature Language="C#" Value="protected override void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
+      <MemberSignature Language="C#" Value="protected internal override void InitializeFrom (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetTcpContextBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.Binding -&gt; unit" Usage="netTcpContextBindingElement.InitializeFrom binding" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -176,6 +207,8 @@
       <MemberSignature Language="C#" Value="protected override void OnApplyConfiguration (System.ServiceModel.Channels.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Channels.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetTcpContextBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)" />
+      <MemberSignature Language="F#" Value="override this.OnApplyConfiguration : System.ServiceModel.Channels.Binding -&gt; unit" Usage="netTcpContextBindingElement.OnApplyConfiguration binding" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Channels::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -197,6 +230,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetTcpContextBindingElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.NetTcpContextBindingElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -218,14 +254,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.NetTcpContextBindingElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

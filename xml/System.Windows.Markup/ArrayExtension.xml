@@ -1,7 +1,10 @@
-<Type Name="ArrayExtension" FullName="System.Windows.Markup.ArrayExtension">
+﻿<Type Name="ArrayExtension" FullName="System.Windows.Markup.ArrayExtension">
   <TypeSignature Language="C#" Value="public class ArrayExtension : System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArrayExtension extends System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ArrayExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArrayExtension&#xA;Inherits MarkupExtension" />
+  <TypeSignature Language="F#" Value="type ArrayExtension = class&#xA;    inherit MarkupExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ArrayExtension : System::Windows::Markup::MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,10 +42,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ArrayExtension" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ArrayExtension ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -58,6 +72,9 @@
       <MemberSignature Language="C#" Value="public ArrayExtension (Array elements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Array elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.#ctor(System.Array)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (elements As Array)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.ArrayExtension : Array -&gt; System.Windows.Markup.ArrayExtension" Usage="new System.Windows.Markup.ArrayExtension elements" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayExtension(Array ^ elements);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -85,6 +102,9 @@
       <MemberSignature Language="C#" Value="public ArrayExtension (Type arrayType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type arrayType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (arrayType As Type)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.ArrayExtension : Type -&gt; System.Windows.Markup.ArrayExtension" Usage="new System.Windows.Markup.ArrayExtension arrayType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayExtension(Type ^ arrayType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -112,6 +132,9 @@
       <MemberSignature Language="C#" Value="public void AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddChild (value As Object)" />
+      <MemberSignature Language="F#" Value="member this.AddChild : obj -&gt; unit" Usage="arrayExtension.AddChild value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddChild(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -140,6 +163,9 @@
       <MemberSignature Language="C#" Value="public void AddText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddText (text As String)" />
+      <MemberSignature Language="F#" Value="member this.AddText : string -&gt; unit" Usage="arrayExtension.AddText text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddText(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -168,6 +194,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IList Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList Items" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ArrayExtension.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As IList" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.IList" Usage="System.Windows.Markup.ArrayExtension.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ Items { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -175,7 +204,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -202,6 +231,9 @@
       <MemberSignature Language="C#" Value="public override object ProvideValue (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ArrayExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="arrayExtension.ProvideValue serviceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -242,6 +274,9 @@
       <MemberSignature Language="C#" Value="public Type Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ArrayExtension.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Windows.Markup.ArrayExtension.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -268,14 +303,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ArrayExtension" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

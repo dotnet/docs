@@ -1,7 +1,10 @@
-<Type Name="CivicAddressResolver" FullName="System.Device.Location.CivicAddressResolver">
+﻿<Type Name="CivicAddressResolver" FullName="System.Device.Location.CivicAddressResolver">
   <TypeSignature Language="C#" Value="public sealed class CivicAddressResolver : System.Device.Location.ICivicAddressResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CivicAddressResolver extends System.Object implements class System.Device.Location.ICivicAddressResolver" />
   <TypeSignature Language="DocId" Value="T:System.Device.Location.CivicAddressResolver" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CivicAddressResolver&#xA;Implements ICivicAddressResolver" />
+  <TypeSignature Language="F#" Value="type CivicAddressResolver = class&#xA;    interface ICivicAddressResolver" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CivicAddressResolver sealed : System::Device::Location::ICivicAddressResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public CivicAddressResolver ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.CivicAddressResolver.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CivicAddressResolver();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -70,7 +75,13 @@ CivicAddressResolver resolver = new CivicAddressResolver();
       <MemberSignature Language="C#" Value="public System.Device.Location.CivicAddress ResolveAddress (System.Device.Location.GeoCoordinate coordinate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Device.Location.CivicAddress ResolveAddress(class System.Device.Location.GeoCoordinate coordinate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.CivicAddressResolver.ResolveAddress(System.Device.Location.GeoCoordinate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveAddress (coordinate As GeoCoordinate) As CivicAddress" />
+      <MemberSignature Language="F#" Value="abstract member ResolveAddress : System.Device.Location.GeoCoordinate -&gt; System.Device.Location.CivicAddress&#xA;override this.ResolveAddress : System.Device.Location.GeoCoordinate -&gt; System.Device.Location.CivicAddress" Usage="civicAddressResolver.ResolveAddress coordinate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Device::Location::CivicAddress ^ ResolveAddress(System::Device::Location::GeoCoordinate ^ coordinate);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Device.Location.ICivicAddressResolver.ResolveAddress(System.Device.Location.GeoCoordinate)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,7 +122,13 @@ CivicAddressResolver resolver = new CivicAddressResolver();
       <MemberSignature Language="C#" Value="public void ResolveAddressAsync (System.Device.Location.GeoCoordinate coordinate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResolveAddressAsync(class System.Device.Location.GeoCoordinate coordinate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.CivicAddressResolver.ResolveAddressAsync(System.Device.Location.GeoCoordinate)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResolveAddressAsync (coordinate As GeoCoordinate)" />
+      <MemberSignature Language="F#" Value="abstract member ResolveAddressAsync : System.Device.Location.GeoCoordinate -&gt; unit&#xA;override this.ResolveAddressAsync : System.Device.Location.GeoCoordinate -&gt; unit" Usage="civicAddressResolver.ResolveAddressAsync coordinate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResolveAddressAsync(System::Device::Location::GeoCoordinate ^ coordinate);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Device.Location.ICivicAddressResolver.ResolveAddressAsync(System.Device.Location.GeoCoordinate)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -146,7 +163,13 @@ CivicAddressResolver resolver = new CivicAddressResolver();
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Device.Location.ResolveAddressCompletedEventArgs&gt; ResolveAddressCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Device.Location.ResolveAddressCompletedEventArgs&gt; ResolveAddressCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Device.Location.CivicAddressResolver.ResolveAddressCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event ResolveAddressCompleted As EventHandler(Of ResolveAddressCompletedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ResolveAddressCompleted : EventHandler&lt;System.Device.Location.ResolveAddressCompletedEventArgs&gt; " Usage="member this.ResolveAddressCompleted : System.EventHandler&lt;System.Device.Location.ResolveAddressCompletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::Device::Location::ResolveAddressCompletedEventArgs ^&gt; ^ ResolveAddressCompleted;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

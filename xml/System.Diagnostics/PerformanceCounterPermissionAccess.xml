@@ -1,7 +1,10 @@
-<Type Name="PerformanceCounterPermissionAccess" FullName="System.Diagnostics.PerformanceCounterPermissionAccess">
+﻿<Type Name="PerformanceCounterPermissionAccess" FullName="System.Diagnostics.PerformanceCounterPermissionAccess">
   <TypeSignature Language="C#" Value="public enum PerformanceCounterPermissionAccess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PerformanceCounterPermissionAccess extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterPermissionAccess" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PerformanceCounterPermissionAccess" />
+  <TypeSignature Language="F#" Value="type PerformanceCounterPermissionAccess = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PerformanceCounterPermissionAccess" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="Administer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterPermissionAccess Administer = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.Administer" />
+      <MemberSignature Language="VB.NET" Value="Administer" />
+      <MemberSignature Language="F#" Value="Administer = 7" Usage="System.Diagnostics.PerformanceCounterPermissionAccess.Administer" />
+      <MemberSignature Language="C++ CLI" Value="Administer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> can read, write, and create categories.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="Browse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterPermissionAccess Browse = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.Browse" />
+      <MemberSignature Language="VB.NET" Value="Browse" />
+      <MemberSignature Language="F#" Value="Browse = 1" Usage="System.Diagnostics.PerformanceCounterPermissionAccess.Browse" />
+      <MemberSignature Language="C++ CLI" Value="Browse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +78,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> can read categories.</summary>
       </Docs>
@@ -76,6 +87,9 @@
       <MemberSignature Language="C#" Value="Instrument" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterPermissionAccess Instrument = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.Instrument" />
+      <MemberSignature Language="VB.NET" Value="Instrument" />
+      <MemberSignature Language="F#" Value="Instrument = 3" Usage="System.Diagnostics.PerformanceCounterPermissionAccess.Instrument" />
+      <MemberSignature Language="C++ CLI" Value="Instrument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -93,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> can read and write categories.</summary>
       </Docs>
@@ -101,6 +116,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterPermissionAccess None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Diagnostics.PerformanceCounterPermissionAccess.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -113,6 +131,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> has no permissions.</summary>
       </Docs>
@@ -121,6 +140,9 @@
       <MemberSignature Language="C#" Value="Read" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterPermissionAccess Read = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.Read" />
+      <MemberSignature Language="VB.NET" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 1" Usage="System.Diagnostics.PerformanceCounterPermissionAccess.Read" />
+      <MemberSignature Language="C++ CLI" Value="Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +155,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> can read categories.</summary>
       </Docs>
@@ -141,6 +164,9 @@
       <MemberSignature Language="C#" Value="Write" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.PerformanceCounterPermissionAccess Write = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounterPermissionAccess.Write" />
+      <MemberSignature Language="VB.NET" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 2" Usage="System.Diagnostics.PerformanceCounterPermissionAccess.Write" />
+      <MemberSignature Language="C++ CLI" Value="Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -153,6 +179,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.PerformanceCounterPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Diagnostics.PerformanceCounter" /> can write categories.</summary>
       </Docs>

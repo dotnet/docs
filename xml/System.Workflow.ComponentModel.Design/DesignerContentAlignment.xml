@@ -1,7 +1,10 @@
-<Type Name="DesignerContentAlignment" FullName="System.Workflow.ComponentModel.Design.DesignerContentAlignment">
+﻿<Type Name="DesignerContentAlignment" FullName="System.Workflow.ComponentModel.Design.DesignerContentAlignment">
   <TypeSignature Language="C#" Value="public enum DesignerContentAlignment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DesignerContentAlignment extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.DesignerContentAlignment" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DesignerContentAlignment" />
+  <TypeSignature Language="F#" Value="type DesignerContentAlignment = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DesignerContentAlignment" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="Bottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment Bottom = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 8" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.Bottom" />
+      <MemberSignature Language="C++ CLI" Value="Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -40,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerContentAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Workflow content is aligned to the bottom of the designer.</summary>
       </Docs>
@@ -48,6 +55,9 @@
       <MemberSignature Language="C#" Value="BottomCenter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment BottomCenter = int32(24)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.BottomCenter" />
+      <MemberSignature Language="VB.NET" Value="BottomCenter" />
+      <MemberSignature Language="F#" Value="BottomCenter = 24" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.BottomCenter" />
+      <MemberSignature Language="C++ CLI" Value="BottomCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -56,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerContentAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>Workflow content is aligned to the bottom center of the designer.</summary>
       </Docs>
@@ -64,6 +75,9 @@
       <MemberSignature Language="C#" Value="BottomLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment BottomLeft = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.BottomLeft" />
+      <MemberSignature Language="VB.NET" Value="BottomLeft" />
+      <MemberSignature Language="F#" Value="BottomLeft = 9" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.BottomLeft" />
+      <MemberSignature Language="C++ CLI" Value="BottomLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -72,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerContentAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Workflow content is aligned to the bottom left of the designer.</summary>
       </Docs>
@@ -80,6 +95,9 @@
       <MemberSignature Language="C#" Value="BottomRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment BottomRight = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.BottomRight" />
+      <MemberSignature Language="VB.NET" Value="BottomRight" />
+      <MemberSignature Language="F#" Value="BottomRight = 12" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.BottomRight" />
+      <MemberSignature Language="C++ CLI" Value="BottomRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -88,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerContentAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>Workflow content is aligned to the bottom right of the designer.</summary>
       </Docs>
@@ -96,6 +115,9 @@
       <MemberSignature Language="C#" Value="Center" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment Center = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.Center" />
+      <MemberSignature Language="VB.NET" Value="Center" />
+      <MemberSignature Language="F#" Value="Center = 16" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.Center" />
+      <MemberSignature Language="C++ CLI" Value="Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -104,6 +126,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerContentAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Workflow content is aligned to the center of the designer.</summary>
       </Docs>
@@ -112,6 +135,9 @@
       <MemberSignature Language="C#" Value="CenterLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment CenterLeft = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.CenterLeft" />
+      <MemberSignature Language="VB.NET" Value="CenterLeft" />
+      <MemberSignature Language="F#" Value="CenterLeft = 17" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.CenterLeft" />
+      <MemberSignature Language="C++ CLI" Value="CenterLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -120,6 +146,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerContentAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>Workflow content is aligned to the center left of the designer.</summary>
       </Docs>
@@ -128,6 +155,9 @@
       <MemberSignature Language="C#" Value="CenterRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment CenterRight = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.CenterRight" />
+      <MemberSignature Language="VB.NET" Value="CenterRight" />
+      <MemberSignature Language="F#" Value="CenterRight = 20" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.CenterRight" />
+      <MemberSignature Language="C++ CLI" Value="CenterRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -136,6 +166,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerContentAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>Workflow content is aligned to the center right of the designer.</summary>
       </Docs>
@@ -144,6 +175,9 @@
       <MemberSignature Language="C#" Value="Fill" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment Fill = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.Fill" />
+      <MemberSignature Language="VB.NET" Value="Fill" />
+      <MemberSignature Language="F#" Value="Fill = 32" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.Fill" />
+      <MemberSignature Language="C++ CLI" Value="Fill" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -152,6 +186,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerContentAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Workflow content is aligned to fill the designer.</summary>
       </Docs>
@@ -160,6 +195,9 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment Left = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 1" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -168,6 +206,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerContentAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Workflow content is aligned to the left side of the designer.</summary>
       </Docs>
@@ -176,6 +215,9 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment Right = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 4" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -184,6 +226,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerContentAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Workflow content is aligned to the right side of the designer.</summary>
       </Docs>
@@ -192,6 +235,9 @@
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment Top = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.Top" />
+      <MemberSignature Language="VB.NET" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 2" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.Top" />
+      <MemberSignature Language="C++ CLI" Value="Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -200,6 +246,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerContentAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Workflow content is aligned to the top of the designer.</summary>
       </Docs>
@@ -208,6 +255,9 @@
       <MemberSignature Language="C#" Value="TopCenter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment TopCenter = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.TopCenter" />
+      <MemberSignature Language="VB.NET" Value="TopCenter" />
+      <MemberSignature Language="F#" Value="TopCenter = 18" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.TopCenter" />
+      <MemberSignature Language="C++ CLI" Value="TopCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -216,6 +266,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerContentAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>Workflow content is aligned to the top center of the designer.</summary>
       </Docs>
@@ -224,6 +275,9 @@
       <MemberSignature Language="C#" Value="TopLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment TopLeft = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.TopLeft" />
+      <MemberSignature Language="VB.NET" Value="TopLeft" />
+      <MemberSignature Language="F#" Value="TopLeft = 3" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.TopLeft" />
+      <MemberSignature Language="C++ CLI" Value="TopLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -232,6 +286,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerContentAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Workflow content is aligned to the top left of the designer.</summary>
       </Docs>
@@ -240,6 +295,9 @@
       <MemberSignature Language="C#" Value="TopRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerContentAlignment TopRight = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerContentAlignment.TopRight" />
+      <MemberSignature Language="VB.NET" Value="TopRight" />
+      <MemberSignature Language="F#" Value="TopRight = 6" Usage="System.Workflow.ComponentModel.Design.DesignerContentAlignment.TopRight" />
+      <MemberSignature Language="C++ CLI" Value="TopRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -248,6 +306,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerContentAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Workflow content is aligned to the top right of the designer.</summary>
       </Docs>

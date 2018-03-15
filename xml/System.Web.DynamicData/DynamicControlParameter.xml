@@ -1,7 +1,10 @@
-<Type Name="DynamicControlParameter" FullName="System.Web.DynamicData.DynamicControlParameter">
+﻿<Type Name="DynamicControlParameter" FullName="System.Web.DynamicData.DynamicControlParameter">
   <TypeSignature Language="C#" Value="public class DynamicControlParameter : System.Web.UI.WebControls.Parameter, System.Web.DynamicData.IWhereParametersProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicControlParameter extends System.Web.UI.WebControls.Parameter implements class System.Web.DynamicData.IWhereParametersProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicControlParameter" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicControlParameter&#xA;Inherits Parameter&#xA;Implements IWhereParametersProvider" />
+  <TypeSignature Language="F#" Value="type DynamicControlParameter = class&#xA;    inherit Parameter&#xA;    interface IWhereParametersProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicControlParameter : System::Web::UI::WebControls::Parameter, System::Web::DynamicData::IWhereParametersProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +29,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicControlParameter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DynamicControlParameter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicControlParameter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicControlParameter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -45,6 +59,9 @@
       <MemberSignature Language="C#" Value="public DynamicControlParameter (string controlId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string controlId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicControlParameter.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (controlId As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.DynamicData.DynamicControlParameter : string -&gt; System.Web.DynamicData.DynamicControlParameter" Usage="new System.Web.DynamicData.DynamicControlParameter controlId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicControlParameter(System::String ^ controlId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -63,6 +80,9 @@
       <MemberSignature Language="C#" Value="public string ControlId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ControlId" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicControlParameter.ControlId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlId As String" />
+      <MemberSignature Language="F#" Value="member this.ControlId : string with get, set" Usage="System.Web.DynamicData.DynamicControlParameter.ControlId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlId { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -81,6 +101,8 @@
       <MemberSignature Language="C#" Value="protected override object Evaluate (System.Web.HttpContext context, System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object Evaluate(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicControlParameter.Evaluate(System.Web.HttpContext,System.Web.UI.Control)" />
+      <MemberSignature Language="F#" Value="override this.Evaluate : System.Web.HttpContext * System.Web.UI.Control -&gt; obj" Usage="dynamicControlParameter.Evaluate (context, control)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ Evaluate(System::Web::HttpContext ^ context, System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -112,7 +134,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Web.UI.WebControls.Parameter&gt; GetWhereParameters (System.Web.DynamicData.IDynamicDataSource dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.WebControls.Parameter&gt; GetWhereParameters(class System.Web.DynamicData.IDynamicDataSource dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicControlParameter.GetWhereParameters(System.Web.DynamicData.IDynamicDataSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetWhereParameters (dataSource As IDynamicDataSource) As IEnumerable(Of Parameter)" />
+      <MemberSignature Language="F#" Value="abstract member GetWhereParameters : System.Web.DynamicData.IDynamicDataSource -&gt; seq&lt;System.Web.UI.WebControls.Parameter&gt;&#xA;override this.GetWhereParameters : System.Web.DynamicData.IDynamicDataSource -&gt; seq&lt;System.Web.UI.WebControls.Parameter&gt;" Usage="dynamicControlParameter.GetWhereParameters dataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Web::UI::WebControls::Parameter ^&gt; ^ GetWhereParameters(System::Web::DynamicData::IDynamicDataSource ^ dataSource);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.DynamicData.IWhereParametersProvider.GetWhereParameters(System.Web.DynamicData.IDynamicDataSource)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -130,14 +158,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.DynamicData.DynamicControlParameter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

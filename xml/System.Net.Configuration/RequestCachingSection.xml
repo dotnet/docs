@@ -1,7 +1,10 @@
-<Type Name="RequestCachingSection" FullName="System.Net.Configuration.RequestCachingSection">
+﻿<Type Name="RequestCachingSection" FullName="System.Net.Configuration.RequestCachingSection">
   <TypeSignature Language="C#" Value="public sealed class RequestCachingSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RequestCachingSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.RequestCachingSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RequestCachingSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type RequestCachingSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RequestCachingSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,8 @@
       <MemberSignature Language="C#" Value="public RequestCachingSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.RequestCachingSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestCachingSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -45,6 +50,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.FtpCachePolicyElement DefaultFtpCachePolicy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Configuration.FtpCachePolicyElement DefaultFtpCachePolicy" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.RequestCachingSection.DefaultFtpCachePolicy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultFtpCachePolicy As FtpCachePolicyElement" />
+      <MemberSignature Language="F#" Value="member this.DefaultFtpCachePolicy : System.Net.Configuration.FtpCachePolicyElement" Usage="System.Net.Configuration.RequestCachingSection.DefaultFtpCachePolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::FtpCachePolicyElement ^ DefaultFtpCachePolicy { System::Net::Configuration::FtpCachePolicyElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +76,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.HttpCachePolicyElement DefaultHttpCachePolicy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Configuration.HttpCachePolicyElement DefaultHttpCachePolicy" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.RequestCachingSection.DefaultHttpCachePolicy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultHttpCachePolicy As HttpCachePolicyElement" />
+      <MemberSignature Language="F#" Value="member this.DefaultHttpCachePolicy : System.Net.Configuration.HttpCachePolicyElement" Usage="System.Net.Configuration.RequestCachingSection.DefaultHttpCachePolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::HttpCachePolicyElement ^ DefaultHttpCachePolicy { System::Net::Configuration::HttpCachePolicyElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -98,6 +109,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Cache.RequestCacheLevel DefaultPolicyLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Cache.RequestCacheLevel DefaultPolicyLevel" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.RequestCachingSection.DefaultPolicyLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultPolicyLevel As RequestCacheLevel" />
+      <MemberSignature Language="F#" Value="member this.DefaultPolicyLevel : System.Net.Cache.RequestCacheLevel with get, set" Usage="System.Net.Configuration.RequestCachingSection.DefaultPolicyLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Cache::RequestCacheLevel DefaultPolicyLevel { System::Net::Cache::RequestCacheLevel get(); void set(System::Net::Cache::RequestCacheLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -121,6 +135,9 @@
       <MemberSignature Language="C#" Value="protected override void DeserializeElement (System.Xml.XmlReader reader, bool serializeCollectionKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeserializeElement(class System.Xml.XmlReader reader, bool serializeCollectionKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.RequestCachingSection.DeserializeElement(System.Xml.XmlReader,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DeserializeElement (reader As XmlReader, serializeCollectionKey As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.DeserializeElement : System.Xml.XmlReader * bool -&gt; unit" Usage="requestCachingSection.DeserializeElement (reader, serializeCollectionKey)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DeserializeElement(System::Xml::XmlReader ^ reader, bool serializeCollectionKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -149,6 +166,9 @@
       <MemberSignature Language="C#" Value="public bool DisableAllCaching { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisableAllCaching" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.RequestCachingSection.DisableAllCaching" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisableAllCaching As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DisableAllCaching : bool with get, set" Usage="System.Net.Configuration.RequestCachingSection.DisableAllCaching" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisableAllCaching { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -180,6 +200,9 @@
       <MemberSignature Language="C#" Value="public bool IsPrivateCache { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPrivateCache" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.RequestCachingSection.IsPrivateCache" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsPrivateCache As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPrivateCache : bool with get, set" Usage="System.Net.Configuration.RequestCachingSection.IsPrivateCache" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrivateCache { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -211,6 +234,9 @@
       <MemberSignature Language="C#" Value="protected override void PostDeserialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PostDeserialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.RequestCachingSection.PostDeserialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
+      <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="requestCachingSection.PostDeserialize " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -234,6 +260,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.RequestCachingSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.RequestCachingSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -252,6 +281,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan UnspecifiedMaximumAge { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan UnspecifiedMaximumAge" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.RequestCachingSection.UnspecifiedMaximumAge" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnspecifiedMaximumAge As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.UnspecifiedMaximumAge : TimeSpan with get, set" Usage="System.Net.Configuration.RequestCachingSection.UnspecifiedMaximumAge" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan UnspecifiedMaximumAge { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ListView" FullName="System.Windows.Forms.ListView">
+﻿<Type Name="ListView" FullName="System.Windows.Forms.ListView">
   <TypeSignature Language="C#" Value="public class ListView : System.Windows.Forms.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListView extends System.Windows.Forms.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListView" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListView&#xA;Inherits Control" />
+  <TypeSignature Language="F#" Value="type ListView = class&#xA;    inherit Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListView : System::Windows::Forms::Control" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,7 +24,7 @@
       <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.ListViewDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -115,6 +118,8 @@
       <MemberSignature Language="C#" Value="public ListView ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListView();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -157,6 +162,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ItemActivation Activation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ItemActivation Activation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.Activation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Activation As ItemActivation" />
+      <MemberSignature Language="F#" Value="member this.Activation : System.Windows.Forms.ItemActivation with get, set" Usage="System.Windows.Forms.ListView.Activation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ItemActivation Activation { System::Windows::Forms::ItemActivation get(); void set(System::Windows::Forms::ItemActivation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -193,6 +201,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.LabelEditEventHandler AfterLabelEdit;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.LabelEditEventHandler AfterLabelEdit" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.AfterLabelEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AfterLabelEdit As LabelEditEventHandler " />
+      <MemberSignature Language="F#" Value="member this.AfterLabelEdit : System.Windows.Forms.LabelEditEventHandler " Usage="member this.AfterLabelEdit : System.Windows.Forms.LabelEditEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LabelEditEventHandler ^ AfterLabelEdit;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -239,6 +250,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewAlignment Alignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ListViewAlignment Alignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.Alignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Alignment As ListViewAlignment" />
+      <MemberSignature Language="F#" Value="member this.Alignment : System.Windows.Forms.ListViewAlignment with get, set" Usage="System.Windows.Forms.ListView.Alignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewAlignment Alignment { System::Windows::Forms::ListViewAlignment get(); void set(System::Windows::Forms::ListViewAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -277,6 +291,9 @@
       <MemberSignature Language="C#" Value="public bool AllowColumnReorder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowColumnReorder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.AllowColumnReorder" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowColumnReorder As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowColumnReorder : bool with get, set" Usage="System.Windows.Forms.ListView.AllowColumnReorder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowColumnReorder { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -331,10 +348,22 @@
         <altmember cref="T:System.Windows.Forms.View" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ArrangeIcons">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Arranges items in the control when they are displayed as icons.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ArrangeIcons">
       <MemberSignature Language="C#" Value="public void ArrangeIcons ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ArrangeIcons() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ArrangeIcons" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ArrangeIcons ()" />
+      <MemberSignature Language="F#" Value="member this.ArrangeIcons : unit -&gt; unit" Usage="listView.ArrangeIcons " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ArrangeIcons();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -361,6 +390,9 @@
       <MemberSignature Language="C#" Value="public void ArrangeIcons (System.Windows.Forms.ListViewAlignment value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ArrangeIcons(valuetype System.Windows.Forms.ListViewAlignment value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ArrangeIcons(System.Windows.Forms.ListViewAlignment)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ArrangeIcons (value As ListViewAlignment)" />
+      <MemberSignature Language="F#" Value="member this.ArrangeIcons : System.Windows.Forms.ListViewAlignment -&gt; unit" Usage="listView.ArrangeIcons value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ArrangeIcons(System::Windows::Forms::ListViewAlignment value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -392,6 +424,9 @@
       <MemberSignature Language="C#" Value="public bool AutoArrange { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoArrange" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.AutoArrange" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoArrange As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoArrange : bool with get, set" Usage="System.Windows.Forms.ListView.AutoArrange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoArrange { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -424,6 +459,9 @@
       <MemberSignature Language="C#" Value="public void AutoResizeColumn (int columnIndex, System.Windows.Forms.ColumnHeaderAutoResizeStyle headerAutoResize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AutoResizeColumn(int32 columnIndex, valuetype System.Windows.Forms.ColumnHeaderAutoResizeStyle headerAutoResize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.AutoResizeColumn(System.Int32,System.Windows.Forms.ColumnHeaderAutoResizeStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AutoResizeColumn (columnIndex As Integer, headerAutoResize As ColumnHeaderAutoResizeStyle)" />
+      <MemberSignature Language="F#" Value="member this.AutoResizeColumn : int * System.Windows.Forms.ColumnHeaderAutoResizeStyle -&gt; unit" Usage="listView.AutoResizeColumn (columnIndex, headerAutoResize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AutoResizeColumn(int columnIndex, System::Windows::Forms::ColumnHeaderAutoResizeStyle headerAutoResize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -470,6 +508,9 @@
       <MemberSignature Language="C#" Value="public void AutoResizeColumns (System.Windows.Forms.ColumnHeaderAutoResizeStyle headerAutoResize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AutoResizeColumns(valuetype System.Windows.Forms.ColumnHeaderAutoResizeStyle headerAutoResize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.AutoResizeColumns(System.Windows.Forms.ColumnHeaderAutoResizeStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AutoResizeColumns (headerAutoResize As ColumnHeaderAutoResizeStyle)" />
+      <MemberSignature Language="F#" Value="member this.AutoResizeColumns : System.Windows.Forms.ColumnHeaderAutoResizeStyle -&gt; unit" Usage="listView.AutoResizeColumns headerAutoResize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AutoResizeColumns(System::Windows::Forms::ColumnHeaderAutoResizeStyle headerAutoResize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -508,6 +549,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ListView.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -526,6 +570,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.ImageLayout BackgroundImageLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImageLayout BackgroundImageLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.BackgroundImageLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.ListView.BackgroundImageLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -560,6 +607,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageLayoutChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageLayoutChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.BackgroundImageLayoutChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayoutChanged : EventHandler " Usage="member this.BackgroundImageLayoutChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -585,6 +635,9 @@
       <MemberSignature Language="C#" Value="public bool BackgroundImageTiled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BackgroundImageTiled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.BackgroundImageTiled" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackgroundImageTiled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageTiled : bool with get, set" Usage="System.Windows.Forms.ListView.BackgroundImageTiled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BackgroundImageTiled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -616,6 +669,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.LabelEditEventHandler BeforeLabelEdit;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.LabelEditEventHandler BeforeLabelEdit" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.BeforeLabelEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BeforeLabelEdit As LabelEditEventHandler " />
+      <MemberSignature Language="F#" Value="member this.BeforeLabelEdit : System.Windows.Forms.LabelEditEventHandler " Usage="member this.BeforeLabelEdit : System.Windows.Forms.LabelEditEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LabelEditEventHandler ^ BeforeLabelEdit;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -655,6 +711,9 @@
       <MemberSignature Language="C#" Value="public void BeginUpdate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginUpdate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.BeginUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginUpdate ()" />
+      <MemberSignature Language="F#" Value="member this.BeginUpdate : unit -&gt; unit" Usage="listView.BeginUpdate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginUpdate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -694,6 +753,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.BorderStyle BorderStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.BorderStyle BorderStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.BorderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderStyle As BorderStyle" />
+      <MemberSignature Language="F#" Value="member this.BorderStyle : System.Windows.Forms.BorderStyle with get, set" Usage="System.Windows.Forms.ListView.BorderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BorderStyle BorderStyle { System::Windows::Forms::BorderStyle get(); void set(System::Windows::Forms::BorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -729,6 +791,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.CacheVirtualItemsEventHandler CacheVirtualItems;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.CacheVirtualItemsEventHandler CacheVirtualItems" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.CacheVirtualItems" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CacheVirtualItems As CacheVirtualItemsEventHandler " />
+      <MemberSignature Language="F#" Value="member this.CacheVirtualItems : System.Windows.Forms.CacheVirtualItemsEventHandler " Usage="member this.CacheVirtualItems : System.Windows.Forms.CacheVirtualItemsEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::CacheVirtualItemsEventHandler ^ CacheVirtualItems;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -763,6 +828,9 @@
       <MemberSignature Language="C#" Value="public bool CheckBoxes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CheckBoxes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.CheckBoxes" />
+      <MemberSignature Language="VB.NET" Value="Public Property CheckBoxes As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CheckBoxes : bool with get, set" Usage="System.Windows.Forms.ListView.CheckBoxes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CheckBoxes { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -831,6 +899,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListView.CheckedIndexCollection CheckedIndices { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListView/CheckedIndexCollection CheckedIndices" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.CheckedIndices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckedIndices As ListView.CheckedIndexCollection" />
+      <MemberSignature Language="F#" Value="member this.CheckedIndices : System.Windows.Forms.ListView.CheckedIndexCollection" Usage="System.Windows.Forms.ListView.CheckedIndices" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListView::CheckedIndexCollection ^ CheckedIndices { System::Windows::Forms::ListView::CheckedIndexCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -841,7 +912,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -868,6 +939,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListView.CheckedListViewItemCollection CheckedItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListView/CheckedListViewItemCollection CheckedItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.CheckedItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CheckedItems As ListView.CheckedListViewItemCollection" />
+      <MemberSignature Language="F#" Value="member this.CheckedItems : System.Windows.Forms.ListView.CheckedListViewItemCollection" Usage="System.Windows.Forms.ListView.CheckedItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListView::CheckedListViewItemCollection ^ CheckedItems { System::Windows::Forms::ListView::CheckedListViewItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -878,7 +952,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -917,6 +991,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="listView.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -956,6 +1033,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ColumnClickEventHandler ColumnClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ColumnClickEventHandler ColumnClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.ColumnClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ColumnClick As ColumnClickEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ColumnClick : System.Windows.Forms.ColumnClickEventHandler " Usage="member this.ColumnClick : System.Windows.Forms.ColumnClickEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ColumnClickEventHandler ^ ColumnClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -992,6 +1072,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ColumnReorderedEventHandler ColumnReordered;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ColumnReorderedEventHandler ColumnReordered" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.ColumnReordered" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ColumnReordered As ColumnReorderedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ColumnReordered : System.Windows.Forms.ColumnReorderedEventHandler " Usage="member this.ColumnReordered : System.Windows.Forms.ColumnReorderedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ColumnReorderedEventHandler ^ ColumnReordered;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1028,6 +1111,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListView.ColumnHeaderCollection Columns { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListView/ColumnHeaderCollection Columns" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.Columns" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Columns As ListView.ColumnHeaderCollection" />
+      <MemberSignature Language="F#" Value="member this.Columns : System.Windows.Forms.ListView.ColumnHeaderCollection" Usage="System.Windows.Forms.ListView.Columns" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListView::ColumnHeaderCollection ^ Columns { System::Windows::Forms::ListView::ColumnHeaderCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1035,7 +1121,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ColumnHeaderCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -1097,6 +1183,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ColumnWidthChangedEventHandler ColumnWidthChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ColumnWidthChangedEventHandler ColumnWidthChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.ColumnWidthChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ColumnWidthChanged As ColumnWidthChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ColumnWidthChanged : System.Windows.Forms.ColumnWidthChangedEventHandler " Usage="member this.ColumnWidthChanged : System.Windows.Forms.ColumnWidthChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ColumnWidthChangedEventHandler ^ ColumnWidthChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1133,6 +1222,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ColumnWidthChangingEventHandler ColumnWidthChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ColumnWidthChangingEventHandler ColumnWidthChanging" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.ColumnWidthChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ColumnWidthChanging As ColumnWidthChangingEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ColumnWidthChanging : System.Windows.Forms.ColumnWidthChangingEventHandler " Usage="member this.ColumnWidthChanging : System.Windows.Forms.ColumnWidthChangingEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ColumnWidthChangingEventHandler ^ ColumnWidthChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1167,6 +1259,9 @@
       <MemberSignature Language="C#" Value="protected override void CreateHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CreateHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.CreateHandle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateHandle ()" />
+      <MemberSignature Language="F#" Value="override this.CreateHandle : unit -&gt; unit" Usage="listView.CreateHandle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1185,6 +1280,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.CreateParams" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.ListView.CreateParams" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1211,6 +1309,9 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.ListView.DefaultSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1229,6 +1330,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="listView.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1258,6 +1362,9 @@
       <MemberSignature Language="C#" Value="protected override bool DoubleBuffered { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DoubleBuffered" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.DoubleBuffered" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Property DoubleBuffered As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DoubleBuffered : bool with get, set" Usage="System.Windows.Forms.ListView.DoubleBuffered" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DoubleBuffered { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1277,6 +1384,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DrawListViewColumnHeaderEventHandler DrawColumnHeader;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DrawListViewColumnHeaderEventHandler DrawColumnHeader" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.DrawColumnHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DrawColumnHeader As DrawListViewColumnHeaderEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DrawColumnHeader : System.Windows.Forms.DrawListViewColumnHeaderEventHandler " Usage="member this.DrawColumnHeader : System.Windows.Forms.DrawListViewColumnHeaderEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DrawListViewColumnHeaderEventHandler ^ DrawColumnHeader;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1318,6 +1428,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DrawListViewItemEventHandler DrawItem;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DrawListViewItemEventHandler DrawItem" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.DrawItem" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DrawItem As DrawListViewItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DrawItem : System.Windows.Forms.DrawListViewItemEventHandler " Usage="member this.DrawItem : System.Windows.Forms.DrawListViewItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DrawListViewItemEventHandler ^ DrawItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1365,6 +1478,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DrawListViewSubItemEventHandler DrawSubItem;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DrawListViewSubItemEventHandler DrawSubItem" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.DrawSubItem" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DrawSubItem As DrawListViewSubItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DrawSubItem : System.Windows.Forms.DrawListViewSubItemEventHandler " Usage="member this.DrawSubItem : System.Windows.Forms.DrawListViewSubItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DrawListViewSubItemEventHandler ^ DrawSubItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1415,6 +1531,9 @@
       <MemberSignature Language="C#" Value="public void EndUpdate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndUpdate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.EndUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndUpdate ()" />
+      <MemberSignature Language="F#" Value="member this.EndUpdate : unit -&gt; unit" Usage="listView.EndUpdate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndUpdate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1454,6 +1573,9 @@
       <MemberSignature Language="C#" Value="public void EnsureVisible (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnsureVisible(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.EnsureVisible(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnsureVisible (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.EnsureVisible : int -&gt; unit" Usage="listView.EnsureVisible index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnsureVisible(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1481,10 +1603,22 @@
         <altmember cref="P:System.Windows.Forms.ListView.TopItem" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindItemWithText">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the first <see cref="T:System.Windows.Forms.ListViewItem" /> with that begins with the given text value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindItemWithText">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem FindItemWithText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ListViewItem FindItemWithText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.FindItemWithText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindItemWithText (text As String) As ListViewItem" />
+      <MemberSignature Language="F#" Value="member this.FindItemWithText : string -&gt; System.Windows.Forms.ListViewItem" Usage="listView.FindItemWithText text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ListViewItem ^ FindItemWithText(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1526,6 +1660,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem FindItemWithText (string text, bool includeSubItemsInSearch, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ListViewItem FindItemWithText(string text, bool includeSubItemsInSearch, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.FindItemWithText(System.String,System.Boolean,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindItemWithText (text As String, includeSubItemsInSearch As Boolean, startIndex As Integer) As ListViewItem" />
+      <MemberSignature Language="F#" Value="member this.FindItemWithText : string * bool * int -&gt; System.Windows.Forms.ListViewItem" Usage="listView.FindItemWithText (text, includeSubItemsInSearch, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ListViewItem ^ FindItemWithText(System::String ^ text, bool includeSubItemsInSearch, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1566,6 +1703,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem FindItemWithText (string text, bool includeSubItemsInSearch, int startIndex, bool isPrefixSearch);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ListViewItem FindItemWithText(string text, bool includeSubItemsInSearch, int32 startIndex, bool isPrefixSearch) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.FindItemWithText(System.String,System.Boolean,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindItemWithText (text As String, includeSubItemsInSearch As Boolean, startIndex As Integer, isPrefixSearch As Boolean) As ListViewItem" />
+      <MemberSignature Language="F#" Value="member this.FindItemWithText : string * bool * int * bool -&gt; System.Windows.Forms.ListViewItem" Usage="listView.FindItemWithText (text, includeSubItemsInSearch, startIndex, isPrefixSearch)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ListViewItem ^ FindItemWithText(System::String ^ text, bool includeSubItemsInSearch, int startIndex, bool isPrefixSearch);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1605,10 +1745,21 @@
           <paramref name="startIndex" /> is less than 0 or more than the number of items in the <see cref="T:System.Windows.Forms.ListView" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindNearestItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the next item from a given point, searching in the specified direction.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindNearestItem">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem FindNearestItem (System.Windows.Forms.SearchDirectionHint dir, System.Drawing.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ListViewItem FindNearestItem(valuetype System.Windows.Forms.SearchDirectionHint dir, valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.FindNearestItem(System.Windows.Forms.SearchDirectionHint,System.Drawing.Point)" />
+      <MemberSignature Language="F#" Value="member this.FindNearestItem : System.Windows.Forms.SearchDirectionHint * System.Drawing.Point -&gt; System.Windows.Forms.ListViewItem" Usage="listView.FindNearestItem (dir, point)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ListViewItem ^ FindNearestItem(System::Windows::Forms::SearchDirectionHint dir, System::Drawing::Point point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1642,6 +1793,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem FindNearestItem (System.Windows.Forms.SearchDirectionHint searchDirection, int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ListViewItem FindNearestItem(valuetype System.Windows.Forms.SearchDirectionHint searchDirection, int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.FindNearestItem(System.Windows.Forms.SearchDirectionHint,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindNearestItem (searchDirection As SearchDirectionHint, x As Integer, y As Integer) As ListViewItem" />
+      <MemberSignature Language="F#" Value="member this.FindNearestItem : System.Windows.Forms.SearchDirectionHint * int * int -&gt; System.Windows.Forms.ListViewItem" Usage="listView.FindNearestItem (searchDirection, x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ListViewItem ^ FindNearestItem(System::Windows::Forms::SearchDirectionHint searchDirection, int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1677,6 +1831,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem FocusedItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewItem FocusedItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.FocusedItem" />
+      <MemberSignature Language="VB.NET" Value="Public Property FocusedItem As ListViewItem" />
+      <MemberSignature Language="F#" Value="member this.FocusedItem : System.Windows.Forms.ListViewItem with get, set" Usage="System.Windows.Forms.ListView.FocusedItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewItem ^ FocusedItem { System::Windows::Forms::ListViewItem ^ get(); void set(System::Windows::Forms::ListViewItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1687,7 +1844,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1711,6 +1868,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ListView.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1729,6 +1889,9 @@
       <MemberSignature Language="C#" Value="public bool FullRowSelect { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool FullRowSelect" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.FullRowSelect" />
+      <MemberSignature Language="VB.NET" Value="Public Property FullRowSelect As Boolean" />
+      <MemberSignature Language="F#" Value="member this.FullRowSelect : bool with get, set" Usage="System.Windows.Forms.ListView.FullRowSelect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FullRowSelect { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1790,6 +1953,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem GetItemAt (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ListViewItem GetItemAt(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.GetItemAt(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItemAt (x As Integer, y As Integer) As ListViewItem" />
+      <MemberSignature Language="F#" Value="member this.GetItemAt : int * int -&gt; System.Windows.Forms.ListViewItem" Usage="listView.GetItemAt (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ListViewItem ^ GetItemAt(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1839,10 +2005,22 @@
         <altmember cref="M:System.Windows.Forms.Application.EnableVisualStyles" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetItemRect">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the bounding rectangle for an item within the control.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetItemRect">
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle GetItemRect (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle GetItemRect(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.GetItemRect(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItemRect (index As Integer) As Rectangle" />
+      <MemberSignature Language="F#" Value="member this.GetItemRect : int -&gt; System.Drawing.Rectangle" Usage="listView.GetItemRect index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Rectangle GetItemRect(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1874,6 +2052,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle GetItemRect (int index, System.Windows.Forms.ItemBoundsPortion portion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle GetItemRect(int32 index, valuetype System.Windows.Forms.ItemBoundsPortion portion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.GetItemRect(System.Int32,System.Windows.Forms.ItemBoundsPortion)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItemRect (index As Integer, portion As ItemBoundsPortion) As Rectangle" />
+      <MemberSignature Language="F#" Value="member this.GetItemRect : int * System.Windows.Forms.ItemBoundsPortion -&gt; System.Drawing.Rectangle" Usage="listView.GetItemRect (index, portion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Rectangle GetItemRect(int index, System::Windows::Forms::ItemBoundsPortion portion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1908,6 +2089,9 @@
       <MemberSignature Language="C#" Value="public bool GridLines { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool GridLines" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.GridLines" />
+      <MemberSignature Language="VB.NET" Value="Public Property GridLines As Boolean" />
+      <MemberSignature Language="F#" Value="member this.GridLines : bool with get, set" Usage="System.Windows.Forms.ListView.GridLines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GridLines { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1965,6 +2149,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewGroupCollection Groups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewGroupCollection Groups" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.Groups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Groups As ListViewGroupCollection" />
+      <MemberSignature Language="F#" Value="member this.Groups : System.Windows.Forms.ListViewGroupCollection" Usage="System.Windows.Forms.ListView.Groups" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewGroupCollection ^ Groups { System::Windows::Forms::ListViewGroupCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1972,7 +2159,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ListViewGroupCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -2036,6 +2223,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ColumnHeaderStyle HeaderStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ColumnHeaderStyle HeaderStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.HeaderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderStyle As ColumnHeaderStyle" />
+      <MemberSignature Language="F#" Value="member this.HeaderStyle : System.Windows.Forms.ColumnHeaderStyle with get, set" Usage="System.Windows.Forms.ListView.HeaderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ColumnHeaderStyle HeaderStyle { System::Windows::Forms::ColumnHeaderStyle get(); void set(System::Windows::Forms::ColumnHeaderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2082,6 +2272,9 @@
       <MemberSignature Language="C#" Value="public bool HideSelection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HideSelection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.HideSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Property HideSelection As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HideSelection : bool with get, set" Usage="System.Windows.Forms.ListView.HideSelection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HideSelection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2121,10 +2314,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HitTest">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides item information, given an x- and y-coordinate.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="HitTest">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewHitTestInfo HitTest (System.Drawing.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ListViewHitTestInfo HitTest(valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.HitTest(System.Drawing.Point)" />
+      <MemberSignature Language="F#" Value="member this.HitTest : System.Drawing.Point -&gt; System.Windows.Forms.ListViewHitTestInfo" Usage="listView.HitTest point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ListViewHitTestInfo ^ HitTest(System::Drawing::Point point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2155,6 +2359,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewHitTestInfo HitTest (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ListViewHitTestInfo HitTest(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.HitTest(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HitTest (x As Integer, y As Integer) As ListViewHitTestInfo" />
+      <MemberSignature Language="F#" Value="member this.HitTest : int * int -&gt; System.Windows.Forms.ListViewHitTestInfo" Usage="listView.HitTest (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ListViewHitTestInfo ^ HitTest(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2195,6 +2402,9 @@
       <MemberSignature Language="C#" Value="public bool HotTracking { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HotTracking" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.HotTracking" />
+      <MemberSignature Language="VB.NET" Value="Public Property HotTracking As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HotTracking : bool with get, set" Usage="System.Windows.Forms.ListView.HotTracking" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HotTracking { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2234,6 +2444,9 @@
       <MemberSignature Language="C#" Value="public bool HoverSelection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HoverSelection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.HoverSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Property HoverSelection As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HoverSelection : bool with get, set" Usage="System.Windows.Forms.ListView.HoverSelection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HoverSelection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2265,6 +2478,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewInsertionMark InsertionMark { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewInsertionMark InsertionMark" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.InsertionMark" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InsertionMark As ListViewInsertionMark" />
+      <MemberSignature Language="F#" Value="member this.InsertionMark : System.Windows.Forms.ListViewInsertionMark" Usage="System.Windows.Forms.ListView.InsertionMark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewInsertionMark ^ InsertionMark { System::Windows::Forms::ListViewInsertionMark ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2275,7 +2491,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2316,6 +2532,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsInputKey (System.Windows.Forms.Keys keyData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsInputKey(valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.IsInputKey(System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsInputKey (keyData As Keys) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsInputKey : System.Windows.Forms.Keys -&gt; bool" Usage="listView.IsInputKey keyData" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsInputKey(System::Windows::Forms::Keys keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2339,6 +2558,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ItemActivate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ItemActivate" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.ItemActivate" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ItemActivate As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemActivate : EventHandler " Usage="member this.ItemActivate : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ItemActivate;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2380,6 +2602,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ItemCheckEventHandler ItemCheck;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ItemCheckEventHandler ItemCheck" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.ItemCheck" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ItemCheck As ItemCheckEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemCheck : System.Windows.Forms.ItemCheckEventHandler " Usage="member this.ItemCheck : System.Windows.Forms.ItemCheckEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ItemCheckEventHandler ^ ItemCheck;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2423,6 +2648,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ItemCheckedEventHandler ItemChecked;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ItemCheckedEventHandler ItemChecked" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.ItemChecked" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ItemChecked As ItemCheckedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemChecked : System.Windows.Forms.ItemCheckedEventHandler " Usage="member this.ItemChecked : System.Windows.Forms.ItemCheckedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ItemCheckedEventHandler ^ ItemChecked;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2461,6 +2689,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ItemDragEventHandler ItemDrag;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ItemDragEventHandler ItemDrag" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.ItemDrag" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ItemDrag As ItemDragEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemDrag : System.Windows.Forms.ItemDragEventHandler " Usage="member this.ItemDrag : System.Windows.Forms.ItemDragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ItemDragEventHandler ^ ItemDrag;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2499,6 +2730,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ListViewItemMouseHoverEventHandler ItemMouseHover;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ListViewItemMouseHoverEventHandler ItemMouseHover" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.ItemMouseHover" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ItemMouseHover As ListViewItemMouseHoverEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemMouseHover : System.Windows.Forms.ListViewItemMouseHoverEventHandler " Usage="member this.ItemMouseHover : System.Windows.Forms.ListViewItemMouseHoverEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ListViewItemMouseHoverEventHandler ^ ItemMouseHover;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2533,6 +2767,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListView.ListViewItemCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListView/ListViewItemCollection Items" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ListView.ListViewItemCollection" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Windows.Forms.ListView.ListViewItemCollection" Usage="System.Windows.Forms.ListView.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListView::ListViewItemCollection ^ Items { System::Windows::Forms::ListView::ListViewItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2540,7 +2777,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ListViewItemCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -2598,6 +2835,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ListViewItemSelectionChangedEventHandler ItemSelectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ListViewItemSelectionChangedEventHandler ItemSelectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.ItemSelectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ItemSelectionChanged As ListViewItemSelectionChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemSelectionChanged : System.Windows.Forms.ListViewItemSelectionChangedEventHandler " Usage="member this.ItemSelectionChanged : System.Windows.Forms.ListViewItemSelectionChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ListViewItemSelectionChangedEventHandler ^ ItemSelectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2637,6 +2877,9 @@
       <MemberSignature Language="C#" Value="public bool LabelEdit { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool LabelEdit" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.LabelEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Property LabelEdit As Boolean" />
+      <MemberSignature Language="F#" Value="member this.LabelEdit : bool with get, set" Usage="System.Windows.Forms.ListView.LabelEdit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LabelEdit { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2698,6 +2941,9 @@
       <MemberSignature Language="C#" Value="public bool LabelWrap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool LabelWrap" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.LabelWrap" />
+      <MemberSignature Language="VB.NET" Value="Public Property LabelWrap As Boolean" />
+      <MemberSignature Language="F#" Value="member this.LabelWrap : bool with get, set" Usage="System.Windows.Forms.ListView.LabelWrap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LabelWrap { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2733,6 +2979,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ImageList LargeImageList { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ImageList LargeImageList" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.LargeImageList" />
+      <MemberSignature Language="VB.NET" Value="Public Property LargeImageList As ImageList" />
+      <MemberSignature Language="F#" Value="member this.LargeImageList : System.Windows.Forms.ImageList with get, set" Usage="System.Windows.Forms.ListView.LargeImageList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImageList ^ LargeImageList { System::Windows::Forms::ImageList ^ get(); void set(System::Windows::Forms::ImageList ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2798,6 +3047,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IComparer ListViewItemSorter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IComparer ListViewItemSorter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ListViewItemSorter" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListViewItemSorter As IComparer" />
+      <MemberSignature Language="F#" Value="member this.ListViewItemSorter : System.Collections.IComparer with get, set" Usage="System.Windows.Forms.ListView.ListViewItemSorter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IComparer ^ ListViewItemSorter { System::Collections::IComparer ^ get(); void set(System::Collections::IComparer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2808,7 +3060,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2849,6 +3101,9 @@
       <MemberSignature Language="C#" Value="public bool MultiSelect { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MultiSelect" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.MultiSelect" />
+      <MemberSignature Language="VB.NET" Value="Public Property MultiSelect As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MultiSelect : bool with get, set" Usage="System.Windows.Forms.ListView.MultiSelect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MultiSelect { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2898,6 +3153,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnAfterLabelEdit (System.Windows.Forms.LabelEditEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAfterLabelEdit(class System.Windows.Forms.LabelEditEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnAfterLabelEdit(System.Windows.Forms.LabelEditEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAfterLabelEdit (e As LabelEditEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnAfterLabelEdit : System.Windows.Forms.LabelEditEventArgs -&gt; unit&#xA;override this.OnAfterLabelEdit : System.Windows.Forms.LabelEditEventArgs -&gt; unit" Usage="listView.OnAfterLabelEdit e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAfterLabelEdit(System::Windows::Forms::LabelEditEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2942,6 +3200,9 @@
       <MemberSignature Language="C#" Value="protected override void OnBackgroundImageChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBackgroundImageChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnBackgroundImageChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBackgroundImageChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnBackgroundImageChanged : EventArgs -&gt; unit" Usage="listView.OnBackgroundImageChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBackgroundImageChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2975,6 +3236,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnBeforeLabelEdit (System.Windows.Forms.LabelEditEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBeforeLabelEdit(class System.Windows.Forms.LabelEditEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnBeforeLabelEdit(System.Windows.Forms.LabelEditEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeforeLabelEdit (e As LabelEditEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnBeforeLabelEdit : System.Windows.Forms.LabelEditEventArgs -&gt; unit&#xA;override this.OnBeforeLabelEdit : System.Windows.Forms.LabelEditEventArgs -&gt; unit" Usage="listView.OnBeforeLabelEdit e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeforeLabelEdit(System::Windows::Forms::LabelEditEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3010,6 +3274,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCacheVirtualItems (System.Windows.Forms.CacheVirtualItemsEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCacheVirtualItems(class System.Windows.Forms.CacheVirtualItemsEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnCacheVirtualItems(System.Windows.Forms.CacheVirtualItemsEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCacheVirtualItems (e As CacheVirtualItemsEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnCacheVirtualItems : System.Windows.Forms.CacheVirtualItemsEventArgs -&gt; unit&#xA;override this.OnCacheVirtualItems : System.Windows.Forms.CacheVirtualItemsEventArgs -&gt; unit" Usage="listView.OnCacheVirtualItems e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCacheVirtualItems(System::Windows::Forms::CacheVirtualItemsEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3043,6 +3310,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnColumnClick (System.Windows.Forms.ColumnClickEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnColumnClick(class System.Windows.Forms.ColumnClickEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnColumnClick(System.Windows.Forms.ColumnClickEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnColumnClick (e As ColumnClickEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnColumnClick : System.Windows.Forms.ColumnClickEventArgs -&gt; unit&#xA;override this.OnColumnClick : System.Windows.Forms.ColumnClickEventArgs -&gt; unit" Usage="listView.OnColumnClick e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnColumnClick(System::Windows::Forms::ColumnClickEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3087,6 +3357,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnColumnReordered (System.Windows.Forms.ColumnReorderedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnColumnReordered(class System.Windows.Forms.ColumnReorderedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnColumnReordered(System.Windows.Forms.ColumnReorderedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnColumnReordered (e As ColumnReorderedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnColumnReordered : System.Windows.Forms.ColumnReorderedEventArgs -&gt; unit&#xA;override this.OnColumnReordered : System.Windows.Forms.ColumnReorderedEventArgs -&gt; unit" Usage="listView.OnColumnReordered e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnColumnReordered(System::Windows::Forms::ColumnReorderedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3120,6 +3393,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnColumnWidthChanged (System.Windows.Forms.ColumnWidthChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnColumnWidthChanged(class System.Windows.Forms.ColumnWidthChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnColumnWidthChanged(System.Windows.Forms.ColumnWidthChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnColumnWidthChanged (e As ColumnWidthChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnColumnWidthChanged : System.Windows.Forms.ColumnWidthChangedEventArgs -&gt; unit&#xA;override this.OnColumnWidthChanged : System.Windows.Forms.ColumnWidthChangedEventArgs -&gt; unit" Usage="listView.OnColumnWidthChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnColumnWidthChanged(System::Windows::Forms::ColumnWidthChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3153,6 +3429,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnColumnWidthChanging (System.Windows.Forms.ColumnWidthChangingEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnColumnWidthChanging(class System.Windows.Forms.ColumnWidthChangingEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnColumnWidthChanging(System.Windows.Forms.ColumnWidthChangingEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnColumnWidthChanging (e As ColumnWidthChangingEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnColumnWidthChanging : System.Windows.Forms.ColumnWidthChangingEventArgs -&gt; unit&#xA;override this.OnColumnWidthChanging : System.Windows.Forms.ColumnWidthChangingEventArgs -&gt; unit" Usage="listView.OnColumnWidthChanging e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnColumnWidthChanging(System::Windows::Forms::ColumnWidthChangingEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3188,6 +3467,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDrawColumnHeader (System.Windows.Forms.DrawListViewColumnHeaderEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDrawColumnHeader(class System.Windows.Forms.DrawListViewColumnHeaderEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnDrawColumnHeader(System.Windows.Forms.DrawListViewColumnHeaderEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDrawColumnHeader (e As DrawListViewColumnHeaderEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDrawColumnHeader : System.Windows.Forms.DrawListViewColumnHeaderEventArgs -&gt; unit&#xA;override this.OnDrawColumnHeader : System.Windows.Forms.DrawListViewColumnHeaderEventArgs -&gt; unit" Usage="listView.OnDrawColumnHeader e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDrawColumnHeader(System::Windows::Forms::DrawListViewColumnHeaderEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3221,6 +3503,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDrawItem (System.Windows.Forms.DrawListViewItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDrawItem(class System.Windows.Forms.DrawListViewItemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnDrawItem(System.Windows.Forms.DrawListViewItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDrawItem (e As DrawListViewItemEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDrawItem : System.Windows.Forms.DrawListViewItemEventArgs -&gt; unit&#xA;override this.OnDrawItem : System.Windows.Forms.DrawListViewItemEventArgs -&gt; unit" Usage="listView.OnDrawItem e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDrawItem(System::Windows::Forms::DrawListViewItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3256,6 +3541,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDrawSubItem (System.Windows.Forms.DrawListViewSubItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDrawSubItem(class System.Windows.Forms.DrawListViewSubItemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnDrawSubItem(System.Windows.Forms.DrawListViewSubItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDrawSubItem (e As DrawListViewSubItemEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDrawSubItem : System.Windows.Forms.DrawListViewSubItemEventArgs -&gt; unit&#xA;override this.OnDrawSubItem : System.Windows.Forms.DrawListViewSubItemEventArgs -&gt; unit" Usage="listView.OnDrawSubItem e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDrawSubItem(System::Windows::Forms::DrawListViewSubItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3291,6 +3579,9 @@
       <MemberSignature Language="C#" Value="protected override void OnFontChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnFontChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnFontChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="listView.OnFontChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3312,6 +3603,9 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnHandleCreated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="listView.OnHandleCreated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3333,6 +3627,9 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleDestroyed (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleDestroyed(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnHandleDestroyed(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleDestroyed (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnHandleDestroyed : EventArgs -&gt; unit" Usage="listView.OnHandleDestroyed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleDestroyed(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3354,6 +3651,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnItemActivate (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemActivate(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnItemActivate(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemActivate (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnItemActivate : EventArgs -&gt; unit&#xA;override this.OnItemActivate : EventArgs -&gt; unit" Usage="listView.OnItemActivate e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemActivate(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3389,6 +3689,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnItemCheck (System.Windows.Forms.ItemCheckEventArgs ice);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemCheck(class System.Windows.Forms.ItemCheckEventArgs ice) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnItemCheck(System.Windows.Forms.ItemCheckEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemCheck (ice As ItemCheckEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnItemCheck : System.Windows.Forms.ItemCheckEventArgs -&gt; unit&#xA;override this.OnItemCheck : System.Windows.Forms.ItemCheckEventArgs -&gt; unit" Usage="listView.OnItemCheck ice" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemCheck(System::Windows::Forms::ItemCheckEventArgs ^ ice);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3424,6 +3727,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnItemChecked (System.Windows.Forms.ItemCheckedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemChecked(class System.Windows.Forms.ItemCheckedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnItemChecked(System.Windows.Forms.ItemCheckedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemChecked (e As ItemCheckedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnItemChecked : System.Windows.Forms.ItemCheckedEventArgs -&gt; unit&#xA;override this.OnItemChecked : System.Windows.Forms.ItemCheckedEventArgs -&gt; unit" Usage="listView.OnItemChecked e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemChecked(System::Windows::Forms::ItemCheckedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3457,6 +3763,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnItemDrag (System.Windows.Forms.ItemDragEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemDrag(class System.Windows.Forms.ItemDragEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnItemDrag(System.Windows.Forms.ItemDragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemDrag (e As ItemDragEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnItemDrag : System.Windows.Forms.ItemDragEventArgs -&gt; unit&#xA;override this.OnItemDrag : System.Windows.Forms.ItemDragEventArgs -&gt; unit" Usage="listView.OnItemDrag e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemDrag(System::Windows::Forms::ItemDragEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3492,6 +3801,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnItemMouseHover (System.Windows.Forms.ListViewItemMouseHoverEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemMouseHover(class System.Windows.Forms.ListViewItemMouseHoverEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnItemMouseHover(System.Windows.Forms.ListViewItemMouseHoverEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemMouseHover (e As ListViewItemMouseHoverEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnItemMouseHover : System.Windows.Forms.ListViewItemMouseHoverEventArgs -&gt; unit&#xA;override this.OnItemMouseHover : System.Windows.Forms.ListViewItemMouseHoverEventArgs -&gt; unit" Usage="listView.OnItemMouseHover e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemMouseHover(System::Windows::Forms::ListViewItemMouseHoverEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3525,6 +3837,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnItemSelectionChanged (System.Windows.Forms.ListViewItemSelectionChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemSelectionChanged(class System.Windows.Forms.ListViewItemSelectionChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnItemSelectionChanged(System.Windows.Forms.ListViewItemSelectionChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemSelectionChanged (e As ListViewItemSelectionChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnItemSelectionChanged : System.Windows.Forms.ListViewItemSelectionChangedEventArgs -&gt; unit&#xA;override this.OnItemSelectionChanged : System.Windows.Forms.ListViewItemSelectionChangedEventArgs -&gt; unit" Usage="listView.OnItemSelectionChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemSelectionChanged(System::Windows::Forms::ListViewItemSelectionChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3558,6 +3873,9 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseHover (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseHover(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnMouseHover(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseHover (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseHover : EventArgs -&gt; unit" Usage="listView.OnMouseHover e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseHover(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3593,6 +3911,9 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseLeave (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeave(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnMouseLeave(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeave : EventArgs -&gt; unit" Usage="listView.OnMouseLeave e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3614,6 +3935,9 @@
       <MemberSignature Language="C#" Value="protected override void OnParentChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnParentChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnParentChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnParentChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnParentChanged : EventArgs -&gt; unit" Usage="listView.OnParentChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnParentChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3635,6 +3959,9 @@
       <MemberSignature Language="C#" Value="protected override void OnResize (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnResize(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnResize(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnResize (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnResize : EventArgs -&gt; unit" Usage="listView.OnResize e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnResize(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3656,6 +3983,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnRetrieveVirtualItem (System.Windows.Forms.RetrieveVirtualItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRetrieveVirtualItem(class System.Windows.Forms.RetrieveVirtualItemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnRetrieveVirtualItem(System.Windows.Forms.RetrieveVirtualItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRetrieveVirtualItem (e As RetrieveVirtualItemEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnRetrieveVirtualItem : System.Windows.Forms.RetrieveVirtualItemEventArgs -&gt; unit&#xA;override this.OnRetrieveVirtualItem : System.Windows.Forms.RetrieveVirtualItemEventArgs -&gt; unit" Usage="listView.OnRetrieveVirtualItem e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRetrieveVirtualItem(System::Windows::Forms::RetrieveVirtualItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3689,6 +4019,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnRightToLeftLayoutChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRightToLeftLayoutChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnRightToLeftLayoutChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnRightToLeftLayoutChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnRightToLeftLayoutChanged : EventArgs -&gt; unit&#xA;override this.OnRightToLeftLayoutChanged : EventArgs -&gt; unit" Usage="listView.OnRightToLeftLayoutChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnRightToLeftLayoutChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3727,6 +4060,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSearchForVirtualItem (System.Windows.Forms.SearchForVirtualItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSearchForVirtualItem(class System.Windows.Forms.SearchForVirtualItemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnSearchForVirtualItem(System.Windows.Forms.SearchForVirtualItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSearchForVirtualItem (e As SearchForVirtualItemEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSearchForVirtualItem : System.Windows.Forms.SearchForVirtualItemEventArgs -&gt; unit&#xA;override this.OnSearchForVirtualItem : System.Windows.Forms.SearchForVirtualItemEventArgs -&gt; unit" Usage="listView.OnSearchForVirtualItem e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSearchForVirtualItem(System::Windows::Forms::SearchForVirtualItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3760,6 +4096,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelectedIndexChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectedIndexChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnSelectedIndexChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedIndexChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSelectedIndexChanged : EventArgs -&gt; unit&#xA;override this.OnSelectedIndexChanged : EventArgs -&gt; unit" Usage="listView.OnSelectedIndexChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedIndexChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3795,6 +4134,9 @@
       <MemberSignature Language="C#" Value="protected override void OnSystemColorsChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSystemColorsChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnSystemColorsChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSystemColorsChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnSystemColorsChanged : EventArgs -&gt; unit" Usage="listView.OnSystemColorsChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSystemColorsChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3816,6 +4158,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnVirtualItemsSelectionRangeChanged (System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnVirtualItemsSelectionRangeChanged(class System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.OnVirtualItemsSelectionRangeChanged(System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnVirtualItemsSelectionRangeChanged (e As ListViewVirtualItemsSelectionRangeChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnVirtualItemsSelectionRangeChanged : System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventArgs -&gt; unit&#xA;override this.OnVirtualItemsSelectionRangeChanged : System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventArgs -&gt; unit" Usage="listView.OnVirtualItemsSelectionRangeChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnVirtualItemsSelectionRangeChanged(System::Windows::Forms::ListViewVirtualItemsSelectionRangeChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3849,6 +4194,9 @@
       <MemberSignature Language="C#" Value="public bool OwnerDraw { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OwnerDraw" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.OwnerDraw" />
+      <MemberSignature Language="VB.NET" Value="Public Property OwnerDraw As Boolean" />
+      <MemberSignature Language="F#" Value="member this.OwnerDraw : bool with get, set" Usage="System.Windows.Forms.ListView.OwnerDraw" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OwnerDraw { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3909,6 +4257,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Padding Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding Padding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.Padding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.ListView.Padding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3919,7 +4270,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -3945,6 +4296,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler PaddingChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PaddingChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.PaddingChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PaddingChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3977,6 +4331,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.PaintEventHandler Paint;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.PaintEventHandler Paint" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.Paint" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Paint As PaintEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Paint : System.Windows.Forms.PaintEventHandler " Usage="member this.Paint : System.Windows.Forms.PaintEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PaintEventHandler ^ Paint;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4009,6 +4366,9 @@
       <MemberSignature Language="C#" Value="protected void RealizeProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RealizeProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.RealizeProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RealizeProperties ()" />
+      <MemberSignature Language="F#" Value="member this.RealizeProperties : unit -&gt; unit" Usage="listView.RealizeProperties " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RealizeProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4027,6 +4387,9 @@
       <MemberSignature Language="C#" Value="public void RedrawItems (int startIndex, int endIndex, bool invalidateOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RedrawItems(int32 startIndex, int32 endIndex, bool invalidateOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.RedrawItems(System.Int32,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RedrawItems (startIndex As Integer, endIndex As Integer, invalidateOnly As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.RedrawItems : int * int * bool -&gt; unit" Usage="listView.RedrawItems (startIndex, endIndex, invalidateOnly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RedrawItems(int startIndex, int endIndex, bool invalidateOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4073,6 +4436,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.RetrieveVirtualItemEventHandler RetrieveVirtualItem;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.RetrieveVirtualItemEventHandler RetrieveVirtualItem" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.RetrieveVirtualItem" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event RetrieveVirtualItem As RetrieveVirtualItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.RetrieveVirtualItem : System.Windows.Forms.RetrieveVirtualItemEventHandler " Usage="member this.RetrieveVirtualItem : System.Windows.Forms.RetrieveVirtualItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::RetrieveVirtualItemEventHandler ^ RetrieveVirtualItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4108,6 +4474,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RightToLeftLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RightToLeftLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.RightToLeftLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property RightToLeftLayout As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayout : bool with get, set" Usage="System.Windows.Forms.ListView.RightToLeftLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RightToLeftLayout { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4142,6 +4511,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler RightToLeftLayoutChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RightToLeftLayoutChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.RightToLeftLayoutChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event RightToLeftLayoutChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.RightToLeftLayoutChanged : EventHandler " Usage="member this.RightToLeftLayoutChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4176,6 +4548,9 @@
       <MemberSignature Language="C#" Value="public bool Scrollable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Scrollable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.Scrollable" />
+      <MemberSignature Language="VB.NET" Value="Public Property Scrollable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Scrollable : bool with get, set" Usage="System.Windows.Forms.ListView.Scrollable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Scrollable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4210,6 +4585,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.SearchForVirtualItemEventHandler SearchForVirtualItem;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.SearchForVirtualItemEventHandler SearchForVirtualItem" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.SearchForVirtualItem" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SearchForVirtualItem As SearchForVirtualItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.SearchForVirtualItem : System.Windows.Forms.SearchForVirtualItemEventHandler " Usage="member this.SearchForVirtualItem : System.Windows.Forms.SearchForVirtualItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::SearchForVirtualItemEventHandler ^ SearchForVirtualItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4244,6 +4622,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler SelectedIndexChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectedIndexChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.SelectedIndexChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SelectedIndexChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectedIndexChanged : EventHandler " Usage="member this.SelectedIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectedIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4289,6 +4670,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListView.SelectedIndexCollection SelectedIndices { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListView/SelectedIndexCollection SelectedIndices" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.SelectedIndices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedIndices As ListView.SelectedIndexCollection" />
+      <MemberSignature Language="F#" Value="member this.SelectedIndices : System.Windows.Forms.ListView.SelectedIndexCollection" Usage="System.Windows.Forms.ListView.SelectedIndices" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListView::SelectedIndexCollection ^ SelectedIndices { System::Windows::Forms::ListView::SelectedIndexCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4299,7 +4683,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4338,6 +4722,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListView.SelectedListViewItemCollection SelectedItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListView/SelectedListViewItemCollection SelectedItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.SelectedItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedItems As ListView.SelectedListViewItemCollection" />
+      <MemberSignature Language="F#" Value="member this.SelectedItems : System.Windows.Forms.ListView.SelectedListViewItemCollection" Usage="System.Windows.Forms.ListView.SelectedItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListView::SelectedListViewItemCollection ^ SelectedItems { System::Windows::Forms::ListView::SelectedListViewItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4348,7 +4735,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4387,6 +4774,9 @@
       <MemberSignature Language="C#" Value="public bool ShowGroups { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowGroups" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ShowGroups" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowGroups As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowGroups : bool with get, set" Usage="System.Windows.Forms.ListView.ShowGroups" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowGroups { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4422,6 +4812,9 @@
       <MemberSignature Language="C#" Value="public bool ShowItemToolTips { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowItemToolTips" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ShowItemToolTips" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowItemToolTips As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowItemToolTips : bool with get, set" Usage="System.Windows.Forms.ListView.ShowItemToolTips" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowItemToolTips { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4461,6 +4854,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ImageList SmallImageList { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ImageList SmallImageList" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.SmallImageList" />
+      <MemberSignature Language="VB.NET" Value="Public Property SmallImageList As ImageList" />
+      <MemberSignature Language="F#" Value="member this.SmallImageList : System.Windows.Forms.ImageList with get, set" Usage="System.Windows.Forms.ListView.SmallImageList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImageList ^ SmallImageList { System::Windows::Forms::ImageList ^ get(); void set(System::Windows::Forms::ImageList ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4526,6 +4922,9 @@
       <MemberSignature Language="C#" Value="public void Sort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.Sort" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Sort ()" />
+      <MemberSignature Language="F#" Value="member this.Sort : unit -&gt; unit" Usage="listView.Sort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4554,6 +4953,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.SortOrder Sorting { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.SortOrder Sorting" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.Sorting" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sorting As SortOrder" />
+      <MemberSignature Language="F#" Value="member this.Sorting : System.Windows.Forms.SortOrder with get, set" Usage="System.Windows.Forms.ListView.Sorting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::SortOrder Sorting { System::Windows::Forms::SortOrder get(); void set(System::Windows::Forms::SortOrder value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4615,6 +5017,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ImageList StateImageList { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ImageList StateImageList" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.StateImageList" />
+      <MemberSignature Language="VB.NET" Value="Public Property StateImageList As ImageList" />
+      <MemberSignature Language="F#" Value="member this.StateImageList : System.Windows.Forms.ImageList with get, set" Usage="System.Windows.Forms.ListView.StateImageList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImageList ^ StateImageList { System::Windows::Forms::ImageList ^ get(); void set(System::Windows::Forms::ImageList ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4651,6 +5056,9 @@
       <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.ListView.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4687,6 +5095,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.TextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4712,6 +5123,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Size TileSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size TileSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.TileSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property TileSize As Size" />
+      <MemberSignature Language="F#" Value="member this.TileSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.ListView.TileSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size TileSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4753,6 +5167,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListViewItem TopItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewItem TopItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.TopItem" />
+      <MemberSignature Language="VB.NET" Value="Public Property TopItem As ListViewItem" />
+      <MemberSignature Language="F#" Value="member this.TopItem : System.Windows.Forms.ListViewItem with get, set" Usage="System.Windows.Forms.ListView.TopItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListViewItem ^ TopItem { System::Windows::Forms::ListViewItem ^ get(); void set(System::Windows::Forms::ListViewItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4763,7 +5180,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4807,6 +5224,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="listView.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4826,6 +5246,9 @@
       <MemberSignature Language="C#" Value="protected void UpdateExtendedStyles ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void UpdateExtendedStyles() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.UpdateExtendedStyles" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub UpdateExtendedStyles ()" />
+      <MemberSignature Language="F#" Value="member this.UpdateExtendedStyles : unit -&gt; unit" Usage="listView.UpdateExtendedStyles " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void UpdateExtendedStyles();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4871,6 +5294,9 @@
       <MemberSignature Language="C#" Value="public bool UseCompatibleStateImageBehavior { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseCompatibleStateImageBehavior" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.UseCompatibleStateImageBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseCompatibleStateImageBehavior As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseCompatibleStateImageBehavior : bool with get, set" Usage="System.Windows.Forms.ListView.UseCompatibleStateImageBehavior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseCompatibleStateImageBehavior { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -4911,6 +5337,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.View View { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.View View" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.View" />
+      <MemberSignature Language="VB.NET" Value="Public Property View As View" />
+      <MemberSignature Language="F#" Value="member this.View : System.Windows.Forms.View with get, set" Usage="System.Windows.Forms.ListView.View" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::View View { System::Windows::Forms::View get(); void set(System::Windows::Forms::View value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5012,6 +5441,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventHandler VirtualItemsSelectionRangeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventHandler VirtualItemsSelectionRangeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListView.VirtualItemsSelectionRangeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event VirtualItemsSelectionRangeChanged As ListViewVirtualItemsSelectionRangeChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.VirtualItemsSelectionRangeChanged : System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventHandler " Usage="member this.VirtualItemsSelectionRangeChanged : System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ListViewVirtualItemsSelectionRangeChangedEventHandler ^ VirtualItemsSelectionRangeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5049,6 +5481,9 @@
       <MemberSignature Language="C#" Value="public int VirtualListSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VirtualListSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.VirtualListSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property VirtualListSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.VirtualListSize : int with get, set" Usage="System.Windows.Forms.ListView.VirtualListSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int VirtualListSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5059,7 +5494,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5089,6 +5524,9 @@
       <MemberSignature Language="C#" Value="public bool VirtualMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool VirtualMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.VirtualMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property VirtualMode As Boolean" />
+      <MemberSignature Language="F#" Value="member this.VirtualMode : bool with get, set" Usage="System.Windows.Forms.ListView.VirtualMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool VirtualMode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5099,7 +5537,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5155,6 +5593,9 @@
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.WndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="listView.WndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -5172,50 +5613,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetItemRect">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the bounding rectangle for an item within the control.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ArrangeIcons">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Arranges items in the control when they are displayed as icons.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FindItemWithText">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Finds the first <see cref="T:System.Windows.Forms.ListViewItem" /> with that begins with the given text value.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="HitTest">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides item information, given an x- and y-coordinate.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FindNearestItem">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Finds the next item from a given point, searching in the specified direction.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

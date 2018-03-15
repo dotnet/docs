@@ -1,7 +1,10 @@
-<Type Name="TypeForwardedFromAttribute" FullName="System.Runtime.CompilerServices.TypeForwardedFromAttribute">
+﻿<Type Name="TypeForwardedFromAttribute" FullName="System.Runtime.CompilerServices.TypeForwardedFromAttribute">
   <TypeSignature Language="C#" Value="public sealed class TypeForwardedFromAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeForwardedFromAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.TypeForwardedFromAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeForwardedFromAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type TypeForwardedFromAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeForwardedFromAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="public TypeForwardedFromAttribute (string assemblyFullName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string assemblyFullName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.TypeForwardedFromAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyFullName As String)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.CompilerServices.TypeForwardedFromAttribute : string -&gt; System.Runtime.CompilerServices.TypeForwardedFromAttribute" Usage="new System.Runtime.CompilerServices.TypeForwardedFromAttribute assemblyFullName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeForwardedFromAttribute(System::String ^ assemblyFullName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -77,6 +83,9 @@
       <MemberSignature Language="C#" Value="public string AssemblyFullName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyFullName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.TypeForwardedFromAttribute.AssemblyFullName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyFullName As String" />
+      <MemberSignature Language="F#" Value="member this.AssemblyFullName : string" Usage="System.Runtime.CompilerServices.TypeForwardedFromAttribute.AssemblyFullName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyFullName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

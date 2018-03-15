@@ -1,7 +1,10 @@
-<Type Name="ChannelProtectionRequirements" FullName="System.ServiceModel.Security.ChannelProtectionRequirements">
+﻿<Type Name="ChannelProtectionRequirements" FullName="System.ServiceModel.Security.ChannelProtectionRequirements">
   <TypeSignature Language="C#" Value="public class ChannelProtectionRequirements" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChannelProtectionRequirements extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.ChannelProtectionRequirements" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChannelProtectionRequirements" />
+  <TypeSignature Language="F#" Value="type ChannelProtectionRequirements = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChannelProtectionRequirements" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,10 +26,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ChannelProtectionRequirements ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ChannelProtectionRequirements.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelProtectionRequirements();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +73,9 @@
       <MemberSignature Language="C#" Value="public ChannelProtectionRequirements (System.ServiceModel.Security.ChannelProtectionRequirements other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.ChannelProtectionRequirements other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ChannelProtectionRequirements.#ctor(System.ServiceModel.Security.ChannelProtectionRequirements)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (other As ChannelProtectionRequirements)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.ChannelProtectionRequirements : System.ServiceModel.Security.ChannelProtectionRequirements -&gt; System.ServiceModel.Security.ChannelProtectionRequirements" Usage="new System.ServiceModel.Security.ChannelProtectionRequirements other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelProtectionRequirements(System::ServiceModel::Security::ChannelProtectionRequirements ^ other);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -90,10 +108,23 @@
           <paramref name="other" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the various parts collections in the specified <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" /> to the current instance of this class.  If there are protection requirements for a particular message in both the <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" /> instances, then the requirements are merged together to ensure that the resulting protection requirement is the maximum of the individual protection requirements.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (System.ServiceModel.Security.ChannelProtectionRequirements protectionRequirements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.ServiceModel.Security.ChannelProtectionRequirements protectionRequirements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ChannelProtectionRequirements.Add(System.ServiceModel.Security.ChannelProtectionRequirements)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (protectionRequirements As ChannelProtectionRequirements)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.ServiceModel.Security.ChannelProtectionRequirements -&gt; unit" Usage="channelProtectionRequirements.Add protectionRequirements" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::ServiceModel::Security::ChannelProtectionRequirements ^ protectionRequirements);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +147,9 @@
       <MemberSignature Language="C#" Value="public void Add (System.ServiceModel.Security.ChannelProtectionRequirements protectionRequirements, bool channelScopeOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.ServiceModel.Security.ChannelProtectionRequirements protectionRequirements, bool channelScopeOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ChannelProtectionRequirements.Add(System.ServiceModel.Security.ChannelProtectionRequirements,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (protectionRequirements As ChannelProtectionRequirements, channelScopeOnly As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.ServiceModel.Security.ChannelProtectionRequirements * bool -&gt; unit" Usage="channelProtectionRequirements.Add (protectionRequirements, channelScopeOnly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::ServiceModel::Security::ChannelProtectionRequirements ^ protectionRequirements, bool channelScopeOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -140,6 +174,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.ChannelProtectionRequirements CreateInverse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Security.ChannelProtectionRequirements CreateInverse() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ChannelProtectionRequirements.CreateInverse" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateInverse () As ChannelProtectionRequirements" />
+      <MemberSignature Language="F#" Value="member this.CreateInverse : unit -&gt; System.ServiceModel.Security.ChannelProtectionRequirements" Usage="channelProtectionRequirements.CreateInverse " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Security::ChannelProtectionRequirements ^ CreateInverse();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +204,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.ScopedMessagePartSpecification IncomingEncryptionParts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.ScopedMessagePartSpecification IncomingEncryptionParts" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ChannelProtectionRequirements.IncomingEncryptionParts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncomingEncryptionParts As ScopedMessagePartSpecification" />
+      <MemberSignature Language="F#" Value="member this.IncomingEncryptionParts : System.ServiceModel.Security.ScopedMessagePartSpecification" Usage="System.ServiceModel.Security.ChannelProtectionRequirements.IncomingEncryptionParts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::ScopedMessagePartSpecification ^ IncomingEncryptionParts { System::ServiceModel::Security::ScopedMessagePartSpecification ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -193,6 +233,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.ScopedMessagePartSpecification IncomingSignatureParts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.ScopedMessagePartSpecification IncomingSignatureParts" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ChannelProtectionRequirements.IncomingSignatureParts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncomingSignatureParts As ScopedMessagePartSpecification" />
+      <MemberSignature Language="F#" Value="member this.IncomingSignatureParts : System.ServiceModel.Security.ScopedMessagePartSpecification" Usage="System.ServiceModel.Security.ChannelProtectionRequirements.IncomingSignatureParts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::ScopedMessagePartSpecification ^ IncomingSignatureParts { System::ServiceModel::Security::ScopedMessagePartSpecification ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -219,6 +262,9 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ChannelProtectionRequirements.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.ServiceModel.Security.ChannelProtectionRequirements.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -239,6 +285,9 @@
       <MemberSignature Language="C#" Value="public void MakeReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MakeReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.ChannelProtectionRequirements.MakeReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MakeReadOnly ()" />
+      <MemberSignature Language="F#" Value="member this.MakeReadOnly : unit -&gt; unit" Usage="channelProtectionRequirements.MakeReadOnly " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MakeReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -265,6 +314,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.ScopedMessagePartSpecification OutgoingEncryptionParts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.ScopedMessagePartSpecification OutgoingEncryptionParts" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ChannelProtectionRequirements.OutgoingEncryptionParts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutgoingEncryptionParts As ScopedMessagePartSpecification" />
+      <MemberSignature Language="F#" Value="member this.OutgoingEncryptionParts : System.ServiceModel.Security.ScopedMessagePartSpecification" Usage="System.ServiceModel.Security.ChannelProtectionRequirements.OutgoingEncryptionParts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::ScopedMessagePartSpecification ^ OutgoingEncryptionParts { System::ServiceModel::Security::ScopedMessagePartSpecification ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -291,6 +343,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.ScopedMessagePartSpecification OutgoingSignatureParts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.ScopedMessagePartSpecification OutgoingSignatureParts" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.ChannelProtectionRequirements.OutgoingSignatureParts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutgoingSignatureParts As ScopedMessagePartSpecification" />
+      <MemberSignature Language="F#" Value="member this.OutgoingSignatureParts : System.ServiceModel.Security.ScopedMessagePartSpecification" Usage="System.ServiceModel.Security.ChannelProtectionRequirements.OutgoingSignatureParts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::ScopedMessagePartSpecification ^ OutgoingSignatureParts { System::ServiceModel::Security::ScopedMessagePartSpecification ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -313,25 +368,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the various parts collections in the specified <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" /> to the current instance of this class.  If there are protection requirements for a particular message in both the <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" /> instances, then the requirements are merged together to ensure that the resulting protection requirement is the maximum of the individual protection requirements.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.ChannelProtectionRequirements" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

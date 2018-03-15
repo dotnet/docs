@@ -1,7 +1,10 @@
-<Type Name="OperationMessage" FullName="System.Web.Services.Description.OperationMessage">
+﻿<Type Name="OperationMessage" FullName="System.Web.Services.Description.OperationMessage">
   <TypeSignature Language="C#" Value="public abstract class OperationMessage : System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit OperationMessage extends System.Web.Services.Description.NamedItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.OperationMessage" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class OperationMessage&#xA;Inherits NamedItem" />
+  <TypeSignature Language="F#" Value="type OperationMessage = class&#xA;    inherit NamedItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OperationMessage abstract : System::Web::Services::Description::NamedItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="protected OperationMessage ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationMessage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; OperationMessage();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -56,6 +61,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName Message { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName Message" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationMessage.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Property Message As XmlQualifiedName" />
+      <MemberSignature Language="F#" Value="member this.Message : System.Xml.XmlQualifiedName with get, set" Usage="System.Web.Services.Description.OperationMessage.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ Message { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -89,6 +97,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.Operation Operation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.Operation Operation" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationMessage.Operation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operation As Operation" />
+      <MemberSignature Language="F#" Value="member this.Operation : System.Web.Services.Description.Operation" Usage="System.Web.Services.Description.OperationMessage.Operation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::Operation ^ Operation { System::Web::Services::Description::Operation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

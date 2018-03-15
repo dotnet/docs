@@ -1,7 +1,10 @@
-<Type Name="DeploymentProgressState" FullName="System.Deployment.Application.DeploymentProgressState">
+﻿<Type Name="DeploymentProgressState" FullName="System.Deployment.Application.DeploymentProgressState">
   <TypeSignature Language="C#" Value="public enum DeploymentProgressState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeploymentProgressState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DeploymentProgressState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DeploymentProgressState" />
+  <TypeSignature Language="F#" Value="type DeploymentProgressState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DeploymentProgressState" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="DownloadingApplicationFiles" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Deployment.Application.DeploymentProgressState DownloadingApplicationFiles = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Deployment.Application.DeploymentProgressState.DownloadingApplicationFiles" />
+      <MemberSignature Language="VB.NET" Value="DownloadingApplicationFiles" />
+      <MemberSignature Language="F#" Value="DownloadingApplicationFiles = 2" Usage="System.Deployment.Application.DeploymentProgressState.DownloadingApplicationFiles" />
+      <MemberSignature Language="C++ CLI" Value="DownloadingApplicationFiles" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Deployment.Application.DeploymentProgressState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>[!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] is downloading the DLLs and data files that comprised the application.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="DownloadingApplicationInformation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Deployment.Application.DeploymentProgressState DownloadingApplicationInformation = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Deployment.Application.DeploymentProgressState.DownloadingApplicationInformation" />
+      <MemberSignature Language="VB.NET" Value="DownloadingApplicationInformation" />
+      <MemberSignature Language="F#" Value="DownloadingApplicationInformation = 1" Usage="System.Deployment.Application.DeploymentProgressState.DownloadingApplicationInformation" />
+      <MemberSignature Language="C++ CLI" Value="DownloadingApplicationInformation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -59,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Deployment.Application.DeploymentProgressState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>[!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] is downloading the application manifest.</summary>
       </Docs>
@@ -67,6 +78,9 @@
       <MemberSignature Language="C#" Value="DownloadingDeploymentInformation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Deployment.Application.DeploymentProgressState DownloadingDeploymentInformation = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Deployment.Application.DeploymentProgressState.DownloadingDeploymentInformation" />
+      <MemberSignature Language="VB.NET" Value="DownloadingDeploymentInformation" />
+      <MemberSignature Language="F#" Value="DownloadingDeploymentInformation = 0" Usage="System.Deployment.Application.DeploymentProgressState.DownloadingDeploymentInformation" />
+      <MemberSignature Language="C++ CLI" Value="DownloadingDeploymentInformation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -75,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Deployment.Application.DeploymentProgressState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>[!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] is downloading the deployment manifest.</summary>
       </Docs>

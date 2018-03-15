@@ -1,7 +1,10 @@
-<Type Name="DataGridViewAutoSizeModeEventHandler" FullName="System.Windows.Forms.DataGridViewAutoSizeModeEventHandler">
+﻿<Type Name="DataGridViewAutoSizeModeEventHandler" FullName="System.Windows.Forms.DataGridViewAutoSizeModeEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewAutoSizeModeEventHandler(object sender, DataGridViewAutoSizeModeEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewAutoSizeModeEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAutoSizeModeEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewAutoSizeModeEventHandler(sender As Object, e As DataGridViewAutoSizeModeEventArgs)" />
+  <TypeSignature Language="F#" Value="type DataGridViewAutoSizeModeEventHandler = delegate of obj * DataGridViewAutoSizeModeEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewAutoSizeModeEventHandler(System::Object ^ sender, DataGridViewAutoSizeModeEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

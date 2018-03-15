@@ -1,7 +1,10 @@
-<Type Name="TemplatePagerField" FullName="System.Web.UI.WebControls.TemplatePagerField">
+﻿<Type Name="TemplatePagerField" FullName="System.Web.UI.WebControls.TemplatePagerField">
   <TypeSignature Language="C#" Value="public class TemplatePagerField : System.Web.UI.WebControls.DataPagerField" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplatePagerField extends System.Web.UI.WebControls.DataPagerField" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TemplatePagerField" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemplatePagerField&#xA;Inherits DataPagerField" />
+  <TypeSignature Language="F#" Value="type TemplatePagerField = class&#xA;    inherit DataPagerField" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplatePagerField : System::Web::UI::WebControls::DataPagerField" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +54,8 @@
       <MemberSignature Language="C#" Value="public TemplatePagerField ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplatePagerField.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplatePagerField();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -76,6 +81,9 @@
       <MemberSignature Language="C#" Value="protected override void CopyProperties (System.Web.UI.WebControls.DataPagerField newField);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CopyProperties(class System.Web.UI.WebControls.DataPagerField newField) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplatePagerField.CopyProperties(System.Web.UI.WebControls.DataPagerField)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CopyProperties (newField As DataPagerField)" />
+      <MemberSignature Language="F#" Value="override this.CopyProperties : System.Web.UI.WebControls.DataPagerField -&gt; unit" Usage="templatePagerField.CopyProperties newField" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CopyProperties(System::Web::UI::WebControls::DataPagerField ^ newField);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -118,6 +126,9 @@
       <MemberSignature Language="C#" Value="public override void CreateDataPagers (System.Web.UI.WebControls.DataPagerFieldItem container, int startRowIndex, int maximumRows, int totalRowCount, int fieldIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CreateDataPagers(class System.Web.UI.WebControls.DataPagerFieldItem container, int32 startRowIndex, int32 maximumRows, int32 totalRowCount, int32 fieldIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplatePagerField.CreateDataPagers(System.Web.UI.WebControls.DataPagerFieldItem,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CreateDataPagers (container As DataPagerFieldItem, startRowIndex As Integer, maximumRows As Integer, totalRowCount As Integer, fieldIndex As Integer)" />
+      <MemberSignature Language="F#" Value="override this.CreateDataPagers : System.Web.UI.WebControls.DataPagerFieldItem * int * int * int * int -&gt; unit" Usage="templatePagerField.CreateDataPagers (container, startRowIndex, maximumRows, totalRowCount, fieldIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CreateDataPagers(System::Web::UI::WebControls::DataPagerFieldItem ^ container, int startRowIndex, int maximumRows, int totalRowCount, int fieldIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -157,6 +168,9 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.DataPagerField CreateField ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.DataPagerField CreateField() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplatePagerField.CreateField" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateField () As DataPagerField" />
+      <MemberSignature Language="F#" Value="override this.CreateField : unit -&gt; System.Web.UI.WebControls.DataPagerField" Usage="templatePagerField.CreateField " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::DataPagerField ^ CreateField();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -188,6 +202,9 @@
       <MemberSignature Language="C#" Value="public override void HandleEvent (System.Web.UI.WebControls.CommandEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void HandleEvent(class System.Web.UI.WebControls.CommandEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplatePagerField.HandleEvent(System.Web.UI.WebControls.CommandEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub HandleEvent (e As CommandEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.HandleEvent : System.Web.UI.WebControls.CommandEventArgs -&gt; unit" Usage="templatePagerField.HandleEvent e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void HandleEvent(System::Web::UI::WebControls::CommandEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -222,6 +239,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPagerCommand (System.Web.UI.WebControls.DataPagerCommandEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPagerCommand(class System.Web.UI.WebControls.DataPagerCommandEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TemplatePagerField.OnPagerCommand(System.Web.UI.WebControls.DataPagerCommandEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPagerCommand (e As DataPagerCommandEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPagerCommand : System.Web.UI.WebControls.DataPagerCommandEventArgs -&gt; unit&#xA;override this.OnPagerCommand : System.Web.UI.WebControls.DataPagerCommandEventArgs -&gt; unit" Usage="templatePagerField.OnPagerCommand e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPagerCommand(System::Web::UI::WebControls::DataPagerCommandEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -260,6 +280,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.WebControls.DataPagerCommandEventArgs&gt; PagerCommand;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.DataPagerCommandEventArgs&gt; PagerCommand" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.TemplatePagerField.PagerCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PagerCommand As EventHandler(Of DataPagerCommandEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.PagerCommand : EventHandler&lt;System.Web.UI.WebControls.DataPagerCommandEventArgs&gt; " Usage="member this.PagerCommand : System.EventHandler&lt;System.Web.UI.WebControls.DataPagerCommandEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::DataPagerCommandEventArgs ^&gt; ^ PagerCommand;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -298,6 +321,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate PagerTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate PagerTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TemplatePagerField.PagerTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property PagerTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.PagerTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.TemplatePagerField.PagerTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ PagerTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -311,10 +337,10 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.TemplateContainer(typeof(System.Web.UI.WebControls.DataPagerFieldItem), System.ComponentModel.BindingDirection.TwoWay)</AttributeName>
+          <AttributeName>System.Web.UI.TemplateContainer</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

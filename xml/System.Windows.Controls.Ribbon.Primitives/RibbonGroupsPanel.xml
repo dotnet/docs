@@ -1,7 +1,10 @@
-<Type Name="RibbonGroupsPanel" FullName="System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel">
+﻿<Type Name="RibbonGroupsPanel" FullName="System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel">
   <TypeSignature Language="C#" Value="public class RibbonGroupsPanel : System.Windows.Controls.StackPanel, System.Windows.Controls.Ribbon.Primitives.ISupportStarLayout" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonGroupsPanel extends System.Windows.Controls.StackPanel implements class System.Windows.Controls.Ribbon.Primitives.ISupportStarLayout" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonGroupsPanel&#xA;Inherits StackPanel&#xA;Implements ISupportStarLayout" />
+  <TypeSignature Language="F#" Value="type RibbonGroupsPanel = class&#xA;    inherit StackPanel&#xA;    interface ISupportStarLayout" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonGroupsPanel : System::Windows::Controls::StackPanel, System::Windows::Controls::Ribbon::Primitives::ISupportStarLayout" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,8 @@
       <MemberSignature Language="C#" Value="public RibbonGroupsPanel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonGroupsPanel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -38,6 +43,9 @@
       <MemberSignature Language="C#" Value="public bool IsStarLayoutPass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsStarLayoutPass" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel.IsStarLayoutPass" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStarLayoutPass As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsStarLayoutPass : bool" Usage="System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel.IsStarLayoutPass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStarLayoutPass { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -57,6 +65,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsStarLayoutPassProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsStarLayoutPassProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel.IsStarLayoutPassProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsStarLayoutPassProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsStarLayoutPassProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel.IsStarLayoutPassProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsStarLayoutPassProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -74,6 +85,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size availableSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size availableSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="ribbonGroupsPanel.MeasureOverride availableSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -96,7 +110,13 @@
       <MemberSignature Language="C#" Value="public void RegisterStarLayoutProvider (System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase starLayoutInfoProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterStarLayoutProvider(class System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase starLayoutInfoProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel.RegisterStarLayoutProvider(System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterStarLayoutProvider (starLayoutInfoProvider As IProvideStarLayoutInfoBase)" />
+      <MemberSignature Language="F#" Value="abstract member RegisterStarLayoutProvider : System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase -&gt; unit&#xA;override this.RegisterStarLayoutProvider : System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase -&gt; unit" Usage="ribbonGroupsPanel.RegisterStarLayoutProvider starLayoutInfoProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterStarLayoutProvider(System::Windows::Controls::Ribbon::Primitives::IProvideStarLayoutInfoBase ^ starLayoutInfoProvider);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Ribbon.Primitives.ISupportStarLayout.RegisterStarLayoutProvider(System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,7 +137,13 @@
       <MemberSignature Language="C#" Value="public void UnregisterStarLayoutProvider (System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase starLayoutInfoProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnregisterStarLayoutProvider(class System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase starLayoutInfoProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonGroupsPanel.UnregisterStarLayoutProvider(System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnregisterStarLayoutProvider (starLayoutInfoProvider As IProvideStarLayoutInfoBase)" />
+      <MemberSignature Language="F#" Value="abstract member UnregisterStarLayoutProvider : System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase -&gt; unit&#xA;override this.UnregisterStarLayoutProvider : System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase -&gt; unit" Usage="ribbonGroupsPanel.UnregisterStarLayoutProvider starLayoutInfoProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnregisterStarLayoutProvider(System::Windows::Controls::Ribbon::Primitives::IProvideStarLayoutInfoBase ^ starLayoutInfoProvider);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Ribbon.Primitives.ISupportStarLayout.UnregisterStarLayoutProvider(System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

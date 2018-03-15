@@ -1,7 +1,10 @@
-<Type Name="MimeMapping" FullName="System.Web.MimeMapping">
+﻿<Type Name="MimeMapping" FullName="System.Web.MimeMapping">
   <TypeSignature Language="C#" Value="public static class MimeMapping" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MimeMapping extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.MimeMapping" />
+  <TypeSignature Language="VB.NET" Value="Public Class MimeMapping" />
+  <TypeSignature Language="F#" Value="type MimeMapping = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MimeMapping abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public static string GetMimeMapping (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetMimeMapping(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.MimeMapping.GetMimeMapping(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMimeMapping (fileName As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetMimeMapping : string -&gt; string" Usage="System.Web.MimeMapping.GetMimeMapping fileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetMimeMapping(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

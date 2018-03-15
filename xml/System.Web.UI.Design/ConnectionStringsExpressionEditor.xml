@@ -1,7 +1,10 @@
-<Type Name="ConnectionStringsExpressionEditor" FullName="System.Web.UI.Design.ConnectionStringsExpressionEditor">
+﻿<Type Name="ConnectionStringsExpressionEditor" FullName="System.Web.UI.Design.ConnectionStringsExpressionEditor">
   <TypeSignature Language="C#" Value="public class ConnectionStringsExpressionEditor : System.Web.UI.Design.ExpressionEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectionStringsExpressionEditor extends System.Web.UI.Design.ExpressionEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ConnectionStringsExpressionEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConnectionStringsExpressionEditor&#xA;Inherits ExpressionEditor" />
+  <TypeSignature Language="F#" Value="type ConnectionStringsExpressionEditor = class&#xA;    inherit ExpressionEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConnectionStringsExpressionEditor : System::Web::UI::Design::ExpressionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="public ConnectionStringsExpressionEditor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ConnectionStringsExpressionEditor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionStringsExpressionEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -52,6 +57,9 @@
       <MemberSignature Language="C#" Value="public override object EvaluateExpression (string expression, object parseTimeData, Type propertyType, IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EvaluateExpression(string expression, object parseTimeData, class System.Type propertyType, class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ConnectionStringsExpressionEditor.EvaluateExpression(System.String,System.Object,System.Type,System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EvaluateExpression (expression As String, parseTimeData As Object, propertyType As Type, serviceProvider As IServiceProvider) As Object" />
+      <MemberSignature Language="F#" Value="override this.EvaluateExpression : string * obj * Type * IServiceProvider -&gt; obj" Usage="connectionStringsExpressionEditor.EvaluateExpression (expression, parseTimeData, propertyType, serviceProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EvaluateExpression(System::String ^ expression, System::Object ^ parseTimeData, Type ^ propertyType, IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -93,6 +101,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Design.ExpressionEditorSheet GetExpressionEditorSheet (string expression, IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.Design.ExpressionEditorSheet GetExpressionEditorSheet(string expression, class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ConnectionStringsExpressionEditor.GetExpressionEditorSheet(System.String,System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetExpressionEditorSheet (expression As String, serviceProvider As IServiceProvider) As ExpressionEditorSheet" />
+      <MemberSignature Language="F#" Value="override this.GetExpressionEditorSheet : string * IServiceProvider -&gt; System.Web.UI.Design.ExpressionEditorSheet" Usage="connectionStringsExpressionEditor.GetExpressionEditorSheet (expression, serviceProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::Design::ExpressionEditorSheet ^ GetExpressionEditorSheet(System::String ^ expression, IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

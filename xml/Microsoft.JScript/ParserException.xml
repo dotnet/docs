@@ -1,7 +1,10 @@
-<Type Name="ParserException" FullName="Microsoft.JScript.ParserException">
+﻿<Type Name="ParserException" FullName="Microsoft.JScript.ParserException">
   <TypeSignature Language="C#" Value="public class ParserException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ParserException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ParserException" />
+  <TypeSignature Language="VB.NET" Value="Public Class ParserException&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type ParserException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParserException : Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="StringAlignment" FullName="System.Drawing.StringAlignment">
+﻿<Type Name="StringAlignment" FullName="System.Drawing.StringAlignment">
   <TypeSignature Language="C#" Value="public enum StringAlignment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StringAlignment extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.StringAlignment" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StringAlignment" />
+  <TypeSignature Language="F#" Value="type StringAlignment = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class StringAlignment" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="Center" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringAlignment Center = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringAlignment.Center" />
+      <MemberSignature Language="VB.NET" Value="Center" />
+      <MemberSignature Language="F#" Value="Center = 1" Usage="System.Drawing.StringAlignment.Center" />
+      <MemberSignature Language="C++ CLI" Value="Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -42,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.StringAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that text is aligned in the center of the layout rectangle.</summary>
       </Docs>
@@ -50,6 +57,9 @@
       <MemberSignature Language="C#" Value="Far" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringAlignment Far = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringAlignment.Far" />
+      <MemberSignature Language="VB.NET" Value="Far" />
+      <MemberSignature Language="F#" Value="Far = 2" Usage="System.Drawing.StringAlignment.Far" />
+      <MemberSignature Language="C++ CLI" Value="Far" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.StringAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that text is aligned far from the origin position of the layout rectangle. In a left-to-right layout, the far position is right. In a right-to-left layout, the far position is left.</summary>
       </Docs>
@@ -66,6 +77,9 @@
       <MemberSignature Language="C#" Value="Near" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringAlignment Near = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringAlignment.Near" />
+      <MemberSignature Language="VB.NET" Value="Near" />
+      <MemberSignature Language="F#" Value="Near = 0" Usage="System.Drawing.StringAlignment.Near" />
+      <MemberSignature Language="C++ CLI" Value="Near" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -74,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.StringAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies the text be aligned near the layout. In a left-to-right layout, the near position is left. In a right-to-left layout, the near position is right.</summary>
       </Docs>

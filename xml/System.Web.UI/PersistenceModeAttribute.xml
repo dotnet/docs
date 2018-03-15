@@ -1,7 +1,10 @@
-<Type Name="PersistenceModeAttribute" FullName="System.Web.UI.PersistenceModeAttribute">
+﻿<Type Name="PersistenceModeAttribute" FullName="System.Web.UI.PersistenceModeAttribute">
   <TypeSignature Language="C#" Value="public sealed class PersistenceModeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PersistenceModeAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PersistenceModeAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PersistenceModeAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type PersistenceModeAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersistenceModeAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public PersistenceModeAttribute (System.Web.UI.PersistenceMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.UI.PersistenceMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PersistenceModeAttribute.#ctor(System.Web.UI.PersistenceMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mode As PersistenceMode)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.PersistenceModeAttribute : System.Web.UI.PersistenceMode -&gt; System.Web.UI.PersistenceModeAttribute" Usage="new System.Web.UI.PersistenceModeAttribute mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PersistenceModeAttribute(System::Web::UI::PersistenceMode mode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +67,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.PersistenceModeAttribute Attribute;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.PersistenceModeAttribute Attribute" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistenceModeAttribute.Attribute" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Attribute As PersistenceModeAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Attribute : System.Web.UI.PersistenceModeAttribute" Usage="System.Web.UI.PersistenceModeAttribute.Attribute" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::PersistenceModeAttribute ^ Attribute;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +87,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.PersistenceModeAttribute Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.PersistenceModeAttribute Default" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistenceModeAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As PersistenceModeAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.Web.UI.PersistenceModeAttribute" Usage="System.Web.UI.PersistenceModeAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::PersistenceModeAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +107,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.PersistenceModeAttribute EncodedInnerDefaultProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.PersistenceModeAttribute EncodedInnerDefaultProperty" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistenceModeAttribute.EncodedInnerDefaultProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EncodedInnerDefaultProperty As PersistenceModeAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable EncodedInnerDefaultProperty : System.Web.UI.PersistenceModeAttribute" Usage="System.Web.UI.PersistenceModeAttribute.EncodedInnerDefaultProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::PersistenceModeAttribute ^ EncodedInnerDefaultProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +127,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PersistenceModeAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="persistenceModeAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -142,6 +160,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PersistenceModeAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="persistenceModeAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +182,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.PersistenceModeAttribute InnerDefaultProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.PersistenceModeAttribute InnerDefaultProperty" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistenceModeAttribute.InnerDefaultProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InnerDefaultProperty As PersistenceModeAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable InnerDefaultProperty : System.Web.UI.PersistenceModeAttribute" Usage="System.Web.UI.PersistenceModeAttribute.InnerDefaultProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::PersistenceModeAttribute ^ InnerDefaultProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,6 +202,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.PersistenceModeAttribute InnerProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.PersistenceModeAttribute InnerProperty" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.PersistenceModeAttribute.InnerProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InnerProperty As PersistenceModeAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable InnerProperty : System.Web.UI.PersistenceModeAttribute" Usage="System.Web.UI.PersistenceModeAttribute.InnerProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::PersistenceModeAttribute ^ InnerProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -195,6 +222,9 @@
       <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PersistenceModeAttribute.IsDefaultAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="persistenceModeAttribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -222,6 +252,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.PersistenceMode Mode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.PersistenceMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PersistenceModeAttribute.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mode As PersistenceMode" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Web.UI.PersistenceMode" Usage="System.Web.UI.PersistenceModeAttribute.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::PersistenceMode Mode { System::Web::UI::PersistenceMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

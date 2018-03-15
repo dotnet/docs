@@ -1,7 +1,10 @@
-<Type Name="ExceptionEventArgs" FullName="System.Windows.Media.ExceptionEventArgs">
+﻿<Type Name="ExceptionEventArgs" FullName="System.Windows.Media.ExceptionEventArgs">
   <TypeSignature Language="C#" Value="public sealed class ExceptionEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExceptionEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.ExceptionEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExceptionEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type ExceptionEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExceptionEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public Exception ErrorException { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception ErrorException" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.ExceptionEventArgs.ErrorException" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorException As Exception" />
+      <MemberSignature Language="F#" Value="member this.ErrorException : Exception" Usage="System.Windows.Media.ExceptionEventArgs.ErrorException" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ ErrorException { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

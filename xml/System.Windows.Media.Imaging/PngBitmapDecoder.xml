@@ -1,7 +1,10 @@
-<Type Name="PngBitmapDecoder" FullName="System.Windows.Media.Imaging.PngBitmapDecoder">
+﻿<Type Name="PngBitmapDecoder" FullName="System.Windows.Media.Imaging.PngBitmapDecoder">
   <TypeSignature Language="C#" Value="public sealed class PngBitmapDecoder : System.Windows.Media.Imaging.BitmapDecoder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PngBitmapDecoder extends System.Windows.Media.Imaging.BitmapDecoder" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.PngBitmapDecoder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PngBitmapDecoder&#xA;Inherits BitmapDecoder" />
+  <TypeSignature Language="F#" Value="type PngBitmapDecoder = class&#xA;    inherit BitmapDecoder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PngBitmapDecoder sealed : System::Windows::Media::Imaging::BitmapDecoder" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +19,22 @@
     <altmember cref="T:System.Windows.Media.Imaging.BitmapDecoder" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.Imaging.PngBitmapDecoder" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PngBitmapDecoder (System.IO.Stream bitmapStream, System.Windows.Media.Imaging.BitmapCreateOptions createOptions, System.Windows.Media.Imaging.BitmapCacheOption cacheOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream bitmapStream, valuetype System.Windows.Media.Imaging.BitmapCreateOptions createOptions, valuetype System.Windows.Media.Imaging.BitmapCacheOption cacheOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.PngBitmapDecoder.#ctor(System.IO.Stream,System.Windows.Media.Imaging.BitmapCreateOptions,System.Windows.Media.Imaging.BitmapCacheOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bitmapStream As Stream, createOptions As BitmapCreateOptions, cacheOption As BitmapCacheOption)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Imaging.PngBitmapDecoder : System.IO.Stream * System.Windows.Media.Imaging.BitmapCreateOptions * System.Windows.Media.Imaging.BitmapCacheOption -&gt; System.Windows.Media.Imaging.PngBitmapDecoder" Usage="new System.Windows.Media.Imaging.PngBitmapDecoder (bitmapStream, createOptions, cacheOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PngBitmapDecoder(System::IO::Stream ^ bitmapStream, System::Windows::Media::Imaging::BitmapCreateOptions createOptions, System::Windows::Media::Imaging::BitmapCacheOption cacheOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +80,9 @@
       <MemberSignature Language="C#" Value="public PngBitmapDecoder (Uri bitmapUri, System.Windows.Media.Imaging.BitmapCreateOptions createOptions, System.Windows.Media.Imaging.BitmapCacheOption cacheOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri bitmapUri, valuetype System.Windows.Media.Imaging.BitmapCreateOptions createOptions, valuetype System.Windows.Media.Imaging.BitmapCacheOption cacheOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.PngBitmapDecoder.#ctor(System.Uri,System.Windows.Media.Imaging.BitmapCreateOptions,System.Windows.Media.Imaging.BitmapCacheOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bitmapUri As Uri, createOptions As BitmapCreateOptions, cacheOption As BitmapCacheOption)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Imaging.PngBitmapDecoder : Uri * System.Windows.Media.Imaging.BitmapCreateOptions * System.Windows.Media.Imaging.BitmapCacheOption -&gt; System.Windows.Media.Imaging.PngBitmapDecoder" Usage="new System.Windows.Media.Imaging.PngBitmapDecoder (bitmapUri, createOptions, cacheOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PngBitmapDecoder(Uri ^ bitmapUri, System::Windows::Media::Imaging::BitmapCreateOptions createOptions, System::Windows::Media::Imaging::BitmapCacheOption cacheOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -101,14 +119,5 @@
         <exception cref="T:System.IO.FileFormatException">The <paramref name="bitmapUri" /> is not a [!INCLUDE[TLA#tla_png](~/includes/tlasharptla-png-md.md)] encoded image.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.Windows.Media.Imaging.PngBitmapDecoder" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

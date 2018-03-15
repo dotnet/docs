@@ -1,7 +1,10 @@
-<Type Name="UltimateResourceFallbackLocation" FullName="System.Resources.UltimateResourceFallbackLocation">
+﻿<Type Name="UltimateResourceFallbackLocation" FullName="System.Resources.UltimateResourceFallbackLocation">
   <TypeSignature Language="C#" Value="public enum UltimateResourceFallbackLocation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed UltimateResourceFallbackLocation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Resources.UltimateResourceFallbackLocation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum UltimateResourceFallbackLocation" />
+  <TypeSignature Language="F#" Value="type UltimateResourceFallbackLocation = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class UltimateResourceFallbackLocation" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="MainAssembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Resources.UltimateResourceFallbackLocation MainAssembly = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Resources.UltimateResourceFallbackLocation.MainAssembly" />
+      <MemberSignature Language="VB.NET" Value="MainAssembly" />
+      <MemberSignature Language="F#" Value="MainAssembly = 0" Usage="System.Resources.UltimateResourceFallbackLocation.MainAssembly" />
+      <MemberSignature Language="C++ CLI" Value="MainAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Resources.UltimateResourceFallbackLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Fallback resources are located in the main assembly.</summary>
       </Docs>
@@ -68,6 +75,9 @@
       <MemberSignature Language="C#" Value="Satellite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Resources.UltimateResourceFallbackLocation Satellite = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Resources.UltimateResourceFallbackLocation.Satellite" />
+      <MemberSignature Language="VB.NET" Value="Satellite" />
+      <MemberSignature Language="F#" Value="Satellite = 1" Usage="System.Resources.UltimateResourceFallbackLocation.Satellite" />
+      <MemberSignature Language="C++ CLI" Value="Satellite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -85,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Resources.UltimateResourceFallbackLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Fallback resources are located in a satellite assembly.</summary>
       </Docs>

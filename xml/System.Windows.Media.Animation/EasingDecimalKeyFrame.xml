@@ -1,7 +1,10 @@
-<Type Name="EasingDecimalKeyFrame" FullName="System.Windows.Media.Animation.EasingDecimalKeyFrame">
+﻿<Type Name="EasingDecimalKeyFrame" FullName="System.Windows.Media.Animation.EasingDecimalKeyFrame">
   <TypeSignature Language="C#" Value="public class EasingDecimalKeyFrame : System.Windows.Media.Animation.DecimalKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EasingDecimalKeyFrame extends System.Windows.Media.Animation.DecimalKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.EasingDecimalKeyFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Class EasingDecimalKeyFrame&#xA;Inherits DecimalKeyFrame" />
+  <TypeSignature Language="F#" Value="type EasingDecimalKeyFrame = class&#xA;    inherit DecimalKeyFrame" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EasingDecimalKeyFrame : System::Windows::Media::Animation::DecimalKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,8 @@
       <MemberSignature Language="C#" Value="public EasingDecimalKeyFrame ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingDecimalKeyFrame.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EasingDecimalKeyFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -45,6 +50,9 @@
       <MemberSignature Language="C#" Value="public EasingDecimalKeyFrame (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingDecimalKeyFrame.#ctor(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Decimal)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.EasingDecimalKeyFrame : decimal -&gt; System.Windows.Media.Animation.EasingDecimalKeyFrame" Usage="new System.Windows.Media.Animation.EasingDecimalKeyFrame value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EasingDecimalKeyFrame(System::Decimal value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -64,6 +72,8 @@
       <MemberSignature Language="C#" Value="public EasingDecimalKeyFrame (decimal value, System.Windows.Media.Animation.KeyTime keyTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Decimal value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingDecimalKeyFrame.#ctor(System.Decimal,System.Windows.Media.Animation.KeyTime)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.EasingDecimalKeyFrame : decimal * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.EasingDecimalKeyFrame" Usage="new System.Windows.Media.Animation.EasingDecimalKeyFrame (value, keyTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EasingDecimalKeyFrame(System::Decimal value, System::Windows::Media::Animation::KeyTime keyTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +95,8 @@
       <MemberSignature Language="C#" Value="public EasingDecimalKeyFrame (decimal value, System.Windows.Media.Animation.KeyTime keyTime, System.Windows.Media.Animation.IEasingFunction easingFunction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Decimal value, valuetype System.Windows.Media.Animation.KeyTime keyTime, class System.Windows.Media.Animation.IEasingFunction easingFunction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingDecimalKeyFrame.#ctor(System.Decimal,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.EasingDecimalKeyFrame : decimal * System.Windows.Media.Animation.KeyTime * System.Windows.Media.Animation.IEasingFunction -&gt; System.Windows.Media.Animation.EasingDecimalKeyFrame" Usage="new System.Windows.Media.Animation.EasingDecimalKeyFrame (value, keyTime, easingFunction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EasingDecimalKeyFrame(System::Decimal value, System::Windows::Media::Animation::KeyTime keyTime, System::Windows::Media::Animation::IEasingFunction ^ easingFunction);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +120,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingDecimalKeyFrame.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="easingDecimalKeyFrame.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -143,6 +158,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.IEasingFunction EasingFunction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.IEasingFunction EasingFunction" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.EasingDecimalKeyFrame.EasingFunction" />
+      <MemberSignature Language="VB.NET" Value="Public Property EasingFunction As IEasingFunction" />
+      <MemberSignature Language="F#" Value="member this.EasingFunction : System.Windows.Media.Animation.IEasingFunction with get, set" Usage="System.Windows.Media.Animation.EasingDecimalKeyFrame.EasingFunction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::IEasingFunction ^ EasingFunction { System::Windows::Media::Animation::IEasingFunction ^ get(); void set(System::Windows::Media::Animation::IEasingFunction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -162,6 +180,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EasingFunctionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EasingFunctionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.EasingDecimalKeyFrame.EasingFunctionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EasingFunctionProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable EasingFunctionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.EasingDecimalKeyFrame.EasingFunctionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EasingFunctionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -180,6 +201,9 @@
       <MemberSignature Language="C#" Value="protected override decimal InterpolateValueCore (decimal baseValue, double keyFrameProgress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Decimal InterpolateValueCore(valuetype System.Decimal baseValue, float64 keyFrameProgress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.EasingDecimalKeyFrame.InterpolateValueCore(System.Decimal,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Decimal, keyFrameProgress As Double) As Decimal" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : decimal * double -&gt; decimal" Usage="easingDecimalKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Decimal InterpolateValueCore(System::Decimal baseValue, double keyFrameProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

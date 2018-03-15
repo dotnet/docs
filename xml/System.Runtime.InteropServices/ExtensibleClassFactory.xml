@@ -1,7 +1,10 @@
-<Type Name="ExtensibleClassFactory" FullName="System.Runtime.InteropServices.ExtensibleClassFactory">
+﻿<Type Name="ExtensibleClassFactory" FullName="System.Runtime.InteropServices.ExtensibleClassFactory">
   <TypeSignature Language="C#" Value="public sealed class ExtensibleClassFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExtensibleClassFactory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ExtensibleClassFactory" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExtensibleClassFactory" />
+  <TypeSignature Language="F#" Value="type ExtensibleClassFactory = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExtensibleClassFactory sealed" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public static void RegisterObjectCreationCallback (System.Runtime.InteropServices.ObjectCreationDelegate callback);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterObjectCreationCallback(class System.Runtime.InteropServices.ObjectCreationDelegate callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ExtensibleClassFactory.RegisterObjectCreationCallback(System.Runtime.InteropServices.ObjectCreationDelegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterObjectCreationCallback (callback As ObjectCreationDelegate)" />
+      <MemberSignature Language="F#" Value="static member RegisterObjectCreationCallback : System.Runtime.InteropServices.ObjectCreationDelegate -&gt; unit" Usage="System.Runtime.InteropServices.ExtensibleClassFactory.RegisterObjectCreationCallback callback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterObjectCreationCallback(System::Runtime::InteropServices::ObjectCreationDelegate ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

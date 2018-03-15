@@ -1,7 +1,10 @@
-<Type Name="ExpressionBindingCollection" FullName="System.Web.UI.ExpressionBindingCollection">
+﻿<Type Name="ExpressionBindingCollection" FullName="System.Web.UI.ExpressionBindingCollection">
   <TypeSignature Language="C#" Value="public sealed class ExpressionBindingCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpressionBindingCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ExpressionBindingCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExpressionBindingCollection&#xA;Implements ICollection" />
+  <TypeSignature Language="F#" Value="type ExpressionBindingCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExpressionBindingCollection sealed : System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,8 @@
       <MemberSignature Language="C#" Value="public ExpressionBindingCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExpressionBindingCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpressionBindingCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -40,6 +45,9 @@
       <MemberSignature Language="C#" Value="public void Add (System.Web.UI.ExpressionBinding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.UI.ExpressionBinding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExpressionBindingCollection.Add(System.Web.UI.ExpressionBinding)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (binding As ExpressionBinding)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.ExpressionBinding -&gt; unit" Usage="expressionBindingCollection.Add binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::UI::ExpressionBinding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +70,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Changed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Changed" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.ExpressionBindingCollection.Changed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Changed As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Changed : EventHandler " Usage="member this.Changed : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Changed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +98,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExpressionBindingCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="expressionBindingCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +120,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (string propName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string propName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExpressionBindingCollection.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (propName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="expressionBindingCollection.Contains propName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ propName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -126,11 +143,25 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies all the <see cref="T:System.Web.UI.ExpressionBinding" /> objects from the <see cref="T:System.Web.UI.ExpressionBindingCollection" /> collection to a one-dimensional array, starting at the specified index in the target array.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExpressionBindingCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="expressionBindingCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -154,6 +185,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.ExpressionBinding[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.ExpressionBinding[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExpressionBindingCollection.CopyTo(System.Web.UI.ExpressionBinding[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ExpressionBinding(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.ExpressionBinding[] * int -&gt; unit" Usage="expressionBindingCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::ExpressionBinding ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,7 +212,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExpressionBindingCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.UI.ExpressionBindingCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -197,7 +237,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExpressionBindingCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="expressionBindingCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -217,6 +263,9 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExpressionBindingCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.UI.ExpressionBindingCollection.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -237,7 +286,13 @@
       <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExpressionBindingCollection.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.UI.ExpressionBindingCollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -257,6 +312,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ExpressionBinding this[string propertyName] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ExpressionBinding Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExpressionBindingCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(propertyName As String) As ExpressionBinding" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.UI.ExpressionBinding" Usage="System.Web.UI.ExpressionBindingCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ExpressionBinding ^ default[System::String ^] { System::Web::UI::ExpressionBinding ^ get(System::String ^ propertyName); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -276,10 +334,22 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified <see cref="T:System.Web.UI.ExpressionBinding" /> object from the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExpressionBindingCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (propertyName As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="expressionBindingCollection.Remove propertyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -302,6 +372,9 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.ExpressionBinding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.ExpressionBinding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExpressionBindingCollection.Remove(System.Web.UI.ExpressionBinding)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (binding As ExpressionBinding)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.ExpressionBinding -&gt; unit" Usage="expressionBindingCollection.Remove binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::ExpressionBinding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -324,6 +397,9 @@
       <MemberSignature Language="C#" Value="public void Remove (string propertyName, bool addToRemovedList);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string propertyName, bool addToRemovedList) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExpressionBindingCollection.Remove(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (propertyName As String, addToRemovedList As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string * bool -&gt; unit" Usage="expressionBindingCollection.Remove (propertyName, addToRemovedList)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ propertyName, bool addToRemovedList);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -349,6 +425,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection RemovedBindings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection RemovedBindings" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExpressionBindingCollection.RemovedBindings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemovedBindings As ICollection" />
+      <MemberSignature Language="F#" Value="member this.RemovedBindings : System.Collections.ICollection" Usage="System.Web.UI.ExpressionBindingCollection.RemovedBindings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ RemovedBindings { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -368,7 +447,13 @@
       <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExpressionBindingCollection.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.UI.ExpressionBindingCollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -383,23 +468,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="CopyTo">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies all the <see cref="T:System.Web.UI.ExpressionBinding" /> objects from the <see cref="T:System.Web.UI.ExpressionBindingCollection" /> collection to a one-dimensional array, starting at the specified index in the target array.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Remove">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the specified <see cref="T:System.Web.UI.ExpressionBinding" /> object from the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

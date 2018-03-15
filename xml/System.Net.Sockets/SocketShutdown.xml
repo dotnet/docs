@@ -1,7 +1,10 @@
-<Type Name="SocketShutdown" FullName="System.Net.Sockets.SocketShutdown">
+﻿<Type Name="SocketShutdown" FullName="System.Net.Sockets.SocketShutdown">
   <TypeSignature Language="C#" Value="public enum SocketShutdown" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocketShutdown extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketShutdown" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SocketShutdown" />
+  <TypeSignature Language="F#" Value="type SocketShutdown = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SocketShutdown" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="Both" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketShutdown Both = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketShutdown.Both" />
+      <MemberSignature Language="VB.NET" Value="Both" />
+      <MemberSignature Language="F#" Value="Both = 2" Usage="System.Net.Sockets.SocketShutdown.Both" />
+      <MemberSignature Language="C++ CLI" Value="Both" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -53,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketShutdown</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Disables a <see cref="T:System.Net.Sockets.Socket" /> for both sending and receiving. This field is constant.</summary>
       </Docs>
@@ -61,6 +68,9 @@
       <MemberSignature Language="C#" Value="Receive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketShutdown Receive = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketShutdown.Receive" />
+      <MemberSignature Language="VB.NET" Value="Receive" />
+      <MemberSignature Language="F#" Value="Receive = 0" Usage="System.Net.Sockets.SocketShutdown.Receive" />
+      <MemberSignature Language="C++ CLI" Value="Receive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -79,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketShutdown</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Disables a <see cref="T:System.Net.Sockets.Socket" /> for receiving. This field is constant.</summary>
       </Docs>
@@ -87,6 +98,9 @@
       <MemberSignature Language="C#" Value="Send" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketShutdown Send = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketShutdown.Send" />
+      <MemberSignature Language="VB.NET" Value="Send" />
+      <MemberSignature Language="F#" Value="Send = 1" Usage="System.Net.Sockets.SocketShutdown.Send" />
+      <MemberSignature Language="C++ CLI" Value="Send" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -105,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketShutdown</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Disables a <see cref="T:System.Net.Sockets.Socket" /> for sending. This field is constant.</summary>
       </Docs>

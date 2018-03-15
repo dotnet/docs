@@ -1,7 +1,10 @@
-<Type Name="FileAttributes" FullName="System.IO.FileAttributes">
+﻿<Type Name="FileAttributes" FullName="System.IO.FileAttributes">
   <TypeSignature Language="C#" Value="public enum FileAttributes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FileAttributes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.FileAttributes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FileAttributes" />
+  <TypeSignature Language="F#" Value="type FileAttributes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FileAttributes" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -58,6 +61,9 @@
       <MemberSignature Language="C#" Value="Archive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Archive = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Archive" />
+      <MemberSignature Language="VB.NET" Value="Archive" />
+      <MemberSignature Language="F#" Value="Archive = 32" Usage="System.IO.FileAttributes.Archive" />
+      <MemberSignature Language="C++ CLI" Value="Archive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -79,6 +85,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The file is a candidate for backup or removal.</summary>
       </Docs>
@@ -87,6 +94,9 @@
       <MemberSignature Language="C#" Value="Compressed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Compressed = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Compressed" />
+      <MemberSignature Language="VB.NET" Value="Compressed" />
+      <MemberSignature Language="F#" Value="Compressed = 2048" Usage="System.IO.FileAttributes.Compressed" />
+      <MemberSignature Language="C++ CLI" Value="Compressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -108,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>The file is compressed.</summary>
       </Docs>
@@ -116,6 +127,9 @@
       <MemberSignature Language="C#" Value="Device" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Device = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Device" />
+      <MemberSignature Language="VB.NET" Value="Device" />
+      <MemberSignature Language="F#" Value="Device = 64" Usage="System.IO.FileAttributes.Device" />
+      <MemberSignature Language="C++ CLI" Value="Device" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -137,6 +151,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Reserved for future use.</summary>
       </Docs>
@@ -145,6 +160,9 @@
       <MemberSignature Language="C#" Value="Directory" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Directory = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Directory" />
+      <MemberSignature Language="VB.NET" Value="Directory" />
+      <MemberSignature Language="F#" Value="Directory = 16" Usage="System.IO.FileAttributes.Directory" />
+      <MemberSignature Language="C++ CLI" Value="Directory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -166,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The file is a directory.</summary>
       </Docs>
@@ -174,6 +193,9 @@
       <MemberSignature Language="C#" Value="Encrypted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Encrypted = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Encrypted" />
+      <MemberSignature Language="VB.NET" Value="Encrypted" />
+      <MemberSignature Language="F#" Value="Encrypted = 16384" Usage="System.IO.FileAttributes.Encrypted" />
+      <MemberSignature Language="C++ CLI" Value="Encrypted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -195,6 +217,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>The file or directory is encrypted. For a file, this means that all data in the file is encrypted. For a directory, this means that encryption is the default for newly created files and directories.</summary>
       </Docs>
@@ -203,6 +226,9 @@
       <MemberSignature Language="C#" Value="Hidden" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Hidden = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Hidden" />
+      <MemberSignature Language="VB.NET" Value="Hidden" />
+      <MemberSignature Language="F#" Value="Hidden = 2" Usage="System.IO.FileAttributes.Hidden" />
+      <MemberSignature Language="C++ CLI" Value="Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -224,6 +250,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The file is hidden, and thus is not included in an ordinary directory listing.</summary>
       </Docs>
@@ -232,6 +259,9 @@
       <MemberSignature Language="C#" Value="IntegrityStream" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes IntegrityStream = int32(32768)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.IntegrityStream" />
+      <MemberSignature Language="VB.NET" Value="IntegrityStream" />
+      <MemberSignature Language="F#" Value="IntegrityStream = 32768" Usage="System.IO.FileAttributes.IntegrityStream" />
+      <MemberSignature Language="C++ CLI" Value="IntegrityStream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -253,6 +283,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>32768</MemberValue>
       <Docs>
         <summary>The file or directory includes data integrity support. When this value is applied to a file, all data streams in the file have integrity support. When this value is applied to a directory, all new files and subdirectories within that directory, by default, include integrity support.</summary>
       </Docs>
@@ -261,6 +292,9 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Normal = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 128" Usage="System.IO.FileAttributes.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -282,6 +316,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The file is a standard file that has no special attributes. This attribute is valid only if it is used alone.</summary>
       </Docs>
@@ -290,6 +325,9 @@
       <MemberSignature Language="C#" Value="NoScrubData" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes NoScrubData = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.NoScrubData" />
+      <MemberSignature Language="VB.NET" Value="NoScrubData" />
+      <MemberSignature Language="F#" Value="NoScrubData = 131072" Usage="System.IO.FileAttributes.NoScrubData" />
+      <MemberSignature Language="C++ CLI" Value="NoScrubData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -311,6 +349,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>The file or directory is excluded from the data integrity scan. When this value is applied to a directory, by default, all new files and subdirectories within that directory are excluded from data integrity.</summary>
       </Docs>
@@ -319,6 +358,9 @@
       <MemberSignature Language="C#" Value="NotContentIndexed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes NotContentIndexed = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.NotContentIndexed" />
+      <MemberSignature Language="VB.NET" Value="NotContentIndexed" />
+      <MemberSignature Language="F#" Value="NotContentIndexed = 8192" Usage="System.IO.FileAttributes.NotContentIndexed" />
+      <MemberSignature Language="C++ CLI" Value="NotContentIndexed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -340,6 +382,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>The file will not be indexed by the operating system's content indexing service.</summary>
       </Docs>
@@ -348,6 +391,9 @@
       <MemberSignature Language="C#" Value="Offline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Offline = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Offline" />
+      <MemberSignature Language="VB.NET" Value="Offline" />
+      <MemberSignature Language="F#" Value="Offline = 4096" Usage="System.IO.FileAttributes.Offline" />
+      <MemberSignature Language="C++ CLI" Value="Offline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -369,6 +415,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>The file is offline. The data of the file is not immediately available.</summary>
       </Docs>
@@ -377,6 +424,9 @@
       <MemberSignature Language="C#" Value="ReadOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes ReadOnly = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="ReadOnly" />
+      <MemberSignature Language="F#" Value="ReadOnly = 1" Usage="System.IO.FileAttributes.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -398,6 +448,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The file is read-only.</summary>
       </Docs>
@@ -406,6 +457,9 @@
       <MemberSignature Language="C#" Value="ReparsePoint" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes ReparsePoint = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.ReparsePoint" />
+      <MemberSignature Language="VB.NET" Value="ReparsePoint" />
+      <MemberSignature Language="F#" Value="ReparsePoint = 1024" Usage="System.IO.FileAttributes.ReparsePoint" />
+      <MemberSignature Language="C++ CLI" Value="ReparsePoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -427,6 +481,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>The file contains a reparse point, which is a block of user-defined data associated with a file or a directory.</summary>
       </Docs>
@@ -435,6 +490,9 @@
       <MemberSignature Language="C#" Value="SparseFile" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes SparseFile = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.SparseFile" />
+      <MemberSignature Language="VB.NET" Value="SparseFile" />
+      <MemberSignature Language="F#" Value="SparseFile = 512" Usage="System.IO.FileAttributes.SparseFile" />
+      <MemberSignature Language="C++ CLI" Value="SparseFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -456,6 +514,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>The file is a sparse file. Sparse files are typically large files whose data consists of mostly zeros.</summary>
       </Docs>
@@ -464,6 +523,9 @@
       <MemberSignature Language="C#" Value="System" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes System = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.System" />
+      <MemberSignature Language="VB.NET" Value="System" />
+      <MemberSignature Language="F#" Value="System = 4" Usage="System.IO.FileAttributes.System" />
+      <MemberSignature Language="C++ CLI" Value="System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -485,6 +547,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The file is a system file. That is, the file is part of the operating system or is used exclusively by the operating system.</summary>
       </Docs>
@@ -493,6 +556,9 @@
       <MemberSignature Language="C#" Value="Temporary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAttributes Temporary = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAttributes.Temporary" />
+      <MemberSignature Language="VB.NET" Value="Temporary" />
+      <MemberSignature Language="F#" Value="Temporary = 256" Usage="System.IO.FileAttributes.Temporary" />
+      <MemberSignature Language="C++ CLI" Value="Temporary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -514,6 +580,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>The file is temporary. A temporary file contains data that is needed while an application is executing but is not needed after the application is finished. File systems try to keep all the data in memory for quicker access rather than flushing the data back to mass storage. A temporary file should be deleted by the application as soon as it is no longer needed.</summary>
       </Docs>

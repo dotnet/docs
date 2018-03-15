@@ -1,7 +1,10 @@
-<Type Name="KeyboardDevice" FullName="System.Windows.Input.KeyboardDevice">
+﻿<Type Name="KeyboardDevice" FullName="System.Windows.Input.KeyboardDevice">
   <TypeSignature Language="C#" Value="public abstract class KeyboardDevice : System.Windows.Input.InputDevice" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit KeyboardDevice extends System.Windows.Input.InputDevice" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyboardDevice" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class KeyboardDevice&#xA;Inherits InputDevice" />
+  <TypeSignature Language="F#" Value="type KeyboardDevice = class&#xA;    inherit InputDevice" />
+  <TypeSignature Language="C++ CLI" Value="public ref class KeyboardDevice abstract : System::Windows::Input::InputDevice" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,8 @@
       <MemberSignature Language="C#" Value="protected KeyboardDevice (System.Windows.Input.InputManager inputManager);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.InputManager inputManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardDevice.#ctor(System.Windows.Input.InputManager)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.KeyboardDevice : System.Windows.Input.InputManager -&gt; System.Windows.Input.KeyboardDevice" Usage="new System.Windows.Input.KeyboardDevice inputManager" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; KeyboardDevice(System::Windows::Input::InputManager ^ inputManager);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +64,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.PresentationSource ActiveSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.PresentationSource ActiveSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyboardDevice.ActiveSource" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActiveSource As PresentationSource" />
+      <MemberSignature Language="F#" Value="member this.ActiveSource : System.Windows.PresentationSource" Usage="System.Windows.Input.KeyboardDevice.ActiveSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::PresentationSource ^ ActiveSource { System::Windows::PresentationSource ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +91,9 @@
       <MemberSignature Language="C#" Value="public void ClearFocus ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearFocus() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardDevice.ClearFocus" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearFocus ()" />
+      <MemberSignature Language="F#" Value="member this.ClearFocus : unit -&gt; unit" Usage="keyboardDevice.ClearFocus " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearFocus();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +119,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.RestoreFocusMode DefaultRestoreFocusMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.RestoreFocusMode DefaultRestoreFocusMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyboardDevice.DefaultRestoreFocusMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultRestoreFocusMode As RestoreFocusMode" />
+      <MemberSignature Language="F#" Value="member this.DefaultRestoreFocusMode : System.Windows.Input.RestoreFocusMode with get, set" Usage="System.Windows.Input.KeyboardDevice.DefaultRestoreFocusMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::RestoreFocusMode DefaultRestoreFocusMode { System::Windows::Input::RestoreFocusMode get(); void set(System::Windows::Input::RestoreFocusMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +140,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.IInputElement Focus (System.Windows.IInputElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.IInputElement Focus(class System.Windows.IInputElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardDevice.Focus(System.Windows.IInputElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Focus (element As IInputElement) As IInputElement" />
+      <MemberSignature Language="F#" Value="member this.Focus : System.Windows.IInputElement -&gt; System.Windows.IInputElement" Usage="keyboardDevice.Focus element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::IInputElement ^ Focus(System::Windows::IInputElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -155,6 +172,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.IInputElement FocusedElement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement FocusedElement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyboardDevice.FocusedElement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FocusedElement As IInputElement" />
+      <MemberSignature Language="F#" Value="member this.FocusedElement : System.Windows.IInputElement" Usage="System.Windows.Input.KeyboardDevice.FocusedElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ FocusedElement { System::Windows::IInputElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -173,6 +193,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.KeyStates GetKeyStates (System.Windows.Input.Key key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Input.KeyStates GetKeyStates(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardDevice.GetKeyStates(System.Windows.Input.Key)" />
+      <MemberSignature Language="F#" Value="member this.GetKeyStates : System.Windows.Input.Key -&gt; System.Windows.Input.KeyStates" Usage="keyboardDevice.GetKeyStates key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::KeyStates GetKeyStates(System::Windows::Input::Key key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -197,6 +219,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.Windows.Input.KeyStates GetKeyStatesFromSystem (System.Windows.Input.Key key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.Windows.Input.KeyStates GetKeyStatesFromSystem(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardDevice.GetKeyStatesFromSystem(System.Windows.Input.Key)" />
+      <MemberSignature Language="F#" Value="abstract member GetKeyStatesFromSystem : System.Windows.Input.Key -&gt; System.Windows.Input.KeyStates" Usage="keyboardDevice.GetKeyStatesFromSystem key" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Windows::Input::KeyStates GetKeyStatesFromSystem(System::Windows::Input::Key key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -219,6 +243,8 @@
       <MemberSignature Language="C#" Value="public bool IsKeyDown (System.Windows.Input.Key key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsKeyDown(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardDevice.IsKeyDown(System.Windows.Input.Key)" />
+      <MemberSignature Language="F#" Value="member this.IsKeyDown : System.Windows.Input.Key -&gt; bool" Usage="keyboardDevice.IsKeyDown key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsKeyDown(System::Windows::Input::Key key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -244,6 +270,8 @@
       <MemberSignature Language="C#" Value="public bool IsKeyToggled (System.Windows.Input.Key key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsKeyToggled(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardDevice.IsKeyToggled(System.Windows.Input.Key)" />
+      <MemberSignature Language="F#" Value="member this.IsKeyToggled : System.Windows.Input.Key -&gt; bool" Usage="keyboardDevice.IsKeyToggled key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsKeyToggled(System::Windows::Input::Key key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -269,6 +297,8 @@
       <MemberSignature Language="C#" Value="public bool IsKeyUp (System.Windows.Input.Key key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsKeyUp(valuetype System.Windows.Input.Key key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyboardDevice.IsKeyUp(System.Windows.Input.Key)" />
+      <MemberSignature Language="F#" Value="member this.IsKeyUp : System.Windows.Input.Key -&gt; bool" Usage="keyboardDevice.IsKeyUp key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsKeyUp(System::Windows::Input::Key key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -294,6 +324,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.ModifierKeys Modifiers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.ModifierKeys Modifiers" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyboardDevice.Modifiers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Modifiers As ModifierKeys" />
+      <MemberSignature Language="F#" Value="member this.Modifiers : System.Windows.Input.ModifierKeys" Usage="System.Windows.Input.KeyboardDevice.Modifiers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ModifierKeys Modifiers { System::Windows::Input::ModifierKeys get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -312,6 +345,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.IInputElement Target { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement Target" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyboardDevice.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Target As IInputElement" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Windows.IInputElement" Usage="System.Windows.Input.KeyboardDevice.Target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::IInputElement ^ Target { System::Windows::IInputElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="FaultContractAttribute" FullName="System.ServiceModel.FaultContractAttribute">
+﻿<Type Name="FaultContractAttribute" FullName="System.ServiceModel.FaultContractAttribute">
   <TypeSignature Language="C#" Value="public sealed class FaultContractAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FaultContractAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.FaultContractAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FaultContractAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type FaultContractAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FaultContractAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -106,6 +109,9 @@
       <MemberSignature Language="C#" Value="public FaultContractAttribute (Type detailType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type detailType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultContractAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (detailType As Type)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultContractAttribute : Type -&gt; System.ServiceModel.FaultContractAttribute" Usage="new System.ServiceModel.FaultContractAttribute detailType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultContractAttribute(Type ^ detailType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -147,6 +153,9 @@
       <MemberSignature Language="C#" Value="public string Action { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Action" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultContractAttribute.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="System.ServiceModel.FaultContractAttribute.Action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -179,6 +188,9 @@
       <MemberSignature Language="C#" Value="public Type DetailType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DetailType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultContractAttribute.DetailType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DetailType As Type" />
+      <MemberSignature Language="F#" Value="member this.DetailType : Type" Usage="System.ServiceModel.FaultContractAttribute.DetailType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DetailType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -214,6 +226,9 @@
       <MemberSignature Language="C#" Value="public bool HasProtectionLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultContractAttribute.HasProtectionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasProtectionLevel As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasProtectionLevel : bool" Usage="System.ServiceModel.FaultContractAttribute.HasProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasProtectionLevel { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -241,6 +256,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultContractAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.FaultContractAttribute.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -266,6 +284,9 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultContractAttribute.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.ServiceModel.FaultContractAttribute.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -291,6 +312,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Security.ProtectionLevel ProtectionLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel ProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultContractAttribute.ProtectionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProtectionLevel As ProtectionLevel" />
+      <MemberSignature Language="F#" Value="member this.ProtectionLevel : System.Net.Security.ProtectionLevel with get, set" Usage="System.ServiceModel.FaultContractAttribute.ProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel ProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

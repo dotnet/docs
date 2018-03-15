@@ -1,7 +1,10 @@
-<Type Name="Tuple&lt;T1,T2&gt;" FullName="System.Tuple&lt;T1,T2&gt;">
+﻿<Type Name="Tuple&lt;T1,T2&gt;" FullName="System.Tuple&lt;T1,T2&gt;">
   <TypeSignature Language="C#" Value="public class Tuple&lt;T1,T2&gt; : IComparable, System.Collections.IStructuralComparable, System.Collections.IStructuralEquatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Tuple`2&lt;T1, T2&gt; extends System.Object implements class System.Collections.IStructuralComparable, class System.Collections.IStructuralEquatable, class System.IComparable" />
   <TypeSignature Language="DocId" Value="T:System.Tuple`2" />
+  <TypeSignature Language="VB.NET" Value="Public Class Tuple(Of T1, T2)&#xA;Implements IComparable, IStructuralComparable, IStructuralEquatable" />
+  <TypeSignature Language="F#" Value="type 'T1 * 'T2 = class&#xA;    interface IStructuralEquatable&#xA;    interface IStructuralComparable&#xA;    interface IComparable&#xA;    interface ITuple" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T1, typename T2&gt;&#xA;public ref class Tuple : IComparable, System::Collections::IStructuralComparable, System::Collections::IStructuralEquatable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,6 +84,9 @@
       <MemberSignature Language="C#" Value="public Tuple (T1 item1, T2 item2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T1 item1, !T2 item2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Tuple`2.#ctor(`0,`1)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (item1 As T1, item2 As T2)" />
+      <MemberSignature Language="F#" Value="new 'T1 * 'T2 : 'T1 * 'T2 -&gt; 'T1 * 'T2" Usage="new System.'T1 * 'T2 (item1, item2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Tuple(T1 item1, T2 item2);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -129,6 +135,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Tuple`2.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="tuple.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -186,6 +195,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Tuple`2.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="tuple.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -218,6 +230,9 @@
       <MemberSignature Language="C#" Value="public T1 Item1 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T1 Item1" />
       <MemberSignature Language="DocId" Value="P:System.Tuple`2.Item1" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item1 As T1" />
+      <MemberSignature Language="F#" Value="member this.Item1 : 'T1" Usage="System.'T1 * 'T2.Item1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T1 Item1 { T1 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -268,6 +283,9 @@
       <MemberSignature Language="C#" Value="public T2 Item2 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T2 Item2" />
       <MemberSignature Language="DocId" Value="P:System.Tuple`2.Item2" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item2 As T2" />
+      <MemberSignature Language="F#" Value="member this.Item2 : 'T2" Usage="System.'T1 * 'T2.Item2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T2 Item2 { T2 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -318,7 +336,12 @@
       <MemberSignature Language="C#" Value="int IStructuralComparable.CompareTo (object other, System.Collections.IComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IStructuralComparable.CompareTo(object other, class System.Collections.IComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Tuple`2.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)" />
+      <MemberSignature Language="VB.NET" Value="Function CompareTo (other As Object, comparer As IComparer) As Integer Implements IStructuralComparable.CompareTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IStructuralComparable.CompareTo(System::Object ^ other, System::Collections::IComparer ^ comparer) = System::Collections::IStructuralComparable::CompareTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralComparable.CompareTo(System.Object,System.Collections.IComparer)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -396,7 +419,12 @@
       <MemberSignature Language="C#" Value="bool IStructuralEquatable.Equals (object other, System.Collections.IEqualityComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IStructuralEquatable.Equals(object other, class System.Collections.IEqualityComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Tuple`2.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <MemberSignature Language="VB.NET" Value="Function Equals (other As Object, comparer As IEqualityComparer) As Boolean Implements IStructuralEquatable.Equals" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IStructuralEquatable.Equals(System::Object ^ other, System::Collections::IEqualityComparer ^ comparer) = System::Collections::IStructuralEquatable::Equals;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralEquatable.Equals(System.Object,System.Collections.IEqualityComparer)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -452,7 +480,12 @@
       <MemberSignature Language="C#" Value="int IStructuralEquatable.GetHashCode (System.Collections.IEqualityComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IStructuralEquatable.GetHashCode(class System.Collections.IEqualityComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Tuple`2.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)" />
+      <MemberSignature Language="VB.NET" Value="Function GetHashCode (comparer As IEqualityComparer) As Integer Implements IStructuralEquatable.GetHashCode" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IStructuralEquatable.GetHashCode(System::Collections::IEqualityComparer ^ comparer) = System::Collections::IStructuralEquatable::GetHashCode;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -498,7 +531,12 @@
       <MemberSignature Language="C#" Value="int IComparable.CompareTo (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IComparable.CompareTo(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Tuple`2.System#IComparable#CompareTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function CompareTo (obj As Object) As Integer Implements IComparable.CompareTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.IComparable.CompareTo(System::Object ^ obj) = IComparable::CompareTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -576,7 +614,13 @@
       <MemberSignature Language="C#" Value="object System.Runtime.CompilerServices.ITuple.Item[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Runtime.CompilerServices.ITuple.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Tuple`2.System#Runtime#CompilerServices#ITuple#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(index As Integer) As Object Implements ITuple.Item" />
+      <MemberSignature Language="F#" Usage="System.'T1 * 'T2.System.Runtime.CompilerServices.ITuple.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Runtime.CompilerServices.ITuple.Item[int] { System::Object ^ get(int index); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.CompilerServices.ITuple.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -611,7 +655,13 @@
       <MemberSignature Language="C#" Value="int System.Runtime.CompilerServices.ITuple.Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Runtime.CompilerServices.ITuple.Length" />
       <MemberSignature Language="DocId" Value="P:System.Tuple`2.System#Runtime#CompilerServices#ITuple#Length" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Length As Integer Implements ITuple.Length" />
+      <MemberSignature Language="F#" Usage="System.'T1 * 'T2.System.Runtime.CompilerServices.ITuple.Length" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Runtime.CompilerServices.ITuple.Length { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.CompilerServices.ITuple.Length</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -640,6 +690,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Tuple`2.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="tuple.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

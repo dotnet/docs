@@ -1,7 +1,10 @@
-<Type Name="AddressHeaderCollectionElement" FullName="System.ServiceModel.Configuration.AddressHeaderCollectionElement">
+﻿<Type Name="AddressHeaderCollectionElement" FullName="System.ServiceModel.Configuration.AddressHeaderCollectionElement">
   <TypeSignature Language="C#" Value="public sealed class AddressHeaderCollectionElement : System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AddressHeaderCollectionElement extends System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.AddressHeaderCollectionElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AddressHeaderCollectionElement&#xA;Inherits ServiceModelConfigurationElement" />
+  <TypeSignature Language="F#" Value="type AddressHeaderCollectionElement = class&#xA;    inherit ServiceModelConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AddressHeaderCollectionElement sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public AddressHeaderCollectionElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.AddressHeaderCollectionElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AddressHeaderCollectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -35,6 +40,9 @@
       <MemberSignature Language="C#" Value="protected override void DeserializeElement (System.Xml.XmlReader reader, bool serializeCollectionKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DeserializeElement(class System.Xml.XmlReader reader, bool serializeCollectionKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.AddressHeaderCollectionElement.DeserializeElement(System.Xml.XmlReader,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DeserializeElement (reader As XmlReader, serializeCollectionKey As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.DeserializeElement : System.Xml.XmlReader * bool -&gt; unit" Usage="addressHeaderCollectionElement.DeserializeElement (reader, serializeCollectionKey)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DeserializeElement(System::Xml::XmlReader ^ reader, bool serializeCollectionKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +71,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.AddressHeaderCollection Headers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.AddressHeaderCollection Headers" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.AddressHeaderCollectionElement.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public Property Headers As AddressHeaderCollection" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.ServiceModel.Channels.AddressHeaderCollection with get, set" Usage="System.ServiceModel.Configuration.AddressHeaderCollectionElement.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::AddressHeaderCollection ^ Headers { System::ServiceModel::Channels::AddressHeaderCollection ^ get(); void set(System::ServiceModel::Channels::AddressHeaderCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +97,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.AddressHeaderCollectionElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.AddressHeaderCollectionElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -104,6 +118,9 @@
       <MemberSignature Language="C#" Value="protected override bool SerializeToXmlElement (System.Xml.XmlWriter writer, string elementName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool SerializeToXmlElement(class System.Xml.XmlWriter writer, string elementName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.AddressHeaderCollectionElement.SerializeToXmlElement(System.Xml.XmlWriter,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SerializeToXmlElement (writer As XmlWriter, elementName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.SerializeToXmlElement : System.Xml.XmlWriter * string -&gt; bool" Usage="addressHeaderCollectionElement.SerializeToXmlElement (writer, elementName)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool SerializeToXmlElement(System::Xml::XmlWriter ^ writer, System::String ^ elementName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="StateChangeEventArgs" FullName="System.Data.StateChangeEventArgs">
+﻿<Type Name="StateChangeEventArgs" FullName="System.Data.StateChangeEventArgs">
   <TypeSignature Language="C#" Value="public sealed class StateChangeEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StateChangeEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Data.StateChangeEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StateChangeEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type StateChangeEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StateChangeEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="public StateChangeEventArgs (System.Data.ConnectionState originalState, System.Data.ConnectionState currentState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Data.ConnectionState originalState, valuetype System.Data.ConnectionState currentState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.StateChangeEventArgs.#ctor(System.Data.ConnectionState,System.Data.ConnectionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (originalState As ConnectionState, currentState As ConnectionState)" />
+      <MemberSignature Language="F#" Value="new System.Data.StateChangeEventArgs : System.Data.ConnectionState * System.Data.ConnectionState -&gt; System.Data.StateChangeEventArgs" Usage="new System.Data.StateChangeEventArgs (originalState, currentState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StateChangeEventArgs(System::Data::ConnectionState originalState, System::Data::ConnectionState currentState);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -74,6 +80,9 @@
       <MemberSignature Language="C#" Value="public System.Data.ConnectionState CurrentState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.ConnectionState CurrentState" />
       <MemberSignature Language="DocId" Value="P:System.Data.StateChangeEventArgs.CurrentState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentState As ConnectionState" />
+      <MemberSignature Language="F#" Value="member this.CurrentState : System.Data.ConnectionState" Usage="System.Data.StateChangeEventArgs.CurrentState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::ConnectionState CurrentState { System::Data::ConnectionState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -102,6 +111,9 @@
       <MemberSignature Language="C#" Value="public System.Data.ConnectionState OriginalState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.ConnectionState OriginalState" />
       <MemberSignature Language="DocId" Value="P:System.Data.StateChangeEventArgs.OriginalState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalState As ConnectionState" />
+      <MemberSignature Language="F#" Value="member this.OriginalState : System.Data.ConnectionState" Usage="System.Data.StateChangeEventArgs.OriginalState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::ConnectionState OriginalState { System::Data::ConnectionState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>

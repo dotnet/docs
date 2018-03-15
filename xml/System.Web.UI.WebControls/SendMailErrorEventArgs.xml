@@ -1,7 +1,10 @@
-<Type Name="SendMailErrorEventArgs" FullName="System.Web.UI.WebControls.SendMailErrorEventArgs">
+﻿<Type Name="SendMailErrorEventArgs" FullName="System.Web.UI.WebControls.SendMailErrorEventArgs">
   <TypeSignature Language="C#" Value="public class SendMailErrorEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SendMailErrorEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SendMailErrorEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SendMailErrorEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type SendMailErrorEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SendMailErrorEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +65,9 @@
       <MemberSignature Language="C#" Value="public SendMailErrorEventArgs (Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SendMailErrorEventArgs.#ctor(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (e As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.SendMailErrorEventArgs : Exception -&gt; System.Web.UI.WebControls.SendMailErrorEventArgs" Usage="new System.Web.UI.WebControls.SendMailErrorEventArgs e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SendMailErrorEventArgs(Exception ^ e);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +90,9 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SendMailErrorEventArgs.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public Property Exception As Exception" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception with get, set" Usage="System.Web.UI.WebControls.SendMailErrorEventArgs.Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); void set(Exception ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -134,6 +143,9 @@
       <MemberSignature Language="C#" Value="public bool Handled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Handled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SendMailErrorEventArgs.Handled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="System.Web.UI.WebControls.SendMailErrorEventArgs.Handled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

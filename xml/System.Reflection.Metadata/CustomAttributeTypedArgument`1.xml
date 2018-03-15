@@ -1,7 +1,10 @@
-<Type Name="CustomAttributeTypedArgument&lt;TType&gt;" FullName="System.Reflection.Metadata.CustomAttributeTypedArgument&lt;TType&gt;">
+﻿<Type Name="CustomAttributeTypedArgument&lt;TType&gt;" FullName="System.Reflection.Metadata.CustomAttributeTypedArgument&lt;TType&gt;">
   <TypeSignature Language="C#" Value="public struct CustomAttributeTypedArgument&lt;TType&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CustomAttributeTypedArgument`1&lt;TType&gt; extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.CustomAttributeTypedArgument`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure CustomAttributeTypedArgument(Of TType)" />
+  <TypeSignature Language="F#" Value="type CustomAttributeTypedArgument&lt;'ype&gt; = struct" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TType&gt;&#xA;public value class CustomAttributeTypedArgument" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -17,14 +20,16 @@
   <Docs>
     <typeparam name="TType">The type of the argument.</typeparam>
     <summary>Represents a typed argument for a custom metadata attribute.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CustomAttributeTypedArgument (TType type, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TType type, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.CustomAttributeTypedArgument`1.#ctor(`0,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As TType, value As Object)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.CustomAttributeTypedArgument&lt;'ype&gt; : 'ype * obj -&gt; System.Reflection.Metadata.CustomAttributeTypedArgument&lt;'ype&gt;" Usage="new System.Reflection.Metadata.CustomAttributeTypedArgument&lt;'ype&gt; (type, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeTypedArgument(TType type, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -39,14 +44,16 @@
         <param name="type">The type of the argument.</param>
         <param name="value">The argument value.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.CustomAttributeTypedArgument`1" /> structure using the specified argument type and value.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Type">
       <MemberSignature Language="C#" Value="public TType Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TType Type" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.CustomAttributeTypedArgument`1.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As TType" />
+      <MemberSignature Language="F#" Value="member this.Type : 'ype" Usage="System.Reflection.Metadata.CustomAttributeTypedArgument&lt;'ype&gt;.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TType Type { TType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -59,14 +66,16 @@
       <Docs>
         <summary>Gets the type of the argument.</summary>
         <value>The argument type.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public object Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.CustomAttributeTypedArgument`1.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Reflection.Metadata.CustomAttributeTypedArgument&lt;'ype&gt;.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -79,8 +88,7 @@
       <Docs>
         <summary>Gets the value of the argument.</summary>
         <value>The argument value.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

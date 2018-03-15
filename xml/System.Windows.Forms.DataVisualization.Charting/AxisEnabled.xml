@@ -1,7 +1,10 @@
-<Type Name="AxisEnabled" FullName="System.Windows.Forms.DataVisualization.Charting.AxisEnabled">
+﻿<Type Name="AxisEnabled" FullName="System.Windows.Forms.DataVisualization.Charting.AxisEnabled">
   <TypeSignature Language="C#" Value="public enum AxisEnabled" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AxisEnabled extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.AxisEnabled" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AxisEnabled" />
+  <TypeSignature Language="F#" Value="type AxisEnabled = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AxisEnabled" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.AxisEnabled Auto = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.AxisEnabled.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Windows.Forms.DataVisualization.Charting.AxisEnabled.Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisEnabled</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The axis is only enabled if it used to plot a <see cref="T:System.Windows.Forms.DataVisualization.Charting.Series" />.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="False" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.AxisEnabled False = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False" />
+      <MemberSignature Language="VB.NET" Value="False" />
+      <MemberSignature Language="F#" Value="False = 2" Usage="System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False" />
+      <MemberSignature Language="C++ CLI" Value="False" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -51,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisEnabled</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The axis is never enabled.</summary>
       </Docs>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="True" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.AxisEnabled True = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True" />
+      <MemberSignature Language="VB.NET" Value="True" />
+      <MemberSignature Language="F#" Value="True = 1" Usage="System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True" />
+      <MemberSignature Language="C++ CLI" Value="True" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisEnabled</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The axis is always enabled.</summary>
       </Docs>

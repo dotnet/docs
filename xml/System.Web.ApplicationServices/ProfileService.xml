@@ -1,7 +1,10 @@
-<Type Name="ProfileService" FullName="System.Web.ApplicationServices.ProfileService">
+﻿<Type Name="ProfileService" FullName="System.Web.ApplicationServices.ProfileService">
   <TypeSignature Language="C#" Value="public class ProfileService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProfileService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.ProfileService" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProfileService" />
+  <TypeSignature Language="F#" Value="type ProfileService = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProfileService" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +59,8 @@
       <MemberSignature Language="C#" Value="public ProfileService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ProfileService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -71,6 +76,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,object&gt; GetAllPropertiesForCurrentUser (bool authenticatedUserOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.Dictionary`2&lt;string, object&gt; GetAllPropertiesForCurrentUser(bool authenticatedUserOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ProfileService.GetAllPropertiesForCurrentUser(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAllPropertiesForCurrentUser (authenticatedUserOnly As Boolean) As Dictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.GetAllPropertiesForCurrentUser : bool -&gt; System.Collections.Generic.Dictionary&lt;string, obj&gt;" Usage="profileService.GetAllPropertiesForCurrentUser authenticatedUserOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ GetAllPropertiesForCurrentUser(bool authenticatedUserOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -105,6 +113,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,object&gt; GetPropertiesForCurrentUser (System.Collections.Generic.IEnumerable&lt;string&gt; properties, bool authenticatedUserOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.Dictionary`2&lt;string, object&gt; GetPropertiesForCurrentUser(class System.Collections.Generic.IEnumerable`1&lt;string&gt; properties, bool authenticatedUserOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ProfileService.GetPropertiesForCurrentUser(System.Collections.Generic.IEnumerable{System.String},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPropertiesForCurrentUser (properties As IEnumerable(Of String), authenticatedUserOnly As Boolean) As Dictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.GetPropertiesForCurrentUser : seq&lt;string&gt; * bool -&gt; System.Collections.Generic.Dictionary&lt;string, obj&gt;" Usage="profileService.GetPropertiesForCurrentUser (properties, authenticatedUserOnly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ GetPropertiesForCurrentUser(System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ properties, bool authenticatedUserOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -142,6 +153,9 @@
       <MemberSignature Language="C#" Value="public System.Web.ApplicationServices.ProfilePropertyMetadata[] GetPropertiesMetadata ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.ApplicationServices.ProfilePropertyMetadata[] GetPropertiesMetadata() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ProfileService.GetPropertiesMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPropertiesMetadata () As ProfilePropertyMetadata()" />
+      <MemberSignature Language="F#" Value="member this.GetPropertiesMetadata : unit -&gt; System.Web.ApplicationServices.ProfilePropertyMetadata[]" Usage="profileService.GetPropertiesMetadata " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Web::ApplicationServices::ProfilePropertyMetadata ^&gt; ^ GetPropertiesMetadata();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -183,6 +197,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;string&gt; SetPropertiesForCurrentUser (System.Collections.Generic.IDictionary&lt;string,object&gt; values, bool authenticatedUserOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; SetPropertiesForCurrentUser(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; values, bool authenticatedUserOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.ProfileService.SetPropertiesForCurrentUser(System.Collections.Generic.IDictionary{System.String,System.Object},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetPropertiesForCurrentUser (values As IDictionary(Of String, Object), authenticatedUserOnly As Boolean) As Collection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.SetPropertiesForCurrentUser : System.Collections.Generic.IDictionary&lt;string, obj&gt; * bool -&gt; System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="profileService.SetPropertiesForCurrentUser (values, authenticatedUserOnly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ SetPropertiesForCurrentUser(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ values, bool authenticatedUserOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -225,6 +242,9 @@
       <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Web.ApplicationServices.ValidatingPropertiesEventArgs&gt; ValidatingProperties;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.ApplicationServices.ValidatingPropertiesEventArgs&gt; ValidatingProperties" />
       <MemberSignature Language="DocId" Value="E:System.Web.ApplicationServices.ProfileService.ValidatingProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event ValidatingProperties As EventHandler(Of ValidatingPropertiesEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ValidatingProperties : EventHandler&lt;System.Web.ApplicationServices.ValidatingPropertiesEventArgs&gt; " Usage="member this.ValidatingProperties : System.EventHandler&lt;System.Web.ApplicationServices.ValidatingPropertiesEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Web::ApplicationServices::ValidatingPropertiesEventArgs ^&gt; ^ ValidatingProperties;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="EventKeywords" FullName="System.Diagnostics.Tracing.EventKeywords">
+﻿<Type Name="EventKeywords" FullName="System.Diagnostics.Tracing.EventKeywords">
   <TypeSignature Language="C#" Value="public enum EventKeywords" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventKeywords extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventKeywords" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EventKeywords" />
+  <TypeSignature Language="F#" Value="type EventKeywords = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EventKeywords" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +54,9 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventKeywords All = int64(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="F#" Value="All = -1" Usage="System.Diagnostics.Tracing.EventKeywords.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -70,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventKeywords</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>All the bits are set to 1, representing every possible group of events.</summary>
       </Docs>
@@ -78,6 +85,9 @@
       <MemberSignature Language="C#" Value="AuditFailure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventKeywords AuditFailure = int64(4503599627370496)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.AuditFailure" />
+      <MemberSignature Language="VB.NET" Value="AuditFailure" />
+      <MemberSignature Language="F#" Value="AuditFailure = 4503599627370496" Usage="System.Diagnostics.Tracing.EventKeywords.AuditFailure" />
+      <MemberSignature Language="C++ CLI" Value="AuditFailure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -99,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventKeywords</ReturnType>
       </ReturnValue>
+      <MemberValue>4503599627370496</MemberValue>
       <Docs>
         <summary>Attached to all failed security audit events. Use this keyword only  for events in the security log.</summary>
       </Docs>
@@ -107,6 +118,9 @@
       <MemberSignature Language="C#" Value="AuditSuccess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventKeywords AuditSuccess = int64(9007199254740992)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.AuditSuccess" />
+      <MemberSignature Language="VB.NET" Value="AuditSuccess" />
+      <MemberSignature Language="F#" Value="AuditSuccess = 9007199254740992" Usage="System.Diagnostics.Tracing.EventKeywords.AuditSuccess" />
+      <MemberSignature Language="C++ CLI" Value="AuditSuccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -128,6 +142,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventKeywords</ReturnType>
       </ReturnValue>
+      <MemberValue>9007199254740992</MemberValue>
       <Docs>
         <summary>Attached to all successful security audit events. Use this keyword only for events in the security log.</summary>
       </Docs>
@@ -136,6 +151,9 @@
       <MemberSignature Language="C#" Value="CorrelationHint" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventKeywords CorrelationHint = int64(4503599627370496)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.CorrelationHint" />
+      <MemberSignature Language="VB.NET" Value="CorrelationHint" />
+      <MemberSignature Language="F#" Value="CorrelationHint = 4503599627370496" Usage="System.Diagnostics.Tracing.EventKeywords.CorrelationHint" />
+      <MemberSignature Language="C++ CLI" Value="CorrelationHint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -157,6 +175,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventKeywords</ReturnType>
       </ReturnValue>
+      <MemberValue>4503599627370496</MemberValue>
       <Docs>
         <summary>Attached to transfer events where the related activity ID (correlation ID) is a computed value and is not guaranteed to be unique (that is, it is not a real GUID).</summary>
       </Docs>
@@ -165,6 +184,9 @@
       <MemberSignature Language="C#" Value="EventLogClassic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventKeywords EventLogClassic = int64(36028797018963968)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.EventLogClassic" />
+      <MemberSignature Language="VB.NET" Value="EventLogClassic" />
+      <MemberSignature Language="F#" Value="EventLogClassic = 36028797018963968" Usage="System.Diagnostics.Tracing.EventKeywords.EventLogClassic" />
+      <MemberSignature Language="C++ CLI" Value="EventLogClassic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -186,6 +208,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventKeywords</ReturnType>
       </ReturnValue>
+      <MemberValue>36028797018963968</MemberValue>
       <Docs>
         <summary>Attached to events that are raised by using the <see langword="RaiseEvent" /> function.</summary>
       </Docs>
@@ -194,6 +217,9 @@
       <MemberSignature Language="C#" Value="MicrosoftTelemetry" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventKeywords MicrosoftTelemetry = int64(562949953421312)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.MicrosoftTelemetry" />
+      <MemberSignature Language="VB.NET" Value="MicrosoftTelemetry" />
+      <MemberSignature Language="F#" Value="MicrosoftTelemetry = 562949953421312" Usage="System.Diagnostics.Tracing.EventKeywords.MicrosoftTelemetry" />
+      <MemberSignature Language="C++ CLI" Value="MicrosoftTelemetry" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -211,6 +237,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventKeywords</ReturnType>
       </ReturnValue>
+      <MemberValue>562949953421312</MemberValue>
       <Docs>
         <summary>Attached to all Microsoft telemetry events.</summary>
       </Docs>
@@ -219,6 +246,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventKeywords None = int64(0)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Diagnostics.Tracing.EventKeywords.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -240,6 +270,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventKeywords</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No filtering on keywords is performed when the event is published.</summary>
       </Docs>
@@ -248,6 +279,9 @@
       <MemberSignature Language="C#" Value="Sqm" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventKeywords Sqm = int64(2251799813685248)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.Sqm" />
+      <MemberSignature Language="VB.NET" Value="Sqm" />
+      <MemberSignature Language="F#" Value="Sqm = 2251799813685248" Usage="System.Diagnostics.Tracing.EventKeywords.Sqm" />
+      <MemberSignature Language="C++ CLI" Value="Sqm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -269,6 +303,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventKeywords</ReturnType>
       </ReturnValue>
+      <MemberValue>2251799813685248</MemberValue>
       <Docs>
         <summary>Attached to all Service Quality Mechanism (SQM) events.</summary>
       </Docs>
@@ -277,6 +312,9 @@
       <MemberSignature Language="C#" Value="WdiContext" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventKeywords WdiContext = int64(562949953421312)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.WdiContext" />
+      <MemberSignature Language="VB.NET" Value="WdiContext" />
+      <MemberSignature Language="F#" Value="WdiContext = 562949953421312" Usage="System.Diagnostics.Tracing.EventKeywords.WdiContext" />
+      <MemberSignature Language="C++ CLI" Value="WdiContext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -298,6 +336,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventKeywords</ReturnType>
       </ReturnValue>
+      <MemberValue>562949953421312</MemberValue>
       <Docs>
         <summary>Attached to all Windows Diagnostics Infrastructure (WDI) context events.</summary>
       </Docs>
@@ -306,6 +345,9 @@
       <MemberSignature Language="C#" Value="WdiDiagnostic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventKeywords WdiDiagnostic = int64(1125899906842624)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventKeywords.WdiDiagnostic" />
+      <MemberSignature Language="VB.NET" Value="WdiDiagnostic" />
+      <MemberSignature Language="F#" Value="WdiDiagnostic = 1125899906842624" Usage="System.Diagnostics.Tracing.EventKeywords.WdiDiagnostic" />
+      <MemberSignature Language="C++ CLI" Value="WdiDiagnostic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -327,6 +369,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventKeywords</ReturnType>
       </ReturnValue>
+      <MemberValue>1125899906842624</MemberValue>
       <Docs>
         <summary>Attached to all Windows Diagnostics Infrastructure (WDI) diagnostic events.</summary>
       </Docs>

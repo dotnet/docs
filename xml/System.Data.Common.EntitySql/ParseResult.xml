@@ -1,7 +1,10 @@
-<Type Name="ParseResult" FullName="System.Data.Common.EntitySql.ParseResult">
+﻿<Type Name="ParseResult" FullName="System.Data.Common.EntitySql.ParseResult">
   <TypeSignature Language="C#" Value="public sealed class ParseResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ParseResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.EntitySql.ParseResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ParseResult" />
+  <TypeSignature Language="F#" Value="type ParseResult = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParseResult sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbCommandTree CommandTree { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.CommandTrees.DbCommandTree CommandTree" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.EntitySql.ParseResult.CommandTree" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandTree As DbCommandTree" />
+      <MemberSignature Language="F#" Value="member this.CommandTree : System.Data.Common.CommandTrees.DbCommandTree" Usage="System.Data.Common.EntitySql.ParseResult.CommandTree" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::CommandTrees::DbCommandTree ^ CommandTree { System::Data::Common::CommandTrees::DbCommandTree ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Common.EntitySql.FunctionDefinition&gt; FunctionDefinitions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Common.EntitySql.FunctionDefinition&gt; FunctionDefinitions" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.EntitySql.ParseResult.FunctionDefinitions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FunctionDefinitions As ReadOnlyCollection(Of FunctionDefinition)" />
+      <MemberSignature Language="F#" Value="member this.FunctionDefinitions : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Common.EntitySql.FunctionDefinition&gt;" Usage="System.Data.Common.EntitySql.ParseResult.FunctionDefinitions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Common::EntitySql::FunctionDefinition ^&gt; ^ FunctionDefinitions { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Common::EntitySql::FunctionDefinition ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

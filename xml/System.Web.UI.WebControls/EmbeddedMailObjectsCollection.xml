@@ -1,7 +1,10 @@
-<Type Name="EmbeddedMailObjectsCollection" FullName="System.Web.UI.WebControls.EmbeddedMailObjectsCollection">
+﻿<Type Name="EmbeddedMailObjectsCollection" FullName="System.Web.UI.WebControls.EmbeddedMailObjectsCollection">
   <TypeSignature Language="C#" Value="public sealed class EmbeddedMailObjectsCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EmbeddedMailObjectsCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EmbeddedMailObjectsCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EmbeddedMailObjectsCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="F#" Value="type EmbeddedMailObjectsCollection = class&#xA;    inherit CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EmbeddedMailObjectsCollection sealed : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -102,6 +105,8 @@
       <MemberSignature Language="C#" Value="public EmbeddedMailObjectsCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EmbeddedMailObjectsCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +122,9 @@
       <MemberSignature Language="C#" Value="public int Add (System.Web.UI.WebControls.EmbeddedMailObject value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.UI.WebControls.EmbeddedMailObject value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Add(System.Web.UI.WebControls.EmbeddedMailObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As EmbeddedMailObject) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.WebControls.EmbeddedMailObject -&gt; int" Usage="embeddedMailObjectsCollection.Add value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::WebControls::EmbeddedMailObject ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -146,6 +154,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.WebControls.EmbeddedMailObject value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.EmbeddedMailObject value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Contains(System.Web.UI.WebControls.EmbeddedMailObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As EmbeddedMailObject) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.EmbeddedMailObject -&gt; bool" Usage="embeddedMailObjectsCollection.Contains value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::EmbeddedMailObject ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -182,6 +193,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.EmbeddedMailObject[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.EmbeddedMailObject[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.CopyTo(System.Web.UI.WebControls.EmbeddedMailObject[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As EmbeddedMailObject(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.WebControls.EmbeddedMailObject[] * int -&gt; unit" Usage="embeddedMailObjectsCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::EmbeddedMailObject ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -213,6 +227,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.EmbeddedMailObject value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.EmbeddedMailObject value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.IndexOf(System.Web.UI.WebControls.EmbeddedMailObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As EmbeddedMailObject) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.EmbeddedMailObject -&gt; int" Usage="embeddedMailObjectsCollection.IndexOf value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::EmbeddedMailObject ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -241,6 +258,9 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.UI.WebControls.EmbeddedMailObject value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.UI.WebControls.EmbeddedMailObject value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Insert(System.Int32,System.Web.UI.WebControls.EmbeddedMailObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As EmbeddedMailObject)" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.WebControls.EmbeddedMailObject -&gt; unit" Usage="embeddedMailObjectsCollection.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::EmbeddedMailObject ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -279,6 +299,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.EmbeddedMailObject this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.EmbeddedMailObject Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As EmbeddedMailObject" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.EmbeddedMailObject with get, set" Usage="System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::EmbeddedMailObject ^ default[int] { System::Web::UI::WebControls::EmbeddedMailObject ^ get(int index); void set(int index, System::Web::UI::WebControls::EmbeddedMailObject ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -332,6 +355,9 @@ myObject = myCollection.Item[index];
       <MemberSignature Language="C#" Value="protected override void OnValidate (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidate(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.OnValidate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnValidate : obj -&gt; unit" Usage="embeddedMailObjectsCollection.OnValidate value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -353,6 +379,9 @@ myObject = myCollection.Item[index];
       <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.WebControls.EmbeddedMailObject value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.WebControls.EmbeddedMailObject value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EmbeddedMailObjectsCollection.Remove(System.Web.UI.WebControls.EmbeddedMailObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As EmbeddedMailObject)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.WebControls.EmbeddedMailObject -&gt; unit" Usage="embeddedMailObjectsCollection.Remove value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::EmbeddedMailObject ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

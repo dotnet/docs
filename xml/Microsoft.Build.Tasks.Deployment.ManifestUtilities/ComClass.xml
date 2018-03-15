@@ -1,7 +1,10 @@
-<Type Name="ComClass" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass">
+﻿<Type Name="ComClass" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass">
   <TypeSignature Language="C#" Value="public class ComClass" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComClass extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass" />
+  <TypeSignature Language="VB.NET" Value="Public Class ComClass" />
+  <TypeSignature Language="F#" Value="type ComClass = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComClass" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,8 @@
       <MemberSignature Language="C#" Value="public ComClass ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComClass();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public string ClsId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClsId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.ClsId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClsId As String" />
+      <MemberSignature Language="F#" Value="member this.ClsId : string" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.ClsId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClsId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -65,6 +73,9 @@
       <MemberSignature Language="C#" Value="public string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -89,6 +100,9 @@
       <MemberSignature Language="C#" Value="public string ProgId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProgId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.ProgId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProgId As String" />
+      <MemberSignature Language="F#" Value="member this.ProgId : string" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.ProgId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProgId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -113,6 +127,9 @@
       <MemberSignature Language="C#" Value="public string ThreadingModel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ThreadingModel" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.ThreadingModel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreadingModel As String" />
+      <MemberSignature Language="F#" Value="member this.ThreadingModel : string" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.ThreadingModel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ThreadingModel { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -137,6 +154,9 @@
       <MemberSignature Language="C#" Value="public string TlbId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TlbId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.TlbId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TlbId As String" />
+      <MemberSignature Language="F#" Value="member this.TlbId : string" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.TlbId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TlbId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -161,6 +181,9 @@
       <MemberSignature Language="C#" Value="public string XmlClsId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlClsId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.XmlClsId" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlClsId As String" />
+      <MemberSignature Language="F#" Value="member this.XmlClsId : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.XmlClsId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlClsId { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -191,6 +214,9 @@
       <MemberSignature Language="C#" Value="public string XmlDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlDescription" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.XmlDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlDescription As String" />
+      <MemberSignature Language="F#" Value="member this.XmlDescription : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.XmlDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -221,6 +247,9 @@
       <MemberSignature Language="C#" Value="public string XmlProgId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlProgId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.XmlProgId" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlProgId As String" />
+      <MemberSignature Language="F#" Value="member this.XmlProgId : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.XmlProgId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlProgId { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -251,6 +280,9 @@
       <MemberSignature Language="C#" Value="public string XmlThreadingModel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlThreadingModel" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.XmlThreadingModel" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlThreadingModel As String" />
+      <MemberSignature Language="F#" Value="member this.XmlThreadingModel : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.XmlThreadingModel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlThreadingModel { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -281,6 +313,9 @@
       <MemberSignature Language="C#" Value="public string XmlTlbId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlTlbId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.XmlTlbId" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlTlbId As String" />
+      <MemberSignature Language="F#" Value="member this.XmlTlbId : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ComClass.XmlTlbId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlTlbId { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

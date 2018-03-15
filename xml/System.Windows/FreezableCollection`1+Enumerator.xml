@@ -1,7 +1,10 @@
-<Type Name="FreezableCollection&lt;T&gt;+Enumerator" FullName="System.Windows.FreezableCollection&lt;T&gt;+Enumerator">
+﻿<Type Name="FreezableCollection&lt;T&gt;+Enumerator" FullName="System.Windows.FreezableCollection&lt;T&gt;+Enumerator">
   <TypeSignature Language="C#" Value="public struct FreezableCollection&lt;T&gt;.Enumerator : System.Collections.Generic.IEnumerator&lt;T&gt; where T : DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit FreezableCollection`1/Enumerator&lt;(class System.Windows.DependencyObject) T&gt; extends System.ValueType implements class System.Collections.Generic.IEnumerator`1&lt;!T&gt;, class System.Collections.IEnumerator, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.FreezableCollection`1.Enumerator" />
+  <TypeSignature Language="VB.NET" Value="Public Structure FreezableCollection(Of T).Enumerator&#xA;Implements IEnumerator(Of T)" />
+  <TypeSignature Language="F#" Value="type FreezableCollection&lt;'T (requires 'T :&gt; DependencyObject)&gt;.Enumerator = struct&#xA;    interface IEnumerator&#xA;    interface IEnumerator&lt;'T (requires 'T :&gt; DependencyObject)&gt;&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public:  where T : DependencyObjectvalue class FreezableCollection&lt;T&gt;::Enumerator : System::Collections::Generic::IEnumerator&lt;T&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,7 +34,13 @@
       <MemberSignature Language="C#" Value="public T Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FreezableCollection`1.Enumerator.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As T" />
+      <MemberSignature Language="F#" Value="member this.Current : 'T" Usage="System.Windows.FreezableCollection&lt;'T (requires 'T :&gt; System.Windows.DependencyObject)&gt;.Enumerator.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Current { T get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IEnumerator`1.Current</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,7 +58,13 @@
       <MemberSignature Language="C#" Value="public bool MoveNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FreezableCollection`1.Enumerator.MoveNext" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="enumerator.MoveNext " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,7 +84,13 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FreezableCollection`1.Enumerator.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="enumerator.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,7 +115,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.IEnumerator.Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IEnumerator.Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FreezableCollection`1.Enumerator.System#Collections#IEnumerator#Current" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
+      <MemberSignature Language="F#" Usage="System.Windows.FreezableCollection&lt;'T (requires 'T :&gt; System.Windows.DependencyObject)&gt;.Enumerator.System.Collections.IEnumerator.Current" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -112,7 +139,12 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FreezableCollection`1.Enumerator.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

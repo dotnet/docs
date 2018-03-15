@@ -1,7 +1,10 @@
-<Type Name="SendActivity" FullName="System.Workflow.Activities.SendActivity">
+﻿<Type Name="SendActivity" FullName="System.Workflow.Activities.SendActivity">
   <TypeSignature Language="C#" Value="public sealed class SendActivity : System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SendActivity extends System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.SendActivity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SendActivity&#xA;Inherits Activity" />
+  <TypeSignature Language="F#" Value="type SendActivity = class&#xA;    inherit Activity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SendActivity sealed : System::Workflow::ComponentModel::Activity" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,6 +85,8 @@
       <MemberSignature Language="C#" Value="public SendActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SendActivity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SendActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -111,6 +116,9 @@
       <MemberSignature Language="C#" Value="public SendActivity (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SendActivity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.SendActivity : string -&gt; System.Workflow.Activities.SendActivity" Usage="new System.Workflow.Activities.SendActivity name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SendActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -143,6 +151,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Activities.SendActivityEventArgs&gt; AfterResponse;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Activities.SendActivityEventArgs&gt; AfterResponse" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.SendActivity.AfterResponse" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AfterResponse As EventHandler(Of SendActivityEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.AfterResponse : EventHandler&lt;System.Workflow.Activities.SendActivityEventArgs&gt; " Usage="member this.AfterResponse : System.EventHandler&lt;System.Workflow.Activities.SendActivityEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Activities::SendActivityEventArgs ^&gt; ^ AfterResponse;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -153,7 +164,7 @@
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Visible)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -182,6 +193,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty AfterResponseEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty AfterResponseEvent" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.SendActivity.AfterResponseEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AfterResponseEvent As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable AfterResponseEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.SendActivity.AfterResponseEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ AfterResponseEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -206,6 +220,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Activities.SendActivityEventArgs&gt; BeforeSend;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Activities.SendActivityEventArgs&gt; BeforeSend" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.SendActivity.BeforeSend" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BeforeSend As EventHandler(Of SendActivityEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.BeforeSend : EventHandler&lt;System.Workflow.Activities.SendActivityEventArgs&gt; " Usage="member this.BeforeSend : System.EventHandler&lt;System.Workflow.Activities.SendActivityEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Activities::SendActivityEventArgs ^&gt; ^ BeforeSend;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -216,7 +233,7 @@
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Visible)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -248,6 +265,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty BeforeSendEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty BeforeSendEvent" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.SendActivity.BeforeSendEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BeforeSendEvent As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BeforeSendEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.SendActivity.BeforeSendEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ BeforeSendEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -272,6 +292,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Activities.ChannelToken ChannelToken { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.ChannelToken ChannelToken" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.SendActivity.ChannelToken" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChannelToken As ChannelToken" />
+      <MemberSignature Language="F#" Value="member this.ChannelToken : System.Workflow.Activities.ChannelToken with get, set" Usage="System.Workflow.Activities.SendActivity.ChannelToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::ChannelToken ^ ChannelToken { System::Workflow::Activities::ChannelToken ^ get(); void set(System::Workflow::Activities::ChannelToken ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -285,7 +308,7 @@
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -318,6 +341,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; Context { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Context" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.SendActivity.Context" />
+      <MemberSignature Language="VB.NET" Value="Public Property Context As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Collections.Generic.IDictionary&lt;string, string&gt; with get, set" Usage="System.Workflow.Activities.SendActivity.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ Context { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); void set(System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -328,7 +354,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -358,6 +384,9 @@
       <MemberSignature Language="C#" Value="public string CustomAddress { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CustomAddress" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.SendActivity.CustomAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomAddress As String" />
+      <MemberSignature Language="F#" Value="member this.CustomAddress : string with get, set" Usage="System.Workflow.Activities.SendActivity.CustomAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomAddress { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -395,6 +424,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty CustomAddressProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty CustomAddressProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.SendActivity.CustomAddressProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CustomAddressProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CustomAddressProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.SendActivity.CustomAddressProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ CustomAddressProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -416,9 +448,12 @@
       </Docs>
     </Member>
     <Member MemberName="Execute">
-      <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.ActivityExecutionStatus Execute (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
+      <MemberSignature Language="C#" Value="protected internal override System.Workflow.ComponentModel.ActivityExecutionStatus Execute (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus Execute(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SendActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="sendActivity.Execute executionContext" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -458,6 +493,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;string,string&gt; GetContext (System.Workflow.ComponentModel.Activity activity, System.Workflow.Activities.ChannelToken endpoint, Type contractType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;string, string&gt; GetContext(class System.Workflow.ComponentModel.Activity activity, class System.Workflow.Activities.ChannelToken endpoint, class System.Type contractType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SendActivity.GetContext(System.Workflow.ComponentModel.Activity,System.Workflow.Activities.ChannelToken,System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetContext : System.Workflow.ComponentModel.Activity * System.Workflow.Activities.ChannelToken * Type -&gt; System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.Workflow.Activities.SendActivity.GetContext (activity, endpoint, contractType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ GetContext(System::Workflow::ComponentModel::Activity ^ activity, System::Workflow::Activities::ChannelToken ^ endpoint, Type ^ contractType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -498,6 +535,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;string,string&gt; GetContext (System.Workflow.ComponentModel.Activity activity, string endpointName, string ownerActivityName, Type contractType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;string, string&gt; GetContext(class System.Workflow.ComponentModel.Activity activity, string endpointName, string ownerActivityName, class System.Type contractType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SendActivity.GetContext(System.Workflow.ComponentModel.Activity,System.String,System.String,System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetContext : System.Workflow.ComponentModel.Activity * string * string * Type -&gt; System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.Workflow.Activities.SendActivity.GetContext (activity, endpointName, ownerActivityName, contractType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ GetContext(System::Workflow::ComponentModel::Activity ^ activity, System::String ^ endpointName, System::String ^ ownerActivityName, Type ^ contractType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -540,6 +579,9 @@
       <MemberSignature Language="C#" Value="protected override void InitializeProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitializeProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SendActivity.InitializeProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeProperties ()" />
+      <MemberSignature Language="F#" Value="override this.InitializeProperties : unit -&gt; unit" Usage="sendActivity.InitializeProperties " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -558,6 +600,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.WorkflowParameterBindingCollection ParameterBindings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.WorkflowParameterBindingCollection ParameterBindings" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.SendActivity.ParameterBindings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterBindings As WorkflowParameterBindingCollection" />
+      <MemberSignature Language="F#" Value="member this.ParameterBindings : System.Workflow.ComponentModel.WorkflowParameterBindingCollection" Usage="System.Workflow.Activities.SendActivity.ParameterBindings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::WorkflowParameterBindingCollection ^ ParameterBindings { System::Workflow::ComponentModel::WorkflowParameterBindingCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -568,7 +613,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -602,6 +647,9 @@
       <MemberSignature Language="C#" Value="public const string ReturnValuePropertyName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ReturnValuePropertyName" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.SendActivity.ReturnValuePropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public Const ReturnValuePropertyName As String " />
+      <MemberSignature Language="F#" Value="val mutable ReturnValuePropertyName : string" Usage="System.Workflow.Activities.SendActivity.ReturnValuePropertyName" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ReturnValuePropertyName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -633,6 +681,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Activities.TypedOperationInfo ServiceOperationInfo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.TypedOperationInfo ServiceOperationInfo" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.SendActivity.ServiceOperationInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceOperationInfo As TypedOperationInfo" />
+      <MemberSignature Language="F#" Value="member this.ServiceOperationInfo : System.Workflow.Activities.TypedOperationInfo with get, set" Usage="System.Workflow.Activities.SendActivity.ServiceOperationInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::TypedOperationInfo ^ ServiceOperationInfo { System::Workflow::Activities::TypedOperationInfo ^ get(); void set(System::Workflow::Activities::TypedOperationInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -643,7 +694,7 @@
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Visible)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -690,6 +741,8 @@
       <MemberSignature Language="C#" Value="public static void SetContext (System.Workflow.ComponentModel.Activity activity, System.Workflow.Activities.ChannelToken endpoint, Type contractType, System.Collections.Generic.IDictionary&lt;string,string&gt; context);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetContext(class System.Workflow.ComponentModel.Activity activity, class System.Workflow.Activities.ChannelToken endpoint, class System.Type contractType, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SendActivity.SetContext(System.Workflow.ComponentModel.Activity,System.Workflow.Activities.ChannelToken,System.Type,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="F#" Value="static member SetContext : System.Workflow.ComponentModel.Activity * System.Workflow.Activities.ChannelToken * Type * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; unit" Usage="System.Workflow.Activities.SendActivity.SetContext (activity, endpoint, contractType, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetContext(System::Workflow::ComponentModel::Activity ^ activity, System::Workflow::Activities::ChannelToken ^ endpoint, Type ^ contractType, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -731,6 +784,8 @@
       <MemberSignature Language="C#" Value="public static void SetContext (System.Workflow.ComponentModel.Activity activity, string endpointName, string ownerActivityName, Type contractType, System.Collections.Generic.IDictionary&lt;string,string&gt; context);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetContext(class System.Workflow.ComponentModel.Activity activity, string endpointName, string ownerActivityName, class System.Type contractType, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.SendActivity.SetContext(System.Workflow.ComponentModel.Activity,System.String,System.String,System.Type,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="F#" Value="static member SetContext : System.Workflow.ComponentModel.Activity * string * string * Type * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; unit" Usage="System.Workflow.Activities.SendActivity.SetContext (activity, endpointName, ownerActivityName, contractType, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetContext(System::Workflow::ComponentModel::Activity ^ activity, System::String ^ endpointName, System::String ^ ownerActivityName, Type ^ contractType, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

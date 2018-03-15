@@ -1,7 +1,10 @@
-<Type Name="DataContractJsonSerializer" FullName="System.Runtime.Serialization.Json.DataContractJsonSerializer">
+﻿<Type Name="DataContractJsonSerializer" FullName="System.Runtime.Serialization.Json.DataContractJsonSerializer">
   <TypeSignature Language="C#" Value="public sealed class DataContractJsonSerializer : System.Runtime.Serialization.XmlObjectSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataContractJsonSerializer extends System.Runtime.Serialization.XmlObjectSerializer" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataContractJsonSerializer&#xA;Inherits XmlObjectSerializer" />
+  <TypeSignature Language="F#" Value="type DataContractJsonSerializer = class&#xA;    inherit XmlObjectSerializer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataContractJsonSerializer sealed : System::Runtime::Serialization::XmlObjectSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,10 +43,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.4.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">At least one of the types being serialized or deserialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataContractJsonSerializer (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.#ctor(System.Type)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.Json.DataContractJsonSerializer : Type -&gt; System.Runtime.Serialization.Json.DataContractJsonSerializer" Usage="new System.Runtime.Serialization.Json.DataContractJsonSerializer type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractJsonSerializer(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -72,6 +88,8 @@
       <MemberSignature Language="C#" Value="public DataContractJsonSerializer (Type type, System.Collections.Generic.IEnumerable&lt;Type&gt; knownTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.#ctor(System.Type,System.Collections.Generic.IEnumerable{System.Type})" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.Json.DataContractJsonSerializer : Type * seq&lt;Type&gt; -&gt; System.Runtime.Serialization.Json.DataContractJsonSerializer" Usage="new System.Runtime.Serialization.Json.DataContractJsonSerializer (type, knownTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractJsonSerializer(Type ^ type, System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ knownTypes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -102,6 +120,8 @@
       <MemberSignature Language="C#" Value="public DataContractJsonSerializer (Type type, System.Runtime.Serialization.Json.DataContractJsonSerializerSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Runtime.Serialization.Json.DataContractJsonSerializerSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.#ctor(System.Type,System.Runtime.Serialization.Json.DataContractJsonSerializerSettings)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.Json.DataContractJsonSerializer : Type * System.Runtime.Serialization.Json.DataContractJsonSerializerSettings -&gt; System.Runtime.Serialization.Json.DataContractJsonSerializer" Usage="new System.Runtime.Serialization.Json.DataContractJsonSerializer (type, settings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractJsonSerializer(Type ^ type, System::Runtime::Serialization::Json::DataContractJsonSerializerSettings ^ settings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -132,6 +152,8 @@
       <MemberSignature Language="C#" Value="public DataContractJsonSerializer (Type type, string rootName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string rootName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.#ctor(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.Json.DataContractJsonSerializer : Type * string -&gt; System.Runtime.Serialization.Json.DataContractJsonSerializer" Usage="new System.Runtime.Serialization.Json.DataContractJsonSerializer (type, rootName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractJsonSerializer(Type ^ type, System::String ^ rootName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -161,6 +183,8 @@
       <MemberSignature Language="C#" Value="public DataContractJsonSerializer (Type type, System.Xml.XmlDictionaryString rootName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.XmlDictionaryString rootName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.#ctor(System.Type,System.Xml.XmlDictionaryString)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.Json.DataContractJsonSerializer : Type * System.Xml.XmlDictionaryString -&gt; System.Runtime.Serialization.Json.DataContractJsonSerializer" Usage="new System.Runtime.Serialization.Json.DataContractJsonSerializer (type, rootName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractJsonSerializer(Type ^ type, System::Xml::XmlDictionaryString ^ rootName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -190,6 +214,8 @@
       <MemberSignature Language="C#" Value="public DataContractJsonSerializer (Type type, string rootName, System.Collections.Generic.IEnumerable&lt;Type&gt; knownTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string rootName, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.#ctor(System.Type,System.String,System.Collections.Generic.IEnumerable{System.Type})" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.Json.DataContractJsonSerializer : Type * string * seq&lt;Type&gt; -&gt; System.Runtime.Serialization.Json.DataContractJsonSerializer" Usage="new System.Runtime.Serialization.Json.DataContractJsonSerializer (type, rootName, knownTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractJsonSerializer(Type ^ type, System::String ^ rootName, System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ knownTypes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -221,6 +247,8 @@
       <MemberSignature Language="C#" Value="public DataContractJsonSerializer (Type type, System.Xml.XmlDictionaryString rootName, System.Collections.Generic.IEnumerable&lt;Type&gt; knownTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.XmlDictionaryString rootName, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.#ctor(System.Type,System.Xml.XmlDictionaryString,System.Collections.Generic.IEnumerable{System.Type})" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.Json.DataContractJsonSerializer : Type * System.Xml.XmlDictionaryString * seq&lt;Type&gt; -&gt; System.Runtime.Serialization.Json.DataContractJsonSerializer" Usage="new System.Runtime.Serialization.Json.DataContractJsonSerializer (type, rootName, knownTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractJsonSerializer(Type ^ type, System::Xml::XmlDictionaryString ^ rootName, System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ knownTypes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -252,6 +280,8 @@
       <MemberSignature Language="C#" Value="public DataContractJsonSerializer (Type type, System.Collections.Generic.IEnumerable&lt;Type&gt; knownTypes, int maxItemsInObjectGraph, bool ignoreExtensionDataObject, System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate, bool alwaysEmitTypeInformation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes, int32 maxItemsInObjectGraph, bool ignoreExtensionDataObject, class System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate, bool alwaysEmitTypeInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.#ctor(System.Type,System.Collections.Generic.IEnumerable{System.Type},System.Int32,System.Boolean,System.Runtime.Serialization.IDataContractSurrogate,System.Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.Json.DataContractJsonSerializer : Type * seq&lt;Type&gt; * int * bool * System.Runtime.Serialization.IDataContractSurrogate * bool -&gt; System.Runtime.Serialization.Json.DataContractJsonSerializer" Usage="new System.Runtime.Serialization.Json.DataContractJsonSerializer (type, knownTypes, maxItemsInObjectGraph, ignoreExtensionDataObject, dataContractSurrogate, alwaysEmitTypeInformation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractJsonSerializer(Type ^ type, System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ knownTypes, int maxItemsInObjectGraph, bool ignoreExtensionDataObject, System::Runtime::Serialization::IDataContractSurrogate ^ dataContractSurrogate, bool alwaysEmitTypeInformation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -283,6 +313,8 @@
       <MemberSignature Language="C#" Value="public DataContractJsonSerializer (Type type, string rootName, System.Collections.Generic.IEnumerable&lt;Type&gt; knownTypes, int maxItemsInObjectGraph, bool ignoreExtensionDataObject, System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate, bool alwaysEmitTypeInformation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string rootName, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes, int32 maxItemsInObjectGraph, bool ignoreExtensionDataObject, class System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate, bool alwaysEmitTypeInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.#ctor(System.Type,System.String,System.Collections.Generic.IEnumerable{System.Type},System.Int32,System.Boolean,System.Runtime.Serialization.IDataContractSurrogate,System.Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.Json.DataContractJsonSerializer : Type * string * seq&lt;Type&gt; * int * bool * System.Runtime.Serialization.IDataContractSurrogate * bool -&gt; System.Runtime.Serialization.Json.DataContractJsonSerializer" Usage="new System.Runtime.Serialization.Json.DataContractJsonSerializer (type, rootName, knownTypes, maxItemsInObjectGraph, ignoreExtensionDataObject, dataContractSurrogate, alwaysEmitTypeInformation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractJsonSerializer(Type ^ type, System::String ^ rootName, System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ knownTypes, int maxItemsInObjectGraph, bool ignoreExtensionDataObject, System::Runtime::Serialization::IDataContractSurrogate ^ dataContractSurrogate, bool alwaysEmitTypeInformation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -316,6 +348,8 @@
       <MemberSignature Language="C#" Value="public DataContractJsonSerializer (Type type, System.Xml.XmlDictionaryString rootName, System.Collections.Generic.IEnumerable&lt;Type&gt; knownTypes, int maxItemsInObjectGraph, bool ignoreExtensionDataObject, System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate, bool alwaysEmitTypeInformation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, class System.Xml.XmlDictionaryString rootName, class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; knownTypes, int32 maxItemsInObjectGraph, bool ignoreExtensionDataObject, class System.Runtime.Serialization.IDataContractSurrogate dataContractSurrogate, bool alwaysEmitTypeInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.#ctor(System.Type,System.Xml.XmlDictionaryString,System.Collections.Generic.IEnumerable{System.Type},System.Int32,System.Boolean,System.Runtime.Serialization.IDataContractSurrogate,System.Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Serialization.Json.DataContractJsonSerializer : Type * System.Xml.XmlDictionaryString * seq&lt;Type&gt; * int * bool * System.Runtime.Serialization.IDataContractSurrogate * bool -&gt; System.Runtime.Serialization.Json.DataContractJsonSerializer" Usage="new System.Runtime.Serialization.Json.DataContractJsonSerializer (type, rootName, knownTypes, maxItemsInObjectGraph, ignoreExtensionDataObject, dataContractSurrogate, alwaysEmitTypeInformation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataContractJsonSerializer(Type ^ type, System::Xml::XmlDictionaryString ^ rootName, System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ knownTypes, int maxItemsInObjectGraph, bool ignoreExtensionDataObject, System::Runtime::Serialization::IDataContractSurrogate ^ dataContractSurrogate, bool alwaysEmitTypeInformation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -349,6 +383,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Serialization.IDataContractSurrogate DataContractSurrogate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.IDataContractSurrogate DataContractSurrogate" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializer.DataContractSurrogate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataContractSurrogate As IDataContractSurrogate" />
+      <MemberSignature Language="F#" Value="member this.DataContractSurrogate : System.Runtime.Serialization.IDataContractSurrogate" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializer.DataContractSurrogate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::IDataContractSurrogate ^ DataContractSurrogate { System::Runtime::Serialization::IDataContractSurrogate ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -375,6 +412,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Serialization.DateTimeFormat DateTimeFormat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.DateTimeFormat DateTimeFormat" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializer.DateTimeFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DateTimeFormat As DateTimeFormat" />
+      <MemberSignature Language="F#" Value="member this.DateTimeFormat : System.Runtime.Serialization.DateTimeFormat" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializer.DateTimeFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::DateTimeFormat ^ DateTimeFormat { System::Runtime::Serialization::DateTimeFormat ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -403,6 +443,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Serialization.EmitTypeInformation EmitTypeInformation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Serialization.EmitTypeInformation EmitTypeInformation" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializer.EmitTypeInformation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EmitTypeInformation As EmitTypeInformation" />
+      <MemberSignature Language="F#" Value="member this.EmitTypeInformation : System.Runtime.Serialization.EmitTypeInformation" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializer.EmitTypeInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::EmitTypeInformation EmitTypeInformation { System::Runtime::Serialization::EmitTypeInformation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -431,6 +474,9 @@
       <MemberSignature Language="C#" Value="public bool IgnoreExtensionDataObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreExtensionDataObject" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializer.IgnoreExtensionDataObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IgnoreExtensionDataObject As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IgnoreExtensionDataObject : bool" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializer.IgnoreExtensionDataObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreExtensionDataObject { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -477,6 +523,9 @@
       <MemberSignature Language="C#" Value="public override bool IsStartObject (System.Xml.XmlDictionaryReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsStartObject(class System.Xml.XmlDictionaryReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.IsStartObject(System.Xml.XmlDictionaryReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsStartObject (reader As XmlDictionaryReader) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsStartObject : System.Xml.XmlDictionaryReader -&gt; bool" Usage="dataContractJsonSerializer.IsStartObject reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsStartObject(System::Xml::XmlDictionaryReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -518,6 +567,9 @@
       <MemberSignature Language="C#" Value="public override bool IsStartObject (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsStartObject(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.IsStartObject(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsStartObject (reader As XmlReader) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsStartObject : System.Xml.XmlReader -&gt; bool" Usage="dataContractJsonSerializer.IsStartObject reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsStartObject(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -557,6 +609,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;Type&gt; KnownTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Type&gt; KnownTypes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializer.KnownTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KnownTypes As ReadOnlyCollection(Of Type)" />
+      <MemberSignature Language="F#" Value="member this.KnownTypes : System.Collections.ObjectModel.ReadOnlyCollection&lt;Type&gt;" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializer.KnownTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;Type ^&gt; ^ KnownTypes { System::Collections::ObjectModel::ReadOnlyCollection&lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -585,6 +640,9 @@
       <MemberSignature Language="C#" Value="public int MaxItemsInObjectGraph { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxItemsInObjectGraph" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializer.MaxItemsInObjectGraph" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxItemsInObjectGraph As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxItemsInObjectGraph : int" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializer.MaxItemsInObjectGraph" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxItemsInObjectGraph { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -632,6 +690,8 @@
       <MemberSignature Language="C#" Value="public override object ReadObject (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadObject(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="override this.ReadObject : System.IO.Stream -&gt; obj" Usage="dataContractJsonSerializer.ReadObject stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ReadObject(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -664,6 +724,9 @@
       <MemberSignature Language="C#" Value="public override object ReadObject (System.Xml.XmlDictionaryReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadObject(class System.Xml.XmlDictionaryReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.Xml.XmlDictionaryReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadObject (reader As XmlDictionaryReader) As Object" />
+      <MemberSignature Language="F#" Value="override this.ReadObject : System.Xml.XmlDictionaryReader -&gt; obj" Usage="dataContractJsonSerializer.ReadObject reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ReadObject(System::Xml::XmlDictionaryReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -695,6 +758,9 @@
       <MemberSignature Language="C#" Value="public override object ReadObject (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadObject(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadObject (reader As XmlReader) As Object" />
+      <MemberSignature Language="F#" Value="override this.ReadObject : System.Xml.XmlReader -&gt; obj" Usage="dataContractJsonSerializer.ReadObject reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ReadObject(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -726,6 +792,9 @@
       <MemberSignature Language="C#" Value="public override object ReadObject (System.Xml.XmlDictionaryReader reader, bool verifyObjectName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadObject(class System.Xml.XmlDictionaryReader reader, bool verifyObjectName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.Xml.XmlDictionaryReader,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadObject (reader As XmlDictionaryReader, verifyObjectName As Boolean) As Object" />
+      <MemberSignature Language="F#" Value="override this.ReadObject : System.Xml.XmlDictionaryReader * bool -&gt; obj" Usage="dataContractJsonSerializer.ReadObject (reader, verifyObjectName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ReadObject(System::Xml::XmlDictionaryReader ^ reader, bool verifyObjectName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -760,6 +829,9 @@
       <MemberSignature Language="C#" Value="public override object ReadObject (System.Xml.XmlReader reader, bool verifyObjectName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ReadObject(class System.Xml.XmlReader reader, bool verifyObjectName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(System.Xml.XmlReader,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadObject (reader As XmlReader, verifyObjectName As Boolean) As Object" />
+      <MemberSignature Language="F#" Value="override this.ReadObject : System.Xml.XmlReader * bool -&gt; obj" Usage="dataContractJsonSerializer.ReadObject (reader, verifyObjectName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ReadObject(System::Xml::XmlReader ^ reader, bool verifyObjectName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -794,6 +866,9 @@
       <MemberSignature Language="C#" Value="public bool SerializeReadOnlyTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SerializeReadOnlyTypes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializer.SerializeReadOnlyTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializeReadOnlyTypes As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SerializeReadOnlyTypes : bool" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializer.SerializeReadOnlyTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SerializeReadOnlyTypes { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -823,6 +898,9 @@
       <MemberSignature Language="C#" Value="public bool UseSimpleDictionaryFormat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseSimpleDictionaryFormat" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Json.DataContractJsonSerializer.UseSimpleDictionaryFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UseSimpleDictionaryFormat As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseSimpleDictionaryFormat : bool" Usage="System.Runtime.Serialization.Json.DataContractJsonSerializer.UseSimpleDictionaryFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseSimpleDictionaryFormat { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -863,6 +941,9 @@
       <MemberSignature Language="C#" Value="public override void WriteEndObject (System.Xml.XmlDictionaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEndObject(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteEndObject(System.Xml.XmlDictionaryWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEndObject (writer As XmlDictionaryWriter)" />
+      <MemberSignature Language="F#" Value="override this.WriteEndObject : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="dataContractJsonSerializer.WriteEndObject writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEndObject(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -900,6 +981,9 @@
       <MemberSignature Language="C#" Value="public override void WriteEndObject (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteEndObject(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteEndObject(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteEndObject (writer As XmlWriter)" />
+      <MemberSignature Language="F#" Value="override this.WriteEndObject : System.Xml.XmlWriter -&gt; unit" Usage="dataContractJsonSerializer.WriteEndObject writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteEndObject(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -940,6 +1024,8 @@
       <MemberSignature Language="C#" Value="public override void WriteObject (System.IO.Stream stream, object graph);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteObject(class System.IO.Stream stream, object graph) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(System.IO.Stream,System.Object)" />
+      <MemberSignature Language="F#" Value="override this.WriteObject : System.IO.Stream * obj -&gt; unit" Usage="dataContractJsonSerializer.WriteObject (stream, graph)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteObject(System::IO::Stream ^ stream, System::Object ^ graph);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
@@ -976,6 +1062,9 @@
       <MemberSignature Language="C#" Value="public override void WriteObject (System.Xml.XmlDictionaryWriter writer, object graph);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteObject(class System.Xml.XmlDictionaryWriter writer, object graph) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(System.Xml.XmlDictionaryWriter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteObject (writer As XmlDictionaryWriter, graph As Object)" />
+      <MemberSignature Language="F#" Value="override this.WriteObject : System.Xml.XmlDictionaryWriter * obj -&gt; unit" Usage="dataContractJsonSerializer.WriteObject (writer, graph)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteObject(System::Xml::XmlDictionaryWriter ^ writer, System::Object ^ graph);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -1011,6 +1100,9 @@
       <MemberSignature Language="C#" Value="public override void WriteObject (System.Xml.XmlWriter writer, object graph);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteObject(class System.Xml.XmlWriter writer, object graph) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObject(System.Xml.XmlWriter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteObject (writer As XmlWriter, graph As Object)" />
+      <MemberSignature Language="F#" Value="override this.WriteObject : System.Xml.XmlWriter * obj -&gt; unit" Usage="dataContractJsonSerializer.WriteObject (writer, graph)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteObject(System::Xml::XmlWriter ^ writer, System::Object ^ graph);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -1057,6 +1149,9 @@
       <MemberSignature Language="C#" Value="public override void WriteObjectContent (System.Xml.XmlDictionaryWriter writer, object graph);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteObjectContent(class System.Xml.XmlDictionaryWriter writer, object graph) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObjectContent(System.Xml.XmlDictionaryWriter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteObjectContent (writer As XmlDictionaryWriter, graph As Object)" />
+      <MemberSignature Language="F#" Value="override this.WriteObjectContent : System.Xml.XmlDictionaryWriter * obj -&gt; unit" Usage="dataContractJsonSerializer.WriteObjectContent (writer, graph)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteObjectContent(System::Xml::XmlDictionaryWriter ^ writer, System::Object ^ graph);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -1092,6 +1187,9 @@
       <MemberSignature Language="C#" Value="public override void WriteObjectContent (System.Xml.XmlWriter writer, object graph);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteObjectContent(class System.Xml.XmlWriter writer, object graph) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteObjectContent(System.Xml.XmlWriter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteObjectContent (writer As XmlWriter, graph As Object)" />
+      <MemberSignature Language="F#" Value="override this.WriteObjectContent : System.Xml.XmlWriter * obj -&gt; unit" Usage="dataContractJsonSerializer.WriteObjectContent (writer, graph)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteObjectContent(System::Xml::XmlWriter ^ writer, System::Object ^ graph);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -1138,6 +1236,9 @@
       <MemberSignature Language="C#" Value="public override void WriteStartObject (System.Xml.XmlDictionaryWriter writer, object graph);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteStartObject(class System.Xml.XmlDictionaryWriter writer, object graph) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteStartObject(System.Xml.XmlDictionaryWriter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartObject (writer As XmlDictionaryWriter, graph As Object)" />
+      <MemberSignature Language="F#" Value="override this.WriteStartObject : System.Xml.XmlDictionaryWriter * obj -&gt; unit" Usage="dataContractJsonSerializer.WriteStartObject (writer, graph)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartObject(System::Xml::XmlDictionaryWriter ^ writer, System::Object ^ graph);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -1170,6 +1271,9 @@
       <MemberSignature Language="C#" Value="public override void WriteStartObject (System.Xml.XmlWriter writer, object graph);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteStartObject(class System.Xml.XmlWriter writer, object graph) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Json.DataContractJsonSerializer.WriteStartObject(System.Xml.XmlWriter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteStartObject (writer As XmlWriter, graph As Object)" />
+      <MemberSignature Language="F#" Value="override this.WriteStartObject : System.Xml.XmlWriter * obj -&gt; unit" Usage="dataContractJsonSerializer.WriteStartObject (writer, graph)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteStartObject(System::Xml::XmlWriter ^ writer, System::Object ^ graph);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -1198,16 +1302,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization.Json</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.4.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <exception cref="T:System.Runtime.Serialization.InvalidDataContractException">At least one of the types being serialized or deserialized does not conform to data contract rules. For example, the <see cref="T:System.Runtime.Serialization.DataContractAttribute" /> attribute has not been applied to the type.</exception>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Serialization.Json.DataContractJsonSerializer" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

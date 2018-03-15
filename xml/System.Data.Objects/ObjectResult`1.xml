@@ -1,7 +1,10 @@
-<Type Name="ObjectResult&lt;T&gt;" FullName="System.Data.Objects.ObjectResult&lt;T&gt;">
+﻿<Type Name="ObjectResult&lt;T&gt;" FullName="System.Data.Objects.ObjectResult&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class ObjectResult&lt;T&gt; : System.Data.Objects.ObjectResult, System.Collections.Generic.IEnumerable&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObjectResult`1&lt;T&gt; extends System.Data.Objects.ObjectResult implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectResult`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectResult(Of T)&#xA;Inherits ObjectResult&#xA;Implements IEnumerable(Of T)" />
+  <TypeSignature Language="F#" Value="type ObjectResult&lt;'T&gt; = class&#xA;    inherit ObjectResult&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ObjectResult sealed : System::Data::Objects::ObjectResult, System::Collections::Generic::IEnumerable&lt;T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="public override void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectResult`1.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="override this.Dispose : unit -&gt; unit" Usage="objectResult.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -77,6 +83,9 @@
       <MemberSignature Language="C#" Value="public override Type ElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ElementType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectResult`1.ElementType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ElementType As Type" />
+      <MemberSignature Language="F#" Value="member this.ElementType : Type" Usage="System.Data.Objects.ObjectResult&lt;'T&gt;.ElementType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -95,7 +104,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;T&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectResult`1.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'T&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;'T&gt;" Usage="objectResult.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;T&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

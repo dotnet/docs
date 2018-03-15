@@ -1,7 +1,10 @@
-<Type Name="DateTimeSerializationSection" FullName="System.Xml.Serialization.Configuration.DateTimeSerializationSection">
+﻿<Type Name="DateTimeSerializationSection" FullName="System.Xml.Serialization.Configuration.DateTimeSerializationSection">
   <TypeSignature Language="C#" Value="public sealed class DateTimeSerializationSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DateTimeSerializationSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.DateTimeSerializationSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DateTimeSerializationSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type DateTimeSerializationSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DateTimeSerializationSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public DateTimeSerializationSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.Configuration.DateTimeSerializationSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTimeSerializationSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -43,6 +48,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Serialization.Configuration.DateTimeSerializationSection/DateTimeSerializationMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.DateTimeSerializationSection.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As DateTimeSerializationSection.DateTimeSerializationMode" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode with get, set" Usage="System.Xml.Serialization.Configuration.DateTimeSerializationSection.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::Configuration::DateTimeSerializationSection::DateTimeSerializationMode Mode { System::Xml::Serialization::Configuration::DateTimeSerializationSection::DateTimeSerializationMode get(); void set(System::Xml::Serialization::Configuration::DateTimeSerializationSection::DateTimeSerializationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -74,6 +82,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.Configuration.DateTimeSerializationSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Xml.Serialization.Configuration.DateTimeSerializationSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

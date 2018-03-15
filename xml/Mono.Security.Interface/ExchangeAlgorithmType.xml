@@ -1,7 +1,10 @@
-<Type Name="ExchangeAlgorithmType" FullName="Mono.Security.Interface.ExchangeAlgorithmType">
+﻿<Type Name="ExchangeAlgorithmType" FullName="Mono.Security.Interface.ExchangeAlgorithmType">
   <TypeSignature Language="C#" Value="public enum ExchangeAlgorithmType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExchangeAlgorithmType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.ExchangeAlgorithmType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ExchangeAlgorithmType" />
+  <TypeSignature Language="F#" Value="type ExchangeAlgorithmType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ExchangeAlgorithmType" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Dhe" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.ExchangeAlgorithmType Dhe = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.ExchangeAlgorithmType.Dhe" />
+      <MemberSignature Language="VB.NET" Value="Dhe" />
+      <MemberSignature Language="F#" Value="Dhe = 1" Usage="Mono.Security.Interface.ExchangeAlgorithmType.Dhe" />
+      <MemberSignature Language="C++ CLI" Value="Dhe" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.ExchangeAlgorithmType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="EcDhe" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.ExchangeAlgorithmType EcDhe = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.ExchangeAlgorithmType.EcDhe" />
+      <MemberSignature Language="VB.NET" Value="EcDhe" />
+      <MemberSignature Language="F#" Value="EcDhe = 3" Usage="Mono.Security.Interface.ExchangeAlgorithmType.EcDhe" />
+      <MemberSignature Language="C++ CLI" Value="EcDhe" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.ExchangeAlgorithmType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.ExchangeAlgorithmType None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.ExchangeAlgorithmType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Mono.Security.Interface.ExchangeAlgorithmType.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.ExchangeAlgorithmType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="Rsa" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.ExchangeAlgorithmType Rsa = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.ExchangeAlgorithmType.Rsa" />
+      <MemberSignature Language="VB.NET" Value="Rsa" />
+      <MemberSignature Language="F#" Value="Rsa = 2" Usage="Mono.Security.Interface.ExchangeAlgorithmType.Rsa" />
+      <MemberSignature Language="C++ CLI" Value="Rsa" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.ExchangeAlgorithmType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>

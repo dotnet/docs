@@ -1,7 +1,10 @@
-<Type Name="FormMethod" FullName="System.Web.UI.MobileControls.FormMethod">
+﻿<Type Name="FormMethod" FullName="System.Web.UI.MobileControls.FormMethod">
   <TypeSignature Language="C#" Value="public enum FormMethod" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormMethod extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.FormMethod" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FormMethod" />
+  <TypeSignature Language="F#" Value="type FormMethod = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FormMethod" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="Get" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.FormMethod Get = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.FormMethod.Get" />
+      <MemberSignature Language="VB.NET" Value="Get" />
+      <MemberSignature Language="F#" Value="Get = 0" Usage="System.Web.UI.MobileControls.FormMethod.Get" />
+      <MemberSignature Language="C++ CLI" Value="Get" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -38,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.FormMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Uses a GET request to submit a form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
@@ -46,6 +53,9 @@
       <MemberSignature Language="C#" Value="Post" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.FormMethod Post = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.FormMethod.Post" />
+      <MemberSignature Language="VB.NET" Value="Post" />
+      <MemberSignature Language="F#" Value="Post = 1" Usage="System.Web.UI.MobileControls.FormMethod.Post" />
+      <MemberSignature Language="C++ CLI" Value="Post" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -54,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.FormMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Uses a POST request to submit a form. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>

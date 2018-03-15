@@ -1,7 +1,10 @@
-<Type Name="XamlNodeType" FullName="System.Xaml.XamlNodeType">
+﻿<Type Name="XamlNodeType" FullName="System.Xaml.XamlNodeType">
   <TypeSignature Language="C#" Value="public enum XamlNodeType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XamlNodeType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlNodeType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XamlNodeType" />
+  <TypeSignature Language="F#" Value="type XamlNodeType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class XamlNodeType" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="EndMember" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType EndMember = unsigned int8(5)" />
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.EndMember" />
+      <MemberSignature Language="VB.NET" Value="EndMember" />
+      <MemberSignature Language="F#" Value="EndMember = 5" Usage="System.Xaml.XamlNodeType.EndMember" />
+      <MemberSignature Language="C++ CLI" Value="EndMember" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -28,6 +34,7 @@
       <ReturnValue>
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The reader is at the end of a member node.</summary>
       </Docs>
@@ -36,6 +43,9 @@
       <MemberSignature Language="C#" Value="EndObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType EndObject = unsigned int8(3)" />
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.EndObject" />
+      <MemberSignature Language="VB.NET" Value="EndObject" />
+      <MemberSignature Language="F#" Value="EndObject = 3" Usage="System.Xaml.XamlNodeType.EndObject" />
+      <MemberSignature Language="C++ CLI" Value="EndObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -44,6 +54,7 @@
       <ReturnValue>
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The reader is at the end of an object node.</summary>
       </Docs>
@@ -52,6 +63,9 @@
       <MemberSignature Language="C#" Value="GetObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType GetObject = unsigned int8(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.GetObject" />
+      <MemberSignature Language="VB.NET" Value="GetObject" />
+      <MemberSignature Language="F#" Value="GetObject = 2" Usage="System.Xaml.XamlNodeType.GetObject" />
+      <MemberSignature Language="C++ CLI" Value="GetObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -60,6 +74,7 @@
       <ReturnValue>
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The reader is within an object node and writing a default or implicit value, instead of being a specified object value.</summary>
       </Docs>
@@ -68,6 +83,9 @@
       <MemberSignature Language="C#" Value="NamespaceDeclaration" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType NamespaceDeclaration = unsigned int8(7)" />
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.NamespaceDeclaration" />
+      <MemberSignature Language="VB.NET" Value="NamespaceDeclaration" />
+      <MemberSignature Language="F#" Value="NamespaceDeclaration = 7" Usage="System.Xaml.XamlNodeType.NamespaceDeclaration" />
+      <MemberSignature Language="C++ CLI" Value="NamespaceDeclaration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -76,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The reader is within an XML namespace declaration.</summary>
       </Docs>
@@ -84,6 +103,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType None = unsigned int8(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Xaml.XamlNodeType.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -92,6 +114,7 @@
       <ReturnValue>
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The reader is not positioned at a true node (for example, the reader might be at end-of-file).</summary>
       </Docs>
@@ -100,6 +123,9 @@
       <MemberSignature Language="C#" Value="StartMember" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType StartMember = unsigned int8(4)" />
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.StartMember" />
+      <MemberSignature Language="VB.NET" Value="StartMember" />
+      <MemberSignature Language="F#" Value="StartMember = 4" Usage="System.Xaml.XamlNodeType.StartMember" />
+      <MemberSignature Language="C++ CLI" Value="StartMember" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -108,6 +134,7 @@
       <ReturnValue>
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The reader is at the start of a member node.</summary>
       </Docs>
@@ -116,6 +143,9 @@
       <MemberSignature Language="C#" Value="StartObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType StartObject = unsigned int8(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.StartObject" />
+      <MemberSignature Language="VB.NET" Value="StartObject" />
+      <MemberSignature Language="F#" Value="StartObject = 1" Usage="System.Xaml.XamlNodeType.StartObject" />
+      <MemberSignature Language="C++ CLI" Value="StartObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -124,6 +154,7 @@
       <ReturnValue>
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The reader is at the start of an object node.</summary>
       </Docs>
@@ -132,6 +163,9 @@
       <MemberSignature Language="C#" Value="Value" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xaml.XamlNodeType Value = unsigned int8(6)" />
       <MemberSignature Language="DocId" Value="F:System.Xaml.XamlNodeType.Value" />
+      <MemberSignature Language="VB.NET" Value="Value" />
+      <MemberSignature Language="F#" Value="Value = 6" Usage="System.Xaml.XamlNodeType.Value" />
+      <MemberSignature Language="C++ CLI" Value="Value" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -140,6 +174,7 @@
       <ReturnValue>
         <ReturnType>System.Xaml.XamlNodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The reader is within a node and processing a value.</summary>
       </Docs>

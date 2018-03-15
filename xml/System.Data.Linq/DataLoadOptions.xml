@@ -1,7 +1,10 @@
-<Type Name="DataLoadOptions" FullName="System.Data.Linq.DataLoadOptions">
+﻿<Type Name="DataLoadOptions" FullName="System.Data.Linq.DataLoadOptions">
   <TypeSignature Language="C#" Value="public sealed class DataLoadOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataLoadOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.DataLoadOptions" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataLoadOptions" />
+  <TypeSignature Language="F#" Value="type DataLoadOptions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataLoadOptions sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +88,8 @@
       <MemberSignature Language="C#" Value="public DataLoadOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataLoadOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataLoadOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -100,6 +105,9 @@
       <MemberSignature Language="C#" Value="public void AssociateWith (System.Linq.Expressions.LambdaExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AssociateWith(class System.Linq.Expressions.LambdaExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataLoadOptions.AssociateWith(System.Linq.Expressions.LambdaExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AssociateWith (expression As LambdaExpression)" />
+      <MemberSignature Language="F#" Value="member this.AssociateWith : System.Linq.Expressions.LambdaExpression -&gt; unit" Usage="dataLoadOptions.AssociateWith expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssociateWith(System::Linq::Expressions::LambdaExpression ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -150,6 +158,9 @@
       <MemberSignature Language="C#" Value="public void AssociateWith&lt;T&gt; (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AssociateWith&lt;T&gt;(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!!T, object&gt;&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataLoadOptions.AssociateWith``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AssociateWith(Of T) (expression As Expression(Of Func(Of T, Object)))" />
+      <MemberSignature Language="F#" Value="member this.AssociateWith : System.Linq.Expressions.Expression&lt;Func&lt;'T, obj&gt;&gt; -&gt; unit" Usage="dataLoadOptions.AssociateWith expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void AssociateWith(System::Linq::Expressions::Expression&lt;Func&lt;T, System::Object ^&gt; ^&gt; ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -208,6 +219,8 @@
       <MemberSignature Language="C#" Value="public bool GetAssociationCriteria (System.Reflection.MemberInfo memberInfo, out System.Linq.Expressions.LambdaExpression associationCriteria);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetAssociationCriteria(class System.Reflection.MemberInfo memberInfo, [out] class System.Linq.Expressions.LambdaExpression&amp; associationCriteria) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataLoadOptions.GetAssociationCriteria(System.Reflection.MemberInfo,System.Linq.Expressions.LambdaExpression@)" />
+      <MemberSignature Language="F#" Value="member this.GetAssociationCriteria : System.Reflection.MemberInfo *  -&gt; bool" Usage="dataLoadOptions.GetAssociationCriteria (memberInfo, associationCriteria)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetAssociationCriteria(System::Reflection::MemberInfo ^ memberInfo, [Runtime::InteropServices::Out] System::Linq::Expressions::LambdaExpression ^ % associationCriteria);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -232,6 +245,8 @@
       <MemberSignature Language="C#" Value="public bool IsImmediate (System.Reflection.MemberInfo memberInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsImmediate(class System.Reflection.MemberInfo memberInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataLoadOptions.IsImmediate(System.Reflection.MemberInfo)" />
+      <MemberSignature Language="F#" Value="member this.IsImmediate : System.Reflection.MemberInfo -&gt; bool" Usage="dataLoadOptions.IsImmediate memberInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsImmediate(System::Reflection::MemberInfo ^ memberInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -254,6 +269,9 @@
       <MemberSignature Language="C#" Value="public void LoadWith (System.Linq.Expressions.LambdaExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadWith(class System.Linq.Expressions.LambdaExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataLoadOptions.LoadWith(System.Linq.Expressions.LambdaExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadWith (expression As LambdaExpression)" />
+      <MemberSignature Language="F#" Value="member this.LoadWith : System.Linq.Expressions.LambdaExpression -&gt; unit" Usage="dataLoadOptions.LoadWith expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadWith(System::Linq::Expressions::LambdaExpression ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -288,6 +306,9 @@
       <MemberSignature Language="C#" Value="public void LoadWith&lt;T&gt; (System.Linq.Expressions.Expression&lt;Func&lt;T,object&gt;&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadWith&lt;T&gt;(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!!T, object&gt;&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DataLoadOptions.LoadWith``1(System.Linq.Expressions.Expression{System.Func{``0,System.Object}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadWith(Of T) (expression As Expression(Of Func(Of T, Object)))" />
+      <MemberSignature Language="F#" Value="member this.LoadWith : System.Linq.Expressions.Expression&lt;Func&lt;'T, obj&gt;&gt; -&gt; unit" Usage="dataLoadOptions.LoadWith expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void LoadWith(System::Linq::Expressions::Expression&lt;Func&lt;T, System::Object ^&gt; ^&gt; ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

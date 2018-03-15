@@ -1,7 +1,10 @@
-<Type Name="XmlSchema" FullName="System.Xml.Schema.XmlSchema">
+﻿<Type Name="XmlSchema" FullName="System.Xml.Schema.XmlSchema">
   <TypeSignature Language="C#" Value="public class XmlSchema : System.Xml.Schema.XmlSchemaObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchema extends System.Xml.Schema.XmlSchemaObject" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchema" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchema&#xA;Inherits XmlSchemaObject" />
+  <TypeSignature Language="F#" Value="type XmlSchema = class&#xA;    inherit XmlSchemaObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchema : System::Xml::Schema::XmlSchemaObject" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +64,8 @@
       <MemberSignature Language="C#" Value="public XmlSchema ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchema.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchema();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -85,6 +90,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaForm AttributeFormDefault { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaForm AttributeFormDefault" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.AttributeFormDefault" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttributeFormDefault As XmlSchemaForm" />
+      <MemberSignature Language="F#" Value="member this.AttributeFormDefault : System.Xml.Schema.XmlSchemaForm with get, set" Usage="System.Xml.Schema.XmlSchema.AttributeFormDefault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaForm AttributeFormDefault { System::Xml::Schema::XmlSchemaForm get(); void set(System::Xml::Schema::XmlSchemaForm value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -135,6 +143,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectTable AttributeGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectTable AttributeGroups" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.AttributeGroups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributeGroups As XmlSchemaObjectTable" />
+      <MemberSignature Language="F#" Value="member this.AttributeGroups : System.Xml.Schema.XmlSchemaObjectTable" Usage="System.Xml.Schema.XmlSchema.AttributeGroups" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectTable ^ AttributeGroups { System::Xml::Schema::XmlSchemaObjectTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -167,6 +178,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectTable Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectTable Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As XmlSchemaObjectTable" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Xml.Schema.XmlSchemaObjectTable" Usage="System.Xml.Schema.XmlSchema.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectTable ^ Attributes { System::Xml::Schema::XmlSchemaObjectTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -199,6 +213,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaDerivationMethod BlockDefault { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaDerivationMethod BlockDefault" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.BlockDefault" />
+      <MemberSignature Language="VB.NET" Value="Public Property BlockDefault As XmlSchemaDerivationMethod" />
+      <MemberSignature Language="F#" Value="member this.BlockDefault : System.Xml.Schema.XmlSchemaDerivationMethod with get, set" Usage="System.Xml.Schema.XmlSchema.BlockDefault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaDerivationMethod BlockDefault { System::Xml::Schema::XmlSchemaDerivationMethod get(); void set(System::Xml::Schema::XmlSchemaDerivationMethod value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -273,6 +290,8 @@
       <MemberSignature Language="C#" Value="public void Compile (System.Xml.Schema.ValidationEventHandler validationEventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Compile(class System.Xml.Schema.ValidationEventHandler validationEventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchema.Compile(System.Xml.Schema.ValidationEventHandler)" />
+      <MemberSignature Language="F#" Value="member this.Compile : System.Xml.Schema.ValidationEventHandler -&gt; unit" Usage="xmlSchema.Compile validationEventHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Compile(System::Xml::Schema::ValidationEventHandler ^ validationEventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -317,6 +336,8 @@
       <MemberSignature Language="C#" Value="public void Compile (System.Xml.Schema.ValidationEventHandler validationEventHandler, System.Xml.XmlResolver resolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Compile(class System.Xml.Schema.ValidationEventHandler validationEventHandler, class System.Xml.XmlResolver resolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchema.Compile(System.Xml.Schema.ValidationEventHandler,System.Xml.XmlResolver)" />
+      <MemberSignature Language="F#" Value="member this.Compile : System.Xml.Schema.ValidationEventHandler * System.Xml.XmlResolver -&gt; unit" Usage="xmlSchema.Compile (validationEventHandler, resolver)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Compile(System::Xml::Schema::ValidationEventHandler ^ validationEventHandler, System::Xml::XmlResolver ^ resolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -367,6 +388,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaForm ElementFormDefault { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaForm ElementFormDefault" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.ElementFormDefault" />
+      <MemberSignature Language="VB.NET" Value="Public Property ElementFormDefault As XmlSchemaForm" />
+      <MemberSignature Language="F#" Value="member this.ElementFormDefault : System.Xml.Schema.XmlSchemaForm with get, set" Usage="System.Xml.Schema.XmlSchema.ElementFormDefault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaForm ElementFormDefault { System::Xml::Schema::XmlSchemaForm get(); void set(System::Xml::Schema::XmlSchemaForm value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -417,6 +441,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectTable Elements { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectTable Elements" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.Elements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Elements As XmlSchemaObjectTable" />
+      <MemberSignature Language="F#" Value="member this.Elements : System.Xml.Schema.XmlSchemaObjectTable" Usage="System.Xml.Schema.XmlSchema.Elements" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectTable ^ Elements { System::Xml::Schema::XmlSchemaObjectTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -449,6 +476,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaDerivationMethod FinalDefault { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaDerivationMethod FinalDefault" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.FinalDefault" />
+      <MemberSignature Language="VB.NET" Value="Public Property FinalDefault As XmlSchemaDerivationMethod" />
+      <MemberSignature Language="F#" Value="member this.FinalDefault : System.Xml.Schema.XmlSchemaDerivationMethod with get, set" Usage="System.Xml.Schema.XmlSchema.FinalDefault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaDerivationMethod FinalDefault { System::Xml::Schema::XmlSchemaDerivationMethod get(); void set(System::Xml::Schema::XmlSchemaDerivationMethod value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -503,6 +533,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectTable Groups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectTable Groups" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.Groups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Groups As XmlSchemaObjectTable" />
+      <MemberSignature Language="F#" Value="member this.Groups : System.Xml.Schema.XmlSchemaObjectTable" Usage="System.Xml.Schema.XmlSchema.Groups" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectTable ^ Groups { System::Xml::Schema::XmlSchemaObjectTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -535,6 +568,9 @@
       <MemberSignature Language="C#" Value="public string Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="System.Xml.Schema.XmlSchema.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -567,6 +603,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectCollection Includes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectCollection Includes" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.Includes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Includes As XmlSchemaObjectCollection" />
+      <MemberSignature Language="F#" Value="member this.Includes : System.Xml.Schema.XmlSchemaObjectCollection" Usage="System.Xml.Schema.XmlSchema.Includes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectCollection ^ Includes { System::Xml::Schema::XmlSchemaObjectCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -634,6 +673,9 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public const string InstanceNamespace;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string InstanceNamespace" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchema.InstanceNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Const InstanceNamespace As String " />
+      <MemberSignature Language="F#" Value="val mutable InstanceNamespace : string" Usage="System.Xml.Schema.XmlSchema.InstanceNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ InstanceNamespace;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -660,6 +702,9 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public bool IsCompiled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCompiled" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.IsCompiled" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompiled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCompiled : bool" Usage="System.Xml.Schema.XmlSchema.IsCompiled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompiled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -693,6 +738,9 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectCollection Items" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As XmlSchemaObjectCollection" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Xml.Schema.XmlSchemaObjectCollection" Usage="System.Xml.Schema.XmlSchema.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectCollection ^ Items { System::Xml::Schema::XmlSchemaObjectCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -753,6 +801,9 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public const string Namespace;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Namespace" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchema.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Const Namespace As String " />
+      <MemberSignature Language="F#" Value="val mutable Namespace : string" Usage="System.Xml.Schema.XmlSchema.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Namespace;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -779,6 +830,9 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectTable Notations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectTable Notations" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.Notations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Notations As XmlSchemaObjectTable" />
+      <MemberSignature Language="F#" Value="member this.Notations : System.Xml.Schema.XmlSchemaObjectTable" Usage="System.Xml.Schema.XmlSchema.Notations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectTable ^ Notations { System::Xml::Schema::XmlSchemaObjectTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -807,10 +861,22 @@ schema.Includes.Add(include);
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads an XML Schema.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlSchema Read (System.IO.Stream stream, System.Xml.Schema.ValidationEventHandler validationEventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.XmlSchema Read(class System.IO.Stream stream, class System.Xml.Schema.ValidationEventHandler validationEventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchema.Read(System.IO.Stream,System.Xml.Schema.ValidationEventHandler)" />
+      <MemberSignature Language="F#" Value="static member Read : System.IO.Stream * System.Xml.Schema.ValidationEventHandler -&gt; System.Xml.Schema.XmlSchema" Usage="System.Xml.Schema.XmlSchema.Read (stream, validationEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlSchema ^ Read(System::IO::Stream ^ stream, System::Xml::Schema::ValidationEventHandler ^ validationEventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -845,6 +911,8 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlSchema Read (System.IO.TextReader reader, System.Xml.Schema.ValidationEventHandler validationEventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.XmlSchema Read(class System.IO.TextReader reader, class System.Xml.Schema.ValidationEventHandler validationEventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchema.Read(System.IO.TextReader,System.Xml.Schema.ValidationEventHandler)" />
+      <MemberSignature Language="F#" Value="static member Read : System.IO.TextReader * System.Xml.Schema.ValidationEventHandler -&gt; System.Xml.Schema.XmlSchema" Usage="System.Xml.Schema.XmlSchema.Read (reader, validationEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlSchema ^ Read(System::IO::TextReader ^ reader, System::Xml::Schema::ValidationEventHandler ^ validationEventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -879,6 +947,8 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlSchema Read (System.Xml.XmlReader reader, System.Xml.Schema.ValidationEventHandler validationEventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Schema.XmlSchema Read(class System.Xml.XmlReader reader, class System.Xml.Schema.ValidationEventHandler validationEventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchema.Read(System.Xml.XmlReader,System.Xml.Schema.ValidationEventHandler)" />
+      <MemberSignature Language="F#" Value="static member Read : System.Xml.XmlReader * System.Xml.Schema.ValidationEventHandler -&gt; System.Xml.Schema.XmlSchema" Usage="System.Xml.Schema.XmlSchema.Read (reader, validationEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Schema::XmlSchema ^ Read(System::Xml::XmlReader ^ reader, System::Xml::Schema::ValidationEventHandler ^ validationEventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -913,6 +983,9 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectTable SchemaTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectTable SchemaTypes" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.SchemaTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaTypes As XmlSchemaObjectTable" />
+      <MemberSignature Language="F#" Value="member this.SchemaTypes : System.Xml.Schema.XmlSchemaObjectTable" Usage="System.Xml.Schema.XmlSchema.SchemaTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectTable ^ SchemaTypes { System::Xml::Schema::XmlSchemaObjectTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -945,6 +1018,9 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public string TargetNamespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.TargetNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetNamespace As String" />
+      <MemberSignature Language="F#" Value="member this.TargetNamespace : string with get, set" Usage="System.Xml.Schema.XmlSchema.TargetNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetNamespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -984,6 +1060,9 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public System.Xml.XmlAttribute[] UnhandledAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlAttribute[] UnhandledAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.UnhandledAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnhandledAttributes As XmlAttribute()" />
+      <MemberSignature Language="F#" Value="member this.UnhandledAttributes : System.Xml.XmlAttribute[] with get, set" Usage="System.Xml.Schema.XmlSchema.UnhandledAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ UnhandledAttributes { cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ get(); void set(cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1016,6 +1095,9 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public string Version { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Version" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchema.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
+      <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="System.Xml.Schema.XmlSchema.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1044,10 +1126,22 @@ schema.Includes.Add(include);
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes out an XML Schema.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public void Write (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchema.Write(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="member this.Write : System.IO.Stream -&gt; unit" Usage="xmlSchema.Write stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1078,6 +1172,9 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public void Write (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchema.Write(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (writer As TextWriter)" />
+      <MemberSignature Language="F#" Value="member this.Write : System.IO.TextWriter -&gt; unit" Usage="xmlSchema.Write writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::IO::TextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1108,6 +1205,9 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public void Write (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchema.Write(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (writer As XmlWriter)" />
+      <MemberSignature Language="F#" Value="member this.Write : System.Xml.XmlWriter -&gt; unit" Usage="xmlSchema.Write writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1139,6 +1239,8 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public void Write (System.IO.Stream stream, System.Xml.XmlNamespaceManager namespaceManager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(class System.IO.Stream stream, class System.Xml.XmlNamespaceManager namespaceManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchema.Write(System.IO.Stream,System.Xml.XmlNamespaceManager)" />
+      <MemberSignature Language="F#" Value="member this.Write : System.IO.Stream * System.Xml.XmlNamespaceManager -&gt; unit" Usage="xmlSchema.Write (stream, namespaceManager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::IO::Stream ^ stream, System::Xml::XmlNamespaceManager ^ namespaceManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1180,6 +1282,9 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public void Write (System.IO.TextWriter writer, System.Xml.XmlNamespaceManager namespaceManager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(class System.IO.TextWriter writer, class System.Xml.XmlNamespaceManager namespaceManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchema.Write(System.IO.TextWriter,System.Xml.XmlNamespaceManager)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (writer As TextWriter, namespaceManager As XmlNamespaceManager)" />
+      <MemberSignature Language="F#" Value="member this.Write : System.IO.TextWriter * System.Xml.XmlNamespaceManager -&gt; unit" Usage="xmlSchema.Write (writer, namespaceManager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::IO::TextWriter ^ writer, System::Xml::XmlNamespaceManager ^ namespaceManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1221,6 +1326,9 @@ schema.Includes.Add(include);
       <MemberSignature Language="C#" Value="public void Write (System.Xml.XmlWriter writer, System.Xml.XmlNamespaceManager namespaceManager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(class System.Xml.XmlWriter writer, class System.Xml.XmlNamespaceManager namespaceManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchema.Write(System.Xml.XmlWriter,System.Xml.XmlNamespaceManager)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (writer As XmlWriter, namespaceManager As XmlNamespaceManager)" />
+      <MemberSignature Language="F#" Value="member this.Write : System.Xml.XmlWriter * System.Xml.XmlNamespaceManager -&gt; unit" Usage="xmlSchema.Write (writer, namespaceManager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::Xml::XmlWriter ^ writer, System::Xml::XmlNamespaceManager ^ namespaceManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1258,25 +1366,5 @@ schema.Includes.Add(include);
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes out an XML Schema.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Read">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads an XML Schema.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

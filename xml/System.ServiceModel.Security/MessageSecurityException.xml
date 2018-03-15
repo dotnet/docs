@@ -1,7 +1,10 @@
-<Type Name="MessageSecurityException" FullName="System.ServiceModel.Security.MessageSecurityException">
+﻿<Type Name="MessageSecurityException" FullName="System.ServiceModel.Security.MessageSecurityException">
   <TypeSignature Language="C#" Value="public class MessageSecurityException : System.ServiceModel.CommunicationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit MessageSecurityException extends System.ServiceModel.CommunicationException" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.MessageSecurityException" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageSecurityException&#xA;Inherits CommunicationException" />
+  <TypeSignature Language="F#" Value="type MessageSecurityException = class&#xA;    inherit CommunicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageSecurityException : System::ServiceModel::CommunicationException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,10 +32,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.MessageSecurityException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MessageSecurityException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessageSecurityException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageSecurityException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -49,6 +64,9 @@
       <MemberSignature Language="C#" Value="public MessageSecurityException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessageSecurityException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.MessageSecurityException : string -&gt; System.ServiceModel.Security.MessageSecurityException" Usage="new System.ServiceModel.Security.MessageSecurityException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageSecurityException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -74,6 +92,9 @@
       <MemberSignature Language="C#" Value="protected MessageSecurityException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessageSecurityException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.MessageSecurityException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.Security.MessageSecurityException" Usage="new System.ServiceModel.Security.MessageSecurityException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MessageSecurityException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -99,6 +120,9 @@
       <MemberSignature Language="C#" Value="public MessageSecurityException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessageSecurityException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.MessageSecurityException : string * Exception -&gt; System.ServiceModel.Security.MessageSecurityException" Usage="new System.ServiceModel.Security.MessageSecurityException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageSecurityException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -126,6 +150,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext ctx);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext ctx) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.MessageSecurityException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, ctx As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="messageSecurityException.GetObjectData (info, ctx)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext ctx);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,15 +173,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.MessageSecurityException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

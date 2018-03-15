@@ -1,7 +1,10 @@
-<Type Name="ElapsedEventArgs" FullName="System.Timers.ElapsedEventArgs">
+﻿<Type Name="ElapsedEventArgs" FullName="System.Timers.ElapsedEventArgs">
   <TypeSignature Language="C#" Value="public class ElapsedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ElapsedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Timers.ElapsedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ElapsedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type ElapsedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ElapsedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="public DateTime SignalTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime SignalTime" />
       <MemberSignature Language="DocId" Value="P:System.Timers.ElapsedEventArgs.SignalTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignalTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.SignalTime : DateTime" Usage="System.Timers.ElapsedEventArgs.SignalTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime SignalTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

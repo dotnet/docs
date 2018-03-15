@@ -1,7 +1,10 @@
-<Type Name="Docking" FullName="System.Web.UI.DataVisualization.Charting.Docking">
+﻿<Type Name="Docking" FullName="System.Web.UI.DataVisualization.Charting.Docking">
   <TypeSignature Language="C#" Value="public enum Docking" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Docking extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.Docking" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Docking" />
+  <TypeSignature Language="F#" Value="type Docking = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class Docking" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="Bottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.Docking Bottom = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.Docking.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 2" Usage="System.Web.UI.DataVisualization.Charting.Docking.Bottom" />
+      <MemberSignature Language="C++ CLI" Value="Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.Docking</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Docked to the bottom of either the chart image or a <see cref="T:System.Web.UI.DataVisualization.Charting.ChartArea" /> object.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.Docking Left = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.Docking.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 3" Usage="System.Web.UI.DataVisualization.Charting.Docking.Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -51,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.Docking</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Docked to the left of either the chart image or a <see cref="T:System.Web.UI.DataVisualization.Charting.ChartArea" /> object.</summary>
       </Docs>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.Docking Right = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.Docking.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 1" Usage="System.Web.UI.DataVisualization.Charting.Docking.Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.Docking</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Docked to the right of either the chart image or a <see cref="T:System.Web.UI.DataVisualization.Charting.ChartArea" /> object.</summary>
       </Docs>
@@ -75,6 +90,9 @@
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.Docking Top = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.Docking.Top" />
+      <MemberSignature Language="VB.NET" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 0" Usage="System.Web.UI.DataVisualization.Charting.Docking.Top" />
+      <MemberSignature Language="C++ CLI" Value="Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -83,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.Docking</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Docked to the top of either the chart image or a <see cref="T:System.Web.UI.DataVisualization.Charting.ChartArea" /> object.</summary>
       </Docs>

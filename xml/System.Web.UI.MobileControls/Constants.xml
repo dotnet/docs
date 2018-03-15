@@ -1,7 +1,10 @@
-<Type Name="Constants" FullName="System.Web.UI.MobileControls.Constants">
+﻿<Type Name="Constants" FullName="System.Web.UI.MobileControls.Constants">
   <TypeSignature Language="C#" Value="public class Constants" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Constants extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Constants" />
+  <TypeSignature Language="VB.NET" Value="Public Class Constants" />
+  <TypeSignature Language="F#" Value="type Constants = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Constants" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +58,8 @@
       <MemberSignature Language="C#" Value="public Constants ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Constants.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Constants();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -70,6 +75,9 @@
       <MemberSignature Language="C#" Value="public static readonly string AlternatingItemTemplateTag;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string AlternatingItemTemplateTag" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.AlternatingItemTemplateTag" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AlternatingItemTemplateTag As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable AlternatingItemTemplateTag : string" Usage="System.Web.UI.MobileControls.Constants.AlternatingItemTemplateTag" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ AlternatingItemTemplateTag;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -87,6 +95,9 @@
       <MemberSignature Language="C#" Value="public static readonly string ContentTemplateTag;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string ContentTemplateTag" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.ContentTemplateTag" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentTemplateTag As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentTemplateTag : string" Usage="System.Web.UI.MobileControls.Constants.ContentTemplateTag" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ContentTemplateTag;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -104,6 +115,9 @@
       <MemberSignature Language="C#" Value="public static readonly int DefaultSessionsStateHistorySize;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 DefaultSessionsStateHistorySize" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.DefaultSessionsStateHistorySize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultSessionsStateHistorySize As Integer " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultSessionsStateHistorySize : int" Usage="System.Web.UI.MobileControls.Constants.DefaultSessionsStateHistorySize" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int DefaultSessionsStateHistorySize;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -121,6 +135,9 @@
       <MemberSignature Language="C#" Value="public static readonly string EventArgumentID;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string EventArgumentID" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.EventArgumentID" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EventArgumentID As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable EventArgumentID : string" Usage="System.Web.UI.MobileControls.Constants.EventArgumentID" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ EventArgumentID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -138,6 +155,9 @@
       <MemberSignature Language="C#" Value="public static readonly string EventSourceID;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string EventSourceID" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.EventSourceID" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EventSourceID As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable EventSourceID : string" Usage="System.Web.UI.MobileControls.Constants.EventSourceID" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ EventSourceID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -155,6 +175,9 @@
       <MemberSignature Language="C#" Value="public static readonly string FooterTemplateTag;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string FooterTemplateTag" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.FooterTemplateTag" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FooterTemplateTag As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable FooterTemplateTag : string" Usage="System.Web.UI.MobileControls.Constants.FooterTemplateTag" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ FooterTemplateTag;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -172,6 +195,9 @@
       <MemberSignature Language="C#" Value="public static readonly string FormIDPrefix;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string FormIDPrefix" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.FormIDPrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FormIDPrefix As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable FormIDPrefix : string" Usage="System.Web.UI.MobileControls.Constants.FormIDPrefix" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ FormIDPrefix;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -189,6 +215,9 @@
       <MemberSignature Language="C#" Value="public static readonly string HeaderTemplateTag;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string HeaderTemplateTag" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.HeaderTemplateTag" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderTemplateTag As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderTemplateTag : string" Usage="System.Web.UI.MobileControls.Constants.HeaderTemplateTag" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ HeaderTemplateTag;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -206,6 +235,9 @@
       <MemberSignature Language="C#" Value="public static readonly string ItemDetailsTemplateTag;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string ItemDetailsTemplateTag" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.ItemDetailsTemplateTag" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemDetailsTemplateTag As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemDetailsTemplateTag : string" Usage="System.Web.UI.MobileControls.Constants.ItemDetailsTemplateTag" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ItemDetailsTemplateTag;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -223,6 +255,9 @@
       <MemberSignature Language="C#" Value="public static readonly string ItemTemplateTag;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string ItemTemplateTag" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.ItemTemplateTag" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemTemplateTag As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemTemplateTag : string" Usage="System.Web.UI.MobileControls.Constants.ItemTemplateTag" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ItemTemplateTag;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -240,6 +275,9 @@
       <MemberSignature Language="C#" Value="public static readonly string LabelTemplateTag;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string LabelTemplateTag" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.LabelTemplateTag" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LabelTemplateTag As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable LabelTemplateTag : string" Usage="System.Web.UI.MobileControls.Constants.LabelTemplateTag" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ LabelTemplateTag;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -257,6 +295,9 @@
       <MemberSignature Language="C#" Value="public static readonly string OptimumPageWeightParameter;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string OptimumPageWeightParameter" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.OptimumPageWeightParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OptimumPageWeightParameter As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable OptimumPageWeightParameter : string" Usage="System.Web.UI.MobileControls.Constants.OptimumPageWeightParameter" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ OptimumPageWeightParameter;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -274,6 +315,9 @@
       <MemberSignature Language="C#" Value="public static readonly string PagePrefix;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string PagePrefix" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.PagePrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PagePrefix As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable PagePrefix : string" Usage="System.Web.UI.MobileControls.Constants.PagePrefix" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ PagePrefix;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -291,6 +335,9 @@
       <MemberSignature Language="C#" Value="public static readonly string ScreenCharactersHeightParameter;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string ScreenCharactersHeightParameter" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.ScreenCharactersHeightParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScreenCharactersHeightParameter As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ScreenCharactersHeightParameter : string" Usage="System.Web.UI.MobileControls.Constants.ScreenCharactersHeightParameter" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ScreenCharactersHeightParameter;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -308,6 +355,9 @@
       <MemberSignature Language="C#" Value="public static readonly string ScriptTemplateTag;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string ScriptTemplateTag" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.ScriptTemplateTag" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScriptTemplateTag As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ScriptTemplateTag : string" Usage="System.Web.UI.MobileControls.Constants.ScriptTemplateTag" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ ScriptTemplateTag;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -390,6 +440,9 @@
       <MemberSignature Language="C#" Value="public static readonly char SelectionListSpecialCharacter;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly char SelectionListSpecialCharacter" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.SelectionListSpecialCharacter" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionListSpecialCharacter As Char " />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectionListSpecialCharacter : char" Usage="System.Web.UI.MobileControls.Constants.SelectionListSpecialCharacter" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly char SelectionListSpecialCharacter;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -407,6 +460,9 @@
       <MemberSignature Language="C#" Value="public static readonly string SeparatorTemplateTag;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string SeparatorTemplateTag" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.SeparatorTemplateTag" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SeparatorTemplateTag As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable SeparatorTemplateTag : string" Usage="System.Web.UI.MobileControls.Constants.SeparatorTemplateTag" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ SeparatorTemplateTag;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -424,6 +480,9 @@
       <MemberSignature Language="C#" Value="public static readonly string SymbolProtocol;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string SymbolProtocol" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.SymbolProtocol" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SymbolProtocol As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable SymbolProtocol : string" Usage="System.Web.UI.MobileControls.Constants.SymbolProtocol" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ SymbolProtocol;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -441,6 +500,9 @@
       <MemberSignature Language="C#" Value="public static readonly string UniqueFilePathSuffixVariable;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string UniqueFilePathSuffixVariable" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.UniqueFilePathSuffixVariable" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UniqueFilePathSuffixVariable As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable UniqueFilePathSuffixVariable : string" Usage="System.Web.UI.MobileControls.Constants.UniqueFilePathSuffixVariable" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ UniqueFilePathSuffixVariable;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -458,6 +520,9 @@
       <MemberSignature Language="C#" Value="public static readonly string UniqueFilePathSuffixVariableWithoutEqual;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string UniqueFilePathSuffixVariableWithoutEqual" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Constants.UniqueFilePathSuffixVariableWithoutEqual" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UniqueFilePathSuffixVariableWithoutEqual As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable UniqueFilePathSuffixVariableWithoutEqual : string" Usage="System.Web.UI.MobileControls.Constants.UniqueFilePathSuffixVariableWithoutEqual" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ UniqueFilePathSuffixVariableWithoutEqual;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

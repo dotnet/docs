@@ -1,7 +1,10 @@
-<Type Name="FormWindowState" FullName="System.Windows.Forms.FormWindowState">
+﻿<Type Name="FormWindowState" FullName="System.Windows.Forms.FormWindowState">
   <TypeSignature Language="C#" Value="public enum FormWindowState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormWindowState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormWindowState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FormWindowState" />
+  <TypeSignature Language="F#" Value="type FormWindowState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FormWindowState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="Maximized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormWindowState Maximized = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormWindowState.Maximized" />
+      <MemberSignature Language="VB.NET" Value="Maximized" />
+      <MemberSignature Language="F#" Value="Maximized = 2" Usage="System.Windows.Forms.FormWindowState.Maximized" />
+      <MemberSignature Language="C++ CLI" Value="Maximized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -47,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormWindowState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A maximized window.</summary>
       </Docs>
@@ -55,6 +62,9 @@
       <MemberSignature Language="C#" Value="Minimized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormWindowState Minimized = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormWindowState.Minimized" />
+      <MemberSignature Language="VB.NET" Value="Minimized" />
+      <MemberSignature Language="F#" Value="Minimized = 1" Usage="System.Windows.Forms.FormWindowState.Minimized" />
+      <MemberSignature Language="C++ CLI" Value="Minimized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormWindowState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A minimized window.</summary>
       </Docs>
@@ -71,6 +82,9 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormWindowState Normal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormWindowState.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Forms.FormWindowState.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormWindowState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A default sized window.</summary>
       </Docs>

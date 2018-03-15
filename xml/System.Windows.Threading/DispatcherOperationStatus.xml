@@ -1,7 +1,10 @@
-<Type Name="DispatcherOperationStatus" FullName="System.Windows.Threading.DispatcherOperationStatus">
+﻿<Type Name="DispatcherOperationStatus" FullName="System.Windows.Threading.DispatcherOperationStatus">
   <TypeSignature Language="C#" Value="public enum DispatcherOperationStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DispatcherOperationStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherOperationStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DispatcherOperationStatus" />
+  <TypeSignature Language="F#" Value="type DispatcherOperationStatus = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DispatcherOperationStatus" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="Aborted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Threading.DispatcherOperationStatus Aborted = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Threading.DispatcherOperationStatus.Aborted" />
+      <MemberSignature Language="VB.NET" Value="Aborted" />
+      <MemberSignature Language="F#" Value="Aborted = 1" Usage="System.Windows.Threading.DispatcherOperationStatus.Aborted" />
+      <MemberSignature Language="C++ CLI" Value="Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherOperationStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The operation has aborted.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="Completed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Threading.DispatcherOperationStatus Completed = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Threading.DispatcherOperationStatus.Completed" />
+      <MemberSignature Language="VB.NET" Value="Completed" />
+      <MemberSignature Language="F#" Value="Completed = 2" Usage="System.Windows.Threading.DispatcherOperationStatus.Completed" />
+      <MemberSignature Language="C++ CLI" Value="Completed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -51,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherOperationStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The operation is completed.</summary>
       </Docs>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="Executing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Threading.DispatcherOperationStatus Executing = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Threading.DispatcherOperationStatus.Executing" />
+      <MemberSignature Language="VB.NET" Value="Executing" />
+      <MemberSignature Language="F#" Value="Executing = 3" Usage="System.Windows.Threading.DispatcherOperationStatus.Executing" />
+      <MemberSignature Language="C++ CLI" Value="Executing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherOperationStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The operation started executing, but has not completed.</summary>
       </Docs>
@@ -75,6 +90,9 @@
       <MemberSignature Language="C#" Value="Pending" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Threading.DispatcherOperationStatus Pending = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Threading.DispatcherOperationStatus.Pending" />
+      <MemberSignature Language="VB.NET" Value="Pending" />
+      <MemberSignature Language="F#" Value="Pending = 0" Usage="System.Windows.Threading.DispatcherOperationStatus.Pending" />
+      <MemberSignature Language="C++ CLI" Value="Pending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -83,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Threading.DispatcherOperationStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The operation is pending and is still in the <see cref="T:System.Windows.Threading.Dispatcher" /> queue.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="UploadProgressChangedEventHandler" FullName="System.Net.UploadProgressChangedEventHandler">
+﻿<Type Name="UploadProgressChangedEventHandler" FullName="System.Net.UploadProgressChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void UploadProgressChangedEventHandler(object sender, UploadProgressChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UploadProgressChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.UploadProgressChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub UploadProgressChangedEventHandler(sender As Object, e As UploadProgressChangedEventArgs)" />
+  <TypeSignature Language="F#" Value="type UploadProgressChangedEventHandler = delegate of obj * UploadProgressChangedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void UploadProgressChangedEventHandler(System::Object ^ sender, UploadProgressChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="CommandField" FullName="System.Web.UI.WebControls.CommandField">
+﻿<Type Name="CommandField" FullName="System.Web.UI.WebControls.CommandField">
   <TypeSignature Language="C#" Value="public class CommandField : System.Web.UI.WebControls.ButtonFieldBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CommandField extends System.Web.UI.WebControls.ButtonFieldBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.CommandField" />
+  <TypeSignature Language="VB.NET" Value="Public Class CommandField&#xA;Inherits ButtonFieldBase" />
+  <TypeSignature Language="F#" Value="type CommandField = class&#xA;    inherit ButtonFieldBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CommandField : System::Web::UI::WebControls::ButtonFieldBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -129,6 +132,8 @@
       <MemberSignature Language="C#" Value="public CommandField ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CommandField.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommandField();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -168,6 +173,9 @@
       <MemberSignature Language="C#" Value="public virtual string CancelImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CancelImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CancelImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.CancelImageUrl : string with get, set" Usage="System.Web.UI.WebControls.CommandField.CancelImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CancelImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -232,6 +240,9 @@
       <MemberSignature Language="C#" Value="public virtual string CancelText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CancelText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.CancelText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CancelText As String" />
+      <MemberSignature Language="F#" Value="member this.CancelText : string with get, set" Usage="System.Web.UI.WebControls.CommandField.CancelText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CancelText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -292,6 +303,9 @@
       <MemberSignature Language="C#" Value="public override bool CausesValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.CausesValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property CausesValidation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Web.UI.WebControls.CommandField.CausesValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CausesValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -336,6 +350,9 @@
       <MemberSignature Language="C#" Value="protected override void CopyProperties (System.Web.UI.WebControls.DataControlField newField);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CopyProperties(class System.Web.UI.WebControls.DataControlField newField) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CommandField.CopyProperties(System.Web.UI.WebControls.DataControlField)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CopyProperties (newField As DataControlField)" />
+      <MemberSignature Language="F#" Value="override this.CopyProperties : System.Web.UI.WebControls.DataControlField -&gt; unit" Usage="commandField.CopyProperties newField" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CopyProperties(System::Web::UI::WebControls::DataControlField ^ newField);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -366,6 +383,9 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.DataControlField CreateField ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.DataControlField CreateField() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CommandField.CreateField" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateField () As DataControlField" />
+      <MemberSignature Language="F#" Value="override this.CreateField : unit -&gt; System.Web.UI.WebControls.DataControlField" Usage="commandField.CreateField " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::DataControlField ^ CreateField();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -394,6 +414,9 @@
       <MemberSignature Language="C#" Value="public virtual string DeleteImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DeleteImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DeleteImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.DeleteImageUrl : string with get, set" Usage="System.Web.UI.WebControls.CommandField.DeleteImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DeleteImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -456,6 +479,9 @@
       <MemberSignature Language="C#" Value="public virtual string DeleteText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DeleteText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.DeleteText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DeleteText As String" />
+      <MemberSignature Language="F#" Value="member this.DeleteText : string with get, set" Usage="System.Web.UI.WebControls.CommandField.DeleteText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DeleteText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -514,6 +540,9 @@
       <MemberSignature Language="C#" Value="public virtual string EditImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EditImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.EditImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EditImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.EditImageUrl : string with get, set" Usage="System.Web.UI.WebControls.CommandField.EditImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EditImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -577,6 +606,9 @@
       <MemberSignature Language="C#" Value="public virtual string EditText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EditText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.EditText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EditText As String" />
+      <MemberSignature Language="F#" Value="member this.EditText : string with get, set" Usage="System.Web.UI.WebControls.CommandField.EditText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EditText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -636,6 +668,9 @@
       <MemberSignature Language="C#" Value="public override void InitializeCell (System.Web.UI.WebControls.DataControlFieldCell cell, System.Web.UI.WebControls.DataControlCellType cellType, System.Web.UI.WebControls.DataControlRowState rowState, int rowIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeCell(class System.Web.UI.WebControls.DataControlFieldCell cell, valuetype System.Web.UI.WebControls.DataControlCellType cellType, valuetype System.Web.UI.WebControls.DataControlRowState rowState, int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CommandField.InitializeCell(System.Web.UI.WebControls.DataControlFieldCell,System.Web.UI.WebControls.DataControlCellType,System.Web.UI.WebControls.DataControlRowState,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub InitializeCell (cell As DataControlFieldCell, cellType As DataControlCellType, rowState As DataControlRowState, rowIndex As Integer)" />
+      <MemberSignature Language="F#" Value="override this.InitializeCell : System.Web.UI.WebControls.DataControlFieldCell * System.Web.UI.WebControls.DataControlCellType * System.Web.UI.WebControls.DataControlRowState * int -&gt; unit" Usage="commandField.InitializeCell (cell, cellType, rowState, rowIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InitializeCell(System::Web::UI::WebControls::DataControlFieldCell ^ cell, System::Web::UI::WebControls::DataControlCellType cellType, System::Web::UI::WebControls::DataControlRowState rowState, int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -674,6 +709,9 @@
       <MemberSignature Language="C#" Value="public virtual string InsertImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InsertImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property InsertImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.InsertImageUrl : string with get, set" Usage="System.Web.UI.WebControls.CommandField.InsertImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InsertImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -737,6 +775,9 @@
       <MemberSignature Language="C#" Value="public virtual string InsertText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InsertText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.InsertText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property InsertText As String" />
+      <MemberSignature Language="F#" Value="member this.InsertText : string with get, set" Usage="System.Web.UI.WebControls.CommandField.InsertText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InsertText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -796,6 +837,9 @@
       <MemberSignature Language="C#" Value="public virtual string NewImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NewImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.NewImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property NewImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.NewImageUrl : string with get, set" Usage="System.Web.UI.WebControls.CommandField.NewImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NewImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -859,6 +903,9 @@
       <MemberSignature Language="C#" Value="public virtual string NewText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NewText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.NewText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property NewText As String" />
+      <MemberSignature Language="F#" Value="member this.NewText : string with get, set" Usage="System.Web.UI.WebControls.CommandField.NewText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ NewText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -918,6 +965,9 @@
       <MemberSignature Language="C#" Value="public virtual string SelectImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.SelectImageUrl : string with get, set" Usage="System.Web.UI.WebControls.CommandField.SelectImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SelectImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -980,6 +1030,9 @@
       <MemberSignature Language="C#" Value="public virtual string SelectText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.SelectText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectText As String" />
+      <MemberSignature Language="F#" Value="member this.SelectText : string with get, set" Usage="System.Web.UI.WebControls.CommandField.SelectText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SelectText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1038,6 +1091,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ShowCancelButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowCancelButton" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowCancelButton As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowCancelButton : bool with get, set" Usage="System.Web.UI.WebControls.CommandField.ShowCancelButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowCancelButton { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1085,6 +1141,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ShowDeleteButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowDeleteButton" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowDeleteButton As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowDeleteButton : bool with get, set" Usage="System.Web.UI.WebControls.CommandField.ShowDeleteButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowDeleteButton { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1135,6 +1194,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ShowEditButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowEditButton" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.ShowEditButton" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowEditButton As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowEditButton : bool with get, set" Usage="System.Web.UI.WebControls.CommandField.ShowEditButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowEditButton { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1189,6 +1251,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ShowInsertButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowInsertButton" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowInsertButton As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowInsertButton : bool with get, set" Usage="System.Web.UI.WebControls.CommandField.ShowInsertButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowInsertButton { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1246,6 +1311,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ShowSelectButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowSelectButton" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.ShowSelectButton" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowSelectButton As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowSelectButton : bool with get, set" Usage="System.Web.UI.WebControls.CommandField.ShowSelectButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowSelectButton { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1293,6 +1361,9 @@
       <MemberSignature Language="C#" Value="public virtual string UpdateImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UpdateImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property UpdateImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.UpdateImageUrl : string with get, set" Usage="System.Web.UI.WebControls.CommandField.UpdateImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UpdateImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1356,6 +1427,9 @@
       <MemberSignature Language="C#" Value="public virtual string UpdateText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UpdateText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.CommandField.UpdateText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property UpdateText As String" />
+      <MemberSignature Language="F#" Value="member this.UpdateText : string with get, set" Usage="System.Web.UI.WebControls.CommandField.UpdateText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UpdateText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1415,6 +1489,9 @@
       <MemberSignature Language="C#" Value="public override void ValidateSupportsCallback ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ValidateSupportsCallback() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.CommandField.ValidateSupportsCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ValidateSupportsCallback ()" />
+      <MemberSignature Language="F#" Value="override this.ValidateSupportsCallback : unit -&gt; unit" Usage="commandField.ValidateSupportsCallback " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ValidateSupportsCallback();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

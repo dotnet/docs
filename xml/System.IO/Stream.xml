@@ -1,7 +1,10 @@
-<Type Name="Stream" FullName="System.IO.Stream">
+﻿<Type Name="Stream" FullName="System.IO.Stream">
   <TypeSignature Language="C#" Value="public abstract class Stream : MarshalByRefObject, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Stream extends System.MarshalByRefObject implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IO.Stream" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Stream&#xA;Inherits MarshalByRefObject&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type Stream = class&#xA;    inherit MarshalByRefObject&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Stream abstract : MarshalByRefObject, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IO</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +96,8 @@
       <MemberSignature Language="C#" Value="protected Stream ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Stream();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -132,6 +137,9 @@
       <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginRead (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginRead(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginRead (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginRead : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginRead : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="stream.BeginRead (buffer, offset, count, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginRead(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -194,6 +202,9 @@
       <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginWrite (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginWrite(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginWrite (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginWrite : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginWrite : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="stream.BeginWrite (buffer, offset, count, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -258,6 +269,9 @@
       <MemberSignature Language="C#" Value="public abstract bool CanRead { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRead" />
       <MemberSignature Language="DocId" Value="P:System.IO.Stream.CanRead" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CanRead As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="System.IO.Stream.CanRead" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool CanRead { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -310,6 +324,9 @@
       <MemberSignature Language="C#" Value="public abstract bool CanSeek { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanSeek" />
       <MemberSignature Language="DocId" Value="P:System.IO.Stream.CanSeek" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CanSeek As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanSeek : bool" Usage="System.IO.Stream.CanSeek" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool CanSeek { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -353,6 +370,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanTimeout" />
       <MemberSignature Language="DocId" Value="P:System.IO.Stream.CanTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanTimeout As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanTimeout : bool" Usage="System.IO.Stream.CanTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanTimeout { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -400,6 +420,9 @@
       <MemberSignature Language="C#" Value="public abstract bool CanWrite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanWrite" />
       <MemberSignature Language="DocId" Value="P:System.IO.Stream.CanWrite" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CanWrite As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanWrite : bool" Usage="System.IO.Stream.CanWrite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool CanWrite { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -452,6 +475,9 @@
       <MemberSignature Language="C#" Value="public virtual void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="stream.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -489,10 +515,24 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reads the bytes from the current stream and writes them to another stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (System.IO.Stream destination);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.IO.Stream destination) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.CopyTo(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As Stream)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.IO.Stream -&gt; unit" Usage="stream.CopyTo destination" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(System::IO::Stream ^ destination);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -553,6 +593,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.IO.Stream destination, int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.IO.Stream destination, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.CopyTo(System.IO.Stream,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As Stream, bufferSize As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.IO.Stream * int -&gt; unit" Usage="stream.CopyTo (destination, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(System::IO::Stream ^ destination, int bufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -605,10 +648,24 @@
         <exception cref="T:System.IO.IOException">An I/O error occurred.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyToAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously reads the bytes from the current stream and writes them to another stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CopyToAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CopyToAsync (System.IO.Stream destination);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CopyToAsync(class System.IO.Stream destination) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.CopyToAsync(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CopyToAsync (destination As Stream) As Task" />
+      <MemberSignature Language="F#" Value="member this.CopyToAsync : System.IO.Stream -&gt; System.Threading.Tasks.Task" Usage="stream.CopyToAsync destination" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ CopyToAsync(System::IO::Stream ^ destination);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -672,6 +729,9 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task CopyToAsync (System.IO.Stream destination, int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task CopyToAsync(class System.IO.Stream destination, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CopyToAsync (destination As Stream, bufferSize As Integer) As Task" />
+      <MemberSignature Language="F#" Value="member this.CopyToAsync : System.IO.Stream * int -&gt; System.Threading.Tasks.Task" Usage="stream.CopyToAsync (destination, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ CopyToAsync(System::IO::Stream ^ destination, int bufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -733,6 +793,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task CopyToAsync (System.IO.Stream destination, int bufferSize, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task CopyToAsync(class System.IO.Stream destination, int32 bufferSize, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member CopyToAsync : System.IO.Stream * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.CopyToAsync : System.IO.Stream * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="stream.CopyToAsync (destination, bufferSize, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ CopyToAsync(System::IO::Stream ^ destination, int bufferSize, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -798,6 +860,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Threading.WaitHandle CreateWaitHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Threading.WaitHandle CreateWaitHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.CreateWaitHandle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateWaitHandle () As WaitHandle" />
+      <MemberSignature Language="F#" Value="abstract member CreateWaitHandle : unit -&gt; System.Threading.WaitHandle&#xA;override this.CreateWaitHandle : unit -&gt; System.Threading.WaitHandle" Usage="stream.CreateWaitHandle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Threading::WaitHandle ^ CreateWaitHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -836,11 +901,28 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the <see cref="T:System.IO.Stream" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="stream.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -887,6 +969,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="stream.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -942,6 +1027,9 @@
       <MemberSignature Language="C#" Value="public virtual int EndRead (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 EndRead(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.EndRead(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function EndRead (asyncResult As IAsyncResult) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member EndRead : IAsyncResult -&gt; int&#xA;override this.EndRead : IAsyncResult -&gt; int" Usage="stream.EndRead asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int EndRead(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -996,6 +1084,9 @@
       <MemberSignature Language="C#" Value="public virtual void EndWrite (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndWrite(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.EndWrite(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndWrite (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndWrite : IAsyncResult -&gt; unit&#xA;override this.EndWrite : IAsyncResult -&gt; unit" Usage="stream.EndWrite asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndWrite(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1047,6 +1138,9 @@
       <MemberSignature Language="C#" Value="public abstract void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Flush ()" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit" Usage="stream.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1086,10 +1180,24 @@
         <exception cref="T:System.IO.IOException">An I/O error occurs.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FlushAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously clears all buffers for this stream and causes any buffered data to be written to the underlying device.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FlushAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task FlushAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task FlushAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.FlushAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function FlushAsync () As Task" />
+      <MemberSignature Language="F#" Value="member this.FlushAsync : unit -&gt; System.Threading.Tasks.Task" Usage="stream.FlushAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ FlushAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1137,6 +1245,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task FlushAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task FlushAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.FlushAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member FlushAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.FlushAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="stream.FlushAsync cancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ FlushAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1189,6 +1299,9 @@
       <MemberSignature Language="C#" Value="public abstract long Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
       <MemberSignature Language="DocId" Value="P:System.IO.Stream.Length" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Length As Long" />
+      <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.IO.Stream.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long Length { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1224,6 +1337,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.IO.Stream Null;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.IO.Stream Null" />
       <MemberSignature Language="DocId" Value="F:System.IO.Stream.Null" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As Stream " />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.IO.Stream" Usage="System.IO.Stream.Null" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::IO::Stream ^ Null;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1263,6 +1379,9 @@
       <MemberSignature Language="C#" Value="protected virtual void ObjectInvariant ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ObjectInvariant() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.ObjectInvariant" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ObjectInvariant ()" />
+      <MemberSignature Language="F#" Value="abstract member ObjectInvariant : unit -&gt; unit&#xA;override this.ObjectInvariant : unit -&gt; unit" Usage="stream.ObjectInvariant " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ObjectInvariant();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1295,6 +1414,9 @@
       <MemberSignature Language="C#" Value="public abstract long Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Position" />
       <MemberSignature Language="DocId" Value="P:System.IO.Stream.Position" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property Position As Long" />
+      <MemberSignature Language="F#" Value="member this.Position : int64 with get, set" Usage="System.IO.Stream.Position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property long Position { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1342,6 +1464,9 @@
       <MemberSignature Language="C#" Value="public abstract int Read (byte[] buffer, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Read([out] unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.Read(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Read (buffer As Byte(), offset As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Read : byte[] * int * int -&gt; int" Usage="stream.Read (buffer, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int Read(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1407,10 +1532,24 @@
         <exception cref="T:System.ObjectDisposedException">Methods were called after the stream was closed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;int&gt; ReadAsync (byte[] buffer, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadAsync(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadAsync (buffer As Byte(), offset As Integer, count As Integer) As Task(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.ReadAsync : byte[] * int * int -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="stream.ReadAsync (buffer, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1482,6 +1621,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;int&gt; ReadAsync (byte[] buffer, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ReadAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;&#xA;override this.ReadAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="stream.ReadAsync (buffer, offset, count, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1551,6 +1692,9 @@
       <MemberSignature Language="C#" Value="public virtual int ReadByte ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ReadByte() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.ReadByte" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ReadByte () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member ReadByte : unit -&gt; int&#xA;override this.ReadByte : unit -&gt; int" Usage="stream.ReadByte " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int ReadByte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1599,6 +1743,9 @@
       <MemberSignature Language="C#" Value="public virtual int ReadTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ReadTimeout" />
       <MemberSignature Language="DocId" Value="P:System.IO.Stream.ReadTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ReadTimeout As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReadTimeout : int with get, set" Usage="System.IO.Stream.ReadTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ReadTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1641,6 +1788,9 @@
       <MemberSignature Language="C#" Value="public abstract long Seek (long offset, System.IO.SeekOrigin origin);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 Seek(int64 offset, valuetype System.IO.SeekOrigin origin) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.Seek(System.Int64,System.IO.SeekOrigin)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Seek (offset As Long, origin As SeekOrigin) As Long" />
+      <MemberSignature Language="F#" Value="abstract member Seek : int64 * System.IO.SeekOrigin -&gt; int64" Usage="stream.Seek (offset, origin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract long Seek(long offset, System::IO::SeekOrigin origin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1696,6 +1846,9 @@
       <MemberSignature Language="C#" Value="public abstract void SetLength (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetLength(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.SetLength(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetLength (value As Long)" />
+      <MemberSignature Language="F#" Value="abstract member SetLength : int64 -&gt; unit" Usage="stream.SetLength value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetLength(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1746,6 +1899,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.Stream Synchronized (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Stream Synchronized(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.Synchronized(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="static member Synchronized : System.IO.Stream -&gt; System.IO.Stream" Usage="System.IO.Stream.Synchronized stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Stream ^ Synchronized(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1786,6 +1941,9 @@
       <MemberSignature Language="C#" Value="public abstract void Write (byte[] buffer, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Write (buffer As Byte(), offset As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Write : byte[] * int * int -&gt; unit" Usage="stream.Write (buffer, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Write(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1840,10 +1998,24 @@
           <see cref="M:System.IO.Stream.Write(System.Byte[],System.Int32,System.Int32)" /> was called after the stream was closed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.IO</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Asynchronously writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task WriteAsync (byte[] buffer, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task WriteAsync(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WriteAsync (buffer As Byte(), offset As Integer, count As Integer) As Task" />
+      <MemberSignature Language="F#" Value="member this.WriteAsync : byte[] * int * int -&gt; System.Threading.Tasks.Task" Usage="stream.WriteAsync (buffer, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1915,6 +2087,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task WriteAsync (byte[] buffer, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member WriteAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&#xA;override this.WriteAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="stream.WriteAsync (buffer, offset, count, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -1984,6 +2158,9 @@
       <MemberSignature Language="C#" Value="public virtual void WriteByte (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteByte(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Stream.WriteByte(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteByte (value As Byte)" />
+      <MemberSignature Language="F#" Value="abstract member WriteByte : byte -&gt; unit&#xA;override this.WriteByte : byte -&gt; unit" Usage="stream.WriteByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteByte(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -2033,6 +2210,9 @@
       <MemberSignature Language="C#" Value="public virtual int WriteTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 WriteTimeout" />
       <MemberSignature Language="DocId" Value="P:System.IO.Stream.WriteTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property WriteTimeout As Integer" />
+      <MemberSignature Language="F#" Value="member this.WriteTimeout : int with get, set" Usage="System.IO.Stream.WriteTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int WriteTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO</AssemblyName>
@@ -2071,71 +2251,5 @@
         </block>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CopyTo">
-      <AssemblyInfo>
-        <AssemblyName>System.IO</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reads the bytes from the current stream and writes them to another stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.IO</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.IO.Stream" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.IO</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Asynchronously writes a sequence of bytes to the current stream and advances the current position within this stream by the number of bytes written.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.IO</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Asynchronously reads a sequence of bytes from the current stream and advances the position within the stream by the number of bytes read.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CopyToAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.IO</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Asynchronously reads the bytes from the current stream and writes them to another stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FlushAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.IO</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Asynchronously clears all buffers for this stream and causes any buffered data to be written to the underlying device.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

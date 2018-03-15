@@ -1,7 +1,10 @@
-<Type Name="ScrollType" FullName="System.Windows.Forms.DataVisualization.Charting.ScrollType">
+﻿<Type Name="ScrollType" FullName="System.Windows.Forms.DataVisualization.Charting.ScrollType">
   <TypeSignature Language="C#" Value="public enum ScrollType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ScrollType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ScrollType" />
+  <TypeSignature Language="F#" Value="type ScrollType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ScrollType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="First" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ScrollType First = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollType.First" />
+      <MemberSignature Language="VB.NET" Value="First" />
+      <MemberSignature Language="F#" Value="First = 4" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollType.First" />
+      <MemberSignature Language="C++ CLI" Value="First" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Data is scrolled to the first displayed view.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="LargeDecrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ScrollType LargeDecrement = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollType.LargeDecrement" />
+      <MemberSignature Language="VB.NET" Value="LargeDecrement" />
+      <MemberSignature Language="F#" Value="LargeDecrement = 2" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollType.LargeDecrement" />
+      <MemberSignature Language="C++ CLI" Value="LargeDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The data view is decreased by one large scrolling interval.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="LargeIncrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ScrollType LargeIncrement = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollType.LargeIncrement" />
+      <MemberSignature Language="VB.NET" Value="LargeIncrement" />
+      <MemberSignature Language="F#" Value="LargeIncrement = 3" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollType.LargeIncrement" />
+      <MemberSignature Language="C++ CLI" Value="LargeIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The data view is increased by one large scrolling interval.</summary>
       </Docs>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="Last" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ScrollType Last = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollType.Last" />
+      <MemberSignature Language="VB.NET" Value="Last" />
+      <MemberSignature Language="F#" Value="Last = 5" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollType.Last" />
+      <MemberSignature Language="C++ CLI" Value="Last" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -81,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Data is scrolled to the last displayed view.</summary>
       </Docs>
@@ -89,6 +108,9 @@
       <MemberSignature Language="C#" Value="SmallDecrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ScrollType SmallDecrement = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollType.SmallDecrement" />
+      <MemberSignature Language="VB.NET" Value="SmallDecrement" />
+      <MemberSignature Language="F#" Value="SmallDecrement = 0" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollType.SmallDecrement" />
+      <MemberSignature Language="C++ CLI" Value="SmallDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -97,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The data view is decreased by one small scrolling interval.</summary>
       </Docs>
@@ -105,6 +128,9 @@
       <MemberSignature Language="C#" Value="SmallIncrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ScrollType SmallIncrement = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollType.SmallIncrement" />
+      <MemberSignature Language="VB.NET" Value="SmallIncrement" />
+      <MemberSignature Language="F#" Value="SmallIncrement = 1" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollType.SmallIncrement" />
+      <MemberSignature Language="C++ CLI" Value="SmallIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -113,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The data view is increased by one small scrolling interval.</summary>
       </Docs>

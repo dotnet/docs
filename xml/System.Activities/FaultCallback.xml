@@ -1,7 +1,10 @@
-<Type Name="FaultCallback" FullName="System.Activities.FaultCallback">
+﻿<Type Name="FaultCallback" FullName="System.Activities.FaultCallback">
   <TypeSignature Language="C#" Value="public delegate void FaultCallback(NativeActivityFaultContext faultContext, Exception propagatedException, ActivityInstance propagatedFrom);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FaultCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.FaultCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub FaultCallback(faultContext As NativeActivityFaultContext, propagatedException As Exception, propagatedFrom As ActivityInstance)" />
+  <TypeSignature Language="F#" Value="type FaultCallback = delegate of NativeActivityFaultContext * Exception * ActivityInstance -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void FaultCallback(NativeActivityFaultContext ^ faultContext, Exception ^ propagatedException, ActivityInstance ^ propagatedFrom);" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

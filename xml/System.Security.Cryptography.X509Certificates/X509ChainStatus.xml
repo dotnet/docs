@@ -1,7 +1,10 @@
-<Type Name="X509ChainStatus" FullName="System.Security.Cryptography.X509Certificates.X509ChainStatus">
+﻿<Type Name="X509ChainStatus" FullName="System.Security.Cryptography.X509Certificates.X509ChainStatus">
   <TypeSignature Language="C#" Value="public struct X509ChainStatus" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit X509ChainStatus extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509ChainStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Structure X509ChainStatus" />
+  <TypeSignature Language="F#" Value="type X509ChainStatus = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class X509ChainStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509ChainStatusFlags Status { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.X509ChainStatusFlags Status" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainStatus.Status" />
+      <MemberSignature Language="VB.NET" Value="Public Property Status As X509ChainStatusFlags" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Security.Cryptography.X509Certificates.X509ChainStatusFlags with get, set" Usage="System.Security.Cryptography.X509Certificates.X509ChainStatus.Status" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509ChainStatusFlags Status { System::Security::Cryptography::X509Certificates::X509ChainStatusFlags get(); void set(System::Security::Cryptography::X509Certificates::X509ChainStatusFlags value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -91,6 +97,9 @@
       <MemberSignature Language="C#" Value="public string StatusInformation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StatusInformation" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.X509Certificates.X509ChainStatus.StatusInformation" />
+      <MemberSignature Language="VB.NET" Value="Public Property StatusInformation As String" />
+      <MemberSignature Language="F#" Value="member this.StatusInformation : string with get, set" Usage="System.Security.Cryptography.X509Certificates.X509ChainStatus.StatusInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StatusInformation { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>

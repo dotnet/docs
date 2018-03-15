@@ -1,7 +1,10 @@
-<Type Name="KeyContainerPermissionAttribute" FullName="System.Security.Permissions.KeyContainerPermissionAttribute">
+﻿<Type Name="KeyContainerPermissionAttribute" FullName="System.Security.Permissions.KeyContainerPermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class KeyContainerPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit KeyContainerPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.KeyContainerPermissionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class KeyContainerPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type KeyContainerPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class KeyContainerPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="public KeyContainerPermissionAttribute (System.Security.Permissions.SecurityAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.KeyContainerPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.KeyContainerPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.KeyContainerPermissionAttribute" Usage="new System.Security.Permissions.KeyContainerPermissionAttribute action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyContainerPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -66,6 +72,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.KeyContainerPermissionAttribute.CreatePermission" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="keyContainerPermissionAttribute.CreatePermission " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,6 +108,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Permissions.KeyContainerPermissionFlags Flags { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.KeyContainerPermissionFlags Flags" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.KeyContainerPermissionAttribute.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public Property Flags As KeyContainerPermissionFlags" />
+      <MemberSignature Language="F#" Value="member this.Flags : System.Security.Permissions.KeyContainerPermissionFlags with get, set" Usage="System.Security.Permissions.KeyContainerPermissionAttribute.Flags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::KeyContainerPermissionFlags Flags { System::Security::Permissions::KeyContainerPermissionFlags get(); void set(System::Security::Permissions::KeyContainerPermissionFlags value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +145,9 @@
       <MemberSignature Language="C#" Value="public string KeyContainerName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeyContainerName" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.KeyContainerPermissionAttribute.KeyContainerName" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyContainerName As String" />
+      <MemberSignature Language="F#" Value="member this.KeyContainerName : string with get, set" Usage="System.Security.Permissions.KeyContainerPermissionAttribute.KeyContainerName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyContainerName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -163,6 +178,9 @@
       <MemberSignature Language="C#" Value="public int KeySpec { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeySpec" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.KeyContainerPermissionAttribute.KeySpec" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeySpec As Integer" />
+      <MemberSignature Language="F#" Value="member this.KeySpec : int with get, set" Usage="System.Security.Permissions.KeyContainerPermissionAttribute.KeySpec" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeySpec { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -193,6 +211,9 @@
       <MemberSignature Language="C#" Value="public string KeyStore { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeyStore" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.KeyContainerPermissionAttribute.KeyStore" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyStore As String" />
+      <MemberSignature Language="F#" Value="member this.KeyStore : string with get, set" Usage="System.Security.Permissions.KeyContainerPermissionAttribute.KeyStore" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyStore { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -223,6 +244,9 @@
       <MemberSignature Language="C#" Value="public string ProviderName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProviderName" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.KeyContainerPermissionAttribute.ProviderName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProviderName As String" />
+      <MemberSignature Language="F#" Value="member this.ProviderName : string with get, set" Usage="System.Security.Permissions.KeyContainerPermissionAttribute.ProviderName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProviderName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -253,6 +277,9 @@
       <MemberSignature Language="C#" Value="public int ProviderType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ProviderType" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.KeyContainerPermissionAttribute.ProviderType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProviderType As Integer" />
+      <MemberSignature Language="F#" Value="member this.ProviderType : int with get, set" Usage="System.Security.Permissions.KeyContainerPermissionAttribute.ProviderType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProviderType { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

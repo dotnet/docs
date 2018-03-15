@@ -1,7 +1,10 @@
-<Type Name="VariantType" FullName="Microsoft.VisualBasic.VariantType">
+﻿<Type Name="VariantType" FullName="Microsoft.VisualBasic.VariantType">
   <TypeSignature Language="C#" Value="public enum VariantType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VariantType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VariantType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VariantType" />
+  <TypeSignature Language="F#" Value="type VariantType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class VariantType" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="Array" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Array = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Array" />
+      <MemberSignature Language="VB.NET" Value="Array" />
+      <MemberSignature Language="F#" Value="Array = 8192" Usage="Microsoft.VisualBasic.VariantType.Array" />
+      <MemberSignature Language="C++ CLI" Value="Array" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -36,6 +42,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>Array. This member is equivalent to the Visual Basic constant <see langword="vbArray" />.</summary>
       </Docs>
@@ -44,6 +51,9 @@
       <MemberSignature Language="C#" Value="Boolean" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Boolean = int32(11)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Boolean" />
+      <MemberSignature Language="VB.NET" Value="Boolean" />
+      <MemberSignature Language="F#" Value="Boolean = 11" Usage="Microsoft.VisualBasic.VariantType.Boolean" />
+      <MemberSignature Language="C++ CLI" Value="Boolean" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>
           <see langword="Boolean" />. (<see langword="True" /> or <see langword="False" />.) This member is equivalent to the Visual Basic constant <see langword="vbBoolean" />.</summary>
@@ -61,6 +72,9 @@
       <MemberSignature Language="C#" Value="Byte" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Byte = int32(17)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Byte" />
+      <MemberSignature Language="VB.NET" Value="Byte" />
+      <MemberSignature Language="F#" Value="Byte = 17" Usage="Microsoft.VisualBasic.VariantType.Byte" />
+      <MemberSignature Language="C++ CLI" Value="Byte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -69,6 +83,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>
           <see langword="Byte" />. (0 through 255.) This member is equivalent to the Visual Basic constant <see langword="vbByte" />.</summary>
@@ -78,6 +93,9 @@
       <MemberSignature Language="C#" Value="Char" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Char = int32(18)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Char" />
+      <MemberSignature Language="VB.NET" Value="Char" />
+      <MemberSignature Language="F#" Value="Char = 18" Usage="Microsoft.VisualBasic.VariantType.Char" />
+      <MemberSignature Language="C++ CLI" Value="Char" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -86,6 +104,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>
           <see langword="Char" />. (0 through 65535.) This member is equivalent to the Visual Basic constant <see langword="vbChar" />.</summary>
@@ -95,6 +114,9 @@
       <MemberSignature Language="C#" Value="Currency" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Currency = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Currency" />
+      <MemberSignature Language="VB.NET" Value="Currency" />
+      <MemberSignature Language="F#" Value="Currency = 6" Usage="Microsoft.VisualBasic.VariantType.Currency" />
+      <MemberSignature Language="C++ CLI" Value="Currency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -103,6 +125,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Currency. This member is equivalent to the Visual Basic constant <see langword="vbCurrency" />.</summary>
       </Docs>
@@ -111,6 +134,9 @@
       <MemberSignature Language="C#" Value="DataObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType DataObject = int32(13)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.DataObject" />
+      <MemberSignature Language="VB.NET" Value="DataObject" />
+      <MemberSignature Language="F#" Value="DataObject = 13" Usage="Microsoft.VisualBasic.VariantType.DataObject" />
+      <MemberSignature Language="C++ CLI" Value="DataObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -119,6 +145,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>DataObject.</summary>
       </Docs>
@@ -127,6 +154,9 @@
       <MemberSignature Language="C#" Value="Date" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Date = int32(7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Date" />
+      <MemberSignature Language="VB.NET" Value="Date" />
+      <MemberSignature Language="F#" Value="Date = 7" Usage="Microsoft.VisualBasic.VariantType.Date" />
+      <MemberSignature Language="C++ CLI" Value="Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -135,6 +165,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>
           <see langword="Date" />. (0:00:00 on January 1, 0001 through 11:59:59 PM on December 31, 9999.) This member is equivalent to the Visual Basic constant <see langword="vbDate" />.</summary>
@@ -144,6 +175,9 @@
       <MemberSignature Language="C#" Value="Decimal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Decimal = int32(14)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Decimal" />
+      <MemberSignature Language="F#" Value="Decimal = 14" Usage="Microsoft.VisualBasic.VariantType.Decimal" />
+      <MemberSignature Language="C++ CLI" Value="Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -152,6 +186,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>
           <see langword="Decimal" />. (0 through +/-79,228,162,514,264,337,593,543,950,335 with no decimal point; 0 through +/-7.9228162514264337593543950335 with 28 places to the right of the decimal; smallest non-zero number is +/-0.0000000000000000000000000001.) This member is equivalent to the Visual Basic constant <see langword="vbDecimal" />.</summary>
@@ -161,6 +196,9 @@
       <MemberSignature Language="C#" Value="Double" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Double = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Double" />
+      <MemberSignature Language="VB.NET" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 5" Usage="Microsoft.VisualBasic.VariantType.Double" />
+      <MemberSignature Language="C++ CLI" Value="Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -169,6 +207,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>
           <see langword="Double" />. (-1.79769313486231E+308 through -4.94065645841247E-324 for negative values; 4.94065645841247E-324 through 1.79769313486231E+308 for positive values.) This member is equivalent to the Visual Basic constant <see langword="vbDouble" />.</summary>
@@ -178,6 +217,9 @@
       <MemberSignature Language="C#" Value="Empty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Empty = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Empty" />
+      <MemberSignature Language="VB.NET" Value="Empty" />
+      <MemberSignature Language="F#" Value="Empty = 0" Usage="Microsoft.VisualBasic.VariantType.Empty" />
+      <MemberSignature Language="C++ CLI" Value="Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -186,6 +228,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Null reference. This member is equivalent to the Visual Basic constant <see langword="vbEmpty" />.</summary>
       </Docs>
@@ -194,6 +237,9 @@
       <MemberSignature Language="C#" Value="Error" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Error = int32(10)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Error" />
+      <MemberSignature Language="VB.NET" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 10" Usage="Microsoft.VisualBasic.VariantType.Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -202,6 +248,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>
           <see cref="T:System.Exception" />
@@ -212,6 +259,9 @@
       <MemberSignature Language="C#" Value="Integer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Integer = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Integer" />
+      <MemberSignature Language="VB.NET" Value="Integer" />
+      <MemberSignature Language="F#" Value="Integer = 3" Usage="Microsoft.VisualBasic.VariantType.Integer" />
+      <MemberSignature Language="C++ CLI" Value="Integer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -220,6 +270,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>
           <see langword="Integer" />. (-2,147,483,648 through 2,147,483,647.) This member is equivalent to the Visual Basic constant <see langword="vbInteger" />.</summary>
@@ -229,6 +280,9 @@
       <MemberSignature Language="C#" Value="Long" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Long = int32(20)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Long" />
+      <MemberSignature Language="VB.NET" Value="Long" />
+      <MemberSignature Language="F#" Value="Long = 20" Usage="Microsoft.VisualBasic.VariantType.Long" />
+      <MemberSignature Language="C++ CLI" Value="Long" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -237,6 +291,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>
           <see langword="Long" />. (-9,223,372,036,854,775,808 through 9,223,372,036,854,775,807.) This member is equivalent to the Visual Basic constant <see langword="vbLong" />.</summary>
@@ -246,6 +301,9 @@
       <MemberSignature Language="C#" Value="Null" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Null = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Null" />
+      <MemberSignature Language="VB.NET" Value="Null" />
+      <MemberSignature Language="F#" Value="Null = 1" Usage="Microsoft.VisualBasic.VariantType.Null" />
+      <MemberSignature Language="C++ CLI" Value="Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -254,6 +312,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Null object. This member is equivalent to the Visual Basic constant <see langword="vbNull" />.</summary>
       </Docs>
@@ -262,6 +321,9 @@
       <MemberSignature Language="C#" Value="Object" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Object = int32(9)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Object" />
+      <MemberSignature Language="VB.NET" Value="Object" />
+      <MemberSignature Language="F#" Value="Object = 9" Usage="Microsoft.VisualBasic.VariantType.Object" />
+      <MemberSignature Language="C++ CLI" Value="Object" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -270,6 +332,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Any type can be stored in a variable of type <see langword="Object" />. This member is equivalent to the Visual Basic constant <see langword="vbObject" />.</summary>
       </Docs>
@@ -278,6 +341,9 @@
       <MemberSignature Language="C#" Value="Short" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Short = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Short" />
+      <MemberSignature Language="VB.NET" Value="Short" />
+      <MemberSignature Language="F#" Value="Short = 2" Usage="Microsoft.VisualBasic.VariantType.Short" />
+      <MemberSignature Language="C++ CLI" Value="Short" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -286,6 +352,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
           <see langword="Short" />. (-32,768 through 32,767.)</summary>
@@ -295,6 +362,9 @@
       <MemberSignature Language="C#" Value="Single" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Single = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Single" />
+      <MemberSignature Language="VB.NET" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 4" Usage="Microsoft.VisualBasic.VariantType.Single" />
+      <MemberSignature Language="C++ CLI" Value="Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -303,6 +373,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>
           <see langword="Single" />. (-3.402823E+38 through -1.401298E-45 for negative values; 1.401298E-45 through 3.402823E+38 for positive values.) This member is equivalent to the Visual Basic constant <see langword="vbSingle" />.</summary>
@@ -312,6 +383,9 @@
       <MemberSignature Language="C#" Value="String" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType String = int32(8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.String" />
+      <MemberSignature Language="VB.NET" Value="String" />
+      <MemberSignature Language="F#" Value="String = 8" Usage="Microsoft.VisualBasic.VariantType.String" />
+      <MemberSignature Language="C++ CLI" Value="String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -320,6 +394,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>
           <see langword="String" />. (0 to approximately 2 billion Unicode characters.) This member is equivalent to the Visual Basic constant <see langword="vbString" />.</summary>
@@ -329,6 +404,9 @@
       <MemberSignature Language="C#" Value="UserDefinedType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType UserDefinedType = int32(36)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.UserDefinedType" />
+      <MemberSignature Language="VB.NET" Value="UserDefinedType" />
+      <MemberSignature Language="F#" Value="UserDefinedType = 36" Usage="Microsoft.VisualBasic.VariantType.UserDefinedType" />
+      <MemberSignature Language="C++ CLI" Value="UserDefinedType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -337,6 +415,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>36</MemberValue>
       <Docs>
         <summary>User-defined type. Each member of the structure has a range determined by its data type and independent of the ranges of the other members. This member is equivalent to the Visual Basic constant <see langword="vbUserDefinedType" />.</summary>
       </Docs>
@@ -345,6 +424,9 @@
       <MemberSignature Language="C#" Value="Variant" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VariantType Variant = int32(12)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VariantType.Variant" />
+      <MemberSignature Language="VB.NET" Value="Variant" />
+      <MemberSignature Language="F#" Value="Variant = 12" Usage="Microsoft.VisualBasic.VariantType.Variant" />
+      <MemberSignature Language="C++ CLI" Value="Variant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -353,6 +435,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VariantType</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>
           <see langword="Variant" />. This member is equivalent to the Visual Basic constant <see langword="vbVariant" />.</summary>

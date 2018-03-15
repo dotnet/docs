@@ -1,7 +1,10 @@
-<Type Name="WebPermission" FullName="System.Net.WebPermission">
+﻿<Type Name="WebPermission" FullName="System.Net.WebPermission">
   <TypeSignature Language="C#" Value="public sealed class WebPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit WebPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebPermission" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
+  <TypeSignature Language="F#" Value="type WebPermission = class&#xA;    inherit CodeAccessPermission&#xA;    interface IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -64,10 +67,22 @@
     <altmember cref="T:System.Net.NetworkAccess" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Net.WebPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebPermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermission.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPermission();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -96,6 +111,9 @@
       <MemberSignature Language="C#" Value="public WebPermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
+      <MemberSignature Language="F#" Value="new System.Net.WebPermission : System.Security.Permissions.PermissionState -&gt; System.Net.WebPermission" Usage="new System.Net.WebPermission state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -136,6 +154,9 @@
       <MemberSignature Language="C#" Value="public WebPermission (System.Net.NetworkAccess access, string uriString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.NetworkAccess access, string uriString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermission.#ctor(System.Net.NetworkAccess,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (access As NetworkAccess, uriString As String)" />
+      <MemberSignature Language="F#" Value="new System.Net.WebPermission : System.Net.NetworkAccess * string -&gt; System.Net.WebPermission" Usage="new System.Net.WebPermission (access, uriString)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPermission(System::Net::NetworkAccess access, System::String ^ uriString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -180,6 +201,9 @@
       <MemberSignature Language="C#" Value="public WebPermission (System.Net.NetworkAccess access, System.Text.RegularExpressions.Regex uriRegex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.NetworkAccess access, class System.Text.RegularExpressions.Regex uriRegex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermission.#ctor(System.Net.NetworkAccess,System.Text.RegularExpressions.Regex)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (access As NetworkAccess, uriRegex As Regex)" />
+      <MemberSignature Language="F#" Value="new System.Net.WebPermission : System.Net.NetworkAccess * System.Text.RegularExpressions.Regex -&gt; System.Net.WebPermission" Usage="new System.Net.WebPermission (access, uriRegex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPermission(System::Net::NetworkAccess access, System::Text::RegularExpressions::Regex ^ uriRegex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -228,6 +252,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator AcceptList { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator AcceptList" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebPermission.AcceptList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AcceptList As IEnumerator" />
+      <MemberSignature Language="F#" Value="member this.AcceptList : System.Collections.IEnumerator" Usage="System.Net.WebPermission.AcceptList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerator ^ AcceptList { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -270,10 +297,23 @@
         <altmember cref="M:System.Net.WebPermission.AddPermission(System.Net.NetworkAccess,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddPermission">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified URI with the specified access rights to the current <see cref="T:System.Net.WebPermission" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddPermission">
       <MemberSignature Language="C#" Value="public void AddPermission (System.Net.NetworkAccess access, string uriString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPermission(valuetype System.Net.NetworkAccess access, string uriString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermission.AddPermission(System.Net.NetworkAccess,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddPermission (access As NetworkAccess, uriString As String)" />
+      <MemberSignature Language="F#" Value="member this.AddPermission : System.Net.NetworkAccess * string -&gt; unit" Usage="webPermission.AddPermission (access, uriString)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPermission(System::Net::NetworkAccess access, System::String ^ uriString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -327,6 +367,9 @@
       <MemberSignature Language="C#" Value="public void AddPermission (System.Net.NetworkAccess access, System.Text.RegularExpressions.Regex uriRegex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPermission(valuetype System.Net.NetworkAccess access, class System.Text.RegularExpressions.Regex uriRegex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermission.AddPermission(System.Net.NetworkAccess,System.Text.RegularExpressions.Regex)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddPermission (access As NetworkAccess, uriRegex As Regex)" />
+      <MemberSignature Language="F#" Value="member this.AddPermission : System.Net.NetworkAccess * System.Text.RegularExpressions.Regex -&gt; unit" Usage="webPermission.AddPermission (access, uriRegex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPermission(System::Net::NetworkAccess access, System::Text::RegularExpressions::Regex ^ uriRegex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -382,6 +425,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator ConnectList { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator ConnectList" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebPermission.ConnectList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectList As IEnumerator" />
+      <MemberSignature Language="F#" Value="member this.ConnectList : System.Collections.IEnumerator" Usage="System.Net.WebPermission.ConnectList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerator ^ ConnectList { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -428,6 +474,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermission.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="webPermission.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -468,6 +517,8 @@
       <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement securityElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="webPermission.FromXml securityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -516,6 +567,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermission.Intersect(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="webPermission.Intersect target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -563,6 +617,9 @@
       <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="webPermission.IsSubsetOf target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -609,6 +666,9 @@
       <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermission.IsUnrestricted" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsUnrestricted : unit -&gt; bool" Usage="webPermission.IsUnrestricted " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -645,6 +705,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermission.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="webPermission.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -686,6 +749,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebPermission.Union(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="webPermission.Union target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -727,25 +793,5 @@
         <altmember cref="T:System.Security.Permissions.PermissionState" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddPermission">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified URI with the specified access rights to the current <see cref="T:System.Net.WebPermission" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Net.WebPermission" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

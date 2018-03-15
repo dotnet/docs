@@ -1,7 +1,10 @@
-<Type Name="ItemContainerTemplateSelector" FullName="System.Windows.Controls.ItemContainerTemplateSelector">
+﻿<Type Name="ItemContainerTemplateSelector" FullName="System.Windows.Controls.ItemContainerTemplateSelector">
   <TypeSignature Language="C#" Value="public abstract class ItemContainerTemplateSelector" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ItemContainerTemplateSelector extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ItemContainerTemplateSelector" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ItemContainerTemplateSelector" />
+  <TypeSignature Language="F#" Value="type ItemContainerTemplateSelector = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ItemContainerTemplateSelector abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="protected ItemContainerTemplateSelector ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerTemplateSelector.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ItemContainerTemplateSelector();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.DataTemplate SelectTemplate (object item, System.Windows.Controls.ItemsControl parentItemsControl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.DataTemplate SelectTemplate(object item, class System.Windows.Controls.ItemsControl parentItemsControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ItemContainerTemplateSelector.SelectTemplate(System.Object,System.Windows.Controls.ItemsControl)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SelectTemplate (item As Object, parentItemsControl As ItemsControl) As DataTemplate" />
+      <MemberSignature Language="F#" Value="abstract member SelectTemplate : obj * System.Windows.Controls.ItemsControl -&gt; System.Windows.DataTemplate&#xA;override this.SelectTemplate : obj * System.Windows.Controls.ItemsControl -&gt; System.Windows.DataTemplate" Usage="itemContainerTemplateSelector.SelectTemplate (item, parentItemsControl)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::DataTemplate ^ SelectTemplate(System::Object ^ item, System::Windows::Controls::ItemsControl ^ parentItemsControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="WorkflowServiceHostFactory" FullName="System.ServiceModel.Activation.WorkflowServiceHostFactory">
+﻿<Type Name="WorkflowServiceHostFactory" FullName="System.ServiceModel.Activation.WorkflowServiceHostFactory">
   <TypeSignature Language="C#" Value="public class WorkflowServiceHostFactory : System.ServiceModel.Activation.ServiceHostFactoryBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowServiceHostFactory extends System.ServiceModel.Activation.ServiceHostFactoryBase" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activation.WorkflowServiceHostFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowServiceHostFactory&#xA;Inherits ServiceHostFactoryBase" />
+  <TypeSignature Language="F#" Value="type WorkflowServiceHostFactory = class&#xA;    inherit ServiceHostFactoryBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowServiceHostFactory : System::ServiceModel::Activation::ServiceHostFactoryBase" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="public WorkflowServiceHostFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.WorkflowServiceHostFactory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowServiceHostFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -50,6 +55,9 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.ServiceHostBase CreateServiceHost (string constructorString, Uri[] baseAddresses);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.ServiceHostBase CreateServiceHost(string constructorString, class System.Uri[] baseAddresses) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activation.WorkflowServiceHostFactory.CreateServiceHost(System.String,System.Uri[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateServiceHost (constructorString As String, baseAddresses As Uri()) As ServiceHostBase" />
+      <MemberSignature Language="F#" Value="override this.CreateServiceHost : string * Uri[] -&gt; System.ServiceModel.ServiceHostBase" Usage="workflowServiceHostFactory.CreateServiceHost (constructorString, baseAddresses)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::ServiceHostBase ^ CreateServiceHost(System::String ^ constructorString, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

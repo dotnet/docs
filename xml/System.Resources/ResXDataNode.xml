@@ -1,7 +1,10 @@
-<Type Name="ResXDataNode" FullName="System.Resources.ResXDataNode">
+﻿<Type Name="ResXDataNode" FullName="System.Resources.ResXDataNode">
   <TypeSignature Language="C#" Value="public sealed class ResXDataNode : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ResXDataNode extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXDataNode" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResXDataNode&#xA;Implements ISerializable" />
+  <TypeSignature Language="F#" Value="type ResXDataNode = class&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResXDataNode sealed : System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,10 +44,22 @@
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This type cannot be used by partially trusted code.</permission>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXDataNode" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ResXDataNode (string name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.#ctor(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As Object)" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXDataNode : string * obj -&gt; System.Resources.ResXDataNode" Usage="new System.Resources.ResXDataNode (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXDataNode(System::String ^ name, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -71,6 +86,9 @@
       <MemberSignature Language="C#" Value="public ResXDataNode (string name, System.Resources.ResXFileRef fileRef);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Resources.ResXFileRef fileRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.#ctor(System.String,System.Resources.ResXFileRef)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, fileRef As ResXFileRef)" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXDataNode : string * System.Resources.ResXFileRef -&gt; System.Resources.ResXDataNode" Usage="new System.Resources.ResXDataNode (name, fileRef)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXDataNode(System::String ^ name, System::Resources::ResXFileRef ^ fileRef);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +114,9 @@
       <MemberSignature Language="C#" Value="public ResXDataNode (string name, object value, Func&lt;Type,string&gt; typeNameConverter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, object value, class System.Func`2&lt;class System.Type, string&gt; typeNameConverter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.#ctor(System.String,System.Object,System.Func{System.Type,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As Object, typeNameConverter As Func(Of Type, String))" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXDataNode : string * obj * Func&lt;Type, string&gt; -&gt; System.Resources.ResXDataNode" Usage="new System.Resources.ResXDataNode (name, value, typeNameConverter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXDataNode(System::String ^ name, System::Object ^ value, Func&lt;Type ^, System::String ^&gt; ^ typeNameConverter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -124,6 +145,9 @@
       <MemberSignature Language="C#" Value="public ResXDataNode (string name, System.Resources.ResXFileRef fileRef, Func&lt;Type,string&gt; typeNameConverter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Resources.ResXFileRef fileRef, class System.Func`2&lt;class System.Type, string&gt; typeNameConverter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.#ctor(System.String,System.Resources.ResXFileRef,System.Func{System.Type,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, fileRef As ResXFileRef, typeNameConverter As Func(Of Type, String))" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXDataNode : string * System.Resources.ResXFileRef * Func&lt;Type, string&gt; -&gt; System.Resources.ResXDataNode" Usage="new System.Resources.ResXDataNode (name, fileRef, typeNameConverter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXDataNode(System::String ^ name, System::Resources::ResXFileRef ^ fileRef, Func&lt;Type ^, System::String ^&gt; ^ typeNameConverter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -151,6 +175,9 @@
       <MemberSignature Language="C#" Value="public string Comment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Comment" />
       <MemberSignature Language="DocId" Value="P:System.Resources.ResXDataNode.Comment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Comment As String" />
+      <MemberSignature Language="F#" Value="member this.Comment : string with get, set" Usage="System.Resources.ResXDataNode.Comment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comment { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -183,6 +210,9 @@
       <MemberSignature Language="C#" Value="public System.Resources.ResXFileRef FileRef { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Resources.ResXFileRef FileRef" />
       <MemberSignature Language="DocId" Value="P:System.Resources.ResXDataNode.FileRef" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileRef As ResXFileRef" />
+      <MemberSignature Language="F#" Value="member this.FileRef : System.Resources.ResXFileRef" Usage="System.Resources.ResXDataNode.FileRef" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Resources::ResXFileRef ^ FileRef { System::Resources::ResXFileRef ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -201,6 +231,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point GetNodePosition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Point GetNodePosition() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.GetNodePosition" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNodePosition () As Point" />
+      <MemberSignature Language="F#" Value="member this.GetNodePosition : unit -&gt; System.Drawing.Point" Usage="resXDataNode.GetNodePosition " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Point GetNodePosition();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -216,10 +249,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the object that is stored by this node.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetValue">
       <MemberSignature Language="C#" Value="public object GetValue (System.ComponentModel.Design.ITypeResolutionService typeResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(class System.ComponentModel.Design.ITypeResolutionService typeResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.GetValue(System.ComponentModel.Design.ITypeResolutionService)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValue (typeResolver As ITypeResolutionService) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetValue : System.ComponentModel.Design.ITypeResolutionService -&gt; obj" Usage="resXDataNode.GetValue typeResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::ComponentModel::Design::ITypeResolutionService ^ typeResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -250,6 +295,9 @@
       <MemberSignature Language="C#" Value="public object GetValue (System.Reflection.AssemblyName[] names);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetValue(class System.Reflection.AssemblyName[] names) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.GetValue(System.Reflection.AssemblyName[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValue (names As AssemblyName()) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetValue : System.Reflection.AssemblyName[] -&gt; obj" Usage="resXDataNode.GetValue names" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(cli::array &lt;System::Reflection::AssemblyName ^&gt; ^ names);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -276,10 +324,22 @@
         <exception cref="T:System.TypeLoadException">The corresponding type could not be found, or an appropriate type converter is not available.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetValueTypeName">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the type name for the value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetValueTypeName">
       <MemberSignature Language="C#" Value="public string GetValueTypeName (System.ComponentModel.Design.ITypeResolutionService typeResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetValueTypeName(class System.ComponentModel.Design.ITypeResolutionService typeResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.GetValueTypeName(System.ComponentModel.Design.ITypeResolutionService)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValueTypeName (typeResolver As ITypeResolutionService) As String" />
+      <MemberSignature Language="F#" Value="member this.GetValueTypeName : System.ComponentModel.Design.ITypeResolutionService -&gt; string" Usage="resXDataNode.GetValueTypeName typeResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetValueTypeName(System::ComponentModel::Design::ITypeResolutionService ^ typeResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -303,6 +363,9 @@
       <MemberSignature Language="C#" Value="public string GetValueTypeName (System.Reflection.AssemblyName[] names);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetValueTypeName(class System.Reflection.AssemblyName[] names) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.GetValueTypeName(System.Reflection.AssemblyName[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValueTypeName (names As AssemblyName()) As String" />
+      <MemberSignature Language="F#" Value="member this.GetValueTypeName : System.Reflection.AssemblyName[] -&gt; string" Usage="resXDataNode.GetValueTypeName names" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetValueTypeName(cli::array &lt;System::Reflection::AssemblyName ^&gt; ^ names);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -326,6 +389,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Resources.ResXDataNode.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Resources.ResXDataNode.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -346,7 +412,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo si, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXDataNode.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (si As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ si, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -372,32 +443,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the object that is stored by this node.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXDataNode" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetValueTypeName">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the type name for the value.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="UpdateRowSource" FullName="System.Data.UpdateRowSource">
+﻿<Type Name="UpdateRowSource" FullName="System.Data.UpdateRowSource">
   <TypeSignature Language="C#" Value="public enum UpdateRowSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UpdateRowSource extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.UpdateRowSource" />
+  <TypeSignature Language="VB.NET" Value="Public Enum UpdateRowSource" />
+  <TypeSignature Language="F#" Value="type UpdateRowSource = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class UpdateRowSource" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="Both" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.UpdateRowSource Both = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.UpdateRowSource.Both" />
+      <MemberSignature Language="VB.NET" Value="Both" />
+      <MemberSignature Language="F#" Value="Both = 3" Usage="System.Data.UpdateRowSource.Both" />
+      <MemberSignature Language="C++ CLI" Value="Both" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -55,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Data.UpdateRowSource</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Both the output parameters and the first returned row are mapped to the changed row in the <see cref="T:System.Data.DataSet" />.</summary>
       </Docs>
@@ -63,6 +70,9 @@
       <MemberSignature Language="C#" Value="FirstReturnedRecord" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.UpdateRowSource FirstReturnedRecord = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.UpdateRowSource.FirstReturnedRecord" />
+      <MemberSignature Language="VB.NET" Value="FirstReturnedRecord" />
+      <MemberSignature Language="F#" Value="FirstReturnedRecord = 2" Usage="System.Data.UpdateRowSource.FirstReturnedRecord" />
+      <MemberSignature Language="C++ CLI" Value="FirstReturnedRecord" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -81,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Data.UpdateRowSource</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The data in the first returned row is mapped to the changed row in the <see cref="T:System.Data.DataSet" />.</summary>
       </Docs>
@@ -89,6 +100,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.UpdateRowSource None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.UpdateRowSource.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.UpdateRowSource.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -107,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.Data.UpdateRowSource</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Any returned parameters or rows are ignored.</summary>
       </Docs>
@@ -115,6 +130,9 @@
       <MemberSignature Language="C#" Value="OutputParameters" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.UpdateRowSource OutputParameters = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.UpdateRowSource.OutputParameters" />
+      <MemberSignature Language="VB.NET" Value="OutputParameters" />
+      <MemberSignature Language="F#" Value="OutputParameters = 1" Usage="System.Data.UpdateRowSource.OutputParameters" />
+      <MemberSignature Language="C++ CLI" Value="OutputParameters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -133,6 +151,7 @@
       <ReturnValue>
         <ReturnType>System.Data.UpdateRowSource</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Output parameters are mapped to the changed row in the <see cref="T:System.Data.DataSet" />.</summary>
       </Docs>

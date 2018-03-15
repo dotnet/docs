@@ -1,7 +1,10 @@
-<Type Name="ComponentsLocation" FullName="Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation">
+﻿<Type Name="ComponentsLocation" FullName="Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation">
   <TypeSignature Language="C#" Value="public enum ComponentsLocation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ComponentsLocation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ComponentsLocation" />
+  <TypeSignature Language="F#" Value="type ComponentsLocation = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ComponentsLocation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="Absolute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation Absolute = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.Absolute" />
+      <MemberSignature Language="VB.NET" Value="Absolute" />
+      <MemberSignature Language="F#" Value="Absolute = 2" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.Absolute" />
+      <MemberSignature Language="C++ CLI" Value="Absolute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that products be located at a specific location.</summary>
         <forInternalUseOnly />
@@ -44,6 +51,9 @@
       <MemberSignature Language="C#" Value="HomeSite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation HomeSite = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.HomeSite" />
+      <MemberSignature Language="VB.NET" Value="HomeSite" />
+      <MemberSignature Language="F#" Value="HomeSite = 0" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.HomeSite" />
+      <MemberSignature Language="C++ CLI" Value="HomeSite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that products be found according to the redistributable vendor's designated URL.</summary>
         <forInternalUseOnly />
@@ -61,6 +72,9 @@
       <MemberSignature Language="C#" Value="Relative" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation Relative = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.Relative" />
+      <MemberSignature Language="VB.NET" Value="Relative" />
+      <MemberSignature Language="F#" Value="Relative = 1" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation.Relative" />
+      <MemberSignature Language="C++ CLI" Value="Relative" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -69,6 +83,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Deployment.Bootstrapper.ComponentsLocation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that products be located relative to the generated bootstrapper.</summary>
         <forInternalUseOnly />

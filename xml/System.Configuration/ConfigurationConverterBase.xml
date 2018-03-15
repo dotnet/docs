@@ -1,7 +1,10 @@
-<Type Name="ConfigurationConverterBase" FullName="System.Configuration.ConfigurationConverterBase">
+﻿<Type Name="ConfigurationConverterBase" FullName="System.Configuration.ConfigurationConverterBase">
   <TypeSignature Language="C#" Value="public abstract class ConfigurationConverterBase : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ConfigurationConverterBase extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationConverterBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ConfigurationConverterBase&#xA;Inherits TypeConverter" />
+  <TypeSignature Language="F#" Value="type ConfigurationConverterBase = class&#xA;    inherit TypeConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationConverterBase abstract : System::ComponentModel::TypeConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +82,8 @@
       <MemberSignature Language="C#" Value="protected ConfigurationConverterBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationConverterBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ConfigurationConverterBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -105,6 +110,8 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext ctx, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext ctx, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationConverterBase.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberSignature Language="F#" Value="override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="configurationConverterBase.CanConvertFrom (ctx, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ ctx, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -149,6 +156,8 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertTo (System.ComponentModel.ITypeDescriptorContext ctx, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertTo(class System.ComponentModel.ITypeDescriptorContext ctx, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationConverterBase.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberSignature Language="F#" Value="override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="configurationConverterBase.CanConvertTo (ctx, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertTo(System::ComponentModel::ITypeDescriptorContext ^ ctx, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ApplicationId" FullName="System.ApplicationId">
+﻿<Type Name="ApplicationId" FullName="System.ApplicationId">
   <TypeSignature Language="C#" Value="public sealed class ApplicationId" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ApplicationId extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ApplicationId" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationId" />
+  <TypeSignature Language="F#" Value="type ApplicationId = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationId sealed" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +53,8 @@
       <MemberSignature Language="C#" Value="public ApplicationId (byte[] publicKeyToken, string name, Version version, string processorArchitecture, string culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] publicKeyToken, string name, class System.Version version, string processorArchitecture, string culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ApplicationId.#ctor(System.Byte[],System.String,System.Version,System.String,System.String)" />
+      <MemberSignature Language="F#" Value="new ApplicationId : byte[] * string * Version * string * string -&gt; ApplicationId" Usage="new System.ApplicationId (publicKeyToken, name, version, processorArchitecture, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationId(cli::array &lt;System::Byte&gt; ^ publicKeyToken, System::String ^ name, Version ^ version, System::String ^ processorArchitecture, System::String ^ culture);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -104,6 +109,9 @@
       <MemberSignature Language="C#" Value="public ApplicationId Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ApplicationId Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ApplicationId.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Function Copy () As ApplicationId" />
+      <MemberSignature Language="F#" Value="member this.Copy : unit -&gt; ApplicationId" Usage="applicationId.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationId ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -139,6 +147,9 @@
       <MemberSignature Language="C#" Value="public string Culture { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Culture" />
       <MemberSignature Language="DocId" Value="P:System.ApplicationId.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Culture As String" />
+      <MemberSignature Language="F#" Value="member this.Culture : string" Usage="System.ApplicationId.Culture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Culture { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -183,6 +194,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ApplicationId.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="applicationId.Equals o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -222,6 +236,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ApplicationId.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="applicationId.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -257,6 +274,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ApplicationId.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ApplicationId.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -299,6 +319,9 @@
       <MemberSignature Language="C#" Value="public string ProcessorArchitecture { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProcessorArchitecture" />
       <MemberSignature Language="DocId" Value="P:System.ApplicationId.ProcessorArchitecture" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProcessorArchitecture As String" />
+      <MemberSignature Language="F#" Value="member this.ProcessorArchitecture : string" Usage="System.ApplicationId.ProcessorArchitecture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProcessorArchitecture { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -341,6 +364,9 @@
       <MemberSignature Language="C#" Value="public byte[] PublicKeyToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] PublicKeyToken" />
       <MemberSignature Language="DocId" Value="P:System.ApplicationId.PublicKeyToken" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PublicKeyToken As Byte()" />
+      <MemberSignature Language="F#" Value="member this.PublicKeyToken : byte[]" Usage="System.ApplicationId.PublicKeyToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ PublicKeyToken { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -385,6 +411,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ApplicationId.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="applicationId.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -420,6 +449,9 @@
       <MemberSignature Language="C#" Value="public Version Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version Version" />
       <MemberSignature Language="DocId" Value="P:System.ApplicationId.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Version" />
+      <MemberSignature Language="F#" Value="member this.Version : Version" Usage="System.ApplicationId.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ Version { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

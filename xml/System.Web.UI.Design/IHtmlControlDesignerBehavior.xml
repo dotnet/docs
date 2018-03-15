@@ -1,7 +1,10 @@
-<Type Name="IHtmlControlDesignerBehavior" FullName="System.Web.UI.Design.IHtmlControlDesignerBehavior">
+﻿<Type Name="IHtmlControlDesignerBehavior" FullName="System.Web.UI.Design.IHtmlControlDesignerBehavior">
   <TypeSignature Language="C#" Value="public interface IHtmlControlDesignerBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHtmlControlDesignerBehavior" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IHtmlControlDesignerBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IHtmlControlDesignerBehavior" />
+  <TypeSignature Language="F#" Value="type IHtmlControlDesignerBehavior = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IHtmlControlDesignerBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.HtmlControlDesigner Designer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.HtmlControlDesigner Designer" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IHtmlControlDesignerBehavior.Designer" />
+      <MemberSignature Language="VB.NET" Value="Public Property Designer As HtmlControlDesigner" />
+      <MemberSignature Language="F#" Value="member this.Designer : System.Web.UI.Design.HtmlControlDesigner with get, set" Usage="System.Web.UI.Design.IHtmlControlDesignerBehavior.Designer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::HtmlControlDesigner ^ Designer { System::Web::UI::Design::HtmlControlDesigner ^ get(); void set(System::Web::UI::Design::HtmlControlDesigner ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -57,6 +63,9 @@
       <MemberSignature Language="C#" Value="public object DesignTimeElement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DesignTimeElement" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IHtmlControlDesignerBehavior.DesignTimeElement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignTimeElement As Object" />
+      <MemberSignature Language="F#" Value="member this.DesignTimeElement : obj" Usage="System.Web.UI.Design.IHtmlControlDesignerBehavior.DesignTimeElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DesignTimeElement { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -82,6 +91,9 @@
       <MemberSignature Language="C#" Value="public object GetAttribute (string attribute, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetAttribute(string attribute, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHtmlControlDesignerBehavior.GetAttribute(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAttribute (attribute As String, ignoreCase As Boolean) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetAttribute : string * bool -&gt; obj" Usage="iHtmlControlDesignerBehavior.GetAttribute (attribute, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetAttribute(System::String ^ attribute, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -118,6 +130,9 @@
       <MemberSignature Language="C#" Value="public object GetStyleAttribute (string attribute, bool designTimeOnly, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetStyleAttribute(string attribute, bool designTimeOnly, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHtmlControlDesignerBehavior.GetStyleAttribute(System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStyleAttribute (attribute As String, designTimeOnly As Boolean, ignoreCase As Boolean) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetStyleAttribute : string * bool * bool -&gt; obj" Usage="iHtmlControlDesignerBehavior.GetStyleAttribute (attribute, designTimeOnly, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetStyleAttribute(System::String ^ attribute, bool designTimeOnly, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -157,6 +172,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAttribute (string attribute, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAttribute(string attribute, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHtmlControlDesignerBehavior.RemoveAttribute(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAttribute (attribute As String, ignoreCase As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAttribute : string * bool -&gt; unit" Usage="iHtmlControlDesignerBehavior.RemoveAttribute (attribute, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAttribute(System::String ^ attribute, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -192,6 +210,9 @@
       <MemberSignature Language="C#" Value="public void RemoveStyleAttribute (string attribute, bool designTimeOnly, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveStyleAttribute(string attribute, bool designTimeOnly, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHtmlControlDesignerBehavior.RemoveStyleAttribute(System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveStyleAttribute (attribute As String, designTimeOnly As Boolean, ignoreCase As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveStyleAttribute : string * bool * bool -&gt; unit" Usage="iHtmlControlDesignerBehavior.RemoveStyleAttribute (attribute, designTimeOnly, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveStyleAttribute(System::String ^ attribute, bool designTimeOnly, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -219,6 +240,9 @@
       <MemberSignature Language="C#" Value="public void SetAttribute (string attribute, object value, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetAttribute(string attribute, object value, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHtmlControlDesignerBehavior.SetAttribute(System.String,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAttribute (attribute As String, value As Object, ignoreCase As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member SetAttribute : string * obj * bool -&gt; unit" Usage="iHtmlControlDesignerBehavior.SetAttribute (attribute, value, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAttribute(System::String ^ attribute, System::Object ^ value, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -256,6 +280,9 @@
       <MemberSignature Language="C#" Value="public void SetStyleAttribute (string attribute, bool designTimeOnly, object value, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetStyleAttribute(string attribute, bool designTimeOnly, object value, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IHtmlControlDesignerBehavior.SetStyleAttribute(System.String,System.Boolean,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetStyleAttribute (attribute As String, designTimeOnly As Boolean, value As Object, ignoreCase As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member SetStyleAttribute : string * bool * obj * bool -&gt; unit" Usage="iHtmlControlDesignerBehavior.SetStyleAttribute (attribute, designTimeOnly, value, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetStyleAttribute(System::String ^ attribute, bool designTimeOnly, System::Object ^ value, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="DurableOperationContext" FullName="System.ServiceModel.Dispatcher.DurableOperationContext">
+﻿<Type Name="DurableOperationContext" FullName="System.ServiceModel.Dispatcher.DurableOperationContext">
   <TypeSignature Language="C#" Value="public static class DurableOperationContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DurableOperationContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.DurableOperationContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class DurableOperationContext" />
+  <TypeSignature Language="F#" Value="type DurableOperationContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DurableOperationContext abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="public static void AbortInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AbortInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.DurableOperationContext.AbortInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AbortInstance ()" />
+      <MemberSignature Language="F#" Value="static member AbortInstance : unit -&gt; unit" Usage="System.ServiceModel.Dispatcher.DurableOperationContext.AbortInstance " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AbortInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -49,6 +55,9 @@
       <MemberSignature Language="C#" Value="public static void CompleteInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CompleteInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.DurableOperationContext.CompleteInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CompleteInstance ()" />
+      <MemberSignature Language="F#" Value="static member CompleteInstance : unit -&gt; unit" Usage="System.ServiceModel.Dispatcher.DurableOperationContext.CompleteInstance " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CompleteInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -67,6 +76,9 @@
       <MemberSignature Language="C#" Value="public static Guid InstanceId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Guid InstanceId" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DurableOperationContext.InstanceId" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InstanceId As Guid" />
+      <MemberSignature Language="F#" Value="member this.InstanceId : Guid" Usage="System.ServiceModel.Dispatcher.DurableOperationContext.InstanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Guid InstanceId { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

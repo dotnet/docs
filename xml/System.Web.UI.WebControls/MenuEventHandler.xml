@@ -1,7 +1,10 @@
-<Type Name="MenuEventHandler" FullName="System.Web.UI.WebControls.MenuEventHandler">
+﻿<Type Name="MenuEventHandler" FullName="System.Web.UI.WebControls.MenuEventHandler">
   <TypeSignature Language="C#" Value="public delegate void MenuEventHandler(object sender, MenuEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MenuEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MenuEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub MenuEventHandler(sender As Object, e As MenuEventArgs)" />
+  <TypeSignature Language="F#" Value="type MenuEventHandler = delegate of obj * MenuEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void MenuEventHandler(System::Object ^ sender, MenuEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

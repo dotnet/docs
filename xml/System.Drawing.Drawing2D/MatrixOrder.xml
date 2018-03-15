@@ -1,7 +1,10 @@
-<Type Name="MatrixOrder" FullName="System.Drawing.Drawing2D.MatrixOrder">
+﻿<Type Name="MatrixOrder" FullName="System.Drawing.Drawing2D.MatrixOrder">
   <TypeSignature Language="C#" Value="public enum MatrixOrder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MatrixOrder extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.MatrixOrder" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MatrixOrder" />
+  <TypeSignature Language="F#" Value="type MatrixOrder = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MatrixOrder" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Append" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.MatrixOrder Append = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.MatrixOrder.Append" />
+      <MemberSignature Language="VB.NET" Value="Append" />
+      <MemberSignature Language="F#" Value="Append = 1" Usage="System.Drawing.Drawing2D.MatrixOrder.Append" />
+      <MemberSignature Language="C++ CLI" Value="Append" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.MatrixOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The new operation is applied after the old operation.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Prepend" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.MatrixOrder Prepend = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.MatrixOrder.Prepend" />
+      <MemberSignature Language="VB.NET" Value="Prepend" />
+      <MemberSignature Language="F#" Value="Prepend = 0" Usage="System.Drawing.Drawing2D.MatrixOrder.Prepend" />
+      <MemberSignature Language="C++ CLI" Value="Prepend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.MatrixOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The new operation is applied before the old operation.</summary>
       </Docs>

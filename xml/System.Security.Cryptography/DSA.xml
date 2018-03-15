@@ -1,7 +1,10 @@
-<Type Name="DSA" FullName="System.Security.Cryptography.DSA">
+﻿<Type Name="DSA" FullName="System.Security.Cryptography.DSA">
   <TypeSignature Language="C#" Value="public abstract class DSA : System.Security.Cryptography.AsymmetricAlgorithm" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DSA extends System.Security.Cryptography.AsymmetricAlgorithm" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DSA" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DSA&#xA;Inherits AsymmetricAlgorithm" />
+  <TypeSignature Language="F#" Value="type DSA = class&#xA;    inherit AsymmetricAlgorithm" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DSA abstract : System::Security::Cryptography::AsymmetricAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +49,8 @@
       <MemberSignature Language="C#" Value="protected DSA ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DSA();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -66,10 +71,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a cryptographic object used to perform the asymmetric algorithm.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.DSA Create ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.DSA Create() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.Create" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As DSA" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.DSA" Usage="System.Security.Cryptography.DSA.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::DSA ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -98,6 +116,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.DSA Create (int keySizeInBits);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.DSA Create(int32 keySizeInBits) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.Create(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (keySizeInBits As Integer) As DSA" />
+      <MemberSignature Language="F#" Value="static member Create : int -&gt; System.Security.Cryptography.DSA" Usage="System.Security.Cryptography.DSA.Create keySizeInBits" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::DSA ^ Create(int keySizeInBits);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -120,6 +141,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.DSA Create (System.Security.Cryptography.DSAParameters parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.DSA Create(valuetype System.Security.Cryptography.DSAParameters parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.Create(System.Security.Cryptography.DSAParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (parameters As DSAParameters) As DSA" />
+      <MemberSignature Language="F#" Value="static member Create : System.Security.Cryptography.DSAParameters -&gt; System.Security.Cryptography.DSA" Usage="System.Security.Cryptography.DSA.Create parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::DSA ^ Create(System::Security::Cryptography::DSAParameters parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -142,6 +166,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.DSA Create (string algName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.DSA Create(string algName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.Create(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algName As String) As DSA" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.DSA" Usage="System.Security.Cryptography.DSA.Create algName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::DSA ^ Create(System::String ^ algName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -180,6 +207,9 @@
       <MemberSignature Language="C#" Value="public abstract byte[] CreateSignature (byte[] rgbHash);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] CreateSignature(unsigned int8[] rgbHash) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.CreateSignature(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateSignature (rgbHash As Byte()) As Byte()" />
+      <MemberSignature Language="F#" Value="abstract member CreateSignature : byte[] -&gt; byte[]" Usage="dSA.CreateSignature rgbHash" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ CreateSignature(cli::array &lt;System::Byte&gt; ^ rgbHash);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -211,6 +241,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Security.Cryptography.DSAParameters ExportParameters (bool includePrivateParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Security.Cryptography.DSAParameters ExportParameters(bool includePrivateParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.ExportParameters(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ExportParameters (includePrivateParameters As Boolean) As DSAParameters" />
+      <MemberSignature Language="F#" Value="abstract member ExportParameters : bool -&gt; System.Security.Cryptography.DSAParameters" Usage="dSA.ExportParameters includePrivateParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Security::Cryptography::DSAParameters ExportParameters(bool includePrivateParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -243,6 +276,9 @@
       <MemberSignature Language="C#" Value="public override void FromXmlString (string xmlString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXmlString(string xmlString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.FromXmlString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXmlString (xmlString As String)" />
+      <MemberSignature Language="F#" Value="override this.FromXmlString : string -&gt; unit" Usage="dSA.FromXmlString xmlString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXmlString(System::String ^ xmlString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -271,10 +307,23 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">The format of the <paramref name="xmlString" /> parameter is not valid.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HashData">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the hash value of binary data.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="HashData">
       <MemberSignature Language="C#" Value="protected virtual byte[] HashData (System.IO.Stream data, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance unsigned int8[] HashData(class System.IO.Stream data, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function HashData (data As Stream, hashAlgorithm As HashAlgorithmName) As Byte()" />
+      <MemberSignature Language="F#" Value="abstract member HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="dSA.HashData (data, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Byte&gt; ^ HashData(System::IO::Stream ^ data, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -305,6 +354,9 @@
       <MemberSignature Language="C#" Value="protected virtual byte[] HashData (byte[] data, int offset, int count, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance unsigned int8[] HashData(unsigned int8[] data, int32 offset, int32 count, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function HashData (data As Byte(), offset As Integer, count As Integer, hashAlgorithm As HashAlgorithmName) As Byte()" />
+      <MemberSignature Language="F#" Value="abstract member HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="dSA.HashData (data, offset, count, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Byte&gt; ^ HashData(cli::array &lt;System::Byte&gt; ^ data, int offset, int count, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -339,6 +391,9 @@
       <MemberSignature Language="C#" Value="public abstract void ImportParameters (System.Security.Cryptography.DSAParameters parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ImportParameters(valuetype System.Security.Cryptography.DSAParameters parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.ImportParameters(System.Security.Cryptography.DSAParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ImportParameters (parameters As DSAParameters)" />
+      <MemberSignature Language="F#" Value="abstract member ImportParameters : System.Security.Cryptography.DSAParameters -&gt; unit" Usage="dSA.ImportParameters parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ImportParameters(System::Security::Cryptography::DSAParameters parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -365,10 +420,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SignData">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the hash value of the specified data and signs it.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SignData">
       <MemberSignature Language="C#" Value="public byte[] SignData (byte[] data, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] SignData(unsigned int8[] data, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.SignData(System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SignData (data As Byte(), hashAlgorithm As HashAlgorithmName) As Byte()" />
+      <MemberSignature Language="F#" Value="member this.SignData : byte[] * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="dSA.SignData (data, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ SignData(cli::array &lt;System::Byte&gt; ^ data, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -402,6 +470,9 @@
       <MemberSignature Language="C#" Value="public virtual byte[] SignData (System.IO.Stream data, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] SignData(class System.IO.Stream data, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.SignData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SignData (data As Stream, hashAlgorithm As HashAlgorithmName) As Byte()" />
+      <MemberSignature Language="F#" Value="abstract member SignData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.SignData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="dSA.SignData (data, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ SignData(System::IO::Stream ^ data, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -435,6 +506,9 @@
       <MemberSignature Language="C#" Value="public virtual byte[] SignData (byte[] data, int offset, int count, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] SignData(unsigned int8[] data, int32 offset, int32 count, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.SignData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SignData (data As Byte(), offset As Integer, count As Integer, hashAlgorithm As HashAlgorithmName) As Byte()" />
+      <MemberSignature Language="F#" Value="abstract member SignData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.SignData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="dSA.SignData (data, offset, count, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ SignData(cli::array &lt;System::Byte&gt; ^ data, int offset, int count, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -482,6 +556,9 @@
       <MemberSignature Language="C#" Value="public override string ToXmlString (bool includePrivateParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToXmlString(bool includePrivateParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.ToXmlString(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXmlString (includePrivateParameters As Boolean) As String" />
+      <MemberSignature Language="F#" Value="override this.ToXmlString : bool -&gt; string" Usage="dSA.ToXmlString includePrivateParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToXmlString(bool includePrivateParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -510,10 +587,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="VerifyData">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies that a digital signature is valid.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="VerifyData">
       <MemberSignature Language="C#" Value="public bool VerifyData (byte[] data, byte[] signature, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyData(unsigned int8[] data, unsigned int8[] signature, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.VerifyData(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VerifyData (data As Byte(), signature As Byte(), hashAlgorithm As HashAlgorithmName) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.VerifyData : byte[] * byte[] * System.Security.Cryptography.HashAlgorithmName -&gt; bool" Usage="dSA.VerifyData (data, signature, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool VerifyData(cli::array &lt;System::Byte&gt; ^ data, cli::array &lt;System::Byte&gt; ^ signature, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -554,6 +644,9 @@
       <MemberSignature Language="C#" Value="public virtual bool VerifyData (System.IO.Stream data, byte[] signature, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool VerifyData(class System.IO.Stream data, unsigned int8[] signature, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.VerifyData(System.IO.Stream,System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VerifyData (data As Stream, signature As Byte(), hashAlgorithm As HashAlgorithmName) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member VerifyData : System.IO.Stream * byte[] * System.Security.Cryptography.HashAlgorithmName -&gt; bool&#xA;override this.VerifyData : System.IO.Stream * byte[] * System.Security.Cryptography.HashAlgorithmName -&gt; bool" Usage="dSA.VerifyData (data, signature, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool VerifyData(System::IO::Stream ^ data, cli::array &lt;System::Byte&gt; ^ signature, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -594,6 +687,9 @@
       <MemberSignature Language="C#" Value="public virtual bool VerifyData (byte[] data, int offset, int count, byte[] signature, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool VerifyData(unsigned int8[] data, int32 offset, int32 count, unsigned int8[] signature, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.VerifyData(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VerifyData (data As Byte(), offset As Integer, count As Integer, signature As Byte(), hashAlgorithm As HashAlgorithmName) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member VerifyData : byte[] * int * int * byte[] * System.Security.Cryptography.HashAlgorithmName -&gt; bool&#xA;override this.VerifyData : byte[] * int * int * byte[] * System.Security.Cryptography.HashAlgorithmName -&gt; bool" Usage="dSA.VerifyData (data, offset, count, signature, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool VerifyData(cli::array &lt;System::Byte&gt; ^ data, int offset, int count, cli::array &lt;System::Byte&gt; ^ signature, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -648,6 +744,9 @@
       <MemberSignature Language="C#" Value="public abstract bool VerifySignature (byte[] rgbHash, byte[] rgbSignature);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool VerifySignature(unsigned int8[] rgbHash, unsigned int8[] rgbSignature) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSA.VerifySignature(System.Byte[],System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function VerifySignature (rgbHash As Byte(), rgbSignature As Byte()) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member VerifySignature : byte[] * byte[] -&gt; bool" Usage="dSA.VerifySignature (rgbHash, rgbSignature)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool VerifySignature(cli::array &lt;System::Byte&gt; ^ rgbHash, cli::array &lt;System::Byte&gt; ^ rgbSignature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -678,45 +777,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="VerifyData">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Verifies that a digital signature is valid.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a cryptographic object used to perform the asymmetric algorithm.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SignData">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Computes the hash value of the specified data and signs it.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="HashData">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Computes the hash value of binary data.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

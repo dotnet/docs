@@ -1,7 +1,10 @@
-<Type Name="BoundPropertyEntry" FullName="System.Web.UI.BoundPropertyEntry">
+﻿<Type Name="BoundPropertyEntry" FullName="System.Web.UI.BoundPropertyEntry">
   <TypeSignature Language="C#" Value="public class BoundPropertyEntry : System.Web.UI.PropertyEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BoundPropertyEntry extends System.Web.UI.PropertyEntry" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.BoundPropertyEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Class BoundPropertyEntry&#xA;Inherits PropertyEntry" />
+  <TypeSignature Language="F#" Value="type BoundPropertyEntry = class&#xA;    inherit PropertyEntry" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BoundPropertyEntry : System::Web::UI::PropertyEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="public string ControlID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ControlID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.ControlID" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlID As String" />
+      <MemberSignature Language="F#" Value="member this.ControlID : string with get, set" Usage="System.Web.UI.BoundPropertyEntry.ControlID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +52,9 @@
       <MemberSignature Language="C#" Value="public Type ControlType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ControlType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.ControlType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlType As Type" />
+      <MemberSignature Language="F#" Value="member this.ControlType : Type with get, set" Usage="System.Web.UI.BoundPropertyEntry.ControlType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ControlType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +74,9 @@
       <MemberSignature Language="C#" Value="public string Expression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Expression" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.Expression" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expression As String" />
+      <MemberSignature Language="F#" Value="member this.Expression : string with get, set" Usage="System.Web.UI.BoundPropertyEntry.Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Expression { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +96,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Compilation.ExpressionBuilder ExpressionBuilder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Compilation.ExpressionBuilder ExpressionBuilder" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.ExpressionBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpressionBuilder As ExpressionBuilder" />
+      <MemberSignature Language="F#" Value="member this.ExpressionBuilder : System.Web.Compilation.ExpressionBuilder with get, set" Usage="System.Web.UI.BoundPropertyEntry.ExpressionBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Compilation::ExpressionBuilder ^ ExpressionBuilder { System::Web::Compilation::ExpressionBuilder ^ get(); void set(System::Web::Compilation::ExpressionBuilder ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -103,6 +118,9 @@
       <MemberSignature Language="C#" Value="public string ExpressionPrefix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExpressionPrefix" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.ExpressionPrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpressionPrefix As String" />
+      <MemberSignature Language="F#" Value="member this.ExpressionPrefix : string with get, set" Usage="System.Web.UI.BoundPropertyEntry.ExpressionPrefix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExpressionPrefix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +140,9 @@
       <MemberSignature Language="C#" Value="public string FieldName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FieldName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.FieldName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldName As String" />
+      <MemberSignature Language="F#" Value="member this.FieldName : string with get, set" Usage="System.Web.UI.BoundPropertyEntry.FieldName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FieldName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -141,6 +162,9 @@
       <MemberSignature Language="C#" Value="public string FormatString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FormatString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.FormatString" />
+      <MemberSignature Language="VB.NET" Value="Public Property FormatString As String" />
+      <MemberSignature Language="F#" Value="member this.FormatString : string with get, set" Usage="System.Web.UI.BoundPropertyEntry.FormatString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormatString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +184,9 @@
       <MemberSignature Language="C#" Value="public bool Generated { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Generated" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.Generated" />
+      <MemberSignature Language="VB.NET" Value="Public Property Generated As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Generated : bool with get, set" Usage="System.Web.UI.BoundPropertyEntry.Generated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Generated { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -180,6 +207,9 @@
       <MemberSignature Language="C#" Value="public bool IsEncoded { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEncoded" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.IsEncoded" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsEncoded As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEncoded : bool with get, set" Usage="System.Web.UI.BoundPropertyEntry.IsEncoded" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEncoded { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -200,6 +230,9 @@
       <MemberSignature Language="C#" Value="public object ParsedExpressionData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ParsedExpressionData" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.ParsedExpressionData" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParsedExpressionData As Object" />
+      <MemberSignature Language="F#" Value="member this.ParsedExpressionData : obj with get, set" Usage="System.Web.UI.BoundPropertyEntry.ParsedExpressionData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ParsedExpressionData { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +252,9 @@
       <MemberSignature Language="C#" Value="public bool ReadOnlyProperty { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnlyProperty" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.ReadOnlyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadOnlyProperty As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ReadOnlyProperty : bool with get, set" Usage="System.Web.UI.BoundPropertyEntry.ReadOnlyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnlyProperty { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -239,6 +275,9 @@
       <MemberSignature Language="C#" Value="public bool TwoWayBound { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TwoWayBound" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.TwoWayBound" />
+      <MemberSignature Language="VB.NET" Value="Public Property TwoWayBound As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TwoWayBound : bool with get, set" Usage="System.Web.UI.BoundPropertyEntry.TwoWayBound" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TwoWayBound { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -259,6 +298,9 @@
       <MemberSignature Language="C#" Value="public bool UseSetAttribute { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseSetAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.BoundPropertyEntry.UseSetAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseSetAttribute As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseSetAttribute : bool with get, set" Usage="System.Web.UI.BoundPropertyEntry.UseSetAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseSetAttribute { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

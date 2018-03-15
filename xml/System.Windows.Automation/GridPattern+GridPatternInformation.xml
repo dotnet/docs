@@ -1,7 +1,10 @@
-<Type Name="GridPattern+GridPatternInformation" FullName="System.Windows.Automation.GridPattern+GridPatternInformation">
+﻿<Type Name="GridPattern+GridPatternInformation" FullName="System.Windows.Automation.GridPattern+GridPatternInformation">
   <TypeSignature Language="C#" Value="public struct GridPattern.GridPatternInformation" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit GridPattern/GridPatternInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.GridPattern.GridPatternInformation" />
+  <TypeSignature Language="VB.NET" Value="Public Structure GridPattern.GridPatternInformation" />
+  <TypeSignature Language="F#" Value="type GridPattern.GridPatternInformation = struct" />
+  <TypeSignature Language="C++ CLI" Value="public: value class GridPattern::GridPatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public int ColumnCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.GridPattern.GridPatternInformation.ColumnCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.ColumnCount : int" Usage="System.Windows.Automation.GridPattern.GridPatternInformation.ColumnCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -59,6 +65,9 @@
       <MemberSignature Language="C#" Value="public int RowCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RowCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.GridPattern.GridPatternInformation.RowCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.RowCount : int" Usage="System.Windows.Automation.GridPattern.GridPatternInformation.RowCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

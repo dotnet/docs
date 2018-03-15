@@ -1,7 +1,10 @@
-<Type Name="DecimalAnimationBase" FullName="System.Windows.Media.Animation.DecimalAnimationBase">
+﻿<Type Name="DecimalAnimationBase" FullName="System.Windows.Media.Animation.DecimalAnimationBase">
   <TypeSignature Language="C#" Value="public abstract class DecimalAnimationBase : System.Windows.Media.Animation.AnimationTimeline" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DecimalAnimationBase extends System.Windows.Media.Animation.AnimationTimeline" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.DecimalAnimationBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DecimalAnimationBase&#xA;Inherits AnimationTimeline" />
+  <TypeSignature Language="F#" Value="type DecimalAnimationBase = class&#xA;    inherit AnimationTimeline" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DecimalAnimationBase abstract : System::Windows::Media::Animation::AnimationTimeline" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,8 @@
       <MemberSignature Language="C#" Value="protected DecimalAnimationBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DecimalAnimationBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DecimalAnimationBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -38,6 +43,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.DecimalAnimationBase Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.DecimalAnimationBase Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DecimalAnimationBase.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As DecimalAnimationBase" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.DecimalAnimationBase" Usage="decimalAnimationBase.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::DecimalAnimationBase ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,10 +70,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCurrentValue">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the current value of the animation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCurrentValue">
       <MemberSignature Language="C#" Value="public decimal GetCurrentValue (decimal defaultOriginValue, decimal defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Decimal GetCurrentValue(valuetype System.Decimal defaultOriginValue, valuetype System.Decimal defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DecimalAnimationBase.GetCurrentValue(System.Decimal,System.Decimal,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValue : decimal * decimal * System.Windows.Media.Animation.AnimationClock -&gt; decimal" Usage="decimalAnimationBase.GetCurrentValue (defaultOriginValue, defaultDestinationValue, animationClock)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Decimal GetCurrentValue(System::Decimal defaultOriginValue, System::Decimal defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -113,6 +132,8 @@
       <MemberSignature Language="C#" Value="public override sealed object GetCurrentValue (object defaultOriginValue, object defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetCurrentValue(object defaultOriginValue, object defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DecimalAnimationBase.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValue : obj * obj * System.Windows.Media.Animation.AnimationClock -&gt; obj" Usage="decimalAnimationBase.GetCurrentValue (defaultOriginValue, defaultDestinationValue, animationClock)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetCurrentValue(System::Object ^ defaultOriginValue, System::Object ^ defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -160,6 +181,8 @@
       <MemberSignature Language="C#" Value="protected abstract decimal GetCurrentValueCore (decimal defaultOriginValue, decimal defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.Decimal GetCurrentValueCore(valuetype System.Decimal defaultOriginValue, valuetype System.Decimal defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DecimalAnimationBase.GetCurrentValueCore(System.Decimal,System.Decimal,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueCore : decimal * decimal * System.Windows.Media.Animation.AnimationClock -&gt; decimal" Usage="decimalAnimationBase.GetCurrentValueCore (defaultOriginValue, defaultDestinationValue, animationClock)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Decimal GetCurrentValueCore(System::Decimal defaultOriginValue, System::Decimal defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -208,6 +231,9 @@
       <MemberSignature Language="C#" Value="public override sealed Type TargetPropertyType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TargetPropertyType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DecimalAnimationBase.TargetPropertyType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property TargetPropertyType As Type" />
+      <MemberSignature Language="F#" Value="member this.TargetPropertyType : Type" Usage="System.Windows.Media.Animation.DecimalAnimationBase.TargetPropertyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetPropertyType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -222,14 +248,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetCurrentValue">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the current value of the animation.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

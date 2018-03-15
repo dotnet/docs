@@ -1,7 +1,10 @@
-<Type Name="DelegatingHandler" FullName="System.Net.Http.DelegatingHandler">
+﻿<Type Name="DelegatingHandler" FullName="System.Net.Http.DelegatingHandler">
   <TypeSignature Language="C#" Value="public abstract class DelegatingHandler : System.Net.Http.HttpMessageHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DelegatingHandler extends System.Net.Http.HttpMessageHandler" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.DelegatingHandler" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DelegatingHandler&#xA;Inherits HttpMessageHandler" />
+  <TypeSignature Language="F#" Value="type DelegatingHandler = class&#xA;    inherit HttpMessageHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DelegatingHandler abstract : System::Net::Http::HttpMessageHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +34,24 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Net.Http.DelegatingHandler" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected DelegatingHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.DelegatingHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DelegatingHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -64,6 +81,9 @@
       <MemberSignature Language="C#" Value="protected DelegatingHandler (System.Net.Http.HttpMessageHandler innerHandler);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpMessageHandler innerHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.DelegatingHandler.#ctor(System.Net.Http.HttpMessageHandler)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (innerHandler As HttpMessageHandler)" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.DelegatingHandler : System.Net.Http.HttpMessageHandler -&gt; System.Net.Http.DelegatingHandler" Usage="new System.Net.Http.DelegatingHandler innerHandler" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DelegatingHandler(System::Net::Http::HttpMessageHandler ^ innerHandler);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -89,6 +109,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.DelegatingHandler.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="delegatingHandler.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -118,6 +141,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.HttpMessageHandler InnerHandler { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.HttpMessageHandler InnerHandler" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.DelegatingHandler.InnerHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Property InnerHandler As HttpMessageHandler" />
+      <MemberSignature Language="F#" Value="member this.InnerHandler : System.Net.Http.HttpMessageHandler with get, set" Usage="System.Net.Http.DelegatingHandler.InnerHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::HttpMessageHandler ^ InnerHandler { System::Net::Http::HttpMessageHandler ^ get(); void set(System::Net::Http::HttpMessageHandler ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -149,9 +175,11 @@
       </Docs>
     </Member>
     <Member MemberName="SendAsync">
-      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt; SendAsync (System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken);" />
+      <MemberSignature Language="C#" Value="protected internal override System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt; SendAsync (System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.Net.Http.HttpResponseMessage&gt; SendAsync(class System.Net.Http.HttpRequestMessage request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.DelegatingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.SendAsync : System.Net.Http.HttpRequestMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;" Usage="delegatingHandler.SendAsync (request, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Threading::Tasks::Task&lt;System::Net::Http::HttpResponseMessage ^&gt; ^ SendAsync(System::Net::Http::HttpRequestMessage ^ request, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -189,17 +217,5 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Http</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Net.Http.DelegatingHandler" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="ConsoleApplicationBase" FullName="Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase">
+﻿<Type Name="ConsoleApplicationBase" FullName="Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase">
   <TypeSignature Language="C#" Value="public class ConsoleApplicationBase : Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ConsoleApplicationBase extends Microsoft.VisualBasic.ApplicationServices.ApplicationBase" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConsoleApplicationBase&#xA;Inherits ApplicationBase" />
+  <TypeSignature Language="F#" Value="type ConsoleApplicationBase = class&#xA;    inherit ApplicationBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConsoleApplicationBase : Microsoft::VisualBasic::ApplicationServices::ApplicationBase" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public ConsoleApplicationBase ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConsoleApplicationBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -58,6 +63,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; CommandLineArgs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; CommandLineArgs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandLineArgs As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.CommandLineArgs : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.CommandLineArgs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ CommandLineArgs { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -122,6 +130,9 @@
       <MemberSignature Language="C#" Value="public System.Deployment.Application.ApplicationDeployment Deployment { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Deployment.Application.ApplicationDeployment Deployment" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.Deployment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Deployment As ApplicationDeployment" />
+      <MemberSignature Language="F#" Value="member this.Deployment : System.Deployment.Application.ApplicationDeployment" Usage="Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.Deployment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Deployment::Application::ApplicationDeployment ^ Deployment { System::Deployment::Application::ApplicationDeployment ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -175,6 +186,9 @@
       <MemberSignature Language="C#" Value="protected System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; InternalCommandLine { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; InternalCommandLine" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.InternalCommandLine" />
+      <MemberSignature Language="VB.NET" Value="Protected Property InternalCommandLine As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.InternalCommandLine : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.InternalCommandLine" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ InternalCommandLine {  void set(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -205,6 +219,9 @@
       <MemberSignature Language="C#" Value="public bool IsNetworkDeployed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNetworkDeployed" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.IsNetworkDeployed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNetworkDeployed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNetworkDeployed : bool" Usage="Microsoft.VisualBasic.ApplicationServices.ConsoleApplicationBase.IsNetworkDeployed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNetworkDeployed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

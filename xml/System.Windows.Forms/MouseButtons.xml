@@ -1,7 +1,10 @@
-<Type Name="MouseButtons" FullName="System.Windows.Forms.MouseButtons">
+﻿<Type Name="MouseButtons" FullName="System.Windows.Forms.MouseButtons">
   <TypeSignature Language="C#" Value="public enum MouseButtons" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MouseButtons extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MouseButtons" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MouseButtons" />
+  <TypeSignature Language="F#" Value="type MouseButtons = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MouseButtons" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +51,9 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MouseButtons Left = int32(1048576)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 1048576" Usage="System.Windows.Forms.MouseButtons.Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -56,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MouseButtons</ReturnType>
       </ReturnValue>
+      <MemberValue>1048576</MemberValue>
       <Docs>
         <summary>The left mouse button was pressed.</summary>
       </Docs>
@@ -64,6 +71,9 @@
       <MemberSignature Language="C#" Value="Middle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MouseButtons Middle = int32(4194304)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.Middle" />
+      <MemberSignature Language="VB.NET" Value="Middle" />
+      <MemberSignature Language="F#" Value="Middle = 4194304" Usage="System.Windows.Forms.MouseButtons.Middle" />
+      <MemberSignature Language="C++ CLI" Value="Middle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MouseButtons</ReturnType>
       </ReturnValue>
+      <MemberValue>4194304</MemberValue>
       <Docs>
         <summary>The middle mouse button was pressed.</summary>
       </Docs>
@@ -80,6 +91,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MouseButtons None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.MouseButtons.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -88,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MouseButtons</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No mouse button was pressed.</summary>
       </Docs>
@@ -96,6 +111,9 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MouseButtons Right = int32(2097152)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 2097152" Usage="System.Windows.Forms.MouseButtons.Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -104,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MouseButtons</ReturnType>
       </ReturnValue>
+      <MemberValue>2097152</MemberValue>
       <Docs>
         <summary>The right mouse button was pressed.</summary>
       </Docs>
@@ -112,6 +131,9 @@
       <MemberSignature Language="C#" Value="XButton1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MouseButtons XButton1 = int32(8388608)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.XButton1" />
+      <MemberSignature Language="VB.NET" Value="XButton1" />
+      <MemberSignature Language="F#" Value="XButton1 = 8388608" Usage="System.Windows.Forms.MouseButtons.XButton1" />
+      <MemberSignature Language="C++ CLI" Value="XButton1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -120,6 +142,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MouseButtons</ReturnType>
       </ReturnValue>
+      <MemberValue>8388608</MemberValue>
       <Docs>
         <summary>The first XButton was pressed.</summary>
         <remarks>
@@ -136,6 +159,9 @@
       <MemberSignature Language="C#" Value="XButton2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MouseButtons XButton2 = int32(16777216)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MouseButtons.XButton2" />
+      <MemberSignature Language="VB.NET" Value="XButton2" />
+      <MemberSignature Language="F#" Value="XButton2 = 16777216" Usage="System.Windows.Forms.MouseButtons.XButton2" />
+      <MemberSignature Language="C++ CLI" Value="XButton2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -144,6 +170,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MouseButtons</ReturnType>
       </ReturnValue>
+      <MemberValue>16777216</MemberValue>
       <Docs>
         <summary>The second XButton was pressed.</summary>
         <remarks>

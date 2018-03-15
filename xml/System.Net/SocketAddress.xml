@@ -1,7 +1,10 @@
-<Type Name="SocketAddress" FullName="System.Net.SocketAddress">
+﻿<Type Name="SocketAddress" FullName="System.Net.SocketAddress">
   <TypeSignature Language="C#" Value="public class SocketAddress" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SocketAddress extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.SocketAddress" />
+  <TypeSignature Language="VB.NET" Value="Public Class SocketAddress" />
+  <TypeSignature Language="F#" Value="type SocketAddress = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SocketAddress" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -41,10 +44,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Net.SocketAddress" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SocketAddress (System.Net.Sockets.AddressFamily family);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Sockets.AddressFamily family) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.SocketAddress.#ctor(System.Net.Sockets.AddressFamily)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (family As AddressFamily)" />
+      <MemberSignature Language="F#" Value="new System.Net.SocketAddress : System.Net.Sockets.AddressFamily -&gt; System.Net.SocketAddress" Usage="new System.Net.SocketAddress family" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SocketAddress(System::Net::Sockets::AddressFamily family);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -80,6 +96,9 @@
       <MemberSignature Language="C#" Value="public SocketAddress (System.Net.Sockets.AddressFamily family, int size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Net.Sockets.AddressFamily family, int32 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.SocketAddress.#ctor(System.Net.Sockets.AddressFamily,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (family As AddressFamily, size As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Net.SocketAddress : System.Net.Sockets.AddressFamily * int -&gt; System.Net.SocketAddress" Usage="new System.Net.SocketAddress (family, size)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SocketAddress(System::Net::Sockets::AddressFamily family, int size);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -119,6 +138,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object comparand);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object comparand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.SocketAddress.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (comparand As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="socketAddress.Equals comparand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ comparand);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -153,6 +175,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.AddressFamily Family { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Sockets.AddressFamily Family" />
       <MemberSignature Language="DocId" Value="P:System.Net.SocketAddress.Family" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Family As AddressFamily" />
+      <MemberSignature Language="F#" Value="member this.Family : System.Net.Sockets.AddressFamily" Usage="System.Net.SocketAddress.Family" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::AddressFamily Family { System::Net::Sockets::AddressFamily get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -189,6 +214,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.SocketAddress.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="socketAddress.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -219,6 +247,9 @@
       <MemberSignature Language="C#" Value="public byte this[int offset] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Net.SocketAddress.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(offset As Integer) As Byte" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : byte with get, set" Usage="System.Net.SocketAddress.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte default[int] { System::Byte get(int offset); void set(int offset, System::Byte value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -263,6 +294,9 @@
       <MemberSignature Language="C#" Value="public int Size { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
       <MemberSignature Language="DocId" Value="P:System.Net.SocketAddress.Size" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Integer" />
+      <MemberSignature Language="F#" Value="member this.Size : int" Usage="System.Net.SocketAddress.Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -298,6 +332,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.SocketAddress.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="socketAddress.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -330,15 +367,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Net.SocketAddress" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

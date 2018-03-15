@@ -1,7 +1,10 @@
-<Type Name="ServiceAuthenticationElement" FullName="System.ServiceModel.Configuration.ServiceAuthenticationElement">
+﻿<Type Name="ServiceAuthenticationElement" FullName="System.ServiceModel.Configuration.ServiceAuthenticationElement">
   <TypeSignature Language="C#" Value="public sealed class ServiceAuthenticationElement : System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceAuthenticationElement extends System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceAuthenticationElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceAuthenticationElement&#xA;Inherits BehaviorExtensionElement" />
+  <TypeSignature Language="F#" Value="type ServiceAuthenticationElement = class&#xA;    inherit BehaviorExtensionElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceAuthenticationElement sealed : System::ServiceModel::Configuration::BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public ServiceAuthenticationElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceAuthenticationElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceAuthenticationElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public System.Net.AuthenticationSchemes AuthenticationSchemes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.AuthenticationSchemes AuthenticationSchemes" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceAuthenticationElement.AuthenticationSchemes" />
+      <MemberSignature Language="VB.NET" Value="Public Property AuthenticationSchemes As AuthenticationSchemes" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationSchemes : System.Net.AuthenticationSchemes with get, set" Usage="System.ServiceModel.Configuration.ServiceAuthenticationElement.AuthenticationSchemes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::AuthenticationSchemes AuthenticationSchemes { System::Net::AuthenticationSchemes get(); void set(System::Net::AuthenticationSchemes value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,7 +49,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("authenticationSchemes", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -57,6 +65,9 @@
       <MemberSignature Language="C#" Value="public override Type BehaviorType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BehaviorType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceAuthenticationElement.BehaviorType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
+      <MemberSignature Language="F#" Value="member this.BehaviorType : Type" Usage="System.ServiceModel.Configuration.ServiceAuthenticationElement.BehaviorType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BehaviorType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,9 +83,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateBehavior">
-      <MemberSignature Language="C#" Value="protected override object CreateBehavior ();" />
+      <MemberSignature Language="C#" Value="protected internal override object CreateBehavior ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object CreateBehavior() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceAuthenticationElement.CreateBehavior" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
+      <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="serviceAuthenticationElement.CreateBehavior " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -94,6 +108,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceAuthenticationElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ServiceAuthenticationElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -112,6 +129,9 @@
       <MemberSignature Language="C#" Value="public string ServiceAuthenticationManagerType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceAuthenticationManagerType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceAuthenticationElement.ServiceAuthenticationManagerType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceAuthenticationManagerType As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceAuthenticationManagerType : string with get, set" Usage="System.ServiceModel.Configuration.ServiceAuthenticationElement.ServiceAuthenticationManagerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServiceAuthenticationManagerType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

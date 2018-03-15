@@ -1,7 +1,10 @@
-<Type Name="IXmlMtomReaderInitializer" FullName="System.Xml.IXmlMtomReaderInitializer">
+﻿<Type Name="IXmlMtomReaderInitializer" FullName="System.Xml.IXmlMtomReaderInitializer">
   <TypeSignature Language="C#" Value="public interface IXmlMtomReaderInitializer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXmlMtomReaderInitializer" />
   <TypeSignature Language="DocId" Value="T:System.Xml.IXmlMtomReaderInitializer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXmlMtomReaderInitializer" />
+  <TypeSignature Language="F#" Value="type IXmlMtomReaderInitializer = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXmlMtomReaderInitializer" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -13,10 +16,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="SetInput">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies initialization requirements for XML MTOM readers that implement this method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetInput">
       <MemberSignature Language="C#" Value="public void SetInput (System.IO.Stream stream, System.Text.Encoding[] encodings, string contentType, System.Xml.XmlDictionaryReaderQuotas quotas, int maxBufferSize, System.Xml.OnXmlDictionaryReaderClose onClose);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInput(class System.IO.Stream stream, class System.Text.Encoding[] encodings, string contentType, class System.Xml.XmlDictionaryReaderQuotas quotas, int32 maxBufferSize, class System.Xml.OnXmlDictionaryReaderClose onClose) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlMtomReaderInitializer.SetInput(System.IO.Stream,System.Text.Encoding[],System.String,System.Xml.XmlDictionaryReaderQuotas,System.Int32,System.Xml.OnXmlDictionaryReaderClose)" />
+      <MemberSignature Language="F#" Value="abstract member SetInput : System.IO.Stream * System.Text.Encoding[] * string * System.Xml.XmlDictionaryReaderQuotas * int * System.Xml.OnXmlDictionaryReaderClose -&gt; unit" Usage="iXmlMtomReaderInitializer.SetInput (stream, encodings, contentType, quotas, maxBufferSize, onClose)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInput(System::IO::Stream ^ stream, cli::array &lt;System::Text::Encoding ^&gt; ^ encodings, System::String ^ contentType, System::Xml::XmlDictionaryReaderQuotas ^ quotas, int maxBufferSize, System::Xml::OnXmlDictionaryReaderClose ^ onClose);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -49,6 +64,9 @@
       <MemberSignature Language="C#" Value="public void SetInput (byte[] buffer, int offset, int count, System.Text.Encoding[] encodings, string contentType, System.Xml.XmlDictionaryReaderQuotas quotas, int maxBufferSize, System.Xml.OnXmlDictionaryReaderClose onClose);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInput(unsigned int8[] buffer, int32 offset, int32 count, class System.Text.Encoding[] encodings, string contentType, class System.Xml.XmlDictionaryReaderQuotas quotas, int32 maxBufferSize, class System.Xml.OnXmlDictionaryReaderClose onClose) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.IXmlMtomReaderInitializer.SetInput(System.Byte[],System.Int32,System.Int32,System.Text.Encoding[],System.String,System.Xml.XmlDictionaryReaderQuotas,System.Int32,System.Xml.OnXmlDictionaryReaderClose)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetInput (buffer As Byte(), offset As Integer, count As Integer, encodings As Encoding(), contentType As String, quotas As XmlDictionaryReaderQuotas, maxBufferSize As Integer, onClose As OnXmlDictionaryReaderClose)" />
+      <MemberSignature Language="F#" Value="abstract member SetInput : byte[] * int * int * System.Text.Encoding[] * string * System.Xml.XmlDictionaryReaderQuotas * int * System.Xml.OnXmlDictionaryReaderClose -&gt; unit" Usage="iXmlMtomReaderInitializer.SetInput (buffer, offset, count, encodings, contentType, quotas, maxBufferSize, onClose)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInput(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, cli::array &lt;System::Text::Encoding ^&gt; ^ encodings, System::String ^ contentType, System::Xml::XmlDictionaryReaderQuotas ^ quotas, int maxBufferSize, System::Xml::OnXmlDictionaryReaderClose ^ onClose);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -81,15 +99,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetInput">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Specifies initialization requirements for XML MTOM readers that implement this method.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

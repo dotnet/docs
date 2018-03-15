@@ -1,7 +1,10 @@
-<Type Name="ListViewItemSelectionChangedEventHandler" FullName="System.Windows.Forms.ListViewItemSelectionChangedEventHandler">
+﻿<Type Name="ListViewItemSelectionChangedEventHandler" FullName="System.Windows.Forms.ListViewItemSelectionChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ListViewItemSelectionChangedEventHandler(object sender, ListViewItemSelectionChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListViewItemSelectionChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewItemSelectionChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ListViewItemSelectionChangedEventHandler(sender As Object, e As ListViewItemSelectionChangedEventArgs)" />
+  <TypeSignature Language="F#" Value="type ListViewItemSelectionChangedEventHandler = delegate of obj * ListViewItemSelectionChangedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ListViewItemSelectionChangedEventHandler(System::Object ^ sender, ListViewItemSelectionChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

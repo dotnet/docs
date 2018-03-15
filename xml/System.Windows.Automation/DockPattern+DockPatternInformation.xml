@@ -1,7 +1,10 @@
-<Type Name="DockPattern+DockPatternInformation" FullName="System.Windows.Automation.DockPattern+DockPatternInformation">
+﻿<Type Name="DockPattern+DockPatternInformation" FullName="System.Windows.Automation.DockPattern+DockPatternInformation">
   <TypeSignature Language="C#" Value="public struct DockPattern.DockPatternInformation" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit DockPattern/DockPatternInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.DockPattern.DockPatternInformation" />
+  <TypeSignature Language="VB.NET" Value="Public Structure DockPattern.DockPatternInformation" />
+  <TypeSignature Language="F#" Value="type DockPattern.DockPatternInformation = struct" />
+  <TypeSignature Language="C++ CLI" Value="public: value class DockPattern::DockPatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.DockPosition DockPosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.DockPosition DockPosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.DockPattern.DockPatternInformation.DockPosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DockPosition As DockPosition" />
+      <MemberSignature Language="F#" Value="member this.DockPosition : System.Windows.Automation.DockPosition" Usage="System.Windows.Automation.DockPattern.DockPatternInformation.DockPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::DockPosition DockPosition { System::Windows::Automation::DockPosition get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

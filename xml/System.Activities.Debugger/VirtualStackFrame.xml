@@ -1,7 +1,10 @@
-<Type Name="VirtualStackFrame" FullName="System.Activities.Debugger.VirtualStackFrame">
+﻿<Type Name="VirtualStackFrame" FullName="System.Activities.Debugger.VirtualStackFrame">
   <TypeSignature Language="C#" Value="public class VirtualStackFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VirtualStackFrame extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Debugger.VirtualStackFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Class VirtualStackFrame" />
+  <TypeSignature Language="F#" Value="type VirtualStackFrame = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VirtualStackFrame" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +23,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Debugger.VirtualStackFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public VirtualStackFrame (System.Activities.Debugger.State state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Debugger.State state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.VirtualStackFrame.#ctor(System.Activities.Debugger.State)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Debugger.VirtualStackFrame : System.Activities.Debugger.State -&gt; System.Activities.Debugger.VirtualStackFrame" Usage="new System.Activities.Debugger.VirtualStackFrame state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VirtualStackFrame(System::Activities::Debugger::State ^ state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -42,6 +56,8 @@
       <MemberSignature Language="C#" Value="public VirtualStackFrame (System.Activities.Debugger.State state, System.Collections.Generic.IDictionary&lt;string,object&gt; locals);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Debugger.State state, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; locals) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.VirtualStackFrame.#ctor(System.Activities.Debugger.State,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberSignature Language="F#" Value="new System.Activities.Debugger.VirtualStackFrame : System.Activities.Debugger.State * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Activities.Debugger.VirtualStackFrame" Usage="new System.Activities.Debugger.VirtualStackFrame (state, locals)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VirtualStackFrame(System::Activities::Debugger::State ^ state, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ locals);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -62,6 +78,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; Locals { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Locals" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.VirtualStackFrame.Locals" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Locals As IDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.Locals : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Activities.Debugger.VirtualStackFrame.Locals" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Locals { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -80,6 +99,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Debugger.State State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Debugger.State State" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Debugger.VirtualStackFrame.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As State" />
+      <MemberSignature Language="F#" Value="member this.State : System.Activities.Debugger.State" Usage="System.Activities.Debugger.VirtualStackFrame.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Debugger::State ^ State { System::Activities::Debugger::State ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -98,6 +120,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Debugger.VirtualStackFrame.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="virtualStackFrame.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -113,14 +138,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Debugger.VirtualStackFrame" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

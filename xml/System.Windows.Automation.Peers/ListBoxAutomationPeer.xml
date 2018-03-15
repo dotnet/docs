@@ -1,7 +1,10 @@
-<Type Name="ListBoxAutomationPeer" FullName="System.Windows.Automation.Peers.ListBoxAutomationPeer">
+﻿<Type Name="ListBoxAutomationPeer" FullName="System.Windows.Automation.Peers.ListBoxAutomationPeer">
   <TypeSignature Language="C#" Value="public class ListBoxAutomationPeer : System.Windows.Automation.Peers.SelectorAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListBoxAutomationPeer extends System.Windows.Automation.Peers.SelectorAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ListBoxAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListBoxAutomationPeer&#xA;Inherits SelectorAutomationPeer" />
+  <TypeSignature Language="F#" Value="type ListBoxAutomationPeer = class&#xA;    inherit SelectorAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListBoxAutomationPeer : System::Windows::Automation::Peers::SelectorAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public ListBoxAutomationPeer (System.Windows.Controls.ListBox owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.ListBox owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ListBoxAutomationPeer.#ctor(System.Windows.Controls.ListBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ListBox)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.ListBoxAutomationPeer : System.Windows.Controls.ListBox -&gt; System.Windows.Automation.Peers.ListBoxAutomationPeer" Usage="new System.Windows.Automation.Peers.ListBoxAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListBoxAutomationPeer(System::Windows::Controls::ListBox ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer (object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ListBoxAutomationPeer.CreateItemAutomationPeer(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.CreateItemAutomationPeer : obj -&gt; System.Windows.Automation.Peers.ItemAutomationPeer" Usage="listBoxAutomationPeer.CreateItemAutomationPeer item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::ItemAutomationPeer ^ CreateItemAutomationPeer(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -59,6 +68,9 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ListBoxAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="listBoxAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

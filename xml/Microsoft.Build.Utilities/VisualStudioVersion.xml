@@ -1,7 +1,10 @@
-<Type Name="VisualStudioVersion" FullName="Microsoft.Build.Utilities.VisualStudioVersion">
+﻿<Type Name="VisualStudioVersion" FullName="Microsoft.Build.Utilities.VisualStudioVersion">
   <TypeSignature Language="C#" Value="public enum VisualStudioVersion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VisualStudioVersion extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.VisualStudioVersion" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VisualStudioVersion" />
+  <TypeSignature Language="F#" Value="type VisualStudioVersion = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class VisualStudioVersion" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Version100" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.VisualStudioVersion Version100 = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.VisualStudioVersion.Version100" />
+      <MemberSignature Language="VB.NET" Value="Version100" />
+      <MemberSignature Language="F#" Value="Version100 = 0" Usage="Microsoft.Build.Utilities.VisualStudioVersion.Version100" />
+      <MemberSignature Language="C++ CLI" Value="Version100" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Utilities.VisualStudioVersion</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Visual Studio 2010 and SP1</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="Version110" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.VisualStudioVersion Version110 = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.VisualStudioVersion.Version110" />
+      <MemberSignature Language="VB.NET" Value="Version110" />
+      <MemberSignature Language="F#" Value="Version110 = 1" Usage="Microsoft.Build.Utilities.VisualStudioVersion.Version110" />
+      <MemberSignature Language="C++ CLI" Value="Version110" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Utilities.VisualStudioVersion</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>[!INCLUDE[vs_dev11_long](~/includes/vs-dev11-long-md.md)]</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="VersionLatest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.VisualStudioVersion VersionLatest = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.VisualStudioVersion.VersionLatest" />
+      <MemberSignature Language="VB.NET" Value="VersionLatest" />
+      <MemberSignature Language="F#" Value="VersionLatest = 1" Usage="Microsoft.Build.Utilities.VisualStudioVersion.VersionLatest" />
+      <MemberSignature Language="C++ CLI" Value="VersionLatest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Utilities.VisualStudioVersion</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The latest version available at the time of release</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="RibbonApplicationSplitMenuItem" FullName="System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem">
+﻿<Type Name="RibbonApplicationSplitMenuItem" FullName="System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem">
   <TypeSignature Language="C#" Value="public class RibbonApplicationSplitMenuItem : System.Windows.Controls.Ribbon.RibbonSplitMenuItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonApplicationSplitMenuItem extends System.Windows.Controls.Ribbon.RibbonSplitMenuItem" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonApplicationSplitMenuItem&#xA;Inherits RibbonSplitMenuItem" />
+  <TypeSignature Language="F#" Value="type RibbonApplicationSplitMenuItem = class&#xA;    inherit RibbonSplitMenuItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonApplicationSplitMenuItem : System::Windows::Controls::Ribbon::RibbonSplitMenuItem" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="public RibbonApplicationSplitMenuItem ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonApplicationSplitMenuItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -59,6 +64,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.DependencyObject GetContainerForItemOverride ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.DependencyObject GetContainerForItemOverride() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.GetContainerForItemOverride" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetContainerForItemOverride () As DependencyObject" />
+      <MemberSignature Language="F#" Value="override this.GetContainerForItemOverride : unit -&gt; System.Windows.DependencyObject" Usage="ribbonApplicationSplitMenuItem.GetContainerForItemOverride " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -78,6 +86,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsItemItsOwnContainerOverride (object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsItemItsOwnContainerOverride(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.IsItemItsOwnContainerOverride(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsItemItsOwnContainerOverride : obj -&gt; bool" Usage="ribbonApplicationSplitMenuItem.IsItemItsOwnContainerOverride item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -101,6 +112,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel Level { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel Level" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.Level" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As RibbonApplicationMenuItemLevel" />
+      <MemberSignature Language="F#" Value="member this.Level : System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel" Usage="System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.Level" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonApplicationMenuItemLevel Level { System::Windows::Controls::Ribbon::RibbonApplicationMenuItemLevel get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -133,6 +147,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LevelProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LevelProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.LevelProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LevelProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable LevelProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.LevelProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LevelProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -150,6 +167,9 @@
       <MemberSignature Language="C#" Value="protected override void OnActivatingKeyTip (System.Windows.Controls.ActivatingKeyTipEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnActivatingKeyTip(class System.Windows.Controls.ActivatingKeyTipEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.OnActivatingKeyTip(System.Windows.Controls.ActivatingKeyTipEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnActivatingKeyTip (e As ActivatingKeyTipEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnActivatingKeyTip : System.Windows.Controls.ActivatingKeyTipEventArgs -&gt; unit" Usage="ribbonApplicationSplitMenuItem.OnActivatingKeyTip e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivatingKeyTip(System::Windows::Controls::ActivatingKeyTipEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -171,6 +191,9 @@
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="ribbonApplicationSplitMenuItem.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -196,6 +219,9 @@
       <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Input.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Input.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="ribbonApplicationSplitMenuItem.OnKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -217,6 +243,9 @@
       <MemberSignature Language="C#" Value="protected override void PrepareContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PrepareContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
+      <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="ribbonApplicationSplitMenuItem.PrepareContainerForItemOverride (element, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -240,6 +269,9 @@
       <MemberSignature Language="C#" Value="protected override bool ShouldApplyItemContainerStyle (System.Windows.DependencyObject container, object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ShouldApplyItemContainerStyle(class System.Windows.DependencyObject container, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonApplicationSplitMenuItem.ShouldApplyItemContainerStyle(System.Windows.DependencyObject,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ShouldApplyItemContainerStyle (container As DependencyObject, item As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ShouldApplyItemContainerStyle : System.Windows.DependencyObject * obj -&gt; bool" Usage="ribbonApplicationSplitMenuItem.ShouldApplyItemContainerStyle (container, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ShouldApplyItemContainerStyle(System::Windows::DependencyObject ^ container, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

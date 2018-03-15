@@ -1,7 +1,10 @@
-<Type Name="FolderLevelBuildProviderAppliesTo" FullName="System.Web.Compilation.FolderLevelBuildProviderAppliesTo">
+﻿<Type Name="FolderLevelBuildProviderAppliesTo" FullName="System.Web.Compilation.FolderLevelBuildProviderAppliesTo">
   <TypeSignature Language="C#" Value="public enum FolderLevelBuildProviderAppliesTo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FolderLevelBuildProviderAppliesTo extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.FolderLevelBuildProviderAppliesTo" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FolderLevelBuildProviderAppliesTo" />
+  <TypeSignature Language="F#" Value="type FolderLevelBuildProviderAppliesTo = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FolderLevelBuildProviderAppliesTo" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="Code" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Compilation.FolderLevelBuildProviderAppliesTo Code = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.FolderLevelBuildProviderAppliesTo.Code" />
+      <MemberSignature Language="VB.NET" Value="Code" />
+      <MemberSignature Language="F#" Value="Code = 1" Usage="System.Web.Compilation.FolderLevelBuildProviderAppliesTo.Code" />
+      <MemberSignature Language="C++ CLI" Value="Code" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -31,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Compilation.FolderLevelBuildProviderAppliesTo</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object applies to a folder that contains code.</summary>
       </Docs>
@@ -39,6 +46,9 @@
       <MemberSignature Language="C#" Value="GlobalResources" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Compilation.FolderLevelBuildProviderAppliesTo GlobalResources = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.FolderLevelBuildProviderAppliesTo.GlobalResources" />
+      <MemberSignature Language="VB.NET" Value="GlobalResources" />
+      <MemberSignature Language="F#" Value="GlobalResources = 8" Usage="System.Web.Compilation.FolderLevelBuildProviderAppliesTo.GlobalResources" />
+      <MemberSignature Language="C++ CLI" Value="GlobalResources" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -47,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Compilation.FolderLevelBuildProviderAppliesTo</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Specifies that a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object applies to the global resources directory.</summary>
       </Docs>
@@ -55,6 +66,9 @@
       <MemberSignature Language="C#" Value="LocalResources" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Compilation.FolderLevelBuildProviderAppliesTo LocalResources = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.FolderLevelBuildProviderAppliesTo.LocalResources" />
+      <MemberSignature Language="VB.NET" Value="LocalResources" />
+      <MemberSignature Language="F#" Value="LocalResources = 4" Usage="System.Web.Compilation.FolderLevelBuildProviderAppliesTo.LocalResources" />
+      <MemberSignature Language="C++ CLI" Value="LocalResources" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Compilation.FolderLevelBuildProviderAppliesTo</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object applies to the local resources directory.</summary>
       </Docs>
@@ -71,6 +86,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Compilation.FolderLevelBuildProviderAppliesTo None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.FolderLevelBuildProviderAppliesTo.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.Compilation.FolderLevelBuildProviderAppliesTo.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Compilation.FolderLevelBuildProviderAppliesTo</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object does not apply to any directory.</summary>
       </Docs>
@@ -87,6 +106,9 @@
       <MemberSignature Language="C#" Value="WebReferences" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Compilation.FolderLevelBuildProviderAppliesTo WebReferences = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.FolderLevelBuildProviderAppliesTo.WebReferences" />
+      <MemberSignature Language="VB.NET" Value="WebReferences" />
+      <MemberSignature Language="F#" Value="WebReferences = 2" Usage="System.Web.Compilation.FolderLevelBuildProviderAppliesTo.WebReferences" />
+      <MemberSignature Language="C++ CLI" Value="WebReferences" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Compilation.FolderLevelBuildProviderAppliesTo</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that a <see cref="T:System.Web.Configuration.FolderLevelBuildProvider" /> object applies to the Web content directory.</summary>
       </Docs>

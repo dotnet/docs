@@ -1,7 +1,10 @@
-<Type Name="CodeConstructor" FullName="System.CodeDom.CodeConstructor">
+﻿<Type Name="CodeConstructor" FullName="System.CodeDom.CodeConstructor">
   <TypeSignature Language="C#" Value="public class CodeConstructor : System.CodeDom.CodeMemberMethod" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeConstructor extends System.CodeDom.CodeMemberMethod" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeConstructor" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeConstructor&#xA;Inherits CodeMemberMethod" />
+  <TypeSignature Language="F#" Value="type CodeConstructor = class&#xA;    inherit CodeMemberMethod" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeConstructor : System::CodeDom::CodeMemberMethod" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -49,6 +52,8 @@
       <MemberSignature Language="C#" Value="public CodeConstructor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeConstructor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeConstructor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +73,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpressionCollection BaseConstructorArgs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpressionCollection BaseConstructorArgs" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeConstructor.BaseConstructorArgs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseConstructorArgs As CodeExpressionCollection" />
+      <MemberSignature Language="F#" Value="member this.BaseConstructorArgs : System.CodeDom.CodeExpressionCollection" Usage="System.CodeDom.CodeConstructor.BaseConstructorArgs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpressionCollection ^ BaseConstructorArgs { System::CodeDom::CodeExpressionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -98,6 +106,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpressionCollection ChainedConstructorArgs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpressionCollection ChainedConstructorArgs" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeConstructor.ChainedConstructorArgs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChainedConstructorArgs As CodeExpressionCollection" />
+      <MemberSignature Language="F#" Value="member this.ChainedConstructorArgs : System.CodeDom.CodeExpressionCollection" Usage="System.CodeDom.CodeConstructor.ChainedConstructorArgs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpressionCollection ^ ChainedConstructorArgs { System::CodeDom::CodeExpressionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

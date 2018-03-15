@@ -1,7 +1,10 @@
-<Type Name="TraceEventType" FullName="System.Diagnostics.TraceEventType">
+﻿<Type Name="TraceEventType" FullName="System.Diagnostics.TraceEventType">
   <TypeSignature Language="C#" Value="public enum TraceEventType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TraceEventType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.TraceEventType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TraceEventType" />
+  <TypeSignature Language="F#" Value="type TraceEventType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TraceEventType" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="Critical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceEventType Critical = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceEventType.Critical" />
+      <MemberSignature Language="VB.NET" Value="Critical" />
+      <MemberSignature Language="F#" Value="Critical = 1" Usage="System.Diagnostics.TraceEventType.Critical" />
+      <MemberSignature Language="C++ CLI" Value="Critical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -53,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Fatal error or application crash.</summary>
       </Docs>
@@ -61,6 +68,9 @@
       <MemberSignature Language="C#" Value="Error" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceEventType Error = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceEventType.Error" />
+      <MemberSignature Language="VB.NET" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 2" Usage="System.Diagnostics.TraceEventType.Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -79,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Recoverable error.</summary>
       </Docs>
@@ -87,6 +98,9 @@
       <MemberSignature Language="C#" Value="Information" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceEventType Information = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceEventType.Information" />
+      <MemberSignature Language="VB.NET" Value="Information" />
+      <MemberSignature Language="F#" Value="Information = 8" Usage="System.Diagnostics.TraceEventType.Information" />
+      <MemberSignature Language="C++ CLI" Value="Information" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -105,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Informational message.</summary>
       </Docs>
@@ -113,6 +128,9 @@
       <MemberSignature Language="C#" Value="Resume" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceEventType Resume = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceEventType.Resume" />
+      <MemberSignature Language="VB.NET" Value="Resume" />
+      <MemberSignature Language="F#" Value="Resume = 2048" Usage="System.Diagnostics.TraceEventType.Resume" />
+      <MemberSignature Language="C++ CLI" Value="Resume" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -135,6 +153,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>Resumption of a logical operation.</summary>
       </Docs>
@@ -143,6 +162,9 @@
       <MemberSignature Language="C#" Value="Start" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceEventType Start = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceEventType.Start" />
+      <MemberSignature Language="VB.NET" Value="Start" />
+      <MemberSignature Language="F#" Value="Start = 256" Usage="System.Diagnostics.TraceEventType.Start" />
+      <MemberSignature Language="C++ CLI" Value="Start" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +187,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Starting of a logical operation.</summary>
       </Docs>
@@ -173,6 +196,9 @@
       <MemberSignature Language="C#" Value="Stop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceEventType Stop = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceEventType.Stop" />
+      <MemberSignature Language="VB.NET" Value="Stop" />
+      <MemberSignature Language="F#" Value="Stop = 512" Usage="System.Diagnostics.TraceEventType.Stop" />
+      <MemberSignature Language="C++ CLI" Value="Stop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -195,6 +221,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>Stopping of a logical operation.</summary>
       </Docs>
@@ -203,6 +230,9 @@
       <MemberSignature Language="C#" Value="Suspend" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceEventType Suspend = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceEventType.Suspend" />
+      <MemberSignature Language="VB.NET" Value="Suspend" />
+      <MemberSignature Language="F#" Value="Suspend = 1024" Usage="System.Diagnostics.TraceEventType.Suspend" />
+      <MemberSignature Language="C++ CLI" Value="Suspend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -225,6 +255,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>Suspension of a logical operation.</summary>
       </Docs>
@@ -233,6 +264,9 @@
       <MemberSignature Language="C#" Value="Transfer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceEventType Transfer = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceEventType.Transfer" />
+      <MemberSignature Language="VB.NET" Value="Transfer" />
+      <MemberSignature Language="F#" Value="Transfer = 4096" Usage="System.Diagnostics.TraceEventType.Transfer" />
+      <MemberSignature Language="C++ CLI" Value="Transfer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -255,6 +289,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>Changing of correlation identity.</summary>
       </Docs>
@@ -263,6 +298,9 @@
       <MemberSignature Language="C#" Value="Verbose" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceEventType Verbose = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceEventType.Verbose" />
+      <MemberSignature Language="VB.NET" Value="Verbose" />
+      <MemberSignature Language="F#" Value="Verbose = 16" Usage="System.Diagnostics.TraceEventType.Verbose" />
+      <MemberSignature Language="C++ CLI" Value="Verbose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -281,6 +319,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Debugging trace.</summary>
       </Docs>
@@ -289,6 +328,9 @@
       <MemberSignature Language="C#" Value="Warning" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceEventType Warning = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceEventType.Warning" />
+      <MemberSignature Language="VB.NET" Value="Warning" />
+      <MemberSignature Language="F#" Value="Warning = 4" Usage="System.Diagnostics.TraceEventType.Warning" />
+      <MemberSignature Language="C++ CLI" Value="Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -307,6 +349,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Noncritical problem.</summary>
       </Docs>

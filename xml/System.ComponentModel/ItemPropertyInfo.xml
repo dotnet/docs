@@ -1,7 +1,10 @@
-<Type Name="ItemPropertyInfo" FullName="System.ComponentModel.ItemPropertyInfo">
+﻿<Type Name="ItemPropertyInfo" FullName="System.ComponentModel.ItemPropertyInfo">
   <TypeSignature Language="C#" Value="public class ItemPropertyInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ItemPropertyInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ItemPropertyInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class ItemPropertyInfo" />
+  <TypeSignature Language="F#" Value="type ItemPropertyInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ItemPropertyInfo" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public ItemPropertyInfo (string name, Type type, object descriptor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type, object descriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ItemPropertyInfo.#ctor(System.String,System.Type,System.Object)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.ItemPropertyInfo : string * Type * obj -&gt; System.ComponentModel.ItemPropertyInfo" Usage="new System.ComponentModel.ItemPropertyInfo (name, type, descriptor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ItemPropertyInfo(System::String ^ name, Type ^ type, System::Object ^ descriptor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -48,6 +53,9 @@
       <MemberSignature Language="C#" Value="public object Descriptor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Descriptor" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ItemPropertyInfo.Descriptor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Descriptor As Object" />
+      <MemberSignature Language="F#" Value="member this.Descriptor : obj" Usage="System.ComponentModel.ItemPropertyInfo.Descriptor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Descriptor { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -73,6 +81,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ItemPropertyInfo.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.ItemPropertyInfo.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -91,6 +102,9 @@
       <MemberSignature Language="C#" Value="public Type PropertyType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type PropertyType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ItemPropertyInfo.PropertyType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyType As Type" />
+      <MemberSignature Language="F#" Value="member this.PropertyType : Type" Usage="System.ComponentModel.ItemPropertyInfo.PropertyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ PropertyType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

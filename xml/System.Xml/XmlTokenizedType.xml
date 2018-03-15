@@ -1,7 +1,10 @@
-<Type Name="XmlTokenizedType" FullName="System.Xml.XmlTokenizedType">
+﻿<Type Name="XmlTokenizedType" FullName="System.Xml.XmlTokenizedType">
   <TypeSignature Language="C#" Value="public enum XmlTokenizedType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlTokenizedType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlTokenizedType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XmlTokenizedType" />
+  <TypeSignature Language="F#" Value="type XmlTokenizedType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class XmlTokenizedType" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="CDATA" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType CDATA = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.CDATA" />
+      <MemberSignature Language="VB.NET" Value="CDATA" />
+      <MemberSignature Language="F#" Value="CDATA = 0" Usage="System.Xml.XmlTokenizedType.CDATA" />
+      <MemberSignature Language="C++ CLI" Value="CDATA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -51,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>CDATA type.</summary>
       </Docs>
@@ -59,6 +66,9 @@
       <MemberSignature Language="C#" Value="ENTITIES" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType ENTITIES = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.ENTITIES" />
+      <MemberSignature Language="VB.NET" Value="ENTITIES" />
+      <MemberSignature Language="F#" Value="ENTITIES = 5" Usage="System.Xml.XmlTokenizedType.ENTITIES" />
+      <MemberSignature Language="C++ CLI" Value="ENTITIES" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -76,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>ENTITIES type.</summary>
       </Docs>
@@ -84,6 +95,9 @@
       <MemberSignature Language="C#" Value="ENTITY" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType ENTITY = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.ENTITY" />
+      <MemberSignature Language="VB.NET" Value="ENTITY" />
+      <MemberSignature Language="F#" Value="ENTITY = 4" Usage="System.Xml.XmlTokenizedType.ENTITY" />
+      <MemberSignature Language="C++ CLI" Value="ENTITY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -101,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>ENTITY type.</summary>
       </Docs>
@@ -109,6 +124,9 @@
       <MemberSignature Language="C#" Value="ENUMERATION" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType ENUMERATION = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.ENUMERATION" />
+      <MemberSignature Language="VB.NET" Value="ENUMERATION" />
+      <MemberSignature Language="F#" Value="ENUMERATION = 9" Usage="System.Xml.XmlTokenizedType.ENUMERATION" />
+      <MemberSignature Language="C++ CLI" Value="ENUMERATION" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -126,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>ENUMERATION type.</summary>
       </Docs>
@@ -134,6 +153,9 @@
       <MemberSignature Language="C#" Value="ID" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType ID = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.ID" />
+      <MemberSignature Language="VB.NET" Value="ID" />
+      <MemberSignature Language="F#" Value="ID = 1" Usage="System.Xml.XmlTokenizedType.ID" />
+      <MemberSignature Language="C++ CLI" Value="ID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -151,6 +173,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>ID type.</summary>
       </Docs>
@@ -159,6 +182,9 @@
       <MemberSignature Language="C#" Value="IDREF" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType IDREF = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.IDREF" />
+      <MemberSignature Language="VB.NET" Value="IDREF" />
+      <MemberSignature Language="F#" Value="IDREF = 2" Usage="System.Xml.XmlTokenizedType.IDREF" />
+      <MemberSignature Language="C++ CLI" Value="IDREF" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -176,6 +202,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>IDREF type.</summary>
       </Docs>
@@ -184,6 +211,9 @@
       <MemberSignature Language="C#" Value="IDREFS" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType IDREFS = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.IDREFS" />
+      <MemberSignature Language="VB.NET" Value="IDREFS" />
+      <MemberSignature Language="F#" Value="IDREFS = 3" Usage="System.Xml.XmlTokenizedType.IDREFS" />
+      <MemberSignature Language="C++ CLI" Value="IDREFS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -201,6 +231,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>IDREFS type.</summary>
       </Docs>
@@ -209,6 +240,9 @@
       <MemberSignature Language="C#" Value="NCName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType NCName = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.NCName" />
+      <MemberSignature Language="VB.NET" Value="NCName" />
+      <MemberSignature Language="F#" Value="NCName = 11" Usage="System.Xml.XmlTokenizedType.NCName" />
+      <MemberSignature Language="C++ CLI" Value="NCName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -226,6 +260,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>NCName type.</summary>
       </Docs>
@@ -234,6 +269,9 @@
       <MemberSignature Language="C#" Value="NMTOKEN" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType NMTOKEN = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.NMTOKEN" />
+      <MemberSignature Language="VB.NET" Value="NMTOKEN" />
+      <MemberSignature Language="F#" Value="NMTOKEN = 6" Usage="System.Xml.XmlTokenizedType.NMTOKEN" />
+      <MemberSignature Language="C++ CLI" Value="NMTOKEN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -251,6 +289,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>NMTOKEN type.</summary>
       </Docs>
@@ -259,6 +298,9 @@
       <MemberSignature Language="C#" Value="NMTOKENS" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType NMTOKENS = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.NMTOKENS" />
+      <MemberSignature Language="VB.NET" Value="NMTOKENS" />
+      <MemberSignature Language="F#" Value="NMTOKENS = 7" Usage="System.Xml.XmlTokenizedType.NMTOKENS" />
+      <MemberSignature Language="C++ CLI" Value="NMTOKENS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -276,6 +318,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>NMTOKENS type.</summary>
       </Docs>
@@ -284,6 +327,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType None = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 12" Usage="System.Xml.XmlTokenizedType.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -301,6 +347,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>No type.</summary>
       </Docs>
@@ -309,6 +356,9 @@
       <MemberSignature Language="C#" Value="NOTATION" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType NOTATION = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.NOTATION" />
+      <MemberSignature Language="VB.NET" Value="NOTATION" />
+      <MemberSignature Language="F#" Value="NOTATION = 8" Usage="System.Xml.XmlTokenizedType.NOTATION" />
+      <MemberSignature Language="C++ CLI" Value="NOTATION" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -326,6 +376,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>NOTATION type.</summary>
       </Docs>
@@ -334,6 +385,9 @@
       <MemberSignature Language="C#" Value="QName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlTokenizedType QName = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlTokenizedType.QName" />
+      <MemberSignature Language="VB.NET" Value="QName" />
+      <MemberSignature Language="F#" Value="QName = 10" Usage="System.Xml.XmlTokenizedType.QName" />
+      <MemberSignature Language="C++ CLI" Value="QName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -351,6 +405,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlTokenizedType</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>QName type.</summary>
       </Docs>

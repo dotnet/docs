@@ -1,7 +1,10 @@
-<Type Name="WorkflowTrackingLocation" FullName="System.Workflow.Runtime.Tracking.WorkflowTrackingLocation">
+﻿<Type Name="WorkflowTrackingLocation" FullName="System.Workflow.Runtime.Tracking.WorkflowTrackingLocation">
   <TypeSignature Language="C#" Value="public sealed class WorkflowTrackingLocation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit WorkflowTrackingLocation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowTrackingLocation" />
+  <TypeSignature Language="F#" Value="type WorkflowTrackingLocation = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowTrackingLocation sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +34,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowTrackingLocation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowTrackingLocation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -57,6 +71,9 @@
       <MemberSignature Language="C#" Value="public WorkflowTrackingLocation (System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.TrackingWorkflowEvent&gt; events);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IList`1&lt;valuetype System.Workflow.Runtime.Tracking.TrackingWorkflowEvent&gt; events) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation.#ctor(System.Collections.Generic.IList{System.Workflow.Runtime.Tracking.TrackingWorkflowEvent})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (events As IList(Of TrackingWorkflowEvent))" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.WorkflowTrackingLocation : System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.TrackingWorkflowEvent&gt; -&gt; System.Workflow.Runtime.Tracking.WorkflowTrackingLocation" Usage="new System.Workflow.Runtime.Tracking.WorkflowTrackingLocation events" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowTrackingLocation(System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::TrackingWorkflowEvent&gt; ^ events);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -75,6 +92,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.TrackingWorkflowEvent&gt; Events { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;valuetype System.Workflow.Runtime.Tracking.TrackingWorkflowEvent&gt; Events" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation.Events" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Events As IList(Of TrackingWorkflowEvent)" />
+      <MemberSignature Language="F#" Value="member this.Events : System.Collections.Generic.IList&lt;System.Workflow.Runtime.Tracking.TrackingWorkflowEvent&gt;" Usage="System.Workflow.Runtime.Tracking.WorkflowTrackingLocation.Events" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::TrackingWorkflowEvent&gt; ^ Events { System::Collections::Generic::IList&lt;System::Workflow::Runtime::Tracking::TrackingWorkflowEvent&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -96,14 +116,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.WorkflowTrackingLocation" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

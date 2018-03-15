@@ -1,7 +1,10 @@
-<Type Name="TypeElementCollection" FullName="System.Runtime.Serialization.Configuration.TypeElementCollection">
+﻿<Type Name="TypeElementCollection" FullName="System.Runtime.Serialization.Configuration.TypeElementCollection">
   <TypeSignature Language="C#" Value="public sealed class TypeElementCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeElementCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.Configuration.TypeElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeElementCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type TypeElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,8 @@
       <MemberSignature Language="C#" Value="public TypeElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.TypeElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -52,6 +57,9 @@
       <MemberSignature Language="C#" Value="public void Add (System.Runtime.Serialization.Configuration.TypeElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Runtime.Serialization.Configuration.TypeElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.TypeElementCollection.Add(System.Runtime.Serialization.Configuration.TypeElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (element As TypeElement)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Runtime.Serialization.Configuration.TypeElement -&gt; unit" Usage="typeElementCollection.Add element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Runtime::Serialization::Configuration::TypeElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -74,6 +82,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.TypeElementCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="typeElementCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -93,6 +104,9 @@
       <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationElementCollectionType CollectionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationElementCollectionType CollectionType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Configuration.TypeElementCollection.CollectionType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
+      <MemberSignature Language="F#" Value="member this.CollectionType : System.Configuration.ConfigurationElementCollectionType" Usage="System.Runtime.Serialization.Configuration.TypeElementCollection.CollectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -112,6 +126,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.TypeElementCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="typeElementCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -131,6 +148,9 @@
       <MemberSignature Language="C#" Value="protected override string ElementName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Configuration.TypeElementCollection.ElementName" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.Runtime.Serialization.Configuration.TypeElementCollection.ElementName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -149,6 +169,9 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.TypeElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="typeElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -171,6 +194,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Runtime.Serialization.Configuration.TypeElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Runtime.Serialization.Configuration.TypeElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.TypeElementCollection.IndexOf(System.Runtime.Serialization.Configuration.TypeElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As TypeElement) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Runtime.Serialization.Configuration.TypeElement -&gt; int" Usage="typeElementCollection.IndexOf element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Runtime::Serialization::Configuration::TypeElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -194,6 +220,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Serialization.Configuration.TypeElement this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Serialization.Configuration.TypeElement Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.Configuration.TypeElementCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As TypeElement" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Runtime.Serialization.Configuration.TypeElement with get, set" Usage="System.Runtime.Serialization.Configuration.TypeElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Serialization::Configuration::TypeElement ^ default[int] { System::Runtime::Serialization::Configuration::TypeElement ^ get(int index); void set(int index, System::Runtime::Serialization::Configuration::TypeElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -217,6 +246,9 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Runtime.Serialization.Configuration.TypeElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Runtime.Serialization.Configuration.TypeElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.TypeElementCollection.Remove(System.Runtime.Serialization.Configuration.TypeElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As TypeElement)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Runtime.Serialization.Configuration.TypeElement -&gt; unit" Usage="typeElementCollection.Remove element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Runtime::Serialization::Configuration::TypeElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -239,6 +271,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.Configuration.TypeElementCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="typeElementCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

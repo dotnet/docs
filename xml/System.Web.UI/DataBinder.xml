@@ -1,7 +1,10 @@
-<Type Name="DataBinder" FullName="System.Web.UI.DataBinder">
+﻿<Type Name="DataBinder" FullName="System.Web.UI.DataBinder">
   <TypeSignature Language="C#" Value="public sealed class DataBinder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataBinder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataBinder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataBinder" />
+  <TypeSignature Language="F#" Value="type DataBinder = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataBinder sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="public DataBinder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataBinder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +67,9 @@
       <MemberSignature Language="C#" Value="public static bool EnableCaching { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool EnableCaching" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataBinder.EnableCaching" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property EnableCaching As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableCaching : bool with get, set" Usage="System.Web.UI.DataBinder.EnableCaching" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool EnableCaching { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +106,9 @@
       <MemberSignature Language="C#" Value="public static object Eval (object container, string expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Eval(object container, string expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.Eval(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Eval (container As Object, expression As String) As Object" />
+      <MemberSignature Language="F#" Value="static member Eval : obj * string -&gt; obj" Usage="System.Web.UI.DataBinder.Eval (container, expression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Eval(System::Object ^ container, System::String ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +180,9 @@
       <MemberSignature Language="C#" Value="public static string Eval (object container, string expression, string format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Eval(object container, string expression, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.Eval(System.Object,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Eval (container As Object, expression As String, format As String) As String" />
+      <MemberSignature Language="F#" Value="static member Eval : obj * string * string -&gt; string" Usage="System.Web.UI.DataBinder.Eval (container, expression, format)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Eval(System::Object ^ container, System::String ^ expression, System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -236,10 +250,22 @@
         <altmember cref="T:System.Web.UI.IBindableTemplate" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDataItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves an object's declared data item.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDataItem">
       <MemberSignature Language="C#" Value="public static object GetDataItem (object container);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetDataItem(object container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.GetDataItem(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDataItem (container As Object) As Object" />
+      <MemberSignature Language="F#" Value="static member GetDataItem : obj -&gt; obj" Usage="System.Web.UI.DataBinder.GetDataItem container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetDataItem(System::Object ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -272,6 +298,9 @@
       <MemberSignature Language="C#" Value="public static object GetDataItem (object container, out bool foundDataItem);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetDataItem(object container, [out] bool&amp; foundDataItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.GetDataItem(System.Object,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDataItem (container As Object, ByRef foundDataItem As Boolean) As Object" />
+      <MemberSignature Language="F#" Value="static member GetDataItem : obj *  -&gt; obj" Usage="System.Web.UI.DataBinder.GetDataItem (container, foundDataItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetDataItem(System::Object ^ container, [Runtime::InteropServices::Out] bool % foundDataItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,10 +329,22 @@
         <altmember cref="T:System.Web.UI.IDataItemContainer" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetIndexedPropertyValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the value of an indexed property.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetIndexedPropertyValue">
       <MemberSignature Language="C#" Value="public static object GetIndexedPropertyValue (object container, string expr);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetIndexedPropertyValue(object container, string expr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.GetIndexedPropertyValue(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIndexedPropertyValue (container As Object, expr As String) As Object" />
+      <MemberSignature Language="F#" Value="static member GetIndexedPropertyValue : obj * string -&gt; obj" Usage="System.Web.UI.DataBinder.GetIndexedPropertyValue (container, expr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetIndexedPropertyValue(System::Object ^ container, System::String ^ expr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -350,6 +391,9 @@
       <MemberSignature Language="C#" Value="public static string GetIndexedPropertyValue (object container, string propName, string format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetIndexedPropertyValue(object container, string propName, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.GetIndexedPropertyValue(System.Object,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIndexedPropertyValue (container As Object, propName As String, format As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetIndexedPropertyValue : obj * string * string -&gt; string" Usage="System.Web.UI.DataBinder.GetIndexedPropertyValue (container, propName, format)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetIndexedPropertyValue(System::Object ^ container, System::String ^ propName, System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -390,10 +434,22 @@
         <altmember cref="Overload:System.Web.UI.DataBinder.GetPropertyValue" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPropertyValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the value of a property.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetPropertyValue">
       <MemberSignature Language="C#" Value="public static object GetPropertyValue (object container, string propName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetPropertyValue(object container, string propName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.GetPropertyValue(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPropertyValue (container As Object, propName As String) As Object" />
+      <MemberSignature Language="F#" Value="static member GetPropertyValue : obj * string -&gt; obj" Usage="System.Web.UI.DataBinder.GetPropertyValue (container, propName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetPropertyValue(System::Object ^ container, System::String ^ propName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -437,6 +493,9 @@
       <MemberSignature Language="C#" Value="public static string GetPropertyValue (object container, string propName, string format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetPropertyValue(object container, string propName, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.GetPropertyValue(System.Object,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPropertyValue (container As Object, propName As String, format As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetPropertyValue : obj * string * string -&gt; string" Usage="System.Web.UI.DataBinder.GetPropertyValue (container, propName, format)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetPropertyValue(System::Object ^ container, System::String ^ propName, System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -482,6 +541,8 @@
       <MemberSignature Language="C#" Value="public static bool IsBindableType (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsBindableType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataBinder.IsBindableType(System.Type)" />
+      <MemberSignature Language="F#" Value="static member IsBindableType : Type -&gt; bool" Usage="System.Web.UI.DataBinder.IsBindableType type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsBindableType(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -501,32 +562,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetIndexedPropertyValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the value of an indexed property.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetDataItem">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves an object's declared data item.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetPropertyValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the value of a property.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

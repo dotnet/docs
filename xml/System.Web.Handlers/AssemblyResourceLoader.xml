@@ -1,7 +1,10 @@
-<Type Name="AssemblyResourceLoader" FullName="System.Web.Handlers.AssemblyResourceLoader">
+﻿<Type Name="AssemblyResourceLoader" FullName="System.Web.Handlers.AssemblyResourceLoader">
   <TypeSignature Language="C#" Value="public sealed class AssemblyResourceLoader : System.Web.IHttpHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyResourceLoader extends System.Object implements class System.Web.IHttpHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.Handlers.AssemblyResourceLoader" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyResourceLoader&#xA;Implements IHttpHandler" />
+  <TypeSignature Language="F#" Value="type AssemblyResourceLoader = class&#xA;    interface IHttpHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyResourceLoader sealed : System::Web::IHttpHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,8 @@ WebResource.axd?d=<encrypted identifier>&t=<time stamp value>
       <MemberSignature Language="C#" Value="public AssemblyResourceLoader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Handlers.AssemblyResourceLoader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyResourceLoader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,7 +64,13 @@ WebResource.axd?d=<encrypted identifier>&t=<time stamp value>
       <MemberSignature Language="C#" Value="bool System.Web.IHttpHandler.IsReusable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.IHttpHandler.IsReusable" />
       <MemberSignature Language="DocId" Value="P:System.Web.Handlers.AssemblyResourceLoader.System#Web#IHttpHandler#IsReusable" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReusable As Boolean Implements IHttpHandler.IsReusable" />
+      <MemberSignature Language="F#" Usage="System.Web.Handlers.AssemblyResourceLoader.System.Web.IHttpHandler.IsReusable" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.IHttpHandler.IsReusable { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,7 +96,12 @@ WebResource.axd?d=<encrypted identifier>&t=<time stamp value>
       <MemberSignature Language="C#" Value="void IHttpHandler.ProcessRequest (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.IHttpHandler.ProcessRequest(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Handlers.AssemblyResourceLoader.System#Web#IHttpHandler#ProcessRequest(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub ProcessRequest (context As HttpContext) Implements IHttpHandler.ProcessRequest" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.IHttpHandler.ProcessRequest(System::Web::HttpContext ^ context) = System::Web::IHttpHandler::ProcessRequest;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

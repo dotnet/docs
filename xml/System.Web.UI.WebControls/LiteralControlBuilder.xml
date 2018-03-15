@@ -1,7 +1,10 @@
-<Type Name="LiteralControlBuilder" FullName="System.Web.UI.WebControls.LiteralControlBuilder">
+﻿<Type Name="LiteralControlBuilder" FullName="System.Web.UI.WebControls.LiteralControlBuilder">
   <TypeSignature Language="C#" Value="public class LiteralControlBuilder : System.Web.UI.ControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LiteralControlBuilder extends System.Web.UI.ControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LiteralControlBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class LiteralControlBuilder&#xA;Inherits ControlBuilder" />
+  <TypeSignature Language="F#" Value="type LiteralControlBuilder = class&#xA;    inherit ControlBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LiteralControlBuilder : System::Web::UI::ControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public LiteralControlBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LiteralControlBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LiteralControlBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -43,6 +48,9 @@
       <MemberSignature Language="C#" Value="public override bool AllowWhitespaceLiterals ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool AllowWhitespaceLiterals() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LiteralControlBuilder.AllowWhitespaceLiterals" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AllowWhitespaceLiterals () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.AllowWhitespaceLiterals : unit -&gt; bool" Usage="literalControlBuilder.AllowWhitespaceLiterals " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool AllowWhitespaceLiterals();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +81,9 @@
       <MemberSignature Language="C#" Value="public override void AppendLiteralString (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendLiteralString(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LiteralControlBuilder.AppendLiteralString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendLiteralString (s As String)" />
+      <MemberSignature Language="F#" Value="override this.AppendLiteralString : string -&gt; unit" Usage="literalControlBuilder.AppendLiteralString s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendLiteralString(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -103,6 +114,9 @@
       <MemberSignature Language="C#" Value="public override void AppendSubBuilder (System.Web.UI.ControlBuilder subBuilder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendSubBuilder(class System.Web.UI.ControlBuilder subBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LiteralControlBuilder.AppendSubBuilder(System.Web.UI.ControlBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendSubBuilder (subBuilder As ControlBuilder)" />
+      <MemberSignature Language="F#" Value="override this.AppendSubBuilder : System.Web.UI.ControlBuilder -&gt; unit" Usage="literalControlBuilder.AppendSubBuilder subBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendSubBuilder(System::Web::UI::ControlBuilder ^ subBuilder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

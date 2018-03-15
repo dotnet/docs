@@ -1,7 +1,10 @@
-<Type Name="ProjectedWrapper5" FullName="System.Data.Services.Internal.ProjectedWrapper5">
+﻿<Type Name="ProjectedWrapper5" FullName="System.Data.Services.Internal.ProjectedWrapper5">
   <TypeSignature Language="C#" Value="public sealed class ProjectedWrapper5 : System.Data.Services.Internal.ProjectedWrapper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProjectedWrapper5 extends System.Data.Services.Internal.ProjectedWrapper" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Internal.ProjectedWrapper5" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProjectedWrapper5&#xA;Inherits ProjectedWrapper" />
+  <TypeSignature Language="F#" Value="type ProjectedWrapper5 = class&#xA;    inherit ProjectedWrapper" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProjectedWrapper5 sealed : System::Data::Services::Internal::ProjectedWrapper" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,8 @@
       <MemberSignature Language="C#" Value="public ProjectedWrapper5 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ProjectedWrapper5.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectedWrapper5();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="protected override object InternalGetProjectedPropertyValue (int propertyIndex);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object InternalGetProjectedPropertyValue(int32 propertyIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Internal.ProjectedWrapper5.InternalGetProjectedPropertyValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function InternalGetProjectedPropertyValue (propertyIndex As Integer) As Object" />
+      <MemberSignature Language="F#" Value="override this.InternalGetProjectedPropertyValue : int -&gt; obj" Usage="projectedWrapper5.InternalGetProjectedPropertyValue propertyIndex" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ InternalGetProjectedPropertyValue(int propertyIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -63,6 +71,9 @@
       <MemberSignature Language="C#" Value="public object ProjectedProperty0 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ProjectedProperty0" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapper5.ProjectedProperty0" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty0 As Object" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty0 : obj with get, set" Usage="System.Data.Services.Internal.ProjectedWrapper5.ProjectedProperty0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProjectedProperty0 { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -82,6 +93,9 @@
       <MemberSignature Language="C#" Value="public object ProjectedProperty1 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ProjectedProperty1" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapper5.ProjectedProperty1" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty1 As Object" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty1 : obj with get, set" Usage="System.Data.Services.Internal.ProjectedWrapper5.ProjectedProperty1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProjectedProperty1 { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -101,6 +115,9 @@
       <MemberSignature Language="C#" Value="public object ProjectedProperty2 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ProjectedProperty2" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapper5.ProjectedProperty2" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty2 As Object" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty2 : obj with get, set" Usage="System.Data.Services.Internal.ProjectedWrapper5.ProjectedProperty2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProjectedProperty2 { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -120,6 +137,9 @@
       <MemberSignature Language="C#" Value="public object ProjectedProperty3 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ProjectedProperty3" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapper5.ProjectedProperty3" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty3 As Object" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty3 : obj with get, set" Usage="System.Data.Services.Internal.ProjectedWrapper5.ProjectedProperty3" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProjectedProperty3 { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -139,6 +159,9 @@
       <MemberSignature Language="C#" Value="public object ProjectedProperty4 { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ProjectedProperty4" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Internal.ProjectedWrapper5.ProjectedProperty4" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProjectedProperty4 As Object" />
+      <MemberSignature Language="F#" Value="member this.ProjectedProperty4 : obj with get, set" Usage="System.Data.Services.Internal.ProjectedWrapper5.ProjectedProperty4" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProjectedProperty4 { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

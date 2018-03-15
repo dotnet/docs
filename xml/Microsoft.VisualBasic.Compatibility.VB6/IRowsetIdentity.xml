@@ -1,7 +1,10 @@
-<Type Name="IRowsetIdentity" FullName="Microsoft.VisualBasic.Compatibility.VB6.IRowsetIdentity">
+﻿<Type Name="IRowsetIdentity" FullName="Microsoft.VisualBasic.Compatibility.VB6.IRowsetIdentity">
   <TypeSignature Language="C#" Value="public interface IRowsetIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRowsetIdentity" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowsetIdentity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRowsetIdentity" />
+  <TypeSignature Language="F#" Value="type IRowsetIdentity = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRowsetIdentity" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -15,7 +18,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("0C733A09-2A1C-11CE-ADE5-00AA0044773D")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public int IsSameRow (int hThisRow, int hThatRow);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance int32 IsSameRow([in]int32 hThisRow, [in]int32 hThatRow) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowsetIdentity.IsSameRow(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsSameRow (hThisRow As Integer, hThatRow As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member IsSameRow : int * int -&gt; int" Usage="iRowsetIdentity.IsSameRow (hThisRow, hThatRow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IsSameRow(int hThisRow, int hThatRow);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

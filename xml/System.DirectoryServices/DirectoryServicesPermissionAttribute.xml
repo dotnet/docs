@@ -1,7 +1,10 @@
-<Type Name="DirectoryServicesPermissionAttribute" FullName="System.DirectoryServices.DirectoryServicesPermissionAttribute">
+﻿<Type Name="DirectoryServicesPermissionAttribute" FullName="System.DirectoryServices.DirectoryServicesPermissionAttribute">
   <TypeSignature Language="C#" Value="public class DirectoryServicesPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DirectoryServicesPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryServicesPermissionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class DirectoryServicesPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type DirectoryServicesPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectoryServicesPermissionAttribute : System::Security::Permissions::CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +15,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Event, AllowMultiple=true, Inherited=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Event | System.AttributeTargets.Method | System.AttributeTargets.Struct, AllowMultiple=true, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="public DirectoryServicesPermissionAttribute (System.Security.Permissions.SecurityAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.DirectoryServicesPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.DirectoryServices.DirectoryServicesPermissionAttribute" Usage="new System.DirectoryServices.DirectoryServicesPermissionAttribute action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryServicesPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DirectoryServicesPermissionAttribute.CreatePermission" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="directoryServicesPermissionAttribute.CreatePermission " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -71,6 +80,9 @@
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryServicesPermissionAttribute.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.DirectoryServices.DirectoryServicesPermissionAttribute.Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -92,6 +104,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryServicesPermissionAccess PermissionAccess { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.DirectoryServicesPermissionAccess PermissionAccess" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.DirectoryServicesPermissionAttribute.PermissionAccess" />
+      <MemberSignature Language="VB.NET" Value="Public Property PermissionAccess As DirectoryServicesPermissionAccess" />
+      <MemberSignature Language="F#" Value="member this.PermissionAccess : System.DirectoryServices.DirectoryServicesPermissionAccess with get, set" Usage="System.DirectoryServices.DirectoryServicesPermissionAttribute.PermissionAccess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::DirectoryServicesPermissionAccess PermissionAccess { System::DirectoryServices::DirectoryServicesPermissionAccess get(); void set(System::DirectoryServices::DirectoryServicesPermissionAccess value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

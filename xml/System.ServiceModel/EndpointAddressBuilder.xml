@@ -1,7 +1,10 @@
-<Type Name="EndpointAddressBuilder" FullName="System.ServiceModel.EndpointAddressBuilder">
+﻿<Type Name="EndpointAddressBuilder" FullName="System.ServiceModel.EndpointAddressBuilder">
   <TypeSignature Language="C#" Value="public class EndpointAddressBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EndpointAddressBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.EndpointAddressBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class EndpointAddressBuilder" />
+  <TypeSignature Language="F#" Value="type EndpointAddressBuilder = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EndpointAddressBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,10 +40,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.EndpointAddressBuilder" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EndpointAddressBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointAddressBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +86,9 @@
       <MemberSignature Language="C#" Value="public EndpointAddressBuilder (System.ServiceModel.EndpointAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.EndpointAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressBuilder.#ctor(System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (address As EndpointAddress)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.EndpointAddressBuilder : System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.EndpointAddressBuilder" Usage="new System.ServiceModel.EndpointAddressBuilder address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EndpointAddressBuilder(System::ServiceModel::EndpointAddress ^ address);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -111,6 +129,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryReader GetReaderAtExtensions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDictionaryReader GetReaderAtExtensions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressBuilder.GetReaderAtExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReaderAtExtensions () As XmlDictionaryReader" />
+      <MemberSignature Language="F#" Value="member this.GetReaderAtExtensions : unit -&gt; System.Xml.XmlDictionaryReader" Usage="endpointAddressBuilder.GetReaderAtExtensions " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlDictionaryReader ^ GetReaderAtExtensions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -143,6 +164,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryReader GetReaderAtMetadata ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlDictionaryReader GetReaderAtMetadata() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressBuilder.GetReaderAtMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReaderAtMetadata () As XmlDictionaryReader" />
+      <MemberSignature Language="F#" Value="member this.GetReaderAtMetadata : unit -&gt; System.Xml.XmlDictionaryReader" Usage="endpointAddressBuilder.GetReaderAtMetadata " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlDictionaryReader ^ GetReaderAtMetadata();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -170,6 +194,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Channels.AddressHeader&gt; Headers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Channels.AddressHeader&gt; Headers" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointAddressBuilder.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As Collection(Of AddressHeader)" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Channels.AddressHeader&gt;" Usage="System.ServiceModel.EndpointAddressBuilder.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Channels::AddressHeader ^&gt; ^ Headers { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Channels::AddressHeader ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -208,6 +235,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointIdentity Identity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointIdentity Identity" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointAddressBuilder.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Identity As EndpointIdentity" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.ServiceModel.EndpointIdentity with get, set" Usage="System.ServiceModel.EndpointAddressBuilder.Identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointIdentity ^ Identity { System::ServiceModel::EndpointIdentity ^ get(); void set(System::ServiceModel::EndpointIdentity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -246,6 +276,9 @@
       <MemberSignature Language="C#" Value="public void SetExtensionReader (System.Xml.XmlDictionaryReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetExtensionReader(class System.Xml.XmlDictionaryReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressBuilder.SetExtensionReader(System.Xml.XmlDictionaryReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetExtensionReader (reader As XmlDictionaryReader)" />
+      <MemberSignature Language="F#" Value="member this.SetExtensionReader : System.Xml.XmlDictionaryReader -&gt; unit" Usage="endpointAddressBuilder.SetExtensionReader reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetExtensionReader(System::Xml::XmlDictionaryReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -275,6 +308,9 @@
       <MemberSignature Language="C#" Value="public void SetMetadataReader (System.Xml.XmlDictionaryReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetMetadataReader(class System.Xml.XmlDictionaryReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressBuilder.SetMetadataReader(System.Xml.XmlDictionaryReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetMetadataReader (reader As XmlDictionaryReader)" />
+      <MemberSignature Language="F#" Value="member this.SetMetadataReader : System.Xml.XmlDictionaryReader -&gt; unit" Usage="endpointAddressBuilder.SetMetadataReader reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMetadataReader(System::Xml::XmlDictionaryReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -304,6 +340,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress ToEndpointAddress ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.EndpointAddress ToEndpointAddress() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.EndpointAddressBuilder.ToEndpointAddress" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToEndpointAddress () As EndpointAddress" />
+      <MemberSignature Language="F#" Value="member this.ToEndpointAddress : unit -&gt; System.ServiceModel.EndpointAddress" Usage="endpointAddressBuilder.ToEndpointAddress " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::EndpointAddress ^ ToEndpointAddress();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -343,6 +382,9 @@
       <MemberSignature Language="C#" Value="public Uri Uri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Uri" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.EndpointAddressBuilder.Uri" />
+      <MemberSignature Language="VB.NET" Value="Public Property Uri As Uri" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri with get, set" Usage="System.ServiceModel.EndpointAddressBuilder.Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -377,15 +419,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.EndpointAddressBuilder" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="LineAnnotation" FullName="System.Windows.Forms.DataVisualization.Charting.LineAnnotation">
+﻿<Type Name="LineAnnotation" FullName="System.Windows.Forms.DataVisualization.Charting.LineAnnotation">
   <TypeSignature Language="C#" Value="public class LineAnnotation : System.Windows.Forms.DataVisualization.Charting.Annotation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LineAnnotation extends System.Windows.Forms.DataVisualization.Charting.Annotation" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.LineAnnotation" />
+  <TypeSignature Language="VB.NET" Value="Public Class LineAnnotation&#xA;Inherits Annotation" />
+  <TypeSignature Language="F#" Value="type LineAnnotation = class&#xA;    inherit Annotation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LineAnnotation : System::Windows::Forms::DataVisualization::Charting::Annotation" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public LineAnnotation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LineAnnotation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.ContentAlignment Alignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.ContentAlignment Alignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.Alignment" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Alignment As ContentAlignment" />
+      <MemberSignature Language="F#" Value="member this.Alignment : System.Drawing.ContentAlignment with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.LineAnnotation.Alignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::ContentAlignment Alignment { System::Drawing::ContentAlignment get(); void set(System::Drawing::ContentAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -60,6 +68,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.ContentAlignment AnchorAlignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.ContentAlignment AnchorAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.AnchorAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AnchorAlignment As ContentAlignment" />
+      <MemberSignature Language="F#" Value="member this.AnchorAlignment : System.Drawing.ContentAlignment with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.LineAnnotation.AnchorAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::ContentAlignment AnchorAlignment { System::Drawing::ContentAlignment get(); void set(System::Drawing::ContentAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -96,6 +107,9 @@
       <MemberSignature Language="C#" Value="public override string AnnotationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AnnotationType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.AnnotationType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AnnotationType As String" />
+      <MemberSignature Language="F#" Value="member this.AnnotationType : string" Usage="System.Windows.Forms.DataVisualization.Charting.LineAnnotation.AnnotationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AnnotationType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -109,7 +123,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -135,6 +149,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.LineAnnotation.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -170,6 +187,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.GradientStyle BackGradientStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.BackGradientStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackGradientStyle As GradientStyle" />
+      <MemberSignature Language="F#" Value="member this.BackGradientStyle : System.Windows.Forms.DataVisualization.Charting.GradientStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.LineAnnotation.BackGradientStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::GradientStyle BackGradientStyle { System::Windows::Forms::DataVisualization::Charting::GradientStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::GradientStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -202,6 +222,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle BackHatchStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.BackHatchStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackHatchStyle As ChartHatchStyle" />
+      <MemberSignature Language="F#" Value="member this.BackHatchStyle : System.Windows.Forms.DataVisualization.Charting.ChartHatchStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.LineAnnotation.BackHatchStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::ChartHatchStyle BackHatchStyle { System::Windows::Forms::DataVisualization::Charting::ChartHatchStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::ChartHatchStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -234,6 +257,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackSecondaryColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackSecondaryColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.BackSecondaryColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackSecondaryColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackSecondaryColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.LineAnnotation.BackSecondaryColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackSecondaryColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -269,6 +295,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle EndCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle EndCap" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.EndCap" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EndCap As LineAnchorCapStyle" />
+      <MemberSignature Language="F#" Value="member this.EndCap : System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.LineAnnotation.EndCap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::LineAnchorCapStyle EndCap { System::Windows::Forms::DataVisualization::Charting::LineAnchorCapStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::LineAnchorCapStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -292,6 +321,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Font As Font" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.LineAnnotation.Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -318,6 +350,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.LineAnnotation.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -350,6 +385,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsInfinitive { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInfinitive" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.IsInfinitive" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property IsInfinitive As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInfinitive : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.LineAnnotation.IsInfinitive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsInfinitive { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -374,6 +412,9 @@
       <MemberSignature Language="C#" Value="public override bool IsSizeAlwaysRelative { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSizeAlwaysRelative" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.IsSizeAlwaysRelative" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property IsSizeAlwaysRelative As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSizeAlwaysRelative : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.LineAnnotation.IsSizeAlwaysRelative" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSizeAlwaysRelative { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -405,6 +446,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle StartCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle StartCap" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.StartCap" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StartCap As LineAnchorCapStyle" />
+      <MemberSignature Language="F#" Value="member this.StartCap : System.Windows.Forms.DataVisualization.Charting.LineAnchorCapStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.LineAnnotation.StartCap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::LineAnchorCapStyle StartCap { System::Windows::Forms::DataVisualization::Charting::LineAnchorCapStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::LineAnchorCapStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -428,6 +472,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataVisualization.Charting.TextStyle TextStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.TextStyle TextStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.LineAnnotation.TextStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property TextStyle As TextStyle" />
+      <MemberSignature Language="F#" Value="member this.TextStyle : System.Windows.Forms.DataVisualization.Charting.TextStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.LineAnnotation.TextStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataVisualization::Charting::TextStyle TextStyle { System::Windows::Forms::DataVisualization::Charting::TextStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::TextStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

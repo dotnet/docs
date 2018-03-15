@@ -1,7 +1,10 @@
-<Type Name="UiSynchronizationContext" FullName="System.Net.UiSynchronizationContext">
+﻿<Type Name="UiSynchronizationContext" FullName="System.Net.UiSynchronizationContext">
   <TypeSignature Language="C#" Value="public static class UiSynchronizationContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit UiSynchronizationContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.UiSynchronizationContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class UiSynchronizationContext" />
+  <TypeSignature Language="F#" Value="type UiSynchronizationContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UiSynchronizationContext abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="public static System.Threading.SynchronizationContext Current { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Threading.SynchronizationContext Current" />
       <MemberSignature Language="DocId" Value="P:System.Net.UiSynchronizationContext.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Current As SynchronizationContext" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Threading.SynchronizationContext with get, set" Usage="System.Net.UiSynchronizationContext.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Threading::SynchronizationContext ^ Current { System::Threading::SynchronizationContext ^ get(); void set(System::Threading::SynchronizationContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -55,6 +61,9 @@
       <MemberSignature Language="C#" Value="public static int ManagedUiThreadId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 ManagedUiThreadId" />
       <MemberSignature Language="DocId" Value="P:System.Net.UiSynchronizationContext.ManagedUiThreadId" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property ManagedUiThreadId As Integer" />
+      <MemberSignature Language="F#" Value="member this.ManagedUiThreadId : int with get, set" Usage="System.Net.UiSynchronizationContext.ManagedUiThreadId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ManagedUiThreadId { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

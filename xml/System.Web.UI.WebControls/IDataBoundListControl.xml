@@ -1,7 +1,10 @@
-<Type Name="IDataBoundListControl" FullName="System.Web.UI.WebControls.IDataBoundListControl">
+﻿<Type Name="IDataBoundListControl" FullName="System.Web.UI.WebControls.IDataBoundListControl">
   <TypeSignature Language="C#" Value="public interface IDataBoundListControl : System.Web.UI.WebControls.IDataBoundControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataBoundListControl implements class System.Web.UI.WebControls.IDataBoundControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IDataBoundListControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataBoundListControl&#xA;Implements IDataBoundControl" />
+  <TypeSignature Language="F#" Value="type IDataBoundListControl = interface&#xA;    interface IDataBoundControl" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataBoundListControl : System::Web::UI::WebControls::IDataBoundControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public string[] ClientIDRowSuffix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ClientIDRowSuffix" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientIDRowSuffix As String()" />
+      <MemberSignature Language="F#" Value="member this.ClientIDRowSuffix : string[] with get, set" Usage="System.Web.UI.WebControls.IDataBoundListControl.ClientIDRowSuffix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ClientIDRowSuffix { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -39,6 +45,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataKeyArray DataKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataKeyArray DataKeys" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundListControl.DataKeys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataKeys As DataKeyArray" />
+      <MemberSignature Language="F#" Value="member this.DataKeys : System.Web.UI.WebControls.DataKeyArray" Usage="System.Web.UI.WebControls.IDataBoundListControl.DataKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataKeyArray ^ DataKeys { System::Web::UI::WebControls::DataKeyArray ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +66,9 @@
       <MemberSignature Language="C#" Value="public bool EnablePersistedSelection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnablePersistedSelection" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnablePersistedSelection As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnablePersistedSelection : bool with get, set" Usage="System.Web.UI.WebControls.IDataBoundListControl.EnablePersistedSelection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnablePersistedSelection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +88,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataKey SelectedDataKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataKey SelectedDataKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedDataKey As DataKey" />
+      <MemberSignature Language="F#" Value="member this.SelectedDataKey : System.Web.UI.WebControls.DataKey" Usage="System.Web.UI.WebControls.IDataBoundListControl.SelectedDataKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataKey ^ SelectedDataKey { System::Web::UI::WebControls::DataKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +109,9 @@
       <MemberSignature Language="C#" Value="public int SelectedIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.SelectedIndex : int with get, set" Usage="System.Web.UI.WebControls.IDataBoundListControl.SelectedIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectedIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

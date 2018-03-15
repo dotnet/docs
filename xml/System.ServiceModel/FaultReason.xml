@@ -1,7 +1,10 @@
-<Type Name="FaultReason" FullName="System.ServiceModel.FaultReason">
+﻿<Type Name="FaultReason" FullName="System.ServiceModel.FaultReason">
   <TypeSignature Language="C#" Value="public class FaultReason" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FaultReason extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.FaultReason" />
+  <TypeSignature Language="VB.NET" Value="Public Class FaultReason" />
+  <TypeSignature Language="F#" Value="type FaultReason = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FaultReason" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,10 +32,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultReason" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FaultReason (System.Collections.Generic.IEnumerable&lt;System.ServiceModel.FaultReasonText&gt; translations);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.FaultReasonText&gt; translations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReason.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.FaultReasonText})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (translations As IEnumerable(Of FaultReasonText))" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultReason : seq&lt;System.ServiceModel.FaultReasonText&gt; -&gt; System.ServiceModel.FaultReason" Usage="new System.ServiceModel.FaultReason translations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultReason(System::Collections::Generic::IEnumerable&lt;System::ServiceModel::FaultReasonText ^&gt; ^ translations);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -62,6 +78,9 @@
       <MemberSignature Language="C#" Value="public FaultReason (System.ServiceModel.FaultReasonText translation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.FaultReasonText translation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReason.#ctor(System.ServiceModel.FaultReasonText)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (translation As FaultReasonText)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultReason : System.ServiceModel.FaultReasonText -&gt; System.ServiceModel.FaultReason" Usage="new System.ServiceModel.FaultReason translation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultReason(System::ServiceModel::FaultReasonText ^ translation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -87,6 +106,9 @@
       <MemberSignature Language="C#" Value="public FaultReason (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReason.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultReason : string -&gt; System.ServiceModel.FaultReason" Usage="new System.ServiceModel.FaultReason text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultReason(System::String ^ text);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -108,10 +130,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMatchingTranslation">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the fault description in a specific language.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetMatchingTranslation">
       <MemberSignature Language="C#" Value="public System.ServiceModel.FaultReasonText GetMatchingTranslation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.FaultReasonText GetMatchingTranslation() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReason.GetMatchingTranslation" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMatchingTranslation () As FaultReasonText" />
+      <MemberSignature Language="F#" Value="member this.GetMatchingTranslation : unit -&gt; System.ServiceModel.FaultReasonText" Usage="faultReason.GetMatchingTranslation " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::FaultReasonText ^ GetMatchingTranslation();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +188,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.FaultReasonText GetMatchingTranslation (System.Globalization.CultureInfo cultureInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.FaultReasonText GetMatchingTranslation(class System.Globalization.CultureInfo cultureInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReason.GetMatchingTranslation(System.Globalization.CultureInfo)" />
+      <MemberSignature Language="F#" Value="member this.GetMatchingTranslation : System.Globalization.CultureInfo -&gt; System.ServiceModel.FaultReasonText" Usage="faultReason.GetMatchingTranslation cultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::FaultReasonText ^ GetMatchingTranslation(System::Globalization::CultureInfo ^ cultureInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -198,6 +235,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultReason.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="faultReason.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -224,6 +264,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.SynchronizedReadOnlyCollection&lt;System.ServiceModel.FaultReasonText&gt; Translations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.SynchronizedReadOnlyCollection`1&lt;class System.ServiceModel.FaultReasonText&gt; Translations" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultReason.Translations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Translations As SynchronizedReadOnlyCollection(Of FaultReasonText)" />
+      <MemberSignature Language="F#" Value="member this.Translations : System.Collections.Generic.SynchronizedReadOnlyCollection&lt;System.ServiceModel.FaultReasonText&gt;" Usage="System.ServiceModel.FaultReason.Translations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::SynchronizedReadOnlyCollection&lt;System::ServiceModel::FaultReasonText ^&gt; ^ Translations { System::Collections::Generic::SynchronizedReadOnlyCollection&lt;System::ServiceModel::FaultReasonText ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -239,25 +282,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultReason" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetMatchingTranslation">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the fault description in a specific language.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

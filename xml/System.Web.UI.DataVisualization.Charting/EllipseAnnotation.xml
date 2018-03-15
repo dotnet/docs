@@ -1,7 +1,10 @@
-<Type Name="EllipseAnnotation" FullName="System.Web.UI.DataVisualization.Charting.EllipseAnnotation">
+﻿<Type Name="EllipseAnnotation" FullName="System.Web.UI.DataVisualization.Charting.EllipseAnnotation">
   <TypeSignature Language="C#" Value="public class EllipseAnnotation : System.Web.UI.DataVisualization.Charting.RectangleAnnotation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EllipseAnnotation extends System.Web.UI.DataVisualization.Charting.RectangleAnnotation" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.EllipseAnnotation" />
+  <TypeSignature Language="VB.NET" Value="Public Class EllipseAnnotation&#xA;Inherits RectangleAnnotation" />
+  <TypeSignature Language="F#" Value="type EllipseAnnotation = class&#xA;    inherit RectangleAnnotation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EllipseAnnotation : System::Web::UI::DataVisualization::Charting::RectangleAnnotation" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public EllipseAnnotation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.EllipseAnnotation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EllipseAnnotation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public override string AnnotationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AnnotationType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.EllipseAnnotation.AnnotationType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AnnotationType As String" />
+      <MemberSignature Language="F#" Value="member this.AnnotationType : string" Usage="System.Web.UI.DataVisualization.Charting.EllipseAnnotation.AnnotationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ AnnotationType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -54,7 +62,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>

@@ -1,7 +1,10 @@
-<Type Name="LineCap" FullName="System.Drawing.Drawing2D.LineCap">
+﻿<Type Name="LineCap" FullName="System.Drawing.Drawing2D.LineCap">
   <TypeSignature Language="C#" Value="public enum LineCap" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LineCap extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.LineCap" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LineCap" />
+  <TypeSignature Language="F#" Value="type LineCap = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LineCap" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="AnchorMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap AnchorMask = int32(240)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.AnchorMask" />
+      <MemberSignature Language="VB.NET" Value="AnchorMask" />
+      <MemberSignature Language="F#" Value="AnchorMask = 240" Usage="System.Drawing.Drawing2D.LineCap.AnchorMask" />
+      <MemberSignature Language="C++ CLI" Value="AnchorMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
+      <MemberValue>240</MemberValue>
       <Docs>
         <summary>Specifies a mask used to check whether a line cap is an anchor cap.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="ArrowAnchor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap ArrowAnchor = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.ArrowAnchor" />
+      <MemberSignature Language="VB.NET" Value="ArrowAnchor" />
+      <MemberSignature Language="F#" Value="ArrowAnchor = 20" Usage="System.Drawing.Drawing2D.LineCap.ArrowAnchor" />
+      <MemberSignature Language="C++ CLI" Value="ArrowAnchor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -59,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>Specifies an arrow-shaped anchor cap.</summary>
       </Docs>
@@ -67,6 +78,9 @@
       <MemberSignature Language="C#" Value="Custom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap Custom = int32(255)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.Custom" />
+      <MemberSignature Language="VB.NET" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 255" Usage="System.Drawing.Drawing2D.LineCap.Custom" />
+      <MemberSignature Language="C++ CLI" Value="Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -75,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
+      <MemberValue>255</MemberValue>
       <Docs>
         <summary>Specifies a custom line cap.</summary>
       </Docs>
@@ -83,6 +98,9 @@
       <MemberSignature Language="C#" Value="DiamondAnchor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap DiamondAnchor = int32(19)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.DiamondAnchor" />
+      <MemberSignature Language="VB.NET" Value="DiamondAnchor" />
+      <MemberSignature Language="F#" Value="DiamondAnchor = 19" Usage="System.Drawing.Drawing2D.LineCap.DiamondAnchor" />
+      <MemberSignature Language="C++ CLI" Value="DiamondAnchor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -91,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>Specifies a diamond anchor cap.</summary>
       </Docs>
@@ -99,6 +118,9 @@
       <MemberSignature Language="C#" Value="Flat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap Flat = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.Flat" />
+      <MemberSignature Language="VB.NET" Value="Flat" />
+      <MemberSignature Language="F#" Value="Flat = 0" Usage="System.Drawing.Drawing2D.LineCap.Flat" />
+      <MemberSignature Language="C++ CLI" Value="Flat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -107,6 +129,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies a flat line cap.</summary>
       </Docs>
@@ -115,6 +138,9 @@
       <MemberSignature Language="C#" Value="NoAnchor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap NoAnchor = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.NoAnchor" />
+      <MemberSignature Language="VB.NET" Value="NoAnchor" />
+      <MemberSignature Language="F#" Value="NoAnchor = 16" Usage="System.Drawing.Drawing2D.LineCap.NoAnchor" />
+      <MemberSignature Language="C++ CLI" Value="NoAnchor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -123,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Specifies no anchor.</summary>
       </Docs>
@@ -131,6 +158,9 @@
       <MemberSignature Language="C#" Value="Round" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap Round = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.Round" />
+      <MemberSignature Language="VB.NET" Value="Round" />
+      <MemberSignature Language="F#" Value="Round = 2" Usage="System.Drawing.Drawing2D.LineCap.Round" />
+      <MemberSignature Language="C++ CLI" Value="Round" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -139,6 +169,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies a round line cap.</summary>
       </Docs>
@@ -147,6 +178,9 @@
       <MemberSignature Language="C#" Value="RoundAnchor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap RoundAnchor = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.RoundAnchor" />
+      <MemberSignature Language="VB.NET" Value="RoundAnchor" />
+      <MemberSignature Language="F#" Value="RoundAnchor = 18" Usage="System.Drawing.Drawing2D.LineCap.RoundAnchor" />
+      <MemberSignature Language="C++ CLI" Value="RoundAnchor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -155,6 +189,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>Specifies a round anchor cap.</summary>
       </Docs>
@@ -163,6 +198,9 @@
       <MemberSignature Language="C#" Value="Square" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap Square = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.Square" />
+      <MemberSignature Language="VB.NET" Value="Square" />
+      <MemberSignature Language="F#" Value="Square = 1" Usage="System.Drawing.Drawing2D.LineCap.Square" />
+      <MemberSignature Language="C++ CLI" Value="Square" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -171,6 +209,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies a square line cap.</summary>
       </Docs>
@@ -179,6 +218,9 @@
       <MemberSignature Language="C#" Value="SquareAnchor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap SquareAnchor = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.SquareAnchor" />
+      <MemberSignature Language="VB.NET" Value="SquareAnchor" />
+      <MemberSignature Language="F#" Value="SquareAnchor = 17" Usage="System.Drawing.Drawing2D.LineCap.SquareAnchor" />
+      <MemberSignature Language="C++ CLI" Value="SquareAnchor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -187,6 +229,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>Specifies a square anchor line cap.</summary>
       </Docs>
@@ -195,6 +238,9 @@
       <MemberSignature Language="C#" Value="Triangle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineCap Triangle = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineCap.Triangle" />
+      <MemberSignature Language="VB.NET" Value="Triangle" />
+      <MemberSignature Language="F#" Value="Triangle = 3" Usage="System.Drawing.Drawing2D.LineCap.Triangle" />
+      <MemberSignature Language="C++ CLI" Value="Triangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -203,6 +249,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineCap</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies a triangular line cap.</summary>
       </Docs>

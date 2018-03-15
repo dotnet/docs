@@ -1,7 +1,10 @@
-<Type Name="DrawItemEventHandler" FullName="System.Windows.Forms.DrawItemEventHandler">
+﻿<Type Name="DrawItemEventHandler" FullName="System.Windows.Forms.DrawItemEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DrawItemEventHandler(object sender, DrawItemEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DrawItemEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawItemEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DrawItemEventHandler(sender As Object, e As DrawItemEventArgs)" />
+  <TypeSignature Language="F#" Value="type DrawItemEventHandler = delegate of obj * DrawItemEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DrawItemEventHandler(System::Object ^ sender, DrawItemEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="StateElementCollection" FullName="System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection">
+﻿<Type Name="StateElementCollection" FullName="System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection">
   <TypeSignature Language="C#" Value="public sealed class StateElementCollection : System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection&lt;System.ServiceModel.Activities.Tracking.Configuration.StateElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StateElementCollection extends System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1&lt;class System.ServiceModel.Activities.Tracking.Configuration.StateElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StateElementCollection&#xA;Inherits TrackingConfigurationCollection(Of StateElement)" />
+  <TypeSignature Language="F#" Value="type StateElementCollection = class&#xA;    inherit TrackingConfigurationCollection&lt;StateElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StateElementCollection sealed : System::ServiceModel::Activities::Tracking::Configuration::TrackingConfigurationCollection&lt;System::ServiceModel::Activities::Tracking::Configuration::StateElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public StateElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StateElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="protected override string ElementName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection.ElementName" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.ServiceModel.Activities.Tracking.Configuration.StateElementCollection.ElementName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

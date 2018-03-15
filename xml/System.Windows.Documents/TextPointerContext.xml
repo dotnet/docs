@@ -1,7 +1,10 @@
-<Type Name="TextPointerContext" FullName="System.Windows.Documents.TextPointerContext">
+﻿<Type Name="TextPointerContext" FullName="System.Windows.Documents.TextPointerContext">
   <TypeSignature Language="C#" Value="public enum TextPointerContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextPointerContext extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.TextPointerContext" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TextPointerContext" />
+  <TypeSignature Language="F#" Value="type TextPointerContext = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TextPointerContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="ElementEnd" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Documents.TextPointerContext ElementEnd = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextPointerContext.ElementEnd" />
+      <MemberSignature Language="VB.NET" Value="ElementEnd" />
+      <MemberSignature Language="F#" Value="ElementEnd = 4" Usage="System.Windows.Documents.TextPointerContext.ElementEnd" />
+      <MemberSignature Language="C++ CLI" Value="ElementEnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Documents.TextPointerContext</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Documents.TextPointer" /> is adjacent to the closing tag of a <see cref="T:System.Windows.Documents.TextElement" />.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="ElementStart" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Documents.TextPointerContext ElementStart = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextPointerContext.ElementStart" />
+      <MemberSignature Language="VB.NET" Value="ElementStart" />
+      <MemberSignature Language="F#" Value="ElementStart = 3" Usage="System.Windows.Documents.TextPointerContext.ElementStart" />
+      <MemberSignature Language="C++ CLI" Value="ElementStart" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Documents.TextPointerContext</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Documents.TextPointer" /> is adjacent to the opening tag of a <see cref="T:System.Windows.Documents.TextElement" />.</summary>
       </Docs>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="EmbeddedElement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Documents.TextPointerContext EmbeddedElement = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextPointerContext.EmbeddedElement" />
+      <MemberSignature Language="VB.NET" Value="EmbeddedElement" />
+      <MemberSignature Language="F#" Value="EmbeddedElement = 2" Usage="System.Windows.Documents.TextPointerContext.EmbeddedElement" />
+      <MemberSignature Language="C++ CLI" Value="EmbeddedElement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Documents.TextPointerContext</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Documents.TextPointer" /> is adjacent to an embedded <see cref="T:System.Windows.UIElement" /> or <see cref="T:System.Windows.ContentElement" />.</summary>
       </Docs>
@@ -75,6 +90,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Documents.TextPointerContext None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextPointerContext.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Documents.TextPointerContext.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -83,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Documents.TextPointerContext</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Documents.TextPointer" /> is adjacent to the beginning or end of content.</summary>
       </Docs>
@@ -91,6 +110,9 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Documents.TextPointerContext Text = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.TextPointerContext.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 1" Usage="System.Windows.Documents.TextPointerContext.Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -99,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Documents.TextPointerContext</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Documents.TextPointer" /> is adjacent to text.</summary>
       </Docs>

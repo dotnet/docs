@@ -1,7 +1,10 @@
-<Type Name="AuthenticationModuleElement" FullName="System.Net.Configuration.AuthenticationModuleElement">
+﻿<Type Name="AuthenticationModuleElement" FullName="System.Net.Configuration.AuthenticationModuleElement">
   <TypeSignature Language="C#" Value="public sealed class AuthenticationModuleElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthenticationModuleElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.AuthenticationModuleElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AuthenticationModuleElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type AuthenticationModuleElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AuthenticationModuleElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +31,21 @@
     <altmember cref="T:System.Net.AuthenticationManager" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.AuthenticationModuleElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AuthenticationModuleElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.AuthenticationModuleElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthenticationModuleElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -56,6 +70,9 @@
       <MemberSignature Language="C#" Value="public AuthenticationModuleElement (string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.AuthenticationModuleElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
+      <MemberSignature Language="F#" Value="new System.Net.Configuration.AuthenticationModuleElement : string -&gt; System.Net.Configuration.AuthenticationModuleElement" Usage="new System.Net.Configuration.AuthenticationModuleElement typeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthenticationModuleElement(System::String ^ typeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -83,6 +100,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.AuthenticationModuleElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.AuthenticationModuleElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +121,9 @@
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.AuthenticationModuleElement.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Net.Configuration.AuthenticationModuleElement.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -108,7 +131,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("type", Options=System.Configuration.ConfigurationPropertyOptions.IsRequired | System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("type", Options=System.Configuration.ConfigurationPropertyOptions.IsKey | System.Configuration.ConfigurationPropertyOptions.IsRequired)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -129,14 +152,5 @@
         <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.AuthenticationModuleElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

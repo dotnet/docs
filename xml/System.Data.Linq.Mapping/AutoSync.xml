@@ -1,7 +1,10 @@
-<Type Name="AutoSync" FullName="System.Data.Linq.Mapping.AutoSync">
+﻿<Type Name="AutoSync" FullName="System.Data.Linq.Mapping.AutoSync">
   <TypeSignature Language="C#" Value="public enum AutoSync" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutoSync extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.AutoSync" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AutoSync" />
+  <TypeSignature Language="F#" Value="type AutoSync = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AutoSync" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Always" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.Mapping.AutoSync Always = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.AutoSync.Always" />
+      <MemberSignature Language="VB.NET" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 1" Usage="System.Data.Linq.Mapping.AutoSync.Always" />
+      <MemberSignature Language="C++ CLI" Value="Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Always returns the value.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.Mapping.AutoSync Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.AutoSync.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Data.Linq.Mapping.AutoSync.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Automatically selects the value.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="Never" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.Mapping.AutoSync Never = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.AutoSync.Never" />
+      <MemberSignature Language="VB.NET" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 2" Usage="System.Data.Linq.Mapping.AutoSync.Never" />
+      <MemberSignature Language="C++ CLI" Value="Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Never returns the value.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="OnInsert" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.Mapping.AutoSync OnInsert = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.AutoSync.OnInsert" />
+      <MemberSignature Language="VB.NET" Value="OnInsert" />
+      <MemberSignature Language="F#" Value="OnInsert = 3" Usage="System.Data.Linq.Mapping.AutoSync.OnInsert" />
+      <MemberSignature Language="C++ CLI" Value="OnInsert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Returns the value only after an insert operation.</summary>
       </Docs>
@@ -82,6 +101,9 @@
       <MemberSignature Language="C#" Value="OnUpdate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.Mapping.AutoSync OnUpdate = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.Mapping.AutoSync.OnUpdate" />
+      <MemberSignature Language="VB.NET" Value="OnUpdate" />
+      <MemberSignature Language="F#" Value="OnUpdate = 4" Usage="System.Data.Linq.Mapping.AutoSync.OnUpdate" />
+      <MemberSignature Language="C++ CLI" Value="OnUpdate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -90,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Linq.Mapping.AutoSync</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Returns the value only after an update operation.</summary>
       </Docs>

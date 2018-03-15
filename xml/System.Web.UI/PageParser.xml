@@ -1,7 +1,10 @@
-<Type Name="PageParser" FullName="System.Web.UI.PageParser">
+﻿<Type Name="PageParser" FullName="System.Web.UI.PageParser">
   <TypeSignature Language="C#" Value="public sealed class PageParser : System.Web.UI.TemplateControlParser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PageParser extends System.Web.UI.TemplateControlParser" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PageParser" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PageParser&#xA;Inherits TemplateControlParser" />
+  <TypeSignature Language="F#" Value="type PageParser = class&#xA;    inherit TemplateControlParser" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PageParser sealed : System::Web::UI::TemplateControlParser" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public PageParser ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParser.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PageParser();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +55,9 @@
       <MemberSignature Language="C#" Value="public static Type DefaultApplicationBaseType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Type DefaultApplicationBaseType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParser.DefaultApplicationBaseType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultApplicationBaseType As Type" />
+      <MemberSignature Language="F#" Value="member this.DefaultApplicationBaseType : Type with get, set" Usage="System.Web.UI.PageParser.DefaultApplicationBaseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ DefaultApplicationBaseType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +84,9 @@
       <MemberSignature Language="C#" Value="public static Type DefaultPageBaseType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Type DefaultPageBaseType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParser.DefaultPageBaseType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultPageBaseType As Type" />
+      <MemberSignature Language="F#" Value="member this.DefaultPageBaseType : Type with get, set" Usage="System.Web.UI.PageParser.DefaultPageBaseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ DefaultPageBaseType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +113,9 @@
       <MemberSignature Language="C#" Value="public static Type DefaultPageParserFilterType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Type DefaultPageParserFilterType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParser.DefaultPageParserFilterType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultPageParserFilterType As Type" />
+      <MemberSignature Language="F#" Value="member this.DefaultPageParserFilterType : Type with get, set" Usage="System.Web.UI.PageParser.DefaultPageParserFilterType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ DefaultPageParserFilterType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -128,6 +142,9 @@
       <MemberSignature Language="C#" Value="public static Type DefaultUserControlBaseType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Type DefaultUserControlBaseType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParser.DefaultUserControlBaseType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property DefaultUserControlBaseType As Type" />
+      <MemberSignature Language="F#" Value="member this.DefaultUserControlBaseType : Type with get, set" Usage="System.Web.UI.PageParser.DefaultUserControlBaseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Type ^ DefaultUserControlBaseType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -154,6 +171,9 @@
       <MemberSignature Language="C#" Value="public static bool EnableLongStringsAsResources { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool EnableLongStringsAsResources" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageParser.EnableLongStringsAsResources" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property EnableLongStringsAsResources As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableLongStringsAsResources : bool with get, set" Usage="System.Web.UI.PageParser.EnableLongStringsAsResources" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool EnableLongStringsAsResources { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -181,6 +201,9 @@
       <MemberSignature Language="C#" Value="public static System.Web.IHttpHandler GetCompiledPageInstance (string virtualPath, string inputFile, System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.IHttpHandler GetCompiledPageInstance(string virtualPath, string inputFile, class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageParser.GetCompiledPageInstance(System.String,System.String,System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCompiledPageInstance (virtualPath As String, inputFile As String, context As HttpContext) As IHttpHandler" />
+      <MemberSignature Language="F#" Value="static member GetCompiledPageInstance : string * string * System.Web.HttpContext -&gt; System.Web.IHttpHandler" Usage="System.Web.UI.PageParser.GetCompiledPageInstance (virtualPath, inputFile, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::IHttpHandler ^ GetCompiledPageInstance(System::String ^ virtualPath, System::String ^ inputFile, System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="Transactions" FullName="System.Web.Util.Transactions">
+﻿<Type Name="Transactions" FullName="System.Web.Util.Transactions">
   <TypeSignature Language="C#" Value="public class Transactions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Transactions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Util.Transactions" />
+  <TypeSignature Language="VB.NET" Value="Public Class Transactions" />
+  <TypeSignature Language="F#" Value="type Transactions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Transactions" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public Transactions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.Transactions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Transactions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -30,10 +35,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeTransacted">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Wraps a specified transaction support around a callback method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InvokeTransacted">
       <MemberSignature Language="C#" Value="public static void InvokeTransacted (System.Web.Util.TransactedCallback callback, System.EnterpriseServices.TransactionOption mode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InvokeTransacted(class System.Web.Util.TransactedCallback callback, valuetype System.EnterpriseServices.TransactionOption mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.Transactions.InvokeTransacted(System.Web.Util.TransactedCallback,System.EnterpriseServices.TransactionOption)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub InvokeTransacted (callback As TransactedCallback, mode As TransactionOption)" />
+      <MemberSignature Language="F#" Value="static member InvokeTransacted : System.Web.Util.TransactedCallback * System.EnterpriseServices.TransactionOption -&gt; unit" Usage="System.Web.Util.Transactions.InvokeTransacted (callback, mode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InvokeTransacted(System::Web::Util::TransactedCallback ^ callback, System::EnterpriseServices::TransactionOption mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +76,9 @@
       <MemberSignature Language="C#" Value="public static void InvokeTransacted (System.Web.Util.TransactedCallback callback, System.EnterpriseServices.TransactionOption mode, ref bool transactionAborted);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InvokeTransacted(class System.Web.Util.TransactedCallback callback, valuetype System.EnterpriseServices.TransactionOption mode, bool&amp; transactionAborted) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Util.Transactions.InvokeTransacted(System.Web.Util.TransactedCallback,System.EnterpriseServices.TransactionOption,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub InvokeTransacted (callback As TransactedCallback, mode As TransactionOption, ByRef transactionAborted As Boolean)" />
+      <MemberSignature Language="F#" Value="static member InvokeTransacted : System.Web.Util.TransactedCallback * System.EnterpriseServices.TransactionOption *  -&gt; unit" Usage="System.Web.Util.Transactions.InvokeTransacted (callback, mode, transactionAborted)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InvokeTransacted(System::Web::Util::TransactedCallback ^ callback, System::EnterpriseServices::TransactionOption mode, bool % transactionAborted);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,14 +109,5 @@
         <exception cref="T:System.Web.HttpException">The transacted code cannot be executed.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="InvokeTransacted">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Wraps a specified transaction support around a callback method.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="DataGridViewTriState" FullName="System.Windows.Forms.DataGridViewTriState">
+﻿<Type Name="DataGridViewTriState" FullName="System.Windows.Forms.DataGridViewTriState">
   <TypeSignature Language="C#" Value="public enum DataGridViewTriState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewTriState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewTriState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewTriState" />
+  <TypeSignature Language="F#" Value="type DataGridViewTriState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewTriState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="False" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewTriState False = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewTriState.False" />
+      <MemberSignature Language="VB.NET" Value="False" />
+      <MemberSignature Language="F#" Value="False = 2" Usage="System.Windows.Forms.DataGridViewTriState.False" />
+      <MemberSignature Language="C++ CLI" Value="False" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -42,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewTriState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The property's state is <see langword="false" />.</summary>
       </Docs>
@@ -50,6 +57,9 @@
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewTriState NotSet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewTriState.NotSet" />
+      <MemberSignature Language="VB.NET" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Windows.Forms.DataGridViewTriState.NotSet" />
+      <MemberSignature Language="C++ CLI" Value="NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewTriState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The property is not set and will behave in a default manner.</summary>
       </Docs>
@@ -66,6 +77,9 @@
       <MemberSignature Language="C#" Value="True" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewTriState True = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewTriState.True" />
+      <MemberSignature Language="VB.NET" Value="True" />
+      <MemberSignature Language="F#" Value="True = 1" Usage="System.Windows.Forms.DataGridViewTriState.True" />
+      <MemberSignature Language="C++ CLI" Value="True" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewTriState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The property's state is <see langword="true" />.</summary>
       </Docs>

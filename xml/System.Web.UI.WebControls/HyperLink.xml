@@ -1,7 +1,10 @@
-<Type Name="HyperLink" FullName="System.Web.UI.WebControls.HyperLink">
+﻿<Type Name="HyperLink" FullName="System.Web.UI.WebControls.HyperLink">
   <TypeSignature Language="C#" Value="public class HyperLink : System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HyperLink extends System.Web.UI.WebControls.WebControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HyperLink" />
+  <TypeSignature Language="VB.NET" Value="Public Class HyperLink&#xA;Inherits WebControl" />
+  <TypeSignature Language="F#" Value="type HyperLink = class&#xA;    inherit WebControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HyperLink : System::Web::UI::WebControls::WebControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -121,6 +124,8 @@
       <MemberSignature Language="C#" Value="public HyperLink ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLink.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HyperLink();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -151,6 +156,9 @@
       <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLink.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="hyperLink.AddAttributesToRender writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,6 +195,9 @@
       <MemberSignature Language="C#" Value="protected override void AddParsedSubObject (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddParsedSubObject(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLink.AddParsedSubObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddParsedSubObject (obj As Object)" />
+      <MemberSignature Language="F#" Value="override this.AddParsedSubObject : obj -&gt; unit" Usage="hyperLink.AddParsedSubObject obj" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddParsedSubObject(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -229,6 +240,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.Unit ImageHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit ImageHeight" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLink.ImageHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ImageHeight As Unit" />
+      <MemberSignature Language="F#" Value="member this.ImageHeight : System.Web.UI.WebControls.Unit with get, set" Usage="System.Web.UI.WebControls.HyperLink.ImageHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Unit ImageHeight { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -252,6 +266,9 @@
       <MemberSignature Language="C#" Value="public virtual string ImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLink.ImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.ImageUrl : string with get, set" Usage="System.Web.UI.WebControls.HyperLink.ImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -303,6 +320,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.Unit ImageWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit ImageWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLink.ImageWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ImageWidth As Unit" />
+      <MemberSignature Language="F#" Value="member this.ImageWidth : System.Web.UI.WebControls.Unit with get, set" Usage="System.Web.UI.WebControls.HyperLink.ImageWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Unit ImageWidth { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -326,6 +346,9 @@
       <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLink.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="hyperLink.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -348,6 +371,9 @@
       <MemberSignature Language="C#" Value="public string NavigateUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NavigateUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLink.NavigateUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property NavigateUrl As String" />
+      <MemberSignature Language="F#" Value="member this.NavigateUrl : string with get, set" Usage="System.Web.UI.WebControls.HyperLink.NavigateUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NavigateUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -392,9 +418,12 @@
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
-      <MemberSignature Language="C#" Value="protected override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderContents(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.HyperLink.RenderContents(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="hyperLink.RenderContents writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -429,6 +458,9 @@
       <MemberSignature Language="C#" Value="public override bool SupportsDisabledAttribute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDisabledAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLink.SupportsDisabledAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsDisabledAttribute As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsDisabledAttribute : bool" Usage="System.Web.UI.WebControls.HyperLink.SupportsDisabledAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsDisabledAttribute { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -458,6 +490,9 @@
       <MemberSignature Language="C#" Value="public string Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLink.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
+      <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="System.Web.UI.WebControls.HyperLink.Target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -524,6 +559,9 @@
       <MemberSignature Language="C#" Value="public virtual string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.HyperLink.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.WebControls.HyperLink.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

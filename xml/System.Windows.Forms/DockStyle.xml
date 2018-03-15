@@ -1,7 +1,10 @@
-<Type Name="DockStyle" FullName="System.Windows.Forms.DockStyle">
+﻿<Type Name="DockStyle" FullName="System.Windows.Forms.DockStyle">
   <TypeSignature Language="C#" Value="public enum DockStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DockStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DockStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DockStyle" />
+  <TypeSignature Language="F#" Value="type DockStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DockStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="Bottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DockStyle Bottom = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DockStyle.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 2" Usage="System.Windows.Forms.DockStyle.Bottom" />
+      <MemberSignature Language="C++ CLI" Value="Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -50,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The control's bottom edge is docked to the bottom of its containing control.</summary>
       </Docs>
@@ -58,6 +65,9 @@
       <MemberSignature Language="C#" Value="Fill" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DockStyle Fill = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DockStyle.Fill" />
+      <MemberSignature Language="VB.NET" Value="Fill" />
+      <MemberSignature Language="F#" Value="Fill = 5" Usage="System.Windows.Forms.DockStyle.Fill" />
+      <MemberSignature Language="C++ CLI" Value="Fill" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -66,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>All the control's edges are docked to the all edges of its containing control and sized appropriately.</summary>
       </Docs>
@@ -74,6 +85,9 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DockStyle Left = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DockStyle.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 3" Usage="System.Windows.Forms.DockStyle.Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The control's left edge is docked to the left edge of its containing control.</summary>
       </Docs>
@@ -90,6 +105,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DockStyle None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DockStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DockStyle.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +116,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The control is not docked.</summary>
       </Docs>
@@ -106,6 +125,9 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DockStyle Right = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DockStyle.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 4" Usage="System.Windows.Forms.DockStyle.Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -114,6 +136,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The control's right edge is docked to the right edge of its containing control.</summary>
       </Docs>
@@ -122,6 +145,9 @@
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DockStyle Top = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DockStyle.Top" />
+      <MemberSignature Language="VB.NET" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 1" Usage="System.Windows.Forms.DockStyle.Top" />
+      <MemberSignature Language="C++ CLI" Value="Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -130,6 +156,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The control's top edge is docked to the top of its containing control.</summary>
       </Docs>

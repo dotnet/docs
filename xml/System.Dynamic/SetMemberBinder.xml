@@ -1,7 +1,10 @@
-<Type Name="SetMemberBinder" FullName="System.Dynamic.SetMemberBinder">
+﻿<Type Name="SetMemberBinder" FullName="System.Dynamic.SetMemberBinder">
   <TypeSignature Language="C#" Value="public abstract class SetMemberBinder : System.Dynamic.DynamicMetaObjectBinder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SetMemberBinder extends System.Dynamic.DynamicMetaObjectBinder" />
   <TypeSignature Language="DocId" Value="T:System.Dynamic.SetMemberBinder" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SetMemberBinder&#xA;Inherits DynamicMetaObjectBinder" />
+  <TypeSignature Language="F#" Value="type SetMemberBinder = class&#xA;    inherit DynamicMetaObjectBinder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SetMemberBinder abstract : System::Dynamic::DynamicMetaObjectBinder" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="protected SetMemberBinder (string name, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.SetMemberBinder.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String, ignoreCase As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Dynamic.SetMemberBinder : string * bool -&gt; System.Dynamic.SetMemberBinder" Usage="new System.Dynamic.SetMemberBinder (name, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SetMemberBinder(System::String ^ name, bool ignoreCase);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -65,6 +71,9 @@
       <MemberSignature Language="C#" Value="public override sealed System.Dynamic.DynamicMetaObject Bind (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Dynamic.DynamicMetaObject Bind(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.SetMemberBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Bind (target As DynamicMetaObject, args As DynamicMetaObject()) As DynamicMetaObject" />
+      <MemberSignature Language="F#" Value="override this.Bind : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject[] -&gt; System.Dynamic.DynamicMetaObject" Usage="setMemberBinder.Bind (target, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Dynamic::DynamicMetaObject ^ Bind(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -98,10 +107,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FallbackSetMember">
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs the binding of the dynamic set member operation if the target dynamic object cannot bind.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FallbackSetMember">
       <MemberSignature Language="C#" Value="public System.Dynamic.DynamicMetaObject FallbackSetMember (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Dynamic.DynamicMetaObject FallbackSetMember(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.SetMemberBinder.FallbackSetMember(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FallbackSetMember (target As DynamicMetaObject, value As DynamicMetaObject) As DynamicMetaObject" />
+      <MemberSignature Language="F#" Value="member this.FallbackSetMember : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject -&gt; System.Dynamic.DynamicMetaObject" Usage="setMemberBinder.FallbackSetMember (target, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Dynamic::DynamicMetaObject ^ FallbackSetMember(System::Dynamic::DynamicMetaObject ^ target, System::Dynamic::DynamicMetaObject ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -139,6 +160,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Dynamic.DynamicMetaObject FallbackSetMember (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject value, System.Dynamic.DynamicMetaObject errorSuggestion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject FallbackSetMember(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject value, class System.Dynamic.DynamicMetaObject errorSuggestion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.SetMemberBinder.FallbackSetMember(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function FallbackSetMember (target As DynamicMetaObject, value As DynamicMetaObject, errorSuggestion As DynamicMetaObject) As DynamicMetaObject" />
+      <MemberSignature Language="F#" Value="abstract member FallbackSetMember : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject -&gt; System.Dynamic.DynamicMetaObject" Usage="setMemberBinder.FallbackSetMember (target, value, errorSuggestion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Dynamic::DynamicMetaObject ^ FallbackSetMember(System::Dynamic::DynamicMetaObject ^ target, System::Dynamic::DynamicMetaObject ^ value, System::Dynamic::DynamicMetaObject ^ errorSuggestion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -178,6 +202,9 @@
       <MemberSignature Language="C#" Value="public bool IgnoreCase { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreCase" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.SetMemberBinder.IgnoreCase" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IgnoreCase As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IgnoreCase : bool" Usage="System.Dynamic.SetMemberBinder.IgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreCase { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -209,6 +236,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.SetMemberBinder.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Dynamic.SetMemberBinder.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -240,6 +270,9 @@
       <MemberSignature Language="C#" Value="public override sealed Type ReturnType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReturnType" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.SetMemberBinder.ReturnType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property ReturnType As Type" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Dynamic.SetMemberBinder.ReturnType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -267,14 +300,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="FallbackSetMember">
-      <AssemblyInfo>
-        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs the binding of the dynamic set member operation if the target dynamic object cannot bind.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

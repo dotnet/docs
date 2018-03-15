@@ -1,7 +1,10 @@
-<Type Name="MessageBoxIcon" FullName="System.Windows.Forms.MessageBoxIcon">
+﻿<Type Name="MessageBoxIcon" FullName="System.Windows.Forms.MessageBoxIcon">
   <TypeSignature Language="C#" Value="public enum MessageBoxIcon" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageBoxIcon extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MessageBoxIcon" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MessageBoxIcon" />
+  <TypeSignature Language="F#" Value="type MessageBoxIcon = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MessageBoxIcon" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +89,9 @@ End Sub
       <MemberSignature Language="C#" Value="Asterisk" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MessageBoxIcon Asterisk = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Asterisk" />
+      <MemberSignature Language="VB.NET" Value="Asterisk" />
+      <MemberSignature Language="F#" Value="Asterisk = 64" Usage="System.Windows.Forms.MessageBoxIcon.Asterisk" />
+      <MemberSignature Language="C++ CLI" Value="Asterisk" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +100,7 @@ End Sub
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of a lowercase letter i in a circle.</summary>
       </Docs>
@@ -102,6 +109,9 @@ End Sub
       <MemberSignature Language="C#" Value="Error" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MessageBoxIcon Error = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Error" />
+      <MemberSignature Language="VB.NET" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 16" Usage="System.Windows.Forms.MessageBoxIcon.Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -110,6 +120,7 @@ End Sub
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of white X in a circle with a red background.</summary>
       </Docs>
@@ -118,6 +129,9 @@ End Sub
       <MemberSignature Language="C#" Value="Exclamation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MessageBoxIcon Exclamation = int32(48)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Exclamation" />
+      <MemberSignature Language="VB.NET" Value="Exclamation" />
+      <MemberSignature Language="F#" Value="Exclamation = 48" Usage="System.Windows.Forms.MessageBoxIcon.Exclamation" />
+      <MemberSignature Language="C++ CLI" Value="Exclamation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -126,6 +140,7 @@ End Sub
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of an exclamation point in a triangle with a yellow background.</summary>
       </Docs>
@@ -134,6 +149,9 @@ End Sub
       <MemberSignature Language="C#" Value="Hand" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MessageBoxIcon Hand = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Hand" />
+      <MemberSignature Language="VB.NET" Value="Hand" />
+      <MemberSignature Language="F#" Value="Hand = 16" Usage="System.Windows.Forms.MessageBoxIcon.Hand" />
+      <MemberSignature Language="C++ CLI" Value="Hand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -142,6 +160,7 @@ End Sub
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of a white X in a circle with a red background.</summary>
       </Docs>
@@ -150,6 +169,9 @@ End Sub
       <MemberSignature Language="C#" Value="Information" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MessageBoxIcon Information = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Information" />
+      <MemberSignature Language="VB.NET" Value="Information" />
+      <MemberSignature Language="F#" Value="Information = 64" Usage="System.Windows.Forms.MessageBoxIcon.Information" />
+      <MemberSignature Language="C++ CLI" Value="Information" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +180,7 @@ End Sub
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of a lowercase letter i in a circle.</summary>
       </Docs>
@@ -166,6 +189,9 @@ End Sub
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MessageBoxIcon None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.MessageBoxIcon.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -174,6 +200,7 @@ End Sub
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The message box contain no symbols.</summary>
       </Docs>
@@ -182,6 +209,9 @@ End Sub
       <MemberSignature Language="C#" Value="Question" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MessageBoxIcon Question = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Question" />
+      <MemberSignature Language="VB.NET" Value="Question" />
+      <MemberSignature Language="F#" Value="Question = 32" Usage="System.Windows.Forms.MessageBoxIcon.Question" />
+      <MemberSignature Language="C++ CLI" Value="Question" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -190,6 +220,7 @@ End Sub
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of a question mark in a circle. The question-mark message icon is no longer recommended because it does not clearly represent a specific type of message and because the phrasing of a message as a question could apply to any message type. In addition, users can confuse the message symbol question mark with Help information. Therefore, do not use this question mark message symbol in your message boxes. The system continues to support its inclusion only for backward compatibility.</summary>
       </Docs>
@@ -198,6 +229,9 @@ End Sub
       <MemberSignature Language="C#" Value="Stop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MessageBoxIcon Stop = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Stop" />
+      <MemberSignature Language="VB.NET" Value="Stop" />
+      <MemberSignature Language="F#" Value="Stop = 16" Usage="System.Windows.Forms.MessageBoxIcon.Stop" />
+      <MemberSignature Language="C++ CLI" Value="Stop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -206,6 +240,7 @@ End Sub
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of white X in a circle with a red background.</summary>
       </Docs>
@@ -214,6 +249,9 @@ End Sub
       <MemberSignature Language="C#" Value="Warning" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MessageBoxIcon Warning = int32(48)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MessageBoxIcon.Warning" />
+      <MemberSignature Language="VB.NET" Value="Warning" />
+      <MemberSignature Language="F#" Value="Warning = 48" Usage="System.Windows.Forms.MessageBoxIcon.Warning" />
+      <MemberSignature Language="C++ CLI" Value="Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -222,6 +260,7 @@ End Sub
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MessageBoxIcon</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>The message box contains a symbol consisting of an exclamation point in a triangle with a yellow background.</summary>
       </Docs>

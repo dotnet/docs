@@ -1,7 +1,10 @@
-<Type Name="ComContractElement" FullName="System.ServiceModel.Configuration.ComContractElement">
+﻿<Type Name="ComContractElement" FullName="System.ServiceModel.Configuration.ComContractElement">
   <TypeSignature Language="C#" Value="public sealed class ComContractElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComContractElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ComContractElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComContractElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ComContractElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComContractElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +34,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ComContractElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ComContractElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ComContractElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComContractElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -50,6 +64,9 @@
       <MemberSignature Language="C#" Value="public ComContractElement (string contractType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string contractType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ComContractElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contractType As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.ComContractElement : string -&gt; System.ServiceModel.Configuration.ComContractElement" Usage="new System.ServiceModel.Configuration.ComContractElement contractType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComContractElement(System::String ^ contractType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -68,6 +85,9 @@
       <MemberSignature Language="C#" Value="public string Contract { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Contract" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComContractElement.Contract" />
+      <MemberSignature Language="VB.NET" Value="Public Property Contract As String" />
+      <MemberSignature Language="F#" Value="member this.Contract : string with get, set" Usage="System.ServiceModel.Configuration.ComContractElement.Contract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Contract { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,7 +95,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("contract", Options=System.Configuration.ConfigurationPropertyOptions.IsRequired | System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("contract", Options=System.Configuration.ConfigurationPropertyOptions.IsKey | System.Configuration.ConfigurationPropertyOptions.IsRequired)</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
@@ -94,6 +114,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.ComMethodElementCollection ExposedMethods { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.ComMethodElementCollection ExposedMethods" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComContractElement.ExposedMethods" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExposedMethods As ComMethodElementCollection" />
+      <MemberSignature Language="F#" Value="member this.ExposedMethods : System.ServiceModel.Configuration.ComMethodElementCollection" Usage="System.ServiceModel.Configuration.ComContractElement.ExposedMethods" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ComMethodElementCollection ^ ExposedMethods { System::ServiceModel::Configuration::ComMethodElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -136,6 +159,9 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComContractElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Configuration.ComContractElement.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -162,6 +188,9 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComContractElement.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.ServiceModel.Configuration.ComContractElement.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -188,6 +217,9 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.ComPersistableTypeElementCollection PersistableTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.ComPersistableTypeElementCollection PersistableTypes" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComContractElement.PersistableTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PersistableTypes As ComPersistableTypeElementCollection" />
+      <MemberSignature Language="F#" Value="member this.PersistableTypes : System.ServiceModel.Configuration.ComPersistableTypeElementCollection" Usage="System.ServiceModel.Configuration.ComContractElement.PersistableTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ComPersistableTypeElementCollection ^ PersistableTypes { System::ServiceModel::Configuration::ComPersistableTypeElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -211,6 +243,9 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComContractElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ComContractElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -229,6 +264,9 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
       <MemberSignature Language="C#" Value="public bool RequiresSession { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresSession" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComContractElement.RequiresSession" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequiresSession As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresSession : bool with get, set" Usage="System.ServiceModel.Configuration.ComContractElement.RequiresSession" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequiresSession { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -260,6 +298,9 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.ComUdtElementCollection UserDefinedTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.ComUdtElementCollection UserDefinedTypes" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComContractElement.UserDefinedTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserDefinedTypes As ComUdtElementCollection" />
+      <MemberSignature Language="F#" Value="member this.UserDefinedTypes : System.ServiceModel.Configuration.ComUdtElementCollection" Usage="System.ServiceModel.Configuration.ComContractElement.UserDefinedTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ComUdtElementCollection ^ UserDefinedTypes { System::ServiceModel::Configuration::ComUdtElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -307,14 +348,5 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ComContractElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

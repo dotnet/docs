@@ -1,7 +1,10 @@
-<Type Name="VoiceAge" FullName="System.Speech.Synthesis.VoiceAge">
+﻿<Type Name="VoiceAge" FullName="System.Speech.Synthesis.VoiceAge">
   <TypeSignature Language="C#" Value="public enum VoiceAge" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VoiceAge extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.VoiceAge" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VoiceAge" />
+  <TypeSignature Language="F#" Value="type VoiceAge = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class VoiceAge" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Adult" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.VoiceAge Adult = int32(30)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceAge.Adult" />
+      <MemberSignature Language="VB.NET" Value="Adult" />
+      <MemberSignature Language="F#" Value="Adult = 30" Usage="System.Speech.Synthesis.VoiceAge.Adult" />
+      <MemberSignature Language="C++ CLI" Value="Adult" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.VoiceAge</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>Indicates an adult voice (age 30).</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Child" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.VoiceAge Child = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceAge.Child" />
+      <MemberSignature Language="VB.NET" Value="Child" />
+      <MemberSignature Language="F#" Value="Child = 10" Usage="System.Speech.Synthesis.VoiceAge.Child" />
+      <MemberSignature Language="C++ CLI" Value="Child" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.VoiceAge</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>Indicates a child voice (age 10).</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.VoiceAge NotSet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceAge.NotSet" />
+      <MemberSignature Language="VB.NET" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Speech.Synthesis.VoiceAge.NotSet" />
+      <MemberSignature Language="C++ CLI" Value="NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.VoiceAge</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that no voice age is specified.</summary>
       </Docs>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="Senior" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.VoiceAge Senior = int32(65)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceAge.Senior" />
+      <MemberSignature Language="VB.NET" Value="Senior" />
+      <MemberSignature Language="F#" Value="Senior = 65" Usage="System.Speech.Synthesis.VoiceAge.Senior" />
+      <MemberSignature Language="C++ CLI" Value="Senior" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -81,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.VoiceAge</ReturnType>
       </ReturnValue>
+      <MemberValue>65</MemberValue>
       <Docs>
         <summary>Indicates a senior voice (age 65).</summary>
       </Docs>
@@ -89,6 +108,9 @@
       <MemberSignature Language="C#" Value="Teen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.VoiceAge Teen = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.VoiceAge.Teen" />
+      <MemberSignature Language="VB.NET" Value="Teen" />
+      <MemberSignature Language="F#" Value="Teen = 15" Usage="System.Speech.Synthesis.VoiceAge.Teen" />
+      <MemberSignature Language="C++ CLI" Value="Teen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -97,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.VoiceAge</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>Indicates a teenage voice (age 15).</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="DateTimeStyles" FullName="System.Globalization.DateTimeStyles">
+﻿<Type Name="DateTimeStyles" FullName="System.Globalization.DateTimeStyles">
   <TypeSignature Language="C#" Value="public enum DateTimeStyles" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed DateTimeStyles extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.DateTimeStyles" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DateTimeStyles" />
+  <TypeSignature Language="F#" Value="type DateTimeStyles = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DateTimeStyles" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +72,9 @@
       <MemberSignature Language="C#" Value="AdjustToUniversal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.DateTimeStyles AdjustToUniversal = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.DateTimeStyles.AdjustToUniversal" />
+      <MemberSignature Language="VB.NET" Value="AdjustToUniversal" />
+      <MemberSignature Language="F#" Value="AdjustToUniversal = 16" Usage="System.Globalization.DateTimeStyles.AdjustToUniversal" />
+      <MemberSignature Language="C++ CLI" Value="AdjustToUniversal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -90,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.DateTimeStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Date and time are returned as a Coordinated Universal Time (UTC). If the input string denotes a local time, through a time zone specifier or <see cref="F:System.Globalization.DateTimeStyles.AssumeLocal" />, the date and time are converted from the local time to UTC. If the input string denotes a UTC time, through a time zone specifier or <see cref="F:System.Globalization.DateTimeStyles.AssumeUniversal" />, no conversion occurs. If the input string does not denote a local or UTC time, no conversion occurs and the resulting <see cref="P:System.DateTime.Kind" /> property is <see cref="F:System.DateTimeKind.Unspecified" />.</summary>
         <remarks>
@@ -106,6 +113,9 @@
       <MemberSignature Language="C#" Value="AllowInnerWhite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.DateTimeStyles AllowInnerWhite = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.DateTimeStyles.AllowInnerWhite" />
+      <MemberSignature Language="VB.NET" Value="AllowInnerWhite" />
+      <MemberSignature Language="F#" Value="AllowInnerWhite = 4" Usage="System.Globalization.DateTimeStyles.AllowInnerWhite" />
+      <MemberSignature Language="C++ CLI" Value="AllowInnerWhite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -127,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.DateTimeStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Extra white-space characters in the middle of the string must be ignored during parsing, except if they occur in the <see cref="T:System.Globalization.DateTimeFormatInfo" /> format patterns.</summary>
       </Docs>
@@ -135,6 +146,9 @@
       <MemberSignature Language="C#" Value="AllowLeadingWhite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.DateTimeStyles AllowLeadingWhite = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.DateTimeStyles.AllowLeadingWhite" />
+      <MemberSignature Language="VB.NET" Value="AllowLeadingWhite" />
+      <MemberSignature Language="F#" Value="AllowLeadingWhite = 1" Usage="System.Globalization.DateTimeStyles.AllowLeadingWhite" />
+      <MemberSignature Language="C++ CLI" Value="AllowLeadingWhite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -156,6 +170,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.DateTimeStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Leading white-space characters must be ignored during parsing, except if they occur in the <see cref="T:System.Globalization.DateTimeFormatInfo" /> format patterns.</summary>
       </Docs>
@@ -164,6 +179,9 @@
       <MemberSignature Language="C#" Value="AllowTrailingWhite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.DateTimeStyles AllowTrailingWhite = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.DateTimeStyles.AllowTrailingWhite" />
+      <MemberSignature Language="VB.NET" Value="AllowTrailingWhite" />
+      <MemberSignature Language="F#" Value="AllowTrailingWhite = 2" Usage="System.Globalization.DateTimeStyles.AllowTrailingWhite" />
+      <MemberSignature Language="C++ CLI" Value="AllowTrailingWhite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -185,6 +203,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.DateTimeStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Trailing white-space characters must be ignored during parsing, except if they occur in the <see cref="T:System.Globalization.DateTimeFormatInfo" /> format patterns.</summary>
       </Docs>
@@ -193,6 +212,9 @@
       <MemberSignature Language="C#" Value="AllowWhiteSpaces" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.DateTimeStyles AllowWhiteSpaces = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.DateTimeStyles.AllowWhiteSpaces" />
+      <MemberSignature Language="VB.NET" Value="AllowWhiteSpaces" />
+      <MemberSignature Language="F#" Value="AllowWhiteSpaces = 7" Usage="System.Globalization.DateTimeStyles.AllowWhiteSpaces" />
+      <MemberSignature Language="C++ CLI" Value="AllowWhiteSpaces" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -214,6 +236,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.DateTimeStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Extra white-space characters anywhere in the string must be ignored during parsing, except if they occur in the <see cref="T:System.Globalization.DateTimeFormatInfo" /> format patterns. This value is a combination of the <see cref="F:System.Globalization.DateTimeStyles.AllowLeadingWhite" />, <see cref="F:System.Globalization.DateTimeStyles.AllowTrailingWhite" />, and <see cref="F:System.Globalization.DateTimeStyles.AllowInnerWhite" /> values.</summary>
       </Docs>
@@ -222,6 +245,9 @@
       <MemberSignature Language="C#" Value="AssumeLocal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.DateTimeStyles AssumeLocal = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.DateTimeStyles.AssumeLocal" />
+      <MemberSignature Language="VB.NET" Value="AssumeLocal" />
+      <MemberSignature Language="F#" Value="AssumeLocal = 32" Usage="System.Globalization.DateTimeStyles.AssumeLocal" />
+      <MemberSignature Language="C++ CLI" Value="AssumeLocal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -243,6 +269,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.DateTimeStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>If no time zone is specified in the parsed string, the string is assumed to denote a local time.</summary>
         <remarks>
@@ -259,6 +286,9 @@
       <MemberSignature Language="C#" Value="AssumeUniversal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.DateTimeStyles AssumeUniversal = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.DateTimeStyles.AssumeUniversal" />
+      <MemberSignature Language="VB.NET" Value="AssumeUniversal" />
+      <MemberSignature Language="F#" Value="AssumeUniversal = 64" Usage="System.Globalization.DateTimeStyles.AssumeUniversal" />
+      <MemberSignature Language="C++ CLI" Value="AssumeUniversal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -280,6 +310,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.DateTimeStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>If no time zone is specified in the parsed string, the string is assumed to denote a UTC.</summary>
         <remarks>
@@ -296,6 +327,9 @@
       <MemberSignature Language="C#" Value="NoCurrentDateDefault" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.DateTimeStyles NoCurrentDateDefault = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.DateTimeStyles.NoCurrentDateDefault" />
+      <MemberSignature Language="VB.NET" Value="NoCurrentDateDefault" />
+      <MemberSignature Language="F#" Value="NoCurrentDateDefault = 8" Usage="System.Globalization.DateTimeStyles.NoCurrentDateDefault" />
+      <MemberSignature Language="C++ CLI" Value="NoCurrentDateDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -317,6 +351,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.DateTimeStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>If the parsed string contains only the time and not the date, the parsing methods assume the Gregorian date with year = 1, month = 1, and day = 1. If this value is not used, the current date is assumed.</summary>
       </Docs>
@@ -325,6 +360,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.DateTimeStyles None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.DateTimeStyles.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Globalization.DateTimeStyles.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -346,6 +384,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.DateTimeStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Default formatting options must be used. This value represents the default style for the <see cref="M:System.DateTime.Parse(System.String)" />, <see cref="M:System.DateTime.ParseExact(System.String,System.String,System.IFormatProvider)" />, and <see cref="M:System.DateTime.TryParse(System.String,System.DateTime@)" /> methods.</summary>
       </Docs>
@@ -354,6 +393,9 @@
       <MemberSignature Language="C#" Value="RoundtripKind" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.DateTimeStyles RoundtripKind = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.DateTimeStyles.RoundtripKind" />
+      <MemberSignature Language="VB.NET" Value="RoundtripKind" />
+      <MemberSignature Language="F#" Value="RoundtripKind = 128" Usage="System.Globalization.DateTimeStyles.RoundtripKind" />
+      <MemberSignature Language="C++ CLI" Value="RoundtripKind" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -375,6 +417,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.DateTimeStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.DateTimeKind" /> field of a date is preserved when a <see cref="T:System.DateTime" /> object is converted to a string using the "o" or "r" standard format specifier, and the string is then converted back to a <see cref="T:System.DateTime" /> object.</summary>
       </Docs>

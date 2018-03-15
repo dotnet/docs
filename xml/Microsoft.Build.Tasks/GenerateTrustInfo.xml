@@ -1,7 +1,10 @@
-<Type Name="GenerateTrustInfo" FullName="Microsoft.Build.Tasks.GenerateTrustInfo">
+﻿<Type Name="GenerateTrustInfo" FullName="Microsoft.Build.Tasks.GenerateTrustInfo">
   <TypeSignature Language="C#" Value="public sealed class GenerateTrustInfo : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GenerateTrustInfo extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.GenerateTrustInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GenerateTrustInfo&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="F#" Value="type GenerateTrustInfo = class&#xA;    inherit TaskExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GenerateTrustInfo sealed : Microsoft::Build::Tasks::TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public GenerateTrustInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GenerateTrustInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GenerateTrustInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -36,6 +41,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ApplicationDependencies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ApplicationDependencies" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateTrustInfo.ApplicationDependencies" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationDependencies As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.ApplicationDependencies : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.GenerateTrustInfo.ApplicationDependencies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ApplicationDependencies { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -55,6 +63,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem BaseManifest { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem BaseManifest" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateTrustInfo.BaseManifest" />
+      <MemberSignature Language="VB.NET" Value="Public Property BaseManifest As ITaskItem" />
+      <MemberSignature Language="F#" Value="member this.BaseManifest : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.GenerateTrustInfo.BaseManifest" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ BaseManifest { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -74,6 +85,9 @@
       <MemberSignature Language="C#" Value="public string ExcludedPermissions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExcludedPermissions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateTrustInfo.ExcludedPermissions" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExcludedPermissions As String" />
+      <MemberSignature Language="F#" Value="member this.ExcludedPermissions : string with get, set" Usage="Microsoft.Build.Tasks.GenerateTrustInfo.ExcludedPermissions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExcludedPermissions { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -93,6 +107,9 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.GenerateTrustInfo.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="generateTrustInfo.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -114,6 +131,9 @@
       <MemberSignature Language="C#" Value="public string TargetFrameworkMoniker { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetFrameworkMoniker" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateTrustInfo.TargetFrameworkMoniker" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkMoniker As String" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkMoniker : string with get, set" Usage="Microsoft.Build.Tasks.GenerateTrustInfo.TargetFrameworkMoniker" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameworkMoniker { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -133,6 +153,9 @@
       <MemberSignature Language="C#" Value="public string TargetZone { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetZone" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateTrustInfo.TargetZone" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetZone As String" />
+      <MemberSignature Language="F#" Value="member this.TargetZone : string with get, set" Usage="Microsoft.Build.Tasks.GenerateTrustInfo.TargetZone" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetZone { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -159,6 +182,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem TrustInfoFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem TrustInfoFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.GenerateTrustInfo.TrustInfoFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrustInfoFile As ITaskItem" />
+      <MemberSignature Language="F#" Value="member this.TrustInfoFile : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.GenerateTrustInfo.TrustInfoFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ TrustInfoFile { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

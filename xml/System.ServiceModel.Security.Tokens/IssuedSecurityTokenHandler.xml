@@ -1,7 +1,10 @@
-<Type Name="IssuedSecurityTokenHandler" FullName="System.ServiceModel.Security.Tokens.IssuedSecurityTokenHandler">
+﻿<Type Name="IssuedSecurityTokenHandler" FullName="System.ServiceModel.Security.Tokens.IssuedSecurityTokenHandler">
   <TypeSignature Language="C#" Value="public delegate void IssuedSecurityTokenHandler(SecurityToken issuedToken, EndpointAddress tokenRequestor);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IssuedSecurityTokenHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.IssuedSecurityTokenHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub IssuedSecurityTokenHandler(issuedToken As SecurityToken, tokenRequestor As EndpointAddress)" />
+  <TypeSignature Language="F#" Value="type IssuedSecurityTokenHandler = delegate of SecurityToken * EndpointAddress -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void IssuedSecurityTokenHandler(SecurityToken ^ issuedToken, EndpointAddress ^ tokenRequestor);" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="Soap12OperationBinding" FullName="System.Web.Services.Description.Soap12OperationBinding">
+﻿<Type Name="Soap12OperationBinding" FullName="System.Web.Services.Description.Soap12OperationBinding">
   <TypeSignature Language="C#" Value="public sealed class Soap12OperationBinding : System.Web.Services.Description.SoapOperationBinding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Soap12OperationBinding extends System.Web.Services.Description.SoapOperationBinding" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.Soap12OperationBinding" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Soap12OperationBinding&#xA;Inherits SoapOperationBinding" />
+  <TypeSignature Language="F#" Value="type Soap12OperationBinding = class&#xA;    inherit SoapOperationBinding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Soap12OperationBinding sealed : System::Web::Services::Description::SoapOperationBinding" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public Soap12OperationBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.Soap12OperationBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Soap12OperationBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -50,6 +55,9 @@
       <MemberSignature Language="C#" Value="public bool SoapActionRequired { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SoapActionRequired" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.Soap12OperationBinding.SoapActionRequired" />
+      <MemberSignature Language="VB.NET" Value="Public Property SoapActionRequired As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SoapActionRequired : bool with get, set" Usage="System.Web.Services.Description.Soap12OperationBinding.SoapActionRequired" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SoapActionRequired { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

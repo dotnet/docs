@@ -1,7 +1,10 @@
-<Type Name="SecurityToken" FullName="System.IdentityModel.Tokens.SecurityToken">
+﻿<Type Name="SecurityToken" FullName="System.IdentityModel.Tokens.SecurityToken">
   <TypeSignature Language="C#" Value="public abstract class SecurityToken" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SecurityToken extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityToken" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityToken" />
+  <TypeSignature Language="F#" Value="type SecurityToken = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityToken abstract" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +82,8 @@
       <MemberSignature Language="C#" Value="protected SecurityToken ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityToken.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityToken();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -94,6 +99,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanCreateKeyIdentifierClause&lt;T&gt; () where T : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanCreateKeyIdentifierClause&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityToken.CanCreateKeyIdentifierClause``1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CanCreateKeyIdentifierClause(Of T As SecurityKeyIdentifierClause) () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanCreateKeyIdentifierClause : unit -&gt; bool (requires 'T :&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause)&#xA;override this.CanCreateKeyIdentifierClause : unit -&gt; bool (requires 'T :&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" Usage="securityToken.CanCreateKeyIdentifierClause " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::IdentityModel::Tokens::SecurityKeyIdentifierClause virtual bool CanCreateKeyIdentifierClause();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -133,6 +141,9 @@
       <MemberSignature Language="C#" Value="public virtual T CreateKeyIdentifierClause&lt;T&gt; () where T : System.IdentityModel.Tokens.SecurityKeyIdentifierClause;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T CreateKeyIdentifierClause&lt;(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause) T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityToken.CreateKeyIdentifierClause``1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateKeyIdentifierClause(Of T As SecurityKeyIdentifierClause) () As T" />
+      <MemberSignature Language="F#" Value="abstract member CreateKeyIdentifierClause : unit -&gt; 'T (requires 'T :&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause)&#xA;override this.CreateKeyIdentifierClause : unit -&gt; 'T (requires 'T :&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" Usage="securityToken.CreateKeyIdentifierClause " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::IdentityModel::Tokens::SecurityKeyIdentifierClause virtual T CreateKeyIdentifierClause();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -171,6 +182,9 @@
       <MemberSignature Language="C#" Value="public abstract string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityToken.Id" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.IdentityModel.Tokens.SecurityToken.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Id { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -205,9 +219,17 @@
       </Docs>
     </Member>
     <Member MemberName="MatchesKeyIdentifierClause">
-      <MemberSignature Language="C#" Value="public virtual bool MatchesKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MatchesKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberSignature Language="C#" Value="public virtual bool MatchesKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MatchesKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function MatchesKeyIdentifierClause (keyIdentifierClause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="abstract member MatchesKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool&#xA;override this.MatchesKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="securityToken.MatchesKeyIdentifierClause skiClause" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MatchesKeyIdentifierClause(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public virtual bool MatchesKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MatchesKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityToken.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function MatchesKeyIdentifierClause (skiClause As SecurityKeyIdentifierClause) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MatchesKeyIdentifierClause(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ skiClause);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -217,7 +239,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="skiClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="skiClause">To be added.</param>
@@ -236,9 +259,17 @@
       </Docs>
     </Member>
     <Member MemberName="ResolveKeyIdentifierClause">
-      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SecurityKey ResolveKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityKey ResolveKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SecurityKey ResolveKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityKey ResolveKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause keyIdentifierClause) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveKeyIdentifierClause (keyIdentifierClause As SecurityKeyIdentifierClause) As SecurityKey" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="abstract member ResolveKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; System.IdentityModel.Tokens.SecurityKey&#xA;override this.ResolveKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; System.IdentityModel.Tokens.SecurityKey" Usage="securityToken.ResolveKeyIdentifierClause skiClause" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SecurityKey ^ ResolveKeyIdentifierClause(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ keyIdentifierClause);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SecurityKey ResolveKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SecurityKey ResolveKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause skiClause) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityToken.ResolveKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ResolveKeyIdentifierClause (skiClause As SecurityKeyIdentifierClause) As SecurityKey" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IdentityModel::Tokens::SecurityKey ^ ResolveKeyIdentifierClause(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ skiClause);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -248,7 +279,8 @@
         <ReturnType>System.IdentityModel.Tokens.SecurityKey</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" />
+        <Parameter Name="keyIdentifierClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="skiClause" Type="System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="skiClause">To be added.</param>
@@ -275,6 +307,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Tokens.SecurityKey&gt; SecurityKeys" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityToken.SecurityKeys" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SecurityKeys As ReadOnlyCollection(Of SecurityKey)" />
+      <MemberSignature Language="F#" Value="member this.SecurityKeys : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Tokens.SecurityKey&gt;" Usage="System.IdentityModel.Tokens.SecurityToken.SecurityKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SecurityKey ^&gt; ^ SecurityKeys { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Tokens::SecurityKey ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -312,6 +347,9 @@
       <MemberSignature Language="C#" Value="public abstract DateTime ValidFrom { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidFrom" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityToken.ValidFrom" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ValidFrom As DateTime" />
+      <MemberSignature Language="F#" Value="member this.ValidFrom : DateTime" Usage="System.IdentityModel.Tokens.SecurityToken.ValidFrom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property DateTime ValidFrom { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -350,6 +388,9 @@
       <MemberSignature Language="C#" Value="public abstract DateTime ValidTo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime ValidTo" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityToken.ValidTo" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ValidTo As DateTime" />
+      <MemberSignature Language="F#" Value="member this.ValidTo : DateTime" Usage="System.IdentityModel.Tokens.SecurityToken.ValidTo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property DateTime ValidTo { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

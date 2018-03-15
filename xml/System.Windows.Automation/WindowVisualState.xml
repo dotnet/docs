@@ -1,7 +1,10 @@
-<Type Name="WindowVisualState" FullName="System.Windows.Automation.WindowVisualState">
+﻿<Type Name="WindowVisualState" FullName="System.Windows.Automation.WindowVisualState">
   <TypeSignature Language="C#" Value="public enum WindowVisualState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WindowVisualState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.WindowVisualState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WindowVisualState" />
+  <TypeSignature Language="F#" Value="type WindowVisualState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class WindowVisualState" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="Maximized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.WindowVisualState Maximized = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowVisualState.Maximized" />
+      <MemberSignature Language="VB.NET" Value="Maximized" />
+      <MemberSignature Language="F#" Value="Maximized = 1" Usage="System.Windows.Automation.WindowVisualState.Maximized" />
+      <MemberSignature Language="C++ CLI" Value="Maximized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.WindowVisualState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the window is maximized.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="Minimized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.WindowVisualState Minimized = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowVisualState.Minimized" />
+      <MemberSignature Language="VB.NET" Value="Minimized" />
+      <MemberSignature Language="F#" Value="Minimized = 2" Usage="System.Windows.Automation.WindowVisualState.Minimized" />
+      <MemberSignature Language="C++ CLI" Value="Minimized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -51,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.WindowVisualState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the window is minimized.</summary>
       </Docs>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.WindowVisualState Normal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowVisualState.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Automation.WindowVisualState.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.WindowVisualState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the window is normal (restored).</summary>
       </Docs>

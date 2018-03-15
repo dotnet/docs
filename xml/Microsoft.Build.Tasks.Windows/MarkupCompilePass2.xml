@@ -1,7 +1,10 @@
-<Type Name="MarkupCompilePass2" FullName="Microsoft.Build.Tasks.Windows.MarkupCompilePass2">
+﻿<Type Name="MarkupCompilePass2" FullName="Microsoft.Build.Tasks.Windows.MarkupCompilePass2">
   <TypeSignature Language="C#" Value="public sealed class MarkupCompilePass2 : Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MarkupCompilePass2 extends Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Windows.MarkupCompilePass2" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MarkupCompilePass2&#xA;Inherits Task" />
+  <TypeSignature Language="F#" Value="type MarkupCompilePass2 = class&#xA;    inherit Task" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MarkupCompilePass2 sealed : Microsoft::Build::Utilities::Task" />
   <AssemblyInfo>
     <AssemblyName>PresentationBuildTasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public MarkupCompilePass2 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.MarkupCompilePass2.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MarkupCompilePass2();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -36,6 +41,9 @@
       <MemberSignature Language="C#" Value="public bool AlwaysCompileMarkupFilesInSeparateDomain { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AlwaysCompileMarkupFilesInSeparateDomain" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MarkupCompilePass2.AlwaysCompileMarkupFilesInSeparateDomain" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlwaysCompileMarkupFilesInSeparateDomain As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AlwaysCompileMarkupFilesInSeparateDomain : bool with get, set" Usage="Microsoft.Build.Tasks.Windows.MarkupCompilePass2.AlwaysCompileMarkupFilesInSeparateDomain" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AlwaysCompileMarkupFilesInSeparateDomain { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -56,6 +64,9 @@
       <MemberSignature Language="C#" Value="public string[] AssembliesGeneratedDuringBuild { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] AssembliesGeneratedDuringBuild" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MarkupCompilePass2.AssembliesGeneratedDuringBuild" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssembliesGeneratedDuringBuild As String()" />
+      <MemberSignature Language="F#" Value="member this.AssembliesGeneratedDuringBuild : string[] with get, set" Usage="Microsoft.Build.Tasks.Windows.MarkupCompilePass2.AssembliesGeneratedDuringBuild" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AssembliesGeneratedDuringBuild { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -75,6 +86,9 @@
       <MemberSignature Language="C#" Value="public string AssemblyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MarkupCompilePass2.AssemblyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string with get, set" Usage="Microsoft.Build.Tasks.Windows.MarkupCompilePass2.AssemblyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -99,6 +113,9 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.MarkupCompilePass2.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="markupCompilePass2.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -120,6 +137,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] GeneratedBaml { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] GeneratedBaml" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MarkupCompilePass2.GeneratedBaml" />
+      <MemberSignature Language="VB.NET" Value="Public Property GeneratedBaml As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.GeneratedBaml : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Windows.MarkupCompilePass2.GeneratedBaml" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ GeneratedBaml { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -144,6 +164,9 @@
       <MemberSignature Language="C#" Value="public string[] KnownReferencePaths { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] KnownReferencePaths" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MarkupCompilePass2.KnownReferencePaths" />
+      <MemberSignature Language="VB.NET" Value="Public Property KnownReferencePaths As String()" />
+      <MemberSignature Language="F#" Value="member this.KnownReferencePaths : string[] with get, set" Usage="Microsoft.Build.Tasks.Windows.MarkupCompilePass2.KnownReferencePaths" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ KnownReferencePaths { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -163,6 +186,9 @@
       <MemberSignature Language="C#" Value="public string Language { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Language" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MarkupCompilePass2.Language" />
+      <MemberSignature Language="VB.NET" Value="Public Property Language As String" />
+      <MemberSignature Language="F#" Value="member this.Language : string with get, set" Usage="Microsoft.Build.Tasks.Windows.MarkupCompilePass2.Language" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -187,6 +213,9 @@
       <MemberSignature Language="C#" Value="public string LocalizationDirectivesToLocFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalizationDirectivesToLocFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MarkupCompilePass2.LocalizationDirectivesToLocFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalizationDirectivesToLocFile As String" />
+      <MemberSignature Language="F#" Value="member this.LocalizationDirectivesToLocFile : string with get, set" Usage="Microsoft.Build.Tasks.Windows.MarkupCompilePass2.LocalizationDirectivesToLocFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocalizationDirectivesToLocFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -206,6 +235,9 @@
       <MemberSignature Language="C#" Value="public string OutputPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OutputPath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MarkupCompilePass2.OutputPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputPath As String" />
+      <MemberSignature Language="F#" Value="member this.OutputPath : string with get, set" Usage="Microsoft.Build.Tasks.Windows.MarkupCompilePass2.OutputPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OutputPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -230,6 +262,9 @@
       <MemberSignature Language="C#" Value="public string OutputType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OutputType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MarkupCompilePass2.OutputType" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputType As String" />
+      <MemberSignature Language="F#" Value="member this.OutputType : string with get, set" Usage="Microsoft.Build.Tasks.Windows.MarkupCompilePass2.OutputType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OutputType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -254,6 +289,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] References { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] References" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MarkupCompilePass2.References" />
+      <MemberSignature Language="VB.NET" Value="Public Property References As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.References : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Windows.MarkupCompilePass2.References" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ References { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -273,6 +311,9 @@
       <MemberSignature Language="C#" Value="public string RootNamespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RootNamespace" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MarkupCompilePass2.RootNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property RootNamespace As String" />
+      <MemberSignature Language="F#" Value="member this.RootNamespace : string with get, set" Usage="Microsoft.Build.Tasks.Windows.MarkupCompilePass2.RootNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootNamespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -292,6 +333,9 @@
       <MemberSignature Language="C#" Value="public bool XamlDebuggingInformation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool XamlDebuggingInformation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.MarkupCompilePass2.XamlDebuggingInformation" />
+      <MemberSignature Language="VB.NET" Value="Public Property XamlDebuggingInformation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.XamlDebuggingInformation : bool with get, set" Usage="Microsoft.Build.Tasks.Windows.MarkupCompilePass2.XamlDebuggingInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool XamlDebuggingInformation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>

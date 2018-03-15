@@ -1,7 +1,10 @@
-<Type Name="RowOrColumnMajor" FullName="System.Windows.Automation.RowOrColumnMajor">
+﻿<Type Name="RowOrColumnMajor" FullName="System.Windows.Automation.RowOrColumnMajor">
   <TypeSignature Language="C#" Value="public enum RowOrColumnMajor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RowOrColumnMajor extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.RowOrColumnMajor" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RowOrColumnMajor" />
+  <TypeSignature Language="F#" Value="type RowOrColumnMajor = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class RowOrColumnMajor" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="ColumnMajor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.RowOrColumnMajor ColumnMajor = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RowOrColumnMajor.ColumnMajor" />
+      <MemberSignature Language="VB.NET" Value="ColumnMajor" />
+      <MemberSignature Language="F#" Value="ColumnMajor = 1" Usage="System.Windows.Automation.RowOrColumnMajor.ColumnMajor" />
+      <MemberSignature Language="C++ CLI" Value="ColumnMajor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -34,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.RowOrColumnMajor</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that data in the table should be read column by column</summary>
       </Docs>
@@ -42,6 +49,9 @@
       <MemberSignature Language="C#" Value="Indeterminate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.RowOrColumnMajor Indeterminate = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RowOrColumnMajor.Indeterminate" />
+      <MemberSignature Language="VB.NET" Value="Indeterminate" />
+      <MemberSignature Language="F#" Value="Indeterminate = 2" Usage="System.Windows.Automation.RowOrColumnMajor.Indeterminate" />
+      <MemberSignature Language="C++ CLI" Value="Indeterminate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -50,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.RowOrColumnMajor</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the best way to present the data is indeterminate.</summary>
       </Docs>
@@ -58,6 +69,9 @@
       <MemberSignature Language="C#" Value="RowMajor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.RowOrColumnMajor RowMajor = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.RowOrColumnMajor.RowMajor" />
+      <MemberSignature Language="VB.NET" Value="RowMajor" />
+      <MemberSignature Language="F#" Value="RowMajor = 0" Usage="System.Windows.Automation.RowOrColumnMajor.RowMajor" />
+      <MemberSignature Language="C++ CLI" Value="RowMajor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -66,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.RowOrColumnMajor</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that data in the table should be read row by row.</summary>
       </Docs>

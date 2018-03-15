@@ -1,7 +1,10 @@
-<Type Name="LogicalMethodTypes" FullName="System.Web.Services.Protocols.LogicalMethodTypes">
+﻿<Type Name="LogicalMethodTypes" FullName="System.Web.Services.Protocols.LogicalMethodTypes">
   <TypeSignature Language="C#" Value="public enum LogicalMethodTypes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LogicalMethodTypes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.LogicalMethodTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LogicalMethodTypes" />
+  <TypeSignature Language="F#" Value="type LogicalMethodTypes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LogicalMethodTypes" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="Async" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.LogicalMethodTypes Async = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.LogicalMethodTypes.Async" />
+      <MemberSignature Language="VB.NET" Value="Async" />
+      <MemberSignature Language="F#" Value="Async = 2" Usage="System.Web.Services.Protocols.LogicalMethodTypes.Async" />
+      <MemberSignature Language="C++ CLI" Value="Async" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -38,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.LogicalMethodTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The XML Web service method is invoked asynchronously.</summary>
       </Docs>
@@ -46,6 +53,9 @@
       <MemberSignature Language="C#" Value="Sync" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.LogicalMethodTypes Sync = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.LogicalMethodTypes.Sync" />
+      <MemberSignature Language="VB.NET" Value="Sync" />
+      <MemberSignature Language="F#" Value="Sync = 1" Usage="System.Web.Services.Protocols.LogicalMethodTypes.Sync" />
+      <MemberSignature Language="C++ CLI" Value="Sync" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -55,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.LogicalMethodTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The XML Web service method is invoked synchronously.</summary>
       </Docs>

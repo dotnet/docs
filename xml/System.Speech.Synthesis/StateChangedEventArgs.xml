@@ -1,7 +1,10 @@
-<Type Name="StateChangedEventArgs" FullName="System.Speech.Synthesis.StateChangedEventArgs">
+﻿<Type Name="StateChangedEventArgs" FullName="System.Speech.Synthesis.StateChangedEventArgs">
   <TypeSignature Language="C#" Value="public class StateChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StateChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.StateChangedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class StateChangedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type StateChangedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StateChangedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +89,9 @@ namespace SampleSynthesis
       <MemberSignature Language="C#" Value="public System.Speech.Synthesis.SynthesizerState PreviousState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Synthesis.SynthesizerState PreviousState" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.StateChangedEventArgs.PreviousState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousState As SynthesizerState" />
+      <MemberSignature Language="F#" Value="member this.PreviousState : System.Speech.Synthesis.SynthesizerState" Usage="System.Speech.Synthesis.StateChangedEventArgs.PreviousState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::SynthesizerState PreviousState { System::Speech::Synthesis::SynthesizerState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -111,6 +117,9 @@ namespace SampleSynthesis
       <MemberSignature Language="C#" Value="public System.Speech.Synthesis.SynthesizerState State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Synthesis.SynthesizerState State" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.StateChangedEventArgs.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As SynthesizerState" />
+      <MemberSignature Language="F#" Value="member this.State : System.Speech.Synthesis.SynthesizerState" Usage="System.Speech.Synthesis.StateChangedEventArgs.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Synthesis::SynthesizerState State { System::Speech::Synthesis::SynthesizerState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

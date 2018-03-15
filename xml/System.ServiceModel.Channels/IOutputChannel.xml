@@ -1,7 +1,10 @@
-<Type Name="IOutputChannel" FullName="System.ServiceModel.Channels.IOutputChannel">
+﻿<Type Name="IOutputChannel" FullName="System.ServiceModel.Channels.IOutputChannel">
   <TypeSignature Language="C#" Value="public interface IOutputChannel : System.ServiceModel.Channels.IChannel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IOutputChannel implements class System.ServiceModel.Channels.IChannel, class System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IOutputChannel" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IOutputChannel&#xA;Implements IChannel" />
+  <TypeSignature Language="F#" Value="type IOutputChannel = interface&#xA;    interface IChannel&#xA;    interface ICommunicationObject" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IOutputChannel : System::ServiceModel::Channels::IChannel" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,10 +33,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="BeginSend">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to send a message.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginSend">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSend (System.ServiceModel.Channels.Message message, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginSend(class System.ServiceModel.Channels.Message message, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IOutputChannel.BeginSend(System.ServiceModel.Channels.Message,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member BeginSend : System.ServiceModel.Channels.Message * AsyncCallback * obj -&gt; IAsyncResult" Usage="iOutputChannel.BeginSend (message, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSend(System::ServiceModel::Channels::Message ^ message, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -85,6 +100,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSend (System.ServiceModel.Channels.Message message, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginSend(class System.ServiceModel.Channels.Message message, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IOutputChannel.BeginSend(System.ServiceModel.Channels.Message,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member BeginSend : System.ServiceModel.Channels.Message * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="iOutputChannel.BeginSend (message, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSend(System::ServiceModel::Channels::Message ^ message, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -141,6 +158,9 @@
       <MemberSignature Language="C#" Value="public void EndSend (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndSend(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IOutputChannel.EndSend(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndSend (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndSend : IAsyncResult -&gt; unit" Usage="iOutputChannel.EndSend result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndSend(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -183,6 +203,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress RemoteAddress { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress RemoteAddress" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IOutputChannel.RemoteAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RemoteAddress As EndpointAddress" />
+      <MemberSignature Language="F#" Value="member this.RemoteAddress : System.ServiceModel.EndpointAddress" Usage="System.ServiceModel.Channels.IOutputChannel.RemoteAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ RemoteAddress { System::ServiceModel::EndpointAddress ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -218,10 +241,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Send">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends a message on the current output channel.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Send">
       <MemberSignature Language="C#" Value="public void Send (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Send(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IOutputChannel.Send(System.ServiceModel.Channels.Message)" />
+      <MemberSignature Language="F#" Value="abstract member Send : System.ServiceModel.Channels.Message -&gt; unit" Usage="iOutputChannel.Send message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -268,6 +303,8 @@
       <MemberSignature Language="C#" Value="public void Send (System.ServiceModel.Channels.Message message, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Send(class System.ServiceModel.Channels.Message message, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IOutputChannel.Send(System.ServiceModel.Channels.Message,System.TimeSpan)" />
+      <MemberSignature Language="F#" Value="abstract member Send : System.ServiceModel.Channels.Message * TimeSpan -&gt; unit" Usage="iOutputChannel.Send (message, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Send(System::ServiceModel::Channels::Message ^ message, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -319,6 +356,9 @@
       <MemberSignature Language="C#" Value="public Uri Via { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Via" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IOutputChannel.Via" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Via As Uri" />
+      <MemberSignature Language="F#" Value="member this.Via : Uri" Usage="System.ServiceModel.Channels.IOutputChannel.Via" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Via { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -354,25 +394,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="BeginSend">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation to send a message.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Send">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends a message on the current output channel.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

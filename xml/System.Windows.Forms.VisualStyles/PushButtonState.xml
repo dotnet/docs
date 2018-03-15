@@ -1,7 +1,10 @@
-<Type Name="PushButtonState" FullName="System.Windows.Forms.VisualStyles.PushButtonState">
+﻿<Type Name="PushButtonState" FullName="System.Windows.Forms.VisualStyles.PushButtonState">
   <TypeSignature Language="C#" Value="public enum PushButtonState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PushButtonState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.PushButtonState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PushButtonState" />
+  <TypeSignature Language="F#" Value="type PushButtonState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PushButtonState" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.PushButtonState Default = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.PushButtonState.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 5" Usage="System.Windows.Forms.VisualStyles.PushButtonState.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.PushButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The button has the default appearance.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Disabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.PushButtonState Disabled = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.PushButtonState.Disabled" />
+      <MemberSignature Language="VB.NET" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 4" Usage="System.Windows.Forms.VisualStyles.PushButtonState.Disabled" />
+      <MemberSignature Language="C++ CLI" Value="Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.PushButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The button is disabled.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="Hot" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.PushButtonState Hot = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.PushButtonState.Hot" />
+      <MemberSignature Language="VB.NET" Value="Hot" />
+      <MemberSignature Language="F#" Value="Hot = 2" Usage="System.Windows.Forms.VisualStyles.PushButtonState.Hot" />
+      <MemberSignature Language="C++ CLI" Value="Hot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.PushButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The button is hot.</summary>
       </Docs>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.PushButtonState Normal = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.PushButtonState.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 1" Usage="System.Windows.Forms.VisualStyles.PushButtonState.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.PushButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The button has the normal appearance.</summary>
       </Docs>
@@ -89,6 +108,9 @@
       <MemberSignature Language="C#" Value="Pressed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.PushButtonState Pressed = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.PushButtonState.Pressed" />
+      <MemberSignature Language="VB.NET" Value="Pressed" />
+      <MemberSignature Language="F#" Value="Pressed = 3" Usage="System.Windows.Forms.VisualStyles.PushButtonState.Pressed" />
+      <MemberSignature Language="C++ CLI" Value="Pressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.PushButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The button is pressed.</summary>
       </Docs>

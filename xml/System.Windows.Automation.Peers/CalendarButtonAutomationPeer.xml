@@ -1,7 +1,10 @@
-<Type Name="CalendarButtonAutomationPeer" FullName="System.Windows.Automation.Peers.CalendarButtonAutomationPeer">
+﻿<Type Name="CalendarButtonAutomationPeer" FullName="System.Windows.Automation.Peers.CalendarButtonAutomationPeer">
   <TypeSignature Language="C#" Value="public sealed class CalendarButtonAutomationPeer : System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CalendarButtonAutomationPeer extends System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.CalendarButtonAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CalendarButtonAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer" />
+  <TypeSignature Language="F#" Value="type CalendarButtonAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CalendarButtonAutomationPeer sealed : System::Windows::Automation::Peers::FrameworkElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public CalendarButtonAutomationPeer (System.Windows.Controls.Button owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Button owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.CalendarButtonAutomationPeer.#ctor(System.Windows.Controls.Button)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Button)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.CalendarButtonAutomationPeer : System.Windows.Controls.Button -&gt; System.Windows.Automation.Peers.CalendarButtonAutomationPeer" Usage="new System.Windows.Automation.Peers.CalendarButtonAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CalendarButtonAutomationPeer(System::Windows::Controls::Button ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.CalendarButtonAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="calendarButtonAutomationPeer.GetAutomationControlTypeCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +65,9 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.CalendarButtonAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="calendarButtonAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -75,6 +87,9 @@
       <MemberSignature Language="C#" Value="protected override string GetLocalizedControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetLocalizedControlTypeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.CalendarButtonAutomationPeer.GetLocalizedControlTypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLocalizedControlTypeCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetLocalizedControlTypeCore : unit -&gt; string" Usage="calendarButtonAutomationPeer.GetLocalizedControlTypeCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetLocalizedControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="AddedActivityAction" FullName="System.Workflow.ComponentModel.AddedActivityAction">
+﻿<Type Name="AddedActivityAction" FullName="System.Workflow.ComponentModel.AddedActivityAction">
   <TypeSignature Language="C#" Value="public sealed class AddedActivityAction : System.Workflow.ComponentModel.ActivityChangeAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AddedActivityAction extends System.Workflow.ComponentModel.ActivityChangeAction" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.AddedActivityAction" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AddedActivityAction&#xA;Inherits ActivityChangeAction" />
+  <TypeSignature Language="F#" Value="type AddedActivityAction = class&#xA;    inherit ActivityChangeAction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AddedActivityAction sealed : System::Workflow::ComponentModel::ActivityChangeAction" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +32,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.AddedActivityAction" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AddedActivityAction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.AddedActivityAction.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AddedActivityAction();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -48,6 +62,8 @@
       <MemberSignature Language="C#" Value="public AddedActivityAction (System.Workflow.ComponentModel.CompositeActivity compositeActivity, System.Workflow.ComponentModel.Activity activityAdded);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.CompositeActivity compositeActivity, class System.Workflow.ComponentModel.Activity activityAdded) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.AddedActivityAction.#ctor(System.Workflow.ComponentModel.CompositeActivity,System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.AddedActivityAction : System.Workflow.ComponentModel.CompositeActivity * System.Workflow.ComponentModel.Activity -&gt; System.Workflow.ComponentModel.AddedActivityAction" Usage="new System.Workflow.ComponentModel.AddedActivityAction (compositeActivity, activityAdded)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AddedActivityAction(System::Workflow::ComponentModel::CompositeActivity ^ compositeActivity, System::Workflow::ComponentModel::Activity ^ activityAdded);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -70,6 +86,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Activity AddedActivity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Activity AddedActivity" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.AddedActivityAction.AddedActivity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AddedActivity As Activity" />
+      <MemberSignature Language="F#" Value="member this.AddedActivity : System.Workflow.ComponentModel.Activity" Usage="System.Workflow.ComponentModel.AddedActivityAction.AddedActivity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Activity ^ AddedActivity { System::Workflow::ComponentModel::Activity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -85,9 +104,12 @@
       </Docs>
     </Member>
     <Member MemberName="ApplyTo">
-      <MemberSignature Language="C#" Value="protected override bool ApplyTo (System.Workflow.ComponentModel.Activity rootActivity);" />
+      <MemberSignature Language="C#" Value="protected internal override bool ApplyTo (System.Workflow.ComponentModel.Activity rootActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool ApplyTo(class System.Workflow.ComponentModel.Activity rootActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.AddedActivityAction.ApplyTo(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function ApplyTo (rootActivity As Activity) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ApplyTo : System.Workflow.ComponentModel.Activity -&gt; bool" Usage="addedActivityAction.ApplyTo rootActivity" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool ApplyTo(System::Workflow::ComponentModel::Activity ^ rootActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -110,6 +132,9 @@
       <MemberSignature Language="C#" Value="public int Index { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.AddedActivityAction.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="System.Workflow.ComponentModel.AddedActivityAction.Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -124,14 +149,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.AddedActivityAction" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

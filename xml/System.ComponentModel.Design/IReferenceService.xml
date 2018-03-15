@@ -1,7 +1,10 @@
-<Type Name="IReferenceService" FullName="System.ComponentModel.Design.IReferenceService">
+﻿<Type Name="IReferenceService" FullName="System.ComponentModel.Design.IReferenceService">
   <TypeSignature Language="C#" Value="public interface IReferenceService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReferenceService" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IReferenceService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IReferenceService" />
+  <TypeSignature Language="F#" Value="type IReferenceService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IReferenceService" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +52,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent GetComponent (object reference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.IComponent GetComponent(object reference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IReferenceService.GetComponent(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetComponent (reference As Object) As IComponent" />
+      <MemberSignature Language="F#" Value="abstract member GetComponent : obj -&gt; System.ComponentModel.IComponent" Usage="iReferenceService.GetComponent reference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::IComponent ^ GetComponent(System::Object ^ reference);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -80,6 +86,9 @@
       <MemberSignature Language="C#" Value="public string GetName (object reference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetName(object reference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IReferenceService.GetName(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetName (reference As Object) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetName : obj -&gt; string" Usage="iReferenceService.GetName reference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetName(System::Object ^ reference);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +127,9 @@
       <MemberSignature Language="C#" Value="public object GetReference (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetReference(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IReferenceService.GetReference(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReference (name As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetReference : string -&gt; obj" Usage="iReferenceService.GetReference name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetReference(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -145,10 +157,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetReferences">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets all available references to project components.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetReferences">
       <MemberSignature Language="C#" Value="public object[] GetReferences ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetReferences() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IReferenceService.GetReferences" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReferences () As Object()" />
+      <MemberSignature Language="F#" Value="abstract member GetReferences : unit -&gt; obj[]" Usage="iReferenceService.GetReferences " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ GetReferences();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -177,6 +202,9 @@
       <MemberSignature Language="C#" Value="public object[] GetReferences (Type baseType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetReferences(class System.Type baseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IReferenceService.GetReferences(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReferences (baseType As Type) As Object()" />
+      <MemberSignature Language="F#" Value="abstract member GetReferences : Type -&gt; obj[]" Usage="iReferenceService.GetReferences baseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ GetReferences(Type ^ baseType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -204,15 +232,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetReferences">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets all available references to project components.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

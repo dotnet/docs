@@ -1,7 +1,10 @@
-<Type Name="PersistenceIOParticipant" FullName="System.Activities.Persistence.PersistenceIOParticipant">
+﻿<Type Name="PersistenceIOParticipant" FullName="System.Activities.Persistence.PersistenceIOParticipant">
   <TypeSignature Language="C#" Value="public abstract class PersistenceIOParticipant : System.Activities.Persistence.PersistenceParticipant" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PersistenceIOParticipant extends System.Activities.Persistence.PersistenceParticipant" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Persistence.PersistenceIOParticipant" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PersistenceIOParticipant&#xA;Inherits PersistenceParticipant" />
+  <TypeSignature Language="F#" Value="type PersistenceIOParticipant = class&#xA;    inherit PersistenceParticipant" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersistenceIOParticipant abstract : System::Activities::Persistence::PersistenceParticipant" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="protected PersistenceIOParticipant (bool isSaveTransactionRequired, bool isLoadTransactionRequired);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool isSaveTransactionRequired, bool isLoadTransactionRequired) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Persistence.PersistenceIOParticipant.#ctor(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (isSaveTransactionRequired As Boolean, isLoadTransactionRequired As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Persistence.PersistenceIOParticipant : bool * bool -&gt; System.Activities.Persistence.PersistenceIOParticipant" Usage="new System.Activities.Persistence.PersistenceIOParticipant (isSaveTransactionRequired, isLoadTransactionRequired)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PersistenceIOParticipant(bool isSaveTransactionRequired, bool isLoadTransactionRequired);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,6 +74,9 @@
       <MemberSignature Language="C#" Value="protected abstract void Abort ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Abort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Persistence.PersistenceIOParticipant.Abort" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub Abort ()" />
+      <MemberSignature Language="F#" Value="abstract member Abort : unit -&gt; unit" Usage="persistenceIOParticipant.Abort " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void Abort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -93,6 +102,9 @@
       <MemberSignature Language="C#" Value="protected virtual IAsyncResult BeginOnLoad (System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; readWriteValues, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult BeginOnLoad(class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; readWriteValues, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Persistence.PersistenceIOParticipant.BeginOnLoad(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object},System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function BeginOnLoad (readWriteValues As IDictionary(Of XName, Object), timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginOnLoad : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginOnLoad : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="persistenceIOParticipant.BeginOnLoad (readWriteValues, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ BeginOnLoad(System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ readWriteValues, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -121,6 +133,9 @@
       <MemberSignature Language="C#" Value="protected virtual IAsyncResult BeginOnSave (System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; readWriteValues, System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; writeOnlyValues, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult BeginOnSave(class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; readWriteValues, class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; writeOnlyValues, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Persistence.PersistenceIOParticipant.BeginOnSave(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object},System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object},System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function BeginOnSave (readWriteValues As IDictionary(Of XName, Object), writeOnlyValues As IDictionary(Of XName, Object), timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginOnSave : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; * System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginOnSave : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; * System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="persistenceIOParticipant.BeginOnSave (readWriteValues, writeOnlyValues, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ BeginOnSave(System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ readWriteValues, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ writeOnlyValues, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -151,6 +166,9 @@
       <MemberSignature Language="C#" Value="protected virtual void EndOnLoad (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EndOnLoad(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Persistence.PersistenceIOParticipant.EndOnLoad(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EndOnLoad (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndOnLoad : IAsyncResult -&gt; unit&#xA;override this.EndOnLoad : IAsyncResult -&gt; unit" Usage="persistenceIOParticipant.EndOnLoad result" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EndOnLoad(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -172,6 +190,9 @@
       <MemberSignature Language="C#" Value="protected virtual void EndOnSave (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EndOnSave(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Persistence.PersistenceIOParticipant.EndOnSave(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EndOnSave (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndOnSave : IAsyncResult -&gt; unit&#xA;override this.EndOnSave : IAsyncResult -&gt; unit" Usage="persistenceIOParticipant.EndOnSave result" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EndOnSave(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

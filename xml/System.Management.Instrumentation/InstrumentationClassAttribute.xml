@@ -1,7 +1,10 @@
-<Type Name="InstrumentationClassAttribute" FullName="System.Management.Instrumentation.InstrumentationClassAttribute">
+﻿<Type Name="InstrumentationClassAttribute" FullName="System.Management.Instrumentation.InstrumentationClassAttribute">
   <TypeSignature Language="C#" Value="public class InstrumentationClassAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InstrumentationClassAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.InstrumentationClassAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class InstrumentationClassAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type InstrumentationClassAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InstrumentationClassAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +25,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.InstrumentationClassAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InstrumentationClassAttribute (System.Management.Instrumentation.InstrumentationType instrumentationType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Management.Instrumentation.InstrumentationType instrumentationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.InstrumentationClassAttribute.#ctor(System.Management.Instrumentation.InstrumentationType)" />
+      <MemberSignature Language="F#" Value="new System.Management.Instrumentation.InstrumentationClassAttribute : System.Management.Instrumentation.InstrumentationType -&gt; System.Management.Instrumentation.InstrumentationClassAttribute" Usage="new System.Management.Instrumentation.InstrumentationClassAttribute instrumentationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstrumentationClassAttribute(System::Management::Instrumentation::InstrumentationType instrumentationType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -53,6 +67,8 @@
       <MemberSignature Language="C#" Value="public InstrumentationClassAttribute (System.Management.Instrumentation.InstrumentationType instrumentationType, string managedBaseClassName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Management.Instrumentation.InstrumentationType instrumentationType, string managedBaseClassName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.InstrumentationClassAttribute.#ctor(System.Management.Instrumentation.InstrumentationType,System.String)" />
+      <MemberSignature Language="F#" Value="new System.Management.Instrumentation.InstrumentationClassAttribute : System.Management.Instrumentation.InstrumentationType * string -&gt; System.Management.Instrumentation.InstrumentationClassAttribute" Usage="new System.Management.Instrumentation.InstrumentationClassAttribute (instrumentationType, managedBaseClassName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstrumentationClassAttribute(System::Management::Instrumentation::InstrumentationType instrumentationType, System::String ^ managedBaseClassName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -82,6 +98,9 @@
       <MemberSignature Language="C#" Value="public System.Management.Instrumentation.InstrumentationType InstrumentationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Management.Instrumentation.InstrumentationType InstrumentationType" />
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.InstrumentationClassAttribute.InstrumentationType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstrumentationType As InstrumentationType" />
+      <MemberSignature Language="F#" Value="member this.InstrumentationType : System.Management.Instrumentation.InstrumentationType" Usage="System.Management.Instrumentation.InstrumentationClassAttribute.InstrumentationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::Instrumentation::InstrumentationType InstrumentationType { System::Management::Instrumentation::InstrumentationType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -112,6 +131,9 @@
       <MemberSignature Language="C#" Value="public string ManagedBaseClassName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ManagedBaseClassName" />
       <MemberSignature Language="DocId" Value="P:System.Management.Instrumentation.InstrumentationClassAttribute.ManagedBaseClassName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManagedBaseClassName As String" />
+      <MemberSignature Language="F#" Value="member this.ManagedBaseClassName : string" Usage="System.Management.Instrumentation.InstrumentationClassAttribute.ManagedBaseClassName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ManagedBaseClassName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -138,14 +160,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.InstrumentationClassAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

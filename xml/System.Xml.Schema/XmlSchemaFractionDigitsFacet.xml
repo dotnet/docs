@@ -1,7 +1,10 @@
-<Type Name="XmlSchemaFractionDigitsFacet" FullName="System.Xml.Schema.XmlSchemaFractionDigitsFacet">
+﻿<Type Name="XmlSchemaFractionDigitsFacet" FullName="System.Xml.Schema.XmlSchemaFractionDigitsFacet">
   <TypeSignature Language="C#" Value="public class XmlSchemaFractionDigitsFacet : System.Xml.Schema.XmlSchemaNumericFacet" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaFractionDigitsFacet extends System.Xml.Schema.XmlSchemaNumericFacet" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaFractionDigitsFacet" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaFractionDigitsFacet&#xA;Inherits XmlSchemaNumericFacet" />
+  <TypeSignature Language="F#" Value="type XmlSchemaFractionDigitsFacet = class&#xA;    inherit XmlSchemaNumericFacet" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaFractionDigitsFacet : System::Xml::Schema::XmlSchemaNumericFacet" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaFractionDigitsFacet ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaFractionDigitsFacet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaFractionDigitsFacet();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="MessagePriority" FullName="System.Messaging.MessagePriority">
+﻿<Type Name="MessagePriority" FullName="System.Messaging.MessagePriority">
   <TypeSignature Language="C#" Value="public enum MessagePriority" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MessagePriority extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessagePriority" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MessagePriority" />
+  <TypeSignature Language="F#" Value="type MessagePriority = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MessagePriority" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="AboveNormal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessagePriority AboveNormal = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.AboveNormal" />
+      <MemberSignature Language="VB.NET" Value="AboveNormal" />
+      <MemberSignature Language="F#" Value="AboveNormal = 4" Usage="System.Messaging.MessagePriority.AboveNormal" />
+      <MemberSignature Language="C++ CLI" Value="AboveNormal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -50,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Between <see cref="F:System.Messaging.MessagePriority.High" /> and <see cref="F:System.Messaging.MessagePriority.Normal" /> message priority.</summary>
       </Docs>
@@ -58,6 +65,9 @@
       <MemberSignature Language="C#" Value="High" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessagePriority High = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.High" />
+      <MemberSignature Language="VB.NET" Value="High" />
+      <MemberSignature Language="F#" Value="High = 5" Usage="System.Messaging.MessagePriority.High" />
+      <MemberSignature Language="C++ CLI" Value="High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -66,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>High message priority.</summary>
       </Docs>
@@ -74,6 +85,9 @@
       <MemberSignature Language="C#" Value="Highest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessagePriority Highest = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.Highest" />
+      <MemberSignature Language="VB.NET" Value="Highest" />
+      <MemberSignature Language="F#" Value="Highest = 7" Usage="System.Messaging.MessagePriority.Highest" />
+      <MemberSignature Language="C++ CLI" Value="Highest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -82,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Highest message priority.</summary>
       </Docs>
@@ -90,6 +105,9 @@
       <MemberSignature Language="C#" Value="Low" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessagePriority Low = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.Low" />
+      <MemberSignature Language="VB.NET" Value="Low" />
+      <MemberSignature Language="F#" Value="Low = 2" Usage="System.Messaging.MessagePriority.Low" />
+      <MemberSignature Language="C++ CLI" Value="Low" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -98,6 +116,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Low message priority.</summary>
       </Docs>
@@ -106,6 +125,9 @@
       <MemberSignature Language="C#" Value="Lowest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessagePriority Lowest = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.Lowest" />
+      <MemberSignature Language="VB.NET" Value="Lowest" />
+      <MemberSignature Language="F#" Value="Lowest = 0" Usage="System.Messaging.MessagePriority.Lowest" />
+      <MemberSignature Language="C++ CLI" Value="Lowest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -114,6 +136,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Lowest message priority.</summary>
       </Docs>
@@ -122,6 +145,9 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessagePriority Normal = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 3" Usage="System.Messaging.MessagePriority.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -130,6 +156,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Normal message priority.</summary>
       </Docs>
@@ -138,6 +165,9 @@
       <MemberSignature Language="C#" Value="VeryHigh" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessagePriority VeryHigh = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.VeryHigh" />
+      <MemberSignature Language="VB.NET" Value="VeryHigh" />
+      <MemberSignature Language="F#" Value="VeryHigh = 6" Usage="System.Messaging.MessagePriority.VeryHigh" />
+      <MemberSignature Language="C++ CLI" Value="VeryHigh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -146,6 +176,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Between <see langword="Highest" /> and <see langword="High" /> message priority.</summary>
       </Docs>
@@ -154,6 +185,9 @@
       <MemberSignature Language="C#" Value="VeryLow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessagePriority VeryLow = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessagePriority.VeryLow" />
+      <MemberSignature Language="VB.NET" Value="VeryLow" />
+      <MemberSignature Language="F#" Value="VeryLow = 1" Usage="System.Messaging.MessagePriority.VeryLow" />
+      <MemberSignature Language="C++ CLI" Value="VeryLow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -162,6 +196,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.MessagePriority</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Between <see langword="Low" /> and <see langword="Lowest" /> message priority.</summary>
       </Docs>

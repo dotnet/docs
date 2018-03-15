@@ -1,7 +1,10 @@
-<Type Name="TablePattern" FullName="System.Windows.Automation.TablePattern">
+﻿<Type Name="TablePattern" FullName="System.Windows.Automation.TablePattern">
   <TypeSignature Language="C#" Value="public class TablePattern : System.Windows.Automation.GridPattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TablePattern extends System.Windows.Automation.GridPattern" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TablePattern" />
+  <TypeSignature Language="VB.NET" Value="Public Class TablePattern&#xA;Inherits GridPattern" />
+  <TypeSignature Language="F#" Value="type TablePattern = class&#xA;    inherit GridPattern" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TablePattern : System::Windows::Automation::GridPattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.TablePattern.TablePatternInformation Cached { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.TablePattern/TablePatternInformation Cached" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TablePattern.Cached" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cached As TablePattern.TablePatternInformation" />
+      <MemberSignature Language="F#" Value="member this.Cached : System.Windows.Automation.TablePattern.TablePatternInformation" Usage="System.Windows.Automation.TablePattern.Cached" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::TablePattern::TablePatternInformation Cached { System::Windows::Automation::TablePattern::TablePatternInformation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -61,6 +67,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty ColumnHeadersProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty ColumnHeadersProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TablePattern.ColumnHeadersProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnHeadersProperty As AutomationProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnHeadersProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.TablePattern.ColumnHeadersProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ ColumnHeadersProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -99,6 +108,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.TablePattern.TablePatternInformation Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.TablePattern/TablePatternInformation Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TablePattern.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As TablePattern.TablePatternInformation" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Windows.Automation.TablePattern.TablePatternInformation" Usage="System.Windows.Automation.TablePattern.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::TablePattern::TablePatternInformation Current { System::Windows::Automation::TablePattern::TablePatternInformation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -126,6 +138,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TablePattern.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.TablePattern.Pattern" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -160,6 +175,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty RowHeadersProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty RowHeadersProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TablePattern.RowHeadersProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RowHeadersProperty As AutomationProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RowHeadersProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.TablePattern.RowHeadersProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ RowHeadersProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -198,6 +216,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty RowOrColumnMajorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty RowOrColumnMajorProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.TablePattern.RowOrColumnMajorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RowOrColumnMajorProperty As AutomationProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RowOrColumnMajorProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.TablePattern.RowOrColumnMajorProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ RowOrColumnMajorProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

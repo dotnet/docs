@@ -1,7 +1,10 @@
-<Type Name="EmbeddedMailObjectCollectionEditor" FullName="System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor">
+﻿<Type Name="EmbeddedMailObjectCollectionEditor" FullName="System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor">
   <TypeSignature Language="C#" Value="public class EmbeddedMailObjectCollectionEditor : System.ComponentModel.Design.CollectionEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EmbeddedMailObjectCollectionEditor extends System.ComponentModel.Design.CollectionEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class EmbeddedMailObjectCollectionEditor&#xA;Inherits CollectionEditor" />
+  <TypeSignature Language="F#" Value="type EmbeddedMailObjectCollectionEditor = class&#xA;    inherit CollectionEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EmbeddedMailObjectCollectionEditor : System::ComponentModel::Design::CollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="public EmbeddedMailObjectCollectionEditor (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor.#ctor(System.Type)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor : Type -&gt; System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor" Usage="new System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EmbeddedMailObjectCollectionEditor(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -68,6 +73,9 @@
       <MemberSignature Language="C#" Value="public override object EditValue (System.ComponentModel.ITypeDescriptorContext context, IServiceProvider provider, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EditValue(class System.ComponentModel.ITypeDescriptorContext context, class System.IServiceProvider provider, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.EmbeddedMailObjectCollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EditValue (context As ITypeDescriptorContext, provider As IServiceProvider, value As Object) As Object" />
+      <MemberSignature Language="F#" Value="override this.EditValue : System.ComponentModel.ITypeDescriptorContext * IServiceProvider * obj -&gt; obj" Usage="embeddedMailObjectCollectionEditor.EditValue (context, provider, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EditValue(System::ComponentModel::ITypeDescriptorContext ^ context, IServiceProvider ^ provider, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

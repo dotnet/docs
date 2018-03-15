@@ -1,7 +1,10 @@
-<Type Name="InvalidPrinterException" FullName="System.Drawing.Printing.InvalidPrinterException">
+﻿<Type Name="InvalidPrinterException" FullName="System.Drawing.Printing.InvalidPrinterException">
   <TypeSignature Language="C#" Value="public class InvalidPrinterException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InvalidPrinterException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.InvalidPrinterException" />
+  <TypeSignature Language="VB.NET" Value="Public Class InvalidPrinterException&#xA;Inherits SystemException" />
+  <TypeSignature Language="F#" Value="type InvalidPrinterException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InvalidPrinterException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +27,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.InvalidPrinterException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InvalidPrinterException (System.Drawing.Printing.PrinterSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Printing.PrinterSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.InvalidPrinterException.#ctor(System.Drawing.Printing.PrinterSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (settings As PrinterSettings)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Printing.InvalidPrinterException : System.Drawing.Printing.PrinterSettings -&gt; System.Drawing.Printing.InvalidPrinterException" Usage="new System.Drawing.Printing.InvalidPrinterException settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InvalidPrinterException(System::Drawing::Printing::PrinterSettings ^ settings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -46,6 +61,9 @@
       <MemberSignature Language="C#" Value="protected InvalidPrinterException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.InvalidPrinterException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Printing.InvalidPrinterException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Drawing.Printing.InvalidPrinterException" Usage="new System.Drawing.Printing.InvalidPrinterException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidPrinterException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -78,6 +96,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.InvalidPrinterException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="invalidPrinterException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -109,14 +130,5 @@
         <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.InvalidPrinterException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

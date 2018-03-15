@@ -1,7 +1,10 @@
-<Type Name="IDictionaryService" FullName="System.ComponentModel.Design.IDictionaryService">
+﻿<Type Name="IDictionaryService" FullName="System.ComponentModel.Design.IDictionaryService">
   <TypeSignature Language="C#" Value="public interface IDictionaryService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDictionaryService" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IDictionaryService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDictionaryService" />
+  <TypeSignature Language="F#" Value="type IDictionaryService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDictionaryService" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public object GetKey (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetKey(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDictionaryService.GetKey(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetKey (value As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetKey : obj -&gt; obj" Usage="iDictionaryService.GetKey value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetKey(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -72,6 +78,9 @@
       <MemberSignature Language="C#" Value="public object GetValue (object key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetValue(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDictionaryService.GetValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValue (key As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : obj -&gt; obj" Usage="iDictionaryService.GetValue key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetValue(System::Object ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +112,9 @@
       <MemberSignature Language="C#" Value="public void SetValue (object key, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(object key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IDictionaryService.SetValue(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValue (key As Object, value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetValue : obj * obj -&gt; unit" Usage="iDictionaryService.SetValue (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValue(System::Object ^ key, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

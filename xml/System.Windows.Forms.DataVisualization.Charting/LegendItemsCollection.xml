@@ -1,7 +1,10 @@
-<Type Name="LegendItemsCollection" FullName="System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection">
+﻿<Type Name="LegendItemsCollection" FullName="System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection">
   <TypeSignature Language="C#" Value="public class LegendItemsCollection : System.Windows.Forms.DataVisualization.Charting.ChartElementCollection&lt;System.Windows.Forms.DataVisualization.Charting.LegendItem&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LegendItemsCollection extends System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1&lt;class System.Windows.Forms.DataVisualization.Charting.LegendItem&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class LegendItemsCollection&#xA;Inherits ChartElementCollection(Of LegendItem)" />
+  <TypeSignature Language="F#" Value="type LegendItemsCollection = class&#xA;    inherit ChartElementCollection&lt;LegendItem&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LegendItemsCollection : System::Windows::Forms::DataVisualization::Charting::ChartElementCollection&lt;System::Windows::Forms::DataVisualization::Charting::LegendItem ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,10 +36,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a custom <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItem" /> object to the end of the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public int Add (System.Drawing.Color color, string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(valuetype System.Drawing.Color color, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Add(System.Drawing.Color,System.String)" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Drawing.Color * string -&gt; int" Usage="legendItemsCollection.Add (color, text)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Drawing::Color color, System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -72,6 +86,9 @@
       <MemberSignature Language="C#" Value="public int Add (string image, string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(string image, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Add(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (image As String, text As String) As Integer" />
+      <MemberSignature Language="F#" Value="override this.Add : string * string -&gt; int" Usage="legendItemsCollection.Add (image, text)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::String ^ image, System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -103,10 +120,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Insert">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts a custom <see cref="T:System. Windows.Forms.DataVisualization.Charting.LegendItem" /> object into the collection at the given location.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Insert">
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Drawing.Color color, string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, valuetype System.Drawing.Color color, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Insert(System.Int32,System.Drawing.Color,System.String)" />
+      <MemberSignature Language="F#" Value="override this.Insert : int * System.Drawing.Color * string -&gt; unit" Usage="legendItemsCollection.Insert (index, color, text)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Drawing::Color color, System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -143,6 +171,9 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, string image, string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, string image, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Insert(System.Int32,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, image As String, text As String)" />
+      <MemberSignature Language="F#" Value="override this.Insert : int * string * string -&gt; unit" Usage="legendItemsCollection.Insert (index, image, text)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::String ^ image, System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -179,6 +210,9 @@
       <MemberSignature Language="C#" Value="public void Reverse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reverse() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.LegendItemsCollection.Reverse" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reverse ()" />
+      <MemberSignature Language="F#" Value="member this.Reverse : unit -&gt; unit" Usage="legendItemsCollection.Reverse " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reverse();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -193,23 +227,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a custom <see cref="T:System.Windows.Forms.DataVisualization.Charting.LegendItem" /> object to the end of the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Insert">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Inserts a custom <see cref="T:System. Windows.Forms.DataVisualization.Charting.LegendItem" /> object into the collection at the given location.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

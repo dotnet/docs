@@ -1,7 +1,10 @@
-<Type Name="AppDomainInitializer" FullName="System.AppDomainInitializer">
+﻿<Type Name="AppDomainInitializer" FullName="System.AppDomainInitializer">
   <TypeSignature Language="C#" Value="public delegate void AppDomainInitializer(string[] args);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AppDomainInitializer extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.AppDomainInitializer" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub AppDomainInitializer(args As String())" />
+  <TypeSignature Language="F#" Value="type AppDomainInitializer = delegate of string[] -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void AppDomainInitializer(cli::array &lt;System::String ^&gt; ^ args);" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

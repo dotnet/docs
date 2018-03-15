@@ -1,7 +1,10 @@
-<Type Name="DataGridColumnHeader" FullName="System.Windows.Controls.Primitives.DataGridColumnHeader">
+﻿<Type Name="DataGridColumnHeader" FullName="System.Windows.Controls.Primitives.DataGridColumnHeader">
   <TypeSignature Language="C#" Value="public class DataGridColumnHeader : System.Windows.Controls.Primitives.ButtonBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DataGridColumnHeader extends System.Windows.Controls.Primitives.ButtonBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DataGridColumnHeader" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridColumnHeader&#xA;Inherits ButtonBase" />
+  <TypeSignature Language="F#" Value="type DataGridColumnHeader = class&#xA;    inherit ButtonBase&#xA;    interface IProvideDataGridColumn" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridColumnHeader : System::Windows::Controls::Primitives::ButtonBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,8 @@
       <MemberSignature Language="C#" Value="public DataGridColumnHeader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridColumnHeader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -46,6 +51,9 @@
       <MemberSignature Language="C#" Value="public bool CanUserSort { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanUserSort" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DataGridColumnHeader.CanUserSort" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanUserSort As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanUserSort : bool" Usage="System.Windows.Controls.Primitives.DataGridColumnHeader.CanUserSort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanUserSort { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +75,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CanUserSortProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CanUserSortProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DataGridColumnHeader.CanUserSortProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanUserSortProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CanUserSortProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DataGridColumnHeader.CanUserSortProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanUserSortProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -86,7 +97,13 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.DataGridColumn Column { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataGridColumn Column" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DataGridColumnHeader.Column" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As DataGridColumn" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Windows.Controls.DataGridColumn" Usage="System.Windows.Controls.Primitives.DataGridColumnHeader.Column" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridColumn ^ Column { System::Windows::Controls::DataGridColumn ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.IProvideDataGridColumn.Column</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -106,6 +123,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ComponentResourceKey ColumnFloatingHeaderStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ComponentResourceKey ColumnFloatingHeaderStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DataGridColumnHeader.ColumnFloatingHeaderStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ColumnFloatingHeaderStyleKey As ComponentResourceKey" />
+      <MemberSignature Language="F#" Value="member this.ColumnFloatingHeaderStyleKey : System.Windows.ComponentResourceKey" Usage="System.Windows.Controls.Primitives.DataGridColumnHeader.ColumnFloatingHeaderStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ComponentResourceKey ^ ColumnFloatingHeaderStyleKey { System::Windows::ComponentResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -126,6 +146,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ComponentResourceKey ColumnHeaderDropSeparatorStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ComponentResourceKey ColumnHeaderDropSeparatorStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DataGridColumnHeader.ColumnHeaderDropSeparatorStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ColumnHeaderDropSeparatorStyleKey As ComponentResourceKey" />
+      <MemberSignature Language="F#" Value="member this.ColumnHeaderDropSeparatorStyleKey : System.Windows.ComponentResourceKey" Usage="System.Windows.Controls.Primitives.DataGridColumnHeader.ColumnHeaderDropSeparatorStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ComponentResourceKey ^ ColumnHeaderDropSeparatorStyleKey { System::Windows::ComponentResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -146,6 +169,9 @@
       <MemberSignature Language="C#" Value="public int DisplayIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DisplayIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DataGridColumnHeader.DisplayIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.DisplayIndex : int" Usage="System.Windows.Controls.Primitives.DataGridColumnHeader.DisplayIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DisplayIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -166,6 +192,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DisplayIndexProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DisplayIndexProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DataGridColumnHeader.DisplayIndexProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DisplayIndexProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DisplayIndexProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DataGridColumnHeader.DisplayIndexProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DisplayIndexProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -185,6 +214,9 @@
       <MemberSignature Language="C#" Value="public bool IsFrozen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFrozen" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DataGridColumnHeader.IsFrozen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFrozen As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFrozen : bool" Usage="System.Windows.Controls.Primitives.DataGridColumnHeader.IsFrozen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFrozen { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -206,6 +238,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsFrozenProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsFrozenProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DataGridColumnHeader.IsFrozenProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsFrozenProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsFrozenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DataGridColumnHeader.IsFrozenProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsFrozenProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -225,6 +260,9 @@
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeader.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="dataGridColumnHeader.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -252,6 +290,9 @@
       <MemberSignature Language="C#" Value="protected override void OnClick ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClick() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeader.OnClick" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClick ()" />
+      <MemberSignature Language="F#" Value="override this.OnClick : unit -&gt; unit" Usage="dataGridColumnHeader.OnClick " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClick();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -279,6 +320,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeader.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="dataGridColumnHeader.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -300,6 +344,9 @@
       <MemberSignature Language="C#" Value="protected override void OnLostMouseCapture (System.Windows.Input.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLostMouseCapture(class System.Windows.Input.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeader.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostMouseCapture (e As MouseEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnLostMouseCapture : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="dataGridColumnHeader.OnLostMouseCapture e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostMouseCapture(System::Windows::Input::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -324,6 +371,9 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseLeftButtonDown (System.Windows.Input.MouseButtonEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeftButtonDown(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeader.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonDown (e As MouseButtonEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="dataGridColumnHeader.OnMouseLeftButtonDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -348,6 +398,9 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseLeftButtonUp (System.Windows.Input.MouseButtonEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeftButtonUp(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeader.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonUp (e As MouseButtonEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonUp : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="dataGridColumnHeader.OnMouseLeftButtonUp e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonUp(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -372,6 +425,9 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseMove (System.Windows.Input.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseMove(class System.Windows.Input.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DataGridColumnHeader.OnMouseMove(System.Windows.Input.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseMove (e As MouseEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseMove : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="dataGridColumnHeader.OnMouseMove e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseMove(System::Windows::Input::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -396,6 +452,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush SeparatorBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush SeparatorBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DataGridColumnHeader.SeparatorBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property SeparatorBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.SeparatorBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Primitives.DataGridColumnHeader.SeparatorBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ SeparatorBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -416,6 +475,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SeparatorBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SeparatorBrushProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DataGridColumnHeader.SeparatorBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SeparatorBrushProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SeparatorBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DataGridColumnHeader.SeparatorBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SeparatorBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -435,6 +497,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Visibility SeparatorVisibility { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Visibility SeparatorVisibility" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DataGridColumnHeader.SeparatorVisibility" />
+      <MemberSignature Language="VB.NET" Value="Public Property SeparatorVisibility As Visibility" />
+      <MemberSignature Language="F#" Value="member this.SeparatorVisibility : System.Windows.Visibility with get, set" Usage="System.Windows.Controls.Primitives.DataGridColumnHeader.SeparatorVisibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Visibility SeparatorVisibility { System::Windows::Visibility get(); void set(System::Windows::Visibility value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -455,6 +520,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SeparatorVisibilityProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SeparatorVisibilityProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DataGridColumnHeader.SeparatorVisibilityProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SeparatorVisibilityProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SeparatorVisibilityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DataGridColumnHeader.SeparatorVisibilityProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SeparatorVisibilityProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -474,6 +542,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.ComponentModel.ListSortDirection&gt; SortDirection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.ComponentModel.ListSortDirection&gt; SortDirection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DataGridColumnHeader.SortDirection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortDirection As Nullable(Of ListSortDirection)" />
+      <MemberSignature Language="F#" Value="member this.SortDirection : Nullable&lt;System.ComponentModel.ListSortDirection&gt;" Usage="System.Windows.Controls.Primitives.DataGridColumnHeader.SortDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::ComponentModel::ListSortDirection&gt; SortDirection { Nullable&lt;System::ComponentModel::ListSortDirection&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -494,6 +565,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SortDirectionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SortDirectionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DataGridColumnHeader.SortDirectionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SortDirectionProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SortDirectionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DataGridColumnHeader.SortDirectionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SortDirectionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="HtmlElementCollection" FullName="System.Windows.Forms.HtmlElementCollection">
+﻿<Type Name="HtmlElementCollection" FullName="System.Windows.Forms.HtmlElementCollection">
   <TypeSignature Language="C#" Value="public sealed class HtmlElementCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HtmlElementCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HtmlElementCollection&#xA;Implements ICollection" />
+  <TypeSignature Language="F#" Value="type HtmlElementCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlElementCollection sealed : System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,7 +36,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.HtmlElementCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +70,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElementCollection GetElementsByName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.HtmlElementCollection GetElementsByName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElementCollection.GetElementsByName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetElementsByName (name As String) As HtmlElementCollection" />
+      <MemberSignature Language="F#" Value="member this.GetElementsByName : string -&gt; System.Windows.Forms.HtmlElementCollection" Usage="htmlElementCollection.GetElementsByName name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::HtmlElementCollection ^ GetElementsByName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,7 +110,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElementCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="htmlElementCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -134,6 +152,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElement this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.HtmlElement Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As HtmlElement" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.HtmlElement" Usage="System.Windows.Forms.HtmlElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElement ^ default[int] { System::Windows::Forms::HtmlElement ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -163,6 +184,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElement this[string elementId] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.HtmlElement Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(elementId As String) As HtmlElement" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.HtmlElement" Usage="System.Windows.Forms.HtmlElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElement ^ default[System::String ^] { System::Windows::Forms::HtmlElement ^ get(System::String ^ elementId); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -195,7 +219,12 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array dest, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array dest, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElementCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub CopyTo (dest As Array, index As Integer) Implements ICollection.CopyTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ dest, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -218,7 +247,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.HtmlElementCollection.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -237,7 +272,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElementCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.HtmlElementCollection.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

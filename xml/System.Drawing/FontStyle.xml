@@ -1,7 +1,10 @@
-<Type Name="FontStyle" FullName="System.Drawing.FontStyle">
+﻿<Type Name="FontStyle" FullName="System.Drawing.FontStyle">
   <TypeSignature Language="C#" Value="public enum FontStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FontStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.FontStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FontStyle" />
+  <TypeSignature Language="F#" Value="type FontStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FontStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="Bold" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.FontStyle Bold = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Bold" />
+      <MemberSignature Language="VB.NET" Value="Bold" />
+      <MemberSignature Language="F#" Value="Bold = 1" Usage="System.Drawing.FontStyle.Bold" />
+      <MemberSignature Language="C++ CLI" Value="Bold" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -42,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Bold text.</summary>
       </Docs>
@@ -50,6 +57,9 @@
       <MemberSignature Language="C#" Value="Italic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.FontStyle Italic = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Italic" />
+      <MemberSignature Language="VB.NET" Value="Italic" />
+      <MemberSignature Language="F#" Value="Italic = 2" Usage="System.Drawing.FontStyle.Italic" />
+      <MemberSignature Language="C++ CLI" Value="Italic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Italic text.</summary>
       </Docs>
@@ -66,6 +77,9 @@
       <MemberSignature Language="C#" Value="Regular" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.FontStyle Regular = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Regular" />
+      <MemberSignature Language="VB.NET" Value="Regular" />
+      <MemberSignature Language="F#" Value="Regular = 0" Usage="System.Drawing.FontStyle.Regular" />
+      <MemberSignature Language="C++ CLI" Value="Regular" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -74,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Normal text.</summary>
       </Docs>
@@ -82,6 +97,9 @@
       <MemberSignature Language="C#" Value="Strikeout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.FontStyle Strikeout = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Strikeout" />
+      <MemberSignature Language="VB.NET" Value="Strikeout" />
+      <MemberSignature Language="F#" Value="Strikeout = 8" Usage="System.Drawing.FontStyle.Strikeout" />
+      <MemberSignature Language="C++ CLI" Value="Strikeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -90,6 +108,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Text with a line through the middle.</summary>
       </Docs>
@@ -98,6 +117,9 @@
       <MemberSignature Language="C#" Value="Underline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.FontStyle Underline = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.FontStyle.Underline" />
+      <MemberSignature Language="VB.NET" Value="Underline" />
+      <MemberSignature Language="F#" Value="Underline = 4" Usage="System.Drawing.FontStyle.Underline" />
+      <MemberSignature Language="C++ CLI" Value="Underline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -106,6 +128,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.FontStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Underlined text.</summary>
       </Docs>

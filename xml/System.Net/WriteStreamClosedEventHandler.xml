@@ -1,7 +1,10 @@
-<Type Name="WriteStreamClosedEventHandler" FullName="System.Net.WriteStreamClosedEventHandler">
+﻿<Type Name="WriteStreamClosedEventHandler" FullName="System.Net.WriteStreamClosedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void WriteStreamClosedEventHandler(object sender, WriteStreamClosedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WriteStreamClosedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.WriteStreamClosedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub WriteStreamClosedEventHandler(sender As Object, e As WriteStreamClosedEventArgs)" />
+  <TypeSignature Language="F#" Value="type WriteStreamClosedEventHandler = delegate of obj * WriteStreamClosedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void WriteStreamClosedEventHandler(System::Object ^ sender, WriteStreamClosedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

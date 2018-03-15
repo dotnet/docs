@@ -1,7 +1,10 @@
-<Type Name="PagerButtons" FullName="System.Web.UI.WebControls.PagerButtons">
+﻿<Type Name="PagerButtons" FullName="System.Web.UI.WebControls.PagerButtons">
   <TypeSignature Language="C#" Value="public enum PagerButtons" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PagerButtons extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PagerButtons" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PagerButtons" />
+  <TypeSignature Language="F#" Value="type PagerButtons = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PagerButtons" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="NextPrevious" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.PagerButtons NextPrevious = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerButtons.NextPrevious" />
+      <MemberSignature Language="VB.NET" Value="NextPrevious" />
+      <MemberSignature Language="F#" Value="NextPrevious = 0" Usage="System.Web.UI.WebControls.PagerButtons.NextPrevious" />
+      <MemberSignature Language="C++ CLI" Value="NextPrevious" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.PagerButtons</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A set of pagination controls consisting of **Previous** and **Next** buttons.</summary>
       </Docs>
@@ -50,6 +57,9 @@
       <MemberSignature Language="C#" Value="NextPreviousFirstLast" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.PagerButtons NextPreviousFirstLast = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerButtons.NextPreviousFirstLast" />
+      <MemberSignature Language="VB.NET" Value="NextPreviousFirstLast" />
+      <MemberSignature Language="F#" Value="NextPreviousFirstLast = 2" Usage="System.Web.UI.WebControls.PagerButtons.NextPreviousFirstLast" />
+      <MemberSignature Language="C++ CLI" Value="NextPreviousFirstLast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.PagerButtons</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A set of pagination controls consisting of **Previous**, **Next**, **First**, and **Last** buttons.</summary>
       </Docs>
@@ -66,6 +77,9 @@
       <MemberSignature Language="C#" Value="Numeric" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.PagerButtons Numeric = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerButtons.Numeric" />
+      <MemberSignature Language="VB.NET" Value="Numeric" />
+      <MemberSignature Language="F#" Value="Numeric = 1" Usage="System.Web.UI.WebControls.PagerButtons.Numeric" />
+      <MemberSignature Language="C++ CLI" Value="Numeric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.PagerButtons</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A set of pagination controls consisting of numbered link buttons to access pages directly.</summary>
       </Docs>
@@ -82,6 +97,9 @@
       <MemberSignature Language="C#" Value="NumericFirstLast" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.PagerButtons NumericFirstLast = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.PagerButtons.NumericFirstLast" />
+      <MemberSignature Language="VB.NET" Value="NumericFirstLast" />
+      <MemberSignature Language="F#" Value="NumericFirstLast = 3" Usage="System.Web.UI.WebControls.PagerButtons.NumericFirstLast" />
+      <MemberSignature Language="C++ CLI" Value="NumericFirstLast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,6 +108,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.PagerButtons</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A set of pagination controls consisting of numbered and **First** and **Last** link buttons.</summary>
       </Docs>

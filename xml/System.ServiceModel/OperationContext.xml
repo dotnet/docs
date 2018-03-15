@@ -1,7 +1,10 @@
-<Type Name="OperationContext" FullName="System.ServiceModel.OperationContext">
+﻿<Type Name="OperationContext" FullName="System.ServiceModel.OperationContext">
   <TypeSignature Language="C#" Value="public sealed class OperationContext : System.ServiceModel.IExtensibleObject&lt;System.ServiceModel.OperationContext&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OperationContext extends System.Object implements class System.ServiceModel.IExtensibleObject`1&lt;class System.ServiceModel.OperationContext&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.OperationContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OperationContext&#xA;Implements IExtensibleObject(Of OperationContext)" />
+  <TypeSignature Language="F#" Value="type OperationContext = class&#xA;    interface IExtensibleObject&lt;OperationContext&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OperationContext sealed : System::ServiceModel::IExtensibleObject&lt;System::ServiceModel::OperationContext ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -85,6 +88,9 @@
       <MemberSignature Language="C#" Value="public OperationContext (System.ServiceModel.IContextChannel channel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.IContextChannel channel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.OperationContext.#ctor(System.ServiceModel.IContextChannel)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (channel As IContextChannel)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.OperationContext : System.ServiceModel.IContextChannel -&gt; System.ServiceModel.OperationContext" Usage="new System.ServiceModel.OperationContext channel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OperationContext(System::ServiceModel::IContextChannel ^ channel);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -126,6 +132,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.IContextChannel Channel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.IContextChannel Channel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.Channel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Channel As IContextChannel" />
+      <MemberSignature Language="F#" Value="member this.Channel : System.ServiceModel.IContextChannel" Usage="System.ServiceModel.OperationContext.Channel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::IContextChannel ^ Channel { System::ServiceModel::IContextChannel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -149,6 +158,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Claims.ClaimsPrincipal ClaimsPrincipal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Claims.ClaimsPrincipal ClaimsPrincipal" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.ClaimsPrincipal" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClaimsPrincipal As ClaimsPrincipal" />
+      <MemberSignature Language="F#" Value="member this.ClaimsPrincipal : System.Security.Claims.ClaimsPrincipal" Usage="System.ServiceModel.OperationContext.ClaimsPrincipal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Claims::ClaimsPrincipal ^ ClaimsPrincipal { System::Security::Claims::ClaimsPrincipal ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +179,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.OperationContext Current { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.OperationContext Current" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Current As OperationContext" />
+      <MemberSignature Language="F#" Value="member this.Current : System.ServiceModel.OperationContext with get, set" Usage="System.ServiceModel.OperationContext.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::OperationContext ^ Current { System::ServiceModel::OperationContext ^ get(); void set(System::ServiceModel::OperationContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -207,6 +222,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.EndpointDispatcher EndpointDispatcher { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.EndpointDispatcher EndpointDispatcher" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.EndpointDispatcher" />
+      <MemberSignature Language="VB.NET" Value="Public Property EndpointDispatcher As EndpointDispatcher" />
+      <MemberSignature Language="F#" Value="member this.EndpointDispatcher : System.ServiceModel.Dispatcher.EndpointDispatcher with get, set" Usage="System.ServiceModel.OperationContext.EndpointDispatcher" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::EndpointDispatcher ^ EndpointDispatcher { System::ServiceModel::Dispatcher::EndpointDispatcher ^ get(); void set(System::ServiceModel::Dispatcher::EndpointDispatcher ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -225,7 +243,13 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.IExtensionCollection&lt;System.ServiceModel.OperationContext&gt; Extensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.IExtensionCollection`1&lt;class System.ServiceModel.OperationContext&gt; Extensions" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.Extensions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As IExtensionCollection(Of OperationContext)" />
+      <MemberSignature Language="F#" Value="member this.Extensions : System.ServiceModel.IExtensionCollection&lt;System.ServiceModel.OperationContext&gt;" Usage="System.ServiceModel.OperationContext.Extensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::IExtensionCollection&lt;System::ServiceModel::OperationContext ^&gt; ^ Extensions { System::ServiceModel::IExtensionCollection&lt;System::ServiceModel::OperationContext ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.IExtensibleObject`1.Extensions</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -257,6 +281,9 @@
       <MemberSignature Language="C#" Value="public T GetCallbackChannel&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetCallbackChannel&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.OperationContext.GetCallbackChannel``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCallbackChannel(Of T) () As T" />
+      <MemberSignature Language="F#" Value="member this.GetCallbackChannel : unit -&gt; 'T" Usage="operationContext.GetCallbackChannel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetCallbackChannel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -307,6 +334,9 @@
       <MemberSignature Language="C#" Value="public bool HasSupportingTokens { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasSupportingTokens" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.HasSupportingTokens" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasSupportingTokens As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasSupportingTokens : bool" Usage="System.ServiceModel.OperationContext.HasSupportingTokens" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasSupportingTokens { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -326,6 +356,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.ServiceHostBase Host { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.ServiceHostBase Host" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.Host" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Host As ServiceHostBase" />
+      <MemberSignature Language="F#" Value="member this.Host : System.ServiceModel.ServiceHostBase" Usage="System.ServiceModel.OperationContext.Host" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ServiceHostBase ^ Host { System::ServiceModel::ServiceHostBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -344,6 +377,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.MessageHeaders IncomingMessageHeaders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.MessageHeaders IncomingMessageHeaders" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.IncomingMessageHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncomingMessageHeaders As MessageHeaders" />
+      <MemberSignature Language="F#" Value="member this.IncomingMessageHeaders : System.ServiceModel.Channels.MessageHeaders" Usage="System.ServiceModel.OperationContext.IncomingMessageHeaders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::MessageHeaders ^ IncomingMessageHeaders { System::ServiceModel::Channels::MessageHeaders ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -384,6 +420,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.MessageProperties IncomingMessageProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.MessageProperties IncomingMessageProperties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.IncomingMessageProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncomingMessageProperties As MessageProperties" />
+      <MemberSignature Language="F#" Value="member this.IncomingMessageProperties : System.ServiceModel.Channels.MessageProperties" Usage="System.ServiceModel.OperationContext.IncomingMessageProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::MessageProperties ^ IncomingMessageProperties { System::ServiceModel::Channels::MessageProperties ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -416,6 +455,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.MessageVersion IncomingMessageVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.MessageVersion IncomingMessageVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.IncomingMessageVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IncomingMessageVersion As MessageVersion" />
+      <MemberSignature Language="F#" Value="member this.IncomingMessageVersion : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.OperationContext.IncomingMessageVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::MessageVersion ^ IncomingMessageVersion { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -448,6 +490,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.InstanceContext InstanceContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.InstanceContext InstanceContext" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.InstanceContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceContext As InstanceContext" />
+      <MemberSignature Language="F#" Value="member this.InstanceContext : System.ServiceModel.InstanceContext" Usage="System.ServiceModel.OperationContext.InstanceContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::InstanceContext ^ InstanceContext { System::ServiceModel::InstanceContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -474,6 +519,9 @@
       <MemberSignature Language="C#" Value="public bool IsUserContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUserContext" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.IsUserContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUserContext As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsUserContext : bool" Usage="System.ServiceModel.OperationContext.IsUserContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUserContext { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -500,6 +548,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler OperationCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler OperationCompleted" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.OperationContext.OperationCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event OperationCompleted As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.OperationCompleted : EventHandler " Usage="member this.OperationCompleted : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ OperationCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -536,6 +587,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.MessageHeaders OutgoingMessageHeaders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.MessageHeaders OutgoingMessageHeaders" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.OutgoingMessageHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutgoingMessageHeaders As MessageHeaders" />
+      <MemberSignature Language="F#" Value="member this.OutgoingMessageHeaders : System.ServiceModel.Channels.MessageHeaders" Usage="System.ServiceModel.OperationContext.OutgoingMessageHeaders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::MessageHeaders ^ OutgoingMessageHeaders { System::ServiceModel::Channels::MessageHeaders ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -576,6 +630,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.MessageProperties OutgoingMessageProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.MessageProperties OutgoingMessageProperties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.OutgoingMessageProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutgoingMessageProperties As MessageProperties" />
+      <MemberSignature Language="F#" Value="member this.OutgoingMessageProperties : System.ServiceModel.Channels.MessageProperties" Usage="System.ServiceModel.OperationContext.OutgoingMessageProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::MessageProperties ^ OutgoingMessageProperties { System::ServiceModel::Channels::MessageProperties ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -608,6 +665,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.RequestContext RequestContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.RequestContext RequestContext" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.RequestContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequestContext As RequestContext" />
+      <MemberSignature Language="F#" Value="member this.RequestContext : System.ServiceModel.Channels.RequestContext with get, set" Usage="System.ServiceModel.OperationContext.RequestContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::RequestContext ^ RequestContext { System::ServiceModel::Channels::RequestContext ^ get(); void set(System::ServiceModel::Channels::RequestContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -640,6 +700,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.ServiceSecurityContext ServiceSecurityContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.ServiceSecurityContext ServiceSecurityContext" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.ServiceSecurityContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceSecurityContext As ServiceSecurityContext" />
+      <MemberSignature Language="F#" Value="member this.ServiceSecurityContext : System.ServiceModel.ServiceSecurityContext" Usage="System.ServiceModel.OperationContext.ServiceSecurityContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ServiceSecurityContext ^ ServiceSecurityContext { System::ServiceModel::ServiceSecurityContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -658,6 +721,9 @@
       <MemberSignature Language="C#" Value="public string SessionId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SessionId" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.SessionId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionId As String" />
+      <MemberSignature Language="F#" Value="member this.SessionId : string" Usage="System.ServiceModel.OperationContext.SessionId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SessionId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -677,6 +743,9 @@
       <MemberSignature Language="C#" Value="public void SetTransactionComplete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetTransactionComplete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.OperationContext.SetTransactionComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetTransactionComplete ()" />
+      <MemberSignature Language="F#" Value="member this.SetTransactionComplete : unit -&gt; unit" Usage="operationContext.SetTransactionComplete " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetTransactionComplete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -703,6 +772,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt; SupportingTokens { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.ServiceModel.Security.SupportingTokenSpecification&gt; SupportingTokens" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.OperationContext.SupportingTokens" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportingTokens As ICollection(Of SupportingTokenSpecification)" />
+      <MemberSignature Language="F#" Value="member this.SupportingTokens : System.Collections.Generic.ICollection&lt;System.ServiceModel.Security.SupportingTokenSpecification&gt;" Usage="System.ServiceModel.OperationContext.SupportingTokens" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::ServiceModel::Security::SupportingTokenSpecification ^&gt; ^ SupportingTokens { System::Collections::Generic::ICollection&lt;System::ServiceModel::Security::SupportingTokenSpecification ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

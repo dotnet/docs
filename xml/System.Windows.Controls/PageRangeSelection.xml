@@ -1,7 +1,10 @@
-<Type Name="PageRangeSelection" FullName="System.Windows.Controls.PageRangeSelection">
+﻿<Type Name="PageRangeSelection" FullName="System.Windows.Controls.PageRangeSelection">
   <TypeSignature Language="C#" Value="public enum PageRangeSelection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PageRangeSelection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.PageRangeSelection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PageRangeSelection" />
+  <TypeSignature Language="F#" Value="type PageRangeSelection = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PageRangeSelection" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="AllPages" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.PageRangeSelection AllPages = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PageRangeSelection.AllPages" />
+      <MemberSignature Language="VB.NET" Value="AllPages" />
+      <MemberSignature Language="F#" Value="AllPages = 0" Usage="System.Windows.Controls.PageRangeSelection.AllPages" />
+      <MemberSignature Language="C++ CLI" Value="AllPages" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -45,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.PageRangeSelection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>All pages.</summary>
       </Docs>
@@ -53,6 +60,9 @@
       <MemberSignature Language="C#" Value="CurrentPage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.PageRangeSelection CurrentPage = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PageRangeSelection.CurrentPage" />
+      <MemberSignature Language="VB.NET" Value="CurrentPage" />
+      <MemberSignature Language="F#" Value="CurrentPage = 2" Usage="System.Windows.Controls.PageRangeSelection.CurrentPage" />
+      <MemberSignature Language="C++ CLI" Value="CurrentPage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -61,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.PageRangeSelection</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The current page.</summary>
       </Docs>
@@ -69,6 +80,9 @@
       <MemberSignature Language="C#" Value="SelectedPages" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.PageRangeSelection SelectedPages = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PageRangeSelection.SelectedPages" />
+      <MemberSignature Language="VB.NET" Value="SelectedPages" />
+      <MemberSignature Language="F#" Value="SelectedPages = 3" Usage="System.Windows.Controls.PageRangeSelection.SelectedPages" />
+      <MemberSignature Language="C++ CLI" Value="SelectedPages" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.PageRangeSelection</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The selected pages.</summary>
       </Docs>
@@ -85,6 +100,9 @@
       <MemberSignature Language="C#" Value="UserPages" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.PageRangeSelection UserPages = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.PageRangeSelection.UserPages" />
+      <MemberSignature Language="VB.NET" Value="UserPages" />
+      <MemberSignature Language="F#" Value="UserPages = 1" Usage="System.Windows.Controls.PageRangeSelection.UserPages" />
+      <MemberSignature Language="C++ CLI" Value="UserPages" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -93,6 +111,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.PageRangeSelection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A user-specified range of pages.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="BooleanObject" FullName="Microsoft.JScript.BooleanObject">
+﻿<Type Name="BooleanObject" FullName="Microsoft.JScript.BooleanObject">
   <TypeSignature Language="C#" Value="public class BooleanObject : Microsoft.JScript.JSObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BooleanObject extends Microsoft.JScript.JSObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.BooleanObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class BooleanObject&#xA;Inherits JSObject" />
+  <TypeSignature Language="F#" Value="type BooleanObject = class&#xA;    inherit JSObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BooleanObject : Microsoft::JScript::JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +25,9 @@
       <MemberSignature Language="C#" Value="protected BooleanObject (Microsoft.JScript.ScriptObject prototype, Type subType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.ScriptObject prototype, class System.Type subType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BooleanObject.#ctor(Microsoft.JScript.ScriptObject,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (prototype As ScriptObject, subType As Type)" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.BooleanObject : Microsoft.JScript.ScriptObject * Type -&gt; Microsoft.JScript.BooleanObject" Usage="new Microsoft.JScript.BooleanObject (prototype, subType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BooleanObject(Microsoft::JScript::ScriptObject ^ prototype, Type ^ subType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -45,6 +51,9 @@
       <MemberSignature Language="C#" Value="public Type GetType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetType() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.BooleanObject.GetType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetType () As Type" />
+      <MemberSignature Language="F#" Value="override this.GetType : unit -&gt; Type" Usage="booleanObject.GetType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ChannelDataStore" FullName="System.Runtime.Remoting.Channels.ChannelDataStore">
+﻿<Type Name="ChannelDataStore" FullName="System.Runtime.Remoting.Channels.ChannelDataStore">
   <TypeSignature Language="C#" Value="public class ChannelDataStore : System.Runtime.Remoting.Channels.IChannelDataStore" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ChannelDataStore extends System.Object implements class System.Runtime.Remoting.Channels.IChannelDataStore" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.ChannelDataStore" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChannelDataStore&#xA;Implements IChannelDataStore" />
+  <TypeSignature Language="F#" Value="type ChannelDataStore = class&#xA;    interface IChannelDataStore" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChannelDataStore : System::Runtime::Remoting::Channels::IChannelDataStore" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public ChannelDataStore (string[] channelURIs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] channelURIs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ChannelDataStore.#ctor(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (channelURIs As String())" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.ChannelDataStore : string[] -&gt; System.Runtime.Remoting.Channels.ChannelDataStore" Usage="new System.Runtime.Remoting.Channels.ChannelDataStore channelURIs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChannelDataStore(cli::array &lt;System::String ^&gt; ^ channelURIs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -57,6 +63,9 @@
       <MemberSignature Language="C#" Value="public string[] ChannelUris { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ChannelUris" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.ChannelDataStore.ChannelUris" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChannelUris As String()" />
+      <MemberSignature Language="F#" Value="member this.ChannelUris : string[] with get, set" Usage="System.Runtime.Remoting.Channels.ChannelDataStore.ChannelUris" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ChannelUris { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,7 +86,13 @@
       <MemberSignature Language="C#" Value="public object this[object key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(object)" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.ChannelDataStore.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As Object) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : obj with get, set" Usage="System.Runtime.Remoting.Channels.ChannelDataStore.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.Remoting.Channels.IChannelDataStore.Item(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="ActivityStateQueryElementCollection" FullName="System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElementCollection">
+﻿<Type Name="ActivityStateQueryElementCollection" FullName="System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElementCollection">
   <TypeSignature Language="C#" Value="public class ActivityStateQueryElementCollection : System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection&lt;System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityStateQueryElementCollection extends System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1&lt;class System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityStateQueryElementCollection&#xA;Inherits TrackingConfigurationCollection(Of ActivityStateQueryElement)" />
+  <TypeSignature Language="F#" Value="type ActivityStateQueryElementCollection = class&#xA;    inherit TrackingConfigurationCollection&lt;ActivityStateQueryElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityStateQueryElementCollection : System::ServiceModel::Activities::Tracking::Configuration::TrackingConfigurationCollection&lt;System::ServiceModel::Activities::Tracking::Configuration::ActivityStateQueryElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public ActivityStateQueryElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityStateQueryElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="protected override string ElementName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElementCollection.ElementName" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.ServiceModel.Activities.Tracking.Configuration.ActivityStateQueryElementCollection.ElementName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

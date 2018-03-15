@@ -1,7 +1,10 @@
-<Type Name="WorkflowElementDialog" FullName="System.Activities.Presentation.WorkflowElementDialog">
+﻿<Type Name="WorkflowElementDialog" FullName="System.Activities.Presentation.WorkflowElementDialog">
   <TypeSignature Language="C#" Value="public class WorkflowElementDialog : System.Windows.Controls.ContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowElementDialog extends System.Windows.Controls.ContentControl" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowElementDialog" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowElementDialog&#xA;Inherits ContentControl" />
+  <TypeSignature Language="F#" Value="type WorkflowElementDialog = class&#xA;    inherit ContentControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowElementDialog : System::Windows::Controls::ContentControl" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="protected WorkflowElementDialog ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowElementDialog.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowElementDialog();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.EditingContext Context { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.EditingContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.Context" />
+      <MemberSignature Language="VB.NET" Value="Public Property Context As EditingContext" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Activities.Presentation.EditingContext with get, set" Usage="System.Activities.Presentation.WorkflowElementDialog.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::EditingContext ^ Context { System::Activities::Presentation::EditingContext ^ get(); void set(System::Activities::Presentation::EditingContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -59,6 +67,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ContextProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ContextProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowElementDialog.ContextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ContextProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowElementDialog.ContextProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContextProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -76,6 +87,9 @@
       <MemberSignature Language="C#" Value="public bool EnableMaximizeButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableMaximizeButton" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.EnableMaximizeButton" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableMaximizeButton As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableMaximizeButton : bool with get, set" Usage="System.Activities.Presentation.WorkflowElementDialog.EnableMaximizeButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableMaximizeButton { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -95,6 +109,9 @@
       <MemberSignature Language="C#" Value="public bool EnableMinimizeButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableMinimizeButton" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.EnableMinimizeButton" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableMinimizeButton As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableMinimizeButton : bool with get, set" Usage="System.Activities.Presentation.WorkflowElementDialog.EnableMinimizeButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableMinimizeButton { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -114,6 +131,9 @@
       <MemberSignature Language="C#" Value="protected void EnableOk (bool enabled);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EnableOk(bool enabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowElementDialog.EnableOk(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub EnableOk (enabled As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.EnableOk : bool -&gt; unit" Usage="workflowElementDialog.EnableOk enabled" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EnableOk(bool enabled);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -135,6 +155,9 @@
       <MemberSignature Language="C#" Value="public string HelpKeyword { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpKeyword" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.HelpKeyword" />
+      <MemberSignature Language="VB.NET" Value="Public Property HelpKeyword As String" />
+      <MemberSignature Language="F#" Value="member this.HelpKeyword : string with get, set" Usage="System.Activities.Presentation.WorkflowElementDialog.HelpKeyword" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpKeyword { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -153,6 +176,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.Model.ModelItem ModelItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Model.ModelItem ModelItem" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.ModelItem" />
+      <MemberSignature Language="VB.NET" Value="Public Property ModelItem As ModelItem" />
+      <MemberSignature Language="F#" Value="member this.ModelItem : System.Activities.Presentation.Model.ModelItem with get, set" Usage="System.Activities.Presentation.WorkflowElementDialog.ModelItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::Model::ModelItem ^ ModelItem { System::Activities::Presentation::Model::ModelItem ^ get(); void set(System::Activities::Presentation::Model::ModelItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -171,6 +197,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ModelItemProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ModelItemProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowElementDialog.ModelItemProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ModelItemProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ModelItemProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowElementDialog.ModelItemProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ModelItemProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -188,6 +217,9 @@
       <MemberSignature Language="C#" Value="protected override void OnInitialized (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitialized(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowElementDialog.OnInitialized(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInitialized (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnInitialized : EventArgs -&gt; unit" Usage="workflowElementDialog.OnInitialized e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitialized(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -209,6 +241,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnModelItemChanged (object newItem);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnModelItemChanged(object newItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowElementDialog.OnModelItemChanged(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnModelItemChanged (newItem As Object)" />
+      <MemberSignature Language="F#" Value="abstract member OnModelItemChanged : obj -&gt; unit&#xA;override this.OnModelItemChanged : obj -&gt; unit" Usage="workflowElementDialog.OnModelItemChanged newItem" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnModelItemChanged(System::Object ^ newItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -230,6 +265,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnWorkflowElementDialogClosed (Nullable&lt;bool&gt; dialogResult);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWorkflowElementDialogClosed(valuetype System.Nullable`1&lt;bool&gt; dialogResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowElementDialog.OnWorkflowElementDialogClosed(System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnWorkflowElementDialogClosed (dialogResult As Nullable(Of Boolean))" />
+      <MemberSignature Language="F#" Value="abstract member OnWorkflowElementDialogClosed : Nullable&lt;bool&gt; -&gt; unit&#xA;override this.OnWorkflowElementDialogClosed : Nullable&lt;bool&gt; -&gt; unit" Usage="workflowElementDialog.OnWorkflowElementDialogClosed dialogResult" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnWorkflowElementDialogClosed(Nullable&lt;bool&gt; dialogResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -251,6 +289,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.DependencyObject Owner { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyObject Owner" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.Owner" />
+      <MemberSignature Language="VB.NET" Value="Public Property Owner As DependencyObject" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.Windows.DependencyObject with get, set" Usage="System.Activities.Presentation.WorkflowElementDialog.Owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObject ^ Owner { System::Windows::DependencyObject ^ get(); void set(System::Windows::DependencyObject ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -269,6 +310,9 @@
       <MemberSignature Language="C#" Value="public void Show ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowElementDialog.Show" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Show ()" />
+      <MemberSignature Language="F#" Value="member this.Show : unit -&gt; unit" Usage="workflowElementDialog.Show " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -287,6 +331,9 @@
       <MemberSignature Language="C#" Value="public bool ShowOkCancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShowOkCancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.WorkflowElementDialog.ShowOkCancel" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShowOkCancel () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowOkCancel : unit -&gt; bool" Usage="workflowElementDialog.ShowOkCancel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShowOkCancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -307,6 +354,9 @@
       <MemberSignature Language="C#" Value="public string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Activities.Presentation.WorkflowElementDialog.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -325,6 +375,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TitleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TitleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowElementDialog.TitleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TitleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TitleProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowElementDialog.TitleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TitleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -342,6 +395,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.ResizeMode WindowResizeMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.ResizeMode WindowResizeMode" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.WindowResizeMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property WindowResizeMode As ResizeMode" />
+      <MemberSignature Language="F#" Value="member this.WindowResizeMode : System.Windows.ResizeMode with get, set" Usage="System.Activities.Presentation.WorkflowElementDialog.WindowResizeMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ResizeMode WindowResizeMode { System::Windows::ResizeMode get(); void set(System::Windows::ResizeMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -360,6 +416,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty WindowResizeModeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty WindowResizeModeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowElementDialog.WindowResizeModeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WindowResizeModeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable WindowResizeModeProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowElementDialog.WindowResizeModeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ WindowResizeModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -377,6 +436,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.SizeToContent WindowSizeToContent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.SizeToContent WindowSizeToContent" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowElementDialog.WindowSizeToContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property WindowSizeToContent As SizeToContent" />
+      <MemberSignature Language="F#" Value="member this.WindowSizeToContent : System.Windows.SizeToContent with get, set" Usage="System.Activities.Presentation.WorkflowElementDialog.WindowSizeToContent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::SizeToContent WindowSizeToContent { System::Windows::SizeToContent get(); void set(System::Windows::SizeToContent value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -395,6 +457,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty WindowSizeToContentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty WindowSizeToContentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowElementDialog.WindowSizeToContentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WindowSizeToContentProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable WindowSizeToContentProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.WorkflowElementDialog.WindowSizeToContentProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ WindowSizeToContentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

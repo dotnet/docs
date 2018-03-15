@@ -1,7 +1,10 @@
-<Type Name="NameTable" FullName="System.Xml.NameTable">
+﻿<Type Name="NameTable" FullName="System.Xml.NameTable">
   <TypeSignature Language="C#" Value="public class NameTable : System.Xml.XmlNameTable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NameTable extends System.Xml.XmlNameTable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.NameTable" />
+  <TypeSignature Language="VB.NET" Value="Public Class NameTable&#xA;Inherits XmlNameTable" />
+  <TypeSignature Language="F#" Value="type NameTable = class&#xA;    inherit XmlNameTable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NameTable : System::Xml::XmlNameTable" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +52,8 @@
       <MemberSignature Language="C#" Value="public NameTable ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.NameTable.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NameTable();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -102,6 +107,9 @@
       <MemberSignature Language="C#" Value="public override string Add (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string Add(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.NameTable.Add(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Add (key As String) As String" />
+      <MemberSignature Language="F#" Value="override this.Add : string -&gt; string" Usage="nameTable.Add key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ Add(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -145,6 +153,9 @@
       <MemberSignature Language="C#" Value="public override string Add (char[] key, int start, int len);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string Add(char[] key, int32 start, int32 len) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.NameTable.Add(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Add (key As Char(), start As Integer, len As Integer) As String" />
+      <MemberSignature Language="F#" Value="override this.Add : char[] * int * int -&gt; string" Usage="nameTable.Add (key, start, len)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ Add(cli::array &lt;char&gt; ^ key, int start, int len);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -222,6 +233,9 @@
       <MemberSignature Language="C#" Value="public override string Get (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string Get(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.NameTable.Get(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Get (value As String) As String" />
+      <MemberSignature Language="F#" Value="override this.Get : string -&gt; string" Usage="nameTable.Get value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ Get(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -265,6 +279,9 @@
       <MemberSignature Language="C#" Value="public override string Get (char[] key, int start, int len);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string Get(char[] key, int32 start, int32 len) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.NameTable.Get(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Get (key As Char(), start As Integer, len As Integer) As String" />
+      <MemberSignature Language="F#" Value="override this.Get : char[] * int * int -&gt; string" Usage="nameTable.Get (key, start, len)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ Get(cli::array &lt;char&gt; ^ key, int start, int len);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

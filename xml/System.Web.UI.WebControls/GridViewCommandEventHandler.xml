@@ -1,7 +1,10 @@
-<Type Name="GridViewCommandEventHandler" FullName="System.Web.UI.WebControls.GridViewCommandEventHandler">
+﻿<Type Name="GridViewCommandEventHandler" FullName="System.Web.UI.WebControls.GridViewCommandEventHandler">
   <TypeSignature Language="C#" Value="public delegate void GridViewCommandEventHandler(object sender, GridViewCommandEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridViewCommandEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewCommandEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub GridViewCommandEventHandler(sender As Object, e As GridViewCommandEventArgs)" />
+  <TypeSignature Language="F#" Value="type GridViewCommandEventHandler = delegate of obj * GridViewCommandEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void GridViewCommandEventHandler(System::Object ^ sender, GridViewCommandEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

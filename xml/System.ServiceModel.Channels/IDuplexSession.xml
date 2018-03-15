@@ -1,7 +1,10 @@
-<Type Name="IDuplexSession" FullName="System.ServiceModel.Channels.IDuplexSession">
+﻿<Type Name="IDuplexSession" FullName="System.ServiceModel.Channels.IDuplexSession">
   <TypeSignature Language="C#" Value="public interface IDuplexSession : System.ServiceModel.Channels.IInputSession, System.ServiceModel.Channels.IOutputSession" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDuplexSession implements class System.ServiceModel.Channels.IInputSession, class System.ServiceModel.Channels.IOutputSession, class System.ServiceModel.Channels.ISession" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IDuplexSession" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDuplexSession&#xA;Implements IInputSession, IOutputSession" />
+  <TypeSignature Language="F#" Value="type IDuplexSession = interface&#xA;    interface IInputSession&#xA;    interface IOutputSession&#xA;    interface ISession" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDuplexSession : System::ServiceModel::Channels::IInputSession, System::ServiceModel::Channels::IOutputSession" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,10 +38,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="BeginCloseOutputSession">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to terminate the outbound session.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginCloseOutputSession">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginCloseOutputSession (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginCloseOutputSession(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IDuplexSession.BeginCloseOutputSession(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginCloseOutputSession (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginCloseOutputSession : AsyncCallback * obj -&gt; IAsyncResult" Usage="iDuplexSession.BeginCloseOutputSession (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginCloseOutputSession(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -77,6 +93,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginCloseOutputSession (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginCloseOutputSession(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IDuplexSession.BeginCloseOutputSession(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginCloseOutputSession (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginCloseOutputSession : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="iDuplexSession.BeginCloseOutputSession (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginCloseOutputSession(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,10 +132,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CloseOutputSession">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Terminates the outbound session that indicates that no more messages will be sent from this endpoint on the channel associated with the session.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CloseOutputSession">
       <MemberSignature Language="C#" Value="public void CloseOutputSession ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CloseOutputSession() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IDuplexSession.CloseOutputSession" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CloseOutputSession ()" />
+      <MemberSignature Language="F#" Value="abstract member CloseOutputSession : unit -&gt; unit" Usage="iDuplexSession.CloseOutputSession " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseOutputSession();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -165,6 +197,9 @@
       <MemberSignature Language="C#" Value="public void CloseOutputSession (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CloseOutputSession(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IDuplexSession.CloseOutputSession(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CloseOutputSession (timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="abstract member CloseOutputSession : TimeSpan -&gt; unit" Usage="iDuplexSession.CloseOutputSession timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseOutputSession(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -216,6 +251,9 @@
       <MemberSignature Language="C#" Value="public void EndCloseOutputSession (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndCloseOutputSession(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.IDuplexSession.EndCloseOutputSession(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndCloseOutputSession (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndCloseOutputSession : IAsyncResult -&gt; unit" Usage="iDuplexSession.EndCloseOutputSession result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndCloseOutputSession(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -247,25 +285,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="BeginCloseOutputSession">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation to terminate the outbound session.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CloseOutputSession">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Terminates the outbound session that indicates that no more messages will be sent from this endpoint on the channel associated with the session.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

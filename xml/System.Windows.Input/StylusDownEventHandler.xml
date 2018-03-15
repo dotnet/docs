@@ -1,7 +1,10 @@
-<Type Name="StylusDownEventHandler" FullName="System.Windows.Input.StylusDownEventHandler">
+﻿<Type Name="StylusDownEventHandler" FullName="System.Windows.Input.StylusDownEventHandler">
   <TypeSignature Language="C#" Value="public delegate void StylusDownEventHandler(object sender, StylusDownEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StylusDownEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusDownEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub StylusDownEventHandler(sender As Object, e As StylusDownEventArgs)" />
+  <TypeSignature Language="F#" Value="type StylusDownEventHandler = delegate of obj * StylusDownEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void StylusDownEventHandler(System::Object ^ sender, StylusDownEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

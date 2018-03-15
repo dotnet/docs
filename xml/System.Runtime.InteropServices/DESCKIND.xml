@@ -1,7 +1,10 @@
-<Type Name="DESCKIND" FullName="System.Runtime.InteropServices.DESCKIND">
+﻿<Type Name="DESCKIND" FullName="System.Runtime.InteropServices.DESCKIND">
   <TypeSignature Language="C#" Value="public enum DESCKIND" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed DESCKIND extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.DESCKIND" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DESCKIND" />
+  <TypeSignature Language="F#" Value="type DESCKIND = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DESCKIND" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="DESCKIND_FUNCDESC" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DESCKIND DESCKIND_FUNCDESC = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DESCKIND.DESCKIND_FUNCDESC" />
+      <MemberSignature Language="VB.NET" Value="DESCKIND_FUNCDESC" />
+      <MemberSignature Language="F#" Value="DESCKIND_FUNCDESC = 1" Usage="System.Runtime.InteropServices.DESCKIND.DESCKIND_FUNCDESC" />
+      <MemberSignature Language="C++ CLI" Value="DESCKIND_FUNCDESC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -40,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that a <see cref="T:System.Runtime.InteropServices.FUNCDESC" /> was returned.</summary>
       </Docs>
@@ -48,6 +55,9 @@
       <MemberSignature Language="C#" Value="DESCKIND_IMPLICITAPPOBJ" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DESCKIND DESCKIND_IMPLICITAPPOBJ = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DESCKIND.DESCKIND_IMPLICITAPPOBJ" />
+      <MemberSignature Language="VB.NET" Value="DESCKIND_IMPLICITAPPOBJ" />
+      <MemberSignature Language="F#" Value="DESCKIND_IMPLICITAPPOBJ = 4" Usage="System.Runtime.InteropServices.DESCKIND.DESCKIND_IMPLICITAPPOBJ" />
+      <MemberSignature Language="C++ CLI" Value="DESCKIND_IMPLICITAPPOBJ" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -57,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that an <see langword="IMPLICITAPPOBJ" /> was returned.</summary>
       </Docs>
@@ -65,6 +76,9 @@
       <MemberSignature Language="C#" Value="DESCKIND_MAX" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DESCKIND DESCKIND_MAX = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DESCKIND.DESCKIND_MAX" />
+      <MemberSignature Language="VB.NET" Value="DESCKIND_MAX" />
+      <MemberSignature Language="F#" Value="DESCKIND_MAX = 5" Usage="System.Runtime.InteropServices.DESCKIND.DESCKIND_MAX" />
+      <MemberSignature Language="C++ CLI" Value="DESCKIND_MAX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Indicates an end of enumeration marker.</summary>
       </Docs>
@@ -82,6 +97,9 @@
       <MemberSignature Language="C#" Value="DESCKIND_NONE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DESCKIND DESCKIND_NONE = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DESCKIND.DESCKIND_NONE" />
+      <MemberSignature Language="VB.NET" Value="DESCKIND_NONE" />
+      <MemberSignature Language="F#" Value="DESCKIND_NONE = 0" Usage="System.Runtime.InteropServices.DESCKIND.DESCKIND_NONE" />
+      <MemberSignature Language="C++ CLI" Value="DESCKIND_NONE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -91,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that no match was found.</summary>
       </Docs>
@@ -99,6 +118,9 @@
       <MemberSignature Language="C#" Value="DESCKIND_TYPECOMP" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DESCKIND DESCKIND_TYPECOMP = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DESCKIND.DESCKIND_TYPECOMP" />
+      <MemberSignature Language="VB.NET" Value="DESCKIND_TYPECOMP" />
+      <MemberSignature Language="F#" Value="DESCKIND_TYPECOMP = 3" Usage="System.Runtime.InteropServices.DESCKIND.DESCKIND_TYPECOMP" />
+      <MemberSignature Language="C++ CLI" Value="DESCKIND_TYPECOMP" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -108,6 +130,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates that a <see langword="TYPECOMP" /> was returned.</summary>
       </Docs>
@@ -116,6 +139,9 @@
       <MemberSignature Language="C#" Value="DESCKIND_VARDESC" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DESCKIND DESCKIND_VARDESC = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DESCKIND.DESCKIND_VARDESC" />
+      <MemberSignature Language="VB.NET" Value="DESCKIND_VARDESC" />
+      <MemberSignature Language="F#" Value="DESCKIND_VARDESC = 2" Usage="System.Runtime.InteropServices.DESCKIND.DESCKIND_VARDESC" />
+      <MemberSignature Language="C++ CLI" Value="DESCKIND_VARDESC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -125,6 +151,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DESCKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that a <see langword="VARDESC" /> was returned.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="RoutedEventHandler" FullName="System.Windows.RoutedEventHandler">
+﻿<Type Name="RoutedEventHandler" FullName="System.Windows.RoutedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void RoutedEventHandler(object sender, RoutedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RoutedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.RoutedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub RoutedEventHandler(sender As Object, e As RoutedEventArgs)" />
+  <TypeSignature Language="F#" Value="type RoutedEventHandler = delegate of obj * RoutedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void RoutedEventHandler(System::Object ^ sender, RoutedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

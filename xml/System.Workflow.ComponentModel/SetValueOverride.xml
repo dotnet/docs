@@ -1,7 +1,10 @@
-<Type Name="SetValueOverride" FullName="System.Workflow.ComponentModel.SetValueOverride">
+﻿<Type Name="SetValueOverride" FullName="System.Workflow.ComponentModel.SetValueOverride">
   <TypeSignature Language="C#" Value="public delegate void SetValueOverride(DependencyObject d, object value);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SetValueOverride extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.SetValueOverride" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub SetValueOverride(d As DependencyObject, value As Object)" />
+  <TypeSignature Language="F#" Value="type SetValueOverride = delegate of DependencyObject * obj -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void SetValueOverride(DependencyObject ^ d, System::Object ^ value);" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

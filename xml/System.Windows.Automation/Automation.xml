@@ -1,7 +1,10 @@
-<Type Name="Automation" FullName="System.Windows.Automation.Automation">
+﻿<Type Name="Automation" FullName="System.Windows.Automation.Automation">
   <TypeSignature Language="C#" Value="public static class Automation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Automation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Automation" />
+  <TypeSignature Language="VB.NET" Value="Public Class Automation" />
+  <TypeSignature Language="F#" Value="type Automation = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Automation abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public static void AddAutomationEventHandler (System.Windows.Automation.AutomationEvent eventId, System.Windows.Automation.AutomationElement element, System.Windows.Automation.TreeScope scope, System.Windows.Automation.AutomationEventHandler eventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddAutomationEventHandler(class System.Windows.Automation.AutomationEvent eventId, class System.Windows.Automation.AutomationElement element, valuetype System.Windows.Automation.TreeScope scope, class System.Windows.Automation.AutomationEventHandler eventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Automation.AddAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddAutomationEventHandler (eventId As AutomationEvent, element As AutomationElement, scope As TreeScope, eventHandler As AutomationEventHandler)" />
+      <MemberSignature Language="F#" Value="static member AddAutomationEventHandler : System.Windows.Automation.AutomationEvent * System.Windows.Automation.AutomationElement * System.Windows.Automation.TreeScope * System.Windows.Automation.AutomationEventHandler -&gt; unit" Usage="System.Windows.Automation.Automation.AddAutomationEventHandler (eventId, element, scope, eventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddAutomationEventHandler(System::Windows::Automation::AutomationEvent ^ eventId, System::Windows::Automation::AutomationElement ^ element, System::Windows::Automation::TreeScope scope, System::Windows::Automation::AutomationEventHandler ^ eventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -59,6 +65,9 @@
       <MemberSignature Language="C#" Value="public static void AddAutomationFocusChangedEventHandler (System.Windows.Automation.AutomationFocusChangedEventHandler eventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddAutomationFocusChangedEventHandler(class System.Windows.Automation.AutomationFocusChangedEventHandler eventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler(System.Windows.Automation.AutomationFocusChangedEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddAutomationFocusChangedEventHandler (eventHandler As AutomationFocusChangedEventHandler)" />
+      <MemberSignature Language="F#" Value="static member AddAutomationFocusChangedEventHandler : System.Windows.Automation.AutomationFocusChangedEventHandler -&gt; unit" Usage="System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler eventHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddAutomationFocusChangedEventHandler(System::Windows::Automation::AutomationFocusChangedEventHandler ^ eventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -101,6 +110,9 @@
       <MemberSignature Language="C#" Value="public static void AddAutomationPropertyChangedEventHandler (System.Windows.Automation.AutomationElement element, System.Windows.Automation.TreeScope scope, System.Windows.Automation.AutomationPropertyChangedEventHandler eventHandler, params System.Windows.Automation.AutomationProperty[] properties);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddAutomationPropertyChangedEventHandler(class System.Windows.Automation.AutomationElement element, valuetype System.Windows.Automation.TreeScope scope, class System.Windows.Automation.AutomationPropertyChangedEventHandler eventHandler, class System.Windows.Automation.AutomationProperty[] properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.AutomationPropertyChangedEventHandler,System.Windows.Automation.AutomationProperty[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddAutomationPropertyChangedEventHandler (element As AutomationElement, scope As TreeScope, eventHandler As AutomationPropertyChangedEventHandler, ParamArray properties As AutomationProperty())" />
+      <MemberSignature Language="F#" Value="static member AddAutomationPropertyChangedEventHandler : System.Windows.Automation.AutomationElement * System.Windows.Automation.TreeScope * System.Windows.Automation.AutomationPropertyChangedEventHandler * System.Windows.Automation.AutomationProperty[] -&gt; unit" Usage="System.Windows.Automation.Automation.AddAutomationPropertyChangedEventHandler (element, scope, eventHandler, properties)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddAutomationPropertyChangedEventHandler(System::Windows::Automation::AutomationElement ^ element, System::Windows::Automation::TreeScope scope, System::Windows::Automation::AutomationPropertyChangedEventHandler ^ eventHandler, ... cli::array &lt;System::Windows::Automation::AutomationProperty ^&gt; ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -155,6 +167,9 @@
       <MemberSignature Language="C#" Value="public static void AddStructureChangedEventHandler (System.Windows.Automation.AutomationElement element, System.Windows.Automation.TreeScope scope, System.Windows.Automation.StructureChangedEventHandler eventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddStructureChangedEventHandler(class System.Windows.Automation.AutomationElement element, valuetype System.Windows.Automation.TreeScope scope, class System.Windows.Automation.StructureChangedEventHandler eventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Automation.AddStructureChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.TreeScope,System.Windows.Automation.StructureChangedEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddStructureChangedEventHandler (element As AutomationElement, scope As TreeScope, eventHandler As StructureChangedEventHandler)" />
+      <MemberSignature Language="F#" Value="static member AddStructureChangedEventHandler : System.Windows.Automation.AutomationElement * System.Windows.Automation.TreeScope * System.Windows.Automation.StructureChangedEventHandler -&gt; unit" Usage="System.Windows.Automation.Automation.AddStructureChangedEventHandler (element, scope, eventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddStructureChangedEventHandler(System::Windows::Automation::AutomationElement ^ element, System::Windows::Automation::TreeScope scope, System::Windows::Automation::StructureChangedEventHandler ^ eventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -199,10 +214,22 @@
         <altmember cref="M:System.Windows.Automation.Automation.AddAutomationFocusChangedEventHandler(System.Windows.Automation.AutomationFocusChangedEventHandler)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Compare">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the specified parameters to determine whether they refer to the same user interface (UI) element.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Compare">
       <MemberSignature Language="C#" Value="public static bool Compare (int[] runtimeId1, int[] runtimeId2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Compare(int32[] runtimeId1, int32[] runtimeId2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Automation.Compare(System.Int32[],System.Int32[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (runtimeId1 As Integer(), runtimeId2 As Integer()) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Compare : int[] * int[] -&gt; bool" Usage="System.Windows.Automation.Automation.Compare (runtimeId1, runtimeId2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Compare(cli::array &lt;int&gt; ^ runtimeId1, cli::array &lt;int&gt; ^ runtimeId2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -244,6 +271,9 @@
       <MemberSignature Language="C#" Value="public static bool Compare (System.Windows.Automation.AutomationElement el1, System.Windows.Automation.AutomationElement el2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Compare(class System.Windows.Automation.AutomationElement el1, class System.Windows.Automation.AutomationElement el2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Automation.Compare(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare (el1 As AutomationElement, el2 As AutomationElement) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Compare : System.Windows.Automation.AutomationElement * System.Windows.Automation.AutomationElement -&gt; bool" Usage="System.Windows.Automation.Automation.Compare (el1, el2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Compare(System::Windows::Automation::AutomationElement ^ el1, System::Windows::Automation::AutomationElement ^ el2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -279,6 +309,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.Condition ContentViewCondition;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.Condition ContentViewCondition" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Automation.ContentViewCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentViewCondition As Condition " />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentViewCondition : System.Windows.Automation.Condition" Usage="System.Windows.Automation.Automation.ContentViewCondition" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::Condition ^ ContentViewCondition;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -308,6 +341,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.Condition ControlViewCondition;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.Condition ControlViewCondition" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Automation.ControlViewCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ControlViewCondition As Condition " />
+      <MemberSignature Language="F#" Value=" staticval mutable ControlViewCondition : System.Windows.Automation.Condition" Usage="System.Windows.Automation.Automation.ControlViewCondition" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::Condition ^ ControlViewCondition;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -337,6 +373,9 @@
       <MemberSignature Language="C#" Value="public static string PatternName (System.Windows.Automation.AutomationPattern pattern);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PatternName(class System.Windows.Automation.AutomationPattern pattern) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Automation.PatternName(System.Windows.Automation.AutomationPattern)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PatternName (pattern As AutomationPattern) As String" />
+      <MemberSignature Language="F#" Value="static member PatternName : System.Windows.Automation.AutomationPattern -&gt; string" Usage="System.Windows.Automation.Automation.PatternName pattern" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PatternName(System::Windows::Automation::AutomationPattern ^ pattern);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -372,6 +411,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyName (System.Windows.Automation.AutomationProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string PropertyName(class System.Windows.Automation.AutomationProperty property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Automation.PropertyName(System.Windows.Automation.AutomationProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PropertyName (property As AutomationProperty) As String" />
+      <MemberSignature Language="F#" Value="static member PropertyName : System.Windows.Automation.AutomationProperty -&gt; string" Usage="System.Windows.Automation.Automation.PropertyName property" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ PropertyName(System::Windows::Automation::AutomationProperty ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -404,6 +446,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.Condition RawViewCondition;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.Condition RawViewCondition" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Automation.RawViewCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RawViewCondition As Condition " />
+      <MemberSignature Language="F#" Value=" staticval mutable RawViewCondition : System.Windows.Automation.Condition" Usage="System.Windows.Automation.Automation.RawViewCondition" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::Condition ^ RawViewCondition;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -430,6 +475,9 @@
       <MemberSignature Language="C#" Value="public static void RemoveAllEventHandlers ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveAllEventHandlers() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Automation.RemoveAllEventHandlers" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveAllEventHandlers ()" />
+      <MemberSignature Language="F#" Value="static member RemoveAllEventHandlers : unit -&gt; unit" Usage="System.Windows.Automation.Automation.RemoveAllEventHandlers " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveAllEventHandlers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -452,6 +500,9 @@
       <MemberSignature Language="C#" Value="public static void RemoveAutomationEventHandler (System.Windows.Automation.AutomationEvent eventId, System.Windows.Automation.AutomationElement element, System.Windows.Automation.AutomationEventHandler eventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveAutomationEventHandler(class System.Windows.Automation.AutomationEvent eventId, class System.Windows.Automation.AutomationElement element, class System.Windows.Automation.AutomationEventHandler eventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Automation.RemoveAutomationEventHandler(System.Windows.Automation.AutomationEvent,System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveAutomationEventHandler (eventId As AutomationEvent, element As AutomationElement, eventHandler As AutomationEventHandler)" />
+      <MemberSignature Language="F#" Value="static member RemoveAutomationEventHandler : System.Windows.Automation.AutomationEvent * System.Windows.Automation.AutomationElement * System.Windows.Automation.AutomationEventHandler -&gt; unit" Usage="System.Windows.Automation.Automation.RemoveAutomationEventHandler (eventId, element, eventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveAutomationEventHandler(System::Windows::Automation::AutomationEvent ^ eventId, System::Windows::Automation::AutomationElement ^ element, System::Windows::Automation::AutomationEventHandler ^ eventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -488,6 +539,9 @@
       <MemberSignature Language="C#" Value="public static void RemoveAutomationFocusChangedEventHandler (System.Windows.Automation.AutomationFocusChangedEventHandler eventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveAutomationFocusChangedEventHandler(class System.Windows.Automation.AutomationFocusChangedEventHandler eventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Automation.RemoveAutomationFocusChangedEventHandler(System.Windows.Automation.AutomationFocusChangedEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveAutomationFocusChangedEventHandler (eventHandler As AutomationFocusChangedEventHandler)" />
+      <MemberSignature Language="F#" Value="static member RemoveAutomationFocusChangedEventHandler : System.Windows.Automation.AutomationFocusChangedEventHandler -&gt; unit" Usage="System.Windows.Automation.Automation.RemoveAutomationFocusChangedEventHandler eventHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveAutomationFocusChangedEventHandler(System::Windows::Automation::AutomationFocusChangedEventHandler ^ eventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -520,6 +574,9 @@
       <MemberSignature Language="C#" Value="public static void RemoveAutomationPropertyChangedEventHandler (System.Windows.Automation.AutomationElement element, System.Windows.Automation.AutomationPropertyChangedEventHandler eventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveAutomationPropertyChangedEventHandler(class System.Windows.Automation.AutomationElement element, class System.Windows.Automation.AutomationPropertyChangedEventHandler eventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Automation.RemoveAutomationPropertyChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.AutomationPropertyChangedEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveAutomationPropertyChangedEventHandler (element As AutomationElement, eventHandler As AutomationPropertyChangedEventHandler)" />
+      <MemberSignature Language="F#" Value="static member RemoveAutomationPropertyChangedEventHandler : System.Windows.Automation.AutomationElement * System.Windows.Automation.AutomationPropertyChangedEventHandler -&gt; unit" Usage="System.Windows.Automation.Automation.RemoveAutomationPropertyChangedEventHandler (element, eventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveAutomationPropertyChangedEventHandler(System::Windows::Automation::AutomationElement ^ element, System::Windows::Automation::AutomationPropertyChangedEventHandler ^ eventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -554,6 +611,9 @@
       <MemberSignature Language="C#" Value="public static void RemoveStructureChangedEventHandler (System.Windows.Automation.AutomationElement element, System.Windows.Automation.StructureChangedEventHandler eventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveStructureChangedEventHandler(class System.Windows.Automation.AutomationElement element, class System.Windows.Automation.StructureChangedEventHandler eventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Automation.RemoveStructureChangedEventHandler(System.Windows.Automation.AutomationElement,System.Windows.Automation.StructureChangedEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveStructureChangedEventHandler (element As AutomationElement, eventHandler As StructureChangedEventHandler)" />
+      <MemberSignature Language="F#" Value="static member RemoveStructureChangedEventHandler : System.Windows.Automation.AutomationElement * System.Windows.Automation.StructureChangedEventHandler -&gt; unit" Usage="System.Windows.Automation.Automation.RemoveStructureChangedEventHandler (element, eventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveStructureChangedEventHandler(System::Windows::Automation::AutomationElement ^ element, System::Windows::Automation::StructureChangedEventHandler ^ eventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -574,14 +634,5 @@
         <altmember cref="M:System.Windows.Automation.Automation.RemoveAllEventHandlers" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Compare">
-      <AssemblyInfo>
-        <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares the specified parameters to determine whether they refer to the same user interface (UI) element.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

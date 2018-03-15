@@ -1,7 +1,10 @@
-<Type Name="TransformerInfoCollection" FullName="System.Web.Configuration.TransformerInfoCollection">
+﻿<Type Name="TransformerInfoCollection" FullName="System.Web.Configuration.TransformerInfoCollection">
   <TypeSignature Language="C#" Value="public sealed class TransformerInfoCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TransformerInfoCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TransformerInfoCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransformerInfoCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type TransformerInfoCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransformerInfoCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +65,8 @@
       <MemberSignature Language="C#" Value="public TransformerInfoCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TransformerInfoCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransformerInfoCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +90,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.Web.Configuration.TransformerInfo transformerInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Configuration.TransformerInfo transformerInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TransformerInfoCollection.Add(System.Web.Configuration.TransformerInfo)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.TransformerInfo -&gt; unit" Usage="transformerInfoCollection.Add transformerInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::TransformerInfo ^ transformerInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -128,6 +135,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TransformerInfoCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="transformerInfoCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -162,6 +172,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TransformerInfoCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="transformerInfoCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -181,6 +194,9 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TransformerInfoCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="transformerInfoCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -203,6 +219,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.TransformerInfo this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.TransformerInfo Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TransformerInfoCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As TransformerInfo" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.TransformerInfo with get, set" Usage="System.Web.Configuration.TransformerInfoCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::TransformerInfo ^ default[int] { System::Web::Configuration::TransformerInfo ^ get(int index); void set(int index, System::Web::Configuration::TransformerInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -241,6 +260,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.TransformerInfoCollection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.TransformerInfoCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -259,6 +281,9 @@
       <MemberSignature Language="C#" Value="public void Remove (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TransformerInfoCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (s As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="transformerInfoCollection.Remove s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -296,6 +321,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.TransformerInfoCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="transformerInfoCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

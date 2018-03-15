@@ -1,7 +1,10 @@
-<Type Name="QueueEventArgs" FullName="System.Workflow.ComponentModel.QueueEventArgs">
+﻿<Type Name="QueueEventArgs" FullName="System.Workflow.ComponentModel.QueueEventArgs">
   <TypeSignature Language="C#" Value="public class QueueEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit QueueEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.QueueEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class QueueEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type QueueEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class QueueEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public IComparable QueueName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IComparable QueueName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.QueueEventArgs.QueueName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueueName As IComparable" />
+      <MemberSignature Language="F#" Value="member this.QueueName : IComparable" Usage="System.Workflow.ComponentModel.QueueEventArgs.QueueName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IComparable ^ QueueName { IComparable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

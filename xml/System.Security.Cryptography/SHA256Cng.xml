@@ -1,7 +1,10 @@
-<Type Name="SHA256Cng" FullName="System.Security.Cryptography.SHA256Cng">
+﻿<Type Name="SHA256Cng" FullName="System.Security.Cryptography.SHA256Cng">
   <TypeSignature Language="C#" Value="public sealed class SHA256Cng : System.Security.Cryptography.SHA256" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SHA256Cng extends System.Security.Cryptography.SHA256" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SHA256Cng" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SHA256Cng&#xA;Inherits SHA256" />
+  <TypeSignature Language="F#" Value="type SHA256Cng = class&#xA;    inherit SHA256" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SHA256Cng sealed : System::Security::Cryptography::SHA256" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public SHA256Cng ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Cng.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SHA256Cng();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -46,6 +51,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Cng.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="sHA256Cng.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -72,6 +80,9 @@
       <MemberSignature Language="C#" Value="protected override void HashCore (byte[] array, int ibStart, int cbSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void HashCore(unsigned int8[] array, int32 ibStart, int32 cbSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Cng.HashCore(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HashCore (array As Byte(), ibStart As Integer, cbSize As Integer)" />
+      <MemberSignature Language="F#" Value="override this.HashCore : byte[] * int * int -&gt; unit" Usage="sHA256Cng.HashCore (array, ibStart, cbSize)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HashCore(cli::array &lt;System::Byte&gt; ^ array, int ibStart, int cbSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -102,6 +113,9 @@
       <MemberSignature Language="C#" Value="protected override byte[] HashFinal ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance unsigned int8[] HashFinal() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Cng.HashFinal" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashFinal () As Byte()" />
+      <MemberSignature Language="F#" Value="override this.HashFinal : unit -&gt; byte[]" Usage="sHA256Cng.HashFinal " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashFinal();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -126,6 +140,9 @@
       <MemberSignature Language="C#" Value="public override void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA256Cng.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
+      <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="sHA256Cng.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

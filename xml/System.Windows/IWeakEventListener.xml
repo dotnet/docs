@@ -1,7 +1,10 @@
-<Type Name="IWeakEventListener" FullName="System.Windows.IWeakEventListener">
+﻿<Type Name="IWeakEventListener" FullName="System.Windows.IWeakEventListener">
   <TypeSignature Language="C#" Value="public interface IWeakEventListener" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWeakEventListener" />
   <TypeSignature Language="DocId" Value="T:System.Windows.IWeakEventListener" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWeakEventListener" />
+  <TypeSignature Language="F#" Value="type IWeakEventListener = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWeakEventListener" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public bool ReceiveWeakEvent (Type managerType, object sender, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ReceiveWeakEvent(class System.Type managerType, object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.IWeakEventListener.ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReceiveWeakEvent (managerType As Type, sender As Object, e As EventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ReceiveWeakEvent : Type * obj * EventArgs -&gt; bool" Usage="iWeakEventListener.ReceiveWeakEvent (managerType, sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ReceiveWeakEvent(Type ^ managerType, System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

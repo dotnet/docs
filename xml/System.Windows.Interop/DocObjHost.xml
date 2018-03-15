@@ -1,7 +1,10 @@
-<Type Name="DocObjHost" FullName="System.Windows.Interop.DocObjHost">
+﻿<Type Name="DocObjHost" FullName="System.Windows.Interop.DocObjHost">
   <TypeSignature Language="C#" Value="public sealed class DocObjHost : MarshalByRefObject, IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DocObjHost extends System.MarshalByRefObject implements class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.DocObjHost" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DocObjHost&#xA;Inherits MarshalByRefObject&#xA;Implements IServiceProvider" />
+  <TypeSignature Language="F#" Value="type DocObjHost = class&#xA;    inherit MarshalByRefObject&#xA;    interface IServiceProvider&#xA;    interface IHostService&#xA;    interface IBrowserHostServices&#xA;    interface IByteRangeDownloaderService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DocObjHost sealed : MarshalByRefObject, IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,8 @@
       <MemberSignature Language="C#" Value="public DocObjHost ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.DocObjHost.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DocObjHost();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -53,6 +58,9 @@
       <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.DocObjHost.InitializeLifetimeService" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="docObjHost.InitializeLifetimeService " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +85,8 @@
       <MemberSignature Language="C#" Value="object IServiceProvider.GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.IServiceProvider.GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.DocObjHost.System#IServiceProvider#GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Function GetService (serviceType As Type) As Object Implements IServiceProvider.GetService" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.IServiceProvider.GetService(Type ^ serviceType) = IServiceProvider::GetService;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

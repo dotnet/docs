@@ -1,7 +1,10 @@
-<Type Name="TrackingConfigurationElement" FullName="System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement">
+﻿<Type Name="TrackingConfigurationElement" FullName="System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement">
   <TypeSignature Language="C#" Value="public abstract class TrackingConfigurationElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TrackingConfigurationElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TrackingConfigurationElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type TrackingConfigurationElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TrackingConfigurationElement abstract : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="protected TrackingConfigurationElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TrackingConfigurationElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public abstract object ElementKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ElementKey" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement.ElementKey" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ElementKey As Object" />
+      <MemberSignature Language="F#" Value="member this.ElementKey : obj" Usage="System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement.ElementKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ ElementKey { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -52,6 +60,9 @@
       <MemberSignature Language="C#" Value="protected static string GetStringPairKey (string value1, string value2);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string GetStringPairKey(string value1, string value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement.GetStringPairKey(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function GetStringPairKey (value1 As String, value2 As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetStringPairKey : string * string -&gt; string" Usage="System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationElement.GetStringPairKey (value1, value2)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ GetStringPairKey(System::String ^ value1, System::String ^ value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

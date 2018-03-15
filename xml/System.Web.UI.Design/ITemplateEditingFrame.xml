@@ -1,7 +1,10 @@
-<Type Name="ITemplateEditingFrame" FullName="System.Web.UI.Design.ITemplateEditingFrame">
+﻿<Type Name="ITemplateEditingFrame" FullName="System.Web.UI.Design.ITemplateEditingFrame">
   <TypeSignature Language="C#" Value="public interface ITemplateEditingFrame : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITemplateEditingFrame implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.ITemplateEditingFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITemplateEditingFrame&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type ITemplateEditingFrame = interface&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITemplateEditingFrame : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="public void Close (bool saveChanges);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close(bool saveChanges) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ITemplateEditingFrame.Close(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close (saveChanges As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Close : bool -&gt; unit" Usage="iTemplateEditingFrame.Close saveChanges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close(bool saveChanges);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -73,6 +79,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style ControlStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style ControlStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ITemplateEditingFrame.ControlStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ControlStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.ControlStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.Design.ITemplateEditingFrame.ControlStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ ControlStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -103,6 +112,9 @@
       <MemberSignature Language="C#" Value="public int InitialHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 InitialHeight" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ITemplateEditingFrame.InitialHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property InitialHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.InitialHeight : int with get, set" Usage="System.Web.UI.Design.ITemplateEditingFrame.InitialHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InitialHeight { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -132,6 +144,9 @@
       <MemberSignature Language="C#" Value="public int InitialWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 InitialWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ITemplateEditingFrame.InitialWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property InitialWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.InitialWidth : int with get, set" Usage="System.Web.UI.Design.ITemplateEditingFrame.InitialWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InitialWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -161,6 +176,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ITemplateEditingFrame.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.UI.Design.ITemplateEditingFrame.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -190,6 +208,9 @@
       <MemberSignature Language="C#" Value="public void Open ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ITemplateEditingFrame.Open" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
+      <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; unit" Usage="iTemplateEditingFrame.Open " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -208,6 +229,9 @@
       <MemberSignature Language="C#" Value="public void Resize (int width, int height);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Resize(int32 width, int32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ITemplateEditingFrame.Resize(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Resize (width As Integer, height As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Resize : int * int -&gt; unit" Usage="iTemplateEditingFrame.Resize (width, height)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resize(int width, int height);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -243,6 +267,9 @@
       <MemberSignature Language="C#" Value="public void Save ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Save() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ITemplateEditingFrame.Save" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
+      <MemberSignature Language="F#" Value="abstract member Save : unit -&gt; unit" Usage="iTemplateEditingFrame.Save " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -261,6 +288,9 @@
       <MemberSignature Language="C#" Value="public string[] TemplateNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] TemplateNames" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ITemplateEditingFrame.TemplateNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TemplateNames As String()" />
+      <MemberSignature Language="F#" Value="member this.TemplateNames : string[]" Usage="System.Web.UI.Design.ITemplateEditingFrame.TemplateNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ TemplateNames { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -292,6 +322,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style[] TemplateStyles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style[] TemplateStyles" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ITemplateEditingFrame.TemplateStyles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TemplateStyles As Style()" />
+      <MemberSignature Language="F#" Value="member this.TemplateStyles : System.Web.UI.WebControls.Style[]" Usage="System.Web.UI.Design.ITemplateEditingFrame.TemplateStyles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Web::UI::WebControls::Style ^&gt; ^ TemplateStyles { cli::array &lt;System::Web::UI::WebControls::Style ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -323,6 +356,9 @@
       <MemberSignature Language="C#" Value="public void UpdateControlName (string newName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateControlName(string newName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.ITemplateEditingFrame.UpdateControlName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateControlName (newName As String)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateControlName : string -&gt; unit" Usage="iTemplateEditingFrame.UpdateControlName newName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateControlName(System::String ^ newName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -356,6 +392,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.TemplateEditingVerb Verb { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.TemplateEditingVerb Verb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.ITemplateEditingFrame.Verb" />
+      <MemberSignature Language="VB.NET" Value="Public Property Verb As TemplateEditingVerb" />
+      <MemberSignature Language="F#" Value="member this.Verb : System.Web.UI.Design.TemplateEditingVerb with get, set" Usage="System.Web.UI.Design.ITemplateEditingFrame.Verb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::TemplateEditingVerb ^ Verb { System::Web::UI::Design::TemplateEditingVerb ^ get(); void set(System::Web::UI::Design::TemplateEditingVerb ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

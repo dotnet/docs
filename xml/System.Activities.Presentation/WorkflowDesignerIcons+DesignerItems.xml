@@ -1,7 +1,10 @@
-<Type Name="WorkflowDesignerIcons+DesignerItems" FullName="System.Activities.Presentation.WorkflowDesignerIcons+DesignerItems">
+﻿<Type Name="WorkflowDesignerIcons+DesignerItems" FullName="System.Activities.Presentation.WorkflowDesignerIcons+DesignerItems">
   <TypeSignature Language="C#" Value="public static class WorkflowDesignerIcons.DesignerItems" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit WorkflowDesignerIcons/DesignerItems extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowDesignerIcons.DesignerItems" />
+  <TypeSignature Language="F#" Value="type WorkflowDesignerIcons.DesignerItems = class" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class WorkflowDesignerIcons::DesignerItems abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush ActivityErrorValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush ActivityErrorValidation" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.ActivityErrorValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property ActivityErrorValidation As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.ActivityErrorValidation : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.ActivityErrorValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ ActivityErrorValidation { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Annotation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Annotation" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.Annotation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Annotation As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.Annotation : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.Annotation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ Annotation { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -55,6 +64,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush DeleteButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush DeleteButton" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.DeleteButton" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property DeleteButton As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.DeleteButton : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.DeleteButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ DeleteButton { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -73,6 +85,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush DeleteDisabledButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush DeleteDisabledButton" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.DeleteDisabledButton" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property DeleteDisabledButton As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.DeleteDisabledButton : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.DeleteDisabledButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ DeleteDisabledButton { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -91,6 +106,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush FitToScreen { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush FitToScreen" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.FitToScreen" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property FitToScreen As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.FitToScreen : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.FitToScreen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ FitToScreen { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -110,6 +128,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush MoveDownButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush MoveDownButton" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.MoveDownButton" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property MoveDownButton As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.MoveDownButton : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.MoveDownButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ MoveDownButton { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -128,6 +149,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush MoveDownDisabledButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush MoveDownDisabledButton" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.MoveDownDisabledButton" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property MoveDownDisabledButton As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.MoveDownDisabledButton : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.MoveDownDisabledButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ MoveDownDisabledButton { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -146,6 +170,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush MoveUpButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush MoveUpButton" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.MoveUpButton" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property MoveUpButton As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.MoveUpButton : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.MoveUpButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ MoveUpButton { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -164,6 +191,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush MoveUpDisabledButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush MoveUpDisabledButton" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.MoveUpDisabledButton" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property MoveUpDisabledButton As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.MoveUpDisabledButton : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.MoveUpDisabledButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ MoveUpDisabledButton { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -182,6 +212,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Overview { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Overview" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.Overview" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Overview As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.Overview : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.Overview" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ Overview { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -200,6 +233,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush OverviewWindowCloseButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush OverviewWindowCloseButton" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.OverviewWindowCloseButton" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property OverviewWindowCloseButton As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.OverviewWindowCloseButton : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.OverviewWindowCloseButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ OverviewWindowCloseButton { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -218,6 +254,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush PanMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush PanMode" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.PanMode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property PanMode As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.PanMode : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.PanMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ PanMode { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -236,6 +275,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush ResizeGrip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush ResizeGrip" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.ResizeGrip" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property ResizeGrip As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.ResizeGrip : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.ResizeGrip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ ResizeGrip { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -254,6 +296,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush TextBoxErrorValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush TextBoxErrorValidation" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.TextBoxErrorValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property TextBoxErrorValidation As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.TextBoxErrorValidation : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.TextBoxErrorValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ TextBoxErrorValidation { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -272,6 +317,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush WarningValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush WarningValidation" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.WarningValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property WarningValidation As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.WarningValidation : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.WarningValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ WarningValidation { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -290,6 +338,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush WorkflowErrorValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush WorkflowErrorValidation" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.WorkflowErrorValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property WorkflowErrorValidation As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.WorkflowErrorValidation : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.WorkflowErrorValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ WorkflowErrorValidation { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -308,6 +359,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.DrawingBrush Zoom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.DrawingBrush Zoom" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.Zoom" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Zoom As DrawingBrush" />
+      <MemberSignature Language="F#" Value="member this.Zoom : System.Windows.Media.DrawingBrush with get, set" Usage="System.Activities.Presentation.WorkflowDesignerIcons.DesignerItems.Zoom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::DrawingBrush ^ Zoom { System::Windows::Media::DrawingBrush ^ get(); void set(System::Windows::Media::DrawingBrush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

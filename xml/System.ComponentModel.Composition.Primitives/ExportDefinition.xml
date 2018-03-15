@@ -1,7 +1,10 @@
-<Type Name="ExportDefinition" FullName="System.ComponentModel.Composition.Primitives.ExportDefinition">
+﻿<Type Name="ExportDefinition" FullName="System.ComponentModel.Composition.Primitives.ExportDefinition">
   <TypeSignature Language="C#" Value="public class ExportDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExportDefinition extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Primitives.ExportDefinition" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExportDefinition" />
+  <TypeSignature Language="F#" Value="type ExportDefinition = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExportDefinition" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -16,10 +19,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.ExportDefinition" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ExportDefinition ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ExportDefinition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ExportDefinition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -43,6 +58,9 @@
       <MemberSignature Language="C#" Value="public ExportDefinition (string contractName, System.Collections.Generic.IDictionary&lt;string,object&gt; metadata);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string contractName, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ExportDefinition.#ctor(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String, metadata As IDictionary(Of String, Object))" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Primitives.ExportDefinition : string * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.ComponentModel.Composition.Primitives.ExportDefinition" Usage="new System.ComponentModel.Composition.Primitives.ExportDefinition (contractName, metadata)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExportDefinition(System::String ^ contractName, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ metadata);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -68,6 +86,9 @@
       <MemberSignature Language="C#" Value="public virtual string ContractName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContractName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ExportDefinition.ContractName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContractName As String" />
+      <MemberSignature Language="F#" Value="member this.ContractName : string" Usage="System.ComponentModel.Composition.Primitives.ExportDefinition.ContractName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContractName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -95,6 +116,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IDictionary&lt;string,object&gt; Metadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Metadata" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ExportDefinition.Metadata" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Metadata As IDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.ComponentModel.Composition.Primitives.ExportDefinition.Metadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Metadata { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -123,6 +147,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ExportDefinition.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="exportDefinition.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -139,15 +166,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.ExportDefinition" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

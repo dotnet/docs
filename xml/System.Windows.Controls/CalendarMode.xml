@@ -1,7 +1,10 @@
-<Type Name="CalendarMode" FullName="System.Windows.Controls.CalendarMode">
+﻿<Type Name="CalendarMode" FullName="System.Windows.Controls.CalendarMode">
   <TypeSignature Language="C#" Value="public enum CalendarMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CalendarMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.CalendarMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CalendarMode" />
+  <TypeSignature Language="F#" Value="type CalendarMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CalendarMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="Decade" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.CalendarMode Decade = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarMode.Decade" />
+      <MemberSignature Language="VB.NET" Value="Decade" />
+      <MemberSignature Language="F#" Value="Decade = 2" Usage="System.Windows.Controls.CalendarMode.Decade" />
+      <MemberSignature Language="C++ CLI" Value="Decade" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.CalendarMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Calendar" /> displays a decade at a time.</summary>
       </Docs>
@@ -59,6 +66,9 @@
       <MemberSignature Language="C#" Value="Month" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.CalendarMode Month = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarMode.Month" />
+      <MemberSignature Language="VB.NET" Value="Month" />
+      <MemberSignature Language="F#" Value="Month = 0" Usage="System.Windows.Controls.CalendarMode.Month" />
+      <MemberSignature Language="C++ CLI" Value="Month" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.CalendarMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Calendar" /> displays a month at a time.</summary>
       </Docs>
@@ -75,6 +86,9 @@
       <MemberSignature Language="C#" Value="Year" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.CalendarMode Year = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.CalendarMode.Year" />
+      <MemberSignature Language="VB.NET" Value="Year" />
+      <MemberSignature Language="F#" Value="Year = 1" Usage="System.Windows.Controls.CalendarMode.Year" />
+      <MemberSignature Language="C++ CLI" Value="Year" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -83,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.CalendarMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Calendar" /> displays a year at a time.</summary>
       </Docs>

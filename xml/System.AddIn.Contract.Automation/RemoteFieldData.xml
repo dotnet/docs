@@ -1,7 +1,10 @@
-<Type Name="RemoteFieldData" FullName="System.AddIn.Contract.Automation.RemoteFieldData">
+﻿<Type Name="RemoteFieldData" FullName="System.AddIn.Contract.Automation.RemoteFieldData">
   <TypeSignature Language="C#" Value="public struct RemoteFieldData" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit RemoteFieldData extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.RemoteFieldData" />
+  <TypeSignature Language="VB.NET" Value="Public Structure RemoteFieldData" />
+  <TypeSignature Language="F#" Value="type RemoteFieldData = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class RemoteFieldData" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.FieldAttributes Attributes;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Reflection.FieldAttributes Attributes" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteFieldData.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public Attributes As FieldAttributes " />
+      <MemberSignature Language="F#" Value="val mutable Attributes : System.Reflection.FieldAttributes" Usage="System.AddIn.Contract.Automation.RemoteFieldData.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Reflection::FieldAttributes Attributes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemoteTypeContract FieldType;" />
       <MemberSignature Language="ILAsm" Value=".field public class System.AddIn.Contract.Automation.IRemoteTypeContract FieldType" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteFieldData.FieldType" />
+      <MemberSignature Language="VB.NET" Value="Public FieldType As IRemoteTypeContract " />
+      <MemberSignature Language="F#" Value="val mutable FieldType : System.AddIn.Contract.Automation.IRemoteTypeContract" Usage="System.AddIn.Contract.Automation.RemoteFieldData.FieldType" />
+      <MemberSignature Language="C++ CLI" Value="public: System::AddIn::Contract::Automation::IRemoteTypeContract ^ FieldType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -67,6 +76,9 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.RemoteMemberData MemberData;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.AddIn.Contract.Automation.RemoteMemberData MemberData" />
       <MemberSignature Language="DocId" Value="F:System.AddIn.Contract.Automation.RemoteFieldData.MemberData" />
+      <MemberSignature Language="VB.NET" Value="Public MemberData As RemoteMemberData " />
+      <MemberSignature Language="F#" Value="val mutable MemberData : System.AddIn.Contract.Automation.RemoteMemberData" Usage="System.AddIn.Contract.Automation.RemoteFieldData.MemberData" />
+      <MemberSignature Language="C++ CLI" Value="public: System::AddIn::Contract::Automation::RemoteMemberData MemberData;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

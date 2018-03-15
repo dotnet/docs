@@ -1,7 +1,10 @@
-<Type Name="XPathMessageContextMarkupExtension" FullName="System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension">
+﻿<Type Name="XPathMessageContextMarkupExtension" FullName="System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension">
   <TypeSignature Language="C#" Value="public class XPathMessageContextMarkupExtension : System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi XPathMessageContextMarkupExtension extends System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Class XPathMessageContextMarkupExtension&#xA;Inherits MarkupExtension" />
+  <TypeSignature Language="F#" Value="type XPathMessageContextMarkupExtension = class&#xA;    inherit MarkupExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XPathMessageContextMarkupExtension : System::Windows::Markup::MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +32,21 @@
     <altmember cref="T:System.ServiceModel.Dispatcher.XPathMessageContext" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XPathMessageContextMarkupExtension ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageContextMarkupExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,6 +62,9 @@
       <MemberSignature Language="C#" Value="public XPathMessageContextMarkupExtension (System.ServiceModel.Dispatcher.XPathMessageContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Dispatcher.XPathMessageContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.#ctor(System.ServiceModel.Dispatcher.XPathMessageContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As XPathMessageContext)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension : System.ServiceModel.Dispatcher.XPathMessageContext -&gt; System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension" Usage="new System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageContextMarkupExtension(System::ServiceModel::Dispatcher::XPathMessageContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +83,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,string&gt; Namespaces { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; Namespaces" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.Namespaces" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespaces As Dictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.Namespaces : System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.Namespaces" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt; ^ Namespaces { System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +104,9 @@
       <MemberSignature Language="C#" Value="public override object ProvideValue (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="xPathMessageContextMarkupExtension.ProvideValue serviceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -102,14 +125,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="SocketError" FullName="System.Net.Sockets.SocketError">
+﻿<Type Name="SocketError" FullName="System.Net.Sockets.SocketError">
   <TypeSignature Language="C#" Value="public enum SocketError" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocketError extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketError" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SocketError" />
+  <TypeSignature Language="F#" Value="type SocketError = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SocketError" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="AccessDenied" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError AccessDenied = int32(10013)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.AccessDenied" />
+      <MemberSignature Language="VB.NET" Value="AccessDenied" />
+      <MemberSignature Language="F#" Value="AccessDenied = 10013" Usage="System.Net.Sockets.SocketError.AccessDenied" />
+      <MemberSignature Language="C++ CLI" Value="AccessDenied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -53,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10013</MemberValue>
       <Docs>
         <summary>An attempt was made to access a <see cref="T:System.Net.Sockets.Socket" /> in a way that is forbidden by its access permissions.</summary>
       </Docs>
@@ -61,6 +68,9 @@
       <MemberSignature Language="C#" Value="AddressAlreadyInUse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError AddressAlreadyInUse = int32(10048)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.AddressAlreadyInUse" />
+      <MemberSignature Language="VB.NET" Value="AddressAlreadyInUse" />
+      <MemberSignature Language="F#" Value="AddressAlreadyInUse = 10048" Usage="System.Net.Sockets.SocketError.AddressAlreadyInUse" />
+      <MemberSignature Language="C++ CLI" Value="AddressAlreadyInUse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -79,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10048</MemberValue>
       <Docs>
         <summary>Only one use of an address is normally permitted.</summary>
       </Docs>
@@ -87,6 +98,9 @@
       <MemberSignature Language="C#" Value="AddressFamilyNotSupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError AddressFamilyNotSupported = int32(10047)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.AddressFamilyNotSupported" />
+      <MemberSignature Language="VB.NET" Value="AddressFamilyNotSupported" />
+      <MemberSignature Language="F#" Value="AddressFamilyNotSupported = 10047" Usage="System.Net.Sockets.SocketError.AddressFamilyNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="AddressFamilyNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -105,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10047</MemberValue>
       <Docs>
         <summary>The address family specified is not supported. This error is returned if the IPv6 address family was specified and the IPv6 stack is not installed on the local machine. This error is returned if the IPv4 address family was specified and the IPv4 stack is not installed on the local machine.</summary>
       </Docs>
@@ -113,6 +128,9 @@
       <MemberSignature Language="C#" Value="AddressNotAvailable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError AddressNotAvailable = int32(10049)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.AddressNotAvailable" />
+      <MemberSignature Language="VB.NET" Value="AddressNotAvailable" />
+      <MemberSignature Language="F#" Value="AddressNotAvailable = 10049" Usage="System.Net.Sockets.SocketError.AddressNotAvailable" />
+      <MemberSignature Language="C++ CLI" Value="AddressNotAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -131,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10049</MemberValue>
       <Docs>
         <summary>The selected IP address is not valid in this context.</summary>
       </Docs>
@@ -139,6 +158,9 @@
       <MemberSignature Language="C#" Value="AlreadyInProgress" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError AlreadyInProgress = int32(10037)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.AlreadyInProgress" />
+      <MemberSignature Language="VB.NET" Value="AlreadyInProgress" />
+      <MemberSignature Language="F#" Value="AlreadyInProgress = 10037" Usage="System.Net.Sockets.SocketError.AlreadyInProgress" />
+      <MemberSignature Language="C++ CLI" Value="AlreadyInProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -157,6 +179,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10037</MemberValue>
       <Docs>
         <summary>The nonblocking <see cref="T:System.Net.Sockets.Socket" /> already has an operation in progress.</summary>
       </Docs>
@@ -165,6 +188,9 @@
       <MemberSignature Language="C#" Value="ConnectionAborted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError ConnectionAborted = int32(10053)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ConnectionAborted" />
+      <MemberSignature Language="VB.NET" Value="ConnectionAborted" />
+      <MemberSignature Language="F#" Value="ConnectionAborted = 10053" Usage="System.Net.Sockets.SocketError.ConnectionAborted" />
+      <MemberSignature Language="C++ CLI" Value="ConnectionAborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -183,6 +209,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10053</MemberValue>
       <Docs>
         <summary>The connection was aborted by the .NET Framework or the underlying socket provider.</summary>
       </Docs>
@@ -191,6 +218,9 @@
       <MemberSignature Language="C#" Value="ConnectionRefused" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError ConnectionRefused = int32(10061)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ConnectionRefused" />
+      <MemberSignature Language="VB.NET" Value="ConnectionRefused" />
+      <MemberSignature Language="F#" Value="ConnectionRefused = 10061" Usage="System.Net.Sockets.SocketError.ConnectionRefused" />
+      <MemberSignature Language="C++ CLI" Value="ConnectionRefused" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -209,6 +239,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10061</MemberValue>
       <Docs>
         <summary>The remote host is actively refusing a connection.</summary>
       </Docs>
@@ -217,6 +248,9 @@
       <MemberSignature Language="C#" Value="ConnectionReset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError ConnectionReset = int32(10054)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ConnectionReset" />
+      <MemberSignature Language="VB.NET" Value="ConnectionReset" />
+      <MemberSignature Language="F#" Value="ConnectionReset = 10054" Usage="System.Net.Sockets.SocketError.ConnectionReset" />
+      <MemberSignature Language="C++ CLI" Value="ConnectionReset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -235,6 +269,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10054</MemberValue>
       <Docs>
         <summary>The connection was reset by the remote peer.</summary>
       </Docs>
@@ -243,6 +278,9 @@
       <MemberSignature Language="C#" Value="DestinationAddressRequired" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError DestinationAddressRequired = int32(10039)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.DestinationAddressRequired" />
+      <MemberSignature Language="VB.NET" Value="DestinationAddressRequired" />
+      <MemberSignature Language="F#" Value="DestinationAddressRequired = 10039" Usage="System.Net.Sockets.SocketError.DestinationAddressRequired" />
+      <MemberSignature Language="C++ CLI" Value="DestinationAddressRequired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -261,6 +299,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10039</MemberValue>
       <Docs>
         <summary>A required address was omitted from an operation on a <see cref="T:System.Net.Sockets.Socket" />.</summary>
       </Docs>
@@ -269,6 +308,9 @@
       <MemberSignature Language="C#" Value="Disconnecting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError Disconnecting = int32(10101)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.Disconnecting" />
+      <MemberSignature Language="VB.NET" Value="Disconnecting" />
+      <MemberSignature Language="F#" Value="Disconnecting = 10101" Usage="System.Net.Sockets.SocketError.Disconnecting" />
+      <MemberSignature Language="C++ CLI" Value="Disconnecting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -287,6 +329,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10101</MemberValue>
       <Docs>
         <summary>A graceful shutdown is in progress.</summary>
       </Docs>
@@ -295,6 +338,9 @@
       <MemberSignature Language="C#" Value="Fault" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError Fault = int32(10014)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.Fault" />
+      <MemberSignature Language="VB.NET" Value="Fault" />
+      <MemberSignature Language="F#" Value="Fault = 10014" Usage="System.Net.Sockets.SocketError.Fault" />
+      <MemberSignature Language="C++ CLI" Value="Fault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -313,6 +359,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10014</MemberValue>
       <Docs>
         <summary>An invalid pointer address was detected by the underlying socket provider.</summary>
       </Docs>
@@ -321,6 +368,9 @@
       <MemberSignature Language="C#" Value="HostDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError HostDown = int32(10064)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.HostDown" />
+      <MemberSignature Language="VB.NET" Value="HostDown" />
+      <MemberSignature Language="F#" Value="HostDown = 10064" Usage="System.Net.Sockets.SocketError.HostDown" />
+      <MemberSignature Language="C++ CLI" Value="HostDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -339,6 +389,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10064</MemberValue>
       <Docs>
         <summary>The operation failed because the remote host is down.</summary>
       </Docs>
@@ -347,6 +398,9 @@
       <MemberSignature Language="C#" Value="HostNotFound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError HostNotFound = int32(11001)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.HostNotFound" />
+      <MemberSignature Language="VB.NET" Value="HostNotFound" />
+      <MemberSignature Language="F#" Value="HostNotFound = 11001" Usage="System.Net.Sockets.SocketError.HostNotFound" />
+      <MemberSignature Language="C++ CLI" Value="HostNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -365,6 +419,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>11001</MemberValue>
       <Docs>
         <summary>No such host is known. The name is not an official host name or alias.</summary>
       </Docs>
@@ -373,6 +428,9 @@
       <MemberSignature Language="C#" Value="HostUnreachable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError HostUnreachable = int32(10065)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.HostUnreachable" />
+      <MemberSignature Language="VB.NET" Value="HostUnreachable" />
+      <MemberSignature Language="F#" Value="HostUnreachable = 10065" Usage="System.Net.Sockets.SocketError.HostUnreachable" />
+      <MemberSignature Language="C++ CLI" Value="HostUnreachable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -391,6 +449,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10065</MemberValue>
       <Docs>
         <summary>There is no network route to the specified host.</summary>
       </Docs>
@@ -399,6 +458,9 @@
       <MemberSignature Language="C#" Value="InProgress" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError InProgress = int32(10036)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.InProgress" />
+      <MemberSignature Language="VB.NET" Value="InProgress" />
+      <MemberSignature Language="F#" Value="InProgress = 10036" Usage="System.Net.Sockets.SocketError.InProgress" />
+      <MemberSignature Language="C++ CLI" Value="InProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -417,6 +479,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10036</MemberValue>
       <Docs>
         <summary>A blocking operation is in progress.</summary>
       </Docs>
@@ -425,6 +488,9 @@
       <MemberSignature Language="C#" Value="Interrupted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError Interrupted = int32(10004)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.Interrupted" />
+      <MemberSignature Language="VB.NET" Value="Interrupted" />
+      <MemberSignature Language="F#" Value="Interrupted = 10004" Usage="System.Net.Sockets.SocketError.Interrupted" />
+      <MemberSignature Language="C++ CLI" Value="Interrupted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -443,6 +509,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10004</MemberValue>
       <Docs>
         <summary>A blocking <see cref="T:System.Net.Sockets.Socket" /> call was canceled.</summary>
       </Docs>
@@ -451,6 +518,9 @@
       <MemberSignature Language="C#" Value="InvalidArgument" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError InvalidArgument = int32(10022)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.InvalidArgument" />
+      <MemberSignature Language="VB.NET" Value="InvalidArgument" />
+      <MemberSignature Language="F#" Value="InvalidArgument = 10022" Usage="System.Net.Sockets.SocketError.InvalidArgument" />
+      <MemberSignature Language="C++ CLI" Value="InvalidArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -469,6 +539,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10022</MemberValue>
       <Docs>
         <summary>An invalid argument was supplied to a <see cref="T:System.Net.Sockets.Socket" /> member.</summary>
       </Docs>
@@ -477,6 +548,9 @@
       <MemberSignature Language="C#" Value="IOPending" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError IOPending = int32(997)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.IOPending" />
+      <MemberSignature Language="VB.NET" Value="IOPending" />
+      <MemberSignature Language="F#" Value="IOPending = 997" Usage="System.Net.Sockets.SocketError.IOPending" />
+      <MemberSignature Language="C++ CLI" Value="IOPending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -495,6 +569,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>997</MemberValue>
       <Docs>
         <summary>The application has initiated an overlapped operation that cannot be completed immediately.</summary>
       </Docs>
@@ -503,6 +578,9 @@
       <MemberSignature Language="C#" Value="IsConnected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError IsConnected = int32(10056)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.IsConnected" />
+      <MemberSignature Language="VB.NET" Value="IsConnected" />
+      <MemberSignature Language="F#" Value="IsConnected = 10056" Usage="System.Net.Sockets.SocketError.IsConnected" />
+      <MemberSignature Language="C++ CLI" Value="IsConnected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -521,6 +599,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10056</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Net.Sockets.Socket" /> is already connected.</summary>
       </Docs>
@@ -529,6 +608,9 @@
       <MemberSignature Language="C#" Value="MessageSize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError MessageSize = int32(10040)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.MessageSize" />
+      <MemberSignature Language="VB.NET" Value="MessageSize" />
+      <MemberSignature Language="F#" Value="MessageSize = 10040" Usage="System.Net.Sockets.SocketError.MessageSize" />
+      <MemberSignature Language="C++ CLI" Value="MessageSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -547,6 +629,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10040</MemberValue>
       <Docs>
         <summary>The datagram is too long.</summary>
       </Docs>
@@ -555,6 +638,9 @@
       <MemberSignature Language="C#" Value="NetworkDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError NetworkDown = int32(10050)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NetworkDown" />
+      <MemberSignature Language="VB.NET" Value="NetworkDown" />
+      <MemberSignature Language="F#" Value="NetworkDown = 10050" Usage="System.Net.Sockets.SocketError.NetworkDown" />
+      <MemberSignature Language="C++ CLI" Value="NetworkDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -573,6 +659,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10050</MemberValue>
       <Docs>
         <summary>The network is not available.</summary>
       </Docs>
@@ -581,6 +668,9 @@
       <MemberSignature Language="C#" Value="NetworkReset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError NetworkReset = int32(10052)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NetworkReset" />
+      <MemberSignature Language="VB.NET" Value="NetworkReset" />
+      <MemberSignature Language="F#" Value="NetworkReset = 10052" Usage="System.Net.Sockets.SocketError.NetworkReset" />
+      <MemberSignature Language="C++ CLI" Value="NetworkReset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -599,6 +689,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10052</MemberValue>
       <Docs>
         <summary>The application tried to set <see cref="F:System.Net.Sockets.SocketOptionName.KeepAlive" /> on a connection that has already timed out.</summary>
       </Docs>
@@ -607,6 +698,9 @@
       <MemberSignature Language="C#" Value="NetworkUnreachable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError NetworkUnreachable = int32(10051)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NetworkUnreachable" />
+      <MemberSignature Language="VB.NET" Value="NetworkUnreachable" />
+      <MemberSignature Language="F#" Value="NetworkUnreachable = 10051" Usage="System.Net.Sockets.SocketError.NetworkUnreachable" />
+      <MemberSignature Language="C++ CLI" Value="NetworkUnreachable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -625,6 +719,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10051</MemberValue>
       <Docs>
         <summary>No route to the remote host exists.</summary>
       </Docs>
@@ -633,6 +728,9 @@
       <MemberSignature Language="C#" Value="NoBufferSpaceAvailable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError NoBufferSpaceAvailable = int32(10055)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NoBufferSpaceAvailable" />
+      <MemberSignature Language="VB.NET" Value="NoBufferSpaceAvailable" />
+      <MemberSignature Language="F#" Value="NoBufferSpaceAvailable = 10055" Usage="System.Net.Sockets.SocketError.NoBufferSpaceAvailable" />
+      <MemberSignature Language="C++ CLI" Value="NoBufferSpaceAvailable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -651,6 +749,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10055</MemberValue>
       <Docs>
         <summary>No free buffer space is available for a <see cref="T:System.Net.Sockets.Socket" /> operation.</summary>
       </Docs>
@@ -659,6 +758,9 @@
       <MemberSignature Language="C#" Value="NoData" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError NoData = int32(11004)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NoData" />
+      <MemberSignature Language="VB.NET" Value="NoData" />
+      <MemberSignature Language="F#" Value="NoData = 11004" Usage="System.Net.Sockets.SocketError.NoData" />
+      <MemberSignature Language="C++ CLI" Value="NoData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -677,6 +779,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>11004</MemberValue>
       <Docs>
         <summary>The requested name or IP address was not found on the name server.</summary>
       </Docs>
@@ -685,6 +788,9 @@
       <MemberSignature Language="C#" Value="NoRecovery" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError NoRecovery = int32(11003)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NoRecovery" />
+      <MemberSignature Language="VB.NET" Value="NoRecovery" />
+      <MemberSignature Language="F#" Value="NoRecovery = 11003" Usage="System.Net.Sockets.SocketError.NoRecovery" />
+      <MemberSignature Language="C++ CLI" Value="NoRecovery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -703,6 +809,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>11003</MemberValue>
       <Docs>
         <summary>The error is unrecoverable or the requested database cannot be located.</summary>
       </Docs>
@@ -711,6 +818,9 @@
       <MemberSignature Language="C#" Value="NotConnected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError NotConnected = int32(10057)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NotConnected" />
+      <MemberSignature Language="VB.NET" Value="NotConnected" />
+      <MemberSignature Language="F#" Value="NotConnected = 10057" Usage="System.Net.Sockets.SocketError.NotConnected" />
+      <MemberSignature Language="C++ CLI" Value="NotConnected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -729,6 +839,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10057</MemberValue>
       <Docs>
         <summary>The application tried to send or receive data, and the <see cref="T:System.Net.Sockets.Socket" /> is not connected.</summary>
       </Docs>
@@ -737,6 +848,9 @@
       <MemberSignature Language="C#" Value="NotInitialized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError NotInitialized = int32(10093)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NotInitialized" />
+      <MemberSignature Language="VB.NET" Value="NotInitialized" />
+      <MemberSignature Language="F#" Value="NotInitialized = 10093" Usage="System.Net.Sockets.SocketError.NotInitialized" />
+      <MemberSignature Language="C++ CLI" Value="NotInitialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -755,6 +869,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10093</MemberValue>
       <Docs>
         <summary>The underlying socket provider has not been initialized.</summary>
       </Docs>
@@ -763,6 +878,9 @@
       <MemberSignature Language="C#" Value="NotSocket" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError NotSocket = int32(10038)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.NotSocket" />
+      <MemberSignature Language="VB.NET" Value="NotSocket" />
+      <MemberSignature Language="F#" Value="NotSocket = 10038" Usage="System.Net.Sockets.SocketError.NotSocket" />
+      <MemberSignature Language="C++ CLI" Value="NotSocket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -781,6 +899,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10038</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Net.Sockets.Socket" /> operation was attempted on a non-socket.</summary>
       </Docs>
@@ -789,6 +908,9 @@
       <MemberSignature Language="C#" Value="OperationAborted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError OperationAborted = int32(995)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.OperationAborted" />
+      <MemberSignature Language="VB.NET" Value="OperationAborted" />
+      <MemberSignature Language="F#" Value="OperationAborted = 995" Usage="System.Net.Sockets.SocketError.OperationAborted" />
+      <MemberSignature Language="C++ CLI" Value="OperationAborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -807,6 +929,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>995</MemberValue>
       <Docs>
         <summary>The overlapped operation was aborted due to the closure of the <see cref="T:System.Net.Sockets.Socket" />.</summary>
       </Docs>
@@ -815,6 +938,9 @@
       <MemberSignature Language="C#" Value="OperationNotSupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError OperationNotSupported = int32(10045)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.OperationNotSupported" />
+      <MemberSignature Language="VB.NET" Value="OperationNotSupported" />
+      <MemberSignature Language="F#" Value="OperationNotSupported = 10045" Usage="System.Net.Sockets.SocketError.OperationNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="OperationNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -833,6 +959,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10045</MemberValue>
       <Docs>
         <summary>The address family is not supported by the protocol family.</summary>
       </Docs>
@@ -841,6 +968,9 @@
       <MemberSignature Language="C#" Value="ProcessLimit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError ProcessLimit = int32(10067)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ProcessLimit" />
+      <MemberSignature Language="VB.NET" Value="ProcessLimit" />
+      <MemberSignature Language="F#" Value="ProcessLimit = 10067" Usage="System.Net.Sockets.SocketError.ProcessLimit" />
+      <MemberSignature Language="C++ CLI" Value="ProcessLimit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -859,6 +989,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10067</MemberValue>
       <Docs>
         <summary>Too many processes are using the underlying socket provider.</summary>
       </Docs>
@@ -867,6 +998,9 @@
       <MemberSignature Language="C#" Value="ProtocolFamilyNotSupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError ProtocolFamilyNotSupported = int32(10046)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ProtocolFamilyNotSupported" />
+      <MemberSignature Language="VB.NET" Value="ProtocolFamilyNotSupported" />
+      <MemberSignature Language="F#" Value="ProtocolFamilyNotSupported = 10046" Usage="System.Net.Sockets.SocketError.ProtocolFamilyNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="ProtocolFamilyNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -885,6 +1019,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10046</MemberValue>
       <Docs>
         <summary>The protocol family is not implemented or has not been configured.</summary>
       </Docs>
@@ -893,6 +1028,9 @@
       <MemberSignature Language="C#" Value="ProtocolNotSupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError ProtocolNotSupported = int32(10043)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ProtocolNotSupported" />
+      <MemberSignature Language="VB.NET" Value="ProtocolNotSupported" />
+      <MemberSignature Language="F#" Value="ProtocolNotSupported = 10043" Usage="System.Net.Sockets.SocketError.ProtocolNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="ProtocolNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -911,6 +1049,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10043</MemberValue>
       <Docs>
         <summary>The protocol is not implemented or has not been configured.</summary>
       </Docs>
@@ -919,6 +1058,9 @@
       <MemberSignature Language="C#" Value="ProtocolOption" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError ProtocolOption = int32(10042)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ProtocolOption" />
+      <MemberSignature Language="VB.NET" Value="ProtocolOption" />
+      <MemberSignature Language="F#" Value="ProtocolOption = 10042" Usage="System.Net.Sockets.SocketError.ProtocolOption" />
+      <MemberSignature Language="C++ CLI" Value="ProtocolOption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -937,6 +1079,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10042</MemberValue>
       <Docs>
         <summary>An unknown, invalid, or unsupported option or level was used with a <see cref="T:System.Net.Sockets.Socket" />.</summary>
       </Docs>
@@ -945,6 +1088,9 @@
       <MemberSignature Language="C#" Value="ProtocolType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError ProtocolType = int32(10041)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.ProtocolType" />
+      <MemberSignature Language="VB.NET" Value="ProtocolType" />
+      <MemberSignature Language="F#" Value="ProtocolType = 10041" Usage="System.Net.Sockets.SocketError.ProtocolType" />
+      <MemberSignature Language="C++ CLI" Value="ProtocolType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -963,6 +1109,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10041</MemberValue>
       <Docs>
         <summary>The protocol type is incorrect for this <see cref="T:System.Net.Sockets.Socket" />.</summary>
       </Docs>
@@ -971,6 +1118,9 @@
       <MemberSignature Language="C#" Value="Shutdown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError Shutdown = int32(10058)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.Shutdown" />
+      <MemberSignature Language="VB.NET" Value="Shutdown" />
+      <MemberSignature Language="F#" Value="Shutdown = 10058" Usage="System.Net.Sockets.SocketError.Shutdown" />
+      <MemberSignature Language="C++ CLI" Value="Shutdown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -989,6 +1139,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10058</MemberValue>
       <Docs>
         <summary>A request to send or receive data was disallowed because the <see cref="T:System.Net.Sockets.Socket" /> has already been closed.</summary>
       </Docs>
@@ -997,6 +1148,8 @@
       <MemberSignature Language="C#" Value="SocketError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError SocketError = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.SocketError" />
+      <MemberSignature Language="F#" Value="SocketError = -1" Usage="System.Net.Sockets.SocketError.SocketError" />
+      <MemberSignature Language="C++ CLI" Value="SocketError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1015,6 +1168,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>An unspecified <see cref="T:System.Net.Sockets.Socket" /> error has occurred.</summary>
       </Docs>
@@ -1023,6 +1177,9 @@
       <MemberSignature Language="C#" Value="SocketNotSupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError SocketNotSupported = int32(10044)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.SocketNotSupported" />
+      <MemberSignature Language="VB.NET" Value="SocketNotSupported" />
+      <MemberSignature Language="F#" Value="SocketNotSupported = 10044" Usage="System.Net.Sockets.SocketError.SocketNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="SocketNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1041,6 +1198,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10044</MemberValue>
       <Docs>
         <summary>The support for the specified socket type does not exist in this address family.</summary>
       </Docs>
@@ -1049,6 +1207,9 @@
       <MemberSignature Language="C#" Value="Success" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError Success = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.Success" />
+      <MemberSignature Language="VB.NET" Value="Success" />
+      <MemberSignature Language="F#" Value="Success = 0" Usage="System.Net.Sockets.SocketError.Success" />
+      <MemberSignature Language="C++ CLI" Value="Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1067,6 +1228,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Net.Sockets.Socket" /> operation succeeded.</summary>
       </Docs>
@@ -1075,6 +1237,9 @@
       <MemberSignature Language="C#" Value="SystemNotReady" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError SystemNotReady = int32(10091)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.SystemNotReady" />
+      <MemberSignature Language="VB.NET" Value="SystemNotReady" />
+      <MemberSignature Language="F#" Value="SystemNotReady = 10091" Usage="System.Net.Sockets.SocketError.SystemNotReady" />
+      <MemberSignature Language="C++ CLI" Value="SystemNotReady" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1093,6 +1258,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10091</MemberValue>
       <Docs>
         <summary>The network subsystem is unavailable.</summary>
       </Docs>
@@ -1101,6 +1267,9 @@
       <MemberSignature Language="C#" Value="TimedOut" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError TimedOut = int32(10060)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.TimedOut" />
+      <MemberSignature Language="VB.NET" Value="TimedOut" />
+      <MemberSignature Language="F#" Value="TimedOut = 10060" Usage="System.Net.Sockets.SocketError.TimedOut" />
+      <MemberSignature Language="C++ CLI" Value="TimedOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1119,6 +1288,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10060</MemberValue>
       <Docs>
         <summary>The connection attempt timed out, or the connected host has failed to respond.</summary>
       </Docs>
@@ -1127,6 +1297,9 @@
       <MemberSignature Language="C#" Value="TooManyOpenSockets" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError TooManyOpenSockets = int32(10024)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.TooManyOpenSockets" />
+      <MemberSignature Language="VB.NET" Value="TooManyOpenSockets" />
+      <MemberSignature Language="F#" Value="TooManyOpenSockets = 10024" Usage="System.Net.Sockets.SocketError.TooManyOpenSockets" />
+      <MemberSignature Language="C++ CLI" Value="TooManyOpenSockets" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1145,6 +1318,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10024</MemberValue>
       <Docs>
         <summary>There are too many open sockets in the underlying socket provider.</summary>
       </Docs>
@@ -1153,6 +1327,9 @@
       <MemberSignature Language="C#" Value="TryAgain" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError TryAgain = int32(11002)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.TryAgain" />
+      <MemberSignature Language="VB.NET" Value="TryAgain" />
+      <MemberSignature Language="F#" Value="TryAgain = 11002" Usage="System.Net.Sockets.SocketError.TryAgain" />
+      <MemberSignature Language="C++ CLI" Value="TryAgain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1171,6 +1348,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>11002</MemberValue>
       <Docs>
         <summary>The name of the host could not be resolved. Try again later.</summary>
       </Docs>
@@ -1179,6 +1357,9 @@
       <MemberSignature Language="C#" Value="TypeNotFound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError TypeNotFound = int32(10109)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.TypeNotFound" />
+      <MemberSignature Language="VB.NET" Value="TypeNotFound" />
+      <MemberSignature Language="F#" Value="TypeNotFound = 10109" Usage="System.Net.Sockets.SocketError.TypeNotFound" />
+      <MemberSignature Language="C++ CLI" Value="TypeNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1197,6 +1378,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10109</MemberValue>
       <Docs>
         <summary>The specified class was not found.</summary>
       </Docs>
@@ -1205,6 +1387,9 @@
       <MemberSignature Language="C#" Value="VersionNotSupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError VersionNotSupported = int32(10092)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.VersionNotSupported" />
+      <MemberSignature Language="VB.NET" Value="VersionNotSupported" />
+      <MemberSignature Language="F#" Value="VersionNotSupported = 10092" Usage="System.Net.Sockets.SocketError.VersionNotSupported" />
+      <MemberSignature Language="C++ CLI" Value="VersionNotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1223,6 +1408,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10092</MemberValue>
       <Docs>
         <summary>The version of the underlying socket provider is out of range.</summary>
       </Docs>
@@ -1231,6 +1417,9 @@
       <MemberSignature Language="C#" Value="WouldBlock" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketError WouldBlock = int32(10035)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketError.WouldBlock" />
+      <MemberSignature Language="VB.NET" Value="WouldBlock" />
+      <MemberSignature Language="F#" Value="WouldBlock = 10035" Usage="System.Net.Sockets.SocketError.WouldBlock" />
+      <MemberSignature Language="C++ CLI" Value="WouldBlock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -1249,6 +1438,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketError</ReturnType>
       </ReturnValue>
+      <MemberValue>10035</MemberValue>
       <Docs>
         <summary>An operation on a nonblocking socket cannot be completed immediately.</summary>
       </Docs>

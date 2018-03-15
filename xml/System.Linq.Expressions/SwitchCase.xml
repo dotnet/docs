@@ -1,7 +1,10 @@
-<Type Name="SwitchCase" FullName="System.Linq.Expressions.SwitchCase">
+﻿<Type Name="SwitchCase" FullName="System.Linq.Expressions.SwitchCase">
   <TypeSignature Language="C#" Value="public sealed class SwitchCase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SwitchCase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.SwitchCase" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SwitchCase" />
+  <TypeSignature Language="F#" Value="type SwitchCase = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SwitchCase sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.Expression Body { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.Expressions.Expression Body" />
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.SwitchCase.Body" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Body As Expression" />
+      <MemberSignature Language="F#" Value="member this.Body : System.Linq.Expressions.Expression" Usage="System.Linq.Expressions.SwitchCase.Body" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::Expression ^ Body { System::Linq::Expressions::Expression ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -76,6 +82,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt; TestValues { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Linq.Expressions.Expression&gt; TestValues" />
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.SwitchCase.TestValues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TestValues As ReadOnlyCollection(Of Expression)" />
+      <MemberSignature Language="F#" Value="member this.TestValues : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;" Usage="System.Linq.Expressions.SwitchCase.TestValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ TestValues { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -106,6 +115,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.SwitchCase.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="switchCase.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -137,6 +149,9 @@
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.SwitchCase Update (System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.Expression&gt; testValues, System.Linq.Expressions.Expression body);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Linq.Expressions.SwitchCase Update(class System.Collections.Generic.IEnumerable`1&lt;class System.Linq.Expressions.Expression&gt; testValues, class System.Linq.Expressions.Expression body) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.SwitchCase.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression},System.Linq.Expressions.Expression)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Update (testValues As IEnumerable(Of Expression), body As Expression) As SwitchCase" />
+      <MemberSignature Language="F#" Value="member this.Update : seq&lt;System.Linq.Expressions.Expression&gt; * System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.SwitchCase" Usage="switchCase.Update (testValues, body)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::SwitchCase ^ Update(System::Collections::Generic::IEnumerable&lt;System::Linq::Expressions::Expression ^&gt; ^ testValues, System::Linq::Expressions::Expression ^ body);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

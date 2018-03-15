@@ -1,7 +1,10 @@
-<Type Name="IBindingMulticastCapabilities" FullName="System.ServiceModel.Channels.IBindingMulticastCapabilities">
+﻿<Type Name="IBindingMulticastCapabilities" FullName="System.ServiceModel.Channels.IBindingMulticastCapabilities">
   <TypeSignature Language="C#" Value="public interface IBindingMulticastCapabilities" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBindingMulticastCapabilities" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.IBindingMulticastCapabilities" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBindingMulticastCapabilities" />
+  <TypeSignature Language="F#" Value="type IBindingMulticastCapabilities = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IBindingMulticastCapabilities" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="public bool IsMulticast { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMulticast" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.IBindingMulticastCapabilities.IsMulticast" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMulticast As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsMulticast : bool" Usage="System.ServiceModel.Channels.IBindingMulticastCapabilities.IsMulticast" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMulticast { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="BuildManagerHostUnloadEventHandler" FullName="System.Web.Compilation.BuildManagerHostUnloadEventHandler">
+﻿<Type Name="BuildManagerHostUnloadEventHandler" FullName="System.Web.Compilation.BuildManagerHostUnloadEventHandler">
   <TypeSignature Language="C#" Value="public delegate void BuildManagerHostUnloadEventHandler(object sender, BuildManagerHostUnloadEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildManagerHostUnloadEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildManagerHostUnloadEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub BuildManagerHostUnloadEventHandler(sender As Object, e As BuildManagerHostUnloadEventArgs)" />
+  <TypeSignature Language="F#" Value="type BuildManagerHostUnloadEventHandler = delegate of obj * BuildManagerHostUnloadEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void BuildManagerHostUnloadEventHandler(System::Object ^ sender, BuildManagerHostUnloadEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

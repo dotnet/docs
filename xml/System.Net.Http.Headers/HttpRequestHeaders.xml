@@ -1,7 +1,10 @@
-<Type Name="HttpRequestHeaders" FullName="System.Net.Http.Headers.HttpRequestHeaders">
+﻿<Type Name="HttpRequestHeaders" FullName="System.Net.Http.Headers.HttpRequestHeaders">
   <TypeSignature Language="C#" Value="public sealed class HttpRequestHeaders : System.Net.Http.Headers.HttpHeaders" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpRequestHeaders extends System.Net.Http.Headers.HttpHeaders" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.HttpRequestHeaders" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpRequestHeaders&#xA;Inherits HttpHeaders" />
+  <TypeSignature Language="F#" Value="type HttpRequestHeaders = class&#xA;    inherit HttpHeaders" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpRequestHeaders sealed : System::Net::Http::Headers::HttpHeaders" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.MediaTypeWithQualityHeaderValue&gt; Accept { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.MediaTypeWithQualityHeaderValue&gt; Accept" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Accept" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Accept As HttpHeaderValueCollection(Of MediaTypeWithQualityHeaderValue)" />
+      <MemberSignature Language="F#" Value="member this.Accept : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.MediaTypeWithQualityHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.Accept" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::MediaTypeWithQualityHeaderValue ^&gt; ^ Accept { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::MediaTypeWithQualityHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -58,6 +64,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.StringWithQualityHeaderValue&gt; AcceptCharset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.StringWithQualityHeaderValue&gt; AcceptCharset" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.AcceptCharset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AcceptCharset As HttpHeaderValueCollection(Of StringWithQualityHeaderValue)" />
+      <MemberSignature Language="F#" Value="member this.AcceptCharset : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.StringWithQualityHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.AcceptCharset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::StringWithQualityHeaderValue ^&gt; ^ AcceptCharset { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::StringWithQualityHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -83,6 +92,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.StringWithQualityHeaderValue&gt; AcceptEncoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.StringWithQualityHeaderValue&gt; AcceptEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.AcceptEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AcceptEncoding As HttpHeaderValueCollection(Of StringWithQualityHeaderValue)" />
+      <MemberSignature Language="F#" Value="member this.AcceptEncoding : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.StringWithQualityHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.AcceptEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::StringWithQualityHeaderValue ^&gt; ^ AcceptEncoding { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::StringWithQualityHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -108,6 +120,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.StringWithQualityHeaderValue&gt; AcceptLanguage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.StringWithQualityHeaderValue&gt; AcceptLanguage" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.AcceptLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AcceptLanguage As HttpHeaderValueCollection(Of StringWithQualityHeaderValue)" />
+      <MemberSignature Language="F#" Value="member this.AcceptLanguage : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.StringWithQualityHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.AcceptLanguage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::StringWithQualityHeaderValue ^&gt; ^ AcceptLanguage { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::StringWithQualityHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -133,6 +148,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.AuthenticationHeaderValue Authorization { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.AuthenticationHeaderValue Authorization" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Authorization" />
+      <MemberSignature Language="VB.NET" Value="Public Property Authorization As AuthenticationHeaderValue" />
+      <MemberSignature Language="F#" Value="member this.Authorization : System.Net.Http.Headers.AuthenticationHeaderValue with get, set" Usage="System.Net.Http.Headers.HttpRequestHeaders.Authorization" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::AuthenticationHeaderValue ^ Authorization { System::Net::Http::Headers::AuthenticationHeaderValue ^ get(); void set(System::Net::Http::Headers::AuthenticationHeaderValue ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -158,6 +176,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.CacheControlHeaderValue CacheControl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.CacheControlHeaderValue CacheControl" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.CacheControl" />
+      <MemberSignature Language="VB.NET" Value="Public Property CacheControl As CacheControlHeaderValue" />
+      <MemberSignature Language="F#" Value="member this.CacheControl : System.Net.Http.Headers.CacheControlHeaderValue with get, set" Usage="System.Net.Http.Headers.HttpRequestHeaders.CacheControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::CacheControlHeaderValue ^ CacheControl { System::Net::Http::Headers::CacheControlHeaderValue ^ get(); void set(System::Net::Http::Headers::CacheControlHeaderValue ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -183,6 +204,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;string&gt; Connection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;string&gt; Connection" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Connection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connection As HttpHeaderValueCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Connection : System.Net.Http.Headers.HttpHeaderValueCollection&lt;string&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.Connection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::String ^&gt; ^ Connection { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -208,6 +232,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ConnectionClose { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ConnectionClose" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.ConnectionClose" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionClose As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ConnectionClose : Nullable&lt;bool&gt; with get, set" Usage="System.Net.Http.Headers.HttpRequestHeaders.ConnectionClose" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; ConnectionClose { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -234,6 +261,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; Date { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; Date" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Date" />
+      <MemberSignature Language="VB.NET" Value="Public Property Date As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.Date : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="System.Net.Http.Headers.HttpRequestHeaders.Date" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; Date { Nullable&lt;DateTimeOffset&gt; get(); void set(Nullable&lt;DateTimeOffset&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -259,6 +289,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.NameValueWithParametersHeaderValue&gt; Expect { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.NameValueWithParametersHeaderValue&gt; Expect" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Expect" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expect As HttpHeaderValueCollection(Of NameValueWithParametersHeaderValue)" />
+      <MemberSignature Language="F#" Value="member this.Expect : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.NameValueWithParametersHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.Expect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::NameValueWithParametersHeaderValue ^&gt; ^ Expect { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::NameValueWithParametersHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -284,6 +317,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ExpectContinue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; ExpectContinue" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.ExpectContinue" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpectContinue As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ExpectContinue : Nullable&lt;bool&gt; with get, set" Usage="System.Net.Http.Headers.HttpRequestHeaders.ExpectContinue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; ExpectContinue { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -310,6 +346,9 @@
       <MemberSignature Language="C#" Value="public string From { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string From" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.From" />
+      <MemberSignature Language="VB.NET" Value="Public Property From As String" />
+      <MemberSignature Language="F#" Value="member this.From : string with get, set" Usage="System.Net.Http.Headers.HttpRequestHeaders.From" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ From { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -335,6 +374,9 @@
       <MemberSignature Language="C#" Value="public string Host { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Host" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Host" />
+      <MemberSignature Language="VB.NET" Value="Public Property Host As String" />
+      <MemberSignature Language="F#" Value="member this.Host : string with get, set" Usage="System.Net.Http.Headers.HttpRequestHeaders.Host" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Host { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -360,6 +402,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.EntityTagHeaderValue&gt; IfMatch { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.EntityTagHeaderValue&gt; IfMatch" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.IfMatch" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IfMatch As HttpHeaderValueCollection(Of EntityTagHeaderValue)" />
+      <MemberSignature Language="F#" Value="member this.IfMatch : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.EntityTagHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.IfMatch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::EntityTagHeaderValue ^&gt; ^ IfMatch { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::EntityTagHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -387,6 +432,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; IfModifiedSince { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; IfModifiedSince" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.IfModifiedSince" />
+      <MemberSignature Language="VB.NET" Value="Public Property IfModifiedSince As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.IfModifiedSince : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="System.Net.Http.Headers.HttpRequestHeaders.IfModifiedSince" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; IfModifiedSince { Nullable&lt;DateTimeOffset&gt; get(); void set(Nullable&lt;DateTimeOffset&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -412,6 +460,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.EntityTagHeaderValue&gt; IfNoneMatch { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.EntityTagHeaderValue&gt; IfNoneMatch" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.IfNoneMatch" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IfNoneMatch As HttpHeaderValueCollection(Of EntityTagHeaderValue)" />
+      <MemberSignature Language="F#" Value="member this.IfNoneMatch : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.EntityTagHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.IfNoneMatch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::EntityTagHeaderValue ^&gt; ^ IfNoneMatch { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::EntityTagHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -437,6 +488,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.RangeConditionHeaderValue IfRange { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.RangeConditionHeaderValue IfRange" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.IfRange" />
+      <MemberSignature Language="VB.NET" Value="Public Property IfRange As RangeConditionHeaderValue" />
+      <MemberSignature Language="F#" Value="member this.IfRange : System.Net.Http.Headers.RangeConditionHeaderValue with get, set" Usage="System.Net.Http.Headers.HttpRequestHeaders.IfRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::RangeConditionHeaderValue ^ IfRange { System::Net::Http::Headers::RangeConditionHeaderValue ^ get(); void set(System::Net::Http::Headers::RangeConditionHeaderValue ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -462,6 +516,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTimeOffset&gt; IfUnmodifiedSince { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; IfUnmodifiedSince" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.IfUnmodifiedSince" />
+      <MemberSignature Language="VB.NET" Value="Public Property IfUnmodifiedSince As Nullable(Of DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.IfUnmodifiedSince : Nullable&lt;DateTimeOffset&gt; with get, set" Usage="System.Net.Http.Headers.HttpRequestHeaders.IfUnmodifiedSince" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTimeOffset&gt; IfUnmodifiedSince { Nullable&lt;DateTimeOffset&gt; get(); void set(Nullable&lt;DateTimeOffset&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -487,6 +544,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; MaxForwards { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxForwards" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.MaxForwards" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxForwards As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.MaxForwards : Nullable&lt;int&gt; with get, set" Usage="System.Net.Http.Headers.HttpRequestHeaders.MaxForwards" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; MaxForwards { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -512,6 +572,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.NameValueHeaderValue&gt; Pragma { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.NameValueHeaderValue&gt; Pragma" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Pragma" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pragma As HttpHeaderValueCollection(Of NameValueHeaderValue)" />
+      <MemberSignature Language="F#" Value="member this.Pragma : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.NameValueHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.Pragma" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::NameValueHeaderValue ^&gt; ^ Pragma { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::NameValueHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -537,6 +600,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.AuthenticationHeaderValue ProxyAuthorization { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.AuthenticationHeaderValue ProxyAuthorization" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.ProxyAuthorization" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProxyAuthorization As AuthenticationHeaderValue" />
+      <MemberSignature Language="F#" Value="member this.ProxyAuthorization : System.Net.Http.Headers.AuthenticationHeaderValue with get, set" Usage="System.Net.Http.Headers.HttpRequestHeaders.ProxyAuthorization" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::AuthenticationHeaderValue ^ ProxyAuthorization { System::Net::Http::Headers::AuthenticationHeaderValue ^ get(); void set(System::Net::Http::Headers::AuthenticationHeaderValue ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -562,6 +628,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.RangeHeaderValue Range { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.RangeHeaderValue Range" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Range" />
+      <MemberSignature Language="VB.NET" Value="Public Property Range As RangeHeaderValue" />
+      <MemberSignature Language="F#" Value="member this.Range : System.Net.Http.Headers.RangeHeaderValue with get, set" Usage="System.Net.Http.Headers.HttpRequestHeaders.Range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::RangeHeaderValue ^ Range { System::Net::Http::Headers::RangeHeaderValue ^ get(); void set(System::Net::Http::Headers::RangeHeaderValue ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -587,6 +656,9 @@
       <MemberSignature Language="C#" Value="public Uri Referrer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Referrer" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Referrer" />
+      <MemberSignature Language="VB.NET" Value="Public Property Referrer As Uri" />
+      <MemberSignature Language="F#" Value="member this.Referrer : Uri with get, set" Usage="System.Net.Http.Headers.HttpRequestHeaders.Referrer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Referrer { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -612,6 +684,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.TransferCodingWithQualityHeaderValue&gt; TE { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.TransferCodingWithQualityHeaderValue&gt; TE" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.TE" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TE As HttpHeaderValueCollection(Of TransferCodingWithQualityHeaderValue)" />
+      <MemberSignature Language="F#" Value="member this.TE : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.TransferCodingWithQualityHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.TE" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::TransferCodingWithQualityHeaderValue ^&gt; ^ TE { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::TransferCodingWithQualityHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -637,6 +712,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;string&gt; Trailer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;string&gt; Trailer" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Trailer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Trailer As HttpHeaderValueCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Trailer : System.Net.Http.Headers.HttpHeaderValueCollection&lt;string&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.Trailer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::String ^&gt; ^ Trailer { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -662,6 +740,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.TransferCodingHeaderValue&gt; TransferEncoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.TransferCodingHeaderValue&gt; TransferEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.TransferEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TransferEncoding As HttpHeaderValueCollection(Of TransferCodingHeaderValue)" />
+      <MemberSignature Language="F#" Value="member this.TransferEncoding : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.TransferCodingHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.TransferEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::TransferCodingHeaderValue ^&gt; ^ TransferEncoding { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::TransferCodingHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -687,6 +768,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; TransferEncodingChunked { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; TransferEncodingChunked" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.TransferEncodingChunked" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransferEncodingChunked As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.TransferEncodingChunked : Nullable&lt;bool&gt; with get, set" Usage="System.Net.Http.Headers.HttpRequestHeaders.TransferEncodingChunked" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; TransferEncodingChunked { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -713,6 +797,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.ProductHeaderValue&gt; Upgrade { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.ProductHeaderValue&gt; Upgrade" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Upgrade" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Upgrade As HttpHeaderValueCollection(Of ProductHeaderValue)" />
+      <MemberSignature Language="F#" Value="member this.Upgrade : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.ProductHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.Upgrade" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::ProductHeaderValue ^&gt; ^ Upgrade { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::ProductHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -738,6 +825,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.ProductInfoHeaderValue&gt; UserAgent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.ProductInfoHeaderValue&gt; UserAgent" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.UserAgent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserAgent As HttpHeaderValueCollection(Of ProductInfoHeaderValue)" />
+      <MemberSignature Language="F#" Value="member this.UserAgent : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.ProductInfoHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.UserAgent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::ProductInfoHeaderValue ^&gt; ^ UserAgent { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::ProductInfoHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -763,6 +853,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.ViaHeaderValue&gt; Via { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.ViaHeaderValue&gt; Via" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Via" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Via As HttpHeaderValueCollection(Of ViaHeaderValue)" />
+      <MemberSignature Language="F#" Value="member this.Via : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.ViaHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.Via" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::ViaHeaderValue ^&gt; ^ Via { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::ViaHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -788,6 +881,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.WarningHeaderValue&gt; Warning { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Http.Headers.HttpHeaderValueCollection`1&lt;class System.Net.Http.Headers.WarningHeaderValue&gt; Warning" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.HttpRequestHeaders.Warning" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Warning As HttpHeaderValueCollection(Of WarningHeaderValue)" />
+      <MemberSignature Language="F#" Value="member this.Warning : System.Net.Http.Headers.HttpHeaderValueCollection&lt;System.Net.Http.Headers.WarningHeaderValue&gt;" Usage="System.Net.Http.Headers.HttpRequestHeaders.Warning" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::WarningHeaderValue ^&gt; ^ Warning { System::Net::Http::Headers::HttpHeaderValueCollection&lt;System::Net::Http::Headers::WarningHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>

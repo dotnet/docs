@@ -1,7 +1,10 @@
-<Type Name="IRemoteArgumentArrayListContract" FullName="System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract">
+﻿<Type Name="IRemoteArgumentArrayListContract" FullName="System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract">
   <TypeSignature Language="C#" Value="public interface IRemoteArgumentArrayListContract : System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRemoteArgumentArrayListContract implements class System.AddIn.Contract.Collections.IRemoteArgumentArrayContract, class System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract, class System.AddIn.Contract.Collections.IRemoteArgumentEnumerableContract, class System.AddIn.Contract.IContract" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRemoteArgumentArrayListContract&#xA;Implements IRemoteArgumentArrayContract" />
+  <TypeSignature Language="F#" Value="type IRemoteArgumentArrayListContract = interface&#xA;    interface IRemoteArgumentArrayContract&#xA;    interface IRemoteArgumentCollectionContract&#xA;    interface IRemoteArgumentEnumerableContract&#xA;    interface IContract" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRemoteArgumentArrayListContract : System::AddIn::Contract::Collections::IRemoteArgumentArrayContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public void Add (System.AddIn.Contract.RemoteArgument newItem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(valuetype System.AddIn.Contract.RemoteArgument newItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract.Add(System.AddIn.Contract.RemoteArgument)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (newItem As RemoteArgument)" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.AddIn.Contract.RemoteArgument -&gt; unit" Usage="iRemoteArgumentArrayListContract.Add newItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::AddIn::Contract::RemoteArgument newItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -41,6 +47,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit" Usage="iRemoteArgumentArrayListContract.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -59,6 +68,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.AddIn.Contract.RemoteArgument item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(valuetype System.AddIn.Contract.RemoteArgument item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract.Contains(System.AddIn.Contract.RemoteArgument)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (item As RemoteArgument) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.AddIn.Contract.RemoteArgument -&gt; bool" Usage="iRemoteArgumentArrayListContract.Contains item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::AddIn::Contract::RemoteArgument item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -82,6 +94,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.AddIn.Contract.RemoteArgument item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(valuetype System.AddIn.Contract.RemoteArgument item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract.IndexOf(System.AddIn.Contract.RemoteArgument)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (item As RemoteArgument) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : System.AddIn.Contract.RemoteArgument -&gt; int" Usage="iRemoteArgumentArrayListContract.IndexOf item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::AddIn::Contract::RemoteArgument item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -104,6 +119,9 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.AddIn.Contract.RemoteArgument item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, valuetype System.AddIn.Contract.RemoteArgument item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract.Insert(System.Int32,System.AddIn.Contract.RemoteArgument)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, item As RemoteArgument)" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * System.AddIn.Contract.RemoteArgument -&gt; unit" Usage="iRemoteArgumentArrayListContract.Insert (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::AddIn::Contract::RemoteArgument item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -133,6 +151,9 @@
       <MemberSignature Language="C#" Value="public void Remove (System.AddIn.Contract.RemoteArgument item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(valuetype System.AddIn.Contract.RemoteArgument item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract.Remove(System.AddIn.Contract.RemoteArgument)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (item As RemoteArgument)" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.AddIn.Contract.RemoteArgument -&gt; unit" Usage="iRemoteArgumentArrayListContract.Remove item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::AddIn::Contract::RemoteArgument item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -154,6 +175,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentArrayListContract.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit" Usage="iRemoteArgumentArrayListContract.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

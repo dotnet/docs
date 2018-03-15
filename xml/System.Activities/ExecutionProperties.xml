@@ -1,7 +1,10 @@
-<Type Name="ExecutionProperties" FullName="System.Activities.ExecutionProperties">
+﻿<Type Name="ExecutionProperties" FullName="System.Activities.ExecutionProperties">
   <TypeSignature Language="C#" Value="public sealed class ExecutionProperties : System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExecutionProperties extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Activities.ExecutionProperties" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExecutionProperties&#xA;Implements IEnumerable(Of KeyValuePair(Of String, Object))" />
+  <TypeSignature Language="F#" Value="type ExecutionProperties = class&#xA;    interface seq&lt;KeyValuePair&lt;string, obj&gt;&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExecutionProperties sealed : System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,10 +33,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers a new property.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (string name, object property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string name, object property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ExecutionProperties.Add(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (name As String, property As Object)" />
+      <MemberSignature Language="F#" Value="member this.Add : string * obj -&gt; unit" Usage="executionProperties.Add (name, property)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ name, System::Object ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -57,6 +72,9 @@
       <MemberSignature Language="C#" Value="public void Add (string name, object property, bool onlyVisibleToPublicChildren);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string name, object property, bool onlyVisibleToPublicChildren) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ExecutionProperties.Add(System.String,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (name As String, property As Object, onlyVisibleToPublicChildren As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Add : string * obj * bool -&gt; unit" Usage="executionProperties.Add (name, property, onlyVisibleToPublicChildren)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ name, System::Object ^ property, bool onlyVisibleToPublicChildren);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -82,6 +100,9 @@
       <MemberSignature Language="C#" Value="public object Find (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Find(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ExecutionProperties.Find(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (name As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Find : string -&gt; obj" Usage="executionProperties.Find name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Find(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -111,7 +132,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ExecutionProperties.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of String, Object))" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string, obj&gt;&gt;" Usage="executionProperties.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -130,6 +157,9 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ExecutionProperties.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Activities.ExecutionProperties.IsEmpty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -149,6 +179,9 @@
       <MemberSignature Language="C#" Value="public bool Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ExecutionProperties.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (name As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; bool" Usage="executionProperties.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -179,7 +212,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ExecutionProperties.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -194,14 +232,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers a new property.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

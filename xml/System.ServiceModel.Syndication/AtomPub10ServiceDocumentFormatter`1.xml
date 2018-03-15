@@ -1,7 +1,10 @@
-<Type Name="AtomPub10ServiceDocumentFormatter&lt;TServiceDocument&gt;" FullName="System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter&lt;TServiceDocument&gt;">
+﻿<Type Name="AtomPub10ServiceDocumentFormatter&lt;TServiceDocument&gt;" FullName="System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter&lt;TServiceDocument&gt;">
   <TypeSignature Language="C#" Value="public class AtomPub10ServiceDocumentFormatter&lt;TServiceDocument&gt; : System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter where TServiceDocument : ServiceDocumentnew()" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AtomPub10ServiceDocumentFormatter`1&lt;.ctor (class System.ServiceModel.Syndication.ServiceDocument) TServiceDocument&gt; extends System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class AtomPub10ServiceDocumentFormatter(Of TServiceDocument)&#xA;Inherits AtomPub10ServiceDocumentFormatter" />
+  <TypeSignature Language="F#" Value="type AtomPub10ServiceDocumentFormatter&lt;'ServiceDocument (requires 'ServiceDocument :&gt; ServiceDocument and 'ServiceDocument : (new : unit -&gt; 'ServiceDocument))&gt; = class&#xA;    inherit AtomPub10ServiceDocumentFormatter" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TServiceDocument&gt;&#xA; where TServiceDocument : ServiceDocumentgcnew()public ref class AtomPub10ServiceDocumentFormatter : System::ServiceModel::Syndication::AtomPub10ServiceDocumentFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,10 +43,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the Atom 1.0-based <see cref="T:System.ServiceModel.Syndication.ServiceDocumentFormatter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AtomPub10ServiceDocumentFormatter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AtomPub10ServiceDocumentFormatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +77,9 @@
       <MemberSignature Language="C#" Value="public AtomPub10ServiceDocumentFormatter (TServiceDocument documentToWrite);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TServiceDocument documentToWrite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter`1.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (documentToWrite As TServiceDocument)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter&lt;'ServiceDocument (requires 'ServiceDocument :&gt; System.ServiceModel.Syndication.ServiceDocument and 'ServiceDocument : (new : unit -&gt; 'ServiceDocument))&gt; : 'ServiceDocument -&gt; System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter&lt;'ServiceDocument (requires 'ServiceDocument :&gt; System.ServiceModel.Syndication.ServiceDocument and 'ServiceDocument : (new : unit -&gt; 'ServiceDocument))&gt;" Usage="new System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter&lt;'ServiceDocument (requires 'ServiceDocument :&gt; System.ServiceModel.Syndication.ServiceDocument and 'ServiceDocument : (new : unit -&gt; 'ServiceDocument))&gt; documentToWrite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AtomPub10ServiceDocumentFormatter(TServiceDocument documentToWrite);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -94,6 +111,9 @@
       <MemberSignature Language="C#" Value="protected override System.ServiceModel.Syndication.ServiceDocument CreateDocumentInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.Syndication.ServiceDocument CreateDocumentInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter`1.CreateDocumentInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDocumentInstance () As ServiceDocument" />
+      <MemberSignature Language="F#" Value="override this.CreateDocumentInstance : unit -&gt; System.ServiceModel.Syndication.ServiceDocument" Usage="atomPub10ServiceDocumentFormatter.CreateDocumentInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::ServiceDocument ^ CreateDocumentInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,14 +133,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the Atom 1.0-based <see cref="T:System.ServiceModel.Syndication.ServiceDocumentFormatter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="CALLCONV" FullName="System.Runtime.InteropServices.CALLCONV">
+﻿<Type Name="CALLCONV" FullName="System.Runtime.InteropServices.CALLCONV">
   <TypeSignature Language="C#" Value="public enum CALLCONV" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CALLCONV extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CALLCONV" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CALLCONV" />
+  <TypeSignature Language="F#" Value="type CALLCONV = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CALLCONV" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="CC_CDECL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.CALLCONV CC_CDECL = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CALLCONV.CC_CDECL" />
+      <MemberSignature Language="VB.NET" Value="CC_CDECL" />
+      <MemberSignature Language="F#" Value="CC_CDECL = 1" Usage="System.Runtime.InteropServices.CALLCONV.CC_CDECL" />
+      <MemberSignature Language="C++ CLI" Value="CC_CDECL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -40,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the Cdecl calling convention is used for a method.</summary>
       </Docs>
@@ -48,6 +55,9 @@
       <MemberSignature Language="C#" Value="CC_MACPASCAL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.CALLCONV CC_MACPASCAL = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CALLCONV.CC_MACPASCAL" />
+      <MemberSignature Language="VB.NET" Value="CC_MACPASCAL" />
+      <MemberSignature Language="F#" Value="CC_MACPASCAL = 3" Usage="System.Runtime.InteropServices.CALLCONV.CC_MACPASCAL" />
+      <MemberSignature Language="C++ CLI" Value="CC_MACPASCAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -57,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates that the Macpascal calling convention is used for a method.</summary>
       </Docs>
@@ -65,6 +76,9 @@
       <MemberSignature Language="C#" Value="CC_MAX" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.CALLCONV CC_MAX = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CALLCONV.CC_MAX" />
+      <MemberSignature Language="VB.NET" Value="CC_MAX" />
+      <MemberSignature Language="F#" Value="CC_MAX = 9" Usage="System.Runtime.InteropServices.CALLCONV.CC_MAX" />
+      <MemberSignature Language="C++ CLI" Value="CC_MAX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Indicates the end of the <see cref="T:System.Runtime.InteropServices.CALLCONV" /> enumeration.</summary>
       </Docs>
@@ -82,6 +97,9 @@
       <MemberSignature Language="C#" Value="CC_MPWCDECL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.CALLCONV CC_MPWCDECL = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CALLCONV.CC_MPWCDECL" />
+      <MemberSignature Language="VB.NET" Value="CC_MPWCDECL" />
+      <MemberSignature Language="F#" Value="CC_MPWCDECL = 7" Usage="System.Runtime.InteropServices.CALLCONV.CC_MPWCDECL" />
+      <MemberSignature Language="C++ CLI" Value="CC_MPWCDECL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -91,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Indicates that the Mpwcdecl calling convention is used for a method.</summary>
       </Docs>
@@ -99,6 +118,9 @@
       <MemberSignature Language="C#" Value="CC_MPWPASCAL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.CALLCONV CC_MPWPASCAL = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CALLCONV.CC_MPWPASCAL" />
+      <MemberSignature Language="VB.NET" Value="CC_MPWPASCAL" />
+      <MemberSignature Language="F#" Value="CC_MPWPASCAL = 8" Usage="System.Runtime.InteropServices.CALLCONV.CC_MPWPASCAL" />
+      <MemberSignature Language="C++ CLI" Value="CC_MPWPASCAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -108,6 +130,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Indicates that the Mpwpascal calling convention is used for a method.</summary>
       </Docs>
@@ -116,6 +139,9 @@
       <MemberSignature Language="C#" Value="CC_MSCPASCAL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.CALLCONV CC_MSCPASCAL = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CALLCONV.CC_MSCPASCAL" />
+      <MemberSignature Language="VB.NET" Value="CC_MSCPASCAL" />
+      <MemberSignature Language="F#" Value="CC_MSCPASCAL = 2" Usage="System.Runtime.InteropServices.CALLCONV.CC_MSCPASCAL" />
+      <MemberSignature Language="C++ CLI" Value="CC_MSCPASCAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -125,6 +151,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the Mscpascal calling convention is used for a method.</summary>
       </Docs>
@@ -133,6 +160,9 @@
       <MemberSignature Language="C#" Value="CC_PASCAL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.CALLCONV CC_PASCAL = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CALLCONV.CC_PASCAL" />
+      <MemberSignature Language="VB.NET" Value="CC_PASCAL" />
+      <MemberSignature Language="F#" Value="CC_PASCAL = 2" Usage="System.Runtime.InteropServices.CALLCONV.CC_PASCAL" />
+      <MemberSignature Language="C++ CLI" Value="CC_PASCAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -142,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the Pascal calling convention is used for a method.</summary>
       </Docs>
@@ -150,6 +181,9 @@
       <MemberSignature Language="C#" Value="CC_RESERVED" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.CALLCONV CC_RESERVED = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CALLCONV.CC_RESERVED" />
+      <MemberSignature Language="VB.NET" Value="CC_RESERVED" />
+      <MemberSignature Language="F#" Value="CC_RESERVED = 5" Usage="System.Runtime.InteropServices.CALLCONV.CC_RESERVED" />
+      <MemberSignature Language="C++ CLI" Value="CC_RESERVED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -159,6 +193,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>This value is reserved for future use.</summary>
       </Docs>
@@ -167,6 +202,9 @@
       <MemberSignature Language="C#" Value="CC_STDCALL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.CALLCONV CC_STDCALL = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CALLCONV.CC_STDCALL" />
+      <MemberSignature Language="VB.NET" Value="CC_STDCALL" />
+      <MemberSignature Language="F#" Value="CC_STDCALL = 4" Usage="System.Runtime.InteropServices.CALLCONV.CC_STDCALL" />
+      <MemberSignature Language="C++ CLI" Value="CC_STDCALL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -176,6 +214,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that the Stdcall calling convention is used for a method.</summary>
       </Docs>
@@ -184,6 +223,9 @@
       <MemberSignature Language="C#" Value="CC_SYSCALL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.CALLCONV CC_SYSCALL = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.CALLCONV.CC_SYSCALL" />
+      <MemberSignature Language="VB.NET" Value="CC_SYSCALL" />
+      <MemberSignature Language="F#" Value="CC_SYSCALL = 6" Usage="System.Runtime.InteropServices.CALLCONV.CC_SYSCALL" />
+      <MemberSignature Language="C++ CLI" Value="CC_SYSCALL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -193,6 +235,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.CALLCONV</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Indicates that the Syscall calling convention is used for a method.</summary>
       </Docs>

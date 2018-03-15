@@ -1,7 +1,10 @@
-<Type Name="EventLogPermissionEntry" FullName="System.Diagnostics.EventLogPermissionEntry">
+﻿<Type Name="EventLogPermissionEntry" FullName="System.Diagnostics.EventLogPermissionEntry">
   <TypeSignature Language="C#" Value="public class EventLogPermissionEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit EventLogPermissionEntry extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogPermissionEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventLogPermissionEntry" />
+  <TypeSignature Language="F#" Value="type EventLogPermissionEntry = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventLogPermissionEntry" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="public EventLogPermissionEntry (System.Diagnostics.EventLogPermissionAccess permissionAccess, string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.EventLogPermissionAccess permissionAccess, string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogPermissionEntry.#ctor(System.Diagnostics.EventLogPermissionAccess,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccess As EventLogPermissionAccess, machineName As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.EventLogPermissionEntry : System.Diagnostics.EventLogPermissionAccess * string -&gt; System.Diagnostics.EventLogPermissionEntry" Usage="new System.Diagnostics.EventLogPermissionEntry (permissionAccess, machineName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogPermissionEntry(System::Diagnostics::EventLogPermissionAccess permissionAccess, System::String ^ machineName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +73,9 @@
       <MemberSignature Language="C#" Value="public string MachineName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogPermissionEntry.MachineName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MachineName As String" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string" Usage="System.Diagnostics.EventLogPermissionEntry.MachineName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -96,6 +105,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.EventLogPermissionAccess PermissionAccess { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.EventLogPermissionAccess PermissionAccess" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogPermissionEntry.PermissionAccess" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionAccess As EventLogPermissionAccess" />
+      <MemberSignature Language="F#" Value="member this.PermissionAccess : System.Diagnostics.EventLogPermissionAccess" Usage="System.Diagnostics.EventLogPermissionEntry.PermissionAccess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::EventLogPermissionAccess PermissionAccess { System::Diagnostics::EventLogPermissionAccess get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

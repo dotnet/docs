@@ -1,7 +1,10 @@
-<Type Name="WorkflowQueuingService" FullName="System.Workflow.Runtime.WorkflowQueuingService">
+﻿<Type Name="WorkflowQueuingService" FullName="System.Workflow.Runtime.WorkflowQueuingService">
   <TypeSignature Language="C#" Value="public class WorkflowQueuingService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowQueuingService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowQueuingService" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowQueuingService" />
+  <TypeSignature Language="F#" Value="type WorkflowQueuingService = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowQueuingService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +48,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowQueue CreateWorkflowQueue (IComparable queueName, bool transactional);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Runtime.WorkflowQueue CreateWorkflowQueue(class System.IComparable queueName, bool transactional) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueuingService.CreateWorkflowQueue(System.IComparable,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateWorkflowQueue (queueName As IComparable, transactional As Boolean) As WorkflowQueue" />
+      <MemberSignature Language="F#" Value="member this.CreateWorkflowQueue : IComparable * bool -&gt; System.Workflow.Runtime.WorkflowQueue" Usage="workflowQueuingService.CreateWorkflowQueue (queueName, transactional)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Runtime::WorkflowQueue ^ CreateWorkflowQueue(IComparable ^ queueName, bool transactional);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -89,6 +95,9 @@
       <MemberSignature Language="C#" Value="public void DeleteWorkflowQueue (IComparable queueName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteWorkflowQueue(class System.IComparable queueName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueuingService.DeleteWorkflowQueue(System.IComparable)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteWorkflowQueue (queueName As IComparable)" />
+      <MemberSignature Language="F#" Value="member this.DeleteWorkflowQueue : IComparable -&gt; unit" Usage="workflowQueuingService.DeleteWorkflowQueue queueName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteWorkflowQueue(IComparable ^ queueName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -124,6 +133,9 @@
       <MemberSignature Language="C#" Value="public bool Exists (IComparable queueName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Exists(class System.IComparable queueName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueuingService.Exists(System.IComparable)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Exists (queueName As IComparable) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Exists : IComparable -&gt; bool" Usage="workflowQueuingService.Exists queueName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Exists(IComparable ^ queueName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -161,6 +173,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowQueue GetWorkflowQueue (IComparable queueName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Runtime.WorkflowQueue GetWorkflowQueue(class System.IComparable queueName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueuingService.GetWorkflowQueue(System.IComparable)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetWorkflowQueue (queueName As IComparable) As WorkflowQueue" />
+      <MemberSignature Language="F#" Value="member this.GetWorkflowQueue : IComparable -&gt; System.Workflow.Runtime.WorkflowQueue" Usage="workflowQueuingService.GetWorkflowQueue queueName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Runtime::WorkflowQueue ^ GetWorkflowQueue(IComparable ^ queueName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -198,6 +213,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty PendingMessagesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty PendingMessagesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.WorkflowQueuingService.PendingMessagesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PendingMessagesProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PendingMessagesProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Runtime.WorkflowQueuingService.PendingMessagesProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ PendingMessagesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

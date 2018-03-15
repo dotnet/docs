@@ -1,7 +1,10 @@
-<Type Name="DataGridSortingEventHandler" FullName="System.Windows.Controls.DataGridSortingEventHandler">
+﻿<Type Name="DataGridSortingEventHandler" FullName="System.Windows.Controls.DataGridSortingEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridSortingEventHandler(object sender, DataGridSortingEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridSortingEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridSortingEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridSortingEventHandler(sender As Object, e As DataGridSortingEventArgs)" />
+  <TypeSignature Language="F#" Value="type DataGridSortingEventHandler = delegate of obj * DataGridSortingEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridSortingEventHandler(System::Object ^ sender, DataGridSortingEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

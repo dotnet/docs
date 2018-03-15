@@ -1,7 +1,10 @@
-<Type Name="CompressionLevel" FullName="System.IO.Compression.CompressionLevel">
+﻿<Type Name="CompressionLevel" FullName="System.IO.Compression.CompressionLevel">
   <TypeSignature Language="C#" Value="public enum CompressionLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompressionLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Compression.CompressionLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CompressionLevel" />
+  <TypeSignature Language="F#" Value="type CompressionLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CompressionLevel" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Compression</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,6 +63,9 @@
       <MemberSignature Language="C#" Value="Fastest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Compression.CompressionLevel Fastest = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Compression.CompressionLevel.Fastest" />
+      <MemberSignature Language="VB.NET" Value="Fastest" />
+      <MemberSignature Language="F#" Value="Fastest = 1" Usage="System.IO.Compression.CompressionLevel.Fastest" />
+      <MemberSignature Language="C++ CLI" Value="Fastest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -79,6 +85,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Compression.CompressionLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The compression operation should complete as quickly as possible, even if the resulting file is not optimally compressed.</summary>
       </Docs>
@@ -87,6 +94,9 @@
       <MemberSignature Language="C#" Value="NoCompression" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Compression.CompressionLevel NoCompression = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Compression.CompressionLevel.NoCompression" />
+      <MemberSignature Language="VB.NET" Value="NoCompression" />
+      <MemberSignature Language="F#" Value="NoCompression = 2" Usage="System.IO.Compression.CompressionLevel.NoCompression" />
+      <MemberSignature Language="C++ CLI" Value="NoCompression" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -106,6 +116,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Compression.CompressionLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>No compression should be performed on the file.</summary>
       </Docs>
@@ -114,6 +125,9 @@
       <MemberSignature Language="C#" Value="Optimal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Compression.CompressionLevel Optimal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Compression.CompressionLevel.Optimal" />
+      <MemberSignature Language="VB.NET" Value="Optimal" />
+      <MemberSignature Language="F#" Value="Optimal = 0" Usage="System.IO.Compression.CompressionLevel.Optimal" />
+      <MemberSignature Language="C++ CLI" Value="Optimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Compression</AssemblyName>
@@ -133,6 +147,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Compression.CompressionLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The compression operation should be optimally compressed, even if the operation takes a longer time to complete.</summary>
       </Docs>

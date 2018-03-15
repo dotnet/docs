@@ -1,7 +1,10 @@
-<Type Name="TraceLevel" FullName="System.Diagnostics.TraceLevel">
+﻿<Type Name="TraceLevel" FullName="System.Diagnostics.TraceLevel">
   <TypeSignature Language="C#" Value="public enum TraceLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TraceLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.TraceLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TraceLevel" />
+  <TypeSignature Language="F#" Value="type TraceLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TraceLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +76,9 @@
       <MemberSignature Language="C#" Value="Error" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceLevel Error = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLevel.Error" />
+      <MemberSignature Language="VB.NET" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 1" Usage="System.Diagnostics.TraceLevel.Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -91,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Output error-handling messages.</summary>
       </Docs>
@@ -99,6 +106,9 @@
       <MemberSignature Language="C#" Value="Info" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceLevel Info = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLevel.Info" />
+      <MemberSignature Language="VB.NET" Value="Info" />
+      <MemberSignature Language="F#" Value="Info = 3" Usage="System.Diagnostics.TraceLevel.Info" />
+      <MemberSignature Language="C++ CLI" Value="Info" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -117,6 +127,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Output informational messages, warnings, and error-handling messages.</summary>
       </Docs>
@@ -125,6 +136,9 @@
       <MemberSignature Language="C#" Value="Off" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceLevel Off = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLevel.Off" />
+      <MemberSignature Language="VB.NET" Value="Off" />
+      <MemberSignature Language="F#" Value="Off = 0" Usage="System.Diagnostics.TraceLevel.Off" />
+      <MemberSignature Language="C++ CLI" Value="Off" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -143,6 +157,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Output no tracing and debugging messages.</summary>
       </Docs>
@@ -151,6 +166,9 @@
       <MemberSignature Language="C#" Value="Verbose" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceLevel Verbose = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLevel.Verbose" />
+      <MemberSignature Language="VB.NET" Value="Verbose" />
+      <MemberSignature Language="F#" Value="Verbose = 4" Usage="System.Diagnostics.TraceLevel.Verbose" />
+      <MemberSignature Language="C++ CLI" Value="Verbose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -169,6 +187,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Output all debugging and tracing messages.</summary>
       </Docs>
@@ -177,6 +196,9 @@
       <MemberSignature Language="C#" Value="Warning" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.TraceLevel Warning = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.TraceLevel.Warning" />
+      <MemberSignature Language="VB.NET" Value="Warning" />
+      <MemberSignature Language="F#" Value="Warning = 2" Usage="System.Diagnostics.TraceLevel.Warning" />
+      <MemberSignature Language="C++ CLI" Value="Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -195,6 +217,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.TraceLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Output warnings and error-handling messages.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="BufferedReceiveElement" FullName="System.ServiceModel.Activities.Configuration.BufferedReceiveElement">
+﻿<Type Name="BufferedReceiveElement" FullName="System.ServiceModel.Activities.Configuration.BufferedReceiveElement">
   <TypeSignature Language="C#" Value="public sealed class BufferedReceiveElement : System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BufferedReceiveElement extends System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Configuration.BufferedReceiveElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BufferedReceiveElement&#xA;Inherits BehaviorExtensionElement" />
+  <TypeSignature Language="F#" Value="type BufferedReceiveElement = class&#xA;    inherit BehaviorExtensionElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BufferedReceiveElement sealed : System::ServiceModel::Configuration::BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public BufferedReceiveElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.BufferedReceiveElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BufferedReceiveElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public override Type BehaviorType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BehaviorType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.BufferedReceiveElement.BehaviorType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
+      <MemberSignature Language="F#" Value="member this.BehaviorType : Type" Usage="System.ServiceModel.Activities.Configuration.BufferedReceiveElement.BehaviorType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BehaviorType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -49,9 +57,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateBehavior">
-      <MemberSignature Language="C#" Value="protected override object CreateBehavior ();" />
+      <MemberSignature Language="C#" Value="protected internal override object CreateBehavior ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object CreateBehavior() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.BufferedReceiveElement.CreateBehavior" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
+      <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="bufferedReceiveElement.CreateBehavior " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -71,6 +82,9 @@
       <MemberSignature Language="C#" Value="public int MaxPendingMessagesPerChannel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPendingMessagesPerChannel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.BufferedReceiveElement.MaxPendingMessagesPerChannel" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxPendingMessagesPerChannel As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxPendingMessagesPerChannel : int with get, set" Usage="System.ServiceModel.Activities.Configuration.BufferedReceiveElement.MaxPendingMessagesPerChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingMessagesPerChannel { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -100,6 +114,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.BufferedReceiveElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Activities.Configuration.BufferedReceiveElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

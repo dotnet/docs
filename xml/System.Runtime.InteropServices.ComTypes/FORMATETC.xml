@@ -1,7 +1,10 @@
-<Type Name="FORMATETC" FullName="System.Runtime.InteropServices.ComTypes.FORMATETC">
+﻿<Type Name="FORMATETC" FullName="System.Runtime.InteropServices.ComTypes.FORMATETC">
   <TypeSignature Language="C#" Value="public struct FORMATETC" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit FORMATETC extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.FORMATETC" />
+  <TypeSignature Language="VB.NET" Value="Public Structure FORMATETC" />
+  <TypeSignature Language="F#" Value="type FORMATETC = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class FORMATETC" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="public short cfFormat;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 cfFormat" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FORMATETC.cfFormat" />
+      <MemberSignature Language="VB.NET" Value="Public cfFormat As Short " />
+      <MemberSignature Language="F#" Value="val mutable cfFormat : int16" Usage="System.Runtime.InteropServices.ComTypes.FORMATETC.cfFormat" />
+      <MemberSignature Language="C++ CLI" Value="public: short cfFormat;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -88,6 +94,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.DVASPECT dwAspect;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.DVASPECT dwAspect" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FORMATETC.dwAspect" />
+      <MemberSignature Language="VB.NET" Value="Public dwAspect As DVASPECT " />
+      <MemberSignature Language="F#" Value="val mutable dwAspect : System.Runtime.InteropServices.ComTypes.DVASPECT" Usage="System.Runtime.InteropServices.ComTypes.FORMATETC.dwAspect" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::DVASPECT dwAspect;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -126,6 +135,9 @@
       <MemberSignature Language="C#" Value="public int lindex;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 lindex" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FORMATETC.lindex" />
+      <MemberSignature Language="VB.NET" Value="Public lindex As Integer " />
+      <MemberSignature Language="F#" Value="val mutable lindex : int" Usage="System.Runtime.InteropServices.ComTypes.FORMATETC.lindex" />
+      <MemberSignature Language="C++ CLI" Value="public: int lindex;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -164,6 +176,9 @@
       <MemberSignature Language="C#" Value="public IntPtr ptd;" />
       <MemberSignature Language="ILAsm" Value=".field public native int ptd" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FORMATETC.ptd" />
+      <MemberSignature Language="VB.NET" Value="Public ptd As IntPtr " />
+      <MemberSignature Language="F#" Value="val mutable ptd : nativeint" Usage="System.Runtime.InteropServices.ComTypes.FORMATETC.ptd" />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr ptd;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -202,6 +217,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.TYMED tymed;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.TYMED tymed" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FORMATETC.tymed" />
+      <MemberSignature Language="VB.NET" Value="Public tymed As TYMED " />
+      <MemberSignature Language="F#" Value="val mutable tymed : System.Runtime.InteropServices.ComTypes.TYMED" Usage="System.Runtime.InteropServices.ComTypes.FORMATETC.tymed" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::TYMED tymed;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

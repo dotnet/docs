@@ -1,7 +1,10 @@
-<Type Name="PlatformCulture" FullName="Microsoft.Windows.Themes.PlatformCulture">
+﻿<Type Name="PlatformCulture" FullName="Microsoft.Windows.Themes.PlatformCulture">
   <TypeSignature Language="C#" Value="public static class PlatformCulture" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PlatformCulture extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.PlatformCulture" />
+  <TypeSignature Language="VB.NET" Value="Public Class PlatformCulture" />
+  <TypeSignature Language="F#" Value="type PlatformCulture = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PlatformCulture abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework.Aero</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +61,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FlowDirection FlowDirection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FlowDirection FlowDirection" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Windows.Themes.PlatformCulture.FlowDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FlowDirection As FlowDirection" />
+      <MemberSignature Language="F#" Value="member this.FlowDirection : System.Windows.FlowDirection" Usage="Microsoft.Windows.Themes.PlatformCulture.FlowDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FlowDirection FlowDirection { System::Windows::FlowDirection get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Aero</AssemblyName>

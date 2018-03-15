@@ -1,7 +1,10 @@
-<Type Name="ConsoleCancelEventArgs" FullName="System.ConsoleCancelEventArgs">
+﻿<Type Name="ConsoleCancelEventArgs" FullName="System.ConsoleCancelEventArgs">
   <TypeSignature Language="C#" Value="public sealed class ConsoleCancelEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ConsoleCancelEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ConsoleCancelEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConsoleCancelEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type ConsoleCancelEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConsoleCancelEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Console</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,9 @@
       <MemberSignature Language="C#" Value="public bool Cancel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Cancel" />
       <MemberSignature Language="DocId" Value="P:System.ConsoleCancelEventArgs.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Cancel : bool with get, set" Usage="System.ConsoleCancelEventArgs.Cancel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -101,6 +107,9 @@
       <MemberSignature Language="C#" Value="public ConsoleSpecialKey SpecialKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ConsoleSpecialKey SpecialKey" />
       <MemberSignature Language="DocId" Value="P:System.ConsoleCancelEventArgs.SpecialKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SpecialKey As ConsoleSpecialKey" />
+      <MemberSignature Language="F#" Value="member this.SpecialKey : ConsoleSpecialKey" Usage="System.ConsoleCancelEventArgs.SpecialKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ConsoleSpecialKey SpecialKey { ConsoleSpecialKey get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>

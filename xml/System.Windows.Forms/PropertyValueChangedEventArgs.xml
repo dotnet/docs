@@ -1,7 +1,10 @@
-<Type Name="PropertyValueChangedEventArgs" FullName="System.Windows.Forms.PropertyValueChangedEventArgs">
+﻿<Type Name="PropertyValueChangedEventArgs" FullName="System.Windows.Forms.PropertyValueChangedEventArgs">
   <TypeSignature Language="C#" Value="public class PropertyValueChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyValueChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyValueChangedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class PropertyValueChangedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type PropertyValueChangedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyValueChangedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="public PropertyValueChangedEventArgs (System.Windows.Forms.GridItem changedItem, object oldValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.GridItem changedItem, object oldValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyValueChangedEventArgs.#ctor(System.Windows.Forms.GridItem,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (changedItem As GridItem, oldValue As Object)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.PropertyValueChangedEventArgs : System.Windows.Forms.GridItem * obj -&gt; System.Windows.Forms.PropertyValueChangedEventArgs" Usage="new System.Windows.Forms.PropertyValueChangedEventArgs (changedItem, oldValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyValueChangedEventArgs(System::Windows::Forms::GridItem ^ changedItem, System::Object ^ oldValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +69,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.GridItem ChangedItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.GridItem ChangedItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyValueChangedEventArgs.ChangedItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChangedItem As GridItem" />
+      <MemberSignature Language="F#" Value="member this.ChangedItem : System.Windows.Forms.GridItem" Usage="System.Windows.Forms.PropertyValueChangedEventArgs.ChangedItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::GridItem ^ ChangedItem { System::Windows::Forms::GridItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -93,6 +102,9 @@
       <MemberSignature Language="C#" Value="public object OldValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object OldValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyValueChangedEventArgs.OldValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldValue As Object" />
+      <MemberSignature Language="F#" Value="member this.OldValue : obj" Usage="System.Windows.Forms.PropertyValueChangedEventArgs.OldValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ OldValue { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

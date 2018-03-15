@@ -1,7 +1,10 @@
-<Type Name="SqlTruncateException" FullName="System.Data.SqlTypes.SqlTruncateException">
+﻿<Type Name="SqlTruncateException" FullName="System.Data.SqlTypes.SqlTruncateException">
   <TypeSignature Language="C#" Value="public sealed class SqlTruncateException : System.Data.SqlTypes.SqlTypeException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SqlTruncateException extends System.Data.SqlTypes.SqlTypeException" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlTruncateException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlTruncateException&#xA;Inherits SqlTypeException" />
+  <TypeSignature Language="F#" Value="type SqlTruncateException = class&#xA;    inherit SqlTypeException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlTruncateException sealed : System::Data::SqlTypes::SqlTypeException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -28,10 +31,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlTruncateException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SqlTruncateException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTruncateException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlTruncateException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -60,6 +74,9 @@
       <MemberSignature Language="C#" Value="public SqlTruncateException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTruncateException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlTruncateException : string -&gt; System.Data.SqlTypes.SqlTruncateException" Usage="new System.Data.SqlTypes.SqlTruncateException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlTruncateException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -91,6 +108,9 @@
       <MemberSignature Language="C#" Value="public SqlTruncateException (string message, Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlTruncateException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, e As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlTruncateException : string * Exception -&gt; System.Data.SqlTypes.SqlTruncateException" Usage="new System.Data.SqlTypes.SqlTruncateException (message, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlTruncateException(System::String ^ message, Exception ^ e);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -120,14 +140,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlTypes.SqlTruncateException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="ILogonTokenCacheManager" FullName="System.ServiceModel.Security.Tokens.ILogonTokenCacheManager">
+﻿<Type Name="ILogonTokenCacheManager" FullName="System.ServiceModel.Security.Tokens.ILogonTokenCacheManager">
   <TypeSignature Language="C#" Value="public interface ILogonTokenCacheManager" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILogonTokenCacheManager" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.ILogonTokenCacheManager" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ILogonTokenCacheManager" />
+  <TypeSignature Language="F#" Value="type ILogonTokenCacheManager = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ILogonTokenCacheManager" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="public void FlushLogonTokenCache ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FlushLogonTokenCache() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ILogonTokenCacheManager.FlushLogonTokenCache" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FlushLogonTokenCache ()" />
+      <MemberSignature Language="F#" Value="abstract member FlushLogonTokenCache : unit -&gt; unit" Usage="iLogonTokenCacheManager.FlushLogonTokenCache " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FlushLogonTokenCache();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,6 +54,9 @@
       <MemberSignature Language="C#" Value="public bool RemoveCachedLogonToken (string username);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RemoveCachedLogonToken(string username) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.Tokens.ILogonTokenCacheManager.RemoveCachedLogonToken(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveCachedLogonToken (username As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member RemoveCachedLogonToken : string -&gt; bool" Usage="iLogonTokenCacheManager.RemoveCachedLogonToken username" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveCachedLogonToken(System::String ^ username);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

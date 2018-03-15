@@ -1,7 +1,10 @@
-<Type Name="TrueTypeFontMode" FullName="System.Printing.TrueTypeFontMode">
+﻿<Type Name="TrueTypeFontMode" FullName="System.Printing.TrueTypeFontMode">
   <TypeSignature Language="C#" Value="public enum TrueTypeFontMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TrueTypeFontMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.TrueTypeFontMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TrueTypeFontMode" />
+  <TypeSignature Language="F#" Value="type TrueTypeFontMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TrueTypeFontMode" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +61,9 @@
       <MemberSignature Language="C#" Value="Automatic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.TrueTypeFontMode Automatic = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.Automatic" />
+      <MemberSignature Language="VB.NET" Value="Automatic" />
+      <MemberSignature Language="F#" Value="Automatic = 1" Usage="System.Printing.TrueTypeFontMode.Automatic" />
+      <MemberSignature Language="C++ CLI" Value="Automatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -66,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.TrueTypeFontMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The printer driver decides the best method for handling TrueType fonts.</summary>
       </Docs>
@@ -74,6 +81,9 @@
       <MemberSignature Language="C#" Value="DownloadAsNativeTrueTypeFont" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.TrueTypeFontMode DownloadAsNativeTrueTypeFont = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.DownloadAsNativeTrueTypeFont" />
+      <MemberSignature Language="VB.NET" Value="DownloadAsNativeTrueTypeFont" />
+      <MemberSignature Language="F#" Value="DownloadAsNativeTrueTypeFont = 4" Usage="System.Printing.TrueTypeFontMode.DownloadAsNativeTrueTypeFont" />
+      <MemberSignature Language="C++ CLI" Value="DownloadAsNativeTrueTypeFont" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -82,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.TrueTypeFontMode</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The printer driver downloads the TrueType font.</summary>
       </Docs>
@@ -90,6 +101,9 @@
       <MemberSignature Language="C#" Value="DownloadAsOutlineFont" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.TrueTypeFontMode DownloadAsOutlineFont = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.DownloadAsOutlineFont" />
+      <MemberSignature Language="VB.NET" Value="DownloadAsOutlineFont" />
+      <MemberSignature Language="F#" Value="DownloadAsOutlineFont = 2" Usage="System.Printing.TrueTypeFontMode.DownloadAsOutlineFont" />
+      <MemberSignature Language="C++ CLI" Value="DownloadAsOutlineFont" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -98,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.TrueTypeFontMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The printer driver downloads the TrueType font as an outline font.</summary>
       </Docs>
@@ -106,6 +121,9 @@
       <MemberSignature Language="C#" Value="DownloadAsRasterFont" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.TrueTypeFontMode DownloadAsRasterFont = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.DownloadAsRasterFont" />
+      <MemberSignature Language="VB.NET" Value="DownloadAsRasterFont" />
+      <MemberSignature Language="F#" Value="DownloadAsRasterFont = 3" Usage="System.Printing.TrueTypeFontMode.DownloadAsRasterFont" />
+      <MemberSignature Language="C++ CLI" Value="DownloadAsRasterFont" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -114,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.TrueTypeFontMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The printer driver creates a raster font for each size of the TrueType font that it needs and downloads them all.</summary>
       </Docs>
@@ -122,6 +141,9 @@
       <MemberSignature Language="C#" Value="RenderAsBitmap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.TrueTypeFontMode RenderAsBitmap = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.RenderAsBitmap" />
+      <MemberSignature Language="VB.NET" Value="RenderAsBitmap" />
+      <MemberSignature Language="F#" Value="RenderAsBitmap = 5" Usage="System.Printing.TrueTypeFontMode.RenderAsBitmap" />
+      <MemberSignature Language="C++ CLI" Value="RenderAsBitmap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -130,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.TrueTypeFontMode</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The printer driver downloads each area of text as a graphic.</summary>
       </Docs>
@@ -138,6 +161,9 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.TrueTypeFontMode Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.TrueTypeFontMode.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.TrueTypeFontMode.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -146,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.TrueTypeFontMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The feature (whose options are represented by this enumeration) is set to an option not defined. in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
       </Docs>

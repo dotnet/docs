@@ -1,7 +1,10 @@
-<Type Name="DataServiceQuery" FullName="System.Data.Services.Client.DataServiceQuery">
+﻿<Type Name="DataServiceQuery" FullName="System.Data.Services.Client.DataServiceQuery">
   <TypeSignature Language="C#" Value="public abstract class DataServiceQuery : System.Data.Services.Client.DataServiceRequest, System.Collections.IEnumerable, System.Linq.IQueryable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataServiceQuery extends System.Data.Services.Client.DataServiceRequest implements class System.Collections.IEnumerable, class System.Linq.IQueryable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceQuery" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataServiceQuery&#xA;Inherits DataServiceRequest&#xA;Implements IEnumerable, IQueryable" />
+  <TypeSignature Language="F#" Value="type DataServiceQuery = class&#xA;    inherit DataServiceRequest&#xA;    interface IQueryable&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataServiceQuery abstract : System::Data::Services::Client::DataServiceRequest, System::Collections::IEnumerable, System::Linq::IQueryable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginExecute (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginExecute(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQuery.BeginExecute(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginExecute (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="override this.BeginExecute : AsyncCallback * obj -&gt; IAsyncResult" Usage="dataServiceQuery.BeginExecute (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginExecute(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -68,6 +74,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable EndExecute (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerable EndExecute(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQuery.EndExecute(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndExecute (asyncResult As IAsyncResult) As IEnumerable" />
+      <MemberSignature Language="F#" Value="override this.EndExecute : IAsyncResult -&gt; System.Collections.IEnumerable" Usage="dataServiceQuery.EndExecute asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ EndExecute(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -92,6 +101,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerable Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQuery.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Function Execute () As IEnumerable" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; System.Collections.IEnumerable" Usage="dataServiceQuery.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -122,6 +134,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Linq.Expressions.Expression Expression { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.Expressions.Expression Expression" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceQuery.Expression" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Expression As Expression" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.Linq.Expressions.Expression" Usage="System.Data.Services.Client.DataServiceQuery.Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Linq::Expressions::Expression ^ Expression { System::Linq::Expressions::Expression ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -141,6 +156,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Linq.IQueryProvider Provider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.IQueryProvider Provider" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceQuery.Provider" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Provider As IQueryProvider" />
+      <MemberSignature Language="F#" Value="member this.Provider : System.Linq.IQueryProvider" Usage="System.Data.Services.Client.DataServiceQuery.Provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Linq::IQueryProvider ^ Provider { System::Linq::IQueryProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -160,7 +178,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceQuery.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>

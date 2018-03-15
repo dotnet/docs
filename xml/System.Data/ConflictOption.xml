@@ -1,7 +1,10 @@
-<Type Name="ConflictOption" FullName="System.Data.ConflictOption">
+﻿<Type Name="ConflictOption" FullName="System.Data.ConflictOption">
   <TypeSignature Language="C#" Value="public enum ConflictOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConflictOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.ConflictOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ConflictOption" />
+  <TypeSignature Language="F#" Value="type ConflictOption = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ConflictOption" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="CompareAllSearchableValues" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.ConflictOption CompareAllSearchableValues = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.ConflictOption.CompareAllSearchableValues" />
+      <MemberSignature Language="VB.NET" Value="CompareAllSearchableValues" />
+      <MemberSignature Language="F#" Value="CompareAllSearchableValues = 1" Usage="System.Data.ConflictOption.CompareAllSearchableValues" />
+      <MemberSignature Language="C++ CLI" Value="CompareAllSearchableValues" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -44,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Data.ConflictOption</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Update and delete statements will include all searchable columns from the table in the WHERE clause. This is equivalent to specifying <see langword="CompareAllValuesUpdate" /> | <see langword="CompareAllValuesDelete" />.</summary>
       </Docs>
@@ -52,6 +59,9 @@
       <MemberSignature Language="C#" Value="CompareRowVersion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.ConflictOption CompareRowVersion = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.ConflictOption.CompareRowVersion" />
+      <MemberSignature Language="VB.NET" Value="CompareRowVersion" />
+      <MemberSignature Language="F#" Value="CompareRowVersion = 2" Usage="System.Data.ConflictOption.CompareRowVersion" />
+      <MemberSignature Language="C++ CLI" Value="CompareRowVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Data.ConflictOption</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>If any Timestamp columns exist in the table, they are used in the WHERE clause for all generated update statements. This is equivalent to specifying <see langword="CompareRowVersionUpdate" /> | <see langword="CompareRowVersionDelete" />.</summary>
       </Docs>
@@ -77,6 +88,9 @@
       <MemberSignature Language="C#" Value="OverwriteChanges" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.ConflictOption OverwriteChanges = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.ConflictOption.OverwriteChanges" />
+      <MemberSignature Language="VB.NET" Value="OverwriteChanges" />
+      <MemberSignature Language="F#" Value="OverwriteChanges = 3" Usage="System.Data.ConflictOption.OverwriteChanges" />
+      <MemberSignature Language="C++ CLI" Value="OverwriteChanges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -94,6 +108,7 @@
       <ReturnValue>
         <ReturnType>System.Data.ConflictOption</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>All update and delete statements include only <see cref="P:System.Data.DataTable.PrimaryKey" /> columns in the WHERE clause. If no <see cref="P:System.Data.DataTable.PrimaryKey" /> is defined, all searchable columns are included in the WHERE clause. This is equivalent to <see langword="OverwriteChangesUpdate" /> | <see langword="OverwriteChangesDelete" />.</summary>
       </Docs>

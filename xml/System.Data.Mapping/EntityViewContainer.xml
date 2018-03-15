@@ -1,7 +1,10 @@
-<Type Name="EntityViewContainer" FullName="System.Data.Mapping.EntityViewContainer">
+﻿<Type Name="EntityViewContainer" FullName="System.Data.Mapping.EntityViewContainer">
   <TypeSignature Language="C#" Value="public abstract class EntityViewContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EntityViewContainer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Mapping.EntityViewContainer" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class EntityViewContainer" />
+  <TypeSignature Language="F#" Value="type EntityViewContainer = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityViewContainer abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="protected EntityViewContainer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Mapping.EntityViewContainer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EntityViewContainer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public string EdmEntityContainerName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EdmEntityContainerName" />
       <MemberSignature Language="DocId" Value="P:System.Data.Mapping.EntityViewContainer.EdmEntityContainerName" />
+      <MemberSignature Language="VB.NET" Value="Public Property EdmEntityContainerName As String" />
+      <MemberSignature Language="F#" Value="member this.EdmEntityContainerName : string with get, set" Usage="System.Data.Mapping.EntityViewContainer.EdmEntityContainerName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EdmEntityContainerName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -59,6 +67,9 @@
       <MemberSignature Language="C#" Value="protected abstract System.Collections.Generic.KeyValuePair&lt;string,string&gt; GetViewAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.Collections.Generic.KeyValuePair`2&lt;string, string&gt; GetViewAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Mapping.EntityViewContainer.GetViewAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetViewAt (index As Integer) As KeyValuePair(Of String, String)" />
+      <MemberSignature Language="F#" Value="abstract member GetViewAt : int -&gt; System.Collections.Generic.KeyValuePair&lt;string, string&gt;" Usage="entityViewContainer.GetViewAt index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::Generic::KeyValuePair&lt;System::String ^, System::String ^&gt; GetViewAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -81,6 +92,9 @@
       <MemberSignature Language="C#" Value="public string HashOverAllExtentViews { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HashOverAllExtentViews" />
       <MemberSignature Language="DocId" Value="P:System.Data.Mapping.EntityViewContainer.HashOverAllExtentViews" />
+      <MemberSignature Language="VB.NET" Value="Public Property HashOverAllExtentViews As String" />
+      <MemberSignature Language="F#" Value="member this.HashOverAllExtentViews : string with get, set" Usage="System.Data.Mapping.EntityViewContainer.HashOverAllExtentViews" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HashOverAllExtentViews { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -99,6 +113,9 @@
       <MemberSignature Language="C#" Value="public string HashOverMappingClosure { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HashOverMappingClosure" />
       <MemberSignature Language="DocId" Value="P:System.Data.Mapping.EntityViewContainer.HashOverMappingClosure" />
+      <MemberSignature Language="VB.NET" Value="Public Property HashOverMappingClosure As String" />
+      <MemberSignature Language="F#" Value="member this.HashOverMappingClosure : string with get, set" Usage="System.Data.Mapping.EntityViewContainer.HashOverMappingClosure" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HashOverMappingClosure { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -117,6 +134,9 @@
       <MemberSignature Language="C#" Value="public string StoreEntityContainerName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StoreEntityContainerName" />
       <MemberSignature Language="DocId" Value="P:System.Data.Mapping.EntityViewContainer.StoreEntityContainerName" />
+      <MemberSignature Language="VB.NET" Value="Public Property StoreEntityContainerName As String" />
+      <MemberSignature Language="F#" Value="member this.StoreEntityContainerName : string with get, set" Usage="System.Data.Mapping.EntityViewContainer.StoreEntityContainerName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StoreEntityContainerName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -135,6 +155,9 @@
       <MemberSignature Language="C#" Value="public int ViewCount { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ViewCount" />
       <MemberSignature Language="DocId" Value="P:System.Data.Mapping.EntityViewContainer.ViewCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property ViewCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.ViewCount : int with get, set" Usage="System.Data.Mapping.EntityViewContainer.ViewCount" />
+      <MemberSignature Language="C++ CLI" Value="public:  property int ViewCount {  public:&#xA;int get(); protected:&#xA; void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

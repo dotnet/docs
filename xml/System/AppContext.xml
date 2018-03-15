@@ -1,7 +1,10 @@
-<Type Name="AppContext" FullName="System.AppContext">
+﻿<Type Name="AppContext" FullName="System.AppContext">
   <TypeSignature Language="C#" Value="public static class AppContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AppContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.AppContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class AppContext" />
+  <TypeSignature Language="F#" Value="type AppContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AppContext abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.AppContext</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -155,6 +158,9 @@
       <MemberSignature Language="C#" Value="public static string BaseDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string BaseDirectory" />
       <MemberSignature Language="DocId" Value="P:System.AppContext.BaseDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property BaseDirectory As String" />
+      <MemberSignature Language="F#" Value="member this.BaseDirectory : string" Usage="System.AppContext.BaseDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ BaseDirectory { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -194,6 +200,9 @@
       <MemberSignature Language="C#" Value="public static object GetData (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetData(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppContext.GetData(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetData (name As String) As Object" />
+      <MemberSignature Language="F#" Value="static member GetData : string -&gt; obj" Usage="System.AppContext.GetData name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetData(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -229,6 +238,9 @@
       <MemberSignature Language="C#" Value="public static void SetSwitch (string switchName, bool isEnabled);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetSwitch(string switchName, bool isEnabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppContext.SetSwitch(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetSwitch (switchName As String, isEnabled As Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetSwitch : string * bool -&gt; unit" Usage="System.AppContext.SetSwitch (switchName, isEnabled)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetSwitch(System::String ^ switchName, bool isEnabled);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -312,6 +324,9 @@
       <MemberSignature Language="C#" Value="public static string TargetFrameworkName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string TargetFrameworkName" />
       <MemberSignature Language="DocId" Value="P:System.AppContext.TargetFrameworkName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TargetFrameworkName As String" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkName : string" Usage="System.AppContext.TargetFrameworkName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ TargetFrameworkName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>
@@ -352,6 +367,9 @@
       <MemberSignature Language="C#" Value="public static bool TryGetSwitch (string switchName, out bool isEnabled);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGetSwitch(string switchName, [out] bool&amp; isEnabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppContext.TryGetSwitch(System.String,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGetSwitch (switchName As String, ByRef isEnabled As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryGetSwitch : string *  -&gt; bool" Usage="System.AppContext.TryGetSwitch (switchName, isEnabled)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGetSwitch(System::String ^ switchName, [Runtime::InteropServices::Out] bool % isEnabled);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AppContext</AssemblyName>

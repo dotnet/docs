@@ -1,7 +1,10 @@
-<Type Name="RegexWorker" FullName="System.Web.Configuration.RegexWorker">
+﻿<Type Name="RegexWorker" FullName="System.Web.Configuration.RegexWorker">
   <TypeSignature Language="C#" Value="public class RegexWorker" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RegexWorker extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.RegexWorker" />
+  <TypeSignature Language="VB.NET" Value="Public Class RegexWorker" />
+  <TypeSignature Language="F#" Value="type RegexWorker = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegexWorker" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public RegexWorker (System.Web.HttpBrowserCapabilities browserCaps);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpBrowserCapabilities browserCaps) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RegexWorker.#ctor(System.Web.HttpBrowserCapabilities)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (browserCaps As HttpBrowserCapabilities)" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.RegexWorker : System.Web.HttpBrowserCapabilities -&gt; System.Web.Configuration.RegexWorker" Usage="new System.Web.Configuration.RegexWorker browserCaps" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegexWorker(System::Web::HttpBrowserCapabilities ^ browserCaps);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -39,6 +45,9 @@
       <MemberSignature Language="C#" Value="public string this[string key] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.RegexWorker.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(key As String) As String" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string" Usage="System.Web.Configuration.RegexWorker.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ key); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +71,9 @@
       <MemberSignature Language="C#" Value="public bool ProcessRegex (string target, string regexExpression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ProcessRegex(string target, string regexExpression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.RegexWorker.ProcessRegex(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessRegex (target As String, regexExpression As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ProcessRegex : string * string -&gt; bool" Usage="regexWorker.ProcessRegex (target, regexExpression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ProcessRegex(System::String ^ target, System::String ^ regexExpression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

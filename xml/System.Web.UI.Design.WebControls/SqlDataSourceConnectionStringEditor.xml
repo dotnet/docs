@@ -1,7 +1,10 @@
-<Type Name="SqlDataSourceConnectionStringEditor" FullName="System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor">
+﻿<Type Name="SqlDataSourceConnectionStringEditor" FullName="System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor">
   <TypeSignature Language="C#" Value="public class SqlDataSourceConnectionStringEditor : System.Web.UI.Design.ConnectionStringEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlDataSourceConnectionStringEditor extends System.Web.UI.Design.ConnectionStringEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlDataSourceConnectionStringEditor&#xA;Inherits ConnectionStringEditor" />
+  <TypeSignature Language="F#" Value="type SqlDataSourceConnectionStringEditor = class&#xA;    inherit ConnectionStringEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlDataSourceConnectionStringEditor : System::Web::UI::Design::ConnectionStringEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,8 @@
       <MemberSignature Language="C#" Value="public SqlDataSourceConnectionStringEditor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDataSourceConnectionStringEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -47,6 +52,9 @@
       <MemberSignature Language="C#" Value="protected override string GetProviderName (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetProviderName(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor.GetProviderName(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetProviderName (instance As Object) As String" />
+      <MemberSignature Language="F#" Value="override this.GetProviderName : obj -&gt; string" Usage="sqlDataSourceConnectionStringEditor.GetProviderName instance" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetProviderName(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -69,6 +77,9 @@
       <MemberSignature Language="C#" Value="protected override void SetProviderName (object instance, System.ComponentModel.Design.Data.DesignerDataConnection connection);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetProviderName(object instance, class System.ComponentModel.Design.Data.DesignerDataConnection connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SqlDataSourceConnectionStringEditor.SetProviderName(System.Object,System.ComponentModel.Design.Data.DesignerDataConnection)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetProviderName (instance As Object, connection As DesignerDataConnection)" />
+      <MemberSignature Language="F#" Value="override this.SetProviderName : obj * System.ComponentModel.Design.Data.DesignerDataConnection -&gt; unit" Usage="sqlDataSourceConnectionStringEditor.SetProviderName (instance, connection)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetProviderName(System::Object ^ instance, System::ComponentModel::Design::Data::DesignerDataConnection ^ connection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

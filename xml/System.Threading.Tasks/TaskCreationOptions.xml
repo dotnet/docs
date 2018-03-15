@@ -1,7 +1,10 @@
-<Type Name="TaskCreationOptions" FullName="System.Threading.Tasks.TaskCreationOptions">
+﻿<Type Name="TaskCreationOptions" FullName="System.Threading.Tasks.TaskCreationOptions">
   <TypeSignature Language="C#" Value="public enum TaskCreationOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TaskCreationOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskCreationOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TaskCreationOptions" />
+  <TypeSignature Language="F#" Value="type TaskCreationOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TaskCreationOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +57,9 @@
       <MemberSignature Language="C#" Value="AttachedToParent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskCreationOptions AttachedToParent = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.AttachedToParent" />
+      <MemberSignature Language="VB.NET" Value="AttachedToParent" />
+      <MemberSignature Language="F#" Value="AttachedToParent = 4" Usage="System.Threading.Tasks.TaskCreationOptions.AttachedToParent" />
+      <MemberSignature Language="C++ CLI" Value="AttachedToParent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -76,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that a task is attached to a parent in the task hierarchy. By default, a child task (that is, an inner task created by an outer task) executes independently of its parent. You can use the <see cref="F:System.Threading.Tasks.TaskContinuationOptions.AttachedToParent" /> option so that the parent and child tasks are synchronized.  
   
@@ -88,6 +95,9 @@
       <MemberSignature Language="C#" Value="DenyChildAttach" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskCreationOptions DenyChildAttach = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.DenyChildAttach" />
+      <MemberSignature Language="VB.NET" Value="DenyChildAttach" />
+      <MemberSignature Language="F#" Value="DenyChildAttach = 8" Usage="System.Threading.Tasks.TaskCreationOptions.DenyChildAttach" />
+      <MemberSignature Language="C++ CLI" Value="DenyChildAttach" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -110,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Specifies that any child task that attempts to execute as an attached child task (that is, it is created with the <see cref="F:System.Threading.Tasks.TaskCreationOptions.AttachedToParent" /> option) will not be able to attach to the parent task and will execute instead as a detached child task. For more information, see [Attached and Detached Child Tasks](~/docs/standard/parallel-programming/attached-and-detached-child-tasks.md).</summary>
       </Docs>
@@ -118,6 +129,9 @@
       <MemberSignature Language="C#" Value="HideScheduler" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskCreationOptions HideScheduler = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.HideScheduler" />
+      <MemberSignature Language="VB.NET" Value="HideScheduler" />
+      <MemberSignature Language="F#" Value="HideScheduler = 16" Usage="System.Threading.Tasks.TaskCreationOptions.HideScheduler" />
+      <MemberSignature Language="C++ CLI" Value="HideScheduler" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -140,6 +154,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Prevents the ambient scheduler from being seen as the current scheduler in the created task. This means that operations like StartNew or ContinueWith that are performed in the created task will see <see cref="P:System.Threading.Tasks.TaskScheduler.Default" /> as the current scheduler.</summary>
       </Docs>
@@ -148,6 +163,9 @@
       <MemberSignature Language="C#" Value="LongRunning" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskCreationOptions LongRunning = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.LongRunning" />
+      <MemberSignature Language="VB.NET" Value="LongRunning" />
+      <MemberSignature Language="F#" Value="LongRunning = 2" Usage="System.Threading.Tasks.TaskCreationOptions.LongRunning" />
+      <MemberSignature Language="C++ CLI" Value="LongRunning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -170,6 +188,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that a task will be a long-running, coarse-grained operation involving fewer, larger components than fine-grained systems. It provides a hint to the <see cref="T:System.Threading.Tasks.TaskScheduler" /> that oversubscription may be warranted. Oversubscription lets you create more threads than the available number of hardware threads. It also provides a hint  to the task scheduler that an additional thread might be required for the task so that it does not block the forward progress of other threads or work items on the local thread-pool queue.</summary>
       </Docs>
@@ -178,6 +197,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskCreationOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Threading.Tasks.TaskCreationOptions.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -200,6 +222,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the default behavior should be used.</summary>
       </Docs>
@@ -208,6 +231,9 @@
       <MemberSignature Language="C#" Value="PreferFairness" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskCreationOptions PreferFairness = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.PreferFairness" />
+      <MemberSignature Language="VB.NET" Value="PreferFairness" />
+      <MemberSignature Language="F#" Value="PreferFairness = 1" Usage="System.Threading.Tasks.TaskCreationOptions.PreferFairness" />
+      <MemberSignature Language="C++ CLI" Value="PreferFairness" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -230,6 +256,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A hint to a <see cref="T:System.Threading.Tasks.TaskScheduler" /> to schedule a task in as fair a manner as possible, meaning that tasks scheduled sooner will be more likely to be run sooner, and tasks scheduled later will be more likely to be run later.</summary>
       </Docs>
@@ -238,6 +265,9 @@
       <MemberSignature Language="C#" Value="RunContinuationsAsynchronously" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskCreationOptions RunContinuationsAsynchronously = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskCreationOptions.RunContinuationsAsynchronously" />
+      <MemberSignature Language="VB.NET" Value="RunContinuationsAsynchronously" />
+      <MemberSignature Language="F#" Value="RunContinuationsAsynchronously = 64" Usage="System.Threading.Tasks.TaskCreationOptions.RunContinuationsAsynchronously" />
+      <MemberSignature Language="C++ CLI" Value="RunContinuationsAsynchronously" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -259,6 +289,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Forces continuations added to the current task to be executed asynchronously.  
   

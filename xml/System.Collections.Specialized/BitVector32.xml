@@ -1,7 +1,10 @@
-<Type Name="BitVector32" FullName="System.Collections.Specialized.BitVector32">
+﻿<Type Name="BitVector32" FullName="System.Collections.Specialized.BitVector32">
   <TypeSignature Language="C#" Value="public struct BitVector32" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit BitVector32 extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.BitVector32" />
+  <TypeSignature Language="VB.NET" Value="Public Structure BitVector32" />
+  <TypeSignature Language="F#" Value="type BitVector32 = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class BitVector32" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Specialized</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -54,10 +57,23 @@
     <altmember cref="T:System.Collections.BitArray" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.BitVector32" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BitVector32 (System.Collections.Specialized.BitVector32 value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Collections.Specialized.BitVector32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.#ctor(System.Collections.Specialized.BitVector32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As BitVector32)" />
+      <MemberSignature Language="F#" Value="new System.Collections.Specialized.BitVector32 : System.Collections.Specialized.BitVector32 -&gt; System.Collections.Specialized.BitVector32" Usage="new System.Collections.Specialized.BitVector32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitVector32(System::Collections::Specialized::BitVector32 value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -93,6 +109,9 @@
       <MemberSignature Language="C#" Value="public BitVector32 (int data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (data As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Collections.Specialized.BitVector32 : int -&gt; System.Collections.Specialized.BitVector32" Usage="new System.Collections.Specialized.BitVector32 data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitVector32(int data);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -124,10 +143,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateMask">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a series of masks that can be used to retrieve individual bits in a <see cref="T:System.Collections.Specialized.BitVector32" /> that is set up as bit flags.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateMask">
       <MemberSignature Language="C#" Value="public static int CreateMask ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CreateMask() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.CreateMask" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMask () As Integer" />
+      <MemberSignature Language="F#" Value="static member CreateMask : unit -&gt; int" Usage="System.Collections.Specialized.BitVector32.CreateMask " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CreateMask();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -181,6 +213,9 @@
       <MemberSignature Language="C#" Value="public static int CreateMask (int previous);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CreateMask(int32 previous) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.CreateMask(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateMask (previous As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="static member CreateMask : int -&gt; int" Usage="System.Collections.Specialized.BitVector32.CreateMask previous" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CreateMask(int previous);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -235,10 +270,23 @@
           <paramref name="previous" /> indicates the last bit flag in the <see cref="T:System.Collections.Specialized.BitVector32" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateSection">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a series of sections that contain small integers.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateSection">
       <MemberSignature Language="C#" Value="public static System.Collections.Specialized.BitVector32.Section CreateSection (short maxValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Collections.Specialized.BitVector32/Section CreateSection(int16 maxValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.CreateSection(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSection (maxValue As Short) As BitVector32.Section" />
+      <MemberSignature Language="F#" Value="static member CreateSection : int16 -&gt; System.Collections.Specialized.BitVector32.Section" Usage="System.Collections.Specialized.BitVector32.CreateSection maxValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Specialized::BitVector32::Section CreateSection(short maxValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -293,6 +341,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Specialized.BitVector32.Section CreateSection (short maxValue, System.Collections.Specialized.BitVector32.Section previous);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Collections.Specialized.BitVector32/Section CreateSection(int16 maxValue, valuetype System.Collections.Specialized.BitVector32/Section previous) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.CreateSection(System.Int16,System.Collections.Specialized.BitVector32.Section)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSection (maxValue As Short, previous As BitVector32.Section) As BitVector32.Section" />
+      <MemberSignature Language="F#" Value="static member CreateSection : int16 * System.Collections.Specialized.BitVector32.Section -&gt; System.Collections.Specialized.BitVector32.Section" Usage="System.Collections.Specialized.BitVector32.CreateSection (maxValue, previous)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Specialized::BitVector32::Section CreateSection(short maxValue, System::Collections::Specialized::BitVector32::Section previous);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -355,6 +406,9 @@
       <MemberSignature Language="C#" Value="public int Data { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Data" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.BitVector32.Data" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Data As Integer" />
+      <MemberSignature Language="F#" Value="member this.Data : int" Usage="System.Collections.Specialized.BitVector32.Data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Data { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -393,6 +447,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="bitVector32.Equals o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -444,6 +501,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="bitVector32.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -478,10 +538,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the value of the specified section or bit flag.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public int this[System.Collections.Specialized.BitVector32.Section section] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Item(valuetype System.Collections.Specialized.BitVector32/Section)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.BitVector32.Item(System.Collections.Specialized.BitVector32.Section)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(section As BitVector32.Section) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Item(System.Collections.Specialized.BitVector32.Section) : int with get, set" Usage="System.Collections.Specialized.BitVector32.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int default[System::Collections::Specialized::BitVector32::Section] { int get(System::Collections::Specialized::BitVector32::Section section); void set(System::Collections::Specialized::BitVector32::Section section, int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -529,6 +602,9 @@
       <MemberSignature Language="C#" Value="public bool this[int bit] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.BitVector32.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(bit As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : bool with get, set" Usage="System.Collections.Specialized.BitVector32.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool default[int] { bool get(int bit); void set(int bit, bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -572,10 +648,23 @@
         <altmember cref="M:System.Collections.Specialized.BitVector32.CreateMask" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string that represents a <see cref="T:System.Collections.Specialized.BitVector32" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="bitVector32.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -616,6 +705,9 @@
       <MemberSignature Language="C#" Value="public static string ToString (System.Collections.Specialized.BitVector32 value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(valuetype System.Collections.Specialized.BitVector32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.ToString(System.Collections.Specialized.BitVector32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As BitVector32) As String" />
+      <MemberSignature Language="F#" Value="static member ToString : System.Collections.Specialized.BitVector32 -&gt; string" Usage="System.Collections.Specialized.BitVector32.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Collections::Specialized::BitVector32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -652,55 +744,5 @@
         <altmember cref="T:System.String" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateMask">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.Specialized</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a series of masks that can be used to retrieve individual bits in a <see cref="T:System.Collections.Specialized.BitVector32" /> that is set up as bit flags.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateSection">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.Specialized</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a series of sections that contain small integers.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.Specialized</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Specialized.BitVector32" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.Specialized</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets the value of the specified section or bit flag.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.Specialized</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a string that represents a <see cref="T:System.Collections.Specialized.BitVector32" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

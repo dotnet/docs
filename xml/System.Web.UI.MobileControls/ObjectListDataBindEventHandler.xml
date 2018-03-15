@@ -1,7 +1,10 @@
-<Type Name="ObjectListDataBindEventHandler" FullName="System.Web.UI.MobileControls.ObjectListDataBindEventHandler">
+﻿<Type Name="ObjectListDataBindEventHandler" FullName="System.Web.UI.MobileControls.ObjectListDataBindEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ObjectListDataBindEventHandler(object sender, ObjectListDataBindEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectListDataBindEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListDataBindEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ObjectListDataBindEventHandler(sender As Object, e As ObjectListDataBindEventArgs)" />
+  <TypeSignature Language="F#" Value="type ObjectListDataBindEventHandler = delegate of obj * ObjectListDataBindEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ObjectListDataBindEventHandler(System::Object ^ sender, ObjectListDataBindEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="UriSchemeKeyedCollection" FullName="System.ServiceModel.UriSchemeKeyedCollection">
+﻿<Type Name="UriSchemeKeyedCollection" FullName="System.ServiceModel.UriSchemeKeyedCollection">
   <TypeSignature Language="C#" Value="public class UriSchemeKeyedCollection : System.Collections.Generic.SynchronizedKeyedCollection&lt;string,Uri&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UriSchemeKeyedCollection extends System.Collections.Generic.SynchronizedKeyedCollection`2&lt;string, class System.Uri&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.UriSchemeKeyedCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class UriSchemeKeyedCollection&#xA;Inherits SynchronizedKeyedCollection(Of String, Uri)" />
+  <TypeSignature Language="F#" Value="type UriSchemeKeyedCollection = class&#xA;    inherit SynchronizedKeyedCollection&lt;string, Uri&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UriSchemeKeyedCollection : System::Collections::Generic::SynchronizedKeyedCollection&lt;System::String ^, Uri ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,9 +31,17 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public UriSchemeKeyedCollection (params Uri[] uris);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri[] uris) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.UriSchemeKeyedCollection.#ctor(System.Uri[])" />
+      <MemberSignature Language="C#" Value="public UriSchemeKeyedCollection (params Uri[] addresses);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri[] addresses) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.UriSchemeKeyedCollection.#ctor(System.Uri[])" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray addresses As Uri())" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.UriSchemeKeyedCollection : Uri[] -&gt; System.ServiceModel.UriSchemeKeyedCollection" Usage="new System.ServiceModel.UriSchemeKeyedCollection uris" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriSchemeKeyedCollection(... cli::array &lt;Uri ^&gt; ^ addresses);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public UriSchemeKeyedCollection (params Uri[] uris);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri[] uris) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.UriSchemeKeyedCollection.#ctor(System.Uri[])" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray uris As Uri())" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UriSchemeKeyedCollection(... cli::array &lt;Uri ^&gt; ^ uris);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -38,7 +49,14 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="addresses" Type="System.Uri[]">
+        <Parameter Name="addresses" Type="System.Uri[]" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1">
+          <Attributes>
+            <Attribute>
+              <AttributeName>System.ParamArray</AttributeName>
+            </Attribute>
+          </Attributes>
+        </Parameter>
+        <Parameter Name="uris" Type="System.Uri[]" Index="0" FrameworkAlternate="xamarinandroid-7.1">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -58,6 +76,9 @@
       <MemberSignature Language="C#" Value="protected override string GetKeyForItem (Uri item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetKeyForItem(class System.Uri item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.UriSchemeKeyedCollection.GetKeyForItem(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (item As Uri) As String" />
+      <MemberSignature Language="F#" Value="override this.GetKeyForItem : Uri -&gt; string" Usage="uriSchemeKeyedCollection.GetKeyForItem item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKeyForItem(Uri ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +102,9 @@
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, Uri item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Uri item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.UriSchemeKeyedCollection.InsertItem(System.Int32,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As Uri)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * Uri -&gt; unit" Usage="uriSchemeKeyedCollection.InsertItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, Uri ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -108,6 +132,9 @@
       <MemberSignature Language="C#" Value="protected override void SetItem (int index, Uri item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Uri item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.UriSchemeKeyedCollection.SetItem(System.Int32,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As Uri)" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * Uri -&gt; unit" Usage="uriSchemeKeyedCollection.SetItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, Uri ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

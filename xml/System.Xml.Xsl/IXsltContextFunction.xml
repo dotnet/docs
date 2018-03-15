@@ -1,7 +1,10 @@
-<Type Name="IXsltContextFunction" FullName="System.Xml.Xsl.IXsltContextFunction">
+﻿<Type Name="IXsltContextFunction" FullName="System.Xml.Xsl.IXsltContextFunction">
   <TypeSignature Language="C#" Value="public interface IXsltContextFunction" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXsltContextFunction" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.IXsltContextFunction" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXsltContextFunction" />
+  <TypeSignature Language="F#" Value="type IXsltContextFunction = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXsltContextFunction" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathResultType[] ArgTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XPath.XPathResultType[] ArgTypes" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.IXsltContextFunction.ArgTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArgTypes As XPathResultType()" />
+      <MemberSignature Language="F#" Value="member this.ArgTypes : System.Xml.XPath.XPathResultType[]" Usage="System.Xml.Xsl.IXsltContextFunction.ArgTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Xml::XPath::XPathResultType&gt; ^ ArgTypes { cli::array &lt;System::Xml::XPath::XPathResultType&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -59,6 +65,8 @@
       <MemberSignature Language="C#" Value="public object Invoke (System.Xml.Xsl.XsltContext xsltContext, object[] args, System.Xml.XPath.XPathNavigator docContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Invoke(class System.Xml.Xsl.XsltContext xsltContext, object[] args, class System.Xml.XPath.XPathNavigator docContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.IXsltContextFunction.Invoke(System.Xml.Xsl.XsltContext,System.Object[],System.Xml.XPath.XPathNavigator)" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : System.Xml.Xsl.XsltContext * obj[] * System.Xml.XPath.XPathNavigator -&gt; obj" Usage="iXsltContextFunction.Invoke (xsltContext, args, docContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke(System::Xml::Xsl::XsltContext ^ xsltContext, cli::array &lt;System::Object ^&gt; ^ args, System::Xml::XPath::XPathNavigator ^ docContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -101,6 +109,9 @@
       <MemberSignature Language="C#" Value="public int Maxargs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Maxargs" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.IXsltContextFunction.Maxargs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Maxargs As Integer" />
+      <MemberSignature Language="F#" Value="member this.Maxargs : int" Usage="System.Xml.Xsl.IXsltContextFunction.Maxargs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Maxargs { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -128,6 +139,9 @@
       <MemberSignature Language="C#" Value="public int Minargs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Minargs" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.IXsltContextFunction.Minargs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Minargs As Integer" />
+      <MemberSignature Language="F#" Value="member this.Minargs : int" Usage="System.Xml.Xsl.IXsltContextFunction.Minargs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Minargs { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -155,6 +169,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathResultType ReturnType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XPath.XPathResultType ReturnType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.IXsltContextFunction.ReturnType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnType As XPathResultType" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : System.Xml.XPath.XPathResultType" Usage="System.Xml.Xsl.IXsltContextFunction.ReturnType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XPath::XPathResultType ReturnType { System::Xml::XPath::XPathResultType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

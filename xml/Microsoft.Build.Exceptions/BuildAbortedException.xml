@@ -1,7 +1,10 @@
-<Type Name="BuildAbortedException" FullName="Microsoft.Build.Exceptions.BuildAbortedException">
+﻿<Type Name="BuildAbortedException" FullName="Microsoft.Build.Exceptions.BuildAbortedException">
   <TypeSignature Language="C#" Value="public class BuildAbortedException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit BuildAbortedException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Exceptions.BuildAbortedException" />
+  <TypeSignature Language="VB.NET" Value="Public Class BuildAbortedException&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type BuildAbortedException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BuildAbortedException : Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +25,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a BuildAborted exception.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BuildAbortedException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.BuildAbortedException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildAbortedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -41,6 +55,9 @@
       <MemberSignature Language="C#" Value="public BuildAbortedException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.BuildAbortedException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Exceptions.BuildAbortedException : string -&gt; Microsoft.Build.Exceptions.BuildAbortedException" Usage="new Microsoft.Build.Exceptions.BuildAbortedException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildAbortedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -59,6 +76,9 @@
       <MemberSignature Language="C#" Value="protected BuildAbortedException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.BuildAbortedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Exceptions.BuildAbortedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; Microsoft.Build.Exceptions.BuildAbortedException" Usage="new Microsoft.Build.Exceptions.BuildAbortedException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BuildAbortedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -79,6 +99,9 @@
       <MemberSignature Language="C#" Value="public BuildAbortedException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.BuildAbortedException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Exceptions.BuildAbortedException : string * Exception -&gt; Microsoft.Build.Exceptions.BuildAbortedException" Usage="new Microsoft.Build.Exceptions.BuildAbortedException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildAbortedException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -99,6 +122,9 @@
       <MemberSignature Language="C#" Value="public string ErrorCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Exceptions.BuildAbortedException.ErrorCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : string" Usage="Microsoft.Build.Exceptions.BuildAbortedException.ErrorCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorCode { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -117,6 +143,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Exceptions.BuildAbortedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="buildAbortedException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -136,14 +165,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a BuildAborted exception.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

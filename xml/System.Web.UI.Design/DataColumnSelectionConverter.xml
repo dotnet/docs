@@ -1,7 +1,10 @@
-<Type Name="DataColumnSelectionConverter" FullName="System.Web.UI.Design.DataColumnSelectionConverter">
+﻿<Type Name="DataColumnSelectionConverter" FullName="System.Web.UI.Design.DataColumnSelectionConverter">
   <TypeSignature Language="C#" Value="public class DataColumnSelectionConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataColumnSelectionConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DataColumnSelectionConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataColumnSelectionConverter&#xA;Inherits TypeConverter" />
+  <TypeSignature Language="F#" Value="type DataColumnSelectionConverter = class&#xA;    inherit TypeConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataColumnSelectionConverter : System::ComponentModel::TypeConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,8 @@
       <MemberSignature Language="C#" Value="public DataColumnSelectionConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataColumnSelectionConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataColumnSelectionConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -63,6 +68,9 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataColumnSelectionConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFrom (context As ITypeDescriptorContext, sourceType As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="dataColumnSelectionConverter.CanConvertFrom (context, sourceType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ sourceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -97,6 +105,9 @@
       <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataColumnSelectionConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFrom (context As ITypeDescriptorContext, culture As CultureInfo, value As Object) As Object" />
+      <MemberSignature Language="F#" Value="override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="dataColumnSelectionConverter.ConvertFrom (context, culture, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -133,6 +144,9 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.TypeConverter.StandardValuesCollection GetStandardValues (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.TypeConverter/StandardValuesCollection GetStandardValues(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValues (context As ITypeDescriptorContext) As TypeConverter.StandardValuesCollection" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="dataColumnSelectionConverter.GetStandardValues context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::TypeConverter::StandardValuesCollection ^ GetStandardValues(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -169,6 +183,9 @@
       <MemberSignature Language="C#" Value="public override bool GetStandardValuesExclusive (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetStandardValuesExclusive(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesExclusive (context As ITypeDescriptorContext) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dataColumnSelectionConverter.GetStandardValuesExclusive context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesExclusive(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -200,6 +217,9 @@
       <MemberSignature Language="C#" Value="public override bool GetStandardValuesSupported (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetStandardValuesSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataColumnSelectionConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesSupported (context As ITypeDescriptorContext) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dataColumnSelectionConverter.GetStandardValuesSupported context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ContractAbbreviatorAttribute" FullName="System.Diagnostics.Contracts.ContractAbbreviatorAttribute">
+﻿<Type Name="ContractAbbreviatorAttribute" FullName="System.Diagnostics.Contracts.ContractAbbreviatorAttribute">
   <TypeSignature Language="C#" Value="public sealed class ContractAbbreviatorAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContractAbbreviatorAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Contracts.ContractAbbreviatorAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContractAbbreviatorAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ContractAbbreviatorAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContractAbbreviatorAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,6 +91,8 @@ public class MyClass
       <MemberSignature Language="C#" Value="public ContractAbbreviatorAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.ContractAbbreviatorAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractAbbreviatorAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>

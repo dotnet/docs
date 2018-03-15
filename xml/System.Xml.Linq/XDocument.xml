@@ -1,7 +1,10 @@
-<Type Name="XDocument" FullName="System.Xml.Linq.XDocument">
+﻿<Type Name="XDocument" FullName="System.Xml.Linq.XDocument">
   <TypeSignature Language="C#" Value="public class XDocument : System.Xml.Linq.XContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XDocument extends System.Xml.Linq.XContainer" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XDocument" />
+  <TypeSignature Language="VB.NET" Value="Public Class XDocument&#xA;Inherits XContainer" />
+  <TypeSignature Language="F#" Value="type XDocument = class&#xA;    inherit XContainer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XDocument : System::Xml::Linq::XContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -200,6 +203,8 @@ Console.WriteLine(doc)
       <MemberSignature Language="C#" Value="public XDocument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XDocument();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -262,6 +267,9 @@ Console.WriteLine(doc)
       <MemberSignature Language="C#" Value="public XDocument (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.#ctor(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray content As Object())" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XDocument : obj[] -&gt; System.Xml.Linq.XDocument" Usage="new System.Xml.Linq.XDocument content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XDocument(... cli::array &lt;System::Object ^&gt; ^ content);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -375,6 +383,9 @@ Console.WriteLine(doc)
       <MemberSignature Language="C#" Value="public XDocument (System.Xml.Linq.XDocument other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XDocument other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.#ctor(System.Xml.Linq.XDocument)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (other As XDocument)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XDocument : System.Xml.Linq.XDocument -&gt; System.Xml.Linq.XDocument" Usage="new System.Xml.Linq.XDocument other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XDocument(System::Xml::Linq::XDocument ^ other);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -414,6 +425,9 @@ Console.WriteLine(doc)
       <MemberSignature Language="C#" Value="public XDocument (System.Xml.Linq.XDeclaration declaration, params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XDeclaration declaration, object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.#ctor(System.Xml.Linq.XDeclaration,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (declaration As XDeclaration, ParamArray content As Object())" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XDocument : System.Xml.Linq.XDeclaration * obj[] -&gt; System.Xml.Linq.XDocument" Usage="new System.Xml.Linq.XDocument (declaration, content)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XDocument(System::Xml::Linq::XDeclaration ^ declaration, ... cli::array &lt;System::Object ^&gt; ^ content);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -533,6 +547,9 @@ Console.WriteLine(File.ReadAllText("Test.xml"))
       <MemberSignature Language="C#" Value="public System.Xml.Linq.XDeclaration Declaration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XDeclaration Declaration" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDocument.Declaration" />
+      <MemberSignature Language="VB.NET" Value="Public Property Declaration As XDeclaration" />
+      <MemberSignature Language="F#" Value="member this.Declaration : System.Xml.Linq.XDeclaration with get, set" Usage="System.Xml.Linq.XDocument.Declaration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XDeclaration ^ Declaration { System::Xml::Linq::XDeclaration ^ get(); void set(System::Xml::Linq::XDeclaration ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -600,6 +617,9 @@ Console.WriteLine(doc.Declaration)
       <MemberSignature Language="C#" Value="public System.Xml.Linq.XDocumentType DocumentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XDocumentType DocumentType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDocument.DocumentType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentType As XDocumentType" />
+      <MemberSignature Language="F#" Value="member this.DocumentType : System.Xml.Linq.XDocumentType" Usage="System.Xml.Linq.XDocument.DocumentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XDocumentType ^ DocumentType { System::Xml::Linq::XDocumentType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -754,6 +774,8 @@ Console.WriteLine(doc)
       <MemberSignature Language="C#" Value="public static System.Xml.Linq.XDocument Load (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XDocument Load(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.Stream -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -802,6 +824,8 @@ Console.WriteLine(doc)
       <MemberSignature Language="C#" Value="public static System.Xml.Linq.XDocument Load (System.IO.TextReader textReader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XDocument Load(class System.IO.TextReader textReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.IO.TextReader)" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.TextReader -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load textReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::IO::TextReader ^ textReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -868,6 +892,9 @@ Console.WriteLine(doc)
       <MemberSignature Language="C#" Value="public static System.Xml.Linq.XDocument Load (string uri);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XDocument Load(string uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Load (uri As String) As XDocument" />
+      <MemberSignature Language="F#" Value="static member Load : string -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::String ^ uri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -972,6 +999,9 @@ Console.WriteLine(doc)
       <MemberSignature Language="C#" Value="public static System.Xml.Linq.XDocument Load (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XDocument Load(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Load (reader As XmlReader) As XDocument" />
+      <MemberSignature Language="F#" Value="static member Load : System.Xml.XmlReader -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1070,6 +1100,8 @@ End Using
       <MemberSignature Language="C#" Value="public static System.Xml.Linq.XDocument Load (System.IO.Stream stream, System.Xml.Linq.LoadOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XDocument Load(class System.IO.Stream stream, valuetype System.Xml.Linq.LoadOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.IO.Stream,System.Xml.Linq.LoadOptions)" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.Stream * System.Xml.Linq.LoadOptions -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load (stream, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::IO::Stream ^ stream, System::Xml::Linq::LoadOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1118,6 +1150,8 @@ End Using
       <MemberSignature Language="C#" Value="public static System.Xml.Linq.XDocument Load (System.IO.TextReader textReader, System.Xml.Linq.LoadOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XDocument Load(class System.IO.TextReader textReader, valuetype System.Xml.Linq.LoadOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.IO.TextReader,System.Xml.Linq.LoadOptions)" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.TextReader * System.Xml.Linq.LoadOptions -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load (textReader, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::IO::TextReader ^ textReader, System::Xml::Linq::LoadOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1245,6 +1279,9 @@ Count of white space nodes (preserving whitespace): 3
       <MemberSignature Language="C#" Value="public static System.Xml.Linq.XDocument Load (string uri, System.Xml.Linq.LoadOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XDocument Load(string uri, valuetype System.Xml.Linq.LoadOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.String,System.Xml.Linq.LoadOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Load (uri As String, options As LoadOptions) As XDocument" />
+      <MemberSignature Language="F#" Value="static member Load : string * System.Xml.Linq.LoadOptions -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load (uri, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::String ^ uri, System::Xml::Linq::LoadOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1336,6 +1373,9 @@ nodes if preserving whitespace: 82
       <MemberSignature Language="C#" Value="public static System.Xml.Linq.XDocument Load (System.Xml.XmlReader reader, System.Xml.Linq.LoadOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XDocument Load(class System.Xml.XmlReader reader, valuetype System.Xml.Linq.LoadOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Load(System.Xml.XmlReader,System.Xml.Linq.LoadOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Load (reader As XmlReader, options As LoadOptions) As XDocument" />
+      <MemberSignature Language="F#" Value="static member Load : System.Xml.XmlReader * System.Xml.Linq.LoadOptions -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Load (reader, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Load(System::Xml::XmlReader ^ reader, System::Xml::Linq::LoadOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1475,6 +1515,8 @@ Root                1    2
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Xml.Linq.XDocument&gt; LoadAsync (System.IO.Stream stream, System.Xml.Linq.LoadOptions options, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Xml.Linq.XDocument&gt; LoadAsync(class System.IO.Stream stream, valuetype System.Xml.Linq.LoadOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.LoadAsync(System.IO.Stream,System.Xml.Linq.LoadOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member LoadAsync : System.IO.Stream * System.Xml.Linq.LoadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Xml.Linq.XDocument&gt;" Usage="System.Xml.Linq.XDocument.LoadAsync (stream, options, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Xml::Linq::XDocument ^&gt; ^ LoadAsync(System::IO::Stream ^ stream, System::Xml::Linq::LoadOptions options, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1501,6 +1543,8 @@ Root                1    2
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Xml.Linq.XDocument&gt; LoadAsync (System.IO.TextReader textReader, System.Xml.Linq.LoadOptions options, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Xml.Linq.XDocument&gt; LoadAsync(class System.IO.TextReader textReader, valuetype System.Xml.Linq.LoadOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.LoadAsync(System.IO.TextReader,System.Xml.Linq.LoadOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member LoadAsync : System.IO.TextReader * System.Xml.Linq.LoadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Xml.Linq.XDocument&gt;" Usage="System.Xml.Linq.XDocument.LoadAsync (textReader, options, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Xml::Linq::XDocument ^&gt; ^ LoadAsync(System::IO::TextReader ^ textReader, System::Xml::Linq::LoadOptions options, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1527,6 +1571,8 @@ Root                1    2
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Xml.Linq.XDocument&gt; LoadAsync (System.Xml.XmlReader reader, System.Xml.Linq.LoadOptions options, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Xml.Linq.XDocument&gt; LoadAsync(class System.Xml.XmlReader reader, valuetype System.Xml.Linq.LoadOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.LoadAsync(System.Xml.XmlReader,System.Xml.Linq.LoadOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member LoadAsync : System.Xml.XmlReader * System.Xml.Linq.LoadOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Xml.Linq.XDocument&gt;" Usage="System.Xml.Linq.XDocument.LoadAsync (reader, options, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Xml::Linq::XDocument ^&gt; ^ LoadAsync(System::Xml::XmlReader ^ reader, System::Xml::Linq::LoadOptions options, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1553,6 +1599,9 @@ Root                1    2
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNodeType NodeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.XmlNodeType NodeType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDocument.NodeType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property NodeType As XmlNodeType" />
+      <MemberSignature Language="F#" Value="member this.NodeType : System.Xml.XmlNodeType" Usage="System.Xml.Linq.XDocument.NodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Xml::XmlNodeType NodeType { System::Xml::XmlNodeType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1677,6 +1726,9 @@ Console.WriteLine(doc)
       <MemberSignature Language="C#" Value="public static System.Xml.Linq.XDocument Parse (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XDocument Parse(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (text As String) As XDocument" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Parse text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Parse(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1761,6 +1813,9 @@ Console.WriteLine(doc)
       <MemberSignature Language="C#" Value="public static System.Xml.Linq.XDocument Parse (string text, System.Xml.Linq.LoadOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XDocument Parse(string text, valuetype System.Xml.Linq.LoadOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Parse(System.String,System.Xml.Linq.LoadOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (text As String, options As LoadOptions) As XDocument" />
+      <MemberSignature Language="F#" Value="static member Parse : string * System.Xml.Linq.LoadOptions -&gt; System.Xml.Linq.XDocument" Usage="System.Xml.Linq.XDocument.Parse (text, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XDocument ^ Parse(System::String ^ text, System::Xml::Linq::LoadOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1859,6 +1914,9 @@ nodes when not preserving whitespace: 4
       <MemberSignature Language="C#" Value="public System.Xml.Linq.XElement Root { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XElement Root" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDocument.Root" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Root As XElement" />
+      <MemberSignature Language="F#" Value="member this.Root : System.Xml.Linq.XElement" Usage="System.Xml.Linq.XDocument.Root" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XElement ^ Root { System::Xml::Linq::XElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1939,10 +1997,26 @@ Pubs
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes this <see cref="T:System.Xml.Linq.XDocument" /> to a file, a <see cref="T:System.IO.TextWriter" />, or an <see cref="T:System.Xml.XmlWriter" />.</summary>
+        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
+        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Save">
       <MemberSignature Language="C#" Value="public void Save (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Save(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.Stream -&gt; unit" Usage="xDocument.Save stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1986,6 +2060,8 @@ Pubs
       <MemberSignature Language="C#" Value="public void Save (System.IO.TextWriter textWriter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.TextWriter textWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Save(System.IO.TextWriter)" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.TextWriter -&gt; unit" Usage="xDocument.Save textWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::TextWriter ^ textWriter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2069,6 +2145,9 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="C#" Value="public void Save (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Save(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (fileName As String)" />
+      <MemberSignature Language="F#" Value="member this.Save : string -&gt; unit" Usage="xDocument.Save fileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2144,6 +2223,9 @@ Console.WriteLine(File.ReadAllText("Root.xml"))
       <MemberSignature Language="C#" Value="public void Save (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Save(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (writer As XmlWriter)" />
+      <MemberSignature Language="F#" Value="member this.Save : System.Xml.XmlWriter -&gt; unit" Usage="xDocument.Save writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2227,6 +2309,8 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="C#" Value="public void Save (System.IO.Stream stream, System.Xml.Linq.SaveOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream, valuetype System.Xml.Linq.SaveOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Save(System.IO.Stream,System.Xml.Linq.SaveOptions)" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.Stream * System.Xml.Linq.SaveOptions -&gt; unit" Usage="xDocument.Save (stream, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream, System::Xml::Linq::SaveOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2272,6 +2356,8 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="C#" Value="public void Save (System.IO.TextWriter textWriter, System.Xml.Linq.SaveOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.TextWriter textWriter, valuetype System.Xml.Linq.SaveOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Save(System.IO.TextWriter,System.Xml.Linq.SaveOptions)" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.TextWriter * System.Xml.Linq.SaveOptions -&gt; unit" Usage="xDocument.Save (textWriter, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::TextWriter ^ textWriter, System::Xml::Linq::SaveOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2374,6 +2460,9 @@ End Using
       <MemberSignature Language="C#" Value="public void Save (string fileName, System.Xml.Linq.SaveOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string fileName, valuetype System.Xml.Linq.SaveOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.Save(System.String,System.Xml.Linq.SaveOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (fileName As String, options As SaveOptions)" />
+      <MemberSignature Language="F#" Value="member this.Save : string * System.Xml.Linq.SaveOptions -&gt; unit" Usage="xDocument.Save (fileName, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ fileName, System::Xml::Linq::SaveOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2458,6 +2547,8 @@ Console.WriteLine(File.ReadAllText("Root2.xml"))
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (System.Xml.XmlWriter writer, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(class System.Xml.XmlWriter writer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.SaveAsync(System.Xml.XmlWriter,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.SaveAsync : System.Xml.XmlWriter * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xDocument.SaveAsync (writer, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SaveAsync(System::Xml::XmlWriter ^ writer, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2482,6 +2573,8 @@ Console.WriteLine(File.ReadAllText("Root2.xml"))
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (System.IO.Stream stream, System.Xml.Linq.SaveOptions options, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(class System.IO.Stream stream, valuetype System.Xml.Linq.SaveOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.SaveAsync(System.IO.Stream,System.Xml.Linq.SaveOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.SaveAsync : System.IO.Stream * System.Xml.Linq.SaveOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xDocument.SaveAsync (stream, options, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SaveAsync(System::IO::Stream ^ stream, System::Xml::Linq::SaveOptions options, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2508,6 +2601,8 @@ Console.WriteLine(File.ReadAllText("Root2.xml"))
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task SaveAsync (System.IO.TextWriter textWriter, System.Xml.Linq.SaveOptions options, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task SaveAsync(class System.IO.TextWriter textWriter, valuetype System.Xml.Linq.SaveOptions options, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.SaveAsync(System.IO.TextWriter,System.Xml.Linq.SaveOptions,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="member this.SaveAsync : System.IO.TextWriter * System.Xml.Linq.SaveOptions * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xDocument.SaveAsync (textWriter, options, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ SaveAsync(System::IO::TextWriter ^ textWriter, System::Xml::Linq::SaveOptions options, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2534,6 +2629,9 @@ Console.WriteLine(File.ReadAllText("Root2.xml"))
       <MemberSignature Language="C#" Value="public override void WriteTo (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteTo(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (writer As XmlWriter)" />
+      <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="xDocument.WriteTo writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2617,6 +2715,8 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteToAsync (System.Xml.XmlWriter writer, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteToAsync(class System.Xml.XmlWriter writer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDocument.WriteToAsync(System.Xml.XmlWriter,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.WriteToAsync : System.Xml.XmlWriter * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xDocument.WriteToAsync (writer, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteToAsync(System::Xml::XmlWriter ^ writer, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2637,19 +2737,5 @@ Console.WriteLine(sb.ToString())
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Save">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Serializes this <see cref="T:System.Xml.Linq.XDocument" /> to a file, a <see cref="T:System.IO.TextWriter" />, or an <see cref="T:System.Xml.XmlWriter" />.</summary>
-        <altmember cref="M:System.Xml.Linq.XDocument.WriteTo(System.Xml.XmlWriter)" />
-        <altmember cref="Overload:System.Xml.Linq.XDocument.Load" />
-        <altmember cref="Overload:System.Xml.Linq.XDocument.Parse" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="ThumbButtonInfoCollection" FullName="System.Windows.Shell.ThumbButtonInfoCollection">
+﻿<Type Name="ThumbButtonInfoCollection" FullName="System.Windows.Shell.ThumbButtonInfoCollection">
   <TypeSignature Language="C#" Value="public class ThumbButtonInfoCollection : System.Windows.FreezableCollection&lt;System.Windows.Shell.ThumbButtonInfo&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ThumbButtonInfoCollection extends System.Windows.FreezableCollection`1&lt;class System.Windows.Shell.ThumbButtonInfo&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Shell.ThumbButtonInfoCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ThumbButtonInfoCollection&#xA;Inherits FreezableCollection(Of ThumbButtonInfo)" />
+  <TypeSignature Language="F#" Value="type ThumbButtonInfoCollection = class&#xA;    inherit FreezableCollection&lt;ThumbButtonInfo&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ThumbButtonInfoCollection : System::Windows::FreezableCollection&lt;System::Windows::Shell::ThumbButtonInfo ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,8 @@
       <MemberSignature Language="C#" Value="public ThumbButtonInfoCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.ThumbButtonInfoCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThumbButtonInfoCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +52,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shell.ThumbButtonInfoCollection.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="thumbButtonInfoCollection.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="StylusButtonState" FullName="System.Windows.Input.StylusButtonState">
+﻿<Type Name="StylusButtonState" FullName="System.Windows.Input.StylusButtonState">
   <TypeSignature Language="C#" Value="public enum StylusButtonState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StylusButtonState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusButtonState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StylusButtonState" />
+  <TypeSignature Language="F#" Value="type StylusButtonState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class StylusButtonState" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="Down" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.StylusButtonState Down = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusButtonState.Down" />
+      <MemberSignature Language="VB.NET" Value="Down" />
+      <MemberSignature Language="F#" Value="Down = 1" Usage="System.Windows.Input.StylusButtonState.Down" />
+      <MemberSignature Language="C++ CLI" Value="Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -36,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The button is pressed down.</summary>
       </Docs>
@@ -44,6 +51,9 @@
       <MemberSignature Language="C#" Value="Up" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.StylusButtonState Up = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.StylusButtonState.Up" />
+      <MemberSignature Language="VB.NET" Value="Up" />
+      <MemberSignature Language="F#" Value="Up = 0" Usage="System.Windows.Input.StylusButtonState.Up" />
+      <MemberSignature Language="C++ CLI" Value="Up" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.StylusButtonState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The button is up.</summary>
       </Docs>

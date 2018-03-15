@@ -1,7 +1,10 @@
-<Type Name="DebuggerStepThroughAttribute" FullName="System.Diagnostics.DebuggerStepThroughAttribute">
+﻿<Type Name="DebuggerStepThroughAttribute" FullName="System.Diagnostics.DebuggerStepThroughAttribute">
   <TypeSignature Language="C#" Value="public sealed class DebuggerStepThroughAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DebuggerStepThroughAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DebuggerStepThroughAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DebuggerStepThroughAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type DebuggerStepThroughAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DebuggerStepThroughAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Debug</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +69,8 @@
       <MemberSignature Language="C#" Value="public DebuggerStepThroughAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggerStepThroughAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggerStepThroughAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Debug</AssemblyName>

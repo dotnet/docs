@@ -1,7 +1,10 @@
-<Type Name="CacheItemUpdateReason" FullName="System.Web.Caching.CacheItemUpdateReason">
+﻿<Type Name="CacheItemUpdateReason" FullName="System.Web.Caching.CacheItemUpdateReason">
   <TypeSignature Language="C#" Value="public enum CacheItemUpdateReason" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheItemUpdateReason extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.CacheItemUpdateReason" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CacheItemUpdateReason" />
+  <TypeSignature Language="F#" Value="type CacheItemUpdateReason = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CacheItemUpdateReason" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="DependencyChanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Caching.CacheItemUpdateReason DependencyChanged = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemUpdateReason.DependencyChanged" />
+      <MemberSignature Language="VB.NET" Value="DependencyChanged" />
+      <MemberSignature Language="F#" Value="DependencyChanged = 2" Usage="System.Web.Caching.CacheItemUpdateReason.DependencyChanged" />
+      <MemberSignature Language="C++ CLI" Value="DependencyChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Caching.CacheItemUpdateReason</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the item is being removed from the cache because the associated <see cref="T:System.Web.Caching.CacheDependency" /> object changed.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Expired" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Caching.CacheItemUpdateReason Expired = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Caching.CacheItemUpdateReason.Expired" />
+      <MemberSignature Language="VB.NET" Value="Expired" />
+      <MemberSignature Language="F#" Value="Expired = 1" Usage="System.Web.Caching.CacheItemUpdateReason.Expired" />
+      <MemberSignature Language="C++ CLI" Value="Expired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Caching.CacheItemUpdateReason</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the item is being removed from the cache because the absolute or sliding expiration interval expired.</summary>
       </Docs>

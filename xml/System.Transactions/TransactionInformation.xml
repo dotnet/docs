@@ -1,7 +1,10 @@
-<Type Name="TransactionInformation" FullName="System.Transactions.TransactionInformation">
+﻿<Type Name="TransactionInformation" FullName="System.Transactions.TransactionInformation">
   <TypeSignature Language="C#" Value="public class TransactionInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TransactionInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.TransactionInformation" />
+  <TypeSignature Language="VB.NET" Value="Public Class TransactionInformation" />
+  <TypeSignature Language="F#" Value="type TransactionInformation = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransactionInformation" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="public DateTime CreationTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreationTime" />
       <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionInformation.CreationTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.CreationTime : DateTime" Usage="System.Transactions.TransactionInformation.CreationTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CreationTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -69,6 +75,9 @@
       <MemberSignature Language="C#" Value="public Guid DistributedIdentifier { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid DistributedIdentifier" />
       <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionInformation.DistributedIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DistributedIdentifier As Guid" />
+      <MemberSignature Language="F#" Value="member this.DistributedIdentifier : Guid" Usage="System.Transactions.TransactionInformation.DistributedIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid DistributedIdentifier { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -105,6 +114,9 @@
       <MemberSignature Language="C#" Value="public string LocalIdentifier { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalIdentifier" />
       <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionInformation.LocalIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalIdentifier As String" />
+      <MemberSignature Language="F#" Value="member this.LocalIdentifier : string" Usage="System.Transactions.TransactionInformation.LocalIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocalIdentifier { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -132,6 +144,9 @@
       <MemberSignature Language="C#" Value="public System.Transactions.TransactionStatus Status { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Transactions.TransactionStatus Status" />
       <MemberSignature Language="DocId" Value="P:System.Transactions.TransactionInformation.Status" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As TransactionStatus" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Transactions.TransactionStatus" Usage="System.Transactions.TransactionInformation.Status" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Transactions::TransactionStatus Status { System::Transactions::TransactionStatus get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

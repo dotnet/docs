@@ -1,7 +1,10 @@
-<Type Name="XsltException" FullName="System.Xml.Xsl.XsltException">
+﻿<Type Name="XsltException" FullName="System.Xml.Xsl.XsltException">
   <TypeSignature Language="C#" Value="public class XsltException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit XsltException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.XsltException" />
+  <TypeSignature Language="VB.NET" Value="Public Class XsltException&#xA;Inherits SystemException" />
+  <TypeSignature Language="F#" Value="type XsltException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XsltException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,10 +27,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see langword="XsltException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XsltException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XsltException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -52,6 +67,9 @@
       <MemberSignature Language="C#" Value="public XsltException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Xsl.XsltException : string -&gt; System.Xml.Xsl.XsltException" Usage="new System.Xml.Xsl.XsltException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XsltException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -79,6 +97,9 @@
       <MemberSignature Language="C#" Value="protected XsltException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Xsl.XsltException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Xml.Xsl.XsltException" Usage="new System.Xml.Xsl.XsltException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XsltException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -108,6 +129,9 @@
       <MemberSignature Language="C#" Value="public XsltException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Xsl.XsltException : string * Exception -&gt; System.Xml.Xsl.XsltException" Usage="new System.Xml.Xsl.XsltException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XsltException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -137,6 +161,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="xsltException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -169,6 +196,9 @@
       <MemberSignature Language="C#" Value="public virtual int LineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LineNumber" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltException.LineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LineNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="System.Xml.Xsl.XsltException.LineNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int LineNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -203,6 +233,9 @@
       <MemberSignature Language="C#" Value="public virtual int LinePosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LinePosition" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltException.LinePosition" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property LinePosition As Integer" />
+      <MemberSignature Language="F#" Value="member this.LinePosition : int" Usage="System.Xml.Xsl.XsltException.LinePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int LinePosition { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -237,6 +270,9 @@
       <MemberSignature Language="C#" Value="public override string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltException.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Xml.Xsl.XsltException.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -264,6 +300,9 @@
       <MemberSignature Language="C#" Value="public virtual string SourceUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceUri" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltException.SourceUri" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SourceUri As String" />
+      <MemberSignature Language="F#" Value="member this.SourceUri : string" Usage="System.Xml.Xsl.XsltException.SourceUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SourceUri { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -287,15 +326,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see langword="XsltException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

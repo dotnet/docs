@@ -1,7 +1,10 @@
-<Type Name="ContentControl" FullName="System.Windows.Controls.ContentControl">
+﻿<Type Name="ContentControl" FullName="System.Windows.Controls.ContentControl">
   <TypeSignature Language="C#" Value="public class ContentControl : System.Windows.Controls.Control, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ContentControl extends System.Windows.Controls.Control implements class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ContentControl" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContentControl&#xA;Inherits Control&#xA;Implements IAddChild" />
+  <TypeSignature Language="F#" Value="type ContentControl = class&#xA;    inherit Control&#xA;    interface IAddChild" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContentControl : System::Windows::Controls::Control, System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +79,8 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="public ContentControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -91,7 +96,13 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="protected virtual void AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentControl.AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddChild (value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member AddChild : obj -&gt; unit&#xA;override this.AddChild : obj -&gt; unit" Usage="contentControl.AddChild value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddChild(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -112,7 +123,13 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="protected virtual void AddText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentControl.AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddText (text As String)" />
+      <MemberSignature Language="F#" Value="abstract member AddText : string -&gt; unit&#xA;override this.AddText : string -&gt; unit" Usage="contentControl.AddText text" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddText(System::String ^ text);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -133,6 +150,9 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="public object Content { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Content" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContentControl.Content" />
+      <MemberSignature Language="VB.NET" Value="Public Property Content As Object" />
+      <MemberSignature Language="F#" Value="member this.Content : obj with get, set" Usage="System.Windows.Controls.ContentControl.Content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Content { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -215,6 +235,9 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ContentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ContentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContentControl.ContentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContentControl.ContentProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -232,6 +255,9 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="public string ContentStringFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentStringFormat" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContentControl.ContentStringFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentStringFormat As String" />
+      <MemberSignature Language="F#" Value="member this.ContentStringFormat : string with get, set" Usage="System.Windows.Controls.ContentControl.ContentStringFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentStringFormat { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -269,6 +295,9 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ContentStringFormatProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ContentStringFormatProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContentControl.ContentStringFormatProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentStringFormatProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentStringFormatProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContentControl.ContentStringFormatProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentStringFormatProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -286,6 +315,9 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="public System.Windows.DataTemplate ContentTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate ContentTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContentControl.ContentTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentTemplate As DataTemplate" />
+      <MemberSignature Language="F#" Value="member this.ContentTemplate : System.Windows.DataTemplate with get, set" Usage="System.Windows.Controls.ContentControl.ContentTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ ContentTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -351,6 +383,9 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ContentTemplateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ContentTemplateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContentControl.ContentTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContentControl.ContentTemplateProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentTemplateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -368,6 +403,9 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="public System.Windows.Controls.DataTemplateSelector ContentTemplateSelector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataTemplateSelector ContentTemplateSelector" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContentControl.ContentTemplateSelector" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentTemplateSelector As DataTemplateSelector" />
+      <MemberSignature Language="F#" Value="member this.ContentTemplateSelector : System.Windows.Controls.DataTemplateSelector with get, set" Usage="System.Windows.Controls.ContentControl.ContentTemplateSelector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataTemplateSelector ^ ContentTemplateSelector { System::Windows::Controls::DataTemplateSelector ^ get(); void set(System::Windows::Controls::DataTemplateSelector ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -378,7 +416,7 @@ Four buttons with different types of content
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -437,6 +475,9 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ContentTemplateSelectorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ContentTemplateSelectorProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContentControl.ContentTemplateSelectorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContentTemplateSelectorProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ContentTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContentControl.ContentTemplateSelectorProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContentTemplateSelectorProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -454,6 +495,9 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="public bool HasContent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasContent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContentControl.HasContent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasContent As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasContent : bool" Usage="System.Windows.Controls.ContentControl.HasContent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasContent { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -504,6 +548,9 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HasContentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HasContentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ContentControl.HasContentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasContentProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HasContentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ContentControl.HasContentProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HasContentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -518,9 +565,12 @@ Four buttons with different types of content
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
-      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator LogicalChildren { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Collections.IEnumerator LogicalChildren { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator LogicalChildren" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ContentControl.LogicalChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Controls.ContentControl.LogicalChildren" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -539,6 +589,9 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="protected virtual void OnContentChanged (object oldContent, object newContent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnContentChanged(object oldContent, object newContent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentControl.OnContentChanged(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContentChanged (oldContent As Object, newContent As Object)" />
+      <MemberSignature Language="F#" Value="abstract member OnContentChanged : obj * obj -&gt; unit&#xA;override this.OnContentChanged : obj * obj -&gt; unit" Usage="contentControl.OnContentChanged (oldContent, newContent)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContentChanged(System::Object ^ oldContent, System::Object ^ newContent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -562,6 +615,9 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="protected virtual void OnContentStringFormatChanged (string oldContentStringFormat, string newContentStringFormat);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnContentStringFormatChanged(string oldContentStringFormat, string newContentStringFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentControl.OnContentStringFormatChanged(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContentStringFormatChanged (oldContentStringFormat As String, newContentStringFormat As String)" />
+      <MemberSignature Language="F#" Value="abstract member OnContentStringFormatChanged : string * string -&gt; unit&#xA;override this.OnContentStringFormatChanged : string * string -&gt; unit" Usage="contentControl.OnContentStringFormatChanged (oldContentStringFormat, newContentStringFormat)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContentStringFormatChanged(System::String ^ oldContentStringFormat, System::String ^ newContentStringFormat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -585,6 +641,9 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="protected virtual void OnContentTemplateChanged (System.Windows.DataTemplate oldContentTemplate, System.Windows.DataTemplate newContentTemplate);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnContentTemplateChanged(class System.Windows.DataTemplate oldContentTemplate, class System.Windows.DataTemplate newContentTemplate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentControl.OnContentTemplateChanged(System.Windows.DataTemplate,System.Windows.DataTemplate)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContentTemplateChanged (oldContentTemplate As DataTemplate, newContentTemplate As DataTemplate)" />
+      <MemberSignature Language="F#" Value="abstract member OnContentTemplateChanged : System.Windows.DataTemplate * System.Windows.DataTemplate -&gt; unit&#xA;override this.OnContentTemplateChanged : System.Windows.DataTemplate * System.Windows.DataTemplate -&gt; unit" Usage="contentControl.OnContentTemplateChanged (oldContentTemplate, newContentTemplate)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContentTemplateChanged(System::Windows::DataTemplate ^ oldContentTemplate, System::Windows::DataTemplate ^ newContentTemplate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -608,6 +667,9 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="protected virtual void OnContentTemplateSelectorChanged (System.Windows.Controls.DataTemplateSelector oldContentTemplateSelector, System.Windows.Controls.DataTemplateSelector newContentTemplateSelector);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnContentTemplateSelectorChanged(class System.Windows.Controls.DataTemplateSelector oldContentTemplateSelector, class System.Windows.Controls.DataTemplateSelector newContentTemplateSelector) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentControl.OnContentTemplateSelectorChanged(System.Windows.Controls.DataTemplateSelector,System.Windows.Controls.DataTemplateSelector)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContentTemplateSelectorChanged (oldContentTemplateSelector As DataTemplateSelector, newContentTemplateSelector As DataTemplateSelector)" />
+      <MemberSignature Language="F#" Value="abstract member OnContentTemplateSelectorChanged : System.Windows.Controls.DataTemplateSelector * System.Windows.Controls.DataTemplateSelector -&gt; unit&#xA;override this.OnContentTemplateSelectorChanged : System.Windows.Controls.DataTemplateSelector * System.Windows.Controls.DataTemplateSelector -&gt; unit" Usage="contentControl.OnContentTemplateSelectorChanged (oldContentTemplateSelector, newContentTemplateSelector)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContentTemplateSelectorChanged(System::Windows::Controls::DataTemplateSelector ^ oldContentTemplateSelector, System::Windows::Controls::DataTemplateSelector ^ newContentTemplateSelector);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -631,6 +693,9 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="public virtual bool ShouldSerializeContent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ShouldSerializeContent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentControl.ShouldSerializeContent" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ShouldSerializeContent () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ShouldSerializeContent : unit -&gt; bool&#xA;override this.ShouldSerializeContent : unit -&gt; bool" Usage="contentControl.ShouldSerializeContent " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ShouldSerializeContent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -663,7 +728,12 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentControl.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -684,7 +754,12 @@ Four buttons with different types of content
       <MemberSignature Language="C#" Value="void IAddChild.AddText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ContentControl.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ text) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

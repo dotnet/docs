@@ -1,7 +1,10 @@
-<Type Name="HtmlHistory" FullName="System.Windows.Forms.HtmlHistory">
+﻿<Type Name="HtmlHistory" FullName="System.Windows.Forms.HtmlHistory">
   <TypeSignature Language="C#" Value="public sealed class HtmlHistory : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HtmlHistory extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlHistory" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HtmlHistory&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type HtmlHistory = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlHistory sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public void Back (int numberBack);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Back(int32 numberBack) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlHistory.Back(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Back (numberBack As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Back : int -&gt; unit" Usage="htmlHistory.Back numberBack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Back(int numberBack);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -66,7 +72,13 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlHistory.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="htmlHistory.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,6 +106,9 @@
       <MemberSignature Language="C#" Value="public object DomHistory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DomHistory" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlHistory.DomHistory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DomHistory As Object" />
+      <MemberSignature Language="F#" Value="member this.DomHistory : obj" Usage="System.Windows.Forms.HtmlHistory.DomHistory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DomHistory { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -119,6 +134,9 @@
       <MemberSignature Language="C#" Value="public void Forward (int numberForward);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Forward(int32 numberForward) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlHistory.Forward(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Forward (numberForward As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Forward : int -&gt; unit" Usage="htmlHistory.Forward numberForward" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Forward(int numberForward);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -147,10 +165,24 @@
         <altmember cref="M:System.Windows.Forms.HtmlHistory.Back(System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Go">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Navigates to a Web page specified as either a Uniform Resource Locator (URL) or a position in the navigation stack.</summary>
+        <altmember cref="M:System.Windows.Forms.HtmlHistory.Back(System.Int32)" />
+        <altmember cref="M:System.Windows.Forms.HtmlHistory.Forward(System.Int32)" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Go">
       <MemberSignature Language="C#" Value="public void Go (int relativePosition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Go(int32 relativePosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlHistory.Go(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Go (relativePosition As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Go : int -&gt; unit" Usage="htmlHistory.Go relativePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Go(int relativePosition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -180,6 +212,9 @@
       <MemberSignature Language="C#" Value="public void Go (string urlString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Go(string urlString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlHistory.Go(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Go (urlString As String)" />
+      <MemberSignature Language="F#" Value="member this.Go : string -&gt; unit" Usage="htmlHistory.Go urlString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Go(System::String ^ urlString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -209,6 +244,9 @@
       <MemberSignature Language="C#" Value="public void Go (Uri url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Go(class System.Uri url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlHistory.Go(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Go (url As Uri)" />
+      <MemberSignature Language="F#" Value="member this.Go : Uri -&gt; unit" Usage="htmlHistory.Go url" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Go(Uri ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -238,6 +276,9 @@
       <MemberSignature Language="C#" Value="public int Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlHistory.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
+      <MemberSignature Language="F#" Value="member this.Length : int" Usage="System.Windows.Forms.HtmlHistory.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Length { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -259,16 +300,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Go">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Navigates to a Web page specified as either a Uniform Resource Locator (URL) or a position in the navigation stack.</summary>
-        <altmember cref="M:System.Windows.Forms.HtmlHistory.Back(System.Int32)" />
-        <altmember cref="M:System.Windows.Forms.HtmlHistory.Forward(System.Int32)" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

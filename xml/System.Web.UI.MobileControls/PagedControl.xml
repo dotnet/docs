@@ -1,7 +1,10 @@
-<Type Name="PagedControl" FullName="System.Web.UI.MobileControls.PagedControl">
+﻿<Type Name="PagedControl" FullName="System.Web.UI.MobileControls.PagedControl">
   <TypeSignature Language="C#" Value="public abstract class PagedControl : System.Web.UI.MobileControls.MobileControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PagedControl extends System.Web.UI.MobileControls.MobileControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.PagedControl" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PagedControl&#xA;Inherits MobileControl" />
+  <TypeSignature Language="F#" Value="type PagedControl = class&#xA;    inherit MobileControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PagedControl abstract : System::Web::UI::MobileControls::MobileControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,8 @@
       <MemberSignature Language="C#" Value="protected PagedControl ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagedControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PagedControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -53,6 +58,9 @@
       <MemberSignature Language="C#" Value="public int FirstVisibleItemIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 FirstVisibleItemIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagedControl.FirstVisibleItemIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstVisibleItemIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.FirstVisibleItemIndex : int" Usage="System.Web.UI.MobileControls.PagedControl.FirstVisibleItemIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FirstVisibleItemIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -63,7 +71,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -86,6 +94,9 @@
       <MemberSignature Language="C#" Value="protected abstract int InternalItemCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 InternalItemCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagedControl.InternalItemCount" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property InternalItemCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.InternalItemCount : int" Usage="System.Web.UI.MobileControls.PagedControl.InternalItemCount" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property int InternalItemCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -115,6 +126,9 @@
       <MemberSignature Language="C#" Value="public int ItemCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagedControl.ItemCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.ItemCount : int with get, set" Usage="System.Web.UI.MobileControls.PagedControl.ItemCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -152,6 +166,9 @@
       <MemberSignature Language="C#" Value="public int ItemsPerPage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemsPerPage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagedControl.ItemsPerPage" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemsPerPage As Integer" />
+      <MemberSignature Language="F#" Value="member this.ItemsPerPage : int with get, set" Usage="System.Web.UI.MobileControls.PagedControl.ItemsPerPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemsPerPage { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -197,6 +214,9 @@
       <MemberSignature Language="C#" Value="protected virtual int ItemWeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemWeight" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagedControl.ItemWeight" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property ItemWeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.ItemWeight : int" Usage="System.Web.UI.MobileControls.PagedControl.ItemWeight" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int ItemWeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -232,6 +252,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.MobileControls.LoadItemsEventHandler LoadItems;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.MobileControls.LoadItemsEventHandler LoadItems" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.PagedControl.LoadItems" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LoadItems As LoadItemsEventHandler " />
+      <MemberSignature Language="F#" Value="member this.LoadItems : System.Web.UI.MobileControls.LoadItemsEventHandler " Usage="member this.LoadItems : System.Web.UI.MobileControls.LoadItemsEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::MobileControls::LoadItemsEventHandler ^ LoadItems;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -266,6 +289,9 @@
       <MemberSignature Language="C#" Value="protected override void LoadPrivateViewState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadPrivateViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagedControl.LoadPrivateViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadPrivateViewState (state As Object)" />
+      <MemberSignature Language="F#" Value="override this.LoadPrivateViewState : obj -&gt; unit" Usage="pagedControl.LoadPrivateViewState state" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadPrivateViewState(System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -287,6 +313,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnLoadItems (System.Web.UI.MobileControls.LoadItemsEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLoadItems(class System.Web.UI.MobileControls.LoadItemsEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagedControl.OnLoadItems(System.Web.UI.MobileControls.LoadItemsEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoadItems (e As LoadItemsEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnLoadItems : System.Web.UI.MobileControls.LoadItemsEventArgs -&gt; unit&#xA;override this.OnLoadItems : System.Web.UI.MobileControls.LoadItemsEventArgs -&gt; unit" Usage="pagedControl.OnLoadItems e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoadItems(System::Web::UI::MobileControls::LoadItemsEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -317,6 +346,9 @@
       <MemberSignature Language="C#" Value="protected override void OnPageChange (int oldPageIndex, int newPageIndex);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPageChange(int32 oldPageIndex, int32 newPageIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagedControl.OnPageChange(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPageChange (oldPageIndex As Integer, newPageIndex As Integer)" />
+      <MemberSignature Language="F#" Value="override this.OnPageChange : int * int -&gt; unit" Usage="pagedControl.OnPageChange (oldPageIndex, newPageIndex)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPageChange(int oldPageIndex, int newPageIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -340,6 +372,9 @@
       <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagedControl.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="pagedControl.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -361,6 +396,9 @@
       <MemberSignature Language="C#" Value="public override void PaginateRecursive (System.Web.UI.MobileControls.ControlPager pager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PaginateRecursive(class System.Web.UI.MobileControls.ControlPager pager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagedControl.PaginateRecursive(System.Web.UI.MobileControls.ControlPager)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub PaginateRecursive (pager As ControlPager)" />
+      <MemberSignature Language="F#" Value="override this.PaginateRecursive : System.Web.UI.MobileControls.ControlPager -&gt; unit" Usage="pagedControl.PaginateRecursive pager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PaginateRecursive(System::Web::UI::MobileControls::ControlPager ^ pager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -382,6 +420,9 @@
       <MemberSignature Language="C#" Value="protected override object SavePrivateViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SavePrivateViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.PagedControl.SavePrivateViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SavePrivateViewState () As Object" />
+      <MemberSignature Language="F#" Value="override this.SavePrivateViewState : unit -&gt; obj" Usage="pagedControl.SavePrivateViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SavePrivateViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -401,6 +442,9 @@
       <MemberSignature Language="C#" Value="public int VisibleItemCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VisibleItemCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagedControl.VisibleItemCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VisibleItemCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.VisibleItemCount : int" Usage="System.Web.UI.MobileControls.PagedControl.VisibleItemCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int VisibleItemCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -411,7 +455,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -436,6 +480,9 @@
       <MemberSignature Language="C#" Value="public override int VisibleWeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VisibleWeight" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.PagedControl.VisibleWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property VisibleWeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.VisibleWeight : int" Usage="System.Web.UI.MobileControls.PagedControl.VisibleWeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int VisibleWeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="LiteralMode" FullName="System.Web.UI.WebControls.LiteralMode">
+﻿<Type Name="LiteralMode" FullName="System.Web.UI.WebControls.LiteralMode">
   <TypeSignature Language="C#" Value="public enum LiteralMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LiteralMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LiteralMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LiteralMode" />
+  <TypeSignature Language="F#" Value="type LiteralMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LiteralMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="Encode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.LiteralMode Encode = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LiteralMode.Encode" />
+      <MemberSignature Language="VB.NET" Value="Encode" />
+      <MemberSignature Language="F#" Value="Encode = 2" Usage="System.Web.UI.WebControls.LiteralMode.Encode" />
+      <MemberSignature Language="C++ CLI" Value="Encode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.LiteralMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The literal control's contents are HTML-encoded.</summary>
       </Docs>
@@ -57,6 +64,9 @@
       <MemberSignature Language="C#" Value="PassThrough" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.LiteralMode PassThrough = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LiteralMode.PassThrough" />
+      <MemberSignature Language="VB.NET" Value="PassThrough" />
+      <MemberSignature Language="F#" Value="PassThrough = 1" Usage="System.Web.UI.WebControls.LiteralMode.PassThrough" />
+      <MemberSignature Language="C++ CLI" Value="PassThrough" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.LiteralMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The literal control's contents are not modified.</summary>
       </Docs>
@@ -73,6 +84,9 @@
       <MemberSignature Language="C#" Value="Transform" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.LiteralMode Transform = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.LiteralMode.Transform" />
+      <MemberSignature Language="VB.NET" Value="Transform" />
+      <MemberSignature Language="F#" Value="Transform = 0" Usage="System.Web.UI.WebControls.LiteralMode.Transform" />
+      <MemberSignature Language="C++ CLI" Value="Transform" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.LiteralMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The literal control's unsupported markup-language elements are removed. If the literal control is rendered on a browser that supports HTML or XHTML, the control's contents are not modified.</summary>
       </Docs>

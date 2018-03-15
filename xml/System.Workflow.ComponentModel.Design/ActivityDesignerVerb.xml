@@ -1,7 +1,10 @@
-<Type Name="ActivityDesignerVerb" FullName="System.Workflow.ComponentModel.Design.ActivityDesignerVerb">
+﻿<Type Name="ActivityDesignerVerb" FullName="System.Workflow.ComponentModel.Design.ActivityDesignerVerb">
   <TypeSignature Language="C#" Value="public class ActivityDesignerVerb : System.ComponentModel.Design.DesignerVerb" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityDesignerVerb extends System.ComponentModel.Design.DesignerVerb" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesignerVerb" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityDesignerVerb&#xA;Inherits DesignerVerb" />
+  <TypeSignature Language="F#" Value="type ActivityDesignerVerb = class&#xA;    inherit DesignerVerb" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityDesignerVerb : System::ComponentModel::Design::DesignerVerb" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +38,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of an <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerVerb" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ActivityDesignerVerb (System.Workflow.ComponentModel.Design.ActivityDesigner activityDesigner, System.Workflow.ComponentModel.Design.DesignerVerbGroup verbGroup, string text, EventHandler invokeHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Design.ActivityDesigner activityDesigner, valuetype System.Workflow.ComponentModel.Design.DesignerVerbGroup verbGroup, string text, class System.EventHandler invokeHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerVerb.#ctor(System.Workflow.ComponentModel.Design.ActivityDesigner,System.Workflow.ComponentModel.Design.DesignerVerbGroup,System.String,System.EventHandler)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.ActivityDesignerVerb : System.Workflow.ComponentModel.Design.ActivityDesigner * System.Workflow.ComponentModel.Design.DesignerVerbGroup * string * EventHandler -&gt; System.Workflow.ComponentModel.Design.ActivityDesignerVerb" Usage="new System.Workflow.ComponentModel.Design.ActivityDesignerVerb (activityDesigner, verbGroup, text, invokeHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityDesignerVerb(System::Workflow::ComponentModel::Design::ActivityDesigner ^ activityDesigner, System::Workflow::ComponentModel::Design::DesignerVerbGroup verbGroup, System::String ^ text, EventHandler ^ invokeHandler);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -69,6 +83,8 @@
       <MemberSignature Language="C#" Value="public ActivityDesignerVerb (System.Workflow.ComponentModel.Design.ActivityDesigner activityDesigner, System.Workflow.ComponentModel.Design.DesignerVerbGroup verbGroup, string text, EventHandler invokeHandler, EventHandler statusHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Design.ActivityDesigner activityDesigner, valuetype System.Workflow.ComponentModel.Design.DesignerVerbGroup verbGroup, string text, class System.EventHandler invokeHandler, class System.EventHandler statusHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerVerb.#ctor(System.Workflow.ComponentModel.Design.ActivityDesigner,System.Workflow.ComponentModel.Design.DesignerVerbGroup,System.String,System.EventHandler,System.EventHandler)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.ActivityDesignerVerb : System.Workflow.ComponentModel.Design.ActivityDesigner * System.Workflow.ComponentModel.Design.DesignerVerbGroup * string * EventHandler * EventHandler -&gt; System.Workflow.ComponentModel.Design.ActivityDesignerVerb" Usage="new System.Workflow.ComponentModel.Design.ActivityDesignerVerb (activityDesigner, verbGroup, text, invokeHandler, statusHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityDesignerVerb(System::Workflow::ComponentModel::Design::ActivityDesigner ^ activityDesigner, System::Workflow::ComponentModel::Design::DesignerVerbGroup verbGroup, System::String ^ text, EventHandler ^ invokeHandler, EventHandler ^ statusHandler);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -95,6 +111,9 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.CommandID CommandID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.CommandID CommandID" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerVerb.CommandID" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CommandID As CommandID" />
+      <MemberSignature Language="F#" Value="member this.CommandID : System.ComponentModel.Design.CommandID" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerVerb.CommandID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::CommandID ^ CommandID { System::ComponentModel::Design::CommandID ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -120,6 +139,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Design.DesignerVerbGroup Group { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.ComponentModel.Design.DesignerVerbGroup Group" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerVerb.Group" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Group As DesignerVerbGroup" />
+      <MemberSignature Language="F#" Value="member this.Group : System.Workflow.ComponentModel.Design.DesignerVerbGroup" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerVerb.Group" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Design::DesignerVerbGroup Group { System::Workflow::ComponentModel::Design::DesignerVerbGroup get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -145,6 +167,9 @@
       <MemberSignature Language="C#" Value="public override int OleStatus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 OleStatus" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerVerb.OleStatus" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property OleStatus As Integer" />
+      <MemberSignature Language="F#" Value="member this.OleStatus : int" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerVerb.OleStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int OleStatus { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -166,14 +191,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes an instance of an <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerVerb" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

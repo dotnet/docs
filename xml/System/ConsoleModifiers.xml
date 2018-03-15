@@ -1,7 +1,10 @@
-<Type Name="ConsoleModifiers" FullName="System.ConsoleModifiers">
+﻿<Type Name="ConsoleModifiers" FullName="System.ConsoleModifiers">
   <TypeSignature Language="C#" Value="public enum ConsoleModifiers" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ConsoleModifiers extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ConsoleModifiers" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ConsoleModifiers" />
+  <TypeSignature Language="F#" Value="type ConsoleModifiers = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ConsoleModifiers" />
   <AssemblyInfo>
     <AssemblyName>System.Console</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +56,9 @@
       <MemberSignature Language="C#" Value="Alt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleModifiers Alt = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleModifiers.Alt" />
+      <MemberSignature Language="VB.NET" Value="Alt" />
+      <MemberSignature Language="F#" Value="Alt = 1" Usage="System.ConsoleModifiers.Alt" />
+      <MemberSignature Language="C++ CLI" Value="Alt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -71,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleModifiers</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The left or right ALT modifier key.</summary>
       </Docs>
@@ -79,6 +86,9 @@
       <MemberSignature Language="C#" Value="Control" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleModifiers Control = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleModifiers.Control" />
+      <MemberSignature Language="VB.NET" Value="Control" />
+      <MemberSignature Language="F#" Value="Control = 4" Usage="System.ConsoleModifiers.Control" />
+      <MemberSignature Language="C++ CLI" Value="Control" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -97,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleModifiers</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The left or right CTRL modifier key.</summary>
       </Docs>
@@ -105,6 +116,9 @@
       <MemberSignature Language="C#" Value="Shift" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleModifiers Shift = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleModifiers.Shift" />
+      <MemberSignature Language="VB.NET" Value="Shift" />
+      <MemberSignature Language="F#" Value="Shift = 2" Usage="System.ConsoleModifiers.Shift" />
+      <MemberSignature Language="C++ CLI" Value="Shift" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -123,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleModifiers</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The left or right SHIFT modifier key.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="Locks" FullName="DbLinq.Util.Locks">
+﻿<Type Name="Locks" FullName="DbLinq.Util.Locks">
   <TypeSignature Language="C#" Value="public static class Locks" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Locks extends System.Object" />
   <TypeSignature Language="DocId" Value="T:DbLinq.Util.Locks" />
+  <TypeSignature Language="VB.NET" Value="Public Class Locks" />
+  <TypeSignature Language="F#" Value="type Locks = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Locks abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public static System.Threading.ReaderWriterLockSlim GetLockInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.ReaderWriterLockSlim GetLockInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.GetLockInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLockInstance () As ReaderWriterLockSlim" />
+      <MemberSignature Language="F#" Value="static member GetLockInstance : unit -&gt; System.Threading.ReaderWriterLockSlim" Usage="DbLinq.Util.Locks.GetLockInstance " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::ReaderWriterLockSlim ^ GetLockInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -38,6 +44,9 @@
       <MemberSignature Language="C#" Value="public static System.Threading.ReaderWriterLockSlim GetLockInstance (System.Threading.LockRecursionPolicy recursionPolicy);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.ReaderWriterLockSlim GetLockInstance(valuetype System.Threading.LockRecursionPolicy recursionPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.GetLockInstance(System.Threading.LockRecursionPolicy)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLockInstance (recursionPolicy As LockRecursionPolicy) As ReaderWriterLockSlim" />
+      <MemberSignature Language="F#" Value="static member GetLockInstance : System.Threading.LockRecursionPolicy -&gt; System.Threading.ReaderWriterLockSlim" Usage="DbLinq.Util.Locks.GetLockInstance recursionPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::ReaderWriterLockSlim ^ GetLockInstance(System::Threading::LockRecursionPolicy recursionPolicy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -60,6 +69,9 @@
       <MemberSignature Language="C#" Value="public static void GetReadLock (System.Threading.ReaderWriterLockSlim locks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetReadLock(class System.Threading.ReaderWriterLockSlim locks) cil managed" />
       <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.GetReadLock(System.Threading.ReaderWriterLockSlim)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub GetReadLock (locks As ReaderWriterLockSlim)" />
+      <MemberSignature Language="F#" Value="static member GetReadLock : System.Threading.ReaderWriterLockSlim -&gt; unit" Usage="DbLinq.Util.Locks.GetReadLock locks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GetReadLock(System::Threading::ReaderWriterLockSlim ^ locks);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -81,6 +93,9 @@
       <MemberSignature Language="C#" Value="public static void GetReadOnlyLock (System.Threading.ReaderWriterLockSlim locks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetReadOnlyLock(class System.Threading.ReaderWriterLockSlim locks) cil managed" />
       <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.GetReadOnlyLock(System.Threading.ReaderWriterLockSlim)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub GetReadOnlyLock (locks As ReaderWriterLockSlim)" />
+      <MemberSignature Language="F#" Value="static member GetReadOnlyLock : System.Threading.ReaderWriterLockSlim -&gt; unit" Usage="DbLinq.Util.Locks.GetReadOnlyLock locks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GetReadOnlyLock(System::Threading::ReaderWriterLockSlim ^ locks);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -102,6 +117,9 @@
       <MemberSignature Language="C#" Value="public static void GetWriteLock (System.Threading.ReaderWriterLockSlim locks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void GetWriteLock(class System.Threading.ReaderWriterLockSlim locks) cil managed" />
       <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.GetWriteLock(System.Threading.ReaderWriterLockSlim)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub GetWriteLock (locks As ReaderWriterLockSlim)" />
+      <MemberSignature Language="F#" Value="static member GetWriteLock : System.Threading.ReaderWriterLockSlim -&gt; unit" Usage="DbLinq.Util.Locks.GetWriteLock locks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void GetWriteLock(System::Threading::ReaderWriterLockSlim ^ locks);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -123,6 +141,9 @@
       <MemberSignature Language="C#" Value="public static void ReleaseLock (System.Threading.ReaderWriterLockSlim locks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReleaseLock(class System.Threading.ReaderWriterLockSlim locks) cil managed" />
       <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.ReleaseLock(System.Threading.ReaderWriterLockSlim)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ReleaseLock (locks As ReaderWriterLockSlim)" />
+      <MemberSignature Language="F#" Value="static member ReleaseLock : System.Threading.ReaderWriterLockSlim -&gt; unit" Usage="DbLinq.Util.Locks.ReleaseLock locks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ReleaseLock(System::Threading::ReaderWriterLockSlim ^ locks);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -144,6 +165,9 @@
       <MemberSignature Language="C#" Value="public static void ReleaseReadLock (System.Threading.ReaderWriterLockSlim locks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReleaseReadLock(class System.Threading.ReaderWriterLockSlim locks) cil managed" />
       <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.ReleaseReadLock(System.Threading.ReaderWriterLockSlim)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ReleaseReadLock (locks As ReaderWriterLockSlim)" />
+      <MemberSignature Language="F#" Value="static member ReleaseReadLock : System.Threading.ReaderWriterLockSlim -&gt; unit" Usage="DbLinq.Util.Locks.ReleaseReadLock locks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ReleaseReadLock(System::Threading::ReaderWriterLockSlim ^ locks);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -165,6 +189,9 @@
       <MemberSignature Language="C#" Value="public static void ReleaseReadOnlyLock (System.Threading.ReaderWriterLockSlim locks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReleaseReadOnlyLock(class System.Threading.ReaderWriterLockSlim locks) cil managed" />
       <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.ReleaseReadOnlyLock(System.Threading.ReaderWriterLockSlim)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ReleaseReadOnlyLock (locks As ReaderWriterLockSlim)" />
+      <MemberSignature Language="F#" Value="static member ReleaseReadOnlyLock : System.Threading.ReaderWriterLockSlim -&gt; unit" Usage="DbLinq.Util.Locks.ReleaseReadOnlyLock locks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ReleaseReadOnlyLock(System::Threading::ReaderWriterLockSlim ^ locks);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -186,6 +213,9 @@
       <MemberSignature Language="C#" Value="public static void ReleaseWriteLock (System.Threading.ReaderWriterLockSlim locks);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReleaseWriteLock(class System.Threading.ReaderWriterLockSlim locks) cil managed" />
       <MemberSignature Language="DocId" Value="M:DbLinq.Util.Locks.ReleaseWriteLock(System.Threading.ReaderWriterLockSlim)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ReleaseWriteLock (locks As ReaderWriterLockSlim)" />
+      <MemberSignature Language="F#" Value="static member ReleaseWriteLock : System.Threading.ReaderWriterLockSlim -&gt; unit" Usage="DbLinq.Util.Locks.ReleaseWriteLock locks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ReleaseWriteLock(System::Threading::ReaderWriterLockSlim ^ locks);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

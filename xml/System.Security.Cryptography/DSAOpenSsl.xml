@@ -1,7 +1,10 @@
-<Type Name="DSAOpenSsl" FullName="System.Security.Cryptography.DSAOpenSsl">
+﻿<Type Name="DSAOpenSsl" FullName="System.Security.Cryptography.DSAOpenSsl">
   <TypeSignature Language="C#" Value="public sealed class DSAOpenSsl : System.Security.Cryptography.DSA" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DSAOpenSsl extends System.Security.Cryptography.DSA" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DSAOpenSsl" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DSAOpenSsl&#xA;Inherits DSA" />
+  <TypeSignature Language="F#" Value="type DSAOpenSsl = class&#xA;    inherit DSA" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DSAOpenSsl sealed : System::Security::Cryptography::DSA" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public DSAOpenSsl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSAOpenSsl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DSAOpenSsl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public DSAOpenSsl (int keySize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 keySize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSAOpenSsl.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (keySize As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.DSAOpenSsl : int -&gt; System.Security.Cryptography.DSAOpenSsl" Usage="new System.Security.Cryptography.DSAOpenSsl keySize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DSAOpenSsl(int keySize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -52,6 +60,9 @@
       <MemberSignature Language="C#" Value="public DSAOpenSsl (IntPtr handle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSAOpenSsl.#ctor(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (handle As IntPtr)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.DSAOpenSsl : nativeint -&gt; System.Security.Cryptography.DSAOpenSsl" Usage="new System.Security.Cryptography.DSAOpenSsl handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DSAOpenSsl(IntPtr handle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -70,6 +81,9 @@
       <MemberSignature Language="C#" Value="public DSAOpenSsl (System.Security.Cryptography.DSAParameters parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.DSAParameters parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSAOpenSsl.#ctor(System.Security.Cryptography.DSAParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameters As DSAParameters)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.DSAOpenSsl : System.Security.Cryptography.DSAParameters -&gt; System.Security.Cryptography.DSAOpenSsl" Usage="new System.Security.Cryptography.DSAOpenSsl parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DSAOpenSsl(System::Security::Cryptography::DSAParameters parameters);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -88,6 +102,9 @@
       <MemberSignature Language="C#" Value="public DSAOpenSsl (System.Security.Cryptography.SafeEvpPKeyHandle pkeyHandle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.SafeEvpPKeyHandle pkeyHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSAOpenSsl.#ctor(System.Security.Cryptography.SafeEvpPKeyHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pkeyHandle As SafeEvpPKeyHandle)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.DSAOpenSsl : System.Security.Cryptography.SafeEvpPKeyHandle -&gt; System.Security.Cryptography.DSAOpenSsl" Usage="new System.Security.Cryptography.DSAOpenSsl pkeyHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DSAOpenSsl(System::Security::Cryptography::SafeEvpPKeyHandle ^ pkeyHandle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -106,6 +123,9 @@
       <MemberSignature Language="C#" Value="public override byte[] CreateSignature (byte[] rgbHash);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] CreateSignature(unsigned int8[] rgbHash) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSAOpenSsl.CreateSignature(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateSignature (rgbHash As Byte()) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.CreateSignature : byte[] -&gt; byte[]" Usage="dSAOpenSsl.CreateSignature rgbHash" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ CreateSignature(cli::array &lt;System::Byte&gt; ^ rgbHash);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -128,6 +148,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSAOpenSsl.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="dSAOpenSsl.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -149,6 +172,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.SafeEvpPKeyHandle DuplicateKeyHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.SafeEvpPKeyHandle DuplicateKeyHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSAOpenSsl.DuplicateKeyHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Function DuplicateKeyHandle () As SafeEvpPKeyHandle" />
+      <MemberSignature Language="F#" Value="member this.DuplicateKeyHandle : unit -&gt; System.Security.Cryptography.SafeEvpPKeyHandle" Usage="dSAOpenSsl.DuplicateKeyHandle " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::SafeEvpPKeyHandle ^ DuplicateKeyHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -168,6 +194,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.DSAParameters ExportParameters (bool includePrivateParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Security.Cryptography.DSAParameters ExportParameters(bool includePrivateParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSAOpenSsl.ExportParameters(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ExportParameters (includePrivateParameters As Boolean) As DSAParameters" />
+      <MemberSignature Language="F#" Value="override this.ExportParameters : bool -&gt; System.Security.Cryptography.DSAParameters" Usage="dSAOpenSsl.ExportParameters includePrivateParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::DSAParameters ExportParameters(bool includePrivateParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -190,6 +219,9 @@
       <MemberSignature Language="C#" Value="protected override byte[] HashData (System.IO.Stream data, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance unsigned int8[] HashData(class System.IO.Stream data, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSAOpenSsl.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashData (data As Stream, hashAlgorithm As HashAlgorithmName) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="dSAOpenSsl.HashData (data, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashData(System::IO::Stream ^ data, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -214,6 +246,9 @@
       <MemberSignature Language="C#" Value="protected override byte[] HashData (byte[] data, int offset, int count, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance unsigned int8[] HashData(unsigned int8[] data, int32 offset, int32 count, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSAOpenSsl.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashData (data As Byte(), offset As Integer, count As Integer, hashAlgorithm As HashAlgorithmName) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="dSAOpenSsl.HashData (data, offset, count, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashData(cli::array &lt;System::Byte&gt; ^ data, int offset, int count, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -242,6 +277,9 @@
       <MemberSignature Language="C#" Value="public override void ImportParameters (System.Security.Cryptography.DSAParameters parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ImportParameters(valuetype System.Security.Cryptography.DSAParameters parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSAOpenSsl.ImportParameters(System.Security.Cryptography.DSAParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ImportParameters (parameters As DSAParameters)" />
+      <MemberSignature Language="F#" Value="override this.ImportParameters : System.Security.Cryptography.DSAParameters -&gt; unit" Usage="dSAOpenSsl.ImportParameters parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ImportParameters(System::Security::Cryptography::DSAParameters parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -263,6 +301,9 @@
       <MemberSignature Language="C#" Value="public override int KeySize { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeySize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DSAOpenSsl.KeySize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property KeySize As Integer" />
+      <MemberSignature Language="F#" Value="member this.KeySize : int" Usage="System.Security.Cryptography.DSAOpenSsl.KeySize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int KeySize {  void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -281,6 +322,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.KeySizes[] LegalKeySizes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.KeySizes[] LegalKeySizes" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.DSAOpenSsl.LegalKeySizes" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LegalKeySizes As KeySizes()" />
+      <MemberSignature Language="F#" Value="member this.LegalKeySizes : System.Security.Cryptography.KeySizes[]" Usage="System.Security.Cryptography.DSAOpenSsl.LegalKeySizes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ LegalKeySizes { cli::array &lt;System::Security::Cryptography::KeySizes ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>
@@ -299,6 +343,9 @@
       <MemberSignature Language="C#" Value="public override bool VerifySignature (byte[] rgbHash, byte[] rgbSignature);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool VerifySignature(unsigned int8[] rgbHash, unsigned int8[] rgbSignature) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSAOpenSsl.VerifySignature(System.Byte[],System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function VerifySignature (rgbHash As Byte(), rgbSignature As Byte()) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.VerifySignature : byte[] * byte[] -&gt; bool" Usage="dSAOpenSsl.VerifySignature (rgbHash, rgbSignature)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool VerifySignature(cli::array &lt;System::Byte&gt; ^ rgbHash, cli::array &lt;System::Byte&gt; ^ rgbSignature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.OpenSsl</AssemblyName>

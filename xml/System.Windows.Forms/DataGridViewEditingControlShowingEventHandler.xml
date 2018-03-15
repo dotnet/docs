@@ -1,7 +1,10 @@
-<Type Name="DataGridViewEditingControlShowingEventHandler" FullName="System.Windows.Forms.DataGridViewEditingControlShowingEventHandler">
+﻿<Type Name="DataGridViewEditingControlShowingEventHandler" FullName="System.Windows.Forms.DataGridViewEditingControlShowingEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewEditingControlShowingEventHandler(object sender, DataGridViewEditingControlShowingEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewEditingControlShowingEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewEditingControlShowingEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewEditingControlShowingEventHandler(sender As Object, e As DataGridViewEditingControlShowingEventArgs)" />
+  <TypeSignature Language="F#" Value="type DataGridViewEditingControlShowingEventHandler = delegate of obj * DataGridViewEditingControlShowingEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewEditingControlShowingEventHandler(System::Object ^ sender, DataGridViewEditingControlShowingEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

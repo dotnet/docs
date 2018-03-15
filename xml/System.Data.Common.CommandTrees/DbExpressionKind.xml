@@ -1,7 +1,10 @@
-<Type Name="DbExpressionKind" FullName="System.Data.Common.CommandTrees.DbExpressionKind">
+﻿<Type Name="DbExpressionKind" FullName="System.Data.Common.CommandTrees.DbExpressionKind">
   <TypeSignature Language="C#" Value="public enum DbExpressionKind" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DbExpressionKind extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbExpressionKind" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DbExpressionKind" />
+  <TypeSignature Language="F#" Value="type DbExpressionKind = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DbExpressionKind" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind All = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="F#" Value="All = 0" Usage="System.Data.Common.CommandTrees.DbExpressionKind.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>
           <see langword="true" />-for-all expressions.</summary>
@@ -42,6 +49,9 @@
       <MemberSignature Language="C#" Value="And" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind And = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.And" />
+      <MemberSignature Language="VB.NET" Value="And" />
+      <MemberSignature Language="F#" Value="And = 1" Usage="System.Data.Common.CommandTrees.DbExpressionKind.And" />
+      <MemberSignature Language="C++ CLI" Value="And" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -50,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Logical AND expressions.</summary>
       </Docs>
@@ -58,6 +69,9 @@
       <MemberSignature Language="C#" Value="Any" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Any = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Any" />
+      <MemberSignature Language="VB.NET" Value="Any" />
+      <MemberSignature Language="F#" Value="Any = 2" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Any" />
+      <MemberSignature Language="C++ CLI" Value="Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -66,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>
           <see langword="true" />-for-any expressions.</summary>
@@ -75,6 +90,9 @@
       <MemberSignature Language="C#" Value="Case" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Case = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Case" />
+      <MemberSignature Language="VB.NET" Value="Case" />
+      <MemberSignature Language="F#" Value="Case = 3" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Case" />
+      <MemberSignature Language="C++ CLI" Value="Case" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -83,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Conditional case statement expressions.</summary>
       </Docs>
@@ -91,6 +110,9 @@
       <MemberSignature Language="C#" Value="Cast" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Cast = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Cast" />
+      <MemberSignature Language="VB.NET" Value="Cast" />
+      <MemberSignature Language="F#" Value="Cast = 4" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Cast" />
+      <MemberSignature Language="C++ CLI" Value="Cast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -99,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Polymorphic type cast expressions.</summary>
       </Docs>
@@ -107,6 +130,9 @@
       <MemberSignature Language="C#" Value="Constant" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Constant = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Constant" />
+      <MemberSignature Language="VB.NET" Value="Constant" />
+      <MemberSignature Language="F#" Value="Constant = 5" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Constant" />
+      <MemberSignature Language="C++ CLI" Value="Constant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -115,6 +141,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Constant value expressions.</summary>
       </Docs>
@@ -123,6 +150,9 @@
       <MemberSignature Language="C#" Value="CrossApply" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind CrossApply = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.CrossApply" />
+      <MemberSignature Language="VB.NET" Value="CrossApply" />
+      <MemberSignature Language="F#" Value="CrossApply = 6" Usage="System.Data.Common.CommandTrees.DbExpressionKind.CrossApply" />
+      <MemberSignature Language="C++ CLI" Value="CrossApply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -131,6 +161,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Cross apply expressions.</summary>
       </Docs>
@@ -139,6 +170,9 @@
       <MemberSignature Language="C#" Value="CrossJoin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind CrossJoin = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.CrossJoin" />
+      <MemberSignature Language="VB.NET" Value="CrossJoin" />
+      <MemberSignature Language="F#" Value="CrossJoin = 7" Usage="System.Data.Common.CommandTrees.DbExpressionKind.CrossJoin" />
+      <MemberSignature Language="C++ CLI" Value="CrossJoin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -147,6 +181,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Cross join expressions.</summary>
       </Docs>
@@ -155,6 +190,9 @@
       <MemberSignature Language="C#" Value="Deref" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Deref = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Deref" />
+      <MemberSignature Language="VB.NET" Value="Deref" />
+      <MemberSignature Language="F#" Value="Deref = 8" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Deref" />
+      <MemberSignature Language="C++ CLI" Value="Deref" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -163,6 +201,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Dereference expressions.</summary>
       </Docs>
@@ -171,6 +210,9 @@
       <MemberSignature Language="C#" Value="Distinct" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Distinct = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Distinct" />
+      <MemberSignature Language="VB.NET" Value="Distinct" />
+      <MemberSignature Language="F#" Value="Distinct = 9" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Distinct" />
+      <MemberSignature Language="C++ CLI" Value="Distinct" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -179,6 +221,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Duplicate removal expressions.</summary>
       </Docs>
@@ -187,6 +230,9 @@
       <MemberSignature Language="C#" Value="Divide" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Divide = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Divide" />
+      <MemberSignature Language="VB.NET" Value="Divide" />
+      <MemberSignature Language="F#" Value="Divide = 10" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Divide" />
+      <MemberSignature Language="C++ CLI" Value="Divide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -195,6 +241,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>Division expressions.</summary>
       </Docs>
@@ -203,6 +250,9 @@
       <MemberSignature Language="C#" Value="Element" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Element = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Element" />
+      <MemberSignature Language="VB.NET" Value="Element" />
+      <MemberSignature Language="F#" Value="Element = 11" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Element" />
+      <MemberSignature Language="C++ CLI" Value="Element" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -211,6 +261,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>Set-to-singleton conversion expressions.</summary>
       </Docs>
@@ -219,6 +270,9 @@
       <MemberSignature Language="C#" Value="EntityRef" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind EntityRef = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.EntityRef" />
+      <MemberSignature Language="VB.NET" Value="EntityRef" />
+      <MemberSignature Language="F#" Value="EntityRef = 12" Usage="System.Data.Common.CommandTrees.DbExpressionKind.EntityRef" />
+      <MemberSignature Language="C++ CLI" Value="EntityRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -227,6 +281,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>Entity reference value retrieval expressions.</summary>
       </Docs>
@@ -235,6 +290,9 @@
       <MemberSignature Language="C#" Value="Equals" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Equals = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Equals" />
+      <MemberSignature Language="VB.NET" Value="Equals" />
+      <MemberSignature Language="F#" Value="Equals = 13" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Equals" />
+      <MemberSignature Language="C++ CLI" Value="Equals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -243,6 +301,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>Equality expressions.</summary>
       </Docs>
@@ -251,6 +310,9 @@
       <MemberSignature Language="C#" Value="Except" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Except = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Except" />
+      <MemberSignature Language="VB.NET" Value="Except" />
+      <MemberSignature Language="F#" Value="Except = 14" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Except" />
+      <MemberSignature Language="C++ CLI" Value="Except" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -259,6 +321,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>Set subtraction expressions.</summary>
       </Docs>
@@ -267,6 +330,9 @@
       <MemberSignature Language="C#" Value="Filter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Filter = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Filter" />
+      <MemberSignature Language="VB.NET" Value="Filter" />
+      <MemberSignature Language="F#" Value="Filter = 15" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Filter" />
+      <MemberSignature Language="C++ CLI" Value="Filter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -275,6 +341,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>Restriction expressions.</summary>
       </Docs>
@@ -283,6 +350,9 @@
       <MemberSignature Language="C#" Value="FullOuterJoin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind FullOuterJoin = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.FullOuterJoin" />
+      <MemberSignature Language="VB.NET" Value="FullOuterJoin" />
+      <MemberSignature Language="F#" Value="FullOuterJoin = 16" Usage="System.Data.Common.CommandTrees.DbExpressionKind.FullOuterJoin" />
+      <MemberSignature Language="C++ CLI" Value="FullOuterJoin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -291,6 +361,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Full outer join expressions.</summary>
       </Docs>
@@ -299,6 +370,9 @@
       <MemberSignature Language="C#" Value="Function" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Function = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Function" />
+      <MemberSignature Language="VB.NET" Value="Function" />
+      <MemberSignature Language="F#" Value="Function = 17" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Function" />
+      <MemberSignature Language="C++ CLI" Value="Function" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -307,6 +381,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>Standalone function expressions.</summary>
       </Docs>
@@ -315,6 +390,9 @@
       <MemberSignature Language="C#" Value="GreaterThan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind GreaterThan = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.GreaterThan" />
+      <MemberSignature Language="VB.NET" Value="GreaterThan" />
+      <MemberSignature Language="F#" Value="GreaterThan = 18" Usage="System.Data.Common.CommandTrees.DbExpressionKind.GreaterThan" />
+      <MemberSignature Language="C++ CLI" Value="GreaterThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -323,6 +401,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>Greater than expressions.</summary>
       </Docs>
@@ -331,6 +410,9 @@
       <MemberSignature Language="C#" Value="GreaterThanOrEquals" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind GreaterThanOrEquals = int32(19)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.GreaterThanOrEquals" />
+      <MemberSignature Language="VB.NET" Value="GreaterThanOrEquals" />
+      <MemberSignature Language="F#" Value="GreaterThanOrEquals = 19" Usage="System.Data.Common.CommandTrees.DbExpressionKind.GreaterThanOrEquals" />
+      <MemberSignature Language="C++ CLI" Value="GreaterThanOrEquals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -339,6 +421,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>Greater than or equal expressions.</summary>
       </Docs>
@@ -347,6 +430,9 @@
       <MemberSignature Language="C#" Value="GroupBy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind GroupBy = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.GroupBy" />
+      <MemberSignature Language="VB.NET" Value="GroupBy" />
+      <MemberSignature Language="F#" Value="GroupBy = 20" Usage="System.Data.Common.CommandTrees.DbExpressionKind.GroupBy" />
+      <MemberSignature Language="C++ CLI" Value="GroupBy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -355,6 +441,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>Grouping expressions.</summary>
       </Docs>
@@ -363,6 +450,9 @@
       <MemberSignature Language="C#" Value="InnerJoin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind InnerJoin = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.InnerJoin" />
+      <MemberSignature Language="VB.NET" Value="InnerJoin" />
+      <MemberSignature Language="F#" Value="InnerJoin = 21" Usage="System.Data.Common.CommandTrees.DbExpressionKind.InnerJoin" />
+      <MemberSignature Language="C++ CLI" Value="InnerJoin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -371,6 +461,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>Inner join expressions.</summary>
       </Docs>
@@ -379,6 +470,9 @@
       <MemberSignature Language="C#" Value="Intersect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Intersect = int32(22)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Intersect" />
+      <MemberSignature Language="VB.NET" Value="Intersect" />
+      <MemberSignature Language="F#" Value="Intersect = 22" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Intersect" />
+      <MemberSignature Language="C++ CLI" Value="Intersect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -387,6 +481,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>Set intersection expressions.</summary>
       </Docs>
@@ -395,6 +490,9 @@
       <MemberSignature Language="C#" Value="IsEmpty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind IsEmpty = int32(23)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="IsEmpty" />
+      <MemberSignature Language="F#" Value="IsEmpty = 23" Usage="System.Data.Common.CommandTrees.DbExpressionKind.IsEmpty" />
+      <MemberSignature Language="C++ CLI" Value="IsEmpty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -403,6 +501,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>Empty set determination expressions.</summary>
       </Docs>
@@ -411,6 +510,9 @@
       <MemberSignature Language="C#" Value="IsNull" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind IsNull = int32(24)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.IsNull" />
+      <MemberSignature Language="VB.NET" Value="IsNull" />
+      <MemberSignature Language="F#" Value="IsNull = 24" Usage="System.Data.Common.CommandTrees.DbExpressionKind.IsNull" />
+      <MemberSignature Language="C++ CLI" Value="IsNull" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -419,6 +521,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>Null determination expressions.</summary>
       </Docs>
@@ -427,6 +530,9 @@
       <MemberSignature Language="C#" Value="IsOf" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind IsOf = int32(25)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.IsOf" />
+      <MemberSignature Language="VB.NET" Value="IsOf" />
+      <MemberSignature Language="F#" Value="IsOf = 25" Usage="System.Data.Common.CommandTrees.DbExpressionKind.IsOf" />
+      <MemberSignature Language="C++ CLI" Value="IsOf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -435,6 +541,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>Type comparison (specified Type or Subtype) expressions.</summary>
       </Docs>
@@ -443,6 +550,9 @@
       <MemberSignature Language="C#" Value="IsOfOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind IsOfOnly = int32(26)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.IsOfOnly" />
+      <MemberSignature Language="VB.NET" Value="IsOfOnly" />
+      <MemberSignature Language="F#" Value="IsOfOnly = 26" Usage="System.Data.Common.CommandTrees.DbExpressionKind.IsOfOnly" />
+      <MemberSignature Language="C++ CLI" Value="IsOfOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -451,6 +561,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>Type comparison (specified Type only) expressions.</summary>
       </Docs>
@@ -459,6 +570,9 @@
       <MemberSignature Language="C#" Value="Lambda" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Lambda = int32(57)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Lambda" />
+      <MemberSignature Language="VB.NET" Value="Lambda" />
+      <MemberSignature Language="F#" Value="Lambda = 57" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Lambda" />
+      <MemberSignature Language="C++ CLI" Value="Lambda" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -467,6 +581,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>57</MemberValue>
       <Docs>
         <summary>Lambda function expressions.</summary>
       </Docs>
@@ -475,6 +590,9 @@
       <MemberSignature Language="C#" Value="LeftOuterJoin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind LeftOuterJoin = int32(27)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.LeftOuterJoin" />
+      <MemberSignature Language="VB.NET" Value="LeftOuterJoin" />
+      <MemberSignature Language="F#" Value="LeftOuterJoin = 27" Usage="System.Data.Common.CommandTrees.DbExpressionKind.LeftOuterJoin" />
+      <MemberSignature Language="C++ CLI" Value="LeftOuterJoin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -483,6 +601,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>27</MemberValue>
       <Docs>
         <summary>Left outer join expressions.</summary>
       </Docs>
@@ -491,6 +610,9 @@
       <MemberSignature Language="C#" Value="LessThan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind LessThan = int32(28)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.LessThan" />
+      <MemberSignature Language="VB.NET" Value="LessThan" />
+      <MemberSignature Language="F#" Value="LessThan = 28" Usage="System.Data.Common.CommandTrees.DbExpressionKind.LessThan" />
+      <MemberSignature Language="C++ CLI" Value="LessThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -499,6 +621,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>28</MemberValue>
       <Docs>
         <summary>Less than expressions.</summary>
       </Docs>
@@ -507,6 +630,9 @@
       <MemberSignature Language="C#" Value="LessThanOrEquals" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind LessThanOrEquals = int32(29)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.LessThanOrEquals" />
+      <MemberSignature Language="VB.NET" Value="LessThanOrEquals" />
+      <MemberSignature Language="F#" Value="LessThanOrEquals = 29" Usage="System.Data.Common.CommandTrees.DbExpressionKind.LessThanOrEquals" />
+      <MemberSignature Language="C++ CLI" Value="LessThanOrEquals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -515,6 +641,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>29</MemberValue>
       <Docs>
         <summary>Less than or equal expressions.</summary>
       </Docs>
@@ -523,6 +650,9 @@
       <MemberSignature Language="C#" Value="Like" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Like = int32(30)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Like" />
+      <MemberSignature Language="VB.NET" Value="Like" />
+      <MemberSignature Language="F#" Value="Like = 30" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Like" />
+      <MemberSignature Language="C++ CLI" Value="Like" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -531,6 +661,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>String comparison expressions.</summary>
       </Docs>
@@ -539,6 +670,9 @@
       <MemberSignature Language="C#" Value="Limit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Limit = int32(31)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Limit" />
+      <MemberSignature Language="VB.NET" Value="Limit" />
+      <MemberSignature Language="F#" Value="Limit = 31" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Limit" />
+      <MemberSignature Language="C++ CLI" Value="Limit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -547,6 +681,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>31</MemberValue>
       <Docs>
         <summary>Result count restriction (TOP n).</summary>
       </Docs>
@@ -555,6 +690,9 @@
       <MemberSignature Language="C#" Value="Minus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Minus = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Minus" />
+      <MemberSignature Language="VB.NET" Value="Minus" />
+      <MemberSignature Language="F#" Value="Minus = 32" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Minus" />
+      <MemberSignature Language="C++ CLI" Value="Minus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -563,6 +701,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Subtraction expressions.</summary>
       </Docs>
@@ -571,6 +710,9 @@
       <MemberSignature Language="C#" Value="Modulo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Modulo = int32(33)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Modulo" />
+      <MemberSignature Language="VB.NET" Value="Modulo" />
+      <MemberSignature Language="F#" Value="Modulo = 33" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Modulo" />
+      <MemberSignature Language="C++ CLI" Value="Modulo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -579,6 +721,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>33</MemberValue>
       <Docs>
         <summary>Modulo expressions.</summary>
       </Docs>
@@ -587,6 +730,9 @@
       <MemberSignature Language="C#" Value="Multiply" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Multiply = int32(34)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Multiply" />
+      <MemberSignature Language="VB.NET" Value="Multiply" />
+      <MemberSignature Language="F#" Value="Multiply = 34" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Multiply" />
+      <MemberSignature Language="C++ CLI" Value="Multiply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -595,6 +741,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>34</MemberValue>
       <Docs>
         <summary>Multiplication expressions.</summary>
       </Docs>
@@ -603,6 +750,9 @@
       <MemberSignature Language="C#" Value="NewInstance" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind NewInstance = int32(35)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.NewInstance" />
+      <MemberSignature Language="VB.NET" Value="NewInstance" />
+      <MemberSignature Language="F#" Value="NewInstance = 35" Usage="System.Data.Common.CommandTrees.DbExpressionKind.NewInstance" />
+      <MemberSignature Language="C++ CLI" Value="NewInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -611,6 +761,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>35</MemberValue>
       <Docs>
         <summary>Instance, row, and set construction expressions.</summary>
       </Docs>
@@ -619,6 +770,9 @@
       <MemberSignature Language="C#" Value="Not" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Not = int32(36)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Not" />
+      <MemberSignature Language="VB.NET" Value="Not" />
+      <MemberSignature Language="F#" Value="Not = 36" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Not" />
+      <MemberSignature Language="C++ CLI" Value="Not" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -627,6 +781,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>36</MemberValue>
       <Docs>
         <summary>Logical NOT expressions.</summary>
       </Docs>
@@ -635,6 +790,9 @@
       <MemberSignature Language="C#" Value="NotEquals" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind NotEquals = int32(37)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.NotEquals" />
+      <MemberSignature Language="VB.NET" Value="NotEquals" />
+      <MemberSignature Language="F#" Value="NotEquals = 37" Usage="System.Data.Common.CommandTrees.DbExpressionKind.NotEquals" />
+      <MemberSignature Language="C++ CLI" Value="NotEquals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -643,6 +801,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>37</MemberValue>
       <Docs>
         <summary>Inequality expressions.</summary>
       </Docs>
@@ -651,6 +810,9 @@
       <MemberSignature Language="C#" Value="Null" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Null = int32(38)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Null" />
+      <MemberSignature Language="VB.NET" Value="Null" />
+      <MemberSignature Language="F#" Value="Null = 38" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Null" />
+      <MemberSignature Language="C++ CLI" Value="Null" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -659,6 +821,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>38</MemberValue>
       <Docs>
         <summary>Null expressions.</summary>
       </Docs>
@@ -667,6 +830,9 @@
       <MemberSignature Language="C#" Value="OfType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind OfType = int32(39)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.OfType" />
+      <MemberSignature Language="VB.NET" Value="OfType" />
+      <MemberSignature Language="F#" Value="OfType = 39" Usage="System.Data.Common.CommandTrees.DbExpressionKind.OfType" />
+      <MemberSignature Language="C++ CLI" Value="OfType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -675,6 +841,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>39</MemberValue>
       <Docs>
         <summary>Set members by type (or subtype) expressions.</summary>
       </Docs>
@@ -683,6 +850,9 @@
       <MemberSignature Language="C#" Value="OfTypeOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind OfTypeOnly = int32(40)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.OfTypeOnly" />
+      <MemberSignature Language="VB.NET" Value="OfTypeOnly" />
+      <MemberSignature Language="F#" Value="OfTypeOnly = 40" Usage="System.Data.Common.CommandTrees.DbExpressionKind.OfTypeOnly" />
+      <MemberSignature Language="C++ CLI" Value="OfTypeOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -691,6 +861,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>40</MemberValue>
       <Docs>
         <summary>Set members by exact type expressions.</summary>
       </Docs>
@@ -699,6 +870,9 @@
       <MemberSignature Language="C#" Value="Or" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Or = int32(41)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Or" />
+      <MemberSignature Language="VB.NET" Value="Or" />
+      <MemberSignature Language="F#" Value="Or = 41" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Or" />
+      <MemberSignature Language="C++ CLI" Value="Or" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -707,6 +881,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>41</MemberValue>
       <Docs>
         <summary>Logical OR expressions.</summary>
       </Docs>
@@ -715,6 +890,9 @@
       <MemberSignature Language="C#" Value="OuterApply" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind OuterApply = int32(42)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.OuterApply" />
+      <MemberSignature Language="VB.NET" Value="OuterApply" />
+      <MemberSignature Language="F#" Value="OuterApply = 42" Usage="System.Data.Common.CommandTrees.DbExpressionKind.OuterApply" />
+      <MemberSignature Language="C++ CLI" Value="OuterApply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -723,6 +901,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>42</MemberValue>
       <Docs>
         <summary>Outer apply expressions</summary>
       </Docs>
@@ -731,6 +910,9 @@
       <MemberSignature Language="C#" Value="ParameterReference" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind ParameterReference = int32(43)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.ParameterReference" />
+      <MemberSignature Language="VB.NET" Value="ParameterReference" />
+      <MemberSignature Language="F#" Value="ParameterReference = 43" Usage="System.Data.Common.CommandTrees.DbExpressionKind.ParameterReference" />
+      <MemberSignature Language="C++ CLI" Value="ParameterReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -739,6 +921,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>43</MemberValue>
       <Docs>
         <summary>Reference to a parameter expressions.</summary>
       </Docs>
@@ -747,6 +930,9 @@
       <MemberSignature Language="C#" Value="Plus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Plus = int32(44)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Plus" />
+      <MemberSignature Language="VB.NET" Value="Plus" />
+      <MemberSignature Language="F#" Value="Plus = 44" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Plus" />
+      <MemberSignature Language="C++ CLI" Value="Plus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -755,6 +941,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>44</MemberValue>
       <Docs>
         <summary>Addition expressions.</summary>
       </Docs>
@@ -763,6 +950,9 @@
       <MemberSignature Language="C#" Value="Project" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Project = int32(45)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Project" />
+      <MemberSignature Language="VB.NET" Value="Project" />
+      <MemberSignature Language="F#" Value="Project = 45" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Project" />
+      <MemberSignature Language="C++ CLI" Value="Project" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -771,6 +961,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>45</MemberValue>
       <Docs>
         <summary>Projection expressions.</summary>
       </Docs>
@@ -779,6 +970,9 @@
       <MemberSignature Language="C#" Value="Property" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Property = int32(46)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Property" />
+      <MemberSignature Language="VB.NET" Value="Property" />
+      <MemberSignature Language="F#" Value="Property = 46" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Property" />
+      <MemberSignature Language="C++ CLI" Value="Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -787,6 +981,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>46</MemberValue>
       <Docs>
         <summary>Static or instance property retrieval expressions.</summary>
       </Docs>
@@ -795,6 +990,9 @@
       <MemberSignature Language="C#" Value="Ref" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Ref = int32(47)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Ref" />
+      <MemberSignature Language="VB.NET" Value="Ref" />
+      <MemberSignature Language="F#" Value="Ref = 47" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Ref" />
+      <MemberSignature Language="C++ CLI" Value="Ref" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -803,6 +1001,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>47</MemberValue>
       <Docs>
         <summary>Reference expressions.</summary>
       </Docs>
@@ -811,6 +1010,9 @@
       <MemberSignature Language="C#" Value="RefKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind RefKey = int32(48)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.RefKey" />
+      <MemberSignature Language="VB.NET" Value="RefKey" />
+      <MemberSignature Language="F#" Value="RefKey = 48" Usage="System.Data.Common.CommandTrees.DbExpressionKind.RefKey" />
+      <MemberSignature Language="C++ CLI" Value="RefKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -819,6 +1021,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>Ref key value retrieval expressions.</summary>
       </Docs>
@@ -827,6 +1030,9 @@
       <MemberSignature Language="C#" Value="RelationshipNavigation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind RelationshipNavigation = int32(49)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.RelationshipNavigation" />
+      <MemberSignature Language="VB.NET" Value="RelationshipNavigation" />
+      <MemberSignature Language="F#" Value="RelationshipNavigation = 49" Usage="System.Data.Common.CommandTrees.DbExpressionKind.RelationshipNavigation" />
+      <MemberSignature Language="C++ CLI" Value="RelationshipNavigation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -835,6 +1041,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>49</MemberValue>
       <Docs>
         <summary>Relationship (composition or association) navigation expressions.</summary>
       </Docs>
@@ -843,6 +1050,9 @@
       <MemberSignature Language="C#" Value="Scan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Scan = int32(50)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Scan" />
+      <MemberSignature Language="VB.NET" Value="Scan" />
+      <MemberSignature Language="F#" Value="Scan = 50" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Scan" />
+      <MemberSignature Language="C++ CLI" Value="Scan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -851,6 +1061,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>50</MemberValue>
       <Docs>
         <summary>Entity or relationship set scan expressions.</summary>
       </Docs>
@@ -859,6 +1070,9 @@
       <MemberSignature Language="C#" Value="Skip" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Skip = int32(51)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Skip" />
+      <MemberSignature Language="VB.NET" Value="Skip" />
+      <MemberSignature Language="F#" Value="Skip = 51" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Skip" />
+      <MemberSignature Language="C++ CLI" Value="Skip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -867,6 +1081,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>51</MemberValue>
       <Docs>
         <summary>Skip elements of an ordered collection.</summary>
       </Docs>
@@ -875,6 +1090,9 @@
       <MemberSignature Language="C#" Value="Sort" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Sort = int32(52)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Sort" />
+      <MemberSignature Language="VB.NET" Value="Sort" />
+      <MemberSignature Language="F#" Value="Sort = 52" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Sort" />
+      <MemberSignature Language="C++ CLI" Value="Sort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -883,6 +1101,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>52</MemberValue>
       <Docs>
         <summary>Sorting expressions.</summary>
       </Docs>
@@ -891,6 +1110,9 @@
       <MemberSignature Language="C#" Value="Treat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind Treat = int32(53)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.Treat" />
+      <MemberSignature Language="VB.NET" Value="Treat" />
+      <MemberSignature Language="F#" Value="Treat = 53" Usage="System.Data.Common.CommandTrees.DbExpressionKind.Treat" />
+      <MemberSignature Language="C++ CLI" Value="Treat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -899,6 +1121,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>53</MemberValue>
       <Docs>
         <summary>Type conversion expressions.</summary>
       </Docs>
@@ -907,6 +1130,9 @@
       <MemberSignature Language="C#" Value="UnaryMinus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind UnaryMinus = int32(54)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.UnaryMinus" />
+      <MemberSignature Language="VB.NET" Value="UnaryMinus" />
+      <MemberSignature Language="F#" Value="UnaryMinus = 54" Usage="System.Data.Common.CommandTrees.DbExpressionKind.UnaryMinus" />
+      <MemberSignature Language="C++ CLI" Value="UnaryMinus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -915,6 +1141,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>54</MemberValue>
       <Docs>
         <summary>Negation expressions.</summary>
       </Docs>
@@ -923,6 +1150,9 @@
       <MemberSignature Language="C#" Value="UnionAll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind UnionAll = int32(55)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.UnionAll" />
+      <MemberSignature Language="VB.NET" Value="UnionAll" />
+      <MemberSignature Language="F#" Value="UnionAll = 55" Usage="System.Data.Common.CommandTrees.DbExpressionKind.UnionAll" />
+      <MemberSignature Language="C++ CLI" Value="UnionAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -931,6 +1161,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>55</MemberValue>
       <Docs>
         <summary>Set union (with duplicates) expressions.</summary>
       </Docs>
@@ -939,6 +1170,9 @@
       <MemberSignature Language="C#" Value="VariableReference" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.CommandTrees.DbExpressionKind VariableReference = int32(56)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.CommandTrees.DbExpressionKind.VariableReference" />
+      <MemberSignature Language="VB.NET" Value="VariableReference" />
+      <MemberSignature Language="F#" Value="VariableReference = 56" Usage="System.Data.Common.CommandTrees.DbExpressionKind.VariableReference" />
+      <MemberSignature Language="C++ CLI" Value="VariableReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -947,6 +1181,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.CommandTrees.DbExpressionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>56</MemberValue>
       <Docs>
         <summary>Reference to a variable expressions.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="TransportConfigurationTypeElement" FullName="System.ServiceModel.Configuration.TransportConfigurationTypeElement">
+﻿<Type Name="TransportConfigurationTypeElement" FullName="System.ServiceModel.Configuration.TransportConfigurationTypeElement">
   <TypeSignature Language="C#" Value="public sealed class TransportConfigurationTypeElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TransportConfigurationTypeElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.TransportConfigurationTypeElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TransportConfigurationTypeElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type TransportConfigurationTypeElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TransportConfigurationTypeElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.TransportConfigurationTypeElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TransportConfigurationTypeElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.TransportConfigurationTypeElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransportConfigurationTypeElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +48,9 @@
       <MemberSignature Language="C#" Value="public TransportConfigurationTypeElement (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.TransportConfigurationTypeElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.TransportConfigurationTypeElement : string -&gt; System.ServiceModel.Configuration.TransportConfigurationTypeElement" Usage="new System.ServiceModel.Configuration.TransportConfigurationTypeElement name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransportConfigurationTypeElement(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -54,6 +71,9 @@
       <MemberSignature Language="C#" Value="public TransportConfigurationTypeElement (string name, string transportConfigurationTypeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string transportConfigurationTypeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.TransportConfigurationTypeElement.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, transportConfigurationTypeName As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.TransportConfigurationTypeElement : string * string -&gt; System.ServiceModel.Configuration.TransportConfigurationTypeElement" Usage="new System.ServiceModel.Configuration.TransportConfigurationTypeElement (name, transportConfigurationTypeName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TransportConfigurationTypeElement(System::String ^ name, System::String ^ transportConfigurationTypeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -76,6 +96,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.TransportConfigurationTypeElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Configuration.TransportConfigurationTypeElement.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,7 +106,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("name", Options=System.Configuration.ConfigurationPropertyOptions.IsRequired | System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("name", Options=System.Configuration.ConfigurationPropertyOptions.IsKey | System.Configuration.ConfigurationPropertyOptions.IsRequired)</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
@@ -102,6 +125,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.TransportConfigurationTypeElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.TransportConfigurationTypeElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +146,9 @@
       <MemberSignature Language="C#" Value="public string TransportConfigurationType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TransportConfigurationType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.TransportConfigurationTypeElement.TransportConfigurationType" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransportConfigurationType As String" />
+      <MemberSignature Language="F#" Value="member this.TransportConfigurationType : string with get, set" Usage="System.ServiceModel.Configuration.TransportConfigurationTypeElement.TransportConfigurationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TransportConfigurationType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -142,14 +171,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.TransportConfigurationTypeElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

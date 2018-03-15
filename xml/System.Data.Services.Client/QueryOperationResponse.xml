@@ -1,7 +1,10 @@
-<Type Name="QueryOperationResponse" FullName="System.Data.Services.Client.QueryOperationResponse">
+﻿<Type Name="QueryOperationResponse" FullName="System.Data.Services.Client.QueryOperationResponse">
   <TypeSignature Language="C#" Value="public class QueryOperationResponse : System.Data.Services.Client.OperationResponse, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryOperationResponse extends System.Data.Services.Client.OperationResponse implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.QueryOperationResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class QueryOperationResponse&#xA;Inherits OperationResponse&#xA;Implements IEnumerable" />
+  <TypeSignature Language="F#" Value="type QueryOperationResponse = class&#xA;    inherit OperationResponse&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class QueryOperationResponse : System::Data::Services::Client::OperationResponse, System::Collections::IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,10 +23,23 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="GetContinuation">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Data.Services.Client.DataServiceQueryContinuation" /> object containing the URI that is used to retrieve the next results page.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetContinuation">
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceQueryContinuation GetContinuation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceQueryContinuation GetContinuation() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.QueryOperationResponse.GetContinuation" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetContinuation () As DataServiceQueryContinuation" />
+      <MemberSignature Language="F#" Value="member this.GetContinuation : unit -&gt; System.Data.Services.Client.DataServiceQueryContinuation" Usage="queryOperationResponse.GetContinuation " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceQueryContinuation ^ GetContinuation();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -44,6 +60,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceQueryContinuation GetContinuation (System.Collections.IEnumerable collection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceQueryContinuation GetContinuation(class System.Collections.IEnumerable collection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.QueryOperationResponse.GetContinuation(System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetContinuation (collection As IEnumerable) As DataServiceQueryContinuation" />
+      <MemberSignature Language="F#" Value="member this.GetContinuation : System.Collections.IEnumerable -&gt; System.Data.Services.Client.DataServiceQueryContinuation" Usage="queryOperationResponse.GetContinuation collection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Services::Client::DataServiceQueryContinuation ^ GetContinuation(System::Collections::IEnumerable ^ collection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -76,6 +95,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceQueryContinuation&lt;T&gt; GetContinuation&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;T&gt; collection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Services.Client.DataServiceQueryContinuation`1&lt;!!T&gt; GetContinuation&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; collection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.QueryOperationResponse.GetContinuation``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetContinuation(Of T) (collection As IEnumerable(Of T)) As DataServiceQueryContinuation(Of T)" />
+      <MemberSignature Language="F#" Value="member this.GetContinuation : seq&lt;'T&gt; -&gt; System.Data.Services.Client.DataServiceQueryContinuation&lt;'T&gt;" Usage="queryOperationResponse.GetContinuation collection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Data::Services::Client::DataServiceQueryContinuation&lt;T&gt; ^ GetContinuation(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -103,7 +125,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.QueryOperationResponse.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="queryOperationResponse.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -123,6 +151,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceRequest Query { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Client.DataServiceRequest Query" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.QueryOperationResponse.Query" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Query As DataServiceRequest" />
+      <MemberSignature Language="F#" Value="member this.Query : System.Data.Services.Client.DataServiceRequest" Usage="System.Data.Services.Client.QueryOperationResponse.Query" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Client::DataServiceRequest ^ Query { System::Data::Services::Client::DataServiceRequest ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -142,6 +173,9 @@
       <MemberSignature Language="C#" Value="public virtual long TotalCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 TotalCount" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.QueryOperationResponse.TotalCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TotalCount As Long" />
+      <MemberSignature Language="F#" Value="member this.TotalCount : int64" Usage="System.Data.Services.Client.QueryOperationResponse.TotalCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long TotalCount { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -165,15 +199,5 @@
         <exception cref="T:System.InvalidOperationException">Thrown when the count tag is not found in the response stream.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetContinuation">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a <see cref="T:System.Data.Services.Client.DataServiceQueryContinuation" /> object containing the URI that is used to retrieve the next results page.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

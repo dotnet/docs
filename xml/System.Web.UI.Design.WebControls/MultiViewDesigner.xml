@@ -1,7 +1,10 @@
-<Type Name="MultiViewDesigner" FullName="System.Web.UI.Design.WebControls.MultiViewDesigner">
+﻿<Type Name="MultiViewDesigner" FullName="System.Web.UI.Design.WebControls.MultiViewDesigner">
   <TypeSignature Language="C#" Value="public class MultiViewDesigner : System.Web.UI.Design.ContainerControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MultiViewDesigner extends System.Web.UI.Design.ContainerControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.MultiViewDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class MultiViewDesigner&#xA;Inherits ContainerControlDesigner" />
+  <TypeSignature Language="F#" Value="type MultiViewDesigner = class&#xA;    inherit ContainerControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MultiViewDesigner : System::Web::UI::Design::ContainerControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public MultiViewDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MultiViewDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MultiViewDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -62,6 +67,9 @@
       <MemberSignature Language="C#" Value="protected override bool NoWrap { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NoWrap" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.MultiViewDesigner.NoWrap" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property NoWrap As Boolean" />
+      <MemberSignature Language="F#" Value="member this.NoWrap : bool" Usage="System.Web.UI.Design.WebControls.MultiViewDesigner.NoWrap" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool NoWrap { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

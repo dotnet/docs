@@ -1,7 +1,10 @@
-<Type Name="FieldAccessor" FullName="Microsoft.JScript.FieldAccessor">
+﻿<Type Name="FieldAccessor" FullName="Microsoft.JScript.FieldAccessor">
   <TypeSignature Language="C#" Value="public abstract class FieldAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FieldAccessor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.FieldAccessor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class FieldAccessor" />
+  <TypeSignature Language="F#" Value="type FieldAccessor = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FieldAccessor abstract" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -21,6 +24,8 @@
       <MemberSignature Language="C#" Value="protected FieldAccessor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.FieldAccessor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; FieldAccessor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -37,6 +42,9 @@
       <MemberSignature Language="C#" Value="public abstract object GetValue (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetValue(object thisob) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.FieldAccessor.GetValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValue (thisob As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : obj -&gt; obj" Usage="fieldAccessor.GetValue thisob" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetValue(System::Object ^ thisob);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -66,6 +74,9 @@
       <MemberSignature Language="C#" Value="public abstract void SetValue (object thisob, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(object thisob, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.FieldAccessor.SetValue(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SetValue (thisob As Object, value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetValue : obj * obj -&gt; unit" Usage="fieldAccessor.SetValue (thisob, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SetValue(System::Object ^ thisob, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

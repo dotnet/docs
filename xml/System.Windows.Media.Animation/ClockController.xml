@@ -1,7 +1,10 @@
-<Type Name="ClockController" FullName="System.Windows.Media.Animation.ClockController">
+﻿<Type Name="ClockController" FullName="System.Windows.Media.Animation.ClockController">
   <TypeSignature Language="C#" Value="public sealed class ClockController : System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClockController extends System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ClockController" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClockController&#xA;Inherits DispatcherObject" />
+  <TypeSignature Language="F#" Value="type ClockController = class&#xA;    inherit DispatcherObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClockController sealed : System::Windows::Threading::DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public void Begin ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Begin" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Begin ()" />
+      <MemberSignature Language="F#" Value="member this.Begin : unit -&gt; unit" Usage="clockController.Begin " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +66,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.Clock Clock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.Clock Clock" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ClockController.Clock" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Clock As Clock" />
+      <MemberSignature Language="F#" Value="member this.Clock : System.Windows.Media.Animation.Clock" Usage="System.Windows.Media.Animation.ClockController.Clock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::Clock ^ Clock { System::Windows::Media::Animation::Clock ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +87,9 @@
       <MemberSignature Language="C#" Value="public void Pause ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Pause() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Pause" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Pause ()" />
+      <MemberSignature Language="F#" Value="member this.Pause : unit -&gt; unit" Usage="clockController.Pause " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Pause();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +120,9 @@
       <MemberSignature Language="C#" Value="public void Remove ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Remove" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove ()" />
+      <MemberSignature Language="F#" Value="member this.Remove : unit -&gt; unit" Usage="clockController.Remove " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -141,6 +156,9 @@
       <MemberSignature Language="C#" Value="public void Resume ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Resume() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Resume" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Resume ()" />
+      <MemberSignature Language="F#" Value="member this.Resume : unit -&gt; unit" Usage="clockController.Resume " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resume();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -169,6 +187,9 @@
       <MemberSignature Language="C#" Value="public void Seek (TimeSpan offset, System.Windows.Media.Animation.TimeSeekOrigin origin);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Seek(valuetype System.TimeSpan offset, valuetype System.Windows.Media.Animation.TimeSeekOrigin origin) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Seek(System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Seek (offset As TimeSpan, origin As TimeSeekOrigin)" />
+      <MemberSignature Language="F#" Value="member this.Seek : TimeSpan * System.Windows.Media.Animation.TimeSeekOrigin -&gt; unit" Usage="clockController.Seek (offset, origin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Seek(TimeSpan offset, System::Windows::Media::Animation::TimeSeekOrigin origin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -215,6 +236,9 @@
       <MemberSignature Language="C#" Value="public void SeekAlignedToLastTick (TimeSpan offset, System.Windows.Media.Animation.TimeSeekOrigin origin);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SeekAlignedToLastTick(valuetype System.TimeSpan offset, valuetype System.Windows.Media.Animation.TimeSeekOrigin origin) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.SeekAlignedToLastTick(System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SeekAlignedToLastTick (offset As TimeSpan, origin As TimeSeekOrigin)" />
+      <MemberSignature Language="F#" Value="member this.SeekAlignedToLastTick : TimeSpan * System.Windows.Media.Animation.TimeSeekOrigin -&gt; unit" Usage="clockController.SeekAlignedToLastTick (offset, origin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SeekAlignedToLastTick(TimeSpan offset, System::Windows::Media::Animation::TimeSeekOrigin origin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -261,6 +285,9 @@
       <MemberSignature Language="C#" Value="public void SkipToFill ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SkipToFill() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.SkipToFill" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SkipToFill ()" />
+      <MemberSignature Language="F#" Value="member this.SkipToFill : unit -&gt; unit" Usage="clockController.SkipToFill " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SkipToFill();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -292,6 +319,9 @@
       <MemberSignature Language="C#" Value="public double SpeedRatio { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 SpeedRatio" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ClockController.SpeedRatio" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpeedRatio As Double" />
+      <MemberSignature Language="F#" Value="member this.SpeedRatio : double with get, set" Usage="System.Windows.Media.Animation.ClockController.SpeedRatio" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SpeedRatio { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -322,6 +352,9 @@
       <MemberSignature Language="C#" Value="public void Stop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ClockController.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="clockController.Stop " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

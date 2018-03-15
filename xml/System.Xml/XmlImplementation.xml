@@ -1,7 +1,10 @@
-<Type Name="XmlImplementation" FullName="System.Xml.XmlImplementation">
+﻿<Type Name="XmlImplementation" FullName="System.Xml.XmlImplementation">
   <TypeSignature Language="C#" Value="public class XmlImplementation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlImplementation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlImplementation" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlImplementation" />
+  <TypeSignature Language="F#" Value="type XmlImplementation = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlImplementation" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -37,10 +40,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlImplementation" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlImplementation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlImplementation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlImplementation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -69,6 +83,9 @@
       <MemberSignature Language="C#" Value="public XmlImplementation (System.Xml.XmlNameTable nt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlNameTable nt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlImplementation.#ctor(System.Xml.XmlNameTable)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (nt As XmlNameTable)" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlImplementation : System.Xml.XmlNameTable -&gt; System.Xml.XmlImplementation" Usage="new System.Xml.XmlImplementation nt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlImplementation(System::Xml::XmlNameTable ^ nt);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -100,6 +117,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlDocument CreateDocument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlDocument CreateDocument() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlImplementation.CreateDocument" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDocument () As XmlDocument" />
+      <MemberSignature Language="F#" Value="abstract member CreateDocument : unit -&gt; System.Xml.XmlDocument&#xA;override this.CreateDocument : unit -&gt; System.Xml.XmlDocument" Usage="xmlImplementation.CreateDocument " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlDocument ^ CreateDocument();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -151,6 +171,9 @@
       <MemberSignature Language="C#" Value="public bool HasFeature (string strFeature, string strVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasFeature(string strFeature, string strVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlImplementation.HasFeature(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasFeature (strFeature As String, strVersion As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasFeature : string * string -&gt; bool" Usage="xmlImplementation.HasFeature (strFeature, strVersion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasFeature(System::String ^ strFeature, System::String ^ strVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -201,14 +224,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlImplementation" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

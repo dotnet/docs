@@ -1,7 +1,10 @@
-<Type Name="VectorEnumeratorBase&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.VectorEnumeratorBase&lt;TValue&gt;">
+﻿<Type Name="VectorEnumeratorBase&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.VectorEnumeratorBase&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public class VectorEnumeratorBase&lt;TValue&gt; : System.Collections.IEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VectorEnumeratorBase`1&lt;TValue&gt; extends System.Object implements class System.Collections.IEnumerator" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.VectorEnumeratorBase`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class VectorEnumeratorBase(Of TValue)&#xA;Implements IEnumerator" />
+  <TypeSignature Language="F#" Value="type VectorEnumeratorBase&lt;'Value&gt; = class&#xA;    interface IEnumerator" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public ref class VectorEnumeratorBase : System::Collections::IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public VectorEnumeratorBase (Microsoft.VisualC.StlClr.IVector&lt;TValue&gt; _Cont, int _First);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualC.StlClr.IVector`1&lt;!TValue&gt; _Cont, int32 _First) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.VectorEnumeratorBase`1.#ctor(Microsoft.VisualC.StlClr.IVector{`0},System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (_Cont As IVector(Of TValue), _First As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.VectorEnumeratorBase&lt;'Value&gt; : Microsoft.VisualC.StlClr.IVector&lt;'Value&gt; * int -&gt; Microsoft.VisualC.StlClr.VectorEnumeratorBase&lt;'Value&gt;" Usage="new Microsoft.VisualC.StlClr.VectorEnumeratorBase&lt;'Value&gt; (_Cont, _First)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VectorEnumeratorBase(Microsoft::VisualC::StlClr::IVector&lt;TValue&gt; ^ _Cont, int _First);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -52,6 +58,9 @@
       <MemberSignature Language="C#" Value="public virtual object Current { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Current" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.VectorEnumeratorBase`1.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Current As Object" />
+      <MemberSignature Language="F#" Value="member this.Current : obj with get, set" Usage="Microsoft.VisualC.StlClr.VectorEnumeratorBase&lt;'Value&gt;.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Current { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -70,7 +79,13 @@
       <MemberSignature Language="C#" Value="public virtual bool MoveNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.VectorEnumeratorBase`1.MoveNext" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function MoveNext () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="vectorEnumeratorBase.MoveNext " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -90,7 +105,13 @@
       <MemberSignature Language="C#" Value="public virtual void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.VectorEnumeratorBase`1.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reset ()" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="vectorEnumeratorBase.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>

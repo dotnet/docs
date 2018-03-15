@@ -1,7 +1,10 @@
-<Type Name="SiteMembershipCondition" FullName="System.Security.Policy.SiteMembershipCondition">
+﻿<Type Name="SiteMembershipCondition" FullName="System.Security.Policy.SiteMembershipCondition">
   <TypeSignature Language="C#" Value="public sealed class SiteMembershipCondition : System.Security.Policy.IMembershipCondition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SiteMembershipCondition extends System.Object implements class System.Security.ISecurityEncodable, class System.Security.ISecurityPolicyEncodable, class System.Security.Policy.IMembershipCondition" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.SiteMembershipCondition" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SiteMembershipCondition&#xA;Implements IMembershipCondition" />
+  <TypeSignature Language="F#" Value="type SiteMembershipCondition = class&#xA;    interface IMembershipCondition&#xA;    interface IConstantMembershipCondition&#xA;    interface ISecurityEncodable&#xA;    interface ISecurityPolicyEncodable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SiteMembershipCondition sealed : System::Security::Policy::IMembershipCondition" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="public SiteMembershipCondition (string site);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string site) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.SiteMembershipCondition.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (site As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.SiteMembershipCondition : string -&gt; System.Security.Policy.SiteMembershipCondition" Usage="new System.Security.Policy.SiteMembershipCondition site" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SiteMembershipCondition(System::String ^ site);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,7 +80,12 @@
       <MemberSignature Language="C#" Value="public bool Check (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Check(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.SiteMembershipCondition.Check(System.Security.Policy.Evidence)" />
+      <MemberSignature Language="F#" Value="abstract member Check : System.Security.Policy.Evidence -&gt; bool&#xA;override this.Check : System.Security.Policy.Evidence -&gt; bool" Usage="siteMembershipCondition.Check evidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Check(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Policy.IMembershipCondition.Check(System.Security.Policy.Evidence)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -110,7 +121,13 @@
       <MemberSignature Language="C#" Value="public System.Security.Policy.IMembershipCondition Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.IMembershipCondition Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.SiteMembershipCondition.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Function Copy () As IMembershipCondition" />
+      <MemberSignature Language="F#" Value="abstract member Copy : unit -&gt; System.Security.Policy.IMembershipCondition&#xA;override this.Copy : unit -&gt; System.Security.Policy.IMembershipCondition" Usage="siteMembershipCondition.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::IMembershipCondition ^ Copy();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Policy.IMembershipCondition.Copy</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -135,7 +152,13 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.SiteMembershipCondition.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="siteMembershipCondition.Equals o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Policy.IMembershipCondition.Equals(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -160,11 +183,27 @@
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Policy.SiteMembershipCondition.Site" /> property for the current object or the specified object is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromXml">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromXml">
       <MemberSignature Language="C#" Value="public void FromXml (System.Security.SecurityElement e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FromXml(class System.Security.SecurityElement e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.SiteMembershipCondition.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FromXml (e As SecurityElement)" />
+      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="siteMembershipCondition.FromXml e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ e);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.ISecurityEncodable.FromXml(System.Security.SecurityElement)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -192,7 +231,13 @@
       <MemberSignature Language="C#" Value="public void FromXml (System.Security.SecurityElement e, System.Security.Policy.PolicyLevel level);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FromXml(class System.Security.SecurityElement e, class System.Security.Policy.PolicyLevel level) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.SiteMembershipCondition.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FromXml (e As SecurityElement, level As PolicyLevel)" />
+      <MemberSignature Language="F#" Value="abstract member FromXml : System.Security.SecurityElement * System.Security.Policy.PolicyLevel -&gt; unit&#xA;override this.FromXml : System.Security.SecurityElement * System.Security.Policy.PolicyLevel -&gt; unit" Usage="siteMembershipCondition.FromXml (e, level)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void FromXml(System::Security::SecurityElement ^ e, System::Security::Policy::PolicyLevel ^ level);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.ISecurityPolicyEncodable.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -222,6 +267,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.SiteMembershipCondition.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="siteMembershipCondition.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -247,6 +295,9 @@
       <MemberSignature Language="C#" Value="public string Site { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Site" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.SiteMembershipCondition.Site" />
+      <MemberSignature Language="VB.NET" Value="Public Property Site As String" />
+      <MemberSignature Language="F#" Value="member this.Site : string with get, set" Usage="System.Security.Policy.SiteMembershipCondition.Site" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Site { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -279,7 +330,13 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.SiteMembershipCondition.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="siteMembershipCondition.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Policy.IMembershipCondition.ToString</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -300,11 +357,27 @@
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Policy.SiteMembershipCondition.Site" /> property is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToXml">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an XML encoding of the security object and its current state.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToXml">
       <MemberSignature Language="C#" Value="public System.Security.SecurityElement ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.SiteMembershipCondition.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToXml () As SecurityElement" />
+      <MemberSignature Language="F#" Value="abstract member ToXml : unit -&gt; System.Security.SecurityElement&#xA;override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="siteMembershipCondition.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.ISecurityEncodable.ToXml</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -329,7 +402,13 @@
       <MemberSignature Language="C#" Value="public System.Security.SecurityElement ToXml (System.Security.Policy.PolicyLevel level);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.SecurityElement ToXml(class System.Security.Policy.PolicyLevel level) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.SiteMembershipCondition.ToXml(System.Security.Policy.PolicyLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToXml (level As PolicyLevel) As SecurityElement" />
+      <MemberSignature Language="F#" Value="abstract member ToXml : System.Security.Policy.PolicyLevel -&gt; System.Security.SecurityElement&#xA;override this.ToXml : System.Security.Policy.PolicyLevel -&gt; System.Security.SecurityElement" Usage="siteMembershipCondition.ToXml level" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::SecurityElement ^ ToXml(System::Security::Policy::PolicyLevel ^ level);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.ISecurityPolicyEncodable.ToXml(System.Security.Policy.PolicyLevel)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -353,25 +432,5 @@
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Policy.SiteMembershipCondition.Site" /> property is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="FromXml">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reconstructs a security object with a specified state from an XML encoding.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToXml">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an XML encoding of the security object and its current state.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

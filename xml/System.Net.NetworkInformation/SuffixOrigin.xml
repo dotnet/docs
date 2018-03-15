@@ -1,7 +1,10 @@
-<Type Name="SuffixOrigin" FullName="System.Net.NetworkInformation.SuffixOrigin">
+﻿<Type Name="SuffixOrigin" FullName="System.Net.NetworkInformation.SuffixOrigin">
   <TypeSignature Language="C#" Value="public enum SuffixOrigin" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SuffixOrigin extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.SuffixOrigin" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SuffixOrigin" />
+  <TypeSignature Language="F#" Value="type SuffixOrigin = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SuffixOrigin" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="LinkLayerAddress" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.SuffixOrigin LinkLayerAddress = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.SuffixOrigin.LinkLayerAddress" />
+      <MemberSignature Language="VB.NET" Value="LinkLayerAddress" />
+      <MemberSignature Language="F#" Value="LinkLayerAddress = 4" Usage="System.Net.NetworkInformation.SuffixOrigin.LinkLayerAddress" />
+      <MemberSignature Language="C++ CLI" Value="LinkLayerAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -64,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.SuffixOrigin</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The suffix is a link-local suffix.</summary>
       </Docs>
@@ -72,6 +79,9 @@
       <MemberSignature Language="C#" Value="Manual" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.SuffixOrigin Manual = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.SuffixOrigin.Manual" />
+      <MemberSignature Language="VB.NET" Value="Manual" />
+      <MemberSignature Language="F#" Value="Manual = 1" Usage="System.Net.NetworkInformation.SuffixOrigin.Manual" />
+      <MemberSignature Language="C++ CLI" Value="Manual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -90,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.SuffixOrigin</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The suffix was manually configured.</summary>
       </Docs>
@@ -98,6 +109,9 @@
       <MemberSignature Language="C#" Value="OriginDhcp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.SuffixOrigin OriginDhcp = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.SuffixOrigin.OriginDhcp" />
+      <MemberSignature Language="VB.NET" Value="OriginDhcp" />
+      <MemberSignature Language="F#" Value="OriginDhcp = 3" Usage="System.Net.NetworkInformation.SuffixOrigin.OriginDhcp" />
+      <MemberSignature Language="C++ CLI" Value="OriginDhcp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -116,6 +130,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.SuffixOrigin</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The suffix was supplied by a Dynamic Host Configuration Protocol (DHCP) server.</summary>
       </Docs>
@@ -124,6 +139,9 @@
       <MemberSignature Language="C#" Value="Other" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.SuffixOrigin Other = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.SuffixOrigin.Other" />
+      <MemberSignature Language="VB.NET" Value="Other" />
+      <MemberSignature Language="F#" Value="Other = 0" Usage="System.Net.NetworkInformation.SuffixOrigin.Other" />
+      <MemberSignature Language="C++ CLI" Value="Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -142,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.SuffixOrigin</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The suffix was located using an unspecified source.</summary>
       </Docs>
@@ -150,6 +169,9 @@
       <MemberSignature Language="C#" Value="Random" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.SuffixOrigin Random = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.SuffixOrigin.Random" />
+      <MemberSignature Language="VB.NET" Value="Random" />
+      <MemberSignature Language="F#" Value="Random = 5" Usage="System.Net.NetworkInformation.SuffixOrigin.Random" />
+      <MemberSignature Language="C++ CLI" Value="Random" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -168,6 +190,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.SuffixOrigin</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The suffix was randomly assigned.</summary>
       </Docs>
@@ -176,6 +199,9 @@
       <MemberSignature Language="C#" Value="WellKnown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.SuffixOrigin WellKnown = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.SuffixOrigin.WellKnown" />
+      <MemberSignature Language="VB.NET" Value="WellKnown" />
+      <MemberSignature Language="F#" Value="WellKnown = 2" Usage="System.Net.NetworkInformation.SuffixOrigin.WellKnown" />
+      <MemberSignature Language="C++ CLI" Value="WellKnown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -194,6 +220,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.SuffixOrigin</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The suffix is a well-known suffix. Well-known suffixes are specified in standard-track Request for Comments (RFC) documents and assigned by the Internet Assigned Numbers Authority (Iana) or an address registry. Such suffixes are reserved for special purposes.</summary>
       </Docs>

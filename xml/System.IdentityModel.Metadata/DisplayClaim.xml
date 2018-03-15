@@ -1,7 +1,10 @@
-<Type Name="DisplayClaim" FullName="System.IdentityModel.Metadata.DisplayClaim">
+﻿<Type Name="DisplayClaim" FullName="System.IdentityModel.Metadata.DisplayClaim">
   <TypeSignature Language="C#" Value="public class DisplayClaim" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DisplayClaim extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.DisplayClaim" />
+  <TypeSignature Language="VB.NET" Value="Public Class DisplayClaim" />
+  <TypeSignature Language="F#" Value="type DisplayClaim = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DisplayClaim" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +25,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.DisplayClaim" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DisplayClaim (string claimType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string claimType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.DisplayClaim.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (claimType As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.DisplayClaim : string -&gt; System.IdentityModel.Metadata.DisplayClaim" Usage="new System.IdentityModel.Metadata.DisplayClaim claimType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DisplayClaim(System::String ^ claimType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -46,6 +61,9 @@
       <MemberSignature Language="C#" Value="public DisplayClaim (string claimType, string displayTag, string description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string claimType, string displayTag, string description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.DisplayClaim.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (claimType As String, displayTag As String, description As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.DisplayClaim : string * string * string -&gt; System.IdentityModel.Metadata.DisplayClaim" Usage="new System.IdentityModel.Metadata.DisplayClaim (claimType, displayTag, description)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DisplayClaim(System::String ^ claimType, System::String ^ displayTag, System::String ^ description);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -70,6 +88,9 @@
       <MemberSignature Language="C#" Value="public DisplayClaim (string claimType, string displayTag, string description, string displayValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string claimType, string displayTag, string description, string displayValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.DisplayClaim.#ctor(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (claimType As String, displayTag As String, description As String, displayValue As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.DisplayClaim : string * string * string * string -&gt; System.IdentityModel.Metadata.DisplayClaim" Usage="new System.IdentityModel.Metadata.DisplayClaim (claimType, displayTag, description, displayValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DisplayClaim(System::String ^ claimType, System::String ^ displayTag, System::String ^ description, System::String ^ displayValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -103,6 +124,9 @@
       <MemberSignature Language="C#" Value="public DisplayClaim (string claimType, string displayTag, string description, string displayValue, bool optional);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string claimType, string displayTag, string description, string displayValue, bool optional) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.DisplayClaim.#ctor(System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (claimType As String, displayTag As String, description As String, displayValue As String, optional As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.DisplayClaim : string * string * string * string * bool -&gt; System.IdentityModel.Metadata.DisplayClaim" Usage="new System.IdentityModel.Metadata.DisplayClaim (claimType, displayTag, description, displayValue, optional)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DisplayClaim(System::String ^ claimType, System::String ^ displayTag, System::String ^ description, System::String ^ displayValue, bool optional);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -132,6 +156,9 @@
       <MemberSignature Language="C#" Value="public string ClaimType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClaimType" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.DisplayClaim.ClaimType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClaimType As String" />
+      <MemberSignature Language="F#" Value="member this.ClaimType : string" Usage="System.IdentityModel.Metadata.DisplayClaim.ClaimType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClaimType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -157,6 +184,9 @@
       <MemberSignature Language="C#" Value="public static System.IdentityModel.Metadata.DisplayClaim CreateDisplayClaimFromClaimType (string claimType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IdentityModel.Metadata.DisplayClaim CreateDisplayClaimFromClaimType(string claimType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.DisplayClaim.CreateDisplayClaimFromClaimType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDisplayClaimFromClaimType (claimType As String) As DisplayClaim" />
+      <MemberSignature Language="F#" Value="static member CreateDisplayClaimFromClaimType : string -&gt; System.IdentityModel.Metadata.DisplayClaim" Usage="System.IdentityModel.Metadata.DisplayClaim.CreateDisplayClaimFromClaimType claimType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IdentityModel::Metadata::DisplayClaim ^ CreateDisplayClaimFromClaimType(System::String ^ claimType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -186,6 +216,9 @@
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.DisplayClaim.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.IdentityModel.Metadata.DisplayClaim.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -211,6 +244,9 @@
       <MemberSignature Language="C#" Value="public string DisplayTag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayTag" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.DisplayClaim.DisplayTag" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayTag As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayTag : string with get, set" Usage="System.IdentityModel.Metadata.DisplayClaim.DisplayTag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayTag { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -236,6 +272,9 @@
       <MemberSignature Language="C#" Value="public string DisplayValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayValue" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.DisplayClaim.DisplayValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayValue As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayValue : string with get, set" Usage="System.IdentityModel.Metadata.DisplayClaim.DisplayValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -261,6 +300,9 @@
       <MemberSignature Language="C#" Value="public bool Optional { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Optional" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.DisplayClaim.Optional" />
+      <MemberSignature Language="VB.NET" Value="Public Property Optional As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Optional : bool with get, set" Usage="System.IdentityModel.Metadata.DisplayClaim.Optional" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Optional { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -287,6 +329,9 @@
       <MemberSignature Language="C#" Value="public bool WriteOptionalAttribute { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool WriteOptionalAttribute" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.DisplayClaim.WriteOptionalAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Property WriteOptionalAttribute As Boolean" />
+      <MemberSignature Language="F#" Value="member this.WriteOptionalAttribute : bool with get, set" Usage="System.IdentityModel.Metadata.DisplayClaim.WriteOptionalAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WriteOptionalAttribute { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -302,14 +347,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.DisplayClaim" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

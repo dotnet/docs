@@ -1,7 +1,10 @@
-<Type Name="IHierarchicalDataSource" FullName="System.Web.UI.IHierarchicalDataSource">
+﻿<Type Name="IHierarchicalDataSource" FullName="System.Web.UI.IHierarchicalDataSource">
   <TypeSignature Language="C#" Value="public interface IHierarchicalDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHierarchicalDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IHierarchicalDataSource" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IHierarchicalDataSource" />
+  <TypeSignature Language="F#" Value="type IHierarchicalDataSource = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IHierarchicalDataSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,9 +43,12 @@
   </Docs>
   <Members>
     <Member MemberName="DataSourceChanged">
-      <MemberSignature Language="C#" Value="public event EventHandler DataSourceChanged;" />
+      <MemberSignature Language="C#" Value="event EventHandler DataSourceChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DataSourceChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.IHierarchicalDataSource.DataSourceChanged" />
+      <MemberSignature Language="VB.NET" Value="Event DataSourceChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DataSourceChanged : EventHandler " Usage="member this.DataSourceChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataSourceChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +74,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.HierarchicalDataSourceView GetHierarchicalView (string viewPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.HierarchicalDataSourceView GetHierarchicalView(string viewPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IHierarchicalDataSource.GetHierarchicalView(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHierarchicalView (viewPath As String) As HierarchicalDataSourceView" />
+      <MemberSignature Language="F#" Value="abstract member GetHierarchicalView : string -&gt; System.Web.UI.HierarchicalDataSourceView" Usage="iHierarchicalDataSource.GetHierarchicalView viewPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::HierarchicalDataSourceView ^ GetHierarchicalView(System::String ^ viewPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

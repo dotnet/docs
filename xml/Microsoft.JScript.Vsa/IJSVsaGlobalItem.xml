@@ -1,7 +1,10 @@
-<Type Name="IJSVsaGlobalItem" FullName="Microsoft.JScript.Vsa.IJSVsaGlobalItem">
+﻿<Type Name="IJSVsaGlobalItem" FullName="Microsoft.JScript.Vsa.IJSVsaGlobalItem">
   <TypeSignature Language="C#" Value="public interface IJSVsaGlobalItem : Microsoft.JScript.Vsa.IJSVsaItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IJSVsaGlobalItem implements class Microsoft.JScript.Vsa.IJSVsaItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Vsa.IJSVsaGlobalItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IJSVsaGlobalItem&#xA;Implements IJSVsaItem" />
+  <TypeSignature Language="F#" Value="type IJSVsaGlobalItem = interface&#xA;    interface IJSVsaItem" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IJSVsaGlobalItem : Microsoft::JScript::Vsa::IJSVsaItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,7 +25,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("15B2CCE5-D1EA-4EB9-9E06-8729C72D631B")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public bool ExposeMembers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExposeMembers" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.IJSVsaGlobalItem.ExposeMembers" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExposeMembers As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ExposeMembers : bool with get, set" Usage="Microsoft.JScript.Vsa.IJSVsaGlobalItem.ExposeMembers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExposeMembers { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -52,6 +58,9 @@
       <MemberSignature Language="C#" Value="public string TypeString { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeString" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Vsa.IJSVsaGlobalItem.TypeString" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeString As String" />
+      <MemberSignature Language="F#" Value="member this.TypeString : string" Usage="Microsoft.JScript.Vsa.IJSVsaGlobalItem.TypeString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeString {  void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

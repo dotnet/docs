@@ -1,7 +1,10 @@
-<Type Name="ProcessorArchitecture" FullName="System.Reflection.ProcessorArchitecture">
+﻿<Type Name="ProcessorArchitecture" FullName="System.Reflection.ProcessorArchitecture">
   <TypeSignature Language="C#" Value="public enum ProcessorArchitecture" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ProcessorArchitecture extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.ProcessorArchitecture" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ProcessorArchitecture" />
+  <TypeSignature Language="F#" Value="type ProcessorArchitecture = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ProcessorArchitecture" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="Amd64" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ProcessorArchitecture Amd64 = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.ProcessorArchitecture.Amd64" />
+      <MemberSignature Language="VB.NET" Value="Amd64" />
+      <MemberSignature Language="F#" Value="Amd64 = 4" Usage="System.Reflection.ProcessorArchitecture.Amd64" />
+      <MemberSignature Language="C++ CLI" Value="Amd64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -60,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.ProcessorArchitecture</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A 64-bit processor based on the [x64 architecture](/windows-hardware/drivers/debugger/x64-architecture). </summary>
       </Docs>
@@ -68,6 +75,9 @@
       <MemberSignature Language="C#" Value="Arm" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ProcessorArchitecture Arm = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.ProcessorArchitecture.Arm" />
+      <MemberSignature Language="VB.NET" Value="Arm" />
+      <MemberSignature Language="F#" Value="Arm = 5" Usage="System.Reflection.ProcessorArchitecture.Arm" />
+      <MemberSignature Language="C++ CLI" Value="Arm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -87,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.ProcessorArchitecture</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>An ARM processor.</summary>
       </Docs>
@@ -95,6 +106,9 @@
       <MemberSignature Language="C#" Value="IA64" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ProcessorArchitecture IA64 = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.ProcessorArchitecture.IA64" />
+      <MemberSignature Language="VB.NET" Value="IA64" />
+      <MemberSignature Language="F#" Value="IA64 = 3" Usage="System.Reflection.ProcessorArchitecture.IA64" />
+      <MemberSignature Language="C++ CLI" Value="IA64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -114,6 +128,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.ProcessorArchitecture</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A 64-bit Intel Itanium processor only.</summary>
       </Docs>
@@ -122,6 +137,9 @@
       <MemberSignature Language="C#" Value="MSIL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ProcessorArchitecture MSIL = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.ProcessorArchitecture.MSIL" />
+      <MemberSignature Language="VB.NET" Value="MSIL" />
+      <MemberSignature Language="F#" Value="MSIL = 1" Usage="System.Reflection.ProcessorArchitecture.MSIL" />
+      <MemberSignature Language="C++ CLI" Value="MSIL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -141,6 +159,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.ProcessorArchitecture</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Neutral with respect to processor and bits-per-word.</summary>
       </Docs>
@@ -149,6 +168,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ProcessorArchitecture None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.ProcessorArchitecture.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Reflection.ProcessorArchitecture.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -168,6 +190,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.ProcessorArchitecture</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An unknown or unspecified combination of processor and bits-per-word.</summary>
       </Docs>
@@ -176,6 +199,9 @@
       <MemberSignature Language="C#" Value="X86" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.ProcessorArchitecture X86 = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.ProcessorArchitecture.X86" />
+      <MemberSignature Language="VB.NET" Value="X86" />
+      <MemberSignature Language="F#" Value="X86 = 2" Usage="System.Reflection.ProcessorArchitecture.X86" />
+      <MemberSignature Language="C++ CLI" Value="X86" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -195,6 +221,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.ProcessorArchitecture</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A 32-bit Intel processor, either native or in the Windows on Windows environment on a 64-bit platform (WOW64).</summary>
       </Docs>

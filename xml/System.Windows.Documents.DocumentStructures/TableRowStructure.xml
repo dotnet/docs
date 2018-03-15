@@ -1,7 +1,10 @@
-<Type Name="TableRowStructure" FullName="System.Windows.Documents.DocumentStructures.TableRowStructure">
+﻿<Type Name="TableRowStructure" FullName="System.Windows.Documents.DocumentStructures.TableRowStructure">
   <TypeSignature Language="C#" Value="public class TableRowStructure : System.Windows.Documents.DocumentStructures.SemanticBasicElement, System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.TableCellStructure&gt;, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableRowStructure extends System.Windows.Documents.DocumentStructures.SemanticBasicElement implements class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Documents.DocumentStructures.TableCellStructure&gt;, class System.Collections.IEnumerable, class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.DocumentStructures.TableRowStructure" />
+  <TypeSignature Language="VB.NET" Value="Public Class TableRowStructure&#xA;Inherits SemanticBasicElement&#xA;Implements IAddChild, IEnumerable(Of TableCellStructure)" />
+  <TypeSignature Language="F#" Value="type TableRowStructure = class&#xA;    inherit SemanticBasicElement&#xA;    interface IAddChild&#xA;    interface seq&lt;TableCellStructure&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TableRowStructure : System::Windows::Documents::DocumentStructures::SemanticBasicElement, System::Collections::Generic::IEnumerable&lt;System::Windows::Documents::DocumentStructures::TableCellStructure ^&gt;, System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="public TableRowStructure ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.TableRowStructure.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TableRowStructure();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +60,9 @@
       <MemberSignature Language="C#" Value="public void Add (System.Windows.Documents.DocumentStructures.TableCellStructure tableCell);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Windows.Documents.DocumentStructures.TableCellStructure tableCell) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.TableRowStructure.Add(System.Windows.Documents.DocumentStructures.TableCellStructure)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (tableCell As TableCellStructure)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Documents.DocumentStructures.TableCellStructure -&gt; unit" Usage="tableRowStructure.Add tableCell" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Documents::DocumentStructures::TableCellStructure ^ tableCell);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,7 +85,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Windows.Documents.DocumentStructures.TableCellStructure&gt; IEnumerable&lt;TableCellStructure&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Windows.Documents.DocumentStructures.TableCellStructure&gt; System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.TableCellStructure&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.TableRowStructure.System#Collections#Generic#IEnumerable&lt;System#Windows#Documents#DocumentStructures#TableCellStructure&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of TableCellStructure) Implements IEnumerable(Of TableCellStructure).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Windows::Documents::DocumentStructures::TableCellStructure ^&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Windows.Documents.DocumentStructures.TableCellStructure&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Windows::Documents::DocumentStructures::TableCellStructure ^&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -96,7 +109,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.TableRowStructure.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -115,7 +133,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.TableRowStructure.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -147,7 +170,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.DocumentStructures.TableRowStructure.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ text) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

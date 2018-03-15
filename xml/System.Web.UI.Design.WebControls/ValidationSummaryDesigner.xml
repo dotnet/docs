@@ -1,7 +1,10 @@
-<Type Name="ValidationSummaryDesigner" FullName="System.Web.UI.Design.WebControls.ValidationSummaryDesigner">
+﻿<Type Name="ValidationSummaryDesigner" FullName="System.Web.UI.Design.WebControls.ValidationSummaryDesigner">
   <TypeSignature Language="C#" Value="public class ValidationSummaryDesigner : System.Web.UI.Design.WebControls.PreviewControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValidationSummaryDesigner extends System.Web.UI.Design.WebControls.PreviewControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ValidationSummaryDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class ValidationSummaryDesigner&#xA;Inherits PreviewControlDesigner" />
+  <TypeSignature Language="F#" Value="type ValidationSummaryDesigner = class&#xA;    inherit PreviewControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ValidationSummaryDesigner : System::Web::UI::Design::WebControls::PreviewControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public ValidationSummaryDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ValidationSummaryDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationSummaryDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -56,6 +61,9 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.Control CreateViewControl ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.Control CreateViewControl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ValidationSummaryDesigner.CreateViewControl" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateViewControl () As Control" />
+      <MemberSignature Language="F#" Value="override this.CreateViewControl : unit -&gt; System.Web.UI.Control" Usage="validationSummaryDesigner.CreateViewControl " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::Control ^ CreateViewControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -75,6 +83,9 @@
       <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ValidationSummaryDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="validationSummaryDesigner.PreFilterProperties properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="SoapAttributeOverrides" FullName="System.Xml.Serialization.SoapAttributeOverrides">
+﻿<Type Name="SoapAttributeOverrides" FullName="System.Xml.Serialization.SoapAttributeOverrides">
   <TypeSignature Language="C#" Value="public class SoapAttributeOverrides" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapAttributeOverrides extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapAttributeOverrides" />
+  <TypeSignature Language="VB.NET" Value="Public Class SoapAttributeOverrides" />
+  <TypeSignature Language="F#" Value="type SoapAttributeOverrides = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapAttributeOverrides" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -65,6 +68,8 @@
       <MemberSignature Language="C#" Value="public SoapAttributeOverrides ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapAttributeOverrides.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapAttributeOverrides();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -96,10 +101,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Xml.Serialization.SoapAttributes" /> to the collection of <see cref="T:System.Xml.Serialization.SoapAttributes" /> objects contained by the <see cref="T:System.Xml.Serialization.SoapAttributeOverrides" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (Type type, System.Xml.Serialization.SoapAttributes attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Type type, class System.Xml.Serialization.SoapAttributes attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapAttributeOverrides.Add(System.Type,System.Xml.Serialization.SoapAttributes)" />
+      <MemberSignature Language="F#" Value="member this.Add : Type * System.Xml.Serialization.SoapAttributes -&gt; unit" Usage="soapAttributeOverrides.Add (type, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Type ^ type, System::Xml::Serialization::SoapAttributes ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -150,6 +167,8 @@
       <MemberSignature Language="C#" Value="public void Add (Type type, string member, System.Xml.Serialization.SoapAttributes attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Type type, string member, class System.Xml.Serialization.SoapAttributes attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapAttributeOverrides.Add(System.Type,System.String,System.Xml.Serialization.SoapAttributes)" />
+      <MemberSignature Language="F#" Value="member this.Add : Type * string * System.Xml.Serialization.SoapAttributes -&gt; unit" Usage="soapAttributeOverrides.Add (type, member, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Type ^ type, System::String ^ member, System::Xml::Serialization::SoapAttributes ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -198,10 +217,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets an object that represents the collection of overriding SOAP attributes.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.SoapAttributes this[Type type] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.SoapAttributes Item(class System.Type)" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapAttributeOverrides.Item(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(type As Type) As SoapAttributes" />
+      <MemberSignature Language="F#" Value="member this.Item(Type) : System.Xml.Serialization.SoapAttributes" Usage="System.Xml.Serialization.SoapAttributeOverrides.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::SoapAttributes ^ default[Type ^] { System::Xml::Serialization::SoapAttributes ^ get(Type ^ type); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -249,6 +281,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.SoapAttributes this[Type type, string member] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.SoapAttributes Item(class System.Type, string)" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapAttributeOverrides.Item(System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(type As Type, member As String) As SoapAttributes" />
+      <MemberSignature Language="F#" Value="member this.Item(Type * string) : System.Xml.Serialization.SoapAttributes" Usage="System.Xml.Serialization.SoapAttributeOverrides.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::SoapAttributes ^ default[Type ^, System::String ^] { System::Xml::Serialization::SoapAttributes ^ get(Type ^ type, System::String ^ member); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -296,25 +331,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a <see cref="T:System.Xml.Serialization.SoapAttributes" /> to the collection of <see cref="T:System.Xml.Serialization.SoapAttributes" /> objects contained by the <see cref="T:System.Xml.Serialization.SoapAttributeOverrides" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets an object that represents the collection of overriding SOAP attributes.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

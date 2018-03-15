@@ -1,7 +1,10 @@
-<Type Name="ProcessInputEventArgs" FullName="System.Windows.Input.ProcessInputEventArgs">
+﻿<Type Name="ProcessInputEventArgs" FullName="System.Windows.Input.ProcessInputEventArgs">
   <TypeSignature Language="C#" Value="public class ProcessInputEventArgs : System.Windows.Input.NotifyInputEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProcessInputEventArgs extends System.Windows.Input.NotifyInputEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ProcessInputEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProcessInputEventArgs&#xA;Inherits NotifyInputEventArgs" />
+  <TypeSignature Language="F#" Value="type ProcessInputEventArgs = class&#xA;    inherit NotifyInputEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProcessInputEventArgs : System::Windows::Input::NotifyInputEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.StagingAreaInputItem PeekInput ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StagingAreaInputItem PeekInput() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ProcessInputEventArgs.PeekInput" />
+      <MemberSignature Language="VB.NET" Value="Public Function PeekInput () As StagingAreaInputItem" />
+      <MemberSignature Language="F#" Value="member this.PeekInput : unit -&gt; System.Windows.Input.StagingAreaInputItem" Usage="processInputEventArgs.PeekInput " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StagingAreaInputItem ^ PeekInput();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,6 +87,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.StagingAreaInputItem PopInput ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StagingAreaInputItem PopInput() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ProcessInputEventArgs.PopInput" />
+      <MemberSignature Language="VB.NET" Value="Public Function PopInput () As StagingAreaInputItem" />
+      <MemberSignature Language="F#" Value="member this.PopInput : unit -&gt; System.Windows.Input.StagingAreaInputItem" Usage="processInputEventArgs.PopInput " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StagingAreaInputItem ^ PopInput();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -127,6 +136,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.StagingAreaInputItem PushInput (System.Windows.Input.StagingAreaInputItem input);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StagingAreaInputItem PushInput(class System.Windows.Input.StagingAreaInputItem input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ProcessInputEventArgs.PushInput(System.Windows.Input.StagingAreaInputItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PushInput (input As StagingAreaInputItem) As StagingAreaInputItem" />
+      <MemberSignature Language="F#" Value="member this.PushInput : System.Windows.Input.StagingAreaInputItem -&gt; System.Windows.Input.StagingAreaInputItem" Usage="processInputEventArgs.PushInput input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StagingAreaInputItem ^ PushInput(System::Windows::Input::StagingAreaInputItem ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -164,6 +176,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.StagingAreaInputItem PushInput (System.Windows.Input.InputEventArgs input, System.Windows.Input.StagingAreaInputItem promote);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StagingAreaInputItem PushInput(class System.Windows.Input.InputEventArgs input, class System.Windows.Input.StagingAreaInputItem promote) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ProcessInputEventArgs.PushInput(System.Windows.Input.InputEventArgs,System.Windows.Input.StagingAreaInputItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PushInput (input As InputEventArgs, promote As StagingAreaInputItem) As StagingAreaInputItem" />
+      <MemberSignature Language="F#" Value="member this.PushInput : System.Windows.Input.InputEventArgs * System.Windows.Input.StagingAreaInputItem -&gt; System.Windows.Input.StagingAreaInputItem" Usage="processInputEventArgs.PushInput (input, promote)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StagingAreaInputItem ^ PushInput(System::Windows::Input::InputEventArgs ^ input, System::Windows::Input::StagingAreaInputItem ^ promote);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="SqlInfoMessageEventArgs" FullName="System.Data.SqlClient.SqlInfoMessageEventArgs">
+﻿<Type Name="SqlInfoMessageEventArgs" FullName="System.Data.SqlClient.SqlInfoMessageEventArgs">
   <TypeSignature Language="C#" Value="public sealed class SqlInfoMessageEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlInfoMessageEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlInfoMessageEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlInfoMessageEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type SqlInfoMessageEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlInfoMessageEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlErrorCollection Errors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.SqlClient.SqlErrorCollection Errors" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlInfoMessageEventArgs.Errors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As SqlErrorCollection" />
+      <MemberSignature Language="F#" Value="member this.Errors : System.Data.SqlClient.SqlErrorCollection" Usage="System.Data.SqlClient.SqlInfoMessageEventArgs.Errors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlErrorCollection ^ Errors { System::Data::SqlClient::SqlErrorCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -66,6 +72,9 @@
       <MemberSignature Language="C#" Value="public string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlInfoMessageEventArgs.Message" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Data.SqlClient.SqlInfoMessageEventArgs.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -101,6 +110,9 @@
       <MemberSignature Language="C#" Value="public string Source { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Source" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlInfoMessageEventArgs.Source" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Source As String" />
+      <MemberSignature Language="F#" Value="member this.Source : string" Usage="System.Data.SqlClient.SqlInfoMessageEventArgs.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Source { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -136,6 +148,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlInfoMessageEventArgs.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sqlInfoMessageEventArgs.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

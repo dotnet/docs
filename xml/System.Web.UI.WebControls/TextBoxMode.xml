@@ -1,7 +1,10 @@
-<Type Name="TextBoxMode" FullName="System.Web.UI.WebControls.TextBoxMode">
+﻿<Type Name="TextBoxMode" FullName="System.Web.UI.WebControls.TextBoxMode">
   <TypeSignature Language="C#" Value="public enum TextBoxMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextBoxMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TextBoxMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TextBoxMode" />
+  <TypeSignature Language="F#" Value="type TextBoxMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TextBoxMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="Color" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Color = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Color" />
+      <MemberSignature Language="VB.NET" Value="Color" />
+      <MemberSignature Language="F#" Value="Color = 3" Usage="System.Web.UI.WebControls.TextBoxMode.Color" />
+      <MemberSignature Language="C++ CLI" Value="Color" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Represents color entry mode.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="Date" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Date = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Date" />
+      <MemberSignature Language="VB.NET" Value="Date" />
+      <MemberSignature Language="F#" Value="Date = 4" Usage="System.Web.UI.WebControls.TextBoxMode.Date" />
+      <MemberSignature Language="C++ CLI" Value="Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Represents date entry mode.</summary>
       </Docs>
@@ -67,6 +78,9 @@
       <MemberSignature Language="C#" Value="DateTime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode DateTime = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.DateTime" />
+      <MemberSignature Language="VB.NET" Value="DateTime" />
+      <MemberSignature Language="F#" Value="DateTime = 5" Usage="System.Web.UI.WebControls.TextBoxMode.DateTime" />
+      <MemberSignature Language="C++ CLI" Value="DateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Represents date-time entry mode.</summary>
       </Docs>
@@ -83,6 +98,9 @@
       <MemberSignature Language="C#" Value="DateTimeLocal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode DateTimeLocal = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.DateTimeLocal" />
+      <MemberSignature Language="VB.NET" Value="DateTimeLocal" />
+      <MemberSignature Language="F#" Value="DateTimeLocal = 6" Usage="System.Web.UI.WebControls.TextBoxMode.DateTimeLocal" />
+      <MemberSignature Language="C++ CLI" Value="DateTimeLocal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Represents local date-time entry mode.</summary>
       </Docs>
@@ -99,6 +118,9 @@
       <MemberSignature Language="C#" Value="Email" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Email = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Email" />
+      <MemberSignature Language="VB.NET" Value="Email" />
+      <MemberSignature Language="F#" Value="Email = 7" Usage="System.Web.UI.WebControls.TextBoxMode.Email" />
+      <MemberSignature Language="C++ CLI" Value="Email" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +129,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Represents email address entry mode.</summary>
       </Docs>
@@ -115,6 +138,9 @@
       <MemberSignature Language="C#" Value="Month" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Month = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Month" />
+      <MemberSignature Language="VB.NET" Value="Month" />
+      <MemberSignature Language="F#" Value="Month = 8" Usage="System.Web.UI.WebControls.TextBoxMode.Month" />
+      <MemberSignature Language="C++ CLI" Value="Month" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -123,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Represents month entry mode.</summary>
       </Docs>
@@ -131,6 +158,9 @@
       <MemberSignature Language="C#" Value="MultiLine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode MultiLine = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.MultiLine" />
+      <MemberSignature Language="VB.NET" Value="MultiLine" />
+      <MemberSignature Language="F#" Value="MultiLine = 1" Usage="System.Web.UI.WebControls.TextBoxMode.MultiLine" />
+      <MemberSignature Language="C++ CLI" Value="MultiLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -139,6 +169,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Represents multiline entry mode.</summary>
       </Docs>
@@ -147,6 +178,9 @@
       <MemberSignature Language="C#" Value="Number" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Number = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Number" />
+      <MemberSignature Language="VB.NET" Value="Number" />
+      <MemberSignature Language="F#" Value="Number = 9" Usage="System.Web.UI.WebControls.TextBoxMode.Number" />
+      <MemberSignature Language="C++ CLI" Value="Number" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +189,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Represents number entry mode.</summary>
       </Docs>
@@ -163,6 +198,9 @@
       <MemberSignature Language="C#" Value="Password" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Password = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Password" />
+      <MemberSignature Language="VB.NET" Value="Password" />
+      <MemberSignature Language="F#" Value="Password = 2" Usage="System.Web.UI.WebControls.TextBoxMode.Password" />
+      <MemberSignature Language="C++ CLI" Value="Password" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -171,6 +209,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Represents password entry mode.</summary>
       </Docs>
@@ -179,6 +218,9 @@
       <MemberSignature Language="C#" Value="Phone" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Phone = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Phone" />
+      <MemberSignature Language="VB.NET" Value="Phone" />
+      <MemberSignature Language="F#" Value="Phone = 12" Usage="System.Web.UI.WebControls.TextBoxMode.Phone" />
+      <MemberSignature Language="C++ CLI" Value="Phone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,6 +229,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>Represents phone number entry mode.</summary>
       </Docs>
@@ -195,6 +238,9 @@
       <MemberSignature Language="C#" Value="Range" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Range = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Range" />
+      <MemberSignature Language="VB.NET" Value="Range" />
+      <MemberSignature Language="F#" Value="Range = 10" Usage="System.Web.UI.WebControls.TextBoxMode.Range" />
+      <MemberSignature Language="C++ CLI" Value="Range" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -203,6 +249,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>Represents numeric range entry mode.</summary>
       </Docs>
@@ -211,6 +258,9 @@
       <MemberSignature Language="C#" Value="Search" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Search = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Search" />
+      <MemberSignature Language="VB.NET" Value="Search" />
+      <MemberSignature Language="F#" Value="Search = 11" Usage="System.Web.UI.WebControls.TextBoxMode.Search" />
+      <MemberSignature Language="C++ CLI" Value="Search" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +269,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>Represents search string entry mode.</summary>
       </Docs>
@@ -227,6 +278,9 @@
       <MemberSignature Language="C#" Value="SingleLine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode SingleLine = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.SingleLine" />
+      <MemberSignature Language="VB.NET" Value="SingleLine" />
+      <MemberSignature Language="F#" Value="SingleLine = 0" Usage="System.Web.UI.WebControls.TextBoxMode.SingleLine" />
+      <MemberSignature Language="C++ CLI" Value="SingleLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -235,6 +289,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Represents single-line entry mode.</summary>
       </Docs>
@@ -243,6 +298,9 @@
       <MemberSignature Language="C#" Value="Time" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Time = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Time" />
+      <MemberSignature Language="VB.NET" Value="Time" />
+      <MemberSignature Language="F#" Value="Time = 13" Usage="System.Web.UI.WebControls.TextBoxMode.Time" />
+      <MemberSignature Language="C++ CLI" Value="Time" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -251,6 +309,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>Represents time entry mode.</summary>
       </Docs>
@@ -259,6 +318,9 @@
       <MemberSignature Language="C#" Value="Url" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Url = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Url" />
+      <MemberSignature Language="VB.NET" Value="Url" />
+      <MemberSignature Language="F#" Value="Url = 14" Usage="System.Web.UI.WebControls.TextBoxMode.Url" />
+      <MemberSignature Language="C++ CLI" Value="Url" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -267,6 +329,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>Represents URL entry mode.</summary>
       </Docs>
@@ -275,6 +338,9 @@
       <MemberSignature Language="C#" Value="Week" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TextBoxMode Week = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TextBoxMode.Week" />
+      <MemberSignature Language="VB.NET" Value="Week" />
+      <MemberSignature Language="F#" Value="Week = 15" Usage="System.Web.UI.WebControls.TextBoxMode.Week" />
+      <MemberSignature Language="C++ CLI" Value="Week" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -283,6 +349,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TextBoxMode</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>Represents week entry mode.</summary>
       </Docs>

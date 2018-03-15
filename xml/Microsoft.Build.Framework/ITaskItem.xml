@@ -1,7 +1,10 @@
-<Type Name="ITaskItem" FullName="Microsoft.Build.Framework.ITaskItem">
+﻿<Type Name="ITaskItem" FullName="Microsoft.Build.Framework.ITaskItem">
   <TypeSignature Language="C#" Value="public interface ITaskItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITaskItem" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ITaskItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITaskItem" />
+  <TypeSignature Language="F#" Value="type ITaskItem = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITaskItem" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary CloneCustomMetadata ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IDictionary CloneCustomMetadata() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem.CloneCustomMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCustomMetadata () As IDictionary" />
+      <MemberSignature Language="F#" Value="abstract member CloneCustomMetadata : unit -&gt; System.Collections.IDictionary" Usage="iTaskItem.CloneCustomMetadata " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IDictionary ^ CloneCustomMetadata();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -73,6 +79,9 @@
       <MemberSignature Language="C#" Value="public void CopyMetadataTo (Microsoft.Build.Framework.ITaskItem destinationItem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyMetadataTo(class Microsoft.Build.Framework.ITaskItem destinationItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem.CopyMetadataTo(Microsoft.Build.Framework.ITaskItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyMetadataTo (destinationItem As ITaskItem)" />
+      <MemberSignature Language="F#" Value="abstract member CopyMetadataTo : Microsoft.Build.Framework.ITaskItem -&gt; unit" Usage="iTaskItem.CopyMetadataTo destinationItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyMetadataTo(Microsoft::Build::Framework::ITaskItem ^ destinationItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -107,6 +116,9 @@
       <MemberSignature Language="C#" Value="public string GetMetadata (string metadataName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetMetadata(string metadataName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem.GetMetadata(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMetadata (metadataName As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadata : string -&gt; string" Usage="iTaskItem.GetMetadata metadataName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetMetadata(System::String ^ metadataName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -129,6 +141,9 @@
       <MemberSignature Language="C#" Value="public string ItemSpec { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ItemSpec" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITaskItem.ItemSpec" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemSpec As String" />
+      <MemberSignature Language="F#" Value="member this.ItemSpec : string with get, set" Usage="Microsoft.Build.Framework.ITaskItem.ItemSpec" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemSpec { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -169,6 +184,9 @@
       <MemberSignature Language="C#" Value="public int MetadataCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MetadataCount" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITaskItem.MetadataCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.MetadataCount : int" Usage="Microsoft.Build.Framework.ITaskItem.MetadataCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MetadataCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -187,6 +205,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection MetadataNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection MetadataNames" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ITaskItem.MetadataNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataNames As ICollection" />
+      <MemberSignature Language="F#" Value="member this.MetadataNames : System.Collections.ICollection" Usage="Microsoft.Build.Framework.ITaskItem.MetadataNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ MetadataNames { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -205,6 +226,9 @@
       <MemberSignature Language="C#" Value="public void RemoveMetadata (string metadataName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveMetadata(string metadataName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem.RemoveMetadata(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveMetadata (metadataName As String)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveMetadata : string -&gt; unit" Usage="iTaskItem.RemoveMetadata metadataName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveMetadata(System::String ^ metadataName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -226,6 +250,9 @@
       <MemberSignature Language="C#" Value="public void SetMetadata (string metadataName, string metadataValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetMetadata(string metadataName, string metadataValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ITaskItem.SetMetadata(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetMetadata (metadataName As String, metadataValue As String)" />
+      <MemberSignature Language="F#" Value="abstract member SetMetadata : string * string -&gt; unit" Usage="iTaskItem.SetMetadata (metadataName, metadataValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetMetadata(System::String ^ metadataName, System::String ^ metadataValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

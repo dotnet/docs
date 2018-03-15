@@ -1,7 +1,10 @@
-<Type Name="CodeDomSerializerBase" FullName="System.ComponentModel.Design.Serialization.CodeDomSerializerBase">
+﻿<Type Name="CodeDomSerializerBase" FullName="System.ComponentModel.Design.Serialization.CodeDomSerializerBase">
   <TypeSignature Language="C#" Value="public abstract class CodeDomSerializerBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CodeDomSerializerBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CodeDomSerializerBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class CodeDomSerializerBase" />
+  <TypeSignature Language="F#" Value="type CodeDomSerializerBase = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeDomSerializerBase abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="protected object DeserializeExpression (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, string name, System.CodeDom.CodeExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object DeserializeExpression(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, string name, class System.CodeDom.CodeExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.DeserializeExpression(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.String,System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function DeserializeExpression (manager As IDesignerSerializationManager, name As String, expression As CodeExpression) As Object" />
+      <MemberSignature Language="F#" Value="member this.DeserializeExpression : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * string * System.CodeDom.CodeExpression -&gt; obj" Usage="codeDomSerializerBase.DeserializeExpression (manager, name, expression)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ DeserializeExpression(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::String ^ name, System::CodeDom::CodeExpression ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -85,6 +91,8 @@
       <MemberSignature Language="C#" Value="protected virtual object DeserializeInstance (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, Type type, object[] parameters, string name, bool addToContainer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object DeserializeInstance(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.Type type, object[] parameters, string name, bool addToContainer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.DeserializeInstance(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Type,System.Object[],System.String,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member DeserializeInstance : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * Type * obj[] * string * bool -&gt; obj&#xA;override this.DeserializeInstance : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * Type * obj[] * string * bool -&gt; obj" Usage="codeDomSerializerBase.DeserializeInstance (manager, type, parameters, name, addToContainer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ DeserializeInstance(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, Type ^ type, cli::array &lt;System::Object ^&gt; ^ parameters, System::String ^ name, bool addToContainer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -126,6 +134,9 @@
       <MemberSignature Language="C#" Value="protected void DeserializePropertiesFromResources (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value, Attribute[] filter);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DeserializePropertiesFromResources(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value, class System.Attribute[] filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.DeserializePropertiesFromResources(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub DeserializePropertiesFromResources (manager As IDesignerSerializationManager, value As Object, filter As Attribute())" />
+      <MemberSignature Language="F#" Value="member this.DeserializePropertiesFromResources : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj * Attribute[] -&gt; unit" Usage="codeDomSerializerBase.DeserializePropertiesFromResources (manager, value, filter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DeserializePropertiesFromResources(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value, cli::array &lt;Attribute ^&gt; ^ filter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -163,6 +174,9 @@
       <MemberSignature Language="C#" Value="protected void DeserializeStatement (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, System.CodeDom.CodeStatement statement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DeserializeStatement(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.CodeDom.CodeStatement statement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.DeserializeStatement(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.CodeDom.CodeStatement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub DeserializeStatement (manager As IDesignerSerializationManager, statement As CodeStatement)" />
+      <MemberSignature Language="F#" Value="member this.DeserializeStatement : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * System.CodeDom.CodeStatement -&gt; unit" Usage="codeDomSerializerBase.DeserializeStatement (manager, statement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DeserializeStatement(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::CodeDom::CodeStatement ^ statement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -197,6 +211,8 @@
       <MemberSignature Language="C#" Value="protected static System.ComponentModel.AttributeCollection GetAttributesFromTypeHelper (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.ComponentModel.AttributeCollection GetAttributesFromTypeHelper(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetAttributesFromTypeHelper(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetAttributesFromTypeHelper : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * Type -&gt; System.ComponentModel.AttributeCollection" Usage="System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetAttributesFromTypeHelper (manager, type)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::ComponentModel::AttributeCollection ^ GetAttributesFromTypeHelper(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -221,6 +237,9 @@
       <MemberSignature Language="C#" Value="protected static System.ComponentModel.AttributeCollection GetAttributesHelper (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.ComponentModel.AttributeCollection GetAttributesHelper(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetAttributesHelper(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function GetAttributesHelper (manager As IDesignerSerializationManager, instance As Object) As AttributeCollection" />
+      <MemberSignature Language="F#" Value="static member GetAttributesHelper : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; System.ComponentModel.AttributeCollection" Usage="System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetAttributesHelper (manager, instance)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::ComponentModel::AttributeCollection ^ GetAttributesHelper(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -245,6 +264,9 @@
       <MemberSignature Language="C#" Value="protected static System.ComponentModel.EventDescriptorCollection GetEventsHelper (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object instance, Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.ComponentModel.EventDescriptorCollection GetEventsHelper(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object instance, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetEventsHelper(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function GetEventsHelper (manager As IDesignerSerializationManager, instance As Object, attributes As Attribute()) As EventDescriptorCollection" />
+      <MemberSignature Language="F#" Value="static member GetEventsHelper : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj * Attribute[] -&gt; System.ComponentModel.EventDescriptorCollection" Usage="System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetEventsHelper (manager, instance, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::ComponentModel::EventDescriptorCollection ^ GetEventsHelper(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ instance, cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -271,6 +293,9 @@
       <MemberSignature Language="C#" Value="protected System.CodeDom.CodeExpression GetExpression (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.CodeDom.CodeExpression GetExpression(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetExpression(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetExpression (manager As IDesignerSerializationManager, value As Object) As CodeExpression" />
+      <MemberSignature Language="F#" Value="member this.GetExpression : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; System.CodeDom.CodeExpression" Usage="codeDomSerializerBase.GetExpression (manager, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::CodeDom::CodeExpression ^ GetExpression(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -316,6 +341,9 @@
       <MemberSignature Language="C#" Value="protected static System.ComponentModel.PropertyDescriptorCollection GetPropertiesHelper (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object instance, Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.ComponentModel.PropertyDescriptorCollection GetPropertiesHelper(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object instance, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetPropertiesHelper(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function GetPropertiesHelper (manager As IDesignerSerializationManager, instance As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
+      <MemberSignature Language="F#" Value="static member GetPropertiesHelper : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetPropertiesHelper (manager, instance, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::ComponentModel::PropertyDescriptorCollection ^ GetPropertiesHelper(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ instance, cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -342,6 +370,8 @@
       <MemberSignature Language="C#" Value="protected static Type GetReflectionTypeFromTypeHelper (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Type GetReflectionTypeFromTypeHelper(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetReflectionTypeFromTypeHelper(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetReflectionTypeFromTypeHelper : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * Type -&gt; Type" Usage="System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetReflectionTypeFromTypeHelper (manager, type)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static Type ^ GetReflectionTypeFromTypeHelper(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -373,6 +403,9 @@
       <MemberSignature Language="C#" Value="protected static Type GetReflectionTypeHelper (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Type GetReflectionTypeHelper(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetReflectionTypeHelper(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function GetReflectionTypeHelper (manager As IDesignerSerializationManager, instance As Object) As Type" />
+      <MemberSignature Language="F#" Value="static member GetReflectionTypeHelper : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; Type" Usage="System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetReflectionTypeHelper (manager, instance)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static Type ^ GetReflectionTypeHelper(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -400,10 +433,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSerializer">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Locates a serializer for the given object value or type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetSerializer">
       <MemberSignature Language="C#" Value="protected System.ComponentModel.Design.Serialization.CodeDomSerializer GetSerializer (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.ComponentModel.Design.Serialization.CodeDomSerializer GetSerializer(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetSerializer(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetSerializer (manager As IDesignerSerializationManager, value As Object) As CodeDomSerializer" />
+      <MemberSignature Language="F#" Value="member this.GetSerializer : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; System.ComponentModel.Design.Serialization.CodeDomSerializer" Usage="codeDomSerializerBase.GetSerializer (manager, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::ComponentModel::Design::Serialization::CodeDomSerializer ^ GetSerializer(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -438,6 +483,9 @@
       <MemberSignature Language="C#" Value="protected System.ComponentModel.Design.Serialization.CodeDomSerializer GetSerializer (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, Type valueType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.ComponentModel.Design.Serialization.CodeDomSerializer GetSerializer(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.Type valueType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetSerializer(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetSerializer (manager As IDesignerSerializationManager, valueType As Type) As CodeDomSerializer" />
+      <MemberSignature Language="F#" Value="member this.GetSerializer : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * Type -&gt; System.ComponentModel.Design.Serialization.CodeDomSerializer" Usage="codeDomSerializerBase.GetSerializer (manager, valueType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::ComponentModel::Design::Serialization::CodeDomSerializer ^ GetSerializer(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, Type ^ valueType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -472,6 +520,9 @@
       <MemberSignature Language="C#" Value="protected static System.ComponentModel.TypeDescriptionProvider GetTargetFrameworkProvider (IServiceProvider provider, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.ComponentModel.TypeDescriptionProvider GetTargetFrameworkProvider(class System.IServiceProvider provider, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetTargetFrameworkProvider(System.IServiceProvider,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function GetTargetFrameworkProvider (provider As IServiceProvider, instance As Object) As TypeDescriptionProvider" />
+      <MemberSignature Language="F#" Value="static member GetTargetFrameworkProvider : IServiceProvider * obj -&gt; System.ComponentModel.TypeDescriptionProvider" Usage="System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetTargetFrameworkProvider (provider, instance)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::ComponentModel::TypeDescriptionProvider ^ GetTargetFrameworkProvider(IServiceProvider ^ provider, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -496,6 +547,9 @@
       <MemberSignature Language="C#" Value="protected string GetUniqueName (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetUniqueName(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.GetUniqueName(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetUniqueName (manager As IDesignerSerializationManager, value As Object) As String" />
+      <MemberSignature Language="F#" Value="member this.GetUniqueName : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; string" Usage="codeDomSerializerBase.GetUniqueName (manager, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetUniqueName(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -527,10 +581,22 @@
         <altmember cref="T:System.ComponentModel.Design.Serialization.INameCreationService" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsSerialized">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether the given object has been serialized.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsSerialized">
       <MemberSignature Language="C#" Value="protected bool IsSerialized (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsSerialized(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.IsSerialized(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function IsSerialized (manager As IDesignerSerializationManager, value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSerialized : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; bool" Usage="codeDomSerializerBase.IsSerialized (manager, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsSerialized(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -566,6 +632,9 @@
       <MemberSignature Language="C#" Value="protected bool IsSerialized (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value, bool honorPreset);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool IsSerialized(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value, bool honorPreset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.IsSerialized(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function IsSerialized (manager As IDesignerSerializationManager, value As Object, honorPreset As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSerialized : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj * bool -&gt; bool" Usage="codeDomSerializerBase.IsSerialized (manager, value, honorPreset)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool IsSerialized(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value, bool honorPreset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -604,6 +673,9 @@
       <MemberSignature Language="C#" Value="protected System.CodeDom.CodeExpression SerializeCreationExpression (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value, out bool isComplete);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.CodeDom.CodeExpression SerializeCreationExpression(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value, [out] bool&amp; isComplete) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeCreationExpression(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SerializeCreationExpression (manager As IDesignerSerializationManager, value As Object, ByRef isComplete As Boolean) As CodeExpression" />
+      <MemberSignature Language="F#" Value="member this.SerializeCreationExpression : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj *  -&gt; System.CodeDom.CodeExpression" Usage="codeDomSerializerBase.SerializeCreationExpression (manager, value, isComplete)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::CodeDom::CodeExpression ^ SerializeCreationExpression(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value, [Runtime::InteropServices::Out] bool % isComplete);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -643,6 +715,9 @@
       <MemberSignature Language="C#" Value="protected void SerializeEvent (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, System.CodeDom.CodeStatementCollection statements, object value, System.ComponentModel.EventDescriptor descriptor);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SerializeEvent(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.CodeDom.CodeStatementCollection statements, object value, class System.ComponentModel.EventDescriptor descriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeEvent(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.CodeDom.CodeStatementCollection,System.Object,System.ComponentModel.EventDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SerializeEvent (manager As IDesignerSerializationManager, statements As CodeStatementCollection, value As Object, descriptor As EventDescriptor)" />
+      <MemberSignature Language="F#" Value="member this.SerializeEvent : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * System.CodeDom.CodeStatementCollection * obj * System.ComponentModel.EventDescriptor -&gt; unit" Usage="codeDomSerializerBase.SerializeEvent (manager, statements, value, descriptor)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SerializeEvent(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::CodeDom::CodeStatementCollection ^ statements, System::Object ^ value, System::ComponentModel::EventDescriptor ^ descriptor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -690,6 +765,9 @@
       <MemberSignature Language="C#" Value="protected void SerializeEvents (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, System.CodeDom.CodeStatementCollection statements, object value, params Attribute[] filter);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SerializeEvents(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.CodeDom.CodeStatementCollection statements, object value, class System.Attribute[] filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeEvents(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.CodeDom.CodeStatementCollection,System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SerializeEvents (manager As IDesignerSerializationManager, statements As CodeStatementCollection, value As Object, ParamArray filter As Attribute())" />
+      <MemberSignature Language="F#" Value="member this.SerializeEvents : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * System.CodeDom.CodeStatementCollection * obj * Attribute[] -&gt; unit" Usage="codeDomSerializerBase.SerializeEvents (manager, statements, value, filter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SerializeEvents(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::CodeDom::CodeStatementCollection ^ statements, System::Object ^ value, ... cli::array &lt;Attribute ^&gt; ^ filter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -737,6 +815,9 @@
       <MemberSignature Language="C#" Value="protected void SerializeProperties (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, System.CodeDom.CodeStatementCollection statements, object value, Attribute[] filter);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SerializeProperties(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.CodeDom.CodeStatementCollection statements, object value, class System.Attribute[] filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeProperties(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.CodeDom.CodeStatementCollection,System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SerializeProperties (manager As IDesignerSerializationManager, statements As CodeStatementCollection, value As Object, filter As Attribute())" />
+      <MemberSignature Language="F#" Value="member this.SerializeProperties : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * System.CodeDom.CodeStatementCollection * obj * Attribute[] -&gt; unit" Usage="codeDomSerializerBase.SerializeProperties (manager, statements, value, filter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SerializeProperties(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::CodeDom::CodeStatementCollection ^ statements, System::Object ^ value, cli::array &lt;Attribute ^&gt; ^ filter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -778,6 +859,9 @@
       <MemberSignature Language="C#" Value="protected void SerializePropertiesToResources (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, System.CodeDom.CodeStatementCollection statements, object value, Attribute[] filter);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SerializePropertiesToResources(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.CodeDom.CodeStatementCollection statements, object value, class System.Attribute[] filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializePropertiesToResources(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.CodeDom.CodeStatementCollection,System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SerializePropertiesToResources (manager As IDesignerSerializationManager, statements As CodeStatementCollection, value As Object, filter As Attribute())" />
+      <MemberSignature Language="F#" Value="member this.SerializePropertiesToResources : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * System.CodeDom.CodeStatementCollection * obj * Attribute[] -&gt; unit" Usage="codeDomSerializerBase.SerializePropertiesToResources (manager, statements, value, filter)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SerializePropertiesToResources(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::CodeDom::CodeStatementCollection ^ statements, System::Object ^ value, cli::array &lt;Attribute ^&gt; ^ filter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -823,6 +907,9 @@
       <MemberSignature Language="C#" Value="protected void SerializeProperty (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, System.CodeDom.CodeStatementCollection statements, object value, System.ComponentModel.PropertyDescriptor propertyToSerialize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SerializeProperty(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.CodeDom.CodeStatementCollection statements, object value, class System.ComponentModel.PropertyDescriptor propertyToSerialize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeProperty(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.CodeDom.CodeStatementCollection,System.Object,System.ComponentModel.PropertyDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SerializeProperty (manager As IDesignerSerializationManager, statements As CodeStatementCollection, value As Object, propertyToSerialize As PropertyDescriptor)" />
+      <MemberSignature Language="F#" Value="member this.SerializeProperty : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * System.CodeDom.CodeStatementCollection * obj * System.ComponentModel.PropertyDescriptor -&gt; unit" Usage="codeDomSerializerBase.SerializeProperty (manager, statements, value, propertyToSerialize)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SerializeProperty(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::CodeDom::CodeStatementCollection ^ statements, System::Object ^ value, System::ComponentModel::PropertyDescriptor ^ propertyToSerialize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -864,6 +951,9 @@
       <MemberSignature Language="C#" Value="protected void SerializeResource (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, string resourceName, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SerializeResource(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, string resourceName, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeResource(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SerializeResource (manager As IDesignerSerializationManager, resourceName As String, value As Object)" />
+      <MemberSignature Language="F#" Value="member this.SerializeResource : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * string * obj -&gt; unit" Usage="codeDomSerializerBase.SerializeResource (manager, resourceName, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SerializeResource(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::String ^ resourceName, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -905,6 +995,9 @@
       <MemberSignature Language="C#" Value="protected void SerializeResourceInvariant (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, string resourceName, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SerializeResourceInvariant(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, string resourceName, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeResourceInvariant(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SerializeResourceInvariant (manager As IDesignerSerializationManager, resourceName As String, value As Object)" />
+      <MemberSignature Language="F#" Value="member this.SerializeResourceInvariant : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * string * obj -&gt; unit" Usage="codeDomSerializerBase.SerializeResourceInvariant (manager, resourceName, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SerializeResourceInvariant(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::String ^ resourceName, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -942,6 +1035,9 @@
       <MemberSignature Language="C#" Value="protected System.CodeDom.CodeExpression SerializeToExpression (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.CodeDom.CodeExpression SerializeToExpression(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeToExpression(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SerializeToExpression (manager As IDesignerSerializationManager, value As Object) As CodeExpression" />
+      <MemberSignature Language="F#" Value="member this.SerializeToExpression : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; System.CodeDom.CodeExpression" Usage="codeDomSerializerBase.SerializeToExpression (manager, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::CodeDom::CodeExpression ^ SerializeToExpression(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -994,10 +1090,22 @@
         <altmember cref="T:System.ComponentModel.Design.Serialization.StatementContext" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SerializeToResourceExpression">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Serializes an object into an expression.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SerializeToResourceExpression">
       <MemberSignature Language="C#" Value="protected System.CodeDom.CodeExpression SerializeToResourceExpression (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.CodeDom.CodeExpression SerializeToResourceExpression(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeToResourceExpression(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SerializeToResourceExpression (manager As IDesignerSerializationManager, value As Object) As CodeExpression" />
+      <MemberSignature Language="F#" Value="member this.SerializeToResourceExpression : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; System.CodeDom.CodeExpression" Usage="codeDomSerializerBase.SerializeToResourceExpression (manager, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::CodeDom::CodeExpression ^ SerializeToResourceExpression(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1041,6 +1149,9 @@
       <MemberSignature Language="C#" Value="protected System.CodeDom.CodeExpression SerializeToResourceExpression (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value, bool ensureInvariant);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.CodeDom.CodeExpression SerializeToResourceExpression(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value, bool ensureInvariant) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SerializeToResourceExpression(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SerializeToResourceExpression (manager As IDesignerSerializationManager, value As Object, ensureInvariant As Boolean) As CodeExpression" />
+      <MemberSignature Language="F#" Value="member this.SerializeToResourceExpression : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj * bool -&gt; System.CodeDom.CodeExpression" Usage="codeDomSerializerBase.SerializeToResourceExpression (manager, value, ensureInvariant)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::CodeDom::CodeExpression ^ SerializeToResourceExpression(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value, bool ensureInvariant);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1075,10 +1186,22 @@
         <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetExpression">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Associates an object with an expression.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetExpression">
       <MemberSignature Language="C#" Value="protected void SetExpression (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value, System.CodeDom.CodeExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetExpression(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value, class System.CodeDom.CodeExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SetExpression(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetExpression (manager As IDesignerSerializationManager, value As Object, expression As CodeExpression)" />
+      <MemberSignature Language="F#" Value="member this.SetExpression : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj * System.CodeDom.CodeExpression -&gt; unit" Usage="codeDomSerializerBase.SetExpression (manager, value, expression)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetExpression(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value, System::CodeDom::CodeExpression ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1115,6 +1238,9 @@
       <MemberSignature Language="C#" Value="protected void SetExpression (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value, System.CodeDom.CodeExpression expression, bool isPreset);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetExpression(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value, class System.CodeDom.CodeExpression expression, bool isPreset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.CodeDomSerializerBase.SetExpression(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.CodeDom.CodeExpression,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetExpression (manager As IDesignerSerializationManager, value As Object, expression As CodeExpression, isPreset As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.SetExpression : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj * System.CodeDom.CodeExpression * bool -&gt; unit" Usage="codeDomSerializerBase.SetExpression (manager, value, expression, isPreset)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetExpression(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value, System::CodeDom::CodeExpression ^ expression, bool isPreset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1148,41 +1274,5 @@
         <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetSerializer">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Locates a serializer for the given object value or type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SerializeToResourceExpression">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Serializes an object into an expression.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetExpression">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Associates an object with an expression.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsSerialized">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value indicating whether the given object has been serialized.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

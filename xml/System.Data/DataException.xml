@@ -1,7 +1,10 @@
-<Type Name="DataException" FullName="System.Data.DataException">
+﻿<Type Name="DataException" FullName="System.Data.DataException">
   <TypeSignature Language="C#" Value="public class DataException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DataException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataException" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataException&#xA;Inherits SystemException" />
+  <TypeSignature Language="F#" Value="type DataException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,10 +27,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -52,6 +67,9 @@
       <MemberSignature Language="C#" Value="public DataException (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (s As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.DataException : string -&gt; System.Data.DataException" Usage="new System.Data.DataException s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataException(System::String ^ s);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -80,6 +98,9 @@
       <MemberSignature Language="C#" Value="protected DataException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Data.DataException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.DataException" Usage="new System.Data.DataException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -109,6 +130,9 @@
       <MemberSignature Language="C#" Value="public DataException (string s, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string s, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (s As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Data.DataException : string * Exception -&gt; System.Data.DataException" Usage="new System.Data.DataException (s, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataException(System::String ^ s, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -141,15 +165,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.DataException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

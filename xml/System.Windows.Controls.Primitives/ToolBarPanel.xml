@@ -1,7 +1,10 @@
-<Type Name="ToolBarPanel" FullName="System.Windows.Controls.Primitives.ToolBarPanel">
+﻿<Type Name="ToolBarPanel" FullName="System.Windows.Controls.Primitives.ToolBarPanel">
   <TypeSignature Language="C#" Value="public class ToolBarPanel : System.Windows.Controls.StackPanel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ToolBarPanel extends System.Windows.Controls.StackPanel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.ToolBarPanel" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolBarPanel&#xA;Inherits StackPanel" />
+  <TypeSignature Language="F#" Value="type ToolBarPanel = class&#xA;    inherit StackPanel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolBarPanel : System::Windows::Controls::StackPanel" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,8 @@
       <MemberSignature Language="C#" Value="public ToolBarPanel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ToolBarPanel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolBarPanel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -44,6 +49,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ToolBarPanel.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="toolBarPanel.ArrangeOverride arrangeSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -66,6 +74,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.ToolBarPanel.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="toolBarPanel.MeasureOverride constraint" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

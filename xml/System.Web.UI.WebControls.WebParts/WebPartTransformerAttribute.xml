@@ -1,7 +1,10 @@
-<Type Name="WebPartTransformerAttribute" FullName="System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute">
+﻿<Type Name="WebPartTransformerAttribute" FullName="System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute">
   <TypeSignature Language="C#" Value="public sealed class WebPartTransformerAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebPartTransformerAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPartTransformerAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type WebPartTransformerAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartTransformerAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="public WebPartTransformerAttribute (Type consumerType, Type providerType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type consumerType, class System.Type providerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.#ctor(System.Type,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (consumerType As Type, providerType As Type)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute : Type * Type -&gt; System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute" Usage="new System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute (consumerType, providerType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartTransformerAttribute(Type ^ consumerType, Type ^ providerType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +90,9 @@
       <MemberSignature Language="C#" Value="public Type ConsumerType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ConsumerType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.ConsumerType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConsumerType As Type" />
+      <MemberSignature Language="F#" Value="member this.ConsumerType : Type" Usage="System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.ConsumerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ConsumerType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +118,9 @@
       <MemberSignature Language="C#" Value="public static Type GetConsumerType (Type transformerType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetConsumerType(class System.Type transformerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.GetConsumerType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetConsumerType (transformerType As Type) As Type" />
+      <MemberSignature Language="F#" Value="static member GetConsumerType : Type -&gt; Type" Usage="System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.GetConsumerType transformerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetConsumerType(Type ^ transformerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -142,6 +154,9 @@
       <MemberSignature Language="C#" Value="public static Type GetProviderType (Type transformerType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetProviderType(class System.Type transformerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.GetProviderType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetProviderType (transformerType As Type) As Type" />
+      <MemberSignature Language="F#" Value="static member GetProviderType : Type -&gt; Type" Usage="System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.GetProviderType transformerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetProviderType(Type ^ transformerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +190,9 @@
       <MemberSignature Language="C#" Value="public Type ProviderType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ProviderType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.ProviderType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderType As Type" />
+      <MemberSignature Language="F#" Value="member this.ProviderType : Type" Usage="System.Web.UI.WebControls.WebParts.WebPartTransformerAttribute.ProviderType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ProviderType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

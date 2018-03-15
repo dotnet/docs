@@ -1,7 +1,10 @@
-<Type Name="MsmqIntegrationSecurity" FullName="System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity">
+﻿<Type Name="MsmqIntegrationSecurity" FullName="System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity">
   <TypeSignature Language="C#" Value="public sealed class MsmqIntegrationSecurity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MsmqIntegrationSecurity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MsmqIntegrationSecurity" />
+  <TypeSignature Language="F#" Value="type MsmqIntegrationSecurity = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MsmqIntegrationSecurity sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public MsmqIntegrationSecurity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MsmqIntegrationSecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As MsmqIntegrationSecurityMode" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurityMode with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MsmqIntegration::MsmqIntegrationSecurityMode Mode { System::ServiceModel::MsmqIntegration::MsmqIntegrationSecurityMode get(); void set(System::ServiceModel::MsmqIntegration::MsmqIntegrationSecurityMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +79,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.MsmqTransportSecurity Transport { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.MsmqTransportSecurity Transport" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity.Transport" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transport As MsmqTransportSecurity" />
+      <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.MsmqTransportSecurity with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationSecurity.Transport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MsmqTransportSecurity ^ Transport { System::ServiceModel::MsmqTransportSecurity ^ get(); void set(System::ServiceModel::MsmqTransportSecurity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

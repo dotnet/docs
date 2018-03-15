@@ -1,7 +1,10 @@
-<Type Name="WebException" FullName="System.Net.WebException">
+﻿<Type Name="WebException" FullName="System.Net.WebException">
   <TypeSignature Language="C#" Value="public class WebException : InvalidOperationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WebException extends System.InvalidOperationException implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebException" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebException&#xA;Inherits InvalidOperationException" />
+  <TypeSignature Language="F#" Value="type WebException = class&#xA;    inherit InvalidOperationException&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebException : InvalidOperationException" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Requests</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -46,10 +49,22 @@
     <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.WebException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -91,6 +106,9 @@
       <MemberSignature Language="C#" Value="public WebException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Net.WebException : string -&gt; System.Net.WebException" Usage="new System.Net.WebException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -136,6 +154,8 @@
       <MemberSignature Language="C#" Value="protected WebException (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Net.WebException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.WebException" Usage="new System.Net.WebException (serializationInfo, streamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -173,6 +193,9 @@
       <MemberSignature Language="C#" Value="public WebException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Net.WebException : string * Exception -&gt; System.Net.WebException" Usage="new System.Net.WebException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -220,6 +243,9 @@
       <MemberSignature Language="C#" Value="public WebException (string message, System.Net.WebExceptionStatus status);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, valuetype System.Net.WebExceptionStatus status) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.String,System.Net.WebExceptionStatus)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, status As WebExceptionStatus)" />
+      <MemberSignature Language="F#" Value="new System.Net.WebException : string * System.Net.WebExceptionStatus -&gt; System.Net.WebException" Usage="new System.Net.WebException (message, status)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebException(System::String ^ message, System::Net::WebExceptionStatus status);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -266,6 +292,9 @@
       <MemberSignature Language="C#" Value="public WebException (string message, Exception innerException, System.Net.WebExceptionStatus status, System.Net.WebResponse response);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException, valuetype System.Net.WebExceptionStatus status, class System.Net.WebResponse response) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebException.#ctor(System.String,System.Exception,System.Net.WebExceptionStatus,System.Net.WebResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, status As WebExceptionStatus, response As WebResponse)" />
+      <MemberSignature Language="F#" Value="new System.Net.WebException : string * Exception * System.Net.WebExceptionStatus * System.Net.WebResponse -&gt; System.Net.WebException" Usage="new System.Net.WebException (message, innerException, status, response)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebException(System::String ^ message, Exception ^ innerException, System::Net::WebExceptionStatus status, System::Net::WebResponse ^ response);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -316,7 +345,12 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="webException.GetObjectData (serializationInfo, streamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -348,6 +382,9 @@
       <MemberSignature Language="C#" Value="public System.Net.WebResponse Response { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebResponse Response" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebException.Response" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Response As WebResponse" />
+      <MemberSignature Language="F#" Value="member this.Response : System.Net.WebResponse" Usage="System.Net.WebException.Response" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebResponse ^ Response { System::Net::WebResponse ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -392,6 +429,9 @@
       <MemberSignature Language="C#" Value="public System.Net.WebExceptionStatus Status { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.WebExceptionStatus Status" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebException.Status" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As WebExceptionStatus" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Net.WebExceptionStatus" Usage="System.Net.WebException.Status" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebExceptionStatus Status { System::Net::WebExceptionStatus get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -442,7 +482,11 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebException.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -470,15 +514,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Requests</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.WebException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

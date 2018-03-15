@@ -2,6 +2,9 @@
   <TypeSignature Language="C#" Value="public interface _EventInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _EventInfo" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices._EventInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _EventInfo" />
+  <TypeSignature Language="F#" Value="type _EventInfo = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _EventInfo" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="public void AddEventHandler (object target, Delegate handler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddEventHandler(object target, class System.Delegate handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.AddEventHandler(System.Object,System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddEventHandler (target As Object, handler As Delegate)" />
+      <MemberSignature Language="F#" Value="abstract member AddEventHandler : obj * Delegate -&gt; unit" Usage="_EventInfo.AddEventHandler (target, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddEventHandler(System::Object ^ target, Delegate ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -76,6 +82,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.EventAttributes Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.EventAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._EventInfo.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As EventAttributes" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.EventAttributes" Usage="System.Runtime.InteropServices._EventInfo.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::EventAttributes Attributes { System::Reflection::EventAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -104,6 +113,9 @@
       <MemberSignature Language="C#" Value="public Type DeclaringType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DeclaringType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._EventInfo.DeclaringType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeclaringType As Type" />
+      <MemberSignature Language="F#" Value="member this.DeclaringType : Type" Usage="System.Runtime.InteropServices._EventInfo.DeclaringType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DeclaringType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -132,6 +144,9 @@
       <MemberSignature Language="C#" Value="public bool Equals (object other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(object other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool" Usage="_EventInfo.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Object ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -165,6 +180,9 @@
       <MemberSignature Language="C#" Value="public Type EventHandlerType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type EventHandlerType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._EventInfo.EventHandlerType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventHandlerType As Type" />
+      <MemberSignature Language="F#" Value="member this.EventHandlerType : Type" Usage="System.Runtime.InteropServices._EventInfo.EventHandlerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ EventHandlerType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -213,6 +231,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetAddMethod ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetAddMethod() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.GetAddMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAddMethod () As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetAddMethod : unit -&gt; System.Reflection.MethodInfo" Usage="_EventInfo.GetAddMethod " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetAddMethod();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -242,6 +263,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetAddMethod (bool nonPublic);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetAddMethod(bool nonPublic) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.GetAddMethod(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAddMethod (nonPublic As Boolean) As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetAddMethod : bool -&gt; System.Reflection.MethodInfo" Usage="_EventInfo.GetAddMethod nonPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetAddMethod(bool nonPublic);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -295,6 +319,9 @@
       <MemberSignature Language="C#" Value="public object[] GetCustomAttributes (bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetCustomAttributes(bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.GetCustomAttributes(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes (inherit As Boolean) As Object()" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomAttributes : bool -&gt; obj[]" Usage="_EventInfo.GetCustomAttributes inherit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -328,6 +355,9 @@
       <MemberSignature Language="C#" Value="public object[] GetCustomAttributes (Type attributeType, bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetCustomAttributes(class System.Type attributeType, bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.GetCustomAttributes(System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes (attributeType As Type, inherit As Boolean) As Object()" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomAttributes : Type * bool -&gt; obj[]" Usage="_EventInfo.GetCustomAttributes (attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -363,6 +393,9 @@
       <MemberSignature Language="C#" Value="public int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int" Usage="_EventInfo.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -392,6 +425,9 @@
       <MemberSignature Language="C#" Value="public void GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member GetIDsOfNames :  * nativeint * uint32 * uint32 * nativeint -&gt; unit" Usage="_EventInfo.GetIDsOfNames (riid, rgszNames, cNames, lcid, rgDispId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -449,6 +485,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetRaiseMethod ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetRaiseMethod() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.GetRaiseMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRaiseMethod () As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetRaiseMethod : unit -&gt; System.Reflection.MethodInfo" Usage="_EventInfo.GetRaiseMethod " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetRaiseMethod();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -478,6 +517,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetRaiseMethod (bool nonPublic);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetRaiseMethod(bool nonPublic) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.GetRaiseMethod(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRaiseMethod (nonPublic As Boolean) As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetRaiseMethod : bool -&gt; System.Reflection.MethodInfo" Usage="_EventInfo.GetRaiseMethod nonPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetRaiseMethod(bool nonPublic);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -531,6 +573,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetRemoveMethod ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetRemoveMethod() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.GetRemoveMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRemoveMethod () As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetRemoveMethod : unit -&gt; System.Reflection.MethodInfo" Usage="_EventInfo.GetRemoveMethod " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetRemoveMethod();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -560,6 +605,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetRemoveMethod (bool nonPublic);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetRemoveMethod(bool nonPublic) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.GetRemoveMethod(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRemoveMethod (nonPublic As Boolean) As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetRemoveMethod : bool -&gt; System.Reflection.MethodInfo" Usage="_EventInfo.GetRemoveMethod nonPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetRemoveMethod(bool nonPublic);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -593,6 +641,9 @@
       <MemberSignature Language="C#" Value="public Type GetType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.GetType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetType () As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetType : unit -&gt; Type" Usage="_EventInfo.GetType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -622,6 +673,9 @@
       <MemberSignature Language="C#" Value="public void GetTypeInfo (uint iTInfo, uint lcid, IntPtr ppTInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfo : uint32 * uint32 * nativeint -&gt; unit" Usage="_EventInfo.GetTypeInfo (iTInfo, lcid, ppTInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -655,6 +709,9 @@
       <MemberSignature Language="C#" Value="public void GetTypeInfoCount (out uint pcTInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.GetTypeInfoCount(System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfoCount (ByRef pcTInfo As UInteger)" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfoCount :  -&gt; unit" Usage="_EventInfo.GetTypeInfoCount pcTInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -684,6 +741,9 @@
       <MemberSignature Language="C#" Value="public void Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : uint32 *  * uint32 * int16 * nativeint * nativeint * nativeint * nativeint -&gt; unit" Usage="_EventInfo.Invoke (dispIdMember, riid, lcid, wFlags, pDispParams, pVarResult, pExcepInfo, puArgErr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -727,6 +787,9 @@
       <MemberSignature Language="C#" Value="public bool IsDefined (Type attributeType, bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsDefined(class System.Type attributeType, bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.IsDefined(System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsDefined (attributeType As Type, inherit As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsDefined : Type * bool -&gt; bool" Usage="_EventInfo.IsDefined (attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsDefined(Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -763,6 +826,9 @@
       <MemberSignature Language="C#" Value="public bool IsMulticast { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMulticast" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._EventInfo.IsMulticast" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMulticast As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsMulticast : bool" Usage="System.Runtime.InteropServices._EventInfo.IsMulticast" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMulticast { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -792,6 +858,9 @@
       <MemberSignature Language="C#" Value="public bool IsSpecialName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSpecialName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._EventInfo.IsSpecialName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSpecialName As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSpecialName : bool" Usage="System.Runtime.InteropServices._EventInfo.IsSpecialName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSpecialName { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -821,6 +890,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MemberTypes MemberType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.MemberTypes MemberType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._EventInfo.MemberType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberType As MemberTypes" />
+      <MemberSignature Language="F#" Value="member this.MemberType : System.Reflection.MemberTypes" Usage="System.Runtime.InteropServices._EventInfo.MemberType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MemberTypes MemberType { System::Reflection::MemberTypes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -849,6 +921,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._EventInfo.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Runtime.InteropServices._EventInfo.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -877,6 +952,9 @@
       <MemberSignature Language="C#" Value="public Type ReflectedType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReflectedType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._EventInfo.ReflectedType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReflectedType As Type" />
+      <MemberSignature Language="F#" Value="member this.ReflectedType : Type" Usage="System.Runtime.InteropServices._EventInfo.ReflectedType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReflectedType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -905,6 +983,9 @@
       <MemberSignature Language="C#" Value="public void RemoveEventHandler (object target, Delegate handler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveEventHandler(object target, class System.Delegate handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.RemoveEventHandler(System.Object,System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveEventHandler (target As Object, handler As Delegate)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveEventHandler : obj * Delegate -&gt; unit" Usage="_EventInfo.RemoveEventHandler (target, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveEventHandler(System::Object ^ target, Delegate ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -938,6 +1019,9 @@
       <MemberSignature Language="C#" Value="public string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._EventInfo.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString () As String" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string" Usage="_EventInfo.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

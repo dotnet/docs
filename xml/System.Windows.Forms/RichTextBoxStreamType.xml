@@ -1,7 +1,10 @@
-<Type Name="RichTextBoxStreamType" FullName="System.Windows.Forms.RichTextBoxStreamType">
+﻿<Type Name="RichTextBoxStreamType" FullName="System.Windows.Forms.RichTextBoxStreamType">
   <TypeSignature Language="C#" Value="public enum RichTextBoxStreamType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RichTextBoxStreamType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RichTextBoxStreamType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RichTextBoxStreamType" />
+  <TypeSignature Language="F#" Value="type RichTextBoxStreamType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class RichTextBoxStreamType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="PlainText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxStreamType PlainText = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxStreamType.PlainText" />
+      <MemberSignature Language="VB.NET" Value="PlainText" />
+      <MemberSignature Language="F#" Value="PlainText = 1" Usage="System.Windows.Forms.RichTextBoxStreamType.PlainText" />
+      <MemberSignature Language="C++ CLI" Value="PlainText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -45,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RichTextBoxStreamType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A plain text stream that includes spaces in places of Object Linking and Embedding (OLE) objects.</summary>
       </Docs>
@@ -53,6 +60,9 @@
       <MemberSignature Language="C#" Value="RichNoOleObjs" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxStreamType RichNoOleObjs = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxStreamType.RichNoOleObjs" />
+      <MemberSignature Language="VB.NET" Value="RichNoOleObjs" />
+      <MemberSignature Language="F#" Value="RichNoOleObjs = 2" Usage="System.Windows.Forms.RichTextBoxStreamType.RichNoOleObjs" />
+      <MemberSignature Language="C++ CLI" Value="RichNoOleObjs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RichTextBoxStreamType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A Rich Text Format (RTF) stream with spaces in place of OLE objects. This value is only valid for use with the <see cref="M:System.Windows.Forms.RichTextBox.SaveFile(System.String)" /> method of the <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
       </Docs>
@@ -69,6 +80,9 @@
       <MemberSignature Language="C#" Value="RichText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxStreamType RichText = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxStreamType.RichText" />
+      <MemberSignature Language="VB.NET" Value="RichText" />
+      <MemberSignature Language="F#" Value="RichText = 0" Usage="System.Windows.Forms.RichTextBoxStreamType.RichText" />
+      <MemberSignature Language="C++ CLI" Value="RichText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RichTextBoxStreamType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A Rich Text Format (RTF) stream.</summary>
       </Docs>
@@ -85,6 +100,9 @@
       <MemberSignature Language="C#" Value="TextTextOleObjs" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxStreamType TextTextOleObjs = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxStreamType.TextTextOleObjs" />
+      <MemberSignature Language="VB.NET" Value="TextTextOleObjs" />
+      <MemberSignature Language="F#" Value="TextTextOleObjs = 3" Usage="System.Windows.Forms.RichTextBoxStreamType.TextTextOleObjs" />
+      <MemberSignature Language="C++ CLI" Value="TextTextOleObjs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -93,6 +111,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RichTextBoxStreamType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A plain text stream with a textual representation of OLE objects. This value is only valid for use with the <see cref="M:System.Windows.Forms.RichTextBox.SaveFile(System.String)" /> method of the <see cref="T:System.Windows.Forms.RichTextBox" /> control.</summary>
       </Docs>
@@ -101,6 +120,9 @@
       <MemberSignature Language="C#" Value="UnicodePlainText" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxStreamType UnicodePlainText = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxStreamType.UnicodePlainText" />
+      <MemberSignature Language="VB.NET" Value="UnicodePlainText" />
+      <MemberSignature Language="F#" Value="UnicodePlainText = 4" Usage="System.Windows.Forms.RichTextBoxStreamType.UnicodePlainText" />
+      <MemberSignature Language="C++ CLI" Value="UnicodePlainText" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +131,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RichTextBoxStreamType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A text stream that contains spaces in place of Object Linking and Embedding (OLE) objects. The text is encoded in Unicode.</summary>
       </Docs>

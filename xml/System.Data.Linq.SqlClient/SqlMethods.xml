@@ -1,7 +1,10 @@
-<Type Name="SqlMethods" FullName="System.Data.Linq.SqlClient.SqlMethods">
+﻿<Type Name="SqlMethods" FullName="System.Data.Linq.SqlClient.SqlMethods">
   <TypeSignature Language="C#" Value="public static class SqlMethods" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SqlMethods extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.SqlClient.SqlMethods" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlMethods" />
+  <TypeSignature Language="F#" Value="type SqlMethods = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlMethods abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffDay (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffDay(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffDay(System.DateTime,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffDay (startDate As DateTime, endDate As DateTime) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffDay : DateTime * DateTime -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffDay (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffDay(DateTime startDate, DateTime endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -67,6 +73,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffDay (DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffDay(valuetype System.DateTimeOffset startDate, valuetype System.DateTimeOffset endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffDay(System.DateTimeOffset,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffDay (startDate As DateTimeOffset, endDate As DateTimeOffset) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffDay : DateTimeOffset * DateTimeOffset -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffDay (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffDay(DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -98,6 +107,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffDay (Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffDay(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffDay(System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffDay (startDate As Nullable(Of DateTime), endDate As Nullable(Of DateTime)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffDay : Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffDay (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffDay(Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -129,6 +141,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffDay (Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffDay(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffDay(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffDay (startDate As Nullable(Of DateTimeOffset), endDate As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffDay : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffDay (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffDay(Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -177,6 +192,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffHour (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffHour(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffHour(System.DateTime,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffHour (startDate As DateTime, endDate As DateTime) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffHour : DateTime * DateTime -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffHour (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffHour(DateTime startDate, DateTime endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -208,6 +226,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffHour (DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffHour(valuetype System.DateTimeOffset startDate, valuetype System.DateTimeOffset endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffHour(System.DateTimeOffset,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffHour (startDate As DateTimeOffset, endDate As DateTimeOffset) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffHour : DateTimeOffset * DateTimeOffset -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffHour (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffHour(DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -239,6 +260,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffHour (Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffHour(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffHour(System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffHour (startDate As Nullable(Of DateTime), endDate As Nullable(Of DateTime)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffHour : Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffHour (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffHour(Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -270,6 +294,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffHour (Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffHour(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffHour(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffHour (startDate As Nullable(Of DateTimeOffset), endDate As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffHour : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffHour (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffHour(Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -318,6 +345,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffMicrosecond (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffMicrosecond(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond(System.DateTime,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMicrosecond (startDate As DateTime, endDate As DateTime) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffMicrosecond : DateTime * DateTime -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffMicrosecond(DateTime startDate, DateTime endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -349,6 +379,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffMicrosecond (DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffMicrosecond(valuetype System.DateTimeOffset startDate, valuetype System.DateTimeOffset endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond(System.DateTimeOffset,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMicrosecond (startDate As DateTimeOffset, endDate As DateTimeOffset) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffMicrosecond : DateTimeOffset * DateTimeOffset -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffMicrosecond(DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -380,6 +413,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffMicrosecond (Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffMicrosecond(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond(System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMicrosecond (startDate As Nullable(Of DateTime), endDate As Nullable(Of DateTime)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffMicrosecond : Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffMicrosecond(Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -411,6 +447,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffMicrosecond (Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffMicrosecond(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMicrosecond (startDate As Nullable(Of DateTimeOffset), endDate As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffMicrosecond : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMicrosecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffMicrosecond(Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -459,6 +498,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffMillisecond (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffMillisecond(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMillisecond(System.DateTime,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMillisecond (startDate As DateTime, endDate As DateTime) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffMillisecond : DateTime * DateTime -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMillisecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffMillisecond(DateTime startDate, DateTime endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -490,6 +532,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffMillisecond (DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffMillisecond(valuetype System.DateTimeOffset startDate, valuetype System.DateTimeOffset endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMillisecond(System.DateTimeOffset,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMillisecond (startDate As DateTimeOffset, endDate As DateTimeOffset) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffMillisecond : DateTimeOffset * DateTimeOffset -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMillisecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffMillisecond(DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -521,6 +566,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffMillisecond (Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffMillisecond(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMillisecond(System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMillisecond (startDate As Nullable(Of DateTime), endDate As Nullable(Of DateTime)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffMillisecond : Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMillisecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffMillisecond(Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -552,6 +600,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffMillisecond (Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffMillisecond(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMillisecond(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMillisecond (startDate As Nullable(Of DateTimeOffset), endDate As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffMillisecond : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMillisecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffMillisecond(Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -600,6 +651,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffMinute (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffMinute(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMinute(System.DateTime,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMinute (startDate As DateTime, endDate As DateTime) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffMinute : DateTime * DateTime -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMinute (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffMinute(DateTime startDate, DateTime endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -631,6 +685,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffMinute (DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffMinute(valuetype System.DateTimeOffset startDate, valuetype System.DateTimeOffset endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMinute(System.DateTimeOffset,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMinute (startDate As DateTimeOffset, endDate As DateTimeOffset) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffMinute : DateTimeOffset * DateTimeOffset -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMinute (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffMinute(DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -662,6 +719,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffMinute (Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffMinute(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMinute(System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMinute (startDate As Nullable(Of DateTime), endDate As Nullable(Of DateTime)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffMinute : Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMinute (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffMinute(Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -693,6 +753,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffMinute (Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffMinute(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMinute(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMinute (startDate As Nullable(Of DateTimeOffset), endDate As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffMinute : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMinute (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffMinute(Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -741,6 +804,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffMonth (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffMonth(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth(System.DateTime,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMonth (startDate As DateTime, endDate As DateTime) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffMonth : DateTime * DateTime -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffMonth(DateTime startDate, DateTime endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -772,6 +838,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffMonth (DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffMonth(valuetype System.DateTimeOffset startDate, valuetype System.DateTimeOffset endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth(System.DateTimeOffset,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMonth (startDate As DateTimeOffset, endDate As DateTimeOffset) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffMonth : DateTimeOffset * DateTimeOffset -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffMonth(DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -803,6 +872,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffMonth (Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffMonth(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth(System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMonth (startDate As Nullable(Of DateTime), endDate As Nullable(Of DateTime)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffMonth : Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffMonth(Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -834,6 +906,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffMonth (Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffMonth(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffMonth (startDate As Nullable(Of DateTimeOffset), endDate As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffMonth : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffMonth (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffMonth(Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -861,10 +936,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DateDiffNanosecond">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Counts the number of nanosecond boundaries between two specified dates.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DateDiffNanosecond">
       <MemberSignature Language="C#" Value="public static int DateDiffNanosecond (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffNanosecond(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffNanosecond(System.DateTime,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffNanosecond (startDate As DateTime, endDate As DateTime) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffNanosecond : DateTime * DateTime -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffNanosecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffNanosecond(DateTime startDate, DateTime endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -896,6 +983,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffNanosecond (DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffNanosecond(valuetype System.DateTimeOffset startDate, valuetype System.DateTimeOffset endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffNanosecond(System.DateTimeOffset,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffNanosecond (startDate As DateTimeOffset, endDate As DateTimeOffset) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffNanosecond : DateTimeOffset * DateTimeOffset -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffNanosecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffNanosecond(DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -927,6 +1017,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffNanosecond (Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffNanosecond(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffNanosecond(System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffNanosecond (startDate As Nullable(Of DateTime), endDate As Nullable(Of DateTime)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffNanosecond : Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffNanosecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffNanosecond(Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -958,6 +1051,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffNanosecond (Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffNanosecond(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffNanosecond(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffNanosecond (startDate As Nullable(Of DateTimeOffset), endDate As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffNanosecond : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffNanosecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffNanosecond(Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -1006,6 +1102,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffSecond (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffSecond(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffSecond(System.DateTime,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffSecond (startDate As DateTime, endDate As DateTime) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffSecond : DateTime * DateTime -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffSecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffSecond(DateTime startDate, DateTime endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -1037,6 +1136,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffSecond (DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffSecond(valuetype System.DateTimeOffset startDate, valuetype System.DateTimeOffset endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffSecond(System.DateTimeOffset,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffSecond (startDate As DateTimeOffset, endDate As DateTimeOffset) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffSecond : DateTimeOffset * DateTimeOffset -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffSecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffSecond(DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -1068,6 +1170,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffSecond (Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffSecond(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffSecond(System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffSecond (startDate As Nullable(Of DateTime), endDate As Nullable(Of DateTime)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffSecond : Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffSecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffSecond(Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -1099,6 +1204,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffSecond (Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffSecond(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffSecond(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffSecond (startDate As Nullable(Of DateTimeOffset), endDate As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffSecond : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffSecond (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffSecond(Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -1147,6 +1255,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffYear (DateTime startDate, DateTime endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffYear(valuetype System.DateTime startDate, valuetype System.DateTime endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffYear(System.DateTime,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffYear (startDate As DateTime, endDate As DateTime) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffYear : DateTime * DateTime -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffYear (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffYear(DateTime startDate, DateTime endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -1178,6 +1289,9 @@
       <MemberSignature Language="C#" Value="public static int DateDiffYear (DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 DateDiffYear(valuetype System.DateTimeOffset startDate, valuetype System.DateTimeOffset endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffYear(System.DateTimeOffset,System.DateTimeOffset)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffYear (startDate As DateTimeOffset, endDate As DateTimeOffset) As Integer" />
+      <MemberSignature Language="F#" Value="static member DateDiffYear : DateTimeOffset * DateTimeOffset -&gt; int" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffYear (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int DateDiffYear(DateTimeOffset startDate, DateTimeOffset endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -1209,6 +1323,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffYear (Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffYear(valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffYear(System.Nullable{System.DateTime},System.Nullable{System.DateTime})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffYear (startDate As Nullable(Of DateTime), endDate As Nullable(Of DateTime)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffYear : Nullable&lt;DateTime&gt; * Nullable&lt;DateTime&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffYear (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffYear(Nullable&lt;DateTime&gt; startDate, Nullable&lt;DateTime&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -1240,6 +1357,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; DateDiffYear (Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; DateDiffYear(valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; startDate, valuetype System.Nullable`1&lt;valuetype System.DateTimeOffset&gt; endDate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.DateDiffYear(System.Nullable{System.DateTimeOffset},System.Nullable{System.DateTimeOffset})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DateDiffYear (startDate As Nullable(Of DateTimeOffset), endDate As Nullable(Of DateTimeOffset)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member DateDiffYear : Nullable&lt;DateTimeOffset&gt; * Nullable&lt;DateTimeOffset&gt; -&gt; Nullable&lt;int&gt;" Usage="System.Data.Linq.SqlClient.SqlMethods.DateDiffYear (startDate, endDate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; DateDiffYear(Nullable&lt;DateTimeOffset&gt; startDate, Nullable&lt;DateTimeOffset&gt; endDate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -1288,6 +1408,9 @@
       <MemberSignature Language="C#" Value="public static bool Like (string matchExpression, string pattern);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Like(string matchExpression, string pattern) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.Like(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Like (matchExpression As String, pattern As String) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Like : string * string -&gt; bool" Usage="System.Data.Linq.SqlClient.SqlMethods.Like (matchExpression, pattern)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Like(System::String ^ matchExpression, System::String ^ pattern);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -1320,6 +1443,9 @@
       <MemberSignature Language="C#" Value="public static bool Like (string matchExpression, string pattern, char escapeCharacter);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Like(string matchExpression, string pattern, char escapeCharacter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.SqlClient.SqlMethods.Like(System.String,System.String,System.Char)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Like (matchExpression As String, pattern As String, escapeCharacter As Char) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Like : string * string * char -&gt; bool" Usage="System.Data.Linq.SqlClient.SqlMethods.Like (matchExpression, pattern, escapeCharacter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Like(System::String ^ matchExpression, System::String ^ pattern, char escapeCharacter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -1350,14 +1476,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="DateDiffNanosecond">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Counts the number of nanosecond boundaries between two specified dates.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="UnicodeCategory" FullName="System.Globalization.UnicodeCategory">
+﻿<Type Name="UnicodeCategory" FullName="System.Globalization.UnicodeCategory">
   <TypeSignature Language="C#" Value="public enum UnicodeCategory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed UnicodeCategory extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.UnicodeCategory" />
+  <TypeSignature Language="VB.NET" Value="Public Enum UnicodeCategory" />
+  <TypeSignature Language="F#" Value="type UnicodeCategory = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class UnicodeCategory" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +74,9 @@
       <MemberSignature Language="C#" Value="ClosePunctuation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory ClosePunctuation = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.ClosePunctuation" />
+      <MemberSignature Language="VB.NET" Value="ClosePunctuation" />
+      <MemberSignature Language="F#" Value="ClosePunctuation = 21" Usage="System.Globalization.UnicodeCategory.ClosePunctuation" />
+      <MemberSignature Language="C++ CLI" Value="ClosePunctuation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -93,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>Closing character of one of the paired punctuation marks, such as parentheses, square brackets, and braces. Signified by the Unicode designation "Pe" (punctuation, close). The value is 21.</summary>
       </Docs>
@@ -101,6 +108,9 @@
       <MemberSignature Language="C#" Value="ConnectorPunctuation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory ConnectorPunctuation = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.ConnectorPunctuation" />
+      <MemberSignature Language="VB.NET" Value="ConnectorPunctuation" />
+      <MemberSignature Language="F#" Value="ConnectorPunctuation = 18" Usage="System.Globalization.UnicodeCategory.ConnectorPunctuation" />
+      <MemberSignature Language="C++ CLI" Value="ConnectorPunctuation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -123,6 +133,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>Connector punctuation character that connects two characters. Signified by the Unicode designation "Pc" (punctuation, connector). The value is 18.</summary>
       </Docs>
@@ -131,6 +142,9 @@
       <MemberSignature Language="C#" Value="Control" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory Control = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.Control" />
+      <MemberSignature Language="VB.NET" Value="Control" />
+      <MemberSignature Language="F#" Value="Control = 14" Usage="System.Globalization.UnicodeCategory.Control" />
+      <MemberSignature Language="C++ CLI" Value="Control" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -153,6 +167,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>Control code character, with a Unicode value of U+007F or in the range U+0000 through U+001F or U+0080 through U+009F. Signified by the Unicode designation "Cc" (other, control). The value is 14.</summary>
       </Docs>
@@ -161,6 +176,9 @@
       <MemberSignature Language="C#" Value="CurrencySymbol" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory CurrencySymbol = int32(26)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.CurrencySymbol" />
+      <MemberSignature Language="VB.NET" Value="CurrencySymbol" />
+      <MemberSignature Language="F#" Value="CurrencySymbol = 26" Usage="System.Globalization.UnicodeCategory.CurrencySymbol" />
+      <MemberSignature Language="C++ CLI" Value="CurrencySymbol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -183,6 +201,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>Currency symbol character. Signified by the Unicode designation "Sc" (symbol, currency). The value is 26.</summary>
       </Docs>
@@ -191,6 +210,9 @@
       <MemberSignature Language="C#" Value="DashPunctuation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory DashPunctuation = int32(19)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.DashPunctuation" />
+      <MemberSignature Language="VB.NET" Value="DashPunctuation" />
+      <MemberSignature Language="F#" Value="DashPunctuation = 19" Usage="System.Globalization.UnicodeCategory.DashPunctuation" />
+      <MemberSignature Language="C++ CLI" Value="DashPunctuation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -213,6 +235,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>Dash or hyphen character. Signified by the Unicode designation "Pd" (punctuation, dash). The value is 19.</summary>
       </Docs>
@@ -221,6 +244,9 @@
       <MemberSignature Language="C#" Value="DecimalDigitNumber" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory DecimalDigitNumber = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.DecimalDigitNumber" />
+      <MemberSignature Language="VB.NET" Value="DecimalDigitNumber" />
+      <MemberSignature Language="F#" Value="DecimalDigitNumber = 8" Usage="System.Globalization.UnicodeCategory.DecimalDigitNumber" />
+      <MemberSignature Language="C++ CLI" Value="DecimalDigitNumber" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -243,6 +269,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Decimal digit character, that is, a character in the range 0 through 9. Signified by the Unicode designation "Nd" (number, decimal digit). The value is 8.</summary>
       </Docs>
@@ -251,6 +278,9 @@
       <MemberSignature Language="C#" Value="EnclosingMark" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory EnclosingMark = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.EnclosingMark" />
+      <MemberSignature Language="VB.NET" Value="EnclosingMark" />
+      <MemberSignature Language="F#" Value="EnclosingMark = 7" Usage="System.Globalization.UnicodeCategory.EnclosingMark" />
+      <MemberSignature Language="C++ CLI" Value="EnclosingMark" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -273,6 +303,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Enclosing mark character, which is a nonspacing combining character that surrounds all previous characters up to and including a base character. Signified by the Unicode designation "Me" (mark, enclosing). The value is 7.</summary>
       </Docs>
@@ -281,6 +312,9 @@
       <MemberSignature Language="C#" Value="FinalQuotePunctuation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory FinalQuotePunctuation = int32(23)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.FinalQuotePunctuation" />
+      <MemberSignature Language="VB.NET" Value="FinalQuotePunctuation" />
+      <MemberSignature Language="F#" Value="FinalQuotePunctuation = 23" Usage="System.Globalization.UnicodeCategory.FinalQuotePunctuation" />
+      <MemberSignature Language="C++ CLI" Value="FinalQuotePunctuation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -303,6 +337,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>Closing or final quotation mark character. Signified by the Unicode designation "Pf" (punctuation, final quote). The value is 23.</summary>
       </Docs>
@@ -311,6 +346,9 @@
       <MemberSignature Language="C#" Value="Format" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory Format = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.Format" />
+      <MemberSignature Language="VB.NET" Value="Format" />
+      <MemberSignature Language="F#" Value="Format = 15" Usage="System.Globalization.UnicodeCategory.Format" />
+      <MemberSignature Language="C++ CLI" Value="Format" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -333,6 +371,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>Format character that affects the layout of text or the operation of text processes, but is not normally rendered. Signified by the Unicode designation "Cf" (other, format). The value is 15.</summary>
       </Docs>
@@ -341,6 +380,9 @@
       <MemberSignature Language="C#" Value="InitialQuotePunctuation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory InitialQuotePunctuation = int32(22)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.InitialQuotePunctuation" />
+      <MemberSignature Language="VB.NET" Value="InitialQuotePunctuation" />
+      <MemberSignature Language="F#" Value="InitialQuotePunctuation = 22" Usage="System.Globalization.UnicodeCategory.InitialQuotePunctuation" />
+      <MemberSignature Language="C++ CLI" Value="InitialQuotePunctuation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -363,6 +405,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>Opening or initial quotation mark character. Signified by the Unicode designation "Pi" (punctuation, initial quote). The value is 22.</summary>
       </Docs>
@@ -371,6 +414,9 @@
       <MemberSignature Language="C#" Value="LetterNumber" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory LetterNumber = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.LetterNumber" />
+      <MemberSignature Language="VB.NET" Value="LetterNumber" />
+      <MemberSignature Language="F#" Value="LetterNumber = 9" Usage="System.Globalization.UnicodeCategory.LetterNumber" />
+      <MemberSignature Language="C++ CLI" Value="LetterNumber" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -393,6 +439,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Number represented by a letter, instead of a decimal digit, for example, the Roman numeral for five, which is "V". The indicator is signified by the Unicode designation "Nl" (number, letter). The value is 9.</summary>
       </Docs>
@@ -401,6 +448,9 @@
       <MemberSignature Language="C#" Value="LineSeparator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory LineSeparator = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.LineSeparator" />
+      <MemberSignature Language="VB.NET" Value="LineSeparator" />
+      <MemberSignature Language="F#" Value="LineSeparator = 12" Usage="System.Globalization.UnicodeCategory.LineSeparator" />
+      <MemberSignature Language="C++ CLI" Value="LineSeparator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -423,6 +473,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>Character that is used to separate lines of text. Signified by the Unicode designation "Zl" (separator, line). The value is 12.</summary>
       </Docs>
@@ -431,6 +482,9 @@
       <MemberSignature Language="C#" Value="LowercaseLetter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory LowercaseLetter = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.LowercaseLetter" />
+      <MemberSignature Language="VB.NET" Value="LowercaseLetter" />
+      <MemberSignature Language="F#" Value="LowercaseLetter = 1" Usage="System.Globalization.UnicodeCategory.LowercaseLetter" />
+      <MemberSignature Language="C++ CLI" Value="LowercaseLetter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -453,6 +507,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Lowercase letter. Signified by the Unicode designation "Ll" (letter, lowercase). The value is 1.</summary>
       </Docs>
@@ -461,6 +516,9 @@
       <MemberSignature Language="C#" Value="MathSymbol" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory MathSymbol = int32(25)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.MathSymbol" />
+      <MemberSignature Language="VB.NET" Value="MathSymbol" />
+      <MemberSignature Language="F#" Value="MathSymbol = 25" Usage="System.Globalization.UnicodeCategory.MathSymbol" />
+      <MemberSignature Language="C++ CLI" Value="MathSymbol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -483,6 +541,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>Mathematical symbol character, such as "+" or "= ". Signified by the Unicode designation "Sm" (symbol, math). The value is 25.</summary>
       </Docs>
@@ -491,6 +550,9 @@
       <MemberSignature Language="C#" Value="ModifierLetter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory ModifierLetter = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.ModifierLetter" />
+      <MemberSignature Language="VB.NET" Value="ModifierLetter" />
+      <MemberSignature Language="F#" Value="ModifierLetter = 3" Usage="System.Globalization.UnicodeCategory.ModifierLetter" />
+      <MemberSignature Language="C++ CLI" Value="ModifierLetter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -513,6 +575,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Modifier letter character, which is free-standing spacing character that indicates modifications of a preceding letter. Signified by the Unicode designation "Lm" (letter, modifier). The value is 3.</summary>
       </Docs>
@@ -521,6 +584,9 @@
       <MemberSignature Language="C#" Value="ModifierSymbol" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory ModifierSymbol = int32(27)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.ModifierSymbol" />
+      <MemberSignature Language="VB.NET" Value="ModifierSymbol" />
+      <MemberSignature Language="F#" Value="ModifierSymbol = 27" Usage="System.Globalization.UnicodeCategory.ModifierSymbol" />
+      <MemberSignature Language="C++ CLI" Value="ModifierSymbol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -543,6 +609,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>27</MemberValue>
       <Docs>
         <summary>Modifier symbol character, which indicates modifications of surrounding characters. For example, the fraction slash indicates that the number to the left is the numerator and the number to the right is the denominator. The indicator is signified by the Unicode designation "Sk" (symbol, modifier). The value is 27.</summary>
       </Docs>
@@ -551,6 +618,9 @@
       <MemberSignature Language="C#" Value="NonSpacingMark" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory NonSpacingMark = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.NonSpacingMark" />
+      <MemberSignature Language="VB.NET" Value="NonSpacingMark" />
+      <MemberSignature Language="F#" Value="NonSpacingMark = 5" Usage="System.Globalization.UnicodeCategory.NonSpacingMark" />
+      <MemberSignature Language="C++ CLI" Value="NonSpacingMark" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -573,6 +643,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Nonspacing character that indicates modifications of a base character. Signified by the Unicode designation "Mn" (mark, nonspacing). The value is 5.</summary>
       </Docs>
@@ -581,6 +652,9 @@
       <MemberSignature Language="C#" Value="OpenPunctuation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory OpenPunctuation = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.OpenPunctuation" />
+      <MemberSignature Language="VB.NET" Value="OpenPunctuation" />
+      <MemberSignature Language="F#" Value="OpenPunctuation = 20" Usage="System.Globalization.UnicodeCategory.OpenPunctuation" />
+      <MemberSignature Language="C++ CLI" Value="OpenPunctuation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -603,6 +677,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>Opening character of one of the paired punctuation marks, such as parentheses, square brackets, and braces. Signified by the Unicode designation "Ps" (punctuation, open). The value is 20.</summary>
       </Docs>
@@ -611,6 +686,9 @@
       <MemberSignature Language="C#" Value="OtherLetter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory OtherLetter = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.OtherLetter" />
+      <MemberSignature Language="VB.NET" Value="OtherLetter" />
+      <MemberSignature Language="F#" Value="OtherLetter = 4" Usage="System.Globalization.UnicodeCategory.OtherLetter" />
+      <MemberSignature Language="C++ CLI" Value="OtherLetter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -633,6 +711,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Letter that is not an uppercase letter, a lowercase letter, a titlecase letter, or a modifier letter. Signified by the Unicode designation "Lo" (letter, other). The value is 4.</summary>
       </Docs>
@@ -641,6 +720,9 @@
       <MemberSignature Language="C#" Value="OtherNotAssigned" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory OtherNotAssigned = int32(29)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.OtherNotAssigned" />
+      <MemberSignature Language="VB.NET" Value="OtherNotAssigned" />
+      <MemberSignature Language="F#" Value="OtherNotAssigned = 29" Usage="System.Globalization.UnicodeCategory.OtherNotAssigned" />
+      <MemberSignature Language="C++ CLI" Value="OtherNotAssigned" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -663,6 +745,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>29</MemberValue>
       <Docs>
         <summary>Character that is not assigned to any Unicode category. Signified by the Unicode designation "Cn" (other, not assigned). The value is 29.</summary>
       </Docs>
@@ -671,6 +754,9 @@
       <MemberSignature Language="C#" Value="OtherNumber" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory OtherNumber = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.OtherNumber" />
+      <MemberSignature Language="VB.NET" Value="OtherNumber" />
+      <MemberSignature Language="F#" Value="OtherNumber = 10" Usage="System.Globalization.UnicodeCategory.OtherNumber" />
+      <MemberSignature Language="C++ CLI" Value="OtherNumber" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -693,6 +779,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>Number that is neither a decimal digit nor a letter number, for example, the fraction 1/2. The indicator is signified by the Unicode designation "No" (number, other). The value is 10.</summary>
       </Docs>
@@ -701,6 +788,9 @@
       <MemberSignature Language="C#" Value="OtherPunctuation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory OtherPunctuation = int32(24)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.OtherPunctuation" />
+      <MemberSignature Language="VB.NET" Value="OtherPunctuation" />
+      <MemberSignature Language="F#" Value="OtherPunctuation = 24" Usage="System.Globalization.UnicodeCategory.OtherPunctuation" />
+      <MemberSignature Language="C++ CLI" Value="OtherPunctuation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -723,6 +813,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>Punctuation character that is not a connector, a dash, open punctuation, close punctuation, an initial quote, or a final quote. Signified by the Unicode designation "Po" (punctuation, other). The value is 24.</summary>
       </Docs>
@@ -731,6 +822,9 @@
       <MemberSignature Language="C#" Value="OtherSymbol" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory OtherSymbol = int32(28)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.OtherSymbol" />
+      <MemberSignature Language="VB.NET" Value="OtherSymbol" />
+      <MemberSignature Language="F#" Value="OtherSymbol = 28" Usage="System.Globalization.UnicodeCategory.OtherSymbol" />
+      <MemberSignature Language="C++ CLI" Value="OtherSymbol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -753,6 +847,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>28</MemberValue>
       <Docs>
         <summary>Symbol character that is not a mathematical symbol, a currency symbol or a modifier symbol. Signified by the Unicode designation "So" (symbol, other). The value is 28.</summary>
       </Docs>
@@ -761,6 +856,9 @@
       <MemberSignature Language="C#" Value="ParagraphSeparator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory ParagraphSeparator = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.ParagraphSeparator" />
+      <MemberSignature Language="VB.NET" Value="ParagraphSeparator" />
+      <MemberSignature Language="F#" Value="ParagraphSeparator = 13" Usage="System.Globalization.UnicodeCategory.ParagraphSeparator" />
+      <MemberSignature Language="C++ CLI" Value="ParagraphSeparator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -783,6 +881,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>Character used to separate paragraphs. Signified by the Unicode designation "Zp" (separator, paragraph). The value is 13.</summary>
       </Docs>
@@ -791,6 +890,9 @@
       <MemberSignature Language="C#" Value="PrivateUse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory PrivateUse = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.PrivateUse" />
+      <MemberSignature Language="VB.NET" Value="PrivateUse" />
+      <MemberSignature Language="F#" Value="PrivateUse = 17" Usage="System.Globalization.UnicodeCategory.PrivateUse" />
+      <MemberSignature Language="C++ CLI" Value="PrivateUse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -813,6 +915,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>Private-use character, with a Unicode value in the range U+E000 through U+F8FF. Signified by the Unicode designation "Co" (other, private use). The value is 17.</summary>
       </Docs>
@@ -821,6 +924,9 @@
       <MemberSignature Language="C#" Value="SpaceSeparator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory SpaceSeparator = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.SpaceSeparator" />
+      <MemberSignature Language="VB.NET" Value="SpaceSeparator" />
+      <MemberSignature Language="F#" Value="SpaceSeparator = 11" Usage="System.Globalization.UnicodeCategory.SpaceSeparator" />
+      <MemberSignature Language="C++ CLI" Value="SpaceSeparator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -843,6 +949,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>Space character, which has no glyph but is not a control or format character. Signified by the Unicode designation "Zs" (separator, space). The value is 11.</summary>
       </Docs>
@@ -851,6 +958,9 @@
       <MemberSignature Language="C#" Value="SpacingCombiningMark" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory SpacingCombiningMark = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.SpacingCombiningMark" />
+      <MemberSignature Language="VB.NET" Value="SpacingCombiningMark" />
+      <MemberSignature Language="F#" Value="SpacingCombiningMark = 6" Usage="System.Globalization.UnicodeCategory.SpacingCombiningMark" />
+      <MemberSignature Language="C++ CLI" Value="SpacingCombiningMark" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -873,6 +983,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Spacing character that indicates modifications of a base character and affects the width of the glyph for that base character. Signified by the Unicode designation "Mc" (mark, spacing combining). The value is 6.</summary>
       </Docs>
@@ -881,6 +992,9 @@
       <MemberSignature Language="C#" Value="Surrogate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory Surrogate = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.Surrogate" />
+      <MemberSignature Language="VB.NET" Value="Surrogate" />
+      <MemberSignature Language="F#" Value="Surrogate = 16" Usage="System.Globalization.UnicodeCategory.Surrogate" />
+      <MemberSignature Language="C++ CLI" Value="Surrogate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -903,6 +1017,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>High surrogate or a low surrogate character. Surrogate code values are in the range U+D800 through U+DFFF. Signified by the Unicode designation "Cs" (other, surrogate). The value is 16.</summary>
       </Docs>
@@ -911,6 +1026,9 @@
       <MemberSignature Language="C#" Value="TitlecaseLetter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory TitlecaseLetter = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.TitlecaseLetter" />
+      <MemberSignature Language="VB.NET" Value="TitlecaseLetter" />
+      <MemberSignature Language="F#" Value="TitlecaseLetter = 2" Usage="System.Globalization.UnicodeCategory.TitlecaseLetter" />
+      <MemberSignature Language="C++ CLI" Value="TitlecaseLetter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -933,6 +1051,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Titlecase letter. Signified by the Unicode designation "Lt" (letter, titlecase). The value is 2.</summary>
       </Docs>
@@ -941,6 +1060,9 @@
       <MemberSignature Language="C#" Value="UppercaseLetter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Globalization.UnicodeCategory UppercaseLetter = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Globalization.UnicodeCategory.UppercaseLetter" />
+      <MemberSignature Language="VB.NET" Value="UppercaseLetter" />
+      <MemberSignature Language="F#" Value="UppercaseLetter = 0" Usage="System.Globalization.UnicodeCategory.UppercaseLetter" />
+      <MemberSignature Language="C++ CLI" Value="UppercaseLetter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -963,6 +1085,7 @@
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Uppercase letter. Signified by the Unicode designation "Lu" (letter, uppercase). The value is 0.</summary>
       </Docs>

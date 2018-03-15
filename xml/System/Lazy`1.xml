@@ -1,7 +1,10 @@
-<Type Name="Lazy&lt;T&gt;" FullName="System.Lazy&lt;T&gt;">
+﻿<Type Name="Lazy&lt;T&gt;" FullName="System.Lazy&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class Lazy&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Lazy`1&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Lazy`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class Lazy(Of T)" />
+  <TypeSignature Language="F#" Value="type Lazy&lt;'T&gt; = class" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Lazy" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -130,10 +133,25 @@
     <altmember cref="T:System.Threading.LazyThreadSafetyMode" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Lazy`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Lazy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -196,6 +214,9 @@
       <MemberSignature Language="C#" Value="public Lazy (bool isThreadSafe);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isThreadSafe) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isThreadSafe As Boolean)" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : bool -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; isThreadSafe" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(bool isThreadSafe);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -253,6 +274,9 @@
       <MemberSignature Language="C#" Value="public Lazy (Func&lt;T&gt; valueFactory);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;!T&gt; valueFactory) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Func{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T))" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : Func&lt;'T&gt; -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; valueFactory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(Func&lt;T&gt; ^ valueFactory);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -325,6 +349,9 @@
       <MemberSignature Language="C#" Value="public Lazy (System.Threading.LazyThreadSafetyMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Threading.LazyThreadSafetyMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Threading.LazyThreadSafetyMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mode As LazyThreadSafetyMode)" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : System.Threading.LazyThreadSafetyMode -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(System::Threading::LazyThreadSafetyMode mode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -399,6 +426,9 @@
       <MemberSignature Language="C#" Value="public Lazy (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As T)" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : 'T -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(T value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -417,6 +447,9 @@
       <MemberSignature Language="C#" Value="public Lazy (Func&lt;T&gt; valueFactory, bool isThreadSafe);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;!T&gt; valueFactory, bool isThreadSafe) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Func{`0},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T), isThreadSafe As Boolean)" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : Func&lt;'T&gt; * bool -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; (valueFactory, isThreadSafe)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(Func&lt;T&gt; ^ valueFactory, bool isThreadSafe);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -495,6 +528,9 @@
       <MemberSignature Language="C#" Value="public Lazy (Func&lt;T&gt; valueFactory, System.Threading.LazyThreadSafetyMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`1&lt;!T&gt; valueFactory, valuetype System.Threading.LazyThreadSafetyMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.#ctor(System.Func{`0},System.Threading.LazyThreadSafetyMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (valueFactory As Func(Of T), mode As LazyThreadSafetyMode)" />
+      <MemberSignature Language="F#" Value="new Lazy&lt;'T&gt; : Func&lt;'T&gt; * System.Threading.LazyThreadSafetyMode -&gt; Lazy&lt;'T&gt;" Usage="new System.Lazy&lt;'T&gt; (valueFactory, mode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Lazy(Func&lt;T&gt; ^ valueFactory, System::Threading::LazyThreadSafetyMode mode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -584,6 +620,9 @@
       <MemberSignature Language="C#" Value="public bool IsValueCreated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsValueCreated" />
       <MemberSignature Language="DocId" Value="P:System.Lazy`1.IsValueCreated" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValueCreated As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsValueCreated : bool" Usage="System.Lazy&lt;'T&gt;.IsValueCreated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValueCreated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -628,6 +667,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Lazy`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="lazy.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -670,6 +712,9 @@
       <MemberSignature Language="C#" Value="public T Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Value" />
       <MemberSignature Language="DocId" Value="P:System.Lazy`1.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As T" />
+      <MemberSignature Language="F#" Value="member this.Value : 'T" Usage="System.Lazy&lt;'T&gt;.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T Value { T get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -714,18 +759,5 @@
         <exception cref="T:System.InvalidOperationException">The initialization function tries to access <see cref="P:System.Lazy`1.Value" /> on this instance.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Lazy`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

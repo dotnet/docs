@@ -1,7 +1,10 @@
-<Type Name="EventLogTraceListener" FullName="System.Diagnostics.EventLogTraceListener">
+﻿<Type Name="EventLogTraceListener" FullName="System.Diagnostics.EventLogTraceListener">
   <TypeSignature Language="C#" Value="public sealed class EventLogTraceListener : System.Diagnostics.TraceListener" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventLogTraceListener extends System.Diagnostics.TraceListener" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogTraceListener" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventLogTraceListener&#xA;Inherits TraceListener" />
+  <TypeSignature Language="F#" Value="type EventLogTraceListener = class&#xA;    inherit TraceListener" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventLogTraceListener sealed : System::Diagnostics::TraceListener" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,10 +75,21 @@
     <altmember cref="T:System.Diagnostics.Trace" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventLogTraceListener" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventLogTraceListener ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogTraceListener();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -99,6 +113,8 @@
       <MemberSignature Language="C#" Value="public EventLogTraceListener (System.Diagnostics.EventLog eventLog);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Diagnostics.EventLog eventLog) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.#ctor(System.Diagnostics.EventLog)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.EventLogTraceListener : System.Diagnostics.EventLog -&gt; System.Diagnostics.EventLogTraceListener" Usage="new System.Diagnostics.EventLogTraceListener eventLog" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogTraceListener(System::Diagnostics::EventLog ^ eventLog);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +141,9 @@
       <MemberSignature Language="C#" Value="public EventLogTraceListener (string source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (source As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.EventLogTraceListener : string -&gt; System.Diagnostics.EventLogTraceListener" Usage="new System.Diagnostics.EventLogTraceListener source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventLogTraceListener(System::String ^ source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,6 +170,9 @@
       <MemberSignature Language="C#" Value="public override void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="eventLogTraceListener.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -177,6 +199,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="eventLogTraceListener.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -198,6 +223,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.EventLog EventLog { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.EventLog EventLog" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogTraceListener.EventLog" />
+      <MemberSignature Language="VB.NET" Value="Public Property EventLog As EventLog" />
+      <MemberSignature Language="F#" Value="member this.EventLog : System.Diagnostics.EventLog with get, set" Usage="System.Diagnostics.EventLogTraceListener.EventLog" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::EventLog ^ EventLog { System::Diagnostics::EventLog ^ get(); void set(System::Diagnostics::EventLog ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -224,6 +252,9 @@
       <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventLogTraceListener.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Diagnostics.EventLogTraceListener.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -253,10 +284,27 @@
         <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceData">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace data to the event log.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceData">
-      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object data);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object data) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
+      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType severity, int id, object data);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType severity, int32 id, object data) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, severity As TraceEventType, id As Integer, data As Object)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="override this.TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj -&gt; unit" Usage="eventLogTraceListener.TraceData (eventCache, source, eventType, id, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType severity, int id, System::Object ^ data);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object data);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object data) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, data As Object)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::Object ^ data);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -271,15 +319,17 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="eventCache" Type="System.Diagnostics.TraceEventCache" />
-        <Parameter Name="source" Type="System.String" />
-        <Parameter Name="severity" Type="System.Diagnostics.TraceEventType" />
-        <Parameter Name="id" Type="System.Int32" />
-        <Parameter Name="data" Type="System.Object" />
+        <Parameter Name="eventCache" Type="System.Diagnostics.TraceEventCache" Index="0" />
+        <Parameter Name="source" Type="System.String" Index="1" />
+        <Parameter Name="severity" Type="System.Diagnostics.TraceEventType" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="eventType" Type="System.Diagnostics.TraceEventType" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="id" Type="System.Int32" Index="3" />
+        <Parameter Name="data" Type="System.Object" Index="4" />
       </Parameters>
       <Docs>
         <param name="eventCache">An object that contains the current process ID, thread ID, and stack trace information.</param>
         <param name="source">A name used to identify the output; typically the name of the application that generated the trace event.</param>
+        <param name="severity">To be added.</param>
         <param name="eventType">To be added.</param>
         <param name="id">A numeric identifier for the event. The combination of <c>source</c> and <c>id</c> uniquely identifies an event.</param>
         <param name="data">A data object to write to the output file or stream.</param>
@@ -310,9 +360,17 @@
       </Docs>
     </Member>
     <Member MemberName="TraceData">
-      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, params object[] data);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object[] data) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
+      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType severity, int id, params object[] data);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType severity, int32 id, object[] data) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, severity As TraceEventType, id As Integer, ParamArray data As Object())" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="override this.TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj[] -&gt; unit" Usage="eventLogTraceListener.TraceData (eventCache, source, eventType, id, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType severity, int id, ... cli::array &lt;System::Object ^&gt; ^ data);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, params object[] data);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object[] data) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, ParamArray data As Object())" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, ... cli::array &lt;System::Object ^&gt; ^ data);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -327,11 +385,12 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="eventCache" Type="System.Diagnostics.TraceEventCache" />
-        <Parameter Name="source" Type="System.String" />
-        <Parameter Name="severity" Type="System.Diagnostics.TraceEventType" />
-        <Parameter Name="id" Type="System.Int32" />
-        <Parameter Name="data" Type="System.Object[]">
+        <Parameter Name="eventCache" Type="System.Diagnostics.TraceEventCache" Index="0" />
+        <Parameter Name="source" Type="System.String" Index="1" />
+        <Parameter Name="severity" Type="System.Diagnostics.TraceEventType" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="eventType" Type="System.Diagnostics.TraceEventType" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="id" Type="System.Int32" Index="3" />
+        <Parameter Name="data" Type="System.Object[]" Index="4">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -342,6 +401,7 @@
       <Docs>
         <param name="eventCache">An object that contains the current process ID, thread ID, and stack trace information.</param>
         <param name="source">A name used to identify the output; typically the name of the application that generated the trace event.</param>
+        <param name="severity">To be added.</param>
         <param name="eventType">To be added.</param>
         <param name="id">A numeric identifier for the event. The combination of <c>source</c> and <c>id</c> uniquely identifies an event.</param>
         <param name="data">An array of data objects.</param>
@@ -373,10 +433,27 @@
  The log entry string exceeds 32,766 characters.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceEvent">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes event trace information to the event log.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceEvent">
-      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string message);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string message) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
+      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType severity, int id, string message);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType severity, int32 id, string message) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, severity As TraceEventType, id As Integer, message As String)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string -&gt; unit" Usage="eventLogTraceListener.TraceEvent (eventCache, source, eventType, id, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType severity, int id, System::String ^ message);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string message);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string message) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, message As String)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ message);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -391,15 +468,17 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="eventCache" Type="System.Diagnostics.TraceEventCache" />
-        <Parameter Name="source" Type="System.String" />
-        <Parameter Name="severity" Type="System.Diagnostics.TraceEventType" />
-        <Parameter Name="id" Type="System.Int32" />
-        <Parameter Name="message" Type="System.String" />
+        <Parameter Name="eventCache" Type="System.Diagnostics.TraceEventCache" Index="0" />
+        <Parameter Name="source" Type="System.String" Index="1" />
+        <Parameter Name="severity" Type="System.Diagnostics.TraceEventType" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="eventType" Type="System.Diagnostics.TraceEventType" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="id" Type="System.Int32" Index="3" />
+        <Parameter Name="message" Type="System.String" Index="4" />
       </Parameters>
       <Docs>
         <param name="eventCache">An object that contains the current process ID, thread ID, and stack trace information.</param>
         <param name="source">A name used to identify the output; typically the name of the application that generated the trace event.</param>
+        <param name="severity">To be added.</param>
         <param name="eventType">To be added.</param>
         <param name="id">A numeric identifier for the event. The combination of <c>source</c> and <c>id</c> uniquely identifies an event.</param>
         <param name="message">The trace message.</param>
@@ -430,9 +509,17 @@
       </Docs>
     </Member>
     <Member MemberName="TraceEvent">
-      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string format, params object[] args);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string format, object[] args) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
+      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType severity, int id, string format, params object[] args);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType severity, int32 id, string format, object[] args) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, severity As TraceEventType, id As Integer, format As String, ParamArray args As Object())" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string * obj[] -&gt; unit" Usage="eventLogTraceListener.TraceEvent (eventCache, source, eventType, id, format, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType severity, int id, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string format, params object[] args);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string format, object[] args) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, format As String, ParamArray args As Object())" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -447,12 +534,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="eventCache" Type="System.Diagnostics.TraceEventCache" />
-        <Parameter Name="source" Type="System.String" />
-        <Parameter Name="severity" Type="System.Diagnostics.TraceEventType" />
-        <Parameter Name="id" Type="System.Int32" />
-        <Parameter Name="format" Type="System.String" />
-        <Parameter Name="args" Type="System.Object[]">
+        <Parameter Name="eventCache" Type="System.Diagnostics.TraceEventCache" Index="0" />
+        <Parameter Name="source" Type="System.String" Index="1" />
+        <Parameter Name="severity" Type="System.Diagnostics.TraceEventType" Index="2" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="eventType" Type="System.Diagnostics.TraceEventType" Index="2" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="id" Type="System.Int32" Index="3" />
+        <Parameter Name="format" Type="System.String" Index="4" />
+        <Parameter Name="args" Type="System.Object[]" Index="5">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -463,6 +551,7 @@
       <Docs>
         <param name="eventCache">An object that contains the current process ID, thread ID, and stack trace information.</param>
         <param name="source">A name used to identify the output; typically the name of the application that generated the trace event.</param>
+        <param name="severity">To be added.</param>
         <param name="eventType">To be added.</param>
         <param name="id">A numeric identifier for the event. The combination of <c>source</c> and <c>id</c> uniquely identifies an event.</param>
         <param name="format">A format string that contains zero or more format items that correspond to objects in the <c>args</c> array.</param>
@@ -497,6 +586,9 @@
       <MemberSignature Language="C#" Value="public override void Write (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (message As String)" />
+      <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="eventLogTraceListener.Write message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -528,6 +620,9 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventLogTraceListener.WriteLine(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (message As String)" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string -&gt; unit" Usage="eventLogTraceListener.WriteLine message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -555,32 +650,5 @@
         <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="TraceData">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes trace data to the event log.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TraceEvent">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes event trace information to the event log.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventLogTraceListener" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

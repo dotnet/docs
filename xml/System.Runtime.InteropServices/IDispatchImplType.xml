@@ -1,7 +1,10 @@
-<Type Name="IDispatchImplType" FullName="System.Runtime.InteropServices.IDispatchImplType">
+﻿<Type Name="IDispatchImplType" FullName="System.Runtime.InteropServices.IDispatchImplType">
   <TypeSignature Language="C#" Value="public enum IDispatchImplType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed IDispatchImplType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.IDispatchImplType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IDispatchImplType" />
+  <TypeSignature Language="F#" Value="type IDispatchImplType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class IDispatchImplType" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="CompatibleImpl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.IDispatchImplType CompatibleImpl = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDispatchImplType.CompatibleImpl" />
+      <MemberSignature Language="VB.NET" Value="CompatibleImpl" />
+      <MemberSignature Language="F#" Value="CompatibleImpl = 2" Usage="System.Runtime.InteropServices.IDispatchImplType.CompatibleImpl" />
+      <MemberSignature Language="C++ CLI" Value="CompatibleImpl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.IDispatchImplType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the <see langword="IDispatch" /> implementation is supplied by passing the type information for the object to the COM <see langword="CreateStdDispatch" /> API method.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="InternalImpl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.IDispatchImplType InternalImpl = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDispatchImplType.InternalImpl" />
+      <MemberSignature Language="VB.NET" Value="InternalImpl" />
+      <MemberSignature Language="F#" Value="InternalImpl = 1" Usage="System.Runtime.InteropServices.IDispatchImplType.InternalImpl" />
+      <MemberSignature Language="C++ CLI" Value="InternalImpl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.IDispatchImplType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the <see langword="IDispatch" /> implementation is supplied by the runtime.</summary>
       </Docs>
@@ -68,6 +79,9 @@
       <MemberSignature Language="C#" Value="SystemDefinedImpl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.IDispatchImplType SystemDefinedImpl = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IDispatchImplType.SystemDefinedImpl" />
+      <MemberSignature Language="VB.NET" Value="SystemDefinedImpl" />
+      <MemberSignature Language="F#" Value="SystemDefinedImpl = 0" Usage="System.Runtime.InteropServices.IDispatchImplType.SystemDefinedImpl" />
+      <MemberSignature Language="C++ CLI" Value="SystemDefinedImpl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.IDispatchImplType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the common language runtime decides which <see langword="IDispatch" /> implementation to use.</summary>
       </Docs>

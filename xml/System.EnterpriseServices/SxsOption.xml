@@ -1,7 +1,10 @@
-<Type Name="SxsOption" FullName="System.EnterpriseServices.SxsOption">
+﻿<Type Name="SxsOption" FullName="System.EnterpriseServices.SxsOption">
   <TypeSignature Language="C#" Value="public enum SxsOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SxsOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.SxsOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SxsOption" />
+  <TypeSignature Language="F#" Value="type SxsOption = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SxsOption" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="Ignore" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.SxsOption Ignore = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.SxsOption.Ignore" />
+      <MemberSignature Language="VB.NET" Value="Ignore" />
+      <MemberSignature Language="F#" Value="Ignore = 0" Usage="System.EnterpriseServices.SxsOption.Ignore" />
+      <MemberSignature Language="C++ CLI" Value="Ignore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -38,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.SxsOption</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Side-by-side assemblies are not used within the enclosed context. <see cref="F:System.EnterpriseServices.SxsOption.Ignore" /> is the default setting for <see cref="P:System.EnterpriseServices.ServiceConfig.SxsOption" /> when <see cref="P:System.EnterpriseServices.ServiceConfig.Inheritance" /> is set to <see cref="F:System.EnterpriseServices.InheritanceOption.Ignore" />.</summary>
       </Docs>
@@ -46,6 +53,9 @@
       <MemberSignature Language="C#" Value="Inherit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.SxsOption Inherit = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.SxsOption.Inherit" />
+      <MemberSignature Language="VB.NET" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 1" Usage="System.EnterpriseServices.SxsOption.Inherit" />
+      <MemberSignature Language="C++ CLI" Value="Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -54,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.SxsOption</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The current side-by-side assembly of the enclosed context is used. <see cref="F:System.EnterpriseServices.SxsOption.Inherit" /> is the default setting for <see cref="P:System.EnterpriseServices.ServiceConfig.SxsOption" /> when <see cref="P:System.EnterpriseServices.ServiceConfig.Inheritance" /> is set to <see cref="F:System.EnterpriseServices.InheritanceOption.Inherit" />.</summary>
       </Docs>
@@ -62,6 +73,9 @@
       <MemberSignature Language="C#" Value="New" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.SxsOption New = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.SxsOption.New" />
+      <MemberSignature Language="VB.NET" Value="New" />
+      <MemberSignature Language="F#" Value="New = 2" Usage="System.EnterpriseServices.SxsOption.New" />
+      <MemberSignature Language="C++ CLI" Value="New" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -70,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.SxsOption</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A new side-by-side assembly is created for the enclosed context.</summary>
       </Docs>

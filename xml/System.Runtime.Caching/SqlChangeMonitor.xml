@@ -1,7 +1,10 @@
-<Type Name="SqlChangeMonitor" FullName="System.Runtime.Caching.SqlChangeMonitor">
+﻿<Type Name="SqlChangeMonitor" FullName="System.Runtime.Caching.SqlChangeMonitor">
   <TypeSignature Language="C#" Value="public sealed class SqlChangeMonitor : System.Runtime.Caching.ChangeMonitor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlChangeMonitor extends System.Runtime.Caching.ChangeMonitor" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.SqlChangeMonitor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlChangeMonitor&#xA;Inherits ChangeMonitor" />
+  <TypeSignature Language="F#" Value="type SqlChangeMonitor = class&#xA;    inherit ChangeMonitor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlChangeMonitor sealed : System::Runtime::Caching::ChangeMonitor" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public SqlChangeMonitor (System.Data.SqlClient.SqlDependency dependency);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.SqlClient.SqlDependency dependency) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.SqlChangeMonitor.#ctor(System.Data.SqlClient.SqlDependency)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dependency As SqlDependency)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Caching.SqlChangeMonitor : System.Data.SqlClient.SqlDependency -&gt; System.Runtime.Caching.SqlChangeMonitor" Usage="new System.Runtime.Caching.SqlChangeMonitor dependency" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlChangeMonitor(System::Data::SqlClient::SqlDependency ^ dependency);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -55,6 +61,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.SqlChangeMonitor.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="sqlChangeMonitor.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -76,6 +85,9 @@
       <MemberSignature Language="C#" Value="public override string UniqueId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UniqueId" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.SqlChangeMonitor.UniqueId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property UniqueId As String" />
+      <MemberSignature Language="F#" Value="member this.UniqueId : string" Usage="System.Runtime.Caching.SqlChangeMonitor.UniqueId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UniqueId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="DataGridDetailsPresenterAutomationPeer" FullName="System.Windows.Automation.Peers.DataGridDetailsPresenterAutomationPeer">
+﻿<Type Name="DataGridDetailsPresenterAutomationPeer" FullName="System.Windows.Automation.Peers.DataGridDetailsPresenterAutomationPeer">
   <TypeSignature Language="C#" Value="public sealed class DataGridDetailsPresenterAutomationPeer : System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataGridDetailsPresenterAutomationPeer extends System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.DataGridDetailsPresenterAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataGridDetailsPresenterAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer" />
+  <TypeSignature Language="F#" Value="type DataGridDetailsPresenterAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridDetailsPresenterAutomationPeer sealed : System::Windows::Automation::Peers::FrameworkElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public DataGridDetailsPresenterAutomationPeer (System.Windows.Controls.Primitives.DataGridDetailsPresenter owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Primitives.DataGridDetailsPresenter owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridDetailsPresenterAutomationPeer.#ctor(System.Windows.Controls.Primitives.DataGridDetailsPresenter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As DataGridDetailsPresenter)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.DataGridDetailsPresenterAutomationPeer : System.Windows.Controls.Primitives.DataGridDetailsPresenter -&gt; System.Windows.Automation.Peers.DataGridDetailsPresenterAutomationPeer" Usage="new System.Windows.Automation.Peers.DataGridDetailsPresenterAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridDetailsPresenterAutomationPeer(System::Windows::Controls::Primitives::DataGridDetailsPresenter ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DataGridDetailsPresenterAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="dataGridDetailsPresenterAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

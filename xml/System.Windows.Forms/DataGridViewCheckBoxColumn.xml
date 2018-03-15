@@ -1,7 +1,10 @@
-<Type Name="DataGridViewCheckBoxColumn" FullName="System.Windows.Forms.DataGridViewCheckBoxColumn">
+﻿<Type Name="DataGridViewCheckBoxColumn" FullName="System.Windows.Forms.DataGridViewCheckBoxColumn">
   <TypeSignature Language="C#" Value="public class DataGridViewCheckBoxColumn : System.Windows.Forms.DataGridViewColumn" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewCheckBoxColumn extends System.Windows.Forms.DataGridViewColumn" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCheckBoxColumn" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridViewCheckBoxColumn&#xA;Inherits DataGridViewColumn" />
+  <TypeSignature Language="F#" Value="type DataGridViewCheckBoxColumn = class&#xA;    inherit DataGridViewColumn" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewCheckBoxColumn : System::Windows::Forms::DataGridViewColumn" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,10 +56,21 @@
     <altmember cref="M:System.Windows.Forms.DataGridView.CommitEdit(System.Windows.Forms.DataGridViewDataErrorContexts)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCheckBoxColumn" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataGridViewCheckBoxColumn ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCheckBoxColumn.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewCheckBoxColumn();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +94,9 @@
       <MemberSignature Language="C#" Value="public DataGridViewCheckBoxColumn (bool threeState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool threeState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCheckBoxColumn.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (threeState As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewCheckBoxColumn : bool -&gt; System.Windows.Forms.DataGridViewCheckBoxColumn" Usage="new System.Windows.Forms.DataGridViewCheckBoxColumn threeState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewCheckBoxColumn(bool threeState);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -123,6 +140,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewCell CellTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCell CellTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property CellTemplate As DataGridViewCell" />
+      <MemberSignature Language="F#" Value="member this.CellTemplate : System.Windows.Forms.DataGridViewCell with get, set" Usage="System.Windows.Forms.DataGridViewCheckBoxColumn.CellTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCell ^ CellTemplate { System::Windows::Forms::DataGridViewCell ^ get(); void set(System::Windows::Forms::DataGridViewCell ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -133,7 +153,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -174,6 +194,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewCellStyle DefaultCellStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCellStyle DefaultCellStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCheckBoxColumn.DefaultCellStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property DefaultCellStyle As DataGridViewCellStyle" />
+      <MemberSignature Language="F#" Value="member this.DefaultCellStyle : System.Windows.Forms.DataGridViewCellStyle with get, set" Usage="System.Windows.Forms.DataGridViewCheckBoxColumn.DefaultCellStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCellStyle ^ DefaultCellStyle { System::Windows::Forms::DataGridViewCellStyle ^ get(); void set(System::Windows::Forms::DataGridViewCellStyle ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -224,6 +247,9 @@
       <MemberSignature Language="C#" Value="public object FalseValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object FalseValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCheckBoxColumn.FalseValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property FalseValue As Object" />
+      <MemberSignature Language="F#" Value="member this.FalseValue : obj with get, set" Usage="System.Windows.Forms.DataGridViewCheckBoxColumn.FalseValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ FalseValue { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -276,6 +302,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.FlatStyle FlatStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.FlatStyle FlatStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCheckBoxColumn.FlatStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property FlatStyle As FlatStyle" />
+      <MemberSignature Language="F#" Value="member this.FlatStyle : System.Windows.Forms.FlatStyle with get, set" Usage="System.Windows.Forms.DataGridViewCheckBoxColumn.FlatStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FlatStyle FlatStyle { System::Windows::Forms::FlatStyle get(); void set(System::Windows::Forms::FlatStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -324,6 +353,9 @@
       <MemberSignature Language="C#" Value="public object IndeterminateValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object IndeterminateValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCheckBoxColumn.IndeterminateValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property IndeterminateValue As Object" />
+      <MemberSignature Language="F#" Value="member this.IndeterminateValue : obj with get, set" Usage="System.Windows.Forms.DataGridViewCheckBoxColumn.IndeterminateValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ IndeterminateValue { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -376,6 +408,9 @@
       <MemberSignature Language="C#" Value="public bool ThreeState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ThreeState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThreeState As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ThreeState : bool with get, set" Usage="System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ThreeState { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -428,6 +463,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCheckBoxColumn.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataGridViewCheckBoxColumn.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -448,6 +486,9 @@
       <MemberSignature Language="C#" Value="public object TrueValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object TrueValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCheckBoxColumn.TrueValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrueValue As Object" />
+      <MemberSignature Language="F#" Value="member this.TrueValue : obj with get, set" Usage="System.Windows.Forms.DataGridViewCheckBoxColumn.TrueValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ TrueValue { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -496,14 +537,5 @@
         <altmember cref="P:System.Windows.Forms.DataGridViewCheckBoxColumn.ThreeState" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCheckBoxColumn" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

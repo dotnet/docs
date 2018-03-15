@@ -1,7 +1,10 @@
-<Type Name="XamlTypeMapper" FullName="System.Windows.Markup.XamlTypeMapper">
+﻿<Type Name="XamlTypeMapper" FullName="System.Windows.Markup.XamlTypeMapper">
   <TypeSignature Language="C#" Value="public class XamlTypeMapper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlTypeMapper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.XamlTypeMapper" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlTypeMapper" />
+  <TypeSignature Language="F#" Value="type XamlTypeMapper = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlTypeMapper" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +34,22 @@
     <altmember cref="T:System.Windows.Markup.ParserContext" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlTypeMapper" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XamlTypeMapper (string[] assemblyNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] assemblyNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlTypeMapper.#ctor(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyNames As String())" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.XamlTypeMapper : string[] -&gt; System.Windows.Markup.XamlTypeMapper" Usage="new System.Windows.Markup.XamlTypeMapper assemblyNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlTypeMapper(cli::array &lt;System::String ^&gt; ^ assemblyNames);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +70,9 @@
       <MemberSignature Language="C#" Value="public XamlTypeMapper (string[] assemblyNames, System.Windows.Markup.NamespaceMapEntry[] namespaceMaps);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] assemblyNames, class System.Windows.Markup.NamespaceMapEntry[] namespaceMaps) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlTypeMapper.#ctor(System.String[],System.Windows.Markup.NamespaceMapEntry[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyNames As String(), namespaceMaps As NamespaceMapEntry())" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.XamlTypeMapper : string[] * System.Windows.Markup.NamespaceMapEntry[] -&gt; System.Windows.Markup.XamlTypeMapper" Usage="new System.Windows.Markup.XamlTypeMapper (assemblyNames, namespaceMaps)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlTypeMapper(cli::array &lt;System::String ^&gt; ^ assemblyNames, cli::array &lt;System::Windows::Markup::NamespaceMapEntry ^&gt; ^ namespaceMaps);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +95,9 @@
       <MemberSignature Language="C#" Value="public void AddMappingProcessingInstruction (string xmlNamespace, string clrNamespace, string assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddMappingProcessingInstruction(string xmlNamespace, string clrNamespace, string assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlTypeMapper.AddMappingProcessingInstruction(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddMappingProcessingInstruction (xmlNamespace As String, clrNamespace As String, assemblyName As String)" />
+      <MemberSignature Language="F#" Value="member this.AddMappingProcessingInstruction : string * string * string -&gt; unit" Usage="xamlTypeMapper.AddMappingProcessingInstruction (xmlNamespace, clrNamespace, assemblyName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddMappingProcessingInstruction(System::String ^ xmlNamespace, System::String ^ clrNamespace, System::String ^ assemblyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -126,6 +147,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool AllowInternalType (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool AllowInternalType(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlTypeMapper.AllowInternalType(System.Type)" />
+      <MemberSignature Language="F#" Value="abstract member AllowInternalType : Type -&gt; bool&#xA;override this.AllowInternalType : Type -&gt; bool" Usage="xamlTypeMapper.AllowInternalType type" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool AllowInternalType(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -158,6 +181,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Markup.XamlTypeMapper DefaultMapper { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Markup.XamlTypeMapper DefaultMapper" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.XamlTypeMapper.DefaultMapper" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultMapper As XamlTypeMapper" />
+      <MemberSignature Language="F#" Value="member this.DefaultMapper : System.Windows.Markup.XamlTypeMapper" Usage="System.Windows.Markup.XamlTypeMapper.DefaultMapper" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Markup::XamlTypeMapper ^ DefaultMapper { System::Windows::Markup::XamlTypeMapper ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -185,6 +211,9 @@
       <MemberSignature Language="C#" Value="public Type GetType (string xmlNamespace, string localName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetType(string xmlNamespace, string localName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlTypeMapper.GetType(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetType (xmlNamespace As String, localName As String) As Type" />
+      <MemberSignature Language="F#" Value="override this.GetType : string * string -&gt; Type" Usage="xamlTypeMapper.GetType (xmlNamespace, localName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType(System::String ^ xmlNamespace, System::String ^ localName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -225,6 +254,9 @@
       <MemberSignature Language="C#" Value="public void SetAssemblyPath (string assemblyName, string assemblyPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAssemblyPath(string assemblyName, string assemblyPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.XamlTypeMapper.SetAssemblyPath(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAssemblyPath (assemblyName As String, assemblyPath As String)" />
+      <MemberSignature Language="F#" Value="member this.SetAssemblyPath : string * string -&gt; unit" Usage="xamlTypeMapper.SetAssemblyPath (assemblyName, assemblyPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAssemblyPath(System::String ^ assemblyName, System::String ^ assemblyPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -260,14 +292,5 @@
  <paramref name="assemblyPath" /> is not a full file path containing a file extension.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.XamlTypeMapper" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

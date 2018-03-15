@@ -1,7 +1,10 @@
-<Type Name="Binding" FullName="Microsoft.JScript.Binding">
+﻿<Type Name="Binding" FullName="Microsoft.JScript.Binding">
   <TypeSignature Language="C#" Value="public abstract class Binding : Microsoft.JScript.AST" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Binding extends Microsoft.JScript.AST" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Binding" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Binding&#xA;Inherits AST" />
+  <TypeSignature Language="F#" Value="type Binding = class&#xA;    inherit AST" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Binding abstract : Microsoft::JScript::AST" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="protected System.Reflection.MemberInfo defaultMember;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Reflection.MemberInfo defaultMember" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Binding.defaultMember" />
+      <MemberSignature Language="VB.NET" Value="Protected defaultMember As MemberInfo " />
+      <MemberSignature Language="F#" Value="val mutable defaultMember : System.Reflection.MemberInfo" Usage="Microsoft.JScript.Binding.defaultMember" />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Reflection::MemberInfo ^ defaultMember;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -44,6 +50,9 @@
       <MemberSignature Language="C#" Value="protected abstract object GetObject ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Binding.GetObject" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetObject () As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetObject : unit -&gt; obj" Usage="binding.GetObject " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Object ^ GetObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -68,6 +77,9 @@
       <MemberSignature Language="C#" Value="protected abstract void HandleNoSuchMemberError ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void HandleNoSuchMemberError() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Binding.HandleNoSuchMemberError" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub HandleNoSuchMemberError ()" />
+      <MemberSignature Language="F#" Value="abstract member HandleNoSuchMemberError : unit -&gt; unit" Usage="binding.HandleNoSuchMemberError " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void HandleNoSuchMemberError();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -98,6 +110,9 @@
       <MemberSignature Language="C#" Value="protected bool isAssignmentToDefaultIndexedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field family bool isAssignmentToDefaultIndexedProperty" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Binding.isAssignmentToDefaultIndexedProperty" />
+      <MemberSignature Language="VB.NET" Value="Protected isAssignmentToDefaultIndexedProperty As Boolean " />
+      <MemberSignature Language="F#" Value="val mutable isAssignmentToDefaultIndexedProperty : bool" Usage="Microsoft.JScript.Binding.isAssignmentToDefaultIndexedProperty" />
+      <MemberSignature Language="C++ CLI" Value="protected: bool isAssignmentToDefaultIndexedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -127,6 +142,9 @@
       <MemberSignature Language="C#" Value="protected bool isFullyResolved;" />
       <MemberSignature Language="ILAsm" Value=".field family bool isFullyResolved" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Binding.isFullyResolved" />
+      <MemberSignature Language="VB.NET" Value="Protected isFullyResolved As Boolean " />
+      <MemberSignature Language="F#" Value="val mutable isFullyResolved : bool" Usage="Microsoft.JScript.Binding.isFullyResolved" />
+      <MemberSignature Language="C++ CLI" Value="protected: bool isFullyResolved;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -149,6 +167,9 @@
       <MemberSignature Language="C#" Value="public static bool IsMissing (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsMissing(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Binding.IsMissing(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsMissing (value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsMissing : obj -&gt; bool" Usage="Microsoft.JScript.Binding.IsMissing value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsMissing(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -177,6 +198,9 @@
       <MemberSignature Language="C#" Value="protected bool isNonVirtual;" />
       <MemberSignature Language="ILAsm" Value=".field family bool isNonVirtual" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Binding.isNonVirtual" />
+      <MemberSignature Language="VB.NET" Value="Protected isNonVirtual As Boolean " />
+      <MemberSignature Language="F#" Value="val mutable isNonVirtual : bool" Usage="Microsoft.JScript.Binding.isNonVirtual" />
+      <MemberSignature Language="C++ CLI" Value="protected: bool isNonVirtual;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -199,6 +223,9 @@
       <MemberSignature Language="C#" Value="protected string name;" />
       <MemberSignature Language="ILAsm" Value=".field family string name" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Binding.name" />
+      <MemberSignature Language="VB.NET" Value="Protected name As String " />
+      <MemberSignature Language="F#" Value="val mutable name : string" Usage="Microsoft.JScript.Binding.name" />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ name;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -221,6 +248,9 @@
       <MemberSignature Language="C#" Value="protected void ResolveRHValue ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ResolveRHValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Binding.ResolveRHValue" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ResolveRHValue ()" />
+      <MemberSignature Language="F#" Value="member this.ResolveRHValue : unit -&gt; unit" Usage="binding.ResolveRHValue " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ResolveRHValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -244,6 +274,9 @@
       <MemberSignature Language="C#" Value="protected abstract void TranslateToILObject (System.Reflection.Emit.ILGenerator il, Type obtype, bool noValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void TranslateToILObject(class System.Reflection.Emit.ILGenerator il, class System.Type obtype, bool noValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Binding.TranslateToILObject(System.Reflection.Emit.ILGenerator,System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub TranslateToILObject (il As ILGenerator, obtype As Type, noValue As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member TranslateToILObject : System.Reflection.Emit.ILGenerator * Type * bool -&gt; unit" Usage="binding.TranslateToILObject (il, obtype, noValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void TranslateToILObject(System::Reflection::Emit::ILGenerator ^ il, Type ^ obtype, bool noValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -275,6 +308,9 @@
       <MemberSignature Language="C#" Value="protected abstract void TranslateToILWithDupOfThisOb (System.Reflection.Emit.ILGenerator il);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void TranslateToILWithDupOfThisOb(class System.Reflection.Emit.ILGenerator il) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Binding.TranslateToILWithDupOfThisOb(System.Reflection.Emit.ILGenerator)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub TranslateToILWithDupOfThisOb (il As ILGenerator)" />
+      <MemberSignature Language="F#" Value="abstract member TranslateToILWithDupOfThisOb : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="binding.TranslateToILWithDupOfThisOb il" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void TranslateToILWithDupOfThisOb(System::Reflection::Emit::ILGenerator ^ il);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

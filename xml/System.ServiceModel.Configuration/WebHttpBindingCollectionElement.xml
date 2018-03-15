@@ -1,7 +1,10 @@
-<Type Name="WebHttpBindingCollectionElement" FullName="System.ServiceModel.Configuration.WebHttpBindingCollectionElement">
+﻿<Type Name="WebHttpBindingCollectionElement" FullName="System.ServiceModel.Configuration.WebHttpBindingCollectionElement">
   <TypeSignature Language="C#" Value="public class WebHttpBindingCollectionElement : System.ServiceModel.Configuration.StandardBindingCollectionElement&lt;System.ServiceModel.WebHttpBinding,System.ServiceModel.Configuration.WebHttpBindingElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebHttpBindingCollectionElement extends System.ServiceModel.Configuration.StandardBindingCollectionElement`2&lt;class System.ServiceModel.WebHttpBinding, class System.ServiceModel.Configuration.WebHttpBindingElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WebHttpBindingCollectionElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebHttpBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of WebHttpBinding, WebHttpBindingElement)" />
+  <TypeSignature Language="F#" Value="type WebHttpBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;WebHttpBinding, WebHttpBindingElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebHttpBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::WebHttpBinding ^, System::ServiceModel::Configuration::WebHttpBindingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,8 @@
       <MemberSignature Language="C#" Value="public WebHttpBindingCollectionElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebHttpBindingCollectionElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebHttpBindingCollectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -42,9 +47,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetDefault">
-      <MemberSignature Language="C#" Value="protected override System.ServiceModel.Channels.Binding GetDefault ();" />
+      <MemberSignature Language="C#" Value="protected internal override System.ServiceModel.Channels.Binding GetDefault ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.ServiceModel.Channels.Binding GetDefault() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WebHttpBindingCollectionElement.GetDefault" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetDefault () As Binding" />
+      <MemberSignature Language="F#" Value="override this.GetDefault : unit -&gt; System.ServiceModel.Channels.Binding" Usage="webHttpBindingCollectionElement.GetDefault " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Channels::Binding ^ GetDefault();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

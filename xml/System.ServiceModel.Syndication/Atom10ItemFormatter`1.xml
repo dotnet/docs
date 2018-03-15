@@ -1,7 +1,10 @@
-<Type Name="Atom10ItemFormatter&lt;TSyndicationItem&gt;" FullName="System.ServiceModel.Syndication.Atom10ItemFormatter&lt;TSyndicationItem&gt;">
+﻿<Type Name="Atom10ItemFormatter&lt;TSyndicationItem&gt;" FullName="System.ServiceModel.Syndication.Atom10ItemFormatter&lt;TSyndicationItem&gt;">
   <TypeSignature Language="C#" Value="public class Atom10ItemFormatter&lt;TSyndicationItem&gt; : System.ServiceModel.Syndication.Atom10ItemFormatter where TSyndicationItem : SyndicationItemnew()" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Atom10ItemFormatter`1&lt;.ctor (class System.ServiceModel.Syndication.SyndicationItem) TSyndicationItem&gt; extends System.ServiceModel.Syndication.Atom10ItemFormatter" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.Atom10ItemFormatter`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class Atom10ItemFormatter(Of TSyndicationItem)&#xA;Inherits Atom10ItemFormatter" />
+  <TypeSignature Language="F#" Value="type Atom10ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; = class&#xA;    inherit Atom10ItemFormatter" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TSyndicationItem&gt;&#xA; where TSyndicationItem : SyndicationItemgcnew()public ref class Atom10ItemFormatter : System::ServiceModel::Syndication::Atom10ItemFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,10 +54,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Atom10ItemFormatter`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Atom10ItemFormatter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Atom10ItemFormatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -74,6 +88,9 @@
       <MemberSignature Language="C#" Value="public Atom10ItemFormatter (TSyndicationItem itemToWrite);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TSyndicationItem itemToWrite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter`1.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (itemToWrite As TSyndicationItem)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Atom10ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; : 'SyndicationItem -&gt; System.ServiceModel.Syndication.Atom10ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt;" Usage="new System.ServiceModel.Syndication.Atom10ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; itemToWrite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Atom10ItemFormatter(TSyndicationItem itemToWrite);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -106,6 +123,9 @@
       <MemberSignature Language="C#" Value="protected override System.ServiceModel.Syndication.SyndicationItem CreateItemInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.Syndication.SyndicationItem CreateItemInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Atom10ItemFormatter`1.CreateItemInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemInstance () As SyndicationItem" />
+      <MemberSignature Language="F#" Value="override this.CreateItemInstance : unit -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="atom10ItemFormatter.CreateItemInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::SyndicationItem ^ CreateItemInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -125,14 +145,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Atom10ItemFormatter`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="Margins" FullName="System.Windows.Forms.DataVisualization.Charting.Margins">
+﻿<Type Name="Margins" FullName="System.Windows.Forms.DataVisualization.Charting.Margins">
   <TypeSignature Language="C#" Value="public class Margins" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Margins extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.Margins" />
+  <TypeSignature Language="VB.NET" Value="Public Class Margins" />
+  <TypeSignature Language="F#" Value="type Margins = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Margins" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +23,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Margins" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Margins ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Margins.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Margins();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -39,6 +53,9 @@
       <MemberSignature Language="C#" Value="public Margins (int top, int bottom, int left, int right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 top, int32 bottom, int32 left, int32 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Margins.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (top As Integer, bottom As Integer, left As Integer, right As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.Margins : int * int * int * int -&gt; System.Windows.Forms.DataVisualization.Charting.Margins" Usage="new System.Windows.Forms.DataVisualization.Charting.Margins (top, bottom, left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Margins(int top, int bottom, int left, int right);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -70,6 +87,9 @@
       <MemberSignature Language="C#" Value="public int Bottom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Bottom" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Margins.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Public Property Bottom As Integer" />
+      <MemberSignature Language="F#" Value="member this.Bottom : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Margins.Bottom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Bottom { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -83,7 +103,7 @@
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -106,6 +126,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Margins.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="margins.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -129,6 +152,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Margins.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="margins.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -148,6 +174,9 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsEmpty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Margins.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsEmpty () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : unit -&gt; bool" Usage="margins.IsEmpty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEmpty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -168,6 +197,9 @@
       <MemberSignature Language="C#" Value="public int Left { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Left" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Margins.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Integer" />
+      <MemberSignature Language="F#" Value="member this.Left : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Margins.Left" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -181,7 +213,7 @@
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -204,6 +236,9 @@
       <MemberSignature Language="C#" Value="public int Right { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Right" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Margins.Right" />
+      <MemberSignature Language="VB.NET" Value="Public Property Right As Integer" />
+      <MemberSignature Language="F#" Value="member this.Right : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Margins.Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Right { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -217,7 +252,7 @@
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -240,6 +275,9 @@
       <MemberSignature Language="C#" Value="public int Top { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Top" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.Margins.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Integer" />
+      <MemberSignature Language="F#" Value="member this.Top : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.Margins.Top" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -253,7 +291,7 @@
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -276,6 +314,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.RectangleF ToRectangleF ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.RectangleF ToRectangleF() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Margins.ToRectangleF" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToRectangleF () As RectangleF" />
+      <MemberSignature Language="F#" Value="member this.ToRectangleF : unit -&gt; System.Drawing.RectangleF" Usage="margins.ToRectangleF " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::RectangleF ToRectangleF();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -295,6 +336,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.Margins.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="margins.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -310,14 +354,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.Margins" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

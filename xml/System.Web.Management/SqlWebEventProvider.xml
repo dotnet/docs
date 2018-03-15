@@ -1,7 +1,10 @@
-<Type Name="SqlWebEventProvider" FullName="System.Web.Management.SqlWebEventProvider">
+﻿<Type Name="SqlWebEventProvider" FullName="System.Web.Management.SqlWebEventProvider">
   <TypeSignature Language="C#" Value="public class SqlWebEventProvider : System.Web.Management.BufferedWebEventProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlWebEventProvider extends System.Web.Management.BufferedWebEventProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SqlWebEventProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlWebEventProvider&#xA;Inherits BufferedWebEventProvider" />
+  <TypeSignature Language="F#" Value="type SqlWebEventProvider = class&#xA;    inherit BufferedWebEventProvider&#xA;    interface IInternalWebEventProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlWebEventProvider : System::Web::Management::BufferedWebEventProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,9 +84,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected SqlWebEventProvider ();" />
+      <MemberSignature Language="C#" Value="protected internal SqlWebEventProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlWebEventProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; SqlWebEventProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +111,9 @@
       <MemberSignature Language="C#" Value="protected virtual void EventProcessingComplete (System.Web.Management.WebBaseEventCollection raisedEvents);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EventProcessingComplete(class System.Web.Management.WebBaseEventCollection raisedEvents) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlWebEventProvider.EventProcessingComplete(System.Web.Management.WebBaseEventCollection)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EventProcessingComplete (raisedEvents As WebBaseEventCollection)" />
+      <MemberSignature Language="F#" Value="abstract member EventProcessingComplete : System.Web.Management.WebBaseEventCollection -&gt; unit&#xA;override this.EventProcessingComplete : System.Web.Management.WebBaseEventCollection -&gt; unit" Usage="sqlWebEventProvider.EventProcessingComplete raisedEvents" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EventProcessingComplete(System::Web::Management::WebBaseEventCollection ^ raisedEvents);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -135,6 +143,9 @@
       <MemberSignature Language="C#" Value="public override void Initialize (string name, System.Collections.Specialized.NameValueCollection config);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(string name, class System.Collections.Specialized.NameValueCollection config) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlWebEventProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (name As String, config As NameValueCollection)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : string * System.Collections.Specialized.NameValueCollection -&gt; unit" Usage="sqlWebEventProvider.Initialize (name, config)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::String ^ name, System::Collections::Specialized::NameValueCollection ^ config);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,6 +189,9 @@
       <MemberSignature Language="C#" Value="public override void ProcessEvent (System.Web.Management.WebBaseEvent eventRaised);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ProcessEvent(class System.Web.Management.WebBaseEvent eventRaised) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlWebEventProvider.ProcessEvent(System.Web.Management.WebBaseEvent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ProcessEvent (eventRaised As WebBaseEvent)" />
+      <MemberSignature Language="F#" Value="override this.ProcessEvent : System.Web.Management.WebBaseEvent -&gt; unit" Usage="sqlWebEventProvider.ProcessEvent eventRaised" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ProcessEvent(System::Web::Management::WebBaseEvent ^ eventRaised);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -206,6 +220,9 @@
       <MemberSignature Language="C#" Value="public override void ProcessEventFlush (System.Web.Management.WebEventBufferFlushInfo flushInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ProcessEventFlush(class System.Web.Management.WebEventBufferFlushInfo flushInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlWebEventProvider.ProcessEventFlush(System.Web.Management.WebEventBufferFlushInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ProcessEventFlush (flushInfo As WebEventBufferFlushInfo)" />
+      <MemberSignature Language="F#" Value="override this.ProcessEventFlush : System.Web.Management.WebEventBufferFlushInfo -&gt; unit" Usage="sqlWebEventProvider.ProcessEventFlush flushInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ProcessEventFlush(System::Web::Management::WebEventBufferFlushInfo ^ flushInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -234,6 +251,9 @@
       <MemberSignature Language="C#" Value="public override void Shutdown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Shutdown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlWebEventProvider.Shutdown" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Shutdown ()" />
+      <MemberSignature Language="F#" Value="override this.Shutdown : unit -&gt; unit" Usage="sqlWebEventProvider.Shutdown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Shutdown();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

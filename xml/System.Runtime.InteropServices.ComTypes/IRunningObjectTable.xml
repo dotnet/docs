@@ -1,7 +1,10 @@
-<Type Name="IRunningObjectTable" FullName="System.Runtime.InteropServices.ComTypes.IRunningObjectTable">
+﻿<Type Name="IRunningObjectTable" FullName="System.Runtime.InteropServices.ComTypes.IRunningObjectTable">
   <TypeSignature Language="C#" Value="public interface IRunningObjectTable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRunningObjectTable" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IRunningObjectTable" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRunningObjectTable" />
+  <TypeSignature Language="F#" Value="type IRunningObjectTable = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRunningObjectTable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +52,9 @@
       <MemberSignature Language="C#" Value="public void EnumRunning (out System.Runtime.InteropServices.ComTypes.IEnumMoniker ppenumMoniker);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnumRunning([out] class System.Runtime.InteropServices.ComTypes.IEnumMoniker&amp; ppenumMoniker) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.EnumRunning(System.Runtime.InteropServices.ComTypes.IEnumMoniker@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnumRunning (ByRef ppenumMoniker As IEnumMoniker)" />
+      <MemberSignature Language="F#" Value="abstract member EnumRunning :  -&gt; unit" Usage="iRunningObjectTable.EnumRunning ppenumMoniker" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnumRunning([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumMoniker ^ % ppenumMoniker);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -91,6 +97,9 @@
       <MemberSignature Language="C#" Value="public int GetObject (System.Runtime.InteropServices.ComTypes.IMoniker pmkObjectName, out object ppunkObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetObject(class System.Runtime.InteropServices.ComTypes.IMoniker pmkObjectName, [out] object&amp; ppunkObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.GetObject(System.Runtime.InteropServices.ComTypes.IMoniker,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetObject (pmkObjectName As IMoniker, ByRef ppunkObject As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetObject : System.Runtime.InteropServices.ComTypes.IMoniker *  -&gt; int" Usage="iRunningObjectTable.GetObject (pmkObjectName, ppunkObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetObject(System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkObjectName, [Runtime::InteropServices::Out] System::Object ^ % ppunkObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -136,6 +145,9 @@
       <MemberSignature Language="C#" Value="public int GetTimeOfLastChange (System.Runtime.InteropServices.ComTypes.IMoniker pmkObjectName, out System.Runtime.InteropServices.ComTypes.FILETIME pfiletime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetTimeOfLastChange(class System.Runtime.InteropServices.ComTypes.IMoniker pmkObjectName, [out] valuetype System.Runtime.InteropServices.ComTypes.FILETIME&amp; pfiletime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.GetTimeOfLastChange(System.Runtime.InteropServices.ComTypes.IMoniker,System.Runtime.InteropServices.ComTypes.FILETIME@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTimeOfLastChange (pmkObjectName As IMoniker, ByRef pfiletime As FILETIME) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetTimeOfLastChange : System.Runtime.InteropServices.ComTypes.IMoniker *  -&gt; int" Usage="iRunningObjectTable.GetTimeOfLastChange (pmkObjectName, pfiletime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTimeOfLastChange(System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkObjectName, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::FILETIME % pfiletime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -181,6 +193,9 @@
       <MemberSignature Language="C#" Value="public int IsRunning (System.Runtime.InteropServices.ComTypes.IMoniker pmkObjectName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IsRunning(class System.Runtime.InteropServices.ComTypes.IMoniker pmkObjectName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.IsRunning(System.Runtime.InteropServices.ComTypes.IMoniker)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsRunning (pmkObjectName As IMoniker) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member IsRunning : System.Runtime.InteropServices.ComTypes.IMoniker -&gt; int" Usage="iRunningObjectTable.IsRunning pmkObjectName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IsRunning(System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkObjectName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -224,6 +239,9 @@
       <MemberSignature Language="C#" Value="public void NoteChangeTime (int dwRegister, ref System.Runtime.InteropServices.ComTypes.FILETIME pfiletime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NoteChangeTime(int32 dwRegister, valuetype System.Runtime.InteropServices.ComTypes.FILETIME&amp; pfiletime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.NoteChangeTime(System.Int32,System.Runtime.InteropServices.ComTypes.FILETIME@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NoteChangeTime (dwRegister As Integer, ByRef pfiletime As FILETIME)" />
+      <MemberSignature Language="F#" Value="abstract member NoteChangeTime : int *  -&gt; unit" Usage="iRunningObjectTable.NoteChangeTime (dwRegister, pfiletime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NoteChangeTime(int dwRegister, System::Runtime::InteropServices::ComTypes::FILETIME % pfiletime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -268,6 +286,9 @@
       <MemberSignature Language="C#" Value="public int Register (int grfFlags, object punkObject, System.Runtime.InteropServices.ComTypes.IMoniker pmkObjectName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Register(int32 grfFlags, object punkObject, class System.Runtime.InteropServices.ComTypes.IMoniker pmkObjectName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.Register(System.Int32,System.Object,System.Runtime.InteropServices.ComTypes.IMoniker)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Register (grfFlags As Integer, punkObject As Object, pmkObjectName As IMoniker) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Register : int * obj * System.Runtime.InteropServices.ComTypes.IMoniker -&gt; int" Usage="iRunningObjectTable.Register (grfFlags, punkObject, pmkObjectName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Register(int grfFlags, System::Object ^ punkObject, System::Runtime::InteropServices::ComTypes::IMoniker ^ pmkObjectName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -315,6 +336,9 @@
       <MemberSignature Language="C#" Value="public void Revoke (int dwRegister);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Revoke(int32 dwRegister) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IRunningObjectTable.Revoke(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Revoke (dwRegister As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Revoke : int -&gt; unit" Usage="iRunningObjectTable.Revoke dwRegister" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Revoke(int dwRegister);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

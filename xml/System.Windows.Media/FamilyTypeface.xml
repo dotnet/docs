@@ -1,7 +1,10 @@
-<Type Name="FamilyTypeface" FullName="System.Windows.Media.FamilyTypeface">
+﻿<Type Name="FamilyTypeface" FullName="System.Windows.Media.FamilyTypeface">
   <TypeSignature Language="C#" Value="public class FamilyTypeface" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FamilyTypeface extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.FamilyTypeface" />
+  <TypeSignature Language="VB.NET" Value="Public Class FamilyTypeface" />
+  <TypeSignature Language="F#" Value="type FamilyTypeface = class&#xA;    interface IDeviceFont&#xA;    interface ITypefaceMetrics" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FamilyTypeface" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public FamilyTypeface ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypeface.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FamilyTypeface();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,7 +46,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;System.Windows.Markup.XmlLanguage,string&gt; AdjustedFaceNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;class System.Windows.Markup.XmlLanguage, string&gt; AdjustedFaceNames" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.AdjustedFaceNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdjustedFaceNames As IDictionary(Of XmlLanguage, String)" />
+      <MemberSignature Language="F#" Value="member this.AdjustedFaceNames : System.Collections.Generic.IDictionary&lt;System.Windows.Markup.XmlLanguage, string&gt;" Usage="System.Windows.Media.FamilyTypeface.AdjustedFaceNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Windows::Markup::XmlLanguage ^, System::String ^&gt; ^ AdjustedFaceNames { System::Collections::Generic::IDictionary&lt;System::Windows::Markup::XmlLanguage ^, System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:MS.Internal.FontFace.ITypefaceMetrics.AdjustedFaceNames</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="public double CapsHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 CapsHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.CapsHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property CapsHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.CapsHeight : double with get, set" Usage="System.Windows.Media.FamilyTypeface.CapsHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CapsHeight { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +91,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.CharacterMetricsDictionary DeviceFontCharacterMetrics { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.CharacterMetricsDictionary DeviceFontCharacterMetrics" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.DeviceFontCharacterMetrics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeviceFontCharacterMetrics As CharacterMetricsDictionary" />
+      <MemberSignature Language="F#" Value="member this.DeviceFontCharacterMetrics : System.Windows.Media.CharacterMetricsDictionary" Usage="System.Windows.Media.FamilyTypeface.DeviceFontCharacterMetrics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::CharacterMetricsDictionary ^ DeviceFontCharacterMetrics { System::Windows::Media::CharacterMetricsDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,7 +101,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -100,6 +117,9 @@
       <MemberSignature Language="C#" Value="public string DeviceFontName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DeviceFontName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.DeviceFontName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeviceFontName As String" />
+      <MemberSignature Language="F#" Value="member this.DeviceFontName : string with get, set" Usage="System.Windows.Media.FamilyTypeface.DeviceFontName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DeviceFontName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,10 +134,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two font family typefaces for equality.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypeface.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="familyTypeface.Equals o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -141,6 +173,9 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Media.FamilyTypeface typeface);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(class System.Windows.Media.FamilyTypeface typeface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypeface.Equals(System.Windows.Media.FamilyTypeface)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (typeface As FamilyTypeface) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Media.FamilyTypeface -&gt; bool" Usage="familyTypeface.Equals typeface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Media::FamilyTypeface ^ typeface);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -164,6 +199,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FamilyTypeface.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="familyTypeface.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -190,6 +228,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.FontStretch Stretch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStretch Stretch" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.Stretch" />
+      <MemberSignature Language="VB.NET" Value="Public Property Stretch As FontStretch" />
+      <MemberSignature Language="F#" Value="member this.Stretch : System.Windows.FontStretch with get, set" Usage="System.Windows.Media.FamilyTypeface.Stretch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStretch Stretch { System::Windows::FontStretch get(); void set(System::Windows::FontStretch value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -215,6 +256,9 @@
       <MemberSignature Language="C#" Value="public double StrikethroughPosition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 StrikethroughPosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.StrikethroughPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrikethroughPosition As Double" />
+      <MemberSignature Language="F#" Value="member this.StrikethroughPosition : double with get, set" Usage="System.Windows.Media.FamilyTypeface.StrikethroughPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StrikethroughPosition { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -240,6 +284,9 @@
       <MemberSignature Language="C#" Value="public double StrikethroughThickness { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 StrikethroughThickness" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.StrikethroughThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrikethroughThickness As Double" />
+      <MemberSignature Language="F#" Value="member this.StrikethroughThickness : double with get, set" Usage="System.Windows.Media.FamilyTypeface.StrikethroughThickness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StrikethroughThickness { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -258,6 +305,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.FontStyle Style { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontStyle Style" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Property Style As FontStyle" />
+      <MemberSignature Language="F#" Value="member this.Style : System.Windows.FontStyle with get, set" Usage="System.Windows.Media.FamilyTypeface.Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontStyle Style { System::Windows::FontStyle get(); void set(System::Windows::FontStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -283,6 +333,9 @@
       <MemberSignature Language="C#" Value="public double UnderlinePosition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 UnderlinePosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.UnderlinePosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnderlinePosition As Double" />
+      <MemberSignature Language="F#" Value="member this.UnderlinePosition : double with get, set" Usage="System.Windows.Media.FamilyTypeface.UnderlinePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double UnderlinePosition { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -308,6 +361,9 @@
       <MemberSignature Language="C#" Value="public double UnderlineThickness { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 UnderlineThickness" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.UnderlineThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnderlineThickness As Double" />
+      <MemberSignature Language="F#" Value="member this.UnderlineThickness : double with get, set" Usage="System.Windows.Media.FamilyTypeface.UnderlineThickness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double UnderlineThickness { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -326,6 +382,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.FontWeight Weight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.FontWeight Weight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.Weight" />
+      <MemberSignature Language="VB.NET" Value="Public Property Weight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.Weight : System.Windows.FontWeight with get, set" Usage="System.Windows.Media.FamilyTypeface.Weight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FontWeight Weight { System::Windows::FontWeight get(); void set(System::Windows::FontWeight value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -351,6 +410,9 @@
       <MemberSignature Language="C#" Value="public double XHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 XHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.FamilyTypeface.XHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property XHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.XHeight : double with get, set" Usage="System.Windows.Media.FamilyTypeface.XHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double XHeight { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -365,14 +427,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares two font family typefaces for equality.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

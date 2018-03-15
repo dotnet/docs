@@ -1,7 +1,10 @@
-<Type Name="IOControlCode" FullName="System.Net.Sockets.IOControlCode">
+﻿<Type Name="IOControlCode" FullName="System.Net.Sockets.IOControlCode">
   <TypeSignature Language="C#" Value="public enum IOControlCode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IOControlCode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.IOControlCode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IOControlCode" />
+  <TypeSignature Language="F#" Value="type IOControlCode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class IOControlCode" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="AbsorbRouterAlert" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode AbsorbRouterAlert = int64(2550136837)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.AbsorbRouterAlert" />
+      <MemberSignature Language="VB.NET" Value="AbsorbRouterAlert" />
+      <MemberSignature Language="F#" Value="AbsorbRouterAlert = 2550136837" Usage="System.Net.Sockets.IOControlCode.AbsorbRouterAlert" />
+      <MemberSignature Language="C++ CLI" Value="AbsorbRouterAlert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -61,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2550136837</MemberValue>
       <Docs>
         <summary>This value is equal to the Winsock 2 SIO_ABSORB_RTRALERT constant.</summary>
       </Docs>
@@ -69,6 +76,9 @@
       <MemberSignature Language="C#" Value="AddMulticastGroupOnInterface" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode AddMulticastGroupOnInterface = int64(2550136842)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.AddMulticastGroupOnInterface" />
+      <MemberSignature Language="VB.NET" Value="AddMulticastGroupOnInterface" />
+      <MemberSignature Language="F#" Value="AddMulticastGroupOnInterface = 2550136842" Usage="System.Net.Sockets.IOControlCode.AddMulticastGroupOnInterface" />
+      <MemberSignature Language="C++ CLI" Value="AddMulticastGroupOnInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -87,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2550136842</MemberValue>
       <Docs>
         <summary>Join a multicast group using an interface identified by its index. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_INDEX_ADD_MCAST constant.</summary>
       </Docs>
@@ -95,6 +106,9 @@
       <MemberSignature Language="C#" Value="AddressListChange" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode AddressListChange = int64(671088663)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.AddressListChange" />
+      <MemberSignature Language="VB.NET" Value="AddressListChange" />
+      <MemberSignature Language="F#" Value="AddressListChange = 671088663" Usage="System.Net.Sockets.IOControlCode.AddressListChange" />
+      <MemberSignature Language="C++ CLI" Value="AddressListChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -113,6 +127,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>671088663</MemberValue>
       <Docs>
         <summary>Enable receiving notification when the list of local interfaces for the socket's protocol family changes. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_ADDRESS_LIST_CHANGE constant.</summary>
       </Docs>
@@ -121,6 +136,9 @@
       <MemberSignature Language="C#" Value="AddressListQuery" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode AddressListQuery = int64(1207959574)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.AddressListQuery" />
+      <MemberSignature Language="VB.NET" Value="AddressListQuery" />
+      <MemberSignature Language="F#" Value="AddressListQuery = 1207959574" Usage="System.Net.Sockets.IOControlCode.AddressListQuery" />
+      <MemberSignature Language="C++ CLI" Value="AddressListQuery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -139,6 +157,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>1207959574</MemberValue>
       <Docs>
         <summary>Return the list of local interfaces that the socket can bind to. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_ADDRESS_LIST_QUERY constant.</summary>
       </Docs>
@@ -147,6 +166,9 @@
       <MemberSignature Language="C#" Value="AddressListSort" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode AddressListSort = int64(3355443225)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.AddressListSort" />
+      <MemberSignature Language="VB.NET" Value="AddressListSort" />
+      <MemberSignature Language="F#" Value="AddressListSort = 3355443225" Usage="System.Net.Sockets.IOControlCode.AddressListSort" />
+      <MemberSignature Language="C++ CLI" Value="AddressListSort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -165,6 +187,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>3355443225</MemberValue>
       <Docs>
         <summary>Sort the structure returned by the <see cref="F:System.Net.Sockets.IOControlCode.AddressListQuery" /> field and add scope ID information for IPv6 addresses. This control code is supported on Windows XP and later operating systems. This value is equal to the Winsock 2 SIO_ADDRESS_LIST_SORT constant.</summary>
       </Docs>
@@ -173,6 +196,9 @@
       <MemberSignature Language="C#" Value="AssociateHandle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode AssociateHandle = int64(2281701377)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.AssociateHandle" />
+      <MemberSignature Language="VB.NET" Value="AssociateHandle" />
+      <MemberSignature Language="F#" Value="AssociateHandle = 2281701377" Usage="System.Net.Sockets.IOControlCode.AssociateHandle" />
+      <MemberSignature Language="C++ CLI" Value="AssociateHandle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -191,6 +217,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2281701377</MemberValue>
       <Docs>
         <summary>Associate this socket with the specified handle of a companion interface. Refer to the appropriate  protocol-specific annex in the Winsock 2 reference or documentation for the particular companion interface for additional details. It is recommended that the Component Object Model (COM) be used instead of this IOCTL to discover and track other interfaces that might be supported by a socket. This control code is present for backward compatibility with systems where COM is not available or cannot be used for some other reason. This value is equal to the Winsock 2 SIO_ASSOCIATE_HANDLE constant.</summary>
       </Docs>
@@ -199,6 +226,9 @@
       <MemberSignature Language="C#" Value="AsyncIO" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode AsyncIO = int64(2147772029)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.AsyncIO" />
+      <MemberSignature Language="VB.NET" Value="AsyncIO" />
+      <MemberSignature Language="F#" Value="AsyncIO = 2147772029" Usage="System.Net.Sockets.IOControlCode.AsyncIO" />
+      <MemberSignature Language="C++ CLI" Value="AsyncIO" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -217,6 +247,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2147772029</MemberValue>
       <Docs>
         <summary>Enable notification for when data is waiting to be received. This value is equal to the Winsock 2 FIOASYNC constant.</summary>
       </Docs>
@@ -225,6 +256,9 @@
       <MemberSignature Language="C#" Value="BindToInterface" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode BindToInterface = int64(2550136840)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.BindToInterface" />
+      <MemberSignature Language="VB.NET" Value="BindToInterface" />
+      <MemberSignature Language="F#" Value="BindToInterface = 2550136840" Usage="System.Net.Sockets.IOControlCode.BindToInterface" />
+      <MemberSignature Language="C++ CLI" Value="BindToInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -243,6 +277,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2550136840</MemberValue>
       <Docs>
         <summary>Bind the socket to a specified interface index. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_INDEX_BIND constant.</summary>
       </Docs>
@@ -251,6 +286,9 @@
       <MemberSignature Language="C#" Value="DataToRead" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode DataToRead = int64(1074030207)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.DataToRead" />
+      <MemberSignature Language="VB.NET" Value="DataToRead" />
+      <MemberSignature Language="F#" Value="DataToRead = 1074030207" Usage="System.Net.Sockets.IOControlCode.DataToRead" />
+      <MemberSignature Language="C++ CLI" Value="DataToRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -269,6 +307,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>1074030207</MemberValue>
       <Docs>
         <summary>Return the number of bytes available for reading. This value is equal to the Winsock 2 FIONREAD constant.</summary>
       </Docs>
@@ -277,6 +316,9 @@
       <MemberSignature Language="C#" Value="DeleteMulticastGroupFromInterface" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode DeleteMulticastGroupFromInterface = int64(2550136843)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.DeleteMulticastGroupFromInterface" />
+      <MemberSignature Language="VB.NET" Value="DeleteMulticastGroupFromInterface" />
+      <MemberSignature Language="F#" Value="DeleteMulticastGroupFromInterface = 2550136843" Usage="System.Net.Sockets.IOControlCode.DeleteMulticastGroupFromInterface" />
+      <MemberSignature Language="C++ CLI" Value="DeleteMulticastGroupFromInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -295,6 +337,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2550136843</MemberValue>
       <Docs>
         <summary>Remove the socket from a multicast group. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_INDEX_ADD_MCAST constant.</summary>
       </Docs>
@@ -303,6 +346,9 @@
       <MemberSignature Language="C#" Value="EnableCircularQueuing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode EnableCircularQueuing = int64(671088642)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.EnableCircularQueuing" />
+      <MemberSignature Language="VB.NET" Value="EnableCircularQueuing" />
+      <MemberSignature Language="F#" Value="EnableCircularQueuing = 671088642" Usage="System.Net.Sockets.IOControlCode.EnableCircularQueuing" />
+      <MemberSignature Language="C++ CLI" Value="EnableCircularQueuing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -321,6 +367,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>671088642</MemberValue>
       <Docs>
         <summary>Replace the oldest queued datagram with an incoming datagram when the incoming message queues are full. This value is equal to the Winsock 2 SIO_ENABLE_CIRCULAR_QUEUEING constant.</summary>
       </Docs>
@@ -329,6 +376,9 @@
       <MemberSignature Language="C#" Value="Flush" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode Flush = int64(671088644)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.Flush" />
+      <MemberSignature Language="VB.NET" Value="Flush" />
+      <MemberSignature Language="F#" Value="Flush = 671088644" Usage="System.Net.Sockets.IOControlCode.Flush" />
+      <MemberSignature Language="C++ CLI" Value="Flush" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -347,6 +397,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>671088644</MemberValue>
       <Docs>
         <summary>Discard the contents of the sending queue. This value is equal to the Winsock 2 SIO_FLUSH constant.</summary>
       </Docs>
@@ -355,6 +406,9 @@
       <MemberSignature Language="C#" Value="GetBroadcastAddress" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode GetBroadcastAddress = int64(1207959557)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.GetBroadcastAddress" />
+      <MemberSignature Language="VB.NET" Value="GetBroadcastAddress" />
+      <MemberSignature Language="F#" Value="GetBroadcastAddress = 1207959557" Usage="System.Net.Sockets.IOControlCode.GetBroadcastAddress" />
+      <MemberSignature Language="C++ CLI" Value="GetBroadcastAddress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -373,6 +427,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>1207959557</MemberValue>
       <Docs>
         <summary>Return a SOCKADDR structure that contains the broadcast address for the address family of the current socket. The returned address can be used with the <see cref="Overload:System.Net.Sockets.Socket.SendTo" /> method. This value is equal to the Winsock 2 SIO_GET_BROADCAST_ADDRESS constant. This value can be used on User Datagram Protocol (UDP) sockets only.</summary>
       </Docs>
@@ -381,6 +436,9 @@
       <MemberSignature Language="C#" Value="GetExtensionFunctionPointer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode GetExtensionFunctionPointer = int64(3355443206)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.GetExtensionFunctionPointer" />
+      <MemberSignature Language="VB.NET" Value="GetExtensionFunctionPointer" />
+      <MemberSignature Language="F#" Value="GetExtensionFunctionPointer = 3355443206" Usage="System.Net.Sockets.IOControlCode.GetExtensionFunctionPointer" />
+      <MemberSignature Language="C++ CLI" Value="GetExtensionFunctionPointer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -399,6 +457,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>3355443206</MemberValue>
       <Docs>
         <summary>Obtain provider-specific functions that are not part of the Winsock specification. Functions are specified using their provider-assigned GUID. This value is equal to the Winsock 2 SIO_GET_EXTENSION_FUNCTION_POINTER constant.</summary>
       </Docs>
@@ -407,6 +466,9 @@
       <MemberSignature Language="C#" Value="GetGroupQos" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode GetGroupQos = int64(3355443208)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.GetGroupQos" />
+      <MemberSignature Language="VB.NET" Value="GetGroupQos" />
+      <MemberSignature Language="F#" Value="GetGroupQos = 3355443208" Usage="System.Net.Sockets.IOControlCode.GetGroupQos" />
+      <MemberSignature Language="C++ CLI" Value="GetGroupQos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -425,6 +487,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>3355443208</MemberValue>
       <Docs>
         <summary>Return the Quality of Service (QOS) attributes for the socket group. This value is reserved for future use, and is equal to the Winsock 2 SIO_GET_GROUP_QOS constant.</summary>
       </Docs>
@@ -433,6 +496,9 @@
       <MemberSignature Language="C#" Value="GetQos" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode GetQos = int64(3355443207)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.GetQos" />
+      <MemberSignature Language="VB.NET" Value="GetQos" />
+      <MemberSignature Language="F#" Value="GetQos = 3355443207" Usage="System.Net.Sockets.IOControlCode.GetQos" />
+      <MemberSignature Language="C++ CLI" Value="GetQos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -451,6 +517,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>3355443207</MemberValue>
       <Docs>
         <summary>Retrieve the QOS structure associated with the socket. This control is only supported on platforms that provide a QOS capable transport (Windows Me, Windows 2000, and later.) This value is equal to the Winsock 2 SIO_GET_QOS constant.</summary>
       </Docs>
@@ -459,6 +526,9 @@
       <MemberSignature Language="C#" Value="KeepAliveValues" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode KeepAliveValues = int64(2550136836)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.KeepAliveValues" />
+      <MemberSignature Language="VB.NET" Value="KeepAliveValues" />
+      <MemberSignature Language="F#" Value="KeepAliveValues = 2550136836" Usage="System.Net.Sockets.IOControlCode.KeepAliveValues" />
+      <MemberSignature Language="C++ CLI" Value="KeepAliveValues" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -477,6 +547,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2550136836</MemberValue>
       <Docs>
         <summary>Control sending TCP keep-alive packets and the interval at which they are sent. This control code is supported on Windows 2000 and later operating systems. For additional information, see RFC 1122 section 4.2.3.6. This value is equal to the Winsock 2 SIO_KEEPALIVE_VALS constant.</summary>
       </Docs>
@@ -485,6 +556,9 @@
       <MemberSignature Language="C#" Value="LimitBroadcasts" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode LimitBroadcasts = int64(2550136839)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.LimitBroadcasts" />
+      <MemberSignature Language="VB.NET" Value="LimitBroadcasts" />
+      <MemberSignature Language="F#" Value="LimitBroadcasts = 2550136839" Usage="System.Net.Sockets.IOControlCode.LimitBroadcasts" />
+      <MemberSignature Language="C++ CLI" Value="LimitBroadcasts" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -503,6 +577,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2550136839</MemberValue>
       <Docs>
         <summary>This value is equal to the Winsock 2 SIO_LIMIT_BROADCASTS constant.</summary>
       </Docs>
@@ -511,6 +586,9 @@
       <MemberSignature Language="C#" Value="MulticastInterface" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode MulticastInterface = int64(2550136841)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.MulticastInterface" />
+      <MemberSignature Language="VB.NET" Value="MulticastInterface" />
+      <MemberSignature Language="F#" Value="MulticastInterface = 2550136841" Usage="System.Net.Sockets.IOControlCode.MulticastInterface" />
+      <MemberSignature Language="C++ CLI" Value="MulticastInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -529,6 +607,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2550136841</MemberValue>
       <Docs>
         <summary>Set the interface used for outgoing multicast packets. The interface is identified by its index. This control code is supported on Windows 2000 and later operating systems.  This value is equal to the Winsock 2 SIO_INDEX_MCASTIF constant.</summary>
       </Docs>
@@ -537,6 +616,9 @@
       <MemberSignature Language="C#" Value="MulticastScope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode MulticastScope = int64(2281701386)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.MulticastScope" />
+      <MemberSignature Language="VB.NET" Value="MulticastScope" />
+      <MemberSignature Language="F#" Value="MulticastScope = 2281701386" Usage="System.Net.Sockets.IOControlCode.MulticastScope" />
+      <MemberSignature Language="C++ CLI" Value="MulticastScope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -555,6 +637,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2281701386</MemberValue>
       <Docs>
         <summary>Control the number of times a multicast packet can be forwarded by a router, also known as the Time to Live (TTL), or hop count. This value is equal to the Winsock 2 SIO_MULTICAST_SCOPE constant.</summary>
       </Docs>
@@ -563,6 +646,9 @@
       <MemberSignature Language="C#" Value="MultipointLoopback" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode MultipointLoopback = int64(2281701385)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.MultipointLoopback" />
+      <MemberSignature Language="VB.NET" Value="MultipointLoopback" />
+      <MemberSignature Language="F#" Value="MultipointLoopback = 2281701385" Usage="System.Net.Sockets.IOControlCode.MultipointLoopback" />
+      <MemberSignature Language="C++ CLI" Value="MultipointLoopback" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -581,6 +667,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2281701385</MemberValue>
       <Docs>
         <summary>Control whether multicast data sent by the socket appears as incoming data in the sockets receive queue. This value is equal to the Winsock 2 SIO_MULTIPOINT_LOOPBACK constant.</summary>
       </Docs>
@@ -589,6 +676,9 @@
       <MemberSignature Language="C#" Value="NamespaceChange" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode NamespaceChange = int64(2281701401)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.NamespaceChange" />
+      <MemberSignature Language="VB.NET" Value="NamespaceChange" />
+      <MemberSignature Language="F#" Value="NamespaceChange = 2281701401" Usage="System.Net.Sockets.IOControlCode.NamespaceChange" />
+      <MemberSignature Language="C++ CLI" Value="NamespaceChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -607,6 +697,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2281701401</MemberValue>
       <Docs>
         <summary>Control whether the socket receives notification when a namespace query becomes invalid. This control code is supported on Windows XP and later operating systems. This value is equal to the Winsock 2 SIO_NSP_NOTIFY_CHANGE constant.</summary>
       </Docs>
@@ -615,6 +706,9 @@
       <MemberSignature Language="C#" Value="NonBlockingIO" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode NonBlockingIO = int64(2147772030)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.NonBlockingIO" />
+      <MemberSignature Language="VB.NET" Value="NonBlockingIO" />
+      <MemberSignature Language="F#" Value="NonBlockingIO = 2147772030" Usage="System.Net.Sockets.IOControlCode.NonBlockingIO" />
+      <MemberSignature Language="C++ CLI" Value="NonBlockingIO" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -633,6 +727,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2147772030</MemberValue>
       <Docs>
         <summary>Control the blocking behavior of the socket. If the argument specified with this control code is zero, the socket is placed in blocking mode. If the argument is nonzero, the socket is placed in nonblocking mode. This value is equal to the Winsock 2 FIONBIO constant.</summary>
       </Docs>
@@ -641,6 +736,9 @@
       <MemberSignature Language="C#" Value="OobDataRead" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode OobDataRead = int64(1074033415)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.OobDataRead" />
+      <MemberSignature Language="VB.NET" Value="OobDataRead" />
+      <MemberSignature Language="F#" Value="OobDataRead = 1074033415" Usage="System.Net.Sockets.IOControlCode.OobDataRead" />
+      <MemberSignature Language="C++ CLI" Value="OobDataRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -659,6 +757,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>1074033415</MemberValue>
       <Docs>
         <summary>Return information about out-of-band data waiting to be received. When using this control code on stream sockets, the return value indicates the number of bytes available.</summary>
       </Docs>
@@ -667,6 +766,9 @@
       <MemberSignature Language="C#" Value="QueryTargetPnpHandle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode QueryTargetPnpHandle = int64(1207959576)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.QueryTargetPnpHandle" />
+      <MemberSignature Language="VB.NET" Value="QueryTargetPnpHandle" />
+      <MemberSignature Language="F#" Value="QueryTargetPnpHandle = 1207959576" Usage="System.Net.Sockets.IOControlCode.QueryTargetPnpHandle" />
+      <MemberSignature Language="C++ CLI" Value="QueryTargetPnpHandle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -685,6 +787,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>1207959576</MemberValue>
       <Docs>
         <summary>Retrieve the underlying provider's SOCKET handle. This handle can be used to receive plug-and-play event notification. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_QUERY_TARGET_PNP_HANDLE constant.</summary>
       </Docs>
@@ -693,6 +796,9 @@
       <MemberSignature Language="C#" Value="ReceiveAll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode ReceiveAll = int64(2550136833)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.ReceiveAll" />
+      <MemberSignature Language="VB.NET" Value="ReceiveAll" />
+      <MemberSignature Language="F#" Value="ReceiveAll = 2550136833" Usage="System.Net.Sockets.IOControlCode.ReceiveAll" />
+      <MemberSignature Language="C++ CLI" Value="ReceiveAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -711,6 +817,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2550136833</MemberValue>
       <Docs>
         <summary>Enable receiving all IPv4 packets on the network. The socket must have address family <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" />, the socket type must be <see cref="F:System.Net.Sockets.SocketType.Raw" />, and the protocol type must be <see cref="F:System.Net.Sockets.ProtocolType.IP" />. The current user must belong to the Administrators group on the local computer, and the socket must be bound to a specific port. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_RCVALL constant.</summary>
       </Docs>
@@ -719,6 +826,9 @@
       <MemberSignature Language="C#" Value="ReceiveAllIgmpMulticast" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode ReceiveAllIgmpMulticast = int64(2550136835)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.ReceiveAllIgmpMulticast" />
+      <MemberSignature Language="VB.NET" Value="ReceiveAllIgmpMulticast" />
+      <MemberSignature Language="F#" Value="ReceiveAllIgmpMulticast = 2550136835" Usage="System.Net.Sockets.IOControlCode.ReceiveAllIgmpMulticast" />
+      <MemberSignature Language="C++ CLI" Value="ReceiveAllIgmpMulticast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -737,6 +847,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2550136835</MemberValue>
       <Docs>
         <summary>Enable receiving all Internet Group Management Protocol (IGMP) packets on the network. The socket must have address family <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" />, the socket type must be <see cref="F:System.Net.Sockets.SocketType.Raw" />, and the protocol type must be <see cref="F:System.Net.Sockets.ProtocolType.Igmp" />. The current user must belong to the Administrators group on the local computer, and the socket must be bound to a specific port. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_RCVALL_IGMPMCAST constant.</summary>
       </Docs>
@@ -745,6 +856,9 @@
       <MemberSignature Language="C#" Value="ReceiveAllMulticast" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode ReceiveAllMulticast = int64(2550136834)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.ReceiveAllMulticast" />
+      <MemberSignature Language="VB.NET" Value="ReceiveAllMulticast" />
+      <MemberSignature Language="F#" Value="ReceiveAllMulticast = 2550136834" Usage="System.Net.Sockets.IOControlCode.ReceiveAllMulticast" />
+      <MemberSignature Language="C++ CLI" Value="ReceiveAllMulticast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -763,6 +877,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2550136834</MemberValue>
       <Docs>
         <summary>Enable receiving all multicast IPv4 packets on the network. These are packets with destination addresses in the range 224.0.0.0 through 239.255.255.255. The socket must have address family <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" />, the socket type must be <see cref="F:System.Net.Sockets.SocketType.Raw" />, and the protocol type must be <see cref="F:System.Net.Sockets.ProtocolType.Udp" />. The current user must belong to the Administrators group on the local computer, and the socket must be bound to a specific port. This control code is supported on Windows 2000 and later operating systems. This value is equal to the Winsock 2 SIO_RCVALL_MCAST constant.</summary>
       </Docs>
@@ -771,6 +886,9 @@
       <MemberSignature Language="C#" Value="RoutingInterfaceChange" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode RoutingInterfaceChange = int64(2281701397)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.RoutingInterfaceChange" />
+      <MemberSignature Language="VB.NET" Value="RoutingInterfaceChange" />
+      <MemberSignature Language="F#" Value="RoutingInterfaceChange = 2281701397" Usage="System.Net.Sockets.IOControlCode.RoutingInterfaceChange" />
+      <MemberSignature Language="C++ CLI" Value="RoutingInterfaceChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -789,6 +907,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2281701397</MemberValue>
       <Docs>
         <summary>Enable receiving notification when the local interface used to access a remote endpoint changes. This value is equal to the Winsock 2 SIO_ROUTING_INTERFACE_CHANGE constant.</summary>
       </Docs>
@@ -797,6 +916,9 @@
       <MemberSignature Language="C#" Value="RoutingInterfaceQuery" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode RoutingInterfaceQuery = int64(3355443220)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.RoutingInterfaceQuery" />
+      <MemberSignature Language="VB.NET" Value="RoutingInterfaceQuery" />
+      <MemberSignature Language="F#" Value="RoutingInterfaceQuery = 3355443220" Usage="System.Net.Sockets.IOControlCode.RoutingInterfaceQuery" />
+      <MemberSignature Language="C++ CLI" Value="RoutingInterfaceQuery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -815,6 +937,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>3355443220</MemberValue>
       <Docs>
         <summary>Return the interface addresses that can be used to connect to the specified remote address. This value is equal to the Winsock 2 SIO_ROUTING_INTERFACE_QUERY constant.</summary>
       </Docs>
@@ -823,6 +946,9 @@
       <MemberSignature Language="C#" Value="SetGroupQos" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode SetGroupQos = int64(2281701388)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.SetGroupQos" />
+      <MemberSignature Language="VB.NET" Value="SetGroupQos" />
+      <MemberSignature Language="F#" Value="SetGroupQos = 2281701388" Usage="System.Net.Sockets.IOControlCode.SetGroupQos" />
+      <MemberSignature Language="C++ CLI" Value="SetGroupQos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -841,6 +967,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2281701388</MemberValue>
       <Docs>
         <summary>Set the Quality of Service (QOS) attributes for the socket group. This value is reserved for future use and is equal to the Winsock 2 SIO_SET_GROUP_QOS constant.</summary>
       </Docs>
@@ -849,6 +976,9 @@
       <MemberSignature Language="C#" Value="SetQos" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode SetQos = int64(2281701387)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.SetQos" />
+      <MemberSignature Language="VB.NET" Value="SetQos" />
+      <MemberSignature Language="F#" Value="SetQos = 2281701387" Usage="System.Net.Sockets.IOControlCode.SetQos" />
+      <MemberSignature Language="C++ CLI" Value="SetQos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -867,6 +997,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2281701387</MemberValue>
       <Docs>
         <summary>Set the Quality of Service (QOS) attributes for the socket. QOS defines the bandwidth requirements for the socket. This control code is supported on Windows Me, Windows 2000, and later operating systems. This value is equal to the Winsock 2 SIO_SET_QOS constant.</summary>
       </Docs>
@@ -875,6 +1006,9 @@
       <MemberSignature Language="C#" Value="TranslateHandle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode TranslateHandle = int64(3355443213)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.TranslateHandle" />
+      <MemberSignature Language="VB.NET" Value="TranslateHandle" />
+      <MemberSignature Language="F#" Value="TranslateHandle = 3355443213" Usage="System.Net.Sockets.IOControlCode.TranslateHandle" />
+      <MemberSignature Language="C++ CLI" Value="TranslateHandle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -893,6 +1027,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>3355443213</MemberValue>
       <Docs>
         <summary>Return a handle for the socket that is valid in the context of a companion interface. This value is equal to the Winsock 2 SIO_TRANSLATE_HANDLE constant.</summary>
       </Docs>
@@ -901,6 +1036,9 @@
       <MemberSignature Language="C#" Value="UnicastInterface" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.IOControlCode UnicastInterface = int64(2550136838)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.IOControlCode.UnicastInterface" />
+      <MemberSignature Language="VB.NET" Value="UnicastInterface" />
+      <MemberSignature Language="F#" Value="UnicastInterface = 2550136838" Usage="System.Net.Sockets.IOControlCode.UnicastInterface" />
+      <MemberSignature Language="C++ CLI" Value="UnicastInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -919,6 +1057,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.IOControlCode</ReturnType>
       </ReturnValue>
+      <MemberValue>2550136838</MemberValue>
       <Docs>
         <summary>Set the interface used for outgoing unicast packets. This value is equal to the Winsock 2 SIO_UCAST_IF constant.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="CodeLabeledStatement" FullName="System.CodeDom.CodeLabeledStatement">
+﻿<Type Name="CodeLabeledStatement" FullName="System.CodeDom.CodeLabeledStatement">
   <TypeSignature Language="C#" Value="public class CodeLabeledStatement : System.CodeDom.CodeStatement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeLabeledStatement extends System.CodeDom.CodeStatement" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeLabeledStatement" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeLabeledStatement&#xA;Inherits CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeLabeledStatement = class&#xA;    inherit CodeStatement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeLabeledStatement : System::CodeDom::CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -49,10 +52,21 @@
     <altmember cref="T:System.CodeDom.CodeGotoStatement" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeLabeledStatement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeLabeledStatement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeLabeledStatement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeLabeledStatement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -72,6 +86,9 @@
       <MemberSignature Language="C#" Value="public CodeLabeledStatement (string label);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string label) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeLabeledStatement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (label As String)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeLabeledStatement : string -&gt; System.CodeDom.CodeLabeledStatement" Usage="new System.CodeDom.CodeLabeledStatement label" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeLabeledStatement(System::String ^ label);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -94,6 +111,9 @@
       <MemberSignature Language="C#" Value="public CodeLabeledStatement (string label, System.CodeDom.CodeStatement statement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string label, class System.CodeDom.CodeStatement statement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeLabeledStatement.#ctor(System.String,System.CodeDom.CodeStatement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (label As String, statement As CodeStatement)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeLabeledStatement : string * System.CodeDom.CodeStatement -&gt; System.CodeDom.CodeLabeledStatement" Usage="new System.CodeDom.CodeLabeledStatement (label, statement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeLabeledStatement(System::String ^ label, System::CodeDom::CodeStatement ^ statement);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +138,9 @@
       <MemberSignature Language="C#" Value="public string Label { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeLabeledStatement.Label" />
+      <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.CodeDom.CodeLabeledStatement.Label" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -140,6 +163,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeStatement Statement { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeStatement Statement" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeLabeledStatement.Statement" />
+      <MemberSignature Language="VB.NET" Value="Public Property Statement As CodeStatement" />
+      <MemberSignature Language="F#" Value="member this.Statement : System.CodeDom.CodeStatement with get, set" Usage="System.CodeDom.CodeLabeledStatement.Statement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatement ^ Statement { System::CodeDom::CodeStatement ^ get(); void set(System::CodeDom::CodeStatement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,14 +191,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeLabeledStatement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

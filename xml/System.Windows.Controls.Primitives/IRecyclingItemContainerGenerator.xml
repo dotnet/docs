@@ -1,7 +1,10 @@
-<Type Name="IRecyclingItemContainerGenerator" FullName="System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator">
+﻿<Type Name="IRecyclingItemContainerGenerator" FullName="System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator">
   <TypeSignature Language="C#" Value="public interface IRecyclingItemContainerGenerator : System.Windows.Controls.Primitives.IItemContainerGenerator" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRecyclingItemContainerGenerator implements class System.Windows.Controls.Primitives.IItemContainerGenerator" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRecyclingItemContainerGenerator&#xA;Implements IItemContainerGenerator" />
+  <TypeSignature Language="F#" Value="type IRecyclingItemContainerGenerator = interface&#xA;    interface IItemContainerGenerator" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRecyclingItemContainerGenerator : System::Windows::Controls::Primitives::IItemContainerGenerator" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public void Recycle (System.Windows.Controls.Primitives.GeneratorPosition position, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Recycle(valuetype System.Windows.Controls.Primitives.GeneratorPosition position, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IRecyclingItemContainerGenerator.Recycle(System.Windows.Controls.Primitives.GeneratorPosition,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Recycle (position As GeneratorPosition, count As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Recycle : System.Windows.Controls.Primitives.GeneratorPosition * int -&gt; unit" Usage="iRecyclingItemContainerGenerator.Recycle (position, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Recycle(System::Windows::Controls::Primitives::GeneratorPosition position, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

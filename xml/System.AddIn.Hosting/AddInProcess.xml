@@ -1,7 +1,10 @@
-<Type Name="AddInProcess" FullName="System.AddIn.Hosting.AddInProcess">
+﻿<Type Name="AddInProcess" FullName="System.AddIn.Hosting.AddInProcess">
   <TypeSignature Language="C#" Value="public sealed class AddInProcess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AddInProcess extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInProcess" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AddInProcess" />
+  <TypeSignature Language="F#" Value="type AddInProcess = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AddInProcess sealed" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,10 +35,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Hosting.AddInProcess" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AddInProcess ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInProcess.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AddInProcess();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -64,6 +78,8 @@
       <MemberSignature Language="C#" Value="public AddInProcess (System.AddIn.Hosting.Platform platform);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.AddIn.Hosting.Platform platform) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInProcess.#ctor(System.AddIn.Hosting.Platform)" />
+      <MemberSignature Language="F#" Value="new System.AddIn.Hosting.AddInProcess : System.AddIn.Hosting.Platform -&gt; System.AddIn.Hosting.AddInProcess" Usage="new System.AddIn.Hosting.AddInProcess platform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AddInProcess(System::AddIn::Hosting::Platform platform);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -107,6 +123,9 @@
       <MemberSignature Language="C#" Value="public bool IsCurrentProcess { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCurrentProcess" />
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInProcess.IsCurrentProcess" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCurrentProcess As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCurrentProcess : bool" Usage="System.AddIn.Hosting.AddInProcess.IsCurrentProcess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCurrentProcess { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -144,6 +163,9 @@
       <MemberSignature Language="C#" Value="public bool KeepAlive { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool KeepAlive" />
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInProcess.KeepAlive" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeepAlive As Boolean" />
+      <MemberSignature Language="F#" Value="member this.KeepAlive : bool with get, set" Usage="System.AddIn.Hosting.AddInProcess.KeepAlive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepAlive { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -170,6 +192,9 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Hosting.Platform Platform { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.AddIn.Hosting.Platform Platform" />
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInProcess.Platform" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Platform As Platform" />
+      <MemberSignature Language="F#" Value="member this.Platform : System.AddIn.Hosting.Platform" Usage="System.AddIn.Hosting.AddInProcess.Platform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::AddIn::Hosting::Platform Platform { System::AddIn::Hosting::Platform get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -195,6 +220,9 @@
       <MemberSignature Language="C#" Value="public int ProcessId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ProcessId" />
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInProcess.ProcessId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProcessId As Integer" />
+      <MemberSignature Language="F#" Value="member this.ProcessId : int" Usage="System.AddIn.Hosting.AddInProcess.ProcessId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProcessId { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -221,6 +249,9 @@
       <MemberSignature Language="C#" Value="public bool Shutdown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Shutdown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInProcess.Shutdown" />
+      <MemberSignature Language="VB.NET" Value="Public Function Shutdown () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Shutdown : unit -&gt; bool" Usage="addInProcess.Shutdown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Shutdown();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -242,6 +273,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.CancelEventArgs&gt; ShuttingDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.CancelEventArgs&gt; ShuttingDown" />
       <MemberSignature Language="DocId" Value="E:System.AddIn.Hosting.AddInProcess.ShuttingDown" />
+      <MemberSignature Language="VB.NET" Value="Public Event ShuttingDown As EventHandler(Of CancelEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ShuttingDown : EventHandler&lt;System.ComponentModel.CancelEventArgs&gt; " Usage="member this.ShuttingDown : System.EventHandler&lt;System.ComponentModel.CancelEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::CancelEventArgs ^&gt; ^ ShuttingDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -259,6 +293,9 @@
       <MemberSignature Language="C#" Value="public bool Start ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Start() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInProcess.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Function Start () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Start : unit -&gt; bool" Usage="addInProcess.Start " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Start();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -285,6 +322,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan StartupTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan StartupTimeout" />
       <MemberSignature Language="DocId" Value="P:System.AddIn.Hosting.AddInProcess.StartupTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartupTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.StartupTimeout : TimeSpan with get, set" Usage="System.AddIn.Hosting.AddInProcess.StartupTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan StartupTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -308,14 +348,5 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than 0 (zero).</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.AddIn</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.AddIn.Hosting.AddInProcess" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

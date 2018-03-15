@@ -1,7 +1,10 @@
-<Type Name="HitTestFilterCallback" FullName="System.Windows.Media.HitTestFilterCallback">
+﻿<Type Name="HitTestFilterCallback" FullName="System.Windows.Media.HitTestFilterCallback">
   <TypeSignature Language="C#" Value="public delegate System.Windows.Media.HitTestFilterBehavior HitTestFilterCallback(DependencyObject potentialHitTestTarget);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HitTestFilterCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestFilterCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function HitTestFilterCallback(potentialHitTestTarget As DependencyObject) As HitTestFilterBehavior " />
+  <TypeSignature Language="F#" Value="type HitTestFilterCallback = delegate of DependencyObject -&gt; HitTestFilterBehavior" />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::Windows::Media::HitTestFilterBehavior HitTestFilterCallback(DependencyObject ^ potentialHitTestTarget);" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

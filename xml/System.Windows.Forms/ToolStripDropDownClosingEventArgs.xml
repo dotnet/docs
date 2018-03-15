@@ -1,7 +1,10 @@
-<Type Name="ToolStripDropDownClosingEventArgs" FullName="System.Windows.Forms.ToolStripDropDownClosingEventArgs">
+﻿<Type Name="ToolStripDropDownClosingEventArgs" FullName="System.Windows.Forms.ToolStripDropDownClosingEventArgs">
   <TypeSignature Language="C#" Value="public class ToolStripDropDownClosingEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripDropDownClosingEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripDropDownClosingEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolStripDropDownClosingEventArgs&#xA;Inherits CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type ToolStripDropDownClosingEventArgs = class&#xA;    inherit CancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolStripDropDownClosingEventArgs : System::ComponentModel::CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="public ToolStripDropDownClosingEventArgs (System.Windows.Forms.ToolStripDropDownCloseReason reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.ToolStripDropDownCloseReason reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripDropDownClosingEventArgs.#ctor(System.Windows.Forms.ToolStripDropDownCloseReason)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reason As ToolStripDropDownCloseReason)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripDropDownClosingEventArgs : System.Windows.Forms.ToolStripDropDownCloseReason -&gt; System.Windows.Forms.ToolStripDropDownClosingEventArgs" Usage="new System.Windows.Forms.ToolStripDropDownClosingEventArgs reason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripDropDownClosingEventArgs(System::Windows::Forms::ToolStripDropDownCloseReason reason);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +71,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripDropDownCloseReason CloseReason { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ToolStripDropDownCloseReason CloseReason" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripDropDownClosingEventArgs.CloseReason" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CloseReason As ToolStripDropDownCloseReason" />
+      <MemberSignature Language="F#" Value="member this.CloseReason : System.Windows.Forms.ToolStripDropDownCloseReason" Usage="System.Windows.Forms.ToolStripDropDownClosingEventArgs.CloseReason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripDropDownCloseReason CloseReason { System::Windows::Forms::ToolStripDropDownCloseReason get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

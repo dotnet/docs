@@ -1,7 +1,10 @@
-<Type Name="SkewTransform" FullName="System.Windows.Media.SkewTransform">
+﻿<Type Name="SkewTransform" FullName="System.Windows.Media.SkewTransform">
   <TypeSignature Language="C#" Value="public sealed class SkewTransform : System.Windows.Media.Transform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SkewTransform extends System.Windows.Media.Transform" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.SkewTransform" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SkewTransform&#xA;Inherits Transform" />
+  <TypeSignature Language="F#" Value="type SkewTransform = class&#xA;    inherit Transform" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SkewTransform sealed : System::Windows::Media::Transform" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +27,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.SkewTransform" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SkewTransform ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.SkewTransform.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SkewTransform();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +57,9 @@
       <MemberSignature Language="C#" Value="public SkewTransform (double angleX, double angleY);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 angleX, float64 angleY) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.SkewTransform.#ctor(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (angleX As Double, angleY As Double)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.SkewTransform : double * double -&gt; System.Windows.Media.SkewTransform" Usage="new System.Windows.Media.SkewTransform (angleX, angleY)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SkewTransform(double angleX, double angleY);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +80,9 @@
       <MemberSignature Language="C#" Value="public SkewTransform (double angleX, double angleY, double centerX, double centerY);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 angleX, float64 angleY, float64 centerX, float64 centerY) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.SkewTransform.#ctor(System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (angleX As Double, angleY As Double, centerX As Double, centerY As Double)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.SkewTransform : double * double * double * double -&gt; System.Windows.Media.SkewTransform" Usage="new System.Windows.Media.SkewTransform (angleX, angleY, centerX, centerY)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SkewTransform(double angleX, double angleY, double centerX, double centerY);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -87,6 +107,9 @@
       <MemberSignature Language="C#" Value="public double AngleX { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 AngleX" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.SkewTransform.AngleX" />
+      <MemberSignature Language="VB.NET" Value="Public Property AngleX As Double" />
+      <MemberSignature Language="F#" Value="member this.AngleX : double with get, set" Usage="System.Windows.Media.SkewTransform.AngleX" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double AngleX { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -120,6 +143,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AngleXProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AngleXProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.SkewTransform.AngleXProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AngleXProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable AngleXProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.SkewTransform.AngleXProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AngleXProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -137,6 +163,9 @@
       <MemberSignature Language="C#" Value="public double AngleY { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 AngleY" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.SkewTransform.AngleY" />
+      <MemberSignature Language="VB.NET" Value="Public Property AngleY As Double" />
+      <MemberSignature Language="F#" Value="member this.AngleY : double with get, set" Usage="System.Windows.Media.SkewTransform.AngleY" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double AngleY { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -170,6 +199,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AngleYProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AngleYProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.SkewTransform.AngleYProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AngleYProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable AngleYProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.SkewTransform.AngleYProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AngleYProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +219,9 @@
       <MemberSignature Language="C#" Value="public double CenterX { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 CenterX" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.SkewTransform.CenterX" />
+      <MemberSignature Language="VB.NET" Value="Public Property CenterX As Double" />
+      <MemberSignature Language="F#" Value="member this.CenterX : double with get, set" Usage="System.Windows.Media.SkewTransform.CenterX" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CenterX { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -220,6 +255,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CenterXProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CenterXProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.SkewTransform.CenterXProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CenterXProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CenterXProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.SkewTransform.CenterXProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CenterXProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -237,6 +275,9 @@
       <MemberSignature Language="C#" Value="public double CenterY { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 CenterY" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.SkewTransform.CenterY" />
+      <MemberSignature Language="VB.NET" Value="Public Property CenterY As Double" />
+      <MemberSignature Language="F#" Value="member this.CenterY : double with get, set" Usage="System.Windows.Media.SkewTransform.CenterY" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double CenterY { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -270,6 +311,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CenterYProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CenterYProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.SkewTransform.CenterYProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CenterYProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CenterYProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.SkewTransform.CenterYProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CenterYProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -287,6 +331,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.SkewTransform Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.SkewTransform Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.SkewTransform.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As SkewTransform" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.SkewTransform" Usage="skewTransform.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::SkewTransform ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -317,6 +364,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.SkewTransform CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.SkewTransform CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.SkewTransform.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As SkewTransform" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.SkewTransform" Usage="skewTransform.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::SkewTransform ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -345,6 +395,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.SkewTransform.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="skewTransform.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -364,6 +417,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Media.Matrix Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Matrix Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.SkewTransform.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Matrix" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Windows.Media.Matrix" Usage="System.Windows.Media.SkewTransform.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Matrix Value { System::Windows::Media::Matrix get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -378,14 +434,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.SkewTransform" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

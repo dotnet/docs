@@ -1,7 +1,10 @@
-<Type Name="ReturnOutOfFinally" FullName="Microsoft.JScript.ReturnOutOfFinally">
+﻿<Type Name="ReturnOutOfFinally" FullName="Microsoft.JScript.ReturnOutOfFinally">
   <TypeSignature Language="C#" Value="public sealed class ReturnOutOfFinally : ApplicationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ReturnOutOfFinally extends System.ApplicationException" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ReturnOutOfFinally" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReturnOutOfFinally&#xA;Inherits ApplicationException" />
+  <TypeSignature Language="F#" Value="type ReturnOutOfFinally = class&#xA;    inherit ApplicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReturnOutOfFinally sealed : ApplicationException" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -17,10 +20,22 @@
     <altmember cref="T:Microsoft.JScript.Try" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ReturnOutOfFinally" /> class.</summary>
+        <altmember cref="T:Microsoft.JScript.Try" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ReturnOutOfFinally ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ReturnOutOfFinally.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReturnOutOfFinally();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -38,6 +53,9 @@
       <MemberSignature Language="C#" Value="public ReturnOutOfFinally (string m);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string m) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ReturnOutOfFinally.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (m As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.ReturnOutOfFinally : string -&gt; Microsoft.JScript.ReturnOutOfFinally" Usage="new Microsoft.JScript.ReturnOutOfFinally m" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReturnOutOfFinally(System::String ^ m);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -58,6 +76,9 @@
       <MemberSignature Language="C#" Value="public ReturnOutOfFinally (string m, Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string m, class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ReturnOutOfFinally.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (m As String, e As Exception)" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.ReturnOutOfFinally : string * Exception -&gt; Microsoft.JScript.ReturnOutOfFinally" Usage="new Microsoft.JScript.ReturnOutOfFinally (m, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReturnOutOfFinally(System::String ^ m, Exception ^ e);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -76,15 +97,5 @@
         <altmember cref="T:Microsoft.JScript.Try" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.ReturnOutOfFinally" /> class.</summary>
-        <altmember cref="T:Microsoft.JScript.Try" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

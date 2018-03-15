@@ -1,7 +1,10 @@
-<Type Name="ConstraintException" FullName="System.Data.ConstraintException">
+﻿<Type Name="ConstraintException" FullName="System.Data.ConstraintException">
   <TypeSignature Language="C#" Value="public class ConstraintException : System.Data.DataException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ConstraintException extends System.Data.DataException" />
   <TypeSignature Language="DocId" Value="T:System.Data.ConstraintException" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConstraintException&#xA;Inherits DataException" />
+  <TypeSignature Language="F#" Value="type ConstraintException = class&#xA;    inherit DataException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConstraintException : System::Data::DataException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,10 +38,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.ConstraintException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ConstraintException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstraintException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -63,6 +78,9 @@
       <MemberSignature Language="C#" Value="public ConstraintException (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (s As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.ConstraintException : string -&gt; System.Data.ConstraintException" Usage="new System.Data.ConstraintException s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstraintException(System::String ^ s);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -90,6 +108,9 @@
       <MemberSignature Language="C#" Value="protected ConstraintException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Data.ConstraintException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Data.ConstraintException" Usage="new System.Data.ConstraintException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ConstraintException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -119,6 +140,9 @@
       <MemberSignature Language="C#" Value="public ConstraintException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ConstraintException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Data.ConstraintException : string * Exception -&gt; System.Data.ConstraintException" Usage="new System.Data.ConstraintException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConstraintException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -144,15 +168,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.ConstraintException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

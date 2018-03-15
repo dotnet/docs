@@ -1,7 +1,10 @@
-<Type Name="DbFunctionExpression" FullName="System.Data.Common.CommandTrees.DbFunctionExpression">
+﻿<Type Name="DbFunctionExpression" FullName="System.Data.Common.CommandTrees.DbFunctionExpression">
   <TypeSignature Language="C#" Value="public sealed class DbFunctionExpression : System.Data.Common.CommandTrees.DbExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DbFunctionExpression extends System.Data.Common.CommandTrees.DbExpression" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.DbFunctionExpression" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DbFunctionExpression&#xA;Inherits DbExpression" />
+  <TypeSignature Language="F#" Value="type DbFunctionExpression = class&#xA;    inherit DbExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DbFunctionExpression sealed : System::Data::Common::CommandTrees::DbExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public override void Accept (System.Data.Common.CommandTrees.DbExpressionVisitor visitor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Accept(class System.Data.Common.CommandTrees.DbExpressionVisitor visitor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbFunctionExpression.Accept(System.Data.Common.CommandTrees.DbExpressionVisitor)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Accept (visitor As DbExpressionVisitor)" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Data.Common.CommandTrees.DbExpressionVisitor -&gt; unit" Usage="dbFunctionExpression.Accept visitor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Accept(System::Data::Common::CommandTrees::DbExpressionVisitor ^ visitor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -49,6 +55,9 @@
       <MemberSignature Language="C#" Value="public override TResultType Accept&lt;TResultType&gt; (System.Data.Common.CommandTrees.DbExpressionVisitor&lt;TResultType&gt; visitor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!TResultType Accept&lt;TResultType&gt;(class System.Data.Common.CommandTrees.DbExpressionVisitor`1&lt;!!TResultType&gt; visitor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.DbFunctionExpression.Accept``1(System.Data.Common.CommandTrees.DbExpressionVisitor{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Accept(Of TResultType) (visitor As DbExpressionVisitor(Of TResultType)) As TResultType" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Data.Common.CommandTrees.DbExpressionVisitor&lt;'ResultType&gt; -&gt; 'ResultType" Usage="dbFunctionExpression.Accept visitor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TResultType&gt;&#xA; override TResultType Accept(System::Data::Common::CommandTrees::DbExpressionVisitor&lt;TResultType&gt; ^ visitor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -77,6 +86,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbExpression&gt; Arguments { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Data.Common.CommandTrees.DbExpression&gt; Arguments" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbFunctionExpression.Arguments" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Arguments As IList(Of DbExpression)" />
+      <MemberSignature Language="F#" Value="member this.Arguments : System.Collections.Generic.IList&lt;System.Data.Common.CommandTrees.DbExpression&gt;" Usage="System.Data.Common.CommandTrees.DbFunctionExpression.Arguments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ Arguments { System::Collections::Generic::IList&lt;System::Data::Common::CommandTrees::DbExpression ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -95,6 +107,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EdmFunction Function { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.EdmFunction Function" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.CommandTrees.DbFunctionExpression.Function" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Function As EdmFunction" />
+      <MemberSignature Language="F#" Value="member this.Function : System.Data.Metadata.Edm.EdmFunction" Usage="System.Data.Common.CommandTrees.DbFunctionExpression.Function" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EdmFunction ^ Function { System::Data::Metadata::Edm::EdmFunction ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

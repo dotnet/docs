@@ -1,7 +1,10 @@
-<Type Name="WebBrowserNavigatedEventHandler" FullName="System.Windows.Forms.WebBrowserNavigatedEventHandler">
+﻿<Type Name="WebBrowserNavigatedEventHandler" FullName="System.Windows.Forms.WebBrowserNavigatedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void WebBrowserNavigatedEventHandler(object sender, WebBrowserNavigatedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebBrowserNavigatedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserNavigatedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub WebBrowserNavigatedEventHandler(sender As Object, e As WebBrowserNavigatedEventArgs)" />
+  <TypeSignature Language="F#" Value="type WebBrowserNavigatedEventHandler = delegate of obj * WebBrowserNavigatedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void WebBrowserNavigatedEventHandler(System::Object ^ sender, WebBrowserNavigatedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

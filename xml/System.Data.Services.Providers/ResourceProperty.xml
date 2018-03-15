@@ -1,7 +1,10 @@
-<Type Name="ResourceProperty" FullName="System.Data.Services.Providers.ResourceProperty">
+﻿<Type Name="ResourceProperty" FullName="System.Data.Services.Providers.ResourceProperty">
   <TypeSignature Language="C#" Value="public class ResourceProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResourceProperty extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Providers.ResourceProperty" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResourceProperty" />
+  <TypeSignature Language="F#" Value="type ResourceProperty = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResourceProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public ResourceProperty (string name, System.Data.Services.Providers.ResourcePropertyKind kind, System.Data.Services.Providers.ResourceType propertyResourceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Data.Services.Providers.ResourcePropertyKind kind, class System.Data.Services.Providers.ResourceType propertyResourceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.ResourceProperty.#ctor(System.String,System.Data.Services.Providers.ResourcePropertyKind,System.Data.Services.Providers.ResourceType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, kind As ResourcePropertyKind, propertyResourceType As ResourceType)" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Providers.ResourceProperty : string * System.Data.Services.Providers.ResourcePropertyKind * System.Data.Services.Providers.ResourceType -&gt; System.Data.Services.Providers.ResourceProperty" Usage="new System.Data.Services.Providers.ResourceProperty (name, kind, propertyResourceType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceProperty(System::String ^ name, System::Data::Services::Providers::ResourcePropertyKind kind, System::Data::Services::Providers::ResourceType ^ propertyResourceType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -81,6 +87,9 @@
       <MemberSignature Language="C#" Value="public bool CanReflectOnInstanceTypeProperty { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanReflectOnInstanceTypeProperty" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceProperty.CanReflectOnInstanceTypeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanReflectOnInstanceTypeProperty As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanReflectOnInstanceTypeProperty : bool with get, set" Usage="System.Data.Services.Providers.ResourceProperty.CanReflectOnInstanceTypeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanReflectOnInstanceTypeProperty { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -109,6 +118,9 @@
       <MemberSignature Language="C#" Value="public object CustomState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CustomState" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceProperty.CustomState" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomState As Object" />
+      <MemberSignature Language="F#" Value="member this.CustomState : obj with get, set" Usage="System.Data.Services.Providers.ResourceProperty.CustomState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CustomState { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -127,6 +139,9 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceProperty.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Data.Services.Providers.ResourceProperty.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -146,6 +161,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourcePropertyKind Kind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Services.Providers.ResourcePropertyKind Kind" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceProperty.Kind" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Kind As ResourcePropertyKind" />
+      <MemberSignature Language="F#" Value="member this.Kind : System.Data.Services.Providers.ResourcePropertyKind" Usage="System.Data.Services.Providers.ResourceProperty.Kind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Providers::ResourcePropertyKind Kind { System::Data::Services::Providers::ResourcePropertyKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -172,6 +190,9 @@
       <MemberSignature Language="C#" Value="public string MimeType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MimeType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceProperty.MimeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MimeType As String" />
+      <MemberSignature Language="F#" Value="member this.MimeType : string with get, set" Usage="System.Data.Services.Providers.ResourceProperty.MimeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MimeType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -202,6 +223,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Data.Services.Providers.ResourceProperty.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -225,6 +249,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Providers.ResourceType ResourceType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Providers.ResourceType ResourceType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Providers.ResourceProperty.ResourceType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceType As ResourceType" />
+      <MemberSignature Language="F#" Value="member this.ResourceType : System.Data.Services.Providers.ResourceType" Usage="System.Data.Services.Providers.ResourceProperty.ResourceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Providers::ResourceType ^ ResourceType { System::Data::Services::Providers::ResourceType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -248,6 +275,9 @@
       <MemberSignature Language="C#" Value="public void SetReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Providers.ResourceProperty.SetReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetReadOnly ()" />
+      <MemberSignature Language="F#" Value="member this.SetReadOnly : unit -&gt; unit" Usage="resourceProperty.SetReadOnly " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

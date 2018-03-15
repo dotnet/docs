@@ -1,7 +1,10 @@
-<Type Name="ListBox" FullName="System.Web.UI.WebControls.ListBox">
+﻿<Type Name="ListBox" FullName="System.Web.UI.WebControls.ListBox">
   <TypeSignature Language="C#" Value="public class ListBox : System.Web.UI.WebControls.ListControl, System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListBox extends System.Web.UI.WebControls.ListControl implements class System.Web.UI.IPostBackDataHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListBox" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListBox&#xA;Inherits ListControl&#xA;Implements IPostBackDataHandler" />
+  <TypeSignature Language="F#" Value="type ListBox = class&#xA;    inherit ListControl&#xA;    interface IPostBackDataHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListBox : System::Web::UI::WebControls::ListControl, System::Web::UI::IPostBackDataHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -148,6 +151,8 @@
       <MemberSignature Language="C#" Value="public ListBox ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListBox();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +175,9 @@
       <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="listBox.AddAttributesToRender writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -204,6 +212,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BorderColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListBox.BorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BorderColor : System.Drawing.Color with get, set" Usage="System.Web.UI.WebControls.ListBox.BorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -236,6 +247,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.BorderStyle BorderStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.BorderStyle BorderStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListBox.BorderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BorderStyle As BorderStyle" />
+      <MemberSignature Language="F#" Value="member this.BorderStyle : System.Web.UI.WebControls.BorderStyle with get, set" Usage="System.Web.UI.WebControls.ListBox.BorderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::BorderStyle BorderStyle { System::Web::UI::WebControls::BorderStyle get(); void set(System::Web::UI::WebControls::BorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -268,6 +282,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.Unit BorderWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit BorderWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListBox.BorderWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BorderWidth As Unit" />
+      <MemberSignature Language="F#" Value="member this.BorderWidth : System.Web.UI.WebControls.Unit with get, set" Usage="System.Web.UI.WebControls.ListBox.BorderWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Unit BorderWidth { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,6 +317,9 @@
       <MemberSignature Language="C#" Value="public virtual int[] GetSelectedIndices ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32[] GetSelectedIndices() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.GetSelectedIndices" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSelectedIndices () As Integer()" />
+      <MemberSignature Language="F#" Value="abstract member GetSelectedIndices : unit -&gt; int[]&#xA;override this.GetSelectedIndices : unit -&gt; int[]" Usage="listBox.GetSelectedIndices " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;int&gt; ^ GetSelectedIndices();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -326,7 +346,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool&#xA;override this.LoadPostData : string * System.Collections.Specialized.NameValueCollection -&gt; bool" Usage="listBox.LoadPostData (postDataKey, postCollection)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -359,9 +385,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="listBox.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -395,7 +424,13 @@
       <MemberSignature Language="C#" Value="protected virtual void RaisePostDataChangedEvent ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostDataChangedEvent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.RaisePostDataChangedEvent" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostDataChangedEvent ()" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostDataChangedEvent : unit -&gt; unit&#xA;override this.RaisePostDataChangedEvent : unit -&gt; unit" Usage="listBox.RaisePostDataChangedEvent " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostDataChangedEvent();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -424,6 +459,9 @@
       <MemberSignature Language="C#" Value="public virtual int Rows { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Rows" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListBox.Rows" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Rows As Integer" />
+      <MemberSignature Language="F#" Value="member this.Rows : int with get, set" Usage="System.Web.UI.WebControls.ListBox.Rows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Rows { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -468,6 +506,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ListSelectionMode SelectionMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ListSelectionMode SelectionMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListBox.SelectionMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectionMode As ListSelectionMode" />
+      <MemberSignature Language="F#" Value="member this.SelectionMode : System.Web.UI.WebControls.ListSelectionMode with get, set" Usage="System.Web.UI.WebControls.ListBox.SelectionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ListSelectionMode SelectionMode { System::Web::UI::WebControls::ListSelectionMode get(); void set(System::Web::UI::WebControls::ListSelectionMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -510,7 +551,12 @@
       <MemberSignature Language="C#" Value="bool IPostBackDataHandler.LoadPostData (string postDataKey, System.Collections.Specialized.NameValueCollection postCollection);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Web.UI.IPostBackDataHandler.LoadPostData(string postDataKey, class System.Collections.Specialized.NameValueCollection postCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.System#Web#UI#IPostBackDataHandler#LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Function LoadPostData (postDataKey As String, postCollection As NameValueCollection) As Boolean Implements IPostBackDataHandler.LoadPostData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Web.UI.IPostBackDataHandler.LoadPostData(System::String ^ postDataKey, System::Collections::Specialized::NameValueCollection ^ postCollection) = System::Web::UI::IPostBackDataHandler::LoadPostData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -548,7 +594,12 @@
       <MemberSignature Language="C#" Value="void IPostBackDataHandler.RaisePostDataChangedEvent ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListBox.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent" />
+      <MemberSignature Language="VB.NET" Value="Sub RaisePostDataChangedEvent () Implements IPostBackDataHandler.RaisePostDataChangedEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent() = System::Web::UI::IPostBackDataHandler::RaisePostDataChangedEvent;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

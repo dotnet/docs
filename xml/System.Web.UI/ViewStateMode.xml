@@ -1,7 +1,10 @@
-<Type Name="ViewStateMode" FullName="System.Web.UI.ViewStateMode">
+﻿<Type Name="ViewStateMode" FullName="System.Web.UI.ViewStateMode">
   <TypeSignature Language="C#" Value="public enum ViewStateMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ViewStateMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ViewStateMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ViewStateMode" />
+  <TypeSignature Language="F#" Value="type ViewStateMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ViewStateMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="Disabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ViewStateMode Disabled = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ViewStateMode.Disabled" />
+      <MemberSignature Language="VB.NET" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 2" Usage="System.Web.UI.ViewStateMode.Disabled" />
+      <MemberSignature Language="C++ CLI" Value="Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.ViewStateMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Disable view state for this control even if the parent control has view state enabled.</summary>
       </Docs>
@@ -50,6 +57,9 @@
       <MemberSignature Language="C#" Value="Enabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ViewStateMode Enabled = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ViewStateMode.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Enabled" />
+      <MemberSignature Language="F#" Value="Enabled = 1" Usage="System.Web.UI.ViewStateMode.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="Enabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.ViewStateMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Enable view state for this control even if the parent control has view state disabled.</summary>
       </Docs>
@@ -66,6 +77,9 @@
       <MemberSignature Language="C#" Value="Inherit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ViewStateMode Inherit = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ViewStateMode.Inherit" />
+      <MemberSignature Language="VB.NET" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 0" Usage="System.Web.UI.ViewStateMode.Inherit" />
+      <MemberSignature Language="C++ CLI" Value="Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.ViewStateMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Inherit the value of <see cref="T:System.Web.UI.ViewStateMode" /> from the parent <see cref="T:System.Web.UI.Control" />.</summary>
       </Docs>

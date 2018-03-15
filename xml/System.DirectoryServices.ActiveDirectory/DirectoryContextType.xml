@@ -1,7 +1,10 @@
-<Type Name="DirectoryContextType" FullName="System.DirectoryServices.ActiveDirectory.DirectoryContextType">
+﻿<Type Name="DirectoryContextType" FullName="System.DirectoryServices.ActiveDirectory.DirectoryContextType">
   <TypeSignature Language="C#" Value="public enum DirectoryContextType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DirectoryContextType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.DirectoryContextType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DirectoryContextType" />
+  <TypeSignature Language="F#" Value="type DirectoryContextType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DirectoryContextType" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="ApplicationPartition" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.DirectoryContextType ApplicationPartition = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DirectoryContextType.ApplicationPartition" />
+      <MemberSignature Language="VB.NET" Value="ApplicationPartition" />
+      <MemberSignature Language="F#" Value="ApplicationPartition = 4" Usage="System.DirectoryServices.ActiveDirectory.DirectoryContextType.ApplicationPartition" />
+      <MemberSignature Language="C++ CLI" Value="ApplicationPartition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -29,6 +35,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.DirectoryContextType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object represents an application partition.</summary>
       </Docs>
@@ -37,6 +44,9 @@
       <MemberSignature Language="C#" Value="ConfigurationSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.DirectoryContextType ConfigurationSet = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DirectoryContextType.ConfigurationSet" />
+      <MemberSignature Language="VB.NET" Value="ConfigurationSet" />
+      <MemberSignature Language="F#" Value="ConfigurationSet = 3" Usage="System.DirectoryServices.ActiveDirectory.DirectoryContextType.ConfigurationSet" />
+      <MemberSignature Language="C++ CLI" Value="ConfigurationSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -46,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.DirectoryContextType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object represents an AD LDS configuration set.</summary>
       </Docs>
@@ -54,6 +65,9 @@
       <MemberSignature Language="C#" Value="DirectoryServer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.DirectoryContextType DirectoryServer = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DirectoryContextType.DirectoryServer" />
+      <MemberSignature Language="VB.NET" Value="DirectoryServer" />
+      <MemberSignature Language="F#" Value="DirectoryServer = 2" Usage="System.DirectoryServices.ActiveDirectory.DirectoryContextType.DirectoryServer" />
+      <MemberSignature Language="C++ CLI" Value="DirectoryServer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -63,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.DirectoryContextType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object represents a directory server.</summary>
       </Docs>
@@ -71,6 +86,9 @@
       <MemberSignature Language="C#" Value="Domain" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.DirectoryContextType Domain = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DirectoryContextType.Domain" />
+      <MemberSignature Language="VB.NET" Value="Domain" />
+      <MemberSignature Language="F#" Value="Domain = 0" Usage="System.DirectoryServices.ActiveDirectory.DirectoryContextType.Domain" />
+      <MemberSignature Language="C++ CLI" Value="Domain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -80,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.DirectoryContextType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object represents a domain.</summary>
       </Docs>
@@ -88,6 +107,9 @@
       <MemberSignature Language="C#" Value="Forest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.DirectoryContextType Forest = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.DirectoryContextType.Forest" />
+      <MemberSignature Language="VB.NET" Value="Forest" />
+      <MemberSignature Language="F#" Value="Forest = 1" Usage="System.DirectoryServices.ActiveDirectory.DirectoryContextType.Forest" />
+      <MemberSignature Language="C++ CLI" Value="Forest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -97,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.DirectoryContextType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> object represents a forest.</summary>
       </Docs>

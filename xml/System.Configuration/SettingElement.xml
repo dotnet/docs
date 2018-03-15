@@ -1,7 +1,10 @@
-<Type Name="SettingElement" FullName="System.Configuration.SettingElement">
+﻿<Type Name="SettingElement" FullName="System.Configuration.SettingElement">
   <TypeSignature Language="C#" Value="public sealed class SettingElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SettingElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SettingElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type SettingElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SettingElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,10 +30,21 @@
     <altmember cref="T:System.Configuration.ConfigurationElement" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SettingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -50,6 +64,9 @@
       <MemberSignature Language="C#" Value="public SettingElement (string name, System.Configuration.SettingsSerializeAs serializeAs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Configuration.SettingsSerializeAs serializeAs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingElement.#ctor(System.String,System.Configuration.SettingsSerializeAs)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, serializeAs As SettingsSerializeAs)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SettingElement : string * System.Configuration.SettingsSerializeAs -&gt; System.Configuration.SettingElement" Usage="new System.Configuration.SettingElement (name, serializeAs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingElement(System::String ^ name, System::Configuration::SettingsSerializeAs serializeAs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -71,9 +88,17 @@
       </Docs>
     </Member>
     <Member MemberName="Equals">
-      <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingElement.Equals(System.Object)" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object settings);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object settings) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingElement.Equals(System.Object)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (settings As Object) As Boolean" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="settingElement.Equals o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ settings);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public override bool Equals (object o);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Configuration.SettingElement.Equals(System.Object)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -87,7 +112,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="settings" Type="System.Object" />
+        <Parameter Name="settings" Type="System.Object" Index="0" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="o" Type="System.Object" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="o">To be added.</param>
@@ -101,6 +127,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingElement.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="settingElement.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +153,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Configuration.SettingElement.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -135,7 +167,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("name", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.IsRequired | System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("name", DefaultValue=Mono.Cecil.CustomAttributeArgument, Options=System.Configuration.ConfigurationPropertyOptions.IsKey | System.Configuration.ConfigurationPropertyOptions.IsRequired)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -151,6 +183,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Configuration.SettingElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -173,6 +208,9 @@
       <MemberSignature Language="C#" Value="public System.Configuration.SettingsSerializeAs SerializeAs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.SettingsSerializeAs SerializeAs" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingElement.SerializeAs" />
+      <MemberSignature Language="VB.NET" Value="Public Property SerializeAs As SettingsSerializeAs" />
+      <MemberSignature Language="F#" Value="member this.SerializeAs : System.Configuration.SettingsSerializeAs with get, set" Usage="System.Configuration.SettingElement.SerializeAs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::SettingsSerializeAs SerializeAs { System::Configuration::SettingsSerializeAs get(); void set(System::Configuration::SettingsSerializeAs value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -207,6 +245,9 @@
       <MemberSignature Language="C#" Value="public System.Configuration.SettingValueElement Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingValueElement Value" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingElement.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As SettingValueElement" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Configuration.SettingValueElement with get, set" Usage="System.Configuration.SettingElement.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::SettingValueElement ^ Value { System::Configuration::SettingValueElement ^ get(); void set(System::Configuration::SettingValueElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -230,14 +271,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.SettingElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="TYPEDESC" FullName="System.Runtime.InteropServices.TYPEDESC">
+﻿<Type Name="TYPEDESC" FullName="System.Runtime.InteropServices.TYPEDESC">
   <TypeSignature Language="C#" Value="public struct TYPEDESC" />
   <TypeSignature Language="ILAsm" Value=".class public sequential sealed beforefieldinit TYPEDESC extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TYPEDESC" />
+  <TypeSignature Language="VB.NET" Value="Public Structure TYPEDESC" />
+  <TypeSignature Language="F#" Value="type TYPEDESC = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class TYPEDESC" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public IntPtr lpValue;" />
       <MemberSignature Language="ILAsm" Value=".field public native int lpValue" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEDESC.lpValue" />
+      <MemberSignature Language="VB.NET" Value="Public lpValue As IntPtr " />
+      <MemberSignature Language="F#" Value="val mutable lpValue : nativeint" Usage="System.Runtime.InteropServices.TYPEDESC.lpValue" />
+      <MemberSignature Language="C++ CLI" Value="public: IntPtr lpValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -57,6 +63,9 @@
       <MemberSignature Language="C#" Value="public short vt;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 vt" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TYPEDESC.vt" />
+      <MemberSignature Language="VB.NET" Value="Public vt As Short " />
+      <MemberSignature Language="F#" Value="val mutable vt : int16" Usage="System.Runtime.InteropServices.TYPEDESC.vt" />
+      <MemberSignature Language="C++ CLI" Value="public: short vt;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

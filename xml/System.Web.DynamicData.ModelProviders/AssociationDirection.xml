@@ -1,7 +1,10 @@
-<Type Name="AssociationDirection" FullName="System.Web.DynamicData.ModelProviders.AssociationDirection">
+﻿<Type Name="AssociationDirection" FullName="System.Web.DynamicData.ModelProviders.AssociationDirection">
   <TypeSignature Language="C#" Value="public enum AssociationDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AssociationDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.ModelProviders.AssociationDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AssociationDirection" />
+  <TypeSignature Language="F#" Value="type AssociationDirection = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AssociationDirection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="ManyToMany" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.DynamicData.ModelProviders.AssociationDirection ManyToMany = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.ModelProviders.AssociationDirection.ManyToMany" />
+      <MemberSignature Language="VB.NET" Value="ManyToMany" />
+      <MemberSignature Language="F#" Value="ManyToMany = 3" Usage="System.Web.DynamicData.ModelProviders.AssociationDirection.ManyToMany" />
+      <MemberSignature Language="C++ CLI" Value="ManyToMany" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Web.DynamicData.ModelProviders.AssociationDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates a many-to-many relationship.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="ManyToOne" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.DynamicData.ModelProviders.AssociationDirection ManyToOne = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.ModelProviders.AssociationDirection.ManyToOne" />
+      <MemberSignature Language="VB.NET" Value="ManyToOne" />
+      <MemberSignature Language="F#" Value="ManyToOne = 2" Usage="System.Web.DynamicData.ModelProviders.AssociationDirection.ManyToOne" />
+      <MemberSignature Language="C++ CLI" Value="ManyToOne" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Web.DynamicData.ModelProviders.AssociationDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates a many-to-one relationship.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="OneToMany" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.DynamicData.ModelProviders.AssociationDirection OneToMany = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.ModelProviders.AssociationDirection.OneToMany" />
+      <MemberSignature Language="VB.NET" Value="OneToMany" />
+      <MemberSignature Language="F#" Value="OneToMany = 1" Usage="System.Web.DynamicData.ModelProviders.AssociationDirection.OneToMany" />
+      <MemberSignature Language="C++ CLI" Value="OneToMany" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Web.DynamicData.ModelProviders.AssociationDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates a one-to-many relationship.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="OneToOne" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.DynamicData.ModelProviders.AssociationDirection OneToOne = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.DynamicData.ModelProviders.AssociationDirection.OneToOne" />
+      <MemberSignature Language="VB.NET" Value="OneToOne" />
+      <MemberSignature Language="F#" Value="OneToOne = 0" Usage="System.Web.DynamicData.ModelProviders.AssociationDirection.OneToOne" />
+      <MemberSignature Language="C++ CLI" Value="OneToOne" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Web.DynamicData.ModelProviders.AssociationDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates a one-to-one relationship.</summary>
       </Docs>

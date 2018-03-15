@@ -1,7 +1,10 @@
-<Type Name="IScrollItemProvider" FullName="System.Windows.Automation.Provider.IScrollItemProvider">
+﻿<Type Name="IScrollItemProvider" FullName="System.Windows.Automation.Provider.IScrollItemProvider">
   <TypeSignature Language="C#" Value="public interface IScrollItemProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IScrollItemProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IScrollItemProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IScrollItemProvider" />
+  <TypeSignature Language="F#" Value="type IScrollItemProvider = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IScrollItemProvider" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,7 +18,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("2360c714-4bf1-4b26-ba65-9b21316127eb")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="public void ScrollIntoView ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScrollIntoView() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IScrollItemProvider.ScrollIntoView" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScrollIntoView ()" />
+      <MemberSignature Language="F#" Value="abstract member ScrollIntoView : unit -&gt; unit" Usage="iScrollItemProvider.ScrollIntoView " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollIntoView();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

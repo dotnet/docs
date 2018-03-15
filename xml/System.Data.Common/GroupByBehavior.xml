@@ -1,7 +1,10 @@
-<Type Name="GroupByBehavior" FullName="System.Data.Common.GroupByBehavior">
+﻿<Type Name="GroupByBehavior" FullName="System.Data.Common.GroupByBehavior">
   <TypeSignature Language="C#" Value="public enum GroupByBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GroupByBehavior extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.GroupByBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GroupByBehavior" />
+  <TypeSignature Language="F#" Value="type GroupByBehavior = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class GroupByBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="ExactMatch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.GroupByBehavior ExactMatch = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.ExactMatch" />
+      <MemberSignature Language="VB.NET" Value="ExactMatch" />
+      <MemberSignature Language="F#" Value="ExactMatch = 4" Usage="System.Data.Common.GroupByBehavior.ExactMatch" />
+      <MemberSignature Language="C++ CLI" Value="ExactMatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -51,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.GroupByBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The GROUP BY clause must contain all nonaggregated columns in the select list, and must not contain other columns not in the select list.</summary>
       </Docs>
@@ -59,6 +66,9 @@
       <MemberSignature Language="C#" Value="MustContainAll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.GroupByBehavior MustContainAll = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.MustContainAll" />
+      <MemberSignature Language="VB.NET" Value="MustContainAll" />
+      <MemberSignature Language="F#" Value="MustContainAll = 3" Usage="System.Data.Common.GroupByBehavior.MustContainAll" />
+      <MemberSignature Language="C++ CLI" Value="MustContainAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -76,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.GroupByBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The GROUP BY clause must contain all nonaggregated columns in the select list, and can contain other columns not in the select list.</summary>
       </Docs>
@@ -84,6 +95,9 @@
       <MemberSignature Language="C#" Value="NotSupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.GroupByBehavior NotSupported = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.NotSupported" />
+      <MemberSignature Language="VB.NET" Value="NotSupported" />
+      <MemberSignature Language="F#" Value="NotSupported = 1" Usage="System.Data.Common.GroupByBehavior.NotSupported" />
+      <MemberSignature Language="C++ CLI" Value="NotSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -101,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.GroupByBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The GROUP BY clause is not supported.</summary>
       </Docs>
@@ -109,6 +124,9 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.GroupByBehavior Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Data.Common.GroupByBehavior.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -126,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.GroupByBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The support for the GROUP BY clause is unknown.</summary>
       </Docs>
@@ -134,6 +153,9 @@
       <MemberSignature Language="C#" Value="Unrelated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.GroupByBehavior Unrelated = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.GroupByBehavior.Unrelated" />
+      <MemberSignature Language="VB.NET" Value="Unrelated" />
+      <MemberSignature Language="F#" Value="Unrelated = 2" Usage="System.Data.Common.GroupByBehavior.Unrelated" />
+      <MemberSignature Language="C++ CLI" Value="Unrelated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -151,6 +173,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.GroupByBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>There is no relationship between the columns in the GROUP BY clause and the nonaggregated columns in the SELECT list. You may group by any column.</summary>
       </Docs>

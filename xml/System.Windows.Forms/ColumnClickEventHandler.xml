@@ -1,7 +1,10 @@
-<Type Name="ColumnClickEventHandler" FullName="System.Windows.Forms.ColumnClickEventHandler">
+﻿<Type Name="ColumnClickEventHandler" FullName="System.Windows.Forms.ColumnClickEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ColumnClickEventHandler(object sender, ColumnClickEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColumnClickEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnClickEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ColumnClickEventHandler(sender As Object, e As ColumnClickEventArgs)" />
+  <TypeSignature Language="F#" Value="type ColumnClickEventHandler = delegate of obj * ColumnClickEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ColumnClickEventHandler(System::Object ^ sender, ColumnClickEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

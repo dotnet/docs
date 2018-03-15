@@ -1,7 +1,10 @@
-<Type Name="Timer" FullName="System.Threading.Timer">
+﻿<Type Name="Timer" FullName="System.Threading.Timer">
   <TypeSignature Language="C#" Value="public sealed class Timer : MarshalByRefObject, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Timer extends System.MarshalByRefObject implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Timer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Timer&#xA;Inherits MarshalByRefObject&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type Timer = class&#xA;    inherit MarshalByRefObject&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Timer sealed : MarshalByRefObject, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Timer</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,10 +98,23 @@ Sub TimerCallback(state As Object)
     <altmember cref="T:System.Threading.TimerCallback" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see langword="Timer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Timer (System.Threading.TimerCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.TimerCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Timer.#ctor(System.Threading.TimerCallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callback As TimerCallback)" />
+      <MemberSignature Language="F#" Value="new System.Threading.Timer : System.Threading.TimerCallback -&gt; System.Threading.Timer" Usage="new System.Threading.Timer callback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Timer(System::Threading::TimerCallback ^ callback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -145,6 +161,9 @@ Sub TimerCallback(state As Object)
       <MemberSignature Language="C#" Value="public Timer (System.Threading.TimerCallback callback, object state, int dueTime, int period);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.TimerCallback callback, object state, int32 dueTime, int32 period) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Timer.#ctor(System.Threading.TimerCallback,System.Object,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callback As TimerCallback, state As Object, dueTime As Integer, period As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Threading.Timer : System.Threading.TimerCallback * obj * int * int -&gt; System.Threading.Timer" Usage="new System.Threading.Timer (callback, state, dueTime, period)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Timer(System::Threading::TimerCallback ^ callback, System::Object ^ state, int dueTime, int period);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Timer</AssemblyName>
@@ -203,6 +222,9 @@ Sub TimerCallback(state As Object)
       <MemberSignature Language="C#" Value="public Timer (System.Threading.TimerCallback callback, object state, long dueTime, long period);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.TimerCallback callback, object state, int64 dueTime, int64 period) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Timer.#ctor(System.Threading.TimerCallback,System.Object,System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callback As TimerCallback, state As Object, dueTime As Long, period As Long)" />
+      <MemberSignature Language="F#" Value="new System.Threading.Timer : System.Threading.TimerCallback * obj * int64 * int64 -&gt; System.Threading.Timer" Usage="new System.Threading.Timer (callback, state, dueTime, period)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Timer(System::Threading::TimerCallback ^ callback, System::Object ^ state, long dueTime, long period);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -251,6 +273,9 @@ Sub TimerCallback(state As Object)
       <MemberSignature Language="C#" Value="public Timer (System.Threading.TimerCallback callback, object state, TimeSpan dueTime, TimeSpan period);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.TimerCallback callback, object state, valuetype System.TimeSpan dueTime, valuetype System.TimeSpan period) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Timer.#ctor(System.Threading.TimerCallback,System.Object,System.TimeSpan,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callback As TimerCallback, state As Object, dueTime As TimeSpan, period As TimeSpan)" />
+      <MemberSignature Language="F#" Value="new System.Threading.Timer : System.Threading.TimerCallback * obj * TimeSpan * TimeSpan -&gt; System.Threading.Timer" Usage="new System.Threading.Timer (callback, state, dueTime, period)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Timer(System::Threading::TimerCallback ^ callback, System::Object ^ state, TimeSpan dueTime, TimeSpan period);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Timer</AssemblyName>
@@ -309,6 +334,9 @@ Sub TimerCallback(state As Object)
       <MemberSignature Language="C#" Value="public Timer (System.Threading.TimerCallback callback, object state, uint dueTime, uint period);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Threading.TimerCallback callback, object state, unsigned int32 dueTime, unsigned int32 period) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Timer.#ctor(System.Threading.TimerCallback,System.Object,System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (callback As TimerCallback, state As Object, dueTime As UInteger, period As UInteger)" />
+      <MemberSignature Language="F#" Value="new System.Threading.Timer : System.Threading.TimerCallback * obj * uint32 * uint32 -&gt; System.Threading.Timer" Usage="new System.Threading.Timer (callback, state, dueTime, period)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Timer(System::Threading::TimerCallback ^ callback, System::Object ^ state, System::UInt32 dueTime, System::UInt32 period);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -358,10 +386,23 @@ Sub TimerCallback(state As Object)
         <exception cref="T:System.ArgumentNullException">The <paramref name="callback" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Change">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Timer</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Changes the start time and the interval between method invocations for a timer.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Change">
       <MemberSignature Language="C#" Value="public bool Change (int dueTime, int period);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Change(int32 dueTime, int32 period) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Timer.Change(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Change (dueTime As Integer, period As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Change : int * int -&gt; bool" Usage="timer.Change (dueTime, period)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Change(int dueTime, int period);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Timer</AssemblyName>
@@ -421,6 +462,9 @@ Sub TimerCallback(state As Object)
       <MemberSignature Language="C#" Value="public bool Change (long dueTime, long period);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Change(int64 dueTime, int64 period) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Timer.Change(System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Change (dueTime As Long, period As Long) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Change : int64 * int64 -&gt; bool" Usage="timer.Change (dueTime, period)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Change(long dueTime, long period);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -471,6 +515,9 @@ Sub TimerCallback(state As Object)
       <MemberSignature Language="C#" Value="public bool Change (TimeSpan dueTime, TimeSpan period);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Change(valuetype System.TimeSpan dueTime, valuetype System.TimeSpan period) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Timer.Change(System.TimeSpan,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Change (dueTime As TimeSpan, period As TimeSpan) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Change : TimeSpan * TimeSpan -&gt; bool" Usage="timer.Change (dueTime, period)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Change(TimeSpan dueTime, TimeSpan period);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Timer</AssemblyName>
@@ -531,6 +578,9 @@ Sub TimerCallback(state As Object)
       <MemberSignature Language="C#" Value="public bool Change (uint dueTime, uint period);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Change(unsigned int32 dueTime, unsigned int32 period) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Timer.Change(System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Change (dueTime As UInteger, period As UInteger) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Change : uint32 * uint32 -&gt; bool" Usage="timer.Change (dueTime, period)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Change(System::UInt32 dueTime, System::UInt32 period);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -580,11 +630,27 @@ Sub TimerCallback(state As Object)
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Threading.Timer" /> has already been disposed.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Timer</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of <see cref="T:System.Threading.Timer" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Timer.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="timer.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Timer</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -631,6 +697,9 @@ Sub TimerCallback(state As Object)
       <MemberSignature Language="C#" Value="public bool Dispose (System.Threading.WaitHandle notifyObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Dispose(class System.Threading.WaitHandle notifyObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Timer.Dispose(System.Threading.WaitHandle)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Dispose (notifyObject As WaitHandle) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Dispose : System.Threading.WaitHandle -&gt; bool" Usage="timer.Dispose notifyObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Dispose(System::Threading::WaitHandle ^ notifyObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -672,35 +741,5 @@ Sub TimerCallback(state As Object)
         <exception cref="T:System.ArgumentNullException">The <paramref name="notifyObject" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Change">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading.Timer</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Changes the start time and the interval between method invocations for a timer.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see langword="Timer" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading.Timer</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases all resources used by the current instance of <see cref="T:System.Threading.Timer" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="HostTimeoutsElement" FullName="System.ServiceModel.Configuration.HostTimeoutsElement">
+﻿<Type Name="HostTimeoutsElement" FullName="System.ServiceModel.Configuration.HostTimeoutsElement">
   <TypeSignature Language="C#" Value="public sealed class HostTimeoutsElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HostTimeoutsElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.HostTimeoutsElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HostTimeoutsElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type HostTimeoutsElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HostTimeoutsElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public HostTimeoutsElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.HostTimeoutsElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HostTimeoutsElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -35,6 +40,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan CloseTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan CloseTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.HostTimeoutsElement.CloseTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property CloseTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.CloseTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.HostTimeoutsElement.CloseTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan CloseTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -61,6 +69,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan OpenTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan OpenTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.HostTimeoutsElement.OpenTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property OpenTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.OpenTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.HostTimeoutsElement.OpenTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan OpenTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -87,6 +98,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.HostTimeoutsElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.HostTimeoutsElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

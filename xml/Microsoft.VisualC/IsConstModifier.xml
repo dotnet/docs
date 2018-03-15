@@ -1,7 +1,10 @@
-<Type Name="IsConstModifier" FullName="Microsoft.VisualC.IsConstModifier">
+﻿<Type Name="IsConstModifier" FullName="Microsoft.VisualC.IsConstModifier">
   <TypeSignature Language="C#" Value="public sealed class IsConstModifier" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IsConstModifier extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.IsConstModifier" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IsConstModifier" />
+  <TypeSignature Language="F#" Value="type IsConstModifier = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IsConstModifier sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +28,8 @@
       <MemberSignature Language="C#" Value="public IsConstModifier ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.IsConstModifier.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IsConstModifier();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC</AssemblyName>

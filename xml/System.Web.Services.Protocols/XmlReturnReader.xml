@@ -1,7 +1,10 @@
-<Type Name="XmlReturnReader" FullName="System.Web.Services.Protocols.XmlReturnReader">
+﻿<Type Name="XmlReturnReader" FullName="System.Web.Services.Protocols.XmlReturnReader">
   <TypeSignature Language="C#" Value="public class XmlReturnReader : System.Web.Services.Protocols.MimeReturnReader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlReturnReader extends System.Web.Services.Protocols.MimeReturnReader" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.XmlReturnReader" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlReturnReader&#xA;Inherits MimeReturnReader" />
+  <TypeSignature Language="F#" Value="type XmlReturnReader = class&#xA;    inherit MimeReturnReader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlReturnReader : System::Web::Services::Protocols::MimeReturnReader" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +34,8 @@
       <MemberSignature Language="C#" Value="public XmlReturnReader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.XmlReturnReader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlReturnReader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -47,6 +52,9 @@
       <MemberSignature Language="C#" Value="public override object GetInitializer (System.Web.Services.Protocols.LogicalMethodInfo methodInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetInitializer(class System.Web.Services.Protocols.LogicalMethodInfo methodInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.XmlReturnReader.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInitializer (methodInfo As LogicalMethodInfo) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetInitializer : System.Web.Services.Protocols.LogicalMethodInfo -&gt; obj" Usage="xmlReturnReader.GetInitializer methodInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetInitializer(System::Web::Services::Protocols::LogicalMethodInfo ^ methodInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -79,6 +87,9 @@
       <MemberSignature Language="C#" Value="public override object[] GetInitializers (System.Web.Services.Protocols.LogicalMethodInfo[] methodInfos);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object[] GetInitializers(class System.Web.Services.Protocols.LogicalMethodInfo[] methodInfos) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.XmlReturnReader.GetInitializers(System.Web.Services.Protocols.LogicalMethodInfo[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInitializers (methodInfos As LogicalMethodInfo()) As Object()" />
+      <MemberSignature Language="F#" Value="override this.GetInitializers : System.Web.Services.Protocols.LogicalMethodInfo[] -&gt; obj[]" Usage="xmlReturnReader.GetInitializers methodInfos" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetInitializers(cli::array &lt;System::Web::Services::Protocols::LogicalMethodInfo ^&gt; ^ methodInfos);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -111,6 +122,9 @@
       <MemberSignature Language="C#" Value="public override void Initialize (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.XmlReturnReader.Initialize(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (o As Object)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : obj -&gt; unit" Usage="xmlReturnReader.Initialize o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -142,6 +156,9 @@
       <MemberSignature Language="C#" Value="public override object Read (System.Net.WebResponse response, System.IO.Stream responseStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Read(class System.Net.WebResponse response, class System.IO.Stream responseStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.XmlReturnReader.Read(System.Net.WebResponse,System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (response As WebResponse, responseStream As Stream) As Object" />
+      <MemberSignature Language="F#" Value="override this.Read : System.Net.WebResponse * System.IO.Stream -&gt; obj" Usage="xmlReturnReader.Read (response, responseStream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Read(System::Net::WebResponse ^ response, System::IO::Stream ^ responseStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

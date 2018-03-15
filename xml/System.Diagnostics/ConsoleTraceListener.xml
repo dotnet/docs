@@ -1,7 +1,10 @@
-<Type Name="ConsoleTraceListener" FullName="System.Diagnostics.ConsoleTraceListener">
+﻿<Type Name="ConsoleTraceListener" FullName="System.Diagnostics.ConsoleTraceListener">
   <TypeSignature Language="C#" Value="public class ConsoleTraceListener : System.Diagnostics.TextWriterTraceListener" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConsoleTraceListener extends System.Diagnostics.TextWriterTraceListener" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.ConsoleTraceListener" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConsoleTraceListener&#xA;Inherits TextWriterTraceListener" />
+  <TypeSignature Language="F#" Value="type ConsoleTraceListener = class&#xA;    inherit TextWriterTraceListener" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConsoleTraceListener : System::Diagnostics::TextWriterTraceListener" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,10 +83,21 @@
     <altmember cref="T:System.Console" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.ConsoleTraceListener" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ConsoleTraceListener ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ConsoleTraceListener.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConsoleTraceListener();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -121,6 +135,9 @@
       <MemberSignature Language="C#" Value="public ConsoleTraceListener (bool useErrorStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool useErrorStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ConsoleTraceListener.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (useErrorStream As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.ConsoleTraceListener : bool -&gt; System.Diagnostics.ConsoleTraceListener" Usage="new System.Diagnostics.ConsoleTraceListener useErrorStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConsoleTraceListener(bool useErrorStream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -162,6 +179,9 @@
       <MemberSignature Language="C#" Value="public override void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.ConsoleTraceListener.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="consoleTraceListener.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -183,14 +203,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.ConsoleTraceListener" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

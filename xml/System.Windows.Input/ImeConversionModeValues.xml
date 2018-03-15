@@ -1,7 +1,10 @@
-<Type Name="ImeConversionModeValues" FullName="System.Windows.Input.ImeConversionModeValues">
+﻿<Type Name="ImeConversionModeValues" FullName="System.Windows.Input.ImeConversionModeValues">
   <TypeSignature Language="C#" Value="public enum ImeConversionModeValues" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImeConversionModeValues extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ImeConversionModeValues" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ImeConversionModeValues" />
+  <TypeSignature Language="F#" Value="type ImeConversionModeValues = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ImeConversionModeValues" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="Alphanumeric" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues Alphanumeric = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Alphanumeric" />
+      <MemberSignature Language="VB.NET" Value="Alphanumeric" />
+      <MemberSignature Language="F#" Value="Alphanumeric = 512" Usage="System.Windows.Input.ImeConversionModeValues.Alphanumeric" />
+      <MemberSignature Language="C++ CLI" Value="Alphanumeric" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -32,6 +38,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>The input method uses alphanumeric conversion mode.</summary>
       </Docs>
@@ -40,6 +47,9 @@
       <MemberSignature Language="C#" Value="CharCode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues CharCode = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.CharCode" />
+      <MemberSignature Language="VB.NET" Value="CharCode" />
+      <MemberSignature Language="F#" Value="CharCode = 16" Usage="System.Windows.Input.ImeConversionModeValues.CharCode" />
+      <MemberSignature Language="C++ CLI" Value="CharCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -48,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The input method uses character code conversion mode.</summary>
       </Docs>
@@ -56,6 +67,9 @@
       <MemberSignature Language="C#" Value="DoNotCare" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues DoNotCare = int32(-2147483648)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.DoNotCare" />
+      <MemberSignature Language="VB.NET" Value="DoNotCare" />
+      <MemberSignature Language="F#" Value="DoNotCare = -2147483648" Usage="System.Windows.Input.ImeConversionModeValues.DoNotCare" />
+      <MemberSignature Language="C++ CLI" Value="DoNotCare" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -64,6 +78,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483648</MemberValue>
       <Docs>
         <summary>The input method does not care what input conversion method is used; the actual conversion method is indeterminate.</summary>
       </Docs>
@@ -72,6 +87,9 @@
       <MemberSignature Language="C#" Value="Eudc" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues Eudc = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Eudc" />
+      <MemberSignature Language="VB.NET" Value="Eudc" />
+      <MemberSignature Language="F#" Value="Eudc = 64" Usage="System.Windows.Input.ImeConversionModeValues.Eudc" />
+      <MemberSignature Language="C++ CLI" Value="Eudc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The input method uses EUDC (end user defined character) conversion mode.</summary>
       </Docs>
@@ -88,6 +107,9 @@
       <MemberSignature Language="C#" Value="Fixed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues Fixed = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Fixed" />
+      <MemberSignature Language="VB.NET" Value="Fixed" />
+      <MemberSignature Language="F#" Value="Fixed = 256" Usage="System.Windows.Input.ImeConversionModeValues.Fixed" />
+      <MemberSignature Language="C++ CLI" Value="Fixed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -96,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>The input method uses fixed conversion mode.</summary>
       </Docs>
@@ -104,6 +127,9 @@
       <MemberSignature Language="C#" Value="FullShape" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues FullShape = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.FullShape" />
+      <MemberSignature Language="VB.NET" Value="FullShape" />
+      <MemberSignature Language="F#" Value="FullShape = 4" Usage="System.Windows.Input.ImeConversionModeValues.FullShape" />
+      <MemberSignature Language="C++ CLI" Value="FullShape" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -112,6 +138,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The input method uses full-shape conversion mode.</summary>
       </Docs>
@@ -120,6 +147,9 @@
       <MemberSignature Language="C#" Value="Katakana" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues Katakana = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Katakana" />
+      <MemberSignature Language="VB.NET" Value="Katakana" />
+      <MemberSignature Language="F#" Value="Katakana = 2" Usage="System.Windows.Input.ImeConversionModeValues.Katakana" />
+      <MemberSignature Language="C++ CLI" Value="Katakana" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -128,6 +158,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The input method uses Katakana conversion mode.</summary>
       </Docs>
@@ -136,6 +167,9 @@
       <MemberSignature Language="C#" Value="Native" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues Native = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Native" />
+      <MemberSignature Language="VB.NET" Value="Native" />
+      <MemberSignature Language="F#" Value="Native = 1" Usage="System.Windows.Input.ImeConversionModeValues.Native" />
+      <MemberSignature Language="C++ CLI" Value="Native" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +178,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The input method uses a native character (Hiragana, Hangul, Chinese) conversion mode.</summary>
       </Docs>
@@ -152,6 +187,9 @@
       <MemberSignature Language="C#" Value="NoConversion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues NoConversion = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.NoConversion" />
+      <MemberSignature Language="VB.NET" Value="NoConversion" />
+      <MemberSignature Language="F#" Value="NoConversion = 32" Usage="System.Windows.Input.ImeConversionModeValues.NoConversion" />
+      <MemberSignature Language="C++ CLI" Value="NoConversion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -160,6 +198,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The input method will not perform any input conversion.</summary>
       </Docs>
@@ -168,6 +207,9 @@
       <MemberSignature Language="C#" Value="Roman" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues Roman = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Roman" />
+      <MemberSignature Language="VB.NET" Value="Roman" />
+      <MemberSignature Language="F#" Value="Roman = 8" Usage="System.Windows.Input.ImeConversionModeValues.Roman" />
+      <MemberSignature Language="C++ CLI" Value="Roman" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -176,6 +218,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The input method uses Roman character conversion mode.</summary>
       </Docs>
@@ -184,6 +227,9 @@
       <MemberSignature Language="C#" Value="Symbol" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.ImeConversionModeValues Symbol = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.ImeConversionModeValues.Symbol" />
+      <MemberSignature Language="VB.NET" Value="Symbol" />
+      <MemberSignature Language="F#" Value="Symbol = 128" Usage="System.Windows.Input.ImeConversionModeValues.Symbol" />
+      <MemberSignature Language="C++ CLI" Value="Symbol" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -192,6 +238,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.ImeConversionModeValues</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The input method uses symbol conversion mode.</summary>
       </Docs>

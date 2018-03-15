@@ -1,7 +1,10 @@
-<Type Name="STATSTG" FullName="System.Runtime.InteropServices.ComTypes.STATSTG">
+﻿<Type Name="STATSTG" FullName="System.Runtime.InteropServices.ComTypes.STATSTG">
   <TypeSignature Language="C#" Value="public struct STATSTG" />
   <TypeSignature Language="ILAsm" Value=".class public sequential sealed beforefieldinit STATSTG extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.STATSTG" />
+  <TypeSignature Language="VB.NET" Value="Public Structure STATSTG" />
+  <TypeSignature Language="F#" Value="type STATSTG = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class STATSTG" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.FILETIME atime;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.FILETIME atime" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATSTG.atime" />
+      <MemberSignature Language="VB.NET" Value="Public atime As FILETIME " />
+      <MemberSignature Language="F#" Value="val mutable atime : System.Runtime.InteropServices.ComTypes.FILETIME" Usage="System.Runtime.InteropServices.ComTypes.STATSTG.atime" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::FILETIME atime;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -80,6 +86,9 @@
       <MemberSignature Language="C#" Value="public long cbSize;" />
       <MemberSignature Language="ILAsm" Value=".field public int64 cbSize" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATSTG.cbSize" />
+      <MemberSignature Language="VB.NET" Value="Public cbSize As Long " />
+      <MemberSignature Language="F#" Value="val mutable cbSize : int64" Usage="System.Runtime.InteropServices.ComTypes.STATSTG.cbSize" />
+      <MemberSignature Language="C++ CLI" Value="public: long cbSize;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -118,6 +127,9 @@
       <MemberSignature Language="C#" Value="public Guid clsid;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Guid clsid" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATSTG.clsid" />
+      <MemberSignature Language="VB.NET" Value="Public clsid As Guid " />
+      <MemberSignature Language="F#" Value="val mutable clsid : Guid" Usage="System.Runtime.InteropServices.ComTypes.STATSTG.clsid" />
+      <MemberSignature Language="C++ CLI" Value="public: Guid clsid;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -158,6 +170,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.FILETIME ctime;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.FILETIME ctime" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATSTG.ctime" />
+      <MemberSignature Language="VB.NET" Value="Public ctime As FILETIME " />
+      <MemberSignature Language="F#" Value="val mutable ctime : System.Runtime.InteropServices.ComTypes.FILETIME" Usage="System.Runtime.InteropServices.ComTypes.STATSTG.ctime" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::FILETIME ctime;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -196,6 +211,9 @@
       <MemberSignature Language="C#" Value="public int grfLocksSupported;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 grfLocksSupported" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATSTG.grfLocksSupported" />
+      <MemberSignature Language="VB.NET" Value="Public grfLocksSupported As Integer " />
+      <MemberSignature Language="F#" Value="val mutable grfLocksSupported : int" Usage="System.Runtime.InteropServices.ComTypes.STATSTG.grfLocksSupported" />
+      <MemberSignature Language="C++ CLI" Value="public: int grfLocksSupported;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -234,6 +252,9 @@
       <MemberSignature Language="C#" Value="public int grfMode;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 grfMode" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATSTG.grfMode" />
+      <MemberSignature Language="VB.NET" Value="Public grfMode As Integer " />
+      <MemberSignature Language="F#" Value="val mutable grfMode : int" Usage="System.Runtime.InteropServices.ComTypes.STATSTG.grfMode" />
+      <MemberSignature Language="C++ CLI" Value="public: int grfMode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -272,6 +293,9 @@
       <MemberSignature Language="C#" Value="public int grfStateBits;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 grfStateBits" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATSTG.grfStateBits" />
+      <MemberSignature Language="VB.NET" Value="Public grfStateBits As Integer " />
+      <MemberSignature Language="F#" Value="val mutable grfStateBits : int" Usage="System.Runtime.InteropServices.ComTypes.STATSTG.grfStateBits" />
+      <MemberSignature Language="C++ CLI" Value="public: int grfStateBits;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -310,6 +334,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.FILETIME mtime;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.FILETIME mtime" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATSTG.mtime" />
+      <MemberSignature Language="VB.NET" Value="Public mtime As FILETIME " />
+      <MemberSignature Language="F#" Value="val mutable mtime : System.Runtime.InteropServices.ComTypes.FILETIME" Usage="System.Runtime.InteropServices.ComTypes.STATSTG.mtime" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::FILETIME mtime;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -348,6 +375,9 @@
       <MemberSignature Language="C#" Value="public string pwcsName;" />
       <MemberSignature Language="ILAsm" Value=".field public string pwcsName" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATSTG.pwcsName" />
+      <MemberSignature Language="VB.NET" Value="Public pwcsName As String " />
+      <MemberSignature Language="F#" Value="val mutable pwcsName : string" Usage="System.Runtime.InteropServices.ComTypes.STATSTG.pwcsName" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ pwcsName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -386,6 +416,9 @@
       <MemberSignature Language="C#" Value="public int reserved;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 reserved" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATSTG.reserved" />
+      <MemberSignature Language="VB.NET" Value="Public reserved As Integer " />
+      <MemberSignature Language="F#" Value="val mutable reserved : int" Usage="System.Runtime.InteropServices.ComTypes.STATSTG.reserved" />
+      <MemberSignature Language="C++ CLI" Value="public: int reserved;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -424,6 +457,9 @@
       <MemberSignature Language="C#" Value="public int type;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 type" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.STATSTG.type" />
+      <MemberSignature Language="VB.NET" Value="Public type As Integer " />
+      <MemberSignature Language="F#" Value="val mutable type : int" Usage="System.Runtime.InteropServices.ComTypes.STATSTG.type" />
+      <MemberSignature Language="C++ CLI" Value="public: int type;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

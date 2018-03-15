@@ -1,7 +1,10 @@
-<Type Name="WindowPatternIdentifiers" FullName="System.Windows.Automation.WindowPatternIdentifiers">
+﻿<Type Name="WindowPatternIdentifiers" FullName="System.Windows.Automation.WindowPatternIdentifiers">
   <TypeSignature Language="C#" Value="public static class WindowPatternIdentifiers" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WindowPatternIdentifiers extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.WindowPatternIdentifiers" />
+  <TypeSignature Language="VB.NET" Value="Public Class WindowPatternIdentifiers" />
+  <TypeSignature Language="F#" Value="type WindowPatternIdentifiers = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowPatternIdentifiers abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty CanMaximizeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty CanMaximizeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowPatternIdentifiers.CanMaximizeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanMaximizeProperty As AutomationProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CanMaximizeProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.WindowPatternIdentifiers.CanMaximizeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ CanMaximizeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty CanMinimizeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty CanMinimizeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowPatternIdentifiers.CanMinimizeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanMinimizeProperty As AutomationProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CanMinimizeProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.WindowPatternIdentifiers.CanMinimizeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ CanMinimizeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -74,6 +83,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsModalProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsModalProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowPatternIdentifiers.IsModalProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsModalProperty As AutomationProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsModalProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.WindowPatternIdentifiers.IsModalProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsModalProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -98,6 +110,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty IsTopmostProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty IsTopmostProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowPatternIdentifiers.IsTopmostProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsTopmostProperty As AutomationProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsTopmostProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.WindowPatternIdentifiers.IsTopmostProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ IsTopmostProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -122,6 +137,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowPatternIdentifiers.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.WindowPatternIdentifiers.Pattern" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -146,6 +164,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent WindowClosedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent WindowClosedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowPatternIdentifiers.WindowClosedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WindowClosedEvent As AutomationEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable WindowClosedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.WindowPatternIdentifiers.WindowClosedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ WindowClosedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -170,6 +191,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty WindowInteractionStateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty WindowInteractionStateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowPatternIdentifiers.WindowInteractionStateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WindowInteractionStateProperty As AutomationProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable WindowInteractionStateProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.WindowPatternIdentifiers.WindowInteractionStateProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ WindowInteractionStateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -194,6 +218,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent WindowOpenedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent WindowOpenedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowPatternIdentifiers.WindowOpenedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WindowOpenedEvent As AutomationEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable WindowOpenedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.WindowPatternIdentifiers.WindowOpenedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ WindowOpenedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -218,6 +245,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationProperty WindowVisualStateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationProperty WindowVisualStateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.WindowPatternIdentifiers.WindowVisualStateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WindowVisualStateProperty As AutomationProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable WindowVisualStateProperty : System.Windows.Automation.AutomationProperty" Usage="System.Windows.Automation.WindowPatternIdentifiers.WindowVisualStateProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationProperty ^ WindowVisualStateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

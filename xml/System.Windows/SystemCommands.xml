@@ -1,7 +1,10 @@
-<Type Name="SystemCommands" FullName="System.Windows.SystemCommands">
+﻿<Type Name="SystemCommands" FullName="System.Windows.SystemCommands">
   <TypeSignature Language="C#" Value="public static class SystemCommands" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed SystemCommands extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.SystemCommands" />
+  <TypeSignature Language="VB.NET" Value="Public Class SystemCommands" />
+  <TypeSignature Language="F#" Value="type SystemCommands = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SystemCommands abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public static void CloseWindow (System.Windows.Window window);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CloseWindow(class System.Windows.Window window) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.SystemCommands.CloseWindow(System.Windows.Window)" />
+      <MemberSignature Language="F#" Value="static member CloseWindow : System.Windows.Window -&gt; unit" Usage="System.Windows.SystemCommands.CloseWindow window" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CloseWindow(System::Windows::Window ^ window);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -53,6 +58,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand CloseWindowCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand CloseWindowCommand" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemCommands.CloseWindowCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CloseWindowCommand As RoutedCommand" />
+      <MemberSignature Language="F#" Value="member this.CloseWindowCommand : System.Windows.Input.RoutedCommand" Usage="System.Windows.SystemCommands.CloseWindowCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedCommand ^ CloseWindowCommand { System::Windows::Input::RoutedCommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +79,8 @@
       <MemberSignature Language="C#" Value="public static void MaximizeWindow (System.Windows.Window window);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MaximizeWindow(class System.Windows.Window window) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.SystemCommands.MaximizeWindow(System.Windows.Window)" />
+      <MemberSignature Language="F#" Value="static member MaximizeWindow : System.Windows.Window -&gt; unit" Usage="System.Windows.SystemCommands.MaximizeWindow window" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MaximizeWindow(System::Windows::Window ^ window);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -97,6 +107,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand MaximizeWindowCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand MaximizeWindowCommand" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemCommands.MaximizeWindowCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MaximizeWindowCommand As RoutedCommand" />
+      <MemberSignature Language="F#" Value="member this.MaximizeWindowCommand : System.Windows.Input.RoutedCommand" Usage="System.Windows.SystemCommands.MaximizeWindowCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedCommand ^ MaximizeWindowCommand { System::Windows::Input::RoutedCommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -115,6 +128,8 @@
       <MemberSignature Language="C#" Value="public static void MinimizeWindow (System.Windows.Window window);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MinimizeWindow(class System.Windows.Window window) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.SystemCommands.MinimizeWindow(System.Windows.Window)" />
+      <MemberSignature Language="F#" Value="static member MinimizeWindow : System.Windows.Window -&gt; unit" Usage="System.Windows.SystemCommands.MinimizeWindow window" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MinimizeWindow(System::Windows::Window ^ window);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -141,6 +156,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand MinimizeWindowCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand MinimizeWindowCommand" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemCommands.MinimizeWindowCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MinimizeWindowCommand As RoutedCommand" />
+      <MemberSignature Language="F#" Value="member this.MinimizeWindowCommand : System.Windows.Input.RoutedCommand" Usage="System.Windows.SystemCommands.MinimizeWindowCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedCommand ^ MinimizeWindowCommand { System::Windows::Input::RoutedCommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -159,6 +177,8 @@
       <MemberSignature Language="C#" Value="public static void RestoreWindow (System.Windows.Window window);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RestoreWindow(class System.Windows.Window window) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.SystemCommands.RestoreWindow(System.Windows.Window)" />
+      <MemberSignature Language="F#" Value="static member RestoreWindow : System.Windows.Window -&gt; unit" Usage="System.Windows.SystemCommands.RestoreWindow window" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RestoreWindow(System::Windows::Window ^ window);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -185,6 +205,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand RestoreWindowCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand RestoreWindowCommand" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemCommands.RestoreWindowCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RestoreWindowCommand As RoutedCommand" />
+      <MemberSignature Language="F#" Value="member this.RestoreWindowCommand : System.Windows.Input.RoutedCommand" Usage="System.Windows.SystemCommands.RestoreWindowCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedCommand ^ RestoreWindowCommand { System::Windows::Input::RoutedCommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -203,6 +226,8 @@
       <MemberSignature Language="C#" Value="public static void ShowSystemMenu (System.Windows.Window window, System.Windows.Point screenLocation);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ShowSystemMenu(class System.Windows.Window window, valuetype System.Windows.Point screenLocation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.SystemCommands.ShowSystemMenu(System.Windows.Window,System.Windows.Point)" />
+      <MemberSignature Language="F#" Value="static member ShowSystemMenu : System.Windows.Window * System.Windows.Point -&gt; unit" Usage="System.Windows.SystemCommands.ShowSystemMenu (window, screenLocation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ShowSystemMenu(System::Windows::Window ^ window, System::Windows::Point screenLocation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -231,6 +256,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.RoutedCommand ShowSystemMenuCommand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.RoutedCommand ShowSystemMenuCommand" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemCommands.ShowSystemMenuCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ShowSystemMenuCommand As RoutedCommand" />
+      <MemberSignature Language="F#" Value="member this.ShowSystemMenuCommand : System.Windows.Input.RoutedCommand" Usage="System.Windows.SystemCommands.ShowSystemMenuCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::RoutedCommand ^ ShowSystemMenuCommand { System::Windows::Input::RoutedCommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

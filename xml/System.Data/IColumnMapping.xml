@@ -1,7 +1,10 @@
-<Type Name="IColumnMapping" FullName="System.Data.IColumnMapping">
+﻿<Type Name="IColumnMapping" FullName="System.Data.IColumnMapping">
   <TypeSignature Language="C#" Value="public interface IColumnMapping" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IColumnMapping" />
   <TypeSignature Language="DocId" Value="T:System.Data.IColumnMapping" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IColumnMapping" />
+  <TypeSignature Language="F#" Value="type IColumnMapping = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IColumnMapping" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -61,6 +64,9 @@
       <MemberSignature Language="C#" Value="public string DataSetColumn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataSetColumn" />
       <MemberSignature Language="DocId" Value="P:System.Data.IColumnMapping.DataSetColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSetColumn As String" />
+      <MemberSignature Language="F#" Value="member this.DataSetColumn : string with get, set" Usage="System.Data.IColumnMapping.DataSetColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataSetColumn { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -98,6 +104,9 @@
       <MemberSignature Language="C#" Value="public string SourceColumn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceColumn" />
       <MemberSignature Language="DocId" Value="P:System.Data.IColumnMapping.SourceColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceColumn As String" />
+      <MemberSignature Language="F#" Value="member this.SourceColumn : string with get, set" Usage="System.Data.IColumnMapping.SourceColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceColumn { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

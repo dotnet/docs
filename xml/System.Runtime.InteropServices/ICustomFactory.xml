@@ -1,7 +1,10 @@
-<Type Name="ICustomFactory" FullName="System.Runtime.InteropServices.ICustomFactory">
+﻿<Type Name="ICustomFactory" FullName="System.Runtime.InteropServices.ICustomFactory">
   <TypeSignature Language="C#" Value="public interface ICustomFactory" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICustomFactory" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ICustomFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICustomFactory" />
+  <TypeSignature Language="F#" Value="type ICustomFactory = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICustomFactory" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public MarshalByRefObject CreateInstance (Type serverType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.MarshalByRefObject CreateInstance(class System.Type serverType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ICustomFactory.CreateInstance(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateInstance (serverType As Type) As MarshalByRefObject" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : Type -&gt; MarshalByRefObject" Usage="iCustomFactory.CreateInstance serverType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MarshalByRefObject ^ CreateInstance(Type ^ serverType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

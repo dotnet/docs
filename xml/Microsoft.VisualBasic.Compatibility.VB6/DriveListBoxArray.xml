@@ -1,7 +1,10 @@
-<Type Name="DriveListBoxArray" FullName="Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray">
+﻿<Type Name="DriveListBoxArray" FullName="Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray">
   <TypeSignature Language="C#" Value="public class DriveListBoxArray : Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray, System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DriveListBoxArray extends Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray" />
+  <TypeSignature Language="VB.NET" Value="Public Class DriveListBoxArray&#xA;Inherits BaseControlArray&#xA;Implements IExtenderProvider" />
+  <TypeSignature Language="F#" Value="type DriveListBoxArray = class&#xA;    inherit BaseControlArray&#xA;    interface IExtenderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DriveListBoxArray : Microsoft::VisualBasic::Compatibility::VB6::BaseControlArray, System::ComponentModel::IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -37,10 +40,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DriveListBoxArray ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DriveListBoxArray();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -66,6 +80,9 @@
       <MemberSignature Language="C#" Value="public DriveListBoxArray (System.ComponentModel.IContainer Container);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.ComponentModel.IContainer Container) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.#ctor(System.ComponentModel.IContainer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Container As IContainer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray : System.ComponentModel.IContainer -&gt; Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray" Usage="new Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray Container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DriveListBoxArray(System::ComponentModel::IContainer ^ Container);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -94,6 +111,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackColorChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.BackColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event BackColorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackColorChanged : EventHandler " Usage="member this.BackColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -123,6 +143,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BindingContextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BindingContextChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.BindingContextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event BindingContextChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BindingContextChanged : EventHandler " Usage="member this.BindingContextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BindingContextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -152,6 +175,9 @@
       <MemberSignature Language="C#" Value="public bool CanExtend (object target);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance bool CanExtend(object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.CanExtend(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanExtend (target As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="driveListBoxArray.CanExtend target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target) = System::ComponentModel::IExtenderProvider::CanExtend;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -190,6 +216,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler CausesValidationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CausesValidationChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.CausesValidationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CausesValidationChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CausesValidationChanged : EventHandler " Usage="member this.CausesValidationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CausesValidationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -219,6 +248,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.UICuesEventHandler ChangeUICues;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.UICuesEventHandler ChangeUICues" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.ChangeUICues" />
+      <MemberSignature Language="VB.NET" Value="Public Event ChangeUICues As UICuesEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ChangeUICues : System.Windows.Forms.UICuesEventHandler " Usage="member this.ChangeUICues : System.Windows.Forms.UICuesEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::UICuesEventHandler ^ ChangeUICues;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -246,6 +278,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Click;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Click" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.Click" />
+      <MemberSignature Language="VB.NET" Value="Public Event Click As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Click : EventHandler " Usage="member this.Click : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -277,6 +312,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ContextMenuChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ContextMenuChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.ContextMenuChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ContextMenuChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ContextMenuChanged : EventHandler " Usage="member this.ContextMenuChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -306,6 +344,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler CursorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CursorChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.CursorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CursorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CursorChanged : EventHandler " Usage="member this.CursorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CursorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -335,6 +376,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DataSourceChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DataSourceChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.DataSourceChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event DataSourceChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DataSourceChanged : EventHandler " Usage="member this.DataSourceChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataSourceChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -364,6 +408,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DisplayMemberChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DisplayMemberChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.DisplayMemberChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event DisplayMemberChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DisplayMemberChanged : EventHandler " Usage="member this.DisplayMemberChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DisplayMemberChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -393,6 +440,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DockChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DockChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.DockChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event DockChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DockChanged : EventHandler " Usage="member this.DockChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DockChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -421,6 +471,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DoubleClick" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.DoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Event DoubleClick As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DoubleClick : EventHandler " Usage="member this.DoubleClick : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -448,6 +501,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DragEventHandler DragDrop;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DragEventHandler DragDrop" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.DragDrop" />
+      <MemberSignature Language="VB.NET" Value="Public Event DragDrop As DragEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DragDrop : System.Windows.Forms.DragEventHandler " Usage="member this.DragDrop : System.Windows.Forms.DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragDrop;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -476,6 +532,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DragEventHandler DragEnter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DragEventHandler DragEnter" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.DragEnter" />
+      <MemberSignature Language="VB.NET" Value="Public Event DragEnter As DragEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DragEnter : System.Windows.Forms.DragEventHandler " Usage="member this.DragEnter : System.Windows.Forms.DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -506,6 +565,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DragLeave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DragLeave" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.DragLeave" />
+      <MemberSignature Language="VB.NET" Value="Public Event DragLeave As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DragLeave : EventHandler " Usage="member this.DragLeave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DragLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -536,6 +598,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DragEventHandler DragOver;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DragEventHandler DragOver" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.DragOver" />
+      <MemberSignature Language="VB.NET" Value="Public Event DragOver As DragEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DragOver : System.Windows.Forms.DragEventHandler " Usage="member this.DragOver : System.Windows.Forms.DragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DragEventHandler ^ DragOver;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -566,6 +631,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DrawItemEventHandler DrawItem;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DrawItemEventHandler DrawItem" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.DrawItem" />
+      <MemberSignature Language="VB.NET" Value="Public Event DrawItem As DrawItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DrawItem : System.Windows.Forms.DrawItemEventHandler " Usage="member this.DrawItem : System.Windows.Forms.DrawItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DrawItemEventHandler ^ DrawItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -595,6 +663,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DropDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DropDown" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.DropDown" />
+      <MemberSignature Language="VB.NET" Value="Public Event DropDown As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DropDown : EventHandler " Usage="member this.DropDown : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DropDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -622,6 +693,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DropDownStyleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DropDownStyleChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.DropDownStyleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event DropDownStyleChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DropDownStyleChanged : EventHandler " Usage="member this.DropDownStyleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DropDownStyleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -651,6 +725,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler EnabledChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler EnabledChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.EnabledChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event EnabledChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.EnabledChanged : EventHandler " Usage="member this.EnabledChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ EnabledChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -680,6 +757,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Enter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Enter" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.Enter" />
+      <MemberSignature Language="VB.NET" Value="Public Event Enter As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Enter : EventHandler " Usage="member this.Enter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Enter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -727,6 +807,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler FontChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FontChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.FontChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event FontChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.FontChanged : EventHandler " Usage="member this.FontChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FontChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -756,6 +839,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ForeColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ForeColorChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.ForeColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ForeColorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -785,6 +871,9 @@
       <MemberSignature Language="C#" Value="protected override Type GetControlInstanceType ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type GetControlInstanceType() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.GetControlInstanceType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetControlInstanceType () As Type" />
+      <MemberSignature Language="F#" Value="override this.GetControlInstanceType : unit -&gt; Type" Usage="driveListBoxArray.GetControlInstanceType " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetControlInstanceType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -814,6 +903,9 @@
       <MemberSignature Language="C#" Value="public short GetIndex (Microsoft.VisualBasic.Compatibility.VB6.DriveListBox o);" />
       <MemberSignature Language="ILAsm" Value=".method public instance int16 GetIndex(class Microsoft.VisualBasic.Compatibility.VB6.DriveListBox o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.GetIndex(Microsoft.VisualBasic.Compatibility.VB6.DriveListBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIndex (o As DriveListBox) As Short" />
+      <MemberSignature Language="F#" Value="member this.GetIndex : Microsoft.VisualBasic.Compatibility.VB6.DriveListBox -&gt; int16" Usage="driveListBoxArray.GetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short GetIndex(Microsoft::VisualBasic::Compatibility::VB6::DriveListBox ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -846,6 +938,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.GiveFeedbackEventHandler GiveFeedback;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.GiveFeedbackEventHandler GiveFeedback" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.GiveFeedback" />
+      <MemberSignature Language="VB.NET" Value="Public Event GiveFeedback As GiveFeedbackEventHandler " />
+      <MemberSignature Language="F#" Value="member this.GiveFeedback : System.Windows.Forms.GiveFeedbackEventHandler " Usage="member this.GiveFeedback : System.Windows.Forms.GiveFeedbackEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::GiveFeedbackEventHandler ^ GiveFeedback;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -876,6 +971,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HelpEventHandler HelpRequested;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HelpEventHandler HelpRequested" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.HelpRequested" />
+      <MemberSignature Language="VB.NET" Value="Public Event HelpRequested As HelpEventHandler " />
+      <MemberSignature Language="F#" Value="member this.HelpRequested : System.Windows.Forms.HelpEventHandler " Usage="member this.HelpRequested : System.Windows.Forms.HelpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HelpEventHandler ^ HelpRequested;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -906,6 +1004,9 @@
       <MemberSignature Language="C#" Value="protected override void HookUpControlEvents (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void HookUpControlEvents(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.HookUpControlEvents(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HookUpControlEvents (o As Object)" />
+      <MemberSignature Language="F#" Value="override this.HookUpControlEvents : obj -&gt; unit" Usage="driveListBoxArray.HookUpControlEvents o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HookUpControlEvents(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -937,6 +1038,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ImeModeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ImeModeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.ImeModeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ImeModeChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ImeModeChanged : EventHandler " Usage="member this.ImeModeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -966,6 +1070,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.DriveListBox this[short Index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualBasic.Compatibility.VB6.DriveListBox Item(int16)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.Item(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Short) As DriveListBox" />
+      <MemberSignature Language="F#" Value="member this.Item(int16) : Microsoft.VisualBasic.Compatibility.VB6.DriveListBox" Usage="Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Compatibility::VB6::DriveListBox ^ default[short] { Microsoft::VisualBasic::Compatibility::VB6::DriveListBox ^ get(short Index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1003,6 +1110,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyEventHandler KeyDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyEventHandler KeyDown" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.KeyDown" />
+      <MemberSignature Language="VB.NET" Value="Public Event KeyDown As KeyEventHandler " />
+      <MemberSignature Language="F#" Value="member this.KeyDown : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyDown : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1041,6 +1151,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyPressEventHandler KeyPress;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyPressEventHandler KeyPress" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.KeyPress" />
+      <MemberSignature Language="VB.NET" Value="Public Event KeyPress As KeyPressEventHandler " />
+      <MemberSignature Language="F#" Value="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " Usage="member this.KeyPress : System.Windows.Forms.KeyPressEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyPressEventHandler ^ KeyPress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1083,6 +1196,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.KeyEventHandler KeyUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.KeyEventHandler KeyUp" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.KeyUp" />
+      <MemberSignature Language="VB.NET" Value="Public Event KeyUp As KeyEventHandler " />
+      <MemberSignature Language="F#" Value="member this.KeyUp : System.Windows.Forms.KeyEventHandler " Usage="member this.KeyUp : System.Windows.Forms.KeyEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::KeyEventHandler ^ KeyUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1121,6 +1237,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.LayoutEventHandler Layout;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.LayoutEventHandler Layout" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.Layout" />
+      <MemberSignature Language="VB.NET" Value="Public Event Layout As LayoutEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Layout : System.Windows.Forms.LayoutEventHandler " Usage="member this.Layout : System.Windows.Forms.LayoutEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::LayoutEventHandler ^ Layout;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1151,6 +1270,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Leave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Leave" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.Leave" />
+      <MemberSignature Language="VB.NET" Value="Public Event Leave As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Leave : EventHandler " Usage="member this.Leave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Leave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1199,6 +1321,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler LocationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LocationChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.LocationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event LocationChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.LocationChanged : EventHandler " Usage="member this.LocationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LocationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1228,6 +1353,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MeasureItemEventHandler MeasureItem;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MeasureItemEventHandler MeasureItem" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.MeasureItem" />
+      <MemberSignature Language="VB.NET" Value="Public Event MeasureItem As MeasureItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MeasureItem : System.Windows.Forms.MeasureItemEventHandler " Usage="member this.MeasureItem : System.Windows.Forms.MeasureItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MeasureItemEventHandler ^ MeasureItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1257,6 +1385,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseDown" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.MouseDown" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseDown As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseDown : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseDown : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1301,6 +1432,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MouseEnter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseEnter" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.MouseEnter" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseEnter As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseEnter : EventHandler " Usage="member this.MouseEnter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1341,6 +1475,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MouseHover;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseHover" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.MouseHover" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseHover As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseHover : EventHandler " Usage="member this.MouseHover : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseHover;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1387,6 +1524,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler MouseLeave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseLeave" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.MouseLeave" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseLeave As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseLeave : EventHandler " Usage="member this.MouseLeave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1427,6 +1567,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseMove;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseMove" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.MouseMove" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseMove As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseMove : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseMove : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1467,6 +1610,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseUp" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.MouseUp" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseUp As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseUp : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseUp : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1507,6 +1653,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Move;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Move" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.Move" />
+      <MemberSignature Language="VB.NET" Value="Public Event Move As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Move : EventHandler " Usage="member this.Move : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Move;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1535,6 +1684,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler ParentChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ParentChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.ParentChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ParentChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ParentChanged : EventHandler " Usage="member this.ParentChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ParentChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1564,6 +1716,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.QueryAccessibilityHelpEventHandler QueryAccessibilityHelp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.QueryAccessibilityHelpEventHandler QueryAccessibilityHelp" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.QueryAccessibilityHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Event QueryAccessibilityHelp As QueryAccessibilityHelpEventHandler " />
+      <MemberSignature Language="F#" Value="member this.QueryAccessibilityHelp : System.Windows.Forms.QueryAccessibilityHelpEventHandler " Usage="member this.QueryAccessibilityHelp : System.Windows.Forms.QueryAccessibilityHelpEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryAccessibilityHelpEventHandler ^ QueryAccessibilityHelp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1594,6 +1749,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.QueryContinueDragEventHandler QueryContinueDrag;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.QueryContinueDragEventHandler QueryContinueDrag" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.QueryContinueDrag" />
+      <MemberSignature Language="VB.NET" Value="Public Event QueryContinueDrag As QueryContinueDragEventHandler " />
+      <MemberSignature Language="F#" Value="member this.QueryContinueDrag : System.Windows.Forms.QueryContinueDragEventHandler " Usage="member this.QueryContinueDrag : System.Windows.Forms.QueryContinueDragEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::QueryContinueDragEventHandler ^ QueryContinueDrag;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1622,6 +1780,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public void ResetIndex (Microsoft.VisualBasic.Compatibility.VB6.DriveListBox o);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void ResetIndex(class Microsoft.VisualBasic.Compatibility.VB6.DriveListBox o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.ResetIndex(Microsoft.VisualBasic.Compatibility.VB6.DriveListBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetIndex (o As DriveListBox)" />
+      <MemberSignature Language="F#" Value="member this.ResetIndex : Microsoft.VisualBasic.Compatibility.VB6.DriveListBox -&gt; unit" Usage="driveListBoxArray.ResetIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetIndex(Microsoft::VisualBasic::Compatibility::VB6::DriveListBox ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1658,6 +1819,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Resize;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Resize" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.Resize" />
+      <MemberSignature Language="VB.NET" Value="Public Event Resize As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Resize : EventHandler " Usage="member this.Resize : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Resize;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1690,6 +1854,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler RightToLeftChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RightToLeftChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.RightToLeftChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event RightToLeftChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.RightToLeftChanged : EventHandler " Usage="member this.RightToLeftChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RightToLeftChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1719,6 +1886,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler SelectedIndexChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectedIndexChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.SelectedIndexChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectedIndexChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectedIndexChanged : EventHandler " Usage="member this.SelectedIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectedIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1748,6 +1918,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler SelectedValueChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectedValueChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.SelectedValueChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectedValueChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectedValueChanged : EventHandler " Usage="member this.SelectedValueChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectedValueChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1777,6 +1950,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler SelectionChangeCommitted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectionChangeCommitted" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.SelectionChangeCommitted" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectionChangeCommitted As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectionChangeCommitted : EventHandler " Usage="member this.SelectionChangeCommitted : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionChangeCommitted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1806,6 +1982,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public void SetIndex (Microsoft.VisualBasic.Compatibility.VB6.DriveListBox o, short Index);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void SetIndex(class Microsoft.VisualBasic.Compatibility.VB6.DriveListBox o, int16 Index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.SetIndex(Microsoft.VisualBasic.Compatibility.VB6.DriveListBox,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetIndex (o As DriveListBox, Index As Short)" />
+      <MemberSignature Language="F#" Value="member this.SetIndex : Microsoft.VisualBasic.Compatibility.VB6.DriveListBox * int16 -&gt; unit" Usage="driveListBoxArray.SetIndex (o, Index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetIndex(Microsoft::VisualBasic::Compatibility::VB6::DriveListBox ^ o, short Index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1844,6 +2023,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public bool ShouldSerializeIndex (Microsoft.VisualBasic.Compatibility.VB6.DriveListBox o);" />
       <MemberSignature Language="ILAsm" Value=".method public instance bool ShouldSerializeIndex(class Microsoft.VisualBasic.Compatibility.VB6.DriveListBox o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.ShouldSerializeIndex(Microsoft.VisualBasic.Compatibility.VB6.DriveListBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeIndex (o As DriveListBox) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeIndex : Microsoft.VisualBasic.Compatibility.VB6.DriveListBox -&gt; bool" Usage="driveListBoxArray.ShouldSerializeIndex o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeIndex(Microsoft::VisualBasic::Compatibility::VB6::DriveListBox ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1882,6 +2064,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler SizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SizeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.SizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SizeChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SizeChanged : EventHandler " Usage="member this.SizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1911,6 +2096,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler StyleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler StyleChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.StyleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event StyleChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.StyleChanged : EventHandler " Usage="member this.StyleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StyleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1942,6 +2130,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler SystemColorsChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SystemColorsChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.SystemColorsChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SystemColorsChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SystemColorsChanged : EventHandler " Usage="member this.SystemColorsChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SystemColorsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -1972,6 +2163,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler TabIndexChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TabIndexChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.TabIndexChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event TabIndexChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TabIndexChanged : EventHandler " Usage="member this.TabIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2001,6 +2195,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler TabStopChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TabStopChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.TabStopChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event TabStopChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TabStopChanged : EventHandler " Usage="member this.TabStopChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabStopChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2030,6 +2227,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.TextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event TextChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2059,6 +2259,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler Validated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Validated" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.Validated" />
+      <MemberSignature Language="VB.NET" Value="Public Event Validated As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Validated : EventHandler " Usage="member this.Validated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Validated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2119,6 +2322,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event System.ComponentModel.CancelEventHandler Validating;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CancelEventHandler Validating" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.Validating" />
+      <MemberSignature Language="VB.NET" Value="Public Event Validating As CancelEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Validating : System.ComponentModel.CancelEventHandler " Usage="member this.Validating : System.ComponentModel.CancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ Validating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2179,6 +2385,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler ValueMemberChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ValueMemberChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.ValueMemberChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ValueMemberChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ValueMemberChanged : EventHandler " Usage="member this.ValueMemberChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ValueMemberChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2208,6 +2417,9 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
       <MemberSignature Language="C#" Value="public event EventHandler VisibleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler VisibleChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray.VisibleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event VisibleChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.VisibleChanged : EventHandler " Usage="member this.VisibleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ VisibleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -2233,14 +2445,5 @@ MsgBox(CStr(DriveListBoxArray(1).Text))
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.DriveListBoxArray" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

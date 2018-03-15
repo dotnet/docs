@@ -1,7 +1,10 @@
-<Type Name="InPlaceHostingManager" FullName="System.Deployment.Application.InPlaceHostingManager">
+﻿<Type Name="InPlaceHostingManager" FullName="System.Deployment.Application.InPlaceHostingManager">
   <TypeSignature Language="C#" Value="public class InPlaceHostingManager : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InPlaceHostingManager extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.InPlaceHostingManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class InPlaceHostingManager&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type InPlaceHostingManager = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InPlaceHostingManager : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,10 +54,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of <see cref="T:System.Deployment.Application.InPlaceHostingManager" /> to download and install the specified application.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InPlaceHostingManager (Uri deploymentManifest);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri deploymentManifest) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (deploymentManifest As Uri)" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.InPlaceHostingManager : Uri -&gt; System.Deployment.Application.InPlaceHostingManager" Usage="new System.Deployment.Application.InPlaceHostingManager deploymentManifest" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InPlaceHostingManager(Uri ^ deploymentManifest);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -85,6 +100,9 @@
       <MemberSignature Language="C#" Value="public InPlaceHostingManager (Uri deploymentManifest, bool launchInHostProcess);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri deploymentManifest, bool launchInHostProcess) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.#ctor(System.Uri,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (deploymentManifest As Uri, launchInHostProcess As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Deployment.Application.InPlaceHostingManager : Uri * bool -&gt; System.Deployment.Application.InPlaceHostingManager" Usage="new System.Deployment.Application.InPlaceHostingManager (deploymentManifest, launchInHostProcess)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InPlaceHostingManager(Uri ^ deploymentManifest, bool launchInHostProcess);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -116,10 +134,22 @@
           <paramref name="deploymentManifest" /> uses a URI scheme that is not supported by [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)].</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AssertApplicationRequirements">
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the ClickOnce application has the appropriate permissions and platform dependencies to run on the local computer.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AssertApplicationRequirements">
       <MemberSignature Language="C#" Value="public void AssertApplicationRequirements ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AssertApplicationRequirements() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AssertApplicationRequirements ()" />
+      <MemberSignature Language="F#" Value="member this.AssertApplicationRequirements : unit -&gt; unit" Usage="inPlaceHostingManager.AssertApplicationRequirements " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssertApplicationRequirements();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -154,6 +184,9 @@
       <MemberSignature Language="C#" Value="public void AssertApplicationRequirements (bool grantApplicationTrust);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AssertApplicationRequirements(bool grantApplicationTrust) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AssertApplicationRequirements (grantApplicationTrust As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.AssertApplicationRequirements : bool -&gt; unit" Usage="inPlaceHostingManager.AssertApplicationRequirements grantApplicationTrust" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssertApplicationRequirements(bool grantApplicationTrust);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -182,6 +215,9 @@
       <MemberSignature Language="C#" Value="public void CancelAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.CancelAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelAsync ()" />
+      <MemberSignature Language="F#" Value="member this.CancelAsync : unit -&gt; unit" Usage="inPlaceHostingManager.CancelAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -200,7 +236,13 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="inPlaceHostingManager.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -228,6 +270,9 @@
       <MemberSignature Language="C#" Value="public void DownloadApplicationAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DownloadApplicationAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.DownloadApplicationAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DownloadApplicationAsync ()" />
+      <MemberSignature Language="F#" Value="member this.DownloadApplicationAsync : unit -&gt; unit" Usage="inPlaceHostingManager.DownloadApplicationAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DownloadApplicationAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -264,6 +309,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Deployment.Application.DownloadApplicationCompletedEventArgs&gt; DownloadApplicationCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Deployment.Application.DownloadApplicationCompletedEventArgs&gt; DownloadApplicationCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Deployment.Application.InPlaceHostingManager.DownloadApplicationCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event DownloadApplicationCompleted As EventHandler(Of DownloadApplicationCompletedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.DownloadApplicationCompleted : EventHandler&lt;System.Deployment.Application.DownloadApplicationCompletedEventArgs&gt; " Usage="member this.DownloadApplicationCompleted : System.EventHandler&lt;System.Deployment.Application.DownloadApplicationCompletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Deployment::Application::DownloadApplicationCompletedEventArgs ^&gt; ^ DownloadApplicationCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -296,6 +344,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Deployment.Application.DownloadProgressChangedEventArgs&gt; DownloadProgressChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Deployment.Application.DownloadProgressChangedEventArgs&gt; DownloadProgressChanged" />
       <MemberSignature Language="DocId" Value="E:System.Deployment.Application.InPlaceHostingManager.DownloadProgressChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event DownloadProgressChanged As EventHandler(Of DownloadProgressChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.DownloadProgressChanged : EventHandler&lt;System.Deployment.Application.DownloadProgressChangedEventArgs&gt; " Usage="member this.DownloadProgressChanged : System.EventHandler&lt;System.Deployment.Application.DownloadProgressChangedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Deployment::Application::DownloadProgressChangedEventArgs ^&gt; ^ DownloadProgressChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -328,6 +379,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Remoting.ObjectHandle Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Runtime.Remoting.ObjectHandle Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Function Execute () As ObjectHandle" />
+      <MemberSignature Language="F#" Value="member this.Execute : unit -&gt; System.Runtime.Remoting.ObjectHandle" Usage="inPlaceHostingManager.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::Remoting::ObjectHandle ^ Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -354,6 +408,9 @@
       <MemberSignature Language="C#" Value="public void GetManifestAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetManifestAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.GetManifestAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetManifestAsync ()" />
+      <MemberSignature Language="F#" Value="member this.GetManifestAsync : unit -&gt; unit" Usage="inPlaceHostingManager.GetManifestAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetManifestAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -391,6 +448,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Deployment.Application.GetManifestCompletedEventArgs&gt; GetManifestCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Deployment.Application.GetManifestCompletedEventArgs&gt; GetManifestCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Deployment.Application.InPlaceHostingManager.GetManifestCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event GetManifestCompleted As EventHandler(Of GetManifestCompletedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.GetManifestCompleted : EventHandler&lt;System.Deployment.Application.GetManifestCompletedEventArgs&gt; " Usage="member this.GetManifestCompleted : System.EventHandler&lt;System.Deployment.Application.GetManifestCompletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Deployment::Application::GetManifestCompletedEventArgs ^&gt; ^ GetManifestCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -428,6 +488,9 @@
       <MemberSignature Language="C#" Value="public static void UninstallCustomAddIn (string subscriptionId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UninstallCustomAddIn(string subscriptionId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.UninstallCustomAddIn(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub UninstallCustomAddIn (subscriptionId As String)" />
+      <MemberSignature Language="F#" Value="static member UninstallCustomAddIn : string -&gt; unit" Usage="System.Deployment.Application.InPlaceHostingManager.UninstallCustomAddIn subscriptionId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UninstallCustomAddIn(System::String ^ subscriptionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -453,6 +516,9 @@
       <MemberSignature Language="C#" Value="public static void UninstallCustomUXApplication (string subscriptionId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UninstallCustomUXApplication(string subscriptionId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub UninstallCustomUXApplication (subscriptionId As String)" />
+      <MemberSignature Language="F#" Value="static member UninstallCustomUXApplication : string -&gt; unit" Usage="System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication subscriptionId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UninstallCustomUXApplication(System::String ^ subscriptionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -479,23 +545,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of <see cref="T:System.Deployment.Application.InPlaceHostingManager" /> to download and install the specified application.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AssertApplicationRequirements">
-      <AssemblyInfo>
-        <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the ClickOnce application has the appropriate permissions and platform dependencies to run on the local computer.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

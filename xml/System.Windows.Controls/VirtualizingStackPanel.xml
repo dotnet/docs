@@ -1,7 +1,10 @@
-<Type Name="VirtualizingStackPanel" FullName="System.Windows.Controls.VirtualizingStackPanel">
+﻿<Type Name="VirtualizingStackPanel" FullName="System.Windows.Controls.VirtualizingStackPanel">
   <TypeSignature Language="C#" Value="public class VirtualizingStackPanel : System.Windows.Controls.VirtualizingPanel, System.Windows.Controls.Primitives.IScrollInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi VirtualizingStackPanel extends System.Windows.Controls.VirtualizingPanel implements class System.Windows.Controls.Primitives.IScrollInfo" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.VirtualizingStackPanel" />
+  <TypeSignature Language="VB.NET" Value="Public Class VirtualizingStackPanel&#xA;Inherits VirtualizingPanel&#xA;Implements IScrollInfo" />
+  <TypeSignature Language="F#" Value="type VirtualizingStackPanel = class&#xA;    inherit VirtualizingPanel&#xA;    interface IScrollInfo&#xA;    interface IStackMeasure" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VirtualizingStackPanel : System::Windows::Controls::VirtualizingPanel, System::Windows::Controls::Primitives::IScrollInfo" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +57,8 @@
       <MemberSignature Language="C#" Value="public VirtualizingStackPanel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VirtualizingStackPanel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +75,9 @@
       <MemberSignature Language="C#" Value="public static void AddCleanUpVirtualizedItemHandler (System.Windows.DependencyObject element, System.Windows.Controls.CleanUpVirtualizedItemEventHandler handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddCleanUpVirtualizedItemHandler(class System.Windows.DependencyObject element, class System.Windows.Controls.CleanUpVirtualizedItemEventHandler handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.AddCleanUpVirtualizedItemHandler(System.Windows.DependencyObject,System.Windows.Controls.CleanUpVirtualizedItemEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddCleanUpVirtualizedItemHandler (element As DependencyObject, handler As CleanUpVirtualizedItemEventHandler)" />
+      <MemberSignature Language="F#" Value="static member AddCleanUpVirtualizedItemHandler : System.Windows.DependencyObject * System.Windows.Controls.CleanUpVirtualizedItemEventHandler -&gt; unit" Usage="System.Windows.Controls.VirtualizingStackPanel.AddCleanUpVirtualizedItemHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddCleanUpVirtualizedItemHandler(System::Windows::DependencyObject ^ element, System::Windows::Controls::CleanUpVirtualizedItemEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -100,6 +108,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="virtualizingStackPanel.ArrangeOverride arrangeSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -126,9 +137,12 @@
       </Docs>
     </Member>
     <Member MemberName="BringIndexIntoView">
-      <MemberSignature Language="C#" Value="protected override void BringIndexIntoView (int index);" />
+      <MemberSignature Language="C#" Value="protected internal override void BringIndexIntoView (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void BringIndexIntoView(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.BringIndexIntoView(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub BringIndexIntoView (index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.BringIndexIntoView : int -&gt; unit" Usage="virtualizingStackPanel.BringIndexIntoView index" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void BringIndexIntoView(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -151,6 +165,9 @@
       <MemberSignature Language="C#" Value="protected override bool CanHierarchicallyScrollAndVirtualizeCore { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanHierarchicallyScrollAndVirtualizeCore" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingStackPanel.CanHierarchicallyScrollAndVirtualizeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CanHierarchicallyScrollAndVirtualizeCore As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanHierarchicallyScrollAndVirtualizeCore : bool" Usage="System.Windows.Controls.VirtualizingStackPanel.CanHierarchicallyScrollAndVirtualizeCore" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool CanHierarchicallyScrollAndVirtualizeCore { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -170,7 +187,13 @@
       <MemberSignature Language="C#" Value="public bool CanHorizontallyScroll { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanHorizontallyScroll" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingStackPanel.CanHorizontallyScroll" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanHorizontallyScroll As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanHorizontallyScroll : bool with get, set" Usage="System.Windows.Controls.VirtualizingStackPanel.CanHorizontallyScroll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanHorizontallyScroll { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.CanHorizontallyScroll</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -194,7 +217,13 @@
       <MemberSignature Language="C#" Value="public bool CanVerticallyScroll { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanVerticallyScroll" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingStackPanel.CanVerticallyScroll" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanVerticallyScroll As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanVerticallyScroll : bool with get, set" Usage="System.Windows.Controls.VirtualizingStackPanel.CanVerticallyScroll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanVerticallyScroll { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.CanVerticallyScroll</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -214,10 +243,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CleanUpVirtualizedItem">
+      <MemberSignature Language="C#" Value="see AddCleanUpVirtualizedItemHandler, and RemoveCleanUpVirtualizedItemHandler" />
+      <MemberSignature Language="ILAsm" Value="see AddCleanUpVirtualizedItemHandler, and RemoveCleanUpVirtualizedItemHandler" />
+      <MemberSignature Language="DocId" Value="E:System.Windows.Controls.VirtualizingStackPanel.CleanUpVirtualizedItem" />
+      <MemberSignature Language="VB.NET" Value="see AddCleanUpVirtualizedItemHandler, and RemoveCleanUpVirtualizedItemHandler" />
+      <MemberSignature Language="F#" Value="see AddCleanUpVirtualizedItemHandler, and RemoveCleanUpVirtualizedItemHandler" Usage="see AddCleanUpVirtualizedItemHandler, and RemoveCleanUpVirtualizedItemHandler" />
+      <MemberType>AttachedEvent</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CleanUpVirtualizedItemEvent">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent CleanUpVirtualizedItemEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent CleanUpVirtualizedItemEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizingStackPanel.CleanUpVirtualizedItemEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CleanUpVirtualizedItemEvent As RoutedEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable CleanUpVirtualizedItemEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.VirtualizingStackPanel.CleanUpVirtualizedItemEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ CleanUpVirtualizedItemEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -235,7 +283,13 @@
       <MemberSignature Language="C#" Value="public double ExtentHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ExtentHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingStackPanel.ExtentHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.ExtentHeight : double" Usage="System.Windows.Controls.VirtualizingStackPanel.ExtentHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentHeight { double get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.ExtentHeight</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -253,7 +307,13 @@
       <MemberSignature Language="C#" Value="public double ExtentWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ExtentWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingStackPanel.ExtentWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.ExtentWidth : double" Usage="System.Windows.Controls.VirtualizingStackPanel.ExtentWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentWidth { double get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.ExtentWidth</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -271,6 +331,9 @@
       <MemberSignature Language="C#" Value="protected override double GetItemOffsetCore (System.Windows.UIElement child);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance float64 GetItemOffsetCore(class System.Windows.UIElement child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.GetItemOffsetCore(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetItemOffsetCore (child As UIElement) As Double" />
+      <MemberSignature Language="F#" Value="override this.GetItemOffsetCore : System.Windows.UIElement -&gt; double" Usage="virtualizingStackPanel.GetItemOffsetCore child" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override double GetItemOffsetCore(System::Windows::UIElement ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -290,9 +353,12 @@
       </Docs>
     </Member>
     <Member MemberName="HasLogicalOrientation">
-      <MemberSignature Language="C#" Value="protected override bool HasLogicalOrientation { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override bool HasLogicalOrientation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasLogicalOrientation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingStackPanel.HasLogicalOrientation" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property HasLogicalOrientation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasLogicalOrientation : bool" Usage="System.Windows.Controls.VirtualizingStackPanel.HasLogicalOrientation" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool HasLogicalOrientation { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -318,14 +384,20 @@
       <MemberSignature Language="C#" Value="public double HorizontalOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 HorizontalOffset" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingStackPanel.HorizontalOffset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalOffset As Double" />
+      <MemberSignature Language="F#" Value="member this.HorizontalOffset : double" Usage="System.Windows.Controls.VirtualizingStackPanel.HorizontalOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalOffset { double get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.HorizontalOffset</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -342,6 +414,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsVirtualizingProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsVirtualizingProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsVirtualizingProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsVirtualizingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.VirtualizingStackPanel.IsVirtualizingProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsVirtualizingProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -359,7 +434,13 @@
       <MemberSignature Language="C#" Value="public virtual void LineDown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LineDown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.LineDown" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub LineDown ()" />
+      <MemberSignature Language="F#" Value="abstract member LineDown : unit -&gt; unit&#xA;override this.LineDown : unit -&gt; unit" Usage="virtualizingStackPanel.LineDown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineDown();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.LineDown</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -386,7 +467,13 @@
       <MemberSignature Language="C#" Value="public virtual void LineLeft ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LineLeft() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.LineLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub LineLeft ()" />
+      <MemberSignature Language="F#" Value="abstract member LineLeft : unit -&gt; unit&#xA;override this.LineLeft : unit -&gt; unit" Usage="virtualizingStackPanel.LineLeft " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineLeft();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.LineLeft</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -413,7 +500,13 @@
       <MemberSignature Language="C#" Value="public virtual void LineRight ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LineRight() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.LineRight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub LineRight ()" />
+      <MemberSignature Language="F#" Value="abstract member LineRight : unit -&gt; unit&#xA;override this.LineRight : unit -&gt; unit" Usage="virtualizingStackPanel.LineRight " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineRight();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.LineRight</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -440,7 +533,13 @@
       <MemberSignature Language="C#" Value="public virtual void LineUp ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LineUp() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.LineUp" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub LineUp ()" />
+      <MemberSignature Language="F#" Value="abstract member LineUp : unit -&gt; unit&#xA;override this.LineUp : unit -&gt; unit" Usage="virtualizingStackPanel.LineUp " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineUp();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.LineUp</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -464,9 +563,12 @@
       </Docs>
     </Member>
     <Member MemberName="LogicalOrientation">
-      <MemberSignature Language="C#" Value="protected override System.Windows.Controls.Orientation LogicalOrientation { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Windows.Controls.Orientation LogicalOrientation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Orientation LogicalOrientation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingStackPanel.LogicalOrientation" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalOrientation As Orientation" />
+      <MemberSignature Language="F#" Value="member this.LogicalOrientation : System.Windows.Controls.Orientation" Usage="System.Windows.Controls.VirtualizingStackPanel.LogicalOrientation" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Windows::Controls::Orientation LogicalOrientation { System::Windows::Controls::Orientation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -486,7 +588,12 @@
       <MemberSignature Language="C#" Value="public System.Windows.Rect MakeVisible (System.Windows.Media.Visual visual, System.Windows.Rect rectangle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Rect MakeVisible(class System.Windows.Media.Visual visual, valuetype System.Windows.Rect rectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.MakeVisible(System.Windows.Media.Visual,System.Windows.Rect)" />
+      <MemberSignature Language="F#" Value="abstract member MakeVisible : System.Windows.Media.Visual * System.Windows.Rect -&gt; System.Windows.Rect&#xA;override this.MakeVisible : System.Windows.Media.Visual * System.Windows.Rect -&gt; System.Windows.Rect" Usage="virtualizingStackPanel.MakeVisible (visual, rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Rect MakeVisible(System::Windows::Media::Visual ^ visual, System::Windows::Rect rectangle);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.MakeVisible(System.Windows.Media.Visual,System.Windows.Rect)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -510,6 +617,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="virtualizingStackPanel.MeasureOverride constraint" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -540,7 +650,13 @@
       <MemberSignature Language="C#" Value="public virtual void MouseWheelDown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MouseWheelDown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.MouseWheelDown" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub MouseWheelDown ()" />
+      <MemberSignature Language="F#" Value="abstract member MouseWheelDown : unit -&gt; unit&#xA;override this.MouseWheelDown : unit -&gt; unit" Usage="virtualizingStackPanel.MouseWheelDown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelDown();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelDown</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -567,7 +683,13 @@
       <MemberSignature Language="C#" Value="public virtual void MouseWheelLeft ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MouseWheelLeft() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.MouseWheelLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub MouseWheelLeft ()" />
+      <MemberSignature Language="F#" Value="abstract member MouseWheelLeft : unit -&gt; unit&#xA;override this.MouseWheelLeft : unit -&gt; unit" Usage="virtualizingStackPanel.MouseWheelLeft " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelLeft();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelLeft</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -594,7 +716,13 @@
       <MemberSignature Language="C#" Value="public virtual void MouseWheelRight ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MouseWheelRight() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.MouseWheelRight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub MouseWheelRight ()" />
+      <MemberSignature Language="F#" Value="abstract member MouseWheelRight : unit -&gt; unit&#xA;override this.MouseWheelRight : unit -&gt; unit" Usage="virtualizingStackPanel.MouseWheelRight " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelRight();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelRight</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -621,7 +749,13 @@
       <MemberSignature Language="C#" Value="public virtual void MouseWheelUp ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MouseWheelUp() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.MouseWheelUp" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub MouseWheelUp ()" />
+      <MemberSignature Language="F#" Value="abstract member MouseWheelUp : unit -&gt; unit&#xA;override this.MouseWheelUp : unit -&gt; unit" Usage="virtualizingStackPanel.MouseWheelUp " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelUp();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelUp</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -648,6 +782,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCleanUpVirtualizedItem (System.Windows.Controls.CleanUpVirtualizedItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCleanUpVirtualizedItem(class System.Windows.Controls.CleanUpVirtualizedItemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.OnCleanUpVirtualizedItem(System.Windows.Controls.CleanUpVirtualizedItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCleanUpVirtualizedItem (e As CleanUpVirtualizedItemEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnCleanUpVirtualizedItem : System.Windows.Controls.CleanUpVirtualizedItemEventArgs -&gt; unit&#xA;override this.OnCleanUpVirtualizedItem : System.Windows.Controls.CleanUpVirtualizedItemEventArgs -&gt; unit" Usage="virtualizingStackPanel.OnCleanUpVirtualizedItem e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCleanUpVirtualizedItem(System::Windows::Controls::CleanUpVirtualizedItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -676,6 +813,9 @@
       <MemberSignature Language="C#" Value="protected override void OnClearChildren ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClearChildren() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.OnClearChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClearChildren ()" />
+      <MemberSignature Language="F#" Value="override this.OnClearChildren : unit -&gt; unit" Usage="virtualizingStackPanel.OnClearChildren " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClearChildren();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -694,6 +834,9 @@
       <MemberSignature Language="C#" Value="protected override void OnItemsChanged (object sender, System.Windows.Controls.Primitives.ItemsChangedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnItemsChanged(object sender, class System.Windows.Controls.Primitives.ItemsChangedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.OnItemsChanged(System.Object,System.Windows.Controls.Primitives.ItemsChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemsChanged (sender As Object, args As ItemsChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnItemsChanged : obj * System.Windows.Controls.Primitives.ItemsChangedEventArgs -&gt; unit" Usage="virtualizingStackPanel.OnItemsChanged (sender, args)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemsChanged(System::Object ^ sender, System::Windows::Controls::Primitives::ItemsChangedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -717,6 +860,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnViewportOffsetChanged (System.Windows.Vector oldViewportOffset, System.Windows.Vector newViewportOffset);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnViewportOffsetChanged(valuetype System.Windows.Vector oldViewportOffset, valuetype System.Windows.Vector newViewportOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.OnViewportOffsetChanged(System.Windows.Vector,System.Windows.Vector)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnViewportOffsetChanged (oldViewportOffset As Vector, newViewportOffset As Vector)" />
+      <MemberSignature Language="F#" Value="abstract member OnViewportOffsetChanged : System.Windows.Vector * System.Windows.Vector -&gt; unit&#xA;override this.OnViewportOffsetChanged : System.Windows.Vector * System.Windows.Vector -&gt; unit" Usage="virtualizingStackPanel.OnViewportOffsetChanged (oldViewportOffset, newViewportOffset)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnViewportOffsetChanged(System::Windows::Vector oldViewportOffset, System::Windows::Vector newViewportOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -747,6 +893,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnViewportSizeChanged (System.Windows.Size oldViewportSize, System.Windows.Size newViewportSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnViewportSizeChanged(valuetype System.Windows.Size oldViewportSize, valuetype System.Windows.Size newViewportSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.OnViewportSizeChanged(System.Windows.Size,System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnViewportSizeChanged (oldViewportSize As Size, newViewportSize As Size)" />
+      <MemberSignature Language="F#" Value="abstract member OnViewportSizeChanged : System.Windows.Size * System.Windows.Size -&gt; unit&#xA;override this.OnViewportSizeChanged : System.Windows.Size * System.Windows.Size -&gt; unit" Usage="virtualizingStackPanel.OnViewportSizeChanged (oldViewportSize, newViewportSize)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnViewportSizeChanged(System::Windows::Size oldViewportSize, System::Windows::Size newViewportSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -777,6 +926,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Orientation Orientation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Orientation Orientation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingStackPanel.Orientation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Orientation As Orientation" />
+      <MemberSignature Language="F#" Value="member this.Orientation : System.Windows.Controls.Orientation with get, set" Usage="System.Windows.Controls.VirtualizingStackPanel.Orientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Orientation Orientation { System::Windows::Controls::Orientation get(); void set(System::Windows::Controls::Orientation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -809,6 +961,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OrientationProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OrientationProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizingStackPanel.OrientationProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OrientationProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable OrientationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.VirtualizingStackPanel.OrientationProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OrientationProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -826,7 +981,13 @@
       <MemberSignature Language="C#" Value="public virtual void PageDown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageDown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.PageDown" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub PageDown ()" />
+      <MemberSignature Language="F#" Value="abstract member PageDown : unit -&gt; unit&#xA;override this.PageDown : unit -&gt; unit" Usage="virtualizingStackPanel.PageDown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageDown();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.PageDown</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -853,7 +1014,13 @@
       <MemberSignature Language="C#" Value="public virtual void PageLeft ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageLeft() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.PageLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub PageLeft ()" />
+      <MemberSignature Language="F#" Value="abstract member PageLeft : unit -&gt; unit&#xA;override this.PageLeft : unit -&gt; unit" Usage="virtualizingStackPanel.PageLeft " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageLeft();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.PageLeft</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -880,7 +1047,13 @@
       <MemberSignature Language="C#" Value="public virtual void PageRight ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageRight() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.PageRight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub PageRight ()" />
+      <MemberSignature Language="F#" Value="abstract member PageRight : unit -&gt; unit&#xA;override this.PageRight : unit -&gt; unit" Usage="virtualizingStackPanel.PageRight " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageRight();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.PageRight</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -907,7 +1080,13 @@
       <MemberSignature Language="C#" Value="public virtual void PageUp ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageUp() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.PageUp" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub PageUp ()" />
+      <MemberSignature Language="F#" Value="abstract member PageUp : unit -&gt; unit&#xA;override this.PageUp : unit -&gt; unit" Usage="virtualizingStackPanel.PageUp " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageUp();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.PageUp</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -934,6 +1113,9 @@
       <MemberSignature Language="C#" Value="public static void RemoveCleanUpVirtualizedItemHandler (System.Windows.DependencyObject element, System.Windows.Controls.CleanUpVirtualizedItemEventHandler handler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveCleanUpVirtualizedItemHandler(class System.Windows.DependencyObject element, class System.Windows.Controls.CleanUpVirtualizedItemEventHandler handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.RemoveCleanUpVirtualizedItemHandler(System.Windows.DependencyObject,System.Windows.Controls.CleanUpVirtualizedItemEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveCleanUpVirtualizedItemHandler (element As DependencyObject, handler As CleanUpVirtualizedItemEventHandler)" />
+      <MemberSignature Language="F#" Value="static member RemoveCleanUpVirtualizedItemHandler : System.Windows.DependencyObject * System.Windows.Controls.CleanUpVirtualizedItemEventHandler -&gt; unit" Usage="System.Windows.Controls.VirtualizingStackPanel.RemoveCleanUpVirtualizedItemHandler (element, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveCleanUpVirtualizedItemHandler(System::Windows::DependencyObject ^ element, System::Windows::Controls::CleanUpVirtualizedItemEventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -964,14 +1146,20 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.ScrollViewer ScrollOwner { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ScrollViewer ScrollOwner" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingStackPanel.ScrollOwner" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollOwner As ScrollViewer" />
+      <MemberSignature Language="F#" Value="member this.ScrollOwner : System.Windows.Controls.ScrollViewer with get, set" Usage="System.Windows.Controls.VirtualizingStackPanel.ScrollOwner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ScrollViewer ^ ScrollOwner { System::Windows::Controls::ScrollViewer ^ get(); void set(System::Windows::Controls::ScrollViewer ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.ScrollOwner</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -994,7 +1182,13 @@
       <MemberSignature Language="C#" Value="public void SetHorizontalOffset (double offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHorizontalOffset(float64 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.SetHorizontalOffset(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetHorizontalOffset (offset As Double)" />
+      <MemberSignature Language="F#" Value="abstract member SetHorizontalOffset : double -&gt; unit&#xA;override this.SetHorizontalOffset : double -&gt; unit" Usage="virtualizingStackPanel.SetHorizontalOffset offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHorizontalOffset(double offset);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.SetHorizontalOffset(System.Double)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1015,7 +1209,13 @@
       <MemberSignature Language="C#" Value="public void SetVerticalOffset (double offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetVerticalOffset(float64 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.SetVerticalOffset(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetVerticalOffset (offset As Double)" />
+      <MemberSignature Language="F#" Value="abstract member SetVerticalOffset : double -&gt; unit&#xA;override this.SetVerticalOffset : double -&gt; unit" Usage="virtualizingStackPanel.SetVerticalOffset offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetVerticalOffset(double offset);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.SetVerticalOffset(System.Double)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1036,6 +1236,9 @@
       <MemberSignature Language="C#" Value="protected override bool ShouldItemsChangeAffectLayoutCore (bool areItemChangesLocal, System.Windows.Controls.Primitives.ItemsChangedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ShouldItemsChangeAffectLayoutCore(bool areItemChangesLocal, class System.Windows.Controls.Primitives.ItemsChangedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingStackPanel.ShouldItemsChangeAffectLayoutCore(System.Boolean,System.Windows.Controls.Primitives.ItemsChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ShouldItemsChangeAffectLayoutCore (areItemChangesLocal As Boolean, args As ItemsChangedEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ShouldItemsChangeAffectLayoutCore : bool * System.Windows.Controls.Primitives.ItemsChangedEventArgs -&gt; bool" Usage="virtualizingStackPanel.ShouldItemsChangeAffectLayoutCore (areItemChangesLocal, args)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ShouldItemsChangeAffectLayoutCore(bool areItemChangesLocal, System::Windows::Controls::Primitives::ItemsChangedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1062,14 +1265,20 @@
       <MemberSignature Language="C#" Value="public double VerticalOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 VerticalOffset" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingStackPanel.VerticalOffset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalOffset As Double" />
+      <MemberSignature Language="F#" Value="member this.VerticalOffset : double" Usage="System.Windows.Controls.VirtualizingStackPanel.VerticalOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalOffset { double get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.VerticalOffset</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1085,7 +1294,13 @@
       <MemberSignature Language="C#" Value="public double ViewportHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ViewportHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingStackPanel.ViewportHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewportHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.ViewportHeight : double" Usage="System.Windows.Controls.VirtualizingStackPanel.ViewportHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportHeight { double get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.ViewportHeight</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1103,7 +1318,13 @@
       <MemberSignature Language="C#" Value="public double ViewportWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ViewportWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingStackPanel.ViewportWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewportWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.ViewportWidth : double" Usage="System.Windows.Controls.VirtualizingStackPanel.ViewportWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportWidth { double get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.ViewportWidth</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1121,6 +1342,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty VirtualizationModeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty VirtualizationModeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizingStackPanel.VirtualizationModeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VirtualizationModeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable VirtualizationModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.VirtualizingStackPanel.VirtualizationModeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VirtualizationModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="DocumentAutomationPeer" FullName="System.Windows.Automation.Peers.DocumentAutomationPeer">
+﻿<Type Name="DocumentAutomationPeer" FullName="System.Windows.Automation.Peers.DocumentAutomationPeer">
   <TypeSignature Language="C#" Value="public class DocumentAutomationPeer : System.Windows.Automation.Peers.ContentTextAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DocumentAutomationPeer extends System.Windows.Automation.Peers.ContentTextAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.DocumentAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Class DocumentAutomationPeer&#xA;Inherits ContentTextAutomationPeer" />
+  <TypeSignature Language="F#" Value="type DocumentAutomationPeer = class&#xA;    inherit ContentTextAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DocumentAutomationPeer : System::Windows::Automation::Peers::ContentTextAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="public DocumentAutomationPeer (System.Windows.FrameworkContentElement owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.FrameworkContentElement owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DocumentAutomationPeer.#ctor(System.Windows.FrameworkContentElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As FrameworkContentElement)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.DocumentAutomationPeer : System.Windows.FrameworkContentElement -&gt; System.Windows.Automation.Peers.DocumentAutomationPeer" Usage="new System.Windows.Automation.Peers.DocumentAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DocumentAutomationPeer(System::Windows::FrameworkContentElement ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +53,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DocumentAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="documentAutomationPeer.GetAutomationControlTypeCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +76,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Rect GetBoundingRectangleCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Rect GetBoundingRectangleCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DocumentAutomationPeer.GetBoundingRectangleCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetBoundingRectangleCore () As Rect" />
+      <MemberSignature Language="F#" Value="override this.GetBoundingRectangleCore : unit -&gt; System.Windows.Rect" Usage="documentAutomationPeer.GetBoundingRectangleCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Rect GetBoundingRectangleCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +106,9 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DocumentAutomationPeer.GetChildrenCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="documentAutomationPeer.GetChildrenCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -114,6 +129,9 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DocumentAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="documentAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -133,6 +151,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Point GetClickablePointCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Point GetClickablePointCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DocumentAutomationPeer.GetClickablePointCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClickablePointCore () As Point" />
+      <MemberSignature Language="F#" Value="override this.GetClickablePointCore : unit -&gt; System.Windows.Point" Usage="documentAutomationPeer.GetClickablePointCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Point GetClickablePointCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -160,6 +181,8 @@
       <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DocumentAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="documentAutomationPeer.GetPattern patternInterface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -182,6 +205,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsControlElementCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsControlElementCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DocumentAutomationPeer.IsControlElementCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsControlElementCore () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsControlElementCore : unit -&gt; bool" Usage="documentAutomationPeer.IsControlElementCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsControlElementCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -202,6 +228,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsOffscreenCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsOffscreenCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.DocumentAutomationPeer.IsOffscreenCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsOffscreenCore () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsOffscreenCore : unit -&gt; bool" Usage="documentAutomationPeer.IsOffscreenCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsOffscreenCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

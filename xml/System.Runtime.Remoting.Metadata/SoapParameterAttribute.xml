@@ -1,7 +1,10 @@
-<Type Name="SoapParameterAttribute" FullName="System.Runtime.Remoting.Metadata.SoapParameterAttribute">
+﻿<Type Name="SoapParameterAttribute" FullName="System.Runtime.Remoting.Metadata.SoapParameterAttribute">
   <TypeSignature Language="C#" Value="public sealed class SoapParameterAttribute : System.Runtime.Remoting.Metadata.SoapAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapParameterAttribute extends System.Runtime.Remoting.Metadata.SoapAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.SoapParameterAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapParameterAttribute&#xA;Inherits SoapAttribute" />
+  <TypeSignature Language="F#" Value="type SoapParameterAttribute = class&#xA;    inherit SoapAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapParameterAttribute sealed : System::Runtime::Remoting::Metadata::SoapAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="public SoapParameterAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.SoapParameterAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapParameterAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

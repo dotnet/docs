@@ -1,7 +1,10 @@
-<Type Name="ExtractedClassName" FullName="Microsoft.Build.Tasks.ExtractedClassName">
+﻿<Type Name="ExtractedClassName" FullName="Microsoft.Build.Tasks.ExtractedClassName">
   <TypeSignature Language="C#" Value="public struct ExtractedClassName" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ExtractedClassName extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.ExtractedClassName" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ExtractedClassName" />
+  <TypeSignature Language="F#" Value="type ExtractedClassName = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class ExtractedClassName" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public bool IsInsideConditionalBlock { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInsideConditionalBlock" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ExtractedClassName.IsInsideConditionalBlock" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInsideConditionalBlock As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInsideConditionalBlock : bool with get, set" Usage="Microsoft.Build.Tasks.ExtractedClassName.IsInsideConditionalBlock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInsideConditionalBlock { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -40,6 +46,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ExtractedClassName.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Build.Tasks.ExtractedClassName.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

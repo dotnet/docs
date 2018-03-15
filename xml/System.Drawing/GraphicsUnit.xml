@@ -1,7 +1,10 @@
-<Type Name="GraphicsUnit" FullName="System.Drawing.GraphicsUnit">
+﻿<Type Name="GraphicsUnit" FullName="System.Drawing.GraphicsUnit">
   <TypeSignature Language="C#" Value="public enum GraphicsUnit" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GraphicsUnit extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.GraphicsUnit" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GraphicsUnit" />
+  <TypeSignature Language="F#" Value="type GraphicsUnit = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class GraphicsUnit" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="Display" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.GraphicsUnit Display = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.GraphicsUnit.Display" />
+      <MemberSignature Language="VB.NET" Value="Display" />
+      <MemberSignature Language="F#" Value="Display = 1" Usage="System.Drawing.GraphicsUnit.Display" />
+      <MemberSignature Language="C++ CLI" Value="Display" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -39,6 +45,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.GraphicsUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies the unit of measure of the display device. Typically pixels for video displays, and 1/100 inch for printers.</summary>
       </Docs>
@@ -47,6 +54,9 @@
       <MemberSignature Language="C#" Value="Document" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.GraphicsUnit Document = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.GraphicsUnit.Document" />
+      <MemberSignature Language="VB.NET" Value="Document" />
+      <MemberSignature Language="F#" Value="Document = 5" Usage="System.Drawing.GraphicsUnit.Document" />
+      <MemberSignature Language="C++ CLI" Value="Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -55,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.GraphicsUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Specifies the document unit (1/300 inch) as the unit of measure.</summary>
       </Docs>
@@ -63,6 +74,9 @@
       <MemberSignature Language="C#" Value="Inch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.GraphicsUnit Inch = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.GraphicsUnit.Inch" />
+      <MemberSignature Language="VB.NET" Value="Inch" />
+      <MemberSignature Language="F#" Value="Inch = 4" Usage="System.Drawing.GraphicsUnit.Inch" />
+      <MemberSignature Language="C++ CLI" Value="Inch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -71,6 +85,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.GraphicsUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies the inch as the unit of measure.</summary>
       </Docs>
@@ -79,6 +94,9 @@
       <MemberSignature Language="C#" Value="Millimeter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.GraphicsUnit Millimeter = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.GraphicsUnit.Millimeter" />
+      <MemberSignature Language="VB.NET" Value="Millimeter" />
+      <MemberSignature Language="F#" Value="Millimeter = 6" Usage="System.Drawing.GraphicsUnit.Millimeter" />
+      <MemberSignature Language="C++ CLI" Value="Millimeter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -87,6 +105,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.GraphicsUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Specifies the millimeter as the unit of measure.</summary>
       </Docs>
@@ -95,6 +114,9 @@
       <MemberSignature Language="C#" Value="Pixel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.GraphicsUnit Pixel = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.GraphicsUnit.Pixel" />
+      <MemberSignature Language="VB.NET" Value="Pixel" />
+      <MemberSignature Language="F#" Value="Pixel = 2" Usage="System.Drawing.GraphicsUnit.Pixel" />
+      <MemberSignature Language="C++ CLI" Value="Pixel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -103,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.GraphicsUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies a device pixel as the unit of measure.</summary>
       </Docs>
@@ -111,6 +134,9 @@
       <MemberSignature Language="C#" Value="Point" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.GraphicsUnit Point = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.GraphicsUnit.Point" />
+      <MemberSignature Language="VB.NET" Value="Point" />
+      <MemberSignature Language="F#" Value="Point = 3" Usage="System.Drawing.GraphicsUnit.Point" />
+      <MemberSignature Language="C++ CLI" Value="Point" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -119,6 +145,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.GraphicsUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies a printer's point (1/72 inch) as the unit of measure.</summary>
       </Docs>
@@ -127,6 +154,9 @@
       <MemberSignature Language="C#" Value="World" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.GraphicsUnit World = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.GraphicsUnit.World" />
+      <MemberSignature Language="VB.NET" Value="World" />
+      <MemberSignature Language="F#" Value="World = 0" Usage="System.Drawing.GraphicsUnit.World" />
+      <MemberSignature Language="C++ CLI" Value="World" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -135,6 +165,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.GraphicsUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies the world coordinate system unit as the unit of measure.</summary>
       </Docs>

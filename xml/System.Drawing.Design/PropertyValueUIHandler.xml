@@ -1,7 +1,10 @@
-<Type Name="PropertyValueUIHandler" FullName="System.Drawing.Design.PropertyValueUIHandler">
+﻿<Type Name="PropertyValueUIHandler" FullName="System.Drawing.Design.PropertyValueUIHandler">
   <TypeSignature Language="C#" Value="public delegate void PropertyValueUIHandler(ITypeDescriptorContext context, PropertyDescriptor propDesc, ArrayList valueUIItemList);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyValueUIHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.PropertyValueUIHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub PropertyValueUIHandler(context As ITypeDescriptorContext, propDesc As PropertyDescriptor, valueUIItemList As ArrayList)" />
+  <TypeSignature Language="F#" Value="type PropertyValueUIHandler = delegate of ITypeDescriptorContext * PropertyDescriptor * ArrayList -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void PropertyValueUIHandler(ITypeDescriptorContext ^ context, PropertyDescriptor ^ propDesc, ArrayList ^ valueUIItemList);" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

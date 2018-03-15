@@ -1,7 +1,10 @@
-<Type Name="VirtualizationMode" FullName="System.Windows.Controls.VirtualizationMode">
+﻿<Type Name="VirtualizationMode" FullName="System.Windows.Controls.VirtualizationMode">
   <TypeSignature Language="C#" Value="public enum VirtualizationMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VirtualizationMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.VirtualizationMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VirtualizationMode" />
+  <TypeSignature Language="F#" Value="type VirtualizationMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class VirtualizationMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="Recycling" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.VirtualizationMode Recycling = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizationMode.Recycling" />
+      <MemberSignature Language="VB.NET" Value="Recycling" />
+      <MemberSignature Language="F#" Value="Recycling = 1" Usage="System.Windows.Controls.VirtualizationMode.Recycling" />
+      <MemberSignature Language="C++ CLI" Value="Recycling" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -52,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.VirtualizationMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Reuse the item containers.</summary>
       </Docs>
@@ -60,6 +67,9 @@
       <MemberSignature Language="C#" Value="Standard" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.VirtualizationMode Standard = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizationMode.Standard" />
+      <MemberSignature Language="VB.NET" Value="Standard" />
+      <MemberSignature Language="F#" Value="Standard = 0" Usage="System.Windows.Controls.VirtualizationMode.Standard" />
+      <MemberSignature Language="C++ CLI" Value="Standard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +78,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.VirtualizationMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Create and discard the item containers.</summary>
       </Docs>

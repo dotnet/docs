@@ -1,7 +1,10 @@
-<Type Name="RIPEMD160" FullName="System.Security.Cryptography.RIPEMD160">
+﻿<Type Name="RIPEMD160" FullName="System.Security.Cryptography.RIPEMD160">
   <TypeSignature Language="C#" Value="public abstract class RIPEMD160 : System.Security.Cryptography.HashAlgorithm" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RIPEMD160 extends System.Security.Cryptography.HashAlgorithm" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RIPEMD160" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class RIPEMD160&#xA;Inherits HashAlgorithm" />
+  <TypeSignature Language="F#" Value="type RIPEMD160 = class&#xA;    inherit HashAlgorithm" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RIPEMD160 abstract : System::Security::Cryptography::HashAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +49,8 @@
       <MemberSignature Language="C#" Value="protected RIPEMD160 ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RIPEMD160.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RIPEMD160();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,10 +79,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates specific implementations of the <see cref="T:System.Security.Cryptography.RIPEMD160" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.RIPEMD160 Create ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.RIPEMD160 Create() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RIPEMD160.Create" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As RIPEMD160" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.RIPEMD160" Usage="System.Security.Cryptography.RIPEMD160.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::RIPEMD160 ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -115,6 +133,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.RIPEMD160 Create (string hashName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.RIPEMD160 Create(string hashName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RIPEMD160.Create(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (hashName As String) As RIPEMD160" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.RIPEMD160" Usage="System.Security.Cryptography.RIPEMD160.Create hashName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::RIPEMD160 ^ Create(System::String ^ hashName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -142,15 +163,5 @@
         <exception cref="T:System.Reflection.TargetInvocationException">The algorithm described by the <paramref name="hashName" /> parameter was used with Federal Information Processing Standards (FIPS) mode enabled, but it is not FIPS-compatible.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates specific implementations of the <see cref="T:System.Security.Cryptography.RIPEMD160" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

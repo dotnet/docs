@@ -1,7 +1,10 @@
-<Type Name="DataControlExtensions" FullName="System.Web.UI.DataControlExtensions">
+﻿<Type Name="DataControlExtensions" FullName="System.Web.UI.DataControlExtensions">
   <TypeSignature Language="C#" Value="public static class DataControlExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DataControlExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataControlExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module DataControlExtensions" />
+  <TypeSignature Language="F#" Value="type DataControlExtensions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataControlExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,10 +30,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="EnableDynamicData">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enables Dynamic Data behavior for the specified data control.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EnableDynamicData">
       <MemberSignature Language="C#" Value="public static void EnableDynamicData (this System.Web.UI.INamingContainer control, Type entityType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnableDynamicData(class System.Web.UI.INamingContainer control, class System.Type entityType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataControlExtensions.EnableDynamicData(System.Web.UI.INamingContainer,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub EnableDynamicData (control As INamingContainer, entityType As Type)" />
+      <MemberSignature Language="F#" Value="static member EnableDynamicData : System.Web.UI.INamingContainer * Type -&gt; unit" Usage="System.Web.UI.DataControlExtensions.EnableDynamicData (control, entityType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void EnableDynamicData(System::Web::UI::INamingContainer ^ control, Type ^ entityType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -54,6 +69,9 @@
       <MemberSignature Language="C#" Value="public static void EnableDynamicData (this System.Web.UI.INamingContainer control, Type entityType, System.Collections.Generic.IDictionary&lt;string,object&gt; defaultValues);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnableDynamicData(class System.Web.UI.INamingContainer control, class System.Type entityType, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; defaultValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataControlExtensions.EnableDynamicData(System.Web.UI.INamingContainer,System.Type,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub EnableDynamicData (control As INamingContainer, entityType As Type, defaultValues As IDictionary(Of String, Object))" />
+      <MemberSignature Language="F#" Value="static member EnableDynamicData : System.Web.UI.INamingContainer * Type * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; unit" Usage="System.Web.UI.DataControlExtensions.EnableDynamicData (control, entityType, defaultValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void EnableDynamicData(System::Web::UI::INamingContainer ^ control, Type ^ entityType, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ defaultValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -79,6 +97,9 @@
       <MemberSignature Language="C#" Value="public static void EnableDynamicData (this System.Web.UI.INamingContainer control, Type entityType, object defaults);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EnableDynamicData(class System.Web.UI.INamingContainer control, class System.Type entityType, object defaults) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataControlExtensions.EnableDynamicData(System.Web.UI.INamingContainer,System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Sub EnableDynamicData (control As INamingContainer, entityType As Type, defaults As Object)" />
+      <MemberSignature Language="F#" Value="static member EnableDynamicData : System.Web.UI.INamingContainer * Type * obj -&gt; unit" Usage="System.Web.UI.DataControlExtensions.EnableDynamicData (control, entityType, defaults)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void EnableDynamicData(System::Web::UI::INamingContainer ^ control, Type ^ entityType, System::Object ^ defaults);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -100,14 +121,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="EnableDynamicData">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Enables Dynamic Data behavior for the specified data control.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

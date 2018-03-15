@@ -1,7 +1,10 @@
-<Type Name="AlgorithmIdentifier" FullName="System.Security.Cryptography.Pkcs.AlgorithmIdentifier">
+﻿<Type Name="AlgorithmIdentifier" FullName="System.Security.Cryptography.Pkcs.AlgorithmIdentifier">
   <TypeSignature Language="C#" Value="public sealed class AlgorithmIdentifier" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AlgorithmIdentifier extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.AlgorithmIdentifier" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AlgorithmIdentifier" />
+  <TypeSignature Language="F#" Value="type AlgorithmIdentifier = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AlgorithmIdentifier sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public AlgorithmIdentifier ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AlgorithmIdentifier();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -63,6 +68,8 @@
       <MemberSignature Language="C#" Value="public AlgorithmIdentifier (System.Security.Cryptography.Oid oid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Oid oid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.#ctor(System.Security.Cryptography.Oid)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.AlgorithmIdentifier : System.Security.Cryptography.Oid -&gt; System.Security.Cryptography.Pkcs.AlgorithmIdentifier" Usage="new System.Security.Cryptography.Pkcs.AlgorithmIdentifier oid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AlgorithmIdentifier(System::Security::Cryptography::Oid ^ oid);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -95,6 +102,8 @@
       <MemberSignature Language="C#" Value="public AlgorithmIdentifier (System.Security.Cryptography.Oid oid, int keyLength);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Oid oid, int32 keyLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.#ctor(System.Security.Cryptography.Oid,System.Int32)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.AlgorithmIdentifier : System.Security.Cryptography.Oid * int -&gt; System.Security.Cryptography.Pkcs.AlgorithmIdentifier" Usage="new System.Security.Cryptography.Pkcs.AlgorithmIdentifier (oid, keyLength)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AlgorithmIdentifier(System::Security::Cryptography::Oid ^ oid, int keyLength);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -129,6 +138,9 @@
       <MemberSignature Language="C#" Value="public int KeyLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeyLength" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.KeyLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.KeyLength : int with get, set" Usage="System.Security.Cryptography.Pkcs.AlgorithmIdentifier.KeyLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeyLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -162,6 +174,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Oid Oid { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Oid Oid" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.Oid" />
+      <MemberSignature Language="VB.NET" Value="Public Property Oid As Oid" />
+      <MemberSignature Language="F#" Value="member this.Oid : System.Security.Cryptography.Oid with get, set" Usage="System.Security.Cryptography.Pkcs.AlgorithmIdentifier.Oid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Oid ^ Oid { System::Security::Cryptography::Oid ^ get(); void set(System::Security::Cryptography::Oid ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -188,6 +203,9 @@
       <MemberSignature Language="C#" Value="public byte[] Parameters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Parameters" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.AlgorithmIdentifier.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parameters As Byte()" />
+      <MemberSignature Language="F#" Value="member this.Parameters : byte[] with get, set" Usage="System.Security.Cryptography.Pkcs.AlgorithmIdentifier.Parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Parameters { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ChartAreaCollection" FullName="System.Web.UI.DataVisualization.Charting.ChartAreaCollection">
+﻿<Type Name="ChartAreaCollection" FullName="System.Web.UI.DataVisualization.Charting.ChartAreaCollection">
   <TypeSignature Language="C#" Value="public class ChartAreaCollection : System.Web.UI.DataVisualization.Charting.ChartNamedElementCollection&lt;System.Web.UI.DataVisualization.Charting.ChartArea&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChartAreaCollection extends System.Web.UI.DataVisualization.Charting.ChartNamedElementCollection`1&lt;class System.Web.UI.DataVisualization.Charting.ChartArea&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartAreaCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChartAreaCollection&#xA;Inherits ChartNamedElementCollection(Of ChartArea)" />
+  <TypeSignature Language="F#" Value="type ChartAreaCollection = class&#xA;    inherit ChartNamedElementCollection&lt;ChartArea&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChartAreaCollection : System::Web::UI::DataVisualization::Charting::ChartNamedElementCollection&lt;System::Web::UI::DataVisualization::Charting::ChartArea ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartArea Add (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.ChartArea Add(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.ChartAreaCollection.Add(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (name As String) As ChartArea" />
+      <MemberSignature Language="F#" Value="override this.Add : string -&gt; System.Web.UI.DataVisualization.Charting.ChartArea" Usage="chartAreaCollection.Add name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::ChartArea ^ Add(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

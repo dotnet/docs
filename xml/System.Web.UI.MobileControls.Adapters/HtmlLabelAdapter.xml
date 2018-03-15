@@ -1,7 +1,10 @@
-<Type Name="HtmlLabelAdapter" FullName="System.Web.UI.MobileControls.Adapters.HtmlLabelAdapter">
+﻿<Type Name="HtmlLabelAdapter" FullName="System.Web.UI.MobileControls.Adapters.HtmlLabelAdapter">
   <TypeSignature Language="C#" Value="public class HtmlLabelAdapter : System.Web.UI.MobileControls.Adapters.HtmlControlAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlLabelAdapter extends System.Web.UI.MobileControls.Adapters.HtmlControlAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.HtmlLabelAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class HtmlLabelAdapter&#xA;Inherits HtmlControlAdapter" />
+  <TypeSignature Language="F#" Value="type HtmlLabelAdapter = class&#xA;    inherit HtmlControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlLabelAdapter : System::Web::UI::MobileControls::Adapters::HtmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,8 @@
       <MemberSignature Language="C#" Value="public HtmlLabelAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlLabelAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlLabelAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -47,6 +52,9 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.MobileControls.TextControl Control { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.TextControl Control" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlLabelAdapter.Control" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As TextControl" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.TextControl" Usage="System.Web.UI.MobileControls.Adapters.HtmlLabelAdapter.Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::TextControl ^ Control { System::Web::UI::MobileControls::TextControl ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -65,6 +73,9 @@
       <MemberSignature Language="C#" Value="public override void Render (System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Render(class System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlLabelAdapter.Render(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As HtmlMobileTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="htmlLabelAdapter.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -84,9 +95,12 @@
       </Docs>
     </Member>
     <Member MemberName="WhiteSpace">
-      <MemberSignature Language="C#" Value="protected bool WhiteSpace (string s);" />
+      <MemberSignature Language="C#" Value="protected internal bool WhiteSpace (string s);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance bool WhiteSpace(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlLabelAdapter.WhiteSpace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function WhiteSpace (s As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.WhiteSpace : string -&gt; bool" Usage="htmlLabelAdapter.WhiteSpace s" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; bool WhiteSpace(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

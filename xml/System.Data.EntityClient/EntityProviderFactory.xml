@@ -1,7 +1,10 @@
-<Type Name="EntityProviderFactory" FullName="System.Data.EntityClient.EntityProviderFactory">
+﻿<Type Name="EntityProviderFactory" FullName="System.Data.EntityClient.EntityProviderFactory">
   <TypeSignature Language="C#" Value="public sealed class EntityProviderFactory : System.Data.Common.DbProviderFactory, IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EntityProviderFactory extends System.Data.Common.DbProviderFactory implements class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Data.EntityClient.EntityProviderFactory" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntityProviderFactory&#xA;Inherits DbProviderFactory&#xA;Implements IServiceProvider" />
+  <TypeSignature Language="F#" Value="type EntityProviderFactory = class&#xA;    inherit DbProviderFactory&#xA;    interface IServiceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityProviderFactory sealed : System::Data::Common::DbProviderFactory, IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbCommand CreateCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbCommand CreateCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityProviderFactory.CreateCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCommand () As DbCommand" />
+      <MemberSignature Language="F#" Value="override this.CreateCommand : unit -&gt; System.Data.Common.DbCommand" Usage="entityProviderFactory.CreateCommand " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbCommand ^ CreateCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -51,6 +57,9 @@
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbCommandBuilder CreateCommandBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbCommandBuilder CreateCommandBuilder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityProviderFactory.CreateCommandBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateCommandBuilder () As DbCommandBuilder" />
+      <MemberSignature Language="F#" Value="override this.CreateCommandBuilder : unit -&gt; System.Data.Common.DbCommandBuilder" Usage="entityProviderFactory.CreateCommandBuilder " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbCommandBuilder ^ CreateCommandBuilder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -70,6 +79,9 @@
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbConnection CreateConnection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbConnection CreateConnection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityProviderFactory.CreateConnection" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateConnection () As DbConnection" />
+      <MemberSignature Language="F#" Value="override this.CreateConnection : unit -&gt; System.Data.Common.DbConnection" Usage="entityProviderFactory.CreateConnection " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbConnection ^ CreateConnection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -89,6 +101,9 @@
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbConnectionStringBuilder CreateConnectionStringBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbConnectionStringBuilder CreateConnectionStringBuilder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityProviderFactory.CreateConnectionStringBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateConnectionStringBuilder () As DbConnectionStringBuilder" />
+      <MemberSignature Language="F#" Value="override this.CreateConnectionStringBuilder : unit -&gt; System.Data.Common.DbConnectionStringBuilder" Usage="entityProviderFactory.CreateConnectionStringBuilder " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbConnectionStringBuilder ^ CreateConnectionStringBuilder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -108,6 +123,9 @@
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbDataAdapter CreateDataAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbDataAdapter CreateDataAdapter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityProviderFactory.CreateDataAdapter" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateDataAdapter () As DbDataAdapter" />
+      <MemberSignature Language="F#" Value="override this.CreateDataAdapter : unit -&gt; System.Data.Common.DbDataAdapter" Usage="entityProviderFactory.CreateDataAdapter " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbDataAdapter ^ CreateDataAdapter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -128,6 +146,9 @@
       <MemberSignature Language="C#" Value="public override System.Data.Common.DbParameter CreateParameter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Data.Common.DbParameter CreateParameter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityProviderFactory.CreateParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateParameter () As DbParameter" />
+      <MemberSignature Language="F#" Value="override this.CreateParameter : unit -&gt; System.Data.Common.DbParameter" Usage="entityProviderFactory.CreateParameter " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Data::Common::DbParameter ^ CreateParameter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -147,6 +168,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.CodeAccessPermission CreatePermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.CodeAccessPermission CreatePermission(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityProviderFactory.CreatePermission(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission (state As PermissionState) As CodeAccessPermission" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : System.Security.Permissions.PermissionState -&gt; System.Security.CodeAccessPermission" Usage="entityProviderFactory.CreatePermission state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::CodeAccessPermission ^ CreatePermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -169,6 +193,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Data.EntityClient.EntityProviderFactory Instance;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Data.EntityClient.EntityProviderFactory Instance" />
       <MemberSignature Language="DocId" Value="F:System.Data.EntityClient.EntityProviderFactory.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Instance As EntityProviderFactory " />
+      <MemberSignature Language="F#" Value=" staticval mutable Instance : System.Data.EntityClient.EntityProviderFactory" Usage="System.Data.EntityClient.EntityProviderFactory.Instance" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::EntityClient::EntityProviderFactory ^ Instance;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -186,6 +213,8 @@
       <MemberSignature Language="C#" Value="object IServiceProvider.GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.IServiceProvider.GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntityClient.EntityProviderFactory.System#IServiceProvider#GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Function GetService (serviceType As Type) As Object Implements IServiceProvider.GetService" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.IServiceProvider.GetService(Type ^ serviceType) = IServiceProvider::GetService;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

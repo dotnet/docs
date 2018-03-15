@@ -1,7 +1,10 @@
-<Type Name="DiscoveryOperationContextExtension" FullName="System.ServiceModel.Discovery.DiscoveryOperationContextExtension">
+﻿<Type Name="DiscoveryOperationContextExtension" FullName="System.ServiceModel.Discovery.DiscoveryOperationContextExtension">
   <TypeSignature Language="C#" Value="public class DiscoveryOperationContextExtension : System.ServiceModel.IExtension&lt;System.ServiceModel.OperationContext&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DiscoveryOperationContextExtension extends System.Object implements class System.ServiceModel.IExtension`1&lt;class System.ServiceModel.OperationContext&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DiscoveryOperationContextExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Class DiscoveryOperationContextExtension&#xA;Implements IExtension(Of OperationContext)" />
+  <TypeSignature Language="F#" Value="type DiscoveryOperationContextExtension = class&#xA;    interface IExtension&lt;OperationContext&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryOperationContextExtension : System::ServiceModel::IExtension&lt;System::ServiceModel::OperationContext ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.ServiceDiscoveryMode DiscoveryMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Discovery.ServiceDiscoveryMode DiscoveryMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryOperationContextExtension.DiscoveryMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiscoveryMode As ServiceDiscoveryMode" />
+      <MemberSignature Language="F#" Value="member this.DiscoveryMode : System.ServiceModel.Discovery.ServiceDiscoveryMode" Usage="System.ServiceModel.Discovery.DiscoveryOperationContextExtension.DiscoveryMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::ServiceDiscoveryMode DiscoveryMode { System::ServiceModel::Discovery::ServiceDiscoveryMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -41,6 +47,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.DiscoveryVersion DiscoveryVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.DiscoveryVersion DiscoveryVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryOperationContextExtension.DiscoveryVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiscoveryVersion As DiscoveryVersion" />
+      <MemberSignature Language="F#" Value="member this.DiscoveryVersion : System.ServiceModel.Discovery.DiscoveryVersion" Usage="System.ServiceModel.Discovery.DiscoveryOperationContextExtension.DiscoveryVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::DiscoveryVersion ^ DiscoveryVersion { System::ServiceModel::Discovery::DiscoveryVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -59,6 +68,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan MaxResponseDelay { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MaxResponseDelay" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryOperationContextExtension.MaxResponseDelay" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxResponseDelay As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.MaxResponseDelay : TimeSpan" Usage="System.ServiceModel.Discovery.DiscoveryOperationContextExtension.MaxResponseDelay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxResponseDelay { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -84,7 +96,12 @@
       <MemberSignature Language="C#" Value="void IExtension&lt;OperationContext&gt;.Attach (System.ServiceModel.OperationContext owner);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.IExtension&lt;System.ServiceModel.OperationContext&gt;.Attach(class System.ServiceModel.OperationContext owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryOperationContextExtension.System#ServiceModel#IExtension&lt;System#ServiceModel#OperationContext&gt;#Attach(System.ServiceModel.OperationContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub Attach (owner As OperationContext) Implements IExtension(Of OperationContext).Attach" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.IExtension&lt;System.ServiceModel.OperationContext&gt;.Attach(System::ServiceModel::OperationContext ^ owner) = System::ServiceModel::IExtension&lt;System::ServiceModel::OperationContext ^&gt;::Attach;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.IExtension`1.Attach(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -105,7 +122,12 @@
       <MemberSignature Language="C#" Value="void IExtension&lt;OperationContext&gt;.Detach (System.ServiceModel.OperationContext owner);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.IExtension&lt;System.ServiceModel.OperationContext&gt;.Detach(class System.ServiceModel.OperationContext owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryOperationContextExtension.System#ServiceModel#IExtension&lt;System#ServiceModel#OperationContext&gt;#Detach(System.ServiceModel.OperationContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub Detach (owner As OperationContext) Implements IExtension(Of OperationContext).Detach" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.IExtension&lt;System.ServiceModel.OperationContext&gt;.Detach(System::ServiceModel::OperationContext ^ owner) = System::ServiceModel::IExtension&lt;System::ServiceModel::OperationContext ^&gt;::Detach;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.IExtension`1.Detach(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

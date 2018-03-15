@@ -1,7 +1,10 @@
-<Type Name="LassoSelectionChangedEventArgs" FullName="System.Windows.Ink.LassoSelectionChangedEventArgs">
+﻿<Type Name="LassoSelectionChangedEventArgs" FullName="System.Windows.Ink.LassoSelectionChangedEventArgs">
   <TypeSignature Language="C#" Value="public class LassoSelectionChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LassoSelectionChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.LassoSelectionChangedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class LassoSelectionChangedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type LassoSelectionChangedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LassoSelectionChangedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection DeselectedStrokes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.StrokeCollection DeselectedStrokes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.LassoSelectionChangedEventArgs.DeselectedStrokes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeselectedStrokes As StrokeCollection" />
+      <MemberSignature Language="F#" Value="member this.DeselectedStrokes : System.Windows.Ink.StrokeCollection" Usage="System.Windows.Ink.LassoSelectionChangedEventArgs.DeselectedStrokes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::StrokeCollection ^ DeselectedStrokes { System::Windows::Ink::StrokeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -44,6 +50,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection SelectedStrokes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.StrokeCollection SelectedStrokes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.LassoSelectionChangedEventArgs.SelectedStrokes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedStrokes As StrokeCollection" />
+      <MemberSignature Language="F#" Value="member this.SelectedStrokes : System.Windows.Ink.StrokeCollection" Usage="System.Windows.Ink.LassoSelectionChangedEventArgs.SelectedStrokes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::StrokeCollection ^ SelectedStrokes { System::Windows::Ink::StrokeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

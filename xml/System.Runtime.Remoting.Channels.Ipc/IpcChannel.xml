@@ -1,7 +1,10 @@
-<Type Name="IpcChannel" FullName="System.Runtime.Remoting.Channels.Ipc.IpcChannel">
-  <TypeSignature Language="C#" Value="public class IpcChannel : System.Runtime.Remoting.Channels.IChannelReceiver, System.Runtime.Remoting.Channels.IChannelSender, System.Runtime.Remoting.Channels.ISecurableChannel" />
+﻿<Type Name="IpcChannel" FullName="System.Runtime.Remoting.Channels.Ipc.IpcChannel">
+  <TypeSignature Language="C#" Value="public class IpcChannel : System.Runtime.Remoting.Channels.IChannel, System.Runtime.Remoting.Channels.IChannelReceiver, System.Runtime.Remoting.Channels.IChannelSender, System.Runtime.Remoting.Channels.ISecurableChannel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IpcChannel extends System.Object implements class System.Runtime.Remoting.Channels.IChannel, class System.Runtime.Remoting.Channels.IChannelReceiver, class System.Runtime.Remoting.Channels.IChannelSender, class System.Runtime.Remoting.Channels.ISecurableChannel" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.Ipc.IpcChannel" />
+  <TypeSignature Language="VB.NET" Value="Public Class IpcChannel&#xA;Implements IChannel, IChannelReceiver, IChannelSender, ISecurableChannel" />
+  <TypeSignature Language="F#" Value="type IpcChannel = class&#xA;    interface IChannelReceiver&#xA;    interface IChannel&#xA;    interface IChannelSender&#xA;    interface ISecurableChannel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IpcChannel : System::Runtime::Remoting::Channels::IChannel, System::Runtime::Remoting::Channels::IChannelReceiver, System::Runtime::Remoting::Channels::IChannelSender, System::Runtime::Remoting::Channels::ISecurableChannel" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -10,6 +13,9 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces>
+    <Interface>
+      <InterfaceName>System.Runtime.Remoting.Channels.IChannel</InterfaceName>
+    </Interface>
     <Interface>
       <InterfaceName>System.Runtime.Remoting.Channels.IChannelReceiver</InterfaceName>
     </Interface>
@@ -63,10 +69,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Remoting</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Ipc.IpcChannel" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public IpcChannel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcChannel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IpcChannel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -92,6 +109,9 @@
       <MemberSignature Language="C#" Value="public IpcChannel (string portName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string portName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcChannel.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (portName As String)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.Ipc.IpcChannel : string -&gt; System.Runtime.Remoting.Channels.Ipc.IpcChannel" Usage="new System.Runtime.Remoting.Channels.Ipc.IpcChannel portName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IpcChannel(System::String ^ portName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -120,6 +140,9 @@
       <MemberSignature Language="C#" Value="public IpcChannel (System.Collections.IDictionary properties, System.Runtime.Remoting.Channels.IClientChannelSinkProvider clientSinkProvider, System.Runtime.Remoting.Channels.IServerChannelSinkProvider serverSinkProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IDictionary properties, class System.Runtime.Remoting.Channels.IClientChannelSinkProvider clientSinkProvider, class System.Runtime.Remoting.Channels.IServerChannelSinkProvider serverSinkProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcChannel.#ctor(System.Collections.IDictionary,System.Runtime.Remoting.Channels.IClientChannelSinkProvider,System.Runtime.Remoting.Channels.IServerChannelSinkProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (properties As IDictionary, clientSinkProvider As IClientChannelSinkProvider, serverSinkProvider As IServerChannelSinkProvider)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.Ipc.IpcChannel : System.Collections.IDictionary * System.Runtime.Remoting.Channels.IClientChannelSinkProvider * System.Runtime.Remoting.Channels.IServerChannelSinkProvider -&gt; System.Runtime.Remoting.Channels.Ipc.IpcChannel" Usage="new System.Runtime.Remoting.Channels.Ipc.IpcChannel (properties, clientSinkProvider, serverSinkProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IpcChannel(System::Collections::IDictionary ^ properties, System::Runtime::Remoting::Channels::IClientChannelSinkProvider ^ clientSinkProvider, System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ serverSinkProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -162,6 +185,9 @@
       <MemberSignature Language="C#" Value="public IpcChannel (System.Collections.IDictionary properties, System.Runtime.Remoting.Channels.IClientChannelSinkProvider clientSinkProvider, System.Runtime.Remoting.Channels.IServerChannelSinkProvider serverSinkProvider, System.Security.AccessControl.CommonSecurityDescriptor securityDescriptor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.IDictionary properties, class System.Runtime.Remoting.Channels.IClientChannelSinkProvider clientSinkProvider, class System.Runtime.Remoting.Channels.IServerChannelSinkProvider serverSinkProvider, class System.Security.AccessControl.CommonSecurityDescriptor securityDescriptor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcChannel.#ctor(System.Collections.IDictionary,System.Runtime.Remoting.Channels.IClientChannelSinkProvider,System.Runtime.Remoting.Channels.IServerChannelSinkProvider,System.Security.AccessControl.CommonSecurityDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (properties As IDictionary, clientSinkProvider As IClientChannelSinkProvider, serverSinkProvider As IServerChannelSinkProvider, securityDescriptor As CommonSecurityDescriptor)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.Ipc.IpcChannel : System.Collections.IDictionary * System.Runtime.Remoting.Channels.IClientChannelSinkProvider * System.Runtime.Remoting.Channels.IServerChannelSinkProvider * System.Security.AccessControl.CommonSecurityDescriptor -&gt; System.Runtime.Remoting.Channels.Ipc.IpcChannel" Usage="new System.Runtime.Remoting.Channels.Ipc.IpcChannel (properties, clientSinkProvider, serverSinkProvider, securityDescriptor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IpcChannel(System::Collections::IDictionary ^ properties, System::Runtime::Remoting::Channels::IClientChannelSinkProvider ^ clientSinkProvider, System::Runtime::Remoting::Channels::IServerChannelSinkProvider ^ serverSinkProvider, System::Security::AccessControl::CommonSecurityDescriptor ^ securityDescriptor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -186,6 +212,9 @@
       <MemberSignature Language="C#" Value="public object ChannelData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ChannelData" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Ipc.IpcChannel.ChannelData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelData As Object" />
+      <MemberSignature Language="F#" Value="member this.ChannelData : obj" Usage="System.Runtime.Remoting.Channels.Ipc.IpcChannel.ChannelData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChannelData { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -219,6 +248,9 @@
       <MemberSignature Language="C#" Value="public string ChannelName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ChannelName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Ipc.IpcChannel.ChannelName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelName As String" />
+      <MemberSignature Language="F#" Value="member this.ChannelName : string" Usage="System.Runtime.Remoting.Channels.Ipc.IpcChannel.ChannelName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ChannelName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -252,6 +284,9 @@
       <MemberSignature Language="C#" Value="public int ChannelPriority { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ChannelPriority" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Ipc.IpcChannel.ChannelPriority" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelPriority As Integer" />
+      <MemberSignature Language="F#" Value="member this.ChannelPriority : int" Usage="System.Runtime.Remoting.Channels.Ipc.IpcChannel.ChannelPriority" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChannelPriority { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -285,6 +320,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Messaging.IMessageSink CreateMessageSink (string url, object remoteChannelData, out string objectURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.Remoting.Messaging.IMessageSink CreateMessageSink(string url, object remoteChannelData, [out] string&amp; objectURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcChannel.CreateMessageSink(System.String,System.Object,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateMessageSink (url As String, remoteChannelData As Object, ByRef objectURI As String) As IMessageSink" />
+      <MemberSignature Language="F#" Value="abstract member CreateMessageSink : string * obj *  -&gt; System.Runtime.Remoting.Messaging.IMessageSink&#xA;override this.CreateMessageSink : string * obj *  -&gt; System.Runtime.Remoting.Messaging.IMessageSink" Usage="ipcChannel.CreateMessageSink (url, remoteChannelData, objectURI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Runtime::Remoting::Messaging::IMessageSink ^ CreateMessageSink(System::String ^ url, System::Object ^ remoteChannelData, [Runtime::InteropServices::Out] System::String ^ % objectURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -328,6 +366,9 @@
       <MemberSignature Language="C#" Value="public string[] GetUrlsForUri (string objectURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GetUrlsForUri(string objectURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcChannel.GetUrlsForUri(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUrlsForUri (objectURI As String) As String()" />
+      <MemberSignature Language="F#" Value="abstract member GetUrlsForUri : string -&gt; string[]&#xA;override this.GetUrlsForUri : string -&gt; string[]" Usage="ipcChannel.GetUrlsForUri objectURI" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetUrlsForUri(System::String ^ objectURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -365,6 +406,9 @@
       <MemberSignature Language="C#" Value="public bool IsSecured { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSecured" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.Ipc.IpcChannel.IsSecured" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSecured As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSecured : bool with get, set" Usage="System.Runtime.Remoting.Channels.Ipc.IpcChannel.IsSecured" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSecured { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -390,6 +434,9 @@
       <MemberSignature Language="C#" Value="public string Parse (string url, out string objectURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Parse(string url, [out] string&amp; objectURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcChannel.Parse(System.String,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Parse (url As String, ByRef objectURI As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member Parse : string *  -&gt; string&#xA;override this.Parse : string *  -&gt; string" Usage="ipcChannel.Parse (url, objectURI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ Parse(System::String ^ url, [Runtime::InteropServices::Out] System::String ^ % objectURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -429,6 +476,9 @@
       <MemberSignature Language="C#" Value="public void StartListening (object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartListening(object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcChannel.StartListening(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StartListening (data As Object)" />
+      <MemberSignature Language="F#" Value="abstract member StartListening : obj -&gt; unit&#xA;override this.StartListening : obj -&gt; unit" Usage="ipcChannel.StartListening data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StartListening(System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -461,6 +511,9 @@
       <MemberSignature Language="C#" Value="public void StopListening (object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopListening(object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.Ipc.IpcChannel.StopListening(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StopListening (data As Object)" />
+      <MemberSignature Language="F#" Value="abstract member StopListening : obj -&gt; unit&#xA;override this.StopListening : obj -&gt; unit" Usage="ipcChannel.StopListening data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StopListening(System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -487,14 +540,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Remoting</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.Ipc.IpcChannel" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

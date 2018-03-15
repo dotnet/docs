@@ -1,7 +1,10 @@
-<Type Name="BookmarkOptions" FullName="System.Activities.BookmarkOptions">
+﻿<Type Name="BookmarkOptions" FullName="System.Activities.BookmarkOptions">
   <TypeSignature Language="C#" Value="public enum BookmarkOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BookmarkOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Activities.BookmarkOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BookmarkOptions" />
+  <TypeSignature Language="F#" Value="type BookmarkOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class BookmarkOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="MultipleResume" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.BookmarkOptions MultipleResume = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.BookmarkOptions.MultipleResume" />
+      <MemberSignature Language="VB.NET" Value="MultipleResume" />
+      <MemberSignature Language="F#" Value="MultipleResume = 1" Usage="System.Activities.BookmarkOptions.MultipleResume" />
+      <MemberSignature Language="C++ CLI" Value="MultipleResume" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -31,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.BookmarkOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Activities.Bookmark" /> that can be resumed multiple times.</summary>
         <remarks>
@@ -47,6 +54,9 @@
       <MemberSignature Language="C#" Value="NonBlocking" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.BookmarkOptions NonBlocking = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.BookmarkOptions.NonBlocking" />
+      <MemberSignature Language="VB.NET" Value="NonBlocking" />
+      <MemberSignature Language="F#" Value="NonBlocking = 2" Usage="System.Activities.BookmarkOptions.NonBlocking" />
+      <MemberSignature Language="C++ CLI" Value="NonBlocking" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -55,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.BookmarkOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Activities.Bookmark" /> that does not block the workflow.</summary>
         <remarks>
@@ -71,6 +82,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.BookmarkOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.BookmarkOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Activities.BookmarkOptions.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -79,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.BookmarkOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Default <see cref="T:System.Activities.Bookmark" /> options,</summary>
       </Docs>

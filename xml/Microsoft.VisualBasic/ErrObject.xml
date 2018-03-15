@@ -1,7 +1,10 @@
-<Type Name="ErrObject" FullName="Microsoft.VisualBasic.ErrObject">
+﻿<Type Name="ErrObject" FullName="Microsoft.VisualBasic.ErrObject">
   <TypeSignature Language="C#" Value="public sealed class ErrObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ErrObject extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ErrObject" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ErrObject" />
+  <TypeSignature Language="F#" Value="type ErrObject = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ErrObject sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@ End If
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ErrObject.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="errObject.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -99,6 +105,9 @@ End If
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ErrObject.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.VisualBasic.ErrObject.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -133,6 +142,9 @@ End If
       <MemberSignature Language="C#" Value="public int Erl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Erl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ErrObject.Erl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Erl As Integer" />
+      <MemberSignature Language="F#" Value="member this.Erl : int" Usage="Microsoft.VisualBasic.ErrObject.Erl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Erl { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -172,6 +184,9 @@ End If
       <MemberSignature Language="C#" Value="public Exception GetException ();" />
       <MemberSignature Language="ILAsm" Value=".method public instance class System.Exception GetException() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ErrObject.GetException" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetException () As Exception" />
+      <MemberSignature Language="F#" Value="member this.GetException : unit -&gt; Exception" Usage="errObject.GetException " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Exception ^ GetException();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -207,6 +222,9 @@ End If
       <MemberSignature Language="C#" Value="public int HelpContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 HelpContext" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ErrObject.HelpContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property HelpContext As Integer" />
+      <MemberSignature Language="F#" Value="member this.HelpContext : int with get, set" Usage="Microsoft.VisualBasic.ErrObject.HelpContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HelpContext { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -244,6 +262,9 @@ End If
       <MemberSignature Language="C#" Value="public string HelpFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ErrObject.HelpFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property HelpFile As String" />
+      <MemberSignature Language="F#" Value="member this.HelpFile : string with get, set" Usage="Microsoft.VisualBasic.ErrObject.HelpFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -281,6 +302,9 @@ End If
       <MemberSignature Language="C#" Value="public int LastDllError { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LastDllError" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ErrObject.LastDllError" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastDllError As Integer" />
+      <MemberSignature Language="F#" Value="member this.LastDllError : int" Usage="Microsoft.VisualBasic.ErrObject.LastDllError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LastDllError { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -331,6 +355,9 @@ End If
       <MemberSignature Language="C#" Value="public int Number { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Number" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ErrObject.Number" />
+      <MemberSignature Language="VB.NET" Value="Public Property Number As Integer" />
+      <MemberSignature Language="F#" Value="member this.Number : int with get, set" Usage="Microsoft.VisualBasic.ErrObject.Number" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Number { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -377,6 +404,8 @@ End If
       <MemberSignature Language="C#" Value="public void Raise (int Number, object Source = null, object Description = null, object HelpFile = null, object HelpContext = null);" />
       <MemberSignature Language="ILAsm" Value=".method public instance void Raise(int32 Number, object Source, object Description, object HelpFile, object HelpContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ErrObject.Raise(System.Int32,System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Raise (Number As Integer, Optional Source As Object = null, Optional Description As Object = null, Optional HelpFile As Object = null, Optional HelpContext As Object = null)" />
+      <MemberSignature Language="F#" Value="member this.Raise : int * obj * obj * obj * obj -&gt; unit" Usage="errObject.Raise (Number, Source, Description, HelpFile, HelpContext)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -425,6 +454,9 @@ End If
       <MemberSignature Language="C#" Value="public string Source { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Source" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ErrObject.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Property Source As String" />
+      <MemberSignature Language="F#" Value="member this.Source : string with get, set" Usage="Microsoft.VisualBasic.ErrObject.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Source { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

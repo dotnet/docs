@@ -1,7 +1,10 @@
-<Type Name="VisualStateGroup" FullName="System.Windows.VisualStateGroup">
+﻿<Type Name="VisualStateGroup" FullName="System.Windows.VisualStateGroup">
   <TypeSignature Language="C#" Value="public class VisualStateGroup : System.Windows.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualStateGroup extends System.Windows.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.VisualStateGroup" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualStateGroup&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="F#" Value="type VisualStateGroup = class&#xA;    inherit DependencyObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VisualStateGroup : System::Windows::DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +52,8 @@
       <MemberSignature Language="C#" Value="public VisualStateGroup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.VisualStateGroup.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VisualStateGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -64,6 +69,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.VisualState CurrentState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.VisualState CurrentState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualStateGroup.CurrentState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentState As VisualState" />
+      <MemberSignature Language="F#" Value="member this.CurrentState : System.Windows.VisualState" Usage="System.Windows.VisualStateGroup.CurrentState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::VisualState ^ CurrentState { System::Windows::VisualState ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -82,6 +90,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.VisualStateChangedEventArgs&gt; CurrentStateChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.VisualStateChangedEventArgs&gt; CurrentStateChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.VisualStateGroup.CurrentStateChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CurrentStateChanged As EventHandler(Of VisualStateChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.CurrentStateChanged : EventHandler&lt;System.Windows.VisualStateChangedEventArgs&gt; " Usage="member this.CurrentStateChanged : System.EventHandler&lt;System.Windows.VisualStateChangedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::VisualStateChangedEventArgs ^&gt; ^ CurrentStateChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -106,6 +117,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.VisualStateChangedEventArgs&gt; CurrentStateChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.VisualStateChangedEventArgs&gt; CurrentStateChanging" />
       <MemberSignature Language="DocId" Value="E:System.Windows.VisualStateGroup.CurrentStateChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Event CurrentStateChanging As EventHandler(Of VisualStateChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.CurrentStateChanging : EventHandler&lt;System.Windows.VisualStateChangedEventArgs&gt; " Usage="member this.CurrentStateChanging : System.EventHandler&lt;System.Windows.VisualStateChangedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::VisualStateChangedEventArgs ^&gt; ^ CurrentStateChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -130,6 +144,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualStateGroup.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.VisualStateGroup.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -162,6 +179,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IList States { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList States" />
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualStateGroup.States" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property States As IList" />
+      <MemberSignature Language="F#" Value="member this.States : System.Collections.IList" Usage="System.Windows.VisualStateGroup.States" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ States { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -189,6 +209,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IList Transitions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList Transitions" />
       <MemberSignature Language="DocId" Value="P:System.Windows.VisualStateGroup.Transitions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transitions As IList" />
+      <MemberSignature Language="F#" Value="member this.Transitions : System.Collections.IList" Usage="System.Windows.VisualStateGroup.Transitions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ Transitions { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

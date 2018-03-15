@@ -1,7 +1,10 @@
-<Type Name="WebControlsSection" FullName="System.Web.Configuration.WebControlsSection">
+﻿<Type Name="WebControlsSection" FullName="System.Web.Configuration.WebControlsSection">
   <TypeSignature Language="C#" Value="public sealed class WebControlsSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebControlsSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.WebControlsSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebControlsSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type WebControlsSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebControlsSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,8 @@
       <MemberSignature Language="C#" Value="public WebControlsSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebControlsSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebControlsSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +64,9 @@
       <MemberSignature Language="C#" Value="public string ClientScriptsLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClientScriptsLocation" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebControlsSection.ClientScriptsLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientScriptsLocation As String" />
+      <MemberSignature Language="F#" Value="member this.ClientScriptsLocation : string" Usage="System.Web.Configuration.WebControlsSection.ClientScriptsLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClientScriptsLocation { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,6 +108,9 @@
       <MemberSignature Language="C#" Value="protected override object GetRuntimeObject ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetRuntimeObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebControlsSection.GetRuntimeObject" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetRuntimeObject () As Object" />
+      <MemberSignature Language="F#" Value="override this.GetRuntimeObject : unit -&gt; obj" Usage="webControlsSection.GetRuntimeObject " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetRuntimeObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +130,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebControlsSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.WebControlsSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

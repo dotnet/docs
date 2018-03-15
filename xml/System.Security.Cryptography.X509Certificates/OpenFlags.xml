@@ -1,7 +1,10 @@
-<Type Name="OpenFlags" FullName="System.Security.Cryptography.X509Certificates.OpenFlags">
+﻿<Type Name="OpenFlags" FullName="System.Security.Cryptography.X509Certificates.OpenFlags">
   <TypeSignature Language="C#" Value="public enum OpenFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OpenFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.OpenFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OpenFlags" />
+  <TypeSignature Language="F#" Value="type OpenFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class OpenFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +53,9 @@
       <MemberSignature Language="C#" Value="IncludeArchived" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.OpenFlags IncludeArchived = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.OpenFlags.IncludeArchived" />
+      <MemberSignature Language="VB.NET" Value="IncludeArchived" />
+      <MemberSignature Language="F#" Value="IncludeArchived = 8" Usage="System.Security.Cryptography.X509Certificates.OpenFlags.IncludeArchived" />
+      <MemberSignature Language="C++ CLI" Value="IncludeArchived" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -69,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.OpenFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Open the X.509 certificate store and include archived certificates.</summary>
       </Docs>
@@ -77,6 +84,9 @@
       <MemberSignature Language="C#" Value="MaxAllowed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.OpenFlags MaxAllowed = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.OpenFlags.MaxAllowed" />
+      <MemberSignature Language="VB.NET" Value="MaxAllowed" />
+      <MemberSignature Language="F#" Value="MaxAllowed = 2" Usage="System.Security.Cryptography.X509Certificates.OpenFlags.MaxAllowed" />
+      <MemberSignature Language="C++ CLI" Value="MaxAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -96,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.OpenFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Open the X.509 certificate store for the highest access allowed.</summary>
       </Docs>
@@ -104,6 +115,9 @@
       <MemberSignature Language="C#" Value="OpenExistingOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.OpenFlags OpenExistingOnly = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.OpenFlags.OpenExistingOnly" />
+      <MemberSignature Language="VB.NET" Value="OpenExistingOnly" />
+      <MemberSignature Language="F#" Value="OpenExistingOnly = 4" Usage="System.Security.Cryptography.X509Certificates.OpenFlags.OpenExistingOnly" />
+      <MemberSignature Language="C++ CLI" Value="OpenExistingOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -123,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.OpenFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Opens only existing stores; if no store exists, the <see cref="M:System.Security.Cryptography.X509Certificates.X509Store.Open(System.Security.Cryptography.X509Certificates.OpenFlags)" /> method will not create a new store.</summary>
       </Docs>
@@ -131,6 +146,9 @@
       <MemberSignature Language="C#" Value="ReadOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.OpenFlags ReadOnly = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.OpenFlags.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="ReadOnly" />
+      <MemberSignature Language="F#" Value="ReadOnly = 0" Usage="System.Security.Cryptography.X509Certificates.OpenFlags.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -150,6 +168,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.OpenFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Open the X.509 certificate store for reading only.</summary>
       </Docs>
@@ -158,6 +177,9 @@
       <MemberSignature Language="C#" Value="ReadWrite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.OpenFlags ReadWrite = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.OpenFlags.ReadWrite" />
+      <MemberSignature Language="VB.NET" Value="ReadWrite" />
+      <MemberSignature Language="F#" Value="ReadWrite = 1" Usage="System.Security.Cryptography.X509Certificates.OpenFlags.ReadWrite" />
+      <MemberSignature Language="C++ CLI" Value="ReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -177,6 +199,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.OpenFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Open the X.509 certificate store for both reading and writing.</summary>
       </Docs>

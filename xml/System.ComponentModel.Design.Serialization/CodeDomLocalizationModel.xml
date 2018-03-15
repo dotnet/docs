@@ -1,7 +1,10 @@
-<Type Name="CodeDomLocalizationModel" FullName="System.ComponentModel.Design.Serialization.CodeDomLocalizationModel">
+﻿<Type Name="CodeDomLocalizationModel" FullName="System.ComponentModel.Design.Serialization.CodeDomLocalizationModel">
   <TypeSignature Language="C#" Value="public enum CodeDomLocalizationModel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CodeDomLocalizationModel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CodeDomLocalizationModel" />
+  <TypeSignature Language="F#" Value="type CodeDomLocalizationModel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CodeDomLocalizationModel" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.Serialization.CodeDomLocalizationModel None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ComponentModel.Design.Serialization.CodeDomLocalizationModel.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -28,6 +34,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.Serialization.CodeDomLocalizationModel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The localization provider should ignore localized properties. It will still write out resources for objects that do not support code generation and are serializable.</summary>
       </Docs>
@@ -36,6 +43,9 @@
       <MemberSignature Language="C#" Value="PropertyAssignment" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.Serialization.CodeDomLocalizationModel PropertyAssignment = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel.PropertyAssignment" />
+      <MemberSignature Language="VB.NET" Value="PropertyAssignment" />
+      <MemberSignature Language="F#" Value="PropertyAssignment = 1" Usage="System.ComponentModel.Design.Serialization.CodeDomLocalizationModel.PropertyAssignment" />
+      <MemberSignature Language="C++ CLI" Value="PropertyAssignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -44,6 +54,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.Serialization.CodeDomLocalizationModel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The localization provider will write out localized properties by assigning a resource to each property. This model is fast when the number of properties is small, but it scales poorly as the number of properties containing default values grows.</summary>
       </Docs>
@@ -52,6 +63,9 @@
       <MemberSignature Language="C#" Value="PropertyReflection" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.Serialization.CodeDomLocalizationModel PropertyReflection = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.Serialization.CodeDomLocalizationModel.PropertyReflection" />
+      <MemberSignature Language="VB.NET" Value="PropertyReflection" />
+      <MemberSignature Language="F#" Value="PropertyReflection = 2" Usage="System.ComponentModel.Design.Serialization.CodeDomLocalizationModel.PropertyReflection" />
+      <MemberSignature Language="C++ CLI" Value="PropertyReflection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -60,6 +74,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.Serialization.CodeDomLocalizationModel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The localization provider will write localized property values into a resource file and use the <see cref="T:System.ComponentModel.ComponentResourceManager" /> class to reflect on properties by name to fill them at runtime. This uses reflection at runtime so it can be slow, but it scales better for large numbers of properties with default values.</summary>
       </Docs>

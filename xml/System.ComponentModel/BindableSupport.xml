@@ -1,7 +1,10 @@
-<Type Name="BindableSupport" FullName="System.ComponentModel.BindableSupport">
+﻿<Type Name="BindableSupport" FullName="System.ComponentModel.BindableSupport">
   <TypeSignature Language="C#" Value="public enum BindableSupport" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BindableSupport extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.BindableSupport" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BindableSupport" />
+  <TypeSignature Language="F#" Value="type BindableSupport = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class BindableSupport" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +43,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.BindableSupport Default = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.BindableSupport.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 2" Usage="System.ComponentModel.BindableSupport.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -57,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.BindableSupport</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The property is set to the default.</summary>
       </Docs>
@@ -65,6 +72,9 @@
       <MemberSignature Language="C#" Value="No" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.BindableSupport No = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.BindableSupport.No" />
+      <MemberSignature Language="VB.NET" Value="No" />
+      <MemberSignature Language="F#" Value="No = 0" Usage="System.ComponentModel.BindableSupport.No" />
+      <MemberSignature Language="C++ CLI" Value="No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -82,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.BindableSupport</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The property is not bindable at design time.</summary>
       </Docs>
@@ -90,6 +101,9 @@
       <MemberSignature Language="C#" Value="Yes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.BindableSupport Yes = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.BindableSupport.Yes" />
+      <MemberSignature Language="VB.NET" Value="Yes" />
+      <MemberSignature Language="F#" Value="Yes = 1" Usage="System.ComponentModel.BindableSupport.Yes" />
+      <MemberSignature Language="C++ CLI" Value="Yes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -107,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.BindableSupport</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The property is bindable at design time.</summary>
       </Docs>

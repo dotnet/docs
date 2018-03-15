@@ -1,7 +1,10 @@
-<Type Name="HtmlEncoder" FullName="System.Text.Encodings.Web.HtmlEncoder">
+﻿<Type Name="HtmlEncoder" FullName="System.Text.Encodings.Web.HtmlEncoder">
   <TypeSignature Language="C#" Value="public abstract class HtmlEncoder : System.Text.Encodings.Web.TextEncoder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HtmlEncoder extends System.Text.Encodings.Web.TextEncoder" />
   <TypeSignature Language="DocId" Value="T:System.Text.Encodings.Web.HtmlEncoder" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class HtmlEncoder&#xA;Inherits TextEncoder" />
+  <TypeSignature Language="F#" Value="type HtmlEncoder = class&#xA;    inherit TextEncoder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlEncoder abstract : System::Text::Encodings::Web::TextEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encodings.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="protected HtmlEncoder ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.HtmlEncoder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HtmlEncoder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -37,14 +42,16 @@
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Text.Encodings.Web.HtmlEncoder" /> class.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Text.Encodings.Web.HtmlEncoder Create (System.Text.Encodings.Web.TextEncoderSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Text.Encodings.Web.HtmlEncoder Create(class System.Text.Encodings.Web.TextEncoderSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.HtmlEncoder.Create(System.Text.Encodings.Web.TextEncoderSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (settings As TextEncoderSettings) As HtmlEncoder" />
+      <MemberSignature Language="F#" Value="static member Create : System.Text.Encodings.Web.TextEncoderSettings -&gt; System.Text.Encodings.Web.HtmlEncoder" Usage="System.Text.Encodings.Web.HtmlEncoder.Create settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Encodings::Web::HtmlEncoder ^ Create(System::Text::Encodings::Web::TextEncoderSettings ^ settings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -62,8 +69,7 @@
         <param name="settings">Settings that control how the <see cref="T:System.Text.Encodings.Web.HtmlEncoder" /> instance encodes, primarily which characters to encode.</param>
         <summary>Creates a new instance of the HtmlEncoder class with the specified settings.</summary>
         <returns>A new instance of the <see cref="T:System.Text.Encodings.Web.HtmlEncoder" /> class.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="settings" /> is <see langword="null" />.</exception>
       </Docs>
@@ -72,6 +78,9 @@
       <MemberSignature Language="C#" Value="public static System.Text.Encodings.Web.HtmlEncoder Create (params System.Text.Unicode.UnicodeRange[] allowedRanges);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Text.Encodings.Web.HtmlEncoder Create(class System.Text.Unicode.UnicodeRange[] allowedRanges) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Encodings.Web.HtmlEncoder.Create(System.Text.Unicode.UnicodeRange[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (ParamArray allowedRanges As UnicodeRange()) As HtmlEncoder" />
+      <MemberSignature Language="F#" Value="static member Create : System.Text.Unicode.UnicodeRange[] -&gt; System.Text.Encodings.Web.HtmlEncoder" Usage="System.Text.Encodings.Web.HtmlEncoder.Create allowedRanges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Text::Encodings::Web::HtmlEncoder ^ Create(... cli::array &lt;System::Text::Unicode::UnicodeRange ^&gt; ^ allowedRanges);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -110,6 +119,9 @@
       <MemberSignature Language="C#" Value="public static System.Text.Encodings.Web.HtmlEncoder Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Text.Encodings.Web.HtmlEncoder Default" />
       <MemberSignature Language="DocId" Value="P:System.Text.Encodings.Web.HtmlEncoder.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As HtmlEncoder" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Text.Encodings.Web.HtmlEncoder" Usage="System.Text.Encodings.Web.HtmlEncoder.Default" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Text::Encodings::Web::HtmlEncoder ^ Default { System::Text::Encodings::Web::HtmlEncoder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encodings.Web</AssemblyName>
@@ -123,8 +135,7 @@
       <Docs>
         <summary>Gets a built-in instance of the <see cref="T:System.Text.Encodings.Web.HtmlEncoder" /> class.</summary>
         <value>A built-in instance of the <see cref="T:System.Text.Encodings.Web.HtmlEncoder" /> class.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,7 +1,9 @@
-<Type Name="TableRow+CellControlCollection" FullName="System.Web.UI.WebControls.TableRow+CellControlCollection">
+﻿<Type Name="TableRow+CellControlCollection" FullName="System.Web.UI.WebControls.TableRow+CellControlCollection">
   <TypeSignature Language="C#" Value="protected class TableRow.CellControlCollection : System.Web.UI.ControlCollection" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit TableRow/CellControlCollection extends System.Web.UI.ControlCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableRow.CellControlCollection" />
+  <TypeSignature Language="VB.NET" Value="Protected Class TableRow.CellControlCollection&#xA;Inherits ControlCollection" />
+  <TypeSignature Language="C++ CLI" Value="protected: ref class TableRow::CellControlCollection : System::Web::UI::ControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +42,9 @@
       <MemberSignature Language="C#" Value="public override void Add (System.Web.UI.Control child);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Web.UI.Control child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableRow.CellControlCollection.Add(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (child As Control)" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Web.UI.Control -&gt; unit" Usage="cellControlCollection.Add child" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Web::UI::Control ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +85,9 @@
       <MemberSignature Language="C#" Value="public override void AddAt (int index, System.Web.UI.Control child);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddAt(int32 index, class System.Web.UI.Control child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableRow.CellControlCollection.AddAt(System.Int32,System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddAt (index As Integer, child As Control)" />
+      <MemberSignature Language="F#" Value="override this.AddAt : int * System.Web.UI.Control -&gt; unit" Usage="cellControlCollection.AddAt (index, child)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddAt(int index, System::Web::UI::Control ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

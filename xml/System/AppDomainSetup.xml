@@ -1,7 +1,10 @@
-<Type Name="AppDomainSetup" FullName="System.AppDomainSetup">
+﻿<Type Name="AppDomainSetup" FullName="System.AppDomainSetup">
   <TypeSignature Language="C#" Value="public sealed class AppDomainSetup : IAppDomainSetup" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit AppDomainSetup extends System.Object implements class System.IAppDomainSetup" />
   <TypeSignature Language="DocId" Value="T:System.AppDomainSetup" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AppDomainSetup&#xA;Implements IAppDomainSetup" />
+  <TypeSignature Language="F#" Value="type AppDomainSetup = class&#xA;    interface IAppDomainSetup" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AppDomainSetup sealed : IAppDomainSetup" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,10 +43,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.AppDomainSetup" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AppDomainSetup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomainSetup.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AppDomainSetup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +75,8 @@
       <MemberSignature Language="C#" Value="public AppDomainSetup (ActivationContext activationContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ActivationContext activationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomainSetup.#ctor(System.ActivationContext)" />
+      <MemberSignature Language="F#" Value="new AppDomainSetup : ActivationContext -&gt; AppDomainSetup" Usage="new System.AppDomainSetup activationContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AppDomainSetup(ActivationContext ^ activationContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -91,6 +108,8 @@
       <MemberSignature Language="C#" Value="public AppDomainSetup (System.Runtime.Hosting.ActivationArguments activationArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Hosting.ActivationArguments activationArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomainSetup.#ctor(System.Runtime.Hosting.ActivationArguments)" />
+      <MemberSignature Language="F#" Value="new AppDomainSetup : System.Runtime.Hosting.ActivationArguments -&gt; AppDomainSetup" Usage="new System.AppDomainSetup activationArguments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AppDomainSetup(System::Runtime::Hosting::ActivationArguments ^ activationArguments);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -119,6 +138,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Hosting.ActivationArguments ActivationArguments { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Hosting.ActivationArguments ActivationArguments" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.ActivationArguments" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActivationArguments As ActivationArguments" />
+      <MemberSignature Language="F#" Value="member this.ActivationArguments : System.Runtime.Hosting.ActivationArguments with get, set" Usage="System.AppDomainSetup.ActivationArguments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Hosting::ActivationArguments ^ ActivationArguments { System::Runtime::Hosting::ActivationArguments ^ get(); void set(System::Runtime::Hosting::ActivationArguments ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -148,6 +170,9 @@
       <MemberSignature Language="C#" Value="public AppDomainInitializer AppDomainInitializer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.AppDomainInitializer AppDomainInitializer" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.AppDomainInitializer" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppDomainInitializer As AppDomainInitializer" />
+      <MemberSignature Language="F#" Value="member this.AppDomainInitializer : AppDomainInitializer with get, set" Usage="System.AppDomainSetup.AppDomainInitializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property AppDomainInitializer ^ AppDomainInitializer { AppDomainInitializer ^ get(); void set(AppDomainInitializer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,6 +212,9 @@
       <MemberSignature Language="C#" Value="public string[] AppDomainInitializerArguments { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] AppDomainInitializerArguments" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.AppDomainInitializerArguments" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppDomainInitializerArguments As String()" />
+      <MemberSignature Language="F#" Value="member this.AppDomainInitializerArguments : string[] with get, set" Usage="System.AppDomainSetup.AppDomainInitializerArguments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ AppDomainInitializerArguments { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -226,6 +254,9 @@
       <MemberSignature Language="C#" Value="public string AppDomainManagerAssembly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AppDomainManagerAssembly" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.AppDomainManagerAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppDomainManagerAssembly As String" />
+      <MemberSignature Language="F#" Value="member this.AppDomainManagerAssembly : string with get, set" Usage="System.AppDomainSetup.AppDomainManagerAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AppDomainManagerAssembly { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -261,6 +292,9 @@
       <MemberSignature Language="C#" Value="public string AppDomainManagerType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AppDomainManagerType" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.AppDomainManagerType" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppDomainManagerType As String" />
+      <MemberSignature Language="F#" Value="member this.AppDomainManagerType : string with get, set" Usage="System.AppDomainSetup.AppDomainManagerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AppDomainManagerType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -296,7 +330,13 @@
       <MemberSignature Language="C#" Value="public string ApplicationBase { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationBase" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.ApplicationBase" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationBase As String" />
+      <MemberSignature Language="F#" Value="member this.ApplicationBase : string with get, set" Usage="System.AppDomainSetup.ApplicationBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationBase { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IAppDomainSetup.ApplicationBase</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -337,7 +377,13 @@
       <MemberSignature Language="C#" Value="public string ApplicationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.ApplicationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationName As String" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.AppDomainSetup.ApplicationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IAppDomainSetup.ApplicationName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -373,6 +419,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Policy.ApplicationTrust ApplicationTrust { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Policy.ApplicationTrust ApplicationTrust" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.ApplicationTrust" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationTrust As ApplicationTrust" />
+      <MemberSignature Language="F#" Value="member this.ApplicationTrust : System.Security.Policy.ApplicationTrust with get, set" Usage="System.AppDomainSetup.ApplicationTrust" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::ApplicationTrust ^ ApplicationTrust { System::Security::Policy::ApplicationTrust ^ get(); void set(System::Security::Policy::ApplicationTrust ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -401,7 +450,13 @@
       <MemberSignature Language="C#" Value="public string CachePath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CachePath" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.CachePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property CachePath As String" />
+      <MemberSignature Language="F#" Value="member this.CachePath : string with get, set" Usage="System.AppDomainSetup.CachePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CachePath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IAppDomainSetup.CachePath</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -432,7 +487,13 @@
       <MemberSignature Language="C#" Value="public string ConfigurationFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConfigurationFile" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.ConfigurationFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfigurationFile As String" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationFile : string with get, set" Usage="System.AppDomainSetup.ConfigurationFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConfigurationFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IAppDomainSetup.ConfigurationFile</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -461,6 +522,9 @@
       <MemberSignature Language="C#" Value="public bool DisallowApplicationBaseProbing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisallowApplicationBaseProbing" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.DisallowApplicationBaseProbing" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisallowApplicationBaseProbing As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DisallowApplicationBaseProbing : bool with get, set" Usage="System.AppDomainSetup.DisallowApplicationBaseProbing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisallowApplicationBaseProbing { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -490,6 +554,9 @@
       <MemberSignature Language="C#" Value="public bool DisallowBindingRedirects { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisallowBindingRedirects" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.DisallowBindingRedirects" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisallowBindingRedirects As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DisallowBindingRedirects : bool with get, set" Usage="System.AppDomainSetup.DisallowBindingRedirects" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisallowBindingRedirects { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -517,6 +584,9 @@
       <MemberSignature Language="C#" Value="public bool DisallowCodeDownload { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisallowCodeDownload" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.DisallowCodeDownload" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisallowCodeDownload As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DisallowCodeDownload : bool with get, set" Usage="System.AppDomainSetup.DisallowCodeDownload" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisallowCodeDownload { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -547,6 +617,9 @@
       <MemberSignature Language="C#" Value="public bool DisallowPublisherPolicy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisallowPublisherPolicy" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.DisallowPublisherPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisallowPublisherPolicy As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DisallowPublisherPolicy : bool with get, set" Usage="System.AppDomainSetup.DisallowPublisherPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DisallowPublisherPolicy { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -576,7 +649,13 @@
       <MemberSignature Language="C#" Value="public string DynamicBase { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DynamicBase" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.DynamicBase" />
+      <MemberSignature Language="VB.NET" Value="Public Property DynamicBase As String" />
+      <MemberSignature Language="F#" Value="member this.DynamicBase : string with get, set" Usage="System.AppDomainSetup.DynamicBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DynamicBase { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IAppDomainSetup.DynamicBase</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -636,6 +715,9 @@
       <MemberSignature Language="C#" Value="public byte[] GetConfigurationBytes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetConfigurationBytes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomainSetup.GetConfigurationBytes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConfigurationBytes () As Byte()" />
+      <MemberSignature Language="F#" Value="member this.GetConfigurationBytes : unit -&gt; byte[]" Usage="appDomainSetup.GetConfigurationBytes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetConfigurationBytes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -670,7 +752,13 @@
       <MemberSignature Language="C#" Value="public string LicenseFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LicenseFile" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.LicenseFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property LicenseFile As String" />
+      <MemberSignature Language="F#" Value="member this.LicenseFile : string with get, set" Usage="System.AppDomainSetup.LicenseFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LicenseFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IAppDomainSetup.LicenseFile</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -690,6 +778,9 @@
       <MemberSignature Language="C#" Value="public LoaderOptimization LoaderOptimization { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.LoaderOptimization LoaderOptimization" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.LoaderOptimization" />
+      <MemberSignature Language="VB.NET" Value="Public Property LoaderOptimization As LoaderOptimization" />
+      <MemberSignature Language="F#" Value="member this.LoaderOptimization : LoaderOptimization with get, set" Usage="System.AppDomainSetup.LoaderOptimization" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property LoaderOptimization LoaderOptimization { LoaderOptimization get(); void set(LoaderOptimization value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -720,6 +811,9 @@
       <MemberSignature Language="C#" Value="public string[] PartialTrustVisibleAssemblies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] PartialTrustVisibleAssemblies" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.PartialTrustVisibleAssemblies" />
+      <MemberSignature Language="VB.NET" Value="Public Property PartialTrustVisibleAssemblies As String()" />
+      <MemberSignature Language="F#" Value="member this.PartialTrustVisibleAssemblies : string[] with get, set" Usage="System.AppDomainSetup.PartialTrustVisibleAssemblies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ PartialTrustVisibleAssemblies { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -756,7 +850,13 @@
       <MemberSignature Language="C#" Value="public string PrivateBinPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PrivateBinPath" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.PrivateBinPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivateBinPath As String" />
+      <MemberSignature Language="F#" Value="member this.PrivateBinPath : string with get, set" Usage="System.AppDomainSetup.PrivateBinPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrivateBinPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IAppDomainSetup.PrivateBinPath</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -782,7 +882,13 @@
       <MemberSignature Language="C#" Value="public string PrivateBinPathProbe { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PrivateBinPathProbe" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.PrivateBinPathProbe" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrivateBinPathProbe As String" />
+      <MemberSignature Language="F#" Value="member this.PrivateBinPathProbe : string with get, set" Usage="System.AppDomainSetup.PrivateBinPathProbe" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrivateBinPathProbe { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IAppDomainSetup.PrivateBinPathProbe</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -808,6 +914,9 @@
       <MemberSignature Language="C#" Value="public bool SandboxInterop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SandboxInterop" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.SandboxInterop" />
+      <MemberSignature Language="VB.NET" Value="Public Property SandboxInterop As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SandboxInterop : bool with get, set" Usage="System.AppDomainSetup.SandboxInterop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SandboxInterop { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -836,6 +945,9 @@
       <MemberSignature Language="C#" Value="public void SetCompatibilitySwitches (System.Collections.Generic.IEnumerable&lt;string&gt; switches);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetCompatibilitySwitches(class System.Collections.Generic.IEnumerable`1&lt;string&gt; switches) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomainSetup.SetCompatibilitySwitches(System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCompatibilitySwitches (switches As IEnumerable(Of String))" />
+      <MemberSignature Language="F#" Value="member this.SetCompatibilitySwitches : seq&lt;string&gt; -&gt; unit" Usage="appDomainSetup.SetCompatibilitySwitches switches" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCompatibilitySwitches(System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ switches);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -880,6 +992,9 @@
       <MemberSignature Language="C#" Value="public void SetConfigurationBytes (byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetConfigurationBytes(unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomainSetup.SetConfigurationBytes(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetConfigurationBytes (value As Byte())" />
+      <MemberSignature Language="F#" Value="member this.SetConfigurationBytes : byte[] -&gt; unit" Usage="appDomainSetup.SetConfigurationBytes value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetConfigurationBytes(cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -914,6 +1029,9 @@
       <MemberSignature Language="C#" Value="public void SetNativeFunction (string functionName, int functionVersion, IntPtr functionPointer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetNativeFunction(string functionName, int32 functionVersion, native int functionPointer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AppDomainSetup.SetNativeFunction(System.String,System.Int32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetNativeFunction (functionName As String, functionVersion As Integer, functionPointer As IntPtr)" />
+      <MemberSignature Language="F#" Value="member this.SetNativeFunction : string * int * nativeint -&gt; unit" Usage="appDomainSetup.SetNativeFunction (functionName, functionVersion, functionPointer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetNativeFunction(System::String ^ functionName, int functionVersion, IntPtr functionPointer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -974,7 +1092,13 @@
       <MemberSignature Language="C#" Value="public string ShadowCopyDirectories { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ShadowCopyDirectories" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.ShadowCopyDirectories" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShadowCopyDirectories As String" />
+      <MemberSignature Language="F#" Value="member this.ShadowCopyDirectories : string with get, set" Usage="System.AppDomainSetup.ShadowCopyDirectories" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ShadowCopyDirectories { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IAppDomainSetup.ShadowCopyDirectories</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1010,7 +1134,13 @@
       <MemberSignature Language="C#" Value="public string ShadowCopyFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ShadowCopyFiles" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.ShadowCopyFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShadowCopyFiles As String" />
+      <MemberSignature Language="F#" Value="member this.ShadowCopyFiles : string with get, set" Usage="System.AppDomainSetup.ShadowCopyFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ShadowCopyFiles { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.IAppDomainSetup.ShadowCopyFiles</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1038,6 +1168,9 @@
       <MemberSignature Language="C#" Value="public string TargetFrameworkName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetFrameworkName" />
       <MemberSignature Language="DocId" Value="P:System.AppDomainSetup.TargetFrameworkName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkName As String" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkName : string with get, set" Usage="System.AppDomainSetup.TargetFrameworkName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameworkName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1062,15 +1195,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.AppDomainSetup" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

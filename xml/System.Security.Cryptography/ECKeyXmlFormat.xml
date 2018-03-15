@@ -1,7 +1,10 @@
-<Type Name="ECKeyXmlFormat" FullName="System.Security.Cryptography.ECKeyXmlFormat">
+﻿<Type Name="ECKeyXmlFormat" FullName="System.Security.Cryptography.ECKeyXmlFormat">
   <TypeSignature Language="C#" Value="public enum ECKeyXmlFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ECKeyXmlFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECKeyXmlFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ECKeyXmlFormat" />
+  <TypeSignature Language="F#" Value="type ECKeyXmlFormat = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ECKeyXmlFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="Rfc4050" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.ECKeyXmlFormat Rfc4050 = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECKeyXmlFormat.Rfc4050" />
+      <MemberSignature Language="VB.NET" Value="Rfc4050" />
+      <MemberSignature Language="F#" Value="Rfc4050 = 0" Usage="System.Security.Cryptography.ECKeyXmlFormat.Rfc4050" />
+      <MemberSignature Language="C++ CLI" Value="Rfc4050" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -41,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ECKeyXmlFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An XML serialization format described in RFC 4050, "Using the Elliptic Curve Signature Algorithm (ECDSA) for XML Digital Signatures."</summary>
       </Docs>

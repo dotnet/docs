@@ -1,7 +1,10 @@
-<Type Name="ITextRangeProvider" FullName="System.Windows.Automation.Provider.ITextRangeProvider">
+﻿<Type Name="ITextRangeProvider" FullName="System.Windows.Automation.Provider.ITextRangeProvider">
   <TypeSignature Language="C#" Value="public interface ITextRangeProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITextRangeProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.ITextRangeProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITextRangeProvider" />
+  <TypeSignature Language="F#" Value="type ITextRangeProvider = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITextRangeProvider" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,7 +18,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("5347ad7b-c355-46f8-aff5-909033582f63")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public void AddToSelection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddToSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.AddToSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddToSelection ()" />
+      <MemberSignature Language="F#" Value="abstract member AddToSelection : unit -&gt; unit" Usage="iTextRangeProvider.AddToSelection " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddToSelection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -65,6 +71,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.ITextRangeProvider Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.ITextRangeProvider Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As ITextRangeProvider" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Windows.Automation.Provider.ITextRangeProvider" Usage="iTextRangeProvider.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::ITextRangeProvider ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -91,6 +100,9 @@
       <MemberSignature Language="C#" Value="public bool Compare (System.Windows.Automation.Provider.ITextRangeProvider range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Compare(class System.Windows.Automation.Provider.ITextRangeProvider range) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.Compare(System.Windows.Automation.Provider.ITextRangeProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Compare (range As ITextRangeProvider) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Compare : System.Windows.Automation.Provider.ITextRangeProvider -&gt; bool" Usage="iTextRangeProvider.Compare range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Compare(System::Windows::Automation::Provider::ITextRangeProvider ^ range);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -115,6 +127,9 @@
       <MemberSignature Language="C#" Value="public int CompareEndpoints (System.Windows.Automation.Text.TextPatternRangeEndpoint endpoint, System.Windows.Automation.Provider.ITextRangeProvider targetRange, System.Windows.Automation.Text.TextPatternRangeEndpoint targetEndpoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareEndpoints(valuetype System.Windows.Automation.Text.TextPatternRangeEndpoint endpoint, class System.Windows.Automation.Provider.ITextRangeProvider targetRange, valuetype System.Windows.Automation.Text.TextPatternRangeEndpoint targetEndpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.CompareEndpoints(System.Windows.Automation.Text.TextPatternRangeEndpoint,System.Windows.Automation.Provider.ITextRangeProvider,System.Windows.Automation.Text.TextPatternRangeEndpoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareEndpoints (endpoint As TextPatternRangeEndpoint, targetRange As ITextRangeProvider, targetEndpoint As TextPatternRangeEndpoint) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member CompareEndpoints : System.Windows.Automation.Text.TextPatternRangeEndpoint * System.Windows.Automation.Provider.ITextRangeProvider * System.Windows.Automation.Text.TextPatternRangeEndpoint -&gt; int" Usage="iTextRangeProvider.CompareEndpoints (endpoint, targetRange, targetEndpoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareEndpoints(System::Windows::Automation::Text::TextPatternRangeEndpoint endpoint, System::Windows::Automation::Provider::ITextRangeProvider ^ targetRange, System::Windows::Automation::Text::TextPatternRangeEndpoint targetEndpoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -146,6 +161,9 @@
       <MemberSignature Language="C#" Value="public void ExpandToEnclosingUnit (System.Windows.Automation.Text.TextUnit unit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ExpandToEnclosingUnit(valuetype System.Windows.Automation.Text.TextUnit unit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.ExpandToEnclosingUnit(System.Windows.Automation.Text.TextUnit)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExpandToEnclosingUnit (unit As TextUnit)" />
+      <MemberSignature Language="F#" Value="abstract member ExpandToEnclosingUnit : System.Windows.Automation.Text.TextUnit -&gt; unit" Usage="iTextRangeProvider.ExpandToEnclosingUnit unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExpandToEnclosingUnit(System::Windows::Automation::Text::TextUnit unit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -210,6 +228,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.ITextRangeProvider FindAttribute (int attribute, object value, bool backward);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.ITextRangeProvider FindAttribute(int32 attribute, object value, bool backward) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.FindAttribute(System.Int32,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindAttribute (attribute As Integer, value As Object, backward As Boolean) As ITextRangeProvider" />
+      <MemberSignature Language="F#" Value="abstract member FindAttribute : int * obj * bool -&gt; System.Windows.Automation.Provider.ITextRangeProvider" Usage="iTextRangeProvider.FindAttribute (attribute, value, backward)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::ITextRangeProvider ^ FindAttribute(int attribute, System::Object ^ value, bool backward);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -244,6 +265,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.ITextRangeProvider FindText (string text, bool backward, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.ITextRangeProvider FindText(string text, bool backward, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.FindText(System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindText (text As String, backward As Boolean, ignoreCase As Boolean) As ITextRangeProvider" />
+      <MemberSignature Language="F#" Value="abstract member FindText : string * bool * bool -&gt; System.Windows.Automation.Provider.ITextRangeProvider" Usage="iTextRangeProvider.FindText (text, backward, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::ITextRangeProvider ^ FindText(System::String ^ text, bool backward, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -279,6 +303,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public object GetAttributeValue (int attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetAttributeValue(int32 attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.GetAttributeValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAttributeValue (attribute As Integer) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetAttributeValue : int -&gt; obj" Usage="iTextRangeProvider.GetAttributeValue attribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetAttributeValue(int attribute);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -313,6 +340,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public double[] GetBoundingRectangles ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64[] GetBoundingRectangles() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.GetBoundingRectangles" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBoundingRectangles () As Double()" />
+      <MemberSignature Language="F#" Value="abstract member GetBoundingRectangles : unit -&gt; double[]" Usage="iTextRangeProvider.GetBoundingRectangles " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;double&gt; ^ GetBoundingRectangles();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -336,6 +366,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.IRawElementProviderSimple[] GetChildren ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple[] GetChildren() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.GetChildren" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChildren () As IRawElementProviderSimple()" />
+      <MemberSignature Language="F#" Value="abstract member GetChildren : unit -&gt; System.Windows.Automation.Provider.IRawElementProviderSimple[]" Usage="iTextRangeProvider.GetChildren " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::Provider::IRawElementProviderSimple ^&gt; ^ GetChildren();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -357,6 +390,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Provider.IRawElementProviderSimple GetEnclosingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple GetEnclosingElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.GetEnclosingElement" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnclosingElement () As IRawElementProviderSimple" />
+      <MemberSignature Language="F#" Value="abstract member GetEnclosingElement : unit -&gt; System.Windows.Automation.Provider.IRawElementProviderSimple" Usage="iTextRangeProvider.GetEnclosingElement " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Provider::IRawElementProviderSimple ^ GetEnclosingElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -376,6 +412,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public string GetText (int maxLength);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetText(int32 maxLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.GetText(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetText (maxLength As Integer) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetText : int -&gt; string" Usage="iTextRangeProvider.GetText maxLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetText(int maxLength);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -410,6 +449,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public int Move (System.Windows.Automation.Text.TextUnit unit, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Move(valuetype System.Windows.Automation.Text.TextUnit unit, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.Move(System.Windows.Automation.Text.TextUnit,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Move (unit As TextUnit, count As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Move : System.Windows.Automation.Text.TextUnit * int -&gt; int" Usage="iTextRangeProvider.Move (unit, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Move(System::Windows::Automation::Text::TextUnit unit, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -481,6 +523,9 @@ Example of a text stream with embedded objects and their range spans
       <MemberSignature Language="C#" Value="public void MoveEndpointByRange (System.Windows.Automation.Text.TextPatternRangeEndpoint endpoint, System.Windows.Automation.Provider.ITextRangeProvider targetRange, System.Windows.Automation.Text.TextPatternRangeEndpoint targetEndpoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MoveEndpointByRange(valuetype System.Windows.Automation.Text.TextPatternRangeEndpoint endpoint, class System.Windows.Automation.Provider.ITextRangeProvider targetRange, valuetype System.Windows.Automation.Text.TextPatternRangeEndpoint targetEndpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.MoveEndpointByRange(System.Windows.Automation.Text.TextPatternRangeEndpoint,System.Windows.Automation.Provider.ITextRangeProvider,System.Windows.Automation.Text.TextPatternRangeEndpoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MoveEndpointByRange (endpoint As TextPatternRangeEndpoint, targetRange As ITextRangeProvider, targetEndpoint As TextPatternRangeEndpoint)" />
+      <MemberSignature Language="F#" Value="abstract member MoveEndpointByRange : System.Windows.Automation.Text.TextPatternRangeEndpoint * System.Windows.Automation.Provider.ITextRangeProvider * System.Windows.Automation.Text.TextPatternRangeEndpoint -&gt; unit" Usage="iTextRangeProvider.MoveEndpointByRange (endpoint, targetRange, targetEndpoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveEndpointByRange(System::Windows::Automation::Text::TextPatternRangeEndpoint endpoint, System::Windows::Automation::Provider::ITextRangeProvider ^ targetRange, System::Windows::Automation::Text::TextPatternRangeEndpoint targetEndpoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -513,6 +558,9 @@ Example of a text stream with embedded objects and their range spans
       <MemberSignature Language="C#" Value="public int MoveEndpointByUnit (System.Windows.Automation.Text.TextPatternRangeEndpoint endpoint, System.Windows.Automation.Text.TextUnit unit, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 MoveEndpointByUnit(valuetype System.Windows.Automation.Text.TextPatternRangeEndpoint endpoint, valuetype System.Windows.Automation.Text.TextUnit unit, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.MoveEndpointByUnit(System.Windows.Automation.Text.TextPatternRangeEndpoint,System.Windows.Automation.Text.TextUnit,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveEndpointByUnit (endpoint As TextPatternRangeEndpoint, unit As TextUnit, count As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member MoveEndpointByUnit : System.Windows.Automation.Text.TextPatternRangeEndpoint * System.Windows.Automation.Text.TextUnit * int -&gt; int" Usage="iTextRangeProvider.MoveEndpointByUnit (endpoint, unit, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int MoveEndpointByUnit(System::Windows::Automation::Text::TextPatternRangeEndpoint endpoint, System::Windows::Automation::Text::TextUnit unit, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -573,6 +621,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public void RemoveFromSelection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveFromSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.RemoveFromSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveFromSelection ()" />
+      <MemberSignature Language="F#" Value="abstract member RemoveFromSelection : unit -&gt; unit" Usage="iTextRangeProvider.RemoveFromSelection " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFromSelection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -601,6 +652,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public void ScrollIntoView (bool alignToTop);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ScrollIntoView(bool alignToTop) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.ScrollIntoView(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScrollIntoView (alignToTop As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member ScrollIntoView : bool -&gt; unit" Usage="iTextRangeProvider.ScrollIntoView alignToTop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollIntoView(bool alignToTop);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>
@@ -632,6 +686,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public void Select ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Select() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.ITextRangeProvider.Select" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; unit" Usage="iTextRangeProvider.Select " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

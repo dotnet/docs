@@ -1,7 +1,10 @@
-<Type Name="FormViewCommandEventHandler" FullName="System.Web.UI.WebControls.FormViewCommandEventHandler">
+﻿<Type Name="FormViewCommandEventHandler" FullName="System.Web.UI.WebControls.FormViewCommandEventHandler">
   <TypeSignature Language="C#" Value="public delegate void FormViewCommandEventHandler(object sender, FormViewCommandEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormViewCommandEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewCommandEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub FormViewCommandEventHandler(sender As Object, e As FormViewCommandEventArgs)" />
+  <TypeSignature Language="F#" Value="type FormViewCommandEventHandler = delegate of obj * FormViewCommandEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void FormViewCommandEventHandler(System::Object ^ sender, FormViewCommandEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

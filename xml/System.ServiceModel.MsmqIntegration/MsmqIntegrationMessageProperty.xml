@@ -1,7 +1,10 @@
-<Type Name="MsmqIntegrationMessageProperty" FullName="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty">
+﻿<Type Name="MsmqIntegrationMessageProperty" FullName="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty">
   <TypeSignature Language="C#" Value="public sealed class MsmqIntegrationMessageProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MsmqIntegrationMessageProperty extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MsmqIntegrationMessageProperty" />
+  <TypeSignature Language="F#" Value="type MsmqIntegrationMessageProperty = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MsmqIntegrationMessageProperty sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,8 @@
       <MemberSignature Language="C#" Value="public MsmqIntegrationMessageProperty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MsmqIntegrationMessageProperty();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +50,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Messaging.AcknowledgeTypes&gt; AcknowledgeType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Messaging.AcknowledgeTypes&gt; AcknowledgeType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.AcknowledgeType" />
+      <MemberSignature Language="VB.NET" Value="Public Property AcknowledgeType As Nullable(Of AcknowledgeTypes)" />
+      <MemberSignature Language="F#" Value="member this.AcknowledgeType : Nullable&lt;System.Messaging.AcknowledgeTypes&gt; with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.AcknowledgeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Messaging::AcknowledgeTypes&gt; AcknowledgeType { Nullable&lt;System::Messaging::AcknowledgeTypes&gt; get(); void set(Nullable&lt;System::Messaging::AcknowledgeTypes&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +71,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Messaging.Acknowledgment&gt; Acknowledgment { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Messaging.Acknowledgment&gt; Acknowledgment" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Acknowledgment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Acknowledgment As Nullable(Of Acknowledgment)" />
+      <MemberSignature Language="F#" Value="member this.Acknowledgment : Nullable&lt;System.Messaging.Acknowledgment&gt;" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Acknowledgment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Messaging::Acknowledgment&gt; Acknowledgment { Nullable&lt;System::Messaging::Acknowledgment&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -88,6 +99,9 @@
       <MemberSignature Language="C#" Value="public Uri AdministrationQueue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri AdministrationQueue" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.AdministrationQueue" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdministrationQueue As Uri" />
+      <MemberSignature Language="F#" Value="member this.AdministrationQueue : Uri with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.AdministrationQueue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ AdministrationQueue { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -113,6 +127,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; AppSpecific { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; AppSpecific" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.AppSpecific" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppSpecific As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.AppSpecific : Nullable&lt;int&gt; with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.AppSpecific" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; AppSpecific { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,6 +155,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; ArrivedTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; ArrivedTime" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.ArrivedTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArrivedTime As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.ArrivedTime : Nullable&lt;DateTime&gt;" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.ArrivedTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; ArrivedTime { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -156,6 +176,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; Authenticated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; Authenticated" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Authenticated" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authenticated As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Authenticated : Nullable&lt;bool&gt;" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Authenticated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; Authenticated { Nullable&lt;bool&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -182,6 +205,9 @@
       <MemberSignature Language="C#" Value="public object Body { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Body" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Body" />
+      <MemberSignature Language="VB.NET" Value="Public Property Body As Object" />
+      <MemberSignature Language="F#" Value="member this.Body : obj with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Body" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Body { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -200,6 +226,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; BodyType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; BodyType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.BodyType" />
+      <MemberSignature Language="VB.NET" Value="Public Property BodyType As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.BodyType : Nullable&lt;int&gt; with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.BodyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; BodyType { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -225,6 +254,9 @@
       <MemberSignature Language="C#" Value="public string CorrelationId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CorrelationId" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.CorrelationId" />
+      <MemberSignature Language="VB.NET" Value="Public Property CorrelationId As String" />
+      <MemberSignature Language="F#" Value="member this.CorrelationId : string with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.CorrelationId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CorrelationId { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -252,6 +284,9 @@
       <MemberSignature Language="C#" Value="public Uri DestinationQueue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri DestinationQueue" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.DestinationQueue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DestinationQueue As Uri" />
+      <MemberSignature Language="F#" Value="member this.DestinationQueue : Uri" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.DestinationQueue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ DestinationQueue { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -277,6 +312,9 @@
       <MemberSignature Language="C#" Value="public byte[] Extension { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Extension" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Extension" />
+      <MemberSignature Language="VB.NET" Value="Public Property Extension As Byte()" />
+      <MemberSignature Language="F#" Value="member this.Extension : byte[] with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Extension" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Extension { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -302,6 +340,8 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty Get (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty Get(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Get(System.ServiceModel.Channels.Message)" />
+      <MemberSignature Language="F#" Value="static member Get : System.ServiceModel.Channels.Message -&gt; System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Get message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::MsmqIntegration::MsmqIntegrationMessageProperty ^ Get(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -325,6 +365,9 @@
       <MemberSignature Language="C#" Value="public string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -352,6 +395,9 @@
       <MemberSignature Language="C#" Value="public string Label { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Label" />
+      <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Label" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -379,6 +425,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Messaging.MessageType&gt; MessageType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Messaging.MessageType&gt; MessageType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.MessageType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageType As Nullable(Of MessageType)" />
+      <MemberSignature Language="F#" Value="member this.MessageType : Nullable&lt;System.Messaging.MessageType&gt;" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.MessageType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Messaging::MessageType&gt; MessageType { Nullable&lt;System::Messaging::MessageType&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -410,6 +459,9 @@
       <MemberSignature Language="C#" Value="public const string Name;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Name" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Const Name As String " />
+      <MemberSignature Language="F#" Value="val mutable Name : string" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Name" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Name;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -427,6 +479,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Messaging.MessagePriority&gt; Priority { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Messaging.MessagePriority&gt; Priority" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public Property Priority As Nullable(Of MessagePriority)" />
+      <MemberSignature Language="F#" Value="member this.Priority : Nullable&lt;System.Messaging.MessagePriority&gt; with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.Priority" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Messaging::MessagePriority&gt; Priority { Nullable&lt;System::Messaging::MessagePriority&gt; get(); void set(Nullable&lt;System::Messaging::MessagePriority&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -453,6 +508,9 @@
       <MemberSignature Language="C#" Value="public Uri ResponseQueue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ResponseQueue" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.ResponseQueue" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseQueue As Uri" />
+      <MemberSignature Language="F#" Value="member this.ResponseQueue : Uri with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.ResponseQueue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ResponseQueue { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -480,6 +538,9 @@
       <MemberSignature Language="C#" Value="public byte[] SenderId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] SenderId" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.SenderId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SenderId As Byte()" />
+      <MemberSignature Language="F#" Value="member this.SenderId : byte[]" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.SenderId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ SenderId { cli::array &lt;System::Byte&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -498,6 +559,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;DateTime&gt; SentTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.DateTime&gt; SentTime" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.SentTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SentTime As Nullable(Of DateTime)" />
+      <MemberSignature Language="F#" Value="member this.SentTime : Nullable&lt;DateTime&gt;" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.SentTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;DateTime&gt; SentTime { Nullable&lt;DateTime&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -523,6 +587,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;TimeSpan&gt; TimeToReachQueue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; TimeToReachQueue" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.TimeToReachQueue" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimeToReachQueue As Nullable(Of TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.TimeToReachQueue : Nullable&lt;TimeSpan&gt; with get, set" Usage="System.ServiceModel.MsmqIntegration.MsmqIntegrationMessageProperty.TimeToReachQueue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;TimeSpan&gt; TimeToReachQueue { Nullable&lt;TimeSpan&gt; get(); void set(Nullable&lt;TimeSpan&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

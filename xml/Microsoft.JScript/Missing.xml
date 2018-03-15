@@ -1,7 +1,10 @@
-<Type Name="Missing" FullName="Microsoft.JScript.Missing">
+﻿<Type Name="Missing" FullName="Microsoft.JScript.Missing">
   <TypeSignature Language="C#" Value="public sealed class Missing" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Missing extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Missing" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Missing" />
+  <TypeSignature Language="F#" Value="type Missing = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Missing sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -21,6 +24,9 @@
       <MemberSignature Language="C#" Value="public static readonly Microsoft.JScript.Missing Value;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class Microsoft.JScript.Missing Value" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.Missing.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Value As Missing " />
+      <MemberSignature Language="F#" Value=" staticval mutable Value : Microsoft.JScript.Missing" Usage="Microsoft.JScript.Missing.Value" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly Microsoft::JScript::Missing ^ Value;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

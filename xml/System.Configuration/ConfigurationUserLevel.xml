@@ -1,7 +1,10 @@
-<Type Name="ConfigurationUserLevel" FullName="System.Configuration.ConfigurationUserLevel">
+﻿<Type Name="ConfigurationUserLevel" FullName="System.Configuration.ConfigurationUserLevel">
   <TypeSignature Language="C#" Value="public enum ConfigurationUserLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ConfigurationUserLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationUserLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ConfigurationUserLevel" />
+  <TypeSignature Language="F#" Value="type ConfigurationUserLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ConfigurationUserLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationUserLevel None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationUserLevel.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Configuration.ConfigurationUserLevel.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -54,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationUserLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Get the <see cref="T:System.Configuration.Configuration" /> that applies to all users.</summary>
       </Docs>
@@ -62,6 +69,9 @@
       <MemberSignature Language="C#" Value="PerUserRoaming" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationUserLevel PerUserRoaming = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationUserLevel.PerUserRoaming" />
+      <MemberSignature Language="VB.NET" Value="PerUserRoaming" />
+      <MemberSignature Language="F#" Value="PerUserRoaming = 10" Usage="System.Configuration.ConfigurationUserLevel.PerUserRoaming" />
+      <MemberSignature Language="C++ CLI" Value="PerUserRoaming" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -74,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationUserLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>Get the roaming <see cref="T:System.Configuration.Configuration" /> that applies to the current user.</summary>
       </Docs>
@@ -82,6 +93,9 @@
       <MemberSignature Language="C#" Value="PerUserRoamingAndLocal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.ConfigurationUserLevel PerUserRoamingAndLocal = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.ConfigurationUserLevel.PerUserRoamingAndLocal" />
+      <MemberSignature Language="VB.NET" Value="PerUserRoamingAndLocal" />
+      <MemberSignature Language="F#" Value="PerUserRoamingAndLocal = 20" Usage="System.Configuration.ConfigurationUserLevel.PerUserRoamingAndLocal" />
+      <MemberSignature Language="C++ CLI" Value="PerUserRoamingAndLocal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -94,6 +108,7 @@
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationUserLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>Get the local <see cref="T:System.Configuration.Configuration" /> that applies to the current user.</summary>
       </Docs>

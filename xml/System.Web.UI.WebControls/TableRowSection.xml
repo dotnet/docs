@@ -1,7 +1,10 @@
-<Type Name="TableRowSection" FullName="System.Web.UI.WebControls.TableRowSection">
+﻿<Type Name="TableRowSection" FullName="System.Web.UI.WebControls.TableRowSection">
   <TypeSignature Language="C#" Value="public enum TableRowSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TableRowSection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableRowSection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TableRowSection" />
+  <TypeSignature Language="F#" Value="type TableRowSection = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TableRowSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="TableBody" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TableRowSection TableBody = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TableRowSection.TableBody" />
+      <MemberSignature Language="VB.NET" Value="TableBody" />
+      <MemberSignature Language="F#" Value="TableBody = 1" Usage="System.Web.UI.WebControls.TableRowSection.TableBody" />
+      <MemberSignature Language="C++ CLI" Value="TableBody" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TableRowSection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Web.UI.WebControls.TableRow" /> is placed in the body of the <see cref="T:System.Web.UI.WebControls.Table" />.</summary>
       </Docs>
@@ -49,6 +56,9 @@
       <MemberSignature Language="C#" Value="TableFooter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TableRowSection TableFooter = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TableRowSection.TableFooter" />
+      <MemberSignature Language="VB.NET" Value="TableFooter" />
+      <MemberSignature Language="F#" Value="TableFooter = 2" Usage="System.Web.UI.WebControls.TableRowSection.TableFooter" />
+      <MemberSignature Language="C++ CLI" Value="TableFooter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TableRowSection</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Web.UI.WebControls.TableRow" /> is placed in the footer of the <see cref="T:System.Web.UI.WebControls.Table" />.</summary>
       </Docs>
@@ -65,6 +76,9 @@
       <MemberSignature Language="C#" Value="TableHeader" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TableRowSection TableHeader = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TableRowSection.TableHeader" />
+      <MemberSignature Language="VB.NET" Value="TableHeader" />
+      <MemberSignature Language="F#" Value="TableHeader = 0" Usage="System.Web.UI.WebControls.TableRowSection.TableHeader" />
+      <MemberSignature Language="C++ CLI" Value="TableHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TableRowSection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Web.UI.WebControls.TableRow" /> is placed in the header of the <see cref="T:System.Web.UI.WebControls.Table" />.</summary>
       </Docs>

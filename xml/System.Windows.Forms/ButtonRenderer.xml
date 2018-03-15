@@ -1,7 +1,10 @@
-<Type Name="ButtonRenderer" FullName="System.Windows.Forms.ButtonRenderer">
+﻿<Type Name="ButtonRenderer" FullName="System.Windows.Forms.ButtonRenderer">
   <TypeSignature Language="C#" Value="public sealed class ButtonRenderer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ButtonRenderer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ButtonRenderer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ButtonRenderer" />
+  <TypeSignature Language="F#" Value="type ButtonRenderer = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ButtonRenderer sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,10 +42,22 @@
     <altmember cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="DrawButton">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws a button control.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DrawButton">
       <MemberSignature Language="C#" Value="public static void DrawButton (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.VisualStyles.PushButtonState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawButton(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, valuetype System.Windows.Forms.VisualStyles.PushButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ButtonRenderer.DrawButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.VisualStyles.PushButtonState)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawButton (g As Graphics, bounds As Rectangle, state As PushButtonState)" />
+      <MemberSignature Language="F#" Value="static member DrawButton : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.VisualStyles.PushButtonState -&gt; unit" Usage="System.Windows.Forms.ButtonRenderer.DrawButton (g, bounds, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawButton(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::VisualStyles::PushButtonState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +90,9 @@
       <MemberSignature Language="C#" Value="public static void DrawButton (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, bool focused, System.Windows.Forms.VisualStyles.PushButtonState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawButton(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, bool focused, valuetype System.Windows.Forms.VisualStyles.PushButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ButtonRenderer.DrawButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Boolean,System.Windows.Forms.VisualStyles.PushButtonState)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawButton (g As Graphics, bounds As Rectangle, focused As Boolean, state As PushButtonState)" />
+      <MemberSignature Language="F#" Value="static member DrawButton : System.Drawing.Graphics * System.Drawing.Rectangle * bool * System.Windows.Forms.VisualStyles.PushButtonState -&gt; unit" Usage="System.Windows.Forms.ButtonRenderer.DrawButton (g, bounds, focused, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawButton(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, bool focused, System::Windows::Forms::VisualStyles::PushButtonState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -110,6 +128,8 @@
       <MemberSignature Language="C#" Value="public static void DrawButton (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Drawing.Image image, System.Drawing.Rectangle imageBounds, bool focused, System.Windows.Forms.VisualStyles.PushButtonState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawButton(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, class System.Drawing.Image image, valuetype System.Drawing.Rectangle imageBounds, bool focused, valuetype System.Windows.Forms.VisualStyles.PushButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ButtonRenderer.DrawButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Image,System.Drawing.Rectangle,System.Boolean,System.Windows.Forms.VisualStyles.PushButtonState)" />
+      <MemberSignature Language="F#" Value="static member DrawButton : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Image * System.Drawing.Rectangle * bool * System.Windows.Forms.VisualStyles.PushButtonState -&gt; unit" Usage="System.Windows.Forms.ButtonRenderer.DrawButton (g, bounds, image, imageBounds, focused, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawButton(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Drawing::Image ^ image, System::Drawing::Rectangle imageBounds, bool focused, System::Windows::Forms::VisualStyles::PushButtonState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -149,6 +169,8 @@
       <MemberSignature Language="C#" Value="public static void DrawButton (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, string buttonText, System.Drawing.Font font, bool focused, System.Windows.Forms.VisualStyles.PushButtonState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawButton(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, string buttonText, class System.Drawing.Font font, bool focused, valuetype System.Windows.Forms.VisualStyles.PushButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ButtonRenderer.DrawButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Boolean,System.Windows.Forms.VisualStyles.PushButtonState)" />
+      <MemberSignature Language="F#" Value="static member DrawButton : System.Drawing.Graphics * System.Drawing.Rectangle * string * System.Drawing.Font * bool * System.Windows.Forms.VisualStyles.PushButtonState -&gt; unit" Usage="System.Windows.Forms.ButtonRenderer.DrawButton (g, bounds, buttonText, font, focused, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawButton(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::String ^ buttonText, System::Drawing::Font ^ font, bool focused, System::Windows::Forms::VisualStyles::PushButtonState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -197,6 +219,8 @@
       <MemberSignature Language="C#" Value="public static void DrawButton (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, string buttonText, System.Drawing.Font font, System.Windows.Forms.TextFormatFlags flags, bool focused, System.Windows.Forms.VisualStyles.PushButtonState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawButton(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, string buttonText, class System.Drawing.Font font, valuetype System.Windows.Forms.TextFormatFlags flags, bool focused, valuetype System.Windows.Forms.VisualStyles.PushButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ButtonRenderer.DrawButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Windows.Forms.TextFormatFlags,System.Boolean,System.Windows.Forms.VisualStyles.PushButtonState)" />
+      <MemberSignature Language="F#" Value="static member DrawButton : System.Drawing.Graphics * System.Drawing.Rectangle * string * System.Drawing.Font * System.Windows.Forms.TextFormatFlags * bool * System.Windows.Forms.VisualStyles.PushButtonState -&gt; unit" Usage="System.Windows.Forms.ButtonRenderer.DrawButton (g, bounds, buttonText, font, flags, focused, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawButton(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::String ^ buttonText, System::Drawing::Font ^ font, System::Windows::Forms::TextFormatFlags flags, bool focused, System::Windows::Forms::VisualStyles::PushButtonState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -238,6 +262,8 @@
       <MemberSignature Language="C#" Value="public static void DrawButton (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, string buttonText, System.Drawing.Font font, System.Drawing.Image image, System.Drawing.Rectangle imageBounds, bool focused, System.Windows.Forms.VisualStyles.PushButtonState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawButton(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, string buttonText, class System.Drawing.Font font, class System.Drawing.Image image, valuetype System.Drawing.Rectangle imageBounds, bool focused, valuetype System.Windows.Forms.VisualStyles.PushButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ButtonRenderer.DrawButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Drawing.Image,System.Drawing.Rectangle,System.Boolean,System.Windows.Forms.VisualStyles.PushButtonState)" />
+      <MemberSignature Language="F#" Value="static member DrawButton : System.Drawing.Graphics * System.Drawing.Rectangle * string * System.Drawing.Font * System.Drawing.Image * System.Drawing.Rectangle * bool * System.Windows.Forms.VisualStyles.PushButtonState -&gt; unit" Usage="System.Windows.Forms.ButtonRenderer.DrawButton (g, bounds, buttonText, font, image, imageBounds, focused, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawButton(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::String ^ buttonText, System::Drawing::Font ^ font, System::Drawing::Image ^ image, System::Drawing::Rectangle imageBounds, bool focused, System::Windows::Forms::VisualStyles::PushButtonState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -281,6 +307,8 @@
       <MemberSignature Language="C#" Value="public static void DrawButton (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, string buttonText, System.Drawing.Font font, System.Windows.Forms.TextFormatFlags flags, System.Drawing.Image image, System.Drawing.Rectangle imageBounds, bool focused, System.Windows.Forms.VisualStyles.PushButtonState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawButton(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, string buttonText, class System.Drawing.Font font, valuetype System.Windows.Forms.TextFormatFlags flags, class System.Drawing.Image image, valuetype System.Drawing.Rectangle imageBounds, bool focused, valuetype System.Windows.Forms.VisualStyles.PushButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ButtonRenderer.DrawButton(System.Drawing.Graphics,System.Drawing.Rectangle,System.String,System.Drawing.Font,System.Windows.Forms.TextFormatFlags,System.Drawing.Image,System.Drawing.Rectangle,System.Boolean,System.Windows.Forms.VisualStyles.PushButtonState)" />
+      <MemberSignature Language="F#" Value="static member DrawButton : System.Drawing.Graphics * System.Drawing.Rectangle * string * System.Drawing.Font * System.Windows.Forms.TextFormatFlags * System.Drawing.Image * System.Drawing.Rectangle * bool * System.Windows.Forms.VisualStyles.PushButtonState -&gt; unit" Usage="System.Windows.Forms.ButtonRenderer.DrawButton (g, bounds, buttonText, font, flags, image, imageBounds, focused, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawButton(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::String ^ buttonText, System::Drawing::Font ^ font, System::Windows::Forms::TextFormatFlags flags, System::Drawing::Image ^ image, System::Drawing::Rectangle imageBounds, bool focused, System::Windows::Forms::VisualStyles::PushButtonState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -326,6 +354,9 @@
       <MemberSignature Language="C#" Value="public static void DrawParentBackground (System.Drawing.Graphics g, System.Drawing.Rectangle bounds, System.Windows.Forms.Control childControl);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawParentBackground(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds, class System.Windows.Forms.Control childControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ButtonRenderer.DrawParentBackground(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawParentBackground (g As Graphics, bounds As Rectangle, childControl As Control)" />
+      <MemberSignature Language="F#" Value="static member DrawParentBackground : System.Drawing.Graphics * System.Drawing.Rectangle * System.Windows.Forms.Control -&gt; unit" Usage="System.Windows.Forms.ButtonRenderer.DrawParentBackground (g, bounds, childControl)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawParentBackground(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds, System::Windows::Forms::Control ^ childControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -362,6 +393,9 @@
       <MemberSignature Language="C#" Value="public static bool IsBackgroundPartiallyTransparent (System.Windows.Forms.VisualStyles.PushButtonState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsBackgroundPartiallyTransparent(valuetype System.Windows.Forms.VisualStyles.PushButtonState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ButtonRenderer.IsBackgroundPartiallyTransparent(System.Windows.Forms.VisualStyles.PushButtonState)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsBackgroundPartiallyTransparent (state As PushButtonState) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsBackgroundPartiallyTransparent : System.Windows.Forms.VisualStyles.PushButtonState -&gt; bool" Usage="System.Windows.Forms.ButtonRenderer.IsBackgroundPartiallyTransparent state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsBackgroundPartiallyTransparent(System::Windows::Forms::VisualStyles::PushButtonState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -385,6 +419,9 @@
       <MemberSignature Language="C#" Value="public static bool RenderMatchingApplicationState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool RenderMatchingApplicationState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ButtonRenderer.RenderMatchingApplicationState" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property RenderMatchingApplicationState As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RenderMatchingApplicationState : bool with get, set" Usage="System.Windows.Forms.ButtonRenderer.RenderMatchingApplicationState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool RenderMatchingApplicationState { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -407,14 +444,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="DrawButton">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Draws a button control.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

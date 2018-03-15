@@ -1,7 +1,10 @@
-<Type Name="DataSysDescriptionAttribute" FullName="System.Data.DataSysDescriptionAttribute">
+﻿<Type Name="DataSysDescriptionAttribute" FullName="System.Data.DataSysDescriptionAttribute">
   <TypeSignature Language="C#" Value="public class DataSysDescriptionAttribute : System.ComponentModel.DescriptionAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataSysDescriptionAttribute extends System.ComponentModel.DescriptionAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataSysDescriptionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataSysDescriptionAttribute&#xA;Inherits DescriptionAttribute" />
+  <TypeSignature Language="F#" Value="type DataSysDescriptionAttribute = class&#xA;    inherit DescriptionAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataSysDescriptionAttribute : System::ComponentModel::DescriptionAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="public DataSysDescriptionAttribute (string description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataSysDescriptionAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (description As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.DataSysDescriptionAttribute : string -&gt; System.Data.DataSysDescriptionAttribute" Usage="new System.Data.DataSysDescriptionAttribute description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataSysDescriptionAttribute(System::String ^ description);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -71,6 +77,9 @@
       <MemberSignature Language="C#" Value="public override string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataSysDescriptionAttribute.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Data.DataSysDescriptionAttribute.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

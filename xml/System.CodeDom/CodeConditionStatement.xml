@@ -1,7 +1,10 @@
-<Type Name="CodeConditionStatement" FullName="System.CodeDom.CodeConditionStatement">
+﻿<Type Name="CodeConditionStatement" FullName="System.CodeDom.CodeConditionStatement">
   <TypeSignature Language="C#" Value="public class CodeConditionStatement : System.CodeDom.CodeStatement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeConditionStatement extends System.CodeDom.CodeStatement" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeConditionStatement" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeConditionStatement&#xA;Inherits CodeStatement" />
+  <TypeSignature Language="F#" Value="type CodeConditionStatement = class&#xA;    inherit CodeStatement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeConditionStatement : System::CodeDom::CodeStatement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -45,10 +48,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeConditionStatement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeConditionStatement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeConditionStatement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeConditionStatement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +82,9 @@
       <MemberSignature Language="C#" Value="public CodeConditionStatement (System.CodeDom.CodeExpression condition, params System.CodeDom.CodeStatement[] trueStatements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression condition, class System.CodeDom.CodeStatement[] trueStatements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeConditionStatement.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeStatement[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (condition As CodeExpression, ParamArray trueStatements As CodeStatement())" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeConditionStatement : System.CodeDom.CodeExpression * System.CodeDom.CodeStatement[] -&gt; System.CodeDom.CodeConditionStatement" Usage="new System.CodeDom.CodeConditionStatement (condition, trueStatements)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeConditionStatement(System::CodeDom::CodeExpression ^ condition, ... cli::array &lt;System::CodeDom::CodeStatement ^&gt; ^ trueStatements);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -100,6 +117,9 @@
       <MemberSignature Language="C#" Value="public CodeConditionStatement (System.CodeDom.CodeExpression condition, System.CodeDom.CodeStatement[] trueStatements, System.CodeDom.CodeStatement[] falseStatements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression condition, class System.CodeDom.CodeStatement[] trueStatements, class System.CodeDom.CodeStatement[] falseStatements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeConditionStatement.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeStatement[],System.CodeDom.CodeStatement[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (condition As CodeExpression, trueStatements As CodeStatement(), falseStatements As CodeStatement())" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeConditionStatement : System.CodeDom.CodeExpression * System.CodeDom.CodeStatement[] * System.CodeDom.CodeStatement[] -&gt; System.CodeDom.CodeConditionStatement" Usage="new System.CodeDom.CodeConditionStatement (condition, trueStatements, falseStatements)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeConditionStatement(System::CodeDom::CodeExpression ^ condition, cli::array &lt;System::CodeDom::CodeStatement ^&gt; ^ trueStatements, cli::array &lt;System::CodeDom::CodeStatement ^&gt; ^ falseStatements);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -128,6 +148,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression Condition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression Condition" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeConditionStatement.Condition" />
+      <MemberSignature Language="VB.NET" Value="Public Property Condition As CodeExpression" />
+      <MemberSignature Language="F#" Value="member this.Condition : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeConditionStatement.Condition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Condition { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -158,6 +181,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeStatementCollection FalseStatements { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeStatementCollection FalseStatements" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeConditionStatement.FalseStatements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FalseStatements As CodeStatementCollection" />
+      <MemberSignature Language="F#" Value="member this.FalseStatements : System.CodeDom.CodeStatementCollection" Usage="System.CodeDom.CodeConditionStatement.FalseStatements" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatementCollection ^ FalseStatements { System::CodeDom::CodeStatementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -181,6 +207,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeStatementCollection TrueStatements { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeStatementCollection TrueStatements" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeConditionStatement.TrueStatements" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TrueStatements As CodeStatementCollection" />
+      <MemberSignature Language="F#" Value="member this.TrueStatements : System.CodeDom.CodeStatementCollection" Usage="System.CodeDom.CodeConditionStatement.TrueStatements" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeStatementCollection ^ TrueStatements { System::CodeDom::CodeStatementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -200,14 +229,5 @@
         <altmember cref="T:System.CodeDom.CodeStatementCollection" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeConditionStatement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="SoapHeaderAttribute" FullName="System.Web.Services.Protocols.SoapHeaderAttribute">
+﻿<Type Name="SoapHeaderAttribute" FullName="System.Web.Services.Protocols.SoapHeaderAttribute">
   <TypeSignature Language="C#" Value="public sealed class SoapHeaderAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapHeaderAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapHeaderAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapHeaderAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type SoapHeaderAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapHeaderAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +54,9 @@
       <MemberSignature Language="C#" Value="public SoapHeaderAttribute (string memberName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string memberName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (memberName As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapHeaderAttribute : string -&gt; System.Web.Services.Protocols.SoapHeaderAttribute" Usage="new System.Web.Services.Protocols.SoapHeaderAttribute memberName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapHeaderAttribute(System::String ^ memberName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -90,6 +96,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.SoapHeaderDirection Direction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Protocols.SoapHeaderDirection Direction" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeaderAttribute.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Direction As SoapHeaderDirection" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Web.Services.Protocols.SoapHeaderDirection with get, set" Usage="System.Web.Services.Protocols.SoapHeaderAttribute.Direction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Protocols::SoapHeaderDirection Direction { System::Web::Services::Protocols::SoapHeaderDirection get(); void set(System::Web::Services::Protocols::SoapHeaderDirection value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -120,6 +129,9 @@
       <MemberSignature Language="C#" Value="public string MemberName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MemberName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeaderAttribute.MemberName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MemberName As String" />
+      <MemberSignature Language="F#" Value="member this.MemberName : string with get, set" Usage="System.Web.Services.Protocols.SoapHeaderAttribute.MemberName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MemberName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -159,6 +171,9 @@
       <MemberSignature Language="C#" Value="public bool Required { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Required" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHeaderAttribute.Required" />
+      <MemberSignature Language="VB.NET" Value="Public Property Required As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Required : bool with get, set" Usage="System.Web.Services.Protocols.SoapHeaderAttribute.Required" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Required { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

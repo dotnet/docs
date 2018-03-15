@@ -1,7 +1,10 @@
-<Type Name="ProcessModelComAuthenticationLevel" FullName="System.Web.Configuration.ProcessModelComAuthenticationLevel">
+﻿<Type Name="ProcessModelComAuthenticationLevel" FullName="System.Web.Configuration.ProcessModelComAuthenticationLevel">
   <TypeSignature Language="C#" Value="public enum ProcessModelComAuthenticationLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProcessModelComAuthenticationLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProcessModelComAuthenticationLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ProcessModelComAuthenticationLevel" />
+  <TypeSignature Language="F#" Value="type ProcessModelComAuthenticationLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ProcessModelComAuthenticationLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="Call" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.ProcessModelComAuthenticationLevel Call = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelComAuthenticationLevel.Call" />
+      <MemberSignature Language="VB.NET" Value="Call" />
+      <MemberSignature Language="F#" Value="Call = 1" Usage="System.Web.Configuration.ProcessModelComAuthenticationLevel.Call" />
+      <MemberSignature Language="C++ CLI" Value="Call" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -47,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComAuthenticationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that DCOM authenticates the credentials of the client. This field is constant.</summary>
         <remarks>
@@ -63,6 +70,9 @@
       <MemberSignature Language="C#" Value="Connect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.ProcessModelComAuthenticationLevel Connect = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelComAuthenticationLevel.Connect" />
+      <MemberSignature Language="VB.NET" Value="Connect" />
+      <MemberSignature Language="F#" Value="Connect = 2" Usage="System.Web.Configuration.ProcessModelComAuthenticationLevel.Connect" />
+      <MemberSignature Language="C++ CLI" Value="Connect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComAuthenticationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that DCOM authenticates the credentials of the client. This field is constant.</summary>
         <remarks>
@@ -89,6 +100,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.ProcessModelComAuthenticationLevel Default = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelComAuthenticationLevel.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 3" Usage="System.Web.Configuration.ProcessModelComAuthenticationLevel.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -97,6 +111,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComAuthenticationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies that DCOM determines the authentication level. This field is constant.</summary>
         <remarks>
@@ -113,6 +128,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.ProcessModelComAuthenticationLevel None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelComAuthenticationLevel.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.Configuration.ProcessModelComAuthenticationLevel.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -121,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComAuthenticationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies no authentication. This field is constant.</summary>
       </Docs>
@@ -129,6 +148,9 @@
       <MemberSignature Language="C#" Value="Pkt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.ProcessModelComAuthenticationLevel Pkt = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelComAuthenticationLevel.Pkt" />
+      <MemberSignature Language="VB.NET" Value="Pkt" />
+      <MemberSignature Language="F#" Value="Pkt = 4" Usage="System.Web.Configuration.ProcessModelComAuthenticationLevel.Pkt" />
+      <MemberSignature Language="C++ CLI" Value="Pkt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,6 +159,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComAuthenticationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that DCOM verifies that all data received is from the expected client. This field is constant.</summary>
         <remarks>
@@ -153,6 +176,9 @@
       <MemberSignature Language="C#" Value="PktIntegrity" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.ProcessModelComAuthenticationLevel PktIntegrity = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelComAuthenticationLevel.PktIntegrity" />
+      <MemberSignature Language="VB.NET" Value="PktIntegrity" />
+      <MemberSignature Language="F#" Value="PktIntegrity = 5" Usage="System.Web.Configuration.ProcessModelComAuthenticationLevel.PktIntegrity" />
+      <MemberSignature Language="C++ CLI" Value="PktIntegrity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -161,6 +187,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComAuthenticationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Specifies that DCOM authenticates and verifies the data transferred. This field is constant.</summary>
         <remarks>
@@ -177,6 +204,9 @@
       <MemberSignature Language="C#" Value="PktPrivacy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.ProcessModelComAuthenticationLevel PktPrivacy = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelComAuthenticationLevel.PktPrivacy" />
+      <MemberSignature Language="VB.NET" Value="PktPrivacy" />
+      <MemberSignature Language="F#" Value="PktPrivacy = 6" Usage="System.Web.Configuration.ProcessModelComAuthenticationLevel.PktPrivacy" />
+      <MemberSignature Language="C++ CLI" Value="PktPrivacy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -185,6 +215,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelComAuthenticationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Specifies that DCOM authenticates all previous levels and does encryption. This field is constant.</summary>
         <remarks>

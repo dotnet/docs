@@ -1,7 +1,10 @@
-<Type Name="SqlInt64" FullName="System.Data.SqlTypes.SqlInt64">
+﻿<Type Name="SqlInt64" FullName="System.Data.SqlTypes.SqlInt64">
   <TypeSignature Language="C#" Value="public struct SqlInt64 : IComparable, System.Data.SqlTypes.INullable, System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit SqlInt64 extends System.ValueType implements class System.Data.SqlTypes.INullable, class System.IComparable, class System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.SqlInt64" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SqlInt64&#xA;Implements IComparable, INullable, IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type SqlInt64 = struct&#xA;    interface INullable&#xA;    interface IXmlSerializable" />
+  <TypeSignature Language="C++ CLI" Value="public value class SqlInt64 : IComparable, System::Data::SqlTypes::INullable, System::Xml::Serialization::IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -47,6 +50,9 @@
       <MemberSignature Language="C#" Value="public SqlInt64 (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.#ctor(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Long)" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlTypes.SqlInt64 : int64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="new System.Data.SqlTypes.SqlInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlInt64(long value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -78,6 +84,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 Add (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlInt64 Add(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.Add(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member Add : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.Add (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 Add(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -115,6 +124,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 BitwiseAnd (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlInt64 BitwiseAnd(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.BitwiseAnd(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BitwiseAnd (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member BitwiseAnd : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.BitwiseAnd (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 BitwiseAnd(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -152,6 +164,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 BitwiseOr (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlInt64 BitwiseOr(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.BitwiseOr(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BitwiseOr (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member BitwiseOr : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.BitwiseOr (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 BitwiseOr(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -185,10 +200,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares this instance to the supplied object and returns an indication of their relative values.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CompareTo">
       <MemberSignature Language="C#" Value="public int CompareTo (System.Data.SqlTypes.SqlInt64 value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 CompareTo(valuetype System.Data.SqlTypes.SqlInt64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.CompareTo(System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As SqlInt64) As Integer" />
+      <MemberSignature Language="F#" Value="member this.CompareTo : System.Data.SqlTypes.SqlInt64 -&gt; int" Usage="sqlInt64.CompareTo value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareTo(System::Data::SqlTypes::SqlInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -246,7 +273,13 @@
       <MemberSignature Language="C#" Value="public int CompareTo (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.CompareTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (value As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="sqlInt64.CompareTo value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -303,6 +336,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 Divide (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlInt64 Divide(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.Divide(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Divide (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member Divide : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.Divide (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 Divide(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -336,10 +372,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a logical comparison of two structures to determine whether they are equal.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="sqlInt64.Equals value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -376,6 +424,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean Equals (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean Equals(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.Equals(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (x As SqlInt64, y As SqlInt64) As SqlBoolean" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlInt64.Equals (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean Equals(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -414,6 +465,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="sqlInt64.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -446,6 +500,9 @@
       <MemberSignature Language="C#" Value="public static System.Xml.XmlQualifiedName GetXsdType (System.Xml.Schema.XmlSchemaSet schemaSet);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlQualifiedName GetXsdType(class System.Xml.Schema.XmlSchemaSet schemaSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.GetXsdType(System.Xml.Schema.XmlSchemaSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetXsdType (schemaSet As XmlSchemaSet) As XmlQualifiedName" />
+      <MemberSignature Language="F#" Value="static member GetXsdType : System.Xml.Schema.XmlSchemaSet -&gt; System.Xml.XmlQualifiedName" Usage="System.Data.SqlTypes.SqlInt64.GetXsdType schemaSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::XmlQualifiedName ^ GetXsdType(System::Xml::Schema::XmlSchemaSet ^ schemaSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -477,6 +534,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean GreaterThan (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean GreaterThan(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.GreaterThan(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (x As SqlInt64, y As SqlInt64) As SqlBoolean" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlInt64.GreaterThan (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThan(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -514,6 +574,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean GreaterThanOrEqual (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean GreaterThanOrEqual(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.GreaterThanOrEqual(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (x As SqlInt64, y As SqlInt64) As SqlBoolean" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlInt64.GreaterThanOrEqual (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean GreaterThanOrEqual(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -551,7 +614,13 @@
       <MemberSignature Language="C#" Value="public bool IsNull { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNull" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlInt64.IsNull" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.SqlTypes.SqlInt64.IsNull" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -590,6 +659,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean LessThan (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean LessThan(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.LessThan(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (x As SqlInt64, y As SqlInt64) As SqlBoolean" />
+      <MemberSignature Language="F#" Value="static member LessThan : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlInt64.LessThan (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThan(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -627,6 +699,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean LessThanOrEqual (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean LessThanOrEqual(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.LessThanOrEqual(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (x As SqlInt64, y As SqlInt64) As SqlBoolean" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlInt64.LessThanOrEqual (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean LessThanOrEqual(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -664,6 +739,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Data.SqlTypes.SqlInt64 MaxValue;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.SqlTypes.SqlInt64 MaxValue" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlInt64.MaxValue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxValue As SqlInt64 " />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxValue : System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.MaxValue" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlInt64 MaxValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -701,6 +779,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Data.SqlTypes.SqlInt64 MinValue;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.SqlTypes.SqlInt64 MinValue" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlInt64.MinValue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinValue As SqlInt64 " />
+      <MemberSignature Language="F#" Value=" staticval mutable MinValue : System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.MinValue" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlInt64 MinValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -738,6 +819,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 Mod (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlInt64 Mod(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.Mod(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Mod (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member Mod : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.Mod (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 Mod(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -775,6 +859,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 Modulus (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlInt64 Modulus(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.Modulus(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Modulus (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member Modulus : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.Modulus (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 Modulus(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -819,6 +906,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 Multiply (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlInt64 Multiply(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.Multiply(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.Multiply (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 Multiply(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -856,6 +946,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean NotEquals (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlBoolean NotEquals(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.NotEquals(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NotEquals (x As SqlInt64, y As SqlInt64) As SqlBoolean" />
+      <MemberSignature Language="F#" Value="static member NotEquals : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlInt64.NotEquals (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean NotEquals(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -893,6 +986,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Data.SqlTypes.SqlInt64 Null;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.SqlTypes.SqlInt64 Null" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlInt64.Null" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As SqlInt64 " />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.Null" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlInt64 Null;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -930,6 +1026,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 OnesComplement (System.Data.SqlTypes.SqlInt64 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlInt64 OnesComplement(valuetype System.Data.SqlTypes.SqlInt64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.OnesComplement(System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OnesComplement (x As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member OnesComplement : System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.OnesComplement x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 OnesComplement(System::Data::SqlTypes::SqlInt64 x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -965,6 +1064,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator + (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Addition(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Addition(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="x + y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 operator +(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1004,6 +1106,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator &amp; (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_BitwiseAnd(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_BitwiseAnd(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator And (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member ( &amp;&amp;&amp; ) : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="x &amp;&amp;&amp; y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 operator &amp;(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1043,6 +1148,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator | (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_BitwiseOr(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_BitwiseOr(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator Or (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member ( ||| ) : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="x ||| y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 operator |(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1082,6 +1190,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator / (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Division(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Division(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator / (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member ( / ) : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="x / y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 operator /(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1121,6 +1232,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator == (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Equality(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Equality(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (x As SqlInt64, y As SqlInt64) As SqlBoolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x = y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator ==(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1160,6 +1274,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator ^ (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_ExclusiveOr(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_ExclusiveOr(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator Xor (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member ( ^^^ ) : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="x ^^^ y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 operator ^(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1195,10 +1312,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts to and from a <see cref="T:System.Data.SqlTypes.SqlInt64" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Explicit">
       <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlBoolean x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Explicit(valuetype System.Data.SqlTypes.SqlBoolean x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Explicit(System.Data.SqlTypes.SqlBoolean)~System.Data.SqlTypes.SqlInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlBoolean) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlBoolean -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlInt64(System::Data::SqlTypes::SqlBoolean x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1234,6 +1363,9 @@
       <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlDecimal x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Explicit(valuetype System.Data.SqlTypes.SqlDecimal x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Explicit(System.Data.SqlTypes.SqlDecimal)~System.Data.SqlTypes.SqlInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlDecimal) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlDecimal -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlInt64(System::Data::SqlTypes::SqlDecimal x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1269,6 +1401,9 @@
       <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlDouble x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Explicit(valuetype System.Data.SqlTypes.SqlDouble x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Explicit(System.Data.SqlTypes.SqlDouble)~System.Data.SqlTypes.SqlInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlDouble) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlDouble -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlInt64(System::Data::SqlTypes::SqlDouble x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1304,6 +1439,9 @@
       <MemberSignature Language="C#" Value="public static explicit operator long (System.Data.SqlTypes.SqlInt64 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int64 op_Explicit(valuetype System.Data.SqlTypes.SqlInt64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Explicit(System.Data.SqlTypes.SqlInt64)~System.Int64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlInt64) As Long" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlInt64 -&gt; int64" Usage="System.Data.SqlTypes.SqlInt64.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator long(System::Data::SqlTypes::SqlInt64 x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1339,6 +1477,9 @@
       <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlMoney x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Explicit(valuetype System.Data.SqlTypes.SqlMoney x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Explicit(System.Data.SqlTypes.SqlMoney)~System.Data.SqlTypes.SqlInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlMoney) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlMoney -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlInt64(System::Data::SqlTypes::SqlMoney x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1374,6 +1515,9 @@
       <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlSingle x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Explicit(valuetype System.Data.SqlTypes.SqlSingle x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Explicit(System.Data.SqlTypes.SqlSingle)~System.Data.SqlTypes.SqlInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlSingle) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlSingle -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlInt64(System::Data::SqlTypes::SqlSingle x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1409,6 +1553,9 @@
       <MemberSignature Language="C#" Value="public static explicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlString x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Explicit(valuetype System.Data.SqlTypes.SqlString x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Explicit(System.Data.SqlTypes.SqlString)~System.Data.SqlTypes.SqlInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As SqlString) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.SqlTypes.SqlString -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::SqlTypes::SqlInt64(System::Data::SqlTypes::SqlString x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1444,6 +1591,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &gt; (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThan(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_GreaterThan(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (x As SqlInt64, y As SqlInt64) As SqlBoolean" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt; y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1483,6 +1633,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &gt;= (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_GreaterThanOrEqual(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_GreaterThanOrEqual(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (x As SqlInt64, y As SqlInt64) As SqlBoolean" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &gt;= y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &gt;=(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1518,10 +1671,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts to a <see cref="T:System.Data.SqlTypes.SqlInt64" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Implicit">
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlByte x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Implicit(valuetype System.Data.SqlTypes.SqlByte x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Implicit(System.Data.SqlTypes.SqlByte)~System.Data.SqlTypes.SqlInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As SqlByte) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Data.SqlTypes.SqlByte -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.op_Implicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlInt64(System::Data::SqlTypes::SqlByte x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1557,6 +1722,9 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlInt16 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Implicit(valuetype System.Data.SqlTypes.SqlInt16 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Implicit(System.Data.SqlTypes.SqlInt16)~System.Data.SqlTypes.SqlInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As SqlInt16) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Data.SqlTypes.SqlInt16 -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.op_Implicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlInt64(System::Data::SqlTypes::SqlInt16 x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1592,6 +1760,9 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlInt64 (System.Data.SqlTypes.SqlInt32 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Implicit(valuetype System.Data.SqlTypes.SqlInt32 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Implicit(System.Data.SqlTypes.SqlInt32)~System.Data.SqlTypes.SqlInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As SqlInt32) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Data.SqlTypes.SqlInt32 -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.op_Implicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlInt64(System::Data::SqlTypes::SqlInt32 x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1627,6 +1798,9 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.SqlTypes.SqlInt64 (long x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Implicit(int64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Implicit(System.Int64)~System.Data.SqlTypes.SqlInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (x As Long) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : int64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.op_Implicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::SqlTypes::SqlInt64(long x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1662,6 +1836,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator != (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_Inequality(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Inequality(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (x As SqlInt64, y As SqlInt64) As SqlBoolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="System.Data.SqlTypes.SqlInt64.op_Inequality (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator !=(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1701,6 +1878,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &lt; (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThan(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_LessThan(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (x As SqlInt64, y As SqlInt64) As SqlBoolean" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt; y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1740,6 +1920,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlBoolean operator &lt;= (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlBoolean op_LessThanOrEqual(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_LessThanOrEqual(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (x As SqlInt64, y As SqlInt64) As SqlBoolean" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlBoolean" Usage="x &lt;= y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlBoolean operator &lt;=(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1779,6 +1962,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator % (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Modulus(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Modulus(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator Mod (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member ( % ) : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="x % y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 operator %(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1818,6 +2004,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator * (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Multiply(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Multiply(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator * (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="x * y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 operator *(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1857,6 +2046,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator ~ (System.Data.SqlTypes.SqlInt64 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_OnesComplement(valuetype System.Data.SqlTypes.SqlInt64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_OnesComplement(System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator Not (x As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member op_OnesComplement : System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.op_OnesComplement x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 operator ~(System::Data::SqlTypes::SqlInt64 x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1894,6 +2086,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator - (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_Subtraction(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_Subtraction(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member ( - ) : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="x - y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 operator -(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1933,6 +2128,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 operator - (System.Data.SqlTypes.SqlInt64 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.SqlTypes.SqlInt64 op_UnaryNegation(valuetype System.Data.SqlTypes.SqlInt64 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.op_UnaryNegation(System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (x As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member ( ~- ) : System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="- x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 operator -(System::Data::SqlTypes::SqlInt64 x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -1968,6 +2166,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 Parse (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlInt64 Parse(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.Parse s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 Parse(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2003,6 +2204,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 Subtract (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlInt64 Subtract(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.Subtract(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member Subtract : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.Subtract (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 Subtract(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2040,7 +2244,12 @@
       <MemberSignature Language="C#" Value="System.Xml.Schema.XmlSchema IXmlSerializable.GetSchema ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Xml.Schema.XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.System#Xml#Serialization#IXmlSerializable#GetSchema" />
+      <MemberSignature Language="VB.NET" Value="Function GetSchema () As XmlSchema Implements IXmlSerializable.GetSchema" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Xml::Schema::XmlSchema ^ System.Xml.Serialization.IXmlSerializable.GetSchema() = System::Xml::Serialization::IXmlSerializable::GetSchema;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2068,7 +2277,12 @@
       <MemberSignature Language="C#" Value="void IXmlSerializable.ReadXml (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.ReadXml(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Sub ReadXml (reader As XmlReader) Implements IXmlSerializable.ReadXml" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.ReadXml(System::Xml::XmlReader ^ reader) = System::Xml::Serialization::IXmlSerializable::ReadXml;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2100,7 +2314,12 @@
       <MemberSignature Language="C#" Value="void IXmlSerializable.WriteXml (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.WriteXml(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Sub WriteXml (writer As XmlWriter) Implements IXmlSerializable.WriteXml" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.WriteXml(System::Xml::XmlWriter ^ writer) = System::Xml::Serialization::IXmlSerializable::WriteXml;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2132,6 +2351,9 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlTypes.SqlBoolean ToSqlBoolean ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlBoolean ToSqlBoolean() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.ToSqlBoolean" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToSqlBoolean () As SqlBoolean" />
+      <MemberSignature Language="F#" Value="member this.ToSqlBoolean : unit -&gt; System.Data.SqlTypes.SqlBoolean" Usage="sqlInt64.ToSqlBoolean " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlBoolean ToSqlBoolean();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2165,6 +2387,9 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlTypes.SqlByte ToSqlByte ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlByte ToSqlByte() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.ToSqlByte" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToSqlByte () As SqlByte" />
+      <MemberSignature Language="F#" Value="member this.ToSqlByte : unit -&gt; System.Data.SqlTypes.SqlByte" Usage="sqlInt64.ToSqlByte " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlByte ToSqlByte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2197,6 +2422,9 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlTypes.SqlDecimal ToSqlDecimal ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlDecimal ToSqlDecimal() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.ToSqlDecimal" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToSqlDecimal () As SqlDecimal" />
+      <MemberSignature Language="F#" Value="member this.ToSqlDecimal : unit -&gt; System.Data.SqlTypes.SqlDecimal" Usage="sqlInt64.ToSqlDecimal " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlDecimal ToSqlDecimal();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2229,6 +2457,9 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlTypes.SqlDouble ToSqlDouble ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlDouble ToSqlDouble() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.ToSqlDouble" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToSqlDouble () As SqlDouble" />
+      <MemberSignature Language="F#" Value="member this.ToSqlDouble : unit -&gt; System.Data.SqlTypes.SqlDouble" Usage="sqlInt64.ToSqlDouble " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlDouble ToSqlDouble();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2261,6 +2492,9 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlTypes.SqlInt16 ToSqlInt16 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlInt16 ToSqlInt16() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.ToSqlInt16" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToSqlInt16 () As SqlInt16" />
+      <MemberSignature Language="F#" Value="member this.ToSqlInt16 : unit -&gt; System.Data.SqlTypes.SqlInt16" Usage="sqlInt64.ToSqlInt16 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt16 ToSqlInt16();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2293,6 +2527,9 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlTypes.SqlInt32 ToSqlInt32 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlInt32 ToSqlInt32() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.ToSqlInt32" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToSqlInt32 () As SqlInt32" />
+      <MemberSignature Language="F#" Value="member this.ToSqlInt32 : unit -&gt; System.Data.SqlTypes.SqlInt32" Usage="sqlInt64.ToSqlInt32 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlInt32 ToSqlInt32();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2325,6 +2562,9 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlTypes.SqlMoney ToSqlMoney ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlMoney ToSqlMoney() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.ToSqlMoney" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToSqlMoney () As SqlMoney" />
+      <MemberSignature Language="F#" Value="member this.ToSqlMoney : unit -&gt; System.Data.SqlTypes.SqlMoney" Usage="sqlInt64.ToSqlMoney " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlMoney ToSqlMoney();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2357,6 +2597,9 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlTypes.SqlSingle ToSqlSingle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlSingle ToSqlSingle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.ToSqlSingle" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToSqlSingle () As SqlSingle" />
+      <MemberSignature Language="F#" Value="member this.ToSqlSingle : unit -&gt; System.Data.SqlTypes.SqlSingle" Usage="sqlInt64.ToSqlSingle " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlSingle ToSqlSingle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2389,6 +2632,9 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlTypes.SqlString ToSqlString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Data.SqlTypes.SqlString ToSqlString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.ToSqlString" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToSqlString () As SqlString" />
+      <MemberSignature Language="F#" Value="member this.ToSqlString : unit -&gt; System.Data.SqlTypes.SqlString" Usage="sqlInt64.ToSqlString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::SqlTypes::SqlString ToSqlString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2421,6 +2667,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sqlInt64.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2453,6 +2702,9 @@
       <MemberSignature Language="C#" Value="public long Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Value" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlTypes.SqlInt64.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Long" />
+      <MemberSignature Language="F#" Value="member this.Value : int64" Usage="System.Data.SqlTypes.SqlInt64.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Value { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2484,6 +2736,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.SqlTypes.SqlInt64 Xor (System.Data.SqlTypes.SqlInt64 x, System.Data.SqlTypes.SqlInt64 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.SqlTypes.SqlInt64 Xor(valuetype System.Data.SqlTypes.SqlInt64 x, valuetype System.Data.SqlTypes.SqlInt64 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.SqlInt64.Xor(System.Data.SqlTypes.SqlInt64,System.Data.SqlTypes.SqlInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Xor (x As SqlInt64, y As SqlInt64) As SqlInt64" />
+      <MemberSignature Language="F#" Value="static member Xor : System.Data.SqlTypes.SqlInt64 * System.Data.SqlTypes.SqlInt64 -&gt; System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.Xor (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::SqlTypes::SqlInt64 Xor(System::Data::SqlTypes::SqlInt64 x, System::Data::SqlTypes::SqlInt64 y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2521,6 +2776,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Data.SqlTypes.SqlInt64 Zero;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.SqlTypes.SqlInt64 Zero" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlTypes.SqlInt64.Zero" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Zero As SqlInt64 " />
+      <MemberSignature Language="F#" Value=" staticval mutable Zero : System.Data.SqlTypes.SqlInt64" Usage="System.Data.SqlTypes.SqlInt64.Zero" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::SqlTypes::SqlInt64 Zero;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -2554,41 +2812,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CompareTo">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares this instance to the supplied object and returns an indication of their relative values.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs a logical comparison of two structures to determine whether they are equal.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="op_Explicit">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts to and from a <see cref="T:System.Data.SqlTypes.SqlInt64" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="op_Implicit">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts to a <see cref="T:System.Data.SqlTypes.SqlInt64" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

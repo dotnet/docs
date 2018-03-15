@@ -1,7 +1,10 @@
-<Type Name="MetafileEditor" FullName="System.Drawing.Design.MetafileEditor">
+﻿<Type Name="MetafileEditor" FullName="System.Drawing.Design.MetafileEditor">
   <TypeSignature Language="C#" Value="public class MetafileEditor : System.Drawing.Design.ImageEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MetafileEditor extends System.Drawing.Design.ImageEditor" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.MetafileEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class MetafileEditor&#xA;Inherits ImageEditor" />
+  <TypeSignature Language="F#" Value="type MetafileEditor = class&#xA;    inherit ImageEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MetafileEditor : System::Drawing::Design::ImageEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,8 @@
       <MemberSignature Language="C#" Value="public MetafileEditor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.MetafileEditor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MetafileEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="protected override string[] GetExtensions ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string[] GetExtensions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.MetafileEditor.GetExtensions" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetExtensions () As String()" />
+      <MemberSignature Language="F#" Value="override this.GetExtensions : unit -&gt; string[]" Usage="metafileEditor.GetExtensions " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::String ^&gt; ^ GetExtensions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -62,6 +70,9 @@
       <MemberSignature Language="C#" Value="protected override string GetFileDialogDescription ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetFileDialogDescription() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.MetafileEditor.GetFileDialogDescription" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetFileDialogDescription () As String" />
+      <MemberSignature Language="F#" Value="override this.GetFileDialogDescription : unit -&gt; string" Usage="metafileEditor.GetFileDialogDescription " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetFileDialogDescription();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -83,6 +94,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Image LoadFromStream (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Drawing.Image LoadFromStream(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.MetafileEditor.LoadFromStream(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="override this.LoadFromStream : System.IO.Stream -&gt; System.Drawing.Image" Usage="metafileEditor.LoadFromStream stream" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Image ^ LoadFromStream(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="DesignerActionMethodItem" FullName="System.ComponentModel.Design.DesignerActionMethodItem">
+﻿<Type Name="DesignerActionMethodItem" FullName="System.ComponentModel.Design.DesignerActionMethodItem">
   <TypeSignature Language="C#" Value="public class DesignerActionMethodItem : System.ComponentModel.Design.DesignerActionItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerActionMethodItem extends System.ComponentModel.Design.DesignerActionItem" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionMethodItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class DesignerActionMethodItem&#xA;Inherits DesignerActionItem" />
+  <TypeSignature Language="F#" Value="type DesignerActionMethodItem = class&#xA;    inherit DesignerActionItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerActionMethodItem : System::ComponentModel::Design::DesignerActionItem" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,10 +40,22 @@
     <altmember cref="P:System.ComponentModel.Design.DesignerActionMethodItem.MemberName" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DesignerActionMethodItem (System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionMethodItem.#ctor(System.ComponentModel.Design.DesignerActionList,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (actionList As DesignerActionList, memberName As String, displayName As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionMethodItem : System.ComponentModel.Design.DesignerActionList * string * string -&gt; System.ComponentModel.Design.DesignerActionMethodItem" Usage="new System.ComponentModel.Design.DesignerActionMethodItem (actionList, memberName, displayName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionMethodItem(System::ComponentModel::Design::DesignerActionList ^ actionList, System::String ^ memberName, System::String ^ displayName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="public DesignerActionMethodItem (System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, bool includeAsDesignerVerb);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, bool includeAsDesignerVerb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionMethodItem.#ctor(System.ComponentModel.Design.DesignerActionList,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (actionList As DesignerActionList, memberName As String, displayName As String, includeAsDesignerVerb As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionMethodItem : System.ComponentModel.Design.DesignerActionList * string * string * bool -&gt; System.ComponentModel.Design.DesignerActionMethodItem" Usage="new System.ComponentModel.Design.DesignerActionMethodItem (actionList, memberName, displayName, includeAsDesignerVerb)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionMethodItem(System::ComponentModel::Design::DesignerActionList ^ actionList, System::String ^ memberName, System::String ^ displayName, bool includeAsDesignerVerb);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -109,6 +127,9 @@
       <MemberSignature Language="C#" Value="public DesignerActionMethodItem (System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionMethodItem.#ctor(System.ComponentModel.Design.DesignerActionList,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (actionList As DesignerActionList, memberName As String, displayName As String, category As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionMethodItem : System.ComponentModel.Design.DesignerActionList * string * string * string -&gt; System.ComponentModel.Design.DesignerActionMethodItem" Usage="new System.ComponentModel.Design.DesignerActionMethodItem (actionList, memberName, displayName, category)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionMethodItem(System::ComponentModel::Design::DesignerActionList ^ actionList, System::String ^ memberName, System::String ^ displayName, System::String ^ category);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -145,6 +166,9 @@
       <MemberSignature Language="C#" Value="public DesignerActionMethodItem (System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category, bool includeAsDesignerVerb);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category, bool includeAsDesignerVerb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionMethodItem.#ctor(System.ComponentModel.Design.DesignerActionList,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (actionList As DesignerActionList, memberName As String, displayName As String, category As String, includeAsDesignerVerb As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionMethodItem : System.ComponentModel.Design.DesignerActionList * string * string * string * bool -&gt; System.ComponentModel.Design.DesignerActionMethodItem" Usage="new System.ComponentModel.Design.DesignerActionMethodItem (actionList, memberName, displayName, category, includeAsDesignerVerb)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionMethodItem(System::ComponentModel::Design::DesignerActionList ^ actionList, System::String ^ memberName, System::String ^ displayName, System::String ^ category, bool includeAsDesignerVerb);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -185,6 +209,9 @@
       <MemberSignature Language="C#" Value="public DesignerActionMethodItem (System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category, string description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category, string description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionMethodItem.#ctor(System.ComponentModel.Design.DesignerActionList,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (actionList As DesignerActionList, memberName As String, displayName As String, category As String, description As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionMethodItem : System.ComponentModel.Design.DesignerActionList * string * string * string * string -&gt; System.ComponentModel.Design.DesignerActionMethodItem" Usage="new System.ComponentModel.Design.DesignerActionMethodItem (actionList, memberName, displayName, category, description)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionMethodItem(System::ComponentModel::Design::DesignerActionList ^ actionList, System::String ^ memberName, System::String ^ displayName, System::String ^ category, System::String ^ description);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -223,6 +250,9 @@
       <MemberSignature Language="C#" Value="public DesignerActionMethodItem (System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category, string description, bool includeAsDesignerVerb);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Design.DesignerActionList actionList, string memberName, string displayName, string category, string description, bool includeAsDesignerVerb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionMethodItem.#ctor(System.ComponentModel.Design.DesignerActionList,System.String,System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (actionList As DesignerActionList, memberName As String, displayName As String, category As String, description As String, includeAsDesignerVerb As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionMethodItem : System.ComponentModel.Design.DesignerActionList * string * string * string * string * bool -&gt; System.ComponentModel.Design.DesignerActionMethodItem" Usage="new System.ComponentModel.Design.DesignerActionMethodItem (actionList, memberName, displayName, category, description, includeAsDesignerVerb)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionMethodItem(System::ComponentModel::Design::DesignerActionList ^ actionList, System::String ^ memberName, System::String ^ displayName, System::String ^ category, System::String ^ description, bool includeAsDesignerVerb);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -273,6 +303,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IncludeAsDesignerVerb { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IncludeAsDesignerVerb" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IncludeAsDesignerVerb As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeAsDesignerVerb : bool" Usage="System.ComponentModel.Design.DesignerActionMethodItem.IncludeAsDesignerVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IncludeAsDesignerVerb { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -304,6 +337,9 @@
       <MemberSignature Language="C#" Value="public virtual void Invoke ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invoke() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionMethodItem.Invoke" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Invoke ()" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : unit -&gt; unit&#xA;override this.Invoke : unit -&gt; unit" Usage="designerActionMethodItem.Invoke " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Invoke();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -331,6 +367,9 @@
       <MemberSignature Language="C#" Value="public virtual string MemberName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MemberName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionMethodItem.MemberName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MemberName As String" />
+      <MemberSignature Language="F#" Value="member this.MemberName : string" Usage="System.ComponentModel.Design.DesignerActionMethodItem.MemberName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MemberName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -362,6 +401,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent RelatedComponent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent RelatedComponent" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.DesignerActionMethodItem.RelatedComponent" />
+      <MemberSignature Language="VB.NET" Value="Public Property RelatedComponent As IComponent" />
+      <MemberSignature Language="F#" Value="member this.RelatedComponent : System.ComponentModel.IComponent with get, set" Usage="System.ComponentModel.Design.DesignerActionMethodItem.RelatedComponent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IComponent ^ RelatedComponent { System::ComponentModel::IComponent ^ get(); void set(System::ComponentModel::IComponent ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -387,14 +429,5 @@
         <altmember cref="P:System.ComponentModel.Design.DesignerActionItem.AllowAssociate" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionMethodItem" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

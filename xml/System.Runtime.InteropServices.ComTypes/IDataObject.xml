@@ -1,7 +1,10 @@
-<Type Name="IDataObject" FullName="System.Runtime.InteropServices.ComTypes.IDataObject">
+﻿<Type Name="IDataObject" FullName="System.Runtime.InteropServices.ComTypes.IDataObject">
   <TypeSignature Language="C#" Value="public interface IDataObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataObject" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IDataObject" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataObject" />
+  <TypeSignature Language="F#" Value="type IDataObject = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataObject" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -21,7 +24,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("0000010e-0000-0000-C000-000000000046")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -42,6 +45,8 @@
       <MemberSignature Language="C#" Value="public int DAdvise (ref System.Runtime.InteropServices.ComTypes.FORMATETC pFormatetc, System.Runtime.InteropServices.ComTypes.ADVF advf, System.Runtime.InteropServices.ComTypes.IAdviseSink adviseSink, out int connection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 DAdvise([in]valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; pFormatetc, valuetype System.Runtime.InteropServices.ComTypes.ADVF advf, class System.Runtime.InteropServices.ComTypes.IAdviseSink adviseSink, [out] int32&amp; connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.DAdvise(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.ADVF,System.Runtime.InteropServices.ComTypes.IAdviseSink,System.Int32@)" />
+      <MemberSignature Language="F#" Value="abstract member DAdvise :  * System.Runtime.InteropServices.ComTypes.ADVF * System.Runtime.InteropServices.ComTypes.IAdviseSink *  -&gt; int" Usage="iDataObject.DAdvise (pFormatetc, advf, adviseSink, connection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int DAdvise(System::Runtime::InteropServices::ComTypes::FORMATETC % pFormatetc, System::Runtime::InteropServices::ComTypes::ADVF advf, System::Runtime::InteropServices::ComTypes::IAdviseSink ^ adviseSink, [Runtime::InteropServices::Out] int % connection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -112,6 +117,9 @@
       <MemberSignature Language="C#" Value="public void DUnadvise (int connection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DUnadvise(int32 connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.DUnadvise(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DUnadvise (connection As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member DUnadvise : int -&gt; unit" Usage="iDataObject.DUnadvise connection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DUnadvise(int connection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -149,6 +157,9 @@
       <MemberSignature Language="C#" Value="public int EnumDAdvise (out System.Runtime.InteropServices.ComTypes.IEnumSTATDATA enumAdvise);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 EnumDAdvise([out] class System.Runtime.InteropServices.ComTypes.IEnumSTATDATA&amp; enumAdvise) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.EnumDAdvise(System.Runtime.InteropServices.ComTypes.IEnumSTATDATA@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnumDAdvise (ByRef enumAdvise As IEnumSTATDATA) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member EnumDAdvise :  -&gt; int" Usage="iDataObject.EnumDAdvise enumAdvise" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EnumDAdvise([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumSTATDATA ^ % enumAdvise);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -201,6 +212,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.IEnumFORMATETC EnumFormatEtc (System.Runtime.InteropServices.ComTypes.DATADIR direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Runtime.InteropServices.ComTypes.IEnumFORMATETC EnumFormatEtc(valuetype System.Runtime.InteropServices.ComTypes.DATADIR direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.EnumFormatEtc(System.Runtime.InteropServices.ComTypes.DATADIR)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EnumFormatEtc (direction As DATADIR) As IEnumFORMATETC" />
+      <MemberSignature Language="F#" Value="abstract member EnumFormatEtc : System.Runtime.InteropServices.ComTypes.DATADIR -&gt; System.Runtime.InteropServices.ComTypes.IEnumFORMATETC" Usage="iDataObject.EnumFormatEtc direction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::InteropServices::ComTypes::IEnumFORMATETC ^ EnumFormatEtc(System::Runtime::InteropServices::ComTypes::DATADIR direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -257,6 +271,9 @@
       <MemberSignature Language="C#" Value="public int GetCanonicalFormatEtc (ref System.Runtime.InteropServices.ComTypes.FORMATETC formatIn, out System.Runtime.InteropServices.ComTypes.FORMATETC formatOut);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetCanonicalFormatEtc([in]valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; formatIn, [out] valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; formatOut) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetCanonicalFormatEtc(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.FORMATETC@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCanonicalFormatEtc (ByRef formatIn As FORMATETC, ByRef formatOut As FORMATETC) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetCanonicalFormatEtc :  *  -&gt; int" Usage="iDataObject.GetCanonicalFormatEtc (formatIn, formatOut)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetCanonicalFormatEtc(System::Runtime::InteropServices::ComTypes::FORMATETC % formatIn, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::FORMATETC % formatOut);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -323,6 +340,9 @@
       <MemberSignature Language="C#" Value="public void GetData (ref System.Runtime.InteropServices.ComTypes.FORMATETC format, out System.Runtime.InteropServices.ComTypes.STGMEDIUM medium);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetData([in]valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; format, [out] valuetype System.Runtime.InteropServices.ComTypes.STGMEDIUM&amp; medium) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetData (ByRef format As FORMATETC, ByRef medium As STGMEDIUM)" />
+      <MemberSignature Language="F#" Value="abstract member GetData :  *  -&gt; unit" Usage="iDataObject.GetData (format, medium)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetData(System::Runtime::InteropServices::ComTypes::FORMATETC % format, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::STGMEDIUM % medium);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -362,6 +382,9 @@
       <MemberSignature Language="C#" Value="public void GetDataHere (ref System.Runtime.InteropServices.ComTypes.FORMATETC format, ref System.Runtime.InteropServices.ComTypes.STGMEDIUM medium);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDataHere([in]valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; format, valuetype System.Runtime.InteropServices.ComTypes.STGMEDIUM&amp; medium) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetDataHere(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetDataHere (ByRef format As FORMATETC, ByRef medium As STGMEDIUM)" />
+      <MemberSignature Language="F#" Value="abstract member GetDataHere :  *  -&gt; unit" Usage="iDataObject.GetDataHere (format, medium)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDataHere(System::Runtime::InteropServices::ComTypes::FORMATETC % format, System::Runtime::InteropServices::ComTypes::STGMEDIUM % medium);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -401,6 +424,9 @@
       <MemberSignature Language="C#" Value="public int QueryGetData (ref System.Runtime.InteropServices.ComTypes.FORMATETC format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 QueryGetData([in]valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.QueryGetData(System.Runtime.InteropServices.ComTypes.FORMATETC@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function QueryGetData (ByRef format As FORMATETC) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member QueryGetData :  -&gt; int" Usage="iDataObject.QueryGetData format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int QueryGetData(System::Runtime::InteropServices::ComTypes::FORMATETC % format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -469,6 +495,9 @@
       <MemberSignature Language="C#" Value="public void SetData (ref System.Runtime.InteropServices.ComTypes.FORMATETC formatIn, ref System.Runtime.InteropServices.ComTypes.STGMEDIUM medium, bool release);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetData([in]valuetype System.Runtime.InteropServices.ComTypes.FORMATETC&amp; formatIn, [in]valuetype System.Runtime.InteropServices.ComTypes.STGMEDIUM&amp; medium, bool release) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IDataObject.SetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetData (ByRef formatIn As FORMATETC, ByRef medium As STGMEDIUM, release As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member SetData :  *  * bool -&gt; unit" Usage="iDataObject.SetData (formatIn, medium, release)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(System::Runtime::InteropServices::ComTypes::FORMATETC % formatIn, System::Runtime::InteropServices::ComTypes::STGMEDIUM % medium, bool release);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

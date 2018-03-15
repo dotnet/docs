@@ -1,7 +1,10 @@
-<Type Name="DefaultSettingValueAttribute" FullName="System.Configuration.DefaultSettingValueAttribute">
+﻿<Type Name="DefaultSettingValueAttribute" FullName="System.Configuration.DefaultSettingValueAttribute">
   <TypeSignature Language="C#" Value="public sealed class DefaultSettingValueAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DefaultSettingValueAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.DefaultSettingValueAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DefaultSettingValueAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type DefaultSettingValueAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DefaultSettingValueAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +61,9 @@
       <MemberSignature Language="C#" Value="public DefaultSettingValueAttribute (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.DefaultSettingValueAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.DefaultSettingValueAttribute : string -&gt; System.Configuration.DefaultSettingValueAttribute" Usage="new System.Configuration.DefaultSettingValueAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultSettingValueAttribute(System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -92,6 +98,9 @@
       <MemberSignature Language="C#" Value="public string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.DefaultSettingValueAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Configuration.DefaultSettingValueAttribute.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

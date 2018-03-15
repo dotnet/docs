@@ -1,7 +1,10 @@
-<Type Name="FUNCKIND" FullName="System.Runtime.InteropServices.ComTypes.FUNCKIND">
+﻿<Type Name="FUNCKIND" FullName="System.Runtime.InteropServices.ComTypes.FUNCKIND">
   <TypeSignature Language="C#" Value="public enum FUNCKIND" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FUNCKIND extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.FUNCKIND" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FUNCKIND" />
+  <TypeSignature Language="F#" Value="type FUNCKIND = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FUNCKIND" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="FUNC_DISPATCH" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.FUNCKIND FUNC_DISPATCH = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_DISPATCH" />
+      <MemberSignature Language="VB.NET" Value="FUNC_DISPATCH" />
+      <MemberSignature Language="F#" Value="FUNC_DISPATCH = 4" Usage="System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_DISPATCH" />
+      <MemberSignature Language="C++ CLI" Value="FUNC_DISPATCH" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -63,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.FUNCKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The function can be accessed only through <see langword="IDispatch" />.</summary>
       </Docs>
@@ -71,6 +78,9 @@
       <MemberSignature Language="C#" Value="FUNC_NONVIRTUAL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.FUNCKIND FUNC_NONVIRTUAL = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_NONVIRTUAL" />
+      <MemberSignature Language="VB.NET" Value="FUNC_NONVIRTUAL" />
+      <MemberSignature Language="F#" Value="FUNC_NONVIRTUAL = 2" Usage="System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_NONVIRTUAL" />
+      <MemberSignature Language="C++ CLI" Value="FUNC_NONVIRTUAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -93,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.FUNCKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The function is accessed by <see langword="static" /> address and takes an implicit <see langword="this" /> pointer.</summary>
       </Docs>
@@ -101,6 +112,9 @@
       <MemberSignature Language="C#" Value="FUNC_PUREVIRTUAL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.FUNCKIND FUNC_PUREVIRTUAL = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_PUREVIRTUAL" />
+      <MemberSignature Language="VB.NET" Value="FUNC_PUREVIRTUAL" />
+      <MemberSignature Language="F#" Value="FUNC_PUREVIRTUAL = 1" Usage="System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_PUREVIRTUAL" />
+      <MemberSignature Language="C++ CLI" Value="FUNC_PUREVIRTUAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -123,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.FUNCKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The function is accessed through the virtual function table (VTBL), and takes an implicit <see langword="this" /> pointer.</summary>
       </Docs>
@@ -131,6 +146,9 @@
       <MemberSignature Language="C#" Value="FUNC_STATIC" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.FUNCKIND FUNC_STATIC = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_STATIC" />
+      <MemberSignature Language="VB.NET" Value="FUNC_STATIC" />
+      <MemberSignature Language="F#" Value="FUNC_STATIC = 3" Usage="System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_STATIC" />
+      <MemberSignature Language="C++ CLI" Value="FUNC_STATIC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -153,6 +171,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.FUNCKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The function is accessed by <see langword="static" /> address and does not take an implicit <see langword="this" /> pointer.</summary>
       </Docs>
@@ -161,6 +180,9 @@
       <MemberSignature Language="C#" Value="FUNC_VIRTUAL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.FUNCKIND FUNC_VIRTUAL = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_VIRTUAL" />
+      <MemberSignature Language="VB.NET" Value="FUNC_VIRTUAL" />
+      <MemberSignature Language="F#" Value="FUNC_VIRTUAL = 0" Usage="System.Runtime.InteropServices.ComTypes.FUNCKIND.FUNC_VIRTUAL" />
+      <MemberSignature Language="C++ CLI" Value="FUNC_VIRTUAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -183,6 +205,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.FUNCKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The function is accessed in the same way as <see cref="F:System.Runtime.InteropServices.FUNCKIND.FUNC_PUREVIRTUAL" />, except the function has an implementation.</summary>
       </Docs>

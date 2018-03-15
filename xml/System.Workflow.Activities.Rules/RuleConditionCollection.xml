@@ -1,7 +1,10 @@
-<Type Name="RuleConditionCollection" FullName="System.Workflow.Activities.Rules.RuleConditionCollection">
+﻿<Type Name="RuleConditionCollection" FullName="System.Workflow.Activities.Rules.RuleConditionCollection">
   <TypeSignature Language="C#" Value="public sealed class RuleConditionCollection : System.Collections.ObjectModel.KeyedCollection&lt;string,System.Workflow.Activities.Rules.RuleCondition&gt;, System.Workflow.ComponentModel.IWorkflowChangeDiff" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit RuleConditionCollection extends System.Collections.ObjectModel.KeyedCollection`2&lt;string, class System.Workflow.Activities.Rules.RuleCondition&gt; implements class System.Workflow.ComponentModel.IWorkflowChangeDiff" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleConditionCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RuleConditionCollection&#xA;Inherits KeyedCollection(Of String, RuleCondition)&#xA;Implements IWorkflowChangeDiff" />
+  <TypeSignature Language="F#" Value="type RuleConditionCollection = class&#xA;    inherit KeyedCollection&lt;string, RuleCondition&gt;&#xA;    interface IWorkflowChangeDiff" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleConditionCollection sealed : System::Collections::ObjectModel::KeyedCollection&lt;System::String ^, System::Workflow::Activities::Rules::RuleCondition ^&gt;, System::Workflow::ComponentModel::IWorkflowChangeDiff" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,8 @@
       <MemberSignature Language="C#" Value="public RuleConditionCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleConditionCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -52,6 +57,9 @@
       <MemberSignature Language="C#" Value="public void Add (System.Workflow.Activities.Rules.RuleCondition item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Workflow.Activities.Rules.RuleCondition item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.Add(System.Workflow.Activities.Rules.RuleCondition)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (item As RuleCondition)" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Workflow.Activities.Rules.RuleCondition -&gt; unit" Usage="ruleConditionCollection.Add item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Workflow::Activities::Rules::RuleCondition ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -76,7 +84,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt; Diff (object originalDefinition, object changedDefinition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Workflow.ComponentModel.WorkflowChangeAction&gt; Diff(object originalDefinition, object changedDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.Diff(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Diff (originalDefinition As Object, changedDefinition As Object) As IList(Of WorkflowChangeAction)" />
+      <MemberSignature Language="F#" Value="abstract member Diff : obj * obj -&gt; System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt;&#xA;override this.Diff : obj * obj -&gt; System.Collections.Generic.IList&lt;System.Workflow.ComponentModel.WorkflowChangeAction&gt;" Usage="ruleConditionCollection.Diff (originalDefinition, changedDefinition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IList&lt;System::Workflow::ComponentModel::WorkflowChangeAction ^&gt; ^ Diff(System::Object ^ originalDefinition, System::Object ^ changedDefinition);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.IWorkflowChangeDiff.Diff(System.Object,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +114,9 @@
       <MemberSignature Language="C#" Value="protected override string GetKeyForItem (System.Workflow.Activities.Rules.RuleCondition item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetKeyForItem(class System.Workflow.Activities.Rules.RuleCondition item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.GetKeyForItem(System.Workflow.Activities.Rules.RuleCondition)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (item As RuleCondition) As String" />
+      <MemberSignature Language="F#" Value="override this.GetKeyForItem : System.Workflow.Activities.Rules.RuleCondition -&gt; string" Usage="ruleConditionCollection.GetKeyForItem item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKeyForItem(System::Workflow::Activities::Rules::RuleCondition ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -122,6 +139,9 @@
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Workflow.Activities.Rules.RuleCondition item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Workflow.Activities.Rules.RuleCondition item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.InsertItem(System.Int32,System.Workflow.Activities.Rules.RuleCondition)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As RuleCondition)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Workflow.Activities.Rules.RuleCondition -&gt; unit" Usage="ruleConditionCollection.InsertItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Workflow::Activities::Rules::RuleCondition ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -145,6 +165,9 @@
       <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.RemoveItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="ruleConditionCollection.RemoveItem index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -166,6 +189,9 @@
       <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Workflow.Activities.Rules.RuleCondition item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Workflow.Activities.Rules.RuleCondition item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleConditionCollection.SetItem(System.Int32,System.Workflow.Activities.Rules.RuleCondition)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As RuleCondition)" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Workflow.Activities.Rules.RuleCondition -&gt; unit" Usage="ruleConditionCollection.SetItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Workflow::Activities::Rules::RuleCondition ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

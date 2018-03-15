@@ -1,7 +1,10 @@
-<Type Name="BuildProviderAppliesTo" FullName="System.Web.Compilation.BuildProviderAppliesTo">
+﻿<Type Name="BuildProviderAppliesTo" FullName="System.Web.Compilation.BuildProviderAppliesTo">
   <TypeSignature Language="C#" Value="public enum BuildProviderAppliesTo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildProviderAppliesTo extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildProviderAppliesTo" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BuildProviderAppliesTo" />
+  <TypeSignature Language="F#" Value="type BuildProviderAppliesTo = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class BuildProviderAppliesTo" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Compilation.BuildProviderAppliesTo All = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.BuildProviderAppliesTo.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="F#" Value="All = 7" Usage="System.Web.Compilation.BuildProviderAppliesTo.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -40,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Compilation.BuildProviderAppliesTo</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Specifies that the build provider generates code for resources wherever the resources are found. This is the default value for the <see cref="T:System.Web.Compilation.BuildProviderAppliesToAttribute" /> attribute.</summary>
       </Docs>
@@ -48,6 +55,9 @@
       <MemberSignature Language="C#" Value="Code" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Compilation.BuildProviderAppliesTo Code = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.BuildProviderAppliesTo.Code" />
+      <MemberSignature Language="VB.NET" Value="Code" />
+      <MemberSignature Language="F#" Value="Code = 2" Usage="System.Web.Compilation.BuildProviderAppliesTo.Code" />
+      <MemberSignature Language="C++ CLI" Value="Code" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Compilation.BuildProviderAppliesTo</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the build provider generates code for only those resources in the \App_Code directory.</summary>
       </Docs>
@@ -64,6 +75,9 @@
       <MemberSignature Language="C#" Value="Resources" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Compilation.BuildProviderAppliesTo Resources = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.BuildProviderAppliesTo.Resources" />
+      <MemberSignature Language="VB.NET" Value="Resources" />
+      <MemberSignature Language="F#" Value="Resources = 4" Usage="System.Web.Compilation.BuildProviderAppliesTo.Resources" />
+      <MemberSignature Language="C++ CLI" Value="Resources" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Compilation.BuildProviderAppliesTo</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that the build provider generates code for resources in the \App_GlobalResources and \App_LocalResources directories.</summary>
       </Docs>
@@ -80,6 +95,9 @@
       <MemberSignature Language="C#" Value="Web" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Compilation.BuildProviderAppliesTo Web = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.BuildProviderAppliesTo.Web" />
+      <MemberSignature Language="VB.NET" Value="Web" />
+      <MemberSignature Language="F#" Value="Web = 1" Usage="System.Web.Compilation.BuildProviderAppliesTo.Web" />
+      <MemberSignature Language="C++ CLI" Value="Web" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Compilation.BuildProviderAppliesTo</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the build provider generates code for only those resources in Web content directories, which are directories other than the reserved ASP.NET directories \App_Code, \App_GlobalResources, and \App_LocalResources.</summary>
       </Docs>

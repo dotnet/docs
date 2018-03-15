@@ -1,7 +1,10 @@
-<Type Name="SafeHandle" FullName="System.Runtime.InteropServices.SafeHandle">
+﻿<Type Name="SafeHandle" FullName="System.Runtime.InteropServices.SafeHandle">
   <TypeSignature Language="C#" Value="public abstract class SafeHandle : System.Runtime.ConstrainedExecution.CriticalFinalizerObject, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi abstract beforefieldinit SafeHandle extends System.Runtime.ConstrainedExecution.CriticalFinalizerObject implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.SafeHandle" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SafeHandle&#xA;Inherits CriticalFinalizerObject&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type SafeHandle = class&#xA;    inherit CriticalFinalizerObject&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SafeHandle abstract : System::Runtime::ConstrainedExecution::CriticalFinalizerObject, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Handles</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -123,6 +126,8 @@
       <MemberSignature Language="C#" Value="protected SafeHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeHandle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SafeHandle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,6 +143,9 @@
       <MemberSignature Language="C#" Value="protected SafeHandle (IntPtr invalidHandleValue, bool ownsHandle);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(native int invalidHandleValue, bool ownsHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeHandle.#ctor(System.IntPtr,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (invalidHandleValue As IntPtr, ownsHandle As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.SafeHandle : nativeint * bool -&gt; System.Runtime.InteropServices.SafeHandle" Usage="new System.Runtime.InteropServices.SafeHandle (invalidHandleValue, ownsHandle)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SafeHandle(IntPtr invalidHandleValue, bool ownsHandle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -192,6 +200,9 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeHandle.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="safeHandle.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -240,6 +251,9 @@
       <MemberSignature Language="C#" Value="public void DangerousAddRef (ref bool success);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DangerousAddRef(bool&amp; success) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DangerousAddRef (ByRef success As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.DangerousAddRef :  -&gt; unit" Usage="safeHandle.DangerousAddRef success" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DangerousAddRef(bool % success);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -297,6 +311,9 @@
       <MemberSignature Language="C#" Value="public IntPtr DangerousGetHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance native int DangerousGetHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeHandle.DangerousGetHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Function DangerousGetHandle () As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.DangerousGetHandle : unit -&gt; nativeint" Usage="safeHandle.DangerousGetHandle " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr DangerousGetHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -350,6 +367,9 @@
       <MemberSignature Language="C#" Value="public void DangerousRelease ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DangerousRelease() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeHandle.DangerousRelease" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DangerousRelease ()" />
+      <MemberSignature Language="F#" Value="member this.DangerousRelease : unit -&gt; unit" Usage="safeHandle.DangerousRelease " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DangerousRelease();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -399,11 +419,26 @@
         <altmember cref="M:System.Runtime.InteropServices.SafeHandle.DangerousAddRef(System.Boolean@)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Handles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Runtime.InteropServices.SafeHandle" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeHandle.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="safeHandle.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -460,6 +495,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeHandle.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="safeHandle.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -516,6 +554,9 @@
       <MemberSignature Language="C#" Value="~SafeHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeHandle.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="safeHandle.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!SafeHandle ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -566,6 +607,9 @@
       <MemberSignature Language="C#" Value="protected IntPtr handle;" />
       <MemberSignature Language="ILAsm" Value=".field family native int handle" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.SafeHandle.handle" />
+      <MemberSignature Language="VB.NET" Value="Protected handle As IntPtr " />
+      <MemberSignature Language="F#" Value="val mutable handle : nativeint" Usage="System.Runtime.InteropServices.SafeHandle.handle" />
+      <MemberSignature Language="C++ CLI" Value="protected: IntPtr handle;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -608,6 +652,9 @@
       <MemberSignature Language="C#" Value="public bool IsClosed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsClosed" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.SafeHandle.IsClosed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsClosed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsClosed : bool" Usage="System.Runtime.InteropServices.SafeHandle.IsClosed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsClosed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -662,6 +709,9 @@
       <MemberSignature Language="C#" Value="public abstract bool IsInvalid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInvalid" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.SafeHandle.IsInvalid" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsInvalid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInvalid : bool" Usage="System.Runtime.InteropServices.SafeHandle.IsInvalid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsInvalid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -721,6 +771,9 @@
       <MemberSignature Language="C#" Value="protected abstract bool ReleaseHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ReleaseHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeHandle.ReleaseHandle" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ReleaseHandle () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseHandle : unit -&gt; bool" Usage="safeHandle.ReleaseHandle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool ReleaseHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -785,6 +838,9 @@
       <MemberSignature Language="C#" Value="protected void SetHandle (IntPtr handle);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetHandle(native int handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeHandle.SetHandle(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetHandle (handle As IntPtr)" />
+      <MemberSignature Language="F#" Value="member this.SetHandle : nativeint -&gt; unit" Usage="safeHandle.SetHandle handle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetHandle(IntPtr handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -837,6 +893,9 @@
       <MemberSignature Language="C#" Value="public void SetHandleAsInvalid ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetHandleAsInvalid() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.SafeHandle.SetHandleAsInvalid" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetHandleAsInvalid ()" />
+      <MemberSignature Language="F#" Value="member this.SetHandleAsInvalid : unit -&gt; unit" Usage="safeHandle.SetHandleAsInvalid " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetHandleAsInvalid();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -884,14 +943,5 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for permission to call unmanaged code. Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Handles</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Runtime.InteropServices.SafeHandle" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

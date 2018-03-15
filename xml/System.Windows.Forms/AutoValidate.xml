@@ -1,7 +1,10 @@
-<Type Name="AutoValidate" FullName="System.Windows.Forms.AutoValidate">
+﻿<Type Name="AutoValidate" FullName="System.Windows.Forms.AutoValidate">
   <TypeSignature Language="C#" Value="public enum AutoValidate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutoValidate extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AutoValidate" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AutoValidate" />
+  <TypeSignature Language="F#" Value="type AutoValidate = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AutoValidate" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="Disable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoValidate Disable = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoValidate.Disable" />
+      <MemberSignature Language="VB.NET" Value="Disable" />
+      <MemberSignature Language="F#" Value="Disable = 0" Usage="System.Windows.Forms.AutoValidate.Disable" />
+      <MemberSignature Language="C++ CLI" Value="Disable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -45,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Implicit validation will not occur. Setting this value will not interfere with explicit calls to <see cref="M:System.Windows.Forms.ContainerControl.Validate" /> or <see cref="M:System.Windows.Forms.ContainerControl.ValidateChildren" />.</summary>
       </Docs>
@@ -53,6 +60,9 @@
       <MemberSignature Language="C#" Value="EnableAllowFocusChange" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoValidate EnableAllowFocusChange = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoValidate.EnableAllowFocusChange" />
+      <MemberSignature Language="VB.NET" Value="EnableAllowFocusChange" />
+      <MemberSignature Language="F#" Value="EnableAllowFocusChange = 2" Usage="System.Windows.Forms.AutoValidate.EnableAllowFocusChange" />
+      <MemberSignature Language="C++ CLI" Value="EnableAllowFocusChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Implicit validation occurs, but if validation fails, focus will still change to the new control. If validation fails, the <see cref="E:System.Windows.Forms.Control.Validated" /> event will not fire.</summary>
       </Docs>
@@ -69,6 +80,9 @@
       <MemberSignature Language="C#" Value="EnablePreventFocusChange" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoValidate EnablePreventFocusChange = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoValidate.EnablePreventFocusChange" />
+      <MemberSignature Language="VB.NET" Value="EnablePreventFocusChange" />
+      <MemberSignature Language="F#" Value="EnablePreventFocusChange = 1" Usage="System.Windows.Forms.AutoValidate.EnablePreventFocusChange" />
+      <MemberSignature Language="C++ CLI" Value="EnablePreventFocusChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Implicit validation occurs when the control loses focus.</summary>
       </Docs>
@@ -85,6 +100,9 @@
       <MemberSignature Language="C#" Value="Inherit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AutoValidate Inherit = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AutoValidate.Inherit" />
+      <MemberSignature Language="VB.NET" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = -1" Usage="System.Windows.Forms.AutoValidate.Inherit" />
+      <MemberSignature Language="C++ CLI" Value="Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -93,6 +111,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>The control inherits its <see cref="T:System.Windows.Forms.AutoValidate" /> behavior from its container (such as a form or another control). If there is no container control, it defaults to <see cref="F:System.Windows.Forms.AutoValidate.EnablePreventFocusChange" />.</summary>
       </Docs>

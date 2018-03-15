@@ -1,7 +1,10 @@
-<Type Name="ActiveDesignSurfaceChangedEventHandler" FullName="System.ComponentModel.Design.ActiveDesignSurfaceChangedEventHandler">
+﻿<Type Name="ActiveDesignSurfaceChangedEventHandler" FullName="System.ComponentModel.Design.ActiveDesignSurfaceChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ActiveDesignSurfaceChangedEventHandler(object sender, ActiveDesignSurfaceChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ActiveDesignSurfaceChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ActiveDesignSurfaceChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ActiveDesignSurfaceChangedEventHandler(sender As Object, e As ActiveDesignSurfaceChangedEventArgs)" />
+  <TypeSignature Language="F#" Value="type ActiveDesignSurfaceChangedEventHandler = delegate of obj * ActiveDesignSurfaceChangedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ActiveDesignSurfaceChangedEventHandler(System::Object ^ sender, ActiveDesignSurfaceChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="TypeAttributes" FullName="System.Reflection.TypeAttributes">
+﻿<Type Name="TypeAttributes" FullName="System.Reflection.TypeAttributes">
   <TypeSignature Language="C#" Value="public enum TypeAttributes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TypeAttributes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.TypeAttributes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TypeAttributes" />
+  <TypeSignature Language="F#" Value="type TypeAttributes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TypeAttributes" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +67,9 @@
       <MemberSignature Language="C#" Value="Abstract" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes Abstract = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.Abstract" />
+      <MemberSignature Language="VB.NET" Value="Abstract" />
+      <MemberSignature Language="F#" Value="Abstract = 128" Usage="System.Reflection.TypeAttributes.Abstract" />
+      <MemberSignature Language="C++ CLI" Value="Abstract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -85,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>Specifies that the type is abstract.</summary>
       </Docs>
@@ -93,6 +100,9 @@
       <MemberSignature Language="C#" Value="AnsiClass" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes AnsiClass = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.AnsiClass" />
+      <MemberSignature Language="VB.NET" Value="AnsiClass" />
+      <MemberSignature Language="F#" Value="AnsiClass = 0" Usage="System.Reflection.TypeAttributes.AnsiClass" />
+      <MemberSignature Language="C++ CLI" Value="AnsiClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -114,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>LPTSTR is interpreted as ANSI.</summary>
       </Docs>
@@ -122,6 +133,9 @@
       <MemberSignature Language="C#" Value="AutoClass" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes AutoClass = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.AutoClass" />
+      <MemberSignature Language="VB.NET" Value="AutoClass" />
+      <MemberSignature Language="F#" Value="AutoClass = 131072" Usage="System.Reflection.TypeAttributes.AutoClass" />
+      <MemberSignature Language="C++ CLI" Value="AutoClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -143,6 +157,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>LPTSTR is interpreted automatically.</summary>
       </Docs>
@@ -151,6 +166,9 @@
       <MemberSignature Language="C#" Value="AutoLayout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes AutoLayout = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.AutoLayout" />
+      <MemberSignature Language="VB.NET" Value="AutoLayout" />
+      <MemberSignature Language="F#" Value="AutoLayout = 0" Usage="System.Reflection.TypeAttributes.AutoLayout" />
+      <MemberSignature Language="C++ CLI" Value="AutoLayout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -172,6 +190,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that class fields are automatically laid out by the common language runtime.</summary>
       </Docs>
@@ -180,6 +199,9 @@
       <MemberSignature Language="C#" Value="BeforeFieldInit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes BeforeFieldInit = int32(1048576)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.BeforeFieldInit" />
+      <MemberSignature Language="VB.NET" Value="BeforeFieldInit" />
+      <MemberSignature Language="F#" Value="BeforeFieldInit = 1048576" Usage="System.Reflection.TypeAttributes.BeforeFieldInit" />
+      <MemberSignature Language="C++ CLI" Value="BeforeFieldInit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -201,6 +223,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>1048576</MemberValue>
       <Docs>
         <summary>Specifies that calling static methods of the type does not force the system to initialize the type.</summary>
       </Docs>
@@ -209,6 +232,9 @@
       <MemberSignature Language="C#" Value="Class" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes Class = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.Class" />
+      <MemberSignature Language="VB.NET" Value="Class" />
+      <MemberSignature Language="F#" Value="Class = 0" Usage="System.Reflection.TypeAttributes.Class" />
+      <MemberSignature Language="C++ CLI" Value="Class" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -230,6 +256,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the type is a class.</summary>
       </Docs>
@@ -238,6 +265,9 @@
       <MemberSignature Language="C#" Value="ClassSemanticsMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes ClassSemanticsMask = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.ClassSemanticsMask" />
+      <MemberSignature Language="VB.NET" Value="ClassSemanticsMask" />
+      <MemberSignature Language="F#" Value="ClassSemanticsMask = 32" Usage="System.Reflection.TypeAttributes.ClassSemanticsMask" />
+      <MemberSignature Language="C++ CLI" Value="ClassSemanticsMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -259,6 +289,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Specifies class semantics information; the current class is contextful (else agile).</summary>
       </Docs>
@@ -267,6 +298,9 @@
       <MemberSignature Language="C#" Value="CustomFormatClass" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes CustomFormatClass = int32(196608)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.CustomFormatClass" />
+      <MemberSignature Language="VB.NET" Value="CustomFormatClass" />
+      <MemberSignature Language="F#" Value="CustomFormatClass = 196608" Usage="System.Reflection.TypeAttributes.CustomFormatClass" />
+      <MemberSignature Language="C++ CLI" Value="CustomFormatClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -288,6 +322,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>196608</MemberValue>
       <Docs>
         <summary>LPSTR is interpreted by some implementation-specific means, which includes the possibility of throwing a <see cref="T:System.NotSupportedException" />. Not used in the Microsoft implementation of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].</summary>
       </Docs>
@@ -296,6 +331,9 @@
       <MemberSignature Language="C#" Value="CustomFormatMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes CustomFormatMask = int32(12582912)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.CustomFormatMask" />
+      <MemberSignature Language="VB.NET" Value="CustomFormatMask" />
+      <MemberSignature Language="F#" Value="CustomFormatMask = 12582912" Usage="System.Reflection.TypeAttributes.CustomFormatMask" />
+      <MemberSignature Language="C++ CLI" Value="CustomFormatMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -317,6 +355,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>12582912</MemberValue>
       <Docs>
         <summary>Used to retrieve non-standard encoding information for native interop. The meaning of the values of these 2 bits is unspecified. Not used in the Microsoft implementation of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].</summary>
       </Docs>
@@ -325,6 +364,9 @@
       <MemberSignature Language="C#" Value="ExplicitLayout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes ExplicitLayout = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.ExplicitLayout" />
+      <MemberSignature Language="VB.NET" Value="ExplicitLayout" />
+      <MemberSignature Language="F#" Value="ExplicitLayout = 16" Usage="System.Reflection.TypeAttributes.ExplicitLayout" />
+      <MemberSignature Language="C++ CLI" Value="ExplicitLayout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -346,6 +388,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Specifies that class fields are laid out at the specified offsets.</summary>
       </Docs>
@@ -354,6 +397,9 @@
       <MemberSignature Language="C#" Value="HasSecurity" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes HasSecurity = int32(262144)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.HasSecurity" />
+      <MemberSignature Language="VB.NET" Value="HasSecurity" />
+      <MemberSignature Language="F#" Value="HasSecurity = 262144" Usage="System.Reflection.TypeAttributes.HasSecurity" />
+      <MemberSignature Language="C++ CLI" Value="HasSecurity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -375,6 +421,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>262144</MemberValue>
       <Docs>
         <summary>Type has security associate with it.</summary>
       </Docs>
@@ -383,6 +430,9 @@
       <MemberSignature Language="C#" Value="Import" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes Import = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.Import" />
+      <MemberSignature Language="VB.NET" Value="Import" />
+      <MemberSignature Language="F#" Value="Import = 4096" Usage="System.Reflection.TypeAttributes.Import" />
+      <MemberSignature Language="C++ CLI" Value="Import" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -404,6 +454,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>Specifies that the class or interface is imported from another module.</summary>
       </Docs>
@@ -412,6 +463,9 @@
       <MemberSignature Language="C#" Value="Interface" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes Interface = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.Interface" />
+      <MemberSignature Language="VB.NET" Value="Interface" />
+      <MemberSignature Language="F#" Value="Interface = 32" Usage="System.Reflection.TypeAttributes.Interface" />
+      <MemberSignature Language="C++ CLI" Value="Interface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -433,6 +487,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Specifies that the type is an interface.</summary>
       </Docs>
@@ -441,6 +496,9 @@
       <MemberSignature Language="C#" Value="LayoutMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes LayoutMask = int32(24)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.LayoutMask" />
+      <MemberSignature Language="VB.NET" Value="LayoutMask" />
+      <MemberSignature Language="F#" Value="LayoutMask = 24" Usage="System.Reflection.TypeAttributes.LayoutMask" />
+      <MemberSignature Language="C++ CLI" Value="LayoutMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -462,6 +520,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>Specifies class layout information.</summary>
       </Docs>
@@ -470,6 +529,9 @@
       <MemberSignature Language="C#" Value="NestedAssembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes NestedAssembly = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.NestedAssembly" />
+      <MemberSignature Language="VB.NET" Value="NestedAssembly" />
+      <MemberSignature Language="F#" Value="NestedAssembly = 5" Usage="System.Reflection.TypeAttributes.NestedAssembly" />
+      <MemberSignature Language="C++ CLI" Value="NestedAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -491,6 +553,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Specifies that the class is nested with assembly visibility, and is thus accessible only by methods within its assembly.</summary>
       </Docs>
@@ -499,6 +562,9 @@
       <MemberSignature Language="C#" Value="NestedFamANDAssem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes NestedFamANDAssem = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.NestedFamANDAssem" />
+      <MemberSignature Language="VB.NET" Value="NestedFamANDAssem" />
+      <MemberSignature Language="F#" Value="NestedFamANDAssem = 6" Usage="System.Reflection.TypeAttributes.NestedFamANDAssem" />
+      <MemberSignature Language="C++ CLI" Value="NestedFamANDAssem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -520,6 +586,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Specifies that the class is nested with assembly and family visibility, and is thus accessible only by methods lying in the intersection of its family and assembly.</summary>
       </Docs>
@@ -528,6 +595,9 @@
       <MemberSignature Language="C#" Value="NestedFamily" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes NestedFamily = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.NestedFamily" />
+      <MemberSignature Language="VB.NET" Value="NestedFamily" />
+      <MemberSignature Language="F#" Value="NestedFamily = 4" Usage="System.Reflection.TypeAttributes.NestedFamily" />
+      <MemberSignature Language="C++ CLI" Value="NestedFamily" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -549,6 +619,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that the class is nested with family visibility, and is thus accessible only by methods within its own type and any derived types.</summary>
       </Docs>
@@ -557,6 +628,9 @@
       <MemberSignature Language="C#" Value="NestedFamORAssem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes NestedFamORAssem = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.NestedFamORAssem" />
+      <MemberSignature Language="VB.NET" Value="NestedFamORAssem" />
+      <MemberSignature Language="F#" Value="NestedFamORAssem = 7" Usage="System.Reflection.TypeAttributes.NestedFamORAssem" />
+      <MemberSignature Language="C++ CLI" Value="NestedFamORAssem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -578,6 +652,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Specifies that the class is nested with family or assembly visibility, and is thus accessible only by methods lying in the union of its family and assembly.</summary>
       </Docs>
@@ -586,6 +661,9 @@
       <MemberSignature Language="C#" Value="NestedPrivate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes NestedPrivate = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.NestedPrivate" />
+      <MemberSignature Language="VB.NET" Value="NestedPrivate" />
+      <MemberSignature Language="F#" Value="NestedPrivate = 3" Usage="System.Reflection.TypeAttributes.NestedPrivate" />
+      <MemberSignature Language="C++ CLI" Value="NestedPrivate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -607,6 +685,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies that the class is nested with private visibility.</summary>
       </Docs>
@@ -615,6 +694,9 @@
       <MemberSignature Language="C#" Value="NestedPublic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes NestedPublic = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.NestedPublic" />
+      <MemberSignature Language="VB.NET" Value="NestedPublic" />
+      <MemberSignature Language="F#" Value="NestedPublic = 2" Usage="System.Reflection.TypeAttributes.NestedPublic" />
+      <MemberSignature Language="C++ CLI" Value="NestedPublic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -636,6 +718,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the class is nested with public visibility.</summary>
       </Docs>
@@ -644,6 +727,9 @@
       <MemberSignature Language="C#" Value="NotPublic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes NotPublic = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.NotPublic" />
+      <MemberSignature Language="VB.NET" Value="NotPublic" />
+      <MemberSignature Language="F#" Value="NotPublic = 0" Usage="System.Reflection.TypeAttributes.NotPublic" />
+      <MemberSignature Language="C++ CLI" Value="NotPublic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -665,6 +751,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the class is not public.</summary>
       </Docs>
@@ -673,6 +760,9 @@
       <MemberSignature Language="C#" Value="Public" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes Public = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.Public" />
+      <MemberSignature Language="VB.NET" Value="Public" />
+      <MemberSignature Language="F#" Value="Public = 1" Usage="System.Reflection.TypeAttributes.Public" />
+      <MemberSignature Language="C++ CLI" Value="Public" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -694,6 +784,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the class is public.</summary>
       </Docs>
@@ -702,6 +793,9 @@
       <MemberSignature Language="C#" Value="ReservedMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes ReservedMask = int32(264192)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.ReservedMask" />
+      <MemberSignature Language="VB.NET" Value="ReservedMask" />
+      <MemberSignature Language="F#" Value="ReservedMask = 264192" Usage="System.Reflection.TypeAttributes.ReservedMask" />
+      <MemberSignature Language="C++ CLI" Value="ReservedMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -719,6 +813,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>264192</MemberValue>
       <Docs>
         <summary>Attributes reserved for runtime use.</summary>
       </Docs>
@@ -727,6 +822,9 @@
       <MemberSignature Language="C#" Value="RTSpecialName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes RTSpecialName = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.RTSpecialName" />
+      <MemberSignature Language="VB.NET" Value="RTSpecialName" />
+      <MemberSignature Language="F#" Value="RTSpecialName = 2048" Usage="System.Reflection.TypeAttributes.RTSpecialName" />
+      <MemberSignature Language="C++ CLI" Value="RTSpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -748,6 +846,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>Runtime should check name encoding.</summary>
       </Docs>
@@ -756,6 +855,9 @@
       <MemberSignature Language="C#" Value="Sealed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes Sealed = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.Sealed" />
+      <MemberSignature Language="VB.NET" Value="Sealed" />
+      <MemberSignature Language="F#" Value="Sealed = 256" Usage="System.Reflection.TypeAttributes.Sealed" />
+      <MemberSignature Language="C++ CLI" Value="Sealed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -777,6 +879,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Specifies that the class is concrete and cannot be extended.</summary>
       </Docs>
@@ -785,6 +888,9 @@
       <MemberSignature Language="C#" Value="SequentialLayout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes SequentialLayout = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.SequentialLayout" />
+      <MemberSignature Language="VB.NET" Value="SequentialLayout" />
+      <MemberSignature Language="F#" Value="SequentialLayout = 8" Usage="System.Reflection.TypeAttributes.SequentialLayout" />
+      <MemberSignature Language="C++ CLI" Value="SequentialLayout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -806,6 +912,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Specifies that class fields are laid out sequentially, in the order that the fields were emitted to the metadata.</summary>
       </Docs>
@@ -814,6 +921,9 @@
       <MemberSignature Language="C#" Value="Serializable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes Serializable = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.Serializable" />
+      <MemberSignature Language="VB.NET" Value="Serializable" />
+      <MemberSignature Language="F#" Value="Serializable = 8192" Usage="System.Reflection.TypeAttributes.Serializable" />
+      <MemberSignature Language="C++ CLI" Value="Serializable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -835,6 +945,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>Specifies that the class can be serialized.</summary>
       </Docs>
@@ -843,6 +954,9 @@
       <MemberSignature Language="C#" Value="SpecialName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes SpecialName = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.SpecialName" />
+      <MemberSignature Language="VB.NET" Value="SpecialName" />
+      <MemberSignature Language="F#" Value="SpecialName = 1024" Usage="System.Reflection.TypeAttributes.SpecialName" />
+      <MemberSignature Language="C++ CLI" Value="SpecialName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -864,6 +978,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>Specifies that the class is special in a way denoted by the name.</summary>
       </Docs>
@@ -872,6 +987,9 @@
       <MemberSignature Language="C#" Value="StringFormatMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes StringFormatMask = int32(196608)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.StringFormatMask" />
+      <MemberSignature Language="VB.NET" Value="StringFormatMask" />
+      <MemberSignature Language="F#" Value="StringFormatMask = 196608" Usage="System.Reflection.TypeAttributes.StringFormatMask" />
+      <MemberSignature Language="C++ CLI" Value="StringFormatMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -893,6 +1011,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>196608</MemberValue>
       <Docs>
         <summary>Used to retrieve string information for native interoperability.</summary>
       </Docs>
@@ -901,6 +1020,9 @@
       <MemberSignature Language="C#" Value="UnicodeClass" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes UnicodeClass = int32(65536)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.UnicodeClass" />
+      <MemberSignature Language="VB.NET" Value="UnicodeClass" />
+      <MemberSignature Language="F#" Value="UnicodeClass = 65536" Usage="System.Reflection.TypeAttributes.UnicodeClass" />
+      <MemberSignature Language="C++ CLI" Value="UnicodeClass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -922,6 +1044,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>65536</MemberValue>
       <Docs>
         <summary>LPTSTR is interpreted as UNICODE.</summary>
       </Docs>
@@ -930,6 +1053,9 @@
       <MemberSignature Language="C#" Value="VisibilityMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes VisibilityMask = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.VisibilityMask" />
+      <MemberSignature Language="VB.NET" Value="VisibilityMask" />
+      <MemberSignature Language="F#" Value="VisibilityMask = 7" Usage="System.Reflection.TypeAttributes.VisibilityMask" />
+      <MemberSignature Language="C++ CLI" Value="VisibilityMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -951,6 +1077,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Specifies type visibility information.</summary>
       </Docs>
@@ -959,6 +1086,9 @@
       <MemberSignature Language="C#" Value="WindowsRuntime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.TypeAttributes WindowsRuntime = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.TypeAttributes.WindowsRuntime" />
+      <MemberSignature Language="VB.NET" Value="WindowsRuntime" />
+      <MemberSignature Language="F#" Value="WindowsRuntime = 16384" Usage="System.Reflection.TypeAttributes.WindowsRuntime" />
+      <MemberSignature Language="C++ CLI" Value="WindowsRuntime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -985,6 +1115,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.TypeAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>Specifies a [!INCLUDE[wrt](~/includes/wrt-md.md)] type.</summary>
       </Docs>

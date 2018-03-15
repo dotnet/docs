@@ -1,7 +1,10 @@
-<Type Name="IComManagedImportUtil" FullName="System.EnterpriseServices.Internal.IComManagedImportUtil">
+﻿<Type Name="IComManagedImportUtil" FullName="System.EnterpriseServices.Internal.IComManagedImportUtil">
   <TypeSignature Language="C#" Value="public interface IComManagedImportUtil" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComManagedImportUtil" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.IComManagedImportUtil" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComManagedImportUtil" />
+  <TypeSignature Language="F#" Value="type IComManagedImportUtil = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IComManagedImportUtil" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public void GetComponentInfo (string assemblyPath, out string numComponents, out string componentInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetComponentInfo(string assemblyPath, [out] string&amp; numComponents, [out] string&amp; componentInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComManagedImportUtil.GetComponentInfo(System.String,System.String@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetComponentInfo (assemblyPath As String, ByRef numComponents As String, ByRef componentInfo As String)" />
+      <MemberSignature Language="F#" Value="abstract member GetComponentInfo : string *  *  -&gt; unit" Usage="iComManagedImportUtil.GetComponentInfo (assemblyPath, numComponents, componentInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetComponentInfo(System::String ^ assemblyPath, [Runtime::InteropServices::Out] System::String ^ % numComponents, [Runtime::InteropServices::Out] System::String ^ % componentInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -79,6 +85,9 @@
       <MemberSignature Language="C#" Value="public void InstallAssembly (string filename, string parname, string appname);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InstallAssembly(string filename, string parname, string appname) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComManagedImportUtil.InstallAssembly(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InstallAssembly (filename As String, parname As String, appname As String)" />
+      <MemberSignature Language="F#" Value="abstract member InstallAssembly : string * string * string -&gt; unit" Usage="iComManagedImportUtil.InstallAssembly (filename, parname, appname)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InstallAssembly(System::String ^ filename, System::String ^ parname, System::String ^ appname);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

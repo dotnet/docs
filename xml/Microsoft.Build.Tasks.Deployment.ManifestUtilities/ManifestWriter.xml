@@ -1,7 +1,10 @@
-<Type Name="ManifestWriter" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter">
+﻿<Type Name="ManifestWriter" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter">
   <TypeSignature Language="C#" Value="public static class ManifestWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ManifestWriter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManifestWriter" />
+  <TypeSignature Language="F#" Value="type ManifestWriter = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManifestWriter abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +23,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="WriteManifest">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes the specified manifest object to XML.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteManifest">
       <MemberSignature Language="C#" Value="public static void WriteManifest (Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest manifest);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteManifest(class Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest manifest) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest(Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest)" />
+      <MemberSignature Language="F#" Value="static member WriteManifest : Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest -&gt; unit" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest manifest" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteManifest(Microsoft::Build::Tasks::Deployment::ManifestUtilities::Manifest ^ manifest);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -52,6 +66,8 @@
       <MemberSignature Language="C#" Value="public static void WriteManifest (Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest manifest, System.IO.Stream output);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteManifest(class Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest manifest, class System.IO.Stream output) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest(Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest,System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="static member WriteManifest : Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest * System.IO.Stream -&gt; unit" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest (manifest, output)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteManifest(Microsoft::Build::Tasks::Deployment::ManifestUtilities::Manifest ^ manifest, System::IO::Stream ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -82,6 +98,8 @@
       <MemberSignature Language="C#" Value="public static void WriteManifest (Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest manifest, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteManifest(class Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest manifest, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest(Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest,System.String)" />
+      <MemberSignature Language="F#" Value="static member WriteManifest : Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest * string -&gt; unit" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest (manifest, path)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteManifest(Microsoft::Build::Tasks::Deployment::ManifestUtilities::Manifest ^ manifest, System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -112,6 +130,8 @@
       <MemberSignature Language="C#" Value="public static void WriteManifest (Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest manifest, string path, string targetframeWorkVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteManifest(class Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest manifest, string path, string targetframeWorkVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest(Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest,System.String,System.String)" />
+      <MemberSignature Language="F#" Value="static member WriteManifest : Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest * string * string -&gt; unit" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.ManifestWriter.WriteManifest (manifest, path, targetframeWorkVersion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteManifest(Microsoft::Build::Tasks::Deployment::ManifestUtilities::Manifest ^ manifest, System::String ^ path, System::String ^ targetframeWorkVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -133,14 +153,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteManifest">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes the specified manifest object to XML.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="ILogger" FullName="Microsoft.Build.Framework.ILogger">
+﻿<Type Name="ILogger" FullName="Microsoft.Build.Framework.ILogger">
   <TypeSignature Language="C#" Value="public interface ILogger" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ILogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.ILogger" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ILogger" />
+  <TypeSignature Language="F#" Value="type ILogger = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ILogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public void Initialize (Microsoft.Build.Framework.IEventSource eventSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class Microsoft.Build.Framework.IEventSource eventSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ILogger.Initialize(Microsoft.Build.Framework.IEventSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (eventSource As IEventSource)" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : Microsoft.Build.Framework.IEventSource -&gt; unit" Usage="iLogger.Initialize eventSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -58,6 +64,9 @@
       <MemberSignature Language="C#" Value="public string Parameters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Parameters" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ILogger.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parameters As String" />
+      <MemberSignature Language="F#" Value="member this.Parameters : string with get, set" Usage="Microsoft.Build.Framework.ILogger.Parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Parameters { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -85,6 +94,9 @@
       <MemberSignature Language="C#" Value="public void Shutdown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Shutdown() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.ILogger.Shutdown" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Shutdown ()" />
+      <MemberSignature Language="F#" Value="abstract member Shutdown : unit -&gt; unit" Usage="iLogger.Shutdown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Shutdown();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -103,6 +115,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.LoggerVerbosity Verbosity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Framework.LoggerVerbosity Verbosity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.ILogger.Verbosity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Verbosity As LoggerVerbosity" />
+      <MemberSignature Language="F#" Value="member this.Verbosity : Microsoft.Build.Framework.LoggerVerbosity with get, set" Usage="Microsoft.Build.Framework.ILogger.Verbosity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::LoggerVerbosity Verbosity { Microsoft::Build::Framework::LoggerVerbosity get(); void set(Microsoft::Build::Framework::LoggerVerbosity value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

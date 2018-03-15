@@ -1,7 +1,10 @@
-<Type Name="IStateFormatter" FullName="System.Web.UI.IStateFormatter">
+﻿<Type Name="IStateFormatter" FullName="System.Web.UI.IStateFormatter">
   <TypeSignature Language="C#" Value="public interface IStateFormatter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStateFormatter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IStateFormatter" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IStateFormatter" />
+  <TypeSignature Language="F#" Value="type IStateFormatter = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IStateFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public object Deserialize (string serializedState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Deserialize(string serializedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IStateFormatter.Deserialize(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Deserialize (serializedState As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : string -&gt; obj" Usage="iStateFormatter.Deserialize serializedState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Deserialize(System::String ^ serializedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +79,9 @@
       <MemberSignature Language="C#" Value="public string Serialize (object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Serialize(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IStateFormatter.Serialize(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Serialize (state As Object) As String" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : obj -&gt; string" Usage="iStateFormatter.Serialize state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Serialize(System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

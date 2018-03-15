@@ -1,7 +1,10 @@
-<Type Name="AnimationException" FullName="System.Windows.Media.Animation.AnimationException">
+﻿<Type Name="AnimationException" FullName="System.Windows.Media.Animation.AnimationException">
   <TypeSignature Language="C#" Value="public sealed class AnimationException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit AnimationException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.AnimationException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnimationException&#xA;Inherits SystemException" />
+  <TypeSignature Language="F#" Value="type AnimationException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AnimationException sealed : SystemException" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.AnimationClock Clock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.AnimationClock Clock" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.AnimationException.Clock" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Clock As AnimationClock" />
+      <MemberSignature Language="F#" Value="member this.Clock : System.Windows.Media.Animation.AnimationClock" Usage="System.Windows.Media.Animation.AnimationException.Clock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::AnimationClock ^ Clock { System::Windows::Media::Animation::AnimationClock ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -44,6 +50,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.DependencyProperty Property { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyProperty Property" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.AnimationException.Property" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Property As DependencyProperty" />
+      <MemberSignature Language="F#" Value="member this.Property : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.AnimationException.Property" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyProperty ^ Property { System::Windows::DependencyProperty ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,6 +71,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.IAnimatable Target { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.IAnimatable Target" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.AnimationException.Target" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Target As IAnimatable" />
+      <MemberSignature Language="F#" Value="member this.Target : System.Windows.Media.Animation.IAnimatable" Usage="System.Windows.Media.Animation.AnimationException.Target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::IAnimatable ^ Target { System::Windows::Media::Animation::IAnimatable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

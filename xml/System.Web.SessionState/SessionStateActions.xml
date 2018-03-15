@@ -1,7 +1,10 @@
-<Type Name="SessionStateActions" FullName="System.Web.SessionState.SessionStateActions">
+﻿<Type Name="SessionStateActions" FullName="System.Web.SessionState.SessionStateActions">
   <TypeSignature Language="C#" Value="public enum SessionStateActions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SessionStateActions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.SessionStateActions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SessionStateActions" />
+  <TypeSignature Language="F#" Value="type SessionStateActions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SessionStateActions" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="InitializeItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.SessionState.SessionStateActions InitializeItem = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.SessionState.SessionStateActions.InitializeItem" />
+      <MemberSignature Language="VB.NET" Value="InitializeItem" />
+      <MemberSignature Language="F#" Value="InitializeItem = 1" Usage="System.Web.SessionState.SessionStateActions.InitializeItem" />
+      <MemberSignature Language="C++ CLI" Value="InitializeItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.Web.SessionState.SessionStateActions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The session item from the data store is for a session that requires initialization.</summary>
       </Docs>
@@ -53,6 +60,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.SessionState.SessionStateActions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.SessionState.SessionStateActions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.SessionState.SessionStateActions.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.Web.SessionState.SessionStateActions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No initialization actions need to be performed by the calling code.</summary>
       </Docs>

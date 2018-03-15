@@ -1,7 +1,10 @@
-<Type Name="PropertyTabScope" FullName="System.ComponentModel.PropertyTabScope">
+﻿<Type Name="PropertyTabScope" FullName="System.ComponentModel.PropertyTabScope">
   <TypeSignature Language="C#" Value="public enum PropertyTabScope" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyTabScope extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.PropertyTabScope" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PropertyTabScope" />
+  <TypeSignature Language="F#" Value="type PropertyTabScope = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PropertyTabScope" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="Component" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyTabScope Component = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyTabScope.Component" />
+      <MemberSignature Language="VB.NET" Value="Component" />
+      <MemberSignature Language="F#" Value="Component = 3" Usage="System.ComponentModel.PropertyTabScope.Component" />
+      <MemberSignature Language="C++ CLI" Value="Component" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -61,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyTabScope</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>This tab is specific to the current component. This tab is added to the Properties window for the current component only and is removed when the component is no longer selected.</summary>
         <altmember cref="T:System.ComponentModel.PropertyTabAttribute" />
@@ -70,6 +77,9 @@
       <MemberSignature Language="C#" Value="Document" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyTabScope Document = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyTabScope.Document" />
+      <MemberSignature Language="VB.NET" Value="Document" />
+      <MemberSignature Language="F#" Value="Document = 2" Usage="System.ComponentModel.PropertyTabScope.Document" />
+      <MemberSignature Language="C++ CLI" Value="Document" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -87,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyTabScope</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>This tab is specific to the current document. This tab is added to the Properties window and is removed when the currently selected document changes.</summary>
         <remarks>
@@ -108,6 +119,9 @@
       <MemberSignature Language="C#" Value="Global" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyTabScope Global = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyTabScope.Global" />
+      <MemberSignature Language="VB.NET" Value="Global" />
+      <MemberSignature Language="F#" Value="Global = 1" Usage="System.ComponentModel.PropertyTabScope.Global" />
+      <MemberSignature Language="C++ CLI" Value="Global" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -125,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyTabScope</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>This tab is added to the Properties window and can only be removed explicitly by a parent component.</summary>
         <altmember cref="T:System.ComponentModel.PropertyTabAttribute" />
@@ -134,6 +149,9 @@
       <MemberSignature Language="C#" Value="Static" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.PropertyTabScope Static = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.PropertyTabScope.Static" />
+      <MemberSignature Language="VB.NET" Value="Static" />
+      <MemberSignature Language="F#" Value="Static = 0" Usage="System.ComponentModel.PropertyTabScope.Static" />
+      <MemberSignature Language="C++ CLI" Value="Static" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,6 +169,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyTabScope</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>This tab is added to the Properties window and cannot be removed.</summary>
         <altmember cref="T:System.ComponentModel.PropertyTabAttribute" />

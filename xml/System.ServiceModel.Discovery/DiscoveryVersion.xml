@@ -1,7 +1,10 @@
-<Type Name="DiscoveryVersion" FullName="System.ServiceModel.Discovery.DiscoveryVersion">
+﻿<Type Name="DiscoveryVersion" FullName="System.ServiceModel.Discovery.DiscoveryVersion">
   <TypeSignature Language="C#" Value="public sealed class DiscoveryVersion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiscoveryVersion extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.DiscoveryVersion" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiscoveryVersion" />
+  <TypeSignature Language="F#" Value="type DiscoveryVersion = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryVersion sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public Uri AdhocAddress { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri AdhocAddress" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryVersion.AdhocAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdhocAddress As Uri" />
+      <MemberSignature Language="F#" Value="member this.AdhocAddress : Uri" Usage="System.ServiceModel.Discovery.DiscoveryVersion.AdhocAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ AdhocAddress { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Discovery.DiscoveryVersion FromName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Discovery.DiscoveryVersion FromName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryVersion.FromName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromName (name As String) As DiscoveryVersion" />
+      <MemberSignature Language="F#" Value="static member FromName : string -&gt; System.ServiceModel.Discovery.DiscoveryVersion" Usage="System.ServiceModel.Discovery.DiscoveryVersion.FromName name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Discovery::DiscoveryVersion ^ FromName(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -59,6 +68,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.MessageVersion MessageVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.MessageVersion MessageVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryVersion.MessageVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageVersion As MessageVersion" />
+      <MemberSignature Language="F#" Value="member this.MessageVersion : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Discovery.DiscoveryVersion.MessageVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::MessageVersion ^ MessageVersion { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -84,6 +96,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryVersion.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Discovery.DiscoveryVersion.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -102,6 +117,9 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryVersion.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string" Usage="System.ServiceModel.Discovery.DiscoveryVersion.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -120,6 +138,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.DiscoveryVersion.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="discoveryVersion.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -139,6 +160,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Discovery.DiscoveryVersion WSDiscovery11 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Discovery.DiscoveryVersion WSDiscovery11" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSDiscovery11 As DiscoveryVersion" />
+      <MemberSignature Language="F#" Value="member this.WSDiscovery11 : System.ServiceModel.Discovery.DiscoveryVersion" Usage="System.ServiceModel.Discovery.DiscoveryVersion.WSDiscovery11" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Discovery::DiscoveryVersion ^ WSDiscovery11 { System::ServiceModel::Discovery::DiscoveryVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -157,6 +181,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Discovery.DiscoveryVersion WSDiscoveryApril2005 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Discovery.DiscoveryVersion WSDiscoveryApril2005" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSDiscoveryApril2005 As DiscoveryVersion" />
+      <MemberSignature Language="F#" Value="member this.WSDiscoveryApril2005 : System.ServiceModel.Discovery.DiscoveryVersion" Usage="System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryApril2005" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Discovery::DiscoveryVersion ^ WSDiscoveryApril2005 { System::ServiceModel::Discovery::DiscoveryVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -175,6 +202,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Discovery.DiscoveryVersion WSDiscoveryCD1 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Discovery.DiscoveryVersion WSDiscoveryCD1" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryCD1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSDiscoveryCD1 As DiscoveryVersion" />
+      <MemberSignature Language="F#" Value="member this.WSDiscoveryCD1 : System.ServiceModel.Discovery.DiscoveryVersion" Usage="System.ServiceModel.Discovery.DiscoveryVersion.WSDiscoveryCD1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Discovery::DiscoveryVersion ^ WSDiscoveryCD1 { System::ServiceModel::Discovery::DiscoveryVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

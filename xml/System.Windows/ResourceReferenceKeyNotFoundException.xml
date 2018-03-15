@@ -1,7 +1,10 @@
-<Type Name="ResourceReferenceKeyNotFoundException" FullName="System.Windows.ResourceReferenceKeyNotFoundException">
+﻿<Type Name="ResourceReferenceKeyNotFoundException" FullName="System.Windows.ResourceReferenceKeyNotFoundException">
   <TypeSignature Language="C#" Value="public class ResourceReferenceKeyNotFoundException : InvalidOperationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ResourceReferenceKeyNotFoundException extends System.InvalidOperationException" />
   <TypeSignature Language="DocId" Value="T:System.Windows.ResourceReferenceKeyNotFoundException" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResourceReferenceKeyNotFoundException&#xA;Inherits InvalidOperationException" />
+  <TypeSignature Language="F#" Value="type ResourceReferenceKeyNotFoundException = class&#xA;    inherit InvalidOperationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResourceReferenceKeyNotFoundException : InvalidOperationException" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.ResourceReferenceKeyNotFoundException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ResourceReferenceKeyNotFoundException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ResourceReferenceKeyNotFoundException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceReferenceKeyNotFoundException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -34,6 +48,9 @@
       <MemberSignature Language="C#" Value="protected ResourceReferenceKeyNotFoundException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ResourceReferenceKeyNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Windows.ResourceReferenceKeyNotFoundException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Windows.ResourceReferenceKeyNotFoundException" Usage="new System.Windows.ResourceReferenceKeyNotFoundException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ResourceReferenceKeyNotFoundException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -54,6 +71,9 @@
       <MemberSignature Language="C#" Value="public ResourceReferenceKeyNotFoundException (string message, object resourceKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, object resourceKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ResourceReferenceKeyNotFoundException.#ctor(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, resourceKey As Object)" />
+      <MemberSignature Language="F#" Value="new System.Windows.ResourceReferenceKeyNotFoundException : string * obj -&gt; System.Windows.ResourceReferenceKeyNotFoundException" Usage="new System.Windows.ResourceReferenceKeyNotFoundException (message, resourceKey)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceReferenceKeyNotFoundException(System::String ^ message, System::Object ^ resourceKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +94,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.ResourceReferenceKeyNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="resourceReferenceKeyNotFoundException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -102,6 +125,9 @@
       <MemberSignature Language="C#" Value="public object Key { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Key" />
       <MemberSignature Language="DocId" Value="P:System.Windows.ResourceReferenceKeyNotFoundException.Key" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As Object" />
+      <MemberSignature Language="F#" Value="member this.Key : obj" Usage="System.Windows.ResourceReferenceKeyNotFoundException.Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Key { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -116,14 +142,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.ResourceReferenceKeyNotFoundException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

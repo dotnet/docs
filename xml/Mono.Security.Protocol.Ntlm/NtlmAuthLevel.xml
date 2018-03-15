@@ -1,7 +1,10 @@
-<Type Name="NtlmAuthLevel" FullName="Mono.Security.Protocol.Ntlm.NtlmAuthLevel">
+﻿<Type Name="NtlmAuthLevel" FullName="Mono.Security.Protocol.Ntlm.NtlmAuthLevel">
   <TypeSignature Language="C#" Value="public enum NtlmAuthLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NtlmAuthLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Mono.Security.Protocol.Ntlm.NtlmAuthLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NtlmAuthLevel" />
+  <TypeSignature Language="F#" Value="type NtlmAuthLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class NtlmAuthLevel" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="LM_and_NTLM" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Protocol.Ntlm.NtlmAuthLevel LM_and_NTLM = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Protocol.Ntlm.NtlmAuthLevel.LM_and_NTLM" />
+      <MemberSignature Language="VB.NET" Value="LM_and_NTLM" />
+      <MemberSignature Language="F#" Value="LM_and_NTLM = 0" Usage="Mono.Security.Protocol.Ntlm.NtlmAuthLevel.LM_and_NTLM" />
+      <MemberSignature Language="C++ CLI" Value="LM_and_NTLM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Protocol.Ntlm.NtlmAuthLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="LM_and_NTLM_and_try_NTLMv2_Session" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Protocol.Ntlm.NtlmAuthLevel LM_and_NTLM_and_try_NTLMv2_Session = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Protocol.Ntlm.NtlmAuthLevel.LM_and_NTLM_and_try_NTLMv2_Session" />
+      <MemberSignature Language="VB.NET" Value="LM_and_NTLM_and_try_NTLMv2_Session" />
+      <MemberSignature Language="F#" Value="LM_and_NTLM_and_try_NTLMv2_Session = 1" Usage="Mono.Security.Protocol.Ntlm.NtlmAuthLevel.LM_and_NTLM_and_try_NTLMv2_Session" />
+      <MemberSignature Language="C++ CLI" Value="LM_and_NTLM_and_try_NTLMv2_Session" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Protocol.Ntlm.NtlmAuthLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="NTLM_only" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Protocol.Ntlm.NtlmAuthLevel NTLM_only = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Protocol.Ntlm.NtlmAuthLevel.NTLM_only" />
+      <MemberSignature Language="VB.NET" Value="NTLM_only" />
+      <MemberSignature Language="F#" Value="NTLM_only = 2" Usage="Mono.Security.Protocol.Ntlm.NtlmAuthLevel.NTLM_only" />
+      <MemberSignature Language="C++ CLI" Value="NTLM_only" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Protocol.Ntlm.NtlmAuthLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="NTLMv2_only" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Protocol.Ntlm.NtlmAuthLevel NTLMv2_only = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Protocol.Ntlm.NtlmAuthLevel.NTLMv2_only" />
+      <MemberSignature Language="VB.NET" Value="NTLMv2_only" />
+      <MemberSignature Language="F#" Value="NTLMv2_only = 3" Usage="Mono.Security.Protocol.Ntlm.NtlmAuthLevel.NTLMv2_only" />
+      <MemberSignature Language="C++ CLI" Value="NTLMv2_only" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Protocol.Ntlm.NtlmAuthLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>

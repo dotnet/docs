@@ -1,7 +1,10 @@
-<Type Name="XamlServices" FullName="System.Xaml.XamlServices">
+﻿<Type Name="XamlServices" FullName="System.Xaml.XamlServices">
   <TypeSignature Language="C#" Value="public static class XamlServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit XamlServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlServices" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlServices" />
+  <TypeSignature Language="F#" Value="type XamlServices = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlServices abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,10 +28,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads source for a XAML reader and writes its output as an object graph.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Load">
       <MemberSignature Language="C#" Value="public static object Load (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Load(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlServices.Load(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.Stream -&gt; obj" Usage="System.Xaml.XamlServices.Load stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Load(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -71,6 +85,8 @@
       <MemberSignature Language="C#" Value="public static object Load (System.IO.TextReader textReader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Load(class System.IO.TextReader textReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlServices.Load(System.IO.TextReader)" />
+      <MemberSignature Language="F#" Value="static member Load : System.IO.TextReader -&gt; obj" Usage="System.Xaml.XamlServices.Load textReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Load(System::IO::TextReader ^ textReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -102,6 +118,9 @@
       <MemberSignature Language="C#" Value="public static object Load (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Load(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlServices.Load(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Load (fileName As String) As Object" />
+      <MemberSignature Language="F#" Value="static member Load : string -&gt; obj" Usage="System.Xaml.XamlServices.Load fileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Load(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -141,6 +160,8 @@
       <MemberSignature Language="C#" Value="public static object Load (System.Xaml.XamlReader xamlReader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Load(class System.Xaml.XamlReader xamlReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlServices.Load(System.Xaml.XamlReader)" />
+      <MemberSignature Language="F#" Value="static member Load : System.Xaml.XamlReader -&gt; obj" Usage="System.Xaml.XamlServices.Load xamlReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Load(System::Xaml::XamlReader ^ xamlReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -176,6 +197,8 @@
       <MemberSignature Language="C#" Value="public static object Load (System.Xml.XmlReader xmlReader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Load(class System.Xml.XmlReader xmlReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlServices.Load(System.Xml.XmlReader)" />
+      <MemberSignature Language="F#" Value="static member Load : System.Xml.XmlReader -&gt; obj" Usage="System.Xaml.XamlServices.Load xmlReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Load(System::Xml::XmlReader ^ xmlReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -207,6 +230,9 @@
       <MemberSignature Language="C#" Value="public static object Parse (string xaml);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Parse(string xaml) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlServices.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (xaml As String) As Object" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; obj" Usage="System.Xaml.XamlServices.Parse xaml" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Parse(System::String ^ xaml);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -243,10 +269,22 @@
           <paramref name="xaml" /> input is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Processes a provided object graph into a XAML node representation and then into an output format for serialization.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Save">
       <MemberSignature Language="C#" Value="public static string Save (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Save(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlServices.Save(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Save (instance As Object) As String" />
+      <MemberSignature Language="F#" Value="static member Save : obj -&gt; string" Usage="System.Xaml.XamlServices.Save instance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Save(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -278,6 +316,8 @@
       <MemberSignature Language="C#" Value="public static void Save (System.IO.Stream stream, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Save(class System.IO.Stream stream, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlServices.Save(System.IO.Stream,System.Object)" />
+      <MemberSignature Language="F#" Value="static member Save : System.IO.Stream * obj -&gt; unit" Usage="System.Xaml.XamlServices.Save (stream, instance)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Save(System::IO::Stream ^ stream, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -312,6 +352,9 @@
       <MemberSignature Language="C#" Value="public static void Save (System.IO.TextWriter writer, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Save(class System.IO.TextWriter writer, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlServices.Save(System.IO.TextWriter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Save (writer As TextWriter, instance As Object)" />
+      <MemberSignature Language="F#" Value="static member Save : System.IO.TextWriter * obj -&gt; unit" Usage="System.Xaml.XamlServices.Save (writer, instance)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Save(System::IO::TextWriter ^ writer, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -337,6 +380,9 @@
       <MemberSignature Language="C#" Value="public static void Save (string fileName, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Save(string fileName, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlServices.Save(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Save (fileName As String, instance As Object)" />
+      <MemberSignature Language="F#" Value="static member Save : string * obj -&gt; unit" Usage="System.Xaml.XamlServices.Save (fileName, instance)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Save(System::String ^ fileName, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -371,6 +417,9 @@
       <MemberSignature Language="C#" Value="public static void Save (System.Xaml.XamlWriter writer, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Save(class System.Xaml.XamlWriter writer, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlServices.Save(System.Xaml.XamlWriter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Save (writer As XamlWriter, instance As Object)" />
+      <MemberSignature Language="F#" Value="static member Save : System.Xaml.XamlWriter * obj -&gt; unit" Usage="System.Xaml.XamlServices.Save (writer, instance)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Save(System::Xaml::XamlWriter ^ writer, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -407,6 +456,9 @@
       <MemberSignature Language="C#" Value="public static void Save (System.Xml.XmlWriter writer, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Save(class System.Xml.XmlWriter writer, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlServices.Save(System.Xml.XmlWriter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Save (writer As XmlWriter, instance As Object)" />
+      <MemberSignature Language="F#" Value="static member Save : System.Xml.XmlWriter * obj -&gt; unit" Usage="System.Xaml.XamlServices.Save (writer, instance)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Save(System::Xml::XmlWriter ^ writer, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -428,10 +480,21 @@
           <paramref name="writer" /> input is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Transform">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Connects a <see cref="T:System.Xaml.XamlReader" /> and a <see cref="T:System.Xaml.XamlWriter" /> in order to use a common XAML node set intermediary. Potentially transforms the content, depending on the types of readers and writers that are provided.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Transform">
       <MemberSignature Language="C#" Value="public static void Transform (System.Xaml.XamlReader xamlReader, System.Xaml.XamlWriter xamlWriter);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Transform(class System.Xaml.XamlReader xamlReader, class System.Xaml.XamlWriter xamlWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlServices.Transform(System.Xaml.XamlReader,System.Xaml.XamlWriter)" />
+      <MemberSignature Language="F#" Value="static member Transform : System.Xaml.XamlReader * System.Xaml.XamlWriter -&gt; unit" Usage="System.Xaml.XamlServices.Transform (xamlReader, xamlWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Transform(System::Xaml::XamlReader ^ xamlReader, System::Xaml::XamlWriter ^ xamlWriter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -465,6 +528,8 @@
       <MemberSignature Language="C#" Value="public static void Transform (System.Xaml.XamlReader xamlReader, System.Xaml.XamlWriter xamlWriter, bool closeWriter);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Transform(class System.Xaml.XamlReader xamlReader, class System.Xaml.XamlWriter xamlWriter, bool closeWriter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlServices.Transform(System.Xaml.XamlReader,System.Xaml.XamlWriter,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member Transform : System.Xaml.XamlReader * System.Xaml.XamlWriter * bool -&gt; unit" Usage="System.Xaml.XamlServices.Transform (xamlReader, xamlWriter, closeWriter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Transform(System::Xaml::XamlReader ^ xamlReader, System::Xaml::XamlWriter ^ xamlWriter, bool closeWriter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -490,32 +555,5 @@
         <exception cref="T:System.Xaml.XamlException">The XAML schema context does not match between the provided <paramref name="xamlReader" /> and <paramref name="xamlWriter" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Transform">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Connects a <see cref="T:System.Xaml.XamlReader" /> and a <see cref="T:System.Xaml.XamlWriter" /> in order to use a common XAML node set intermediary. Potentially transforms the content, depending on the types of readers and writers that are provided.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Save">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Processes a provided object graph into a XAML node representation and then into an output format for serialization.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Load">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads source for a XAML reader and writes its output as an object graph.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

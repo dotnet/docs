@@ -1,7 +1,10 @@
-<Type Name="RequestedSecurityToken" FullName="System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken">
+﻿<Type Name="RequestedSecurityToken" FullName="System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken">
   <TypeSignature Language="C#" Value="public class RequestedSecurityToken" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RequestedSecurityToken extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken" />
+  <TypeSignature Language="VB.NET" Value="Public Class RequestedSecurityToken" />
+  <TypeSignature Language="F#" Value="type RequestedSecurityToken = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RequestedSecurityToken" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +25,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RequestedSecurityToken (System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken.#ctor(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (token As SecurityToken)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken : System.IdentityModel.Tokens.SecurityToken -&gt; System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken" Usage="new System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken token" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestedSecurityToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -60,6 +75,9 @@
       <MemberSignature Language="C#" Value="public RequestedSecurityToken (System.Xml.XmlElement tokenAsXml);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlElement tokenAsXml) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken.#ctor(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tokenAsXml As XmlElement)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken : System.Xml.XmlElement -&gt; System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken" Usage="new System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken tokenAsXml" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RequestedSecurityToken(System::Xml::XmlElement ^ tokenAsXml);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -94,6 +112,9 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityToken SecurityToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SecurityToken SecurityToken" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken.SecurityToken" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityToken As SecurityToken" />
+      <MemberSignature Language="F#" Value="member this.SecurityToken : System.IdentityModel.Tokens.SecurityToken" Usage="System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken.SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityToken ^ SecurityToken { System::IdentityModel::Tokens::SecurityToken ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -119,6 +140,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlElement SecurityTokenXml { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlElement SecurityTokenXml" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken.SecurityTokenXml" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityTokenXml As XmlElement" />
+      <MemberSignature Language="F#" Value="member this.SecurityTokenXml : System.Xml.XmlElement" Usage="System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken.SecurityTokenXml" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlElement ^ SecurityTokenXml { System::Xml::XmlElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -140,14 +164,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Protocols.WSTrust.RequestedSecurityToken" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

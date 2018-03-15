@@ -1,7 +1,10 @@
-<Type Name="IFormatterConverter" FullName="System.Runtime.Serialization.IFormatterConverter">
+﻿<Type Name="IFormatterConverter" FullName="System.Runtime.Serialization.IFormatterConverter">
   <TypeSignature Language="C#" Value="public interface IFormatterConverter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFormatterConverter" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.IFormatterConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFormatterConverter" />
+  <TypeSignature Language="F#" Value="type IFormatterConverter = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IFormatterConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +37,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Convert">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a value to a given type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Convert">
       <MemberSignature Language="C#" Value="public object Convert (object value, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object value, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.Convert(System.Object,System.Type)" />
+      <MemberSignature Language="F#" Value="abstract member Convert : obj * Type -&gt; obj" Usage="iFormatterConverter.Convert (value, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Convert(System::Object ^ value, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -76,6 +91,8 @@
       <MemberSignature Language="C#" Value="public object Convert (object value, TypeCode typeCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Convert(object value, valuetype System.TypeCode typeCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.Convert(System.Object,System.TypeCode)" />
+      <MemberSignature Language="F#" Value="abstract member Convert : obj * TypeCode -&gt; obj" Usage="iFormatterConverter.Convert (value, typeCode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Convert(System::Object ^ value, TypeCode typeCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -114,6 +131,9 @@
       <MemberSignature Language="C#" Value="public bool ToBoolean (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ToBoolean(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToBoolean(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToBoolean (value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ToBoolean : obj -&gt; bool" Usage="iFormatterConverter.ToBoolean value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ToBoolean(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -150,6 +170,9 @@
       <MemberSignature Language="C#" Value="public byte ToByte (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8 ToByte(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToByte(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToByte (value As Object) As Byte" />
+      <MemberSignature Language="F#" Value="abstract member ToByte : obj -&gt; byte" Usage="iFormatterConverter.ToByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Byte ToByte(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -186,6 +209,9 @@
       <MemberSignature Language="C#" Value="public char ToChar (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance char ToChar(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToChar(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToChar (value As Object) As Char" />
+      <MemberSignature Language="F#" Value="abstract member ToChar : obj -&gt; char" Usage="iFormatterConverter.ToChar value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; char ToChar(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -222,6 +248,9 @@
       <MemberSignature Language="C#" Value="public DateTime ToDateTime (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime ToDateTime(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToDateTime(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToDateTime (value As Object) As DateTime" />
+      <MemberSignature Language="F#" Value="abstract member ToDateTime : obj -&gt; DateTime" Usage="iFormatterConverter.ToDateTime value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DateTime ToDateTime(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -258,6 +287,9 @@
       <MemberSignature Language="C#" Value="public decimal ToDecimal (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Decimal ToDecimal(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToDecimal(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToDecimal (value As Object) As Decimal" />
+      <MemberSignature Language="F#" Value="abstract member ToDecimal : obj -&gt; decimal" Usage="iFormatterConverter.ToDecimal value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Decimal ToDecimal(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -294,6 +326,9 @@
       <MemberSignature Language="C#" Value="public double ToDouble (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 ToDouble(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToDouble(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToDouble (value As Object) As Double" />
+      <MemberSignature Language="F#" Value="abstract member ToDouble : obj -&gt; double" Usage="iFormatterConverter.ToDouble value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double ToDouble(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -330,6 +365,9 @@
       <MemberSignature Language="C#" Value="public short ToInt16 (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int16 ToInt16(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToInt16(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToInt16 (value As Object) As Short" />
+      <MemberSignature Language="F#" Value="abstract member ToInt16 : obj -&gt; int16" Usage="iFormatterConverter.ToInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; short ToInt16(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -366,6 +404,9 @@
       <MemberSignature Language="C#" Value="public int ToInt32 (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 ToInt32(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToInt32(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToInt32 (value As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member ToInt32 : obj -&gt; int" Usage="iFormatterConverter.ToInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ToInt32(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -402,6 +443,9 @@
       <MemberSignature Language="C#" Value="public long ToInt64 (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 ToInt64(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToInt64(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToInt64 (value As Object) As Long" />
+      <MemberSignature Language="F#" Value="abstract member ToInt64 : obj -&gt; int64" Usage="iFormatterConverter.ToInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long ToInt64(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -438,6 +482,9 @@
       <MemberSignature Language="C#" Value="public sbyte ToSByte (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int8 ToSByte(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToSByte(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToSByte (value As Object) As SByte" />
+      <MemberSignature Language="F#" Value="abstract member ToSByte : obj -&gt; sbyte" Usage="iFormatterConverter.ToSByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::SByte ToSByte(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -474,6 +521,9 @@
       <MemberSignature Language="C#" Value="public float ToSingle (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 ToSingle(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToSingle(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToSingle (value As Object) As Single" />
+      <MemberSignature Language="F#" Value="abstract member ToSingle : obj -&gt; single" Usage="iFormatterConverter.ToSingle value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; float ToSingle(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -510,6 +560,9 @@
       <MemberSignature Language="C#" Value="public string ToString (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToString(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (value As Object) As String" />
+      <MemberSignature Language="F#" Value="abstract member ToString : obj -&gt; string" Usage="iFormatterConverter.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -546,6 +599,9 @@
       <MemberSignature Language="C#" Value="public ushort ToUInt16 (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int16 ToUInt16(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToUInt16(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToUInt16 (value As Object) As UShort" />
+      <MemberSignature Language="F#" Value="abstract member ToUInt16 : obj -&gt; uint16" Usage="iFormatterConverter.ToUInt16 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt16 ToUInt16(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -582,6 +638,9 @@
       <MemberSignature Language="C#" Value="public uint ToUInt32 (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int32 ToUInt32(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToUInt32(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToUInt32 (value As Object) As UInteger" />
+      <MemberSignature Language="F#" Value="abstract member ToUInt32 : obj -&gt; uint32" Usage="iFormatterConverter.ToUInt32 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt32 ToUInt32(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -618,6 +677,9 @@
       <MemberSignature Language="C#" Value="public ulong ToUInt64 (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int64 ToUInt64(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.IFormatterConverter.ToUInt64(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToUInt64 (value As Object) As ULong" />
+      <MemberSignature Language="F#" Value="abstract member ToUInt64 : obj -&gt; uint64" Usage="iFormatterConverter.ToUInt64 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::UInt64 ToUInt64(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -650,15 +712,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Convert">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts a value to a given type.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

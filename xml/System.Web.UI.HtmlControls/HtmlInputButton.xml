@@ -1,7 +1,10 @@
-<Type Name="HtmlInputButton" FullName="System.Web.UI.HtmlControls.HtmlInputButton">
+﻿<Type Name="HtmlInputButton" FullName="System.Web.UI.HtmlControls.HtmlInputButton">
   <TypeSignature Language="C#" Value="public class HtmlInputButton : System.Web.UI.HtmlControls.HtmlInputControl, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlInputButton extends System.Web.UI.HtmlControls.HtmlInputControl implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlInputButton" />
+  <TypeSignature Language="VB.NET" Value="Public Class HtmlInputButton&#xA;Inherits HtmlInputControl&#xA;Implements IPostBackEventHandler" />
+  <TypeSignature Language="F#" Value="type HtmlInputButton = class&#xA;    inherit HtmlInputControl&#xA;    interface IPostBackEventHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlInputButton : System::Web::UI::HtmlControls::HtmlInputControl, System::Web::UI::IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,10 +51,21 @@
     <altmember cref="T:System.Web.UI.HtmlControls.HtmlButton" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputButton" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HtmlInputButton ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputButton.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlInputButton();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -86,6 +100,9 @@
       <MemberSignature Language="C#" Value="public HtmlInputButton (string type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputButton.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.HtmlControls.HtmlInputButton : string -&gt; System.Web.UI.HtmlControls.HtmlInputButton" Usage="new System.Web.UI.HtmlControls.HtmlInputButton type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlInputButton(System::String ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -131,6 +148,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CausesValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputButton.CausesValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CausesValidation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Web.UI.HtmlControls.HtmlInputButton.CausesValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CausesValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -173,9 +193,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputButton.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="htmlInputButton.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -215,6 +238,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnServerClick (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnServerClick(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputButton.OnServerClick(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnServerClick (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnServerClick : EventArgs -&gt; unit&#xA;override this.OnServerClick : EventArgs -&gt; unit" Usage="htmlInputButton.OnServerClick e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnServerClick(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,7 +287,13 @@
       <MemberSignature Language="C#" Value="protected virtual void RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputButton.RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="htmlInputButton.RaisePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -295,6 +327,9 @@
       <MemberSignature Language="C#" Value="protected override void RenderAttributes (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputButton.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAttributes (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlInputButton.RenderAttributes writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -334,6 +369,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ServerClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ServerClick" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.HtmlControls.HtmlInputButton.ServerClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ServerClick As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ServerClick : EventHandler " Usage="member this.ServerClick : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ServerClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -375,7 +413,12 @@
       <MemberSignature Language="C#" Value="void IPostBackEventHandler.RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlInputButton.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -396,6 +439,9 @@
       <MemberSignature Language="C#" Value="public virtual string ValidationGroup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlInputButton.ValidationGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ValidationGroup As String" />
+      <MemberSignature Language="F#" Value="member this.ValidationGroup : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlInputButton.ValidationGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -433,14 +479,5 @@
         <altmember cref="P:System.Web.UI.HtmlControls.HtmlInputButton.CausesValidation" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.HtmlControls.HtmlInputButton" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="ScriptBehaviorDescriptor" FullName="System.Web.UI.ScriptBehaviorDescriptor">
+﻿<Type Name="ScriptBehaviorDescriptor" FullName="System.Web.UI.ScriptBehaviorDescriptor">
   <TypeSignature Language="C#" Value="public class ScriptBehaviorDescriptor : System.Web.UI.ScriptComponentDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptBehaviorDescriptor extends System.Web.UI.ScriptComponentDescriptor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptBehaviorDescriptor" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScriptBehaviorDescriptor&#xA;Inherits ScriptComponentDescriptor" />
+  <TypeSignature Language="F#" Value="type ScriptBehaviorDescriptor = class&#xA;    inherit ScriptComponentDescriptor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScriptBehaviorDescriptor : System::Web::UI::ScriptComponentDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public ScriptBehaviorDescriptor (string type, string elementID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type, string elementID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptBehaviorDescriptor.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String, elementID As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ScriptBehaviorDescriptor : string * string -&gt; System.Web.UI.ScriptBehaviorDescriptor" Usage="new System.Web.UI.ScriptBehaviorDescriptor (type, elementID)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptBehaviorDescriptor(System::String ^ type, System::String ^ elementID);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -41,6 +47,9 @@
       <MemberSignature Language="C#" Value="public override string ClientID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClientID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptBehaviorDescriptor.ClientID" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ClientID As String" />
+      <MemberSignature Language="F#" Value="member this.ClientID : string" Usage="System.Web.UI.ScriptBehaviorDescriptor.ClientID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ClientID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -65,6 +74,9 @@
       <MemberSignature Language="C#" Value="public string ElementID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ElementID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptBehaviorDescriptor.ElementID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementID As String" />
+      <MemberSignature Language="F#" Value="member this.ElementID : string" Usage="System.Web.UI.ScriptBehaviorDescriptor.ElementID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ElementID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -80,9 +92,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetScript">
-      <MemberSignature Language="C#" Value="protected override string GetScript ();" />
+      <MemberSignature Language="C#" Value="protected internal override string GetScript ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string GetScript() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptBehaviorDescriptor.GetScript" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetScript () As String" />
+      <MemberSignature Language="F#" Value="override this.GetScript : unit -&gt; string" Usage="scriptBehaviorDescriptor.GetScript " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::String ^ GetScript();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -102,6 +117,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptBehaviorDescriptor.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.ScriptBehaviorDescriptor.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

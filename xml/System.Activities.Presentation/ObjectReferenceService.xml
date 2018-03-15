@@ -1,7 +1,10 @@
-<Type Name="ObjectReferenceService" FullName="System.Activities.Presentation.ObjectReferenceService">
+﻿<Type Name="ObjectReferenceService" FullName="System.Activities.Presentation.ObjectReferenceService">
   <TypeSignature Language="C#" Value="public sealed class ObjectReferenceService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObjectReferenceService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ObjectReferenceService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectReferenceService" />
+  <TypeSignature Language="F#" Value="type ObjectReferenceService = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectReferenceService sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public ObjectReferenceService (System.Activities.Presentation.EditingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Presentation.EditingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ObjectReferenceService.#ctor(System.Activities.Presentation.EditingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As EditingContext)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.ObjectReferenceService : System.Activities.Presentation.EditingContext -&gt; System.Activities.Presentation.ObjectReferenceService" Usage="new System.Activities.Presentation.ObjectReferenceService context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectReferenceService(System::Activities::Presentation::EditingContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -33,10 +39,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AcquireObjectReference">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Acquires an actual reference of an object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AcquireObjectReference">
       <MemberSignature Language="C#" Value="public Guid AcquireObjectReference (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Guid AcquireObjectReference(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ObjectReferenceService.AcquireObjectReference(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AcquireObjectReference (obj As Object) As Guid" />
+      <MemberSignature Language="F#" Value="member this.AcquireObjectReference : obj -&gt; Guid" Usage="objectReferenceService.AcquireObjectReference obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Guid AcquireObjectReference(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -59,6 +77,9 @@
       <MemberSignature Language="C#" Value="public Guid AcquireObjectReference (int startLine, int startColumn, int endLine, int endColumn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Guid AcquireObjectReference(int32 startLine, int32 startColumn, int32 endLine, int32 endColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ObjectReferenceService.AcquireObjectReference(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AcquireObjectReference (startLine As Integer, startColumn As Integer, endLine As Integer, endColumn As Integer) As Guid" />
+      <MemberSignature Language="F#" Value="member this.AcquireObjectReference : int * int * int * int -&gt; Guid" Usage="objectReferenceService.AcquireObjectReference (startLine, startColumn, endLine, endColumn)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Guid AcquireObjectReference(int startLine, int startColumn, int endLine, int endColumn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -87,6 +108,9 @@
       <MemberSignature Language="C#" Value="public void ReleaseObjectReference (Guid objectReferenceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReleaseObjectReference(valuetype System.Guid objectReferenceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ObjectReferenceService.ReleaseObjectReference(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReleaseObjectReference (objectReferenceId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.ReleaseObjectReference : Guid -&gt; unit" Usage="objectReferenceService.ReleaseObjectReference objectReferenceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseObjectReference(Guid objectReferenceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -108,6 +132,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Activities.Presentation.SourceLocationUpdatedEventArgs&gt; SourceLocationUpdated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Activities.Presentation.SourceLocationUpdatedEventArgs&gt; SourceLocationUpdated" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.ObjectReferenceService.SourceLocationUpdated" />
+      <MemberSignature Language="VB.NET" Value="Public Event SourceLocationUpdated As EventHandler(Of SourceLocationUpdatedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.SourceLocationUpdated : EventHandler&lt;System.Activities.Presentation.SourceLocationUpdatedEventArgs&gt; " Usage="member this.SourceLocationUpdated : System.EventHandler&lt;System.Activities.Presentation.SourceLocationUpdatedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Activities::Presentation::SourceLocationUpdatedEventArgs ^&gt; ^ SourceLocationUpdated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -125,6 +152,9 @@
       <MemberSignature Language="C#" Value="public bool TryGetObject (Guid objectReferenceId, out object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObject(valuetype System.Guid objectReferenceId, [out] object&amp; obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ObjectReferenceService.TryGetObject(System.Guid,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetObject (objectReferenceId As Guid, ByRef obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetObject : Guid *  -&gt; bool" Usage="objectReferenceService.TryGetObject (objectReferenceId, obj)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetObject(Guid objectReferenceId, [Runtime::InteropServices::Out] System::Object ^ % obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -146,14 +176,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AcquireObjectReference">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Acquires an actual reference of an object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

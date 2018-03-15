@@ -1,7 +1,10 @@
-<Type Name="DebuggerStepperBoundaryAttribute" FullName="System.Diagnostics.DebuggerStepperBoundaryAttribute">
+﻿<Type Name="DebuggerStepperBoundaryAttribute" FullName="System.Diagnostics.DebuggerStepperBoundaryAttribute">
   <TypeSignature Language="C#" Value="public sealed class DebuggerStepperBoundaryAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DebuggerStepperBoundaryAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DebuggerStepperBoundaryAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DebuggerStepperBoundaryAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type DebuggerStepperBoundaryAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DebuggerStepperBoundaryAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public DebuggerStepperBoundaryAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DebuggerStepperBoundaryAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DebuggerStepperBoundaryAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

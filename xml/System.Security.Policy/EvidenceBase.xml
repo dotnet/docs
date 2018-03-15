@@ -1,7 +1,10 @@
-<Type Name="EvidenceBase" FullName="System.Security.Policy.EvidenceBase">
+﻿<Type Name="EvidenceBase" FullName="System.Security.Policy.EvidenceBase">
   <TypeSignature Language="C#" Value="public abstract class EvidenceBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit EvidenceBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.EvidenceBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class EvidenceBase" />
+  <TypeSignature Language="F#" Value="type EvidenceBase = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EvidenceBase abstract" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +40,8 @@
       <MemberSignature Language="C#" Value="protected EvidenceBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.EvidenceBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EvidenceBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -65,6 +70,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.Policy.EvidenceBase Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.EvidenceBase Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.EvidenceBase.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As EvidenceBase" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Security.Policy.EvidenceBase&#xA;override this.Clone : unit -&gt; System.Security.Policy.EvidenceBase" Usage="evidenceBase.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::EvidenceBase ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

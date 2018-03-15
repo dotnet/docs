@@ -1,7 +1,10 @@
-<Type Name="WebReferenceOptions" FullName="System.Web.Services.Description.WebReferenceOptions">
+﻿<Type Name="WebReferenceOptions" FullName="System.Web.Services.Description.WebReferenceOptions">
   <TypeSignature Language="C#" Value="public class WebReferenceOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebReferenceOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.WebReferenceOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebReferenceOptions" />
+  <TypeSignature Language="F#" Value="type WebReferenceOptions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebReferenceOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public WebReferenceOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.WebReferenceOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebReferenceOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.CodeGenerationOptions CodeGenerationOptions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Serialization.CodeGenerationOptions CodeGenerationOptions" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.WebReferenceOptions.CodeGenerationOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property CodeGenerationOptions As CodeGenerationOptions" />
+      <MemberSignature Language="F#" Value="member this.CodeGenerationOptions : System.Xml.Serialization.CodeGenerationOptions with get, set" Usage="System.Web.Services.Description.WebReferenceOptions.CodeGenerationOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::CodeGenerationOptions CodeGenerationOptions { System::Xml::Serialization::CodeGenerationOptions get(); void set(System::Xml::Serialization::CodeGenerationOptions value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -49,7 +57,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Xml.Serialization.XmlElement("codeGenerationOptions")</AttributeName>
@@ -64,10 +72,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Read">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a new instance of <see cref="T:System.Web.Services.Description.WebReferenceOptions" /> based on the code generation options described in the specified input.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Read">
       <MemberSignature Language="C#" Value="public static System.Web.Services.Description.WebReferenceOptions Read (System.IO.Stream stream, System.Xml.Schema.ValidationEventHandler validationEventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.WebReferenceOptions Read(class System.IO.Stream stream, class System.Xml.Schema.ValidationEventHandler validationEventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.WebReferenceOptions.Read(System.IO.Stream,System.Xml.Schema.ValidationEventHandler)" />
+      <MemberSignature Language="F#" Value="static member Read : System.IO.Stream * System.Xml.Schema.ValidationEventHandler -&gt; System.Web.Services.Description.WebReferenceOptions" Usage="System.Web.Services.Description.WebReferenceOptions.Read (stream, validationEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Services::Description::WebReferenceOptions ^ Read(System::IO::Stream ^ stream, System::Xml::Schema::ValidationEventHandler ^ validationEventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -92,6 +111,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.Services.Description.WebReferenceOptions Read (System.IO.TextReader reader, System.Xml.Schema.ValidationEventHandler validationEventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.WebReferenceOptions Read(class System.IO.TextReader reader, class System.Xml.Schema.ValidationEventHandler validationEventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.WebReferenceOptions.Read(System.IO.TextReader,System.Xml.Schema.ValidationEventHandler)" />
+      <MemberSignature Language="F#" Value="static member Read : System.IO.TextReader * System.Xml.Schema.ValidationEventHandler -&gt; System.Web.Services.Description.WebReferenceOptions" Usage="System.Web.Services.Description.WebReferenceOptions.Read (reader, validationEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Services::Description::WebReferenceOptions ^ Read(System::IO::TextReader ^ reader, System::Xml::Schema::ValidationEventHandler ^ validationEventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -116,6 +137,8 @@
       <MemberSignature Language="C#" Value="public static System.Web.Services.Description.WebReferenceOptions Read (System.Xml.XmlReader xmlReader, System.Xml.Schema.ValidationEventHandler validationEventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.Services.Description.WebReferenceOptions Read(class System.Xml.XmlReader xmlReader, class System.Xml.Schema.ValidationEventHandler validationEventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.WebReferenceOptions.Read(System.Xml.XmlReader,System.Xml.Schema.ValidationEventHandler)" />
+      <MemberSignature Language="F#" Value="static member Read : System.Xml.XmlReader * System.Xml.Schema.ValidationEventHandler -&gt; System.Web.Services.Description.WebReferenceOptions" Usage="System.Web.Services.Description.WebReferenceOptions.Read (xmlReader, validationEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::Services::Description::WebReferenceOptions ^ Read(System::Xml::XmlReader ^ xmlReader, System::Xml::Schema::ValidationEventHandler ^ validationEventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -140,6 +163,9 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Schema.XmlSchema Schema { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Xml.Schema.XmlSchema Schema" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.WebReferenceOptions.Schema" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Schema As XmlSchema" />
+      <MemberSignature Language="F#" Value="member this.Schema : System.Xml.Schema.XmlSchema" Usage="System.Web.Services.Description.WebReferenceOptions.Schema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Schema::XmlSchema ^ Schema { System::Xml::Schema::XmlSchema ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -158,6 +184,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection SchemaImporterExtensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection SchemaImporterExtensions" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.WebReferenceOptions.SchemaImporterExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SchemaImporterExtensions As StringCollection" />
+      <MemberSignature Language="F#" Value="member this.SchemaImporterExtensions : System.Collections.Specialized.StringCollection" Usage="System.Web.Services.Description.WebReferenceOptions.SchemaImporterExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ SchemaImporterExtensions { System::Collections::Specialized::StringCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -184,6 +213,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.ServiceDescriptionImportStyle Style { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Description.ServiceDescriptionImportStyle Style" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.WebReferenceOptions.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Property Style As ServiceDescriptionImportStyle" />
+      <MemberSignature Language="F#" Value="member this.Style : System.Web.Services.Description.ServiceDescriptionImportStyle with get, set" Usage="System.Web.Services.Description.WebReferenceOptions.Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::ServiceDescriptionImportStyle Style { System::Web::Services::Description::ServiceDescriptionImportStyle get(); void set(System::Web::Services::Description::ServiceDescriptionImportStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -210,6 +242,9 @@
       <MemberSignature Language="C#" Value="public const string TargetNamespace;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string TargetNamespace" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.WebReferenceOptions.TargetNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Const TargetNamespace As String " />
+      <MemberSignature Language="F#" Value="val mutable TargetNamespace : string" Usage="System.Web.Services.Description.WebReferenceOptions.TargetNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ TargetNamespace;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -227,6 +262,9 @@
       <MemberSignature Language="C#" Value="public bool Verbose { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Verbose" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.WebReferenceOptions.Verbose" />
+      <MemberSignature Language="VB.NET" Value="Public Property Verbose As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Verbose : bool with get, set" Usage="System.Web.Services.Description.WebReferenceOptions.Verbose" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Verbose { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -247,14 +285,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Read">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a new instance of <see cref="T:System.Web.Services.Description.WebReferenceOptions" /> based on the code generation options described in the specified input.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

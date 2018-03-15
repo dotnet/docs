@@ -1,7 +1,10 @@
-<Type Name="QueryContinueDragEventArgs" FullName="System.Windows.Forms.QueryContinueDragEventArgs">
+﻿<Type Name="QueryContinueDragEventArgs" FullName="System.Windows.Forms.QueryContinueDragEventArgs">
   <TypeSignature Language="C#" Value="public class QueryContinueDragEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryContinueDragEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.QueryContinueDragEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class QueryContinueDragEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type QueryContinueDragEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class QueryContinueDragEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="public QueryContinueDragEventArgs (int keyState, bool escapePressed, System.Windows.Forms.DragAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 keyState, bool escapePressed, valuetype System.Windows.Forms.DragAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.QueryContinueDragEventArgs.#ctor(System.Int32,System.Boolean,System.Windows.Forms.DragAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (keyState As Integer, escapePressed As Boolean, action As DragAction)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.QueryContinueDragEventArgs : int * bool * System.Windows.Forms.DragAction -&gt; System.Windows.Forms.QueryContinueDragEventArgs" Usage="new System.Windows.Forms.QueryContinueDragEventArgs (keyState, escapePressed, action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryContinueDragEventArgs(int keyState, bool escapePressed, System::Windows::Forms::DragAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -71,6 +77,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DragAction Action { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DragAction Action" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.QueryContinueDragEventArgs.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As DragAction" />
+      <MemberSignature Language="F#" Value="member this.Action : System.Windows.Forms.DragAction with get, set" Usage="System.Windows.Forms.QueryContinueDragEventArgs.Action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DragAction Action { System::Windows::Forms::DragAction get(); void set(System::Windows::Forms::DragAction value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +116,9 @@
       <MemberSignature Language="C#" Value="public bool EscapePressed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EscapePressed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.QueryContinueDragEventArgs.EscapePressed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EscapePressed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EscapePressed : bool" Usage="System.Windows.Forms.QueryContinueDragEventArgs.EscapePressed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EscapePressed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -144,6 +156,9 @@
       <MemberSignature Language="C#" Value="public int KeyState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeyState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.QueryContinueDragEventArgs.KeyState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyState As Integer" />
+      <MemberSignature Language="F#" Value="member this.KeyState : int" Usage="System.Windows.Forms.QueryContinueDragEventArgs.KeyState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeyState { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="WebSocketState" FullName="System.Net.WebSockets.WebSocketState">
+﻿<Type Name="WebSocketState" FullName="System.Net.WebSockets.WebSocketState">
   <TypeSignature Language="C#" Value="public enum WebSocketState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebSocketState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.WebSocketState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WebSocketState" />
+  <TypeSignature Language="F#" Value="type WebSocketState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class WebSocketState" />
   <AssemblyInfo>
     <AssemblyName>System.Net.WebSockets</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="Aborted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketState Aborted = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.Aborted" />
+      <MemberSignature Language="VB.NET" Value="Aborted" />
+      <MemberSignature Language="F#" Value="Aborted = 6" Usage="System.Net.WebSockets.WebSocketState.Aborted" />
+      <MemberSignature Language="C++ CLI" Value="Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Reserved for future use.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="Closed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketState Closed = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.Closed" />
+      <MemberSignature Language="VB.NET" Value="Closed" />
+      <MemberSignature Language="F#" Value="Closed = 5" Usage="System.Net.WebSockets.WebSocketState.Closed" />
+      <MemberSignature Language="C++ CLI" Value="Closed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Indicates the WebSocket close handshake completed gracefully.</summary>
       </Docs>
@@ -80,6 +91,9 @@
       <MemberSignature Language="C#" Value="CloseReceived" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketState CloseReceived = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.CloseReceived" />
+      <MemberSignature Language="VB.NET" Value="CloseReceived" />
+      <MemberSignature Language="F#" Value="CloseReceived = 4" Usage="System.Net.WebSockets.WebSocketState.CloseReceived" />
+      <MemberSignature Language="C++ CLI" Value="CloseReceived" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -98,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A close message was received from the remote endpoint.</summary>
       </Docs>
@@ -106,6 +121,9 @@
       <MemberSignature Language="C#" Value="CloseSent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketState CloseSent = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.CloseSent" />
+      <MemberSignature Language="VB.NET" Value="CloseSent" />
+      <MemberSignature Language="F#" Value="CloseSent = 3" Usage="System.Net.WebSockets.WebSocketState.CloseSent" />
+      <MemberSignature Language="C++ CLI" Value="CloseSent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -124,6 +142,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A close message was sent to the remote endpoint.</summary>
       </Docs>
@@ -132,6 +151,9 @@
       <MemberSignature Language="C#" Value="Connecting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketState Connecting = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.Connecting" />
+      <MemberSignature Language="VB.NET" Value="Connecting" />
+      <MemberSignature Language="F#" Value="Connecting = 1" Usage="System.Net.WebSockets.WebSocketState.Connecting" />
+      <MemberSignature Language="C++ CLI" Value="Connecting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -150,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The connection is negotiating the handshake with the remote endpoint.</summary>
       </Docs>
@@ -158,6 +181,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketState None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Net.WebSockets.WebSocketState.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -176,6 +202,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Reserved for future use.</summary>
       </Docs>
@@ -184,6 +211,9 @@
       <MemberSignature Language="C#" Value="Open" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketState Open = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketState.Open" />
+      <MemberSignature Language="VB.NET" Value="Open" />
+      <MemberSignature Language="F#" Value="Open = 2" Usage="System.Net.WebSockets.WebSocketState.Open" />
+      <MemberSignature Language="C++ CLI" Value="Open" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -202,6 +232,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The initial state after the HTTP handshake has been completed.</summary>
       </Docs>

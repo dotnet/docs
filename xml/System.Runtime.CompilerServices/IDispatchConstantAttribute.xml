@@ -1,7 +1,10 @@
-<Type Name="IDispatchConstantAttribute" FullName="System.Runtime.CompilerServices.IDispatchConstantAttribute">
+﻿<Type Name="IDispatchConstantAttribute" FullName="System.Runtime.CompilerServices.IDispatchConstantAttribute">
   <TypeSignature Language="C#" Value="public sealed class IDispatchConstantAttribute : System.Runtime.CompilerServices.CustomConstantAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit IDispatchConstantAttribute extends System.Runtime.CompilerServices.CustomConstantAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.IDispatchConstantAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IDispatchConstantAttribute&#xA;Inherits CustomConstantAttribute" />
+  <TypeSignature Language="F#" Value="type IDispatchConstantAttribute = class&#xA;    inherit CustomConstantAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IDispatchConstantAttribute sealed : System::Runtime::CompilerServices::CustomConstantAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public IDispatchConstantAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.IDispatchConstantAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IDispatchConstantAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -57,6 +62,9 @@
       <MemberSignature Language="C#" Value="public override object Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.IDispatchConstantAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Runtime.CompilerServices.IDispatchConstantAttribute.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

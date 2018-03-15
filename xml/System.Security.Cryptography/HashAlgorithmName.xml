@@ -1,7 +1,10 @@
-<Type Name="HashAlgorithmName" FullName="System.Security.Cryptography.HashAlgorithmName">
+﻿<Type Name="HashAlgorithmName" FullName="System.Security.Cryptography.HashAlgorithmName">
   <TypeSignature Language="C#" Value="public struct HashAlgorithmName : IEquatable&lt;System.Security.Cryptography.HashAlgorithmName&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit HashAlgorithmName extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Security.Cryptography.HashAlgorithmName&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.HashAlgorithmName" />
+  <TypeSignature Language="VB.NET" Value="Public Structure HashAlgorithmName&#xA;Implements IEquatable(Of HashAlgorithmName)" />
+  <TypeSignature Language="F#" Value="type HashAlgorithmName = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class HashAlgorithmName : IEquatable&lt;System::Security::Cryptography::HashAlgorithmName&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +51,9 @@
       <MemberSignature Language="C#" Value="public HashAlgorithmName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithmName.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.HashAlgorithmName : string -&gt; System.Security.Cryptography.HashAlgorithmName" Usage="new System.Security.Cryptography.HashAlgorithmName name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HashAlgorithmName(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -79,10 +85,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether two <see cref="T:System.Security.Cryptography.HashAlgorithmName" /> values are equal.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithmName.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="hashAlgorithmName.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -116,7 +135,13 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Security.Cryptography.HashAlgorithmName other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Security.Cryptography.HashAlgorithmName other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithmName.Equals(System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As HashAlgorithmName) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Security.Cryptography.HashAlgorithmName -&gt; bool" Usage="hashAlgorithmName.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Security::Cryptography::HashAlgorithmName other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -149,6 +174,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithmName.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="hashAlgorithmName.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -178,6 +206,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.HashAlgorithmName MD5 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.HashAlgorithmName MD5" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HashAlgorithmName.MD5" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MD5 As HashAlgorithmName" />
+      <MemberSignature Language="F#" Value="member this.MD5 : System.Security.Cryptography.HashAlgorithmName" Usage="System.Security.Cryptography.HashAlgorithmName.MD5" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::HashAlgorithmName MD5 { System::Security::Cryptography::HashAlgorithmName get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -206,6 +237,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HashAlgorithmName.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Security.Cryptography.HashAlgorithmName.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -234,6 +268,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Security.Cryptography.HashAlgorithmName left, System.Security.Cryptography.HashAlgorithmName right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Security.Cryptography.HashAlgorithmName left, valuetype System.Security.Cryptography.HashAlgorithmName right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithmName.op_Equality(System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As HashAlgorithmName, right As HashAlgorithmName) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.HashAlgorithmName -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Security::Cryptography::HashAlgorithmName left, System::Security::Cryptography::HashAlgorithmName right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -276,6 +313,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Security.Cryptography.HashAlgorithmName left, System.Security.Cryptography.HashAlgorithmName right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Security.Cryptography.HashAlgorithmName left, valuetype System.Security.Cryptography.HashAlgorithmName right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithmName.op_Inequality(System.Security.Cryptography.HashAlgorithmName,System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As HashAlgorithmName, right As HashAlgorithmName) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Security.Cryptography.HashAlgorithmName * System.Security.Cryptography.HashAlgorithmName -&gt; bool" Usage="System.Security.Cryptography.HashAlgorithmName.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Security::Cryptography::HashAlgorithmName left, System::Security::Cryptography::HashAlgorithmName right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -318,6 +358,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.HashAlgorithmName SHA1 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.HashAlgorithmName SHA1" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HashAlgorithmName.SHA1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SHA1 As HashAlgorithmName" />
+      <MemberSignature Language="F#" Value="member this.SHA1 : System.Security.Cryptography.HashAlgorithmName" Usage="System.Security.Cryptography.HashAlgorithmName.SHA1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::HashAlgorithmName SHA1 { System::Security::Cryptography::HashAlgorithmName get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -346,6 +389,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.HashAlgorithmName SHA256 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.HashAlgorithmName SHA256" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HashAlgorithmName.SHA256" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SHA256 As HashAlgorithmName" />
+      <MemberSignature Language="F#" Value="member this.SHA256 : System.Security.Cryptography.HashAlgorithmName" Usage="System.Security.Cryptography.HashAlgorithmName.SHA256" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::HashAlgorithmName SHA256 { System::Security::Cryptography::HashAlgorithmName get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -374,6 +420,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.HashAlgorithmName SHA384 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.HashAlgorithmName SHA384" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HashAlgorithmName.SHA384" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SHA384 As HashAlgorithmName" />
+      <MemberSignature Language="F#" Value="member this.SHA384 : System.Security.Cryptography.HashAlgorithmName" Usage="System.Security.Cryptography.HashAlgorithmName.SHA384" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::HashAlgorithmName SHA384 { System::Security::Cryptography::HashAlgorithmName get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -402,6 +451,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.HashAlgorithmName SHA512 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Security.Cryptography.HashAlgorithmName SHA512" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HashAlgorithmName.SHA512" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SHA512 As HashAlgorithmName" />
+      <MemberSignature Language="F#" Value="member this.SHA512 : System.Security.Cryptography.HashAlgorithmName" Usage="System.Security.Cryptography.HashAlgorithmName.SHA512" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::HashAlgorithmName SHA512 { System::Security::Cryptography::HashAlgorithmName get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -430,6 +482,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HashAlgorithmName.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="hashAlgorithmName.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -462,15 +517,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether two <see cref="T:System.Security.Cryptography.HashAlgorithmName" /> values are equal.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

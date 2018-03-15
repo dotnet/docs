@@ -1,7 +1,10 @@
-<Type Name="CaseInsensitiveComparer" FullName="System.Collections.CaseInsensitiveComparer">
+﻿<Type Name="CaseInsensitiveComparer" FullName="System.Collections.CaseInsensitiveComparer">
   <TypeSignature Language="C#" Value="public class CaseInsensitiveComparer : System.Collections.IComparer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CaseInsensitiveComparer extends System.Object implements class System.Collections.IComparer" />
   <TypeSignature Language="DocId" Value="T:System.Collections.CaseInsensitiveComparer" />
+  <TypeSignature Language="VB.NET" Value="Public Class CaseInsensitiveComparer&#xA;Implements IComparer" />
+  <TypeSignature Language="F#" Value="type CaseInsensitiveComparer = class&#xA;    interface IComparer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CaseInsensitiveComparer : System::Collections::IComparer" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.NonGeneric</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -63,10 +66,22 @@
     <altmember cref="T:System.Collections.CaseInsensitiveHashCodeProvider" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.CaseInsensitiveComparer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CaseInsensitiveComparer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CaseInsensitiveComparer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CaseInsensitiveComparer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -111,6 +126,9 @@
       <MemberSignature Language="C#" Value="public CaseInsensitiveComparer (System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CaseInsensitiveComparer.#ctor(System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (culture As CultureInfo)" />
+      <MemberSignature Language="F#" Value="new System.Collections.CaseInsensitiveComparer : System.Globalization.CultureInfo -&gt; System.Collections.CaseInsensitiveComparer" Usage="new System.Collections.CaseInsensitiveComparer culture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CaseInsensitiveComparer(System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -159,7 +177,13 @@
       <MemberSignature Language="C#" Value="public int Compare (object a, object b);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(object a, object b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.CaseInsensitiveComparer.Compare(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Compare (a As Object, b As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Compare : obj * obj -&gt; int&#xA;override this.Compare : obj * obj -&gt; int" Usage="caseInsensitiveComparer.Compare (a, b)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Compare(System::Object ^ a, System::Object ^ b);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IComparer.Compare(System.Object,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -231,6 +255,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.CaseInsensitiveComparer Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.CaseInsensitiveComparer Default" />
       <MemberSignature Language="DocId" Value="P:System.Collections.CaseInsensitiveComparer.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As CaseInsensitiveComparer" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Collections.CaseInsensitiveComparer" Usage="System.Collections.CaseInsensitiveComparer.Default" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::CaseInsensitiveComparer ^ Default { System::Collections::CaseInsensitiveComparer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -268,6 +295,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.CaseInsensitiveComparer DefaultInvariant { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.CaseInsensitiveComparer DefaultInvariant" />
       <MemberSignature Language="DocId" Value="P:System.Collections.CaseInsensitiveComparer.DefaultInvariant" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultInvariant As CaseInsensitiveComparer" />
+      <MemberSignature Language="F#" Value="member this.DefaultInvariant : System.Collections.CaseInsensitiveComparer" Usage="System.Collections.CaseInsensitiveComparer.DefaultInvariant" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::CaseInsensitiveComparer ^ DefaultInvariant { System::Collections::CaseInsensitiveComparer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -310,15 +340,5 @@
         <altmember cref="T:System.Globalization.CompareInfo" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.CaseInsensitiveComparer" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

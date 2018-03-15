@@ -1,7 +1,10 @@
-<Type Name="BypassElementCollection" FullName="System.Net.Configuration.BypassElementCollection">
+﻿<Type Name="BypassElementCollection" FullName="System.Net.Configuration.BypassElementCollection">
   <TypeSignature Language="C#" Value="public sealed class BypassElementCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BypassElementCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.BypassElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BypassElementCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type BypassElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BypassElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,8 @@
       <MemberSignature Language="C#" Value="public BypassElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BypassElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -46,6 +51,9 @@
       <MemberSignature Language="C#" Value="public void Add (System.Net.Configuration.BypassElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Net.Configuration.BypassElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.Add(System.Net.Configuration.BypassElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (element As BypassElement)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Net.Configuration.BypassElement -&gt; unit" Usage="bypassElementCollection.Add element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Net::Configuration::BypassElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +75,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="bypassElementCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +96,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="bypassElementCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -104,6 +118,9 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="bypassElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -131,6 +148,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Net.Configuration.BypassElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Net.Configuration.BypassElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.IndexOf(System.Net.Configuration.BypassElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As BypassElement) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Net.Configuration.BypassElement -&gt; int" Usage="bypassElementCollection.IndexOf element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Net::Configuration::BypassElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -149,10 +169,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the element with the specified index or key.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Net.Configuration.BypassElement this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Configuration.BypassElement Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.BypassElementCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As BypassElement" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Net.Configuration.BypassElement with get, set" Usage="System.Net.Configuration.BypassElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::BypassElement ^ default[int] { System::Net::Configuration::BypassElement ^ get(int index); void set(int index, System::Net::Configuration::BypassElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -180,6 +212,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.BypassElement this[string name] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Configuration.BypassElement Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.BypassElementCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As BypassElement" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Net.Configuration.BypassElement with get, set" Usage="System.Net.Configuration.BypassElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::BypassElement ^ default[System::String ^] { System::Net::Configuration::BypassElement ^ get(System::String ^ name); void set(System::String ^ name, System::Net::Configuration::BypassElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -200,10 +235,22 @@
         <altmember cref="T:System.Net.AuthenticationManager" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an element from the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (System.Net.Configuration.BypassElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Net.Configuration.BypassElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.Remove(System.Net.Configuration.BypassElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (element As BypassElement)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Net.Configuration.BypassElement -&gt; unit" Usage="bypassElementCollection.Remove element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Net::Configuration::BypassElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -225,6 +272,9 @@
       <MemberSignature Language="C#" Value="public void Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="bypassElementCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -246,6 +296,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.BypassElementCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="bypassElementCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -267,6 +320,9 @@
       <MemberSignature Language="C#" Value="protected override bool ThrowOnDuplicate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ThrowOnDuplicate" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.BypassElementCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ThrowOnDuplicate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ThrowOnDuplicate : bool" Usage="System.Net.Configuration.BypassElementCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ThrowOnDuplicate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -281,23 +337,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Remove">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes an element from the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets the element with the specified index or key.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

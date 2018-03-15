@@ -1,7 +1,10 @@
-<Type Name="LinkBehavior" FullName="System.Windows.Forms.LinkBehavior">
+﻿<Type Name="LinkBehavior" FullName="System.Windows.Forms.LinkBehavior">
   <TypeSignature Language="C#" Value="public enum LinkBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LinkBehavior extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LinkBehavior" />
+  <TypeSignature Language="F#" Value="type LinkBehavior = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LinkBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="AlwaysUnderline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.LinkBehavior AlwaysUnderline = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkBehavior.AlwaysUnderline" />
+      <MemberSignature Language="VB.NET" Value="AlwaysUnderline" />
+      <MemberSignature Language="F#" Value="AlwaysUnderline = 1" Usage="System.Windows.Forms.LinkBehavior.AlwaysUnderline" />
+      <MemberSignature Language="C++ CLI" Value="AlwaysUnderline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -44,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.LinkBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The link always displays with underlined text.</summary>
       </Docs>
@@ -52,6 +59,9 @@
       <MemberSignature Language="C#" Value="HoverUnderline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.LinkBehavior HoverUnderline = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkBehavior.HoverUnderline" />
+      <MemberSignature Language="VB.NET" Value="HoverUnderline" />
+      <MemberSignature Language="F#" Value="HoverUnderline = 2" Usage="System.Windows.Forms.LinkBehavior.HoverUnderline" />
+      <MemberSignature Language="C++ CLI" Value="HoverUnderline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.LinkBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The link displays underlined text only when the mouse is hovered over the link text.</summary>
       </Docs>
@@ -68,6 +79,9 @@
       <MemberSignature Language="C#" Value="NeverUnderline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.LinkBehavior NeverUnderline = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkBehavior.NeverUnderline" />
+      <MemberSignature Language="VB.NET" Value="NeverUnderline" />
+      <MemberSignature Language="F#" Value="NeverUnderline = 3" Usage="System.Windows.Forms.LinkBehavior.NeverUnderline" />
+      <MemberSignature Language="C++ CLI" Value="NeverUnderline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -76,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.LinkBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The link text is never underlined. The link can still be distinguished from other text by use of the <see cref="P:System.Windows.Forms.LinkLabel.LinkColor" /> property of the <see cref="T:System.Windows.Forms.LinkLabel" /> control.</summary>
       </Docs>
@@ -84,6 +99,9 @@
       <MemberSignature Language="C#" Value="SystemDefault" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.LinkBehavior SystemDefault = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.LinkBehavior.SystemDefault" />
+      <MemberSignature Language="VB.NET" Value="SystemDefault" />
+      <MemberSignature Language="F#" Value="SystemDefault = 0" Usage="System.Windows.Forms.LinkBehavior.SystemDefault" />
+      <MemberSignature Language="C++ CLI" Value="SystemDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -92,6 +110,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.LinkBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The behavior of this setting depends on the options set using the Internet Options dialog box in Control Panel or Internet Explorer.</summary>
       </Docs>

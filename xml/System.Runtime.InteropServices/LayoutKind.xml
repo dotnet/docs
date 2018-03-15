@@ -1,7 +1,10 @@
-<Type Name="LayoutKind" FullName="System.Runtime.InteropServices.LayoutKind">
+﻿<Type Name="LayoutKind" FullName="System.Runtime.InteropServices.LayoutKind">
   <TypeSignature Language="C#" Value="public enum LayoutKind" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed LayoutKind extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.LayoutKind" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LayoutKind" />
+  <TypeSignature Language="F#" Value="type LayoutKind = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LayoutKind" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +58,9 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.LayoutKind Auto = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.LayoutKind.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 3" Usage="System.Runtime.InteropServices.LayoutKind.Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -76,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.LayoutKind</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The runtime automatically chooses an appropriate layout for the members of an object in unmanaged memory. Objects defined with this enumeration member cannot be exposed outside of managed code. Attempting to do so generates an exception.</summary>
       </Docs>
@@ -84,6 +91,9 @@
       <MemberSignature Language="C#" Value="Explicit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.LayoutKind Explicit = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.LayoutKind.Explicit" />
+      <MemberSignature Language="VB.NET" Value="Explicit" />
+      <MemberSignature Language="F#" Value="Explicit = 2" Usage="System.Runtime.InteropServices.LayoutKind.Explicit" />
+      <MemberSignature Language="C++ CLI" Value="Explicit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -105,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.LayoutKind</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The precise position of each member of an object in unmanaged memory is explicitly controlled, subject to the setting of the <see cref="F:System.Runtime.InteropServices.StructLayoutAttribute.Pack" /> field. Each member must use the <see cref="T:System.Runtime.InteropServices.FieldOffsetAttribute" /> to indicate the position of that field within the type.</summary>
       </Docs>
@@ -113,6 +124,9 @@
       <MemberSignature Language="C#" Value="Sequential" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.LayoutKind Sequential = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.LayoutKind.Sequential" />
+      <MemberSignature Language="VB.NET" Value="Sequential" />
+      <MemberSignature Language="F#" Value="Sequential = 0" Usage="System.Runtime.InteropServices.LayoutKind.Sequential" />
+      <MemberSignature Language="C++ CLI" Value="Sequential" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -134,6 +148,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.LayoutKind</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The members of the object are laid out sequentially, in the order in which they appear when exported to unmanaged memory. The members are laid out according to the packing specified in <see cref="F:System.Runtime.InteropServices.StructLayoutAttribute.Pack" />, and can be noncontiguous.</summary>
       </Docs>

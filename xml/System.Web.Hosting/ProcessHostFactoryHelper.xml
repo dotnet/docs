@@ -1,7 +1,10 @@
-<Type Name="ProcessHostFactoryHelper" FullName="System.Web.Hosting.ProcessHostFactoryHelper">
+﻿<Type Name="ProcessHostFactoryHelper" FullName="System.Web.Hosting.ProcessHostFactoryHelper">
   <TypeSignature Language="C#" Value="public sealed class ProcessHostFactoryHelper : MarshalByRefObject, System.Web.Hosting.IProcessHostFactoryHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProcessHostFactoryHelper extends System.MarshalByRefObject implements class System.Web.Hosting.IProcessHostFactoryHelper" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ProcessHostFactoryHelper" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProcessHostFactoryHelper&#xA;Inherits MarshalByRefObject&#xA;Implements IProcessHostFactoryHelper" />
+  <TypeSignature Language="F#" Value="type ProcessHostFactoryHelper = class&#xA;    inherit MarshalByRefObject&#xA;    interface IProcessHostFactoryHelper" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProcessHostFactoryHelper sealed : MarshalByRefObject, System::Web::Hosting::IProcessHostFactoryHelper" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,8 @@
       <MemberSignature Language="C#" Value="public ProcessHostFactoryHelper ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHostFactoryHelper.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProcessHostFactoryHelper();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -54,7 +59,13 @@
       <MemberSignature Language="C#" Value="public object GetProcessHost (System.Web.Hosting.IProcessHostSupportFunctions functions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetProcessHost(class System.Web.Hosting.IProcessHostSupportFunctions functions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHostFactoryHelper.GetProcessHost(System.Web.Hosting.IProcessHostSupportFunctions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProcessHost (functions As IProcessHostSupportFunctions) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetProcessHost : System.Web.Hosting.IProcessHostSupportFunctions -&gt; obj&#xA;override this.GetProcessHost : System.Web.Hosting.IProcessHostSupportFunctions -&gt; obj" Usage="processHostFactoryHelper.GetProcessHost functions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetProcessHost(System::Web::Hosting::IProcessHostSupportFunctions ^ functions);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.Hosting.IProcessHostFactoryHelper.GetProcessHost(System.Web.Hosting.IProcessHostSupportFunctions)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +95,9 @@
       <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.ProcessHostFactoryHelper.InitializeLifetimeService" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="processHostFactoryHelper.InitializeLifetimeService " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

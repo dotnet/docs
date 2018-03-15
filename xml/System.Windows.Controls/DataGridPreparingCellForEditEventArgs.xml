@@ -1,7 +1,10 @@
-<Type Name="DataGridPreparingCellForEditEventArgs" FullName="System.Windows.Controls.DataGridPreparingCellForEditEventArgs">
+﻿<Type Name="DataGridPreparingCellForEditEventArgs" FullName="System.Windows.Controls.DataGridPreparingCellForEditEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridPreparingCellForEditEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridPreparingCellForEditEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridPreparingCellForEditEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridPreparingCellForEditEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridPreparingCellForEditEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridPreparingCellForEditEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +24,9 @@
       <MemberSignature Language="C#" Value="public DataGridPreparingCellForEditEventArgs (System.Windows.Controls.DataGridColumn column, System.Windows.Controls.DataGridRow row, System.Windows.RoutedEventArgs editingEventArgs, System.Windows.FrameworkElement editingElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.DataGridColumn column, class System.Windows.Controls.DataGridRow row, class System.Windows.RoutedEventArgs editingEventArgs, class System.Windows.FrameworkElement editingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridPreparingCellForEditEventArgs.#ctor(System.Windows.Controls.DataGridColumn,System.Windows.Controls.DataGridRow,System.Windows.RoutedEventArgs,System.Windows.FrameworkElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (column As DataGridColumn, row As DataGridRow, editingEventArgs As RoutedEventArgs, editingElement As FrameworkElement)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DataGridPreparingCellForEditEventArgs : System.Windows.Controls.DataGridColumn * System.Windows.Controls.DataGridRow * System.Windows.RoutedEventArgs * System.Windows.FrameworkElement -&gt; System.Windows.Controls.DataGridPreparingCellForEditEventArgs" Usage="new System.Windows.Controls.DataGridPreparingCellForEditEventArgs (column, row, editingEventArgs, editingElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridPreparingCellForEditEventArgs(System::Windows::Controls::DataGridColumn ^ column, System::Windows::Controls::DataGridRow ^ row, System::Windows::RoutedEventArgs ^ editingEventArgs, System::Windows::FrameworkElement ^ editingElement);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +53,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.DataGridColumn Column { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataGridColumn Column" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridPreparingCellForEditEventArgs.Column" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As DataGridColumn" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Windows.Controls.DataGridColumn" Usage="System.Windows.Controls.DataGridPreparingCellForEditEventArgs.Column" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridColumn ^ Column { System::Windows::Controls::DataGridColumn ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +76,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.FrameworkElement EditingElement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.FrameworkElement EditingElement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridPreparingCellForEditEventArgs.EditingElement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditingElement As FrameworkElement" />
+      <MemberSignature Language="F#" Value="member this.EditingElement : System.Windows.FrameworkElement" Usage="System.Windows.Controls.DataGridPreparingCellForEditEventArgs.EditingElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::FrameworkElement ^ EditingElement { System::Windows::FrameworkElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -87,6 +99,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.RoutedEventArgs EditingEventArgs { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.RoutedEventArgs EditingEventArgs" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridPreparingCellForEditEventArgs.EditingEventArgs" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EditingEventArgs As RoutedEventArgs" />
+      <MemberSignature Language="F#" Value="member this.EditingEventArgs : System.Windows.RoutedEventArgs" Usage="System.Windows.Controls.DataGridPreparingCellForEditEventArgs.EditingEventArgs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::RoutedEventArgs ^ EditingEventArgs { System::Windows::RoutedEventArgs ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -107,6 +122,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.DataGridRow Row { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataGridRow Row" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridPreparingCellForEditEventArgs.Row" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Row As DataGridRow" />
+      <MemberSignature Language="F#" Value="member this.Row : System.Windows.Controls.DataGridRow" Usage="System.Windows.Controls.DataGridPreparingCellForEditEventArgs.Row" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridRow ^ Row { System::Windows::Controls::DataGridRow ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

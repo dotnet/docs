@@ -1,7 +1,10 @@
-<Type Name="FederationConfigurationElementCollection" FullName="System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection">
+﻿<Type Name="FederationConfigurationElementCollection" FullName="System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection">
   <TypeSignature Language="C#" Value="public sealed class FederationConfigurationElementCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FederationConfigurationElementCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FederationConfigurationElementCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type FederationConfigurationElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FederationConfigurationElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,8 @@
       <MemberSignature Language="C#" Value="public FederationConfigurationElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FederationConfigurationElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -39,6 +44,9 @@
       <MemberSignature Language="C#" Value="protected override void BaseAdd (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void BaseAdd(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection.BaseAdd(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub BaseAdd (element As ConfigurationElement)" />
+      <MemberSignature Language="F#" Value="override this.BaseAdd : System.Configuration.ConfigurationElement -&gt; unit" Usage="federationConfigurationElementCollection.BaseAdd element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void BaseAdd(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -60,6 +68,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="federationConfigurationElementCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -79,6 +90,9 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Services.Configuration.FederationConfigurationElement GetElement (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IdentityModel.Services.Configuration.FederationConfigurationElement GetElement(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection.GetElement(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetElement (name As String) As FederationConfigurationElement" />
+      <MemberSignature Language="F#" Value="member this.GetElement : string -&gt; System.IdentityModel.Services.Configuration.FederationConfigurationElement" Usage="federationConfigurationElementCollection.GetElement name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Services::Configuration::FederationConfigurationElement ^ GetElement(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -111,6 +125,9 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="federationConfigurationElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -133,6 +150,9 @@
       <MemberSignature Language="C#" Value="protected override bool ThrowOnDuplicate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ThrowOnDuplicate" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ThrowOnDuplicate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ThrowOnDuplicate : bool" Usage="System.IdentityModel.Services.Configuration.FederationConfigurationElementCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ThrowOnDuplicate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

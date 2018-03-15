@@ -1,7 +1,10 @@
-<Type Name="SingleType" FullName="Microsoft.VisualBasic.CompilerServices.SingleType">
+﻿<Type Name="SingleType" FullName="Microsoft.VisualBasic.CompilerServices.SingleType">
   <TypeSignature Language="C#" Value="public sealed class SingleType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SingleType extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.SingleType" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SingleType" />
+  <TypeSignature Language="F#" Value="type SingleType = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SingleType sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -49,6 +52,9 @@
       <MemberSignature Language="C#" Value="public static float FromObject (object Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static float32 FromObject(object Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.SingleType.FromObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromObject (Value As Object) As Single" />
+      <MemberSignature Language="F#" Value="static member FromObject : obj -&gt; single" Usage="Microsoft.VisualBasic.CompilerServices.SingleType.FromObject Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float FromObject(System::Object ^ Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -79,6 +85,9 @@
       <MemberSignature Language="C#" Value="public static float FromObject (object Value, System.Globalization.NumberFormatInfo NumberFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public static float32 FromObject(object Value, class System.Globalization.NumberFormatInfo NumberFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.SingleType.FromObject(System.Object,System.Globalization.NumberFormatInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromObject (Value As Object, NumberFormat As NumberFormatInfo) As Single" />
+      <MemberSignature Language="F#" Value="static member FromObject : obj * System.Globalization.NumberFormatInfo -&gt; single" Usage="Microsoft.VisualBasic.CompilerServices.SingleType.FromObject (Value, NumberFormat)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float FromObject(System::Object ^ Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -128,6 +137,9 @@
       <MemberSignature Language="C#" Value="public static float FromString (string Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static float32 FromString(string Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.SingleType.FromString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (Value As String) As Single" />
+      <MemberSignature Language="F#" Value="static member FromString : string -&gt; single" Usage="Microsoft.VisualBasic.CompilerServices.SingleType.FromString Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float FromString(System::String ^ Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -158,6 +170,9 @@
       <MemberSignature Language="C#" Value="public static float FromString (string Value, System.Globalization.NumberFormatInfo NumberFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public static float32 FromString(string Value, class System.Globalization.NumberFormatInfo NumberFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.SingleType.FromString(System.String,System.Globalization.NumberFormatInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (Value As String, NumberFormat As NumberFormatInfo) As Single" />
+      <MemberSignature Language="F#" Value="static member FromString : string * System.Globalization.NumberFormatInfo -&gt; single" Usage="Microsoft.VisualBasic.CompilerServices.SingleType.FromString (Value, NumberFormat)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float FromString(System::String ^ Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

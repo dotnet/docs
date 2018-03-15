@@ -1,7 +1,10 @@
-<Type Name="MimeTextBinding" FullName="System.Web.Services.Description.MimeTextBinding">
+﻿<Type Name="MimeTextBinding" FullName="System.Web.Services.Description.MimeTextBinding">
   <TypeSignature Language="C#" Value="public sealed class MimeTextBinding : System.Web.Services.Description.ServiceDescriptionFormatExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MimeTextBinding extends System.Web.Services.Description.ServiceDescriptionFormatExtension" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MimeTextBinding" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MimeTextBinding&#xA;Inherits ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="F#" Value="type MimeTextBinding = class&#xA;    inherit ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MimeTextBinding sealed : System::Web::Services::Description::ServiceDescriptionFormatExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +45,8 @@
       <MemberSignature Language="C#" Value="public MimeTextBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeTextBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MimeTextBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -58,6 +63,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.MimeTextMatchCollection Matches { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.MimeTextMatchCollection Matches" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeTextBinding.Matches" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Matches As MimeTextMatchCollection" />
+      <MemberSignature Language="F#" Value="member this.Matches : System.Web.Services.Description.MimeTextMatchCollection" Usage="System.Web.Services.Description.MimeTextBinding.Matches" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::MimeTextMatchCollection ^ Matches { System::Web::Services::Description::MimeTextMatchCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -98,6 +106,9 @@
       <MemberSignature Language="C#" Value="public const string Namespace;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string Namespace" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.MimeTextBinding.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Const Namespace As String " />
+      <MemberSignature Language="F#" Value="val mutable Namespace : string" Usage="System.Web.Services.Description.MimeTextBinding.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ Namespace;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

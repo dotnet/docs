@@ -1,7 +1,10 @@
-<Type Name="CSharpValue&lt;TResult&gt;" FullName="Microsoft.CSharp.Activities.CSharpValue&lt;TResult&gt;">
+﻿<Type Name="CSharpValue&lt;TResult&gt;" FullName="Microsoft.CSharp.Activities.CSharpValue&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public class CSharpValue&lt;TResult&gt; : System.Activities.CodeActivity&lt;TResult&gt;, System.Activities.Expressions.ITextExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CSharpValue`1&lt;TResult&gt; extends System.Activities.CodeActivity`1&lt;!TResult&gt; implements class System.Activities.Expressions.ITextExpression" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CSharp.Activities.CSharpValue`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class CSharpValue(Of TResult)&#xA;Inherits CodeActivity(Of TResult)&#xA;Implements ITextExpression" />
+  <TypeSignature Language="F#" Value="type CSharpValue&lt;'Result&gt; = class&#xA;    inherit CodeActivity&lt;'Result&gt;&#xA;    interface ITextExpression" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class CSharpValue : System::Activities::CodeActivity&lt;TResult&gt;, System::Activities::Expressions::ITextExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +37,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.CSharp.Activities.CSharpValue`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CSharpValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.Activities.CSharpValue`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CSharpValue();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -53,6 +67,9 @@
       <MemberSignature Language="C#" Value="public CSharpValue (string expressionText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string expressionText) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.Activities.CSharpValue`1.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (expressionText As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.CSharp.Activities.CSharpValue&lt;'Result&gt; : string -&gt; Microsoft.CSharp.Activities.CSharpValue&lt;'Result&gt;" Usage="new Microsoft.CSharp.Activities.CSharpValue&lt;'Result&gt; expressionText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CSharpValue(System::String ^ expressionText);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -71,6 +88,9 @@
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.CodeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.Activities.CSharpValue`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="cSharpValue.CacheMetadata metadata" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -92,6 +112,9 @@
       <MemberSignature Language="C#" Value="protected override TResult Execute (System.Activities.CodeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance !TResult Execute(class System.Activities.CodeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.Activities.CSharpValue`1.Execute(System.Activities.CodeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As TResult" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; 'Result" Usage="cSharpValue.Execute context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override TResult Execute(System::Activities::CodeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -114,6 +137,9 @@
       <MemberSignature Language="C#" Value="public string ExpressionText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExpressionText" />
       <MemberSignature Language="DocId" Value="P:Microsoft.CSharp.Activities.CSharpValue`1.ExpressionText" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpressionText As String" />
+      <MemberSignature Language="F#" Value="member this.ExpressionText : string with get, set" Usage="Microsoft.CSharp.Activities.CSharpValue&lt;'Result&gt;.ExpressionText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExpressionText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -132,7 +158,13 @@
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.Expression GetExpressionTree ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.Expressions.Expression GetExpressionTree() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.Activities.CSharpValue`1.GetExpressionTree" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetExpressionTree () As Expression" />
+      <MemberSignature Language="F#" Value="abstract member GetExpressionTree : unit -&gt; System.Linq.Expressions.Expression&#xA;override this.GetExpressionTree : unit -&gt; System.Linq.Expressions.Expression" Usage="cSharpValue.GetExpressionTree " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Linq::Expressions::Expression ^ GetExpressionTree();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Activities.Expressions.ITextExpression.GetExpressionTree</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -151,14 +183,20 @@
       <MemberSignature Language="C#" Value="public string Language { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Language" />
       <MemberSignature Language="DocId" Value="P:Microsoft.CSharp.Activities.CSharpValue`1.Language" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Language As String" />
+      <MemberSignature Language="F#" Value="member this.Language : string" Usage="Microsoft.CSharp.Activities.CSharpValue&lt;'Result&gt;.Language" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Activities.Expressions.ITextExpression.Language</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -174,7 +212,13 @@
       <MemberSignature Language="C#" Value="public bool RequiresCompilation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresCompilation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.CSharp.Activities.CSharpValue`1.RequiresCompilation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequiresCompilation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresCompilation : bool" Usage="Microsoft.CSharp.Activities.CSharpValue&lt;'Result&gt;.RequiresCompilation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequiresCompilation { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Activities.Expressions.ITextExpression.RequiresCompilation</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -189,14 +233,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.CSharp.Activities.CSharpValue`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="BuildStatusEventArgs" FullName="Microsoft.Build.Framework.BuildStatusEventArgs">
+﻿<Type Name="BuildStatusEventArgs" FullName="Microsoft.Build.Framework.BuildStatusEventArgs">
   <TypeSignature Language="C#" Value="public abstract class BuildStatusEventArgs : Microsoft.Build.Framework.LazyFormattedBuildEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit BuildStatusEventArgs extends Microsoft.Build.Framework.LazyFormattedBuildEventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildStatusEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BuildStatusEventArgs&#xA;Inherits LazyFormattedBuildEventArgs" />
+  <TypeSignature Language="F#" Value="type BuildStatusEventArgs = class&#xA;    inherit LazyFormattedBuildEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BuildStatusEventArgs abstract : Microsoft::Build::Framework::LazyFormattedBuildEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +25,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStatusEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected BuildStatusEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStatusEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BuildStatusEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -41,6 +55,9 @@
       <MemberSignature Language="C#" Value="protected BuildStatusEventArgs (string message, string helpKeyword, string senderName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, string senderName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStatusEventArgs.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (message As String, helpKeyword As String, senderName As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildStatusEventArgs : string * string * string -&gt; Microsoft.Build.Framework.BuildStatusEventArgs" Usage="new Microsoft.Build.Framework.BuildStatusEventArgs (message, helpKeyword, senderName)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BuildStatusEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -63,6 +80,9 @@
       <MemberSignature Language="C#" Value="protected BuildStatusEventArgs (string message, string helpKeyword, string senderName, DateTime eventTimestamp);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, string senderName, valuetype System.DateTime eventTimestamp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStatusEventArgs.#ctor(System.String,System.String,System.String,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (message As String, helpKeyword As String, senderName As String, eventTimestamp As DateTime)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildStatusEventArgs : string * string * string * DateTime -&gt; Microsoft.Build.Framework.BuildStatusEventArgs" Usage="new Microsoft.Build.Framework.BuildStatusEventArgs (message, helpKeyword, senderName, eventTimestamp)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BuildStatusEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, DateTime eventTimestamp);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -87,6 +107,9 @@
       <MemberSignature Language="C#" Value="protected BuildStatusEventArgs (string message, string helpKeyword, string senderName, DateTime eventTimestamp, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, string senderName, valuetype System.DateTime eventTimestamp, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildStatusEventArgs.#ctor(System.String,System.String,System.String,System.DateTime,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (message As String, helpKeyword As String, senderName As String, eventTimestamp As DateTime, ParamArray messageArgs As Object())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildStatusEventArgs : string * string * string * DateTime * obj[] -&gt; Microsoft.Build.Framework.BuildStatusEventArgs" Usage="new Microsoft.Build.Framework.BuildStatusEventArgs (message, helpKeyword, senderName, eventTimestamp, messageArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BuildStatusEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, DateTime eventTimestamp, ... cli::array &lt;System::Object ^&gt; ^ messageArgs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -115,14 +138,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildStatusEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

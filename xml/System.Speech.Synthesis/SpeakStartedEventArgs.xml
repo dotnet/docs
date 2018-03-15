@@ -1,7 +1,10 @@
-<Type Name="SpeakStartedEventArgs" FullName="System.Speech.Synthesis.SpeakStartedEventArgs">
+﻿<Type Name="SpeakStartedEventArgs" FullName="System.Speech.Synthesis.SpeakStartedEventArgs">
   <TypeSignature Language="C#" Value="public class SpeakStartedEventArgs : System.Speech.Synthesis.PromptEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SpeakStartedEventArgs extends System.Speech.Synthesis.PromptEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.SpeakStartedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SpeakStartedEventArgs&#xA;Inherits PromptEventArgs" />
+  <TypeSignature Language="F#" Value="type SpeakStartedEventArgs = class&#xA;    inherit PromptEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SpeakStartedEventArgs : System::Speech::Synthesis::PromptEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="IWebRequestCreate" FullName="System.Net.IWebRequestCreate">
+﻿<Type Name="IWebRequestCreate" FullName="System.Net.IWebRequestCreate">
   <TypeSignature Language="C#" Value="public interface IWebRequestCreate" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebRequestCreate" />
   <TypeSignature Language="DocId" Value="T:System.Net.IWebRequestCreate" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWebRequestCreate" />
+  <TypeSignature Language="F#" Value="type IWebRequestCreate = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWebRequestCreate" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Requests</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="public System.Net.WebRequest Create (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Net.WebRequest Create(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IWebRequestCreate.Create(System.Uri)" />
+      <MemberSignature Language="F#" Value="abstract member Create : Uri -&gt; System.Net.WebRequest" Usage="iWebRequestCreate.Create uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Net::WebRequest ^ Create(Uri ^ uri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>

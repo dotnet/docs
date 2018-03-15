@@ -1,7 +1,10 @@
-<Type Name="Delete" FullName="Microsoft.Build.Tasks.Delete">
+﻿<Type Name="Delete" FullName="Microsoft.Build.Tasks.Delete">
   <TypeSignature Language="C#" Value="public sealed class Delete : Microsoft.Build.Tasks.TaskExtension, Microsoft.Build.Framework.ICancelableTask" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Delete extends Microsoft.Build.Tasks.TaskExtension implements class Microsoft.Build.Framework.ICancelableTask, class Microsoft.Build.Framework.ITask" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Delete" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Delete&#xA;Inherits TaskExtension&#xA;Implements ICancelableTask" />
+  <TypeSignature Language="F#" Value="type Delete = class&#xA;    inherit TaskExtension&#xA;    interface ICancelableTask&#xA;    interface ITask" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Delete sealed : Microsoft::Build::Tasks::TaskExtension, Microsoft::Build::Framework::ICancelableTask" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,8 @@
       <MemberSignature Language="C#" Value="public Delete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Delete.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Delete();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -40,7 +45,13 @@
       <MemberSignature Language="C#" Value="public void Cancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Delete.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cancel ()" />
+      <MemberSignature Language="F#" Value="abstract member Cancel : unit -&gt; unit&#xA;override this.Cancel : unit -&gt; unit" Usage="delete.Cancel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Cancel();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.ICancelableTask.Cancel</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] DeletedFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] DeletedFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Delete.DeletedFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeletedFiles As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.DeletedFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Delete.DeletedFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ DeletedFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -83,7 +97,13 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Delete.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="delete.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.ITask.Execute</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -104,6 +124,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Files { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Files" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Delete.Files" />
+      <MemberSignature Language="VB.NET" Value="Public Property Files As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.Files : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Delete.Files" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ Files { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -128,6 +151,9 @@
       <MemberSignature Language="C#" Value="public bool TreatErrorsAsWarnings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TreatErrorsAsWarnings" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Delete.TreatErrorsAsWarnings" />
+      <MemberSignature Language="VB.NET" Value="Public Property TreatErrorsAsWarnings As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TreatErrorsAsWarnings : bool with get, set" Usage="Microsoft.Build.Tasks.Delete.TreatErrorsAsWarnings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TreatErrorsAsWarnings { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

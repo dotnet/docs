@@ -1,7 +1,10 @@
-<Type Name="ChallengeResponse2" FullName="Mono.Security.Protocol.Ntlm.ChallengeResponse2">
+﻿<Type Name="ChallengeResponse2" FullName="Mono.Security.Protocol.Ntlm.ChallengeResponse2">
   <TypeSignature Language="C#" Value="public static class ChallengeResponse2" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ChallengeResponse2 extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Mono.Security.Protocol.Ntlm.ChallengeResponse2" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChallengeResponse2" />
+  <TypeSignature Language="F#" Value="type ChallengeResponse2 = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChallengeResponse2 abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public static void Compute (Mono.Security.Protocol.Ntlm.Type2Message type2, Mono.Security.Protocol.Ntlm.NtlmAuthLevel level, string username, string password, string domain, out byte[] lm, out byte[] ntlm);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Compute(class Mono.Security.Protocol.Ntlm.Type2Message type2, valuetype Mono.Security.Protocol.Ntlm.NtlmAuthLevel level, string username, string password, string domain, [out] unsigned int8[]&amp; lm, [out] unsigned int8[]&amp; ntlm) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Protocol.Ntlm.ChallengeResponse2.Compute(Mono.Security.Protocol.Ntlm.Type2Message,Mono.Security.Protocol.Ntlm.NtlmAuthLevel,System.String,System.String,System.String,System.Byte[]@,System.Byte[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Compute (type2 As Type2Message, level As NtlmAuthLevel, username As String, password As String, domain As String, ByRef lm As Byte(), ByRef ntlm As Byte())" />
+      <MemberSignature Language="F#" Value="static member Compute : Mono.Security.Protocol.Ntlm.Type2Message * Mono.Security.Protocol.Ntlm.NtlmAuthLevel * string * string * string *  *  -&gt; unit" Usage="Mono.Security.Protocol.Ntlm.ChallengeResponse2.Compute (type2, level, username, password, domain, lm, ntlm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Compute(Mono::Security::Protocol::Ntlm::Type2Message ^ type2, Mono::Security::Protocol::Ntlm::NtlmAuthLevel level, System::String ^ username, System::String ^ password, System::String ^ domain, [Runtime::InteropServices::Out] cli::array &lt;System::Byte&gt; ^ % lm, [Runtime::InteropServices::Out] cli::array &lt;System::Byte&gt; ^ % ntlm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

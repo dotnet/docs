@@ -1,7 +1,10 @@
-<Type Name="GridViewRowPresenterBase" FullName="System.Windows.Controls.Primitives.GridViewRowPresenterBase">
+﻿<Type Name="GridViewRowPresenterBase" FullName="System.Windows.Controls.Primitives.GridViewRowPresenterBase">
   <TypeSignature Language="C#" Value="public abstract class GridViewRowPresenterBase : System.Windows.FrameworkElement, System.Windows.IWeakEventListener" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit GridViewRowPresenterBase extends System.Windows.FrameworkElement implements class System.Windows.IWeakEventListener" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.GridViewRowPresenterBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class GridViewRowPresenterBase&#xA;Inherits FrameworkElement&#xA;Implements IWeakEventListener" />
+  <TypeSignature Language="F#" Value="type GridViewRowPresenterBase = class&#xA;    inherit FrameworkElement&#xA;    interface IWeakEventListener" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GridViewRowPresenterBase abstract : System::Windows::FrameworkElement, System::Windows::IWeakEventListener" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,8 @@
       <MemberSignature Language="C#" Value="protected GridViewRowPresenterBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GridViewRowPresenterBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; GridViewRowPresenterBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +52,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.GridViewColumnCollection Columns { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.GridViewColumnCollection Columns" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.GridViewRowPresenterBase.Columns" />
+      <MemberSignature Language="VB.NET" Value="Public Property Columns As GridViewColumnCollection" />
+      <MemberSignature Language="F#" Value="member this.Columns : System.Windows.Controls.GridViewColumnCollection with get, set" Usage="System.Windows.Controls.Primitives.GridViewRowPresenterBase.Columns" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::GridViewColumnCollection ^ Columns { System::Windows::Controls::GridViewColumnCollection ^ get(); void set(System::Windows::Controls::GridViewColumnCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +102,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ColumnsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ColumnsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.GridViewRowPresenterBase.ColumnsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ColumnsProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ColumnsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.GridViewRowPresenterBase.ColumnsProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ColumnsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -118,6 +129,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Visual GetVisualChild (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Visual GetVisualChild(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GridViewRowPresenterBase.GetVisualChild(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetVisualChild (index As Integer) As Visual" />
+      <MemberSignature Language="F#" Value="override this.GetVisualChild : int -&gt; System.Windows.Media.Visual" Usage="gridViewRowPresenterBase.GetVisualChild index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Visual ^ GetVisualChild(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -137,9 +151,12 @@
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
-      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator LogicalChildren { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Collections.IEnumerator LogicalChildren { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator LogicalChildren" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.GridViewRowPresenterBase.LogicalChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Controls.Primitives.GridViewRowPresenterBase.LogicalChildren" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -158,6 +175,8 @@
       <MemberSignature Language="C#" Value="bool IWeakEventListener.ReceiveWeakEvent (Type managerType, object sender, EventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.IWeakEventListener.ReceiveWeakEvent(class System.Type managerType, object sender, class System.EventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GridViewRowPresenterBase.System#Windows#IWeakEventListener#ReceiveWeakEvent(System.Type,System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Function ReceiveWeakEvent (managerType As Type, sender As Object, args As EventArgs) As Boolean Implements IWeakEventListener.ReceiveWeakEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.IWeakEventListener.ReceiveWeakEvent(Type ^ managerType, System::Object ^ sender, EventArgs ^ args) = System::Windows::IWeakEventListener::ReceiveWeakEvent;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -185,6 +204,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GridViewRowPresenterBase.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="gridViewRowPresenterBase.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -204,6 +226,9 @@
       <MemberSignature Language="C#" Value="protected override int VisualChildrenCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VisualChildrenCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.GridViewRowPresenterBase.VisualChildrenCount" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property VisualChildrenCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.VisualChildrenCount : int" Usage="System.Windows.Controls.Primitives.GridViewRowPresenterBase.VisualChildrenCount" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int VisualChildrenCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

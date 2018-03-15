@@ -1,7 +1,10 @@
-<Type Name="Image+GetThumbnailImageAbort" FullName="System.Drawing.Image+GetThumbnailImageAbort">
+﻿<Type Name="Image+GetThumbnailImageAbort" FullName="System.Drawing.Image+GetThumbnailImageAbort">
   <TypeSignature Language="C#" Value="public delegate bool Image.GetThumbnailImageAbort();" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed Image/GetThumbnailImageAbort extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Image.GetThumbnailImageAbort" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function Image.GetThumbnailImageAbort() As Boolean " />
+  <TypeSignature Language="F#" Value="type Image.GetThumbnailImageAbort = delegate of unit -&gt; bool" />
+  <TypeSignature Language="C++ CLI" Value="public: delegate bool Image::GetThumbnailImageAbort();" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="ThemeSizeType" FullName="System.Windows.Forms.VisualStyles.ThemeSizeType">
+﻿<Type Name="ThemeSizeType" FullName="System.Windows.Forms.VisualStyles.ThemeSizeType">
   <TypeSignature Language="C#" Value="public enum ThemeSizeType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ThemeSizeType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.ThemeSizeType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ThemeSizeType" />
+  <TypeSignature Language="F#" Value="type ThemeSizeType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ThemeSizeType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Draw" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ThemeSizeType Draw = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ThemeSizeType.Draw" />
+      <MemberSignature Language="VB.NET" Value="Draw" />
+      <MemberSignature Language="F#" Value="Draw = 2" Usage="System.Windows.Forms.VisualStyles.ThemeSizeType.Draw" />
+      <MemberSignature Language="C++ CLI" Value="Draw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ThemeSizeType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The size that the current visual style uses to draw the part.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Minimum" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ThemeSizeType Minimum = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ThemeSizeType.Minimum" />
+      <MemberSignature Language="VB.NET" Value="Minimum" />
+      <MemberSignature Language="F#" Value="Minimum = 0" Usage="System.Windows.Forms.VisualStyles.ThemeSizeType.Minimum" />
+      <MemberSignature Language="C++ CLI" Value="Minimum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ThemeSizeType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The minimum size of the visual style part.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="True" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.ThemeSizeType True = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.ThemeSizeType.True" />
+      <MemberSignature Language="VB.NET" Value="True" />
+      <MemberSignature Language="F#" Value="True = 1" Usage="System.Windows.Forms.VisualStyles.ThemeSizeType.True" />
+      <MemberSignature Language="C++ CLI" Value="True" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.ThemeSizeType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The size of the visual style part that will best fit the available space.</summary>
       </Docs>

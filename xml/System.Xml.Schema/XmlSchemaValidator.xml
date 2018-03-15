@@ -1,7 +1,10 @@
-<Type Name="XmlSchemaValidator" FullName="System.Xml.Schema.XmlSchemaValidator">
+﻿<Type Name="XmlSchemaValidator" FullName="System.Xml.Schema.XmlSchemaValidator">
   <TypeSignature Language="C#" Value="public sealed class XmlSchemaValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlSchemaValidator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaValidator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSchemaValidator" />
+  <TypeSignature Language="F#" Value="type XmlSchemaValidator = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaValidator sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -63,6 +66,9 @@
       <MemberSignature Language="C#" Value="public XmlSchemaValidator (System.Xml.XmlNameTable nameTable, System.Xml.Schema.XmlSchemaSet schemas, System.Xml.IXmlNamespaceResolver namespaceResolver, System.Xml.Schema.XmlSchemaValidationFlags validationFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlNameTable nameTable, class System.Xml.Schema.XmlSchemaSet schemas, class System.Xml.IXmlNamespaceResolver namespaceResolver, valuetype System.Xml.Schema.XmlSchemaValidationFlags validationFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.#ctor(System.Xml.XmlNameTable,System.Xml.Schema.XmlSchemaSet,System.Xml.IXmlNamespaceResolver,System.Xml.Schema.XmlSchemaValidationFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (nameTable As XmlNameTable, schemas As XmlSchemaSet, namespaceResolver As IXmlNamespaceResolver, validationFlags As XmlSchemaValidationFlags)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Schema.XmlSchemaValidator : System.Xml.XmlNameTable * System.Xml.Schema.XmlSchemaSet * System.Xml.IXmlNamespaceResolver * System.Xml.Schema.XmlSchemaValidationFlags -&gt; System.Xml.Schema.XmlSchemaValidator" Usage="new System.Xml.Schema.XmlSchemaValidator (nameTable, schemas, namespaceResolver, validationFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaValidator(System::Xml::XmlNameTable ^ nameTable, System::Xml::Schema::XmlSchemaSet ^ schemas, System::Xml::IXmlNamespaceResolver ^ namespaceResolver, System::Xml::Schema::XmlSchemaValidationFlags validationFlags);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -123,6 +129,9 @@
       <MemberSignature Language="C#" Value="public void AddSchema (System.Xml.Schema.XmlSchema schema);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddSchema(class System.Xml.Schema.XmlSchema schema) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.AddSchema(System.Xml.Schema.XmlSchema)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddSchema (schema As XmlSchema)" />
+      <MemberSignature Language="F#" Value="member this.AddSchema : System.Xml.Schema.XmlSchema -&gt; unit" Usage="xmlSchemaValidator.AddSchema schema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSchema(System::Xml::Schema::XmlSchema ^ schema);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -172,6 +181,9 @@
       <MemberSignature Language="C#" Value="public void EndValidation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndValidation() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.EndValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndValidation ()" />
+      <MemberSignature Language="F#" Value="member this.EndValidation : unit -&gt; unit" Usage="xmlSchemaValidator.EndValidation " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndValidation();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -209,6 +221,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaAttribute[] GetExpectedAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Schema.XmlSchemaAttribute[] GetExpectedAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.GetExpectedAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetExpectedAttributes () As XmlSchemaAttribute()" />
+      <MemberSignature Language="F#" Value="member this.GetExpectedAttributes : unit -&gt; System.Xml.Schema.XmlSchemaAttribute[]" Usage="xmlSchemaValidator.GetExpectedAttributes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Xml::Schema::XmlSchemaAttribute ^&gt; ^ GetExpectedAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -249,6 +264,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaParticle[] GetExpectedParticles ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Schema.XmlSchemaParticle[] GetExpectedParticles() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.GetExpectedParticles" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetExpectedParticles () As XmlSchemaParticle()" />
+      <MemberSignature Language="F#" Value="member this.GetExpectedParticles : unit -&gt; System.Xml.Schema.XmlSchemaParticle[]" Usage="xmlSchemaValidator.GetExpectedParticles " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Xml::Schema::XmlSchemaParticle ^&gt; ^ GetExpectedParticles();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -424,6 +442,9 @@ validator.ValidateEndElement(null);
       <MemberSignature Language="C#" Value="public void GetUnspecifiedDefaultAttributes (System.Collections.ArrayList defaultAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetUnspecifiedDefaultAttributes(class System.Collections.ArrayList defaultAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.GetUnspecifiedDefaultAttributes(System.Collections.ArrayList)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetUnspecifiedDefaultAttributes (defaultAttributes As ArrayList)" />
+      <MemberSignature Language="F#" Value="member this.GetUnspecifiedDefaultAttributes : System.Collections.ArrayList -&gt; unit" Usage="xmlSchemaValidator.GetUnspecifiedDefaultAttributes defaultAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetUnspecifiedDefaultAttributes(System::Collections::ArrayList ^ defaultAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -459,10 +480,23 @@ validator.ValidateEndElement(null);
         <altmember cref="T:System.Xml.Schema.XmlSchemaAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Initialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes the state of the <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Initialize">
       <MemberSignature Language="C#" Value="public void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize ()" />
+      <MemberSignature Language="F#" Value="member this.Initialize : unit -&gt; unit" Usage="xmlSchemaValidator.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -515,6 +549,9 @@ validator.ValidateEndElement(null);
       <MemberSignature Language="C#" Value="public void Initialize (System.Xml.Schema.XmlSchemaObject partialValidationType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Initialize(class System.Xml.Schema.XmlSchemaObject partialValidationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.Initialize(System.Xml.Schema.XmlSchemaObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (partialValidationType As XmlSchemaObject)" />
+      <MemberSignature Language="F#" Value="member this.Initialize : System.Xml.Schema.XmlSchemaObject -&gt; unit" Usage="xmlSchemaValidator.Initialize partialValidationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::Xml::Schema::XmlSchemaObject ^ partialValidationType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -606,6 +643,9 @@ validator.ValidateEndElement(null);
       <MemberSignature Language="C#" Value="public System.Xml.IXmlLineInfo LineInfoProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.IXmlLineInfo LineInfoProvider" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaValidator.LineInfoProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Property LineInfoProvider As IXmlLineInfo" />
+      <MemberSignature Language="F#" Value="member this.LineInfoProvider : System.Xml.IXmlLineInfo with get, set" Usage="System.Xml.Schema.XmlSchemaValidator.LineInfoProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::IXmlLineInfo ^ LineInfoProvider { System::Xml::IXmlLineInfo ^ get(); void set(System::Xml::IXmlLineInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -645,6 +685,9 @@ validator.ValidateEndElement(null);
       <MemberSignature Language="C#" Value="public void SkipToEndElement (System.Xml.Schema.XmlSchemaInfo schemaInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SkipToEndElement(class System.Xml.Schema.XmlSchemaInfo schemaInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.SkipToEndElement(System.Xml.Schema.XmlSchemaInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SkipToEndElement (schemaInfo As XmlSchemaInfo)" />
+      <MemberSignature Language="F#" Value="member this.SkipToEndElement : System.Xml.Schema.XmlSchemaInfo -&gt; unit" Usage="xmlSchemaValidator.SkipToEndElement schemaInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SkipToEndElement(System::Xml::Schema::XmlSchemaInfo ^ schemaInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -691,6 +734,9 @@ validator.ValidateEndElement(null);
       <MemberSignature Language="C#" Value="public Uri SourceUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri SourceUri" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaValidator.SourceUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.SourceUri : Uri with get, set" Usage="System.Xml.Schema.XmlSchemaValidator.SourceUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SourceUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -725,10 +771,23 @@ validator.ValidateEndElement(null);
         <altmember cref="T:System.Xml.Schema.XmlSchemaValidationException" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValidateAttribute">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates the attribute in the current element context.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ValidateAttribute">
       <MemberSignature Language="C#" Value="public object ValidateAttribute (string localName, string namespaceUri, string attributeValue, System.Xml.Schema.XmlSchemaInfo schemaInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ValidateAttribute(string localName, string namespaceUri, string attributeValue, class System.Xml.Schema.XmlSchemaInfo schemaInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute(System.String,System.String,System.String,System.Xml.Schema.XmlSchemaInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateAttribute (localName As String, namespaceUri As String, attributeValue As String, schemaInfo As XmlSchemaInfo) As Object" />
+      <MemberSignature Language="F#" Value="member this.ValidateAttribute : string * string * string * System.Xml.Schema.XmlSchemaInfo -&gt; obj" Usage="xmlSchemaValidator.ValidateAttribute (localName, namespaceUri, attributeValue, schemaInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ValidateAttribute(System::String ^ localName, System::String ^ namespaceUri, System::String ^ attributeValue, System::Xml::Schema::XmlSchemaInfo ^ schemaInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -799,6 +858,9 @@ validator.ValidateEndElement(null);
       <MemberSignature Language="C#" Value="public object ValidateAttribute (string localName, string namespaceUri, System.Xml.Schema.XmlValueGetter attributeValue, System.Xml.Schema.XmlSchemaInfo schemaInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ValidateAttribute(string localName, string namespaceUri, class System.Xml.Schema.XmlValueGetter attributeValue, class System.Xml.Schema.XmlSchemaInfo schemaInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateAttribute(System.String,System.String,System.Xml.Schema.XmlValueGetter,System.Xml.Schema.XmlSchemaInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateAttribute (localName As String, namespaceUri As String, attributeValue As XmlValueGetter, schemaInfo As XmlSchemaInfo) As Object" />
+      <MemberSignature Language="F#" Value="member this.ValidateAttribute : string * string * System.Xml.Schema.XmlValueGetter * System.Xml.Schema.XmlSchemaInfo -&gt; obj" Usage="xmlSchemaValidator.ValidateAttribute (localName, namespaceUri, attributeValue, schemaInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ValidateAttribute(System::String ^ localName, System::String ^ namespaceUri, System::Xml::Schema::XmlValueGetter ^ attributeValue, System::Xml::Schema::XmlSchemaInfo ^ schemaInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -866,10 +928,23 @@ validator.ValidateEndElement(null);
         <altmember cref="T:System.Xml.Schema.XmlSchemaInfo" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValidateElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates the element in the current context.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ValidateElement">
       <MemberSignature Language="C#" Value="public void ValidateElement (string localName, string namespaceUri, System.Xml.Schema.XmlSchemaInfo schemaInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateElement(string localName, string namespaceUri, class System.Xml.Schema.XmlSchemaInfo schemaInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateElement(System.String,System.String,System.Xml.Schema.XmlSchemaInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ValidateElement (localName As String, namespaceUri As String, schemaInfo As XmlSchemaInfo)" />
+      <MemberSignature Language="F#" Value="member this.ValidateElement : string * string * System.Xml.Schema.XmlSchemaInfo -&gt; unit" Usage="xmlSchemaValidator.ValidateElement (localName, namespaceUri, schemaInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ValidateElement(System::String ^ localName, System::String ^ namespaceUri, System::Xml::Schema::XmlSchemaInfo ^ schemaInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -935,6 +1010,9 @@ validator.ValidateEndElement(null);
       <MemberSignature Language="C#" Value="public void ValidateElement (string localName, string namespaceUri, System.Xml.Schema.XmlSchemaInfo schemaInfo, string xsiType, string xsiNil, string xsiSchemaLocation, string xsiNoNamespaceSchemaLocation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateElement(string localName, string namespaceUri, class System.Xml.Schema.XmlSchemaInfo schemaInfo, string xsiType, string xsiNil, string xsiSchemaLocation, string xsiNoNamespaceSchemaLocation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateElement(System.String,System.String,System.Xml.Schema.XmlSchemaInfo,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ValidateElement (localName As String, namespaceUri As String, schemaInfo As XmlSchemaInfo, xsiType As String, xsiNil As String, xsiSchemaLocation As String, xsiNoNamespaceSchemaLocation As String)" />
+      <MemberSignature Language="F#" Value="member this.ValidateElement : string * string * System.Xml.Schema.XmlSchemaInfo * string * string * string * string -&gt; unit" Usage="xmlSchemaValidator.ValidateElement (localName, namespaceUri, schemaInfo, xsiType, xsiNil, xsiSchemaLocation, xsiNoNamespaceSchemaLocation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ValidateElement(System::String ^ localName, System::String ^ namespaceUri, System::Xml::Schema::XmlSchemaInfo ^ schemaInfo, System::String ^ xsiType, System::String ^ xsiNil, System::String ^ xsiSchemaLocation, System::String ^ xsiNoNamespaceSchemaLocation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -991,10 +1069,23 @@ validator.ValidateEndElement(null);
         <altmember cref="T:System.Xml.Schema.XmlSchemaValidationFlags" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValidateEndElement">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies if the text content of the element is valid according to its data type for elements with simple content, and verifies if the content of the current element is complete for elements with complex content.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ValidateEndElement">
       <MemberSignature Language="C#" Value="public object ValidateEndElement (System.Xml.Schema.XmlSchemaInfo schemaInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ValidateEndElement(class System.Xml.Schema.XmlSchemaInfo schemaInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement(System.Xml.Schema.XmlSchemaInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateEndElement (schemaInfo As XmlSchemaInfo) As Object" />
+      <MemberSignature Language="F#" Value="member this.ValidateEndElement : System.Xml.Schema.XmlSchemaInfo -&gt; obj" Usage="xmlSchemaValidator.ValidateEndElement schemaInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ValidateEndElement(System::Xml::Schema::XmlSchemaInfo ^ schemaInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1046,6 +1137,9 @@ validator.ValidateEndElement(null);
       <MemberSignature Language="C#" Value="public object ValidateEndElement (System.Xml.Schema.XmlSchemaInfo schemaInfo, object typedValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ValidateEndElement(class System.Xml.Schema.XmlSchemaInfo schemaInfo, object typedValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateEndElement(System.Xml.Schema.XmlSchemaInfo,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateEndElement (schemaInfo As XmlSchemaInfo, typedValue As Object) As Object" />
+      <MemberSignature Language="F#" Value="member this.ValidateEndElement : System.Xml.Schema.XmlSchemaInfo * obj -&gt; obj" Usage="xmlSchemaValidator.ValidateEndElement (schemaInfo, typedValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ValidateEndElement(System::Xml::Schema::XmlSchemaInfo ^ schemaInfo, System::Object ^ typedValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1120,6 +1214,9 @@ validator.ValidateEndElement(null);
       <MemberSignature Language="C#" Value="public void ValidateEndOfAttributes (System.Xml.Schema.XmlSchemaInfo schemaInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateEndOfAttributes(class System.Xml.Schema.XmlSchemaInfo schemaInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateEndOfAttributes(System.Xml.Schema.XmlSchemaInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ValidateEndOfAttributes (schemaInfo As XmlSchemaInfo)" />
+      <MemberSignature Language="F#" Value="member this.ValidateEndOfAttributes : System.Xml.Schema.XmlSchemaInfo -&gt; unit" Usage="xmlSchemaValidator.ValidateEndOfAttributes schemaInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ValidateEndOfAttributes(System::Xml::Schema::XmlSchemaInfo ^ schemaInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1179,10 +1276,23 @@ validator.ValidateEndElement(null);
         <altmember cref="T:System.Xml.Schema.XmlSchemaInfo" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValidateText">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates whether text is allowed in the current element context, and accumulates the text for validation if the current element has simple content.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ValidateText">
       <MemberSignature Language="C#" Value="public void ValidateText (string elementValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateText(string elementValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ValidateText (elementValue As String)" />
+      <MemberSignature Language="F#" Value="member this.ValidateText : string -&gt; unit" Usage="xmlSchemaValidator.ValidateText elementValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ValidateText(System::String ^ elementValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1227,6 +1337,9 @@ validator.ValidateEndElement(null);
       <MemberSignature Language="C#" Value="public void ValidateText (System.Xml.Schema.XmlValueGetter elementValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateText(class System.Xml.Schema.XmlValueGetter elementValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateText(System.Xml.Schema.XmlValueGetter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ValidateText (elementValue As XmlValueGetter)" />
+      <MemberSignature Language="F#" Value="member this.ValidateText : System.Xml.Schema.XmlValueGetter -&gt; unit" Usage="xmlSchemaValidator.ValidateText elementValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ValidateText(System::Xml::Schema::XmlValueGetter ^ elementValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1268,10 +1381,23 @@ validator.ValidateEndElement(null);
         <altmember cref="T:System.Xml.Schema.XmlValueGetter" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValidateWhitespace">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Validates whether white space is allowed in the current element context, and accumulates the white space for validation if the current element has simple content.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ValidateWhitespace">
       <MemberSignature Language="C#" Value="public void ValidateWhitespace (string elementValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateWhitespace(string elementValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateWhitespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ValidateWhitespace (elementValue As String)" />
+      <MemberSignature Language="F#" Value="member this.ValidateWhitespace : string -&gt; unit" Usage="xmlSchemaValidator.ValidateWhitespace elementValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ValidateWhitespace(System::String ^ elementValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1304,6 +1430,9 @@ validator.ValidateEndElement(null);
       <MemberSignature Language="C#" Value="public void ValidateWhitespace (System.Xml.Schema.XmlValueGetter elementValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateWhitespace(class System.Xml.Schema.XmlValueGetter elementValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidator.ValidateWhitespace(System.Xml.Schema.XmlValueGetter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ValidateWhitespace (elementValue As XmlValueGetter)" />
+      <MemberSignature Language="F#" Value="member this.ValidateWhitespace : System.Xml.Schema.XmlValueGetter -&gt; unit" Usage="xmlSchemaValidator.ValidateWhitespace elementValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ValidateWhitespace(System::Xml::Schema::XmlValueGetter ^ elementValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1337,6 +1466,8 @@ validator.ValidateEndElement(null);
       <MemberSignature Language="C#" Value="public event System.Xml.Schema.ValidationEventHandler ValidationEventHandler;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Xml.Schema.ValidationEventHandler ValidationEventHandler" />
       <MemberSignature Language="DocId" Value="E:System.Xml.Schema.XmlSchemaValidator.ValidationEventHandler" />
+      <MemberSignature Language="F#" Value="member this.ValidationEventHandler : System.Xml.Schema.ValidationEventHandler " Usage="member this.ValidationEventHandler : System.Xml.Schema.ValidationEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Xml::Schema::ValidationEventHandler ^ ValidationEventHandler;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1388,6 +1519,9 @@ validator.ValidateEndElement(null);
       <MemberSignature Language="C#" Value="public object ValidationEventSender { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ValidationEventSender" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaValidator.ValidationEventSender" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidationEventSender As Object" />
+      <MemberSignature Language="F#" Value="member this.ValidationEventSender : obj with get, set" Usage="System.Xml.Schema.XmlSchemaValidator.ValidationEventSender" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ValidationEventSender { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1423,6 +1557,9 @@ validator.ValidateEndElement(null);
       <MemberSignature Language="C#" Value="public System.Xml.XmlResolver XmlResolver { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlResolver XmlResolver" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaValidator.XmlResolver" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlResolver As XmlResolver" />
+      <MemberSignature Language="F#" Value="member this.XmlResolver : System.Xml.XmlResolver" Usage="System.Xml.Schema.XmlSchemaValidator.XmlResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlResolver ^ XmlResolver {  void set(System::Xml::XmlResolver ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -1456,65 +1593,5 @@ validator.ValidateEndElement(null);
         <altmember cref="T:System.Xml.XmlResolver" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ValidateElement">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Validates the element in the current context.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ValidateEndElement">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Verifies if the text content of the element is valid according to its data type for elements with simple content, and verifies if the content of the current element is complete for elements with complex content.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ValidateWhitespace">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Validates whether white space is allowed in the current element context, and accumulates the white space for validation if the current element has simple content.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ValidateAttribute">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Validates the attribute in the current element context.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ValidateText">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Validates whether text is allowed in the current element context, and accumulates the text for validation if the current element has simple content.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Initialize">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes the state of the <see cref="T:System.Xml.Schema.XmlSchemaValidator" /> object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

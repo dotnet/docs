@@ -1,7 +1,10 @@
-<Type Name="ExitEventHandler" FullName="System.Windows.ExitEventHandler">
+﻿<Type Name="ExitEventHandler" FullName="System.Windows.ExitEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ExitEventHandler(object sender, ExitEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ExitEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.ExitEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ExitEventHandler(sender As Object, e As ExitEventArgs)" />
+  <TypeSignature Language="F#" Value="type ExitEventHandler = delegate of obj * ExitEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ExitEventHandler(System::Object ^ sender, ExitEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="ReceiveCompletedEventHandler" FullName="System.Messaging.ReceiveCompletedEventHandler">
+﻿<Type Name="ReceiveCompletedEventHandler" FullName="System.Messaging.ReceiveCompletedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ReceiveCompletedEventHandler(object sender, ReceiveCompletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ReceiveCompletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.ReceiveCompletedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ReceiveCompletedEventHandler(sender As Object, e As ReceiveCompletedEventArgs)" />
+  <TypeSignature Language="F#" Value="type ReceiveCompletedEventHandler = delegate of obj * ReceiveCompletedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ReceiveCompletedEventHandler(System::Object ^ sender, ReceiveCompletedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

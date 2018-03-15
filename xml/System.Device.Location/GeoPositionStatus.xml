@@ -1,7 +1,10 @@
-<Type Name="GeoPositionStatus" FullName="System.Device.Location.GeoPositionStatus">
+﻿<Type Name="GeoPositionStatus" FullName="System.Device.Location.GeoPositionStatus">
   <TypeSignature Language="C#" Value="public enum GeoPositionStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GeoPositionStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Device.Location.GeoPositionStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GeoPositionStatus" />
+  <TypeSignature Language="F#" Value="type GeoPositionStatus = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class GeoPositionStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="Disabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Device.Location.GeoPositionStatus Disabled = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionStatus.Disabled" />
+      <MemberSignature Language="VB.NET" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 3" Usage="System.Device.Location.GeoPositionStatus.Disabled" />
+      <MemberSignature Language="C++ CLI" Value="Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -36,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Device.Location.GeoPositionStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The location provider is disabled. On Windows 7, this is the case when the Sensor and Location platform has been disabled by group policy.</summary>
       </Docs>
@@ -44,6 +51,9 @@
       <MemberSignature Language="C#" Value="Initializing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Device.Location.GeoPositionStatus Initializing = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionStatus.Initializing" />
+      <MemberSignature Language="VB.NET" Value="Initializing" />
+      <MemberSignature Language="F#" Value="Initializing = 1" Usage="System.Device.Location.GeoPositionStatus.Initializing" />
+      <MemberSignature Language="C++ CLI" Value="Initializing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Device.Location.GeoPositionStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The location provider is initializing.  For example, a GPS that is still obtaining a fix has this status.</summary>
       </Docs>
@@ -60,6 +71,9 @@
       <MemberSignature Language="C#" Value="NoData" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Device.Location.GeoPositionStatus NoData = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionStatus.NoData" />
+      <MemberSignature Language="VB.NET" Value="NoData" />
+      <MemberSignature Language="F#" Value="NoData = 2" Usage="System.Device.Location.GeoPositionStatus.NoData" />
+      <MemberSignature Language="C++ CLI" Value="NoData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -68,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Device.Location.GeoPositionStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>No location data is available from any location provider.</summary>
         <remarks>
@@ -84,6 +99,9 @@
       <MemberSignature Language="C#" Value="Ready" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Device.Location.GeoPositionStatus Ready = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionStatus.Ready" />
+      <MemberSignature Language="VB.NET" Value="Ready" />
+      <MemberSignature Language="F#" Value="Ready = 0" Usage="System.Device.Location.GeoPositionStatus.Ready" />
+      <MemberSignature Language="C++ CLI" Value="Ready" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -92,6 +110,7 @@
       <ReturnValue>
         <ReturnType>System.Device.Location.GeoPositionStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A location provider is ready to supply new data.</summary>
       </Docs>

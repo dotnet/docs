@@ -1,7 +1,10 @@
-<Type Name="WorkflowQueue" FullName="System.Workflow.Runtime.WorkflowQueue">
+﻿<Type Name="WorkflowQueue" FullName="System.Workflow.Runtime.WorkflowQueue">
   <TypeSignature Language="C#" Value="public class WorkflowQueue" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowQueue extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowQueue" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowQueue" />
+  <TypeSignature Language="F#" Value="type WorkflowQueue = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowQueue" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +48,9 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueue.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Workflow.Runtime.WorkflowQueue.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -75,6 +81,9 @@
       <MemberSignature Language="C#" Value="public object Dequeue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Dequeue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.Dequeue" />
+      <MemberSignature Language="VB.NET" Value="Public Function Dequeue () As Object" />
+      <MemberSignature Language="F#" Value="member this.Dequeue : unit -&gt; obj" Usage="workflowQueue.Dequeue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Dequeue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -112,6 +121,9 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueue.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Workflow.Runtime.WorkflowQueue.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -131,6 +143,9 @@
       <MemberSignature Language="C#" Value="public void Enqueue (object item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Enqueue(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.Enqueue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Enqueue (item As Object)" />
+      <MemberSignature Language="F#" Value="member this.Enqueue : obj -&gt; unit" Usage="workflowQueue.Enqueue item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Enqueue(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -153,6 +168,9 @@
       <MemberSignature Language="C#" Value="public object Peek ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Peek() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.Peek" />
+      <MemberSignature Language="VB.NET" Value="Public Function Peek () As Object" />
+      <MemberSignature Language="F#" Value="member this.Peek : unit -&gt; obj" Usage="workflowQueue.Peek " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Peek();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -180,6 +198,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; QueueItemArrived;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; QueueItemArrived" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowQueue.QueueItemArrived" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event QueueItemArrived As EventHandler(Of QueueEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.QueueItemArrived : EventHandler&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; " Usage="member this.QueueItemArrived : System.EventHandler&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ QueueItemArrived;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -204,6 +225,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; QueueItemAvailable;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; QueueItemAvailable" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowQueue.QueueItemAvailable" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event QueueItemAvailable As EventHandler(Of QueueEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.QueueItemAvailable : EventHandler&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; " Usage="member this.QueueItemAvailable : System.EventHandler&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ QueueItemAvailable;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -228,6 +252,9 @@
       <MemberSignature Language="C#" Value="public IComparable QueueName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IComparable QueueName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueue.QueueName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueueName As IComparable" />
+      <MemberSignature Language="F#" Value="member this.QueueName : IComparable" Usage="System.Workflow.Runtime.WorkflowQueue.QueueName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IComparable ^ QueueName { IComparable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -253,6 +280,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowQueuingService QueuingService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.WorkflowQueuingService QueuingService" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowQueue.QueuingService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueuingService As WorkflowQueuingService" />
+      <MemberSignature Language="F#" Value="member this.QueuingService : System.Workflow.Runtime.WorkflowQueuingService" Usage="System.Workflow.Runtime.WorkflowQueue.QueuingService" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::WorkflowQueuingService ^ QueuingService { System::Workflow::Runtime::WorkflowQueuingService ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -271,6 +301,9 @@
       <MemberSignature Language="C#" Value="public void RegisterForQueueItemArrived (System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterForQueueItemArrived(class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.RegisterForQueueItemArrived(System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterForQueueItemArrived (eventListener As IActivityEventListener(Of QueueEventArgs))" />
+      <MemberSignature Language="F#" Value="member this.RegisterForQueueItemArrived : System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; -&gt; unit" Usage="workflowQueue.RegisterForQueueItemArrived eventListener" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterForQueueItemArrived(System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ eventListener);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -309,6 +342,9 @@
       <MemberSignature Language="C#" Value="public void RegisterForQueueItemAvailable (System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterForQueueItemAvailable(class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.RegisterForQueueItemAvailable(System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterForQueueItemAvailable (eventListener As IActivityEventListener(Of QueueEventArgs))" />
+      <MemberSignature Language="F#" Value="member this.RegisterForQueueItemAvailable : System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; -&gt; unit" Usage="workflowQueue.RegisterForQueueItemAvailable eventListener" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterForQueueItemAvailable(System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ eventListener);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -344,6 +380,9 @@
       <MemberSignature Language="C#" Value="public void RegisterForQueueItemAvailable (System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener, string subscriberQualifiedName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterForQueueItemAvailable(class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener, string subscriberQualifiedName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.RegisterForQueueItemAvailable(System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterForQueueItemAvailable (eventListener As IActivityEventListener(Of QueueEventArgs), subscriberQualifiedName As String)" />
+      <MemberSignature Language="F#" Value="member this.RegisterForQueueItemAvailable : System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; * string -&gt; unit" Usage="workflowQueue.RegisterForQueueItemAvailable (eventListener, subscriberQualifiedName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterForQueueItemAvailable(System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ eventListener, System::String ^ subscriberQualifiedName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -376,6 +415,9 @@
       <MemberSignature Language="C#" Value="public void UnregisterForQueueItemArrived (System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnregisterForQueueItemArrived(class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.UnregisterForQueueItemArrived(System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnregisterForQueueItemArrived (eventListener As IActivityEventListener(Of QueueEventArgs))" />
+      <MemberSignature Language="F#" Value="member this.UnregisterForQueueItemArrived : System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; -&gt; unit" Usage="workflowQueue.UnregisterForQueueItemArrived eventListener" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnregisterForQueueItemArrived(System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ eventListener);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -406,6 +448,9 @@
       <MemberSignature Language="C#" Value="public void UnregisterForQueueItemAvailable (System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnregisterForQueueItemAvailable(class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; eventListener) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowQueue.UnregisterForQueueItemAvailable(System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnregisterForQueueItemAvailable (eventListener As IActivityEventListener(Of QueueEventArgs))" />
+      <MemberSignature Language="F#" Value="member this.UnregisterForQueueItemAvailable : System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; -&gt; unit" Usage="workflowQueue.UnregisterForQueueItemAvailable eventListener" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnregisterForQueueItemAvailable(System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ eventListener);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

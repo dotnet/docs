@@ -1,7 +1,10 @@
-<Type Name="AuditFlags" FullName="System.Security.AccessControl.AuditFlags">
+﻿<Type Name="AuditFlags" FullName="System.Security.AccessControl.AuditFlags">
   <TypeSignature Language="C#" Value="public enum AuditFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuditFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AuditFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AuditFlags" />
+  <TypeSignature Language="F#" Value="type AuditFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AuditFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="Failure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AuditFlags Failure = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AuditFlags.Failure" />
+      <MemberSignature Language="VB.NET" Value="Failure" />
+      <MemberSignature Language="F#" Value="Failure = 2" Usage="System.Security.AccessControl.AuditFlags.Failure" />
+      <MemberSignature Language="C++ CLI" Value="Failure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AuditFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Failed access attempts are to be audited.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AuditFlags None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AuditFlags.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.AccessControl.AuditFlags.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AuditFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No access attempts are to be audited.</summary>
       </Docs>
@@ -73,6 +84,9 @@
       <MemberSignature Language="C#" Value="Success" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AuditFlags Success = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AuditFlags.Success" />
+      <MemberSignature Language="VB.NET" Value="Success" />
+      <MemberSignature Language="F#" Value="Success = 1" Usage="System.Security.AccessControl.AuditFlags.Success" />
+      <MemberSignature Language="C++ CLI" Value="Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -87,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AuditFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Successful access attempts are to be audited.</summary>
       </Docs>

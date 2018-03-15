@@ -1,7 +1,10 @@
-<Type Name="SessionAuthentication" FullName="System.Diagnostics.Eventing.Reader.SessionAuthentication">
+﻿<Type Name="SessionAuthentication" FullName="System.Diagnostics.Eventing.Reader.SessionAuthentication">
   <TypeSignature Language="C#" Value="public enum SessionAuthentication" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SessionAuthentication extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.SessionAuthentication" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SessionAuthentication" />
+  <TypeSignature Language="F#" Value="type SessionAuthentication = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SessionAuthentication" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.SessionAuthentication Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.SessionAuthentication.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Diagnostics.Eventing.Reader.SessionAuthentication.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.SessionAuthentication</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Use the default authentication method during RPC login. The default authentication is equivalent to Negotiate.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="Kerberos" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.SessionAuthentication Kerberos = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.SessionAuthentication.Kerberos" />
+      <MemberSignature Language="VB.NET" Value="Kerberos" />
+      <MemberSignature Language="F#" Value="Kerberos = 2" Usage="System.Diagnostics.Eventing.Reader.SessionAuthentication.Kerberos" />
+      <MemberSignature Language="C++ CLI" Value="Kerberos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.SessionAuthentication</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Use Kerberos authentication during RPC login.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="Negotiate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.SessionAuthentication Negotiate = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.SessionAuthentication.Negotiate" />
+      <MemberSignature Language="VB.NET" Value="Negotiate" />
+      <MemberSignature Language="F#" Value="Negotiate = 1" Usage="System.Diagnostics.Eventing.Reader.SessionAuthentication.Negotiate" />
+      <MemberSignature Language="C++ CLI" Value="Negotiate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.SessionAuthentication</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Use the Negotiate authentication method during RPC login. This allows the client application to select the most appropriate authentication method (NTLM or Kerberos) for the situation.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="Ntlm" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Eventing.Reader.SessionAuthentication Ntlm = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Eventing.Reader.SessionAuthentication.Ntlm" />
+      <MemberSignature Language="VB.NET" Value="Ntlm" />
+      <MemberSignature Language="F#" Value="Ntlm = 3" Usage="System.Diagnostics.Eventing.Reader.SessionAuthentication.Ntlm" />
+      <MemberSignature Language="C++ CLI" Value="Ntlm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Eventing.Reader.SessionAuthentication</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Use Windows NT LAN Manager (NTLM) authentication during RPC login.</summary>
       </Docs>

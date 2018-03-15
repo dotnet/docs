@@ -1,7 +1,10 @@
-<Type Name="RedirectionException" FullName="System.ServiceModel.Channels.RedirectionException">
+﻿<Type Name="RedirectionException" FullName="System.ServiceModel.Channels.RedirectionException">
   <TypeSignature Language="C#" Value="public class RedirectionException : System.ServiceModel.CommunicationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RedirectionException extends System.ServiceModel.CommunicationException" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.RedirectionException" />
+  <TypeSignature Language="VB.NET" Value="Public Class RedirectionException&#xA;Inherits CommunicationException" />
+  <TypeSignature Language="F#" Value="type RedirectionException = class&#xA;    inherit CommunicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RedirectionException : System::ServiceModel::CommunicationException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.RedirectionException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected RedirectionException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.RedirectionException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.Channels.RedirectionException" Usage="new System.ServiceModel.Channels.RedirectionException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RedirectionException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +54,9 @@
       <MemberSignature Language="C#" Value="public RedirectionException (System.ServiceModel.Channels.RedirectionType type, System.ServiceModel.Channels.RedirectionDuration duration, System.ServiceModel.Channels.RedirectionScope scope, params System.ServiceModel.Channels.RedirectionLocation[] locations);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.RedirectionType type, class System.ServiceModel.Channels.RedirectionDuration duration, class System.ServiceModel.Channels.RedirectionScope scope, class System.ServiceModel.Channels.RedirectionLocation[] locations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionException.#ctor(System.ServiceModel.Channels.RedirectionType,System.ServiceModel.Channels.RedirectionDuration,System.ServiceModel.Channels.RedirectionScope,System.ServiceModel.Channels.RedirectionLocation[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As RedirectionType, duration As RedirectionDuration, scope As RedirectionScope, ParamArray locations As RedirectionLocation())" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.RedirectionException : System.ServiceModel.Channels.RedirectionType * System.ServiceModel.Channels.RedirectionDuration * System.ServiceModel.Channels.RedirectionScope * System.ServiceModel.Channels.RedirectionLocation[] -&gt; System.ServiceModel.Channels.RedirectionException" Usage="new System.ServiceModel.Channels.RedirectionException (type, duration, scope, locations)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RedirectionException(System::ServiceModel::Channels::RedirectionType ^ type, System::ServiceModel::Channels::RedirectionDuration ^ duration, System::ServiceModel::Channels::RedirectionScope ^ scope, ... cli::array &lt;System::ServiceModel::Channels::RedirectionLocation ^&gt; ^ locations);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -69,6 +87,9 @@
       <MemberSignature Language="C#" Value="public RedirectionException (System.ServiceModel.Channels.RedirectionType type, System.ServiceModel.Channels.RedirectionDuration duration, System.ServiceModel.Channels.RedirectionScope scope, Exception innerException, params System.ServiceModel.Channels.RedirectionLocation[] locations);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.RedirectionType type, class System.ServiceModel.Channels.RedirectionDuration duration, class System.ServiceModel.Channels.RedirectionScope scope, class System.Exception innerException, class System.ServiceModel.Channels.RedirectionLocation[] locations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionException.#ctor(System.ServiceModel.Channels.RedirectionType,System.ServiceModel.Channels.RedirectionDuration,System.ServiceModel.Channels.RedirectionScope,System.Exception,System.ServiceModel.Channels.RedirectionLocation[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As RedirectionType, duration As RedirectionDuration, scope As RedirectionScope, innerException As Exception, ParamArray locations As RedirectionLocation())" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.RedirectionException : System.ServiceModel.Channels.RedirectionType * System.ServiceModel.Channels.RedirectionDuration * System.ServiceModel.Channels.RedirectionScope * Exception * System.ServiceModel.Channels.RedirectionLocation[] -&gt; System.ServiceModel.Channels.RedirectionException" Usage="new System.ServiceModel.Channels.RedirectionException (type, duration, scope, innerException, locations)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RedirectionException(System::ServiceModel::Channels::RedirectionType ^ type, System::ServiceModel::Channels::RedirectionDuration ^ duration, System::ServiceModel::Channels::RedirectionScope ^ scope, Exception ^ innerException, ... cli::array &lt;System::ServiceModel::Channels::RedirectionLocation ^&gt; ^ locations);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -101,6 +122,9 @@
       <MemberSignature Language="C#" Value="public RedirectionException (string message, System.ServiceModel.Channels.RedirectionType type, System.ServiceModel.Channels.RedirectionDuration duration, System.ServiceModel.Channels.RedirectionScope scope, params System.ServiceModel.Channels.RedirectionLocation[] locations);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.ServiceModel.Channels.RedirectionType type, class System.ServiceModel.Channels.RedirectionDuration duration, class System.ServiceModel.Channels.RedirectionScope scope, class System.ServiceModel.Channels.RedirectionLocation[] locations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionException.#ctor(System.String,System.ServiceModel.Channels.RedirectionType,System.ServiceModel.Channels.RedirectionDuration,System.ServiceModel.Channels.RedirectionScope,System.ServiceModel.Channels.RedirectionLocation[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, type As RedirectionType, duration As RedirectionDuration, scope As RedirectionScope, ParamArray locations As RedirectionLocation())" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.RedirectionException : string * System.ServiceModel.Channels.RedirectionType * System.ServiceModel.Channels.RedirectionDuration * System.ServiceModel.Channels.RedirectionScope * System.ServiceModel.Channels.RedirectionLocation[] -&gt; System.ServiceModel.Channels.RedirectionException" Usage="new System.ServiceModel.Channels.RedirectionException (message, type, duration, scope, locations)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RedirectionException(System::String ^ message, System::ServiceModel::Channels::RedirectionType ^ type, System::ServiceModel::Channels::RedirectionDuration ^ duration, System::ServiceModel::Channels::RedirectionScope ^ scope, ... cli::array &lt;System::ServiceModel::Channels::RedirectionLocation ^&gt; ^ locations);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -133,6 +157,9 @@
       <MemberSignature Language="C#" Value="public RedirectionException (string message, System.ServiceModel.Channels.RedirectionType type, System.ServiceModel.Channels.RedirectionDuration duration, System.ServiceModel.Channels.RedirectionScope scope, Exception innerException, params System.ServiceModel.Channels.RedirectionLocation[] locations);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.ServiceModel.Channels.RedirectionType type, class System.ServiceModel.Channels.RedirectionDuration duration, class System.ServiceModel.Channels.RedirectionScope scope, class System.Exception innerException, class System.ServiceModel.Channels.RedirectionLocation[] locations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionException.#ctor(System.String,System.ServiceModel.Channels.RedirectionType,System.ServiceModel.Channels.RedirectionDuration,System.ServiceModel.Channels.RedirectionScope,System.Exception,System.ServiceModel.Channels.RedirectionLocation[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, type As RedirectionType, duration As RedirectionDuration, scope As RedirectionScope, innerException As Exception, ParamArray locations As RedirectionLocation())" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.RedirectionException : string * System.ServiceModel.Channels.RedirectionType * System.ServiceModel.Channels.RedirectionDuration * System.ServiceModel.Channels.RedirectionScope * Exception * System.ServiceModel.Channels.RedirectionLocation[] -&gt; System.ServiceModel.Channels.RedirectionException" Usage="new System.ServiceModel.Channels.RedirectionException (message, type, duration, scope, innerException, locations)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RedirectionException(System::String ^ message, System::ServiceModel::Channels::RedirectionType ^ type, System::ServiceModel::Channels::RedirectionDuration ^ duration, System::ServiceModel::Channels::RedirectionScope ^ scope, Exception ^ innerException, ... cli::array &lt;System::ServiceModel::Channels::RedirectionLocation ^&gt; ^ locations);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +194,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.RedirectionDuration Duration { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.RedirectionDuration Duration" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RedirectionException.Duration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Duration As RedirectionDuration" />
+      <MemberSignature Language="F#" Value="member this.Duration : System.ServiceModel.Channels.RedirectionDuration" Usage="System.ServiceModel.Channels.RedirectionException.Duration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::RedirectionDuration ^ Duration { System::ServiceModel::Channels::RedirectionDuration ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -185,6 +215,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.RedirectionException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="redirectionException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -213,6 +246,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.ServiceModel.Channels.RedirectionLocation&gt; Locations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.ServiceModel.Channels.RedirectionLocation&gt; Locations" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RedirectionException.Locations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Locations As IEnumerable(Of RedirectionLocation)" />
+      <MemberSignature Language="F#" Value="member this.Locations : seq&lt;System.ServiceModel.Channels.RedirectionLocation&gt;" Usage="System.ServiceModel.Channels.RedirectionException.Locations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Channels::RedirectionLocation ^&gt; ^ Locations { System::Collections::Generic::IEnumerable&lt;System::ServiceModel::Channels::RedirectionLocation ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -231,6 +267,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.RedirectionScope Scope { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.RedirectionScope Scope" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RedirectionException.Scope" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scope As RedirectionScope" />
+      <MemberSignature Language="F#" Value="member this.Scope : System.ServiceModel.Channels.RedirectionScope" Usage="System.ServiceModel.Channels.RedirectionException.Scope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::RedirectionScope ^ Scope { System::ServiceModel::Channels::RedirectionScope ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -249,6 +288,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.RedirectionType Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.RedirectionType Type" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.RedirectionException.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As RedirectionType" />
+      <MemberSignature Language="F#" Value="member this.Type : System.ServiceModel.Channels.RedirectionType" Usage="System.ServiceModel.Channels.RedirectionException.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::RedirectionType ^ Type { System::ServiceModel::Channels::RedirectionType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -263,14 +305,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.RedirectionException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

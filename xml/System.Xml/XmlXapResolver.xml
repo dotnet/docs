@@ -1,7 +1,10 @@
-<Type Name="XmlXapResolver" FullName="System.Xml.XmlXapResolver">
+﻿<Type Name="XmlXapResolver" FullName="System.Xml.XmlXapResolver">
   <TypeSignature Language="C#" Value="public class XmlXapResolver : System.Xml.XmlResolver" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlXapResolver extends System.Xml.XmlResolver" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlXapResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlXapResolver&#xA;Inherits XmlResolver" />
+  <TypeSignature Language="F#" Value="type XmlXapResolver = class&#xA;    inherit XmlResolver" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlXapResolver : System::Xml::XmlResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +31,8 @@
       <MemberSignature Language="C#" Value="public XmlXapResolver ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlXapResolver.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlXapResolver();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -52,6 +57,9 @@
       <MemberSignature Language="C#" Value="public override object GetEntity (Uri absoluteUri, string role, Type ofObjectToReturn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetEntity(class System.Uri absoluteUri, string role, class System.Type ofObjectToReturn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlXapResolver.GetEntity(System.Uri,System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEntity (absoluteUri As Uri, role As String, ofObjectToReturn As Type) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetEntity : Uri * string * Type -&gt; obj" Usage="xmlXapResolver.GetEntity (absoluteUri, role, ofObjectToReturn)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetEntity(Uri ^ absoluteUri, System::String ^ role, Type ^ ofObjectToReturn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -84,6 +92,9 @@
       <MemberSignature Language="C#" Value="public static void RegisterApplicationResourceStreamResolver (System.Xml.IApplicationResourceStreamResolver appStreamResolver);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterApplicationResourceStreamResolver(class System.Xml.IApplicationResourceStreamResolver appStreamResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlXapResolver.RegisterApplicationResourceStreamResolver(System.Xml.IApplicationResourceStreamResolver)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterApplicationResourceStreamResolver (appStreamResolver As IApplicationResourceStreamResolver)" />
+      <MemberSignature Language="F#" Value="static member RegisterApplicationResourceStreamResolver : System.Xml.IApplicationResourceStreamResolver -&gt; unit" Usage="System.Xml.XmlXapResolver.RegisterApplicationResourceStreamResolver appStreamResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterApplicationResourceStreamResolver(System::Xml::IApplicationResourceStreamResolver ^ appStreamResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

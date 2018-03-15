@@ -1,7 +1,10 @@
-<Type Name="DesignerNavigationDirection" FullName="System.Workflow.ComponentModel.Design.DesignerNavigationDirection">
+﻿<Type Name="DesignerNavigationDirection" FullName="System.Workflow.ComponentModel.Design.DesignerNavigationDirection">
   <TypeSignature Language="C#" Value="public enum DesignerNavigationDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DesignerNavigationDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.DesignerNavigationDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DesignerNavigationDirection" />
+  <TypeSignature Language="F#" Value="type DesignerNavigationDirection = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DesignerNavigationDirection" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="Down" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerNavigationDirection Down = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerNavigationDirection.Down" />
+      <MemberSignature Language="VB.NET" Value="Down" />
+      <MemberSignature Language="F#" Value="Down = 0" Usage="System.Workflow.ComponentModel.Design.DesignerNavigationDirection.Down" />
+      <MemberSignature Language="C++ CLI" Value="Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -42,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerNavigationDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Navigates down to the next activity in sequence.</summary>
       </Docs>
@@ -50,6 +57,9 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerNavigationDirection Left = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerNavigationDirection.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 2" Usage="System.Workflow.ComponentModel.Design.DesignerNavigationDirection.Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerNavigationDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Navigates to the left in the workflow.</summary>
       </Docs>
@@ -66,6 +77,9 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerNavigationDirection Right = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerNavigationDirection.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 3" Usage="System.Workflow.ComponentModel.Design.DesignerNavigationDirection.Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -74,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerNavigationDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Navigates to the right in the workflow.</summary>
       </Docs>
@@ -82,6 +97,9 @@
       <MemberSignature Language="C#" Value="Up" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerNavigationDirection Up = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerNavigationDirection.Up" />
+      <MemberSignature Language="VB.NET" Value="Up" />
+      <MemberSignature Language="F#" Value="Up = 1" Usage="System.Workflow.ComponentModel.Design.DesignerNavigationDirection.Up" />
+      <MemberSignature Language="C++ CLI" Value="Up" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -90,6 +108,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerNavigationDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Navigates up to the previous activity in sequence.</summary>
       </Docs>

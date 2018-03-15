@@ -1,7 +1,10 @@
-<Type Name="SecurityTokenHandlerConfiguration" FullName="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration">
+﻿<Type Name="SecurityTokenHandlerConfiguration" FullName="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration">
   <TypeSignature Language="C#" Value="public class SecurityTokenHandlerConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityTokenHandlerConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration" />
+  <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenHandlerConfiguration" />
+  <TypeSignature Language="F#" Value="type SecurityTokenHandlerConfiguration = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenHandlerConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public SecurityTokenHandlerConfiguration ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenHandlerConfiguration();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.AudienceRestriction AudienceRestriction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.AudienceRestriction AudienceRestriction" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.AudienceRestriction" />
+      <MemberSignature Language="VB.NET" Value="Public Property AudienceRestriction As AudienceRestriction" />
+      <MemberSignature Language="F#" Value="member this.AudienceRestriction : System.IdentityModel.Tokens.AudienceRestriction with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.AudienceRestriction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::AudienceRestriction ^ AudienceRestriction { System::IdentityModel::Tokens::AudienceRestriction ^ get(); void set(System::IdentityModel::Tokens::AudienceRestriction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -52,6 +60,9 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Configuration.IdentityModelCaches Caches { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Configuration.IdentityModelCaches Caches" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.Caches" />
+      <MemberSignature Language="VB.NET" Value="Public Property Caches As IdentityModelCaches" />
+      <MemberSignature Language="F#" Value="member this.Caches : System.IdentityModel.Configuration.IdentityModelCaches with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.Caches" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Configuration::IdentityModelCaches ^ Caches { System::IdentityModel::Configuration::IdentityModelCaches ^ get(); void set(System::IdentityModel::Configuration::IdentityModelCaches ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -70,6 +81,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.X509CertificateValidationMode CertificateValidationMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Security.X509CertificateValidationMode CertificateValidationMode" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.CertificateValidationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property CertificateValidationMode As X509CertificateValidationMode" />
+      <MemberSignature Language="F#" Value="member this.CertificateValidationMode : System.ServiceModel.Security.X509CertificateValidationMode with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.CertificateValidationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::X509CertificateValidationMode CertificateValidationMode { System::ServiceModel::Security::X509CertificateValidationMode get(); void set(System::ServiceModel::Security::X509CertificateValidationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -88,6 +102,9 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.X509CertificateValidator CertificateValidator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.X509CertificateValidator CertificateValidator" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.CertificateValidator" />
+      <MemberSignature Language="VB.NET" Value="Public Property CertificateValidator As X509CertificateValidator" />
+      <MemberSignature Language="F#" Value="member this.CertificateValidator : System.IdentityModel.Selectors.X509CertificateValidator with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.CertificateValidator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::X509CertificateValidator ^ CertificateValidator { System::IdentityModel::Selectors::X509CertificateValidator ^ get(); void set(System::IdentityModel::Selectors::X509CertificateValidator ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -106,6 +123,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ServiceModel.Security.X509CertificateValidationMode DefaultCertificateValidationMode;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.ServiceModel.Security.X509CertificateValidationMode DefaultCertificateValidationMode" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultCertificateValidationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultCertificateValidationMode As X509CertificateValidationMode " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultCertificateValidationMode : System.ServiceModel.Security.X509CertificateValidationMode" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultCertificateValidationMode" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ServiceModel::Security::X509CertificateValidationMode DefaultCertificateValidationMode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -123,6 +143,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.IdentityModel.Selectors.X509CertificateValidator DefaultCertificateValidator;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.IdentityModel.Selectors.X509CertificateValidator DefaultCertificateValidator" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultCertificateValidator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultCertificateValidator As X509CertificateValidator " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultCertificateValidator : System.IdentityModel.Selectors.X509CertificateValidator" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultCertificateValidator" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::IdentityModel::Selectors::X509CertificateValidator ^ DefaultCertificateValidator;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -140,6 +163,9 @@
       <MemberSignature Language="C#" Value="public static readonly bool DefaultDetectReplayedTokens;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly bool DefaultDetectReplayedTokens" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultDetectReplayedTokens" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultDetectReplayedTokens As Boolean " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultDetectReplayedTokens : bool" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultDetectReplayedTokens" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly bool DefaultDetectReplayedTokens;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -157,6 +183,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.IdentityModel.Tokens.IssuerNameRegistry DefaultIssuerNameRegistry;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.IdentityModel.Tokens.IssuerNameRegistry DefaultIssuerNameRegistry" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultIssuerNameRegistry" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultIssuerNameRegistry As IssuerNameRegistry " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultIssuerNameRegistry : System.IdentityModel.Tokens.IssuerNameRegistry" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultIssuerNameRegistry" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::IdentityModel::Tokens::IssuerNameRegistry ^ DefaultIssuerNameRegistry;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -174,6 +203,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.IdentityModel.Selectors.SecurityTokenResolver DefaultIssuerTokenResolver;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.IdentityModel.Selectors.SecurityTokenResolver DefaultIssuerTokenResolver" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultIssuerTokenResolver" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultIssuerTokenResolver As SecurityTokenResolver " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultIssuerTokenResolver : System.IdentityModel.Selectors.SecurityTokenResolver" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultIssuerTokenResolver" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::IdentityModel::Selectors::SecurityTokenResolver ^ DefaultIssuerTokenResolver;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -191,6 +223,9 @@
       <MemberSignature Language="C#" Value="public static readonly TimeSpan DefaultMaxClockSkew;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan DefaultMaxClockSkew" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultMaxClockSkew" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultMaxClockSkew As TimeSpan " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultMaxClockSkew : TimeSpan" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultMaxClockSkew" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly TimeSpan DefaultMaxClockSkew;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -208,6 +243,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Security.Cryptography.X509Certificates.X509RevocationMode DefaultRevocationMode;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Security.Cryptography.X509Certificates.X509RevocationMode DefaultRevocationMode" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultRevocationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultRevocationMode As X509RevocationMode " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultRevocationMode : System.Security.Cryptography.X509Certificates.X509RevocationMode" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultRevocationMode" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Security::Cryptography::X509Certificates::X509RevocationMode DefaultRevocationMode;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -225,6 +263,9 @@
       <MemberSignature Language="C#" Value="public static readonly bool DefaultSaveBootstrapContext;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly bool DefaultSaveBootstrapContext" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultSaveBootstrapContext" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultSaveBootstrapContext As Boolean " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultSaveBootstrapContext : bool" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultSaveBootstrapContext" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly bool DefaultSaveBootstrapContext;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -242,6 +283,9 @@
       <MemberSignature Language="C#" Value="public static readonly TimeSpan DefaultTokenReplayCacheExpirationPeriod;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan DefaultTokenReplayCacheExpirationPeriod" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultTokenReplayCacheExpirationPeriod" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultTokenReplayCacheExpirationPeriod As TimeSpan " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultTokenReplayCacheExpirationPeriod : TimeSpan" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultTokenReplayCacheExpirationPeriod" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly TimeSpan DefaultTokenReplayCacheExpirationPeriod;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -259,6 +303,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Security.Cryptography.X509Certificates.StoreLocation DefaultTrustedStoreLocation;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Security.Cryptography.X509Certificates.StoreLocation DefaultTrustedStoreLocation" />
       <MemberSignature Language="DocId" Value="F:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultTrustedStoreLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultTrustedStoreLocation As StoreLocation " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultTrustedStoreLocation : System.Security.Cryptography.X509Certificates.StoreLocation" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DefaultTrustedStoreLocation" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Security::Cryptography::X509Certificates::StoreLocation DefaultTrustedStoreLocation;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -276,6 +323,9 @@
       <MemberSignature Language="C#" Value="public bool DetectReplayedTokens { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DetectReplayedTokens" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DetectReplayedTokens" />
+      <MemberSignature Language="VB.NET" Value="Public Property DetectReplayedTokens As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DetectReplayedTokens : bool with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.DetectReplayedTokens" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DetectReplayedTokens { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -295,6 +345,9 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.IssuerNameRegistry IssuerNameRegistry { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.IssuerNameRegistry IssuerNameRegistry" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.IssuerNameRegistry" />
+      <MemberSignature Language="VB.NET" Value="Public Property IssuerNameRegistry As IssuerNameRegistry" />
+      <MemberSignature Language="F#" Value="member this.IssuerNameRegistry : System.IdentityModel.Tokens.IssuerNameRegistry with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.IssuerNameRegistry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::IssuerNameRegistry ^ IssuerNameRegistry { System::IdentityModel::Tokens::IssuerNameRegistry ^ get(); void set(System::IdentityModel::Tokens::IssuerNameRegistry ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -313,6 +366,9 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.SecurityTokenResolver IssuerTokenResolver { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.SecurityTokenResolver IssuerTokenResolver" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.IssuerTokenResolver" />
+      <MemberSignature Language="VB.NET" Value="Public Property IssuerTokenResolver As SecurityTokenResolver" />
+      <MemberSignature Language="F#" Value="member this.IssuerTokenResolver : System.IdentityModel.Selectors.SecurityTokenResolver with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.IssuerTokenResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::SecurityTokenResolver ^ IssuerTokenResolver { System::IdentityModel::Selectors::SecurityTokenResolver ^ get(); void set(System::IdentityModel::Selectors::SecurityTokenResolver ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -331,6 +387,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan MaxClockSkew { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MaxClockSkew" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.MaxClockSkew" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxClockSkew As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.MaxClockSkew : TimeSpan with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.MaxClockSkew" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxClockSkew { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -349,6 +408,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509RevocationMode RevocationMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.X509RevocationMode RevocationMode" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.RevocationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property RevocationMode As X509RevocationMode" />
+      <MemberSignature Language="F#" Value="member this.RevocationMode : System.Security.Cryptography.X509Certificates.X509RevocationMode with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.RevocationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509RevocationMode RevocationMode { System::Security::Cryptography::X509Certificates::X509RevocationMode get(); void set(System::Security::Cryptography::X509Certificates::X509RevocationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -367,6 +429,9 @@
       <MemberSignature Language="C#" Value="public bool SaveBootstrapContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SaveBootstrapContext" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.SaveBootstrapContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property SaveBootstrapContext As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SaveBootstrapContext : bool with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.SaveBootstrapContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SaveBootstrapContext { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -386,6 +451,9 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.SecurityTokenResolver ServiceTokenResolver { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.SecurityTokenResolver ServiceTokenResolver" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.ServiceTokenResolver" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceTokenResolver As SecurityTokenResolver" />
+      <MemberSignature Language="F#" Value="member this.ServiceTokenResolver : System.IdentityModel.Selectors.SecurityTokenResolver with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.ServiceTokenResolver" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::SecurityTokenResolver ^ ServiceTokenResolver { System::IdentityModel::Selectors::SecurityTokenResolver ^ get(); void set(System::IdentityModel::Selectors::SecurityTokenResolver ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -404,6 +472,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan TokenReplayCacheExpirationPeriod { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan TokenReplayCacheExpirationPeriod" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.TokenReplayCacheExpirationPeriod" />
+      <MemberSignature Language="VB.NET" Value="Public Property TokenReplayCacheExpirationPeriod As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.TokenReplayCacheExpirationPeriod : TimeSpan with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.TokenReplayCacheExpirationPeriod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TokenReplayCacheExpirationPeriod { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -422,6 +493,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.StoreLocation TrustedStoreLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.StoreLocation TrustedStoreLocation" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.TrustedStoreLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrustedStoreLocation As StoreLocation" />
+      <MemberSignature Language="F#" Value="member this.TrustedStoreLocation : System.Security.Cryptography.X509Certificates.StoreLocation with get, set" Usage="System.IdentityModel.Tokens.SecurityTokenHandlerConfiguration.TrustedStoreLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::StoreLocation TrustedStoreLocation { System::Security::Cryptography::X509Certificates::StoreLocation get(); void set(System::Security::Cryptography::X509Certificates::StoreLocation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="HierarchicalDataSourceView" FullName="System.Web.UI.HierarchicalDataSourceView">
+﻿<Type Name="HierarchicalDataSourceView" FullName="System.Web.UI.HierarchicalDataSourceView">
   <TypeSignature Language="C#" Value="public abstract class HierarchicalDataSourceView" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HierarchicalDataSourceView extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HierarchicalDataSourceView" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class HierarchicalDataSourceView" />
+  <TypeSignature Language="F#" Value="type HierarchicalDataSourceView = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HierarchicalDataSourceView abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="protected HierarchicalDataSourceView ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HierarchicalDataSourceView.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HierarchicalDataSourceView();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +63,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Web.UI.IHierarchicalEnumerable Select ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.IHierarchicalEnumerable Select() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HierarchicalDataSourceView.Select" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Select () As IHierarchicalEnumerable" />
+      <MemberSignature Language="F#" Value="abstract member Select : unit -&gt; System.Web.UI.IHierarchicalEnumerable" Usage="hierarchicalDataSourceView.Select " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Web::UI::IHierarchicalEnumerable ^ Select();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

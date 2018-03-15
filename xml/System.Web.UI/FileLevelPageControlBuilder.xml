@@ -1,7 +1,10 @@
-<Type Name="FileLevelPageControlBuilder" FullName="System.Web.UI.FileLevelPageControlBuilder">
+﻿<Type Name="FileLevelPageControlBuilder" FullName="System.Web.UI.FileLevelPageControlBuilder">
   <TypeSignature Language="C#" Value="public class FileLevelPageControlBuilder : System.Web.UI.RootBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileLevelPageControlBuilder extends System.Web.UI.RootBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.FileLevelPageControlBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileLevelPageControlBuilder&#xA;Inherits RootBuilder" />
+  <TypeSignature Language="F#" Value="type FileLevelPageControlBuilder = class&#xA;    inherit RootBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileLevelPageControlBuilder : System::Web::UI::RootBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public FileLevelPageControlBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FileLevelPageControlBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileLevelPageControlBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +55,9 @@
       <MemberSignature Language="C#" Value="public override void AppendLiteralString (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendLiteralString(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FileLevelPageControlBuilder.AppendLiteralString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendLiteralString (text As String)" />
+      <MemberSignature Language="F#" Value="override this.AppendLiteralString : string -&gt; unit" Usage="fileLevelPageControlBuilder.AppendLiteralString text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendLiteralString(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +89,9 @@
       <MemberSignature Language="C#" Value="public override void AppendSubBuilder (System.Web.UI.ControlBuilder subBuilder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendSubBuilder(class System.Web.UI.ControlBuilder subBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FileLevelPageControlBuilder.AppendSubBuilder(System.Web.UI.ControlBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendSubBuilder (subBuilder As ControlBuilder)" />
+      <MemberSignature Language="F#" Value="override this.AppendSubBuilder : System.Web.UI.ControlBuilder -&gt; unit" Usage="fileLevelPageControlBuilder.AppendSubBuilder subBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendSubBuilder(System::Web::UI::ControlBuilder ^ subBuilder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

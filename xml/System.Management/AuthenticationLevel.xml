@@ -1,7 +1,10 @@
-<Type Name="AuthenticationLevel" FullName="System.Management.AuthenticationLevel">
+﻿<Type Name="AuthenticationLevel" FullName="System.Management.AuthenticationLevel">
   <TypeSignature Language="C#" Value="public enum AuthenticationLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthenticationLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Management.AuthenticationLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AuthenticationLevel" />
+  <TypeSignature Language="F#" Value="type AuthenticationLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AuthenticationLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Call" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel Call = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.Call" />
+      <MemberSignature Language="VB.NET" Value="Call" />
+      <MemberSignature Language="F#" Value="Call = 3" Usage="System.Management.AuthenticationLevel.Call" />
+      <MemberSignature Language="C++ CLI" Value="Call" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Call-level COM authentication.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="Connect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel Connect = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.Connect" />
+      <MemberSignature Language="VB.NET" Value="Connect" />
+      <MemberSignature Language="F#" Value="Connect = 2" Usage="System.Management.AuthenticationLevel.Connect" />
+      <MemberSignature Language="C++ CLI" Value="Connect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Connect-level COM authentication.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Management.AuthenticationLevel.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The default COM authentication level. WMI uses the default Windows Authentication setting.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel None = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Management.AuthenticationLevel.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>No COM authentication.</summary>
       </Docs>
@@ -82,6 +101,9 @@
       <MemberSignature Language="C#" Value="Packet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel Packet = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.Packet" />
+      <MemberSignature Language="VB.NET" Value="Packet" />
+      <MemberSignature Language="F#" Value="Packet = 4" Usage="System.Management.AuthenticationLevel.Packet" />
+      <MemberSignature Language="C++ CLI" Value="Packet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -90,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Packet-level COM authentication.</summary>
       </Docs>
@@ -98,6 +121,9 @@
       <MemberSignature Language="C#" Value="PacketIntegrity" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel PacketIntegrity = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.PacketIntegrity" />
+      <MemberSignature Language="VB.NET" Value="PacketIntegrity" />
+      <MemberSignature Language="F#" Value="PacketIntegrity = 5" Usage="System.Management.AuthenticationLevel.PacketIntegrity" />
+      <MemberSignature Language="C++ CLI" Value="PacketIntegrity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -106,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Packet Integrity-level COM authentication.</summary>
       </Docs>
@@ -114,6 +141,9 @@
       <MemberSignature Language="C#" Value="PacketPrivacy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel PacketPrivacy = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.PacketPrivacy" />
+      <MemberSignature Language="VB.NET" Value="PacketPrivacy" />
+      <MemberSignature Language="F#" Value="PacketPrivacy = 6" Usage="System.Management.AuthenticationLevel.PacketPrivacy" />
+      <MemberSignature Language="C++ CLI" Value="PacketPrivacy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -122,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Packet Privacy-level COM authentication.</summary>
       </Docs>
@@ -130,6 +161,9 @@
       <MemberSignature Language="C#" Value="Unchanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.AuthenticationLevel Unchanged = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Management.AuthenticationLevel.Unchanged" />
+      <MemberSignature Language="VB.NET" Value="Unchanged" />
+      <MemberSignature Language="F#" Value="Unchanged = -1" Usage="System.Management.AuthenticationLevel.Unchanged" />
+      <MemberSignature Language="C++ CLI" Value="Unchanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -138,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Management.AuthenticationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>Authentication level should remain as it was before.</summary>
       </Docs>

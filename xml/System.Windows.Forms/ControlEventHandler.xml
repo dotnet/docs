@@ -1,7 +1,10 @@
-<Type Name="ControlEventHandler" FullName="System.Windows.Forms.ControlEventHandler">
+﻿<Type Name="ControlEventHandler" FullName="System.Windows.Forms.ControlEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ControlEventHandler(object sender, ControlEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ControlEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ControlEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ControlEventHandler(sender As Object, e As ControlEventArgs)" />
+  <TypeSignature Language="F#" Value="type ControlEventHandler = delegate of obj * ControlEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ControlEventHandler(System::Object ^ sender, ControlEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

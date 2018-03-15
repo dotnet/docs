@@ -1,7 +1,10 @@
-<Type Name="MediaTypeHeaderValue" FullName="System.Net.Http.Headers.MediaTypeHeaderValue">
+﻿<Type Name="MediaTypeHeaderValue" FullName="System.Net.Http.Headers.MediaTypeHeaderValue">
   <TypeSignature Language="C#" Value="public class MediaTypeHeaderValue : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MediaTypeHeaderValue extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.MediaTypeHeaderValue" />
+  <TypeSignature Language="VB.NET" Value="Public Class MediaTypeHeaderValue&#xA;Implements ICloneable" />
+  <TypeSignature Language="F#" Value="type MediaTypeHeaderValue = class&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MediaTypeHeaderValue : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +38,25 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected MediaTypeHeaderValue (System.Net.Http.Headers.MediaTypeHeaderValue source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.Headers.MediaTypeHeaderValue source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.MediaTypeHeaderValue.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (source As MediaTypeHeaderValue)" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.MediaTypeHeaderValue : System.Net.Http.Headers.MediaTypeHeaderValue -&gt; System.Net.Http.Headers.MediaTypeHeaderValue" Usage="new System.Net.Http.Headers.MediaTypeHeaderValue source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MediaTypeHeaderValue(System::Net::Http::Headers::MediaTypeHeaderValue ^ source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -64,6 +82,9 @@
       <MemberSignature Language="C#" Value="public MediaTypeHeaderValue (string mediaType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string mediaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.MediaTypeHeaderValue.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mediaType As String)" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.MediaTypeHeaderValue : string -&gt; System.Net.Http.Headers.MediaTypeHeaderValue" Usage="new System.Net.Http.Headers.MediaTypeHeaderValue mediaType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaTypeHeaderValue(System::String ^ mediaType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -89,6 +110,9 @@
       <MemberSignature Language="C#" Value="public string CharSet { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CharSet" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.MediaTypeHeaderValue.CharSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property CharSet As String" />
+      <MemberSignature Language="F#" Value="member this.CharSet : string with get, set" Usage="System.Net.Http.Headers.MediaTypeHeaderValue.CharSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CharSet { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -114,6 +138,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.MediaTypeHeaderValue.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="mediaTypeHeaderValue.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -144,6 +171,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.MediaTypeHeaderValue.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="mediaTypeHeaderValue.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -179,6 +209,9 @@
       <MemberSignature Language="C#" Value="public string MediaType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MediaType" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.MediaTypeHeaderValue.MediaType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MediaType As String" />
+      <MemberSignature Language="F#" Value="member this.MediaType : string with get, set" Usage="System.Net.Http.Headers.MediaTypeHeaderValue.MediaType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MediaType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -211,6 +244,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Net.Http.Headers.NameValueHeaderValue&gt; Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Net.Http.Headers.NameValueHeaderValue&gt; Parameters" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.MediaTypeHeaderValue.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As ICollection(Of NameValueHeaderValue)" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.Generic.ICollection&lt;System.Net.Http.Headers.NameValueHeaderValue&gt;" Usage="System.Net.Http.Headers.MediaTypeHeaderValue.Parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Net::Http::Headers::NameValueHeaderValue ^&gt; ^ Parameters { System::Collections::Generic::ICollection&lt;System::Net::Http::Headers::NameValueHeaderValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -236,6 +272,9 @@
       <MemberSignature Language="C#" Value="public static System.Net.Http.Headers.MediaTypeHeaderValue Parse (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Http.Headers.MediaTypeHeaderValue Parse(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.MediaTypeHeaderValue.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As MediaTypeHeaderValue" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.Http.Headers.MediaTypeHeaderValue" Usage="System.Net.Http.Headers.MediaTypeHeaderValue.Parse input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Http::Headers::MediaTypeHeaderValue ^ Parse(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -269,7 +308,12 @@
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.MediaTypeHeaderValue.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -293,6 +337,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.MediaTypeHeaderValue.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="mediaTypeHeaderValue.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -319,6 +366,9 @@
       <MemberSignature Language="C#" Value="public static bool TryParse (string input, out System.Net.Http.Headers.MediaTypeHeaderValue parsedValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, [out] class System.Net.Http.Headers.MediaTypeHeaderValue&amp; parsedValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.MediaTypeHeaderValue.TryParse(System.String,System.Net.Http.Headers.MediaTypeHeaderValue@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef parsedValue As MediaTypeHeaderValue) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Net.Http.Headers.MediaTypeHeaderValue.TryParse (input, parsedValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Net::Http::Headers::MediaTypeHeaderValue ^ % parsedValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -347,17 +397,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Http</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.MediaTypeHeaderValue" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

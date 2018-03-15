@@ -1,7 +1,10 @@
-<Type Name="XamlWriterSettings" FullName="System.Xaml.XamlWriterSettings">
+﻿<Type Name="XamlWriterSettings" FullName="System.Xaml.XamlWriterSettings">
   <TypeSignature Language="C#" Value="public class XamlWriterSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlWriterSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlWriterSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlWriterSettings" />
+  <TypeSignature Language="F#" Value="type XamlWriterSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlWriterSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +25,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlWriterSettings" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XamlWriterSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriterSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlWriterSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -41,6 +55,9 @@
       <MemberSignature Language="C#" Value="public XamlWriterSettings (System.Xaml.XamlWriterSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlWriterSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlWriterSettings.#ctor(System.Xaml.XamlWriterSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (settings As XamlWriterSettings)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlWriterSettings : System.Xaml.XamlWriterSettings -&gt; System.Xaml.XamlWriterSettings" Usage="new System.Xaml.XamlWriterSettings settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlWriterSettings(System::Xaml::XamlWriterSettings ^ settings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -62,14 +79,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlWriterSettings" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

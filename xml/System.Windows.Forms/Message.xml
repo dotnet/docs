@@ -1,7 +1,10 @@
-<Type Name="Message" FullName="System.Windows.Forms.Message">
+﻿<Type Name="Message" FullName="System.Windows.Forms.Message">
   <TypeSignature Language="C#" Value="public struct Message" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Message extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Message" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Message" />
+  <TypeSignature Language="F#" Value="type Message = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class Message" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.Message Create (IntPtr hWnd, int msg, IntPtr wparam, IntPtr lparam);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.Message Create(native int hWnd, int32 msg, native int wparam, native int lparam) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.Create(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (hWnd As IntPtr, msg As Integer, wparam As IntPtr, lparam As IntPtr) As Message" />
+      <MemberSignature Language="F#" Value="static member Create : nativeint * int * nativeint * nativeint -&gt; System.Windows.Forms.Message" Usage="System.Windows.Forms.Message.Create (hWnd, msg, wparam, lparam)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::Message Create(IntPtr hWnd, int msg, IntPtr wparam, IntPtr lparam);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +78,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="message.Equals o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -95,6 +104,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="message.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -115,6 +127,9 @@
       <MemberSignature Language="C#" Value="public object GetLParam (Type cls);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetLParam(class System.Type cls) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.GetLParam(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLParam (cls As Type) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetLParam : Type -&gt; obj" Usage="message.GetLParam cls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetLParam(Type ^ cls);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -144,6 +159,9 @@
       <MemberSignature Language="C#" Value="public IntPtr HWnd { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int HWnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Message.HWnd" />
+      <MemberSignature Language="VB.NET" Value="Public Property HWnd As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.HWnd : nativeint with get, set" Usage="System.Windows.Forms.Message.HWnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr HWnd { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +180,9 @@
       <MemberSignature Language="C#" Value="public IntPtr LParam { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int LParam" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Message.LParam" />
+      <MemberSignature Language="VB.NET" Value="Public Property LParam As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.LParam : nativeint with get, set" Usage="System.Windows.Forms.Message.LParam" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr LParam { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -187,6 +208,9 @@
       <MemberSignature Language="C#" Value="public int Msg { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Msg" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Message.Msg" />
+      <MemberSignature Language="VB.NET" Value="Public Property Msg As Integer" />
+      <MemberSignature Language="F#" Value="member this.Msg : int with get, set" Usage="System.Windows.Forms.Message.Msg" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Msg { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -216,6 +240,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Forms.Message a, System.Windows.Forms.Message b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Forms.Message a, valuetype System.Windows.Forms.Message b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.op_Equality(System.Windows.Forms.Message,System.Windows.Forms.Message)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As Message, b As Message) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Forms.Message * System.Windows.Forms.Message -&gt; bool" Usage="a = b" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Forms::Message a, System::Windows::Forms::Message b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -243,6 +270,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Forms.Message a, System.Windows.Forms.Message b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Forms.Message a, valuetype System.Windows.Forms.Message b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.op_Inequality(System.Windows.Forms.Message,System.Windows.Forms.Message)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As Message, b As Message) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Forms.Message * System.Windows.Forms.Message -&gt; bool" Usage="System.Windows.Forms.Message.op_Inequality (a, b)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Forms::Message a, System::Windows::Forms::Message b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -270,6 +300,9 @@
       <MemberSignature Language="C#" Value="public IntPtr Result { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Result" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Message.Result" />
+      <MemberSignature Language="VB.NET" Value="Public Property Result As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.Result : nativeint with get, set" Usage="System.Windows.Forms.Message.Result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Result { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -288,6 +321,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Message.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="message.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -307,6 +343,9 @@
       <MemberSignature Language="C#" Value="public IntPtr WParam { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int WParam" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Message.WParam" />
+      <MemberSignature Language="VB.NET" Value="Public Property WParam As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.WParam : nativeint with get, set" Usage="System.Windows.Forms.Message.WParam" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr WParam { IntPtr get(); void set(IntPtr value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="KeyTipHorizontalPlacement" FullName="System.Windows.Controls.KeyTipHorizontalPlacement">
+﻿<Type Name="KeyTipHorizontalPlacement" FullName="System.Windows.Controls.KeyTipHorizontalPlacement">
   <TypeSignature Language="C#" Value="public enum KeyTipHorizontalPlacement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KeyTipHorizontalPlacement extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.KeyTipHorizontalPlacement" />
+  <TypeSignature Language="VB.NET" Value="Public Enum KeyTipHorizontalPlacement" />
+  <TypeSignature Language="F#" Value="type KeyTipHorizontalPlacement = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class KeyTipHorizontalPlacement" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="KeyTipCenterAtTargetCenter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipCenterAtTargetCenter = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipCenterAtTargetCenter" />
+      <MemberSignature Language="VB.NET" Value="KeyTipCenterAtTargetCenter" />
+      <MemberSignature Language="F#" Value="KeyTipCenterAtTargetCenter = 4" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipCenterAtTargetCenter" />
+      <MemberSignature Language="C++ CLI" Value="KeyTipCenterAtTargetCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The center of the KeyTip is aligned with the center of the target element.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="KeyTipCenterAtTargetLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipCenterAtTargetLeft = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipCenterAtTargetLeft" />
+      <MemberSignature Language="VB.NET" Value="KeyTipCenterAtTargetLeft" />
+      <MemberSignature Language="F#" Value="KeyTipCenterAtTargetLeft = 3" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipCenterAtTargetLeft" />
+      <MemberSignature Language="C++ CLI" Value="KeyTipCenterAtTargetLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The center of the KeyTip is aligned with the left of the target element.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="KeyTipCenterAtTargetRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipCenterAtTargetRight = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipCenterAtTargetRight" />
+      <MemberSignature Language="VB.NET" Value="KeyTipCenterAtTargetRight" />
+      <MemberSignature Language="F#" Value="KeyTipCenterAtTargetRight = 5" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipCenterAtTargetRight" />
+      <MemberSignature Language="C++ CLI" Value="KeyTipCenterAtTargetRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The center of the KeyTip is aligned with the right of the target element.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="KeyTipLeftAtTargetCenter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipLeftAtTargetCenter = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipLeftAtTargetCenter" />
+      <MemberSignature Language="VB.NET" Value="KeyTipLeftAtTargetCenter" />
+      <MemberSignature Language="F#" Value="KeyTipLeftAtTargetCenter = 1" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipLeftAtTargetCenter" />
+      <MemberSignature Language="C++ CLI" Value="KeyTipLeftAtTargetCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The left of the KeyTip is aligned with the center of the target element.</summary>
       </Docs>
@@ -82,6 +101,9 @@
       <MemberSignature Language="C#" Value="KeyTipLeftAtTargetLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipLeftAtTargetLeft = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipLeftAtTargetLeft" />
+      <MemberSignature Language="VB.NET" Value="KeyTipLeftAtTargetLeft" />
+      <MemberSignature Language="F#" Value="KeyTipLeftAtTargetLeft = 0" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipLeftAtTargetLeft" />
+      <MemberSignature Language="C++ CLI" Value="KeyTipLeftAtTargetLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -90,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The left of the KeyTip is aligned with the left of the target element.</summary>
       </Docs>
@@ -98,6 +121,9 @@
       <MemberSignature Language="C#" Value="KeyTipLeftAtTargetRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipLeftAtTargetRight = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipLeftAtTargetRight" />
+      <MemberSignature Language="VB.NET" Value="KeyTipLeftAtTargetRight" />
+      <MemberSignature Language="F#" Value="KeyTipLeftAtTargetRight = 2" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipLeftAtTargetRight" />
+      <MemberSignature Language="C++ CLI" Value="KeyTipLeftAtTargetRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -106,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The left of the KeyTip is aligned with the right of the target element.</summary>
       </Docs>
@@ -114,6 +141,9 @@
       <MemberSignature Language="C#" Value="KeyTipRightAtTargetCenter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipRightAtTargetCenter = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipRightAtTargetCenter" />
+      <MemberSignature Language="VB.NET" Value="KeyTipRightAtTargetCenter" />
+      <MemberSignature Language="F#" Value="KeyTipRightAtTargetCenter = 7" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipRightAtTargetCenter" />
+      <MemberSignature Language="C++ CLI" Value="KeyTipRightAtTargetCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -122,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The right of the KeyTip is aligned with the center of the target element.</summary>
       </Docs>
@@ -130,6 +161,9 @@
       <MemberSignature Language="C#" Value="KeyTipRightAtTargetLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipRightAtTargetLeft = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipRightAtTargetLeft" />
+      <MemberSignature Language="VB.NET" Value="KeyTipRightAtTargetLeft" />
+      <MemberSignature Language="F#" Value="KeyTipRightAtTargetLeft = 6" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipRightAtTargetLeft" />
+      <MemberSignature Language="C++ CLI" Value="KeyTipRightAtTargetLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -138,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The right of the KeyTip is aligned with the left of the target element.</summary>
       </Docs>
@@ -146,6 +181,9 @@
       <MemberSignature Language="C#" Value="KeyTipRightAtTargetRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.KeyTipHorizontalPlacement KeyTipRightAtTargetRight = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipRightAtTargetRight" />
+      <MemberSignature Language="VB.NET" Value="KeyTipRightAtTargetRight" />
+      <MemberSignature Language="F#" Value="KeyTipRightAtTargetRight = 8" Usage="System.Windows.Controls.KeyTipHorizontalPlacement.KeyTipRightAtTargetRight" />
+      <MemberSignature Language="C++ CLI" Value="KeyTipRightAtTargetRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -154,6 +192,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.KeyTipHorizontalPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The right of the KeyTip is aligned with the right of the target element.</summary>
       </Docs>

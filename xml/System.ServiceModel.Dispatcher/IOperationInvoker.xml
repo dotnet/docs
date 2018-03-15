@@ -1,7 +1,10 @@
-<Type Name="IOperationInvoker" FullName="System.ServiceModel.Dispatcher.IOperationInvoker">
+﻿<Type Name="IOperationInvoker" FullName="System.ServiceModel.Dispatcher.IOperationInvoker">
   <TypeSignature Language="C#" Value="public interface IOperationInvoker" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IOperationInvoker" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IOperationInvoker" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IOperationInvoker" />
+  <TypeSignature Language="F#" Value="type IOperationInvoker = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IOperationInvoker" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="public object[] AllocateInputs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] AllocateInputs() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IOperationInvoker.AllocateInputs" />
+      <MemberSignature Language="VB.NET" Value="Public Function AllocateInputs () As Object()" />
+      <MemberSignature Language="F#" Value="abstract member AllocateInputs : unit -&gt; obj[]" Usage="iOperationInvoker.AllocateInputs " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ AllocateInputs();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="public object Invoke (object instance, object[] inputs, out object[] outputs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Invoke(object instance, object[] inputs, [out] object[]&amp; outputs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IOperationInvoker.Invoke(System.Object,System.Object[],System.Object[]@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Invoke (instance As Object, inputs As Object(), ByRef outputs As Object()) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : obj * obj[] *  -&gt; obj" Usage="iOperationInvoker.Invoke (instance, inputs, outputs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke(System::Object ^ instance, cli::array &lt;System::Object ^&gt; ^ inputs, [Runtime::InteropServices::Out] cli::array &lt;System::Object ^&gt; ^ % outputs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -76,6 +85,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult InvokeBegin (object instance, object[] inputs, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult InvokeBegin(object instance, object[] inputs, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IOperationInvoker.InvokeBegin(System.Object,System.Object[],System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InvokeBegin (instance As Object, inputs As Object(), callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member InvokeBegin : obj * obj[] * AsyncCallback * obj -&gt; IAsyncResult" Usage="iOperationInvoker.InvokeBegin (instance, inputs, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ InvokeBegin(System::Object ^ instance, cli::array &lt;System::Object ^&gt; ^ inputs, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -104,6 +116,9 @@
       <MemberSignature Language="C#" Value="public object InvokeEnd (object instance, out object[] outputs, IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object InvokeEnd(object instance, [out] object[]&amp; outputs, class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IOperationInvoker.InvokeEnd(System.Object,System.Object[]@,System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InvokeEnd (instance As Object, ByRef outputs As Object(), result As IAsyncResult) As Object" />
+      <MemberSignature Language="F#" Value="abstract member InvokeEnd : obj *  * IAsyncResult -&gt; obj" Usage="iOperationInvoker.InvokeEnd (instance, outputs, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeEnd(System::Object ^ instance, [Runtime::InteropServices::Out] cli::array &lt;System::Object ^&gt; ^ % outputs, IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -130,6 +145,9 @@
       <MemberSignature Language="C#" Value="public bool IsSynchronous { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronous" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.IOperationInvoker.IsSynchronous" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronous As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronous : bool" Usage="System.ServiceModel.Dispatcher.IOperationInvoker.IsSynchronous" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronous { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

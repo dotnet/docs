@@ -1,7 +1,10 @@
-<Type Name="UsingTaskParameterGroupElement" FullName="Microsoft.Build.Construction.UsingTaskParameterGroupElement">
+﻿<Type Name="UsingTaskParameterGroupElement" FullName="Microsoft.Build.Construction.UsingTaskParameterGroupElement">
   <TypeSignature Language="C#" Value="public class UsingTaskParameterGroupElement : Microsoft.Build.Construction.ProjectElementContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UsingTaskParameterGroupElement extends Microsoft.Build.Construction.ProjectElementContainer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.UsingTaskParameterGroupElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class UsingTaskParameterGroupElement&#xA;Inherits ProjectElementContainer" />
+  <TypeSignature Language="F#" Value="type UsingTaskParameterGroupElement = class&#xA;    inherit ProjectElementContainer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UsingTaskParameterGroupElement : Microsoft::Build::Construction::ProjectElementContainer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +23,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="AddParameter">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a parameter to this parameter group.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddParameter">
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ProjectUsingTaskParameterElement AddParameter (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Construction.ProjectUsingTaskParameterElement AddParameter(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.UsingTaskParameterGroupElement.AddParameter(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddParameter (name As String) As ProjectUsingTaskParameterElement" />
+      <MemberSignature Language="F#" Value="member this.AddParameter : string -&gt; Microsoft.Build.Construction.ProjectUsingTaskParameterElement" Usage="usingTaskParameterGroupElement.AddParameter name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Construction::ProjectUsingTaskParameterElement ^ AddParameter(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -46,6 +61,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ProjectUsingTaskParameterElement AddParameter (string name, string output, string required, string parameterType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Construction.ProjectUsingTaskParameterElement AddParameter(string name, string output, string required, string parameterType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.UsingTaskParameterGroupElement.AddParameter(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddParameter (name As String, output As String, required As String, parameterType As String) As ProjectUsingTaskParameterElement" />
+      <MemberSignature Language="F#" Value="member this.AddParameter : string * string * string * string -&gt; Microsoft.Build.Construction.ProjectUsingTaskParameterElement" Usage="usingTaskParameterGroupElement.AddParameter (name, output, required, parameterType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Construction::ProjectUsingTaskParameterElement ^ AddParameter(System::String ^ name, System::String ^ output, System::String ^ required, System::String ^ parameterType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -74,6 +92,9 @@
       <MemberSignature Language="C#" Value="public override string Condition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Condition" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.UsingTaskParameterGroupElement.Condition" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Condition As String" />
+      <MemberSignature Language="F#" Value="member this.Condition : string with get, set" Usage="Microsoft.Build.Construction.UsingTaskParameterGroupElement.Condition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Condition { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -92,6 +113,9 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Build.Construction.ElementLocation ConditionLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation ConditionLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.UsingTaskParameterGroupElement.ConditionLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ConditionLocation As ElementLocation" />
+      <MemberSignature Language="F#" Value="member this.ConditionLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.UsingTaskParameterGroupElement.ConditionLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Build::Construction::ElementLocation ^ ConditionLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -110,6 +134,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectUsingTaskParameterElement&gt; Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.Build.Construction.ProjectUsingTaskParameterElement&gt; Parameters" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.UsingTaskParameterGroupElement.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As ICollection(Of ProjectUsingTaskParameterElement)" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectUsingTaskParameterElement&gt;" Usage="Microsoft.Build.Construction.UsingTaskParameterGroupElement.Parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectUsingTaskParameterElement ^&gt; ^ Parameters { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectUsingTaskParameterElement ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -124,14 +151,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddParameter">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a parameter to this parameter group.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

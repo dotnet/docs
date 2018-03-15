@@ -1,7 +1,10 @@
-<Type Name="SessionAuthenticationModule" FullName="System.IdentityModel.Services.SessionAuthenticationModule">
+﻿<Type Name="SessionAuthenticationModule" FullName="System.IdentityModel.Services.SessionAuthenticationModule">
   <TypeSignature Language="C#" Value="public class SessionAuthenticationModule : System.IdentityModel.Services.HttpModuleBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionAuthenticationModule extends System.IdentityModel.Services.HttpModuleBase" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SessionAuthenticationModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class SessionAuthenticationModule&#xA;Inherits HttpModuleBase" />
+  <TypeSignature Language="F#" Value="type SessionAuthenticationModule = class&#xA;    inherit HttpModuleBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SessionAuthenticationModule : System::IdentityModel::Services::HttpModuleBase" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +58,8 @@
       <MemberSignature Language="C#" Value="public SessionAuthenticationModule ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionAuthenticationModule();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -77,6 +82,9 @@
       <MemberSignature Language="C#" Value="public virtual void AuthenticateSessionSecurityToken (System.IdentityModel.Tokens.SessionSecurityToken sessionToken, bool writeCookie);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AuthenticateSessionSecurityToken(class System.IdentityModel.Tokens.SessionSecurityToken sessionToken, bool writeCookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.AuthenticateSessionSecurityToken(System.IdentityModel.Tokens.SessionSecurityToken,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AuthenticateSessionSecurityToken (sessionToken As SessionSecurityToken, writeCookie As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member AuthenticateSessionSecurityToken : System.IdentityModel.Tokens.SessionSecurityToken * bool -&gt; unit&#xA;override this.AuthenticateSessionSecurityToken : System.IdentityModel.Tokens.SessionSecurityToken * bool -&gt; unit" Usage="sessionAuthenticationModule.AuthenticateSessionSecurityToken (sessionToken, writeCookie)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AuthenticateSessionSecurityToken(System::IdentityModel::Tokens::SessionSecurityToken ^ sessionToken, bool writeCookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -108,6 +116,8 @@
       <MemberSignature Language="C#" Value="public bool ContainsSessionTokenCookie (System.Web.HttpCookieCollection httpCookieCollection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ContainsSessionTokenCookie(class System.Web.HttpCookieCollection httpCookieCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.ContainsSessionTokenCookie(System.Web.HttpCookieCollection)" />
+      <MemberSignature Language="F#" Value="member this.ContainsSessionTokenCookie : System.Web.HttpCookieCollection -&gt; bool" Usage="sessionAuthenticationModule.ContainsSessionTokenCookie httpCookieCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsSessionTokenCookie(System::Web::HttpCookieCollection ^ httpCookieCollection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -133,6 +143,9 @@
       <MemberSignature Language="C#" Value="public virtual System.IdentityModel.Tokens.SessionSecurityToken ContextSessionSecurityToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SessionSecurityToken ContextSessionSecurityToken" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SessionAuthenticationModule.ContextSessionSecurityToken" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContextSessionSecurityToken As SessionSecurityToken" />
+      <MemberSignature Language="F#" Value="member this.ContextSessionSecurityToken : System.IdentityModel.Tokens.SessionSecurityToken" Usage="System.IdentityModel.Services.SessionAuthenticationModule.ContextSessionSecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IdentityModel::Tokens::SessionSecurityToken ^ ContextSessionSecurityToken { System::IdentityModel::Tokens::SessionSecurityToken ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -151,6 +164,9 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Services.CookieHandler CookieHandler { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Services.CookieHandler CookieHandler" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SessionAuthenticationModule.CookieHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Property CookieHandler As CookieHandler" />
+      <MemberSignature Language="F#" Value="member this.CookieHandler : System.IdentityModel.Services.CookieHandler with get, set" Usage="System.IdentityModel.Services.SessionAuthenticationModule.CookieHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Services::CookieHandler ^ CookieHandler { System::IdentityModel::Services::CookieHandler ^ get(); void set(System::IdentityModel::Services::CookieHandler ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -179,6 +195,9 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SessionSecurityToken CreateSessionSecurityToken (System.Security.Claims.ClaimsPrincipal principal, string context, DateTime validFrom, DateTime validTo, bool isPersistent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IdentityModel.Tokens.SessionSecurityToken CreateSessionSecurityToken(class System.Security.Claims.ClaimsPrincipal principal, string context, valuetype System.DateTime validFrom, valuetype System.DateTime validTo, bool isPersistent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.CreateSessionSecurityToken(System.Security.Claims.ClaimsPrincipal,System.String,System.DateTime,System.DateTime,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateSessionSecurityToken (principal As ClaimsPrincipal, context As String, validFrom As DateTime, validTo As DateTime, isPersistent As Boolean) As SessionSecurityToken" />
+      <MemberSignature Language="F#" Value="member this.CreateSessionSecurityToken : System.Security.Claims.ClaimsPrincipal * string * DateTime * DateTime * bool -&gt; System.IdentityModel.Tokens.SessionSecurityToken" Usage="sessionAuthenticationModule.CreateSessionSecurityToken (principal, context, validFrom, validTo, isPersistent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SessionSecurityToken ^ CreateSessionSecurityToken(System::Security::Claims::ClaimsPrincipal ^ principal, System::String ^ context, DateTime validFrom, DateTime validTo, bool isPersistent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -211,6 +230,9 @@
       <MemberSignature Language="C#" Value="public void DeleteSessionTokenCookie ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteSessionTokenCookie() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.DeleteSessionTokenCookie" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteSessionTokenCookie ()" />
+      <MemberSignature Language="F#" Value="member this.DeleteSessionTokenCookie : unit -&gt; unit" Usage="sessionAuthenticationModule.DeleteSessionTokenCookie " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteSessionTokenCookie();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -236,6 +258,9 @@
       <MemberSignature Language="C#" Value="protected override void InitializeModule (System.Web.HttpApplication context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitializeModule(class System.Web.HttpApplication context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.InitializeModule(System.Web.HttpApplication)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeModule (context As HttpApplication)" />
+      <MemberSignature Language="F#" Value="override this.InitializeModule : System.Web.HttpApplication -&gt; unit" Usage="sessionAuthenticationModule.InitializeModule context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeModule(System::Web::HttpApplication ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -264,6 +289,9 @@
       <MemberSignature Language="C#" Value="protected override void InitializePropertiesFromConfiguration ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitializePropertiesFromConfiguration() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.InitializePropertiesFromConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializePropertiesFromConfiguration ()" />
+      <MemberSignature Language="F#" Value="override this.InitializePropertiesFromConfiguration : unit -&gt; unit" Usage="sessionAuthenticationModule.InitializePropertiesFromConfiguration " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializePropertiesFromConfiguration();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -289,6 +317,9 @@
       <MemberSignature Language="C#" Value="public bool IsReferenceMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReferenceMode" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SessionAuthenticationModule.IsReferenceMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsReferenceMode As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReferenceMode : bool with get, set" Usage="System.IdentityModel.Services.SessionAuthenticationModule.IsReferenceMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReferenceMode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -318,6 +349,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnAuthenticateRequest (object sender, EventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAuthenticateRequest(object sender, class System.EventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.OnAuthenticateRequest(System.Object,System.EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnAuthenticateRequest : obj * EventArgs -&gt; unit&#xA;override this.OnAuthenticateRequest : obj * EventArgs -&gt; unit" Usage="sessionAuthenticationModule.OnAuthenticateRequest (sender, eventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAuthenticateRequest(System::Object ^ sender, EventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -363,6 +396,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPostAuthenticateRequest (object sender, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPostAuthenticateRequest(object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.OnPostAuthenticateRequest(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPostAuthenticateRequest (sender As Object, e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPostAuthenticateRequest : obj * EventArgs -&gt; unit&#xA;override this.OnPostAuthenticateRequest : obj * EventArgs -&gt; unit" Usage="sessionAuthenticationModule.OnPostAuthenticateRequest (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPostAuthenticateRequest(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -395,6 +431,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSessionSecurityTokenCreated (System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSessionSecurityTokenCreated(class System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.OnSessionSecurityTokenCreated(System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSessionSecurityTokenCreated (args As SessionSecurityTokenCreatedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSessionSecurityTokenCreated : System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs -&gt; unit&#xA;override this.OnSessionSecurityTokenCreated : System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs -&gt; unit" Usage="sessionAuthenticationModule.OnSessionSecurityTokenCreated args" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSessionSecurityTokenCreated(System::IdentityModel::Services::SessionSecurityTokenCreatedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -423,6 +462,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSessionSecurityTokenReceived (System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSessionSecurityTokenReceived(class System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.OnSessionSecurityTokenReceived(System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSessionSecurityTokenReceived (args As SessionSecurityTokenReceivedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSessionSecurityTokenReceived : System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs -&gt; unit&#xA;override this.OnSessionSecurityTokenReceived : System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs -&gt; unit" Usage="sessionAuthenticationModule.OnSessionSecurityTokenReceived args" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSessionSecurityTokenReceived(System::IdentityModel::Services::SessionSecurityTokenReceivedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -451,6 +493,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSignedOut (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSignedOut(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.OnSignedOut(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSignedOut (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSignedOut : EventArgs -&gt; unit&#xA;override this.OnSignedOut : EventArgs -&gt; unit" Usage="sessionAuthenticationModule.OnSignedOut e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSignedOut(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -479,6 +524,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSigningOut (System.IdentityModel.Services.SigningOutEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSigningOut(class System.IdentityModel.Services.SigningOutEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.OnSigningOut(System.IdentityModel.Services.SigningOutEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSigningOut (e As SigningOutEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSigningOut : System.IdentityModel.Services.SigningOutEventArgs -&gt; unit&#xA;override this.OnSigningOut : System.IdentityModel.Services.SigningOutEventArgs -&gt; unit" Usage="sessionAuthenticationModule.OnSigningOut e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSigningOut(System::IdentityModel::Services::SigningOutEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -507,6 +555,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSignOutError (System.IdentityModel.Services.ErrorEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSignOutError(class System.IdentityModel.Services.ErrorEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.OnSignOutError(System.IdentityModel.Services.ErrorEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSignOutError (e As ErrorEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSignOutError : System.IdentityModel.Services.ErrorEventArgs -&gt; unit&#xA;override this.OnSignOutError : System.IdentityModel.Services.ErrorEventArgs -&gt; unit" Usage="sessionAuthenticationModule.OnSignOutError e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSignOutError(System::IdentityModel::Services::ErrorEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -535,6 +586,9 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SessionSecurityToken ReadSessionTokenFromCookie (byte[] sessionCookie);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IdentityModel.Tokens.SessionSecurityToken ReadSessionTokenFromCookie(unsigned int8[] sessionCookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.ReadSessionTokenFromCookie(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadSessionTokenFromCookie (sessionCookie As Byte()) As SessionSecurityToken" />
+      <MemberSignature Language="F#" Value="member this.ReadSessionTokenFromCookie : byte[] -&gt; System.IdentityModel.Tokens.SessionSecurityToken" Usage="sessionAuthenticationModule.ReadSessionTokenFromCookie sessionCookie" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IdentityModel::Tokens::SessionSecurityToken ^ ReadSessionTokenFromCookie(cli::array &lt;System::Byte&gt; ^ sessionCookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -558,6 +612,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs&gt; SessionSecurityTokenCreated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs&gt; SessionSecurityTokenCreated" />
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.SessionAuthenticationModule.SessionSecurityTokenCreated" />
+      <MemberSignature Language="VB.NET" Value="Public Event SessionSecurityTokenCreated As EventHandler(Of SessionSecurityTokenCreatedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.SessionSecurityTokenCreated : EventHandler&lt;System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs&gt; " Usage="member this.SessionSecurityTokenCreated : System.EventHandler&lt;System.IdentityModel.Services.SessionSecurityTokenCreatedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::IdentityModel::Services::SessionSecurityTokenCreatedEventArgs ^&gt; ^ SessionSecurityTokenCreated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -595,6 +652,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs&gt; SessionSecurityTokenReceived;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs&gt; SessionSecurityTokenReceived" />
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.SessionAuthenticationModule.SessionSecurityTokenReceived" />
+      <MemberSignature Language="VB.NET" Value="Public Event SessionSecurityTokenReceived As EventHandler(Of SessionSecurityTokenReceivedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.SessionSecurityTokenReceived : EventHandler&lt;System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs&gt; " Usage="member this.SessionSecurityTokenReceived : System.EventHandler&lt;System.IdentityModel.Services.SessionSecurityTokenReceivedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::IdentityModel::Services::SessionSecurityTokenReceivedEventArgs ^&gt; ^ SessionSecurityTokenReceived;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -630,6 +690,8 @@
       <MemberSignature Language="C#" Value="protected virtual void SetPrincipalFromSessionToken (System.IdentityModel.Tokens.SessionSecurityToken sessionSecurityToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetPrincipalFromSessionToken(class System.IdentityModel.Tokens.SessionSecurityToken sessionSecurityToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.SetPrincipalFromSessionToken(System.IdentityModel.Tokens.SessionSecurityToken)" />
+      <MemberSignature Language="F#" Value="abstract member SetPrincipalFromSessionToken : System.IdentityModel.Tokens.SessionSecurityToken -&gt; unit&#xA;override this.SetPrincipalFromSessionToken : System.IdentityModel.Tokens.SessionSecurityToken -&gt; unit" Usage="sessionAuthenticationModule.SetPrincipalFromSessionToken sessionSecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetPrincipalFromSessionToken(System::IdentityModel::Tokens::SessionSecurityToken ^ sessionSecurityToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -660,6 +722,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler SignedOut;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SignedOut" />
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.SessionAuthenticationModule.SignedOut" />
+      <MemberSignature Language="VB.NET" Value="Public Event SignedOut As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SignedOut : EventHandler " Usage="member this.SignedOut : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SignedOut;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -693,6 +758,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.IdentityModel.Services.SigningOutEventArgs&gt; SigningOut;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.IdentityModel.Services.SigningOutEventArgs&gt; SigningOut" />
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.SessionAuthenticationModule.SigningOut" />
+      <MemberSignature Language="VB.NET" Value="Public Event SigningOut As EventHandler(Of SigningOutEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.SigningOut : EventHandler&lt;System.IdentityModel.Services.SigningOutEventArgs&gt; " Usage="member this.SigningOut : System.EventHandler&lt;System.IdentityModel.Services.SigningOutEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::IdentityModel::Services::SigningOutEventArgs ^&gt; ^ SigningOut;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -726,6 +794,9 @@
       <MemberSignature Language="C#" Value="public virtual void SignOut ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SignOut() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.SignOut" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SignOut ()" />
+      <MemberSignature Language="F#" Value="abstract member SignOut : unit -&gt; unit&#xA;override this.SignOut : unit -&gt; unit" Usage="sessionAuthenticationModule.SignOut " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SignOut();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -760,6 +831,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.IdentityModel.Services.ErrorEventArgs&gt; SignOutError;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.IdentityModel.Services.ErrorEventArgs&gt; SignOutError" />
       <MemberSignature Language="DocId" Value="E:System.IdentityModel.Services.SessionAuthenticationModule.SignOutError" />
+      <MemberSignature Language="VB.NET" Value="Public Event SignOutError As EventHandler(Of ErrorEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.SignOutError : EventHandler&lt;System.IdentityModel.Services.ErrorEventArgs&gt; " Usage="member this.SignOutError : System.EventHandler&lt;System.IdentityModel.Services.ErrorEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::IdentityModel::Services::ErrorEventArgs ^&gt; ^ SignOutError;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -795,6 +869,9 @@
       <MemberSignature Language="C#" Value="public bool TryReadSessionTokenFromCookie (out System.IdentityModel.Tokens.SessionSecurityToken sessionToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryReadSessionTokenFromCookie([out] class System.IdentityModel.Tokens.SessionSecurityToken&amp; sessionToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.TryReadSessionTokenFromCookie(System.IdentityModel.Tokens.SessionSecurityToken@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryReadSessionTokenFromCookie (ByRef sessionToken As SessionSecurityToken) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryReadSessionTokenFromCookie :  -&gt; bool" Usage="sessionAuthenticationModule.TryReadSessionTokenFromCookie sessionToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryReadSessionTokenFromCookie([Runtime::InteropServices::Out] System::IdentityModel::Tokens::SessionSecurityToken ^ % sessionToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -825,6 +902,8 @@
       <MemberSignature Language="C#" Value="protected System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt; ValidateSessionToken (System.IdentityModel.Tokens.SessionSecurityToken sessionSecurityToken);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Security.Claims.ClaimsIdentity&gt; ValidateSessionToken(class System.IdentityModel.Tokens.SessionSecurityToken sessionSecurityToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.ValidateSessionToken(System.IdentityModel.Tokens.SessionSecurityToken)" />
+      <MemberSignature Language="F#" Value="member this.ValidateSessionToken : System.IdentityModel.Tokens.SessionSecurityToken -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Security.Claims.ClaimsIdentity&gt;" Usage="sessionAuthenticationModule.ValidateSessionToken sessionSecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Security::Claims::ClaimsIdentity ^&gt; ^ ValidateSessionToken(System::IdentityModel::Tokens::SessionSecurityToken ^ sessionSecurityToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -857,6 +936,9 @@
       <MemberSignature Language="C#" Value="public void WriteSessionTokenToCookie (System.IdentityModel.Tokens.SessionSecurityToken sessionToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteSessionTokenToCookie(class System.IdentityModel.Tokens.SessionSecurityToken sessionToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SessionAuthenticationModule.WriteSessionTokenToCookie(System.IdentityModel.Tokens.SessionSecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteSessionTokenToCookie (sessionToken As SessionSecurityToken)" />
+      <MemberSignature Language="F#" Value="member this.WriteSessionTokenToCookie : System.IdentityModel.Tokens.SessionSecurityToken -&gt; unit" Usage="sessionAuthenticationModule.WriteSessionTokenToCookie sessionToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteSessionTokenToCookie(System::IdentityModel::Tokens::SessionSecurityToken ^ sessionToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

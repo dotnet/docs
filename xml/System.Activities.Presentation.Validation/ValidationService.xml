@@ -1,7 +1,10 @@
-<Type Name="ValidationService" FullName="System.Activities.Presentation.Validation.ValidationService">
+﻿<Type Name="ValidationService" FullName="System.Activities.Presentation.Validation.ValidationService">
   <TypeSignature Language="C#" Value="public class ValidationService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValidationService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Validation.ValidationService" />
+  <TypeSignature Language="VB.NET" Value="Public Class ValidationService" />
+  <TypeSignature Language="F#" Value="type ValidationService = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ValidationService" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public ValidationService (System.Activities.Presentation.EditingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Presentation.EditingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Validation.ValidationService.#ctor(System.Activities.Presentation.EditingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As EditingContext)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Validation.ValidationService : System.Activities.Presentation.EditingContext -&gt; System.Activities.Presentation.Validation.ValidationService" Usage="new System.Activities.Presentation.Validation.ValidationService context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationService(System::Activities::Presentation::EditingContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -40,10 +46,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="NavigateToError">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Moves the keyboard focus to the work surface location of an error in an activity.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="NavigateToError">
       <MemberSignature Language="C#" Value="public void NavigateToError (System.Activities.Presentation.Validation.ValidationErrorInfo validationErrorInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void NavigateToError(class System.Activities.Presentation.Validation.ValidationErrorInfo validationErrorInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Validation.ValidationService.NavigateToError(System.Activities.Presentation.Validation.ValidationErrorInfo)" />
+      <MemberSignature Language="F#" Value="member this.NavigateToError : System.Activities.Presentation.Validation.ValidationErrorInfo -&gt; unit" Usage="validationService.NavigateToError validationErrorInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NavigateToError(System::Activities::Presentation::Validation::ValidationErrorInfo ^ validationErrorInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -65,6 +82,9 @@
       <MemberSignature Language="C#" Value="public void NavigateToError (string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void NavigateToError(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Validation.ValidationService.NavigateToError(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NavigateToError (id As String)" />
+      <MemberSignature Language="F#" Value="member this.NavigateToError : string -&gt; unit" Usage="validationService.NavigateToError id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NavigateToError(System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -86,6 +106,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnValidationCompleted ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnValidationCompleted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Validation.ValidationService.OnValidationCompleted" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnValidationCompleted ()" />
+      <MemberSignature Language="F#" Value="abstract member OnValidationCompleted : unit -&gt; unit&#xA;override this.OnValidationCompleted : unit -&gt; unit" Usage="validationService.OnValidationCompleted " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnValidationCompleted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -104,6 +127,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Validation.ValidationSettings Settings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Validation.ValidationSettings Settings" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Validation.ValidationService.Settings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Settings As ValidationSettings" />
+      <MemberSignature Language="F#" Value="member this.Settings : System.Activities.Validation.ValidationSettings" Usage="System.Activities.Presentation.Validation.ValidationService.Settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Validation::ValidationSettings ^ Settings { System::Activities::Validation::ValidationSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -129,6 +155,9 @@
       <MemberSignature Language="C#" Value="public void ValidateWorkflow ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ValidateWorkflow() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Validation.ValidationService.ValidateWorkflow" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ValidateWorkflow ()" />
+      <MemberSignature Language="F#" Value="member this.ValidateWorkflow : unit -&gt; unit" Usage="validationService.ValidateWorkflow " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ValidateWorkflow();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -143,14 +172,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="NavigateToError">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Moves the keyboard focus to the work surface location of an error in an activity.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

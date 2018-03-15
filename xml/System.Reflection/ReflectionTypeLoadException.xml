@@ -1,7 +1,10 @@
-<Type Name="ReflectionTypeLoadException" FullName="System.Reflection.ReflectionTypeLoadException">
+﻿<Type Name="ReflectionTypeLoadException" FullName="System.Reflection.ReflectionTypeLoadException">
   <TypeSignature Language="C#" Value="public sealed class ReflectionTypeLoadException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ReflectionTypeLoadException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.ReflectionTypeLoadException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReflectionTypeLoadException&#xA;Inherits SystemException" />
+  <TypeSignature Language="F#" Value="type ReflectionTypeLoadException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReflectionTypeLoadException sealed : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,10 +50,24 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.ReflectionTypeLoadException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ReflectionTypeLoadException (Type[] classes, Exception[] exceptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type[] classes, class System.Exception[] exceptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ReflectionTypeLoadException.#ctor(System.Type[],System.Exception[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (classes As Type(), exceptions As Exception())" />
+      <MemberSignature Language="F#" Value="new System.Reflection.ReflectionTypeLoadException : Type[] * Exception[] -&gt; System.Reflection.ReflectionTypeLoadException" Usage="new System.Reflection.ReflectionTypeLoadException (classes, exceptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReflectionTypeLoadException(cli::array &lt;Type ^&gt; ^ classes, cli::array &lt;Exception ^&gt; ^ exceptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -86,6 +103,9 @@
       <MemberSignature Language="C#" Value="public ReflectionTypeLoadException (Type[] classes, Exception[] exceptions, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type[] classes, class System.Exception[] exceptions, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ReflectionTypeLoadException.#ctor(System.Type[],System.Exception[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (classes As Type(), exceptions As Exception(), message As String)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.ReflectionTypeLoadException : Type[] * Exception[] * string -&gt; System.Reflection.ReflectionTypeLoadException" Usage="new System.Reflection.ReflectionTypeLoadException (classes, exceptions, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReflectionTypeLoadException(cli::array &lt;Type ^&gt; ^ classes, cli::array &lt;Exception ^&gt; ^ exceptions, System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -123,6 +143,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.ReflectionTypeLoadException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="reflectionTypeLoadException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -158,6 +181,9 @@
       <MemberSignature Language="C#" Value="public Exception[] LoaderExceptions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception[] LoaderExceptions" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.ReflectionTypeLoadException.LoaderExceptions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoaderExceptions As Exception()" />
+      <MemberSignature Language="F#" Value="member this.LoaderExceptions : Exception[]" Usage="System.Reflection.ReflectionTypeLoadException.LoaderExceptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Exception ^&gt; ^ LoaderExceptions { cli::array &lt;Exception ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -198,6 +224,9 @@
       <MemberSignature Language="C#" Value="public Type[] Types { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] Types" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.ReflectionTypeLoadException.Types" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Types As Type()" />
+      <MemberSignature Language="F#" Value="member this.Types : Type[]" Usage="System.Reflection.ReflectionTypeLoadException.Types" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Type ^&gt; ^ Types { cli::array &lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -234,16 +263,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Reflection.ReflectionTypeLoadException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

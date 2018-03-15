@@ -1,7 +1,10 @@
-<Type Name="KeyboardInputProviderAcquireFocusEventHandler" FullName="System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler">
+﻿<Type Name="KeyboardInputProviderAcquireFocusEventHandler" FullName="System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler">
   <TypeSignature Language="C#" Value="public delegate void KeyboardInputProviderAcquireFocusEventHandler(object sender, KeyboardInputProviderAcquireFocusEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed KeyboardInputProviderAcquireFocusEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyboardInputProviderAcquireFocusEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub KeyboardInputProviderAcquireFocusEventHandler(sender As Object, e As KeyboardInputProviderAcquireFocusEventArgs)" />
+  <TypeSignature Language="F#" Value="type KeyboardInputProviderAcquireFocusEventHandler = delegate of obj * KeyboardInputProviderAcquireFocusEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void KeyboardInputProviderAcquireFocusEventHandler(System::Object ^ sender, KeyboardInputProviderAcquireFocusEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="ConfigurationCollectionAttribute" FullName="System.Configuration.ConfigurationCollectionAttribute">
+﻿<Type Name="ConfigurationCollectionAttribute" FullName="System.Configuration.ConfigurationCollectionAttribute">
   <TypeSignature Language="C#" Value="public sealed class ConfigurationCollectionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ConfigurationCollectionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationCollectionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConfigurationCollectionAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ConfigurationCollectionAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationCollectionAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,6 +95,9 @@
       <MemberSignature Language="C#" Value="public ConfigurationCollectionAttribute (Type itemType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type itemType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationCollectionAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (itemType As Type)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ConfigurationCollectionAttribute : Type -&gt; System.Configuration.ConfigurationCollectionAttribute" Usage="new System.Configuration.ConfigurationCollectionAttribute itemType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurationCollectionAttribute(Type ^ itemType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -131,6 +137,9 @@
       <MemberSignature Language="C#" Value="public string AddItemName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AddItemName" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationCollectionAttribute.AddItemName" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddItemName As String" />
+      <MemberSignature Language="F#" Value="member this.AddItemName : string with get, set" Usage="System.Configuration.ConfigurationCollectionAttribute.AddItemName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AddItemName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -168,6 +177,9 @@
       <MemberSignature Language="C#" Value="public string ClearItemsName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClearItemsName" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationCollectionAttribute.ClearItemsName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClearItemsName As String" />
+      <MemberSignature Language="F#" Value="member this.ClearItemsName : string with get, set" Usage="System.Configuration.ConfigurationCollectionAttribute.ClearItemsName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClearItemsName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -205,6 +217,9 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationElementCollectionType CollectionType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationElementCollectionType CollectionType" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationCollectionAttribute.CollectionType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CollectionType As ConfigurationElementCollectionType" />
+      <MemberSignature Language="F#" Value="member this.CollectionType : System.Configuration.ConfigurationElementCollectionType with get, set" Usage="System.Configuration.ConfigurationCollectionAttribute.CollectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); void set(System::Configuration::ConfigurationElementCollectionType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -227,6 +242,9 @@
       <MemberSignature Language="C#" Value="public Type ItemType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ItemType" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationCollectionAttribute.ItemType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemType As Type" />
+      <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.Configuration.ConfigurationCollectionAttribute.ItemType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ItemType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -256,6 +274,9 @@
       <MemberSignature Language="C#" Value="public string RemoveItemName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RemoveItemName" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationCollectionAttribute.RemoveItemName" />
+      <MemberSignature Language="VB.NET" Value="Public Property RemoveItemName As String" />
+      <MemberSignature Language="F#" Value="member this.RemoveItemName : string with get, set" Usage="System.Configuration.ConfigurationCollectionAttribute.RemoveItemName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RemoveItemName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

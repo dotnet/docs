@@ -1,7 +1,10 @@
-<Type Name="FontFamilyConverter" FullName="System.Windows.Media.FontFamilyConverter">
+﻿<Type Name="FontFamilyConverter" FullName="System.Windows.Media.FontFamilyConverter">
   <TypeSignature Language="C#" Value="public class FontFamilyConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FontFamilyConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.FontFamilyConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class FontFamilyConverter&#xA;Inherits TypeConverter" />
+  <TypeSignature Language="F#" Value="type FontFamilyConverter = class&#xA;    inherit TypeConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FontFamilyConverter : System::ComponentModel::TypeConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public FontFamilyConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FontFamilyConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FontFamilyConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext td, Type t);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext td, class System.Type t) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FontFamilyConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFrom (td As ITypeDescriptorContext, t As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="fontFamilyConverter.CanConvertFrom (td, t)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ td, Type ^ t);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -66,6 +74,9 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertTo (System.ComponentModel.ITypeDescriptorContext context, Type destinationType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Type destinationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FontFamilyConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertTo (context As ITypeDescriptorContext, destinationType As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="fontFamilyConverter.CanConvertTo (context, destinationType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertTo(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ destinationType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +109,8 @@
       <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo cultureInfo, object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo cultureInfo, object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FontFamilyConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberSignature Language="F#" Value="override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="fontFamilyConverter.ConvertFrom (context, cultureInfo, o)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ cultureInfo, System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -135,6 +148,9 @@
       <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value, Type destinationType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value, class System.Type destinationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.FontFamilyConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertTo (context As ITypeDescriptorContext, culture As CultureInfo, value As Object, destinationType As Type) As Object" />
+      <MemberSignature Language="F#" Value="override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="fontFamilyConverter.ConvertTo (context, culture, value, destinationType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertTo(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value, Type ^ destinationType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

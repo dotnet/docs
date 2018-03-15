@@ -1,7 +1,10 @@
-<Type Name="IPostBackEventHandler" FullName="System.Web.UI.IPostBackEventHandler">
+﻿<Type Name="IPostBackEventHandler" FullName="System.Web.UI.IPostBackEventHandler">
   <TypeSignature Language="C#" Value="public interface IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IPostBackEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPostBackEventHandler" />
+  <TypeSignature Language="F#" Value="type IPostBackEventHandler = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public void RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RaisePostBackEvent (eventArgument As String)" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit" Usage="iPostBackEventHandler.RaisePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

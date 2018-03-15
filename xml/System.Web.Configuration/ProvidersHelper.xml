@@ -1,7 +1,10 @@
-<Type Name="ProvidersHelper" FullName="System.Web.Configuration.ProvidersHelper">
+﻿<Type Name="ProvidersHelper" FullName="System.Web.Configuration.ProvidersHelper">
   <TypeSignature Language="C#" Value="public static class ProvidersHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ProvidersHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProvidersHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProvidersHelper" />
+  <TypeSignature Language="F#" Value="type ProvidersHelper = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProvidersHelper abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public static System.Configuration.Provider.ProviderBase InstantiateProvider (System.Configuration.ProviderSettings providerSettings, Type providerType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Configuration.Provider.ProviderBase InstantiateProvider(class System.Configuration.ProviderSettings providerSettings, class System.Type providerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProvidersHelper.InstantiateProvider(System.Configuration.ProviderSettings,System.Type)" />
+      <MemberSignature Language="F#" Value="static member InstantiateProvider : System.Configuration.ProviderSettings * Type -&gt; System.Configuration.Provider.ProviderBase" Usage="System.Web.Configuration.ProvidersHelper.InstantiateProvider (providerSettings, providerType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Configuration::Provider::ProviderBase ^ InstantiateProvider(System::Configuration::ProviderSettings ^ providerSettings, Type ^ providerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -53,6 +58,9 @@
       <MemberSignature Language="C#" Value="public static void InstantiateProviders (System.Configuration.ProviderSettingsCollection configProviders, System.Configuration.Provider.ProviderCollection providers, Type providerType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InstantiateProviders(class System.Configuration.ProviderSettingsCollection configProviders, class System.Configuration.Provider.ProviderCollection providers, class System.Type providerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProvidersHelper.InstantiateProviders(System.Configuration.ProviderSettingsCollection,System.Configuration.Provider.ProviderCollection,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub InstantiateProviders (configProviders As ProviderSettingsCollection, providers As ProviderCollection, providerType As Type)" />
+      <MemberSignature Language="F#" Value="static member InstantiateProviders : System.Configuration.ProviderSettingsCollection * System.Configuration.Provider.ProviderCollection * Type -&gt; unit" Usage="System.Web.Configuration.ProvidersHelper.InstantiateProviders (configProviders, providers, providerType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InstantiateProviders(System::Configuration::ProviderSettingsCollection ^ configProviders, System::Configuration::Provider::ProviderCollection ^ providers, Type ^ providerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

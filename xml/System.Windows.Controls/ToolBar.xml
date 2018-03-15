@@ -1,7 +1,10 @@
-<Type Name="ToolBar" FullName="System.Windows.Controls.ToolBar">
+﻿<Type Name="ToolBar" FullName="System.Windows.Controls.ToolBar">
   <TypeSignature Language="C#" Value="public class ToolBar : System.Windows.Controls.HeaderedItemsControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ToolBar extends System.Windows.Controls.HeaderedItemsControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ToolBar" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolBar&#xA;Inherits HeaderedItemsControl" />
+  <TypeSignature Language="F#" Value="type ToolBar = class&#xA;    inherit HeaderedItemsControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolBar : System::Windows::Controls::HeaderedItemsControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -54,6 +57,8 @@
       <MemberSignature Language="C#" Value="public ToolBar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolBar.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolBar();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -69,6 +74,9 @@
       <MemberSignature Language="C#" Value="public int Band { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Band" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolBar.Band" />
+      <MemberSignature Language="VB.NET" Value="Public Property Band As Integer" />
+      <MemberSignature Language="F#" Value="member this.Band : int with get, set" Usage="System.Windows.Controls.ToolBar.Band" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Band { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -117,6 +125,9 @@
       <MemberSignature Language="C#" Value="public int BandIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BandIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolBar.BandIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property BandIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.BandIndex : int with get, set" Usage="System.Windows.Controls.ToolBar.BandIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BandIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -167,6 +178,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BandIndexProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BandIndexProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolBar.BandIndexProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BandIndexProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BandIndexProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolBar.BandIndexProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BandIndexProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -184,6 +198,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BandProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BandProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolBar.BandProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BandProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BandProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolBar.BandProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BandProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -201,6 +218,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey ButtonStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey ButtonStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolBar.ButtonStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ButtonStyleKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.ButtonStyleKey : System.Windows.ResourceKey" Usage="System.Windows.Controls.ToolBar.ButtonStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ButtonStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -237,6 +257,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey CheckBoxStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey CheckBoxStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolBar.CheckBoxStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CheckBoxStyleKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.CheckBoxStyleKey : System.Windows.ResourceKey" Usage="System.Windows.Controls.ToolBar.CheckBoxStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ CheckBoxStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -273,6 +296,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey ComboBoxStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey ComboBoxStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolBar.ComboBoxStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ComboBoxStyleKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.ComboBoxStyleKey : System.Windows.ResourceKey" Usage="System.Windows.Controls.ToolBar.ComboBoxStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ComboBoxStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -302,6 +328,9 @@
       <MemberSignature Language="C#" Value="public static bool GetIsOverflowItem (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsOverflowItem(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolBar.GetIsOverflowItem(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsOverflowItem (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="F#" Value="static member GetIsOverflowItem : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.ToolBar.GetIsOverflowItem element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsOverflowItem(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -324,6 +353,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Controls.OverflowMode GetOverflowMode (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Controls.OverflowMode GetOverflowMode(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolBar.GetOverflowMode(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetOverflowMode (element As DependencyObject) As OverflowMode" />
+      <MemberSignature Language="F#" Value="static member GetOverflowMode : System.Windows.DependencyObject -&gt; System.Windows.Controls.OverflowMode" Usage="System.Windows.Controls.ToolBar.GetOverflowMode element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::OverflowMode GetOverflowMode(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -358,6 +390,9 @@
       <MemberSignature Language="C#" Value="public bool HasOverflowItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasOverflowItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolBar.HasOverflowItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasOverflowItems As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasOverflowItems : bool" Usage="System.Windows.Controls.ToolBar.HasOverflowItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasOverflowItems { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -395,6 +430,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HasOverflowItemsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HasOverflowItemsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolBar.HasOverflowItemsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasOverflowItemsProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HasOverflowItemsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolBar.HasOverflowItemsProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HasOverflowItemsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -408,10 +446,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsOverflowItem">
+      <MemberSignature Language="C#" Value="see GetIsOverflowItem, and SetIsOverflowItem" />
+      <MemberSignature Language="ILAsm" Value="see GetIsOverflowItem, and SetIsOverflowItem" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolBar.IsOverflowItem" />
+      <MemberSignature Language="VB.NET" Value="see GetIsOverflowItem, and SetIsOverflowItem" />
+      <MemberSignature Language="F#" Value="see GetIsOverflowItem, and SetIsOverflowItem" Usage="see GetIsOverflowItem, and SetIsOverflowItem" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsOverflowItemProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsOverflowItemProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsOverflowItemProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolBar.IsOverflowItemProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsOverflowItemProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsOverflowItemProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolBar.IsOverflowItemProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsOverflowItemProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -429,6 +486,9 @@
       <MemberSignature Language="C#" Value="public bool IsOverflowOpen { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOverflowOpen" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolBar.IsOverflowOpen" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsOverflowOpen As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsOverflowOpen : bool with get, set" Usage="System.Windows.Controls.ToolBar.IsOverflowOpen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOverflowOpen { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -445,7 +505,7 @@
           <AttributeName>System.ComponentModel.Category("Appearance")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -479,6 +539,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsOverflowOpenProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsOverflowOpenProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolBar.IsOverflowOpenProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsOverflowOpenProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsOverflowOpenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolBar.IsOverflowOpenProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsOverflowOpenProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -496,6 +559,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolBar.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="toolBar.MeasureOverride constraint" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -518,6 +584,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey MenuStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey MenuStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolBar.MenuStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuStyleKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.MenuStyleKey : System.Windows.ResourceKey" Usage="System.Windows.Controls.ToolBar.MenuStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -554,6 +623,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolBar.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="toolBar.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -573,6 +645,9 @@
       <MemberSignature Language="C#" Value="protected override void OnItemsChanged (System.Collections.Specialized.NotifyCollectionChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnItemsChanged(class System.Collections.Specialized.NotifyCollectionChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolBar.OnItemsChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemsChanged (e As NotifyCollectionChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnItemsChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="toolBar.OnItemsChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemsChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -594,6 +669,9 @@
       <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Input.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Input.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolBar.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="toolBar.OnKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -625,6 +703,9 @@
       <MemberSignature Language="C#" Value="protected override void OnLostMouseCapture (System.Windows.Input.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLostMouseCapture(class System.Windows.Input.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolBar.OnLostMouseCapture(System.Windows.Input.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostMouseCapture (e As MouseEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnLostMouseCapture : System.Windows.Input.MouseEventArgs -&gt; unit" Usage="toolBar.OnLostMouseCapture e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostMouseCapture(System::Windows::Input::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -656,6 +737,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Orientation Orientation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Orientation Orientation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolBar.Orientation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Orientation As Orientation" />
+      <MemberSignature Language="F#" Value="member this.Orientation : System.Windows.Controls.Orientation" Usage="System.Windows.Controls.ToolBar.Orientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Orientation Orientation { System::Windows::Controls::Orientation get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -700,6 +784,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OrientationProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OrientationProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolBar.OrientationProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OrientationProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable OrientationProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolBar.OrientationProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OrientationProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -713,10 +800,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="OverflowMode">
+      <MemberSignature Language="C#" Value="see GetOverflowMode, and SetOverflowMode" />
+      <MemberSignature Language="ILAsm" Value="see GetOverflowMode, and SetOverflowMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolBar.OverflowMode" />
+      <MemberSignature Language="VB.NET" Value="see GetOverflowMode, and SetOverflowMode" />
+      <MemberSignature Language="F#" Value="see GetOverflowMode, and SetOverflowMode" Usage="see GetOverflowMode, and SetOverflowMode" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="OverflowModeProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OverflowModeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OverflowModeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ToolBar.OverflowModeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OverflowModeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable OverflowModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ToolBar.OverflowModeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OverflowModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -734,6 +840,9 @@
       <MemberSignature Language="C#" Value="protected override void PrepareContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PrepareContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolBar.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
+      <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="toolBar.PrepareContainerForItemOverride (element, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -757,6 +866,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey RadioButtonStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey RadioButtonStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolBar.RadioButtonStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RadioButtonStyleKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.RadioButtonStyleKey : System.Windows.ResourceKey" Usage="System.Windows.Controls.ToolBar.RadioButtonStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ RadioButtonStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -793,6 +905,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey SeparatorStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey SeparatorStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolBar.SeparatorStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SeparatorStyleKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.SeparatorStyleKey : System.Windows.ResourceKey" Usage="System.Windows.Controls.ToolBar.SeparatorStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SeparatorStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -829,6 +944,9 @@
       <MemberSignature Language="C#" Value="public static void SetOverflowMode (System.Windows.DependencyObject element, System.Windows.Controls.OverflowMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetOverflowMode(class System.Windows.DependencyObject element, valuetype System.Windows.Controls.OverflowMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ToolBar.SetOverflowMode(System.Windows.DependencyObject,System.Windows.Controls.OverflowMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetOverflowMode (element As DependencyObject, mode As OverflowMode)" />
+      <MemberSignature Language="F#" Value="static member SetOverflowMode : System.Windows.DependencyObject * System.Windows.Controls.OverflowMode -&gt; unit" Usage="System.Windows.Controls.ToolBar.SetOverflowMode (element, mode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetOverflowMode(System::Windows::DependencyObject ^ element, System::Windows::Controls::OverflowMode mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -859,6 +977,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey TextBoxStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey TextBoxStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolBar.TextBoxStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TextBoxStyleKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.TextBoxStyleKey : System.Windows.ResourceKey" Usage="System.Windows.Controls.ToolBar.TextBoxStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ TextBoxStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -895,6 +1016,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey ToggleButtonStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey ToggleButtonStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ToolBar.ToggleButtonStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ToggleButtonStyleKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.ToggleButtonStyleKey : System.Windows.ResourceKey" Usage="System.Windows.Controls.ToolBar.ToggleButtonStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ ToggleButtonStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

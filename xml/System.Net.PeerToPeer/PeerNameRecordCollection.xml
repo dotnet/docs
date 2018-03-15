@@ -1,7 +1,10 @@
-<Type Name="PeerNameRecordCollection" FullName="System.Net.PeerToPeer.PeerNameRecordCollection">
+﻿<Type Name="PeerNameRecordCollection" FullName="System.Net.PeerToPeer.PeerNameRecordCollection">
   <TypeSignature Language="C#" Value="public class PeerNameRecordCollection : System.Collections.ObjectModel.Collection&lt;System.Net.PeerToPeer.PeerNameRecord&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PeerNameRecordCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Net.PeerToPeer.PeerNameRecord&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.PeerNameRecordCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class PeerNameRecordCollection&#xA;Inherits Collection(Of PeerNameRecord)" />
+  <TypeSignature Language="F#" Value="type PeerNameRecordCollection = class&#xA;    inherit Collection&lt;PeerNameRecord&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PeerNameRecordCollection : System::Collections::ObjectModel::Collection&lt;System::Net::PeerToPeer::PeerNameRecord ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,8 @@
       <MemberSignature Language="C#" Value="public PeerNameRecordCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRecordCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerNameRecordCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -58,6 +63,9 @@
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Net.PeerToPeer.PeerNameRecord item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Net.PeerToPeer.PeerNameRecord item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRecordCollection.InsertItem(System.Int32,System.Net.PeerToPeer.PeerNameRecord)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As PeerNameRecord)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Net.PeerToPeer.PeerNameRecord -&gt; unit" Usage="peerNameRecordCollection.InsertItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Net::PeerToPeer::PeerNameRecord ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -89,6 +97,9 @@
       <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Net.PeerToPeer.PeerNameRecord item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Net.PeerToPeer.PeerNameRecord item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.PeerNameRecordCollection.SetItem(System.Int32,System.Net.PeerToPeer.PeerNameRecord)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As PeerNameRecord)" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Net.PeerToPeer.PeerNameRecord -&gt; unit" Usage="peerNameRecordCollection.SetItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Net::PeerToPeer::PeerNameRecord ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

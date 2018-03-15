@@ -1,7 +1,10 @@
-<Type Name="WebContentTypeMapper" FullName="System.ServiceModel.Channels.WebContentTypeMapper">
+﻿<Type Name="WebContentTypeMapper" FullName="System.ServiceModel.Channels.WebContentTypeMapper">
   <TypeSignature Language="C#" Value="public abstract class WebContentTypeMapper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WebContentTypeMapper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.WebContentTypeMapper" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebContentTypeMapper" />
+  <TypeSignature Language="F#" Value="type WebContentTypeMapper = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebContentTypeMapper abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="protected WebContentTypeMapper ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WebContentTypeMapper.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebContentTypeMapper();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -43,6 +48,9 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Channels.WebContentFormat GetMessageFormatForContentType (string contentType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.ServiceModel.Channels.WebContentFormat GetMessageFormatForContentType(string contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.WebContentTypeMapper.GetMessageFormatForContentType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetMessageFormatForContentType (contentType As String) As WebContentFormat" />
+      <MemberSignature Language="F#" Value="abstract member GetMessageFormatForContentType : string -&gt; System.ServiceModel.Channels.WebContentFormat" Usage="webContentTypeMapper.GetMessageFormatForContentType contentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Channels::WebContentFormat GetMessageFormatForContentType(System::String ^ contentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="DoubleConverter" FullName="System.ComponentModel.DoubleConverter">
+﻿<Type Name="DoubleConverter" FullName="System.ComponentModel.DoubleConverter">
   <TypeSignature Language="C#" Value="public class DoubleConverter : System.ComponentModel.BaseNumberConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DoubleConverter extends System.ComponentModel.BaseNumberConverter" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DoubleConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class DoubleConverter&#xA;Inherits BaseNumberConverter" />
+  <TypeSignature Language="F#" Value="type DoubleConverter = class&#xA;    inherit BaseNumberConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DoubleConverter : System::ComponentModel::BaseNumberConverter" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -50,6 +53,8 @@
       <MemberSignature Language="C#" Value="public DoubleConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DoubleConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DoubleConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

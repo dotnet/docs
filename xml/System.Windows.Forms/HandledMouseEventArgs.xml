@@ -1,7 +1,10 @@
-<Type Name="HandledMouseEventArgs" FullName="System.Windows.Forms.HandledMouseEventArgs">
+﻿<Type Name="HandledMouseEventArgs" FullName="System.Windows.Forms.HandledMouseEventArgs">
   <TypeSignature Language="C#" Value="public class HandledMouseEventArgs : System.Windows.Forms.MouseEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HandledMouseEventArgs extends System.Windows.Forms.MouseEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HandledMouseEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class HandledMouseEventArgs&#xA;Inherits MouseEventArgs" />
+  <TypeSignature Language="F#" Value="type HandledMouseEventArgs = class&#xA;    inherit MouseEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HandledMouseEventArgs : System::Windows::Forms::MouseEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +32,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.HandledMouseEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HandledMouseEventArgs (System.Windows.Forms.MouseButtons button, int clicks, int x, int y, int delta);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.MouseButtons button, int32 clicks, int32 x, int32 y, int32 delta) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HandledMouseEventArgs.#ctor(System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (button As MouseButtons, clicks As Integer, x As Integer, y As Integer, delta As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.HandledMouseEventArgs : System.Windows.Forms.MouseButtons * int * int * int * int -&gt; System.Windows.Forms.HandledMouseEventArgs" Usage="new System.Windows.Forms.HandledMouseEventArgs (button, clicks, x, y, delta)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HandledMouseEventArgs(System::Windows::Forms::MouseButtons button, int clicks, int x, int y, int delta);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +74,9 @@
       <MemberSignature Language="C#" Value="public HandledMouseEventArgs (System.Windows.Forms.MouseButtons button, int clicks, int x, int y, int delta, bool defaultHandledValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.MouseButtons button, int32 clicks, int32 x, int32 y, int32 delta, bool defaultHandledValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HandledMouseEventArgs.#ctor(System.Windows.Forms.MouseButtons,System.Int32,System.Int32,System.Int32,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (button As MouseButtons, clicks As Integer, x As Integer, y As Integer, delta As Integer, defaultHandledValue As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.HandledMouseEventArgs : System.Windows.Forms.MouseButtons * int * int * int * int * bool -&gt; System.Windows.Forms.HandledMouseEventArgs" Usage="new System.Windows.Forms.HandledMouseEventArgs (button, clicks, x, y, delta, defaultHandledValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HandledMouseEventArgs(System::Windows::Forms::MouseButtons button, int clicks, int x, int y, int delta, bool defaultHandledValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -88,6 +106,9 @@
       <MemberSignature Language="C#" Value="public bool Handled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Handled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HandledMouseEventArgs.Handled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="System.Windows.Forms.HandledMouseEventArgs.Handled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -112,14 +133,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.HandledMouseEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

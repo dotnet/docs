@@ -1,7 +1,10 @@
-<Type Name="PageResultRequestControl" FullName="System.DirectoryServices.Protocols.PageResultRequestControl">
+﻿<Type Name="PageResultRequestControl" FullName="System.DirectoryServices.Protocols.PageResultRequestControl">
   <TypeSignature Language="C#" Value="public class PageResultRequestControl : System.DirectoryServices.Protocols.DirectoryControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PageResultRequestControl extends System.DirectoryServices.Protocols.DirectoryControl" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.PageResultRequestControl" />
+  <TypeSignature Language="VB.NET" Value="Public Class PageResultRequestControl&#xA;Inherits DirectoryControl" />
+  <TypeSignature Language="F#" Value="type PageResultRequestControl = class&#xA;    inherit DirectoryControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PageResultRequestControl : System::DirectoryServices::Protocols::DirectoryControl" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +19,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.PageResultRequestControl.#ctor" /> constructor creates a new instance of the <see cref="T:System.DirectoryServices.Protocols.PageResultRequestControl" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PageResultRequestControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.PageResultRequestControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PageResultRequestControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -36,6 +51,9 @@
       <MemberSignature Language="C#" Value="public PageResultRequestControl (byte[] cookie);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] cookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.PageResultRequestControl.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cookie As Byte())" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.PageResultRequestControl : byte[] -&gt; System.DirectoryServices.Protocols.PageResultRequestControl" Usage="new System.DirectoryServices.Protocols.PageResultRequestControl cookie" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PageResultRequestControl(cli::array &lt;System::Byte&gt; ^ cookie);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -55,6 +73,9 @@
       <MemberSignature Language="C#" Value="public PageResultRequestControl (int pageSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 pageSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.PageResultRequestControl.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pageSize As Integer)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.PageResultRequestControl : int -&gt; System.DirectoryServices.Protocols.PageResultRequestControl" Usage="new System.DirectoryServices.Protocols.PageResultRequestControl pageSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PageResultRequestControl(int pageSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -74,6 +95,9 @@
       <MemberSignature Language="C#" Value="public byte[] Cookie { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Cookie" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.PageResultRequestControl.Cookie" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cookie As Byte()" />
+      <MemberSignature Language="F#" Value="member this.Cookie : byte[] with get, set" Usage="System.DirectoryServices.Protocols.PageResultRequestControl.Cookie" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Cookie { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -93,6 +117,9 @@
       <MemberSignature Language="C#" Value="public override byte[] GetValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.PageResultRequestControl.GetValue" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue () As Byte()" />
+      <MemberSignature Language="F#" Value="override this.GetValue : unit -&gt; byte[]" Usage="pageResultRequestControl.GetValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -113,6 +140,9 @@
       <MemberSignature Language="C#" Value="public int PageSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageSize" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.PageResultRequestControl.PageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.PageSize : int with get, set" Usage="System.DirectoryServices.Protocols.PageResultRequestControl.PageSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -128,15 +158,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>The <see cref="M:System.DirectoryServices.Protocols.PageResultRequestControl.#ctor" /> constructor creates a new instance of the <see cref="T:System.DirectoryServices.Protocols.PageResultRequestControl" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

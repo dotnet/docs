@@ -1,7 +1,10 @@
-<Type Name="IPersistComponentSettings" FullName="System.Configuration.IPersistComponentSettings">
+﻿<Type Name="IPersistComponentSettings" FullName="System.Configuration.IPersistComponentSettings">
   <TypeSignature Language="C#" Value="public interface IPersistComponentSettings" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPersistComponentSettings" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.IPersistComponentSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPersistComponentSettings" />
+  <TypeSignature Language="F#" Value="type IPersistComponentSettings = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IPersistComponentSettings" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public void LoadComponentSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadComponentSettings() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.IPersistComponentSettings.LoadComponentSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadComponentSettings ()" />
+      <MemberSignature Language="F#" Value="abstract member LoadComponentSettings : unit -&gt; unit" Usage="iPersistComponentSettings.LoadComponentSettings " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadComponentSettings();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -64,6 +70,9 @@
       <MemberSignature Language="C#" Value="public void ResetComponentSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetComponentSettings() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.IPersistComponentSettings.ResetComponentSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetComponentSettings ()" />
+      <MemberSignature Language="F#" Value="abstract member ResetComponentSettings : unit -&gt; unit" Usage="iPersistComponentSettings.ResetComponentSettings " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetComponentSettings();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +104,9 @@
       <MemberSignature Language="C#" Value="public void SaveComponentSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveComponentSettings() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.IPersistComponentSettings.SaveComponentSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveComponentSettings ()" />
+      <MemberSignature Language="F#" Value="abstract member SaveComponentSettings : unit -&gt; unit" Usage="iPersistComponentSettings.SaveComponentSettings " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveComponentSettings();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -134,6 +146,9 @@
       <MemberSignature Language="C#" Value="public bool SaveSettings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SaveSettings" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.IPersistComponentSettings.SaveSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property SaveSettings As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SaveSettings : bool with get, set" Usage="System.Configuration.IPersistComponentSettings.SaveSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SaveSettings { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -195,6 +210,9 @@
       <MemberSignature Language="C#" Value="public string SettingsKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SettingsKey" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.IPersistComponentSettings.SettingsKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property SettingsKey As String" />
+      <MemberSignature Language="F#" Value="member this.SettingsKey : string with get, set" Usage="System.Configuration.IPersistComponentSettings.SettingsKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SettingsKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

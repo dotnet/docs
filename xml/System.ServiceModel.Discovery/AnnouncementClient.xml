@@ -1,7 +1,10 @@
-<Type Name="AnnouncementClient" FullName="System.ServiceModel.Discovery.AnnouncementClient">
+﻿<Type Name="AnnouncementClient" FullName="System.ServiceModel.Discovery.AnnouncementClient">
   <TypeSignature Language="C#" Value="public sealed class AnnouncementClient : IDisposable, System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AnnouncementClient extends System.Object implements class System.IDisposable, class System.ServiceModel.ICommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.AnnouncementClient" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AnnouncementClient&#xA;Implements ICommunicationObject, IDisposable" />
+  <TypeSignature Language="F#" Value="type AnnouncementClient = class&#xA;    interface ICommunicationObject&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AnnouncementClient sealed : IDisposable, System::ServiceModel::ICommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +32,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.AnnouncementClient" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AnnouncementClient ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnouncementClient();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -48,6 +62,8 @@
       <MemberSignature Language="C#" Value="public AnnouncementClient (System.ServiceModel.Discovery.AnnouncementEndpoint announcementEndpoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Discovery.AnnouncementEndpoint announcementEndpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.#ctor(System.ServiceModel.Discovery.AnnouncementEndpoint)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.AnnouncementClient : System.ServiceModel.Discovery.AnnouncementEndpoint -&gt; System.ServiceModel.Discovery.AnnouncementClient" Usage="new System.ServiceModel.Discovery.AnnouncementClient announcementEndpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnouncementClient(System::ServiceModel::Discovery::AnnouncementEndpoint ^ announcementEndpoint);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -66,6 +82,9 @@
       <MemberSignature Language="C#" Value="public AnnouncementClient (string endpointConfigurationName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (endpointConfigurationName As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Discovery.AnnouncementClient : string -&gt; System.ServiceModel.Discovery.AnnouncementClient" Usage="new System.ServiceModel.Discovery.AnnouncementClient endpointConfigurationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnouncementClient(System::String ^ endpointConfigurationName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -84,6 +103,9 @@
       <MemberSignature Language="C#" Value="public void AnnounceOffline (System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AnnounceOffline(class System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.AnnounceOffline(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AnnounceOffline (discoveryMetadata As EndpointDiscoveryMetadata)" />
+      <MemberSignature Language="F#" Value="member this.AnnounceOffline : System.ServiceModel.Discovery.EndpointDiscoveryMetadata -&gt; unit" Usage="announcementClient.AnnounceOffline discoveryMetadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AnnounceOffline(System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ discoveryMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -101,10 +123,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AnnounceOfflineAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes an offline announcement message (Bye) to be sent asynchronously.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AnnounceOfflineAsync">
       <MemberSignature Language="C#" Value="public void AnnounceOfflineAsync (System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AnnounceOfflineAsync(class System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.AnnounceOfflineAsync(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AnnounceOfflineAsync (discoveryMetadata As EndpointDiscoveryMetadata)" />
+      <MemberSignature Language="F#" Value="member this.AnnounceOfflineAsync : System.ServiceModel.Discovery.EndpointDiscoveryMetadata -&gt; unit" Usage="announcementClient.AnnounceOfflineAsync discoveryMetadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AnnounceOfflineAsync(System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ discoveryMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -126,6 +160,9 @@
       <MemberSignature Language="C#" Value="public void AnnounceOfflineAsync (System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AnnounceOfflineAsync(class System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.AnnounceOfflineAsync(System.ServiceModel.Discovery.EndpointDiscoveryMetadata,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AnnounceOfflineAsync (discoveryMetadata As EndpointDiscoveryMetadata, userState As Object)" />
+      <MemberSignature Language="F#" Value="member this.AnnounceOfflineAsync : System.ServiceModel.Discovery.EndpointDiscoveryMetadata * obj -&gt; unit" Usage="announcementClient.AnnounceOfflineAsync (discoveryMetadata, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AnnounceOfflineAsync(System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ discoveryMetadata, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -149,6 +186,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; AnnounceOfflineCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; AnnounceOfflineCompleted" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Discovery.AnnouncementClient.AnnounceOfflineCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AnnounceOfflineCompleted As EventHandler(Of AsyncCompletedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.AnnounceOfflineCompleted : EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " Usage="member this.AnnounceOfflineCompleted : System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::AsyncCompletedEventArgs ^&gt; ^ AnnounceOfflineCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -173,6 +213,9 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AnnounceOfflineTaskAsync (System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task AnnounceOfflineTaskAsync(class System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.AnnounceOfflineTaskAsync(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AnnounceOfflineTaskAsync (discoveryMetadata As EndpointDiscoveryMetadata) As Task" />
+      <MemberSignature Language="F#" Value="member this.AnnounceOfflineTaskAsync : System.ServiceModel.Discovery.EndpointDiscoveryMetadata -&gt; System.Threading.Tasks.Task" Usage="announcementClient.AnnounceOfflineTaskAsync discoveryMetadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ AnnounceOfflineTaskAsync(System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ discoveryMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -195,6 +238,9 @@
       <MemberSignature Language="C#" Value="public void AnnounceOnline (System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AnnounceOnline(class System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.AnnounceOnline(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AnnounceOnline (discoveryMetadata As EndpointDiscoveryMetadata)" />
+      <MemberSignature Language="F#" Value="member this.AnnounceOnline : System.ServiceModel.Discovery.EndpointDiscoveryMetadata -&gt; unit" Usage="announcementClient.AnnounceOnline discoveryMetadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AnnounceOnline(System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ discoveryMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -212,10 +258,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AnnounceOnlineAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes an online announcement message (Hello) to be sent asynchronously.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AnnounceOnlineAsync">
       <MemberSignature Language="C#" Value="public void AnnounceOnlineAsync (System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AnnounceOnlineAsync(class System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.AnnounceOnlineAsync(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AnnounceOnlineAsync (discoveryMetadata As EndpointDiscoveryMetadata)" />
+      <MemberSignature Language="F#" Value="member this.AnnounceOnlineAsync : System.ServiceModel.Discovery.EndpointDiscoveryMetadata -&gt; unit" Usage="announcementClient.AnnounceOnlineAsync discoveryMetadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AnnounceOnlineAsync(System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ discoveryMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -237,6 +295,9 @@
       <MemberSignature Language="C#" Value="public void AnnounceOnlineAsync (System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AnnounceOnlineAsync(class System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.AnnounceOnlineAsync(System.ServiceModel.Discovery.EndpointDiscoveryMetadata,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AnnounceOnlineAsync (discoveryMetadata As EndpointDiscoveryMetadata, userState As Object)" />
+      <MemberSignature Language="F#" Value="member this.AnnounceOnlineAsync : System.ServiceModel.Discovery.EndpointDiscoveryMetadata * obj -&gt; unit" Usage="announcementClient.AnnounceOnlineAsync (discoveryMetadata, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AnnounceOnlineAsync(System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ discoveryMetadata, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -260,6 +321,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; AnnounceOnlineCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; AnnounceOnlineCompleted" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Discovery.AnnouncementClient.AnnounceOnlineCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AnnounceOnlineCompleted As EventHandler(Of AsyncCompletedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.AnnounceOnlineCompleted : EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " Usage="member this.AnnounceOnlineCompleted : System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::AsyncCompletedEventArgs ^&gt; ^ AnnounceOnlineCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -284,6 +348,9 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task AnnounceOnlineTaskAsync (System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task AnnounceOnlineTaskAsync(class System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.AnnounceOnlineTaskAsync(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AnnounceOnlineTaskAsync (discoveryMetadata As EndpointDiscoveryMetadata) As Task" />
+      <MemberSignature Language="F#" Value="member this.AnnounceOnlineTaskAsync : System.ServiceModel.Discovery.EndpointDiscoveryMetadata -&gt; System.Threading.Tasks.Task" Usage="announcementClient.AnnounceOnlineTaskAsync discoveryMetadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task ^ AnnounceOnlineTaskAsync(System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ discoveryMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -306,6 +373,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginAnnounceOffline (System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginAnnounceOffline(class System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.BeginAnnounceOffline(System.ServiceModel.Discovery.EndpointDiscoveryMetadata,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginAnnounceOffline (discoveryMetadata As EndpointDiscoveryMetadata, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginAnnounceOffline : System.ServiceModel.Discovery.EndpointDiscoveryMetadata * AsyncCallback * obj -&gt; IAsyncResult" Usage="announcementClient.BeginAnnounceOffline (discoveryMetadata, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAnnounceOffline(System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ discoveryMetadata, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -332,6 +402,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginAnnounceOnline (System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginAnnounceOnline(class System.ServiceModel.Discovery.EndpointDiscoveryMetadata discoveryMetadata, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.BeginAnnounceOnline(System.ServiceModel.Discovery.EndpointDiscoveryMetadata,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginAnnounceOnline (discoveryMetadata As EndpointDiscoveryMetadata, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginAnnounceOnline : System.ServiceModel.Discovery.EndpointDiscoveryMetadata * AsyncCallback * obj -&gt; IAsyncResult" Usage="announcementClient.BeginAnnounceOnline (discoveryMetadata, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAnnounceOnline(System::ServiceModel::Discovery::EndpointDiscoveryMetadata ^ discoveryMetadata, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -358,6 +431,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.ChannelFactory ChannelFactory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.ChannelFactory ChannelFactory" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.AnnouncementClient.ChannelFactory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelFactory As ChannelFactory" />
+      <MemberSignature Language="F#" Value="member this.ChannelFactory : System.ServiceModel.ChannelFactory" Usage="System.ServiceModel.Discovery.AnnouncementClient.ChannelFactory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ChannelFactory ^ ChannelFactory { System::ServiceModel::ChannelFactory ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -376,6 +452,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ClientCredentials ClientCredentials { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.ClientCredentials ClientCredentials" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.AnnouncementClient.ClientCredentials" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientCredentials As ClientCredentials" />
+      <MemberSignature Language="F#" Value="member this.ClientCredentials : System.ServiceModel.Description.ClientCredentials" Usage="System.ServiceModel.Discovery.AnnouncementClient.ClientCredentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ClientCredentials ^ ClientCredentials { System::ServiceModel::Description::ClientCredentials ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -394,7 +473,13 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="announcementClient.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -412,6 +497,9 @@
       <MemberSignature Language="C#" Value="public void EndAnnounceOffline (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndAnnounceOffline(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.EndAnnounceOffline(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndAnnounceOffline (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndAnnounceOffline : IAsyncResult -&gt; unit" Usage="announcementClient.EndAnnounceOffline result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndAnnounceOffline(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -433,6 +521,9 @@
       <MemberSignature Language="C#" Value="public void EndAnnounceOnline (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndAnnounceOnline(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.EndAnnounceOnline(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndAnnounceOnline (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndAnnounceOnline : IAsyncResult -&gt; unit" Usage="announcementClient.EndAnnounceOnline result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndAnnounceOnline(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -454,6 +545,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceEndpoint Endpoint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.ServiceEndpoint Endpoint" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.AnnouncementClient.Endpoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Endpoint As ServiceEndpoint" />
+      <MemberSignature Language="F#" Value="member this.Endpoint : System.ServiceModel.Description.ServiceEndpoint" Usage="System.ServiceModel.Discovery.AnnouncementClient.Endpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ServiceEndpoint ^ Endpoint { System::ServiceModel::Description::ServiceEndpoint ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -472,6 +566,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.IClientChannel InnerChannel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.IClientChannel InnerChannel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.AnnouncementClient.InnerChannel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerChannel As IClientChannel" />
+      <MemberSignature Language="F#" Value="member this.InnerChannel : System.ServiceModel.IClientChannel" Usage="System.ServiceModel.Discovery.AnnouncementClient.InnerChannel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::IClientChannel ^ InnerChannel { System::ServiceModel::IClientChannel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -490,6 +587,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator MessageSequenceGenerator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator MessageSequenceGenerator" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.AnnouncementClient.MessageSequenceGenerator" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageSequenceGenerator As DiscoveryMessageSequenceGenerator" />
+      <MemberSignature Language="F#" Value="member this.MessageSequenceGenerator : System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator with get, set" Usage="System.ServiceModel.Discovery.AnnouncementClient.MessageSequenceGenerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::DiscoveryMessageSequenceGenerator ^ MessageSequenceGenerator { System::ServiceModel::Discovery::DiscoveryMessageSequenceGenerator ^ get(); void set(System::ServiceModel::Discovery::DiscoveryMessageSequenceGenerator ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -508,7 +608,13 @@
       <MemberSignature Language="C#" Value="public void Open ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Open() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.Open" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
+      <MemberSignature Language="F#" Value="member this.Open : unit -&gt; unit" Usage="announcementClient.Open " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -526,7 +632,12 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -544,7 +655,12 @@
       <MemberSignature Language="C#" Value="void ICommunicationObject.Abort ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.Abort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#Abort" />
+      <MemberSignature Language="VB.NET" Value="Sub Abort () Implements ICommunicationObject.Abort" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.ICommunicationObject.Abort() = System::ServiceModel::ICommunicationObject::Abort;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Abort</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -558,11 +674,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.ServiceModel.ICommunicationObject.BeginClose">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to close a communication object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="System.ServiceModel.ICommunicationObject.BeginClose">
       <MemberSignature Language="C#" Value="IAsyncResult ICommunicationObject.BeginClose (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.ICommunicationObject.BeginClose(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#BeginClose(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function BeginClose (callback As AsyncCallback, state As Object) As IAsyncResult Implements ICommunicationObject.BeginClose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IAsyncResult ^ System.ServiceModel.ICommunicationObject.BeginClose(AsyncCallback ^ callback, System::Object ^ state) = System::ServiceModel::ICommunicationObject::BeginClose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginClose(System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -586,7 +716,12 @@
       <MemberSignature Language="C#" Value="IAsyncResult ICommunicationObject.BeginClose (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.ICommunicationObject.BeginClose(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function BeginClose (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult Implements ICommunicationObject.BeginClose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IAsyncResult ^ System.ServiceModel.ICommunicationObject.BeginClose(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state) = System::ServiceModel::ICommunicationObject::BeginClose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -608,11 +743,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.ServiceModel.ICommunicationObject.BeginOpen">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation to open a communication object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="System.ServiceModel.ICommunicationObject.BeginOpen">
       <MemberSignature Language="C#" Value="IAsyncResult ICommunicationObject.BeginOpen (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.ICommunicationObject.BeginOpen(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#BeginOpen(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function BeginOpen (callback As AsyncCallback, state As Object) As IAsyncResult Implements ICommunicationObject.BeginOpen" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IAsyncResult ^ System.ServiceModel.ICommunicationObject.BeginOpen(AsyncCallback ^ callback, System::Object ^ state) = System::ServiceModel::ICommunicationObject::BeginOpen;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginOpen(System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -636,7 +785,12 @@
       <MemberSignature Language="C#" Value="IAsyncResult ICommunicationObject.BeginOpen (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.ServiceModel.ICommunicationObject.BeginOpen(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function BeginOpen (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult Implements ICommunicationObject.BeginOpen" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IAsyncResult ^ System.ServiceModel.ICommunicationObject.BeginOpen(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state) = System::ServiceModel::ICommunicationObject::BeginOpen;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -658,11 +812,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.ServiceModel.ICommunicationObject.Close">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes a communication object to transition from its current state into the closed state.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="System.ServiceModel.ICommunicationObject.Close">
       <MemberSignature Language="C#" Value="void ICommunicationObject.Close ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#Close" />
+      <MemberSignature Language="VB.NET" Value="Sub Close () Implements ICommunicationObject.Close" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.ICommunicationObject.Close() = System::ServiceModel::ICommunicationObject::Close;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -680,7 +848,12 @@
       <MemberSignature Language="C#" Value="void ICommunicationObject.Close (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.Close(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#Close(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Sub Close (timeout As TimeSpan) Implements ICommunicationObject.Close" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.ICommunicationObject.Close(TimeSpan timeout) = System::ServiceModel::ICommunicationObject::Close;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Close(System.TimeSpan)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -697,11 +870,58 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="System.ServiceModel.ICommunicationObject.Closed">
+      <MemberSignature Language="C#" Value="event EventHandler System.ServiceModel.ICommunicationObject.Closed;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.ServiceModel.ICommunicationObject.Closed" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#Closed" />
+      <MemberSignature Language="VB.NET" Value="Custom Event Closed As EventHandler Implements System.ServiceModel.ICommunicationObject" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Closed</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.ICommunicationObject.Closing">
+      <MemberSignature Language="C#" Value="event EventHandler System.ServiceModel.ICommunicationObject.Closing;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.ServiceModel.ICommunicationObject.Closing" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#Closing" />
+      <MemberSignature Language="VB.NET" Value="Custom Event Closing As EventHandler Implements System.ServiceModel.ICommunicationObject" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Closing</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.EndClose">
       <MemberSignature Language="C#" Value="void ICommunicationObject.EndClose (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.EndClose(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#EndClose(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Sub EndClose (result As IAsyncResult) Implements ICommunicationObject.EndClose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.ICommunicationObject.EndClose(IAsyncResult ^ result) = System::ServiceModel::ICommunicationObject::EndClose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.EndClose(System.IAsyncResult)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -722,7 +942,12 @@
       <MemberSignature Language="C#" Value="void ICommunicationObject.EndOpen (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.EndOpen(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#EndOpen(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Sub EndOpen (result As IAsyncResult) Implements ICommunicationObject.EndOpen" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.ICommunicationObject.EndOpen(IAsyncResult ^ result) = System::ServiceModel::ICommunicationObject::EndOpen;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.EndOpen(System.IAsyncResult)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -739,11 +964,46 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="System.ServiceModel.ICommunicationObject.Faulted">
+      <MemberSignature Language="C#" Value="event EventHandler System.ServiceModel.ICommunicationObject.Faulted;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.ServiceModel.ICommunicationObject.Faulted" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#Faulted" />
+      <MemberSignature Language="VB.NET" Value="Custom Event Faulted As EventHandler Implements System.ServiceModel.ICommunicationObject" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Faulted</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <MemberGroup MemberName="System.ServiceModel.ICommunicationObject.Open">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes a communication object to transition from the created state into the opened state.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="System.ServiceModel.ICommunicationObject.Open">
       <MemberSignature Language="C#" Value="void ICommunicationObject.Open ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.Open() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#Open" />
+      <MemberSignature Language="VB.NET" Value="Sub Open () Implements ICommunicationObject.Open" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.ICommunicationObject.Open() = System::ServiceModel::ICommunicationObject::Open;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -761,7 +1021,12 @@
       <MemberSignature Language="C#" Value="void ICommunicationObject.Open (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.ICommunicationObject.Open(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#Open(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Sub Open (timeout As TimeSpan) Implements ICommunicationObject.Open" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.ICommunicationObject.Open(TimeSpan timeout) = System::ServiceModel::ICommunicationObject::Open;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.ICommunicationObject.Open(System.TimeSpan)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -778,11 +1043,59 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="System.ServiceModel.ICommunicationObject.Opened">
+      <MemberSignature Language="C#" Value="event EventHandler System.ServiceModel.ICommunicationObject.Opened;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.ServiceModel.ICommunicationObject.Opened" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#Opened" />
+      <MemberSignature Language="VB.NET" Value="Custom Event Opened As EventHandler Implements System.ServiceModel.ICommunicationObject" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Opened</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="System.ServiceModel.ICommunicationObject.Opening">
+      <MemberSignature Language="C#" Value="event EventHandler System.ServiceModel.ICommunicationObject.Opening;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.ServiceModel.ICommunicationObject.Opening" />
+      <MemberSignature Language="DocId" Value="E:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#Opening" />
+      <MemberSignature Language="VB.NET" Value="Custom Event Opening As EventHandler Implements System.ServiceModel.ICommunicationObject" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ServiceModel.ICommunicationObject.Opening</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="System.ServiceModel.ICommunicationObject.State">
       <MemberSignature Language="C#" Value="System.ServiceModel.CommunicationState System.ServiceModel.ICommunicationObject.State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.CommunicationState System.ServiceModel.ICommunicationObject.State" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#State" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property State As CommunicationState Implements ICommunicationObject.State" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.Discovery.AnnouncementClient.System.ServiceModel.ICommunicationObject.State" />
+      <MemberSignature Language="C++ CLI" Value="property System::ServiceModel::CommunicationState System.ServiceModel.ICommunicationObject.State { System::ServiceModel::CommunicationState get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.ICommunicationObject.State</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -796,68 +1109,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="System.ServiceModel.ICommunicationObject.Close">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Causes a communication object to transition from its current state into the closed state.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="System.ServiceModel.ICommunicationObject.Open">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Causes a communication object to transition from the created state into the opened state.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Discovery.AnnouncementClient" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="System.ServiceModel.ICommunicationObject.BeginOpen">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation to open a communication object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="System.ServiceModel.ICommunicationObject.BeginClose">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation to close a communication object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AnnounceOnlineAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Causes an online announcement message (Hello) to be sent asynchronously.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AnnounceOfflineAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Causes an offline announcement message (Bye) to be sent asynchronously.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

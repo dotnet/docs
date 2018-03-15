@@ -1,7 +1,10 @@
-<Type Name="LinkedList&lt;T&gt;" FullName="System.Collections.Generic.LinkedList&lt;T&gt;">
+﻿<Type Name="LinkedList&lt;T&gt;" FullName="System.Collections.Generic.LinkedList&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class LinkedList&lt;T&gt; : System.Collections.Generic.ICollection&lt;T&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.ICollection, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit LinkedList`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.ICollection`1&lt;!T&gt;, class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.LinkedList`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class LinkedList(Of T)&#xA;Implements ICollection, ICollection(Of T), IDeserializationCallback, IEnumerable(Of T), IReadOnlyCollection(Of T), ISerializable" />
+  <TypeSignature Language="F#" Value="type LinkedList&lt;'T&gt; = class&#xA;    interface ICollection&lt;'T&gt;&#xA;    interface ICollection&#xA;    interface IReadOnlyCollection&lt;'T&gt;&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class LinkedList : System::Collections::Generic::ICollection&lt;T&gt;, System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;, System::Collections::ICollection, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Collections</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,10 +95,23 @@
     <altmember cref="T:System.Collections.Generic.LinkedListNode`1" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.LinkedList`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LinkedList ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinkedList();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -142,6 +158,9 @@
       <MemberSignature Language="C#" Value="public LinkedList (System.Collections.Generic.IEnumerable&lt;T&gt; collection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; collection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of T))" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.LinkedList&lt;'T&gt; : seq&lt;'T&gt; -&gt; System.Collections.Generic.LinkedList&lt;'T&gt;" Usage="new System.Collections.Generic.LinkedList&lt;'T&gt; collection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinkedList(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -189,6 +208,9 @@
       <MemberSignature Language="C#" Value="protected LinkedList (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.LinkedList&lt;'T&gt; : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Collections.Generic.LinkedList&lt;'T&gt;" Usage="new System.Collections.Generic.LinkedList&lt;'T&gt; (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; LinkedList(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -226,10 +248,24 @@
         <altmember cref="N:System.Runtime.Serialization" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddAfter">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new node or value after an existing node in the <see cref="T:System.Collections.Generic.LinkedList`1" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddAfter">
       <MemberSignature Language="C#" Value="public void AddAfter (System.Collections.Generic.LinkedListNode&lt;T&gt; node, System.Collections.Generic.LinkedListNode&lt;T&gt; newNode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAfter(class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; node, class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; newNode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.AddAfter(System.Collections.Generic.LinkedListNode{`0},System.Collections.Generic.LinkedListNode{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAfter (node As LinkedListNode(Of T), newNode As LinkedListNode(Of T))" />
+      <MemberSignature Language="F#" Value="member this.AddAfter : System.Collections.Generic.LinkedListNode&lt;'T&gt; * System.Collections.Generic.LinkedListNode&lt;'T&gt; -&gt; unit" Usage="linkedList.AddAfter (node, newNode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAfter(System::Collections::Generic::LinkedListNode&lt;T&gt; ^ node, System::Collections::Generic::LinkedListNode&lt;T&gt; ^ newNode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -294,6 +330,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.LinkedListNode&lt;T&gt; AddAfter (System.Collections.Generic.LinkedListNode&lt;T&gt; node, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; AddAfter(class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; node, !T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.AddAfter(System.Collections.Generic.LinkedListNode{`0},`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddAfter (node As LinkedListNode(Of T), value As T) As LinkedListNode(Of T)" />
+      <MemberSignature Language="F#" Value="member this.AddAfter : System.Collections.Generic.LinkedListNode&lt;'T&gt; * 'T -&gt; System.Collections.Generic.LinkedListNode&lt;'T&gt;" Usage="linkedList.AddAfter (node, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::LinkedListNode&lt;T&gt; ^ AddAfter(System::Collections::Generic::LinkedListNode&lt;T&gt; ^ node, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -347,10 +386,24 @@
         <altmember cref="Overload:System.Collections.Generic.LinkedList`1.Remove" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddBefore">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new node or value before an existing node in the <see cref="T:System.Collections.Generic.LinkedList`1" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddBefore">
       <MemberSignature Language="C#" Value="public void AddBefore (System.Collections.Generic.LinkedListNode&lt;T&gt; node, System.Collections.Generic.LinkedListNode&lt;T&gt; newNode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddBefore(class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; node, class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; newNode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.AddBefore(System.Collections.Generic.LinkedListNode{`0},System.Collections.Generic.LinkedListNode{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddBefore (node As LinkedListNode(Of T), newNode As LinkedListNode(Of T))" />
+      <MemberSignature Language="F#" Value="member this.AddBefore : System.Collections.Generic.LinkedListNode&lt;'T&gt; * System.Collections.Generic.LinkedListNode&lt;'T&gt; -&gt; unit" Usage="linkedList.AddBefore (node, newNode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBefore(System::Collections::Generic::LinkedListNode&lt;T&gt; ^ node, System::Collections::Generic::LinkedListNode&lt;T&gt; ^ newNode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -415,6 +468,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.LinkedListNode&lt;T&gt; AddBefore (System.Collections.Generic.LinkedListNode&lt;T&gt; node, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; AddBefore(class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; node, !T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.AddBefore(System.Collections.Generic.LinkedListNode{`0},`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddBefore (node As LinkedListNode(Of T), value As T) As LinkedListNode(Of T)" />
+      <MemberSignature Language="F#" Value="member this.AddBefore : System.Collections.Generic.LinkedListNode&lt;'T&gt; * 'T -&gt; System.Collections.Generic.LinkedListNode&lt;'T&gt;" Usage="linkedList.AddBefore (node, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::LinkedListNode&lt;T&gt; ^ AddBefore(System::Collections::Generic::LinkedListNode&lt;T&gt; ^ node, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -468,10 +524,24 @@
         <altmember cref="Overload:System.Collections.Generic.LinkedList`1.Remove" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddFirst">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new node or value at the start of the <see cref="T:System.Collections.Generic.LinkedList`1" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddFirst">
       <MemberSignature Language="C#" Value="public void AddFirst (System.Collections.Generic.LinkedListNode&lt;T&gt; node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFirst(class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.AddFirst(System.Collections.Generic.LinkedListNode{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddFirst (node As LinkedListNode(Of T))" />
+      <MemberSignature Language="F#" Value="member this.AddFirst : System.Collections.Generic.LinkedListNode&lt;'T&gt; -&gt; unit" Usage="linkedList.AddFirst node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFirst(System::Collections::Generic::LinkedListNode&lt;T&gt; ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -528,6 +598,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.LinkedListNode&lt;T&gt; AddFirst (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; AddFirst(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.AddFirst(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddFirst (value As T) As LinkedListNode(Of T)" />
+      <MemberSignature Language="F#" Value="member this.AddFirst : 'T -&gt; System.Collections.Generic.LinkedListNode&lt;'T&gt;" Usage="linkedList.AddFirst value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::LinkedListNode&lt;T&gt; ^ AddFirst(T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -577,10 +650,24 @@
         <altmember cref="M:System.Collections.Generic.LinkedList`1.RemoveFirst" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddLast">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new node or value at the end of the <see cref="T:System.Collections.Generic.LinkedList`1" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddLast">
       <MemberSignature Language="C#" Value="public void AddLast (System.Collections.Generic.LinkedListNode&lt;T&gt; node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddLast(class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.AddLast(System.Collections.Generic.LinkedListNode{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddLast (node As LinkedListNode(Of T))" />
+      <MemberSignature Language="F#" Value="member this.AddLast : System.Collections.Generic.LinkedListNode&lt;'T&gt; -&gt; unit" Usage="linkedList.AddLast node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLast(System::Collections::Generic::LinkedListNode&lt;T&gt; ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -637,6 +724,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.LinkedListNode&lt;T&gt; AddLast (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; AddLast(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.AddLast(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddLast (value As T) As LinkedListNode(Of T)" />
+      <MemberSignature Language="F#" Value="member this.AddLast : 'T -&gt; System.Collections.Generic.LinkedListNode&lt;'T&gt;" Usage="linkedList.AddLast value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::LinkedListNode&lt;T&gt; ^ AddLast(T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -690,7 +780,13 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="linkedList.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -736,7 +832,13 @@
       <MemberSignature Language="C#" Value="public bool Contains (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.Contains(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As T) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Contains : 'T -&gt; bool&#xA;override this.Contains : 'T -&gt; bool" Usage="linkedList.Contains value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(T value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -784,7 +886,13 @@
       <MemberSignature Language="C#" Value="public void CopyTo (T[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(!T[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.CopyTo(`0[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As T(), index As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : 'T[] * int -&gt; unit&#xA;override this.CopyTo : 'T[] * int -&gt; unit" Usage="linkedList.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;T&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.CopyTo(`0[],System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -837,7 +945,15 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.LinkedList`1.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.Generic.LinkedList&lt;'T&gt;.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+        <InterfaceMember>P:System.Collections.Generic.IReadOnlyCollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -878,6 +994,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.LinkedListNode&lt;T&gt; Find (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; Find(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.Find(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (value As T) As LinkedListNode(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Find : 'T -&gt; System.Collections.Generic.LinkedListNode&lt;'T&gt;" Usage="linkedList.Find value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::LinkedListNode&lt;T&gt; ^ Find(T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -927,6 +1046,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.LinkedListNode&lt;T&gt; FindLast (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; FindLast(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.FindLast(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindLast (value As T) As LinkedListNode(Of T)" />
+      <MemberSignature Language="F#" Value="member this.FindLast : 'T -&gt; System.Collections.Generic.LinkedListNode&lt;'T&gt;" Usage="linkedList.FindLast value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::LinkedListNode&lt;T&gt; ^ FindLast(T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -976,6 +1098,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.LinkedListNode&lt;T&gt; First { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; First" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.LinkedList`1.First" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property First As LinkedListNode(Of T)" />
+      <MemberSignature Language="F#" Value="member this.First : System.Collections.Generic.LinkedListNode&lt;'T&gt;" Usage="System.Collections.Generic.LinkedList&lt;'T&gt;.First" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::LinkedListNode&lt;T&gt; ^ First { System::Collections::Generic::LinkedListNode&lt;T&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1021,6 +1146,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.LinkedList&lt;T&gt;.Enumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Collections.Generic.LinkedList`1/Enumerator&lt;!T&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As LinkedList(Of T).Enumerator" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.Generic.LinkedList&lt;'T&gt;.Enumerator" Usage="linkedList.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::LinkedList&lt;T&gt;::Enumerator GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1076,7 +1204,13 @@
       <MemberSignature Language="C#" Value="public virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="linkedList.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1122,6 +1256,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.LinkedListNode&lt;T&gt; Last { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; Last" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.LinkedList`1.Last" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Last As LinkedListNode(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Last : System.Collections.Generic.LinkedListNode&lt;'T&gt;" Usage="System.Collections.Generic.LinkedList&lt;'T&gt;.Last" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::LinkedListNode&lt;T&gt; ^ Last { System::Collections::Generic::LinkedListNode&lt;T&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1167,7 +1304,13 @@
       <MemberSignature Language="C#" Value="public virtual void OnDeserialization (object sender);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnDeserialization(object sender) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.OnDeserialization(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnDeserialization (sender As Object)" />
+      <MemberSignature Language="F#" Value="abstract member OnDeserialization : obj -&gt; unit&#xA;override this.OnDeserialization : obj -&gt; unit" Usage="linkedList.OnDeserialization sender" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnDeserialization(System::Object ^ sender);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1205,10 +1348,24 @@
         <altmember cref="M:System.Collections.Generic.LinkedList`1.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the first occurrence of a node or value from the <see cref="T:System.Collections.Generic.LinkedList`1" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (System.Collections.Generic.LinkedListNode&lt;T&gt; node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Collections.Generic.LinkedListNode`1&lt;!T&gt; node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.Remove(System.Collections.Generic.LinkedListNode{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (node As LinkedListNode(Of T))" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Collections.Generic.LinkedListNode&lt;'T&gt; -&gt; unit" Usage="linkedList.Remove node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Collections::Generic::LinkedListNode&lt;T&gt; ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1264,7 +1421,13 @@
       <MemberSignature Language="C#" Value="public bool Remove (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.Remove(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (value As T) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Remove : 'T -&gt; bool&#xA;override this.Remove : 'T -&gt; bool" Usage="linkedList.Remove value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(T value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1317,6 +1480,9 @@
       <MemberSignature Language="C#" Value="public void RemoveFirst ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveFirst() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.RemoveFirst" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveFirst ()" />
+      <MemberSignature Language="F#" Value="member this.RemoveFirst : unit -&gt; unit" Usage="linkedList.RemoveFirst " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFirst();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1363,6 +1529,9 @@
       <MemberSignature Language="C#" Value="public void RemoveLast ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveLast() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.RemoveLast" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveLast ()" />
+      <MemberSignature Language="F#" Value="member this.RemoveLast : unit -&gt; unit" Usage="linkedList.RemoveLast " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveLast();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
@@ -1409,7 +1578,12 @@
       <MemberSignature Language="C#" Value="void ICollection&lt;T&gt;.Add (T value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;T&gt;.Add(!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.System#Collections#Generic#ICollection&lt;T&gt;#Add(`0)" />
+      <MemberSignature Language="VB.NET" Value="Sub Add (value As T) Implements ICollection(Of T).Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;T&gt;.Add(T value) = System::Collections::Generic::ICollection&lt;T&gt;::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1458,7 +1632,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.LinkedList`1.System#Collections#Generic#ICollection&lt;T&gt;#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of T).IsReadOnly" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.LinkedList&lt;'T&gt;.System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;T&gt;.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1499,7 +1679,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;T&gt; IEnumerable&lt;T&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;!T&gt; System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.System#Collections#Generic#IEnumerable&lt;T&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of T) Implements IEnumerable(Of T).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;T&gt; ^ System.Collections.Generic.IEnumerable&lt;T&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;T&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1553,7 +1738,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1616,7 +1805,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.LinkedList`1.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.LinkedList&lt;'T&gt;.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1660,7 +1855,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.LinkedList`1.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="F#" Usage="System.Collections.Generic.LinkedList&lt;'T&gt;.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1728,7 +1929,12 @@ finally {
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.LinkedList`1.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1780,71 +1986,5 @@ finally {
         <altmember cref="T:System.Collections.IEnumerator" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddFirst">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a new node or value at the start of the <see cref="T:System.Collections.Generic.LinkedList`1" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.LinkedList`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Remove">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the first occurrence of a node or value from the <see cref="T:System.Collections.Generic.LinkedList`1" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddBefore">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a new node or value before an existing node in the <see cref="T:System.Collections.Generic.LinkedList`1" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddLast">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a new node or value at the end of the <see cref="T:System.Collections.Generic.LinkedList`1" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddAfter">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a new node or value after an existing node in the <see cref="T:System.Collections.Generic.LinkedList`1" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

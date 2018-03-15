@@ -1,7 +1,10 @@
-<Type Name="DetailsViewPagerRow" FullName="System.Web.UI.WebControls.DetailsViewPagerRow">
+﻿<Type Name="DetailsViewPagerRow" FullName="System.Web.UI.WebControls.DetailsViewPagerRow">
   <TypeSignature Language="C#" Value="public class DetailsViewPagerRow : System.Web.UI.WebControls.DetailsViewRow" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DetailsViewPagerRow extends System.Web.UI.WebControls.DetailsViewRow implements class System.Web.UI.INamingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewPagerRow" />
+  <TypeSignature Language="VB.NET" Value="Public Class DetailsViewPagerRow&#xA;Inherits DetailsViewRow" />
+  <TypeSignature Language="F#" Value="type DetailsViewPagerRow = class&#xA;    inherit DetailsViewRow&#xA;    interface INonBindingContainer&#xA;    interface INamingContainer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DetailsViewPagerRow : System::Web::UI::WebControls::DetailsViewRow" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public DetailsViewPagerRow (int rowIndex, System.Web.UI.WebControls.DataControlRowType rowType, System.Web.UI.WebControls.DataControlRowState rowState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 rowIndex, valuetype System.Web.UI.WebControls.DataControlRowType rowType, valuetype System.Web.UI.WebControls.DataControlRowState rowState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DetailsViewPagerRow.#ctor(System.Int32,System.Web.UI.WebControls.DataControlRowType,System.Web.UI.WebControls.DataControlRowState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (rowIndex As Integer, rowType As DataControlRowType, rowState As DataControlRowState)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DetailsViewPagerRow : int * System.Web.UI.WebControls.DataControlRowType * System.Web.UI.WebControls.DataControlRowState -&gt; System.Web.UI.WebControls.DetailsViewPagerRow" Usage="new System.Web.UI.WebControls.DetailsViewPagerRow (rowIndex, rowType, rowState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DetailsViewPagerRow(int rowIndex, System::Web::UI::WebControls::DataControlRowType rowType, System::Web::UI::WebControls::DataControlRowState rowState);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="VisualStyleElement+ToolBar+Button" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ToolBar+Button">
+﻿<Type Name="VisualStyleElement+ToolBar+Button" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ToolBar+Button">
   <TypeSignature Language="C#" Value="public static class VisualStyleElement.ToolBar.Button" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/ToolBar/Button extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.Button" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualStyleElement.ToolBar.Button" />
+  <TypeSignature Language="F#" Value="type VisualStyleElement.ToolBar.Button = class" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class VisualStyleElement::ToolBar::Button abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Checked { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Checked" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.Button.Checked" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Checked As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Checked : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.Button.Checked" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Checked { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +75,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Disabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Disabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.Button.Disabled" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Disabled As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Disabled : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.Button.Disabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Disabled { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +111,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Hot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Hot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.Button.Hot" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Hot As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Hot : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.Button.Hot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Hot { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -135,6 +147,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement HotChecked { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement HotChecked" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.Button.HotChecked" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property HotChecked As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.HotChecked : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.Button.HotChecked" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ HotChecked { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +183,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Normal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Normal" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.Button.Normal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Normal As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Normal : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.Button.Normal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Normal { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -201,6 +219,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Pressed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Pressed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.Button.Pressed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Pressed As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Pressed : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar.Button.Pressed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Pressed { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

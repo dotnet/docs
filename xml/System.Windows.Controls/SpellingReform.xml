@@ -1,7 +1,10 @@
-<Type Name="SpellingReform" FullName="System.Windows.Controls.SpellingReform">
+﻿<Type Name="SpellingReform" FullName="System.Windows.Controls.SpellingReform">
   <TypeSignature Language="C#" Value="public enum SpellingReform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SpellingReform extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.SpellingReform" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SpellingReform" />
+  <TypeSignature Language="F#" Value="type SpellingReform = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SpellingReform" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Postreform" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.SpellingReform Postreform = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SpellingReform.Postreform" />
+      <MemberSignature Language="VB.NET" Value="Postreform" />
+      <MemberSignature Language="F#" Value="Postreform = 2" Usage="System.Windows.Controls.SpellingReform.Postreform" />
+      <MemberSignature Language="C++ CLI" Value="Postreform" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.SpellingReform</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Use spelling rules from after the spelling reform.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="PreAndPostreform" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.SpellingReform PreAndPostreform = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SpellingReform.PreAndPostreform" />
+      <MemberSignature Language="VB.NET" Value="PreAndPostreform" />
+      <MemberSignature Language="F#" Value="PreAndPostreform = 0" Usage="System.Windows.Controls.SpellingReform.PreAndPostreform" />
+      <MemberSignature Language="C++ CLI" Value="PreAndPostreform" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.SpellingReform</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Use spelling rules from both before and after the spelling reform.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="Prereform" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.SpellingReform Prereform = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.SpellingReform.Prereform" />
+      <MemberSignature Language="VB.NET" Value="Prereform" />
+      <MemberSignature Language="F#" Value="Prereform = 1" Usage="System.Windows.Controls.SpellingReform.Prereform" />
+      <MemberSignature Language="C++ CLI" Value="Prereform" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.SpellingReform</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Use spelling rules from before the spelling reform.</summary>
       </Docs>

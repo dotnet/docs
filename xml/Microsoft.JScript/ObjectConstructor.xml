@@ -1,7 +1,10 @@
-<Type Name="ObjectConstructor" FullName="Microsoft.JScript.ObjectConstructor">
+﻿<Type Name="ObjectConstructor" FullName="Microsoft.JScript.ObjectConstructor">
   <TypeSignature Language="C#" Value="public sealed class ObjectConstructor : Microsoft.JScript.ScriptFunction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObjectConstructor extends Microsoft.JScript.ScriptFunction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ObjectConstructor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectConstructor&#xA;Inherits ScriptFunction" />
+  <TypeSignature Language="F#" Value="type ObjectConstructor = class&#xA;    inherit ScriptFunction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectConstructor sealed : Microsoft::JScript::ScriptFunction" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.JSObject ConstructObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.JSObject ConstructObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ObjectConstructor.ConstructObject" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConstructObject () As JSObject" />
+      <MemberSignature Language="F#" Value="member this.ConstructObject : unit -&gt; Microsoft.JScript.JSObject" Usage="objectConstructor.ConstructObject " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::JSObject ^ ConstructObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -40,6 +46,9 @@
       <MemberSignature Language="C#" Value="public object CreateInstance (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object CreateInstance(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ObjectConstructor.CreateInstance(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateInstance (ParamArray args As Object()) As Object" />
+      <MemberSignature Language="F#" Value="override this.CreateInstance : obj[] -&gt; obj" Usage="objectConstructor.CreateInstance args" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateInstance(... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -74,6 +83,9 @@
       <MemberSignature Language="C#" Value="public object Invoke (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Invoke(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ObjectConstructor.Invoke(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Invoke (ParamArray args As Object()) As Object" />
+      <MemberSignature Language="F#" Value="override this.Invoke : obj[] -&gt; obj" Usage="objectConstructor.Invoke args" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Invoke(... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

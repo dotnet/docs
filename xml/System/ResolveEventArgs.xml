@@ -1,7 +1,10 @@
-<Type Name="ResolveEventArgs" FullName="System.ResolveEventArgs">
+﻿<Type Name="ResolveEventArgs" FullName="System.ResolveEventArgs">
   <TypeSignature Language="C#" Value="public class ResolveEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResolveEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ResolveEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResolveEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type ResolveEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResolveEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,10 +47,23 @@
     <altmember cref="E:System.AppDomain.AssemblyResolve" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ResolveEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ResolveEventArgs (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ResolveEventArgs.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new ResolveEventArgs : string -&gt; ResolveEventArgs" Usage="new System.ResolveEventArgs name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResolveEventArgs(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -82,6 +98,9 @@
       <MemberSignature Language="C#" Value="public ResolveEventArgs (string name, System.Reflection.Assembly requestingAssembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Reflection.Assembly requestingAssembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ResolveEventArgs.#ctor(System.String,System.Reflection.Assembly)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, requestingAssembly As Assembly)" />
+      <MemberSignature Language="F#" Value="new ResolveEventArgs : string * System.Reflection.Assembly -&gt; ResolveEventArgs" Usage="new System.ResolveEventArgs (name, requestingAssembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResolveEventArgs(System::String ^ name, System::Reflection::Assembly ^ requestingAssembly);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +130,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ResolveEventArgs.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ResolveEventArgs.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -145,6 +167,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Assembly RequestingAssembly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Assembly RequestingAssembly" />
       <MemberSignature Language="DocId" Value="P:System.ResolveEventArgs.RequestingAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestingAssembly As Assembly" />
+      <MemberSignature Language="F#" Value="member this.RequestingAssembly : System.Reflection.Assembly" Usage="System.ResolveEventArgs.RequestingAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ RequestingAssembly { System::Reflection::Assembly ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -189,15 +214,5 @@
         <altmember cref="E:System.AppDomain.AssemblyResolve" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ResolveEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

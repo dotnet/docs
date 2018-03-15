@@ -1,7 +1,10 @@
-<Type Name="CodeViewDebugDirectoryData" FullName="System.Reflection.PortableExecutable.CodeViewDebugDirectoryData">
+﻿<Type Name="CodeViewDebugDirectoryData" FullName="System.Reflection.PortableExecutable.CodeViewDebugDirectoryData">
   <TypeSignature Language="C#" Value="public struct CodeViewDebugDirectoryData" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CodeViewDebugDirectoryData extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutable.CodeViewDebugDirectoryData" />
+  <TypeSignature Language="VB.NET" Value="Public Structure CodeViewDebugDirectoryData" />
+  <TypeSignature Language="F#" Value="type CodeViewDebugDirectoryData = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class CodeViewDebugDirectoryData" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +24,9 @@
       <MemberSignature Language="C#" Value="public int Age { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Age" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CodeViewDebugDirectoryData.Age" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Age As Integer" />
+      <MemberSignature Language="F#" Value="member this.Age : int" Usage="System.Reflection.PortableExecutable.CodeViewDebugDirectoryData.Age" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Age { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +47,9 @@
       <MemberSignature Language="C#" Value="public Guid Guid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Guid" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CodeViewDebugDirectoryData.Guid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Guid As Guid" />
+      <MemberSignature Language="F#" Value="member this.Guid : Guid" Usage="System.Reflection.PortableExecutable.CodeViewDebugDirectoryData.Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Guid { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -61,6 +70,9 @@
       <MemberSignature Language="C#" Value="public string Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.PortableExecutable.CodeViewDebugDirectoryData.Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="System.Reflection.PortableExecutable.CodeViewDebugDirectoryData.Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

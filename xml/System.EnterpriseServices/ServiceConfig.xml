@@ -1,7 +1,10 @@
-<Type Name="ServiceConfig" FullName="System.EnterpriseServices.ServiceConfig">
+﻿<Type Name="ServiceConfig" FullName="System.EnterpriseServices.ServiceConfig">
   <TypeSignature Language="C#" Value="public sealed class ServiceConfig" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceConfig extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ServiceConfig" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceConfig" />
+  <TypeSignature Language="F#" Value="type ServiceConfig = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceConfig sealed" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,8 @@
       <MemberSignature Language="C#" Value="public ServiceConfig ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServiceConfig.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceConfig();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -78,6 +83,9 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.BindingOption Binding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.BindingOption Binding" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.Binding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Binding As BindingOption" />
+      <MemberSignature Language="F#" Value="member this.Binding : System.EnterpriseServices.BindingOption with get, set" Usage="System.EnterpriseServices.ServiceConfig.Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::BindingOption Binding { System::EnterpriseServices::BindingOption get(); void set(System::EnterpriseServices::BindingOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -103,6 +111,9 @@
       <MemberSignature Language="C#" Value="public System.Transactions.Transaction BringYourOwnSystemTransaction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Transactions.Transaction BringYourOwnSystemTransaction" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.BringYourOwnSystemTransaction" />
+      <MemberSignature Language="VB.NET" Value="Public Property BringYourOwnSystemTransaction As Transaction" />
+      <MemberSignature Language="F#" Value="member this.BringYourOwnSystemTransaction : System.Transactions.Transaction with get, set" Usage="System.EnterpriseServices.ServiceConfig.BringYourOwnSystemTransaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Transactions::Transaction ^ BringYourOwnSystemTransaction { System::Transactions::Transaction ^ get(); void set(System::Transactions::Transaction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -131,6 +142,9 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.ITransaction BringYourOwnTransaction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.EnterpriseServices.ITransaction BringYourOwnTransaction" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.BringYourOwnTransaction" />
+      <MemberSignature Language="VB.NET" Value="Public Property BringYourOwnTransaction As ITransaction" />
+      <MemberSignature Language="F#" Value="member this.BringYourOwnTransaction : System.EnterpriseServices.ITransaction with get, set" Usage="System.EnterpriseServices.ServiceConfig.BringYourOwnTransaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::ITransaction ^ BringYourOwnTransaction { System::EnterpriseServices::ITransaction ^ get(); void set(System::EnterpriseServices::ITransaction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -159,6 +173,9 @@
       <MemberSignature Language="C#" Value="public bool COMTIIntrinsicsEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool COMTIIntrinsicsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.COMTIIntrinsicsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property COMTIIntrinsicsEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.COMTIIntrinsicsEnabled : bool with get, set" Usage="System.EnterpriseServices.ServiceConfig.COMTIIntrinsicsEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool COMTIIntrinsicsEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -187,6 +204,9 @@
       <MemberSignature Language="C#" Value="public bool IISIntrinsicsEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IISIntrinsicsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.IISIntrinsicsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IISIntrinsicsEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IISIntrinsicsEnabled : bool with get, set" Usage="System.EnterpriseServices.ServiceConfig.IISIntrinsicsEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IISIntrinsicsEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -213,6 +233,9 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.InheritanceOption Inheritance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.InheritanceOption Inheritance" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.Inheritance" />
+      <MemberSignature Language="VB.NET" Value="Public Property Inheritance As InheritanceOption" />
+      <MemberSignature Language="F#" Value="member this.Inheritance : System.EnterpriseServices.InheritanceOption with get, set" Usage="System.EnterpriseServices.ServiceConfig.Inheritance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::InheritanceOption Inheritance { System::EnterpriseServices::InheritanceOption get(); void set(System::EnterpriseServices::InheritanceOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -231,6 +254,9 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.TransactionIsolationLevel IsolationLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.TransactionIsolationLevel IsolationLevel" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.IsolationLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsolationLevel As TransactionIsolationLevel" />
+      <MemberSignature Language="F#" Value="member this.IsolationLevel : System.EnterpriseServices.TransactionIsolationLevel with get, set" Usage="System.EnterpriseServices.ServiceConfig.IsolationLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::TransactionIsolationLevel IsolationLevel { System::EnterpriseServices::TransactionIsolationLevel get(); void set(System::EnterpriseServices::TransactionIsolationLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -256,6 +282,9 @@
       <MemberSignature Language="C#" Value="public Guid PartitionId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid PartitionId" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.PartitionId" />
+      <MemberSignature Language="VB.NET" Value="Public Property PartitionId As Guid" />
+      <MemberSignature Language="F#" Value="member this.PartitionId : Guid with get, set" Usage="System.EnterpriseServices.ServiceConfig.PartitionId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid PartitionId { Guid get(); void set(Guid value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -274,6 +303,9 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.PartitionOption PartitionOption { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.PartitionOption PartitionOption" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.PartitionOption" />
+      <MemberSignature Language="VB.NET" Value="Public Property PartitionOption As PartitionOption" />
+      <MemberSignature Language="F#" Value="member this.PartitionOption : System.EnterpriseServices.PartitionOption with get, set" Usage="System.EnterpriseServices.ServiceConfig.PartitionOption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::PartitionOption PartitionOption { System::EnterpriseServices::PartitionOption get(); void set(System::EnterpriseServices::PartitionOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -292,6 +324,9 @@
       <MemberSignature Language="C#" Value="public string SxsDirectory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SxsDirectory" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.SxsDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Property SxsDirectory As String" />
+      <MemberSignature Language="F#" Value="member this.SxsDirectory : string with get, set" Usage="System.EnterpriseServices.ServiceConfig.SxsDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SxsDirectory { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -319,6 +354,9 @@
       <MemberSignature Language="C#" Value="public string SxsName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SxsName" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.SxsName" />
+      <MemberSignature Language="VB.NET" Value="Public Property SxsName As String" />
+      <MemberSignature Language="F#" Value="member this.SxsName : string with get, set" Usage="System.EnterpriseServices.ServiceConfig.SxsName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SxsName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -337,6 +375,9 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.SxsOption SxsOption { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.SxsOption SxsOption" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.SxsOption" />
+      <MemberSignature Language="VB.NET" Value="Public Property SxsOption As SxsOption" />
+      <MemberSignature Language="F#" Value="member this.SxsOption : System.EnterpriseServices.SxsOption with get, set" Usage="System.EnterpriseServices.ServiceConfig.SxsOption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::SxsOption SxsOption { System::EnterpriseServices::SxsOption get(); void set(System::EnterpriseServices::SxsOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -355,6 +396,9 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.SynchronizationOption Synchronization { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.SynchronizationOption Synchronization" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.Synchronization" />
+      <MemberSignature Language="VB.NET" Value="Public Property Synchronization As SynchronizationOption" />
+      <MemberSignature Language="F#" Value="member this.Synchronization : System.EnterpriseServices.SynchronizationOption with get, set" Usage="System.EnterpriseServices.ServiceConfig.Synchronization" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::SynchronizationOption Synchronization { System::EnterpriseServices::SynchronizationOption get(); void set(System::EnterpriseServices::SynchronizationOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -373,6 +417,9 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.ThreadPoolOption ThreadPool { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.ThreadPoolOption ThreadPool" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.ThreadPool" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThreadPool As ThreadPoolOption" />
+      <MemberSignature Language="F#" Value="member this.ThreadPool : System.EnterpriseServices.ThreadPoolOption with get, set" Usage="System.EnterpriseServices.ServiceConfig.ThreadPool" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::ThreadPoolOption ThreadPool { System::EnterpriseServices::ThreadPoolOption get(); void set(System::EnterpriseServices::ThreadPoolOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -391,6 +438,9 @@
       <MemberSignature Language="C#" Value="public string TipUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TipUrl" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.TipUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property TipUrl As String" />
+      <MemberSignature Language="F#" Value="member this.TipUrl : string with get, set" Usage="System.EnterpriseServices.ServiceConfig.TipUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TipUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -416,6 +466,9 @@
       <MemberSignature Language="C#" Value="public string TrackingAppName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TrackingAppName" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.TrackingAppName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrackingAppName As String" />
+      <MemberSignature Language="F#" Value="member this.TrackingAppName : string with get, set" Usage="System.EnterpriseServices.ServiceConfig.TrackingAppName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TrackingAppName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -444,6 +497,9 @@
       <MemberSignature Language="C#" Value="public string TrackingComponentName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TrackingComponentName" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.TrackingComponentName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrackingComponentName As String" />
+      <MemberSignature Language="F#" Value="member this.TrackingComponentName : string with get, set" Usage="System.EnterpriseServices.ServiceConfig.TrackingComponentName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TrackingComponentName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -463,6 +519,9 @@
       <MemberSignature Language="C#" Value="public bool TrackingEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TrackingEnabled" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.TrackingEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrackingEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TrackingEnabled : bool with get, set" Usage="System.EnterpriseServices.ServiceConfig.TrackingEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TrackingEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -489,6 +548,9 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.TransactionOption Transaction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.EnterpriseServices.TransactionOption Transaction" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.Transaction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transaction As TransactionOption" />
+      <MemberSignature Language="F#" Value="member this.Transaction : System.EnterpriseServices.TransactionOption with get, set" Usage="System.EnterpriseServices.ServiceConfig.Transaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::TransactionOption Transaction { System::EnterpriseServices::TransactionOption get(); void set(System::EnterpriseServices::TransactionOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -507,6 +569,9 @@
       <MemberSignature Language="C#" Value="public string TransactionDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TransactionDescription" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.TransactionDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransactionDescription As String" />
+      <MemberSignature Language="F#" Value="member this.TransactionDescription : string with get, set" Usage="System.EnterpriseServices.ServiceConfig.TransactionDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TransactionDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -532,6 +597,9 @@
       <MemberSignature Language="C#" Value="public int TransactionTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TransactionTimeout" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.ServiceConfig.TransactionTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransactionTimeout As Integer" />
+      <MemberSignature Language="F#" Value="member this.TransactionTimeout : int with get, set" Usage="System.EnterpriseServices.ServiceConfig.TransactionTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TransactionTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

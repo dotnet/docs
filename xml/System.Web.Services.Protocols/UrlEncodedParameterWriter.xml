@@ -1,7 +1,10 @@
-<Type Name="UrlEncodedParameterWriter" FullName="System.Web.Services.Protocols.UrlEncodedParameterWriter">
+﻿<Type Name="UrlEncodedParameterWriter" FullName="System.Web.Services.Protocols.UrlEncodedParameterWriter">
   <TypeSignature Language="C#" Value="public abstract class UrlEncodedParameterWriter : System.Web.Services.Protocols.MimeParameterWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit UrlEncodedParameterWriter extends System.Web.Services.Protocols.MimeParameterWriter" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.UrlEncodedParameterWriter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class UrlEncodedParameterWriter&#xA;Inherits MimeParameterWriter" />
+  <TypeSignature Language="F#" Value="type UrlEncodedParameterWriter = class&#xA;    inherit MimeParameterWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UrlEncodedParameterWriter abstract : System::Web::Services::Protocols::MimeParameterWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="protected UrlEncodedParameterWriter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.UrlEncodedParameterWriter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; UrlEncodedParameterWriter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -50,10 +55,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Encode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes all the parameter values for a Web method and writes them to the specified writer.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Encode">
       <MemberSignature Language="C#" Value="protected void Encode (System.IO.TextWriter writer, object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Encode(class System.IO.TextWriter writer, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.UrlEncodedParameterWriter.Encode(System.IO.TextWriter,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub Encode (writer As TextWriter, values As Object())" />
+      <MemberSignature Language="F#" Value="member this.Encode : System.IO.TextWriter * obj[] -&gt; unit" Usage="urlEncodedParameterWriter.Encode (writer, values)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Encode(System::IO::TextWriter ^ writer, cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -85,6 +103,9 @@
       <MemberSignature Language="C#" Value="protected void Encode (System.IO.TextWriter writer, string name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Encode(class System.IO.TextWriter writer, string name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.UrlEncodedParameterWriter.Encode(System.IO.TextWriter,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub Encode (writer As TextWriter, name As String, value As Object)" />
+      <MemberSignature Language="F#" Value="member this.Encode : System.IO.TextWriter * string * obj -&gt; unit" Usage="urlEncodedParameterWriter.Encode (writer, name, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Encode(System::IO::TextWriter ^ writer, System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -118,6 +139,9 @@
       <MemberSignature Language="C#" Value="public override object GetInitializer (System.Web.Services.Protocols.LogicalMethodInfo methodInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetInitializer(class System.Web.Services.Protocols.LogicalMethodInfo methodInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.UrlEncodedParameterWriter.GetInitializer(System.Web.Services.Protocols.LogicalMethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetInitializer (methodInfo As LogicalMethodInfo) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetInitializer : System.Web.Services.Protocols.LogicalMethodInfo -&gt; obj" Usage="urlEncodedParameterWriter.GetInitializer methodInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetInitializer(System::Web::Services::Protocols::LogicalMethodInfo ^ methodInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -148,6 +172,9 @@
       <MemberSignature Language="C#" Value="public override void Initialize (object initializer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(object initializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.UrlEncodedParameterWriter.Initialize(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (initializer As Object)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : obj -&gt; unit" Usage="urlEncodedParameterWriter.Initialize initializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::Object ^ initializer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -179,6 +206,9 @@
       <MemberSignature Language="C#" Value="public override System.Text.Encoding RequestEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding RequestEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.UrlEncodedParameterWriter.RequestEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property RequestEncoding As Encoding" />
+      <MemberSignature Language="F#" Value="member this.RequestEncoding : System.Text.Encoding with get, set" Usage="System.Web.Services.Protocols.UrlEncodedParameterWriter.RequestEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::Encoding ^ RequestEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -201,15 +231,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Encode">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Encodes all the parameter values for a Web method and writes them to the specified writer.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="BuildProperty" FullName="Microsoft.Build.BuildEngine.BuildProperty">
+﻿<Type Name="BuildProperty" FullName="Microsoft.Build.BuildEngine.BuildProperty">
   <TypeSignature Language="C#" Value="public class BuildProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildProperty extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.BuildEngine.BuildProperty" />
+  <TypeSignature Language="VB.NET" Value="Public Class BuildProperty" />
+  <TypeSignature Language="F#" Value="type BuildProperty = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BuildProperty" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Engine</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public BuildProperty (string propertyName, string propertyValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string propertyName, string propertyValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildProperty.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String, propertyValue As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.BuildEngine.BuildProperty : string * string -&gt; Microsoft.Build.BuildEngine.BuildProperty" Usage="new Microsoft.Build.BuildEngine.BuildProperty (propertyName, propertyValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildProperty(System::String ^ propertyName, System::String ^ propertyValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -54,6 +60,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.BuildProperty Clone (bool deepClone);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.BuildEngine.BuildProperty Clone(bool deepClone) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildProperty.Clone(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone (deepClone As Boolean) As BuildProperty" />
+      <MemberSignature Language="F#" Value="member this.Clone : bool -&gt; Microsoft.Build.BuildEngine.BuildProperty" Usage="buildProperty.Clone deepClone" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::BuildProperty ^ Clone(bool deepClone);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -86,6 +95,9 @@
       <MemberSignature Language="C#" Value="public string Condition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Condition" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildProperty.Condition" />
+      <MemberSignature Language="VB.NET" Value="Public Property Condition As String" />
+      <MemberSignature Language="F#" Value="member this.Condition : string with get, set" Usage="Microsoft.Build.BuildEngine.BuildProperty.Condition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Condition { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -104,6 +116,9 @@
       <MemberSignature Language="C#" Value="public string FinalValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FinalValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildProperty.FinalValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FinalValue As String" />
+      <MemberSignature Language="F#" Value="member this.FinalValue : string" Usage="Microsoft.Build.BuildEngine.BuildProperty.FinalValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FinalValue { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -122,6 +137,9 @@
       <MemberSignature Language="C#" Value="public bool IsImported { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsImported" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildProperty.IsImported" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImported As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsImported : bool" Usage="Microsoft.Build.BuildEngine.BuildProperty.IsImported" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImported { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -141,6 +159,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.Build.BuildEngine.BuildProperty.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -169,6 +190,9 @@
       <MemberSignature Language="C#" Value="public static explicit operator string (Microsoft.Build.BuildEngine.BuildProperty propertyToCast);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname string op_Explicit(class Microsoft.Build.BuildEngine.BuildProperty propertyToCast) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildProperty.op_Explicit(Microsoft.Build.BuildEngine.BuildProperty)~System.String" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (propertyToCast As BuildProperty) As String" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : Microsoft.Build.BuildEngine.BuildProperty -&gt; string" Usage="Microsoft.Build.BuildEngine.BuildProperty.op_Explicit propertyToCast" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::String ^(Microsoft::Build::BuildEngine::BuildProperty ^ propertyToCast);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -193,6 +217,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.BuildEngine.BuildProperty.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="buildProperty.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>
@@ -212,6 +239,9 @@
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.BuildEngine.BuildProperty.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.Build.BuildEngine.BuildProperty.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Engine</AssemblyName>

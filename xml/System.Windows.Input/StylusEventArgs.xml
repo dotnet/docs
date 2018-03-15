@@ -1,7 +1,10 @@
-<Type Name="StylusEventArgs" FullName="System.Windows.Input.StylusEventArgs">
+﻿<Type Name="StylusEventArgs" FullName="System.Windows.Input.StylusEventArgs">
   <TypeSignature Language="C#" Value="public class StylusEventArgs : System.Windows.Input.InputEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StylusEventArgs extends System.Windows.Input.InputEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class StylusEventArgs&#xA;Inherits InputEventArgs" />
+  <TypeSignature Language="F#" Value="type StylusEventArgs = class&#xA;    inherit InputEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StylusEventArgs : System::Windows::Input::InputEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +59,9 @@
       <MemberSignature Language="C#" Value="public StylusEventArgs (System.Windows.Input.StylusDevice stylus, int timestamp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusDevice stylus, int32 timestamp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusEventArgs.#ctor(System.Windows.Input.StylusDevice,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (stylus As StylusDevice, timestamp As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.StylusEventArgs : System.Windows.Input.StylusDevice * int -&gt; System.Windows.Input.StylusEventArgs" Usage="new System.Windows.Input.StylusEventArgs (stylus, timestamp)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusEventArgs(System::Windows::Input::StylusDevice ^ stylus, int timestamp);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -76,6 +82,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Point GetPosition (System.Windows.IInputElement relativeTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Point GetPosition(class System.Windows.IInputElement relativeTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusEventArgs.GetPosition(System.Windows.IInputElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPosition (relativeTo As IInputElement) As Point" />
+      <MemberSignature Language="F#" Value="member this.GetPosition : System.Windows.IInputElement -&gt; System.Windows.Point" Usage="stylusEventArgs.GetPosition relativeTo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Point GetPosition(System::Windows::IInputElement ^ relativeTo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -94,10 +103,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetStylusPoints">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Windows.Input.StylusPointCollection" /> that contains <see cref="T:System.Windows.Input.StylusPoint" /> objects collected in the event.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetStylusPoints">
       <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointCollection GetStylusPoints (System.Windows.IInputElement relativeTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StylusPointCollection GetStylusPoints(class System.Windows.IInputElement relativeTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusEventArgs.GetStylusPoints(System.Windows.IInputElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStylusPoints (relativeTo As IInputElement) As StylusPointCollection" />
+      <MemberSignature Language="F#" Value="member this.GetStylusPoints : System.Windows.IInputElement -&gt; System.Windows.Input.StylusPointCollection" Usage="stylusEventArgs.GetStylusPoints relativeTo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StylusPointCollection ^ GetStylusPoints(System::Windows::IInputElement ^ relativeTo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -122,6 +143,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointCollection GetStylusPoints (System.Windows.IInputElement relativeTo, System.Windows.Input.StylusPointDescription subsetToReformatTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Input.StylusPointCollection GetStylusPoints(class System.Windows.IInputElement relativeTo, class System.Windows.Input.StylusPointDescription subsetToReformatTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusEventArgs.GetStylusPoints(System.Windows.IInputElement,System.Windows.Input.StylusPointDescription)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStylusPoints (relativeTo As IInputElement, subsetToReformatTo As StylusPointDescription) As StylusPointCollection" />
+      <MemberSignature Language="F#" Value="member this.GetStylusPoints : System.Windows.IInputElement * System.Windows.Input.StylusPointDescription -&gt; System.Windows.Input.StylusPointCollection" Usage="stylusEventArgs.GetStylusPoints (relativeTo, subsetToReformatTo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Input::StylusPointCollection ^ GetStylusPoints(System::Windows::IInputElement ^ relativeTo, System::Windows::Input::StylusPointDescription ^ subsetToReformatTo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -158,6 +182,9 @@
       <MemberSignature Language="C#" Value="public bool InAir { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool InAir" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusEventArgs.InAir" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InAir As Boolean" />
+      <MemberSignature Language="F#" Value="member this.InAir : bool" Usage="System.Windows.Input.StylusEventArgs.InAir" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InAir { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -177,6 +204,9 @@
       <MemberSignature Language="C#" Value="public bool Inverted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Inverted" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusEventArgs.Inverted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Inverted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Inverted : bool" Usage="System.Windows.Input.StylusEventArgs.Inverted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Inverted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -196,6 +226,9 @@
       <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="stylusEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -226,6 +259,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.StylusDevice StylusDevice { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.StylusDevice StylusDevice" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusEventArgs.StylusDevice" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StylusDevice As StylusDevice" />
+      <MemberSignature Language="F#" Value="member this.StylusDevice : System.Windows.Input.StylusDevice" Usage="System.Windows.Input.StylusEventArgs.StylusDevice" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::StylusDevice ^ StylusDevice { System::Windows::Input::StylusDevice ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -240,14 +276,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetStylusPoints">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.Windows.Input.StylusPointCollection" /> that contains <see cref="T:System.Windows.Input.StylusPoint" /> objects collected in the event.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

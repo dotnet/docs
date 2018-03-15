@@ -1,7 +1,10 @@
-<Type Name="IExtenderProviderService" FullName="System.ComponentModel.Design.IExtenderProviderService">
+﻿<Type Name="IExtenderProviderService" FullName="System.ComponentModel.Design.IExtenderProviderService">
   <TypeSignature Language="C#" Value="public interface IExtenderProviderService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtenderProviderService" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IExtenderProviderService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IExtenderProviderService" />
+  <TypeSignature Language="F#" Value="type IExtenderProviderService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IExtenderProviderService" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="public void AddExtenderProvider (System.ComponentModel.IExtenderProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddExtenderProvider(class System.ComponentModel.IExtenderProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IExtenderProviderService.AddExtenderProvider(System.ComponentModel.IExtenderProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddExtenderProvider (provider As IExtenderProvider)" />
+      <MemberSignature Language="F#" Value="abstract member AddExtenderProvider : System.ComponentModel.IExtenderProvider -&gt; unit" Usage="iExtenderProviderService.AddExtenderProvider provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddExtenderProvider(System::ComponentModel::IExtenderProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -79,6 +85,9 @@
       <MemberSignature Language="C#" Value="public void RemoveExtenderProvider (System.ComponentModel.IExtenderProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveExtenderProvider(class System.ComponentModel.IExtenderProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IExtenderProviderService.RemoveExtenderProvider(System.ComponentModel.IExtenderProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveExtenderProvider (provider As IExtenderProvider)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveExtenderProvider : System.ComponentModel.IExtenderProvider -&gt; unit" Usage="iExtenderProviderService.RemoveExtenderProvider provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveExtenderProvider(System::ComponentModel::IExtenderProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="AddressingVersion" FullName="System.ServiceModel.Channels.AddressingVersion">
+﻿<Type Name="AddressingVersion" FullName="System.ServiceModel.Channels.AddressingVersion">
   <TypeSignature Language="C#" Value="public sealed class AddressingVersion" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AddressingVersion extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.AddressingVersion" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AddressingVersion" />
+  <TypeSignature Language="F#" Value="type AddressingVersion = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AddressingVersion sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.AddressingVersion None { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.AddressingVersion None" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.AddressingVersion.None" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property None As AddressingVersion" />
+      <MemberSignature Language="F#" Value="member this.None : System.ServiceModel.Channels.AddressingVersion" Usage="System.ServiceModel.Channels.AddressingVersion.None" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::AddressingVersion ^ None { System::ServiceModel::Channels::AddressingVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +73,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.AddressingVersion.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="addressingVersion.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -93,6 +102,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.AddressingVersion WSAddressing10 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.AddressingVersion WSAddressing10" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.AddressingVersion.WSAddressing10" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSAddressing10 As AddressingVersion" />
+      <MemberSignature Language="F#" Value="member this.WSAddressing10 : System.ServiceModel.Channels.AddressingVersion" Usage="System.ServiceModel.Channels.AddressingVersion.WSAddressing10" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::AddressingVersion ^ WSAddressing10 { System::ServiceModel::Channels::AddressingVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -125,6 +137,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Channels.AddressingVersion WSAddressingAugust2004 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.ServiceModel.Channels.AddressingVersion WSAddressingAugust2004" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.AddressingVersion.WSAddressingAugust2004" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WSAddressingAugust2004 As AddressingVersion" />
+      <MemberSignature Language="F#" Value="member this.WSAddressingAugust2004 : System.ServiceModel.Channels.AddressingVersion" Usage="System.ServiceModel.Channels.AddressingVersion.WSAddressingAugust2004" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::ServiceModel::Channels::AddressingVersion ^ WSAddressingAugust2004 { System::ServiceModel::Channels::AddressingVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

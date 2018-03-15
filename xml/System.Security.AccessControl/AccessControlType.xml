@@ -1,7 +1,10 @@
-<Type Name="AccessControlType" FullName="System.Security.AccessControl.AccessControlType">
+﻿<Type Name="AccessControlType" FullName="System.Security.AccessControl.AccessControlType">
   <TypeSignature Language="C#" Value="public enum AccessControlType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AccessControlType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.AccessControlType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AccessControlType" />
+  <TypeSignature Language="F#" Value="type AccessControlType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AccessControlType" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="Allow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AccessControlType Allow = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlType.Allow" />
+      <MemberSignature Language="VB.NET" Value="Allow" />
+      <MemberSignature Language="F#" Value="Allow = 0" Usage="System.Security.AccessControl.AccessControlType.Allow" />
+      <MemberSignature Language="C++ CLI" Value="Allow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -38,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Security.AccessControl.AccessRule" /> object is used to allow access to a secured object.</summary>
       </Docs>
@@ -46,6 +53,9 @@
       <MemberSignature Language="C#" Value="Deny" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.AccessControlType Deny = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.AccessControlType.Deny" />
+      <MemberSignature Language="VB.NET" Value="Deny" />
+      <MemberSignature Language="F#" Value="Deny = 1" Usage="System.Security.AccessControl.AccessControlType.Deny" />
+      <MemberSignature Language="C++ CLI" Value="Deny" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -60,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.AccessControlType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Security.AccessControl.AccessRule" /> object is used to deny access to a secured object.</summary>
       </Docs>

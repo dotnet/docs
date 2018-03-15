@@ -1,7 +1,10 @@
-<Type Name="PortableExecutableKinds" FullName="System.Reflection.PortableExecutableKinds">
+﻿<Type Name="PortableExecutableKinds" FullName="System.Reflection.PortableExecutableKinds">
   <TypeSignature Language="C#" Value="public enum PortableExecutableKinds" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PortableExecutableKinds extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.PortableExecutableKinds" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PortableExecutableKinds" />
+  <TypeSignature Language="F#" Value="type PortableExecutableKinds = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PortableExecutableKinds" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,6 +48,9 @@
       <MemberSignature Language="C#" Value="ILOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutableKinds ILOnly = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutableKinds.ILOnly" />
+      <MemberSignature Language="VB.NET" Value="ILOnly" />
+      <MemberSignature Language="F#" Value="ILOnly = 1" Usage="System.Reflection.PortableExecutableKinds.ILOnly" />
+      <MemberSignature Language="C++ CLI" Value="ILOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -62,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The executable contains only Microsoft intermediate language (MSIL), and is therefore neutral with respect to 32-bit or 64-bit platforms.</summary>
       </Docs>
@@ -70,6 +77,9 @@
       <MemberSignature Language="C#" Value="NotAPortableExecutableImage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutableKinds NotAPortableExecutableImage = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutableKinds.NotAPortableExecutableImage" />
+      <MemberSignature Language="VB.NET" Value="NotAPortableExecutableImage" />
+      <MemberSignature Language="F#" Value="NotAPortableExecutableImage = 0" Usage="System.Reflection.PortableExecutableKinds.NotAPortableExecutableImage" />
+      <MemberSignature Language="C++ CLI" Value="NotAPortableExecutableImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -87,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The file is not in portable executable (PE) file format.</summary>
       </Docs>
@@ -95,6 +106,9 @@
       <MemberSignature Language="C#" Value="PE32Plus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutableKinds PE32Plus = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutableKinds.PE32Plus" />
+      <MemberSignature Language="VB.NET" Value="PE32Plus" />
+      <MemberSignature Language="F#" Value="PE32Plus = 4" Usage="System.Reflection.PortableExecutableKinds.PE32Plus" />
+      <MemberSignature Language="C++ CLI" Value="PE32Plus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -112,6 +126,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The executable requires a 64-bit platform.</summary>
       </Docs>
@@ -120,6 +135,9 @@
       <MemberSignature Language="C#" Value="Preferred32Bit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutableKinds Preferred32Bit = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutableKinds.Preferred32Bit" />
+      <MemberSignature Language="VB.NET" Value="Preferred32Bit" />
+      <MemberSignature Language="F#" Value="Preferred32Bit = 16" Usage="System.Reflection.PortableExecutableKinds.Preferred32Bit" />
+      <MemberSignature Language="C++ CLI" Value="Preferred32Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -137,6 +155,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The executable is platform-agnostic but should be run on a 32-bit platform whenever possible.</summary>
       </Docs>
@@ -145,6 +164,9 @@
       <MemberSignature Language="C#" Value="Required32Bit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutableKinds Required32Bit = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutableKinds.Required32Bit" />
+      <MemberSignature Language="VB.NET" Value="Required32Bit" />
+      <MemberSignature Language="F#" Value="Required32Bit = 2" Usage="System.Reflection.PortableExecutableKinds.Required32Bit" />
+      <MemberSignature Language="C++ CLI" Value="Required32Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The executable can be run on a 32-bit platform, or in the 32-bit Windows on Windows (WOW) environment on a 64-bit platform.</summary>
       </Docs>
@@ -170,6 +193,9 @@
       <MemberSignature Language="C#" Value="Unmanaged32Bit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.PortableExecutableKinds Unmanaged32Bit = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.PortableExecutableKinds.Unmanaged32Bit" />
+      <MemberSignature Language="VB.NET" Value="Unmanaged32Bit" />
+      <MemberSignature Language="F#" Value="Unmanaged32Bit = 8" Usage="System.Reflection.PortableExecutableKinds.Unmanaged32Bit" />
+      <MemberSignature Language="C++ CLI" Value="Unmanaged32Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,6 +213,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.PortableExecutableKinds</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The executable contains pure unmanaged code.</summary>
       </Docs>

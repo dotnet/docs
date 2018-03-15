@@ -1,7 +1,10 @@
-<Type Name="X509CertificateEndpointIdentity" FullName="System.ServiceModel.X509CertificateEndpointIdentity">
+﻿<Type Name="X509CertificateEndpointIdentity" FullName="System.ServiceModel.X509CertificateEndpointIdentity">
   <TypeSignature Language="C#" Value="public class X509CertificateEndpointIdentity : System.ServiceModel.EndpointIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit X509CertificateEndpointIdentity extends System.ServiceModel.EndpointIdentity" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.X509CertificateEndpointIdentity" />
+  <TypeSignature Language="VB.NET" Value="Public Class X509CertificateEndpointIdentity&#xA;Inherits EndpointIdentity" />
+  <TypeSignature Language="F#" Value="type X509CertificateEndpointIdentity = class&#xA;    inherit EndpointIdentity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509CertificateEndpointIdentity : System::ServiceModel::EndpointIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,16 +36,25 @@
       </Docs>
     </MemberGroup>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public X509CertificateEndpointIdentity (System.Security.Cryptography.X509Certificates.X509Certificate2 cert);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate2 cert) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.X509CertificateEndpointIdentity.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="C#" Value="public X509CertificateEndpointIdentity (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.X509CertificateEndpointIdentity.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (certificate As X509Certificate2)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.X509CertificateEndpointIdentity : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.ServiceModel.X509CertificateEndpointIdentity" Usage="new System.ServiceModel.X509CertificateEndpointIdentity cert" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509CertificateEndpointIdentity(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public X509CertificateEndpointIdentity (System.Security.Cryptography.X509Certificates.X509Certificate2 cert);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate2 cert) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.X509CertificateEndpointIdentity.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cert As X509Certificate2)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509CertificateEndpointIdentity(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ cert);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" />
+        <Parameter Name="certificate" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="cert" Type="System.Security.Cryptography.X509Certificates.X509Certificate2" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="cert">To be added.</param>
@@ -63,6 +75,9 @@
       <MemberSignature Language="C#" Value="public X509CertificateEndpointIdentity (System.Security.Cryptography.X509Certificates.X509Certificate2 primaryCertificate, System.Security.Cryptography.X509Certificates.X509Certificate2Collection supportingCertificates);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate2 primaryCertificate, class System.Security.Cryptography.X509Certificates.X509Certificate2Collection supportingCertificates) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.X509CertificateEndpointIdentity.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (primaryCertificate As X509Certificate2, supportingCertificates As X509Certificate2Collection)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.X509CertificateEndpointIdentity : System.Security.Cryptography.X509Certificates.X509Certificate2 * System.Security.Cryptography.X509Certificates.X509Certificate2Collection -&gt; System.ServiceModel.X509CertificateEndpointIdentity" Usage="new System.ServiceModel.X509CertificateEndpointIdentity (primaryCertificate, supportingCertificates)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509CertificateEndpointIdentity(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ primaryCertificate, System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ supportingCertificates);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +107,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.X509CertificateEndpointIdentity.Certificates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificates As X509Certificate2Collection" />
+      <MemberSignature Language="F#" Value="member this.Certificates : System.Security.Cryptography.X509Certificates.X509Certificate2Collection" Usage="System.ServiceModel.X509CertificateEndpointIdentity.Certificates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ Certificates { System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

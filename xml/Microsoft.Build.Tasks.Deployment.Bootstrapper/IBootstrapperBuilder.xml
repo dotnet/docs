@@ -1,7 +1,10 @@
-<Type Name="IBootstrapperBuilder" FullName="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder">
+﻿<Type Name="IBootstrapperBuilder" FullName="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder">
   <TypeSignature Language="C#" Value="public interface IBootstrapperBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBootstrapperBuilder" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBootstrapperBuilder" />
+  <TypeSignature Language="F#" Value="type IBootstrapperBuilder = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IBootstrapperBuilder" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,7 +18,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("1D202366-5EEA-4379-9255-6F8CDB8587C9")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults Build (Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults Build(class Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder.Build(Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Build (settings As BuildSettings) As BuildResults" />
+      <MemberSignature Language="F#" Value="abstract member Build : Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildSettings -&gt; Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildResults" Usage="iBootstrapperBuilder.Build settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Tasks::Deployment::Bootstrapper::BuildResults ^ Build(Microsoft::Build::Tasks::Deployment::Bootstrapper::BuildSettings ^ settings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -56,6 +62,9 @@
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder.Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -80,6 +89,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductCollection Products { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductCollection Products" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder.Products" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Products As ProductCollection" />
+      <MemberSignature Language="F#" Value="member this.Products : Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductCollection" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.IBootstrapperBuilder.Products" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::Bootstrapper::ProductCollection ^ Products { Microsoft::Build::Tasks::Deployment::Bootstrapper::ProductCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

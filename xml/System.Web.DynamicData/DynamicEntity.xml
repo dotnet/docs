@@ -1,7 +1,10 @@
-<Type Name="DynamicEntity" FullName="System.Web.DynamicData.DynamicEntity">
+﻿<Type Name="DynamicEntity" FullName="System.Web.DynamicData.DynamicEntity">
   <TypeSignature Language="C#" Value="public class DynamicEntity : System.Web.UI.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicEntity extends System.Web.UI.Control" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicEntity" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicEntity&#xA;Inherits Control" />
+  <TypeSignature Language="F#" Value="type DynamicEntity = class&#xA;    inherit Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicEntity : System::Web::UI::Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="public DynamicEntity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicEntity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicEntity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -59,6 +64,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataBoundControlMode Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.DataBoundControlMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicEntity.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As DataBoundControlMode" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Web.UI.WebControls.DataBoundControlMode with get, set" Usage="System.Web.DynamicData.DynamicEntity.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataBoundControlMode Mode { System::Web::UI::WebControls::DataBoundControlMode get(); void set(System::Web::UI::WebControls::DataBoundControlMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -69,7 +77,7 @@
           <AttributeName>System.ComponentModel.Category("Behavior")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -85,6 +93,9 @@
       <MemberSignature Language="C#" Value="protected override void OnLoad (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLoad(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicEntity.OnLoad(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLoad (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnLoad : EventArgs -&gt; unit" Usage="dynamicEntity.OnLoad e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLoad(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -106,6 +117,9 @@
       <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicEntity.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="dynamicEntity.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -134,6 +148,9 @@
       <MemberSignature Language="C#" Value="public string UIHint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UIHint" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicEntity.UIHint" />
+      <MemberSignature Language="VB.NET" Value="Public Property UIHint As String" />
+      <MemberSignature Language="F#" Value="member this.UIHint : string with get, set" Usage="System.Web.DynamicData.DynamicEntity.UIHint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UIHint { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -160,6 +177,9 @@
       <MemberSignature Language="C#" Value="public string ValidationGroup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicEntity.ValidationGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidationGroup As String" />
+      <MemberSignature Language="F#" Value="member this.ValidationGroup : string with get, set" Usage="System.Web.DynamicData.DynamicEntity.ValidationGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

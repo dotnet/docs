@@ -1,7 +1,10 @@
-<Type Name="DataGridViewRowEventHandler" FullName="System.Windows.Forms.DataGridViewRowEventHandler">
+﻿<Type Name="DataGridViewRowEventHandler" FullName="System.Windows.Forms.DataGridViewRowEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewRowEventHandler(object sender, DataGridViewRowEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewRowEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewRowEventHandler(sender As Object, e As DataGridViewRowEventArgs)" />
+  <TypeSignature Language="F#" Value="type DataGridViewRowEventHandler = delegate of obj * DataGridViewRowEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewRowEventHandler(System::Object ^ sender, DataGridViewRowEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

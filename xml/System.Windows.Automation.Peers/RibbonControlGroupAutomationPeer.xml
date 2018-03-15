@@ -1,7 +1,10 @@
-<Type Name="RibbonControlGroupAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonControlGroupAutomationPeer">
+﻿<Type Name="RibbonControlGroupAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonControlGroupAutomationPeer">
   <TypeSignature Language="C#" Value="public class RibbonControlGroupAutomationPeer : System.Windows.Automation.Peers.ItemsControlAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonControlGroupAutomationPeer extends System.Windows.Automation.Peers.ItemsControlAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonControlGroupAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonControlGroupAutomationPeer&#xA;Inherits ItemsControlAutomationPeer" />
+  <TypeSignature Language="F#" Value="type RibbonControlGroupAutomationPeer = class&#xA;    inherit ItemsControlAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonControlGroupAutomationPeer : System::Windows::Automation::Peers::ItemsControlAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public RibbonControlGroupAutomationPeer (System.Windows.Controls.Ribbon.RibbonControlGroup owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Ribbon.RibbonControlGroup owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonControlGroupAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonControlGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonControlGroup)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonControlGroupAutomationPeer : System.Windows.Controls.Ribbon.RibbonControlGroup -&gt; System.Windows.Automation.Peers.RibbonControlGroupAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonControlGroupAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonControlGroupAutomationPeer(System::Windows::Controls::Ribbon::RibbonControlGroup ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer (object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonControlGroupAutomationPeer.CreateItemAutomationPeer(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.CreateItemAutomationPeer : obj -&gt; System.Windows.Automation.Peers.ItemAutomationPeer" Usage="ribbonControlGroupAutomationPeer.CreateItemAutomationPeer item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::ItemAutomationPeer ^ CreateItemAutomationPeer(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -59,6 +68,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonControlGroupAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="ribbonControlGroupAutomationPeer.GetAutomationControlTypeCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -78,6 +90,9 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonControlGroupAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonControlGroupAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

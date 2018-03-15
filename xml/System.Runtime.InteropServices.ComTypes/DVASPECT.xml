@@ -1,7 +1,10 @@
-<Type Name="DVASPECT" FullName="System.Runtime.InteropServices.ComTypes.DVASPECT">
+﻿<Type Name="DVASPECT" FullName="System.Runtime.InteropServices.ComTypes.DVASPECT">
   <TypeSignature Language="C#" Value="public enum DVASPECT" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DVASPECT extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.DVASPECT" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DVASPECT" />
+  <TypeSignature Language="F#" Value="type DVASPECT = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DVASPECT" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="DVASPECT_CONTENT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.DVASPECT DVASPECT_CONTENT = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_CONTENT" />
+      <MemberSignature Language="VB.NET" Value="DVASPECT_CONTENT" />
+      <MemberSignature Language="F#" Value="DVASPECT_CONTENT = 1" Usage="System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_CONTENT" />
+      <MemberSignature Language="C++ CLI" Value="DVASPECT_CONTENT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -68,6 +74,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.DVASPECT</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A representation of an object that lets that object be displayed as an embedded object inside a container. This value is typically specified for compound document objects. The presentation can be provided for the screen or printer.</summary>
       </Docs>
@@ -76,6 +83,9 @@
       <MemberSignature Language="C#" Value="DVASPECT_DOCPRINT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.DVASPECT DVASPECT_DOCPRINT = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_DOCPRINT" />
+      <MemberSignature Language="VB.NET" Value="DVASPECT_DOCPRINT" />
+      <MemberSignature Language="F#" Value="DVASPECT_DOCPRINT = 8" Usage="System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_DOCPRINT" />
+      <MemberSignature Language="C++ CLI" Value="DVASPECT_DOCPRINT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -98,6 +108,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.DVASPECT</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A representation of an object on the screen as though it were printed to a printer using the **Print** command from the **File** menu. The described data may represent a sequence of pages.</summary>
       </Docs>
@@ -106,6 +117,9 @@
       <MemberSignature Language="C#" Value="DVASPECT_ICON" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.DVASPECT DVASPECT_ICON = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_ICON" />
+      <MemberSignature Language="VB.NET" Value="DVASPECT_ICON" />
+      <MemberSignature Language="F#" Value="DVASPECT_ICON = 4" Usage="System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_ICON" />
+      <MemberSignature Language="C++ CLI" Value="DVASPECT_ICON" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -128,6 +142,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.DVASPECT</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>An iconic representation of an object.</summary>
       </Docs>
@@ -136,6 +151,9 @@
       <MemberSignature Language="C#" Value="DVASPECT_THUMBNAIL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.DVASPECT DVASPECT_THUMBNAIL = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_THUMBNAIL" />
+      <MemberSignature Language="VB.NET" Value="DVASPECT_THUMBNAIL" />
+      <MemberSignature Language="F#" Value="DVASPECT_THUMBNAIL = 2" Usage="System.Runtime.InteropServices.ComTypes.DVASPECT.DVASPECT_THUMBNAIL" />
+      <MemberSignature Language="C++ CLI" Value="DVASPECT_THUMBNAIL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -158,6 +176,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.DVASPECT</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A thumbnail representation of an object that lets that object be displayed in a browsing tool. The thumbnail is approximately a 120 by 120 pixel, 16-color (recommended), device-independent bitmap potentially wrapped in a metafile.</summary>
       </Docs>

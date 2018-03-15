@@ -1,7 +1,10 @@
-<Type Name="VirtualDirectoryMappingCollection" FullName="System.Web.Configuration.VirtualDirectoryMappingCollection">
+﻿<Type Name="VirtualDirectoryMappingCollection" FullName="System.Web.Configuration.VirtualDirectoryMappingCollection">
   <TypeSignature Language="C#" Value="public sealed class VirtualDirectoryMappingCollection : System.Collections.Specialized.NameObjectCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit VirtualDirectoryMappingCollection extends System.Collections.Specialized.NameObjectCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.VirtualDirectoryMappingCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class VirtualDirectoryMappingCollection&#xA;Inherits NameObjectCollectionBase" />
+  <TypeSignature Language="F#" Value="type VirtualDirectoryMappingCollection = class&#xA;    inherit NameObjectCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VirtualDirectoryMappingCollection sealed : System::Collections::Specialized::NameObjectCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,8 @@
       <MemberSignature Language="C#" Value="public VirtualDirectoryMappingCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VirtualDirectoryMappingCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -43,6 +48,9 @@
       <MemberSignature Language="C#" Value="public void Add (string virtualDirectory, System.Web.Configuration.VirtualDirectoryMapping mapping);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string virtualDirectory, class System.Web.Configuration.VirtualDirectoryMapping mapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.Add(System.String,System.Web.Configuration.VirtualDirectoryMapping)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (virtualDirectory As String, mapping As VirtualDirectoryMapping)" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Web.Configuration.VirtualDirectoryMapping -&gt; unit" Usage="virtualDirectoryMappingCollection.Add (virtualDirectory, mapping)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ virtualDirectory, System::Web::Configuration::VirtualDirectoryMapping ^ mapping);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +79,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection AllKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection AllKeys" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.VirtualDirectoryMappingCollection.AllKeys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllKeys As ICollection" />
+      <MemberSignature Language="F#" Value="member this.AllKeys : System.Collections.ICollection" Usage="System.Web.Configuration.VirtualDirectoryMappingCollection.AllKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ AllKeys { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +100,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="virtualDirectoryMappingCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +121,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Configuration.VirtualDirectoryMapping[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Configuration.VirtualDirectoryMapping[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.CopyTo(System.Web.Configuration.VirtualDirectoryMapping[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As VirtualDirectoryMapping(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.Configuration.VirtualDirectoryMapping[] * int -&gt; unit" Usage="virtualDirectoryMappingCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Configuration::VirtualDirectoryMapping ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,10 +146,22 @@
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Array.Length" /> property of <paramref name="array" /> is less than the value of <see cref="P:System.Collections.Specialized.NameObjectCollectionBase.Count" /> plus <paramref name="index" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> collection element.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Get">
       <MemberSignature Language="C#" Value="public System.Web.Configuration.VirtualDirectoryMapping Get (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Configuration.VirtualDirectoryMapping Get(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.Get(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (index As Integer) As VirtualDirectoryMapping" />
+      <MemberSignature Language="F#" Value="member this.Get : int -&gt; System.Web.Configuration.VirtualDirectoryMapping" Usage="virtualDirectoryMappingCollection.Get index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::VirtualDirectoryMapping ^ Get(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +184,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.VirtualDirectoryMapping Get (string virtualDirectory);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.Configuration.VirtualDirectoryMapping Get(string virtualDirectory) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.Get(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (virtualDirectory As String) As VirtualDirectoryMapping" />
+      <MemberSignature Language="F#" Value="member this.Get : string -&gt; System.Web.Configuration.VirtualDirectoryMapping" Usage="virtualDirectoryMappingCollection.Get virtualDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::VirtualDirectoryMapping ^ Get(System::String ^ virtualDirectory);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -177,6 +209,9 @@
       <MemberSignature Language="C#" Value="public string GetKey (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetKey(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.GetKey(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetKey (index As Integer) As String" />
+      <MemberSignature Language="F#" Value="member this.GetKey : int -&gt; string" Usage="virtualDirectoryMappingCollection.GetKey index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetKey(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -195,10 +230,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.Configuration.VirtualDirectoryMapping this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.VirtualDirectoryMapping Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.VirtualDirectoryMappingCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As VirtualDirectoryMapping" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.VirtualDirectoryMapping" Usage="System.Web.Configuration.VirtualDirectoryMappingCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::VirtualDirectoryMapping ^ default[int] { System::Web::Configuration::VirtualDirectoryMapping ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -221,6 +268,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.VirtualDirectoryMapping this[string virtualDirectory] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.VirtualDirectoryMapping Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.VirtualDirectoryMappingCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(virtualDirectory As String) As VirtualDirectoryMapping" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Configuration.VirtualDirectoryMapping" Usage="System.Web.Configuration.VirtualDirectoryMappingCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::VirtualDirectoryMapping ^ default[System::String ^] { System::Web::Configuration::VirtualDirectoryMapping ^ get(System::String ^ virtualDirectory); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -243,6 +293,9 @@
       <MemberSignature Language="C#" Value="public void Remove (string virtualDirectory);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string virtualDirectory) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (virtualDirectory As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="virtualDirectoryMappingCollection.Remove virtualDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ virtualDirectory);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -264,6 +317,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMappingCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="virtualDirectoryMappingCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -281,23 +337,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Get">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the specified <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> collection element.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

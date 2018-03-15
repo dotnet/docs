@@ -1,7 +1,10 @@
-<Type Name="GenericPair&lt;TValue1,TValue2&gt;" FullName="Microsoft.VisualC.StlClr.GenericPair&lt;TValue1,TValue2&gt;">
+﻿<Type Name="GenericPair&lt;TValue1,TValue2&gt;" FullName="Microsoft.VisualC.StlClr.GenericPair&lt;TValue1,TValue2&gt;">
   <TypeSignature Language="C#" Value="public class GenericPair&lt;TValue1,TValue2&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GenericPair`2&lt;TValue1, TValue2&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.GenericPair`2" />
+  <TypeSignature Language="VB.NET" Value="Public Class GenericPair(Of TValue1, TValue2)" />
+  <TypeSignature Language="F#" Value="type GenericPair&lt;'TValue1, 'TValue2&gt; = class" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue1, typename TValue2&gt;&#xA;public ref class GenericPair" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -49,6 +52,8 @@
       <MemberSignature Language="C#" Value="public GenericPair ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericPair();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -76,6 +81,9 @@
       <MemberSignature Language="C#" Value="public GenericPair (Microsoft.VisualC.StlClr.GenericPair _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.VisualC.StlClr.GenericPair`2 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.#ctor(Microsoft.VisualC.StlClr.GenericPair{`0,`1}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (_Right As GenericPair)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.GenericPair&lt;'TValue1, 'TValue2&gt; : Microsoft.VisualC.StlClr.GenericPair -&gt; Microsoft.VisualC.StlClr.GenericPair&lt;'TValue1, 'TValue2&gt;" Usage="new Microsoft.VisualC.StlClr.GenericPair&lt;'TValue1, 'TValue2&gt; _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericPair(Microsoft::VisualC::StlClr::GenericPair ^ _Right);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -101,6 +109,9 @@
       <MemberSignature Language="C#" Value="public GenericPair (ref System.Collections.Generic.KeyValuePair&lt;TValue1,TValue2&gt; _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Collections.Generic.KeyValuePair`2&lt;!TValue1, !TValue2&gt;&amp; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.#ctor(System.Collections.Generic.KeyValuePair{`0,`1}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ByRef _Right As KeyValuePair(Of TValue1, TValue2))" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.GenericPair&lt;'TValue1, 'TValue2&gt; :  -&gt; Microsoft.VisualC.StlClr.GenericPair&lt;'TValue1, 'TValue2&gt;" Usage="new Microsoft.VisualC.StlClr.GenericPair&lt;'TValue1, 'TValue2&gt; _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericPair(System::Collections::Generic::KeyValuePair&lt;TValue1, TValue2&gt; % _Right);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -126,6 +137,9 @@
       <MemberSignature Language="C#" Value="public GenericPair (TValue1 _Val1);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TValue1 _Val1) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (_Val1 As TValue1)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.GenericPair&lt;'TValue1, 'TValue2&gt; : 'TValue1 -&gt; Microsoft.VisualC.StlClr.GenericPair&lt;'TValue1, 'TValue2&gt;" Usage="new Microsoft.VisualC.StlClr.GenericPair&lt;'TValue1, 'TValue2&gt; _Val1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericPair(TValue1 _Val1);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -151,6 +165,9 @@
       <MemberSignature Language="C#" Value="public GenericPair (TValue1 _Val1, TValue2 _Val2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TValue1 _Val1, !TValue2 _Val2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.#ctor(`0,`1)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (_Val1 As TValue1, _Val2 As TValue2)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.StlClr.GenericPair&lt;'TValue1, 'TValue2&gt; : 'TValue1 * 'TValue2 -&gt; Microsoft.VisualC.StlClr.GenericPair&lt;'TValue1, 'TValue2&gt;" Usage="new Microsoft.VisualC.StlClr.GenericPair&lt;'TValue1, 'TValue2&gt; (_Val1, _Val2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GenericPair(TValue1 _Val1, TValue2 _Val2);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -178,6 +195,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object _Right_arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object _Right_arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (_Right_arg As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="genericPair.Equals _Right_arg" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ _Right_arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -208,6 +228,9 @@
       <MemberSignature Language="C#" Value="public TValue1 first;" />
       <MemberSignature Language="ILAsm" Value=".field public !TValue1 first" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualC.StlClr.GenericPair`2.first" />
+      <MemberSignature Language="VB.NET" Value="Public first As TValue1 " />
+      <MemberSignature Language="F#" Value="val mutable first : 'TValue1" Usage="Microsoft.VisualC.StlClr.GenericPair&lt;'TValue1, 'TValue2&gt;.first" />
+      <MemberSignature Language="C++ CLI" Value="public: TValue1 first;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -237,6 +260,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.GenericPair op_Assign (Microsoft.VisualC.StlClr.GenericPair _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname instance class Microsoft.VisualC.StlClr.GenericPair`2 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) op_Assign(class Microsoft.VisualC.StlClr.GenericPair`2 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.op_Assign(Microsoft.VisualC.StlClr.GenericPair{`0,`1}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
+      <MemberSignature Language="VB.NET" Value="Public op_Assign (_Right As GenericPair) As GenericPair" />
+      <MemberSignature Language="F#" Value="member this.op_Assign : Microsoft.VisualC.StlClr.GenericPair -&gt; Microsoft.VisualC.StlClr.GenericPair" Usage="genericPair.op_Assign _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::GenericPair ^ op_Assign(Microsoft::VisualC::StlClr::GenericPair ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -266,6 +292,9 @@
       <MemberSignature Language="C#" Value="public TValue2 second;" />
       <MemberSignature Language="ILAsm" Value=".field public !TValue2 second" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualC.StlClr.GenericPair`2.second" />
+      <MemberSignature Language="VB.NET" Value="Public second As TValue2 " />
+      <MemberSignature Language="F#" Value="val mutable second : 'TValue2" Usage="Microsoft.VisualC.StlClr.GenericPair&lt;'TValue1, 'TValue2&gt;.second" />
+      <MemberSignature Language="C++ CLI" Value="public: TValue2 second;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -295,6 +324,9 @@
       <MemberSignature Language="C#" Value="public void swap (Microsoft.VisualC.StlClr.GenericPair _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void swap(class Microsoft.VisualC.StlClr.GenericPair`2 modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.GenericPair`2.swap(Microsoft.VisualC.StlClr.GenericPair{`0,`1}|System.Runtime.CompilerServices.IsImplicitlyDereferenced)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub swap (_Right As GenericPair)" />
+      <MemberSignature Language="F#" Value="member this.swap : Microsoft.VisualC.StlClr.GenericPair -&gt; unit" Usage="genericPair.swap _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void swap(Microsoft::VisualC::StlClr::GenericPair ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

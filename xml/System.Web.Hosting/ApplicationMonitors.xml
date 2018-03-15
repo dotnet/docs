@@ -1,7 +1,10 @@
-<Type Name="ApplicationMonitors" FullName="System.Web.Hosting.ApplicationMonitors">
+﻿<Type Name="ApplicationMonitors" FullName="System.Web.Hosting.ApplicationMonitors">
   <TypeSignature Language="C#" Value="public sealed class ApplicationMonitors" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationMonitors extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.ApplicationMonitors" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationMonitors" />
+  <TypeSignature Language="F#" Value="type ApplicationMonitors = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationMonitors sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Hosting.IApplicationMonitor MemoryMonitor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Hosting.IApplicationMonitor MemoryMonitor" />
       <MemberSignature Language="DocId" Value="P:System.Web.Hosting.ApplicationMonitors.MemoryMonitor" />
+      <MemberSignature Language="VB.NET" Value="Public Property MemoryMonitor As IApplicationMonitor" />
+      <MemberSignature Language="F#" Value="member this.MemoryMonitor : System.Web.Hosting.IApplicationMonitor with get, set" Usage="System.Web.Hosting.ApplicationMonitors.MemoryMonitor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Hosting::IApplicationMonitor ^ MemoryMonitor { System::Web::Hosting::IApplicationMonitor ^ get(); void set(System::Web::Hosting::IApplicationMonitor ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

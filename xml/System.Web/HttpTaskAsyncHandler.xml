@@ -1,7 +1,10 @@
-<Type Name="HttpTaskAsyncHandler" FullName="System.Web.HttpTaskAsyncHandler">
+﻿<Type Name="HttpTaskAsyncHandler" FullName="System.Web.HttpTaskAsyncHandler">
   <TypeSignature Language="C#" Value="public abstract class HttpTaskAsyncHandler : System.Web.IHttpAsyncHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HttpTaskAsyncHandler extends System.Object implements class System.Web.IHttpAsyncHandler, class System.Web.IHttpHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpTaskAsyncHandler" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class HttpTaskAsyncHandler&#xA;Implements IHttpAsyncHandler" />
+  <TypeSignature Language="F#" Value="type HttpTaskAsyncHandler = class&#xA;    interface IHttpAsyncHandler&#xA;    interface IHttpHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpTaskAsyncHandler abstract : System::Web::IHttpAsyncHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,8 @@
       <MemberSignature Language="C#" Value="protected HttpTaskAsyncHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpTaskAsyncHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HttpTaskAsyncHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,7 +50,13 @@
       <MemberSignature Language="C#" Value="public virtual bool IsReusable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReusable" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpTaskAsyncHandler.IsReusable" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReusable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReusable : bool" Usage="System.Web.HttpTaskAsyncHandler.IsReusable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReusable { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,7 +75,13 @@
       <MemberSignature Language="C#" Value="public virtual void ProcessRequest (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessRequest(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpTaskAsyncHandler.ProcessRequest(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ProcessRequest (context As HttpContext)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : System.Web.HttpContext -&gt; unit&#xA;override this.ProcessRequest : System.Web.HttpContext -&gt; unit" Usage="httpTaskAsyncHandler.ProcessRequest context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessRequest(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +108,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task ProcessRequestAsync (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task ProcessRequestAsync(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpTaskAsyncHandler.ProcessRequestAsync(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ProcessRequestAsync (context As HttpContext) As Task" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequestAsync : System.Web.HttpContext -&gt; System.Threading.Tasks.Task" Usage="httpTaskAsyncHandler.ProcessRequestAsync context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Threading::Tasks::Task ^ ProcessRequestAsync(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,7 +140,12 @@
       <MemberSignature Language="C#" Value="IAsyncResult IHttpAsyncHandler.BeginProcessRequest (System.Web.HttpContext context, AsyncCallback cb, object extraData);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.IAsyncResult System.Web.IHttpAsyncHandler.BeginProcessRequest(class System.Web.HttpContext context, class System.AsyncCallback cb, object extraData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpTaskAsyncHandler.System#Web#IHttpAsyncHandler#BeginProcessRequest(System.Web.HttpContext,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function BeginProcessRequest (context As HttpContext, cb As AsyncCallback, extraData As Object) As IAsyncResult Implements IHttpAsyncHandler.BeginProcessRequest" />
+      <MemberSignature Language="C++ CLI" Value=" virtual IAsyncResult ^ System.Web.IHttpAsyncHandler.BeginProcessRequest(System::Web::HttpContext ^ context, AsyncCallback ^ cb, System::Object ^ extraData) = System::Web::IHttpAsyncHandler::BeginProcessRequest;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpAsyncHandler.BeginProcessRequest(System.Web.HttpContext,System.AsyncCallback,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -153,7 +178,12 @@
       <MemberSignature Language="C#" Value="void IHttpAsyncHandler.EndProcessRequest (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.IHttpAsyncHandler.EndProcessRequest(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpTaskAsyncHandler.System#Web#IHttpAsyncHandler#EndProcessRequest(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Sub EndProcessRequest (result As IAsyncResult) Implements IHttpAsyncHandler.EndProcessRequest" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult ^ result) = System::Web::IHttpAsyncHandler::EndProcessRequest;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpAsyncHandler.EndProcessRequest(System.IAsyncResult)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

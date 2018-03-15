@@ -1,7 +1,10 @@
-<Type Name="ConnectionProviderAttribute" FullName="System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute">
+﻿<Type Name="ConnectionProviderAttribute" FullName="System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute">
   <TypeSignature Language="C#" Value="public class ConnectionProviderAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConnectionProviderAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConnectionProviderAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ConnectionProviderAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConnectionProviderAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -86,6 +89,9 @@
       <MemberSignature Language="C#" Value="public ConnectionProviderAttribute (string displayName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string displayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute : string -&gt; System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute" Usage="new System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute displayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionProviderAttribute(System::String ^ displayName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +130,9 @@
       <MemberSignature Language="C#" Value="public ConnectionProviderAttribute (string displayName, string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string displayName, string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, id As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute : string * string -&gt; System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute" Usage="new System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute (displayName, id)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionProviderAttribute(System::String ^ displayName, System::String ^ id);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +166,9 @@
       <MemberSignature Language="C#" Value="public ConnectionProviderAttribute (string displayName, Type connectionPointType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string displayName, class System.Type connectionPointType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.#ctor(System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, connectionPointType As Type)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute : string * Type -&gt; System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute" Usage="new System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute (displayName, connectionPointType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionProviderAttribute(System::String ^ displayName, Type ^ connectionPointType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -192,6 +204,9 @@
       <MemberSignature Language="C#" Value="public ConnectionProviderAttribute (string displayName, string id, Type connectionPointType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string displayName, string id, class System.Type connectionPointType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.#ctor(System.String,System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, id As String, connectionPointType As Type)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute : string * string * Type -&gt; System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute" Usage="new System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute (displayName, id, connectionPointType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConnectionProviderAttribute(System::String ^ displayName, System::String ^ id, Type ^ connectionPointType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -232,6 +247,9 @@
       <MemberSignature Language="C#" Value="public bool AllowsMultipleConnections { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowsMultipleConnections" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.AllowsMultipleConnections" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowsMultipleConnections As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowsMultipleConnections : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.AllowsMultipleConnections" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowsMultipleConnections { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -259,6 +277,9 @@
       <MemberSignature Language="C#" Value="public Type ConnectionPointType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ConnectionPointType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.ConnectionPointType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConnectionPointType As Type" />
+      <MemberSignature Language="F#" Value="member this.ConnectionPointType : Type" Usage="System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.ConnectionPointType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ConnectionPointType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -285,6 +306,9 @@
       <MemberSignature Language="C#" Value="public virtual string DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -324,6 +348,9 @@
       <MemberSignature Language="C#" Value="protected string DisplayNameValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayNameValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.DisplayNameValue" />
+      <MemberSignature Language="VB.NET" Value="Protected Property DisplayNameValue As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayNameValue : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.DisplayNameValue" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ DisplayNameValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -350,6 +377,9 @@
       <MemberSignature Language="C#" Value="public string ID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.ID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As String" />
+      <MemberSignature Language="F#" Value="member this.ID : string" Usage="System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute.ID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

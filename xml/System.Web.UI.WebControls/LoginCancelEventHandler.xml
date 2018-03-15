@@ -1,7 +1,10 @@
-<Type Name="LoginCancelEventHandler" FullName="System.Web.UI.WebControls.LoginCancelEventHandler">
+﻿<Type Name="LoginCancelEventHandler" FullName="System.Web.UI.WebControls.LoginCancelEventHandler">
   <TypeSignature Language="C#" Value="public delegate void LoginCancelEventHandler(object sender, LoginCancelEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LoginCancelEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LoginCancelEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub LoginCancelEventHandler(sender As Object, e As LoginCancelEventArgs)" />
+  <TypeSignature Language="F#" Value="type LoginCancelEventHandler = delegate of obj * LoginCancelEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void LoginCancelEventHandler(System::Object ^ sender, LoginCancelEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

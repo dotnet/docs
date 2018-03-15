@@ -1,7 +1,10 @@
-<Type Name="CompositeActivity" FullName="System.Workflow.ComponentModel.CompositeActivity">
+﻿<Type Name="CompositeActivity" FullName="System.Workflow.ComponentModel.CompositeActivity">
   <TypeSignature Language="C#" Value="public class CompositeActivity : System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositeActivity extends System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.CompositeActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompositeActivity&#xA;Inherits Activity" />
+  <TypeSignature Language="F#" Value="type CompositeActivity = class&#xA;    inherit Activity&#xA;    interface ISupportAlternateFlow" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompositeActivity : System::Workflow::ComponentModel::Activity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,10 +78,21 @@ public class HasOneChildActivity : CompositeActivity
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CompositeActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositeActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -94,6 +108,9 @@ public class HasOneChildActivity : CompositeActivity
       <MemberSignature Language="C#" Value="public CompositeActivity (System.Collections.Generic.IEnumerable&lt;System.Workflow.ComponentModel.Activity&gt; children);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Workflow.ComponentModel.Activity&gt; children) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.Activity})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (children As IEnumerable(Of Activity))" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.CompositeActivity : seq&lt;System.Workflow.ComponentModel.Activity&gt; -&gt; System.Workflow.ComponentModel.CompositeActivity" Usage="new System.Workflow.ComponentModel.CompositeActivity children" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositeActivity(System::Collections::Generic::IEnumerable&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ children);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -112,6 +129,9 @@ public class HasOneChildActivity : CompositeActivity
       <MemberSignature Language="C#" Value="public CompositeActivity (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.CompositeActivity : string -&gt; System.Workflow.ComponentModel.CompositeActivity" Usage="new System.Workflow.ComponentModel.CompositeActivity name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositeActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -132,6 +152,9 @@ public class HasOneChildActivity : CompositeActivity
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.ActivityCollection Activities { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.ActivityCollection Activities" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.CompositeActivity.Activities" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Activities As ActivityCollection" />
+      <MemberSignature Language="F#" Value="member this.Activities : System.Workflow.ComponentModel.ActivityCollection" Usage="System.Workflow.ComponentModel.CompositeActivity.Activities" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::ActivityCollection ^ Activities { System::Workflow::ComponentModel::ActivityCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -142,7 +165,7 @@ public class HasOneChildActivity : CompositeActivity
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -176,6 +199,8 @@ public class HasOneChildActivity : CompositeActivity
       <MemberSignature Language="C#" Value="protected void ApplyWorkflowChanges (System.Workflow.ComponentModel.WorkflowChanges workflowChanges);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ApplyWorkflowChanges(class System.Workflow.ComponentModel.WorkflowChanges workflowChanges) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.ApplyWorkflowChanges(System.Workflow.ComponentModel.WorkflowChanges)" />
+      <MemberSignature Language="F#" Value="member this.ApplyWorkflowChanges : System.Workflow.ComponentModel.WorkflowChanges -&gt; unit" Usage="compositeActivity.ApplyWorkflowChanges workflowChanges" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ApplyWorkflowChanges(System::Workflow::ComponentModel::WorkflowChanges ^ workflowChanges);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -196,9 +221,12 @@ public class HasOneChildActivity : CompositeActivity
       </Docs>
     </Member>
     <Member MemberName="CanModifyActivities">
-      <MemberSignature Language="C#" Value="protected bool CanModifyActivities { get; set; }" />
+      <MemberSignature Language="C#" Value="protected internal bool CanModifyActivities { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanModifyActivities" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.CompositeActivity.CanModifyActivities" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Property CanModifyActivities As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanModifyActivities : bool with get, set" Usage="System.Workflow.ComponentModel.CompositeActivity.CanModifyActivities" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool CanModifyActivities { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -230,6 +258,9 @@ public class HasOneChildActivity : CompositeActivity
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="compositeActivity.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -259,6 +290,9 @@ public class HasOneChildActivity : CompositeActivity
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt; EnabledActivities { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.Activity&gt; EnabledActivities" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.CompositeActivity.EnabledActivities" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EnabledActivities As ReadOnlyCollection(Of Activity)" />
+      <MemberSignature Language="F#" Value="member this.EnabledActivities : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Activity&gt;" Usage="System.Workflow.ComponentModel.CompositeActivity.EnabledActivities" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ EnabledActivities { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Activity ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -269,7 +303,7 @@ public class HasOneChildActivity : CompositeActivity
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -285,6 +319,8 @@ public class HasOneChildActivity : CompositeActivity
       <MemberSignature Language="C#" Value="protected System.Workflow.ComponentModel.Activity[] GetDynamicActivities (System.Workflow.ComponentModel.Activity activity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Workflow.ComponentModel.Activity[] GetDynamicActivities(class System.Workflow.ComponentModel.Activity activity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.GetDynamicActivities(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="F#" Value="member this.GetDynamicActivities : System.Workflow.ComponentModel.Activity -&gt; System.Workflow.ComponentModel.Activity[]" Usage="compositeActivity.GetDynamicActivities activity" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Workflow::ComponentModel::Activity ^&gt; ^ GetDynamicActivities(System::Workflow::ComponentModel::Activity ^ activity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -304,9 +340,11 @@ public class HasOneChildActivity : CompositeActivity
       </Docs>
     </Member>
     <Member MemberName="HandleFault">
-      <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.ActivityExecutionStatus HandleFault (System.Workflow.ComponentModel.ActivityExecutionContext executionContext, Exception exception);" />
+      <MemberSignature Language="C#" Value="protected internal override System.Workflow.ComponentModel.ActivityExecutionStatus HandleFault (System.Workflow.ComponentModel.ActivityExecutionContext executionContext, Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus HandleFault(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.HandleFault(System.Workflow.ComponentModel.ActivityExecutionContext,System.Exception)" />
+      <MemberSignature Language="F#" Value="override this.HandleFault : System.Workflow.ComponentModel.ActivityExecutionContext * Exception -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="compositeActivity.HandleFault (executionContext, exception)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus HandleFault(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext, Exception ^ exception);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -330,9 +368,12 @@ public class HasOneChildActivity : CompositeActivity
       </Docs>
     </Member>
     <Member MemberName="Initialize">
-      <MemberSignature Language="C#" Value="protected override void Initialize (IServiceProvider provider);" />
+      <MemberSignature Language="C#" Value="protected internal override void Initialize (IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Initialize(class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.Initialize(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Initialize (provider As IServiceProvider)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : IServiceProvider -&gt; unit" Usage="compositeActivity.Initialize provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Initialize(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -353,9 +394,12 @@ public class HasOneChildActivity : CompositeActivity
       </Docs>
     </Member>
     <Member MemberName="OnActivityChangeAdd">
-      <MemberSignature Language="C#" Value="protected virtual void OnActivityChangeAdd (System.Workflow.ComponentModel.ActivityExecutionContext executionContext, System.Workflow.ComponentModel.Activity addedActivity);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnActivityChangeAdd (System.Workflow.ComponentModel.ActivityExecutionContext executionContext, System.Workflow.ComponentModel.Activity addedActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnActivityChangeAdd(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext, class System.Workflow.ComponentModel.Activity addedActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.OnActivityChangeAdd(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnActivityChangeAdd (executionContext As ActivityExecutionContext, addedActivity As Activity)" />
+      <MemberSignature Language="F#" Value="abstract member OnActivityChangeAdd : System.Workflow.ComponentModel.ActivityExecutionContext * System.Workflow.ComponentModel.Activity -&gt; unit&#xA;override this.OnActivityChangeAdd : System.Workflow.ComponentModel.ActivityExecutionContext * System.Workflow.ComponentModel.Activity -&gt; unit" Usage="compositeActivity.OnActivityChangeAdd (executionContext, addedActivity)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnActivityChangeAdd(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext, System::Workflow::ComponentModel::Activity ^ addedActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -378,9 +422,12 @@ public class HasOneChildActivity : CompositeActivity
       </Docs>
     </Member>
     <Member MemberName="OnActivityChangeRemove">
-      <MemberSignature Language="C#" Value="protected virtual void OnActivityChangeRemove (System.Workflow.ComponentModel.ActivityExecutionContext executionContext, System.Workflow.ComponentModel.Activity removedActivity);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnActivityChangeRemove (System.Workflow.ComponentModel.ActivityExecutionContext executionContext, System.Workflow.ComponentModel.Activity removedActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnActivityChangeRemove(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext, class System.Workflow.ComponentModel.Activity removedActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.OnActivityChangeRemove(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnActivityChangeRemove (executionContext As ActivityExecutionContext, removedActivity As Activity)" />
+      <MemberSignature Language="F#" Value="abstract member OnActivityChangeRemove : System.Workflow.ComponentModel.ActivityExecutionContext * System.Workflow.ComponentModel.Activity -&gt; unit&#xA;override this.OnActivityChangeRemove : System.Workflow.ComponentModel.ActivityExecutionContext * System.Workflow.ComponentModel.Activity -&gt; unit" Usage="compositeActivity.OnActivityChangeRemove (executionContext, removedActivity)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnActivityChangeRemove(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext, System::Workflow::ComponentModel::Activity ^ removedActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -408,9 +455,12 @@ public class HasOneChildActivity : CompositeActivity
       </Docs>
     </Member>
     <Member MemberName="OnActivityExecutionContextLoad">
-      <MemberSignature Language="C#" Value="protected override void OnActivityExecutionContextLoad (IServiceProvider provider);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnActivityExecutionContextLoad (IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnActivityExecutionContextLoad(class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.OnActivityExecutionContextLoad(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnActivityExecutionContextLoad (provider As IServiceProvider)" />
+      <MemberSignature Language="F#" Value="override this.OnActivityExecutionContextLoad : IServiceProvider -&gt; unit" Usage="compositeActivity.OnActivityExecutionContextLoad provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnActivityExecutionContextLoad(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -429,9 +479,12 @@ public class HasOneChildActivity : CompositeActivity
       </Docs>
     </Member>
     <Member MemberName="OnActivityExecutionContextUnload">
-      <MemberSignature Language="C#" Value="protected override void OnActivityExecutionContextUnload (IServiceProvider provider);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnActivityExecutionContextUnload (IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnActivityExecutionContextUnload(class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.OnActivityExecutionContextUnload(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnActivityExecutionContextUnload (provider As IServiceProvider)" />
+      <MemberSignature Language="F#" Value="override this.OnActivityExecutionContextUnload : IServiceProvider -&gt; unit" Usage="compositeActivity.OnActivityExecutionContextUnload provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnActivityExecutionContextUnload(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -453,6 +506,9 @@ public class HasOneChildActivity : CompositeActivity
       <MemberSignature Language="C#" Value="protected virtual void OnListChanged (System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnListChanged(class System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.OnListChanged(System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnListChanged (e As ActivityCollectionChangeEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnListChanged : System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs -&gt; unit&#xA;override this.OnListChanged : System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs -&gt; unit" Usage="compositeActivity.OnListChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnListChanged(System::Workflow::ComponentModel::ActivityCollectionChangeEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -474,6 +530,9 @@ public class HasOneChildActivity : CompositeActivity
       <MemberSignature Language="C#" Value="protected virtual void OnListChanging (System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnListChanging(class System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.OnListChanging(System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnListChanging (e As ActivityCollectionChangeEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnListChanging : System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs -&gt; unit&#xA;override this.OnListChanging : System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs -&gt; unit" Usage="compositeActivity.OnListChanging e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnListChanging(System::Workflow::ComponentModel::ActivityCollectionChangeEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -493,9 +552,12 @@ public class HasOneChildActivity : CompositeActivity
       </Docs>
     </Member>
     <Member MemberName="OnWorkflowChangesCompleted">
-      <MemberSignature Language="C#" Value="protected virtual void OnWorkflowChangesCompleted (System.Workflow.ComponentModel.ActivityExecutionContext rootContext);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnWorkflowChangesCompleted (System.Workflow.ComponentModel.ActivityExecutionContext rootContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnWorkflowChangesCompleted(class System.Workflow.ComponentModel.ActivityExecutionContext rootContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.OnWorkflowChangesCompleted(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnWorkflowChangesCompleted (rootContext As ActivityExecutionContext)" />
+      <MemberSignature Language="F#" Value="abstract member OnWorkflowChangesCompleted : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; unit&#xA;override this.OnWorkflowChangesCompleted : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; unit" Usage="compositeActivity.OnWorkflowChangesCompleted rootContext" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnWorkflowChangesCompleted(System::Workflow::ComponentModel::ActivityExecutionContext ^ rootContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -521,9 +583,12 @@ public class HasOneChildActivity : CompositeActivity
       </Docs>
     </Member>
     <Member MemberName="Uninitialize">
-      <MemberSignature Language="C#" Value="protected override void Uninitialize (IServiceProvider provider);" />
+      <MemberSignature Language="C#" Value="protected internal override void Uninitialize (IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Uninitialize(class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.CompositeActivity.Uninitialize(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Uninitialize (provider As IServiceProvider)" />
+      <MemberSignature Language="F#" Value="override this.Uninitialize : IServiceProvider -&gt; unit" Usage="compositeActivity.Uninitialize provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Uninitialize(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -548,14 +613,5 @@ public class HasOneChildActivity : CompositeActivity
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.CompositeActivity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

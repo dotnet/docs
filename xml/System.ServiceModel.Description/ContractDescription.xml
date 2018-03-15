@@ -1,7 +1,10 @@
-<Type Name="ContractDescription" FullName="System.ServiceModel.Description.ContractDescription">
+﻿<Type Name="ContractDescription" FullName="System.ServiceModel.Description.ContractDescription">
   <TypeSignature Language="C#" Value="public class ContractDescription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContractDescription extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ContractDescription" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContractDescription" />
+  <TypeSignature Language="F#" Value="type ContractDescription = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContractDescription" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,10 +57,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ContractDescription" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ContractDescription (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ContractDescription : string -&gt; System.ServiceModel.Description.ContractDescription" Usage="new System.ServiceModel.Description.ContractDescription name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractDescription(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -95,6 +111,9 @@
       <MemberSignature Language="C#" Value="public ContractDescription (string name, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, ns As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ContractDescription : string * string -&gt; System.ServiceModel.Description.ContractDescription" Usage="new System.ServiceModel.Description.ContractDescription (name, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractDescription(System::String ^ name, System::String ^ ns);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -139,6 +158,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IContractBehavior&gt; Behaviors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.KeyedByTypeCollection`1&lt;class System.ServiceModel.Description.IContractBehavior&gt; Behaviors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.Behaviors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Behaviors As KeyedByTypeCollection(Of IContractBehavior)" />
+      <MemberSignature Language="F#" Value="member this.Behaviors : System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IContractBehavior&gt;" Usage="System.ServiceModel.Description.ContractDescription.Behaviors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::KeyedByTypeCollection&lt;System::ServiceModel::Description::IContractBehavior ^&gt; ^ Behaviors { System::Collections::Generic::KeyedByTypeCollection&lt;System::ServiceModel::Description::IContractBehavior ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -166,6 +188,9 @@
       <MemberSignature Language="C#" Value="public Type CallbackContractType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type CallbackContractType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.CallbackContractType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CallbackContractType As Type" />
+      <MemberSignature Language="F#" Value="member this.CallbackContractType : Type with get, set" Usage="System.ServiceModel.Description.ContractDescription.CallbackContractType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ CallbackContractType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -204,6 +229,9 @@
       <MemberSignature Language="C#" Value="public string ConfigurationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConfigurationName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.ConfigurationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfigurationName As String" />
+      <MemberSignature Language="F#" Value="member this.ConfigurationName : string with get, set" Usage="System.ServiceModel.Description.ContractDescription.ConfigurationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConfigurationName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -237,6 +265,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.KeyedCollection&lt;Type,System.ServiceModel.Description.IContractBehavior&gt; ContractBehaviors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.KeyedCollection`2&lt;class System.Type, class System.ServiceModel.Description.IContractBehavior&gt; ContractBehaviors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.ContractBehaviors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractBehaviors As KeyedCollection(Of Type, IContractBehavior)" />
+      <MemberSignature Language="F#" Value="member this.ContractBehaviors : System.Collections.ObjectModel.KeyedCollection&lt;Type, System.ServiceModel.Description.IContractBehavior&gt;" Usage="System.ServiceModel.Description.ContractDescription.ContractBehaviors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::KeyedCollection&lt;Type ^, System::ServiceModel::Description::IContractBehavior ^&gt; ^ ContractBehaviors { System::Collections::ObjectModel::KeyedCollection&lt;Type ^, System::ServiceModel::Description::IContractBehavior ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -262,6 +293,9 @@
       <MemberSignature Language="C#" Value="public Type ContractType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ContractType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.ContractType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContractType As Type" />
+      <MemberSignature Language="F#" Value="member this.ContractType : Type with get, set" Usage="System.ServiceModel.Description.ContractDescription.ContractType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ContractType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -318,6 +352,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Description.ContractDescription GetContract (Type contractType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Description.ContractDescription GetContract(class System.Type contractType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.GetContract(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetContract (contractType As Type) As ContractDescription" />
+      <MemberSignature Language="F#" Value="static member GetContract : Type -&gt; System.ServiceModel.Description.ContractDescription" Usage="System.ServiceModel.Description.ContractDescription.GetContract contractType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ContractDescription ^ GetContract(Type ^ contractType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -358,6 +395,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Description.ContractDescription GetContract (Type contractType, object serviceImplementation);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Description.ContractDescription GetContract(class System.Type contractType, object serviceImplementation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.GetContract(System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetContract (contractType As Type, serviceImplementation As Object) As ContractDescription" />
+      <MemberSignature Language="F#" Value="static member GetContract : Type * obj -&gt; System.ServiceModel.Description.ContractDescription" Usage="System.ServiceModel.Description.ContractDescription.GetContract (contractType, serviceImplementation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ContractDescription ^ GetContract(Type ^ contractType, System::Object ^ serviceImplementation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -396,6 +436,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.Description.ContractDescription GetContract (Type contractType, Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.Description.ContractDescription GetContract(class System.Type contractType, class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.GetContract(System.Type,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetContract (contractType As Type, serviceType As Type) As ContractDescription" />
+      <MemberSignature Language="F#" Value="static member GetContract : Type * Type -&gt; System.ServiceModel.Description.ContractDescription" Usage="System.ServiceModel.Description.ContractDescription.GetContract (contractType, serviceType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::Description::ContractDescription ^ GetContract(Type ^ contractType, Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -434,6 +477,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ContractDescription&gt; GetInheritedContracts ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ContractDescription&gt; GetInheritedContracts() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.GetInheritedContracts" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInheritedContracts () As Collection(Of ContractDescription)" />
+      <MemberSignature Language="F#" Value="member this.GetInheritedContracts : unit -&gt; System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ContractDescription&gt;" Usage="contractDescription.GetInheritedContracts " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::ContractDescription ^&gt; ^ GetInheritedContracts();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -462,6 +508,9 @@
       <MemberSignature Language="C#" Value="public bool HasProtectionLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.HasProtectionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasProtectionLevel As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasProtectionLevel : bool" Usage="System.ServiceModel.Description.ContractDescription.HasProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasProtectionLevel { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -495,6 +544,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Description.ContractDescription.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -528,6 +580,9 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.ServiceModel.Description.ContractDescription.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -567,6 +622,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.OperationDescriptionCollection Operations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.OperationDescriptionCollection Operations" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.Operations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operations As OperationDescriptionCollection" />
+      <MemberSignature Language="F#" Value="member this.Operations : System.ServiceModel.Description.OperationDescriptionCollection" Usage="System.ServiceModel.Description.ContractDescription.Operations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::OperationDescriptionCollection ^ Operations { System::ServiceModel::Description::OperationDescriptionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -600,6 +658,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Security.ProtectionLevel ProtectionLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel ProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.ProtectionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProtectionLevel As ProtectionLevel" />
+      <MemberSignature Language="F#" Value="member this.ProtectionLevel : System.Net.Security.ProtectionLevel with get, set" Usage="System.ServiceModel.Description.ContractDescription.ProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel ProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -632,6 +693,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.SessionMode SessionMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.SessionMode SessionMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ContractDescription.SessionMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property SessionMode As SessionMode" />
+      <MemberSignature Language="F#" Value="member this.SessionMode : System.ServiceModel.SessionMode with get, set" Usage="System.ServiceModel.Description.ContractDescription.SessionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::SessionMode SessionMode { System::ServiceModel::SessionMode get(); void set(System::ServiceModel::SessionMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -664,6 +728,9 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeProtectionLevel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeProtectionLevel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ContractDescription.ShouldSerializeProtectionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeProtectionLevel () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeProtectionLevel : unit -&gt; bool" Usage="contractDescription.ShouldSerializeProtectionLevel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeProtectionLevel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -680,15 +747,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ContractDescription" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

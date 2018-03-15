@@ -1,7 +1,10 @@
-<Type Name="NavigationFailedEventArgs" FullName="System.Windows.Navigation.NavigationFailedEventArgs">
+﻿<Type Name="NavigationFailedEventArgs" FullName="System.Windows.Navigation.NavigationFailedEventArgs">
   <TypeSignature Language="C#" Value="public class NavigationFailedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NavigationFailedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigationFailedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class NavigationFailedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type NavigationFailedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NavigationFailedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,9 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationFailedEventArgs.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Windows.Navigation.NavigationFailedEventArgs.Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +78,9 @@
       <MemberSignature Language="C#" Value="public object ExtraData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ExtraData" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationFailedEventArgs.ExtraData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtraData As Object" />
+      <MemberSignature Language="F#" Value="member this.ExtraData : obj" Usage="System.Windows.Navigation.NavigationFailedEventArgs.ExtraData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ExtraData { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -97,6 +106,9 @@
       <MemberSignature Language="C#" Value="public bool Handled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Handled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationFailedEventArgs.Handled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Handled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Handled : bool with get, set" Usage="System.Windows.Navigation.NavigationFailedEventArgs.Handled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Handled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,6 +135,9 @@
       <MemberSignature Language="C#" Value="public object Navigator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Navigator" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationFailedEventArgs.Navigator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Navigator As Object" />
+      <MemberSignature Language="F#" Value="member this.Navigator : obj" Usage="System.Windows.Navigation.NavigationFailedEventArgs.Navigator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Navigator { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -141,6 +156,9 @@
       <MemberSignature Language="C#" Value="public Uri Uri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Uri" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationFailedEventArgs.Uri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="System.Windows.Navigation.NavigationFailedEventArgs.Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -159,6 +177,9 @@
       <MemberSignature Language="C#" Value="public System.Net.WebRequest WebRequest { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebRequest WebRequest" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationFailedEventArgs.WebRequest" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebRequest As WebRequest" />
+      <MemberSignature Language="F#" Value="member this.WebRequest : System.Net.WebRequest" Usage="System.Windows.Navigation.NavigationFailedEventArgs.WebRequest" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebRequest ^ WebRequest { System::Net::WebRequest ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -192,6 +213,9 @@
       <MemberSignature Language="C#" Value="public System.Net.WebResponse WebResponse { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebResponse WebResponse" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationFailedEventArgs.WebResponse" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebResponse As WebResponse" />
+      <MemberSignature Language="F#" Value="member this.WebResponse : System.Net.WebResponse" Usage="System.Windows.Navigation.NavigationFailedEventArgs.WebResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebResponse ^ WebResponse { System::Net::WebResponse ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

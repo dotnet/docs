@@ -1,7 +1,10 @@
-<Type Name="ForestTrustRelationshipCollision" FullName="System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision">
+﻿<Type Name="ForestTrustRelationshipCollision" FullName="System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision">
   <TypeSignature Language="C#" Value="public class ForestTrustRelationshipCollision" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ForestTrustRelationshipCollision extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision" />
+  <TypeSignature Language="VB.NET" Value="Public Class ForestTrustRelationshipCollision" />
+  <TypeSignature Language="F#" Value="type ForestTrustRelationshipCollision = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ForestTrustRelationshipCollision" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public string CollisionRecord { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CollisionRecord" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.CollisionRecord" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CollisionRecord As String" />
+      <MemberSignature Language="F#" Value="member this.CollisionRecord : string" Usage="System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.CollisionRecord" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CollisionRecord { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -40,6 +46,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType CollisionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType CollisionType" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.CollisionType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CollisionType As ForestTrustCollisionType" />
+      <MemberSignature Language="F#" Value="member this.CollisionType : System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType" Usage="System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.CollisionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ForestTrustCollisionType CollisionType { System::DirectoryServices::ActiveDirectory::ForestTrustCollisionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -61,6 +70,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.DomainCollisionOptions DomainCollisionOption { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.DomainCollisionOptions DomainCollisionOption" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.DomainCollisionOption" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DomainCollisionOption As DomainCollisionOptions" />
+      <MemberSignature Language="F#" Value="member this.DomainCollisionOption : System.DirectoryServices.ActiveDirectory.DomainCollisionOptions" Usage="System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.DomainCollisionOption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DomainCollisionOptions DomainCollisionOption { System::DirectoryServices::ActiveDirectory::DomainCollisionOptions get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -84,6 +96,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions TopLevelNameCollisionOption { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions TopLevelNameCollisionOption" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.TopLevelNameCollisionOption" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TopLevelNameCollisionOption As TopLevelNameCollisionOptions" />
+      <MemberSignature Language="F#" Value="member this.TopLevelNameCollisionOption : System.DirectoryServices.ActiveDirectory.TopLevelNameCollisionOptions" Usage="System.DirectoryServices.ActiveDirectory.ForestTrustRelationshipCollision.TopLevelNameCollisionOption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::TopLevelNameCollisionOptions TopLevelNameCollisionOption { System::DirectoryServices::ActiveDirectory::TopLevelNameCollisionOptions get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

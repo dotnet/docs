@@ -1,7 +1,10 @@
-<Type Name="EntityDataSourceContextCreatedEventArgs" FullName="System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs">
+﻿<Type Name="EntityDataSourceContextCreatedEventArgs" FullName="System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs">
   <TypeSignature Language="C#" Value="public class EntityDataSourceContextCreatedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityDataSourceContextCreatedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityDataSourceContextCreatedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type EntityDataSourceContextCreatedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityDataSourceContextCreatedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Objects.ObjectContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As ObjectContext" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Data.Objects.ObjectContext" Usage="System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Objects::ObjectContext ^ Context { System::Data::Objects::ObjectContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>

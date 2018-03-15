@@ -1,7 +1,10 @@
-<Type Name="LinqDataSourceUpdateEventArgs" FullName="System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs">
+﻿<Type Name="LinqDataSourceUpdateEventArgs" FullName="System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs">
   <TypeSignature Language="C#" Value="public class LinqDataSourceUpdateEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinqDataSourceUpdateEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class LinqDataSourceUpdateEventArgs&#xA;Inherits CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type LinqDataSourceUpdateEventArgs = class&#xA;    inherit CancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LinqDataSourceUpdateEventArgs : System::ComponentModel::CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,10 +72,22 @@ protected void LinqDataSource_Updating(object sender,
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LinqDataSourceUpdateEventArgs (System.Web.UI.WebControls.LinqDataSourceValidationException exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.LinqDataSourceValidationException exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.#ctor(System.Web.UI.WebControls.LinqDataSourceValidationException)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (exception As LinqDataSourceValidationException)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs : System.Web.UI.WebControls.LinqDataSourceValidationException -&gt; System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs" Usage="new System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceUpdateEventArgs(System::Web::UI::WebControls::LinqDataSourceValidationException ^ exception);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -91,6 +106,9 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="C#" Value="public LinqDataSourceUpdateEventArgs (object originalObject, object newObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object originalObject, object newObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.#ctor(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (originalObject As Object, newObject As Object)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs : obj * obj -&gt; System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs" Usage="new System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs (originalObject, newObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinqDataSourceUpdateEventArgs(System::Object ^ originalObject, System::Object ^ newObject);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -111,6 +129,9 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.LinqDataSourceValidationException Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.LinqDataSourceValidationException Exception" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As LinqDataSourceValidationException" />
+      <MemberSignature Language="F#" Value="member this.Exception : System.Web.UI.WebControls.LinqDataSourceValidationException" Usage="System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::LinqDataSourceValidationException ^ Exception { System::Web::UI::WebControls::LinqDataSourceValidationException ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -172,6 +193,9 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="C#" Value="public bool ExceptionHandled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExceptionHandled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.ExceptionHandled" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExceptionHandled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ExceptionHandled : bool with get, set" Usage="System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.ExceptionHandled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceptionHandled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -234,6 +258,9 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="C#" Value="public object NewObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object NewObject" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.NewObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewObject As Object" />
+      <MemberSignature Language="F#" Value="member this.NewObject : obj" Usage="System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.NewObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NewObject { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -267,6 +294,9 @@ protected void LinqDataSource_Updating(object sender,
       <MemberSignature Language="C#" Value="public object OriginalObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object OriginalObject" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.OriginalObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalObject As Object" />
+      <MemberSignature Language="F#" Value="member this.OriginalObject : obj" Usage="System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs.OriginalObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ OriginalObject { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -304,14 +334,5 @@ protected void LinqDataSource_Updating(object sender,
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.LinqDataSourceUpdateEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

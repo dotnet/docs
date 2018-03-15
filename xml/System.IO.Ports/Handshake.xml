@@ -1,7 +1,10 @@
-<Type Name="Handshake" FullName="System.IO.Ports.Handshake">
+﻿<Type Name="Handshake" FullName="System.IO.Ports.Handshake">
   <TypeSignature Language="C#" Value="public enum Handshake" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Handshake extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Ports.Handshake" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Handshake" />
+  <TypeSignature Language="F#" Value="type Handshake = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class Handshake" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.Handshake None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.Handshake.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.IO.Ports.Handshake.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -50,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.Handshake</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No control is used for the handshake.</summary>
       </Docs>
@@ -58,6 +65,9 @@
       <MemberSignature Language="C#" Value="RequestToSend" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.Handshake RequestToSend = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.Handshake.RequestToSend" />
+      <MemberSignature Language="VB.NET" Value="RequestToSend" />
+      <MemberSignature Language="F#" Value="RequestToSend = 2" Usage="System.IO.Ports.Handshake.RequestToSend" />
+      <MemberSignature Language="C++ CLI" Value="RequestToSend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.Handshake</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Request-to-Send (RTS) hardware flow control is used. RTS signals that data is available for transmission. If the input buffer becomes full, the RTS line will be set to <see langword="false" />. The RTS line will be set to <see langword="true" /> when more room becomes available in the input buffer.</summary>
       </Docs>
@@ -78,6 +89,9 @@
       <MemberSignature Language="C#" Value="RequestToSendXOnXOff" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.Handshake RequestToSendXOnXOff = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.Handshake.RequestToSendXOnXOff" />
+      <MemberSignature Language="VB.NET" Value="RequestToSendXOnXOff" />
+      <MemberSignature Language="F#" Value="RequestToSendXOnXOff = 3" Usage="System.IO.Ports.Handshake.RequestToSendXOnXOff" />
+      <MemberSignature Language="C++ CLI" Value="RequestToSendXOnXOff" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.Handshake</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Both the Request-to-Send (RTS) hardware control and the XON/XOFF software controls are used.</summary>
       </Docs>
@@ -98,6 +113,9 @@
       <MemberSignature Language="C#" Value="XOnXOff" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.Handshake XOnXOff = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.Handshake.XOnXOff" />
+      <MemberSignature Language="VB.NET" Value="XOnXOff" />
+      <MemberSignature Language="F#" Value="XOnXOff = 1" Usage="System.IO.Ports.Handshake.XOnXOff" />
+      <MemberSignature Language="C++ CLI" Value="XOnXOff" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +128,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.Handshake</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The XON/XOFF software control protocol is used. The XOFF control is sent to stop the transmission of data. The XON control is sent to resume the transmission. These software controls are used instead of Request to Send (RTS) and Clear to Send (CTS) hardware controls.</summary>
       </Docs>

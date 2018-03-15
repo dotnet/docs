@@ -1,7 +1,10 @@
-<Type Name="EventSource" FullName="System.Diagnostics.Tracing.EventSource">
+﻿<Type Name="EventSource" FullName="System.Diagnostics.Tracing.EventSource">
   <TypeSignature Language="C#" Value="public class EventSource : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventSource extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventSource" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventSource&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type EventSource = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventSource : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,10 +69,25 @@
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected EventSource ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EventSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -98,6 +116,9 @@
       <MemberSignature Language="C#" Value="protected EventSource (bool throwOnEventWriteErrors);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool throwOnEventWriteErrors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (throwOnEventWriteErrors As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Tracing.EventSource : bool -&gt; System.Diagnostics.Tracing.EventSource" Usage="new System.Diagnostics.Tracing.EventSource throwOnEventWriteErrors" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EventSource(bool throwOnEventWriteErrors);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -130,6 +151,9 @@
       <MemberSignature Language="C#" Value="protected EventSource (System.Diagnostics.Tracing.EventSourceSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.Tracing.EventSourceSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor(System.Diagnostics.Tracing.EventSourceSettings)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (settings As EventSourceSettings)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Tracing.EventSource : System.Diagnostics.Tracing.EventSourceSettings -&gt; System.Diagnostics.Tracing.EventSource" Usage="new System.Diagnostics.Tracing.EventSource settings" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EventSource(System::Diagnostics::Tracing::EventSourceSettings settings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -166,6 +190,9 @@
       <MemberSignature Language="C#" Value="public EventSource (string eventSourceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventSourceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (eventSourceName As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Tracing.EventSource : string -&gt; System.Diagnostics.Tracing.EventSource" Usage="new System.Diagnostics.Tracing.EventSource eventSourceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventSource(System::String ^ eventSourceName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -197,6 +224,9 @@
       <MemberSignature Language="C#" Value="protected EventSource (System.Diagnostics.Tracing.EventSourceSettings settings, params string[] traits);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Diagnostics.Tracing.EventSourceSettings settings, string[] traits) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor(System.Diagnostics.Tracing.EventSourceSettings,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (settings As EventSourceSettings, ParamArray traits As String())" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Tracing.EventSource : System.Diagnostics.Tracing.EventSourceSettings * string[] -&gt; System.Diagnostics.Tracing.EventSource" Usage="new System.Diagnostics.Tracing.EventSource (settings, traits)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EventSource(System::Diagnostics::Tracing::EventSourceSettings settings, ... cli::array &lt;System::String ^&gt; ^ traits);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -246,6 +276,9 @@
       <MemberSignature Language="C#" Value="public EventSource (string eventSourceName, System.Diagnostics.Tracing.EventSourceSettings config);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventSourceName, valuetype System.Diagnostics.Tracing.EventSourceSettings config) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor(System.String,System.Diagnostics.Tracing.EventSourceSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (eventSourceName As String, config As EventSourceSettings)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Tracing.EventSource : string * System.Diagnostics.Tracing.EventSourceSettings -&gt; System.Diagnostics.Tracing.EventSource" Usage="new System.Diagnostics.Tracing.EventSource (eventSourceName, config)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventSource(System::String ^ eventSourceName, System::Diagnostics::Tracing::EventSourceSettings config);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -286,6 +319,9 @@
       <MemberSignature Language="C#" Value="public EventSource (string eventSourceName, System.Diagnostics.Tracing.EventSourceSettings config, params string[] traits);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string eventSourceName, valuetype System.Diagnostics.Tracing.EventSourceSettings config, string[] traits) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.#ctor(System.String,System.Diagnostics.Tracing.EventSourceSettings,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (eventSourceName As String, config As EventSourceSettings, ParamArray traits As String())" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Tracing.EventSource : string * System.Diagnostics.Tracing.EventSourceSettings * string[] -&gt; System.Diagnostics.Tracing.EventSource" Usage="new System.Diagnostics.Tracing.EventSource (eventSourceName, config, traits)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventSource(System::String ^ eventSourceName, System::Diagnostics::Tracing::EventSourceSettings config, ... cli::array &lt;System::String ^&gt; ^ traits);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -339,6 +375,9 @@
       <MemberSignature Language="C#" Value="public Exception ConstructionException { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception ConstructionException" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.ConstructionException" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConstructionException As Exception" />
+      <MemberSignature Language="F#" Value="member this.ConstructionException : Exception" Usage="System.Diagnostics.Tracing.EventSource.ConstructionException" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ ConstructionException { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -378,6 +417,9 @@
       <MemberSignature Language="C#" Value="public static Guid CurrentThreadActivityId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Guid CurrentThreadActivityId" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.CurrentThreadActivityId" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentThreadActivityId As Guid" />
+      <MemberSignature Language="F#" Value="member this.CurrentThreadActivityId : Guid" Usage="System.Diagnostics.Tracing.EventSource.CurrentThreadActivityId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Guid CurrentThreadActivityId { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -407,11 +449,30 @@
         <altmember cref="M:System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="eventSource.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -454,6 +515,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="eventSource.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -504,6 +568,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Diagnostics.Tracing.EventCommandEventArgs&gt; EventCommandExecuted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Diagnostics.Tracing.EventCommandEventArgs&gt; EventCommandExecuted" />
       <MemberSignature Language="DocId" Value="E:System.Diagnostics.Tracing.EventSource.EventCommandExecuted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event EventCommandExecuted As EventHandler(Of EventCommandEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.EventCommandExecuted : EventHandler&lt;System.Diagnostics.Tracing.EventCommandEventArgs&gt; " Usage="member this.EventCommandExecuted : System.EventHandler&lt;System.Diagnostics.Tracing.EventCommandEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Diagnostics::Tracing::EventCommandEventArgs ^&gt; ^ EventCommandExecuted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -531,6 +598,9 @@
       <MemberSignature Language="C#" Value="~EventSource ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="eventSource.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!EventSource ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -558,10 +628,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GenerateManifest">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string of the XML manifest that is associated with the current event source.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GenerateManifest">
       <MemberSignature Language="C#" Value="public static string GenerateManifest (Type eventSourceType, string assemblyPathToIncludeInManifest);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GenerateManifest(class System.Type eventSourceType, string assemblyPathToIncludeInManifest) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.GenerateManifest(System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateManifest (eventSourceType As Type, assemblyPathToIncludeInManifest As String) As String" />
+      <MemberSignature Language="F#" Value="static member GenerateManifest : Type * string -&gt; string" Usage="System.Diagnostics.Tracing.EventSource.GenerateManifest (eventSourceType, assemblyPathToIncludeInManifest)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GenerateManifest(Type ^ eventSourceType, System::String ^ assemblyPathToIncludeInManifest);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -606,6 +692,9 @@
       <MemberSignature Language="C#" Value="public static string GenerateManifest (Type eventSourceType, string assemblyPathToIncludeInManifest, System.Diagnostics.Tracing.EventManifestOptions flags);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GenerateManifest(class System.Type eventSourceType, string assemblyPathToIncludeInManifest, valuetype System.Diagnostics.Tracing.EventManifestOptions flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.GenerateManifest(System.Type,System.String,System.Diagnostics.Tracing.EventManifestOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateManifest (eventSourceType As Type, assemblyPathToIncludeInManifest As String, flags As EventManifestOptions) As String" />
+      <MemberSignature Language="F#" Value="static member GenerateManifest : Type * string * System.Diagnostics.Tracing.EventManifestOptions -&gt; string" Usage="System.Diagnostics.Tracing.EventSource.GenerateManifest (eventSourceType, assemblyPathToIncludeInManifest, flags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GenerateManifest(Type ^ eventSourceType, System::String ^ assemblyPathToIncludeInManifest, System::Diagnostics::Tracing::EventManifestOptions flags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -650,6 +739,9 @@
       <MemberSignature Language="C#" Value="public static Guid GetGuid (Type eventSourceType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Guid GetGuid(class System.Type eventSourceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.GetGuid(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetGuid (eventSourceType As Type) As Guid" />
+      <MemberSignature Language="F#" Value="static member GetGuid : Type -&gt; Guid" Usage="System.Diagnostics.Tracing.EventSource.GetGuid eventSourceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Guid GetGuid(Type ^ eventSourceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -685,6 +777,9 @@
       <MemberSignature Language="C#" Value="public static string GetName (Type eventSourceType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetName(class System.Type eventSourceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.GetName(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetName (eventSourceType As Type) As String" />
+      <MemberSignature Language="F#" Value="static member GetName : Type -&gt; string" Usage="System.Diagnostics.Tracing.EventSource.GetName eventSourceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetName(Type ^ eventSourceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -720,6 +815,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Diagnostics.Tracing.EventSource&gt; GetSources ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Diagnostics.Tracing.EventSource&gt; GetSources() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.GetSources" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSources () As IEnumerable(Of EventSource)" />
+      <MemberSignature Language="F#" Value="static member GetSources : unit -&gt; seq&lt;System.Diagnostics.Tracing.EventSource&gt;" Usage="System.Diagnostics.Tracing.EventSource.GetSources " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::Generic::IEnumerable&lt;System::Diagnostics::Tracing::EventSource ^&gt; ^ GetSources();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -752,6 +850,9 @@
       <MemberSignature Language="C#" Value="public string GetTrait (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetTrait(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.GetTrait(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTrait (key As String) As String" />
+      <MemberSignature Language="F#" Value="member this.GetTrait : string -&gt; string" Usage="eventSource.GetTrait key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetTrait(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -792,6 +893,9 @@
       <MemberSignature Language="C#" Value="public Guid Guid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Guid" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.Guid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Guid As Guid" />
+      <MemberSignature Language="F#" Value="member this.Guid : Guid" Usage="System.Diagnostics.Tracing.EventSource.Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Guid { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -819,10 +923,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsEnabled">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the current event source is enabled.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsEnabled">
       <MemberSignature Language="C#" Value="public bool IsEnabled ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsEnabled() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.IsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsEnabled () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : unit -&gt; bool" Usage="eventSource.IsEnabled " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEnabled();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -856,6 +976,9 @@
       <MemberSignature Language="C#" Value="public bool IsEnabled (System.Diagnostics.Tracing.EventLevel level, System.Diagnostics.Tracing.EventKeywords keywords);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsEnabled(valuetype System.Diagnostics.Tracing.EventLevel level, valuetype System.Diagnostics.Tracing.EventKeywords keywords) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.IsEnabled(System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsEnabled (level As EventLevel, keywords As EventKeywords) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : System.Diagnostics.Tracing.EventLevel * System.Diagnostics.Tracing.EventKeywords -&gt; bool" Usage="eventSource.IsEnabled (level, keywords)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEnabled(System::Diagnostics::Tracing::EventLevel level, System::Diagnostics::Tracing::EventKeywords keywords);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -901,6 +1024,9 @@
       <MemberSignature Language="C#" Value="public bool IsEnabled (System.Diagnostics.Tracing.EventLevel level, System.Diagnostics.Tracing.EventKeywords keywords, System.Diagnostics.Tracing.EventChannel channel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsEnabled(valuetype System.Diagnostics.Tracing.EventLevel level, valuetype System.Diagnostics.Tracing.EventKeywords keywords, valuetype System.Diagnostics.Tracing.EventChannel channel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.IsEnabled(System.Diagnostics.Tracing.EventLevel,System.Diagnostics.Tracing.EventKeywords,System.Diagnostics.Tracing.EventChannel)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsEnabled (level As EventLevel, keywords As EventKeywords, channel As EventChannel) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : System.Diagnostics.Tracing.EventLevel * System.Diagnostics.Tracing.EventKeywords * System.Diagnostics.Tracing.EventChannel -&gt; bool" Usage="eventSource.IsEnabled (level, keywords, channel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsEnabled(System::Diagnostics::Tracing::EventLevel level, System::Diagnostics::Tracing::EventKeywords keywords, System::Diagnostics::Tracing::EventChannel channel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -948,6 +1074,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Diagnostics.Tracing.EventSource.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -979,6 +1108,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnEventCommand (System.Diagnostics.Tracing.EventCommandEventArgs command);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEventCommand(class System.Diagnostics.Tracing.EventCommandEventArgs command) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.OnEventCommand(System.Diagnostics.Tracing.EventCommandEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEventCommand (command As EventCommandEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnEventCommand : System.Diagnostics.Tracing.EventCommandEventArgs -&gt; unit&#xA;override this.OnEventCommand : System.Diagnostics.Tracing.EventCommandEventArgs -&gt; unit" Usage="eventSource.OnEventCommand command" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEventCommand(System::Diagnostics::Tracing::EventCommandEventArgs ^ command);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1013,6 +1145,8 @@
       <MemberSignature Language="C#" Value="public static void SendCommand (System.Diagnostics.Tracing.EventSource eventSource, System.Diagnostics.Tracing.EventCommand command, System.Collections.Generic.IDictionary&lt;string,string&gt; commandArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SendCommand(class System.Diagnostics.Tracing.EventSource eventSource, valuetype System.Diagnostics.Tracing.EventCommand command, class System.Collections.Generic.IDictionary`2&lt;string, string&gt; commandArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.SendCommand(System.Diagnostics.Tracing.EventSource,System.Diagnostics.Tracing.EventCommand,System.Collections.Generic.IDictionary{System.String,System.String})" />
+      <MemberSignature Language="F#" Value="static member SendCommand : System.Diagnostics.Tracing.EventSource * System.Diagnostics.Tracing.EventCommand * System.Collections.Generic.IDictionary&lt;string, string&gt; -&gt; unit" Usage="System.Diagnostics.Tracing.EventSource.SendCommand (eventSource, command, commandArguments)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SendCommand(System::Diagnostics::Tracing::EventSource ^ eventSource, System::Diagnostics::Tracing::EventCommand command, System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ commandArguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1054,10 +1188,27 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetCurrentThreadActivityId">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
+  
+ Sets the activity ID on the current thread.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetCurrentThreadActivityId">
       <MemberSignature Language="C#" Value="public static void SetCurrentThreadActivityId (Guid activityId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCurrentThreadActivityId(valuetype System.Guid activityId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCurrentThreadActivityId (activityId As Guid)" />
+      <MemberSignature Language="F#" Value="static member SetCurrentThreadActivityId : Guid -&gt; unit" Usage="System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId activityId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCurrentThreadActivityId(Guid activityId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1102,6 +1253,9 @@
       <MemberSignature Language="C#" Value="public static void SetCurrentThreadActivityId (Guid activityId, out Guid oldActivityThatWillContinue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCurrentThreadActivityId(valuetype System.Guid activityId, [out] valuetype System.Guid&amp; oldActivityThatWillContinue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId(System.Guid,System.Guid@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCurrentThreadActivityId (activityId As Guid, ByRef oldActivityThatWillContinue As Guid)" />
+      <MemberSignature Language="F#" Value="static member SetCurrentThreadActivityId : Guid *  -&gt; unit" Usage="System.Diagnostics.Tracing.EventSource.SetCurrentThreadActivityId (activityId, oldActivityThatWillContinue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCurrentThreadActivityId(Guid activityId, [Runtime::InteropServices::Out] Guid % oldActivityThatWillContinue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1146,6 +1300,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.Tracing.EventSourceSettings Settings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.Tracing.EventSourceSettings Settings" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSource.Settings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Settings As EventSourceSettings" />
+      <MemberSignature Language="F#" Value="member this.Settings : System.Diagnostics.Tracing.EventSourceSettings" Usage="System.Diagnostics.Tracing.EventSource.Settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventSourceSettings Settings { System::Diagnostics::Tracing::EventSourceSettings get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1175,6 +1332,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="eventSource.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1202,10 +1362,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an event.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public void Write (string eventName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string eventName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (eventName As String)" />
+      <MemberSignature Language="F#" Value="member this.Write : string -&gt; unit" Usage="eventSource.Write eventName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::String ^ eventName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1240,6 +1414,9 @@
       <MemberSignature Language="C#" Value="public void Write (string eventName, System.Diagnostics.Tracing.EventSourceOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string eventName, valuetype System.Diagnostics.Tracing.EventSourceOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Write(System.String,System.Diagnostics.Tracing.EventSourceOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (eventName As String, options As EventSourceOptions)" />
+      <MemberSignature Language="F#" Value="member this.Write : string * System.Diagnostics.Tracing.EventSourceOptions -&gt; unit" Usage="eventSource.Write (eventName, options)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::String ^ eventName, System::Diagnostics::Tracing::EventSourceOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1276,6 +1453,9 @@
       <MemberSignature Language="C#" Value="public void Write&lt;T&gt; (string eventName, T data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write&lt;T&gt;(string eventName, !!T data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Write``1(System.String,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write(Of T) (eventName As String, data As T)" />
+      <MemberSignature Language="F#" Value="member this.Write : string * 'T -&gt; unit" Usage="eventSource.Write (eventName, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void Write(System::String ^ eventName, T data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1321,6 +1501,9 @@
       <MemberSignature Language="C#" Value="public void Write&lt;T&gt; (string eventName, System.Diagnostics.Tracing.EventSourceOptions options, T data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write&lt;T&gt;(string eventName, valuetype System.Diagnostics.Tracing.EventSourceOptions options, !!T data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write(Of T) (eventName As String, options As EventSourceOptions, data As T)" />
+      <MemberSignature Language="F#" Value="member this.Write : string * System.Diagnostics.Tracing.EventSourceOptions * 'T -&gt; unit" Usage="eventSource.Write (eventName, options, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void Write(System::String ^ eventName, System::Diagnostics::Tracing::EventSourceOptions options, T data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1368,6 +1551,9 @@
       <MemberSignature Language="C#" Value="public void Write&lt;T&gt; (string eventName, ref System.Diagnostics.Tracing.EventSourceOptions options, ref T data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write&lt;T&gt;(string eventName, valuetype System.Diagnostics.Tracing.EventSourceOptions&amp; options, !!T&amp; data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions@,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write(Of T) (eventName As String, ByRef options As EventSourceOptions, ByRef data As T)" />
+      <MemberSignature Language="F#" Value="member this.Write : string *  *  -&gt; unit" Usage="eventSource.Write (eventName, options, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void Write(System::String ^ eventName, System::Diagnostics::Tracing::EventSourceOptions % options, T % data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1415,6 +1601,9 @@
       <MemberSignature Language="C#" Value="public void Write&lt;T&gt; (string eventName, ref System.Diagnostics.Tracing.EventSourceOptions options, ref Guid activityId, ref Guid relatedActivityId, ref T data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write&lt;T&gt;(string eventName, valuetype System.Diagnostics.Tracing.EventSourceOptions&amp; options, valuetype System.Guid&amp; activityId, valuetype System.Guid&amp; relatedActivityId, !!T&amp; data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.Write``1(System.String,System.Diagnostics.Tracing.EventSourceOptions@,System.Guid@,System.Guid@,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write(Of T) (eventName As String, ByRef options As EventSourceOptions, ByRef activityId As Guid, ByRef relatedActivityId As Guid, ByRef data As T)" />
+      <MemberSignature Language="F#" Value="member this.Write : string *  *  *  *  -&gt; unit" Usage="eventSource.Write (eventName, options, activityId, relatedActivityId, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; void Write(System::String ^ eventName, System::Diagnostics::Tracing::EventSourceOptions % options, Guid % activityId, Guid % relatedActivityId, T % data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1500,6 +1689,9 @@ public void Info1(string arg1)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer)" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int -&gt; unit" Usage="eventSource.WriteEvent eventId" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1559,6 +1751,9 @@ public void Info1(string arg1)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, byte[] arg1);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, unsigned int8[] arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As Byte())" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * byte[] -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, cli::array &lt;System::Byte&gt; ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1610,6 +1805,9 @@ public void Info1(byte[] arg1)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, int arg1);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int32 arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As Integer)" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * int -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, int arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1671,6 +1869,9 @@ public void Info1(int  arg1)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, long arg1);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int64 arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As Long)" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * int64 -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, long arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1724,6 +1925,9 @@ public void Info1(string arg1)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, ParamArray args As Object())" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * obj[] -&gt; unit" Usage="eventSource.WriteEvent (eventId, args)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1795,6 +1999,9 @@ public void Info1(string arg1)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, string arg1);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, string arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * string -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, System::String ^ arg1);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1856,6 +2063,9 @@ public void Info1(string arg1)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, int arg1, int arg2);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int32 arg1, int32 arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As Integer, arg2 As Integer)" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * int * int -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1, arg2)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, int arg1, int arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1911,6 +2121,9 @@ public void Info1(int arg1, int arg2, int arg3)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, int arg1, string arg2);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int32 arg1, string arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As Integer, arg2 As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * int * string -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1, arg2)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, int arg1, System::String ^ arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -1947,6 +2160,9 @@ public void Info1(int arg1, int arg2, int arg3)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, long arg1, byte[] arg2);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int64 arg1, unsigned int8[] arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As Long, arg2 As Byte())" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * int64 * byte[] -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1, arg2)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, long arg1, cli::array &lt;System::Byte&gt; ^ arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -2000,6 +2216,9 @@ public void Info1(Int64 arg1, Byte[] arg2)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, long arg1, long arg2);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int64 arg1, int64 arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As Long, arg2 As Long)" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * int64 * int64 -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1, arg2)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, long arg1, long arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -2055,6 +2274,9 @@ public void Info1(string arg1)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, long arg1, string arg2);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int64 arg1, string arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As Long, arg2 As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * int64 * string -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1, arg2)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, long arg1, System::String ^ arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -2108,6 +2330,9 @@ public void Info1(Int64 arg1, string arg2)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, string arg1, int arg2);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, string arg1, int32 arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As String, arg2 As Integer)" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * string * int -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1, arg2)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, System::String ^ arg1, int arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -2163,6 +2388,9 @@ public void Info1(string arg1)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, string arg1, long arg2);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, string arg1, int64 arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As String, arg2 As Long)" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * string * int64 -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1, arg2)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, System::String ^ arg1, long arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -2218,6 +2446,9 @@ public void Info1(string arg1)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, string arg1, string arg2);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, string arg1, string arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As String, arg2 As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * string * string -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1, arg2)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, System::String ^ arg1, System::String ^ arg2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -2273,6 +2504,9 @@ public void Info1(string arg1)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, int arg1, int arg2, int arg3);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int32 arg1, int32 arg2, int32 arg3) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As Integer, arg2 As Integer, arg3 As Integer)" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * int * int * int -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1, arg2, arg3)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, int arg1, int arg2, int arg3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -2330,6 +2564,9 @@ public void Info1(string arg1)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, long arg1, long arg2, long arg3);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, int64 arg1, int64 arg2, int64 arg3) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As Long, arg2 As Long, arg3 As Long)" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * int64 * int64 * int64 -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1, arg2, arg3)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, long arg1, long arg2, long arg3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -2387,6 +2624,9 @@ public void Info1(string arg1)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, string arg1, int arg2, int arg3);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, string arg1, int32 arg2, int32 arg3) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As String, arg2 As Integer, arg3 As Integer)" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * string * int * int -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1, arg2, arg3)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, System::String ^ arg1, int arg2, int arg3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -2444,6 +2684,9 @@ public void Info1(string arg1)
       <MemberSignature Language="C#" Value="protected void WriteEvent (int eventId, string arg1, string arg2, string arg3);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEvent(int32 eventId, string arg1, string arg2, string arg3) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEvent (eventId As Integer, arg1 As String, arg2 As String, arg3 As String)" />
+      <MemberSignature Language="F#" Value="member this.WriteEvent : int * string * string * string -&gt; unit" Usage="eventSource.WriteEvent (eventId, arg1, arg2, arg3)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEvent(int eventId, System::String ^ arg1, System::String ^ arg2, System::String ^ arg3);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -2501,6 +2744,8 @@ public void Info1(string arg1)
       <MemberSignature Language="C#" Value="protected void WriteEventCore (int eventId, int eventDataCount, System.Diagnostics.Tracing.EventSource.EventData* data);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventCore(int32 eventId, int32 eventDataCount, valuetype System.Diagnostics.Tracing.EventSource/EventData* data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventCore(System.Int32,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)" />
+      <MemberSignature Language="F#" Value="member this.WriteEventCore : int * int * nativeptr&lt;System.Diagnostics.Tracing.EventSource.EventData&gt; -&gt; unit" Usage="eventSource.WriteEventCore (eventId, eventDataCount, data)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEventCore(int eventId, int eventDataCount, System::Diagnostics::Tracing::EventSource::EventData* data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -2594,9 +2839,17 @@ class AnotherEventSource : EventSource {
       </Docs>
     </Member>
     <Member MemberName="WriteEventWithRelatedActivityId">
-      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityId (int eventId, Guid relatedActivityId, params object[] args);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventWithRelatedActivityId(int32 eventId, valuetype System.Guid relatedActivityId, object[] args) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId(System.Int32,System.Guid,System.Object[])" />
+      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityId (int eventId, Guid relatedActivityId, params object[] args);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventWithRelatedActivityId(int32 eventId, valuetype System.Guid relatedActivityId, object[] args) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId(System.Int32,System.Guid,System.Object[])" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEventWithRelatedActivityId (eventId As Integer, relatedActivityId As Guid, ParamArray args As Object())" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="F#" Value="member this.WriteEventWithRelatedActivityId : int * Guid * obj[] -&gt; unit" Usage="eventSource.WriteEventWithRelatedActivityId (eventId, relatedActivityId, args)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEventWithRelatedActivityId(int eventId, Guid relatedActivityId, ... cli::array &lt;System::Object ^&gt; ^ args);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityId (int eventId, Guid childActivityID, params object[] args);" FrameworkAlternate="netframework-4.5.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventWithRelatedActivityId(int32 eventId, valuetype System.Guid childActivityID, object[] args) cil managed" FrameworkAlternate="netframework-4.5.1" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityId(System.Int32,System.Guid,System.Object[])" FrameworkAlternate="netframework-4.5.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WriteEventWithRelatedActivityId (eventId As Integer, childActivityID As Guid, ParamArray args As Object())" FrameworkAlternate="netframework-4.5.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEventWithRelatedActivityId(int eventId, Guid childActivityID, ... cli::array &lt;System::Object ^&gt; ^ args);" FrameworkAlternate="netframework-4.5.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -2614,13 +2867,19 @@ class AnotherEventSource : EventSource {
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
+        </Attribute>
+      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="eventId" Type="System.Int32" />
-        <Parameter Name="relatedActivityId" Type="System.Guid" />
-        <Parameter Name="args" Type="System.Object[]">
+        <Parameter Name="eventId" Type="System.Int32" Index="0" />
+        <Parameter Name="relatedActivityId" Type="System.Guid" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+        <Parameter Name="childActivityID" Type="System.Guid" Index="1" FrameworkAlternate="netframework-4.5.1" />
+        <Parameter Name="args" Type="System.Object[]" Index="2">
           <Attributes>
             <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
@@ -2631,6 +2890,7 @@ class AnotherEventSource : EventSource {
       <Docs>
         <param name="eventId">An identifier that uniquely identifies this event within the <see cref="T:System.Diagnostics.Tracing.EventSource" />.</param>
         <param name="relatedActivityId">The related activity identifier.</param>
+        <param name="childActivityID">To be added.</param>
         <param name="args">An array of objects that contain data about the event.</param>
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
   
@@ -2665,9 +2925,15 @@ class AnotherEventSource : EventSource {
       </Docs>
     </Member>
     <Member MemberName="WriteEventWithRelatedActivityIdCore">
-      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityIdCore (int eventId, Guid* relatedActivityId, int eventDataCount, System.Diagnostics.Tracing.EventSource.EventData* data);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventWithRelatedActivityIdCore(int32 eventId, valuetype System.Guid* relatedActivityId, int32 eventDataCount, valuetype System.Diagnostics.Tracing.EventSource/EventData* data) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)" />
+      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityIdCore (int eventId, Guid* relatedActivityId, int eventDataCount, System.Diagnostics.Tracing.EventSource.EventData* data);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventWithRelatedActivityIdCore(int32 eventId, valuetype System.Guid* relatedActivityId, int32 eventDataCount, valuetype System.Diagnostics.Tracing.EventSource/EventData* data) cil managed" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="F#" Value="member this.WriteEventWithRelatedActivityIdCore : int * nativeptr&lt;Guid&gt; * int * nativeptr&lt;System.Diagnostics.Tracing.EventSource.EventData&gt; -&gt; unit" Usage="eventSource.WriteEventWithRelatedActivityIdCore (eventId, relatedActivityId, eventDataCount, data)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEventWithRelatedActivityIdCore(int eventId, Guid* relatedActivityId, int eventDataCount, System::Diagnostics::Tracing::EventSource::EventData* data);" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+      <MemberSignature Language="C#" Value="protected void WriteEventWithRelatedActivityIdCore (int eventId, Guid* childActivityID, int eventDataCount, System.Diagnostics.Tracing.EventSource.EventData* data);" FrameworkAlternate="netframework-4.5.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WriteEventWithRelatedActivityIdCore(int32 eventId, valuetype System.Guid* childActivityID, int32 eventDataCount, valuetype System.Diagnostics.Tracing.EventSource/EventData* data) cil managed" FrameworkAlternate="netframework-4.5.1" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventSource.WriteEventWithRelatedActivityIdCore(System.Int32,System.Guid*,System.Int32,System.Diagnostics.Tracing.EventSource.EventData*)" FrameworkAlternate="netframework-4.5.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WriteEventWithRelatedActivityIdCore(int eventId, Guid* childActivityID, int eventDataCount, System::Diagnostics::Tracing::EventSource::EventData* data);" FrameworkAlternate="netframework-4.5.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -2689,19 +2955,24 @@ class AnotherEventSource : EventSource {
         <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.Security.SecurityCritical</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="eventId" Type="System.Int32" />
-        <Parameter Name="relatedActivityId" Type="System.Guid*" />
-        <Parameter Name="eventDataCount" Type="System.Int32" />
-        <Parameter Name="data" Type="System.Diagnostics.Tracing.EventSource+EventData*" />
+        <Parameter Name="eventId" Type="System.Int32" Index="0" />
+        <Parameter Name="relatedActivityId" Type="System.Guid*" Index="1" FrameworkAlternate="netcore-1.0;netcore-1.1;netcore-2.0;netframework-4.5" />
+        <Parameter Name="childActivityID" Type="System.Guid*" Index="1" FrameworkAlternate="netframework-4.5.1" />
+        <Parameter Name="eventDataCount" Type="System.Int32" Index="2" />
+        <Parameter Name="data" Type="System.Diagnostics.Tracing.EventSource+EventData*" Index="3" />
       </Parameters>
       <Docs>
         <param name="eventId">An identifier that uniquely identifies this event within the <see cref="T:System.Diagnostics.Tracing.EventSource" />.</param>
         <param name="relatedActivityId">A pointer to the GUID of the related activity ID.</param>
+        <param name="childActivityID">To be added.</param>
         <param name="eventDataCount">The number of items in the <c>data</c> field.</param>
         <param name="data">A pointer to the first item in the event data field.</param>
         <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
@@ -2735,82 +3006,5 @@ class AnotherEventSource : EventSource {
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetCurrentThreadActivityId">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>[Supported in the .NET Framework 4.5.1 and later versions]  
-  
- Sets the activity ID on the current thread.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GenerateManifest">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a string of the XML manifest that is associated with the current event source.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases all resources used by the current instance of the <see cref="T:System.Diagnostics.Tracing.EventSource" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes an event.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsEnabled">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the current event source is enabled.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

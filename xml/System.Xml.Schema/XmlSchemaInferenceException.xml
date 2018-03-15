@@ -1,7 +1,10 @@
-<Type Name="XmlSchemaInferenceException" FullName="System.Xml.Schema.XmlSchemaInferenceException">
+﻿<Type Name="XmlSchemaInferenceException" FullName="System.Xml.Schema.XmlSchemaInferenceException">
   <TypeSignature Language="C#" Value="public class XmlSchemaInferenceException : System.Xml.Schema.XmlSchemaException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit XmlSchemaInferenceException extends System.Xml.Schema.XmlSchemaException" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaInferenceException" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaInferenceException&#xA;Inherits XmlSchemaException" />
+  <TypeSignature Language="F#" Value="type XmlSchemaInferenceException = class&#xA;    inherit XmlSchemaException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaInferenceException : System::Xml::Schema::XmlSchemaException" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,10 +28,22 @@
     <altmember cref="T:System.Xml.Schema.XmlSchemaInference" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaInferenceException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlSchemaInferenceException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaInferenceException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaInferenceException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -53,6 +68,9 @@
       <MemberSignature Language="C#" Value="public XmlSchemaInferenceException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaInferenceException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Schema.XmlSchemaInferenceException : string -&gt; System.Xml.Schema.XmlSchemaInferenceException" Usage="new System.Xml.Schema.XmlSchemaInferenceException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaInferenceException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -80,6 +98,9 @@
       <MemberSignature Language="C#" Value="protected XmlSchemaInferenceException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaInferenceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Schema.XmlSchemaInferenceException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Xml.Schema.XmlSchemaInferenceException" Usage="new System.Xml.Schema.XmlSchemaInferenceException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XmlSchemaInferenceException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -118,6 +139,9 @@
       <MemberSignature Language="C#" Value="public XmlSchemaInferenceException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaInferenceException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Schema.XmlSchemaInferenceException : string * Exception -&gt; System.Xml.Schema.XmlSchemaInferenceException" Usage="new System.Xml.Schema.XmlSchemaInferenceException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaInferenceException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -147,6 +171,9 @@
       <MemberSignature Language="C#" Value="public XmlSchemaInferenceException (string message, Exception innerException, int lineNumber, int linePosition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException, int32 lineNumber, int32 linePosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaInferenceException.#ctor(System.String,System.Exception,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, lineNumber As Integer, linePosition As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Schema.XmlSchemaInferenceException : string * Exception * int * int -&gt; System.Xml.Schema.XmlSchemaInferenceException" Usage="new System.Xml.Schema.XmlSchemaInferenceException (message, innerException, lineNumber, linePosition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaInferenceException(System::String ^ message, Exception ^ innerException, int lineNumber, int linePosition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -180,6 +207,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaInferenceException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="xmlSchemaInferenceException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -210,15 +240,5 @@
         <altmember cref="T:System.Runtime.Serialization.StreamingContext" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaInferenceException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="TraceSource" FullName="System.Diagnostics.TraceSource">
+﻿<Type Name="TraceSource" FullName="System.Diagnostics.TraceSource">
   <TypeSignature Language="C#" Value="public class TraceSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TraceSource extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.TraceSource" />
+  <TypeSignature Language="VB.NET" Value="Public Class TraceSource" />
+  <TypeSignature Language="F#" Value="type TraceSource = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TraceSource" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -105,10 +108,23 @@
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.TraceSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TraceSource (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.TraceSource : string -&gt; System.Diagnostics.TraceSource" Usage="new System.Diagnostics.TraceSource name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TraceSource(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -159,6 +175,9 @@
       <MemberSignature Language="C#" Value="public TraceSource (string name, System.Diagnostics.SourceLevels defaultLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Diagnostics.SourceLevels defaultLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.#ctor(System.String,System.Diagnostics.SourceLevels)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, defaultLevel As SourceLevels)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.TraceSource : string * System.Diagnostics.SourceLevels -&gt; System.Diagnostics.TraceSource" Usage="new System.Diagnostics.TraceSource (name, defaultLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TraceSource(System::String ^ name, System::Diagnostics::SourceLevels defaultLevel);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -203,6 +222,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringDictionary Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringDictionary Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceSource.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As StringDictionary" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Collections.Specialized.StringDictionary" Usage="System.Diagnostics.TraceSource.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringDictionary ^ Attributes { System::Collections::Specialized::StringDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -256,6 +278,9 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="traceSource.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -300,6 +325,9 @@
       <MemberSignature Language="C#" Value="public void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Flush ()" />
+      <MemberSignature Language="F#" Value="member this.Flush : unit -&gt; unit" Usage="traceSource.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -341,9 +369,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetSupportedAttributes">
-      <MemberSignature Language="C#" Value="protected virtual string[] GetSupportedAttributes ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual string[] GetSupportedAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string[] GetSupportedAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.GetSupportedAttributes" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetSupportedAttributes () As String()" />
+      <MemberSignature Language="F#" Value="abstract member GetSupportedAttributes : unit -&gt; string[]&#xA;override this.GetSupportedAttributes : unit -&gt; string[]" Usage="traceSource.GetSupportedAttributes " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetSupportedAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -390,6 +421,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.TraceListenerCollection Listeners { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.TraceListenerCollection Listeners" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceSource.Listeners" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Listeners As TraceListenerCollection" />
+      <MemberSignature Language="F#" Value="member this.Listeners : System.Diagnostics.TraceListenerCollection" Usage="System.Diagnostics.TraceSource.Listeners" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::TraceListenerCollection ^ Listeners { System::Diagnostics::TraceListenerCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -426,6 +460,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceSource.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Diagnostics.TraceSource.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -482,6 +519,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.SourceSwitch Switch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.SourceSwitch Switch" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.TraceSource.Switch" />
+      <MemberSignature Language="VB.NET" Value="Public Property Switch As SourceSwitch" />
+      <MemberSignature Language="F#" Value="member this.Switch : System.Diagnostics.SourceSwitch with get, set" Usage="System.Diagnostics.TraceSource.Switch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::SourceSwitch ^ Switch { System::Diagnostics::SourceSwitch ^ get(); void set(System::Diagnostics::SourceSwitch ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -518,10 +558,23 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceData">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace data to the trace listeners in the <see cref="P:System.Diagnostics.TraceSource.Listeners" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceData">
       <MemberSignature Language="C#" Value="public void TraceData (System.Diagnostics.TraceEventType eventType, int id, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TraceData(valuetype System.Diagnostics.TraceEventType eventType, int32 id, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceData(System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TraceData (eventType As TraceEventType, id As Integer, data As Object)" />
+      <MemberSignature Language="F#" Value="member this.TraceData : System.Diagnostics.TraceEventType * int * obj -&gt; unit" Usage="traceSource.TraceData (eventType, id, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceData(System::Diagnostics::TraceEventType eventType, int id, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -583,6 +636,9 @@
       <MemberSignature Language="C#" Value="public void TraceData (System.Diagnostics.TraceEventType eventType, int id, params object[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TraceData(valuetype System.Diagnostics.TraceEventType eventType, int32 id, object[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceData(System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TraceData (eventType As TraceEventType, id As Integer, ParamArray data As Object())" />
+      <MemberSignature Language="F#" Value="member this.TraceData : System.Diagnostics.TraceEventType * int * obj[] -&gt; unit" Usage="traceSource.TraceData (eventType, id, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceData(System::Diagnostics::TraceEventType eventType, int id, ... cli::array &lt;System::Object ^&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -638,10 +694,23 @@
         <exception cref="T:System.ObjectDisposedException">An attempt was made to trace an event during finalization.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a trace event message to the trace listeners in the <see cref="P:System.Diagnostics.TraceSource.Listeners" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceEvent">
       <MemberSignature Language="C#" Value="public void TraceEvent (System.Diagnostics.TraceEventType eventType, int id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TraceEvent(valuetype System.Diagnostics.TraceEventType eventType, int32 id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TraceEvent (eventType As TraceEventType, id As Integer)" />
+      <MemberSignature Language="F#" Value="member this.TraceEvent : System.Diagnostics.TraceEventType * int -&gt; unit" Usage="traceSource.TraceEvent (eventType, id)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceEvent(System::Diagnostics::TraceEventType eventType, int id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -703,6 +772,9 @@
       <MemberSignature Language="C#" Value="public void TraceEvent (System.Diagnostics.TraceEventType eventType, int id, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TraceEvent(valuetype System.Diagnostics.TraceEventType eventType, int32 id, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TraceEvent (eventType As TraceEventType, id As Integer, message As String)" />
+      <MemberSignature Language="F#" Value="member this.TraceEvent : System.Diagnostics.TraceEventType * int * string -&gt; unit" Usage="traceSource.TraceEvent (eventType, id, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceEvent(System::Diagnostics::TraceEventType eventType, int id, System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -766,6 +838,9 @@
       <MemberSignature Language="C#" Value="public void TraceEvent (System.Diagnostics.TraceEventType eventType, int id, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TraceEvent(valuetype System.Diagnostics.TraceEventType eventType, int32 id, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceEvent(System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TraceEvent (eventType As TraceEventType, id As Integer, format As String, ParamArray args As Object())" />
+      <MemberSignature Language="F#" Value="member this.TraceEvent : System.Diagnostics.TraceEventType * int * string * obj[] -&gt; unit" Usage="traceSource.TraceEvent (eventType, id, format, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceEvent(System::Diagnostics::TraceEventType eventType, int id, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -843,10 +918,23 @@
         <exception cref="T:System.ObjectDisposedException">An attempt was made to trace an event during finalization.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceInformation">
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an informational message to the trace listeners in the <see cref="P:System.Diagnostics.TraceSource.Listeners" /> collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceInformation">
       <MemberSignature Language="C#" Value="public void TraceInformation (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TraceInformation(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceInformation(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TraceInformation (message As String)" />
+      <MemberSignature Language="F#" Value="member this.TraceInformation : string -&gt; unit" Usage="traceSource.TraceInformation message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceInformation(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -893,6 +981,9 @@
       <MemberSignature Language="C#" Value="public void TraceInformation (string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TraceInformation(string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceInformation(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TraceInformation (format As String, ParamArray args As Object())" />
+      <MemberSignature Language="F#" Value="member this.TraceInformation : string * obj[] -&gt; unit" Usage="traceSource.TraceInformation (format, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceInformation(System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
@@ -957,6 +1048,9 @@
       <MemberSignature Language="C#" Value="public void TraceTransfer (int id, string message, Guid relatedActivityId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TraceTransfer(int32 id, string message, valuetype System.Guid relatedActivityId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.TraceSource.TraceTransfer(System.Int32,System.String,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TraceTransfer (id As Integer, message As String, relatedActivityId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.TraceTransfer : int * string * Guid -&gt; unit" Usage="traceSource.TraceTransfer (id, message, relatedActivityId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TraceTransfer(int id, System::String ^ message, Guid relatedActivityId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1004,45 +1098,5 @@
         <altmember cref="T:System.Diagnostics.DelimitedListTraceListener" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="TraceEvent">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a trace event message to the trace listeners in the <see cref="P:System.Diagnostics.TraceSource.Listeners" /> collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.TraceSource" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TraceInformation">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes an informational message to the trace listeners in the <see cref="P:System.Diagnostics.TraceSource.Listeners" /> collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TraceData">
-      <AssemblyInfo>
-        <AssemblyName>System.Diagnostics.TraceSource</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes trace data to the trace listeners in the <see cref="P:System.Diagnostics.TraceSource.Listeners" /> collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

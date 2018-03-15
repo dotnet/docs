@@ -1,7 +1,10 @@
-<Type Name="SqlWorkflowInstanceStore" FullName="System.Activities.DurableInstancing.SqlWorkflowInstanceStore">
+﻿<Type Name="SqlWorkflowInstanceStore" FullName="System.Activities.DurableInstancing.SqlWorkflowInstanceStore">
   <TypeSignature Language="C#" Value="public sealed class SqlWorkflowInstanceStore : System.Runtime.DurableInstancing.InstanceStore" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlWorkflowInstanceStore extends System.Runtime.DurableInstancing.InstanceStore" />
   <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.SqlWorkflowInstanceStore" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlWorkflowInstanceStore&#xA;Inherits InstanceStore" />
+  <TypeSignature Language="F#" Value="type SqlWorkflowInstanceStore = class&#xA;    inherit InstanceStore" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlWorkflowInstanceStore sealed : System::Runtime::DurableInstancing::InstanceStore" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +31,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.DurableInstancing.SqlWorkflowInstanceStore" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SqlWorkflowInstanceStore ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlWorkflowInstanceStore();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -47,6 +61,9 @@
       <MemberSignature Language="C#" Value="public SqlWorkflowInstanceStore (string connectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string connectionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (connectionString As String)" />
+      <MemberSignature Language="F#" Value="new System.Activities.DurableInstancing.SqlWorkflowInstanceStore : string -&gt; System.Activities.DurableInstancing.SqlWorkflowInstanceStore" Usage="new System.Activities.DurableInstancing.SqlWorkflowInstanceStore connectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlWorkflowInstanceStore(System::String ^ connectionString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -62,9 +79,12 @@
       </Docs>
     </Member>
     <Member MemberName="BeginTryCommand">
-      <MemberSignature Language="C#" Value="protected override IAsyncResult BeginTryCommand (System.Runtime.DurableInstancing.InstancePersistenceContext context, System.Runtime.DurableInstancing.InstancePersistenceCommand command, TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="C#" Value="protected internal override IAsyncResult BeginTryCommand (System.Runtime.DurableInstancing.InstancePersistenceContext context, System.Runtime.DurableInstancing.InstancePersistenceCommand command, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.IAsyncResult BeginTryCommand(class System.Runtime.DurableInstancing.InstancePersistenceContext context, class System.Runtime.DurableInstancing.InstancePersistenceCommand command, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.BeginTryCommand(System.Runtime.DurableInstancing.InstancePersistenceContext,System.Runtime.DurableInstancing.InstancePersistenceCommand,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function BeginTryCommand (context As InstancePersistenceContext, command As InstancePersistenceCommand, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="override this.BeginTryCommand : System.Runtime.DurableInstancing.InstancePersistenceContext * System.Runtime.DurableInstancing.InstancePersistenceCommand * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="sqlWorkflowInstanceStore.BeginTryCommand (context, command, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override IAsyncResult ^ BeginTryCommand(System::Runtime::DurableInstancing::InstancePersistenceContext ^ context, System::Runtime::DurableInstancing::InstancePersistenceCommand ^ command, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -95,6 +115,9 @@
       <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.ConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Activities.DurableInstancing.SqlWorkflowInstanceStore.ConnectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -110,9 +133,12 @@
       </Docs>
     </Member>
     <Member MemberName="EndTryCommand">
-      <MemberSignature Language="C#" Value="protected override bool EndTryCommand (IAsyncResult result);" />
+      <MemberSignature Language="C#" Value="protected internal override bool EndTryCommand (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool EndTryCommand(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.EndTryCommand(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function EndTryCommand (result As IAsyncResult) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.EndTryCommand : IAsyncResult -&gt; bool" Usage="sqlWorkflowInstanceStore.EndTryCommand result" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool EndTryCommand(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -135,6 +161,9 @@
       <MemberSignature Language="C#" Value="public bool EnqueueRunCommands { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnqueueRunCommands" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.EnqueueRunCommands" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnqueueRunCommands As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnqueueRunCommands : bool with get, set" Usage="System.Activities.DurableInstancing.SqlWorkflowInstanceStore.EnqueueRunCommands" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnqueueRunCommands { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -154,6 +183,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan HostLockRenewalPeriod { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan HostLockRenewalPeriod" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.HostLockRenewalPeriod" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostLockRenewalPeriod As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.HostLockRenewalPeriod : TimeSpan with get, set" Usage="System.Activities.DurableInstancing.SqlWorkflowInstanceStore.HostLockRenewalPeriod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan HostLockRenewalPeriod { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -186,6 +218,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.DurableInstancing.InstanceCompletionAction InstanceCompletionAction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.DurableInstancing.InstanceCompletionAction InstanceCompletionAction" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceCompletionAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceCompletionAction As InstanceCompletionAction" />
+      <MemberSignature Language="F#" Value="member this.InstanceCompletionAction : System.Activities.DurableInstancing.InstanceCompletionAction with get, set" Usage="System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceCompletionAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DurableInstancing::InstanceCompletionAction InstanceCompletionAction { System::Activities::DurableInstancing::InstanceCompletionAction get(); void set(System::Activities::DurableInstancing::InstanceCompletionAction value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -218,6 +253,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.DurableInstancing.InstanceEncodingOption InstanceEncodingOption { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.DurableInstancing.InstanceEncodingOption InstanceEncodingOption" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceEncodingOption" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceEncodingOption As InstanceEncodingOption" />
+      <MemberSignature Language="F#" Value="member this.InstanceEncodingOption : System.Activities.DurableInstancing.InstanceEncodingOption with get, set" Usage="System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceEncodingOption" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DurableInstancing::InstanceEncodingOption InstanceEncodingOption { System::Activities::DurableInstancing::InstanceEncodingOption get(); void set(System::Activities::DurableInstancing::InstanceEncodingOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -250,6 +288,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.DurableInstancing.InstanceLockedExceptionAction InstanceLockedExceptionAction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.DurableInstancing.InstanceLockedExceptionAction InstanceLockedExceptionAction" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceLockedExceptionAction" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceLockedExceptionAction As InstanceLockedExceptionAction" />
+      <MemberSignature Language="F#" Value="member this.InstanceLockedExceptionAction : System.Activities.DurableInstancing.InstanceLockedExceptionAction with get, set" Usage="System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceLockedExceptionAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::DurableInstancing::InstanceLockedExceptionAction InstanceLockedExceptionAction { System::Activities::DurableInstancing::InstanceLockedExceptionAction get(); void set(System::Activities::DurableInstancing::InstanceLockedExceptionAction value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -288,6 +329,9 @@
       <MemberSignature Language="C#" Value="public int MaxConnectionRetries { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConnectionRetries" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.MaxConnectionRetries" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxConnectionRetries As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxConnectionRetries : int with get, set" Usage="System.Activities.DurableInstancing.SqlWorkflowInstanceStore.MaxConnectionRetries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConnectionRetries { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -306,6 +350,8 @@
       <MemberSignature Language="C#" Value="protected override void OnFreeInstanceHandle (System.Runtime.DurableInstancing.InstanceHandle instanceHandle, object userContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnFreeInstanceHandle(class System.Runtime.DurableInstancing.InstanceHandle instanceHandle, object userContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.OnFreeInstanceHandle(System.Runtime.DurableInstancing.InstanceHandle,System.Object)" />
+      <MemberSignature Language="F#" Value="override this.OnFreeInstanceHandle : System.Runtime.DurableInstancing.InstanceHandle * obj -&gt; unit" Usage="sqlWorkflowInstanceStore.OnFreeInstanceHandle (instanceHandle, userContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFreeInstanceHandle(System::Runtime::DurableInstancing::InstanceHandle ^ instanceHandle, System::Object ^ userContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -329,6 +375,8 @@
       <MemberSignature Language="C#" Value="protected override object OnNewInstanceHandle (System.Runtime.DurableInstancing.InstanceHandle instanceHandle);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object OnNewInstanceHandle(class System.Runtime.DurableInstancing.InstanceHandle instanceHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.OnNewInstanceHandle(System.Runtime.DurableInstancing.InstanceHandle)" />
+      <MemberSignature Language="F#" Value="override this.OnNewInstanceHandle : System.Runtime.DurableInstancing.InstanceHandle -&gt; obj" Usage="sqlWorkflowInstanceStore.OnNewInstanceHandle instanceHandle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ OnNewInstanceHandle(System::Runtime::DurableInstancing::InstanceHandle ^ instanceHandle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -351,6 +399,9 @@
       <MemberSignature Language="C#" Value="public void Promote (string name, System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XName&gt; promoteAsVariant, System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XName&gt; promoteAsBinary);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Promote(string name, class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XName&gt; promoteAsVariant, class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XName&gt; promoteAsBinary) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.Promote(System.String,System.Collections.Generic.IEnumerable{System.Xml.Linq.XName},System.Collections.Generic.IEnumerable{System.Xml.Linq.XName})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Promote (name As String, promoteAsVariant As IEnumerable(Of XName), promoteAsBinary As IEnumerable(Of XName))" />
+      <MemberSignature Language="F#" Value="member this.Promote : string * seq&lt;System.Xml.Linq.XName&gt; * seq&lt;System.Xml.Linq.XName&gt; -&gt; unit" Usage="sqlWorkflowInstanceStore.Promote (name, promoteAsVariant, promoteAsBinary)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Promote(System::String ^ name, System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XName ^&gt; ^ promoteAsVariant, System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XName ^&gt; ^ promoteAsBinary);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -385,6 +436,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan RunnableInstancesDetectionPeriod { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan RunnableInstancesDetectionPeriod" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.RunnableInstancesDetectionPeriod" />
+      <MemberSignature Language="VB.NET" Value="Public Property RunnableInstancesDetectionPeriod As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.RunnableInstancesDetectionPeriod : TimeSpan with get, set" Usage="System.Activities.DurableInstancing.SqlWorkflowInstanceStore.RunnableInstancesDetectionPeriod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan RunnableInstancesDetectionPeriod { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -425,14 +479,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.DurableInstancing.SqlWorkflowInstanceStore" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

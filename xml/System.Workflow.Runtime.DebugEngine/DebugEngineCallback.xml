@@ -1,7 +1,10 @@
-<Type Name="DebugEngineCallback" FullName="System.Workflow.Runtime.DebugEngine.DebugEngineCallback">
+﻿<Type Name="DebugEngineCallback" FullName="System.Workflow.Runtime.DebugEngine.DebugEngineCallback">
   <TypeSignature Language="C#" Value="public delegate void DebugEngineCallback();" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DebugEngineCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.DebugEngineCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DebugEngineCallback()" />
+  <TypeSignature Language="F#" Value="type DebugEngineCallback = delegate of unit -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DebugEngineCallback();" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

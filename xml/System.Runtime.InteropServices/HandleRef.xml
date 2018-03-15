@@ -1,7 +1,10 @@
-<Type Name="HandleRef" FullName="System.Runtime.InteropServices.HandleRef">
+﻿<Type Name="HandleRef" FullName="System.Runtime.InteropServices.HandleRef">
   <TypeSignature Language="C#" Value="public struct HandleRef" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit HandleRef extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.HandleRef" />
+  <TypeSignature Language="VB.NET" Value="Public Structure HandleRef" />
+  <TypeSignature Language="F#" Value="type HandleRef = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class HandleRef" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +53,9 @@
       <MemberSignature Language="C#" Value="public HandleRef (object wrapper, IntPtr handle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object wrapper, native int handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.HandleRef.#ctor(System.Object,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (wrapper As Object, handle As IntPtr)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.HandleRef : obj * nativeint -&gt; System.Runtime.InteropServices.HandleRef" Usage="new System.Runtime.InteropServices.HandleRef (wrapper, handle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HandleRef(System::Object ^ wrapper, IntPtr handle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -79,6 +85,9 @@
       <MemberSignature Language="C#" Value="public IntPtr Handle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Handle" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.HandleRef.Handle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.Handle : nativeint" Usage="System.Runtime.InteropServices.HandleRef.Handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Handle { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -106,6 +115,9 @@
       <MemberSignature Language="C#" Value="public static explicit operator IntPtr (System.Runtime.InteropServices.HandleRef value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Explicit(valuetype System.Runtime.InteropServices.HandleRef value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.HandleRef.op_Explicit(System.Runtime.InteropServices.HandleRef)~System.IntPtr" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As HandleRef) As IntPtr" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Runtime.InteropServices.HandleRef -&gt; nativeint" Usage="System.Runtime.InteropServices.HandleRef.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator IntPtr(System::Runtime::InteropServices::HandleRef value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -139,6 +151,9 @@
       <MemberSignature Language="C#" Value="public static IntPtr ToIntPtr (System.Runtime.InteropServices.HandleRef value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int ToIntPtr(valuetype System.Runtime.InteropServices.HandleRef value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.HandleRef.ToIntPtr(System.Runtime.InteropServices.HandleRef)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToIntPtr (value As HandleRef) As IntPtr" />
+      <MemberSignature Language="F#" Value="static member ToIntPtr : System.Runtime.InteropServices.HandleRef -&gt; nativeint" Usage="System.Runtime.InteropServices.HandleRef.ToIntPtr value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr ToIntPtr(System::Runtime::InteropServices::HandleRef value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -170,6 +185,9 @@
       <MemberSignature Language="C#" Value="public object Wrapper { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Wrapper" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.HandleRef.Wrapper" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Wrapper As Object" />
+      <MemberSignature Language="F#" Value="member this.Wrapper : obj" Usage="System.Runtime.InteropServices.HandleRef.Wrapper" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Wrapper { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

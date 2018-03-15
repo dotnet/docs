@@ -1,7 +1,10 @@
-<Type Name="PageQualitativeResolution" FullName="System.Printing.PageQualitativeResolution">
+﻿<Type Name="PageQualitativeResolution" FullName="System.Printing.PageQualitativeResolution">
   <TypeSignature Language="C#" Value="public enum PageQualitativeResolution" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PageQualitativeResolution extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PageQualitativeResolution" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PageQualitativeResolution" />
+  <TypeSignature Language="F#" Value="type PageQualitativeResolution = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PageQualitativeResolution" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageQualitativeResolution Default = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 1" Usage="System.Printing.PageQualitativeResolution.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -36,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PageQualitativeResolution</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The default qualitative resolution for the printer.</summary>
       </Docs>
@@ -44,6 +51,9 @@
       <MemberSignature Language="C#" Value="Draft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageQualitativeResolution Draft = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.Draft" />
+      <MemberSignature Language="VB.NET" Value="Draft" />
+      <MemberSignature Language="F#" Value="Draft = 2" Usage="System.Printing.PageQualitativeResolution.Draft" />
+      <MemberSignature Language="C++ CLI" Value="Draft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PageQualitativeResolution</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Draft-level quality, which is 300 dpi for most printers.</summary>
       </Docs>
@@ -60,6 +71,9 @@
       <MemberSignature Language="C#" Value="High" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageQualitativeResolution High = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.High" />
+      <MemberSignature Language="VB.NET" Value="High" />
+      <MemberSignature Language="F#" Value="High = 3" Usage="System.Printing.PageQualitativeResolution.High" />
+      <MemberSignature Language="C++ CLI" Value="High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -68,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PageQualitativeResolution</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>High quality, which is 1200 dpi or greater for most printers.</summary>
       </Docs>
@@ -76,6 +91,9 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageQualitativeResolution Normal = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 4" Usage="System.Printing.PageQualitativeResolution.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -84,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PageQualitativeResolution</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Normal quality, which is 600 dpi for most printers.</summary>
       </Docs>
@@ -92,6 +111,9 @@
       <MemberSignature Language="C#" Value="Other" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageQualitativeResolution Other = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.Other" />
+      <MemberSignature Language="VB.NET" Value="Other" />
+      <MemberSignature Language="F#" Value="Other = 5" Usage="System.Printing.PageQualitativeResolution.Other" />
+      <MemberSignature Language="C++ CLI" Value="Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -100,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PageQualitativeResolution</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Other quality.</summary>
       </Docs>
@@ -108,6 +131,9 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.PageQualitativeResolution Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.PageQualitativeResolution.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.PageQualitativeResolution.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -116,6 +142,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.PageQualitativeResolution</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
       </Docs>

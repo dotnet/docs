@@ -1,7 +1,10 @@
-<Type Name="SecurityTokenValidatedEventArgs" FullName="System.IdentityModel.Services.SecurityTokenValidatedEventArgs">
+﻿<Type Name="SecurityTokenValidatedEventArgs" FullName="System.IdentityModel.Services.SecurityTokenValidatedEventArgs">
   <TypeSignature Language="C#" Value="public class SecurityTokenValidatedEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityTokenValidatedEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SecurityTokenValidatedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenValidatedEventArgs&#xA;Inherits CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type SecurityTokenValidatedEventArgs = class&#xA;    inherit CancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenValidatedEventArgs : System::ComponentModel::CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public SecurityTokenValidatedEventArgs (System.Security.Claims.ClaimsPrincipal claimsPrincipal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Claims.ClaimsPrincipal claimsPrincipal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SecurityTokenValidatedEventArgs.#ctor(System.Security.Claims.ClaimsPrincipal)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SecurityTokenValidatedEventArgs : System.Security.Claims.ClaimsPrincipal -&gt; System.IdentityModel.Services.SecurityTokenValidatedEventArgs" Usage="new System.IdentityModel.Services.SecurityTokenValidatedEventArgs claimsPrincipal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenValidatedEventArgs(System::Security::Claims::ClaimsPrincipal ^ claimsPrincipal);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -54,6 +59,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Claims.ClaimsPrincipal ClaimsPrincipal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Claims.ClaimsPrincipal ClaimsPrincipal" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SecurityTokenValidatedEventArgs.ClaimsPrincipal" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClaimsPrincipal As ClaimsPrincipal" />
+      <MemberSignature Language="F#" Value="member this.ClaimsPrincipal : System.Security.Claims.ClaimsPrincipal with get, set" Usage="System.IdentityModel.Services.SecurityTokenValidatedEventArgs.ClaimsPrincipal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Claims::ClaimsPrincipal ^ ClaimsPrincipal { System::Security::Claims::ClaimsPrincipal ^ get(); void set(System::Security::Claims::ClaimsPrincipal ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

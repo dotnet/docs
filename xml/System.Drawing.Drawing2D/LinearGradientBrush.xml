@@ -1,7 +1,10 @@
-<Type Name="LinearGradientBrush" FullName="System.Drawing.Drawing2D.LinearGradientBrush">
+﻿<Type Name="LinearGradientBrush" FullName="System.Drawing.Drawing2D.LinearGradientBrush">
   <TypeSignature Language="C#" Value="public sealed class LinearGradientBrush : System.Drawing.Brush" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LinearGradientBrush extends System.Drawing.Brush" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.LinearGradientBrush" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LinearGradientBrush&#xA;Inherits Brush" />
+  <TypeSignature Language="F#" Value="type LinearGradientBrush = class&#xA;    inherit Brush" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LinearGradientBrush sealed : System::Drawing::Brush" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,10 +41,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.LinearGradientBrush" /> class with the specified points and colors.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Drawing.Point point1, System.Drawing.Point point2, System.Drawing.Color color1, System.Drawing.Color color2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Point point1, valuetype System.Drawing.Point point2, valuetype System.Drawing.Color color1, valuetype System.Drawing.Color color2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.#ctor(System.Drawing.Point,System.Drawing.Point,System.Drawing.Color,System.Drawing.Color)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (point1 As Point, point2 As Point, color1 As Color, color2 As Color)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.LinearGradientBrush : System.Drawing.Point * System.Drawing.Point * System.Drawing.Color * System.Drawing.Color -&gt; System.Drawing.Drawing2D.LinearGradientBrush" Usage="new System.Drawing.Drawing2D.LinearGradientBrush (point1, point2, color1, color2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearGradientBrush(System::Drawing::Point point1, System::Drawing::Point point2, System::Drawing::Color color1, System::Drawing::Color color2);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Drawing.PointF point1, System.Drawing.PointF point2, System.Drawing.Color color1, System.Drawing.Color color2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.PointF point1, valuetype System.Drawing.PointF point2, valuetype System.Drawing.Color color1, valuetype System.Drawing.Color color2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.#ctor(System.Drawing.PointF,System.Drawing.PointF,System.Drawing.Color,System.Drawing.Color)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (point1 As PointF, point2 As PointF, color1 As Color, color2 As Color)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.LinearGradientBrush : System.Drawing.PointF * System.Drawing.PointF * System.Drawing.Color * System.Drawing.Color -&gt; System.Drawing.Drawing2D.LinearGradientBrush" Usage="new System.Drawing.Drawing2D.LinearGradientBrush (point1, point2, color1, color2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearGradientBrush(System::Drawing::PointF point1, System::Drawing::PointF point2, System::Drawing::Color color1, System::Drawing::Color color2);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -90,6 +108,8 @@
       <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Drawing.Rectangle rect, System.Drawing.Color color1, System.Drawing.Color color2, System.Drawing.Drawing2D.LinearGradientMode linearGradientMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Rectangle rect, valuetype System.Drawing.Color color1, valuetype System.Drawing.Color color2, valuetype System.Drawing.Drawing2D.LinearGradientMode linearGradientMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.#ctor(System.Drawing.Rectangle,System.Drawing.Color,System.Drawing.Color,System.Drawing.Drawing2D.LinearGradientMode)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.LinearGradientBrush : System.Drawing.Rectangle * System.Drawing.Color * System.Drawing.Color * System.Drawing.Drawing2D.LinearGradientMode -&gt; System.Drawing.Drawing2D.LinearGradientBrush" Usage="new System.Drawing.Drawing2D.LinearGradientBrush (rect, color1, color2, linearGradientMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearGradientBrush(System::Drawing::Rectangle rect, System::Drawing::Color color1, System::Drawing::Color color2, System::Drawing::Drawing2D::LinearGradientMode linearGradientMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -114,6 +134,9 @@
       <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Drawing.Rectangle rect, System.Drawing.Color color1, System.Drawing.Color color2, float angle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Rectangle rect, valuetype System.Drawing.Color color1, valuetype System.Drawing.Color color2, float32 angle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.#ctor(System.Drawing.Rectangle,System.Drawing.Color,System.Drawing.Color,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (rect As Rectangle, color1 As Color, color2 As Color, angle As Single)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.LinearGradientBrush : System.Drawing.Rectangle * System.Drawing.Color * System.Drawing.Color * single -&gt; System.Drawing.Drawing2D.LinearGradientBrush" Usage="new System.Drawing.Drawing2D.LinearGradientBrush (rect, color1, color2, angle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearGradientBrush(System::Drawing::Rectangle rect, System::Drawing::Color color1, System::Drawing::Color color2, float angle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -149,6 +172,8 @@
       <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Drawing.RectangleF rect, System.Drawing.Color color1, System.Drawing.Color color2, System.Drawing.Drawing2D.LinearGradientMode linearGradientMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.RectangleF rect, valuetype System.Drawing.Color color1, valuetype System.Drawing.Color color2, valuetype System.Drawing.Drawing2D.LinearGradientMode linearGradientMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.#ctor(System.Drawing.RectangleF,System.Drawing.Color,System.Drawing.Color,System.Drawing.Drawing2D.LinearGradientMode)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.LinearGradientBrush : System.Drawing.RectangleF * System.Drawing.Color * System.Drawing.Color * System.Drawing.Drawing2D.LinearGradientMode -&gt; System.Drawing.Drawing2D.LinearGradientBrush" Usage="new System.Drawing.Drawing2D.LinearGradientBrush (rect, color1, color2, linearGradientMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearGradientBrush(System::Drawing::RectangleF rect, System::Drawing::Color color1, System::Drawing::Color color2, System::Drawing::Drawing2D::LinearGradientMode linearGradientMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -173,6 +198,9 @@
       <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Drawing.RectangleF rect, System.Drawing.Color color1, System.Drawing.Color color2, float angle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.RectangleF rect, valuetype System.Drawing.Color color1, valuetype System.Drawing.Color color2, float32 angle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.#ctor(System.Drawing.RectangleF,System.Drawing.Color,System.Drawing.Color,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (rect As RectangleF, color1 As Color, color2 As Color, angle As Single)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.LinearGradientBrush : System.Drawing.RectangleF * System.Drawing.Color * System.Drawing.Color * single -&gt; System.Drawing.Drawing2D.LinearGradientBrush" Usage="new System.Drawing.Drawing2D.LinearGradientBrush (rect, color1, color2, angle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearGradientBrush(System::Drawing::RectangleF rect, System::Drawing::Color color1, System::Drawing::Color color2, float angle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -208,6 +236,9 @@
       <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Drawing.Rectangle rect, System.Drawing.Color color1, System.Drawing.Color color2, float angle, bool isAngleScaleable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Rectangle rect, valuetype System.Drawing.Color color1, valuetype System.Drawing.Color color2, float32 angle, bool isAngleScaleable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.#ctor(System.Drawing.Rectangle,System.Drawing.Color,System.Drawing.Color,System.Single,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (rect As Rectangle, color1 As Color, color2 As Color, angle As Single, isAngleScaleable As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.LinearGradientBrush : System.Drawing.Rectangle * System.Drawing.Color * System.Drawing.Color * single * bool -&gt; System.Drawing.Drawing2D.LinearGradientBrush" Usage="new System.Drawing.Drawing2D.LinearGradientBrush (rect, color1, color2, angle, isAngleScaleable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearGradientBrush(System::Drawing::Rectangle rect, System::Drawing::Color color1, System::Drawing::Color color2, float angle, bool isAngleScaleable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -245,6 +276,9 @@
       <MemberSignature Language="C#" Value="public LinearGradientBrush (System.Drawing.RectangleF rect, System.Drawing.Color color1, System.Drawing.Color color2, float angle, bool isAngleScaleable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.RectangleF rect, valuetype System.Drawing.Color color1, valuetype System.Drawing.Color color2, float32 angle, bool isAngleScaleable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.#ctor(System.Drawing.RectangleF,System.Drawing.Color,System.Drawing.Color,System.Single,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (rect As RectangleF, color1 As Color, color2 As Color, angle As Single, isAngleScaleable As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.LinearGradientBrush : System.Drawing.RectangleF * System.Drawing.Color * System.Drawing.Color * single * bool -&gt; System.Drawing.Drawing2D.LinearGradientBrush" Usage="new System.Drawing.Drawing2D.LinearGradientBrush (rect, color1, color2, angle, isAngleScaleable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearGradientBrush(System::Drawing::RectangleF rect, System::Drawing::Color color1, System::Drawing::Color color2, float angle, bool isAngleScaleable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -282,6 +316,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.Blend Blend { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Drawing2D.Blend Blend" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.LinearGradientBrush.Blend" />
+      <MemberSignature Language="VB.NET" Value="Public Property Blend As Blend" />
+      <MemberSignature Language="F#" Value="member this.Blend : System.Drawing.Drawing2D.Blend with get, set" Usage="System.Drawing.Drawing2D.LinearGradientBrush.Blend" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Drawing2D::Blend ^ Blend { System::Drawing::Drawing2D::Blend ^ get(); void set(System::Drawing::Drawing2D::Blend ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -307,6 +344,9 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="linearGradientBrush.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -345,6 +385,9 @@
       <MemberSignature Language="C#" Value="public bool GammaCorrection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool GammaCorrection" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.LinearGradientBrush.GammaCorrection" />
+      <MemberSignature Language="VB.NET" Value="Public Property GammaCorrection As Boolean" />
+      <MemberSignature Language="F#" Value="member this.GammaCorrection : bool with get, set" Usage="System.Drawing.Drawing2D.LinearGradientBrush.GammaCorrection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GammaCorrection { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -363,6 +406,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.ColorBlend InterpolationColors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Drawing2D.ColorBlend InterpolationColors" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.LinearGradientBrush.InterpolationColors" />
+      <MemberSignature Language="VB.NET" Value="Public Property InterpolationColors As ColorBlend" />
+      <MemberSignature Language="F#" Value="member this.InterpolationColors : System.Drawing.Drawing2D.ColorBlend with get, set" Usage="System.Drawing.Drawing2D.LinearGradientBrush.InterpolationColors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Drawing2D::ColorBlend ^ InterpolationColors { System::Drawing::Drawing2D::ColorBlend ^ get(); void set(System::Drawing::Drawing2D::ColorBlend ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -390,6 +436,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color[] LinearColors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color[] LinearColors" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.LinearGradientBrush.LinearColors" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinearColors As Color()" />
+      <MemberSignature Language="F#" Value="member this.LinearColors : System.Drawing.Color[] with get, set" Usage="System.Drawing.Drawing2D.LinearGradientBrush.LinearColors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Drawing::Color&gt; ^ LinearColors { cli::array &lt;System::Drawing::Color&gt; ^ get(); void set(cli::array &lt;System::Drawing::Color&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -404,10 +453,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MultiplyTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Multiplies the <see cref="T:System.Drawing.Drawing2D.Matrix" /> that represents the local geometric transform of this <see cref="T:System.Drawing.Drawing2D.LinearGradientBrush" /> by the specified <see cref="T:System.Drawing.Drawing2D.Matrix" /> by prepending the specified <see cref="T:System.Drawing.Drawing2D.Matrix" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="MultiplyTransform">
       <MemberSignature Language="C#" Value="public void MultiplyTransform (System.Drawing.Drawing2D.Matrix matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MultiplyTransform(class System.Drawing.Drawing2D.Matrix matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.MultiplyTransform(System.Drawing.Drawing2D.Matrix)" />
+      <MemberSignature Language="F#" Value="member this.MultiplyTransform : System.Drawing.Drawing2D.Matrix -&gt; unit" Usage="linearGradientBrush.MultiplyTransform matrix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MultiplyTransform(System::Drawing::Drawing2D::Matrix ^ matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -436,6 +496,8 @@
       <MemberSignature Language="C#" Value="public void MultiplyTransform (System.Drawing.Drawing2D.Matrix matrix, System.Drawing.Drawing2D.MatrixOrder order);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MultiplyTransform(class System.Drawing.Drawing2D.Matrix matrix, valuetype System.Drawing.Drawing2D.MatrixOrder order) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.MultiplyTransform(System.Drawing.Drawing2D.Matrix,System.Drawing.Drawing2D.MatrixOrder)" />
+      <MemberSignature Language="F#" Value="member this.MultiplyTransform : System.Drawing.Drawing2D.Matrix * System.Drawing.Drawing2D.MatrixOrder -&gt; unit" Usage="linearGradientBrush.MultiplyTransform (matrix, order)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MultiplyTransform(System::Drawing::Drawing2D::Matrix ^ matrix, System::Drawing::Drawing2D::MatrixOrder order);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -480,6 +542,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.RectangleF Rectangle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.RectangleF Rectangle" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.LinearGradientBrush.Rectangle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rectangle As RectangleF" />
+      <MemberSignature Language="F#" Value="member this.Rectangle : System.Drawing.RectangleF" Usage="System.Drawing.Drawing2D.LinearGradientBrush.Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::RectangleF Rectangle { System::Drawing::RectangleF get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -505,6 +570,9 @@
       <MemberSignature Language="C#" Value="public void ResetTransform ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetTransform() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.ResetTransform" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetTransform ()" />
+      <MemberSignature Language="F#" Value="member this.ResetTransform : unit -&gt; unit" Usage="linearGradientBrush.ResetTransform " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetTransform();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -544,10 +612,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RotateTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Rotates the local geometric transform by the specified amount. This method prepends the rotation to the transform.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RotateTransform">
       <MemberSignature Language="C#" Value="public void RotateTransform (float angle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RotateTransform(float32 angle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.RotateTransform(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RotateTransform (angle As Single)" />
+      <MemberSignature Language="F#" Value="member this.RotateTransform : single -&gt; unit" Usage="linearGradientBrush.RotateTransform angle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RotateTransform(float angle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -576,6 +656,9 @@
       <MemberSignature Language="C#" Value="public void RotateTransform (float angle, System.Drawing.Drawing2D.MatrixOrder order);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RotateTransform(float32 angle, valuetype System.Drawing.Drawing2D.MatrixOrder order) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.RotateTransform(System.Single,System.Drawing.Drawing2D.MatrixOrder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RotateTransform (angle As Single, order As MatrixOrder)" />
+      <MemberSignature Language="F#" Value="member this.RotateTransform : single * System.Drawing.Drawing2D.MatrixOrder -&gt; unit" Usage="linearGradientBrush.RotateTransform (angle, order)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RotateTransform(float angle, System::Drawing::Drawing2D::MatrixOrder order);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -616,10 +699,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ScaleTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Scales the local geometric transform by the specified amounts. This method prepends the scaling matrix to the transform.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ScaleTransform">
       <MemberSignature Language="C#" Value="public void ScaleTransform (float sx, float sy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScaleTransform(float32 sx, float32 sy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.ScaleTransform(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScaleTransform (sx As Single, sy As Single)" />
+      <MemberSignature Language="F#" Value="member this.ScaleTransform : single * single -&gt; unit" Usage="linearGradientBrush.ScaleTransform (sx, sy)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScaleTransform(float sx, float sy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -650,6 +745,9 @@
       <MemberSignature Language="C#" Value="public void ScaleTransform (float sx, float sy, System.Drawing.Drawing2D.MatrixOrder order);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScaleTransform(float32 sx, float32 sy, valuetype System.Drawing.Drawing2D.MatrixOrder order) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.ScaleTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScaleTransform (sx As Single, sy As Single, order As MatrixOrder)" />
+      <MemberSignature Language="F#" Value="member this.ScaleTransform : single * single * System.Drawing.Drawing2D.MatrixOrder -&gt; unit" Usage="linearGradientBrush.ScaleTransform (sx, sy, order)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScaleTransform(float sx, float sy, System::Drawing::Drawing2D::MatrixOrder order);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -692,10 +790,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetBlendTriangularShape">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a linear gradient with a center color and a linear falloff to a single color on both ends.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetBlendTriangularShape">
       <MemberSignature Language="C#" Value="public void SetBlendTriangularShape (float focus);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBlendTriangularShape(float32 focus) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.SetBlendTriangularShape(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetBlendTriangularShape (focus As Single)" />
+      <MemberSignature Language="F#" Value="member this.SetBlendTriangularShape : single -&gt; unit" Usage="linearGradientBrush.SetBlendTriangularShape focus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBlendTriangularShape(float focus);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -729,6 +839,9 @@
       <MemberSignature Language="C#" Value="public void SetBlendTriangularShape (float focus, float scale);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBlendTriangularShape(float32 focus, float32 scale) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.SetBlendTriangularShape(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetBlendTriangularShape (focus As Single, scale As Single)" />
+      <MemberSignature Language="F#" Value="member this.SetBlendTriangularShape : single * single -&gt; unit" Usage="linearGradientBrush.SetBlendTriangularShape (focus, scale)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBlendTriangularShape(float focus, float scale);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -774,10 +887,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetSigmaBellShape">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a gradient falloff based on a bell-shaped curve.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetSigmaBellShape">
       <MemberSignature Language="C#" Value="public void SetSigmaBellShape (float focus);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSigmaBellShape(float32 focus) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.SetSigmaBellShape(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSigmaBellShape (focus As Single)" />
+      <MemberSignature Language="F#" Value="member this.SetSigmaBellShape : single -&gt; unit" Usage="linearGradientBrush.SetSigmaBellShape focus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSigmaBellShape(float focus);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -811,6 +936,9 @@
       <MemberSignature Language="C#" Value="public void SetSigmaBellShape (float focus, float scale);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSigmaBellShape(float32 focus, float32 scale) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.SetSigmaBellShape(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSigmaBellShape (focus As Single, scale As Single)" />
+      <MemberSignature Language="F#" Value="member this.SetSigmaBellShape : single * single -&gt; unit" Usage="linearGradientBrush.SetSigmaBellShape (focus, scale)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSigmaBellShape(float focus, float scale);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -860,6 +988,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.Matrix Transform { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Drawing2D.Matrix Transform" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.LinearGradientBrush.Transform" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transform As Matrix" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Drawing.Drawing2D.Matrix with get, set" Usage="System.Drawing.Drawing2D.LinearGradientBrush.Transform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Drawing2D::Matrix ^ Transform { System::Drawing::Drawing2D::Matrix ^ get(); void set(System::Drawing::Drawing2D::Matrix ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -881,10 +1012,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TranslateTransform">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Translates the local geometric transform by the specified dimensions. This method prepends the translation to the transform.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TranslateTransform">
       <MemberSignature Language="C#" Value="public void TranslateTransform (float dx, float dy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TranslateTransform(float32 dx, float32 dy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.TranslateTransform(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TranslateTransform (dx As Single, dy As Single)" />
+      <MemberSignature Language="F#" Value="member this.TranslateTransform : single * single -&gt; unit" Usage="linearGradientBrush.TranslateTransform (dx, dy)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TranslateTransform(float dx, float dy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -915,6 +1058,9 @@
       <MemberSignature Language="C#" Value="public void TranslateTransform (float dx, float dy, System.Drawing.Drawing2D.MatrixOrder order);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TranslateTransform(float32 dx, float32 dy, valuetype System.Drawing.Drawing2D.MatrixOrder order) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.LinearGradientBrush.TranslateTransform(System.Single,System.Single,System.Drawing.Drawing2D.MatrixOrder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TranslateTransform (dx As Single, dy As Single, order As MatrixOrder)" />
+      <MemberSignature Language="F#" Value="member this.TranslateTransform : single * single * System.Drawing.Drawing2D.MatrixOrder -&gt; unit" Usage="linearGradientBrush.TranslateTransform (dx, dy, order)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TranslateTransform(float dx, float dy, System::Drawing::Drawing2D::MatrixOrder order);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -965,6 +1111,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.WrapMode WrapMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.WrapMode WrapMode" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.LinearGradientBrush.WrapMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property WrapMode As WrapMode" />
+      <MemberSignature Language="F#" Value="member this.WrapMode : System.Drawing.Drawing2D.WrapMode with get, set" Usage="System.Drawing.Drawing2D.LinearGradientBrush.WrapMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Drawing2D::WrapMode WrapMode { System::Drawing::Drawing2D::WrapMode get(); void set(System::Drawing::Drawing2D::WrapMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -979,68 +1128,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.LinearGradientBrush" /> class with the specified points and colors.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetSigmaBellShape">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a gradient falloff based on a bell-shaped curve.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetBlendTriangularShape">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a linear gradient with a center color and a linear falloff to a single color on both ends.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="MultiplyTransform">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Multiplies the <see cref="T:System.Drawing.Drawing2D.Matrix" /> that represents the local geometric transform of this <see cref="T:System.Drawing.Drawing2D.LinearGradientBrush" /> by the specified <see cref="T:System.Drawing.Drawing2D.Matrix" /> by prepending the specified <see cref="T:System.Drawing.Drawing2D.Matrix" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ScaleTransform">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Scales the local geometric transform by the specified amounts. This method prepends the scaling matrix to the transform.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TranslateTransform">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Translates the local geometric transform by the specified dimensions. This method prepends the translation to the transform.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RotateTransform">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Rotates the local geometric transform by the specified amount. This method prepends the rotation to the transform.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="WorkflowDesignerColors" FullName="System.Activities.Presentation.WorkflowDesignerColors">
+﻿<Type Name="WorkflowDesignerColors" FullName="System.Activities.Presentation.WorkflowDesignerColors">
   <TypeSignature Language="C#" Value="public static class WorkflowDesignerColors" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit WorkflowDesignerColors extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.WorkflowDesignerColors" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowDesignerColors" />
+  <TypeSignature Language="F#" Value="type WorkflowDesignerColors = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowDesignerColors abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color AnnotationBackgroundGradientBeginColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color AnnotationBackgroundGradientBeginColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientBeginColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AnnotationBackgroundGradientBeginColor As Color" />
+      <MemberSignature Language="F#" Value="member this.AnnotationBackgroundGradientBeginColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientBeginColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color AnnotationBackgroundGradientBeginColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public const string AnnotationBackgroundGradientBeginColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string AnnotationBackgroundGradientBeginColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientBeginColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const AnnotationBackgroundGradientBeginColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable AnnotationBackgroundGradientBeginColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientBeginColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AnnotationBackgroundGradientBeginColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -54,6 +63,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color AnnotationBackgroundGradientEndColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color AnnotationBackgroundGradientEndColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientEndColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AnnotationBackgroundGradientEndColor As Color" />
+      <MemberSignature Language="F#" Value="member this.AnnotationBackgroundGradientEndColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientEndColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color AnnotationBackgroundGradientEndColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -72,6 +84,9 @@
       <MemberSignature Language="C#" Value="public const string AnnotationBackgroundGradientEndColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string AnnotationBackgroundGradientEndColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientEndColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const AnnotationBackgroundGradientEndColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable AnnotationBackgroundGradientEndColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientEndColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AnnotationBackgroundGradientEndColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -89,6 +104,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color AnnotationBackgroundGradientMiddleColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color AnnotationBackgroundGradientMiddleColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientMiddleColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AnnotationBackgroundGradientMiddleColor As Color" />
+      <MemberSignature Language="F#" Value="member this.AnnotationBackgroundGradientMiddleColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientMiddleColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color AnnotationBackgroundGradientMiddleColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -107,6 +125,9 @@
       <MemberSignature Language="C#" Value="public const string AnnotationBackgroundGradientMiddleColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string AnnotationBackgroundGradientMiddleColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientMiddleColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const AnnotationBackgroundGradientMiddleColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable AnnotationBackgroundGradientMiddleColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationBackgroundGradientMiddleColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AnnotationBackgroundGradientMiddleColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -124,6 +145,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color AnnotationBorderColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color AnnotationBorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.AnnotationBorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AnnotationBorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.AnnotationBorderColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationBorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color AnnotationBorderColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -142,6 +166,9 @@
       <MemberSignature Language="C#" Value="public const string AnnotationBorderColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string AnnotationBorderColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.AnnotationBorderColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const AnnotationBorderColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable AnnotationBorderColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationBorderColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AnnotationBorderColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -159,6 +186,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color AnnotationDockButtonColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color AnnotationDockButtonColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AnnotationDockButtonColor As Color" />
+      <MemberSignature Language="F#" Value="member this.AnnotationDockButtonColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color AnnotationDockButtonColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -177,6 +207,9 @@
       <MemberSignature Language="C#" Value="public const string AnnotationDockButtonColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string AnnotationDockButtonColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const AnnotationDockButtonColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable AnnotationDockButtonColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AnnotationDockButtonColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -194,6 +227,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color AnnotationDockButtonHoverBackgroundColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color AnnotationDockButtonHoverBackgroundColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverBackgroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AnnotationDockButtonHoverBackgroundColor As Color" />
+      <MemberSignature Language="F#" Value="member this.AnnotationDockButtonHoverBackgroundColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverBackgroundColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color AnnotationDockButtonHoverBackgroundColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -212,6 +248,9 @@
       <MemberSignature Language="C#" Value="public const string AnnotationDockButtonHoverBackgroundColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string AnnotationDockButtonHoverBackgroundColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverBackgroundColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const AnnotationDockButtonHoverBackgroundColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable AnnotationDockButtonHoverBackgroundColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverBackgroundColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AnnotationDockButtonHoverBackgroundColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -229,6 +268,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color AnnotationDockButtonHoverBorderColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color AnnotationDockButtonHoverBorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverBorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AnnotationDockButtonHoverBorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.AnnotationDockButtonHoverBorderColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverBorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color AnnotationDockButtonHoverBorderColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -247,6 +289,9 @@
       <MemberSignature Language="C#" Value="public const string AnnotationDockButtonHoverBorderColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string AnnotationDockButtonHoverBorderColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverBorderColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const AnnotationDockButtonHoverBorderColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable AnnotationDockButtonHoverBorderColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverBorderColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AnnotationDockButtonHoverBorderColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -264,6 +309,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color AnnotationDockButtonHoverColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color AnnotationDockButtonHoverColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AnnotationDockButtonHoverColor As Color" />
+      <MemberSignature Language="F#" Value="member this.AnnotationDockButtonHoverColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color AnnotationDockButtonHoverColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -282,6 +330,9 @@
       <MemberSignature Language="C#" Value="public const string AnnotationDockButtonHoverColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string AnnotationDockButtonHoverColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const AnnotationDockButtonHoverColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable AnnotationDockButtonHoverColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockButtonHoverColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AnnotationDockButtonHoverColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -299,6 +350,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color AnnotationDockTextColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color AnnotationDockTextColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockTextColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AnnotationDockTextColor As Color" />
+      <MemberSignature Language="F#" Value="member this.AnnotationDockTextColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockTextColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color AnnotationDockTextColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -317,6 +371,9 @@
       <MemberSignature Language="C#" Value="public const string AnnotationDockTextColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string AnnotationDockTextColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockTextColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const AnnotationDockTextColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable AnnotationDockTextColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationDockTextColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AnnotationDockTextColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -334,6 +391,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color AnnotationUndockTextColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color AnnotationUndockTextColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.AnnotationUndockTextColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AnnotationUndockTextColor As Color" />
+      <MemberSignature Language="F#" Value="member this.AnnotationUndockTextColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationUndockTextColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color AnnotationUndockTextColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -352,6 +412,9 @@
       <MemberSignature Language="C#" Value="public const string AnnotationUndockTextColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string AnnotationUndockTextColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.AnnotationUndockTextColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const AnnotationUndockTextColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable AnnotationUndockTextColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.AnnotationUndockTextColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ AnnotationUndockTextColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -369,6 +432,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ContextMenuBackgroundGradientBeginColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ContextMenuBackgroundGradientBeginColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBackgroundGradientBeginColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuBackgroundGradientBeginColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuBackgroundGradientBeginColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBackgroundGradientBeginColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ContextMenuBackgroundGradientBeginColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -387,6 +453,9 @@
       <MemberSignature Language="C#" Value="public const string ContextMenuBackgroundGradientBeginColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContextMenuBackgroundGradientBeginColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBackgroundGradientBeginColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContextMenuBackgroundGradientBeginColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ContextMenuBackgroundGradientBeginColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBackgroundGradientBeginColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContextMenuBackgroundGradientBeginColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -404,6 +473,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ContextMenuBackgroundGradientEndColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ContextMenuBackgroundGradientEndColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBackgroundGradientEndColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuBackgroundGradientEndColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuBackgroundGradientEndColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBackgroundGradientEndColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ContextMenuBackgroundGradientEndColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -422,6 +494,9 @@
       <MemberSignature Language="C#" Value="public const string ContextMenuBackgroundGradientEndColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContextMenuBackgroundGradientEndColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBackgroundGradientEndColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContextMenuBackgroundGradientEndColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ContextMenuBackgroundGradientEndColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBackgroundGradientEndColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContextMenuBackgroundGradientEndColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -439,6 +514,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ContextMenuBorderColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ContextMenuBorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuBorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuBorderColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ContextMenuBorderColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -457,6 +535,9 @@
       <MemberSignature Language="C#" Value="public const string ContextMenuBorderColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContextMenuBorderColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBorderColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContextMenuBorderColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ContextMenuBorderColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuBorderColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContextMenuBorderColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -474,6 +555,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ContextMenuIconAreaColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ContextMenuIconAreaColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuIconAreaColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuIconAreaColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuIconAreaColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuIconAreaColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ContextMenuIconAreaColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -492,6 +576,9 @@
       <MemberSignature Language="C#" Value="public const string ContextMenuIconAreaColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContextMenuIconAreaColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuIconAreaColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContextMenuIconAreaColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ContextMenuIconAreaColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuIconAreaColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContextMenuIconAreaColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -509,6 +596,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ContextMenuItemTextColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ContextMenuItemTextColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuItemTextColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuItemTextColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ContextMenuItemTextColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -527,6 +617,9 @@
       <MemberSignature Language="C#" Value="public const string ContextMenuItemTextColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContextMenuItemTextColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContextMenuItemTextColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ContextMenuItemTextColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContextMenuItemTextColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -544,6 +637,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ContextMenuItemTextDisabledColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ContextMenuItemTextDisabledColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextDisabledColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuItemTextDisabledColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuItemTextDisabledColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextDisabledColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ContextMenuItemTextDisabledColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -562,6 +658,9 @@
       <MemberSignature Language="C#" Value="public const string ContextMenuItemTextDisabledColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContextMenuItemTextDisabledColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextDisabledColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContextMenuItemTextDisabledColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ContextMenuItemTextDisabledColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextDisabledColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContextMenuItemTextDisabledColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -579,6 +678,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ContextMenuItemTextHoverColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ContextMenuItemTextHoverColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextHoverColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuItemTextHoverColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuItemTextHoverColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextHoverColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ContextMenuItemTextHoverColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -597,6 +699,9 @@
       <MemberSignature Language="C#" Value="public const string ContextMenuItemTextHoverColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContextMenuItemTextHoverColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextHoverColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContextMenuItemTextHoverColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ContextMenuItemTextHoverColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextHoverColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContextMenuItemTextHoverColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -614,6 +719,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ContextMenuItemTextSelectedColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ContextMenuItemTextSelectedColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextSelectedColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuItemTextSelectedColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuItemTextSelectedColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextSelectedColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ContextMenuItemTextSelectedColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -632,6 +740,9 @@
       <MemberSignature Language="C#" Value="public const string ContextMenuItemTextSelectedColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContextMenuItemTextSelectedColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextSelectedColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContextMenuItemTextSelectedColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ContextMenuItemTextSelectedColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuItemTextSelectedColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContextMenuItemTextSelectedColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -649,6 +760,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ContextMenuMouseOverBeginColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ContextMenuMouseOverBeginColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverBeginColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuMouseOverBeginColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuMouseOverBeginColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverBeginColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ContextMenuMouseOverBeginColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -667,6 +781,9 @@
       <MemberSignature Language="C#" Value="public const string ContextMenuMouseOverBeginColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContextMenuMouseOverBeginColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverBeginColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContextMenuMouseOverBeginColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ContextMenuMouseOverBeginColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverBeginColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContextMenuMouseOverBeginColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -684,6 +801,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ContextMenuMouseOverBorderColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ContextMenuMouseOverBorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverBorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuMouseOverBorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuMouseOverBorderColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverBorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ContextMenuMouseOverBorderColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -702,6 +822,9 @@
       <MemberSignature Language="C#" Value="public const string ContextMenuMouseOverBorderColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContextMenuMouseOverBorderColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverBorderColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContextMenuMouseOverBorderColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ContextMenuMouseOverBorderColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverBorderColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContextMenuMouseOverBorderColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -719,6 +842,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ContextMenuMouseOverEndColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ContextMenuMouseOverEndColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverEndColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuMouseOverEndColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuMouseOverEndColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverEndColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ContextMenuMouseOverEndColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -737,6 +863,9 @@
       <MemberSignature Language="C#" Value="public const string ContextMenuMouseOverEndColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContextMenuMouseOverEndColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverEndColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContextMenuMouseOverEndColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ContextMenuMouseOverEndColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverEndColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContextMenuMouseOverEndColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -754,6 +883,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ContextMenuMouseOverMiddle1Color { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ContextMenuMouseOverMiddle1Color" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverMiddle1Color" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuMouseOverMiddle1Color As Color" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuMouseOverMiddle1Color : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverMiddle1Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ContextMenuMouseOverMiddle1Color { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -772,6 +904,9 @@
       <MemberSignature Language="C#" Value="public const string ContextMenuMouseOverMiddle1ColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContextMenuMouseOverMiddle1ColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverMiddle1ColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContextMenuMouseOverMiddle1ColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ContextMenuMouseOverMiddle1ColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverMiddle1ColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContextMenuMouseOverMiddle1ColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -789,6 +924,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ContextMenuMouseOverMiddle2Color { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ContextMenuMouseOverMiddle2Color" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverMiddle2Color" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuMouseOverMiddle2Color As Color" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuMouseOverMiddle2Color : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverMiddle2Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ContextMenuMouseOverMiddle2Color { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -807,6 +945,9 @@
       <MemberSignature Language="C#" Value="public const string ContextMenuMouseOverMiddle2ColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContextMenuMouseOverMiddle2ColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverMiddle2ColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContextMenuMouseOverMiddle2ColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ContextMenuMouseOverMiddle2ColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuMouseOverMiddle2ColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContextMenuMouseOverMiddle2ColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -824,6 +965,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color ContextMenuSeparatorColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color ContextMenuSeparatorColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuSeparatorColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ContextMenuSeparatorColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuSeparatorColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuSeparatorColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color ContextMenuSeparatorColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -842,6 +986,9 @@
       <MemberSignature Language="C#" Value="public const string ContextMenuSeparatorColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string ContextMenuSeparatorColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.ContextMenuSeparatorColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const ContextMenuSeparatorColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable ContextMenuSeparatorColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.ContextMenuSeparatorColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ ContextMenuSeparatorColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -859,6 +1006,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color DesignerViewBackgroundColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color DesignerViewBackgroundColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewBackgroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerViewBackgroundColor As Color" />
+      <MemberSignature Language="F#" Value="member this.DesignerViewBackgroundColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewBackgroundColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DesignerViewBackgroundColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -877,6 +1027,9 @@
       <MemberSignature Language="C#" Value="public const string DesignerViewBackgroundColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DesignerViewBackgroundColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewBackgroundColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const DesignerViewBackgroundColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable DesignerViewBackgroundColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewBackgroundColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DesignerViewBackgroundColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -894,6 +1047,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Brush DesignerViewExpandAllCollapseAllButtonBrush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Brush DesignerViewExpandAllCollapseAllButtonBrush" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllButtonBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerViewExpandAllCollapseAllButtonBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.DesignerViewExpandAllCollapseAllButtonBrush : System.Windows.Media.Brush" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllButtonBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Brush ^ DesignerViewExpandAllCollapseAllButtonBrush { System::Windows::Media::Brush ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -912,6 +1068,9 @@
       <MemberSignature Language="C#" Value="public const string DesignerViewExpandAllCollapseAllButtonColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DesignerViewExpandAllCollapseAllButtonColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllButtonColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const DesignerViewExpandAllCollapseAllButtonColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable DesignerViewExpandAllCollapseAllButtonColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllButtonColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DesignerViewExpandAllCollapseAllButtonColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -929,6 +1088,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Brush DesignerViewExpandAllCollapseAllButtonMouseOverBrush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Brush DesignerViewExpandAllCollapseAllButtonMouseOverBrush" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllButtonMouseOverBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerViewExpandAllCollapseAllButtonMouseOverBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.DesignerViewExpandAllCollapseAllButtonMouseOverBrush : System.Windows.Media.Brush" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllButtonMouseOverBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Brush ^ DesignerViewExpandAllCollapseAllButtonMouseOverBrush { System::Windows::Media::Brush ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -947,6 +1109,9 @@
       <MemberSignature Language="C#" Value="public const string DesignerViewExpandAllCollapseAllButtonMouseOverColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DesignerViewExpandAllCollapseAllButtonMouseOverColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllButtonMouseOverColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const DesignerViewExpandAllCollapseAllButtonMouseOverColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable DesignerViewExpandAllCollapseAllButtonMouseOverColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllButtonMouseOverColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DesignerViewExpandAllCollapseAllButtonMouseOverColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -964,6 +1129,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Brush DesignerViewExpandAllCollapseAllPressedBrush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Brush DesignerViewExpandAllCollapseAllPressedBrush" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllPressedBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerViewExpandAllCollapseAllPressedBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.DesignerViewExpandAllCollapseAllPressedBrush : System.Windows.Media.Brush" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllPressedBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Brush ^ DesignerViewExpandAllCollapseAllPressedBrush { System::Windows::Media::Brush ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -982,6 +1150,9 @@
       <MemberSignature Language="C#" Value="public const string DesignerViewExpandAllCollapseAllPressedColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DesignerViewExpandAllCollapseAllPressedColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllPressedColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const DesignerViewExpandAllCollapseAllPressedColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable DesignerViewExpandAllCollapseAllPressedColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewExpandAllCollapseAllPressedColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DesignerViewExpandAllCollapseAllPressedColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -999,6 +1170,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color DesignerViewShellBarCaptionActiveColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color DesignerViewShellBarCaptionActiveColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarCaptionActiveColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerViewShellBarCaptionActiveColor As Color" />
+      <MemberSignature Language="F#" Value="member this.DesignerViewShellBarCaptionActiveColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarCaptionActiveColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DesignerViewShellBarCaptionActiveColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1017,6 +1191,9 @@
       <MemberSignature Language="C#" Value="public const string DesignerViewShellBarCaptionActiveColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DesignerViewShellBarCaptionActiveColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarCaptionActiveColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const DesignerViewShellBarCaptionActiveColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable DesignerViewShellBarCaptionActiveColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarCaptionActiveColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DesignerViewShellBarCaptionActiveColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1034,6 +1211,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color DesignerViewShellBarCaptionColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color DesignerViewShellBarCaptionColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarCaptionColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerViewShellBarCaptionColor As Color" />
+      <MemberSignature Language="F#" Value="member this.DesignerViewShellBarCaptionColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarCaptionColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DesignerViewShellBarCaptionColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1052,6 +1232,9 @@
       <MemberSignature Language="C#" Value="public const string DesignerViewShellBarCaptionColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DesignerViewShellBarCaptionColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarCaptionColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const DesignerViewShellBarCaptionColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable DesignerViewShellBarCaptionColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarCaptionColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DesignerViewShellBarCaptionColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1069,6 +1252,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color DesignerViewShellBarColorGradientBeginColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color DesignerViewShellBarColorGradientBeginColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarColorGradientBeginColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerViewShellBarColorGradientBeginColor As Color" />
+      <MemberSignature Language="F#" Value="member this.DesignerViewShellBarColorGradientBeginColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarColorGradientBeginColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DesignerViewShellBarColorGradientBeginColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1087,6 +1273,9 @@
       <MemberSignature Language="C#" Value="public const string DesignerViewShellBarColorGradientBeginKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DesignerViewShellBarColorGradientBeginKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarColorGradientBeginKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const DesignerViewShellBarColorGradientBeginKey As String " />
+      <MemberSignature Language="F#" Value="val mutable DesignerViewShellBarColorGradientBeginKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarColorGradientBeginKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DesignerViewShellBarColorGradientBeginKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1104,6 +1293,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color DesignerViewShellBarColorGradientEndColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color DesignerViewShellBarColorGradientEndColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarColorGradientEndColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerViewShellBarColorGradientEndColor As Color" />
+      <MemberSignature Language="F#" Value="member this.DesignerViewShellBarColorGradientEndColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarColorGradientEndColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DesignerViewShellBarColorGradientEndColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1122,6 +1314,9 @@
       <MemberSignature Language="C#" Value="public const string DesignerViewShellBarColorGradientEndKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DesignerViewShellBarColorGradientEndKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarColorGradientEndKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const DesignerViewShellBarColorGradientEndKey As String " />
+      <MemberSignature Language="F#" Value="val mutable DesignerViewShellBarColorGradientEndKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarColorGradientEndKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DesignerViewShellBarColorGradientEndKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1139,6 +1334,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color DesignerViewShellBarControlBackgroundColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color DesignerViewShellBarControlBackgroundColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarControlBackgroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerViewShellBarControlBackgroundColor As Color" />
+      <MemberSignature Language="F#" Value="member this.DesignerViewShellBarControlBackgroundColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarControlBackgroundColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DesignerViewShellBarControlBackgroundColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1157,6 +1355,9 @@
       <MemberSignature Language="C#" Value="public const string DesignerViewShellBarControlBackgroundColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DesignerViewShellBarControlBackgroundColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarControlBackgroundColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const DesignerViewShellBarControlBackgroundColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable DesignerViewShellBarControlBackgroundColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarControlBackgroundColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DesignerViewShellBarControlBackgroundColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1174,6 +1375,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color DesignerViewShellBarHoverColorGradientBeginColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color DesignerViewShellBarHoverColorGradientBeginColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarHoverColorGradientBeginColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerViewShellBarHoverColorGradientBeginColor As Color" />
+      <MemberSignature Language="F#" Value="member this.DesignerViewShellBarHoverColorGradientBeginColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarHoverColorGradientBeginColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DesignerViewShellBarHoverColorGradientBeginColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1192,6 +1396,9 @@
       <MemberSignature Language="C#" Value="public const string DesignerViewShellBarHoverColorGradientBeginKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DesignerViewShellBarHoverColorGradientBeginKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarHoverColorGradientBeginKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const DesignerViewShellBarHoverColorGradientBeginKey As String " />
+      <MemberSignature Language="F#" Value="val mutable DesignerViewShellBarHoverColorGradientBeginKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarHoverColorGradientBeginKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DesignerViewShellBarHoverColorGradientBeginKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1209,6 +1416,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color DesignerViewShellBarHoverColorGradientEndColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color DesignerViewShellBarHoverColorGradientEndColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarHoverColorGradientEndColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerViewShellBarHoverColorGradientEndColor As Color" />
+      <MemberSignature Language="F#" Value="member this.DesignerViewShellBarHoverColorGradientEndColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarHoverColorGradientEndColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DesignerViewShellBarHoverColorGradientEndColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1227,6 +1437,9 @@
       <MemberSignature Language="C#" Value="public const string DesignerViewShellBarHoverColorGradientEndKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DesignerViewShellBarHoverColorGradientEndKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarHoverColorGradientEndKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const DesignerViewShellBarHoverColorGradientEndKey As String " />
+      <MemberSignature Language="F#" Value="val mutable DesignerViewShellBarHoverColorGradientEndKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarHoverColorGradientEndKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DesignerViewShellBarHoverColorGradientEndKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1244,6 +1457,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color DesignerViewShellBarSelectedColorGradientBeginColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color DesignerViewShellBarSelectedColorGradientBeginColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarSelectedColorGradientBeginColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerViewShellBarSelectedColorGradientBeginColor As Color" />
+      <MemberSignature Language="F#" Value="member this.DesignerViewShellBarSelectedColorGradientBeginColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarSelectedColorGradientBeginColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DesignerViewShellBarSelectedColorGradientBeginColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1262,6 +1478,9 @@
       <MemberSignature Language="C#" Value="public const string DesignerViewShellBarSelectedColorGradientBeginKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DesignerViewShellBarSelectedColorGradientBeginKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarSelectedColorGradientBeginKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const DesignerViewShellBarSelectedColorGradientBeginKey As String " />
+      <MemberSignature Language="F#" Value="val mutable DesignerViewShellBarSelectedColorGradientBeginKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarSelectedColorGradientBeginKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DesignerViewShellBarSelectedColorGradientBeginKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1279,6 +1498,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color DesignerViewShellBarSelectedColorGradientEndColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color DesignerViewShellBarSelectedColorGradientEndColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarSelectedColorGradientEndColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerViewShellBarSelectedColorGradientEndColor As Color" />
+      <MemberSignature Language="F#" Value="member this.DesignerViewShellBarSelectedColorGradientEndColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarSelectedColorGradientEndColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DesignerViewShellBarSelectedColorGradientEndColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1297,6 +1519,9 @@
       <MemberSignature Language="C#" Value="public const string DesignerViewShellBarSelectedColorGradientEndKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DesignerViewShellBarSelectedColorGradientEndKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarSelectedColorGradientEndKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const DesignerViewShellBarSelectedColorGradientEndKey As String " />
+      <MemberSignature Language="F#" Value="val mutable DesignerViewShellBarSelectedColorGradientEndKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewShellBarSelectedColorGradientEndKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DesignerViewShellBarSelectedColorGradientEndKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1314,6 +1539,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color DesignerViewStatusBarBackgroundColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color DesignerViewStatusBarBackgroundColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewStatusBarBackgroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DesignerViewStatusBarBackgroundColor As Color" />
+      <MemberSignature Language="F#" Value="member this.DesignerViewStatusBarBackgroundColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewStatusBarBackgroundColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color DesignerViewStatusBarBackgroundColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1332,6 +1560,9 @@
       <MemberSignature Language="C#" Value="public const string DesignerViewStatusBarBackgroundColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DesignerViewStatusBarBackgroundColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.DesignerViewStatusBarBackgroundColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const DesignerViewStatusBarBackgroundColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable DesignerViewStatusBarBackgroundColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.DesignerViewStatusBarBackgroundColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DesignerViewStatusBarBackgroundColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1349,6 +1580,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Brush FlowchartExpressionButtonBrush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Brush FlowchartExpressionButtonBrush" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FlowchartExpressionButtonBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.FlowchartExpressionButtonBrush : System.Windows.Media.Brush" Usage="System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Brush ^ FlowchartExpressionButtonBrush { System::Windows::Media::Brush ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1367,6 +1601,9 @@
       <MemberSignature Language="C#" Value="public const string FlowchartExpressionButtonColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string FlowchartExpressionButtonColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const FlowchartExpressionButtonColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable FlowchartExpressionButtonColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ FlowchartExpressionButtonColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1384,6 +1621,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Brush FlowchartExpressionButtonMouseOverBrush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Brush FlowchartExpressionButtonMouseOverBrush" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonMouseOverBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FlowchartExpressionButtonMouseOverBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.FlowchartExpressionButtonMouseOverBrush : System.Windows.Media.Brush" Usage="System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonMouseOverBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Brush ^ FlowchartExpressionButtonMouseOverBrush { System::Windows::Media::Brush ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1402,6 +1642,9 @@
       <MemberSignature Language="C#" Value="public const string FlowchartExpressionButtonMouseOverColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string FlowchartExpressionButtonMouseOverColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonMouseOverColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const FlowchartExpressionButtonMouseOverColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable FlowchartExpressionButtonMouseOverColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonMouseOverColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ FlowchartExpressionButtonMouseOverColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1419,6 +1662,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Brush FlowchartExpressionButtonPressedBrush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Brush FlowchartExpressionButtonPressedBrush" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonPressedBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FlowchartExpressionButtonPressedBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.FlowchartExpressionButtonPressedBrush : System.Windows.Media.Brush" Usage="System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonPressedBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Brush ^ FlowchartExpressionButtonPressedBrush { System::Windows::Media::Brush ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1437,6 +1683,9 @@
       <MemberSignature Language="C#" Value="public const string FlowchartExpressionButtonPressedColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string FlowchartExpressionButtonPressedColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonPressedColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const FlowchartExpressionButtonPressedColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable FlowchartExpressionButtonPressedColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.FlowchartExpressionButtonPressedColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ FlowchartExpressionButtonPressedColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1454,6 +1703,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.FontFamily FontFamily { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.FontFamily FontFamily" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.FontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FontFamily As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.FontFamily : System.Windows.Media.FontFamily" Usage="System.Activities.Presentation.WorkflowDesignerColors.FontFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::FontFamily ^ FontFamily { System::Windows::Media::FontFamily ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1472,6 +1724,9 @@
       <MemberSignature Language="C#" Value="public static readonly string FontFamilyKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string FontFamilyKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.FontFamilyKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontFamilyKey As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable FontFamilyKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.FontFamilyKey" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ FontFamilyKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1489,6 +1744,9 @@
       <MemberSignature Language="C#" Value="public static double FontSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property float64 FontSize" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.FontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.FontSize : double" Usage="System.Activities.Presentation.WorkflowDesignerColors.FontSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double FontSize { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1507,6 +1765,9 @@
       <MemberSignature Language="C#" Value="public static readonly string FontSizeKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string FontSizeKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.FontSizeKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontSizeKey As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable FontSizeKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.FontSizeKey" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ FontSizeKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1524,6 +1785,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontWeight FontWeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight FontWeight" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.FontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property FontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.FontWeight : System.Windows.FontWeight" Usage="System.Activities.Presentation.WorkflowDesignerColors.FontWeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight FontWeight { System::Windows::FontWeight get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1542,6 +1806,9 @@
       <MemberSignature Language="C#" Value="public static readonly string FontWeightKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string FontWeightKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.FontWeightKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FontWeightKey As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable FontWeightKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.FontWeightKey" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ FontWeightKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1559,6 +1826,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color GridViewRowHoverColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color GridViewRowHoverColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.GridViewRowHoverColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GridViewRowHoverColor As Color" />
+      <MemberSignature Language="F#" Value="member this.GridViewRowHoverColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.GridViewRowHoverColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color GridViewRowHoverColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1577,6 +1847,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color OutlineViewBackgroundColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color OutlineViewBackgroundColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewBackgroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OutlineViewBackgroundColor As Color" />
+      <MemberSignature Language="F#" Value="member this.OutlineViewBackgroundColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewBackgroundColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color OutlineViewBackgroundColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1595,6 +1868,9 @@
       <MemberSignature Language="C#" Value="public const string OutlineViewBackgroundColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string OutlineViewBackgroundColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewBackgroundColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const OutlineViewBackgroundColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable OutlineViewBackgroundColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewBackgroundColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ OutlineViewBackgroundColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1612,6 +1888,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color OutlineViewCollapsedArrowBorderColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color OutlineViewCollapsedArrowBorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewCollapsedArrowBorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OutlineViewCollapsedArrowBorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.OutlineViewCollapsedArrowBorderColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewCollapsedArrowBorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color OutlineViewCollapsedArrowBorderColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1630,6 +1909,9 @@
       <MemberSignature Language="C#" Value="public const string OutlineViewCollapsedArrowBorderColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string OutlineViewCollapsedArrowBorderColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewCollapsedArrowBorderColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const OutlineViewCollapsedArrowBorderColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable OutlineViewCollapsedArrowBorderColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewCollapsedArrowBorderColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ OutlineViewCollapsedArrowBorderColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1647,6 +1929,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color OutlineViewCollapsedArrowHoverBorderColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color OutlineViewCollapsedArrowHoverBorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewCollapsedArrowHoverBorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OutlineViewCollapsedArrowHoverBorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.OutlineViewCollapsedArrowHoverBorderColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewCollapsedArrowHoverBorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color OutlineViewCollapsedArrowHoverBorderColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1665,6 +1950,9 @@
       <MemberSignature Language="C#" Value="public const string OutlineViewCollapsedArrowHoverBorderColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string OutlineViewCollapsedArrowHoverBorderColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewCollapsedArrowHoverBorderColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const OutlineViewCollapsedArrowHoverBorderColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable OutlineViewCollapsedArrowHoverBorderColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewCollapsedArrowHoverBorderColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ OutlineViewCollapsedArrowHoverBorderColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1682,6 +1970,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color OutlineViewExpandedArrowBorderColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color OutlineViewExpandedArrowBorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewExpandedArrowBorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OutlineViewExpandedArrowBorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.OutlineViewExpandedArrowBorderColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewExpandedArrowBorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color OutlineViewExpandedArrowBorderColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1700,6 +1991,9 @@
       <MemberSignature Language="C#" Value="public const string OutlineViewExpandedArrowBorderColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string OutlineViewExpandedArrowBorderColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewExpandedArrowBorderColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const OutlineViewExpandedArrowBorderColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable OutlineViewExpandedArrowBorderColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewExpandedArrowBorderColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ OutlineViewExpandedArrowBorderColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1717,6 +2011,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color OutlineViewExpandedArrowColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color OutlineViewExpandedArrowColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewExpandedArrowColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OutlineViewExpandedArrowColor As Color" />
+      <MemberSignature Language="F#" Value="member this.OutlineViewExpandedArrowColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewExpandedArrowColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color OutlineViewExpandedArrowColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1735,6 +2032,9 @@
       <MemberSignature Language="C#" Value="public const string OutlineViewExpandedArrowColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string OutlineViewExpandedArrowColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewExpandedArrowColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const OutlineViewExpandedArrowColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable OutlineViewExpandedArrowColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewExpandedArrowColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ OutlineViewExpandedArrowColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1752,6 +2052,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color OutlineViewItemHighlightBackgroundColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color OutlineViewItemHighlightBackgroundColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemHighlightBackgroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OutlineViewItemHighlightBackgroundColor As Color" />
+      <MemberSignature Language="F#" Value="member this.OutlineViewItemHighlightBackgroundColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemHighlightBackgroundColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color OutlineViewItemHighlightBackgroundColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1770,6 +2073,9 @@
       <MemberSignature Language="C#" Value="public const string OutlineViewItemHighlightBackgroundColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string OutlineViewItemHighlightBackgroundColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemHighlightBackgroundColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const OutlineViewItemHighlightBackgroundColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable OutlineViewItemHighlightBackgroundColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemHighlightBackgroundColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ OutlineViewItemHighlightBackgroundColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1787,6 +2093,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color OutlineViewItemSelectedTextColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color OutlineViewItemSelectedTextColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemSelectedTextColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OutlineViewItemSelectedTextColor As Color" />
+      <MemberSignature Language="F#" Value="member this.OutlineViewItemSelectedTextColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemSelectedTextColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color OutlineViewItemSelectedTextColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1805,6 +2114,9 @@
       <MemberSignature Language="C#" Value="public const string OutlineViewItemSelectedTextColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string OutlineViewItemSelectedTextColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemSelectedTextColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const OutlineViewItemSelectedTextColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable OutlineViewItemSelectedTextColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemSelectedTextColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ OutlineViewItemSelectedTextColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1822,6 +2134,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color OutlineViewItemTextColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color OutlineViewItemTextColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemTextColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OutlineViewItemTextColor As Color" />
+      <MemberSignature Language="F#" Value="member this.OutlineViewItemTextColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemTextColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color OutlineViewItemTextColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1840,6 +2155,9 @@
       <MemberSignature Language="C#" Value="public const string OutlineViewItemTextColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string OutlineViewItemTextColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemTextColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const OutlineViewItemTextColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable OutlineViewItemTextColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.OutlineViewItemTextColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ OutlineViewItemTextColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1857,6 +2175,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyInspectorBackgroundBrushKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PropertyInspectorBackgroundBrushKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorBackgroundBrushKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyInspectorBackgroundBrushKey As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorBackgroundBrushKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorBackgroundBrushKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PropertyInspectorBackgroundBrushKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1875,6 +2196,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyInspectorBorderBrushKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PropertyInspectorBorderBrushKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorBorderBrushKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyInspectorBorderBrushKey As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorBorderBrushKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorBorderBrushKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PropertyInspectorBorderBrushKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1893,6 +2217,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyInspectorCategoryCaptionTextBrushKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PropertyInspectorCategoryCaptionTextBrushKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorCategoryCaptionTextBrushKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyInspectorCategoryCaptionTextBrushKey As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorCategoryCaptionTextBrushKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorCategoryCaptionTextBrushKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PropertyInspectorCategoryCaptionTextBrushKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1911,6 +2238,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyInspectorPaneBrushKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PropertyInspectorPaneBrushKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorPaneBrushKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyInspectorPaneBrushKey As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorPaneBrushKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorPaneBrushKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PropertyInspectorPaneBrushKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1929,6 +2259,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyInspectorPopupBrushKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PropertyInspectorPopupBrushKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorPopupBrushKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyInspectorPopupBrushKey As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorPopupBrushKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorPopupBrushKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PropertyInspectorPopupBrushKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1947,6 +2280,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyInspectorSelectedBackgroundBrushKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PropertyInspectorSelectedBackgroundBrushKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorSelectedBackgroundBrushKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyInspectorSelectedBackgroundBrushKey As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorSelectedBackgroundBrushKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorSelectedBackgroundBrushKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PropertyInspectorSelectedBackgroundBrushKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1965,6 +2301,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyInspectorSelectedForegroundBrushKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PropertyInspectorSelectedForegroundBrushKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorSelectedForegroundBrushKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyInspectorSelectedForegroundBrushKey As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorSelectedForegroundBrushKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorSelectedForegroundBrushKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PropertyInspectorSelectedForegroundBrushKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -1983,6 +2322,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyInspectorTextBrushKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PropertyInspectorTextBrushKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorTextBrushKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyInspectorTextBrushKey As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorTextBrushKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorTextBrushKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PropertyInspectorTextBrushKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2001,6 +2343,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyInspectorToolBarBackgroundBrushKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PropertyInspectorToolBarBackgroundBrushKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarBackgroundBrushKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyInspectorToolBarBackgroundBrushKey As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorToolBarBackgroundBrushKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarBackgroundBrushKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PropertyInspectorToolBarBackgroundBrushKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2019,6 +2364,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyInspectorToolBarItemHoverBackgroundBrushKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PropertyInspectorToolBarItemHoverBackgroundBrushKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarItemHoverBackgroundBrushKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyInspectorToolBarItemHoverBackgroundBrushKey As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorToolBarItemHoverBackgroundBrushKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarItemHoverBackgroundBrushKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PropertyInspectorToolBarItemHoverBackgroundBrushKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2037,6 +2385,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyInspectorToolBarItemHoverBorderBrushKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PropertyInspectorToolBarItemHoverBorderBrushKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarItemHoverBorderBrushKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyInspectorToolBarItemHoverBorderBrushKey As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorToolBarItemHoverBorderBrushKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarItemHoverBorderBrushKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PropertyInspectorToolBarItemHoverBorderBrushKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2055,6 +2406,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyInspectorToolBarItemSelectedBackgroundBrushKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PropertyInspectorToolBarItemSelectedBackgroundBrushKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarItemSelectedBackgroundBrushKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyInspectorToolBarItemSelectedBackgroundBrushKey As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorToolBarItemSelectedBackgroundBrushKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarItemSelectedBackgroundBrushKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PropertyInspectorToolBarItemSelectedBackgroundBrushKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2073,6 +2427,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyInspectorToolBarItemSelectedBorderBrushKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PropertyInspectorToolBarItemSelectedBorderBrushKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarItemSelectedBorderBrushKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyInspectorToolBarItemSelectedBorderBrushKey As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorToolBarItemSelectedBorderBrushKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarItemSelectedBorderBrushKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PropertyInspectorToolBarItemSelectedBorderBrushKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2091,6 +2448,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyInspectorToolBarSeparatorBrushKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PropertyInspectorToolBarSeparatorBrushKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarSeparatorBrushKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyInspectorToolBarSeparatorBrushKey As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorToolBarSeparatorBrushKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarSeparatorBrushKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PropertyInspectorToolBarSeparatorBrushKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2109,6 +2469,9 @@
       <MemberSignature Language="C#" Value="public static string PropertyInspectorToolBarTextBoxBorderBrushKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PropertyInspectorToolBarTextBoxBorderBrushKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarTextBoxBorderBrushKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PropertyInspectorToolBarTextBoxBorderBrushKey As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyInspectorToolBarTextBoxBorderBrushKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.PropertyInspectorToolBarTextBoxBorderBrushKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PropertyInspectorToolBarTextBoxBorderBrushKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2127,6 +2490,9 @@
       <MemberSignature Language="C#" Value="public const string RubberBandRectangleColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string RubberBandRectangleColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.RubberBandRectangleColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const RubberBandRectangleColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable RubberBandRectangleColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.RubberBandRectangleColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ RubberBandRectangleColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2144,6 +2510,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color WorkflowViewElementBackgroundColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color WorkflowViewElementBackgroundColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementBackgroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WorkflowViewElementBackgroundColor As Color" />
+      <MemberSignature Language="F#" Value="member this.WorkflowViewElementBackgroundColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementBackgroundColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color WorkflowViewElementBackgroundColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2162,6 +2531,9 @@
       <MemberSignature Language="C#" Value="public const string WorkflowViewElementBackgroundColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string WorkflowViewElementBackgroundColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementBackgroundColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const WorkflowViewElementBackgroundColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable WorkflowViewElementBackgroundColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementBackgroundColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ WorkflowViewElementBackgroundColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2179,6 +2551,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color WorkflowViewElementBorderColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color WorkflowViewElementBorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementBorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WorkflowViewElementBorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.WorkflowViewElementBorderColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementBorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color WorkflowViewElementBorderColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2197,6 +2572,9 @@
       <MemberSignature Language="C#" Value="public const string WorkflowViewElementBorderColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string WorkflowViewElementBorderColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementBorderColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const WorkflowViewElementBorderColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable WorkflowViewElementBorderColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementBorderColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ WorkflowViewElementBorderColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2214,6 +2592,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color WorkflowViewElementCaptionColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color WorkflowViewElementCaptionColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementCaptionColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WorkflowViewElementCaptionColor As Color" />
+      <MemberSignature Language="F#" Value="member this.WorkflowViewElementCaptionColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementCaptionColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color WorkflowViewElementCaptionColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2232,6 +2613,9 @@
       <MemberSignature Language="C#" Value="public const string WorkflowViewElementCaptionColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string WorkflowViewElementCaptionColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementCaptionColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const WorkflowViewElementCaptionColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable WorkflowViewElementCaptionColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementCaptionColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ WorkflowViewElementCaptionColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2249,6 +2633,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color WorkflowViewElementSelectedBackgroundColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color WorkflowViewElementSelectedBackgroundColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementSelectedBackgroundColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WorkflowViewElementSelectedBackgroundColor As Color" />
+      <MemberSignature Language="F#" Value="member this.WorkflowViewElementSelectedBackgroundColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementSelectedBackgroundColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color WorkflowViewElementSelectedBackgroundColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2267,6 +2654,9 @@
       <MemberSignature Language="C#" Value="public const string WorkflowViewElementSelectedBackgroundColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string WorkflowViewElementSelectedBackgroundColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementSelectedBackgroundColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const WorkflowViewElementSelectedBackgroundColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable WorkflowViewElementSelectedBackgroundColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementSelectedBackgroundColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ WorkflowViewElementSelectedBackgroundColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2284,6 +2674,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Color WorkflowViewElementSelectedBorderColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Media.Color WorkflowViewElementSelectedBorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementSelectedBorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WorkflowViewElementSelectedBorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.WorkflowViewElementSelectedBorderColor : System.Windows.Media.Color" Usage="System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementSelectedBorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Color WorkflowViewElementSelectedBorderColor { System::Windows::Media::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -2302,6 +2695,9 @@
       <MemberSignature Language="C#" Value="public const string WorkflowViewElementSelectedBorderColorKey;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string WorkflowViewElementSelectedBorderColorKey" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementSelectedBorderColorKey" />
+      <MemberSignature Language="VB.NET" Value="Public Const WorkflowViewElementSelectedBorderColorKey As String " />
+      <MemberSignature Language="F#" Value="val mutable WorkflowViewElementSelectedBorderColorKey : string" Usage="System.Activities.Presentation.WorkflowDesignerColors.WorkflowViewElementSelectedBorderColorKey" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ WorkflowViewElementSelectedBorderColorKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

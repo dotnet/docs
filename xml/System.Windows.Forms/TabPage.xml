@@ -1,7 +1,10 @@
-<Type Name="TabPage" FullName="System.Windows.Forms.TabPage">
+﻿<Type Name="TabPage" FullName="System.Windows.Forms.TabPage">
   <TypeSignature Language="C#" Value="public class TabPage : System.Windows.Forms.Panel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TabPage extends System.Windows.Forms.Panel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabPage" />
+  <TypeSignature Language="VB.NET" Value="Public Class TabPage&#xA;Inherits Panel" />
+  <TypeSignature Language="F#" Value="type TabPage = class&#xA;    inherit Panel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TabPage : System::Windows::Forms::Panel" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,7 +30,7 @@
       <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -73,10 +76,21 @@
     <altmember cref="P:System.Windows.Forms.TabControl.TabPages" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabPage" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TabPage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabPage.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TabPage();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +119,9 @@
       <MemberSignature Language="C#" Value="public TabPage (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabPage.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.TabPage : string -&gt; System.Windows.Forms.TabPage" Usage="new System.Windows.Forms.TabPage text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TabPage(System::String ^ text);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -141,6 +158,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AnchorStyles Anchor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AnchorStyles Anchor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.Anchor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Anchor As AnchorStyles" />
+      <MemberSignature Language="F#" Value="member this.Anchor : System.Windows.Forms.AnchorStyles with get, set" Usage="System.Windows.Forms.TabPage.Anchor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AnchorStyles Anchor { System::Windows::Forms::AnchorStyles get(); void set(System::Windows::Forms::AnchorStyles value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -167,6 +187,9 @@
       <MemberSignature Language="C#" Value="public override bool AutoSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.AutoSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSize As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoSize : bool with get, set" Usage="System.Windows.Forms.TabPage.AutoSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoSize { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -177,7 +200,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -196,6 +219,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler AutoSizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler AutoSizeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabPage.AutoSizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AutoSizeChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.AutoSizeChanged : EventHandler " Usage="member this.AutoSizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ AutoSizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -228,6 +254,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AutoSizeMode AutoSizeMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AutoSizeMode AutoSizeMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.AutoSizeMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoSizeMode As AutoSizeMode" />
+      <MemberSignature Language="F#" Value="member this.AutoSizeMode : System.Windows.Forms.AutoSizeMode with get, set" Usage="System.Windows.Forms.TabPage.AutoSizeMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AutoSizeMode AutoSizeMode { System::Windows::Forms::AutoSizeMode get(); void set(System::Windows::Forms::AutoSizeMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -238,7 +267,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -260,6 +289,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.TabPage.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -294,6 +326,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.Control.ControlCollection CreateControlsInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.Control/ControlCollection CreateControlsInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabPage.CreateControlsInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlsInstance () As Control.ControlCollection" />
+      <MemberSignature Language="F#" Value="override this.CreateControlsInstance : unit -&gt; System.Windows.Forms.Control.ControlCollection" Usage="tabPage.CreateControlsInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::Control::ControlCollection ^ CreateControlsInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -314,6 +349,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DockStyle Dock { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DockStyle Dock" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.Dock" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Dock As DockStyle" />
+      <MemberSignature Language="F#" Value="member this.Dock : System.Windows.Forms.DockStyle with get, set" Usage="System.Windows.Forms.TabPage.Dock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DockStyle Dock { System::Windows::Forms::DockStyle get(); void set(System::Windows::Forms::DockStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -340,6 +378,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DockChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DockChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabPage.DockChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DockChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DockChanged : EventHandler " Usage="member this.DockChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DockChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -372,6 +413,9 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Windows.Forms.TabPage.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -398,6 +442,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler EnabledChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler EnabledChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabPage.EnabledChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event EnabledChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.EnabledChanged : EventHandler " Usage="member this.EnabledChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ EnabledChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -430,6 +477,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.TabPage GetTabPageOfComponent (object comp);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.TabPage GetTabPageOfComponent(object comp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabPage.GetTabPageOfComponent(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTabPageOfComponent (comp As Object) As TabPage" />
+      <MemberSignature Language="F#" Value="static member GetTabPageOfComponent : obj -&gt; System.Windows.Forms.TabPage" Usage="System.Windows.Forms.TabPage.GetTabPageOfComponent comp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::TabPage ^ GetTabPageOfComponent(System::Object ^ comp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -465,6 +515,9 @@
       <MemberSignature Language="C#" Value="public int ImageIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ImageIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.ImageIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.ImageIndex : int with get, set" Usage="System.Windows.Forms.TabPage.ImageIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ImageIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -481,7 +534,7 @@
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.ImageIndexConverter))</AttributeName>
@@ -520,6 +573,9 @@
       <MemberSignature Language="C#" Value="public string ImageKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ImageKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.ImageKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageKey As String" />
+      <MemberSignature Language="F#" Value="member this.ImageKey : string with get, set" Usage="System.Windows.Forms.TabPage.ImageKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -536,7 +592,7 @@
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.ImageKeyConverter))</AttributeName>
@@ -562,6 +618,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point Location { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point Location" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.Location" />
+      <MemberSignature Language="VB.NET" Value="Public Property Location As Point" />
+      <MemberSignature Language="F#" Value="member this.Location : System.Drawing.Point with get, set" Usage="System.Windows.Forms.TabPage.Location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point Location { System::Drawing::Point get(); void set(System::Drawing::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -588,6 +647,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler LocationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LocationChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabPage.LocationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LocationChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.LocationChanged : EventHandler " Usage="member this.LocationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LocationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -620,6 +682,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Size MaximumSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size MaximumSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.MaximumSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property MaximumSize As Size" />
+      <MemberSignature Language="F#" Value="member this.MaximumSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.TabPage.MaximumSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size MaximumSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -649,6 +714,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Size MinimumSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size MinimumSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.MinimumSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property MinimumSize As Size" />
+      <MemberSignature Language="F#" Value="member this.MinimumSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.TabPage.MinimumSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size MinimumSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -675,6 +743,9 @@
       <MemberSignature Language="C#" Value="protected override void OnEnter (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnEnter(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabPage.OnEnter(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnEnter (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnEnter : EventArgs -&gt; unit" Usage="tabPage.OnEnter e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnEnter(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -711,6 +782,9 @@
       <MemberSignature Language="C#" Value="protected override void OnLeave (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLeave(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabPage.OnLeave(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLeave (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnLeave : EventArgs -&gt; unit" Usage="tabPage.OnLeave e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLeave(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -747,6 +821,9 @@
       <MemberSignature Language="C#" Value="protected override void OnPaintBackground (System.Windows.Forms.PaintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPaintBackground(class System.Windows.Forms.PaintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabPage.OnPaintBackground(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPaintBackground (e As PaintEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPaintBackground : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="tabPage.OnPaintBackground e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPaintBackground(System::Windows::Forms::PaintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -775,6 +852,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Size PreferredSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size PreferredSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.PreferredSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreferredSize As Size" />
+      <MemberSignature Language="F#" Value="member this.PreferredSize : System.Drawing.Size" Usage="System.Windows.Forms.TabPage.PreferredSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size PreferredSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -801,6 +881,9 @@
       <MemberSignature Language="C#" Value="protected override void SetBoundsCore (int x, int y, int width, int height, System.Windows.Forms.BoundsSpecified specified);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetBoundsCore(int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.BoundsSpecified specified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabPage.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetBoundsCore (x As Integer, y As Integer, width As Integer, height As Integer, specified As BoundsSpecified)" />
+      <MemberSignature Language="F#" Value="override this.SetBoundsCore : int * int * int * int * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="tabPage.SetBoundsCore (x, y, width, height, specified)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetBoundsCore(int x, int y, int width, int height, System::Windows::Forms::BoundsSpecified specified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -830,6 +913,9 @@
       <MemberSignature Language="C#" Value="public int TabIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TabIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.TabIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property TabIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.TabIndex : int with get, set" Usage="System.Windows.Forms.TabPage.TabIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TabIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -864,6 +950,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler TabIndexChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TabIndexChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabPage.TabIndexChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TabIndexChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TabIndexChanged : EventHandler " Usage="member this.TabIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -896,6 +985,9 @@
       <MemberSignature Language="C#" Value="public bool TabStop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TabStop" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.TabStop" />
+      <MemberSignature Language="VB.NET" Value="Public Property TabStop As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TabStop : bool with get, set" Usage="System.Windows.Forms.TabPage.TabStop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TabStop { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -929,6 +1021,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler TabStopChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TabStopChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabPage.TabStopChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TabStopChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TabStopChanged : EventHandler " Usage="member this.TabStopChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TabStopChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -961,6 +1056,9 @@
       <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.TabPage.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1008,6 +1106,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabPage.TextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1033,6 +1134,9 @@
       <MemberSignature Language="C#" Value="public string ToolTipText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTipText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.ToolTipText" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipText As String" />
+      <MemberSignature Language="F#" Value="member this.ToolTipText : string with get, set" Usage="System.Windows.Forms.TabPage.ToolTipText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1079,6 +1183,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabPage.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="tabPage.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1111,6 +1218,9 @@
       <MemberSignature Language="C#" Value="public bool UseVisualStyleBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseVisualStyleBackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.UseVisualStyleBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseVisualStyleBackColor As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseVisualStyleBackColor : bool with get, set" Usage="System.Windows.Forms.TabPage.UseVisualStyleBackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseVisualStyleBackColor { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1151,6 +1261,9 @@
       <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TabPage.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Windows.Forms.TabPage.Visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1186,6 +1299,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler VisibleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler VisibleChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.TabPage.VisibleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event VisibleChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.VisibleChanged : EventHandler " Usage="member this.VisibleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ VisibleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1216,14 +1332,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabPage" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

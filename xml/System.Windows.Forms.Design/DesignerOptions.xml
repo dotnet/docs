@@ -1,7 +1,10 @@
-<Type Name="DesignerOptions" FullName="System.Windows.Forms.Design.DesignerOptions">
+﻿<Type Name="DesignerOptions" FullName="System.Windows.Forms.Design.DesignerOptions">
   <TypeSignature Language="C#" Value="public class DesignerOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.DesignerOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class DesignerOptions" />
+  <TypeSignature Language="F#" Value="type DesignerOptions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,8 @@
       <MemberSignature Language="C#" Value="public DesignerOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.DesignerOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public virtual bool EnableInSituEditing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableInSituEditing" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.EnableInSituEditing" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EnableInSituEditing As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableInSituEditing : bool with get, set" Usage="System.Windows.Forms.Design.DesignerOptions.EnableInSituEditing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableInSituEditing { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -65,6 +73,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Size GridSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size GridSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.GridSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property GridSize As Size" />
+      <MemberSignature Language="F#" Value="member this.GridSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.Design.DesignerOptions.GridSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size GridSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -84,6 +95,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ObjectBoundSmartTagAutoShow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ObjectBoundSmartTagAutoShow" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.ObjectBoundSmartTagAutoShow" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ObjectBoundSmartTagAutoShow As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ObjectBoundSmartTagAutoShow : bool with get, set" Usage="System.Windows.Forms.Design.DesignerOptions.ObjectBoundSmartTagAutoShow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ObjectBoundSmartTagAutoShow { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -111,6 +125,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ShowGrid { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowGrid" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.ShowGrid" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowGrid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowGrid : bool with get, set" Usage="System.Windows.Forms.Design.DesignerOptions.ShowGrid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowGrid { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -131,6 +148,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SnapToGrid { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SnapToGrid" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.SnapToGrid" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SnapToGrid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SnapToGrid : bool with get, set" Usage="System.Windows.Forms.Design.DesignerOptions.SnapToGrid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SnapToGrid { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -151,6 +171,9 @@
       <MemberSignature Language="C#" Value="public virtual bool UseOptimizedCodeGeneration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseOptimizedCodeGeneration" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.UseOptimizedCodeGeneration" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property UseOptimizedCodeGeneration As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseOptimizedCodeGeneration : bool with get, set" Usage="System.Windows.Forms.Design.DesignerOptions.UseOptimizedCodeGeneration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseOptimizedCodeGeneration { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -178,6 +201,9 @@
       <MemberSignature Language="C#" Value="public virtual bool UseSmartTags { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseSmartTags" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.UseSmartTags" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property UseSmartTags As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseSmartTags : bool with get, set" Usage="System.Windows.Forms.Design.DesignerOptions.UseSmartTags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseSmartTags { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -205,6 +231,9 @@
       <MemberSignature Language="C#" Value="public virtual bool UseSnapLines { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseSnapLines" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.DesignerOptions.UseSnapLines" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property UseSnapLines As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseSnapLines : bool with get, set" Usage="System.Windows.Forms.Design.DesignerOptions.UseSnapLines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseSnapLines { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

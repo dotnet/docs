@@ -1,7 +1,10 @@
-<Type Name="CngPropertyOptions" FullName="System.Security.Cryptography.CngPropertyOptions">
+﻿<Type Name="CngPropertyOptions" FullName="System.Security.Cryptography.CngPropertyOptions">
   <TypeSignature Language="C#" Value="public enum CngPropertyOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CngPropertyOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngPropertyOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CngPropertyOptions" />
+  <TypeSignature Language="F#" Value="type CngPropertyOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CngPropertyOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="CustomProperty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngPropertyOptions CustomProperty = int32(1073741824)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngPropertyOptions.CustomProperty" />
+      <MemberSignature Language="VB.NET" Value="CustomProperty" />
+      <MemberSignature Language="F#" Value="CustomProperty = 1073741824" Usage="System.Security.Cryptography.CngPropertyOptions.CustomProperty" />
+      <MemberSignature Language="C++ CLI" Value="CustomProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -60,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngPropertyOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1073741824</MemberValue>
       <Docs>
         <summary>The property is not specified by CNG. Use this option to avoid future name conflicts with CNG properties.</summary>
       </Docs>
@@ -68,6 +75,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngPropertyOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngPropertyOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Cryptography.CngPropertyOptions.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -86,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngPropertyOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The referenced property has no options.</summary>
       </Docs>
@@ -94,6 +105,9 @@
       <MemberSignature Language="C#" Value="Persist" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngPropertyOptions Persist = int32(-2147483648)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngPropertyOptions.Persist" />
+      <MemberSignature Language="VB.NET" Value="Persist" />
+      <MemberSignature Language="F#" Value="Persist = -2147483648" Usage="System.Security.Cryptography.CngPropertyOptions.Persist" />
+      <MemberSignature Language="C++ CLI" Value="Persist" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -112,6 +126,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngPropertyOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483648</MemberValue>
       <Docs>
         <summary>The property should be persisted.</summary>
       </Docs>

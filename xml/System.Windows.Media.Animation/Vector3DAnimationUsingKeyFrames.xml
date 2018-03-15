@@ -1,7 +1,10 @@
-<Type Name="Vector3DAnimationUsingKeyFrames" FullName="System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames">
+﻿<Type Name="Vector3DAnimationUsingKeyFrames" FullName="System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames">
   <TypeSignature Language="C#" Value="public class Vector3DAnimationUsingKeyFrames : System.Windows.Media.Animation.Vector3DAnimationBase, System.Windows.Markup.IAddChild, System.Windows.Media.Animation.IKeyFrameAnimation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Vector3DAnimationUsingKeyFrames extends System.Windows.Media.Animation.Vector3DAnimationBase implements class System.Windows.Markup.IAddChild, class System.Windows.Media.Animation.IKeyFrameAnimation" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames" />
+  <TypeSignature Language="VB.NET" Value="Public Class Vector3DAnimationUsingKeyFrames&#xA;Inherits Vector3DAnimationBase&#xA;Implements IAddChild, IKeyFrameAnimation" />
+  <TypeSignature Language="F#" Value="type Vector3DAnimationUsingKeyFrames = class&#xA;    inherit Vector3DAnimationBase&#xA;    interface IKeyFrameAnimation&#xA;    interface IAddChild" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Vector3DAnimationUsingKeyFrames : System::Windows::Media::Animation::Vector3DAnimationBase, System::Windows::Markup::IAddChild, System::Windows::Media::Animation::IKeyFrameAnimation" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,8 @@
       <MemberSignature Language="C#" Value="public Vector3DAnimationUsingKeyFrames ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector3DAnimationUsingKeyFrames();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -57,7 +62,13 @@
       <MemberSignature Language="C#" Value="protected virtual void AddChild (object child);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddChild(object child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddChild (child As Object)" />
+      <MemberSignature Language="F#" Value="abstract member AddChild : obj -&gt; unit&#xA;override this.AddChild : obj -&gt; unit" Usage="vector3DAnimationUsingKeyFrames.AddChild child" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddChild(System::Object ^ child);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,7 +102,13 @@
       <MemberSignature Language="C#" Value="protected virtual void AddText (string childText);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddText(string childText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddText (childText As String)" />
+      <MemberSignature Language="F#" Value="abstract member AddText : string -&gt; unit&#xA;override this.AddText : string -&gt; unit" Usage="vector3DAnimationUsingKeyFrames.AddText childText" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddText(System::String ^ childText);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -125,6 +142,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Vector3DAnimationUsingKeyFrames" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames" Usage="vector3DAnimationUsingKeyFrames.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::Vector3DAnimationUsingKeyFrames ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +171,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="vector3DAnimationUsingKeyFrames.CloneCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -173,6 +196,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Vector3DAnimationUsingKeyFrames" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames" Usage="vector3DAnimationUsingKeyFrames.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::Vector3DAnimationUsingKeyFrames ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -193,6 +219,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="vector3DAnimationUsingKeyFrames.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -215,6 +244,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="vector3DAnimationUsingKeyFrames.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -235,6 +267,9 @@
       <MemberSignature Language="C#" Value="protected override bool FreezeCore (bool isChecking);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool FreezeCore(bool isChecking) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.FreezeCore(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function FreezeCore (isChecking As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.FreezeCore : bool -&gt; bool" Usage="vector3DAnimationUsingKeyFrames.FreezeCore isChecking" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -261,6 +296,9 @@
       <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (source As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="vector3DAnimationUsingKeyFrames.GetAsFrozenCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -289,6 +327,9 @@
       <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (source As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="vector3DAnimationUsingKeyFrames.GetCurrentValueAsFrozenCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -311,6 +352,8 @@
       <MemberSignature Language="C#" Value="protected override sealed System.Windows.Media.Media3D.Vector3D GetCurrentValueCore (System.Windows.Media.Media3D.Vector3D defaultOriginValue, System.Windows.Media.Media3D.Vector3D defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Media.Media3D.Vector3D GetCurrentValueCore(valuetype System.Windows.Media.Media3D.Vector3D defaultOriginValue, valuetype System.Windows.Media.Media3D.Vector3D defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.GetCurrentValueCore(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueCore : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Animation.AnimationClock -&gt; System.Windows.Media.Media3D.Vector3D" Usage="vector3DAnimationUsingKeyFrames.GetCurrentValueCore (defaultOriginValue, defaultDestinationValue, animationClock)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Media3D::Vector3D GetCurrentValueCore(System::Windows::Media::Media3D::Vector3D defaultOriginValue, System::Windows::Media::Media3D::Vector3D defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -347,6 +390,8 @@
       <MemberSignature Language="C#" Value="protected override sealed System.Windows.Duration GetNaturalDurationCore (System.Windows.Media.Animation.Clock clock);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Duration GetNaturalDurationCore(class System.Windows.Media.Animation.Clock clock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.GetNaturalDurationCore(System.Windows.Media.Animation.Clock)" />
+      <MemberSignature Language="F#" Value="override this.GetNaturalDurationCore : System.Windows.Media.Animation.Clock -&gt; System.Windows.Duration" Usage="vector3DAnimationUsingKeyFrames.GetNaturalDurationCore clock" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Duration GetNaturalDurationCore(System::Windows::Media::Animation::Clock ^ clock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -371,6 +416,9 @@
       <MemberSignature Language="C#" Value="public bool IsAdditive { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAdditive" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.IsAdditive" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAdditive As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAdditive : bool with get, set" Usage="System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.IsAdditive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAdditive { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -390,6 +438,9 @@
       <MemberSignature Language="C#" Value="public bool IsCumulative { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCumulative" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.IsCumulative" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsCumulative As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCumulative : bool with get, set" Usage="System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.IsCumulative" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCumulative { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -417,6 +468,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.Vector3DKeyFrameCollection KeyFrames { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.Vector3DKeyFrameCollection KeyFrames" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.KeyFrames" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyFrames As Vector3DKeyFrameCollection" />
+      <MemberSignature Language="F#" Value="member this.KeyFrames : System.Windows.Media.Animation.Vector3DKeyFrameCollection with get, set" Usage="System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.KeyFrames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::Vector3DKeyFrameCollection ^ KeyFrames { System::Windows::Media::Animation::Vector3DKeyFrameCollection ^ get(); void set(System::Windows::Media::Animation::Vector3DKeyFrameCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -436,6 +490,9 @@
       <MemberSignature Language="C#" Value="protected override void OnChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.OnChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnChanged ()" />
+      <MemberSignature Language="F#" Value="override this.OnChanged : unit -&gt; unit" Usage="vector3DAnimationUsingKeyFrames.OnChanged " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -455,6 +512,9 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeKeyFrames ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeKeyFrames() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.ShouldSerializeKeyFrames" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeKeyFrames () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeKeyFrames : unit -&gt; bool" Usage="vector3DAnimationUsingKeyFrames.ShouldSerializeKeyFrames " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeKeyFrames();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -480,7 +540,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddChild (object child);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddChild (child As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ child) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -501,7 +566,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddText (string childText);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string childText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddText (childText As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ childText) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -522,7 +592,13 @@
       <MemberSignature Language="C#" Value="System.Collections.IList System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.System#Windows#Media#Animation#IKeyFrameAnimation#KeyFrames" />
+      <MemberSignature Language="VB.NET" Value=" Property KeyFrames As IList Implements IKeyFrameAnimation.KeyFrames" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.Vector3DAnimationUsingKeyFrames.System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::IList ^ System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames { System::Collections::IList ^ get(); void set(System::Collections::IList ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Media.Animation.IKeyFrameAnimation.KeyFrames</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

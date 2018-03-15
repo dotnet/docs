@@ -1,7 +1,10 @@
-<Type Name="TabInfo" FullName="Microsoft.VisualBasic.TabInfo">
+﻿<Type Name="TabInfo" FullName="Microsoft.VisualBasic.TabInfo">
   <TypeSignature Language="C#" Value="public struct TabInfo" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed TabInfo extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.TabInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Structure TabInfo" />
+  <TypeSignature Language="F#" Value="type TabInfo = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class TabInfo" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public short Column;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 Column" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.TabInfo.Column" />
+      <MemberSignature Language="VB.NET" Value="Public Column As Short " />
+      <MemberSignature Language="F#" Value="val mutable Column : int16" Usage="Microsoft.VisualBasic.TabInfo.Column" />
+      <MemberSignature Language="C++ CLI" Value="public: short Column;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

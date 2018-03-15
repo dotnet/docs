@@ -1,7 +1,10 @@
-<Type Name="DiscoveryExceptionDictionary" FullName="System.Web.Services.Discovery.DiscoveryExceptionDictionary">
+﻿<Type Name="DiscoveryExceptionDictionary" FullName="System.Web.Services.Discovery.DiscoveryExceptionDictionary">
   <TypeSignature Language="C#" Value="public sealed class DiscoveryExceptionDictionary : System.Collections.DictionaryBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiscoveryExceptionDictionary extends System.Collections.DictionaryBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryExceptionDictionary" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiscoveryExceptionDictionary&#xA;Inherits DictionaryBase" />
+  <TypeSignature Language="F#" Value="type DiscoveryExceptionDictionary = class&#xA;    inherit DictionaryBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryExceptionDictionary sealed : System::Collections::DictionaryBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="public DiscoveryExceptionDictionary ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryExceptionDictionary.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryExceptionDictionary();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -54,6 +59,9 @@
       <MemberSignature Language="C#" Value="public void Add (string url, Exception value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string url, class System.Exception value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryExceptionDictionary.Add(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (url As String, value As Exception)" />
+      <MemberSignature Language="F#" Value="member this.Add : string * Exception -&gt; unit" Usage="discoveryExceptionDictionary.Add (url, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ url, Exception ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -91,6 +99,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryExceptionDictionary.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (url As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="discoveryExceptionDictionary.Contains url" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -127,6 +138,9 @@
       <MemberSignature Language="C#" Value="public Exception this[string url] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryExceptionDictionary.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(url As String) As Exception" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : Exception with get, set" Usage="System.Web.Services.Discovery.DiscoveryExceptionDictionary.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ default[System::String ^] { Exception ^ get(System::String ^ url); void set(System::String ^ url, Exception ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -161,6 +175,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Keys" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryExceptionDictionary.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Web.Services.Discovery.DiscoveryExceptionDictionary.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -190,6 +207,9 @@
       <MemberSignature Language="C#" Value="public void Remove (string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryExceptionDictionary.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (url As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="discoveryExceptionDictionary.Remove url" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -224,6 +244,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Values" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryExceptionDictionary.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.ICollection" Usage="System.Web.Services.Discovery.DiscoveryExceptionDictionary.Values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Values { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

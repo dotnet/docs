@@ -1,7 +1,10 @@
-<Type Name="ModelChangeType" FullName="System.Activities.Presentation.Services.ModelChangeType">
+﻿<Type Name="ModelChangeType" FullName="System.Activities.Presentation.Services.ModelChangeType">
   <TypeSignature Language="C#" Value="public enum ModelChangeType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ModelChangeType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Services.ModelChangeType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ModelChangeType" />
+  <TypeSignature Language="F#" Value="type ModelChangeType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ModelChangeType" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="CollectionItemAdded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Services.ModelChangeType CollectionItemAdded = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.CollectionItemAdded" />
+      <MemberSignature Language="VB.NET" Value="CollectionItemAdded" />
+      <MemberSignature Language="F#" Value="CollectionItemAdded = 2" Usage="System.Activities.Presentation.Services.ModelChangeType.CollectionItemAdded" />
+      <MemberSignature Language="C++ CLI" Value="CollectionItemAdded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.Presentation.Services.ModelChangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A collection item is added.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="CollectionItemRemoved" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Services.ModelChangeType CollectionItemRemoved = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.CollectionItemRemoved" />
+      <MemberSignature Language="VB.NET" Value="CollectionItemRemoved" />
+      <MemberSignature Language="F#" Value="CollectionItemRemoved = 3" Usage="System.Activities.Presentation.Services.ModelChangeType.CollectionItemRemoved" />
+      <MemberSignature Language="C++ CLI" Value="CollectionItemRemoved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.Presentation.Services.ModelChangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A collection item is removed.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="DictionaryKeyValueAdded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Services.ModelChangeType DictionaryKeyValueAdded = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.DictionaryKeyValueAdded" />
+      <MemberSignature Language="VB.NET" Value="DictionaryKeyValueAdded" />
+      <MemberSignature Language="F#" Value="DictionaryKeyValueAdded = 4" Usage="System.Activities.Presentation.Services.ModelChangeType.DictionaryKeyValueAdded" />
+      <MemberSignature Language="C++ CLI" Value="DictionaryKeyValueAdded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.Presentation.Services.ModelChangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A dictionary key value is added.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="DictionaryKeyValueRemoved" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Services.ModelChangeType DictionaryKeyValueRemoved = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.DictionaryKeyValueRemoved" />
+      <MemberSignature Language="VB.NET" Value="DictionaryKeyValueRemoved" />
+      <MemberSignature Language="F#" Value="DictionaryKeyValueRemoved = 5" Usage="System.Activities.Presentation.Services.ModelChangeType.DictionaryKeyValueRemoved" />
+      <MemberSignature Language="C++ CLI" Value="DictionaryKeyValueRemoved" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.Presentation.Services.ModelChangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A dictionary key value is removed.</summary>
       </Docs>
@@ -82,6 +101,9 @@
       <MemberSignature Language="C#" Value="DictionaryValueChanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Services.ModelChangeType DictionaryValueChanged = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.DictionaryValueChanged" />
+      <MemberSignature Language="VB.NET" Value="DictionaryValueChanged" />
+      <MemberSignature Language="F#" Value="DictionaryValueChanged = 6" Usage="System.Activities.Presentation.Services.ModelChangeType.DictionaryValueChanged" />
+      <MemberSignature Language="C++ CLI" Value="DictionaryValueChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -90,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.Presentation.Services.ModelChangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A dictionary value is changed.</summary>
       </Docs>
@@ -98,6 +121,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Services.ModelChangeType None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Activities.Presentation.Services.ModelChangeType.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -106,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.Presentation.Services.ModelChangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>None operation.</summary>
       </Docs>
@@ -114,6 +141,9 @@
       <MemberSignature Language="C#" Value="PropertyChanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.Presentation.Services.ModelChangeType PropertyChanged = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Services.ModelChangeType.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="PropertyChanged" />
+      <MemberSignature Language="F#" Value="PropertyChanged = 1" Usage="System.Activities.Presentation.Services.ModelChangeType.PropertyChanged" />
+      <MemberSignature Language="C++ CLI" Value="PropertyChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -122,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.Presentation.Services.ModelChangeType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A property is changed.</summary>
       </Docs>

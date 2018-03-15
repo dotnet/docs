@@ -1,7 +1,10 @@
-<Type Name="SqlError" FullName="System.Data.SqlClient.SqlError">
+﻿<Type Name="SqlError" FullName="System.Data.SqlClient.SqlError">
   <TypeSignature Language="C#" Value="public sealed class SqlError" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SqlError extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlError" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlError" />
+  <TypeSignature Language="F#" Value="type SqlError = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlError sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -52,6 +55,9 @@
       <MemberSignature Language="C#" Value="public byte Class { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 Class" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlError.Class" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Class As Byte" />
+      <MemberSignature Language="F#" Value="member this.Class : byte" Usage="System.Data.SqlClient.SqlError.Class" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte Class { System::Byte get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -99,6 +105,9 @@
       <MemberSignature Language="C#" Value="public int LineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LineNumber" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlError.LineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="System.Data.SqlClient.SqlError.LineNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -144,6 +153,9 @@
       <MemberSignature Language="C#" Value="public string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlError.Message" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Data.SqlClient.SqlError.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -184,6 +196,9 @@
       <MemberSignature Language="C#" Value="public int Number { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Number" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlError.Number" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Number As Integer" />
+      <MemberSignature Language="F#" Value="member this.Number : int" Usage="System.Data.SqlClient.SqlError.Number" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Number { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -242,6 +257,9 @@
       <MemberSignature Language="C#" Value="public string Procedure { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Procedure" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlError.Procedure" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Procedure As String" />
+      <MemberSignature Language="F#" Value="member this.Procedure : string" Usage="System.Data.SqlClient.SqlError.Procedure" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Procedure { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -282,6 +300,9 @@
       <MemberSignature Language="C#" Value="public string Server { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Server" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlError.Server" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Server As String" />
+      <MemberSignature Language="F#" Value="member this.Server : string" Usage="System.Data.SqlClient.SqlError.Server" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Server { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -320,6 +341,9 @@
       <MemberSignature Language="C#" Value="public string Source { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Source" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlError.Source" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Source As String" />
+      <MemberSignature Language="F#" Value="member this.Source : string" Usage="System.Data.SqlClient.SqlError.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Source { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -358,6 +382,9 @@
       <MemberSignature Language="C#" Value="public byte State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 State" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlError.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As Byte" />
+      <MemberSignature Language="F#" Value="member this.State : byte" Usage="System.Data.SqlClient.SqlError.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte State { System::Byte get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -403,6 +430,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlError.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="sqlError.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>

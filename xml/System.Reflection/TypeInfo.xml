@@ -1,7 +1,10 @@
-<Type Name="TypeInfo" FullName="System.Reflection.TypeInfo">
+﻿<Type Name="TypeInfo" FullName="System.Reflection.TypeInfo">
   <TypeSignature Language="C#" Value="public abstract class TypeInfo : Type, System.Reflection.IReflectableType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit TypeInfo extends System.Type implements class System.Reflection.IReflectableType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.TypeInfo" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TypeInfo&#xA;Inherits Type&#xA;Implements IReflectableType" />
+  <TypeSignature Language="F#" Value="type TypeInfo = class&#xA;    inherit Type&#xA;    interface IReflectableType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeInfo abstract : Type, System::Reflection::IReflectableType" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +70,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Reflection.Assembly Assembly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Assembly Assembly" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.Assembly" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Assembly As Assembly" />
+      <MemberSignature Language="F#" Value="member this.Assembly : System.Reflection.Assembly" Usage="System.Reflection.TypeInfo.Assembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::Assembly ^ Assembly { System::Reflection::Assembly ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -87,6 +93,9 @@
       <MemberSignature Language="C#" Value="public abstract string AssemblyQualifiedName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyQualifiedName" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.AssemblyQualifiedName" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property AssemblyQualifiedName As String" />
+      <MemberSignature Language="F#" Value="member this.AssemblyQualifiedName : string" Usage="System.Reflection.TypeInfo.AssemblyQualifiedName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ AssemblyQualifiedName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -107,6 +116,9 @@
       <MemberSignature Language="C#" Value="public virtual Type AsType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type AsType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.AsType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AsType () As Type" />
+      <MemberSignature Language="F#" Value="abstract member AsType : unit -&gt; Type&#xA;override this.AsType : unit -&gt; Type" Usage="typeInfo.AsType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ AsType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -141,6 +153,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Reflection.TypeAttributes Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.TypeAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Attributes As TypeAttributes" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.TypeAttributes" Usage="System.Reflection.TypeInfo.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::TypeAttributes Attributes { System::Reflection::TypeAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -161,6 +176,9 @@
       <MemberSignature Language="C#" Value="public abstract Type BaseType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BaseType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.BaseType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BaseType As Type" />
+      <MemberSignature Language="F#" Value="member this.BaseType : Type" Usage="System.Reflection.TypeInfo.BaseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Type ^ BaseType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -181,6 +199,9 @@
       <MemberSignature Language="C#" Value="public abstract bool ContainsGenericParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ContainsGenericParameters" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.ContainsGenericParameters" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ContainsGenericParameters As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ContainsGenericParameters : bool" Usage="System.Reflection.TypeInfo.ContainsGenericParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool ContainsGenericParameters { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -201,6 +222,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Reflection.ConstructorInfo&gt; DeclaredConstructors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.ConstructorInfo&gt; DeclaredConstructors" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.DeclaredConstructors" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DeclaredConstructors As IEnumerable(Of ConstructorInfo)" />
+      <MemberSignature Language="F#" Value="member this.DeclaredConstructors : seq&lt;System.Reflection.ConstructorInfo&gt;" Usage="System.Reflection.TypeInfo.DeclaredConstructors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Reflection::ConstructorInfo ^&gt; ^ DeclaredConstructors { System::Collections::Generic::IEnumerable&lt;System::Reflection::ConstructorInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -241,6 +265,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Reflection.EventInfo&gt; DeclaredEvents { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.EventInfo&gt; DeclaredEvents" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.DeclaredEvents" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DeclaredEvents As IEnumerable(Of EventInfo)" />
+      <MemberSignature Language="F#" Value="member this.DeclaredEvents : seq&lt;System.Reflection.EventInfo&gt;" Usage="System.Reflection.TypeInfo.DeclaredEvents" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Reflection::EventInfo ^&gt; ^ DeclaredEvents { System::Collections::Generic::IEnumerable&lt;System::Reflection::EventInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -281,6 +308,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Reflection.FieldInfo&gt; DeclaredFields { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.FieldInfo&gt; DeclaredFields" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.DeclaredFields" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DeclaredFields As IEnumerable(Of FieldInfo)" />
+      <MemberSignature Language="F#" Value="member this.DeclaredFields : seq&lt;System.Reflection.FieldInfo&gt;" Usage="System.Reflection.TypeInfo.DeclaredFields" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Reflection::FieldInfo ^&gt; ^ DeclaredFields { System::Collections::Generic::IEnumerable&lt;System::Reflection::FieldInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -321,6 +351,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Reflection.MemberInfo&gt; DeclaredMembers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.MemberInfo&gt; DeclaredMembers" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.DeclaredMembers" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DeclaredMembers As IEnumerable(Of MemberInfo)" />
+      <MemberSignature Language="F#" Value="member this.DeclaredMembers : seq&lt;System.Reflection.MemberInfo&gt;" Usage="System.Reflection.TypeInfo.DeclaredMembers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Reflection::MemberInfo ^&gt; ^ DeclaredMembers { System::Collections::Generic::IEnumerable&lt;System::Reflection::MemberInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -361,6 +394,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Reflection.MethodInfo&gt; DeclaredMethods { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.MethodInfo&gt; DeclaredMethods" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.DeclaredMethods" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DeclaredMethods As IEnumerable(Of MethodInfo)" />
+      <MemberSignature Language="F#" Value="member this.DeclaredMethods : seq&lt;System.Reflection.MethodInfo&gt;" Usage="System.Reflection.TypeInfo.DeclaredMethods" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Reflection::MethodInfo ^&gt; ^ DeclaredMethods { System::Collections::Generic::IEnumerable&lt;System::Reflection::MethodInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -409,6 +445,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Reflection.TypeInfo&gt; DeclaredNestedTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.TypeInfo&gt; DeclaredNestedTypes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.DeclaredNestedTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DeclaredNestedTypes As IEnumerable(Of TypeInfo)" />
+      <MemberSignature Language="F#" Value="member this.DeclaredNestedTypes : seq&lt;System.Reflection.TypeInfo&gt;" Usage="System.Reflection.TypeInfo.DeclaredNestedTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Reflection::TypeInfo ^&gt; ^ DeclaredNestedTypes { System::Collections::Generic::IEnumerable&lt;System::Reflection::TypeInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -449,6 +488,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Reflection.PropertyInfo&gt; DeclaredProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.PropertyInfo&gt; DeclaredProperties" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.DeclaredProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DeclaredProperties As IEnumerable(Of PropertyInfo)" />
+      <MemberSignature Language="F#" Value="member this.DeclaredProperties : seq&lt;System.Reflection.PropertyInfo&gt;" Usage="System.Reflection.TypeInfo.DeclaredProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Reflection::PropertyInfo ^&gt; ^ DeclaredProperties { System::Collections::Generic::IEnumerable&lt;System::Reflection::PropertyInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -492,6 +534,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Reflection.MethodBase DeclaringMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MethodBase DeclaringMethod" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.DeclaringMethod" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DeclaringMethod As MethodBase" />
+      <MemberSignature Language="F#" Value="member this.DeclaringMethod : System.Reflection.MethodBase" Usage="System.Reflection.TypeInfo.DeclaringMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::MethodBase ^ DeclaringMethod { System::Reflection::MethodBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -512,6 +557,9 @@
       <MemberSignature Language="C#" Value="public virtual Type[] FindInterfaces (System.Reflection.TypeFilter filter, object filterCriteria);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] FindInterfaces(class System.Reflection.TypeFilter filter, object filterCriteria) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.FindInterfaces(System.Reflection.TypeFilter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function FindInterfaces (filter As TypeFilter, filterCriteria As Object) As Type()" />
+      <MemberSignature Language="F#" Value="abstract member FindInterfaces : System.Reflection.TypeFilter * obj -&gt; Type[]&#xA;override this.FindInterfaces : System.Reflection.TypeFilter * obj -&gt; Type[]" Usage="typeInfo.FindInterfaces (filter, filterCriteria)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ FindInterfaces(System::Reflection::TypeFilter ^ filter, System::Object ^ filterCriteria);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -536,6 +584,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.MemberInfo[] FindMembers (System.Reflection.MemberTypes memberType, System.Reflection.BindingFlags bindingAttr, System.Reflection.MemberFilter filter, object filterCriteria);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MemberInfo[] FindMembers(valuetype System.Reflection.MemberTypes memberType, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.MemberFilter filter, object filterCriteria) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function FindMembers (memberType As MemberTypes, bindingAttr As BindingFlags, filter As MemberFilter, filterCriteria As Object) As MemberInfo()" />
+      <MemberSignature Language="F#" Value="abstract member FindMembers : System.Reflection.MemberTypes * System.Reflection.BindingFlags * System.Reflection.MemberFilter * obj -&gt; System.Reflection.MemberInfo[]&#xA;override this.FindMembers : System.Reflection.MemberTypes * System.Reflection.BindingFlags * System.Reflection.MemberFilter * obj -&gt; System.Reflection.MemberInfo[]" Usage="typeInfo.FindMembers (memberType, bindingAttr, filter, filterCriteria)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ FindMembers(System::Reflection::MemberTypes memberType, System::Reflection::BindingFlags bindingAttr, System::Reflection::MemberFilter ^ filter, System::Object ^ filterCriteria);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -564,6 +615,9 @@
       <MemberSignature Language="C#" Value="public abstract string FullName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FullName" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.FullName" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property FullName As String" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="System.Reflection.TypeInfo.FullName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ FullName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -584,6 +638,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Reflection.GenericParameterAttributes GenericParameterAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.GenericParameterAttributes GenericParameterAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.GenericParameterAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property GenericParameterAttributes As GenericParameterAttributes" />
+      <MemberSignature Language="F#" Value="member this.GenericParameterAttributes : System.Reflection.GenericParameterAttributes" Usage="System.Reflection.TypeInfo.GenericParameterAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::GenericParameterAttributes GenericParameterAttributes { System::Reflection::GenericParameterAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -604,6 +661,9 @@
       <MemberSignature Language="C#" Value="public abstract int GenericParameterPosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 GenericParameterPosition" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.GenericParameterPosition" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property GenericParameterPosition As Integer" />
+      <MemberSignature Language="F#" Value="member this.GenericParameterPosition : int" Usage="System.Reflection.TypeInfo.GenericParameterPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int GenericParameterPosition { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -624,6 +684,9 @@
       <MemberSignature Language="C#" Value="public abstract Type[] GenericTypeArguments { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] GenericTypeArguments" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.GenericTypeArguments" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property GenericTypeArguments As Type()" />
+      <MemberSignature Language="F#" Value="member this.GenericTypeArguments : Type[]" Usage="System.Reflection.TypeInfo.GenericTypeArguments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property cli::array &lt;Type ^&gt; ^ GenericTypeArguments { cli::array &lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -644,6 +707,9 @@
       <MemberSignature Language="C#" Value="public virtual Type[] GenericTypeParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] GenericTypeParameters" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.GenericTypeParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property GenericTypeParameters As Type()" />
+      <MemberSignature Language="F#" Value="member this.GenericTypeParameters : Type[]" Usage="System.Reflection.TypeInfo.GenericTypeParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;Type ^&gt; ^ GenericTypeParameters { cli::array &lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -677,6 +743,9 @@
       <MemberSignature Language="C#" Value="public abstract int GetArrayRank ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetArrayRank() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetArrayRank" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetArrayRank () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetArrayRank : unit -&gt; int" Usage="typeInfo.GetArrayRank " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetArrayRank();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -698,6 +767,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.ConstructorInfo GetConstructor (Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.ConstructorInfo GetConstructor(class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetConstructor(System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConstructor (types As Type()) As ConstructorInfo" />
+      <MemberSignature Language="F#" Value="member this.GetConstructor : Type[] -&gt; System.Reflection.ConstructorInfo" Usage="typeInfo.GetConstructor types" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::ConstructorInfo ^ GetConstructor(cli::array &lt;Type ^&gt; ^ types);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -720,6 +792,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.ConstructorInfo[] GetConstructors ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.ConstructorInfo[] GetConstructors() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetConstructors" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConstructors () As ConstructorInfo()" />
+      <MemberSignature Language="F#" Value="member this.GetConstructors : unit -&gt; System.Reflection.ConstructorInfo[]" Usage="typeInfo.GetConstructors " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::ConstructorInfo ^&gt; ^ GetConstructors();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -739,6 +814,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.ConstructorInfo[] GetConstructors (System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.ConstructorInfo[] GetConstructors(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetConstructors(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetConstructors (bindingAttr As BindingFlags) As ConstructorInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetConstructors : System.Reflection.BindingFlags -&gt; System.Reflection.ConstructorInfo[]&#xA;override this.GetConstructors : System.Reflection.BindingFlags -&gt; System.Reflection.ConstructorInfo[]" Usage="typeInfo.GetConstructors bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::ConstructorInfo ^&gt; ^ GetConstructors(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -761,6 +839,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.EventInfo GetDeclaredEvent (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.EventInfo GetDeclaredEvent(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetDeclaredEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeclaredEvent (name As String) As EventInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetDeclaredEvent : string -&gt; System.Reflection.EventInfo&#xA;override this.GetDeclaredEvent : string -&gt; System.Reflection.EventInfo" Usage="typeInfo.GetDeclaredEvent name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::EventInfo ^ GetDeclaredEvent(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -800,6 +881,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.FieldInfo GetDeclaredField (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo GetDeclaredField(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetDeclaredField(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeclaredField (name As String) As FieldInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetDeclaredField : string -&gt; System.Reflection.FieldInfo&#xA;override this.GetDeclaredField : string -&gt; System.Reflection.FieldInfo" Usage="typeInfo.GetDeclaredField name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::FieldInfo ^ GetDeclaredField(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -839,6 +923,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.MethodInfo GetDeclaredMethod (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetDeclaredMethod(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetDeclaredMethod(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeclaredMethod (name As String) As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetDeclaredMethod : string -&gt; System.Reflection.MethodInfo&#xA;override this.GetDeclaredMethod : string -&gt; System.Reflection.MethodInfo" Usage="typeInfo.GetDeclaredMethod name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodInfo ^ GetDeclaredMethod(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -878,6 +965,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Reflection.MethodInfo&gt; GetDeclaredMethods (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.MethodInfo&gt; GetDeclaredMethods(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetDeclaredMethods(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeclaredMethods (name As String) As IEnumerable(Of MethodInfo)" />
+      <MemberSignature Language="F#" Value="abstract member GetDeclaredMethods : string -&gt; seq&lt;System.Reflection.MethodInfo&gt;&#xA;override this.GetDeclaredMethods : string -&gt; seq&lt;System.Reflection.MethodInfo&gt;" Usage="typeInfo.GetDeclaredMethods name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Reflection::MethodInfo ^&gt; ^ GetDeclaredMethods(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -917,6 +1007,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.TypeInfo GetDeclaredNestedType (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.TypeInfo GetDeclaredNestedType(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetDeclaredNestedType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeclaredNestedType (name As String) As TypeInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetDeclaredNestedType : string -&gt; System.Reflection.TypeInfo&#xA;override this.GetDeclaredNestedType : string -&gt; System.Reflection.TypeInfo" Usage="typeInfo.GetDeclaredNestedType name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::TypeInfo ^ GetDeclaredNestedType(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -956,6 +1049,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.PropertyInfo GetDeclaredProperty (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo GetDeclaredProperty(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetDeclaredProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDeclaredProperty (name As String) As PropertyInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetDeclaredProperty : string -&gt; System.Reflection.PropertyInfo&#xA;override this.GetDeclaredProperty : string -&gt; System.Reflection.PropertyInfo" Usage="typeInfo.GetDeclaredProperty name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::PropertyInfo ^ GetDeclaredProperty(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -995,6 +1091,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.MemberInfo[] GetDefaultMembers ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MemberInfo[] GetDefaultMembers() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetDefaultMembers" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDefaultMembers () As MemberInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultMembers : unit -&gt; System.Reflection.MemberInfo[]&#xA;override this.GetDefaultMembers : unit -&gt; System.Reflection.MemberInfo[]" Usage="typeInfo.GetDefaultMembers " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetDefaultMembers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1014,6 +1113,9 @@
       <MemberSignature Language="C#" Value="public abstract Type GetElementType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetElementType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetElementType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetElementType () As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetElementType : unit -&gt; Type" Usage="typeInfo.GetElementType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ GetElementType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1035,6 +1137,9 @@
       <MemberSignature Language="C#" Value="public virtual string GetEnumName (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetEnumName(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetEnumName(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumName (value As Object) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumName : obj -&gt; string&#xA;override this.GetEnumName : obj -&gt; string" Usage="typeInfo.GetEnumName value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetEnumName(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1057,6 +1162,9 @@
       <MemberSignature Language="C#" Value="public virtual string[] GetEnumNames ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GetEnumNames() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetEnumNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumNames () As String()" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumNames : unit -&gt; string[]&#xA;override this.GetEnumNames : unit -&gt; string[]" Usage="typeInfo.GetEnumNames " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::String ^&gt; ^ GetEnumNames();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1076,6 +1184,9 @@
       <MemberSignature Language="C#" Value="public virtual Type GetEnumUnderlyingType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetEnumUnderlyingType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetEnumUnderlyingType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumUnderlyingType () As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumUnderlyingType : unit -&gt; Type&#xA;override this.GetEnumUnderlyingType : unit -&gt; Type" Usage="typeInfo.GetEnumUnderlyingType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetEnumUnderlyingType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1095,6 +1206,9 @@
       <MemberSignature Language="C#" Value="public virtual Array GetEnumValues ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Array GetEnumValues() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetEnumValues" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumValues () As Array" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumValues : unit -&gt; Array&#xA;override this.GetEnumValues : unit -&gt; Array" Usage="typeInfo.GetEnumValues " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Array ^ GetEnumValues();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1114,6 +1228,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.EventInfo GetEvent (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.EventInfo GetEvent(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEvent (name As String) As EventInfo" />
+      <MemberSignature Language="F#" Value="member this.GetEvent : string -&gt; System.Reflection.EventInfo" Usage="typeInfo.GetEvent name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::EventInfo ^ GetEvent(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1136,6 +1253,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.EventInfo GetEvent (string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.EventInfo GetEvent(string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetEvent(System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEvent (name As String, bindingAttr As BindingFlags) As EventInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetEvent : string * System.Reflection.BindingFlags -&gt; System.Reflection.EventInfo&#xA;override this.GetEvent : string * System.Reflection.BindingFlags -&gt; System.Reflection.EventInfo" Usage="typeInfo.GetEvent (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::EventInfo ^ GetEvent(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1160,6 +1280,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.EventInfo[] GetEvents ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.EventInfo[] GetEvents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetEvents" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEvents () As EventInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetEvents : unit -&gt; System.Reflection.EventInfo[]&#xA;override this.GetEvents : unit -&gt; System.Reflection.EventInfo[]" Usage="typeInfo.GetEvents " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::EventInfo ^&gt; ^ GetEvents();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1179,6 +1302,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.EventInfo[] GetEvents (System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.EventInfo[] GetEvents(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetEvents(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEvents (bindingAttr As BindingFlags) As EventInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetEvents : System.Reflection.BindingFlags -&gt; System.Reflection.EventInfo[]&#xA;override this.GetEvents : System.Reflection.BindingFlags -&gt; System.Reflection.EventInfo[]" Usage="typeInfo.GetEvents bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::EventInfo ^&gt; ^ GetEvents(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1201,6 +1327,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.FieldInfo GetField (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.FieldInfo GetField(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetField(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetField (name As String) As FieldInfo" />
+      <MemberSignature Language="F#" Value="member this.GetField : string -&gt; System.Reflection.FieldInfo" Usage="typeInfo.GetField name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::FieldInfo ^ GetField(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1223,6 +1352,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.FieldInfo GetField (string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo GetField(string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetField(System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetField (name As String, bindingAttr As BindingFlags) As FieldInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetField : string * System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo&#xA;override this.GetField : string * System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo" Usage="typeInfo.GetField (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::FieldInfo ^ GetField(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1247,6 +1379,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.FieldInfo[] GetFields ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.FieldInfo[] GetFields() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetFields" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFields () As FieldInfo()" />
+      <MemberSignature Language="F#" Value="member this.GetFields : unit -&gt; System.Reflection.FieldInfo[]" Usage="typeInfo.GetFields " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ GetFields();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1266,6 +1401,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.FieldInfo[] GetFields (System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo[] GetFields(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetFields(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFields (bindingAttr As BindingFlags) As FieldInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetFields : System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo[]&#xA;override this.GetFields : System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo[]" Usage="typeInfo.GetFields bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ GetFields(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1288,6 +1426,9 @@
       <MemberSignature Language="C#" Value="public virtual Type[] GetGenericArguments ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetGenericArguments() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetGenericArguments" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGenericArguments () As Type()" />
+      <MemberSignature Language="F#" Value="abstract member GetGenericArguments : unit -&gt; Type[]&#xA;override this.GetGenericArguments : unit -&gt; Type[]" Usage="typeInfo.GetGenericArguments " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetGenericArguments();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1307,6 +1448,9 @@
       <MemberSignature Language="C#" Value="public abstract Type[] GetGenericParameterConstraints ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetGenericParameterConstraints() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetGenericParameterConstraints" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetGenericParameterConstraints () As Type()" />
+      <MemberSignature Language="F#" Value="abstract member GetGenericParameterConstraints : unit -&gt; Type[]" Usage="typeInfo.GetGenericParameterConstraints " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;Type ^&gt; ^ GetGenericParameterConstraints();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1328,6 +1472,9 @@
       <MemberSignature Language="C#" Value="public abstract Type GetGenericTypeDefinition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetGenericTypeDefinition() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetGenericTypeDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetGenericTypeDefinition () As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetGenericTypeDefinition : unit -&gt; Type" Usage="typeInfo.GetGenericTypeDefinition " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ GetGenericTypeDefinition();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1349,6 +1496,9 @@
       <MemberSignature Language="C#" Value="public Type GetInterface (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetInterface(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetInterface(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInterface (name As String) As Type" />
+      <MemberSignature Language="F#" Value="member this.GetInterface : string -&gt; Type" Usage="typeInfo.GetInterface name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetInterface(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1371,6 +1521,9 @@
       <MemberSignature Language="C#" Value="public virtual Type GetInterface (string name, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetInterface(string name, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetInterface(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetInterface (name As String, ignoreCase As Boolean) As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetInterface : string * bool -&gt; Type&#xA;override this.GetInterface : string * bool -&gt; Type" Usage="typeInfo.GetInterface (name, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetInterface(System::String ^ name, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1395,6 +1548,9 @@
       <MemberSignature Language="C#" Value="public virtual Type[] GetInterfaces ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetInterfaces() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetInterfaces" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetInterfaces () As Type()" />
+      <MemberSignature Language="F#" Value="abstract member GetInterfaces : unit -&gt; Type[]&#xA;override this.GetInterfaces : unit -&gt; Type[]" Usage="typeInfo.GetInterfaces " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetInterfaces();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1414,6 +1570,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo[] GetMember (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.MemberInfo[] GetMember(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetMember(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMember (name As String) As MemberInfo()" />
+      <MemberSignature Language="F#" Value="member this.GetMember : string -&gt; System.Reflection.MemberInfo[]" Usage="typeInfo.GetMember name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1436,6 +1595,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.MemberInfo[] GetMember (string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MemberInfo[] GetMember(string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetMember(System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMember (name As String, bindingAttr As BindingFlags) As MemberInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetMember : string * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]&#xA;override this.GetMember : string * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="typeInfo.GetMember (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1460,6 +1622,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.MemberInfo[] GetMember (string name, System.Reflection.MemberTypes type, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MemberInfo[] GetMember(string name, valuetype System.Reflection.MemberTypes type, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetMember(System.String,System.Reflection.MemberTypes,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMember (name As String, type As MemberTypes, bindingAttr As BindingFlags) As MemberInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetMember : string * System.Reflection.MemberTypes * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]&#xA;override this.GetMember : string * System.Reflection.MemberTypes * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="typeInfo.GetMember (name, type, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(System::String ^ name, System::Reflection::MemberTypes type, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1486,6 +1651,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo[] GetMembers ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.MemberInfo[] GetMembers() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetMembers" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMembers () As MemberInfo()" />
+      <MemberSignature Language="F#" Value="member this.GetMembers : unit -&gt; System.Reflection.MemberInfo[]" Usage="typeInfo.GetMembers " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMembers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1505,6 +1673,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.MemberInfo[] GetMembers (System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MemberInfo[] GetMembers(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetMembers(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMembers (bindingAttr As BindingFlags) As MemberInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetMembers : System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]&#xA;override this.GetMembers : System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="typeInfo.GetMembers bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMembers(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1527,6 +1698,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetMethod (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.MethodInfo GetMethod(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetMethod(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMethod (name As String) As MethodInfo" />
+      <MemberSignature Language="F#" Value="member this.GetMethod : string -&gt; System.Reflection.MethodInfo" Usage="typeInfo.GetMethod name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetMethod(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1549,6 +1723,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetMethod (string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.MethodInfo GetMethod(string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetMethod(System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMethod (name As String, bindingAttr As BindingFlags) As MethodInfo" />
+      <MemberSignature Language="F#" Value="member this.GetMethod : string * System.Reflection.BindingFlags -&gt; System.Reflection.MethodInfo" Usage="typeInfo.GetMethod (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetMethod(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1573,6 +1750,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetMethod (string name, Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.MethodInfo GetMethod(string name, class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetMethod(System.String,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMethod (name As String, types As Type()) As MethodInfo" />
+      <MemberSignature Language="F#" Value="member this.GetMethod : string * Type[] -&gt; System.Reflection.MethodInfo" Usage="typeInfo.GetMethod (name, types)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetMethod(System::String ^ name, cli::array &lt;Type ^&gt; ^ types);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1597,6 +1777,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetMethod (string name, Type[] types, System.Reflection.ParameterModifier[] modifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.MethodInfo GetMethod(string name, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetMethod(System.String,System.Type[],System.Reflection.ParameterModifier[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMethod (name As String, types As Type(), modifiers As ParameterModifier()) As MethodInfo" />
+      <MemberSignature Language="F#" Value="member this.GetMethod : string * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.MethodInfo" Usage="typeInfo.GetMethod (name, types, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetMethod(System::String ^ name, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1623,6 +1806,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo[] GetMethods ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.MethodInfo[] GetMethods() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetMethods" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMethods () As MethodInfo()" />
+      <MemberSignature Language="F#" Value="member this.GetMethods : unit -&gt; System.Reflection.MethodInfo[]" Usage="typeInfo.GetMethods " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetMethods();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1642,6 +1828,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.MethodInfo[] GetMethods (System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo[] GetMethods(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetMethods(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetMethods (bindingAttr As BindingFlags) As MethodInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetMethods : System.Reflection.BindingFlags -&gt; System.Reflection.MethodInfo[]&#xA;override this.GetMethods : System.Reflection.BindingFlags -&gt; System.Reflection.MethodInfo[]" Usage="typeInfo.GetMethods bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetMethods(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1664,6 +1853,9 @@
       <MemberSignature Language="C#" Value="public Type GetNestedType (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetNestedType(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetNestedType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNestedType (name As String) As Type" />
+      <MemberSignature Language="F#" Value="member this.GetNestedType : string -&gt; Type" Usage="typeInfo.GetNestedType name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetNestedType(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1686,6 +1878,9 @@
       <MemberSignature Language="C#" Value="public virtual Type GetNestedType (string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetNestedType(string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetNestedType(System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNestedType (name As String, bindingAttr As BindingFlags) As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetNestedType : string * System.Reflection.BindingFlags -&gt; Type&#xA;override this.GetNestedType : string * System.Reflection.BindingFlags -&gt; Type" Usage="typeInfo.GetNestedType (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetNestedType(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1710,6 +1905,9 @@
       <MemberSignature Language="C#" Value="public Type[] GetNestedTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type[] GetNestedTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetNestedTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNestedTypes () As Type()" />
+      <MemberSignature Language="F#" Value="member this.GetNestedTypes : unit -&gt; Type[]" Usage="typeInfo.GetNestedTypes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Type ^&gt; ^ GetNestedTypes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1729,6 +1927,9 @@
       <MemberSignature Language="C#" Value="public virtual Type[] GetNestedTypes (System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetNestedTypes(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetNestedTypes(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNestedTypes (bindingAttr As BindingFlags) As Type()" />
+      <MemberSignature Language="F#" Value="abstract member GetNestedTypes : System.Reflection.BindingFlags -&gt; Type[]&#xA;override this.GetNestedTypes : System.Reflection.BindingFlags -&gt; Type[]" Usage="typeInfo.GetNestedTypes bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetNestedTypes(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1751,6 +1952,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo[] GetProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.PropertyInfo[] GetProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperties () As PropertyInfo()" />
+      <MemberSignature Language="F#" Value="member this.GetProperties : unit -&gt; System.Reflection.PropertyInfo[]" Usage="typeInfo.GetProperties " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ GetProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1770,6 +1974,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.PropertyInfo[] GetProperties (System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo[] GetProperties(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetProperties(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperties (bindingAttr As BindingFlags) As PropertyInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetProperties : System.Reflection.BindingFlags -&gt; System.Reflection.PropertyInfo[]&#xA;override this.GetProperties : System.Reflection.BindingFlags -&gt; System.Reflection.PropertyInfo[]" Usage="typeInfo.GetProperties bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ GetProperties(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1792,6 +1999,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo GetProperty (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.PropertyInfo GetProperty(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (name As String) As PropertyInfo" />
+      <MemberSignature Language="F#" Value="member this.GetProperty : string -&gt; System.Reflection.PropertyInfo" Usage="typeInfo.GetProperty name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PropertyInfo ^ GetProperty(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1814,6 +2024,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo GetProperty (string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.PropertyInfo GetProperty(string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetProperty(System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (name As String, bindingAttr As BindingFlags) As PropertyInfo" />
+      <MemberSignature Language="F#" Value="member this.GetProperty : string * System.Reflection.BindingFlags -&gt; System.Reflection.PropertyInfo" Usage="typeInfo.GetProperty (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PropertyInfo ^ GetProperty(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1838,6 +2051,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo GetProperty (string name, Type returnType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.PropertyInfo GetProperty(string name, class System.Type returnType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetProperty(System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (name As String, returnType As Type) As PropertyInfo" />
+      <MemberSignature Language="F#" Value="member this.GetProperty : string * Type -&gt; System.Reflection.PropertyInfo" Usage="typeInfo.GetProperty (name, returnType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PropertyInfo ^ GetProperty(System::String ^ name, Type ^ returnType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1862,6 +2078,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo GetProperty (string name, Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.PropertyInfo GetProperty(string name, class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetProperty(System.String,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (name As String, types As Type()) As PropertyInfo" />
+      <MemberSignature Language="F#" Value="member this.GetProperty : string * Type[] -&gt; System.Reflection.PropertyInfo" Usage="typeInfo.GetProperty (name, types)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PropertyInfo ^ GetProperty(System::String ^ name, cli::array &lt;Type ^&gt; ^ types);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1886,6 +2105,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo GetProperty (string name, Type returnType, Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.PropertyInfo GetProperty(string name, class System.Type returnType, class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetProperty(System.String,System.Type,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (name As String, returnType As Type, types As Type()) As PropertyInfo" />
+      <MemberSignature Language="F#" Value="member this.GetProperty : string * Type * Type[] -&gt; System.Reflection.PropertyInfo" Usage="typeInfo.GetProperty (name, returnType, types)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PropertyInfo ^ GetProperty(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ types);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1912,6 +2134,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo GetProperty (string name, Type returnType, Type[] types, System.Reflection.ParameterModifier[] modifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.PropertyInfo GetProperty(string name, class System.Type returnType, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.GetProperty(System.String,System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (name As String, returnType As Type, types As Type(), modifiers As ParameterModifier()) As PropertyInfo" />
+      <MemberSignature Language="F#" Value="member this.GetProperty : string * Type * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.PropertyInfo" Usage="typeInfo.GetProperty (name, returnType, types, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PropertyInfo ^ GetProperty(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1940,6 +2165,9 @@
       <MemberSignature Language="C#" Value="public abstract Guid GUID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid GUID" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.GUID" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property GUID As Guid" />
+      <MemberSignature Language="F#" Value="member this.GUID : Guid" Usage="System.Reflection.TypeInfo.GUID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Guid GUID { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1960,6 +2188,9 @@
       <MemberSignature Language="C#" Value="public bool HasElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasElementType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.HasElementType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasElementType As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasElementType : bool" Usage="System.Reflection.TypeInfo.HasElementType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasElementType { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -1980,6 +2211,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;Type&gt; ImplementedInterfaces { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; ImplementedInterfaces" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.ImplementedInterfaces" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ImplementedInterfaces As IEnumerable(Of Type)" />
+      <MemberSignature Language="F#" Value="member this.ImplementedInterfaces : seq&lt;Type&gt;" Usage="System.Reflection.TypeInfo.ImplementedInterfaces" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ ImplementedInterfaces { System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2013,6 +2247,9 @@
       <MemberSignature Language="C#" Value="public bool IsAbstract { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAbstract" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsAbstract" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAbstract As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAbstract : bool" Usage="System.Reflection.TypeInfo.IsAbstract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAbstract { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2033,6 +2270,9 @@
       <MemberSignature Language="C#" Value="public bool IsAnsiClass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAnsiClass" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsAnsiClass" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAnsiClass As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAnsiClass : bool" Usage="System.Reflection.TypeInfo.IsAnsiClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAnsiClass { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2053,6 +2293,9 @@
       <MemberSignature Language="C#" Value="public bool IsArray { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsArray" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsArray" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsArray As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsArray : bool" Usage="System.Reflection.TypeInfo.IsArray" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsArray { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2073,6 +2316,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsAssignableFrom (System.Reflection.TypeInfo typeInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsAssignableFrom(class System.Reflection.TypeInfo typeInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.IsAssignableFrom(System.Reflection.TypeInfo)" />
+      <MemberSignature Language="F#" Value="override this.IsAssignableFrom : System.Reflection.TypeInfo -&gt; bool" Usage="typeInfo.IsAssignableFrom typeInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsAssignableFrom(System::Reflection::TypeInfo ^ typeInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2111,6 +2356,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsAssignableFrom (Type c);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsAssignableFrom(class System.Type c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.IsAssignableFrom(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsAssignableFrom (c As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsAssignableFrom : Type -&gt; bool&#xA;override this.IsAssignableFrom : Type -&gt; bool" Usage="typeInfo.IsAssignableFrom c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsAssignableFrom(Type ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2133,6 +2381,9 @@
       <MemberSignature Language="C#" Value="public bool IsAutoClass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAutoClass" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsAutoClass" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAutoClass As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAutoClass : bool" Usage="System.Reflection.TypeInfo.IsAutoClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAutoClass { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2153,6 +2404,9 @@
       <MemberSignature Language="C#" Value="public bool IsAutoLayout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAutoLayout" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsAutoLayout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAutoLayout As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAutoLayout : bool" Usage="System.Reflection.TypeInfo.IsAutoLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAutoLayout { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2173,6 +2427,9 @@
       <MemberSignature Language="C#" Value="public bool IsByRef { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsByRef" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsByRef" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsByRef As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsByRef : bool" Usage="System.Reflection.TypeInfo.IsByRef" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsByRef { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2193,6 +2450,9 @@
       <MemberSignature Language="C#" Value="public bool IsClass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsClass" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsClass" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsClass As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsClass : bool" Usage="System.Reflection.TypeInfo.IsClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsClass { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2213,6 +2473,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsCOMObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCOMObject" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsCOMObject" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsCOMObject As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCOMObject : bool" Usage="System.Reflection.TypeInfo.IsCOMObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsCOMObject { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2231,6 +2494,9 @@
       <MemberSignature Language="C#" Value="public abstract bool IsEnum { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEnum" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsEnum" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsEnum As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEnum : bool" Usage="System.Reflection.TypeInfo.IsEnum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsEnum { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2251,6 +2517,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsEnumDefined (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsEnumDefined(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.IsEnumDefined(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsEnumDefined (value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsEnumDefined : obj -&gt; bool&#xA;override this.IsEnumDefined : obj -&gt; bool" Usage="typeInfo.IsEnumDefined value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsEnumDefined(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2273,6 +2542,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsEquivalentTo (Type other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsEquivalentTo(class System.Type other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.IsEquivalentTo(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsEquivalentTo (other As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsEquivalentTo : Type -&gt; bool&#xA;override this.IsEquivalentTo : Type -&gt; bool" Usage="typeInfo.IsEquivalentTo other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsEquivalentTo(Type ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2295,6 +2567,9 @@
       <MemberSignature Language="C#" Value="public bool IsExplicitLayout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsExplicitLayout" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsExplicitLayout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsExplicitLayout As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsExplicitLayout : bool" Usage="System.Reflection.TypeInfo.IsExplicitLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsExplicitLayout { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2315,6 +2590,9 @@
       <MemberSignature Language="C#" Value="public abstract bool IsGenericParameter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsGenericParameter" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsGenericParameter" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsGenericParameter As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsGenericParameter : bool" Usage="System.Reflection.TypeInfo.IsGenericParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsGenericParameter { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2335,6 +2613,9 @@
       <MemberSignature Language="C#" Value="public abstract bool IsGenericType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsGenericType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsGenericType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsGenericType As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsGenericType : bool" Usage="System.Reflection.TypeInfo.IsGenericType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsGenericType { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2355,6 +2636,9 @@
       <MemberSignature Language="C#" Value="public abstract bool IsGenericTypeDefinition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsGenericTypeDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsGenericTypeDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsGenericTypeDefinition As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsGenericTypeDefinition : bool" Usage="System.Reflection.TypeInfo.IsGenericTypeDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsGenericTypeDefinition { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2375,6 +2659,9 @@
       <MemberSignature Language="C#" Value="public bool IsImport { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsImport" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsImport" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImport As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsImport : bool" Usage="System.Reflection.TypeInfo.IsImport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImport { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2395,6 +2682,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsInstanceOfType (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsInstanceOfType(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.IsInstanceOfType(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsInstanceOfType (o As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsInstanceOfType : obj -&gt; bool&#xA;override this.IsInstanceOfType : obj -&gt; bool" Usage="typeInfo.IsInstanceOfType o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsInstanceOfType(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2417,6 +2707,9 @@
       <MemberSignature Language="C#" Value="public bool IsInterface { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInterface" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsInterface" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInterface As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInterface : bool" Usage="System.Reflection.TypeInfo.IsInterface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInterface { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2437,6 +2730,9 @@
       <MemberSignature Language="C#" Value="public bool IsLayoutSequential { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLayoutSequential" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsLayoutSequential" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLayoutSequential As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsLayoutSequential : bool" Usage="System.Reflection.TypeInfo.IsLayoutSequential" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLayoutSequential { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2457,6 +2753,9 @@
       <MemberSignature Language="C#" Value="public bool IsMarshalByRef { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMarshalByRef" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsMarshalByRef" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMarshalByRef As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsMarshalByRef : bool" Usage="System.Reflection.TypeInfo.IsMarshalByRef" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMarshalByRef { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2477,6 +2776,9 @@
       <MemberSignature Language="C#" Value="public bool IsNested { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNested" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsNested" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNested As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNested : bool" Usage="System.Reflection.TypeInfo.IsNested" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNested { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2497,6 +2799,9 @@
       <MemberSignature Language="C#" Value="public bool IsNestedAssembly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNestedAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsNestedAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNestedAssembly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNestedAssembly : bool" Usage="System.Reflection.TypeInfo.IsNestedAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNestedAssembly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2517,6 +2822,9 @@
       <MemberSignature Language="C#" Value="public bool IsNestedFamANDAssem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNestedFamANDAssem" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsNestedFamANDAssem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNestedFamANDAssem As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNestedFamANDAssem : bool" Usage="System.Reflection.TypeInfo.IsNestedFamANDAssem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNestedFamANDAssem { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2537,6 +2845,9 @@
       <MemberSignature Language="C#" Value="public bool IsNestedFamily { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNestedFamily" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsNestedFamily" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNestedFamily As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNestedFamily : bool" Usage="System.Reflection.TypeInfo.IsNestedFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNestedFamily { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2557,6 +2868,9 @@
       <MemberSignature Language="C#" Value="public bool IsNestedFamORAssem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNestedFamORAssem" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsNestedFamORAssem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNestedFamORAssem As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNestedFamORAssem : bool" Usage="System.Reflection.TypeInfo.IsNestedFamORAssem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNestedFamORAssem { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2577,6 +2891,9 @@
       <MemberSignature Language="C#" Value="public bool IsNestedPrivate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNestedPrivate" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsNestedPrivate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNestedPrivate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNestedPrivate : bool" Usage="System.Reflection.TypeInfo.IsNestedPrivate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNestedPrivate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2597,6 +2914,9 @@
       <MemberSignature Language="C#" Value="public bool IsNestedPublic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNestedPublic" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsNestedPublic" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNestedPublic As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNestedPublic : bool" Usage="System.Reflection.TypeInfo.IsNestedPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNestedPublic { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2617,6 +2937,9 @@
       <MemberSignature Language="C#" Value="public bool IsNotPublic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNotPublic" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsNotPublic" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNotPublic As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNotPublic : bool" Usage="System.Reflection.TypeInfo.IsNotPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNotPublic { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2637,6 +2960,9 @@
       <MemberSignature Language="C#" Value="public bool IsPointer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPointer" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsPointer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPointer As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPointer : bool" Usage="System.Reflection.TypeInfo.IsPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPointer { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2657,6 +2983,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsPrimitive { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPrimitive" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsPrimitive" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsPrimitive As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPrimitive : bool" Usage="System.Reflection.TypeInfo.IsPrimitive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsPrimitive { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2677,6 +3006,9 @@
       <MemberSignature Language="C#" Value="public bool IsPublic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPublic" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsPublic" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPublic As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPublic : bool" Usage="System.Reflection.TypeInfo.IsPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPublic { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2697,6 +3029,9 @@
       <MemberSignature Language="C#" Value="public bool IsSealed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSealed" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsSealed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSealed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSealed : bool" Usage="System.Reflection.TypeInfo.IsSealed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSealed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2717,6 +3052,9 @@
       <MemberSignature Language="C#" Value="public abstract bool IsSerializable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSerializable" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsSerializable" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsSerializable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSerializable : bool" Usage="System.Reflection.TypeInfo.IsSerializable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsSerializable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2737,6 +3075,9 @@
       <MemberSignature Language="C#" Value="public bool IsSpecialName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSpecialName" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsSpecialName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSpecialName As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSpecialName : bool" Usage="System.Reflection.TypeInfo.IsSpecialName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSpecialName { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2757,6 +3098,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsSubclassOf (Type c);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSubclassOf(class System.Type c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.IsSubclassOf(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsSubclassOf (c As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsSubclassOf : Type -&gt; bool&#xA;override this.IsSubclassOf : Type -&gt; bool" Usage="typeInfo.IsSubclassOf c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsSubclassOf(Type ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2781,6 +3125,9 @@
       <MemberSignature Language="C#" Value="public bool IsUnicodeClass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUnicodeClass" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsUnicodeClass" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUnicodeClass As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsUnicodeClass : bool" Usage="System.Reflection.TypeInfo.IsUnicodeClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUnicodeClass { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2801,6 +3148,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsValueType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsValueType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsValueType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsValueType As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsValueType : bool" Usage="System.Reflection.TypeInfo.IsValueType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsValueType { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2821,6 +3171,9 @@
       <MemberSignature Language="C#" Value="public bool IsVisible { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsVisible" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.IsVisible" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsVisible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsVisible : bool" Usage="System.Reflection.TypeInfo.IsVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVisible { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2841,6 +3194,9 @@
       <MemberSignature Language="C#" Value="public abstract Type MakeArrayType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type MakeArrayType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.MakeArrayType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function MakeArrayType () As Type" />
+      <MemberSignature Language="F#" Value="abstract member MakeArrayType : unit -&gt; Type" Usage="typeInfo.MakeArrayType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ MakeArrayType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2862,6 +3218,9 @@
       <MemberSignature Language="C#" Value="public abstract Type MakeArrayType (int rank);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type MakeArrayType(int32 rank) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.MakeArrayType(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function MakeArrayType (rank As Integer) As Type" />
+      <MemberSignature Language="F#" Value="abstract member MakeArrayType : int -&gt; Type" Usage="typeInfo.MakeArrayType rank" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ MakeArrayType(int rank);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2886,6 +3245,9 @@
       <MemberSignature Language="C#" Value="public abstract Type MakeByRefType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type MakeByRefType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.MakeByRefType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function MakeByRefType () As Type" />
+      <MemberSignature Language="F#" Value="abstract member MakeByRefType : unit -&gt; Type" Usage="typeInfo.MakeByRefType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ MakeByRefType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2907,6 +3269,9 @@
       <MemberSignature Language="C#" Value="public abstract Type MakeGenericType (params Type[] typeArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type MakeGenericType(class System.Type[] typeArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.MakeGenericType(System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function MakeGenericType (ParamArray typeArguments As Type()) As Type" />
+      <MemberSignature Language="F#" Value="abstract member MakeGenericType : Type[] -&gt; Type" Usage="typeInfo.MakeGenericType typeArguments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ MakeGenericType(... cli::array &lt;Type ^&gt; ^ typeArguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2937,6 +3302,9 @@
       <MemberSignature Language="C#" Value="public abstract Type MakePointerType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type MakePointerType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.MakePointerType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function MakePointerType () As Type" />
+      <MemberSignature Language="F#" Value="abstract member MakePointerType : unit -&gt; Type" Usage="typeInfo.MakePointerType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ MakePointerType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2958,6 +3326,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.MemberTypes MemberType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.MemberTypes MemberType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.MemberType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MemberType As MemberTypes" />
+      <MemberSignature Language="F#" Value="member this.MemberType : System.Reflection.MemberTypes" Usage="System.Reflection.TypeInfo.MemberType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MemberTypes MemberType { System::Reflection::MemberTypes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2976,6 +3347,9 @@
       <MemberSignature Language="C#" Value="public abstract string Namespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string" Usage="System.Reflection.TypeInfo.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Namespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -2996,6 +3370,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Runtime.InteropServices.StructLayoutAttribute StructLayoutAttribute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.InteropServices.StructLayoutAttribute StructLayoutAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.StructLayoutAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property StructLayoutAttribute As StructLayoutAttribute" />
+      <MemberSignature Language="F#" Value="member this.StructLayoutAttribute : System.Runtime.InteropServices.StructLayoutAttribute" Usage="System.Reflection.TypeInfo.StructLayoutAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Runtime::InteropServices::StructLayoutAttribute ^ StructLayoutAttribute { System::Runtime::InteropServices::StructLayoutAttribute ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -3014,7 +3391,12 @@
       <MemberSignature Language="C#" Value="System.Reflection.TypeInfo IReflectableType.GetTypeInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Reflection.TypeInfo System.Reflection.IReflectableType.GetTypeInfo() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.TypeInfo.System#Reflection#IReflectableType#GetTypeInfo" />
+      <MemberSignature Language="VB.NET" Value="Function GetTypeInfo () As TypeInfo Implements IReflectableType.GetTypeInfo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Reflection::TypeInfo ^ System.Reflection.IReflectableType.GetTypeInfo() = System::Reflection::IReflectableType::GetTypeInfo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Reflection.IReflectableType.GetTypeInfo</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3055,6 +3437,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.ConstructorInfo TypeInitializer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.ConstructorInfo TypeInitializer" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.TypeInitializer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeInitializer As ConstructorInfo" />
+      <MemberSignature Language="F#" Value="member this.TypeInitializer : System.Reflection.ConstructorInfo" Usage="System.Reflection.TypeInfo.TypeInitializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ConstructorInfo ^ TypeInitializer { System::Reflection::ConstructorInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -3073,6 +3458,9 @@
       <MemberSignature Language="C#" Value="public virtual Type UnderlyingSystemType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type UnderlyingSystemType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.TypeInfo.UnderlyingSystemType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UnderlyingSystemType As Type" />
+      <MemberSignature Language="F#" Value="member this.UnderlyingSystemType : Type" Usage="System.Reflection.TypeInfo.UnderlyingSystemType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ UnderlyingSystemType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>

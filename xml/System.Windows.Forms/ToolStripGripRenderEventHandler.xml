@@ -1,7 +1,10 @@
-<Type Name="ToolStripGripRenderEventHandler" FullName="System.Windows.Forms.ToolStripGripRenderEventHandler">
+﻿<Type Name="ToolStripGripRenderEventHandler" FullName="System.Windows.Forms.ToolStripGripRenderEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ToolStripGripRenderEventHandler(object sender, ToolStripGripRenderEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripGripRenderEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripGripRenderEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ToolStripGripRenderEventHandler(sender As Object, e As ToolStripGripRenderEventArgs)" />
+  <TypeSignature Language="F#" Value="type ToolStripGripRenderEventHandler = delegate of obj * ToolStripGripRenderEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ToolStripGripRenderEventHandler(System::Object ^ sender, ToolStripGripRenderEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

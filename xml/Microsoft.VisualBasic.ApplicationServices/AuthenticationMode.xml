@@ -1,7 +1,10 @@
-<Type Name="AuthenticationMode" FullName="Microsoft.VisualBasic.ApplicationServices.AuthenticationMode">
+﻿<Type Name="AuthenticationMode" FullName="Microsoft.VisualBasic.ApplicationServices.AuthenticationMode">
   <TypeSignature Language="C#" Value="public enum AuthenticationMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthenticationMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AuthenticationMode" />
+  <TypeSignature Language="F#" Value="type AuthenticationMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AuthenticationMode" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="ApplicationDefined" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.ApplicationServices.AuthenticationMode ApplicationDefined = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.ApplicationDefined" />
+      <MemberSignature Language="VB.NET" Value="ApplicationDefined" />
+      <MemberSignature Language="F#" Value="ApplicationDefined = 1" Usage="Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.ApplicationDefined" />
+      <MemberSignature Language="C++ CLI" Value="ApplicationDefined" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -36,6 +42,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.AuthenticationMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.#ctor(Microsoft.VisualBasic.ApplicationServices.AuthenticationMode)" /> constructor does not initialize the principal for the application's main thread. The application needs to initialize the principal for the application's main thread.</summary>
       </Docs>
@@ -44,6 +51,9 @@
       <MemberSignature Language="C#" Value="Windows" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.ApplicationServices.AuthenticationMode Windows = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.Windows" />
+      <MemberSignature Language="VB.NET" Value="Windows" />
+      <MemberSignature Language="F#" Value="Windows = 0" Usage="Microsoft.VisualBasic.ApplicationServices.AuthenticationMode.Windows" />
+      <MemberSignature Language="C++ CLI" Value="Windows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.ApplicationServices.AuthenticationMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="M:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.#ctor(Microsoft.VisualBasic.ApplicationServices.AuthenticationMode)" /> constructor initializes the principal for the application's main thread with the current user's Windows user information.</summary>
       </Docs>

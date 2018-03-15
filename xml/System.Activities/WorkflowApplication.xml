@@ -1,7 +1,10 @@
-<Type Name="WorkflowApplication" FullName="System.Activities.WorkflowApplication">
+﻿<Type Name="WorkflowApplication" FullName="System.Activities.WorkflowApplication">
   <TypeSignature Language="C#" Value="public sealed class WorkflowApplication : System.Activities.Hosting.WorkflowInstance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WorkflowApplication extends System.Activities.Hosting.WorkflowInstance" />
   <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowApplication" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WorkflowApplication&#xA;Inherits WorkflowInstance" />
+  <TypeSignature Language="F#" Value="type WorkflowApplication = class&#xA;    inherit WorkflowInstance" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowApplication sealed : System::Activities::Hosting::WorkflowInstance" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,10 +55,22 @@ Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Unloaded.
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.WorkflowApplication" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowApplication (System.Activities.Activity workflowDefinition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity workflowDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.#ctor(System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (workflowDefinition As Activity)" />
+      <MemberSignature Language="F#" Value="new System.Activities.WorkflowApplication : System.Activities.Activity -&gt; System.Activities.WorkflowApplication" Usage="new System.Activities.WorkflowApplication workflowDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowApplication(System::Activities::Activity ^ workflowDefinition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -91,6 +106,9 @@ The two dice are 1 and 5.
       <MemberSignature Language="C#" Value="public WorkflowApplication (System.Activities.Activity workflowDefinition, System.Activities.WorkflowIdentity definitionIdentity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity workflowDefinition, class System.Activities.WorkflowIdentity definitionIdentity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.#ctor(System.Activities.Activity,System.Activities.WorkflowIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (workflowDefinition As Activity, definitionIdentity As WorkflowIdentity)" />
+      <MemberSignature Language="F#" Value="new System.Activities.WorkflowApplication : System.Activities.Activity * System.Activities.WorkflowIdentity -&gt; System.Activities.WorkflowApplication" Usage="new System.Activities.WorkflowApplication (workflowDefinition, definitionIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowApplication(System::Activities::Activity ^ workflowDefinition, System::Activities::WorkflowIdentity ^ definitionIdentity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -111,6 +129,9 @@ The two dice are 1 and 5.
       <MemberSignature Language="C#" Value="public WorkflowApplication (System.Activities.Activity workflowDefinition, System.Collections.Generic.IDictionary&lt;string,object&gt; inputs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity workflowDefinition, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; inputs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.#ctor(System.Activities.Activity,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (workflowDefinition As Activity, inputs As IDictionary(Of String, Object))" />
+      <MemberSignature Language="F#" Value="new System.Activities.WorkflowApplication : System.Activities.Activity * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Activities.WorkflowApplication" Usage="new System.Activities.WorkflowApplication (workflowDefinition, inputs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowApplication(System::Activities::Activity ^ workflowDefinition, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ inputs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -149,6 +170,9 @@ Workflow 8dc844c1-bbf8-4b21-a9a2-05f89e416055 Unloaded.
       <MemberSignature Language="C#" Value="public WorkflowApplication (System.Activities.Activity workflowDefinition, System.Collections.Generic.IDictionary&lt;string,object&gt; inputs, System.Activities.WorkflowIdentity definitionIdentity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity workflowDefinition, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; inputs, class System.Activities.WorkflowIdentity definitionIdentity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.#ctor(System.Activities.Activity,System.Collections.Generic.IDictionary{System.String,System.Object},System.Activities.WorkflowIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (workflowDefinition As Activity, inputs As IDictionary(Of String, Object), definitionIdentity As WorkflowIdentity)" />
+      <MemberSignature Language="F#" Value="new System.Activities.WorkflowApplication : System.Activities.Activity * System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Activities.WorkflowIdentity -&gt; System.Activities.WorkflowApplication" Usage="new System.Activities.WorkflowApplication (workflowDefinition, inputs, definitionIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowApplication(System::Activities::Activity ^ workflowDefinition, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ inputs, System::Activities::WorkflowIdentity ^ definitionIdentity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -188,6 +212,9 @@ Workflow 8dc844c1-bbf8-4b21-a9a2-05f89e416055 Unloaded.
       <MemberSignature Language="C#" Value="public void Abort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Abort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Abort" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
+      <MemberSignature Language="F#" Value="override this.Abort : unit -&gt; unit" Usage="workflowApplication.Abort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -229,6 +256,9 @@ The workflow has been aborted.
       <MemberSignature Language="C#" Value="public void Abort (string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Abort(string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Abort(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Abort (reason As String)" />
+      <MemberSignature Language="F#" Value="override this.Abort : string -&gt; unit" Usage="workflowApplication.Abort reason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort(System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -273,6 +303,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public Action&lt;System.Activities.WorkflowApplicationAbortedEventArgs&gt; Aborted { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Action`1&lt;class System.Activities.WorkflowApplicationAbortedEventArgs&gt; Aborted" />
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplication.Aborted" />
+      <MemberSignature Language="VB.NET" Value="Public Property Aborted As Action(Of WorkflowApplicationAbortedEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.Aborted : Action&lt;System.Activities.WorkflowApplicationAbortedEventArgs&gt; with get, set" Usage="System.Activities.WorkflowApplication.Aborted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Action&lt;System::Activities::WorkflowApplicationAbortedEventArgs ^&gt; ^ Aborted { Action&lt;System::Activities::WorkflowApplicationAbortedEventArgs ^&gt; ^ get(); void set(Action&lt;System::Activities::WorkflowApplicationAbortedEventArgs ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -305,6 +338,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public void AddInitialInstanceValues (System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; writeOnlyValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddInitialInstanceValues(class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; writeOnlyValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.AddInitialInstanceValues(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddInitialInstanceValues (writeOnlyValues As IDictionary(Of XName, Object))" />
+      <MemberSignature Language="F#" Value="member this.AddInitialInstanceValues : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; -&gt; unit" Usage="workflowApplication.AddInitialInstanceValues writeOnlyValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddInitialInstanceValues(System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ writeOnlyValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -343,6 +379,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginCancel (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginCancel(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginCancel(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginCancel (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginCancel : AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginCancel (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginCancel(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -376,6 +415,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginCancel (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginCancel(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginCancel(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginCancel (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginCancel : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginCancel (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginCancel(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -407,10 +449,21 @@ The reason for aborting the workflow.
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginCreateDefaultInstanceOwner">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a default instance owner asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginCreateDefaultInstanceOwner">
       <MemberSignature Language="C#" Value="public static IAsyncResult BeginCreateDefaultInstanceOwner (System.Runtime.DurableInstancing.InstanceStore instanceStore, System.Activities.WorkflowIdentity definitionIdentity, System.Activities.WorkflowIdentityFilter identityFilter, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IAsyncResult BeginCreateDefaultInstanceOwner(class System.Runtime.DurableInstancing.InstanceStore instanceStore, class System.Activities.WorkflowIdentity definitionIdentity, valuetype System.Activities.WorkflowIdentityFilter identityFilter, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginCreateDefaultInstanceOwner(System.Runtime.DurableInstancing.InstanceStore,System.Activities.WorkflowIdentity,System.Activities.WorkflowIdentityFilter,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="static member BeginCreateDefaultInstanceOwner : System.Runtime.DurableInstancing.InstanceStore * System.Activities.WorkflowIdentity * System.Activities.WorkflowIdentityFilter * AsyncCallback * obj -&gt; IAsyncResult" Usage="System.Activities.WorkflowApplication.BeginCreateDefaultInstanceOwner (instanceStore, definitionIdentity, identityFilter, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginCreateDefaultInstanceOwner(System::Runtime::DurableInstancing::InstanceStore ^ instanceStore, System::Activities::WorkflowIdentity ^ definitionIdentity, System::Activities::WorkflowIdentityFilter identityFilter, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -441,6 +494,8 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public static IAsyncResult BeginCreateDefaultInstanceOwner (System.Runtime.DurableInstancing.InstanceStore instanceStore, System.Activities.WorkflowIdentity definitionIdentity, System.Activities.WorkflowIdentityFilter identityFilter, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IAsyncResult BeginCreateDefaultInstanceOwner(class System.Runtime.DurableInstancing.InstanceStore instanceStore, class System.Activities.WorkflowIdentity definitionIdentity, valuetype System.Activities.WorkflowIdentityFilter identityFilter, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginCreateDefaultInstanceOwner(System.Runtime.DurableInstancing.InstanceStore,System.Activities.WorkflowIdentity,System.Activities.WorkflowIdentityFilter,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="static member BeginCreateDefaultInstanceOwner : System.Runtime.DurableInstancing.InstanceStore * System.Activities.WorkflowIdentity * System.Activities.WorkflowIdentityFilter * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="System.Activities.WorkflowApplication.BeginCreateDefaultInstanceOwner (instanceStore, definitionIdentity, identityFilter, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginCreateDefaultInstanceOwner(System::Runtime::DurableInstancing::InstanceStore ^ instanceStore, System::Activities::WorkflowIdentity ^ definitionIdentity, System::Activities::WorkflowIdentityFilter identityFilter, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -469,10 +524,21 @@ The reason for aborting the workflow.
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginDeleteDefaultInstanceOwner">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes a default instance owner asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginDeleteDefaultInstanceOwner">
       <MemberSignature Language="C#" Value="public static IAsyncResult BeginDeleteDefaultInstanceOwner (System.Runtime.DurableInstancing.InstanceStore instanceStore, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IAsyncResult BeginDeleteDefaultInstanceOwner(class System.Runtime.DurableInstancing.InstanceStore instanceStore, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginDeleteDefaultInstanceOwner(System.Runtime.DurableInstancing.InstanceStore,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="static member BeginDeleteDefaultInstanceOwner : System.Runtime.DurableInstancing.InstanceStore * AsyncCallback * obj -&gt; IAsyncResult" Usage="System.Activities.WorkflowApplication.BeginDeleteDefaultInstanceOwner (instanceStore, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginDeleteDefaultInstanceOwner(System::Runtime::DurableInstancing::InstanceStore ^ instanceStore, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -499,6 +565,8 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public static IAsyncResult BeginDeleteDefaultInstanceOwner (System.Runtime.DurableInstancing.InstanceStore instanceStore, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IAsyncResult BeginDeleteDefaultInstanceOwner(class System.Runtime.DurableInstancing.InstanceStore instanceStore, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginDeleteDefaultInstanceOwner(System.Runtime.DurableInstancing.InstanceStore,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="static member BeginDeleteDefaultInstanceOwner : System.Runtime.DurableInstancing.InstanceStore * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="System.Activities.WorkflowApplication.BeginDeleteDefaultInstanceOwner (instanceStore, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginDeleteDefaultInstanceOwner(System::Runtime::DurableInstancing::InstanceStore ^ instanceStore, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -523,10 +591,21 @@ The reason for aborting the workflow.
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginGetInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves an instance owner asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginGetInstance">
       <MemberSignature Language="C#" Value="public static IAsyncResult BeginGetInstance (Guid instanceId, System.Runtime.DurableInstancing.InstanceStore instanceStore, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IAsyncResult BeginGetInstance(valuetype System.Guid instanceId, class System.Runtime.DurableInstancing.InstanceStore instanceStore, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginGetInstance(System.Guid,System.Runtime.DurableInstancing.InstanceStore,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="static member BeginGetInstance : Guid * System.Runtime.DurableInstancing.InstanceStore * AsyncCallback * obj -&gt; IAsyncResult" Usage="System.Activities.WorkflowApplication.BeginGetInstance (instanceId, instanceStore, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginGetInstance(Guid instanceId, System::Runtime::DurableInstancing::InstanceStore ^ instanceStore, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -555,6 +634,8 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public static IAsyncResult BeginGetInstance (Guid instanceId, System.Runtime.DurableInstancing.InstanceStore instanceStore, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IAsyncResult BeginGetInstance(valuetype System.Guid instanceId, class System.Runtime.DurableInstancing.InstanceStore instanceStore, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginGetInstance(System.Guid,System.Runtime.DurableInstancing.InstanceStore,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="static member BeginGetInstance : Guid * System.Runtime.DurableInstancing.InstanceStore * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="System.Activities.WorkflowApplication.BeginGetInstance (instanceId, instanceStore, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginGetInstance(Guid instanceId, System::Runtime::DurableInstancing::InstanceStore ^ instanceStore, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -581,10 +662,21 @@ The reason for aborting the workflow.
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginGetRunnableInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves a runnable instance owner asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginGetRunnableInstance">
       <MemberSignature Language="C#" Value="public static IAsyncResult BeginGetRunnableInstance (System.Runtime.DurableInstancing.InstanceStore instanceStore, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IAsyncResult BeginGetRunnableInstance(class System.Runtime.DurableInstancing.InstanceStore instanceStore, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginGetRunnableInstance(System.Runtime.DurableInstancing.InstanceStore,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="static member BeginGetRunnableInstance : System.Runtime.DurableInstancing.InstanceStore * AsyncCallback * obj -&gt; IAsyncResult" Usage="System.Activities.WorkflowApplication.BeginGetRunnableInstance (instanceStore, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginGetRunnableInstance(System::Runtime::DurableInstancing::InstanceStore ^ instanceStore, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -611,6 +703,8 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public static IAsyncResult BeginGetRunnableInstance (System.Runtime.DurableInstancing.InstanceStore instanceStore, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IAsyncResult BeginGetRunnableInstance(class System.Runtime.DurableInstancing.InstanceStore instanceStore, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginGetRunnableInstance(System.Runtime.DurableInstancing.InstanceStore,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="static member BeginGetRunnableInstance : System.Runtime.DurableInstancing.InstanceStore * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="System.Activities.WorkflowApplication.BeginGetRunnableInstance (instanceStore, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IAsyncResult ^ BeginGetRunnableInstance(System::Runtime::DurableInstancing::InstanceStore ^ instanceStore, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -656,6 +750,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginLoad (System.Activities.WorkflowApplicationInstance instance, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginLoad(class System.Activities.WorkflowApplicationInstance instance, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginLoad(System.Activities.WorkflowApplicationInstance,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginLoad (instance As WorkflowApplicationInstance, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginLoad : System.Activities.WorkflowApplicationInstance * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginLoad (instance, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginLoad(System::Activities::WorkflowApplicationInstance ^ instance, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -682,6 +779,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginLoad (Guid instanceId, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginLoad(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginLoad(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginLoad (instanceId As Guid, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginLoad : Guid * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginLoad (instanceId, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginLoad(Guid instanceId, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -708,6 +808,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginLoad (System.Activities.WorkflowApplicationInstance instance, System.Activities.DynamicUpdate.DynamicUpdateMap updateMap, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginLoad(class System.Activities.WorkflowApplicationInstance instance, class System.Activities.DynamicUpdate.DynamicUpdateMap updateMap, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginLoad(System.Activities.WorkflowApplicationInstance,System.Activities.DynamicUpdate.DynamicUpdateMap,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginLoad (instance As WorkflowApplicationInstance, updateMap As DynamicUpdateMap, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginLoad : System.Activities.WorkflowApplicationInstance * System.Activities.DynamicUpdate.DynamicUpdateMap * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginLoad (instance, updateMap, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginLoad(System::Activities::WorkflowApplicationInstance ^ instance, System::Activities::DynamicUpdate::DynamicUpdateMap ^ updateMap, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -736,6 +839,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginLoad (System.Activities.WorkflowApplicationInstance instance, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginLoad(class System.Activities.WorkflowApplicationInstance instance, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginLoad(System.Activities.WorkflowApplicationInstance,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginLoad (instance As WorkflowApplicationInstance, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginLoad : System.Activities.WorkflowApplicationInstance * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginLoad (instance, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginLoad(System::Activities::WorkflowApplicationInstance ^ instance, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -764,6 +870,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginLoad (Guid instanceId, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginLoad(valuetype System.Guid instanceId, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginLoad(System.Guid,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginLoad (instanceId As Guid, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginLoad : Guid * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginLoad (instanceId, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginLoad(Guid instanceId, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -792,6 +901,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginLoad (System.Activities.WorkflowApplicationInstance instance, System.Activities.DynamicUpdate.DynamicUpdateMap updateMap, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginLoad(class System.Activities.WorkflowApplicationInstance instance, class System.Activities.DynamicUpdate.DynamicUpdateMap updateMap, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginLoad(System.Activities.WorkflowApplicationInstance,System.Activities.DynamicUpdate.DynamicUpdateMap,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginLoad (instance As WorkflowApplicationInstance, updateMap As DynamicUpdateMap, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginLoad : System.Activities.WorkflowApplicationInstance * System.Activities.DynamicUpdate.DynamicUpdateMap * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginLoad (instance, updateMap, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginLoad(System::Activities::WorkflowApplicationInstance ^ instance, System::Activities::DynamicUpdate::DynamicUpdateMap ^ updateMap, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -839,6 +951,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginLoadRunnableInstance (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginLoadRunnableInstance(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginLoadRunnableInstance(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginLoadRunnableInstance (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginLoadRunnableInstance : AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginLoadRunnableInstance (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginLoadRunnableInstance(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -874,6 +989,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginLoadRunnableInstance (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginLoadRunnableInstance(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginLoadRunnableInstance(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginLoadRunnableInstance (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginLoadRunnableInstance : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginLoadRunnableInstance (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginLoadRunnableInstance(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -930,6 +1048,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginPersist (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginPersist(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginPersist(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginPersist (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginPersist : AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginPersist (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginPersist(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -965,6 +1086,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginPersist (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginPersist(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginPersist(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginPersist (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginPersist : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginPersist (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginPersist(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -998,10 +1122,21 @@ The reason for aborting the workflow.
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginResumeBookmark">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiates an asynchronous operation to resume a bookmark.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginResumeBookmark">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginResumeBookmark (System.Activities.Bookmark bookmark, object value, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginResumeBookmark(class System.Activities.Bookmark bookmark, object value, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginResumeBookmark(System.Activities.Bookmark,System.Object,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginResumeBookmark : System.Activities.Bookmark * obj * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginResumeBookmark (bookmark, value, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginResumeBookmark(System::Activities::Bookmark ^ bookmark, System::Object ^ value, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1039,6 +1174,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginResumeBookmark (string bookmarkName, object value, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginResumeBookmark(string bookmarkName, object value, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginResumeBookmark(System.String,System.Object,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginResumeBookmark (bookmarkName As String, value As Object, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginResumeBookmark : string * obj * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginResumeBookmark (bookmarkName, value, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginResumeBookmark(System::String ^ bookmarkName, System::Object ^ value, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1074,6 +1212,8 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginResumeBookmark (System.Activities.Bookmark bookmark, object value, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginResumeBookmark(class System.Activities.Bookmark bookmark, object value, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginResumeBookmark(System.Activities.Bookmark,System.Object,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginResumeBookmark : System.Activities.Bookmark * obj * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginResumeBookmark (bookmark, value, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginResumeBookmark(System::Activities::Bookmark ^ bookmark, System::Object ^ value, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1113,6 +1253,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginResumeBookmark (string bookmarkName, object value, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginResumeBookmark(string bookmarkName, object value, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginResumeBookmark(System.String,System.Object,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginResumeBookmark (bookmarkName As String, value As Object, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginResumeBookmark : string * obj * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginResumeBookmark (bookmarkName, value, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginResumeBookmark(System::String ^ bookmarkName, System::Object ^ value, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1167,6 +1310,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginRun (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginRun(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginRun(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginRun (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginRun : AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginRun (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginRun(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1200,6 +1346,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginRun (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginRun(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginRun(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginRun (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginRun : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginRun (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginRun(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1252,6 +1401,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginTerminate (Exception reason, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginTerminate(class System.Exception reason, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginTerminate(System.Exception,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginTerminate (reason As Exception, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginTerminate : Exception * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginTerminate (reason, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTerminate(Exception ^ reason, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1289,6 +1441,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginTerminate (string reason, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginTerminate(string reason, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginTerminate(System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginTerminate (reason As String, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginTerminate : string * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginTerminate (reason, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTerminate(System::String ^ reason, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1326,6 +1481,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginTerminate (Exception reason, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginTerminate(class System.Exception reason, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginTerminate(System.Exception,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginTerminate (reason As Exception, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginTerminate : Exception * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginTerminate (reason, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTerminate(Exception ^ reason, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1365,6 +1523,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginTerminate (string reason, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginTerminate(string reason, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginTerminate(System.String,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginTerminate (reason As String, timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginTerminate : string * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginTerminate (reason, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTerminate(System::String ^ reason, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1423,6 +1584,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginUnload (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginUnload(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginUnload(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginUnload (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginUnload : AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginUnload (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginUnload(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1458,6 +1622,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public IAsyncResult BeginUnload (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginUnload(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.BeginUnload(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginUnload (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginUnload : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.BeginUnload (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginUnload(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1514,6 +1681,9 @@ The reason for aborting the workflow.
       <MemberSignature Language="C#" Value="public void Cancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Cancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cancel ()" />
+      <MemberSignature Language="F#" Value="member this.Cancel : unit -&gt; unit" Usage="workflowApplication.Cancel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1556,6 +1726,9 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public void Cancel (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Cancel(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Cancel(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cancel (timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.Cancel : TimeSpan -&gt; unit" Usage="workflowApplication.Cancel timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cancel(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1599,6 +1772,9 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public Action&lt;System.Activities.WorkflowApplicationCompletedEventArgs&gt; Completed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Action`1&lt;class System.Activities.WorkflowApplicationCompletedEventArgs&gt; Completed" />
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplication.Completed" />
+      <MemberSignature Language="VB.NET" Value="Public Property Completed As Action(Of WorkflowApplicationCompletedEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.Completed : Action&lt;System.Activities.WorkflowApplicationCompletedEventArgs&gt; with get, set" Usage="System.Activities.WorkflowApplication.Completed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Action&lt;System::Activities::WorkflowApplicationCompletedEventArgs ^&gt; ^ Completed { Action&lt;System::Activities::WorkflowApplicationCompletedEventArgs ^&gt; ^ get(); void set(Action&lt;System::Activities::WorkflowApplicationCompletedEventArgs ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1622,10 +1798,21 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateDefaultInstanceOwner">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a default instance owner for the workflow.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateDefaultInstanceOwner">
       <MemberSignature Language="C#" Value="public static void CreateDefaultInstanceOwner (System.Runtime.DurableInstancing.InstanceStore instanceStore, System.Activities.WorkflowIdentity definitionIdentity, System.Activities.WorkflowIdentityFilter identityFilter);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateDefaultInstanceOwner(class System.Runtime.DurableInstancing.InstanceStore instanceStore, class System.Activities.WorkflowIdentity definitionIdentity, valuetype System.Activities.WorkflowIdentityFilter identityFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.CreateDefaultInstanceOwner(System.Runtime.DurableInstancing.InstanceStore,System.Activities.WorkflowIdentity,System.Activities.WorkflowIdentityFilter)" />
+      <MemberSignature Language="F#" Value="static member CreateDefaultInstanceOwner : System.Runtime.DurableInstancing.InstanceStore * System.Activities.WorkflowIdentity * System.Activities.WorkflowIdentityFilter -&gt; unit" Usage="System.Activities.WorkflowApplication.CreateDefaultInstanceOwner (instanceStore, definitionIdentity, identityFilter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CreateDefaultInstanceOwner(System::Runtime::DurableInstancing::InstanceStore ^ instanceStore, System::Activities::WorkflowIdentity ^ definitionIdentity, System::Activities::WorkflowIdentityFilter identityFilter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1651,6 +1838,8 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public static void CreateDefaultInstanceOwner (System.Runtime.DurableInstancing.InstanceStore instanceStore, System.Activities.WorkflowIdentity definitionIdentity, System.Activities.WorkflowIdentityFilter identityFilter, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CreateDefaultInstanceOwner(class System.Runtime.DurableInstancing.InstanceStore instanceStore, class System.Activities.WorkflowIdentity definitionIdentity, valuetype System.Activities.WorkflowIdentityFilter identityFilter, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.CreateDefaultInstanceOwner(System.Runtime.DurableInstancing.InstanceStore,System.Activities.WorkflowIdentity,System.Activities.WorkflowIdentityFilter,System.TimeSpan)" />
+      <MemberSignature Language="F#" Value="static member CreateDefaultInstanceOwner : System.Runtime.DurableInstancing.InstanceStore * System.Activities.WorkflowIdentity * System.Activities.WorkflowIdentityFilter * TimeSpan -&gt; unit" Usage="System.Activities.WorkflowApplication.CreateDefaultInstanceOwner (instanceStore, definitionIdentity, identityFilter, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CreateDefaultInstanceOwner(System::Runtime::DurableInstancing::InstanceStore ^ instanceStore, System::Activities::WorkflowIdentity ^ definitionIdentity, System::Activities::WorkflowIdentityFilter identityFilter, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1674,10 +1863,21 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DeleteDefaultInstanceOwner">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deletes a default instance owner for the workflow.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DeleteDefaultInstanceOwner">
       <MemberSignature Language="C#" Value="public static void DeleteDefaultInstanceOwner (System.Runtime.DurableInstancing.InstanceStore instanceStore);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DeleteDefaultInstanceOwner(class System.Runtime.DurableInstancing.InstanceStore instanceStore) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.DeleteDefaultInstanceOwner(System.Runtime.DurableInstancing.InstanceStore)" />
+      <MemberSignature Language="F#" Value="static member DeleteDefaultInstanceOwner : System.Runtime.DurableInstancing.InstanceStore -&gt; unit" Usage="System.Activities.WorkflowApplication.DeleteDefaultInstanceOwner instanceStore" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DeleteDefaultInstanceOwner(System::Runtime::DurableInstancing::InstanceStore ^ instanceStore);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1699,6 +1899,8 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public static void DeleteDefaultInstanceOwner (System.Runtime.DurableInstancing.InstanceStore instanceStore, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DeleteDefaultInstanceOwner(class System.Runtime.DurableInstancing.InstanceStore instanceStore, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.DeleteDefaultInstanceOwner(System.Runtime.DurableInstancing.InstanceStore,System.TimeSpan)" />
+      <MemberSignature Language="F#" Value="static member DeleteDefaultInstanceOwner : System.Runtime.DurableInstancing.InstanceStore * TimeSpan -&gt; unit" Usage="System.Activities.WorkflowApplication.DeleteDefaultInstanceOwner (instanceStore, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DeleteDefaultInstanceOwner(System::Runtime::DurableInstancing::InstanceStore ^ instanceStore, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1722,6 +1924,9 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public void EndCancel (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndCancel(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.EndCancel(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndCancel (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndCancel : IAsyncResult -&gt; unit" Usage="workflowApplication.EndCancel result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndCancel(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1752,6 +1957,9 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public static void EndCreateDefaultInstanceOwner (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EndCreateDefaultInstanceOwner(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.EndCreateDefaultInstanceOwner(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub EndCreateDefaultInstanceOwner (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="static member EndCreateDefaultInstanceOwner : IAsyncResult -&gt; unit" Usage="System.Activities.WorkflowApplication.EndCreateDefaultInstanceOwner asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EndCreateDefaultInstanceOwner(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1773,6 +1981,9 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public static void EndDeleteDefaultInstanceOwner (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void EndDeleteDefaultInstanceOwner(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.EndDeleteDefaultInstanceOwner(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub EndDeleteDefaultInstanceOwner (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="static member EndDeleteDefaultInstanceOwner : IAsyncResult -&gt; unit" Usage="System.Activities.WorkflowApplication.EndDeleteDefaultInstanceOwner asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EndDeleteDefaultInstanceOwner(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1794,6 +2005,9 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public static System.Activities.WorkflowApplicationInstance EndGetInstance (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.WorkflowApplicationInstance EndGetInstance(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.EndGetInstance(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EndGetInstance (asyncResult As IAsyncResult) As WorkflowApplicationInstance" />
+      <MemberSignature Language="F#" Value="static member EndGetInstance : IAsyncResult -&gt; System.Activities.WorkflowApplicationInstance" Usage="System.Activities.WorkflowApplication.EndGetInstance asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::WorkflowApplicationInstance ^ EndGetInstance(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1816,6 +2030,9 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public static System.Activities.WorkflowApplicationInstance EndGetRunnableInstance (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.WorkflowApplicationInstance EndGetRunnableInstance(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.EndGetRunnableInstance(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EndGetRunnableInstance (asyncResult As IAsyncResult) As WorkflowApplicationInstance" />
+      <MemberSignature Language="F#" Value="static member EndGetRunnableInstance : IAsyncResult -&gt; System.Activities.WorkflowApplicationInstance" Usage="System.Activities.WorkflowApplication.EndGetRunnableInstance asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::WorkflowApplicationInstance ^ EndGetRunnableInstance(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1838,6 +2055,9 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public void EndLoad (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndLoad(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.EndLoad(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndLoad (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndLoad : IAsyncResult -&gt; unit" Usage="workflowApplication.EndLoad result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndLoad(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1868,6 +2088,9 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public void EndLoadRunnableInstance (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndLoadRunnableInstance(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.EndLoadRunnableInstance(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndLoadRunnableInstance (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndLoadRunnableInstance : IAsyncResult -&gt; unit" Usage="workflowApplication.EndLoadRunnableInstance result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndLoadRunnableInstance(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1898,6 +2121,9 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public void EndPersist (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndPersist(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.EndPersist(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndPersist (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndPersist : IAsyncResult -&gt; unit" Usage="workflowApplication.EndPersist result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndPersist(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1928,6 +2154,9 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public System.Activities.BookmarkResumptionResult EndResumeBookmark (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.BookmarkResumptionResult EndResumeBookmark(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.EndResumeBookmark(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndResumeBookmark (result As IAsyncResult) As BookmarkResumptionResult" />
+      <MemberSignature Language="F#" Value="member this.EndResumeBookmark : IAsyncResult -&gt; System.Activities.BookmarkResumptionResult" Usage="workflowApplication.EndResumeBookmark result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::BookmarkResumptionResult EndResumeBookmark(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1959,6 +2188,9 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public void EndRun (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndRun(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.EndRun(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndRun (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndRun : IAsyncResult -&gt; unit" Usage="workflowApplication.EndRun result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndRun(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -1989,6 +2221,9 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public void EndTerminate (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndTerminate(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.EndTerminate(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndTerminate (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndTerminate : IAsyncResult -&gt; unit" Usage="workflowApplication.EndTerminate result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndTerminate(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2019,6 +2254,9 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public void EndUnload (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndUnload(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.EndUnload(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndUnload (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndUnload : IAsyncResult -&gt; unit" Usage="workflowApplication.EndUnload result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndUnload(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2049,6 +2287,9 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
       <MemberSignature Language="C#" Value="public System.Activities.Hosting.WorkflowInstanceExtensionManager Extensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Hosting.WorkflowInstanceExtensionManager Extensions" />
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplication.Extensions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extensions As WorkflowInstanceExtensionManager" />
+      <MemberSignature Language="F#" Value="member this.Extensions : System.Activities.Hosting.WorkflowInstanceExtensionManager" Usage="System.Activities.WorkflowApplication.Extensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Hosting::WorkflowInstanceExtensionManager ^ Extensions { System::Activities::Hosting::WorkflowInstanceExtensionManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2063,10 +2304,22 @@ Workflow bcce00c2-d323-42c2-8c25-19ff0c4b6dac Unloaded.
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetBookmarks">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of bookmarks for the workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetBookmarks">
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.Hosting.BookmarkInfo&gt; GetBookmarks ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Activities.Hosting.BookmarkInfo&gt; GetBookmarks() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.GetBookmarks" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBookmarks () As ReadOnlyCollection(Of BookmarkInfo)" />
+      <MemberSignature Language="F#" Value="member this.GetBookmarks : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.Hosting.BookmarkInfo&gt;" Usage="workflowApplication.GetBookmarks " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Activities::Hosting::BookmarkInfo ^&gt; ^ GetBookmarks();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2110,6 +2363,9 @@ Hello, Steve
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.Hosting.BookmarkInfo&gt; GetBookmarks (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Activities.Hosting.BookmarkInfo&gt; GetBookmarks(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.GetBookmarks(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBookmarks (timeout As TimeSpan) As ReadOnlyCollection(Of BookmarkInfo)" />
+      <MemberSignature Language="F#" Value="member this.GetBookmarks : TimeSpan -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Activities.Hosting.BookmarkInfo&gt;" Usage="workflowApplication.GetBookmarks timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Activities::Hosting::BookmarkInfo ^&gt; ^ GetBookmarks(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2147,10 +2403,21 @@ Hello, Steve
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetInstance">
       <MemberSignature Language="C#" Value="public static System.Activities.WorkflowApplicationInstance GetInstance (Guid instanceId, System.Runtime.DurableInstancing.InstanceStore instanceStore);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.WorkflowApplicationInstance GetInstance(valuetype System.Guid instanceId, class System.Runtime.DurableInstancing.InstanceStore instanceStore) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.GetInstance(System.Guid,System.Runtime.DurableInstancing.InstanceStore)" />
+      <MemberSignature Language="F#" Value="static member GetInstance : Guid * System.Runtime.DurableInstancing.InstanceStore -&gt; System.Activities.WorkflowApplicationInstance" Usage="System.Activities.WorkflowApplication.GetInstance (instanceId, instanceStore)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::WorkflowApplicationInstance ^ GetInstance(Guid instanceId, System::Runtime::DurableInstancing::InstanceStore ^ instanceStore);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2175,6 +2442,8 @@ Hello, Steve
       <MemberSignature Language="C#" Value="public static System.Activities.WorkflowApplicationInstance GetInstance (Guid instanceId, System.Runtime.DurableInstancing.InstanceStore instanceStore, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.WorkflowApplicationInstance GetInstance(valuetype System.Guid instanceId, class System.Runtime.DurableInstancing.InstanceStore instanceStore, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.GetInstance(System.Guid,System.Runtime.DurableInstancing.InstanceStore,System.TimeSpan)" />
+      <MemberSignature Language="F#" Value="static member GetInstance : Guid * System.Runtime.DurableInstancing.InstanceStore * TimeSpan -&gt; System.Activities.WorkflowApplicationInstance" Usage="System.Activities.WorkflowApplication.GetInstance (instanceId, instanceStore, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::WorkflowApplicationInstance ^ GetInstance(Guid instanceId, System::Runtime::DurableInstancing::InstanceStore ^ instanceStore, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2197,10 +2466,21 @@ Hello, Steve
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetRunnableInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the runnable instance of the workflow.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetRunnableInstance">
       <MemberSignature Language="C#" Value="public static System.Activities.WorkflowApplicationInstance GetRunnableInstance (System.Runtime.DurableInstancing.InstanceStore instanceStore);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.WorkflowApplicationInstance GetRunnableInstance(class System.Runtime.DurableInstancing.InstanceStore instanceStore) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.GetRunnableInstance(System.Runtime.DurableInstancing.InstanceStore)" />
+      <MemberSignature Language="F#" Value="static member GetRunnableInstance : System.Runtime.DurableInstancing.InstanceStore -&gt; System.Activities.WorkflowApplicationInstance" Usage="System.Activities.WorkflowApplication.GetRunnableInstance instanceStore" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::WorkflowApplicationInstance ^ GetRunnableInstance(System::Runtime::DurableInstancing::InstanceStore ^ instanceStore);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2223,6 +2503,8 @@ Hello, Steve
       <MemberSignature Language="C#" Value="public static System.Activities.WorkflowApplicationInstance GetRunnableInstance (System.Runtime.DurableInstancing.InstanceStore instanceStore, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.WorkflowApplicationInstance GetRunnableInstance(class System.Runtime.DurableInstancing.InstanceStore instanceStore, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.GetRunnableInstance(System.Runtime.DurableInstancing.InstanceStore,System.TimeSpan)" />
+      <MemberSignature Language="F#" Value="static member GetRunnableInstance : System.Runtime.DurableInstancing.InstanceStore * TimeSpan -&gt; System.Activities.WorkflowApplicationInstance" Usage="System.Activities.WorkflowApplication.GetRunnableInstance (instanceStore, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::WorkflowApplicationInstance ^ GetRunnableInstance(System::Runtime::DurableInstancing::InstanceStore ^ instanceStore, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2247,6 +2529,9 @@ Hello, Steve
       <MemberSignature Language="C#" Value="public override Guid Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Id" />
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplication.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Id As Guid" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid" Usage="System.Activities.WorkflowApplication.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid Id { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2274,6 +2559,9 @@ Hello, Steve
       <MemberSignature Language="C#" Value="public Action&lt;System.Activities.WorkflowApplicationIdleEventArgs&gt; Idle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Action`1&lt;class System.Activities.WorkflowApplicationIdleEventArgs&gt; Idle" />
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplication.Idle" />
+      <MemberSignature Language="VB.NET" Value="Public Property Idle As Action(Of WorkflowApplicationIdleEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.Idle : Action&lt;System.Activities.WorkflowApplicationIdleEventArgs&gt; with get, set" Usage="System.Activities.WorkflowApplication.Idle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Action&lt;System::Activities::WorkflowApplicationIdleEventArgs ^&gt; ^ Idle { Action&lt;System::Activities::WorkflowApplicationIdleEventArgs ^&gt; ^ get(); void set(Action&lt;System::Activities::WorkflowApplicationIdleEventArgs ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2305,6 +2593,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public System.Runtime.DurableInstancing.InstanceStore InstanceStore { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.DurableInstancing.InstanceStore InstanceStore" />
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplication.InstanceStore" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceStore As InstanceStore" />
+      <MemberSignature Language="F#" Value="member this.InstanceStore : System.Runtime.DurableInstancing.InstanceStore with get, set" Usage="System.Activities.WorkflowApplication.InstanceStore" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::DurableInstancing::InstanceStore ^ InstanceStore { System::Runtime::DurableInstancing::InstanceStore ^ get(); void set(System::Runtime::DurableInstancing::InstanceStore ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2328,10 +2619,22 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads a workflow instance from an instance store.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Load">
       <MemberSignature Language="C#" Value="public void Load (System.Activities.WorkflowApplicationInstance instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.Activities.WorkflowApplicationInstance instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Load(System.Activities.WorkflowApplicationInstance)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (instance As WorkflowApplicationInstance)" />
+      <MemberSignature Language="F#" Value="member this.Load : System.Activities.WorkflowApplicationInstance -&gt; unit" Usage="workflowApplication.Load instance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Activities::WorkflowApplicationInstance ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2353,6 +2656,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public void Load (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Load(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.Load : Guid -&gt; unit" Usage="workflowApplication.Load instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2383,6 +2689,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public void Load (System.Activities.WorkflowApplicationInstance instance, System.Activities.DynamicUpdate.DynamicUpdateMap updateMap);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.Activities.WorkflowApplicationInstance instance, class System.Activities.DynamicUpdate.DynamicUpdateMap updateMap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Load(System.Activities.WorkflowApplicationInstance,System.Activities.DynamicUpdate.DynamicUpdateMap)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (instance As WorkflowApplicationInstance, updateMap As DynamicUpdateMap)" />
+      <MemberSignature Language="F#" Value="member this.Load : System.Activities.WorkflowApplicationInstance * System.Activities.DynamicUpdate.DynamicUpdateMap -&gt; unit" Usage="workflowApplication.Load (instance, updateMap)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Activities::WorkflowApplicationInstance ^ instance, System::Activities::DynamicUpdate::DynamicUpdateMap ^ updateMap);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2406,6 +2715,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public void Load (System.Activities.WorkflowApplicationInstance instance, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.Activities.WorkflowApplicationInstance instance, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Load(System.Activities.WorkflowApplicationInstance,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (instance As WorkflowApplicationInstance, timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.Load : System.Activities.WorkflowApplicationInstance * TimeSpan -&gt; unit" Usage="workflowApplication.Load (instance, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Activities::WorkflowApplicationInstance ^ instance, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2429,6 +2741,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public void Load (Guid instanceId, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(valuetype System.Guid instanceId, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Load(System.Guid,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (instanceId As Guid, timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.Load : Guid * TimeSpan -&gt; unit" Usage="workflowApplication.Load (instanceId, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(Guid instanceId, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2461,6 +2776,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public void Load (System.Activities.WorkflowApplicationInstance instance, System.Activities.DynamicUpdate.DynamicUpdateMap updateMap, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.Activities.WorkflowApplicationInstance instance, class System.Activities.DynamicUpdate.DynamicUpdateMap updateMap, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Load(System.Activities.WorkflowApplicationInstance,System.Activities.DynamicUpdate.DynamicUpdateMap,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (instance As WorkflowApplicationInstance, updateMap As DynamicUpdateMap, timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.Load : System.Activities.WorkflowApplicationInstance * System.Activities.DynamicUpdate.DynamicUpdateMap * TimeSpan -&gt; unit" Usage="workflowApplication.Load (instance, updateMap, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Activities::WorkflowApplicationInstance ^ instance, System::Activities::DynamicUpdate::DynamicUpdateMap ^ updateMap, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2503,6 +2821,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public void LoadRunnableInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadRunnableInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.LoadRunnableInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadRunnableInstance ()" />
+      <MemberSignature Language="F#" Value="member this.LoadRunnableInstance : unit -&gt; unit" Usage="workflowApplication.LoadRunnableInstance " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadRunnableInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2530,6 +2851,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public void LoadRunnableInstance (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadRunnableInstance(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.LoadRunnableInstance(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadRunnableInstance (timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.LoadRunnableInstance : TimeSpan -&gt; unit" Usage="workflowApplication.LoadRunnableInstance timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadRunnableInstance(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2555,9 +2879,12 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       </Docs>
     </Member>
     <Member MemberName="OnBeginAssociateKeys">
-      <MemberSignature Language="C#" Value="protected override IAsyncResult OnBeginAssociateKeys (System.Collections.Generic.ICollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt; keys, AsyncCallback callback, object state);" />
+      <MemberSignature Language="C#" Value="protected internal override IAsyncResult OnBeginAssociateKeys (System.Collections.Generic.ICollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt; keys, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.IAsyncResult OnBeginAssociateKeys(class System.Collections.Generic.ICollection`1&lt;class System.Runtime.DurableInstancing.InstanceKey&gt; keys, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.OnBeginAssociateKeys(System.Collections.Generic.ICollection{System.Runtime.DurableInstancing.InstanceKey},System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function OnBeginAssociateKeys (keys As ICollection(Of InstanceKey), callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="override this.OnBeginAssociateKeys : System.Collections.Generic.ICollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt; * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.OnBeginAssociateKeys (keys, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override IAsyncResult ^ OnBeginAssociateKeys(System::Collections::Generic::ICollection&lt;System::Runtime::DurableInstancing::InstanceKey ^&gt; ^ keys, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2581,9 +2908,12 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       </Docs>
     </Member>
     <Member MemberName="OnBeginPersist">
-      <MemberSignature Language="C#" Value="protected override IAsyncResult OnBeginPersist (AsyncCallback callback, object state);" />
+      <MemberSignature Language="C#" Value="protected internal override IAsyncResult OnBeginPersist (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.IAsyncResult OnBeginPersist(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.OnBeginPersist(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function OnBeginPersist (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="override this.OnBeginPersist : AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.OnBeginPersist (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override IAsyncResult ^ OnBeginPersist(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2605,9 +2935,11 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       </Docs>
     </Member>
     <Member MemberName="OnBeginResumeBookmark">
-      <MemberSignature Language="C#" Value="protected override IAsyncResult OnBeginResumeBookmark (System.Activities.Bookmark bookmark, object value, TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="C#" Value="protected internal override IAsyncResult OnBeginResumeBookmark (System.Activities.Bookmark bookmark, object value, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.IAsyncResult OnBeginResumeBookmark(class System.Activities.Bookmark bookmark, object value, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.OnBeginResumeBookmark(System.Activities.Bookmark,System.Object,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="override this.OnBeginResumeBookmark : System.Activities.Bookmark * obj * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowApplication.OnBeginResumeBookmark (bookmark, value, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override IAsyncResult ^ OnBeginResumeBookmark(System::Activities::Bookmark ^ bookmark, System::Object ^ value, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2635,9 +2967,12 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       </Docs>
     </Member>
     <Member MemberName="OnDisassociateKeys">
-      <MemberSignature Language="C#" Value="protected override void OnDisassociateKeys (System.Collections.Generic.ICollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt; keys);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnDisassociateKeys (System.Collections.Generic.ICollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt; keys);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnDisassociateKeys(class System.Collections.Generic.ICollection`1&lt;class System.Runtime.DurableInstancing.InstanceKey&gt; keys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.OnDisassociateKeys(System.Collections.Generic.ICollection{System.Runtime.DurableInstancing.InstanceKey})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnDisassociateKeys (keys As ICollection(Of InstanceKey))" />
+      <MemberSignature Language="F#" Value="override this.OnDisassociateKeys : System.Collections.Generic.ICollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt; -&gt; unit" Usage="workflowApplication.OnDisassociateKeys keys" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnDisassociateKeys(System::Collections::Generic::ICollection&lt;System::Runtime::DurableInstancing::InstanceKey ^&gt; ^ keys);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2656,9 +2991,12 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       </Docs>
     </Member>
     <Member MemberName="OnEndAssociateKeys">
-      <MemberSignature Language="C#" Value="protected override void OnEndAssociateKeys (IAsyncResult result);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnEndAssociateKeys (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnEndAssociateKeys(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.OnEndAssociateKeys(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnEndAssociateKeys (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="override this.OnEndAssociateKeys : IAsyncResult -&gt; unit" Usage="workflowApplication.OnEndAssociateKeys result" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnEndAssociateKeys(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2677,9 +3015,12 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       </Docs>
     </Member>
     <Member MemberName="OnEndPersist">
-      <MemberSignature Language="C#" Value="protected override void OnEndPersist (IAsyncResult result);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnEndPersist (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnEndPersist(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.OnEndPersist(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnEndPersist (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="override this.OnEndPersist : IAsyncResult -&gt; unit" Usage="workflowApplication.OnEndPersist result" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnEndPersist(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2698,9 +3039,12 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       </Docs>
     </Member>
     <Member MemberName="OnEndResumeBookmark">
-      <MemberSignature Language="C#" Value="protected override System.Activities.BookmarkResumptionResult OnEndResumeBookmark (IAsyncResult result);" />
+      <MemberSignature Language="C#" Value="protected internal override System.Activities.BookmarkResumptionResult OnEndResumeBookmark (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance valuetype System.Activities.BookmarkResumptionResult OnEndResumeBookmark(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.OnEndResumeBookmark(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function OnEndResumeBookmark (result As IAsyncResult) As BookmarkResumptionResult" />
+      <MemberSignature Language="F#" Value="override this.OnEndResumeBookmark : IAsyncResult -&gt; System.Activities.BookmarkResumptionResult" Usage="workflowApplication.OnEndResumeBookmark result" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Activities::BookmarkResumptionResult OnEndResumeBookmark(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2723,6 +3067,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="protected override void OnNotifyPaused ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnNotifyPaused() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.OnNotifyPaused" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnNotifyPaused ()" />
+      <MemberSignature Language="F#" Value="override this.OnNotifyPaused : unit -&gt; unit" Usage="workflowApplication.OnNotifyPaused " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnNotifyPaused();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2741,6 +3088,8 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="protected override void OnNotifyUnhandledException (Exception exception, System.Activities.Activity exceptionSource, string exceptionSourceInstanceId);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnNotifyUnhandledException(class System.Exception exception, class System.Activities.Activity exceptionSource, string exceptionSourceInstanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.OnNotifyUnhandledException(System.Exception,System.Activities.Activity,System.String)" />
+      <MemberSignature Language="F#" Value="override this.OnNotifyUnhandledException : Exception * System.Activities.Activity * string -&gt; unit" Usage="workflowApplication.OnNotifyUnhandledException (exception, exceptionSource, exceptionSourceInstanceId)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnNotifyUnhandledException(Exception ^ exception, System::Activities::Activity ^ exceptionSource, System::String ^ exceptionSourceInstanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2763,9 +3112,12 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       </Docs>
     </Member>
     <Member MemberName="OnRequestAbort">
-      <MemberSignature Language="C#" Value="protected override void OnRequestAbort (Exception reason);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnRequestAbort (Exception reason);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnRequestAbort(class System.Exception reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.OnRequestAbort(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnRequestAbort (reason As Exception)" />
+      <MemberSignature Language="F#" Value="override this.OnRequestAbort : Exception -&gt; unit" Usage="workflowApplication.OnRequestAbort reason" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnRequestAbort(Exception ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2787,6 +3139,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public Func&lt;System.Activities.WorkflowApplicationUnhandledExceptionEventArgs,System.Activities.UnhandledExceptionAction&gt; OnUnhandledException { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;class System.Activities.WorkflowApplicationUnhandledExceptionEventArgs, valuetype System.Activities.UnhandledExceptionAction&gt; OnUnhandledException" />
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplication.OnUnhandledException" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnUnhandledException As Func(Of WorkflowApplicationUnhandledExceptionEventArgs, UnhandledExceptionAction)" />
+      <MemberSignature Language="F#" Value="member this.OnUnhandledException : Func&lt;System.Activities.WorkflowApplicationUnhandledExceptionEventArgs, System.Activities.UnhandledExceptionAction&gt; with get, set" Usage="System.Activities.WorkflowApplication.OnUnhandledException" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::Activities::WorkflowApplicationUnhandledExceptionEventArgs ^, System::Activities::UnhandledExceptionAction&gt; ^ OnUnhandledException { Func&lt;System::Activities::WorkflowApplicationUnhandledExceptionEventArgs ^, System::Activities::UnhandledExceptionAction&gt; ^ get(); void set(Func&lt;System::Activities::WorkflowApplicationUnhandledExceptionEventArgs ^, System::Activities::UnhandledExceptionAction&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2836,6 +3191,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public void Persist ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Persist() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Persist" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Persist ()" />
+      <MemberSignature Language="F#" Value="member this.Persist : unit -&gt; unit" Usage="workflowApplication.Persist " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Persist();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2870,6 +3228,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public void Persist (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Persist(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Persist(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Persist (timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.Persist : TimeSpan -&gt; unit" Usage="workflowApplication.Persist timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Persist(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2905,6 +3266,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public Func&lt;System.Activities.WorkflowApplicationIdleEventArgs,System.Activities.PersistableIdleAction&gt; PersistableIdle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;class System.Activities.WorkflowApplicationIdleEventArgs, valuetype System.Activities.PersistableIdleAction&gt; PersistableIdle" />
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplication.PersistableIdle" />
+      <MemberSignature Language="VB.NET" Value="Public Property PersistableIdle As Func(Of WorkflowApplicationIdleEventArgs, PersistableIdleAction)" />
+      <MemberSignature Language="F#" Value="member this.PersistableIdle : Func&lt;System.Activities.WorkflowApplicationIdleEventArgs, System.Activities.PersistableIdleAction&gt; with get, set" Usage="System.Activities.WorkflowApplication.PersistableIdle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;System::Activities::WorkflowApplicationIdleEventArgs ^, System::Activities::PersistableIdleAction&gt; ^ PersistableIdle { Func&lt;System::Activities::WorkflowApplicationIdleEventArgs ^, System::Activities::PersistableIdleAction&gt; ^ get(); void set(Func&lt;System::Activities::WorkflowApplicationIdleEventArgs ^, System::Activities::PersistableIdleAction&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2933,10 +3297,21 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ResumeBookmark">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiates an operation to resume a bookmark.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ResumeBookmark">
       <MemberSignature Language="C#" Value="public System.Activities.BookmarkResumptionResult ResumeBookmark (System.Activities.Bookmark bookmark, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.BookmarkResumptionResult ResumeBookmark(class System.Activities.Bookmark bookmark, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.ResumeBookmark(System.Activities.Bookmark,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.ResumeBookmark : System.Activities.Bookmark * obj -&gt; System.Activities.BookmarkResumptionResult" Usage="workflowApplication.ResumeBookmark (bookmark, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::BookmarkResumptionResult ResumeBookmark(System::Activities::Bookmark ^ bookmark, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -2977,6 +3352,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public System.Activities.BookmarkResumptionResult ResumeBookmark (string bookmarkName, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.BookmarkResumptionResult ResumeBookmark(string bookmarkName, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.ResumeBookmark(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResumeBookmark (bookmarkName As String, value As Object) As BookmarkResumptionResult" />
+      <MemberSignature Language="F#" Value="member this.ResumeBookmark : string * obj -&gt; System.Activities.BookmarkResumptionResult" Usage="workflowApplication.ResumeBookmark (bookmarkName, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::BookmarkResumptionResult ResumeBookmark(System::String ^ bookmarkName, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3017,6 +3395,8 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public System.Activities.BookmarkResumptionResult ResumeBookmark (System.Activities.Bookmark bookmark, object value, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.BookmarkResumptionResult ResumeBookmark(class System.Activities.Bookmark bookmark, object value, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.ResumeBookmark(System.Activities.Bookmark,System.Object,System.TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.ResumeBookmark : System.Activities.Bookmark * obj * TimeSpan -&gt; System.Activities.BookmarkResumptionResult" Usage="workflowApplication.ResumeBookmark (bookmark, value, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::BookmarkResumptionResult ResumeBookmark(System::Activities::Bookmark ^ bookmark, System::Object ^ value, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3059,6 +3439,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public System.Activities.BookmarkResumptionResult ResumeBookmark (string bookmarkName, object value, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Activities.BookmarkResumptionResult ResumeBookmark(string bookmarkName, object value, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.ResumeBookmark(System.String,System.Object,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResumeBookmark (bookmarkName As String, value As Object, timeout As TimeSpan) As BookmarkResumptionResult" />
+      <MemberSignature Language="F#" Value="member this.ResumeBookmark : string * obj * TimeSpan -&gt; System.Activities.BookmarkResumptionResult" Usage="workflowApplication.ResumeBookmark (bookmarkName, value, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::BookmarkResumptionResult ResumeBookmark(System::String ^ bookmarkName, System::Object ^ value, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3118,6 +3501,9 @@ BookmarkName: EnterGuess - OwnerDisplayName: ReadInt
       <MemberSignature Language="C#" Value="public void Run ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Run() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Run" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Run ()" />
+      <MemberSignature Language="F#" Value="member this.Run : unit -&gt; unit" Usage="workflowApplication.Run " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Run();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3161,6 +3547,9 @@ Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Unloaded.
       <MemberSignature Language="C#" Value="public void Run (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Run(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Run(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Run (timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.Run : TimeSpan -&gt; unit" Usage="workflowApplication.Run timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Run(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3204,9 +3593,12 @@ Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Unloaded.
       </Docs>
     </Member>
     <Member MemberName="SupportsInstanceKeys">
-      <MemberSignature Language="C#" Value="protected override bool SupportsInstanceKeys { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override bool SupportsInstanceKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsInstanceKeys" />
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplication.SupportsInstanceKeys" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property SupportsInstanceKeys As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsInstanceKeys : bool" Usage="System.Activities.WorkflowApplication.SupportsInstanceKeys" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool SupportsInstanceKeys { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3221,10 +3613,22 @@ Workflow 593976e8-558d-4989-94d6-50a14b34fd7b Unloaded.
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Terminate">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Terminates a workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Terminate">
       <MemberSignature Language="C#" Value="public void Terminate (Exception reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Terminate(class System.Exception reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Terminate(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Terminate (reason As Exception)" />
+      <MemberSignature Language="F#" Value="member this.Terminate : Exception -&gt; unit" Usage="workflowApplication.Terminate reason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Terminate(Exception ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3271,6 +3675,9 @@ Workflow e6b33409-f010-49f1-82ce-56f8baabe5e5 unloaded.
       <MemberSignature Language="C#" Value="public void Terminate (string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Terminate(string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Terminate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Terminate (reason As String)" />
+      <MemberSignature Language="F#" Value="member this.Terminate : string -&gt; unit" Usage="workflowApplication.Terminate reason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Terminate(System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3317,6 +3724,9 @@ Workflow f87c6f91-4fe4-40b9-b7cb-4f1bd071bf84 unloaded.
       <MemberSignature Language="C#" Value="public void Terminate (Exception reason, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Terminate(class System.Exception reason, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Terminate(System.Exception,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Terminate (reason As Exception, timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.Terminate : Exception * TimeSpan -&gt; unit" Usage="workflowApplication.Terminate (reason, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Terminate(Exception ^ reason, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3363,6 +3773,9 @@ Workflow de28efe5-9057-472b-8d95-899c249893c5 unloaded.
       <MemberSignature Language="C#" Value="public void Terminate (string reason, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Terminate(string reason, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Terminate(System.String,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Terminate (reason As String, timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.Terminate : string * TimeSpan -&gt; unit" Usage="workflowApplication.Terminate (reason, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Terminate(System::String ^ reason, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3428,6 +3841,9 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
       <MemberSignature Language="C#" Value="public void Unload ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unload() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Unload" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unload ()" />
+      <MemberSignature Language="F#" Value="member this.Unload : unit -&gt; unit" Usage="workflowApplication.Unload " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unload();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3462,6 +3878,9 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
       <MemberSignature Language="C#" Value="public void Unload (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unload(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplication.Unload(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unload (timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.Unload : TimeSpan -&gt; unit" Usage="workflowApplication.Unload timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unload(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3497,6 +3916,9 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
       <MemberSignature Language="C#" Value="public Action&lt;System.Activities.WorkflowApplicationEventArgs&gt; Unloaded { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Action`1&lt;class System.Activities.WorkflowApplicationEventArgs&gt; Unloaded" />
       <MemberSignature Language="DocId" Value="P:System.Activities.WorkflowApplication.Unloaded" />
+      <MemberSignature Language="VB.NET" Value="Public Property Unloaded As Action(Of WorkflowApplicationEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.Unloaded : Action&lt;System.Activities.WorkflowApplicationEventArgs&gt; with get, set" Usage="System.Activities.WorkflowApplication.Unloaded" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Action&lt;System::Activities::WorkflowApplicationEventArgs ^&gt; ^ Unloaded { Action&lt;System::Activities::WorkflowApplicationEventArgs ^&gt; ^ get(); void set(Action&lt;System::Activities::WorkflowApplicationEventArgs ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -3520,131 +3942,5 @@ Workflow 2897d2ef-377e-4224-ae93-5c19b38f487c unloaded.
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Terminate">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Terminates a workflow instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateDefaultInstanceOwner">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a default instance owner for the workflow.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetRunnableInstance">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the runnable instance of the workflow.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetBookmarks">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the collection of bookmarks for the workflow instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.WorkflowApplication" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ResumeBookmark">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initiates an operation to resume a bookmark.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginResumeBookmark">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initiates an asynchronous operation to resume a bookmark.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginGetInstance">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves an instance owner asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Load">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads a workflow instance from an instance store.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DeleteDefaultInstanceOwner">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Deletes a default instance owner for the workflow.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginDeleteDefaultInstanceOwner">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Deletes a default instance owner asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetInstance">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the workflow instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginCreateDefaultInstanceOwner">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a default instance owner asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginGetRunnableInstance">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves a runnable instance owner asynchronously using the <see cref="T:System.IAsyncResult" /> asynchronous design pattern.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

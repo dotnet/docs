@@ -1,7 +1,10 @@
-<Type Name="CommandLineGenerator" FullName="Microsoft.Build.Tasks.Xaml.CommandLineGenerator">
+﻿<Type Name="CommandLineGenerator" FullName="Microsoft.Build.Tasks.Xaml.CommandLineGenerator">
   <TypeSignature Language="C#" Value="public class CommandLineGenerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CommandLineGenerator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.CommandLineGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public Class CommandLineGenerator" />
+  <TypeSignature Language="F#" Value="type CommandLineGenerator = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CommandLineGenerator" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public CommandLineGenerator (Microsoft.Build.Framework.XamlTypes.Rule rule, System.Collections.Generic.Dictionary&lt;string,object&gt; parameterValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Framework.XamlTypes.Rule rule, class System.Collections.Generic.Dictionary`2&lt;string, object&gt; parameterValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.CommandLineGenerator.#ctor(Microsoft.Build.Framework.XamlTypes.Rule,System.Collections.Generic.Dictionary{System.String,System.Object})" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Xaml.CommandLineGenerator : Microsoft.Build.Framework.XamlTypes.Rule * System.Collections.Generic.Dictionary&lt;string, obj&gt; -&gt; Microsoft.Build.Tasks.Xaml.CommandLineGenerator" Usage="new Microsoft.Build.Tasks.Xaml.CommandLineGenerator (rule, parameterValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommandLineGenerator(Microsoft::Build::Framework::XamlTypes::Rule ^ rule, System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ parameterValues);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -39,6 +44,9 @@
       <MemberSignature Language="C#" Value="public string AdditionalOptions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AdditionalOptions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineGenerator.AdditionalOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdditionalOptions As String" />
+      <MemberSignature Language="F#" Value="member this.AdditionalOptions : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineGenerator.AdditionalOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AdditionalOptions { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -57,6 +65,9 @@
       <MemberSignature Language="C#" Value="public string AlwaysAppend { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AlwaysAppend" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineGenerator.AlwaysAppend" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlwaysAppend As String" />
+      <MemberSignature Language="F#" Value="member this.AlwaysAppend : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineGenerator.AlwaysAppend" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AlwaysAppend { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -75,6 +86,9 @@
       <MemberSignature Language="C#" Value="public string CommandLineTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CommandLineTemplate" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineGenerator.CommandLineTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandLineTemplate As String" />
+      <MemberSignature Language="F#" Value="member this.CommandLineTemplate : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineGenerator.CommandLineTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommandLineTemplate { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -93,6 +107,9 @@
       <MemberSignature Language="C#" Value="public string GenerateCommandLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GenerateCommandLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.CommandLineGenerator.GenerateCommandLine" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateCommandLine () As String" />
+      <MemberSignature Language="F#" Value="member this.GenerateCommandLine : unit -&gt; string" Usage="commandLineGenerator.GenerateCommandLine " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GenerateCommandLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

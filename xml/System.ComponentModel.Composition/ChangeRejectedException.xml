@@ -1,7 +1,10 @@
-<Type Name="ChangeRejectedException" FullName="System.ComponentModel.Composition.ChangeRejectedException">
+﻿<Type Name="ChangeRejectedException" FullName="System.ComponentModel.Composition.ChangeRejectedException">
   <TypeSignature Language="C#" Value="public class ChangeRejectedException : System.ComponentModel.Composition.CompositionException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ChangeRejectedException extends System.ComponentModel.Composition.CompositionException" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.ChangeRejectedException" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChangeRejectedException&#xA;Inherits CompositionException" />
+  <TypeSignature Language="F#" Value="type ChangeRejectedException = class&#xA;    inherit CompositionException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChangeRejectedException : System::ComponentModel::Composition::CompositionException" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -16,10 +19,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ChangeRejectedException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ChangeRejectedException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ChangeRejectedException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChangeRejectedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -50,6 +65,9 @@
       <MemberSignature Language="C#" Value="public ChangeRejectedException (System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.CompositionError&gt; errors);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.CompositionError&gt; errors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ChangeRejectedException.#ctor(System.Collections.Generic.IEnumerable{System.ComponentModel.Composition.CompositionError})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (errors As IEnumerable(Of CompositionError))" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.ChangeRejectedException : seq&lt;System.ComponentModel.Composition.CompositionError&gt; -&gt; System.ComponentModel.Composition.ChangeRejectedException" Usage="new System.ComponentModel.Composition.ChangeRejectedException errors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChangeRejectedException(System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::CompositionError ^&gt; ^ errors);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -69,6 +87,9 @@
       <MemberSignature Language="C#" Value="public ChangeRejectedException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ChangeRejectedException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.ChangeRejectedException : string -&gt; System.ComponentModel.Composition.ChangeRejectedException" Usage="new System.ComponentModel.Composition.ChangeRejectedException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChangeRejectedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -100,6 +121,9 @@
       <MemberSignature Language="C#" Value="public ChangeRejectedException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.ChangeRejectedException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.ChangeRejectedException : string * Exception -&gt; System.ComponentModel.Composition.ChangeRejectedException" Usage="new System.ComponentModel.Composition.ChangeRejectedException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChangeRejectedException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -135,6 +159,9 @@
       <MemberSignature Language="C#" Value="public override string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.ChangeRejectedException.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.ComponentModel.Composition.ChangeRejectedException.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -150,15 +177,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.ChangeRejectedException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

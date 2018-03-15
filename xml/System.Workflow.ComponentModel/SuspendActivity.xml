@@ -1,7 +1,10 @@
-<Type Name="SuspendActivity" FullName="System.Workflow.ComponentModel.SuspendActivity">
+﻿<Type Name="SuspendActivity" FullName="System.Workflow.ComponentModel.SuspendActivity">
   <TypeSignature Language="C#" Value="public sealed class SuspendActivity : System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SuspendActivity extends System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.SuspendActivity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SuspendActivity&#xA;Inherits Activity" />
+  <TypeSignature Language="F#" Value="type SuspendActivity = class&#xA;    inherit Activity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SuspendActivity sealed : System::Workflow::ComponentModel::Activity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +52,8 @@
       <MemberSignature Language="C#" Value="public SuspendActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.SuspendActivity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SuspendActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -85,6 +90,9 @@
       <MemberSignature Language="C#" Value="public SuspendActivity (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.SuspendActivity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.SuspendActivity : string -&gt; System.Workflow.ComponentModel.SuspendActivity" Usage="new System.Workflow.ComponentModel.SuspendActivity name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SuspendActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -103,6 +111,9 @@
       <MemberSignature Language="C#" Value="public string Error { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Error" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.SuspendActivity.Error" />
+      <MemberSignature Language="VB.NET" Value="Public Property Error As String" />
+      <MemberSignature Language="F#" Value="member this.Error : string with get, set" Usage="System.Workflow.ComponentModel.SuspendActivity.Error" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Error { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -149,6 +160,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ErrorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ErrorProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.SuspendActivity.ErrorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ErrorProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ErrorProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.SuspendActivity.ErrorProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ErrorProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -170,9 +184,12 @@
       </Docs>
     </Member>
     <Member MemberName="Execute">
-      <MemberSignature Language="C#" Value="protected override sealed System.Workflow.ComponentModel.ActivityExecutionStatus Execute (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
+      <MemberSignature Language="C#" Value="protected internal override sealed System.Workflow.ComponentModel.ActivityExecutionStatus Execute (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus Execute(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.SuspendActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides NotOverridable Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="suspendActivity.Execute executionContext" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -192,9 +209,12 @@
       </Docs>
     </Member>
     <Member MemberName="Initialize">
-      <MemberSignature Language="C#" Value="protected override void Initialize (IServiceProvider provider);" />
+      <MemberSignature Language="C#" Value="protected internal override void Initialize (IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Initialize(class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.SuspendActivity.Initialize(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Initialize (provider As IServiceProvider)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : IServiceProvider -&gt; unit" Usage="suspendActivity.Initialize provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Initialize(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

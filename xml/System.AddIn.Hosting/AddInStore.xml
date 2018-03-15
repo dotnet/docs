@@ -1,7 +1,10 @@
-<Type Name="AddInStore" FullName="System.AddIn.Hosting.AddInStore">
+﻿<Type Name="AddInStore" FullName="System.AddIn.Hosting.AddInStore">
   <TypeSignature Language="C#" Value="public static class AddInStore" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit AddInStore extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Hosting.AddInStore" />
+  <TypeSignature Language="VB.NET" Value="Public Class AddInStore" />
+  <TypeSignature Language="F#" Value="type AddInStore = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AddInStore abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt; FindAddIn (Type hostViewOfAddIn, string pipelineRootFolderPath, string addInFilePath, string addInTypeName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.Collection`1&lt;class System.AddIn.Hosting.AddInToken&gt; FindAddIn(class System.Type hostViewOfAddIn, string pipelineRootFolderPath, string addInFilePath, string addInTypeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.FindAddIn(System.Type,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindAddIn (hostViewOfAddIn As Type, pipelineRootFolderPath As String, addInFilePath As String, addInTypeName As String) As Collection(Of AddInToken)" />
+      <MemberSignature Language="F#" Value="static member FindAddIn : Type * string * string * string -&gt; System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt;" Usage="System.AddIn.Hosting.AddInStore.FindAddIn (hostViewOfAddIn, pipelineRootFolderPath, addInFilePath, addInTypeName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::Collection&lt;System::AddIn::Hosting::AddInToken ^&gt; ^ FindAddIn(Type ^ hostViewOfAddIn, System::String ^ pipelineRootFolderPath, System::String ^ addInFilePath, System::String ^ addInTypeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -99,10 +105,22 @@
         <altmember cref="M:System.AddIn.Hosting.AddInStore.FindAddIns(System.Type,System.String,System.String[])" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindAddIns">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds all add-ins for a specified host view of the add-in.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindAddIns">
       <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt; FindAddIns (Type hostViewOfAddIn, System.AddIn.Hosting.PipelineStoreLocation location);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.Collection`1&lt;class System.AddIn.Hosting.AddInToken&gt; FindAddIns(class System.Type hostViewOfAddIn, valuetype System.AddIn.Hosting.PipelineStoreLocation location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.FindAddIns(System.Type,System.AddIn.Hosting.PipelineStoreLocation)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindAddIns (hostViewOfAddIn As Type, location As PipelineStoreLocation) As Collection(Of AddInToken)" />
+      <MemberSignature Language="F#" Value="static member FindAddIns : Type * System.AddIn.Hosting.PipelineStoreLocation -&gt; System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt;" Usage="System.AddIn.Hosting.AddInStore.FindAddIns (hostViewOfAddIn, location)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::Collection&lt;System::AddIn::Hosting::AddInToken ^&gt; ^ FindAddIns(Type ^ hostViewOfAddIn, System::AddIn::Hosting::PipelineStoreLocation location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -150,6 +168,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt; FindAddIns (Type hostViewOfAddIn, System.AddIn.Hosting.PipelineStoreLocation location, params string[] addInFolderPaths);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.Collection`1&lt;class System.AddIn.Hosting.AddInToken&gt; FindAddIns(class System.Type hostViewOfAddIn, valuetype System.AddIn.Hosting.PipelineStoreLocation location, string[] addInFolderPaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.FindAddIns(System.Type,System.AddIn.Hosting.PipelineStoreLocation,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindAddIns (hostViewOfAddIn As Type, location As PipelineStoreLocation, ParamArray addInFolderPaths As String()) As Collection(Of AddInToken)" />
+      <MemberSignature Language="F#" Value="static member FindAddIns : Type * System.AddIn.Hosting.PipelineStoreLocation * string[] -&gt; System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt;" Usage="System.AddIn.Hosting.AddInStore.FindAddIns (hostViewOfAddIn, location, addInFolderPaths)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::Collection&lt;System::AddIn::Hosting::AddInToken ^&gt; ^ FindAddIns(Type ^ hostViewOfAddIn, System::AddIn::Hosting::PipelineStoreLocation location, ... cli::array &lt;System::String ^&gt; ^ addInFolderPaths);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -201,6 +222,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt; FindAddIns (Type hostViewOfAddIn, string pipelineRootFolderPath, params string[] addInFolderPaths);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.Collection`1&lt;class System.AddIn.Hosting.AddInToken&gt; FindAddIns(class System.Type hostViewOfAddIn, string pipelineRootFolderPath, string[] addInFolderPaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.FindAddIns(System.Type,System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindAddIns (hostViewOfAddIn As Type, pipelineRootFolderPath As String, ParamArray addInFolderPaths As String()) As Collection(Of AddInToken)" />
+      <MemberSignature Language="F#" Value="static member FindAddIns : Type * string * string[] -&gt; System.Collections.ObjectModel.Collection&lt;System.AddIn.Hosting.AddInToken&gt;" Usage="System.AddIn.Hosting.AddInStore.FindAddIns (hostViewOfAddIn, pipelineRootFolderPath, addInFolderPaths)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::Collection&lt;System::AddIn::Hosting::AddInToken ^&gt; ^ FindAddIns(Type ^ hostViewOfAddIn, System::String ^ pipelineRootFolderPath, ... cli::array &lt;System::String ^&gt; ^ addInFolderPaths);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -245,10 +269,22 @@
         <altmember cref="M:System.AddIn.Hosting.AddInStore.FindAddIn(System.Type,System.String,System.String,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Rebuild">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Rebuilds the pipeline segments cache and includes new segments.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Rebuild">
       <MemberSignature Language="C#" Value="public static string[] Rebuild (System.AddIn.Hosting.PipelineStoreLocation location);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] Rebuild(valuetype System.AddIn.Hosting.PipelineStoreLocation location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.Rebuild(System.AddIn.Hosting.PipelineStoreLocation)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Rebuild (location As PipelineStoreLocation) As String()" />
+      <MemberSignature Language="F#" Value="static member Rebuild : System.AddIn.Hosting.PipelineStoreLocation -&gt; string[]" Usage="System.AddIn.Hosting.AddInStore.Rebuild location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ Rebuild(System::AddIn::Hosting::PipelineStoreLocation location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -289,6 +325,9 @@
       <MemberSignature Language="C#" Value="public static string[] Rebuild (string pipelineRootFolderPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] Rebuild(string pipelineRootFolderPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.Rebuild(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Rebuild (pipelineRootFolderPath As String) As String()" />
+      <MemberSignature Language="F#" Value="static member Rebuild : string -&gt; string[]" Usage="System.AddIn.Hosting.AddInStore.Rebuild pipelineRootFolderPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ Rebuild(System::String ^ pipelineRootFolderPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -328,6 +367,9 @@
       <MemberSignature Language="C#" Value="public static string[] RebuildAddIns (string addInsFolderPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] RebuildAddIns(string addInsFolderPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.RebuildAddIns(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RebuildAddIns (addInsFolderPath As String) As String()" />
+      <MemberSignature Language="F#" Value="static member RebuildAddIns : string -&gt; string[]" Usage="System.AddIn.Hosting.AddInStore.RebuildAddIns addInsFolderPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ RebuildAddIns(System::String ^ addInsFolderPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -367,10 +409,22 @@
         <altmember cref="M:System.AddIn.Hosting.AddInStore.UpdateAddIns(System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Update">
+      <AssemblyInfo>
+        <AssemblyName>System.AddIn</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates the pipeline segments cache with new segments.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Update">
       <MemberSignature Language="C#" Value="public static string[] Update (System.AddIn.Hosting.PipelineStoreLocation location);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] Update(valuetype System.AddIn.Hosting.PipelineStoreLocation location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.Update(System.AddIn.Hosting.PipelineStoreLocation)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Update (location As PipelineStoreLocation) As String()" />
+      <MemberSignature Language="F#" Value="static member Update : System.AddIn.Hosting.PipelineStoreLocation -&gt; string[]" Usage="System.AddIn.Hosting.AddInStore.Update location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ Update(System::AddIn::Hosting::PipelineStoreLocation location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -411,6 +465,9 @@
       <MemberSignature Language="C#" Value="public static string[] Update (string pipelineRootFolderPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] Update(string pipelineRootFolderPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.Update(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Update (pipelineRootFolderPath As String) As String()" />
+      <MemberSignature Language="F#" Value="static member Update : string -&gt; string[]" Usage="System.AddIn.Hosting.AddInStore.Update pipelineRootFolderPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ Update(System::String ^ pipelineRootFolderPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -457,6 +514,9 @@
       <MemberSignature Language="C#" Value="public static string[] UpdateAddIns (string addInsFolderPath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] UpdateAddIns(string addInsFolderPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Hosting.AddInStore.UpdateAddIns(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UpdateAddIns (addInsFolderPath As String) As String()" />
+      <MemberSignature Language="F#" Value="static member UpdateAddIns : string -&gt; string[]" Usage="System.AddIn.Hosting.AddInStore.UpdateAddIns addInsFolderPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ UpdateAddIns(System::String ^ addInsFolderPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -495,32 +555,5 @@
         <permission cref="T:System.Security.Permissions.FileIOPermission">for the ability to read and update the add-in folder. Associated enumerations: <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Update">
-      <AssemblyInfo>
-        <AssemblyName>System.AddIn</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Updates the pipeline segments cache with new segments.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FindAddIns">
-      <AssemblyInfo>
-        <AssemblyName>System.AddIn</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Finds all add-ins for a specified host view of the add-in.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Rebuild">
-      <AssemblyInfo>
-        <AssemblyName>System.AddIn</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Rebuilds the pipeline segments cache and includes new segments.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="IsolatedStorageContainment" FullName="System.Security.Permissions.IsolatedStorageContainment">
+﻿<Type Name="IsolatedStorageContainment" FullName="System.Security.Permissions.IsolatedStorageContainment">
   <TypeSignature Language="C#" Value="public enum IsolatedStorageContainment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed IsolatedStorageContainment extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.IsolatedStorageContainment" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IsolatedStorageContainment" />
+  <TypeSignature Language="F#" Value="type IsolatedStorageContainment = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class IsolatedStorageContainment" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -68,6 +71,9 @@
       <MemberSignature Language="C#" Value="AdministerIsolatedStorageByUser" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment AdministerIsolatedStorageByUser = int32(112)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser" />
+      <MemberSignature Language="VB.NET" Value="AdministerIsolatedStorageByUser" />
+      <MemberSignature Language="F#" Value="AdministerIsolatedStorageByUser = 112" Usage="System.Security.Permissions.IsolatedStorageContainment.AdministerIsolatedStorageByUser" />
+      <MemberSignature Language="C++ CLI" Value="AdministerIsolatedStorageByUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -81,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
       </ReturnValue>
+      <MemberValue>112</MemberValue>
       <Docs>
         <summary>Unlimited administration ability for the user store. Allows browsing and deletion of the entire user store, but not read access other than the user's own domain/assembly identity.</summary>
       </Docs>
@@ -89,6 +96,9 @@
       <MemberSignature Language="C#" Value="ApplicationIsolationByMachine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment ApplicationIsolationByMachine = int32(69)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.ApplicationIsolationByMachine" />
+      <MemberSignature Language="VB.NET" Value="ApplicationIsolationByMachine" />
+      <MemberSignature Language="F#" Value="ApplicationIsolationByMachine = 69" Usage="System.Security.Permissions.IsolatedStorageContainment.ApplicationIsolationByMachine" />
+      <MemberSignature Language="C++ CLI" Value="ApplicationIsolationByMachine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
       </ReturnValue>
+      <MemberValue>69</MemberValue>
       <Docs>
         <summary>Storage is isolated first by computer and then by application. This provides a data store for the application that is accessible in any domain context. The per-application data compartment requires additional trust because it potentially provides a "tunnel" between applications that could compromise the data isolation of applications in particular Web sites.</summary>
       </Docs>
@@ -110,6 +121,9 @@
       <MemberSignature Language="C#" Value="ApplicationIsolationByRoamingUser" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment ApplicationIsolationByRoamingUser = int32(101)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.ApplicationIsolationByRoamingUser" />
+      <MemberSignature Language="VB.NET" Value="ApplicationIsolationByRoamingUser" />
+      <MemberSignature Language="F#" Value="ApplicationIsolationByRoamingUser = 101" Usage="System.Security.Permissions.IsolatedStorageContainment.ApplicationIsolationByRoamingUser" />
+      <MemberSignature Language="C++ CLI" Value="ApplicationIsolationByRoamingUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -123,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
       </ReturnValue>
+      <MemberValue>101</MemberValue>
       <Docs>
         <summary>Storage is isolated first by user and then by application evidence. Storage will roam if Windows user data roaming is enabled. This provides a data store for the application that is accessible in any domain context. The per-application data compartment requires additional trust because it potentially provides a "tunnel" between applications that could compromise the data isolation of applications in particular Web sites.</summary>
       </Docs>
@@ -131,6 +146,9 @@
       <MemberSignature Language="C#" Value="ApplicationIsolationByUser" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment ApplicationIsolationByUser = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.ApplicationIsolationByUser" />
+      <MemberSignature Language="VB.NET" Value="ApplicationIsolationByUser" />
+      <MemberSignature Language="F#" Value="ApplicationIsolationByUser = 21" Usage="System.Security.Permissions.IsolatedStorageContainment.ApplicationIsolationByUser" />
+      <MemberSignature Language="C++ CLI" Value="ApplicationIsolationByUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -144,6 +162,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>Storage is isolated first by user and then by application. Storage is also isolated by computer. This provides a data store for the application that is accessible in any domain context. The per-application data compartment requires additional trust because it potentially provides a "tunnel" between applications that could compromise the data isolation of applications in particular Web sites.</summary>
       </Docs>
@@ -152,6 +171,9 @@
       <MemberSignature Language="C#" Value="AssemblyIsolationByMachine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment AssemblyIsolationByMachine = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByMachine" />
+      <MemberSignature Language="VB.NET" Value="AssemblyIsolationByMachine" />
+      <MemberSignature Language="F#" Value="AssemblyIsolationByMachine = 64" Usage="System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByMachine" />
+      <MemberSignature Language="C++ CLI" Value="AssemblyIsolationByMachine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -165,6 +187,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Storage is isolated first by computer and then by code assembly. This provides a data store for the assembly that is accessible in any domain context. The per-assembly data compartment requires additional trust because it potentially provides a "tunnel" between applications that could compromise the data isolation of applications in particular Web sites.</summary>
       </Docs>
@@ -173,6 +196,9 @@
       <MemberSignature Language="C#" Value="AssemblyIsolationByRoamingUser" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment AssemblyIsolationByRoamingUser = int32(96)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByRoamingUser" />
+      <MemberSignature Language="VB.NET" Value="AssemblyIsolationByRoamingUser" />
+      <MemberSignature Language="F#" Value="AssemblyIsolationByRoamingUser = 96" Usage="System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByRoamingUser" />
+      <MemberSignature Language="C++ CLI" Value="AssemblyIsolationByRoamingUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -186,6 +212,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
       </ReturnValue>
+      <MemberValue>96</MemberValue>
       <Docs>
         <summary>Storage is isolated first by user and then by assembly evidence. Storage will roam if Windows user data roaming is enabled. This provides a data store for the assembly that is accessible in any domain context. The per-assembly data compartment requires additional trust because it potentially provides a "tunnel" between applications that could compromise the data isolation of applications in particular Web sites.</summary>
       </Docs>
@@ -194,6 +221,9 @@
       <MemberSignature Language="C#" Value="AssemblyIsolationByUser" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment AssemblyIsolationByUser = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByUser" />
+      <MemberSignature Language="VB.NET" Value="AssemblyIsolationByUser" />
+      <MemberSignature Language="F#" Value="AssemblyIsolationByUser = 32" Usage="System.Security.Permissions.IsolatedStorageContainment.AssemblyIsolationByUser" />
+      <MemberSignature Language="C++ CLI" Value="AssemblyIsolationByUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -207,6 +237,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Storage is isolated first by user and then by code assembly. Storage is also isolated by computer. This provides a data store for the assembly that is accessible in any domain context. The per-assembly data compartment requires additional trust because it potentially provides a "tunnel" between applications that could compromise the data isolation of applications in particular Web sites.</summary>
       </Docs>
@@ -215,6 +246,9 @@
       <MemberSignature Language="C#" Value="DomainIsolationByMachine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment DomainIsolationByMachine = int32(48)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByMachine" />
+      <MemberSignature Language="VB.NET" Value="DomainIsolationByMachine" />
+      <MemberSignature Language="F#" Value="DomainIsolationByMachine = 48" Usage="System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByMachine" />
+      <MemberSignature Language="C++ CLI" Value="DomainIsolationByMachine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -228,6 +262,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>Storage is isolated first by computer and then by domain and assembly. Data can only be accessed within the context of the same application and only when run on the same computer. This is helpful when a third-party assembly wants to keep a private data store.</summary>
       </Docs>
@@ -236,6 +271,9 @@
       <MemberSignature Language="C#" Value="DomainIsolationByRoamingUser" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment DomainIsolationByRoamingUser = int32(80)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByRoamingUser" />
+      <MemberSignature Language="VB.NET" Value="DomainIsolationByRoamingUser" />
+      <MemberSignature Language="F#" Value="DomainIsolationByRoamingUser = 80" Usage="System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByRoamingUser" />
+      <MemberSignature Language="C++ CLI" Value="DomainIsolationByRoamingUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -249,6 +287,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
       </ReturnValue>
+      <MemberValue>80</MemberValue>
       <Docs>
         <summary>Storage is isolated first by user and then by domain and assembly. Storage will roam if Windows user data roaming is enabled. Data can only be accessed within the context of the same application and only when run by the same user. This is helpful when a third-party assembly wants to keep a private data store.</summary>
       </Docs>
@@ -257,6 +296,9 @@
       <MemberSignature Language="C#" Value="DomainIsolationByUser" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment DomainIsolationByUser = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByUser" />
+      <MemberSignature Language="VB.NET" Value="DomainIsolationByUser" />
+      <MemberSignature Language="F#" Value="DomainIsolationByUser = 16" Usage="System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByUser" />
+      <MemberSignature Language="C++ CLI" Value="DomainIsolationByUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -270,6 +312,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Storage is isolated first by user and then by domain and assembly. Storage is also isolated by computer. Data can only be accessed within the context of the same application and only when run by the same user. This is helpful when a third-party assembly wants to keep a private data store.</summary>
       </Docs>
@@ -278,6 +321,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Permissions.IsolatedStorageContainment.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -291,6 +337,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Use of isolated storage is not allowed.</summary>
       </Docs>
@@ -299,6 +346,9 @@
       <MemberSignature Language="C#" Value="UnrestrictedIsolatedStorage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.IsolatedStorageContainment UnrestrictedIsolatedStorage = int32(240)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.IsolatedStorageContainment.UnrestrictedIsolatedStorage" />
+      <MemberSignature Language="VB.NET" Value="UnrestrictedIsolatedStorage" />
+      <MemberSignature Language="F#" Value="UnrestrictedIsolatedStorage = 240" Usage="System.Security.Permissions.IsolatedStorageContainment.UnrestrictedIsolatedStorage" />
+      <MemberSignature Language="C++ CLI" Value="UnrestrictedIsolatedStorage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -312,6 +362,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.IsolatedStorageContainment</ReturnType>
       </ReturnValue>
+      <MemberValue>240</MemberValue>
       <Docs>
         <summary>Use of isolated storage is allowed without restriction. Code has full access to any part of the user store, regardless of the identity of the domain or assembly. This use of isolated storage includes the ability to enumerate the contents of the isolated storage data store.</summary>
       </Docs>

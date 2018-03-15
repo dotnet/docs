@@ -1,7 +1,10 @@
-<Type Name="ComEventInterfaceAttribute" FullName="System.Runtime.InteropServices.ComEventInterfaceAttribute">
+﻿<Type Name="ComEventInterfaceAttribute" FullName="System.Runtime.InteropServices.ComEventInterfaceAttribute">
   <TypeSignature Language="C#" Value="public sealed class ComEventInterfaceAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComEventInterfaceAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComEventInterfaceAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComEventInterfaceAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ComEventInterfaceAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComEventInterfaceAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +59,9 @@
       <MemberSignature Language="C#" Value="public ComEventInterfaceAttribute (Type SourceInterface, Type EventProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type SourceInterface, class System.Type EventProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComEventInterfaceAttribute.#ctor(System.Type,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (SourceInterface As Type, EventProvider As Type)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ComEventInterfaceAttribute : Type * Type -&gt; System.Runtime.InteropServices.ComEventInterfaceAttribute" Usage="new System.Runtime.InteropServices.ComEventInterfaceAttribute (SourceInterface, EventProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComEventInterfaceAttribute(Type ^ SourceInterface, Type ^ EventProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -90,6 +96,9 @@
       <MemberSignature Language="C#" Value="public Type EventProvider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type EventProvider" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComEventInterfaceAttribute.EventProvider" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventProvider As Type" />
+      <MemberSignature Language="F#" Value="member this.EventProvider : Type" Usage="System.Runtime.InteropServices.ComEventInterfaceAttribute.EventProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ EventProvider { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -129,6 +138,9 @@
       <MemberSignature Language="C#" Value="public Type SourceInterface { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type SourceInterface" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComEventInterfaceAttribute.SourceInterface" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceInterface As Type" />
+      <MemberSignature Language="F#" Value="member this.SourceInterface : Type" Usage="System.Runtime.InteropServices.ComEventInterfaceAttribute.SourceInterface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ SourceInterface { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

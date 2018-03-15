@@ -1,7 +1,10 @@
-<Type Name="AggregateCacheDependency" FullName="System.Web.Caching.AggregateCacheDependency">
+﻿<Type Name="AggregateCacheDependency" FullName="System.Web.Caching.AggregateCacheDependency">
   <TypeSignature Language="C#" Value="public sealed class AggregateCacheDependency : System.Web.Caching.CacheDependency" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AggregateCacheDependency extends System.Web.Caching.CacheDependency" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.AggregateCacheDependency" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AggregateCacheDependency&#xA;Inherits CacheDependency" />
+  <TypeSignature Language="F#" Value="type AggregateCacheDependency = class&#xA;    inherit CacheDependency" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AggregateCacheDependency sealed : System::Web::Caching::CacheDependency" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="public AggregateCacheDependency ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.AggregateCacheDependency.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AggregateCacheDependency();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -64,6 +69,9 @@
       <MemberSignature Language="C#" Value="public void Add (params System.Web.Caching.CacheDependency[] dependencies);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Caching.CacheDependency[] dependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.AggregateCacheDependency.Add(System.Web.Caching.CacheDependency[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (ParamArray dependencies As CacheDependency())" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Caching.CacheDependency[] -&gt; unit" Usage="aggregateCacheDependency.Add dependencies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(... cli::array &lt;System::Web::Caching::CacheDependency ^&gt; ^ dependencies);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +115,9 @@
       <MemberSignature Language="C#" Value="protected override void DependencyDispose ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void DependencyDispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.AggregateCacheDependency.DependencyDispose" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub DependencyDispose ()" />
+      <MemberSignature Language="F#" Value="override this.DependencyDispose : unit -&gt; unit" Usage="aggregateCacheDependency.DependencyDispose " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void DependencyDispose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -125,6 +136,9 @@
       <MemberSignature Language="C#" Value="public override string[] GetFileDependencies ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string[] GetFileDependencies() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.AggregateCacheDependency.GetFileDependencies" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetFileDependencies () As String()" />
+      <MemberSignature Language="F#" Value="override this.GetFileDependencies : unit -&gt; string[]" Usage="aggregateCacheDependency.GetFileDependencies " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::String ^&gt; ^ GetFileDependencies();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +158,9 @@
       <MemberSignature Language="C#" Value="public override string GetUniqueID ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetUniqueID() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.AggregateCacheDependency.GetUniqueID" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetUniqueID () As String" />
+      <MemberSignature Language="F#" Value="override this.GetUniqueID : unit -&gt; string" Usage="aggregateCacheDependency.GetUniqueID " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetUniqueID();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

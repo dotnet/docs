@@ -1,7 +1,10 @@
-<Type Name="DataSource" FullName="Microsoft.Build.Framework.XamlTypes.DataSource">
+﻿<Type Name="DataSource" FullName="Microsoft.Build.Framework.XamlTypes.DataSource">
   <TypeSignature Language="C#" Value="public sealed class DataSource : System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataSource extends System.Object implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.DataSource" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataSource&#xA;Implements ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type DataSource = class&#xA;    interface ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataSource sealed : System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,8 @@
       <MemberSignature Language="C#" Value="public DataSource ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.DataSource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -45,6 +50,9 @@
       <MemberSignature Language="C#" Value="public void BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.DataSource.BeginInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="dataSource.BeginInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -63,6 +71,9 @@
       <MemberSignature Language="C#" Value="public void EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.DataSource.EndInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="dataSource.EndInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -81,6 +92,9 @@
       <MemberSignature Language="C#" Value="public bool HasConfigurationCondition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasConfigurationCondition" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.DataSource.HasConfigurationCondition" />
+      <MemberSignature Language="VB.NET" Value="Public Property HasConfigurationCondition As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasConfigurationCondition : bool with get, set" Usage="Microsoft.Build.Framework.XamlTypes.DataSource.HasConfigurationCondition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasConfigurationCondition { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -106,6 +120,9 @@
       <MemberSignature Language="C#" Value="public string ItemType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ItemType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.DataSource.ItemType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemType As String" />
+      <MemberSignature Language="F#" Value="member this.ItemType : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.DataSource.ItemType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -131,6 +148,9 @@
       <MemberSignature Language="C#" Value="public string Label { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.DataSource.Label" />
+      <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.DataSource.Label" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -156,6 +176,9 @@
       <MemberSignature Language="C#" Value="public string MSBuildTarget { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MSBuildTarget" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.DataSource.MSBuildTarget" />
+      <MemberSignature Language="VB.NET" Value="Public Property MSBuildTarget As String" />
+      <MemberSignature Language="F#" Value="member this.MSBuildTarget : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.DataSource.MSBuildTarget" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MSBuildTarget { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -174,6 +197,9 @@
       <MemberSignature Language="C#" Value="public string PersistedName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PersistedName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.DataSource.PersistedName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PersistedName As String" />
+      <MemberSignature Language="F#" Value="member this.PersistedName : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.DataSource.PersistedName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PersistedName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -205,6 +231,9 @@
       <MemberSignature Language="C#" Value="public string Persistence { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Persistence" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.DataSource.Persistence" />
+      <MemberSignature Language="VB.NET" Value="Public Property Persistence As String" />
+      <MemberSignature Language="F#" Value="member this.Persistence : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.DataSource.Persistence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Persistence { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -232,6 +261,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation SourceOfDefaultValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation SourceOfDefaultValue" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.DataSource.SourceOfDefaultValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceOfDefaultValue As DefaultValueSourceLocation" />
+      <MemberSignature Language="F#" Value="member this.SourceOfDefaultValue : Microsoft.Build.Framework.XamlTypes.DefaultValueSourceLocation with get, set" Usage="Microsoft.Build.Framework.XamlTypes.DataSource.SourceOfDefaultValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::XamlTypes::DefaultValueSourceLocation SourceOfDefaultValue { Microsoft::Build::Framework::XamlTypes::DefaultValueSourceLocation get(); void set(Microsoft::Build::Framework::XamlTypes::DefaultValueSourceLocation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -250,6 +282,9 @@
       <MemberSignature Language="C#" Value="public string SourceType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.DataSource.SourceType" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceType As String" />
+      <MemberSignature Language="F#" Value="member this.SourceType : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.DataSource.SourceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

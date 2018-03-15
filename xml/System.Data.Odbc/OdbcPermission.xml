@@ -1,7 +1,10 @@
-<Type Name="OdbcPermission" FullName="System.Data.Odbc.OdbcPermission">
+﻿<Type Name="OdbcPermission" FullName="System.Data.Odbc.OdbcPermission">
   <TypeSignature Language="C#" Value="public sealed class OdbcPermission : System.Data.Common.DBDataPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit OdbcPermission extends System.Data.Common.DBDataPermission" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcPermission" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcPermission&#xA;Inherits DBDataPermission" />
+  <TypeSignature Language="F#" Value="type OdbcPermission = class&#xA;    inherit DBDataPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OdbcPermission sealed : System::Data::Common::DBDataPermission" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +29,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OdbcPermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcPermission.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcPermission();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -61,6 +75,9 @@
       <MemberSignature Language="C#" Value="public OdbcPermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
+      <MemberSignature Language="F#" Value="new System.Data.Odbc.OdbcPermission : System.Security.Permissions.PermissionState -&gt; System.Data.Odbc.OdbcPermission" Usage="new System.Data.Odbc.OdbcPermission state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -83,6 +100,9 @@
       <MemberSignature Language="C#" Value="public OdbcPermission (System.Security.Permissions.PermissionState state, bool allowBlankPassword);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state, bool allowBlankPassword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcPermission.#ctor(System.Security.Permissions.PermissionState,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState, allowBlankPassword As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Data.Odbc.OdbcPermission : System.Security.Permissions.PermissionState * bool -&gt; System.Data.Odbc.OdbcPermission" Usage="new System.Data.Odbc.OdbcPermission (state, allowBlankPassword)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcPermission(System::Security::Permissions::PermissionState state, bool allowBlankPassword);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -119,6 +139,9 @@
       <MemberSignature Language="C#" Value="public override void Add (string connectionString, string restrictions, System.Data.KeyRestrictionBehavior behavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(string connectionString, string restrictions, valuetype System.Data.KeyRestrictionBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcPermission.Add(System.String,System.String,System.Data.KeyRestrictionBehavior)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (connectionString As String, restrictions As String, behavior As KeyRestrictionBehavior)" />
+      <MemberSignature Language="F#" Value="override this.Add : string * string * System.Data.KeyRestrictionBehavior -&gt; unit" Usage="odbcPermission.Add (connectionString, restrictions, behavior)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::String ^ connectionString, System::String ^ restrictions, System::Data::KeyRestrictionBehavior behavior);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -161,6 +184,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcPermission.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="odbcPermission.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -180,14 +206,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcPermission" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

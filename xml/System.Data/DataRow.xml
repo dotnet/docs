@@ -1,7 +1,10 @@
-<Type Name="DataRow" FullName="System.Data.DataRow">
+﻿<Type Name="DataRow" FullName="System.Data.DataRow">
   <TypeSignature Language="C#" Value="public class DataRow" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataRow extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataRow" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataRow" />
+  <TypeSignature Language="F#" Value="type DataRow = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataRow" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -58,9 +61,12 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected DataRow (System.Data.DataRowBuilder builder);" />
+      <MemberSignature Language="C#" Value="protected internal DataRow (System.Data.DataRowBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(class System.Data.DataRowBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.#ctor(System.Data.DataRowBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (builder As DataRowBuilder)" />
+      <MemberSignature Language="F#" Value="new System.Data.DataRow : System.Data.DataRowBuilder -&gt; System.Data.DataRow" Usage="new System.Data.DataRow builder" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; DataRow(System::Data::DataRowBuilder ^ builder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -88,6 +94,9 @@
       <MemberSignature Language="C#" Value="public void AcceptChanges ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AcceptChanges() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.AcceptChanges" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AcceptChanges ()" />
+      <MemberSignature Language="F#" Value="member this.AcceptChanges : unit -&gt; unit" Usage="dataRow.AcceptChanges " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AcceptChanges();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -144,6 +153,9 @@
       <MemberSignature Language="C#" Value="public void BeginEdit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginEdit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.BeginEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginEdit ()" />
+      <MemberSignature Language="F#" Value="member this.BeginEdit : unit -&gt; unit" Usage="dataRow.BeginEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -206,6 +218,9 @@
       <MemberSignature Language="C#" Value="public void CancelEdit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelEdit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.CancelEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelEdit ()" />
+      <MemberSignature Language="F#" Value="member this.CancelEdit : unit -&gt; unit" Usage="dataRow.CancelEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -261,6 +276,9 @@
       <MemberSignature Language="C#" Value="public void ClearErrors ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearErrors() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.ClearErrors" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearErrors ()" />
+      <MemberSignature Language="F#" Value="member this.ClearErrors : unit -&gt; unit" Usage="dataRow.ClearErrors " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearErrors();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -313,6 +331,9 @@
       <MemberSignature Language="C#" Value="public void Delete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="F#" Value="member this.Delete : unit -&gt; unit" Usage="dataRow.Delete " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -368,6 +389,9 @@
       <MemberSignature Language="C#" Value="public void EndEdit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndEdit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.EndEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndEdit ()" />
+      <MemberSignature Language="F#" Value="member this.EndEdit : unit -&gt; unit" Usage="dataRow.EndEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -422,10 +446,23 @@
         <altmember cref="P:System.Data.DataRow.RowState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetChildRows">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the child rows of a <see cref="T:System.Data.DataRow" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetChildRows">
       <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (System.Data.DataRelation relation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetChildRows(class System.Data.DataRelation relation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetChildRows(System.Data.DataRelation)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChildRows (relation As DataRelation) As DataRow()" />
+      <MemberSignature Language="F#" Value="member this.GetChildRows : System.Data.DataRelation -&gt; System.Data.DataRow[]" Usage="dataRow.GetChildRows relation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetChildRows(System::Data::DataRelation ^ relation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -480,6 +517,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (string relationName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetChildRows(string relationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetChildRows(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChildRows (relationName As String) As DataRow()" />
+      <MemberSignature Language="F#" Value="member this.GetChildRows : string -&gt; System.Data.DataRow[]" Usage="dataRow.GetChildRows relationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetChildRows(System::String ^ relationName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -520,6 +560,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (System.Data.DataRelation relation, System.Data.DataRowVersion version);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetChildRows(class System.Data.DataRelation relation, valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetChildRows(System.Data.DataRelation,System.Data.DataRowVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChildRows (relation As DataRelation, version As DataRowVersion) As DataRow()" />
+      <MemberSignature Language="F#" Value="member this.GetChildRows : System.Data.DataRelation * System.Data.DataRowVersion -&gt; System.Data.DataRow[]" Usage="dataRow.GetChildRows (relation, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetChildRows(System::Data::DataRelation ^ relation, System::Data::DataRowVersion version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -582,6 +625,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetChildRows (string relationName, System.Data.DataRowVersion version);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetChildRows(string relationName, valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetChildRows(System.String,System.Data.DataRowVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChildRows (relationName As String, version As DataRowVersion) As DataRow()" />
+      <MemberSignature Language="F#" Value="member this.GetChildRows : string * System.Data.DataRowVersion -&gt; System.Data.DataRow[]" Usage="dataRow.GetChildRows (relationName, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetChildRows(System::String ^ relationName, System::Data::DataRowVersion version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -626,10 +672,23 @@
         <exception cref="T:System.Data.VersionNotFoundException">The row does not have the requested <see cref="T:System.Data.DataRowVersion" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetColumnError">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the error description for a column.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetColumnError">
       <MemberSignature Language="C#" Value="public string GetColumnError (System.Data.DataColumn column);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetColumnError(class System.Data.DataColumn column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetColumnError(System.Data.DataColumn)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetColumnError (column As DataColumn) As String" />
+      <MemberSignature Language="F#" Value="member this.GetColumnError : System.Data.DataColumn -&gt; string" Usage="dataRow.GetColumnError column" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetColumnError(System::Data::DataColumn ^ column);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -689,6 +748,9 @@
       <MemberSignature Language="C#" Value="public string GetColumnError (int columnIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetColumnError(int32 columnIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetColumnError(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetColumnError (columnIndex As Integer) As String" />
+      <MemberSignature Language="F#" Value="member this.GetColumnError : int -&gt; string" Usage="dataRow.GetColumnError columnIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetColumnError(int columnIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -748,6 +810,9 @@
       <MemberSignature Language="C#" Value="public string GetColumnError (string columnName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetColumnError(string columnName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetColumnError(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetColumnError (columnName As String) As String" />
+      <MemberSignature Language="F#" Value="member this.GetColumnError : string -&gt; string" Usage="dataRow.GetColumnError columnName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetColumnError(System::String ^ columnName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -806,6 +871,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataColumn[] GetColumnsInError ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataColumn[] GetColumnsInError() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetColumnsInError" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetColumnsInError () As DataColumn()" />
+      <MemberSignature Language="F#" Value="member this.GetColumnsInError : unit -&gt; System.Data.DataColumn[]" Usage="dataRow.GetColumnsInError " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataColumn ^&gt; ^ GetColumnsInError();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -853,10 +921,23 @@
         <altmember cref="M:System.Data.DataRow.SetColumnError(System.Int32,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetParentRow">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the parent row of a <see cref="T:System.Data.DataRow" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetParentRow">
       <MemberSignature Language="C#" Value="public System.Data.DataRow GetParentRow (System.Data.DataRelation relation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow GetParentRow(class System.Data.DataRelation relation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRow(System.Data.DataRelation)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParentRow (relation As DataRelation) As DataRow" />
+      <MemberSignature Language="F#" Value="member this.GetParentRow : System.Data.DataRelation -&gt; System.Data.DataRow" Usage="dataRow.GetParentRow relation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ GetParentRow(System::Data::DataRelation ^ relation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -916,6 +997,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRow GetParentRow (string relationName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow GetParentRow(string relationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRow(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParentRow (relationName As String) As DataRow" />
+      <MemberSignature Language="F#" Value="member this.GetParentRow : string -&gt; System.Data.DataRow" Usage="dataRow.GetParentRow relationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ GetParentRow(System::String ^ relationName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -967,6 +1051,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRow GetParentRow (System.Data.DataRelation relation, System.Data.DataRowVersion version);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow GetParentRow(class System.Data.DataRelation relation, valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRow(System.Data.DataRelation,System.Data.DataRowVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParentRow (relation As DataRelation, version As DataRowVersion) As DataRow" />
+      <MemberSignature Language="F#" Value="member this.GetParentRow : System.Data.DataRelation * System.Data.DataRowVersion -&gt; System.Data.DataRow" Usage="dataRow.GetParentRow (relation, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ GetParentRow(System::Data::DataRelation ^ relation, System::Data::DataRowVersion version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1032,6 +1119,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRow GetParentRow (string relationName, System.Data.DataRowVersion version);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow GetParentRow(string relationName, valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRow(System.String,System.Data.DataRowVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParentRow (relationName As String, version As DataRowVersion) As DataRow" />
+      <MemberSignature Language="F#" Value="member this.GetParentRow : string * System.Data.DataRowVersion -&gt; System.Data.DataRow" Usage="dataRow.GetParentRow (relationName, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataRow ^ GetParentRow(System::String ^ relationName, System::Data::DataRowVersion version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1085,10 +1175,23 @@
         <exception cref="T:System.Data.VersionNotFoundException">The row does not have the requested <see cref="T:System.Data.DataRowVersion" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetParentRows">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the parent rows of a <see cref="T:System.Data.DataRow" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetParentRows">
       <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (System.Data.DataRelation relation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetParentRows(class System.Data.DataRelation relation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRows(System.Data.DataRelation)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParentRows (relation As DataRelation) As DataRow()" />
+      <MemberSignature Language="F#" Value="member this.GetParentRows : System.Data.DataRelation -&gt; System.Data.DataRow[]" Usage="dataRow.GetParentRows relation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetParentRows(System::Data::DataRelation ^ relation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1145,6 +1248,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (string relationName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetParentRows(string relationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRows(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParentRows (relationName As String) As DataRow()" />
+      <MemberSignature Language="F#" Value="member this.GetParentRows : string -&gt; System.Data.DataRow[]" Usage="dataRow.GetParentRows relationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetParentRows(System::String ^ relationName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1187,6 +1293,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (System.Data.DataRelation relation, System.Data.DataRowVersion version);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetParentRows(class System.Data.DataRelation relation, valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRows(System.Data.DataRelation,System.Data.DataRowVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParentRows (relation As DataRelation, version As DataRowVersion) As DataRow()" />
+      <MemberSignature Language="F#" Value="member this.GetParentRows : System.Data.DataRelation * System.Data.DataRowVersion -&gt; System.Data.DataRow[]" Usage="dataRow.GetParentRows (relation, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetParentRows(System::Data::DataRelation ^ relation, System::Data::DataRowVersion version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1248,6 +1357,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRow[] GetParentRows (string relationName, System.Data.DataRowVersion version);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataRow[] GetParentRows(string relationName, valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.GetParentRows(System.String,System.Data.DataRowVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParentRows (relationName As String, version As DataRowVersion) As DataRow()" />
+      <MemberSignature Language="F#" Value="member this.GetParentRows : string * System.Data.DataRowVersion -&gt; System.Data.DataRow[]" Usage="dataRow.GetParentRows (relationName, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Data::DataRow ^&gt; ^ GetParentRows(System::String ^ relationName, System::Data::DataRowVersion version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1296,6 +1408,9 @@
       <MemberSignature Language="C#" Value="public bool HasErrors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasErrors" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.HasErrors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasErrors As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasErrors : bool" Usage="System.Data.DataRow.HasErrors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasErrors { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1352,6 +1467,9 @@
       <MemberSignature Language="C#" Value="public bool HasVersion (System.Data.DataRowVersion version);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasVersion(valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.HasVersion(System.Data.DataRowVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasVersion (version As DataRowVersion) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasVersion : System.Data.DataRowVersion -&gt; bool" Usage="dataRow.HasVersion version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasVersion(System::Data::DataRowVersion version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1402,10 +1520,23 @@
         <altmember cref="P:System.Data.DataRow.RowState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsNull">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value that indicates whether the specified column contains a null value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsNull">
       <MemberSignature Language="C#" Value="public bool IsNull (System.Data.DataColumn column);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsNull(class System.Data.DataColumn column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.IsNull(System.Data.DataColumn)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsNull (column As DataColumn) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNull : System.Data.DataColumn -&gt; bool" Usage="dataRow.IsNull column" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNull(System::Data::DataColumn ^ column);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1447,6 +1578,9 @@
       <MemberSignature Language="C#" Value="public bool IsNull (int columnIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsNull(int32 columnIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.IsNull(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsNull (columnIndex As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNull : int -&gt; bool" Usage="dataRow.IsNull columnIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNull(int columnIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1488,6 +1622,9 @@
       <MemberSignature Language="C#" Value="public bool IsNull (string columnName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsNull(string columnName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.IsNull(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsNull (columnName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNull : string -&gt; bool" Usage="dataRow.IsNull columnName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNull(System::String ^ columnName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1529,6 +1666,9 @@
       <MemberSignature Language="C#" Value="public bool IsNull (System.Data.DataColumn column, System.Data.DataRowVersion version);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsNull(class System.Data.DataColumn column, valuetype System.Data.DataRowVersion version) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.IsNull(System.Data.DataColumn,System.Data.DataRowVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsNull (column As DataColumn, version As DataRowVersion) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNull : System.Data.DataColumn * System.Data.DataRowVersion -&gt; bool" Usage="dataRow.IsNull (column, version)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsNull(System::Data::DataColumn ^ column, System::Data::DataRowVersion version);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1559,10 +1699,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets data stored in a specified column.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public object this[System.Data.DataColumn column] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(class System.Data.DataColumn)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.Item(System.Data.DataColumn)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(column As DataColumn) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(System.Data.DataColumn) : obj with get, set" Usage="System.Data.DataRow.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Data::DataColumn ^] { System::Object ^ get(System::Data::DataColumn ^ column); void set(System::Data::DataColumn ^ column, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1614,6 +1767,9 @@
       <MemberSignature Language="C#" Value="public object this[int columnIndex] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(columnIndex As Integer) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj with get, set" Usage="System.Data.DataRow.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int columnIndex); void set(int columnIndex, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1665,6 +1821,9 @@
       <MemberSignature Language="C#" Value="public object this[string columnName] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(columnName As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Data.DataRow.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ columnName); void set(System::String ^ columnName, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1717,6 +1876,9 @@
       <MemberSignature Language="C#" Value="public object this[System.Data.DataColumn column, System.Data.DataRowVersion version] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(class System.Data.DataColumn, valuetype System.Data.DataRowVersion)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.Item(System.Data.DataColumn,System.Data.DataRowVersion)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(column As DataColumn, version As DataRowVersion) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(System.Data.DataColumn * System.Data.DataRowVersion) : obj" Usage="System.Data.DataRow.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::Data::DataColumn ^, System::Data::DataRowVersion] { System::Object ^ get(System::Data::DataColumn ^ column, System::Data::DataRowVersion version); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1773,6 +1935,9 @@
       <MemberSignature Language="C#" Value="public object this[int columnIndex, System.Data.DataRowVersion version] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(int32, valuetype System.Data.DataRowVersion)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.Item(System.Int32,System.Data.DataRowVersion)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(columnIndex As Integer, version As DataRowVersion) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(int * System.Data.DataRowVersion) : obj" Usage="System.Data.DataRow.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int, System::Data::DataRowVersion] { System::Object ^ get(int columnIndex, System::Data::DataRowVersion version); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1835,6 +2000,9 @@
       <MemberSignature Language="C#" Value="public object this[string columnName, System.Data.DataRowVersion version] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string, valuetype System.Data.DataRowVersion)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.Item(System.String,System.Data.DataRowVersion)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(columnName As String, version As DataRowVersion) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(string * System.Data.DataRowVersion) : obj" Usage="System.Data.DataRow.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^, System::Data::DataRowVersion] { System::Object ^ get(System::String ^ columnName, System::Data::DataRowVersion version); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1892,6 +2060,9 @@
       <MemberSignature Language="C#" Value="public object[] ItemArray { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object[] ItemArray" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.ItemArray" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemArray As Object()" />
+      <MemberSignature Language="F#" Value="member this.ItemArray : obj[] with get, set" Usage="System.Data.DataRow.ItemArray" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ ItemArray { cli::array &lt;System::Object ^&gt; ^ get(); void set(cli::array &lt;System::Object ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1945,6 +2116,9 @@
       <MemberSignature Language="C#" Value="public void RejectChanges ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RejectChanges() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.RejectChanges" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RejectChanges ()" />
+      <MemberSignature Language="F#" Value="member this.RejectChanges : unit -&gt; unit" Usage="dataRow.RejectChanges " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RejectChanges();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1990,6 +2164,9 @@
       <MemberSignature Language="C#" Value="public string RowError { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RowError" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.RowError" />
+      <MemberSignature Language="VB.NET" Value="Public Property RowError As String" />
+      <MemberSignature Language="F#" Value="member this.RowError : string with get, set" Usage="System.Data.DataRow.RowError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RowError { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2034,6 +2211,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataRowState RowState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.DataRowState RowState" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.RowState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowState As DataRowState" />
+      <MemberSignature Language="F#" Value="member this.RowState : System.Data.DataRowState" Usage="System.Data.DataRow.RowState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataRowState RowState { System::Data::DataRowState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2087,6 +2267,9 @@
       <MemberSignature Language="C#" Value="public void SetAdded ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAdded() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetAdded" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAdded ()" />
+      <MemberSignature Language="F#" Value="member this.SetAdded : unit -&gt; unit" Usage="dataRow.SetAdded " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAdded();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2119,10 +2302,23 @@
         <altmember cref="P:System.Data.DataRow.RowState" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetColumnError">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the error description for a column.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetColumnError">
       <MemberSignature Language="C#" Value="public void SetColumnError (System.Data.DataColumn column, string error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColumnError(class System.Data.DataColumn column, string error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetColumnError(System.Data.DataColumn,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetColumnError (column As DataColumn, error As String)" />
+      <MemberSignature Language="F#" Value="member this.SetColumnError : System.Data.DataColumn * string -&gt; unit" Usage="dataRow.SetColumnError (column, error)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColumnError(System::Data::DataColumn ^ column, System::String ^ error);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2187,6 +2383,9 @@
       <MemberSignature Language="C#" Value="public void SetColumnError (int columnIndex, string error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColumnError(int32 columnIndex, string error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetColumnError(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetColumnError (columnIndex As Integer, error As String)" />
+      <MemberSignature Language="F#" Value="member this.SetColumnError : int * string -&gt; unit" Usage="dataRow.SetColumnError (columnIndex, error)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColumnError(int columnIndex, System::String ^ error);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2254,6 +2453,9 @@
       <MemberSignature Language="C#" Value="public void SetColumnError (string columnName, string error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetColumnError(string columnName, string error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetColumnError(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetColumnError (columnName As String, error As String)" />
+      <MemberSignature Language="F#" Value="member this.SetColumnError : string * string -&gt; unit" Usage="dataRow.SetColumnError (columnName, error)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetColumnError(System::String ^ columnName, System::String ^ error);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2320,6 +2522,9 @@
       <MemberSignature Language="C#" Value="public void SetModified ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetModified() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetModified" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetModified ()" />
+      <MemberSignature Language="F#" Value="member this.SetModified : unit -&gt; unit" Usage="dataRow.SetModified " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetModified();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2356,6 +2561,9 @@
       <MemberSignature Language="C#" Value="protected void SetNull (System.Data.DataColumn column);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SetNull(class System.Data.DataColumn column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetNull(System.Data.DataColumn)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SetNull (column As DataColumn)" />
+      <MemberSignature Language="F#" Value="member this.SetNull : System.Data.DataColumn -&gt; unit" Usage="dataRow.SetNull column" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SetNull(System::Data::DataColumn ^ column);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2389,10 +2597,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetParentRow">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the parent row of a <see cref="T:System.Data.DataRow" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetParentRow">
       <MemberSignature Language="C#" Value="public void SetParentRow (System.Data.DataRow parentRow);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetParentRow(class System.Data.DataRow parentRow) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetParentRow(System.Data.DataRow)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetParentRow (parentRow As DataRow)" />
+      <MemberSignature Language="F#" Value="member this.SetParentRow : System.Data.DataRow -&gt; unit" Usage="dataRow.SetParentRow parentRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetParentRow(System::Data::DataRow ^ parentRow);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2423,6 +2644,9 @@
       <MemberSignature Language="C#" Value="public void SetParentRow (System.Data.DataRow parentRow, System.Data.DataRelation relation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetParentRow(class System.Data.DataRow parentRow, class System.Data.DataRelation relation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataRow.SetParentRow(System.Data.DataRow,System.Data.DataRelation)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetParentRow (parentRow As DataRow, relation As DataRelation)" />
+      <MemberSignature Language="F#" Value="member this.SetParentRow : System.Data.DataRow * System.Data.DataRelation -&gt; unit" Usage="dataRow.SetParentRow (parentRow, relation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetParentRow(System::Data::DataRow ^ parentRow, System::Data::DataRelation ^ relation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2468,6 +2692,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataTable Table { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataTable Table" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataRow.Table" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Table As DataTable" />
+      <MemberSignature Language="F#" Value="member this.Table : System.Data.DataTable" Usage="System.Data.DataRow.Table" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataTable ^ Table { System::Data::DataTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -2508,85 +2735,5 @@
         <altmember cref="T:System.Data.DataTable" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetParentRow">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the parent row of a <see cref="T:System.Data.DataRow" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetChildRows">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the child rows of a <see cref="T:System.Data.DataRow" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsNull">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a value that indicates whether the specified column contains a null value.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetColumnError">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the error description for a column.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets data stored in a specified column.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetParentRows">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the parent rows of a <see cref="T:System.Data.DataRow" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetParentRow">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the parent row of a <see cref="T:System.Data.DataRow" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetColumnError">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the error description for a column.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

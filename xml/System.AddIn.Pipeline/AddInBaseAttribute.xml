@@ -1,7 +1,10 @@
-<Type Name="AddInBaseAttribute" FullName="System.AddIn.Pipeline.AddInBaseAttribute">
+﻿<Type Name="AddInBaseAttribute" FullName="System.AddIn.Pipeline.AddInBaseAttribute">
   <TypeSignature Language="C#" Value="public sealed class AddInBaseAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AddInBaseAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.AddInBaseAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AddInBaseAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type AddInBaseAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AddInBaseAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public AddInBaseAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.AddInBaseAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AddInBaseAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -58,6 +63,9 @@
       <MemberSignature Language="C#" Value="public Type[] ActivatableAs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] ActivatableAs" />
       <MemberSignature Language="DocId" Value="P:System.AddIn.Pipeline.AddInBaseAttribute.ActivatableAs" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActivatableAs As Type()" />
+      <MemberSignature Language="F#" Value="member this.ActivatableAs : Type[] with get, set" Usage="System.AddIn.Pipeline.AddInBaseAttribute.ActivatableAs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Type ^&gt; ^ ActivatableAs { cli::array &lt;Type ^&gt; ^ get(); void set(cli::array &lt;Type ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>

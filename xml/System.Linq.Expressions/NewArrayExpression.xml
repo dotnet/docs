@@ -1,7 +1,10 @@
-<Type Name="NewArrayExpression" FullName="System.Linq.Expressions.NewArrayExpression">
+﻿<Type Name="NewArrayExpression" FullName="System.Linq.Expressions.NewArrayExpression">
   <TypeSignature Language="C#" Value="public class NewArrayExpression : System.Linq.Expressions.Expression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NewArrayExpression extends System.Linq.Expressions.Expression" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.NewArrayExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class NewArrayExpression&#xA;Inherits Expression" />
+  <TypeSignature Language="F#" Value="type NewArrayExpression = class&#xA;    inherit Expression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NewArrayExpression : System::Linq::Expressions::Expression" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,9 +61,12 @@
   </Docs>
   <Members>
     <Member MemberName="Accept">
-      <MemberSignature Language="C#" Value="protected override System.Linq.Expressions.Expression Accept (System.Linq.Expressions.ExpressionVisitor visitor);" />
+      <MemberSignature Language="C#" Value="protected internal override System.Linq.Expressions.Expression Accept (System.Linq.Expressions.ExpressionVisitor visitor);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Linq.Expressions.Expression Accept(class System.Linq.Expressions.ExpressionVisitor visitor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.NewArrayExpression.Accept(System.Linq.Expressions.ExpressionVisitor)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function Accept (visitor As ExpressionVisitor) As Expression" />
+      <MemberSignature Language="F#" Value="override this.Accept : System.Linq.Expressions.ExpressionVisitor -&gt; System.Linq.Expressions.Expression" Usage="newArrayExpression.Accept visitor" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Linq::Expressions::Expression ^ Accept(System::Linq::Expressions::ExpressionVisitor ^ visitor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -102,6 +108,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt; Expressions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Linq.Expressions.Expression&gt; Expressions" />
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.NewArrayExpression.Expressions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expressions As ReadOnlyCollection(Of Expression)" />
+      <MemberSignature Language="F#" Value="member this.Expressions : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;" Usage="System.Linq.Expressions.NewArrayExpression.Expressions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ Expressions { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -132,6 +141,9 @@
       <MemberSignature Language="C#" Value="public override sealed Type Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.NewArrayExpression.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Linq.Expressions.NewArrayExpression.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -162,6 +174,9 @@
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.NewArrayExpression Update (System.Collections.Generic.IEnumerable&lt;System.Linq.Expressions.Expression&gt; expressions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Linq.Expressions.NewArrayExpression Update(class System.Collections.Generic.IEnumerable`1&lt;class System.Linq.Expressions.Expression&gt; expressions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.NewArrayExpression.Update(System.Collections.Generic.IEnumerable{System.Linq.Expressions.Expression})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Update (expressions As IEnumerable(Of Expression)) As NewArrayExpression" />
+      <MemberSignature Language="F#" Value="member this.Update : seq&lt;System.Linq.Expressions.Expression&gt; -&gt; System.Linq.Expressions.NewArrayExpression" Usage="newArrayExpression.Update expressions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::NewArrayExpression ^ Update(System::Collections::Generic::IEnumerable&lt;System::Linq::Expressions::Expression ^&gt; ^ expressions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

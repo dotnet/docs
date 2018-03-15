@@ -1,7 +1,10 @@
-<Type Name="ApplicationIntent" FullName="System.Data.SqlClient.ApplicationIntent">
+﻿<Type Name="ApplicationIntent" FullName="System.Data.SqlClient.ApplicationIntent">
   <TypeSignature Language="C#" Value="public enum ApplicationIntent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ApplicationIntent extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.ApplicationIntent" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ApplicationIntent" />
+  <TypeSignature Language="F#" Value="type ApplicationIntent = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ApplicationIntent" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="ReadOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.ApplicationIntent ReadOnly = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.ApplicationIntent.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="ReadOnly" />
+      <MemberSignature Language="F#" Value="ReadOnly = 1" Usage="System.Data.SqlClient.ApplicationIntent.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.ApplicationIntent</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The application workload type when connecting to a server is read only.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="ReadWrite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.ApplicationIntent ReadWrite = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.ApplicationIntent.ReadWrite" />
+      <MemberSignature Language="VB.NET" Value="ReadWrite" />
+      <MemberSignature Language="F#" Value="ReadWrite = 0" Usage="System.Data.SqlClient.ApplicationIntent.ReadWrite" />
+      <MemberSignature Language="C++ CLI" Value="ReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.ApplicationIntent</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The application workload type when connecting to a server is read write.</summary>
       </Docs>

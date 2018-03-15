@@ -1,7 +1,10 @@
-<Type Name="JsonQueryStringConverter" FullName="System.ServiceModel.Dispatcher.JsonQueryStringConverter">
+﻿<Type Name="JsonQueryStringConverter" FullName="System.ServiceModel.Dispatcher.JsonQueryStringConverter">
   <TypeSignature Language="C#" Value="public class JsonQueryStringConverter : System.ServiceModel.Dispatcher.QueryStringConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JsonQueryStringConverter extends System.ServiceModel.Dispatcher.QueryStringConverter" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.JsonQueryStringConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class JsonQueryStringConverter&#xA;Inherits QueryStringConverter" />
+  <TypeSignature Language="F#" Value="type JsonQueryStringConverter = class&#xA;    inherit QueryStringConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JsonQueryStringConverter : System::ServiceModel::Dispatcher::QueryStringConverter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -73,6 +76,8 @@
       <MemberSignature Language="C#" Value="public JsonQueryStringConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.JsonQueryStringConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JsonQueryStringConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -89,6 +94,8 @@
       <MemberSignature Language="C#" Value="public override bool CanConvert (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvert(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.JsonQueryStringConverter.CanConvert(System.Type)" />
+      <MemberSignature Language="F#" Value="override this.CanConvert : Type -&gt; bool" Usage="jsonQueryStringConverter.CanConvert type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvert(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -121,6 +128,9 @@
       <MemberSignature Language="C#" Value="public override object ConvertStringToValue (string parameter, Type parameterType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertStringToValue(string parameter, class System.Type parameterType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.JsonQueryStringConverter.ConvertStringToValue(System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertStringToValue (parameter As String, parameterType As Type) As Object" />
+      <MemberSignature Language="F#" Value="override this.ConvertStringToValue : string * Type -&gt; obj" Usage="jsonQueryStringConverter.ConvertStringToValue (parameter, parameterType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertStringToValue(System::String ^ parameter, Type ^ parameterType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -146,6 +156,9 @@
       <MemberSignature Language="C#" Value="public override string ConvertValueToString (object parameter, Type parameterType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ConvertValueToString(object parameter, class System.Type parameterType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.JsonQueryStringConverter.ConvertValueToString(System.Object,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertValueToString (parameter As Object, parameterType As Type) As String" />
+      <MemberSignature Language="F#" Value="override this.ConvertValueToString : obj * Type -&gt; string" Usage="jsonQueryStringConverter.ConvertValueToString (parameter, parameterType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ConvertValueToString(System::Object ^ parameter, Type ^ parameterType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

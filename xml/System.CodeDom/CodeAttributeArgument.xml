@@ -1,7 +1,10 @@
-<Type Name="CodeAttributeArgument" FullName="System.CodeDom.CodeAttributeArgument">
+﻿<Type Name="CodeAttributeArgument" FullName="System.CodeDom.CodeAttributeArgument">
   <TypeSignature Language="C#" Value="public class CodeAttributeArgument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeAttributeArgument extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeAttributeArgument" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeAttributeArgument" />
+  <TypeSignature Language="F#" Value="type CodeAttributeArgument = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeAttributeArgument" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -51,10 +54,21 @@
     <altmember cref="T:System.CodeDom.CodeAttributeArgumentCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeArgument" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeAttributeArgument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgument.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeAttributeArgument();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -74,6 +88,9 @@
       <MemberSignature Language="C#" Value="public CodeAttributeArgument (System.CodeDom.CodeExpression value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgument.#ctor(System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As CodeExpression)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeAttributeArgument : System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeAttributeArgument" Usage="new System.CodeDom.CodeAttributeArgument value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeAttributeArgument(System::CodeDom::CodeExpression ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +114,9 @@
       <MemberSignature Language="C#" Value="public CodeAttributeArgument (string name, System.CodeDom.CodeExpression value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.CodeDom.CodeExpression value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeAttributeArgument.#ctor(System.String,System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, value As CodeExpression)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeAttributeArgument : string * System.CodeDom.CodeExpression -&gt; System.CodeDom.CodeAttributeArgument" Usage="new System.CodeDom.CodeAttributeArgument (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeAttributeArgument(System::String ^ name, System::CodeDom::CodeExpression ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -122,6 +142,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAttributeArgument.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.CodeDom.CodeAttributeArgument.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -144,6 +167,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression Value" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeAttributeArgument.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As CodeExpression" />
+      <MemberSignature Language="F#" Value="member this.Value : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeAttributeArgument.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Value { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -163,14 +189,5 @@
         <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeAttributeArgument" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

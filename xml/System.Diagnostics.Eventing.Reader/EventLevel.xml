@@ -1,7 +1,10 @@
-<Type Name="EventLevel" FullName="System.Diagnostics.Eventing.Reader.EventLevel">
+﻿<Type Name="EventLevel" FullName="System.Diagnostics.Eventing.Reader.EventLevel">
   <TypeSignature Language="C#" Value="public sealed class EventLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventLevel extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLevel" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventLevel" />
+  <TypeSignature Language="F#" Value="type EventLevel = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventLevel sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLevel.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Diagnostics.Eventing.Reader.EventLevel.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -44,6 +50,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLevel.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Diagnostics.Eventing.Reader.EventLevel.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -62,6 +71,9 @@
       <MemberSignature Language="C#" Value="public int Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Value" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLevel.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Integer" />
+      <MemberSignature Language="F#" Value="member this.Value : int" Usage="System.Diagnostics.Eventing.Reader.EventLevel.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Value { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

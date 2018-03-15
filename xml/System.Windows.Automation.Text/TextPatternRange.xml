@@ -1,7 +1,10 @@
-<Type Name="TextPatternRange" FullName="System.Windows.Automation.Text.TextPatternRange">
+﻿<Type Name="TextPatternRange" FullName="System.Windows.Automation.Text.TextPatternRange">
   <TypeSignature Language="C#" Value="public class TextPatternRange" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TextPatternRange extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Text.TextPatternRange" />
+  <TypeSignature Language="VB.NET" Value="Public Class TextPatternRange" />
+  <TypeSignature Language="F#" Value="type TextPatternRange = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextPatternRange" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="public void AddToSelection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddToSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.AddToSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddToSelection ()" />
+      <MemberSignature Language="F#" Value="member this.AddToSelection : unit -&gt; unit" Usage="textPatternRange.AddToSelection " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddToSelection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -60,6 +66,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Text.TextPatternRange Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.Text.TextPatternRange Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As TextPatternRange" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Windows.Automation.Text.TextPatternRange" Usage="textPatternRange.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Text::TextPatternRange ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -98,6 +107,9 @@
       <MemberSignature Language="C#" Value="public bool Compare (System.Windows.Automation.Text.TextPatternRange range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Compare(class System.Windows.Automation.Text.TextPatternRange range) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.Compare(System.Windows.Automation.Text.TextPatternRange)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Compare (range As TextPatternRange) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Compare : System.Windows.Automation.Text.TextPatternRange -&gt; bool" Usage="textPatternRange.Compare range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Compare(System::Windows::Automation::Text::TextPatternRange ^ range);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -132,6 +144,9 @@
       <MemberSignature Language="C#" Value="public int CompareEndpoints (System.Windows.Automation.Text.TextPatternRangeEndpoint endpoint, System.Windows.Automation.Text.TextPatternRange targetRange, System.Windows.Automation.Text.TextPatternRangeEndpoint targetEndpoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 CompareEndpoints(valuetype System.Windows.Automation.Text.TextPatternRangeEndpoint endpoint, class System.Windows.Automation.Text.TextPatternRange targetRange, valuetype System.Windows.Automation.Text.TextPatternRangeEndpoint targetEndpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.CompareEndpoints(System.Windows.Automation.Text.TextPatternRangeEndpoint,System.Windows.Automation.Text.TextPatternRange,System.Windows.Automation.Text.TextPatternRangeEndpoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareEndpoints (endpoint As TextPatternRangeEndpoint, targetRange As TextPatternRange, targetEndpoint As TextPatternRangeEndpoint) As Integer" />
+      <MemberSignature Language="F#" Value="member this.CompareEndpoints : System.Windows.Automation.Text.TextPatternRangeEndpoint * System.Windows.Automation.Text.TextPatternRange * System.Windows.Automation.Text.TextPatternRangeEndpoint -&gt; int" Usage="textPatternRange.CompareEndpoints (endpoint, targetRange, targetEndpoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareEndpoints(System::Windows::Automation::Text::TextPatternRangeEndpoint endpoint, System::Windows::Automation::Text::TextPatternRange ^ targetRange, System::Windows::Automation::Text::TextPatternRangeEndpoint targetEndpoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -179,6 +194,9 @@
       <MemberSignature Language="C#" Value="public void ExpandToEnclosingUnit (System.Windows.Automation.Text.TextUnit unit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExpandToEnclosingUnit(valuetype System.Windows.Automation.Text.TextUnit unit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.ExpandToEnclosingUnit(System.Windows.Automation.Text.TextUnit)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExpandToEnclosingUnit (unit As TextUnit)" />
+      <MemberSignature Language="F#" Value="member this.ExpandToEnclosingUnit : System.Windows.Automation.Text.TextUnit -&gt; unit" Usage="textPatternRange.ExpandToEnclosingUnit unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExpandToEnclosingUnit(System::Windows::Automation::Text::TextUnit unit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -251,6 +269,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Text.TextPatternRange FindAttribute (System.Windows.Automation.AutomationTextAttribute attribute, object value, bool backward);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.Text.TextPatternRange FindAttribute(class System.Windows.Automation.AutomationTextAttribute attribute, object value, bool backward) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.FindAttribute(System.Windows.Automation.AutomationTextAttribute,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindAttribute (attribute As AutomationTextAttribute, value As Object, backward As Boolean) As TextPatternRange" />
+      <MemberSignature Language="F#" Value="member this.FindAttribute : System.Windows.Automation.AutomationTextAttribute * obj * bool -&gt; System.Windows.Automation.Text.TextPatternRange" Usage="textPatternRange.FindAttribute (attribute, value, backward)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Text::TextPatternRange ^ FindAttribute(System::Windows::Automation::AutomationTextAttribute ^ attribute, System::Object ^ value, bool backward);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -296,6 +317,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Text.TextPatternRange FindText (string text, bool backward, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.Text.TextPatternRange FindText(string text, bool backward, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.FindText(System.String,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindText (text As String, backward As Boolean, ignoreCase As Boolean) As TextPatternRange" />
+      <MemberSignature Language="F#" Value="member this.FindText : string * bool * bool -&gt; System.Windows.Automation.Text.TextPatternRange" Usage="textPatternRange.FindText (text, backward, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::Text::TextPatternRange ^ FindText(System::String ^ text, bool backward, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -342,6 +366,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public object GetAttributeValue (System.Windows.Automation.AutomationTextAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetAttributeValue(class System.Windows.Automation.AutomationTextAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.GetAttributeValue(System.Windows.Automation.AutomationTextAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAttributeValue (attribute As AutomationTextAttribute) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetAttributeValue : System.Windows.Automation.AutomationTextAttribute -&gt; obj" Usage="textPatternRange.GetAttributeValue attribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetAttributeValue(System::Windows::Automation::AutomationTextAttribute ^ attribute);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -383,6 +410,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public System.Windows.Rect[] GetBoundingRectangles ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Rect[] GetBoundingRectangles() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.GetBoundingRectangles" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBoundingRectangles () As Rect()" />
+      <MemberSignature Language="F#" Value="member this.GetBoundingRectangles : unit -&gt; System.Windows.Rect[]" Usage="textPatternRange.GetBoundingRectangles " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Rect&gt; ^ GetBoundingRectangles();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -415,6 +445,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement[] GetChildren ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement[] GetChildren() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.GetChildren" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChildren () As AutomationElement()" />
+      <MemberSignature Language="F#" Value="member this.GetChildren : unit -&gt; System.Windows.Automation.AutomationElement[]" Usage="textPatternRange.GetChildren " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::AutomationElement ^&gt; ^ GetChildren();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -448,6 +481,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement GetEnclosingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationElement GetEnclosingElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.GetEnclosingElement" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnclosingElement () As AutomationElement" />
+      <MemberSignature Language="F#" Value="member this.GetEnclosingElement : unit -&gt; System.Windows.Automation.AutomationElement" Usage="textPatternRange.GetEnclosingElement " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::AutomationElement ^ GetEnclosingElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -481,6 +517,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public string GetText (int maxLength);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetText(int32 maxLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.GetText(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetText (maxLength As Integer) As String" />
+      <MemberSignature Language="F#" Value="member this.GetText : int -&gt; string" Usage="textPatternRange.GetText maxLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetText(int maxLength);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -523,6 +562,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
       <MemberSignature Language="C#" Value="public int Move (System.Windows.Automation.Text.TextUnit unit, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Move(valuetype System.Windows.Automation.Text.TextUnit unit, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.Move(System.Windows.Automation.Text.TextUnit,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Move (unit As TextUnit, count As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Move : System.Windows.Automation.Text.TextUnit * int -&gt; int" Usage="textPatternRange.Move (unit, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Move(System::Windows::Automation::Text::TextUnit unit, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -604,6 +646,9 @@ Example of a text stream with embedded objects and their range spans
       <MemberSignature Language="C#" Value="public void MoveEndpointByRange (System.Windows.Automation.Text.TextPatternRangeEndpoint endpoint, System.Windows.Automation.Text.TextPatternRange targetRange, System.Windows.Automation.Text.TextPatternRangeEndpoint targetEndpoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MoveEndpointByRange(valuetype System.Windows.Automation.Text.TextPatternRangeEndpoint endpoint, class System.Windows.Automation.Text.TextPatternRange targetRange, valuetype System.Windows.Automation.Text.TextPatternRangeEndpoint targetEndpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.MoveEndpointByRange(System.Windows.Automation.Text.TextPatternRangeEndpoint,System.Windows.Automation.Text.TextPatternRange,System.Windows.Automation.Text.TextPatternRangeEndpoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MoveEndpointByRange (endpoint As TextPatternRangeEndpoint, targetRange As TextPatternRange, targetEndpoint As TextPatternRangeEndpoint)" />
+      <MemberSignature Language="F#" Value="member this.MoveEndpointByRange : System.Windows.Automation.Text.TextPatternRangeEndpoint * System.Windows.Automation.Text.TextPatternRange * System.Windows.Automation.Text.TextPatternRangeEndpoint -&gt; unit" Usage="textPatternRange.MoveEndpointByRange (endpoint, targetRange, targetEndpoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveEndpointByRange(System::Windows::Automation::Text::TextPatternRangeEndpoint endpoint, System::Windows::Automation::Text::TextPatternRange ^ targetRange, System::Windows::Automation::Text::TextPatternRangeEndpoint targetEndpoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -643,6 +688,9 @@ Example of a text stream with embedded objects and their range spans
       <MemberSignature Language="C#" Value="public int MoveEndpointByUnit (System.Windows.Automation.Text.TextPatternRangeEndpoint endpoint, System.Windows.Automation.Text.TextUnit unit, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 MoveEndpointByUnit(valuetype System.Windows.Automation.Text.TextPatternRangeEndpoint endpoint, valuetype System.Windows.Automation.Text.TextUnit unit, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.MoveEndpointByUnit(System.Windows.Automation.Text.TextPatternRangeEndpoint,System.Windows.Automation.Text.TextUnit,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveEndpointByUnit (endpoint As TextPatternRangeEndpoint, unit As TextUnit, count As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.MoveEndpointByUnit : System.Windows.Automation.Text.TextPatternRangeEndpoint * System.Windows.Automation.Text.TextUnit * int -&gt; int" Usage="textPatternRange.MoveEndpointByUnit (endpoint, unit, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int MoveEndpointByUnit(System::Windows::Automation::Text::TextPatternRangeEndpoint endpoint, System::Windows::Automation::Text::TextUnit unit, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -715,6 +763,9 @@ Example of a text stream with embedded objects and their range spans
       <MemberSignature Language="C#" Value="public void RemoveFromSelection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveFromSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.RemoveFromSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveFromSelection ()" />
+      <MemberSignature Language="F#" Value="member this.RemoveFromSelection : unit -&gt; unit" Usage="textPatternRange.RemoveFromSelection " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFromSelection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -746,6 +797,9 @@ Example of a text stream with embedded objects and their range spans
       <MemberSignature Language="C#" Value="public void ScrollIntoView (bool alignToTop);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollIntoView(bool alignToTop) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.ScrollIntoView(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScrollIntoView (alignToTop As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ScrollIntoView : bool -&gt; unit" Usage="textPatternRange.ScrollIntoView alignToTop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollIntoView(bool alignToTop);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -783,6 +837,9 @@ Example of a text stream with embedded objects and their range spans
       <MemberSignature Language="C#" Value="public void Select ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Select() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Text.TextPatternRange.Select" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select ()" />
+      <MemberSignature Language="F#" Value="member this.Select : unit -&gt; unit" Usage="textPatternRange.Select " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -819,6 +876,9 @@ Example of a text stream with embedded objects and their range spans
       <MemberSignature Language="C#" Value="public System.Windows.Automation.TextPattern TextPattern { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.TextPattern TextPattern" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Text.TextPatternRange.TextPattern" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextPattern As TextPattern" />
+      <MemberSignature Language="F#" Value="member this.TextPattern : System.Windows.Automation.TextPattern" Usage="System.Windows.Automation.Text.TextPatternRange.TextPattern" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::TextPattern ^ TextPattern { System::Windows::Automation::TextPattern ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

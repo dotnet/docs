@@ -1,7 +1,10 @@
-<Type Name="IClientOperationSelector" FullName="System.ServiceModel.Dispatcher.IClientOperationSelector">
+﻿<Type Name="IClientOperationSelector" FullName="System.ServiceModel.Dispatcher.IClientOperationSelector">
   <TypeSignature Language="C#" Value="public interface IClientOperationSelector" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IClientOperationSelector" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IClientOperationSelector" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IClientOperationSelector" />
+  <TypeSignature Language="F#" Value="type IClientOperationSelector = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IClientOperationSelector" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public bool AreParametersRequiredForSelection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AreParametersRequiredForSelection" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.IClientOperationSelector.AreParametersRequiredForSelection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AreParametersRequiredForSelection As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AreParametersRequiredForSelection : bool" Usage="System.ServiceModel.Dispatcher.IClientOperationSelector.AreParametersRequiredForSelection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AreParametersRequiredForSelection { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +69,9 @@
       <MemberSignature Language="C#" Value="public string SelectOperation (System.Reflection.MethodBase method, object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string SelectOperation(class System.Reflection.MethodBase method, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IClientOperationSelector.SelectOperation(System.Reflection.MethodBase,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectOperation (method As MethodBase, parameters As Object()) As String" />
+      <MemberSignature Language="F#" Value="abstract member SelectOperation : System.Reflection.MethodBase * obj[] -&gt; string" Usage="iClientOperationSelector.SelectOperation (method, parameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ SelectOperation(System::Reflection::MethodBase ^ method, cli::array &lt;System::Object ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="IRemoteObjectContract" FullName="System.AddIn.Contract.Automation.IRemoteObjectContract">
+﻿<Type Name="IRemoteObjectContract" FullName="System.AddIn.Contract.Automation.IRemoteObjectContract">
   <TypeSignature Language="C#" Value="public interface IRemoteObjectContract : System.AddIn.Contract.IContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRemoteObjectContract implements class System.AddIn.Contract.IContract" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Automation.IRemoteObjectContract" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRemoteObjectContract&#xA;Implements IContract" />
+  <TypeSignature Language="F#" Value="type IRemoteObjectContract = interface&#xA;    interface IContract" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRemoteObjectContract : System::AddIn::Contract::IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Automation.IRemoteTypeContract GetRemoteType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Automation.IRemoteTypeContract GetRemoteType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteObjectContract.GetRemoteType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRemoteType () As IRemoteTypeContract" />
+      <MemberSignature Language="F#" Value="abstract member GetRemoteType : unit -&gt; System.AddIn.Contract.Automation.IRemoteTypeContract" Usage="iRemoteObjectContract.GetRemoteType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Automation::IRemoteTypeContract ^ GetRemoteType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -53,6 +59,9 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.RemoteArgument RemoteCast (string canonicalName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.AddIn.Contract.RemoteArgument RemoteCast(string canonicalName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Automation.IRemoteObjectContract.RemoteCast(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoteCast (canonicalName As String) As RemoteArgument" />
+      <MemberSignature Language="F#" Value="abstract member RemoteCast : string -&gt; System.AddIn.Contract.RemoteArgument" Usage="iRemoteObjectContract.RemoteCast canonicalName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::RemoteArgument RemoteCast(System::String ^ canonicalName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

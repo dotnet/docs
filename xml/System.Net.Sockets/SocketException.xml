@@ -1,7 +1,10 @@
-<Type Name="SocketException" FullName="System.Net.Sockets.SocketException">
+﻿<Type Name="SocketException" FullName="System.Net.Sockets.SocketException">
   <TypeSignature Language="C#" Value="public class SocketException : System.ComponentModel.Win32Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SocketException extends System.ComponentModel.Win32Exception" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketException" />
+  <TypeSignature Language="VB.NET" Value="Public Class SocketException&#xA;Inherits Win32Exception" />
+  <TypeSignature Language="F#" Value="type SocketException = class&#xA;    inherit Win32Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SocketException : System::ComponentModel::Win32Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -36,10 +39,22 @@
     <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.SocketException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SocketException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SocketException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -72,6 +87,9 @@
       <MemberSignature Language="C#" Value="public SocketException (int errorCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketException.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.SocketException : int -&gt; System.Net.Sockets.SocketException" Usage="new System.Net.Sockets.SocketException errorCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SocketException(int errorCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -107,6 +125,8 @@
       <MemberSignature Language="C#" Value="protected SocketException (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.SocketException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.SocketException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.Sockets.SocketException" Usage="new System.Net.Sockets.SocketException (serializationInfo, streamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SocketException(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +163,9 @@
       <MemberSignature Language="C#" Value="public override int ErrorCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ErrorCode" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketException.ErrorCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ErrorCode As Integer" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int" Usage="System.Net.Sockets.SocketException.ErrorCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ErrorCode { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -179,6 +202,9 @@
       <MemberSignature Language="C#" Value="public override string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketException.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Net.Sockets.SocketException.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -207,6 +233,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.SocketError SocketErrorCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Sockets.SocketError SocketErrorCode" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.SocketException.SocketErrorCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SocketErrorCode As SocketError" />
+      <MemberSignature Language="F#" Value="member this.SocketErrorCode : System.Net.Sockets.SocketError" Usage="System.Net.Sockets.SocketException.SocketErrorCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::SocketError SocketErrorCode { System::Net::Sockets::SocketError get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -240,15 +269,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Sockets.SocketException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

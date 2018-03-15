@@ -1,7 +1,10 @@
-<Type Name="RelatedImageListAttribute" FullName="System.Windows.Forms.RelatedImageListAttribute">
+﻿<Type Name="RelatedImageListAttribute" FullName="System.Windows.Forms.RelatedImageListAttribute">
   <TypeSignature Language="C#" Value="public sealed class RelatedImageListAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RelatedImageListAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RelatedImageListAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RelatedImageListAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type RelatedImageListAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RelatedImageListAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public RelatedImageListAttribute (string relatedImageList);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string relatedImageList) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.RelatedImageListAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (relatedImageList As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.RelatedImageListAttribute : string -&gt; System.Windows.Forms.RelatedImageListAttribute" Usage="new System.Windows.Forms.RelatedImageListAttribute relatedImageList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RelatedImageListAttribute(System::String ^ relatedImageList);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -56,6 +62,9 @@
       <MemberSignature Language="C#" Value="public string RelatedImageList { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RelatedImageList" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.RelatedImageListAttribute.RelatedImageList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelatedImageList As String" />
+      <MemberSignature Language="F#" Value="member this.RelatedImageList : string" Usage="System.Windows.Forms.RelatedImageListAttribute.RelatedImageList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelatedImageList { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

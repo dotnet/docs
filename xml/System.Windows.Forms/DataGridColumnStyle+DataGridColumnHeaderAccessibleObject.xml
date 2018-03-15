@@ -1,7 +1,9 @@
-<Type Name="DataGridColumnStyle+DataGridColumnHeaderAccessibleObject" FullName="System.Windows.Forms.DataGridColumnStyle+DataGridColumnHeaderAccessibleObject">
+﻿<Type Name="DataGridColumnStyle+DataGridColumnHeaderAccessibleObject" FullName="System.Windows.Forms.DataGridColumnStyle+DataGridColumnHeaderAccessibleObject">
   <TypeSignature Language="C#" Value="protected class DataGridColumnStyle.DataGridColumnHeaderAccessibleObject : System.Windows.Forms.AccessibleObject" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit DataGridColumnStyle/DataGridColumnHeaderAccessibleObject extends System.Windows.Forms.AccessibleObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject" />
+  <TypeSignature Language="VB.NET" Value="Protected Class DataGridColumnStyle.DataGridColumnHeaderAccessibleObject&#xA;Inherits AccessibleObject" />
+  <TypeSignature Language="C++ CLI" Value="protected: ref class DataGridColumnStyle::DataGridColumnHeaderAccessibleObject : System::Windows::Forms::AccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +22,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataGridColumnHeaderAccessibleObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridColumnHeaderAccessibleObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -39,6 +52,9 @@
       <MemberSignature Language="C#" Value="public DataGridColumnHeaderAccessibleObject (System.Windows.Forms.DataGridColumnStyle owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridColumnStyle owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.#ctor(System.Windows.Forms.DataGridColumnStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As DataGridColumnStyle)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject : System.Windows.Forms.DataGridColumnStyle -&gt; System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject" Usage="new System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridColumnHeaderAccessibleObject(System::Windows::Forms::DataGridColumnStyle ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -57,6 +73,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Rectangle Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Bounds As Rectangle" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Bounds" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +94,9 @@
       <MemberSignature Language="C#" Value="public override string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -93,6 +115,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject Navigate (System.Windows.Forms.AccessibleNavigation navdir);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject Navigate(valuetype System.Windows.Forms.AccessibleNavigation navdir) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Navigate (navdir As AccessibleNavigation) As AccessibleObject" />
+      <MemberSignature Language="F#" Value="override this.Navigate : System.Windows.Forms.AccessibleNavigation -&gt; System.Windows.Forms.AccessibleObject" Usage="dataGridColumnHeaderAccessibleObject.Navigate navdir" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ Navigate(System::Windows::Forms::AccessibleNavigation navdir);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -115,6 +140,9 @@
       <MemberSignature Language="C#" Value="protected System.Windows.Forms.DataGridColumnStyle Owner { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridColumnStyle Owner" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Owner" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Owner As DataGridColumnStyle" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.Windows.Forms.DataGridColumnStyle" Usage="System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Owner" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Forms::DataGridColumnStyle ^ Owner { System::Windows::Forms::DataGridColumnStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -133,6 +161,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.AccessibleObject Parent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Parent As AccessibleObject" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Windows.Forms.AccessibleObject" Usage="System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Parent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleObject ^ Parent { System::Windows::Forms::AccessibleObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -151,6 +182,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleRole Role { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleRole Role" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Role" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Role As AccessibleRole" />
+      <MemberSignature Language="F#" Value="member this.Role : System.Windows.Forms.AccessibleRole" Usage="System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Role" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleRole Role { System::Windows::Forms::AccessibleRole get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -165,14 +199,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="ParameterDirection" FullName="System.Data.ParameterDirection">
+﻿<Type Name="ParameterDirection" FullName="System.Data.ParameterDirection">
   <TypeSignature Language="C#" Value="public enum ParameterDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ParameterDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.ParameterDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ParameterDirection" />
+  <TypeSignature Language="F#" Value="type ParameterDirection = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ParameterDirection" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="Input" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.ParameterDirection Input = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.ParameterDirection.Input" />
+      <MemberSignature Language="VB.NET" Value="Input" />
+      <MemberSignature Language="F#" Value="Input = 1" Usage="System.Data.ParameterDirection.Input" />
+      <MemberSignature Language="C++ CLI" Value="Input" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -53,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Data.ParameterDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The parameter is an input parameter.</summary>
       </Docs>
@@ -61,6 +68,9 @@
       <MemberSignature Language="C#" Value="InputOutput" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.ParameterDirection InputOutput = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.ParameterDirection.InputOutput" />
+      <MemberSignature Language="VB.NET" Value="InputOutput" />
+      <MemberSignature Language="F#" Value="InputOutput = 3" Usage="System.Data.ParameterDirection.InputOutput" />
+      <MemberSignature Language="C++ CLI" Value="InputOutput" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -79,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Data.ParameterDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The parameter is capable of both input and output.</summary>
       </Docs>
@@ -87,6 +98,9 @@
       <MemberSignature Language="C#" Value="Output" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.ParameterDirection Output = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.ParameterDirection.Output" />
+      <MemberSignature Language="VB.NET" Value="Output" />
+      <MemberSignature Language="F#" Value="Output = 2" Usage="System.Data.ParameterDirection.Output" />
+      <MemberSignature Language="C++ CLI" Value="Output" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -105,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Data.ParameterDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The parameter is an output parameter.</summary>
       </Docs>
@@ -113,6 +128,9 @@
       <MemberSignature Language="C#" Value="ReturnValue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.ParameterDirection ReturnValue = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Data.ParameterDirection.ReturnValue" />
+      <MemberSignature Language="VB.NET" Value="ReturnValue" />
+      <MemberSignature Language="F#" Value="ReturnValue = 6" Usage="System.Data.ParameterDirection.ReturnValue" />
+      <MemberSignature Language="C++ CLI" Value="ReturnValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -131,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Data.ParameterDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The parameter represents a return value from an operation such as a stored procedure, built-in function, or user-defined function.</summary>
       </Docs>

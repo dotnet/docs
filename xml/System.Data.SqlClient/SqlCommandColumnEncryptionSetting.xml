@@ -1,7 +1,10 @@
-<Type Name="SqlCommandColumnEncryptionSetting" FullName="System.Data.SqlClient.SqlCommandColumnEncryptionSetting">
+﻿<Type Name="SqlCommandColumnEncryptionSetting" FullName="System.Data.SqlClient.SqlCommandColumnEncryptionSetting">
   <TypeSignature Language="C#" Value="public enum SqlCommandColumnEncryptionSetting" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlCommandColumnEncryptionSetting extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlCommandColumnEncryptionSetting" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SqlCommandColumnEncryptionSetting" />
+  <TypeSignature Language="F#" Value="type SqlCommandColumnEncryptionSetting = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SqlCommandColumnEncryptionSetting" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="Disabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlCommandColumnEncryptionSetting Disabled = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlCommandColumnEncryptionSetting.Disabled" />
+      <MemberSignature Language="VB.NET" Value="Disabled" />
+      <MemberSignature Language="F#" Value="Disabled = 3" Usage="System.Data.SqlClient.SqlCommandColumnEncryptionSetting.Disabled" />
+      <MemberSignature Language="C++ CLI" Value="Disabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -38,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlCommandColumnEncryptionSetting</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Disables Always Encrypted for the query.</summary>
       </Docs>
@@ -46,6 +53,9 @@
       <MemberSignature Language="C#" Value="Enabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlCommandColumnEncryptionSetting Enabled = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlCommandColumnEncryptionSetting.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Enabled" />
+      <MemberSignature Language="F#" Value="Enabled = 1" Usage="System.Data.SqlClient.SqlCommandColumnEncryptionSetting.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="Enabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -55,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlCommandColumnEncryptionSetting</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Enables Always Encrypted for the query.</summary>
       </Docs>
@@ -63,6 +74,9 @@
       <MemberSignature Language="C#" Value="ResultSetOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlCommandColumnEncryptionSetting ResultSetOnly = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlCommandColumnEncryptionSetting.ResultSetOnly" />
+      <MemberSignature Language="VB.NET" Value="ResultSetOnly" />
+      <MemberSignature Language="F#" Value="ResultSetOnly = 2" Usage="System.Data.SqlClient.SqlCommandColumnEncryptionSetting.ResultSetOnly" />
+      <MemberSignature Language="C++ CLI" Value="ResultSetOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -72,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlCommandColumnEncryptionSetting</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that only the results of the command should be processed by the Always Encrypted routine in the driver. Use this value when the command has no parameters that require encryption.</summary>
       </Docs>
@@ -80,6 +95,9 @@
       <MemberSignature Language="C#" Value="UseConnectionSetting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SqlClient.SqlCommandColumnEncryptionSetting UseConnectionSetting = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.SqlClient.SqlCommandColumnEncryptionSetting.UseConnectionSetting" />
+      <MemberSignature Language="VB.NET" Value="UseConnectionSetting" />
+      <MemberSignature Language="F#" Value="UseConnectionSetting = 0" Usage="System.Data.SqlClient.SqlCommandColumnEncryptionSetting.UseConnectionSetting" />
+      <MemberSignature Language="C++ CLI" Value="UseConnectionSetting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -89,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Data.SqlClient.SqlCommandColumnEncryptionSetting</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the command should default to the Always Encrypted setting in the connection string.</summary>
       </Docs>

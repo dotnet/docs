@@ -1,7 +1,10 @@
-<Type Name="IClientMessageInspector" FullName="System.ServiceModel.Dispatcher.IClientMessageInspector">
+﻿<Type Name="IClientMessageInspector" FullName="System.ServiceModel.Dispatcher.IClientMessageInspector">
   <TypeSignature Language="C#" Value="public interface IClientMessageInspector" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IClientMessageInspector" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IClientMessageInspector" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IClientMessageInspector" />
+  <TypeSignature Language="F#" Value="type IClientMessageInspector = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IClientMessageInspector" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +50,9 @@
       <MemberSignature Language="C#" Value="public void AfterReceiveReply (ref System.ServiceModel.Channels.Message reply, object correlationState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AfterReceiveReply(class System.ServiceModel.Channels.Message&amp; reply, object correlationState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IClientMessageInspector.AfterReceiveReply(System.ServiceModel.Channels.Message@,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AfterReceiveReply (ByRef reply As Message, correlationState As Object)" />
+      <MemberSignature Language="F#" Value="abstract member AfterReceiveReply :  * obj -&gt; unit" Usage="iClientMessageInspector.AfterReceiveReply (reply, correlationState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AfterReceiveReply(System::ServiceModel::Channels::Message ^ % reply, System::Object ^ correlationState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +109,9 @@
       <MemberSignature Language="C#" Value="public object BeforeSendRequest (ref System.ServiceModel.Channels.Message request, System.ServiceModel.IClientChannel channel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object BeforeSendRequest(class System.ServiceModel.Channels.Message&amp; request, class System.ServiceModel.IClientChannel channel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IClientMessageInspector.BeforeSendRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeforeSendRequest (ByRef request As Message, channel As IClientChannel) As Object" />
+      <MemberSignature Language="F#" Value="abstract member BeforeSendRequest :  * System.ServiceModel.IClientChannel -&gt; obj" Usage="iClientMessageInspector.BeforeSendRequest (request, channel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ BeforeSendRequest(System::ServiceModel::Channels::Message ^ % request, System::ServiceModel::IClientChannel ^ channel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

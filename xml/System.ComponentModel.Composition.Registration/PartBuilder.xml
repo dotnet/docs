@@ -1,7 +1,10 @@
-<Type Name="PartBuilder" FullName="System.ComponentModel.Composition.Registration.PartBuilder">
+﻿<Type Name="PartBuilder" FullName="System.ComponentModel.Composition.Registration.PartBuilder">
   <TypeSignature Language="C#" Value="public class PartBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PartBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Registration.PartBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class PartBuilder" />
+  <TypeSignature Language="F#" Value="type PartBuilder = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PartBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="AddMetadata">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds metadata to the matching types.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddMetadata">
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder AddMetadata (string name, Func&lt;Type,object&gt; itemFunc);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder AddMetadata(string name, class System.Func`2&lt;class System.Type, object&gt; itemFunc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.AddMetadata(System.String,System.Func{System.Type,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddMetadata (name As String, itemFunc As Func(Of Type, Object)) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddMetadata : string * Func&lt;Type, obj&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.AddMetadata (name, itemFunc)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ AddMetadata(System::String ^ name, Func&lt;Type ^, System::Object ^&gt; ^ itemFunc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -43,6 +58,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder AddMetadata (string name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder AddMetadata(string name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.AddMetadata(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddMetadata (name As String, value As Object) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.AddMetadata : string * obj -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.AddMetadata (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ AddMetadata(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -63,10 +81,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Export">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies that matching types should be exported.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Export">
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder Export ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder Export() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.Export" />
+      <MemberSignature Language="VB.NET" Value="Public Function Export () As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.Export : unit -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.Export " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ Export();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -86,6 +116,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder Export (Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt; exportConfiguration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder Export(class System.Action`1&lt;class System.ComponentModel.Composition.Registration.ExportBuilder&gt; exportConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.Export(System.Action{System.ComponentModel.Composition.Registration.ExportBuilder})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Export (exportConfiguration As Action(Of ExportBuilder)) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.Export : Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.Export exportConfiguration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ Export(Action&lt;System::ComponentModel::Composition::Registration::ExportBuilder ^&gt; ^ exportConfiguration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -108,6 +141,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder Export&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder Export&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.Export``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function Export(Of T) () As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.Export : unit -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.Export " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ Export();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -131,6 +167,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder Export&lt;T&gt; (Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt; exportConfiguration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder Export&lt;T&gt;(class System.Action`1&lt;class System.ComponentModel.Composition.Registration.ExportBuilder&gt; exportConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.Export``1(System.Action{System.ComponentModel.Composition.Registration.ExportBuilder})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Export(Of T) (exportConfiguration As Action(Of ExportBuilder)) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.Export : Action&lt;System.ComponentModel.Composition.Registration.ExportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.Export exportConfiguration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ Export(Action&lt;System::ComponentModel::Composition::Registration::ExportBuilder ^&gt; ^ exportConfiguration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -153,10 +192,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExportInterfaces">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies a set of interfaces that should be exported on the matching types.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ExportInterfaces">
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder ExportInterfaces ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder ExportInterfaces() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ExportInterfaces" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExportInterfaces () As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.ExportInterfaces : unit -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ExportInterfaces " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ExportInterfaces();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -176,6 +227,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder ExportInterfaces (Predicate&lt;Type&gt; interfaceFilter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder ExportInterfaces(class System.Predicate`1&lt;class System.Type&gt; interfaceFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ExportInterfaces(System.Predicate{System.Type})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExportInterfaces (interfaceFilter As Predicate(Of Type)) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.ExportInterfaces : Predicate&lt;Type&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ExportInterfaces interfaceFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ExportInterfaces(Predicate&lt;Type ^&gt; ^ interfaceFilter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -207,6 +261,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder ExportInterfaces (Predicate&lt;Type&gt; interfaceFilter, Action&lt;Type,System.ComponentModel.Composition.Registration.ExportBuilder&gt; exportConfiguration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder ExportInterfaces(class System.Predicate`1&lt;class System.Type&gt; interfaceFilter, class System.Action`2&lt;class System.Type, class System.ComponentModel.Composition.Registration.ExportBuilder&gt; exportConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ExportInterfaces(System.Predicate{System.Type},System.Action{System.Type,System.ComponentModel.Composition.Registration.ExportBuilder})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExportInterfaces (interfaceFilter As Predicate(Of Type), exportConfiguration As Action(Of Type, ExportBuilder)) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.ExportInterfaces : Predicate&lt;Type&gt; * Action&lt;Type, System.ComponentModel.Composition.Registration.ExportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ExportInterfaces (interfaceFilter, exportConfiguration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ExportInterfaces(Predicate&lt;Type ^&gt; ^ interfaceFilter, Action&lt;Type ^, System::ComponentModel::Composition::Registration::ExportBuilder ^&gt; ^ exportConfiguration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -236,10 +293,22 @@
           <paramref name="interfaceFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExportProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies a set of properties on the matching types that should be exported.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ExportProperties">
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder ExportProperties (Predicate&lt;System.Reflection.PropertyInfo&gt; propertyFilter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder ExportProperties(class System.Predicate`1&lt;class System.Reflection.PropertyInfo&gt; propertyFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ExportProperties(System.Predicate{System.Reflection.PropertyInfo})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExportProperties (propertyFilter As Predicate(Of PropertyInfo)) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.ExportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ExportProperties propertyFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ExportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -264,6 +333,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder ExportProperties (Predicate&lt;System.Reflection.PropertyInfo&gt; propertyFilter, Action&lt;System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ExportBuilder&gt; exportConfiguration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder ExportProperties(class System.Predicate`1&lt;class System.Reflection.PropertyInfo&gt; propertyFilter, class System.Action`2&lt;class System.Reflection.PropertyInfo, class System.ComponentModel.Composition.Registration.ExportBuilder&gt; exportConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ExportProperties(System.Predicate{System.Reflection.PropertyInfo},System.Action{System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ExportBuilder})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExportProperties (propertyFilter As Predicate(Of PropertyInfo), exportConfiguration As Action(Of PropertyInfo, ExportBuilder)) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.ExportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; * Action&lt;System.Reflection.PropertyInfo, System.ComponentModel.Composition.Registration.ExportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ExportProperties (propertyFilter, exportConfiguration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ExportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter, Action&lt;System::Reflection::PropertyInfo ^, System::ComponentModel::Composition::Registration::ExportBuilder ^&gt; ^ exportConfiguration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -290,6 +362,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder ExportProperties&lt;T&gt; (Predicate&lt;System.Reflection.PropertyInfo&gt; propertyFilter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder ExportProperties&lt;T&gt;(class System.Predicate`1&lt;class System.Reflection.PropertyInfo&gt; propertyFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ExportProperties``1(System.Predicate{System.Reflection.PropertyInfo})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExportProperties(Of T) (propertyFilter As Predicate(Of PropertyInfo)) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.ExportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ExportProperties propertyFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ExportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -318,6 +393,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder ExportProperties&lt;T&gt; (Predicate&lt;System.Reflection.PropertyInfo&gt; propertyFilter, Action&lt;System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ExportBuilder&gt; exportConfiguration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder ExportProperties&lt;T&gt;(class System.Predicate`1&lt;class System.Reflection.PropertyInfo&gt; propertyFilter, class System.Action`2&lt;class System.Reflection.PropertyInfo, class System.ComponentModel.Composition.Registration.ExportBuilder&gt; exportConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ExportProperties``1(System.Predicate{System.Reflection.PropertyInfo},System.Action{System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ExportBuilder})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExportProperties(Of T) (propertyFilter As Predicate(Of PropertyInfo), exportConfiguration As Action(Of PropertyInfo, ExportBuilder)) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.ExportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; * Action&lt;System.Reflection.PropertyInfo, System.ComponentModel.Composition.Registration.ExportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ExportProperties (propertyFilter, exportConfiguration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ExportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter, Action&lt;System::Reflection::PropertyInfo ^, System::ComponentModel::Composition::Registration::ExportBuilder ^&gt; ^ exportConfiguration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -344,10 +422,22 @@
           <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ImportProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies a set of properties on the matching types that should be imported.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ImportProperties">
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder ImportProperties (Predicate&lt;System.Reflection.PropertyInfo&gt; propertyFilter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder ImportProperties(class System.Predicate`1&lt;class System.Reflection.PropertyInfo&gt; propertyFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ImportProperties(System.Predicate{System.Reflection.PropertyInfo})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportProperties (propertyFilter As Predicate(Of PropertyInfo)) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.ImportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ImportProperties propertyFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ImportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -372,6 +462,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder ImportProperties (Predicate&lt;System.Reflection.PropertyInfo&gt; propertyFilter, Action&lt;System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ImportBuilder&gt; importConfiguration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder ImportProperties(class System.Predicate`1&lt;class System.Reflection.PropertyInfo&gt; propertyFilter, class System.Action`2&lt;class System.Reflection.PropertyInfo, class System.ComponentModel.Composition.Registration.ImportBuilder&gt; importConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ImportProperties(System.Predicate{System.Reflection.PropertyInfo},System.Action{System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ImportBuilder})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportProperties (propertyFilter As Predicate(Of PropertyInfo), importConfiguration As Action(Of PropertyInfo, ImportBuilder)) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.ImportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; * Action&lt;System.Reflection.PropertyInfo, System.ComponentModel.Composition.Registration.ImportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ImportProperties (propertyFilter, importConfiguration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ImportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter, Action&lt;System::Reflection::PropertyInfo ^, System::ComponentModel::Composition::Registration::ImportBuilder ^&gt; ^ importConfiguration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -398,6 +491,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder ImportProperties&lt;T&gt; (Predicate&lt;System.Reflection.PropertyInfo&gt; propertyFilter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder ImportProperties&lt;T&gt;(class System.Predicate`1&lt;class System.Reflection.PropertyInfo&gt; propertyFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ImportProperties``1(System.Predicate{System.Reflection.PropertyInfo})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportProperties(Of T) (propertyFilter As Predicate(Of PropertyInfo)) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.ImportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ImportProperties propertyFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ImportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -426,6 +522,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder ImportProperties&lt;T&gt; (Predicate&lt;System.Reflection.PropertyInfo&gt; propertyFilter, Action&lt;System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ImportBuilder&gt; importConfiguration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder ImportProperties&lt;T&gt;(class System.Predicate`1&lt;class System.Reflection.PropertyInfo&gt; propertyFilter, class System.Action`2&lt;class System.Reflection.PropertyInfo, class System.ComponentModel.Composition.Registration.ImportBuilder&gt; importConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.ImportProperties``1(System.Predicate{System.Reflection.PropertyInfo},System.Action{System.Reflection.PropertyInfo,System.ComponentModel.Composition.Registration.ImportBuilder})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImportProperties(Of T) (propertyFilter As Predicate(Of PropertyInfo), importConfiguration As Action(Of PropertyInfo, ImportBuilder)) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.ImportProperties : Predicate&lt;System.Reflection.PropertyInfo&gt; * Action&lt;System.Reflection.PropertyInfo, System.ComponentModel.Composition.Registration.ImportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.ImportProperties (propertyFilter, importConfiguration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ ImportProperties(Predicate&lt;System::Reflection::PropertyInfo ^&gt; ^ propertyFilter, Action&lt;System::Reflection::PropertyInfo ^, System::ComponentModel::Composition::Registration::ImportBuilder ^&gt; ^ importConfiguration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -452,10 +551,22 @@
           <paramref name="propertyFilter" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SelectConstructor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies the constructor that matching types should use as an importing constructor.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SelectConstructor">
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder SelectConstructor (Func&lt;System.Reflection.ConstructorInfo[],System.Reflection.ConstructorInfo&gt; constructorFilter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder SelectConstructor(class System.Func`2&lt;class System.Reflection.ConstructorInfo[], class System.Reflection.ConstructorInfo&gt; constructorFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.SelectConstructor(System.Func{System.Reflection.ConstructorInfo[],System.Reflection.ConstructorInfo})" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectConstructor (constructorFilter As Func(Of ConstructorInfo(), ConstructorInfo)) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.SelectConstructor : Func&lt;System.Reflection.ConstructorInfo[], System.Reflection.ConstructorInfo&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.SelectConstructor constructorFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ SelectConstructor(Func&lt;cli::array &lt;System::Reflection::ConstructorInfo ^&gt; ^, System::Reflection::ConstructorInfo ^&gt; ^ constructorFilter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -484,6 +595,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder SelectConstructor (Func&lt;System.Reflection.ConstructorInfo[],System.Reflection.ConstructorInfo&gt; constructorFilter, Action&lt;System.Reflection.ParameterInfo,System.ComponentModel.Composition.Registration.ImportBuilder&gt; importConfiguration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder SelectConstructor(class System.Func`2&lt;class System.Reflection.ConstructorInfo[], class System.Reflection.ConstructorInfo&gt; constructorFilter, class System.Action`2&lt;class System.Reflection.ParameterInfo, class System.ComponentModel.Composition.Registration.ImportBuilder&gt; importConfiguration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.SelectConstructor(System.Func{System.Reflection.ConstructorInfo[],System.Reflection.ConstructorInfo},System.Action{System.Reflection.ParameterInfo,System.ComponentModel.Composition.Registration.ImportBuilder})" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectConstructor (constructorFilter As Func(Of ConstructorInfo(), ConstructorInfo), importConfiguration As Action(Of ParameterInfo, ImportBuilder)) As PartBuilder" />
+      <MemberSignature Language="F#" Value="member this.SelectConstructor : Func&lt;System.Reflection.ConstructorInfo[], System.Reflection.ConstructorInfo&gt; * Action&lt;System.Reflection.ParameterInfo, System.ComponentModel.Composition.Registration.ImportBuilder&gt; -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.SelectConstructor (constructorFilter, importConfiguration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ SelectConstructor(Func&lt;cli::array &lt;System::Reflection::ConstructorInfo ^&gt; ^, System::Reflection::ConstructorInfo ^&gt; ^ constructorFilter, Action&lt;System::Reflection::ParameterInfo ^, System::ComponentModel::Composition::Registration::ImportBuilder ^&gt; ^ importConfiguration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -514,6 +628,8 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Registration.PartBuilder SetCreationPolicy (System.ComponentModel.Composition.CreationPolicy creationPolicy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ComponentModel.Composition.Registration.PartBuilder SetCreationPolicy(valuetype System.ComponentModel.Composition.CreationPolicy creationPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Registration.PartBuilder.SetCreationPolicy(System.ComponentModel.Composition.CreationPolicy)" />
+      <MemberSignature Language="F#" Value="member this.SetCreationPolicy : System.ComponentModel.Composition.CreationPolicy -&gt; System.ComponentModel.Composition.Registration.PartBuilder" Usage="partBuilder.SetCreationPolicy creationPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ComponentModel::Composition::Registration::PartBuilder ^ SetCreationPolicy(System::ComponentModel::Composition::CreationPolicy creationPolicy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
@@ -532,59 +648,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddMetadata">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds metadata to the matching types.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SelectConstructor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Specifies the constructor that matching types should use as an importing constructor.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ImportProperties">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Specifies a set of properties on the matching types that should be imported.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ExportInterfaces">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Specifies a set of interfaces that should be exported on the matching types.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Export">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Specifies that matching types should be exported.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ExportProperties">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition.Registration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Specifies a set of properties on the matching types that should be exported.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

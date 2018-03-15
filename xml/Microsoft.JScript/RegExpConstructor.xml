@@ -1,7 +1,10 @@
-<Type Name="RegExpConstructor" FullName="Microsoft.JScript.RegExpConstructor">
+﻿<Type Name="RegExpConstructor" FullName="Microsoft.JScript.RegExpConstructor">
   <TypeSignature Language="C#" Value="public sealed class RegExpConstructor : Microsoft.JScript.ScriptFunction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegExpConstructor extends Microsoft.JScript.ScriptFunction" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.RegExpConstructor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegExpConstructor&#xA;Inherits ScriptFunction" />
+  <TypeSignature Language="F#" Value="type RegExpConstructor = class&#xA;    inherit ScriptFunction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegExpConstructor sealed : Microsoft::JScript::ScriptFunction" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +25,9 @@
       <MemberSignature Language="C#" Value="public object Construct (string pattern, bool ignoreCase, bool global, bool multiline);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Construct(string pattern, bool ignoreCase, bool global, bool multiline) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.RegExpConstructor.Construct(System.String,System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Construct (pattern As String, ignoreCase As Boolean, global As Boolean, multiline As Boolean) As Object" />
+      <MemberSignature Language="F#" Value="member this.Construct : string * bool * bool * bool -&gt; obj" Usage="regExpConstructor.Construct (pattern, ignoreCase, global, multiline)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Construct(System::String ^ pattern, bool ignoreCase, bool global, bool multiline);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -55,6 +61,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.RegExpObject CreateInstance (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.RegExpObject CreateInstance(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.RegExpConstructor.CreateInstance(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateInstance (ParamArray args As Object()) As RegExpObject" />
+      <MemberSignature Language="F#" Value="override this.CreateInstance : obj[] -&gt; Microsoft.JScript.RegExpObject" Usage="regExpConstructor.CreateInstance args" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::RegExpObject ^ CreateInstance(... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -90,6 +99,9 @@
       <MemberSignature Language="C#" Value="public object index { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object index" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.RegExpConstructor.index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property index As Object" />
+      <MemberSignature Language="F#" Value="member this.index : obj" Usage="Microsoft.JScript.RegExpConstructor.index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ index { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -111,6 +123,9 @@
       <MemberSignature Language="C#" Value="public object input { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object input" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.RegExpConstructor.input" />
+      <MemberSignature Language="VB.NET" Value="Public Property input As Object" />
+      <MemberSignature Language="F#" Value="member this.input : obj with get, set" Usage="Microsoft.JScript.RegExpConstructor.input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ input { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -132,6 +147,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.RegExpObject Invoke (params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.JScript.RegExpObject Invoke(object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.RegExpConstructor.Invoke(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Invoke (ParamArray args As Object()) As RegExpObject" />
+      <MemberSignature Language="F#" Value="override this.Invoke : obj[] -&gt; Microsoft.JScript.RegExpObject" Usage="regExpConstructor.Invoke args" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::RegExpObject ^ Invoke(... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -168,6 +186,9 @@
       <MemberSignature Language="C#" Value="public object lastIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object lastIndex" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.RegExpConstructor.lastIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property lastIndex As Object" />
+      <MemberSignature Language="F#" Value="member this.lastIndex : obj" Usage="Microsoft.JScript.RegExpConstructor.lastIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ lastIndex { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -189,6 +210,9 @@
       <MemberSignature Language="C#" Value="public object lastMatch { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object lastMatch" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.RegExpConstructor.lastMatch" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property lastMatch As Object" />
+      <MemberSignature Language="F#" Value="member this.lastMatch : obj" Usage="Microsoft.JScript.RegExpConstructor.lastMatch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ lastMatch { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -210,6 +234,9 @@
       <MemberSignature Language="C#" Value="public object lastParen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object lastParen" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.RegExpConstructor.lastParen" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property lastParen As Object" />
+      <MemberSignature Language="F#" Value="member this.lastParen : obj" Usage="Microsoft.JScript.RegExpConstructor.lastParen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ lastParen { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -231,6 +258,9 @@
       <MemberSignature Language="C#" Value="public object leftContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object leftContext" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.RegExpConstructor.leftContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property leftContext As Object" />
+      <MemberSignature Language="F#" Value="member this.leftContext : obj" Usage="Microsoft.JScript.RegExpConstructor.leftContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ leftContext { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -252,6 +282,9 @@
       <MemberSignature Language="C#" Value="public object rightContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object rightContext" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.RegExpConstructor.rightContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property rightContext As Object" />
+      <MemberSignature Language="F#" Value="member this.rightContext : obj" Usage="Microsoft.JScript.RegExpConstructor.rightContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ rightContext { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

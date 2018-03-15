@@ -1,7 +1,10 @@
-<Type Name="Equality" FullName="Microsoft.JScript.Equality">
+﻿<Type Name="Equality" FullName="Microsoft.JScript.Equality">
   <TypeSignature Language="C#" Value="public class Equality : Microsoft.JScript.BinaryOp" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Equality extends Microsoft.JScript.BinaryOp" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Equality" />
+  <TypeSignature Language="VB.NET" Value="Public Class Equality&#xA;Inherits BinaryOp" />
+  <TypeSignature Language="F#" Value="type Equality = class&#xA;    inherit BinaryOp" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Equality : Microsoft::JScript::BinaryOp" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public Equality (int operatorTok);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 operatorTok) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Equality.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (operatorTok As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.Equality : int -&gt; Microsoft.JScript.Equality" Usage="new Microsoft.JScript.Equality operatorTok" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Equality(int operatorTok);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -39,6 +45,9 @@
       <MemberSignature Language="C#" Value="public bool EvaluateEquality (object v1, object v2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool EvaluateEquality(object v1, object v2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Equality.EvaluateEquality(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EvaluateEquality (v1 As Object, v2 As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EvaluateEquality : obj * obj -&gt; bool" Usage="equality.EvaluateEquality (v1, v2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EvaluateEquality(System::Object ^ v1, System::Object ^ v2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -76,6 +85,9 @@
       <MemberSignature Language="C#" Value="public static bool JScriptEquals (object v1, object v2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool JScriptEquals(object v1, object v2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Equality.JScriptEquals(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function JScriptEquals (v1 As Object, v2 As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member JScriptEquals : obj * obj -&gt; bool" Usage="Microsoft.JScript.Equality.JScriptEquals (v1, v2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool JScriptEquals(System::Object ^ v1, System::Object ^ v2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

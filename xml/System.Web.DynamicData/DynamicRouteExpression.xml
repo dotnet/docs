@@ -1,7 +1,10 @@
-<Type Name="DynamicRouteExpression" FullName="System.Web.DynamicData.DynamicRouteExpression">
+﻿<Type Name="DynamicRouteExpression" FullName="System.Web.DynamicData.DynamicRouteExpression">
   <TypeSignature Language="C#" Value="public class DynamicRouteExpression : System.Web.UI.WebControls.Expressions.DataSourceExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicRouteExpression extends System.Web.UI.WebControls.Expressions.DataSourceExpression" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicRouteExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicRouteExpression&#xA;Inherits DataSourceExpression" />
+  <TypeSignature Language="F#" Value="type DynamicRouteExpression = class&#xA;    inherit DataSourceExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicRouteExpression : System::Web::UI::WebControls::Expressions::DataSourceExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +60,8 @@
       <MemberSignature Language="C#" Value="public DynamicRouteExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicRouteExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicRouteExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -79,6 +84,9 @@
       <MemberSignature Language="C#" Value="public string ColumnName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ColumnName" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicRouteExpression.ColumnName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColumnName As String" />
+      <MemberSignature Language="F#" Value="member this.ColumnName : string with get, set" Usage="System.Web.DynamicData.DynamicRouteExpression.ColumnName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ColumnName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -121,6 +129,9 @@
       <MemberSignature Language="C#" Value="public override System.Linq.IQueryable GetQueryable (System.Linq.IQueryable source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Linq.IQueryable GetQueryable(class System.Linq.IQueryable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicRouteExpression.GetQueryable(System.Linq.IQueryable)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetQueryable (source As IQueryable) As IQueryable" />
+      <MemberSignature Language="F#" Value="override this.GetQueryable : System.Linq.IQueryable -&gt; System.Linq.IQueryable" Usage="dynamicRouteExpression.GetQueryable source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Linq::IQueryable ^ GetQueryable(System::Linq::IQueryable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -150,6 +161,9 @@
       <MemberSignature Language="C#" Value="public override void SetContext (System.Web.UI.Control owner, System.Web.HttpContext context, System.Web.UI.WebControls.IQueryableDataSource dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetContext(class System.Web.UI.Control owner, class System.Web.HttpContext context, class System.Web.UI.WebControls.IQueryableDataSource dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicRouteExpression.SetContext(System.Web.UI.Control,System.Web.HttpContext,System.Web.UI.WebControls.IQueryableDataSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetContext (owner As Control, context As HttpContext, dataSource As IQueryableDataSource)" />
+      <MemberSignature Language="F#" Value="override this.SetContext : System.Web.UI.Control * System.Web.HttpContext * System.Web.UI.WebControls.IQueryableDataSource -&gt; unit" Usage="dynamicRouteExpression.SetContext (owner, context, dataSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetContext(System::Web::UI::Control ^ owner, System::Web::HttpContext ^ context, System::Web::UI::WebControls::IQueryableDataSource ^ dataSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

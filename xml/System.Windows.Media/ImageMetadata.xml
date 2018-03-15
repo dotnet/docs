@@ -1,7 +1,10 @@
-<Type Name="ImageMetadata" FullName="System.Windows.Media.ImageMetadata">
+﻿<Type Name="ImageMetadata" FullName="System.Windows.Media.ImageMetadata">
   <TypeSignature Language="C#" Value="public abstract class ImageMetadata : System.Windows.Freezable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ImageMetadata extends System.Windows.Freezable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.ImageMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ImageMetadata&#xA;Inherits Freezable" />
+  <TypeSignature Language="F#" Value="type ImageMetadata = class&#xA;    inherit Freezable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImageMetadata abstract : System::Windows::Freezable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageMetadata Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.ImageMetadata Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageMetadata.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As ImageMetadata" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.ImageMetadata" Usage="imageMetadata.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::ImageMetadata ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

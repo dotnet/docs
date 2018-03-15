@@ -1,7 +1,10 @@
-<Type Name="IRootDesigner" FullName="System.ComponentModel.Design.IRootDesigner">
+﻿<Type Name="IRootDesigner" FullName="System.ComponentModel.Design.IRootDesigner">
   <TypeSignature Language="C#" Value="public interface IRootDesigner : IDisposable, System.ComponentModel.Design.IDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRootDesigner implements class System.ComponentModel.Design.IDesigner, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IRootDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRootDesigner&#xA;Implements IDesigner, IDisposable" />
+  <TypeSignature Language="F#" Value="type IRootDesigner = interface&#xA;    interface IDesigner&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRootDesigner : IDisposable, System::ComponentModel::Design::IDesigner" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +58,9 @@
       <MemberSignature Language="C#" Value="public object GetView (System.ComponentModel.Design.ViewTechnology technology);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetView(valuetype System.ComponentModel.Design.ViewTechnology technology) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IRootDesigner.GetView(System.ComponentModel.Design.ViewTechnology)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetView (technology As ViewTechnology) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetView : System.ComponentModel.Design.ViewTechnology -&gt; obj" Usage="iRootDesigner.GetView technology" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetView(System::ComponentModel::Design::ViewTechnology technology);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +103,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Design.ViewTechnology[] SupportedTechnologies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.Design.ViewTechnology[] SupportedTechnologies" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.IRootDesigner.SupportedTechnologies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportedTechnologies As ViewTechnology()" />
+      <MemberSignature Language="F#" Value="member this.SupportedTechnologies : System.ComponentModel.Design.ViewTechnology[]" Usage="System.ComponentModel.Design.IRootDesigner.SupportedTechnologies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ SupportedTechnologies { cli::array &lt;System::ComponentModel::Design::ViewTechnology&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

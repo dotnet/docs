@@ -1,7 +1,10 @@
-<Type Name="JSFunctionAttribute" FullName="Microsoft.JScript.JSFunctionAttribute">
+﻿<Type Name="JSFunctionAttribute" FullName="Microsoft.JScript.JSFunctionAttribute">
   <TypeSignature Language="C#" Value="public class JSFunctionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JSFunctionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSFunctionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class JSFunctionAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type JSFunctionAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JSFunctionAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -29,10 +32,22 @@
     <altmember cref="T:Microsoft.JScript.JSBuiltin" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSFunctionAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public JSFunctionAttribute (Microsoft.JScript.JSFunctionAttributeEnum value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.JScript.JSFunctionAttributeEnum value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSFunctionAttribute.#ctor(Microsoft.JScript.JSFunctionAttributeEnum)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As JSFunctionAttributeEnum)" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.JSFunctionAttribute : Microsoft.JScript.JSFunctionAttributeEnum -&gt; Microsoft.JScript.JSFunctionAttribute" Usage="new Microsoft.JScript.JSFunctionAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JSFunctionAttribute(Microsoft::JScript::JSFunctionAttributeEnum value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -53,6 +68,9 @@
       <MemberSignature Language="C#" Value="public JSFunctionAttribute (Microsoft.JScript.JSFunctionAttributeEnum value, Microsoft.JScript.JSBuiltin builtinFunction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.JScript.JSFunctionAttributeEnum value, valuetype Microsoft.JScript.JSBuiltin builtinFunction) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSFunctionAttribute.#ctor(Microsoft.JScript.JSFunctionAttributeEnum,Microsoft.JScript.JSBuiltin)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As JSFunctionAttributeEnum, builtinFunction As JSBuiltin)" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.JSFunctionAttribute : Microsoft.JScript.JSFunctionAttributeEnum * Microsoft.JScript.JSBuiltin -&gt; Microsoft.JScript.JSFunctionAttribute" Usage="new Microsoft.JScript.JSFunctionAttribute (value, builtinFunction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JSFunctionAttribute(Microsoft::JScript::JSFunctionAttributeEnum value, Microsoft::JScript::JSBuiltin builtinFunction);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -74,6 +92,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.JSFunctionAttributeEnum GetAttributeValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.JScript.JSFunctionAttributeEnum GetAttributeValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSFunctionAttribute.GetAttributeValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAttributeValue () As JSFunctionAttributeEnum" />
+      <MemberSignature Language="F#" Value="member this.GetAttributeValue : unit -&gt; Microsoft.JScript.JSFunctionAttributeEnum" Usage="jSFunctionAttribute.GetAttributeValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::JSFunctionAttributeEnum GetAttributeValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -91,14 +112,5 @@
         <altmember cref="T:Microsoft.JScript.JSBuiltin" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSFunctionAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

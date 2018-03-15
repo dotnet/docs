@@ -1,7 +1,10 @@
-<Type Name="Status" FullName="System.IdentityModel.Protocols.WSTrust.Status">
+﻿<Type Name="Status" FullName="System.IdentityModel.Protocols.WSTrust.Status">
   <TypeSignature Language="C#" Value="public class Status" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Status extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Protocols.WSTrust.Status" />
+  <TypeSignature Language="VB.NET" Value="Public Class Status" />
+  <TypeSignature Language="F#" Value="type Status = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Status" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public Status (string code, string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string code, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Protocols.WSTrust.Status.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (code As String, reason As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Protocols.WSTrust.Status : string * string -&gt; System.IdentityModel.Protocols.WSTrust.Status" Usage="new System.IdentityModel.Protocols.WSTrust.Status (code, reason)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Status(System::String ^ code, System::String ^ reason);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="public string Code { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Code" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.Status.Code" />
+      <MemberSignature Language="VB.NET" Value="Public Property Code As String" />
+      <MemberSignature Language="F#" Value="member this.Code : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.Status.Code" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Code { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -75,6 +84,9 @@
       <MemberSignature Language="C#" Value="public string Reason { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Reason" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Protocols.WSTrust.Status.Reason" />
+      <MemberSignature Language="VB.NET" Value="Public Property Reason As String" />
+      <MemberSignature Language="F#" Value="member this.Reason : string with get, set" Usage="System.IdentityModel.Protocols.WSTrust.Status.Reason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Reason { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

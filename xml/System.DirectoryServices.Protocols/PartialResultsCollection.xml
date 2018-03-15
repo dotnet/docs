@@ -1,7 +1,10 @@
-<Type Name="PartialResultsCollection" FullName="System.DirectoryServices.Protocols.PartialResultsCollection">
+﻿<Type Name="PartialResultsCollection" FullName="System.DirectoryServices.Protocols.PartialResultsCollection">
   <TypeSignature Language="C#" Value="public class PartialResultsCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PartialResultsCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.PartialResultsCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class PartialResultsCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type PartialResultsCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PartialResultsCollection : System::Collections::ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.PartialResultsCollection.Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : obj -&gt; bool" Usage="partialResultsCollection.Contains value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -44,6 +50,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (object[] values, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(object[] values, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.PartialResultsCollection.CopyTo(System.Object[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (values As Object(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : obj[] * int -&gt; unit" Usage="partialResultsCollection.CopyTo (values, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Object ^&gt; ^ values, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -79,6 +88,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.PartialResultsCollection.IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Object) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : obj -&gt; int" Usage="partialResultsCollection.IndexOf value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -102,6 +114,9 @@
       <MemberSignature Language="C#" Value="public object this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.PartialResultsCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="System.DirectoryServices.Protocols.PartialResultsCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[int] { System::Object ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ObsoleteAttribute" FullName="System.ObsoleteAttribute">
+﻿<Type Name="ObsoleteAttribute" FullName="System.ObsoleteAttribute">
   <TypeSignature Language="C#" Value="public sealed class ObsoleteAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ObsoleteAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ObsoleteAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObsoleteAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ObsoleteAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObsoleteAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,10 +75,25 @@
     <altmember cref="T:System.Attribute" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ObsoleteAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ObsoleteAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ObsoleteAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObsoleteAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -116,6 +134,9 @@
       <MemberSignature Language="C#" Value="public ObsoleteAttribute (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ObsoleteAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new ObsoleteAttribute : string -&gt; ObsoleteAttribute" Usage="new System.ObsoleteAttribute message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObsoleteAttribute(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -159,6 +180,9 @@
       <MemberSignature Language="C#" Value="public ObsoleteAttribute (string message, bool error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, bool error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ObsoleteAttribute.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, error As Boolean)" />
+      <MemberSignature Language="F#" Value="new ObsoleteAttribute : string * bool -&gt; ObsoleteAttribute" Usage="new System.ObsoleteAttribute (message, error)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObsoleteAttribute(System::String ^ message, bool error);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -205,6 +229,9 @@
       <MemberSignature Language="C#" Value="public bool IsError { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsError" />
       <MemberSignature Language="DocId" Value="P:System.ObsoleteAttribute.IsError" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsError As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsError : bool" Usage="System.ObsoleteAttribute.IsError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsError { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -247,6 +274,9 @@
       <MemberSignature Language="C#" Value="public string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.ObsoleteAttribute.Message" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.ObsoleteAttribute.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -284,18 +314,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ObsoleteAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

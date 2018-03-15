@@ -1,7 +1,10 @@
-<Type Name="ProfessionalColorTable" FullName="System.Windows.Forms.ProfessionalColorTable">
+﻿<Type Name="ProfessionalColorTable" FullName="System.Windows.Forms.ProfessionalColorTable">
   <TypeSignature Language="C#" Value="public class ProfessionalColorTable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProfessionalColorTable extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ProfessionalColorTable" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProfessionalColorTable" />
+  <TypeSignature Language="F#" Value="type ProfessionalColorTable = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProfessionalColorTable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public ProfessionalColorTable ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ProfessionalColorTable.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfessionalColorTable();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonCheckedGradientBegin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonCheckedGradientBegin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonCheckedGradientBegin" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonCheckedGradientBegin As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonCheckedGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonCheckedGradientBegin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonCheckedGradientBegin { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +68,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonCheckedGradientEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonCheckedGradientEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonCheckedGradientEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonCheckedGradientEnd As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonCheckedGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonCheckedGradientEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonCheckedGradientEnd { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +89,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonCheckedGradientMiddle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonCheckedGradientMiddle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonCheckedGradientMiddle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonCheckedGradientMiddle As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonCheckedGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonCheckedGradientMiddle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonCheckedGradientMiddle { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +110,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonCheckedHighlight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonCheckedHighlight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonCheckedHighlight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonCheckedHighlight As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonCheckedHighlight : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonCheckedHighlight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonCheckedHighlight { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -114,6 +131,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonCheckedHighlightBorder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonCheckedHighlightBorder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonCheckedHighlightBorder" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonCheckedHighlightBorder As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonCheckedHighlightBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonCheckedHighlightBorder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonCheckedHighlightBorder { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -132,6 +152,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonPressedBorder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonPressedBorder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonPressedBorder" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonPressedBorder As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonPressedBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonPressedBorder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonPressedBorder { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -150,6 +173,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonPressedGradientBegin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonPressedGradientBegin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonPressedGradientBegin" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonPressedGradientBegin As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonPressedGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonPressedGradientBegin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonPressedGradientBegin { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +194,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonPressedGradientEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonPressedGradientEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonPressedGradientEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonPressedGradientEnd As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonPressedGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonPressedGradientEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonPressedGradientEnd { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -186,6 +215,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonPressedGradientMiddle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonPressedGradientMiddle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonPressedGradientMiddle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonPressedGradientMiddle As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonPressedGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonPressedGradientMiddle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonPressedGradientMiddle { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -204,6 +236,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonPressedHighlight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonPressedHighlight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonPressedHighlight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonPressedHighlight As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonPressedHighlight : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonPressedHighlight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonPressedHighlight { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -222,6 +257,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonPressedHighlightBorder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonPressedHighlightBorder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonPressedHighlightBorder" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonPressedHighlightBorder As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonPressedHighlightBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonPressedHighlightBorder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonPressedHighlightBorder { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -240,6 +278,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonSelectedBorder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonSelectedBorder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonSelectedBorder" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonSelectedBorder As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonSelectedBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonSelectedBorder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonSelectedBorder { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -258,6 +299,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonSelectedGradientBegin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonSelectedGradientBegin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonSelectedGradientBegin" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonSelectedGradientBegin As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonSelectedGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonSelectedGradientBegin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonSelectedGradientBegin { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -276,6 +320,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonSelectedGradientEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonSelectedGradientEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonSelectedGradientEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonSelectedGradientEnd As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonSelectedGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonSelectedGradientEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonSelectedGradientEnd { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -294,6 +341,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonSelectedGradientMiddle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonSelectedGradientMiddle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonSelectedGradientMiddle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonSelectedGradientMiddle As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonSelectedGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonSelectedGradientMiddle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonSelectedGradientMiddle { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -312,6 +362,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonSelectedHighlight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonSelectedHighlight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonSelectedHighlight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonSelectedHighlight As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonSelectedHighlight : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonSelectedHighlight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonSelectedHighlight { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -330,6 +383,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ButtonSelectedHighlightBorder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ButtonSelectedHighlightBorder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ButtonSelectedHighlightBorder" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ButtonSelectedHighlightBorder As Color" />
+      <MemberSignature Language="F#" Value="member this.ButtonSelectedHighlightBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ButtonSelectedHighlightBorder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ButtonSelectedHighlightBorder { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -348,6 +404,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color CheckBackground { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CheckBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.CheckBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CheckBackground As Color" />
+      <MemberSignature Language="F#" Value="member this.CheckBackground : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.CheckBackground" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color CheckBackground { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -366,6 +425,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color CheckPressedBackground { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CheckPressedBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.CheckPressedBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CheckPressedBackground As Color" />
+      <MemberSignature Language="F#" Value="member this.CheckPressedBackground : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.CheckPressedBackground" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color CheckPressedBackground { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -384,6 +446,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color CheckSelectedBackground { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color CheckSelectedBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.CheckSelectedBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CheckSelectedBackground As Color" />
+      <MemberSignature Language="F#" Value="member this.CheckSelectedBackground : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.CheckSelectedBackground" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color CheckSelectedBackground { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -402,6 +467,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color GripDark { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color GripDark" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.GripDark" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property GripDark As Color" />
+      <MemberSignature Language="F#" Value="member this.GripDark : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.GripDark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color GripDark { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -420,6 +488,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color GripLight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color GripLight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.GripLight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property GripLight As Color" />
+      <MemberSignature Language="F#" Value="member this.GripLight : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.GripLight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color GripLight { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -438,6 +509,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ImageMarginGradientBegin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ImageMarginGradientBegin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ImageMarginGradientBegin" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ImageMarginGradientBegin As Color" />
+      <MemberSignature Language="F#" Value="member this.ImageMarginGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ImageMarginGradientBegin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ImageMarginGradientBegin { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -463,6 +537,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ImageMarginGradientEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ImageMarginGradientEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ImageMarginGradientEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ImageMarginGradientEnd As Color" />
+      <MemberSignature Language="F#" Value="member this.ImageMarginGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ImageMarginGradientEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ImageMarginGradientEnd { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -488,6 +565,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ImageMarginGradientMiddle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ImageMarginGradientMiddle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ImageMarginGradientMiddle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ImageMarginGradientMiddle As Color" />
+      <MemberSignature Language="F#" Value="member this.ImageMarginGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ImageMarginGradientMiddle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ImageMarginGradientMiddle { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -513,6 +593,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ImageMarginRevealedGradientBegin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ImageMarginRevealedGradientBegin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ImageMarginRevealedGradientBegin" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ImageMarginRevealedGradientBegin As Color" />
+      <MemberSignature Language="F#" Value="member this.ImageMarginRevealedGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ImageMarginRevealedGradientBegin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ImageMarginRevealedGradientBegin { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -538,6 +621,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ImageMarginRevealedGradientEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ImageMarginRevealedGradientEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ImageMarginRevealedGradientEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ImageMarginRevealedGradientEnd As Color" />
+      <MemberSignature Language="F#" Value="member this.ImageMarginRevealedGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ImageMarginRevealedGradientEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ImageMarginRevealedGradientEnd { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -563,6 +649,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ImageMarginRevealedGradientMiddle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ImageMarginRevealedGradientMiddle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ImageMarginRevealedGradientMiddle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ImageMarginRevealedGradientMiddle As Color" />
+      <MemberSignature Language="F#" Value="member this.ImageMarginRevealedGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ImageMarginRevealedGradientMiddle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ImageMarginRevealedGradientMiddle { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -588,6 +677,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color MenuBorder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MenuBorder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.MenuBorder" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MenuBorder As Color" />
+      <MemberSignature Language="F#" Value="member this.MenuBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.MenuBorder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color MenuBorder { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -606,6 +698,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color MenuItemBorder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MenuItemBorder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.MenuItemBorder" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MenuItemBorder As Color" />
+      <MemberSignature Language="F#" Value="member this.MenuItemBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.MenuItemBorder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color MenuItemBorder { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -624,6 +719,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color MenuItemPressedGradientBegin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MenuItemPressedGradientBegin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.MenuItemPressedGradientBegin" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MenuItemPressedGradientBegin As Color" />
+      <MemberSignature Language="F#" Value="member this.MenuItemPressedGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.MenuItemPressedGradientBegin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color MenuItemPressedGradientBegin { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -642,6 +740,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color MenuItemPressedGradientEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MenuItemPressedGradientEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.MenuItemPressedGradientEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MenuItemPressedGradientEnd As Color" />
+      <MemberSignature Language="F#" Value="member this.MenuItemPressedGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.MenuItemPressedGradientEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color MenuItemPressedGradientEnd { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -660,6 +761,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color MenuItemPressedGradientMiddle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MenuItemPressedGradientMiddle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.MenuItemPressedGradientMiddle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MenuItemPressedGradientMiddle As Color" />
+      <MemberSignature Language="F#" Value="member this.MenuItemPressedGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.MenuItemPressedGradientMiddle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color MenuItemPressedGradientMiddle { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -678,6 +782,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color MenuItemSelected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MenuItemSelected" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.MenuItemSelected" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MenuItemSelected As Color" />
+      <MemberSignature Language="F#" Value="member this.MenuItemSelected : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.MenuItemSelected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color MenuItemSelected { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -696,6 +803,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color MenuItemSelectedGradientBegin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MenuItemSelectedGradientBegin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.MenuItemSelectedGradientBegin" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MenuItemSelectedGradientBegin As Color" />
+      <MemberSignature Language="F#" Value="member this.MenuItemSelectedGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.MenuItemSelectedGradientBegin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color MenuItemSelectedGradientBegin { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -714,6 +824,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color MenuItemSelectedGradientEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MenuItemSelectedGradientEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.MenuItemSelectedGradientEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MenuItemSelectedGradientEnd As Color" />
+      <MemberSignature Language="F#" Value="member this.MenuItemSelectedGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.MenuItemSelectedGradientEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color MenuItemSelectedGradientEnd { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -732,6 +845,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color MenuStripGradientBegin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MenuStripGradientBegin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.MenuStripGradientBegin" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MenuStripGradientBegin As Color" />
+      <MemberSignature Language="F#" Value="member this.MenuStripGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.MenuStripGradientBegin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color MenuStripGradientBegin { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -750,6 +866,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color MenuStripGradientEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color MenuStripGradientEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.MenuStripGradientEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MenuStripGradientEnd As Color" />
+      <MemberSignature Language="F#" Value="member this.MenuStripGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.MenuStripGradientEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color MenuStripGradientEnd { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -768,6 +887,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color OverflowButtonGradientBegin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color OverflowButtonGradientBegin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.OverflowButtonGradientBegin" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OverflowButtonGradientBegin As Color" />
+      <MemberSignature Language="F#" Value="member this.OverflowButtonGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.OverflowButtonGradientBegin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color OverflowButtonGradientBegin { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -786,6 +908,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color OverflowButtonGradientEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color OverflowButtonGradientEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.OverflowButtonGradientEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OverflowButtonGradientEnd As Color" />
+      <MemberSignature Language="F#" Value="member this.OverflowButtonGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.OverflowButtonGradientEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color OverflowButtonGradientEnd { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -804,6 +929,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color OverflowButtonGradientMiddle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color OverflowButtonGradientMiddle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.OverflowButtonGradientMiddle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OverflowButtonGradientMiddle As Color" />
+      <MemberSignature Language="F#" Value="member this.OverflowButtonGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.OverflowButtonGradientMiddle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color OverflowButtonGradientMiddle { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -822,6 +950,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color RaftingContainerGradientBegin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color RaftingContainerGradientBegin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.RaftingContainerGradientBegin" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RaftingContainerGradientBegin As Color" />
+      <MemberSignature Language="F#" Value="member this.RaftingContainerGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.RaftingContainerGradientBegin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color RaftingContainerGradientBegin { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -840,6 +971,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color RaftingContainerGradientEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color RaftingContainerGradientEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.RaftingContainerGradientEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RaftingContainerGradientEnd As Color" />
+      <MemberSignature Language="F#" Value="member this.RaftingContainerGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.RaftingContainerGradientEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color RaftingContainerGradientEnd { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -858,6 +992,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color SeparatorDark { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color SeparatorDark" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.SeparatorDark" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SeparatorDark As Color" />
+      <MemberSignature Language="F#" Value="member this.SeparatorDark : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.SeparatorDark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color SeparatorDark { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -876,6 +1013,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color SeparatorLight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color SeparatorLight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.SeparatorLight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SeparatorLight As Color" />
+      <MemberSignature Language="F#" Value="member this.SeparatorLight : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.SeparatorLight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color SeparatorLight { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -894,6 +1034,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color StatusStripGradientBegin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color StatusStripGradientBegin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.StatusStripGradientBegin" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property StatusStripGradientBegin As Color" />
+      <MemberSignature Language="F#" Value="member this.StatusStripGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.StatusStripGradientBegin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color StatusStripGradientBegin { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -912,6 +1055,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color StatusStripGradientEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color StatusStripGradientEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.StatusStripGradientEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property StatusStripGradientEnd As Color" />
+      <MemberSignature Language="F#" Value="member this.StatusStripGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.StatusStripGradientEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color StatusStripGradientEnd { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -930,6 +1076,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ToolStripBorder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ToolStripBorder" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ToolStripBorder" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ToolStripBorder As Color" />
+      <MemberSignature Language="F#" Value="member this.ToolStripBorder : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ToolStripBorder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ToolStripBorder { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -948,6 +1097,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ToolStripContentPanelGradientBegin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ToolStripContentPanelGradientBegin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ToolStripContentPanelGradientBegin" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ToolStripContentPanelGradientBegin As Color" />
+      <MemberSignature Language="F#" Value="member this.ToolStripContentPanelGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ToolStripContentPanelGradientBegin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ToolStripContentPanelGradientBegin { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -966,6 +1118,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ToolStripContentPanelGradientEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ToolStripContentPanelGradientEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ToolStripContentPanelGradientEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ToolStripContentPanelGradientEnd As Color" />
+      <MemberSignature Language="F#" Value="member this.ToolStripContentPanelGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ToolStripContentPanelGradientEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ToolStripContentPanelGradientEnd { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -984,6 +1139,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ToolStripDropDownBackground { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ToolStripDropDownBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ToolStripDropDownBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ToolStripDropDownBackground As Color" />
+      <MemberSignature Language="F#" Value="member this.ToolStripDropDownBackground : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ToolStripDropDownBackground" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ToolStripDropDownBackground { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1002,6 +1160,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ToolStripGradientBegin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ToolStripGradientBegin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ToolStripGradientBegin" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ToolStripGradientBegin As Color" />
+      <MemberSignature Language="F#" Value="member this.ToolStripGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ToolStripGradientBegin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ToolStripGradientBegin { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1020,6 +1181,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ToolStripGradientEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ToolStripGradientEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ToolStripGradientEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ToolStripGradientEnd As Color" />
+      <MemberSignature Language="F#" Value="member this.ToolStripGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ToolStripGradientEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ToolStripGradientEnd { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1038,6 +1202,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ToolStripGradientMiddle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ToolStripGradientMiddle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ToolStripGradientMiddle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ToolStripGradientMiddle As Color" />
+      <MemberSignature Language="F#" Value="member this.ToolStripGradientMiddle : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ToolStripGradientMiddle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ToolStripGradientMiddle { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1056,6 +1223,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ToolStripPanelGradientBegin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ToolStripPanelGradientBegin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ToolStripPanelGradientBegin" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ToolStripPanelGradientBegin As Color" />
+      <MemberSignature Language="F#" Value="member this.ToolStripPanelGradientBegin : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ToolStripPanelGradientBegin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ToolStripPanelGradientBegin { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1074,6 +1244,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color ToolStripPanelGradientEnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ToolStripPanelGradientEnd" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.ToolStripPanelGradientEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ToolStripPanelGradientEnd As Color" />
+      <MemberSignature Language="F#" Value="member this.ToolStripPanelGradientEnd : System.Drawing.Color" Usage="System.Windows.Forms.ProfessionalColorTable.ToolStripPanelGradientEnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ToolStripPanelGradientEnd { System::Drawing::Color get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1092,6 +1265,9 @@
       <MemberSignature Language="C#" Value="public bool UseSystemColors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseSystemColors" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProfessionalColorTable.UseSystemColors" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseSystemColors As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseSystemColors : bool with get, set" Usage="System.Windows.Forms.ProfessionalColorTable.UseSystemColors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseSystemColors { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ConfigurationSectionCollection" FullName="System.Configuration.ConfigurationSectionCollection">
+﻿<Type Name="ConfigurationSectionCollection" FullName="System.Configuration.ConfigurationSectionCollection">
   <TypeSignature Language="C#" Value="public sealed class ConfigurationSectionCollection : System.Collections.Specialized.NameObjectCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ConfigurationSectionCollection extends System.Collections.Specialized.NameObjectCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationSectionCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ConfigurationSectionCollection&#xA;Inherits NameObjectCollectionBase" />
+  <TypeSignature Language="F#" Value="type ConfigurationSectionCollection = class&#xA;    inherit NameObjectCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationSectionCollection sealed : System::Collections::Specialized::NameObjectCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +64,9 @@
       <MemberSignature Language="C#" Value="public void Add (string name, System.Configuration.ConfigurationSection section);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string name, class System.Configuration.ConfigurationSection section) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionCollection.Add(System.String,System.Configuration.ConfigurationSection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (name As String, section As ConfigurationSection)" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Configuration.ConfigurationSection -&gt; unit" Usage="configurationSectionCollection.Add (name, section)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ name, System::Configuration::ConfigurationSection ^ section);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -106,6 +112,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="configurationSectionCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -141,6 +150,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Configuration.ConfigurationSection[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Configuration.ConfigurationSection[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionCollection.CopyTo(System.Configuration.ConfigurationSection[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ConfigurationSection(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Configuration.ConfigurationSection[] * int -&gt; unit" Usage="configurationSectionCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Configuration::ConfigurationSection ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -171,6 +183,9 @@
       <MemberSignature Language="C#" Value="public override int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Configuration.ConfigurationSectionCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -189,10 +204,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Get">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Configuration.ConfigurationSection" /> object from this <see cref="T:System.Configuration.ConfigurationSectionCollection" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Get">
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSection Get (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.ConfigurationSection Get(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionCollection.Get(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (index As Integer) As ConfigurationSection" />
+      <MemberSignature Language="F#" Value="member this.Get : int -&gt; System.Configuration.ConfigurationSection" Usage="configurationSectionCollection.Get index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::ConfigurationSection ^ Get(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -219,6 +246,9 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSection Get (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Configuration.ConfigurationSection Get(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionCollection.Get(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (name As String) As ConfigurationSection" />
+      <MemberSignature Language="F#" Value="member this.Get : string -&gt; System.Configuration.ConfigurationSection" Usage="configurationSectionCollection.Get name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::ConfigurationSection ^ Get(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -260,6 +290,9 @@
       <MemberSignature Language="C#" Value="public override System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="configurationSectionCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -296,6 +329,9 @@
       <MemberSignature Language="C#" Value="public string GetKey (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetKey(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionCollection.GetKey(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetKey (index As Integer) As String" />
+      <MemberSignature Language="F#" Value="member this.GetKey : int -&gt; string" Usage="configurationSectionCollection.GetKey index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetKey(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -335,6 +371,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionCollection.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="configurationSectionCollection.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -365,10 +404,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the specified <see cref="T:System.Configuration.ConfigurationSection" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSection this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationSection Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ConfigurationSection" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Configuration.ConfigurationSection" Usage="System.Configuration.ConfigurationSectionCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationSection ^ default[int] { System::Configuration::ConfigurationSection ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -415,6 +466,9 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSection this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationSection Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As ConfigurationSection" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Configuration.ConfigurationSection" Usage="System.Configuration.ConfigurationSectionCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationSection ^ default[System::String ^] { System::Configuration::ConfigurationSection ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -461,6 +515,9 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Specialized.NameObjectCollectionBase.KeysCollection Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.NameObjectCollectionBase/KeysCollection Keys" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ConfigurationSectionCollection.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Keys As NameObjectCollectionBase.KeysCollection" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Specialized.NameObjectCollectionBase.KeysCollection" Usage="System.Configuration.ConfigurationSectionCollection.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ Keys { System::Collections::Specialized::NameObjectCollectionBase::KeysCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -496,6 +553,9 @@
       <MemberSignature Language="C#" Value="public void Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="configurationSectionCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -534,6 +594,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationSectionCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="configurationSectionCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -555,23 +618,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Get">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a <see cref="T:System.Configuration.ConfigurationSection" /> object from this <see cref="T:System.Configuration.ConfigurationSectionCollection" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the specified <see cref="T:System.Configuration.ConfigurationSection" /> object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

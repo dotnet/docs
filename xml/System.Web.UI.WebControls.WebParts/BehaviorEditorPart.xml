@@ -1,7 +1,10 @@
-<Type Name="BehaviorEditorPart" FullName="System.Web.UI.WebControls.WebParts.BehaviorEditorPart">
+﻿<Type Name="BehaviorEditorPart" FullName="System.Web.UI.WebControls.WebParts.BehaviorEditorPart">
   <TypeSignature Language="C#" Value="public sealed class BehaviorEditorPart : System.Web.UI.WebControls.WebParts.EditorPart" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BehaviorEditorPart extends System.Web.UI.WebControls.WebParts.EditorPart" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.BehaviorEditorPart" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BehaviorEditorPart&#xA;Inherits EditorPart" />
+  <TypeSignature Language="F#" Value="type BehaviorEditorPart = class&#xA;    inherit EditorPart" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BehaviorEditorPart sealed : System::Web::UI::WebControls::WebParts::EditorPart" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -136,6 +139,8 @@
       <MemberSignature Language="C#" Value="public BehaviorEditorPart ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BehaviorEditorPart();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +165,9 @@
       <MemberSignature Language="C#" Value="public override bool ApplyChanges ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ApplyChanges() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.ApplyChanges" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ApplyChanges () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ApplyChanges : unit -&gt; bool" Usage="behaviorEditorPart.ApplyChanges " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ApplyChanges();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -193,9 +201,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
-      <MemberSignature Language="C#" Value="protected override void CreateChildControls ();" />
+      <MemberSignature Language="C#" Value="protected internal override void CreateChildControls ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.CreateChildControls" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
+      <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="behaviorEditorPart.CreateChildControls " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -214,6 +225,9 @@
       <MemberSignature Language="C#" Value="public override string DefaultButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultButton" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.DefaultButton" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property DefaultButton As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultButton : string with get, set" Usage="System.Web.UI.WebControls.WebParts.BehaviorEditorPart.DefaultButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultButton { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -255,6 +269,9 @@
       <MemberSignature Language="C#" Value="public override bool Display { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Display" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.Display" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Display As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Display : bool" Usage="System.Web.UI.WebControls.WebParts.BehaviorEditorPart.Display" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Display { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -281,9 +298,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="behaviorEditorPart.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -302,9 +322,12 @@
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
-      <MemberSignature Language="C#" Value="protected override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderContents(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.RenderContents(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="behaviorEditorPart.RenderContents writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -326,6 +349,9 @@
       <MemberSignature Language="C#" Value="public override void SyncChanges ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SyncChanges() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.SyncChanges" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SyncChanges ()" />
+      <MemberSignature Language="F#" Value="override this.SyncChanges : unit -&gt; unit" Usage="behaviorEditorPart.SyncChanges " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SyncChanges();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -357,6 +383,9 @@
       <MemberSignature Language="C#" Value="public override string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.BehaviorEditorPart.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Web.UI.WebControls.WebParts.BehaviorEditorPart.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ImageListImageEditor" FullName="System.Windows.Forms.Design.ImageListImageEditor">
+﻿<Type Name="ImageListImageEditor" FullName="System.Windows.Forms.Design.ImageListImageEditor">
   <TypeSignature Language="C#" Value="public class ImageListImageEditor : System.Drawing.Design.ImageEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImageListImageEditor extends System.Drawing.Design.ImageEditor" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ImageListImageEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class ImageListImageEditor&#xA;Inherits ImageEditor" />
+  <TypeSignature Language="F#" Value="type ImageListImageEditor = class&#xA;    inherit ImageEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImageListImageEditor : System::Drawing::Design::ImageEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public ImageListImageEditor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ImageListImageEditor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageListImageEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public override object EditValue (System.ComponentModel.ITypeDescriptorContext context, IServiceProvider provider, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EditValue(class System.ComponentModel.ITypeDescriptorContext context, class System.IServiceProvider provider, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ImageListImageEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EditValue (context As ITypeDescriptorContext, provider As IServiceProvider, value As Object) As Object" />
+      <MemberSignature Language="F#" Value="override this.EditValue : System.ComponentModel.ITypeDescriptorContext * IServiceProvider * obj -&gt; obj" Usage="imageListImageEditor.EditValue (context, provider, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EditValue(System::ComponentModel::ITypeDescriptorContext ^ context, IServiceProvider ^ provider, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -67,6 +75,9 @@
       <MemberSignature Language="C#" Value="protected override string GetFileDialogDescription ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetFileDialogDescription() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ImageListImageEditor.GetFileDialogDescription" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetFileDialogDescription () As String" />
+      <MemberSignature Language="F#" Value="override this.GetFileDialogDescription : unit -&gt; string" Usage="imageListImageEditor.GetFileDialogDescription " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetFileDialogDescription();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -93,6 +104,9 @@
       <MemberSignature Language="C#" Value="protected override Type[] GetImageExtenders ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type[] GetImageExtenders() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ImageListImageEditor.GetImageExtenders" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetImageExtenders () As Type()" />
+      <MemberSignature Language="F#" Value="override this.GetImageExtenders : unit -&gt; Type[]" Usage="imageListImageEditor.GetImageExtenders " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetImageExtenders();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -112,6 +126,9 @@
       <MemberSignature Language="C#" Value="public override bool GetPaintValueSupported (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetPaintValueSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ImageListImageEditor.GetPaintValueSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPaintValueSupported (context As ITypeDescriptorContext) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.GetPaintValueSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="imageListImageEditor.GetPaintValueSupported context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetPaintValueSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -135,6 +152,9 @@
       <MemberSignature Language="C#" Value="public override void PaintValue (System.Drawing.Design.PaintValueEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PaintValue(class System.Drawing.Design.PaintValueEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ImageListImageEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub PaintValue (e As PaintValueEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.PaintValue : System.Drawing.Design.PaintValueEventArgs -&gt; unit" Usage="imageListImageEditor.PaintValue e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PaintValue(System::Drawing::Design::PaintValueEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

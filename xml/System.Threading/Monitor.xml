@@ -1,7 +1,10 @@
-<Type Name="Monitor" FullName="System.Threading.Monitor">
+﻿<Type Name="Monitor" FullName="System.Threading.Monitor">
   <TypeSignature Language="C#" Value="public static class Monitor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Monitor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Monitor" />
+  <TypeSignature Language="VB.NET" Value="Public Class Monitor" />
+  <TypeSignature Language="F#" Value="type Monitor = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Monitor abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -162,10 +165,24 @@
     <altmember cref="T:System.Threading.Thread" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="Enter">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Acquires an exclusive lock on a specified object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Enter">
       <MemberSignature Language="C#" Value="public static void Enter (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Enter(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Enter(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Enter (obj As Object)" />
+      <MemberSignature Language="F#" Value="static member Enter : obj -&gt; unit" Usage="System.Threading.Monitor.Enter obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Enter(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -227,6 +244,9 @@
       <MemberSignature Language="C#" Value="public static void Enter (object obj, ref bool lockTaken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Enter(object obj, bool&amp; lockTaken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Enter(System.Object,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Enter (obj As Object, ByRef lockTaken As Boolean)" />
+      <MemberSignature Language="F#" Value="static member Enter : obj *  -&gt; unit" Usage="System.Threading.Monitor.Enter (obj, lockTaken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Enter(System::Object ^ obj, bool % lockTaken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -286,6 +306,9 @@
       <MemberSignature Language="C#" Value="public static void Exit (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Exit(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Exit(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Exit (obj As Object)" />
+      <MemberSignature Language="F#" Value="static member Exit : obj -&gt; unit" Usage="System.Threading.Monitor.Exit obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Exit(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -347,6 +370,9 @@
       <MemberSignature Language="C#" Value="public static bool IsEntered (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsEntered(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.IsEntered(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsEntered (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsEntered : obj -&gt; bool" Usage="System.Threading.Monitor.IsEntered obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsEntered(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -397,6 +423,9 @@
       <MemberSignature Language="C#" Value="public static void Pulse (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Pulse(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Pulse(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Pulse (obj As Object)" />
+      <MemberSignature Language="F#" Value="static member Pulse : obj -&gt; unit" Usage="System.Threading.Monitor.Pulse obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Pulse(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -455,6 +484,9 @@
       <MemberSignature Language="C#" Value="public static void PulseAll (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PulseAll(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.PulseAll(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub PulseAll (obj As Object)" />
+      <MemberSignature Language="F#" Value="static member PulseAll : obj -&gt; unit" Usage="System.Threading.Monitor.PulseAll obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PulseAll(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -506,10 +538,24 @@
         <altmember cref="T:System.Threading.Thread" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryEnter">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to acquire an exclusive lock on the specified object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryEnter">
       <MemberSignature Language="C#" Value="public static bool TryEnter (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryEnter(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.TryEnter(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryEnter (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryEnter : obj -&gt; bool" Usage="System.Threading.Monitor.TryEnter obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryEnter(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -572,6 +618,9 @@
       <MemberSignature Language="C#" Value="public static void TryEnter (object obj, ref bool lockTaken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TryEnter(object obj, bool&amp; lockTaken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.TryEnter(System.Object,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub TryEnter (obj As Object, ByRef lockTaken As Boolean)" />
+      <MemberSignature Language="F#" Value="static member TryEnter : obj *  -&gt; unit" Usage="System.Threading.Monitor.TryEnter (obj, lockTaken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TryEnter(System::Object ^ obj, bool % lockTaken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -635,6 +684,9 @@
       <MemberSignature Language="C#" Value="public static bool TryEnter (object obj, int millisecondsTimeout);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryEnter(object obj, int32 millisecondsTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.TryEnter(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryEnter (obj As Object, millisecondsTimeout As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryEnter : obj * int -&gt; bool" Usage="System.Threading.Monitor.TryEnter (obj, millisecondsTimeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryEnter(System::Object ^ obj, int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -690,6 +742,9 @@
       <MemberSignature Language="C#" Value="public static bool TryEnter (object obj, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryEnter(object obj, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.TryEnter(System.Object,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryEnter (obj As Object, timeout As TimeSpan) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryEnter : obj * TimeSpan -&gt; bool" Usage="System.Threading.Monitor.TryEnter (obj, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryEnter(System::Object ^ obj, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -744,6 +799,9 @@
       <MemberSignature Language="C#" Value="public static void TryEnter (object obj, int millisecondsTimeout, ref bool lockTaken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TryEnter(object obj, int32 millisecondsTimeout, bool&amp; lockTaken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.TryEnter(System.Object,System.Int32,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub TryEnter (obj As Object, millisecondsTimeout As Integer, ByRef lockTaken As Boolean)" />
+      <MemberSignature Language="F#" Value="static member TryEnter : obj * int *  -&gt; unit" Usage="System.Threading.Monitor.TryEnter (obj, millisecondsTimeout, lockTaken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TryEnter(System::Object ^ obj, int millisecondsTimeout, bool % lockTaken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -809,6 +867,9 @@
       <MemberSignature Language="C#" Value="public static void TryEnter (object obj, TimeSpan timeout, ref bool lockTaken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void TryEnter(object obj, valuetype System.TimeSpan timeout, bool&amp; lockTaken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.TryEnter(System.Object,System.TimeSpan,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub TryEnter (obj As Object, timeout As TimeSpan, ByRef lockTaken As Boolean)" />
+      <MemberSignature Language="F#" Value="static member TryEnter : obj * TimeSpan *  -&gt; unit" Usage="System.Threading.Monitor.TryEnter (obj, timeout, lockTaken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void TryEnter(System::Object ^ obj, TimeSpan timeout, bool % lockTaken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -862,10 +923,24 @@
         <altmember cref="T:System.Threading.Thread" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Wait">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the lock on an object and blocks the current thread until it reacquires the lock.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Wait">
       <MemberSignature Language="C#" Value="public static bool Wait (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Wait(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Wait(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Wait (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Wait : obj -&gt; bool" Usage="System.Threading.Monitor.Wait obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Wait(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -923,6 +998,9 @@
       <MemberSignature Language="C#" Value="public static bool Wait (object obj, int millisecondsTimeout);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Wait(object obj, int32 millisecondsTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Wait(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Wait (obj As Object, millisecondsTimeout As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Wait : obj * int -&gt; bool" Usage="System.Threading.Monitor.Wait (obj, millisecondsTimeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Wait(System::Object ^ obj, int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -989,6 +1067,9 @@
       <MemberSignature Language="C#" Value="public static bool Wait (object obj, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Wait(object obj, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Wait(System.Object,System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Wait (obj As Object, timeout As TimeSpan) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Wait : obj * TimeSpan -&gt; bool" Usage="System.Threading.Monitor.Wait (obj, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Wait(System::Object ^ obj, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -1055,6 +1136,9 @@
       <MemberSignature Language="C#" Value="public static bool Wait (object obj, int millisecondsTimeout, bool exitContext);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Wait(object obj, int32 millisecondsTimeout, bool exitContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Wait(System.Object,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Wait (obj As Object, millisecondsTimeout As Integer, exitContext As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Wait : obj * int * bool -&gt; bool" Usage="System.Threading.Monitor.Wait (obj, millisecondsTimeout, exitContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Wait(System::Object ^ obj, int millisecondsTimeout, bool exitContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1135,6 +1219,9 @@
       <MemberSignature Language="C#" Value="public static bool Wait (object obj, TimeSpan timeout, bool exitContext);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool Wait(object obj, valuetype System.TimeSpan timeout, bool exitContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Monitor.Wait(System.Object,System.TimeSpan,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Wait (obj As Object, timeout As TimeSpan, exitContext As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Wait : obj * TimeSpan * bool -&gt; bool" Usage="System.Threading.Monitor.Wait (obj, timeout, exitContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool Wait(System::Object ^ obj, TimeSpan timeout, bool exitContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1206,38 +1293,5 @@
         <altmember cref="T:System.Threading.Thread" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Enter">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Acquires an exclusive lock on a specified object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Wait">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the lock on an object and blocks the current thread until it reacquires the lock.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TryEnter">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Attempts to acquire an exclusive lock on the specified object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

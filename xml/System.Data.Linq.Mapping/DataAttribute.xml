@@ -1,7 +1,10 @@
-<Type Name="DataAttribute" FullName="System.Data.Linq.Mapping.DataAttribute">
+﻿<Type Name="DataAttribute" FullName="System.Data.Linq.Mapping.DataAttribute">
   <TypeSignature Language="C#" Value="public abstract class DataAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.DataAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type DataAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataAttribute abstract : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="protected DataAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.DataAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.DataAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Data.Linq.Mapping.DataAttribute.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -52,6 +60,9 @@
       <MemberSignature Language="C#" Value="public string Storage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Storage" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.DataAttribute.Storage" />
+      <MemberSignature Language="VB.NET" Value="Public Property Storage As String" />
+      <MemberSignature Language="F#" Value="member this.Storage : string with get, set" Usage="System.Data.Linq.Mapping.DataAttribute.Storage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Storage { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="FormViewModeEventHandler" FullName="System.Web.UI.WebControls.FormViewModeEventHandler">
+﻿<Type Name="FormViewModeEventHandler" FullName="System.Web.UI.WebControls.FormViewModeEventHandler">
   <TypeSignature Language="C#" Value="public delegate void FormViewModeEventHandler(object sender, FormViewModeEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormViewModeEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewModeEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub FormViewModeEventHandler(sender As Object, e As FormViewModeEventArgs)" />
+  <TypeSignature Language="F#" Value="type FormViewModeEventHandler = delegate of obj * FormViewModeEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void FormViewModeEventHandler(System::Object ^ sender, FormViewModeEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

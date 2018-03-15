@@ -1,7 +1,10 @@
-<Type Name="DateBoldEventArgs" FullName="System.Windows.Forms.DateBoldEventArgs">
+﻿<Type Name="DateBoldEventArgs" FullName="System.Windows.Forms.DateBoldEventArgs">
   <TypeSignature Language="C#" Value="public class DateBoldEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DateBoldEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DateBoldEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DateBoldEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type DateBoldEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DateBoldEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public int[] DaysToBold { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32[] DaysToBold" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateBoldEventArgs.DaysToBold" />
+      <MemberSignature Language="VB.NET" Value="Public Property DaysToBold As Integer()" />
+      <MemberSignature Language="F#" Value="member this.DaysToBold : int[] with get, set" Usage="System.Windows.Forms.DateBoldEventArgs.DaysToBold" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;int&gt; ^ DaysToBold { cli::array &lt;int&gt; ^ get(); void set(cli::array &lt;int&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -39,6 +45,9 @@
       <MemberSignature Language="C#" Value="public int Size { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Size" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateBoldEventArgs.Size" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Integer" />
+      <MemberSignature Language="F#" Value="member this.Size : int" Usage="System.Windows.Forms.DateBoldEventArgs.Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Size { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +67,9 @@
       <MemberSignature Language="C#" Value="public DateTime StartDate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime StartDate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateBoldEventArgs.StartDate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.StartDate : DateTime" Usage="System.Windows.Forms.DateBoldEventArgs.StartDate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime StartDate { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

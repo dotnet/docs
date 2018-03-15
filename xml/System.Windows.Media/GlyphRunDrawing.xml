@@ -1,7 +1,10 @@
-<Type Name="GlyphRunDrawing" FullName="System.Windows.Media.GlyphRunDrawing">
+﻿<Type Name="GlyphRunDrawing" FullName="System.Windows.Media.GlyphRunDrawing">
   <TypeSignature Language="C#" Value="public sealed class GlyphRunDrawing : System.Windows.Media.Drawing" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GlyphRunDrawing extends System.Windows.Media.Drawing" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GlyphRunDrawing" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GlyphRunDrawing&#xA;Inherits Drawing" />
+  <TypeSignature Language="F#" Value="type GlyphRunDrawing = class&#xA;    inherit Drawing" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GlyphRunDrawing sealed : System::Windows::Media::Drawing" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,10 +46,21 @@ Various typographic qualities of two different glyph characters
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GlyphRunDrawing" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public GlyphRunDrawing ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRunDrawing.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GlyphRunDrawing();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,6 +76,8 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="C#" Value="public GlyphRunDrawing (System.Windows.Media.Brush foregroundBrush, System.Windows.Media.GlyphRun glyphRun);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Media.Brush foregroundBrush, class System.Windows.Media.GlyphRun glyphRun) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRunDrawing.#ctor(System.Windows.Media.Brush,System.Windows.Media.GlyphRun)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.GlyphRunDrawing : System.Windows.Media.Brush * System.Windows.Media.GlyphRun -&gt; System.Windows.Media.GlyphRunDrawing" Usage="new System.Windows.Media.GlyphRunDrawing (foregroundBrush, glyphRun)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GlyphRunDrawing(System::Windows::Media::Brush ^ foregroundBrush, System::Windows::Media::GlyphRun ^ glyphRun);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +98,9 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="C#" Value="public System.Windows.Media.GlyphRunDrawing Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GlyphRunDrawing Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRunDrawing.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As GlyphRunDrawing" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.GlyphRunDrawing" Usage="glyphRunDrawing.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GlyphRunDrawing ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -110,6 +129,9 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="C#" Value="public System.Windows.Media.GlyphRunDrawing CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GlyphRunDrawing CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRunDrawing.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As GlyphRunDrawing" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.GlyphRunDrawing" Usage="glyphRunDrawing.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GlyphRunDrawing ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -138,6 +160,9 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GlyphRunDrawing.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="glyphRunDrawing.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -157,6 +182,9 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush ForegroundBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush ForegroundBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRunDrawing.ForegroundBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForegroundBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.ForegroundBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Media.GlyphRunDrawing.ForegroundBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ ForegroundBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -199,6 +227,9 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ForegroundBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ForegroundBrushProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GlyphRunDrawing.ForegroundBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ForegroundBrushProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ForegroundBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.GlyphRunDrawing.ForegroundBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ForegroundBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -216,6 +247,9 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="C#" Value="public System.Windows.Media.GlyphRun GlyphRun { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.GlyphRun GlyphRun" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GlyphRunDrawing.GlyphRun" />
+      <MemberSignature Language="VB.NET" Value="Public Property GlyphRun As GlyphRun" />
+      <MemberSignature Language="F#" Value="member this.GlyphRun : System.Windows.Media.GlyphRun with get, set" Usage="System.Windows.Media.GlyphRunDrawing.GlyphRun" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::GlyphRun ^ GlyphRun { System::Windows::Media::GlyphRun ^ get(); void set(System::Windows::Media::GlyphRun ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -258,6 +292,9 @@ Various typographic qualities of two different glyph characters
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty GlyphRunProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty GlyphRunProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GlyphRunDrawing.GlyphRunProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GlyphRunProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable GlyphRunProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.GlyphRunDrawing.GlyphRunProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ GlyphRunProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -271,14 +308,5 @@ Various typographic qualities of two different glyph characters
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.GlyphRunDrawing" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

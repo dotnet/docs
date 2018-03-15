@@ -1,7 +1,10 @@
-<Type Name="ValidationConstraints" FullName="System.Windows.Forms.ValidationConstraints">
+﻿<Type Name="ValidationConstraints" FullName="System.Windows.Forms.ValidationConstraints">
   <TypeSignature Language="C#" Value="public enum ValidationConstraints" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidationConstraints extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ValidationConstraints" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ValidationConstraints" />
+  <TypeSignature Language="F#" Value="type ValidationConstraints = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ValidationConstraints" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="Enabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ValidationConstraints Enabled = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ValidationConstraints.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Enabled" />
+      <MemberSignature Language="F#" Value="Enabled = 2" Usage="System.Windows.Forms.ValidationConstraints.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="Enabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -50,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ValidationConstraints</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Validates child controls whose <see cref="P:System.Windows.Forms.Control.Enabled" /> property is set to <see langword="true" />.</summary>
       </Docs>
@@ -58,6 +65,9 @@
       <MemberSignature Language="C#" Value="ImmediateChildren" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ValidationConstraints ImmediateChildren = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ValidationConstraints.ImmediateChildren" />
+      <MemberSignature Language="VB.NET" Value="ImmediateChildren" />
+      <MemberSignature Language="F#" Value="ImmediateChildren = 16" Usage="System.Windows.Forms.ValidationConstraints.ImmediateChildren" />
+      <MemberSignature Language="C++ CLI" Value="ImmediateChildren" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -66,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ValidationConstraints</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Validates child controls that are directly hosted within the container. Does not validate any of the children of these children. For example, if you have a <see cref="T:System.Windows.Forms.Form" /> that contains a custom <see cref="T:System.Windows.Forms.UserControl" />, and the <see cref="T:System.Windows.Forms.UserControl" /> contains a <see cref="T:System.Windows.Forms.Button" />, using <see cref="F:System.Windows.Forms.ValidationConstraints.ImmediateChildren" /> will cause the <see cref="E:System.Windows.Forms.Control.Validating" /> event of the <see cref="T:System.Windows.Forms.UserControl" /> to occur, but not the <see cref="E:System.Windows.Forms.Control.Validating" /> event of the <see cref="T:System.Windows.Forms.Button" />.</summary>
       </Docs>
@@ -74,6 +85,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ValidationConstraints None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ValidationConstraints.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.ValidationConstraints.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ValidationConstraints</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Validates all child controls, and all children of these child controls, regardless of their property settings.</summary>
       </Docs>
@@ -90,6 +105,9 @@
       <MemberSignature Language="C#" Value="Selectable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ValidationConstraints Selectable = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ValidationConstraints.Selectable" />
+      <MemberSignature Language="VB.NET" Value="Selectable" />
+      <MemberSignature Language="F#" Value="Selectable = 1" Usage="System.Windows.Forms.ValidationConstraints.Selectable" />
+      <MemberSignature Language="C++ CLI" Value="Selectable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +116,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ValidationConstraints</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Validates child controls that can be selected.</summary>
       </Docs>
@@ -106,6 +125,9 @@
       <MemberSignature Language="C#" Value="TabStop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ValidationConstraints TabStop = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ValidationConstraints.TabStop" />
+      <MemberSignature Language="VB.NET" Value="TabStop" />
+      <MemberSignature Language="F#" Value="TabStop = 8" Usage="System.Windows.Forms.ValidationConstraints.TabStop" />
+      <MemberSignature Language="C++ CLI" Value="TabStop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -114,6 +136,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ValidationConstraints</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Validates child controls that have a <see cref="P:System.Windows.Forms.Control.TabStop" /> value set, which means that the user can navigate to the control using the TAB key.</summary>
       </Docs>
@@ -122,6 +145,9 @@
       <MemberSignature Language="C#" Value="Visible" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ValidationConstraints Visible = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ValidationConstraints.Visible" />
+      <MemberSignature Language="VB.NET" Value="Visible" />
+      <MemberSignature Language="F#" Value="Visible = 4" Usage="System.Windows.Forms.ValidationConstraints.Visible" />
+      <MemberSignature Language="C++ CLI" Value="Visible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -130,6 +156,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ValidationConstraints</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Validates child controls whose <see cref="P:System.Windows.Forms.Control.Visible" /> property is set to <see langword="true" />.</summary>
       </Docs>

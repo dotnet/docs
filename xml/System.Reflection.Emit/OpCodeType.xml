@@ -1,7 +1,10 @@
-<Type Name="OpCodeType" FullName="System.Reflection.Emit.OpCodeType">
+﻿<Type Name="OpCodeType" FullName="System.Reflection.Emit.OpCodeType">
   <TypeSignature Language="C#" Value="public enum OpCodeType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed OpCodeType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.OpCodeType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OpCodeType" />
+  <TypeSignature Language="F#" Value="type OpCodeType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class OpCodeType" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="Annotation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OpCodeType Annotation = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodeType.Annotation" />
+      <MemberSignature Language="VB.NET" Value="Annotation" />
+      <MemberSignature Language="F#" Value="Annotation = 0" Usage="System.Reflection.Emit.OpCodeType.Annotation" />
+      <MemberSignature Language="C++ CLI" Value="Annotation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -56,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.OpCodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>This enumerator value is reserved and should not be used.</summary>
         <forInternalUseOnly />
@@ -65,6 +72,9 @@
       <MemberSignature Language="C#" Value="Macro" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OpCodeType Macro = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodeType.Macro" />
+      <MemberSignature Language="VB.NET" Value="Macro" />
+      <MemberSignature Language="F#" Value="Macro = 1" Usage="System.Reflection.Emit.OpCodeType.Macro" />
+      <MemberSignature Language="C++ CLI" Value="Macro" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -83,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.OpCodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>These are Microsoft intermediate language (MSIL) instructions that are used as a synonym for other MSIL instructions. For example, <see langword="ldarg.0" /> represents the <see langword="ldarg" /> instruction with an argument of 0.</summary>
         <forInternalUseOnly />
@@ -92,6 +103,9 @@
       <MemberSignature Language="C#" Value="Nternal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OpCodeType Nternal = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodeType.Nternal" />
+      <MemberSignature Language="VB.NET" Value="Nternal" />
+      <MemberSignature Language="F#" Value="Nternal = 2" Usage="System.Reflection.Emit.OpCodeType.Nternal" />
+      <MemberSignature Language="C++ CLI" Value="Nternal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -110,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.OpCodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Describes a reserved Microsoft intermediate language (MSIL) instruction.</summary>
         <forInternalUseOnly />
@@ -119,6 +134,9 @@
       <MemberSignature Language="C#" Value="Objmodel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OpCodeType Objmodel = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodeType.Objmodel" />
+      <MemberSignature Language="VB.NET" Value="Objmodel" />
+      <MemberSignature Language="F#" Value="Objmodel = 3" Usage="System.Reflection.Emit.OpCodeType.Objmodel" />
+      <MemberSignature Language="C++ CLI" Value="Objmodel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -137,6 +155,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.OpCodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Describes a Microsoft intermediate language (MSIL) instruction that applies to objects.</summary>
         <forInternalUseOnly />
@@ -146,6 +165,9 @@
       <MemberSignature Language="C#" Value="Prefix" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OpCodeType Prefix = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodeType.Prefix" />
+      <MemberSignature Language="VB.NET" Value="Prefix" />
+      <MemberSignature Language="F#" Value="Prefix = 4" Usage="System.Reflection.Emit.OpCodeType.Prefix" />
+      <MemberSignature Language="C++ CLI" Value="Prefix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -164,6 +186,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.OpCodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Describes a prefix instruction that modifies the behavior of the following instruction.</summary>
         <forInternalUseOnly />
@@ -173,6 +196,9 @@
       <MemberSignature Language="C#" Value="Primitive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.OpCodeType Primitive = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.OpCodeType.Primitive" />
+      <MemberSignature Language="VB.NET" Value="Primitive" />
+      <MemberSignature Language="F#" Value="Primitive = 5" Usage="System.Reflection.Emit.OpCodeType.Primitive" />
+      <MemberSignature Language="C++ CLI" Value="Primitive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -191,6 +217,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.OpCodeType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Describes a built-in instruction.</summary>
         <forInternalUseOnly />

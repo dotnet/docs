@@ -1,7 +1,10 @@
-<Type Name="TextRenderingHint" FullName="System.Drawing.Text.TextRenderingHint">
+﻿<Type Name="TextRenderingHint" FullName="System.Drawing.Text.TextRenderingHint">
   <TypeSignature Language="C#" Value="public enum TextRenderingHint" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextRenderingHint extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Text.TextRenderingHint" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TextRenderingHint" />
+  <TypeSignature Language="F#" Value="type TextRenderingHint = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TextRenderingHint" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="AntiAlias" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Text.TextRenderingHint AntiAlias = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.TextRenderingHint.AntiAlias" />
+      <MemberSignature Language="VB.NET" Value="AntiAlias" />
+      <MemberSignature Language="F#" Value="AntiAlias = 4" Usage="System.Drawing.Text.TextRenderingHint.AntiAlias" />
+      <MemberSignature Language="C++ CLI" Value="AntiAlias" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -44,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Text.TextRenderingHint</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Each character is drawn using its antialiased glyph bitmap without hinting. Better quality due to antialiasing. Stem width differences may be noticeable because hinting is turned off.</summary>
       </Docs>
@@ -52,6 +59,9 @@
       <MemberSignature Language="C#" Value="AntiAliasGridFit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Text.TextRenderingHint AntiAliasGridFit = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.TextRenderingHint.AntiAliasGridFit" />
+      <MemberSignature Language="VB.NET" Value="AntiAliasGridFit" />
+      <MemberSignature Language="F#" Value="AntiAliasGridFit = 3" Usage="System.Drawing.Text.TextRenderingHint.AntiAliasGridFit" />
+      <MemberSignature Language="C++ CLI" Value="AntiAliasGridFit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -60,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Text.TextRenderingHint</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Each character is drawn using its antialiased glyph bitmap with hinting. Much better quality due to antialiasing, but at a higher performance cost.</summary>
       </Docs>
@@ -68,6 +79,9 @@
       <MemberSignature Language="C#" Value="ClearTypeGridFit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Text.TextRenderingHint ClearTypeGridFit = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.TextRenderingHint.ClearTypeGridFit" />
+      <MemberSignature Language="VB.NET" Value="ClearTypeGridFit" />
+      <MemberSignature Language="F#" Value="ClearTypeGridFit = 5" Usage="System.Drawing.Text.TextRenderingHint.ClearTypeGridFit" />
+      <MemberSignature Language="C++ CLI" Value="ClearTypeGridFit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -76,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Text.TextRenderingHint</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Each character is drawn using its glyph ClearType bitmap with hinting. The highest quality setting. Used to take advantage of ClearType font features.</summary>
       </Docs>
@@ -84,6 +99,9 @@
       <MemberSignature Language="C#" Value="SingleBitPerPixel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Text.TextRenderingHint SingleBitPerPixel = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.TextRenderingHint.SingleBitPerPixel" />
+      <MemberSignature Language="VB.NET" Value="SingleBitPerPixel" />
+      <MemberSignature Language="F#" Value="SingleBitPerPixel = 2" Usage="System.Drawing.Text.TextRenderingHint.SingleBitPerPixel" />
+      <MemberSignature Language="C++ CLI" Value="SingleBitPerPixel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -92,6 +110,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Text.TextRenderingHint</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Each character is drawn using its glyph bitmap. Hinting is not used.</summary>
       </Docs>
@@ -100,6 +119,9 @@
       <MemberSignature Language="C#" Value="SingleBitPerPixelGridFit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Text.TextRenderingHint SingleBitPerPixelGridFit = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit" />
+      <MemberSignature Language="VB.NET" Value="SingleBitPerPixelGridFit" />
+      <MemberSignature Language="F#" Value="SingleBitPerPixelGridFit = 1" Usage="System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit" />
+      <MemberSignature Language="C++ CLI" Value="SingleBitPerPixelGridFit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -108,6 +130,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Text.TextRenderingHint</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Each character is drawn using its glyph bitmap. Hinting is used to improve character appearance on stems and curvature.</summary>
       </Docs>
@@ -116,6 +139,9 @@
       <MemberSignature Language="C#" Value="SystemDefault" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Text.TextRenderingHint SystemDefault = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Text.TextRenderingHint.SystemDefault" />
+      <MemberSignature Language="VB.NET" Value="SystemDefault" />
+      <MemberSignature Language="F#" Value="SystemDefault = 0" Usage="System.Drawing.Text.TextRenderingHint.SystemDefault" />
+      <MemberSignature Language="C++ CLI" Value="SystemDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -124,6 +150,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Text.TextRenderingHint</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Each character is drawn using its glyph bitmap, with the system default rendering hint. The text will be drawn using whatever font-smoothing settings the user has selected for the system.</summary>
       </Docs>

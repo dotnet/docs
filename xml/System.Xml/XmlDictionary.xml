@@ -1,7 +1,10 @@
-<Type Name="XmlDictionary" FullName="System.Xml.XmlDictionary">
+﻿<Type Name="XmlDictionary" FullName="System.Xml.XmlDictionary">
   <TypeSignature Language="C#" Value="public class XmlDictionary : System.Xml.IXmlDictionary" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDictionary extends System.Object implements class System.Xml.IXmlDictionary" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlDictionary" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlDictionary&#xA;Implements IXmlDictionary" />
+  <TypeSignature Language="F#" Value="type XmlDictionary = class&#xA;    interface IXmlDictionary" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlDictionary : System::Xml::IXmlDictionary" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -40,10 +43,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of this class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlDictionary ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDictionary();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -69,6 +84,9 @@
       <MemberSignature Language="C#" Value="public XmlDictionary (int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlDictionary : int -&gt; System.Xml.XmlDictionary" Usage="new System.Xml.XmlDictionary capacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDictionary(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -104,6 +122,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Xml.XmlDictionaryString Add (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlDictionaryString Add(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.Add(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (value As String) As XmlDictionaryString" />
+      <MemberSignature Language="F#" Value="abstract member Add : string -&gt; System.Xml.XmlDictionaryString&#xA;override this.Add : string -&gt; System.Xml.XmlDictionaryString" Usage="xmlDictionary.Add value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Xml::XmlDictionaryString ^ Add(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -145,6 +166,9 @@
       <MemberSignature Language="C#" Value="public static System.Xml.IXmlDictionary Empty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Xml.IXmlDictionary Empty" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionary.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As IXmlDictionary" />
+      <MemberSignature Language="F#" Value="member this.Empty : System.Xml.IXmlDictionary" Usage="System.Xml.XmlDictionary.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::IXmlDictionary ^ Empty { System::Xml::IXmlDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -199,7 +223,13 @@
       <MemberSignature Language="C#" Value="public virtual bool TryLookup (int key, out System.Xml.XmlDictionaryString result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLookup(int32 key, [out] class System.Xml.XmlDictionaryString&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.TryLookup(System.Int32,System.Xml.XmlDictionaryString@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryLookup (key As Integer, ByRef result As XmlDictionaryString) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryLookup : int *  -&gt; bool&#xA;override this.TryLookup : int *  -&gt; bool" Usage="xmlDictionary.TryLookup (key, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryLookup(int key, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % result);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.Int32,System.Xml.XmlDictionaryString@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -234,7 +264,13 @@
       <MemberSignature Language="C#" Value="public virtual bool TryLookup (string value, out System.Xml.XmlDictionaryString result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLookup(string value, [out] class System.Xml.XmlDictionaryString&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.TryLookup(System.String,System.Xml.XmlDictionaryString@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryLookup (value As String, ByRef result As XmlDictionaryString) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryLookup : string *  -&gt; bool&#xA;override this.TryLookup : string *  -&gt; bool" Usage="xmlDictionary.TryLookup (value, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryLookup(System::String ^ value, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % result);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.String,System.Xml.XmlDictionaryString@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -271,7 +307,13 @@
       <MemberSignature Language="C#" Value="public virtual bool TryLookup (System.Xml.XmlDictionaryString value, out System.Xml.XmlDictionaryString result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryLookup(class System.Xml.XmlDictionaryString value, [out] class System.Xml.XmlDictionaryString&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionary.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryLookup (value As XmlDictionaryString, ByRef result As XmlDictionaryString) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryLookup : System.Xml.XmlDictionaryString *  -&gt; bool&#xA;override this.TryLookup : System.Xml.XmlDictionaryString *  -&gt; bool" Usage="xmlDictionary.TryLookup (value, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryLookup(System::Xml::XmlDictionaryString ^ value, [Runtime::InteropServices::Out] System::Xml::XmlDictionaryString ^ % result);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.IXmlDictionary.TryLookup(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -304,15 +346,5 @@
           <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of this class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

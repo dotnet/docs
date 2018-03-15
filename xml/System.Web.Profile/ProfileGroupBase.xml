@@ -1,7 +1,10 @@
-<Type Name="ProfileGroupBase" FullName="System.Web.Profile.ProfileGroupBase">
+﻿<Type Name="ProfileGroupBase" FullName="System.Web.Profile.ProfileGroupBase">
   <TypeSignature Language="C#" Value="public class ProfileGroupBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProfileGroupBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileGroupBase" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProfileGroupBase" />
+  <TypeSignature Language="F#" Value="type ProfileGroupBase = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProfileGroupBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,6 +103,8 @@
       <MemberSignature Language="C#" Value="public ProfileGroupBase ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileGroupBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileGroupBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -193,6 +198,9 @@
       <MemberSignature Language="C#" Value="public object GetPropertyValue (string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetPropertyValue(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileGroupBase.GetPropertyValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPropertyValue (propertyName As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetPropertyValue : string -&gt; obj" Usage="profileGroupBase.GetPropertyValue propertyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPropertyValue(System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -235,6 +243,9 @@
       <MemberSignature Language="C#" Value="public void Init (System.Web.Profile.ProfileBase parent, string myName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Init(class System.Web.Profile.ProfileBase parent, string myName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileGroupBase.Init(System.Web.Profile.ProfileBase,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Init (parent As ProfileBase, myName As String)" />
+      <MemberSignature Language="F#" Value="member this.Init : System.Web.Profile.ProfileBase * string -&gt; unit" Usage="profileGroupBase.Init (parent, myName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Init(System::Web::Profile::ProfileBase ^ parent, System::String ^ myName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -265,6 +276,9 @@
       <MemberSignature Language="C#" Value="public object this[string propertyName] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileGroupBase.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(propertyName As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Web.Profile.ProfileGroupBase.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ propertyName); void set(System::String ^ propertyName, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -305,6 +319,9 @@
       <MemberSignature Language="C#" Value="public void SetPropertyValue (string propertyName, object propertyValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPropertyValue(string propertyName, object propertyValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileGroupBase.SetPropertyValue(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPropertyValue (propertyName As String, propertyValue As Object)" />
+      <MemberSignature Language="F#" Value="member this.SetPropertyValue : string * obj -&gt; unit" Usage="profileGroupBase.SetPropertyValue (propertyName, propertyValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPropertyValue(System::String ^ propertyName, System::Object ^ propertyValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="RuntimeReflectionExtensions" FullName="System.Reflection.RuntimeReflectionExtensions">
+﻿<Type Name="RuntimeReflectionExtensions" FullName="System.Reflection.RuntimeReflectionExtensions">
   <TypeSignature Language="C#" Value="public static class RuntimeReflectionExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit RuntimeReflectionExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.RuntimeReflectionExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module RuntimeReflectionExtensions" />
+  <TypeSignature Language="F#" Value="type RuntimeReflectionExtensions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuntimeReflectionExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo GetMethodInfo (this Delegate del);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo GetMethodInfo(class System.Delegate del) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.RuntimeReflectionExtensions.GetMethodInfo(System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMethodInfo (del As Delegate) As MethodInfo" />
+      <MemberSignature Language="F#" Value="static member GetMethodInfo : Delegate -&gt; System.Reflection.MethodInfo" Usage="System.Reflection.RuntimeReflectionExtensions.GetMethodInfo del" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::MethodInfo ^ GetMethodInfo(Delegate ^ del);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -67,6 +73,9 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo GetRuntimeBaseDefinition (this System.Reflection.MethodInfo method);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo GetRuntimeBaseDefinition(class System.Reflection.MethodInfo method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.RuntimeReflectionExtensions.GetRuntimeBaseDefinition(System.Reflection.MethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetRuntimeBaseDefinition (method As MethodInfo) As MethodInfo" />
+      <MemberSignature Language="F#" Value="static member GetRuntimeBaseDefinition : System.Reflection.MethodInfo -&gt; System.Reflection.MethodInfo" Usage="System.Reflection.RuntimeReflectionExtensions.GetRuntimeBaseDefinition method" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::MethodInfo ^ GetRuntimeBaseDefinition(System::Reflection::MethodInfo ^ method);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -102,6 +111,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.EventInfo GetRuntimeEvent (this Type type, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.EventInfo GetRuntimeEvent(class System.Type type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvent(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="static member GetRuntimeEvent : Type * string -&gt; System.Reflection.EventInfo" Usage="System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvent (type, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::EventInfo ^ GetRuntimeEvent(Type ^ type, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -139,6 +150,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Reflection.EventInfo&gt; GetRuntimeEvents (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.EventInfo&gt; GetRuntimeEvents(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvents(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetRuntimeEvents : Type -&gt; seq&lt;System.Reflection.EventInfo&gt;" Usage="System.Reflection.RuntimeReflectionExtensions.GetRuntimeEvents type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Reflection::EventInfo ^&gt; ^ GetRuntimeEvents(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -181,6 +194,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.FieldInfo GetRuntimeField (this Type type, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.FieldInfo GetRuntimeField(class System.Type type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.RuntimeReflectionExtensions.GetRuntimeField(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="static member GetRuntimeField : Type * string -&gt; System.Reflection.FieldInfo" Usage="System.Reflection.RuntimeReflectionExtensions.GetRuntimeField (type, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::FieldInfo ^ GetRuntimeField(Type ^ type, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -218,6 +233,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Reflection.FieldInfo&gt; GetRuntimeFields (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.FieldInfo&gt; GetRuntimeFields(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.RuntimeReflectionExtensions.GetRuntimeFields(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetRuntimeFields : Type -&gt; seq&lt;System.Reflection.FieldInfo&gt;" Usage="System.Reflection.RuntimeReflectionExtensions.GetRuntimeFields type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Reflection::FieldInfo ^&gt; ^ GetRuntimeFields(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -260,6 +277,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.InterfaceMapping GetRuntimeInterfaceMap (this System.Reflection.TypeInfo typeInfo, Type interfaceType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.InterfaceMapping GetRuntimeInterfaceMap(class System.Reflection.TypeInfo typeInfo, class System.Type interfaceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.RuntimeReflectionExtensions.GetRuntimeInterfaceMap(System.Reflection.TypeInfo,System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetRuntimeInterfaceMap : System.Reflection.TypeInfo * Type -&gt; System.Reflection.InterfaceMapping" Usage="System.Reflection.RuntimeReflectionExtensions.GetRuntimeInterfaceMap (typeInfo, interfaceType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::InterfaceMapping GetRuntimeInterfaceMap(System::Reflection::TypeInfo ^ typeInfo, Type ^ interfaceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -297,6 +316,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo GetRuntimeMethod (this Type type, string name, Type[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MethodInfo GetRuntimeMethod(class System.Type type, string name, class System.Type[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.RuntimeReflectionExtensions.GetRuntimeMethod(System.Type,System.String,System.Type[])" />
+      <MemberSignature Language="F#" Value="static member GetRuntimeMethod : Type * string * Type[] -&gt; System.Reflection.MethodInfo" Usage="System.Reflection.RuntimeReflectionExtensions.GetRuntimeMethod (type, name, parameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::MethodInfo ^ GetRuntimeMethod(Type ^ type, System::String ^ name, cli::array &lt;Type ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -336,6 +357,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Reflection.MethodInfo&gt; GetRuntimeMethods (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.MethodInfo&gt; GetRuntimeMethods(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.RuntimeReflectionExtensions.GetRuntimeMethods(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetRuntimeMethods : Type -&gt; seq&lt;System.Reflection.MethodInfo&gt;" Usage="System.Reflection.RuntimeReflectionExtensions.GetRuntimeMethods type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Reflection::MethodInfo ^&gt; ^ GetRuntimeMethods(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -378,6 +401,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;System.Reflection.PropertyInfo&gt; GetRuntimeProperties (this Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.PropertyInfo&gt; GetRuntimeProperties(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperties(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetRuntimeProperties : Type -&gt; seq&lt;System.Reflection.PropertyInfo&gt;" Usage="System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperties type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Collections::Generic::IEnumerable&lt;System::Reflection::PropertyInfo ^&gt; ^ GetRuntimeProperties(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>
@@ -420,6 +445,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo GetRuntimeProperty (this Type type, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.PropertyInfo GetRuntimeProperty(class System.Type type, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperty(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="static member GetRuntimeProperty : Type * string -&gt; System.Reflection.PropertyInfo" Usage="System.Reflection.RuntimeReflectionExtensions.GetRuntimeProperty (type, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Reflection::PropertyInfo ^ GetRuntimeProperty(Type ^ type, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Extensions</AssemblyName>

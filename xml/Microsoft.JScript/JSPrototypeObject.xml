@@ -1,7 +1,10 @@
-<Type Name="JSPrototypeObject" FullName="Microsoft.JScript.JSPrototypeObject">
+﻿<Type Name="JSPrototypeObject" FullName="Microsoft.JScript.JSPrototypeObject">
   <TypeSignature Language="C#" Value="public class JSPrototypeObject : Microsoft.JScript.JSObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit JSPrototypeObject extends Microsoft.JScript.JSObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSPrototypeObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class JSPrototypeObject&#xA;Inherits JSObject" />
+  <TypeSignature Language="F#" Value="type JSPrototypeObject = class&#xA;    inherit JSObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JSPrototypeObject : Microsoft::JScript::JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -21,6 +24,9 @@
       <MemberSignature Language="C#" Value="public object constructor;" />
       <MemberSignature Language="ILAsm" Value=".field public object constructor" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSPrototypeObject.constructor" />
+      <MemberSignature Language="VB.NET" Value="Public constructor As Object " />
+      <MemberSignature Language="F#" Value="val mutable constructor : obj" Usage="Microsoft.JScript.JSPrototypeObject.constructor" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ constructor;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

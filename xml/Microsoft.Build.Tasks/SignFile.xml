@@ -1,7 +1,10 @@
-<Type Name="SignFile" FullName="Microsoft.Build.Tasks.SignFile">
+﻿<Type Name="SignFile" FullName="Microsoft.Build.Tasks.SignFile">
   <TypeSignature Language="C#" Value="public sealed class SignFile : Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SignFile extends Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.SignFile" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SignFile&#xA;Inherits Task" />
+  <TypeSignature Language="F#" Value="type SignFile = class&#xA;    inherit Task" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SignFile sealed : Microsoft::Build::Utilities::Task" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public SignFile ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.SignFile.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SignFile();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -36,6 +41,9 @@
       <MemberSignature Language="C#" Value="public string CertificateThumbprint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CertificateThumbprint" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SignFile.CertificateThumbprint" />
+      <MemberSignature Language="VB.NET" Value="Public Property CertificateThumbprint As String" />
+      <MemberSignature Language="F#" Value="member this.CertificateThumbprint : string with get, set" Usage="Microsoft.Build.Tasks.SignFile.CertificateThumbprint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CertificateThumbprint { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -60,6 +68,9 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.SignFile.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="signFile.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -81,6 +92,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem SigningTarget { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem SigningTarget" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SignFile.SigningTarget" />
+      <MemberSignature Language="VB.NET" Value="Public Property SigningTarget As ITaskItem" />
+      <MemberSignature Language="F#" Value="member this.SigningTarget : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.SignFile.SigningTarget" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ SigningTarget { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -105,6 +119,9 @@
       <MemberSignature Language="C#" Value="public string TimestampUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TimestampUrl" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.SignFile.TimestampUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimestampUrl As String" />
+      <MemberSignature Language="F#" Value="member this.TimestampUrl : string with get, set" Usage="Microsoft.Build.Tasks.SignFile.TimestampUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TimestampUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

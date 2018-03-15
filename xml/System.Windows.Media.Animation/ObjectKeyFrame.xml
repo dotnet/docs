@@ -1,7 +1,10 @@
-<Type Name="ObjectKeyFrame" FullName="System.Windows.Media.Animation.ObjectKeyFrame">
+﻿<Type Name="ObjectKeyFrame" FullName="System.Windows.Media.Animation.ObjectKeyFrame">
   <TypeSignature Language="C#" Value="public abstract class ObjectKeyFrame : System.Windows.Freezable, System.Windows.Media.Animation.IKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ObjectKeyFrame extends System.Windows.Freezable implements class System.Windows.Media.Animation.IKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ObjectKeyFrame" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ObjectKeyFrame&#xA;Inherits Freezable&#xA;Implements IKeyFrame" />
+  <TypeSignature Language="F#" Value="type ObjectKeyFrame = class&#xA;    inherit Freezable&#xA;    interface IKeyFrame" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectKeyFrame abstract : System::Windows::Freezable, System::Windows::Media::Animation::IKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,10 +24,21 @@
     <altmember cref="T:System.Windows.Media.Animation.ObjectAnimationUsingKeyFrames" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ObjectKeyFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ObjectKeyFrame ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ObjectKeyFrame.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ObjectKeyFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -40,6 +54,9 @@
       <MemberSignature Language="C#" Value="protected ObjectKeyFrame (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ObjectKeyFrame.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (value As Object)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.ObjectKeyFrame : obj -&gt; System.Windows.Media.Animation.ObjectKeyFrame" Usage="new System.Windows.Media.Animation.ObjectKeyFrame value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ObjectKeyFrame(System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +75,8 @@
       <MemberSignature Language="C#" Value="protected ObjectKeyFrame (object value, System.Windows.Media.Animation.KeyTime keyTime);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ObjectKeyFrame.#ctor(System.Object,System.Windows.Media.Animation.KeyTime)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.ObjectKeyFrame : obj * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.ObjectKeyFrame" Usage="new System.Windows.Media.Animation.ObjectKeyFrame (value, keyTime)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ObjectKeyFrame(System::Object ^ value, System::Windows::Media::Animation::KeyTime keyTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +97,9 @@
       <MemberSignature Language="C#" Value="public object InterpolateValue (object baseValue, double keyFrameProgress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object InterpolateValue(object baseValue, float64 keyFrameProgress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ObjectKeyFrame.InterpolateValue(System.Object,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InterpolateValue (baseValue As Object, keyFrameProgress As Double) As Object" />
+      <MemberSignature Language="F#" Value="member this.InterpolateValue : obj * double -&gt; obj" Usage="objectKeyFrame.InterpolateValue (baseValue, keyFrameProgress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InterpolateValue(System::Object ^ baseValue, double keyFrameProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -112,6 +134,9 @@
       <MemberSignature Language="C#" Value="protected abstract object InterpolateValueCore (object baseValue, double keyFrameProgress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object InterpolateValueCore(object baseValue, float64 keyFrameProgress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ObjectKeyFrame.InterpolateValueCore(System.Object,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function InterpolateValueCore (baseValue As Object, keyFrameProgress As Double) As Object" />
+      <MemberSignature Language="F#" Value="abstract member InterpolateValueCore : obj * double -&gt; obj" Usage="objectKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Object ^ InterpolateValueCore(System::Object ^ baseValue, double keyFrameProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -136,7 +161,13 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.KeyTime KeyTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Animation.KeyTime KeyTime" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ObjectKeyFrame.KeyTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyTime As KeyTime" />
+      <MemberSignature Language="F#" Value="member this.KeyTime : System.Windows.Media.Animation.KeyTime with get, set" Usage="System.Windows.Media.Animation.ObjectKeyFrame.KeyTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::KeyTime KeyTime { System::Windows::Media::Animation::KeyTime get(); void set(System::Windows::Media::Animation::KeyTime value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Media.Animation.IKeyFrame.KeyTime</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -168,6 +199,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KeyTimeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeyTimeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ObjectKeyFrame.KeyTimeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyTimeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable KeyTimeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.ObjectKeyFrame.KeyTimeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeyTimeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -185,7 +219,13 @@
       <MemberSignature Language="C#" Value="object System.Windows.Media.Animation.IKeyFrame.Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Windows.Media.Animation.IKeyFrame.Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ObjectKeyFrame.System#Windows#Media#Animation#IKeyFrame#Value" />
+      <MemberSignature Language="VB.NET" Value=" Property Value As Object Implements IKeyFrame.Value" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.ObjectKeyFrame.System.Windows.Media.Animation.IKeyFrame.Value" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Windows.Media.Animation.IKeyFrame.Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Media.Animation.IKeyFrame.Value</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -203,7 +243,13 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ObjectKeyFrame.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Windows.Media.Animation.ObjectKeyFrame.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Media.Animation.IKeyFrame.Value</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -235,6 +281,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ValueProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ValueProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.ObjectKeyFrame.ValueProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ValueProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ValueProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.ObjectKeyFrame.ValueProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ValueProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -248,14 +297,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.ObjectKeyFrame" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

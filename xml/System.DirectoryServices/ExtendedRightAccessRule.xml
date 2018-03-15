@@ -1,7 +1,10 @@
-<Type Name="ExtendedRightAccessRule" FullName="System.DirectoryServices.ExtendedRightAccessRule">
+﻿<Type Name="ExtendedRightAccessRule" FullName="System.DirectoryServices.ExtendedRightAccessRule">
   <TypeSignature Language="C#" Value="public sealed class ExtendedRightAccessRule : System.DirectoryServices.ActiveDirectoryAccessRule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExtendedRightAccessRule extends System.DirectoryServices.ActiveDirectoryAccessRule" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ExtendedRightAccessRule" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExtendedRightAccessRule&#xA;Inherits ActiveDirectoryAccessRule" />
+  <TypeSignature Language="F#" Value="type ExtendedRightAccessRule = class&#xA;    inherit ActiveDirectoryAccessRule" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExtendedRightAccessRule sealed : System::DirectoryServices::ActiveDirectoryAccessRule" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +19,23 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ExtendedRightAccessRule" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ExtendedRightAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ExtendedRightAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, type As AccessControlType)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ExtendedRightAccessRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.AccessControlType -&gt; System.DirectoryServices.ExtendedRightAccessRule" Usage="new System.DirectoryServices.ExtendedRightAccessRule (identity, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedRightAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -48,6 +64,9 @@
       <MemberSignature Language="C#" Value="public ExtendedRightAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ExtendedRightAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.DirectoryServices.ActiveDirectorySecurityInheritance)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, type As AccessControlType, inheritanceType As ActiveDirectorySecurityInheritance)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ExtendedRightAccessRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.AccessControlType * System.DirectoryServices.ActiveDirectorySecurityInheritance -&gt; System.DirectoryServices.ExtendedRightAccessRule" Usage="new System.DirectoryServices.ExtendedRightAccessRule (identity, type, inheritanceType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedRightAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -78,6 +97,9 @@
       <MemberSignature Language="C#" Value="public ExtendedRightAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, Guid extendedRightType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.Guid extendedRightType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ExtendedRightAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, type As AccessControlType, extendedRightType As Guid)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ExtendedRightAccessRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.AccessControlType * Guid -&gt; System.DirectoryServices.ExtendedRightAccessRule" Usage="new System.DirectoryServices.ExtendedRightAccessRule (identity, type, extendedRightType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedRightAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type, Guid extendedRightType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -101,6 +123,9 @@
       <MemberSignature Language="C#" Value="public ExtendedRightAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ExtendedRightAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.DirectoryServices.ActiveDirectorySecurityInheritance,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, type As AccessControlType, inheritanceType As ActiveDirectorySecurityInheritance, inheritedObjectType As Guid)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ExtendedRightAccessRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.AccessControlType * System.DirectoryServices.ActiveDirectorySecurityInheritance * Guid -&gt; System.DirectoryServices.ExtendedRightAccessRule" Usage="new System.DirectoryServices.ExtendedRightAccessRule (identity, type, inheritanceType, inheritedObjectType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedRightAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -133,6 +158,9 @@
       <MemberSignature Language="C#" Value="public ExtendedRightAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, Guid extendedRightType, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.Guid extendedRightType, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ExtendedRightAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.Guid,System.DirectoryServices.ActiveDirectorySecurityInheritance)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, type As AccessControlType, extendedRightType As Guid, inheritanceType As ActiveDirectorySecurityInheritance)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ExtendedRightAccessRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.AccessControlType * Guid * System.DirectoryServices.ActiveDirectorySecurityInheritance -&gt; System.DirectoryServices.ExtendedRightAccessRule" Usage="new System.DirectoryServices.ExtendedRightAccessRule (identity, type, extendedRightType, inheritanceType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedRightAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type, Guid extendedRightType, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -158,6 +186,9 @@
       <MemberSignature Language="C#" Value="public ExtendedRightAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, Guid extendedRightType, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.Guid extendedRightType, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ExtendedRightAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.Guid,System.DirectoryServices.ActiveDirectorySecurityInheritance,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, type As AccessControlType, extendedRightType As Guid, inheritanceType As ActiveDirectorySecurityInheritance, inheritedObjectType As Guid)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ExtendedRightAccessRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.AccessControlType * Guid * System.DirectoryServices.ActiveDirectorySecurityInheritance * Guid -&gt; System.DirectoryServices.ExtendedRightAccessRule" Usage="new System.DirectoryServices.ExtendedRightAccessRule (identity, type, extendedRightType, inheritanceType, inheritedObjectType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExtendedRightAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type, Guid extendedRightType, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -181,15 +212,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ExtendedRightAccessRule" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

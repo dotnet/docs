@@ -1,7 +1,10 @@
-<Type Name="MetadataStreamOptions" FullName="System.Reflection.Metadata.MetadataStreamOptions">
+﻿<Type Name="MetadataStreamOptions" FullName="System.Reflection.Metadata.MetadataStreamOptions">
   <TypeSignature Language="C#" Value="public enum MetadataStreamOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MetadataStreamOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MetadataStreamOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MetadataStreamOptions" />
+  <TypeSignature Language="F#" Value="type MetadataStreamOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MetadataStreamOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.MetadataStreamOptions Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.MetadataStreamOptions.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Reflection.Metadata.MetadataStreamOptions.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.MetadataStreamOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="LeaveOpen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.MetadataStreamOptions LeaveOpen = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen" />
+      <MemberSignature Language="VB.NET" Value="LeaveOpen" />
+      <MemberSignature Language="F#" Value="LeaveOpen = 1" Usage="System.Reflection.Metadata.MetadataStreamOptions.LeaveOpen" />
+      <MemberSignature Language="C++ CLI" Value="LeaveOpen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -53,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.MetadataStreamOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -61,6 +72,9 @@
       <MemberSignature Language="C#" Value="PrefetchMetadata" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.MetadataStreamOptions PrefetchMetadata = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata" />
+      <MemberSignature Language="VB.NET" Value="PrefetchMetadata" />
+      <MemberSignature Language="F#" Value="PrefetchMetadata = 2" Usage="System.Reflection.Metadata.MetadataStreamOptions.PrefetchMetadata" />
+      <MemberSignature Language="C++ CLI" Value="PrefetchMetadata" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -71,6 +85,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.MetadataStreamOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>

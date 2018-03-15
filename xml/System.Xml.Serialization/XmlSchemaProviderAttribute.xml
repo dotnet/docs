@@ -1,7 +1,10 @@
-<Type Name="XmlSchemaProviderAttribute" FullName="System.Xml.Serialization.XmlSchemaProviderAttribute">
+﻿<Type Name="XmlSchemaProviderAttribute" FullName="System.Xml.Serialization.XmlSchemaProviderAttribute">
   <TypeSignature Language="C#" Value="public sealed class XmlSchemaProviderAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlSchemaProviderAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSchemaProviderAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSchemaProviderAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type XmlSchemaProviderAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaProviderAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -23,7 +26,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Interface)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Interface | System.AttributeTargets.Struct)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -61,6 +64,9 @@
       <MemberSignature Language="C#" Value="public XmlSchemaProviderAttribute (string methodName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string methodName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSchemaProviderAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (methodName As String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSchemaProviderAttribute : string -&gt; System.Xml.Serialization.XmlSchemaProviderAttribute" Usage="new System.Xml.Serialization.XmlSchemaProviderAttribute methodName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaProviderAttribute(System::String ^ methodName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -90,6 +96,9 @@
       <MemberSignature Language="C#" Value="public bool IsAny { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAny" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSchemaProviderAttribute.IsAny" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAny As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAny : bool with get, set" Usage="System.Xml.Serialization.XmlSchemaProviderAttribute.IsAny" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAny { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
@@ -131,6 +140,9 @@
       <MemberSignature Language="C#" Value="public string MethodName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MethodName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSchemaProviderAttribute.MethodName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodName As String" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string" Usage="System.Xml.Serialization.XmlSchemaProviderAttribute.MethodName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.ReaderWriter</AssemblyName>

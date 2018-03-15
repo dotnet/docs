@@ -1,7 +1,10 @@
-<Type Name="InMemorySymmetricSecurityKey" FullName="System.IdentityModel.Tokens.InMemorySymmetricSecurityKey">
+﻿<Type Name="InMemorySymmetricSecurityKey" FullName="System.IdentityModel.Tokens.InMemorySymmetricSecurityKey">
   <TypeSignature Language="C#" Value="public class InMemorySymmetricSecurityKey : System.IdentityModel.Tokens.SymmetricSecurityKey" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InMemorySymmetricSecurityKey extends System.IdentityModel.Tokens.SymmetricSecurityKey" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey" />
+  <TypeSignature Language="VB.NET" Value="Public Class InMemorySymmetricSecurityKey&#xA;Inherits SymmetricSecurityKey" />
+  <TypeSignature Language="F#" Value="type InMemorySymmetricSecurityKey = class&#xA;    inherit SymmetricSecurityKey" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InMemorySymmetricSecurityKey : System::IdentityModel::Tokens::SymmetricSecurityKey" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,17 +25,35 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public InMemorySymmetricSecurityKey (byte[] key);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] key) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.#ctor(System.Byte[])" />
+      <MemberSignature Language="C#" Value="public InMemorySymmetricSecurityKey (byte[] symmetricKey);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] symmetricKey) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.#ctor(System.Byte[])" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (symmetricKey As Byte())" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.InMemorySymmetricSecurityKey : byte[] -&gt; System.IdentityModel.Tokens.InMemorySymmetricSecurityKey" Usage="new System.IdentityModel.Tokens.InMemorySymmetricSecurityKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InMemorySymmetricSecurityKey(cli::array &lt;System::Byte&gt; ^ symmetricKey);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public InMemorySymmetricSecurityKey (byte[] key);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] key) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.#ctor(System.Byte[])" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (key As Byte())" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InMemorySymmetricSecurityKey(cli::array &lt;System::Byte&gt; ^ key);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="symmetricKey" Type="System.Byte[]" />
+        <Parameter Name="symmetricKey" Type="System.Byte[]" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="key" Type="System.Byte[]" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="key">To be added.</param>
@@ -45,20 +66,32 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public InMemorySymmetricSecurityKey (byte[] key, bool clone);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] key, bool clone) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.#ctor(System.Byte[],System.Boolean)" />
+      <MemberSignature Language="C#" Value="public InMemorySymmetricSecurityKey (byte[] symmetricKey, bool cloneBuffer);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] symmetricKey, bool cloneBuffer) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.#ctor(System.Byte[],System.Boolean)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (symmetricKey As Byte(), cloneBuffer As Boolean)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.InMemorySymmetricSecurityKey : byte[] * bool -&gt; System.IdentityModel.Tokens.InMemorySymmetricSecurityKey" Usage="new System.IdentityModel.Tokens.InMemorySymmetricSecurityKey (key, clone)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InMemorySymmetricSecurityKey(cli::array &lt;System::Byte&gt; ^ symmetricKey, bool cloneBuffer);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public InMemorySymmetricSecurityKey (byte[] key, bool clone);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] key, bool clone) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.#ctor(System.Byte[],System.Boolean)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (key As Byte(), clone As Boolean)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InMemorySymmetricSecurityKey(cli::array &lt;System::Byte&gt; ^ key, bool clone);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="symmetricKey" Type="System.Byte[]" />
-        <Parameter Name="cloneBuffer" Type="System.Boolean" />
+        <Parameter Name="symmetricKey" Type="System.Byte[]" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="key" Type="System.Byte[]" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+        <Parameter Name="cloneBuffer" Type="System.Boolean" Index="1" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="clone" Type="System.Boolean" Index="1" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
+        <param name="symmetricKey">To be added.</param>
         <param name="key">To be added.</param>
+        <param name="cloneBuffer">To be added.</param>
         <param name="clone">To be added.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey" /> class using the specified symmetric key and a value that indicates whether the binary data must be cloned.</summary>
         <remarks>To be added.</remarks>
@@ -72,6 +105,9 @@
       <MemberSignature Language="C#" Value="public override byte[] DecryptKey (string algorithm, byte[] keyData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] DecryptKey(string algorithm, unsigned int8[] keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.DecryptKey(System.String,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function DecryptKey (algorithm As String, keyData As Byte()) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.DecryptKey : string * byte[] -&gt; byte[]" Usage="inMemorySymmetricSecurityKey.DecryptKey (algorithm, keyData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ DecryptKey(System::String ^ algorithm, cli::array &lt;System::Byte&gt; ^ keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -105,6 +141,9 @@
       <MemberSignature Language="C#" Value="public override byte[] EncryptKey (string algorithm, byte[] keyData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] EncryptKey(string algorithm, unsigned int8[] keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.EncryptKey(System.String,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EncryptKey (algorithm As String, keyData As Byte()) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.EncryptKey : string * byte[] -&gt; byte[]" Usage="inMemorySymmetricSecurityKey.EncryptKey (algorithm, keyData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ EncryptKey(System::String ^ algorithm, cli::array &lt;System::Byte&gt; ^ keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -138,6 +177,9 @@
       <MemberSignature Language="C#" Value="public override byte[] GenerateDerivedKey (string algorithm, byte[] label, byte[] nonce, int derivedKeyLength, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GenerateDerivedKey(string algorithm, unsigned int8[] label, unsigned int8[] nonce, int32 derivedKeyLength, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.GenerateDerivedKey(System.String,System.Byte[],System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GenerateDerivedKey (algorithm As String, label As Byte(), nonce As Byte(), derivedKeyLength As Integer, offset As Integer) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.GenerateDerivedKey : string * byte[] * byte[] * int * int -&gt; byte[]" Usage="inMemorySymmetricSecurityKey.GenerateDerivedKey (algorithm, label, nonce, derivedKeyLength, offset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GenerateDerivedKey(System::String ^ algorithm, cli::array &lt;System::Byte&gt; ^ label, cli::array &lt;System::Byte&gt; ^ nonce, int derivedKeyLength, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -177,6 +219,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform GetDecryptionTransform (string algorithm, byte[] iv);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform GetDecryptionTransform(string algorithm, unsigned int8[] iv) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.GetDecryptionTransform(System.String,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDecryptionTransform (algorithm As String, iv As Byte()) As ICryptoTransform" />
+      <MemberSignature Language="F#" Value="override this.GetDecryptionTransform : string * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="inMemorySymmetricSecurityKey.GetDecryptionTransform (algorithm, iv)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ GetDecryptionTransform(System::String ^ algorithm, cli::array &lt;System::Byte&gt; ^ iv);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -210,6 +255,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.ICryptoTransform GetEncryptionTransform (string algorithm, byte[] iv);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.ICryptoTransform GetEncryptionTransform(string algorithm, unsigned int8[] iv) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.GetEncryptionTransform(System.String,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEncryptionTransform (algorithm As String, iv As Byte()) As ICryptoTransform" />
+      <MemberSignature Language="F#" Value="override this.GetEncryptionTransform : string * byte[] -&gt; System.Security.Cryptography.ICryptoTransform" Usage="inMemorySymmetricSecurityKey.GetEncryptionTransform (algorithm, iv)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::ICryptoTransform ^ GetEncryptionTransform(System::String ^ algorithm, cli::array &lt;System::Byte&gt; ^ iv);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -243,6 +291,9 @@
       <MemberSignature Language="C#" Value="public override int GetIVSize (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetIVSize(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.GetIVSize(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetIVSize (algorithm As String) As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetIVSize : string -&gt; int" Usage="inMemorySymmetricSecurityKey.GetIVSize algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetIVSize(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -274,6 +325,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.KeyedHashAlgorithm GetKeyedHashAlgorithm (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.KeyedHashAlgorithm GetKeyedHashAlgorithm(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.GetKeyedHashAlgorithm(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetKeyedHashAlgorithm (algorithm As String) As KeyedHashAlgorithm" />
+      <MemberSignature Language="F#" Value="override this.GetKeyedHashAlgorithm : string -&gt; System.Security.Cryptography.KeyedHashAlgorithm" Usage="inMemorySymmetricSecurityKey.GetKeyedHashAlgorithm algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::KeyedHashAlgorithm ^ GetKeyedHashAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -298,6 +352,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.Cryptography.SymmetricAlgorithm GetSymmetricAlgorithm (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Cryptography.SymmetricAlgorithm GetSymmetricAlgorithm(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.GetSymmetricAlgorithm(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSymmetricAlgorithm (algorithm As String) As SymmetricAlgorithm" />
+      <MemberSignature Language="F#" Value="override this.GetSymmetricAlgorithm : string -&gt; System.Security.Cryptography.SymmetricAlgorithm" Usage="inMemorySymmetricSecurityKey.GetSymmetricAlgorithm algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Cryptography::SymmetricAlgorithm ^ GetSymmetricAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -322,6 +379,9 @@
       <MemberSignature Language="C#" Value="public override byte[] GetSymmetricKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetSymmetricKey() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.GetSymmetricKey" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetSymmetricKey () As Byte()" />
+      <MemberSignature Language="F#" Value="override this.GetSymmetricKey : unit -&gt; byte[]" Usage="inMemorySymmetricSecurityKey.GetSymmetricKey " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetSymmetricKey();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -341,6 +401,9 @@
       <MemberSignature Language="C#" Value="public override bool IsAsymmetricAlgorithm (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsAsymmetricAlgorithm(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.IsAsymmetricAlgorithm(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsAsymmetricAlgorithm (algorithm As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsAsymmetricAlgorithm : string -&gt; bool" Usage="inMemorySymmetricSecurityKey.IsAsymmetricAlgorithm algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsAsymmetricAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -364,6 +427,9 @@
       <MemberSignature Language="C#" Value="public override bool IsSupportedAlgorithm (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSupportedAlgorithm(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.IsSupportedAlgorithm(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSupportedAlgorithm (algorithm As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsSupportedAlgorithm : string -&gt; bool" Usage="inMemorySymmetricSecurityKey.IsSupportedAlgorithm algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSupportedAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -414,6 +480,9 @@
       <MemberSignature Language="C#" Value="public override bool IsSymmetricAlgorithm (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSymmetricAlgorithm(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.IsSymmetricAlgorithm(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSymmetricAlgorithm (algorithm As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsSymmetricAlgorithm : string -&gt; bool" Usage="inMemorySymmetricSecurityKey.IsSymmetricAlgorithm algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSymmetricAlgorithm(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -437,6 +506,9 @@
       <MemberSignature Language="C#" Value="public override int KeySize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeySize" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.KeySize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeySize As Integer" />
+      <MemberSignature Language="F#" Value="member this.KeySize : int" Usage="System.IdentityModel.Tokens.InMemorySymmetricSecurityKey.KeySize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int KeySize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -451,14 +523,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.InMemorySymmetricSecurityKey" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="FontDialog" FullName="System.Windows.Forms.FontDialog">
+﻿<Type Name="FontDialog" FullName="System.Windows.Forms.FontDialog">
   <TypeSignature Language="C#" Value="public class FontDialog : System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FontDialog extends System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FontDialog" />
+  <TypeSignature Language="VB.NET" Value="Public Class FontDialog&#xA;Inherits CommonDialog" />
+  <TypeSignature Language="F#" Value="type FontDialog = class&#xA;    inherit CommonDialog" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FontDialog : System::Windows::Forms::CommonDialog" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="public FontDialog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FontDialog.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FontDialog();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -88,6 +93,9 @@
       <MemberSignature Language="C#" Value="public bool AllowScriptChange { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowScriptChange" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.AllowScriptChange" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowScriptChange As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowScriptChange : bool with get, set" Usage="System.Windows.Forms.FontDialog.AllowScriptChange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowScriptChange { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,6 +130,9 @@
       <MemberSignature Language="C#" Value="public bool AllowSimulations { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowSimulations" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.AllowSimulations" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowSimulations As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowSimulations : bool with get, set" Usage="System.Windows.Forms.FontDialog.AllowSimulations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowSimulations { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -149,6 +160,9 @@
       <MemberSignature Language="C#" Value="public bool AllowVectorFonts { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowVectorFonts" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.AllowVectorFonts" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowVectorFonts As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowVectorFonts : bool with get, set" Usage="System.Windows.Forms.FontDialog.AllowVectorFonts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowVectorFonts { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -176,6 +190,9 @@
       <MemberSignature Language="C#" Value="public bool AllowVerticalFonts { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowVerticalFonts" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.AllowVerticalFonts" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowVerticalFonts As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowVerticalFonts : bool with get, set" Usage="System.Windows.Forms.FontDialog.AllowVerticalFonts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowVerticalFonts { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -203,6 +220,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Apply;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Apply" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.FontDialog.Apply" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Apply As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Apply : EventHandler " Usage="member this.Apply : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Apply;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -239,6 +259,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color Color { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color Color" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.Color" />
+      <MemberSignature Language="VB.NET" Value="Public Property Color As Color" />
+      <MemberSignature Language="F#" Value="member this.Color : System.Drawing.Color with get, set" Usage="System.Windows.Forms.FontDialog.Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color Color { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -276,6 +299,9 @@
       <MemberSignature Language="C#" Value="protected static readonly object EventApply;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly object EventApply" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FontDialog.EventApply" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly EventApply As Object " />
+      <MemberSignature Language="F#" Value=" staticval mutable EventApply : obj" Usage="System.Windows.Forms.FontDialog.EventApply" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Object ^ EventApply;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -293,6 +319,9 @@
       <MemberSignature Language="C#" Value="public bool FixedPitchOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool FixedPitchOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.FixedPitchOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property FixedPitchOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.FixedPitchOnly : bool with get, set" Usage="System.Windows.Forms.FontDialog.FixedPitchOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FixedPitchOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -319,6 +348,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.FontDialog.Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -350,6 +382,9 @@
       <MemberSignature Language="C#" Value="public bool FontMustExist { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool FontMustExist" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.FontMustExist" />
+      <MemberSignature Language="VB.NET" Value="Public Property FontMustExist As Boolean" />
+      <MemberSignature Language="F#" Value="member this.FontMustExist : bool with get, set" Usage="System.Windows.Forms.FontDialog.FontMustExist" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FontMustExist { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -387,6 +422,9 @@
       <MemberSignature Language="C#" Value="protected override IntPtr HookProc (IntPtr hWnd, int msg, IntPtr wparam, IntPtr lparam);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance native int HookProc(native int hWnd, int32 msg, native int wparam, native int lparam) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FontDialog.HookProc(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function HookProc (hWnd As IntPtr, msg As Integer, wparam As IntPtr, lparam As IntPtr) As IntPtr" />
+      <MemberSignature Language="F#" Value="override this.HookProc : nativeint * int * nativeint * nativeint -&gt; nativeint" Usage="fontDialog.HookProc (hWnd, msg, wparam, lparam)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override IntPtr HookProc(IntPtr hWnd, int msg, IntPtr wparam, IntPtr lparam);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -435,6 +473,9 @@
       <MemberSignature Language="C#" Value="public int MaxSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.MaxSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxSize : int with get, set" Usage="System.Windows.Forms.FontDialog.MaxSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -479,6 +520,9 @@
       <MemberSignature Language="C#" Value="public int MinSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.MinSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.MinSize : int with get, set" Usage="System.Windows.Forms.FontDialog.MinSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -523,6 +567,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnApply (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnApply(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FontDialog.OnApply(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnApply (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnApply : EventArgs -&gt; unit&#xA;override this.OnApply : EventArgs -&gt; unit" Usage="fontDialog.OnApply e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnApply(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -555,6 +602,9 @@
       <MemberSignature Language="C#" Value="protected int Options { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Options" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.Options" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Options As Integer" />
+      <MemberSignature Language="F#" Value="member this.Options : int" Usage="System.Windows.Forms.FontDialog.Options" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int Options { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -580,6 +630,9 @@
       <MemberSignature Language="C#" Value="public override void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FontDialog.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="fontDialog.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -605,6 +658,9 @@
       <MemberSignature Language="C#" Value="protected override bool RunDialog (IntPtr hWndOwner);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool RunDialog(native int hWndOwner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FontDialog.RunDialog(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function RunDialog (hWndOwner As IntPtr) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.RunDialog : nativeint -&gt; bool" Usage="fontDialog.RunDialog hWndOwner" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool RunDialog(IntPtr hWndOwner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -635,6 +691,9 @@
       <MemberSignature Language="C#" Value="public bool ScriptsOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ScriptsOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.ScriptsOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScriptsOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ScriptsOnly : bool with get, set" Usage="System.Windows.Forms.FontDialog.ScriptsOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ScriptsOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -661,6 +720,9 @@
       <MemberSignature Language="C#" Value="public bool ShowApply { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowApply" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.ShowApply" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowApply As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowApply : bool with get, set" Usage="System.Windows.Forms.FontDialog.ShowApply" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowApply { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -699,6 +761,9 @@
       <MemberSignature Language="C#" Value="public bool ShowColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.ShowColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowColor As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowColor : bool with get, set" Usage="System.Windows.Forms.FontDialog.ShowColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowColor { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -738,6 +803,9 @@
       <MemberSignature Language="C#" Value="public bool ShowEffects { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowEffects" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.ShowEffects" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowEffects As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowEffects : bool with get, set" Usage="System.Windows.Forms.FontDialog.ShowEffects" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowEffects { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -776,6 +844,9 @@
       <MemberSignature Language="C#" Value="public bool ShowHelp { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowHelp" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FontDialog.ShowHelp" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowHelp As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowHelp : bool with get, set" Usage="System.Windows.Forms.FontDialog.ShowHelp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowHelp { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -803,6 +874,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FontDialog.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fontDialog.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

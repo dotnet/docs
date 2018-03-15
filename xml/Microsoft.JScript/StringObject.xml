@@ -1,7 +1,10 @@
-<Type Name="StringObject" FullName="Microsoft.JScript.StringObject">
+﻿<Type Name="StringObject" FullName="Microsoft.JScript.StringObject">
   <TypeSignature Language="C#" Value="public class StringObject : Microsoft.JScript.JSObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StringObject extends Microsoft.JScript.JSObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.StringObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class StringObject&#xA;Inherits JSObject" />
+  <TypeSignature Language="F#" Value="type StringObject = class&#xA;    inherit JSObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StringObject : Microsoft::JScript::JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +25,9 @@
       <MemberSignature Language="C#" Value="protected StringObject (Microsoft.JScript.ScriptObject prototype, string value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.ScriptObject prototype, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringObject.#ctor(Microsoft.JScript.ScriptObject,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (prototype As ScriptObject, value As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.StringObject : Microsoft.JScript.ScriptObject * string -&gt; Microsoft.JScript.StringObject" Usage="new Microsoft.JScript.StringObject (prototype, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; StringObject(Microsoft::JScript::ScriptObject ^ prototype, System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -45,6 +51,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object ob);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object ob) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringObject.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (ob As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="stringObject.Equals ob" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ ob);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -71,6 +80,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringObject.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="stringObject.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -93,6 +105,9 @@
       <MemberSignature Language="C#" Value="public Type GetType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetType() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.StringObject.GetType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetType () As Type" />
+      <MemberSignature Language="F#" Value="override this.GetType : unit -&gt; Type" Usage="stringObject.GetType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -116,6 +131,9 @@
       <MemberSignature Language="C#" Value="public int length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 length" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.StringObject.length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property length As Integer" />
+      <MemberSignature Language="F#" Value="member this.length : int" Usage="Microsoft.JScript.StringObject.length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int length { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

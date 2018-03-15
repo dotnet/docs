@@ -1,7 +1,10 @@
-<Type Name="CallingConventions" FullName="System.Reflection.CallingConventions">
+﻿<Type Name="CallingConventions" FullName="System.Reflection.CallingConventions">
   <TypeSignature Language="C#" Value="public enum CallingConventions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed CallingConventions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.CallingConventions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CallingConventions" />
+  <TypeSignature Language="F#" Value="type CallingConventions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CallingConventions" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +56,9 @@
       <MemberSignature Language="C#" Value="Any" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.CallingConventions Any = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.CallingConventions.Any" />
+      <MemberSignature Language="VB.NET" Value="Any" />
+      <MemberSignature Language="F#" Value="Any = 3" Usage="System.Reflection.CallingConventions.Any" />
+      <MemberSignature Language="C++ CLI" Value="Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -74,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.CallingConventions</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies that either the <see langword="Standard" /> or the <see langword="VarArgs" /> calling convention may be used.</summary>
       </Docs>
@@ -82,6 +89,9 @@
       <MemberSignature Language="C#" Value="ExplicitThis" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.CallingConventions ExplicitThis = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.CallingConventions.ExplicitThis" />
+      <MemberSignature Language="VB.NET" Value="ExplicitThis" />
+      <MemberSignature Language="F#" Value="ExplicitThis = 64" Usage="System.Reflection.CallingConventions.ExplicitThis" />
+      <MemberSignature Language="C++ CLI" Value="ExplicitThis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -103,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.CallingConventions</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Specifies that the signature is a function-pointer signature, representing a call to an instance or virtual method (not a static method). If <see langword="ExplicitThis" /> is set, <see langword="HasThis" /> must also be set. The first argument passed to the called method is still a <see langword="this" /> pointer, but the type of the first argument is now unknown. Therefore, a token that describes the type (or class) of the <see langword="this" /> pointer is explicitly stored into its metadata signature.</summary>
       </Docs>
@@ -111,6 +122,9 @@
       <MemberSignature Language="C#" Value="HasThis" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.CallingConventions HasThis = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.CallingConventions.HasThis" />
+      <MemberSignature Language="VB.NET" Value="HasThis" />
+      <MemberSignature Language="F#" Value="HasThis = 32" Usage="System.Reflection.CallingConventions.HasThis" />
+      <MemberSignature Language="C++ CLI" Value="HasThis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -132,6 +146,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.CallingConventions</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Specifies an instance or virtual method (not a static method). At run-time, the called method is passed a pointer to the target object as its first argument (the <see langword="this" /> pointer). The signature stored in metadata does not include the type of this first argument, because the method is known and its owner class can be discovered from metadata.</summary>
       </Docs>
@@ -140,6 +155,9 @@
       <MemberSignature Language="C#" Value="Standard" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.CallingConventions Standard = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.CallingConventions.Standard" />
+      <MemberSignature Language="VB.NET" Value="Standard" />
+      <MemberSignature Language="F#" Value="Standard = 1" Usage="System.Reflection.CallingConventions.Standard" />
+      <MemberSignature Language="C++ CLI" Value="Standard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -161,6 +179,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.CallingConventions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies the default calling convention as determined by the common language runtime. Use this calling convention for static methods. For instance or virtual methods use <see langword="HasThis" />.</summary>
       </Docs>
@@ -169,6 +188,9 @@
       <MemberSignature Language="C#" Value="VarArgs" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.CallingConventions VarArgs = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.CallingConventions.VarArgs" />
+      <MemberSignature Language="VB.NET" Value="VarArgs" />
+      <MemberSignature Language="F#" Value="VarArgs = 2" Usage="System.Reflection.CallingConventions.VarArgs" />
+      <MemberSignature Language="C++ CLI" Value="VarArgs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -190,6 +212,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.CallingConventions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies the calling convention for methods with variable arguments.</summary>
       </Docs>

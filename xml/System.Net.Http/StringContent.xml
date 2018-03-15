@@ -1,7 +1,10 @@
-<Type Name="StringContent" FullName="System.Net.Http.StringContent">
+﻿<Type Name="StringContent" FullName="System.Net.Http.StringContent">
   <TypeSignature Language="C#" Value="public class StringContent : System.Net.Http.ByteArrayContent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StringContent extends System.Net.Http.ByteArrayContent" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.StringContent" />
+  <TypeSignature Language="VB.NET" Value="Public Class StringContent&#xA;Inherits ByteArrayContent" />
+  <TypeSignature Language="F#" Value="type StringContent = class&#xA;    inherit ByteArrayContent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StringContent : System::Net::Http::ByteArrayContent" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +25,25 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Net.Http.StringContent" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StringContent (string content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StringContent.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (content As String)" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.StringContent : string -&gt; System.Net.Http.StringContent" Usage="new System.Net.Http.StringContent content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringContent(System::String ^ content);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -58,6 +76,8 @@
       <MemberSignature Language="C#" Value="public StringContent (string content, System.Text.Encoding encoding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string content, class System.Text.Encoding encoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StringContent.#ctor(System.String,System.Text.Encoding)" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.StringContent : string * System.Text.Encoding -&gt; System.Net.Http.StringContent" Usage="new System.Net.Http.StringContent (content, encoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringContent(System::String ^ content, System::Text::Encoding ^ encoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -92,6 +112,8 @@
       <MemberSignature Language="C#" Value="public StringContent (string content, System.Text.Encoding encoding, string mediaType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string content, class System.Text.Encoding encoding, string mediaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StringContent.#ctor(System.String,System.Text.Encoding,System.String)" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.StringContent : string * System.Text.Encoding * string -&gt; System.Net.Http.StringContent" Usage="new System.Net.Http.StringContent (content, encoding, mediaType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringContent(System::String ^ content, System::Text::Encoding ^ encoding, System::String ^ mediaType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -117,17 +139,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Http</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Net.Http.StringContent" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

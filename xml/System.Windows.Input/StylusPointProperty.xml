@@ -1,7 +1,10 @@
-<Type Name="StylusPointProperty" FullName="System.Windows.Input.StylusPointProperty">
+﻿<Type Name="StylusPointProperty" FullName="System.Windows.Input.StylusPointProperty">
   <TypeSignature Language="C#" Value="public class StylusPointProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StylusPointProperty extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.StylusPointProperty" />
+  <TypeSignature Language="VB.NET" Value="Public Class StylusPointProperty" />
+  <TypeSignature Language="F#" Value="type StylusPointProperty = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StylusPointProperty" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,10 +35,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointProperty" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected StylusPointProperty (System.Windows.Input.StylusPointProperty stylusPointProperty);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.StylusPointProperty stylusPointProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointProperty.#ctor(System.Windows.Input.StylusPointProperty)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.StylusPointProperty : System.Windows.Input.StylusPointProperty -&gt; System.Windows.Input.StylusPointProperty" Usage="new System.Windows.Input.StylusPointProperty stylusPointProperty" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; StylusPointProperty(System::Windows::Input::StylusPointProperty ^ stylusPointProperty);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -54,6 +68,9 @@
       <MemberSignature Language="C#" Value="public StylusPointProperty (Guid identifier, bool isButton);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid identifier, bool isButton) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointProperty.#ctor(System.Guid,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identifier As Guid, isButton As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.StylusPointProperty : Guid * bool -&gt; System.Windows.Input.StylusPointProperty" Usage="new System.Windows.Input.StylusPointProperty (identifier, isButton)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StylusPointProperty(Guid identifier, bool isButton);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +102,9 @@
       <MemberSignature Language="C#" Value="public Guid Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Id" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPointProperty.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Guid" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid" Usage="System.Windows.Input.StylusPointProperty.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Id { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +135,9 @@
       <MemberSignature Language="C#" Value="public bool IsButton { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsButton" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.StylusPointProperty.IsButton" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsButton As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsButton : bool" Usage="System.Windows.Input.StylusPointProperty.IsButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsButton { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +169,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.StylusPointProperty.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="stylusPointProperty.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -162,14 +188,5 @@
         <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.StylusPointProperty" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

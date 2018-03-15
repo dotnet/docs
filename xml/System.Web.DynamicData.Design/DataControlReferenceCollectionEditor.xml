@@ -1,7 +1,10 @@
-<Type Name="DataControlReferenceCollectionEditor" FullName="System.Web.DynamicData.Design.DataControlReferenceCollectionEditor">
+﻿<Type Name="DataControlReferenceCollectionEditor" FullName="System.Web.DynamicData.Design.DataControlReferenceCollectionEditor">
   <TypeSignature Language="C#" Value="public class DataControlReferenceCollectionEditor : System.ComponentModel.Design.CollectionEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataControlReferenceCollectionEditor extends System.ComponentModel.Design.CollectionEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.Design.DataControlReferenceCollectionEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataControlReferenceCollectionEditor&#xA;Inherits CollectionEditor" />
+  <TypeSignature Language="F#" Value="type DataControlReferenceCollectionEditor = class&#xA;    inherit CollectionEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataControlReferenceCollectionEditor : System::ComponentModel::Design::CollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public DataControlReferenceCollectionEditor (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.Design.DataControlReferenceCollectionEditor.#ctor(System.Type)" />
+      <MemberSignature Language="F#" Value="new System.Web.DynamicData.Design.DataControlReferenceCollectionEditor : Type -&gt; System.Web.DynamicData.Design.DataControlReferenceCollectionEditor" Usage="new System.Web.DynamicData.Design.DataControlReferenceCollectionEditor type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataControlReferenceCollectionEditor(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData.Design</AssemblyName>
@@ -38,6 +43,9 @@
       <MemberSignature Language="C#" Value="protected override Type CreateCollectionItemType ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type CreateCollectionItemType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.Design.DataControlReferenceCollectionEditor.CreateCollectionItemType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateCollectionItemType () As Type" />
+      <MemberSignature Language="F#" Value="override this.CreateCollectionItemType : unit -&gt; Type" Usage="dataControlReferenceCollectionEditor.CreateCollectionItemType " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ CreateCollectionItemType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData.Design</AssemblyName>

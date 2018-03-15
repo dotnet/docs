@@ -1,7 +1,10 @@
-<Type Name="XamlDuplicateMemberException" FullName="System.Xaml.XamlDuplicateMemberException">
+﻿<Type Name="XamlDuplicateMemberException" FullName="System.Xaml.XamlDuplicateMemberException">
   <TypeSignature Language="C#" Value="public class XamlDuplicateMemberException : System.Xaml.XamlException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit XamlDuplicateMemberException extends System.Xaml.XamlException" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlDuplicateMemberException" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlDuplicateMemberException&#xA;Inherits XamlException" />
+  <TypeSignature Language="F#" Value="type XamlDuplicateMemberException = class&#xA;    inherit XamlException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlDuplicateMemberException : System::Xaml::XamlException" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +27,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlDuplicateMemberException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XamlDuplicateMemberException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlDuplicateMemberException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlDuplicateMemberException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -43,6 +57,9 @@
       <MemberSignature Language="C#" Value="public XamlDuplicateMemberException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlDuplicateMemberException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlDuplicateMemberException : string -&gt; System.Xaml.XamlDuplicateMemberException" Usage="new System.Xaml.XamlDuplicateMemberException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlDuplicateMemberException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -61,6 +78,9 @@
       <MemberSignature Language="C#" Value="protected XamlDuplicateMemberException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlDuplicateMemberException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlDuplicateMemberException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Xaml.XamlDuplicateMemberException" Usage="new System.Xaml.XamlDuplicateMemberException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XamlDuplicateMemberException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -83,6 +103,9 @@
       <MemberSignature Language="C#" Value="public XamlDuplicateMemberException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlDuplicateMemberException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlDuplicateMemberException : string * Exception -&gt; System.Xaml.XamlDuplicateMemberException" Usage="new System.Xaml.XamlDuplicateMemberException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlDuplicateMemberException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -110,6 +133,9 @@
       <MemberSignature Language="C#" Value="public XamlDuplicateMemberException (System.Xaml.XamlMember member, System.Xaml.XamlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlMember member, class System.Xaml.XamlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlDuplicateMemberException.#ctor(System.Xaml.XamlMember,System.Xaml.XamlType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (member As XamlMember, type As XamlType)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlDuplicateMemberException : System.Xaml.XamlMember * System.Xaml.XamlType -&gt; System.Xaml.XamlDuplicateMemberException" Usage="new System.Xaml.XamlDuplicateMemberException (member, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlDuplicateMemberException(System::Xaml::XamlMember ^ member, System::Xaml::XamlType ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -130,6 +156,9 @@
       <MemberSignature Language="C#" Value="public System.Xaml.XamlMember DuplicateMember { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlMember DuplicateMember" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlDuplicateMemberException.DuplicateMember" />
+      <MemberSignature Language="VB.NET" Value="Public Property DuplicateMember As XamlMember" />
+      <MemberSignature Language="F#" Value="member this.DuplicateMember : System.Xaml.XamlMember with get, set" Usage="System.Xaml.XamlDuplicateMemberException.DuplicateMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlMember ^ DuplicateMember { System::Xaml::XamlMember ^ get(); void set(System::Xaml::XamlMember ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -148,6 +177,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlDuplicateMemberException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="xamlDuplicateMemberException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -186,6 +218,9 @@
       <MemberSignature Language="C#" Value="public System.Xaml.XamlType ParentType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlType ParentType" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlDuplicateMemberException.ParentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParentType As XamlType" />
+      <MemberSignature Language="F#" Value="member this.ParentType : System.Xaml.XamlType with get, set" Usage="System.Xaml.XamlDuplicateMemberException.ParentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlType ^ ParentType { System::Xaml::XamlType ^ get(); void set(System::Xaml::XamlType ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -200,14 +235,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlDuplicateMemberException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

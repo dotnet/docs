@@ -1,7 +1,10 @@
-<Type Name="IArgumentProvider" FullName="System.Linq.Expressions.IArgumentProvider">
+﻿<Type Name="IArgumentProvider" FullName="System.Linq.Expressions.IArgumentProvider">
   <TypeSignature Language="C#" Value="public interface IArgumentProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IArgumentProvider" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.IArgumentProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IArgumentProvider" />
+  <TypeSignature Language="F#" Value="type IArgumentProvider = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IArgumentProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public int ArgumentCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ArgumentCount" />
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.IArgumentProvider.ArgumentCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ArgumentCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.ArgumentCount : int" Usage="System.Linq.Expressions.IArgumentProvider.ArgumentCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ArgumentCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -66,6 +72,9 @@
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.Expression GetArgument (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.Expressions.Expression GetArgument(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.IArgumentProvider.GetArgument(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetArgument (index As Integer) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member GetArgument : int -&gt; System.Linq.Expressions.Expression" Usage="iArgumentProvider.GetArgument index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::Expression ^ GetArgument(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

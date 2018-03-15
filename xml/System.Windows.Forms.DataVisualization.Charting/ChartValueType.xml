@@ -1,7 +1,10 @@
-<Type Name="ChartValueType" FullName="System.Windows.Forms.DataVisualization.Charting.ChartValueType">
+﻿<Type Name="ChartValueType" FullName="System.Windows.Forms.DataVisualization.Charting.ChartValueType">
   <TypeSignature Language="C#" Value="public enum ChartValueType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChartValueType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ChartValueType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ChartValueType" />
+  <TypeSignature Language="F#" Value="type ChartValueType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ChartValueType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartValueType Auto = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartValueType.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Windows.Forms.DataVisualization.Charting.ChartValueType.Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Property type is set automatically by the Chart control.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="Date" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartValueType Date = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date" />
+      <MemberSignature Language="VB.NET" Value="Date" />
+      <MemberSignature Language="F#" Value="Date = 9" Usage="System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date" />
+      <MemberSignature Language="C++ CLI" Value="Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The Date portion of a <see cref="T:System.DateTime" /> value.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="DateTime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartValueType DateTime = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTime" />
+      <MemberSignature Language="VB.NET" Value="DateTime" />
+      <MemberSignature Language="F#" Value="DateTime = 8" Usage="System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTime" />
+      <MemberSignature Language="C++ CLI" Value="DateTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.DateTime" /> value.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="DateTimeOffset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartValueType DateTimeOffset = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTimeOffset" />
+      <MemberSignature Language="VB.NET" Value="DateTimeOffset" />
+      <MemberSignature Language="F#" Value="DateTimeOffset = 11" Usage="System.Windows.Forms.DataVisualization.Charting.ChartValueType.DateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="DateTimeOffset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.DateTime" /> value with offset.</summary>
       </Docs>
@@ -82,6 +101,9 @@
       <MemberSignature Language="C#" Value="Double" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartValueType Double = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double" />
+      <MemberSignature Language="VB.NET" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 1" Usage="System.Windows.Forms.DataVisualization.Charting.ChartValueType.Double" />
+      <MemberSignature Language="C++ CLI" Value="Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -90,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Double" /> value.</summary>
       </Docs>
@@ -98,6 +121,9 @@
       <MemberSignature Language="C#" Value="Int32" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartValueType Int32 = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32" />
+      <MemberSignature Language="VB.NET" Value="Int32" />
+      <MemberSignature Language="F#" Value="Int32 = 3" Usage="System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int32" />
+      <MemberSignature Language="C++ CLI" Value="Int32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -106,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Int32" /> value.</summary>
       </Docs>
@@ -114,6 +141,9 @@
       <MemberSignature Language="C#" Value="Int64" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartValueType Int64 = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int64" />
+      <MemberSignature Language="VB.NET" Value="Int64" />
+      <MemberSignature Language="F#" Value="Int64 = 4" Usage="System.Windows.Forms.DataVisualization.Charting.ChartValueType.Int64" />
+      <MemberSignature Language="C++ CLI" Value="Int64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -122,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Int64" /> value.</summary>
       </Docs>
@@ -130,6 +161,9 @@
       <MemberSignature Language="C#" Value="Single" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartValueType Single = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartValueType.Single" />
+      <MemberSignature Language="VB.NET" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 2" Usage="System.Windows.Forms.DataVisualization.Charting.ChartValueType.Single" />
+      <MemberSignature Language="C++ CLI" Value="Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -138,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Single" /> value.</summary>
       </Docs>
@@ -146,6 +181,9 @@
       <MemberSignature Language="C#" Value="String" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartValueType String = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartValueType.String" />
+      <MemberSignature Language="VB.NET" Value="String" />
+      <MemberSignature Language="F#" Value="String = 7" Usage="System.Windows.Forms.DataVisualization.Charting.ChartValueType.String" />
+      <MemberSignature Language="C++ CLI" Value="String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -154,6 +192,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.String" /> value.</summary>
       </Docs>
@@ -162,6 +201,9 @@
       <MemberSignature Language="C#" Value="Time" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartValueType Time = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time" />
+      <MemberSignature Language="VB.NET" Value="Time" />
+      <MemberSignature Language="F#" Value="Time = 10" Usage="System.Windows.Forms.DataVisualization.Charting.ChartValueType.Time" />
+      <MemberSignature Language="C++ CLI" Value="Time" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -170,6 +212,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The Time portion of the <see cref="T:System.DateTime" /> value.</summary>
       </Docs>
@@ -178,6 +221,9 @@
       <MemberSignature Language="C#" Value="UInt32" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartValueType UInt32 = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartValueType.UInt32" />
+      <MemberSignature Language="VB.NET" Value="UInt32" />
+      <MemberSignature Language="F#" Value="UInt32 = 5" Usage="System.Windows.Forms.DataVisualization.Charting.ChartValueType.UInt32" />
+      <MemberSignature Language="C++ CLI" Value="UInt32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -186,6 +232,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.UInt32" /> value.</summary>
       </Docs>
@@ -194,6 +241,9 @@
       <MemberSignature Language="C#" Value="UInt64" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ChartValueType UInt64 = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ChartValueType.UInt64" />
+      <MemberSignature Language="VB.NET" Value="UInt64" />
+      <MemberSignature Language="F#" Value="UInt64 = 6" Usage="System.Windows.Forms.DataVisualization.Charting.ChartValueType.UInt64" />
+      <MemberSignature Language="C++ CLI" Value="UInt64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -202,6 +252,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ChartValueType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.UInt64" /> value.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="StopBits" FullName="System.IO.Ports.StopBits">
+﻿<Type Name="StopBits" FullName="System.IO.Ports.StopBits">
   <TypeSignature Language="C#" Value="public enum StopBits" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StopBits extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Ports.StopBits" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StopBits" />
+  <TypeSignature Language="F#" Value="type StopBits = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class StopBits" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.StopBits None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.StopBits.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.IO.Ports.StopBits.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -58,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.StopBits</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No stop bits are used. This value is not supported by the <see cref="P:System.IO.Ports.SerialPort.StopBits" /> property.</summary>
       </Docs>
@@ -66,6 +73,9 @@
       <MemberSignature Language="C#" Value="One" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.StopBits One = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.StopBits.One" />
+      <MemberSignature Language="VB.NET" Value="One" />
+      <MemberSignature Language="F#" Value="One = 1" Usage="System.IO.Ports.StopBits.One" />
+      <MemberSignature Language="C++ CLI" Value="One" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -78,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.StopBits</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>One stop bit is used.</summary>
       </Docs>
@@ -86,6 +97,9 @@
       <MemberSignature Language="C#" Value="OnePointFive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.StopBits OnePointFive = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.StopBits.OnePointFive" />
+      <MemberSignature Language="VB.NET" Value="OnePointFive" />
+      <MemberSignature Language="F#" Value="OnePointFive = 3" Usage="System.IO.Ports.StopBits.OnePointFive" />
+      <MemberSignature Language="C++ CLI" Value="OnePointFive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -98,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.StopBits</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>1.5 stop bits are used.</summary>
       </Docs>
@@ -106,6 +121,9 @@
       <MemberSignature Language="C#" Value="Two" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.StopBits Two = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.StopBits.Two" />
+      <MemberSignature Language="VB.NET" Value="Two" />
+      <MemberSignature Language="F#" Value="Two = 2" Usage="System.IO.Ports.StopBits.Two" />
+      <MemberSignature Language="C++ CLI" Value="Two" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +136,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.StopBits</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Two stop bits are used.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="ComMethodElement" FullName="System.ServiceModel.Configuration.ComMethodElement">
+﻿<Type Name="ComMethodElement" FullName="System.ServiceModel.Configuration.ComMethodElement">
   <TypeSignature Language="C#" Value="public sealed class ComMethodElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComMethodElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ComMethodElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComMethodElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ComMethodElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComMethodElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,10 +45,21 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ComMethodElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ComMethodElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ComMethodElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComMethodElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -61,6 +75,9 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
       <MemberSignature Language="C#" Value="public ComMethodElement (string method);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ComMethodElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (method As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.ComMethodElement : string -&gt; System.ServiceModel.Configuration.ComMethodElement" Usage="new System.ServiceModel.Configuration.ComMethodElement method" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComMethodElement(System::String ^ method);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +96,9 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
       <MemberSignature Language="C#" Value="public string ExposedMethod { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExposedMethod" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComMethodElement.ExposedMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExposedMethod As String" />
+      <MemberSignature Language="F#" Value="member this.ExposedMethod : string with get, set" Usage="System.ServiceModel.Configuration.ComMethodElement.ExposedMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExposedMethod { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,7 +106,7 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("exposedMethod", Options=System.Configuration.ConfigurationPropertyOptions.IsRequired | System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("exposedMethod", Options=System.Configuration.ConfigurationPropertyOptions.IsKey | System.Configuration.ConfigurationPropertyOptions.IsRequired)</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Configuration.StringValidator(MinLength=1)</AttributeName>
@@ -105,6 +125,9 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ComMethodElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ComMethodElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -119,14 +142,5 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.ComMethodElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

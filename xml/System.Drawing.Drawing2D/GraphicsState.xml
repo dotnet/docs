@@ -1,7 +1,10 @@
-<Type Name="GraphicsState" FullName="System.Drawing.Drawing2D.GraphicsState">
+﻿<Type Name="GraphicsState" FullName="System.Drawing.Drawing2D.GraphicsState">
   <TypeSignature Language="C#" Value="public sealed class GraphicsState : MarshalByRefObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GraphicsState extends System.MarshalByRefObject" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.GraphicsState" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GraphicsState&#xA;Inherits MarshalByRefObject" />
+  <TypeSignature Language="F#" Value="type GraphicsState = class&#xA;    inherit MarshalByRefObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GraphicsState sealed : MarshalByRefObject" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

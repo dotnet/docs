@@ -1,7 +1,10 @@
-<Type Name="BitmapCacheOption" FullName="System.Windows.Media.Imaging.BitmapCacheOption">
+﻿<Type Name="BitmapCacheOption" FullName="System.Windows.Media.Imaging.BitmapCacheOption">
   <TypeSignature Language="C#" Value="public enum BitmapCacheOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BitmapCacheOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapCacheOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BitmapCacheOption" />
+  <TypeSignature Language="F#" Value="type BitmapCacheOption = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class BitmapCacheOption" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.BitmapCacheOption Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCacheOption.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Windows.Media.Imaging.BitmapCacheOption.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -37,6 +43,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapCacheOption</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Caches the entire image into memory. This is the default value.</summary>
       </Docs>
@@ -45,6 +52,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.BitmapCacheOption None = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCacheOption.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 2" Usage="System.Windows.Media.Imaging.BitmapCacheOption.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -53,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapCacheOption</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Do not create a memory store. All requests for the image are filled directly by the image file.</summary>
       </Docs>
@@ -61,6 +72,9 @@
       <MemberSignature Language="C#" Value="OnDemand" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.BitmapCacheOption OnDemand = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCacheOption.OnDemand" />
+      <MemberSignature Language="VB.NET" Value="OnDemand" />
+      <MemberSignature Language="F#" Value="OnDemand = 0" Usage="System.Windows.Media.Imaging.BitmapCacheOption.OnDemand" />
+      <MemberSignature Language="C++ CLI" Value="OnDemand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -69,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapCacheOption</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Creates a memory store for requested data only. The first request loads the image directly; subsequent requests are filled from the cache.</summary>
       </Docs>
@@ -77,6 +92,9 @@
       <MemberSignature Language="C#" Value="OnLoad" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.Imaging.BitmapCacheOption OnLoad = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Imaging.BitmapCacheOption.OnLoad" />
+      <MemberSignature Language="VB.NET" Value="OnLoad" />
+      <MemberSignature Language="F#" Value="OnLoad = 1" Usage="System.Windows.Media.Imaging.BitmapCacheOption.OnLoad" />
+      <MemberSignature Language="C++ CLI" Value="OnLoad" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.Imaging.BitmapCacheOption</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Caches the entire image into memory at load time. All requests for image data are filled from the memory store.</summary>
       </Docs>

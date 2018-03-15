@@ -1,7 +1,10 @@
-<Type Name="CustomValidator" FullName="System.Web.UI.MobileControls.CustomValidator">
+﻿<Type Name="CustomValidator" FullName="System.Web.UI.MobileControls.CustomValidator">
   <TypeSignature Language="C#" Value="public class CustomValidator : System.Web.UI.MobileControls.BaseValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomValidator extends System.Web.UI.MobileControls.BaseValidator" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.CustomValidator" />
+  <TypeSignature Language="VB.NET" Value="Public Class CustomValidator&#xA;Inherits BaseValidator" />
+  <TypeSignature Language="F#" Value="type CustomValidator = class&#xA;    inherit BaseValidator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CustomValidator : System::Web::UI::MobileControls::BaseValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +60,8 @@
       <MemberSignature Language="C#" Value="public CustomValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.CustomValidator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomValidator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -72,6 +77,9 @@
       <MemberSignature Language="C#" Value="protected override bool ControlPropertiesValid ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ControlPropertiesValid() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.CustomValidator.ControlPropertiesValid" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ControlPropertiesValid () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ControlPropertiesValid : unit -&gt; bool" Usage="customValidator.ControlPropertiesValid " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ControlPropertiesValid();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -93,6 +101,9 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.BaseValidator CreateWebValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.BaseValidator CreateWebValidator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.CustomValidator.CreateWebValidator" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateWebValidator () As BaseValidator" />
+      <MemberSignature Language="F#" Value="override this.CreateWebValidator : unit -&gt; System.Web.UI.WebControls.BaseValidator" Usage="customValidator.CreateWebValidator " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::BaseValidator ^ CreateWebValidator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -113,6 +124,9 @@
       <MemberSignature Language="C#" Value="protected override bool EvaluateIsValid ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool EvaluateIsValid() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.CustomValidator.EvaluateIsValid" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function EvaluateIsValid () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.EvaluateIsValid : unit -&gt; bool" Usage="customValidator.EvaluateIsValid " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool EvaluateIsValid();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -134,6 +148,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnServerValidate (string value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnServerValidate(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.CustomValidator.OnServerValidate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnServerValidate (value As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnServerValidate : string -&gt; bool&#xA;override this.OnServerValidate : string -&gt; bool" Usage="customValidator.OnServerValidate value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnServerValidate(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -157,6 +174,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.ServerValidateEventHandler ServerValidate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.ServerValidateEventHandler ServerValidate" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.CustomValidator.ServerValidate" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ServerValidate As ServerValidateEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ServerValidate : System.Web.UI.WebControls.ServerValidateEventHandler " Usage="member this.ServerValidate : System.Web.UI.WebControls.ServerValidateEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::ServerValidateEventHandler ^ ServerValidate;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="Page" FullName="System.Web.UI.Page">
+﻿<Type Name="Page" FullName="System.Web.UI.Page">
   <TypeSignature Language="C#" Value="public class Page : System.Web.UI.TemplateControl, System.Web.IHttpHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Page extends System.Web.UI.TemplateControl implements class System.Web.IHttpHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Page" />
+  <TypeSignature Language="VB.NET" Value="Public Class Page&#xA;Inherits TemplateControl&#xA;Implements IHttpHandler" />
+  <TypeSignature Language="F#" Value="type Page = class&#xA;    inherit TemplateControl&#xA;    interface IHttpHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Page : System::Web::UI::TemplateControl, System::Web::IHttpHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +82,8 @@
       <MemberSignature Language="C#" Value="public Page ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Page();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,9 +103,12 @@
       </Docs>
     </Member>
     <Member MemberName="AddContentTemplate">
-      <MemberSignature Language="C#" Value="protected void AddContentTemplate (string templateName, System.Web.UI.ITemplate template);" />
+      <MemberSignature Language="C#" Value="protected internal void AddContentTemplate (string templateName, System.Web.UI.ITemplate template);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void AddContentTemplate(string templateName, class System.Web.UI.ITemplate template) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.AddContentTemplate(System.String,System.Web.UI.ITemplate)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub AddContentTemplate (templateName As String, template As ITemplate)" />
+      <MemberSignature Language="F#" Value="member this.AddContentTemplate : string * System.Web.UI.ITemplate -&gt; unit" Usage="page.AddContentTemplate (templateName, template)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void AddContentTemplate(System::String ^ templateName, System::Web::UI::ITemplate ^ template);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -128,10 +136,24 @@
         <altmember cref="T:System.Web.UI.WebControls.Content" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddOnPreRenderCompleteAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers beginning and ending event handler delegates for an asynchronous page.</summary>
+        <altmember cref="T:System.Web.UI.MasterPage" />
+        <altmember cref="T:System.Web.UI.WebControls.Content" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddOnPreRenderCompleteAsync">
       <MemberSignature Language="C#" Value="public void AddOnPreRenderCompleteAsync (System.Web.BeginEventHandler beginHandler, System.Web.EndEventHandler endHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddOnPreRenderCompleteAsync(class System.Web.BeginEventHandler beginHandler, class System.Web.EndEventHandler endHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddOnPreRenderCompleteAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler)" />
+      <MemberSignature Language="F#" Value="member this.AddOnPreRenderCompleteAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler -&gt; unit" Usage="page.AddOnPreRenderCompleteAsync (beginHandler, endHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPreRenderCompleteAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -189,6 +211,9 @@
       <MemberSignature Language="C#" Value="public void AddOnPreRenderCompleteAsync (System.Web.BeginEventHandler beginHandler, System.Web.EndEventHandler endHandler, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddOnPreRenderCompleteAsync(class System.Web.BeginEventHandler beginHandler, class System.Web.EndEventHandler endHandler, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.AddOnPreRenderCompleteAsync(System.Web.BeginEventHandler,System.Web.EndEventHandler,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddOnPreRenderCompleteAsync (beginHandler As BeginEventHandler, endHandler As EndEventHandler, state As Object)" />
+      <MemberSignature Language="F#" Value="member this.AddOnPreRenderCompleteAsync : System.Web.BeginEventHandler * System.Web.EndEventHandler * obj -&gt; unit" Usage="page.AddOnPreRenderCompleteAsync (beginHandler, endHandler, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddOnPreRenderCompleteAsync(System::Web::BeginEventHandler ^ beginHandler, System::Web::EndEventHandler ^ endHandler, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -243,9 +268,12 @@
       </Docs>
     </Member>
     <Member MemberName="AddWrappedFileDependencies">
-      <MemberSignature Language="C#" Value="protected void AddWrappedFileDependencies (object virtualFileDependencies);" />
+      <MemberSignature Language="C#" Value="protected internal void AddWrappedFileDependencies (object virtualFileDependencies);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void AddWrappedFileDependencies(object virtualFileDependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.AddWrappedFileDependencies(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub AddWrappedFileDependencies (virtualFileDependencies As Object)" />
+      <MemberSignature Language="F#" Value="member this.AddWrappedFileDependencies : obj -&gt; unit" Usage="page.AddWrappedFileDependencies virtualFileDependencies" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void AddWrappedFileDependencies(System::Object ^ virtualFileDependencies);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -279,6 +307,9 @@
       <MemberSignature Language="C#" Value="public System.Web.HttpApplicationState Application { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpApplicationState Application" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As HttpApplicationState" />
+      <MemberSignature Language="F#" Value="member this.Application : System.Web.HttpApplicationState" Usage="System.Web.UI.Page.Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpApplicationState ^ Application { System::Web::HttpApplicationState ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -289,7 +320,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -314,6 +345,9 @@
       <MemberSignature Language="C#" Value="protected IAsyncResult AspCompatBeginProcessRequest (System.Web.HttpContext context, AsyncCallback cb, object extraData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.IAsyncResult AspCompatBeginProcessRequest(class System.Web.HttpContext context, class System.AsyncCallback cb, object extraData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.AspCompatBeginProcessRequest(System.Web.HttpContext,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function AspCompatBeginProcessRequest (context As HttpContext, cb As AsyncCallback, extraData As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.AspCompatBeginProcessRequest : System.Web.HttpContext * AsyncCallback * obj -&gt; IAsyncResult" Usage="page.AspCompatBeginProcessRequest (context, cb, extraData)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; IAsyncResult ^ AspCompatBeginProcessRequest(System::Web::HttpContext ^ context, AsyncCallback ^ cb, System::Object ^ extraData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -352,6 +386,9 @@
       <MemberSignature Language="C#" Value="protected void AspCompatEndProcessRequest (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AspCompatEndProcessRequest(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.AspCompatEndProcessRequest(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub AspCompatEndProcessRequest (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.AspCompatEndProcessRequest : IAsyncResult -&gt; unit" Usage="page.AspCompatEndProcessRequest result" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AspCompatEndProcessRequest(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -385,6 +422,9 @@
       <MemberSignature Language="C#" Value="protected bool AspCompatMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AspCompatMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.AspCompatMode" />
+      <MemberSignature Language="VB.NET" Value="Protected Property AspCompatMode As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AspCompatMode : bool with get, set" Usage="System.Web.UI.Page.AspCompatMode" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool AspCompatMode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -418,6 +458,9 @@
       <MemberSignature Language="C#" Value="protected bool AsyncMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AsyncMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.AsyncMode" />
+      <MemberSignature Language="VB.NET" Value="Protected Property AsyncMode As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AsyncMode : bool with get, set" Usage="System.Web.UI.Page.AsyncMode" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool AsyncMode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -451,6 +494,9 @@
       <MemberSignature Language="C#" Value="protected IAsyncResult AsyncPageBeginProcessRequest (System.Web.HttpContext context, AsyncCallback callback, object extraData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.IAsyncResult AsyncPageBeginProcessRequest(class System.Web.HttpContext context, class System.AsyncCallback callback, object extraData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.AsyncPageBeginProcessRequest(System.Web.HttpContext,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function AsyncPageBeginProcessRequest (context As HttpContext, callback As AsyncCallback, extraData As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.AsyncPageBeginProcessRequest : System.Web.HttpContext * AsyncCallback * obj -&gt; IAsyncResult" Usage="page.AsyncPageBeginProcessRequest (context, callback, extraData)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; IAsyncResult ^ AsyncPageBeginProcessRequest(System::Web::HttpContext ^ context, AsyncCallback ^ callback, System::Object ^ extraData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -482,6 +528,9 @@
       <MemberSignature Language="C#" Value="protected void AsyncPageEndProcessRequest (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AsyncPageEndProcessRequest(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.AsyncPageEndProcessRequest(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub AsyncPageEndProcessRequest (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.AsyncPageEndProcessRequest : IAsyncResult -&gt; unit" Usage="page.AsyncPageEndProcessRequest result" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AsyncPageEndProcessRequest(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -508,6 +557,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan AsyncTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan AsyncTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.AsyncTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property AsyncTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.AsyncTimeout : TimeSpan with get, set" Usage="System.Web.UI.Page.AsyncTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan AsyncTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -518,7 +570,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
@@ -561,6 +613,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Control AutoPostBackControl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control AutoPostBackControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.AutoPostBackControl" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoPostBackControl As Control" />
+      <MemberSignature Language="F#" Value="member this.AutoPostBackControl : System.Web.UI.Control with get, set" Usage="System.Web.UI.Page.AutoPostBackControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ AutoPostBackControl { System::Web::UI::Control ^ get(); void set(System::Web::UI::Control ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -579,6 +634,9 @@
       <MemberSignature Language="C#" Value="public bool Buffer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Buffer" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Buffer" />
+      <MemberSignature Language="VB.NET" Value="Public Property Buffer As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Buffer : bool with get, set" Usage="System.Web.UI.Page.Buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Buffer { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -589,7 +647,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -619,6 +677,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Caching.Cache Cache { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Caching.Cache Cache" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Cache" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cache As Cache" />
+      <MemberSignature Language="F#" Value="member this.Cache : System.Web.Caching.Cache" Usage="System.Web.UI.Page.Cache" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Caching::Cache ^ Cache { System::Web::Caching::Cache ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -629,7 +690,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -662,6 +723,9 @@
       <MemberSignature Language="C#" Value="public string ClientQueryString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClientQueryString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.ClientQueryString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientQueryString As String" />
+      <MemberSignature Language="F#" Value="member this.ClientQueryString : string" Usage="System.Web.UI.Page.ClientQueryString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClientQueryString { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -687,6 +751,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ClientScriptManager ClientScript { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ClientScriptManager ClientScript" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.ClientScript" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientScript As ClientScriptManager" />
+      <MemberSignature Language="F#" Value="member this.ClientScript : System.Web.UI.ClientScriptManager" Usage="System.Web.UI.Page.ClientScript" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ClientScriptManager ^ ClientScript { System::Web::UI::ClientScriptManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -720,6 +787,9 @@
       <MemberSignature Language="C#" Value="public string ClientTarget { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClientTarget" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.ClientTarget" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientTarget As String" />
+      <MemberSignature Language="F#" Value="member this.ClientTarget : string with get, set" Usage="System.Web.UI.Page.ClientTarget" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClientTarget { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -733,7 +803,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
@@ -787,6 +857,9 @@
       <MemberSignature Language="C#" Value="public int CodePage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CodePage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.CodePage" />
+      <MemberSignature Language="VB.NET" Value="Public Property CodePage As Integer" />
+      <MemberSignature Language="F#" Value="member this.CodePage : int with get, set" Usage="System.Web.UI.Page.CodePage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CodePage { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -797,7 +870,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -824,6 +897,9 @@
       <MemberSignature Language="C#" Value="public string ContentType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="System.Web.UI.Page.ContentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -834,7 +910,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -858,9 +934,12 @@
       </Docs>
     </Member>
     <Member MemberName="Context">
-      <MemberSignature Language="C#" Value="protected override System.Web.HttpContext Context { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Web.HttpContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Context" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property Context As HttpContext" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.UI.Page.Context" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -892,9 +971,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateHtmlTextWriter">
-      <MemberSignature Language="C#" Value="protected virtual System.Web.UI.HtmlTextWriter CreateHtmlTextWriter (System.IO.TextWriter tw);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Web.UI.HtmlTextWriter CreateHtmlTextWriter (System.IO.TextWriter tw);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Web.UI.HtmlTextWriter CreateHtmlTextWriter(class System.IO.TextWriter tw) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.CreateHtmlTextWriter(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateHtmlTextWriter (tw As TextWriter) As HtmlTextWriter" />
+      <MemberSignature Language="F#" Value="abstract member CreateHtmlTextWriter : System.IO.TextWriter -&gt; System.Web.UI.HtmlTextWriter&#xA;override this.CreateHtmlTextWriter : System.IO.TextWriter -&gt; System.Web.UI.HtmlTextWriter" Usage="page.CreateHtmlTextWriter tw" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Web::UI::HtmlTextWriter ^ CreateHtmlTextWriter(System::IO::TextWriter ^ tw);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -942,6 +1024,9 @@
       <MemberSignature Language="C#" Value="public static System.Web.UI.HtmlTextWriter CreateHtmlTextWriterFromType (System.IO.TextWriter tw, Type writerType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.HtmlTextWriter CreateHtmlTextWriterFromType(class System.IO.TextWriter tw, class System.Type writerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.CreateHtmlTextWriterFromType(System.IO.TextWriter,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateHtmlTextWriterFromType (tw As TextWriter, writerType As Type) As HtmlTextWriter" />
+      <MemberSignature Language="F#" Value="static member CreateHtmlTextWriterFromType : System.IO.TextWriter * Type -&gt; System.Web.UI.HtmlTextWriter" Usage="System.Web.UI.Page.CreateHtmlTextWriterFromType (tw, writerType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::HtmlTextWriter ^ CreateHtmlTextWriterFromType(System::IO::TextWriter ^ tw, Type ^ writerType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -976,6 +1061,9 @@
       <MemberSignature Language="C#" Value="public string Culture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Culture" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public Property Culture As String" />
+      <MemberSignature Language="F#" Value="member this.Culture : string with get, set" Usage="System.Web.UI.Page.Culture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Culture { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -986,7 +1074,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
@@ -1017,6 +1105,9 @@
       <MemberSignature Language="C#" Value="public void DesignerInitialize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DesignerInitialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.DesignerInitialize" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DesignerInitialize ()" />
+      <MemberSignature Language="F#" Value="member this.DesignerInitialize : unit -&gt; unit" Usage="page.DesignerInitialize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DesignerInitialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1038,9 +1129,12 @@
       </Docs>
     </Member>
     <Member MemberName="DeterminePostBackMode">
-      <MemberSignature Language="C#" Value="protected virtual System.Collections.Specialized.NameValueCollection DeterminePostBackMode ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Collections.Specialized.NameValueCollection DeterminePostBackMode ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Collections.Specialized.NameValueCollection DeterminePostBackMode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.DeterminePostBackMode" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function DeterminePostBackMode () As NameValueCollection" />
+      <MemberSignature Language="F#" Value="abstract member DeterminePostBackMode : unit -&gt; System.Collections.Specialized.NameValueCollection&#xA;override this.DeterminePostBackMode : unit -&gt; System.Collections.Specialized.NameValueCollection" Usage="page.DeterminePostBackMode " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Collections::Specialized::NameValueCollection ^ DeterminePostBackMode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1071,9 +1165,12 @@
       </Docs>
     </Member>
     <Member MemberName="DeterminePostBackModeUnvalidated">
-      <MemberSignature Language="C#" Value="protected virtual System.Collections.Specialized.NameValueCollection DeterminePostBackModeUnvalidated ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Collections.Specialized.NameValueCollection DeterminePostBackModeUnvalidated ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Collections.Specialized.NameValueCollection DeterminePostBackModeUnvalidated() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.DeterminePostBackModeUnvalidated" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function DeterminePostBackModeUnvalidated () As NameValueCollection" />
+      <MemberSignature Language="F#" Value="abstract member DeterminePostBackModeUnvalidated : unit -&gt; System.Collections.Specialized.NameValueCollection&#xA;override this.DeterminePostBackModeUnvalidated : unit -&gt; System.Collections.Specialized.NameValueCollection" Usage="page.DeterminePostBackModeUnvalidated " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Collections::Specialized::NameValueCollection ^ DeterminePostBackModeUnvalidated();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1105,6 +1202,9 @@
       <MemberSignature Language="C#" Value="public virtual bool EnableEventValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableEventValidation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.EnableEventValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EnableEventValidation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableEventValidation : bool with get, set" Usage="System.Web.UI.Page.EnableEventValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableEventValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1118,7 +1218,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -1155,6 +1255,9 @@
       <MemberSignature Language="C#" Value="public override bool EnableViewState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.EnableViewState" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableViewState As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableViewState : bool with get, set" Usage="System.Web.UI.Page.EnableViewState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableViewState { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1200,6 +1303,9 @@
       <MemberSignature Language="C#" Value="public bool EnableViewStateMac { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableViewStateMac" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.EnableViewStateMac" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableViewStateMac As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableViewStateMac : bool with get, set" Usage="System.Web.UI.Page.EnableViewStateMac" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableViewStateMac { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1210,7 +1316,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -1243,6 +1349,9 @@
       <MemberSignature Language="C#" Value="public string ErrorPage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorPage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.ErrorPage" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorPage As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorPage : string with get, set" Usage="System.Web.UI.Page.ErrorPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorPage { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1256,7 +1365,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1280,6 +1389,9 @@
       <MemberSignature Language="C#" Value="public void ExecuteRegisteredAsyncTasks ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExecuteRegisteredAsyncTasks() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.ExecuteRegisteredAsyncTasks" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExecuteRegisteredAsyncTasks ()" />
+      <MemberSignature Language="F#" Value="member this.ExecuteRegisteredAsyncTasks : unit -&gt; unit" Usage="page.ExecuteRegisteredAsyncTasks " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExecuteRegisteredAsyncTasks();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1324,6 +1436,9 @@
       <MemberSignature Language="C#" Value="protected System.Collections.ArrayList FileDependencies { set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList FileDependencies" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.FileDependencies" />
+      <MemberSignature Language="VB.NET" Value="Protected Property FileDependencies As ArrayList" />
+      <MemberSignature Language="F#" Value="member this.FileDependencies : System.Collections.ArrayList" Usage="System.Web.UI.Page.FileDependencies" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::ArrayList ^ FileDependencies {  void set(System::Collections::ArrayList ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1361,6 +1476,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Control FindControl (string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.Control FindControl(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.FindControl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function FindControl (id As String) As Control" />
+      <MemberSignature Language="F#" Value="override this.FindControl : string -&gt; System.Web.UI.Control" Usage="page.FindControl id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::Control ^ FindControl(System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1399,6 +1517,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.HtmlControls.HtmlForm Form { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.HtmlControls.HtmlForm Form" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Form" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Form As HtmlForm" />
+      <MemberSignature Language="F#" Value="member this.Form : System.Web.UI.HtmlControls.HtmlForm" Usage="System.Web.UI.Page.Form" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::HtmlControls::HtmlForm ^ Form { System::Web::UI::HtmlControls::HtmlForm ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1425,6 +1546,9 @@
       <MemberSignature Language="C#" Value="protected override void FrameworkInitialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void FrameworkInitialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.FrameworkInitialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub FrameworkInitialize ()" />
+      <MemberSignature Language="F#" Value="override this.FrameworkInitialize : unit -&gt; unit" Usage="page.FrameworkInitialize " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void FrameworkInitialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1451,6 +1575,9 @@
       <MemberSignature Language="C#" Value="public object GetDataItem ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetDataItem() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.GetDataItem" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDataItem () As Object" />
+      <MemberSignature Language="F#" Value="member this.GetDataItem : unit -&gt; obj" Usage="page.GetDataItem " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetDataItem();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1471,6 +1598,8 @@
       <MemberSignature Language="C#" Value="public string GetPostBackClientEvent (System.Web.UI.Control control, string argument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackClientEvent(class System.Web.UI.Control control, string argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.GetPostBackClientEvent(System.Web.UI.Control,System.String)" />
+      <MemberSignature Language="F#" Value="member this.GetPostBackClientEvent : System.Web.UI.Control * string -&gt; string" Usage="page.GetPostBackClientEvent (control, argument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPostBackClientEvent(System::Web::UI::Control ^ control, System::String ^ argument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1512,6 +1641,8 @@
       <MemberSignature Language="C#" Value="public string GetPostBackClientHyperlink (System.Web.UI.Control control, string argument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackClientHyperlink(class System.Web.UI.Control control, string argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.GetPostBackClientHyperlink(System.Web.UI.Control,System.String)" />
+      <MemberSignature Language="F#" Value="member this.GetPostBackClientHyperlink : System.Web.UI.Control * string -&gt; string" Usage="page.GetPostBackClientHyperlink (control, argument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPostBackClientHyperlink(System::Web::UI::Control ^ control, System::String ^ argument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1549,10 +1680,23 @@
         <altmember cref="M:System.Web.UI.ClientScriptManager.GetPostBackClientHyperlink(System.Web.UI.Control,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPostBackEventReference">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string that can be used in a client event to cause postback to the server. This method has been deprecated. Use the <see cref="Overload:System.Web.UI.ClientScriptManager.GetPostBackEventReference" /> method in the <see cref="T:System.Web.UI.ClientScriptManager" /> class instead.</summary>
+        <altmember cref="T:System.Web.UI.ClientScriptManager" />
+        <altmember cref="M:System.Web.UI.ClientScriptManager.GetPostBackClientHyperlink(System.Web.UI.Control,System.String)" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetPostBackEventReference">
       <MemberSignature Language="C#" Value="public string GetPostBackEventReference (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackEventReference(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.GetPostBackEventReference(System.Web.UI.Control)" />
+      <MemberSignature Language="F#" Value="member this.GetPostBackEventReference : System.Web.UI.Control -&gt; string" Usage="page.GetPostBackEventReference control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPostBackEventReference(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1597,6 +1741,8 @@
       <MemberSignature Language="C#" Value="public string GetPostBackEventReference (System.Web.UI.Control control, string argument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetPostBackEventReference(class System.Web.UI.Control control, string argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.GetPostBackEventReference(System.Web.UI.Control,System.String)" />
+      <MemberSignature Language="F#" Value="member this.GetPostBackEventReference : System.Web.UI.Control * string -&gt; string" Usage="page.GetPostBackEventReference (control, argument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPostBackEventReference(System::Web::UI::Control ^ control, System::String ^ argument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1643,6 +1789,9 @@
       <MemberSignature Language="C#" Value="public virtual int GetTypeHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetTypeHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.GetTypeHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTypeHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeHashCode : unit -&gt; int&#xA;override this.GetTypeHashCode : unit -&gt; int" Usage="page.GetTypeHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetTypeHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1674,6 +1823,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ValidatorCollection GetValidators (string validationGroup);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.ValidatorCollection GetValidators(string validationGroup) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.GetValidators(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetValidators (validationGroup As String) As ValidatorCollection" />
+      <MemberSignature Language="F#" Value="member this.GetValidators : string -&gt; System.Web.UI.ValidatorCollection" Usage="page.GetValidators validationGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::ValidatorCollection ^ GetValidators(System::String ^ validationGroup);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1715,6 +1867,9 @@
       <MemberSignature Language="C#" Value="protected object GetWrappedFileDependencies (string[] virtualFileDependencies);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object GetWrappedFileDependencies(string[] virtualFileDependencies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.GetWrappedFileDependencies(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetWrappedFileDependencies (virtualFileDependencies As String()) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetWrappedFileDependencies : string[] -&gt; obj" Usage="page.GetWrappedFileDependencies virtualFileDependencies" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ GetWrappedFileDependencies(cli::array &lt;System::String ^&gt; ^ virtualFileDependencies);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1749,6 +1904,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.HtmlControls.HtmlHead Header { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.HtmlControls.HtmlHead Header" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Header" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Header As HtmlHead" />
+      <MemberSignature Language="F#" Value="member this.Header : System.Web.UI.HtmlControls.HtmlHead" Usage="System.Web.UI.Page.Header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::HtmlControls::HtmlHead ^ Header { System::Web::UI::HtmlControls::HtmlHead ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1759,7 +1917,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1795,6 +1953,9 @@
       <MemberSignature Language="C#" Value="public override string ID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.ID" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ID As String" />
+      <MemberSignature Language="F#" Value="member this.ID : string with get, set" Usage="System.Web.UI.Page.ID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1822,6 +1983,9 @@
       <MemberSignature Language="C#" Value="public virtual char IdSeparator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance char IdSeparator" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.IdSeparator" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IdSeparator As Char" />
+      <MemberSignature Language="F#" Value="member this.IdSeparator : char" Usage="System.Web.UI.Page.IdSeparator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property char IdSeparator { char get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1832,7 +1996,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -1852,6 +2016,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler InitComplete;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler InitComplete" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Page.InitComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event InitComplete As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.InitComplete : EventHandler " Usage="member this.InitComplete : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ InitComplete;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1886,6 +2053,9 @@
       <MemberSignature Language="C#" Value="protected virtual void InitializeCulture ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitializeCulture() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.InitializeCulture" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InitializeCulture ()" />
+      <MemberSignature Language="F#" Value="abstract member InitializeCulture : unit -&gt; unit&#xA;override this.InitializeCulture : unit -&gt; unit" Usage="page.InitializeCulture " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitializeCulture();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1933,9 +2103,12 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="InitOutputCache">
-      <MemberSignature Language="C#" Value="protected virtual void InitOutputCache (System.Web.UI.OutputCacheParameters cacheSettings);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void InitOutputCache (System.Web.UI.OutputCacheParameters cacheSettings);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void InitOutputCache(class System.Web.UI.OutputCacheParameters cacheSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.InitOutputCache(System.Web.UI.OutputCacheParameters)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub InitOutputCache (cacheSettings As OutputCacheParameters)" />
+      <MemberSignature Language="F#" Value="abstract member InitOutputCache : System.Web.UI.OutputCacheParameters -&gt; unit&#xA;override this.InitOutputCache : System.Web.UI.OutputCacheParameters -&gt; unit" Usage="page.InitOutputCache cacheSettings" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void InitOutputCache(System::Web::UI::OutputCacheParameters ^ cacheSettings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1976,6 +2149,9 @@
       <MemberSignature Language="C#" Value="protected virtual void InitOutputCache (int duration, string varyByHeader, string varyByCustom, System.Web.UI.OutputCacheLocation location, string varyByParam);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitOutputCache(int32 duration, string varyByHeader, string varyByCustom, valuetype System.Web.UI.OutputCacheLocation location, string varyByParam) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.InitOutputCache(System.Int32,System.String,System.String,System.Web.UI.OutputCacheLocation,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InitOutputCache (duration As Integer, varyByHeader As String, varyByCustom As String, location As OutputCacheLocation, varyByParam As String)" />
+      <MemberSignature Language="F#" Value="abstract member InitOutputCache : int * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit&#xA;override this.InitOutputCache : int * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit" Usage="page.InitOutputCache (duration, varyByHeader, varyByCustom, location, varyByParam)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitOutputCache(int duration, System::String ^ varyByHeader, System::String ^ varyByCustom, System::Web::UI::OutputCacheLocation location, System::String ^ varyByParam);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2019,6 +2195,9 @@
       <MemberSignature Language="C#" Value="protected virtual void InitOutputCache (int duration, string varyByContentEncoding, string varyByHeader, string varyByCustom, System.Web.UI.OutputCacheLocation location, string varyByParam);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitOutputCache(int32 duration, string varyByContentEncoding, string varyByHeader, string varyByCustom, valuetype System.Web.UI.OutputCacheLocation location, string varyByParam) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.InitOutputCache(System.Int32,System.String,System.String,System.String,System.Web.UI.OutputCacheLocation,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InitOutputCache (duration As Integer, varyByContentEncoding As String, varyByHeader As String, varyByCustom As String, location As OutputCacheLocation, varyByParam As String)" />
+      <MemberSignature Language="F#" Value="abstract member InitOutputCache : int * string * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit&#xA;override this.InitOutputCache : int * string * string * string * System.Web.UI.OutputCacheLocation * string -&gt; unit" Usage="page.InitOutputCache (duration, varyByContentEncoding, varyByHeader, varyByCustom, location, varyByParam)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitOutputCache(int duration, System::String ^ varyByContentEncoding, System::String ^ varyByHeader, System::String ^ varyByCustom, System::Web::UI::OutputCacheLocation location, System::String ^ varyByParam);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2064,6 +2243,9 @@
       <MemberSignature Language="C#" Value="public bool IsAsync { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAsync" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.IsAsync" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAsync As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAsync : bool" Usage="System.Web.UI.Page.IsAsync" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAsync { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2090,6 +2272,9 @@
       <MemberSignature Language="C#" Value="public bool IsCallback { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCallback" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.IsCallback" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCallback As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCallback : bool" Usage="System.Web.UI.Page.IsCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCallback { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2100,7 +2285,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2124,6 +2309,9 @@
       <MemberSignature Language="C#" Value="public bool IsClientScriptBlockRegistered (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsClientScriptBlockRegistered(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.IsClientScriptBlockRegistered(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsClientScriptBlockRegistered (key As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsClientScriptBlockRegistered : string -&gt; bool" Usage="page.IsClientScriptBlockRegistered key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsClientScriptBlockRegistered(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2170,6 +2358,9 @@
       <MemberSignature Language="C#" Value="public bool IsCrossPagePostBack { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCrossPagePostBack" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.IsCrossPagePostBack" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCrossPagePostBack As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCrossPagePostBack : bool" Usage="System.Web.UI.Page.IsCrossPagePostBack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCrossPagePostBack { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2180,7 +2371,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2207,6 +2398,9 @@
       <MemberSignature Language="C#" Value="public bool IsPostBack { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPostBack" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.IsPostBack" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPostBack As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPostBack : bool" Usage="System.Web.UI.Page.IsPostBack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPostBack { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2217,7 +2411,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2253,6 +2447,9 @@
       <MemberSignature Language="C#" Value="public bool IsPostBackEventControlRegistered { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPostBackEventControlRegistered" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.IsPostBackEventControlRegistered" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPostBackEventControlRegistered As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPostBackEventControlRegistered : bool" Usage="System.Web.UI.Page.IsPostBackEventControlRegistered" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPostBackEventControlRegistered { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2272,7 +2469,13 @@
       <MemberSignature Language="C#" Value="public bool IsReusable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReusable" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.IsReusable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReusable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReusable : bool" Usage="System.Web.UI.Page.IsReusable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReusable { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.IHttpHandler.IsReusable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2300,6 +2503,9 @@
       <MemberSignature Language="C#" Value="public bool IsStartupScriptRegistered (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsStartupScriptRegistered(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.IsStartupScriptRegistered(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsStartupScriptRegistered (key As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsStartupScriptRegistered : string -&gt; bool" Usage="page.IsStartupScriptRegistered key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsStartupScriptRegistered(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2346,6 +2552,9 @@
       <MemberSignature Language="C#" Value="public bool IsValid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.IsValid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool" Usage="System.Web.UI.Page.IsValid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2356,7 +2565,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2394,6 +2603,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Items" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As IDictionary" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Collections.IDictionary" Usage="System.Web.UI.Page.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ Items { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2426,6 +2638,9 @@
       <MemberSignature Language="C#" Value="public int LCID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LCID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.LCID" />
+      <MemberSignature Language="VB.NET" Value="Public Property LCID As Integer" />
+      <MemberSignature Language="F#" Value="member this.LCID : int with get, set" Usage="System.Web.UI.Page.LCID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LCID { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2436,7 +2651,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -2465,6 +2680,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler LoadComplete;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LoadComplete" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Page.LoadComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LoadComplete As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.LoadComplete : EventHandler " Usage="member this.LoadComplete : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LoadComplete;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2496,9 +2714,12 @@
       </Docs>
     </Member>
     <Member MemberName="LoadPageStateFromPersistenceMedium">
-      <MemberSignature Language="C#" Value="protected virtual object LoadPageStateFromPersistenceMedium ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual object LoadPageStateFromPersistenceMedium ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance object LoadPageStateFromPersistenceMedium() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.LoadPageStateFromPersistenceMedium" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function LoadPageStateFromPersistenceMedium () As Object" />
+      <MemberSignature Language="F#" Value="abstract member LoadPageStateFromPersistenceMedium : unit -&gt; obj&#xA;override this.LoadPageStateFromPersistenceMedium : unit -&gt; obj" Usage="page.LoadPageStateFromPersistenceMedium " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Object ^ LoadPageStateFromPersistenceMedium();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2539,6 +2760,9 @@
       <MemberSignature Language="C#" Value="public bool MaintainScrollPositionOnPostBack { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MaintainScrollPositionOnPostBack" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.MaintainScrollPositionOnPostBack" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaintainScrollPositionOnPostBack As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MaintainScrollPositionOnPostBack : bool with get, set" Usage="System.Web.UI.Page.MaintainScrollPositionOnPostBack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MaintainScrollPositionOnPostBack { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2549,7 +2773,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2577,6 +2801,9 @@
       <MemberSignature Language="C#" Value="public string MapPath (string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string MapPath(string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.MapPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MapPath (virtualPath As String) As String" />
+      <MemberSignature Language="F#" Value="member this.MapPath : string -&gt; string" Usage="page.MapPath virtualPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ MapPath(System::String ^ virtualPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2617,6 +2844,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MasterPage Master { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MasterPage Master" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Master" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Master As MasterPage" />
+      <MemberSignature Language="F#" Value="member this.Master : System.Web.UI.MasterPage" Usage="System.Web.UI.Page.Master" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MasterPage ^ Master { System::Web::UI::MasterPage ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2627,7 +2857,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2653,6 +2883,9 @@
       <MemberSignature Language="C#" Value="public virtual string MasterPageFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MasterPageFile" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.MasterPageFile" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property MasterPageFile As String" />
+      <MemberSignature Language="F#" Value="member this.MasterPageFile : string with get, set" Usage="System.Web.UI.Page.MasterPageFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MasterPageFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2692,6 +2925,9 @@
       <MemberSignature Language="C#" Value="public int MaxPageStateFieldLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPageStateFieldLength" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.MaxPageStateFieldLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxPageStateFieldLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxPageStateFieldLength : int with get, set" Usage="System.Web.UI.Page.MaxPageStateFieldLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPageStateFieldLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2702,7 +2938,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -2734,6 +2970,9 @@
       <MemberSignature Language="C#" Value="public string MetaDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MetaDescription" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.MetaDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property MetaDescription As String" />
+      <MemberSignature Language="F#" Value="member this.MetaDescription : string with get, set" Usage="System.Web.UI.Page.MetaDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MetaDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2744,7 +2983,7 @@
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
@@ -2783,6 +3022,9 @@
       <MemberSignature Language="C#" Value="public string MetaKeywords { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MetaKeywords" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.MetaKeywords" />
+      <MemberSignature Language="VB.NET" Value="Public Property MetaKeywords As String" />
+      <MemberSignature Language="F#" Value="member this.MetaKeywords : string with get, set" Usage="System.Web.UI.Page.MetaKeywords" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MetaKeywords { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2793,7 +3035,7 @@
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
@@ -2832,6 +3074,9 @@
       <MemberSignature Language="C#" Value="public System.Web.ModelBinding.ModelBindingExecutionContext ModelBindingExecutionContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ModelBinding.ModelBindingExecutionContext ModelBindingExecutionContext" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.ModelBindingExecutionContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelBindingExecutionContext As ModelBindingExecutionContext" />
+      <MemberSignature Language="F#" Value="member this.ModelBindingExecutionContext : System.Web.ModelBinding.ModelBindingExecutionContext" Usage="System.Web.UI.Page.ModelBindingExecutionContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ModelBinding::ModelBindingExecutionContext ^ ModelBindingExecutionContext { System::Web::ModelBinding::ModelBindingExecutionContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2850,6 +3095,9 @@
       <MemberSignature Language="C#" Value="public System.Web.ModelBinding.ModelStateDictionary ModelState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ModelBinding.ModelStateDictionary ModelState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.ModelState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelState As ModelStateDictionary" />
+      <MemberSignature Language="F#" Value="member this.ModelState : System.Web.ModelBinding.ModelStateDictionary" Usage="System.Web.UI.Page.ModelState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ModelBinding::ModelStateDictionary ^ ModelState { System::Web::ModelBinding::ModelStateDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2872,9 +3120,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnInit">
-      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="page.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2912,6 +3163,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnInitComplete (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnInitComplete(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.OnInitComplete(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnInitComplete (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnInitComplete : EventArgs -&gt; unit&#xA;override this.OnInitComplete : EventArgs -&gt; unit" Usage="page.OnInitComplete e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInitComplete(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2949,6 +3203,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnLoadComplete (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLoadComplete(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.OnLoadComplete(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoadComplete (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnLoadComplete : EventArgs -&gt; unit&#xA;override this.OnLoadComplete : EventArgs -&gt; unit" Usage="page.OnLoadComplete e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoadComplete(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2984,6 +3241,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPreInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPreInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.OnPreInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPreInit (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPreInit : EventArgs -&gt; unit&#xA;override this.OnPreInit : EventArgs -&gt; unit" Usage="page.OnPreInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPreInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3021,6 +3281,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPreLoad (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPreLoad(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.OnPreLoad(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPreLoad (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPreLoad : EventArgs -&gt; unit&#xA;override this.OnPreLoad : EventArgs -&gt; unit" Usage="page.OnPreLoad e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPreLoad(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3058,6 +3321,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPreRenderComplete (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPreRenderComplete(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.OnPreRenderComplete(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPreRenderComplete (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPreRenderComplete : EventArgs -&gt; unit&#xA;override this.OnPreRenderComplete : EventArgs -&gt; unit" Usage="page.OnPreRenderComplete e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPreRenderComplete(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3095,6 +3361,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSaveStateComplete (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSaveStateComplete(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.OnSaveStateComplete(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSaveStateComplete (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSaveStateComplete : EventArgs -&gt; unit&#xA;override this.OnSaveStateComplete : EventArgs -&gt; unit" Usage="page.OnSaveStateComplete e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSaveStateComplete(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3133,6 +3402,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Adapters.PageAdapter PageAdapter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Adapters.PageAdapter PageAdapter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.PageAdapter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageAdapter As PageAdapter" />
+      <MemberSignature Language="F#" Value="member this.PageAdapter : System.Web.UI.Adapters.PageAdapter" Usage="System.Web.UI.Page.PageAdapter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Adapters::PageAdapter ^ PageAdapter { System::Web::UI::Adapters::PageAdapter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3160,6 +3432,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.PageStatePersister PageStatePersister { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.PageStatePersister PageStatePersister" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.PageStatePersister" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property PageStatePersister As PageStatePersister" />
+      <MemberSignature Language="F#" Value="member this.PageStatePersister : System.Web.UI.PageStatePersister" Usage="System.Web.UI.Page.PageStatePersister" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::PageStatePersister ^ PageStatePersister { System::Web::UI::PageStatePersister ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3188,6 +3463,9 @@
       <MemberSignature Language="C#" Value="public const string postEventArgumentID;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string postEventArgumentID" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Page.postEventArgumentID" />
+      <MemberSignature Language="VB.NET" Value="Public Const postEventArgumentID As String " />
+      <MemberSignature Language="F#" Value="val mutable postEventArgumentID : string" Usage="System.Web.UI.Page.postEventArgumentID" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ postEventArgumentID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3211,6 +3489,9 @@
       <MemberSignature Language="C#" Value="public const string postEventSourceID;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string postEventSourceID" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Page.postEventSourceID" />
+      <MemberSignature Language="VB.NET" Value="Public Const postEventSourceID As String " />
+      <MemberSignature Language="F#" Value="val mutable postEventSourceID : string" Usage="System.Web.UI.Page.postEventSourceID" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ postEventSourceID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3234,6 +3515,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler PreInit;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PreInit" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Page.PreInit" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PreInit As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.PreInit : EventHandler " Usage="member this.PreInit : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PreInit;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3264,6 +3548,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler PreLoad;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PreLoad" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Page.PreLoad" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PreLoad As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.PreLoad : EventHandler " Usage="member this.PreLoad : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PreLoad;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3296,6 +3583,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler PreRenderComplete;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PreRenderComplete" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Page.PreRenderComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PreRenderComplete As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.PreRenderComplete : EventHandler " Usage="member this.PreRenderComplete : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PreRenderComplete;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3332,6 +3622,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Page PreviousPage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Page PreviousPage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.PreviousPage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousPage As Page" />
+      <MemberSignature Language="F#" Value="member this.PreviousPage : System.Web.UI.Page" Usage="System.Web.UI.Page.PreviousPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Page ^ PreviousPage { System::Web::UI::Page ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3342,7 +3635,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3383,7 +3676,13 @@
       <MemberSignature Language="C#" Value="public virtual void ProcessRequest (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessRequest(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.ProcessRequest(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ProcessRequest (context As HttpContext)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : System.Web.HttpContext -&gt; unit&#xA;override this.ProcessRequest : System.Web.HttpContext -&gt; unit" Usage="page.ProcessRequest context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessRequest(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpHandler.ProcessRequest(System.Web.HttpContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3420,6 +3719,9 @@
       <MemberSignature Language="C#" Value="protected virtual void RaisePostBackEvent (System.Web.UI.IPostBackEventHandler sourceControl, string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostBackEvent(class System.Web.UI.IPostBackEventHandler sourceControl, string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.RaisePostBackEvent(System.Web.UI.IPostBackEventHandler,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (sourceControl As IPostBackEventHandler, eventArgument As String)" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : System.Web.UI.IPostBackEventHandler * string -&gt; unit&#xA;override this.RaisePostBackEvent : System.Web.UI.IPostBackEventHandler * string -&gt; unit" Usage="page.RaisePostBackEvent (sourceControl, eventArgument)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::Web::UI::IPostBackEventHandler ^ sourceControl, System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3464,6 +3766,9 @@
       <MemberSignature Language="C#" Value="public void RegisterArrayDeclaration (string arrayName, string arrayValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterArrayDeclaration(string arrayName, string arrayValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.RegisterArrayDeclaration(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterArrayDeclaration (arrayName As String, arrayValue As String)" />
+      <MemberSignature Language="F#" Value="member this.RegisterArrayDeclaration : string * string -&gt; unit" Usage="page.RegisterArrayDeclaration (arrayName, arrayValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterArrayDeclaration(System::String ^ arrayName, System::String ^ arrayValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3513,6 +3818,9 @@
       <MemberSignature Language="C#" Value="public void RegisterAsyncTask (System.Web.UI.PageAsyncTask task);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterAsyncTask(class System.Web.UI.PageAsyncTask task) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.RegisterAsyncTask(System.Web.UI.PageAsyncTask)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterAsyncTask (task As PageAsyncTask)" />
+      <MemberSignature Language="F#" Value="member this.RegisterAsyncTask : System.Web.UI.PageAsyncTask -&gt; unit" Usage="page.RegisterAsyncTask task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterAsyncTask(System::Web::UI::PageAsyncTask ^ task);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3557,6 +3865,9 @@
       <MemberSignature Language="C#" Value="public virtual void RegisterClientScriptBlock (string key, string script);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterClientScriptBlock(string key, string script) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.RegisterClientScriptBlock(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RegisterClientScriptBlock (key As String, script As String)" />
+      <MemberSignature Language="F#" Value="abstract member RegisterClientScriptBlock : string * string -&gt; unit&#xA;override this.RegisterClientScriptBlock : string * string -&gt; unit" Usage="page.RegisterClientScriptBlock (key, script)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterClientScriptBlock(System::String ^ key, System::String ^ script);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3612,6 +3923,9 @@
       <MemberSignature Language="C#" Value="public virtual void RegisterHiddenField (string hiddenFieldName, string hiddenFieldInitialValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterHiddenField(string hiddenFieldName, string hiddenFieldInitialValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.RegisterHiddenField(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RegisterHiddenField (hiddenFieldName As String, hiddenFieldInitialValue As String)" />
+      <MemberSignature Language="F#" Value="abstract member RegisterHiddenField : string * string -&gt; unit&#xA;override this.RegisterHiddenField : string * string -&gt; unit" Usage="page.RegisterHiddenField (hiddenFieldName, hiddenFieldInitialValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterHiddenField(System::String ^ hiddenFieldName, System::String ^ hiddenFieldInitialValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3662,6 +3976,9 @@
       <MemberSignature Language="C#" Value="public void RegisterOnSubmitStatement (string key, string script);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterOnSubmitStatement(string key, string script) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.RegisterOnSubmitStatement(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterOnSubmitStatement (key As String, script As String)" />
+      <MemberSignature Language="F#" Value="member this.RegisterOnSubmitStatement : string * string -&gt; unit" Usage="page.RegisterOnSubmitStatement (key, script)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterOnSubmitStatement(System::String ^ key, System::String ^ script);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3712,6 +4029,8 @@
       <MemberSignature Language="C#" Value="public void RegisterRequiresControlState (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterRequiresControlState(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.RegisterRequiresControlState(System.Web.UI.Control)" />
+      <MemberSignature Language="F#" Value="member this.RegisterRequiresControlState : System.Web.UI.Control -&gt; unit" Usage="page.RegisterRequiresControlState control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterRequiresControlState(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3756,6 +4075,8 @@
       <MemberSignature Language="C#" Value="public void RegisterRequiresPostBack (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterRequiresPostBack(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.RegisterRequiresPostBack(System.Web.UI.Control)" />
+      <MemberSignature Language="F#" Value="member this.RegisterRequiresPostBack : System.Web.UI.Control -&gt; unit" Usage="page.RegisterRequiresPostBack control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterRequiresPostBack(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3805,6 +4126,9 @@
       <MemberSignature Language="C#" Value="public virtual void RegisterRequiresRaiseEvent (System.Web.UI.IPostBackEventHandler control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterRequiresRaiseEvent(class System.Web.UI.IPostBackEventHandler control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.RegisterRequiresRaiseEvent(System.Web.UI.IPostBackEventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RegisterRequiresRaiseEvent (control As IPostBackEventHandler)" />
+      <MemberSignature Language="F#" Value="abstract member RegisterRequiresRaiseEvent : System.Web.UI.IPostBackEventHandler -&gt; unit&#xA;override this.RegisterRequiresRaiseEvent : System.Web.UI.IPostBackEventHandler -&gt; unit" Usage="page.RegisterRequiresRaiseEvent control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterRequiresRaiseEvent(System::Web::UI::IPostBackEventHandler ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3847,6 +4171,9 @@
       <MemberSignature Language="C#" Value="public void RegisterRequiresViewStateEncryption ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterRequiresViewStateEncryption() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.RegisterRequiresViewStateEncryption" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterRequiresViewStateEncryption ()" />
+      <MemberSignature Language="F#" Value="member this.RegisterRequiresViewStateEncryption : unit -&gt; unit" Usage="page.RegisterRequiresViewStateEncryption " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterRequiresViewStateEncryption();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3887,6 +4214,9 @@
       <MemberSignature Language="C#" Value="public virtual void RegisterStartupScript (string key, string script);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterStartupScript(string key, string script) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.RegisterStartupScript(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RegisterStartupScript (key As String, script As String)" />
+      <MemberSignature Language="F#" Value="abstract member RegisterStartupScript : string * string -&gt; unit&#xA;override this.RegisterStartupScript : string * string -&gt; unit" Usage="page.RegisterStartupScript (key, script)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterStartupScript(System::String ^ key, System::String ^ script);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3943,6 +4273,9 @@
       <MemberSignature Language="C#" Value="public void RegisterViewStateHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterViewStateHandler() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.RegisterViewStateHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterViewStateHandler ()" />
+      <MemberSignature Language="F#" Value="member this.RegisterViewStateHandler : unit -&gt; unit" Usage="page.RegisterViewStateHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterViewStateHandler();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3980,9 +4313,12 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="page.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4013,6 +4349,9 @@
       <MemberSignature Language="C#" Value="public System.Web.HttpRequest Request { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpRequest Request" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Request" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Request As HttpRequest" />
+      <MemberSignature Language="F#" Value="member this.Request : System.Web.HttpRequest" Usage="System.Web.UI.Page.Request" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpRequest ^ Request { System::Web::HttpRequest ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4023,7 +4362,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4058,6 +4397,8 @@
       <MemberSignature Language="C#" Value="public bool RequiresControlState (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RequiresControlState(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.RequiresControlState(System.Web.UI.Control)" />
+      <MemberSignature Language="F#" Value="member this.RequiresControlState : System.Web.UI.Control -&gt; bool" Usage="page.RequiresControlState control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RequiresControlState(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4094,6 +4435,9 @@
       <MemberSignature Language="C#" Value="public System.Web.HttpResponse Response { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpResponse Response" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Response" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Response As HttpResponse" />
+      <MemberSignature Language="F#" Value="member this.Response : System.Web.HttpResponse" Usage="System.Web.UI.Page.Response" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpResponse ^ Response { System::Web::HttpResponse ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4104,7 +4448,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4132,6 +4476,9 @@
       <MemberSignature Language="C#" Value="public string ResponseEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResponseEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.ResponseEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResponseEncoding As String" />
+      <MemberSignature Language="F#" Value="member this.ResponseEncoding : string with get, set" Usage="System.Web.UI.Page.ResponseEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResponseEncoding { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4142,7 +4489,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -4168,6 +4515,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Routing.RouteData RouteData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Routing.RouteData RouteData" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.RouteData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RouteData As RouteData" />
+      <MemberSignature Language="F#" Value="member this.RouteData : System.Web.Routing.RouteData" Usage="System.Web.UI.Page.RouteData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::RouteData ^ RouteData { System::Web::Routing::RouteData ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4178,7 +4528,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4211,9 +4561,12 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       </Docs>
     </Member>
     <Member MemberName="SavePageStateToPersistenceMedium">
-      <MemberSignature Language="C#" Value="protected virtual void SavePageStateToPersistenceMedium (object state);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void SavePageStateToPersistenceMedium (object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void SavePageStateToPersistenceMedium(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.SavePageStateToPersistenceMedium(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub SavePageStateToPersistenceMedium (state As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SavePageStateToPersistenceMedium : obj -&gt; unit&#xA;override this.SavePageStateToPersistenceMedium : obj -&gt; unit" Usage="page.SavePageStateToPersistenceMedium state" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void SavePageStateToPersistenceMedium(System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4256,6 +4609,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public event EventHandler SaveStateComplete;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SaveStateComplete" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Page.SaveStateComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SaveStateComplete As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SaveStateComplete : EventHandler " Usage="member this.SaveStateComplete : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SaveStateComplete;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4292,6 +4648,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public System.Web.HttpServerUtility Server { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpServerUtility Server" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Server" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Server As HttpServerUtility" />
+      <MemberSignature Language="F#" Value="member this.Server : System.Web.HttpServerUtility" Usage="System.Web.UI.Page.Server" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpServerUtility ^ Server { System::Web::HttpServerUtility ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4302,7 +4661,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4334,6 +4693,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public virtual System.Web.SessionState.HttpSessionState Session { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.SessionState.HttpSessionState Session" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Session" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Session As HttpSessionState" />
+      <MemberSignature Language="F#" Value="member this.Session : System.Web.SessionState.HttpSessionState" Usage="System.Web.UI.Page.Session" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::SessionState::HttpSessionState ^ Session { System::Web::SessionState::HttpSessionState ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4344,7 +4706,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4373,10 +4735,22 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <altmember cref="T:System.Web.HttpException" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetFocus">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the browser focus to the specified control.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetFocus">
       <MemberSignature Language="C#" Value="public void SetFocus (string clientID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFocus(string clientID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.SetFocus(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFocus (clientID As String)" />
+      <MemberSignature Language="F#" Value="member this.SetFocus : string -&gt; unit" Usage="page.SetFocus clientID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFocus(System::String ^ clientID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4427,6 +4801,8 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public void SetFocus (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFocus(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.SetFocus(System.Web.UI.Control)" />
+      <MemberSignature Language="F#" Value="member this.SetFocus : System.Web.UI.Control -&gt; unit" Usage="page.SetFocus control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFocus(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4477,6 +4853,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public bool SkipFormActionValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SkipFormActionValidation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.SkipFormActionValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkipFormActionValidation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SkipFormActionValidation : bool with get, set" Usage="System.Web.UI.Page.SkipFormActionValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SkipFormActionValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4490,7 +4869,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -4510,6 +4889,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public bool SmartNavigation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SmartNavigation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.SmartNavigation" />
+      <MemberSignature Language="VB.NET" Value="Public Property SmartNavigation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SmartNavigation : bool with get, set" Usage="System.Web.UI.Page.SmartNavigation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SmartNavigation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4564,6 +4946,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public virtual string StyleSheetTheme { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StyleSheetTheme" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.StyleSheetTheme" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StyleSheetTheme As String" />
+      <MemberSignature Language="F#" Value="member this.StyleSheetTheme : string with get, set" Usage="System.Web.UI.Page.StyleSheetTheme" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StyleSheetTheme { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4574,7 +4959,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Web.UI.Filterable(false)</AttributeName>
@@ -4612,6 +4997,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public virtual string Theme { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Theme" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Theme" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Theme As String" />
+      <MemberSignature Language="F#" Value="member this.Theme : string with get, set" Usage="System.Web.UI.Page.Theme" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Theme { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4622,7 +5010,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4661,6 +5049,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Web.UI.Page.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4671,7 +5062,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
@@ -4702,6 +5093,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public System.Web.TraceContext Trace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.TraceContext Trace" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Trace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Trace As TraceContext" />
+      <MemberSignature Language="F#" Value="member this.Trace : System.Web.TraceContext" Usage="System.Web.UI.Page.Trace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::TraceContext ^ Trace { System::Web::TraceContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4712,7 +5106,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4746,6 +5140,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public bool TraceEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TraceEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.TraceEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property TraceEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TraceEnabled : bool with get, set" Usage="System.Web.UI.Page.TraceEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TraceEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4756,7 +5153,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -4786,6 +5183,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public System.Web.TraceMode TraceModeValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.TraceMode TraceModeValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.TraceModeValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property TraceModeValue As TraceMode" />
+      <MemberSignature Language="F#" Value="member this.TraceModeValue : System.Web.TraceMode with get, set" Usage="System.Web.UI.Page.TraceModeValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::TraceMode TraceModeValue { System::Web::TraceMode get(); void set(System::Web::TraceMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4796,7 +5196,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -4825,6 +5225,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="protected int TransactionMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TransactionMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.TransactionMode" />
+      <MemberSignature Language="VB.NET" Value="Protected Property TransactionMode As Integer" />
+      <MemberSignature Language="F#" Value="member this.TransactionMode : int with get, set" Usage="System.Web.UI.Page.TransactionMode" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int TransactionMode { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4872,6 +5275,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public virtual bool TryUpdateModel&lt;TModel&gt; (TModel model) where TModel : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryUpdateModel&lt;class TModel&gt;(!!TModel model) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.TryUpdateModel``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryUpdateModel(Of TModel As Class) (model As TModel) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryUpdateModel : 'Model -&gt; bool (requires 'Model : null)&#xA;override this.TryUpdateModel : 'Model -&gt; bool (requires 'Model : null)" Usage="page.TryUpdateModel model" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TModel&gt;&#xA; where TModel : class virtual bool TryUpdateModel(TModel model);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4912,6 +5318,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public virtual bool TryUpdateModel&lt;TModel&gt; (TModel model, System.Web.ModelBinding.IValueProvider valueProvider) where TModel : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryUpdateModel&lt;class TModel&gt;(!!TModel model, class System.Web.ModelBinding.IValueProvider valueProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.TryUpdateModel``1(``0,System.Web.ModelBinding.IValueProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function TryUpdateModel(Of TModel As Class) (model As TModel, valueProvider As IValueProvider) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryUpdateModel : 'Model * System.Web.ModelBinding.IValueProvider -&gt; bool (requires 'Model : null)&#xA;override this.TryUpdateModel : 'Model * System.Web.ModelBinding.IValueProvider -&gt; bool (requires 'Model : null)" Usage="page.TryUpdateModel (model, valueProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TModel&gt;&#xA; where TModel : class virtual bool TryUpdateModel(TModel model, System::Web::ModelBinding::IValueProvider ^ valueProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4952,6 +5361,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public string UICulture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UICulture" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.UICulture" />
+      <MemberSignature Language="VB.NET" Value="Public Property UICulture As String" />
+      <MemberSignature Language="F#" Value="member this.UICulture : string with get, set" Usage="System.Web.UI.Page.UICulture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UICulture { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -4962,7 +5374,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
@@ -4989,9 +5401,12 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       </Docs>
     </Member>
     <Member MemberName="UniqueFilePathSuffix">
-      <MemberSignature Language="C#" Value="protected virtual string UniqueFilePathSuffix { get; }" />
+      <MemberSignature Language="C#" Value="protected internal virtual string UniqueFilePathSuffix { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UniqueFilePathSuffix" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.UniqueFilePathSuffix" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable ReadOnly Property UniqueFilePathSuffix As String" />
+      <MemberSignature Language="F#" Value="member this.UniqueFilePathSuffix : string" Usage="System.Web.UI.Page.UniqueFilePathSuffix" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::String ^ UniqueFilePathSuffix { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5017,6 +5432,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public System.Web.UI.UnobtrusiveValidationMode UnobtrusiveValidationMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.UnobtrusiveValidationMode UnobtrusiveValidationMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.UnobtrusiveValidationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnobtrusiveValidationMode As UnobtrusiveValidationMode" />
+      <MemberSignature Language="F#" Value="member this.UnobtrusiveValidationMode : System.Web.UI.UnobtrusiveValidationMode with get, set" Usage="System.Web.UI.Page.UnobtrusiveValidationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::UnobtrusiveValidationMode UnobtrusiveValidationMode { System::Web::UI::UnobtrusiveValidationMode get(); void set(System::Web::UI::UnobtrusiveValidationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5041,6 +5459,8 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public void UnregisterRequiresControlState (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnregisterRequiresControlState(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.UnregisterRequiresControlState(System.Web.UI.Control)" />
+      <MemberSignature Language="F#" Value="member this.UnregisterRequiresControlState : System.Web.UI.Control -&gt; unit" Usage="page.UnregisterRequiresControlState control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnregisterRequiresControlState(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5096,6 +5516,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public virtual void UpdateModel&lt;TModel&gt; (TModel model) where TModel : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateModel&lt;class TModel&gt;(!!TModel model) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.UpdateModel``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub UpdateModel(Of TModel As Class) (model As TModel)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateModel : 'Model -&gt; unit (requires 'Model : null)&#xA;override this.UpdateModel : 'Model -&gt; unit (requires 'Model : null)" Usage="page.UpdateModel model" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TModel&gt;&#xA; where TModel : class virtual void UpdateModel(TModel model);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5134,6 +5557,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public virtual void UpdateModel&lt;TModel&gt; (TModel model, System.Web.ModelBinding.IValueProvider valueProvider) where TModel : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateModel&lt;class TModel&gt;(!!TModel model, class System.Web.ModelBinding.IValueProvider valueProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.UpdateModel``1(``0,System.Web.ModelBinding.IValueProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub UpdateModel(Of TModel As Class) (model As TModel, valueProvider As IValueProvider)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateModel : 'Model * System.Web.ModelBinding.IValueProvider -&gt; unit (requires 'Model : null)&#xA;override this.UpdateModel : 'Model * System.Web.ModelBinding.IValueProvider -&gt; unit (requires 'Model : null)" Usage="page.UpdateModel (model, valueProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TModel&gt;&#xA; where TModel : class virtual void UpdateModel(TModel model, System::Web::ModelBinding::IValueProvider ^ valueProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5172,6 +5598,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public System.Security.Principal.IPrincipal User { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.IPrincipal User" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.User" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property User As IPrincipal" />
+      <MemberSignature Language="F#" Value="member this.User : System.Security.Principal.IPrincipal" Usage="System.Web.UI.Page.User" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IPrincipal ^ User { System::Security::Principal::IPrincipal ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5182,7 +5611,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5213,10 +5642,25 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <altmember cref="T:System.Security.Principal.IPrincipal" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Validate">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Instructs any validation controls included on the page to validate their assigned information.</summary>
+        <altmember cref="T:System.Web.UI.ValidatorCollection" />
+        <altmember cref="P:System.Web.UI.Page.Validators" />
+        <altmember cref="P:System.Web.UI.Page.IsValid" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Validate">
       <MemberSignature Language="C#" Value="public virtual void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate ()" />
+      <MemberSignature Language="F#" Value="abstract member Validate : unit -&gt; unit&#xA;override this.Validate : unit -&gt; unit" Usage="page.Validate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5266,6 +5710,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public virtual void Validate (string validationGroup);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(string validationGroup) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.Validate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Validate (validationGroup As String)" />
+      <MemberSignature Language="F#" Value="abstract member Validate : string -&gt; unit&#xA;override this.Validate : string -&gt; unit" Usage="page.Validate validationGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Validate(System::String ^ validationGroup);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5312,6 +5759,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public override System.Web.UI.ValidateRequestMode ValidateRequestMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.ValidateRequestMode ValidateRequestMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.ValidateRequestMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ValidateRequestMode As ValidateRequestMode" />
+      <MemberSignature Language="F#" Value="member this.ValidateRequestMode : System.Web.UI.ValidateRequestMode with get, set" Usage="System.Web.UI.Page.ValidateRequestMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ValidateRequestMode ValidateRequestMode { System::Web::UI::ValidateRequestMode get(); void set(System::Web::UI::ValidateRequestMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5349,6 +5799,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public System.Web.UI.ValidatorCollection Validators { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ValidatorCollection Validators" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Validators" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Validators As ValidatorCollection" />
+      <MemberSignature Language="F#" Value="member this.Validators : System.Web.UI.ValidatorCollection" Usage="System.Web.UI.Page.Validators" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ValidatorCollection ^ Validators { System::Web::UI::ValidatorCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5359,7 +5812,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5387,6 +5840,8 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public virtual void VerifyRenderingInServerForm (System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void VerifyRenderingInServerForm(class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Page.VerifyRenderingInServerForm(System.Web.UI.Control)" />
+      <MemberSignature Language="F#" Value="abstract member VerifyRenderingInServerForm : System.Web.UI.Control -&gt; unit&#xA;override this.VerifyRenderingInServerForm : System.Web.UI.Control -&gt; unit" Usage="page.VerifyRenderingInServerForm control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void VerifyRenderingInServerForm(System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5434,6 +5889,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public System.Web.UI.ViewStateEncryptionMode ViewStateEncryptionMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.ViewStateEncryptionMode ViewStateEncryptionMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.ViewStateEncryptionMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ViewStateEncryptionMode As ViewStateEncryptionMode" />
+      <MemberSignature Language="F#" Value="member this.ViewStateEncryptionMode : System.Web.UI.ViewStateEncryptionMode with get, set" Usage="System.Web.UI.Page.ViewStateEncryptionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ViewStateEncryptionMode ViewStateEncryptionMode { System::Web::UI::ViewStateEncryptionMode get(); void set(System::Web::UI::ViewStateEncryptionMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5447,7 +5905,7 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -5502,6 +5960,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public string ViewStateUserKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ViewStateUserKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.ViewStateUserKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ViewStateUserKey As String" />
+      <MemberSignature Language="F#" Value="member this.ViewStateUserKey : string with get, set" Usage="System.Web.UI.Page.ViewStateUserKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ViewStateUserKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5538,6 +5999,9 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
       <MemberSignature Language="C#" Value="public override bool Visible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Page.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.Page.Visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -5571,48 +6035,5 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
         <altmember cref="T:System.Web.UI.UserControl" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetFocus">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the browser focus to the specified control.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddOnPreRenderCompleteAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers beginning and ending event handler delegates for an asynchronous page.</summary>
-        <altmember cref="T:System.Web.UI.MasterPage" />
-        <altmember cref="T:System.Web.UI.WebControls.Content" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Validate">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Instructs any validation controls included on the page to validate their assigned information.</summary>
-        <altmember cref="T:System.Web.UI.ValidatorCollection" />
-        <altmember cref="P:System.Web.UI.Page.Validators" />
-        <altmember cref="P:System.Web.UI.Page.IsValid" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetPostBackEventReference">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a string that can be used in a client event to cause postback to the server. This method has been deprecated. Use the <see cref="Overload:System.Web.UI.ClientScriptManager.GetPostBackEventReference" /> method in the <see cref="T:System.Web.UI.ClientScriptManager" /> class instead.</summary>
-        <altmember cref="T:System.Web.UI.ClientScriptManager" />
-        <altmember cref="M:System.Web.UI.ClientScriptManager.GetPostBackClientHyperlink(System.Web.UI.Control,System.String)" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="HtmlTextWriterStyle" FullName="System.Web.UI.HtmlTextWriterStyle">
+﻿<Type Name="HtmlTextWriterStyle" FullName="System.Web.UI.HtmlTextWriterStyle">
   <TypeSignature Language="C#" Value="public enum HtmlTextWriterStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HtmlTextWriterStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlTextWriterStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HtmlTextWriterStyle" />
+  <TypeSignature Language="F#" Value="type HtmlTextWriterStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class HtmlTextWriterStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="BackgroundColor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle BackgroundColor = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.BackgroundColor" />
+      <MemberSignature Language="VB.NET" Value="BackgroundColor" />
+      <MemberSignature Language="F#" Value="BackgroundColor = 0" Usage="System.Web.UI.HtmlTextWriterStyle.BackgroundColor" />
+      <MemberSignature Language="C++ CLI" Value="BackgroundColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="backgroundcolor" /> style.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="BackgroundImage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle BackgroundImage = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.BackgroundImage" />
+      <MemberSignature Language="VB.NET" Value="BackgroundImage" />
+      <MemberSignature Language="F#" Value="BackgroundImage = 1" Usage="System.Web.UI.HtmlTextWriterStyle.BackgroundImage" />
+      <MemberSignature Language="C++ CLI" Value="BackgroundImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="backgroundimage" /> style.</summary>
       </Docs>
@@ -67,6 +78,9 @@
       <MemberSignature Language="C#" Value="BorderCollapse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle BorderCollapse = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.BorderCollapse" />
+      <MemberSignature Language="VB.NET" Value="BorderCollapse" />
+      <MemberSignature Language="F#" Value="BorderCollapse = 2" Usage="System.Web.UI.HtmlTextWriterStyle.BorderCollapse" />
+      <MemberSignature Language="C++ CLI" Value="BorderCollapse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="bordercollapse" /> style.</summary>
       </Docs>
@@ -83,6 +98,9 @@
       <MemberSignature Language="C#" Value="BorderColor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle BorderColor = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.BorderColor" />
+      <MemberSignature Language="VB.NET" Value="BorderColor" />
+      <MemberSignature Language="F#" Value="BorderColor = 3" Usage="System.Web.UI.HtmlTextWriterStyle.BorderColor" />
+      <MemberSignature Language="C++ CLI" Value="BorderColor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="bordercolor" /> style.</summary>
       </Docs>
@@ -99,6 +118,9 @@
       <MemberSignature Language="C#" Value="BorderStyle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle BorderStyle = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.BorderStyle" />
+      <MemberSignature Language="VB.NET" Value="BorderStyle" />
+      <MemberSignature Language="F#" Value="BorderStyle = 4" Usage="System.Web.UI.HtmlTextWriterStyle.BorderStyle" />
+      <MemberSignature Language="C++ CLI" Value="BorderStyle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +129,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="borderstyle" /> style.</summary>
       </Docs>
@@ -115,6 +138,9 @@
       <MemberSignature Language="C#" Value="BorderWidth" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle BorderWidth = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.BorderWidth" />
+      <MemberSignature Language="VB.NET" Value="BorderWidth" />
+      <MemberSignature Language="F#" Value="BorderWidth = 5" Usage="System.Web.UI.HtmlTextWriterStyle.BorderWidth" />
+      <MemberSignature Language="C++ CLI" Value="BorderWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -123,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="borderwidth" /> style.</summary>
       </Docs>
@@ -131,6 +158,9 @@
       <MemberSignature Language="C#" Value="Color" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Color = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Color" />
+      <MemberSignature Language="VB.NET" Value="Color" />
+      <MemberSignature Language="F#" Value="Color = 6" Usage="System.Web.UI.HtmlTextWriterStyle.Color" />
+      <MemberSignature Language="C++ CLI" Value="Color" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -139,6 +169,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="color" /> style.</summary>
       </Docs>
@@ -147,6 +178,9 @@
       <MemberSignature Language="C#" Value="Cursor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Cursor = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Cursor" />
+      <MemberSignature Language="VB.NET" Value="Cursor" />
+      <MemberSignature Language="F#" Value="Cursor = 16" Usage="System.Web.UI.HtmlTextWriterStyle.Cursor" />
+      <MemberSignature Language="C++ CLI" Value="Cursor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -155,6 +189,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="cursor" /> style.</summary>
       </Docs>
@@ -163,6 +198,9 @@
       <MemberSignature Language="C#" Value="Direction" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Direction = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Direction" />
+      <MemberSignature Language="VB.NET" Value="Direction" />
+      <MemberSignature Language="F#" Value="Direction = 17" Usage="System.Web.UI.HtmlTextWriterStyle.Direction" />
+      <MemberSignature Language="C++ CLI" Value="Direction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -171,6 +209,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="direction" /> style.</summary>
       </Docs>
@@ -179,6 +218,9 @@
       <MemberSignature Language="C#" Value="Display" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Display = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Display" />
+      <MemberSignature Language="VB.NET" Value="Display" />
+      <MemberSignature Language="F#" Value="Display = 18" Usage="System.Web.UI.HtmlTextWriterStyle.Display" />
+      <MemberSignature Language="C++ CLI" Value="Display" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,6 +229,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="display" /> style.</summary>
       </Docs>
@@ -195,6 +238,9 @@
       <MemberSignature Language="C#" Value="Filter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Filter = int32(19)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Filter" />
+      <MemberSignature Language="VB.NET" Value="Filter" />
+      <MemberSignature Language="F#" Value="Filter = 19" Usage="System.Web.UI.HtmlTextWriterStyle.Filter" />
+      <MemberSignature Language="C++ CLI" Value="Filter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -203,6 +249,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="filter" /> style.</summary>
       </Docs>
@@ -211,6 +258,9 @@
       <MemberSignature Language="C#" Value="FontFamily" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle FontFamily = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.FontFamily" />
+      <MemberSignature Language="VB.NET" Value="FontFamily" />
+      <MemberSignature Language="F#" Value="FontFamily = 7" Usage="System.Web.UI.HtmlTextWriterStyle.FontFamily" />
+      <MemberSignature Language="C++ CLI" Value="FontFamily" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +269,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="fontfamily" /> style.</summary>
       </Docs>
@@ -227,6 +278,9 @@
       <MemberSignature Language="C#" Value="FontSize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle FontSize = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.FontSize" />
+      <MemberSignature Language="VB.NET" Value="FontSize" />
+      <MemberSignature Language="F#" Value="FontSize = 8" Usage="System.Web.UI.HtmlTextWriterStyle.FontSize" />
+      <MemberSignature Language="C++ CLI" Value="FontSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -235,6 +289,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="fontsize" /> style.</summary>
       </Docs>
@@ -243,6 +298,9 @@
       <MemberSignature Language="C#" Value="FontStyle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle FontStyle = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.FontStyle" />
+      <MemberSignature Language="VB.NET" Value="FontStyle" />
+      <MemberSignature Language="F#" Value="FontStyle = 9" Usage="System.Web.UI.HtmlTextWriterStyle.FontStyle" />
+      <MemberSignature Language="C++ CLI" Value="FontStyle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -251,6 +309,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="fontstyle" /> style.</summary>
       </Docs>
@@ -259,6 +318,9 @@
       <MemberSignature Language="C#" Value="FontVariant" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle FontVariant = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.FontVariant" />
+      <MemberSignature Language="VB.NET" Value="FontVariant" />
+      <MemberSignature Language="F#" Value="FontVariant = 20" Usage="System.Web.UI.HtmlTextWriterStyle.FontVariant" />
+      <MemberSignature Language="C++ CLI" Value="FontVariant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -267,6 +329,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="fontvariant" /> style.</summary>
       </Docs>
@@ -275,6 +338,9 @@
       <MemberSignature Language="C#" Value="FontWeight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle FontWeight = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.FontWeight" />
+      <MemberSignature Language="VB.NET" Value="FontWeight" />
+      <MemberSignature Language="F#" Value="FontWeight = 10" Usage="System.Web.UI.HtmlTextWriterStyle.FontWeight" />
+      <MemberSignature Language="C++ CLI" Value="FontWeight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -283,6 +349,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="fontheight" /> style.</summary>
       </Docs>
@@ -291,6 +358,9 @@
       <MemberSignature Language="C#" Value="Height" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Height = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Height" />
+      <MemberSignature Language="VB.NET" Value="Height" />
+      <MemberSignature Language="F#" Value="Height = 11" Usage="System.Web.UI.HtmlTextWriterStyle.Height" />
+      <MemberSignature Language="C++ CLI" Value="Height" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -299,6 +369,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="height" /> style.</summary>
       </Docs>
@@ -307,6 +378,9 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Left = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 21" Usage="System.Web.UI.HtmlTextWriterStyle.Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -315,6 +389,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="left" /> style.</summary>
       </Docs>
@@ -323,6 +398,9 @@
       <MemberSignature Language="C#" Value="ListStyleImage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle ListStyleImage = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.ListStyleImage" />
+      <MemberSignature Language="VB.NET" Value="ListStyleImage" />
+      <MemberSignature Language="F#" Value="ListStyleImage = 14" Usage="System.Web.UI.HtmlTextWriterStyle.ListStyleImage" />
+      <MemberSignature Language="C++ CLI" Value="ListStyleImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -331,6 +409,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="liststyleimage" /> style.</summary>
       </Docs>
@@ -339,6 +418,9 @@
       <MemberSignature Language="C#" Value="ListStyleType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle ListStyleType = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.ListStyleType" />
+      <MemberSignature Language="VB.NET" Value="ListStyleType" />
+      <MemberSignature Language="F#" Value="ListStyleType = 15" Usage="System.Web.UI.HtmlTextWriterStyle.ListStyleType" />
+      <MemberSignature Language="C++ CLI" Value="ListStyleType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -347,6 +429,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="liststyletype" /> style.</summary>
       </Docs>
@@ -355,6 +438,9 @@
       <MemberSignature Language="C#" Value="Margin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Margin = int32(22)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Margin" />
+      <MemberSignature Language="VB.NET" Value="Margin" />
+      <MemberSignature Language="F#" Value="Margin = 22" Usage="System.Web.UI.HtmlTextWriterStyle.Margin" />
+      <MemberSignature Language="C++ CLI" Value="Margin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -363,6 +449,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="margin" /> style.</summary>
       </Docs>
@@ -371,6 +458,9 @@
       <MemberSignature Language="C#" Value="MarginBottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle MarginBottom = int32(23)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.MarginBottom" />
+      <MemberSignature Language="VB.NET" Value="MarginBottom" />
+      <MemberSignature Language="F#" Value="MarginBottom = 23" Usage="System.Web.UI.HtmlTextWriterStyle.MarginBottom" />
+      <MemberSignature Language="C++ CLI" Value="MarginBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -379,6 +469,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="marginbottom" /> style.</summary>
       </Docs>
@@ -387,6 +478,9 @@
       <MemberSignature Language="C#" Value="MarginLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle MarginLeft = int32(24)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.MarginLeft" />
+      <MemberSignature Language="VB.NET" Value="MarginLeft" />
+      <MemberSignature Language="F#" Value="MarginLeft = 24" Usage="System.Web.UI.HtmlTextWriterStyle.MarginLeft" />
+      <MemberSignature Language="C++ CLI" Value="MarginLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -395,6 +489,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="marginleft" /> style.</summary>
       </Docs>
@@ -403,6 +498,9 @@
       <MemberSignature Language="C#" Value="MarginRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle MarginRight = int32(25)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.MarginRight" />
+      <MemberSignature Language="VB.NET" Value="MarginRight" />
+      <MemberSignature Language="F#" Value="MarginRight = 25" Usage="System.Web.UI.HtmlTextWriterStyle.MarginRight" />
+      <MemberSignature Language="C++ CLI" Value="MarginRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -411,6 +509,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="marginright" /> style.</summary>
       </Docs>
@@ -419,6 +518,9 @@
       <MemberSignature Language="C#" Value="MarginTop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle MarginTop = int32(26)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.MarginTop" />
+      <MemberSignature Language="VB.NET" Value="MarginTop" />
+      <MemberSignature Language="F#" Value="MarginTop = 26" Usage="System.Web.UI.HtmlTextWriterStyle.MarginTop" />
+      <MemberSignature Language="C++ CLI" Value="MarginTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -427,6 +529,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="margintop" /> style.</summary>
       </Docs>
@@ -435,6 +538,9 @@
       <MemberSignature Language="C#" Value="Overflow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Overflow = int32(27)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Overflow" />
+      <MemberSignature Language="VB.NET" Value="Overflow" />
+      <MemberSignature Language="F#" Value="Overflow = 27" Usage="System.Web.UI.HtmlTextWriterStyle.Overflow" />
+      <MemberSignature Language="C++ CLI" Value="Overflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -443,6 +549,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>27</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="overflow" /> style.</summary>
       </Docs>
@@ -451,6 +558,9 @@
       <MemberSignature Language="C#" Value="OverflowX" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle OverflowX = int32(28)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.OverflowX" />
+      <MemberSignature Language="VB.NET" Value="OverflowX" />
+      <MemberSignature Language="F#" Value="OverflowX = 28" Usage="System.Web.UI.HtmlTextWriterStyle.OverflowX" />
+      <MemberSignature Language="C++ CLI" Value="OverflowX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -459,6 +569,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>28</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="overflowx" /> style.</summary>
       </Docs>
@@ -467,6 +578,9 @@
       <MemberSignature Language="C#" Value="OverflowY" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle OverflowY = int32(29)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.OverflowY" />
+      <MemberSignature Language="VB.NET" Value="OverflowY" />
+      <MemberSignature Language="F#" Value="OverflowY = 29" Usage="System.Web.UI.HtmlTextWriterStyle.OverflowY" />
+      <MemberSignature Language="C++ CLI" Value="OverflowY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -475,6 +589,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>29</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="overflowy" /> style.</summary>
       </Docs>
@@ -483,6 +598,9 @@
       <MemberSignature Language="C#" Value="Padding" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Padding = int32(30)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Padding" />
+      <MemberSignature Language="VB.NET" Value="Padding" />
+      <MemberSignature Language="F#" Value="Padding = 30" Usage="System.Web.UI.HtmlTextWriterStyle.Padding" />
+      <MemberSignature Language="C++ CLI" Value="Padding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -491,6 +609,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="padding" /> style.</summary>
       </Docs>
@@ -499,6 +618,9 @@
       <MemberSignature Language="C#" Value="PaddingBottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle PaddingBottom = int32(31)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.PaddingBottom" />
+      <MemberSignature Language="VB.NET" Value="PaddingBottom" />
+      <MemberSignature Language="F#" Value="PaddingBottom = 31" Usage="System.Web.UI.HtmlTextWriterStyle.PaddingBottom" />
+      <MemberSignature Language="C++ CLI" Value="PaddingBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -507,6 +629,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>31</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="paddingbottom" /> style.</summary>
       </Docs>
@@ -515,6 +638,9 @@
       <MemberSignature Language="C#" Value="PaddingLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle PaddingLeft = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.PaddingLeft" />
+      <MemberSignature Language="VB.NET" Value="PaddingLeft" />
+      <MemberSignature Language="F#" Value="PaddingLeft = 32" Usage="System.Web.UI.HtmlTextWriterStyle.PaddingLeft" />
+      <MemberSignature Language="C++ CLI" Value="PaddingLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -523,6 +649,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="paddingleft" /> style.</summary>
       </Docs>
@@ -531,6 +658,9 @@
       <MemberSignature Language="C#" Value="PaddingRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle PaddingRight = int32(33)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.PaddingRight" />
+      <MemberSignature Language="VB.NET" Value="PaddingRight" />
+      <MemberSignature Language="F#" Value="PaddingRight = 33" Usage="System.Web.UI.HtmlTextWriterStyle.PaddingRight" />
+      <MemberSignature Language="C++ CLI" Value="PaddingRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -539,6 +669,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>33</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="paddingright" /> style.</summary>
       </Docs>
@@ -547,6 +678,9 @@
       <MemberSignature Language="C#" Value="PaddingTop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle PaddingTop = int32(34)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.PaddingTop" />
+      <MemberSignature Language="VB.NET" Value="PaddingTop" />
+      <MemberSignature Language="F#" Value="PaddingTop = 34" Usage="System.Web.UI.HtmlTextWriterStyle.PaddingTop" />
+      <MemberSignature Language="C++ CLI" Value="PaddingTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -555,6 +689,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>34</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="paddingtop" /> style.</summary>
       </Docs>
@@ -563,6 +698,9 @@
       <MemberSignature Language="C#" Value="Position" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Position = int32(35)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Position" />
+      <MemberSignature Language="VB.NET" Value="Position" />
+      <MemberSignature Language="F#" Value="Position = 35" Usage="System.Web.UI.HtmlTextWriterStyle.Position" />
+      <MemberSignature Language="C++ CLI" Value="Position" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -571,6 +709,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>35</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="position" /> style.</summary>
       </Docs>
@@ -579,6 +718,9 @@
       <MemberSignature Language="C#" Value="TextAlign" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle TextAlign = int32(36)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.TextAlign" />
+      <MemberSignature Language="VB.NET" Value="TextAlign" />
+      <MemberSignature Language="F#" Value="TextAlign = 36" Usage="System.Web.UI.HtmlTextWriterStyle.TextAlign" />
+      <MemberSignature Language="C++ CLI" Value="TextAlign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -587,6 +729,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>36</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="textalign" /> style.</summary>
       </Docs>
@@ -595,6 +738,9 @@
       <MemberSignature Language="C#" Value="TextDecoration" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle TextDecoration = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.TextDecoration" />
+      <MemberSignature Language="VB.NET" Value="TextDecoration" />
+      <MemberSignature Language="F#" Value="TextDecoration = 12" Usage="System.Web.UI.HtmlTextWriterStyle.TextDecoration" />
+      <MemberSignature Language="C++ CLI" Value="TextDecoration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -603,6 +749,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="textdecoration" /> style.</summary>
       </Docs>
@@ -611,6 +758,9 @@
       <MemberSignature Language="C#" Value="TextOverflow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle TextOverflow = int32(38)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.TextOverflow" />
+      <MemberSignature Language="VB.NET" Value="TextOverflow" />
+      <MemberSignature Language="F#" Value="TextOverflow = 38" Usage="System.Web.UI.HtmlTextWriterStyle.TextOverflow" />
+      <MemberSignature Language="C++ CLI" Value="TextOverflow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -619,6 +769,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>38</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="textoverflow" /> style.</summary>
       </Docs>
@@ -627,6 +778,9 @@
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Top = int32(39)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Top" />
+      <MemberSignature Language="VB.NET" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 39" Usage="System.Web.UI.HtmlTextWriterStyle.Top" />
+      <MemberSignature Language="C++ CLI" Value="Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -635,6 +789,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>39</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="top" /> style.</summary>
       </Docs>
@@ -643,6 +798,9 @@
       <MemberSignature Language="C#" Value="VerticalAlign" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle VerticalAlign = int32(37)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.VerticalAlign" />
+      <MemberSignature Language="VB.NET" Value="VerticalAlign" />
+      <MemberSignature Language="F#" Value="VerticalAlign = 37" Usage="System.Web.UI.HtmlTextWriterStyle.VerticalAlign" />
+      <MemberSignature Language="C++ CLI" Value="VerticalAlign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -651,6 +809,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>37</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="verticalalign" /> style.</summary>
       </Docs>
@@ -659,6 +818,9 @@
       <MemberSignature Language="C#" Value="Visibility" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Visibility = int32(40)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Visibility" />
+      <MemberSignature Language="VB.NET" Value="Visibility" />
+      <MemberSignature Language="F#" Value="Visibility = 40" Usage="System.Web.UI.HtmlTextWriterStyle.Visibility" />
+      <MemberSignature Language="C++ CLI" Value="Visibility" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -667,6 +829,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>40</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="visibility" /> style.</summary>
       </Docs>
@@ -675,6 +838,9 @@
       <MemberSignature Language="C#" Value="WhiteSpace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle WhiteSpace = int32(41)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.WhiteSpace" />
+      <MemberSignature Language="VB.NET" Value="WhiteSpace" />
+      <MemberSignature Language="F#" Value="WhiteSpace = 41" Usage="System.Web.UI.HtmlTextWriterStyle.WhiteSpace" />
+      <MemberSignature Language="C++ CLI" Value="WhiteSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -683,6 +849,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>41</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="whitespace" /> style.</summary>
       </Docs>
@@ -691,6 +858,9 @@
       <MemberSignature Language="C#" Value="Width" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle Width = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.Width" />
+      <MemberSignature Language="VB.NET" Value="Width" />
+      <MemberSignature Language="F#" Value="Width = 13" Usage="System.Web.UI.HtmlTextWriterStyle.Width" />
+      <MemberSignature Language="C++ CLI" Value="Width" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -699,6 +869,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="width" /> style.</summary>
       </Docs>
@@ -707,6 +878,9 @@
       <MemberSignature Language="C#" Value="ZIndex" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.HtmlTextWriterStyle ZIndex = int32(42)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.HtmlTextWriterStyle.ZIndex" />
+      <MemberSignature Language="VB.NET" Value="ZIndex" />
+      <MemberSignature Language="F#" Value="ZIndex = 42" Usage="System.Web.UI.HtmlTextWriterStyle.ZIndex" />
+      <MemberSignature Language="C++ CLI" Value="ZIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -715,6 +889,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.HtmlTextWriterStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>42</MemberValue>
       <Docs>
         <summary>Specifies the HTML <see langword="zindex" /> style.</summary>
       </Docs>

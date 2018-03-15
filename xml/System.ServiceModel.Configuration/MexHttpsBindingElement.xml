@@ -1,7 +1,10 @@
-<Type Name="MexHttpsBindingElement" FullName="System.ServiceModel.Configuration.MexHttpsBindingElement">
+﻿<Type Name="MexHttpsBindingElement" FullName="System.ServiceModel.Configuration.MexHttpsBindingElement">
   <TypeSignature Language="C#" Value="public class MexHttpsBindingElement : System.ServiceModel.Configuration.MexBindingElement&lt;System.ServiceModel.WSHttpBinding&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MexHttpsBindingElement extends System.ServiceModel.Configuration.MexBindingElement`1&lt;class System.ServiceModel.WSHttpBinding&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MexHttpsBindingElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class MexHttpsBindingElement&#xA;Inherits MexBindingElement(Of WSHttpBinding)" />
+  <TypeSignature Language="F#" Value="type MexHttpsBindingElement = class&#xA;    inherit MexBindingElement&lt;WSHttpBinding&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MexHttpsBindingElement : System::ServiceModel::Configuration::MexBindingElement&lt;System::ServiceModel::WSHttpBinding ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,10 +21,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.MexHttpsBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MexHttpsBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexHttpsBindingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MexHttpsBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -37,6 +51,9 @@
       <MemberSignature Language="C#" Value="public MexHttpsBindingElement (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexHttpsBindingElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.MexHttpsBindingElement : string -&gt; System.ServiceModel.Configuration.MexHttpsBindingElement" Usage="new System.ServiceModel.Configuration.MexHttpsBindingElement name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MexHttpsBindingElement(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -51,14 +68,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.MexHttpsBindingElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

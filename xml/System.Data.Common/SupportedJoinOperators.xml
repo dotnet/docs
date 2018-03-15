@@ -1,7 +1,10 @@
-<Type Name="SupportedJoinOperators" FullName="System.Data.Common.SupportedJoinOperators">
+﻿<Type Name="SupportedJoinOperators" FullName="System.Data.Common.SupportedJoinOperators">
   <TypeSignature Language="C#" Value="public enum SupportedJoinOperators" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SupportedJoinOperators extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.SupportedJoinOperators" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SupportedJoinOperators" />
+  <TypeSignature Language="F#" Value="type SupportedJoinOperators = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SupportedJoinOperators" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="FullOuter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.SupportedJoinOperators FullOuter = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SupportedJoinOperators.FullOuter" />
+      <MemberSignature Language="VB.NET" Value="FullOuter" />
+      <MemberSignature Language="F#" Value="FullOuter = 8" Usage="System.Data.Common.SupportedJoinOperators.FullOuter" />
+      <MemberSignature Language="C++ CLI" Value="FullOuter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -56,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.SupportedJoinOperators</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The data source supports full outer joins.</summary>
       </Docs>
@@ -64,6 +71,9 @@
       <MemberSignature Language="C#" Value="Inner" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.SupportedJoinOperators Inner = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SupportedJoinOperators.Inner" />
+      <MemberSignature Language="VB.NET" Value="Inner" />
+      <MemberSignature Language="F#" Value="Inner = 1" Usage="System.Data.Common.SupportedJoinOperators.Inner" />
+      <MemberSignature Language="C++ CLI" Value="Inner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -81,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.SupportedJoinOperators</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The data source supports inner joins.</summary>
       </Docs>
@@ -89,6 +100,9 @@
       <MemberSignature Language="C#" Value="LeftOuter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.SupportedJoinOperators LeftOuter = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SupportedJoinOperators.LeftOuter" />
+      <MemberSignature Language="VB.NET" Value="LeftOuter" />
+      <MemberSignature Language="F#" Value="LeftOuter = 2" Usage="System.Data.Common.SupportedJoinOperators.LeftOuter" />
+      <MemberSignature Language="C++ CLI" Value="LeftOuter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -106,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.SupportedJoinOperators</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The data source supports left outer joins.</summary>
       </Docs>
@@ -114,6 +129,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.SupportedJoinOperators None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SupportedJoinOperators.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.Common.SupportedJoinOperators.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -131,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.SupportedJoinOperators</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The data source does not support join queries.</summary>
       </Docs>
@@ -139,6 +158,9 @@
       <MemberSignature Language="C#" Value="RightOuter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Common.SupportedJoinOperators RightOuter = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Common.SupportedJoinOperators.RightOuter" />
+      <MemberSignature Language="VB.NET" Value="RightOuter" />
+      <MemberSignature Language="F#" Value="RightOuter = 4" Usage="System.Data.Common.SupportedJoinOperators.RightOuter" />
+      <MemberSignature Language="C++ CLI" Value="RightOuter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -156,6 +178,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Common.SupportedJoinOperators</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The data source supports right outer joins.</summary>
       </Docs>

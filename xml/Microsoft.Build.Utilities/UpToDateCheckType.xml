@@ -1,7 +1,10 @@
-<Type Name="UpToDateCheckType" FullName="Microsoft.Build.Utilities.UpToDateCheckType">
+﻿<Type Name="UpToDateCheckType" FullName="Microsoft.Build.Utilities.UpToDateCheckType">
   <TypeSignature Language="C#" Value="public enum UpToDateCheckType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UpToDateCheckType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.UpToDateCheckType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum UpToDateCheckType" />
+  <TypeSignature Language="F#" Value="type UpToDateCheckType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class UpToDateCheckType" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="InputNewerThanOutput" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.UpToDateCheckType InputNewerThanOutput = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.UpToDateCheckType.InputNewerThanOutput" />
+      <MemberSignature Language="VB.NET" Value="InputNewerThanOutput" />
+      <MemberSignature Language="F#" Value="InputNewerThanOutput = 0" Usage="Microsoft.Build.Utilities.UpToDateCheckType.InputNewerThanOutput" />
+      <MemberSignature Language="C++ CLI" Value="InputNewerThanOutput" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Utilities.UpToDateCheckType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Input newer than output</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="InputNewerThanTracking" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.UpToDateCheckType InputNewerThanTracking = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.UpToDateCheckType.InputNewerThanTracking" />
+      <MemberSignature Language="VB.NET" Value="InputNewerThanTracking" />
+      <MemberSignature Language="F#" Value="InputNewerThanTracking = 2" Usage="Microsoft.Build.Utilities.UpToDateCheckType.InputNewerThanTracking" />
+      <MemberSignature Language="C++ CLI" Value="InputNewerThanTracking" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Utilities.UpToDateCheckType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Input newer than tracking</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="InputOrOutputNewerThanTracking" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Utilities.UpToDateCheckType InputOrOutputNewerThanTracking = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Utilities.UpToDateCheckType.InputOrOutputNewerThanTracking" />
+      <MemberSignature Language="VB.NET" Value="InputOrOutputNewerThanTracking" />
+      <MemberSignature Language="F#" Value="InputOrOutputNewerThanTracking = 1" Usage="Microsoft.Build.Utilities.UpToDateCheckType.InputOrOutputNewerThanTracking" />
+      <MemberSignature Language="C++ CLI" Value="InputOrOutputNewerThanTracking" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Utilities.UpToDateCheckType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Input or output newer than tracking</summary>
       </Docs>

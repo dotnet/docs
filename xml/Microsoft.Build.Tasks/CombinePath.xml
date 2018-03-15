@@ -1,7 +1,10 @@
-<Type Name="CombinePath" FullName="Microsoft.Build.Tasks.CombinePath">
+﻿<Type Name="CombinePath" FullName="Microsoft.Build.Tasks.CombinePath">
   <TypeSignature Language="C#" Value="public class CombinePath : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CombinePath extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.CombinePath" />
+  <TypeSignature Language="VB.NET" Value="Public Class CombinePath&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="F#" Value="type CombinePath = class&#xA;    inherit TaskExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CombinePath : Microsoft::Build::Tasks::TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public CombinePath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.CombinePath.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CombinePath();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -36,6 +41,9 @@
       <MemberSignature Language="C#" Value="public string BasePath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BasePath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.CombinePath.BasePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property BasePath As String" />
+      <MemberSignature Language="F#" Value="member this.BasePath : string with get, set" Usage="Microsoft.Build.Tasks.CombinePath.BasePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BasePath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -55,6 +63,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] CombinedPaths { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] CombinedPaths" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.CombinePath.CombinedPaths" />
+      <MemberSignature Language="VB.NET" Value="Public Property CombinedPaths As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.CombinedPaths : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.CombinePath.CombinedPaths" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ CombinedPaths { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -79,6 +90,9 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.CombinePath.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="combinePath.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -100,6 +114,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Paths { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Paths" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.CombinePath.Paths" />
+      <MemberSignature Language="VB.NET" Value="Public Property Paths As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.Paths : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.CombinePath.Paths" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ Paths { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="BoolIListConverter" FullName="System.Windows.Media.Converters.BoolIListConverter">
+﻿<Type Name="BoolIListConverter" FullName="System.Windows.Media.Converters.BoolIListConverter">
   <TypeSignature Language="C#" Value="public sealed class BoolIListConverter : System.Windows.Media.Converters.BaseIListConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BoolIListConverter extends System.Windows.Media.Converters.BaseIListConverter" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Converters.BoolIListConverter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BoolIListConverter&#xA;Inherits BaseIListConverter" />
+  <TypeSignature Language="F#" Value="type BoolIListConverter = class&#xA;    inherit BaseIListConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BoolIListConverter sealed : System::Windows::Media::Converters::BaseIListConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,8 @@
       <MemberSignature Language="C#" Value="public BoolIListConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Converters.BoolIListConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BoolIListConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

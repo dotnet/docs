@@ -1,7 +1,10 @@
-<Type Name="SqlFeatures" FullName="System.Web.Management.SqlFeatures">
+﻿<Type Name="SqlFeatures" FullName="System.Web.Management.SqlFeatures">
   <TypeSignature Language="C#" Value="public enum SqlFeatures" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SqlFeatures extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SqlFeatures" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SqlFeatures" />
+  <TypeSignature Language="F#" Value="type SqlFeatures = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SqlFeatures" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SqlFeatures All = int32(1073741855)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="F#" Value="All = 1073741855" Usage="System.Web.Management.SqlFeatures.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -47,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
+      <MemberValue>1073741855</MemberValue>
       <Docs>
         <summary>All features.</summary>
       </Docs>
@@ -55,6 +62,9 @@
       <MemberSignature Language="C#" Value="Membership" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SqlFeatures Membership = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.Membership" />
+      <MemberSignature Language="VB.NET" Value="Membership" />
+      <MemberSignature Language="F#" Value="Membership = 1" Usage="System.Web.Management.SqlFeatures.Membership" />
+      <MemberSignature Language="C++ CLI" Value="Membership" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The membership feature.</summary>
       </Docs>
@@ -71,6 +82,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SqlFeatures None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.Management.SqlFeatures.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No features.</summary>
       </Docs>
@@ -87,6 +102,9 @@
       <MemberSignature Language="C#" Value="Personalization" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SqlFeatures Personalization = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.Personalization" />
+      <MemberSignature Language="VB.NET" Value="Personalization" />
+      <MemberSignature Language="F#" Value="Personalization = 8" Usage="System.Web.Management.SqlFeatures.Personalization" />
+      <MemberSignature Language="C++ CLI" Value="Personalization" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The personalization feature.</summary>
       </Docs>
@@ -103,6 +122,9 @@
       <MemberSignature Language="C#" Value="Profile" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SqlFeatures Profile = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.Profile" />
+      <MemberSignature Language="VB.NET" Value="Profile" />
+      <MemberSignature Language="F#" Value="Profile = 2" Usage="System.Web.Management.SqlFeatures.Profile" />
+      <MemberSignature Language="C++ CLI" Value="Profile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +133,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The profile feature.</summary>
       </Docs>
@@ -119,6 +142,9 @@
       <MemberSignature Language="C#" Value="RoleManager" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SqlFeatures RoleManager = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.RoleManager" />
+      <MemberSignature Language="VB.NET" Value="RoleManager" />
+      <MemberSignature Language="F#" Value="RoleManager = 4" Usage="System.Web.Management.SqlFeatures.RoleManager" />
+      <MemberSignature Language="C++ CLI" Value="RoleManager" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +153,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The role manager feature.</summary>
       </Docs>
@@ -135,6 +162,9 @@
       <MemberSignature Language="C#" Value="SqlWebEventProvider" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Management.SqlFeatures SqlWebEventProvider = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Management.SqlFeatures.SqlWebEventProvider" />
+      <MemberSignature Language="VB.NET" Value="SqlWebEventProvider" />
+      <MemberSignature Language="F#" Value="SqlWebEventProvider = 16" Usage="System.Web.Management.SqlFeatures.SqlWebEventProvider" />
+      <MemberSignature Language="C++ CLI" Value="SqlWebEventProvider" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +173,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Management.SqlFeatures</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The Web event provider feature.</summary>
       </Docs>

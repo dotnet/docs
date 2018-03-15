@@ -1,7 +1,10 @@
-<Type Name="TableLayoutCellPaintEventHandler" FullName="System.Windows.Forms.TableLayoutCellPaintEventHandler">
+﻿<Type Name="TableLayoutCellPaintEventHandler" FullName="System.Windows.Forms.TableLayoutCellPaintEventHandler">
   <TypeSignature Language="C#" Value="public delegate void TableLayoutCellPaintEventHandler(object sender, TableLayoutCellPaintEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TableLayoutCellPaintEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutCellPaintEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub TableLayoutCellPaintEventHandler(sender As Object, e As TableLayoutCellPaintEventArgs)" />
+  <TypeSignature Language="F#" Value="type TableLayoutCellPaintEventHandler = delegate of obj * TableLayoutCellPaintEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void TableLayoutCellPaintEventHandler(System::Object ^ sender, TableLayoutCellPaintEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

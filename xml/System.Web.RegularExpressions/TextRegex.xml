@@ -1,7 +1,10 @@
-<Type Name="TextRegex" FullName="System.Web.RegularExpressions.TextRegex">
+﻿<Type Name="TextRegex" FullName="System.Web.RegularExpressions.TextRegex">
   <TypeSignature Language="C#" Value="public class TextRegex : System.Text.RegularExpressions.Regex" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi TextRegex extends System.Text.RegularExpressions.Regex" />
   <TypeSignature Language="DocId" Value="T:System.Web.RegularExpressions.TextRegex" />
+  <TypeSignature Language="VB.NET" Value="Public Class TextRegex&#xA;Inherits Regex" />
+  <TypeSignature Language="F#" Value="type TextRegex = class&#xA;    inherit Regex" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextRegex : System::Text::RegularExpressions::Regex" />
   <AssemblyInfo>
     <AssemblyName>System.Web.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +27,21 @@
     <altmember cref="T:System.Text.RegularExpressions.Regex" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.RegularExpressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.RegularExpressions.TextRegex" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TextRegex ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.RegularExpressions.TextRegex.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextRegex();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.RegularExpressions</AssemblyName>
@@ -44,6 +58,9 @@
       <MemberSignature Language="C#" Value="public TextRegex (TimeSpan A_1);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(valuetype System.TimeSpan A_1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.RegularExpressions.TextRegex.#ctor(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (A_1 As TimeSpan)" />
+      <MemberSignature Language="F#" Value="new System.Web.RegularExpressions.TextRegex : TimeSpan -&gt; System.Web.RegularExpressions.TextRegex" Usage="new System.Web.RegularExpressions.TextRegex A_1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TextRegex(TimeSpan A_1);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.RegularExpressions</AssemblyName>
@@ -66,14 +83,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.RegularExpressions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.RegularExpressions.TextRegex" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

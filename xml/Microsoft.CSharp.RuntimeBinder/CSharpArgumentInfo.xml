@@ -1,7 +1,10 @@
-<Type Name="CSharpArgumentInfo" FullName="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo">
+﻿<Type Name="CSharpArgumentInfo" FullName="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo">
   <TypeSignature Language="C#" Value="public sealed class CSharpArgumentInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CSharpArgumentInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CSharpArgumentInfo" />
+  <TypeSignature Language="F#" Value="type CSharpArgumentInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CSharpArgumentInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.CSharp</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -21,6 +24,9 @@
       <MemberSignature Language="C#" Value="public static Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo Create (Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags flags, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo Create(valuetype Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags flags, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.Create(Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (flags As CSharpArgumentInfoFlags, name As String) As CSharpArgumentInfo" />
+      <MemberSignature Language="F#" Value="static member Create : Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags * string -&gt; Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo" Usage="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfo.Create (flags, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::CSharp::RuntimeBinder::CSharpArgumentInfo ^ Create(Microsoft::CSharp::RuntimeBinder::CSharpArgumentInfoFlags flags, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>

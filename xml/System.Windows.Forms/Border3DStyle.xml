@@ -1,7 +1,10 @@
-<Type Name="Border3DStyle" FullName="System.Windows.Forms.Border3DStyle">
+﻿<Type Name="Border3DStyle" FullName="System.Windows.Forms.Border3DStyle">
   <TypeSignature Language="C#" Value="public enum Border3DStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Border3DStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Border3DStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Border3DStyle" />
+  <TypeSignature Language="F#" Value="type Border3DStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class Border3DStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="Adjust" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle Adjust = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.Adjust" />
+      <MemberSignature Language="VB.NET" Value="Adjust" />
+      <MemberSignature Language="F#" Value="Adjust = 8192" Usage="System.Windows.Forms.Border3DStyle.Adjust" />
+      <MemberSignature Language="C++ CLI" Value="Adjust" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -47,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>The border is drawn outside the specified rectangle, preserving the dimensions of the rectangle for drawing.</summary>
       </Docs>
@@ -55,6 +62,9 @@
       <MemberSignature Language="C#" Value="Bump" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle Bump = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.Bump" />
+      <MemberSignature Language="VB.NET" Value="Bump" />
+      <MemberSignature Language="F#" Value="Bump = 9" Usage="System.Windows.Forms.Border3DStyle.Bump" />
+      <MemberSignature Language="C++ CLI" Value="Bump" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The inner and outer edges of the border have a raised appearance.</summary>
       </Docs>
@@ -71,6 +82,9 @@
       <MemberSignature Language="C#" Value="Etched" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle Etched = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.Etched" />
+      <MemberSignature Language="VB.NET" Value="Etched" />
+      <MemberSignature Language="F#" Value="Etched = 6" Usage="System.Windows.Forms.Border3DStyle.Etched" />
+      <MemberSignature Language="C++ CLI" Value="Etched" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The inner and outer edges of the border have an etched appearance.</summary>
       </Docs>
@@ -87,6 +102,9 @@
       <MemberSignature Language="C#" Value="Flat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle Flat = int32(16394)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.Flat" />
+      <MemberSignature Language="VB.NET" Value="Flat" />
+      <MemberSignature Language="F#" Value="Flat = 16394" Usage="System.Windows.Forms.Border3DStyle.Flat" />
+      <MemberSignature Language="C++ CLI" Value="Flat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -95,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>16394</MemberValue>
       <Docs>
         <summary>The border has no three-dimensional effects.</summary>
       </Docs>
@@ -103,6 +122,9 @@
       <MemberSignature Language="C#" Value="Raised" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle Raised = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.Raised" />
+      <MemberSignature Language="VB.NET" Value="Raised" />
+      <MemberSignature Language="F#" Value="Raised = 5" Usage="System.Windows.Forms.Border3DStyle.Raised" />
+      <MemberSignature Language="C++ CLI" Value="Raised" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -111,6 +133,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The border has raised inner and outer edges.</summary>
       </Docs>
@@ -119,6 +142,9 @@
       <MemberSignature Language="C#" Value="RaisedInner" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle RaisedInner = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.RaisedInner" />
+      <MemberSignature Language="VB.NET" Value="RaisedInner" />
+      <MemberSignature Language="F#" Value="RaisedInner = 4" Usage="System.Windows.Forms.Border3DStyle.RaisedInner" />
+      <MemberSignature Language="C++ CLI" Value="RaisedInner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -127,6 +153,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The border has a raised inner edge and no outer edge.</summary>
       </Docs>
@@ -135,6 +162,9 @@
       <MemberSignature Language="C#" Value="RaisedOuter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle RaisedOuter = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.RaisedOuter" />
+      <MemberSignature Language="VB.NET" Value="RaisedOuter" />
+      <MemberSignature Language="F#" Value="RaisedOuter = 1" Usage="System.Windows.Forms.Border3DStyle.RaisedOuter" />
+      <MemberSignature Language="C++ CLI" Value="RaisedOuter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -143,6 +173,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The border has a raised outer edge and no inner edge.</summary>
       </Docs>
@@ -151,6 +182,9 @@
       <MemberSignature Language="C#" Value="Sunken" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle Sunken = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.Sunken" />
+      <MemberSignature Language="VB.NET" Value="Sunken" />
+      <MemberSignature Language="F#" Value="Sunken = 10" Usage="System.Windows.Forms.Border3DStyle.Sunken" />
+      <MemberSignature Language="C++ CLI" Value="Sunken" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -159,6 +193,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The border has sunken inner and outer edges.</summary>
       </Docs>
@@ -167,6 +202,9 @@
       <MemberSignature Language="C#" Value="SunkenInner" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle SunkenInner = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.SunkenInner" />
+      <MemberSignature Language="VB.NET" Value="SunkenInner" />
+      <MemberSignature Language="F#" Value="SunkenInner = 8" Usage="System.Windows.Forms.Border3DStyle.SunkenInner" />
+      <MemberSignature Language="C++ CLI" Value="SunkenInner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -175,6 +213,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The border has a sunken inner edge and no outer edge.</summary>
       </Docs>
@@ -183,6 +222,9 @@
       <MemberSignature Language="C#" Value="SunkenOuter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Border3DStyle SunkenOuter = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Border3DStyle.SunkenOuter" />
+      <MemberSignature Language="VB.NET" Value="SunkenOuter" />
+      <MemberSignature Language="F#" Value="SunkenOuter = 2" Usage="System.Windows.Forms.Border3DStyle.SunkenOuter" />
+      <MemberSignature Language="C++ CLI" Value="SunkenOuter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -191,6 +233,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Border3DStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The border has a sunken outer edge and no inner edge.</summary>
       </Docs>

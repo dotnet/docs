@@ -1,7 +1,10 @@
-<Type Name="DispatcherExtensions" FullName="System.Windows.Threading.DispatcherExtensions">
+﻿<Type Name="DispatcherExtensions" FullName="System.Windows.Threading.DispatcherExtensions">
   <TypeSignature Language="C#" Value="public static class DispatcherExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DispatcherExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module DispatcherExtensions" />
+  <TypeSignature Language="F#" Value="type DispatcherExtensions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DispatcherExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +25,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="BeginInvoke">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes the specified delegate asynchronously on the thread that the <see cref="T:System.Windows.Threading.Dispatcher" /> was created on.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginInvoke">
       <MemberSignature Language="C#" Value="public static System.Windows.Threading.DispatcherOperation BeginInvoke (this System.Windows.Threading.Dispatcher dispatcher, Action action);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Threading.DispatcherOperation BeginInvoke(class System.Windows.Threading.Dispatcher dispatcher, class System.Action action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherExtensions.BeginInvoke(System.Windows.Threading.Dispatcher,System.Action)" />
+      <MemberSignature Language="F#" Value="static member BeginInvoke : System.Windows.Threading.Dispatcher * Action -&gt; System.Windows.Threading.DispatcherOperation" Usage="System.Windows.Threading.DispatcherExtensions.BeginInvoke (dispatcher, action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Windows::Threading::DispatcherOperation ^ BeginInvoke(System::Windows::Threading::Dispatcher ^ dispatcher, Action ^ action);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
@@ -60,6 +74,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Threading.DispatcherOperation BeginInvoke (this System.Windows.Threading.Dispatcher dispatcher, Action action, System.Windows.Threading.DispatcherPriority priority);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Threading.DispatcherOperation BeginInvoke(class System.Windows.Threading.Dispatcher dispatcher, class System.Action action, valuetype System.Windows.Threading.DispatcherPriority priority) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherExtensions.BeginInvoke(System.Windows.Threading.Dispatcher,System.Action,System.Windows.Threading.DispatcherPriority)" />
+      <MemberSignature Language="F#" Value="static member BeginInvoke : System.Windows.Threading.Dispatcher * Action * System.Windows.Threading.DispatcherPriority -&gt; System.Windows.Threading.DispatcherOperation" Usage="System.Windows.Threading.DispatcherExtensions.BeginInvoke (dispatcher, action, priority)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Windows::Threading::DispatcherOperation ^ BeginInvoke(System::Windows::Threading::Dispatcher ^ dispatcher, Action ^ action, System::Windows::Threading::DispatcherPriority priority);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
@@ -94,10 +110,21 @@
           <paramref name="priority" /> is not a valid <see cref="T:System.Windows.Threading.DispatcherPriority" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Invoke">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes the specified delegate synchronously on the thread that the specified <see cref="T:System.Windows.Threading.Dispatcher" /> was created on.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Invoke">
       <MemberSignature Language="C#" Value="public static void Invoke (this System.Windows.Threading.Dispatcher dispatcher, Action action);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Invoke(class System.Windows.Threading.Dispatcher dispatcher, class System.Action action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherExtensions.Invoke(System.Windows.Threading.Dispatcher,System.Action)" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Windows.Threading.Dispatcher * Action -&gt; unit" Usage="System.Windows.Threading.DispatcherExtensions.Invoke (dispatcher, action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Invoke(System::Windows::Threading::Dispatcher ^ dispatcher, Action ^ action);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
@@ -131,6 +158,8 @@
       <MemberSignature Language="C#" Value="public static void Invoke (this System.Windows.Threading.Dispatcher dispatcher, Action action, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Invoke(class System.Windows.Threading.Dispatcher dispatcher, class System.Action action, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherExtensions.Invoke(System.Windows.Threading.Dispatcher,System.Action,System.TimeSpan)" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Windows.Threading.Dispatcher * Action * TimeSpan -&gt; unit" Usage="System.Windows.Threading.DispatcherExtensions.Invoke (dispatcher, action, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Invoke(System::Windows::Threading::Dispatcher ^ dispatcher, Action ^ action, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
@@ -170,6 +199,8 @@
       <MemberSignature Language="C#" Value="public static void Invoke (this System.Windows.Threading.Dispatcher dispatcher, Action action, System.Windows.Threading.DispatcherPriority priority);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Invoke(class System.Windows.Threading.Dispatcher dispatcher, class System.Action action, valuetype System.Windows.Threading.DispatcherPriority priority) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherExtensions.Invoke(System.Windows.Threading.Dispatcher,System.Action,System.Windows.Threading.DispatcherPriority)" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Windows.Threading.Dispatcher * Action * System.Windows.Threading.DispatcherPriority -&gt; unit" Usage="System.Windows.Threading.DispatcherExtensions.Invoke (dispatcher, action, priority)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Invoke(System::Windows::Threading::Dispatcher ^ dispatcher, Action ^ action, System::Windows::Threading::DispatcherPriority priority);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
@@ -209,6 +240,8 @@
       <MemberSignature Language="C#" Value="public static void Invoke (this System.Windows.Threading.Dispatcher dispatcher, Action action, TimeSpan timeout, System.Windows.Threading.DispatcherPriority priority);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Invoke(class System.Windows.Threading.Dispatcher dispatcher, class System.Action action, valuetype System.TimeSpan timeout, valuetype System.Windows.Threading.DispatcherPriority priority) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherExtensions.Invoke(System.Windows.Threading.Dispatcher,System.Action,System.TimeSpan,System.Windows.Threading.DispatcherPriority)" />
+      <MemberSignature Language="F#" Value="static member Invoke : System.Windows.Threading.Dispatcher * Action * TimeSpan * System.Windows.Threading.DispatcherPriority -&gt; unit" Usage="System.Windows.Threading.DispatcherExtensions.Invoke (dispatcher, action, timeout, priority)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static void Invoke(System::Windows::Threading::Dispatcher ^ dispatcher, Action ^ action, TimeSpan timeout, System::Windows::Threading::DispatcherPriority priority);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Presentation</AssemblyName>
@@ -246,23 +279,5 @@
           <paramref name="priority" /> is not a valid <see cref="T:System.Windows.Threading.DispatcherPriority" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="BeginInvoke">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Executes the specified delegate asynchronously on the thread that the <see cref="T:System.Windows.Threading.Dispatcher" /> was created on.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Invoke">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Executes the specified delegate synchronously on the thread that the specified <see cref="T:System.Windows.Threading.Dispatcher" /> was created on.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

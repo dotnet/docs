@@ -1,7 +1,10 @@
-<Type Name="PrintControllerWithStatusDialog" FullName="System.Windows.Forms.PrintControllerWithStatusDialog">
+﻿<Type Name="PrintControllerWithStatusDialog" FullName="System.Windows.Forms.PrintControllerWithStatusDialog">
   <TypeSignature Language="C#" Value="public class PrintControllerWithStatusDialog : System.Drawing.Printing.PrintController" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrintControllerWithStatusDialog extends System.Drawing.Printing.PrintController" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PrintControllerWithStatusDialog" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrintControllerWithStatusDialog&#xA;Inherits PrintController" />
+  <TypeSignature Language="F#" Value="type PrintControllerWithStatusDialog = class&#xA;    inherit PrintController" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintControllerWithStatusDialog : System::Drawing::Printing::PrintController" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,10 +39,22 @@
     <altmember cref="T:System.Drawing.Printing.PrintController" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PrintControllerWithStatusDialog" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PrintControllerWithStatusDialog (System.Drawing.Printing.PrintController underlyingController);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Printing.PrintController underlyingController) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.#ctor(System.Drawing.Printing.PrintController)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (underlyingController As PrintController)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.PrintControllerWithStatusDialog : System.Drawing.Printing.PrintController -&gt; System.Windows.Forms.PrintControllerWithStatusDialog" Usage="new System.Windows.Forms.PrintControllerWithStatusDialog underlyingController" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintControllerWithStatusDialog(System::Drawing::Printing::PrintController ^ underlyingController);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +73,9 @@
       <MemberSignature Language="C#" Value="public PrintControllerWithStatusDialog (System.Drawing.Printing.PrintController underlyingController, string dialogTitle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Printing.PrintController underlyingController, string dialogTitle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.#ctor(System.Drawing.Printing.PrintController,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (underlyingController As PrintController, dialogTitle As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.PrintControllerWithStatusDialog : System.Drawing.Printing.PrintController * string -&gt; System.Windows.Forms.PrintControllerWithStatusDialog" Usage="new System.Windows.Forms.PrintControllerWithStatusDialog (underlyingController, dialogTitle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintControllerWithStatusDialog(System::Drawing::Printing::PrintController ^ underlyingController, System::String ^ dialogTitle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +96,9 @@
       <MemberSignature Language="C#" Value="public override bool IsPreview { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPreview" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PrintControllerWithStatusDialog.IsPreview" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsPreview As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPreview : bool" Usage="System.Windows.Forms.PrintControllerWithStatusDialog.IsPreview" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsPreview { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -104,6 +125,9 @@
       <MemberSignature Language="C#" Value="public override void OnEndPage (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintPageEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnEndPage(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintPageEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnEndPage (document As PrintDocument, e As PrintPageEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnEndPage : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintPageEventArgs -&gt; unit" Usage="printControllerWithStatusDialog.OnEndPage (document, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnEndPage(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintPageEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -138,6 +162,9 @@
       <MemberSignature Language="C#" Value="public override void OnEndPrint (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnEndPrint(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.OnEndPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnEndPrint (document As PrintDocument, e As PrintEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnEndPrint : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintEventArgs -&gt; unit" Usage="printControllerWithStatusDialog.OnEndPrint (document, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnEndPrint(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -172,6 +199,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Graphics OnStartPage (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintPageEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Drawing.Graphics OnStartPage(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintPageEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPage(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintPageEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function OnStartPage (document As PrintDocument, e As PrintPageEventArgs) As Graphics" />
+      <MemberSignature Language="F#" Value="override this.OnStartPage : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintPageEventArgs -&gt; System.Drawing.Graphics" Usage="printControllerWithStatusDialog.OnStartPage (document, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Graphics ^ OnStartPage(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintPageEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -209,6 +239,9 @@
       <MemberSignature Language="C#" Value="public override void OnStartPrint (System.Drawing.Printing.PrintDocument document, System.Drawing.Printing.PrintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnStartPrint(class System.Drawing.Printing.PrintDocument document, class System.Drawing.Printing.PrintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PrintControllerWithStatusDialog.OnStartPrint(System.Drawing.Printing.PrintDocument,System.Drawing.Printing.PrintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnStartPrint (document As PrintDocument, e As PrintEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnStartPrint : System.Drawing.Printing.PrintDocument * System.Drawing.Printing.PrintEventArgs -&gt; unit" Usage="printControllerWithStatusDialog.OnStartPrint (document, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnStartPrint(System::Drawing::Printing::PrintDocument ^ document, System::Drawing::Printing::PrintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -241,14 +274,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PrintControllerWithStatusDialog" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

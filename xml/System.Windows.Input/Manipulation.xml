@@ -1,7 +1,10 @@
-<Type Name="Manipulation" FullName="System.Windows.Input.Manipulation">
+﻿<Type Name="Manipulation" FullName="System.Windows.Input.Manipulation">
   <TypeSignature Language="C#" Value="public static class Manipulation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Manipulation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Manipulation" />
+  <TypeSignature Language="VB.NET" Value="Public Class Manipulation" />
+  <TypeSignature Language="F#" Value="type Manipulation = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Manipulation abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public static void AddManipulator (System.Windows.UIElement element, System.Windows.Input.IManipulator manipulator);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddManipulator(class System.Windows.UIElement element, class System.Windows.Input.IManipulator manipulator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.AddManipulator(System.Windows.UIElement,System.Windows.Input.IManipulator)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddManipulator (element As UIElement, manipulator As IManipulator)" />
+      <MemberSignature Language="F#" Value="static member AddManipulator : System.Windows.UIElement * System.Windows.Input.IManipulator -&gt; unit" Usage="System.Windows.Input.Manipulation.AddManipulator (element, manipulator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddManipulator(System::Windows::UIElement ^ element, System::Windows::Input::IManipulator ^ manipulator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +71,9 @@
       <MemberSignature Language="C#" Value="public static void CompleteManipulation (System.Windows.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CompleteManipulation(class System.Windows.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.CompleteManipulation(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CompleteManipulation (element As UIElement)" />
+      <MemberSignature Language="F#" Value="static member CompleteManipulation : System.Windows.UIElement -&gt; unit" Usage="System.Windows.Input.Manipulation.CompleteManipulation element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CompleteManipulation(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -93,6 +102,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.IInputElement GetManipulationContainer (System.Windows.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.IInputElement GetManipulationContainer(class System.Windows.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.GetManipulationContainer(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetManipulationContainer (element As UIElement) As IInputElement" />
+      <MemberSignature Language="F#" Value="static member GetManipulationContainer : System.Windows.UIElement -&gt; System.Windows.IInputElement" Usage="System.Windows.Input.Manipulation.GetManipulationContainer element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::IInputElement ^ GetManipulationContainer(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +127,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.ManipulationModes GetManipulationMode (System.Windows.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Input.ManipulationModes GetManipulationMode(class System.Windows.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.GetManipulationMode(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetManipulationMode (element As UIElement) As ManipulationModes" />
+      <MemberSignature Language="F#" Value="static member GetManipulationMode : System.Windows.UIElement -&gt; System.Windows.Input.ManipulationModes" Usage="System.Windows.Input.Manipulation.GetManipulationMode element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Input::ManipulationModes GetManipulationMode(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -137,6 +152,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.ManipulationPivot GetManipulationPivot (System.Windows.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Input.ManipulationPivot GetManipulationPivot(class System.Windows.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.GetManipulationPivot(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetManipulationPivot (element As UIElement) As ManipulationPivot" />
+      <MemberSignature Language="F#" Value="static member GetManipulationPivot : System.Windows.UIElement -&gt; System.Windows.Input.ManipulationPivot" Usage="System.Windows.Input.Manipulation.GetManipulationPivot element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Input::ManipulationPivot ^ GetManipulationPivot(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -159,6 +177,9 @@
       <MemberSignature Language="C#" Value="public static bool IsManipulationActive (System.Windows.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsManipulationActive(class System.Windows.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.IsManipulationActive(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsManipulationActive (element As UIElement) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsManipulationActive : System.Windows.UIElement -&gt; bool" Usage="System.Windows.Input.Manipulation.IsManipulationActive element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsManipulationActive(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -182,6 +203,9 @@
       <MemberSignature Language="C#" Value="public static void RemoveManipulator (System.Windows.UIElement element, System.Windows.Input.IManipulator manipulator);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemoveManipulator(class System.Windows.UIElement element, class System.Windows.Input.IManipulator manipulator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.RemoveManipulator(System.Windows.UIElement,System.Windows.Input.IManipulator)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RemoveManipulator (element As UIElement, manipulator As IManipulator)" />
+      <MemberSignature Language="F#" Value="static member RemoveManipulator : System.Windows.UIElement * System.Windows.Input.IManipulator -&gt; unit" Usage="System.Windows.Input.Manipulation.RemoveManipulator (element, manipulator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemoveManipulator(System::Windows::UIElement ^ element, System::Windows::Input::IManipulator ^ manipulator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -205,6 +229,9 @@
       <MemberSignature Language="C#" Value="public static void SetManipulationContainer (System.Windows.UIElement element, System.Windows.IInputElement container);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetManipulationContainer(class System.Windows.UIElement element, class System.Windows.IInputElement container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.SetManipulationContainer(System.Windows.UIElement,System.Windows.IInputElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetManipulationContainer (element As UIElement, container As IInputElement)" />
+      <MemberSignature Language="F#" Value="static member SetManipulationContainer : System.Windows.UIElement * System.Windows.IInputElement -&gt; unit" Usage="System.Windows.Input.Manipulation.SetManipulationContainer (element, container)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetManipulationContainer(System::Windows::UIElement ^ element, System::Windows::IInputElement ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -228,6 +255,9 @@
       <MemberSignature Language="C#" Value="public static void SetManipulationMode (System.Windows.UIElement element, System.Windows.Input.ManipulationModes mode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetManipulationMode(class System.Windows.UIElement element, valuetype System.Windows.Input.ManipulationModes mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.SetManipulationMode(System.Windows.UIElement,System.Windows.Input.ManipulationModes)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetManipulationMode (element As UIElement, mode As ManipulationModes)" />
+      <MemberSignature Language="F#" Value="static member SetManipulationMode : System.Windows.UIElement * System.Windows.Input.ManipulationModes -&gt; unit" Usage="System.Windows.Input.Manipulation.SetManipulationMode (element, mode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetManipulationMode(System::Windows::UIElement ^ element, System::Windows::Input::ManipulationModes mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -251,6 +281,9 @@
       <MemberSignature Language="C#" Value="public static void SetManipulationParameter (System.Windows.UIElement element, System.Windows.Input.Manipulations.ManipulationParameters2D parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetManipulationParameter(class System.Windows.UIElement element, class System.Windows.Input.Manipulations.ManipulationParameters2D parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.SetManipulationParameter(System.Windows.UIElement,System.Windows.Input.Manipulations.ManipulationParameters2D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetManipulationParameter (element As UIElement, parameter As ManipulationParameters2D)" />
+      <MemberSignature Language="F#" Value="static member SetManipulationParameter : System.Windows.UIElement * System.Windows.Input.Manipulations.ManipulationParameters2D -&gt; unit" Usage="System.Windows.Input.Manipulation.SetManipulationParameter (element, parameter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetManipulationParameter(System::Windows::UIElement ^ element, System::Windows::Input::Manipulations::ManipulationParameters2D ^ parameter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -279,6 +312,9 @@
       <MemberSignature Language="C#" Value="public static void SetManipulationPivot (System.Windows.UIElement element, System.Windows.Input.ManipulationPivot pivot);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetManipulationPivot(class System.Windows.UIElement element, class System.Windows.Input.ManipulationPivot pivot) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.SetManipulationPivot(System.Windows.UIElement,System.Windows.Input.ManipulationPivot)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetManipulationPivot (element As UIElement, pivot As ManipulationPivot)" />
+      <MemberSignature Language="F#" Value="static member SetManipulationPivot : System.Windows.UIElement * System.Windows.Input.ManipulationPivot -&gt; unit" Usage="System.Windows.Input.Manipulation.SetManipulationPivot (element, pivot)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetManipulationPivot(System::Windows::UIElement ^ element, System::Windows::Input::ManipulationPivot ^ pivot);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -302,6 +338,9 @@
       <MemberSignature Language="C#" Value="public static void StartInertia (System.Windows.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void StartInertia(class System.Windows.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulation.StartInertia(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub StartInertia (element As UIElement)" />
+      <MemberSignature Language="F#" Value="static member StartInertia : System.Windows.UIElement -&gt; unit" Usage="System.Windows.Input.Manipulation.StartInertia element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void StartInertia(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ConfigurationValidatorBase" FullName="System.Configuration.ConfigurationValidatorBase">
+﻿<Type Name="ConfigurationValidatorBase" FullName="System.Configuration.ConfigurationValidatorBase">
   <TypeSignature Language="C#" Value="public abstract class ConfigurationValidatorBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ConfigurationValidatorBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ConfigurationValidatorBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ConfigurationValidatorBase" />
+  <TypeSignature Language="F#" Value="type ConfigurationValidatorBase = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConfigurationValidatorBase abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,8 @@
       <MemberSignature Language="C#" Value="protected ConfigurationValidatorBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationValidatorBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ConfigurationValidatorBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -50,6 +55,8 @@
       <MemberSignature Language="C#" Value="public virtual bool CanValidate (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanValidate(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationValidatorBase.CanValidate(System.Type)" />
+      <MemberSignature Language="F#" Value="abstract member CanValidate : Type -&gt; bool&#xA;override this.CanValidate : Type -&gt; bool" Usage="configurationValidatorBase.CanValidate type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanValidate(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -77,6 +84,9 @@
       <MemberSignature Language="C#" Value="public abstract void Validate (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Validate(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ConfigurationValidatorBase.Validate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Validate (value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Validate : obj -&gt; unit" Usage="configurationValidatorBase.Validate value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Validate(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

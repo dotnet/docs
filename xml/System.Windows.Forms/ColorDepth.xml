@@ -1,7 +1,10 @@
-<Type Name="ColorDepth" FullName="System.Windows.Forms.ColorDepth">
+﻿<Type Name="ColorDepth" FullName="System.Windows.Forms.ColorDepth">
   <TypeSignature Language="C#" Value="public enum ColorDepth" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColorDepth extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColorDepth" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ColorDepth" />
+  <TypeSignature Language="F#" Value="type ColorDepth = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ColorDepth" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Depth16Bit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ColorDepth Depth16Bit = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ColorDepth.Depth16Bit" />
+      <MemberSignature Language="VB.NET" Value="Depth16Bit" />
+      <MemberSignature Language="F#" Value="Depth16Bit = 16" Usage="System.Windows.Forms.ColorDepth.Depth16Bit" />
+      <MemberSignature Language="C++ CLI" Value="Depth16Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ColorDepth</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>A 16-bit image.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Depth24Bit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ColorDepth Depth24Bit = int32(24)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ColorDepth.Depth24Bit" />
+      <MemberSignature Language="VB.NET" Value="Depth24Bit" />
+      <MemberSignature Language="F#" Value="Depth24Bit = 24" Usage="System.Windows.Forms.ColorDepth.Depth24Bit" />
+      <MemberSignature Language="C++ CLI" Value="Depth24Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ColorDepth</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>A 24-bit image.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="Depth32Bit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ColorDepth Depth32Bit = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ColorDepth.Depth32Bit" />
+      <MemberSignature Language="VB.NET" Value="Depth32Bit" />
+      <MemberSignature Language="F#" Value="Depth32Bit = 32" Usage="System.Windows.Forms.ColorDepth.Depth32Bit" />
+      <MemberSignature Language="C++ CLI" Value="Depth32Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ColorDepth</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>A 32-bit image.</summary>
       </Docs>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="Depth4Bit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ColorDepth Depth4Bit = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ColorDepth.Depth4Bit" />
+      <MemberSignature Language="VB.NET" Value="Depth4Bit" />
+      <MemberSignature Language="F#" Value="Depth4Bit = 4" Usage="System.Windows.Forms.ColorDepth.Depth4Bit" />
+      <MemberSignature Language="C++ CLI" Value="Depth4Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ColorDepth</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A 4-bit image.</summary>
       </Docs>
@@ -89,6 +108,9 @@
       <MemberSignature Language="C#" Value="Depth8Bit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ColorDepth Depth8Bit = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ColorDepth.Depth8Bit" />
+      <MemberSignature Language="VB.NET" Value="Depth8Bit" />
+      <MemberSignature Language="F#" Value="Depth8Bit = 8" Usage="System.Windows.Forms.ColorDepth.Depth8Bit" />
+      <MemberSignature Language="C++ CLI" Value="Depth8Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ColorDepth</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>An 8-bit image.</summary>
       </Docs>

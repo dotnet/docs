@@ -1,7 +1,10 @@
-<Type Name="WebPartDisplayMode" FullName="System.Web.UI.WebControls.WebParts.WebPartDisplayMode">
+﻿<Type Name="WebPartDisplayMode" FullName="System.Web.UI.WebControls.WebParts.WebPartDisplayMode">
   <TypeSignature Language="C#" Value="public abstract class WebPartDisplayMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WebPartDisplayMode extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartDisplayMode" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebPartDisplayMode" />
+  <TypeSignature Language="F#" Value="type WebPartDisplayMode = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartDisplayMode abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +75,9 @@
       <MemberSignature Language="C#" Value="protected WebPartDisplayMode (string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartDisplayMode : string -&gt; System.Web.UI.WebControls.WebParts.WebPartDisplayMode" Usage="new System.Web.UI.WebControls.WebParts.WebPartDisplayMode name" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebPartDisplayMode(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -101,6 +107,9 @@
       <MemberSignature Language="C#" Value="public virtual bool AllowPageDesign { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowPageDesign" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AllowPageDesign" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AllowPageDesign As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowPageDesign : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AllowPageDesign" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowPageDesign { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,6 +129,9 @@
       <MemberSignature Language="C#" Value="public virtual bool AssociatedWithToolZone { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AssociatedWithToolZone" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AssociatedWithToolZone" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AssociatedWithToolZone As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AssociatedWithToolZone : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartDisplayMode.AssociatedWithToolZone" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AssociatedWithToolZone { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +162,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsEnabled (System.Web.UI.WebControls.WebParts.WebPartManager webPartManager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsEnabled(class System.Web.UI.WebControls.WebParts.WebPartManager webPartManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.IsEnabled(System.Web.UI.WebControls.WebParts.WebPartManager)" />
+      <MemberSignature Language="F#" Value="abstract member IsEnabled : System.Web.UI.WebControls.WebParts.WebPartManager -&gt; bool&#xA;override this.IsEnabled : System.Web.UI.WebControls.WebParts.WebPartManager -&gt; bool" Usage="webPartDisplayMode.IsEnabled webPartManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsEnabled(System::Web::UI::WebControls::WebParts::WebPartManager ^ webPartManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -173,6 +187,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.UI.WebControls.WebParts.WebPartDisplayMode.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,6 +208,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RequiresPersonalization { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresPersonalization" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.RequiresPersonalization" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresPersonalization As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresPersonalization : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartDisplayMode.RequiresPersonalization" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresPersonalization { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -209,6 +229,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ShowHiddenWebParts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowHiddenWebParts" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDisplayMode.ShowHiddenWebParts" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ShowHiddenWebParts As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowHiddenWebParts : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartDisplayMode.ShowHiddenWebParts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowHiddenWebParts { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

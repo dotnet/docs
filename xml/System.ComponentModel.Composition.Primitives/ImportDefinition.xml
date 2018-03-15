@@ -1,7 +1,10 @@
-<Type Name="ImportDefinition" FullName="System.ComponentModel.Composition.Primitives.ImportDefinition">
+﻿<Type Name="ImportDefinition" FullName="System.ComponentModel.Composition.Primitives.ImportDefinition">
   <TypeSignature Language="C#" Value="public class ImportDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImportDefinition extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Primitives.ImportDefinition" />
+  <TypeSignature Language="VB.NET" Value="Public Class ImportDefinition" />
+  <TypeSignature Language="F#" Value="type ImportDefinition = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImportDefinition" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -16,10 +19,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.ImportDefinition" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ImportDefinition ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ImportDefinition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ImportDefinition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -43,6 +58,9 @@
       <MemberSignature Language="C#" Value="public ImportDefinition (System.Linq.Expressions.Expression&lt;Func&lt;System.ComponentModel.Composition.Primitives.ExportDefinition,bool&gt;&gt; constraint, string contractName, System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, bool isRecomposable, bool isPrerequisite);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.ComponentModel.Composition.Primitives.ExportDefinition, bool&gt;&gt; constraint, string contractName, valuetype System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, bool isRecomposable, bool isPrerequisite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ImportDefinition.#ctor(System.Linq.Expressions.Expression{System.Func{System.ComponentModel.Composition.Primitives.ExportDefinition,System.Boolean}},System.String,System.ComponentModel.Composition.Primitives.ImportCardinality,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (constraint As Expression(Of Func(Of ExportDefinition, Boolean)), contractName As String, cardinality As ImportCardinality, isRecomposable As Boolean, isPrerequisite As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Primitives.ImportDefinition : System.Linq.Expressions.Expression&lt;Func&lt;System.ComponentModel.Composition.Primitives.ExportDefinition, bool&gt;&gt; * string * System.ComponentModel.Composition.Primitives.ImportCardinality * bool * bool -&gt; System.ComponentModel.Composition.Primitives.ImportDefinition" Usage="new System.ComponentModel.Composition.Primitives.ImportDefinition (constraint, contractName, cardinality, isRecomposable, isPrerequisite)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImportDefinition(System::Linq::Expressions::Expression&lt;Func&lt;System::ComponentModel::Composition::Primitives::ExportDefinition ^, bool&gt; ^&gt; ^ constraint, System::String ^ contractName, System::ComponentModel::Composition::Primitives::ImportCardinality cardinality, bool isRecomposable, bool isPrerequisite);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -76,6 +94,9 @@
       <MemberSignature Language="C#" Value="public ImportDefinition (System.Linq.Expressions.Expression&lt;Func&lt;System.ComponentModel.Composition.Primitives.ExportDefinition,bool&gt;&gt; constraint, string contractName, System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, bool isRecomposable, bool isPrerequisite, System.Collections.Generic.IDictionary&lt;string,object&gt; metadata);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.ComponentModel.Composition.Primitives.ExportDefinition, bool&gt;&gt; constraint, string contractName, valuetype System.ComponentModel.Composition.Primitives.ImportCardinality cardinality, bool isRecomposable, bool isPrerequisite, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ImportDefinition.#ctor(System.Linq.Expressions.Expression{System.Func{System.ComponentModel.Composition.Primitives.ExportDefinition,System.Boolean}},System.String,System.ComponentModel.Composition.Primitives.ImportCardinality,System.Boolean,System.Boolean,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (constraint As Expression(Of Func(Of ExportDefinition, Boolean)), contractName As String, cardinality As ImportCardinality, isRecomposable As Boolean, isPrerequisite As Boolean, metadata As IDictionary(Of String, Object))" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Primitives.ImportDefinition : System.Linq.Expressions.Expression&lt;Func&lt;System.ComponentModel.Composition.Primitives.ExportDefinition, bool&gt;&gt; * string * System.ComponentModel.Composition.Primitives.ImportCardinality * bool * bool * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.ComponentModel.Composition.Primitives.ImportDefinition" Usage="new System.ComponentModel.Composition.Primitives.ImportDefinition (constraint, contractName, cardinality, isRecomposable, isPrerequisite, metadata)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImportDefinition(System::Linq::Expressions::Expression&lt;Func&lt;System::ComponentModel::Composition::Primitives::ExportDefinition ^, bool&gt; ^&gt; ^ constraint, System::String ^ contractName, System::ComponentModel::Composition::Primitives::ImportCardinality cardinality, bool isRecomposable, bool isPrerequisite, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ metadata);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -107,6 +128,9 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.Composition.Primitives.ImportCardinality Cardinality { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.Composition.Primitives.ImportCardinality Cardinality" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ImportDefinition.Cardinality" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Cardinality As ImportCardinality" />
+      <MemberSignature Language="F#" Value="member this.Cardinality : System.ComponentModel.Composition.Primitives.ImportCardinality" Usage="System.ComponentModel.Composition.Primitives.ImportDefinition.Cardinality" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Composition::Primitives::ImportCardinality Cardinality { System::ComponentModel::Composition::Primitives::ImportCardinality get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -126,6 +150,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Linq.Expressions.Expression&lt;Func&lt;System.ComponentModel.Composition.Primitives.ExportDefinition,bool&gt;&gt; Constraint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.ComponentModel.Composition.Primitives.ExportDefinition, bool&gt;&gt; Constraint" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ImportDefinition.Constraint" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Constraint As Expression(Of Func(Of ExportDefinition, Boolean))" />
+      <MemberSignature Language="F#" Value="member this.Constraint : System.Linq.Expressions.Expression&lt;Func&lt;System.ComponentModel.Composition.Primitives.ExportDefinition, bool&gt;&gt;" Usage="System.ComponentModel.Composition.Primitives.ImportDefinition.Constraint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Linq::Expressions::Expression&lt;Func&lt;System::ComponentModel::Composition::Primitives::ExportDefinition ^, bool&gt; ^&gt; ^ Constraint { System::Linq::Expressions::Expression&lt;Func&lt;System::ComponentModel::Composition::Primitives::ExportDefinition ^, bool&gt; ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -153,6 +180,9 @@
       <MemberSignature Language="C#" Value="public virtual string ContractName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContractName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ImportDefinition.ContractName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContractName As String" />
+      <MemberSignature Language="F#" Value="member this.ContractName : string" Usage="System.ComponentModel.Composition.Primitives.ImportDefinition.ContractName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContractName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -172,6 +202,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsConstraintSatisfiedBy (System.ComponentModel.Composition.Primitives.ExportDefinition exportDefinition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsConstraintSatisfiedBy(class System.ComponentModel.Composition.Primitives.ExportDefinition exportDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ImportDefinition.IsConstraintSatisfiedBy(System.ComponentModel.Composition.Primitives.ExportDefinition)" />
+      <MemberSignature Language="F#" Value="abstract member IsConstraintSatisfiedBy : System.ComponentModel.Composition.Primitives.ExportDefinition -&gt; bool&#xA;override this.IsConstraintSatisfiedBy : System.ComponentModel.Composition.Primitives.ExportDefinition -&gt; bool" Usage="importDefinition.IsConstraintSatisfiedBy exportDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsConstraintSatisfiedBy(System::ComponentModel::Composition::Primitives::ExportDefinition ^ exportDefinition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -196,6 +228,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsPrerequisite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPrerequisite" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ImportDefinition.IsPrerequisite" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsPrerequisite As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPrerequisite : bool" Usage="System.ComponentModel.Composition.Primitives.ImportDefinition.IsPrerequisite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsPrerequisite { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -216,6 +251,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsRecomposable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRecomposable" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ImportDefinition.IsRecomposable" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsRecomposable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRecomposable : bool" Usage="System.ComponentModel.Composition.Primitives.ImportDefinition.IsRecomposable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsRecomposable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -236,6 +274,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IDictionary&lt;string,object&gt; Metadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Metadata" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ImportDefinition.Metadata" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Metadata As IDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.ComponentModel.Composition.Primitives.ImportDefinition.Metadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Metadata { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -262,6 +303,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Primitives.ImportDefinition.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="importDefinition.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -278,15 +322,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Primitives.ImportDefinition" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

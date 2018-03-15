@@ -1,7 +1,10 @@
-<Type Name="FileLoadException" FullName="System.IO.FileLoadException">
+﻿<Type Name="FileLoadException" FullName="System.IO.FileLoadException">
   <TypeSignature Language="C#" Value="public class FileLoadException : System.IO.IOException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FileLoadException extends System.IO.IOException" />
   <TypeSignature Language="DocId" Value="T:System.IO.FileLoadException" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileLoadException&#xA;Inherits IOException" />
+  <TypeSignature Language="F#" Value="type FileLoadException = class&#xA;    inherit IOException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileLoadException : System::IO::IOException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -62,10 +65,23 @@
     <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.FileLoadException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FileLoadException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileLoadException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileLoadException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -99,6 +115,9 @@
       <MemberSignature Language="C#" Value="public FileLoadException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileLoadException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.IO.FileLoadException : string -&gt; System.IO.FileLoadException" Usage="new System.IO.FileLoadException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileLoadException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -135,6 +154,9 @@
       <MemberSignature Language="C#" Value="protected FileLoadException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileLoadException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.IO.FileLoadException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IO.FileLoadException" Usage="new System.IO.FileLoadException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; FileLoadException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -164,6 +186,9 @@
       <MemberSignature Language="C#" Value="public FileLoadException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileLoadException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="F#" Value="new System.IO.FileLoadException : string * Exception -&gt; System.IO.FileLoadException" Usage="new System.IO.FileLoadException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileLoadException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -212,6 +237,9 @@
       <MemberSignature Language="C#" Value="public FileLoadException (string message, string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileLoadException.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, fileName As String)" />
+      <MemberSignature Language="F#" Value="new System.IO.FileLoadException : string * string -&gt; System.IO.FileLoadException" Usage="new System.IO.FileLoadException (message, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileLoadException(System::String ^ message, System::String ^ fileName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -252,6 +280,9 @@
       <MemberSignature Language="C#" Value="public FileLoadException (string message, string fileName, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string fileName, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileLoadException.#ctor(System.String,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, fileName As String, inner As Exception)" />
+      <MemberSignature Language="F#" Value="new System.IO.FileLoadException : string * string * Exception -&gt; System.IO.FileLoadException" Usage="new System.IO.FileLoadException (message, fileName, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileLoadException(System::String ^ message, System::String ^ fileName, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -304,6 +335,9 @@
       <MemberSignature Language="C#" Value="public string FileName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileLoadException.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
+      <MemberSignature Language="F#" Value="member this.FileName : string" Usage="System.IO.FileLoadException.FileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -342,6 +376,9 @@
       <MemberSignature Language="C#" Value="public string FusionLog { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FusionLog" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileLoadException.FusionLog" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FusionLog As String" />
+      <MemberSignature Language="F#" Value="member this.FusionLog : string" Usage="System.IO.FileLoadException.FusionLog" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FusionLog { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -376,6 +413,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileLoadException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="fileLoadException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -416,6 +456,9 @@
       <MemberSignature Language="C#" Value="public override string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileLoadException.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.IO.FileLoadException.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -456,6 +499,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileLoadException.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fileLoadException.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -491,16 +537,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.FileLoadException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

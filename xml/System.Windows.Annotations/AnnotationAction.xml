@@ -1,7 +1,10 @@
-<Type Name="AnnotationAction" FullName="System.Windows.Annotations.AnnotationAction">
+﻿<Type Name="AnnotationAction" FullName="System.Windows.Annotations.AnnotationAction">
   <TypeSignature Language="C#" Value="public enum AnnotationAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AnnotationAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.AnnotationAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AnnotationAction" />
+  <TypeSignature Language="F#" Value="type AnnotationAction = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AnnotationAction" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="Added" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Annotations.AnnotationAction Added = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.AnnotationAction.Added" />
+      <MemberSignature Language="VB.NET" Value="Added" />
+      <MemberSignature Language="F#" Value="Added = 0" Usage="System.Windows.Annotations.AnnotationAction.Added" />
+      <MemberSignature Language="C++ CLI" Value="Added" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The component was added to the annotation.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="Modified" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Annotations.AnnotationAction Modified = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.AnnotationAction.Modified" />
+      <MemberSignature Language="VB.NET" Value="Modified" />
+      <MemberSignature Language="F#" Value="Modified = 2" Usage="System.Windows.Annotations.AnnotationAction.Modified" />
+      <MemberSignature Language="C++ CLI" Value="Modified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The component was modified within the annotation.</summary>
       </Docs>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="Removed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Annotations.AnnotationAction Removed = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Annotations.AnnotationAction.Removed" />
+      <MemberSignature Language="VB.NET" Value="Removed" />
+      <MemberSignature Language="F#" Value="Removed = 1" Usage="System.Windows.Annotations.AnnotationAction.Removed" />
+      <MemberSignature Language="C++ CLI" Value="Removed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Annotations.AnnotationAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The component was removed from the annotation.</summary>
       </Docs>

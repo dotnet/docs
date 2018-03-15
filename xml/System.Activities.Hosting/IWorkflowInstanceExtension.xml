@@ -1,7 +1,10 @@
-<Type Name="IWorkflowInstanceExtension" FullName="System.Activities.Hosting.IWorkflowInstanceExtension">
+﻿<Type Name="IWorkflowInstanceExtension" FullName="System.Activities.Hosting.IWorkflowInstanceExtension">
   <TypeSignature Language="C#" Value="public interface IWorkflowInstanceExtension" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWorkflowInstanceExtension" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Hosting.IWorkflowInstanceExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWorkflowInstanceExtension" />
+  <TypeSignature Language="F#" Value="type IWorkflowInstanceExtension = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWorkflowInstanceExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +19,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;object&gt; GetAdditionalExtensions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; GetAdditionalExtensions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.IWorkflowInstanceExtension.GetAdditionalExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAdditionalExtensions () As IEnumerable(Of Object)" />
+      <MemberSignature Language="F#" Value="abstract member GetAdditionalExtensions : unit -&gt; seq&lt;obj&gt;" Usage="iWorkflowInstanceExtension.GetAdditionalExtensions " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ GetAdditionalExtensions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -35,6 +41,9 @@
       <MemberSignature Language="C#" Value="public void SetInstance (System.Activities.Hosting.WorkflowInstanceProxy instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetInstance(class System.Activities.Hosting.WorkflowInstanceProxy instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.IWorkflowInstanceExtension.SetInstance(System.Activities.Hosting.WorkflowInstanceProxy)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetInstance (instance As WorkflowInstanceProxy)" />
+      <MemberSignature Language="F#" Value="abstract member SetInstance : System.Activities.Hosting.WorkflowInstanceProxy -&gt; unit" Usage="iWorkflowInstanceExtension.SetInstance instance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInstance(System::Activities::Hosting::WorkflowInstanceProxy ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

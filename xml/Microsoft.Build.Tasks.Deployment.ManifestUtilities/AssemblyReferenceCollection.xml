@@ -1,7 +1,10 @@
-<Type Name="AssemblyReferenceCollection" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection">
+﻿<Type Name="AssemblyReferenceCollection" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection">
   <TypeSignature Language="C#" Value="public sealed class AssemblyReferenceCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyReferenceCollection extends System.Object implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyReferenceCollection&#xA;Implements IEnumerable" />
+  <TypeSignature Language="F#" Value="type AssemblyReferenceCollection = class&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyReferenceCollection sealed : System::Collections::IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +27,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified assembly reference to the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference Add (Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference Add(class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Add(Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (assembly As AssemblyReference) As AssemblyReference" />
+      <MemberSignature Language="F#" Value="member this.Add : Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference" Usage="assemblyReferenceCollection.Add assembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ Add(Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ assembly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -50,6 +65,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference Add (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference Add(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Add(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (path As String) As AssemblyReference" />
+      <MemberSignature Language="F#" Value="member this.Add : string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference" Usage="assemblyReferenceCollection.Add path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ Add(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -72,6 +90,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="assemblyReferenceCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -90,6 +111,9 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -104,10 +128,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Find">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds an assembly reference in the collection by the specified assembly identity.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Find">
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference Find (Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference Find(class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Find(Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (identity As AssemblyIdentity) As AssemblyReference" />
+      <MemberSignature Language="F#" Value="member this.Find : Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyIdentity -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference" Usage="assemblyReferenceCollection.Find identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ Find(Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyIdentity ^ identity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -130,6 +166,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference Find (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference Find(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Find(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (name As String) As AssemblyReference" />
+      <MemberSignature Language="F#" Value="member this.Find : string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference" Usage="assemblyReferenceCollection.Find name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ Find(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -152,6 +191,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference FindTargetPath (string targetPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference FindTargetPath(string targetPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.FindTargetPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindTargetPath (targetPath As String) As AssemblyReference" />
+      <MemberSignature Language="F#" Value="member this.FindTargetPath : string -&gt; Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference" Usage="assemblyReferenceCollection.FindTargetPath targetPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ FindTargetPath(System::String ^ targetPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -174,7 +216,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="assemblyReferenceCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -193,6 +241,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference Item(int32)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As AssemblyReference" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ default[int] { Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -215,6 +266,8 @@
       <MemberSignature Language="C#" Value="public void Remove (Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference assemblyReference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference assemblyReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReferenceCollection.Remove(Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference)" />
+      <MemberSignature Language="F#" Value="member this.Remove : Microsoft.Build.Tasks.Deployment.ManifestUtilities.AssemblyReference -&gt; unit" Usage="assemblyReferenceCollection.Remove assemblyReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(Microsoft::Build::Tasks::Deployment::ManifestUtilities::AssemblyReference ^ assemblyReference);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -232,23 +285,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified assembly reference to the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Find">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Finds an assembly reference in the collection by the specified assembly identity.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

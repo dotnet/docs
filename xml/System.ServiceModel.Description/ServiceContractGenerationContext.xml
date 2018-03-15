@@ -1,7 +1,10 @@
-<Type Name="ServiceContractGenerationContext" FullName="System.ServiceModel.Description.ServiceContractGenerationContext">
+﻿<Type Name="ServiceContractGenerationContext" FullName="System.ServiceModel.Description.ServiceContractGenerationContext">
   <TypeSignature Language="C#" Value="public class ServiceContractGenerationContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceContractGenerationContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceContractGenerationContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceContractGenerationContext" />
+  <TypeSignature Language="F#" Value="type ServiceContractGenerationContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceContractGenerationContext" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +37,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceContractGenerationContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ServiceContractGenerationContext (System.ServiceModel.Description.ServiceContractGenerator serviceContractGenerator, System.ServiceModel.Description.ContractDescription contract, System.CodeDom.CodeTypeDeclaration contractType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ServiceContractGenerator serviceContractGenerator, class System.ServiceModel.Description.ContractDescription contract, class System.CodeDom.CodeTypeDeclaration contractType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceContractGenerationContext.#ctor(System.ServiceModel.Description.ServiceContractGenerator,System.ServiceModel.Description.ContractDescription,System.CodeDom.CodeTypeDeclaration)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ServiceContractGenerationContext : System.ServiceModel.Description.ServiceContractGenerator * System.ServiceModel.Description.ContractDescription * System.CodeDom.CodeTypeDeclaration -&gt; System.ServiceModel.Description.ServiceContractGenerationContext" Usage="new System.ServiceModel.Description.ServiceContractGenerationContext (serviceContractGenerator, contract, contractType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceContractGenerationContext(System::ServiceModel::Description::ServiceContractGenerator ^ serviceContractGenerator, System::ServiceModel::Description::ContractDescription ^ contract, System::CodeDom::CodeTypeDeclaration ^ contractType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +74,8 @@
       <MemberSignature Language="C#" Value="public ServiceContractGenerationContext (System.ServiceModel.Description.ServiceContractGenerator serviceContractGenerator, System.ServiceModel.Description.ContractDescription contract, System.CodeDom.CodeTypeDeclaration contractType, System.CodeDom.CodeTypeDeclaration duplexCallbackType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ServiceContractGenerator serviceContractGenerator, class System.ServiceModel.Description.ContractDescription contract, class System.CodeDom.CodeTypeDeclaration contractType, class System.CodeDom.CodeTypeDeclaration duplexCallbackType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceContractGenerationContext.#ctor(System.ServiceModel.Description.ServiceContractGenerator,System.ServiceModel.Description.ContractDescription,System.CodeDom.CodeTypeDeclaration,System.CodeDom.CodeTypeDeclaration)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ServiceContractGenerationContext : System.ServiceModel.Description.ServiceContractGenerator * System.ServiceModel.Description.ContractDescription * System.CodeDom.CodeTypeDeclaration * System.CodeDom.CodeTypeDeclaration -&gt; System.ServiceModel.Description.ServiceContractGenerationContext" Usage="new System.ServiceModel.Description.ServiceContractGenerationContext (serviceContractGenerator, contract, contractType, duplexCallbackType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceContractGenerationContext(System::ServiceModel::Description::ServiceContractGenerator ^ serviceContractGenerator, System::ServiceModel::Description::ContractDescription ^ contract, System::CodeDom::CodeTypeDeclaration ^ contractType, System::CodeDom::CodeTypeDeclaration ^ duplexCallbackType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +100,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ContractDescription Contract { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.ContractDescription Contract" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceContractGenerationContext.Contract" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Contract As ContractDescription" />
+      <MemberSignature Language="F#" Value="member this.Contract : System.ServiceModel.Description.ContractDescription" Usage="System.ServiceModel.Description.ServiceContractGenerationContext.Contract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ContractDescription ^ Contract { System::ServiceModel::Description::ContractDescription ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -109,6 +128,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeDeclaration ContractType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeDeclaration ContractType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceContractGenerationContext.ContractType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContractType As CodeTypeDeclaration" />
+      <MemberSignature Language="F#" Value="member this.ContractType : System.CodeDom.CodeTypeDeclaration" Usage="System.ServiceModel.Description.ServiceContractGenerationContext.ContractType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeDeclaration ^ ContractType { System::CodeDom::CodeTypeDeclaration ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,6 +168,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeDeclaration DuplexCallbackType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeDeclaration DuplexCallbackType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceContractGenerationContext.DuplexCallbackType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DuplexCallbackType As CodeTypeDeclaration" />
+      <MemberSignature Language="F#" Value="member this.DuplexCallbackType : System.CodeDom.CodeTypeDeclaration" Usage="System.ServiceModel.Description.ServiceContractGenerationContext.DuplexCallbackType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeDeclaration ^ DuplexCallbackType { System::CodeDom::CodeTypeDeclaration ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -171,6 +196,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.OperationContractGenerationContext&gt; Operations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.OperationContractGenerationContext&gt; Operations" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceContractGenerationContext.Operations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operations As Collection(Of OperationContractGenerationContext)" />
+      <MemberSignature Language="F#" Value="member this.Operations : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.OperationContractGenerationContext&gt;" Usage="System.ServiceModel.Description.ServiceContractGenerationContext.Operations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::OperationContractGenerationContext ^&gt; ^ Operations { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::OperationContractGenerationContext ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -196,6 +224,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceContractGenerator ServiceContractGenerator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.ServiceContractGenerator ServiceContractGenerator" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceContractGenerationContext.ServiceContractGenerator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceContractGenerator As ServiceContractGenerator" />
+      <MemberSignature Language="F#" Value="member this.ServiceContractGenerator : System.ServiceModel.Description.ServiceContractGenerator" Usage="System.ServiceModel.Description.ServiceContractGenerationContext.ServiceContractGenerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ServiceContractGenerator ^ ServiceContractGenerator { System::ServiceModel::Description::ServiceContractGenerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -217,14 +248,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceContractGenerationContext" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

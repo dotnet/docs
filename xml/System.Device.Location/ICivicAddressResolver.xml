@@ -1,7 +1,10 @@
-<Type Name="ICivicAddressResolver" FullName="System.Device.Location.ICivicAddressResolver">
+﻿<Type Name="ICivicAddressResolver" FullName="System.Device.Location.ICivicAddressResolver">
   <TypeSignature Language="C#" Value="public interface ICivicAddressResolver" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICivicAddressResolver" />
   <TypeSignature Language="DocId" Value="T:System.Device.Location.ICivicAddressResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICivicAddressResolver" />
+  <TypeSignature Language="F#" Value="type ICivicAddressResolver = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICivicAddressResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="public System.Device.Location.CivicAddress ResolveAddress (System.Device.Location.GeoCoordinate coordinate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Device.Location.CivicAddress ResolveAddress(class System.Device.Location.GeoCoordinate coordinate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.ICivicAddressResolver.ResolveAddress(System.Device.Location.GeoCoordinate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveAddress (coordinate As GeoCoordinate) As CivicAddress" />
+      <MemberSignature Language="F#" Value="abstract member ResolveAddress : System.Device.Location.GeoCoordinate -&gt; System.Device.Location.CivicAddress" Usage="iCivicAddressResolver.ResolveAddress coordinate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Device::Location::CivicAddress ^ ResolveAddress(System::Device::Location::GeoCoordinate ^ coordinate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -56,6 +62,9 @@
       <MemberSignature Language="C#" Value="public void ResolveAddressAsync (System.Device.Location.GeoCoordinate coordinate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResolveAddressAsync(class System.Device.Location.GeoCoordinate coordinate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.ICivicAddressResolver.ResolveAddressAsync(System.Device.Location.GeoCoordinate)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResolveAddressAsync (coordinate As GeoCoordinate)" />
+      <MemberSignature Language="F#" Value="abstract member ResolveAddressAsync : System.Device.Location.GeoCoordinate -&gt; unit" Usage="iCivicAddressResolver.ResolveAddressAsync coordinate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResolveAddressAsync(System::Device::Location::GeoCoordinate ^ coordinate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -85,9 +94,12 @@
       </Docs>
     </Member>
     <Member MemberName="ResolveAddressCompleted">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Device.Location.ResolveAddressCompletedEventArgs&gt; ResolveAddressCompleted;" />
+      <MemberSignature Language="C#" Value="event EventHandler&lt;System.Device.Location.ResolveAddressCompletedEventArgs&gt; ResolveAddressCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Device.Location.ResolveAddressCompletedEventArgs&gt; ResolveAddressCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Device.Location.ICivicAddressResolver.ResolveAddressCompleted" />
+      <MemberSignature Language="VB.NET" Value="Event ResolveAddressCompleted As EventHandler(Of ResolveAddressCompletedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ResolveAddressCompleted : EventHandler&lt;System.Device.Location.ResolveAddressCompletedEventArgs&gt; " Usage="member this.ResolveAddressCompleted : System.EventHandler&lt;System.Device.Location.ResolveAddressCompletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Device::Location::ResolveAddressCompletedEventArgs ^&gt; ^ ResolveAddressCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>

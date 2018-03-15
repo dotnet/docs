@@ -1,7 +1,10 @@
-<Type Name="EnvironmentVariableTarget" FullName="System.EnvironmentVariableTarget">
+﻿<Type Name="EnvironmentVariableTarget" FullName="System.EnvironmentVariableTarget">
   <TypeSignature Language="C#" Value="public enum EnvironmentVariableTarget" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EnvironmentVariableTarget extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.EnvironmentVariableTarget" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EnvironmentVariableTarget" />
+  <TypeSignature Language="F#" Value="type EnvironmentVariableTarget = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EnvironmentVariableTarget" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +53,9 @@
       <MemberSignature Language="C#" Value="Machine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnvironmentVariableTarget Machine = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.EnvironmentVariableTarget.Machine" />
+      <MemberSignature Language="VB.NET" Value="Machine" />
+      <MemberSignature Language="F#" Value="Machine = 2" Usage="System.EnvironmentVariableTarget.Machine" />
+      <MemberSignature Language="C++ CLI" Value="Machine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -67,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.EnvironmentVariableTarget</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The environment variable is stored or retrieved from the <see langword="HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager\Environment" /> key in the Windows operating system registry.</summary>
         <remarks>
@@ -85,6 +92,9 @@
       <MemberSignature Language="C#" Value="Process" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnvironmentVariableTarget Process = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.EnvironmentVariableTarget.Process" />
+      <MemberSignature Language="VB.NET" Value="Process" />
+      <MemberSignature Language="F#" Value="Process = 0" Usage="System.EnvironmentVariableTarget.Process" />
+      <MemberSignature Language="C++ CLI" Value="Process" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.EnvironmentVariableTarget</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The environment variable is stored or retrieved from the environment block associated with the current process.</summary>
         <remarks>
@@ -120,6 +131,9 @@
       <MemberSignature Language="C#" Value="User" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnvironmentVariableTarget User = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.EnvironmentVariableTarget.User" />
+      <MemberSignature Language="VB.NET" Value="User" />
+      <MemberSignature Language="F#" Value="User = 1" Usage="System.EnvironmentVariableTarget.User" />
+      <MemberSignature Language="C++ CLI" Value="User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -137,6 +151,7 @@
       <ReturnValue>
         <ReturnType>System.EnvironmentVariableTarget</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The environment variable is stored or retrieved from the <see langword="HKEY_CURRENT_USER\Environment" /> key in the Windows operating system registry.</summary>
         <remarks>

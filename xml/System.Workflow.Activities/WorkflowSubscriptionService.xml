@@ -1,7 +1,10 @@
-<Type Name="WorkflowSubscriptionService" FullName="System.Workflow.Activities.WorkflowSubscriptionService">
+﻿<Type Name="WorkflowSubscriptionService" FullName="System.Workflow.Activities.WorkflowSubscriptionService">
   <TypeSignature Language="C#" Value="public abstract class WorkflowSubscriptionService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WorkflowSubscriptionService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WorkflowSubscriptionService" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowSubscriptionService" />
+  <TypeSignature Language="F#" Value="type WorkflowSubscriptionService = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowSubscriptionService abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="protected WorkflowSubscriptionService ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowSubscriptionService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowSubscriptionService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -53,6 +58,9 @@
       <MemberSignature Language="C#" Value="public abstract void CreateSubscription (System.Workflow.Activities.MessageEventSubscription subscription);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateSubscription(class System.Workflow.Activities.MessageEventSubscription subscription) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowSubscriptionService.CreateSubscription(System.Workflow.Activities.MessageEventSubscription)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub CreateSubscription (subscription As MessageEventSubscription)" />
+      <MemberSignature Language="F#" Value="abstract member CreateSubscription : System.Workflow.Activities.MessageEventSubscription -&gt; unit" Usage="workflowSubscriptionService.CreateSubscription subscription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void CreateSubscription(System::Workflow::Activities::MessageEventSubscription ^ subscription);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -74,6 +82,9 @@
       <MemberSignature Language="C#" Value="public abstract void DeleteSubscription (Guid subscriptionId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeleteSubscription(valuetype System.Guid subscriptionId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WorkflowSubscriptionService.DeleteSubscription(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub DeleteSubscription (subscriptionId As Guid)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteSubscription : Guid -&gt; unit" Usage="workflowSubscriptionService.DeleteSubscription subscriptionId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void DeleteSubscription(Guid subscriptionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

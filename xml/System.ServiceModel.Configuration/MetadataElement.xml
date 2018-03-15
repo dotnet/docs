@@ -1,7 +1,10 @@
-<Type Name="MetadataElement" FullName="System.ServiceModel.Configuration.MetadataElement">
+﻿<Type Name="MetadataElement" FullName="System.ServiceModel.Configuration.MetadataElement">
   <TypeSignature Language="C#" Value="public sealed class MetadataElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MetadataElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MetadataElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MetadataElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type MetadataElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MetadataElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public MetadataElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MetadataElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MetadataElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.IPolicyImportExtension&gt; LoadPolicyImportExtensions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.IPolicyImportExtension&gt; LoadPolicyImportExtensions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MetadataElement.LoadPolicyImportExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadPolicyImportExtensions () As Collection(Of IPolicyImportExtension)" />
+      <MemberSignature Language="F#" Value="member this.LoadPolicyImportExtensions : unit -&gt; System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.IPolicyImportExtension&gt;" Usage="metadataElement.LoadPolicyImportExtensions " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::IPolicyImportExtension ^&gt; ^ LoadPolicyImportExtensions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -53,6 +61,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.IWsdlImportExtension&gt; LoadWsdlImportExtensions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.IWsdlImportExtension&gt; LoadWsdlImportExtensions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MetadataElement.LoadWsdlImportExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadWsdlImportExtensions () As Collection(Of IWsdlImportExtension)" />
+      <MemberSignature Language="F#" Value="member this.LoadWsdlImportExtensions : unit -&gt; System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.IWsdlImportExtension&gt;" Usage="metadataElement.LoadWsdlImportExtensions " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::IWsdlImportExtension ^&gt; ^ LoadWsdlImportExtensions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +83,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.PolicyImporterElementCollection PolicyImporters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.PolicyImporterElementCollection PolicyImporters" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MetadataElement.PolicyImporters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PolicyImporters As PolicyImporterElementCollection" />
+      <MemberSignature Language="F#" Value="member this.PolicyImporters : System.ServiceModel.Configuration.PolicyImporterElementCollection" Usage="System.ServiceModel.Configuration.MetadataElement.PolicyImporters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::PolicyImporterElementCollection ^ PolicyImporters { System::ServiceModel::Configuration::PolicyImporterElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -102,6 +116,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MetadataElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.MetadataElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -120,6 +137,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.WsdlImporterElementCollection WsdlImporters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.WsdlImporterElementCollection WsdlImporters" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MetadataElement.WsdlImporters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WsdlImporters As WsdlImporterElementCollection" />
+      <MemberSignature Language="F#" Value="member this.WsdlImporters : System.ServiceModel.Configuration.WsdlImporterElementCollection" Usage="System.ServiceModel.Configuration.MetadataElement.WsdlImporters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::WsdlImporterElementCollection ^ WsdlImporters { System::ServiceModel::Configuration::WsdlImporterElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

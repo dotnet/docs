@@ -1,7 +1,10 @@
-<Type Name="IWebProxy" FullName="System.Net.IWebProxy">
+﻿<Type Name="IWebProxy" FullName="System.Net.IWebProxy">
   <TypeSignature Language="C#" Value="public interface IWebProxy" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebProxy" />
   <TypeSignature Language="DocId" Value="T:System.Net.IWebProxy" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWebProxy" />
+  <TypeSignature Language="F#" Value="type IWebProxy = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWebProxy" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="public System.Net.ICredentials Credentials { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.ICredentials Credentials" />
       <MemberSignature Language="DocId" Value="P:System.Net.IWebProxy.Credentials" />
+      <MemberSignature Language="VB.NET" Value="Public Property Credentials As ICredentials" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Net.ICredentials with get, set" Usage="System.Net.IWebProxy.Credentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::ICredentials ^ Credentials { System::Net::ICredentials ^ get(); void set(System::Net::ICredentials ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -84,6 +90,9 @@
       <MemberSignature Language="C#" Value="public Uri GetProxy (Uri destination);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Uri GetProxy(class System.Uri destination) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IWebProxy.GetProxy(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProxy (destination As Uri) As Uri" />
+      <MemberSignature Language="F#" Value="abstract member GetProxy : Uri -&gt; Uri" Usage="iWebProxy.GetProxy destination" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ GetProxy(Uri ^ destination);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -133,6 +142,9 @@
       <MemberSignature Language="C#" Value="public bool IsBypassed (Uri host);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsBypassed(class System.Uri host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IWebProxy.IsBypassed(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsBypassed (host As Uri) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsBypassed : Uri -&gt; bool" Usage="iWebProxy.IsBypassed host" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsBypassed(Uri ^ host);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>

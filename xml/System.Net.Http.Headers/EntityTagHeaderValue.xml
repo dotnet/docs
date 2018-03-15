@@ -1,7 +1,10 @@
-<Type Name="EntityTagHeaderValue" FullName="System.Net.Http.Headers.EntityTagHeaderValue">
+﻿<Type Name="EntityTagHeaderValue" FullName="System.Net.Http.Headers.EntityTagHeaderValue">
   <TypeSignature Language="C#" Value="public class EntityTagHeaderValue : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityTagHeaderValue extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.EntityTagHeaderValue" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityTagHeaderValue&#xA;Implements ICloneable" />
+  <TypeSignature Language="F#" Value="type EntityTagHeaderValue = class&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityTagHeaderValue : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,10 +36,25 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EntityTagHeaderValue (string tag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string tag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.EntityTagHeaderValue.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tag As String)" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.EntityTagHeaderValue : string -&gt; System.Net.Http.Headers.EntityTagHeaderValue" Usage="new System.Net.Http.Headers.EntityTagHeaderValue tag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityTagHeaderValue(System::String ^ tag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -62,6 +80,9 @@
       <MemberSignature Language="C#" Value="public EntityTagHeaderValue (string tag, bool isWeak);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string tag, bool isWeak) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.EntityTagHeaderValue.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tag As String, isWeak As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.EntityTagHeaderValue : string * bool -&gt; System.Net.Http.Headers.EntityTagHeaderValue" Usage="new System.Net.Http.Headers.EntityTagHeaderValue (tag, isWeak)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityTagHeaderValue(System::String ^ tag, bool isWeak);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -89,6 +110,9 @@
       <MemberSignature Language="C#" Value="public static System.Net.Http.Headers.EntityTagHeaderValue Any { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Net.Http.Headers.EntityTagHeaderValue Any" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.EntityTagHeaderValue.Any" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Any As EntityTagHeaderValue" />
+      <MemberSignature Language="F#" Value="member this.Any : System.Net.Http.Headers.EntityTagHeaderValue" Usage="System.Net.Http.Headers.EntityTagHeaderValue.Any" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::Http::Headers::EntityTagHeaderValue ^ Any { System::Net::Http::Headers::EntityTagHeaderValue ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -121,6 +145,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.EntityTagHeaderValue.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="entityTagHeaderValue.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -151,6 +178,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.EntityTagHeaderValue.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="entityTagHeaderValue.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -186,6 +216,9 @@
       <MemberSignature Language="C#" Value="public bool IsWeak { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsWeak" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.EntityTagHeaderValue.IsWeak" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWeak As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsWeak : bool" Usage="System.Net.Http.Headers.EntityTagHeaderValue.IsWeak" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWeak { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -212,6 +245,9 @@
       <MemberSignature Language="C#" Value="public static System.Net.Http.Headers.EntityTagHeaderValue Parse (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Http.Headers.EntityTagHeaderValue Parse(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.EntityTagHeaderValue.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As EntityTagHeaderValue" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.Http.Headers.EntityTagHeaderValue" Usage="System.Net.Http.Headers.EntityTagHeaderValue.Parse input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Http::Headers::EntityTagHeaderValue ^ Parse(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -245,7 +281,12 @@
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.EntityTagHeaderValue.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -269,6 +310,9 @@
       <MemberSignature Language="C#" Value="public string Tag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Tag" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.EntityTagHeaderValue.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tag As String" />
+      <MemberSignature Language="F#" Value="member this.Tag : string" Usage="System.Net.Http.Headers.EntityTagHeaderValue.Tag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Tag { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -294,6 +338,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.EntityTagHeaderValue.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="entityTagHeaderValue.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -320,6 +367,9 @@
       <MemberSignature Language="C#" Value="public static bool TryParse (string input, out System.Net.Http.Headers.EntityTagHeaderValue parsedValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, [out] class System.Net.Http.Headers.EntityTagHeaderValue&amp; parsedValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.EntityTagHeaderValue.TryParse(System.String,System.Net.Http.Headers.EntityTagHeaderValue@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef parsedValue As EntityTagHeaderValue) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Net.Http.Headers.EntityTagHeaderValue.TryParse (input, parsedValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Net::Http::Headers::EntityTagHeaderValue ^ % parsedValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -348,17 +398,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Http</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.EntityTagHeaderValue" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

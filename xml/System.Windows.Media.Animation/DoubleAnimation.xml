@@ -1,7 +1,10 @@
-<Type Name="DoubleAnimation" FullName="System.Windows.Media.Animation.DoubleAnimation">
+﻿<Type Name="DoubleAnimation" FullName="System.Windows.Media.Animation.DoubleAnimation">
   <TypeSignature Language="C#" Value="public class DoubleAnimation : System.Windows.Media.Animation.DoubleAnimationBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DoubleAnimation extends System.Windows.Media.Animation.DoubleAnimationBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.DoubleAnimation" />
+  <TypeSignature Language="VB.NET" Value="Public Class DoubleAnimation&#xA;Inherits DoubleAnimationBase" />
+  <TypeSignature Language="F#" Value="type DoubleAnimation = class&#xA;    inherit DoubleAnimationBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DoubleAnimation : System::Windows::Media::Animation::DoubleAnimationBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,10 +46,21 @@
     <altmember cref="T:System.Windows.Freezable" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DoubleAnimation" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DoubleAnimation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DoubleAnimation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,6 +76,8 @@
       <MemberSignature Language="C#" Value="public DoubleAnimation (double toValue, System.Windows.Duration duration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 toValue, valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimation.#ctor(System.Double,System.Windows.Duration)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.DoubleAnimation : double * System.Windows.Duration -&gt; System.Windows.Media.Animation.DoubleAnimation" Usage="new System.Windows.Media.Animation.DoubleAnimation (toValue, duration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DoubleAnimation(double toValue, System::Windows::Duration duration);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +98,8 @@
       <MemberSignature Language="C#" Value="public DoubleAnimation (double fromValue, double toValue, System.Windows.Duration duration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 fromValue, float64 toValue, valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimation.#ctor(System.Double,System.Double,System.Windows.Duration)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.DoubleAnimation : double * double * System.Windows.Duration -&gt; System.Windows.Media.Animation.DoubleAnimation" Usage="new System.Windows.Media.Animation.DoubleAnimation (fromValue, toValue, duration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DoubleAnimation(double fromValue, double toValue, System::Windows::Duration duration);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -104,6 +122,8 @@
       <MemberSignature Language="C#" Value="public DoubleAnimation (double toValue, System.Windows.Duration duration, System.Windows.Media.Animation.FillBehavior fillBehavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 toValue, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.FillBehavior fillBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimation.#ctor(System.Double,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.DoubleAnimation : double * System.Windows.Duration * System.Windows.Media.Animation.FillBehavior -&gt; System.Windows.Media.Animation.DoubleAnimation" Usage="new System.Windows.Media.Animation.DoubleAnimation (toValue, duration, fillBehavior)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DoubleAnimation(double toValue, System::Windows::Duration duration, System::Windows::Media::Animation::FillBehavior fillBehavior);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +146,8 @@
       <MemberSignature Language="C#" Value="public DoubleAnimation (double fromValue, double toValue, System.Windows.Duration duration, System.Windows.Media.Animation.FillBehavior fillBehavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 fromValue, float64 toValue, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.FillBehavior fillBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimation.#ctor(System.Double,System.Double,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.DoubleAnimation : double * double * System.Windows.Duration * System.Windows.Media.Animation.FillBehavior -&gt; System.Windows.Media.Animation.DoubleAnimation" Usage="new System.Windows.Media.Animation.DoubleAnimation (fromValue, toValue, duration, fillBehavior)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DoubleAnimation(double fromValue, double toValue, System::Windows::Duration duration, System::Windows::Media::Animation::FillBehavior fillBehavior);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -150,6 +172,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; By { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; By" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimation.By" />
+      <MemberSignature Language="VB.NET" Value="Public Property By As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.By : Nullable&lt;double&gt; with get, set" Usage="System.Windows.Media.Animation.DoubleAnimation.By" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; By { Nullable&lt;double&gt; get(); void set(Nullable&lt;double&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -208,6 +233,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ByProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ByProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.DoubleAnimation.ByProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ByProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ByProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.DoubleAnimation.ByProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ByProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -225,6 +253,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.DoubleAnimation Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.DoubleAnimation Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimation.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As DoubleAnimation" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.DoubleAnimation" Usage="doubleAnimation.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::DoubleAnimation ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -253,6 +284,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimation.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="doubleAnimation.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -273,6 +307,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.IEasingFunction EasingFunction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.IEasingFunction EasingFunction" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimation.EasingFunction" />
+      <MemberSignature Language="VB.NET" Value="Public Property EasingFunction As IEasingFunction" />
+      <MemberSignature Language="F#" Value="member this.EasingFunction : System.Windows.Media.Animation.IEasingFunction with get, set" Usage="System.Windows.Media.Animation.DoubleAnimation.EasingFunction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::IEasingFunction ^ EasingFunction { System::Windows::Media::Animation::IEasingFunction ^ get(); void set(System::Windows::Media::Animation::IEasingFunction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -299,6 +336,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EasingFunctionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EasingFunctionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.DoubleAnimation.EasingFunctionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EasingFunctionProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable EasingFunctionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.DoubleAnimation.EasingFunctionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EasingFunctionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -317,6 +357,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; From { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; From" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimation.From" />
+      <MemberSignature Language="VB.NET" Value="Public Property From As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.From : Nullable&lt;double&gt; with get, set" Usage="System.Windows.Media.Animation.DoubleAnimation.From" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; From { Nullable&lt;double&gt; get(); void set(Nullable&lt;double&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -373,6 +416,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FromProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FromProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.DoubleAnimation.FromProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FromProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FromProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.DoubleAnimation.FromProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FromProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -390,6 +436,8 @@
       <MemberSignature Language="C#" Value="protected override double GetCurrentValueCore (double defaultOriginValue, double defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance float64 GetCurrentValueCore(float64 defaultOriginValue, float64 defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleAnimation.GetCurrentValueCore(System.Double,System.Double,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueCore : double * double * System.Windows.Media.Animation.AnimationClock -&gt; double" Usage="doubleAnimation.GetCurrentValueCore (defaultOriginValue, defaultDestinationValue, animationClock)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override double GetCurrentValueCore(double defaultOriginValue, double defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -426,6 +474,9 @@
       <MemberSignature Language="C#" Value="public bool IsAdditive { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAdditive" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimation.IsAdditive" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAdditive As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAdditive : bool with get, set" Usage="System.Windows.Media.Animation.DoubleAnimation.IsAdditive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAdditive { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -463,6 +514,9 @@
       <MemberSignature Language="C#" Value="public bool IsCumulative { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCumulative" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimation.IsCumulative" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsCumulative As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCumulative : bool with get, set" Usage="System.Windows.Media.Animation.DoubleAnimation.IsCumulative" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCumulative { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -500,6 +554,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; To { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; To" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleAnimation.To" />
+      <MemberSignature Language="VB.NET" Value="Public Property To As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.To : Nullable&lt;double&gt; with get, set" Usage="System.Windows.Media.Animation.DoubleAnimation.To" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; To { Nullable&lt;double&gt; get(); void set(Nullable&lt;double&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -556,6 +613,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.DoubleAnimation.ToProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ToProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.DoubleAnimation.ToProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -569,14 +629,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DoubleAnimation" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

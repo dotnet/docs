@@ -1,7 +1,10 @@
-<Type Name="DataGridClipboardCellContent" FullName="System.Windows.Controls.DataGridClipboardCellContent">
+﻿<Type Name="DataGridClipboardCellContent" FullName="System.Windows.Controls.DataGridClipboardCellContent">
   <TypeSignature Language="C#" Value="public struct DataGridClipboardCellContent" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit DataGridClipboardCellContent extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridClipboardCellContent" />
+  <TypeSignature Language="VB.NET" Value="Public Structure DataGridClipboardCellContent" />
+  <TypeSignature Language="F#" Value="type DataGridClipboardCellContent = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class DataGridClipboardCellContent" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public DataGridClipboardCellContent (object item, System.Windows.Controls.DataGridColumn column, object content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object item, class System.Windows.Controls.DataGridColumn column, object content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridClipboardCellContent.#ctor(System.Object,System.Windows.Controls.DataGridColumn,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (item As Object, column As DataGridColumn, content As Object)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DataGridClipboardCellContent : obj * System.Windows.Controls.DataGridColumn * obj -&gt; System.Windows.Controls.DataGridClipboardCellContent" Usage="new System.Windows.Controls.DataGridClipboardCellContent (item, column, content)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridClipboardCellContent(System::Object ^ item, System::Windows::Controls::DataGridColumn ^ column, System::Object ^ content);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -52,6 +58,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.DataGridColumn Column { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataGridColumn Column" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridClipboardCellContent.Column" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As DataGridColumn" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Windows.Controls.DataGridColumn" Usage="System.Windows.Controls.DataGridClipboardCellContent.Column" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridColumn ^ Column { System::Windows::Controls::DataGridColumn ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +81,9 @@
       <MemberSignature Language="C#" Value="public object Content { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Content" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridClipboardCellContent.Content" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Content As Object" />
+      <MemberSignature Language="F#" Value="member this.Content : obj" Usage="System.Windows.Controls.DataGridClipboardCellContent.Content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Content { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -92,6 +104,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridClipboardCellContent.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (data As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataGridClipboardCellContent.Equals data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -117,6 +132,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridClipboardCellContent.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataGridClipboardCellContent.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -145,6 +163,9 @@
       <MemberSignature Language="C#" Value="public object Item { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridClipboardCellContent.Item" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As Object" />
+      <MemberSignature Language="F#" Value="member this.Item : obj" Usage="System.Windows.Controls.DataGridClipboardCellContent.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Item { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -165,6 +186,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Controls.DataGridClipboardCellContent clipboardCellContent1, System.Windows.Controls.DataGridClipboardCellContent clipboardCellContent2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.DataGridClipboardCellContent clipboardCellContent1, valuetype System.Windows.Controls.DataGridClipboardCellContent clipboardCellContent2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridClipboardCellContent.op_Equality(System.Windows.Controls.DataGridClipboardCellContent,System.Windows.Controls.DataGridClipboardCellContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (clipboardCellContent1 As DataGridClipboardCellContent, clipboardCellContent2 As DataGridClipboardCellContent) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Controls.DataGridClipboardCellContent * System.Windows.Controls.DataGridClipboardCellContent -&gt; bool" Usage="clipboardCellContent1 = clipboardCellContent2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Controls::DataGridClipboardCellContent clipboardCellContent1, System::Windows::Controls::DataGridClipboardCellContent clipboardCellContent2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -192,6 +216,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Controls.DataGridClipboardCellContent clipboardCellContent1, System.Windows.Controls.DataGridClipboardCellContent clipboardCellContent2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.DataGridClipboardCellContent clipboardCellContent1, valuetype System.Windows.Controls.DataGridClipboardCellContent clipboardCellContent2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridClipboardCellContent.op_Inequality(System.Windows.Controls.DataGridClipboardCellContent,System.Windows.Controls.DataGridClipboardCellContent)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (clipboardCellContent1 As DataGridClipboardCellContent, clipboardCellContent2 As DataGridClipboardCellContent) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Controls.DataGridClipboardCellContent * System.Windows.Controls.DataGridClipboardCellContent -&gt; bool" Usage="System.Windows.Controls.DataGridClipboardCellContent.op_Inequality (clipboardCellContent1, clipboardCellContent2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Controls::DataGridClipboardCellContent clipboardCellContent1, System::Windows::Controls::DataGridClipboardCellContent clipboardCellContent2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

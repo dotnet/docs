@@ -1,7 +1,10 @@
-<Type Name="StatusBar" FullName="System.Windows.Controls.Primitives.StatusBar">
+﻿<Type Name="StatusBar" FullName="System.Windows.Controls.Primitives.StatusBar">
   <TypeSignature Language="C#" Value="public class StatusBar : System.Windows.Controls.ItemsControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi StatusBar extends System.Windows.Controls.ItemsControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.StatusBar" />
+  <TypeSignature Language="VB.NET" Value="Public Class StatusBar&#xA;Inherits ItemsControl" />
+  <TypeSignature Language="F#" Value="type StatusBar = class&#xA;    inherit ItemsControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StatusBar : System::Windows::Controls::ItemsControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +62,8 @@
       <MemberSignature Language="C#" Value="public StatusBar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.StatusBar.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StatusBar();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +79,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.DependencyObject GetContainerForItemOverride ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.DependencyObject GetContainerForItemOverride() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.StatusBar.GetContainerForItemOverride" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetContainerForItemOverride () As DependencyObject" />
+      <MemberSignature Language="F#" Value="override this.GetContainerForItemOverride : unit -&gt; System.Windows.DependencyObject" Usage="statusBar.GetContainerForItemOverride " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -93,6 +101,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsItemItsOwnContainerOverride (object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsItemItsOwnContainerOverride(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.StatusBar.IsItemItsOwnContainerOverride(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsItemItsOwnContainerOverride : obj -&gt; bool" Usage="statusBar.IsItemItsOwnContainerOverride item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +133,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.ItemContainerTemplateSelector ItemContainerTemplateSelector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ItemContainerTemplateSelector ItemContainerTemplateSelector" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.StatusBar.ItemContainerTemplateSelector" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemContainerTemplateSelector As ItemContainerTemplateSelector" />
+      <MemberSignature Language="F#" Value="member this.ItemContainerTemplateSelector : System.Windows.Controls.ItemContainerTemplateSelector with get, set" Usage="System.Windows.Controls.Primitives.StatusBar.ItemContainerTemplateSelector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ItemContainerTemplateSelector ^ ItemContainerTemplateSelector { System::Windows::Controls::ItemContainerTemplateSelector ^ get(); void set(System::Windows::Controls::ItemContainerTemplateSelector ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -155,6 +169,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ItemContainerTemplateSelectorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ItemContainerTemplateSelectorProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.StatusBar.ItemContainerTemplateSelectorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ItemContainerTemplateSelectorProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ItemContainerTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.StatusBar.ItemContainerTemplateSelectorProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ItemContainerTemplateSelectorProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -172,6 +189,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.StatusBar.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="statusBar.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -191,6 +211,9 @@
       <MemberSignature Language="C#" Value="protected override void PrepareContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PrepareContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.StatusBar.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
+      <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="statusBar.PrepareContainerForItemOverride (element, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -221,6 +244,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey SeparatorStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey SeparatorStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.StatusBar.SeparatorStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SeparatorStyleKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.SeparatorStyleKey : System.Windows.ResourceKey" Usage="System.Windows.Controls.Primitives.StatusBar.SeparatorStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SeparatorStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -252,6 +278,9 @@
       <MemberSignature Language="C#" Value="protected override bool ShouldApplyItemContainerStyle (System.Windows.DependencyObject container, object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ShouldApplyItemContainerStyle(class System.Windows.DependencyObject container, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.StatusBar.ShouldApplyItemContainerStyle(System.Windows.DependencyObject,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ShouldApplyItemContainerStyle (container As DependencyObject, item As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ShouldApplyItemContainerStyle : System.Windows.DependencyObject * obj -&gt; bool" Usage="statusBar.ShouldApplyItemContainerStyle (container, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ShouldApplyItemContainerStyle(System::Windows::DependencyObject ^ container, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -284,6 +313,9 @@
       <MemberSignature Language="C#" Value="public bool UsesItemContainerTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UsesItemContainerTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.StatusBar.UsesItemContainerTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property UsesItemContainerTemplate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UsesItemContainerTemplate : bool with get, set" Usage="System.Windows.Controls.Primitives.StatusBar.UsesItemContainerTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UsesItemContainerTemplate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -320,6 +352,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty UsesItemContainerTemplateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty UsesItemContainerTemplateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.StatusBar.UsesItemContainerTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UsesItemContainerTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable UsesItemContainerTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.StatusBar.UsesItemContainerTemplateProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ UsesItemContainerTemplateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

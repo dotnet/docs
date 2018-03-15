@@ -1,7 +1,10 @@
-<Type Name="CommandValues" FullName="System.Activities.Presentation.Hosting.CommandValues">
+﻿<Type Name="CommandValues" FullName="System.Activities.Presentation.Hosting.CommandValues">
   <TypeSignature Language="C#" Value="public static class CommandValues" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit CommandValues extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.CommandValues" />
+  <TypeSignature Language="VB.NET" Value="Public Class CommandValues" />
+  <TypeSignature Language="F#" Value="type CommandValues = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CommandValues abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public const int DeleteBreakpoint = 7;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 DeleteBreakpoint = (7)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Hosting.CommandValues.DeleteBreakpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Const DeleteBreakpoint As Integer  = 7" />
+      <MemberSignature Language="F#" Value="val mutable DeleteBreakpoint : int" Usage="System.Activities.Presentation.Hosting.CommandValues.DeleteBreakpoint" />
+      <MemberSignature Language="C++ CLI" Value="public: int DeleteBreakpoint = 7;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public const int DisableBreakpoint = 9;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 DisableBreakpoint = (9)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Hosting.CommandValues.DisableBreakpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Const DisableBreakpoint As Integer  = 9" />
+      <MemberSignature Language="F#" Value="val mutable DisableBreakpoint : int" Usage="System.Activities.Presentation.Hosting.CommandValues.DisableBreakpoint" />
+      <MemberSignature Language="C++ CLI" Value="public: int DisableBreakpoint = 9;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -55,6 +64,9 @@
       <MemberSignature Language="C#" Value="public const int EnableBreakpoint = 8;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 EnableBreakpoint = (8)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Hosting.CommandValues.EnableBreakpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Const EnableBreakpoint As Integer  = 8" />
+      <MemberSignature Language="F#" Value="val mutable EnableBreakpoint : int" Usage="System.Activities.Presentation.Hosting.CommandValues.EnableBreakpoint" />
+      <MemberSignature Language="C++ CLI" Value="public: int EnableBreakpoint = 8;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -73,6 +85,9 @@
       <MemberSignature Language="C#" Value="public const int InsertBreakpoint = 6;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 InsertBreakpoint = (6)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Hosting.CommandValues.InsertBreakpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Const InsertBreakpoint As Integer  = 6" />
+      <MemberSignature Language="F#" Value="val mutable InsertBreakpoint : int" Usage="System.Activities.Presentation.Hosting.CommandValues.InsertBreakpoint" />
+      <MemberSignature Language="C++ CLI" Value="public: int InsertBreakpoint = 6;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -91,6 +106,9 @@
       <MemberSignature Language="C#" Value="public const int ShowProperties = 5;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 ShowProperties = (5)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.Hosting.CommandValues.ShowProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Const ShowProperties As Integer  = 5" />
+      <MemberSignature Language="F#" Value="val mutable ShowProperties : int" Usage="System.Activities.Presentation.Hosting.CommandValues.ShowProperties" />
+      <MemberSignature Language="C++ CLI" Value="public: int ShowProperties = 5;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

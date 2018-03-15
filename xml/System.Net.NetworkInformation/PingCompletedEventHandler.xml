@@ -1,7 +1,10 @@
-<Type Name="PingCompletedEventHandler" FullName="System.Net.NetworkInformation.PingCompletedEventHandler">
+﻿<Type Name="PingCompletedEventHandler" FullName="System.Net.NetworkInformation.PingCompletedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void PingCompletedEventHandler(object sender, PingCompletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PingCompletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.PingCompletedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub PingCompletedEventHandler(sender As Object, e As PingCompletedEventArgs)" />
+  <TypeSignature Language="F#" Value="type PingCompletedEventHandler = delegate of obj * PingCompletedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void PingCompletedEventHandler(System::Object ^ sender, PingCompletedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

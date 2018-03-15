@@ -1,7 +1,10 @@
-<Type Name="HttpMessageInvoker" FullName="System.Net.Http.HttpMessageInvoker">
+﻿<Type Name="HttpMessageInvoker" FullName="System.Net.Http.HttpMessageInvoker">
   <TypeSignature Language="C#" Value="public class HttpMessageInvoker : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpMessageInvoker extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.HttpMessageInvoker" />
+  <TypeSignature Language="VB.NET" Value="Public Class HttpMessageInvoker&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type HttpMessageInvoker = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpMessageInvoker : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +38,25 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of a <see cref="T:System.Net.Http.HttpMessageInvoker" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HttpMessageInvoker (System.Net.Http.HttpMessageHandler handler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpMessageHandler handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpMessageInvoker.#ctor(System.Net.Http.HttpMessageHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (handler As HttpMessageHandler)" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.HttpMessageInvoker : System.Net.Http.HttpMessageHandler -&gt; System.Net.Http.HttpMessageInvoker" Usage="new System.Net.Http.HttpMessageInvoker handler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpMessageInvoker(System::Net::Http::HttpMessageHandler ^ handler);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -64,6 +82,9 @@
       <MemberSignature Language="C#" Value="public HttpMessageInvoker (System.Net.Http.HttpMessageHandler handler, bool disposeHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.Http.HttpMessageHandler handler, bool disposeHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpMessageInvoker.#ctor(System.Net.Http.HttpMessageHandler,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (handler As HttpMessageHandler, disposeHandler As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.HttpMessageInvoker : System.Net.Http.HttpMessageHandler * bool -&gt; System.Net.Http.HttpMessageInvoker" Usage="new System.Net.Http.HttpMessageInvoker (handler, disposeHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpMessageInvoker(System::Net::Http::HttpMessageHandler ^ handler, bool disposeHandler);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -88,11 +109,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.HttpMessageInvoker" /> and optionally disposes of the managed resources.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpMessageInvoker.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="httpMessageInvoker.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,6 +156,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpMessageInvoker.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="httpMessageInvoker.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -146,6 +188,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt; SendAsync (System.Net.Http.HttpRequestMessage request, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;class System.Net.Http.HttpResponseMessage&gt; SendAsync(class System.Net.Http.HttpRequestMessage request, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.HttpMessageInvoker.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member SendAsync : System.Net.Http.HttpRequestMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;&#xA;override this.SendAsync : System.Net.Http.HttpRequestMessage * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Net.Http.HttpResponseMessage&gt;" Usage="httpMessageInvoker.SendAsync (request, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;System::Net::Http::HttpResponseMessage ^&gt; ^ SendAsync(System::Net::Http::HttpRequestMessage ^ request, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -183,29 +227,5 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="request" /> was <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Http</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Net.Http.HttpMessageInvoker" /> and optionally disposes of the managed resources.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Http</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes an instance of a <see cref="T:System.Net.Http.HttpMessageInvoker" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

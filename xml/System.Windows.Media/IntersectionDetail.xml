@@ -1,7 +1,10 @@
-<Type Name="IntersectionDetail" FullName="System.Windows.Media.IntersectionDetail">
+﻿<Type Name="IntersectionDetail" FullName="System.Windows.Media.IntersectionDetail">
   <TypeSignature Language="C#" Value="public enum IntersectionDetail" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IntersectionDetail extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.IntersectionDetail" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IntersectionDetail" />
+  <TypeSignature Language="F#" Value="type IntersectionDetail = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class IntersectionDetail" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@ Intersection between hit test geometry and visual geometry during hit testing
       <MemberSignature Language="C#" Value="Empty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.IntersectionDetail Empty = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.IntersectionDetail.Empty" />
+      <MemberSignature Language="VB.NET" Value="Empty" />
+      <MemberSignature Language="F#" Value="Empty = 1" Usage="System.Windows.Media.IntersectionDetail.Empty" />
+      <MemberSignature Language="C++ CLI" Value="Empty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -44,6 +50,7 @@ Intersection between hit test geometry and visual geometry during hit testing
       <ReturnValue>
         <ReturnType>System.Windows.Media.IntersectionDetail</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Media.Geometry" /> hit test parameter and the target visual, or geometry, do not intersect.</summary>
       </Docs>
@@ -52,6 +59,9 @@ Intersection between hit test geometry and visual geometry during hit testing
       <MemberSignature Language="C#" Value="FullyContains" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.IntersectionDetail FullyContains = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.IntersectionDetail.FullyContains" />
+      <MemberSignature Language="VB.NET" Value="FullyContains" />
+      <MemberSignature Language="F#" Value="FullyContains = 3" Usage="System.Windows.Media.IntersectionDetail.FullyContains" />
+      <MemberSignature Language="C++ CLI" Value="FullyContains" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +70,7 @@ Intersection between hit test geometry and visual geometry during hit testing
       <ReturnValue>
         <ReturnType>System.Windows.Media.IntersectionDetail</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Media.Geometry" /> hit test parameter is fully contained within the boundary of the target visual or geometry.</summary>
       </Docs>
@@ -68,6 +79,9 @@ Intersection between hit test geometry and visual geometry during hit testing
       <MemberSignature Language="C#" Value="FullyInside" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.IntersectionDetail FullyInside = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.IntersectionDetail.FullyInside" />
+      <MemberSignature Language="VB.NET" Value="FullyInside" />
+      <MemberSignature Language="F#" Value="FullyInside = 2" Usage="System.Windows.Media.IntersectionDetail.FullyInside" />
+      <MemberSignature Language="C++ CLI" Value="FullyInside" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -76,6 +90,7 @@ Intersection between hit test geometry and visual geometry during hit testing
       <ReturnValue>
         <ReturnType>System.Windows.Media.IntersectionDetail</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The target visual, or geometry, is fully inside the <see cref="T:System.Windows.Media.Geometry" /> hit test parameter.</summary>
       </Docs>
@@ -84,6 +99,9 @@ Intersection between hit test geometry and visual geometry during hit testing
       <MemberSignature Language="C#" Value="Intersects" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.IntersectionDetail Intersects = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.IntersectionDetail.Intersects" />
+      <MemberSignature Language="VB.NET" Value="Intersects" />
+      <MemberSignature Language="F#" Value="Intersects = 4" Usage="System.Windows.Media.IntersectionDetail.Intersects" />
+      <MemberSignature Language="C++ CLI" Value="Intersects" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -92,6 +110,7 @@ Intersection between hit test geometry and visual geometry during hit testing
       <ReturnValue>
         <ReturnType>System.Windows.Media.IntersectionDetail</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Media.Geometry" /> hit test parameter and the target visual, or geometry, intersect. This means that the two elements overlap, but neither element contains the other.</summary>
       </Docs>
@@ -100,6 +119,9 @@ Intersection between hit test geometry and visual geometry during hit testing
       <MemberSignature Language="C#" Value="NotCalculated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.IntersectionDetail NotCalculated = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.IntersectionDetail.NotCalculated" />
+      <MemberSignature Language="VB.NET" Value="NotCalculated" />
+      <MemberSignature Language="F#" Value="NotCalculated = 0" Usage="System.Windows.Media.IntersectionDetail.NotCalculated" />
+      <MemberSignature Language="C++ CLI" Value="NotCalculated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +130,7 @@ Intersection between hit test geometry and visual geometry during hit testing
       <ReturnValue>
         <ReturnType>System.Windows.Media.IntersectionDetail</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Media.IntersectionDetail" /> value is not calculated.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="XmlNodeEventHandler" FullName="System.Xml.Serialization.XmlNodeEventHandler">
+﻿<Type Name="XmlNodeEventHandler" FullName="System.Xml.Serialization.XmlNodeEventHandler">
   <TypeSignature Language="C#" Value="public delegate void XmlNodeEventHandler(object sender, XmlNodeEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlNodeEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlNodeEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub XmlNodeEventHandler(sender As Object, e As XmlNodeEventArgs)" />
+  <TypeSignature Language="F#" Value="type XmlNodeEventHandler = delegate of obj * XmlNodeEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void XmlNodeEventHandler(System::Object ^ sender, XmlNodeEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

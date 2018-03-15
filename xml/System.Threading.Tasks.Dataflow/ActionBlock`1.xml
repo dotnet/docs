@@ -1,7 +1,10 @@
-<Type Name="ActionBlock&lt;TInput&gt;" FullName="System.Threading.Tasks.Dataflow.ActionBlock&lt;TInput&gt;">
+﻿<Type Name="ActionBlock&lt;TInput&gt;" FullName="System.Threading.Tasks.Dataflow.ActionBlock&lt;TInput&gt;">
   <TypeSignature Language="C#" Value="public sealed class ActionBlock&lt;TInput&gt; : System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActionBlock`1&lt;TInput&gt; extends System.Object implements class System.Threading.Tasks.Dataflow.IDataflowBlock, class System.Threading.Tasks.Dataflow.ITargetBlock`1&lt;!TInput&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.Dataflow.ActionBlock`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActionBlock(Of TInput)&#xA;Implements ITargetBlock(Of TInput)" />
+  <TypeSignature Language="F#" Value="type ActionBlock&lt;'Input&gt; = class&#xA;    interface IDataflowBlock&#xA;    interface ITargetBlock&lt;'Input&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TInput&gt;&#xA;public ref class ActionBlock sealed : System::Threading::Tasks::Dataflow::ITargetBlock&lt;TInput&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
     <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="public ActionBlock (Action&lt;TInput&gt; action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Action`1&lt;!TInput&gt; action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ActionBlock`1.#ctor(System.Action{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As Action(Of TInput))" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.Dataflow.ActionBlock&lt;'Input&gt; : Action&lt;'Input&gt; -&gt; System.Threading.Tasks.Dataflow.ActionBlock&lt;'Input&gt;" Usage="new System.Threading.Tasks.Dataflow.ActionBlock&lt;'Input&gt; action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActionBlock(Action&lt;TInput&gt; ^ action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -65,6 +71,9 @@
       <MemberSignature Language="C#" Value="public ActionBlock (Func&lt;TInput,System.Threading.Tasks.Task&gt; action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;!TInput, class System.Threading.Tasks.Task&gt; action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ActionBlock`1.#ctor(System.Func{`0,System.Threading.Tasks.Task})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As Func(Of TInput, Task))" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.Dataflow.ActionBlock&lt;'Input&gt; : Func&lt;'Input, System.Threading.Tasks.Task&gt; -&gt; System.Threading.Tasks.Dataflow.ActionBlock&lt;'Input&gt;" Usage="new System.Threading.Tasks.Dataflow.ActionBlock&lt;'Input&gt; action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActionBlock(Func&lt;TInput, System::Threading::Tasks::Task ^&gt; ^ action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -87,6 +96,9 @@
       <MemberSignature Language="C#" Value="public ActionBlock (Action&lt;TInput&gt; action, System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions dataflowBlockOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Action`1&lt;!TInput&gt; action, class System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions dataflowBlockOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ActionBlock`1.#ctor(System.Action{`0},System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As Action(Of TInput), dataflowBlockOptions As ExecutionDataflowBlockOptions)" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.Dataflow.ActionBlock&lt;'Input&gt; : Action&lt;'Input&gt; * System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions -&gt; System.Threading.Tasks.Dataflow.ActionBlock&lt;'Input&gt;" Usage="new System.Threading.Tasks.Dataflow.ActionBlock&lt;'Input&gt; (action, dataflowBlockOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActionBlock(Action&lt;TInput&gt; ^ action, System::Threading::Tasks::Dataflow::ExecutionDataflowBlockOptions ^ dataflowBlockOptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -125,6 +137,9 @@
       <MemberSignature Language="C#" Value="public ActionBlock (Func&lt;TInput,System.Threading.Tasks.Task&gt; action, System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions dataflowBlockOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Func`2&lt;!TInput, class System.Threading.Tasks.Task&gt; action, class System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions dataflowBlockOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ActionBlock`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As Func(Of TInput, Task), dataflowBlockOptions As ExecutionDataflowBlockOptions)" />
+      <MemberSignature Language="F#" Value="new System.Threading.Tasks.Dataflow.ActionBlock&lt;'Input&gt; : Func&lt;'Input, System.Threading.Tasks.Task&gt; * System.Threading.Tasks.Dataflow.ExecutionDataflowBlockOptions -&gt; System.Threading.Tasks.Dataflow.ActionBlock&lt;'Input&gt;" Usage="new System.Threading.Tasks.Dataflow.ActionBlock&lt;'Input&gt; (action, dataflowBlockOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActionBlock(Func&lt;TInput, System::Threading::Tasks::Task ^&gt; ^ action, System::Threading::Tasks::Dataflow::ExecutionDataflowBlockOptions ^ dataflowBlockOptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -153,7 +168,13 @@
       <MemberSignature Language="C#" Value="public void Complete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Complete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ActionBlock`1.Complete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Complete ()" />
+      <MemberSignature Language="F#" Value="abstract member Complete : unit -&gt; unit&#xA;override this.Complete : unit -&gt; unit" Usage="actionBlock.Complete " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Complete();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Threading.Tasks.Dataflow.IDataflowBlock.Complete</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -188,7 +209,13 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task Completion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Tasks.Task Completion" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.ActionBlock`1.Completion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Completion As Task" />
+      <MemberSignature Language="F#" Value="member this.Completion : System.Threading.Tasks.Task" Usage="System.Threading.Tasks.Dataflow.ActionBlock&lt;'Input&gt;.Completion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::Task ^ Completion { System::Threading::Tasks::Task ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Threading.Tasks.Dataflow.IDataflowBlock.Completion</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -223,6 +250,9 @@
       <MemberSignature Language="C#" Value="public int InputCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 InputCount" />
       <MemberSignature Language="DocId" Value="P:System.Threading.Tasks.Dataflow.ActionBlock`1.InputCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.InputCount : int" Usage="System.Threading.Tasks.Dataflow.ActionBlock&lt;'Input&gt;.InputCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InputCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -250,6 +280,9 @@
       <MemberSignature Language="C#" Value="public bool Post (TInput item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Post(!TInput item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ActionBlock`1.Post(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Post (item As TInput) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Post : 'Input -&gt; bool" Usage="actionBlock.Post item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Post(TInput item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
@@ -285,7 +318,11 @@
       <MemberSignature Language="C#" Value="void IDataflowBlock.Fault (Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ActionBlock`1.System#Threading#Tasks#Dataflow#IDataflowBlock#Fault(System.Exception)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(Exception ^ exception) = System::Threading::Tasks::Dataflow::IDataflowBlock::Fault;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Threading.Tasks.Dataflow.IDataflowBlock.Fault(System.Exception)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -317,7 +354,12 @@
       <MemberSignature Language="C#" Value="System.Threading.Tasks.Dataflow.DataflowMessageStatus ITargetBlock&lt;TInput&gt;.OfferMessage (System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, TInput messageValue, System.Threading.Tasks.Dataflow.ISourceBlock&lt;TInput&gt; source, bool consumeToAccept);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.Threading.Tasks.Dataflow.DataflowMessageStatus System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;.OfferMessage(valuetype System.Threading.Tasks.Dataflow.DataflowMessageHeader messageHeader, !TInput messageValue, class System.Threading.Tasks.Dataflow.ISourceBlock`1&lt;!TInput&gt; source, bool consumeToAccept) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ActionBlock`1.System#Threading#Tasks#Dataflow#ITargetBlock&lt;TInput&gt;#OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Function OfferMessage (messageHeader As DataflowMessageHeader, messageValue As TInput, source As ISourceBlock(Of TInput), consumeToAccept As Boolean) As DataflowMessageStatus Implements ITargetBlock(Of TInput).OfferMessage" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Threading::Tasks::Dataflow::DataflowMessageStatus System.Threading.Tasks.Dataflow.ITargetBlock&lt;TInput&gt;.OfferMessage(System::Threading::Tasks::Dataflow::DataflowMessageHeader messageHeader, TInput messageValue, System::Threading::Tasks::Dataflow::ISourceBlock&lt;TInput&gt; ^ source, bool consumeToAccept) = System::Threading::Tasks::Dataflow::ITargetBlock&lt;TInput&gt;::OfferMessage;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Threading.Tasks.Dataflow.ITargetBlock`1.OfferMessage(System.Threading.Tasks.Dataflow.DataflowMessageHeader,`0,System.Threading.Tasks.Dataflow.ISourceBlock{`0},System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>
         <AssemblyVersion>4.6.0.0</AssemblyVersion>
@@ -358,6 +400,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Tasks.Dataflow.ActionBlock`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="actionBlock.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks.Dataflow</AssemblyName>

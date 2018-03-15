@@ -1,7 +1,10 @@
-<Type Name="DataGridViewSelectionMode" FullName="System.Windows.Forms.DataGridViewSelectionMode">
+﻿<Type Name="DataGridViewSelectionMode" FullName="System.Windows.Forms.DataGridViewSelectionMode">
   <TypeSignature Language="C#" Value="public enum DataGridViewSelectionMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewSelectionMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewSelectionMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewSelectionMode" />
+  <TypeSignature Language="F#" Value="type DataGridViewSelectionMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewSelectionMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="CellSelect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewSelectionMode CellSelect = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewSelectionMode.CellSelect" />
+      <MemberSignature Language="VB.NET" Value="CellSelect" />
+      <MemberSignature Language="F#" Value="CellSelect = 0" Usage="System.Windows.Forms.DataGridViewSelectionMode.CellSelect" />
+      <MemberSignature Language="C++ CLI" Value="CellSelect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewSelectionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>One or more individual cells can be selected.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="ColumnHeaderSelect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewSelectionMode ColumnHeaderSelect = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect" />
+      <MemberSignature Language="VB.NET" Value="ColumnHeaderSelect" />
+      <MemberSignature Language="F#" Value="ColumnHeaderSelect = 4" Usage="System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect" />
+      <MemberSignature Language="C++ CLI" Value="ColumnHeaderSelect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewSelectionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The column will be selected by clicking in the column's header cell. An individual cell can be selected by clicking that cell.</summary>
       </Docs>
@@ -67,6 +78,9 @@
       <MemberSignature Language="C#" Value="FullColumnSelect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewSelectionMode FullColumnSelect = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect" />
+      <MemberSignature Language="VB.NET" Value="FullColumnSelect" />
+      <MemberSignature Language="F#" Value="FullColumnSelect = 2" Usage="System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect" />
+      <MemberSignature Language="C++ CLI" Value="FullColumnSelect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewSelectionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The entire column will be selected by clicking the column's header or a cell contained in that column.</summary>
       </Docs>
@@ -83,6 +98,9 @@
       <MemberSignature Language="C#" Value="FullRowSelect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewSelectionMode FullRowSelect = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect" />
+      <MemberSignature Language="VB.NET" Value="FullRowSelect" />
+      <MemberSignature Language="F#" Value="FullRowSelect = 1" Usage="System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect" />
+      <MemberSignature Language="C++ CLI" Value="FullRowSelect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -91,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewSelectionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The entire row will be selected by clicking its row's header or a cell contained in that row.</summary>
       </Docs>
@@ -99,6 +118,9 @@
       <MemberSignature Language="C#" Value="RowHeaderSelect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewSelectionMode RowHeaderSelect = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect" />
+      <MemberSignature Language="VB.NET" Value="RowHeaderSelect" />
+      <MemberSignature Language="F#" Value="RowHeaderSelect = 3" Usage="System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect" />
+      <MemberSignature Language="C++ CLI" Value="RowHeaderSelect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +129,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewSelectionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The row will be selected by clicking in the row's header cell. An individual cell can be selected by clicking that cell.</summary>
       </Docs>

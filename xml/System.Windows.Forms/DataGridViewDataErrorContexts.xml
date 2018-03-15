@@ -1,7 +1,10 @@
-<Type Name="DataGridViewDataErrorContexts" FullName="System.Windows.Forms.DataGridViewDataErrorContexts">
+﻿<Type Name="DataGridViewDataErrorContexts" FullName="System.Windows.Forms.DataGridViewDataErrorContexts">
   <TypeSignature Language="C#" Value="public enum DataGridViewDataErrorContexts" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewDataErrorContexts extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewDataErrorContexts" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewDataErrorContexts" />
+  <TypeSignature Language="F#" Value="type DataGridViewDataErrorContexts = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewDataErrorContexts" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="ClipboardContent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewDataErrorContexts ClipboardContent = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent" />
+      <MemberSignature Language="VB.NET" Value="ClipboardContent" />
+      <MemberSignature Language="F#" Value="ClipboardContent = 16384" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.ClipboardContent" />
+      <MemberSignature Language="C++ CLI" Value="ClipboardContent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>A data error occurred when copying content to the Clipboard. This value indicates that the cell value could not be converted to a string.</summary>
       </Docs>
@@ -57,6 +64,9 @@
       <MemberSignature Language="C#" Value="Commit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewDataErrorContexts Commit = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.Commit" />
+      <MemberSignature Language="VB.NET" Value="Commit" />
+      <MemberSignature Language="F#" Value="Commit = 512" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.Commit" />
+      <MemberSignature Language="C++ CLI" Value="Commit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>A data error occurred when committing changes to the data store. This value indicates that data entered in a cell could not be committed to the underlying data store.</summary>
       </Docs>
@@ -73,6 +84,9 @@
       <MemberSignature Language="C#" Value="CurrentCellChange" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewDataErrorContexts CurrentCellChange = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.CurrentCellChange" />
+      <MemberSignature Language="VB.NET" Value="CurrentCellChange" />
+      <MemberSignature Language="F#" Value="CurrentCellChange = 4096" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.CurrentCellChange" />
+      <MemberSignature Language="C++ CLI" Value="CurrentCellChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>A data error occurred when the selection cursor moved to another cell. This value indicates that a user selected a cell when the previously selected cell had an error condition.</summary>
       </Docs>
@@ -89,6 +104,9 @@
       <MemberSignature Language="C#" Value="Display" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewDataErrorContexts Display = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.Display" />
+      <MemberSignature Language="VB.NET" Value="Display" />
+      <MemberSignature Language="F#" Value="Display = 2" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.Display" />
+      <MemberSignature Language="C++ CLI" Value="Display" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A data error occurred when displaying a cell that was populated by a data source. This value indicates that the value from the data source cannot be displayed by the cell, or a mapping that translates the value from the data source to the cell is missing.</summary>
       </Docs>
@@ -105,6 +124,9 @@
       <MemberSignature Language="C#" Value="Formatting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewDataErrorContexts Formatting = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.Formatting" />
+      <MemberSignature Language="VB.NET" Value="Formatting" />
+      <MemberSignature Language="F#" Value="Formatting = 1" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.Formatting" />
+      <MemberSignature Language="C++ CLI" Value="Formatting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -113,6 +135,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A data error occurred when trying to format data that is either being sent to a data store, or being loaded from a data store. This value indicates that a change to a cell failed to format correctly. Either the new cell value needs to be corrected or the cell's formatting needs to change.</summary>
       </Docs>
@@ -121,6 +144,9 @@
       <MemberSignature Language="C#" Value="InitialValueRestoration" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewDataErrorContexts InitialValueRestoration = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.InitialValueRestoration" />
+      <MemberSignature Language="VB.NET" Value="InitialValueRestoration" />
+      <MemberSignature Language="F#" Value="InitialValueRestoration = 1024" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.InitialValueRestoration" />
+      <MemberSignature Language="C++ CLI" Value="InitialValueRestoration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +155,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>A data error occurred when restoring a cell to its previous value. This value indicates that a cell tried to cancel an edit and the rollback to the initial value failed. This can occur if the cell formatting changed so that it is incompatible with the initial value.</summary>
       </Docs>
@@ -137,6 +164,9 @@
       <MemberSignature Language="C#" Value="LeaveControl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewDataErrorContexts LeaveControl = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.LeaveControl" />
+      <MemberSignature Language="VB.NET" Value="LeaveControl" />
+      <MemberSignature Language="F#" Value="LeaveControl = 2048" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.LeaveControl" />
+      <MemberSignature Language="C++ CLI" Value="LeaveControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -145,6 +175,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>A data error occurred when the <see cref="T:System.Windows.Forms.DataGridView" /> lost focus. This value indicates that the <see cref="T:System.Windows.Forms.DataGridView" /> could not commit user changes after losing focus.</summary>
       </Docs>
@@ -153,6 +184,9 @@
       <MemberSignature Language="C#" Value="Parsing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewDataErrorContexts Parsing = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.Parsing" />
+      <MemberSignature Language="VB.NET" Value="Parsing" />
+      <MemberSignature Language="F#" Value="Parsing = 256" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.Parsing" />
+      <MemberSignature Language="C++ CLI" Value="Parsing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -161,6 +195,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>A data error occurred when parsing new data. This value indicates that the <see cref="T:System.Windows.Forms.DataGridView" /> could not parse new data that was entered by the user or loaded from the underlying data store.</summary>
       </Docs>
@@ -169,6 +204,9 @@
       <MemberSignature Language="C#" Value="PreferredSize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewDataErrorContexts PreferredSize = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.PreferredSize" />
+      <MemberSignature Language="VB.NET" Value="PreferredSize" />
+      <MemberSignature Language="F#" Value="PreferredSize = 4" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.PreferredSize" />
+      <MemberSignature Language="C++ CLI" Value="PreferredSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -177,6 +215,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A data error occurred when calculating the preferred size of a cell. This value indicates that the <see cref="T:System.Windows.Forms.DataGridView" /> failed to calculate the preferred width or height of a cell when programmatically resizing a column or row. This can occur if the cell failed to format its value.</summary>
       </Docs>
@@ -185,6 +224,9 @@
       <MemberSignature Language="C#" Value="RowDeletion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewDataErrorContexts RowDeletion = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.RowDeletion" />
+      <MemberSignature Language="VB.NET" Value="RowDeletion" />
+      <MemberSignature Language="F#" Value="RowDeletion = 8" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.RowDeletion" />
+      <MemberSignature Language="C++ CLI" Value="RowDeletion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -193,6 +235,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A data error occurred when deleting a row. This value indicates that the underlying data store threw an exception when a data-bound <see cref="T:System.Windows.Forms.DataGridView" /> deleted a row.</summary>
       </Docs>
@@ -201,6 +244,9 @@
       <MemberSignature Language="C#" Value="Scroll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewDataErrorContexts Scroll = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewDataErrorContexts.Scroll" />
+      <MemberSignature Language="VB.NET" Value="Scroll" />
+      <MemberSignature Language="F#" Value="Scroll = 8192" Usage="System.Windows.Forms.DataGridViewDataErrorContexts.Scroll" />
+      <MemberSignature Language="C++ CLI" Value="Scroll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -209,6 +255,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewDataErrorContexts</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>A data error occurred when scrolling a new region into view. This value indicates that a cell with data errors scrolled into view programmatically or with the scroll bar.</summary>
       </Docs>

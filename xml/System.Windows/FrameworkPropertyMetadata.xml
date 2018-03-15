@@ -1,7 +1,10 @@
-<Type Name="FrameworkPropertyMetadata" FullName="System.Windows.FrameworkPropertyMetadata">
+﻿<Type Name="FrameworkPropertyMetadata" FullName="System.Windows.FrameworkPropertyMetadata">
   <TypeSignature Language="C#" Value="public class FrameworkPropertyMetadata : System.Windows.UIPropertyMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FrameworkPropertyMetadata extends System.Windows.UIPropertyMetadata" />
   <TypeSignature Language="DocId" Value="T:System.Windows.FrameworkPropertyMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Class FrameworkPropertyMetadata&#xA;Inherits UIPropertyMetadata" />
+  <TypeSignature Language="F#" Value="type FrameworkPropertyMetadata = class&#xA;    inherit UIPropertyMetadata" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FrameworkPropertyMetadata : System::Windows::UIPropertyMetadata" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,10 +44,22 @@
     <altmember cref="T:System.Windows.PropertyMetadata" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkPropertyMetadata" /> class.</summary>
+        <altmember cref="T:System.Windows.PropertyMetadata" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +83,9 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (defaultValue As Object)" />
+      <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : obj -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata defaultValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Object ^ defaultValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -106,6 +124,8 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (System.Windows.PropertyChangedCallback propertyChangedCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.PropertyChangedCallback propertyChangedCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Windows.PropertyChangedCallback)" />
+      <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : System.Windows.PropertyChangedCallback -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata propertyChangedCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Windows::PropertyChangedCallback ^ propertyChangedCallback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -134,6 +154,9 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.FrameworkPropertyMetadataOptions flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Windows.FrameworkPropertyMetadataOptions flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (defaultValue As Object, flags As FrameworkPropertyMetadataOptions)" />
+      <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : obj * System.Windows.FrameworkPropertyMetadataOptions -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata (defaultValue, flags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Object ^ defaultValue, System::Windows::FrameworkPropertyMetadataOptions flags);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -176,6 +199,8 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.PropertyChangedCallback propertyChangedCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, class System.Windows.PropertyChangedCallback propertyChangedCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback)" />
+      <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : obj * System.Windows.PropertyChangedCallback -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata (defaultValue, propertyChangedCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Object ^ defaultValue, System::Windows::PropertyChangedCallback ^ propertyChangedCallback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -216,6 +241,8 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)" />
+      <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : System.Windows.PropertyChangedCallback * System.Windows.CoerceValueCallback -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata (propertyChangedCallback, coerceValueCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Windows::PropertyChangedCallback ^ propertyChangedCallback, System::Windows::CoerceValueCallback ^ coerceValueCallback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -252,6 +279,8 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.FrameworkPropertyMetadataOptions flags, System.Windows.PropertyChangedCallback propertyChangedCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Windows.FrameworkPropertyMetadataOptions flags, class System.Windows.PropertyChangedCallback propertyChangedCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback)" />
+      <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : obj * System.Windows.FrameworkPropertyMetadataOptions * System.Windows.PropertyChangedCallback -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata (defaultValue, flags, propertyChangedCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Object ^ defaultValue, System::Windows::FrameworkPropertyMetadataOptions flags, System::Windows::PropertyChangedCallback ^ propertyChangedCallback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -296,6 +325,8 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)" />
+      <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : obj * System.Windows.PropertyChangedCallback * System.Windows.CoerceValueCallback -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata (defaultValue, propertyChangedCallback, coerceValueCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Object ^ defaultValue, System::Windows::PropertyChangedCallback ^ propertyChangedCallback, System::Windows::CoerceValueCallback ^ coerceValueCallback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -338,6 +369,8 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.FrameworkPropertyMetadataOptions flags, System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Windows.FrameworkPropertyMetadataOptions flags, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)" />
+      <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : obj * System.Windows.FrameworkPropertyMetadataOptions * System.Windows.PropertyChangedCallback * System.Windows.CoerceValueCallback -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata (defaultValue, flags, propertyChangedCallback, coerceValueCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Object ^ defaultValue, System::Windows::FrameworkPropertyMetadataOptions flags, System::Windows::PropertyChangedCallback ^ propertyChangedCallback, System::Windows::CoerceValueCallback ^ coerceValueCallback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -384,6 +417,8 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.FrameworkPropertyMetadataOptions flags, System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback, bool isAnimationProhibited);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Windows.FrameworkPropertyMetadataOptions flags, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback, bool isAnimationProhibited) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback,System.Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : obj * System.Windows.FrameworkPropertyMetadataOptions * System.Windows.PropertyChangedCallback * System.Windows.CoerceValueCallback * bool -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata (defaultValue, flags, propertyChangedCallback, coerceValueCallback, isAnimationProhibited)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Object ^ defaultValue, System::Windows::FrameworkPropertyMetadataOptions flags, System::Windows::PropertyChangedCallback ^ propertyChangedCallback, System::Windows::CoerceValueCallback ^ coerceValueCallback, bool isAnimationProhibited);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -435,6 +470,8 @@
       <MemberSignature Language="C#" Value="public FrameworkPropertyMetadata (object defaultValue, System.Windows.FrameworkPropertyMetadataOptions flags, System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback, bool isAnimationProhibited, System.Windows.Data.UpdateSourceTrigger defaultUpdateSourceTrigger);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, valuetype System.Windows.FrameworkPropertyMetadataOptions flags, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback, bool isAnimationProhibited, valuetype System.Windows.Data.UpdateSourceTrigger defaultUpdateSourceTrigger) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback,System.Boolean,System.Windows.Data.UpdateSourceTrigger)" />
+      <MemberSignature Language="F#" Value="new System.Windows.FrameworkPropertyMetadata : obj * System.Windows.FrameworkPropertyMetadataOptions * System.Windows.PropertyChangedCallback * System.Windows.CoerceValueCallback * bool * System.Windows.Data.UpdateSourceTrigger -&gt; System.Windows.FrameworkPropertyMetadata" Usage="new System.Windows.FrameworkPropertyMetadata (defaultValue, flags, propertyChangedCallback, coerceValueCallback, isAnimationProhibited, defaultUpdateSourceTrigger)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FrameworkPropertyMetadata(System::Object ^ defaultValue, System::Windows::FrameworkPropertyMetadataOptions flags, System::Windows::PropertyChangedCallback ^ propertyChangedCallback, System::Windows::CoerceValueCallback ^ coerceValueCallback, bool isAnimationProhibited, System::Windows::Data::UpdateSourceTrigger defaultUpdateSourceTrigger);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -488,6 +525,9 @@
       <MemberSignature Language="C#" Value="public bool AffectsArrange { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AffectsArrange" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.AffectsArrange" />
+      <MemberSignature Language="VB.NET" Value="Public Property AffectsArrange As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AffectsArrange : bool with get, set" Usage="System.Windows.FrameworkPropertyMetadata.AffectsArrange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AffectsArrange { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -534,6 +574,9 @@
       <MemberSignature Language="C#" Value="public bool AffectsMeasure { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AffectsMeasure" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.AffectsMeasure" />
+      <MemberSignature Language="VB.NET" Value="Public Property AffectsMeasure As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AffectsMeasure : bool with get, set" Usage="System.Windows.FrameworkPropertyMetadata.AffectsMeasure" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AffectsMeasure { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -581,6 +624,9 @@
       <MemberSignature Language="C#" Value="public bool AffectsParentArrange { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AffectsParentArrange" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.AffectsParentArrange" />
+      <MemberSignature Language="VB.NET" Value="Public Property AffectsParentArrange As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AffectsParentArrange : bool with get, set" Usage="System.Windows.FrameworkPropertyMetadata.AffectsParentArrange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AffectsParentArrange { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -621,6 +667,9 @@
       <MemberSignature Language="C#" Value="public bool AffectsParentMeasure { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AffectsParentMeasure" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure" />
+      <MemberSignature Language="VB.NET" Value="Public Property AffectsParentMeasure As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AffectsParentMeasure : bool with get, set" Usage="System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AffectsParentMeasure { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -661,6 +710,9 @@
       <MemberSignature Language="C#" Value="public bool AffectsRender { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AffectsRender" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.AffectsRender" />
+      <MemberSignature Language="VB.NET" Value="Public Property AffectsRender As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AffectsRender : bool with get, set" Usage="System.Windows.FrameworkPropertyMetadata.AffectsRender" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AffectsRender { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -707,6 +759,9 @@
       <MemberSignature Language="C#" Value="public bool BindsTwoWayByDefault { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BindsTwoWayByDefault" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault" />
+      <MemberSignature Language="VB.NET" Value="Public Property BindsTwoWayByDefault As Boolean" />
+      <MemberSignature Language="F#" Value="member this.BindsTwoWayByDefault : bool with get, set" Usage="System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BindsTwoWayByDefault { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -755,6 +810,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Data.UpdateSourceTrigger DefaultUpdateSourceTrigger { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Data.UpdateSourceTrigger DefaultUpdateSourceTrigger" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.DefaultUpdateSourceTrigger" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultUpdateSourceTrigger As UpdateSourceTrigger" />
+      <MemberSignature Language="F#" Value="member this.DefaultUpdateSourceTrigger : System.Windows.Data.UpdateSourceTrigger with get, set" Usage="System.Windows.FrameworkPropertyMetadata.DefaultUpdateSourceTrigger" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::UpdateSourceTrigger DefaultUpdateSourceTrigger { System::Windows::Data::UpdateSourceTrigger get(); void set(System::Windows::Data::UpdateSourceTrigger value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -786,6 +844,9 @@
       <MemberSignature Language="C#" Value="public bool Inherits { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Inherits" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.Inherits" />
+      <MemberSignature Language="VB.NET" Value="Public Property Inherits As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Inherits : bool with get, set" Usage="System.Windows.FrameworkPropertyMetadata.Inherits" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Inherits { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -833,6 +894,9 @@
       <MemberSignature Language="C#" Value="public bool IsDataBindingAllowed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDataBindingAllowed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.IsDataBindingAllowed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDataBindingAllowed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDataBindingAllowed : bool" Usage="System.Windows.FrameworkPropertyMetadata.IsDataBindingAllowed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDataBindingAllowed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -876,6 +940,9 @@
       <MemberSignature Language="C#" Value="public bool IsNotDataBindable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNotDataBindable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.IsNotDataBindable" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsNotDataBindable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNotDataBindable : bool with get, set" Usage="System.Windows.FrameworkPropertyMetadata.IsNotDataBindable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNotDataBindable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -913,6 +980,9 @@
       <MemberSignature Language="C#" Value="public bool Journal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Journal" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.Journal" />
+      <MemberSignature Language="VB.NET" Value="Public Property Journal As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Journal : bool with get, set" Usage="System.Windows.FrameworkPropertyMetadata.Journal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Journal { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -946,6 +1016,9 @@
       <MemberSignature Language="C#" Value="protected override void Merge (System.Windows.PropertyMetadata baseMetadata, System.Windows.DependencyProperty dp);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Merge(class System.Windows.PropertyMetadata baseMetadata, class System.Windows.DependencyProperty dp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.Merge(System.Windows.PropertyMetadata,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Merge (baseMetadata As PropertyMetadata, dp As DependencyProperty)" />
+      <MemberSignature Language="F#" Value="override this.Merge : System.Windows.PropertyMetadata * System.Windows.DependencyProperty -&gt; unit" Usage="frameworkPropertyMetadata.Merge (baseMetadata, dp)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Merge(System::Windows::PropertyMetadata ^ baseMetadata, System::Windows::DependencyProperty ^ dp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -988,6 +1061,9 @@
       <MemberSignature Language="C#" Value="protected override void OnApply (System.Windows.DependencyProperty dp, Type targetType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApply(class System.Windows.DependencyProperty dp, class System.Type targetType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.FrameworkPropertyMetadata.OnApply(System.Windows.DependencyProperty,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApply (dp As DependencyProperty, targetType As Type)" />
+      <MemberSignature Language="F#" Value="override this.OnApply : System.Windows.DependencyProperty * Type -&gt; unit" Usage="frameworkPropertyMetadata.OnApply (dp, targetType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApply(System::Windows::DependencyProperty ^ dp, Type ^ targetType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1024,6 +1100,9 @@
       <MemberSignature Language="C#" Value="public bool OverridesInheritanceBehavior { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OverridesInheritanceBehavior" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.OverridesInheritanceBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property OverridesInheritanceBehavior As Boolean" />
+      <MemberSignature Language="F#" Value="member this.OverridesInheritanceBehavior : bool with get, set" Usage="System.Windows.FrameworkPropertyMetadata.OverridesInheritanceBehavior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OverridesInheritanceBehavior { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1058,6 +1137,9 @@
       <MemberSignature Language="C#" Value="public bool SubPropertiesDoNotAffectRender { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SubPropertiesDoNotAffectRender" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender" />
+      <MemberSignature Language="VB.NET" Value="Public Property SubPropertiesDoNotAffectRender As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SubPropertiesDoNotAffectRender : bool with get, set" Usage="System.Windows.FrameworkPropertyMetadata.SubPropertiesDoNotAffectRender" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SubPropertiesDoNotAffectRender { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1088,15 +1170,5 @@
         <altmember cref="T:System.Windows.Freezable" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.FrameworkPropertyMetadata" /> class.</summary>
-        <altmember cref="T:System.Windows.PropertyMetadata" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

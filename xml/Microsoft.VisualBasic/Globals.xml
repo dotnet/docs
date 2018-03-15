@@ -1,7 +1,10 @@
-<Type Name="Globals" FullName="Microsoft.VisualBasic.Globals">
+﻿<Type Name="Globals" FullName="Microsoft.VisualBasic.Globals">
   <TypeSignature Language="C#" Value="public sealed class Globals" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Globals extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Globals" />
+  <TypeSignature Language="VB.NET" Value="Public Module Globals" />
+  <TypeSignature Language="F#" Value="type Globals = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Globals sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -51,6 +54,9 @@ End Function
       <MemberSignature Language="C#" Value="public static string ScriptEngine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string ScriptEngine" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Globals.ScriptEngine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScriptEngine As String" />
+      <MemberSignature Language="F#" Value="member this.ScriptEngine : string" Usage="Microsoft.VisualBasic.Globals.ScriptEngine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ ScriptEngine { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -88,6 +94,9 @@ End Function
       <MemberSignature Language="C#" Value="public static int ScriptEngineBuildVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 ScriptEngineBuildVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Globals.ScriptEngineBuildVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScriptEngineBuildVersion As Integer" />
+      <MemberSignature Language="F#" Value="member this.ScriptEngineBuildVersion : int" Usage="Microsoft.VisualBasic.Globals.ScriptEngineBuildVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ScriptEngineBuildVersion { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -125,6 +134,9 @@ End Function
       <MemberSignature Language="C#" Value="public static int ScriptEngineMajorVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 ScriptEngineMajorVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Globals.ScriptEngineMajorVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScriptEngineMajorVersion As Integer" />
+      <MemberSignature Language="F#" Value="member this.ScriptEngineMajorVersion : int" Usage="Microsoft.VisualBasic.Globals.ScriptEngineMajorVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ScriptEngineMajorVersion { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -162,6 +174,9 @@ End Function
       <MemberSignature Language="C#" Value="public static int ScriptEngineMinorVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 ScriptEngineMinorVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Globals.ScriptEngineMinorVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScriptEngineMinorVersion As Integer" />
+      <MemberSignature Language="F#" Value="member this.ScriptEngineMinorVersion : int" Usage="Microsoft.VisualBasic.Globals.ScriptEngineMinorVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ScriptEngineMinorVersion { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

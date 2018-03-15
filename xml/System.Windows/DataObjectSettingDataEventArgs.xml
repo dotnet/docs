@@ -1,7 +1,10 @@
-<Type Name="DataObjectSettingDataEventArgs" FullName="System.Windows.DataObjectSettingDataEventArgs">
+﻿<Type Name="DataObjectSettingDataEventArgs" FullName="System.Windows.DataObjectSettingDataEventArgs">
   <TypeSignature Language="C#" Value="public sealed class DataObjectSettingDataEventArgs : System.Windows.DataObjectEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataObjectSettingDataEventArgs extends System.Windows.DataObjectEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.DataObjectSettingDataEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataObjectSettingDataEventArgs&#xA;Inherits DataObjectEventArgs" />
+  <TypeSignature Language="F#" Value="type DataObjectSettingDataEventArgs = class&#xA;    inherit DataObjectEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataObjectSettingDataEventArgs sealed : System::Windows::DataObjectEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public DataObjectSettingDataEventArgs (System.Windows.IDataObject dataObject, string format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.IDataObject dataObject, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DataObjectSettingDataEventArgs.#ctor(System.Windows.IDataObject,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dataObject As IDataObject, format As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.DataObjectSettingDataEventArgs : System.Windows.IDataObject * string -&gt; System.Windows.DataObjectSettingDataEventArgs" Usage="new System.Windows.DataObjectSettingDataEventArgs (dataObject, format)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataObjectSettingDataEventArgs(System::Windows::IDataObject ^ dataObject, System::String ^ format);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,6 +53,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.IDataObject DataObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IDataObject DataObject" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectSettingDataEventArgs.DataObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataObject As IDataObject" />
+      <MemberSignature Language="F#" Value="member this.DataObject : System.Windows.IDataObject" Usage="System.Windows.DataObjectSettingDataEventArgs.DataObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IDataObject ^ DataObject { System::Windows::IDataObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +74,9 @@
       <MemberSignature Language="C#" Value="public string Format { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Format" />
       <MemberSignature Language="DocId" Value="P:System.Windows.DataObjectSettingDataEventArgs.Format" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As String" />
+      <MemberSignature Language="F#" Value="member this.Format : string" Usage="System.Windows.DataObjectSettingDataEventArgs.Format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Format { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +95,9 @@
       <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DataObjectSettingDataEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="dataObjectSettingDataEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

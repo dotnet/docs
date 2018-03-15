@@ -1,7 +1,10 @@
-<Type Name="Visibility" FullName="System.Windows.Visibility">
+﻿<Type Name="Visibility" FullName="System.Windows.Visibility">
   <TypeSignature Language="C#" Value="public enum Visibility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Visibility extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Visibility" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Visibility" />
+  <TypeSignature Language="F#" Value="type Visibility = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class Visibility" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="Collapsed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Visibility Collapsed = unsigned int8(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Visibility.Collapsed" />
+      <MemberSignature Language="VB.NET" Value="Collapsed" />
+      <MemberSignature Language="F#" Value="Collapsed = 2" Usage="System.Windows.Visibility.Collapsed" />
+      <MemberSignature Language="C++ CLI" Value="Collapsed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Visibility</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Do not display the element, and do not reserve space for it in layout.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="Hidden" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Visibility Hidden = unsigned int8(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Visibility.Hidden" />
+      <MemberSignature Language="VB.NET" Value="Hidden" />
+      <MemberSignature Language="F#" Value="Hidden = 1" Usage="System.Windows.Visibility.Hidden" />
+      <MemberSignature Language="C++ CLI" Value="Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Visibility</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Do not display the element, but reserve space for the element in layout.</summary>
       </Docs>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="Visible" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Visibility Visible = unsigned int8(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Visibility.Visible" />
+      <MemberSignature Language="VB.NET" Value="Visible" />
+      <MemberSignature Language="F#" Value="Visible = 0" Usage="System.Windows.Visibility.Visible" />
+      <MemberSignature Language="C++ CLI" Value="Visible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Visibility</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Display the element.</summary>
       </Docs>

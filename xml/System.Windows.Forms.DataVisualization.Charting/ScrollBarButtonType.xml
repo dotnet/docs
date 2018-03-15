@@ -1,7 +1,10 @@
-<Type Name="ScrollBarButtonType" FullName="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType">
+﻿<Type Name="ScrollBarButtonType" FullName="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType">
   <TypeSignature Language="C#" Value="public enum ScrollBarButtonType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollBarButtonType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ScrollBarButtonType" />
+  <TypeSignature Language="F#" Value="type ScrollBarButtonType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ScrollBarButtonType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="LargeDecrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType LargeDecrement = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.LargeDecrement" />
+      <MemberSignature Language="VB.NET" Value="LargeDecrement" />
+      <MemberSignature Language="F#" Value="LargeDecrement = 3" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.LargeDecrement" />
+      <MemberSignature Language="C++ CLI" Value="LargeDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The scroll view was decreased by a large decrement, by clicking the area beneath a scrolling thumb for a vertical scrollbar, or to the left of a scrolling thumb for a horizontal scrollbar.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="LargeIncrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType LargeIncrement = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.LargeIncrement" />
+      <MemberSignature Language="VB.NET" Value="LargeIncrement" />
+      <MemberSignature Language="F#" Value="LargeIncrement = 4" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.LargeIncrement" />
+      <MemberSignature Language="C++ CLI" Value="LargeIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The scroll view was increased by a large increment, by clicking the area above a scrolling thumb for a vertical scrollbar, or to the right of a scrolling thumb for a horizontal scrollbar.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="SmallDecrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType SmallDecrement = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.SmallDecrement" />
+      <MemberSignature Language="VB.NET" Value="SmallDecrement" />
+      <MemberSignature Language="F#" Value="SmallDecrement = 1" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.SmallDecrement" />
+      <MemberSignature Language="C++ CLI" Value="SmallDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A down or left arrow button was clicked to decrease the scroll view by a small decrement.</summary>
       </Docs>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="SmallIncrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType SmallIncrement = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.SmallIncrement" />
+      <MemberSignature Language="VB.NET" Value="SmallIncrement" />
+      <MemberSignature Language="F#" Value="SmallIncrement = 2" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.SmallIncrement" />
+      <MemberSignature Language="C++ CLI" Value="SmallIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -81,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>An up or right arrow button was clicked to increase the scroll view by a small increment.</summary>
       </Docs>
@@ -89,6 +108,9 @@
       <MemberSignature Language="C#" Value="ThumbTracker" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType ThumbTracker = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.ThumbTracker" />
+      <MemberSignature Language="VB.NET" Value="ThumbTracker" />
+      <MemberSignature Language="F#" Value="ThumbTracker = 0" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.ThumbTracker" />
+      <MemberSignature Language="C++ CLI" Value="ThumbTracker" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -97,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The tracker button (also known as the scrollbar thumb) was clicked.</summary>
       </Docs>
@@ -105,6 +128,9 @@
       <MemberSignature Language="C#" Value="ZoomReset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType ZoomReset = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.ZoomReset" />
+      <MemberSignature Language="VB.NET" Value="ZoomReset" />
+      <MemberSignature Language="F#" Value="ZoomReset = 5" Usage="System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType.ZoomReset" />
+      <MemberSignature Language="C++ CLI" Value="ZoomReset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -113,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.ScrollBarButtonType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The zoom or reset button was clicked.</summary>
       </Docs>

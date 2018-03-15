@@ -1,7 +1,10 @@
-<Type Name="ComplexModelBinderProvider" FullName="System.Web.ModelBinding.ComplexModelBinderProvider">
+﻿<Type Name="ComplexModelBinderProvider" FullName="System.Web.ModelBinding.ComplexModelBinderProvider">
   <TypeSignature Language="C#" Value="public sealed class ComplexModelBinderProvider : System.Web.ModelBinding.ModelBinderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComplexModelBinderProvider extends System.Web.ModelBinding.ModelBinderProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ComplexModelBinderProvider" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComplexModelBinderProvider&#xA;Inherits ModelBinderProvider" />
+  <TypeSignature Language="F#" Value="type ComplexModelBinderProvider = class&#xA;    inherit ModelBinderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComplexModelBinderProvider sealed : System::Web::ModelBinding::ModelBinderProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public ComplexModelBinderProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ComplexModelBinderProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComplexModelBinderProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.ModelBinding.IModelBinder GetBinder (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, System.Web.ModelBinding.ModelBindingContext bindingContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.ModelBinding.IModelBinder GetBinder(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ComplexModelBinderProvider.GetBinder(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetBinder : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; System.Web.ModelBinding.IModelBinder" Usage="complexModelBinderProvider.GetBinder (modelBindingExecutionContext, bindingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::ModelBinding::IModelBinder ^ GetBinder(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

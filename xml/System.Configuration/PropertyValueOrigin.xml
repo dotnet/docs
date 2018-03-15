@@ -1,7 +1,10 @@
-<Type Name="PropertyValueOrigin" FullName="System.Configuration.PropertyValueOrigin">
+﻿<Type Name="PropertyValueOrigin" FullName="System.Configuration.PropertyValueOrigin">
   <TypeSignature Language="C#" Value="public enum PropertyValueOrigin" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyValueOrigin extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.PropertyValueOrigin" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PropertyValueOrigin" />
+  <TypeSignature Language="F#" Value="type PropertyValueOrigin = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PropertyValueOrigin" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.PropertyValueOrigin Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.PropertyValueOrigin.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Configuration.PropertyValueOrigin.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Configuration.PropertyValueOrigin</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The configuration property value originates from the <see cref="P:System.Configuration.ConfigurationProperty.DefaultValue" /> property.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="Inherited" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.PropertyValueOrigin Inherited = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.PropertyValueOrigin.Inherited" />
+      <MemberSignature Language="VB.NET" Value="Inherited" />
+      <MemberSignature Language="F#" Value="Inherited = 1" Usage="System.Configuration.PropertyValueOrigin.Inherited" />
+      <MemberSignature Language="C++ CLI" Value="Inherited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -55,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Configuration.PropertyValueOrigin</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The configuration property value is inherited from a parent level in the configuration.</summary>
       </Docs>
@@ -63,6 +74,9 @@
       <MemberSignature Language="C#" Value="SetHere" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Configuration.PropertyValueOrigin SetHere = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Configuration.PropertyValueOrigin.SetHere" />
+      <MemberSignature Language="VB.NET" Value="SetHere" />
+      <MemberSignature Language="F#" Value="SetHere = 2" Usage="System.Configuration.PropertyValueOrigin.SetHere" />
+      <MemberSignature Language="C++ CLI" Value="SetHere" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -75,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Configuration.PropertyValueOrigin</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The configuration property value is defined at the current level of the hierarchy.</summary>
       </Docs>

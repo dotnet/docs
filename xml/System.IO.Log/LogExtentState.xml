@@ -1,7 +1,10 @@
-<Type Name="LogExtentState" FullName="System.IO.Log.LogExtentState">
+﻿<Type Name="LogExtentState" FullName="System.IO.Log.LogExtentState">
   <TypeSignature Language="C#" Value="public enum LogExtentState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LogExtentState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Log.LogExtentState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LogExtentState" />
+  <TypeSignature Language="F#" Value="type LogExtentState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LogExtentState" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Active" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.LogExtentState Active = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogExtentState.Active" />
+      <MemberSignature Language="VB.NET" Value="Active" />
+      <MemberSignature Language="F#" Value="Active = 4" Usage="System.IO.Log.LogExtentState.Active" />
+      <MemberSignature Language="C++ CLI" Value="Active" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Log.LogExtentState</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.IO.Log.LogExtent" /> instance is being used as storage for the <see cref="T:System.IO.Log.LogStore" />.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="ActivePendingDelete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.LogExtentState ActivePendingDelete = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogExtentState.ActivePendingDelete" />
+      <MemberSignature Language="VB.NET" Value="ActivePendingDelete" />
+      <MemberSignature Language="F#" Value="ActivePendingDelete = 8" Usage="System.IO.Log.LogExtentState.ActivePendingDelete" />
+      <MemberSignature Language="C++ CLI" Value="ActivePendingDelete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Log.LogExtentState</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.IO.Log.LogExtent" /> instance is marked for deletion but still contains some active data.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="Inactive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.LogExtentState Inactive = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogExtentState.Inactive" />
+      <MemberSignature Language="VB.NET" Value="Inactive" />
+      <MemberSignature Language="F#" Value="Inactive = 2" Usage="System.IO.Log.LogExtentState.Inactive" />
+      <MemberSignature Language="C++ CLI" Value="Inactive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Log.LogExtentState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.IO.Log.LogExtent" /> instance has been allocated to the <see cref="T:System.IO.Log.LogStore" /> but does not contain any active data.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="Initializing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.LogExtentState Initializing = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogExtentState.Initializing" />
+      <MemberSignature Language="VB.NET" Value="Initializing" />
+      <MemberSignature Language="F#" Value="Initializing = 1" Usage="System.IO.Log.LogExtentState.Initializing" />
+      <MemberSignature Language="C++ CLI" Value="Initializing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Log.LogExtentState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.IO.Log.LogExtent" /> instance has not yet been allocated to the <see cref="T:System.IO.Log.LogStore" />.</summary>
       </Docs>
@@ -82,6 +101,9 @@
       <MemberSignature Language="C#" Value="PendingArchive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.LogExtentState PendingArchive = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogExtentState.PendingArchive" />
+      <MemberSignature Language="VB.NET" Value="PendingArchive" />
+      <MemberSignature Language="F#" Value="PendingArchive = 16" Usage="System.IO.Log.LogExtentState.PendingArchive" />
+      <MemberSignature Language="C++ CLI" Value="PendingArchive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -90,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Log.LogExtentState</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.IO.Log.LogExtent" /> instance does not contain any active data, but contains data that has not yet been archived.</summary>
       </Docs>
@@ -98,6 +121,9 @@
       <MemberSignature Language="C#" Value="PendingArchiveAndDelete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.LogExtentState PendingArchiveAndDelete = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogExtentState.PendingArchiveAndDelete" />
+      <MemberSignature Language="VB.NET" Value="PendingArchiveAndDelete" />
+      <MemberSignature Language="F#" Value="PendingArchiveAndDelete = 32" Usage="System.IO.Log.LogExtentState.PendingArchiveAndDelete" />
+      <MemberSignature Language="C++ CLI" Value="PendingArchiveAndDelete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -106,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Log.LogExtentState</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.IO.Log.LogExtent" /> instance is marked for deletion but still contains data that has not been archived.</summary>
       </Docs>
@@ -114,6 +141,9 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.LogExtentState Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogExtentState.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.IO.Log.LogExtentState.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -122,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Log.LogExtentState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The status of the <see cref="T:System.IO.Log.LogExtent" /> instance is unknown.</summary>
       </Docs>

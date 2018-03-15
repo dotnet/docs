@@ -1,7 +1,9 @@
-<Type Name="WmlMobileTextWriter+WmlFormat" FullName="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter+WmlFormat">
+﻿<Type Name="WmlMobileTextWriter+WmlFormat" FullName="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter+WmlFormat">
   <TypeSignature Language="C#" Value="protected class WmlMobileTextWriter.WmlFormat" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit WmlMobileTextWriter/WmlFormat extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat" />
+  <TypeSignature Language="VB.NET" Value="Protected Class WmlMobileTextWriter.WmlFormat" />
+  <TypeSignature Language="C++ CLI" Value="protected: ref class WmlMobileTextWriter::WmlFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +24,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WmlFormat (System.Web.UI.MobileControls.Style style, System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat currentFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.MobileControls.Style style, class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter/WmlFormat currentFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.#ctor(System.Web.UI.MobileControls.Style,System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat : System.Web.UI.MobileControls.Style * System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat -&gt; System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat" Usage="new System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat (style, currentFormat)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlFormat(System::Web::UI::MobileControls::Style ^ style, System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlFormat ^ currentFormat);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -53,6 +66,9 @@
       <MemberSignature Language="C#" Value="public WmlFormat (bool bold, bool italic, System.Web.UI.MobileControls.FontSize size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool bold, bool italic, valuetype System.Web.UI.MobileControls.FontSize size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.#ctor(System.Boolean,System.Boolean,System.Web.UI.MobileControls.FontSize)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bold As Boolean, italic As Boolean, size As FontSize)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat : bool * bool * System.Web.UI.MobileControls.FontSize -&gt; System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat" Usage="new System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat (bold, italic, size)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlFormat(bool bold, bool italic, System::Web::UI::MobileControls::FontSize size);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -77,6 +93,9 @@
       <MemberSignature Language="C#" Value="public bool Bold { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Bold" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.Bold" />
+      <MemberSignature Language="VB.NET" Value="Public Property Bold As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Bold : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.Bold" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Bold { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -103,6 +122,9 @@
       <MemberSignature Language="C#" Value="public virtual bool Compare (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Compare(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter/WmlFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.Compare(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Compare (format As WmlMobileTextWriter.WmlFormat) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Compare : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat -&gt; bool&#xA;override this.Compare : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat -&gt; bool" Usage="wmlFormat.Compare format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Compare(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter::WmlFormat ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -133,6 +155,9 @@
       <MemberSignature Language="C#" Value="public bool Italic { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Italic" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.Italic" />
+      <MemberSignature Language="VB.NET" Value="Public Property Italic As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Italic : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.Italic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Italic { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -159,6 +184,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.FontSize Size { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.MobileControls.FontSize Size" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Property Size As FontSize" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Web.UI.MobileControls.FontSize with get, set" Usage="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::FontSize Size { System::Web::UI::MobileControls::FontSize get(); void set(System::Web::UI::MobileControls::FontSize value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -184,6 +212,9 @@
       <MemberSignature Language="C#" Value="public bool WrittenBold { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool WrittenBold" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.WrittenBold" />
+      <MemberSignature Language="VB.NET" Value="Public Property WrittenBold As Boolean" />
+      <MemberSignature Language="F#" Value="member this.WrittenBold : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.WrittenBold" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WrittenBold { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -210,6 +241,9 @@
       <MemberSignature Language="C#" Value="public bool WrittenItalic { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool WrittenItalic" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.WrittenItalic" />
+      <MemberSignature Language="VB.NET" Value="Public Property WrittenItalic As Boolean" />
+      <MemberSignature Language="F#" Value="member this.WrittenItalic : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.WrittenItalic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WrittenItalic { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -236,6 +270,9 @@
       <MemberSignature Language="C#" Value="public bool WrittenSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool WrittenSize" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.WrittenSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property WrittenSize As Boolean" />
+      <MemberSignature Language="F#" Value="member this.WrittenSize : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat.WrittenSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WrittenSize { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -258,14 +295,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter.WmlFormat" />. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

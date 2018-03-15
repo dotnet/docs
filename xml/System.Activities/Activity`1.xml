@@ -1,7 +1,10 @@
-<Type Name="Activity&lt;TResult&gt;" FullName="System.Activities.Activity&lt;TResult&gt;">
+﻿<Type Name="Activity&lt;TResult&gt;" FullName="System.Activities.Activity&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public abstract class Activity&lt;TResult&gt; : System.Activities.ActivityWithResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Activity`1&lt;TResult&gt; extends System.Activities.ActivityWithResult" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Activity`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Activity(Of TResult)&#xA;Inherits ActivityWithResult" />
+  <TypeSignature Language="F#" Value="type Activity&lt;'Result&gt; = class&#xA;    inherit ActivityWithResult" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class Activity abstract : System::Activities::ActivityWithResult" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +48,8 @@
       <MemberSignature Language="C#" Value="protected Activity ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Activity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -60,6 +65,9 @@
       <MemberSignature Language="C#" Value="public static System.Activities.Activity&lt;TResult&gt; FromValue (TResult constValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Activity`1&lt;!TResult&gt; FromValue(!TResult constValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.FromValue(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromValue (constValue As TResult) As Activity(Of TResult)" />
+      <MemberSignature Language="F#" Value="static member FromValue : 'Result -&gt; System.Activities.Activity&lt;'Result&gt;" Usage="System.Activities.Activity&lt;'Result&gt;.FromValue constValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Activity&lt;TResult&gt; ^ FromValue(TResult constValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -78,10 +86,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromVariable">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Activities.Activity`1" /> expression that evaluates to a <see cref="T:System.Activities.Variable" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromVariable">
       <MemberSignature Language="C#" Value="public static System.Activities.Activity&lt;TResult&gt; FromVariable (System.Activities.Variable variable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Activity`1&lt;!TResult&gt; FromVariable(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.FromVariable(System.Activities.Variable)" />
+      <MemberSignature Language="F#" Value="static member FromVariable : System.Activities.Variable -&gt; System.Activities.Activity&lt;'Result&gt;" Usage="System.Activities.Activity&lt;'Result&gt;.FromVariable variable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Activity&lt;TResult&gt; ^ FromVariable(System::Activities::Variable ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -111,6 +130,9 @@
       <MemberSignature Language="C#" Value="public static System.Activities.Activity&lt;TResult&gt; FromVariable (System.Activities.Variable&lt;TResult&gt; variable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.Activity`1&lt;!TResult&gt; FromVariable(class System.Activities.Variable`1&lt;!TResult&gt; variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.FromVariable(System.Activities.Variable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromVariable (variable As Variable(Of TResult)) As Activity(Of TResult)" />
+      <MemberSignature Language="F#" Value="static member FromVariable : System.Activities.Variable&lt;'Result&gt; -&gt; System.Activities.Activity&lt;'Result&gt;" Usage="System.Activities.Activity&lt;'Result&gt;.FromVariable variable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::Activity&lt;TResult&gt; ^ FromVariable(System::Activities::Variable&lt;TResult&gt; ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -133,6 +155,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Activities.Activity&lt;TResult&gt; (System.Activities.Variable variable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.Activity`1&lt;!TResult&gt; op_Implicit(class System.Activities.Variable variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.op_Implicit(System.Activities.Variable)~System.Activities.Activity{`0}" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Activities.Variable -&gt; System.Activities.Activity&lt;'Result&gt;" Usage="System.Activities.Activity&lt;'Result&gt;.op_Implicit variable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::Activity&lt;TResult&gt; ^(System::Activities::Variable ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -162,6 +186,9 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Activities.Activity&lt;TResult&gt; (System.Activities.Variable&lt;TResult&gt; variable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.Activity`1&lt;!TResult&gt; op_Implicit(class System.Activities.Variable`1&lt;!TResult&gt; variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.op_Implicit(System.Activities.Variable{`0})~System.Activities.Activity{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (variable As Variable(Of TResult)) As Activity(Of TResult)" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Activities.Variable&lt;'Result&gt; -&gt; System.Activities.Activity&lt;'Result&gt;" Usage="System.Activities.Activity&lt;'Result&gt;.op_Implicit variable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::Activity&lt;TResult&gt; ^(System::Activities::Variable&lt;TResult&gt; ^ variable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -184,6 +211,9 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Activities.Activity&lt;TResult&gt; (TResult constValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Activities.Activity`1&lt;!TResult&gt; op_Implicit(!TResult constValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Activity`1.op_Implicit(`0)~System.Activities.Activity{`0}" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (constValue As TResult) As Activity(Of TResult)" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : 'Result -&gt; System.Activities.Activity&lt;'Result&gt;" Usage="System.Activities.Activity&lt;'Result&gt;.op_Implicit constValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Activities::Activity&lt;TResult&gt; ^(TResult constValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -206,6 +236,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.OutArgument&lt;TResult&gt; Result { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.OutArgument`1&lt;!TResult&gt; Result" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Activity`1.Result" />
+      <MemberSignature Language="VB.NET" Value="Public Property Result As OutArgument(Of TResult)" />
+      <MemberSignature Language="F#" Value="member this.Result : System.Activities.OutArgument&lt;'Result&gt; with get, set" Usage="System.Activities.Activity&lt;'Result&gt;.Result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::OutArgument&lt;TResult&gt; ^ Result { System::Activities::OutArgument&lt;TResult&gt; ^ get(); void set(System::Activities::OutArgument&lt;TResult&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -232,14 +265,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="FromVariable">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.Activities.Activity`1" /> expression that evaluates to a <see cref="T:System.Activities.Variable" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

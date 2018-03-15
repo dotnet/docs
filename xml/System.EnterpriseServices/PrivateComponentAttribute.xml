@@ -1,7 +1,10 @@
-<Type Name="PrivateComponentAttribute" FullName="System.EnterpriseServices.PrivateComponentAttribute">
+﻿<Type Name="PrivateComponentAttribute" FullName="System.EnterpriseServices.PrivateComponentAttribute">
   <TypeSignature Language="C#" Value="public sealed class PrivateComponentAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrivateComponentAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.PrivateComponentAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrivateComponentAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type PrivateComponentAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrivateComponentAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public PrivateComponentAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.PrivateComponentAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrivateComponentAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

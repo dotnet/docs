@@ -1,7 +1,10 @@
-<Type Name="CompilerError" FullName="System.CodeDom.Compiler.CompilerError">
+﻿<Type Name="CompilerError" FullName="System.CodeDom.Compiler.CompilerError">
   <TypeSignature Language="C#" Value="public class CompilerError" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CompilerError extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CompilerError" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompilerError" />
+  <TypeSignature Language="F#" Value="type CompilerError = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompilerError" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,10 +43,21 @@
     <altmember cref="T:System.CodeDom.Compiler.CompilerErrorCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CompilerError" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CompilerError ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerError.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompilerError();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -63,6 +77,9 @@
       <MemberSignature Language="C#" Value="public CompilerError (string fileName, int line, int column, string errorNumber, string errorText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, int32 line, int32 column, string errorNumber, string errorText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerError.#ctor(System.String,System.Int32,System.Int32,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, line As Integer, column As Integer, errorNumber As String, errorText As String)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.Compiler.CompilerError : string * int * int * string * string -&gt; System.CodeDom.Compiler.CompilerError" Usage="new System.CodeDom.Compiler.CompilerError (fileName, line, column, errorNumber, errorText)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompilerError(System::String ^ fileName, int line, int column, System::String ^ errorNumber, System::String ^ errorText);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -93,6 +110,9 @@
       <MemberSignature Language="C#" Value="public int Column { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Column" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerError.Column" />
+      <MemberSignature Language="VB.NET" Value="Public Property Column As Integer" />
+      <MemberSignature Language="F#" Value="member this.Column : int with get, set" Usage="System.CodeDom.Compiler.CompilerError.Column" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Column { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -122,6 +142,9 @@
       <MemberSignature Language="C#" Value="public string ErrorNumber { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorNumber" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerError.ErrorNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorNumber As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorNumber : string with get, set" Usage="System.CodeDom.Compiler.CompilerError.ErrorNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorNumber { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,6 +174,9 @@
       <MemberSignature Language="C#" Value="public string ErrorText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorText" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerError.ErrorText" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorText As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorText : string with get, set" Usage="System.CodeDom.Compiler.CompilerError.ErrorText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -180,6 +206,9 @@
       <MemberSignature Language="C#" Value="public string FileName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerError.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
+      <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="System.CodeDom.Compiler.CompilerError.FileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -202,6 +231,9 @@
       <MemberSignature Language="C#" Value="public bool IsWarning { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsWarning" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerError.IsWarning" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsWarning As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsWarning : bool with get, set" Usage="System.CodeDom.Compiler.CompilerError.IsWarning" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWarning { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -225,6 +257,9 @@
       <MemberSignature Language="C#" Value="public int Line { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Line" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerError.Line" />
+      <MemberSignature Language="VB.NET" Value="Public Property Line As Integer" />
+      <MemberSignature Language="F#" Value="member this.Line : int with get, set" Usage="System.CodeDom.Compiler.CompilerError.Line" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Line { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -247,6 +282,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerError.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="compilerError.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -273,14 +311,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.CompilerError" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="RuleSetReference" FullName="System.Workflow.Activities.Rules.RuleSetReference">
+﻿<Type Name="RuleSetReference" FullName="System.Workflow.Activities.Rules.RuleSetReference">
   <TypeSignature Language="C#" Value="public sealed class RuleSetReference : System.Workflow.ComponentModel.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RuleSetReference extends System.Workflow.ComponentModel.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleSetReference" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RuleSetReference&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="F#" Value="type RuleSetReference = class&#xA;    inherit DependencyObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleSetReference sealed : System::Workflow::ComponentModel::DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,10 +51,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSetReference" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RuleSetReference ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSetReference.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleSetReference();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -77,6 +91,9 @@
       <MemberSignature Language="C#" Value="public RuleSetReference (string ruleSetName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string ruleSetName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSetReference.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ruleSetName As String)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleSetReference : string -&gt; System.Workflow.Activities.Rules.RuleSetReference" Usage="new System.Workflow.Activities.Rules.RuleSetReference ruleSetName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleSetReference(System::String ^ ruleSetName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -105,6 +122,9 @@
       <MemberSignature Language="C#" Value="protected override void InitializeProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitializeProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleSetReference.InitializeProperties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeProperties ()" />
+      <MemberSignature Language="F#" Value="override this.InitializeProperties : unit -&gt; unit" Usage="ruleSetReference.InitializeProperties " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -123,6 +143,9 @@
       <MemberSignature Language="C#" Value="public string RuleSetName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RuleSetName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleSetReference.RuleSetName" />
+      <MemberSignature Language="VB.NET" Value="Public Property RuleSetName As String" />
+      <MemberSignature Language="F#" Value="member this.RuleSetName : string with get, set" Usage="System.Workflow.Activities.Rules.RuleSetReference.RuleSetName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RuleSetName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -147,14 +170,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleSetReference" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

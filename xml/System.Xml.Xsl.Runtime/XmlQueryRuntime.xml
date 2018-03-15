@@ -1,7 +1,10 @@
-<Type Name="XmlQueryRuntime" FullName="System.Xml.Xsl.Runtime.XmlQueryRuntime">
+﻿<Type Name="XmlQueryRuntime" FullName="System.Xml.Xsl.Runtime.XmlQueryRuntime">
   <TypeSignature Language="C#" Value="public sealed class XmlQueryRuntime" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlQueryRuntime extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.XmlQueryRuntime" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlQueryRuntime" />
+  <TypeSignature Language="F#" Value="type XmlQueryRuntime = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlQueryRuntime sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public void AddNewIndex (System.Xml.XPath.XPathNavigator context, int indexId, System.Xml.Xsl.Runtime.XmlILIndex index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddNewIndex(class System.Xml.XPath.XPathNavigator context, int32 indexId, class System.Xml.Xsl.Runtime.XmlILIndex index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.AddNewIndex(System.Xml.XPath.XPathNavigator,System.Int32,System.Xml.Xsl.Runtime.XmlILIndex)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddNewIndex (context As XPathNavigator, indexId As Integer, index As XmlILIndex)" />
+      <MemberSignature Language="F#" Value="member this.AddNewIndex : System.Xml.XPath.XPathNavigator * int * System.Xml.Xsl.Runtime.XmlILIndex -&gt; unit" Usage="xmlQueryRuntime.AddNewIndex (context, indexId, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddNewIndex(System::Xml::XPath::XPathNavigator ^ context, int indexId, System::Xml::Xsl::Runtime::XmlILIndex ^ index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -57,6 +63,9 @@
       <MemberSignature Language="C#" Value="public object ChangeTypeXsltArgument (int indexType, object value, Type destinationType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ChangeTypeXsltArgument(int32 indexType, object value, class System.Type destinationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.ChangeTypeXsltArgument(System.Int32,System.Object,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ChangeTypeXsltArgument (indexType As Integer, value As Object, destinationType As Type) As Object" />
+      <MemberSignature Language="F#" Value="member this.ChangeTypeXsltArgument : int * obj * Type -&gt; obj" Usage="xmlQueryRuntime.ChangeTypeXsltArgument (indexType, value, destinationType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ChangeTypeXsltArgument(int indexType, System::Object ^ value, Type ^ destinationType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -87,6 +96,9 @@
       <MemberSignature Language="C#" Value="public object ChangeTypeXsltResult (int indexType, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object ChangeTypeXsltResult(int32 indexType, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.ChangeTypeXsltResult(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ChangeTypeXsltResult (indexType As Integer, value As Object) As Object" />
+      <MemberSignature Language="F#" Value="member this.ChangeTypeXsltResult : int * obj -&gt; obj" Usage="xmlQueryRuntime.ChangeTypeXsltResult (indexType, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ ChangeTypeXsltResult(int indexType, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -115,6 +127,9 @@
       <MemberSignature Language="C#" Value="public int ComparePosition (System.Xml.XPath.XPathNavigator navigatorThis, System.Xml.XPath.XPathNavigator navigatorThat);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ComparePosition(class System.Xml.XPath.XPathNavigator navigatorThis, class System.Xml.XPath.XPathNavigator navigatorThat) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.ComparePosition(System.Xml.XPath.XPathNavigator,System.Xml.XPath.XPathNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ComparePosition (navigatorThis As XPathNavigator, navigatorThat As XPathNavigator) As Integer" />
+      <MemberSignature Language="F#" Value="member this.ComparePosition : System.Xml.XPath.XPathNavigator * System.Xml.XPath.XPathNavigator -&gt; int" Usage="xmlQueryRuntime.ComparePosition (navigatorThis, navigatorThat)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ComparePosition(System::Xml::XPath::XPathNavigator ^ navigatorThis, System::Xml::XPath::XPathNavigator ^ navigatorThat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -143,6 +158,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Xsl.Runtime.XmlCollation CreateCollation (string collation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Xsl.Runtime.XmlCollation CreateCollation(string collation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.CreateCollation(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCollation (collation As String) As XmlCollation" />
+      <MemberSignature Language="F#" Value="member this.CreateCollation : string -&gt; System.Xml.Xsl.Runtime.XmlCollation" Usage="xmlQueryRuntime.CreateCollation collation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Xsl::Runtime::XmlCollation ^ CreateCollation(System::String ^ collation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -169,6 +187,9 @@
       <MemberSignature Language="C#" Value="public string[] DebugGetGlobalNames ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] DebugGetGlobalNames() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.DebugGetGlobalNames" />
+      <MemberSignature Language="VB.NET" Value="Public Function DebugGetGlobalNames () As String()" />
+      <MemberSignature Language="F#" Value="member this.DebugGetGlobalNames : unit -&gt; string[]" Usage="xmlQueryRuntime.DebugGetGlobalNames " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ DebugGetGlobalNames();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -199,6 +220,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IList DebugGetGlobalValue (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IList DebugGetGlobalValue(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.DebugGetGlobalValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DebugGetGlobalValue (name As String) As IList" />
+      <MemberSignature Language="F#" Value="member this.DebugGetGlobalValue : string -&gt; System.Collections.IList" Usage="xmlQueryRuntime.DebugGetGlobalValue name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IList ^ DebugGetGlobalValue(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -225,6 +249,9 @@
       <MemberSignature Language="C#" Value="public object DebugGetXsltValue (System.Collections.IList seq);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object DebugGetXsltValue(class System.Collections.IList seq) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.DebugGetXsltValue(System.Collections.IList)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DebugGetXsltValue (seq As IList) As Object" />
+      <MemberSignature Language="F#" Value="member this.DebugGetXsltValue : System.Collections.IList -&gt; obj" Usage="xmlQueryRuntime.DebugGetXsltValue seq" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ DebugGetXsltValue(System::Collections::IList ^ seq);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -251,6 +278,9 @@
       <MemberSignature Language="C#" Value="public void DebugSetGlobalValue (string name, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DebugSetGlobalValue(string name, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.DebugSetGlobalValue(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DebugSetGlobalValue (name As String, value As Object)" />
+      <MemberSignature Language="F#" Value="member this.DebugSetGlobalValue : string * obj -&gt; unit" Usage="xmlQueryRuntime.DebugSetGlobalValue (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DebugSetGlobalValue(System::String ^ name, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -278,6 +308,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Xml.XPath.XPathNavigator&gt; DocOrderDistinct (System.Collections.Generic.IList&lt;System.Xml.XPath.XPathNavigator&gt; seq);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathNavigator&gt; DocOrderDistinct(class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathNavigator&gt; seq) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.DocOrderDistinct(System.Collections.Generic.IList{System.Xml.XPath.XPathNavigator})" />
+      <MemberSignature Language="VB.NET" Value="Public Function DocOrderDistinct (seq As IList(Of XPathNavigator)) As IList(Of XPathNavigator)" />
+      <MemberSignature Language="F#" Value="member this.DocOrderDistinct : System.Collections.Generic.IList&lt;System.Xml.XPath.XPathNavigator&gt; -&gt; System.Collections.Generic.IList&lt;System.Xml.XPath.XPathNavigator&gt;" Usage="xmlQueryRuntime.DocOrderDistinct seq" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Xml::XPath::XPathNavigator ^&gt; ^ DocOrderDistinct(System::Collections::Generic::IList&lt;System::Xml::XPath::XPathNavigator ^&gt; ^ seq);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -304,6 +337,9 @@
       <MemberSignature Language="C#" Value="public bool EarlyBoundFunctionExists (string name, string namespaceUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool EarlyBoundFunctionExists(string name, string namespaceUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.EarlyBoundFunctionExists(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EarlyBoundFunctionExists (name As String, namespaceUri As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EarlyBoundFunctionExists : string * string -&gt; bool" Usage="xmlQueryRuntime.EarlyBoundFunctionExists (name, namespaceUri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EarlyBoundFunctionExists(System::String ^ name, System::String ^ namespaceUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -333,6 +369,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathNavigator EndRtfConstruction (out System.Xml.Xsl.Runtime.XmlQueryOutput output);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XPath.XPathNavigator EndRtfConstruction([out] class System.Xml.Xsl.Runtime.XmlQueryOutput&amp; output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.EndRtfConstruction(System.Xml.Xsl.Runtime.XmlQueryOutput@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndRtfConstruction (ByRef output As XmlQueryOutput) As XPathNavigator" />
+      <MemberSignature Language="F#" Value="member this.EndRtfConstruction :  -&gt; System.Xml.XPath.XPathNavigator" Usage="xmlQueryRuntime.EndRtfConstruction output" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XPath::XPathNavigator ^ EndRtfConstruction([Runtime::InteropServices::Out] System::Xml::Xsl::Runtime::XmlQueryOutput ^ % output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -359,6 +398,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; EndSequenceConstruction (out System.Xml.Xsl.Runtime.XmlQueryOutput output);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt; EndSequenceConstruction([out] class System.Xml.Xsl.Runtime.XmlQueryOutput&amp; output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.EndSequenceConstruction(System.Xml.Xsl.Runtime.XmlQueryOutput@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndSequenceConstruction (ByRef output As XmlQueryOutput) As IList(Of XPathItem)" />
+      <MemberSignature Language="F#" Value="member this.EndSequenceConstruction :  -&gt; System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt;" Usage="xmlQueryRuntime.EndSequenceConstruction output" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ EndSequenceConstruction([Runtime::InteropServices::Out] System::Xml::Xsl::Runtime::XmlQueryOutput ^ % output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -385,6 +427,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Xsl.Runtime.XmlQueryContext ExternalContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Xsl.Runtime.XmlQueryContext ExternalContext" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.XmlQueryRuntime.ExternalContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExternalContext As XmlQueryContext" />
+      <MemberSignature Language="F#" Value="member this.ExternalContext : System.Xml.Xsl.Runtime.XmlQueryContext" Usage="System.Xml.Xsl.Runtime.XmlQueryRuntime.ExternalContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Xsl::Runtime::XmlQueryContext ^ ExternalContext { System::Xml::Xsl::Runtime::XmlQueryContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -407,6 +452,9 @@
       <MemberSignature Language="C#" Value="public bool FindIndex (System.Xml.XPath.XPathNavigator context, int indexId, out System.Xml.Xsl.Runtime.XmlILIndex index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool FindIndex(class System.Xml.XPath.XPathNavigator context, int32 indexId, [out] class System.Xml.Xsl.Runtime.XmlILIndex&amp; index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.FindIndex(System.Xml.XPath.XPathNavigator,System.Int32,System.Xml.Xsl.Runtime.XmlILIndex@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindIndex (context As XPathNavigator, indexId As Integer, ByRef index As XmlILIndex) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.FindIndex : System.Xml.XPath.XPathNavigator * int *  -&gt; bool" Usage="xmlQueryRuntime.FindIndex (context, indexId, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool FindIndex(System::Xml::XPath::XPathNavigator ^ context, int indexId, [Runtime::InteropServices::Out] System::Xml::Xsl::Runtime::XmlILIndex ^ % index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -437,6 +485,9 @@
       <MemberSignature Language="C#" Value="public string GenerateId (System.Xml.XPath.XPathNavigator navigator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GenerateId(class System.Xml.XPath.XPathNavigator navigator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.GenerateId(System.Xml.XPath.XPathNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateId (navigator As XPathNavigator) As String" />
+      <MemberSignature Language="F#" Value="member this.GenerateId : System.Xml.XPath.XPathNavigator -&gt; string" Usage="xmlQueryRuntime.GenerateId navigator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GenerateId(System::Xml::XPath::XPathNavigator ^ navigator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -463,6 +514,9 @@
       <MemberSignature Language="C#" Value="public string GetAtomizedName (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetAtomizedName(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.GetAtomizedName(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAtomizedName (index As Integer) As String" />
+      <MemberSignature Language="F#" Value="member this.GetAtomizedName : int -&gt; string" Usage="xmlQueryRuntime.GetAtomizedName index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetAtomizedName(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -489,6 +543,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Xsl.Runtime.XmlCollation GetCollation (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Xsl.Runtime.XmlCollation GetCollation(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.GetCollation(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCollation (index As Integer) As XmlCollation" />
+      <MemberSignature Language="F#" Value="member this.GetCollation : int -&gt; System.Xml.Xsl.Runtime.XmlCollation" Usage="xmlQueryRuntime.GetCollation index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Xsl::Runtime::XmlCollation ^ GetCollation(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -515,6 +572,9 @@
       <MemberSignature Language="C#" Value="public object GetEarlyBoundObject (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetEarlyBoundObject(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.GetEarlyBoundObject(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEarlyBoundObject (index As Integer) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetEarlyBoundObject : int -&gt; obj" Usage="xmlQueryRuntime.GetEarlyBoundObject index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetEarlyBoundObject(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -541,6 +601,9 @@
       <MemberSignature Language="C#" Value="public object GetGlobalValue (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetGlobalValue(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.GetGlobalValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGlobalValue (index As Integer) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetGlobalValue : int -&gt; obj" Usage="xmlQueryRuntime.GetGlobalValue index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetGlobalValue(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -567,6 +630,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Xsl.Runtime.XmlNavigatorFilter GetNameFilter (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Xsl.Runtime.XmlNavigatorFilter GetNameFilter(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.GetNameFilter(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNameFilter (index As Integer) As XmlNavigatorFilter" />
+      <MemberSignature Language="F#" Value="member this.GetNameFilter : int -&gt; System.Xml.Xsl.Runtime.XmlNavigatorFilter" Usage="xmlQueryRuntime.GetNameFilter index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Xsl::Runtime::XmlNavigatorFilter ^ GetNameFilter(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -593,6 +659,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Xsl.Runtime.XmlNavigatorFilter GetTypeFilter (System.Xml.XPath.XPathNodeType nodeType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Xsl.Runtime.XmlNavigatorFilter GetTypeFilter(valuetype System.Xml.XPath.XPathNodeType nodeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.GetTypeFilter(System.Xml.XPath.XPathNodeType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTypeFilter (nodeType As XPathNodeType) As XmlNavigatorFilter" />
+      <MemberSignature Language="F#" Value="member this.GetTypeFilter : System.Xml.XPath.XPathNodeType -&gt; System.Xml.Xsl.Runtime.XmlNavigatorFilter" Usage="xmlQueryRuntime.GetTypeFilter nodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Xsl::Runtime::XmlNavigatorFilter ^ GetTypeFilter(System::Xml::XPath::XPathNodeType nodeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -619,6 +688,9 @@
       <MemberSignature Language="C#" Value="public bool IsGlobalComputed (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsGlobalComputed(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.IsGlobalComputed(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsGlobalComputed (index As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsGlobalComputed : int -&gt; bool" Usage="xmlQueryRuntime.IsGlobalComputed index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsGlobalComputed(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -642,10 +714,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsQNameEqual">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the <see cref="P:System.Xml.XPath.XPathNavigator.LocalName" /> and <see cref="P:System.Xml.XPath.XPathNavigator.NamespaceURI" /> properties of two <see cref="T:System.Xml.XPath.XPathNavigator" /> instances to check if they are equal.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsQNameEqual">
       <MemberSignature Language="C#" Value="public bool IsQNameEqual (System.Xml.XPath.XPathNavigator n1, System.Xml.XPath.XPathNavigator n2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsQNameEqual(class System.Xml.XPath.XPathNavigator n1, class System.Xml.XPath.XPathNavigator n2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.IsQNameEqual(System.Xml.XPath.XPathNavigator,System.Xml.XPath.XPathNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsQNameEqual (n1 As XPathNavigator, n2 As XPathNavigator) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsQNameEqual : System.Xml.XPath.XPathNavigator * System.Xml.XPath.XPathNavigator -&gt; bool" Usage="xmlQueryRuntime.IsQNameEqual (n1, n2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsQNameEqual(System::Xml::XPath::XPathNavigator ^ n1, System::Xml::XPath::XPathNavigator ^ n2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -675,6 +759,9 @@
       <MemberSignature Language="C#" Value="public bool IsQNameEqual (System.Xml.XPath.XPathNavigator navigator, int indexLocalName, int indexNamespaceUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsQNameEqual(class System.Xml.XPath.XPathNavigator navigator, int32 indexLocalName, int32 indexNamespaceUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.IsQNameEqual(System.Xml.XPath.XPathNavigator,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsQNameEqual (navigator As XPathNavigator, indexLocalName As Integer, indexNamespaceUri As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsQNameEqual : System.Xml.XPath.XPathNavigator * int * int -&gt; bool" Usage="xmlQueryRuntime.IsQNameEqual (navigator, indexLocalName, indexNamespaceUri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsQNameEqual(System::Xml::XPath::XPathNavigator ^ navigator, int indexLocalName, int indexNamespaceUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -709,10 +796,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="MatchesXmlType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns <see langword="true" /> if the type of the specified item matches the specified XML type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="MatchesXmlType">
       <MemberSignature Language="C#" Value="public bool MatchesXmlType (System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; seq, int indexType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool MatchesXmlType(class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt; seq, int32 indexType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.MatchesXmlType(System.Collections.Generic.IList{System.Xml.XPath.XPathItem},System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MatchesXmlType (seq As IList(Of XPathItem), indexType As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MatchesXmlType : System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; * int -&gt; bool" Usage="xmlQueryRuntime.MatchesXmlType (seq, indexType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MatchesXmlType(System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ seq, int indexType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -742,6 +841,9 @@
       <MemberSignature Language="C#" Value="public bool MatchesXmlType (System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; seq, System.Xml.Schema.XmlTypeCode code);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool MatchesXmlType(class System.Collections.Generic.IList`1&lt;class System.Xml.XPath.XPathItem&gt; seq, valuetype System.Xml.Schema.XmlTypeCode code) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.MatchesXmlType(System.Collections.Generic.IList{System.Xml.XPath.XPathItem},System.Xml.Schema.XmlTypeCode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MatchesXmlType (seq As IList(Of XPathItem), code As XmlTypeCode) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MatchesXmlType : System.Collections.Generic.IList&lt;System.Xml.XPath.XPathItem&gt; * System.Xml.Schema.XmlTypeCode -&gt; bool" Usage="xmlQueryRuntime.MatchesXmlType (seq, code)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MatchesXmlType(System::Collections::Generic::IList&lt;System::Xml::XPath::XPathItem ^&gt; ^ seq, System::Xml::Schema::XmlTypeCode code);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -771,6 +873,9 @@
       <MemberSignature Language="C#" Value="public bool MatchesXmlType (System.Xml.XPath.XPathItem item, int indexType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool MatchesXmlType(class System.Xml.XPath.XPathItem item, int32 indexType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.MatchesXmlType(System.Xml.XPath.XPathItem,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MatchesXmlType (item As XPathItem, indexType As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MatchesXmlType : System.Xml.XPath.XPathItem * int -&gt; bool" Usage="xmlQueryRuntime.MatchesXmlType (item, indexType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MatchesXmlType(System::Xml::XPath::XPathItem ^ item, int indexType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -800,6 +905,9 @@
       <MemberSignature Language="C#" Value="public bool MatchesXmlType (System.Xml.XPath.XPathItem item, System.Xml.Schema.XmlTypeCode code);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool MatchesXmlType(class System.Xml.XPath.XPathItem item, valuetype System.Xml.Schema.XmlTypeCode code) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.MatchesXmlType(System.Xml.XPath.XPathItem,System.Xml.Schema.XmlTypeCode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function MatchesXmlType (item As XPathItem, code As XmlTypeCode) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MatchesXmlType : System.Xml.XPath.XPathItem * System.Xml.Schema.XmlTypeCode -&gt; bool" Usage="xmlQueryRuntime.MatchesXmlType (item, code)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool MatchesXmlType(System::Xml::XPath::XPathItem ^ item, System::Xml::Schema::XmlTypeCode code);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -828,6 +936,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlNameTable NameTable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNameTable NameTable" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.XmlQueryRuntime.NameTable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NameTable As XmlNameTable" />
+      <MemberSignature Language="F#" Value="member this.NameTable : System.Xml.XmlNameTable" Usage="System.Xml.Xsl.Runtime.XmlQueryRuntime.NameTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlNameTable ^ NameTable { System::Xml::XmlNameTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -850,6 +961,9 @@
       <MemberSignature Language="C#" Value="public static int OnCurrentNodeChanged (System.Xml.XPath.XPathNavigator currentNode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 OnCurrentNodeChanged(class System.Xml.XPath.XPathNavigator currentNode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.OnCurrentNodeChanged(System.Xml.XPath.XPathNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OnCurrentNodeChanged (currentNode As XPathNavigator) As Integer" />
+      <MemberSignature Language="F#" Value="static member OnCurrentNodeChanged : System.Xml.XPath.XPathNavigator -&gt; int" Usage="System.Xml.Xsl.Runtime.XmlQueryRuntime.OnCurrentNodeChanged currentNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int OnCurrentNodeChanged(System::Xml::XPath::XPathNavigator ^ currentNode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -877,6 +991,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Xsl.Runtime.XmlQueryOutput Output { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Xsl.Runtime.XmlQueryOutput Output" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.XmlQueryRuntime.Output" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Output As XmlQueryOutput" />
+      <MemberSignature Language="F#" Value="member this.Output : System.Xml.Xsl.Runtime.XmlQueryOutput" Usage="System.Xml.Xsl.Runtime.XmlQueryRuntime.Output" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Xsl::Runtime::XmlQueryOutput ^ Output { System::Xml::Xsl::Runtime::XmlQueryOutput ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -895,10 +1012,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ParseTagName">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Parses the specified tag name.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ParseTagName">
       <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName ParseTagName (string tagName, int indexPrefixMappings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlQualifiedName ParseTagName(string tagName, int32 indexPrefixMappings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.ParseTagName(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ParseTagName (tagName As String, indexPrefixMappings As Integer) As XmlQualifiedName" />
+      <MemberSignature Language="F#" Value="member this.ParseTagName : string * int -&gt; System.Xml.XmlQualifiedName" Usage="xmlQueryRuntime.ParseTagName (tagName, indexPrefixMappings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlQualifiedName ^ ParseTagName(System::String ^ tagName, int indexPrefixMappings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -927,6 +1056,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName ParseTagName (string tagName, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlQualifiedName ParseTagName(string tagName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.ParseTagName(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ParseTagName (tagName As String, ns As String) As XmlQualifiedName" />
+      <MemberSignature Language="F#" Value="member this.ParseTagName : string * string -&gt; System.Xml.XmlQualifiedName" Usage="xmlQueryRuntime.ParseTagName (tagName, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlQualifiedName ^ ParseTagName(System::String ^ tagName, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -955,6 +1087,9 @@
       <MemberSignature Language="C#" Value="public void SendMessage (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SendMessage(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.SendMessage(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SendMessage (message As String)" />
+      <MemberSignature Language="F#" Value="member this.SendMessage : string -&gt; unit" Usage="xmlQueryRuntime.SendMessage message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SendMessage(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -980,6 +1115,9 @@
       <MemberSignature Language="C#" Value="public void SetGlobalValue (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetGlobalValue(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.SetGlobalValue(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetGlobalValue (index As Integer, value As Object)" />
+      <MemberSignature Language="F#" Value="member this.SetGlobalValue : int * obj -&gt; unit" Usage="xmlQueryRuntime.SetGlobalValue (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetGlobalValue(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1007,6 +1145,9 @@
       <MemberSignature Language="C#" Value="public void StartRtfConstruction (string baseUri, out System.Xml.Xsl.Runtime.XmlQueryOutput output);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartRtfConstruction(string baseUri, [out] class System.Xml.Xsl.Runtime.XmlQueryOutput&amp; output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.StartRtfConstruction(System.String,System.Xml.Xsl.Runtime.XmlQueryOutput@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StartRtfConstruction (baseUri As String, ByRef output As XmlQueryOutput)" />
+      <MemberSignature Language="F#" Value="member this.StartRtfConstruction : string *  -&gt; unit" Usage="xmlQueryRuntime.StartRtfConstruction (baseUri, output)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartRtfConstruction(System::String ^ baseUri, [Runtime::InteropServices::Out] System::Xml::Xsl::Runtime::XmlQueryOutput ^ % output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1034,6 +1175,9 @@
       <MemberSignature Language="C#" Value="public void StartSequenceConstruction (out System.Xml.Xsl.Runtime.XmlQueryOutput output);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartSequenceConstruction([out] class System.Xml.Xsl.Runtime.XmlQueryOutput&amp; output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.StartSequenceConstruction(System.Xml.Xsl.Runtime.XmlQueryOutput@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StartSequenceConstruction (ByRef output As XmlQueryOutput)" />
+      <MemberSignature Language="F#" Value="member this.StartSequenceConstruction :  -&gt; unit" Usage="xmlQueryRuntime.StartSequenceConstruction output" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartSequenceConstruction([Runtime::InteropServices::Out] System::Xml::Xsl::Runtime::XmlQueryOutput ^ % output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1059,6 +1203,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XPath.XPathNavigator TextRtfConstruction (string text, string baseUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XPath.XPathNavigator TextRtfConstruction(string text, string baseUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.TextRtfConstruction(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TextRtfConstruction (text As String, baseUri As String) As XPathNavigator" />
+      <MemberSignature Language="F#" Value="member this.TextRtfConstruction : string * string -&gt; System.Xml.XPath.XPathNavigator" Usage="xmlQueryRuntime.TextRtfConstruction (text, baseUri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XPath::XPathNavigator ^ TextRtfConstruction(System::String ^ text, System::String ^ baseUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1087,6 +1234,9 @@
       <MemberSignature Language="C#" Value="public void ThrowException (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ThrowException(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryRuntime.ThrowException(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ThrowException (text As String)" />
+      <MemberSignature Language="F#" Value="member this.ThrowException : string -&gt; unit" Usage="xmlQueryRuntime.ThrowException text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ThrowException(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1112,6 +1262,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Xsl.Runtime.XsltLibrary XsltFunctions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Xsl.Runtime.XsltLibrary XsltFunctions" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.XmlQueryRuntime.XsltFunctions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XsltFunctions As XsltLibrary" />
+      <MemberSignature Language="F#" Value="member this.XsltFunctions : System.Xml.Xsl.Runtime.XsltLibrary" Usage="System.Xml.Xsl.Runtime.XmlQueryRuntime.XsltFunctions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Xsl::Runtime::XsltLibrary ^ XsltFunctions { System::Xml::Xsl::Runtime::XsltLibrary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -1130,32 +1283,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="MatchesXmlType">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns <see langword="true" /> if the type of the specified item matches the specified XML type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ParseTagName">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Parses the specified tag name.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsQNameEqual">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares the <see cref="P:System.Xml.XPath.XPathNavigator.LocalName" /> and <see cref="P:System.Xml.XPath.XPathNavigator.NamespaceURI" /> properties of two <see cref="T:System.Xml.XPath.XPathNavigator" /> instances to check if they are equal.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

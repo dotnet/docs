@@ -1,7 +1,10 @@
-<Type Name="DragAction" FullName="System.Windows.Forms.DragAction">
+﻿<Type Name="DragAction" FullName="System.Windows.Forms.DragAction">
   <TypeSignature Language="C#" Value="public enum DragAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DragAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DragAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DragAction" />
+  <TypeSignature Language="F#" Value="type DragAction = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DragAction" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,9 @@
       <MemberSignature Language="C#" Value="Cancel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DragAction Cancel = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DragAction.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Cancel" />
+      <MemberSignature Language="F#" Value="Cancel = 2" Usage="System.Windows.Forms.DragAction.Cancel" />
+      <MemberSignature Language="C++ CLI" Value="Cancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -55,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragAction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The operation is canceled with no drop message.</summary>
       </Docs>
@@ -63,6 +70,9 @@
       <MemberSignature Language="C#" Value="Continue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DragAction Continue = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DragAction.Continue" />
+      <MemberSignature Language="VB.NET" Value="Continue" />
+      <MemberSignature Language="F#" Value="Continue = 0" Usage="System.Windows.Forms.DragAction.Continue" />
+      <MemberSignature Language="C++ CLI" Value="Continue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -71,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The operation will continue.</summary>
       </Docs>
@@ -79,6 +90,9 @@
       <MemberSignature Language="C#" Value="Drop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DragAction Drop = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DragAction.Drop" />
+      <MemberSignature Language="VB.NET" Value="Drop" />
+      <MemberSignature Language="F#" Value="Drop = 1" Usage="System.Windows.Forms.DragAction.Drop" />
+      <MemberSignature Language="C++ CLI" Value="Drop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -87,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The operation will stop with a drop.</summary>
       </Docs>

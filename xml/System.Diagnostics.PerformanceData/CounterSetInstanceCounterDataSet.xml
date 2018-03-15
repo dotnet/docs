@@ -1,7 +1,10 @@
-<Type Name="CounterSetInstanceCounterDataSet" FullName="System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet">
+﻿<Type Name="CounterSetInstanceCounterDataSet" FullName="System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet">
   <TypeSignature Language="C#" Value="public sealed class CounterSetInstanceCounterDataSet : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CounterSetInstanceCounterDataSet extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CounterSetInstanceCounterDataSet&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type CounterSetInstanceCounterDataSet = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CounterSetInstanceCounterDataSet sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,7 +33,13 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="counterSetInstanceCounterDataSet.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +62,9 @@
       <MemberSignature Language="C#" Value="~CounterSetInstanceCounterDataSet ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="counterSetInstanceCounterDataSet.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!CounterSetInstanceCounterDataSet ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -72,10 +84,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Accesses a counter value in the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Diagnostics.PerformanceData.CounterData this[int counterId] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.PerformanceData.CounterData Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(counterId As Integer) As CounterData" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Diagnostics.PerformanceData.CounterData" Usage="System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::PerformanceData::CounterData ^ default[int] { System::Diagnostics::PerformanceData::CounterData ^ get(int counterId); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -105,6 +129,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.PerformanceData.CounterData this[string counterName] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.PerformanceData.CounterData Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(counterName As String) As CounterData" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Diagnostics.PerformanceData.CounterData" Usage="System.Diagnostics.PerformanceData.CounterSetInstanceCounterDataSet.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::PerformanceData::CounterData ^ default[System::String ^] { System::Diagnostics::PerformanceData::CounterData ^ get(System::String ^ counterName); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -132,14 +159,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Accesses a counter value in the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

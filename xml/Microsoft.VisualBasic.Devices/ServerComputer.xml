@@ -1,7 +1,10 @@
-<Type Name="ServerComputer" FullName="Microsoft.VisualBasic.Devices.ServerComputer">
+﻿<Type Name="ServerComputer" FullName="Microsoft.VisualBasic.Devices.ServerComputer">
   <TypeSignature Language="C#" Value="public class ServerComputer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ServerComputer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.ServerComputer" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServerComputer" />
+  <TypeSignature Language="F#" Value="type ServerComputer = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServerComputer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -56,6 +59,8 @@
       <MemberSignature Language="C#" Value="public ServerComputer ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.ServerComputer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServerComputer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -71,6 +76,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Devices.Clock Clock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualBasic.Devices.Clock Clock" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ServerComputer.Clock" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Clock As Clock" />
+      <MemberSignature Language="F#" Value="member this.Clock : Microsoft.VisualBasic.Devices.Clock" Usage="Microsoft.VisualBasic.Devices.ServerComputer.Clock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Devices::Clock ^ Clock { Microsoft::VisualBasic::Devices::Clock ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -122,6 +130,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.MyServices.FileSystemProxy FileSystem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualBasic.MyServices.FileSystemProxy FileSystem" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ServerComputer.FileSystem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileSystem As FileSystemProxy" />
+      <MemberSignature Language="F#" Value="member this.FileSystem : Microsoft.VisualBasic.MyServices.FileSystemProxy" Usage="Microsoft.VisualBasic.Devices.ServerComputer.FileSystem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::MyServices::FileSystemProxy ^ FileSystem { Microsoft::VisualBasic::MyServices::FileSystemProxy ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -167,6 +178,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Devices.ComputerInfo Info { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualBasic.Devices.ComputerInfo Info" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ServerComputer.Info" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Info As ComputerInfo" />
+      <MemberSignature Language="F#" Value="member this.Info : Microsoft.VisualBasic.Devices.ComputerInfo" Usage="Microsoft.VisualBasic.Devices.ServerComputer.Info" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Devices::ComputerInfo ^ Info { Microsoft::VisualBasic::Devices::ComputerInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -212,6 +226,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ServerComputer.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.VisualBasic.Devices.ServerComputer.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -257,6 +274,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Devices.Network Network { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualBasic.Devices.Network Network" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ServerComputer.Network" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Network As Network" />
+      <MemberSignature Language="F#" Value="member this.Network : Microsoft.VisualBasic.Devices.Network" Usage="Microsoft.VisualBasic.Devices.ServerComputer.Network" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Devices::Network ^ Network { Microsoft::VisualBasic::Devices::Network ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -302,6 +322,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.MyServices.RegistryProxy Registry { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualBasic.MyServices.RegistryProxy Registry" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.ServerComputer.Registry" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Registry As RegistryProxy" />
+      <MemberSignature Language="F#" Value="member this.Registry : Microsoft.VisualBasic.MyServices.RegistryProxy" Usage="Microsoft.VisualBasic.Devices.ServerComputer.Registry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::MyServices::RegistryProxy ^ Registry { Microsoft::VisualBasic::MyServices::RegistryProxy ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

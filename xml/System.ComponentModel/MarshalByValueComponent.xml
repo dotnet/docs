@@ -1,7 +1,10 @@
-<Type Name="MarshalByValueComponent" FullName="System.ComponentModel.MarshalByValueComponent">
+﻿<Type Name="MarshalByValueComponent" FullName="System.ComponentModel.MarshalByValueComponent">
   <TypeSignature Language="C#" Value="public class MarshalByValueComponent : IDisposable, IServiceProvider, System.ComponentModel.IComponent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MarshalByValueComponent extends System.Object implements class System.ComponentModel.IComponent, class System.IDisposable, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.MarshalByValueComponent" />
+  <TypeSignature Language="VB.NET" Value="Public Class MarshalByValueComponent&#xA;Implements IComponent, IDisposable, IServiceProvider" />
+  <TypeSignature Language="F#" Value="type MarshalByValueComponent = class&#xA;    interface IComponent&#xA;    interface IServiceProvider&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MarshalByValueComponent : IDisposable, IServiceProvider, System::ComponentModel::IComponent" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -63,6 +66,8 @@
       <MemberSignature Language="C#" Value="public MarshalByValueComponent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MarshalByValueComponent.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MarshalByValueComponent();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +100,9 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.IContainer Container { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IContainer Container" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MarshalByValueComponent.Container" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Container As IContainer" />
+      <MemberSignature Language="F#" Value="member this.Container : System.ComponentModel.IContainer" Usage="System.ComponentModel.MarshalByValueComponent.Container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::IContainer ^ Container { System::ComponentModel::IContainer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -132,6 +140,9 @@
       <MemberSignature Language="C#" Value="public virtual bool DesignMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DesignMode" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MarshalByValueComponent.DesignMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DesignMode As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DesignMode : bool" Usage="System.ComponentModel.MarshalByValueComponent.DesignMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DesignMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -172,11 +183,27 @@
         <altmember cref="T:System.ComponentModel.MarshalByValueComponent" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.MarshalByValueComponent" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MarshalByValueComponent.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="marshalByValueComponent.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -213,6 +240,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MarshalByValueComponent.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="marshalByValueComponent.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -259,7 +289,13 @@
       <MemberSignature Language="C#" Value="public event EventHandler Disposed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Disposed" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.MarshalByValueComponent.Disposed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Disposed As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Disposed : EventHandler " Usage="member this.Disposed : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Disposed;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.IComponent.Disposed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -286,6 +322,9 @@
       <MemberSignature Language="C#" Value="protected System.ComponentModel.EventHandlerList Events { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.EventHandlerList Events" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MarshalByValueComponent.Events" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Events As EventHandlerList" />
+      <MemberSignature Language="F#" Value="member this.Events : System.ComponentModel.EventHandlerList" Usage="System.ComponentModel.MarshalByValueComponent.Events" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ComponentModel::EventHandlerList ^ Events { System::ComponentModel::EventHandlerList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -315,6 +354,9 @@
       <MemberSignature Language="C#" Value="~MarshalByValueComponent ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MarshalByValueComponent.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="marshalByValueComponent.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!MarshalByValueComponent ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -343,6 +385,9 @@
       <MemberSignature Language="C#" Value="public virtual object GetService (Type service);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type service) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MarshalByValueComponent.GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetService (service As Type) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="marshalByValueComponent.GetService service" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ service);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -383,7 +428,13 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.ISite Site { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISite Site" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MarshalByValueComponent.Site" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Site As ISite" />
+      <MemberSignature Language="F#" Value="member this.Site : System.ComponentModel.ISite with get, set" Usage="System.ComponentModel.MarshalByValueComponent.Site" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ISite ^ Site { System::ComponentModel::ISite ^ get(); void set(System::ComponentModel::ISite ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ComponentModel.IComponent.Site</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -432,6 +483,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MarshalByValueComponent.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="marshalByValueComponent.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -471,15 +525,5 @@
         <altmember cref="T:System.ComponentModel.ISite" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.MarshalByValueComponent" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

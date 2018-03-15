@@ -1,7 +1,10 @@
-<Type Name="PrintSystemException" FullName="System.Printing.PrintSystemException">
+﻿<Type Name="PrintSystemException" FullName="System.Printing.PrintSystemException">
   <TypeSignature Language="C#" Value="public class PrintSystemException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable PrintSystemException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintSystemException" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrintSystemException&#xA;Inherits SystemException" />
+  <TypeSignature Language="F#" Value="type PrintSystemException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintSystemException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +29,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintSystemException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PrintSystemException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintSystemException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -45,6 +59,9 @@
       <MemberSignature Language="C#" Value="public PrintSystemException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintSystemException : string -&gt; System.Printing.PrintSystemException" Usage="new System.Printing.PrintSystemException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintSystemException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -63,6 +80,9 @@
       <MemberSignature Language="C#" Value="public PrintSystemException (int errorCode, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 errorCode, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.#ctor(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintSystemException : int * string -&gt; System.Printing.PrintSystemException" Usage="new System.Printing.PrintSystemException (errorCode, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintSystemException(int errorCode, System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -83,6 +103,9 @@
       <MemberSignature Language="C#" Value="protected PrintSystemException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintSystemException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Printing.PrintSystemException" Usage="new System.Printing.PrintSystemException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PrintSystemException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -103,6 +126,9 @@
       <MemberSignature Language="C#" Value="public PrintSystemException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintSystemException : string * Exception -&gt; System.Printing.PrintSystemException" Usage="new System.Printing.PrintSystemException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintSystemException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -123,6 +149,9 @@
       <MemberSignature Language="C#" Value="public PrintSystemException (int errorCode, string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 errorCode, string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.#ctor(System.Int32,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintSystemException : int * string * Exception -&gt; System.Printing.PrintSystemException" Usage="new System.Printing.PrintSystemException (errorCode, message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintSystemException(int errorCode, System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -145,6 +174,9 @@
       <MemberSignature Language="C#" Value="public PrintSystemException (int errorCode, string message, string printerMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 errorCode, string message, string printerMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.#ctor(System.Int32,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String, printerMessage As String)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintSystemException : int * string * string -&gt; System.Printing.PrintSystemException" Usage="new System.Printing.PrintSystemException (errorCode, message, printerMessage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintSystemException(int errorCode, System::String ^ message, System::String ^ printerMessage);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -167,6 +199,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="printSystemException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -191,14 +226,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintSystemException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="ScrollEventType" FullName="System.Windows.Controls.Primitives.ScrollEventType">
+﻿<Type Name="ScrollEventType" FullName="System.Windows.Controls.Primitives.ScrollEventType">
   <TypeSignature Language="C#" Value="public enum ScrollEventType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollEventType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.ScrollEventType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ScrollEventType" />
+  <TypeSignature Language="F#" Value="type ScrollEventType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ScrollEventType" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="EndScroll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.ScrollEventType EndScroll = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.EndScroll" />
+      <MemberSignature Language="VB.NET" Value="EndScroll" />
+      <MemberSignature Language="F#" Value="EndScroll = 0" Usage="System.Windows.Controls.Primitives.ScrollEventType.EndScroll" />
+      <MemberSignature Language="C++ CLI" Value="EndScroll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -39,6 +45,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> was dragged to a new position and is now no longer being dragged by the user.</summary>
       </Docs>
@@ -47,6 +54,9 @@
       <MemberSignature Language="C#" Value="First" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.ScrollEventType First = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.First" />
+      <MemberSignature Language="VB.NET" Value="First" />
+      <MemberSignature Language="F#" Value="First = 1" Usage="System.Windows.Controls.Primitives.ScrollEventType.First" />
+      <MemberSignature Language="C++ CLI" Value="First" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> moved to the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Minimum" /> position of the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />. For a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the CTRL+HOME keys are pressed. This movement corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.ScrollToTopCommand" /> in a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> and a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.ScrollToLeftEndCommand" /> in a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />.</summary>
       </Docs>
@@ -63,6 +74,9 @@
       <MemberSignature Language="C#" Value="LargeDecrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.ScrollEventType LargeDecrement = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.LargeDecrement" />
+      <MemberSignature Language="VB.NET" Value="LargeDecrement" />
+      <MemberSignature Language="F#" Value="LargeDecrement = 2" Usage="System.Windows.Controls.Primitives.ScrollEventType.LargeDecrement" />
+      <MemberSignature Language="C++ CLI" Value="LargeDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +85,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> moved a specified distance, as determined by the value of <see cref="P:System.Windows.Controls.Primitives.RangeBase.LargeChange" />, to the left for a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> or upward for a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />. For a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the page button that is above the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> is pressed, or when the PAGE UP key is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.PageUpCommand" />. For a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the page button to the left of the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.PageLeftCommand" />.</summary>
       </Docs>
@@ -79,6 +94,9 @@
       <MemberSignature Language="C#" Value="LargeIncrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.ScrollEventType LargeIncrement = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.LargeIncrement" />
+      <MemberSignature Language="VB.NET" Value="LargeIncrement" />
+      <MemberSignature Language="F#" Value="LargeIncrement = 3" Usage="System.Windows.Controls.Primitives.ScrollEventType.LargeIncrement" />
+      <MemberSignature Language="C++ CLI" Value="LargeIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -87,6 +105,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> moved a specified distance, as determined by the value of <see cref="P:System.Windows.Controls.Primitives.RangeBase.LargeChange" />, to the right for a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> or downward for a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />. For a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the page button that is below the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> is pressed, or when the PAGE DOWN key is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.PageDownCommand" />. For a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the page button to the right of the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.PageRightCommand" />.</summary>
       </Docs>
@@ -95,6 +114,9 @@
       <MemberSignature Language="C#" Value="Last" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.ScrollEventType Last = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.Last" />
+      <MemberSignature Language="VB.NET" Value="Last" />
+      <MemberSignature Language="F#" Value="Last = 4" Usage="System.Windows.Controls.Primitives.ScrollEventType.Last" />
+      <MemberSignature Language="C++ CLI" Value="Last" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -103,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> moved to the <see cref="P:System.Windows.Controls.Primitives.RangeBase.Maximum" /> position of the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />. For a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the CTRL+END keys are pressed. This movement corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.ScrollToEndCommand" /> in a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> and a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.ScrollToRightEndCommand" /> in a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />.</summary>
       </Docs>
@@ -111,6 +134,9 @@
       <MemberSignature Language="C#" Value="SmallDecrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.ScrollEventType SmallDecrement = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.SmallDecrement" />
+      <MemberSignature Language="VB.NET" Value="SmallDecrement" />
+      <MemberSignature Language="F#" Value="SmallDecrement = 5" Usage="System.Windows.Controls.Primitives.ScrollEventType.SmallDecrement" />
+      <MemberSignature Language="C++ CLI" Value="SmallDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -119,6 +145,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> moved a small distance, as determined by the value of <see cref="P:System.Windows.Controls.Primitives.RangeBase.SmallChange" />, to the left for a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> or upward for a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />. For a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the upper <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> is pressed or when the UP ARROW key is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.LineUpCommand" />. For a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the left <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.LineLeftCommand" />.</summary>
       </Docs>
@@ -127,6 +154,9 @@
       <MemberSignature Language="C#" Value="SmallIncrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.ScrollEventType SmallIncrement = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.SmallIncrement" />
+      <MemberSignature Language="VB.NET" Value="SmallIncrement" />
+      <MemberSignature Language="F#" Value="SmallIncrement = 6" Usage="System.Windows.Controls.Primitives.ScrollEventType.SmallIncrement" />
+      <MemberSignature Language="C++ CLI" Value="SmallIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -135,6 +165,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> moved a small distance, as determined by the value of <see cref="P:System.Windows.Controls.Primitives.RangeBase.SmallChange" />, to the right for a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> or downward for a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />. For a vertical <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the lower <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> is pressed or when the DOWN ARROW key is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.LineDownCommand" />. For a horizontal <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />, this movement occurs when the right <see cref="T:System.Windows.Controls.Primitives.RepeatButton" /> is pressed, and corresponds to a <see cref="F:System.Windows.Controls.Primitives.ScrollBar.LineRightCommand" />.</summary>
       </Docs>
@@ -143,6 +174,9 @@
       <MemberSignature Language="C#" Value="ThumbPosition" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.ScrollEventType ThumbPosition = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.ThumbPosition" />
+      <MemberSignature Language="VB.NET" Value="ThumbPosition" />
+      <MemberSignature Language="F#" Value="ThumbPosition = 7" Usage="System.Windows.Controls.Primitives.ScrollEventType.ThumbPosition" />
+      <MemberSignature Language="C++ CLI" Value="ThumbPosition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -151,6 +185,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> moved to a new position because the user selected **Scroll Here** in the shortcut menu of the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />. This movement corresponds to the <see cref="F:System.Windows.Controls.Primitives.ScrollBar.ScrollHereCommand" />. To view the shortcut menu, right-click the mouse when the pointer is over the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />.</summary>
       </Docs>
@@ -159,6 +194,9 @@
       <MemberSignature Language="C#" Value="ThumbTrack" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.ScrollEventType ThumbTrack = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.ScrollEventType.ThumbTrack" />
+      <MemberSignature Language="VB.NET" Value="ThumbTrack" />
+      <MemberSignature Language="F#" Value="ThumbTrack = 8" Usage="System.Windows.Controls.Primitives.ScrollEventType.ThumbTrack" />
+      <MemberSignature Language="C++ CLI" Value="ThumbTrack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -167,6 +205,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.ScrollEventType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Controls.Primitives.Thumb" /> was dragged and caused a <see cref="E:System.Windows.UIElement.MouseMove" /> event. A <see cref="E:System.Windows.Controls.Primitives.ScrollBar.Scroll" /> event of this <see cref="T:System.Windows.Controls.Primitives.ScrollEventType" /> may occur more than one time when the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> is dragged in the <see cref="T:System.Windows.Controls.Primitives.ScrollBar" />.</summary>
       </Docs>

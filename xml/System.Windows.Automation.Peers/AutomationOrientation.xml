@@ -1,7 +1,10 @@
-<Type Name="AutomationOrientation" FullName="System.Windows.Automation.Peers.AutomationOrientation">
+﻿<Type Name="AutomationOrientation" FullName="System.Windows.Automation.Peers.AutomationOrientation">
   <TypeSignature Language="C#" Value="public enum AutomationOrientation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutomationOrientation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.AutomationOrientation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AutomationOrientation" />
+  <TypeSignature Language="F#" Value="type AutomationOrientation = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AutomationOrientation" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Horizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationOrientation Horizontal = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationOrientation.Horizontal" />
+      <MemberSignature Language="VB.NET" Value="Horizontal" />
+      <MemberSignature Language="F#" Value="Horizontal = 1" Usage="System.Windows.Automation.Peers.AutomationOrientation.Horizontal" />
+      <MemberSignature Language="C++ CLI" Value="Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The control is laid out horizontally.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationOrientation None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationOrientation.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Automation.Peers.AutomationOrientation.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The control doesn't have an orientation. An example of a control without an orientation is a <see cref="T:System.Windows.Controls.Button" />.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="Vertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.Peers.AutomationOrientation Vertical = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.Peers.AutomationOrientation.Vertical" />
+      <MemberSignature Language="VB.NET" Value="Vertical" />
+      <MemberSignature Language="F#" Value="Vertical = 2" Usage="System.Windows.Automation.Peers.AutomationOrientation.Vertical" />
+      <MemberSignature Language="C++ CLI" Value="Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.Peers.AutomationOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The control is laid out horizontally.</summary>
       </Docs>

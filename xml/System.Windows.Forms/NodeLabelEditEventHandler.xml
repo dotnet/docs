@@ -1,7 +1,10 @@
-<Type Name="NodeLabelEditEventHandler" FullName="System.Windows.Forms.NodeLabelEditEventHandler">
+﻿<Type Name="NodeLabelEditEventHandler" FullName="System.Windows.Forms.NodeLabelEditEventHandler">
   <TypeSignature Language="C#" Value="public delegate void NodeLabelEditEventHandler(object sender, NodeLabelEditEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NodeLabelEditEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NodeLabelEditEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub NodeLabelEditEventHandler(sender As Object, e As NodeLabelEditEventArgs)" />
+  <TypeSignature Language="F#" Value="type NodeLabelEditEventHandler = delegate of obj * NodeLabelEditEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void NodeLabelEditEventHandler(System::Object ^ sender, NodeLabelEditEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

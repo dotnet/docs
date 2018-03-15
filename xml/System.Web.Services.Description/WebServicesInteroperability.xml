@@ -1,7 +1,10 @@
-<Type Name="WebServicesInteroperability" FullName="System.Web.Services.Description.WebServicesInteroperability">
+﻿<Type Name="WebServicesInteroperability" FullName="System.Web.Services.Description.WebServicesInteroperability">
   <TypeSignature Language="C#" Value="public sealed class WebServicesInteroperability" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebServicesInteroperability extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.WebServicesInteroperability" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebServicesInteroperability" />
+  <TypeSignature Language="F#" Value="type WebServicesInteroperability = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebServicesInteroperability sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="public static bool CheckConformance (System.Web.Services.WsiProfiles claims, System.Web.Services.Description.ServiceDescription description, System.Web.Services.Description.BasicProfileViolationCollection violations);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckConformance(valuetype System.Web.Services.WsiProfiles claims, class System.Web.Services.Description.ServiceDescription description, class System.Web.Services.Description.BasicProfileViolationCollection violations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.WebServicesInteroperability.CheckConformance(System.Web.Services.WsiProfiles,System.Web.Services.Description.ServiceDescription,System.Web.Services.Description.BasicProfileViolationCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckConformance (claims As WsiProfiles, description As ServiceDescription, violations As BasicProfileViolationCollection) As Boolean" />
+      <MemberSignature Language="F#" Value="static member CheckConformance : System.Web.Services.WsiProfiles * System.Web.Services.Description.ServiceDescription * System.Web.Services.Description.BasicProfileViolationCollection -&gt; bool" Usage="System.Web.Services.Description.WebServicesInteroperability.CheckConformance (claims, description, violations)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CheckConformance(System::Web::Services::WsiProfiles claims, System::Web::Services::Description::ServiceDescription ^ description, System::Web::Services::Description::BasicProfileViolationCollection ^ violations);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -77,6 +83,9 @@
       <MemberSignature Language="C#" Value="public static bool CheckConformance (System.Web.Services.WsiProfiles claims, System.Web.Services.Description.ServiceDescriptionCollection descriptions, System.Web.Services.Description.BasicProfileViolationCollection violations);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckConformance(valuetype System.Web.Services.WsiProfiles claims, class System.Web.Services.Description.ServiceDescriptionCollection descriptions, class System.Web.Services.Description.BasicProfileViolationCollection violations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.WebServicesInteroperability.CheckConformance(System.Web.Services.WsiProfiles,System.Web.Services.Description.ServiceDescriptionCollection,System.Web.Services.Description.BasicProfileViolationCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckConformance (claims As WsiProfiles, descriptions As ServiceDescriptionCollection, violations As BasicProfileViolationCollection) As Boolean" />
+      <MemberSignature Language="F#" Value="static member CheckConformance : System.Web.Services.WsiProfiles * System.Web.Services.Description.ServiceDescriptionCollection * System.Web.Services.Description.BasicProfileViolationCollection -&gt; bool" Usage="System.Web.Services.Description.WebServicesInteroperability.CheckConformance (claims, descriptions, violations)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CheckConformance(System::Web::Services::WsiProfiles claims, System::Web::Services::Description::ServiceDescriptionCollection ^ descriptions, System::Web::Services::Description::BasicProfileViolationCollection ^ violations);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -111,6 +120,8 @@
       <MemberSignature Language="C#" Value="public static bool CheckConformance (System.Web.Services.WsiProfiles claims, System.Web.Services.Description.WebReference webReference, System.Web.Services.Description.BasicProfileViolationCollection violations);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckConformance(valuetype System.Web.Services.WsiProfiles claims, class System.Web.Services.Description.WebReference webReference, class System.Web.Services.Description.BasicProfileViolationCollection violations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.WebServicesInteroperability.CheckConformance(System.Web.Services.WsiProfiles,System.Web.Services.Description.WebReference,System.Web.Services.Description.BasicProfileViolationCollection)" />
+      <MemberSignature Language="F#" Value="static member CheckConformance : System.Web.Services.WsiProfiles * System.Web.Services.Description.WebReference * System.Web.Services.Description.BasicProfileViolationCollection -&gt; bool" Usage="System.Web.Services.Description.WebServicesInteroperability.CheckConformance (claims, webReference, violations)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CheckConformance(System::Web::Services::WsiProfiles claims, System::Web::Services::Description::WebReference ^ webReference, System::Web::Services::Description::BasicProfileViolationCollection ^ violations);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

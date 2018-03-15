@@ -1,7 +1,10 @@
-<Type Name="InPlaceBitmapMetadataWriter" FullName="System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter">
+﻿<Type Name="InPlaceBitmapMetadataWriter" FullName="System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter">
   <TypeSignature Language="C#" Value="public sealed class InPlaceBitmapMetadataWriter : System.Windows.Media.Imaging.BitmapMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InPlaceBitmapMetadataWriter extends System.Windows.Media.Imaging.BitmapMetadata" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InPlaceBitmapMetadataWriter&#xA;Inherits BitmapMetadata" />
+  <TypeSignature Language="F#" Value="type InPlaceBitmapMetadataWriter = class&#xA;    inherit BitmapMetadata" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InPlaceBitmapMetadataWriter sealed : System::Windows::Media::Imaging::BitmapMetadata" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As InPlaceBitmapMetadataWriter" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter" Usage="inPlaceBitmapMetadataWriter.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Imaging::InPlaceBitmapMetadataWriter ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -69,6 +75,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="inPlaceBitmapMetadataWriter.CloneCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +99,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="inPlaceBitmapMetadataWriter.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -111,6 +123,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="inPlaceBitmapMetadataWriter.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -130,6 +145,9 @@
       <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="inPlaceBitmapMetadataWriter.GetAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -151,6 +169,9 @@
       <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="inPlaceBitmapMetadataWriter.GetCurrentValueAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -172,6 +193,9 @@
       <MemberSignature Language="C#" Value="public bool TrySave ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TrySave() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.InPlaceBitmapMetadataWriter.TrySave" />
+      <MemberSignature Language="VB.NET" Value="Public Function TrySave () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TrySave : unit -&gt; bool" Usage="inPlaceBitmapMetadataWriter.TrySave " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySave();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

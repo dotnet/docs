@@ -1,7 +1,10 @@
-<Type Name="MessageQueueTransactionStatus" FullName="System.Messaging.MessageQueueTransactionStatus">
+﻿<Type Name="MessageQueueTransactionStatus" FullName="System.Messaging.MessageQueueTransactionStatus">
   <TypeSignature Language="C#" Value="public enum MessageQueueTransactionStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MessageQueueTransactionStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueueTransactionStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MessageQueueTransactionStatus" />
+  <TypeSignature Language="F#" Value="type MessageQueueTransactionStatus = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MessageQueueTransactionStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="Aborted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueTransactionStatus Aborted = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueTransactionStatus.Aborted" />
+      <MemberSignature Language="VB.NET" Value="Aborted" />
+      <MemberSignature Language="F#" Value="Aborted = 0" Usage="System.Messaging.MessageQueueTransactionStatus.Aborted" />
+      <MemberSignature Language="C++ CLI" Value="Aborted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -37,6 +43,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueTransactionStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The transaction has been aborted and all participants have been notified.</summary>
       </Docs>
@@ -45,6 +52,9 @@
       <MemberSignature Language="C#" Value="Committed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueTransactionStatus Committed = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueTransactionStatus.Committed" />
+      <MemberSignature Language="VB.NET" Value="Committed" />
+      <MemberSignature Language="F#" Value="Committed = 1" Usage="System.Messaging.MessageQueueTransactionStatus.Committed" />
+      <MemberSignature Language="C++ CLI" Value="Committed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -53,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueTransactionStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The transaction has been committed and all participants have been notified.</summary>
       </Docs>
@@ -61,6 +72,9 @@
       <MemberSignature Language="C#" Value="Initialized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueTransactionStatus Initialized = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueTransactionStatus.Initialized" />
+      <MemberSignature Language="VB.NET" Value="Initialized" />
+      <MemberSignature Language="F#" Value="Initialized = 2" Usage="System.Messaging.MessageQueueTransactionStatus.Initialized" />
+      <MemberSignature Language="C++ CLI" Value="Initialized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -69,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueTransactionStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The transaction has been initialized. It has not yet been started.</summary>
       </Docs>
@@ -77,6 +92,9 @@
       <MemberSignature Language="C#" Value="Pending" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.MessageQueueTransactionStatus Pending = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.MessageQueueTransactionStatus.Pending" />
+      <MemberSignature Language="VB.NET" Value="Pending" />
+      <MemberSignature Language="F#" Value="Pending = 3" Usage="System.Messaging.MessageQueueTransactionStatus.Pending" />
+      <MemberSignature Language="C++ CLI" Value="Pending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -85,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.MessageQueueTransactionStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The transaction has been started. It has not yet been either committed or rolled back.</summary>
       </Docs>

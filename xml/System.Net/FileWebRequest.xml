@@ -1,7 +1,10 @@
-<Type Name="FileWebRequest" FullName="System.Net.FileWebRequest">
+﻿<Type Name="FileWebRequest" FullName="System.Net.FileWebRequest">
   <TypeSignature Language="C#" Value="public class FileWebRequest : System.Net.WebRequest, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FileWebRequest extends System.Net.WebRequest implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Net.FileWebRequest" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileWebRequest&#xA;Inherits WebRequest&#xA;Implements ISerializable" />
+  <TypeSignature Language="F#" Value="type FileWebRequest = class&#xA;    inherit WebRequest&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileWebRequest : System::Net::WebRequest, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,6 +60,8 @@
       <MemberSignature Language="C#" Value="protected FileWebRequest (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Net.FileWebRequest : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.FileWebRequest" Usage="new System.Net.FileWebRequest (serializationInfo, streamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; FileWebRequest(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -98,6 +103,9 @@
       <MemberSignature Language="C#" Value="public override void Abort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Abort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.Abort" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Abort ()" />
+      <MemberSignature Language="F#" Value="override this.Abort : unit -&gt; unit" Usage="fileWebRequest.Abort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Abort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -134,6 +142,9 @@
       <MemberSignature Language="C#" Value="public override IAsyncResult BeginGetRequestStream (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginGetRequestStream(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.BeginGetRequestStream(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginGetRequestStream (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="override this.BeginGetRequestStream : AsyncCallback * obj -&gt; IAsyncResult" Usage="fileWebRequest.BeginGetRequestStream (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginGetRequestStream(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -189,6 +200,9 @@
       <MemberSignature Language="C#" Value="public override IAsyncResult BeginGetResponse (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginGetResponse(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.BeginGetResponse(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginGetResponse (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="override this.BeginGetResponse : AsyncCallback * obj -&gt; IAsyncResult" Usage="fileWebRequest.BeginGetResponse (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginGetResponse(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -242,6 +256,9 @@
       <MemberSignature Language="C#" Value="public override string ConnectionGroupName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionGroupName" />
       <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.ConnectionGroupName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ConnectionGroupName As String" />
+      <MemberSignature Language="F#" Value="member this.ConnectionGroupName : string with get, set" Usage="System.Net.FileWebRequest.ConnectionGroupName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConnectionGroupName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -276,6 +293,9 @@
       <MemberSignature Language="C#" Value="public override long ContentLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ContentLength" />
       <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.ContentLength" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ContentLength As Long" />
+      <MemberSignature Language="F#" Value="member this.ContentLength : int64 with get, set" Usage="System.Net.FileWebRequest.ContentLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long ContentLength { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -316,6 +336,9 @@
       <MemberSignature Language="C#" Value="public override string ContentType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="System.Net.FileWebRequest.ContentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -350,6 +373,9 @@
       <MemberSignature Language="C#" Value="public override System.Net.ICredentials Credentials { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.ICredentials Credentials" />
       <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.Credentials" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Credentials As ICredentials" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Net.ICredentials with get, set" Usage="System.Net.FileWebRequest.Credentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::ICredentials ^ Credentials { System::Net::ICredentials ^ get(); void set(System::Net::ICredentials ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -384,6 +410,9 @@
       <MemberSignature Language="C#" Value="public override System.IO.Stream EndGetRequestStream (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream EndGetRequestStream(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.EndGetRequestStream(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EndGetRequestStream (asyncResult As IAsyncResult) As Stream" />
+      <MemberSignature Language="F#" Value="override this.EndGetRequestStream : IAsyncResult -&gt; System.IO.Stream" Usage="fileWebRequest.EndGetRequestStream asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IO::Stream ^ EndGetRequestStream(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -438,6 +467,9 @@
       <MemberSignature Language="C#" Value="public override System.Net.WebResponse EndGetResponse (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Net.WebResponse EndGetResponse(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.EndGetResponse(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EndGetResponse (asyncResult As IAsyncResult) As WebResponse" />
+      <MemberSignature Language="F#" Value="override this.EndGetResponse : IAsyncResult -&gt; System.Net.WebResponse" Usage="fileWebRequest.EndGetResponse asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Net::WebResponse ^ EndGetResponse(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -489,7 +521,12 @@
       <MemberSignature Language="C#" Value="protected override void GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="fileWebRequest.GetObjectData (serializationInfo, streamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -528,6 +565,9 @@
       <MemberSignature Language="C#" Value="public override System.IO.Stream GetRequestStream ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream GetRequestStream() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.GetRequestStream" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRequestStream () As Stream" />
+      <MemberSignature Language="F#" Value="override this.GetRequestStream : unit -&gt; System.IO.Stream" Usage="fileWebRequest.GetRequestStream " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IO::Stream ^ GetRequestStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -574,6 +614,9 @@
       <MemberSignature Language="C#" Value="public override System.Net.WebResponse GetResponse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Net.WebResponse GetResponse() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.GetResponse" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResponse () As WebResponse" />
+      <MemberSignature Language="F#" Value="override this.GetResponse : unit -&gt; System.Net.WebResponse" Usage="fileWebRequest.GetResponse " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Net::WebResponse ^ GetResponse();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -621,6 +664,9 @@
       <MemberSignature Language="C#" Value="public override System.Net.WebHeaderCollection Headers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection Headers" />
       <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Headers As WebHeaderCollection" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Net.WebHeaderCollection" Usage="System.Net.FileWebRequest.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -655,6 +701,9 @@
       <MemberSignature Language="C#" Value="public override string Method { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Method" />
       <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.Method" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Method As String" />
+      <MemberSignature Language="F#" Value="member this.Method : string with get, set" Usage="System.Net.FileWebRequest.Method" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Method { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -707,6 +756,9 @@
       <MemberSignature Language="C#" Value="public override bool PreAuthenticate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PreAuthenticate" />
       <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.PreAuthenticate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property PreAuthenticate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PreAuthenticate : bool with get, set" Usage="System.Net.FileWebRequest.PreAuthenticate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool PreAuthenticate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -742,6 +794,9 @@
       <MemberSignature Language="C#" Value="public override System.Net.IWebProxy Proxy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IWebProxy Proxy" />
       <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.Proxy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Proxy As IWebProxy" />
+      <MemberSignature Language="F#" Value="member this.Proxy : System.Net.IWebProxy with get, set" Usage="System.Net.FileWebRequest.Proxy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::IWebProxy ^ Proxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -776,6 +831,9 @@
       <MemberSignature Language="C#" Value="public override Uri RequestUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri RequestUri" />
       <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.RequestUri" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequestUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.RequestUri : Uri" Usage="System.Net.FileWebRequest.RequestUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ RequestUri { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -814,7 +872,11 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext streamingContext);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext streamingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.FileWebRequest.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext streamingContext) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -846,6 +908,9 @@
       <MemberSignature Language="C#" Value="public override int Timeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Timeout" />
       <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.Timeout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Timeout As Integer" />
+      <MemberSignature Language="F#" Value="member this.Timeout : int with get, set" Usage="System.Net.FileWebRequest.Timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Timeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -890,6 +955,9 @@
       <MemberSignature Language="C#" Value="public override bool UseDefaultCredentials { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseDefaultCredentials" />
       <MemberSignature Language="DocId" Value="P:System.Net.FileWebRequest.UseDefaultCredentials" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property UseDefaultCredentials As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseDefaultCredentials : bool with get, set" Usage="System.Net.FileWebRequest.UseDefaultCredentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseDefaultCredentials { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

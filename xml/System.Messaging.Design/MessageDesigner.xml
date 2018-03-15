@@ -1,7 +1,10 @@
-<Type Name="MessageDesigner" FullName="System.Messaging.Design.MessageDesigner">
+﻿<Type Name="MessageDesigner" FullName="System.Messaging.Design.MessageDesigner">
   <TypeSignature Language="C#" Value="public class MessageDesigner : System.ComponentModel.Design.ComponentDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageDesigner extends System.ComponentModel.Design.ComponentDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.Design.MessageDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageDesigner&#xA;Inherits ComponentDesigner" />
+  <TypeSignature Language="F#" Value="type MessageDesigner = class&#xA;    inherit ComponentDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageDesigner : System::ComponentModel::Design::ComponentDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public MessageDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.Design.MessageDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -36,6 +41,9 @@
       <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.Design.MessageDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="messageDesigner.PreFilterProperties properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

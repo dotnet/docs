@@ -1,7 +1,10 @@
-<Type Name="NoMatchingPrincipalException" FullName="System.DirectoryServices.AccountManagement.NoMatchingPrincipalException">
+﻿<Type Name="NoMatchingPrincipalException" FullName="System.DirectoryServices.AccountManagement.NoMatchingPrincipalException">
   <TypeSignature Language="C#" Value="public class NoMatchingPrincipalException : System.DirectoryServices.AccountManagement.PrincipalException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit NoMatchingPrincipalException extends System.DirectoryServices.AccountManagement.PrincipalException" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException" />
+  <TypeSignature Language="VB.NET" Value="Public Class NoMatchingPrincipalException&#xA;Inherits PrincipalException" />
+  <TypeSignature Language="F#" Value="type NoMatchingPrincipalException = class&#xA;    inherit PrincipalException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NoMatchingPrincipalException : System::DirectoryServices::AccountManagement::PrincipalException" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,10 +20,23 @@
     <altmember cref="N:System.DirectoryServices.AccountManagement" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException" /> class.</summary>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NoMatchingPrincipalException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NoMatchingPrincipalException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -45,6 +61,9 @@
       <MemberSignature Language="C#" Value="public NoMatchingPrincipalException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.NoMatchingPrincipalException : string -&gt; System.DirectoryServices.AccountManagement.NoMatchingPrincipalException" Usage="new System.DirectoryServices.AccountManagement.NoMatchingPrincipalException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NoMatchingPrincipalException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -72,6 +91,9 @@
       <MemberSignature Language="C#" Value="protected NoMatchingPrincipalException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.NoMatchingPrincipalException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.DirectoryServices.AccountManagement.NoMatchingPrincipalException" Usage="new System.DirectoryServices.AccountManagement.NoMatchingPrincipalException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NoMatchingPrincipalException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -94,6 +116,9 @@
       <MemberSignature Language="C#" Value="public NoMatchingPrincipalException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.NoMatchingPrincipalException : string * Exception -&gt; System.DirectoryServices.AccountManagement.NoMatchingPrincipalException" Usage="new System.DirectoryServices.AccountManagement.NoMatchingPrincipalException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NoMatchingPrincipalException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -119,16 +144,5 @@
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Instantiates a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.NoMatchingPrincipalException" /> class.</summary>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

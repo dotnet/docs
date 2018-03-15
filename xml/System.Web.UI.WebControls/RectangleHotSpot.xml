@@ -1,7 +1,10 @@
-<Type Name="RectangleHotSpot" FullName="System.Web.UI.WebControls.RectangleHotSpot">
+﻿<Type Name="RectangleHotSpot" FullName="System.Web.UI.WebControls.RectangleHotSpot">
   <TypeSignature Language="C#" Value="public sealed class RectangleHotSpot : System.Web.UI.WebControls.HotSpot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RectangleHotSpot extends System.Web.UI.WebControls.HotSpot" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RectangleHotSpot" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RectangleHotSpot&#xA;Inherits HotSpot" />
+  <TypeSignature Language="F#" Value="type RectangleHotSpot = class&#xA;    inherit HotSpot" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RectangleHotSpot sealed : System::Web::UI::WebControls::HotSpot" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,8 @@
       <MemberSignature Language="C#" Value="public RectangleHotSpot ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RectangleHotSpot.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RectangleHotSpot();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +77,9 @@
       <MemberSignature Language="C#" Value="public int Bottom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Bottom" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RectangleHotSpot.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Public Property Bottom As Integer" />
+      <MemberSignature Language="F#" Value="member this.Bottom : int with get, set" Usage="System.Web.UI.WebControls.RectangleHotSpot.Bottom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Bottom { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +121,9 @@
       <MemberSignature Language="C#" Value="public override string GetCoordinates ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetCoordinates() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.RectangleHotSpot.GetCoordinates" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCoordinates () As String" />
+      <MemberSignature Language="F#" Value="override this.GetCoordinates : unit -&gt; string" Usage="rectangleHotSpot.GetCoordinates " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetCoordinates();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -153,6 +164,9 @@
       <MemberSignature Language="C#" Value="public int Left { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Left" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RectangleHotSpot.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Integer" />
+      <MemberSignature Language="F#" Value="member this.Left : int with get, set" Usage="System.Web.UI.WebControls.RectangleHotSpot.Left" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,9 +205,12 @@
       </Docs>
     </Member>
     <Member MemberName="MarkupName">
-      <MemberSignature Language="C#" Value="protected override string MarkupName { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override string MarkupName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MarkupName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RectangleHotSpot.MarkupName" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property MarkupName As String" />
+      <MemberSignature Language="F#" Value="member this.MarkupName : string" Usage="System.Web.UI.WebControls.RectangleHotSpot.MarkupName" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::String ^ MarkupName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -212,6 +229,9 @@
       <MemberSignature Language="C#" Value="public int Right { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Right" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RectangleHotSpot.Right" />
+      <MemberSignature Language="VB.NET" Value="Public Property Right As Integer" />
+      <MemberSignature Language="F#" Value="member this.Right : int with get, set" Usage="System.Web.UI.WebControls.RectangleHotSpot.Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Right { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -253,6 +273,9 @@
       <MemberSignature Language="C#" Value="public int Top { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Top" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.RectangleHotSpot.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Integer" />
+      <MemberSignature Language="F#" Value="member this.Top : int with get, set" Usage="System.Web.UI.WebControls.RectangleHotSpot.Top" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

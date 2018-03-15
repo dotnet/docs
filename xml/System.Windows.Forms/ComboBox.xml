@@ -1,7 +1,10 @@
-<Type Name="ComboBox" FullName="System.Windows.Forms.ComboBox">
+﻿<Type Name="ComboBox" FullName="System.Windows.Forms.ComboBox">
   <TypeSignature Language="C#" Value="public class ComboBox : System.Windows.Forms.ListControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComboBox extends System.Windows.Forms.ListControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ComboBox" />
+  <TypeSignature Language="VB.NET" Value="Public Class ComboBox&#xA;Inherits ListControl" />
+  <TypeSignature Language="F#" Value="type ComboBox = class&#xA;    inherit ListControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComboBox : System::Windows::Forms::ListControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,7 +27,7 @@
       <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.ComboBoxDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -68,6 +71,8 @@
       <MemberSignature Language="C#" Value="public ComboBox ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComboBox();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +88,9 @@
       <MemberSignature Language="C#" Value="protected virtual void AddItemsCore (object[] value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddItemsCore(object[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.AddItemsCore(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddItemsCore (value As Object())" />
+      <MemberSignature Language="F#" Value="abstract member AddItemsCore : obj[] -&gt; unit&#xA;override this.AddItemsCore : obj[] -&gt; unit" Usage="comboBox.AddItemsCore value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddItemsCore(cli::array &lt;System::Object ^&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +117,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.AutoCompleteStringCollection AutoCompleteCustomSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.AutoCompleteStringCollection AutoCompleteCustomSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.AutoCompleteCustomSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoCompleteCustomSource As AutoCompleteStringCollection" />
+      <MemberSignature Language="F#" Value="member this.AutoCompleteCustomSource : System.Windows.Forms.AutoCompleteStringCollection with get, set" Usage="System.Windows.Forms.ComboBox.AutoCompleteCustomSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::AutoCompleteStringCollection ^ AutoCompleteCustomSource { System::Windows::Forms::AutoCompleteStringCollection ^ get(); void set(System::Windows::Forms::AutoCompleteStringCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -119,7 +130,7 @@
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ListControlStringCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -160,6 +171,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.AutoCompleteMode AutoCompleteMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AutoCompleteMode AutoCompleteMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.AutoCompleteMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoCompleteMode As AutoCompleteMode" />
+      <MemberSignature Language="F#" Value="member this.AutoCompleteMode : System.Windows.Forms.AutoCompleteMode with get, set" Usage="System.Windows.Forms.ComboBox.AutoCompleteMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::AutoCompleteMode AutoCompleteMode { System::Windows::Forms::AutoCompleteMode get(); void set(System::Windows::Forms::AutoCompleteMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -218,6 +232,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.AutoCompleteSource AutoCompleteSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AutoCompleteSource AutoCompleteSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.AutoCompleteSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoCompleteSource As AutoCompleteSource" />
+      <MemberSignature Language="F#" Value="member this.AutoCompleteSource : System.Windows.Forms.AutoCompleteSource with get, set" Usage="System.Windows.Forms.ComboBox.AutoCompleteSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::AutoCompleteSource AutoCompleteSource { System::Windows::Forms::AutoCompleteSource get(); void set(System::Windows::Forms::AutoCompleteSource value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -274,6 +291,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ComboBox.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -292,6 +312,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Image BackgroundImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image BackgroundImage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.BackgroundImage" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.ComboBox.BackgroundImage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -325,6 +348,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ComboBox.BackgroundImageChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -357,6 +383,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.ImageLayout BackgroundImageLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImageLayout BackgroundImageLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.BackgroundImageLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.ComboBox.BackgroundImageLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -391,6 +420,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageLayoutChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageLayoutChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ComboBox.BackgroundImageLayoutChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayoutChanged : EventHandler " Usage="member this.BackgroundImageLayoutChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -423,6 +455,9 @@
       <MemberSignature Language="C#" Value="public void BeginUpdate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginUpdate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.BeginUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginUpdate ()" />
+      <MemberSignature Language="F#" Value="member this.BeginUpdate : unit -&gt; unit" Usage="comboBox.BeginUpdate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginUpdate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -459,6 +494,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.CreateAccessibilityInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
+      <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="comboBox.CreateAccessibilityInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -478,6 +516,9 @@
       <MemberSignature Language="C#" Value="protected override void CreateHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CreateHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.CreateHandle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateHandle ()" />
+      <MemberSignature Language="F#" Value="override this.CreateHandle : unit -&gt; unit" Usage="comboBox.CreateHandle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -503,6 +544,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.CreateParams" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.ComboBox.CreateParams" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -522,6 +566,9 @@
       <MemberSignature Language="C#" Value="public object DataSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DataSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSource As Object" />
+      <MemberSignature Language="F#" Value="member this.DataSource : obj with get, set" Usage="System.Windows.Forms.ComboBox.DataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataSource { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -535,7 +582,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -566,6 +613,9 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.ComboBox.DefaultSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -584,6 +634,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="comboBox.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -621,6 +674,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DoubleClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ComboBox.DoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DoubleClick As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DoubleClick : EventHandler " Usage="member this.DoubleClick : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -653,6 +709,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DrawItemEventHandler DrawItem;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DrawItemEventHandler DrawItem" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ComboBox.DrawItem" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DrawItem As DrawItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DrawItem : System.Windows.Forms.DrawItemEventHandler " Usage="member this.DrawItem : System.Windows.Forms.DrawItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DrawItemEventHandler ^ DrawItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -688,6 +747,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DrawMode DrawMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DrawMode DrawMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.DrawMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property DrawMode As DrawMode" />
+      <MemberSignature Language="F#" Value="member this.DrawMode : System.Windows.Forms.DrawMode with get, set" Usage="System.Windows.Forms.ComboBox.DrawMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DrawMode DrawMode { System::Windows::Forms::DrawMode get(); void set(System::Windows::Forms::DrawMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -698,7 +760,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -729,6 +791,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DropDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DropDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ComboBox.DropDown" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DropDown As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DropDown : EventHandler " Usage="member this.DropDown : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DropDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -763,6 +828,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DropDownClosed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DropDownClosed" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ComboBox.DropDownClosed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DropDownClosed As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DropDownClosed : EventHandler " Usage="member this.DropDownClosed : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DropDownClosed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -800,6 +868,9 @@
       <MemberSignature Language="C#" Value="public int DropDownHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DropDownHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.DropDownHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropDownHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.DropDownHeight : int with get, set" Usage="System.Windows.Forms.ComboBox.DropDownHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DropDownHeight { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -837,6 +908,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ComboBoxStyle DropDownStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ComboBoxStyle DropDownStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.DropDownStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropDownStyle As ComboBoxStyle" />
+      <MemberSignature Language="F#" Value="member this.DropDownStyle : System.Windows.Forms.ComboBoxStyle with get, set" Usage="System.Windows.Forms.ComboBox.DropDownStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ComboBoxStyle DropDownStyle { System::Windows::Forms::ComboBoxStyle get(); void set(System::Windows::Forms::ComboBoxStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -847,7 +921,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -881,6 +955,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DropDownStyleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DropDownStyleChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ComboBox.DropDownStyleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DropDownStyleChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DropDownStyleChanged : EventHandler " Usage="member this.DropDownStyleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DropDownStyleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -915,6 +992,9 @@
       <MemberSignature Language="C#" Value="public int DropDownWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DropDownWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.DropDownWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropDownWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.DropDownWidth : int with get, set" Usage="System.Windows.Forms.ComboBox.DropDownWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DropDownWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -953,6 +1033,9 @@
       <MemberSignature Language="C#" Value="public bool DroppedDown { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DroppedDown" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.DroppedDown" />
+      <MemberSignature Language="VB.NET" Value="Public Property DroppedDown As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DroppedDown : bool with get, set" Usage="System.Windows.Forms.ComboBox.DroppedDown" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DroppedDown { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -963,7 +1046,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -980,6 +1063,9 @@
       <MemberSignature Language="C#" Value="public void EndUpdate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndUpdate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.EndUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndUpdate ()" />
+      <MemberSignature Language="F#" Value="member this.EndUpdate : unit -&gt; unit" Usage="comboBox.EndUpdate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndUpdate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1010,10 +1096,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindString">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the index of the first item in the <see cref="T:System.Windows.Forms.ComboBox" /> that starts with the specified string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindString">
       <MemberSignature Language="C#" Value="public int FindString (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindString(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.FindString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindString (s As String) As Integer" />
+      <MemberSignature Language="F#" Value="member this.FindString : string -&gt; int" Usage="comboBox.FindString s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindString(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1052,6 +1150,9 @@
       <MemberSignature Language="C#" Value="public int FindString (string s, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindString(string s, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.FindString(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindString (s As String, startIndex As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.FindString : string * int -&gt; int" Usage="comboBox.FindString (s, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindString(System::String ^ s, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1084,10 +1185,22 @@
  The <paramref name="startIndex" /> is greater than the last index in the collection.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindStringExact">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the item that exactly matches the specified string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindStringExact">
       <MemberSignature Language="C#" Value="public int FindStringExact (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindStringExact(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.FindStringExact(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindStringExact (s As String) As Integer" />
+      <MemberSignature Language="F#" Value="member this.FindStringExact : string -&gt; int" Usage="comboBox.FindStringExact s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindStringExact(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1126,6 +1239,9 @@
       <MemberSignature Language="C#" Value="public int FindStringExact (string s, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindStringExact(string s, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.FindStringExact(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindStringExact (s As String, startIndex As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.FindStringExact : string * int -&gt; int" Usage="comboBox.FindStringExact (s, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindStringExact(System::String ^ s, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1173,6 +1289,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.FlatStyle FlatStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.FlatStyle FlatStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.FlatStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property FlatStyle As FlatStyle" />
+      <MemberSignature Language="F#" Value="member this.FlatStyle : System.Windows.Forms.FlatStyle with get, set" Usage="System.Windows.Forms.ComboBox.FlatStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::FlatStyle FlatStyle { System::Windows::Forms::FlatStyle get(); void set(System::Windows::Forms::FlatStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1213,6 +1332,9 @@
       <MemberSignature Language="C#" Value="public override bool Focused { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Focused" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.Focused" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Focused As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Focused : bool" Usage="System.Windows.Forms.ComboBox.Focused" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Focused { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1232,6 +1354,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ComboBox.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1250,6 +1375,9 @@
       <MemberSignature Language="C#" Value="public int GetItemHeight (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetItemHeight(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.GetItemHeight(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItemHeight (index As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetItemHeight : int -&gt; int" Usage="comboBox.GetItemHeight index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetItemHeight(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1286,6 +1414,9 @@
       <MemberSignature Language="C#" Value="public bool IntegralHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IntegralHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.IntegralHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntegralHeight As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IntegralHeight : bool with get, set" Usage="System.Windows.Forms.ComboBox.IntegralHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IntegralHeight { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1325,6 +1456,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsInputKey (System.Windows.Forms.Keys keyData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsInputKey(valuetype System.Windows.Forms.Keys keyData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.IsInputKey(System.Windows.Forms.Keys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsInputKey (keyData As Keys) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsInputKey : System.Windows.Forms.Keys -&gt; bool" Usage="comboBox.IsInputKey keyData" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsInputKey(System::Windows::Forms::Keys keyData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1355,6 +1489,9 @@
       <MemberSignature Language="C#" Value="public int ItemHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.ItemHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.ItemHeight : int with get, set" Usage="System.Windows.Forms.ComboBox.ItemHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemHeight { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1388,6 +1525,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ComboBox.ObjectCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ComboBox/ObjectCollection Items" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ComboBox.ObjectCollection" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Windows.Forms.ComboBox.ObjectCollection" Usage="System.Windows.Forms.ComboBox.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ComboBox::ObjectCollection ^ Items { System::Windows::Forms::ComboBox::ObjectCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1395,7 +1535,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ListControlStringCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -1440,6 +1580,9 @@
       <MemberSignature Language="C#" Value="public int MaxDropDownItems { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxDropDownItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.MaxDropDownItems" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxDropDownItems As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxDropDownItems : int with get, set" Usage="System.Windows.Forms.ComboBox.MaxDropDownItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxDropDownItems { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1478,6 +1621,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Size MaximumSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size MaximumSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.MaximumSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property MaximumSize As Size" />
+      <MemberSignature Language="F#" Value="member this.MaximumSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.ComboBox.MaximumSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size MaximumSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1496,6 +1642,9 @@
       <MemberSignature Language="C#" Value="public int MaxLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxLength" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.MaxLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxLength : int with get, set" Usage="System.Windows.Forms.ComboBox.MaxLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1522,6 +1671,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MeasureItemEventHandler MeasureItem;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MeasureItemEventHandler MeasureItem" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ComboBox.MeasureItem" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MeasureItem As MeasureItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MeasureItem : System.Windows.Forms.MeasureItemEventHandler " Usage="member this.MeasureItem : System.Windows.Forms.MeasureItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MeasureItemEventHandler ^ MeasureItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1557,6 +1709,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Size MinimumSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size MinimumSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.MinimumSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property MinimumSize As Size" />
+      <MemberSignature Language="F#" Value="member this.MinimumSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.ComboBox.MinimumSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Size MinimumSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1575,6 +1730,9 @@
       <MemberSignature Language="C#" Value="protected override void OnBackColorChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnBackColorChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnBackColorChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnBackColorChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnBackColorChanged : EventArgs -&gt; unit" Usage="comboBox.OnBackColorChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnBackColorChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1596,6 +1754,9 @@
       <MemberSignature Language="C#" Value="protected override void OnDataSourceChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDataSourceChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnDataSourceChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataSourceChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnDataSourceChanged : EventArgs -&gt; unit" Usage="comboBox.OnDataSourceChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataSourceChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1617,6 +1778,9 @@
       <MemberSignature Language="C#" Value="protected override void OnDisplayMemberChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDisplayMemberChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnDisplayMemberChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDisplayMemberChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnDisplayMemberChanged : EventArgs -&gt; unit" Usage="comboBox.OnDisplayMemberChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDisplayMemberChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1638,6 +1802,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDrawItem (System.Windows.Forms.DrawItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDrawItem(class System.Windows.Forms.DrawItemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDrawItem (e As DrawItemEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDrawItem : System.Windows.Forms.DrawItemEventArgs -&gt; unit&#xA;override this.OnDrawItem : System.Windows.Forms.DrawItemEventArgs -&gt; unit" Usage="comboBox.OnDrawItem e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDrawItem(System::Windows::Forms::DrawItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1675,6 +1842,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDropDown (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDropDown(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnDropDown(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDropDown (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDropDown : EventArgs -&gt; unit&#xA;override this.OnDropDown : EventArgs -&gt; unit" Usage="comboBox.OnDropDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDropDown(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1710,6 +1880,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDropDownClosed (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDropDownClosed(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnDropDownClosed(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDropDownClosed (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDropDownClosed : EventArgs -&gt; unit&#xA;override this.OnDropDownClosed : EventArgs -&gt; unit" Usage="comboBox.OnDropDownClosed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDropDownClosed(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1744,6 +1917,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDropDownStyleChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDropDownStyleChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnDropDownStyleChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDropDownStyleChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDropDownStyleChanged : EventArgs -&gt; unit&#xA;override this.OnDropDownStyleChanged : EventArgs -&gt; unit" Usage="comboBox.OnDropDownStyleChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDropDownStyleChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1779,6 +1955,9 @@
       <MemberSignature Language="C#" Value="protected override void OnFontChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnFontChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnFontChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="comboBox.OnFontChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1800,6 +1979,9 @@
       <MemberSignature Language="C#" Value="protected override void OnForeColorChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnForeColorChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnForeColorChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnForeColorChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnForeColorChanged : EventArgs -&gt; unit" Usage="comboBox.OnForeColorChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnForeColorChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1821,6 +2003,9 @@
       <MemberSignature Language="C#" Value="protected override void OnGotFocus (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnGotFocus(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnGotFocus(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotFocus (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnGotFocus : EventArgs -&gt; unit" Usage="comboBox.OnGotFocus e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotFocus(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1859,6 +2044,9 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnHandleCreated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="comboBox.OnHandleCreated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1892,6 +2080,9 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleDestroyed (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleDestroyed(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnHandleDestroyed(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleDestroyed (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnHandleDestroyed : EventArgs -&gt; unit" Usage="comboBox.OnHandleDestroyed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleDestroyed(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1925,6 +2116,9 @@
       <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Forms.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Forms.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Forms.KeyEventArgs -&gt; unit" Usage="comboBox.OnKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Forms::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1963,6 +2157,9 @@
       <MemberSignature Language="C#" Value="protected override void OnKeyPress (System.Windows.Forms.KeyPressEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyPress(class System.Windows.Forms.KeyPressEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyPress (e As KeyPressEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnKeyPress : System.Windows.Forms.KeyPressEventArgs -&gt; unit" Usage="comboBox.OnKeyPress e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyPress(System::Windows::Forms::KeyPressEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1991,6 +2188,9 @@
       <MemberSignature Language="C#" Value="protected override void OnLostFocus (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLostFocus(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnLostFocus(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLostFocus (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnLostFocus : EventArgs -&gt; unit" Usage="comboBox.OnLostFocus e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLostFocus(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2029,6 +2229,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMeasureItem (System.Windows.Forms.MeasureItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMeasureItem(class System.Windows.Forms.MeasureItemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnMeasureItem(System.Windows.Forms.MeasureItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMeasureItem (e As MeasureItemEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnMeasureItem : System.Windows.Forms.MeasureItemEventArgs -&gt; unit&#xA;override this.OnMeasureItem : System.Windows.Forms.MeasureItemEventArgs -&gt; unit" Usage="comboBox.OnMeasureItem e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMeasureItem(System::Windows::Forms::MeasureItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2066,6 +2269,9 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseEnter (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseEnter(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnMouseEnter(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseEnter (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseEnter : EventArgs -&gt; unit" Usage="comboBox.OnMouseEnter e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseEnter(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2099,6 +2305,9 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseLeave (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeave(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnMouseLeave(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeave (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeave : EventArgs -&gt; unit" Usage="comboBox.OnMouseLeave e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeave(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2132,6 +2341,9 @@
       <MemberSignature Language="C#" Value="protected override void OnParentBackColorChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnParentBackColorChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnParentBackColorChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnParentBackColorChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnParentBackColorChanged : EventArgs -&gt; unit" Usage="comboBox.OnParentBackColorChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnParentBackColorChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2165,6 +2377,9 @@
       <MemberSignature Language="C#" Value="protected override void OnResize (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnResize(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnResize(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnResize (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnResize : EventArgs -&gt; unit" Usage="comboBox.OnResize e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnResize(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2198,6 +2413,9 @@
       <MemberSignature Language="C#" Value="protected override void OnSelectedIndexChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSelectedIndexChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnSelectedIndexChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSelectedIndexChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnSelectedIndexChanged : EventArgs -&gt; unit" Usage="comboBox.OnSelectedIndexChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSelectedIndexChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2233,6 +2451,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelectedItemChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectedItemChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnSelectedItemChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectedItemChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSelectedItemChanged : EventArgs -&gt; unit&#xA;override this.OnSelectedItemChanged : EventArgs -&gt; unit" Usage="comboBox.OnSelectedItemChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectedItemChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2268,6 +2489,9 @@
       <MemberSignature Language="C#" Value="protected override void OnSelectedValueChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSelectedValueChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnSelectedValueChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSelectedValueChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnSelectedValueChanged : EventArgs -&gt; unit" Usage="comboBox.OnSelectedValueChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSelectedValueChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2301,6 +2525,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelectionChangeCommitted (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectionChangeCommitted(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnSelectionChangeCommitted(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectionChangeCommitted (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSelectionChangeCommitted : EventArgs -&gt; unit&#xA;override this.OnSelectionChangeCommitted : EventArgs -&gt; unit" Usage="comboBox.OnSelectionChangeCommitted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectionChangeCommitted(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2345,6 +2572,9 @@
       <MemberSignature Language="C#" Value="protected override void OnTextChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnTextChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnTextChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTextChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnTextChanged : EventArgs -&gt; unit" Usage="comboBox.OnTextChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTextChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2383,6 +2613,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnTextUpdate (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnTextUpdate(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnTextUpdate(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnTextUpdate (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnTextUpdate : EventArgs -&gt; unit&#xA;override this.OnTextUpdate : EventArgs -&gt; unit" Usage="comboBox.OnTextUpdate e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnTextUpdate(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2417,6 +2650,9 @@
       <MemberSignature Language="C#" Value="protected override void OnValidating (System.ComponentModel.CancelEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidating(class System.ComponentModel.CancelEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.OnValidating(System.ComponentModel.CancelEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidating (e As CancelEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnValidating : System.ComponentModel.CancelEventArgs -&gt; unit" Usage="comboBox.OnValidating e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidating(System::ComponentModel::CancelEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2455,6 +2691,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Padding Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding Padding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.Padding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.ComboBox.Padding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2465,7 +2704,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -2491,6 +2730,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler PaddingChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PaddingChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ComboBox.PaddingChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PaddingChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2523,6 +2765,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.PaintEventHandler Paint;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.PaintEventHandler Paint" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ComboBox.Paint" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Paint As PaintEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Paint : System.Windows.Forms.PaintEventHandler " Usage="member this.Paint : System.Windows.Forms.PaintEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PaintEventHandler ^ Paint;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2555,6 +2800,9 @@
       <MemberSignature Language="C#" Value="public int PreferredHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PreferredHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.PreferredHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreferredHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.PreferredHeight : int" Usage="System.Windows.Forms.ComboBox.PreferredHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PreferredHeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2565,7 +2813,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2588,6 +2836,9 @@
       <MemberSignature Language="C#" Value="protected override bool ProcessKeyEventArgs (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyEventArgs(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.ProcessKeyEventArgs(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessKeyEventArgs (ByRef m As Message) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ProcessKeyEventArgs :  -&gt; bool" Usage="comboBox.ProcessKeyEventArgs m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessKeyEventArgs(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2611,6 +2862,9 @@
       <MemberSignature Language="C#" Value="protected override void RefreshItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RefreshItem(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.RefreshItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RefreshItem (index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.RefreshItem : int -&gt; unit" Usage="comboBox.RefreshItem index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RefreshItem(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2632,6 +2886,9 @@
       <MemberSignature Language="C#" Value="protected override void RefreshItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RefreshItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.RefreshItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RefreshItems ()" />
+      <MemberSignature Language="F#" Value="override this.RefreshItems : unit -&gt; unit" Usage="comboBox.RefreshItems " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RefreshItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2650,6 +2907,9 @@
       <MemberSignature Language="C#" Value="public override void ResetText ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResetText() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.ResetText" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetText ()" />
+      <MemberSignature Language="F#" Value="override this.ResetText : unit -&gt; unit" Usage="comboBox.ResetText " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2668,6 +2928,9 @@
       <MemberSignature Language="C#" Value="protected override void ScaleControl (System.Drawing.SizeF factor, System.Windows.Forms.BoundsSpecified specified);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ScaleControl(valuetype System.Drawing.SizeF factor, valuetype System.Windows.Forms.BoundsSpecified specified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ScaleControl (factor As SizeF, specified As BoundsSpecified)" />
+      <MemberSignature Language="F#" Value="override this.ScaleControl : System.Drawing.SizeF * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="comboBox.ScaleControl (factor, specified)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ScaleControl(System::Drawing::SizeF factor, System::Windows::Forms::BoundsSpecified specified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2691,6 +2954,9 @@
       <MemberSignature Language="C#" Value="public void Select (int start, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Select(int32 start, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.Select(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select (start As Integer, length As Integer)" />
+      <MemberSignature Language="F#" Value="override this.Select : int * int -&gt; unit" Usage="comboBox.Select (start, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select(int start, int length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2730,6 +2996,9 @@
       <MemberSignature Language="C#" Value="public void SelectAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SelectAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.SelectAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SelectAll ()" />
+      <MemberSignature Language="F#" Value="member this.SelectAll : unit -&gt; unit" Usage="comboBox.SelectAll " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SelectAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2748,6 +3017,9 @@
       <MemberSignature Language="C#" Value="public override int SelectedIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.SelectedIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SelectedIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.SelectedIndex : int with get, set" Usage="System.Windows.Forms.ComboBox.SelectedIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int SelectedIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2758,7 +3030,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2807,6 +3079,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler SelectedIndexChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectedIndexChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ComboBox.SelectedIndexChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SelectedIndexChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectedIndexChanged : EventHandler " Usage="member this.SelectedIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectedIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2842,6 +3117,9 @@
       <MemberSignature Language="C#" Value="public object SelectedItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SelectedItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.SelectedItem" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedItem As Object" />
+      <MemberSignature Language="F#" Value="member this.SelectedItem : obj with get, set" Usage="System.Windows.Forms.ComboBox.SelectedItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SelectedItem { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2855,7 +3133,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2890,6 +3168,9 @@
       <MemberSignature Language="C#" Value="public string SelectedText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectedText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.SelectedText" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedText As String" />
+      <MemberSignature Language="F#" Value="member this.SelectedText : string with get, set" Usage="System.Windows.Forms.ComboBox.SelectedText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectedText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2900,7 +3181,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2929,6 +3210,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler SelectionChangeCommitted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectionChangeCommitted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ComboBox.SelectionChangeCommitted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SelectionChangeCommitted As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectionChangeCommitted : EventHandler " Usage="member this.SelectionChangeCommitted : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionChangeCommitted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2964,6 +3248,9 @@
       <MemberSignature Language="C#" Value="public int SelectionLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectionLength" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.SelectionLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.SelectionLength : int with get, set" Usage="System.Windows.Forms.ComboBox.SelectionLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectionLength { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2974,7 +3261,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2998,6 +3285,9 @@
       <MemberSignature Language="C#" Value="public int SelectionStart { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectionStart" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.SelectionStart" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionStart As Integer" />
+      <MemberSignature Language="F#" Value="member this.SelectionStart : int with get, set" Usage="System.Windows.Forms.ComboBox.SelectionStart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectionStart { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3008,7 +3298,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3036,6 +3326,9 @@
       <MemberSignature Language="C#" Value="protected override void SetBoundsCore (int x, int y, int width, int height, System.Windows.Forms.BoundsSpecified specified);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetBoundsCore(int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.BoundsSpecified specified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetBoundsCore (x As Integer, y As Integer, width As Integer, height As Integer, specified As BoundsSpecified)" />
+      <MemberSignature Language="F#" Value="override this.SetBoundsCore : int * int * int * int * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="comboBox.SetBoundsCore (x, y, width, height, specified)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetBoundsCore(int x, int y, int width, int height, System::Windows::Forms::BoundsSpecified specified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3065,6 +3358,9 @@
       <MemberSignature Language="C#" Value="protected override void SetItemCore (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItemCore(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.SetItemCore(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItemCore (index As Integer, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.SetItemCore : int * obj -&gt; unit" Usage="comboBox.SetItemCore (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItemCore(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3088,6 +3384,9 @@
       <MemberSignature Language="C#" Value="protected override void SetItemsCore (System.Collections.IList value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItemsCore(class System.Collections.IList value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.SetItemsCore(System.Collections.IList)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItemsCore (value As IList)" />
+      <MemberSignature Language="F#" Value="override this.SetItemsCore : System.Collections.IList -&gt; unit" Usage="comboBox.SetItemsCore value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItemsCore(System::Collections::IList ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3109,6 +3408,9 @@
       <MemberSignature Language="C#" Value="public bool Sorted { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Sorted" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.Sorted" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sorted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Sorted : bool with get, set" Usage="System.Windows.Forms.ComboBox.Sorted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Sorted { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3143,6 +3445,9 @@
       <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ComboBox.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.ComboBox.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3185,6 +3490,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler TextUpdate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextUpdate" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ComboBox.TextUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TextUpdate As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TextUpdate : EventHandler " Usage="member this.TextUpdate : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextUpdate;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3222,6 +3530,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="comboBox.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3241,6 +3552,9 @@
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.WndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="comboBox.WndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -3282,23 +3596,5 @@
         <altmember cref="M:System.Windows.Forms.Control.DefWndProc(System.Windows.Forms.Message@)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="FindStringExact">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Finds the item that exactly matches the specified string.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FindString">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the index of the first item in the <see cref="T:System.Windows.Forms.ComboBox" /> that starts with the specified string.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="DataGridView+DataGridViewControlCollection" FullName="System.Windows.Forms.DataGridView+DataGridViewControlCollection">
+﻿<Type Name="DataGridView+DataGridViewControlCollection" FullName="System.Windows.Forms.DataGridView+DataGridViewControlCollection">
   <TypeSignature Language="C#" Value="public class DataGridView.DataGridViewControlCollection : System.Windows.Forms.Control.ControlCollection" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit DataGridView/DataGridViewControlCollection extends System.Windows.Forms.Control/ControlCollection" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridView.DataGridViewControlCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridView.DataGridViewControlCollection&#xA;Inherits Control.ControlCollection" />
+  <TypeSignature Language="F#" Value="type DataGridView.DataGridViewControlCollection = class&#xA;    inherit Control.ControlCollection" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class DataGridView::DataGridViewControlCollection : System::Windows::Forms::Control::ControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public DataGridViewControlCollection (System.Windows.Forms.DataGridView owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridView owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.DataGridViewControlCollection.#ctor(System.Windows.Forms.DataGridView)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As DataGridView)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridView.DataGridViewControlCollection : System.Windows.Forms.DataGridView -&gt; System.Windows.Forms.DataGridView.DataGridViewControlCollection" Usage="new System.Windows.Forms.DataGridView.DataGridViewControlCollection owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewControlCollection(System::Windows::Forms::DataGridView ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -56,6 +62,9 @@
       <MemberSignature Language="C#" Value="public override void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.DataGridViewControlCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Clear ()" />
+      <MemberSignature Language="F#" Value="override this.Clear : unit -&gt; unit" Usage="dataGridViewControlCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +92,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Windows.Forms.Control[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Windows.Forms.Control[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.DataGridViewControlCollection.CopyTo(System.Windows.Forms.Control[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Control(), index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Windows.Forms.Control[] * int -&gt; unit" Usage="dataGridViewControlCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Windows::Forms::Control ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -119,6 +131,9 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Windows.Forms.Control value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Windows.Forms.Control value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.DataGridViewControlCollection.Insert(System.Int32,System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As Control)" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Windows.Forms.Control -&gt; unit" Usage="dataGridViewControlCollection.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Windows::Forms::Control ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -146,6 +161,9 @@
       <MemberSignature Language="C#" Value="public override void Remove (System.Windows.Forms.Control value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Remove(class System.Windows.Forms.Control value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.DataGridViewControlCollection.Remove(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Remove (value As Control)" />
+      <MemberSignature Language="F#" Value="override this.Remove : System.Windows.Forms.Control -&gt; unit" Usage="dataGridViewControlCollection.Remove value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Remove(System::Windows::Forms::Control ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

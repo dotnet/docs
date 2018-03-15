@@ -1,7 +1,10 @@
-<Type Name="HtmlElement" FullName="System.Windows.Forms.HtmlElement">
+﻿<Type Name="HtmlElement" FullName="System.Windows.Forms.HtmlElement">
   <TypeSignature Language="C#" Value="public sealed class HtmlElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HtmlElement extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HtmlElement" />
+  <TypeSignature Language="F#" Value="type HtmlElement = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlElement sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElementCollection All { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.HtmlElementCollection All" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.All" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property All As HtmlElementCollection" />
+      <MemberSignature Language="F#" Value="member this.All : System.Windows.Forms.HtmlElementCollection" Usage="System.Windows.Forms.HtmlElement.All" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElementCollection ^ All { System::Windows::Forms::HtmlElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -70,6 +76,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElement AppendChild (System.Windows.Forms.HtmlElement newElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.HtmlElement AppendChild(class System.Windows.Forms.HtmlElement newElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.AppendChild(System.Windows.Forms.HtmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AppendChild (newElement As HtmlElement) As HtmlElement" />
+      <MemberSignature Language="F#" Value="member this.AppendChild : System.Windows.Forms.HtmlElement -&gt; System.Windows.Forms.HtmlElement" Usage="htmlElement.AppendChild newElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::HtmlElement ^ AppendChild(System::Windows::Forms::HtmlElement ^ newElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -112,6 +121,8 @@
       <MemberSignature Language="C#" Value="public void AttachEventHandler (string eventName, EventHandler eventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AttachEventHandler(string eventName, class System.EventHandler eventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.AttachEventHandler(System.String,System.EventHandler)" />
+      <MemberSignature Language="F#" Value="member this.AttachEventHandler : string * EventHandler -&gt; unit" Usage="htmlElement.AttachEventHandler (eventName, eventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AttachEventHandler(System::String ^ eventName, EventHandler ^ eventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -146,6 +157,9 @@
       <MemberSignature Language="C#" Value="public bool CanHaveChildren { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanHaveChildren" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.CanHaveChildren" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanHaveChildren As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanHaveChildren : bool" Usage="System.Windows.Forms.HtmlElement.CanHaveChildren" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanHaveChildren { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -180,6 +194,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElementCollection Children { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.HtmlElementCollection Children" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.Children" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Children As HtmlElementCollection" />
+      <MemberSignature Language="F#" Value="member this.Children : System.Windows.Forms.HtmlElementCollection" Usage="System.Windows.Forms.HtmlElement.Children" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElementCollection ^ Children { System::Windows::Forms::HtmlElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -220,6 +237,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler Click;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler Click" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.Click" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Click As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Click : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.Click : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ Click;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -260,6 +280,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle ClientRectangle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle ClientRectangle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.ClientRectangle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientRectangle As Rectangle" />
+      <MemberSignature Language="F#" Value="member this.ClientRectangle : System.Drawing.Rectangle" Usage="System.Windows.Forms.HtmlElement.ClientRectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle ClientRectangle { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -310,6 +333,8 @@
       <MemberSignature Language="C#" Value="public void DetachEventHandler (string eventName, EventHandler eventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DetachEventHandler(string eventName, class System.EventHandler eventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.DetachEventHandler(System.String,System.EventHandler)" />
+      <MemberSignature Language="F#" Value="member this.DetachEventHandler : string * EventHandler -&gt; unit" Usage="htmlElement.DetachEventHandler (eventName, eventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DetachEventHandler(System::String ^ eventName, EventHandler ^ eventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -333,6 +358,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlDocument Document { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.HtmlDocument Document" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.Document" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Document As HtmlDocument" />
+      <MemberSignature Language="F#" Value="member this.Document : System.Windows.Forms.HtmlDocument" Usage="System.Windows.Forms.HtmlElement.Document" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlDocument ^ Document { System::Windows::Forms::HtmlDocument ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -359,6 +387,9 @@
       <MemberSignature Language="C#" Value="public object DomElement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DomElement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.DomElement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DomElement As Object" />
+      <MemberSignature Language="F#" Value="member this.DomElement : obj" Usage="System.Windows.Forms.HtmlElement.DomElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DomElement { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -395,6 +426,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler DoubleClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler DoubleClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.DoubleClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DoubleClick As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DoubleClick : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.DoubleClick : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ DoubleClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -435,6 +469,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler Drag;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler Drag" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.Drag" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Drag As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Drag : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.Drag : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ Drag;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -481,6 +518,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler DragEnd;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler DragEnd" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.DragEnd" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DragEnd As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DragEnd : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.DragEnd : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ DragEnd;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -519,6 +559,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler DragLeave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler DragLeave" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.DragLeave" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DragLeave As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DragLeave : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.DragLeave : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ DragLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -548,6 +591,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler DragOver;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler DragOver" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.DragOver" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DragOver As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DragOver : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.DragOver : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ DragOver;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -586,6 +632,9 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Windows.Forms.HtmlElement.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -612,6 +661,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="htmlElement.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -635,6 +687,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElement FirstChild { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.HtmlElement FirstChild" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.FirstChild" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstChild As HtmlElement" />
+      <MemberSignature Language="F#" Value="member this.FirstChild : System.Windows.Forms.HtmlElement" Usage="System.Windows.Forms.HtmlElement.FirstChild" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElement ^ FirstChild { System::Windows::Forms::HtmlElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -660,6 +715,9 @@
       <MemberSignature Language="C#" Value="public void Focus ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Focus() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.Focus" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Focus ()" />
+      <MemberSignature Language="F#" Value="member this.Focus : unit -&gt; unit" Usage="htmlElement.Focus " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Focus();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -687,6 +745,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler Focusing;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler Focusing" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.Focusing" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Focusing As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Focusing : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.Focusing : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ Focusing;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -727,6 +788,9 @@
       <MemberSignature Language="C#" Value="public string GetAttribute (string attributeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetAttribute(string attributeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.GetAttribute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAttribute (attributeName As String) As String" />
+      <MemberSignature Language="F#" Value="member this.GetAttribute : string -&gt; string" Usage="htmlElement.GetAttribute attributeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetAttribute(System::String ^ attributeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -766,6 +830,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElementCollection GetElementsByTagName (string tagName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.HtmlElementCollection GetElementsByTagName(string tagName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.GetElementsByTagName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetElementsByTagName (tagName As String) As HtmlElementCollection" />
+      <MemberSignature Language="F#" Value="member this.GetElementsByTagName : string -&gt; System.Windows.Forms.HtmlElementCollection" Usage="htmlElement.GetElementsByTagName tagName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::HtmlElementCollection ^ GetElementsByTagName(System::String ^ tagName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -788,6 +855,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="htmlElement.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -808,6 +878,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler GotFocus;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler GotFocus" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.GotFocus" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event GotFocus As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.GotFocus : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.GotFocus : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ GotFocus;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -856,6 +929,9 @@
       <MemberSignature Language="C#" Value="public string Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="System.Windows.Forms.HtmlElement.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -882,6 +958,9 @@
       <MemberSignature Language="C#" Value="public string InnerHtml { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InnerHtml" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.InnerHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Property InnerHtml As String" />
+      <MemberSignature Language="F#" Value="member this.InnerHtml : string with get, set" Usage="System.Windows.Forms.HtmlElement.InnerHtml" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InnerHtml { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -921,6 +1000,9 @@
       <MemberSignature Language="C#" Value="public string InnerText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InnerText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.InnerText" />
+      <MemberSignature Language="VB.NET" Value="Public Property InnerText As String" />
+      <MemberSignature Language="F#" Value="member this.InnerText : string with get, set" Usage="System.Windows.Forms.HtmlElement.InnerText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InnerText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -958,6 +1040,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElement InsertAdjacentElement (System.Windows.Forms.HtmlElementInsertionOrientation orient, System.Windows.Forms.HtmlElement newElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.HtmlElement InsertAdjacentElement(valuetype System.Windows.Forms.HtmlElementInsertionOrientation orient, class System.Windows.Forms.HtmlElement newElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.InsertAdjacentElement(System.Windows.Forms.HtmlElementInsertionOrientation,System.Windows.Forms.HtmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InsertAdjacentElement (orient As HtmlElementInsertionOrientation, newElement As HtmlElement) As HtmlElement" />
+      <MemberSignature Language="F#" Value="member this.InsertAdjacentElement : System.Windows.Forms.HtmlElementInsertionOrientation * System.Windows.Forms.HtmlElement -&gt; System.Windows.Forms.HtmlElement" Usage="htmlElement.InsertAdjacentElement (orient, newElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::HtmlElement ^ InsertAdjacentElement(System::Windows::Forms::HtmlElementInsertionOrientation orient, System::Windows::Forms::HtmlElement ^ newElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -995,10 +1080,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeMember">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes a method unique to the current element.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InvokeMember">
       <MemberSignature Language="C#" Value="public object InvokeMember (string methodName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object InvokeMember(string methodName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.InvokeMember(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InvokeMember (methodName As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.InvokeMember : string -&gt; obj" Usage="htmlElement.InvokeMember methodName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeMember(System::String ^ methodName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1028,6 +1125,9 @@
       <MemberSignature Language="C#" Value="public object InvokeMember (string methodName, params object[] parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object InvokeMember(string methodName, object[] parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.InvokeMember(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function InvokeMember (methodName As String, ParamArray parameter As Object()) As Object" />
+      <MemberSignature Language="F#" Value="member this.InvokeMember : string * obj[] -&gt; obj" Usage="htmlElement.InvokeMember (methodName, parameter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeMember(System::String ^ methodName, ... cli::array &lt;System::Object ^&gt; ^ parameter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1073,6 +1173,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler KeyDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler KeyDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.KeyDown" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event KeyDown As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.KeyDown : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.KeyDown : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ KeyDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1113,6 +1216,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler KeyPress;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler KeyPress" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.KeyPress" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event KeyPress As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.KeyPress : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.KeyPress : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ KeyPress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1153,6 +1259,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler KeyUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler KeyUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.KeyUp" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event KeyUp As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.KeyUp : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.KeyUp : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ KeyUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1193,6 +1302,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler LosingFocus;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler LosingFocus" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.LosingFocus" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LosingFocus As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.LosingFocus : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.LosingFocus : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ LosingFocus;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1222,6 +1334,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler LostFocus;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler LostFocus" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.LostFocus" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LostFocus As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.LostFocus : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.LostFocus : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ LostFocus;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1262,6 +1377,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler MouseDown;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler MouseDown" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.MouseDown" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseDown As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseDown : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.MouseDown : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ MouseDown;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1300,6 +1418,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler MouseEnter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler MouseEnter" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.MouseEnter" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseEnter As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseEnter : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.MouseEnter : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ MouseEnter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1329,6 +1450,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler MouseLeave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler MouseLeave" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.MouseLeave" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseLeave As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseLeave : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.MouseLeave : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ MouseLeave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1358,6 +1482,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler MouseMove;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler MouseMove" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.MouseMove" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseMove As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseMove : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.MouseMove : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ MouseMove;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1396,6 +1523,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler MouseOver;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler MouseOver" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.MouseOver" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseOver As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseOver : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.MouseOver : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ MouseOver;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1434,6 +1564,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.HtmlElementEventHandler MouseUp;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.HtmlElementEventHandler MouseUp" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.HtmlElement.MouseUp" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseUp As HtmlElementEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseUp : System.Windows.Forms.HtmlElementEventHandler " Usage="member this.MouseUp : System.Windows.Forms.HtmlElementEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::HtmlElementEventHandler ^ MouseUp;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1472,6 +1605,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.HtmlElement.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1499,6 +1635,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElement NextSibling { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.HtmlElement NextSibling" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.NextSibling" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextSibling As HtmlElement" />
+      <MemberSignature Language="F#" Value="member this.NextSibling : System.Windows.Forms.HtmlElement" Usage="System.Windows.Forms.HtmlElement.NextSibling" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElement ^ NextSibling { System::Windows::Forms::HtmlElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1524,6 +1663,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElement OffsetParent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.HtmlElement OffsetParent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.OffsetParent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OffsetParent As HtmlElement" />
+      <MemberSignature Language="F#" Value="member this.OffsetParent : System.Windows.Forms.HtmlElement" Usage="System.Windows.Forms.HtmlElement.OffsetParent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElement ^ OffsetParent { System::Windows::Forms::HtmlElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1585,6 +1727,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle OffsetRectangle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle OffsetRectangle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.OffsetRectangle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OffsetRectangle As Rectangle" />
+      <MemberSignature Language="F#" Value="member this.OffsetRectangle : System.Drawing.Rectangle" Usage="System.Windows.Forms.HtmlElement.OffsetRectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle OffsetRectangle { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1651,6 +1796,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Forms.HtmlElement left, System.Windows.Forms.HtmlElement right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Windows.Forms.HtmlElement left, class System.Windows.Forms.HtmlElement right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.op_Equality(System.Windows.Forms.HtmlElement,System.Windows.Forms.HtmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As HtmlElement, right As HtmlElement) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Forms.HtmlElement * System.Windows.Forms.HtmlElement -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Forms::HtmlElement ^ left, System::Windows::Forms::HtmlElement ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1683,6 +1831,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Forms.HtmlElement left, System.Windows.Forms.HtmlElement right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Windows.Forms.HtmlElement left, class System.Windows.Forms.HtmlElement right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.op_Inequality(System.Windows.Forms.HtmlElement,System.Windows.Forms.HtmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As HtmlElement, right As HtmlElement) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Forms.HtmlElement * System.Windows.Forms.HtmlElement -&gt; bool" Usage="System.Windows.Forms.HtmlElement.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Forms::HtmlElement ^ left, System::Windows::Forms::HtmlElement ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1710,6 +1861,9 @@
       <MemberSignature Language="C#" Value="public string OuterHtml { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OuterHtml" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.OuterHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Property OuterHtml As String" />
+      <MemberSignature Language="F#" Value="member this.OuterHtml : string with get, set" Usage="System.Windows.Forms.HtmlElement.OuterHtml" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OuterHtml { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1788,6 +1942,9 @@
       <MemberSignature Language="C#" Value="public string OuterText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OuterText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.OuterText" />
+      <MemberSignature Language="VB.NET" Value="Public Property OuterText As String" />
+      <MemberSignature Language="F#" Value="member this.OuterText : string with get, set" Usage="System.Windows.Forms.HtmlElement.OuterText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OuterText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1817,6 +1974,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.HtmlElement Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.HtmlElement Parent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As HtmlElement" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Windows.Forms.HtmlElement" Usage="System.Windows.Forms.HtmlElement.Parent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::HtmlElement ^ Parent { System::Windows::Forms::HtmlElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1852,6 +2012,9 @@
       <MemberSignature Language="C#" Value="public void RaiseEvent (string eventName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RaiseEvent(string eventName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.RaiseEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RaiseEvent (eventName As String)" />
+      <MemberSignature Language="F#" Value="member this.RaiseEvent : string -&gt; unit" Usage="htmlElement.RaiseEvent eventName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaiseEvent(System::String ^ eventName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1880,6 +2043,9 @@
       <MemberSignature Language="C#" Value="public void RemoveFocus ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveFocus() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.RemoveFocus" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveFocus ()" />
+      <MemberSignature Language="F#" Value="member this.RemoveFocus : unit -&gt; unit" Usage="htmlElement.RemoveFocus " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFocus();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1907,6 +2073,9 @@
       <MemberSignature Language="C#" Value="public void ScrollIntoView (bool alignWithTop);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ScrollIntoView(bool alignWithTop) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.ScrollIntoView(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ScrollIntoView (alignWithTop As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ScrollIntoView : bool -&gt; unit" Usage="htmlElement.ScrollIntoView alignWithTop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ScrollIntoView(bool alignWithTop);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1938,6 +2107,9 @@
       <MemberSignature Language="C#" Value="public int ScrollLeft { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ScrollLeft" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.ScrollLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollLeft As Integer" />
+      <MemberSignature Language="F#" Value="member this.ScrollLeft : int with get, set" Usage="System.Windows.Forms.HtmlElement.ScrollLeft" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ScrollLeft { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1963,6 +2135,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle ScrollRectangle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle ScrollRectangle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.ScrollRectangle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ScrollRectangle As Rectangle" />
+      <MemberSignature Language="F#" Value="member this.ScrollRectangle : System.Drawing.Rectangle" Usage="System.Windows.Forms.HtmlElement.ScrollRectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle ScrollRectangle { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1990,6 +2165,9 @@
       <MemberSignature Language="C#" Value="public int ScrollTop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ScrollTop" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.ScrollTop" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollTop As Integer" />
+      <MemberSignature Language="F#" Value="member this.ScrollTop : int with get, set" Usage="System.Windows.Forms.HtmlElement.ScrollTop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ScrollTop { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2015,6 +2193,9 @@
       <MemberSignature Language="C#" Value="public void SetAttribute (string attributeName, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAttribute(string attributeName, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.HtmlElement.SetAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAttribute (attributeName As String, value As String)" />
+      <MemberSignature Language="F#" Value="member this.SetAttribute : string * string -&gt; unit" Usage="htmlElement.SetAttribute (attributeName, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAttribute(System::String ^ attributeName, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2059,6 +2240,9 @@
       <MemberSignature Language="C#" Value="public string Style { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Style" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.Style" />
+      <MemberSignature Language="VB.NET" Value="Public Property Style As String" />
+      <MemberSignature Language="F#" Value="member this.Style : string with get, set" Usage="System.Windows.Forms.HtmlElement.Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Style { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2092,6 +2276,9 @@
       <MemberSignature Language="C#" Value="public short TabIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int16 TabIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.TabIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property TabIndex As Short" />
+      <MemberSignature Language="F#" Value="member this.TabIndex : int16 with get, set" Usage="System.Windows.Forms.HtmlElement.TabIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property short TabIndex { short get(); void set(short value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2119,6 +2306,9 @@
       <MemberSignature Language="C#" Value="public string TagName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TagName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.HtmlElement.TagName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TagName As String" />
+      <MemberSignature Language="F#" Value="member this.TagName : string" Usage="System.Windows.Forms.HtmlElement.TagName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TagName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2149,14 +2339,5 @@
         <altmember cref="M:System.Windows.Forms.HtmlDocument.GetElementsByTagName(System.String)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="InvokeMember">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Executes a method unique to the current element.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

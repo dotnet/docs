@@ -1,7 +1,10 @@
-<Type Name="FileFormatException" FullName="System.IO.FileFormatException">
+﻿<Type Name="FileFormatException" FullName="System.IO.FileFormatException">
   <TypeSignature Language="C#" Value="public class FileFormatException : FormatException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit FileFormatException extends System.FormatException implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.IO.FileFormatException" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileFormatException&#xA;Inherits FormatException" />
+  <TypeSignature Language="F#" Value="type FileFormatException = class&#xA;    inherit FormatException&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileFormatException : FormatException" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Packaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +23,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Packaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.IO.FileFormatException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FileFormatException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileFormatException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -51,6 +66,9 @@
       <MemberSignature Language="C#" Value="public FileFormatException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.IO.FileFormatException : string -&gt; System.IO.FileFormatException" Usage="new System.IO.FileFormatException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileFormatException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -74,6 +92,9 @@
       <MemberSignature Language="C#" Value="public FileFormatException (Uri sourceUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri sourceUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceUri As Uri)" />
+      <MemberSignature Language="F#" Value="new System.IO.FileFormatException : Uri -&gt; System.IO.FileFormatException" Usage="new System.IO.FileFormatException sourceUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileFormatException(Uri ^ sourceUri);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -106,6 +127,9 @@
       <MemberSignature Language="C#" Value="protected FileFormatException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.IO.FileFormatException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IO.FileFormatException" Usage="new System.IO.FileFormatException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; FileFormatException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -126,6 +150,9 @@
       <MemberSignature Language="C#" Value="public FileFormatException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.IO.FileFormatException : string * Exception -&gt; System.IO.FileFormatException" Usage="new System.IO.FileFormatException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileFormatException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -158,6 +185,9 @@
       <MemberSignature Language="C#" Value="public FileFormatException (Uri sourceUri, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri sourceUri, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.#ctor(System.Uri,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceUri As Uri, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.IO.FileFormatException : Uri * Exception -&gt; System.IO.FileFormatException" Usage="new System.IO.FileFormatException (sourceUri, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileFormatException(Uri ^ sourceUri, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -192,6 +222,9 @@
       <MemberSignature Language="C#" Value="public FileFormatException (Uri sourceUri, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri sourceUri, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.#ctor(System.Uri,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceUri As Uri, message As String)" />
+      <MemberSignature Language="F#" Value="new System.IO.FileFormatException : Uri * string -&gt; System.IO.FileFormatException" Usage="new System.IO.FileFormatException (sourceUri, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileFormatException(Uri ^ sourceUri, System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -226,6 +259,9 @@
       <MemberSignature Language="C#" Value="public FileFormatException (Uri sourceUri, string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri sourceUri, string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.#ctor(System.Uri,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceUri As Uri, message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.IO.FileFormatException : Uri * string * Exception -&gt; System.IO.FileFormatException" Usage="new System.IO.FileFormatException (sourceUri, message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileFormatException(Uri ^ sourceUri, System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -262,7 +298,13 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileFormatException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="fileFormatException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -290,6 +332,9 @@
       <MemberSignature Language="C#" Value="public Uri SourceUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri SourceUri" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileFormatException.SourceUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.SourceUri : Uri" Usage="System.IO.FileFormatException.SourceUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SourceUri { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Packaging</AssemblyName>
@@ -321,15 +366,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Packaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.IO.FileFormatException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

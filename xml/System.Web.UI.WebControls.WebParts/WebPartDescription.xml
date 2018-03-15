@@ -1,7 +1,10 @@
-<Type Name="WebPartDescription" FullName="System.Web.UI.WebControls.WebParts.WebPartDescription">
+﻿<Type Name="WebPartDescription" FullName="System.Web.UI.WebControls.WebParts.WebPartDescription">
   <TypeSignature Language="C#" Value="public class WebPartDescription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebPartDescription extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartDescription" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebPartDescription" />
+  <TypeSignature Language="F#" Value="type WebPartDescription = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartDescription" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,6 +94,9 @@
       <MemberSignature Language="C#" Value="public WebPartDescription (System.Web.UI.WebControls.WebParts.WebPart part);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPart part) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartDescription.#ctor(System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (part As WebPart)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartDescription : System.Web.UI.WebControls.WebParts.WebPart -&gt; System.Web.UI.WebControls.WebParts.WebPartDescription" Usage="new System.Web.UI.WebControls.WebParts.WebPartDescription part" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartDescription(System::Web::UI::WebControls::WebParts::WebPart ^ part);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +123,9 @@
       <MemberSignature Language="C#" Value="public WebPartDescription (string id, string title, string description, string imageUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id, string title, string description, string imageUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartDescription.#ctor(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (id As String, title As String, description As String, imageUrl As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartDescription : string * string * string * string -&gt; System.Web.UI.WebControls.WebParts.WebPartDescription" Usage="new System.Web.UI.WebControls.WebParts.WebPartDescription (id, title, description, imageUrl)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartDescription(System::String ^ id, System::String ^ title, System::String ^ description, System::String ^ imageUrl);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +159,9 @@
       <MemberSignature Language="C#" Value="public string CatalogIconImageUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CatalogIconImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDescription.CatalogIconImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CatalogIconImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.CatalogIconImageUrl : string" Usage="System.Web.UI.WebControls.WebParts.WebPartDescription.CatalogIconImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CatalogIconImageUrl { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,6 +200,9 @@
       <MemberSignature Language="C#" Value="public string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDescription.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Web.UI.WebControls.WebParts.WebPartDescription.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -226,6 +241,9 @@
       <MemberSignature Language="C#" Value="public string ID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDescription.ID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ID As String" />
+      <MemberSignature Language="F#" Value="member this.ID : string" Usage="System.Web.UI.WebControls.WebParts.WebPartDescription.ID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -264,6 +282,9 @@
       <MemberSignature Language="C#" Value="public string Title { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartDescription.Title" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string" Usage="System.Web.UI.WebControls.WebParts.WebPartDescription.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

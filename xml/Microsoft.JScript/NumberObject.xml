@@ -1,7 +1,10 @@
-<Type Name="NumberObject" FullName="Microsoft.JScript.NumberObject">
+﻿<Type Name="NumberObject" FullName="Microsoft.JScript.NumberObject">
   <TypeSignature Language="C#" Value="public class NumberObject : Microsoft.JScript.JSObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumberObject extends Microsoft.JScript.JSObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.NumberObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class NumberObject&#xA;Inherits JSObject" />
+  <TypeSignature Language="F#" Value="type NumberObject = class&#xA;    inherit JSObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NumberObject : Microsoft::JScript::JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +25,9 @@
       <MemberSignature Language="C#" Value="protected NumberObject (Microsoft.JScript.ScriptObject parent, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.ScriptObject parent, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumberObject.#ctor(Microsoft.JScript.ScriptObject,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (parent As ScriptObject, value As Object)" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.NumberObject : Microsoft.JScript.ScriptObject * obj -&gt; Microsoft.JScript.NumberObject" Usage="new Microsoft.JScript.NumberObject (parent, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NumberObject(Microsoft::JScript::ScriptObject ^ parent, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -45,6 +51,9 @@
       <MemberSignature Language="C#" Value="public Type GetType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetType() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.NumberObject.GetType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetType () As Type" />
+      <MemberSignature Language="F#" Value="override this.GetType : unit -&gt; Type" Usage="numberObject.GetType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

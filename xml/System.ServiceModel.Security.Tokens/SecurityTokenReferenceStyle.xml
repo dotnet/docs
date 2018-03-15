@@ -1,7 +1,10 @@
-<Type Name="SecurityTokenReferenceStyle" FullName="System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle">
+﻿<Type Name="SecurityTokenReferenceStyle" FullName="System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle">
   <TypeSignature Language="C#" Value="public enum SecurityTokenReferenceStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SecurityTokenReferenceStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SecurityTokenReferenceStyle" />
+  <TypeSignature Language="F#" Value="type SecurityTokenReferenceStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SecurityTokenReferenceStyle" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="External" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle External = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle.External" />
+      <MemberSignature Language="VB.NET" Value="External" />
+      <MemberSignature Language="F#" Value="External = 1" Usage="System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle.External" />
+      <MemberSignature Language="C++ CLI" Value="External" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -28,6 +34,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The generated STR will reference the token as if it were not attached to the message itself.</summary>
       </Docs>
@@ -36,6 +43,9 @@
       <MemberSignature Language="C#" Value="Internal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle Internal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle.Internal" />
+      <MemberSignature Language="VB.NET" Value="Internal" />
+      <MemberSignature Language="F#" Value="Internal = 0" Usage="System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle.Internal" />
+      <MemberSignature Language="C++ CLI" Value="Internal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The generated STR will reference the token as if it were included in the message.</summary>
       </Docs>

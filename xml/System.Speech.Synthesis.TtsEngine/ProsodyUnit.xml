@@ -1,7 +1,10 @@
-<Type Name="ProsodyUnit" FullName="System.Speech.Synthesis.TtsEngine.ProsodyUnit">
+﻿<Type Name="ProsodyUnit" FullName="System.Speech.Synthesis.TtsEngine.ProsodyUnit">
   <TypeSignature Language="C#" Value="public enum ProsodyUnit" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProsodyUnit extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.ProsodyUnit" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ProsodyUnit" />
+  <TypeSignature Language="F#" Value="type ProsodyUnit = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ProsodyUnit" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.ProsodyUnit Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyUnit.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Speech.Synthesis.TtsEngine.ProsodyUnit.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates the engine-specific default value.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="Hz" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.ProsodyUnit Hz = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyUnit.Hz" />
+      <MemberSignature Language="VB.NET" Value="Hz" />
+      <MemberSignature Language="F#" Value="Hz = 1" Usage="System.Speech.Synthesis.TtsEngine.ProsodyUnit.Hz" />
+      <MemberSignature Language="C++ CLI" Value="Hz" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates the Unit value is Hz.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="Semitone" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.ProsodyUnit Semitone = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.ProsodyUnit.Semitone" />
+      <MemberSignature Language="VB.NET" Value="Semitone" />
+      <MemberSignature Language="F#" Value="Semitone = 2" Usage="System.Speech.Synthesis.TtsEngine.ProsodyUnit.Semitone" />
+      <MemberSignature Language="C++ CLI" Value="Semitone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.ProsodyUnit</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates the Unit value is semitone.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="GridViewSelectEventArgs" FullName="System.Web.UI.WebControls.GridViewSelectEventArgs">
+﻿<Type Name="GridViewSelectEventArgs" FullName="System.Web.UI.WebControls.GridViewSelectEventArgs">
   <TypeSignature Language="C#" Value="public class GridViewSelectEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridViewSelectEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.GridViewSelectEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class GridViewSelectEventArgs&#xA;Inherits CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type GridViewSelectEventArgs = class&#xA;    inherit CancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GridViewSelectEventArgs : System::ComponentModel::CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="public GridViewSelectEventArgs (int newSelectedIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 newSelectedIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.GridViewSelectEventArgs.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (newSelectedIndex As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.GridViewSelectEventArgs : int -&gt; System.Web.UI.WebControls.GridViewSelectEventArgs" Usage="new System.Web.UI.WebControls.GridViewSelectEventArgs newSelectedIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GridViewSelectEventArgs(int newSelectedIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +84,9 @@
       <MemberSignature Language="C#" Value="public int NewSelectedIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NewSelectedIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.GridViewSelectEventArgs.NewSelectedIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewSelectedIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.NewSelectedIndex : int with get, set" Usage="System.Web.UI.WebControls.GridViewSelectEventArgs.NewSelectedIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NewSelectedIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ItemCollection" FullName="System.Data.Metadata.Edm.ItemCollection">
+﻿<Type Name="ItemCollection" FullName="System.Data.Metadata.Edm.ItemCollection">
   <TypeSignature Language="C#" Value="public abstract class ItemCollection : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.GlobalItem&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ItemCollection extends System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1&lt;class System.Data.Metadata.Edm.GlobalItem&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.ItemCollection" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ItemCollection&#xA;Inherits ReadOnlyMetadataCollection(Of GlobalItem)" />
+  <TypeSignature Language="F#" Value="type ItemCollection = class&#xA;    inherit ReadOnlyMetadataCollection&lt;GlobalItem&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ItemCollection abstract : System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::GlobalItem ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.DataSpace DataSpace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.DataSpace DataSpace" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.ItemCollection.DataSpace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSpace As DataSpace" />
+      <MemberSignature Language="F#" Value="member this.DataSpace : System.Data.Metadata.Edm.DataSpace" Usage="System.Data.Metadata.Edm.ItemCollection.DataSpace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::DataSpace DataSpace { System::Data::Metadata::Edm::DataSpace get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -55,10 +61,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetEntityContainer">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetEntityContainer">
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EntityContainer GetEntityContainer (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Metadata.Edm.EntityContainer GetEntityContainer(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.GetEntityContainer(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEntityContainer (name As String) As EntityContainer" />
+      <MemberSignature Language="F#" Value="member this.GetEntityContainer : string -&gt; System.Data.Metadata.Edm.EntityContainer" Usage="itemCollection.GetEntityContainer name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Metadata::Edm::EntityContainer ^ GetEntityContainer(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -81,6 +99,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EntityContainer GetEntityContainer (string name, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Metadata.Edm.EntityContainer GetEntityContainer(string name, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.GetEntityContainer(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEntityContainer (name As String, ignoreCase As Boolean) As EntityContainer" />
+      <MemberSignature Language="F#" Value="member this.GetEntityContainer : string * bool -&gt; System.Data.Metadata.Edm.EntityContainer" Usage="itemCollection.GetEntityContainer (name, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Metadata::Edm::EntityContainer ^ GetEntityContainer(System::String ^ name, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -102,10 +123,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetFunctions">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns all the overloads of the functions by using the specified name from this item collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetFunctions">
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt; GetFunctions (string functionName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.EdmFunction&gt; GetFunctions(string functionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.GetFunctions(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFunctions (functionName As String) As ReadOnlyCollection(Of EdmFunction)" />
+      <MemberSignature Language="F#" Value="member this.GetFunctions : string -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt;" Usage="itemCollection.GetFunctions functionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::EdmFunction ^&gt; ^ GetFunctions(System::String ^ functionName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -128,6 +161,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt; GetFunctions (string functionName, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.EdmFunction&gt; GetFunctions(string functionName, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.GetFunctions(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFunctions (functionName As String, ignoreCase As Boolean) As ReadOnlyCollection(Of EdmFunction)" />
+      <MemberSignature Language="F#" Value="member this.GetFunctions : string * bool -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt;" Usage="itemCollection.GetFunctions (functionName, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::EdmFunction ^&gt; ^ GetFunctions(System::String ^ functionName, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -153,6 +189,9 @@
       <MemberSignature Language="C#" Value="protected static System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt; GetFunctions (System.Collections.Generic.Dictionary&lt;string,System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt;&gt; functionCollection, string functionName, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.EdmFunction&gt; GetFunctions(class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.EdmFunction&gt;&gt; functionCollection, string functionName, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.GetFunctions(System.Collections.Generic.Dictionary{System.String,System.Collections.ObjectModel.ReadOnlyCollection{System.Data.Metadata.Edm.EdmFunction}},System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function GetFunctions (functionCollection As Dictionary(Of String, ReadOnlyCollection(Of EdmFunction)), functionName As String, ignoreCase As Boolean) As ReadOnlyCollection(Of EdmFunction)" />
+      <MemberSignature Language="F#" Value="static member GetFunctions : System.Collections.Generic.Dictionary&lt;string, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt;&gt; * string * bool -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.EdmFunction&gt;" Usage="System.Data.Metadata.Edm.ItemCollection.GetFunctions (functionCollection, functionName, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::EdmFunction ^&gt; ^ GetFunctions(System::Collections::Generic::Dictionary&lt;System::String ^, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::EdmFunction ^&gt; ^&gt; ^ functionCollection, System::String ^ functionName, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -176,10 +215,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetItem&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an item that is specified by the identity.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetItem&lt;T&gt;">
       <MemberSignature Language="C#" Value="public T GetItem&lt;T&gt; (string identity) where T : System.Data.Metadata.Edm.GlobalItem;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetItem&lt;(class System.Data.Metadata.Edm.GlobalItem) T&gt;(string identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.GetItem``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItem(Of T As GlobalItem) (identity As String) As T" />
+      <MemberSignature Language="F#" Value="member this.GetItem : string -&gt; 'T (requires 'T :&gt; System.Data.Metadata.Edm.GlobalItem)" Usage="itemCollection.GetItem identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Data::Metadata::Edm::GlobalItem T GetItem(System::String ^ identity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -210,6 +261,9 @@
       <MemberSignature Language="C#" Value="public T GetItem&lt;T&gt; (string identity, bool ignoreCase) where T : System.Data.Metadata.Edm.GlobalItem;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetItem&lt;(class System.Data.Metadata.Edm.GlobalItem) T&gt;(string identity, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.GetItem``1(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItem(Of T As GlobalItem) (identity As String, ignoreCase As Boolean) As T" />
+      <MemberSignature Language="F#" Value="member this.GetItem : string * bool -&gt; 'T (requires 'T :&gt; System.Data.Metadata.Edm.GlobalItem)" Usage="itemCollection.GetItem (identity, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Data::Metadata::Edm::GlobalItem T GetItem(System::String ^ identity, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -243,6 +297,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt; GetItems&lt;T&gt; () where T : System.Data.Metadata.Edm.GlobalItem;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;!!T&gt; GetItems&lt;(class System.Data.Metadata.Edm.GlobalItem) T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.GetItems``1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetItems(Of T As GlobalItem) () As ReadOnlyCollection(Of T)" />
+      <MemberSignature Language="F#" Value="abstract member GetItems : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;'T (requires 'T :&gt; System.Data.Metadata.Edm.GlobalItem)&gt; (requires 'T :&gt; System.Data.Metadata.Edm.GlobalItem)&#xA;override this.GetItems : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;'T (requires 'T :&gt; System.Data.Metadata.Edm.GlobalItem)&gt; (requires 'T :&gt; System.Data.Metadata.Edm.GlobalItem)" Usage="itemCollection.GetItems " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Data::Metadata::Edm::GlobalItem virtual System::Collections::ObjectModel::ReadOnlyCollection&lt;T&gt; ^ GetItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -266,10 +323,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name and the namespace name in this item collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetType">
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EdmType GetType (string name, string namespaceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Metadata.Edm.EdmType GetType(string name, string namespaceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.GetType(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetType (name As String, namespaceName As String) As EdmType" />
+      <MemberSignature Language="F#" Value="override this.GetType : string * string -&gt; System.Data.Metadata.Edm.EdmType" Usage="itemCollection.GetType (name, namespaceName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Metadata::Edm::EdmType ^ GetType(System::String ^ name, System::String ^ namespaceName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -294,6 +363,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EdmType GetType (string name, string namespaceName, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Metadata.Edm.EdmType GetType(string name, string namespaceName, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.GetType(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetType (name As String, namespaceName As String, ignoreCase As Boolean) As EdmType" />
+      <MemberSignature Language="F#" Value="override this.GetType : string * string * bool -&gt; System.Data.Metadata.Edm.EdmType" Usage="itemCollection.GetType (name, namespaceName, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Metadata::Edm::EdmType ^ GetType(System::String ^ name, System::String ^ namespaceName, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -317,10 +389,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetEntityContainer">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryGetEntityContainer">
       <MemberSignature Language="C#" Value="public bool TryGetEntityContainer (string name, out System.Data.Metadata.Edm.EntityContainer entityContainer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntityContainer(string name, [out] class System.Data.Metadata.Edm.EntityContainer&amp; entityContainer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.TryGetEntityContainer(System.String,System.Data.Metadata.Edm.EntityContainer@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetEntityContainer (name As String, ByRef entityContainer As EntityContainer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetEntityContainer : string *  -&gt; bool" Usage="itemCollection.TryGetEntityContainer (name, entityContainer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetEntityContainer(System::String ^ name, [Runtime::InteropServices::Out] System::Data::Metadata::Edm::EntityContainer ^ % entityContainer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -346,6 +430,9 @@
       <MemberSignature Language="C#" Value="public bool TryGetEntityContainer (string name, bool ignoreCase, out System.Data.Metadata.Edm.EntityContainer entityContainer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetEntityContainer(string name, bool ignoreCase, [out] class System.Data.Metadata.Edm.EntityContainer&amp; entityContainer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.TryGetEntityContainer(System.String,System.Boolean,System.Data.Metadata.Edm.EntityContainer@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetEntityContainer (name As String, ignoreCase As Boolean, ByRef entityContainer As EntityContainer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetEntityContainer : string * bool *  -&gt; bool" Usage="itemCollection.TryGetEntityContainer (name, ignoreCase, entityContainer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetEntityContainer(System::String ^ name, bool ignoreCase, [Runtime::InteropServices::Out] System::Data::Metadata::Edm::EntityContainer ^ % entityContainer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -370,10 +457,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetItem&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a strongly typed item by using the specified identity from this item collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryGetItem&lt;T&gt;">
       <MemberSignature Language="C#" Value="public bool TryGetItem&lt;T&gt; (string identity, out T item) where T : System.Data.Metadata.Edm.GlobalItem;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetItem&lt;(class System.Data.Metadata.Edm.GlobalItem) T&gt;(string identity, [out] !!T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.TryGetItem``1(System.String,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetItem(Of T As GlobalItem) (identity As String, ByRef item As T) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetItem : string *  -&gt; bool (requires 'T :&gt; System.Data.Metadata.Edm.GlobalItem)" Usage="itemCollection.TryGetItem (identity, item)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Data::Metadata::Edm::GlobalItem bool TryGetItem(System::String ^ identity, [Runtime::InteropServices::Out] T % item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -407,6 +506,9 @@
       <MemberSignature Language="C#" Value="public bool TryGetItem&lt;T&gt; (string identity, bool ignoreCase, out T item) where T : System.Data.Metadata.Edm.GlobalItem;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetItem&lt;(class System.Data.Metadata.Edm.GlobalItem) T&gt;(string identity, bool ignoreCase, [out] !!T&amp; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.TryGetItem``1(System.String,System.Boolean,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetItem(Of T As GlobalItem) (identity As String, ignoreCase As Boolean, ByRef item As T) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetItem : string * bool *  -&gt; bool (requires 'T :&gt; System.Data.Metadata.Edm.GlobalItem)" Usage="itemCollection.TryGetItem (identity, ignoreCase, item)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Data::Metadata::Edm::GlobalItem bool TryGetItem(System::String ^ identity, bool ignoreCase, [Runtime::InteropServices::Out] T % item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -439,10 +541,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetType">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name and the namespace name from this item collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryGetType">
       <MemberSignature Language="C#" Value="public bool TryGetType (string name, string namespaceName, out System.Data.Metadata.Edm.EdmType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetType(string name, string namespaceName, [out] class System.Data.Metadata.Edm.EdmType&amp; type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.TryGetType(System.String,System.String,System.Data.Metadata.Edm.EdmType@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetType (name As String, namespaceName As String, ByRef type As EdmType) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetType : string * string *  -&gt; bool" Usage="itemCollection.TryGetType (name, namespaceName, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetType(System::String ^ name, System::String ^ namespaceName, [Runtime::InteropServices::Out] System::Data::Metadata::Edm::EdmType ^ % type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -470,6 +584,9 @@
       <MemberSignature Language="C#" Value="public bool TryGetType (string name, string namespaceName, bool ignoreCase, out System.Data.Metadata.Edm.EdmType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetType(string name, string namespaceName, bool ignoreCase, [out] class System.Data.Metadata.Edm.EdmType&amp; type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.ItemCollection.TryGetType(System.String,System.String,System.Boolean,System.Data.Metadata.Edm.EdmType@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetType (name As String, namespaceName As String, ignoreCase As Boolean, ByRef type As EdmType) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetType : string * string * bool *  -&gt; bool" Usage="itemCollection.TryGetType (name, namespaceName, ignoreCase, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetType(System::String ^ name, System::String ^ namespaceName, bool ignoreCase, [Runtime::InteropServices::Out] System::Data::Metadata::Edm::EdmType ^ % type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -496,68 +613,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TryGetType">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name and the namespace name from this item collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetFunctions">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns all the overloads of the functions by using the specified name from this item collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TryGetEntityContainer">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TryGetItem&lt;T&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a strongly typed item by using the specified identity from this item collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetType">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EdmType" /> object by using the specified type name and the namespace name in this item collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetItem&lt;T&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an item that is specified by the identity.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetEntityContainer">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an <see cref="T:System.Data.Metadata.Edm.EntityContainer" /> object by using the specified entity container name.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

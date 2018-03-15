@@ -1,7 +1,10 @@
-<Type Name="DataPagerFieldItem" FullName="System.Web.UI.WebControls.DataPagerFieldItem">
-  <TypeSignature Language="C#" Value="public class DataPagerFieldItem : System.Web.UI.Control" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPagerFieldItem extends System.Web.UI.Control implements class System.Web.UI.INamingContainer" />
+﻿<Type Name="DataPagerFieldItem" FullName="System.Web.UI.WebControls.DataPagerFieldItem">
+  <TypeSignature Language="C#" Value="public class DataPagerFieldItem : System.Web.UI.Control, System.Web.UI.INamingContainer, System.Web.UI.INonBindingContainer" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPagerFieldItem extends System.Web.UI.Control implements class System.Web.UI.INamingContainer, class System.Web.UI.INonBindingContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataPagerFieldItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataPagerFieldItem&#xA;Inherits Control&#xA;Implements INamingContainer, INonBindingContainer" />
+  <TypeSignature Language="F#" Value="type DataPagerFieldItem = class&#xA;    inherit Control&#xA;    interface INonBindingContainer&#xA;    interface INamingContainer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataPagerFieldItem : System::Web::UI::Control, System::Web::UI::INamingContainer, System::Web::UI::INonBindingContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -9,7 +12,14 @@
   <Base>
     <BaseTypeName>System.Web.UI.Control</BaseTypeName>
   </Base>
-  <Interfaces />
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.Web.UI.INamingContainer</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Web.UI.INonBindingContainer</InterfaceName>
+    </Interface>
+  </Interfaces>
   <Docs>
     <summary>Represents a pager field item in a <see cref="T:System.Web.UI.WebControls.DataPager" /> control.</summary>
     <remarks>
@@ -33,6 +43,9 @@
       <MemberSignature Language="C#" Value="public DataPagerFieldItem (System.Web.UI.WebControls.DataPagerField field, System.Web.UI.WebControls.DataPager pager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.DataPagerField field, class System.Web.UI.WebControls.DataPager pager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldItem.#ctor(System.Web.UI.WebControls.DataPagerField,System.Web.UI.WebControls.DataPager)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (field As DataPagerField, pager As DataPager)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DataPagerFieldItem : System.Web.UI.WebControls.DataPagerField * System.Web.UI.WebControls.DataPager -&gt; System.Web.UI.WebControls.DataPagerFieldItem" Usage="new System.Web.UI.WebControls.DataPagerFieldItem (field, pager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataPagerFieldItem(System::Web::UI::WebControls::DataPagerField ^ field, System::Web::UI::WebControls::DataPager ^ pager);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -55,6 +68,9 @@
       <MemberSignature Language="C#" Value="protected override bool OnBubbleEvent (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnBubbleEvent(object source, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerFieldItem.OnBubbleEvent(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="dataPagerFieldItem.OnBubbleEvent (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -80,6 +96,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataPager Pager { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataPager Pager" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerFieldItem.Pager" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pager As DataPager" />
+      <MemberSignature Language="F#" Value="member this.Pager : System.Web.UI.WebControls.DataPager" Usage="System.Web.UI.WebControls.DataPagerFieldItem.Pager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataPager ^ Pager { System::Web::UI::WebControls::DataPager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -115,6 +134,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataPagerField PagerField { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataPagerField PagerField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerFieldItem.PagerField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PagerField As DataPagerField" />
+      <MemberSignature Language="F#" Value="member this.PagerField : System.Web.UI.WebControls.DataPagerField" Usage="System.Web.UI.WebControls.DataPagerFieldItem.PagerField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataPagerField ^ PagerField { System::Web::UI::WebControls::DataPagerField ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

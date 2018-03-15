@@ -1,7 +1,10 @@
-<Type Name="ScriptMode" FullName="System.Web.UI.ScriptMode">
+﻿<Type Name="ScriptMode" FullName="System.Web.UI.ScriptMode">
   <TypeSignature Language="C#" Value="public enum ScriptMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScriptMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ScriptMode" />
+  <TypeSignature Language="F#" Value="type ScriptMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ScriptMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ScriptMode Auto = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ScriptMode.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Web.UI.ScriptMode.Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -52,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.ScriptMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>In the <see cref="T:System.Web.UI.ScriptManager" /> control, the version of client scripts to use is determined at run time based on the application-level [&lt;compilation&gt;](http://msdn.microsoft.com/library/7c319582-074a-4d2a-a787-03b9d4541c12) element of the Web.config file, unless it is overridden in an instance of the <see cref="T:System.Web.UI.ScriptReference" /> control. In the <see cref="T:System.Web.UI.ScriptReference" /> control, when applied to a standalone script file, <see cref="F:System.Web.UI.ScriptMode.Auto" /> is equivalent to <see cref="F:System.Web.UI.ScriptMode.Release" />. When applied to a script reference in an assembly, <see cref="F:System.Web.UI.ScriptMode.Auto" /> is equivalent to <see cref="F:System.Web.UI.ScriptMode.Inherit" />.</summary>
       </Docs>
@@ -60,6 +67,9 @@
       <MemberSignature Language="C#" Value="Debug" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ScriptMode Debug = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ScriptMode.Debug" />
+      <MemberSignature Language="VB.NET" Value="Debug" />
+      <MemberSignature Language="F#" Value="Debug = 2" Usage="System.Web.UI.ScriptMode.Debug" />
+      <MemberSignature Language="C++ CLI" Value="Debug" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -68,6 +78,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.ScriptMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>In the <see cref="T:System.Web.UI.ScriptManager" /> control, the debug version of the client script is used on the Web page unless overridden in an instance of the <see cref="T:System.Web.UI.ScriptReference" /> control. In the <see cref="T:System.Web.UI.ScriptReference" /> control, the debug version of the client script is used on the Web page.</summary>
       </Docs>
@@ -76,6 +87,9 @@
       <MemberSignature Language="C#" Value="Inherit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ScriptMode Inherit = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ScriptMode.Inherit" />
+      <MemberSignature Language="VB.NET" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 1" Usage="System.Web.UI.ScriptMode.Inherit" />
+      <MemberSignature Language="C++ CLI" Value="Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -84,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.ScriptMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>In the <see cref="T:System.Web.UI.ScriptManager" /> control, <see cref="F:System.Web.UI.ScriptMode.Inherit" /> is equivalent to <see cref="F:System.Web.UI.ScriptMode.Auto" />. In the <see cref="T:System.Web.UI.ScriptReference" /> control, the <see cref="P:System.Web.UI.ScriptManager.ScriptMode" /> value from <see cref="T:System.Web.UI.ScriptManager" /> determines which version of the client script to use.</summary>
       </Docs>
@@ -92,6 +107,9 @@
       <MemberSignature Language="C#" Value="Release" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.ScriptMode Release = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.ScriptMode.Release" />
+      <MemberSignature Language="VB.NET" Value="Release" />
+      <MemberSignature Language="F#" Value="Release = 3" Usage="System.Web.UI.ScriptMode.Release" />
+      <MemberSignature Language="C++ CLI" Value="Release" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -100,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.ScriptMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>In the <see cref="T:System.Web.UI.ScriptManager" /> control, the release version of the client script is used on the Web page unless overridden by setting the <see cref="P:System.Web.UI.ScriptReference.ScriptMode" /> property of a <see cref="T:System.Web.UI.ScriptReference" /> instance to <see cref="F:System.Web.UI.ScriptMode.Debug" />. In the <see cref="T:System.Web.UI.ScriptReference" /> control, the release version of the client script is used on the Web page.</summary>
       </Docs>

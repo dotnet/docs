@@ -1,7 +1,10 @@
-<Type Name="LogPolicy" FullName="System.IO.Log.LogPolicy">
+﻿<Type Name="LogPolicy" FullName="System.IO.Log.LogPolicy">
   <TypeSignature Language="C#" Value="public sealed class LogPolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LogPolicy extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Log.LogPolicy" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LogPolicy" />
+  <TypeSignature Language="F#" Value="type LogPolicy = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LogPolicy sealed" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public bool AutoGrow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoGrow" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.AutoGrow" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoGrow As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoGrow : bool with get, set" Usage="System.IO.Log.LogPolicy.AutoGrow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoGrow { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -65,6 +71,9 @@
       <MemberSignature Language="C#" Value="public int AutoShrinkPercentage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AutoShrinkPercentage" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.AutoShrinkPercentage" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoShrinkPercentage As Integer" />
+      <MemberSignature Language="F#" Value="member this.AutoShrinkPercentage : int with get, set" Usage="System.IO.Log.LogPolicy.AutoShrinkPercentage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AutoShrinkPercentage { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -98,6 +107,9 @@
       <MemberSignature Language="C#" Value="public void Commit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Commit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.LogPolicy.Commit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Commit ()" />
+      <MemberSignature Language="F#" Value="member this.Commit : unit -&gt; unit" Usage="logPolicy.Commit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -143,6 +155,9 @@
       <MemberSignature Language="C#" Value="public System.IO.Log.PolicyUnit GrowthRate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.PolicyUnit GrowthRate" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.GrowthRate" />
+      <MemberSignature Language="VB.NET" Value="Public Property GrowthRate As PolicyUnit" />
+      <MemberSignature Language="F#" Value="member this.GrowthRate : System.IO.Log.PolicyUnit with get, set" Usage="System.IO.Log.LogPolicy.GrowthRate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::PolicyUnit GrowthRate { System::IO::Log::PolicyUnit get(); void set(System::IO::Log::PolicyUnit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -176,6 +191,9 @@
       <MemberSignature Language="C#" Value="public int MaximumExtentCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumExtentCount" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.MaximumExtentCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumExtentCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaximumExtentCount : int with get, set" Usage="System.IO.Log.LogPolicy.MaximumExtentCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumExtentCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -204,6 +222,9 @@
       <MemberSignature Language="C#" Value="public int MinimumExtentCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinimumExtentCount" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.MinimumExtentCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinimumExtentCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.MinimumExtentCount : int with get, set" Usage="System.IO.Log.LogPolicy.MinimumExtentCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumExtentCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -232,6 +253,9 @@
       <MemberSignature Language="C#" Value="public string NewExtentPrefix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NewExtentPrefix" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.NewExtentPrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewExtentPrefix As String" />
+      <MemberSignature Language="F#" Value="member this.NewExtentPrefix : string with get, set" Usage="System.IO.Log.LogPolicy.NewExtentPrefix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NewExtentPrefix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -265,6 +289,9 @@
       <MemberSignature Language="C#" Value="public long NextExtentSuffix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 NextExtentSuffix" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.NextExtentSuffix" />
+      <MemberSignature Language="VB.NET" Value="Public Property NextExtentSuffix As Long" />
+      <MemberSignature Language="F#" Value="member this.NextExtentSuffix : int64 with get, set" Usage="System.IO.Log.LogPolicy.NextExtentSuffix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long NextExtentSuffix { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -293,6 +320,9 @@
       <MemberSignature Language="C#" Value="public System.IO.Log.PolicyUnit PinnedTailThreshold { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.PolicyUnit PinnedTailThreshold" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogPolicy.PinnedTailThreshold" />
+      <MemberSignature Language="VB.NET" Value="Public Property PinnedTailThreshold As PolicyUnit" />
+      <MemberSignature Language="F#" Value="member this.PinnedTailThreshold : System.IO.Log.PolicyUnit with get, set" Usage="System.IO.Log.LogPolicy.PinnedTailThreshold" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::PolicyUnit PinnedTailThreshold { System::IO::Log::PolicyUnit get(); void set(System::IO::Log::PolicyUnit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -326,6 +356,9 @@
       <MemberSignature Language="C#" Value="public void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.LogPolicy.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="F#" Value="member this.Refresh : unit -&gt; unit" Usage="logPolicy.Refresh " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>

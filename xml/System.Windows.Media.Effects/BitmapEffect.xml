@@ -1,7 +1,10 @@
-<Type Name="BitmapEffect" FullName="System.Windows.Media.Effects.BitmapEffect">
+﻿<Type Name="BitmapEffect" FullName="System.Windows.Media.Effects.BitmapEffect">
   <TypeSignature Language="C#" Value="public abstract class BitmapEffect : System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BitmapEffect extends System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.BitmapEffect" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BitmapEffect&#xA;Inherits Animatable" />
+  <TypeSignature Language="F#" Value="type BitmapEffect = class&#xA;    inherit Animatable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BitmapEffect abstract : System::Windows::Media::Animation::Animatable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="protected BitmapEffect ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BitmapEffect();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -67,6 +72,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.BitmapEffect Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.BitmapEffect Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As BitmapEffect" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Effects.BitmapEffect" Usage="bitmapEffect.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BitmapEffect ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -95,6 +103,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.BitmapEffect CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.BitmapEffect CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As BitmapEffect" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Effects.BitmapEffect" Usage="bitmapEffect.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::BitmapEffect ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -123,6 +134,9 @@
       <MemberSignature Language="C#" Value="protected static System.Runtime.InteropServices.SafeHandle CreateBitmapEffectOuter ();" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Runtime.InteropServices.SafeHandle CreateBitmapEffectOuter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.CreateBitmapEffectOuter" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function CreateBitmapEffectOuter () As SafeHandle" />
+      <MemberSignature Language="F#" Value="static member CreateBitmapEffectOuter : unit -&gt; System.Runtime.InteropServices.SafeHandle" Usage="System.Windows.Media.Effects.BitmapEffect.CreateBitmapEffectOuter " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Runtime::InteropServices::SafeHandle ^ CreateBitmapEffectOuter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -168,6 +182,9 @@
       <MemberSignature Language="C#" Value="protected abstract System.Runtime.InteropServices.SafeHandle CreateUnmanagedEffect ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Runtime.InteropServices.SafeHandle CreateUnmanagedEffect() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.CreateUnmanagedEffect" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateUnmanagedEffect () As SafeHandle" />
+      <MemberSignature Language="F#" Value="abstract member CreateUnmanagedEffect : unit -&gt; System.Runtime.InteropServices.SafeHandle" Usage="bitmapEffect.CreateUnmanagedEffect " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Runtime::InteropServices::SafeHandle ^ CreateUnmanagedEffect();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -205,6 +222,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.BitmapSource GetOutput (System.Windows.Media.Effects.BitmapEffectInput input);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Imaging.BitmapSource GetOutput(class System.Windows.Media.Effects.BitmapEffectInput input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.GetOutput(System.Windows.Media.Effects.BitmapEffectInput)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOutput (input As BitmapEffectInput) As BitmapSource" />
+      <MemberSignature Language="F#" Value="member this.GetOutput : System.Windows.Media.Effects.BitmapEffectInput -&gt; System.Windows.Media.Imaging.BitmapSource" Usage="bitmapEffect.GetOutput input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Imaging::BitmapSource ^ GetOutput(System::Windows::Media::Effects::BitmapEffectInput ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -232,6 +252,9 @@
       <MemberSignature Language="C#" Value="protected static void InitializeBitmapEffect (System.Runtime.InteropServices.SafeHandle outerObject, System.Runtime.InteropServices.SafeHandle innerObject);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig void InitializeBitmapEffect(class System.Runtime.InteropServices.SafeHandle outerObject, class System.Runtime.InteropServices.SafeHandle innerObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.InitializeBitmapEffect(System.Runtime.InteropServices.SafeHandle,System.Runtime.InteropServices.SafeHandle)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Sub InitializeBitmapEffect (outerObject As SafeHandle, innerObject As SafeHandle)" />
+      <MemberSignature Language="F#" Value="static member InitializeBitmapEffect : System.Runtime.InteropServices.SafeHandle * System.Runtime.InteropServices.SafeHandle -&gt; unit" Usage="System.Windows.Media.Effects.BitmapEffect.InitializeBitmapEffect (outerObject, innerObject)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static void InitializeBitmapEffect(System::Runtime::InteropServices::SafeHandle ^ outerObject, System::Runtime::InteropServices::SafeHandle ^ innerObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -276,6 +299,9 @@
       <MemberSignature Language="C#" Value="protected static void SetValue (System.Runtime.InteropServices.SafeHandle effect, string propertyName, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig void SetValue(class System.Runtime.InteropServices.SafeHandle effect, string propertyName, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.SetValue(System.Runtime.InteropServices.SafeHandle,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Sub SetValue (effect As SafeHandle, propertyName As String, value As Object)" />
+      <MemberSignature Language="F#" Value="static member SetValue : System.Runtime.InteropServices.SafeHandle * string * obj -&gt; unit" Usage="System.Windows.Media.Effects.BitmapEffect.SetValue (effect, propertyName, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static void SetValue(System::Runtime::InteropServices::SafeHandle ^ effect, System::String ^ propertyName, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -319,6 +345,9 @@
       <MemberSignature Language="C#" Value="protected abstract void UpdateUnmanagedPropertyState (System.Runtime.InteropServices.SafeHandle unmanagedEffect);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void UpdateUnmanagedPropertyState(class System.Runtime.InteropServices.SafeHandle unmanagedEffect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.BitmapEffect.UpdateUnmanagedPropertyState(System.Runtime.InteropServices.SafeHandle)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub UpdateUnmanagedPropertyState (unmanagedEffect As SafeHandle)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateUnmanagedPropertyState : System.Runtime.InteropServices.SafeHandle -&gt; unit" Usage="bitmapEffect.UpdateUnmanagedPropertyState unmanagedEffect" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void UpdateUnmanagedPropertyState(System::Runtime::InteropServices::SafeHandle ^ unmanagedEffect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

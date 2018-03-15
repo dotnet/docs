@@ -1,7 +1,10 @@
-<Type Name="WSFederationMessageException" FullName="System.IdentityModel.Services.WSFederationMessageException">
+﻿<Type Name="WSFederationMessageException" FullName="System.IdentityModel.Services.WSFederationMessageException">
   <TypeSignature Language="C#" Value="public class WSFederationMessageException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WSFederationMessageException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.WSFederationMessageException" />
+  <TypeSignature Language="VB.NET" Value="Public Class WSFederationMessageException&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type WSFederationMessageException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WSFederationMessageException : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.WSFederationMessageException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WSFederationMessageException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationMessageException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSFederationMessageException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -48,6 +62,9 @@
       <MemberSignature Language="C#" Value="public WSFederationMessageException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationMessageException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.WSFederationMessageException : string -&gt; System.IdentityModel.Services.WSFederationMessageException" Usage="new System.IdentityModel.Services.WSFederationMessageException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSFederationMessageException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -80,6 +97,9 @@
       <MemberSignature Language="C#" Value="protected WSFederationMessageException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationMessageException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.WSFederationMessageException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.Services.WSFederationMessageException" Usage="new System.IdentityModel.Services.WSFederationMessageException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WSFederationMessageException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -107,6 +127,9 @@
       <MemberSignature Language="C#" Value="public WSFederationMessageException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.WSFederationMessageException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.WSFederationMessageException : string * Exception -&gt; System.IdentityModel.Services.WSFederationMessageException" Usage="new System.IdentityModel.Services.WSFederationMessageException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSFederationMessageException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -137,14 +160,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.WSFederationMessageException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

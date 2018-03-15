@@ -1,7 +1,10 @@
-<Type Name="ActivatableWorkflowsQueryResult" FullName="System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult">
+﻿<Type Name="ActivatableWorkflowsQueryResult" FullName="System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult">
   <TypeSignature Language="C#" Value="public sealed class ActivatableWorkflowsQueryResult : System.Runtime.DurableInstancing.InstanceStoreQueryResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivatableWorkflowsQueryResult extends System.Runtime.DurableInstancing.InstanceStoreQueryResult" />
   <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivatableWorkflowsQueryResult&#xA;Inherits InstanceStoreQueryResult" />
+  <TypeSignature Language="F#" Value="type ActivatableWorkflowsQueryResult = class&#xA;    inherit InstanceStoreQueryResult" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivatableWorkflowsQueryResult sealed : System::Runtime::DurableInstancing::InstanceStoreQueryResult" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +34,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ActivatableWorkflowsQueryResult ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivatableWorkflowsQueryResult();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -50,6 +64,9 @@
       <MemberSignature Language="C#" Value="public ActivatableWorkflowsQueryResult (System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt; parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt; parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.#ctor(System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameters As IDictionary(Of XName, Object))" />
+      <MemberSignature Language="F#" Value="new System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt; -&gt; System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult" Usage="new System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivatableWorkflowsQueryResult(System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^ parameters);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,6 +85,9 @@
       <MemberSignature Language="C#" Value="public ActivatableWorkflowsQueryResult (System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt;&gt; parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt;&gt; parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.IDictionary{System.Xml.Linq.XName,System.Object}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameters As IEnumerable(Of IDictionary(Of XName, Object)))" />
+      <MemberSignature Language="F#" Value="new System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult : seq&lt;System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt;&gt; -&gt; System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult" Usage="new System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivatableWorkflowsQueryResult(System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^&gt; ^ parameters);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -86,6 +106,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,object&gt;&gt; ActivationParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, object&gt;&gt; ActivationParameters" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.ActivationParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivationParameters As List(Of IDictionary(Of XName, Object))" />
+      <MemberSignature Language="F#" Value="member this.ActivationParameters : System.Collections.Generic.List&lt;System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, obj&gt;&gt;" Usage="System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.ActivationParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^&gt; ^ ActivationParameters { System::Collections::Generic::List&lt;System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Object ^&gt; ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -100,14 +123,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes an instance of the <see cref="T:System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

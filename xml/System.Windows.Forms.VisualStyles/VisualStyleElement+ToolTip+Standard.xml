@@ -1,7 +1,10 @@
-<Type Name="VisualStyleElement+ToolTip+Standard" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ToolTip+Standard">
+﻿<Type Name="VisualStyleElement+ToolTip+Standard" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ToolTip+Standard">
   <TypeSignature Language="C#" Value="public static class VisualStyleElement.ToolTip.Standard" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/ToolTip/Standard extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip.Standard" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualStyleElement.ToolTip.Standard" />
+  <TypeSignature Language="F#" Value="type VisualStyleElement.ToolTip.Standard = class" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class VisualStyleElement::ToolTip::Standard abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Link { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Link" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip.Standard.Link" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Link As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Link : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip.Standard.Link" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Link { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +75,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Normal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Normal" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip.Standard.Normal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Normal As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Normal : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip.Standard.Normal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Normal { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

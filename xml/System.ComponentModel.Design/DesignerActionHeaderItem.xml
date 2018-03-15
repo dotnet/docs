@@ -1,7 +1,10 @@
-<Type Name="DesignerActionHeaderItem" FullName="System.ComponentModel.Design.DesignerActionHeaderItem">
+﻿<Type Name="DesignerActionHeaderItem" FullName="System.ComponentModel.Design.DesignerActionHeaderItem">
   <TypeSignature Language="C#" Value="public sealed class DesignerActionHeaderItem : System.ComponentModel.Design.DesignerActionTextItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerActionHeaderItem extends System.ComponentModel.Design.DesignerActionTextItem" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionHeaderItem" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignerActionHeaderItem&#xA;Inherits DesignerActionTextItem" />
+  <TypeSignature Language="F#" Value="type DesignerActionHeaderItem = class&#xA;    inherit DesignerActionTextItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerActionHeaderItem sealed : System::ComponentModel::Design::DesignerActionTextItem" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +38,22 @@
     <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionHeaderItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DesignerActionHeaderItem (string displayName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string displayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionHeaderItem.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionHeaderItem : string -&gt; System.ComponentModel.Design.DesignerActionHeaderItem" Usage="new System.ComponentModel.Design.DesignerActionHeaderItem displayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionHeaderItem(System::String ^ displayName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -78,6 +93,9 @@
       <MemberSignature Language="C#" Value="public DesignerActionHeaderItem (string displayName, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string displayName, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionHeaderItem.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (displayName As String, category As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.DesignerActionHeaderItem : string * string -&gt; System.ComponentModel.Design.DesignerActionHeaderItem" Usage="new System.ComponentModel.Design.DesignerActionHeaderItem (displayName, category)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerActionHeaderItem(System::String ^ displayName, System::String ^ category);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -104,14 +122,5 @@
         <altmember cref="M:System.ComponentModel.Design.DesignerActionList.GetSortedActionItems" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionHeaderItem" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

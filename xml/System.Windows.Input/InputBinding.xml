@@ -1,7 +1,10 @@
-<Type Name="InputBinding" FullName="System.Windows.Input.InputBinding">
+﻿<Type Name="InputBinding" FullName="System.Windows.Input.InputBinding">
   <TypeSignature Language="C#" Value="public class InputBinding : System.Windows.Freezable, System.Windows.Input.ICommandSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InputBinding extends System.Windows.Freezable implements class System.Windows.Input.ICommandSource" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputBinding" />
+  <TypeSignature Language="VB.NET" Value="Public Class InputBinding&#xA;Inherits Freezable&#xA;Implements ICommandSource" />
+  <TypeSignature Language="F#" Value="type InputBinding = class&#xA;    inherit Freezable&#xA;    interface ICommandSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InputBinding : System::Windows::Freezable, System::Windows::Input::ICommandSource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,10 +75,21 @@
     <altmember cref="T:System.Windows.Input.CommandBinding" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected InputBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InputBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -101,6 +115,9 @@
       <MemberSignature Language="C#" Value="public InputBinding (System.Windows.Input.ICommand command, System.Windows.Input.InputGesture gesture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.ICommand command, class System.Windows.Input.InputGesture gesture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputBinding.#ctor(System.Windows.Input.ICommand,System.Windows.Input.InputGesture)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (command As ICommand, gesture As InputGesture)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.InputBinding : System.Windows.Input.ICommand * System.Windows.Input.InputGesture -&gt; System.Windows.Input.InputBinding" Usage="new System.Windows.Input.InputBinding (command, gesture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InputBinding(System::Windows::Input::ICommand ^ command, System::Windows::Input::InputGesture ^ gesture);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -143,6 +160,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputBinding.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="inputBinding.CloneCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -164,6 +184,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputBinding.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="inputBinding.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -185,6 +208,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.ICommand Command { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ICommand Command" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputBinding.Command" />
+      <MemberSignature Language="VB.NET" Value="Public Property Command As ICommand" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Windows.Input.ICommand with get, set" Usage="System.Windows.Input.InputBinding.Command" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ICommand ^ Command { System::Windows::Input::ICommand ^ get(); void set(System::Windows::Input::ICommand ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -256,6 +282,9 @@
       <MemberSignature Language="C#" Value="public object CommandParameter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CommandParameter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputBinding.CommandParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandParameter As Object" />
+      <MemberSignature Language="F#" Value="member this.CommandParameter : obj with get, set" Usage="System.Windows.Input.InputBinding.CommandParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandParameter { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -316,6 +345,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CommandParameterProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CommandParameterProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputBinding.CommandParameterProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandParameterProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandParameterProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.InputBinding.CommandParameterProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandParameterProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -333,6 +365,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CommandProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CommandProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputBinding.CommandProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.InputBinding.CommandProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -350,6 +385,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.IInputElement CommandTarget { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement CommandTarget" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputBinding.CommandTarget" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandTarget As IInputElement" />
+      <MemberSignature Language="F#" Value="member this.CommandTarget : System.Windows.IInputElement with get, set" Usage="System.Windows.Input.InputBinding.CommandTarget" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ CommandTarget { System::Windows::IInputElement ^ get(); void set(System::Windows::IInputElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -394,6 +432,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CommandTargetProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CommandTargetProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputBinding.CommandTargetProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommandTargetProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CommandTargetProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.InputBinding.CommandTargetProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CommandTargetProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -411,6 +452,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputBinding.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="inputBinding.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -430,6 +474,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Input.InputGesture Gesture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.InputGesture Gesture" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputBinding.Gesture" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Gesture As InputGesture" />
+      <MemberSignature Language="F#" Value="member this.Gesture : System.Windows.Input.InputGesture with get, set" Usage="System.Windows.Input.InputBinding.Gesture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Input::InputGesture ^ Gesture { System::Windows::Input::InputGesture ^ get(); void set(System::Windows::Input::InputGesture ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -505,6 +552,9 @@
       <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputBinding.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="inputBinding.GetAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -526,6 +576,9 @@
       <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputBinding.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="inputBinding.GetCurrentValueAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -543,14 +596,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.InputBinding" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

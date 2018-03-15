@@ -1,7 +1,10 @@
-<Type Name="ForeignKeyReferenceAlreadyHasValueException" FullName="System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException">
+﻿<Type Name="ForeignKeyReferenceAlreadyHasValueException" FullName="System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException">
   <TypeSignature Language="C#" Value="public class ForeignKeyReferenceAlreadyHasValueException : InvalidOperationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ForeignKeyReferenceAlreadyHasValueException extends System.InvalidOperationException" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException" />
+  <TypeSignature Language="VB.NET" Value="Public Class ForeignKeyReferenceAlreadyHasValueException&#xA;Inherits InvalidOperationException" />
+  <TypeSignature Language="F#" Value="type ForeignKeyReferenceAlreadyHasValueException = class&#xA;    inherit InvalidOperationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ForeignKeyReferenceAlreadyHasValueException : InvalidOperationException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ForeignKeyReferenceAlreadyHasValueException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ForeignKeyReferenceAlreadyHasValueException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -48,6 +62,9 @@
       <MemberSignature Language="C#" Value="public ForeignKeyReferenceAlreadyHasValueException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException : string -&gt; System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException" Usage="new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ForeignKeyReferenceAlreadyHasValueException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -78,6 +95,9 @@
       <MemberSignature Language="C#" Value="public ForeignKeyReferenceAlreadyHasValueException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException : string * Exception -&gt; System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException" Usage="new System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ForeignKeyReferenceAlreadyHasValueException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -108,14 +128,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.ForeignKeyReferenceAlreadyHasValueException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

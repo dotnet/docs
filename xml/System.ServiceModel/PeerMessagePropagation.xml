@@ -1,7 +1,10 @@
-<Type Name="PeerMessagePropagation" FullName="System.ServiceModel.PeerMessagePropagation">
+﻿<Type Name="PeerMessagePropagation" FullName="System.ServiceModel.PeerMessagePropagation">
   <TypeSignature Language="C#" Value="public enum PeerMessagePropagation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PeerMessagePropagation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerMessagePropagation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PeerMessagePropagation" />
+  <TypeSignature Language="F#" Value="type PeerMessagePropagation = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PeerMessagePropagation" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="Local" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerMessagePropagation Local = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessagePropagation.Local" />
+      <MemberSignature Language="VB.NET" Value="Local" />
+      <MemberSignature Language="F#" Value="Local = 1" Usage="System.ServiceModel.PeerMessagePropagation.Local" />
+      <MemberSignature Language="C++ CLI" Value="Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -28,6 +34,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.PeerMessagePropagation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The message is intended for the local peer node.</summary>
       </Docs>
@@ -36,6 +43,9 @@
       <MemberSignature Language="C#" Value="LocalAndRemote" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerMessagePropagation LocalAndRemote = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessagePropagation.LocalAndRemote" />
+      <MemberSignature Language="VB.NET" Value="LocalAndRemote" />
+      <MemberSignature Language="F#" Value="LocalAndRemote = 3" Usage="System.ServiceModel.PeerMessagePropagation.LocalAndRemote" />
+      <MemberSignature Language="C++ CLI" Value="LocalAndRemote" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.PeerMessagePropagation</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The message is intended for both the local peer node and a remote peer node in the peer mesh.</summary>
       </Docs>
@@ -53,6 +64,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerMessagePropagation None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessagePropagation.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ServiceModel.PeerMessagePropagation.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -62,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.PeerMessagePropagation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The recipient of the message is not known or available.</summary>
       </Docs>
@@ -70,6 +85,9 @@
       <MemberSignature Language="C#" Value="Remote" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.PeerMessagePropagation Remote = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.PeerMessagePropagation.Remote" />
+      <MemberSignature Language="VB.NET" Value="Remote" />
+      <MemberSignature Language="F#" Value="Remote = 2" Usage="System.ServiceModel.PeerMessagePropagation.Remote" />
+      <MemberSignature Language="C++ CLI" Value="Remote" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.PeerMessagePropagation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The message is intended for a remote peer node in the peer mesh.</summary>
       </Docs>

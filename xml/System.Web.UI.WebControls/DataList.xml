@@ -1,7 +1,10 @@
-<Type Name="DataList" FullName="System.Web.UI.WebControls.DataList">
+﻿<Type Name="DataList" FullName="System.Web.UI.WebControls.DataList">
   <TypeSignature Language="C#" Value="public class DataList : System.Web.UI.WebControls.BaseDataList, System.Web.UI.INamingContainer, System.Web.UI.WebControls.IRepeatInfoUser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataList extends System.Web.UI.WebControls.BaseDataList implements class System.Web.UI.INamingContainer, class System.Web.UI.WebControls.IRepeatInfoUser" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataList" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataList&#xA;Inherits BaseDataList&#xA;Implements INamingContainer, IRepeatInfoUser" />
+  <TypeSignature Language="F#" Value="type DataList = class&#xA;    inherit BaseDataList&#xA;    interface INamingContainer&#xA;    interface IRepeatInfoUser&#xA;    interface IWizardSideBarListControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataList : System::Web::UI::WebControls::BaseDataList, System::Web::UI::INamingContainer, System::Web::UI::WebControls::IRepeatInfoUser" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -224,6 +227,8 @@
       <MemberSignature Language="C#" Value="public DataList ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataList();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -254,6 +259,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableItemStyle AlternatingItemStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle AlternatingItemStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.AlternatingItemStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AlternatingItemStyle As TableItemStyle" />
+      <MemberSignature Language="F#" Value="member this.AlternatingItemStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataList.AlternatingItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ AlternatingItemStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -264,7 +272,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -318,6 +326,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate AlternatingItemTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate AlternatingItemTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.AlternatingItemTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property AlternatingItemTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.AlternatingItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.DataList.AlternatingItemTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ AlternatingItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -376,6 +387,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataListCommandEventHandler CancelCommand;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataListCommandEventHandler CancelCommand" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataList.CancelCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CancelCommand As DataListCommandEventHandler " />
+      <MemberSignature Language="F#" Value="member this.CancelCommand : System.Web.UI.WebControls.DataListCommandEventHandler " Usage="member this.CancelCommand : System.Web.UI.WebControls.DataListCommandEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataListCommandEventHandler ^ CancelCommand;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -429,6 +443,9 @@
       <MemberSignature Language="C#" Value="public const string CancelCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string CancelCommandName" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataList.CancelCommandName" />
+      <MemberSignature Language="VB.NET" Value="Public Const CancelCommandName As String " />
+      <MemberSignature Language="F#" Value="val mutable CancelCommandName : string" Usage="System.Web.UI.WebControls.DataList.CancelCommandName" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ CancelCommandName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -457,6 +474,9 @@
       <MemberSignature Language="C#" Value="protected override void CreateControlHierarchy (bool useDataSource);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CreateControlHierarchy(bool useDataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.CreateControlHierarchy(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateControlHierarchy (useDataSource As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.CreateControlHierarchy : bool -&gt; unit" Usage="dataList.CreateControlHierarchy useDataSource" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateControlHierarchy(bool useDataSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -490,6 +510,9 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.Style CreateControlStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.Style CreateControlStyle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.CreateControlStyle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlStyle () As Style" />
+      <MemberSignature Language="F#" Value="override this.CreateControlStyle : unit -&gt; System.Web.UI.WebControls.Style" Usage="dataList.CreateControlStyle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Style ^ CreateControlStyle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -526,6 +549,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.DataListItem CreateItem (int itemIndex, System.Web.UI.WebControls.ListItemType itemType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.DataListItem CreateItem(int32 itemIndex, valuetype System.Web.UI.WebControls.ListItemType itemType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.CreateItem(System.Int32,System.Web.UI.WebControls.ListItemType)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateItem (itemIndex As Integer, itemType As ListItemType) As DataListItem" />
+      <MemberSignature Language="F#" Value="abstract member CreateItem : int * System.Web.UI.WebControls.ListItemType -&gt; System.Web.UI.WebControls.DataListItem&#xA;override this.CreateItem : int * System.Web.UI.WebControls.ListItemType -&gt; System.Web.UI.WebControls.DataListItem" Usage="dataList.CreateItem (itemIndex, itemType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::DataListItem ^ CreateItem(int itemIndex, System::Web::UI::WebControls::ListItemType itemType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -564,6 +590,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataListCommandEventHandler DeleteCommand;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataListCommandEventHandler DeleteCommand" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataList.DeleteCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DeleteCommand As DataListCommandEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DeleteCommand : System.Web.UI.WebControls.DataListCommandEventHandler " Usage="member this.DeleteCommand : System.Web.UI.WebControls.DataListCommandEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataListCommandEventHandler ^ DeleteCommand;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -611,6 +640,9 @@
       <MemberSignature Language="C#" Value="public const string DeleteCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DeleteCommandName" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataList.DeleteCommandName" />
+      <MemberSignature Language="VB.NET" Value="Public Const DeleteCommandName As String " />
+      <MemberSignature Language="F#" Value="val mutable DeleteCommandName : string" Usage="System.Web.UI.WebControls.DataList.DeleteCommandName" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DeleteCommandName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -639,6 +671,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataListCommandEventHandler EditCommand;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataListCommandEventHandler EditCommand" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataList.EditCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event EditCommand As DataListCommandEventHandler " />
+      <MemberSignature Language="F#" Value="member this.EditCommand : System.Web.UI.WebControls.DataListCommandEventHandler " Usage="member this.EditCommand : System.Web.UI.WebControls.DataListCommandEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataListCommandEventHandler ^ EditCommand;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -692,6 +727,9 @@
       <MemberSignature Language="C#" Value="public const string EditCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string EditCommandName" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataList.EditCommandName" />
+      <MemberSignature Language="VB.NET" Value="Public Const EditCommandName As String " />
+      <MemberSignature Language="F#" Value="val mutable EditCommandName : string" Usage="System.Web.UI.WebControls.DataList.EditCommandName" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ EditCommandName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -720,6 +758,9 @@
       <MemberSignature Language="C#" Value="public virtual int EditItemIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EditItemIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.EditItemIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EditItemIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.EditItemIndex : int with get, set" Usage="System.Web.UI.WebControls.DataList.EditItemIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int EditItemIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -776,6 +817,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableItemStyle EditItemStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle EditItemStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.EditItemStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EditItemStyle As TableItemStyle" />
+      <MemberSignature Language="F#" Value="member this.EditItemStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataList.EditItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ EditItemStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -786,7 +830,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -844,6 +888,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate EditItemTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate EditItemTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.EditItemTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EditItemTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.EditItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.DataList.EditItemTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ EditItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -904,6 +951,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ExtractTemplateRows { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExtractTemplateRows" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.ExtractTemplateRows" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ExtractTemplateRows As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ExtractTemplateRows : bool with get, set" Usage="System.Web.UI.WebControls.DataList.ExtractTemplateRows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ExtractTemplateRows { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -966,6 +1016,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableItemStyle FooterStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle FooterStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.FooterStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FooterStyle As TableItemStyle" />
+      <MemberSignature Language="F#" Value="member this.FooterStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataList.FooterStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ FooterStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -976,7 +1029,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1027,6 +1080,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate FooterTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate FooterTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.FooterTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FooterTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.FooterTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.DataList.FooterTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ FooterTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1090,6 +1146,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.GridLines GridLines { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.GridLines GridLines" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.GridLines" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property GridLines As GridLines" />
+      <MemberSignature Language="F#" Value="member this.GridLines : System.Web.UI.WebControls.GridLines with get, set" Usage="System.Web.UI.WebControls.DataList.GridLines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::GridLines GridLines { System::Web::UI::WebControls::GridLines get(); void set(System::Web::UI::WebControls::GridLines value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1142,6 +1201,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableItemStyle HeaderStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle HeaderStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.HeaderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HeaderStyle As TableItemStyle" />
+      <MemberSignature Language="F#" Value="member this.HeaderStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataList.HeaderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ HeaderStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1152,7 +1214,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1201,6 +1263,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate HeaderTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate HeaderTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.HeaderTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HeaderTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.DataList.HeaderTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ HeaderTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1261,6 +1326,9 @@
       <MemberSignature Language="C#" Value="protected virtual void InitializeItem (System.Web.UI.WebControls.DataListItem item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitializeItem(class System.Web.UI.WebControls.DataListItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.InitializeItem(System.Web.UI.WebControls.DataListItem)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InitializeItem (item As DataListItem)" />
+      <MemberSignature Language="F#" Value="abstract member InitializeItem : System.Web.UI.WebControls.DataListItem -&gt; unit&#xA;override this.InitializeItem : System.Web.UI.WebControls.DataListItem -&gt; unit" Usage="dataList.InitializeItem item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitializeItem(System::Web::UI::WebControls::DataListItem ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1295,6 +1363,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataListCommandEventHandler ItemCommand;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataListCommandEventHandler ItemCommand" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataList.ItemCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ItemCommand As DataListCommandEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemCommand : System.Web.UI.WebControls.DataListCommandEventHandler " Usage="member this.ItemCommand : System.Web.UI.WebControls.DataListCommandEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataListCommandEventHandler ^ ItemCommand;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1337,6 +1408,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataListItemEventHandler ItemCreated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataListItemEventHandler ItemCreated" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataList.ItemCreated" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ItemCreated As DataListItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemCreated : System.Web.UI.WebControls.DataListItemEventHandler " Usage="member this.ItemCreated : System.Web.UI.WebControls.DataListItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataListItemEventHandler ^ ItemCreated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1381,6 +1455,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataListItemEventHandler ItemDataBound;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataListItemEventHandler ItemDataBound" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataList.ItemDataBound" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ItemDataBound As DataListItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemDataBound : System.Web.UI.WebControls.DataListItemEventHandler " Usage="member this.ItemDataBound : System.Web.UI.WebControls.DataListItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataListItemEventHandler ^ ItemDataBound;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1423,6 +1500,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.DataListItemCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataListItemCollection Items" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.Items" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Items As DataListItemCollection" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Web.UI.WebControls.DataListItemCollection" Usage="System.Web.UI.WebControls.DataList.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataListItemCollection ^ Items { System::Web::UI::WebControls::DataListItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1433,7 +1513,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1473,6 +1553,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableItemStyle ItemStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle ItemStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.ItemStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ItemStyle As TableItemStyle" />
+      <MemberSignature Language="F#" Value="member this.ItemStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataList.ItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ ItemStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1483,7 +1566,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1541,7 +1624,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate ItemTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate ItemTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.ItemTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ItemTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.ItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.DataList.ItemTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ ItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.WebControls.IWizardSideBarListControl.ItemTemplate</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1601,6 +1690,9 @@
       <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="dataList.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1633,6 +1725,9 @@
       <MemberSignature Language="C#" Value="protected override bool OnBubbleEvent (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnBubbleEvent(object source, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.OnBubbleEvent(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="dataList.OnBubbleEvent (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1659,6 +1754,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCancelCommand (System.Web.UI.WebControls.DataListCommandEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCancelCommand(class System.Web.UI.WebControls.DataListCommandEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.OnCancelCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCancelCommand (e As DataListCommandEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnCancelCommand : System.Web.UI.WebControls.DataListCommandEventArgs -&gt; unit&#xA;override this.OnCancelCommand : System.Web.UI.WebControls.DataListCommandEventArgs -&gt; unit" Usage="dataList.OnCancelCommand e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCancelCommand(System::Web::UI::WebControls::DataListCommandEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1720,6 +1818,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDeleteCommand (System.Web.UI.WebControls.DataListCommandEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDeleteCommand(class System.Web.UI.WebControls.DataListCommandEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.OnDeleteCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDeleteCommand (e As DataListCommandEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDeleteCommand : System.Web.UI.WebControls.DataListCommandEventArgs -&gt; unit&#xA;override this.OnDeleteCommand : System.Web.UI.WebControls.DataListCommandEventArgs -&gt; unit" Usage="dataList.OnDeleteCommand e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDeleteCommand(System::Web::UI::WebControls::DataListCommandEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1778,6 +1879,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnEditCommand (System.Web.UI.WebControls.DataListCommandEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEditCommand(class System.Web.UI.WebControls.DataListCommandEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.OnEditCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEditCommand (e As DataListCommandEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnEditCommand : System.Web.UI.WebControls.DataListCommandEventArgs -&gt; unit&#xA;override this.OnEditCommand : System.Web.UI.WebControls.DataListCommandEventArgs -&gt; unit" Usage="dataList.OnEditCommand e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEditCommand(System::Web::UI::WebControls::DataListCommandEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1836,9 +1940,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnInit">
-      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="dataList.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1868,6 +1975,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnItemCommand (System.Web.UI.WebControls.DataListCommandEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemCommand(class System.Web.UI.WebControls.DataListCommandEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.OnItemCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemCommand (e As DataListCommandEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnItemCommand : System.Web.UI.WebControls.DataListCommandEventArgs -&gt; unit&#xA;override this.OnItemCommand : System.Web.UI.WebControls.DataListCommandEventArgs -&gt; unit" Usage="dataList.OnItemCommand e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemCommand(System::Web::UI::WebControls::DataListCommandEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1921,6 +2031,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnItemCreated (System.Web.UI.WebControls.DataListItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemCreated(class System.Web.UI.WebControls.DataListItemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.OnItemCreated(System.Web.UI.WebControls.DataListItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemCreated (e As DataListItemEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnItemCreated : System.Web.UI.WebControls.DataListItemEventArgs -&gt; unit&#xA;override this.OnItemCreated : System.Web.UI.WebControls.DataListItemEventArgs -&gt; unit" Usage="dataList.OnItemCreated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemCreated(System::Web::UI::WebControls::DataListItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1976,6 +2089,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnItemDataBound (System.Web.UI.WebControls.DataListItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemDataBound(class System.Web.UI.WebControls.DataListItemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.OnItemDataBound(System.Web.UI.WebControls.DataListItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemDataBound (e As DataListItemEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnItemDataBound : System.Web.UI.WebControls.DataListItemEventArgs -&gt; unit&#xA;override this.OnItemDataBound : System.Web.UI.WebControls.DataListItemEventArgs -&gt; unit" Usage="dataList.OnItemDataBound e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemDataBound(System::Web::UI::WebControls::DataListItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2029,6 +2145,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnUpdateCommand (System.Web.UI.WebControls.DataListCommandEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnUpdateCommand(class System.Web.UI.WebControls.DataListCommandEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.OnUpdateCommand(System.Web.UI.WebControls.DataListCommandEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnUpdateCommand (e As DataListCommandEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnUpdateCommand : System.Web.UI.WebControls.DataListCommandEventArgs -&gt; unit&#xA;override this.OnUpdateCommand : System.Web.UI.WebControls.DataListCommandEventArgs -&gt; unit" Usage="dataList.OnUpdateCommand e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnUpdateCommand(System::Web::UI::WebControls::DataListCommandEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2087,9 +2206,12 @@
       </Docs>
     </Member>
     <Member MemberName="PrepareControlHierarchy">
-      <MemberSignature Language="C#" Value="protected override void PrepareControlHierarchy ();" />
+      <MemberSignature Language="C#" Value="protected internal override void PrepareControlHierarchy ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void PrepareControlHierarchy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.PrepareControlHierarchy" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub PrepareControlHierarchy ()" />
+      <MemberSignature Language="F#" Value="override this.PrepareControlHierarchy : unit -&gt; unit" Usage="dataList.PrepareControlHierarchy " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void PrepareControlHierarchy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2118,9 +2240,12 @@
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
-      <MemberSignature Language="C#" Value="protected override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderContents(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.RenderContents(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="dataList.RenderContents writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2161,6 +2286,9 @@
       <MemberSignature Language="C#" Value="public virtual int RepeatColumns { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RepeatColumns" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.RepeatColumns" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property RepeatColumns As Integer" />
+      <MemberSignature Language="F#" Value="member this.RepeatColumns : int with get, set" Usage="System.Web.UI.WebControls.DataList.RepeatColumns" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int RepeatColumns { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2208,6 +2336,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.RepeatDirection RepeatDirection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.RepeatDirection RepeatDirection" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.RepeatDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property RepeatDirection As RepeatDirection" />
+      <MemberSignature Language="F#" Value="member this.RepeatDirection : System.Web.UI.WebControls.RepeatDirection with get, set" Usage="System.Web.UI.WebControls.DataList.RepeatDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::RepeatDirection RepeatDirection { System::Web::UI::WebControls::RepeatDirection get(); void set(System::Web::UI::WebControls::RepeatDirection value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2272,6 +2403,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.RepeatLayout RepeatLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.RepeatLayout RepeatLayout" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.RepeatLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property RepeatLayout As RepeatLayout" />
+      <MemberSignature Language="F#" Value="member this.RepeatLayout : System.Web.UI.WebControls.RepeatLayout with get, set" Usage="System.Web.UI.WebControls.DataList.RepeatLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::RepeatLayout RepeatLayout { System::Web::UI::WebControls::RepeatLayout get(); void set(System::Web::UI::WebControls::RepeatLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2322,6 +2456,9 @@
       <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="dataList.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2354,6 +2491,9 @@
       <MemberSignature Language="C#" Value="public const string SelectCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string SelectCommandName" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataList.SelectCommandName" />
+      <MemberSignature Language="VB.NET" Value="Public Const SelectCommandName As String " />
+      <MemberSignature Language="F#" Value="val mutable SelectCommandName : string" Usage="System.Web.UI.WebControls.DataList.SelectCommandName" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ SelectCommandName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2382,7 +2522,13 @@
       <MemberSignature Language="C#" Value="public virtual int SelectedIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.SelectedIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectedIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.SelectedIndex : int with get, set" Usage="System.Web.UI.WebControls.DataList.SelectedIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int SelectedIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.WebControls.IWizardSideBarListControl.SelectedIndex</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2437,6 +2583,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.DataListItem SelectedItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataListItem SelectedItem" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.SelectedItem" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SelectedItem As DataListItem" />
+      <MemberSignature Language="F#" Value="member this.SelectedItem : System.Web.UI.WebControls.DataListItem" Usage="System.Web.UI.WebControls.DataList.SelectedItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::DataListItem ^ SelectedItem { System::Web::UI::WebControls::DataListItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2447,7 +2596,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2485,6 +2634,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableItemStyle SelectedItemStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle SelectedItemStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.SelectedItemStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SelectedItemStyle As TableItemStyle" />
+      <MemberSignature Language="F#" Value="member this.SelectedItemStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataList.SelectedItemStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ SelectedItemStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2495,7 +2647,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -2552,6 +2704,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate SelectedItemTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate SelectedItemTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.SelectedItemTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectedItemTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.SelectedItemTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.DataList.SelectedItemTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ SelectedItemTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2611,6 +2766,9 @@
       <MemberSignature Language="C#" Value="public object SelectedValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SelectedValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.SelectedValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedValue As Object" />
+      <MemberSignature Language="F#" Value="member this.SelectedValue : obj" Usage="System.Web.UI.WebControls.DataList.SelectedValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SelectedValue { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2638,6 +2796,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.TableItemStyle SeparatorStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle SeparatorStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.SeparatorStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SeparatorStyle As TableItemStyle" />
+      <MemberSignature Language="F#" Value="member this.SeparatorStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.DataList.SeparatorStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::TableItemStyle ^ SeparatorStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2648,7 +2809,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -2693,6 +2854,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate SeparatorTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate SeparatorTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.SeparatorTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SeparatorTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.SeparatorTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.DataList.SeparatorTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ SeparatorTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2750,6 +2914,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ShowFooter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowFooter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.ShowFooter" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowFooter As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowFooter : bool with get, set" Usage="System.Web.UI.WebControls.DataList.ShowFooter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowFooter { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2796,6 +2963,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ShowHeader { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowHeader" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.ShowHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowHeader As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowHeader : bool with get, set" Usage="System.Web.UI.WebControls.DataList.ShowHeader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowHeader { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2842,7 +3012,12 @@
       <MemberSignature Language="C#" Value="System.Web.UI.WebControls.Style IRepeatInfoUser.GetItemStyle (System.Web.UI.WebControls.ListItemType itemType, int repeatIndex);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Web.UI.WebControls.Style System.Web.UI.WebControls.IRepeatInfoUser.GetItemStyle(valuetype System.Web.UI.WebControls.ListItemType itemType, int32 repeatIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.System#Web#UI#WebControls#IRepeatInfoUser#GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Function GetItemStyle (itemType As ListItemType, repeatIndex As Integer) As Style Implements IRepeatInfoUser.GetItemStyle" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Web::UI::WebControls::Style ^ System.Web.UI.WebControls.IRepeatInfoUser.GetItemStyle(System::Web::UI::WebControls::ListItemType itemType, int repeatIndex) = System::Web::UI::WebControls::IRepeatInfoUser::GetItemStyle;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.WebControls.IRepeatInfoUser.GetItemStyle(System.Web.UI.WebControls.ListItemType,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2873,7 +3048,13 @@
       <MemberSignature Language="C#" Value="bool System.Web.UI.WebControls.IRepeatInfoUser.HasFooter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.WebControls.IRepeatInfoUser.HasFooter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.System#Web#UI#WebControls#IRepeatInfoUser#HasFooter" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property HasFooter As Boolean Implements IRepeatInfoUser.HasFooter" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.DataList.System.Web.UI.WebControls.IRepeatInfoUser.HasFooter" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.WebControls.IRepeatInfoUser.HasFooter { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.WebControls.IRepeatInfoUser.HasFooter</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2898,7 +3079,13 @@
       <MemberSignature Language="C#" Value="bool System.Web.UI.WebControls.IRepeatInfoUser.HasHeader { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.WebControls.IRepeatInfoUser.HasHeader" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.System#Web#UI#WebControls#IRepeatInfoUser#HasHeader" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property HasHeader As Boolean Implements IRepeatInfoUser.HasHeader" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.DataList.System.Web.UI.WebControls.IRepeatInfoUser.HasHeader" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.WebControls.IRepeatInfoUser.HasHeader { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.WebControls.IRepeatInfoUser.HasHeader</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2923,7 +3110,13 @@
       <MemberSignature Language="C#" Value="bool System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.System#Web#UI#WebControls#IRepeatInfoUser#HasSeparators" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property HasSeparators As Boolean Implements IRepeatInfoUser.HasSeparators" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.DataList.System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.WebControls.IRepeatInfoUser.HasSeparators</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2948,7 +3141,11 @@
       <MemberSignature Language="C#" Value="void IRepeatInfoUser.RenderItem (System.Web.UI.WebControls.ListItemType itemType, int repeatIndex, System.Web.UI.WebControls.RepeatInfo repeatInfo, System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.IRepeatInfoUser.RenderItem(valuetype System.Web.UI.WebControls.ListItemType itemType, int32 repeatIndex, class System.Web.UI.WebControls.RepeatInfo repeatInfo, class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.System#Web#UI#WebControls#IRepeatInfoUser#RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.WebControls.IRepeatInfoUser.RenderItem(System::Web::UI::WebControls::ListItemType itemType, int repeatIndex, System::Web::UI::WebControls::RepeatInfo ^ repeatInfo, System::Web::UI::HtmlTextWriter ^ writer) = System::Web::UI::WebControls::IRepeatInfoUser::RenderItem;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.WebControls.IRepeatInfoUser.RenderItem(System.Web.UI.WebControls.ListItemType,System.Int32,System.Web.UI.WebControls.RepeatInfo,System.Web.UI.HtmlTextWriter)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2982,7 +3179,13 @@
       <MemberSignature Language="C#" Value="int System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.System#Web#UI#WebControls#IRepeatInfoUser#RepeatedItemCount" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property RepeatedItemCount As Integer Implements IRepeatInfoUser.RepeatedItemCount" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.DataList.System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.WebControls.IRepeatInfoUser.RepeatedItemCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -3007,6 +3210,9 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.HtmlTextWriterTag TagKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.HtmlTextWriterTag TagKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataList.TagKey" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TagKey As HtmlTextWriterTag" />
+      <MemberSignature Language="F#" Value="member this.TagKey : System.Web.UI.HtmlTextWriterTag" Usage="System.Web.UI.WebControls.DataList.TagKey" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3032,6 +3238,9 @@
       <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataList.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="dataList.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3057,6 +3266,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.DataListCommandEventHandler UpdateCommand;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.DataListCommandEventHandler UpdateCommand" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataList.UpdateCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event UpdateCommand As DataListCommandEventHandler " />
+      <MemberSignature Language="F#" Value="member this.UpdateCommand : System.Web.UI.WebControls.DataListCommandEventHandler " Usage="member this.UpdateCommand : System.Web.UI.WebControls.DataListCommandEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::DataListCommandEventHandler ^ UpdateCommand;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3107,6 +3319,9 @@
       <MemberSignature Language="C#" Value="public const string UpdateCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string UpdateCommandName" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataList.UpdateCommandName" />
+      <MemberSignature Language="VB.NET" Value="Public Const UpdateCommandName As String " />
+      <MemberSignature Language="F#" Value="val mutable UpdateCommandName : string" Usage="System.Web.UI.WebControls.DataList.UpdateCommandName" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ UpdateCommandName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

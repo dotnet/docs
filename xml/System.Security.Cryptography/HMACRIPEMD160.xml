@@ -1,7 +1,10 @@
-<Type Name="HMACRIPEMD160" FullName="System.Security.Cryptography.HMACRIPEMD160">
+﻿<Type Name="HMACRIPEMD160" FullName="System.Security.Cryptography.HMACRIPEMD160">
   <TypeSignature Language="C#" Value="public class HMACRIPEMD160 : System.Security.Cryptography.HMAC" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HMACRIPEMD160 extends System.Security.Cryptography.HMAC" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.HMACRIPEMD160" />
+  <TypeSignature Language="VB.NET" Value="Public Class HMACRIPEMD160&#xA;Inherits HMAC" />
+  <TypeSignature Language="F#" Value="type HMACRIPEMD160 = class&#xA;    inherit HMAC" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HMACRIPEMD160 : System::Security::Cryptography::HMAC" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -45,10 +48,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.HMACRIPEMD160" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HMACRIPEMD160 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACRIPEMD160.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HMACRIPEMD160();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +89,9 @@
       <MemberSignature Language="C#" Value="public HMACRIPEMD160 (byte[] key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMACRIPEMD160.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (key As Byte())" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.HMACRIPEMD160 : byte[] -&gt; System.Security.Cryptography.HMACRIPEMD160" Usage="new System.Security.Cryptography.HMACRIPEMD160 key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HMACRIPEMD160(cli::array &lt;System::Byte&gt; ^ key);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,15 +120,5 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="key" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.HMACRIPEMD160" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

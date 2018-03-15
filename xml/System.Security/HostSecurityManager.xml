@@ -1,7 +1,10 @@
-<Type Name="HostSecurityManager" FullName="System.Security.HostSecurityManager">
+﻿<Type Name="HostSecurityManager" FullName="System.Security.HostSecurityManager">
   <TypeSignature Language="C#" Value="public class HostSecurityManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit HostSecurityManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.HostSecurityManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class HostSecurityManager" />
+  <TypeSignature Language="F#" Value="type HostSecurityManager = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HostSecurityManager" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,6 +52,8 @@
       <MemberSignature Language="C#" Value="public HostSecurityManager ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HostSecurityManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +79,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.Policy.ApplicationTrust DetermineApplicationTrust (System.Security.Policy.Evidence applicationEvidence, System.Security.Policy.Evidence activatorEvidence, System.Security.Policy.TrustManagerContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.ApplicationTrust DetermineApplicationTrust(class System.Security.Policy.Evidence applicationEvidence, class System.Security.Policy.Evidence activatorEvidence, class System.Security.Policy.TrustManagerContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.DetermineApplicationTrust(System.Security.Policy.Evidence,System.Security.Policy.Evidence,System.Security.Policy.TrustManagerContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DetermineApplicationTrust (applicationEvidence As Evidence, activatorEvidence As Evidence, context As TrustManagerContext) As ApplicationTrust" />
+      <MemberSignature Language="F#" Value="abstract member DetermineApplicationTrust : System.Security.Policy.Evidence * System.Security.Policy.Evidence * System.Security.Policy.TrustManagerContext -&gt; System.Security.Policy.ApplicationTrust&#xA;override this.DetermineApplicationTrust : System.Security.Policy.Evidence * System.Security.Policy.Evidence * System.Security.Policy.TrustManagerContext -&gt; System.Security.Policy.ApplicationTrust" Usage="hostSecurityManager.DetermineApplicationTrust (applicationEvidence, activatorEvidence, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::ApplicationTrust ^ DetermineApplicationTrust(System::Security::Policy::Evidence ^ applicationEvidence, System::Security::Policy::Evidence ^ activatorEvidence, System::Security::Policy::TrustManagerContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -130,6 +138,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.Policy.PolicyLevel DomainPolicy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Policy.PolicyLevel DomainPolicy" />
       <MemberSignature Language="DocId" Value="P:System.Security.HostSecurityManager.DomainPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DomainPolicy As PolicyLevel" />
+      <MemberSignature Language="F#" Value="member this.DomainPolicy : System.Security.Policy.PolicyLevel" Usage="System.Security.HostSecurityManager.DomainPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Policy::PolicyLevel ^ DomainPolicy { System::Security::Policy::PolicyLevel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -172,6 +183,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.HostSecurityManagerOptions Flags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.HostSecurityManagerOptions Flags" />
       <MemberSignature Language="DocId" Value="P:System.Security.HostSecurityManager.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Flags As HostSecurityManagerOptions" />
+      <MemberSignature Language="F#" Value="member this.Flags : System.Security.HostSecurityManagerOptions" Usage="System.Security.HostSecurityManager.Flags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::HostSecurityManagerOptions Flags { System::Security::HostSecurityManagerOptions get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -212,6 +226,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.Policy.EvidenceBase GenerateAppDomainEvidence (Type evidenceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.EvidenceBase GenerateAppDomainEvidence(class System.Type evidenceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.GenerateAppDomainEvidence(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GenerateAppDomainEvidence (evidenceType As Type) As EvidenceBase" />
+      <MemberSignature Language="F#" Value="abstract member GenerateAppDomainEvidence : Type -&gt; System.Security.Policy.EvidenceBase&#xA;override this.GenerateAppDomainEvidence : Type -&gt; System.Security.Policy.EvidenceBase" Usage="hostSecurityManager.GenerateAppDomainEvidence evidenceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::EvidenceBase ^ GenerateAppDomainEvidence(Type ^ evidenceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -263,6 +280,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.Policy.EvidenceBase GenerateAssemblyEvidence (Type evidenceType, System.Reflection.Assembly assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.EvidenceBase GenerateAssemblyEvidence(class System.Type evidenceType, class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.GenerateAssemblyEvidence(System.Type,System.Reflection.Assembly)" />
+      <MemberSignature Language="F#" Value="abstract member GenerateAssemblyEvidence : Type * System.Reflection.Assembly -&gt; System.Security.Policy.EvidenceBase&#xA;override this.GenerateAssemblyEvidence : Type * System.Reflection.Assembly -&gt; System.Security.Policy.EvidenceBase" Usage="hostSecurityManager.GenerateAssemblyEvidence (evidenceType, assembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::EvidenceBase ^ GenerateAssemblyEvidence(Type ^ evidenceType, System::Reflection::Assembly ^ assembly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -308,6 +327,9 @@
       <MemberSignature Language="C#" Value="public virtual Type[] GetHostSuppliedAppDomainEvidenceTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetHostSuppliedAppDomainEvidenceTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.GetHostSuppliedAppDomainEvidenceTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHostSuppliedAppDomainEvidenceTypes () As Type()" />
+      <MemberSignature Language="F#" Value="abstract member GetHostSuppliedAppDomainEvidenceTypes : unit -&gt; Type[]&#xA;override this.GetHostSuppliedAppDomainEvidenceTypes : unit -&gt; Type[]" Usage="hostSecurityManager.GetHostSuppliedAppDomainEvidenceTypes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetHostSuppliedAppDomainEvidenceTypes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -340,6 +362,8 @@
       <MemberSignature Language="C#" Value="public virtual Type[] GetHostSuppliedAssemblyEvidenceTypes (System.Reflection.Assembly assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetHostSuppliedAssemblyEvidenceTypes(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.GetHostSuppliedAssemblyEvidenceTypes(System.Reflection.Assembly)" />
+      <MemberSignature Language="F#" Value="abstract member GetHostSuppliedAssemblyEvidenceTypes : System.Reflection.Assembly -&gt; Type[]&#xA;override this.GetHostSuppliedAssemblyEvidenceTypes : System.Reflection.Assembly -&gt; Type[]" Usage="hostSecurityManager.GetHostSuppliedAssemblyEvidenceTypes assembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Type ^&gt; ^ GetHostSuppliedAssemblyEvidenceTypes(System::Reflection::Assembly ^ assembly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -375,6 +399,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.Policy.Evidence ProvideAppDomainEvidence (System.Security.Policy.Evidence inputEvidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.Evidence ProvideAppDomainEvidence(class System.Security.Policy.Evidence inputEvidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.ProvideAppDomainEvidence(System.Security.Policy.Evidence)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ProvideAppDomainEvidence (inputEvidence As Evidence) As Evidence" />
+      <MemberSignature Language="F#" Value="abstract member ProvideAppDomainEvidence : System.Security.Policy.Evidence -&gt; System.Security.Policy.Evidence&#xA;override this.ProvideAppDomainEvidence : System.Security.Policy.Evidence -&gt; System.Security.Policy.Evidence" Usage="hostSecurityManager.ProvideAppDomainEvidence inputEvidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::Evidence ^ ProvideAppDomainEvidence(System::Security::Policy::Evidence ^ inputEvidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -414,6 +441,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.Policy.Evidence ProvideAssemblyEvidence (System.Reflection.Assembly loadedAssembly, System.Security.Policy.Evidence inputEvidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.Evidence ProvideAssemblyEvidence(class System.Reflection.Assembly loadedAssembly, class System.Security.Policy.Evidence inputEvidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.ProvideAssemblyEvidence(System.Reflection.Assembly,System.Security.Policy.Evidence)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ProvideAssemblyEvidence (loadedAssembly As Assembly, inputEvidence As Evidence) As Evidence" />
+      <MemberSignature Language="F#" Value="abstract member ProvideAssemblyEvidence : System.Reflection.Assembly * System.Security.Policy.Evidence -&gt; System.Security.Policy.Evidence&#xA;override this.ProvideAssemblyEvidence : System.Reflection.Assembly * System.Security.Policy.Evidence -&gt; System.Security.Policy.Evidence" Usage="hostSecurityManager.ProvideAssemblyEvidence (loadedAssembly, inputEvidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Policy::Evidence ^ ProvideAssemblyEvidence(System::Reflection::Assembly ^ loadedAssembly, System::Security::Policy::Evidence ^ inputEvidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -463,6 +493,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.PermissionSet ResolvePolicy (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.PermissionSet ResolvePolicy(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.HostSecurityManager.ResolvePolicy(System.Security.Policy.Evidence)" />
+      <MemberSignature Language="F#" Value="abstract member ResolvePolicy : System.Security.Policy.Evidence -&gt; System.Security.PermissionSet&#xA;override this.ResolvePolicy : System.Security.Policy.Evidence -&gt; System.Security.PermissionSet" Usage="hostSecurityManager.ResolvePolicy evidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::PermissionSet ^ ResolvePolicy(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

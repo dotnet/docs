@@ -1,7 +1,10 @@
-<Type Name="ToolBar+ToolBarButtonCollection" FullName="System.Windows.Forms.ToolBar+ToolBarButtonCollection">
+﻿<Type Name="ToolBar+ToolBarButtonCollection" FullName="System.Windows.Forms.ToolBar+ToolBarButtonCollection">
   <TypeSignature Language="C#" Value="public class ToolBar.ToolBarButtonCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ToolBar/ToolBarButtonCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBar.ToolBarButtonCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolBar.ToolBarButtonCollection&#xA;Implements IList" />
+  <TypeSignature Language="F#" Value="type ToolBar.ToolBarButtonCollection = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class ToolBar::ToolBarButtonCollection : System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public ToolBarButtonCollection (System.Windows.Forms.ToolBar owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ToolBar owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.#ctor(System.Windows.Forms.ToolBar)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ToolBar)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolBar.ToolBarButtonCollection : System.Windows.Forms.ToolBar -&gt; System.Windows.Forms.ToolBar.ToolBarButtonCollection" Usage="new System.Windows.Forms.ToolBar.ToolBarButtonCollection owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolBarButtonCollection(System::Windows::Forms::ToolBar ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,10 +69,22 @@
         <altmember cref="T:System.Windows.Forms.ToolBarButton" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new toolbar button to the end of the toolbar button collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public int Add (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (text As String) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Add : string -&gt; int" Usage="toolBarButtonCollection.Add text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +127,9 @@
       <MemberSignature Language="C#" Value="public int Add (System.Windows.Forms.ToolBarButton button);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Windows.Forms.ToolBarButton button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Add(System.Windows.Forms.ToolBarButton)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (button As ToolBarButton) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Forms.ToolBarButton -&gt; int" Usage="toolBarButtonCollection.Add button" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Windows::Forms::ToolBarButton ^ button);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -151,6 +172,9 @@
       <MemberSignature Language="C#" Value="public void AddRange (System.Windows.Forms.ToolBarButton[] buttons);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Windows.Forms.ToolBarButton[] buttons) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.AddRange(System.Windows.Forms.ToolBarButton[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (buttons As ToolBarButton())" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Windows.Forms.ToolBarButton[] -&gt; unit" Usage="toolBarButtonCollection.AddRange buttons" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Windows::Forms::ToolBarButton ^&gt; ^ buttons);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -194,7 +218,13 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="toolBarButtonCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -236,6 +266,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Windows.Forms.ToolBarButton button);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Windows.Forms.ToolBarButton button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Contains(System.Windows.Forms.ToolBarButton)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (button As ToolBarButton) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Forms.ToolBarButton -&gt; bool" Usage="toolBarButtonCollection.Contains button" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Forms::ToolBarButton ^ button);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -275,6 +308,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ContainsKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.ContainsKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsKey (key As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool&#xA;override this.ContainsKey : string -&gt; bool" Usage="toolBarButtonCollection.ContainsKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -307,7 +343,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.ToolBar.ToolBarButtonCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -347,7 +389,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="toolBarButtonCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -378,6 +426,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Windows.Forms.ToolBarButton button);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Windows.Forms.ToolBarButton button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.IndexOf(System.Windows.Forms.ToolBarButton)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (button As ToolBarButton) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Forms.ToolBarButton -&gt; int" Usage="toolBarButtonCollection.IndexOf button" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Forms::ToolBarButton ^ button);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -417,6 +468,9 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOfKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOfKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.IndexOfKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOfKey (key As String) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member IndexOfKey : string -&gt; int&#xA;override this.IndexOfKey : string -&gt; int" Usage="toolBarButtonCollection.IndexOfKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOfKey(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -450,6 +504,9 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Windows.Forms.ToolBarButton button);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Windows.Forms.ToolBarButton button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Insert(System.Int32,System.Windows.Forms.ToolBarButton)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, button As ToolBarButton)" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Windows.Forms.ToolBarButton -&gt; unit" Usage="toolBarButtonCollection.Insert (index, button)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Windows::Forms::ToolBarButton ^ button);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -493,7 +550,13 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolBar.ToolBarButtonCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Forms.ToolBar.ToolBarButtonCollection.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -519,10 +582,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets a <see cref="T:System.Windows.Forms.ToolBarButton" /> within the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ToolBarButton this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolBarButton Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(index As Integer) As ToolBarButton" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.ToolBarButton with get, set" Usage="System.Windows.Forms.ToolBar.ToolBarButtonCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ToolBarButton ^ default[int] { System::Windows::Forms::ToolBarButton ^ get(int index); void set(int index, System::Windows::Forms::ToolBarButton ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -569,6 +644,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ToolBarButton this[string key] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolBarButton Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(key As String) As ToolBarButton" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.ToolBarButton" Usage="System.Windows.Forms.ToolBar.ToolBarButtonCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ToolBarButton ^ default[System::String ^] { System::Windows::Forms::ToolBarButton ^ get(System::String ^ key); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -600,6 +678,9 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Windows.Forms.ToolBarButton button);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Windows.Forms.ToolBarButton button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.Remove(System.Windows.Forms.ToolBarButton)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (button As ToolBarButton)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Windows.Forms.ToolBarButton -&gt; unit" Usage="toolBarButtonCollection.Remove button" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Forms::ToolBarButton ^ button);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -642,7 +723,13 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="toolBarButtonCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -683,6 +770,9 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveByKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveByKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.RemoveByKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveByKey (key As String)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveByKey : string -&gt; unit&#xA;override this.RemoveByKey : string -&gt; unit" Usage="toolBarButtonCollection.RemoveByKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveByKey(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -711,7 +801,12 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array dest, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array dest, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub CopyTo (dest As Array, index As Integer) Implements ICollection.CopyTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ dest, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -741,7 +836,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolBar.ToolBarButtonCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ToolBar.ToolBarButtonCollection.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -767,7 +868,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolBar.ToolBarButtonCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ToolBar.ToolBarButtonCollection.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -792,7 +899,12 @@
       <MemberSignature Language="C#" Value="int IList.Add (object button);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Add (button As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ button) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -823,7 +935,12 @@
       <MemberSignature Language="C#" Value="bool IList.Contains (object button);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.System#Collections#IList#Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (button As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ button) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -853,7 +970,12 @@
       <MemberSignature Language="C#" Value="int IList.IndexOf (object button);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function IndexOf (button As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ button) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -882,7 +1004,12 @@
       <MemberSignature Language="C#" Value="void IList.Insert (int index, object button);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, button As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ button) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -914,7 +1041,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolBar.ToolBarButtonCollection.System#Collections#IList#IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ToolBar.ToolBarButtonCollection.System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -940,7 +1073,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolBar.ToolBarButtonCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ToolBar.ToolBarButtonCollection.System.Collections.IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -969,7 +1108,12 @@
       <MemberSignature Language="C#" Value="void IList.Remove (object button);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolBar.ToolBarButtonCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Remove (button As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ button) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -993,23 +1137,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets a <see cref="T:System.Windows.Forms.ToolBarButton" /> within the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a new toolbar button to the end of the toolbar button collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

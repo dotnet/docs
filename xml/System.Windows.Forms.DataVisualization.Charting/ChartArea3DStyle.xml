@@ -1,7 +1,10 @@
-<Type Name="ChartArea3DStyle" FullName="System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle">
+﻿<Type Name="ChartArea3DStyle" FullName="System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle">
   <TypeSignature Language="C#" Value="public class ChartArea3DStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChartArea3DStyle extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChartArea3DStyle" />
+  <TypeSignature Language="F#" Value="type ChartArea3DStyle = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChartArea3DStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,10 +55,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ChartArea3DStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChartArea3DStyle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -71,6 +85,8 @@
       <MemberSignature Language="C#" Value="public ChartArea3DStyle (System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.#ctor(System.Windows.Forms.DataVisualization.Charting.ChartArea)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle : System.Windows.Forms.DataVisualization.Charting.ChartArea -&gt; System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle" Usage="new System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle chartArea" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChartArea3DStyle(System::Windows::Forms::DataVisualization::Charting::ChartArea ^ chartArea);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -89,6 +105,9 @@
       <MemberSignature Language="C#" Value="public bool Enable3D { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enable3D" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.Enable3D" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enable3D As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Enable3D : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.Enable3D" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enable3D { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -126,6 +145,9 @@
       <MemberSignature Language="C#" Value="public int Inclination { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Inclination" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.Inclination" />
+      <MemberSignature Language="VB.NET" Value="Public Property Inclination As Integer" />
+      <MemberSignature Language="F#" Value="member this.Inclination : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.Inclination" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Inclination { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -139,7 +161,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(30)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -155,6 +177,9 @@
       <MemberSignature Language="C#" Value="public bool IsClustered { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsClustered" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.IsClustered" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsClustered As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsClustered : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.IsClustered" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsClustered { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -182,6 +207,9 @@
       <MemberSignature Language="C#" Value="public bool IsRightAngleAxes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRightAngleAxes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.IsRightAngleAxes" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsRightAngleAxes As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRightAngleAxes : bool with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.IsRightAngleAxes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRightAngleAxes { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -195,7 +223,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -229,6 +257,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.LightStyle LightStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.LightStyle LightStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.LightStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property LightStyle As LightStyle" />
+      <MemberSignature Language="F#" Value="member this.LightStyle : System.Windows.Forms.DataVisualization.Charting.LightStyle with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.LightStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::LightStyle LightStyle { System::Windows::Forms::DataVisualization::Charting::LightStyle get(); void set(System::Windows::Forms::DataVisualization::Charting::LightStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -255,6 +286,9 @@
       <MemberSignature Language="C#" Value="public int Perspective { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Perspective" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.Perspective" />
+      <MemberSignature Language="VB.NET" Value="Public Property Perspective As Integer" />
+      <MemberSignature Language="F#" Value="member this.Perspective : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.Perspective" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Perspective { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -268,7 +302,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -293,6 +327,9 @@
       <MemberSignature Language="C#" Value="public int PointDepth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PointDepth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.PointDepth" />
+      <MemberSignature Language="VB.NET" Value="Public Property PointDepth As Integer" />
+      <MemberSignature Language="F#" Value="member this.PointDepth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.PointDepth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PointDepth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -306,7 +343,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(100)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -335,6 +372,9 @@
       <MemberSignature Language="C#" Value="public int PointGapDepth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PointGapDepth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.PointGapDepth" />
+      <MemberSignature Language="VB.NET" Value="Public Property PointGapDepth As Integer" />
+      <MemberSignature Language="F#" Value="member this.PointGapDepth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.PointGapDepth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PointGapDepth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -348,7 +388,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(100)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -377,6 +417,9 @@
       <MemberSignature Language="C#" Value="public int Rotation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Rotation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.Rotation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Rotation As Integer" />
+      <MemberSignature Language="F#" Value="member this.Rotation : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.Rotation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Rotation { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -390,7 +433,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(30)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -406,6 +449,9 @@
       <MemberSignature Language="C#" Value="public int WallWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 WallWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.WallWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property WallWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.WallWidth : int with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.WallWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WallWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -419,7 +465,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(7)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -438,14 +484,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

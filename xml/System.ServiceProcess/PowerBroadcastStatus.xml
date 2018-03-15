@@ -1,7 +1,10 @@
-<Type Name="PowerBroadcastStatus" FullName="System.ServiceProcess.PowerBroadcastStatus">
+﻿<Type Name="PowerBroadcastStatus" FullName="System.ServiceProcess.PowerBroadcastStatus">
   <TypeSignature Language="C#" Value="public enum PowerBroadcastStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PowerBroadcastStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.PowerBroadcastStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PowerBroadcastStatus" />
+  <TypeSignature Language="F#" Value="type PowerBroadcastStatus = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PowerBroadcastStatus" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="BatteryLow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus BatteryLow = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.BatteryLow" />
+      <MemberSignature Language="VB.NET" Value="BatteryLow" />
+      <MemberSignature Language="F#" Value="BatteryLow = 9" Usage="System.ServiceProcess.PowerBroadcastStatus.BatteryLow" />
+      <MemberSignature Language="C++ CLI" Value="BatteryLow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Battery power is low.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="OemEvent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus OemEvent = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.OemEvent" />
+      <MemberSignature Language="VB.NET" Value="OemEvent" />
+      <MemberSignature Language="F#" Value="OemEvent = 11" Usage="System.ServiceProcess.PowerBroadcastStatus.OemEvent" />
+      <MemberSignature Language="C++ CLI" Value="OemEvent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -51,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>An Advanced Power Management (APM) BIOS signaled an APM OEM event.</summary>
       </Docs>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="PowerStatusChange" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus PowerStatusChange = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.PowerStatusChange" />
+      <MemberSignature Language="VB.NET" Value="PowerStatusChange" />
+      <MemberSignature Language="F#" Value="PowerStatusChange = 10" Usage="System.ServiceProcess.PowerBroadcastStatus.PowerStatusChange" />
+      <MemberSignature Language="C++ CLI" Value="PowerStatusChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>A change in the power status of the computer is detected, such as a switch from battery power to A/C. The system also broadcasts this event when remaining battery power slips below the threshold specified by the user or if the battery power changes by a specified percentage.</summary>
       </Docs>
@@ -75,6 +90,9 @@
       <MemberSignature Language="C#" Value="QuerySuspend" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus QuerySuspend = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.QuerySuspend" />
+      <MemberSignature Language="VB.NET" Value="QuerySuspend" />
+      <MemberSignature Language="F#" Value="QuerySuspend = 0" Usage="System.ServiceProcess.PowerBroadcastStatus.QuerySuspend" />
+      <MemberSignature Language="C++ CLI" Value="QuerySuspend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -83,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The system has requested permission to suspend the computer. An application that grants permission should carry out preparations for the suspension before returning.</summary>
       </Docs>
@@ -91,6 +110,9 @@
       <MemberSignature Language="C#" Value="QuerySuspendFailed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus QuerySuspendFailed = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.QuerySuspendFailed" />
+      <MemberSignature Language="VB.NET" Value="QuerySuspendFailed" />
+      <MemberSignature Language="F#" Value="QuerySuspendFailed = 2" Usage="System.ServiceProcess.PowerBroadcastStatus.QuerySuspendFailed" />
+      <MemberSignature Language="C++ CLI" Value="QuerySuspendFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -99,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The system was denied permission to suspend the computer. This status is broadcast if any application or driver denied a previous <see langword="QuerySuspend" /> status.</summary>
       </Docs>
@@ -107,6 +130,9 @@
       <MemberSignature Language="C#" Value="ResumeAutomatic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus ResumeAutomatic = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.ResumeAutomatic" />
+      <MemberSignature Language="VB.NET" Value="ResumeAutomatic" />
+      <MemberSignature Language="F#" Value="ResumeAutomatic = 18" Usage="System.ServiceProcess.PowerBroadcastStatus.ResumeAutomatic" />
+      <MemberSignature Language="C++ CLI" Value="ResumeAutomatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -115,6 +141,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>The computer has woken up automatically to handle an event.</summary>
         <remarks>
@@ -133,6 +160,9 @@
       <MemberSignature Language="C#" Value="ResumeCritical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus ResumeCritical = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.ResumeCritical" />
+      <MemberSignature Language="VB.NET" Value="ResumeCritical" />
+      <MemberSignature Language="F#" Value="ResumeCritical = 6" Usage="System.ServiceProcess.PowerBroadcastStatus.ResumeCritical" />
+      <MemberSignature Language="C++ CLI" Value="ResumeCritical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -141,6 +171,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The system has resumed operation after a critical suspension caused by a failing battery.</summary>
         <remarks>
@@ -159,6 +190,9 @@
       <MemberSignature Language="C#" Value="ResumeSuspend" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus ResumeSuspend = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.ResumeSuspend" />
+      <MemberSignature Language="VB.NET" Value="ResumeSuspend" />
+      <MemberSignature Language="F#" Value="ResumeSuspend = 7" Usage="System.ServiceProcess.PowerBroadcastStatus.ResumeSuspend" />
+      <MemberSignature Language="C++ CLI" Value="ResumeSuspend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -167,6 +201,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The system has resumed operation after being suspended.</summary>
       </Docs>
@@ -175,6 +210,9 @@
       <MemberSignature Language="C#" Value="Suspend" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceProcess.PowerBroadcastStatus Suspend = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceProcess.PowerBroadcastStatus.Suspend" />
+      <MemberSignature Language="VB.NET" Value="Suspend" />
+      <MemberSignature Language="F#" Value="Suspend = 4" Usage="System.ServiceProcess.PowerBroadcastStatus.Suspend" />
+      <MemberSignature Language="C++ CLI" Value="Suspend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -183,6 +221,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceProcess.PowerBroadcastStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The computer is about to enter a suspended state. This event is typically broadcast when all applications and installable drivers have returned <see langword="true" /> to a previous <see langword="QuerySuspend" /> state.</summary>
       </Docs>

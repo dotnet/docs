@@ -1,7 +1,10 @@
-<Type Name="CompensationToken" FullName="System.Activities.Statements.CompensationToken">
+﻿<Type Name="CompensationToken" FullName="System.Activities.Statements.CompensationToken">
   <TypeSignature Language="C#" Value="public sealed class CompensationToken" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CompensationToken extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.CompensationToken" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompensationToken" />
+  <TypeSignature Language="F#" Value="type CompensationToken = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompensationToken sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

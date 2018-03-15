@@ -1,7 +1,10 @@
-<Type Name="DeleteTreeAccessRule" FullName="System.DirectoryServices.DeleteTreeAccessRule">
+﻿<Type Name="DeleteTreeAccessRule" FullName="System.DirectoryServices.DeleteTreeAccessRule">
   <TypeSignature Language="C#" Value="public sealed class DeleteTreeAccessRule : System.DirectoryServices.ActiveDirectoryAccessRule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DeleteTreeAccessRule extends System.DirectoryServices.ActiveDirectoryAccessRule" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DeleteTreeAccessRule" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeleteTreeAccessRule&#xA;Inherits ActiveDirectoryAccessRule" />
+  <TypeSignature Language="F#" Value="type DeleteTreeAccessRule = class&#xA;    inherit ActiveDirectoryAccessRule" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeleteTreeAccessRule sealed : System::DirectoryServices::ActiveDirectoryAccessRule" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +19,23 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DeleteTreeAccessRule" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DeleteTreeAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DeleteTreeAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, type As AccessControlType)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.DeleteTreeAccessRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.AccessControlType -&gt; System.DirectoryServices.DeleteTreeAccessRule" Usage="new System.DirectoryServices.DeleteTreeAccessRule (identity, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeleteTreeAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -41,6 +57,9 @@
       <MemberSignature Language="C#" Value="public DeleteTreeAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DeleteTreeAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.DirectoryServices.ActiveDirectorySecurityInheritance)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, type As AccessControlType, inheritanceType As ActiveDirectorySecurityInheritance)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.DeleteTreeAccessRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.AccessControlType * System.DirectoryServices.ActiveDirectorySecurityInheritance -&gt; System.DirectoryServices.DeleteTreeAccessRule" Usage="new System.DirectoryServices.DeleteTreeAccessRule (identity, type, inheritanceType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeleteTreeAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -64,6 +83,9 @@
       <MemberSignature Language="C#" Value="public DeleteTreeAccessRule (System.Security.Principal.IdentityReference identity, System.Security.AccessControl.AccessControlType type, System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.IdentityReference identity, valuetype System.Security.AccessControl.AccessControlType type, valuetype System.DirectoryServices.ActiveDirectorySecurityInheritance inheritanceType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.DeleteTreeAccessRule.#ctor(System.Security.Principal.IdentityReference,System.Security.AccessControl.AccessControlType,System.DirectoryServices.ActiveDirectorySecurityInheritance,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As IdentityReference, type As AccessControlType, inheritanceType As ActiveDirectorySecurityInheritance, inheritedObjectType As Guid)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.DeleteTreeAccessRule : System.Security.Principal.IdentityReference * System.Security.AccessControl.AccessControlType * System.DirectoryServices.ActiveDirectorySecurityInheritance * Guid -&gt; System.DirectoryServices.DeleteTreeAccessRule" Usage="new System.DirectoryServices.DeleteTreeAccessRule (identity, type, inheritanceType, inheritedObjectType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeleteTreeAccessRule(System::Security::Principal::IdentityReference ^ identity, System::Security::AccessControl::AccessControlType type, System::DirectoryServices::ActiveDirectorySecurityInheritance inheritanceType, Guid inheritedObjectType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -85,15 +107,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.DeleteTreeAccessRule" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

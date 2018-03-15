@@ -1,7 +1,10 @@
-<Type Name="LoaderOptimizationAttribute" FullName="System.LoaderOptimizationAttribute">
+﻿<Type Name="LoaderOptimizationAttribute" FullName="System.LoaderOptimizationAttribute">
   <TypeSignature Language="C#" Value="public sealed class LoaderOptimizationAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LoaderOptimizationAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.LoaderOptimizationAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LoaderOptimizationAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type LoaderOptimizationAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LoaderOptimizationAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,10 +50,23 @@
     <altmember cref="T:System.LoaderOptimization" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.LoaderOptimizationAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LoaderOptimizationAttribute (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.LoaderOptimizationAttribute.#ctor(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Byte)" />
+      <MemberSignature Language="F#" Value="new LoaderOptimizationAttribute : byte -&gt; LoaderOptimizationAttribute" Usage="new System.LoaderOptimizationAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LoaderOptimizationAttribute(System::Byte value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,6 +94,9 @@
       <MemberSignature Language="C#" Value="public LoaderOptimizationAttribute (LoaderOptimization value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.LoaderOptimization value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.LoaderOptimizationAttribute.#ctor(System.LoaderOptimization)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As LoaderOptimization)" />
+      <MemberSignature Language="F#" Value="new LoaderOptimizationAttribute : LoaderOptimization -&gt; LoaderOptimizationAttribute" Usage="new System.LoaderOptimizationAttribute value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LoaderOptimizationAttribute(LoaderOptimization value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -105,6 +124,9 @@
       <MemberSignature Language="C#" Value="public LoaderOptimization Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.LoaderOptimization Value" />
       <MemberSignature Language="DocId" Value="P:System.LoaderOptimizationAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As LoaderOptimization" />
+      <MemberSignature Language="F#" Value="member this.Value : LoaderOptimization" Usage="System.LoaderOptimizationAttribute.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property LoaderOptimization Value { LoaderOptimization get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -128,15 +150,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.LoaderOptimizationAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

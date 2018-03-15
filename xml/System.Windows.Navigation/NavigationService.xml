@@ -1,7 +1,10 @@
-<Type Name="NavigationService" FullName="System.Windows.Navigation.NavigationService">
+﻿<Type Name="NavigationService" FullName="System.Windows.Navigation.NavigationService">
   <TypeSignature Language="C#" Value="public sealed class NavigationService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NavigationService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.NavigationService" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NavigationService" />
+  <TypeSignature Language="F#" Value="type NavigationService = class&#xA;    interface IContentContainer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NavigationService sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +88,9 @@
       <MemberSignature Language="C#" Value="public void AddBackEntry (System.Windows.Navigation.CustomContentState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddBackEntry(class System.Windows.Navigation.CustomContentState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.NavigationService.AddBackEntry(System.Windows.Navigation.CustomContentState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddBackEntry (state As CustomContentState)" />
+      <MemberSignature Language="F#" Value="member this.AddBackEntry : System.Windows.Navigation.CustomContentState -&gt; unit" Usage="navigationService.AddBackEntry state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBackEntry(System::Windows::Navigation::CustomContentState ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -116,6 +122,9 @@
       <MemberSignature Language="C#" Value="public bool CanGoBack { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanGoBack" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationService.CanGoBack" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanGoBack As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanGoBack : bool" Usage="System.Windows.Navigation.NavigationService.CanGoBack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanGoBack { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -147,6 +156,9 @@
       <MemberSignature Language="C#" Value="public bool CanGoForward { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanGoForward" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationService.CanGoForward" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanGoForward As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanGoForward : bool" Usage="System.Windows.Navigation.NavigationService.CanGoForward" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanGoForward { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -175,6 +187,9 @@
       <MemberSignature Language="C#" Value="public object Content { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Content" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationService.Content" />
+      <MemberSignature Language="VB.NET" Value="Public Property Content As Object" />
+      <MemberSignature Language="F#" Value="member this.Content : obj with get, set" Usage="System.Windows.Navigation.NavigationService.Content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Content { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -207,6 +222,9 @@
       <MemberSignature Language="C#" Value="public Uri CurrentSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri CurrentSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationService.CurrentSource" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentSource As Uri" />
+      <MemberSignature Language="F#" Value="member this.CurrentSource : Uri" Usage="System.Windows.Navigation.NavigationService.CurrentSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ CurrentSource { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -234,6 +252,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.FragmentNavigationEventHandler FragmentNavigation;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.FragmentNavigationEventHandler FragmentNavigation" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Navigation.NavigationService.FragmentNavigation" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event FragmentNavigation As FragmentNavigationEventHandler " />
+      <MemberSignature Language="F#" Value="member this.FragmentNavigation : System.Windows.Navigation.FragmentNavigationEventHandler " Usage="member this.FragmentNavigation : System.Windows.Navigation.FragmentNavigationEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::FragmentNavigationEventHandler ^ FragmentNavigation;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -306,6 +327,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Navigation.NavigationService GetNavigationService (System.Windows.DependencyObject dependencyObject);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Navigation.NavigationService GetNavigationService(class System.Windows.DependencyObject dependencyObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.NavigationService.GetNavigationService(System.Windows.DependencyObject)" />
+      <MemberSignature Language="F#" Value="static member GetNavigationService : System.Windows.DependencyObject -&gt; System.Windows.Navigation.NavigationService" Usage="System.Windows.Navigation.NavigationService.GetNavigationService dependencyObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Navigation::NavigationService ^ GetNavigationService(System::Windows::DependencyObject ^ dependencyObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -364,6 +387,9 @@
       <MemberSignature Language="C#" Value="public void GoBack ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GoBack() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.NavigationService.GoBack" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GoBack ()" />
+      <MemberSignature Language="F#" Value="member this.GoBack : unit -&gt; unit" Usage="navigationService.GoBack " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GoBack();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -401,6 +427,9 @@
       <MemberSignature Language="C#" Value="public void GoForward ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GoForward() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.NavigationService.GoForward" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GoForward ()" />
+      <MemberSignature Language="F#" Value="member this.GoForward : unit -&gt; unit" Usage="navigationService.GoForward " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GoForward();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -438,6 +467,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.LoadCompletedEventHandler LoadCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.LoadCompletedEventHandler LoadCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Navigation.NavigationService.LoadCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LoadCompleted As LoadCompletedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.LoadCompleted : System.Windows.Navigation.LoadCompletedEventHandler " Usage="member this.LoadCompleted : System.Windows.Navigation.LoadCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::LoadCompletedEventHandler ^ LoadCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -485,10 +517,22 @@
         <altmember cref="E:System.Windows.Navigation.NavigationService.NavigationFailed" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Navigate">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Navigate asynchronously to the specified source content.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Navigate">
       <MemberSignature Language="C#" Value="public bool Navigate (object root);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Navigate(object root) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.NavigationService.Navigate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Navigate (root As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Navigate : obj -&gt; bool" Usage="navigationService.Navigate root" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Navigate(System::Object ^ root);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -540,6 +584,9 @@
       <MemberSignature Language="C#" Value="public bool Navigate (Uri source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Navigate(class System.Uri source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Navigate (source As Uri) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Navigate : Uri -&gt; bool" Usage="navigationService.Navigate source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Navigate(Uri ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -595,6 +642,9 @@
       <MemberSignature Language="C#" Value="public bool Navigate (object root, object navigationState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Navigate(object root, object navigationState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.NavigationService.Navigate(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Navigate (root As Object, navigationState As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Navigate : obj * obj -&gt; bool" Usage="navigationService.Navigate (root, navigationState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Navigate(System::Object ^ root, System::Object ^ navigationState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -639,6 +689,9 @@
       <MemberSignature Language="C#" Value="public bool Navigate (Uri source, object navigationState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Navigate(class System.Uri source, object navigationState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Navigate (source As Uri, navigationState As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Navigate : Uri * obj -&gt; bool" Usage="navigationService.Navigate (source, navigationState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Navigate(Uri ^ source, System::Object ^ navigationState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -689,6 +742,9 @@
       <MemberSignature Language="C#" Value="public bool Navigate (Uri source, object navigationState, bool sandboxExternalContent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Navigate(class System.Uri source, object navigationState, bool sandboxExternalContent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.NavigationService.Navigate(System.Uri,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Navigate (source As Uri, navigationState As Object, sandboxExternalContent As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Navigate : Uri * obj * bool -&gt; bool" Usage="navigationService.Navigate (source, navigationState, sandboxExternalContent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Navigate(Uri ^ source, System::Object ^ navigationState, bool sandboxExternalContent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -729,6 +785,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.NavigatedEventHandler Navigated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.NavigatedEventHandler Navigated" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Navigation.NavigationService.Navigated" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Navigated As NavigatedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Navigated : System.Windows.Navigation.NavigatedEventHandler " Usage="member this.Navigated : System.Windows.Navigation.NavigatedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::NavigatedEventHandler ^ Navigated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -782,6 +841,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.NavigatingCancelEventHandler Navigating;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.NavigatingCancelEventHandler Navigating" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Navigation.NavigationService.Navigating" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Navigating As NavigatingCancelEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Navigating : System.Windows.Navigation.NavigatingCancelEventHandler " Usage="member this.Navigating : System.Windows.Navigation.NavigatingCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::NavigatingCancelEventHandler ^ Navigating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -843,6 +905,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.NavigationFailedEventHandler NavigationFailed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.NavigationFailedEventHandler NavigationFailed" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Navigation.NavigationService.NavigationFailed" />
+      <MemberSignature Language="VB.NET" Value="Public Event NavigationFailed As NavigationFailedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NavigationFailed : System.Windows.Navigation.NavigationFailedEventHandler " Usage="member this.NavigationFailed : System.Windows.Navigation.NavigationFailedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::NavigationFailedEventHandler ^ NavigationFailed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -894,6 +959,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.NavigationProgressEventHandler NavigationProgress;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.NavigationProgressEventHandler NavigationProgress" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Navigation.NavigationService.NavigationProgress" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event NavigationProgress As NavigationProgressEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NavigationProgress : System.Windows.Navigation.NavigationProgressEventHandler " Usage="member this.NavigationProgress : System.Windows.Navigation.NavigationProgressEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::NavigationProgressEventHandler ^ NavigationProgress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -945,6 +1013,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.NavigationStoppedEventHandler NavigationStopped;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.NavigationStoppedEventHandler NavigationStopped" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Navigation.NavigationService.NavigationStopped" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event NavigationStopped As NavigationStoppedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NavigationStopped : System.Windows.Navigation.NavigationStoppedEventHandler " Usage="member this.NavigationStopped : System.Windows.Navigation.NavigationStoppedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::NavigationStoppedEventHandler ^ NavigationStopped;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -992,6 +1063,9 @@
       <MemberSignature Language="C#" Value="public void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.NavigationService.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="F#" Value="member this.Refresh : unit -&gt; unit" Usage="navigationService.Refresh " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1020,6 +1094,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Navigation.JournalEntry RemoveBackEntry ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Navigation.JournalEntry RemoveBackEntry() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.NavigationService.RemoveBackEntry" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveBackEntry () As JournalEntry" />
+      <MemberSignature Language="F#" Value="member this.RemoveBackEntry : unit -&gt; System.Windows.Navigation.JournalEntry" Usage="navigationService.RemoveBackEntry " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Navigation::JournalEntry ^ RemoveBackEntry();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1047,6 +1124,9 @@
       <MemberSignature Language="C#" Value="public Uri Source { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Source" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Navigation.NavigationService.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Property Source As Uri" />
+      <MemberSignature Language="F#" Value="member this.Source : Uri with get, set" Usage="System.Windows.Navigation.NavigationService.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Source { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1076,6 +1156,9 @@
       <MemberSignature Language="C#" Value="public void StopLoading ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StopLoading() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.NavigationService.StopLoading" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StopLoading ()" />
+      <MemberSignature Language="F#" Value="member this.StopLoading : unit -&gt; unit" Usage="navigationService.StopLoading " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopLoading();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1113,14 +1196,5 @@
         <altmember cref="Overload:System.Windows.Navigation.NavigationService.Navigate" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Navigate">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Navigate asynchronously to the specified source content.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

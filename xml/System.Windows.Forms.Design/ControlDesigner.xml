@@ -1,7 +1,10 @@
-<Type Name="ControlDesigner" FullName="System.Windows.Forms.Design.ControlDesigner">
+﻿<Type Name="ControlDesigner" FullName="System.Windows.Forms.Design.ControlDesigner">
   <TypeSignature Language="C#" Value="public class ControlDesigner : System.ComponentModel.Design.ComponentDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlDesigner extends System.ComponentModel.Design.ComponentDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ControlDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class ControlDesigner&#xA;Inherits ComponentDesigner" />
+  <TypeSignature Language="F#" Value="type ControlDesigner = class&#xA;    inherit ComponentDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ControlDesigner : System::ComponentModel::Design::ComponentDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,8 @@
       <MemberSignature Language="C#" Value="public ControlDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -57,6 +62,9 @@
       <MemberSignature Language="C#" Value="protected System.Windows.Forms.AccessibleObject accessibilityObj;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Windows.Forms.AccessibleObject accessibilityObj" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ControlDesigner.accessibilityObj" />
+      <MemberSignature Language="VB.NET" Value="Protected accessibilityObj As AccessibleObject " />
+      <MemberSignature Language="F#" Value="val mutable accessibilityObj : System.Windows.Forms.AccessibleObject" Usage="System.Windows.Forms.Design.ControlDesigner.accessibilityObj" />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Windows::Forms::AccessibleObject ^ accessibilityObj;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -82,6 +90,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.AccessibleObject AccessibilityObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.AccessibleObject AccessibilityObject" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.AccessibilityObject" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AccessibilityObject As AccessibleObject" />
+      <MemberSignature Language="F#" Value="member this.AccessibilityObject : System.Windows.Forms.AccessibleObject" Usage="System.Windows.Forms.Design.ControlDesigner.AccessibilityObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleObject ^ AccessibilityObject { System::Windows::Forms::AccessibleObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -108,6 +119,9 @@
       <MemberSignature Language="C#" Value="public override System.Collections.ICollection AssociatedComponents { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection AssociatedComponents" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.AssociatedComponents" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AssociatedComponents As ICollection" />
+      <MemberSignature Language="F#" Value="member this.AssociatedComponents : System.Collections.ICollection" Usage="System.Windows.Forms.Design.ControlDesigner.AssociatedComponents" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ICollection ^ AssociatedComponents { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -137,6 +151,9 @@
       <MemberSignature Language="C#" Value="public bool AutoResizeHandles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoResizeHandles" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.AutoResizeHandles" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoResizeHandles As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoResizeHandles : bool with get, set" Usage="System.Windows.Forms.Design.ControlDesigner.AutoResizeHandles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoResizeHandles { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -156,6 +173,9 @@
       <MemberSignature Language="C#" Value="protected void BaseWndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void BaseWndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.BaseWndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub BaseWndProc (ByRef m As Message)" />
+      <MemberSignature Language="F#" Value="member this.BaseWndProc :  -&gt; unit" Usage="controlDesigner.BaseWndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void BaseWndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -184,6 +204,9 @@
       <MemberSignature Language="C#" Value="protected System.Windows.Forms.Design.Behavior.BehaviorService BehaviorService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Design.Behavior.BehaviorService BehaviorService" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.BehaviorService" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property BehaviorService As BehaviorService" />
+      <MemberSignature Language="F#" Value="member this.BehaviorService : System.Windows.Forms.Design.Behavior.BehaviorService" Usage="System.Windows.Forms.Design.ControlDesigner.BehaviorService" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Forms::Design::Behavior::BehaviorService ^ BehaviorService { System::Windows::Forms::Design::Behavior::BehaviorService ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -202,6 +225,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanBeParentedTo (System.ComponentModel.Design.IDesigner parentDesigner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanBeParentedTo(class System.ComponentModel.Design.IDesigner parentDesigner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.CanBeParentedTo(System.ComponentModel.Design.IDesigner)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CanBeParentedTo (parentDesigner As IDesigner) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanBeParentedTo : System.ComponentModel.Design.IDesigner -&gt; bool&#xA;override this.CanBeParentedTo : System.ComponentModel.Design.IDesigner -&gt; bool" Usage="controlDesigner.CanBeParentedTo parentDesigner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanBeParentedTo(System::ComponentModel::Design::IDesigner ^ parentDesigner);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -235,6 +261,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.Control Control { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control Control" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.Control" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Control As Control" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Windows.Forms.Control" Usage="System.Windows.Forms.Design.ControlDesigner.Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Control ^ Control { System::Windows::Forms::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -253,6 +282,9 @@
       <MemberSignature Language="C#" Value="protected void DefWndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DefWndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.DefWndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub DefWndProc (ByRef m As Message)" />
+      <MemberSignature Language="F#" Value="member this.DefWndProc :  -&gt; unit" Usage="controlDesigner.DefWndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DefWndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -284,6 +316,9 @@
       <MemberSignature Language="C#" Value="protected void DisplayError (Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DisplayError(class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.DisplayError(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub DisplayError (e As Exception)" />
+      <MemberSignature Language="F#" Value="member this.DisplayError : Exception -&gt; unit" Usage="controlDesigner.DisplayError e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DisplayError(Exception ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -305,6 +340,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="controlDesigner.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -343,6 +381,9 @@
       <MemberSignature Language="C#" Value="protected bool EnableDesignMode (System.Windows.Forms.Control child, string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool EnableDesignMode(class System.Windows.Forms.Control child, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.EnableDesignMode(System.Windows.Forms.Control,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function EnableDesignMode (child As Control, name As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableDesignMode : System.Windows.Forms.Control * string -&gt; bool" Usage="controlDesigner.EnableDesignMode (child, name)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool EnableDesignMode(System::Windows::Forms::Control ^ child, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -381,6 +422,9 @@
       <MemberSignature Language="C#" Value="protected void EnableDragDrop (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EnableDragDrop(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.EnableDragDrop(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub EnableDragDrop (value As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.EnableDragDrop : bool -&gt; unit" Usage="controlDesigner.EnableDragDrop value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EnableDragDrop(bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -410,6 +454,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool EnableDragRect { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableDragRect" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.EnableDragRect" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property EnableDragRect As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableDragRect : bool" Usage="System.Windows.Forms.Design.ControlDesigner.EnableDragRect" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool EnableDragRect { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -429,6 +476,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.Design.Behavior.ControlBodyGlyph GetControlGlyph (System.Windows.Forms.Design.Behavior.GlyphSelectionType selectionType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Forms.Design.Behavior.ControlBodyGlyph GetControlGlyph(valuetype System.Windows.Forms.Design.Behavior.GlyphSelectionType selectionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.GetControlGlyph(System.Windows.Forms.Design.Behavior.GlyphSelectionType)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetControlGlyph (selectionType As GlyphSelectionType) As ControlBodyGlyph" />
+      <MemberSignature Language="F#" Value="abstract member GetControlGlyph : System.Windows.Forms.Design.Behavior.GlyphSelectionType -&gt; System.Windows.Forms.Design.Behavior.ControlBodyGlyph&#xA;override this.GetControlGlyph : System.Windows.Forms.Design.Behavior.GlyphSelectionType -&gt; System.Windows.Forms.Design.Behavior.ControlBodyGlyph" Usage="controlDesigner.GetControlGlyph selectionType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Forms::Design::Behavior::ControlBodyGlyph ^ GetControlGlyph(System::Windows::Forms::Design::Behavior::GlyphSelectionType selectionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -451,6 +501,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.Design.Behavior.GlyphCollection GetGlyphs (System.Windows.Forms.Design.Behavior.GlyphSelectionType selectionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.Design.Behavior.GlyphCollection GetGlyphs(valuetype System.Windows.Forms.Design.Behavior.GlyphSelectionType selectionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.GetGlyphs(System.Windows.Forms.Design.Behavior.GlyphSelectionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlyphs (selectionType As GlyphSelectionType) As GlyphCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetGlyphs : System.Windows.Forms.Design.Behavior.GlyphSelectionType -&gt; System.Windows.Forms.Design.Behavior.GlyphCollection&#xA;override this.GetGlyphs : System.Windows.Forms.Design.Behavior.GlyphSelectionType -&gt; System.Windows.Forms.Design.Behavior.GlyphCollection" Usage="controlDesigner.GetGlyphs selectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::Design::Behavior::GlyphCollection ^ GetGlyphs(System::Windows::Forms::Design::Behavior::GlyphSelectionType selectionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -486,6 +539,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool GetHitTest (System.Drawing.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool GetHitTest(valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.GetHitTest(System.Drawing.Point)" />
+      <MemberSignature Language="F#" Value="abstract member GetHitTest : System.Drawing.Point -&gt; bool&#xA;override this.GetHitTest : System.Drawing.Point -&gt; bool" Usage="controlDesigner.GetHitTest point" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool GetHitTest(System::Drawing::Point point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -521,6 +576,9 @@
       <MemberSignature Language="C#" Value="protected void HookChildControls (System.Windows.Forms.Control firstChild);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void HookChildControls(class System.Windows.Forms.Control firstChild) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.HookChildControls(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub HookChildControls (firstChild As Control)" />
+      <MemberSignature Language="F#" Value="member this.HookChildControls : System.Windows.Forms.Control -&gt; unit" Usage="controlDesigner.HookChildControls firstChild" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void HookChildControls(System::Windows::Forms::Control ^ firstChild);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -542,6 +600,9 @@
       <MemberSignature Language="C#" Value="protected override System.ComponentModel.InheritanceAttribute InheritanceAttribute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.InheritanceAttribute InheritanceAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.InheritanceAttribute" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property InheritanceAttribute As InheritanceAttribute" />
+      <MemberSignature Language="F#" Value="member this.InheritanceAttribute : System.ComponentModel.InheritanceAttribute" Usage="System.Windows.Forms.Design.ControlDesigner.InheritanceAttribute" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::ComponentModel::InheritanceAttribute ^ InheritanceAttribute { System::ComponentModel::InheritanceAttribute ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -561,6 +622,9 @@
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="controlDesigner.Initialize component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -590,6 +654,9 @@
       <MemberSignature Language="C#" Value="public override void InitializeExistingComponent (System.Collections.IDictionary defaultValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeExistingComponent(class System.Collections.IDictionary defaultValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.InitializeExistingComponent(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub InitializeExistingComponent (defaultValues As IDictionary)" />
+      <MemberSignature Language="F#" Value="override this.InitializeExistingComponent : System.Collections.IDictionary -&gt; unit" Usage="controlDesigner.InitializeExistingComponent defaultValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InitializeExistingComponent(System::Collections::IDictionary ^ defaultValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -619,6 +686,9 @@
       <MemberSignature Language="C#" Value="public override void InitializeNewComponent (System.Collections.IDictionary defaultValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeNewComponent(class System.Collections.IDictionary defaultValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.InitializeNewComponent(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub InitializeNewComponent (defaultValues As IDictionary)" />
+      <MemberSignature Language="F#" Value="override this.InitializeNewComponent : System.Collections.IDictionary -&gt; unit" Usage="controlDesigner.InitializeNewComponent defaultValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InitializeNewComponent(System::Collections::IDictionary ^ defaultValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -648,6 +718,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.Design.ControlDesigner InternalControlDesigner (int internalControlIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.Design.ControlDesigner InternalControlDesigner(int32 internalControlIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.InternalControlDesigner(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function InternalControlDesigner (internalControlIndex As Integer) As ControlDesigner" />
+      <MemberSignature Language="F#" Value="abstract member InternalControlDesigner : int -&gt; System.Windows.Forms.Design.ControlDesigner&#xA;override this.InternalControlDesigner : int -&gt; System.Windows.Forms.Design.ControlDesigner" Usage="controlDesigner.InternalControlDesigner internalControlIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::Design::ControlDesigner ^ InternalControlDesigner(int internalControlIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -677,6 +750,9 @@
       <MemberSignature Language="C#" Value="protected static readonly System.Drawing.Point InvalidPoint;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly valuetype System.Drawing.Point InvalidPoint" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ControlDesigner.InvalidPoint" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly InvalidPoint As Point " />
+      <MemberSignature Language="F#" Value=" staticval mutable InvalidPoint : System.Drawing.Point" Usage="System.Windows.Forms.Design.ControlDesigner.InvalidPoint" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Drawing::Point InvalidPoint;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -701,6 +777,9 @@
       <MemberSignature Language="C#" Value="public virtual int NumberOfInternalControlDesigners ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 NumberOfInternalControlDesigners() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.NumberOfInternalControlDesigners" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function NumberOfInternalControlDesigners () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member NumberOfInternalControlDesigners : unit -&gt; int&#xA;override this.NumberOfInternalControlDesigners : unit -&gt; int" Usage="controlDesigner.NumberOfInternalControlDesigners " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int NumberOfInternalControlDesigners();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -727,6 +806,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnContextMenu (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnContextMenu(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnContextMenu(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContextMenu (x As Integer, y As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member OnContextMenu : int * int -&gt; unit&#xA;override this.OnContextMenu : int * int -&gt; unit" Usage="controlDesigner.OnContextMenu (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContextMenu(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -750,6 +832,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCreateHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCreateHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnCreateHandle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCreateHandle ()" />
+      <MemberSignature Language="F#" Value="abstract member OnCreateHandle : unit -&gt; unit&#xA;override this.OnCreateHandle : unit -&gt; unit" Usage="controlDesigner.OnCreateHandle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCreateHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -768,6 +853,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDragComplete (System.Windows.Forms.DragEventArgs de);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDragComplete(class System.Windows.Forms.DragEventArgs de) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnDragComplete(System.Windows.Forms.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDragComplete (de As DragEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDragComplete : System.Windows.Forms.DragEventArgs -&gt; unit&#xA;override this.OnDragComplete : System.Windows.Forms.DragEventArgs -&gt; unit" Usage="controlDesigner.OnDragComplete de" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDragComplete(System::Windows::Forms::DragEventArgs ^ de);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -789,6 +877,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDragDrop (System.Windows.Forms.DragEventArgs de);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDragDrop(class System.Windows.Forms.DragEventArgs de) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnDragDrop(System.Windows.Forms.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDragDrop (de As DragEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDragDrop : System.Windows.Forms.DragEventArgs -&gt; unit&#xA;override this.OnDragDrop : System.Windows.Forms.DragEventArgs -&gt; unit" Usage="controlDesigner.OnDragDrop de" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDragDrop(System::Windows::Forms::DragEventArgs ^ de);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -810,6 +901,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDragEnter (System.Windows.Forms.DragEventArgs de);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDragEnter(class System.Windows.Forms.DragEventArgs de) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnDragEnter(System.Windows.Forms.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDragEnter (de As DragEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDragEnter : System.Windows.Forms.DragEventArgs -&gt; unit&#xA;override this.OnDragEnter : System.Windows.Forms.DragEventArgs -&gt; unit" Usage="controlDesigner.OnDragEnter de" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDragEnter(System::Windows::Forms::DragEventArgs ^ de);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -831,6 +925,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDragLeave (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDragLeave(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnDragLeave(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDragLeave (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDragLeave : EventArgs -&gt; unit&#xA;override this.OnDragLeave : EventArgs -&gt; unit" Usage="controlDesigner.OnDragLeave e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDragLeave(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -852,6 +949,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDragOver (System.Windows.Forms.DragEventArgs de);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDragOver(class System.Windows.Forms.DragEventArgs de) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnDragOver(System.Windows.Forms.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDragOver (de As DragEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDragOver : System.Windows.Forms.DragEventArgs -&gt; unit&#xA;override this.OnDragOver : System.Windows.Forms.DragEventArgs -&gt; unit" Usage="controlDesigner.OnDragOver de" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDragOver(System::Windows::Forms::DragEventArgs ^ de);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -873,6 +973,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnGiveFeedback (System.Windows.Forms.GiveFeedbackEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnGiveFeedback(class System.Windows.Forms.GiveFeedbackEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnGiveFeedback (e As GiveFeedbackEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnGiveFeedback : System.Windows.Forms.GiveFeedbackEventArgs -&gt; unit&#xA;override this.OnGiveFeedback : System.Windows.Forms.GiveFeedbackEventArgs -&gt; unit" Usage="controlDesigner.OnGiveFeedback e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnGiveFeedback(System::Windows::Forms::GiveFeedbackEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -901,6 +1004,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMouseDragBegin (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMouseDragBegin(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnMouseDragBegin(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMouseDragBegin (x As Integer, y As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseDragBegin : int * int -&gt; unit&#xA;override this.OnMouseDragBegin : int * int -&gt; unit" Usage="controlDesigner.OnMouseDragBegin (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMouseDragBegin(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -934,6 +1040,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMouseDragEnd (bool cancel);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMouseDragEnd(bool cancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnMouseDragEnd(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMouseDragEnd (cancel As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseDragEnd : bool -&gt; unit&#xA;override this.OnMouseDragEnd : bool -&gt; unit" Usage="controlDesigner.OnMouseDragEnd cancel" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMouseDragEnd(bool cancel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -956,6 +1065,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMouseDragMove (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMouseDragMove(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnMouseDragMove(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMouseDragMove (x As Integer, y As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseDragMove : int * int -&gt; unit&#xA;override this.OnMouseDragMove : int * int -&gt; unit" Usage="controlDesigner.OnMouseDragMove (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMouseDragMove(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -988,6 +1100,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMouseEnter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMouseEnter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnMouseEnter" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMouseEnter ()" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseEnter : unit -&gt; unit&#xA;override this.OnMouseEnter : unit -&gt; unit" Usage="controlDesigner.OnMouseEnter " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMouseEnter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1006,6 +1121,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMouseHover ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMouseHover() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnMouseHover" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMouseHover ()" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseHover : unit -&gt; unit&#xA;override this.OnMouseHover : unit -&gt; unit" Usage="controlDesigner.OnMouseHover " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMouseHover();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1024,6 +1142,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMouseLeave ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMouseLeave() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnMouseLeave" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMouseLeave ()" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseLeave : unit -&gt; unit&#xA;override this.OnMouseLeave : unit -&gt; unit" Usage="controlDesigner.OnMouseLeave " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMouseLeave();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1042,6 +1163,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPaintAdornments (System.Windows.Forms.PaintEventArgs pe);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPaintAdornments(class System.Windows.Forms.PaintEventArgs pe) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnPaintAdornments(System.Windows.Forms.PaintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPaintAdornments (pe As PaintEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPaintAdornments : System.Windows.Forms.PaintEventArgs -&gt; unit&#xA;override this.OnPaintAdornments : System.Windows.Forms.PaintEventArgs -&gt; unit" Usage="controlDesigner.OnPaintAdornments pe" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPaintAdornments(System::Windows::Forms::PaintEventArgs ^ pe);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1063,6 +1187,9 @@
       <MemberSignature Language="C#" Value="public override void OnSetComponentDefaults ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnSetComponentDefaults() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnSetComponentDefaults" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnSetComponentDefaults ()" />
+      <MemberSignature Language="F#" Value="override this.OnSetComponentDefaults : unit -&gt; unit" Usage="controlDesigner.OnSetComponentDefaults " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnSetComponentDefaults();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1086,6 +1213,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSetCursor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSetCursor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.OnSetCursor" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSetCursor ()" />
+      <MemberSignature Language="F#" Value="abstract member OnSetCursor : unit -&gt; unit&#xA;override this.OnSetCursor : unit -&gt; unit" Usage="controlDesigner.OnSetCursor " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSetCursor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1111,6 +1241,9 @@
       <MemberSignature Language="C#" Value="protected override System.ComponentModel.IComponent ParentComponent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent ParentComponent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ParentComponent" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ParentComponent As IComponent" />
+      <MemberSignature Language="F#" Value="member this.ParentComponent : System.ComponentModel.IComponent" Usage="System.Windows.Forms.Design.ControlDesigner.ParentComponent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::ComponentModel::IComponent ^ ParentComponent { System::ComponentModel::IComponent ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1136,6 +1269,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ParticipatesWithSnapLines { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ParticipatesWithSnapLines" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.ParticipatesWithSnapLines" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ParticipatesWithSnapLines As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ParticipatesWithSnapLines : bool" Usage="System.Windows.Forms.Design.ControlDesigner.ParticipatesWithSnapLines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ParticipatesWithSnapLines { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1158,6 +1294,9 @@
       <MemberSignature Language="C#" Value="protected override void PreFilterProperties (System.Collections.IDictionary properties);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PreFilterProperties(class System.Collections.IDictionary properties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.PreFilterProperties(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PreFilterProperties (properties As IDictionary)" />
+      <MemberSignature Language="F#" Value="override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="controlDesigner.PreFilterProperties properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1187,6 +1326,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.Design.SelectionRules SelectionRules { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Design.SelectionRules SelectionRules" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.SelectionRules" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SelectionRules As SelectionRules" />
+      <MemberSignature Language="F#" Value="member this.SelectionRules : System.Windows.Forms.Design.SelectionRules" Usage="System.Windows.Forms.Design.ControlDesigner.SelectionRules" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Design::SelectionRules SelectionRules { System::Windows::Forms::Design::SelectionRules get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1213,6 +1355,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IList SnapLines { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList SnapLines" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ControlDesigner.SnapLines" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SnapLines As IList" />
+      <MemberSignature Language="F#" Value="member this.SnapLines : System.Collections.IList" Usage="System.Windows.Forms.Design.ControlDesigner.SnapLines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IList ^ SnapLines { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1238,6 +1383,9 @@
       <MemberSignature Language="C#" Value="protected void UnhookChildControls (System.Windows.Forms.Control firstChild);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void UnhookChildControls(class System.Windows.Forms.Control firstChild) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.UnhookChildControls(System.Windows.Forms.Control)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub UnhookChildControls (firstChild As Control)" />
+      <MemberSignature Language="F#" Value="member this.UnhookChildControls : System.Windows.Forms.Control -&gt; unit" Usage="controlDesigner.UnhookChildControls firstChild" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void UnhookChildControls(System::Windows::Forms::Control ^ firstChild);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -1259,6 +1407,9 @@
       <MemberSignature Language="C#" Value="protected virtual void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.WndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WndProc (ByRef m As Message)" />
+      <MemberSignature Language="F#" Value="abstract member WndProc :  -&gt; unit&#xA;override this.WndProc :  -&gt; unit" Usage="controlDesigner.WndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

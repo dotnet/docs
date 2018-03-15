@@ -1,7 +1,10 @@
-<Type Name="FolderLevelBuildProviderAppliesToAttribute" FullName="System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute">
+﻿<Type Name="FolderLevelBuildProviderAppliesToAttribute" FullName="System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute">
   <TypeSignature Language="C#" Value="public sealed class FolderLevelBuildProviderAppliesToAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FolderLevelBuildProviderAppliesToAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FolderLevelBuildProviderAppliesToAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type FolderLevelBuildProviderAppliesToAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FolderLevelBuildProviderAppliesToAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="public FolderLevelBuildProviderAppliesToAttribute (System.Web.Compilation.FolderLevelBuildProviderAppliesTo appliesTo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.Compilation.FolderLevelBuildProviderAppliesTo appliesTo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute.#ctor(System.Web.Compilation.FolderLevelBuildProviderAppliesTo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (appliesTo As FolderLevelBuildProviderAppliesTo)" />
+      <MemberSignature Language="F#" Value="new System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute : System.Web.Compilation.FolderLevelBuildProviderAppliesTo -&gt; System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute" Usage="new System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute appliesTo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FolderLevelBuildProviderAppliesToAttribute(System::Web::Compilation::FolderLevelBuildProviderAppliesTo appliesTo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -53,6 +59,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Compilation.FolderLevelBuildProviderAppliesTo AppliesTo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Compilation.FolderLevelBuildProviderAppliesTo AppliesTo" />
       <MemberSignature Language="DocId" Value="P:System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute.AppliesTo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppliesTo As FolderLevelBuildProviderAppliesTo" />
+      <MemberSignature Language="F#" Value="member this.AppliesTo : System.Web.Compilation.FolderLevelBuildProviderAppliesTo" Usage="System.Web.Compilation.FolderLevelBuildProviderAppliesToAttribute.AppliesTo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Compilation::FolderLevelBuildProviderAppliesTo AppliesTo { System::Web::Compilation::FolderLevelBuildProviderAppliesTo get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

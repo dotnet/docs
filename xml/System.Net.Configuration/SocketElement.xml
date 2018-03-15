@@ -1,7 +1,10 @@
-<Type Name="SocketElement" FullName="System.Net.Configuration.SocketElement">
+﻿<Type Name="SocketElement" FullName="System.Net.Configuration.SocketElement">
   <TypeSignature Language="C#" Value="public sealed class SocketElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SocketElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.SocketElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SocketElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type SocketElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SocketElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,8 @@
       <MemberSignature Language="C#" Value="public SocketElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.SocketElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SocketElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -52,6 +57,9 @@
       <MemberSignature Language="C#" Value="public bool AlwaysUseCompletionPortsForAccept { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AlwaysUseCompletionPortsForAccept" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForAccept" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlwaysUseCompletionPortsForAccept As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AlwaysUseCompletionPortsForAccept : bool with get, set" Usage="System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForAccept" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AlwaysUseCompletionPortsForAccept { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -76,6 +84,9 @@
       <MemberSignature Language="C#" Value="public bool AlwaysUseCompletionPortsForConnect { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AlwaysUseCompletionPortsForConnect" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForConnect" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlwaysUseCompletionPortsForConnect As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AlwaysUseCompletionPortsForConnect : bool with get, set" Usage="System.Net.Configuration.SocketElement.AlwaysUseCompletionPortsForConnect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AlwaysUseCompletionPortsForConnect { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -100,6 +111,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.IPProtectionLevel IPProtectionLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Sockets.IPProtectionLevel IPProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SocketElement.IPProtectionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property IPProtectionLevel As IPProtectionLevel" />
+      <MemberSignature Language="F#" Value="member this.IPProtectionLevel : System.Net.Sockets.IPProtectionLevel with get, set" Usage="System.Net.Configuration.SocketElement.IPProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Sockets::IPProtectionLevel IPProtectionLevel { System::Net::Sockets::IPProtectionLevel get(); void set(System::Net::Sockets::IPProtectionLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -132,6 +146,9 @@
       <MemberSignature Language="C#" Value="protected override void PostDeserialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PostDeserialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.SocketElement.PostDeserialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
+      <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="socketElement.PostDeserialize " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -155,6 +172,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.SocketElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.SocketElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

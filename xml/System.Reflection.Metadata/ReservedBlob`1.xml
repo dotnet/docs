@@ -1,7 +1,10 @@
-<Type Name="ReservedBlob&lt;THandle&gt;" FullName="System.Reflection.Metadata.ReservedBlob&lt;THandle&gt;">
+﻿<Type Name="ReservedBlob&lt;THandle&gt;" FullName="System.Reflection.Metadata.ReservedBlob&lt;THandle&gt;">
   <TypeSignature Language="C#" Value="public struct ReservedBlob&lt;THandle&gt; where THandle : struct" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ReservedBlob`1&lt;struct .ctor (class System.ValueType) THandle&gt; extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ReservedBlob`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ReservedBlob(Of THandle)" />
+  <TypeSignature Language="F#" Value="type ReservedBlob&lt;'Handle (requires 'Handle : struct)&gt; = struct" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename THandle&gt;&#xA; where THandle : value classpublic value class ReservedBlob" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Blob Content { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.Blob Content" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ReservedBlob`1.Content" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Content As Blob" />
+      <MemberSignature Language="F#" Value="member this.Content : System.Reflection.Metadata.Blob" Usage="System.Reflection.Metadata.ReservedBlob&lt;'Handle (requires 'Handle : struct)&gt;.Content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::Blob Content { System::Reflection::Metadata::Blob get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -49,6 +55,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobWriter CreateWriter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.BlobWriter CreateWriter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.ReservedBlob`1.CreateWriter" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateWriter () As BlobWriter" />
+      <MemberSignature Language="F#" Value="member this.CreateWriter : unit -&gt; System.Reflection.Metadata.BlobWriter" Usage="reservedBlob.CreateWriter " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::BlobWriter CreateWriter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -69,6 +78,9 @@
       <MemberSignature Language="C#" Value="public THandle Handle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !THandle Handle" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.ReservedBlob`1.Handle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As THandle" />
+      <MemberSignature Language="F#" Value="member this.Handle : 'Handle" Usage="System.Reflection.Metadata.ReservedBlob&lt;'Handle (requires 'Handle : struct)&gt;.Handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property THandle Handle { THandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

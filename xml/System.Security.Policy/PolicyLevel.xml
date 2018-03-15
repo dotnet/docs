@@ -1,7 +1,10 @@
-<Type Name="PolicyLevel" FullName="System.Security.Policy.PolicyLevel">
+﻿<Type Name="PolicyLevel" FullName="System.Security.Policy.PolicyLevel">
   <TypeSignature Language="C#" Value="public sealed class PolicyLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit PolicyLevel extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.PolicyLevel" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PolicyLevel" />
+  <TypeSignature Language="F#" Value="type PolicyLevel = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PolicyLevel sealed" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,10 +51,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="AddFullTrustAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Security.Policy.StrongNameMembershipCondition" /> to the list of <see cref="T:System.Security.Policy.StrongNameMembershipCondition" /> objects used to determine whether an assembly is a member of the group of assemblies that should not be evaluated.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddFullTrustAssembly">
       <MemberSignature Language="C#" Value="public void AddFullTrustAssembly (System.Security.Policy.StrongName sn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFullTrustAssembly(class System.Security.Policy.StrongName sn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.AddFullTrustAssembly(System.Security.Policy.StrongName)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddFullTrustAssembly (sn As StrongName)" />
+      <MemberSignature Language="F#" Value="member this.AddFullTrustAssembly : System.Security.Policy.StrongName -&gt; unit" Usage="policyLevel.AddFullTrustAssembly sn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFullTrustAssembly(System::Security::Policy::StrongName ^ sn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -93,6 +109,9 @@
       <MemberSignature Language="C#" Value="public void AddFullTrustAssembly (System.Security.Policy.StrongNameMembershipCondition snMC);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFullTrustAssembly(class System.Security.Policy.StrongNameMembershipCondition snMC) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.AddFullTrustAssembly(System.Security.Policy.StrongNameMembershipCondition)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddFullTrustAssembly (snMC As StrongNameMembershipCondition)" />
+      <MemberSignature Language="F#" Value="member this.AddFullTrustAssembly : System.Security.Policy.StrongNameMembershipCondition -&gt; unit" Usage="policyLevel.AddFullTrustAssembly snMC" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFullTrustAssembly(System::Security::Policy::StrongNameMembershipCondition ^ snMC);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -134,6 +153,9 @@
       <MemberSignature Language="C#" Value="public void AddNamedPermissionSet (System.Security.NamedPermissionSet permSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddNamedPermissionSet(class System.Security.NamedPermissionSet permSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.AddNamedPermissionSet(System.Security.NamedPermissionSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddNamedPermissionSet (permSet As NamedPermissionSet)" />
+      <MemberSignature Language="F#" Value="member this.AddNamedPermissionSet : System.Security.NamedPermissionSet -&gt; unit" Usage="policyLevel.AddNamedPermissionSet permSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddNamedPermissionSet(System::Security::NamedPermissionSet ^ permSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -169,6 +191,9 @@
       <MemberSignature Language="C#" Value="public System.Security.NamedPermissionSet ChangeNamedPermissionSet (string name, System.Security.PermissionSet pSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.NamedPermissionSet ChangeNamedPermissionSet(string name, class System.Security.PermissionSet pSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.ChangeNamedPermissionSet(System.String,System.Security.PermissionSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ChangeNamedPermissionSet (name As String, pSet As PermissionSet) As NamedPermissionSet" />
+      <MemberSignature Language="F#" Value="member this.ChangeNamedPermissionSet : string * System.Security.PermissionSet -&gt; System.Security.NamedPermissionSet" Usage="policyLevel.ChangeNamedPermissionSet (name, pSet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ ChangeNamedPermissionSet(System::String ^ name, System::Security::PermissionSet ^ pSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -208,6 +233,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Policy.PolicyLevel CreateAppDomainLevel ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Policy.PolicyLevel CreateAppDomainLevel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.CreateAppDomainLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAppDomainLevel () As PolicyLevel" />
+      <MemberSignature Language="F#" Value="static member CreateAppDomainLevel : unit -&gt; System.Security.Policy.PolicyLevel" Usage="System.Security.Policy.PolicyLevel.CreateAppDomainLevel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Policy::PolicyLevel ^ CreateAppDomainLevel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -240,6 +268,9 @@
       <MemberSignature Language="C#" Value="public void FromXml (System.Security.SecurityElement e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FromXml(class System.Security.SecurityElement e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FromXml (e As SecurityElement)" />
+      <MemberSignature Language="F#" Value="member this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="policyLevel.FromXml e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FromXml(System::Security::SecurityElement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -268,6 +299,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IList FullTrustAssemblies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList FullTrustAssemblies" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.FullTrustAssemblies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullTrustAssemblies As IList" />
+      <MemberSignature Language="F#" Value="member this.FullTrustAssemblies : System.Collections.IList" Usage="System.Security.Policy.PolicyLevel.FullTrustAssemblies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ FullTrustAssemblies { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -305,6 +339,9 @@
       <MemberSignature Language="C#" Value="public System.Security.NamedPermissionSet GetNamedPermissionSet (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.NamedPermissionSet GetNamedPermissionSet(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.GetNamedPermissionSet(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNamedPermissionSet (name As String) As NamedPermissionSet" />
+      <MemberSignature Language="F#" Value="member this.GetNamedPermissionSet : string -&gt; System.Security.NamedPermissionSet" Usage="policyLevel.GetNamedPermissionSet name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ GetNamedPermissionSet(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -334,6 +371,9 @@
       <MemberSignature Language="C#" Value="public string Label { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.Label" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Label As String" />
+      <MemberSignature Language="F#" Value="member this.Label : string" Usage="System.Security.Policy.PolicyLevel.Label" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -364,6 +404,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IList NamedPermissionSets { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList NamedPermissionSets" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.NamedPermissionSets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamedPermissionSets As IList" />
+      <MemberSignature Language="F#" Value="member this.NamedPermissionSets : System.Collections.IList" Usage="System.Security.Policy.PolicyLevel.NamedPermissionSets" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ NamedPermissionSets { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -387,6 +430,9 @@
       <MemberSignature Language="C#" Value="public void Recover ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Recover() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.Recover" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Recover ()" />
+      <MemberSignature Language="F#" Value="member this.Recover : unit -&gt; unit" Usage="policyLevel.Recover " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Recover();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -416,10 +462,23 @@
         <exception cref="T:System.Security.Policy.PolicyException">The policy level does not have a valid configuration file.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveFullTrustAssembly">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an assembly from the list of assemblies the policy level uses to evaluate policy.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveFullTrustAssembly">
       <MemberSignature Language="C#" Value="public void RemoveFullTrustAssembly (System.Security.Policy.StrongName sn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveFullTrustAssembly(class System.Security.Policy.StrongName sn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.RemoveFullTrustAssembly(System.Security.Policy.StrongName)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveFullTrustAssembly (sn As StrongName)" />
+      <MemberSignature Language="F#" Value="member this.RemoveFullTrustAssembly : System.Security.Policy.StrongName -&gt; unit" Usage="policyLevel.RemoveFullTrustAssembly sn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFullTrustAssembly(System::Security::Policy::StrongName ^ sn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -460,6 +519,9 @@
       <MemberSignature Language="C#" Value="public void RemoveFullTrustAssembly (System.Security.Policy.StrongNameMembershipCondition snMC);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveFullTrustAssembly(class System.Security.Policy.StrongNameMembershipCondition snMC) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.RemoveFullTrustAssembly(System.Security.Policy.StrongNameMembershipCondition)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveFullTrustAssembly (snMC As StrongNameMembershipCondition)" />
+      <MemberSignature Language="F#" Value="member this.RemoveFullTrustAssembly : System.Security.Policy.StrongNameMembershipCondition -&gt; unit" Usage="policyLevel.RemoveFullTrustAssembly snMC" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveFullTrustAssembly(System::Security::Policy::StrongNameMembershipCondition ^ snMC);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -496,10 +558,23 @@
         <exception cref="T:System.ArgumentException">The <see cref="T:System.Security.Policy.StrongNameMembershipCondition" /> specified by the <paramref name="snMC" /> parameter does not have full trust.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveNamedPermissionSet">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a <see cref="T:System.Security.NamedPermissionSet" /> from the current policy level.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveNamedPermissionSet">
       <MemberSignature Language="C#" Value="public System.Security.NamedPermissionSet RemoveNamedPermissionSet (System.Security.NamedPermissionSet permSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.NamedPermissionSet RemoveNamedPermissionSet(class System.Security.NamedPermissionSet permSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.RemoveNamedPermissionSet(System.Security.NamedPermissionSet)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveNamedPermissionSet (permSet As NamedPermissionSet) As NamedPermissionSet" />
+      <MemberSignature Language="F#" Value="member this.RemoveNamedPermissionSet : System.Security.NamedPermissionSet -&gt; System.Security.NamedPermissionSet" Usage="policyLevel.RemoveNamedPermissionSet permSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ RemoveNamedPermissionSet(System::Security::NamedPermissionSet ^ permSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -529,6 +604,9 @@
       <MemberSignature Language="C#" Value="public System.Security.NamedPermissionSet RemoveNamedPermissionSet (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.NamedPermissionSet RemoveNamedPermissionSet(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.RemoveNamedPermissionSet(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveNamedPermissionSet (name As String) As NamedPermissionSet" />
+      <MemberSignature Language="F#" Value="member this.RemoveNamedPermissionSet : string -&gt; System.Security.NamedPermissionSet" Usage="policyLevel.RemoveNamedPermissionSet name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::NamedPermissionSet ^ RemoveNamedPermissionSet(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -563,6 +641,9 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="policyLevel.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -593,6 +674,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Policy.PolicyStatement Resolve (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Policy.PolicyStatement Resolve(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.Resolve(System.Security.Policy.Evidence)" />
+      <MemberSignature Language="F#" Value="member this.Resolve : System.Security.Policy.Evidence -&gt; System.Security.Policy.PolicyStatement" Usage="policyLevel.Resolve evidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Policy::PolicyStatement ^ Resolve(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -640,6 +723,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Policy.CodeGroup ResolveMatchingCodeGroups (System.Security.Policy.Evidence evidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Policy.CodeGroup ResolveMatchingCodeGroups(class System.Security.Policy.Evidence evidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.ResolveMatchingCodeGroups(System.Security.Policy.Evidence)" />
+      <MemberSignature Language="F#" Value="member this.ResolveMatchingCodeGroups : System.Security.Policy.Evidence -&gt; System.Security.Policy.CodeGroup" Usage="policyLevel.ResolveMatchingCodeGroups evidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Policy::CodeGroup ^ ResolveMatchingCodeGroups(System::Security::Policy::Evidence ^ evidence);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -678,6 +763,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Policy.CodeGroup RootCodeGroup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Policy.CodeGroup RootCodeGroup" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.RootCodeGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Property RootCodeGroup As CodeGroup" />
+      <MemberSignature Language="F#" Value="member this.RootCodeGroup : System.Security.Policy.CodeGroup with get, set" Usage="System.Security.Policy.PolicyLevel.RootCodeGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::CodeGroup ^ RootCodeGroup { System::Security::Policy::CodeGroup ^ get(); void set(System::Security::Policy::CodeGroup ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -709,6 +797,9 @@
       <MemberSignature Language="C#" Value="public string StoreLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StoreLocation" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.StoreLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StoreLocation As String" />
+      <MemberSignature Language="F#" Value="member this.StoreLocation : string" Usage="System.Security.Policy.PolicyLevel.StoreLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StoreLocation { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -744,6 +835,9 @@
       <MemberSignature Language="C#" Value="public System.Security.SecurityElement ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.PolicyLevel.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToXml () As SecurityElement" />
+      <MemberSignature Language="F#" Value="member this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="policyLevel.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -768,6 +862,9 @@
       <MemberSignature Language="C#" Value="public System.Security.PolicyLevelType Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.PolicyLevelType Type" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.PolicyLevel.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As PolicyLevelType" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Security.PolicyLevelType" Usage="System.Security.Policy.PolicyLevel.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::PolicyLevelType Type { System::Security::PolicyLevelType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -810,35 +907,5 @@
         <altmember cref="T:System.Security.PolicyLevelType" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="RemoveNamedPermissionSet">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes a <see cref="T:System.Security.NamedPermissionSet" /> from the current policy level.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveFullTrustAssembly">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes an assembly from the list of assemblies the policy level uses to evaluate policy.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddFullTrustAssembly">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a <see cref="T:System.Security.Policy.StrongNameMembershipCondition" /> to the list of <see cref="T:System.Security.Policy.StrongNameMembershipCondition" /> objects used to determine whether an assembly is a member of the group of assemblies that should not be evaluated.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

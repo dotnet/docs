@@ -1,7 +1,10 @@
-<Type Name="OpenAccess" FullName="Microsoft.VisualBasic.OpenAccess">
+﻿<Type Name="OpenAccess" FullName="Microsoft.VisualBasic.OpenAccess">
   <TypeSignature Language="C#" Value="public enum OpenAccess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OpenAccess extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.OpenAccess" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OpenAccess" />
+  <TypeSignature Language="F#" Value="type OpenAccess = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class OpenAccess" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenAccess Default = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenAccess.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = -1" Usage="Microsoft.VisualBasic.OpenAccess.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -39,6 +45,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.OpenAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>Read and write access permitted. This is the default.</summary>
       </Docs>
@@ -47,6 +54,9 @@
       <MemberSignature Language="C#" Value="Read" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenAccess Read = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenAccess.Read" />
+      <MemberSignature Language="VB.NET" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 1" Usage="Microsoft.VisualBasic.OpenAccess.Read" />
+      <MemberSignature Language="C++ CLI" Value="Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -55,6 +65,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.OpenAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Read access permitted.</summary>
       </Docs>
@@ -63,6 +74,9 @@
       <MemberSignature Language="C#" Value="ReadWrite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenAccess ReadWrite = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenAccess.ReadWrite" />
+      <MemberSignature Language="VB.NET" Value="ReadWrite" />
+      <MemberSignature Language="F#" Value="ReadWrite = 3" Usage="Microsoft.VisualBasic.OpenAccess.ReadWrite" />
+      <MemberSignature Language="C++ CLI" Value="ReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -71,6 +85,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.OpenAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Read and write access permitted.</summary>
       </Docs>
@@ -79,6 +94,9 @@
       <MemberSignature Language="C#" Value="Write" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.OpenAccess Write = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.OpenAccess.Write" />
+      <MemberSignature Language="VB.NET" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 2" Usage="Microsoft.VisualBasic.OpenAccess.Write" />
+      <MemberSignature Language="C++ CLI" Value="Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -87,6 +105,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.OpenAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Write access permitted.</summary>
       </Docs>

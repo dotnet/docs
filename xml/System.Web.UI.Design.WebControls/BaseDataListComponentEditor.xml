@@ -1,7 +1,10 @@
-<Type Name="BaseDataListComponentEditor" FullName="System.Web.UI.Design.WebControls.BaseDataListComponentEditor">
+﻿<Type Name="BaseDataListComponentEditor" FullName="System.Web.UI.Design.WebControls.BaseDataListComponentEditor">
   <TypeSignature Language="C#" Value="public abstract class BaseDataListComponentEditor : System.Windows.Forms.Design.WindowsFormsComponentEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseDataListComponentEditor extends System.Windows.Forms.Design.WindowsFormsComponentEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.BaseDataListComponentEditor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseDataListComponentEditor&#xA;Inherits WindowsFormsComponentEditor" />
+  <TypeSignature Language="F#" Value="type BaseDataListComponentEditor = class&#xA;    inherit WindowsFormsComponentEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BaseDataListComponentEditor abstract : System::Windows::Forms::Design::WindowsFormsComponentEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="public BaseDataListComponentEditor (int initialPage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 initialPage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataListComponentEditor.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initialPage As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.BaseDataListComponentEditor : int -&gt; System.Web.UI.Design.WebControls.BaseDataListComponentEditor" Usage="new System.Web.UI.Design.WebControls.BaseDataListComponentEditor initialPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BaseDataListComponentEditor(int initialPage);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -61,6 +67,9 @@
       <MemberSignature Language="C#" Value="public override bool EditComponent (System.ComponentModel.ITypeDescriptorContext context, object obj, System.Windows.Forms.IWin32Window parent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool EditComponent(class System.ComponentModel.ITypeDescriptorContext context, object obj, class System.Windows.Forms.IWin32Window parent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataListComponentEditor.EditComponent(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Windows.Forms.IWin32Window)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EditComponent (context As ITypeDescriptorContext, obj As Object, parent As IWin32Window) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.EditComponent : System.ComponentModel.ITypeDescriptorContext * obj * System.Windows.Forms.IWin32Window -&gt; bool" Usage="baseDataListComponentEditor.EditComponent (context, obj, parent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool EditComponent(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ obj, System::Windows::Forms::IWin32Window ^ parent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -104,6 +113,9 @@
       <MemberSignature Language="C#" Value="protected override int GetInitialComponentEditorPageIndex ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 GetInitialComponentEditorPageIndex() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BaseDataListComponentEditor.GetInitialComponentEditorPageIndex" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetInitialComponentEditorPageIndex () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetInitialComponentEditorPageIndex : unit -&gt; int" Usage="baseDataListComponentEditor.GetInitialComponentEditorPageIndex " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int GetInitialComponentEditorPageIndex();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

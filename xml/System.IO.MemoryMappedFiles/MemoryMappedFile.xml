@@ -1,7 +1,10 @@
-<Type Name="MemoryMappedFile" FullName="System.IO.MemoryMappedFiles.MemoryMappedFile">
+﻿<Type Name="MemoryMappedFile" FullName="System.IO.MemoryMappedFiles.MemoryMappedFile">
   <TypeSignature Language="C#" Value="public class MemoryMappedFile : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MemoryMappedFile extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IO.MemoryMappedFiles.MemoryMappedFile" />
+  <TypeSignature Language="VB.NET" Value="Public Class MemoryMappedFile&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type MemoryMappedFile = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MemoryMappedFile : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,10 +55,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="CreateFromFile">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a memory-mapped file from an existing file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateFromFile">
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile CreateFromFile (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile CreateFromFile(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromFile (path As String) As MemoryMappedFile" />
+      <MemberSignature Language="F#" Value="static member CreateFromFile : string -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ CreateFromFile(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -110,6 +126,9 @@
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile CreateFromFile (string path, System.IO.FileMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile CreateFromFile(string path, valuetype System.IO.FileMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile(System.String,System.IO.FileMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromFile (path As String, mode As FileMode) As MemoryMappedFile" />
+      <MemberSignature Language="F#" Value="static member CreateFromFile : string * System.IO.FileMode -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile (path, mode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ CreateFromFile(System::String ^ path, System::IO::FileMode mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -176,6 +195,9 @@
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile CreateFromFile (string path, System.IO.FileMode mode, string mapName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile CreateFromFile(string path, valuetype System.IO.FileMode mode, string mapName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile(System.String,System.IO.FileMode,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromFile (path As String, mode As FileMode, mapName As String) As MemoryMappedFile" />
+      <MemberSignature Language="F#" Value="static member CreateFromFile : string * System.IO.FileMode * string -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile (path, mode, mapName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ CreateFromFile(System::String ^ path, System::IO::FileMode mode, System::String ^ mapName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -248,6 +270,9 @@
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile CreateFromFile (string path, System.IO.FileMode mode, string mapName, long capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile CreateFromFile(string path, valuetype System.IO.FileMode mode, string mapName, int64 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile(System.String,System.IO.FileMode,System.String,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromFile (path As String, mode As FileMode, mapName As String, capacity As Long) As MemoryMappedFile" />
+      <MemberSignature Language="F#" Value="static member CreateFromFile : string * System.IO.FileMode * string * int64 -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile (path, mode, mapName, capacity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ CreateFromFile(System::String ^ path, System::IO::FileMode mode, System::String ^ mapName, long capacity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -329,6 +354,9 @@
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile CreateFromFile (string path, System.IO.FileMode mode, string mapName, long capacity, System.IO.MemoryMappedFiles.MemoryMappedFileAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile CreateFromFile(string path, valuetype System.IO.FileMode mode, string mapName, int64 capacity, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile(System.String,System.IO.FileMode,System.String,System.Int64,System.IO.MemoryMappedFiles.MemoryMappedFileAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromFile (path As String, mode As FileMode, mapName As String, capacity As Long, access As MemoryMappedFileAccess) As MemoryMappedFile" />
+      <MemberSignature Language="F#" Value="static member CreateFromFile : string * System.IO.FileMode * string * int64 * System.IO.MemoryMappedFiles.MemoryMappedFileAccess -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile (path, mode, mapName, capacity, access)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ CreateFromFile(System::String ^ path, System::IO::FileMode mode, System::String ^ mapName, long capacity, System::IO::MemoryMappedFiles::MemoryMappedFileAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -427,6 +455,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile CreateFromFile (System.IO.FileStream fileStream, string mapName, long capacity, System.IO.MemoryMappedFiles.MemoryMappedFileAccess access, System.IO.HandleInheritability inheritability, bool leaveOpen);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile CreateFromFile(class System.IO.FileStream fileStream, string mapName, int64 capacity, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess access, valuetype System.IO.HandleInheritability inheritability, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile(System.IO.FileStream,System.String,System.Int64,System.IO.MemoryMappedFiles.MemoryMappedFileAccess,System.IO.HandleInheritability,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member CreateFromFile : System.IO.FileStream * string * int64 * System.IO.MemoryMappedFiles.MemoryMappedFileAccess * System.IO.HandleInheritability * bool -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile (fileStream, mapName, capacity, access, inheritability, leaveOpen)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ CreateFromFile(System::IO::FileStream ^ fileStream, System::String ^ mapName, long capacity, System::IO::MemoryMappedFiles::MemoryMappedFileAccess access, System::IO::HandleInheritability inheritability, bool leaveOpen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -501,6 +531,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile CreateFromFile (System.IO.FileStream fileStream, string mapName, long capacity, System.IO.MemoryMappedFiles.MemoryMappedFileAccess access, System.IO.MemoryMappedFiles.MemoryMappedFileSecurity memoryMappedFileSecurity, System.IO.HandleInheritability inheritability, bool leaveOpen);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile CreateFromFile(class System.IO.FileStream fileStream, string mapName, int64 capacity, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess access, class System.IO.MemoryMappedFiles.MemoryMappedFileSecurity memoryMappedFileSecurity, valuetype System.IO.HandleInheritability inheritability, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile(System.IO.FileStream,System.String,System.Int64,System.IO.MemoryMappedFiles.MemoryMappedFileAccess,System.IO.MemoryMappedFiles.MemoryMappedFileSecurity,System.IO.HandleInheritability,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member CreateFromFile : System.IO.FileStream * string * int64 * System.IO.MemoryMappedFiles.MemoryMappedFileAccess * System.IO.MemoryMappedFiles.MemoryMappedFileSecurity * System.IO.HandleInheritability * bool -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile (fileStream, mapName, capacity, access, memoryMappedFileSecurity, inheritability, leaveOpen)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ CreateFromFile(System::IO::FileStream ^ fileStream, System::String ^ mapName, long capacity, System::IO::MemoryMappedFiles::MemoryMappedFileAccess access, System::IO::MemoryMappedFiles::MemoryMappedFileSecurity ^ memoryMappedFileSecurity, System::IO::HandleInheritability inheritability, bool leaveOpen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -577,10 +609,23 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateNew">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a memory-mapped file in system memory.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateNew">
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile CreateNew (string mapName, long capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile CreateNew(string mapName, int64 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew(System.String,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateNew (mapName As String, capacity As Long) As MemoryMappedFile" />
+      <MemberSignature Language="F#" Value="static member CreateNew : string * int64 -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew (mapName, capacity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ CreateNew(System::String ^ mapName, long capacity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -682,6 +727,9 @@ Process C says: True
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile CreateNew (string mapName, long capacity, System.IO.MemoryMappedFiles.MemoryMappedFileAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile CreateNew(string mapName, int64 capacity, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew(System.String,System.Int64,System.IO.MemoryMappedFiles.MemoryMappedFileAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateNew (mapName As String, capacity As Long, access As MemoryMappedFileAccess) As MemoryMappedFile" />
+      <MemberSignature Language="F#" Value="static member CreateNew : string * int64 * System.IO.MemoryMappedFiles.MemoryMappedFileAccess -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew (mapName, capacity, access)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ CreateNew(System::String ^ mapName, long capacity, System::IO::MemoryMappedFiles::MemoryMappedFileAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -739,6 +787,9 @@ Process C says: True
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile CreateNew (string mapName, long capacity, System.IO.MemoryMappedFiles.MemoryMappedFileAccess access, System.IO.MemoryMappedFiles.MemoryMappedFileOptions options, System.IO.HandleInheritability inheritability);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile CreateNew(string mapName, int64 capacity, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess access, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileOptions options, valuetype System.IO.HandleInheritability inheritability) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew(System.String,System.Int64,System.IO.MemoryMappedFiles.MemoryMappedFileAccess,System.IO.MemoryMappedFiles.MemoryMappedFileOptions,System.IO.HandleInheritability)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateNew (mapName As String, capacity As Long, access As MemoryMappedFileAccess, options As MemoryMappedFileOptions, inheritability As HandleInheritability) As MemoryMappedFile" />
+      <MemberSignature Language="F#" Value="static member CreateNew : string * int64 * System.IO.MemoryMappedFiles.MemoryMappedFileAccess * System.IO.MemoryMappedFiles.MemoryMappedFileOptions * System.IO.HandleInheritability -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew (mapName, capacity, access, options, inheritability)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ CreateNew(System::String ^ mapName, long capacity, System::IO::MemoryMappedFiles::MemoryMappedFileAccess access, System::IO::MemoryMappedFiles::MemoryMappedFileOptions options, System::IO::HandleInheritability inheritability);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -797,6 +848,8 @@ Process C says: True
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile CreateNew (string mapName, long capacity, System.IO.MemoryMappedFiles.MemoryMappedFileAccess access, System.IO.MemoryMappedFiles.MemoryMappedFileOptions options, System.IO.MemoryMappedFiles.MemoryMappedFileSecurity memoryMappedFileSecurity, System.IO.HandleInheritability inheritability);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile CreateNew(string mapName, int64 capacity, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess access, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileOptions options, class System.IO.MemoryMappedFiles.MemoryMappedFileSecurity memoryMappedFileSecurity, valuetype System.IO.HandleInheritability inheritability) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew(System.String,System.Int64,System.IO.MemoryMappedFiles.MemoryMappedFileAccess,System.IO.MemoryMappedFiles.MemoryMappedFileOptions,System.IO.MemoryMappedFiles.MemoryMappedFileSecurity,System.IO.HandleInheritability)" />
+      <MemberSignature Language="F#" Value="static member CreateNew : string * int64 * System.IO.MemoryMappedFiles.MemoryMappedFileAccess * System.IO.MemoryMappedFiles.MemoryMappedFileOptions * System.IO.MemoryMappedFiles.MemoryMappedFileSecurity * System.IO.HandleInheritability -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew (mapName, capacity, access, options, memoryMappedFileSecurity, inheritability)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ CreateNew(System::String ^ mapName, long capacity, System::IO::MemoryMappedFiles::MemoryMappedFileAccess access, System::IO::MemoryMappedFiles::MemoryMappedFileOptions options, System::IO::MemoryMappedFiles::MemoryMappedFileSecurity ^ memoryMappedFileSecurity, System::IO::HandleInheritability inheritability);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -854,10 +907,23 @@ Process C says: True
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateOrOpen">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates or opens a memory-mapped file in system memory.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateOrOpen">
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile CreateOrOpen (string mapName, long capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile CreateOrOpen(string mapName, int64 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen(System.String,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateOrOpen (mapName As String, capacity As Long) As MemoryMappedFile" />
+      <MemberSignature Language="F#" Value="static member CreateOrOpen : string * int64 -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen (mapName, capacity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ CreateOrOpen(System::String ^ mapName, long capacity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -909,6 +975,9 @@ Process C says: True
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile CreateOrOpen (string mapName, long capacity, System.IO.MemoryMappedFiles.MemoryMappedFileAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile CreateOrOpen(string mapName, int64 capacity, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen(System.String,System.Int64,System.IO.MemoryMappedFiles.MemoryMappedFileAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateOrOpen (mapName As String, capacity As Long, access As MemoryMappedFileAccess) As MemoryMappedFile" />
+      <MemberSignature Language="F#" Value="static member CreateOrOpen : string * int64 * System.IO.MemoryMappedFiles.MemoryMappedFileAccess -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen (mapName, capacity, access)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ CreateOrOpen(System::String ^ mapName, long capacity, System::IO::MemoryMappedFiles::MemoryMappedFileAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -971,6 +1040,9 @@ Process C says: True
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile CreateOrOpen (string mapName, long capacity, System.IO.MemoryMappedFiles.MemoryMappedFileAccess access, System.IO.MemoryMappedFiles.MemoryMappedFileOptions options, System.IO.HandleInheritability inheritability);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile CreateOrOpen(string mapName, int64 capacity, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess access, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileOptions options, valuetype System.IO.HandleInheritability inheritability) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen(System.String,System.Int64,System.IO.MemoryMappedFiles.MemoryMappedFileAccess,System.IO.MemoryMappedFiles.MemoryMappedFileOptions,System.IO.HandleInheritability)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateOrOpen (mapName As String, capacity As Long, access As MemoryMappedFileAccess, options As MemoryMappedFileOptions, inheritability As HandleInheritability) As MemoryMappedFile" />
+      <MemberSignature Language="F#" Value="static member CreateOrOpen : string * int64 * System.IO.MemoryMappedFiles.MemoryMappedFileAccess * System.IO.MemoryMappedFiles.MemoryMappedFileOptions * System.IO.HandleInheritability -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen (mapName, capacity, access, options, inheritability)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ CreateOrOpen(System::String ^ mapName, long capacity, System::IO::MemoryMappedFiles::MemoryMappedFileAccess access, System::IO::MemoryMappedFiles::MemoryMappedFileOptions options, System::IO::HandleInheritability inheritability);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -1034,6 +1106,8 @@ Process C says: True
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile CreateOrOpen (string mapName, long capacity, System.IO.MemoryMappedFiles.MemoryMappedFileAccess access, System.IO.MemoryMappedFiles.MemoryMappedFileOptions options, System.IO.MemoryMappedFiles.MemoryMappedFileSecurity memoryMappedFileSecurity, System.IO.HandleInheritability inheritability);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile CreateOrOpen(string mapName, int64 capacity, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess access, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileOptions options, class System.IO.MemoryMappedFiles.MemoryMappedFileSecurity memoryMappedFileSecurity, valuetype System.IO.HandleInheritability inheritability) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen(System.String,System.Int64,System.IO.MemoryMappedFiles.MemoryMappedFileAccess,System.IO.MemoryMappedFiles.MemoryMappedFileOptions,System.IO.MemoryMappedFiles.MemoryMappedFileSecurity,System.IO.HandleInheritability)" />
+      <MemberSignature Language="F#" Value="static member CreateOrOpen : string * int64 * System.IO.MemoryMappedFiles.MemoryMappedFileAccess * System.IO.MemoryMappedFiles.MemoryMappedFileOptions * System.IO.MemoryMappedFiles.MemoryMappedFileSecurity * System.IO.HandleInheritability -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.CreateOrOpen (mapName, capacity, access, options, memoryMappedFileSecurity, inheritability)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ CreateOrOpen(System::String ^ mapName, long capacity, System::IO::MemoryMappedFiles::MemoryMappedFileAccess access, System::IO::MemoryMappedFiles::MemoryMappedFileOptions options, System::IO::MemoryMappedFiles::MemoryMappedFileSecurity ^ memoryMappedFileSecurity, System::IO::HandleInheritability inheritability);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1096,10 +1170,23 @@ Process C says: True
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateViewAccessor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedViewAccessor" /> that maps to a view of the memory-mapped file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateViewAccessor">
       <MemberSignature Language="C#" Value="public System.IO.MemoryMappedFiles.MemoryMappedViewAccessor CreateViewAccessor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.MemoryMappedFiles.MemoryMappedViewAccessor CreateViewAccessor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewAccessor" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateViewAccessor () As MemoryMappedViewAccessor" />
+      <MemberSignature Language="F#" Value="member this.CreateViewAccessor : unit -&gt; System.IO.MemoryMappedFiles.MemoryMappedViewAccessor" Usage="memoryMappedFile.CreateViewAccessor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::MemoryMappedFiles::MemoryMappedViewAccessor ^ CreateViewAccessor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -1137,6 +1224,9 @@ Process C says: True
       <MemberSignature Language="C#" Value="public System.IO.MemoryMappedFiles.MemoryMappedViewAccessor CreateViewAccessor (long offset, long size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.MemoryMappedFiles.MemoryMappedViewAccessor CreateViewAccessor(int64 offset, int64 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewAccessor(System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateViewAccessor (offset As Long, size As Long) As MemoryMappedViewAccessor" />
+      <MemberSignature Language="F#" Value="member this.CreateViewAccessor : int64 * int64 -&gt; System.IO.MemoryMappedFiles.MemoryMappedViewAccessor" Usage="memoryMappedFile.CreateViewAccessor (offset, size)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::MemoryMappedFiles::MemoryMappedViewAccessor ^ CreateViewAccessor(long offset, long size);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -1196,6 +1286,9 @@ Process C says: True
       <MemberSignature Language="C#" Value="public System.IO.MemoryMappedFiles.MemoryMappedViewAccessor CreateViewAccessor (long offset, long size, System.IO.MemoryMappedFiles.MemoryMappedFileAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.MemoryMappedFiles.MemoryMappedViewAccessor CreateViewAccessor(int64 offset, int64 size, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewAccessor(System.Int64,System.Int64,System.IO.MemoryMappedFiles.MemoryMappedFileAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateViewAccessor (offset As Long, size As Long, access As MemoryMappedFileAccess) As MemoryMappedViewAccessor" />
+      <MemberSignature Language="F#" Value="member this.CreateViewAccessor : int64 * int64 * System.IO.MemoryMappedFiles.MemoryMappedFileAccess -&gt; System.IO.MemoryMappedFiles.MemoryMappedViewAccessor" Usage="memoryMappedFile.CreateViewAccessor (offset, size, access)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::MemoryMappedFiles::MemoryMappedViewAccessor ^ CreateViewAccessor(long offset, long size, System::IO::MemoryMappedFiles::MemoryMappedFileAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -1247,10 +1340,23 @@ Process C says: True
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateViewStream">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a stream that maps to a view of the memory-mapped file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateViewStream">
       <MemberSignature Language="C#" Value="public System.IO.MemoryMappedFiles.MemoryMappedViewStream CreateViewStream ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.MemoryMappedFiles.MemoryMappedViewStream CreateViewStream() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewStream" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateViewStream () As MemoryMappedViewStream" />
+      <MemberSignature Language="F#" Value="member this.CreateViewStream : unit -&gt; System.IO.MemoryMappedFiles.MemoryMappedViewStream" Usage="memoryMappedFile.CreateViewStream " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::MemoryMappedFiles::MemoryMappedViewStream ^ CreateViewStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -1296,6 +1402,9 @@ Process C says: True
       <MemberSignature Language="C#" Value="public System.IO.MemoryMappedFiles.MemoryMappedViewStream CreateViewStream (long offset, long size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.MemoryMappedFiles.MemoryMappedViewStream CreateViewStream(int64 offset, int64 size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewStream(System.Int64,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateViewStream (offset As Long, size As Long) As MemoryMappedViewStream" />
+      <MemberSignature Language="F#" Value="member this.CreateViewStream : int64 * int64 -&gt; System.IO.MemoryMappedFiles.MemoryMappedViewStream" Usage="memoryMappedFile.CreateViewStream (offset, size)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::MemoryMappedFiles::MemoryMappedViewStream ^ CreateViewStream(long offset, long size);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -1348,6 +1457,9 @@ Process C says: True
       <MemberSignature Language="C#" Value="public System.IO.MemoryMappedFiles.MemoryMappedViewStream CreateViewStream (long offset, long size, System.IO.MemoryMappedFiles.MemoryMappedFileAccess access);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.MemoryMappedFiles.MemoryMappedViewStream CreateViewStream(int64 offset, int64 size, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileAccess access) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewStream(System.Int64,System.Int64,System.IO.MemoryMappedFiles.MemoryMappedFileAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateViewStream (offset As Long, size As Long, access As MemoryMappedFileAccess) As MemoryMappedViewStream" />
+      <MemberSignature Language="F#" Value="member this.CreateViewStream : int64 * int64 * System.IO.MemoryMappedFiles.MemoryMappedFileAccess -&gt; System.IO.MemoryMappedFiles.MemoryMappedViewStream" Usage="memoryMappedFile.CreateViewStream (offset, size, access)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::MemoryMappedFiles::MemoryMappedViewStream ^ CreateViewStream(long offset, long size, System::IO::MemoryMappedFiles::MemoryMappedFileAccess access);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -1408,11 +1520,27 @@ Process C says: True
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="memoryMappedFile.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1440,6 +1568,9 @@ Process C says: True
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="memoryMappedFile.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -1472,6 +1603,9 @@ Process C says: True
       <MemberSignature Language="C#" Value="public System.IO.MemoryMappedFiles.MemoryMappedFileSecurity GetAccessControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.MemoryMappedFiles.MemoryMappedFileSecurity GetAccessControl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.GetAccessControl" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAccessControl () As MemoryMappedFileSecurity" />
+      <MemberSignature Language="F#" Value="member this.GetAccessControl : unit -&gt; System.IO.MemoryMappedFiles.MemoryMappedFileSecurity" Usage="memoryMappedFile.GetAccessControl " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::MemoryMappedFiles::MemoryMappedFileSecurity ^ GetAccessControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1497,10 +1631,23 @@ Process C says: True
  The memory-mapped file was opened as <see cref="F:System.IO.MemoryMappedFiles.MemoryMappedFileAccess.Write" /> only.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenExisting">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens an existing named memory-mapped file in system memory.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OpenExisting">
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile OpenExisting (string mapName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile OpenExisting(string mapName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.OpenExisting(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenExisting (mapName As String) As MemoryMappedFile" />
+      <MemberSignature Language="F#" Value="static member OpenExisting : string -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.OpenExisting mapName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ OpenExisting(System::String ^ mapName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -1559,6 +1706,9 @@ Process C says: True
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile OpenExisting (string mapName, System.IO.MemoryMappedFiles.MemoryMappedFileRights desiredAccessRights);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile OpenExisting(string mapName, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileRights desiredAccessRights) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.OpenExisting(System.String,System.IO.MemoryMappedFiles.MemoryMappedFileRights)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenExisting (mapName As String, desiredAccessRights As MemoryMappedFileRights) As MemoryMappedFile" />
+      <MemberSignature Language="F#" Value="static member OpenExisting : string * System.IO.MemoryMappedFiles.MemoryMappedFileRights -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.OpenExisting (mapName, desiredAccessRights)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ OpenExisting(System::String ^ mapName, System::IO::MemoryMappedFiles::MemoryMappedFileRights desiredAccessRights);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -1600,6 +1750,9 @@ Process C says: True
       <MemberSignature Language="C#" Value="public static System.IO.MemoryMappedFiles.MemoryMappedFile OpenExisting (string mapName, System.IO.MemoryMappedFiles.MemoryMappedFileRights desiredAccessRights, System.IO.HandleInheritability inheritability);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.MemoryMappedFiles.MemoryMappedFile OpenExisting(string mapName, valuetype System.IO.MemoryMappedFiles.MemoryMappedFileRights desiredAccessRights, valuetype System.IO.HandleInheritability inheritability) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.OpenExisting(System.String,System.IO.MemoryMappedFiles.MemoryMappedFileRights,System.IO.HandleInheritability)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenExisting (mapName As String, desiredAccessRights As MemoryMappedFileRights, inheritability As HandleInheritability) As MemoryMappedFile" />
+      <MemberSignature Language="F#" Value="static member OpenExisting : string * System.IO.MemoryMappedFiles.MemoryMappedFileRights * System.IO.HandleInheritability -&gt; System.IO.MemoryMappedFiles.MemoryMappedFile" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.OpenExisting (mapName, desiredAccessRights, inheritability)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::MemoryMappedFiles::MemoryMappedFile ^ OpenExisting(System::String ^ mapName, System::IO::MemoryMappedFiles::MemoryMappedFileRights desiredAccessRights, System::IO::HandleInheritability inheritability);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -1649,6 +1802,9 @@ Process C says: True
       <MemberSignature Language="C#" Value="public Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle SafeMemoryMappedFileHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle SafeMemoryMappedFileHandle" />
       <MemberSignature Language="DocId" Value="P:System.IO.MemoryMappedFiles.MemoryMappedFile.SafeMemoryMappedFileHandle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SafeMemoryMappedFileHandle As SafeMemoryMappedFileHandle" />
+      <MemberSignature Language="F#" Value="member this.SafeMemoryMappedFileHandle : Microsoft.Win32.SafeHandles.SafeMemoryMappedFileHandle" Usage="System.IO.MemoryMappedFiles.MemoryMappedFile.SafeMemoryMappedFileHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SafeHandles::SafeMemoryMappedFileHandle ^ SafeMemoryMappedFileHandle { Microsoft::Win32::SafeHandles::SafeMemoryMappedFileHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
@@ -1678,6 +1834,8 @@ Process C says: True
       <MemberSignature Language="C#" Value="public void SetAccessControl (System.IO.MemoryMappedFiles.MemoryMappedFileSecurity memoryMappedFileSecurity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessControl(class System.IO.MemoryMappedFiles.MemoryMappedFileSecurity memoryMappedFileSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.MemoryMappedFiles.MemoryMappedFile.SetAccessControl(System.IO.MemoryMappedFiles.MemoryMappedFileSecurity)" />
+      <MemberSignature Language="F#" Value="member this.SetAccessControl : System.IO.MemoryMappedFiles.MemoryMappedFileSecurity -&gt; unit" Usage="memoryMappedFile.SetAccessControl memoryMappedFileSecurity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessControl(System::IO::MemoryMappedFiles::MemoryMappedFileSecurity ^ memoryMappedFileSecurity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1701,75 +1859,5 @@ Process C says: True
         <exception cref="T:System.UnauthorizedAccessException">An underlying call to set security information failed.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateViewStream">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a stream that maps to a view of the memory-mapped file.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateOrOpen">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates or opens a memory-mapped file in system memory.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFile" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateViewAccessor">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedViewAccessor" /> that maps to a view of the memory-mapped file.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="OpenExisting">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens an existing named memory-mapped file in system memory.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateNew">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a memory-mapped file in system memory.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateFromFile">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a memory-mapped file from an existing file.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

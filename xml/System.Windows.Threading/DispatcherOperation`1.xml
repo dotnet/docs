@@ -1,7 +1,10 @@
-<Type Name="DispatcherOperation&lt;TResult&gt;" FullName="System.Windows.Threading.DispatcherOperation&lt;TResult&gt;">
+﻿<Type Name="DispatcherOperation&lt;TResult&gt;" FullName="System.Windows.Threading.DispatcherOperation&lt;TResult&gt;">
   <TypeSignature Language="C#" Value="public class DispatcherOperation&lt;TResult&gt; : System.Windows.Threading.DispatcherOperation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DispatcherOperation`1&lt;TResult&gt; extends System.Windows.Threading.DispatcherOperation" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherOperation`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class DispatcherOperation(Of TResult)&#xA;Inherits DispatcherOperation" />
+  <TypeSignature Language="F#" Value="type DispatcherOperation&lt;'Result&gt; = class&#xA;    inherit DispatcherOperation" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TResult&gt;&#xA;public ref class DispatcherOperation : System::Windows::Threading::DispatcherOperation" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.CompilerServices.TaskAwaiter&lt;TResult&gt; GetAwaiter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Runtime.CompilerServices.TaskAwaiter`1&lt;!TResult&gt; GetAwaiter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherOperation`1.GetAwaiter" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAwaiter () As TaskAwaiter(Of TResult)" />
+      <MemberSignature Language="F#" Value="override this.GetAwaiter : unit -&gt; System.Runtime.CompilerServices.TaskAwaiter&lt;'Result&gt;" Usage="dispatcherOperation.GetAwaiter " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Runtime::CompilerServices::TaskAwaiter&lt;TResult&gt; GetAwaiter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="protected override object InvokeDelegateCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object InvokeDelegateCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherOperation`1.InvokeDelegateCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function InvokeDelegateCore () As Object" />
+      <MemberSignature Language="F#" Value="override this.InvokeDelegateCore : unit -&gt; obj" Usage="dispatcherOperation.InvokeDelegateCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ InvokeDelegateCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -69,6 +78,9 @@
       <MemberSignature Language="C#" Value="public TResult Result { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TResult Result" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherOperation`1.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As TResult" />
+      <MemberSignature Language="F#" Value="member this.Result : 'Result" Usage="System.Windows.Threading.DispatcherOperation&lt;'Result&gt;.Result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TResult Result { TResult get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -87,6 +99,9 @@
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;TResult&gt; Task { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.Tasks.Task`1&lt;!TResult&gt; Task" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherOperation`1.Task" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Task As Task(Of TResult)" />
+      <MemberSignature Language="F#" Value="member this.Task : System.Threading.Tasks.Task&lt;'Result&gt;" Usage="System.Windows.Threading.DispatcherOperation&lt;'Result&gt;.Task" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::Tasks::Task&lt;TResult&gt; ^ Task { System::Threading::Tasks::Task&lt;TResult&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

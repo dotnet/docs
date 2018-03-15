@@ -1,7 +1,10 @@
-<Type Name="UserControlControlBuilder" FullName="System.Web.UI.UserControlControlBuilder">
+﻿<Type Name="UserControlControlBuilder" FullName="System.Web.UI.UserControlControlBuilder">
   <TypeSignature Language="C#" Value="public class UserControlControlBuilder : System.Web.UI.ControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UserControlControlBuilder extends System.Web.UI.ControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.UserControlControlBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class UserControlControlBuilder&#xA;Inherits ControlBuilder" />
+  <TypeSignature Language="F#" Value="type UserControlControlBuilder = class&#xA;    inherit ControlBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UserControlControlBuilder : System::Web::UI::ControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,8 @@
       <MemberSignature Language="C#" Value="public UserControlControlBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControlControlBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UserControlControlBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -43,6 +48,9 @@
       <MemberSignature Language="C#" Value="public override object BuildObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object BuildObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControlControlBuilder.BuildObject" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildObject () As Object" />
+      <MemberSignature Language="F#" Value="override this.BuildObject : unit -&gt; obj" Usage="userControlControlBuilder.BuildObject " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ BuildObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +70,9 @@
       <MemberSignature Language="C#" Value="public override bool NeedsTagInnerText ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool NeedsTagInnerText() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControlControlBuilder.NeedsTagInnerText" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function NeedsTagInnerText () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.NeedsTagInnerText : unit -&gt; bool" Usage="userControlControlBuilder.NeedsTagInnerText " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool NeedsTagInnerText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +100,9 @@
       <MemberSignature Language="C#" Value="public override void SetTagInnerText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetTagInnerText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.UserControlControlBuilder.SetTagInnerText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetTagInnerText (text As String)" />
+      <MemberSignature Language="F#" Value="override this.SetTagInnerText : string -&gt; unit" Usage="userControlControlBuilder.SetTagInnerText text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetTagInnerText(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

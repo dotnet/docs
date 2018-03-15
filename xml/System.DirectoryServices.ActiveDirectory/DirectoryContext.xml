@@ -1,7 +1,10 @@
-<Type Name="DirectoryContext" FullName="System.DirectoryServices.ActiveDirectory.DirectoryContext">
+﻿<Type Name="DirectoryContext" FullName="System.DirectoryServices.ActiveDirectory.DirectoryContext">
   <TypeSignature Language="C#" Value="public class DirectoryContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi DirectoryContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class DirectoryContext" />
+  <TypeSignature Language="F#" Value="type DirectoryContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectoryContext" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,10 +39,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DirectoryContext (System.DirectoryServices.ActiveDirectory.DirectoryContextType contextType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.ActiveDirectory.DirectoryContextType contextType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryContext.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContextType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contextType As DirectoryContextType)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.DirectoryContext : System.DirectoryServices.ActiveDirectory.DirectoryContextType -&gt; System.DirectoryServices.ActiveDirectory.DirectoryContext" Usage="new System.DirectoryServices.ActiveDirectory.DirectoryContext contextType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryContext(System::DirectoryServices::ActiveDirectory::DirectoryContextType contextType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -64,6 +80,9 @@
       <MemberSignature Language="C#" Value="public DirectoryContext (System.DirectoryServices.ActiveDirectory.DirectoryContextType contextType, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.ActiveDirectory.DirectoryContextType contextType, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryContext.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContextType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contextType As DirectoryContextType, name As String)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.DirectoryContext : System.DirectoryServices.ActiveDirectory.DirectoryContextType * string -&gt; System.DirectoryServices.ActiveDirectory.DirectoryContext" Usage="new System.DirectoryServices.ActiveDirectory.DirectoryContext (contextType, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryContext(System::DirectoryServices::ActiveDirectory::DirectoryContextType contextType, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -94,6 +113,9 @@
       <MemberSignature Language="C#" Value="public DirectoryContext (System.DirectoryServices.ActiveDirectory.DirectoryContextType contextType, string username, string password);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.ActiveDirectory.DirectoryContextType contextType, string username, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryContext.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContextType,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contextType As DirectoryContextType, username As String, password As String)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.DirectoryContext : System.DirectoryServices.ActiveDirectory.DirectoryContextType * string * string -&gt; System.DirectoryServices.ActiveDirectory.DirectoryContext" Usage="new System.DirectoryServices.ActiveDirectory.DirectoryContext (contextType, username, password)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryContext(System::DirectoryServices::ActiveDirectory::DirectoryContextType contextType, System::String ^ username, System::String ^ password);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -122,6 +144,9 @@
       <MemberSignature Language="C#" Value="public DirectoryContext (System.DirectoryServices.ActiveDirectory.DirectoryContextType contextType, string name, string username, string password);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DirectoryServices.ActiveDirectory.DirectoryContextType contextType, string name, string username, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.DirectoryContext.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContextType,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contextType As DirectoryContextType, name As String, username As String, password As String)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.DirectoryContext : System.DirectoryServices.ActiveDirectory.DirectoryContextType * string * string * string -&gt; System.DirectoryServices.ActiveDirectory.DirectoryContext" Usage="new System.DirectoryServices.ActiveDirectory.DirectoryContext (contextType, name, username, password)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryContext(System::DirectoryServices::ActiveDirectory::DirectoryContextType contextType, System::String ^ name, System::String ^ username, System::String ^ password);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -156,6 +181,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.DirectoryContextType ContextType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.DirectoryContextType ContextType" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DirectoryContext.ContextType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContextType As DirectoryContextType" />
+      <MemberSignature Language="F#" Value="member this.ContextType : System.DirectoryServices.ActiveDirectory.DirectoryContextType" Usage="System.DirectoryServices.ActiveDirectory.DirectoryContext.ContextType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::DirectoryContextType ContextType { System::DirectoryServices::ActiveDirectory::DirectoryContextType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -176,6 +204,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DirectoryContext.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.DirectoryServices.ActiveDirectory.DirectoryContext.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -195,6 +226,9 @@
       <MemberSignature Language="C#" Value="public string UserName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserName" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.DirectoryContext.UserName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserName As String" />
+      <MemberSignature Language="F#" Value="member this.UserName : string" Usage="System.DirectoryServices.ActiveDirectory.DirectoryContext.UserName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -210,15 +244,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.DirectoryContext" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

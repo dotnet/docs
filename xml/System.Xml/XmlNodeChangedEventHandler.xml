@@ -1,7 +1,10 @@
-<Type Name="XmlNodeChangedEventHandler" FullName="System.Xml.XmlNodeChangedEventHandler">
+﻿<Type Name="XmlNodeChangedEventHandler" FullName="System.Xml.XmlNodeChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void XmlNodeChangedEventHandler(object sender, XmlNodeChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlNodeChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNodeChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub XmlNodeChangedEventHandler(sender As Object, e As XmlNodeChangedEventArgs)" />
+  <TypeSignature Language="F#" Value="type XmlNodeChangedEventHandler = delegate of obj * XmlNodeChangedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void XmlNodeChangedEventHandler(System::Object ^ sender, XmlNodeChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>

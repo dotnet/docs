@@ -1,7 +1,10 @@
-<Type Name="DesignerNamespaceResolveEventArgs" FullName="System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs">
+﻿<Type Name="DesignerNamespaceResolveEventArgs" FullName="System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs">
   <TypeSignature Language="C#" Value="public class DesignerNamespaceResolveEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerNamespaceResolveEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DesignerNamespaceResolveEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type DesignerNamespaceResolveEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerNamespaceResolveEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public DesignerNamespaceResolveEventArgs (string namespaceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string namespaceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (namespaceName As String)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs : string -&gt; System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs" Usage="new System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs namespaceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignerNamespaceResolveEventArgs(System::String ^ namespaceName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -46,6 +52,9 @@
       <MemberSignature Language="C#" Value="public string NamespaceName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NamespaceName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs.NamespaceName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceName As String" />
+      <MemberSignature Language="F#" Value="member this.NamespaceName : string" Usage="System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs.NamespaceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -66,6 +75,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;string&gt; ResolvedAssemblyFiles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;string&gt; ResolvedAssemblyFiles" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs.ResolvedAssemblyFiles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResolvedAssemblyFiles As Collection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.ResolvedAssemblyFiles : System.Collections.ObjectModel.Collection&lt;string&gt;" Usage="System.Runtime.InteropServices.WindowsRuntime.DesignerNamespaceResolveEventArgs.ResolvedAssemblyFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ ResolvedAssemblyFiles { System::Collections::ObjectModel::Collection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

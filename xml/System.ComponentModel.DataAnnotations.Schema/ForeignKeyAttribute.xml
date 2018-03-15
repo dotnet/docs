@@ -1,7 +1,10 @@
-<Type Name="ForeignKeyAttribute" FullName="System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute">
+﻿<Type Name="ForeignKeyAttribute" FullName="System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute">
   <TypeSignature Language="C#" Value="public class ForeignKeyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ForeignKeyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class ForeignKeyAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ForeignKeyAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ForeignKeyAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -18,7 +21,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field, AllowMultiple=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public ForeignKeyAttribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute : string -&gt; System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute" Usage="new System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ForeignKeyAttribute(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -54,6 +60,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ComponentModel.DataAnnotations.Schema.ForeignKeyAttribute.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

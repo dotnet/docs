@@ -1,7 +1,10 @@
-<Type Name="WebPartAddingEventArgs" FullName="System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs">
+﻿<Type Name="WebPartAddingEventArgs" FullName="System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs">
   <TypeSignature Language="C#" Value="public class WebPartAddingEventArgs : System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebPartAddingEventArgs extends System.Web.UI.WebControls.WebParts.WebPartCancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebPartAddingEventArgs&#xA;Inherits WebPartCancelEventArgs" />
+  <TypeSignature Language="F#" Value="type WebPartAddingEventArgs = class&#xA;    inherit WebPartCancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartAddingEventArgs : System::Web::UI::WebControls::WebParts::WebPartCancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,8 @@
       <MemberSignature Language="C#" Value="public WebPartAddingEventArgs (System.Web.UI.WebControls.WebParts.WebPart webPart, System.Web.UI.WebControls.WebParts.WebPartZoneBase zone, int zoneIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.WebPart webPart, class System.Web.UI.WebControls.WebParts.WebPartZoneBase zone, int32 zoneIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs.#ctor(System.Web.UI.WebControls.WebParts.WebPart,System.Web.UI.WebControls.WebParts.WebPartZoneBase,System.Int32)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs : System.Web.UI.WebControls.WebParts.WebPart * System.Web.UI.WebControls.WebParts.WebPartZoneBase * int -&gt; System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs" Usage="new System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs (webPart, zone, zoneIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartAddingEventArgs(System::Web::UI::WebControls::WebParts::WebPart ^ webPart, System::Web::UI::WebControls::WebParts::WebPartZoneBase ^ zone, int zoneIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +55,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartZoneBase Zone { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartZoneBase Zone" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs.Zone" />
+      <MemberSignature Language="VB.NET" Value="Public Property Zone As WebPartZoneBase" />
+      <MemberSignature Language="F#" Value="member this.Zone : System.Web.UI.WebControls.WebParts.WebPartZoneBase with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs.Zone" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartZoneBase ^ Zone { System::Web::UI::WebControls::WebParts::WebPartZoneBase ^ get(); void set(System::Web::UI::WebControls::WebParts::WebPartZoneBase ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +76,9 @@
       <MemberSignature Language="C#" Value="public int ZoneIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ZoneIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs.ZoneIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property ZoneIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.ZoneIndex : int with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartAddingEventArgs.ZoneIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ZoneIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

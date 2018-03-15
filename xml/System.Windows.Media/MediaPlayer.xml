@@ -1,7 +1,10 @@
-<Type Name="MediaPlayer" FullName="System.Windows.Media.MediaPlayer">
+﻿<Type Name="MediaPlayer" FullName="System.Windows.Media.MediaPlayer">
   <TypeSignature Language="C#" Value="public class MediaPlayer : System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MediaPlayer extends System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.MediaPlayer" />
+  <TypeSignature Language="VB.NET" Value="Public Class MediaPlayer&#xA;Inherits Animatable" />
+  <TypeSignature Language="F#" Value="type MediaPlayer = class&#xA;    inherit Animatable&#xA;    interface DUCE.IResource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MediaPlayer : System::Windows::Media::Animation::Animatable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="public MediaPlayer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaPlayer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -55,6 +60,9 @@
       <MemberSignature Language="C#" Value="public double Balance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Balance" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.Balance" />
+      <MemberSignature Language="VB.NET" Value="Public Property Balance As Double" />
+      <MemberSignature Language="F#" Value="member this.Balance : double with get, set" Usage="System.Windows.Media.MediaPlayer.Balance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Balance { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +88,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BufferingEnded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BufferingEnded" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.MediaPlayer.BufferingEnded" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BufferingEnded As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BufferingEnded : EventHandler " Usage="member this.BufferingEnded : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BufferingEnded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -97,6 +108,9 @@
       <MemberSignature Language="C#" Value="public double BufferingProgress { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 BufferingProgress" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.BufferingProgress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BufferingProgress As Double" />
+      <MemberSignature Language="F#" Value="member this.BufferingProgress : double" Usage="System.Windows.Media.MediaPlayer.BufferingProgress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double BufferingProgress { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +129,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BufferingStarted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BufferingStarted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.MediaPlayer.BufferingStarted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BufferingStarted As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BufferingStarted : EventHandler " Usage="member this.BufferingStarted : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BufferingStarted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,6 +149,9 @@
       <MemberSignature Language="C#" Value="public bool CanPause { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanPause" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.CanPause" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanPause As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanPause : bool" Usage="System.Windows.Media.MediaPlayer.CanPause" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanPause { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -150,6 +170,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.MediaClock Clock { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.MediaClock Clock" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.Clock" />
+      <MemberSignature Language="VB.NET" Value="Public Property Clock As MediaClock" />
+      <MemberSignature Language="F#" Value="member this.Clock : System.Windows.Media.MediaClock with get, set" Usage="System.Windows.Media.MediaPlayer.Clock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::MediaClock ^ Clock { System::Windows::Media::MediaClock ^ get(); void set(System::Windows::Media::MediaClock ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -177,6 +200,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="mediaPlayer.CloneCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -207,6 +233,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="mediaPlayer.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -238,6 +267,9 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="mediaPlayer.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -263,6 +295,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="mediaPlayer.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,6 +317,9 @@
       <MemberSignature Language="C#" Value="public double DownloadProgress { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 DownloadProgress" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.DownloadProgress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DownloadProgress As Double" />
+      <MemberSignature Language="F#" Value="member this.DownloadProgress : double" Usage="System.Windows.Media.MediaPlayer.DownloadProgress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DownloadProgress { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -300,6 +338,9 @@
       <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="mediaPlayer.GetAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -332,6 +373,9 @@
       <MemberSignature Language="C#" Value="public bool HasAudio { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasAudio" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.HasAudio" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasAudio As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasAudio : bool" Usage="System.Windows.Media.MediaPlayer.HasAudio" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasAudio { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -350,6 +394,9 @@
       <MemberSignature Language="C#" Value="public bool HasVideo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasVideo" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.HasVideo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasVideo As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasVideo : bool" Usage="System.Windows.Media.MediaPlayer.HasVideo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasVideo { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -368,6 +415,9 @@
       <MemberSignature Language="C#" Value="public bool IsBuffering { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBuffering" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.IsBuffering" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBuffering As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsBuffering : bool" Usage="System.Windows.Media.MediaPlayer.IsBuffering" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBuffering { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -386,6 +436,9 @@
       <MemberSignature Language="C#" Value="public bool IsMuted { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMuted" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.IsMuted" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsMuted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsMuted : bool with get, set" Usage="System.Windows.Media.MediaPlayer.IsMuted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMuted { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -404,6 +457,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler MediaEnded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MediaEnded" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.MediaPlayer.MediaEnded" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MediaEnded As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MediaEnded : EventHandler " Usage="member this.MediaEnded : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MediaEnded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -421,6 +477,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Media.ExceptionEventArgs&gt; MediaFailed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Media.ExceptionEventArgs&gt; MediaFailed" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.MediaPlayer.MediaFailed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MediaFailed As EventHandler(Of ExceptionEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.MediaFailed : EventHandler&lt;System.Windows.Media.ExceptionEventArgs&gt; " Usage="member this.MediaFailed : System.EventHandler&lt;System.Windows.Media.ExceptionEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Media::ExceptionEventArgs ^&gt; ^ MediaFailed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -451,6 +510,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler MediaOpened;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MediaOpened" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.MediaPlayer.MediaOpened" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MediaOpened As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MediaOpened : EventHandler " Usage="member this.MediaOpened : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MediaOpened;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -468,6 +530,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Duration NaturalDuration { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Duration NaturalDuration" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.NaturalDuration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NaturalDuration As Duration" />
+      <MemberSignature Language="F#" Value="member this.NaturalDuration : System.Windows.Duration" Usage="System.Windows.Media.MediaPlayer.NaturalDuration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Duration NaturalDuration { System::Windows::Duration get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -493,6 +558,9 @@
       <MemberSignature Language="C#" Value="public int NaturalVideoHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NaturalVideoHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.NaturalVideoHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NaturalVideoHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.NaturalVideoHeight : int" Usage="System.Windows.Media.MediaPlayer.NaturalVideoHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NaturalVideoHeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -518,6 +586,9 @@
       <MemberSignature Language="C#" Value="public int NaturalVideoWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NaturalVideoWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.NaturalVideoWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NaturalVideoWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.NaturalVideoWidth : int" Usage="System.Windows.Media.MediaPlayer.NaturalVideoWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NaturalVideoWidth { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -543,6 +614,9 @@
       <MemberSignature Language="C#" Value="public void Open (Uri source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Open(class System.Uri source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.Open(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open (source As Uri)" />
+      <MemberSignature Language="F#" Value="member this.Open : Uri -&gt; unit" Usage="mediaPlayer.Open source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open(Uri ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -564,6 +638,9 @@
       <MemberSignature Language="C#" Value="public void Pause ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Pause() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.Pause" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Pause ()" />
+      <MemberSignature Language="F#" Value="member this.Pause : unit -&gt; unit" Usage="mediaPlayer.Pause " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Pause();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -589,6 +666,9 @@
       <MemberSignature Language="C#" Value="public void Play ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Play() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.Play" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Play ()" />
+      <MemberSignature Language="F#" Value="member this.Play : unit -&gt; unit" Usage="mediaPlayer.Play " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Play();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -614,6 +694,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Position" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Property Position As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.Position : TimeSpan with get, set" Usage="System.Windows.Media.MediaPlayer.Position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Position { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -643,6 +726,9 @@
       <MemberSignature Language="C#" Value="protected void ReadPreamble ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ReadPreamble() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.ReadPreamble" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ReadPreamble ()" />
+      <MemberSignature Language="F#" Value="override this.ReadPreamble : unit -&gt; unit" Usage="mediaPlayer.ReadPreamble " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ReadPreamble();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -661,6 +747,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Windows.Media.MediaScriptCommandEventArgs&gt; ScriptCommand;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Windows.Media.MediaScriptCommandEventArgs&gt; ScriptCommand" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.MediaPlayer.ScriptCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ScriptCommand As EventHandler(Of MediaScriptCommandEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ScriptCommand : EventHandler&lt;System.Windows.Media.MediaScriptCommandEventArgs&gt; " Usage="member this.ScriptCommand : System.EventHandler&lt;System.Windows.Media.MediaScriptCommandEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Windows::Media::MediaScriptCommandEventArgs ^&gt; ^ ScriptCommand;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -691,6 +780,9 @@
       <MemberSignature Language="C#" Value="public bool ScrubbingEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ScrubbingEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.ScrubbingEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrubbingEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ScrubbingEnabled : bool with get, set" Usage="System.Windows.Media.MediaPlayer.ScrubbingEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ScrubbingEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -710,6 +802,9 @@
       <MemberSignature Language="C#" Value="public Uri Source { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Source" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.Source" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Source As Uri" />
+      <MemberSignature Language="F#" Value="member this.Source : Uri" Usage="System.Windows.Media.MediaPlayer.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Source { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -735,6 +830,9 @@
       <MemberSignature Language="C#" Value="public double SpeedRatio { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 SpeedRatio" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.SpeedRatio" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpeedRatio As Double" />
+      <MemberSignature Language="F#" Value="member this.SpeedRatio : double with get, set" Usage="System.Windows.Media.MediaPlayer.SpeedRatio" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SpeedRatio { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -768,6 +866,9 @@
       <MemberSignature Language="C#" Value="public void Stop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="mediaPlayer.Stop " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -793,6 +894,9 @@
       <MemberSignature Language="C#" Value="public double Volume { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Volume" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaPlayer.Volume" />
+      <MemberSignature Language="VB.NET" Value="Public Property Volume As Double" />
+      <MemberSignature Language="F#" Value="member this.Volume : double with get, set" Usage="System.Windows.Media.MediaPlayer.Volume" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Volume { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -821,6 +925,9 @@
       <MemberSignature Language="C#" Value="protected void WritePreamble ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void WritePreamble() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaPlayer.WritePreamble" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub WritePreamble ()" />
+      <MemberSignature Language="F#" Value="override this.WritePreamble : unit -&gt; unit" Usage="mediaPlayer.WritePreamble " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void WritePreamble();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

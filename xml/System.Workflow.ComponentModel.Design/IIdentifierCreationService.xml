@@ -1,7 +1,10 @@
-<Type Name="IIdentifierCreationService" FullName="System.Workflow.ComponentModel.Design.IIdentifierCreationService">
+﻿<Type Name="IIdentifierCreationService" FullName="System.Workflow.ComponentModel.Design.IIdentifierCreationService">
   <TypeSignature Language="C#" Value="public interface IIdentifierCreationService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IIdentifierCreationService" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IIdentifierCreationService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IIdentifierCreationService" />
+  <TypeSignature Language="F#" Value="type IIdentifierCreationService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IIdentifierCreationService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +43,9 @@
       <MemberSignature Language="C#" Value="public void EnsureUniqueIdentifiers (System.Workflow.ComponentModel.CompositeActivity parentActivity, System.Collections.ICollection childActivities);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnsureUniqueIdentifiers(class System.Workflow.ComponentModel.CompositeActivity parentActivity, class System.Collections.ICollection childActivities) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IIdentifierCreationService.EnsureUniqueIdentifiers(System.Workflow.ComponentModel.CompositeActivity,System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnsureUniqueIdentifiers (parentActivity As CompositeActivity, childActivities As ICollection)" />
+      <MemberSignature Language="F#" Value="abstract member EnsureUniqueIdentifiers : System.Workflow.ComponentModel.CompositeActivity * System.Collections.ICollection -&gt; unit" Usage="iIdentifierCreationService.EnsureUniqueIdentifiers (parentActivity, childActivities)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnsureUniqueIdentifiers(System::Workflow::ComponentModel::CompositeActivity ^ parentActivity, System::Collections::ICollection ^ childActivities);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -78,6 +84,8 @@
       <MemberSignature Language="C#" Value="public void ValidateIdentifier (System.Workflow.ComponentModel.Activity activity, string identifier);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ValidateIdentifier(class System.Workflow.ComponentModel.Activity activity, string identifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IIdentifierCreationService.ValidateIdentifier(System.Workflow.ComponentModel.Activity,System.String)" />
+      <MemberSignature Language="F#" Value="abstract member ValidateIdentifier : System.Workflow.ComponentModel.Activity * string -&gt; unit" Usage="iIdentifierCreationService.ValidateIdentifier (activity, identifier)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ValidateIdentifier(System::Workflow::ComponentModel::Activity ^ activity, System::String ^ identifier);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

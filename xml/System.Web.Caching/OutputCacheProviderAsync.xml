@@ -1,7 +1,10 @@
-<Type Name="OutputCacheProviderAsync" FullName="System.Web.Caching.OutputCacheProviderAsync">
+﻿<Type Name="OutputCacheProviderAsync" FullName="System.Web.Caching.OutputCacheProviderAsync">
   <TypeSignature Language="C#" Value="public abstract class OutputCacheProviderAsync : System.Web.Caching.OutputCacheProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit OutputCacheProviderAsync extends System.Web.Caching.OutputCacheProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Caching.OutputCacheProviderAsync" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class OutputCacheProviderAsync&#xA;Inherits OutputCacheProvider" />
+  <TypeSignature Language="F#" Value="type OutputCacheProviderAsync = class&#xA;    inherit OutputCacheProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OutputCacheProviderAsync abstract : System::Web::Caching::OutputCacheProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="protected OutputCacheProviderAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProviderAsync.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; OutputCacheProviderAsync();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;object&gt; AddAsync (string key, object entry, DateTime utcExpiry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; AddAsync(string key, object entry, valuetype System.DateTime utcExpiry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProviderAsync.AddAsync(System.String,System.Object,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function AddAsync (key As String, entry As Object, utcExpiry As DateTime) As Task(Of Object)" />
+      <MemberSignature Language="F#" Value="abstract member AddAsync : string * obj * DateTime -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="outputCacheProviderAsync.AddAsync (key, entry, utcExpiry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Threading::Tasks::Task&lt;System::Object ^&gt; ^ AddAsync(System::String ^ key, System::Object ^ entry, DateTime utcExpiry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -60,6 +68,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task&lt;object&gt; GetAsync (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;object&gt; GetAsync(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProviderAsync.GetAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAsync (key As String) As Task(Of Object)" />
+      <MemberSignature Language="F#" Value="abstract member GetAsync : string -&gt; System.Threading.Tasks.Task&lt;obj&gt;" Usage="outputCacheProviderAsync.GetAsync key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Threading::Tasks::Task&lt;System::Object ^&gt; ^ GetAsync(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +93,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task RemoveAsync (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task RemoveAsync(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProviderAsync.RemoveAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function RemoveAsync (key As String) As Task" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAsync : string -&gt; System.Threading.Tasks.Task" Usage="outputCacheProviderAsync.RemoveAsync key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Threading::Tasks::Task ^ RemoveAsync(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -104,6 +118,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task SetAsync (string key, object entry, DateTime utcExpiry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task SetAsync(string key, object entry, valuetype System.DateTime utcExpiry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Caching.OutputCacheProviderAsync.SetAsync(System.String,System.Object,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function SetAsync (key As String, entry As Object, utcExpiry As DateTime) As Task" />
+      <MemberSignature Language="F#" Value="abstract member SetAsync : string * obj * DateTime -&gt; System.Threading.Tasks.Task" Usage="outputCacheProviderAsync.SetAsync (key, entry, utcExpiry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Threading::Tasks::Task ^ SetAsync(System::String ^ key, System::Object ^ entry, DateTime utcExpiry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

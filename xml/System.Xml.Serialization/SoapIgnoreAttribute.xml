@@ -1,7 +1,10 @@
-<Type Name="SoapIgnoreAttribute" FullName="System.Xml.Serialization.SoapIgnoreAttribute">
+﻿<Type Name="SoapIgnoreAttribute" FullName="System.Xml.Serialization.SoapIgnoreAttribute">
   <TypeSignature Language="C#" Value="public class SoapIgnoreAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapIgnoreAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapIgnoreAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class SoapIgnoreAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type SoapIgnoreAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapIgnoreAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -21,7 +24,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.ReturnValue)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.Property | System.AttributeTargets.ReturnValue)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -58,6 +61,8 @@
       <MemberSignature Language="C#" Value="public SoapIgnoreAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapIgnoreAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapIgnoreAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

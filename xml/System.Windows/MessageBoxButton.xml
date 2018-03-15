@@ -1,7 +1,10 @@
-<Type Name="MessageBoxButton" FullName="System.Windows.MessageBoxButton">
+﻿<Type Name="MessageBoxButton" FullName="System.Windows.MessageBoxButton">
   <TypeSignature Language="C#" Value="public enum MessageBoxButton" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageBoxButton extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.MessageBoxButton" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MessageBoxButton" />
+  <TypeSignature Language="F#" Value="type MessageBoxButton = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MessageBoxButton" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="OK" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxButton OK = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxButton.OK" />
+      <MemberSignature Language="VB.NET" Value="OK" />
+      <MemberSignature Language="F#" Value="OK = 0" Usage="System.Windows.MessageBoxButton.OK" />
+      <MemberSignature Language="C++ CLI" Value="OK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxButton</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The message box displays an **OK** button.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="OKCancel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxButton OKCancel = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxButton.OKCancel" />
+      <MemberSignature Language="VB.NET" Value="OKCancel" />
+      <MemberSignature Language="F#" Value="OKCancel = 1" Usage="System.Windows.MessageBoxButton.OKCancel" />
+      <MemberSignature Language="C++ CLI" Value="OKCancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -62,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxButton</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The message box displays **OK** and **Cancel** buttons.</summary>
       </Docs>
@@ -70,6 +81,9 @@
       <MemberSignature Language="C#" Value="YesNo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxButton YesNo = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxButton.YesNo" />
+      <MemberSignature Language="VB.NET" Value="YesNo" />
+      <MemberSignature Language="F#" Value="YesNo = 4" Usage="System.Windows.MessageBoxButton.YesNo" />
+      <MemberSignature Language="C++ CLI" Value="YesNo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -78,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxButton</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The message box displays **Yes** and **No** buttons.</summary>
       </Docs>
@@ -86,6 +101,9 @@
       <MemberSignature Language="C#" Value="YesNoCancel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.MessageBoxButton YesNoCancel = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.MessageBoxButton.YesNoCancel" />
+      <MemberSignature Language="VB.NET" Value="YesNoCancel" />
+      <MemberSignature Language="F#" Value="YesNoCancel = 3" Usage="System.Windows.MessageBoxButton.YesNoCancel" />
+      <MemberSignature Language="C++ CLI" Value="YesNoCancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.MessageBoxButton</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The message box displays **Yes**, **No**, and **Cancel** buttons.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="SettingsProviderCollection" FullName="System.Configuration.SettingsProviderCollection">
+﻿<Type Name="SettingsProviderCollection" FullName="System.Configuration.SettingsProviderCollection">
   <TypeSignature Language="C#" Value="public class SettingsProviderCollection : System.Configuration.Provider.ProviderCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SettingsProviderCollection extends System.Configuration.Provider.ProviderCollection" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingsProviderCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class SettingsProviderCollection&#xA;Inherits ProviderCollection" />
+  <TypeSignature Language="F#" Value="type SettingsProviderCollection = class&#xA;    inherit ProviderCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SettingsProviderCollection : System::Configuration::Provider::ProviderCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,8 @@
       <MemberSignature Language="C#" Value="public SettingsProviderCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsProviderCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsProviderCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -64,6 +69,9 @@
       <MemberSignature Language="C#" Value="public override void Add (System.Configuration.Provider.ProviderBase provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Configuration.Provider.ProviderBase provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingsProviderCollection.Add(System.Configuration.Provider.ProviderBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (provider As ProviderBase)" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Configuration.Provider.ProviderBase -&gt; unit" Usage="settingsProviderCollection.Add provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Configuration::Provider::ProviderBase ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -113,6 +121,9 @@
       <MemberSignature Language="C#" Value="public System.Configuration.SettingsProvider this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsProvider Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingsProviderCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As SettingsProvider" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Configuration.SettingsProvider" Usage="System.Configuration.SettingsProviderCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::SettingsProvider ^ default[System::String ^] { System::Configuration::SettingsProvider ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

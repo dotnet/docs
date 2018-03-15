@@ -1,7 +1,10 @@
-<Type Name="TraceContext" FullName="System.Web.TraceContext">
+﻿<Type Name="TraceContext" FullName="System.Web.TraceContext">
   <TypeSignature Language="C#" Value="public sealed class TraceContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TraceContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.TraceContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TraceContext" />
+  <TypeSignature Language="F#" Value="type TraceContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TraceContext sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="public TraceContext (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.#ctor(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As HttpContext)" />
+      <MemberSignature Language="F#" Value="new System.Web.TraceContext : System.Web.HttpContext -&gt; System.Web.TraceContext" Usage="new System.Web.TraceContext context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TraceContext(System::Web::HttpContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +58,9 @@
       <MemberSignature Language="C#" Value="public bool IsEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.TraceContext.IsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : bool with get, set" Usage="System.Web.TraceContext.IsEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +100,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.TraceContextEventHandler TraceFinished;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.TraceContextEventHandler TraceFinished" />
       <MemberSignature Language="DocId" Value="E:System.Web.TraceContext.TraceFinished" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TraceFinished As TraceContextEventHandler " />
+      <MemberSignature Language="F#" Value="member this.TraceFinished : System.Web.TraceContextEventHandler " Usage="member this.TraceFinished : System.Web.TraceContextEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::TraceContextEventHandler ^ TraceFinished;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -126,6 +138,9 @@
       <MemberSignature Language="C#" Value="public System.Web.TraceMode TraceMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.TraceMode TraceMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.TraceContext.TraceMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property TraceMode As TraceMode" />
+      <MemberSignature Language="F#" Value="member this.TraceMode : System.Web.TraceMode with get, set" Usage="System.Web.TraceContext.TraceMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::TraceMode TraceMode { System::Web::TraceMode get(); void set(System::Web::TraceMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,10 +172,22 @@
         <altmember cref="T:System.Web.UI.Page" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Warn">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace information to the trace log. Unlike <see cref="M:System.Web.TraceContext.Write(System.String)" />, all warnings appear in the log as red text.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Warn">
       <MemberSignature Language="C#" Value="public void Warn (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Warn(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Warn(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Warn (message As String)" />
+      <MemberSignature Language="F#" Value="member this.Warn : string -&gt; unit" Usage="traceContext.Warn message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Warn(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -189,6 +216,9 @@
       <MemberSignature Language="C#" Value="public void Warn (string category, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Warn(string category, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Warn(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Warn (category As String, message As String)" />
+      <MemberSignature Language="F#" Value="member this.Warn : string * string -&gt; unit" Usage="traceContext.Warn (category, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Warn(System::String ^ category, System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,6 +249,9 @@
       <MemberSignature Language="C#" Value="public void Warn (string category, string message, Exception errorInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Warn(string category, string message, class System.Exception errorInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Warn(System.String,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Warn (category As String, message As String, errorInfo As Exception)" />
+      <MemberSignature Language="F#" Value="member this.Warn : string * string * Exception -&gt; unit" Usage="traceContext.Warn (category, message, errorInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Warn(System::String ^ category, System::String ^ message, Exception ^ errorInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -256,10 +289,22 @@
         <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes trace information to the trace log.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public void Write (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (message As String)" />
+      <MemberSignature Language="F#" Value="member this.Write : string -&gt; unit" Usage="traceContext.Write message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -288,6 +333,9 @@
       <MemberSignature Language="C#" Value="public void Write (string category, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string category, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Write(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (category As String, message As String)" />
+      <MemberSignature Language="F#" Value="member this.Write : string * string -&gt; unit" Usage="traceContext.Write (category, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::String ^ category, System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -326,6 +374,9 @@
       <MemberSignature Language="C#" Value="public void Write (string category, string message, Exception errorInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Write(string category, string message, class System.Exception errorInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContext.Write(System.String,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (category As String, message As String, errorInfo As Exception)" />
+      <MemberSignature Language="F#" Value="member this.Write : string * string * Exception -&gt; unit" Usage="traceContext.Write (category, message, errorInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::String ^ category, System::String ^ message, Exception ^ errorInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -363,23 +414,5 @@
         <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Warn">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes trace information to the trace log. Unlike <see cref="M:System.Web.TraceContext.Write(System.String)" />, all warnings appear in the log as red text.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes trace information to the trace log.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

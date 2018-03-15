@@ -1,7 +1,10 @@
-<Type Name="RuleValidation" FullName="System.Workflow.Activities.Rules.RuleValidation">
+﻿<Type Name="RuleValidation" FullName="System.Workflow.Activities.Rules.RuleValidation">
   <TypeSignature Language="C#" Value="public class RuleValidation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RuleValidation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleValidation" />
+  <TypeSignature Language="VB.NET" Value="Public Class RuleValidation" />
+  <TypeSignature Language="F#" Value="type RuleValidation = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleValidation" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,10 +56,22 @@ Relational operator "LessThan" cannot be used on operands of types "string" and 
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RuleValidation (Type thisType, System.Workflow.ComponentModel.Compiler.ITypeProvider typeProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type thisType, class System.Workflow.ComponentModel.Compiler.ITypeProvider typeProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleValidation.#ctor(System.Type,System.Workflow.ComponentModel.Compiler.ITypeProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (thisType As Type, typeProvider As ITypeProvider)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleValidation : Type * System.Workflow.ComponentModel.Compiler.ITypeProvider -&gt; System.Workflow.Activities.Rules.RuleValidation" Usage="new System.Workflow.Activities.Rules.RuleValidation (thisType, typeProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleValidation(Type ^ thisType, System::Workflow::ComponentModel::Compiler::ITypeProvider ^ typeProvider);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -79,6 +94,8 @@ Relational operator "LessThan" cannot be used on operands of types "string" and 
       <MemberSignature Language="C#" Value="public RuleValidation (System.Workflow.ComponentModel.Activity activity, System.Workflow.ComponentModel.Compiler.ITypeProvider typeProvider, bool checkStaticType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.ComponentModel.Activity activity, class System.Workflow.ComponentModel.Compiler.ITypeProvider typeProvider, bool checkStaticType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleValidation.#ctor(System.Workflow.ComponentModel.Activity,System.Workflow.ComponentModel.Compiler.ITypeProvider,System.Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleValidation : System.Workflow.ComponentModel.Activity * System.Workflow.ComponentModel.Compiler.ITypeProvider * bool -&gt; System.Workflow.Activities.Rules.RuleValidation" Usage="new System.Workflow.Activities.Rules.RuleValidation (activity, typeProvider, checkStaticType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleValidation(System::Workflow::ComponentModel::Activity ^ activity, System::Workflow::ComponentModel::Compiler::ITypeProvider ^ typeProvider, bool checkStaticType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -110,6 +127,9 @@ Relational operator "LessThan" cannot be used on operands of types "string" and 
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Compiler.ValidationErrorCollection Errors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection Errors" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleValidation.Errors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As ValidationErrorCollection" />
+      <MemberSignature Language="F#" Value="member this.Errors : System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="System.Workflow.Activities.Rules.RuleValidation.Errors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ Errors { System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -128,6 +148,9 @@ Relational operator "LessThan" cannot be used on operands of types "string" and 
       <MemberSignature Language="C#" Value="public System.Workflow.Activities.Rules.RuleExpressionInfo ExpressionInfo (System.CodeDom.CodeExpression expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Activities.Rules.RuleExpressionInfo ExpressionInfo(class System.CodeDom.CodeExpression expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleValidation.ExpressionInfo(System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExpressionInfo (expression As CodeExpression) As RuleExpressionInfo" />
+      <MemberSignature Language="F#" Value="member this.ExpressionInfo : System.CodeDom.CodeExpression -&gt; System.Workflow.Activities.Rules.RuleExpressionInfo" Usage="ruleValidation.ExpressionInfo expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Activities::Rules::RuleExpressionInfo ^ ExpressionInfo(System::CodeDom::CodeExpression ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -150,6 +173,9 @@ Relational operator "LessThan" cannot be used on operands of types "string" and 
       <MemberSignature Language="C#" Value="public void PopParentExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PopParentExpression() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleValidation.PopParentExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PopParentExpression ()" />
+      <MemberSignature Language="F#" Value="member this.PopParentExpression : unit -&gt; unit" Usage="ruleValidation.PopParentExpression " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PopParentExpression();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -168,6 +194,9 @@ Relational operator "LessThan" cannot be used on operands of types "string" and 
       <MemberSignature Language="C#" Value="public bool PushParentExpression (System.CodeDom.CodeExpression newParent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool PushParentExpression(class System.CodeDom.CodeExpression newParent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleValidation.PushParentExpression(System.CodeDom.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PushParentExpression (newParent As CodeExpression) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PushParentExpression : System.CodeDom.CodeExpression -&gt; bool" Usage="ruleValidation.PushParentExpression newParent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool PushParentExpression(System::CodeDom::CodeExpression ^ newParent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -200,6 +229,9 @@ Relational operator "LessThan" cannot be used on operands of types "string" and 
       <MemberSignature Language="C#" Value="public Type ThisType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ThisType" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleValidation.ThisType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThisType As Type" />
+      <MemberSignature Language="F#" Value="member this.ThisType : Type" Usage="System.Workflow.Activities.Rules.RuleValidation.ThisType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ThisType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -214,14 +246,5 @@ Relational operator "LessThan" cannot be used on operands of types "string" and 
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.RuleValidation" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

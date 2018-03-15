@@ -1,7 +1,10 @@
-<Type Name="WebPartTransformer" FullName="System.Web.UI.WebControls.WebParts.WebPartTransformer">
+﻿<Type Name="WebPartTransformer" FullName="System.Web.UI.WebControls.WebParts.WebPartTransformer">
   <TypeSignature Language="C#" Value="public abstract class WebPartTransformer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WebPartTransformer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartTransformer" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebPartTransformer" />
+  <TypeSignature Language="F#" Value="type WebPartTransformer = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartTransformer abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -77,6 +80,8 @@
       <MemberSignature Language="C#" Value="protected WebPartTransformer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebPartTransformer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +97,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.Control CreateConfigurationControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Control CreateConfigurationControl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.CreateConfigurationControl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateConfigurationControl () As Control" />
+      <MemberSignature Language="F#" Value="abstract member CreateConfigurationControl : unit -&gt; System.Web.UI.Control&#xA;override this.CreateConfigurationControl : unit -&gt; System.Web.UI.Control" Usage="webPartTransformer.CreateConfigurationControl " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::Control ^ CreateConfigurationControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -115,9 +123,12 @@
       </Docs>
     </Member>
     <Member MemberName="LoadConfigurationState">
-      <MemberSignature Language="C#" Value="protected virtual void LoadConfigurationState (object savedState);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void LoadConfigurationState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void LoadConfigurationState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.LoadConfigurationState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub LoadConfigurationState (savedState As Object)" />
+      <MemberSignature Language="F#" Value="abstract member LoadConfigurationState : obj -&gt; unit&#xA;override this.LoadConfigurationState : obj -&gt; unit" Usage="webPartTransformer.LoadConfigurationState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void LoadConfigurationState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,9 +154,12 @@
       </Docs>
     </Member>
     <Member MemberName="SaveConfigurationState">
-      <MemberSignature Language="C#" Value="protected virtual object SaveConfigurationState ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual object SaveConfigurationState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance object SaveConfigurationState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.SaveConfigurationState" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function SaveConfigurationState () As Object" />
+      <MemberSignature Language="F#" Value="abstract member SaveConfigurationState : unit -&gt; obj&#xA;override this.SaveConfigurationState : unit -&gt; obj" Usage="webPartTransformer.SaveConfigurationState " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Object ^ SaveConfigurationState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -172,6 +186,9 @@
       <MemberSignature Language="C#" Value="public abstract object Transform (object providerData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Transform(object providerData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformer.Transform(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Transform (providerData As Object) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Transform : obj -&gt; obj" Usage="webPartTransformer.Transform providerData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Transform(System::Object ^ providerData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

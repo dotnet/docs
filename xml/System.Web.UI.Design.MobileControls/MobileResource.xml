@@ -1,7 +1,10 @@
-<Type Name="MobileResource" FullName="System.Web.UI.Design.MobileControls.MobileResource">
+﻿<Type Name="MobileResource" FullName="System.Web.UI.Design.MobileControls.MobileResource">
   <TypeSignature Language="C#" Value="public sealed class MobileResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MobileResource extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.MobileControls.MobileResource" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MobileResource" />
+  <TypeSignature Language="F#" Value="type MobileResource = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MobileResource sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public static string GetString (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetString(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.MobileControls.MobileResource.GetString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetString (name As String) As String" />
+      <MemberSignature Language="F#" Value="static member GetString : string -&gt; string" Usage="System.Web.UI.Design.MobileControls.MobileResource.GetString name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetString(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="AutomationPropertyChangedEventHandler" FullName="System.Windows.Automation.AutomationPropertyChangedEventHandler">
+﻿<Type Name="AutomationPropertyChangedEventHandler" FullName="System.Windows.Automation.AutomationPropertyChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void AutomationPropertyChangedEventHandler(object sender, AutomationPropertyChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutomationPropertyChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationPropertyChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub AutomationPropertyChangedEventHandler(sender As Object, e As AutomationPropertyChangedEventArgs)" />
+  <TypeSignature Language="F#" Value="type AutomationPropertyChangedEventHandler = delegate of obj * AutomationPropertyChangedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void AutomationPropertyChangedEventHandler(System::Object ^ sender, AutomationPropertyChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

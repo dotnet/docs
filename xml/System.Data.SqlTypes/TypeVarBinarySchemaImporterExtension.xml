@@ -1,7 +1,10 @@
-<Type Name="TypeVarBinarySchemaImporterExtension" FullName="System.Data.SqlTypes.TypeVarBinarySchemaImporterExtension">
+﻿<Type Name="TypeVarBinarySchemaImporterExtension" FullName="System.Data.SqlTypes.TypeVarBinarySchemaImporterExtension">
   <TypeSignature Language="C#" Value="public sealed class TypeVarBinarySchemaImporterExtension : System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeVarBinarySchemaImporterExtension extends System.Data.SqlTypes.SqlTypesSchemaImporterExtensionHelper" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlTypes.TypeVarBinarySchemaImporterExtension" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeVarBinarySchemaImporterExtension&#xA;Inherits SqlTypesSchemaImporterExtensionHelper" />
+  <TypeSignature Language="F#" Value="type TypeVarBinarySchemaImporterExtension = class&#xA;    inherit SqlTypesSchemaImporterExtensionHelper" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeVarBinarySchemaImporterExtension sealed : System::Data::SqlTypes::SqlTypesSchemaImporterExtensionHelper" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public TypeVarBinarySchemaImporterExtension ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlTypes.TypeVarBinarySchemaImporterExtension.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeVarBinarySchemaImporterExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

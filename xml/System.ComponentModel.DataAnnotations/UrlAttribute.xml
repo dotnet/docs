@@ -1,7 +1,10 @@
-<Type Name="UrlAttribute" FullName="System.ComponentModel.DataAnnotations.UrlAttribute">
+﻿<Type Name="UrlAttribute" FullName="System.ComponentModel.DataAnnotations.UrlAttribute">
   <TypeSignature Language="C#" Value="public sealed class UrlAttribute : System.ComponentModel.DataAnnotations.DataTypeAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UrlAttribute extends System.ComponentModel.DataAnnotations.DataTypeAttribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.UrlAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UrlAttribute&#xA;Inherits DataTypeAttribute" />
+  <TypeSignature Language="F#" Value="type UrlAttribute = class&#xA;    inherit DataTypeAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UrlAttribute sealed : System::ComponentModel::DataAnnotations::DataTypeAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -18,7 +21,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter, AllowMultiple=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.Property, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -30,6 +33,8 @@
       <MemberSignature Language="C#" Value="public UrlAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.UrlAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UrlAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -51,6 +56,9 @@
       <MemberSignature Language="C#" Value="public override bool IsValid (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsValid(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.UrlAttribute.IsValid(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsValid (value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsValid : obj -&gt; bool" Usage="urlAttribute.IsValid value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsValid(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

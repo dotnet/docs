@@ -1,7 +1,10 @@
-<Type Name="ELEMDESC" FullName="System.Runtime.InteropServices.ELEMDESC">
+﻿<Type Name="ELEMDESC" FullName="System.Runtime.InteropServices.ELEMDESC">
   <TypeSignature Language="C#" Value="public struct ELEMDESC" />
   <TypeSignature Language="ILAsm" Value=".class public sequential sealed beforefieldinit ELEMDESC extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ELEMDESC" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ELEMDESC" />
+  <TypeSignature Language="F#" Value="type ELEMDESC = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class ELEMDESC" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ELEMDESC.DESCUNION desc;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ELEMDESC/DESCUNION desc" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ELEMDESC.desc" />
+      <MemberSignature Language="VB.NET" Value="Public desc As ELEMDESC.DESCUNION " />
+      <MemberSignature Language="F#" Value="val mutable desc : System.Runtime.InteropServices.ELEMDESC.DESCUNION" Usage="System.Runtime.InteropServices.ELEMDESC.desc" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ELEMDESC::DESCUNION desc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.TYPEDESC tdesc;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.TYPEDESC tdesc" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ELEMDESC.tdesc" />
+      <MemberSignature Language="VB.NET" Value="Public tdesc As TYPEDESC " />
+      <MemberSignature Language="F#" Value="val mutable tdesc : System.Runtime.InteropServices.TYPEDESC" Usage="System.Runtime.InteropServices.ELEMDESC.tdesc" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::TYPEDESC tdesc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

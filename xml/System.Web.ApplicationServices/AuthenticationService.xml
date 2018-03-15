@@ -1,7 +1,10 @@
-<Type Name="AuthenticationService" FullName="System.Web.ApplicationServices.AuthenticationService">
+﻿<Type Name="AuthenticationService" FullName="System.Web.ApplicationServices.AuthenticationService">
   <TypeSignature Language="C#" Value="public class AuthenticationService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AuthenticationService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.ApplicationServices.AuthenticationService" />
+  <TypeSignature Language="VB.NET" Value="Public Class AuthenticationService" />
+  <TypeSignature Language="F#" Value="type AuthenticationService = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AuthenticationService" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="public AuthenticationService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.AuthenticationService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthenticationService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -62,6 +67,9 @@
       <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Web.ApplicationServices.AuthenticatingEventArgs&gt; Authenticating;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.ApplicationServices.AuthenticatingEventArgs&gt; Authenticating" />
       <MemberSignature Language="DocId" Value="E:System.Web.ApplicationServices.AuthenticationService.Authenticating" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event Authenticating As EventHandler(Of AuthenticatingEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.Authenticating : EventHandler&lt;System.Web.ApplicationServices.AuthenticatingEventArgs&gt; " Usage="member this.Authenticating : System.EventHandler&lt;System.Web.ApplicationServices.AuthenticatingEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Web::ApplicationServices::AuthenticatingEventArgs ^&gt; ^ Authenticating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -100,6 +108,9 @@
       <MemberSignature Language="C#" Value="public static event EventHandler&lt;System.Web.ApplicationServices.CreatingCookieEventArgs&gt; CreatingCookie;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.ApplicationServices.CreatingCookieEventArgs&gt; CreatingCookie" />
       <MemberSignature Language="DocId" Value="E:System.Web.ApplicationServices.AuthenticationService.CreatingCookie" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event CreatingCookie As EventHandler(Of CreatingCookieEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.CreatingCookie : EventHandler&lt;System.Web.ApplicationServices.CreatingCookieEventArgs&gt; " Usage="member this.CreatingCookie : System.EventHandler&lt;System.Web.ApplicationServices.CreatingCookieEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler&lt;System::Web::ApplicationServices::CreatingCookieEventArgs ^&gt; ^ CreatingCookie;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -138,6 +149,9 @@
       <MemberSignature Language="C#" Value="public bool IsLoggedIn ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsLoggedIn() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.AuthenticationService.IsLoggedIn" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsLoggedIn () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsLoggedIn : unit -&gt; bool" Usage="authenticationService.IsLoggedIn " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsLoggedIn();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -173,6 +187,9 @@
       <MemberSignature Language="C#" Value="public bool Login (string username, string password, string customCredential, bool isPersistent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Login(string username, string password, string customCredential, bool isPersistent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.AuthenticationService.Login(System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Login (username As String, password As String, customCredential As String, isPersistent As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Login : string * string * string * bool -&gt; bool" Usage="authenticationService.Login (username, password, customCredential, isPersistent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Login(System::String ^ username, System::String ^ password, System::String ^ customCredential, bool isPersistent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -224,6 +241,9 @@
       <MemberSignature Language="C#" Value="public void Logout ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Logout() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.AuthenticationService.Logout" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Logout ()" />
+      <MemberSignature Language="F#" Value="member this.Logout : unit -&gt; unit" Usage="authenticationService.Logout " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Logout();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -260,6 +280,9 @@
       <MemberSignature Language="C#" Value="public bool ValidateUser (string username, string password, string customCredential);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ValidateUser(string username, string password, string customCredential) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ApplicationServices.AuthenticationService.ValidateUser(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateUser (username As String, password As String, customCredential As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ValidateUser : string * string * string -&gt; bool" Usage="authenticationService.ValidateUser (username, password, customCredential)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ValidateUser(System::String ^ username, System::String ^ password, System::String ^ customCredential);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

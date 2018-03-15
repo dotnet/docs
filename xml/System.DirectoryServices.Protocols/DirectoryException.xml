@@ -1,7 +1,10 @@
-<Type Name="DirectoryException" FullName="System.DirectoryServices.Protocols.DirectoryException">
+﻿<Type Name="DirectoryException" FullName="System.DirectoryServices.Protocols.DirectoryException">
   <TypeSignature Language="C#" Value="public class DirectoryException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DirectoryException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DirectoryException" />
+  <TypeSignature Language="VB.NET" Value="Public Class DirectoryException&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type DirectoryException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirectoryException : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +19,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryException.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirectoryException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DirectoryException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -36,6 +51,9 @@
       <MemberSignature Language="C#" Value="public DirectoryException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DirectoryException : string -&gt; System.DirectoryServices.Protocols.DirectoryException" Usage="new System.DirectoryServices.Protocols.DirectoryException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -55,6 +73,9 @@
       <MemberSignature Language="C#" Value="protected DirectoryException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DirectoryException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.DirectoryServices.Protocols.DirectoryException" Usage="new System.DirectoryServices.Protocols.DirectoryException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DirectoryException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -76,6 +97,9 @@
       <MemberSignature Language="C#" Value="public DirectoryException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirectoryException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DirectoryException : string * Exception -&gt; System.DirectoryServices.Protocols.DirectoryException" Usage="new System.DirectoryServices.Protocols.DirectoryException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirectoryException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -93,15 +117,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirectoryException.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirectoryException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

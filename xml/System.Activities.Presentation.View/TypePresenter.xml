@@ -1,7 +1,10 @@
-<Type Name="TypePresenter" FullName="System.Activities.Presentation.View.TypePresenter">
+﻿<Type Name="TypePresenter" FullName="System.Activities.Presentation.View.TypePresenter">
   <TypeSignature Language="C#" Value="public sealed class TypePresenter : System.Windows.Controls.ContentControl, System.ComponentModel.INotifyPropertyChanged, System.Windows.Markup.IComponentConnector" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypePresenter extends System.Windows.Controls.ContentControl implements class System.ComponentModel.INotifyPropertyChanged, class System.Windows.Markup.IComponentConnector" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.TypePresenter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypePresenter&#xA;Inherits ContentControl&#xA;Implements IComponentConnector, INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type TypePresenter = class&#xA;    inherit ContentControl&#xA;    interface INotifyPropertyChanged&#xA;    interface IComponentConnector" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypePresenter sealed : System::Windows::Controls::ContentControl, System::ComponentModel::INotifyPropertyChanged, System::Windows::Markup::IComponentConnector" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +64,8 @@
       <MemberSignature Language="C#" Value="public TypePresenter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypePresenter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypePresenter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -80,6 +85,9 @@
       <MemberSignature Language="C#" Value="public bool AllowNull { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowNull" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypePresenter.AllowNull" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowNull As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowNull : bool with get, set" Usage="System.Activities.Presentation.View.TypePresenter.AllowNull" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowNull { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -103,6 +111,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AllowNullProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AllowNullProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.TypePresenter.AllowNullProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AllowNullProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable AllowNullProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.View.TypePresenter.AllowNullProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AllowNullProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -124,6 +135,9 @@
       <MemberSignature Language="C#" Value="public bool BrowseTypeDirectly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BrowseTypeDirectly" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypePresenter.BrowseTypeDirectly" />
+      <MemberSignature Language="VB.NET" Value="Public Property BrowseTypeDirectly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.BrowseTypeDirectly : bool with get, set" Usage="System.Activities.Presentation.View.TypePresenter.BrowseTypeDirectly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BrowseTypeDirectly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -147,6 +161,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BrowseTypeDirectlyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BrowseTypeDirectlyProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.TypePresenter.BrowseTypeDirectlyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BrowseTypeDirectlyProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BrowseTypeDirectlyProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.View.TypePresenter.BrowseTypeDirectlyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BrowseTypeDirectlyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -168,6 +185,9 @@
       <MemberSignature Language="C#" Value="public bool CenterActivityTypeResolverDialog { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CenterActivityTypeResolverDialog" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypePresenter.CenterActivityTypeResolverDialog" />
+      <MemberSignature Language="VB.NET" Value="Public Property CenterActivityTypeResolverDialog As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CenterActivityTypeResolverDialog : bool with get, set" Usage="System.Activities.Presentation.View.TypePresenter.CenterActivityTypeResolverDialog" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CenterActivityTypeResolverDialog { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -191,6 +211,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CenterActivityTypeResolverDialogProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CenterActivityTypeResolverDialogProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.TypePresenter.CenterActivityTypeResolverDialogProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CenterActivityTypeResolverDialogProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CenterActivityTypeResolverDialogProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.View.TypePresenter.CenterActivityTypeResolverDialogProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CenterActivityTypeResolverDialogProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -212,6 +235,9 @@
       <MemberSignature Language="C#" Value="public bool CenterTypeBrowserDialog { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CenterTypeBrowserDialog" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypePresenter.CenterTypeBrowserDialog" />
+      <MemberSignature Language="VB.NET" Value="Public Property CenterTypeBrowserDialog As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CenterTypeBrowserDialog : bool with get, set" Usage="System.Activities.Presentation.View.TypePresenter.CenterTypeBrowserDialog" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CenterTypeBrowserDialog { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -235,6 +261,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CenterTypeBrowserDialogProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CenterTypeBrowserDialogProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.TypePresenter.CenterTypeBrowserDialogProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CenterTypeBrowserDialogProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CenterTypeBrowserDialogProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.View.TypePresenter.CenterTypeBrowserDialogProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CenterTypeBrowserDialogProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -256,6 +285,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.EditingContext Context { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.EditingContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypePresenter.Context" />
+      <MemberSignature Language="VB.NET" Value="Public Property Context As EditingContext" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Activities.Presentation.EditingContext with get, set" Usage="System.Activities.Presentation.View.TypePresenter.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::EditingContext ^ Context { System::Activities::Presentation::EditingContext ^ get(); void set(System::Activities::Presentation::EditingContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -278,6 +310,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ContextProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ContextProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.TypePresenter.ContextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ContextProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ContextProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.View.TypePresenter.ContextProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ContextProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -299,6 +334,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ObservableCollection&lt;Type&gt; DefaultMostRecentlyUsedTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.ObjectModel.ObservableCollection`1&lt;class System.Type&gt; DefaultMostRecentlyUsedTypes" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypePresenter.DefaultMostRecentlyUsedTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultMostRecentlyUsedTypes As ObservableCollection(Of Type)" />
+      <MemberSignature Language="F#" Value="member this.DefaultMostRecentlyUsedTypes : System.Collections.ObjectModel.ObservableCollection&lt;Type&gt;" Usage="System.Activities.Presentation.View.TypePresenter.DefaultMostRecentlyUsedTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Collections::ObjectModel::ObservableCollection&lt;Type ^&gt; ^ DefaultMostRecentlyUsedTypes { System::Collections::ObjectModel::ObservableCollection&lt;Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -321,6 +359,9 @@
       <MemberSignature Language="C#" Value="public Func&lt;Type,bool&gt; Filter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;class System.Type, bool&gt; Filter" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypePresenter.Filter" />
+      <MemberSignature Language="VB.NET" Value="Public Property Filter As Func(Of Type, Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Filter : Func&lt;Type, bool&gt; with get, set" Usage="System.Activities.Presentation.View.TypePresenter.Filter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;Type ^, bool&gt; ^ Filter { Func&lt;Type ^, bool&gt; ^ get(); void set(Func&lt;Type ^, bool&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -359,6 +400,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FilterProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FilterProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.TypePresenter.FilterProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FilterProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FilterProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.View.TypePresenter.FilterProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FilterProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -380,6 +424,9 @@
       <MemberSignature Language="C#" Value="public void FocusOnVisibleControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FocusOnVisibleControl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypePresenter.FocusOnVisibleControl" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FocusOnVisibleControl ()" />
+      <MemberSignature Language="F#" Value="member this.FocusOnVisibleControl : unit -&gt; unit" Usage="typePresenter.FocusOnVisibleControl " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FocusOnVisibleControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -402,7 +449,13 @@
       <MemberSignature Language="C#" Value="public void InitializeComponent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeComponent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypePresenter.InitializeComponent" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InitializeComponent ()" />
+      <MemberSignature Language="F#" Value="abstract member InitializeComponent : unit -&gt; unit&#xA;override this.InitializeComponent : unit -&gt; unit" Usage="typePresenter.InitializeComponent " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InitializeComponent();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IComponentConnector.InitializeComponent</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -432,6 +485,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Activities.Presentation.View.TypeWrapper&gt; Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Presentation.View.TypeWrapper&gt; Items" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypePresenter.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As IEnumerable(Of TypeWrapper)" />
+      <MemberSignature Language="F#" Value="member this.Items : seq&lt;System.Activities.Presentation.View.TypeWrapper&gt;" Usage="System.Activities.Presentation.View.TypePresenter.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::View::TypeWrapper ^&gt; ^ Items { System::Collections::Generic::IEnumerable&lt;System::Activities::Presentation::View::TypeWrapper ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -459,6 +515,9 @@
       <MemberSignature Language="C#" Value="public string Label { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypePresenter.Label" />
+      <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.Activities.Presentation.View.TypePresenter.Label" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -481,6 +540,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LabelProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LabelProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.TypePresenter.LabelProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LabelProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable LabelProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.View.TypePresenter.LabelProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LabelProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -502,6 +564,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ObservableCollection&lt;Type&gt; MostRecentlyUsedTypes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ObservableCollection`1&lt;class System.Type&gt; MostRecentlyUsedTypes" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypePresenter.MostRecentlyUsedTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Property MostRecentlyUsedTypes As ObservableCollection(Of Type)" />
+      <MemberSignature Language="F#" Value="member this.MostRecentlyUsedTypes : System.Collections.ObjectModel.ObservableCollection&lt;Type&gt; with get, set" Usage="System.Activities.Presentation.View.TypePresenter.MostRecentlyUsedTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ObservableCollection&lt;Type ^&gt; ^ MostRecentlyUsedTypes { System::Collections::ObjectModel::ObservableCollection&lt;Type ^&gt; ^ get(); void set(System::Collections::ObjectModel::ObservableCollection&lt;Type ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -524,6 +589,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MostRecentlyUsedTypesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MostRecentlyUsedTypesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.TypePresenter.MostRecentlyUsedTypesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MostRecentlyUsedTypesProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MostRecentlyUsedTypesProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.View.TypePresenter.MostRecentlyUsedTypesProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MostRecentlyUsedTypesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -545,6 +613,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypePresenter.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="typePresenter.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -564,6 +635,9 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseLeftButtonDown (System.Windows.Input.MouseButtonEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeftButtonDown(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypePresenter.OnMouseLeftButtonDown(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonDown (e As MouseButtonEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="typePresenter.OnMouseLeftButtonDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -585,6 +659,9 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseLeftButtonUp (System.Windows.Input.MouseButtonEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseLeftButtonUp(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypePresenter.OnMouseLeftButtonUp(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseLeftButtonUp (e As MouseButtonEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseLeftButtonUp : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="typePresenter.OnMouseLeftButtonUp e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseLeftButtonUp(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -606,6 +683,9 @@
       <MemberSignature Language="C#" Value="protected override void OnPreviewKeyDown (System.Windows.Input.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreviewKeyDown(class System.Windows.Input.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypePresenter.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewKeyDown (e As KeyEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPreviewKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="typePresenter.OnPreviewKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -627,6 +707,9 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.View.TypePresenter.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event PropertyChanged As PropertyChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -648,7 +731,12 @@
       <MemberSignature Language="C#" Value="void IComponentConnector.Connect (int connectionId, object target);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IComponentConnector.Connect(int32 connectionId, object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypePresenter.System#Windows#Markup#IComponentConnector#Connect(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Connect (connectionId As Integer, target As Object) Implements IComponentConnector.Connect" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IComponentConnector.Connect(int connectionId, System::Object ^ target) = System::Windows::Markup::IComponentConnector::Connect;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IComponentConnector.Connect(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -686,6 +774,9 @@
       <MemberSignature Language="C#" Value="public string Text { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypePresenter.Text" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string" Usage="System.Activities.Presentation.View.TypePresenter.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -708,6 +799,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.TypePresenter.TextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TextProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.View.TypePresenter.TextProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -729,6 +823,9 @@
       <MemberSignature Language="C#" Value="public Type Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypePresenter.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Activities.Presentation.View.TypePresenter.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -751,6 +848,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler TypeBrowserClosed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler TypeBrowserClosed" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.View.TypePresenter.TypeBrowserClosed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TypeBrowserClosed As RoutedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.TypeBrowserClosed : System.Windows.RoutedEventHandler " Usage="member this.TypeBrowserClosed : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ TypeBrowserClosed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -776,6 +876,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent TypeBrowserClosedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent TypeBrowserClosedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.TypePresenter.TypeBrowserClosedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TypeBrowserClosedEvent As RoutedEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable TypeBrowserClosedEvent : System.Windows.RoutedEvent" Usage="System.Activities.Presentation.View.TypePresenter.TypeBrowserClosedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ TypeBrowserClosedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -793,6 +896,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler TypeBrowserOpened;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler TypeBrowserOpened" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.View.TypePresenter.TypeBrowserOpened" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TypeBrowserOpened As RoutedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.TypeBrowserOpened : System.Windows.RoutedEventHandler " Usage="member this.TypeBrowserOpened : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ TypeBrowserOpened;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -818,6 +924,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent TypeBrowserOpenedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent TypeBrowserOpenedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.TypePresenter.TypeBrowserOpenedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TypeBrowserOpenedEvent As RoutedEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable TypeBrowserOpenedEvent : System.Windows.RoutedEvent" Usage="System.Activities.Presentation.View.TypePresenter.TypeBrowserOpenedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ TypeBrowserOpenedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -835,6 +944,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler TypeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler TypeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.View.TypePresenter.TypeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TypeChanged As RoutedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.TypeChanged : System.Windows.RoutedEventHandler " Usage="member this.TypeChanged : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ TypeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -860,6 +972,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent TypeChangedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent TypeChangedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.TypePresenter.TypeChangedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TypeChangedEvent As RoutedEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable TypeChangedEvent : System.Windows.RoutedEvent" Usage="System.Activities.Presentation.View.TypePresenter.TypeChangedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ TypeChangedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -877,6 +992,9 @@
       <MemberSignature Language="C#" Value="public string TypeName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypePresenter.TypeName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeName As String" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string" Usage="System.Activities.Presentation.View.TypePresenter.TypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -899,6 +1017,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TypeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TypeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Activities.Presentation.View.TypePresenter.TypeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TypeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TypeProperty : System.Windows.DependencyProperty" Usage="System.Activities.Presentation.View.TypePresenter.TypeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TypeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

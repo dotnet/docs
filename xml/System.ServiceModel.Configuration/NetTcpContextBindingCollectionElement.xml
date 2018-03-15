@@ -1,7 +1,10 @@
-<Type Name="NetTcpContextBindingCollectionElement" FullName="System.ServiceModel.Configuration.NetTcpContextBindingCollectionElement">
+﻿<Type Name="NetTcpContextBindingCollectionElement" FullName="System.ServiceModel.Configuration.NetTcpContextBindingCollectionElement">
   <TypeSignature Language="C#" Value="public class NetTcpContextBindingCollectionElement : System.ServiceModel.Configuration.StandardBindingCollectionElement&lt;System.ServiceModel.NetTcpContextBinding,System.ServiceModel.Configuration.NetTcpContextBindingElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NetTcpContextBindingCollectionElement extends System.ServiceModel.Configuration.StandardBindingCollectionElement`2&lt;class System.ServiceModel.NetTcpContextBinding, class System.ServiceModel.Configuration.NetTcpContextBindingElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetTcpContextBindingCollectionElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class NetTcpContextBindingCollectionElement&#xA;Inherits StandardBindingCollectionElement(Of NetTcpContextBinding, NetTcpContextBindingElement)" />
+  <TypeSignature Language="F#" Value="type NetTcpContextBindingCollectionElement = class&#xA;    inherit StandardBindingCollectionElement&lt;NetTcpContextBinding, NetTcpContextBindingElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetTcpContextBindingCollectionElement : System::ServiceModel::Configuration::StandardBindingCollectionElement&lt;System::ServiceModel::NetTcpContextBinding ^, System::ServiceModel::Configuration::NetTcpContextBindingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,8 @@
       <MemberSignature Language="C#" Value="public NetTcpContextBindingCollectionElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetTcpContextBindingCollectionElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetTcpContextBindingCollectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

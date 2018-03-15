@@ -1,7 +1,10 @@
-<Type Name="EventSetter" FullName="System.Windows.EventSetter">
+﻿<Type Name="EventSetter" FullName="System.Windows.EventSetter">
   <TypeSignature Language="C#" Value="public class EventSetter : System.Windows.SetterBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventSetter extends System.Windows.SetterBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.EventSetter" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventSetter&#xA;Inherits SetterBase" />
+  <TypeSignature Language="F#" Value="type EventSetter = class&#xA;    inherit SetterBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventSetter : System::Windows::SetterBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,10 +51,21 @@
     <altmember cref="M:System.Windows.UIElement.AddHandler(System.Windows.RoutedEvent,System.Delegate,System.Boolean)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.EventSetter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventSetter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.EventSetter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventSetter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +81,8 @@
       <MemberSignature Language="C#" Value="public EventSetter (System.Windows.RoutedEvent routedEvent, Delegate handler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.RoutedEvent routedEvent, class System.Delegate handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.EventSetter.#ctor(System.Windows.RoutedEvent,System.Delegate)" />
+      <MemberSignature Language="F#" Value="new System.Windows.EventSetter : System.Windows.RoutedEvent * Delegate -&gt; System.Windows.EventSetter" Usage="new System.Windows.EventSetter (routedEvent, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventSetter(System::Windows::RoutedEvent ^ routedEvent, Delegate ^ handler);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,6 +110,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.RoutedEvent Event { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.RoutedEvent Event" />
       <MemberSignature Language="DocId" Value="P:System.Windows.EventSetter.Event" />
+      <MemberSignature Language="VB.NET" Value="Public Property Event As RoutedEvent" />
+      <MemberSignature Language="F#" Value="member this.Event : System.Windows.RoutedEvent with get, set" Usage="System.Windows.EventSetter.Event" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::RoutedEvent ^ Event { System::Windows::RoutedEvent ^ get(); void set(System::Windows::RoutedEvent ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -129,6 +148,9 @@
       <MemberSignature Language="C#" Value="public bool HandledEventsToo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HandledEventsToo" />
       <MemberSignature Language="DocId" Value="P:System.Windows.EventSetter.HandledEventsToo" />
+      <MemberSignature Language="VB.NET" Value="Public Property HandledEventsToo As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HandledEventsToo : bool with get, set" Usage="System.Windows.EventSetter.HandledEventsToo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HandledEventsToo { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -168,6 +190,9 @@
       <MemberSignature Language="C#" Value="public Delegate Handler { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Delegate Handler" />
       <MemberSignature Language="DocId" Value="P:System.Windows.EventSetter.Handler" />
+      <MemberSignature Language="VB.NET" Value="Public Property Handler As Delegate" />
+      <MemberSignature Language="F#" Value="member this.Handler : Delegate with get, set" Usage="System.Windows.EventSetter.Handler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Delegate ^ Handler { Delegate ^ get(); void set(Delegate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -198,14 +223,5 @@
         <altmember cref="M:System.Windows.UIElement.AddHandler(System.Windows.RoutedEvent,System.Delegate)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.EventSetter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

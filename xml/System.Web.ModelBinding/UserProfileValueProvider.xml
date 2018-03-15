@@ -1,7 +1,10 @@
-<Type Name="UserProfileValueProvider" FullName="System.Web.ModelBinding.UserProfileValueProvider">
+﻿<Type Name="UserProfileValueProvider" FullName="System.Web.ModelBinding.UserProfileValueProvider">
   <TypeSignature Language="C#" Value="public sealed class UserProfileValueProvider : System.Web.ModelBinding.SimpleValueProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UserProfileValueProvider extends System.Web.ModelBinding.SimpleValueProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.UserProfileValueProvider" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UserProfileValueProvider&#xA;Inherits SimpleValueProvider" />
+  <TypeSignature Language="F#" Value="type UserProfileValueProvider = class&#xA;    inherit SimpleValueProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UserProfileValueProvider sealed : System::Web::ModelBinding::SimpleValueProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public UserProfileValueProvider (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.UserProfileValueProvider.#ctor(System.Web.ModelBinding.ModelBindingExecutionContext)" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.UserProfileValueProvider : System.Web.ModelBinding.ModelBindingExecutionContext -&gt; System.Web.ModelBinding.UserProfileValueProvider" Usage="new System.Web.ModelBinding.UserProfileValueProvider modelBindingExecutionContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UserProfileValueProvider(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -37,6 +42,9 @@
       <MemberSignature Language="C#" Value="protected override object FetchValue (string key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object FetchValue(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.UserProfileValueProvider.FetchValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function FetchValue (key As String) As Object" />
+      <MemberSignature Language="F#" Value="override this.FetchValue : string -&gt; obj" Usage="userProfileValueProvider.FetchValue key" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ FetchValue(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

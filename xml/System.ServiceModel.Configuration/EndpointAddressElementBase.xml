@@ -1,7 +1,10 @@
-<Type Name="EndpointAddressElementBase" FullName="System.ServiceModel.Configuration.EndpointAddressElementBase">
+﻿<Type Name="EndpointAddressElementBase" FullName="System.ServiceModel.Configuration.EndpointAddressElementBase">
   <TypeSignature Language="C#" Value="public class EndpointAddressElementBase : System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EndpointAddressElementBase extends System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.EndpointAddressElementBase" />
+  <TypeSignature Language="VB.NET" Value="Public Class EndpointAddressElementBase&#xA;Inherits ServiceModelConfigurationElement" />
+  <TypeSignature Language="F#" Value="type EndpointAddressElementBase = class&#xA;    inherit ServiceModelConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EndpointAddressElementBase : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="protected EndpointAddressElementBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.EndpointAddressElementBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EndpointAddressElementBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public Uri Address { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Address" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.EndpointAddressElementBase.Address" />
+      <MemberSignature Language="VB.NET" Value="Public Property Address As Uri" />
+      <MemberSignature Language="F#" Value="member this.Address : Uri with get, set" Usage="System.ServiceModel.Configuration.EndpointAddressElementBase.Address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Address { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -54,9 +62,12 @@
       </Docs>
     </Member>
     <Member MemberName="Copy">
-      <MemberSignature Language="C#" Value="protected void Copy (System.ServiceModel.Configuration.EndpointAddressElementBase source);" />
+      <MemberSignature Language="C#" Value="protected internal void Copy (System.ServiceModel.Configuration.EndpointAddressElementBase source);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Copy(class System.ServiceModel.Configuration.EndpointAddressElementBase source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.EndpointAddressElementBase.Copy(System.ServiceModel.Configuration.EndpointAddressElementBase)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub Copy (source As EndpointAddressElementBase)" />
+      <MemberSignature Language="F#" Value="member this.Copy : System.ServiceModel.Configuration.EndpointAddressElementBase -&gt; unit" Usage="endpointAddressElementBase.Copy source" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void Copy(System::ServiceModel::Configuration::EndpointAddressElementBase ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +92,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.AddressHeaderCollectionElement Headers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.AddressHeaderCollectionElement Headers" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.EndpointAddressElementBase.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As AddressHeaderCollectionElement" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.ServiceModel.Configuration.AddressHeaderCollectionElement" Usage="System.ServiceModel.Configuration.EndpointAddressElementBase.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::AddressHeaderCollectionElement ^ Headers { System::ServiceModel::Configuration::AddressHeaderCollectionElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -104,6 +118,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.IdentityElement Identity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.IdentityElement Identity" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.EndpointAddressElementBase.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As IdentityElement" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.ServiceModel.Configuration.IdentityElement" Usage="System.ServiceModel.Configuration.EndpointAddressElementBase.Identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::IdentityElement ^ Identity { System::ServiceModel::Configuration::IdentityElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -127,6 +144,8 @@
       <MemberSignature Language="C#" Value="public void InitializeFrom (System.ServiceModel.EndpointAddress endpointAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InitializeFrom(class System.ServiceModel.EndpointAddress endpointAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.EndpointAddressElementBase.InitializeFrom(System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="F#" Value="member this.InitializeFrom : System.ServiceModel.EndpointAddress -&gt; unit" Usage="endpointAddressElementBase.InitializeFrom endpointAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitializeFrom(System::ServiceModel::EndpointAddress ^ endpointAddress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -150,6 +169,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.EndpointAddressElementBase.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.EndpointAddressElementBase.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ProfileInfoCollection" FullName="System.Web.Profile.ProfileInfoCollection">
+﻿<Type Name="ProfileInfoCollection" FullName="System.Web.Profile.ProfileInfoCollection">
   <TypeSignature Language="C#" Value="public sealed class ProfileInfoCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ProfileInfoCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Web.Profile.ProfileInfoCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfileInfoCollection&#xA;Implements ICollection" />
+  <TypeSignature Language="F#" Value="type ProfileInfoCollection = class&#xA;    interface IEnumerable&#xA;    interface ICollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProfileInfoCollection sealed : System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="public ProfileInfoCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfileInfoCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +72,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.Web.Profile.ProfileInfo profileInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Profile.ProfileInfo profileInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.Add(System.Web.Profile.ProfileInfo)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Profile.ProfileInfo -&gt; unit" Usage="profileInfoCollection.Add profileInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Profile::ProfileInfo ^ profileInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,6 +115,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="profileInfoCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -123,11 +133,25 @@
         <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the <see cref="T:System.Web.Profile.ProfileInfoCollection" /> to a one-dimensional array.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="profileInfoCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -157,6 +181,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Profile.ProfileInfo[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Profile.ProfileInfo[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.CopyTo(System.Web.Profile.ProfileInfo[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ProfileInfo(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.Profile.ProfileInfo[] * int -&gt; unit" Usage="profileInfoCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Profile::ProfileInfo ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,7 +214,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfoCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Web.Profile.ProfileInfoCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -205,7 +238,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="profileInfoCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -231,7 +270,13 @@
       <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfoCollection.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Web.Profile.ProfileInfoCollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -256,6 +301,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Profile.ProfileInfo this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Profile.ProfileInfo Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfoCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As ProfileInfo" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Profile.ProfileInfo" Usage="System.Web.Profile.ProfileInfoCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Profile::ProfileInfo ^ default[System::String ^] { System::Web::Profile::ProfileInfo ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -278,6 +326,9 @@
       <MemberSignature Language="C#" Value="public void Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="profileInfoCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,6 +351,9 @@
       <MemberSignature Language="C#" Value="public void SetReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Profile.ProfileInfoCollection.SetReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetReadOnly ()" />
+      <MemberSignature Language="F#" Value="member this.SetReadOnly : unit -&gt; unit" Usage="profileInfoCollection.SetReadOnly " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -325,7 +379,13 @@
       <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Web.Profile.ProfileInfoCollection.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Web.Profile.ProfileInfoCollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -346,14 +406,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CopyTo">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies the <see cref="T:System.Web.Profile.ProfileInfoCollection" /> to a one-dimensional array.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

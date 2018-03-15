@@ -1,7 +1,10 @@
-<Type Name="GeoCoordinate" FullName="System.Device.Location.GeoCoordinate">
+﻿<Type Name="GeoCoordinate" FullName="System.Device.Location.GeoCoordinate">
   <TypeSignature Language="C#" Value="public class GeoCoordinate : IEquatable&lt;System.Device.Location.GeoCoordinate&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GeoCoordinate extends System.Object implements class System.IEquatable`1&lt;class System.Device.Location.GeoCoordinate&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Device.Location.GeoCoordinate" />
+  <TypeSignature Language="VB.NET" Value="Public Class GeoCoordinate&#xA;Implements IEquatable(Of GeoCoordinate)" />
+  <TypeSignature Language="F#" Value="type GeoCoordinate = class&#xA;    interface IEquatable&lt;GeoCoordinate&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GeoCoordinate : IEquatable&lt;System::Device::Location::GeoCoordinate ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,10 +22,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Device.Location.GeoCoordinate." /></summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public GeoCoordinate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoCoordinate.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GeoCoordinate();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -47,6 +61,9 @@
       <MemberSignature Language="C#" Value="public GeoCoordinate (double latitude, double longitude);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 latitude, float64 longitude) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoCoordinate.#ctor(System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (latitude As Double, longitude As Double)" />
+      <MemberSignature Language="F#" Value="new System.Device.Location.GeoCoordinate : double * double -&gt; System.Device.Location.GeoCoordinate" Usage="new System.Device.Location.GeoCoordinate (latitude, longitude)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GeoCoordinate(double latitude, double longitude);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -75,6 +92,9 @@
       <MemberSignature Language="C#" Value="public GeoCoordinate (double latitude, double longitude, double altitude);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 latitude, float64 longitude, float64 altitude) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoCoordinate.#ctor(System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (latitude As Double, longitude As Double, altitude As Double)" />
+      <MemberSignature Language="F#" Value="new System.Device.Location.GeoCoordinate : double * double * double -&gt; System.Device.Location.GeoCoordinate" Usage="new System.Device.Location.GeoCoordinate (latitude, longitude, altitude)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GeoCoordinate(double latitude, double longitude, double altitude);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -106,6 +126,9 @@
       <MemberSignature Language="C#" Value="public GeoCoordinate (double latitude, double longitude, double altitude, double horizontalAccuracy, double verticalAccuracy, double speed, double course);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 latitude, float64 longitude, float64 altitude, float64 horizontalAccuracy, float64 verticalAccuracy, float64 speed, float64 course) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoCoordinate.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (latitude As Double, longitude As Double, altitude As Double, horizontalAccuracy As Double, verticalAccuracy As Double, speed As Double, course As Double)" />
+      <MemberSignature Language="F#" Value="new System.Device.Location.GeoCoordinate : double * double * double * double * double * double * double -&gt; System.Device.Location.GeoCoordinate" Usage="new System.Device.Location.GeoCoordinate (latitude, longitude, altitude, horizontalAccuracy, verticalAccuracy, speed, course)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GeoCoordinate(double latitude, double longitude, double altitude, double horizontalAccuracy, double verticalAccuracy, double speed, double course);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -138,6 +161,9 @@
       <MemberSignature Language="C#" Value="public double Altitude { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Altitude" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoCoordinate.Altitude" />
+      <MemberSignature Language="VB.NET" Value="Public Property Altitude As Double" />
+      <MemberSignature Language="F#" Value="member this.Altitude : double with get, set" Usage="System.Device.Location.GeoCoordinate.Altitude" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Altitude { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -163,6 +189,9 @@
       <MemberSignature Language="C#" Value="public double Course { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Course" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoCoordinate.Course" />
+      <MemberSignature Language="VB.NET" Value="Public Property Course As Double" />
+      <MemberSignature Language="F#" Value="member this.Course : double with get, set" Usage="System.Device.Location.GeoCoordinate.Course" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Course { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -194,11 +223,26 @@
           <see cref="P:System.Device.Location.GeoCoordinate.Course" /> is set outside the valid range.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two <see cref="T:System.Device.Location.GeoCoordinate" /> objects are equivalent, based solely on latitude and longitude.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (System.Device.Location.GeoCoordinate other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Device.Location.GeoCoordinate other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoCoordinate.Equals(System.Device.Location.GeoCoordinate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As GeoCoordinate) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Device.Location.GeoCoordinate -&gt; bool" Usage="geoCoordinate.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Device::Location::GeoCoordinate ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -228,6 +272,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoCoordinate.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="geoCoordinate.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -258,6 +305,9 @@
       <MemberSignature Language="C#" Value="public double GetDistanceTo (System.Device.Location.GeoCoordinate other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetDistanceTo(class System.Device.Location.GeoCoordinate other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoCoordinate.GetDistanceTo(System.Device.Location.GeoCoordinate)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDistanceTo (other As GeoCoordinate) As Double" />
+      <MemberSignature Language="F#" Value="member this.GetDistanceTo : System.Device.Location.GeoCoordinate -&gt; double" Usage="geoCoordinate.GetDistanceTo other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double GetDistanceTo(System::Device::Location::GeoCoordinate ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -289,6 +339,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoCoordinate.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="geoCoordinate.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -315,6 +368,9 @@
       <MemberSignature Language="C#" Value="public double HorizontalAccuracy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 HorizontalAccuracy" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoCoordinate.HorizontalAccuracy" />
+      <MemberSignature Language="VB.NET" Value="Public Property HorizontalAccuracy As Double" />
+      <MemberSignature Language="F#" Value="member this.HorizontalAccuracy : double with get, set" Usage="System.Device.Location.GeoCoordinate.HorizontalAccuracy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalAccuracy { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -342,6 +398,9 @@
       <MemberSignature Language="C#" Value="public bool IsUnknown { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUnknown" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoCoordinate.IsUnknown" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUnknown As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsUnknown : bool" Usage="System.Device.Location.GeoCoordinate.IsUnknown" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUnknown { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -376,6 +435,9 @@
       <MemberSignature Language="C#" Value="public double Latitude { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Latitude" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoCoordinate.Latitude" />
+      <MemberSignature Language="VB.NET" Value="Public Property Latitude As Double" />
+      <MemberSignature Language="F#" Value="member this.Latitude : double with get, set" Usage="System.Device.Location.GeoCoordinate.Latitude" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Latitude { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -411,6 +473,9 @@
       <MemberSignature Language="C#" Value="public double Longitude { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Longitude" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoCoordinate.Longitude" />
+      <MemberSignature Language="VB.NET" Value="Public Property Longitude As Double" />
+      <MemberSignature Language="F#" Value="member this.Longitude : double with get, set" Usage="System.Device.Location.GeoCoordinate.Longitude" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Longitude { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -446,6 +511,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Device.Location.GeoCoordinate left, System.Device.Location.GeoCoordinate right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Device.Location.GeoCoordinate left, class System.Device.Location.GeoCoordinate right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoCoordinate.op_Equality(System.Device.Location.GeoCoordinate,System.Device.Location.GeoCoordinate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As GeoCoordinate, right As GeoCoordinate) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Device.Location.GeoCoordinate * System.Device.Location.GeoCoordinate -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Device::Location::GeoCoordinate ^ left, System::Device::Location::GeoCoordinate ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -478,6 +546,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Device.Location.GeoCoordinate left, System.Device.Location.GeoCoordinate right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Device.Location.GeoCoordinate left, class System.Device.Location.GeoCoordinate right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoCoordinate.op_Inequality(System.Device.Location.GeoCoordinate,System.Device.Location.GeoCoordinate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As GeoCoordinate, right As GeoCoordinate) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Device.Location.GeoCoordinate * System.Device.Location.GeoCoordinate -&gt; bool" Usage="System.Device.Location.GeoCoordinate.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Device::Location::GeoCoordinate ^ left, System::Device::Location::GeoCoordinate ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -510,6 +581,9 @@
       <MemberSignature Language="C#" Value="public double Speed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Speed" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoCoordinate.Speed" />
+      <MemberSignature Language="VB.NET" Value="Public Property Speed As Double" />
+      <MemberSignature Language="F#" Value="member this.Speed : double with get, set" Usage="System.Device.Location.GeoCoordinate.Speed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Speed { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -540,6 +614,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.GeoCoordinate.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="geoCoordinate.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -566,6 +643,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Device.Location.GeoCoordinate Unknown;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Device.Location.GeoCoordinate Unknown" />
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoCoordinate.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Unknown As GeoCoordinate " />
+      <MemberSignature Language="F#" Value=" staticval mutable Unknown : System.Device.Location.GeoCoordinate" Usage="System.Device.Location.GeoCoordinate.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Device::Location::GeoCoordinate ^ Unknown;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -598,6 +678,9 @@
       <MemberSignature Language="C#" Value="public double VerticalAccuracy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 VerticalAccuracy" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.GeoCoordinate.VerticalAccuracy" />
+      <MemberSignature Language="VB.NET" Value="Public Property VerticalAccuracy As Double" />
+      <MemberSignature Language="F#" Value="member this.VerticalAccuracy : double with get, set" Usage="System.Device.Location.GeoCoordinate.VerticalAccuracy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalAccuracy { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -614,23 +697,5 @@
           <see cref="P:System.Device.Location.GeoCoordinate.VerticalAccuracy" /> is set outside the valid range.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Device</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.Device.Location.GeoCoordinate." /></summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Device</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether two <see cref="T:System.Device.Location.GeoCoordinate" /> objects are equivalent, based solely on latitude and longitude.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

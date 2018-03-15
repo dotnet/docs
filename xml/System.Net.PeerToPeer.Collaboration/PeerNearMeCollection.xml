@@ -1,7 +1,10 @@
-<Type Name="PeerNearMeCollection" FullName="System.Net.PeerToPeer.Collaboration.PeerNearMeCollection">
+﻿<Type Name="PeerNearMeCollection" FullName="System.Net.PeerToPeer.Collaboration.PeerNearMeCollection">
   <TypeSignature Language="C#" Value="public class PeerNearMeCollection : System.Collections.ObjectModel.Collection&lt;System.Net.PeerToPeer.Collaboration.PeerNearMe&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PeerNearMeCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Net.PeerToPeer.Collaboration.PeerNearMe&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerNearMeCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class PeerNearMeCollection&#xA;Inherits Collection(Of PeerNearMe)" />
+  <TypeSignature Language="F#" Value="type PeerNearMeCollection = class&#xA;    inherit Collection&lt;PeerNearMe&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PeerNearMeCollection : System::Collections::ObjectModel::Collection&lt;System::Net::PeerToPeer::Collaboration::PeerNearMe ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.Net.PeerToPeer.Collaboration.PeerNearMe item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, class System.Net.PeerToPeer.Collaboration.PeerNearMe item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMeCollection.InsertItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerNearMe)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As PeerNearMe)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.Net.PeerToPeer.Collaboration.PeerNearMe -&gt; unit" Usage="peerNearMeCollection.InsertItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::Net::PeerToPeer::Collaboration::PeerNearMe ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -55,6 +61,9 @@
       <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.Net.PeerToPeer.Collaboration.PeerNearMe item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, class System.Net.PeerToPeer.Collaboration.PeerNearMe item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMeCollection.SetItem(System.Int32,System.Net.PeerToPeer.Collaboration.PeerNearMe)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As PeerNearMe)" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.Net.PeerToPeer.Collaboration.PeerNearMe -&gt; unit" Usage="peerNearMeCollection.SetItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::Net::PeerToPeer::Collaboration::PeerNearMe ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -87,6 +96,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerNearMeCollection.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="peerNearMeCollection.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

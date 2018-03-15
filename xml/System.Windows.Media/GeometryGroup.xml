@@ -1,7 +1,10 @@
-<Type Name="GeometryGroup" FullName="System.Windows.Media.GeometryGroup">
+﻿<Type Name="GeometryGroup" FullName="System.Windows.Media.GeometryGroup">
   <TypeSignature Language="C#" Value="public sealed class GeometryGroup : System.Windows.Media.Geometry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GeometryGroup extends System.Windows.Media.Geometry" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GeometryGroup" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GeometryGroup&#xA;Inherits Geometry" />
+  <TypeSignature Language="F#" Value="type GeometryGroup = class&#xA;    inherit Geometry" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GeometryGroup sealed : System::Windows::Media::Geometry" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="public GeometryGroup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeometryGroup.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GeometryGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +64,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.GeometryCollection Children { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.GeometryCollection Children" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeometryGroup.Children" />
+      <MemberSignature Language="VB.NET" Value="Public Property Children As GeometryCollection" />
+      <MemberSignature Language="F#" Value="member this.Children : System.Windows.Media.GeometryCollection with get, set" Usage="System.Windows.Media.GeometryGroup.Children" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::GeometryCollection ^ Children { System::Windows::Media::GeometryCollection ^ get(); void set(System::Windows::Media::GeometryCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +99,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ChildrenProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ChildrenProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GeometryGroup.ChildrenProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ChildrenProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ChildrenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.GeometryGroup.ChildrenProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ChildrenProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -108,6 +119,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.GeometryGroup Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GeometryGroup Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeometryGroup.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As GeometryGroup" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.GeometryGroup" Usage="geometryGroup.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GeometryGroup ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -136,6 +150,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.GeometryGroup CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.GeometryGroup CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeometryGroup.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As GeometryGroup" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.GeometryGroup" Usage="geometryGroup.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::GeometryGroup ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -164,6 +181,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeometryGroup.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="geometryGroup.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -183,6 +203,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.FillRule FillRule { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.FillRule FillRule" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.GeometryGroup.FillRule" />
+      <MemberSignature Language="VB.NET" Value="Public Property FillRule As FillRule" />
+      <MemberSignature Language="F#" Value="member this.FillRule : System.Windows.Media.FillRule with get, set" Usage="System.Windows.Media.GeometryGroup.FillRule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::FillRule FillRule { System::Windows::Media::FillRule get(); void set(System::Windows::Media::FillRule value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -221,6 +244,9 @@ FillRule Example
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FillRuleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FillRuleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GeometryGroup.FillRuleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FillRuleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FillRuleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.GeometryGroup.FillRuleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FillRuleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -238,6 +264,9 @@ FillRule Example
       <MemberSignature Language="C#" Value="public override bool IsEmpty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsEmpty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeometryGroup.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsEmpty () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsEmpty : unit -&gt; bool" Usage="geometryGroup.IsEmpty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsEmpty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -257,6 +286,9 @@ FillRule Example
       <MemberSignature Language="C#" Value="public override bool MayHaveCurves ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MayHaveCurves() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.GeometryGroup.MayHaveCurves" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function MayHaveCurves () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.MayHaveCurves : unit -&gt; bool" Usage="geometryGroup.MayHaveCurves " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MayHaveCurves();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="IDynamicExpression" FullName="System.Linq.Expressions.IDynamicExpression">
+﻿<Type Name="IDynamicExpression" FullName="System.Linq.Expressions.IDynamicExpression">
   <TypeSignature Language="C#" Value="public interface IDynamicExpression : System.Linq.Expressions.IArgumentProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDynamicExpression implements class System.Linq.Expressions.IArgumentProvider" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.IDynamicExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDynamicExpression&#xA;Implements IArgumentProvider" />
+  <TypeSignature Language="F#" Value="type IDynamicExpression = interface&#xA;    interface IArgumentProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDynamicExpression : System::Linq::Expressions::IArgumentProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public object CreateCallSite ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object CreateCallSite() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.IDynamicExpression.CreateCallSite" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCallSite () As Object" />
+      <MemberSignature Language="F#" Value="abstract member CreateCallSite : unit -&gt; obj" Usage="iDynamicExpression.CreateCallSite " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ CreateCallSite();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -61,6 +67,9 @@
       <MemberSignature Language="C#" Value="public Type DelegateType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DelegateType" />
       <MemberSignature Language="DocId" Value="P:System.Linq.Expressions.IDynamicExpression.DelegateType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DelegateType As Type" />
+      <MemberSignature Language="F#" Value="member this.DelegateType : Type" Usage="System.Linq.Expressions.IDynamicExpression.DelegateType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DelegateType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -90,6 +99,9 @@
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.Expression Rewrite (System.Linq.Expressions.Expression[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.Expressions.Expression Rewrite(class System.Linq.Expressions.Expression[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.IDynamicExpression.Rewrite(System.Linq.Expressions.Expression[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Rewrite (args As Expression()) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member Rewrite : System.Linq.Expressions.Expression[] -&gt; System.Linq.Expressions.Expression" Usage="iDynamicExpression.Rewrite args" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::Expression ^ Rewrite(cli::array &lt;System::Linq::Expressions::Expression ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>

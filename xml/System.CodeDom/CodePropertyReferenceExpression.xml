@@ -1,7 +1,10 @@
-<Type Name="CodePropertyReferenceExpression" FullName="System.CodeDom.CodePropertyReferenceExpression">
+﻿<Type Name="CodePropertyReferenceExpression" FullName="System.CodeDom.CodePropertyReferenceExpression">
   <TypeSignature Language="C#" Value="public class CodePropertyReferenceExpression : System.CodeDom.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodePropertyReferenceExpression extends System.CodeDom.CodeExpression" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodePropertyReferenceExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodePropertyReferenceExpression&#xA;Inherits CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodePropertyReferenceExpression = class&#xA;    inherit CodeExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodePropertyReferenceExpression : System::CodeDom::CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -47,10 +50,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodePropertyReferenceExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodePropertyReferenceExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodePropertyReferenceExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodePropertyReferenceExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -70,6 +84,9 @@
       <MemberSignature Language="C#" Value="public CodePropertyReferenceExpression (System.CodeDom.CodeExpression targetObject, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression targetObject, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodePropertyReferenceExpression.#ctor(System.CodeDom.CodeExpression,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetObject As CodeExpression, propertyName As String)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodePropertyReferenceExpression : System.CodeDom.CodeExpression * string -&gt; System.CodeDom.CodePropertyReferenceExpression" Usage="new System.CodeDom.CodePropertyReferenceExpression (targetObject, propertyName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodePropertyReferenceExpression(System::CodeDom::CodeExpression ^ targetObject, System::String ^ propertyName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -94,6 +111,9 @@
       <MemberSignature Language="C#" Value="public string PropertyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodePropertyReferenceExpression.PropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PropertyName As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string with get, set" Usage="System.CodeDom.CodePropertyReferenceExpression.PropertyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -116,6 +136,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression TargetObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression TargetObject" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodePropertyReferenceExpression.TargetObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetObject As CodeExpression" />
+      <MemberSignature Language="F#" Value="member this.TargetObject : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodePropertyReferenceExpression.TargetObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ TargetObject { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -135,14 +158,5 @@
         <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodePropertyReferenceExpression" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

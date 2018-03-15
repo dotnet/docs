@@ -1,7 +1,10 @@
-<Type Name="SessionEndingEventHandler" FullName="Microsoft.Win32.SessionEndingEventHandler">
+﻿<Type Name="SessionEndingEventHandler" FullName="Microsoft.Win32.SessionEndingEventHandler">
   <TypeSignature Language="C#" Value="public delegate void SessionEndingEventHandler(object sender, SessionEndingEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SessionEndingEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SessionEndingEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub SessionEndingEventHandler(sender As Object, e As SessionEndingEventArgs)" />
+  <TypeSignature Language="F#" Value="type SessionEndingEventHandler = delegate of obj * SessionEndingEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void SessionEndingEventHandler(System::Object ^ sender, SessionEndingEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="PassportAuthenticationEventArgs" FullName="System.Web.Security.PassportAuthenticationEventArgs">
+﻿<Type Name="PassportAuthenticationEventArgs" FullName="System.Web.Security.PassportAuthenticationEventArgs">
   <TypeSignature Language="C#" Value="public sealed class PassportAuthenticationEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PassportAuthenticationEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.PassportAuthenticationEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PassportAuthenticationEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type PassportAuthenticationEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PassportAuthenticationEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public PassportAuthenticationEventArgs (System.Web.Security.PassportIdentity identity, System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.Security.PassportIdentity identity, class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportAuthenticationEventArgs.#ctor(System.Web.Security.PassportIdentity,System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As PassportIdentity, context As HttpContext)" />
+      <MemberSignature Language="F#" Value="new System.Web.Security.PassportAuthenticationEventArgs : System.Web.Security.PassportIdentity * System.Web.HttpContext -&gt; System.Web.Security.PassportAuthenticationEventArgs" Usage="new System.Web.Security.PassportAuthenticationEventArgs (identity, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PassportAuthenticationEventArgs(System::Web::Security::PassportIdentity ^ identity, System::Web::HttpContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +65,9 @@
       <MemberSignature Language="C#" Value="public System.Web.HttpContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportAuthenticationEventArgs.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.Security.PassportAuthenticationEventArgs.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +94,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Security.PassportIdentity Identity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Security.PassportIdentity Identity" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportAuthenticationEventArgs.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As PassportIdentity" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.Web.Security.PassportIdentity" Usage="System.Web.Security.PassportAuthenticationEventArgs.Identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Security::PassportIdentity ^ Identity { System::Web::Security::PassportIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +123,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Principal.IPrincipal User { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.IPrincipal User" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportAuthenticationEventArgs.User" />
+      <MemberSignature Language="VB.NET" Value="Public Property User As IPrincipal" />
+      <MemberSignature Language="F#" Value="member this.User : System.Security.Principal.IPrincipal with get, set" Usage="System.Web.Security.PassportAuthenticationEventArgs.User" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IPrincipal ^ User { System::Security::Principal::IPrincipal ^ get(); void set(System::Security::Principal::IPrincipal ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

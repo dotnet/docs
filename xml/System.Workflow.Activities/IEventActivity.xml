@@ -1,7 +1,10 @@
-<Type Name="IEventActivity" FullName="System.Workflow.Activities.IEventActivity">
+﻿<Type Name="IEventActivity" FullName="System.Workflow.Activities.IEventActivity">
   <TypeSignature Language="C#" Value="public interface IEventActivity" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEventActivity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.IEventActivity" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IEventActivity" />
+  <TypeSignature Language="F#" Value="type IEventActivity = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IEventActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public IComparable QueueName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IComparable QueueName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.IEventActivity.QueueName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property QueueName As IComparable" />
+      <MemberSignature Language="F#" Value="member this.QueueName : IComparable" Usage="System.Workflow.Activities.IEventActivity.QueueName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IComparable ^ QueueName { IComparable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -48,6 +54,9 @@
       <MemberSignature Language="C#" Value="public void Subscribe (System.Workflow.ComponentModel.ActivityExecutionContext parentContext, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; parentEventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Subscribe(class System.Workflow.ComponentModel.ActivityExecutionContext parentContext, class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; parentEventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.IEventActivity.Subscribe(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Subscribe (parentContext As ActivityExecutionContext, parentEventHandler As IActivityEventListener(Of QueueEventArgs))" />
+      <MemberSignature Language="F#" Value="abstract member Subscribe : System.Workflow.ComponentModel.ActivityExecutionContext * System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; -&gt; unit" Usage="iEventActivity.Subscribe (parentContext, parentEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Subscribe(System::Workflow::ComponentModel::ActivityExecutionContext ^ parentContext, System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ parentEventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -81,6 +90,9 @@
       <MemberSignature Language="C#" Value="public void Unsubscribe (System.Workflow.ComponentModel.ActivityExecutionContext parentContext, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; parentEventHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unsubscribe(class System.Workflow.ComponentModel.ActivityExecutionContext parentContext, class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.QueueEventArgs&gt; parentEventHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.IEventActivity.Unsubscribe(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.IActivityEventListener{System.Workflow.ComponentModel.QueueEventArgs})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unsubscribe (parentContext As ActivityExecutionContext, parentEventHandler As IActivityEventListener(Of QueueEventArgs))" />
+      <MemberSignature Language="F#" Value="abstract member Unsubscribe : System.Workflow.ComponentModel.ActivityExecutionContext * System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.QueueEventArgs&gt; -&gt; unit" Usage="iEventActivity.Unsubscribe (parentContext, parentEventHandler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unsubscribe(System::Workflow::ComponentModel::ActivityExecutionContext ^ parentContext, System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::QueueEventArgs ^&gt; ^ parentEventHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

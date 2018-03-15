@@ -1,7 +1,10 @@
-<Type Name="CustomValidationAttribute" FullName="System.ComponentModel.DataAnnotations.CustomValidationAttribute">
+﻿<Type Name="CustomValidationAttribute" FullName="System.ComponentModel.DataAnnotations.CustomValidationAttribute">
   <TypeSignature Language="C#" Value="public sealed class CustomValidationAttribute : System.ComponentModel.DataAnnotations.ValidationAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CustomValidationAttribute extends System.ComponentModel.DataAnnotations.ValidationAttribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.CustomValidationAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CustomValidationAttribute&#xA;Inherits ValidationAttribute" />
+  <TypeSignature Language="F#" Value="type CustomValidationAttribute = class&#xA;    inherit ValidationAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CustomValidationAttribute sealed : System::ComponentModel::DataAnnotations::ValidationAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -18,7 +21,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Method | System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter, AllowMultiple=true)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Field | System.AttributeTargets.Method | System.AttributeTargets.Parameter | System.AttributeTargets.Property, AllowMultiple=true)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public CustomValidationAttribute (Type validatorType, string method);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type validatorType, string method) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.CustomValidationAttribute.#ctor(System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (validatorType As Type, method As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.CustomValidationAttribute : Type * string -&gt; System.ComponentModel.DataAnnotations.CustomValidationAttribute" Usage="new System.ComponentModel.DataAnnotations.CustomValidationAttribute (validatorType, method)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomValidationAttribute(Type ^ validatorType, System::String ^ method);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -74,6 +80,9 @@
       <MemberSignature Language="C#" Value="public override string FormatErrorMessage (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string FormatErrorMessage(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.CustomValidationAttribute.FormatErrorMessage(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function FormatErrorMessage (name As String) As String" />
+      <MemberSignature Language="F#" Value="override this.FormatErrorMessage : string -&gt; string" Usage="customValidationAttribute.FormatErrorMessage name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ FormatErrorMessage(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -109,6 +118,8 @@
       <MemberSignature Language="C#" Value="protected override System.ComponentModel.DataAnnotations.ValidationResult IsValid (object value, System.ComponentModel.DataAnnotations.ValidationContext validationContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ComponentModel.DataAnnotations.ValidationResult IsValid(object value, class System.ComponentModel.DataAnnotations.ValidationContext validationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.CustomValidationAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)" />
+      <MemberSignature Language="F#" Value="override this.IsValid : obj * System.ComponentModel.DataAnnotations.ValidationContext -&gt; System.ComponentModel.DataAnnotations.ValidationResult" Usage="customValidationAttribute.IsValid (value, validationContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ComponentModel::DataAnnotations::ValidationResult ^ IsValid(System::Object ^ value, System::ComponentModel::DataAnnotations::ValidationContext ^ validationContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -139,6 +150,9 @@
       <MemberSignature Language="C#" Value="public string Method { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Method" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.CustomValidationAttribute.Method" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Method As String" />
+      <MemberSignature Language="F#" Value="member this.Method : string" Usage="System.ComponentModel.DataAnnotations.CustomValidationAttribute.Method" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Method { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -176,6 +190,9 @@
       <MemberSignature Language="C#" Value="public override object TypeId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object TypeId" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.CustomValidationAttribute.TypeId" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TypeId As Object" />
+      <MemberSignature Language="F#" Value="member this.TypeId : obj" Usage="System.ComponentModel.DataAnnotations.CustomValidationAttribute.TypeId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ TypeId { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -195,6 +212,9 @@
       <MemberSignature Language="C#" Value="public Type ValidatorType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ValidatorType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.CustomValidationAttribute.ValidatorType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidatorType As Type" />
+      <MemberSignature Language="F#" Value="member this.ValidatorType : Type" Usage="System.ComponentModel.DataAnnotations.CustomValidationAttribute.ValidatorType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ValidatorType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

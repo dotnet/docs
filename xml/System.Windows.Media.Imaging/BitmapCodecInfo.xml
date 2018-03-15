@@ -1,7 +1,10 @@
-<Type Name="BitmapCodecInfo" FullName="System.Windows.Media.Imaging.BitmapCodecInfo">
+﻿<Type Name="BitmapCodecInfo" FullName="System.Windows.Media.Imaging.BitmapCodecInfo">
   <TypeSignature Language="C#" Value="public abstract class BitmapCodecInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BitmapCodecInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapCodecInfo" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BitmapCodecInfo" />
+  <TypeSignature Language="F#" Value="type BitmapCodecInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BitmapCodecInfo abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,8 @@
       <MemberSignature Language="C#" Value="protected BitmapCodecInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapCodecInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BitmapCodecInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +57,9 @@
       <MemberSignature Language="C#" Value="public virtual string Author { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Author" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapCodecInfo.Author" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Author As String" />
+      <MemberSignature Language="F#" Value="member this.Author : string" Usage="System.Windows.Media.Imaging.BitmapCodecInfo.Author" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Author { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -88,6 +96,9 @@
       <MemberSignature Language="C#" Value="public virtual Guid ContainerFormat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ContainerFormat" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapCodecInfo.ContainerFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContainerFormat As Guid" />
+      <MemberSignature Language="F#" Value="member this.ContainerFormat : Guid" Usage="System.Windows.Media.Imaging.BitmapCodecInfo.ContainerFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Guid ContainerFormat { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -124,6 +135,9 @@
       <MemberSignature Language="C#" Value="public virtual string DeviceManufacturer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DeviceManufacturer" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapCodecInfo.DeviceManufacturer" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DeviceManufacturer As String" />
+      <MemberSignature Language="F#" Value="member this.DeviceManufacturer : string" Usage="System.Windows.Media.Imaging.BitmapCodecInfo.DeviceManufacturer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DeviceManufacturer { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -160,6 +174,9 @@
       <MemberSignature Language="C#" Value="public virtual string DeviceModels { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DeviceModels" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapCodecInfo.DeviceModels" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DeviceModels As String" />
+      <MemberSignature Language="F#" Value="member this.DeviceModels : string" Usage="System.Windows.Media.Imaging.BitmapCodecInfo.DeviceModels" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DeviceModels { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -196,6 +213,9 @@
       <MemberSignature Language="C#" Value="public virtual string FileExtensions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileExtensions" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapCodecInfo.FileExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FileExtensions As String" />
+      <MemberSignature Language="F#" Value="member this.FileExtensions : string" Usage="System.Windows.Media.Imaging.BitmapCodecInfo.FileExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FileExtensions { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -232,6 +252,9 @@
       <MemberSignature Language="C#" Value="public virtual string FriendlyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FriendlyName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapCodecInfo.FriendlyName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FriendlyName As String" />
+      <MemberSignature Language="F#" Value="member this.FriendlyName : string" Usage="System.Windows.Media.Imaging.BitmapCodecInfo.FriendlyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FriendlyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -268,6 +291,9 @@
       <MemberSignature Language="C#" Value="public virtual string MimeTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MimeTypes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapCodecInfo.MimeTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MimeTypes As String" />
+      <MemberSignature Language="F#" Value="member this.MimeTypes : string" Usage="System.Windows.Media.Imaging.BitmapCodecInfo.MimeTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MimeTypes { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -304,6 +330,9 @@
       <MemberSignature Language="C#" Value="public virtual Version SpecificationVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version SpecificationVersion" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapCodecInfo.SpecificationVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SpecificationVersion As Version" />
+      <MemberSignature Language="F#" Value="member this.SpecificationVersion : Version" Usage="System.Windows.Media.Imaging.BitmapCodecInfo.SpecificationVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Version ^ SpecificationVersion { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -340,6 +369,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsAnimation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsAnimation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapCodecInfo.SupportsAnimation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsAnimation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsAnimation : bool" Usage="System.Windows.Media.Imaging.BitmapCodecInfo.SupportsAnimation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsAnimation { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -367,6 +399,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsLossless { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsLossless" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapCodecInfo.SupportsLossless" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsLossless As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsLossless : bool" Usage="System.Windows.Media.Imaging.BitmapCodecInfo.SupportsLossless" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsLossless { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -394,6 +429,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsMultipleFrames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsMultipleFrames" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapCodecInfo.SupportsMultipleFrames" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsMultipleFrames As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsMultipleFrames : bool" Usage="System.Windows.Media.Imaging.BitmapCodecInfo.SupportsMultipleFrames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsMultipleFrames { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -421,6 +459,9 @@
       <MemberSignature Language="C#" Value="public virtual Version Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version Version" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapCodecInfo.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Version As Version" />
+      <MemberSignature Language="F#" Value="member this.Version : Version" Usage="System.Windows.Media.Imaging.BitmapCodecInfo.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Version ^ Version { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

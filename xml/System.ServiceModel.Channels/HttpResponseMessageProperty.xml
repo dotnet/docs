@@ -1,7 +1,10 @@
-<Type Name="HttpResponseMessageProperty" FullName="System.ServiceModel.Channels.HttpResponseMessageProperty">
+﻿<Type Name="HttpResponseMessageProperty" FullName="System.ServiceModel.Channels.HttpResponseMessageProperty">
   <TypeSignature Language="C#" Value="public sealed class HttpResponseMessageProperty : System.ServiceModel.Channels.IMessageProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HttpResponseMessageProperty extends System.Object implements class System.ServiceModel.Channels.IMessageProperty" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.HttpResponseMessageProperty" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpResponseMessageProperty&#xA;Implements IMessageProperty" />
+  <TypeSignature Language="F#" Value="type HttpResponseMessageProperty = class&#xA;    interface IMessageProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpResponseMessageProperty sealed : System::ServiceModel::Channels::IMessageProperty" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +57,8 @@
       <MemberSignature Language="C#" Value="public HttpResponseMessageProperty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpResponseMessageProperty.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpResponseMessageProperty();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -89,6 +94,9 @@
       <MemberSignature Language="C#" Value="public System.Net.WebHeaderCollection Headers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection Headers" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As WebHeaderCollection" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Net.WebHeaderCollection" Usage="System.ServiceModel.Channels.HttpResponseMessageProperty.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -123,6 +131,9 @@
       <MemberSignature Language="C#" Value="public static string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Channels.HttpResponseMessageProperty.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -157,6 +168,9 @@
       <MemberSignature Language="C#" Value="public System.Net.HttpStatusCode StatusCode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.HttpStatusCode StatusCode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property StatusCode As HttpStatusCode" />
+      <MemberSignature Language="F#" Value="member this.StatusCode : System.Net.HttpStatusCode with get, set" Usage="System.ServiceModel.Channels.HttpResponseMessageProperty.StatusCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::HttpStatusCode StatusCode { System::Net::HttpStatusCode get(); void set(System::Net::HttpStatusCode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -197,6 +211,9 @@
       <MemberSignature Language="C#" Value="public string StatusDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StatusDescription" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.StatusDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property StatusDescription As String" />
+      <MemberSignature Language="F#" Value="member this.StatusDescription : string with get, set" Usage="System.ServiceModel.Channels.HttpResponseMessageProperty.StatusDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StatusDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -236,6 +253,9 @@
       <MemberSignature Language="C#" Value="public bool SuppressEntityBody { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SuppressEntityBody" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressEntityBody" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuppressEntityBody As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SuppressEntityBody : bool with get, set" Usage="System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressEntityBody" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressEntityBody { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -270,6 +290,9 @@
       <MemberSignature Language="C#" Value="public bool SuppressPreamble { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SuppressPreamble" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuppressPreamble As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SuppressPreamble : bool with get, set" Usage="System.ServiceModel.Channels.HttpResponseMessageProperty.SuppressPreamble" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressPreamble { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -328,7 +351,12 @@ public class Service1 : IService1
       <MemberSignature Language="C#" Value="System.ServiceModel.Channels.IMessageProperty IMessageProperty.CreateCopy ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ServiceModel.Channels.IMessageProperty System.ServiceModel.Channels.IMessageProperty.CreateCopy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.HttpResponseMessageProperty.System#ServiceModel#Channels#IMessageProperty#CreateCopy" />
+      <MemberSignature Language="VB.NET" Value="Function CreateCopy () As IMessageProperty Implements IMessageProperty.CreateCopy" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ServiceModel::Channels::IMessageProperty ^ System.ServiceModel.Channels.IMessageProperty.CreateCopy() = System::ServiceModel::Channels::IMessageProperty::CreateCopy;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Channels.IMessageProperty.CreateCopy</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>

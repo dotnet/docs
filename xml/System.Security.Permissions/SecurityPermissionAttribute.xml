@@ -1,7 +1,10 @@
-<Type Name="SecurityPermissionAttribute" FullName="System.Security.Permissions.SecurityPermissionAttribute">
+﻿<Type Name="SecurityPermissionAttribute" FullName="System.Security.Permissions.SecurityPermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class SecurityPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SecurityPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.SecurityPermissionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SecurityPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type SecurityPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +55,9 @@
       <MemberSignature Language="C#" Value="public SecurityPermissionAttribute (System.Security.Permissions.SecurityAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.SecurityPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.SecurityPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.SecurityPermissionAttribute" Usage="new System.Security.Permissions.SecurityPermissionAttribute action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -79,6 +85,9 @@
       <MemberSignature Language="C#" Value="public bool Assertion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Assertion" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermissionAttribute.Assertion" />
+      <MemberSignature Language="VB.NET" Value="Public Property Assertion As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Assertion : bool with get, set" Usage="System.Security.Permissions.SecurityPermissionAttribute.Assertion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Assertion { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -107,6 +116,9 @@
       <MemberSignature Language="C#" Value="public bool BindingRedirects { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BindingRedirects" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermissionAttribute.BindingRedirects" />
+      <MemberSignature Language="VB.NET" Value="Public Property BindingRedirects As Boolean" />
+      <MemberSignature Language="F#" Value="member this.BindingRedirects : bool with get, set" Usage="System.Security.Permissions.SecurityPermissionAttribute.BindingRedirects" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BindingRedirects { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -142,6 +154,9 @@
       <MemberSignature Language="C#" Value="public bool ControlAppDomain { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ControlAppDomain" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermissionAttribute.ControlAppDomain" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlAppDomain As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ControlAppDomain : bool with get, set" Usage="System.Security.Permissions.SecurityPermissionAttribute.ControlAppDomain" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ControlAppDomain { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -170,6 +185,9 @@
       <MemberSignature Language="C#" Value="public bool ControlDomainPolicy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ControlDomainPolicy" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermissionAttribute.ControlDomainPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlDomainPolicy As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ControlDomainPolicy : bool with get, set" Usage="System.Security.Permissions.SecurityPermissionAttribute.ControlDomainPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ControlDomainPolicy { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -198,6 +216,9 @@
       <MemberSignature Language="C#" Value="public bool ControlEvidence { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ControlEvidence" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermissionAttribute.ControlEvidence" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlEvidence As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ControlEvidence : bool with get, set" Usage="System.Security.Permissions.SecurityPermissionAttribute.ControlEvidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ControlEvidence { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -226,6 +247,9 @@
       <MemberSignature Language="C#" Value="public bool ControlPolicy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ControlPolicy" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermissionAttribute.ControlPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlPolicy As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ControlPolicy : bool with get, set" Usage="System.Security.Permissions.SecurityPermissionAttribute.ControlPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ControlPolicy { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -254,6 +278,9 @@
       <MemberSignature Language="C#" Value="public bool ControlPrincipal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ControlPrincipal" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermissionAttribute.ControlPrincipal" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlPrincipal As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ControlPrincipal : bool with get, set" Usage="System.Security.Permissions.SecurityPermissionAttribute.ControlPrincipal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ControlPrincipal { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -282,6 +309,9 @@
       <MemberSignature Language="C#" Value="public bool ControlThread { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ControlThread" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermissionAttribute.ControlThread" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlThread As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ControlThread : bool with get, set" Usage="System.Security.Permissions.SecurityPermissionAttribute.ControlThread" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ControlThread { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -317,6 +347,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.SecurityPermissionAttribute.CreatePermission" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="securityPermissionAttribute.CreatePermission " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -354,6 +387,9 @@
       <MemberSignature Language="C#" Value="public bool Execution { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Execution" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermissionAttribute.Execution" />
+      <MemberSignature Language="VB.NET" Value="Public Property Execution As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Execution : bool with get, set" Usage="System.Security.Permissions.SecurityPermissionAttribute.Execution" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Execution { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -389,6 +425,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Permissions.SecurityPermissionFlag Flags { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.SecurityPermissionFlag Flags" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermissionAttribute.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public Property Flags As SecurityPermissionFlag" />
+      <MemberSignature Language="F#" Value="member this.Flags : System.Security.Permissions.SecurityPermissionFlag with get, set" Usage="System.Security.Permissions.SecurityPermissionAttribute.Flags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::SecurityPermissionFlag Flags { System::Security::Permissions::SecurityPermissionFlag get(); void set(System::Security::Permissions::SecurityPermissionFlag value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -417,6 +456,9 @@
       <MemberSignature Language="C#" Value="public bool Infrastructure { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Infrastructure" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermissionAttribute.Infrastructure" />
+      <MemberSignature Language="VB.NET" Value="Public Property Infrastructure As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Infrastructure : bool with get, set" Usage="System.Security.Permissions.SecurityPermissionAttribute.Infrastructure" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Infrastructure { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -450,6 +492,9 @@
       <MemberSignature Language="C#" Value="public bool RemotingConfiguration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RemotingConfiguration" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermissionAttribute.RemotingConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property RemotingConfiguration As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RemotingConfiguration : bool with get, set" Usage="System.Security.Permissions.SecurityPermissionAttribute.RemotingConfiguration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RemotingConfiguration { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -478,6 +523,9 @@
       <MemberSignature Language="C#" Value="public bool SerializationFormatter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SerializationFormatter" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter" />
+      <MemberSignature Language="VB.NET" Value="Public Property SerializationFormatter As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SerializationFormatter : bool with get, set" Usage="System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SerializationFormatter { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -506,6 +554,9 @@
       <MemberSignature Language="C#" Value="public bool SkipVerification { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SkipVerification" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermissionAttribute.SkipVerification" />
+      <MemberSignature Language="VB.NET" Value="Public Property SkipVerification As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SkipVerification : bool with get, set" Usage="System.Security.Permissions.SecurityPermissionAttribute.SkipVerification" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SkipVerification { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -543,6 +594,9 @@
       <MemberSignature Language="C#" Value="public bool UnmanagedCode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UnmanagedCode" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnmanagedCode As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UnmanagedCode : bool with get, set" Usage="System.Security.Permissions.SecurityPermissionAttribute.UnmanagedCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnmanagedCode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

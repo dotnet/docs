@@ -1,7 +1,10 @@
-<Type Name="WorkItemCallback" FullName="System.Web.Util.WorkItemCallback">
+﻿<Type Name="WorkItemCallback" FullName="System.Web.Util.WorkItemCallback">
   <TypeSignature Language="C#" Value="public delegate void WorkItemCallback();" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkItemCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.Util.WorkItemCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub WorkItemCallback()" />
+  <TypeSignature Language="F#" Value="type WorkItemCallback = delegate of unit -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void WorkItemCallback();" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

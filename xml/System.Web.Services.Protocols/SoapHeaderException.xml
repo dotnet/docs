@@ -1,7 +1,10 @@
-<Type Name="SoapHeaderException" FullName="System.Web.Services.Protocols.SoapHeaderException">
+﻿<Type Name="SoapHeaderException" FullName="System.Web.Services.Protocols.SoapHeaderException">
   <TypeSignature Language="C#" Value="public class SoapHeaderException : System.Web.Services.Protocols.SoapException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SoapHeaderException extends System.Web.Services.Protocols.SoapException" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapHeaderException" />
+  <TypeSignature Language="VB.NET" Value="Public Class SoapHeaderException&#xA;Inherits SoapException" />
+  <TypeSignature Language="F#" Value="type SoapHeaderException = class&#xA;    inherit SoapException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapHeaderException : System::Web::Services::Protocols::SoapException" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,10 +43,21 @@
     <altmember cref="T:System.Web.Services.Protocols.SoapException" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapHeaderException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SoapHeaderException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapHeaderException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -59,6 +73,9 @@
       <MemberSignature Language="C#" Value="protected SoapHeaderException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapHeaderException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Web.Services.Protocols.SoapHeaderException" Usage="new System.Web.Services.Protocols.SoapHeaderException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SoapHeaderException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -79,6 +96,9 @@
       <MemberSignature Language="C#" Value="public SoapHeaderException (string message, System.Xml.XmlQualifiedName code);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderException.#ctor(System.String,System.Xml.XmlQualifiedName)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapHeaderException : string * System.Xml.XmlQualifiedName -&gt; System.Web.Services.Protocols.SoapHeaderException" Usage="new System.Web.Services.Protocols.SoapHeaderException (message, code)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapHeaderException(System::String ^ message, System::Xml::XmlQualifiedName ^ code);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -99,6 +119,9 @@
       <MemberSignature Language="C#" Value="public SoapHeaderException (string message, System.Xml.XmlQualifiedName code, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderException.#ctor(System.String,System.Xml.XmlQualifiedName,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapHeaderException : string * System.Xml.XmlQualifiedName * Exception -&gt; System.Web.Services.Protocols.SoapHeaderException" Usage="new System.Web.Services.Protocols.SoapHeaderException (message, code, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapHeaderException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -121,6 +144,9 @@
       <MemberSignature Language="C#" Value="public SoapHeaderException (string message, System.Xml.XmlQualifiedName code, string actor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, actor As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapHeaderException : string * System.Xml.XmlQualifiedName * string -&gt; System.Web.Services.Protocols.SoapHeaderException" Usage="new System.Web.Services.Protocols.SoapHeaderException (message, code, actor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapHeaderException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -143,6 +169,9 @@
       <MemberSignature Language="C#" Value="public SoapHeaderException (string message, System.Xml.XmlQualifiedName code, string actor, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, actor As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapHeaderException : string * System.Xml.XmlQualifiedName * string * Exception -&gt; System.Web.Services.Protocols.SoapHeaderException" Usage="new System.Web.Services.Protocols.SoapHeaderException (message, code, actor, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapHeaderException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -167,6 +196,9 @@
       <MemberSignature Language="C#" Value="public SoapHeaderException (string message, System.Xml.XmlQualifiedName code, string actor, string role, System.Web.Services.Protocols.SoapFaultSubCode subCode, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor, string role, class System.Web.Services.Protocols.SoapFaultSubCode subCode, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.String,System.Web.Services.Protocols.SoapFaultSubCode,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, actor As String, role As String, subCode As SoapFaultSubCode, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapHeaderException : string * System.Xml.XmlQualifiedName * string * string * System.Web.Services.Protocols.SoapFaultSubCode * Exception -&gt; System.Web.Services.Protocols.SoapHeaderException" Usage="new System.Web.Services.Protocols.SoapHeaderException (message, code, actor, role, subCode, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapHeaderException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor, System::String ^ role, System::Web::Services::Protocols::SoapFaultSubCode ^ subCode, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -195,6 +227,9 @@
       <MemberSignature Language="C#" Value="public SoapHeaderException (string message, System.Xml.XmlQualifiedName code, string actor, string role, string lang, System.Web.Services.Protocols.SoapFaultSubCode subCode, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Xml.XmlQualifiedName code, string actor, string role, string lang, class System.Web.Services.Protocols.SoapFaultSubCode subCode, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHeaderException.#ctor(System.String,System.Xml.XmlQualifiedName,System.String,System.String,System.String,System.Web.Services.Protocols.SoapFaultSubCode,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, code As XmlQualifiedName, actor As String, role As String, lang As String, subCode As SoapFaultSubCode, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Protocols.SoapHeaderException : string * System.Xml.XmlQualifiedName * string * string * string * System.Web.Services.Protocols.SoapFaultSubCode * Exception -&gt; System.Web.Services.Protocols.SoapHeaderException" Usage="new System.Web.Services.Protocols.SoapHeaderException (message, code, actor, role, lang, subCode, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapHeaderException(System::String ^ message, System::Xml::XmlQualifiedName ^ code, System::String ^ actor, System::String ^ role, System::String ^ lang, System::Web::Services::Protocols::SoapFaultSubCode ^ subCode, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -221,14 +256,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Protocols.SoapHeaderException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

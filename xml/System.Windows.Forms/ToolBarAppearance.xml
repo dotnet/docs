@@ -1,7 +1,10 @@
-<Type Name="ToolBarAppearance" FullName="System.Windows.Forms.ToolBarAppearance">
+﻿<Type Name="ToolBarAppearance" FullName="System.Windows.Forms.ToolBarAppearance">
   <TypeSignature Language="C#" Value="public enum ToolBarAppearance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolBarAppearance extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBarAppearance" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ToolBarAppearance" />
+  <TypeSignature Language="F#" Value="type ToolBarAppearance = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ToolBarAppearance" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="Flat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolBarAppearance Flat = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarAppearance.Flat" />
+      <MemberSignature Language="VB.NET" Value="Flat" />
+      <MemberSignature Language="F#" Value="Flat = 1" Usage="System.Windows.Forms.ToolBarAppearance.Flat" />
+      <MemberSignature Language="C++ CLI" Value="Flat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -45,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolBarAppearance</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The toolbar and buttons appear flat, but the buttons change to three-dimensional as the mouse pointer moves over them.</summary>
       </Docs>
@@ -53,6 +60,9 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolBarAppearance Normal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarAppearance.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.Forms.ToolBarAppearance.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -61,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolBarAppearance</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The toolbar and buttons appear as standard three-dimensional controls.</summary>
       </Docs>

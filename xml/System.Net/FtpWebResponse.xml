@@ -1,7 +1,10 @@
-<Type Name="FtpWebResponse" FullName="System.Net.FtpWebResponse">
+﻿<Type Name="FtpWebResponse" FullName="System.Net.FtpWebResponse">
   <TypeSignature Language="C#" Value="public class FtpWebResponse : System.Net.WebResponse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FtpWebResponse extends System.Net.WebResponse" />
   <TypeSignature Language="DocId" Value="T:System.Net.FtpWebResponse" />
+  <TypeSignature Language="VB.NET" Value="Public Class FtpWebResponse&#xA;Inherits WebResponse" />
+  <TypeSignature Language="F#" Value="type FtpWebResponse = class&#xA;    inherit WebResponse" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FtpWebResponse : System::Net::WebResponse" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -18,8 +21,7 @@
   <Base>
     <BaseTypeName>System.Net.WebResponse</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Encapsulates a File Transfer Protocol (FTP) server's response to a request.</summary>
     <remarks>
@@ -54,6 +56,9 @@
       <MemberSignature Language="C#" Value="public string BannerMessage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BannerMessage" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.BannerMessage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BannerMessage As String" />
+      <MemberSignature Language="F#" Value="member this.BannerMessage : string" Usage="System.Net.FtpWebResponse.BannerMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BannerMessage { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +102,9 @@
       <MemberSignature Language="C#" Value="public override void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.FtpWebResponse.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="ftpWebResponse.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -148,6 +156,9 @@
       <MemberSignature Language="C#" Value="public override long ContentLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ContentLength" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.ContentLength" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ContentLength As Long" />
+      <MemberSignature Language="F#" Value="member this.ContentLength : int64" Usage="System.Net.FtpWebResponse.ContentLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long ContentLength { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -198,6 +209,9 @@
       <MemberSignature Language="C#" Value="public override string ContentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string" Usage="System.Net.FtpWebResponse.ContentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContentType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Requests</AssemblyName>
@@ -216,6 +230,9 @@
       <MemberSignature Language="C#" Value="public string ExitMessage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExitMessage" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.ExitMessage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExitMessage As String" />
+      <MemberSignature Language="F#" Value="member this.ExitMessage : string" Usage="System.Net.FtpWebResponse.ExitMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExitMessage { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -266,6 +283,9 @@
       <MemberSignature Language="C#" Value="public override System.IO.Stream GetResponseStream ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IO.Stream GetResponseStream() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.FtpWebResponse.GetResponseStream" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResponseStream () As Stream" />
+      <MemberSignature Language="F#" Value="override this.GetResponseStream : unit -&gt; System.IO.Stream" Usage="ftpWebResponse.GetResponseStream " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IO::Stream ^ GetResponseStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -319,6 +339,9 @@
       <MemberSignature Language="C#" Value="public override System.Net.WebHeaderCollection Headers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection Headers" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Headers As WebHeaderCollection" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Net.WebHeaderCollection" Usage="System.Net.FtpWebResponse.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -359,6 +382,9 @@
       <MemberSignature Language="C#" Value="public DateTime LastModified { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastModified" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.LastModified" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastModified As DateTime" />
+      <MemberSignature Language="F#" Value="member this.LastModified : DateTime" Usage="System.Net.FtpWebResponse.LastModified" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastModified { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -407,6 +433,9 @@
       <MemberSignature Language="C#" Value="public override Uri ResponseUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ResponseUri" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.ResponseUri" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ResponseUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.ResponseUri : Uri" Usage="System.Net.FtpWebResponse.ResponseUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Uri ^ ResponseUri { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -457,6 +486,9 @@
       <MemberSignature Language="C#" Value="public System.Net.FtpStatusCode StatusCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.FtpStatusCode StatusCode" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.StatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusCode As FtpStatusCode" />
+      <MemberSignature Language="F#" Value="member this.StatusCode : System.Net.FtpStatusCode" Usage="System.Net.FtpWebResponse.StatusCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::FtpStatusCode StatusCode { System::Net::FtpStatusCode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -505,6 +537,9 @@
       <MemberSignature Language="C#" Value="public string StatusDescription { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StatusDescription" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.StatusDescription" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusDescription As String" />
+      <MemberSignature Language="F#" Value="member this.StatusDescription : string" Usage="System.Net.FtpWebResponse.StatusDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StatusDescription { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -553,6 +588,9 @@
       <MemberSignature Language="C#" Value="public override bool SupportsHeaders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsHeaders" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.SupportsHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsHeaders As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsHeaders : bool" Usage="System.Net.FtpWebResponse.SupportsHeaders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsHeaders { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -589,6 +627,9 @@
       <MemberSignature Language="C#" Value="public string WelcomeMessage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string WelcomeMessage" />
       <MemberSignature Language="DocId" Value="P:System.Net.FtpWebResponse.WelcomeMessage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WelcomeMessage As String" />
+      <MemberSignature Language="F#" Value="member this.WelcomeMessage : string" Usage="System.Net.FtpWebResponse.WelcomeMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WelcomeMessage { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

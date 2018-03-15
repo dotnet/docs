@@ -1,7 +1,10 @@
-<Type Name="FileDialogCustomPlace" FullName="System.Windows.Forms.FileDialogCustomPlace">
+﻿<Type Name="FileDialogCustomPlace" FullName="System.Windows.Forms.FileDialogCustomPlace">
   <TypeSignature Language="C#" Value="public class FileDialogCustomPlace" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileDialogCustomPlace extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FileDialogCustomPlace" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileDialogCustomPlace" />
+  <TypeSignature Language="F#" Value="type FileDialogCustomPlace = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileDialogCustomPlace" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,10 +28,23 @@
     <altmember cref="P:System.Windows.Forms.FileDialog.CustomPlaces" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FileDialogCustomPlace" /> class.</summary>
+        <altmember cref="P:System.Windows.Forms.FileDialog.CustomPlaces" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FileDialogCustomPlace (Guid knownFolderGuid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid knownFolderGuid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlace.#ctor(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (knownFolderGuid As Guid)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.FileDialogCustomPlace : Guid -&gt; System.Windows.Forms.FileDialogCustomPlace" Usage="new System.Windows.Forms.FileDialogCustomPlace knownFolderGuid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileDialogCustomPlace(Guid knownFolderGuid);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +79,9 @@
       <MemberSignature Language="C#" Value="public FileDialogCustomPlace (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlace.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.FileDialogCustomPlace : string -&gt; System.Windows.Forms.FileDialogCustomPlace" Usage="new System.Windows.Forms.FileDialogCustomPlace path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileDialogCustomPlace(System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +101,9 @@
       <MemberSignature Language="C#" Value="public Guid KnownFolderGuid { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid KnownFolderGuid" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialogCustomPlace.KnownFolderGuid" />
+      <MemberSignature Language="VB.NET" Value="Public Property KnownFolderGuid As Guid" />
+      <MemberSignature Language="F#" Value="member this.KnownFolderGuid : Guid with get, set" Usage="System.Windows.Forms.FileDialogCustomPlace.KnownFolderGuid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid KnownFolderGuid { Guid get(); void set(Guid value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +123,9 @@
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FileDialogCustomPlace.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="System.Windows.Forms.FileDialogCustomPlace.Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -120,6 +145,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlace.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fileDialogCustomPlace.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -136,15 +164,5 @@
         <altmember cref="P:System.Windows.Forms.FileDialog.CustomPlaces" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FileDialogCustomPlace" /> class.</summary>
-        <altmember cref="P:System.Windows.Forms.FileDialog.CustomPlaces" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

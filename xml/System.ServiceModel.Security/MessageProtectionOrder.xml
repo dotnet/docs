@@ -1,7 +1,10 @@
-<Type Name="MessageProtectionOrder" FullName="System.ServiceModel.Security.MessageProtectionOrder">
+﻿<Type Name="MessageProtectionOrder" FullName="System.ServiceModel.Security.MessageProtectionOrder">
   <TypeSignature Language="C#" Value="public enum MessageProtectionOrder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageProtectionOrder extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.MessageProtectionOrder" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MessageProtectionOrder" />
+  <TypeSignature Language="F#" Value="type MessageProtectionOrder = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MessageProtectionOrder" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="EncryptBeforeSign" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.MessageProtectionOrder EncryptBeforeSign = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.MessageProtectionOrder.EncryptBeforeSign" />
+      <MemberSignature Language="VB.NET" Value="EncryptBeforeSign" />
+      <MemberSignature Language="F#" Value="EncryptBeforeSign = 2" Usage="System.ServiceModel.Security.MessageProtectionOrder.EncryptBeforeSign" />
+      <MemberSignature Language="C++ CLI" Value="EncryptBeforeSign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -54,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.MessageProtectionOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the SOAP message is encrypted before a digital signature is generated for the SOAP message.</summary>
       </Docs>
@@ -62,6 +69,9 @@
       <MemberSignature Language="C#" Value="SignBeforeEncrypt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.MessageProtectionOrder SignBeforeEncrypt = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt" />
+      <MemberSignature Language="VB.NET" Value="SignBeforeEncrypt" />
+      <MemberSignature Language="F#" Value="SignBeforeEncrypt = 0" Usage="System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncrypt" />
+      <MemberSignature Language="C++ CLI" Value="SignBeforeEncrypt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.MessageProtectionOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that a digital signature is generated for the SOAP message before any portion of the SOAP message is encrypted, but the digital signature is not encrypted.</summary>
       </Docs>
@@ -78,6 +89,9 @@
       <MemberSignature Language="C#" Value="SignBeforeEncryptAndEncryptSignature" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.MessageProtectionOrder SignBeforeEncryptAndEncryptSignature = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncryptAndEncryptSignature" />
+      <MemberSignature Language="VB.NET" Value="SignBeforeEncryptAndEncryptSignature" />
+      <MemberSignature Language="F#" Value="SignBeforeEncryptAndEncryptSignature = 1" Usage="System.ServiceModel.Security.MessageProtectionOrder.SignBeforeEncryptAndEncryptSignature" />
+      <MemberSignature Language="C++ CLI" Value="SignBeforeEncryptAndEncryptSignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -86,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.MessageProtectionOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that a digital signature is generated for the SOAP message before any portion of the SOAP message is encrypted, and the digital signature is encrypted.</summary>
       </Docs>

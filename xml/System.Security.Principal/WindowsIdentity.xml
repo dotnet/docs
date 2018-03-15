@@ -1,7 +1,10 @@
-<Type Name="WindowsIdentity" FullName="System.Security.Principal.WindowsIdentity">
+﻿<Type Name="WindowsIdentity" FullName="System.Security.Principal.WindowsIdentity">
   <TypeSignature Language="C#" Value="public class WindowsIdentity : System.Security.Claims.ClaimsIdentity, IDisposable, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WindowsIdentity extends System.Security.Claims.ClaimsIdentity implements class System.IDisposable, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable, class System.Security.Principal.IIdentity" />
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.WindowsIdentity" />
+  <TypeSignature Language="VB.NET" Value="Public Class WindowsIdentity&#xA;Inherits ClaimsIdentity&#xA;Implements IDeserializationCallback, IDisposable, ISerializable" />
+  <TypeSignature Language="F#" Value="type WindowsIdentity = class&#xA;    inherit ClaimsIdentity&#xA;    interface IIdentity&#xA;    interface IDeserializationCallback&#xA;    interface ISerializable&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsIdentity : System::Security::Claims::ClaimsIdentity, IDisposable, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Principal.Windows</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,10 +58,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WindowsIdentity (IntPtr userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.#ctor(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (userToken As IntPtr)" />
+      <MemberSignature Language="F#" Value="new System.Security.Principal.WindowsIdentity : nativeint -&gt; System.Security.Principal.WindowsIdentity" Usage="new System.Security.Principal.WindowsIdentity userToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsIdentity(IntPtr userToken);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -111,6 +127,9 @@
       <MemberSignature Language="C#" Value="protected WindowsIdentity (System.Security.Principal.WindowsIdentity identity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Security.Principal.WindowsIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.#ctor(System.Security.Principal.WindowsIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (identity As WindowsIdentity)" />
+      <MemberSignature Language="F#" Value="new System.Security.Principal.WindowsIdentity : System.Security.Principal.WindowsIdentity -&gt; System.Security.Principal.WindowsIdentity" Usage="new System.Security.Principal.WindowsIdentity identity" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WindowsIdentity(System::Security::Principal::WindowsIdentity ^ identity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -134,6 +153,9 @@
       <MemberSignature Language="C#" Value="public WindowsIdentity (string sUserPrincipalName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sUserPrincipalName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sUserPrincipalName As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Principal.WindowsIdentity : string -&gt; System.Security.Principal.WindowsIdentity" Usage="new System.Security.Principal.WindowsIdentity sUserPrincipalName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsIdentity(System::String ^ sUserPrincipalName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -184,6 +206,9 @@
       <MemberSignature Language="C#" Value="public WindowsIdentity (IntPtr userToken, string type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int userToken, string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.#ctor(System.IntPtr,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (userToken As IntPtr, type As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Principal.WindowsIdentity : nativeint * string -&gt; System.Security.Principal.WindowsIdentity" Usage="new System.Security.Principal.WindowsIdentity (userToken, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsIdentity(IntPtr userToken, System::String ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -248,6 +273,9 @@
       <MemberSignature Language="C#" Value="public WindowsIdentity (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Security.Principal.WindowsIdentity : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Security.Principal.WindowsIdentity" Usage="new System.Security.Principal.WindowsIdentity (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsIdentity(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -289,6 +317,9 @@
       <MemberSignature Language="C#" Value="public WindowsIdentity (string sUserPrincipalName, string type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sUserPrincipalName, string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sUserPrincipalName As String, type As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Principal.WindowsIdentity : string * string -&gt; System.Security.Principal.WindowsIdentity" Usage="new System.Security.Principal.WindowsIdentity (sUserPrincipalName, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsIdentity(System::String ^ sUserPrincipalName, System::String ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -338,6 +369,9 @@
       <MemberSignature Language="C#" Value="public WindowsIdentity (IntPtr userToken, string type, System.Security.Principal.WindowsAccountType acctType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int userToken, string type, valuetype System.Security.Principal.WindowsAccountType acctType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.#ctor(System.IntPtr,System.String,System.Security.Principal.WindowsAccountType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (userToken As IntPtr, type As String, acctType As WindowsAccountType)" />
+      <MemberSignature Language="F#" Value="new System.Security.Principal.WindowsIdentity : nativeint * string * System.Security.Principal.WindowsAccountType -&gt; System.Security.Principal.WindowsIdentity" Usage="new System.Security.Principal.WindowsIdentity (userToken, type, acctType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsIdentity(IntPtr userToken, System::String ^ type, System::Security::Principal::WindowsAccountType acctType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -398,6 +432,9 @@
       <MemberSignature Language="C#" Value="public WindowsIdentity (IntPtr userToken, string type, System.Security.Principal.WindowsAccountType acctType, bool isAuthenticated);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int userToken, string type, valuetype System.Security.Principal.WindowsAccountType acctType, bool isAuthenticated) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.#ctor(System.IntPtr,System.String,System.Security.Principal.WindowsAccountType,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (userToken As IntPtr, type As String, acctType As WindowsAccountType, isAuthenticated As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Security.Principal.WindowsIdentity : nativeint * string * System.Security.Principal.WindowsAccountType * bool -&gt; System.Security.Principal.WindowsIdentity" Usage="new System.Security.Principal.WindowsIdentity (userToken, type, acctType, isAuthenticated)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowsIdentity(IntPtr userToken, System::String ^ type, System::Security::Principal::WindowsAccountType acctType, bool isAuthenticated);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -454,6 +491,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Win32.SafeHandles.SafeAccessTokenHandle AccessToken { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.SafeHandles.SafeAccessTokenHandle AccessToken" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.AccessToken" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AccessToken As SafeAccessTokenHandle" />
+      <MemberSignature Language="F#" Value="member this.AccessToken : Microsoft.Win32.SafeHandles.SafeAccessTokenHandle" Usage="System.Security.Principal.WindowsIdentity.AccessToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SafeHandles::SafeAccessTokenHandle ^ AccessToken { Microsoft::Win32::SafeHandles::SafeAccessTokenHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -478,7 +518,13 @@
       <MemberSignature Language="C#" Value="public override sealed string AuthenticationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AuthenticationType" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.AuthenticationType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property AuthenticationType As String" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationType : string" Usage="System.Security.Principal.WindowsIdentity.AuthenticationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AuthenticationType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Security.Principal.IIdentity.AuthenticationType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -524,6 +570,9 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; Claims { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; Claims" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.Claims" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Claims As IEnumerable(Of Claim)" />
+      <MemberSignature Language="F#" Value="member this.Claims : seq&lt;System.Security.Claims.Claim&gt;" Usage="System.Security.Principal.WindowsIdentity.Claims" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ Claims { System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -552,6 +601,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.Claims.ClaimsIdentity Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.Claims.ClaimsIdentity Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As ClaimsIdentity" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Security.Claims.ClaimsIdentity" Usage="windowsIdentity.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::Claims::ClaimsIdentity ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -576,6 +628,9 @@
       <MemberSignature Language="C#" Value="public const string DefaultIssuer;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal string DefaultIssuer" />
       <MemberSignature Language="DocId" Value="F:System.Security.Principal.WindowsIdentity.DefaultIssuer" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultIssuer As String " />
+      <MemberSignature Language="F#" Value="val mutable DefaultIssuer : string" Usage="System.Security.Principal.WindowsIdentity.DefaultIssuer" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ DefaultIssuer;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -599,6 +654,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; DeviceClaims { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; DeviceClaims" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.DeviceClaims" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DeviceClaims As IEnumerable(Of Claim)" />
+      <MemberSignature Language="F#" Value="member this.DeviceClaims : seq&lt;System.Security.Claims.Claim&gt;" Usage="System.Security.Principal.WindowsIdentity.DeviceClaims" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ DeviceClaims { System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -613,11 +671,27 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Security.Principal.WindowsIdentity" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="windowsIdentity.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -656,6 +730,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="windowsIdentity.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -704,6 +781,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Principal.WindowsIdentity GetAnonymous ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Principal.WindowsIdentity GetAnonymous() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.GetAnonymous" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetAnonymous () As WindowsIdentity" />
+      <MemberSignature Language="F#" Value="static member GetAnonymous : unit -&gt; System.Security.Principal.WindowsIdentity" Usage="System.Security.Principal.WindowsIdentity.GetAnonymous " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Principal::WindowsIdentity ^ GetAnonymous();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -743,10 +823,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCurrent">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Security.Principal.WindowsIdentity" /> object that represents the current Windows user.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCurrent">
       <MemberSignature Language="C#" Value="public static System.Security.Principal.WindowsIdentity GetCurrent ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Principal.WindowsIdentity GetCurrent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.GetCurrent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrent () As WindowsIdentity" />
+      <MemberSignature Language="F#" Value="static member GetCurrent : unit -&gt; System.Security.Principal.WindowsIdentity" Usage="System.Security.Principal.WindowsIdentity.GetCurrent " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Principal::WindowsIdentity ^ GetCurrent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -785,6 +878,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Principal.WindowsIdentity GetCurrent (bool ifImpersonating);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Principal.WindowsIdentity GetCurrent(bool ifImpersonating) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.GetCurrent(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrent (ifImpersonating As Boolean) As WindowsIdentity" />
+      <MemberSignature Language="F#" Value="static member GetCurrent : bool -&gt; System.Security.Principal.WindowsIdentity" Usage="System.Security.Principal.WindowsIdentity.GetCurrent ifImpersonating" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Principal::WindowsIdentity ^ GetCurrent(bool ifImpersonating);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -822,6 +918,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Principal.WindowsIdentity GetCurrent (System.Security.Principal.TokenAccessLevels desiredAccess);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Principal.WindowsIdentity GetCurrent(valuetype System.Security.Principal.TokenAccessLevels desiredAccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.GetCurrent(System.Security.Principal.TokenAccessLevels)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCurrent (desiredAccess As TokenAccessLevels) As WindowsIdentity" />
+      <MemberSignature Language="F#" Value="static member GetCurrent : System.Security.Principal.TokenAccessLevels -&gt; System.Security.Principal.WindowsIdentity" Usage="System.Security.Principal.WindowsIdentity.GetCurrent desiredAccess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Principal::WindowsIdentity ^ GetCurrent(System::Security::Principal::TokenAccessLevels desiredAccess);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -858,6 +957,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Principal.IdentityReferenceCollection Groups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.IdentityReferenceCollection Groups" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.Groups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Groups As IdentityReferenceCollection" />
+      <MemberSignature Language="F#" Value="member this.Groups : System.Security.Principal.IdentityReferenceCollection" Usage="System.Security.Principal.WindowsIdentity.Groups" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IdentityReferenceCollection ^ Groups { System::Security::Principal::IdentityReferenceCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -888,10 +990,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Impersonate">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Allows code to impersonate a different Windows user.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Impersonate">
       <MemberSignature Language="C#" Value="public virtual System.Security.Principal.WindowsImpersonationContext Impersonate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Principal.WindowsImpersonationContext Impersonate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.Impersonate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Impersonate () As WindowsImpersonationContext" />
+      <MemberSignature Language="F#" Value="abstract member Impersonate : unit -&gt; System.Security.Principal.WindowsImpersonationContext&#xA;override this.Impersonate : unit -&gt; System.Security.Principal.WindowsImpersonationContext" Usage="windowsIdentity.Impersonate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Principal::WindowsImpersonationContext ^ Impersonate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -936,6 +1051,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Principal.WindowsImpersonationContext Impersonate (IntPtr userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Principal.WindowsImpersonationContext Impersonate(native int userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.Impersonate(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Impersonate (userToken As IntPtr) As WindowsImpersonationContext" />
+      <MemberSignature Language="F#" Value="static member Impersonate : nativeint -&gt; System.Security.Principal.WindowsImpersonationContext" Usage="System.Security.Principal.WindowsIdentity.Impersonate userToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Principal::WindowsImpersonationContext ^ Impersonate(IntPtr userToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -989,6 +1107,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Principal.TokenImpersonationLevel ImpersonationLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Principal.TokenImpersonationLevel ImpersonationLevel" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.ImpersonationLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImpersonationLevel As TokenImpersonationLevel" />
+      <MemberSignature Language="F#" Value="member this.ImpersonationLevel : System.Security.Principal.TokenImpersonationLevel" Usage="System.Security.Principal.WindowsIdentity.ImpersonationLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::TokenImpersonationLevel ImpersonationLevel { System::Security::Principal::TokenImpersonationLevel get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -1033,6 +1154,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsAnonymous { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAnonymous" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.IsAnonymous" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsAnonymous As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAnonymous : bool" Usage="System.Security.Principal.WindowsIdentity.IsAnonymous" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAnonymous { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -1076,7 +1200,13 @@
       <MemberSignature Language="C#" Value="public override bool IsAuthenticated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAuthenticated" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.IsAuthenticated" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsAuthenticated As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="System.Security.Principal.WindowsIdentity.IsAuthenticated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsAuthenticated { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Security.Principal.IIdentity.IsAuthenticated</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1101,6 +1231,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsGuest { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsGuest" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.IsGuest" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsGuest As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsGuest : bool" Usage="System.Security.Principal.WindowsIdentity.IsGuest" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsGuest { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -1137,6 +1270,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsSystem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSystem" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.IsSystem" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSystem As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSystem : bool" Usage="System.Security.Principal.WindowsIdentity.IsSystem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSystem { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -1173,7 +1309,13 @@
       <MemberSignature Language="C#" Value="public override string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Security.Principal.WindowsIdentity.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Security.Principal.IIdentity.Name</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1213,6 +1355,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Principal.SecurityIdentifier Owner { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.SecurityIdentifier Owner" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.Owner" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As SecurityIdentifier" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.Security.Principal.SecurityIdentifier" Usage="System.Security.Principal.WindowsIdentity.Owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::SecurityIdentifier ^ Owner { System::Security::Principal::SecurityIdentifier ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -1257,6 +1402,8 @@
       <MemberSignature Language="C#" Value="public static void RunImpersonated (Microsoft.Win32.SafeHandles.SafeAccessTokenHandle safeAccessTokenHandle, Action action);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RunImpersonated(class Microsoft.Win32.SafeHandles.SafeAccessTokenHandle safeAccessTokenHandle, class System.Action action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.RunImpersonated(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Action)" />
+      <MemberSignature Language="F#" Value="static member RunImpersonated : Microsoft.Win32.SafeHandles.SafeAccessTokenHandle * Action -&gt; unit" Usage="System.Security.Principal.WindowsIdentity.RunImpersonated (safeAccessTokenHandle, action)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RunImpersonated(Microsoft::Win32::SafeHandles::SafeAccessTokenHandle ^ safeAccessTokenHandle, Action ^ action);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -1373,6 +1520,8 @@ public class ImpersonationDemo
       <MemberSignature Language="C#" Value="public static T RunImpersonated&lt;T&gt; (Microsoft.Win32.SafeHandles.SafeAccessTokenHandle safeAccessTokenHandle, Func&lt;T&gt; func);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!T RunImpersonated&lt;T&gt;(class Microsoft.Win32.SafeHandles.SafeAccessTokenHandle safeAccessTokenHandle, class System.Func`1&lt;!!T&gt; func) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.RunImpersonated``1(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Func{``0})" />
+      <MemberSignature Language="F#" Value="static member RunImpersonated : Microsoft.Win32.SafeHandles.SafeAccessTokenHandle * Func&lt;'T&gt; -&gt; 'T" Usage="System.Security.Principal.WindowsIdentity.RunImpersonated (safeAccessTokenHandle, func)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static T RunImpersonated(Microsoft::Win32::SafeHandles::SafeAccessTokenHandle ^ safeAccessTokenHandle, Func&lt;T&gt; ^ func);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -1494,7 +1643,12 @@ public class ImpersonationDemo
       <MemberSignature Language="C#" Value="void IDeserializationCallback.OnDeserialization (object sender);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnDeserialization (sender As Object) Implements IDeserializationCallback.OnDeserialization" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System::Object ^ sender) = System::Runtime::Serialization::IDeserializationCallback::OnDeserialization;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1520,7 +1674,12 @@ public class ImpersonationDemo
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.WindowsIdentity.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1558,6 +1717,9 @@ public class ImpersonationDemo
       <MemberSignature Language="C#" Value="public virtual IntPtr Token { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Token" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.Token" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Token As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.Token : nativeint" Usage="System.Security.Principal.WindowsIdentity.Token" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property IntPtr Token { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1601,6 +1763,9 @@ public class ImpersonationDemo
       <MemberSignature Language="C#" Value="public System.Security.Principal.SecurityIdentifier User { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.SecurityIdentifier User" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.User" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property User As SecurityIdentifier" />
+      <MemberSignature Language="F#" Value="member this.User : System.Security.Principal.SecurityIdentifier" Usage="System.Security.Principal.WindowsIdentity.User" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::SecurityIdentifier ^ User { System::Security::Principal::SecurityIdentifier ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -1640,6 +1805,9 @@ public class ImpersonationDemo
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;System.Security.Claims.Claim&gt; UserClaims { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Claims.Claim&gt; UserClaims" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.WindowsIdentity.UserClaims" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UserClaims As IEnumerable(Of Claim)" />
+      <MemberSignature Language="F#" Value="member this.UserClaims : seq&lt;System.Security.Claims.Claim&gt;" Usage="System.Security.Principal.WindowsIdentity.UserClaims" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ UserClaims { System::Collections::Generic::IEnumerable&lt;System::Security::Claims::Claim ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1654,45 +1822,5 @@ public class ImpersonationDemo
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Security.Principal.WindowsIdentity" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetCurrent">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.Security.Principal.WindowsIdentity" /> object that represents the current Windows user.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.WindowsIdentity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Impersonate">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Allows code to impersonate a different Windows user.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

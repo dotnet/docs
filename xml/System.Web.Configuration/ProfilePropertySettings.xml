@@ -1,7 +1,10 @@
-<Type Name="ProfilePropertySettings" FullName="System.Web.Configuration.ProfilePropertySettings">
+﻿<Type Name="ProfilePropertySettings" FullName="System.Web.Configuration.ProfilePropertySettings">
   <TypeSignature Language="C#" Value="public sealed class ProfilePropertySettings : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProfilePropertySettings extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProfilePropertySettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProfilePropertySettings&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type ProfilePropertySettings = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProfilePropertySettings sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +38,24 @@
     <altmember cref="T:System.Web.Configuration.ProfilePropertySettingsCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> class.</summary>
+        <altmember cref="T:System.Web.Configuration.ProfileSection" />
+        <altmember cref="P:System.Web.Configuration.ProfileSection.PropertySettings" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ProfilePropertySettings (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfilePropertySettings.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.ProfilePropertySettings : string -&gt; System.Web.Configuration.ProfilePropertySettings" Usage="new System.Web.Configuration.ProfilePropertySettings name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfilePropertySettings(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -74,6 +91,9 @@
       <MemberSignature Language="C#" Value="public ProfilePropertySettings (string name, bool readOnly, System.Web.Configuration.SerializationMode serializeAs, string providerName, string defaultValue, string profileType, bool allowAnonymous, string customProviderData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, bool readOnly, valuetype System.Web.Configuration.SerializationMode serializeAs, string providerName, string defaultValue, string profileType, bool allowAnonymous, string customProviderData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.ProfilePropertySettings.#ctor(System.String,System.Boolean,System.Web.Configuration.SerializationMode,System.String,System.String,System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, readOnly As Boolean, serializeAs As SerializationMode, providerName As String, defaultValue As String, profileType As String, allowAnonymous As Boolean, customProviderData As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.ProfilePropertySettings : string * bool * System.Web.Configuration.SerializationMode * string * string * string * bool * string -&gt; System.Web.Configuration.ProfilePropertySettings" Usage="new System.Web.Configuration.ProfilePropertySettings (name, readOnly, serializeAs, providerName, defaultValue, profileType, allowAnonymous, customProviderData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProfilePropertySettings(System::String ^ name, bool readOnly, System::Web::Configuration::SerializationMode serializeAs, System::String ^ providerName, System::String ^ defaultValue, System::String ^ profileType, bool allowAnonymous, System::String ^ customProviderData);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +142,9 @@
       <MemberSignature Language="C#" Value="public bool AllowAnonymous { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowAnonymous" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfilePropertySettings.AllowAnonymous" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowAnonymous As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowAnonymous : bool with get, set" Usage="System.Web.Configuration.ProfilePropertySettings.AllowAnonymous" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowAnonymous { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -166,6 +189,9 @@
       <MemberSignature Language="C#" Value="public string CustomProviderData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CustomProviderData" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfilePropertySettings.CustomProviderData" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomProviderData As String" />
+      <MemberSignature Language="F#" Value="member this.CustomProviderData : string with get, set" Usage="System.Web.Configuration.ProfilePropertySettings.CustomProviderData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomProviderData { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -189,6 +215,9 @@
       <MemberSignature Language="C#" Value="public string DefaultValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfilePropertySettings.DefaultValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultValue As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultValue : string with get, set" Usage="System.Web.Configuration.ProfilePropertySettings.DefaultValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -232,6 +261,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfilePropertySettings.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.Configuration.ProfilePropertySettings.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -273,6 +305,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfilePropertySettings.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.ProfilePropertySettings.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -291,6 +326,9 @@
       <MemberSignature Language="C#" Value="public string Provider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Provider" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfilePropertySettings.Provider" />
+      <MemberSignature Language="VB.NET" Value="Public Property Provider As String" />
+      <MemberSignature Language="F#" Value="member this.Provider : string with get, set" Usage="System.Web.Configuration.ProfilePropertySettings.Provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Provider { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -332,6 +370,9 @@
       <MemberSignature Language="C#" Value="public bool ReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfilePropertySettings.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool with get, set" Usage="System.Web.Configuration.ProfilePropertySettings.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -374,6 +415,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.SerializationMode SerializeAs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Configuration.SerializationMode SerializeAs" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfilePropertySettings.SerializeAs" />
+      <MemberSignature Language="VB.NET" Value="Public Property SerializeAs As SerializationMode" />
+      <MemberSignature Language="F#" Value="member this.SerializeAs : System.Web.Configuration.SerializationMode with get, set" Usage="System.Web.Configuration.ProfilePropertySettings.SerializeAs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::SerializationMode SerializeAs { System::Web::Configuration::SerializationMode get(); void set(System::Web::Configuration::SerializationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -414,6 +458,9 @@
       <MemberSignature Language="C#" Value="public string Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.ProfilePropertySettings.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string with get, set" Usage="System.Web.Configuration.ProfilePropertySettings.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Type { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -455,16 +502,5 @@
         <altmember cref="T:System.Web.Configuration.ProfileSection" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.ProfilePropertySettings" /> class.</summary>
-        <altmember cref="T:System.Web.Configuration.ProfileSection" />
-        <altmember cref="P:System.Web.Configuration.ProfileSection.PropertySettings" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="ECCurve+ECCurveType" FullName="System.Security.Cryptography.ECCurve+ECCurveType">
+﻿<Type Name="ECCurve+ECCurveType" FullName="System.Security.Cryptography.ECCurve+ECCurveType">
   <TypeSignature Language="C#" Value="public enum ECCurve.ECCurveType" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ECCurve/ECCurveType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECCurve.ECCurveType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ECCurve.ECCurveType" />
+  <TypeSignature Language="F#" Value="type ECCurve.ECCurveType = " />
+  <TypeSignature Language="C++ CLI" Value="public: enum class ECCurve::ECCurveType" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="Characteristic2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.ECCurve/ECCurveType Characteristic2 = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.ECCurveType.Characteristic2" />
+      <MemberSignature Language="VB.NET" Value="Characteristic2" />
+      <MemberSignature Language="F#" Value="Characteristic2 = 4" Usage="System.Security.Cryptography.ECCurve.ECCurveType.Characteristic2" />
+      <MemberSignature Language="C++ CLI" Value="Characteristic2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ECCurve+ECCurveType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The curve parameters represent a characteristic 2 curve.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="Implicit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.ECCurve/ECCurveType Implicit = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.ECCurveType.Implicit" />
+      <MemberSignature Language="VB.NET" Value="Implicit" />
+      <MemberSignature Language="F#" Value="Implicit = 0" Usage="System.Security.Cryptography.ECCurve.ECCurveType.Implicit" />
+      <MemberSignature Language="C++ CLI" Value="Implicit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ECCurve+ECCurveType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No curve data is interpreted. The caller is assumed to know what the curve is.</summary>
       </Docs>
@@ -80,6 +91,9 @@
       <MemberSignature Language="C#" Value="Named" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.ECCurve/ECCurveType Named = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.ECCurveType.Named" />
+      <MemberSignature Language="VB.NET" Value="Named" />
+      <MemberSignature Language="F#" Value="Named = 5" Usage="System.Security.Cryptography.ECCurve.ECCurveType.Named" />
+      <MemberSignature Language="C++ CLI" Value="Named" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -98,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ECCurve+ECCurveType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The curve parameters represent a named curve.</summary>
       </Docs>
@@ -106,6 +121,9 @@
       <MemberSignature Language="C#" Value="PrimeMontgomery" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.ECCurve/ECCurveType PrimeMontgomery = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.ECCurveType.PrimeMontgomery" />
+      <MemberSignature Language="VB.NET" Value="PrimeMontgomery" />
+      <MemberSignature Language="F#" Value="PrimeMontgomery = 3" Usage="System.Security.Cryptography.ECCurve.ECCurveType.PrimeMontgomery" />
+      <MemberSignature Language="C++ CLI" Value="PrimeMontgomery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -124,6 +142,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ECCurve+ECCurveType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The curve parameters represent a prime curve with the formula B*y^2 = x^3 + A\*x^2 + x.</summary>
       </Docs>
@@ -132,6 +151,9 @@
       <MemberSignature Language="C#" Value="PrimeShortWeierstrass" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.ECCurve/ECCurveType PrimeShortWeierstrass = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.ECCurveType.PrimeShortWeierstrass" />
+      <MemberSignature Language="VB.NET" Value="PrimeShortWeierstrass" />
+      <MemberSignature Language="F#" Value="PrimeShortWeierstrass = 1" Usage="System.Security.Cryptography.ECCurve.ECCurveType.PrimeShortWeierstrass" />
+      <MemberSignature Language="C++ CLI" Value="PrimeShortWeierstrass" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -150,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ECCurve+ECCurveType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The curve parameters represent a prime curve with the formula y^2 = x^3 + A*x + B in the prime field P.</summary>
       </Docs>
@@ -158,6 +181,9 @@
       <MemberSignature Language="C#" Value="PrimeTwistedEdwards" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.ECCurve/ECCurveType PrimeTwistedEdwards = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.ECCurveType.PrimeTwistedEdwards" />
+      <MemberSignature Language="VB.NET" Value="PrimeTwistedEdwards" />
+      <MemberSignature Language="F#" Value="PrimeTwistedEdwards = 2" Usage="System.Security.Cryptography.ECCurve.ECCurveType.PrimeTwistedEdwards" />
+      <MemberSignature Language="C++ CLI" Value="PrimeTwistedEdwards" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -176,6 +202,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.ECCurve+ECCurveType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The curve parameters represent a prime curve with the formula A*x^2 + y^2 = 1 + B\*x^2\*y^2 in the prime field P.</summary>
       </Docs>

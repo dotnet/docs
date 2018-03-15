@@ -1,7 +1,10 @@
-<Type Name="ArgumentElementCollection" FullName="System.ServiceModel.Activities.Tracking.Configuration.ArgumentElementCollection">
+﻿<Type Name="ArgumentElementCollection" FullName="System.ServiceModel.Activities.Tracking.Configuration.ArgumentElementCollection">
   <TypeSignature Language="C#" Value="public class ArgumentElementCollection : System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection&lt;System.ServiceModel.Activities.Tracking.Configuration.ArgumentElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArgumentElementCollection extends System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1&lt;class System.ServiceModel.Activities.Tracking.Configuration.ArgumentElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Tracking.Configuration.ArgumentElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArgumentElementCollection&#xA;Inherits TrackingConfigurationCollection(Of ArgumentElement)" />
+  <TypeSignature Language="F#" Value="type ArgumentElementCollection = class&#xA;    inherit TrackingConfigurationCollection&lt;ArgumentElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ArgumentElementCollection : System::ServiceModel::Activities::Tracking::Configuration::TrackingConfigurationCollection&lt;System::ServiceModel::Activities::Tracking::Configuration::ArgumentElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public ArgumentElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Tracking.Configuration.ArgumentElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArgumentElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="protected override string ElementName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Tracking.Configuration.ArgumentElementCollection.ElementName" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.ServiceModel.Activities.Tracking.Configuration.ArgumentElementCollection.ElementName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="PixelShader" FullName="System.Windows.Media.Effects.PixelShader">
+﻿<Type Name="PixelShader" FullName="System.Windows.Media.Effects.PixelShader">
   <TypeSignature Language="C#" Value="public sealed class PixelShader : System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PixelShader extends System.Windows.Media.Animation.Animatable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Effects.PixelShader" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PixelShader&#xA;Inherits Animatable" />
+  <TypeSignature Language="F#" Value="type PixelShader = class&#xA;    inherit Animatable&#xA;    interface DUCE.IResource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PixelShader sealed : System::Windows::Media::Animation::Animatable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,8 @@
       <MemberSignature Language="C#" Value="public PixelShader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.PixelShader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PixelShader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,6 +52,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.PixelShader Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.PixelShader Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.PixelShader.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As PixelShader" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Effects.PixelShader" Usage="pixelShader.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::PixelShader ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -75,6 +83,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.PixelShader.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="pixelShader.CloneCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -96,6 +107,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.PixelShader CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Effects.PixelShader CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.PixelShader.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As PixelShader" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Effects.PixelShader" Usage="pixelShader.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Effects::PixelShader ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +139,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.PixelShader.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="pixelShader.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -146,6 +163,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.PixelShader.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="pixelShader.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -165,6 +185,9 @@
       <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.PixelShader.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="pixelShader.GetAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -186,6 +209,9 @@
       <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.PixelShader.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="pixelShader.GetCurrentValueAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -207,6 +233,9 @@
       <MemberSignature Language="C#" Value="public static event EventHandler InvalidPixelShaderEncountered;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler InvalidPixelShaderEncountered" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Media.Effects.PixelShader.InvalidPixelShaderEncountered" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event InvalidPixelShaderEncountered As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.InvalidPixelShaderEncountered : EventHandler " Usage="member this.InvalidPixelShaderEncountered : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event EventHandler ^ InvalidPixelShaderEncountered;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -225,6 +254,9 @@
       <MemberSignature Language="C#" Value="public void SetStreamSource (System.IO.Stream source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetStreamSource(class System.IO.Stream source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Effects.PixelShader.SetStreamSource(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetStreamSource (source As Stream)" />
+      <MemberSignature Language="F#" Value="member this.SetStreamSource : System.IO.Stream -&gt; unit" Usage="pixelShader.SetStreamSource source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetStreamSource(System::IO::Stream ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -249,6 +281,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Effects.ShaderRenderMode ShaderRenderMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Effects.ShaderRenderMode ShaderRenderMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.PixelShader.ShaderRenderMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShaderRenderMode As ShaderRenderMode" />
+      <MemberSignature Language="F#" Value="member this.ShaderRenderMode : System.Windows.Media.Effects.ShaderRenderMode with get, set" Usage="System.Windows.Media.Effects.PixelShader.ShaderRenderMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Effects::ShaderRenderMode ShaderRenderMode { System::Windows::Media::Effects::ShaderRenderMode get(); void set(System::Windows::Media::Effects::ShaderRenderMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,6 +317,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ShaderRenderModeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ShaderRenderModeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.PixelShader.ShaderRenderModeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShaderRenderModeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ShaderRenderModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.PixelShader.ShaderRenderModeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ShaderRenderModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -300,6 +338,9 @@
       <MemberSignature Language="C#" Value="public Uri UriSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri UriSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Effects.PixelShader.UriSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property UriSource As Uri" />
+      <MemberSignature Language="F#" Value="member this.UriSource : Uri with get, set" Usage="System.Windows.Media.Effects.PixelShader.UriSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ UriSource { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -335,6 +376,9 @@ pack://application:,,,/myEffects;component/sepiaShader.fx.ps
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty UriSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty UriSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Effects.PixelShader.UriSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UriSourceProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable UriSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Effects.PixelShader.UriSourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ UriSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

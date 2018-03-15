@@ -1,7 +1,10 @@
-<Type Name="ItemCheckedEventHandler" FullName="System.Windows.Forms.ItemCheckedEventHandler">
+﻿<Type Name="ItemCheckedEventHandler" FullName="System.Windows.Forms.ItemCheckedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ItemCheckedEventHandler(object sender, ItemCheckedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ItemCheckedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ItemCheckedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ItemCheckedEventHandler(sender As Object, e As ItemCheckedEventArgs)" />
+  <TypeSignature Language="F#" Value="type ItemCheckedEventHandler = delegate of obj * ItemCheckedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ItemCheckedEventHandler(System::Object ^ sender, ItemCheckedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

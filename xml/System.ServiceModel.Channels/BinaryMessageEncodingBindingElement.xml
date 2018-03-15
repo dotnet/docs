@@ -1,7 +1,10 @@
-<Type Name="BinaryMessageEncodingBindingElement" FullName="System.ServiceModel.Channels.BinaryMessageEncodingBindingElement">
+﻿<Type Name="BinaryMessageEncodingBindingElement" FullName="System.ServiceModel.Channels.BinaryMessageEncodingBindingElement">
   <TypeSignature Language="C#" Value="public sealed class BinaryMessageEncodingBindingElement : System.ServiceModel.Channels.MessageEncodingBindingElement, System.ServiceModel.Description.IPolicyExportExtension, System.ServiceModel.Description.IWsdlExportExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BinaryMessageEncodingBindingElement extends System.ServiceModel.Channels.MessageEncodingBindingElement implements class System.ServiceModel.Description.IPolicyExportExtension, class System.ServiceModel.Description.IWsdlExportExtension" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BinaryMessageEncodingBindingElement&#xA;Inherits MessageEncodingBindingElement&#xA;Implements IPolicyExportExtension, IWsdlExportExtension" />
+  <TypeSignature Language="F#" Value="type BinaryMessageEncodingBindingElement = class&#xA;    inherit MessageEncodingBindingElement&#xA;    interface IWsdlExportExtension&#xA;    interface IPolicyExportExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BinaryMessageEncodingBindingElement sealed : System::ServiceModel::Channels::MessageEncodingBindingElement, System::ServiceModel::Description::IPolicyExportExtension, System::ServiceModel::Description::IWsdlExportExtension" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +57,8 @@
       <MemberSignature Language="C#" Value="public BinaryMessageEncodingBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BinaryMessageEncodingBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +89,9 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt; BuildChannelFactory&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.IChannelFactory`1&lt;!!TChannel&gt; BuildChannelFactory&lt;TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelFactory(Of TChannel) (context As BindingContext) As IChannelFactory(Of TChannel)" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelFactory&lt;'Channel&gt;" Usage="binaryMessageEncodingBindingElement.BuildChannelFactory context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -125,6 +133,9 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="binaryMessageEncodingBindingElement.BuildChannelListener context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -164,6 +175,9 @@
       <MemberSignature Language="C#" Value="public override bool CanBuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanBuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="binaryMessageEncodingBindingElement.CanBuildChannelListener context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -204,6 +218,9 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.BindingElement Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.BindingElement Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As BindingElement" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="binaryMessageEncodingBindingElement.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElement ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -245,6 +262,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.CompressionFormat CompressionFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Channels.CompressionFormat CompressionFormat" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompressionFormat As CompressionFormat" />
+      <MemberSignature Language="F#" Value="member this.CompressionFormat : System.ServiceModel.Channels.CompressionFormat with get, set" Usage="System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CompressionFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::CompressionFormat CompressionFormat { System::ServiceModel::Channels::CompressionFormat get(); void set(System::ServiceModel::Channels::CompressionFormat value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -270,6 +290,9 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.MessageEncoderFactory CreateMessageEncoderFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.MessageEncoderFactory CreateMessageEncoderFactory() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.CreateMessageEncoderFactory" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateMessageEncoderFactory () As MessageEncoderFactory" />
+      <MemberSignature Language="F#" Value="override this.CreateMessageEncoderFactory : unit -&gt; System.ServiceModel.Channels.MessageEncoderFactory" Usage="binaryMessageEncodingBindingElement.CreateMessageEncoderFactory " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::MessageEncoderFactory ^ CreateMessageEncoderFactory();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -309,6 +332,9 @@
       <MemberSignature Language="C#" Value="public override T GetProperty&lt;T&gt; (System.ServiceModel.Channels.BindingContext context) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!T GetProperty&lt;class T&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
+      <MemberSignature Language="F#" Value="override this.GetProperty : System.ServiceModel.Channels.BindingContext -&gt; 'T (requires 'T : null)" Usage="binaryMessageEncodingBindingElement.GetProperty context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -359,6 +385,9 @@
       <MemberSignature Language="C#" Value="public int MaxReadPoolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxReadPoolSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.MaxReadPoolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxReadPoolSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxReadPoolSize : int with get, set" Usage="System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.MaxReadPoolSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxReadPoolSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -392,6 +421,9 @@
       <MemberSignature Language="C#" Value="public int MaxSessionSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxSessionSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.MaxSessionSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxSessionSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxSessionSize : int with get, set" Usage="System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.MaxSessionSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxSessionSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -431,6 +463,9 @@
       <MemberSignature Language="C#" Value="public int MaxWritePoolSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxWritePoolSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.MaxWritePoolSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxWritePoolSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxWritePoolSize : int with get, set" Usage="System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.MaxWritePoolSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxWritePoolSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -464,6 +499,9 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.MessageVersion MessageVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.MessageVersion MessageVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.MessageVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property MessageVersion As MessageVersion" />
+      <MemberSignature Language="F#" Value="member this.MessageVersion : System.ServiceModel.Channels.MessageVersion with get, set" Usage="System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.MessageVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::Channels::MessageVersion ^ MessageVersion { System::ServiceModel::Channels::MessageVersion ^ get(); void set(System::ServiceModel::Channels::MessageVersion ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -504,6 +542,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlDictionaryReaderQuotas ReaderQuotas { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlDictionaryReaderQuotas ReaderQuotas" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.ReaderQuotas" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReaderQuotas As XmlDictionaryReaderQuotas" />
+      <MemberSignature Language="F#" Value="member this.ReaderQuotas : System.Xml.XmlDictionaryReaderQuotas with get, set" Usage="System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.ReaderQuotas" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlDictionaryReaderQuotas ^ ReaderQuotas { System::Xml::XmlDictionaryReaderQuotas ^ get(); void set(System::Xml::XmlDictionaryReaderQuotas ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -552,6 +593,9 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeMessageVersion ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeMessageVersion() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.ShouldSerializeMessageVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeMessageVersion () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeMessageVersion : unit -&gt; bool" Usage="binaryMessageEncodingBindingElement.ShouldSerializeMessageVersion " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeMessageVersion();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -584,6 +628,9 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeReaderQuotas ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeReaderQuotas() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.ShouldSerializeReaderQuotas" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeReaderQuotas () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeReaderQuotas : unit -&gt; bool" Usage="binaryMessageEncodingBindingElement.ShouldSerializeReaderQuotas " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeReaderQuotas();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -609,7 +656,12 @@
       <MemberSignature Language="C#" Value="void IPolicyExportExtension.ExportPolicy (System.ServiceModel.Description.MetadataExporter exporter, System.ServiceModel.Description.PolicyConversionContext policyContext);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(class System.ServiceModel.Description.MetadataExporter exporter, class System.ServiceModel.Description.PolicyConversionContext policyContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.System#ServiceModel#Description#IPolicyExportExtension#ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub ExportPolicy (exporter As MetadataExporter, policyContext As PolicyConversionContext) Implements IPolicyExportExtension.ExportPolicy" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System::ServiceModel::Description::MetadataExporter ^ exporter, System::ServiceModel::Description::PolicyConversionContext ^ policyContext) = System::ServiceModel::Description::IPolicyExportExtension::ExportPolicy;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IPolicyExportExtension.ExportPolicy(System.ServiceModel.Description.MetadataExporter,System.ServiceModel.Description.PolicyConversionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -632,7 +684,12 @@
       <MemberSignature Language="C#" Value="void IWsdlExportExtension.ExportContract (System.ServiceModel.Description.WsdlExporter exporter, System.ServiceModel.Description.WsdlContractConversionContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IWsdlExportExtension.ExportContract(class System.ServiceModel.Description.WsdlExporter exporter, class System.ServiceModel.Description.WsdlContractConversionContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.System#ServiceModel#Description#IWsdlExportExtension#ExportContract(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlContractConversionContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub ExportContract (exporter As WsdlExporter, context As WsdlContractConversionContext) Implements IWsdlExportExtension.ExportContract" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IWsdlExportExtension.ExportContract(System::ServiceModel::Description::WsdlExporter ^ exporter, System::ServiceModel::Description::WsdlContractConversionContext ^ context) = System::ServiceModel::Description::IWsdlExportExtension::ExportContract;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IWsdlExportExtension.ExportContract(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlContractConversionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -655,7 +712,12 @@
       <MemberSignature Language="C#" Value="void IWsdlExportExtension.ExportEndpoint (System.ServiceModel.Description.WsdlExporter exporter, System.ServiceModel.Description.WsdlEndpointConversionContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint(class System.ServiceModel.Description.WsdlExporter exporter, class System.ServiceModel.Description.WsdlEndpointConversionContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement.System#ServiceModel#Description#IWsdlExportExtension#ExportEndpoint(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlEndpointConversionContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub ExportEndpoint (exporter As WsdlExporter, context As WsdlEndpointConversionContext) Implements IWsdlExportExtension.ExportEndpoint" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint(System::ServiceModel::Description::WsdlExporter ^ exporter, System::ServiceModel::Description::WsdlEndpointConversionContext ^ context) = System::ServiceModel::Description::IWsdlExportExtension::ExportEndpoint;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint(System.ServiceModel.Description.WsdlExporter,System.ServiceModel.Description.WsdlEndpointConversionContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

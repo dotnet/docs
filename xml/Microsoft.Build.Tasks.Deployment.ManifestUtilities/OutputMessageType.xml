@@ -1,7 +1,10 @@
-<Type Name="OutputMessageType" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType">
+﻿<Type Name="OutputMessageType" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType">
   <TypeSignature Language="C#" Value="public enum OutputMessageType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutputMessageType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OutputMessageType" />
+  <TypeSignature Language="F#" Value="type OutputMessageType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class OutputMessageType" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="Error" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType Error = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType.Error" />
+      <MemberSignature Language="VB.NET" Value="Error" />
+      <MemberSignature Language="F#" Value="Error = 2" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType.Error" />
+      <MemberSignature Language="C++ CLI" Value="Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -31,6 +37,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates an error.</summary>
       </Docs>
@@ -39,6 +46,9 @@
       <MemberSignature Language="C#" Value="Info" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType Info = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType.Info" />
+      <MemberSignature Language="VB.NET" Value="Info" />
+      <MemberSignature Language="F#" Value="Info = 0" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType.Info" />
+      <MemberSignature Language="C++ CLI" Value="Info" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -47,6 +57,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates an informational message.</summary>
       </Docs>
@@ -55,6 +66,9 @@
       <MemberSignature Language="C#" Value="Warning" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType Warning = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType.Warning" />
+      <MemberSignature Language="VB.NET" Value="Warning" />
+      <MemberSignature Language="F#" Value="Warning = 1" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType.Warning" />
+      <MemberSignature Language="C++ CLI" Value="Warning" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -63,6 +77,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Tasks.Deployment.ManifestUtilities.OutputMessageType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates a warning.</summary>
       </Docs>

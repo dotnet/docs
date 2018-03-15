@@ -1,7 +1,10 @@
-<Type Name="IDataSourceViewSchema" FullName="System.Web.UI.Design.IDataSourceViewSchema">
+﻿<Type Name="IDataSourceViewSchema" FullName="System.Web.UI.Design.IDataSourceViewSchema">
   <TypeSignature Language="C#" Value="public interface IDataSourceViewSchema" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataSourceViewSchema" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDataSourceViewSchema" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataSourceViewSchema" />
+  <TypeSignature Language="F#" Value="type IDataSourceViewSchema = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataSourceViewSchema" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.IDataSourceViewSchema[] GetChildren ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.IDataSourceViewSchema[] GetChildren() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceViewSchema.GetChildren" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetChildren () As IDataSourceViewSchema()" />
+      <MemberSignature Language="F#" Value="abstract member GetChildren : unit -&gt; System.Web.UI.Design.IDataSourceViewSchema[]" Usage="iDataSourceViewSchema.GetChildren " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Web::UI::Design::IDataSourceViewSchema ^&gt; ^ GetChildren();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -54,6 +60,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.IDataSourceFieldSchema[] GetFields ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.IDataSourceFieldSchema[] GetFields() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceViewSchema.GetFields" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFields () As IDataSourceFieldSchema()" />
+      <MemberSignature Language="F#" Value="abstract member GetFields : unit -&gt; System.Web.UI.Design.IDataSourceFieldSchema[]" Usage="iDataSourceViewSchema.GetFields " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Web::UI::Design::IDataSourceFieldSchema ^&gt; ^ GetFields();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -83,6 +92,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IDataSourceViewSchema.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.UI.Design.IDataSourceViewSchema.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

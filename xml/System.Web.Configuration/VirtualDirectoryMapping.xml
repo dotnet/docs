@@ -1,7 +1,10 @@
-<Type Name="VirtualDirectoryMapping" FullName="System.Web.Configuration.VirtualDirectoryMapping">
+﻿<Type Name="VirtualDirectoryMapping" FullName="System.Web.Configuration.VirtualDirectoryMapping">
   <TypeSignature Language="C#" Value="public sealed class VirtualDirectoryMapping" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit VirtualDirectoryMapping extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.VirtualDirectoryMapping" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class VirtualDirectoryMapping" />
+  <TypeSignature Language="F#" Value="type VirtualDirectoryMapping = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VirtualDirectoryMapping sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public VirtualDirectoryMapping (string physicalDirectory, bool isAppRoot);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string physicalDirectory, bool isAppRoot) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMapping.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (physicalDirectory As String, isAppRoot As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.VirtualDirectoryMapping : string * bool -&gt; System.Web.Configuration.VirtualDirectoryMapping" Usage="new System.Web.Configuration.VirtualDirectoryMapping (physicalDirectory, isAppRoot)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VirtualDirectoryMapping(System::String ^ physicalDirectory, bool isAppRoot);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -39,6 +54,9 @@
       <MemberSignature Language="C#" Value="public VirtualDirectoryMapping (string physicalDirectory, bool isAppRoot, string configFileBaseName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string physicalDirectory, bool isAppRoot, string configFileBaseName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.VirtualDirectoryMapping.#ctor(System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (physicalDirectory As String, isAppRoot As Boolean, configFileBaseName As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.VirtualDirectoryMapping : string * bool * string -&gt; System.Web.Configuration.VirtualDirectoryMapping" Usage="new System.Web.Configuration.VirtualDirectoryMapping (physicalDirectory, isAppRoot, configFileBaseName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VirtualDirectoryMapping(System::String ^ physicalDirectory, bool isAppRoot, System::String ^ configFileBaseName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +79,9 @@
       <MemberSignature Language="C#" Value="public string ConfigFileBaseName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConfigFileBaseName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.VirtualDirectoryMapping.ConfigFileBaseName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConfigFileBaseName As String" />
+      <MemberSignature Language="F#" Value="member this.ConfigFileBaseName : string with get, set" Usage="System.Web.Configuration.VirtualDirectoryMapping.ConfigFileBaseName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConfigFileBaseName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +108,9 @@
       <MemberSignature Language="C#" Value="public bool IsAppRoot { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAppRoot" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.VirtualDirectoryMapping.IsAppRoot" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAppRoot As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAppRoot : bool with get, set" Usage="System.Web.Configuration.VirtualDirectoryMapping.IsAppRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAppRoot { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,6 +129,9 @@
       <MemberSignature Language="C#" Value="public string PhysicalDirectory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PhysicalDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.VirtualDirectoryMapping.PhysicalDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Property PhysicalDirectory As String" />
+      <MemberSignature Language="F#" Value="member this.PhysicalDirectory : string with get, set" Usage="System.Web.Configuration.VirtualDirectoryMapping.PhysicalDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PhysicalDirectory { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -124,6 +151,9 @@
       <MemberSignature Language="C#" Value="public string VirtualDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VirtualDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.VirtualDirectoryMapping.VirtualDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VirtualDirectory As String" />
+      <MemberSignature Language="F#" Value="member this.VirtualDirectory : string" Usage="System.Web.Configuration.VirtualDirectoryMapping.VirtualDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VirtualDirectory { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -138,14 +168,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Web.Configuration.VirtualDirectoryMapping" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

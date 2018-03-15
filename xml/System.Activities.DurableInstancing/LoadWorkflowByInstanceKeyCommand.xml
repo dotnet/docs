@@ -1,7 +1,10 @@
-<Type Name="LoadWorkflowByInstanceKeyCommand" FullName="System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand">
+﻿<Type Name="LoadWorkflowByInstanceKeyCommand" FullName="System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand">
   <TypeSignature Language="C#" Value="public sealed class LoadWorkflowByInstanceKeyCommand : System.Runtime.DurableInstancing.InstancePersistenceCommand" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LoadWorkflowByInstanceKeyCommand extends System.Runtime.DurableInstancing.InstancePersistenceCommand" />
   <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LoadWorkflowByInstanceKeyCommand&#xA;Inherits InstancePersistenceCommand" />
+  <TypeSignature Language="F#" Value="type LoadWorkflowByInstanceKeyCommand = class&#xA;    inherit InstancePersistenceCommand" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LoadWorkflowByInstanceKeyCommand sealed : System::Runtime::DurableInstancing::InstancePersistenceCommand" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public LoadWorkflowByInstanceKeyCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LoadWorkflowByInstanceKeyCommand();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public bool AcceptUninitializedInstance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AcceptUninitializedInstance" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.AcceptUninitializedInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Property AcceptUninitializedInstance As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AcceptUninitializedInstance : bool with get, set" Usage="System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.AcceptUninitializedInstance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AcceptUninitializedInstance { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -53,6 +61,9 @@
       <MemberSignature Language="C#" Value="public Guid AssociateInstanceKeyToInstanceId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid AssociateInstanceKeyToInstanceId" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.AssociateInstanceKeyToInstanceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssociateInstanceKeyToInstanceId As Guid" />
+      <MemberSignature Language="F#" Value="member this.AssociateInstanceKeyToInstanceId : Guid with get, set" Usage="System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.AssociateInstanceKeyToInstanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid AssociateInstanceKeyToInstanceId { Guid get(); void set(Guid value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,9 +79,12 @@
       </Docs>
     </Member>
     <Member MemberName="AutomaticallyAcquiringLock">
-      <MemberSignature Language="C#" Value="protected override bool AutomaticallyAcquiringLock { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override bool AutomaticallyAcquiringLock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutomaticallyAcquiringLock" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.AutomaticallyAcquiringLock" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property AutomaticallyAcquiringLock As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutomaticallyAcquiringLock : bool" Usage="System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.AutomaticallyAcquiringLock" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool AutomaticallyAcquiringLock { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -89,6 +103,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;Guid,System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;&gt; InstanceKeysToAssociate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;valuetype System.Guid, class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, class System.Runtime.DurableInstancing.InstanceValue&gt;&gt; InstanceKeysToAssociate" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.InstanceKeysToAssociate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceKeysToAssociate As IDictionary(Of Guid, IDictionary(Of XName, InstanceValue))" />
+      <MemberSignature Language="F#" Value="member this.InstanceKeysToAssociate : System.Collections.Generic.IDictionary&lt;Guid, System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt;&gt;" Usage="System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.InstanceKeysToAssociate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;Guid, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^&gt; ^ InstanceKeysToAssociate { System::Collections::Generic::IDictionary&lt;Guid, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -104,9 +121,12 @@
       </Docs>
     </Member>
     <Member MemberName="IsTransactionEnlistmentOptional">
-      <MemberSignature Language="C#" Value="protected override bool IsTransactionEnlistmentOptional { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override bool IsTransactionEnlistmentOptional { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTransactionEnlistmentOptional" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.IsTransactionEnlistmentOptional" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property IsTransactionEnlistmentOptional As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTransactionEnlistmentOptional : bool" Usage="System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.IsTransactionEnlistmentOptional" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool IsTransactionEnlistmentOptional { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -125,6 +145,9 @@
       <MemberSignature Language="C#" Value="public Guid LookupInstanceKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid LookupInstanceKey" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.LookupInstanceKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property LookupInstanceKey As Guid" />
+      <MemberSignature Language="F#" Value="member this.LookupInstanceKey : Guid with get, set" Usage="System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.LookupInstanceKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid LookupInstanceKey { Guid get(); void set(Guid value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -140,9 +163,12 @@
       </Docs>
     </Member>
     <Member MemberName="Validate">
-      <MemberSignature Language="C#" Value="protected override void Validate (System.Runtime.DurableInstancing.InstanceView view);" />
+      <MemberSignature Language="C#" Value="protected internal override void Validate (System.Runtime.DurableInstancing.InstanceView view);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Validate(class System.Runtime.DurableInstancing.InstanceView view) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.Validate(System.Runtime.DurableInstancing.InstanceView)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Validate (view As InstanceView)" />
+      <MemberSignature Language="F#" Value="override this.Validate : System.Runtime.DurableInstancing.InstanceView -&gt; unit" Usage="loadWorkflowByInstanceKeyCommand.Validate view" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Validate(System::Runtime::DurableInstancing::InstanceView ^ view);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

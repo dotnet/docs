@@ -1,7 +1,10 @@
-<Type Name="MailFormat" FullName="System.Web.Mail.MailFormat">
+﻿<Type Name="MailFormat" FullName="System.Web.Mail.MailFormat">
   <TypeSignature Language="C#" Value="public enum MailFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MailFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Mail.MailFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MailFormat" />
+  <TypeSignature Language="F#" Value="type MailFormat = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MailFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="Html" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Mail.MailFormat Html = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Mail.MailFormat.Html" />
+      <MemberSignature Language="VB.NET" Value="Html" />
+      <MemberSignature Language="F#" Value="Html = 1" Usage="System.Web.Mail.MailFormat.Html" />
+      <MemberSignature Language="C++ CLI" Value="Html" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -31,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Mail.MailFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the email format is HTML.</summary>
       </Docs>
@@ -39,6 +46,9 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Mail.MailFormat Text = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Mail.MailFormat.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 0" Usage="System.Web.Mail.MailFormat.Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -47,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Mail.MailFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the email format is plain text.</summary>
       </Docs>

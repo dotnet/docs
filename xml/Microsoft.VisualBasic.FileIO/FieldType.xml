@@ -1,7 +1,10 @@
-<Type Name="FieldType" FullName="Microsoft.VisualBasic.FileIO.FieldType">
+﻿<Type Name="FieldType" FullName="Microsoft.VisualBasic.FileIO.FieldType">
   <TypeSignature Language="C#" Value="public enum FieldType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FieldType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileIO.FieldType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FieldType" />
+  <TypeSignature Language="F#" Value="type FieldType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FieldType" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="Delimited" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileIO.FieldType Delimited = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.FieldType.Delimited" />
+      <MemberSignature Language="VB.NET" Value="Delimited" />
+      <MemberSignature Language="F#" Value="Delimited = 0" Usage="Microsoft.VisualBasic.FileIO.FieldType.Delimited" />
+      <MemberSignature Language="C++ CLI" Value="Delimited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -36,6 +42,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileIO.FieldType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that the fields are delimited.</summary>
       </Docs>
@@ -44,6 +51,9 @@
       <MemberSignature Language="C#" Value="FixedWidth" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileIO.FieldType FixedWidth = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileIO.FieldType.FixedWidth" />
+      <MemberSignature Language="VB.NET" Value="FixedWidth" />
+      <MemberSignature Language="F#" Value="FixedWidth = 1" Usage="Microsoft.VisualBasic.FileIO.FieldType.FixedWidth" />
+      <MemberSignature Language="C++ CLI" Value="FixedWidth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileIO.FieldType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the fields are fixed width.</summary>
       </Docs>

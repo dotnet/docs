@@ -1,7 +1,10 @@
-<Type Name="InstrumentationManager" FullName="System.Management.Instrumentation.InstrumentationManager">
+﻿<Type Name="InstrumentationManager" FullName="System.Management.Instrumentation.InstrumentationManager">
   <TypeSignature Language="C#" Value="public static class InstrumentationManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed InstrumentationManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.InstrumentationManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class InstrumentationManager" />
+  <TypeSignature Language="F#" Value="type InstrumentationManager = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InstrumentationManager abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Management.Instrumentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +71,9 @@ public int MainNew(string[] args)
       <MemberSignature Language="C#" Value="public static void Publish (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Publish(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.InstrumentationManager.Publish(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Publish (value As Object)" />
+      <MemberSignature Language="F#" Value="static member Publish : obj -&gt; unit" Usage="System.Management.Instrumentation.InstrumentationManager.Publish value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Publish(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management.Instrumentation</AssemblyName>
@@ -89,6 +95,9 @@ public int MainNew(string[] args)
       <MemberSignature Language="C#" Value="public static void RegisterAssembly (System.Reflection.Assembly managementAssembly);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterAssembly(class System.Reflection.Assembly managementAssembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.InstrumentationManager.RegisterAssembly(System.Reflection.Assembly)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterAssembly (managementAssembly As Assembly)" />
+      <MemberSignature Language="F#" Value="static member RegisterAssembly : System.Reflection.Assembly -&gt; unit" Usage="System.Management.Instrumentation.InstrumentationManager.RegisterAssembly managementAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterAssembly(System::Reflection::Assembly ^ managementAssembly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management.Instrumentation</AssemblyName>
@@ -110,6 +119,9 @@ public int MainNew(string[] args)
       <MemberSignature Language="C#" Value="public static void RegisterType (Type managementType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterType(class System.Type managementType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.InstrumentationManager.RegisterType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterType (managementType As Type)" />
+      <MemberSignature Language="F#" Value="static member RegisterType : Type -&gt; unit" Usage="System.Management.Instrumentation.InstrumentationManager.RegisterType managementType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterType(Type ^ managementType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management.Instrumentation</AssemblyName>
@@ -145,6 +157,9 @@ static int Main(string[] args)
       <MemberSignature Language="C#" Value="public static void Revoke (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Revoke(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.InstrumentationManager.Revoke(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Revoke (value As Object)" />
+      <MemberSignature Language="F#" Value="static member Revoke : obj -&gt; unit" Usage="System.Management.Instrumentation.InstrumentationManager.Revoke value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Revoke(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management.Instrumentation</AssemblyName>
@@ -166,6 +181,9 @@ static int Main(string[] args)
       <MemberSignature Language="C#" Value="public static void UnregisterAssembly (System.Reflection.Assembly managementAssembly);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UnregisterAssembly(class System.Reflection.Assembly managementAssembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.InstrumentationManager.UnregisterAssembly(System.Reflection.Assembly)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub UnregisterAssembly (managementAssembly As Assembly)" />
+      <MemberSignature Language="F#" Value="static member UnregisterAssembly : System.Reflection.Assembly -&gt; unit" Usage="System.Management.Instrumentation.InstrumentationManager.UnregisterAssembly managementAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UnregisterAssembly(System::Reflection::Assembly ^ managementAssembly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management.Instrumentation</AssemblyName>
@@ -187,6 +205,9 @@ static int Main(string[] args)
       <MemberSignature Language="C#" Value="public static void UnregisterType (Type managementType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UnregisterType(class System.Type managementType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.InstrumentationManager.UnregisterType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub UnregisterType (managementType As Type)" />
+      <MemberSignature Language="F#" Value="static member UnregisterType : Type -&gt; unit" Usage="System.Management.Instrumentation.InstrumentationManager.UnregisterType managementType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UnregisterType(Type ^ managementType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management.Instrumentation</AssemblyName>

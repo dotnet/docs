@@ -1,7 +1,10 @@
-<Type Name="TextRunProperties" FullName="System.Windows.Media.TextFormatting.TextRunProperties">
+﻿<Type Name="TextRunProperties" FullName="System.Windows.Media.TextFormatting.TextRunProperties">
   <TypeSignature Language="C#" Value="public abstract class TextRunProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TextRunProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextRunProperties" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextRunProperties" />
+  <TypeSignature Language="F#" Value="type TextRunProperties = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextRunProperties abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="protected TextRunProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextRunProperties.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TextRunProperties();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.Brush BackgroundBrush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush BackgroundBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunProperties.BackgroundBrush" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property BackgroundBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.BackgroundBrush : System.Windows.Media.Brush" Usage="System.Windows.Media.TextFormatting.TextRunProperties.BackgroundBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Brush ^ BackgroundBrush { System::Windows::Media::Brush ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +67,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.BaselineAlignment BaselineAlignment { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.BaselineAlignment BaselineAlignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunProperties.BaselineAlignment" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BaselineAlignment As BaselineAlignment" />
+      <MemberSignature Language="F#" Value="member this.BaselineAlignment : System.Windows.BaselineAlignment" Usage="System.Windows.Media.TextFormatting.TextRunProperties.BaselineAlignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::BaselineAlignment BaselineAlignment { System::Windows::BaselineAlignment get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -77,6 +88,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Globalization.CultureInfo CultureInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo CultureInfo" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunProperties.CultureInfo" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property CultureInfo As CultureInfo" />
+      <MemberSignature Language="F#" Value="member this.CultureInfo : System.Globalization.CultureInfo" Usage="System.Windows.Media.TextFormatting.TextRunProperties.CultureInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Globalization::CultureInfo ^ CultureInfo { System::Globalization::CultureInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -95,6 +109,9 @@
       <MemberSignature Language="C#" Value="public abstract double FontHintingEmSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 FontHintingEmSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunProperties.FontHintingEmSize" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property FontHintingEmSize As Double" />
+      <MemberSignature Language="F#" Value="member this.FontHintingEmSize : double" Usage="System.Windows.Media.TextFormatting.TextRunProperties.FontHintingEmSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double FontHintingEmSize { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -120,6 +137,9 @@
       <MemberSignature Language="C#" Value="public abstract double FontRenderingEmSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 FontRenderingEmSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunProperties.FontRenderingEmSize" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property FontRenderingEmSize As Double" />
+      <MemberSignature Language="F#" Value="member this.FontRenderingEmSize : double" Usage="System.Windows.Media.TextFormatting.TextRunProperties.FontRenderingEmSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double FontRenderingEmSize { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -145,6 +165,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.Brush ForegroundBrush { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush ForegroundBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunProperties.ForegroundBrush" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ForegroundBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.ForegroundBrush : System.Windows.Media.Brush" Usage="System.Windows.Media.TextFormatting.TextRunProperties.ForegroundBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Brush ^ ForegroundBrush { System::Windows::Media::Brush ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -163,6 +186,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Media.NumberSubstitution NumberSubstitution { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.NumberSubstitution NumberSubstitution" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunProperties.NumberSubstitution" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NumberSubstitution As NumberSubstitution" />
+      <MemberSignature Language="F#" Value="member this.NumberSubstitution : System.Windows.Media.NumberSubstitution" Usage="System.Windows.Media.TextFormatting.TextRunProperties.NumberSubstitution" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::NumberSubstitution ^ NumberSubstitution { System::Windows::Media::NumberSubstitution ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -181,6 +207,9 @@
       <MemberSignature Language="C#" Value="public double PixelsPerDip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 PixelsPerDip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunProperties.PixelsPerDip" />
+      <MemberSignature Language="VB.NET" Value="Public Property PixelsPerDip As Double" />
+      <MemberSignature Language="F#" Value="member this.PixelsPerDip : double with get, set" Usage="System.Windows.Media.TextFormatting.TextRunProperties.PixelsPerDip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double PixelsPerDip { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -199,6 +228,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.TextDecorationCollection TextDecorations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.TextDecorationCollection TextDecorations" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunProperties.TextDecorations" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TextDecorations As TextDecorationCollection" />
+      <MemberSignature Language="F#" Value="member this.TextDecorations : System.Windows.TextDecorationCollection" Usage="System.Windows.Media.TextFormatting.TextRunProperties.TextDecorations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::TextDecorationCollection ^ TextDecorations { System::Windows::TextDecorationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -217,6 +249,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextEffectCollection TextEffects { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextEffectCollection TextEffects" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunProperties.TextEffects" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TextEffects As TextEffectCollection" />
+      <MemberSignature Language="F#" Value="member this.TextEffects : System.Windows.Media.TextEffectCollection" Usage="System.Windows.Media.TextFormatting.TextRunProperties.TextEffects" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::TextEffectCollection ^ TextEffects { System::Windows::Media::TextEffectCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -235,6 +270,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.Typeface Typeface { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Typeface Typeface" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunProperties.Typeface" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Typeface As Typeface" />
+      <MemberSignature Language="F#" Value="member this.Typeface : System.Windows.Media.Typeface" Usage="System.Windows.Media.TextFormatting.TextRunProperties.Typeface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::Typeface ^ Typeface { System::Windows::Media::Typeface ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -253,6 +291,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Media.TextFormatting.TextRunTypographyProperties TypographyProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextFormatting.TextRunTypographyProperties TypographyProperties" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextRunProperties.TypographyProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TypographyProperties As TextRunTypographyProperties" />
+      <MemberSignature Language="F#" Value="member this.TypographyProperties : System.Windows.Media.TextFormatting.TextRunTypographyProperties" Usage="System.Windows.Media.TextFormatting.TextRunProperties.TypographyProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::TextFormatting::TextRunTypographyProperties ^ TypographyProperties { System::Windows::Media::TextFormatting::TextRunTypographyProperties ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

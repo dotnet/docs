@@ -1,7 +1,10 @@
-<Type Name="AccessibleNavigation" FullName="System.Windows.Forms.AccessibleNavigation">
+﻿<Type Name="AccessibleNavigation" FullName="System.Windows.Forms.AccessibleNavigation">
   <TypeSignature Language="C#" Value="public enum AccessibleNavigation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AccessibleNavigation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AccessibleNavigation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AccessibleNavigation" />
+  <TypeSignature Language="F#" Value="type AccessibleNavigation = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AccessibleNavigation" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +48,9 @@
       <MemberSignature Language="C#" Value="Down" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleNavigation Down = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.Down" />
+      <MemberSignature Language="VB.NET" Value="Down" />
+      <MemberSignature Language="F#" Value="Down = 2" Usage="System.Windows.Forms.AccessibleNavigation.Down" />
+      <MemberSignature Language="C++ CLI" Value="Down" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -53,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Navigation to a sibling object located below the starting object.</summary>
       </Docs>
@@ -61,6 +68,9 @@
       <MemberSignature Language="C#" Value="FirstChild" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleNavigation FirstChild = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.FirstChild" />
+      <MemberSignature Language="VB.NET" Value="FirstChild" />
+      <MemberSignature Language="F#" Value="FirstChild = 7" Usage="System.Windows.Forms.AccessibleNavigation.FirstChild" />
+      <MemberSignature Language="C++ CLI" Value="FirstChild" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Navigation to the first child of the object.</summary>
       </Docs>
@@ -77,6 +88,9 @@
       <MemberSignature Language="C#" Value="LastChild" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleNavigation LastChild = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.LastChild" />
+      <MemberSignature Language="VB.NET" Value="LastChild" />
+      <MemberSignature Language="F#" Value="LastChild = 8" Usage="System.Windows.Forms.AccessibleNavigation.LastChild" />
+      <MemberSignature Language="C++ CLI" Value="LastChild" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -85,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Navigation to the last child of the object.</summary>
       </Docs>
@@ -93,6 +108,9 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleNavigation Left = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 3" Usage="System.Windows.Forms.AccessibleNavigation.Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Navigation to the sibling object located to the left of the starting object.</summary>
       </Docs>
@@ -109,6 +128,9 @@
       <MemberSignature Language="C#" Value="Next" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleNavigation Next = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.Next" />
+      <MemberSignature Language="VB.NET" Value="Next" />
+      <MemberSignature Language="F#" Value="Next = 5" Usage="System.Windows.Forms.AccessibleNavigation.Next" />
+      <MemberSignature Language="C++ CLI" Value="Next" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -117,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Navigation to the next logical object, typically from a sibling object to the starting object.</summary>
       </Docs>
@@ -125,6 +148,9 @@
       <MemberSignature Language="C#" Value="Previous" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleNavigation Previous = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.Previous" />
+      <MemberSignature Language="VB.NET" Value="Previous" />
+      <MemberSignature Language="F#" Value="Previous = 6" Usage="System.Windows.Forms.AccessibleNavigation.Previous" />
+      <MemberSignature Language="C++ CLI" Value="Previous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -133,6 +159,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Navigation to the previous logical object, typically from a sibling object to the starting object.</summary>
       </Docs>
@@ -141,6 +168,9 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleNavigation Right = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 4" Usage="System.Windows.Forms.AccessibleNavigation.Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -149,6 +179,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Navigation to the sibling object located to the right of the starting object.</summary>
       </Docs>
@@ -157,6 +188,9 @@
       <MemberSignature Language="C#" Value="Up" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.AccessibleNavigation Up = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.AccessibleNavigation.Up" />
+      <MemberSignature Language="VB.NET" Value="Up" />
+      <MemberSignature Language="F#" Value="Up = 1" Usage="System.Windows.Forms.AccessibleNavigation.Up" />
+      <MemberSignature Language="C++ CLI" Value="Up" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -165,6 +199,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleNavigation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Navigation to a sibling object located above the starting object.</summary>
       </Docs>

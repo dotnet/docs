@@ -1,7 +1,10 @@
-<Type Name="IDesignerVerbProviderService" FullName="System.Workflow.ComponentModel.Design.IDesignerVerbProviderService">
+﻿<Type Name="IDesignerVerbProviderService" FullName="System.Workflow.ComponentModel.Design.IDesignerVerbProviderService">
   <TypeSignature Language="C#" Value="public interface IDesignerVerbProviderService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignerVerbProviderService" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.IDesignerVerbProviderService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDesignerVerbProviderService" />
+  <TypeSignature Language="F#" Value="type IDesignerVerbProviderService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDesignerVerbProviderService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public void AddVerbProvider (System.Workflow.ComponentModel.Design.IDesignerVerbProvider verbProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddVerbProvider(class System.Workflow.ComponentModel.Design.IDesignerVerbProvider verbProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IDesignerVerbProviderService.AddVerbProvider(System.Workflow.ComponentModel.Design.IDesignerVerbProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddVerbProvider (verbProvider As IDesignerVerbProvider)" />
+      <MemberSignature Language="F#" Value="abstract member AddVerbProvider : System.Workflow.ComponentModel.Design.IDesignerVerbProvider -&gt; unit" Usage="iDesignerVerbProviderService.AddVerbProvider verbProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddVerbProvider(System::Workflow::ComponentModel::Design::IDesignerVerbProvider ^ verbProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -53,6 +59,9 @@
       <MemberSignature Language="C#" Value="public void RemoveVerbProvider (System.Workflow.ComponentModel.Design.IDesignerVerbProvider verbProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveVerbProvider(class System.Workflow.ComponentModel.Design.IDesignerVerbProvider verbProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.IDesignerVerbProviderService.RemoveVerbProvider(System.Workflow.ComponentModel.Design.IDesignerVerbProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveVerbProvider (verbProvider As IDesignerVerbProvider)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveVerbProvider : System.Workflow.ComponentModel.Design.IDesignerVerbProvider -&gt; unit" Usage="iDesignerVerbProviderService.RemoveVerbProvider verbProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveVerbProvider(System::Workflow::ComponentModel::Design::IDesignerVerbProvider ^ verbProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -74,6 +83,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.IDesignerVerbProvider&gt; VerbProviders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.ComponentModel.Design.IDesignerVerbProvider&gt; VerbProviders" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.IDesignerVerbProviderService.VerbProviders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerbProviders As ReadOnlyCollection(Of IDesignerVerbProvider)" />
+      <MemberSignature Language="F#" Value="member this.VerbProviders : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.ComponentModel.Design.IDesignerVerbProvider&gt;" Usage="System.Workflow.ComponentModel.Design.IDesignerVerbProviderService.VerbProviders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::IDesignerVerbProvider ^&gt; ^ VerbProviders { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::ComponentModel::Design::IDesignerVerbProvider ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

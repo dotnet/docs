@@ -1,7 +1,10 @@
-<Type Name="TempFileCollection" FullName="System.CodeDom.Compiler.TempFileCollection">
+﻿<Type Name="TempFileCollection" FullName="System.CodeDom.Compiler.TempFileCollection">
   <TypeSignature Language="C#" Value="public class TempFileCollection : IDisposable, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TempFileCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.TempFileCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class TempFileCollection&#xA;Implements ICollection, IDisposable" />
+  <TypeSignature Language="F#" Value="type TempFileCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TempFileCollection : IDisposable, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,10 +60,22 @@
     <permission cref="T:System.Security.Permissions.SecurityPermission">for deriving from the <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> class. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; <see cref="T:System.Security.PermissionSet" />: <see langword="FullTrust" />.</permission>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TempFileCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.TempFileCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TempFileCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -87,6 +102,9 @@
       <MemberSignature Language="C#" Value="public TempFileCollection (string tempDir);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string tempDir) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.TempFileCollection.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tempDir As String)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.Compiler.TempFileCollection : string -&gt; System.CodeDom.Compiler.TempFileCollection" Usage="new System.CodeDom.Compiler.TempFileCollection tempDir" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TempFileCollection(System::String ^ tempDir);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +128,9 @@
       <MemberSignature Language="C#" Value="public TempFileCollection (string tempDir, bool keepFiles);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string tempDir, bool keepFiles) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.TempFileCollection.#ctor(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tempDir As String, keepFiles As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.Compiler.TempFileCollection : string * bool -&gt; System.CodeDom.Compiler.TempFileCollection" Usage="new System.CodeDom.Compiler.TempFileCollection (tempDir, keepFiles)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TempFileCollection(System::String ^ tempDir, bool keepFiles);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -139,10 +160,22 @@
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddExtension">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a file name with the specified file name extension to the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddExtension">
       <MemberSignature Language="C#" Value="public string AddExtension (string fileExtension);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AddExtension(string fileExtension) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.TempFileCollection.AddExtension(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddExtension (fileExtension As String) As String" />
+      <MemberSignature Language="F#" Value="member this.AddExtension : string -&gt; string" Usage="tempFileCollection.AddExtension fileExtension" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ AddExtension(System::String ^ fileExtension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -178,6 +211,9 @@
       <MemberSignature Language="C#" Value="public string AddExtension (string fileExtension, bool keepFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AddExtension(string fileExtension, bool keepFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.TempFileCollection.AddExtension(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddExtension (fileExtension As String, keepFile As Boolean) As String" />
+      <MemberSignature Language="F#" Value="member this.AddExtension : string * bool -&gt; string" Usage="tempFileCollection.AddExtension (fileExtension, keepFile)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ AddExtension(System::String ^ fileExtension, bool keepFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -218,6 +254,9 @@
       <MemberSignature Language="C#" Value="public void AddFile (string fileName, bool keepFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFile(string fileName, bool keepFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.TempFileCollection.AddFile(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddFile (fileName As String, keepFile As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.AddFile : string * bool -&gt; unit" Usage="tempFileCollection.AddFile (fileName, keepFile)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddFile(System::String ^ fileName, bool keepFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -262,6 +301,9 @@
       <MemberSignature Language="C#" Value="public string BasePath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BasePath" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.TempFileCollection.BasePath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BasePath As String" />
+      <MemberSignature Language="F#" Value="member this.BasePath : string" Usage="System.CodeDom.Compiler.TempFileCollection.BasePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BasePath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -285,6 +327,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (string[] fileNames, int start);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(string[] fileNames, int32 start) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.TempFileCollection.CopyTo(System.String[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (fileNames As String(), start As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : string[] * int -&gt; unit" Usage="tempFileCollection.CopyTo (fileNames, start)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::String ^&gt; ^ fileNames, int start);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -312,7 +357,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.TempFileCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.CodeDom.Compiler.TempFileCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -334,6 +385,9 @@
       <MemberSignature Language="C#" Value="public void Delete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Delete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.TempFileCollection.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="F#" Value="member this.Delete : unit -&gt; unit" Usage="tempFileCollection.Delete " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -363,6 +417,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.TempFileCollection.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="tempFileCollection.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -404,6 +461,9 @@
       <MemberSignature Language="C#" Value="~TempFileCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.TempFileCollection.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="tempFileCollection.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!TempFileCollection ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -437,7 +497,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.TempFileCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="tempFileCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -460,6 +526,9 @@
       <MemberSignature Language="C#" Value="public bool KeepFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool KeepFiles" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.TempFileCollection.KeepFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeepFiles As Boolean" />
+      <MemberSignature Language="F#" Value="member this.KeepFiles : bool with get, set" Usage="System.CodeDom.Compiler.TempFileCollection.KeepFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepFiles { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -490,7 +559,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int start);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 start) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.TempFileCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int start) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -525,7 +598,13 @@
       <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.TempFileCollection.System#Collections#ICollection#Count" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
+      <MemberSignature Language="F#" Usage="System.CodeDom.Compiler.TempFileCollection.System.Collections.ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -555,7 +634,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.TempFileCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="F#" Usage="System.CodeDom.Compiler.TempFileCollection.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -586,7 +671,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.TempFileCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="F#" Usage="System.CodeDom.Compiler.TempFileCollection.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -616,7 +707,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.TempFileCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -647,7 +743,12 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.TempFileCollection.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -677,6 +778,9 @@
       <MemberSignature Language="C#" Value="public string TempDir { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TempDir" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.TempFileCollection.TempDir" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TempDir As String" />
+      <MemberSignature Language="F#" Value="member this.TempDir : string" Usage="System.CodeDom.Compiler.TempFileCollection.TempDir" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TempDir { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -695,24 +799,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddExtension">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a file name with the specified file name extension to the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

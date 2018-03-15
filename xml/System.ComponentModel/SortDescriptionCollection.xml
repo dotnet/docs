@@ -1,7 +1,10 @@
-<Type Name="SortDescriptionCollection" FullName="System.ComponentModel.SortDescriptionCollection">
+﻿<Type Name="SortDescriptionCollection" FullName="System.ComponentModel.SortDescriptionCollection">
   <TypeSignature Language="C#" Value="public class SortDescriptionCollection : System.Collections.ObjectModel.Collection&lt;System.ComponentModel.SortDescription&gt;, System.Collections.Specialized.INotifyCollectionChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SortDescriptionCollection extends System.Collections.ObjectModel.Collection`1&lt;valuetype System.ComponentModel.SortDescription&gt; implements class System.Collections.Specialized.INotifyCollectionChanged" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.SortDescriptionCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class SortDescriptionCollection&#xA;Inherits Collection(Of SortDescription)&#xA;Implements INotifyCollectionChanged" />
+  <TypeSignature Language="F#" Value="type SortDescriptionCollection = class&#xA;    inherit Collection&lt;SortDescription&gt;&#xA;    interface INotifyCollectionChanged" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SortDescriptionCollection : System::Collections::ObjectModel::Collection&lt;System::ComponentModel::SortDescription&gt;, System::Collections::Specialized::INotifyCollectionChanged" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public SortDescriptionCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescriptionCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SortDescriptionCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="protected override void ClearItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescriptionCollection.ClearItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="sortDescriptionCollection.ClearItems " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -69,6 +77,9 @@
       <MemberSignature Language="C#" Value="protected event System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.SortDescriptionCollection.CollectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Event CollectionChanged As NotifyCollectionChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ CollectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -87,6 +98,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.SortDescriptionCollection Empty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.SortDescriptionCollection Empty" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.SortDescriptionCollection.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As SortDescriptionCollection " />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.ComponentModel.SortDescriptionCollection" Usage="System.ComponentModel.SortDescriptionCollection.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::SortDescriptionCollection ^ Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -104,6 +118,9 @@
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, System.ComponentModel.SortDescription item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, valuetype System.ComponentModel.SortDescription item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescriptionCollection.InsertItem(System.Int32,System.ComponentModel.SortDescription)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As SortDescription)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * System.ComponentModel.SortDescription -&gt; unit" Usage="sortDescriptionCollection.InsertItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, System::ComponentModel::SortDescription item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -136,6 +153,9 @@
       <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescriptionCollection.RemoveItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="sortDescriptionCollection.RemoveItem index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -166,6 +186,9 @@
       <MemberSignature Language="C#" Value="protected override void SetItem (int index, System.ComponentModel.SortDescription item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, valuetype System.ComponentModel.SortDescription item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SortDescriptionCollection.SetItem(System.Int32,System.ComponentModel.SortDescription)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As SortDescription)" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * System.ComponentModel.SortDescription -&gt; unit" Usage="sortDescriptionCollection.SetItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, System::ComponentModel::SortDescription item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="WebSocketMessageType" FullName="System.Net.WebSockets.WebSocketMessageType">
+﻿<Type Name="WebSocketMessageType" FullName="System.Net.WebSockets.WebSocketMessageType">
   <TypeSignature Language="C#" Value="public enum WebSocketMessageType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebSocketMessageType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.WebSocketMessageType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WebSocketMessageType" />
+  <TypeSignature Language="F#" Value="type WebSocketMessageType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class WebSocketMessageType" />
   <AssemblyInfo>
     <AssemblyName>System.Net.WebSockets</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="Binary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketMessageType Binary = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketMessageType.Binary" />
+      <MemberSignature Language="VB.NET" Value="Binary" />
+      <MemberSignature Language="F#" Value="Binary = 1" Usage="System.Net.WebSockets.WebSocketMessageType.Binary" />
+      <MemberSignature Language="C++ CLI" Value="Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketMessageType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The message is in binary format.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="Close" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketMessageType Close = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketMessageType.Close" />
+      <MemberSignature Language="VB.NET" Value="Close" />
+      <MemberSignature Language="F#" Value="Close = 2" Usage="System.Net.WebSockets.WebSocketMessageType.Close" />
+      <MemberSignature Language="C++ CLI" Value="Close" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketMessageType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A receive has completed because a close message was received.</summary>
       </Docs>
@@ -80,6 +91,9 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.WebSockets.WebSocketMessageType Text = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.WebSockets.WebSocketMessageType.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 0" Usage="System.Net.WebSockets.WebSocketMessageType.Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets</AssemblyName>
@@ -98,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Net.WebSockets.WebSocketMessageType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The message is clear text.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="PerformanceCounter" FullName="System.Diagnostics.PerformanceCounter">
+﻿<Type Name="PerformanceCounter" FullName="System.Diagnostics.PerformanceCounter">
   <TypeSignature Language="C#" Value="public sealed class PerformanceCounter : System.ComponentModel.Component, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PerformanceCounter extends System.ComponentModel.Component implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PerformanceCounter&#xA;Inherits Component&#xA;Implements ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type PerformanceCounter = class&#xA;    inherit Component&#xA;    interface ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PerformanceCounter sealed : System::ComponentModel::Component, System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,10 +81,22 @@
     <altmember cref="T:System.Diagnostics.CounterSampleCalculator" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceCounter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PerformanceCounter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +139,9 @@
       <MemberSignature Language="C#" Value="public PerformanceCounter (string categoryName, string counterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string categoryName, string counterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (categoryName As String, counterName As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounter : string * string -&gt; System.Diagnostics.PerformanceCounter" Usage="new System.Diagnostics.PerformanceCounter (categoryName, counterName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounter(System::String ^ categoryName, System::String ^ counterName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -192,6 +210,9 @@
       <MemberSignature Language="C#" Value="public PerformanceCounter (string categoryName, string counterName, bool readOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string categoryName, string counterName, bool readOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (categoryName As String, counterName As String, readOnly As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounter : string * string * bool -&gt; System.Diagnostics.PerformanceCounter" Usage="new System.Diagnostics.PerformanceCounter (categoryName, counterName, readOnly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounter(System::String ^ categoryName, System::String ^ counterName, bool readOnly);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -278,6 +299,9 @@
       <MemberSignature Language="C#" Value="public PerformanceCounter (string categoryName, string counterName, string instanceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string categoryName, string counterName, string instanceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (categoryName As String, counterName As String, instanceName As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounter : string * string * string -&gt; System.Diagnostics.PerformanceCounter" Usage="new System.Diagnostics.PerformanceCounter (categoryName, counterName, instanceName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounter(System::String ^ categoryName, System::String ^ counterName, System::String ^ instanceName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -354,6 +378,9 @@
       <MemberSignature Language="C#" Value="public PerformanceCounter (string categoryName, string counterName, string instanceName, bool readOnly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string categoryName, string counterName, string instanceName, bool readOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (categoryName As String, counterName As String, instanceName As String, readOnly As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounter : string * string * string * bool -&gt; System.Diagnostics.PerformanceCounter" Usage="new System.Diagnostics.PerformanceCounter (categoryName, counterName, instanceName, readOnly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounter(System::String ^ categoryName, System::String ^ counterName, System::String ^ instanceName, bool readOnly);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -444,6 +471,9 @@
       <MemberSignature Language="C#" Value="public PerformanceCounter (string categoryName, string counterName, string instanceName, string machineName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string categoryName, string counterName, string instanceName, string machineName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.#ctor(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (categoryName As String, counterName As String, instanceName As String, machineName As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.PerformanceCounter : string * string * string * string -&gt; System.Diagnostics.PerformanceCounter" Usage="new System.Diagnostics.PerformanceCounter (categoryName, counterName, instanceName, machineName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounter(System::String ^ categoryName, System::String ^ counterName, System::String ^ instanceName, System::String ^ machineName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -531,7 +561,13 @@
       <MemberSignature Language="C#" Value="public void BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.BeginInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="performanceCounter.BeginInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.BeginInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -560,6 +596,9 @@
       <MemberSignature Language="C#" Value="public string CategoryName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CategoryName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.CategoryName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CategoryName As String" />
+      <MemberSignature Language="F#" Value="member this.CategoryName : string with get, set" Usage="System.Diagnostics.PerformanceCounter.CategoryName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CategoryName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -621,6 +660,9 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="performanceCounter.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -650,6 +692,9 @@
       <MemberSignature Language="C#" Value="public static void CloseSharedResources ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CloseSharedResources() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.CloseSharedResources" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CloseSharedResources ()" />
+      <MemberSignature Language="F#" Value="static member CloseSharedResources : unit -&gt; unit" Usage="System.Diagnostics.PerformanceCounter.CloseSharedResources " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CloseSharedResources();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -673,6 +718,9 @@
       <MemberSignature Language="C#" Value="public string CounterHelp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CounterHelp" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.CounterHelp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CounterHelp As String" />
+      <MemberSignature Language="F#" Value="member this.CounterHelp : string" Usage="System.Diagnostics.PerformanceCounter.CounterHelp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CounterHelp { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -736,6 +784,9 @@
       <MemberSignature Language="C#" Value="public string CounterName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CounterName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.CounterName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CounterName As String" />
+      <MemberSignature Language="F#" Value="member this.CounterName : string with get, set" Usage="System.Diagnostics.PerformanceCounter.CounterName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CounterName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -790,6 +841,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.PerformanceCounterType CounterType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.PerformanceCounterType CounterType" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.CounterType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CounterType As PerformanceCounterType" />
+      <MemberSignature Language="F#" Value="member this.CounterType : System.Diagnostics.PerformanceCounterType" Usage="System.Diagnostics.PerformanceCounter.CounterType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::PerformanceCounterType CounterType { System::Diagnostics::PerformanceCounterType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -856,6 +910,9 @@
       <MemberSignature Language="C#" Value="public long Decrement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 Decrement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.Decrement" />
+      <MemberSignature Language="VB.NET" Value="Public Function Decrement () As Long" />
+      <MemberSignature Language="F#" Value="member this.Decrement : unit -&gt; int64" Usage="performanceCounter.Decrement " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long Decrement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -905,6 +962,9 @@
       <MemberSignature Language="C#" Value="public static int DefaultFileMappingSize;" />
       <MemberSignature Language="ILAsm" Value=".field public static int32 DefaultFileMappingSize" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.PerformanceCounter.DefaultFileMappingSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared DefaultFileMappingSize As Integer " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultFileMappingSize : int" Usage="System.Diagnostics.PerformanceCounter.DefaultFileMappingSize" />
+      <MemberSignature Language="C++ CLI" Value="public: static int DefaultFileMappingSize;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -931,6 +991,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="performanceCounter.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -952,7 +1015,13 @@
       <MemberSignature Language="C#" Value="public void EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.EndInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="performanceCounter.EndInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ComponentModel.ISupportInitialize.EndInit</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -982,6 +1051,9 @@
       <MemberSignature Language="C#" Value="public long Increment ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 Increment() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.Increment" />
+      <MemberSignature Language="VB.NET" Value="Public Function Increment () As Long" />
+      <MemberSignature Language="F#" Value="member this.Increment : unit -&gt; int64" Usage="performanceCounter.Increment " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long Increment();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1031,6 +1103,9 @@
       <MemberSignature Language="C#" Value="public long IncrementBy (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 IncrementBy(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.IncrementBy(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IncrementBy (value As Long) As Long" />
+      <MemberSignature Language="F#" Value="member this.IncrementBy : int64 -&gt; int64" Usage="performanceCounter.IncrementBy value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long IncrementBy(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1097,6 +1172,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.PerformanceCounterInstanceLifetime InstanceLifetime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.PerformanceCounterInstanceLifetime InstanceLifetime" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.InstanceLifetime" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceLifetime As PerformanceCounterInstanceLifetime" />
+      <MemberSignature Language="F#" Value="member this.InstanceLifetime : System.Diagnostics.PerformanceCounterInstanceLifetime with get, set" Usage="System.Diagnostics.PerformanceCounter.InstanceLifetime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::PerformanceCounterInstanceLifetime InstanceLifetime { System::Diagnostics::PerformanceCounterInstanceLifetime get(); void set(System::Diagnostics::PerformanceCounterInstanceLifetime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1140,6 +1218,9 @@
       <MemberSignature Language="C#" Value="public string InstanceName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InstanceName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.InstanceName" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceName As String" />
+      <MemberSignature Language="F#" Value="member this.InstanceName : string with get, set" Usage="System.Diagnostics.PerformanceCounter.InstanceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InstanceName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1217,6 +1298,9 @@
       <MemberSignature Language="C#" Value="public string MachineName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.MachineName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MachineName As String" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string with get, set" Usage="System.Diagnostics.PerformanceCounter.MachineName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1264,6 +1348,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.CounterSample NextSample ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Diagnostics.CounterSample NextSample() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.NextSample" />
+      <MemberSignature Language="VB.NET" Value="Public Function NextSample () As CounterSample" />
+      <MemberSignature Language="F#" Value="member this.NextSample : unit -&gt; System.Diagnostics.CounterSample" Usage="performanceCounter.NextSample " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::CounterSample NextSample();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1322,6 +1409,9 @@
       <MemberSignature Language="C#" Value="public float NextValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 NextValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.NextValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function NextValue () As Single" />
+      <MemberSignature Language="F#" Value="member this.NextValue : unit -&gt; single" Usage="performanceCounter.NextValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; float NextValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1371,6 +1461,9 @@
       <MemberSignature Language="C#" Value="public long RawValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 RawValue" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.RawValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property RawValue As Long" />
+      <MemberSignature Language="F#" Value="member this.RawValue : int64 with get, set" Usage="System.Diagnostics.PerformanceCounter.RawValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long RawValue { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1450,6 +1543,9 @@
       <MemberSignature Language="C#" Value="public bool ReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceCounter.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool with get, set" Usage="System.Diagnostics.PerformanceCounter.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1491,6 +1587,9 @@
       <MemberSignature Language="C#" Value="public void RemoveInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounter.RemoveInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveInstance ()" />
+      <MemberSignature Language="F#" Value="member this.RemoveInstance : unit -&gt; unit" Usage="performanceCounter.RemoveInstance " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1544,15 +1643,5 @@
         <permission cref="T:System.Diagnostics.PerformanceCounterPermission">for writing the performance counter category. Associated enumeration: <see cref="F:System.Diagnostics.PerformanceCounterPermissionAccess.Write" />.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.PerformanceCounter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

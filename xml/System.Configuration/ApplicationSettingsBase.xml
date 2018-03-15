@@ -1,7 +1,10 @@
-<Type Name="ApplicationSettingsBase" FullName="System.Configuration.ApplicationSettingsBase">
+﻿<Type Name="ApplicationSettingsBase" FullName="System.Configuration.ApplicationSettingsBase">
   <TypeSignature Language="C#" Value="public abstract class ApplicationSettingsBase : System.Configuration.SettingsBase, System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ApplicationSettingsBase extends System.Configuration.SettingsBase implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.ApplicationSettingsBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ApplicationSettingsBase&#xA;Inherits SettingsBase&#xA;Implements INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type ApplicationSettingsBase = class&#xA;    inherit SettingsBase&#xA;    interface INotifyPropertyChanged" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationSettingsBase abstract : System::Configuration::SettingsBase, System::ComponentModel::INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -82,10 +85,21 @@
     <altmember cref="T:System.Configuration.SettingsProviderAttribute" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Configuration.ApplicationSettingsBase" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ApplicationSettingsBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ApplicationSettingsBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -129,6 +143,9 @@
       <MemberSignature Language="C#" Value="protected ApplicationSettingsBase (System.ComponentModel.IComponent owner);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IComponent owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.#ctor(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (owner As IComponent)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ApplicationSettingsBase : System.ComponentModel.IComponent -&gt; System.Configuration.ApplicationSettingsBase" Usage="new System.Configuration.ApplicationSettingsBase owner" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ApplicationSettingsBase(System::ComponentModel::IComponent ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -166,6 +183,9 @@
       <MemberSignature Language="C#" Value="protected ApplicationSettingsBase (string settingsKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string settingsKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (settingsKey As String)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ApplicationSettingsBase : string -&gt; System.Configuration.ApplicationSettingsBase" Usage="new System.Configuration.ApplicationSettingsBase settingsKey" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ApplicationSettingsBase(System::String ^ settingsKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -198,6 +218,9 @@
       <MemberSignature Language="C#" Value="protected ApplicationSettingsBase (System.ComponentModel.IComponent owner, string settingsKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IComponent owner, string settingsKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.#ctor(System.ComponentModel.IComponent,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (owner As IComponent, settingsKey As String)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.ApplicationSettingsBase : System.ComponentModel.IComponent * string -&gt; System.Configuration.ApplicationSettingsBase" Usage="new System.Configuration.ApplicationSettingsBase (owner, settingsKey)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ApplicationSettingsBase(System::ComponentModel::IComponent ^ owner, System::String ^ settingsKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -238,6 +261,9 @@
       <MemberSignature Language="C#" Value="public override System.Configuration.SettingsContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ApplicationSettingsBase.Context" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Context As SettingsContext" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Configuration.SettingsContext" Usage="System.Configuration.ApplicationSettingsBase.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::SettingsContext ^ Context { System::Configuration::SettingsContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -279,6 +305,9 @@
       <MemberSignature Language="C#" Value="public object GetPreviousVersion (string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetPreviousVersion(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.GetPreviousVersion(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPreviousVersion (propertyName As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetPreviousVersion : string -&gt; obj" Usage="applicationSettingsBase.GetPreviousVersion propertyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetPreviousVersion(System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -319,6 +348,9 @@
       <MemberSignature Language="C#" Value="public override object this[string propertyName] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ApplicationSettingsBase.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overrides Property Item(propertyName As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Configuration.ApplicationSettingsBase.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ propertyName); void set(System::String ^ propertyName, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -369,6 +401,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (object sender, System.ComponentModel.PropertyChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(object sender, class System.ComponentModel.PropertyChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.OnPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (sender As Object, e As PropertyChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : obj * System.ComponentModel.PropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : obj * System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="applicationSettingsBase.OnPropertyChanged (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanged(System::Object ^ sender, System::ComponentModel::PropertyChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -409,6 +444,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSettingChanging (object sender, System.Configuration.SettingChangingEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSettingChanging(object sender, class System.Configuration.SettingChangingEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.OnSettingChanging(System.Object,System.Configuration.SettingChangingEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSettingChanging (sender As Object, e As SettingChangingEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSettingChanging : obj * System.Configuration.SettingChangingEventArgs -&gt; unit&#xA;override this.OnSettingChanging : obj * System.Configuration.SettingChangingEventArgs -&gt; unit" Usage="applicationSettingsBase.OnSettingChanging (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSettingChanging(System::Object ^ sender, System::Configuration::SettingChangingEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -451,6 +489,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSettingsLoaded (object sender, System.Configuration.SettingsLoadedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSettingsLoaded(object sender, class System.Configuration.SettingsLoadedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.OnSettingsLoaded(System.Object,System.Configuration.SettingsLoadedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSettingsLoaded (sender As Object, e As SettingsLoadedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSettingsLoaded : obj * System.Configuration.SettingsLoadedEventArgs -&gt; unit&#xA;override this.OnSettingsLoaded : obj * System.Configuration.SettingsLoadedEventArgs -&gt; unit" Usage="applicationSettingsBase.OnSettingsLoaded (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSettingsLoaded(System::Object ^ sender, System::Configuration::SettingsLoadedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -493,6 +534,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSettingsSaving (object sender, System.ComponentModel.CancelEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSettingsSaving(object sender, class System.ComponentModel.CancelEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.OnSettingsSaving(System.Object,System.ComponentModel.CancelEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSettingsSaving (sender As Object, e As CancelEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSettingsSaving : obj * System.ComponentModel.CancelEventArgs -&gt; unit&#xA;override this.OnSettingsSaving : obj * System.ComponentModel.CancelEventArgs -&gt; unit" Usage="applicationSettingsBase.OnSettingsSaving (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSettingsSaving(System::Object ^ sender, System::ComponentModel::CancelEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -535,6 +579,9 @@
       <MemberSignature Language="C#" Value="public override System.Configuration.SettingsPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ApplicationSettingsBase.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Properties As SettingsPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.SettingsPropertyCollection" Usage="System.Configuration.ApplicationSettingsBase.Properties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::SettingsPropertyCollection ^ Properties { System::Configuration::SettingsPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -577,7 +624,13 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
       <MemberSignature Language="DocId" Value="E:System.Configuration.ApplicationSettingsBase.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PropertyChanged As PropertyChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -613,6 +666,9 @@
       <MemberSignature Language="C#" Value="public override System.Configuration.SettingsPropertyValueCollection PropertyValues { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsPropertyValueCollection PropertyValues" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ApplicationSettingsBase.PropertyValues" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PropertyValues As SettingsPropertyValueCollection" />
+      <MemberSignature Language="F#" Value="member this.PropertyValues : System.Configuration.SettingsPropertyValueCollection" Usage="System.Configuration.ApplicationSettingsBase.PropertyValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::SettingsPropertyValueCollection ^ PropertyValues { System::Configuration::SettingsPropertyValueCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -640,6 +696,9 @@
       <MemberSignature Language="C#" Value="public override System.Configuration.SettingsProviderCollection Providers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SettingsProviderCollection Providers" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ApplicationSettingsBase.Providers" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Providers As SettingsProviderCollection" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Configuration.SettingsProviderCollection" Usage="System.Configuration.ApplicationSettingsBase.Providers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::SettingsProviderCollection ^ Providers { System::Configuration::SettingsProviderCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -677,6 +736,9 @@
       <MemberSignature Language="C#" Value="public void Reload ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reload() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.Reload" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reload ()" />
+      <MemberSignature Language="F#" Value="member this.Reload : unit -&gt; unit" Usage="applicationSettingsBase.Reload " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reload();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -728,6 +790,9 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="applicationSettingsBase.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -776,6 +841,9 @@
       <MemberSignature Language="C#" Value="public override void Save ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Save() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.Save" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Save ()" />
+      <MemberSignature Language="F#" Value="override this.Save : unit -&gt; unit" Usage="applicationSettingsBase.Save " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Save();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -828,6 +896,9 @@
       <MemberSignature Language="C#" Value="public event System.Configuration.SettingChangingEventHandler SettingChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Configuration.SettingChangingEventHandler SettingChanging" />
       <MemberSignature Language="DocId" Value="E:System.Configuration.ApplicationSettingsBase.SettingChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SettingChanging As SettingChangingEventHandler " />
+      <MemberSignature Language="F#" Value="member this.SettingChanging : System.Configuration.SettingChangingEventHandler " Usage="member this.SettingChanging : System.Configuration.SettingChangingEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Configuration::SettingChangingEventHandler ^ SettingChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -873,6 +944,9 @@
       <MemberSignature Language="C#" Value="public string SettingsKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SettingsKey" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.ApplicationSettingsBase.SettingsKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property SettingsKey As String" />
+      <MemberSignature Language="F#" Value="member this.SettingsKey : string with get, set" Usage="System.Configuration.ApplicationSettingsBase.SettingsKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SettingsKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -919,6 +993,9 @@
       <MemberSignature Language="C#" Value="public event System.Configuration.SettingsLoadedEventHandler SettingsLoaded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Configuration.SettingsLoadedEventHandler SettingsLoaded" />
       <MemberSignature Language="DocId" Value="E:System.Configuration.ApplicationSettingsBase.SettingsLoaded" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SettingsLoaded As SettingsLoadedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.SettingsLoaded : System.Configuration.SettingsLoadedEventHandler " Usage="member this.SettingsLoaded : System.Configuration.SettingsLoadedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Configuration::SettingsLoadedEventHandler ^ SettingsLoaded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -952,6 +1029,9 @@
       <MemberSignature Language="C#" Value="public event System.Configuration.SettingsSavingEventHandler SettingsSaving;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Configuration.SettingsSavingEventHandler SettingsSaving" />
       <MemberSignature Language="DocId" Value="E:System.Configuration.ApplicationSettingsBase.SettingsSaving" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SettingsSaving As SettingsSavingEventHandler " />
+      <MemberSignature Language="F#" Value="member this.SettingsSaving : System.Configuration.SettingsSavingEventHandler " Usage="member this.SettingsSaving : System.Configuration.SettingsSavingEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Configuration::SettingsSavingEventHandler ^ SettingsSaving;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -991,6 +1071,9 @@
       <MemberSignature Language="C#" Value="public virtual void Upgrade ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Upgrade() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.ApplicationSettingsBase.Upgrade" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Upgrade ()" />
+      <MemberSignature Language="F#" Value="abstract member Upgrade : unit -&gt; unit&#xA;override this.Upgrade : unit -&gt; unit" Usage="applicationSettingsBase.Upgrade " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Upgrade();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1032,14 +1115,5 @@
         <altmember cref="M:System.Configuration.IApplicationSettingsProvider.Upgrade(System.Configuration.SettingsContext,System.Configuration.SettingsPropertyCollection)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes an instance of the <see cref="T:System.Configuration.ApplicationSettingsBase" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

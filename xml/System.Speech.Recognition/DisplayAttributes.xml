@@ -1,7 +1,10 @@
-<Type Name="DisplayAttributes" FullName="System.Speech.Recognition.DisplayAttributes">
+﻿<Type Name="DisplayAttributes" FullName="System.Speech.Recognition.DisplayAttributes">
   <TypeSignature Language="C#" Value="public enum DisplayAttributes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DisplayAttributes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.DisplayAttributes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DisplayAttributes" />
+  <TypeSignature Language="F#" Value="type DisplayAttributes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DisplayAttributes" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -94,6 +97,9 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
       <MemberSignature Language="C#" Value="ConsumeLeadingSpaces" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.DisplayAttributes ConsumeLeadingSpaces = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.DisplayAttributes.ConsumeLeadingSpaces" />
+      <MemberSignature Language="VB.NET" Value="ConsumeLeadingSpaces" />
+      <MemberSignature Language="F#" Value="ConsumeLeadingSpaces = 16" Usage="System.Speech.Recognition.DisplayAttributes.ConsumeLeadingSpaces" />
+      <MemberSignature Language="C++ CLI" Value="ConsumeLeadingSpaces" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -102,6 +108,7 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.DisplayAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The item has no spaces preceding it.</summary>
       </Docs>
@@ -110,6 +117,9 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.DisplayAttributes None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.DisplayAttributes.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Speech.Recognition.DisplayAttributes.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -118,6 +128,7 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.DisplayAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The item does not specify how white space is handled.</summary>
       </Docs>
@@ -126,6 +137,9 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
       <MemberSignature Language="C#" Value="OneTrailingSpace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.DisplayAttributes OneTrailingSpace = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.DisplayAttributes.OneTrailingSpace" />
+      <MemberSignature Language="VB.NET" Value="OneTrailingSpace" />
+      <MemberSignature Language="F#" Value="OneTrailingSpace = 4" Usage="System.Speech.Recognition.DisplayAttributes.OneTrailingSpace" />
+      <MemberSignature Language="C++ CLI" Value="OneTrailingSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -134,6 +148,7 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.DisplayAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The item has one space following it.</summary>
       </Docs>
@@ -142,6 +157,9 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
       <MemberSignature Language="C#" Value="TwoTrailingSpaces" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.DisplayAttributes TwoTrailingSpaces = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.DisplayAttributes.TwoTrailingSpaces" />
+      <MemberSignature Language="VB.NET" Value="TwoTrailingSpaces" />
+      <MemberSignature Language="F#" Value="TwoTrailingSpaces = 8" Usage="System.Speech.Recognition.DisplayAttributes.TwoTrailingSpaces" />
+      <MemberSignature Language="C++ CLI" Value="TwoTrailingSpaces" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -150,6 +168,7 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.DisplayAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The item has two spaces following it.</summary>
       </Docs>
@@ -158,6 +177,9 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
       <MemberSignature Language="C#" Value="ZeroTrailingSpaces" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Recognition.DisplayAttributes ZeroTrailingSpaces = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Recognition.DisplayAttributes.ZeroTrailingSpaces" />
+      <MemberSignature Language="VB.NET" Value="ZeroTrailingSpaces" />
+      <MemberSignature Language="F#" Value="ZeroTrailingSpaces = 2" Usage="System.Speech.Recognition.DisplayAttributes.ZeroTrailingSpaces" />
+      <MemberSignature Language="C++ CLI" Value="ZeroTrailingSpaces" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -166,6 +188,7 @@ static string GetDisplayText(List<RecognizedWordUnit> words)
       <ReturnValue>
         <ReturnType>System.Speech.Recognition.DisplayAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The item has no spaces following it.</summary>
       </Docs>

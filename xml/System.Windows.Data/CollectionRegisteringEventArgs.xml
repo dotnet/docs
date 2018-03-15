@@ -1,7 +1,10 @@
-<Type Name="CollectionRegisteringEventArgs" FullName="System.Windows.Data.CollectionRegisteringEventArgs">
+﻿<Type Name="CollectionRegisteringEventArgs" FullName="System.Windows.Data.CollectionRegisteringEventArgs">
   <TypeSignature Language="C#" Value="public class CollectionRegisteringEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectionRegisteringEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.CollectionRegisteringEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class CollectionRegisteringEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type CollectionRegisteringEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CollectionRegisteringEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable Collection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable Collection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionRegisteringEventArgs.Collection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Collection As IEnumerable" />
+      <MemberSignature Language="F#" Value="member this.Collection : System.Collections.IEnumerable" Usage="System.Windows.Data.CollectionRegisteringEventArgs.Collection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ Collection { System::Collections::IEnumerable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public object Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.CollectionRegisteringEventArgs.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="F#" Value="member this.Parent : obj" Usage="System.Windows.Data.CollectionRegisteringEventArgs.Parent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

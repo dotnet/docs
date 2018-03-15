@@ -1,7 +1,10 @@
-<Type Name="IProjectSchemaNode" FullName="Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode">
+﻿<Type Name="IProjectSchemaNode" FullName="Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode">
   <TypeSignature Language="C#" Value="public interface IProjectSchemaNode" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProjectSchemaNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IProjectSchemaNode" />
+  <TypeSignature Language="F#" Value="type IProjectSchemaNode = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IProjectSchemaNode" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +19,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;object&gt; GetSchemaObjects (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; GetSchemaObjects(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode.GetSchemaObjects(System.Type)" />
+      <MemberSignature Language="F#" Value="abstract member GetSchemaObjects : Type -&gt; seq&lt;obj&gt;" Usage="iProjectSchemaNode.GetSchemaObjects type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ GetSchemaObjects(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -38,6 +43,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Type&gt; GetSchemaObjectTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; GetSchemaObjectTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode.GetSchemaObjectTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSchemaObjectTypes () As IEnumerable(Of Type)" />
+      <MemberSignature Language="F#" Value="abstract member GetSchemaObjectTypes : unit -&gt; seq&lt;Type&gt;" Usage="iProjectSchemaNode.GetSchemaObjectTypes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ GetSchemaObjectTypes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

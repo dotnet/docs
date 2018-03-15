@@ -1,7 +1,10 @@
-<Type Name="JScriptException" FullName="Microsoft.JScript.JScriptException">
+﻿<Type Name="JScriptException" FullName="Microsoft.JScript.JScriptException">
   <TypeSignature Language="C#" Value="public class JScriptException : ApplicationException, Microsoft.JScript.IVsaFullErrorInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit JScriptException extends System.ApplicationException implements class Microsoft.JScript.IVsaFullErrorInfo, class Microsoft.JScript.Vsa.IJSVsaError" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JScriptException" />
+  <TypeSignature Language="VB.NET" Value="Public Class JScriptException&#xA;Inherits ApplicationException&#xA;Implements IVsaFullErrorInfo" />
+  <TypeSignature Language="F#" Value="type JScriptException = class&#xA;    inherit ApplicationException&#xA;    interface IVsaFullErrorInfo&#xA;    interface IJSVsaError" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JScriptException : ApplicationException, Microsoft::JScript::IVsaFullErrorInfo" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -29,10 +32,25 @@
     <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class.</summary>
+        <altmember cref="T:System.ApplicationException" />
+        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
+        <altmember cref="T:Microsoft.Vsa.IVsaError" />
+        <altmember cref="T:Microsoft.JScript.JSError" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public JScriptException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JScriptException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JScriptException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -53,6 +71,9 @@
       <MemberSignature Language="C#" Value="public JScriptException (Microsoft.JScript.JSError errorNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.JScript.JSError errorNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JScriptException.#ctor(Microsoft.JScript.JSError)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (errorNumber As JSError)" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.JScriptException : Microsoft.JScript.JSError -&gt; Microsoft.JScript.JScriptException" Usage="new Microsoft.JScript.JScriptException errorNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JScriptException(Microsoft::JScript::JSError errorNumber);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -75,6 +96,9 @@
       <MemberSignature Language="C#" Value="public JScriptException (string m);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string m) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JScriptException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (m As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.JScriptException : string -&gt; Microsoft.JScript.JScriptException" Usage="new Microsoft.JScript.JScriptException m" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JScriptException(System::String ^ m);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -98,6 +122,9 @@
       <MemberSignature Language="C#" Value="protected JScriptException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JScriptException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.JScriptException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; Microsoft.JScript.JScriptException" Usage="new Microsoft.JScript.JScriptException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; JScriptException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -123,6 +150,9 @@
       <MemberSignature Language="C#" Value="public JScriptException (string m, Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string m, class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JScriptException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (m As String, e As Exception)" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.JScriptException : string * Exception -&gt; Microsoft.JScript.JScriptException" Usage="new Microsoft.JScript.JScriptException (m, e)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JScriptException(System::String ^ m, Exception ^ e);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -148,6 +178,9 @@
       <MemberSignature Language="C#" Value="public int Column { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Column" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.Column" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As Integer" />
+      <MemberSignature Language="F#" Value="member this.Column : int" Usage="Microsoft.JScript.JScriptException.Column" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Column { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -171,7 +204,13 @@
       <MemberSignature Language="C#" Value="public string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="Microsoft.JScript.JScriptException.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.JScript.Vsa.IJSVsaError.Description</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -194,7 +233,13 @@
       <MemberSignature Language="C#" Value="public int EndColumn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EndColumn" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.EndColumn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndColumn As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndColumn : int" Usage="Microsoft.JScript.JScriptException.EndColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndColumn { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.JScript.Vsa.IJSVsaError.EndColumn</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -217,7 +262,13 @@
       <MemberSignature Language="C#" Value="public int EndLine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EndLine" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.EndLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndLine As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndLine : int" Usage="Microsoft.JScript.JScriptException.EndLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndLine { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.JScript.IVsaFullErrorInfo.EndLine</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -240,6 +291,9 @@
       <MemberSignature Language="C#" Value="public int ErrorNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ErrorNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.ErrorNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.ErrorNumber : int" Usage="Microsoft.JScript.JScriptException.ErrorNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ErrorNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -263,6 +317,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JScriptException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="jScriptException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -296,7 +353,13 @@
       <MemberSignature Language="C#" Value="public int Line { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Line" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.Line" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Line As Integer" />
+      <MemberSignature Language="F#" Value="member this.Line : int" Usage="Microsoft.JScript.JScriptException.Line" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Line { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.JScript.Vsa.IJSVsaError.Line</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -319,7 +382,13 @@
       <MemberSignature Language="C#" Value="public string LineText { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LineText" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.LineText" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineText As String" />
+      <MemberSignature Language="F#" Value="member this.LineText : string" Usage="Microsoft.JScript.JScriptException.LineText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LineText { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.JScript.Vsa.IJSVsaError.LineText</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -342,6 +411,9 @@
       <MemberSignature Language="C#" Value="public override string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="Microsoft.JScript.JScriptException.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -365,7 +437,13 @@
       <MemberSignature Language="C#" Value="string Microsoft.JScript.Vsa.IJSVsaError.Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Microsoft.JScript.Vsa.IJSVsaError.Description" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.Microsoft#JScript#Vsa#IJSVsaError#Description" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Description As String Implements IJSVsaError.Description" />
+      <MemberSignature Language="F#" Usage="Microsoft.JScript.JScriptException.Microsoft.JScript.Vsa.IJSVsaError.Description" />
+      <MemberSignature Language="C++ CLI" Value="property System::String ^ Microsoft.JScript.Vsa.IJSVsaError.Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.JScript.Vsa.IJSVsaError.Description</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -387,7 +465,13 @@
       <MemberSignature Language="C#" Value="int Microsoft.JScript.Vsa.IJSVsaError.Number { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Microsoft.JScript.Vsa.IJSVsaError.Number" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.Microsoft#JScript#Vsa#IJSVsaError#Number" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Number As Integer Implements IJSVsaError.Number" />
+      <MemberSignature Language="F#" Usage="Microsoft.JScript.JScriptException.Microsoft.JScript.Vsa.IJSVsaError.Number" />
+      <MemberSignature Language="C++ CLI" Value="property int Microsoft.JScript.Vsa.IJSVsaError.Number { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.JScript.Vsa.IJSVsaError.Number</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -409,7 +493,13 @@
       <MemberSignature Language="C#" Value="public int Number { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Number" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.Number" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Number As Integer" />
+      <MemberSignature Language="F#" Value="member this.Number : int" Usage="Microsoft.JScript.JScriptException.Number" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Number { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.JScript.Vsa.IJSVsaError.Number</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -432,7 +522,13 @@
       <MemberSignature Language="C#" Value="public int Severity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Severity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.Severity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Severity As Integer" />
+      <MemberSignature Language="F#" Value="member this.Severity : int" Usage="Microsoft.JScript.JScriptException.Severity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Severity { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.JScript.Vsa.IJSVsaError.Severity</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -455,7 +551,13 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.Vsa.IJSVsaItem SourceItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.JScript.Vsa.IJSVsaItem SourceItem" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.SourceItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceItem As IJSVsaItem" />
+      <MemberSignature Language="F#" Value="member this.SourceItem : Microsoft.JScript.Vsa.IJSVsaItem" Usage="Microsoft.JScript.JScriptException.SourceItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::JScript::Vsa::IJSVsaItem ^ SourceItem { Microsoft::JScript::Vsa::IJSVsaItem ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.JScript.Vsa.IJSVsaError.SourceItem</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -478,7 +580,13 @@
       <MemberSignature Language="C#" Value="public string SourceMoniker { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceMoniker" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.SourceMoniker" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceMoniker As String" />
+      <MemberSignature Language="F#" Value="member this.SourceMoniker : string" Usage="Microsoft.JScript.JScriptException.SourceMoniker" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceMoniker { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.JScript.Vsa.IJSVsaError.SourceMoniker</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -501,6 +609,9 @@
       <MemberSignature Language="C#" Value="public override string StackTrace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StackTrace" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.StackTrace" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property StackTrace As String" />
+      <MemberSignature Language="F#" Value="member this.StackTrace : string" Usage="Microsoft.JScript.JScriptException.StackTrace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StackTrace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -525,7 +636,13 @@
       <MemberSignature Language="C#" Value="public int StartColumn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartColumn" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JScriptException.StartColumn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartColumn As Integer" />
+      <MemberSignature Language="F#" Value="member this.StartColumn : int" Usage="Microsoft.JScript.JScriptException.StartColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartColumn { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.JScript.Vsa.IJSVsaError.StartColumn</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -544,18 +661,5 @@
         <altmember cref="T:Microsoft.JScript.JSError" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JScriptException" /> class.</summary>
-        <altmember cref="T:System.ApplicationException" />
-        <altmember cref="T:Microsoft.JScript.IVsaFullErrorInfo" />
-        <altmember cref="T:Microsoft.Vsa.IVsaError" />
-        <altmember cref="T:Microsoft.JScript.JSError" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

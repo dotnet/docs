@@ -1,7 +1,10 @@
-<Type Name="EntityTemplateFactory" FullName="System.Web.DynamicData.EntityTemplateFactory">
+﻿<Type Name="EntityTemplateFactory" FullName="System.Web.DynamicData.EntityTemplateFactory">
   <TypeSignature Language="C#" Value="public class EntityTemplateFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityTemplateFactory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.EntityTemplateFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityTemplateFactory" />
+  <TypeSignature Language="F#" Value="type EntityTemplateFactory = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityTemplateFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="public EntityTemplateFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.EntityTemplateFactory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityTemplateFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -50,6 +55,9 @@
       <MemberSignature Language="C#" Value="public virtual string BuildEntityTemplateVirtualPath (string templateName, System.Web.UI.WebControls.DataBoundControlMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string BuildEntityTemplateVirtualPath(string templateName, valuetype System.Web.UI.WebControls.DataBoundControlMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.EntityTemplateFactory.BuildEntityTemplateVirtualPath(System.String,System.Web.UI.WebControls.DataBoundControlMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BuildEntityTemplateVirtualPath (templateName As String, mode As DataBoundControlMode) As String" />
+      <MemberSignature Language="F#" Value="abstract member BuildEntityTemplateVirtualPath : string * System.Web.UI.WebControls.DataBoundControlMode -&gt; string&#xA;override this.BuildEntityTemplateVirtualPath : string * System.Web.UI.WebControls.DataBoundControlMode -&gt; string" Usage="entityTemplateFactory.BuildEntityTemplateVirtualPath (templateName, mode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ BuildEntityTemplateVirtualPath(System::String ^ templateName, System::Web::UI::WebControls::DataBoundControlMode mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -75,6 +83,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.DynamicData.EntityTemplateUserControl CreateEntityTemplate (System.Web.DynamicData.MetaTable table, System.Web.UI.WebControls.DataBoundControlMode mode, string uiHint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.DynamicData.EntityTemplateUserControl CreateEntityTemplate(class System.Web.DynamicData.MetaTable table, valuetype System.Web.UI.WebControls.DataBoundControlMode mode, string uiHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.EntityTemplateFactory.CreateEntityTemplate(System.Web.DynamicData.MetaTable,System.Web.UI.WebControls.DataBoundControlMode,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateEntityTemplate (table As MetaTable, mode As DataBoundControlMode, uiHint As String) As EntityTemplateUserControl" />
+      <MemberSignature Language="F#" Value="abstract member CreateEntityTemplate : System.Web.DynamicData.MetaTable * System.Web.UI.WebControls.DataBoundControlMode * string -&gt; System.Web.DynamicData.EntityTemplateUserControl&#xA;override this.CreateEntityTemplate : System.Web.DynamicData.MetaTable * System.Web.UI.WebControls.DataBoundControlMode * string -&gt; System.Web.DynamicData.EntityTemplateUserControl" Usage="entityTemplateFactory.CreateEntityTemplate (table, mode, uiHint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::DynamicData::EntityTemplateUserControl ^ CreateEntityTemplate(System::Web::DynamicData::MetaTable ^ table, System::Web::UI::WebControls::DataBoundControlMode mode, System::String ^ uiHint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -102,6 +113,9 @@
       <MemberSignature Language="C#" Value="public virtual string GetEntityTemplateVirtualPath (System.Web.DynamicData.MetaTable table, System.Web.UI.WebControls.DataBoundControlMode mode, string uiHint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetEntityTemplateVirtualPath(class System.Web.DynamicData.MetaTable table, valuetype System.Web.UI.WebControls.DataBoundControlMode mode, string uiHint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.EntityTemplateFactory.GetEntityTemplateVirtualPath(System.Web.DynamicData.MetaTable,System.Web.UI.WebControls.DataBoundControlMode,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEntityTemplateVirtualPath (table As MetaTable, mode As DataBoundControlMode, uiHint As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetEntityTemplateVirtualPath : System.Web.DynamicData.MetaTable * System.Web.UI.WebControls.DataBoundControlMode * string -&gt; string&#xA;override this.GetEntityTemplateVirtualPath : System.Web.DynamicData.MetaTable * System.Web.UI.WebControls.DataBoundControlMode * string -&gt; string" Usage="entityTemplateFactory.GetEntityTemplateVirtualPath (table, mode, uiHint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetEntityTemplateVirtualPath(System::Web::DynamicData::MetaTable ^ table, System::Web::UI::WebControls::DataBoundControlMode mode, System::String ^ uiHint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

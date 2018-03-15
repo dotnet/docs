@@ -1,7 +1,10 @@
-<Type Name="CryptographicUnexpectedOperationException" FullName="System.Security.Cryptography.CryptographicUnexpectedOperationException">
+﻿<Type Name="CryptographicUnexpectedOperationException" FullName="System.Security.Cryptography.CryptographicUnexpectedOperationException">
   <TypeSignature Language="C#" Value="public class CryptographicUnexpectedOperationException : System.Security.Cryptography.CryptographicException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CryptographicUnexpectedOperationException extends System.Security.Cryptography.CryptographicException" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CryptographicUnexpectedOperationException" />
+  <TypeSignature Language="VB.NET" Value="Public Class CryptographicUnexpectedOperationException&#xA;Inherits CryptographicException" />
+  <TypeSignature Language="F#" Value="type CryptographicUnexpectedOperationException = class&#xA;    inherit CryptographicException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CryptographicUnexpectedOperationException : System::Security::Cryptography::CryptographicException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,10 +50,22 @@
     <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CryptographicUnexpectedOperationException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicUnexpectedOperationException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicUnexpectedOperationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -95,6 +110,9 @@
       <MemberSignature Language="C#" Value="public CryptographicUnexpectedOperationException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicUnexpectedOperationException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicUnexpectedOperationException : string -&gt; System.Security.Cryptography.CryptographicUnexpectedOperationException" Usage="new System.Security.Cryptography.CryptographicUnexpectedOperationException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicUnexpectedOperationException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -142,6 +160,9 @@
       <MemberSignature Language="C#" Value="protected CryptographicUnexpectedOperationException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicUnexpectedOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicUnexpectedOperationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Security.Cryptography.CryptographicUnexpectedOperationException" Usage="new System.Security.Cryptography.CryptographicUnexpectedOperationException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CryptographicUnexpectedOperationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -178,6 +199,9 @@
       <MemberSignature Language="C#" Value="public CryptographicUnexpectedOperationException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicUnexpectedOperationException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicUnexpectedOperationException : string * Exception -&gt; System.Security.Cryptography.CryptographicUnexpectedOperationException" Usage="new System.Security.Cryptography.CryptographicUnexpectedOperationException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicUnexpectedOperationException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -230,6 +254,9 @@
       <MemberSignature Language="C#" Value="public CryptographicUnexpectedOperationException (string format, string insert);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string format, string insert) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptographicUnexpectedOperationException.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (format As String, insert As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptographicUnexpectedOperationException : string * string -&gt; System.Security.Cryptography.CryptographicUnexpectedOperationException" Usage="new System.Security.Cryptography.CryptographicUnexpectedOperationException (format, insert)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptographicUnexpectedOperationException(System::String ^ format, System::String ^ insert);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -275,15 +302,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

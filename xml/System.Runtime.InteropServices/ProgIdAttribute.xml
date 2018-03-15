@@ -1,7 +1,10 @@
-<Type Name="ProgIdAttribute" FullName="System.Runtime.InteropServices.ProgIdAttribute">
+﻿<Type Name="ProgIdAttribute" FullName="System.Runtime.InteropServices.ProgIdAttribute">
   <TypeSignature Language="C#" Value="public sealed class ProgIdAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProgIdAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ProgIdAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProgIdAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ProgIdAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProgIdAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +57,9 @@
       <MemberSignature Language="C#" Value="public ProgIdAttribute (string progId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string progId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ProgIdAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (progId As String)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ProgIdAttribute : string -&gt; System.Runtime.InteropServices.ProgIdAttribute" Usage="new System.Runtime.InteropServices.ProgIdAttribute progId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProgIdAttribute(System::String ^ progId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -81,6 +87,9 @@
       <MemberSignature Language="C#" Value="public string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ProgIdAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Runtime.InteropServices.ProgIdAttribute.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

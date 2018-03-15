@@ -1,7 +1,10 @@
-<Type Name="ActivityDesignerThemeAttribute" FullName="System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute">
+﻿<Type Name="ActivityDesignerThemeAttribute" FullName="System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute">
   <TypeSignature Language="C#" Value="public sealed class ActivityDesignerThemeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityDesignerThemeAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityDesignerThemeAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ActivityDesignerThemeAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityDesignerThemeAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="public ActivityDesignerThemeAttribute (Type designerThemeType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type designerThemeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (designerThemeType As Type)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute : Type -&gt; System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute" Usage="new System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute designerThemeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityDesignerThemeAttribute(Type ^ designerThemeType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -56,6 +62,9 @@
       <MemberSignature Language="C#" Value="public Type DesignerThemeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DesignerThemeType" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute.DesignerThemeType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesignerThemeType As Type" />
+      <MemberSignature Language="F#" Value="member this.DesignerThemeType : Type" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute.DesignerThemeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DesignerThemeType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -74,6 +83,9 @@
       <MemberSignature Language="C#" Value="public string Xml { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Xml" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute.Xml" />
+      <MemberSignature Language="VB.NET" Value="Public Property Xml As String" />
+      <MemberSignature Language="F#" Value="member this.Xml : string with get, set" Usage="System.Workflow.ComponentModel.Design.ActivityDesignerThemeAttribute.Xml" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Xml { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

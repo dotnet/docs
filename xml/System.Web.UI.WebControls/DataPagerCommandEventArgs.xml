@@ -1,7 +1,10 @@
-<Type Name="DataPagerCommandEventArgs" FullName="System.Web.UI.WebControls.DataPagerCommandEventArgs">
+﻿<Type Name="DataPagerCommandEventArgs" FullName="System.Web.UI.WebControls.DataPagerCommandEventArgs">
   <TypeSignature Language="C#" Value="public class DataPagerCommandEventArgs : System.Web.UI.WebControls.CommandEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataPagerCommandEventArgs extends System.Web.UI.WebControls.CommandEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataPagerCommandEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataPagerCommandEventArgs&#xA;Inherits CommandEventArgs" />
+  <TypeSignature Language="F#" Value="type DataPagerCommandEventArgs = class&#xA;    inherit CommandEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataPagerCommandEventArgs : System::Web::UI::WebControls::CommandEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +51,9 @@
       <MemberSignature Language="C#" Value="public DataPagerCommandEventArgs (System.Web.UI.WebControls.DataPagerField pagerField, int totalRowCount, System.Web.UI.WebControls.CommandEventArgs originalArgs, System.Web.UI.WebControls.DataPagerFieldItem item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.DataPagerField pagerField, int32 totalRowCount, class System.Web.UI.WebControls.CommandEventArgs originalArgs, class System.Web.UI.WebControls.DataPagerFieldItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataPagerCommandEventArgs.#ctor(System.Web.UI.WebControls.DataPagerField,System.Int32,System.Web.UI.WebControls.CommandEventArgs,System.Web.UI.WebControls.DataPagerFieldItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pagerField As DataPagerField, totalRowCount As Integer, originalArgs As CommandEventArgs, item As DataPagerFieldItem)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DataPagerCommandEventArgs : System.Web.UI.WebControls.DataPagerField * int * System.Web.UI.WebControls.CommandEventArgs * System.Web.UI.WebControls.DataPagerFieldItem -&gt; System.Web.UI.WebControls.DataPagerCommandEventArgs" Usage="new System.Web.UI.WebControls.DataPagerCommandEventArgs (pagerField, totalRowCount, originalArgs, item)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataPagerCommandEventArgs(System::Web::UI::WebControls::DataPagerField ^ pagerField, int totalRowCount, System::Web::UI::WebControls::CommandEventArgs ^ originalArgs, System::Web::UI::WebControls::DataPagerFieldItem ^ item);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -97,6 +103,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataPagerFieldItem Item { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataPagerFieldItem Item" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerCommandEventArgs.Item" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As DataPagerFieldItem" />
+      <MemberSignature Language="F#" Value="member this.Item : System.Web.UI.WebControls.DataPagerFieldItem" Usage="System.Web.UI.WebControls.DataPagerCommandEventArgs.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataPagerFieldItem ^ Item { System::Web::UI::WebControls::DataPagerFieldItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -136,6 +145,9 @@
       <MemberSignature Language="C#" Value="public int NewMaximumRows { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NewMaximumRows" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerCommandEventArgs.NewMaximumRows" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewMaximumRows As Integer" />
+      <MemberSignature Language="F#" Value="member this.NewMaximumRows : int with get, set" Usage="System.Web.UI.WebControls.DataPagerCommandEventArgs.NewMaximumRows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NewMaximumRows { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -174,6 +186,9 @@
       <MemberSignature Language="C#" Value="public int NewStartRowIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NewStartRowIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerCommandEventArgs.NewStartRowIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewStartRowIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.NewStartRowIndex : int with get, set" Usage="System.Web.UI.WebControls.DataPagerCommandEventArgs.NewStartRowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NewStartRowIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -215,6 +230,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataPagerField PagerField { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.DataPagerField PagerField" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerCommandEventArgs.PagerField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PagerField As DataPagerField" />
+      <MemberSignature Language="F#" Value="member this.PagerField : System.Web.UI.WebControls.DataPagerField" Usage="System.Web.UI.WebControls.DataPagerCommandEventArgs.PagerField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataPagerField ^ PagerField { System::Web::UI::WebControls::DataPagerField ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -245,6 +263,9 @@
       <MemberSignature Language="C#" Value="public int TotalRowCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TotalRowCount" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataPagerCommandEventArgs.TotalRowCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TotalRowCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.TotalRowCount : int" Usage="System.Web.UI.WebControls.DataPagerCommandEventArgs.TotalRowCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TotalRowCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

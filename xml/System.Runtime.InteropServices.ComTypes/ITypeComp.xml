@@ -1,7 +1,10 @@
-<Type Name="ITypeComp" FullName="System.Runtime.InteropServices.ComTypes.ITypeComp">
+﻿<Type Name="ITypeComp" FullName="System.Runtime.InteropServices.ComTypes.ITypeComp">
   <TypeSignature Language="C#" Value="public interface ITypeComp" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITypeComp" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.ITypeComp" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITypeComp" />
+  <TypeSignature Language="F#" Value="type ITypeComp = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITypeComp" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,9 @@
       <MemberSignature Language="C#" Value="public void Bind (string szName, int lHashVal, short wFlags, out System.Runtime.InteropServices.ComTypes.ITypeInfo ppTInfo, out System.Runtime.InteropServices.ComTypes.DESCKIND pDescKind, out System.Runtime.InteropServices.ComTypes.BINDPTR pBindPtr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Bind(string szName, int32 lHashVal, int16 wFlags, [out] class System.Runtime.InteropServices.ComTypes.ITypeInfo&amp; ppTInfo, [out] valuetype System.Runtime.InteropServices.ComTypes.DESCKIND&amp; pDescKind, [out] valuetype System.Runtime.InteropServices.ComTypes.BINDPTR&amp; pBindPtr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeComp.Bind(System.String,System.Int32,System.Int16,System.Runtime.InteropServices.ComTypes.ITypeInfo@,System.Runtime.InteropServices.ComTypes.DESCKIND@,System.Runtime.InteropServices.ComTypes.BINDPTR@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Bind (szName As String, lHashVal As Integer, wFlags As Short, ByRef ppTInfo As ITypeInfo, ByRef pDescKind As DESCKIND, ByRef pBindPtr As BINDPTR)" />
+      <MemberSignature Language="F#" Value="abstract member Bind : string * int * int16 *  *  *  -&gt; unit" Usage="iTypeComp.Bind (szName, lHashVal, wFlags, ppTInfo, pDescKind, pBindPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Bind(System::String ^ szName, int lHashVal, short wFlags, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeInfo ^ % ppTInfo, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::DESCKIND % pDescKind, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::BINDPTR % pBindPtr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -99,6 +105,9 @@
       <MemberSignature Language="C#" Value="public void BindType (string szName, int lHashVal, out System.Runtime.InteropServices.ComTypes.ITypeInfo ppTInfo, out System.Runtime.InteropServices.ComTypes.ITypeComp ppTComp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BindType(string szName, int32 lHashVal, [out] class System.Runtime.InteropServices.ComTypes.ITypeInfo&amp; ppTInfo, [out] class System.Runtime.InteropServices.ComTypes.ITypeComp&amp; ppTComp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.ITypeComp.BindType(System.String,System.Int32,System.Runtime.InteropServices.ComTypes.ITypeInfo@,System.Runtime.InteropServices.ComTypes.ITypeComp@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BindType (szName As String, lHashVal As Integer, ByRef ppTInfo As ITypeInfo, ByRef ppTComp As ITypeComp)" />
+      <MemberSignature Language="F#" Value="abstract member BindType : string * int *  *  -&gt; unit" Usage="iTypeComp.BindType (szName, lHashVal, ppTInfo, ppTComp)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BindType(System::String ^ szName, int lHashVal, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeInfo ^ % ppTInfo, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::ITypeComp ^ % ppTComp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

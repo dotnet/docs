@@ -1,7 +1,10 @@
-<Type Name="ListViewUpdateEventArgs" FullName="System.Web.UI.WebControls.ListViewUpdateEventArgs">
+﻿<Type Name="ListViewUpdateEventArgs" FullName="System.Web.UI.WebControls.ListViewUpdateEventArgs">
   <TypeSignature Language="C#" Value="public class ListViewUpdateEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewUpdateEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewUpdateEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListViewUpdateEventArgs&#xA;Inherits CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type ListViewUpdateEventArgs = class&#xA;    inherit CancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListViewUpdateEventArgs : System::ComponentModel::CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="public ListViewUpdateEventArgs (int itemIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 itemIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewUpdateEventArgs.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (itemIndex As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ListViewUpdateEventArgs : int -&gt; System.Web.UI.WebControls.ListViewUpdateEventArgs" Usage="new System.Web.UI.WebControls.ListViewUpdateEventArgs itemIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewUpdateEventArgs(int itemIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -78,6 +84,9 @@
       <MemberSignature Language="C#" Value="public int ItemIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewUpdateEventArgs.ItemIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.ItemIndex : int" Usage="System.Web.UI.WebControls.ListViewUpdateEventArgs.ItemIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ItemIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -107,6 +116,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary Keys" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewUpdateEventArgs.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As IOrderedDictionary" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.ListViewUpdateEventArgs.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ Keys { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -156,6 +168,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary NewValues { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary NewValues" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewUpdateEventArgs.NewValues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewValues As IOrderedDictionary" />
+      <MemberSignature Language="F#" Value="member this.NewValues : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.ListViewUpdateEventArgs.NewValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ NewValues { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -201,6 +216,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary OldValues { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary OldValues" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewUpdateEventArgs.OldValues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldValues As IOrderedDictionary" />
+      <MemberSignature Language="F#" Value="member this.OldValues : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.ListViewUpdateEventArgs.OldValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ OldValues { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

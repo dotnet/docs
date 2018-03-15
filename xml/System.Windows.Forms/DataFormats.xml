@@ -1,7 +1,10 @@
-<Type Name="DataFormats" FullName="System.Windows.Forms.DataFormats">
+﻿<Type Name="DataFormats" FullName="System.Windows.Forms.DataFormats">
   <TypeSignature Language="C#" Value="public class DataFormats" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataFormats extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataFormats" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataFormats" />
+  <TypeSignature Language="F#" Value="type DataFormats = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataFormats" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +60,9 @@
       <MemberSignature Language="C#" Value="public static readonly string Bitmap;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Bitmap" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.Bitmap" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Bitmap As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Bitmap : string" Usage="System.Windows.Forms.DataFormats.Bitmap" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Bitmap;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +104,9 @@
       <MemberSignature Language="C#" Value="public static readonly string CommaSeparatedValue;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string CommaSeparatedValue" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.CommaSeparatedValue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CommaSeparatedValue As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable CommaSeparatedValue : string" Usage="System.Windows.Forms.DataFormats.CommaSeparatedValue" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ CommaSeparatedValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -137,6 +146,9 @@
       <MemberSignature Language="C#" Value="public static readonly string Dib;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Dib" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.Dib" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Dib As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Dib : string" Usage="System.Windows.Forms.DataFormats.Dib" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Dib;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -178,6 +190,9 @@
       <MemberSignature Language="C#" Value="public static readonly string Dif;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Dif" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.Dif" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Dif As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Dif : string" Usage="System.Windows.Forms.DataFormats.Dif" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Dif;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -228,6 +243,9 @@
       <MemberSignature Language="C#" Value="public static readonly string EnhancedMetafile;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string EnhancedMetafile" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.EnhancedMetafile" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EnhancedMetafile As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable EnhancedMetafile : string" Usage="System.Windows.Forms.DataFormats.EnhancedMetafile" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ EnhancedMetafile;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -272,6 +290,9 @@
       <MemberSignature Language="C#" Value="public static readonly string FileDrop;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string FileDrop" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.FileDrop" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FileDrop As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable FileDrop : string" Usage="System.Windows.Forms.DataFormats.FileDrop" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ FileDrop;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -309,10 +330,22 @@
         <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetFormat">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Windows.Forms.DataFormats.Format" /> with the Windows Clipboard numeric ID and name.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetFormat">
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.DataFormats.Format GetFormat (int id);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.DataFormats/Format GetFormat(int32 id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataFormats.GetFormat(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFormat (id As Integer) As DataFormats.Format" />
+      <MemberSignature Language="F#" Value="static member GetFormat : int -&gt; System.Windows.Forms.DataFormats.Format" Usage="System.Windows.Forms.DataFormats.GetFormat id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DataFormats::Format ^ GetFormat(int id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -356,6 +389,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.DataFormats.Format GetFormat (string format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.DataFormats/Format GetFormat(string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataFormats.GetFormat(System.String)" />
+      <MemberSignature Language="F#" Value="static member GetFormat : string -&gt; System.Windows.Forms.DataFormats.Format" Usage="System.Windows.Forms.DataFormats.GetFormat format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::DataFormats::Format ^ GetFormat(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -400,6 +435,9 @@
       <MemberSignature Language="C#" Value="public static readonly string Html;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Html" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.Html" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Html As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Html : string" Usage="System.Windows.Forms.DataFormats.Html" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Html;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -439,6 +477,9 @@
       <MemberSignature Language="C#" Value="public static readonly string Locale;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Locale" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.Locale" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Locale As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Locale : string" Usage="System.Windows.Forms.DataFormats.Locale" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Locale;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -478,6 +519,9 @@
       <MemberSignature Language="C#" Value="public static readonly string MetafilePict;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string MetafilePict" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.MetafilePict" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MetafilePict As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable MetafilePict : string" Usage="System.Windows.Forms.DataFormats.MetafilePict" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ MetafilePict;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -522,6 +566,9 @@
       <MemberSignature Language="C#" Value="public static readonly string OemText;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string OemText" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.OemText" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OemText As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable OemText : string" Usage="System.Windows.Forms.DataFormats.OemText" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ OemText;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -561,6 +608,9 @@
       <MemberSignature Language="C#" Value="public static readonly string Palette;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Palette" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.Palette" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Palette As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Palette : string" Usage="System.Windows.Forms.DataFormats.Palette" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Palette;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -602,6 +652,9 @@
       <MemberSignature Language="C#" Value="public static readonly string PenData;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string PenData" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.PenData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PenData As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable PenData : string" Usage="System.Windows.Forms.DataFormats.PenData" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ PenData;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -641,6 +694,9 @@
       <MemberSignature Language="C#" Value="public static readonly string Riff;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Riff" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.Riff" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Riff As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Riff : string" Usage="System.Windows.Forms.DataFormats.Riff" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Riff;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -682,6 +738,9 @@
       <MemberSignature Language="C#" Value="public static readonly string Rtf;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Rtf" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.Rtf" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Rtf As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Rtf : string" Usage="System.Windows.Forms.DataFormats.Rtf" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Rtf;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -725,6 +784,9 @@
       <MemberSignature Language="C#" Value="public static readonly string Serializable;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Serializable" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.Serializable" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Serializable As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Serializable : string" Usage="System.Windows.Forms.DataFormats.Serializable" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Serializable;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -767,6 +829,9 @@
       <MemberSignature Language="C#" Value="public static readonly string StringFormat;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string StringFormat" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.StringFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StringFormat As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable StringFormat : string" Usage="System.Windows.Forms.DataFormats.StringFormat" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ StringFormat;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -818,6 +883,9 @@
       <MemberSignature Language="C#" Value="public static readonly string SymbolicLink;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string SymbolicLink" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.SymbolicLink" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SymbolicLink As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable SymbolicLink : string" Usage="System.Windows.Forms.DataFormats.SymbolicLink" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ SymbolicLink;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -859,6 +927,9 @@
       <MemberSignature Language="C#" Value="public static readonly string Text;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Text" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Text As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Text : string" Usage="System.Windows.Forms.DataFormats.Text" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Text;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -907,6 +978,9 @@
       <MemberSignature Language="C#" Value="public static readonly string Tiff;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Tiff" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.Tiff" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Tiff As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Tiff : string" Usage="System.Windows.Forms.DataFormats.Tiff" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Tiff;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -948,6 +1022,9 @@
       <MemberSignature Language="C#" Value="public static readonly string UnicodeText;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string UnicodeText" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.UnicodeText" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UnicodeText As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable UnicodeText : string" Usage="System.Windows.Forms.DataFormats.UnicodeText" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ UnicodeText;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -996,6 +1073,9 @@
       <MemberSignature Language="C#" Value="public static readonly string WaveAudio;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string WaveAudio" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataFormats.WaveAudio" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WaveAudio As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable WaveAudio : string" Usage="System.Windows.Forms.DataFormats.WaveAudio" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ WaveAudio;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1031,14 +1111,5 @@
         <altmember cref="P:System.Windows.Forms.DataFormats.Format.Id" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetFormat">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.Windows.Forms.DataFormats.Format" /> with the Windows Clipboard numeric ID and name.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

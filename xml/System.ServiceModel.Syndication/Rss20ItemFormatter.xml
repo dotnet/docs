@@ -1,7 +1,10 @@
-<Type Name="Rss20ItemFormatter" FullName="System.ServiceModel.Syndication.Rss20ItemFormatter">
+﻿<Type Name="Rss20ItemFormatter" FullName="System.ServiceModel.Syndication.Rss20ItemFormatter">
   <TypeSignature Language="C#" Value="public class Rss20ItemFormatter : System.ServiceModel.Syndication.SyndicationItemFormatter, System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Rss20ItemFormatter extends System.ServiceModel.Syndication.SyndicationItemFormatter implements class System.Xml.Serialization.IXmlSerializable" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.Rss20ItemFormatter" />
+  <TypeSignature Language="VB.NET" Value="Public Class Rss20ItemFormatter&#xA;Inherits SyndicationItemFormatter&#xA;Implements IXmlSerializable" />
+  <TypeSignature Language="F#" Value="type Rss20ItemFormatter = class&#xA;    inherit SyndicationItemFormatter&#xA;    interface IXmlSerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Rss20ItemFormatter : System::ServiceModel::Syndication::SyndicationItemFormatter, System::Xml::Serialization::IXmlSerializable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,10 +46,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Rss20ItemFormatter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rss20ItemFormatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +80,9 @@
       <MemberSignature Language="C#" Value="public Rss20ItemFormatter (System.ServiceModel.Syndication.SyndicationItem itemToWrite);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Syndication.SyndicationItem itemToWrite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.#ctor(System.ServiceModel.Syndication.SyndicationItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (itemToWrite As SyndicationItem)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Rss20ItemFormatter : System.ServiceModel.Syndication.SyndicationItem -&gt; System.ServiceModel.Syndication.Rss20ItemFormatter" Usage="new System.ServiceModel.Syndication.Rss20ItemFormatter itemToWrite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rss20ItemFormatter(System::ServiceModel::Syndication::SyndicationItem ^ itemToWrite);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +115,9 @@
       <MemberSignature Language="C#" Value="public Rss20ItemFormatter (Type itemTypeToCreate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type itemTypeToCreate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (itemTypeToCreate As Type)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Rss20ItemFormatter : Type -&gt; System.ServiceModel.Syndication.Rss20ItemFormatter" Usage="new System.ServiceModel.Syndication.Rss20ItemFormatter itemTypeToCreate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rss20ItemFormatter(Type ^ itemTypeToCreate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -134,6 +154,9 @@
       <MemberSignature Language="C#" Value="public Rss20ItemFormatter (System.ServiceModel.Syndication.SyndicationItem itemToWrite, bool serializeExtensionsAsAtom);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Syndication.SyndicationItem itemToWrite, bool serializeExtensionsAsAtom) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.#ctor(System.ServiceModel.Syndication.SyndicationItem,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (itemToWrite As SyndicationItem, serializeExtensionsAsAtom As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Rss20ItemFormatter : System.ServiceModel.Syndication.SyndicationItem * bool -&gt; System.ServiceModel.Syndication.Rss20ItemFormatter" Usage="new System.ServiceModel.Syndication.Rss20ItemFormatter (itemToWrite, serializeExtensionsAsAtom)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rss20ItemFormatter(System::ServiceModel::Syndication::SyndicationItem ^ itemToWrite, bool serializeExtensionsAsAtom);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -173,6 +196,9 @@
       <MemberSignature Language="C#" Value="public override bool CanRead (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanRead(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.CanRead(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanRead (reader As XmlReader) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanRead : System.Xml.XmlReader -&gt; bool" Usage="rss20ItemFormatter.CanRead reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanRead(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -208,6 +234,9 @@
       <MemberSignature Language="C#" Value="protected override System.ServiceModel.Syndication.SyndicationItem CreateItemInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.Syndication.SyndicationItem CreateItemInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.CreateItemInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemInstance () As SyndicationItem" />
+      <MemberSignature Language="F#" Value="override this.CreateItemInstance : unit -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="rss20ItemFormatter.CreateItemInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::SyndicationItem ^ CreateItemInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -238,6 +267,9 @@
       <MemberSignature Language="C#" Value="protected Type ItemType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ItemType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Rss20ItemFormatter.ItemType" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ItemType As Type" />
+      <MemberSignature Language="F#" Value="member this.ItemType : Type" Usage="System.ServiceModel.Syndication.Rss20ItemFormatter.ItemType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property Type ^ ItemType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -260,6 +292,9 @@
       <MemberSignature Language="C#" Value="public bool PreserveAttributeExtensions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PreserveAttributeExtensions" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Rss20ItemFormatter.PreserveAttributeExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreserveAttributeExtensions As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PreserveAttributeExtensions : bool with get, set" Usage="System.ServiceModel.Syndication.Rss20ItemFormatter.PreserveAttributeExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveAttributeExtensions { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -289,6 +324,9 @@
       <MemberSignature Language="C#" Value="public bool PreserveElementExtensions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PreserveElementExtensions" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Rss20ItemFormatter.PreserveElementExtensions" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreserveElementExtensions As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PreserveElementExtensions : bool with get, set" Usage="System.ServiceModel.Syndication.Rss20ItemFormatter.PreserveElementExtensions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveElementExtensions { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -318,6 +356,9 @@
       <MemberSignature Language="C#" Value="public override void ReadFrom (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ReadFrom(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.ReadFrom(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ReadFrom (reader As XmlReader)" />
+      <MemberSignature Language="F#" Value="override this.ReadFrom : System.Xml.XmlReader -&gt; unit" Usage="rss20ItemFormatter.ReadFrom reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ReadFrom(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -352,6 +393,9 @@
       <MemberSignature Language="C#" Value="public bool SerializeExtensionsAsAtom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SerializeExtensionsAsAtom" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Rss20ItemFormatter.SerializeExtensionsAsAtom" />
+      <MemberSignature Language="VB.NET" Value="Public Property SerializeExtensionsAsAtom As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SerializeExtensionsAsAtom : bool with get, set" Usage="System.ServiceModel.Syndication.Rss20ItemFormatter.SerializeExtensionsAsAtom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SerializeExtensionsAsAtom { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -381,7 +425,12 @@
       <MemberSignature Language="C#" Value="System.Xml.Schema.XmlSchema IXmlSerializable.GetSchema ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Xml.Schema.XmlSchema System.Xml.Serialization.IXmlSerializable.GetSchema() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.System#Xml#Serialization#IXmlSerializable#GetSchema" />
+      <MemberSignature Language="VB.NET" Value="Function GetSchema () As XmlSchema Implements IXmlSerializable.GetSchema" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Xml::Schema::XmlSchema ^ System.Xml.Serialization.IXmlSerializable.GetSchema() = System::Xml::Serialization::IXmlSerializable::GetSchema;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.GetSchema</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -412,7 +461,12 @@
       <MemberSignature Language="C#" Value="void IXmlSerializable.ReadXml (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.ReadXml(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Sub ReadXml (reader As XmlReader) Implements IXmlSerializable.ReadXml" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.ReadXml(System::Xml::XmlReader ^ reader) = System::Xml::Serialization::IXmlSerializable::ReadXml;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.ReadXml(System.Xml.XmlReader)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -437,7 +491,12 @@
       <MemberSignature Language="C#" Value="void IXmlSerializable.WriteXml (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Xml.Serialization.IXmlSerializable.WriteXml(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Sub WriteXml (writer As XmlWriter) Implements IXmlSerializable.WriteXml" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Xml.Serialization.IXmlSerializable.WriteXml(System::Xml::XmlWriter ^ writer) = System::Xml::Serialization::IXmlSerializable::WriteXml;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Xml.Serialization.IXmlSerializable.WriteXml(System.Xml.XmlWriter)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -462,6 +521,9 @@
       <MemberSignature Language="C#" Value="public override string Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Version" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Syndication.Rss20ItemFormatter.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Version As String" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="System.ServiceModel.Syndication.Rss20ItemFormatter.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Version { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -491,6 +553,9 @@
       <MemberSignature Language="C#" Value="public override void WriteTo (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteTo(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter.WriteTo(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteTo (writer As XmlWriter)" />
+      <MemberSignature Language="F#" Value="override this.WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="rss20ItemFormatter.WriteTo writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteTo(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -521,14 +586,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

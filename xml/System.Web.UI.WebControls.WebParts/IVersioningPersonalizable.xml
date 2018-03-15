@@ -1,7 +1,10 @@
-<Type Name="IVersioningPersonalizable" FullName="System.Web.UI.WebControls.WebParts.IVersioningPersonalizable">
+﻿<Type Name="IVersioningPersonalizable" FullName="System.Web.UI.WebControls.WebParts.IVersioningPersonalizable">
   <TypeSignature Language="C#" Value="public interface IVersioningPersonalizable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IVersioningPersonalizable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.IVersioningPersonalizable" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IVersioningPersonalizable" />
+  <TypeSignature Language="F#" Value="type IVersioningPersonalizable = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IVersioningPersonalizable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="public void Load (System.Collections.IDictionary unknownProperties);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Load(class System.Collections.IDictionary unknownProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.IVersioningPersonalizable.Load(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (unknownProperties As IDictionary)" />
+      <MemberSignature Language="F#" Value="abstract member Load : System.Collections.IDictionary -&gt; unit" Usage="iVersioningPersonalizable.Load unknownProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Collections::IDictionary ^ unknownProperties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

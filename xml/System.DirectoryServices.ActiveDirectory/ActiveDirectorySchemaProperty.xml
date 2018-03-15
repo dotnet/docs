@@ -1,7 +1,10 @@
-<Type Name="ActiveDirectorySchemaProperty" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty">
+﻿<Type Name="ActiveDirectorySchemaProperty" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty">
   <TypeSignature Language="C#" Value="public class ActiveDirectorySchemaProperty : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActiveDirectorySchemaProperty extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectorySchemaProperty&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type ActiveDirectorySchemaProperty = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectorySchemaProperty : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="public ActiveDirectorySchemaProperty (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string ldapDisplayName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string ldapDisplayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As DirectoryContext, ldapDisplayName As String)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty : System.DirectoryServices.ActiveDirectory.DirectoryContext * string -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" Usage="new System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty (context, ldapDisplayName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectorySchemaProperty(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ ldapDisplayName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -61,6 +67,9 @@
       <MemberSignature Language="C#" Value="public string CommonName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CommonName" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.CommonName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommonName As String" />
+      <MemberSignature Language="F#" Value="member this.CommonName : string with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.CommonName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommonName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -84,6 +93,9 @@
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -103,11 +115,27 @@
         <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Save" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources that are used by the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="activeDirectorySchemaProperty.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -127,6 +155,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="activeDirectorySchemaProperty.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -151,6 +182,9 @@
       <MemberSignature Language="C#" Value="public static System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty FindByName (System.DirectoryServices.ActiveDirectory.DirectoryContext context, string ldapDisplayName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty FindByName(class System.DirectoryServices.ActiveDirectory.DirectoryContext context, string ldapDisplayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.FindByName(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindByName (context As DirectoryContext, ldapDisplayName As String) As ActiveDirectorySchemaProperty" />
+      <MemberSignature Language="F#" Value="static member FindByName : System.DirectoryServices.ActiveDirectory.DirectoryContext * string -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.FindByName (context, ldapDisplayName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaProperty ^ FindByName(System::DirectoryServices::ActiveDirectory::DirectoryContext ^ context, System::String ^ ldapDisplayName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -183,6 +217,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.DirectoryEntry GetDirectoryEntry ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.DirectoryEntry GetDirectoryEntry() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.GetDirectoryEntry" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDirectoryEntry () As DirectoryEntry" />
+      <MemberSignature Language="F#" Value="member this.GetDirectoryEntry : unit -&gt; System.DirectoryServices.DirectoryEntry" Usage="activeDirectorySchemaProperty.GetDirectoryEntry " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::DirectoryEntry ^ GetDirectoryEntry();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -205,6 +242,9 @@
       <MemberSignature Language="C#" Value="public bool IsDefunct { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDefunct" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsDefunct" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDefunct As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDefunct : bool with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsDefunct" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefunct { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -228,6 +268,9 @@
       <MemberSignature Language="C#" Value="public bool IsInAnr { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInAnr" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsInAnr" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInAnr As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInAnr : bool with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsInAnr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInAnr { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -251,6 +294,9 @@
       <MemberSignature Language="C#" Value="public bool IsIndexed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsIndexed" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsIndexed" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsIndexed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsIndexed : bool with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsIndexed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIndexed { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -274,6 +320,9 @@
       <MemberSignature Language="C#" Value="public bool IsIndexedOverContainer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsIndexedOverContainer" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsIndexedOverContainer" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsIndexedOverContainer As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsIndexedOverContainer : bool with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsIndexedOverContainer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsIndexedOverContainer { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -297,6 +346,9 @@
       <MemberSignature Language="C#" Value="public bool IsInGlobalCatalog { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInGlobalCatalog" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsInGlobalCatalog" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInGlobalCatalog As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInGlobalCatalog : bool with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsInGlobalCatalog" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInGlobalCatalog { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -320,6 +372,9 @@
       <MemberSignature Language="C#" Value="public bool IsOnTombstonedObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOnTombstonedObject" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsOnTombstonedObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsOnTombstonedObject As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsOnTombstonedObject : bool with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsOnTombstonedObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOnTombstonedObject { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -343,6 +398,9 @@
       <MemberSignature Language="C#" Value="public bool IsSingleValued { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSingleValued" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsSingleValued" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSingleValued As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSingleValued : bool with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsSingleValued" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSingleValued { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -366,6 +424,9 @@
       <MemberSignature Language="C#" Value="public bool IsTupleIndexed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTupleIndexed" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsTupleIndexed" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsTupleIndexed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTupleIndexed : bool with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.IsTupleIndexed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTupleIndexed { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -389,6 +450,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty Link { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty Link" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Link" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Link As ActiveDirectorySchemaProperty" />
+      <MemberSignature Language="F#" Value="member this.Link : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Link" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaProperty ^ Link { System::DirectoryServices::ActiveDirectory::ActiveDirectorySchemaProperty ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -411,6 +475,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; LinkId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; LinkId" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.LinkId" />
+      <MemberSignature Language="VB.NET" Value="Public Property LinkId As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.LinkId : Nullable&lt;int&gt; with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.LinkId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; LinkId { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -432,6 +499,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -455,6 +525,9 @@
       <MemberSignature Language="C#" Value="public string Oid { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Oid" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Oid" />
+      <MemberSignature Language="VB.NET" Value="Public Property Oid As String" />
+      <MemberSignature Language="F#" Value="member this.Oid : string with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Oid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Oid { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -478,6 +551,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; RangeLower { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; RangeLower" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.RangeLower" />
+      <MemberSignature Language="VB.NET" Value="Public Property RangeLower As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.RangeLower : Nullable&lt;int&gt; with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.RangeLower" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; RangeLower { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -502,6 +578,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; RangeUpper { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; RangeUpper" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.RangeUpper" />
+      <MemberSignature Language="VB.NET" Value="Public Property RangeUpper As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.RangeUpper : Nullable&lt;int&gt; with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.RangeUpper" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; RangeUpper { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -526,6 +605,9 @@
       <MemberSignature Language="C#" Value="public void Save ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Save" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save ()" />
+      <MemberSignature Language="F#" Value="member this.Save : unit -&gt; unit" Usage="activeDirectorySchemaProperty.Save " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -549,6 +631,9 @@
       <MemberSignature Language="C#" Value="public Guid SchemaGuid { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid SchemaGuid" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.SchemaGuid" />
+      <MemberSignature Language="VB.NET" Value="Public Property SchemaGuid As Guid" />
+      <MemberSignature Language="F#" Value="member this.SchemaGuid : Guid with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.SchemaGuid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid SchemaGuid { Guid get(); void set(Guid value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -580,6 +665,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax Syntax { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax Syntax" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Syntax" />
+      <MemberSignature Language="VB.NET" Value="Public Property Syntax As ActiveDirectorySyntax" />
+      <MemberSignature Language="F#" Value="member this.Syntax : System.DirectoryServices.ActiveDirectory.ActiveDirectorySyntax with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Syntax" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ActiveDirectorySyntax Syntax { System::DirectoryServices::ActiveDirectory::ActiveDirectorySyntax get(); void set(System::DirectoryServices::ActiveDirectory::ActiveDirectorySyntax value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -605,6 +693,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="activeDirectorySchemaProperty.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -623,15 +714,5 @@
         <altmember cref="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Name" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources that are used by the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty" /> object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

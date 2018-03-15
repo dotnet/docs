@@ -1,7 +1,10 @@
-<Type Name="IKeyboardInputSink" FullName="System.Windows.Interop.IKeyboardInputSink">
+﻿<Type Name="IKeyboardInputSink" FullName="System.Windows.Interop.IKeyboardInputSink">
   <TypeSignature Language="C#" Value="public interface IKeyboardInputSink" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IKeyboardInputSink" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.IKeyboardInputSink" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IKeyboardInputSink" />
+  <TypeSignature Language="F#" Value="type IKeyboardInputSink = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IKeyboardInputSink" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public bool HasFocusWithin ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasFocusWithin() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSink.HasFocusWithin" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasFocusWithin () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member HasFocusWithin : unit -&gt; bool" Usage="iKeyboardInputSink.HasFocusWithin " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasFocusWithin();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -61,6 +67,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Interop.IKeyboardInputSite KeyboardInputSite { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Interop.IKeyboardInputSite KeyboardInputSite" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyboardInputSite As IKeyboardInputSite" />
+      <MemberSignature Language="F#" Value="member this.KeyboardInputSite : System.Windows.Interop.IKeyboardInputSite with get, set" Usage="System.Windows.Interop.IKeyboardInputSink.KeyboardInputSite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Interop::IKeyboardInputSite ^ KeyboardInputSite { System::Windows::Interop::IKeyboardInputSite ^ get(); void set(System::Windows::Interop::IKeyboardInputSite ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -93,6 +102,9 @@
       <MemberSignature Language="C#" Value="public bool OnMnemonic (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OnMnemonic(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSink.OnMnemonic(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OnMnemonic (ByRef msg As MSG, modifiers As ModifierKeys) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnMnemonic :  * System.Windows.Input.ModifierKeys -&gt; bool" Usage="iKeyboardInputSink.OnMnemonic (msg, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool OnMnemonic(System::Windows::Interop::MSG % msg, System::Windows::Input::ModifierKeys modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -136,6 +148,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Interop.IKeyboardInputSite RegisterKeyboardInputSink (System.Windows.Interop.IKeyboardInputSink sink);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Interop.IKeyboardInputSite RegisterKeyboardInputSink(class System.Windows.Interop.IKeyboardInputSink sink) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSink.RegisterKeyboardInputSink(System.Windows.Interop.IKeyboardInputSink)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RegisterKeyboardInputSink (sink As IKeyboardInputSink) As IKeyboardInputSite" />
+      <MemberSignature Language="F#" Value="abstract member RegisterKeyboardInputSink : System.Windows.Interop.IKeyboardInputSink -&gt; System.Windows.Interop.IKeyboardInputSite" Usage="iKeyboardInputSink.RegisterKeyboardInputSink sink" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Interop::IKeyboardInputSite ^ RegisterKeyboardInputSink(System::Windows::Interop::IKeyboardInputSink ^ sink);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -170,6 +185,9 @@
       <MemberSignature Language="C#" Value="public bool TabInto (System.Windows.Input.TraversalRequest request);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TabInto(class System.Windows.Input.TraversalRequest request) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSink.TabInto(System.Windows.Input.TraversalRequest)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TabInto (request As TraversalRequest) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TabInto : System.Windows.Input.TraversalRequest -&gt; bool" Usage="iKeyboardInputSink.TabInto request" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TabInto(System::Windows::Input::TraversalRequest ^ request);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -200,6 +218,9 @@
       <MemberSignature Language="C#" Value="public bool TranslateAccelerator (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TranslateAccelerator(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSink.TranslateAccelerator(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TranslateAccelerator (ByRef msg As MSG, modifiers As ModifierKeys) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TranslateAccelerator :  * System.Windows.Input.ModifierKeys -&gt; bool" Usage="iKeyboardInputSink.TranslateAccelerator (msg, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TranslateAccelerator(System::Windows::Interop::MSG % msg, System::Windows::Input::ModifierKeys modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -244,6 +265,9 @@
       <MemberSignature Language="C#" Value="public bool TranslateChar (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TranslateChar(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.IKeyboardInputSink.TranslateChar(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TranslateChar (ByRef msg As MSG, modifiers As ModifierKeys) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TranslateChar :  * System.Windows.Input.ModifierKeys -&gt; bool" Usage="iKeyboardInputSink.TranslateChar (msg, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TranslateChar(System::Windows::Interop::MSG % msg, System::Windows::Input::ModifierKeys modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>

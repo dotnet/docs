@@ -1,7 +1,10 @@
-<Type Name="MaskedTextResultHint" FullName="System.ComponentModel.MaskedTextResultHint">
+﻿<Type Name="MaskedTextResultHint" FullName="System.ComponentModel.MaskedTextResultHint">
   <TypeSignature Language="C#" Value="public enum MaskedTextResultHint" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MaskedTextResultHint extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.MaskedTextResultHint" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MaskedTextResultHint" />
+  <TypeSignature Language="F#" Value="type MaskedTextResultHint = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MaskedTextResultHint" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +43,9 @@
       <MemberSignature Language="C#" Value="AlphanumericCharacterExpected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.MaskedTextResultHint AlphanumericCharacterExpected = int32(-2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MaskedTextResultHint.AlphanumericCharacterExpected" />
+      <MemberSignature Language="VB.NET" Value="AlphanumericCharacterExpected" />
+      <MemberSignature Language="F#" Value="AlphanumericCharacterExpected = -2" Usage="System.ComponentModel.MaskedTextResultHint.AlphanumericCharacterExpected" />
+      <MemberSignature Language="C++ CLI" Value="AlphanumericCharacterExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -57,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.MaskedTextResultHint</ReturnType>
       </ReturnValue>
+      <MemberValue>-2</MemberValue>
       <Docs>
         <summary>Operation did not succeed.An input character was encountered that was not alphanumeric. .</summary>
       </Docs>
@@ -65,6 +72,9 @@
       <MemberSignature Language="C#" Value="AsciiCharacterExpected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.MaskedTextResultHint AsciiCharacterExpected = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MaskedTextResultHint.AsciiCharacterExpected" />
+      <MemberSignature Language="VB.NET" Value="AsciiCharacterExpected" />
+      <MemberSignature Language="F#" Value="AsciiCharacterExpected = -1" Usage="System.ComponentModel.MaskedTextResultHint.AsciiCharacterExpected" />
+      <MemberSignature Language="C++ CLI" Value="AsciiCharacterExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -82,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.MaskedTextResultHint</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>Operation did not succeed.An input character was encountered that was not a member of the ASCII character set.</summary>
       </Docs>
@@ -90,6 +101,9 @@
       <MemberSignature Language="C#" Value="CharacterEscaped" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.MaskedTextResultHint CharacterEscaped = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MaskedTextResultHint.CharacterEscaped" />
+      <MemberSignature Language="VB.NET" Value="CharacterEscaped" />
+      <MemberSignature Language="F#" Value="CharacterEscaped = 1" Usage="System.ComponentModel.MaskedTextResultHint.CharacterEscaped" />
+      <MemberSignature Language="C++ CLI" Value="CharacterEscaped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -107,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.MaskedTextResultHint</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Success. The operation succeeded because a literal, prompt or space character was an escaped character. For more information about escaped characters, see the <see cref="M:System.ComponentModel.MaskedTextProvider.VerifyEscapeChar(System.Char,System.Int32)" /> method.</summary>
       </Docs>
@@ -115,6 +130,9 @@
       <MemberSignature Language="C#" Value="DigitExpected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.MaskedTextResultHint DigitExpected = int32(-3)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MaskedTextResultHint.DigitExpected" />
+      <MemberSignature Language="VB.NET" Value="DigitExpected" />
+      <MemberSignature Language="F#" Value="DigitExpected = -3" Usage="System.ComponentModel.MaskedTextResultHint.DigitExpected" />
+      <MemberSignature Language="C++ CLI" Value="DigitExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -132,6 +150,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.MaskedTextResultHint</ReturnType>
       </ReturnValue>
+      <MemberValue>-3</MemberValue>
       <Docs>
         <summary>Operation did not succeed. An input character was encountered that was not a digit.</summary>
       </Docs>
@@ -140,6 +159,9 @@
       <MemberSignature Language="C#" Value="InvalidInput" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.MaskedTextResultHint InvalidInput = int32(-51)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MaskedTextResultHint.InvalidInput" />
+      <MemberSignature Language="VB.NET" Value="InvalidInput" />
+      <MemberSignature Language="F#" Value="InvalidInput = -51" Usage="System.ComponentModel.MaskedTextResultHint.InvalidInput" />
+      <MemberSignature Language="C++ CLI" Value="InvalidInput" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -157,6 +179,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.MaskedTextResultHint</ReturnType>
       </ReturnValue>
+      <MemberValue>-51</MemberValue>
       <Docs>
         <summary>Operation did not succeed. The program encountered an  input character that was not valid. For more information about characters that are not valid, see the <see cref="M:System.ComponentModel.MaskedTextProvider.IsValidInputChar(System.Char)" /> method.</summary>
       </Docs>
@@ -165,6 +188,9 @@
       <MemberSignature Language="C#" Value="LetterExpected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.MaskedTextResultHint LetterExpected = int32(-4)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MaskedTextResultHint.LetterExpected" />
+      <MemberSignature Language="VB.NET" Value="LetterExpected" />
+      <MemberSignature Language="F#" Value="LetterExpected = -4" Usage="System.ComponentModel.MaskedTextResultHint.LetterExpected" />
+      <MemberSignature Language="C++ CLI" Value="LetterExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -182,6 +208,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.MaskedTextResultHint</ReturnType>
       </ReturnValue>
+      <MemberValue>-4</MemberValue>
       <Docs>
         <summary>Operation did not succeed. An input character was encountered that was not a letter.</summary>
       </Docs>
@@ -190,6 +217,9 @@
       <MemberSignature Language="C#" Value="NoEffect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.MaskedTextResultHint NoEffect = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MaskedTextResultHint.NoEffect" />
+      <MemberSignature Language="VB.NET" Value="NoEffect" />
+      <MemberSignature Language="F#" Value="NoEffect = 2" Usage="System.ComponentModel.MaskedTextResultHint.NoEffect" />
+      <MemberSignature Language="C++ CLI" Value="NoEffect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -207,6 +237,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.MaskedTextResultHint</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Success. The primary operation was not performed because it was not needed; therefore, no side effect was produced.</summary>
       </Docs>
@@ -215,6 +246,9 @@
       <MemberSignature Language="C#" Value="NonEditPosition" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.MaskedTextResultHint NonEditPosition = int32(-54)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MaskedTextResultHint.NonEditPosition" />
+      <MemberSignature Language="VB.NET" Value="NonEditPosition" />
+      <MemberSignature Language="F#" Value="NonEditPosition = -54" Usage="System.ComponentModel.MaskedTextResultHint.NonEditPosition" />
+      <MemberSignature Language="C++ CLI" Value="NonEditPosition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -232,6 +266,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.MaskedTextResultHint</ReturnType>
       </ReturnValue>
+      <MemberValue>-54</MemberValue>
       <Docs>
         <summary>Operation did not succeed. The current position in the formatted string is a literal character.</summary>
       </Docs>
@@ -240,6 +275,9 @@
       <MemberSignature Language="C#" Value="PositionOutOfRange" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.MaskedTextResultHint PositionOutOfRange = int32(-55)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MaskedTextResultHint.PositionOutOfRange" />
+      <MemberSignature Language="VB.NET" Value="PositionOutOfRange" />
+      <MemberSignature Language="F#" Value="PositionOutOfRange = -55" Usage="System.ComponentModel.MaskedTextResultHint.PositionOutOfRange" />
+      <MemberSignature Language="C++ CLI" Value="PositionOutOfRange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -257,6 +295,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.MaskedTextResultHint</ReturnType>
       </ReturnValue>
+      <MemberValue>-55</MemberValue>
       <Docs>
         <summary>Operation did not succeed. The specified position is not in the range of the target string; typically it is either less than zero or greater then the length of the target string.</summary>
       </Docs>
@@ -265,6 +304,9 @@
       <MemberSignature Language="C#" Value="PromptCharNotAllowed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.MaskedTextResultHint PromptCharNotAllowed = int32(-52)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MaskedTextResultHint.PromptCharNotAllowed" />
+      <MemberSignature Language="VB.NET" Value="PromptCharNotAllowed" />
+      <MemberSignature Language="F#" Value="PromptCharNotAllowed = -52" Usage="System.ComponentModel.MaskedTextResultHint.PromptCharNotAllowed" />
+      <MemberSignature Language="C++ CLI" Value="PromptCharNotAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -282,6 +324,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.MaskedTextResultHint</ReturnType>
       </ReturnValue>
+      <MemberValue>-52</MemberValue>
       <Docs>
         <summary>Operation did not succeed. The prompt character is not valid at input, perhaps because the <see cref="P:System.ComponentModel.MaskedTextProvider.AllowPromptAsInput" /> property is set to <see langword="false" />.</summary>
       </Docs>
@@ -290,6 +333,9 @@
       <MemberSignature Language="C#" Value="SideEffect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.MaskedTextResultHint SideEffect = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MaskedTextResultHint.SideEffect" />
+      <MemberSignature Language="VB.NET" Value="SideEffect" />
+      <MemberSignature Language="F#" Value="SideEffect = 3" Usage="System.ComponentModel.MaskedTextResultHint.SideEffect" />
+      <MemberSignature Language="C++ CLI" Value="SideEffect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -307,6 +353,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.MaskedTextResultHint</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Success. The primary operation was not performed because it was not needed, but the method produced a side effect. For example, the <see cref="Overload:System.ComponentModel.MaskedTextProvider.RemoveAt" /> method can delete an unassigned edit position, which causes left-shifting of subsequent characters in the formatted string.</summary>
       </Docs>
@@ -315,6 +362,9 @@
       <MemberSignature Language="C#" Value="SignedDigitExpected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.MaskedTextResultHint SignedDigitExpected = int32(-5)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MaskedTextResultHint.SignedDigitExpected" />
+      <MemberSignature Language="VB.NET" Value="SignedDigitExpected" />
+      <MemberSignature Language="F#" Value="SignedDigitExpected = -5" Usage="System.ComponentModel.MaskedTextResultHint.SignedDigitExpected" />
+      <MemberSignature Language="C++ CLI" Value="SignedDigitExpected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -332,6 +382,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.MaskedTextResultHint</ReturnType>
       </ReturnValue>
+      <MemberValue>-5</MemberValue>
       <Docs>
         <summary>Operation did not succeed. An input character was encountered that was not a signed digit.</summary>
       </Docs>
@@ -340,6 +391,9 @@
       <MemberSignature Language="C#" Value="Success" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.MaskedTextResultHint Success = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MaskedTextResultHint.Success" />
+      <MemberSignature Language="VB.NET" Value="Success" />
+      <MemberSignature Language="F#" Value="Success = 4" Usage="System.ComponentModel.MaskedTextResultHint.Success" />
+      <MemberSignature Language="C++ CLI" Value="Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -357,6 +411,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.MaskedTextResultHint</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Success. The primary operation succeeded.</summary>
       </Docs>
@@ -365,6 +420,9 @@
       <MemberSignature Language="C#" Value="UnavailableEditPosition" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.MaskedTextResultHint UnavailableEditPosition = int32(-53)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MaskedTextResultHint.UnavailableEditPosition" />
+      <MemberSignature Language="VB.NET" Value="UnavailableEditPosition" />
+      <MemberSignature Language="F#" Value="UnavailableEditPosition = -53" Usage="System.ComponentModel.MaskedTextResultHint.UnavailableEditPosition" />
+      <MemberSignature Language="C++ CLI" Value="UnavailableEditPosition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -382,6 +440,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.MaskedTextResultHint</ReturnType>
       </ReturnValue>
+      <MemberValue>-53</MemberValue>
       <Docs>
         <summary>Operation did not succeed. There were not enough edit positions available to fulfill the request.</summary>
       </Docs>
@@ -390,6 +449,9 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.MaskedTextResultHint Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MaskedTextResultHint.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.ComponentModel.MaskedTextResultHint.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -407,6 +469,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.MaskedTextResultHint</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Unknown. The result of the operation could not be determined.</summary>
       </Docs>

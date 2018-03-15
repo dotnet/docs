@@ -1,7 +1,10 @@
-<Type Name="FromBase64Transform" FullName="System.Security.Cryptography.FromBase64Transform">
+﻿<Type Name="FromBase64Transform" FullName="System.Security.Cryptography.FromBase64Transform">
   <TypeSignature Language="C#" Value="public class FromBase64Transform : System.Security.Cryptography.ICryptoTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FromBase64Transform extends System.Object implements class System.IDisposable, class System.Security.Cryptography.ICryptoTransform" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.FromBase64Transform" />
+  <TypeSignature Language="VB.NET" Value="Public Class FromBase64Transform&#xA;Implements ICryptoTransform" />
+  <TypeSignature Language="F#" Value="type FromBase64Transform = class&#xA;    interface ICryptoTransform&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FromBase64Transform : System::Security::Cryptography::ICryptoTransform" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,10 +52,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.FromBase64Transform" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FromBase64Transform ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.FromBase64Transform.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FromBase64Transform();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +99,9 @@
       <MemberSignature Language="C#" Value="public FromBase64Transform (System.Security.Cryptography.FromBase64TransformMode whitespaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.FromBase64TransformMode whitespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.FromBase64Transform.#ctor(System.Security.Cryptography.FromBase64TransformMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (whitespaces As FromBase64TransformMode)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.FromBase64Transform : System.Security.Cryptography.FromBase64TransformMode -&gt; System.Security.Cryptography.FromBase64Transform" Usage="new System.Security.Cryptography.FromBase64Transform whitespaces" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FromBase64Transform(System::Security::Cryptography::FromBase64TransformMode whitespaces);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -122,7 +140,13 @@
       <MemberSignature Language="C#" Value="public virtual bool CanReuseTransform { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanReuseTransform" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.FromBase64Transform.CanReuseTransform" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanReuseTransform As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanReuseTransform : bool" Usage="System.Security.Cryptography.FromBase64Transform.CanReuseTransform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanReuseTransform { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Security.Cryptography.ICryptoTransform.CanReuseTransform</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -149,7 +173,13 @@
       <MemberSignature Language="C#" Value="public bool CanTransformMultipleBlocks { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanTransformMultipleBlocks" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.FromBase64Transform.CanTransformMultipleBlocks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanTransformMultipleBlocks As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanTransformMultipleBlocks : bool" Usage="System.Security.Cryptography.FromBase64Transform.CanTransformMultipleBlocks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanTransformMultipleBlocks { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Security.Cryptography.ICryptoTransform.CanTransformMultipleBlocks</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -183,6 +213,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.FromBase64Transform.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="fromBase64Transform.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -215,11 +248,27 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.FromBase64Transform" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.FromBase64Transform.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="fromBase64Transform.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -258,6 +307,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.FromBase64Transform.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="fromBase64Transform.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -304,6 +356,9 @@
       <MemberSignature Language="C#" Value="~FromBase64Transform ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.FromBase64Transform.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="fromBase64Transform.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!FromBase64Transform ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -331,7 +386,13 @@
       <MemberSignature Language="C#" Value="public int InputBlockSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 InputBlockSize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.FromBase64Transform.InputBlockSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputBlockSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.InputBlockSize : int" Usage="System.Security.Cryptography.FromBase64Transform.InputBlockSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InputBlockSize { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Security.Cryptography.ICryptoTransform.InputBlockSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -365,7 +426,13 @@
       <MemberSignature Language="C#" Value="public int OutputBlockSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 OutputBlockSize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.FromBase64Transform.OutputBlockSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputBlockSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.OutputBlockSize : int" Usage="System.Security.Cryptography.FromBase64Transform.OutputBlockSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int OutputBlockSize { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Security.Cryptography.ICryptoTransform.OutputBlockSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -399,7 +466,13 @@
       <MemberSignature Language="C#" Value="public int TransformBlock (byte[] inputBuffer, int inputOffset, int inputCount, byte[] outputBuffer, int outputOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 TransformBlock(unsigned int8[] inputBuffer, int32 inputOffset, int32 inputCount, unsigned int8[] outputBuffer, int32 outputOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.FromBase64Transform.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TransformBlock (inputBuffer As Byte(), inputOffset As Integer, inputCount As Integer, outputBuffer As Byte(), outputOffset As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member TransformBlock : byte[] * int * int * byte[] * int -&gt; int&#xA;override this.TransformBlock : byte[] * int * int * byte[] * int -&gt; int" Usage="fromBase64Transform.TransformBlock (inputBuffer, inputOffset, inputCount, outputBuffer, outputOffset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int TransformBlock(cli::array &lt;System::Byte&gt; ^ inputBuffer, int inputOffset, int inputCount, cli::array &lt;System::Byte&gt; ^ outputBuffer, int outputOffset);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Cryptography.ICryptoTransform.TransformBlock(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -460,7 +533,13 @@
       <MemberSignature Language="C#" Value="public byte[] TransformFinalBlock (byte[] inputBuffer, int inputOffset, int inputCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] TransformFinalBlock(unsigned int8[] inputBuffer, int32 inputOffset, int32 inputCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.FromBase64Transform.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TransformFinalBlock (inputBuffer As Byte(), inputOffset As Integer, inputCount As Integer) As Byte()" />
+      <MemberSignature Language="F#" Value="abstract member TransformFinalBlock : byte[] * int * int -&gt; byte[]&#xA;override this.TransformFinalBlock : byte[] * int * int -&gt; byte[]" Usage="fromBase64Transform.TransformFinalBlock (inputBuffer, inputOffset, inputCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ TransformFinalBlock(cli::array &lt;System::Byte&gt; ^ inputBuffer, int inputOffset, int inputCount);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Cryptography.ICryptoTransform.TransformFinalBlock(System.Byte[],System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -513,25 +592,5 @@
           <paramref name="inputBuffer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases all resources used by the current instance of the <see cref="T:System.Security.Cryptography.FromBase64Transform" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.FromBase64Transform" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

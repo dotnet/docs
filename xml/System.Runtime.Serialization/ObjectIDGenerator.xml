@@ -1,7 +1,10 @@
-<Type Name="ObjectIDGenerator" FullName="System.Runtime.Serialization.ObjectIDGenerator">
+﻿<Type Name="ObjectIDGenerator" FullName="System.Runtime.Serialization.ObjectIDGenerator">
   <TypeSignature Language="C#" Value="public class ObjectIDGenerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ObjectIDGenerator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ObjectIDGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public Class ObjectIDGenerator" />
+  <TypeSignature Language="F#" Value="type ObjectIDGenerator = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectIDGenerator" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="public ObjectIDGenerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectIDGenerator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectIDGenerator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -71,6 +76,9 @@
       <MemberSignature Language="C#" Value="public virtual long GetId (object obj, out bool firstTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 GetId(object obj, [out] bool&amp; firstTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectIDGenerator.GetId(System.Object,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetId (obj As Object, ByRef firstTime As Boolean) As Long" />
+      <MemberSignature Language="F#" Value="abstract member GetId : obj *  -&gt; int64&#xA;override this.GetId : obj *  -&gt; int64" Usage="objectIDGenerator.GetId (obj, firstTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long GetId(System::Object ^ obj, [Runtime::InteropServices::Out] bool % firstTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -107,6 +115,9 @@
       <MemberSignature Language="C#" Value="public virtual long HasId (object obj, out bool firstTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 HasId(object obj, [out] bool&amp; firstTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ObjectIDGenerator.HasId(System.Object,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function HasId (obj As Object, ByRef firstTime As Boolean) As Long" />
+      <MemberSignature Language="F#" Value="abstract member HasId : obj *  -&gt; int64&#xA;override this.HasId : obj *  -&gt; int64" Usage="objectIDGenerator.HasId (obj, firstTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long HasId(System::Object ^ obj, [Runtime::InteropServices::Out] bool % firstTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

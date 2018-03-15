@@ -1,7 +1,10 @@
-<Type Name="ColorTranslator" FullName="System.Drawing.ColorTranslator">
+﻿<Type Name="ColorTranslator" FullName="System.Drawing.ColorTranslator">
   <TypeSignature Language="C#" Value="public sealed class ColorTranslator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ColorTranslator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.ColorTranslator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ColorTranslator" />
+  <TypeSignature Language="F#" Value="type ColorTranslator = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ColorTranslator sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Color FromHtml (string htmlColor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Color FromHtml(string htmlColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.ColorTranslator.FromHtml(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromHtml (htmlColor As String) As Color" />
+      <MemberSignature Language="F#" Value="static member FromHtml : string -&gt; System.Drawing.Color" Usage="System.Drawing.ColorTranslator.FromHtml htmlColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color FromHtml(System::String ^ htmlColor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -59,6 +65,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Color FromOle (int oleColor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Color FromOle(int32 oleColor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.ColorTranslator.FromOle(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromOle (oleColor As Integer) As Color" />
+      <MemberSignature Language="F#" Value="static member FromOle : int -&gt; System.Drawing.Color" Usage="System.Drawing.ColorTranslator.FromOle oleColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color FromOle(int oleColor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -92,6 +101,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Color FromWin32 (int win32Color);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Color FromWin32(int32 win32Color) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.ColorTranslator.FromWin32(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromWin32 (win32Color As Integer) As Color" />
+      <MemberSignature Language="F#" Value="static member FromWin32 : int -&gt; System.Drawing.Color" Usage="System.Drawing.ColorTranslator.FromWin32 win32Color" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Color FromWin32(int win32Color);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -125,6 +137,9 @@
       <MemberSignature Language="C#" Value="public static string ToHtml (System.Drawing.Color c);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToHtml(valuetype System.Drawing.Color c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.ColorTranslator.ToHtml(System.Drawing.Color)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToHtml (c As Color) As String" />
+      <MemberSignature Language="F#" Value="static member ToHtml : System.Drawing.Color -&gt; string" Usage="System.Drawing.ColorTranslator.ToHtml c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToHtml(System::Drawing::Color c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -163,6 +178,9 @@
       <MemberSignature Language="C#" Value="public static int ToOle (System.Drawing.Color c);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ToOle(valuetype System.Drawing.Color c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.ColorTranslator.ToOle(System.Drawing.Color)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToOle (c As Color) As Integer" />
+      <MemberSignature Language="F#" Value="static member ToOle : System.Drawing.Color -&gt; int" Usage="System.Drawing.ColorTranslator.ToOle c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToOle(System::Drawing::Color c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -196,6 +214,9 @@
       <MemberSignature Language="C#" Value="public static int ToWin32 (System.Drawing.Color c);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 ToWin32(valuetype System.Drawing.Color c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.ColorTranslator.ToWin32(System.Drawing.Color)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToWin32 (c As Color) As Integer" />
+      <MemberSignature Language="F#" Value="static member ToWin32 : System.Drawing.Color -&gt; int" Usage="System.Drawing.ColorTranslator.ToWin32 c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int ToWin32(System::Drawing::Color c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

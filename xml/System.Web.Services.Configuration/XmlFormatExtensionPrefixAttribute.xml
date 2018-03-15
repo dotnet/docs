@@ -1,7 +1,10 @@
-<Type Name="XmlFormatExtensionPrefixAttribute" FullName="System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute">
+﻿<Type Name="XmlFormatExtensionPrefixAttribute" FullName="System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute">
   <TypeSignature Language="C#" Value="public sealed class XmlFormatExtensionPrefixAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlFormatExtensionPrefixAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlFormatExtensionPrefixAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type XmlFormatExtensionPrefixAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlFormatExtensionPrefixAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,10 +49,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlFormatExtensionPrefixAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlFormatExtensionPrefixAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -68,6 +83,9 @@
       <MemberSignature Language="C#" Value="public XmlFormatExtensionPrefixAttribute (string prefix, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prefix, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (prefix As String, ns As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute : string * string -&gt; System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute" Usage="new System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute (prefix, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlFormatExtensionPrefixAttribute(System::String ^ prefix, System::String ^ ns);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -97,6 +115,9 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -124,6 +145,9 @@
       <MemberSignature Language="C#" Value="public string Prefix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Prefix" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.Prefix" />
+      <MemberSignature Language="VB.NET" Value="Public Property Prefix As String" />
+      <MemberSignature Language="F#" Value="member this.Prefix : string with get, set" Usage="System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.Prefix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Prefix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -147,15 +171,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

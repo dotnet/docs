@@ -1,7 +1,10 @@
-<Type Name="WorkflowMarkupSerializer" FullName="System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer">
+﻿<Type Name="WorkflowMarkupSerializer" FullName="System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer">
   <TypeSignature Language="C#" Value="public class WorkflowMarkupSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowMarkupSerializer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowMarkupSerializer" />
+  <TypeSignature Language="F#" Value="type WorkflowMarkupSerializer = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowMarkupSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +75,8 @@
       <MemberSignature Language="C#" Value="public WorkflowMarkupSerializer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowMarkupSerializer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -94,9 +99,12 @@
       </Docs>
     </Member>
     <Member MemberName="AddChild">
-      <MemberSignature Language="C#" Value="protected virtual void AddChild (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object parentObject, object childObj);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void AddChild (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object parentObject, object childObj);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void AddChild(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object parentObject, object childObj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.AddChild(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub AddChild (serializationManager As WorkflowMarkupSerializationManager, parentObject As Object, childObj As Object)" />
+      <MemberSignature Language="F#" Value="abstract member AddChild : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj * obj -&gt; unit&#xA;override this.AddChild : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj * obj -&gt; unit" Usage="workflowMarkupSerializer.AddChild (serializationManager, parentObject, childObj)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void AddChild(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ parentObject, System::Object ^ childObj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -128,9 +136,12 @@
       </Docs>
     </Member>
     <Member MemberName="CanSerializeToString">
-      <MemberSignature Language="C#" Value="protected virtual bool CanSerializeToString (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object value);" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool CanSerializeToString (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool CanSerializeToString(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.CanSerializeToString(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CanSerializeToString (serializationManager As WorkflowMarkupSerializationManager, value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanSerializeToString : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; bool&#xA;override this.CanSerializeToString : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; bool" Usage="workflowMarkupSerializer.CanSerializeToString (serializationManager, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool CanSerializeToString(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -155,9 +166,12 @@
       </Docs>
     </Member>
     <Member MemberName="ClearChildren">
-      <MemberSignature Language="C#" Value="protected virtual void ClearChildren (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void ClearChildren (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void ClearChildren(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.ClearChildren(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub ClearChildren (serializationManager As WorkflowMarkupSerializationManager, obj As Object)" />
+      <MemberSignature Language="F#" Value="abstract member ClearChildren : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; unit&#xA;override this.ClearChildren : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; unit" Usage="workflowMarkupSerializer.ClearChildren (serializationManager, obj)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void ClearChildren(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -190,6 +204,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty ClrNamespacesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty ClrNamespacesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.ClrNamespacesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ClrNamespacesProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ClrNamespacesProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.ClrNamespacesProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ ClrNamespacesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -216,6 +233,8 @@
       <MemberSignature Language="C#" Value="protected virtual object CreateInstance (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object CreateInstance(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.CreateInstance(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Type)" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * Type -&gt; obj&#xA;override this.CreateInstance : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * Type -&gt; obj" Usage="workflowMarkupSerializer.CreateInstance (serializationManager, type)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ CreateInstance(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -245,10 +264,22 @@
           <paramref name="type" /> is a null reference (<see langword="Nothing" />).</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Deserialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deserializes the serialized extensible Application Markup Language (XAML) contained in a specified <see cref="T:System.IO.TextReader" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Deserialize">
       <MemberSignature Language="C#" Value="public object Deserialize (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.Deserialize(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Deserialize (reader As XmlReader) As Object" />
+      <MemberSignature Language="F#" Value="member this.Deserialize : System.Xml.XmlReader -&gt; obj" Usage="workflowMarkupSerializer.Deserialize reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Deserialize(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -278,6 +309,9 @@
       <MemberSignature Language="C#" Value="public object Deserialize (System.ComponentModel.Design.Serialization.IDesignerSerializationManager serializationManager, System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Deserialize(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager serializationManager, class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.Deserialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Deserialize (serializationManager As IDesignerSerializationManager, reader As XmlReader) As Object" />
+      <MemberSignature Language="F#" Value="member this.Deserialize : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * System.Xml.XmlReader -&gt; obj" Usage="workflowMarkupSerializer.Deserialize (serializationManager, reader)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Deserialize(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ serializationManager, System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -308,9 +342,12 @@
       </Docs>
     </Member>
     <Member MemberName="DeserializeFromString">
-      <MemberSignature Language="C#" Value="protected virtual object DeserializeFromString (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, Type propertyType, string value);" />
+      <MemberSignature Language="C#" Value="protected internal virtual object DeserializeFromString (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, Type propertyType, string value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance object DeserializeFromString(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, class System.Type propertyType, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.DeserializeFromString(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function DeserializeFromString (serializationManager As WorkflowMarkupSerializationManager, propertyType As Type, value As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member DeserializeFromString : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * Type * string -&gt; obj&#xA;override this.DeserializeFromString : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * Type * string -&gt; obj" Usage="workflowMarkupSerializer.DeserializeFromString (serializationManager, propertyType, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Object ^ DeserializeFromString(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, Type ^ propertyType, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -350,6 +387,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty EventsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty EventsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.EventsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EventsProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable EventsProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.EventsProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ EventsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -385,9 +425,12 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
       </Docs>
     </Member>
     <Member MemberName="GetChildren">
-      <MemberSignature Language="C#" Value="protected virtual System.Collections.IList GetChildren (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Collections.IList GetChildren (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Collections.IList GetChildren(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.GetChildren(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetChildren (serializationManager As WorkflowMarkupSerializationManager, obj As Object) As IList" />
+      <MemberSignature Language="F#" Value="abstract member GetChildren : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; System.Collections.IList&#xA;override this.GetChildren : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; System.Collections.IList" Usage="workflowMarkupSerializer.GetChildren (serializationManager, obj)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Collections::IList ^ GetChildren(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -418,9 +461,12 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
       </Docs>
     </Member>
     <Member MemberName="GetEvents">
-      <MemberSignature Language="C#" Value="protected virtual System.Reflection.EventInfo[] GetEvents (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Reflection.EventInfo[] GetEvents (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Reflection.EventInfo[] GetEvents(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.GetEvents(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetEvents (serializationManager As WorkflowMarkupSerializationManager, obj As Object) As EventInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetEvents : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; System.Reflection.EventInfo[]&#xA;override this.GetEvents : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; System.Reflection.EventInfo[]" Usage="workflowMarkupSerializer.GetEvents (serializationManager, obj)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual cli::array &lt;System::Reflection::EventInfo ^&gt; ^ GetEvents(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -444,9 +490,12 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
       </Docs>
     </Member>
     <Member MemberName="GetProperties">
-      <MemberSignature Language="C#" Value="protected virtual System.Reflection.PropertyInfo[] GetProperties (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Reflection.PropertyInfo[] GetProperties (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Reflection.PropertyInfo[] GetProperties(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.GetProperties(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetProperties (serializationManager As WorkflowMarkupSerializationManager, obj As Object) As PropertyInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetProperties : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; System.Reflection.PropertyInfo[]&#xA;override this.GetProperties : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; System.Reflection.PropertyInfo[]" Usage="workflowMarkupSerializer.GetProperties (serializationManager, obj)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ GetProperties(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -473,6 +522,9 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
       <MemberSignature Language="C#" Value="protected virtual void OnAfterDeserialize (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAfterDeserialize(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.OnAfterDeserialize(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAfterDeserialize (serializationManager As WorkflowMarkupSerializationManager, obj As Object)" />
+      <MemberSignature Language="F#" Value="abstract member OnAfterDeserialize : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; unit&#xA;override this.OnAfterDeserialize : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; unit" Usage="workflowMarkupSerializer.OnAfterDeserialize (serializationManager, obj)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAfterDeserialize(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -505,6 +557,9 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
       <MemberSignature Language="C#" Value="protected virtual void OnAfterSerialize (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAfterSerialize(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.OnAfterSerialize(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAfterSerialize (serializationManager As WorkflowMarkupSerializationManager, obj As Object)" />
+      <MemberSignature Language="F#" Value="abstract member OnAfterSerialize : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; unit&#xA;override this.OnAfterSerialize : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; unit" Usage="workflowMarkupSerializer.OnAfterSerialize (serializationManager, obj)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAfterSerialize(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -537,6 +592,9 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
       <MemberSignature Language="C#" Value="protected virtual void OnBeforeDeserialize (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBeforeDeserialize(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.OnBeforeDeserialize(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeforeDeserialize (serializationManager As WorkflowMarkupSerializationManager, obj As Object)" />
+      <MemberSignature Language="F#" Value="abstract member OnBeforeDeserialize : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; unit&#xA;override this.OnBeforeDeserialize : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; unit" Usage="workflowMarkupSerializer.OnBeforeDeserialize (serializationManager, obj)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeforeDeserialize(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -569,6 +627,9 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
       <MemberSignature Language="C#" Value="protected virtual void OnBeforeSerialize (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBeforeSerialize(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.OnBeforeSerialize(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeforeSerialize (serializationManager As WorkflowMarkupSerializationManager, obj As Object)" />
+      <MemberSignature Language="F#" Value="abstract member OnBeforeSerialize : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; unit&#xA;override this.OnBeforeSerialize : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; unit" Usage="workflowMarkupSerializer.OnBeforeSerialize (serializationManager, obj)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeforeSerialize(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -645,6 +706,9 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
       <MemberSignature Language="C#" Value="public void Serialize (System.Xml.XmlWriter writer, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.Xml.XmlWriter writer, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.Serialize(System.Xml.XmlWriter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Serialize (writer As XmlWriter, obj As Object)" />
+      <MemberSignature Language="F#" Value="member this.Serialize : System.Xml.XmlWriter * obj -&gt; unit" Usage="workflowMarkupSerializer.Serialize (writer, obj)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Serialize(System::Xml::XmlWriter ^ writer, System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -679,6 +743,9 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
       <MemberSignature Language="C#" Value="public void Serialize (System.ComponentModel.Design.Serialization.IDesignerSerializationManager serializationManager, System.Xml.XmlWriter writer, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Serialize(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager serializationManager, class System.Xml.XmlWriter writer, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Xml.XmlWriter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Serialize (serializationManager As IDesignerSerializationManager, writer As XmlWriter, obj As Object)" />
+      <MemberSignature Language="F#" Value="member this.Serialize : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * System.Xml.XmlWriter * obj -&gt; unit" Usage="workflowMarkupSerializer.Serialize (serializationManager, writer, obj)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Serialize(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ serializationManager, System::Xml::XmlWriter ^ writer, System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -712,9 +779,12 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
       </Docs>
     </Member>
     <Member MemberName="SerializeToString">
-      <MemberSignature Language="C#" Value="protected virtual string SerializeToString (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object value);" />
+      <MemberSignature Language="C#" Value="protected internal virtual string SerializeToString (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string SerializeToString(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.SerializeToString(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function SerializeToString (serializationManager As WorkflowMarkupSerializationManager, value As Object) As String" />
+      <MemberSignature Language="F#" Value="abstract member SerializeToString : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; string&#xA;override this.SerializeToString : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; string" Usage="workflowMarkupSerializer.SerializeToString (serializationManager, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::String ^ SerializeToString(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -745,9 +815,12 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
       </Docs>
     </Member>
     <Member MemberName="ShouldSerializeValue">
-      <MemberSignature Language="C#" Value="protected virtual bool ShouldSerializeValue (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object value);" />
+      <MemberSignature Language="C#" Value="protected internal virtual bool ShouldSerializeValue (System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool ShouldSerializeValue(class System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager serializationManager, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.ShouldSerializeValue(System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function ShouldSerializeValue (serializationManager As WorkflowMarkupSerializationManager, value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ShouldSerializeValue : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; bool&#xA;override this.ShouldSerializeValue : System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager * obj -&gt; bool" Usage="workflowMarkupSerializer.ShouldSerializeValue (serializationManager, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual bool ShouldSerializeValue(System::Workflow::ComponentModel::Serialization::WorkflowMarkupSerializationManager ^ serializationManager, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -784,6 +857,9 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty XClassProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty XClassProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.XClassProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly XClassProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable XClassProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.XClassProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ XClassProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -812,6 +888,9 @@ code1.SetValue(WorkflowMarkupSerializer.EventsProperty, eventsHashtable);
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty XCodeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty XCodeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.XCodeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly XCodeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable XCodeProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializer.XCodeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ XCodeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -862,14 +941,5 @@ code1.SetValue(WorkflowMarkupSerializer.XCodeProperty,
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Deserialize">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Deserializes the serialized extensible Application Markup Language (XAML) contained in a specified <see cref="T:System.IO.TextReader" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

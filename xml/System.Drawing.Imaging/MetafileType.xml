@@ -1,7 +1,10 @@
-<Type Name="MetafileType" FullName="System.Drawing.Imaging.MetafileType">
+﻿<Type Name="MetafileType" FullName="System.Drawing.Imaging.MetafileType">
   <TypeSignature Language="C#" Value="public enum MetafileType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MetafileType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.MetafileType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MetafileType" />
+  <TypeSignature Language="F#" Value="type MetafileType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MetafileType" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Emf" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileType Emf = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileType.Emf" />
+      <MemberSignature Language="VB.NET" Value="Emf" />
+      <MemberSignature Language="F#" Value="Emf = 3" Usage="System.Drawing.Imaging.MetafileType.Emf" />
+      <MemberSignature Language="C++ CLI" Value="Emf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies an Enhanced Metafile (EMF) file. Such a file contains only GDI records.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="EmfPlusDual" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileType EmfPlusDual = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileType.EmfPlusDual" />
+      <MemberSignature Language="VB.NET" Value="EmfPlusDual" />
+      <MemberSignature Language="F#" Value="EmfPlusDual = 5" Usage="System.Drawing.Imaging.MetafileType.EmfPlusDual" />
+      <MemberSignature Language="C++ CLI" Value="EmfPlusDual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Specifies an EMF+ Dual file. Such a file contains GDI+ records along with alternative GDI records and can be displayed by using either GDI or GDI+. Displaying the records using GDI may cause some quality degradation.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="EmfPlusOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileType EmfPlusOnly = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileType.EmfPlusOnly" />
+      <MemberSignature Language="VB.NET" Value="EmfPlusOnly" />
+      <MemberSignature Language="F#" Value="EmfPlusOnly = 4" Usage="System.Drawing.Imaging.MetafileType.EmfPlusOnly" />
+      <MemberSignature Language="C++ CLI" Value="EmfPlusOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies an EMF+ file. Such a file contains only GDI+ records and must be displayed by using GDI+. Displaying the records using GDI may cause unpredictable results.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="Invalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileType Invalid = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileType.Invalid" />
+      <MemberSignature Language="VB.NET" Value="Invalid" />
+      <MemberSignature Language="F#" Value="Invalid = 0" Usage="System.Drawing.Imaging.MetafileType.Invalid" />
+      <MemberSignature Language="C++ CLI" Value="Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies a metafile format that is not recognized in GDI+.</summary>
       </Docs>
@@ -82,6 +101,9 @@
       <MemberSignature Language="C#" Value="Wmf" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileType Wmf = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileType.Wmf" />
+      <MemberSignature Language="VB.NET" Value="Wmf" />
+      <MemberSignature Language="F#" Value="Wmf = 1" Usage="System.Drawing.Imaging.MetafileType.Wmf" />
+      <MemberSignature Language="C++ CLI" Value="Wmf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -90,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies a WMF (Windows Metafile) file. Such a file contains only GDI records.</summary>
       </Docs>
@@ -98,6 +121,9 @@
       <MemberSignature Language="C#" Value="WmfPlaceable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.MetafileType WmfPlaceable = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.MetafileType.WmfPlaceable" />
+      <MemberSignature Language="VB.NET" Value="WmfPlaceable" />
+      <MemberSignature Language="F#" Value="WmfPlaceable = 2" Usage="System.Drawing.Imaging.MetafileType.WmfPlaceable" />
+      <MemberSignature Language="C++ CLI" Value="WmfPlaceable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -106,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.MetafileType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies a WMF (Windows Metafile) file that has a placeable metafile header in front of it.</summary>
       </Docs>

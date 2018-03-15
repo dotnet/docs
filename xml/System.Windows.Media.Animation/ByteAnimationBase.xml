@@ -1,7 +1,10 @@
-<Type Name="ByteAnimationBase" FullName="System.Windows.Media.Animation.ByteAnimationBase">
+﻿<Type Name="ByteAnimationBase" FullName="System.Windows.Media.Animation.ByteAnimationBase">
   <TypeSignature Language="C#" Value="public abstract class ByteAnimationBase : System.Windows.Media.Animation.AnimationTimeline" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ByteAnimationBase extends System.Windows.Media.Animation.AnimationTimeline" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.ByteAnimationBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ByteAnimationBase&#xA;Inherits AnimationTimeline" />
+  <TypeSignature Language="F#" Value="type ByteAnimationBase = class&#xA;    inherit AnimationTimeline" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ByteAnimationBase abstract : System::Windows::Media::Animation::AnimationTimeline" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,8 @@
       <MemberSignature Language="C#" Value="protected ByteAnimationBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ByteAnimationBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ByteAnimationBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -38,6 +43,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.ByteAnimationBase Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.ByteAnimationBase Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ByteAnimationBase.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As ByteAnimationBase" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.ByteAnimationBase" Usage="byteAnimationBase.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::ByteAnimationBase ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,10 +70,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCurrentValue">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the current value of the animation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCurrentValue">
       <MemberSignature Language="C#" Value="public byte GetCurrentValue (byte defaultOriginValue, byte defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8 GetCurrentValue(unsigned int8 defaultOriginValue, unsigned int8 defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ByteAnimationBase.GetCurrentValue(System.Byte,System.Byte,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValue : byte * byte * System.Windows.Media.Animation.AnimationClock -&gt; byte" Usage="byteAnimationBase.GetCurrentValue (defaultOriginValue, defaultDestinationValue, animationClock)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Byte GetCurrentValue(System::Byte defaultOriginValue, System::Byte defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -113,6 +132,8 @@
       <MemberSignature Language="C#" Value="public override sealed object GetCurrentValue (object defaultOriginValue, object defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetCurrentValue(object defaultOriginValue, object defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ByteAnimationBase.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValue : obj * obj * System.Windows.Media.Animation.AnimationClock -&gt; obj" Usage="byteAnimationBase.GetCurrentValue (defaultOriginValue, defaultDestinationValue, animationClock)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetCurrentValue(System::Object ^ defaultOriginValue, System::Object ^ defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -160,6 +181,8 @@
       <MemberSignature Language="C#" Value="protected abstract byte GetCurrentValueCore (byte defaultOriginValue, byte defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance unsigned int8 GetCurrentValueCore(unsigned int8 defaultOriginValue, unsigned int8 defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.ByteAnimationBase.GetCurrentValueCore(System.Byte,System.Byte,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueCore : byte * byte * System.Windows.Media.Animation.AnimationClock -&gt; byte" Usage="byteAnimationBase.GetCurrentValueCore (defaultOriginValue, defaultDestinationValue, animationClock)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Byte GetCurrentValueCore(System::Byte defaultOriginValue, System::Byte defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -208,6 +231,9 @@
       <MemberSignature Language="C#" Value="public override sealed Type TargetPropertyType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TargetPropertyType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.ByteAnimationBase.TargetPropertyType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property TargetPropertyType As Type" />
+      <MemberSignature Language="F#" Value="member this.TargetPropertyType : Type" Usage="System.Windows.Media.Animation.ByteAnimationBase.TargetPropertyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetPropertyType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -222,14 +248,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetCurrentValue">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the current value of the animation.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

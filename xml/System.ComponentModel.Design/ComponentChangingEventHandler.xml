@@ -1,7 +1,10 @@
-<Type Name="ComponentChangingEventHandler" FullName="System.ComponentModel.Design.ComponentChangingEventHandler">
+﻿<Type Name="ComponentChangingEventHandler" FullName="System.ComponentModel.Design.ComponentChangingEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ComponentChangingEventHandler(object sender, ComponentChangingEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ComponentChangingEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ComponentChangingEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ComponentChangingEventHandler(sender As Object, e As ComponentChangingEventArgs)" />
+  <TypeSignature Language="F#" Value="type ComponentChangingEventHandler = delegate of obj * ComponentChangingEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ComponentChangingEventHandler(System::Object ^ sender, ComponentChangingEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="ValueSerializerAttribute" FullName="System.Windows.Markup.ValueSerializerAttribute">
+﻿<Type Name="ValueSerializerAttribute" FullName="System.Windows.Markup.ValueSerializerAttribute">
   <TypeSignature Language="C#" Value="public sealed class ValueSerializerAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ValueSerializerAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.ValueSerializerAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ValueSerializerAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ValueSerializerAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ValueSerializerAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -13,7 +16,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Enum | System.AttributeTargets.Method | System.AttributeTargets.Property | System.AttributeTargets.Interface, AllowMultiple=false, Inherited=true)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Enum | System.AttributeTargets.Interface | System.AttributeTargets.Method | System.AttributeTargets.Property | System.AttributeTargets.Struct, AllowMultiple=false, Inherited=true)</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.CompilerServices.TypeForwardedFrom("WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35")</AttributeName>
@@ -38,10 +41,23 @@
     <altmember cref="T:System.Windows.Markup.ValueSerializer" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ValueSerializerAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ValueSerializerAttribute (string valueSerializerTypeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string valueSerializerTypeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializerAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (valueSerializerTypeName As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.ValueSerializerAttribute : string -&gt; System.Windows.Markup.ValueSerializerAttribute" Usage="new System.Windows.Markup.ValueSerializerAttribute valueSerializerTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueSerializerAttribute(System::String ^ valueSerializerTypeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +84,9 @@
       <MemberSignature Language="C#" Value="public ValueSerializerAttribute (Type valueSerializerType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type valueSerializerType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.ValueSerializerAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (valueSerializerType As Type)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.ValueSerializerAttribute : Type -&gt; System.Windows.Markup.ValueSerializerAttribute" Usage="new System.Windows.Markup.ValueSerializerAttribute valueSerializerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueSerializerAttribute(Type ^ valueSerializerType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -87,6 +106,9 @@
       <MemberSignature Language="C#" Value="public Type ValueSerializerType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ValueSerializerType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ValueSerializerAttribute.ValueSerializerType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueSerializerType As Type" />
+      <MemberSignature Language="F#" Value="member this.ValueSerializerType : Type" Usage="System.Windows.Markup.ValueSerializerAttribute.ValueSerializerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ValueSerializerType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,6 +128,9 @@
       <MemberSignature Language="C#" Value="public string ValueSerializerTypeName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValueSerializerTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.ValueSerializerAttribute.ValueSerializerTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueSerializerTypeName As String" />
+      <MemberSignature Language="F#" Value="member this.ValueSerializerTypeName : string" Usage="System.Windows.Markup.ValueSerializerAttribute.ValueSerializerTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValueSerializerTypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -122,15 +147,5 @@
         <altmember cref="P:System.Type.AssemblyQualifiedName" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.ValueSerializerAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

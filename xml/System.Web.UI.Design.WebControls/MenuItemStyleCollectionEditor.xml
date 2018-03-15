@@ -1,7 +1,10 @@
-<Type Name="MenuItemStyleCollectionEditor" FullName="System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor">
+﻿<Type Name="MenuItemStyleCollectionEditor" FullName="System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor">
   <TypeSignature Language="C#" Value="public class MenuItemStyleCollectionEditor : System.ComponentModel.Design.CollectionEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MenuItemStyleCollectionEditor extends System.ComponentModel.Design.CollectionEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class MenuItemStyleCollectionEditor&#xA;Inherits CollectionEditor" />
+  <TypeSignature Language="F#" Value="type MenuItemStyleCollectionEditor = class&#xA;    inherit CollectionEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MenuItemStyleCollectionEditor : System::ComponentModel::Design::CollectionEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +54,8 @@
       <MemberSignature Language="C#" Value="public MenuItemStyleCollectionEditor (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.#ctor(System.Type)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor : Type -&gt; System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor" Usage="new System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MenuItemStyleCollectionEditor(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -80,6 +85,9 @@
       <MemberSignature Language="C#" Value="protected override bool CanSelectMultipleInstances ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool CanSelectMultipleInstances() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CanSelectMultipleInstances" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CanSelectMultipleInstances () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanSelectMultipleInstances : unit -&gt; bool" Usage="menuItemStyleCollectionEditor.CanSelectMultipleInstances " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool CanSelectMultipleInstances();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -112,6 +120,9 @@
       <MemberSignature Language="C#" Value="protected override System.ComponentModel.Design.CollectionEditor.CollectionForm CreateCollectionForm ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ComponentModel.Design.CollectionEditor/CollectionForm CreateCollectionForm() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CreateCollectionForm" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateCollectionForm () As CollectionEditor.CollectionForm" />
+      <MemberSignature Language="F#" Value="override this.CreateCollectionForm : unit -&gt; System.ComponentModel.Design.CollectionEditor.CollectionForm" Usage="menuItemStyleCollectionEditor.CreateCollectionForm " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ComponentModel::Design::CollectionEditor::CollectionForm ^ CreateCollectionForm();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -143,6 +154,9 @@
       <MemberSignature Language="C#" Value="protected override object CreateInstance (Type itemType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateInstance(class System.Type itemType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CreateInstance(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstance (itemType As Type) As Object" />
+      <MemberSignature Language="F#" Value="override this.CreateInstance : Type -&gt; obj" Usage="menuItemStyleCollectionEditor.CreateInstance itemType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateInstance(Type ^ itemType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -178,6 +192,9 @@
       <MemberSignature Language="C#" Value="protected override Type[] CreateNewItemTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type[] CreateNewItemTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.MenuItemStyleCollectionEditor.CreateNewItemTypes" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewItemTypes () As Type()" />
+      <MemberSignature Language="F#" Value="override this.CreateNewItemTypes : unit -&gt; Type[]" Usage="menuItemStyleCollectionEditor.CreateNewItemTypes " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ CreateNewItemTypes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

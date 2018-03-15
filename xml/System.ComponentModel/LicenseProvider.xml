@@ -1,7 +1,10 @@
-<Type Name="LicenseProvider" FullName="System.ComponentModel.LicenseProvider">
+﻿<Type Name="LicenseProvider" FullName="System.ComponentModel.LicenseProvider">
   <TypeSignature Language="C#" Value="public abstract class LicenseProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit LicenseProvider extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.LicenseProvider" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class LicenseProvider" />
+  <TypeSignature Language="F#" Value="type LicenseProvider = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LicenseProvider abstract" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,6 +54,8 @@
       <MemberSignature Language="C#" Value="protected LicenseProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; LicenseProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -75,6 +80,8 @@
       <MemberSignature Language="C#" Value="public abstract System.ComponentModel.License GetLicense (System.ComponentModel.LicenseContext context, Type type, object instance, bool allowExceptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.License GetLicense(class System.ComponentModel.LicenseContext context, class System.Type type, object instance, bool allowExceptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.LicenseProvider.GetLicense(System.ComponentModel.LicenseContext,System.Type,System.Object,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member GetLicense : System.ComponentModel.LicenseContext * Type * obj * bool -&gt; System.ComponentModel.License" Usage="licenseProvider.GetLicense (context, type, instance, allowExceptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ComponentModel::License ^ GetLicense(System::ComponentModel::LicenseContext ^ context, Type ^ type, System::Object ^ instance, bool allowExceptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="RuleInvokeAttribute" FullName="System.Workflow.Activities.Rules.RuleInvokeAttribute">
+﻿<Type Name="RuleInvokeAttribute" FullName="System.Workflow.Activities.Rules.RuleInvokeAttribute">
   <TypeSignature Language="C#" Value="public sealed class RuleInvokeAttribute : System.Workflow.Activities.Rules.RuleAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RuleInvokeAttribute extends System.Workflow.Activities.Rules.RuleAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleInvokeAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RuleInvokeAttribute&#xA;Inherits RuleAttribute" />
+  <TypeSignature Language="F#" Value="type RuleInvokeAttribute = class&#xA;    inherit RuleAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleInvokeAttribute sealed : System::Workflow::Activities::Rules::RuleAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +48,9 @@ bool DoSomething()
       <MemberSignature Language="C#" Value="public RuleInvokeAttribute (string methodInvoked);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string methodInvoked) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleInvokeAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (methodInvoked As String)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleInvokeAttribute : string -&gt; System.Workflow.Activities.Rules.RuleInvokeAttribute" Usage="new System.Workflow.Activities.Rules.RuleInvokeAttribute methodInvoked" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleInvokeAttribute(System::String ^ methodInvoked);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -63,6 +69,9 @@ bool DoSomething()
       <MemberSignature Language="C#" Value="public string MethodInvoked { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MethodInvoked" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleInvokeAttribute.MethodInvoked" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MethodInvoked As String" />
+      <MemberSignature Language="F#" Value="member this.MethodInvoked : string" Usage="System.Workflow.Activities.Rules.RuleInvokeAttribute.MethodInvoked" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodInvoked { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

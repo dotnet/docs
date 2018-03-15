@@ -1,7 +1,10 @@
-<Type Name="ISymbolMethod" FullName="System.Diagnostics.SymbolStore.ISymbolMethod">
+﻿<Type Name="ISymbolMethod" FullName="System.Diagnostics.SymbolStore.ISymbolMethod">
   <TypeSignature Language="C#" Value="public interface ISymbolMethod" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISymbolMethod" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.ISymbolMethod" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISymbolMethod" />
+  <TypeSignature Language="F#" Value="type ISymbolMethod = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISymbolMethod" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.SymbolStore.ISymbolNamespace GetNamespace ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Diagnostics.SymbolStore.ISymbolNamespace GetNamespace() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolMethod.GetNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNamespace () As ISymbolNamespace" />
+      <MemberSignature Language="F#" Value="abstract member GetNamespace : unit -&gt; System.Diagnostics.SymbolStore.ISymbolNamespace" Usage="iSymbolMethod.GetNamespace " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::SymbolStore::ISymbolNamespace ^ GetNamespace();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +76,9 @@
       <MemberSignature Language="C#" Value="public int GetOffset (System.Diagnostics.SymbolStore.ISymbolDocument document, int line, int column);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetOffset(class System.Diagnostics.SymbolStore.ISymbolDocument document, int32 line, int32 column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolMethod.GetOffset(System.Diagnostics.SymbolStore.ISymbolDocument,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOffset (document As ISymbolDocument, line As Integer, column As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetOffset : System.Diagnostics.SymbolStore.ISymbolDocument * int * int -&gt; int" Usage="iSymbolMethod.GetOffset (document, line, column)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetOffset(System::Diagnostics::SymbolStore::ISymbolDocument ^ document, int line, int column);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -112,6 +121,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.SymbolStore.ISymbolVariable[] GetParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Diagnostics.SymbolStore.ISymbolVariable[] GetParameters() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolMethod.GetParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParameters () As ISymbolVariable()" />
+      <MemberSignature Language="F#" Value="abstract member GetParameters : unit -&gt; System.Diagnostics.SymbolStore.ISymbolVariable[]" Usage="iSymbolMethod.GetParameters " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Diagnostics::SymbolStore::ISymbolVariable ^&gt; ^ GetParameters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +159,9 @@
       <MemberSignature Language="C#" Value="public int[] GetRanges (System.Diagnostics.SymbolStore.ISymbolDocument document, int line, int column);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32[] GetRanges(class System.Diagnostics.SymbolStore.ISymbolDocument document, int32 line, int32 column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolMethod.GetRanges(System.Diagnostics.SymbolStore.ISymbolDocument,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRanges (document As ISymbolDocument, line As Integer, column As Integer) As Integer()" />
+      <MemberSignature Language="F#" Value="abstract member GetRanges : System.Diagnostics.SymbolStore.ISymbolDocument * int * int -&gt; int[]" Usage="iSymbolMethod.GetRanges (document, line, column)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;int&gt; ^ GetRanges(System::Diagnostics::SymbolStore::ISymbolDocument ^ document, int line, int column);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -189,6 +204,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.SymbolStore.ISymbolScope GetScope (int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Diagnostics.SymbolStore.ISymbolScope GetScope(int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolMethod.GetScope(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetScope (offset As Integer) As ISymbolScope" />
+      <MemberSignature Language="F#" Value="abstract member GetScope : int -&gt; System.Diagnostics.SymbolStore.ISymbolScope" Usage="iSymbolMethod.GetScope offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::SymbolStore::ISymbolScope ^ GetScope(int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -227,6 +245,9 @@
       <MemberSignature Language="C#" Value="public void GetSequencePoints (int[] offsets, System.Diagnostics.SymbolStore.ISymbolDocument[] documents, int[] lines, int[] columns, int[] endLines, int[] endColumns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetSequencePoints(int32[] offsets, class System.Diagnostics.SymbolStore.ISymbolDocument[] documents, int32[] lines, int32[] columns, int32[] endLines, int32[] endColumns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolMethod.GetSequencePoints(System.Int32[],System.Diagnostics.SymbolStore.ISymbolDocument[],System.Int32[],System.Int32[],System.Int32[],System.Int32[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetSequencePoints (offsets As Integer(), documents As ISymbolDocument(), lines As Integer(), columns As Integer(), endLines As Integer(), endColumns As Integer())" />
+      <MemberSignature Language="F#" Value="abstract member GetSequencePoints : int[] * System.Diagnostics.SymbolStore.ISymbolDocument[] * int[] * int[] * int[] * int[] -&gt; unit" Usage="iSymbolMethod.GetSequencePoints (offsets, documents, lines, columns, endLines, endColumns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetSequencePoints(cli::array &lt;int&gt; ^ offsets, cli::array &lt;System::Diagnostics::SymbolStore::ISymbolDocument ^&gt; ^ documents, cli::array &lt;int&gt; ^ lines, cli::array &lt;int&gt; ^ columns, cli::array &lt;int&gt; ^ endLines, cli::array &lt;int&gt; ^ endColumns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -276,6 +297,9 @@
       <MemberSignature Language="C#" Value="public bool GetSourceStartEnd (System.Diagnostics.SymbolStore.ISymbolDocument[] docs, int[] lines, int[] columns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetSourceStartEnd(class System.Diagnostics.SymbolStore.ISymbolDocument[] docs, int32[] lines, int32[] columns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolMethod.GetSourceStartEnd(System.Diagnostics.SymbolStore.ISymbolDocument[],System.Int32[],System.Int32[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSourceStartEnd (docs As ISymbolDocument(), lines As Integer(), columns As Integer()) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member GetSourceStartEnd : System.Diagnostics.SymbolStore.ISymbolDocument[] * int[] * int[] -&gt; bool" Usage="iSymbolMethod.GetSourceStartEnd (docs, lines, columns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetSourceStartEnd(cli::array &lt;System::Diagnostics::SymbolStore::ISymbolDocument ^&gt; ^ docs, cli::array &lt;int&gt; ^ lines, cli::array &lt;int&gt; ^ columns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -319,6 +343,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.SymbolStore.ISymbolScope RootScope { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.SymbolStore.ISymbolScope RootScope" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolMethod.RootScope" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RootScope As ISymbolScope" />
+      <MemberSignature Language="F#" Value="member this.RootScope : System.Diagnostics.SymbolStore.ISymbolScope" Usage="System.Diagnostics.SymbolStore.ISymbolMethod.RootScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::SymbolStore::ISymbolScope ^ RootScope { System::Diagnostics::SymbolStore::ISymbolScope ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -346,6 +373,9 @@
       <MemberSignature Language="C#" Value="public int SequencePointCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SequencePointCount" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolMethod.SequencePointCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SequencePointCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.SequencePointCount : int" Usage="System.Diagnostics.SymbolStore.ISymbolMethod.SequencePointCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SequencePointCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -373,6 +403,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.SymbolStore.SymbolToken Token { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.SymbolStore.SymbolToken Token" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.SymbolStore.ISymbolMethod.Token" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Token As SymbolToken" />
+      <MemberSignature Language="F#" Value="member this.Token : System.Diagnostics.SymbolStore.SymbolToken" Usage="System.Diagnostics.SymbolStore.ISymbolMethod.Token" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::SymbolStore::SymbolToken Token { System::Diagnostics::SymbolStore::SymbolToken get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ErrorWebPart" FullName="System.Web.UI.WebControls.WebParts.ErrorWebPart">
+﻿<Type Name="ErrorWebPart" FullName="System.Web.UI.WebControls.WebParts.ErrorWebPart">
   <TypeSignature Language="C#" Value="public class ErrorWebPart : System.Web.UI.WebControls.WebParts.ProxyWebPart, System.Web.UI.WebControls.WebParts.ITrackingPersonalizable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ErrorWebPart extends System.Web.UI.WebControls.WebParts.ProxyWebPart implements class System.Web.UI.WebControls.WebParts.ITrackingPersonalizable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ErrorWebPart" />
+  <TypeSignature Language="VB.NET" Value="Public Class ErrorWebPart&#xA;Inherits ProxyWebPart&#xA;Implements ITrackingPersonalizable" />
+  <TypeSignature Language="F#" Value="type ErrorWebPart = class&#xA;    inherit ProxyWebPart&#xA;    interface ITrackingPersonalizable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ErrorWebPart : System::Web::UI::WebControls::WebParts::ProxyWebPart, System::Web::UI::WebControls::WebParts::ITrackingPersonalizable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +53,9 @@
       <MemberSignature Language="C#" Value="public ErrorWebPart (string originalID, string originalTypeName, string originalPath, string genericWebPartID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string originalID, string originalTypeName, string originalPath, string genericWebPartID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ErrorWebPart.#ctor(System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (originalID As String, originalTypeName As String, originalPath As String, genericWebPartID As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.ErrorWebPart : string * string * string * string -&gt; System.Web.UI.WebControls.WebParts.ErrorWebPart" Usage="new System.Web.UI.WebControls.WebParts.ErrorWebPart (originalID, originalTypeName, originalPath, genericWebPartID)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ErrorWebPart(System::String ^ originalID, System::String ^ originalTypeName, System::String ^ originalPath, System::String ^ genericWebPartID);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +90,9 @@
       <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ErrorWebPart.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="errorWebPart.AddAttributesToRender writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +127,9 @@
       <MemberSignature Language="C#" Value="protected virtual void EndLoadPersonalization ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EndLoadPersonalization() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ErrorWebPart.EndLoadPersonalization" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub EndLoadPersonalization ()" />
+      <MemberSignature Language="F#" Value="abstract member EndLoadPersonalization : unit -&gt; unit&#xA;override this.EndLoadPersonalization : unit -&gt; unit" Usage="errorWebPart.EndLoadPersonalization " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EndLoadPersonalization();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,6 +161,9 @@
       <MemberSignature Language="C#" Value="public string ErrorMessage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorMessage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ErrorWebPart.ErrorMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorMessage As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorMessage : string with get, set" Usage="System.Web.UI.WebControls.WebParts.ErrorWebPart.ErrorMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorMessage { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -177,9 +192,12 @@
       </Docs>
     </Member>
     <Member MemberName="RenderContents">
-      <MemberSignature Language="C#" Value="protected override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void RenderContents (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderContents(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ErrorWebPart.RenderContents(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderContents (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderContents : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="errorWebPart.RenderContents writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderContents(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -209,7 +227,12 @@
       <MemberSignature Language="C#" Value="void ITrackingPersonalizable.BeginLoad ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.BeginLoad() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ErrorWebPart.System#Web#UI#WebControls#WebParts#ITrackingPersonalizable#BeginLoad" />
+      <MemberSignature Language="VB.NET" Value="Sub BeginLoad () Implements ITrackingPersonalizable.BeginLoad" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.BeginLoad() = System::Web::UI::WebControls::WebParts::ITrackingPersonalizable::BeginLoad;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.BeginLoad</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -227,7 +250,12 @@
       <MemberSignature Language="C#" Value="void ITrackingPersonalizable.BeginSave ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.BeginSave() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ErrorWebPart.System#Web#UI#WebControls#WebParts#ITrackingPersonalizable#BeginSave" />
+      <MemberSignature Language="VB.NET" Value="Sub BeginSave () Implements ITrackingPersonalizable.BeginSave" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.BeginSave() = System::Web::UI::WebControls::WebParts::ITrackingPersonalizable::BeginSave;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.BeginSave</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -245,7 +273,12 @@
       <MemberSignature Language="C#" Value="void ITrackingPersonalizable.EndLoad ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.EndLoad() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ErrorWebPart.System#Web#UI#WebControls#WebParts#ITrackingPersonalizable#EndLoad" />
+      <MemberSignature Language="VB.NET" Value="Sub EndLoad () Implements ITrackingPersonalizable.EndLoad" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.EndLoad() = System::Web::UI::WebControls::WebParts::ITrackingPersonalizable::EndLoad;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.EndLoad</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -263,7 +296,12 @@
       <MemberSignature Language="C#" Value="void ITrackingPersonalizable.EndSave ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.EndSave() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ErrorWebPart.System#Web#UI#WebControls#WebParts#ITrackingPersonalizable#EndSave" />
+      <MemberSignature Language="VB.NET" Value="Sub EndSave () Implements ITrackingPersonalizable.EndSave" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.EndSave() = System::Web::UI::WebControls::WebParts::ITrackingPersonalizable::EndSave;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.EndSave</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -281,7 +319,13 @@
       <MemberSignature Language="C#" Value="bool System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.TracksChanges { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.TracksChanges" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ErrorWebPart.System#Web#UI#WebControls#WebParts#ITrackingPersonalizable#TracksChanges" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property TracksChanges As Boolean Implements ITrackingPersonalizable.TracksChanges" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.WebParts.ErrorWebPart.System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.TracksChanges" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.TracksChanges { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.WebControls.WebParts.ITrackingPersonalizable.TracksChanges</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

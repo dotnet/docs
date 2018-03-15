@@ -1,7 +1,10 @@
-<Type Name="HtmlMeta" FullName="System.Web.UI.HtmlControls.HtmlMeta">
+﻿<Type Name="HtmlMeta" FullName="System.Web.UI.HtmlControls.HtmlMeta">
   <TypeSignature Language="C#" Value="public class HtmlMeta : System.Web.UI.HtmlControls.HtmlControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlMeta extends System.Web.UI.HtmlControls.HtmlControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlMeta" />
+  <TypeSignature Language="VB.NET" Value="Public Class HtmlMeta&#xA;Inherits HtmlControl" />
+  <TypeSignature Language="F#" Value="type HtmlMeta = class&#xA;    inherit HtmlControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlMeta : System::Web::UI::HtmlControls::HtmlControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +48,8 @@
       <MemberSignature Language="C#" Value="public HtmlMeta ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlMeta.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlMeta();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +83,9 @@
       <MemberSignature Language="C#" Value="public virtual string Content { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Content" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlMeta.Content" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Content As String" />
+      <MemberSignature Language="F#" Value="member this.Content : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlMeta.Content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Content { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,7 +96,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -123,6 +131,9 @@
       <MemberSignature Language="C#" Value="public virtual string HttpEquiv { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HttpEquiv" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlMeta.HttpEquiv" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HttpEquiv As String" />
+      <MemberSignature Language="F#" Value="member this.HttpEquiv : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlMeta.HttpEquiv" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HttpEquiv { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,7 +144,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -160,6 +171,9 @@
       <MemberSignature Language="C#" Value="public virtual string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlMeta.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlMeta.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,7 +184,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -202,9 +216,12 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlMeta.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlMeta.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -237,6 +254,9 @@
       <MemberSignature Language="C#" Value="public virtual string Scheme { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Scheme" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlMeta.Scheme" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Scheme As String" />
+      <MemberSignature Language="F#" Value="member this.Scheme : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlMeta.Scheme" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Scheme { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -247,7 +267,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

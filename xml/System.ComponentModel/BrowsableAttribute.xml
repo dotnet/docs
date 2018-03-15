@@ -1,7 +1,10 @@
-<Type Name="BrowsableAttribute" FullName="System.ComponentModel.BrowsableAttribute">
+﻿<Type Name="BrowsableAttribute" FullName="System.ComponentModel.BrowsableAttribute">
   <TypeSignature Language="C#" Value="public sealed class BrowsableAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BrowsableAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.BrowsableAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BrowsableAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type BrowsableAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BrowsableAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -74,6 +77,9 @@
       <MemberSignature Language="C#" Value="public BrowsableAttribute (bool browsable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool browsable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BrowsableAttribute.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (browsable As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.BrowsableAttribute : bool -&gt; System.ComponentModel.BrowsableAttribute" Usage="new System.ComponentModel.BrowsableAttribute browsable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BrowsableAttribute(bool browsable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -120,6 +126,9 @@
       <MemberSignature Language="C#" Value="public bool Browsable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Browsable" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.BrowsableAttribute.Browsable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Browsable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Browsable : bool" Usage="System.ComponentModel.BrowsableAttribute.Browsable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Browsable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -174,6 +183,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.BrowsableAttribute Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.BrowsableAttribute Default" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.BrowsableAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As BrowsableAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.BrowsableAttribute" Usage="System.ComponentModel.BrowsableAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::BrowsableAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -211,6 +223,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BrowsableAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="browsableAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -244,6 +259,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BrowsableAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="browsableAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -273,6 +291,9 @@
       <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.BrowsableAttribute.IsDefaultAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="browsableAttribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -302,6 +323,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.BrowsableAttribute No;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.BrowsableAttribute No" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.BrowsableAttribute.No" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As BrowsableAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.ComponentModel.BrowsableAttribute" Usage="System.ComponentModel.BrowsableAttribute.No" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::BrowsableAttribute ^ No;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -338,6 +362,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.BrowsableAttribute Yes;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.BrowsableAttribute Yes" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.BrowsableAttribute.Yes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As BrowsableAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.ComponentModel.BrowsableAttribute" Usage="System.ComponentModel.BrowsableAttribute.Yes" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::BrowsableAttribute ^ Yes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>

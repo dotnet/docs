@@ -1,7 +1,10 @@
-<Type Name="AsyncCompletedEventHandler" FullName="System.ComponentModel.AsyncCompletedEventHandler">
+﻿<Type Name="AsyncCompletedEventHandler" FullName="System.ComponentModel.AsyncCompletedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void AsyncCompletedEventHandler(object sender, AsyncCompletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AsyncCompletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.AsyncCompletedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub AsyncCompletedEventHandler(sender As Object, e As AsyncCompletedEventArgs)" />
+  <TypeSignature Language="F#" Value="type AsyncCompletedEventHandler = delegate of obj * AsyncCompletedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void AsyncCompletedEventHandler(System::Object ^ sender, AsyncCompletedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="DynamicUpdateServices" FullName="System.Activities.DynamicUpdate.DynamicUpdateServices">
+﻿<Type Name="DynamicUpdateServices" FullName="System.Activities.DynamicUpdate.DynamicUpdateServices">
   <TypeSignature Language="C#" Value="public static class DynamicUpdateServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DynamicUpdateServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.DynamicUpdateServices" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicUpdateServices" />
+  <TypeSignature Language="F#" Value="type DynamicUpdateServices = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicUpdateServices abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +82,9 @@
       <MemberSignature Language="C#" Value="public static System.Activities.DynamicUpdate.DynamicUpdateMap CreateUpdateMap (System.Activities.Activity updatedWorkflowDefinition);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.DynamicUpdate.DynamicUpdateMap CreateUpdateMap(class System.Activities.Activity updatedWorkflowDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap(System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateUpdateMap (updatedWorkflowDefinition As Activity) As DynamicUpdateMap" />
+      <MemberSignature Language="F#" Value="static member CreateUpdateMap : System.Activities.Activity -&gt; System.Activities.DynamicUpdate.DynamicUpdateMap" Usage="System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap updatedWorkflowDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::DynamicUpdate::DynamicUpdateMap ^ CreateUpdateMap(System::Activities::Activity ^ updatedWorkflowDefinition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -126,6 +132,9 @@
       <MemberSignature Language="C#" Value="public static System.Activities.DynamicUpdate.DynamicUpdateMap CreateUpdateMap (System.Activities.ActivityBuilder updatedActivityDefinition);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.DynamicUpdate.DynamicUpdateMap CreateUpdateMap(class System.Activities.ActivityBuilder updatedActivityDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap(System.Activities.ActivityBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateUpdateMap (updatedActivityDefinition As ActivityBuilder) As DynamicUpdateMap" />
+      <MemberSignature Language="F#" Value="static member CreateUpdateMap : System.Activities.ActivityBuilder -&gt; System.Activities.DynamicUpdate.DynamicUpdateMap" Usage="System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap updatedActivityDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::DynamicUpdate::DynamicUpdateMap ^ CreateUpdateMap(System::Activities::ActivityBuilder ^ updatedActivityDefinition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -173,6 +182,9 @@
       <MemberSignature Language="C#" Value="public static System.Activities.DynamicUpdate.DynamicUpdateMap CreateUpdateMap (System.Activities.Activity updatedWorkflowDefinition, System.Collections.Generic.IEnumerable&lt;System.Activities.Activity&gt; disallowUpdateInsideActivities);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.DynamicUpdate.DynamicUpdateMap CreateUpdateMap(class System.Activities.Activity updatedWorkflowDefinition, class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Activity&gt; disallowUpdateInsideActivities) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap(System.Activities.Activity,System.Collections.Generic.IEnumerable{System.Activities.Activity})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateUpdateMap (updatedWorkflowDefinition As Activity, disallowUpdateInsideActivities As IEnumerable(Of Activity)) As DynamicUpdateMap" />
+      <MemberSignature Language="F#" Value="static member CreateUpdateMap : System.Activities.Activity * seq&lt;System.Activities.Activity&gt; -&gt; System.Activities.DynamicUpdate.DynamicUpdateMap" Usage="System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap (updatedWorkflowDefinition, disallowUpdateInsideActivities)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::DynamicUpdate::DynamicUpdateMap ^ CreateUpdateMap(System::Activities::Activity ^ updatedWorkflowDefinition, System::Collections::Generic::IEnumerable&lt;System::Activities::Activity ^&gt; ^ disallowUpdateInsideActivities);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -222,6 +234,9 @@
       <MemberSignature Language="C#" Value="public static System.Activities.DynamicUpdate.DynamicUpdateMap CreateUpdateMap (System.Activities.ActivityBuilder updatedActivityDefinition, System.Collections.Generic.IEnumerable&lt;System.Activities.Activity&gt; disallowUpdateInsideActivities);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.DynamicUpdate.DynamicUpdateMap CreateUpdateMap(class System.Activities.ActivityBuilder updatedActivityDefinition, class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Activity&gt; disallowUpdateInsideActivities) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap(System.Activities.ActivityBuilder,System.Collections.Generic.IEnumerable{System.Activities.Activity})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateUpdateMap (updatedActivityDefinition As ActivityBuilder, disallowUpdateInsideActivities As IEnumerable(Of Activity)) As DynamicUpdateMap" />
+      <MemberSignature Language="F#" Value="static member CreateUpdateMap : System.Activities.ActivityBuilder * seq&lt;System.Activities.Activity&gt; -&gt; System.Activities.DynamicUpdate.DynamicUpdateMap" Usage="System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap (updatedActivityDefinition, disallowUpdateInsideActivities)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::DynamicUpdate::DynamicUpdateMap ^ CreateUpdateMap(System::Activities::ActivityBuilder ^ updatedActivityDefinition, System::Collections::Generic::IEnumerable&lt;System::Activities::Activity ^&gt; ^ disallowUpdateInsideActivities);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -271,6 +286,9 @@
       <MemberSignature Language="C#" Value="public static System.Activities.DynamicUpdate.DynamicUpdateMap CreateUpdateMap (System.Activities.Activity updatedWorkflowDefinition, System.Collections.Generic.IEnumerable&lt;System.Activities.Activity&gt; disallowUpdateInsideActivities, out System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt; activitiesBlockingUpdate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.DynamicUpdate.DynamicUpdateMap CreateUpdateMap(class System.Activities.Activity updatedWorkflowDefinition, class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Activity&gt; disallowUpdateInsideActivities, [out] class System.Collections.Generic.IList`1&lt;class System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;&amp; activitiesBlockingUpdate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap(System.Activities.Activity,System.Collections.Generic.IEnumerable{System.Activities.Activity},System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateUpdateMap (updatedWorkflowDefinition As Activity, disallowUpdateInsideActivities As IEnumerable(Of Activity), ByRef activitiesBlockingUpdate As IList(Of ActivityBlockingUpdate)) As DynamicUpdateMap" />
+      <MemberSignature Language="F#" Value="static member CreateUpdateMap : System.Activities.Activity * seq&lt;System.Activities.Activity&gt; *  -&gt; System.Activities.DynamicUpdate.DynamicUpdateMap" Usage="System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap (updatedWorkflowDefinition, disallowUpdateInsideActivities, activitiesBlockingUpdate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::DynamicUpdate::DynamicUpdateMap ^ CreateUpdateMap(System::Activities::Activity ^ updatedWorkflowDefinition, System::Collections::Generic::IEnumerable&lt;System::Activities::Activity ^&gt; ^ disallowUpdateInsideActivities, [Runtime::InteropServices::Out] System::Collections::Generic::IList&lt;System::Activities::DynamicUpdate::ActivityBlockingUpdate ^&gt; ^ % activitiesBlockingUpdate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -322,6 +340,9 @@
       <MemberSignature Language="C#" Value="public static System.Activities.DynamicUpdate.DynamicUpdateMap CreateUpdateMap (System.Activities.ActivityBuilder updatedActivityDefinition, System.Collections.Generic.IEnumerable&lt;System.Activities.Activity&gt; disallowUpdateInsideActivities, out System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt; activitiesBlockingUpdate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.DynamicUpdate.DynamicUpdateMap CreateUpdateMap(class System.Activities.ActivityBuilder updatedActivityDefinition, class System.Collections.Generic.IEnumerable`1&lt;class System.Activities.Activity&gt; disallowUpdateInsideActivities, [out] class System.Collections.Generic.IList`1&lt;class System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;&amp; activitiesBlockingUpdate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap(System.Activities.ActivityBuilder,System.Collections.Generic.IEnumerable{System.Activities.Activity},System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateUpdateMap (updatedActivityDefinition As ActivityBuilder, disallowUpdateInsideActivities As IEnumerable(Of Activity), ByRef activitiesBlockingUpdate As IList(Of ActivityBlockingUpdate)) As DynamicUpdateMap" />
+      <MemberSignature Language="F#" Value="static member CreateUpdateMap : System.Activities.ActivityBuilder * seq&lt;System.Activities.Activity&gt; *  -&gt; System.Activities.DynamicUpdate.DynamicUpdateMap" Usage="System.Activities.DynamicUpdate.DynamicUpdateServices.CreateUpdateMap (updatedActivityDefinition, disallowUpdateInsideActivities, activitiesBlockingUpdate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::DynamicUpdate::DynamicUpdateMap ^ CreateUpdateMap(System::Activities::ActivityBuilder ^ updatedActivityDefinition, System::Collections::Generic::IEnumerable&lt;System::Activities::Activity ^&gt; ^ disallowUpdateInsideActivities, [Runtime::InteropServices::Out] System::Collections::Generic::IList&lt;System::Activities::DynamicUpdate::ActivityBlockingUpdate ^&gt; ^ % activitiesBlockingUpdate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -373,6 +394,9 @@
       <MemberSignature Language="C#" Value="public static System.Activities.DynamicUpdate.DynamicUpdateMap GetImplementationMap (System.Activities.Activity targetActivity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Activities.DynamicUpdate.DynamicUpdateMap GetImplementationMap(class System.Activities.Activity targetActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateServices.GetImplementationMap(System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetImplementationMap (targetActivity As Activity) As DynamicUpdateMap" />
+      <MemberSignature Language="F#" Value="static member GetImplementationMap : System.Activities.Activity -&gt; System.Activities.DynamicUpdate.DynamicUpdateMap" Usage="System.Activities.DynamicUpdate.DynamicUpdateServices.GetImplementationMap targetActivity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::DynamicUpdate::DynamicUpdateMap ^ GetImplementationMap(System::Activities::Activity ^ targetActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -455,6 +479,9 @@
       <MemberSignature Language="C#" Value="public static void PrepareForUpdate (System.Activities.Activity workflowDefinitionToBeUpdated);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PrepareForUpdate(class System.Activities.Activity workflowDefinitionToBeUpdated) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate(System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub PrepareForUpdate (workflowDefinitionToBeUpdated As Activity)" />
+      <MemberSignature Language="F#" Value="static member PrepareForUpdate : System.Activities.Activity -&gt; unit" Usage="System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate workflowDefinitionToBeUpdated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PrepareForUpdate(System::Activities::Activity ^ workflowDefinitionToBeUpdated);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -501,6 +528,9 @@
       <MemberSignature Language="C#" Value="public static void PrepareForUpdate (System.Activities.ActivityBuilder activityDefinitionToBeUpdated);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void PrepareForUpdate(class System.Activities.ActivityBuilder activityDefinitionToBeUpdated) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate(System.Activities.ActivityBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub PrepareForUpdate (activityDefinitionToBeUpdated As ActivityBuilder)" />
+      <MemberSignature Language="F#" Value="static member PrepareForUpdate : System.Activities.ActivityBuilder -&gt; unit" Usage="System.Activities.DynamicUpdate.DynamicUpdateServices.PrepareForUpdate activityDefinitionToBeUpdated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void PrepareForUpdate(System::Activities::ActivityBuilder ^ activityDefinitionToBeUpdated);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -547,6 +577,9 @@
       <MemberSignature Language="C#" Value="public static void SetImplementationMap (System.Activities.Activity targetActivity, System.Activities.DynamicUpdate.DynamicUpdateMap implementationMap);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetImplementationMap(class System.Activities.Activity targetActivity, class System.Activities.DynamicUpdate.DynamicUpdateMap implementationMap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.DynamicUpdateServices.SetImplementationMap(System.Activities.Activity,System.Activities.DynamicUpdate.DynamicUpdateMap)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetImplementationMap (targetActivity As Activity, implementationMap As DynamicUpdateMap)" />
+      <MemberSignature Language="F#" Value="static member SetImplementationMap : System.Activities.Activity * System.Activities.DynamicUpdate.DynamicUpdateMap -&gt; unit" Usage="System.Activities.DynamicUpdate.DynamicUpdateServices.SetImplementationMap (targetActivity, implementationMap)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetImplementationMap(System::Activities::Activity ^ targetActivity, System::Activities::DynamicUpdate::DynamicUpdateMap ^ implementationMap);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

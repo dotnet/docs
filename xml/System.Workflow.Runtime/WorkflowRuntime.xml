@@ -1,7 +1,10 @@
-<Type Name="WorkflowRuntime" FullName="System.Workflow.Runtime.WorkflowRuntime">
+﻿<Type Name="WorkflowRuntime" FullName="System.Workflow.Runtime.WorkflowRuntime">
   <TypeSignature Language="C#" Value="public class WorkflowRuntime : IDisposable, IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi WorkflowRuntime extends System.Object implements class System.IDisposable, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.WorkflowRuntime" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowRuntime&#xA;Implements IDisposable, IServiceProvider" />
+  <TypeSignature Language="F#" Value="type WorkflowRuntime = class&#xA;    interface IServiceProvider&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowRuntime : IDisposable, IServiceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,10 +52,21 @@
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowRuntime ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowRuntime();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -94,6 +108,9 @@
       <MemberSignature Language="C#" Value="public WorkflowRuntime (string configSectionName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string configSectionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (configSectionName As String)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.WorkflowRuntime : string -&gt; System.Workflow.Runtime.WorkflowRuntime" Usage="new System.Workflow.Runtime.WorkflowRuntime configSectionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowRuntime(System::String ^ configSectionName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -137,6 +154,9 @@
       <MemberSignature Language="C#" Value="public WorkflowRuntime (System.Workflow.Runtime.Configuration.WorkflowRuntimeSection settings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.Runtime.Configuration.WorkflowRuntimeSection settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.#ctor(System.Workflow.Runtime.Configuration.WorkflowRuntimeSection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (settings As WorkflowRuntimeSection)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.WorkflowRuntime : System.Workflow.Runtime.Configuration.WorkflowRuntimeSection -&gt; System.Workflow.Runtime.WorkflowRuntime" Usage="new System.Workflow.Runtime.WorkflowRuntime settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowRuntime(System::Workflow::Runtime::Configuration::WorkflowRuntimeSection ^ settings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -177,6 +197,9 @@
       <MemberSignature Language="C#" Value="public void AddService (object service);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddService(object service) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.AddService(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddService (service As Object)" />
+      <MemberSignature Language="F#" Value="member this.AddService : obj -&gt; unit" Usage="workflowRuntime.AddService service" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddService(System::Object ^ service);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -244,6 +267,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowInstance CreateWorkflow (Type workflowType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Runtime.WorkflowInstance CreateWorkflow(class System.Type workflowType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateWorkflow (workflowType As Type) As WorkflowInstance" />
+      <MemberSignature Language="F#" Value="member this.CreateWorkflow : Type -&gt; System.Workflow.Runtime.WorkflowInstance" Usage="workflowRuntime.CreateWorkflow workflowType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Runtime::WorkflowInstance ^ CreateWorkflow(Type ^ workflowType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -287,6 +313,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowInstance CreateWorkflow (System.Xml.XmlReader workflowDefinitionReader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Runtime.WorkflowInstance CreateWorkflow(class System.Xml.XmlReader workflowDefinitionReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateWorkflow (workflowDefinitionReader As XmlReader) As WorkflowInstance" />
+      <MemberSignature Language="F#" Value="member this.CreateWorkflow : System.Xml.XmlReader -&gt; System.Workflow.Runtime.WorkflowInstance" Usage="workflowRuntime.CreateWorkflow workflowDefinitionReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Runtime::WorkflowInstance ^ CreateWorkflow(System::Xml::XmlReader ^ workflowDefinitionReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -360,6 +389,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowInstance CreateWorkflow (Type workflowType, System.Collections.Generic.Dictionary&lt;string,object&gt; namedArgumentValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Runtime.WorkflowInstance CreateWorkflow(class System.Type workflowType, class System.Collections.Generic.Dictionary`2&lt;string, object&gt; namedArgumentValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow(System.Type,System.Collections.Generic.Dictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateWorkflow (workflowType As Type, namedArgumentValues As Dictionary(Of String, Object)) As WorkflowInstance" />
+      <MemberSignature Language="F#" Value="member this.CreateWorkflow : Type * System.Collections.Generic.Dictionary&lt;string, obj&gt; -&gt; System.Workflow.Runtime.WorkflowInstance" Usage="workflowRuntime.CreateWorkflow (workflowType, namedArgumentValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Runtime::WorkflowInstance ^ CreateWorkflow(Type ^ workflowType, System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ namedArgumentValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -397,6 +429,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowInstance CreateWorkflow (Type workflowType, System.Collections.Generic.Dictionary&lt;string,object&gt; namedArgumentValues, Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Runtime.WorkflowInstance CreateWorkflow(class System.Type workflowType, class System.Collections.Generic.Dictionary`2&lt;string, object&gt; namedArgumentValues, valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow(System.Type,System.Collections.Generic.Dictionary{System.String,System.Object},System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateWorkflow (workflowType As Type, namedArgumentValues As Dictionary(Of String, Object), instanceId As Guid) As WorkflowInstance" />
+      <MemberSignature Language="F#" Value="member this.CreateWorkflow : Type * System.Collections.Generic.Dictionary&lt;string, obj&gt; * Guid -&gt; System.Workflow.Runtime.WorkflowInstance" Usage="workflowRuntime.CreateWorkflow (workflowType, namedArgumentValues, instanceId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Runtime::WorkflowInstance ^ CreateWorkflow(Type ^ workflowType, System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ namedArgumentValues, Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -438,6 +473,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowInstance CreateWorkflow (System.Xml.XmlReader workflowDefinitionReader, System.Xml.XmlReader rulesReader, System.Collections.Generic.Dictionary&lt;string,object&gt; namedArgumentValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Runtime.WorkflowInstance CreateWorkflow(class System.Xml.XmlReader workflowDefinitionReader, class System.Xml.XmlReader rulesReader, class System.Collections.Generic.Dictionary`2&lt;string, object&gt; namedArgumentValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow(System.Xml.XmlReader,System.Xml.XmlReader,System.Collections.Generic.Dictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateWorkflow (workflowDefinitionReader As XmlReader, rulesReader As XmlReader, namedArgumentValues As Dictionary(Of String, Object)) As WorkflowInstance" />
+      <MemberSignature Language="F#" Value="member this.CreateWorkflow : System.Xml.XmlReader * System.Xml.XmlReader * System.Collections.Generic.Dictionary&lt;string, obj&gt; -&gt; System.Workflow.Runtime.WorkflowInstance" Usage="workflowRuntime.CreateWorkflow (workflowDefinitionReader, rulesReader, namedArgumentValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Runtime::WorkflowInstance ^ CreateWorkflow(System::Xml::XmlReader ^ workflowDefinitionReader, System::Xml::XmlReader ^ rulesReader, System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ namedArgumentValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -482,6 +520,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowInstance CreateWorkflow (System.Xml.XmlReader workflowDefinitionReader, System.Xml.XmlReader rulesReader, System.Collections.Generic.Dictionary&lt;string,object&gt; namedArgumentValues, Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Runtime.WorkflowInstance CreateWorkflow(class System.Xml.XmlReader workflowDefinitionReader, class System.Xml.XmlReader rulesReader, class System.Collections.Generic.Dictionary`2&lt;string, object&gt; namedArgumentValues, valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.CreateWorkflow(System.Xml.XmlReader,System.Xml.XmlReader,System.Collections.Generic.Dictionary{System.String,System.Object},System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateWorkflow (workflowDefinitionReader As XmlReader, rulesReader As XmlReader, namedArgumentValues As Dictionary(Of String, Object), instanceId As Guid) As WorkflowInstance" />
+      <MemberSignature Language="F#" Value="member this.CreateWorkflow : System.Xml.XmlReader * System.Xml.XmlReader * System.Collections.Generic.Dictionary&lt;string, obj&gt; * Guid -&gt; System.Workflow.Runtime.WorkflowInstance" Usage="workflowRuntime.CreateWorkflow (workflowDefinitionReader, rulesReader, namedArgumentValues, instanceId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Runtime::WorkflowInstance ^ CreateWorkflow(System::Xml::XmlReader ^ workflowDefinitionReader, System::Xml::XmlReader ^ rulesReader, System::Collections::Generic::Dictionary&lt;System::String ^, System::Object ^&gt; ^ namedArgumentValues, Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -527,7 +568,13 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="workflowRuntime.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -562,6 +609,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;object&gt; GetAllServices (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;object&gt; GetAllServices(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.GetAllServices(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAllServices (serviceType As Type) As ReadOnlyCollection(Of Object)" />
+      <MemberSignature Language="F#" Value="member this.GetAllServices : Type -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;obj&gt;" Usage="workflowRuntime.GetAllServices serviceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Object ^&gt; ^ GetAllServices(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -602,6 +652,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt; GetAllServices&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;!!T&gt; GetAllServices&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.GetAllServices``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAllServices(Of T) () As ReadOnlyCollection(Of T)" />
+      <MemberSignature Language="F#" Value="member this.GetAllServices : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;'T&gt;" Usage="workflowRuntime.GetAllServices " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;T&gt; ^ GetAllServices();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -641,6 +694,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.Runtime.WorkflowInstance&gt; GetLoadedWorkflows ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.Runtime.WorkflowInstance&gt; GetLoadedWorkflows() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.GetLoadedWorkflows" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLoadedWorkflows () As ReadOnlyCollection(Of WorkflowInstance)" />
+      <MemberSignature Language="F#" Value="member this.GetLoadedWorkflows : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.Runtime.WorkflowInstance&gt;" Usage="workflowRuntime.GetLoadedWorkflows " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::Runtime::WorkflowInstance ^&gt; ^ GetLoadedWorkflows();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -676,6 +732,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public object GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetService (serviceType As Type) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="workflowRuntime.GetService serviceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -709,6 +768,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public T GetService&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T GetService&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.GetService``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetService(Of T) () As T" />
+      <MemberSignature Language="F#" Value="member this.GetService : unit -&gt; 'T" Usage="workflowRuntime.GetService " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T GetService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -749,6 +811,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowInstance GetWorkflow (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.Runtime.WorkflowInstance GetWorkflow(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.GetWorkflow(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetWorkflow (instanceId As Guid) As WorkflowInstance" />
+      <MemberSignature Language="F#" Value="member this.GetWorkflow : Guid -&gt; System.Workflow.Runtime.WorkflowInstance" Usage="workflowRuntime.GetWorkflow instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::Runtime::WorkflowInstance ^ GetWorkflow(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -792,6 +857,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public bool IsStarted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsStarted" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowRuntime.IsStarted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStarted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsStarted : bool" Usage="System.Workflow.Runtime.WorkflowRuntime.IsStarted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStarted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -829,6 +897,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.WorkflowRuntime.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Workflow.Runtime.WorkflowRuntime.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -864,6 +935,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public void RemoveService (object service);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveService(object service) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.RemoveService(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveService (service As Object)" />
+      <MemberSignature Language="F#" Value="member this.RemoveService : obj -&gt; unit" Usage="workflowRuntime.RemoveService service" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveService(System::Object ^ service);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -908,6 +982,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.ServicesExceptionNotHandledEventArgs&gt; ServicesExceptionNotHandled;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.ServicesExceptionNotHandledEventArgs&gt; ServicesExceptionNotHandled" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowRuntime.ServicesExceptionNotHandled" />
+      <MemberSignature Language="VB.NET" Value="Public Event ServicesExceptionNotHandled As EventHandler(Of ServicesExceptionNotHandledEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ServicesExceptionNotHandled : EventHandler&lt;System.Workflow.Runtime.ServicesExceptionNotHandledEventArgs&gt; " Usage="member this.ServicesExceptionNotHandled : System.EventHandler&lt;System.Workflow.Runtime.ServicesExceptionNotHandledEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::ServicesExceptionNotHandledEventArgs ^&gt; ^ ServicesExceptionNotHandled;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -948,6 +1025,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.WorkflowRuntimeEventArgs&gt; Started;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.WorkflowRuntimeEventArgs&gt; Started" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowRuntime.Started" />
+      <MemberSignature Language="VB.NET" Value="Public Event Started As EventHandler(Of WorkflowRuntimeEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.Started : EventHandler&lt;System.Workflow.Runtime.WorkflowRuntimeEventArgs&gt; " Usage="member this.Started : System.EventHandler&lt;System.Workflow.Runtime.WorkflowRuntimeEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::WorkflowRuntimeEventArgs ^&gt; ^ Started;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -982,6 +1062,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public void StartRuntime ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartRuntime() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.StartRuntime" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StartRuntime ()" />
+      <MemberSignature Language="F#" Value="member this.StartRuntime : unit -&gt; unit" Usage="workflowRuntime.StartRuntime " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartRuntime();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -1029,6 +1112,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.WorkflowRuntimeEventArgs&gt; Stopped;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.WorkflowRuntimeEventArgs&gt; Stopped" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowRuntime.Stopped" />
+      <MemberSignature Language="VB.NET" Value="Public Event Stopped As EventHandler(Of WorkflowRuntimeEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.Stopped : EventHandler&lt;System.Workflow.Runtime.WorkflowRuntimeEventArgs&gt; " Usage="member this.Stopped : System.EventHandler&lt;System.Workflow.Runtime.WorkflowRuntimeEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::WorkflowRuntimeEventArgs ^&gt; ^ Stopped;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -1063,6 +1149,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public void StopRuntime ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StopRuntime() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.WorkflowRuntime.StopRuntime" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StopRuntime ()" />
+      <MemberSignature Language="F#" Value="member this.StopRuntime : unit -&gt; unit" Usage="workflowRuntime.StopRuntime " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopRuntime();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -1103,6 +1192,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowAborted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowAborted" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowRuntime.WorkflowAborted" />
+      <MemberSignature Language="VB.NET" Value="Public Event WorkflowAborted As EventHandler(Of WorkflowEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.WorkflowAborted : EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " Usage="member this.WorkflowAborted : System.EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::WorkflowEventArgs ^&gt; ^ WorkflowAborted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -1141,6 +1233,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.WorkflowCompletedEventArgs&gt; WorkflowCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.WorkflowCompletedEventArgs&gt; WorkflowCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowRuntime.WorkflowCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event WorkflowCompleted As EventHandler(Of WorkflowCompletedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.WorkflowCompleted : EventHandler&lt;System.Workflow.Runtime.WorkflowCompletedEventArgs&gt; " Usage="member this.WorkflowCompleted : System.EventHandler&lt;System.Workflow.Runtime.WorkflowCompletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::WorkflowCompletedEventArgs ^&gt; ^ WorkflowCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -1179,6 +1274,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowCreated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowCreated" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowRuntime.WorkflowCreated" />
+      <MemberSignature Language="VB.NET" Value="Public Event WorkflowCreated As EventHandler(Of WorkflowEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.WorkflowCreated : EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " Usage="member this.WorkflowCreated : System.EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::WorkflowEventArgs ^&gt; ^ WorkflowCreated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -1215,6 +1313,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowIdled;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowIdled" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowRuntime.WorkflowIdled" />
+      <MemberSignature Language="VB.NET" Value="Public Event WorkflowIdled As EventHandler(Of WorkflowEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.WorkflowIdled : EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " Usage="member this.WorkflowIdled : System.EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::WorkflowEventArgs ^&gt; ^ WorkflowIdled;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -1253,6 +1354,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowLoaded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowLoaded" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowRuntime.WorkflowLoaded" />
+      <MemberSignature Language="VB.NET" Value="Public Event WorkflowLoaded As EventHandler(Of WorkflowEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.WorkflowLoaded : EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " Usage="member this.WorkflowLoaded : System.EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::WorkflowEventArgs ^&gt; ^ WorkflowLoaded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -1291,6 +1395,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowPersisted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowPersisted" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowRuntime.WorkflowPersisted" />
+      <MemberSignature Language="VB.NET" Value="Public Event WorkflowPersisted As EventHandler(Of WorkflowEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.WorkflowPersisted : EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " Usage="member this.WorkflowPersisted : System.EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::WorkflowEventArgs ^&gt; ^ WorkflowPersisted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -1329,6 +1436,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowResumed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowResumed" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowRuntime.WorkflowResumed" />
+      <MemberSignature Language="VB.NET" Value="Public Event WorkflowResumed As EventHandler(Of WorkflowEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.WorkflowResumed : EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " Usage="member this.WorkflowResumed : System.EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::WorkflowEventArgs ^&gt; ^ WorkflowResumed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -1367,6 +1477,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowStarted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowStarted" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowRuntime.WorkflowStarted" />
+      <MemberSignature Language="VB.NET" Value="Public Event WorkflowStarted As EventHandler(Of WorkflowEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.WorkflowStarted : EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " Usage="member this.WorkflowStarted : System.EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::WorkflowEventArgs ^&gt; ^ WorkflowStarted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -1402,6 +1515,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.WorkflowSuspendedEventArgs&gt; WorkflowSuspended;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.WorkflowSuspendedEventArgs&gt; WorkflowSuspended" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowRuntime.WorkflowSuspended" />
+      <MemberSignature Language="VB.NET" Value="Public Event WorkflowSuspended As EventHandler(Of WorkflowSuspendedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.WorkflowSuspended : EventHandler&lt;System.Workflow.Runtime.WorkflowSuspendedEventArgs&gt; " Usage="member this.WorkflowSuspended : System.EventHandler&lt;System.Workflow.Runtime.WorkflowSuspendedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::WorkflowSuspendedEventArgs ^&gt; ^ WorkflowSuspended;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -1440,6 +1556,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.WorkflowTerminatedEventArgs&gt; WorkflowTerminated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.WorkflowTerminatedEventArgs&gt; WorkflowTerminated" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowRuntime.WorkflowTerminated" />
+      <MemberSignature Language="VB.NET" Value="Public Event WorkflowTerminated As EventHandler(Of WorkflowTerminatedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.WorkflowTerminated : EventHandler&lt;System.Workflow.Runtime.WorkflowTerminatedEventArgs&gt; " Usage="member this.WorkflowTerminated : System.EventHandler&lt;System.Workflow.Runtime.WorkflowTerminatedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::WorkflowTerminatedEventArgs ^&gt; ^ WorkflowTerminated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -1478,6 +1597,9 @@ static void Main(string[] args)
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowUnloaded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.WorkflowEventArgs&gt; WorkflowUnloaded" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.WorkflowRuntime.WorkflowUnloaded" />
+      <MemberSignature Language="VB.NET" Value="Public Event WorkflowUnloaded As EventHandler(Of WorkflowEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.WorkflowUnloaded : EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " Usage="member this.WorkflowUnloaded : System.EventHandler&lt;System.Workflow.Runtime.WorkflowEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::WorkflowEventArgs ^&gt; ^ WorkflowUnloaded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -1516,14 +1638,5 @@ static void Main(string[] args)
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.WorkflowRuntime" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

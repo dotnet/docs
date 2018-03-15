@@ -1,7 +1,10 @@
-<Type Name="ServiceDescriptionImportStyle" FullName="System.Web.Services.Description.ServiceDescriptionImportStyle">
+﻿<Type Name="ServiceDescriptionImportStyle" FullName="System.Web.Services.Description.ServiceDescriptionImportStyle">
   <TypeSignature Language="C#" Value="public enum ServiceDescriptionImportStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceDescriptionImportStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.ServiceDescriptionImportStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ServiceDescriptionImportStyle" />
+  <TypeSignature Language="F#" Value="type ServiceDescriptionImportStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ServiceDescriptionImportStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="Client" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.ServiceDescriptionImportStyle Client = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.ServiceDescriptionImportStyle.Client" />
+      <MemberSignature Language="VB.NET" Value="Client" />
+      <MemberSignature Language="F#" Value="Client = 0" Usage="System.Web.Services.Description.ServiceDescriptionImportStyle.Client" />
+      <MemberSignature Language="C++ CLI" Value="Client" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -47,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.ServiceDescriptionImportStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the import should be made to the client computer.</summary>
       </Docs>
@@ -55,6 +62,9 @@
       <MemberSignature Language="C#" Value="Server" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.ServiceDescriptionImportStyle Server = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.ServiceDescriptionImportStyle.Server" />
+      <MemberSignature Language="VB.NET" Value="Server" />
+      <MemberSignature Language="F#" Value="Server = 1" Usage="System.Web.Services.Description.ServiceDescriptionImportStyle.Server" />
+      <MemberSignature Language="C++ CLI" Value="Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.ServiceDescriptionImportStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the import should be made to the server.</summary>
       </Docs>
@@ -77,6 +88,9 @@
       <MemberSignature Language="C#" Value="ServerInterface" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Description.ServiceDescriptionImportStyle ServerInterface = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Description.ServiceDescriptionImportStyle.ServerInterface" />
+      <MemberSignature Language="VB.NET" Value="ServerInterface" />
+      <MemberSignature Language="F#" Value="ServerInterface = 2" Usage="System.Web.Services.Description.ServiceDescriptionImportStyle.ServerInterface" />
+      <MemberSignature Language="C++ CLI" Value="ServerInterface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -91,6 +105,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Description.ServiceDescriptionImportStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the import should be made to a server interface.</summary>
       </Docs>

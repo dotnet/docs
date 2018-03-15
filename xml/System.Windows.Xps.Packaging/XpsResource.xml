@@ -1,7 +1,10 @@
-<Type Name="XpsResource" FullName="System.Windows.Xps.Packaging.XpsResource">
+﻿<Type Name="XpsResource" FullName="System.Windows.Xps.Packaging.XpsResource">
   <TypeSignature Language="C#" Value="public class XpsResource : System.Windows.Xps.Packaging.XpsPartBase, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsResource extends System.Windows.Xps.Packaging.XpsPartBase implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsResource" />
+  <TypeSignature Language="VB.NET" Value="Public Class XpsResource&#xA;Inherits XpsPartBase&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type XpsResource = class&#xA;    inherit XpsPartBase&#xA;    interface INode&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XpsResource : System::Windows::Xps::Packaging::XpsPartBase, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public void Commit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Commit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsResource.Commit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Commit ()" />
+      <MemberSignature Language="F#" Value="member this.Commit : unit -&gt; unit" Usage="xpsResource.Commit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -70,6 +76,9 @@
       <MemberSignature Language="C#" Value="public virtual System.IO.Stream GetStream ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetStream() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsResource.GetStream" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStream () As Stream" />
+      <MemberSignature Language="F#" Value="abstract member GetStream : unit -&gt; System.IO.Stream&#xA;override this.GetStream : unit -&gt; System.IO.Stream" Usage="xpsResource.GetStream " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ GetStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -100,6 +109,9 @@
       <MemberSignature Language="C#" Value="public Uri RelativeUri (Uri inUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Uri RelativeUri(class System.Uri inUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsResource.RelativeUri(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RelativeUri (inUri As Uri) As Uri" />
+      <MemberSignature Language="F#" Value="member this.RelativeUri : Uri -&gt; Uri" Usage="xpsResource.RelativeUri inUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Uri ^ RelativeUri(Uri ^ inUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -122,7 +134,12 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsResource.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="MediaTimeline" FullName="System.Windows.Media.MediaTimeline">
+﻿<Type Name="MediaTimeline" FullName="System.Windows.Media.MediaTimeline">
   <TypeSignature Language="C#" Value="public class MediaTimeline : System.Windows.Media.Animation.Timeline, System.Windows.Markup.IUriContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi MediaTimeline extends System.Windows.Media.Animation.Timeline implements class System.Windows.Markup.IUriContext" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.MediaTimeline" />
+  <TypeSignature Language="VB.NET" Value="Public Class MediaTimeline&#xA;Inherits Timeline&#xA;Implements IUriContext" />
+  <TypeSignature Language="F#" Value="type MediaTimeline = class&#xA;    inherit Timeline&#xA;    interface IUriContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MediaTimeline : System::Windows::Media::Animation::Timeline, System::Windows::Markup::IUriContext" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +37,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.MediaTimeline" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MediaTimeline ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaTimeline();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -53,6 +67,9 @@
       <MemberSignature Language="C#" Value="public MediaTimeline (Nullable&lt;TimeSpan&gt; beginTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; beginTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.#ctor(System.Nullable{System.TimeSpan})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (beginTime As Nullable(Of TimeSpan))" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.MediaTimeline : Nullable&lt;TimeSpan&gt; -&gt; System.Windows.Media.MediaTimeline" Usage="new System.Windows.Media.MediaTimeline beginTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaTimeline(Nullable&lt;TimeSpan&gt; beginTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -71,6 +88,9 @@
       <MemberSignature Language="C#" Value="public MediaTimeline (Uri source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (source As Uri)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.MediaTimeline : Uri -&gt; System.Windows.Media.MediaTimeline" Usage="new System.Windows.Media.MediaTimeline source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaTimeline(Uri ^ source);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -89,6 +109,8 @@
       <MemberSignature Language="C#" Value="public MediaTimeline (Nullable&lt;TimeSpan&gt; beginTime, System.Windows.Duration duration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; beginTime, valuetype System.Windows.Duration duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.#ctor(System.Nullable{System.TimeSpan},System.Windows.Duration)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.MediaTimeline : Nullable&lt;TimeSpan&gt; * System.Windows.Duration -&gt; System.Windows.Media.MediaTimeline" Usage="new System.Windows.Media.MediaTimeline (beginTime, duration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaTimeline(Nullable&lt;TimeSpan&gt; beginTime, System::Windows::Duration duration);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -109,6 +131,8 @@
       <MemberSignature Language="C#" Value="public MediaTimeline (Nullable&lt;TimeSpan&gt; beginTime, System.Windows.Duration duration, System.Windows.Media.Animation.RepeatBehavior repeatBehavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Nullable`1&lt;valuetype System.TimeSpan&gt; beginTime, valuetype System.Windows.Duration duration, valuetype System.Windows.Media.Animation.RepeatBehavior repeatBehavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.#ctor(System.Nullable{System.TimeSpan},System.Windows.Duration,System.Windows.Media.Animation.RepeatBehavior)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.MediaTimeline : Nullable&lt;TimeSpan&gt; * System.Windows.Duration * System.Windows.Media.Animation.RepeatBehavior -&gt; System.Windows.Media.MediaTimeline" Usage="new System.Windows.Media.MediaTimeline (beginTime, duration, repeatBehavior)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MediaTimeline(Nullable&lt;TimeSpan&gt; beginTime, System::Windows::Duration duration, System::Windows::Media::Animation::RepeatBehavior repeatBehavior);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -128,9 +152,12 @@
       </Docs>
     </Member>
     <Member MemberName="AllocateClock">
-      <MemberSignature Language="C#" Value="protected override System.Windows.Media.Animation.Clock AllocateClock ();" />
+      <MemberSignature Language="C#" Value="protected internal override System.Windows.Media.Animation.Clock AllocateClock ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Windows.Media.Animation.Clock AllocateClock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.AllocateClock" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function AllocateClock () As Clock" />
+      <MemberSignature Language="F#" Value="override this.AllocateClock : unit -&gt; System.Windows.Media.Animation.Clock" Usage="mediaTimeline.AllocateClock " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Windows::Media::Animation::Clock ^ AllocateClock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -150,6 +177,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.MediaTimeline Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.MediaTimeline Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As MediaTimeline" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.MediaTimeline" Usage="mediaTimeline.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::MediaTimeline ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -178,6 +208,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="mediaTimeline.CloneCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -208,6 +241,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.MediaTimeline CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.MediaTimeline CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As MediaTimeline" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.MediaTimeline" Usage="mediaTimeline.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::MediaTimeline ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -236,6 +272,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="mediaTimeline.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -267,6 +306,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.MediaClock CreateClock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.MediaClock CreateClock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.CreateClock" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateClock () As MediaClock" />
+      <MemberSignature Language="F#" Value="override this.CreateClock : unit -&gt; System.Windows.Media.MediaClock" Usage="mediaTimeline.CreateClock " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::MediaClock ^ CreateClock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -286,6 +328,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="mediaTimeline.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -305,6 +350,9 @@
       <MemberSignature Language="C#" Value="protected override bool FreezeCore (bool isChecking);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool FreezeCore(bool isChecking) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.FreezeCore(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function FreezeCore (isChecking As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.FreezeCore : bool -&gt; bool" Usage="mediaTimeline.FreezeCore isChecking" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -328,6 +376,9 @@
       <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (source As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="mediaTimeline.GetAsFrozenCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -360,6 +411,9 @@
       <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (source As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="mediaTimeline.GetCurrentValueAsFrozenCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -390,6 +444,8 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Duration GetNaturalDurationCore (System.Windows.Media.Animation.Clock clock);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Duration GetNaturalDurationCore(class System.Windows.Media.Animation.Clock clock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.GetNaturalDurationCore(System.Windows.Media.Animation.Clock)" />
+      <MemberSignature Language="F#" Value="override this.GetNaturalDurationCore : System.Windows.Media.Animation.Clock -&gt; System.Windows.Duration" Usage="mediaTimeline.GetNaturalDurationCore clock" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Duration GetNaturalDurationCore(System::Windows::Media::Animation::Clock ^ clock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -412,6 +468,9 @@
       <MemberSignature Language="C#" Value="public Uri Source { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Source" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaTimeline.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Property Source As Uri" />
+      <MemberSignature Language="F#" Value="member this.Source : Uri with get, set" Usage="System.Windows.Media.MediaTimeline.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Source { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -444,6 +503,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.MediaTimeline.SourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SourceProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.MediaTimeline.SourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -461,7 +523,13 @@
       <MemberSignature Language="C#" Value="Uri System.Windows.Markup.IUriContext.BaseUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri System.Windows.Markup.IUriContext.BaseUri" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.MediaTimeline.System#Windows#Markup#IUriContext#BaseUri" />
+      <MemberSignature Language="VB.NET" Value=" Property BaseUri As Uri Implements IUriContext.BaseUri" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.MediaTimeline.System.Windows.Markup.IUriContext.BaseUri" />
+      <MemberSignature Language="C++ CLI" Value="property Uri ^ System.Windows.Markup.IUriContext.BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Markup.IUriContext.BaseUri</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -479,6 +547,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.MediaTimeline.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="mediaTimeline.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -494,14 +565,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.MediaTimeline" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

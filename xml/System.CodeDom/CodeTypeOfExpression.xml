@@ -1,7 +1,10 @@
-<Type Name="CodeTypeOfExpression" FullName="System.CodeDom.CodeTypeOfExpression">
+﻿<Type Name="CodeTypeOfExpression" FullName="System.CodeDom.CodeTypeOfExpression">
   <TypeSignature Language="C#" Value="public class CodeTypeOfExpression : System.CodeDom.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeTypeOfExpression extends System.CodeDom.CodeExpression" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeTypeOfExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeTypeOfExpression&#xA;Inherits CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeTypeOfExpression = class&#xA;    inherit CodeExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeTypeOfExpression : System::CodeDom::CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -48,10 +51,21 @@
     <altmember cref="T:System.CodeDom.CodeTypeReferenceExpression" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeOfExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeTypeOfExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeOfExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeOfExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -71,6 +85,9 @@
       <MemberSignature Language="C#" Value="public CodeTypeOfExpression (System.CodeDom.CodeTypeReference type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeReference type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeOfExpression.#ctor(System.CodeDom.CodeTypeReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As CodeTypeReference)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeOfExpression : System.CodeDom.CodeTypeReference -&gt; System.CodeDom.CodeTypeOfExpression" Usage="new System.CodeDom.CodeTypeOfExpression type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeOfExpression(System::CodeDom::CodeTypeReference ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -93,6 +110,9 @@
       <MemberSignature Language="C#" Value="public CodeTypeOfExpression (string type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeOfExpression.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (type As String)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeOfExpression : string -&gt; System.CodeDom.CodeTypeOfExpression" Usage="new System.CodeDom.CodeTypeOfExpression type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeOfExpression(System::String ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -115,6 +135,8 @@
       <MemberSignature Language="C#" Value="public CodeTypeOfExpression (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeTypeOfExpression.#ctor(System.Type)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeTypeOfExpression : Type -&gt; System.CodeDom.CodeTypeOfExpression" Usage="new System.CodeDom.CodeTypeOfExpression type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeTypeOfExpression(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -137,6 +159,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReference Type" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeTypeOfExpression.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As CodeTypeReference" />
+      <MemberSignature Language="F#" Value="member this.Type : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeTypeOfExpression.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ Type { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -155,14 +180,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeTypeOfExpression" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

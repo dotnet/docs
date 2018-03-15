@@ -1,7 +1,10 @@
-<Type Name="IRemoteArgumentArrayContract" FullName="System.AddIn.Contract.Collections.IRemoteArgumentArrayContract">
+﻿<Type Name="IRemoteArgumentArrayContract" FullName="System.AddIn.Contract.Collections.IRemoteArgumentArrayContract">
   <TypeSignature Language="C#" Value="public interface IRemoteArgumentArrayContract : System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRemoteArgumentArrayContract implements class System.AddIn.Contract.Collections.IRemoteArgumentCollectionContract, class System.AddIn.Contract.Collections.IRemoteArgumentEnumerableContract, class System.AddIn.Contract.IContract" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRemoteArgumentArrayContract&#xA;Implements IRemoteArgumentCollectionContract" />
+  <TypeSignature Language="F#" Value="type IRemoteArgumentArrayContract = interface&#xA;    interface IRemoteArgumentCollectionContract&#xA;    interface IRemoteArgumentEnumerableContract&#xA;    interface IContract" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRemoteArgumentArrayContract : System::AddIn::Contract::Collections::IRemoteArgumentCollectionContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.RemoteArgument GetItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.AddIn.Contract.RemoteArgument GetItem(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract.GetItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItem (index As Integer) As RemoteArgument" />
+      <MemberSignature Language="F#" Value="abstract member GetItem : int -&gt; System.AddIn.Contract.RemoteArgument" Usage="iRemoteArgumentArrayContract.GetItem index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::RemoteArgument GetItem(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>
@@ -57,6 +63,9 @@
       <MemberSignature Language="C#" Value="public void SetItem (int index, System.AddIn.Contract.RemoteArgument value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetItem(int32 index, valuetype System.AddIn.Contract.RemoteArgument value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IRemoteArgumentArrayContract.SetItem(System.Int32,System.AddIn.Contract.RemoteArgument)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetItem (index As Integer, value As RemoteArgument)" />
+      <MemberSignature Language="F#" Value="abstract member SetItem : int * System.AddIn.Contract.RemoteArgument -&gt; unit" Usage="iRemoteArgumentArrayContract.SetItem (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetItem(int index, System::AddIn::Contract::RemoteArgument value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

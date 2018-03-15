@@ -1,7 +1,10 @@
-<Type Name="PipeStream" FullName="System.IO.Pipes.PipeStream">
+﻿<Type Name="PipeStream" FullName="System.IO.Pipes.PipeStream">
   <TypeSignature Language="C#" Value="public abstract class PipeStream : System.IO.Stream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PipeStream extends System.IO.Stream" />
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.PipeStream" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PipeStream&#xA;Inherits Stream" />
+  <TypeSignature Language="F#" Value="type PipeStream = class&#xA;    inherit Stream" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PipeStream abstract : System::IO::Stream" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +38,23 @@
     <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for inheritors. This class cannot be inherited by partially trusted code.</permission>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.PipeStream" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected PipeStream (System.IO.Pipes.PipeDirection direction, int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.IO.Pipes.PipeDirection direction, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.#ctor(System.IO.Pipes.PipeDirection,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (direction As PipeDirection, bufferSize As Integer)" />
+      <MemberSignature Language="F#" Value="new System.IO.Pipes.PipeStream : System.IO.Pipes.PipeDirection * int -&gt; System.IO.Pipes.PipeStream" Usage="new System.IO.Pipes.PipeStream (direction, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PipeStream(System::IO::Pipes::PipeDirection direction, int bufferSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -82,6 +98,9 @@
       <MemberSignature Language="C#" Value="protected PipeStream (System.IO.Pipes.PipeDirection direction, System.IO.Pipes.PipeTransmissionMode transmissionMode, int outBufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.IO.Pipes.PipeDirection direction, valuetype System.IO.Pipes.PipeTransmissionMode transmissionMode, int32 outBufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.#ctor(System.IO.Pipes.PipeDirection,System.IO.Pipes.PipeTransmissionMode,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (direction As PipeDirection, transmissionMode As PipeTransmissionMode, outBufferSize As Integer)" />
+      <MemberSignature Language="F#" Value="new System.IO.Pipes.PipeStream : System.IO.Pipes.PipeDirection * System.IO.Pipes.PipeTransmissionMode * int -&gt; System.IO.Pipes.PipeStream" Usage="new System.IO.Pipes.PipeStream (direction, transmissionMode, outBufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PipeStream(System::IO::Pipes::PipeDirection direction, System::IO::Pipes::PipeTransmissionMode transmissionMode, int outBufferSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -124,6 +143,9 @@
       <MemberSignature Language="C#" Value="public override IAsyncResult BeginRead (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginRead(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.BeginRead(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginRead (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="override this.BeginRead : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="pipeStream.BeginRead (buffer, offset, count, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginRead(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -188,6 +210,9 @@
       <MemberSignature Language="C#" Value="public override IAsyncResult BeginWrite (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IAsyncResult BeginWrite(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.BeginWrite(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BeginWrite (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="override this.BeginWrite : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="pipeStream.BeginWrite (buffer, offset, count, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override IAsyncResult ^ BeginWrite(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -252,6 +277,9 @@
       <MemberSignature Language="C#" Value="public override bool CanRead { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRead" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.CanRead" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="System.IO.Pipes.PipeStream.CanRead" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRead { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -288,6 +316,9 @@
       <MemberSignature Language="C#" Value="public override bool CanSeek { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanSeek" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.CanSeek" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSeek As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanSeek : bool" Usage="System.IO.Pipes.PipeStream.CanSeek" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSeek { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -324,6 +355,9 @@
       <MemberSignature Language="C#" Value="public override bool CanWrite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanWrite" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.CanWrite" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWrite As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanWrite : bool" Usage="System.IO.Pipes.PipeStream.CanWrite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWrite { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -357,9 +391,12 @@
       </Docs>
     </Member>
     <Member MemberName="CheckPipePropertyOperations">
-      <MemberSignature Language="C#" Value="protected virtual void CheckPipePropertyOperations ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual void CheckPipePropertyOperations ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void CheckPipePropertyOperations() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.CheckPipePropertyOperations" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub CheckPipePropertyOperations ()" />
+      <MemberSignature Language="F#" Value="abstract member CheckPipePropertyOperations : unit -&gt; unit&#xA;override this.CheckPipePropertyOperations : unit -&gt; unit" Usage="pipeStream.CheckPipePropertyOperations " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void CheckPipePropertyOperations();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -384,9 +421,12 @@
       </Docs>
     </Member>
     <Member MemberName="CheckReadOperations">
-      <MemberSignature Language="C#" Value="protected void CheckReadOperations ();" />
+      <MemberSignature Language="C#" Value="protected internal void CheckReadOperations ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void CheckReadOperations() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.CheckReadOperations" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub CheckReadOperations ()" />
+      <MemberSignature Language="F#" Value="member this.CheckReadOperations : unit -&gt; unit" Usage="pipeStream.CheckReadOperations " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void CheckReadOperations();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -411,9 +451,12 @@
       </Docs>
     </Member>
     <Member MemberName="CheckWriteOperations">
-      <MemberSignature Language="C#" Value="protected void CheckWriteOperations ();" />
+      <MemberSignature Language="C#" Value="protected internal void CheckWriteOperations ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void CheckWriteOperations() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.CheckWriteOperations" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub CheckWriteOperations ()" />
+      <MemberSignature Language="F#" Value="member this.CheckWriteOperations : unit -&gt; unit" Usage="pipeStream.CheckWriteOperations " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void CheckWriteOperations();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -441,6 +484,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="pipeStream.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -487,6 +533,9 @@
       <MemberSignature Language="C#" Value="public override int EndRead (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 EndRead(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.EndRead(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EndRead (asyncResult As IAsyncResult) As Integer" />
+      <MemberSignature Language="F#" Value="override this.EndRead : IAsyncResult -&gt; int" Usage="pipeStream.EndRead asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int EndRead(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -536,6 +585,9 @@
       <MemberSignature Language="C#" Value="public override void EndWrite (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndWrite(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.EndWrite(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndWrite (asyncResult As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="override this.EndWrite : IAsyncResult -&gt; unit" Usage="pipeStream.EndWrite asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndWrite(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -582,6 +634,9 @@
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="pipeStream.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -620,6 +675,9 @@
       <MemberSignature Language="C#" Value="public System.IO.Pipes.PipeSecurity GetAccessControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Pipes.PipeSecurity GetAccessControl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.GetAccessControl" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAccessControl () As PipeSecurity" />
+      <MemberSignature Language="F#" Value="member this.GetAccessControl : unit -&gt; System.IO.Pipes.PipeSecurity" Usage="pipeStream.GetAccessControl " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Pipes::PipeSecurity ^ GetAccessControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -651,6 +709,9 @@
       <MemberSignature Language="C#" Value="public virtual int InBufferSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 InBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.InBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InBufferSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.InBufferSize : int" Usage="System.IO.Pipes.PipeStream.InBufferSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int InBufferSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -689,6 +750,9 @@
       <MemberSignature Language="C#" Value="protected void InitializeHandle (Microsoft.Win32.SafeHandles.SafePipeHandle handle, bool isExposed, bool isAsync);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InitializeHandle(class Microsoft.Win32.SafeHandles.SafePipeHandle handle, bool isExposed, bool isAsync) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.InitializeHandle(Microsoft.Win32.SafeHandles.SafePipeHandle,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub InitializeHandle (handle As SafePipeHandle, isExposed As Boolean, isAsync As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.InitializeHandle : Microsoft.Win32.SafeHandles.SafePipeHandle * bool * bool -&gt; unit" Usage="pipeStream.InitializeHandle (handle, isExposed, isAsync)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InitializeHandle(Microsoft::Win32::SafeHandles::SafePipeHandle ^ handle, bool isExposed, bool isAsync);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -733,6 +797,9 @@
       <MemberSignature Language="C#" Value="public bool IsAsync { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAsync" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.IsAsync" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAsync As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAsync : bool" Usage="System.IO.Pipes.PipeStream.IsAsync" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAsync { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -769,6 +836,9 @@
       <MemberSignature Language="C#" Value="public bool IsConnected { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsConnected" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.IsConnected" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsConnected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsConnected : bool with get, set" Usage="System.IO.Pipes.PipeStream.IsConnected" />
+      <MemberSignature Language="C++ CLI" Value="public:  property bool IsConnected {  public:&#xA;bool get(); protected:&#xA; void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -805,6 +875,9 @@
       <MemberSignature Language="C#" Value="protected bool IsHandleExposed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsHandleExposed" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.IsHandleExposed" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsHandleExposed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsHandleExposed : bool" Usage="System.IO.Pipes.PipeStream.IsHandleExposed" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsHandleExposed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -840,6 +913,9 @@
       <MemberSignature Language="C#" Value="public bool IsMessageComplete { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMessageComplete" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.IsMessageComplete" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMessageComplete As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsMessageComplete : bool" Usage="System.IO.Pipes.PipeStream.IsMessageComplete" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMessageComplete { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -886,6 +962,9 @@
       <MemberSignature Language="C#" Value="public override long Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.Length" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Length As Long" />
+      <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.IO.Pipes.PipeStream.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Length { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -922,6 +1001,9 @@
       <MemberSignature Language="C#" Value="public virtual int OutBufferSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 OutBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.OutBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OutBufferSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.OutBufferSize : int" Usage="System.IO.Pipes.PipeStream.OutBufferSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int OutBufferSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -960,6 +1042,9 @@
       <MemberSignature Language="C#" Value="public override long Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Position" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Position As Long" />
+      <MemberSignature Language="F#" Value="member this.Position : int64 with get, set" Usage="System.IO.Pipes.PipeStream.Position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Position { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -996,6 +1081,9 @@
       <MemberSignature Language="C#" Value="public override int Read (byte[] buffer, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read([in]unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.Read(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (buffer As Byte(), offset As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="override this.Read : byte[] * int * int -&gt; int" Usage="pipeStream.Read (buffer, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1064,6 +1152,8 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;int&gt; ReadAsync (byte[] buffer, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.ReadAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="pipeStream.ReadAsync (buffer, offset, count, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1093,6 +1183,9 @@
       <MemberSignature Language="C#" Value="public override int ReadByte ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 ReadByte() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.ReadByte" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadByte () As Integer" />
+      <MemberSignature Language="F#" Value="override this.ReadByte : unit -&gt; int" Usage="pipeStream.ReadByte " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadByte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1133,6 +1226,9 @@
       <MemberSignature Language="C#" Value="public virtual System.IO.Pipes.PipeTransmissionMode ReadMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Pipes.PipeTransmissionMode ReadMode" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.ReadMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ReadMode As PipeTransmissionMode" />
+      <MemberSignature Language="F#" Value="member this.ReadMode : System.IO.Pipes.PipeTransmissionMode with get, set" Usage="System.IO.Pipes.PipeStream.ReadMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Pipes::PipeTransmissionMode ReadMode { System::IO::Pipes::PipeTransmissionMode get(); void set(System::IO::Pipes::PipeTransmissionMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1176,6 +1272,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Win32.SafeHandles.SafePipeHandle SafePipeHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Win32.SafeHandles.SafePipeHandle SafePipeHandle" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.SafePipeHandle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SafePipeHandle As SafePipeHandle" />
+      <MemberSignature Language="F#" Value="member this.SafePipeHandle : Microsoft.Win32.SafeHandles.SafePipeHandle" Usage="System.IO.Pipes.PipeStream.SafePipeHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SafeHandles::SafePipeHandle ^ SafePipeHandle { Microsoft::Win32::SafeHandles::SafePipeHandle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1206,6 +1305,9 @@
       <MemberSignature Language="C#" Value="public override long Seek (long offset, System.IO.SeekOrigin origin);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 Seek(int64 offset, valuetype System.IO.SeekOrigin origin) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.Seek(System.Int64,System.IO.SeekOrigin)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Seek (offset As Long, origin As SeekOrigin) As Long" />
+      <MemberSignature Language="F#" Value="override this.Seek : int64 * System.IO.SeekOrigin -&gt; int64" Usage="pipeStream.Seek (offset, origin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long Seek(long offset, System::IO::SeekOrigin origin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1247,6 +1349,8 @@
       <MemberSignature Language="C#" Value="public void SetAccessControl (System.IO.Pipes.PipeSecurity pipeSecurity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessControl(class System.IO.Pipes.PipeSecurity pipeSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.SetAccessControl(System.IO.Pipes.PipeSecurity)" />
+      <MemberSignature Language="F#" Value="member this.SetAccessControl : System.IO.Pipes.PipeSecurity -&gt; unit" Usage="pipeStream.SetAccessControl pipeSecurity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessControl(System::IO::Pipes::PipeSecurity ^ pipeSecurity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1282,6 +1386,9 @@
       <MemberSignature Language="C#" Value="public override void SetLength (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetLength(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.SetLength(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetLength (value As Long)" />
+      <MemberSignature Language="F#" Value="override this.SetLength : int64 -&gt; unit" Usage="pipeStream.SetLength value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLength(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1320,6 +1427,9 @@
       <MemberSignature Language="C#" Value="public virtual System.IO.Pipes.PipeTransmissionMode TransmissionMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Pipes.PipeTransmissionMode TransmissionMode" />
       <MemberSignature Language="DocId" Value="P:System.IO.Pipes.PipeStream.TransmissionMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TransmissionMode As PipeTransmissionMode" />
+      <MemberSignature Language="F#" Value="member this.TransmissionMode : System.IO.Pipes.PipeTransmissionMode" Usage="System.IO.Pipes.PipeStream.TransmissionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Pipes::PipeTransmissionMode TransmissionMode { System::IO::Pipes::PipeTransmissionMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1362,6 +1472,9 @@
       <MemberSignature Language="C#" Value="public void WaitForPipeDrain ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WaitForPipeDrain() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.WaitForPipeDrain" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WaitForPipeDrain ()" />
+      <MemberSignature Language="F#" Value="member this.WaitForPipeDrain : unit -&gt; unit" Usage="pipeStream.WaitForPipeDrain " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WaitForPipeDrain();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1400,6 +1513,9 @@
       <MemberSignature Language="C#" Value="public override void Write (byte[] buffer, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.Write(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Byte(), offset As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="override this.Write : byte[] * int * int -&gt; unit" Usage="pipeStream.Write (buffer, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1457,6 +1573,8 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (byte[] buffer, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="pipeStream.WriteAsync (buffer, offset, count, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1486,6 +1604,9 @@
       <MemberSignature Language="C#" Value="public override void WriteByte (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteByte(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Pipes.PipeStream.WriteByte(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteByte (value As Byte)" />
+      <MemberSignature Language="F#" Value="override this.WriteByte : byte -&gt; unit" Usage="pipeStream.WriteByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteByte(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -1524,15 +1645,5 @@
         <exception cref="T:System.IO.IOException">The pipe is broken or another I/O error occurred.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.Pipes</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.Pipes.PipeStream" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

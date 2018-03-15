@@ -1,7 +1,10 @@
-<Type Name="EventInstance" FullName="System.Diagnostics.EventInstance">
+﻿<Type Name="EventInstance" FullName="System.Diagnostics.EventInstance">
   <TypeSignature Language="C#" Value="public class EventInstance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventInstance extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventInstance" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventInstance" />
+  <TypeSignature Language="F#" Value="type EventInstance = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventInstance" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -158,10 +161,22 @@ SVC_UPDATE.EXE
     <altmember cref="T:System.Diagnostics.EventLogEntry" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventInstance" /> class using language-neutral information to define an event log entry.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventInstance (long instanceId, int categoryId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 instanceId, int32 categoryId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventInstance.#ctor(System.Int64,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Long, categoryId As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.EventInstance : int64 * int -&gt; System.Diagnostics.EventInstance" Usage="new System.Diagnostics.EventInstance (instanceId, categoryId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventInstance(long instanceId, int categoryId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -322,6 +337,9 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public EventInstance (long instanceId, int categoryId, System.Diagnostics.EventLogEntryType entryType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 instanceId, int32 categoryId, valuetype System.Diagnostics.EventLogEntryType entryType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EventInstance.#ctor(System.Int64,System.Int32,System.Diagnostics.EventLogEntryType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (instanceId As Long, categoryId As Integer, entryType As EventLogEntryType)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.EventInstance : int64 * int * System.Diagnostics.EventLogEntryType -&gt; System.Diagnostics.EventInstance" Usage="new System.Diagnostics.EventInstance (instanceId, categoryId, entryType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventInstance(long instanceId, int categoryId, System::Diagnostics::EventLogEntryType entryType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -490,6 +508,9 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public int CategoryId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CategoryId" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventInstance.CategoryId" />
+      <MemberSignature Language="VB.NET" Value="Public Property CategoryId As Integer" />
+      <MemberSignature Language="F#" Value="member this.CategoryId : int with get, set" Usage="System.Diagnostics.EventInstance.CategoryId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CategoryId { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -652,6 +673,9 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public System.Diagnostics.EventLogEntryType EntryType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.EventLogEntryType EntryType" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventInstance.EntryType" />
+      <MemberSignature Language="VB.NET" Value="Public Property EntryType As EventLogEntryType" />
+      <MemberSignature Language="F#" Value="member this.EntryType : System.Diagnostics.EventLogEntryType with get, set" Usage="System.Diagnostics.EventInstance.EntryType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::EventLogEntryType EntryType { System::Diagnostics::EventLogEntryType get(); void set(System::Diagnostics::EventLogEntryType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -803,6 +827,9 @@ SVC_UPDATE.EXE
       <MemberSignature Language="C#" Value="public long InstanceId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 InstanceId" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EventInstance.InstanceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceId As Long" />
+      <MemberSignature Language="F#" Value="member this.InstanceId : int64 with get, set" Usage="System.Diagnostics.EventInstance.InstanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long InstanceId { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -953,14 +980,5 @@ SVC_UPDATE.EXE
         <altmember cref="P:System.Diagnostics.EventLogInstaller.MessageResourceFile" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EventInstance" /> class using language-neutral information to define an event log entry.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

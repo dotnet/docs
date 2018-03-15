@@ -1,7 +1,10 @@
-<Type Name="X509ScopedServiceCertificateElementCollection" FullName="System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection">
+﻿<Type Name="X509ScopedServiceCertificateElementCollection" FullName="System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection">
   <TypeSignature Language="C#" Value="public sealed class X509ScopedServiceCertificateElementCollection : System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection&lt;System.ServiceModel.Configuration.X509ScopedServiceCertificateElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit X509ScopedServiceCertificateElementCollection extends System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.X509ScopedServiceCertificateElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class X509ScopedServiceCertificateElementCollection&#xA;Inherits ServiceModelConfigurationElementCollection(Of X509ScopedServiceCertificateElement)" />
+  <TypeSignature Language="F#" Value="type X509ScopedServiceCertificateElementCollection = class&#xA;    inherit ServiceModelConfigurationElementCollection&lt;X509ScopedServiceCertificateElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509ScopedServiceCertificateElementCollection sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElementCollection&lt;System::ServiceModel::Configuration::X509ScopedServiceCertificateElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public X509ScopedServiceCertificateElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509ScopedServiceCertificateElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.X509ScopedServiceCertificateElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="x509ScopedServiceCertificateElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

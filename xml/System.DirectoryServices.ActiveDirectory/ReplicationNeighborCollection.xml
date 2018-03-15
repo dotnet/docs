@@ -1,7 +1,10 @@
-<Type Name="ReplicationNeighborCollection" FullName="System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection">
+﻿<Type Name="ReplicationNeighborCollection" FullName="System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection">
   <TypeSignature Language="C#" Value="public class ReplicationNeighborCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ReplicationNeighborCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ReplicationNeighborCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ReplicationNeighborCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReplicationNeighborCollection : System::Collections::ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.ActiveDirectory.ReplicationNeighbor neighbor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.ActiveDirectory.ReplicationNeighbor neighbor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection.Contains(System.DirectoryServices.ActiveDirectory.ReplicationNeighbor)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (neighbor As ReplicationNeighbor) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.ReplicationNeighbor -&gt; bool" Usage="replicationNeighborCollection.Contains neighbor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::ReplicationNeighbor ^ neighbor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -47,6 +53,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.ActiveDirectory.ReplicationNeighbor[] neighbors, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.DirectoryServices.ActiveDirectory.ReplicationNeighbor[] neighbors, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ReplicationNeighbor[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (neighbors As ReplicationNeighbor(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.ReplicationNeighbor[] * int -&gt; unit" Usage="replicationNeighborCollection.CopyTo (neighbors, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::ReplicationNeighbor ^&gt; ^ neighbors, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -77,6 +86,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.DirectoryServices.ActiveDirectory.ReplicationNeighbor neighbor);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.DirectoryServices.ActiveDirectory.ReplicationNeighbor neighbor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ReplicationNeighbor)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (neighbor As ReplicationNeighbor) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.ReplicationNeighbor -&gt; int" Usage="replicationNeighborCollection.IndexOf neighbor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::ReplicationNeighbor ^ neighbor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -104,6 +116,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ReplicationNeighbor this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ReplicationNeighbor Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ReplicationNeighbor" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.ReplicationNeighbor" Usage="System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ReplicationNeighbor ^ default[int] { System::DirectoryServices::ActiveDirectory::ReplicationNeighbor ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="CompositeActivityMarkupSerializer" FullName="System.Workflow.ComponentModel.Serialization.CompositeActivityMarkupSerializer">
+﻿<Type Name="CompositeActivityMarkupSerializer" FullName="System.Workflow.ComponentModel.Serialization.CompositeActivityMarkupSerializer">
   <TypeSignature Language="C#" Value="public class CompositeActivityMarkupSerializer : System.Workflow.ComponentModel.Serialization.ActivityMarkupSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompositeActivityMarkupSerializer extends System.Workflow.ComponentModel.Serialization.ActivityMarkupSerializer" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Serialization.CompositeActivityMarkupSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompositeActivityMarkupSerializer&#xA;Inherits ActivityMarkupSerializer" />
+  <TypeSignature Language="F#" Value="type CompositeActivityMarkupSerializer = class&#xA;    inherit ActivityMarkupSerializer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompositeActivityMarkupSerializer : System::Workflow::ComponentModel::Serialization::ActivityMarkupSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="public CompositeActivityMarkupSerializer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.CompositeActivityMarkupSerializer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompositeActivityMarkupSerializer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

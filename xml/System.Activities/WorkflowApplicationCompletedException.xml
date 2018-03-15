@@ -1,7 +1,10 @@
-<Type Name="WorkflowApplicationCompletedException" FullName="System.Activities.WorkflowApplicationCompletedException">
+﻿<Type Name="WorkflowApplicationCompletedException" FullName="System.Activities.WorkflowApplicationCompletedException">
   <TypeSignature Language="C#" Value="public class WorkflowApplicationCompletedException : System.Activities.WorkflowApplicationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit WorkflowApplicationCompletedException extends System.Activities.WorkflowApplicationException" />
   <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowApplicationCompletedException" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowApplicationCompletedException&#xA;Inherits WorkflowApplicationException" />
+  <TypeSignature Language="F#" Value="type WorkflowApplicationCompletedException = class&#xA;    inherit WorkflowApplicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowApplicationCompletedException : System::Activities::WorkflowApplicationException" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.WorkflowApplicationCompletedException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowApplicationCompletedException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplicationCompletedException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowApplicationCompletedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -34,6 +48,9 @@
       <MemberSignature Language="C#" Value="public WorkflowApplicationCompletedException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplicationCompletedException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Activities.WorkflowApplicationCompletedException : string -&gt; System.Activities.WorkflowApplicationCompletedException" Usage="new System.Activities.WorkflowApplicationCompletedException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowApplicationCompletedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -52,6 +69,9 @@
       <MemberSignature Language="C#" Value="protected WorkflowApplicationCompletedException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplicationCompletedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Activities.WorkflowApplicationCompletedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Activities.WorkflowApplicationCompletedException" Usage="new System.Activities.WorkflowApplicationCompletedException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowApplicationCompletedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -72,6 +92,9 @@
       <MemberSignature Language="C#" Value="public WorkflowApplicationCompletedException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplicationCompletedException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Activities.WorkflowApplicationCompletedException : string * Exception -&gt; System.Activities.WorkflowApplicationCompletedException" Usage="new System.Activities.WorkflowApplicationCompletedException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowApplicationCompletedException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -92,6 +115,9 @@
       <MemberSignature Language="C#" Value="public WorkflowApplicationCompletedException (string message, Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplicationCompletedException.#ctor(System.String,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="new System.Activities.WorkflowApplicationCompletedException : string * Guid -&gt; System.Activities.WorkflowApplicationCompletedException" Usage="new System.Activities.WorkflowApplicationCompletedException (message, instanceId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowApplicationCompletedException(System::String ^ message, Guid instanceId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -112,6 +138,9 @@
       <MemberSignature Language="C#" Value="public WorkflowApplicationCompletedException (string message, Guid instanceId, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, valuetype System.Guid instanceId, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.WorkflowApplicationCompletedException.#ctor(System.String,System.Guid,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, instanceId As Guid, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Activities.WorkflowApplicationCompletedException : string * Guid * Exception -&gt; System.Activities.WorkflowApplicationCompletedException" Usage="new System.Activities.WorkflowApplicationCompletedException (message, instanceId, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowApplicationCompletedException(System::String ^ message, Guid instanceId, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -130,14 +159,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.WorkflowApplicationCompletedException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="CmdLineError" FullName="Microsoft.JScript.CmdLineError">
+﻿<Type Name="CmdLineError" FullName="Microsoft.JScript.CmdLineError">
   <TypeSignature Language="C#" Value="public enum CmdLineError" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CmdLineError extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.CmdLineError" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CmdLineError" />
+  <TypeSignature Language="F#" Value="type CmdLineError = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CmdLineError" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="AssemblyNotFound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError AssemblyNotFound = int32(2001)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.AssemblyNotFound" />
+      <MemberSignature Language="VB.NET" Value="AssemblyNotFound" />
+      <MemberSignature Language="F#" Value="AssemblyNotFound = 2001" Usage="Microsoft.JScript.CmdLineError.AssemblyNotFound" />
+      <MemberSignature Language="C++ CLI" Value="AssemblyNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -28,6 +34,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2001</MemberValue>
       <Docs>
         <summary>The referenced assembly '{0}' could not be found.</summary>
         <forInternalUseOnly />
@@ -37,6 +44,9 @@
       <MemberSignature Language="C#" Value="CannotCreateEngine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError CannotCreateEngine = int32(2002)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.CannotCreateEngine" />
+      <MemberSignature Language="VB.NET" Value="CannotCreateEngine" />
+      <MemberSignature Language="F#" Value="CannotCreateEngine = 2002" Usage="Microsoft.JScript.CmdLineError.CannotCreateEngine" />
+      <MemberSignature Language="C++ CLI" Value="CannotCreateEngine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -45,6 +55,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2002</MemberValue>
       <Docs>
         <summary>Cannot create JScript engine.</summary>
         <forInternalUseOnly />
@@ -54,6 +65,9 @@
       <MemberSignature Language="C#" Value="CompilerConstant" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError CompilerConstant = int32(2003)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.CompilerConstant" />
+      <MemberSignature Language="VB.NET" Value="CompilerConstant" />
+      <MemberSignature Language="F#" Value="CompilerConstant = 2003" Usage="Microsoft.JScript.CmdLineError.CompilerConstant" />
+      <MemberSignature Language="C++ CLI" Value="CompilerConstant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -62,6 +76,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2003</MemberValue>
       <Docs>
         <summary>Cannot change value of compiler constant '{0}'.</summary>
         <forInternalUseOnly />
@@ -71,6 +86,9 @@
       <MemberSignature Language="C#" Value="DuplicateFileAsSourceAndAssembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError DuplicateFileAsSourceAndAssembly = int32(2004)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.DuplicateFileAsSourceAndAssembly" />
+      <MemberSignature Language="VB.NET" Value="DuplicateFileAsSourceAndAssembly" />
+      <MemberSignature Language="F#" Value="DuplicateFileAsSourceAndAssembly = 2004" Usage="Microsoft.JScript.CmdLineError.DuplicateFileAsSourceAndAssembly" />
+      <MemberSignature Language="C++ CLI" Value="DuplicateFileAsSourceAndAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -79,6 +97,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2004</MemberValue>
       <Docs>
         <summary>Duplicate file name: '{0}' is listed as both a source file and an imported assembly.</summary>
         <forInternalUseOnly />
@@ -88,6 +107,9 @@
       <MemberSignature Language="C#" Value="DuplicateResourceFile" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError DuplicateResourceFile = int32(2005)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.DuplicateResourceFile" />
+      <MemberSignature Language="VB.NET" Value="DuplicateResourceFile" />
+      <MemberSignature Language="F#" Value="DuplicateResourceFile = 2005" Usage="Microsoft.JScript.CmdLineError.DuplicateResourceFile" />
+      <MemberSignature Language="C++ CLI" Value="DuplicateResourceFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -96,6 +118,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2005</MemberValue>
       <Docs>
         <summary>Resource file '{0}' referenced more than once.</summary>
         <forInternalUseOnly />
@@ -105,6 +128,9 @@
       <MemberSignature Language="C#" Value="DuplicateResourceName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError DuplicateResourceName = int32(2006)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.DuplicateResourceName" />
+      <MemberSignature Language="VB.NET" Value="DuplicateResourceName" />
+      <MemberSignature Language="F#" Value="DuplicateResourceName = 2006" Usage="Microsoft.JScript.CmdLineError.DuplicateResourceName" />
+      <MemberSignature Language="C++ CLI" Value="DuplicateResourceName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -113,6 +139,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2006</MemberValue>
       <Docs>
         <summary>Resource name '{0}' is not unique.</summary>
         <forInternalUseOnly />
@@ -122,6 +149,9 @@
       <MemberSignature Language="C#" Value="DuplicateSourceFile" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError DuplicateSourceFile = int32(2007)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.DuplicateSourceFile" />
+      <MemberSignature Language="VB.NET" Value="DuplicateSourceFile" />
+      <MemberSignature Language="F#" Value="DuplicateSourceFile = 2007" Usage="Microsoft.JScript.CmdLineError.DuplicateSourceFile" />
+      <MemberSignature Language="C++ CLI" Value="DuplicateSourceFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -130,6 +160,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2007</MemberValue>
       <Docs>
         <summary>Duplicate file name: '{0}' is listed as a source file more than once.</summary>
         <forInternalUseOnly />
@@ -139,6 +170,9 @@
       <MemberSignature Language="C#" Value="ErrorSavingCompiledState" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError ErrorSavingCompiledState = int32(2008)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.ErrorSavingCompiledState" />
+      <MemberSignature Language="VB.NET" Value="ErrorSavingCompiledState" />
+      <MemberSignature Language="F#" Value="ErrorSavingCompiledState = 2008" Usage="Microsoft.JScript.CmdLineError.ErrorSavingCompiledState" />
+      <MemberSignature Language="C++ CLI" Value="ErrorSavingCompiledState" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -147,6 +181,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2008</MemberValue>
       <Docs>
         <summary>Error saving compiled state: {0}.</summary>
         <forInternalUseOnly />
@@ -156,6 +191,9 @@
       <MemberSignature Language="C#" Value="IncompatibleTargets" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError IncompatibleTargets = int32(2038)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.IncompatibleTargets" />
+      <MemberSignature Language="VB.NET" Value="IncompatibleTargets" />
+      <MemberSignature Language="F#" Value="IncompatibleTargets = 2038" Usage="Microsoft.JScript.CmdLineError.IncompatibleTargets" />
+      <MemberSignature Language="C++ CLI" Value="IncompatibleTargets" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -164,6 +202,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2038</MemberValue>
       <Docs>
         <summary>The value of the <see cref="P:System.CodeDom.Compiler.CompilerParameters.GenerateExecutable" /> property is not compatible with target type '{0}'.</summary>
         <forInternalUseOnly />
@@ -173,6 +212,9 @@
       <MemberSignature Language="C#" Value="InvalidAssembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidAssembly = int32(2009)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidAssembly" />
+      <MemberSignature Language="VB.NET" Value="InvalidAssembly" />
+      <MemberSignature Language="F#" Value="InvalidAssembly = 2009" Usage="Microsoft.JScript.CmdLineError.InvalidAssembly" />
+      <MemberSignature Language="C++ CLI" Value="InvalidAssembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -181,6 +223,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2009</MemberValue>
       <Docs>
         <summary>'{0}' is not a valid assembly.</summary>
         <forInternalUseOnly />
@@ -190,6 +233,9 @@
       <MemberSignature Language="C#" Value="InvalidCharacters" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidCharacters = int32(2036)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidCharacters" />
+      <MemberSignature Language="VB.NET" Value="InvalidCharacters" />
+      <MemberSignature Language="F#" Value="InvalidCharacters = 2036" Usage="Microsoft.JScript.CmdLineError.InvalidCharacters" />
+      <MemberSignature Language="C++ CLI" Value="InvalidCharacters" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -198,6 +244,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2036</MemberValue>
       <Docs>
         <summary>File name '{0}' contains invalid characters (wildcard characters are not supported).</summary>
         <forInternalUseOnly />
@@ -207,6 +254,9 @@
       <MemberSignature Language="C#" Value="InvalidCodePage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidCodePage = int32(2010)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidCodePage" />
+      <MemberSignature Language="VB.NET" Value="InvalidCodePage" />
+      <MemberSignature Language="F#" Value="InvalidCodePage = 2010" Usage="Microsoft.JScript.CmdLineError.InvalidCodePage" />
+      <MemberSignature Language="C++ CLI" Value="InvalidCodePage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -215,6 +265,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2010</MemberValue>
       <Docs>
         <summary>Code page '{0}' is invalid or not installed.</summary>
         <forInternalUseOnly />
@@ -224,6 +275,9 @@
       <MemberSignature Language="C#" Value="InvalidDefinition" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidDefinition = int32(2011)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidDefinition" />
+      <MemberSignature Language="VB.NET" Value="InvalidDefinition" />
+      <MemberSignature Language="F#" Value="InvalidDefinition = 2011" Usage="Microsoft.JScript.CmdLineError.InvalidDefinition" />
+      <MemberSignature Language="C++ CLI" Value="InvalidDefinition" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -232,6 +286,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2011</MemberValue>
       <Docs>
         <summary>Definition '{0}' must be assigned a Boolean or integral value.</summary>
         <forInternalUseOnly />
@@ -241,6 +296,9 @@
       <MemberSignature Language="C#" Value="InvalidForCompilerOptions" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidForCompilerOptions = int32(2037)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidForCompilerOptions" />
+      <MemberSignature Language="VB.NET" Value="InvalidForCompilerOptions" />
+      <MemberSignature Language="F#" Value="InvalidForCompilerOptions = 2037" Usage="Microsoft.JScript.CmdLineError.InvalidForCompilerOptions" />
+      <MemberSignature Language="C++ CLI" Value="InvalidForCompilerOptions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -249,6 +307,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2037</MemberValue>
       <Docs>
         <summary>'{0}' is not allowed in the CompilerOptions field.</summary>
         <forInternalUseOnly />
@@ -258,6 +317,9 @@
       <MemberSignature Language="C#" Value="InvalidLocaleID" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidLocaleID = int32(2012)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidLocaleID" />
+      <MemberSignature Language="VB.NET" Value="InvalidLocaleID" />
+      <MemberSignature Language="F#" Value="InvalidLocaleID = 2012" Usage="Microsoft.JScript.CmdLineError.InvalidLocaleID" />
+      <MemberSignature Language="C++ CLI" Value="InvalidLocaleID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -266,6 +328,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2012</MemberValue>
       <Docs>
         <summary>Locale ID '{0}' is invalid or not installed.</summary>
         <forInternalUseOnly />
@@ -275,6 +338,9 @@
       <MemberSignature Language="C#" Value="InvalidPlatform" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidPlatform = int32(2039)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidPlatform" />
+      <MemberSignature Language="VB.NET" Value="InvalidPlatform" />
+      <MemberSignature Language="F#" Value="InvalidPlatform = 2039" Usage="Microsoft.JScript.CmdLineError.InvalidPlatform" />
+      <MemberSignature Language="C++ CLI" Value="InvalidPlatform" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -283,6 +349,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2039</MemberValue>
       <Docs>
         <summary>Platform '{0}' is invalid. Specify 'x86', 'Itanium', 'x64', or 'anycpu'.</summary>
         <forInternalUseOnly />
@@ -292,6 +359,9 @@
       <MemberSignature Language="C#" Value="InvalidSourceFile" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidSourceFile = int32(2014)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidSourceFile" />
+      <MemberSignature Language="VB.NET" Value="InvalidSourceFile" />
+      <MemberSignature Language="F#" Value="InvalidSourceFile = 2014" Usage="Microsoft.JScript.CmdLineError.InvalidSourceFile" />
+      <MemberSignature Language="C++ CLI" Value="InvalidSourceFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -300,6 +370,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2014</MemberValue>
       <Docs>
         <summary>'{0}' is not a valid source file.</summary>
         <forInternalUseOnly />
@@ -309,6 +380,9 @@
       <MemberSignature Language="C#" Value="InvalidTarget" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidTarget = int32(2013)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidTarget" />
+      <MemberSignature Language="VB.NET" Value="InvalidTarget" />
+      <MemberSignature Language="F#" Value="InvalidTarget = 2013" Usage="Microsoft.JScript.CmdLineError.InvalidTarget" />
+      <MemberSignature Language="C++ CLI" Value="InvalidTarget" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -317,6 +391,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2013</MemberValue>
       <Docs>
         <summary>Target '{0}' is invalid. Specify 'exe' or 'library'.</summary>
         <forInternalUseOnly />
@@ -326,6 +401,9 @@
       <MemberSignature Language="C#" Value="InvalidVersion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidVersion = int32(2031)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidVersion" />
+      <MemberSignature Language="VB.NET" Value="InvalidVersion" />
+      <MemberSignature Language="F#" Value="InvalidVersion = 2031" Usage="Microsoft.JScript.CmdLineError.InvalidVersion" />
+      <MemberSignature Language="C++ CLI" Value="InvalidVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -334,6 +412,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2031</MemberValue>
       <Docs>
         <summary>'{0}' is not a valid version string.</summary>
         <forInternalUseOnly />
@@ -343,6 +422,9 @@
       <MemberSignature Language="C#" Value="InvalidWarningLevel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError InvalidWarningLevel = int32(2015)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.InvalidWarningLevel" />
+      <MemberSignature Language="VB.NET" Value="InvalidWarningLevel" />
+      <MemberSignature Language="F#" Value="InvalidWarningLevel = 2015" Usage="Microsoft.JScript.CmdLineError.InvalidWarningLevel" />
+      <MemberSignature Language="C++ CLI" Value="InvalidWarningLevel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -351,6 +433,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2015</MemberValue>
       <Docs>
         <summary>Invalid warning level specified with option '{0}'.</summary>
         <forInternalUseOnly />
@@ -360,6 +443,9 @@
       <MemberSignature Language="C#" Value="LAST" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError LAST = int32(2039)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.LAST" />
+      <MemberSignature Language="VB.NET" Value="LAST" />
+      <MemberSignature Language="F#" Value="LAST = 2039" Usage="Microsoft.JScript.CmdLineError.LAST" />
+      <MemberSignature Language="C++ CLI" Value="LAST" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -368,6 +454,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2039</MemberValue>
       <Docs>
         <summary>A placeholder enumeration member that contains the same value as the last (highest) assigned enumeration value.</summary>
         <forInternalUseOnly />
@@ -377,6 +464,9 @@
       <MemberSignature Language="C#" Value="ManagedResourceNotFound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError ManagedResourceNotFound = int32(2022)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.ManagedResourceNotFound" />
+      <MemberSignature Language="VB.NET" Value="ManagedResourceNotFound" />
+      <MemberSignature Language="F#" Value="ManagedResourceNotFound = 2022" Usage="Microsoft.JScript.CmdLineError.ManagedResourceNotFound" />
+      <MemberSignature Language="C++ CLI" Value="ManagedResourceNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -385,6 +475,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2022</MemberValue>
       <Docs>
         <summary>Managed resource '{0}' was not found.</summary>
         <forInternalUseOnly />
@@ -394,6 +485,9 @@
       <MemberSignature Language="C#" Value="MissingDefineArgument" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MissingDefineArgument = int32(2018)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MissingDefineArgument" />
+      <MemberSignature Language="VB.NET" Value="MissingDefineArgument" />
+      <MemberSignature Language="F#" Value="MissingDefineArgument = 2018" Usage="Microsoft.JScript.CmdLineError.MissingDefineArgument" />
+      <MemberSignature Language="C++ CLI" Value="MissingDefineArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -402,6 +496,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2018</MemberValue>
       <Docs>
         <summary>Missing identifier for '-define:' command-line option.</summary>
         <forInternalUseOnly />
@@ -411,6 +506,9 @@
       <MemberSignature Language="C#" Value="MissingExtension" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MissingExtension = int32(2019)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MissingExtension" />
+      <MemberSignature Language="VB.NET" Value="MissingExtension" />
+      <MemberSignature Language="F#" Value="MissingExtension = 2019" Usage="Microsoft.JScript.CmdLineError.MissingExtension" />
+      <MemberSignature Language="C++ CLI" Value="MissingExtension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -419,6 +517,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2019</MemberValue>
       <Docs>
         <summary>Missing file extension for '{0}'.</summary>
         <forInternalUseOnly />
@@ -428,6 +527,9 @@
       <MemberSignature Language="C#" Value="MissingLibArgument" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MissingLibArgument = int32(2020)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MissingLibArgument" />
+      <MemberSignature Language="VB.NET" Value="MissingLibArgument" />
+      <MemberSignature Language="F#" Value="MissingLibArgument = 2020" Usage="Microsoft.JScript.CmdLineError.MissingLibArgument" />
+      <MemberSignature Language="C++ CLI" Value="MissingLibArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -436,6 +538,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2020</MemberValue>
       <Docs>
         <summary>Missing file specification for '-lib:' command-line option.</summary>
         <forInternalUseOnly />
@@ -445,6 +548,9 @@
       <MemberSignature Language="C#" Value="MissingReference" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MissingReference = int32(2034)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MissingReference" />
+      <MemberSignature Language="VB.NET" Value="MissingReference" />
+      <MemberSignature Language="F#" Value="MissingReference = 2034" Usage="Microsoft.JScript.CmdLineError.MissingReference" />
+      <MemberSignature Language="C++ CLI" Value="MissingReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -453,6 +559,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2034</MemberValue>
       <Docs>
         <summary>Missing reference in argument list '{0}'.</summary>
         <forInternalUseOnly />
@@ -462,6 +569,9 @@
       <MemberSignature Language="C#" Value="MissingVersionInfo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MissingVersionInfo = int32(2021)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MissingVersionInfo" />
+      <MemberSignature Language="VB.NET" Value="MissingVersionInfo" />
+      <MemberSignature Language="F#" Value="MissingVersionInfo = 2021" Usage="Microsoft.JScript.CmdLineError.MissingVersionInfo" />
+      <MemberSignature Language="C++ CLI" Value="MissingVersionInfo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -470,6 +580,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2021</MemberValue>
       <Docs>
         <summary>Missing version information in -assembly.version option.</summary>
         <forInternalUseOnly />
@@ -479,6 +590,9 @@
       <MemberSignature Language="C#" Value="MultipleOutputNames" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MultipleOutputNames = int32(2016)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MultipleOutputNames" />
+      <MemberSignature Language="VB.NET" Value="MultipleOutputNames" />
+      <MemberSignature Language="F#" Value="MultipleOutputNames = 2016" Usage="Microsoft.JScript.CmdLineError.MultipleOutputNames" />
+      <MemberSignature Language="C++ CLI" Value="MultipleOutputNames" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -487,6 +601,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2016</MemberValue>
       <Docs>
         <summary>Multiple output file names specified.</summary>
         <forInternalUseOnly />
@@ -496,6 +611,9 @@
       <MemberSignature Language="C#" Value="MultipleTargets" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MultipleTargets = int32(2017)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MultipleTargets" />
+      <MemberSignature Language="VB.NET" Value="MultipleTargets" />
+      <MemberSignature Language="F#" Value="MultipleTargets = 2017" Usage="Microsoft.JScript.CmdLineError.MultipleTargets" />
+      <MemberSignature Language="C++ CLI" Value="MultipleTargets" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -504,6 +622,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2017</MemberValue>
       <Docs>
         <summary>Multiple targets specified.</summary>
         <forInternalUseOnly />
@@ -513,6 +632,9 @@
       <MemberSignature Language="C#" Value="MultipleWin32Resources" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError MultipleWin32Resources = int32(2033)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.MultipleWin32Resources" />
+      <MemberSignature Language="VB.NET" Value="MultipleWin32Resources" />
+      <MemberSignature Language="F#" Value="MultipleWin32Resources = 2033" Usage="Microsoft.JScript.CmdLineError.MultipleWin32Resources" />
+      <MemberSignature Language="C++ CLI" Value="MultipleWin32Resources" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -521,6 +643,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2033</MemberValue>
       <Docs>
         <summary>Cannot specify more than one Win32 resource file.</summary>
         <forInternalUseOnly />
@@ -530,6 +653,9 @@
       <MemberSignature Language="C#" Value="NestedResponseFiles" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError NestedResponseFiles = int32(2023)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NestedResponseFiles" />
+      <MemberSignature Language="VB.NET" Value="NestedResponseFiles" />
+      <MemberSignature Language="F#" Value="NestedResponseFiles = 2023" Usage="Microsoft.JScript.CmdLineError.NestedResponseFiles" />
+      <MemberSignature Language="C++ CLI" Value="NestedResponseFiles" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -538,6 +664,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2023</MemberValue>
       <Docs>
         <summary>Cannot process nested response files.</summary>
         <forInternalUseOnly />
@@ -547,6 +674,9 @@
       <MemberSignature Language="C#" Value="NoCodePage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError NoCodePage = int32(2024)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoCodePage" />
+      <MemberSignature Language="VB.NET" Value="NoCodePage" />
+      <MemberSignature Language="F#" Value="NoCodePage = 2024" Usage="Microsoft.JScript.CmdLineError.NoCodePage" />
+      <MemberSignature Language="C++ CLI" Value="NoCodePage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -555,6 +685,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2024</MemberValue>
       <Docs>
         <summary>No code page is specified with option '{0}'.</summary>
         <forInternalUseOnly />
@@ -564,6 +695,9 @@
       <MemberSignature Language="C#" Value="NoError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError NoError = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoError" />
+      <MemberSignature Language="VB.NET" Value="NoError" />
+      <MemberSignature Language="F#" Value="NoError = 0" Usage="Microsoft.JScript.CmdLineError.NoError" />
+      <MemberSignature Language="C++ CLI" Value="NoError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -572,6 +706,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No error. This is the default value.</summary>
         <forInternalUseOnly />
@@ -581,6 +716,9 @@
       <MemberSignature Language="C#" Value="NoFileName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError NoFileName = int32(2025)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoFileName" />
+      <MemberSignature Language="VB.NET" Value="NoFileName" />
+      <MemberSignature Language="F#" Value="NoFileName = 2025" Usage="Microsoft.JScript.CmdLineError.NoFileName" />
+      <MemberSignature Language="C++ CLI" Value="NoFileName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -589,6 +727,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2025</MemberValue>
       <Docs>
         <summary>No file name specified with option '{0}'.</summary>
         <forInternalUseOnly />
@@ -598,6 +737,9 @@
       <MemberSignature Language="C#" Value="NoInputSourcesSpecified" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError NoInputSourcesSpecified = int32(2026)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoInputSourcesSpecified" />
+      <MemberSignature Language="VB.NET" Value="NoInputSourcesSpecified" />
+      <MemberSignature Language="F#" Value="NoInputSourcesSpecified = 2026" Usage="Microsoft.JScript.CmdLineError.NoInputSourcesSpecified" />
+      <MemberSignature Language="C++ CLI" Value="NoInputSourcesSpecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -606,6 +748,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2026</MemberValue>
       <Docs>
         <summary>No input sources specified.</summary>
         <forInternalUseOnly />
@@ -615,6 +758,9 @@
       <MemberSignature Language="C#" Value="NoLocaleID" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError NoLocaleID = int32(2027)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoLocaleID" />
+      <MemberSignature Language="VB.NET" Value="NoLocaleID" />
+      <MemberSignature Language="F#" Value="NoLocaleID = 2027" Usage="Microsoft.JScript.CmdLineError.NoLocaleID" />
+      <MemberSignature Language="C++ CLI" Value="NoLocaleID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -623,6 +769,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2027</MemberValue>
       <Docs>
         <summary>No Locale ID is specified with option '{0}'.</summary>
         <forInternalUseOnly />
@@ -632,6 +779,9 @@
       <MemberSignature Language="C#" Value="NoWarningLevel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError NoWarningLevel = int32(2028)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.NoWarningLevel" />
+      <MemberSignature Language="VB.NET" Value="NoWarningLevel" />
+      <MemberSignature Language="F#" Value="NoWarningLevel = 2028" Usage="Microsoft.JScript.CmdLineError.NoWarningLevel" />
+      <MemberSignature Language="C++ CLI" Value="NoWarningLevel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -640,6 +790,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2028</MemberValue>
       <Docs>
         <summary>No warning level specified with option '{0}'.</summary>
         <forInternalUseOnly />
@@ -649,6 +800,9 @@
       <MemberSignature Language="C#" Value="ResourceNotFound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError ResourceNotFound = int32(2029)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.ResourceNotFound" />
+      <MemberSignature Language="VB.NET" Value="ResourceNotFound" />
+      <MemberSignature Language="F#" Value="ResourceNotFound = 2029" Usage="Microsoft.JScript.CmdLineError.ResourceNotFound" />
+      <MemberSignature Language="C++ CLI" Value="ResourceNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -657,6 +811,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2029</MemberValue>
       <Docs>
         <summary>Win32 resource '{0}' was not found.</summary>
         <forInternalUseOnly />
@@ -666,6 +821,9 @@
       <MemberSignature Language="C#" Value="SourceFileTooBig" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError SourceFileTooBig = int32(2032)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.SourceFileTooBig" />
+      <MemberSignature Language="VB.NET" Value="SourceFileTooBig" />
+      <MemberSignature Language="F#" Value="SourceFileTooBig = 2032" Usage="Microsoft.JScript.CmdLineError.SourceFileTooBig" />
+      <MemberSignature Language="C++ CLI" Value="SourceFileTooBig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -674,6 +832,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2032</MemberValue>
       <Docs>
         <summary>Source file too big.</summary>
         <forInternalUseOnly />
@@ -683,6 +842,9 @@
       <MemberSignature Language="C#" Value="SourceNotFound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError SourceNotFound = int32(2035)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.SourceNotFound" />
+      <MemberSignature Language="VB.NET" Value="SourceNotFound" />
+      <MemberSignature Language="F#" Value="SourceNotFound = 2035" Usage="Microsoft.JScript.CmdLineError.SourceNotFound" />
+      <MemberSignature Language="C++ CLI" Value="SourceNotFound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -691,6 +853,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2035</MemberValue>
       <Docs>
         <summary>Could not find source file '{0}'.</summary>
         <forInternalUseOnly />
@@ -700,6 +863,9 @@
       <MemberSignature Language="C#" Value="UnknownOption" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError UnknownOption = int32(2030)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.UnknownOption" />
+      <MemberSignature Language="VB.NET" Value="UnknownOption" />
+      <MemberSignature Language="F#" Value="UnknownOption = 2030" Usage="Microsoft.JScript.CmdLineError.UnknownOption" />
+      <MemberSignature Language="C++ CLI" Value="UnknownOption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -708,6 +874,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2030</MemberValue>
       <Docs>
         <summary>Unknown option '{0}'.</summary>
         <forInternalUseOnly />
@@ -717,6 +884,9 @@
       <MemberSignature Language="C#" Value="Unspecified" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.CmdLineError Unspecified = int32(2999)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.CmdLineError.Unspecified" />
+      <MemberSignature Language="VB.NET" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 2999" Usage="Microsoft.JScript.CmdLineError.Unspecified" />
+      <MemberSignature Language="C++ CLI" Value="Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -725,6 +895,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.CmdLineError</ReturnType>
       </ReturnValue>
+      <MemberValue>2999</MemberValue>
       <Docs>
         <summary>Unspecified error.</summary>
         <forInternalUseOnly />

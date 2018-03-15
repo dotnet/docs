@@ -1,7 +1,10 @@
-<Type Name="ExpandableObjectConverter" FullName="System.ComponentModel.ExpandableObjectConverter">
+﻿<Type Name="ExpandableObjectConverter" FullName="System.ComponentModel.ExpandableObjectConverter">
   <TypeSignature Language="C#" Value="public class ExpandableObjectConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpandableObjectConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ExpandableObjectConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExpandableObjectConverter&#xA;Inherits TypeConverter" />
+  <TypeSignature Language="F#" Value="type ExpandableObjectConverter = class&#xA;    inherit TypeConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExpandableObjectConverter : System::ComponentModel::TypeConverter" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +58,8 @@
       <MemberSignature Language="C#" Value="public ExpandableObjectConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ExpandableObjectConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpandableObjectConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -80,6 +85,9 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptorCollection GetProperties (System.ComponentModel.ITypeDescriptorContext context, object value, Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties(class System.ComponentModel.ITypeDescriptorContext context, object value, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ExpandableObjectConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperties (context As ITypeDescriptorContext, value As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
+      <MemberSignature Language="F#" Value="override this.GetProperties : System.ComponentModel.ITypeDescriptorContext * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="expandableObjectConverter.GetProperties (context, value, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ value, cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +141,9 @@
       <MemberSignature Language="C#" Value="public override bool GetPropertiesSupported (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetPropertiesSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ExpandableObjectConverter.GetPropertiesSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPropertiesSupported (context As ITypeDescriptorContext) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.GetPropertiesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="expandableObjectConverter.GetPropertiesSupported context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetPropertiesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="LowerMidCodeCharts" FullName="System.Web.Security.AntiXss.LowerMidCodeCharts">
+﻿<Type Name="LowerMidCodeCharts" FullName="System.Web.Security.AntiXss.LowerMidCodeCharts">
   <TypeSignature Language="C#" Value="public enum LowerMidCodeCharts" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LowerMidCodeCharts extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.AntiXss.LowerMidCodeCharts" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LowerMidCodeCharts" />
+  <TypeSignature Language="F#" Value="type LowerMidCodeCharts = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LowerMidCodeCharts" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="Balinese" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Balinese = int64(4194304)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Balinese" />
+      <MemberSignature Language="VB.NET" Value="Balinese" />
+      <MemberSignature Language="F#" Value="Balinese = 4194304" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Balinese" />
+      <MemberSignature Language="C++ CLI" Value="Balinese" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -31,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>4194304</MemberValue>
       <Docs>
         <summary>The Balinese code chart.</summary>
       </Docs>
@@ -39,6 +46,9 @@
       <MemberSignature Language="C#" Value="Buginese" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Buginese = int64(1048576)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Buginese" />
+      <MemberSignature Language="VB.NET" Value="Buginese" />
+      <MemberSignature Language="F#" Value="Buginese = 1048576" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Buginese" />
+      <MemberSignature Language="C++ CLI" Value="Buginese" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -47,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>1048576</MemberValue>
       <Docs>
         <summary>The Buginese code chart</summary>
       </Docs>
@@ -55,6 +66,9 @@
       <MemberSignature Language="C#" Value="Buhid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Buhid = int64(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Buhid" />
+      <MemberSignature Language="VB.NET" Value="Buhid" />
+      <MemberSignature Language="F#" Value="Buhid = 2048" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Buhid" />
+      <MemberSignature Language="C++ CLI" Value="Buhid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>The Buhid code chart</summary>
       </Docs>
@@ -71,6 +86,9 @@
       <MemberSignature Language="C#" Value="Cherokee" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Cherokee = int64(32)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Cherokee" />
+      <MemberSignature Language="VB.NET" Value="Cherokee" />
+      <MemberSignature Language="F#" Value="Cherokee = 32" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Cherokee" />
+      <MemberSignature Language="C++ CLI" Value="Cherokee" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The Cherokee code chart.</summary>
       </Docs>
@@ -87,6 +106,9 @@
       <MemberSignature Language="C#" Value="CombiningDiacriticalMarksSupplement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts CombiningDiacriticalMarksSupplement = int64(536870912)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.CombiningDiacriticalMarksSupplement" />
+      <MemberSignature Language="VB.NET" Value="CombiningDiacriticalMarksSupplement" />
+      <MemberSignature Language="F#" Value="CombiningDiacriticalMarksSupplement = 536870912" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.CombiningDiacriticalMarksSupplement" />
+      <MemberSignature Language="C++ CLI" Value="CombiningDiacriticalMarksSupplement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>536870912</MemberValue>
       <Docs>
         <summary>The Combining Diacritical Marks Supplement code chart.</summary>
       </Docs>
@@ -103,6 +126,9 @@
       <MemberSignature Language="C#" Value="Ethiopic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Ethiopic = int64(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Ethiopic" />
+      <MemberSignature Language="VB.NET" Value="Ethiopic" />
+      <MemberSignature Language="F#" Value="Ethiopic = 8" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Ethiopic" />
+      <MemberSignature Language="C++ CLI" Value="Ethiopic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The Ethiopic code chart.</summary>
       </Docs>
@@ -119,6 +146,9 @@
       <MemberSignature Language="C#" Value="EthiopicSupplement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts EthiopicSupplement = int64(16)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.EthiopicSupplement" />
+      <MemberSignature Language="VB.NET" Value="EthiopicSupplement" />
+      <MemberSignature Language="F#" Value="EthiopicSupplement = 16" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.EthiopicSupplement" />
+      <MemberSignature Language="C++ CLI" Value="EthiopicSupplement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +157,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The Ethiopic Supplement code chart.</summary>
       </Docs>
@@ -135,6 +166,9 @@
       <MemberSignature Language="C#" Value="Georgian" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Georgian = int64(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Georgian" />
+      <MemberSignature Language="VB.NET" Value="Georgian" />
+      <MemberSignature Language="F#" Value="Georgian = 2" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Georgian" />
+      <MemberSignature Language="C++ CLI" Value="Georgian" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +177,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The Georgian code chart.</summary>
       </Docs>
@@ -151,6 +186,9 @@
       <MemberSignature Language="C#" Value="HangulJamo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts HangulJamo = int64(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.HangulJamo" />
+      <MemberSignature Language="VB.NET" Value="HangulJamo" />
+      <MemberSignature Language="F#" Value="HangulJamo = 4" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.HangulJamo" />
+      <MemberSignature Language="C++ CLI" Value="HangulJamo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -159,6 +197,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The Hangul Jamo code chart</summary>
       </Docs>
@@ -167,6 +206,9 @@
       <MemberSignature Language="C#" Value="Hanunoo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Hanunoo = int64(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Hanunoo" />
+      <MemberSignature Language="VB.NET" Value="Hanunoo" />
+      <MemberSignature Language="F#" Value="Hanunoo = 1024" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Hanunoo" />
+      <MemberSignature Language="C++ CLI" Value="Hanunoo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +217,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>The Hanunoo code chart.</summary>
       </Docs>
@@ -183,6 +226,9 @@
       <MemberSignature Language="C#" Value="Khmer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Khmer = int64(8192)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Khmer" />
+      <MemberSignature Language="VB.NET" Value="Khmer" />
+      <MemberSignature Language="F#" Value="Khmer = 8192" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Khmer" />
+      <MemberSignature Language="C++ CLI" Value="Khmer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,6 +237,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>The Khmer code chart.</summary>
       </Docs>
@@ -199,6 +246,9 @@
       <MemberSignature Language="C#" Value="KhmerSymbols" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts KhmerSymbols = int64(524288)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.KhmerSymbols" />
+      <MemberSignature Language="VB.NET" Value="KhmerSymbols" />
+      <MemberSignature Language="F#" Value="KhmerSymbols = 524288" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.KhmerSymbols" />
+      <MemberSignature Language="C++ CLI" Value="KhmerSymbols" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -207,6 +257,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>524288</MemberValue>
       <Docs>
         <summary>The Khmer Symbols code chart.</summary>
       </Docs>
@@ -215,6 +266,9 @@
       <MemberSignature Language="C#" Value="LatinExtendedAdditional" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts LatinExtendedAdditional = int64(1073741824)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.LatinExtendedAdditional" />
+      <MemberSignature Language="VB.NET" Value="LatinExtendedAdditional" />
+      <MemberSignature Language="F#" Value="LatinExtendedAdditional = 1073741824" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.LatinExtendedAdditional" />
+      <MemberSignature Language="C++ CLI" Value="LatinExtendedAdditional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -223,6 +277,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>1073741824</MemberValue>
       <Docs>
         <summary>The Latin Extended Additional code chart.</summary>
       </Docs>
@@ -231,6 +286,9 @@
       <MemberSignature Language="C#" Value="Lepcha" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Lepcha = int64(16777216)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Lepcha" />
+      <MemberSignature Language="VB.NET" Value="Lepcha" />
+      <MemberSignature Language="F#" Value="Lepcha = 16777216" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Lepcha" />
+      <MemberSignature Language="C++ CLI" Value="Lepcha" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -239,6 +297,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>16777216</MemberValue>
       <Docs>
         <summary>The Lepcha code chart.</summary>
       </Docs>
@@ -247,6 +306,9 @@
       <MemberSignature Language="C#" Value="Limbu" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Limbu = int64(65536)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Limbu" />
+      <MemberSignature Language="VB.NET" Value="Limbu" />
+      <MemberSignature Language="F#" Value="Limbu = 65536" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Limbu" />
+      <MemberSignature Language="C++ CLI" Value="Limbu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -255,6 +317,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>65536</MemberValue>
       <Docs>
         <summary>The Limbu code chart.</summary>
       </Docs>
@@ -263,6 +326,9 @@
       <MemberSignature Language="C#" Value="Mongolian" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Mongolian = int64(16384)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Mongolian" />
+      <MemberSignature Language="VB.NET" Value="Mongolian" />
+      <MemberSignature Language="F#" Value="Mongolian = 16384" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Mongolian" />
+      <MemberSignature Language="C++ CLI" Value="Mongolian" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -271,6 +337,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>The Mongolian code chart.</summary>
       </Docs>
@@ -279,6 +346,9 @@
       <MemberSignature Language="C#" Value="Myanmar" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Myanmar = int64(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Myanmar" />
+      <MemberSignature Language="VB.NET" Value="Myanmar" />
+      <MemberSignature Language="F#" Value="Myanmar = 1" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Myanmar" />
+      <MemberSignature Language="C++ CLI" Value="Myanmar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -287,6 +357,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The Myanmar code chart.</summary>
       </Docs>
@@ -295,6 +366,9 @@
       <MemberSignature Language="C#" Value="NewTaiLue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts NewTaiLue = int64(262144)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.NewTaiLue" />
+      <MemberSignature Language="VB.NET" Value="NewTaiLue" />
+      <MemberSignature Language="F#" Value="NewTaiLue = 262144" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.NewTaiLue" />
+      <MemberSignature Language="C++ CLI" Value="NewTaiLue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -303,6 +377,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>262144</MemberValue>
       <Docs>
         <summary>The New Tai Lue code chart.</summary>
       </Docs>
@@ -311,6 +386,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts None = int64(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -319,6 +397,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>None of the UTF-8 Unicode code charts from the lower-middle region are marked as safe.</summary>
       </Docs>
@@ -327,6 +406,9 @@
       <MemberSignature Language="C#" Value="Ogham" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Ogham = int64(128)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Ogham" />
+      <MemberSignature Language="VB.NET" Value="Ogham" />
+      <MemberSignature Language="F#" Value="Ogham = 128" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Ogham" />
+      <MemberSignature Language="C++ CLI" Value="Ogham" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -335,6 +417,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The Ogham code chart.</summary>
       </Docs>
@@ -343,6 +426,9 @@
       <MemberSignature Language="C#" Value="OlChiki" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts OlChiki = int64(33554432)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.OlChiki" />
+      <MemberSignature Language="VB.NET" Value="OlChiki" />
+      <MemberSignature Language="F#" Value="OlChiki = 33554432" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.OlChiki" />
+      <MemberSignature Language="C++ CLI" Value="OlChiki" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -351,6 +437,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>33554432</MemberValue>
       <Docs>
         <summary>The Ol Chiki code chart.</summary>
       </Docs>
@@ -359,6 +446,9 @@
       <MemberSignature Language="C#" Value="PhoneticExtensions" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts PhoneticExtensions = int64(134217728)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.PhoneticExtensions" />
+      <MemberSignature Language="VB.NET" Value="PhoneticExtensions" />
+      <MemberSignature Language="F#" Value="PhoneticExtensions = 134217728" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.PhoneticExtensions" />
+      <MemberSignature Language="C++ CLI" Value="PhoneticExtensions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -367,6 +457,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>134217728</MemberValue>
       <Docs>
         <summary>The Phonetic Extensions code chart.</summary>
       </Docs>
@@ -375,6 +466,9 @@
       <MemberSignature Language="C#" Value="PhoneticExtensionsSupplement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts PhoneticExtensionsSupplement = int64(268435456)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.PhoneticExtensionsSupplement" />
+      <MemberSignature Language="VB.NET" Value="PhoneticExtensionsSupplement" />
+      <MemberSignature Language="F#" Value="PhoneticExtensionsSupplement = 268435456" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.PhoneticExtensionsSupplement" />
+      <MemberSignature Language="C++ CLI" Value="PhoneticExtensionsSupplement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -383,6 +477,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>268435456</MemberValue>
       <Docs>
         <summary>The Phonetic Extensions Supplement code chart.</summary>
       </Docs>
@@ -391,6 +486,9 @@
       <MemberSignature Language="C#" Value="Runic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Runic = int64(256)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Runic" />
+      <MemberSignature Language="VB.NET" Value="Runic" />
+      <MemberSignature Language="F#" Value="Runic = 256" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Runic" />
+      <MemberSignature Language="C++ CLI" Value="Runic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -399,6 +497,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>The Runic code chart.</summary>
       </Docs>
@@ -407,6 +506,9 @@
       <MemberSignature Language="C#" Value="Sudanese" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Sudanese = int64(8388608)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Sudanese" />
+      <MemberSignature Language="VB.NET" Value="Sudanese" />
+      <MemberSignature Language="F#" Value="Sudanese = 8388608" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Sudanese" />
+      <MemberSignature Language="C++ CLI" Value="Sudanese" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -415,6 +517,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>8388608</MemberValue>
       <Docs>
         <summary>The Sudanese code chart.</summary>
       </Docs>
@@ -423,6 +526,9 @@
       <MemberSignature Language="C#" Value="Tagalog" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Tagalog = int64(512)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Tagalog" />
+      <MemberSignature Language="VB.NET" Value="Tagalog" />
+      <MemberSignature Language="F#" Value="Tagalog = 512" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Tagalog" />
+      <MemberSignature Language="C++ CLI" Value="Tagalog" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -431,6 +537,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>The Tagalog code chart.</summary>
       </Docs>
@@ -439,6 +546,9 @@
       <MemberSignature Language="C#" Value="Tagbanwa" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts Tagbanwa = int64(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.Tagbanwa" />
+      <MemberSignature Language="VB.NET" Value="Tagbanwa" />
+      <MemberSignature Language="F#" Value="Tagbanwa = 4096" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.Tagbanwa" />
+      <MemberSignature Language="C++ CLI" Value="Tagbanwa" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -447,6 +557,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>The Tagbanwa code chart.</summary>
       </Docs>
@@ -455,6 +566,9 @@
       <MemberSignature Language="C#" Value="TaiLe" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts TaiLe = int64(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.TaiLe" />
+      <MemberSignature Language="VB.NET" Value="TaiLe" />
+      <MemberSignature Language="F#" Value="TaiLe = 131072" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.TaiLe" />
+      <MemberSignature Language="C++ CLI" Value="TaiLe" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -463,6 +577,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>The Tai Le code chart.</summary>
       </Docs>
@@ -471,6 +586,9 @@
       <MemberSignature Language="C#" Value="TaiTham" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts TaiTham = int64(2097152)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.TaiTham" />
+      <MemberSignature Language="VB.NET" Value="TaiTham" />
+      <MemberSignature Language="F#" Value="TaiTham = 2097152" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.TaiTham" />
+      <MemberSignature Language="C++ CLI" Value="TaiTham" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -479,6 +597,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>2097152</MemberValue>
       <Docs>
         <summary>The Tai Tham code chart.</summary>
       </Docs>
@@ -487,6 +606,9 @@
       <MemberSignature Language="C#" Value="UnifiedCanadianAboriginalSyllabics" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts UnifiedCanadianAboriginalSyllabics = int64(64)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.UnifiedCanadianAboriginalSyllabics" />
+      <MemberSignature Language="VB.NET" Value="UnifiedCanadianAboriginalSyllabics" />
+      <MemberSignature Language="F#" Value="UnifiedCanadianAboriginalSyllabics = 64" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.UnifiedCanadianAboriginalSyllabics" />
+      <MemberSignature Language="C++ CLI" Value="UnifiedCanadianAboriginalSyllabics" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -495,6 +617,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The Unified Canadian Aboriginal Syllabics code chart.</summary>
       </Docs>
@@ -503,6 +626,9 @@
       <MemberSignature Language="C#" Value="UnifiedCanadianAboriginalSyllabicsExtended" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts UnifiedCanadianAboriginalSyllabicsExtended = int64(32768)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.UnifiedCanadianAboriginalSyllabicsExtended" />
+      <MemberSignature Language="VB.NET" Value="UnifiedCanadianAboriginalSyllabicsExtended" />
+      <MemberSignature Language="F#" Value="UnifiedCanadianAboriginalSyllabicsExtended = 32768" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.UnifiedCanadianAboriginalSyllabicsExtended" />
+      <MemberSignature Language="C++ CLI" Value="UnifiedCanadianAboriginalSyllabicsExtended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -511,6 +637,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>32768</MemberValue>
       <Docs>
         <summary>The Unified Canadian Aboriginal Syllabics Extended code chart.</summary>
       </Docs>
@@ -519,6 +646,9 @@
       <MemberSignature Language="C#" Value="VedicExtensions" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.LowerMidCodeCharts VedicExtensions = int64(67108864)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.LowerMidCodeCharts.VedicExtensions" />
+      <MemberSignature Language="VB.NET" Value="VedicExtensions" />
+      <MemberSignature Language="F#" Value="VedicExtensions = 67108864" Usage="System.Web.Security.AntiXss.LowerMidCodeCharts.VedicExtensions" />
+      <MemberSignature Language="C++ CLI" Value="VedicExtensions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -527,6 +657,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.LowerMidCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>67108864</MemberValue>
       <Docs>
         <summary>The Vedic Extensions code chart.</summary>
       </Docs>

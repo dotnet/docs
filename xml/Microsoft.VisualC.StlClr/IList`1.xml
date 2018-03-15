@@ -1,7 +1,10 @@
-<Type Name="IList&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IList&lt;TValue&gt;">
+﻿<Type Name="IList&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.IList&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public interface IList&lt;TValue&gt; : ICloneable, Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer&lt;TValue&gt;, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit IList`1&lt;TValue&gt; implements class Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer`1&lt;!TValue&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.IList`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IList(Of TValue)&#xA;Implements IBidirectionalContainer(Of TValue), ICloneable, ICollection" />
+  <TypeSignature Language="F#" Value="type IList&lt;'Value&gt; = interface&#xA;    interface IBidirectionalContainer&lt;'Value&gt;&#xA;    interface ICloneable&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public interface class IList : ICloneable, Microsoft::VisualC::StlClr::Generic::IBidirectionalContainer&lt;TValue&gt;, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -54,6 +57,9 @@
       <MemberSignature Language="C#" Value="public void assign (System.Collections.IEnumerable _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void assign(class System.Collections.IEnumerable _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.assign(System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub assign (_Right As IEnumerable)" />
+      <MemberSignature Language="F#" Value="abstract member assign : System.Collections.IEnumerable -&gt; unit" Usage="iList.assign _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void assign(System::Collections::IEnumerable ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -82,6 +88,9 @@
       <MemberSignature Language="C#" Value="public void assign (Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _First, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Last);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void assign(class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _First, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Last) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.assign(Microsoft.VisualC.StlClr.Generic.IInputIterator{`0},Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub assign (_First As IInputIterator(Of TValue), _Last As IInputIterator(Of TValue))" />
+      <MemberSignature Language="F#" Value="abstract member assign : Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; unit" Usage="iList.assign (_First, _Last)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void assign(Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _First, Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Last);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -112,6 +121,9 @@
       <MemberSignature Language="C#" Value="public void assign (int _Count, TValue _Val);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void assign(int32 _Count, !TValue _Val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.assign(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub assign (_Count As Integer, _Val As TValue)" />
+      <MemberSignature Language="F#" Value="abstract member assign : int * 'Value -&gt; unit" Usage="iList.assign (_Count, _Val)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void assign(int _Count, TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -142,6 +154,9 @@
       <MemberSignature Language="C#" Value="public TValue back ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue back() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.back" />
+      <MemberSignature Language="VB.NET" Value="Public Function back () As TValue" />
+      <MemberSignature Language="F#" Value="abstract member back : unit -&gt; " Usage="iList.back " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue % back();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -168,6 +183,9 @@
       <MemberSignature Language="C#" Value="public TValue back_item { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TValue back_item" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.IList`1.back_item" />
+      <MemberSignature Language="VB.NET" Value="Public Property back_item As TValue" />
+      <MemberSignature Language="F#" Value="member this.back_item : 'Value with get, set" Usage="Microsoft.VisualC.StlClr.IList&lt;'Value&gt;.back_item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue back_item { TValue get(); void set(TValue value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -193,6 +211,9 @@
       <MemberSignature Language="C#" Value="public void begin (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; );" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) begin(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.begin(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function begin (ByRef  As ContainerBidirectionalIterator(Of TValue)) As Void" />
+      <MemberSignature Language="F#" Value="abstract member begin :  -&gt; Void" Usage="iList.begin " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ begin(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -222,6 +243,9 @@
       <MemberSignature Language="C#" Value="public void clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub clear ()" />
+      <MemberSignature Language="F#" Value="abstract member clear : unit -&gt; unit" Usage="iList.clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -247,6 +271,9 @@
       <MemberSignature Language="C#" Value="public bool empty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool empty() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.empty" />
+      <MemberSignature Language="VB.NET" Value="Public Function empty () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member empty : unit -&gt; bool" Usage="iList.empty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool empty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -274,6 +301,9 @@
       <MemberSignature Language="C#" Value="public void end (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; );" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) end(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.end(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function end (ByRef  As ContainerBidirectionalIterator(Of TValue)) As Void" />
+      <MemberSignature Language="F#" Value="abstract member end :  -&gt; Void" Usage="iList.end " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ end(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -320,6 +350,9 @@
       <MemberSignature Language="C#" Value="public void erase (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.erase(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
+      <MemberSignature Language="VB.NET" Value="Public Function erase (ByRef  As ContainerBidirectionalIterator(Of TValue), _Where As ContainerBidirectionalIterator) As Void" />
+      <MemberSignature Language="F#" Value="abstract member erase :  * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator -&gt; Void" Usage="iList.erase (, _Where)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ erase(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -351,6 +384,9 @@
       <MemberSignature Language="C#" Value="public void erase (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _First_iter, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Last_iter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) erase(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _First_iter, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Last_iter) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.erase(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
+      <MemberSignature Language="VB.NET" Value="Public Function erase (ByRef  As ContainerBidirectionalIterator(Of TValue), _First_iter As ContainerBidirectionalIterator, _Last_iter As ContainerBidirectionalIterator) As Void" />
+      <MemberSignature Language="F#" Value="abstract member erase :  * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator -&gt; Void" Usage="iList.erase (, _First_iter, _Last_iter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ erase(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _First_iter, Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Last_iter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -368,7 +404,7 @@
         <param name="">To be added.</param>
         <param name="_First_iter">The beginning position of the range of elements to erase.</param>
         <param name="_Last_iter">The first position beyond the range of elements to erase.</param>
-        <summary>Removes the elements of the controlled sequence in the range <c>[</c><paramref name="_First_iter" /><c>,</c> <paramref name="_Last_iter" /><c>)</c>.</summary>
+        <summary>Removes the elements of the controlled sequence in the range <c>[</c><paramref name="_First_iter" /><c>,</c><paramref name="_Last_iter" /><c>)</c>.</summary>
         <returns>An iterator.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -384,6 +420,9 @@
       <MemberSignature Language="C#" Value="public TValue front ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !TValue front() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.front" />
+      <MemberSignature Language="VB.NET" Value="Public Function front () As TValue" />
+      <MemberSignature Language="F#" Value="abstract member front : unit -&gt; " Usage="iList.front " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TValue % front();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -410,6 +449,9 @@
       <MemberSignature Language="C#" Value="public TValue front_item { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TValue front_item" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.IList`1.front_item" />
+      <MemberSignature Language="VB.NET" Value="Public Property front_item As TValue" />
+      <MemberSignature Language="F#" Value="member this.front_item : 'Value with get, set" Usage="Microsoft.VisualC.StlClr.IList&lt;'Value&gt;.front_item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue front_item { TValue get(); void set(TValue value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -452,6 +494,9 @@
       <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where_iter, System.Collections.IEnumerable _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where_iter, class System.Collections.IEnumerable _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub insert (_Where_iter As ContainerBidirectionalIterator, _Right As IEnumerable)" />
+      <MemberSignature Language="F#" Value="abstract member insert : Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator * System.Collections.IEnumerable -&gt; unit" Usage="iList.insert (_Where_iter, _Right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where_iter, System::Collections::IEnumerable ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -482,6 +527,9 @@
       <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _First, Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;TValue&gt; _Last);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _First, class Microsoft.VisualC.StlClr.Generic.IInputIterator`1&lt;!TValue&gt; _Last) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.IInputIterator{`0},Microsoft.VisualC.StlClr.Generic.IInputIterator{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub insert (_Where As ContainerBidirectionalIterator, _First As IInputIterator(Of TValue), _Last As IInputIterator(Of TValue))" />
+      <MemberSignature Language="F#" Value="abstract member insert : Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator * Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.IInputIterator&lt;'Value&gt; -&gt; unit" Usage="iList.insert (_Where, _First, _Last)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where, Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _First, Microsoft::VisualC::StlClr::Generic::IInputIterator&lt;TValue&gt; ^ _Last);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -499,7 +547,7 @@
         <param name="_Where">The position in the container immediately following the newly inserted elements.</param>
         <param name="_First">The beginning position of the range of elements to insert into the container.</param>
         <param name="_Last">The first position beyond the range of elements to insert into the container.</param>
-        <summary>Inserts the sequence [<paramref name="_First" /><c>,</c> <paramref name="_Last" />) into the container.</summary>
+        <summary>Inserts the sequence [<paramref name="_First" /><c>,</c><paramref name="_Last" />) into the container.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -514,6 +562,9 @@
       <MemberSignature Language="C#" Value="public void insert (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, int _Count, TValue _Val);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, int32 _Count, !TValue _Val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub insert (_Where As ContainerBidirectionalIterator, _Count As Integer, _Val As TValue)" />
+      <MemberSignature Language="F#" Value="abstract member insert : Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator * int * 'Value -&gt; unit" Usage="iList.insert (_Where, _Count, _Val)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void insert(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where, int _Count, TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -546,6 +597,9 @@
       <MemberSignature Language="C#" Value="public void insert (ref Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator&lt;TValue&gt; , Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, TValue _Val);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) insert(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1&lt;!TValue&gt;&amp; , class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, !TValue _Val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.insert(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}@,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function insert (ByRef  As ContainerBidirectionalIterator(Of TValue), _Where As ContainerBidirectionalIterator, _Val As TValue) As Void" />
+      <MemberSignature Language="F#" Value="abstract member insert :  * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator * 'Value -&gt; Void" Usage="iList.insert (, _Where, _Val)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ insert(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator&lt;TValue&gt; ^ % , Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where, TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -579,6 +633,9 @@
       <MemberSignature Language="C#" Value="public void merge (Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right, Microsoft.VisualC.StlClr.BinaryDelegate&lt;TValue,TValue,bool&gt; _Pred);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void merge(class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right, class Microsoft.VisualC.StlClr.BinaryDelegate`3&lt;!TValue, !TValue, bool&gt; _Pred) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.merge(Microsoft.VisualC.StlClr.IList{`0},Microsoft.VisualC.StlClr.BinaryDelegate{`0,`0,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub merge (_Right As IList(Of TValue), _Pred As BinaryDelegate(Of TValue, TValue, Boolean))" />
+      <MemberSignature Language="F#" Value="abstract member merge : Microsoft.VisualC.StlClr.IList&lt;'Value&gt; * Microsoft.VisualC.StlClr.BinaryDelegate&lt;'Value, 'Value, bool&gt; -&gt; unit" Usage="iList.merge (_Right, _Pred)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void merge(Microsoft::VisualC::StlClr::IList&lt;TValue&gt; ^ _Right, Microsoft::VisualC::StlClr::BinaryDelegate&lt;TValue, TValue, bool&gt; ^ _Pred);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -609,6 +666,9 @@
       <MemberSignature Language="C#" Value="public void pop_back ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void pop_back() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.pop_back" />
+      <MemberSignature Language="VB.NET" Value="Public Sub pop_back ()" />
+      <MemberSignature Language="F#" Value="abstract member pop_back : unit -&gt; unit" Usage="iList.pop_back " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void pop_back();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -634,6 +694,9 @@
       <MemberSignature Language="C#" Value="public void pop_front ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void pop_front() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.pop_front" />
+      <MemberSignature Language="VB.NET" Value="Public Sub pop_front ()" />
+      <MemberSignature Language="F#" Value="abstract member pop_front : unit -&gt; unit" Usage="iList.pop_front " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void pop_front();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -659,6 +722,9 @@
       <MemberSignature Language="C#" Value="public void push_back (TValue _Val);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void push_back(!TValue _Val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.push_back(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub push_back (_Val As TValue)" />
+      <MemberSignature Language="F#" Value="abstract member push_back : 'Value -&gt; unit" Usage="iList.push_back _Val" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void push_back(TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -687,6 +753,9 @@
       <MemberSignature Language="C#" Value="public void push_front (TValue _Val);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void push_front(!TValue _Val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.push_front(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub push_front (_Val As TValue)" />
+      <MemberSignature Language="F#" Value="abstract member push_front : 'Value -&gt; unit" Usage="iList.push_front _Val" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void push_front(TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -715,6 +784,9 @@
       <MemberSignature Language="C#" Value="public void rbegin (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rbegin(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.rbegin(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function rbegin (ByRef  As ReverseBidirectionalIterator(Of TValue)) As Void" />
+      <MemberSignature Language="F#" Value="abstract member rbegin :  -&gt; Void" Usage="iList.rbegin " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ rbegin(Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -744,6 +816,9 @@
       <MemberSignature Language="C#" Value="public void remove (TValue _Val);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void remove(!TValue _Val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.remove(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub remove (_Val As TValue)" />
+      <MemberSignature Language="F#" Value="abstract member remove : 'Value -&gt; unit" Usage="iList.remove _Val" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void remove(TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -772,6 +847,9 @@
       <MemberSignature Language="C#" Value="public void rend (ref Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator&lt;TValue&gt; );" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Void modreq(System.Runtime.CompilerServices.IsUdtReturn) rend(class Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator`1&lt;!TValue&gt;&amp; ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.rend(Microsoft.VisualC.StlClr.Generic.ReverseBidirectionalIterator{`0}@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function rend (ByRef  As ReverseBidirectionalIterator(Of TValue)) As Void" />
+      <MemberSignature Language="F#" Value="abstract member rend :  -&gt; Void" Usage="iList.rend " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ^ rend(Microsoft::VisualC::StlClr::Generic::ReverseBidirectionalIterator&lt;TValue&gt; ^ % );" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -818,6 +896,9 @@
       <MemberSignature Language="C#" Value="public void resize (int _Newsize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void resize(int32 _Newsize) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.resize(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub resize (_Newsize As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member resize : int -&gt; unit" Usage="iList.resize _Newsize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void resize(int _Newsize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -846,6 +927,9 @@
       <MemberSignature Language="C#" Value="public void resize (int _Newsize, TValue _Val);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void resize(int32 _Newsize, !TValue _Val) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.resize(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub resize (_Newsize As Integer, _Val As TValue)" />
+      <MemberSignature Language="F#" Value="abstract member resize : int * 'Value -&gt; unit" Usage="iList.resize (_Newsize, _Val)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void resize(int _Newsize, TValue _Val);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -876,6 +960,9 @@
       <MemberSignature Language="C#" Value="public void reverse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void reverse() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.reverse" />
+      <MemberSignature Language="VB.NET" Value="Public Sub reverse ()" />
+      <MemberSignature Language="F#" Value="abstract member reverse : unit -&gt; unit" Usage="iList.reverse " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void reverse();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -901,6 +988,9 @@
       <MemberSignature Language="C#" Value="public int size ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 size() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.size" />
+      <MemberSignature Language="VB.NET" Value="Public Function size () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member size : unit -&gt; int" Usage="iList.size " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int size();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -927,6 +1017,9 @@
       <MemberSignature Language="C#" Value="public void sort (Microsoft.VisualC.StlClr.BinaryDelegate&lt;TValue,TValue,bool&gt; _Pred);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void sort(class Microsoft.VisualC.StlClr.BinaryDelegate`3&lt;!TValue, !TValue, bool&gt; _Pred) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.sort(Microsoft.VisualC.StlClr.BinaryDelegate{`0,`0,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub sort (_Pred As BinaryDelegate(Of TValue, TValue, Boolean))" />
+      <MemberSignature Language="F#" Value="abstract member sort : Microsoft.VisualC.StlClr.BinaryDelegate&lt;'Value, 'Value, bool&gt; -&gt; unit" Usage="iList.sort _Pred" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void sort(Microsoft::VisualC::StlClr::BinaryDelegate&lt;TValue, TValue, bool&gt; ^ _Pred);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -972,6 +1065,9 @@
       <MemberSignature Language="C#" Value="public void splice (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void splice(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.splice(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.IList{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub splice (_Where As ContainerBidirectionalIterator, _Right As IList(Of TValue))" />
+      <MemberSignature Language="F#" Value="abstract member splice : Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator * Microsoft.VisualC.StlClr.IList&lt;'Value&gt; -&gt; unit" Usage="iList.splice (_Where, _Right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void splice(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where, Microsoft::VisualC::StlClr::IList&lt;TValue&gt; ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -1002,6 +1098,9 @@
       <MemberSignature Language="C#" Value="public void splice (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _First);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void splice(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _First) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.splice(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.IList{`0},Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub splice (_Where As ContainerBidirectionalIterator, _Right As IList(Of TValue), _First As ContainerBidirectionalIterator)" />
+      <MemberSignature Language="F#" Value="abstract member splice : Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator * Microsoft.VisualC.StlClr.IList&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator -&gt; unit" Usage="iList.splice (_Where, _Right, _First)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void splice(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where, Microsoft::VisualC::StlClr::IList&lt;TValue&gt; ^ _Right, Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _First);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -1034,6 +1133,9 @@
       <MemberSignature Language="C#" Value="public void splice (Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Where, Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _First, Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator _Last);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void splice(class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Where, class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _First, class Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1 modreq(System.Runtime.CompilerServices.IsByValue) _Last) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.splice(Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.IList{`0},Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue,Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator{`0}|System.Runtime.CompilerServices.IsByValue)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub splice (_Where As ContainerBidirectionalIterator, _Right As IList(Of TValue), _First As ContainerBidirectionalIterator, _Last As ContainerBidirectionalIterator)" />
+      <MemberSignature Language="F#" Value="abstract member splice : Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator * Microsoft.VisualC.StlClr.IList&lt;'Value&gt; * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator * Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator -&gt; unit" Usage="iList.splice (_Where, _Right, _First, _Last)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void splice(Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Where, Microsoft::VisualC::StlClr::IList&lt;TValue&gt; ^ _Right, Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _First, Microsoft::VisualC::StlClr::Generic::ContainerBidirectionalIterator ^ _Last);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -1068,6 +1170,9 @@
       <MemberSignature Language="C#" Value="public void swap (Microsoft.VisualC.StlClr.IList&lt;TValue&gt; _Right);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void swap(class Microsoft.VisualC.StlClr.IList`1&lt;!TValue&gt; _Right) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.swap(Microsoft.VisualC.StlClr.IList{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub swap (_Right As IList(Of TValue))" />
+      <MemberSignature Language="F#" Value="abstract member swap : Microsoft.VisualC.StlClr.IList&lt;'Value&gt; -&gt; unit" Usage="iList.swap _Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void swap(Microsoft::VisualC::StlClr::IList&lt;TValue&gt; ^ _Right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -1096,6 +1201,9 @@
       <MemberSignature Language="C#" Value="public void unique (Microsoft.VisualC.StlClr.BinaryDelegate&lt;TValue,TValue,bool&gt; _Pred);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void unique(class Microsoft.VisualC.StlClr.BinaryDelegate`3&lt;!TValue, !TValue, bool&gt; _Pred) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.IList`1.unique(Microsoft.VisualC.StlClr.BinaryDelegate{`0,`0,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub unique (_Pred As BinaryDelegate(Of TValue, TValue, Boolean))" />
+      <MemberSignature Language="F#" Value="abstract member unique : Microsoft.VisualC.StlClr.BinaryDelegate&lt;'Value, 'Value, bool&gt; -&gt; unit" Usage="iList.unique _Pred" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void unique(Microsoft::VisualC::StlClr::BinaryDelegate&lt;TValue, TValue, bool&gt; ^ _Pred);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="CommandLineArgumentRelation" FullName="Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation">
+﻿<Type Name="CommandLineArgumentRelation" FullName="Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation">
   <TypeSignature Language="C#" Value="public class CommandLineArgumentRelation : Microsoft.Build.Tasks.Xaml.PropertyRelation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CommandLineArgumentRelation extends Microsoft.Build.Tasks.Xaml.PropertyRelation" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation" />
+  <TypeSignature Language="VB.NET" Value="Public Class CommandLineArgumentRelation&#xA;Inherits PropertyRelation" />
+  <TypeSignature Language="F#" Value="type CommandLineArgumentRelation = class&#xA;    inherit PropertyRelation" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CommandLineArgumentRelation : Microsoft::Build::Tasks::Xaml::PropertyRelation" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public CommandLineArgumentRelation (string argument, string value, bool required, string separator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string argument, string value, bool required, string separator) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation.#ctor(System.String,System.String,System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (argument As String, value As String, required As Boolean, separator As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation : string * string * bool * string -&gt; Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation" Usage="new Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation (argument, value, required, separator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CommandLineArgumentRelation(System::String ^ argument, System::String ^ value, bool required, System::String ^ separator);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -44,6 +50,9 @@
       <MemberSignature Language="C#" Value="public string Separator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Separator" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation.Separator" />
+      <MemberSignature Language="VB.NET" Value="Public Property Separator As String" />
+      <MemberSignature Language="F#" Value="member this.Separator : string with get, set" Usage="Microsoft.Build.Tasks.Xaml.CommandLineArgumentRelation.Separator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Separator { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

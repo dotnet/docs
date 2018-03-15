@@ -1,7 +1,10 @@
-<Type Name="IMultipleDragEnabledCompositeView" FullName="System.Activities.Presentation.IMultipleDragEnabledCompositeView">
+﻿<Type Name="IMultipleDragEnabledCompositeView" FullName="System.Activities.Presentation.IMultipleDragEnabledCompositeView">
   <TypeSignature Language="C#" Value="public interface IMultipleDragEnabledCompositeView : System.Activities.Presentation.ICompositeView" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMultipleDragEnabledCompositeView implements class System.Activities.Presentation.ICompositeView" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IMultipleDragEnabledCompositeView" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMultipleDragEnabledCompositeView&#xA;Implements ICompositeView" />
+  <TypeSignature Language="F#" Value="type IMultipleDragEnabledCompositeView = interface&#xA;    interface ICompositeView" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IMultipleDragEnabledCompositeView : System::Activities::Presentation::ICompositeView" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public void OnItemsMoved (System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; movedItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnItemsMoved(class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; movedItems) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IMultipleDragEnabledCompositeView.OnItemsMoved(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnItemsMoved (movedItems As List(Of ModelItem))" />
+      <MemberSignature Language="F#" Value="abstract member OnItemsMoved : System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; -&gt; unit" Usage="iMultipleDragEnabledCompositeView.OnItemsMoved movedItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnItemsMoved(System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ movedItems);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -41,6 +47,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; SortSelectedItems (System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; selectedItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; SortSelectedItems(class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; selectedItems) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IMultipleDragEnabledCompositeView.SortSelectedItems(System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem})" />
+      <MemberSignature Language="VB.NET" Value="Public Function SortSelectedItems (selectedItems As List(Of ModelItem)) As List(Of ModelItem)" />
+      <MemberSignature Language="F#" Value="abstract member SortSelectedItems : System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; -&gt; System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt;" Usage="iMultipleDragEnabledCompositeView.SortSelectedItems selectedItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ SortSelectedItems(System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ selectedItems);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

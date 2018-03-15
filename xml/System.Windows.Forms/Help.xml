@@ -1,7 +1,10 @@
-<Type Name="Help" FullName="System.Windows.Forms.Help">
+﻿<Type Name="Help" FullName="System.Windows.Forms.Help">
   <TypeSignature Language="C#" Value="public class Help" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Help extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Help" />
+  <TypeSignature Language="VB.NET" Value="Public Class Help" />
+  <TypeSignature Language="F#" Value="type Help = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Help" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,10 +44,22 @@
     <altmember cref="T:System.Windows.Forms.HelpProvider" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="ShowHelp">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays the contents of a Help file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ShowHelp">
       <MemberSignature Language="C#" Value="public static void ShowHelp (System.Windows.Forms.Control parent, string url);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ShowHelp(class System.Windows.Forms.Control parent, string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Help.ShowHelp(System.Windows.Forms.Control,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ShowHelp (parent As Control, url As String)" />
+      <MemberSignature Language="F#" Value="static member ShowHelp : System.Windows.Forms.Control * string -&gt; unit" Usage="System.Windows.Forms.Help.ShowHelp (parent, url)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ShowHelp(System::Windows::Forms::Control ^ parent, System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -87,6 +102,9 @@
       <MemberSignature Language="C#" Value="public static void ShowHelp (System.Windows.Forms.Control parent, string url, string keyword);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ShowHelp(class System.Windows.Forms.Control parent, string url, string keyword) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Help.ShowHelp(System.Windows.Forms.Control,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ShowHelp (parent As Control, url As String, keyword As String)" />
+      <MemberSignature Language="F#" Value="static member ShowHelp : System.Windows.Forms.Control * string * string -&gt; unit" Usage="System.Windows.Forms.Help.ShowHelp (parent, url, keyword)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ShowHelp(System::Windows::Forms::Control ^ parent, System::String ^ url, System::String ^ keyword);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -137,6 +155,9 @@
       <MemberSignature Language="C#" Value="public static void ShowHelp (System.Windows.Forms.Control parent, string url, System.Windows.Forms.HelpNavigator navigator);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ShowHelp(class System.Windows.Forms.Control parent, string url, valuetype System.Windows.Forms.HelpNavigator navigator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Help.ShowHelp(System.Windows.Forms.Control,System.String,System.Windows.Forms.HelpNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ShowHelp (parent As Control, url As String, navigator As HelpNavigator)" />
+      <MemberSignature Language="F#" Value="static member ShowHelp : System.Windows.Forms.Control * string * System.Windows.Forms.HelpNavigator -&gt; unit" Usage="System.Windows.Forms.Help.ShowHelp (parent, url, navigator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ShowHelp(System::Windows::Forms::Control ^ parent, System::String ^ url, System::Windows::Forms::HelpNavigator navigator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -183,6 +204,9 @@
       <MemberSignature Language="C#" Value="public static void ShowHelp (System.Windows.Forms.Control parent, string url, System.Windows.Forms.HelpNavigator command, object parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ShowHelp(class System.Windows.Forms.Control parent, string url, valuetype System.Windows.Forms.HelpNavigator command, object parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Help.ShowHelp(System.Windows.Forms.Control,System.String,System.Windows.Forms.HelpNavigator,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ShowHelp (parent As Control, url As String, command As HelpNavigator, parameter As Object)" />
+      <MemberSignature Language="F#" Value="static member ShowHelp : System.Windows.Forms.Control * string * System.Windows.Forms.HelpNavigator * obj -&gt; unit" Usage="System.Windows.Forms.Help.ShowHelp (parent, url, command, parameter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ShowHelp(System::Windows::Forms::Control ^ parent, System::String ^ url, System::Windows::Forms::HelpNavigator command, System::Object ^ parameter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -237,6 +261,9 @@
       <MemberSignature Language="C#" Value="public static void ShowHelpIndex (System.Windows.Forms.Control parent, string url);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ShowHelpIndex(class System.Windows.Forms.Control parent, string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Help.ShowHelpIndex(System.Windows.Forms.Control,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ShowHelpIndex (parent As Control, url As String)" />
+      <MemberSignature Language="F#" Value="static member ShowHelpIndex : System.Windows.Forms.Control * string -&gt; unit" Usage="System.Windows.Forms.Help.ShowHelpIndex (parent, url)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ShowHelpIndex(System::Windows::Forms::Control ^ parent, System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -283,6 +310,9 @@
       <MemberSignature Language="C#" Value="public static void ShowPopup (System.Windows.Forms.Control parent, string caption, System.Drawing.Point location);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ShowPopup(class System.Windows.Forms.Control parent, string caption, valuetype System.Drawing.Point location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Help.ShowPopup(System.Windows.Forms.Control,System.String,System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ShowPopup (parent As Control, caption As String, location As Point)" />
+      <MemberSignature Language="F#" Value="static member ShowPopup : System.Windows.Forms.Control * string * System.Drawing.Point -&gt; unit" Usage="System.Windows.Forms.Help.ShowPopup (parent, caption, location)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ShowPopup(System::Windows::Forms::Control ^ parent, System::String ^ caption, System::Drawing::Point location);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -317,14 +347,5 @@
         <altmember cref="M:System.Windows.Forms.Help.ShowHelpIndex(System.Windows.Forms.Control,System.String)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ShowHelp">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Displays the contents of a Help file.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

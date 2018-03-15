@@ -1,7 +1,10 @@
-<Type Name="StoreItemCollection" FullName="System.Data.Metadata.Edm.StoreItemCollection">
+﻿<Type Name="StoreItemCollection" FullName="System.Data.Metadata.Edm.StoreItemCollection">
   <TypeSignature Language="C#" Value="public sealed class StoreItemCollection : System.Data.Metadata.Edm.ItemCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StoreItemCollection extends System.Data.Metadata.Edm.ItemCollection" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.StoreItemCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StoreItemCollection&#xA;Inherits ItemCollection" />
+  <TypeSignature Language="F#" Value="type StoreItemCollection = class&#xA;    inherit ItemCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StoreItemCollection sealed : System::Data::Metadata::Edm::ItemCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +23,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StoreItemCollection (System.Collections.Generic.IEnumerable&lt;System.Xml.XmlReader&gt; xmlReaders);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.XmlReader&gt; xmlReaders) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.StoreItemCollection.#ctor(System.Collections.Generic.IEnumerable{System.Xml.XmlReader})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (xmlReaders As IEnumerable(Of XmlReader))" />
+      <MemberSignature Language="F#" Value="new System.Data.Metadata.Edm.StoreItemCollection : seq&lt;System.Xml.XmlReader&gt; -&gt; System.Data.Metadata.Edm.StoreItemCollection" Usage="new System.Data.Metadata.Edm.StoreItemCollection xmlReaders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StoreItemCollection(System::Collections::Generic::IEnumerable&lt;System::Xml::XmlReader ^&gt; ^ xmlReaders);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -42,6 +57,9 @@
       <MemberSignature Language="C#" Value="public StoreItemCollection (params string[] filePaths);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] filePaths) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.StoreItemCollection.#ctor(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray filePaths As String())" />
+      <MemberSignature Language="F#" Value="new System.Data.Metadata.Edm.StoreItemCollection : string[] -&gt; System.Data.Metadata.Edm.StoreItemCollection" Usage="new System.Data.Metadata.Edm.StoreItemCollection filePaths" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StoreItemCollection(... cli::array &lt;System::String ^&gt; ^ filePaths);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -66,6 +84,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.PrimitiveType&gt; GetPrimitiveTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Data.Metadata.Edm.PrimitiveType&gt; GetPrimitiveTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Metadata.Edm.StoreItemCollection.GetPrimitiveTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPrimitiveTypes () As ReadOnlyCollection(Of PrimitiveType)" />
+      <MemberSignature Language="F#" Value="member this.GetPrimitiveTypes : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Data.Metadata.Edm.PrimitiveType&gt;" Usage="storeItemCollection.GetPrimitiveTypes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Data::Metadata::Edm::PrimitiveType ^&gt; ^ GetPrimitiveTypes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -85,6 +106,9 @@
       <MemberSignature Language="C#" Value="public double StoreSchemaVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 StoreSchemaVersion" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.StoreItemCollection.StoreSchemaVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StoreSchemaVersion As Double" />
+      <MemberSignature Language="F#" Value="member this.StoreSchemaVersion : double" Usage="System.Data.Metadata.Edm.StoreItemCollection.StoreSchemaVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double StoreSchemaVersion { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -99,14 +123,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Metadata.Edm.StoreItemCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

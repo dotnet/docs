@@ -1,7 +1,10 @@
-<Type Name="UpdatedConditionAction" FullName="System.Workflow.Activities.Rules.UpdatedConditionAction">
+﻿<Type Name="UpdatedConditionAction" FullName="System.Workflow.Activities.Rules.UpdatedConditionAction">
   <TypeSignature Language="C#" Value="public sealed class UpdatedConditionAction : System.Workflow.Activities.Rules.RuleConditionChangeAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UpdatedConditionAction extends System.Workflow.Activities.Rules.RuleConditionChangeAction" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.UpdatedConditionAction" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UpdatedConditionAction&#xA;Inherits RuleConditionChangeAction" />
+  <TypeSignature Language="F#" Value="type UpdatedConditionAction = class&#xA;    inherit RuleConditionChangeAction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UpdatedConditionAction sealed : System::Workflow::Activities::Rules::RuleConditionChangeAction" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,10 +26,21 @@
     <altmember cref="T:System.Workflow.Runtime.Tracking.TrackingWorkflowChangedEventArgs" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.UpdatedConditionAction" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public UpdatedConditionAction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.UpdatedConditionAction.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UpdatedConditionAction();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -42,6 +56,9 @@
       <MemberSignature Language="C#" Value="public UpdatedConditionAction (System.Workflow.Activities.Rules.RuleCondition conditionDefinition, System.Workflow.Activities.Rules.RuleCondition newConditionDefinition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.Activities.Rules.RuleCondition conditionDefinition, class System.Workflow.Activities.Rules.RuleCondition newConditionDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.UpdatedConditionAction.#ctor(System.Workflow.Activities.Rules.RuleCondition,System.Workflow.Activities.Rules.RuleCondition)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (conditionDefinition As RuleCondition, newConditionDefinition As RuleCondition)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.UpdatedConditionAction : System.Workflow.Activities.Rules.RuleCondition * System.Workflow.Activities.Rules.RuleCondition -&gt; System.Workflow.Activities.Rules.UpdatedConditionAction" Usage="new System.Workflow.Activities.Rules.UpdatedConditionAction (conditionDefinition, newConditionDefinition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UpdatedConditionAction(System::Workflow::Activities::Rules::RuleCondition ^ conditionDefinition, System::Workflow::Activities::Rules::RuleCondition ^ newConditionDefinition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -65,6 +82,9 @@
       <MemberSignature Language="C#" Value="protected override bool ApplyTo (System.Workflow.ComponentModel.Activity rootActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ApplyTo(class System.Workflow.ComponentModel.Activity rootActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.UpdatedConditionAction.ApplyTo(System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ApplyTo (rootActivity As Activity) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ApplyTo : System.Workflow.ComponentModel.Activity -&gt; bool" Usage="updatedConditionAction.ApplyTo rootActivity" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ApplyTo(System::Workflow::ComponentModel::Activity ^ rootActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -87,6 +107,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Activities.Rules.RuleCondition ConditionDefinition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.Rules.RuleCondition ConditionDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.UpdatedConditionAction.ConditionDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConditionDefinition As RuleCondition" />
+      <MemberSignature Language="F#" Value="member this.ConditionDefinition : System.Workflow.Activities.Rules.RuleCondition with get, set" Usage="System.Workflow.Activities.Rules.UpdatedConditionAction.ConditionDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleCondition ^ ConditionDefinition { System::Workflow::Activities::Rules::RuleCondition ^ get(); void set(System::Workflow::Activities::Rules::RuleCondition ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -94,7 +117,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -118,6 +141,9 @@
       <MemberSignature Language="C#" Value="public override string ConditionName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConditionName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.UpdatedConditionAction.ConditionName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ConditionName As String" />
+      <MemberSignature Language="F#" Value="member this.ConditionName : string" Usage="System.Workflow.Activities.Rules.UpdatedConditionAction.ConditionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ConditionName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -136,6 +162,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Activities.Rules.RuleCondition NewConditionDefinition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.Rules.RuleCondition NewConditionDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.UpdatedConditionAction.NewConditionDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewConditionDefinition As RuleCondition" />
+      <MemberSignature Language="F#" Value="member this.NewConditionDefinition : System.Workflow.Activities.Rules.RuleCondition with get, set" Usage="System.Workflow.Activities.Rules.UpdatedConditionAction.NewConditionDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::Rules::RuleCondition ^ NewConditionDefinition { System::Workflow::Activities::Rules::RuleCondition ^ get(); void set(System::Workflow::Activities::Rules::RuleCondition ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -143,7 +172,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -163,14 +192,5 @@
         <exception cref="T:System.ArgumentNullException">Trying to set this property to a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.Rules.UpdatedConditionAction" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="UniqueId" FullName="System.Xml.UniqueId">
+﻿<Type Name="UniqueId" FullName="System.Xml.UniqueId">
   <TypeSignature Language="C#" Value="public class UniqueId" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UniqueId extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.UniqueId" />
+  <TypeSignature Language="VB.NET" Value="Public Class UniqueId" />
+  <TypeSignature Language="F#" Value="type UniqueId = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UniqueId" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -32,10 +35,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of this class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public UniqueId ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UniqueId();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -61,6 +76,9 @@
       <MemberSignature Language="C#" Value="public UniqueId (byte[] guid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] guid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (guid As Byte())" />
+      <MemberSignature Language="F#" Value="new System.Xml.UniqueId : byte[] -&gt; System.Xml.UniqueId" Usage="new System.Xml.UniqueId guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UniqueId(cli::array &lt;System::Byte&gt; ^ guid);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -100,6 +118,8 @@
       <MemberSignature Language="C#" Value="public UniqueId (Guid guid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid guid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.#ctor(System.Guid)" />
+      <MemberSignature Language="F#" Value="new System.Xml.UniqueId : Guid -&gt; System.Xml.UniqueId" Usage="new System.Xml.UniqueId guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UniqueId(Guid guid);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -130,6 +150,9 @@
       <MemberSignature Language="C#" Value="public UniqueId (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.UniqueId : string -&gt; System.Xml.UniqueId" Usage="new System.Xml.UniqueId value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UniqueId(System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -173,6 +196,9 @@
       <MemberSignature Language="C#" Value="public UniqueId (byte[] guid, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] guid, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.#ctor(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (guid As Byte(), offset As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Xml.UniqueId : byte[] * int -&gt; System.Xml.UniqueId" Usage="new System.Xml.UniqueId (guid, offset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UniqueId(cli::array &lt;System::Byte&gt; ^ guid, int offset);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -221,6 +247,9 @@
       <MemberSignature Language="C#" Value="public UniqueId (char[] chars, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(char[] chars, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.#ctor(System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (chars As Char(), offset As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Xml.UniqueId : char[] * int * int -&gt; System.Xml.UniqueId" Usage="new System.Xml.UniqueId (chars, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UniqueId(cli::array &lt;char&gt; ^ chars, int offset, int count);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -264,6 +293,9 @@
       <MemberSignature Language="C#" Value="public int CharArrayLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CharArrayLength" />
       <MemberSignature Language="DocId" Value="P:System.Xml.UniqueId.CharArrayLength" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CharArrayLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.CharArrayLength : int" Usage="System.Xml.UniqueId.CharArrayLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CharArrayLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -297,6 +329,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="uniqueId.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -330,6 +365,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="uniqueId.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -359,6 +397,9 @@
       <MemberSignature Language="C#" Value="public bool IsGuid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsGuid" />
       <MemberSignature Language="DocId" Value="P:System.Xml.UniqueId.IsGuid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsGuid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsGuid : bool" Usage="System.Xml.UniqueId.IsGuid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsGuid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -388,6 +429,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Xml.UniqueId id1, System.Xml.UniqueId id2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Xml.UniqueId id1, class System.Xml.UniqueId id2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.op_Equality(System.Xml.UniqueId,System.Xml.UniqueId)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (id1 As UniqueId, id2 As UniqueId) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Xml.UniqueId * System.Xml.UniqueId -&gt; bool" Usage="id1 = id2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Xml::UniqueId ^ id1, System::Xml::UniqueId ^ id2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -425,6 +469,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Xml.UniqueId id1, System.Xml.UniqueId id2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Xml.UniqueId id1, class System.Xml.UniqueId id2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.op_Inequality(System.Xml.UniqueId,System.Xml.UniqueId)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (id1 As UniqueId, id2 As UniqueId) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Xml.UniqueId * System.Xml.UniqueId -&gt; bool" Usage="System.Xml.UniqueId.op_Inequality (id1, id2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Xml::UniqueId ^ id1, System::Xml::UniqueId ^ id2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -462,6 +509,9 @@
       <MemberSignature Language="C#" Value="public int ToCharArray (char[] chars, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ToCharArray(char[] chars, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.ToCharArray(System.Char[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToCharArray (chars As Char(), offset As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.ToCharArray : char[] * int -&gt; int" Usage="uniqueId.ToCharArray (chars, offset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ToCharArray(cli::array &lt;char&gt; ^ chars, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -514,6 +564,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="uniqueId.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -544,10 +597,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetGuid">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to get the value of the <see cref="T:System.Xml.UniqueId" /> as a T:System.Guid.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryGetGuid">
       <MemberSignature Language="C#" Value="public bool TryGetGuid (out Guid guid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetGuid([out] valuetype System.Guid&amp; guid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.TryGetGuid(System.Guid@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetGuid (ByRef guid As Guid) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetGuid :  -&gt; bool" Usage="uniqueId.TryGetGuid guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetGuid([Runtime::InteropServices::Out] Guid % guid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -585,6 +651,9 @@
       <MemberSignature Language="C#" Value="public bool TryGetGuid (byte[] buffer, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetGuid(unsigned int8[] buffer, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.UniqueId.TryGetGuid(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetGuid (buffer As Byte(), offset As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetGuid : byte[] * int -&gt; bool" Usage="uniqueId.TryGetGuid (buffer, offset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetGuid(cli::array &lt;System::Byte&gt; ^ buffer, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -635,25 +704,5 @@
           <paramref name="buffer" /> and <paramref name="offset" /> provide less than 16 valid bytes.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of this class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TryGetGuid">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Tries to get the value of the <see cref="T:System.Xml.UniqueId" /> as a T:System.Guid.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

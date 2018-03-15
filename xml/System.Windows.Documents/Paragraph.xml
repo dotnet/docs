@@ -1,7 +1,10 @@
-<Type Name="Paragraph" FullName="System.Windows.Documents.Paragraph">
+﻿<Type Name="Paragraph" FullName="System.Windows.Documents.Paragraph">
   <TypeSignature Language="C#" Value="public class Paragraph : System.Windows.Documents.Block" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Paragraph extends System.Windows.Documents.Block" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Paragraph" />
+  <TypeSignature Language="VB.NET" Value="Public Class Paragraph&#xA;Inherits Block" />
+  <TypeSignature Language="F#" Value="type Paragraph = class&#xA;    inherit Block" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Paragraph : System::Windows::Documents::Block" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,10 +54,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Paragraph" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Paragraph ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Paragraph.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Paragraph();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +84,8 @@
       <MemberSignature Language="C#" Value="public Paragraph (System.Windows.Documents.Inline inline);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.Inline inline) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Paragraph.#ctor(System.Windows.Documents.Inline)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.Paragraph : System.Windows.Documents.Inline -&gt; System.Windows.Documents.Paragraph" Usage="new System.Windows.Documents.Paragraph inline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Paragraph(System::Windows::Documents::Inline ^ inline);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -98,6 +114,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.InlineCollection Inlines { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.InlineCollection Inlines" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Paragraph.Inlines" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Inlines As InlineCollection" />
+      <MemberSignature Language="F#" Value="member this.Inlines : System.Windows.Documents.InlineCollection" Usage="System.Windows.Documents.Paragraph.Inlines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::InlineCollection ^ Inlines { System::Windows::Documents::InlineCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -105,7 +124,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -130,6 +149,9 @@
       <MemberSignature Language="C#" Value="public bool KeepTogether { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool KeepTogether" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Paragraph.KeepTogether" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeepTogether As Boolean" />
+      <MemberSignature Language="F#" Value="member this.KeepTogether : bool with get, set" Usage="System.Windows.Documents.Paragraph.KeepTogether" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepTogether { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -166,6 +188,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KeepTogetherProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeepTogetherProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Paragraph.KeepTogetherProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeepTogetherProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable KeepTogetherProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Paragraph.KeepTogetherProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeepTogetherProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -183,6 +208,9 @@
       <MemberSignature Language="C#" Value="public bool KeepWithNext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool KeepWithNext" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Paragraph.KeepWithNext" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeepWithNext As Boolean" />
+      <MemberSignature Language="F#" Value="member this.KeepWithNext : bool with get, set" Usage="System.Windows.Documents.Paragraph.KeepWithNext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool KeepWithNext { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -219,6 +247,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KeepWithNextProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeepWithNextProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Paragraph.KeepWithNextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeepWithNextProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable KeepWithNextProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Paragraph.KeepWithNextProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeepWithNextProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -236,6 +267,9 @@
       <MemberSignature Language="C#" Value="public int MinOrphanLines { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinOrphanLines" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Paragraph.MinOrphanLines" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinOrphanLines As Integer" />
+      <MemberSignature Language="F#" Value="member this.MinOrphanLines : int with get, set" Usage="System.Windows.Documents.Paragraph.MinOrphanLines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinOrphanLines { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -273,6 +307,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MinOrphanLinesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MinOrphanLinesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Paragraph.MinOrphanLinesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinOrphanLinesProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MinOrphanLinesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Paragraph.MinOrphanLinesProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinOrphanLinesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -290,6 +327,9 @@
       <MemberSignature Language="C#" Value="public int MinWidowLines { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinWidowLines" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Paragraph.MinWidowLines" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinWidowLines As Integer" />
+      <MemberSignature Language="F#" Value="member this.MinWidowLines : int with get, set" Usage="System.Windows.Documents.Paragraph.MinWidowLines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinWidowLines { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -327,6 +367,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MinWidowLinesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MinWidowLinesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Paragraph.MinWidowLinesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinWidowLinesProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MinWidowLinesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Paragraph.MinWidowLinesProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinWidowLinesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -344,6 +387,9 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeInlines (System.Windows.Markup.XamlDesignerSerializationManager manager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeInlines(class System.Windows.Markup.XamlDesignerSerializationManager manager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Paragraph.ShouldSerializeInlines(System.Windows.Markup.XamlDesignerSerializationManager)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeInlines (manager As XamlDesignerSerializationManager) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeInlines : System.Windows.Markup.XamlDesignerSerializationManager -&gt; bool" Usage="paragraph.ShouldSerializeInlines manager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeInlines(System::Windows::Markup::XamlDesignerSerializationManager ^ manager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -381,6 +427,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.TextDecorationCollection TextDecorations { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.TextDecorationCollection TextDecorations" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Paragraph.TextDecorations" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextDecorations As TextDecorationCollection" />
+      <MemberSignature Language="F#" Value="member this.TextDecorations : System.Windows.TextDecorationCollection with get, set" Usage="System.Windows.Documents.Paragraph.TextDecorations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::TextDecorationCollection ^ TextDecorations { System::Windows::TextDecorationCollection ^ get(); void set(System::Windows::TextDecorationCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -436,6 +485,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextDecorationsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextDecorationsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Paragraph.TextDecorationsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextDecorationsProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TextDecorationsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Paragraph.TextDecorationsProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextDecorationsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -453,6 +505,9 @@
       <MemberSignature Language="C#" Value="public double TextIndent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 TextIndent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.Paragraph.TextIndent" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextIndent As Double" />
+      <MemberSignature Language="F#" Value="member this.TextIndent : double with get, set" Usage="System.Windows.Documents.Paragraph.TextIndent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double TextIndent { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -517,6 +572,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TextIndentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TextIndentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Paragraph.TextIndentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TextIndentProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TextIndentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Documents.Paragraph.TextIndentProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TextIndentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -530,14 +588,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Documents.Paragraph" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

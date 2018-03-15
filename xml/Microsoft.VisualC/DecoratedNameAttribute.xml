@@ -1,7 +1,10 @@
-<Type Name="DecoratedNameAttribute" FullName="Microsoft.VisualC.DecoratedNameAttribute">
+﻿<Type Name="DecoratedNameAttribute" FullName="Microsoft.VisualC.DecoratedNameAttribute">
   <TypeSignature Language="C#" Value="public sealed class DecoratedNameAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DecoratedNameAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.DecoratedNameAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DecoratedNameAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type DecoratedNameAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DecoratedNameAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -30,10 +33,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualC</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualC.DecoratedNameAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DecoratedNameAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.DecoratedNameAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DecoratedNameAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC</AssemblyName>
@@ -54,6 +68,9 @@
       <MemberSignature Language="C#" Value="public DecoratedNameAttribute (string decoratedName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string decoratedName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.DecoratedNameAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (decoratedName As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualC.DecoratedNameAttribute : string -&gt; Microsoft.VisualC.DecoratedNameAttribute" Usage="new Microsoft.VisualC.DecoratedNameAttribute decoratedName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DecoratedNameAttribute(System::String ^ decoratedName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC</AssemblyName>
@@ -73,14 +90,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualC</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualC.DecoratedNameAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

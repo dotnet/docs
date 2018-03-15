@@ -1,7 +1,10 @@
-<Type Name="EditorPartCollection" FullName="System.Web.UI.WebControls.WebParts.EditorPartCollection">
+﻿<Type Name="EditorPartCollection" FullName="System.Web.UI.WebControls.WebParts.EditorPartCollection">
   <TypeSignature Language="C#" Value="public sealed class EditorPartCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EditorPartCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EditorPartCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type EditorPartCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EditorPartCollection sealed : System::Collections::ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,10 +62,21 @@
     <altmember cref="T:System.Web.UI.WebControls.WebParts.EditorPart" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EditorPartCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EditorPartCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +101,9 @@
       <MemberSignature Language="C#" Value="public EditorPartCollection (System.Collections.ICollection editorParts);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection editorParts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartCollection.#ctor(System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (editorParts As ICollection)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.EditorPartCollection : System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.EditorPartCollection" Usage="new System.Web.UI.WebControls.WebParts.EditorPartCollection editorParts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EditorPartCollection(System::Collections::ICollection ^ editorParts);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,6 +149,9 @@
       <MemberSignature Language="C#" Value="public EditorPartCollection (System.Web.UI.WebControls.WebParts.EditorPartCollection existingEditorParts, System.Collections.ICollection editorParts);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.EditorPartCollection existingEditorParts, class System.Collections.ICollection editorParts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartCollection.#ctor(System.Web.UI.WebControls.WebParts.EditorPartCollection,System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (existingEditorParts As EditorPartCollection, editorParts As ICollection)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.EditorPartCollection : System.Web.UI.WebControls.WebParts.EditorPartCollection * System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.EditorPartCollection" Usage="new System.Web.UI.WebControls.WebParts.EditorPartCollection (existingEditorParts, editorParts)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EditorPartCollection(System::Web::UI::WebControls::WebParts::EditorPartCollection ^ existingEditorParts, System::Collections::ICollection ^ editorParts);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -152,6 +172,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.WebControls.WebParts.EditorPart editorPart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.WebParts.EditorPart editorPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartCollection.Contains(System.Web.UI.WebControls.WebParts.EditorPart)" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.WebParts.EditorPart -&gt; bool" Usage="editorPartCollection.Contains editorPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::WebParts::EditorPart ^ editorPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -193,6 +215,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.WebParts.EditorPart[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.WebParts.EditorPart[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartCollection.CopyTo(System.Web.UI.WebControls.WebParts.EditorPart[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As EditorPart(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.WebControls.WebParts.EditorPart[] * int -&gt; unit" Usage="editorPartCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::WebParts::EditorPart ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -235,6 +260,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.WebControls.WebParts.EditorPartCollection Empty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.WebControls.WebParts.EditorPartCollection Empty" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.EditorPartCollection.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As EditorPartCollection " />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Web.UI.WebControls.WebParts.EditorPartCollection" Usage="System.Web.UI.WebControls.WebParts.EditorPartCollection.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::EditorPartCollection ^ Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -259,6 +287,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.WebParts.EditorPart editorPart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.WebParts.EditorPart editorPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.EditorPartCollection.IndexOf(System.Web.UI.WebControls.WebParts.EditorPart)" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.WebParts.EditorPart -&gt; int" Usage="editorPartCollection.IndexOf editorPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::WebParts::EditorPart ^ editorPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,6 +330,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.EditorPart this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.EditorPart Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.EditorPartCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As EditorPart" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.WebParts.EditorPart" Usage="System.Web.UI.WebControls.WebParts.EditorPartCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::EditorPart ^ default[int] { System::Web::UI::WebControls::WebParts::EditorPart ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -318,14 +351,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.EditorPartCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="MergeFailedEventHandler" FullName="System.Data.MergeFailedEventHandler">
+﻿<Type Name="MergeFailedEventHandler" FullName="System.Data.MergeFailedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void MergeFailedEventHandler(object sender, MergeFailedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MergeFailedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Data.MergeFailedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub MergeFailedEventHandler(sender As Object, e As MergeFailedEventArgs)" />
+  <TypeSignature Language="F#" Value="type MergeFailedEventHandler = delegate of obj * MergeFailedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void MergeFailedEventHandler(System::Object ^ sender, MergeFailedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="CryptoStream" FullName="System.Security.Cryptography.CryptoStream">
+﻿<Type Name="CryptoStream" FullName="System.Security.Cryptography.CryptoStream">
   <TypeSignature Language="C#" Value="public class CryptoStream : System.IO.Stream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CryptoStream extends System.IO.Stream implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CryptoStream" />
+  <TypeSignature Language="VB.NET" Value="Public Class CryptoStream&#xA;Inherits Stream" />
+  <TypeSignature Language="F#" Value="type CryptoStream = class&#xA;    inherit Stream&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CryptoStream : System::IO::Stream" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,8 +22,7 @@
   <Base>
     <BaseTypeName>System.IO.Stream</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Attributes>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -55,6 +57,8 @@
       <MemberSignature Language="C#" Value="public CryptoStream (System.IO.Stream stream, System.Security.Cryptography.ICryptoTransform transform, System.Security.Cryptography.CryptoStreamMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Security.Cryptography.ICryptoTransform transform, valuetype System.Security.Cryptography.CryptoStreamMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoStream.#ctor(System.IO.Stream,System.Security.Cryptography.ICryptoTransform,System.Security.Cryptography.CryptoStreamMode)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptoStream : System.IO.Stream * System.Security.Cryptography.ICryptoTransform * System.Security.Cryptography.CryptoStreamMode -&gt; System.Security.Cryptography.CryptoStream" Usage="new System.Security.Cryptography.CryptoStream (stream, transform, mode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptoStream(System::IO::Stream ^ stream, System::Security::Cryptography::ICryptoTransform ^ transform, System::Security::Cryptography::CryptoStreamMode mode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -96,6 +100,8 @@
       <MemberSignature Language="C#" Value="public CryptoStream (System.IO.Stream stream, System.Security.Cryptography.ICryptoTransform transform, System.Security.Cryptography.CryptoStreamMode mode, bool leaveOpen);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Security.Cryptography.ICryptoTransform transform, valuetype System.Security.Cryptography.CryptoStreamMode mode, bool leaveOpen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoStream.#ctor(System.IO.Stream,System.Security.Cryptography.ICryptoTransform,System.Security.Cryptography.CryptoStreamMode,System.Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CryptoStream : System.IO.Stream * System.Security.Cryptography.ICryptoTransform * System.Security.Cryptography.CryptoStreamMode * bool -&gt; System.Security.Cryptography.CryptoStream" Usage="new System.Security.Cryptography.CryptoStream (stream, transform, mode, leaveOpen)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CryptoStream(System::IO::Stream ^ stream, System::Security::Cryptography::ICryptoTransform ^ transform, System::Security::Cryptography::CryptoStreamMode mode, bool leaveOpen);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -120,6 +126,9 @@
       <MemberSignature Language="C#" Value="public override bool CanRead { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRead" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoStream.CanRead" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanRead As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRead : bool" Usage="System.Security.Cryptography.CryptoStream.CanRead" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRead { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -149,6 +158,9 @@
       <MemberSignature Language="C#" Value="public override bool CanSeek { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanSeek" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoStream.CanSeek" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanSeek As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanSeek : bool" Usage="System.Security.Cryptography.CryptoStream.CanSeek" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSeek { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -184,6 +196,9 @@
       <MemberSignature Language="C#" Value="public override bool CanWrite { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanWrite" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoStream.CanWrite" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CanWrite As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanWrite : bool" Usage="System.Security.Cryptography.CryptoStream.CanWrite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanWrite { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -213,6 +228,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoStream.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="cryptoStream.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -249,6 +267,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoStream.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="cryptoStream.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -296,6 +317,9 @@
       <MemberSignature Language="C#" Value="public override void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoStream.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Flush ()" />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="cryptoStream.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -334,6 +358,8 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task FlushAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task FlushAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoStream.FlushAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.FlushAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="cryptoStream.FlushAsync cancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ FlushAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -376,6 +402,9 @@
       <MemberSignature Language="C#" Value="public void FlushFinalBlock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FlushFinalBlock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoStream.FlushFinalBlock" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FlushFinalBlock ()" />
+      <MemberSignature Language="F#" Value="member this.FlushFinalBlock : unit -&gt; unit" Usage="cryptoStream.FlushFinalBlock " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FlushFinalBlock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -417,6 +446,9 @@
       <MemberSignature Language="C#" Value="public bool HasFlushedFinalBlock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasFlushedFinalBlock" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoStream.HasFlushedFinalBlock" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasFlushedFinalBlock As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasFlushedFinalBlock : bool" Usage="System.Security.Cryptography.CryptoStream.HasFlushedFinalBlock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasFlushedFinalBlock { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -453,6 +485,9 @@
       <MemberSignature Language="C#" Value="public override long Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Length" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoStream.Length" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Length As Long" />
+      <MemberSignature Language="F#" Value="member this.Length : int64" Usage="System.Security.Cryptography.CryptoStream.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Length { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -489,6 +524,9 @@
       <MemberSignature Language="C#" Value="public override long Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Position" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CryptoStream.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Position As Long" />
+      <MemberSignature Language="F#" Value="member this.Position : int64 with get, set" Usage="System.Security.Cryptography.CryptoStream.Position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property long Position { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -525,6 +563,9 @@
       <MemberSignature Language="C#" Value="public override int Read (byte[] buffer, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 Read([out] unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoStream.Read(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Read (buffer As Byte(), offset As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="override this.Read : byte[] * int * int -&gt; int" Usage="cryptoStream.Read (buffer, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int Read(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -568,6 +609,8 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task&lt;int&gt; ReadAsync (byte[] buffer, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task`1&lt;int32&gt; ReadAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoStream.ReadAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.ReadAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;int&gt;" Usage="cryptoStream.ReadAsync (buffer, offset, count, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task&lt;int&gt; ^ ReadAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -623,6 +666,9 @@
       <MemberSignature Language="C#" Value="public override int ReadByte ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 ReadByte() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoStream.ReadByte" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadByte () As Integer" />
+      <MemberSignature Language="F#" Value="override this.ReadByte : unit -&gt; int" Usage="cryptoStream.ReadByte " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ReadByte();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -642,6 +688,9 @@
       <MemberSignature Language="C#" Value="public override long Seek (long offset, System.IO.SeekOrigin origin);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int64 Seek(int64 offset, valuetype System.IO.SeekOrigin origin) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoStream.Seek(System.Int64,System.IO.SeekOrigin)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Seek (offset As Long, origin As SeekOrigin) As Long" />
+      <MemberSignature Language="F#" Value="override this.Seek : int64 * System.IO.SeekOrigin -&gt; int64" Usage="cryptoStream.Seek (offset, origin)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override long Seek(long offset, System::IO::SeekOrigin origin);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -684,6 +733,9 @@
       <MemberSignature Language="C#" Value="public override void SetLength (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetLength(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoStream.SetLength(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetLength (value As Long)" />
+      <MemberSignature Language="F#" Value="override this.SetLength : int64 -&gt; unit" Usage="cryptoStream.SetLength value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetLength(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -723,6 +775,9 @@
       <MemberSignature Language="C#" Value="public override void Write (byte[] buffer, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(unsigned int8[] buffer, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoStream.Write(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (buffer As Byte(), offset As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="override this.Write : byte[] * int * int -&gt; unit" Usage="cryptoStream.Write (buffer, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -765,6 +820,8 @@
       <MemberSignature Language="C#" Value="public override System.Threading.Tasks.Task WriteAsync (byte[] buffer, int offset, int count, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Threading.Tasks.Task WriteAsync(unsigned int8[] buffer, int32 offset, int32 count, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoStream.WriteAsync(System.Byte[],System.Int32,System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="override this.WriteAsync : byte[] * int * int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="cryptoStream.WriteAsync (buffer, offset, count, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Threading::Tasks::Task ^ WriteAsync(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -820,6 +877,9 @@
       <MemberSignature Language="C#" Value="public override void WriteByte (byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteByte(unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CryptoStream.WriteByte(System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteByte (value As Byte)" />
+      <MemberSignature Language="F#" Value="override this.WriteByte : byte -&gt; unit" Usage="cryptoStream.WriteByte value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteByte(System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>

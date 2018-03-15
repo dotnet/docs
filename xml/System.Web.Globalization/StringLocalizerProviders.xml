@@ -1,7 +1,10 @@
-<Type Name="StringLocalizerProviders" FullName="System.Web.Globalization.StringLocalizerProviders">
+﻿<Type Name="StringLocalizerProviders" FullName="System.Web.Globalization.StringLocalizerProviders">
   <TypeSignature Language="C#" Value="public static class StringLocalizerProviders" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StringLocalizerProviders extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Globalization.StringLocalizerProviders" />
+  <TypeSignature Language="VB.NET" Value="Public Class StringLocalizerProviders" />
+  <TypeSignature Language="F#" Value="type StringLocalizerProviders = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StringLocalizerProviders abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public static System.Web.Globalization.IStringLocalizerProvider DataAnnotationStringLocalizerProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Web.Globalization.IStringLocalizerProvider DataAnnotationStringLocalizerProvider" />
       <MemberSignature Language="DocId" Value="P:System.Web.Globalization.StringLocalizerProviders.DataAnnotationStringLocalizerProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property DataAnnotationStringLocalizerProvider As IStringLocalizerProvider" />
+      <MemberSignature Language="F#" Value="member this.DataAnnotationStringLocalizerProvider : System.Web.Globalization.IStringLocalizerProvider with get, set" Usage="System.Web.Globalization.StringLocalizerProviders.DataAnnotationStringLocalizerProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::Globalization::IStringLocalizerProvider ^ DataAnnotationStringLocalizerProvider { System::Web::Globalization::IStringLocalizerProvider ^ get(); void set(System::Web::Globalization::IStringLocalizerProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

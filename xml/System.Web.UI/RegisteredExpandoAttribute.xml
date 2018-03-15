@@ -1,7 +1,10 @@
-<Type Name="RegisteredExpandoAttribute" FullName="System.Web.UI.RegisteredExpandoAttribute">
+﻿<Type Name="RegisteredExpandoAttribute" FullName="System.Web.UI.RegisteredExpandoAttribute">
   <TypeSignature Language="C#" Value="public sealed class RegisteredExpandoAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegisteredExpandoAttribute extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.RegisteredExpandoAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegisteredExpandoAttribute" />
+  <TypeSignature Language="F#" Value="type RegisteredExpandoAttribute = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegisteredExpandoAttribute sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +24,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Control Control { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control Control" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.RegisteredExpandoAttribute.Control" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Control As Control" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.Control" Usage="System.Web.UI.RegisteredExpandoAttribute.Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ Control { System::Web::UI::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -39,6 +45,9 @@
       <MemberSignature Language="C#" Value="public string ControlId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ControlId" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.RegisteredExpandoAttribute.ControlId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ControlId As String" />
+      <MemberSignature Language="F#" Value="member this.ControlId : string" Usage="System.Web.UI.RegisteredExpandoAttribute.ControlId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -57,6 +66,9 @@
       <MemberSignature Language="C#" Value="public bool Encode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Encode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.RegisteredExpandoAttribute.Encode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Encode As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Encode : bool" Usage="System.Web.UI.RegisteredExpandoAttribute.Encode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Encode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -76,6 +88,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.RegisteredExpandoAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.UI.RegisteredExpandoAttribute.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -94,6 +109,9 @@
       <MemberSignature Language="C#" Value="public string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.RegisteredExpandoAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Web.UI.RegisteredExpandoAttribute.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

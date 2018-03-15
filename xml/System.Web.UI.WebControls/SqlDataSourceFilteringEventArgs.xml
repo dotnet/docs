@@ -1,7 +1,10 @@
-<Type Name="SqlDataSourceFilteringEventArgs" FullName="System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs">
+﻿<Type Name="SqlDataSourceFilteringEventArgs" FullName="System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs">
   <TypeSignature Language="C#" Value="public class SqlDataSourceFilteringEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlDataSourceFilteringEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlDataSourceFilteringEventArgs&#xA;Inherits CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type SqlDataSourceFilteringEventArgs = class&#xA;    inherit CancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlDataSourceFilteringEventArgs : System::ComponentModel::CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="public SqlDataSourceFilteringEventArgs (System.Collections.Specialized.IOrderedDictionary parameterValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Specialized.IOrderedDictionary parameterValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs.#ctor(System.Collections.Specialized.IOrderedDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameterValues As IOrderedDictionary)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs : System.Collections.Specialized.IOrderedDictionary -&gt; System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs" Usage="new System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs parameterValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDataSourceFilteringEventArgs(System::Collections::Specialized::IOrderedDictionary ^ parameterValues);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +75,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary ParameterValues { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary ParameterValues" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs.ParameterValues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterValues As IOrderedDictionary" />
+      <MemberSignature Language="F#" Value="member this.ParameterValues : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.SqlDataSourceFilteringEventArgs.ParameterValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ ParameterValues { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="FormCollection" FullName="System.Windows.Forms.FormCollection">
+﻿<Type Name="FormCollection" FullName="System.Windows.Forms.FormCollection">
   <TypeSignature Language="C#" Value="public class FormCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class FormCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type FormCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FormCollection : System::Collections::ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public FormCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FormCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FormCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -38,10 +43,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides access to the <see cref="T:System.Windows.Forms.Form" /> objects within the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.Form this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Form Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FormCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As Form" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.Form" Usage="System.Windows.Forms.FormCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Form ^ default[int] { System::Windows::Forms::Form ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +81,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.Form this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Form Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.FormCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(name As String) As Form" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.Form" Usage="System.Windows.Forms.FormCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Form ^ default[System::String ^] { System::Windows::Forms::Form ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,14 +102,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides access to the <see cref="T:System.Windows.Forms.Form" /> objects within the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

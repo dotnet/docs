@@ -1,7 +1,10 @@
-<Type Name="DateTimeSerializationSection+DateTimeSerializationMode" FullName="System.Xml.Serialization.Configuration.DateTimeSerializationSection+DateTimeSerializationMode">
+﻿<Type Name="DateTimeSerializationSection+DateTimeSerializationMode" FullName="System.Xml.Serialization.Configuration.DateTimeSerializationSection+DateTimeSerializationMode">
   <TypeSignature Language="C#" Value="public enum DateTimeSerializationSection.DateTimeSerializationMode" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed DateTimeSerializationSection/DateTimeSerializationMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DateTimeSerializationSection.DateTimeSerializationMode" />
+  <TypeSignature Language="F#" Value="type DateTimeSerializationSection.DateTimeSerializationMode = " />
+  <TypeSignature Language="C++ CLI" Value="public: enum class DateTimeSerializationSection::DateTimeSerializationMode" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Serialization.Configuration.DateTimeSerializationSection/DateTimeSerializationMode Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -40,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.Configuration.DateTimeSerializationSection+DateTimeSerializationMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Same as <see langword="Roundtrip" />.</summary>
         <forInternalUseOnly />
@@ -49,6 +56,9 @@
       <MemberSignature Language="C#" Value="Local" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Serialization.Configuration.DateTimeSerializationSection/DateTimeSerializationMode Local = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode.Local" />
+      <MemberSignature Language="VB.NET" Value="Local" />
+      <MemberSignature Language="F#" Value="Local = 2" Usage="System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode.Local" />
+      <MemberSignature Language="C++ CLI" Value="Local" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -57,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.Configuration.DateTimeSerializationSection+DateTimeSerializationMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The serializer formats all <see cref="T:System.DateTime" /> objects as local time. This is for version 1.0 and 1.1 compatibility.</summary>
         <forInternalUseOnly />
@@ -66,6 +77,9 @@
       <MemberSignature Language="C#" Value="Roundtrip" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Serialization.Configuration.DateTimeSerializationSection/DateTimeSerializationMode Roundtrip = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode.Roundtrip" />
+      <MemberSignature Language="VB.NET" Value="Roundtrip" />
+      <MemberSignature Language="F#" Value="Roundtrip = 1" Usage="System.Xml.Serialization.Configuration.DateTimeSerializationSection.DateTimeSerializationMode.Roundtrip" />
+      <MemberSignature Language="C++ CLI" Value="Roundtrip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -74,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Serialization.Configuration.DateTimeSerializationSection+DateTimeSerializationMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The serializer examines individual <see cref="T:System.DateTime" /> instances to determine the serialization format: UTC, local, or unspecified.</summary>
         <forInternalUseOnly />

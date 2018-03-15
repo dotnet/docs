@@ -1,7 +1,10 @@
-<Type Name="CodeRegionDirective" FullName="System.CodeDom.CodeRegionDirective">
+﻿<Type Name="CodeRegionDirective" FullName="System.CodeDom.CodeRegionDirective">
   <TypeSignature Language="C#" Value="public class CodeRegionDirective : System.CodeDom.CodeDirective" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeRegionDirective extends System.CodeDom.CodeDirective" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeRegionDirective" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeRegionDirective&#xA;Inherits CodeDirective" />
+  <TypeSignature Language="F#" Value="type CodeRegionDirective = class&#xA;    inherit CodeDirective" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeRegionDirective : System::CodeDom::CodeDirective" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -45,10 +48,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeRegionDirective" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeRegionDirective ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeRegionDirective.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeRegionDirective();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -75,6 +89,9 @@
       <MemberSignature Language="C#" Value="public CodeRegionDirective (System.CodeDom.CodeRegionMode regionMode, string regionText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.CodeDom.CodeRegionMode regionMode, string regionText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeRegionDirective.#ctor(System.CodeDom.CodeRegionMode,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (regionMode As CodeRegionMode, regionText As String)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeRegionDirective : System.CodeDom.CodeRegionMode * string -&gt; System.CodeDom.CodeRegionDirective" Usage="new System.CodeDom.CodeRegionDirective (regionMode, regionText)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeRegionDirective(System::CodeDom::CodeRegionMode regionMode, System::String ^ regionText);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -109,6 +126,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeRegionMode RegionMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.CodeDom.CodeRegionMode RegionMode" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeRegionDirective.RegionMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property RegionMode As CodeRegionMode" />
+      <MemberSignature Language="F#" Value="member this.RegionMode : System.CodeDom.CodeRegionMode with get, set" Usage="System.CodeDom.CodeRegionDirective.RegionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeRegionMode RegionMode { System::CodeDom::CodeRegionMode get(); void set(System::CodeDom::CodeRegionMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +161,9 @@
       <MemberSignature Language="C#" Value="public string RegionText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RegionText" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeRegionDirective.RegionText" />
+      <MemberSignature Language="VB.NET" Value="Public Property RegionText As String" />
+      <MemberSignature Language="F#" Value="member this.RegionText : string with get, set" Usage="System.CodeDom.CodeRegionDirective.RegionText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RegionText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -169,14 +192,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeRegionDirective" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

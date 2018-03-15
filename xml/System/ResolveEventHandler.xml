@@ -1,7 +1,10 @@
-<Type Name="ResolveEventHandler" FullName="System.ResolveEventHandler">
+﻿<Type Name="ResolveEventHandler" FullName="System.ResolveEventHandler">
   <TypeSignature Language="C#" Value="public delegate System.Reflection.Assembly ResolveEventHandler(object sender, ResolveEventArgs args);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ResolveEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ResolveEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function ResolveEventHandler(sender As Object, args As ResolveEventArgs) As Assembly " />
+  <TypeSignature Language="F#" Value="type ResolveEventHandler = delegate of obj * ResolveEventArgs -&gt; Assembly" />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::Reflection::Assembly ^ ResolveEventHandler(System::Object ^ sender, ResolveEventArgs ^ args);" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

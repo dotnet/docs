@@ -1,7 +1,10 @@
-<Type Name="TlsProtocols" FullName="Mono.Security.Interface.TlsProtocols">
+﻿<Type Name="TlsProtocols" FullName="Mono.Security.Interface.TlsProtocols">
   <TypeSignature Language="C#" Value="public enum TlsProtocols" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TlsProtocols extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.TlsProtocols" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TlsProtocols" />
+  <TypeSignature Language="F#" Value="type TlsProtocols = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TlsProtocols" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="ClientMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.TlsProtocols ClientMask = int32(2688)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.TlsProtocols.ClientMask" />
+      <MemberSignature Language="VB.NET" Value="ClientMask" />
+      <MemberSignature Language="F#" Value="ClientMask = 2688" Usage="Mono.Security.Interface.TlsProtocols.ClientMask" />
+      <MemberSignature Language="C++ CLI" Value="ClientMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -31,6 +37,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.TlsProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>2688</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -39,6 +46,9 @@
       <MemberSignature Language="C#" Value="ServerMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.TlsProtocols ServerMask = int32(1344)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.TlsProtocols.ServerMask" />
+      <MemberSignature Language="VB.NET" Value="ServerMask" />
+      <MemberSignature Language="F#" Value="ServerMask = 1344" Usage="Mono.Security.Interface.TlsProtocols.ServerMask" />
+      <MemberSignature Language="C++ CLI" Value="ServerMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -47,6 +57,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.TlsProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>1344</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -55,6 +66,9 @@
       <MemberSignature Language="C#" Value="Tls10" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.TlsProtocols Tls10 = int32(192)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.TlsProtocols.Tls10" />
+      <MemberSignature Language="VB.NET" Value="Tls10" />
+      <MemberSignature Language="F#" Value="Tls10 = 192" Usage="Mono.Security.Interface.TlsProtocols.Tls10" />
+      <MemberSignature Language="C++ CLI" Value="Tls10" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -63,6 +77,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.TlsProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>192</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -71,6 +86,9 @@
       <MemberSignature Language="C#" Value="Tls10Client" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.TlsProtocols Tls10Client = int32(128)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.TlsProtocols.Tls10Client" />
+      <MemberSignature Language="VB.NET" Value="Tls10Client" />
+      <MemberSignature Language="F#" Value="Tls10Client = 128" Usage="Mono.Security.Interface.TlsProtocols.Tls10Client" />
+      <MemberSignature Language="C++ CLI" Value="Tls10Client" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -79,6 +97,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.TlsProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -87,6 +106,9 @@
       <MemberSignature Language="C#" Value="Tls10Server" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.TlsProtocols Tls10Server = int32(64)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.TlsProtocols.Tls10Server" />
+      <MemberSignature Language="VB.NET" Value="Tls10Server" />
+      <MemberSignature Language="F#" Value="Tls10Server = 64" Usage="Mono.Security.Interface.TlsProtocols.Tls10Server" />
+      <MemberSignature Language="C++ CLI" Value="Tls10Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +117,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.TlsProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -103,6 +126,9 @@
       <MemberSignature Language="C#" Value="Tls11" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.TlsProtocols Tls11 = int32(768)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.TlsProtocols.Tls11" />
+      <MemberSignature Language="VB.NET" Value="Tls11" />
+      <MemberSignature Language="F#" Value="Tls11 = 768" Usage="Mono.Security.Interface.TlsProtocols.Tls11" />
+      <MemberSignature Language="C++ CLI" Value="Tls11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,6 +137,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.TlsProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>768</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -119,6 +146,9 @@
       <MemberSignature Language="C#" Value="Tls11Client" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.TlsProtocols Tls11Client = int32(512)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.TlsProtocols.Tls11Client" />
+      <MemberSignature Language="VB.NET" Value="Tls11Client" />
+      <MemberSignature Language="F#" Value="Tls11Client = 512" Usage="Mono.Security.Interface.TlsProtocols.Tls11Client" />
+      <MemberSignature Language="C++ CLI" Value="Tls11Client" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +157,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.TlsProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -135,6 +166,9 @@
       <MemberSignature Language="C#" Value="Tls11Server" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.TlsProtocols Tls11Server = int32(256)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.TlsProtocols.Tls11Server" />
+      <MemberSignature Language="VB.NET" Value="Tls11Server" />
+      <MemberSignature Language="F#" Value="Tls11Server = 256" Usage="Mono.Security.Interface.TlsProtocols.Tls11Server" />
+      <MemberSignature Language="C++ CLI" Value="Tls11Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +177,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.TlsProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -151,6 +186,9 @@
       <MemberSignature Language="C#" Value="Tls12" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.TlsProtocols Tls12 = int32(3072)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.TlsProtocols.Tls12" />
+      <MemberSignature Language="VB.NET" Value="Tls12" />
+      <MemberSignature Language="F#" Value="Tls12 = 3072" Usage="Mono.Security.Interface.TlsProtocols.Tls12" />
+      <MemberSignature Language="C++ CLI" Value="Tls12" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -159,6 +197,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.TlsProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>3072</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -167,6 +206,9 @@
       <MemberSignature Language="C#" Value="Tls12Client" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.TlsProtocols Tls12Client = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.TlsProtocols.Tls12Client" />
+      <MemberSignature Language="VB.NET" Value="Tls12Client" />
+      <MemberSignature Language="F#" Value="Tls12Client = 2048" Usage="Mono.Security.Interface.TlsProtocols.Tls12Client" />
+      <MemberSignature Language="C++ CLI" Value="Tls12Client" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -175,6 +217,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.TlsProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -183,6 +226,9 @@
       <MemberSignature Language="C#" Value="Tls12Server" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.TlsProtocols Tls12Server = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.TlsProtocols.Tls12Server" />
+      <MemberSignature Language="VB.NET" Value="Tls12Server" />
+      <MemberSignature Language="F#" Value="Tls12Server = 1024" Usage="Mono.Security.Interface.TlsProtocols.Tls12Server" />
+      <MemberSignature Language="C++ CLI" Value="Tls12Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -191,6 +237,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.TlsProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -199,6 +246,9 @@
       <MemberSignature Language="C#" Value="Zero" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Mono.Security.Interface.TlsProtocols Zero = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Mono.Security.Interface.TlsProtocols.Zero" />
+      <MemberSignature Language="VB.NET" Value="Zero" />
+      <MemberSignature Language="F#" Value="Zero = 0" Usage="Mono.Security.Interface.TlsProtocols.Zero" />
+      <MemberSignature Language="C++ CLI" Value="Zero" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -207,6 +257,7 @@
       <ReturnValue>
         <ReturnType>Mono.Security.Interface.TlsProtocols</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="Duplex" FullName="System.Drawing.Printing.Duplex">
+﻿<Type Name="Duplex" FullName="System.Drawing.Printing.Duplex">
   <TypeSignature Language="C#" Value="public enum Duplex" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed Duplex extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.Duplex" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Duplex" />
+  <TypeSignature Language="F#" Value="type Duplex = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class Duplex" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.Duplex Default = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.Duplex.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = -1" Usage="System.Drawing.Printing.Duplex.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -36,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.Duplex</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>The printer's default duplex setting.</summary>
       </Docs>
@@ -44,6 +51,9 @@
       <MemberSignature Language="C#" Value="Horizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.Duplex Horizontal = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.Duplex.Horizontal" />
+      <MemberSignature Language="VB.NET" Value="Horizontal" />
+      <MemberSignature Language="F#" Value="Horizontal = 3" Usage="System.Drawing.Printing.Duplex.Horizontal" />
+      <MemberSignature Language="C++ CLI" Value="Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.Duplex</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Double-sided, horizontal printing.</summary>
       </Docs>
@@ -60,6 +71,9 @@
       <MemberSignature Language="C#" Value="Simplex" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.Duplex Simplex = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.Duplex.Simplex" />
+      <MemberSignature Language="VB.NET" Value="Simplex" />
+      <MemberSignature Language="F#" Value="Simplex = 1" Usage="System.Drawing.Printing.Duplex.Simplex" />
+      <MemberSignature Language="C++ CLI" Value="Simplex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -68,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.Duplex</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Single-sided printing.</summary>
       </Docs>
@@ -76,6 +91,9 @@
       <MemberSignature Language="C#" Value="Vertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.Duplex Vertical = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.Duplex.Vertical" />
+      <MemberSignature Language="VB.NET" Value="Vertical" />
+      <MemberSignature Language="F#" Value="Vertical = 2" Usage="System.Drawing.Printing.Duplex.Vertical" />
+      <MemberSignature Language="C++ CLI" Value="Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -84,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.Duplex</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Double-sided, vertical printing.</summary>
       </Docs>

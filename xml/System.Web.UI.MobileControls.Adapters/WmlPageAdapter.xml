@@ -1,7 +1,10 @@
-<Type Name="WmlPageAdapter" FullName="System.Web.UI.MobileControls.Adapters.WmlPageAdapter">
+﻿<Type Name="WmlPageAdapter" FullName="System.Web.UI.MobileControls.Adapters.WmlPageAdapter">
   <TypeSignature Language="C#" Value="public class WmlPageAdapter : System.Web.UI.MobileControls.Adapters.WmlControlAdapter, System.Web.UI.MobileControls.IPageAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WmlPageAdapter extends System.Web.UI.MobileControls.Adapters.WmlControlAdapter implements class System.Web.UI.MobileControls.IControlAdapter, class System.Web.UI.MobileControls.IPageAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlPageAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class WmlPageAdapter&#xA;Inherits WmlControlAdapter&#xA;Implements IPageAdapter" />
+  <TypeSignature Language="F#" Value="type WmlPageAdapter = class&#xA;    inherit WmlControlAdapter&#xA;    interface IPageAdapter&#xA;    interface IControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WmlPageAdapter : System::Web::UI::MobileControls::Adapters::WmlControlAdapter, System::Web::UI::MobileControls::IPageAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,8 @@
       <MemberSignature Language="C#" Value="public WmlPageAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlPageAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -46,7 +51,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IList CacheVaryByHeaders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList CacheVaryByHeaders" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.CacheVaryByHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CacheVaryByHeaders As IList" />
+      <MemberSignature Language="F#" Value="member this.CacheVaryByHeaders : System.Collections.IList" Usage="System.Web.UI.MobileControls.Adapters.WmlPageAdapter.CacheVaryByHeaders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IList ^ CacheVaryByHeaders { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.MobileControls.IPageAdapter.CacheVaryByHeaders</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,7 +85,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary CookielessDataDictionary { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary CookielessDataDictionary" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.CookielessDataDictionary" />
+      <MemberSignature Language="VB.NET" Value="Public Property CookielessDataDictionary As IDictionary" />
+      <MemberSignature Language="F#" Value="member this.CookielessDataDictionary : System.Collections.IDictionary with get, set" Usage="System.Web.UI.MobileControls.Adapters.WmlPageAdapter.CookielessDataDictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ CookielessDataDictionary { System::Collections::IDictionary ^ get(); void set(System::Collections::IDictionary ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.MobileControls.IPageAdapter.CookielessDataDictionary</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,7 +117,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.HtmlTextWriter CreateTextWriter (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.HtmlTextWriter CreateTextWriter(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.CreateTextWriter(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateTextWriter (writer As TextWriter) As HtmlTextWriter" />
+      <MemberSignature Language="F#" Value="abstract member CreateTextWriter : System.IO.TextWriter -&gt; System.Web.UI.HtmlTextWriter&#xA;override this.CreateTextWriter : System.IO.TextWriter -&gt; System.Web.UI.HtmlTextWriter" Usage="wmlPageAdapter.CreateTextWriter writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::HtmlTextWriter ^ CreateTextWriter(System::IO::TextWriter ^ writer);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IPageAdapter.CreateTextWriter(System.IO.TextWriter)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -123,7 +146,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Specialized.NameValueCollection DeterminePostBackMode (System.Web.HttpRequest request, string postEventSourceID, string postEventArgumentID, System.Collections.Specialized.NameValueCollection baseCollection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Specialized.NameValueCollection DeterminePostBackMode(class System.Web.HttpRequest request, string postEventSourceID, string postEventArgumentID, class System.Collections.Specialized.NameValueCollection baseCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.DeterminePostBackMode(System.Web.HttpRequest,System.String,System.String,System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeterminePostBackMode (request As HttpRequest, postEventSourceID As String, postEventArgumentID As String, baseCollection As NameValueCollection) As NameValueCollection" />
+      <MemberSignature Language="F#" Value="abstract member DeterminePostBackMode : System.Web.HttpRequest * string * string * System.Collections.Specialized.NameValueCollection -&gt; System.Collections.Specialized.NameValueCollection&#xA;override this.DeterminePostBackMode : System.Web.HttpRequest * string * string * System.Collections.Specialized.NameValueCollection -&gt; System.Collections.Specialized.NameValueCollection" Usage="wmlPageAdapter.DeterminePostBackMode (request, postEventSourceID, postEventArgumentID, baseCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Specialized::NameValueCollection ^ DeterminePostBackMode(System::Web::HttpRequest ^ request, System::String ^ postEventSourceID, System::String ^ postEventArgumentID, System::Collections::Specialized::NameValueCollection ^ baseCollection);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IPageAdapter.DeterminePostBackMode(System.Web.HttpRequest,System.String,System.String,System.Collections.Specialized.NameValueCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -163,6 +192,9 @@
       <MemberSignature Language="C#" Value="public static bool DeviceQualifies (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool DeviceQualifies(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.DeviceQualifies(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeviceQualifies (context As HttpContext) As Boolean" />
+      <MemberSignature Language="F#" Value="static member DeviceQualifies : System.Web.HttpContext -&gt; bool" Usage="System.Web.UI.MobileControls.Adapters.WmlPageAdapter.DeviceQualifies context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool DeviceQualifies(System::Web::HttpContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -200,7 +232,13 @@
       <MemberSignature Language="C#" Value="public virtual bool HandleError (Exception e, System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HandleError(class System.Exception e, class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.HandleError(System.Exception,System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function HandleError (e As Exception, writer As HtmlTextWriter) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member HandleError : Exception * System.Web.UI.HtmlTextWriter -&gt; bool&#xA;override this.HandleError : Exception * System.Web.UI.HtmlTextWriter -&gt; bool" Usage="wmlPageAdapter.HandleError (e, writer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HandleError(Exception ^ e, System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IPageAdapter.HandleError(System.Exception,System.Web.UI.HtmlTextWriter)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -237,7 +275,13 @@
       <MemberSignature Language="C#" Value="public virtual bool HandlePagePostBackEvent (string eventSource, string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HandlePagePostBackEvent(string eventSource, string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.HandlePagePostBackEvent(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function HandlePagePostBackEvent (eventSource As String, eventArgument As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member HandlePagePostBackEvent : string * string -&gt; bool&#xA;override this.HandlePagePostBackEvent : string * string -&gt; bool" Usage="wmlPageAdapter.HandlePagePostBackEvent (eventSource, eventArgument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HandlePagePostBackEvent(System::String ^ eventSource, System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IPageAdapter.HandlePagePostBackEvent(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -272,6 +316,8 @@
       <MemberSignature Language="C#" Value="public virtual bool IsFormRendered (System.Web.UI.MobileControls.Form form);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsFormRendered(class System.Web.UI.MobileControls.Form form) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.IsFormRendered(System.Web.UI.MobileControls.Form)" />
+      <MemberSignature Language="F#" Value="abstract member IsFormRendered : System.Web.UI.MobileControls.Form -&gt; bool&#xA;override this.IsFormRendered : System.Web.UI.MobileControls.Form -&gt; bool" Usage="wmlPageAdapter.IsFormRendered form" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsFormRendered(System::Web::UI::MobileControls::Form ^ form);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -305,7 +351,13 @@
       <MemberSignature Language="C#" Value="public virtual int OptimumPageWeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 OptimumPageWeight" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.OptimumPageWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property OptimumPageWeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.OptimumPageWeight : int" Usage="System.Web.UI.MobileControls.Adapters.WmlPageAdapter.OptimumPageWeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int OptimumPageWeight { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.MobileControls.IPageAdapter.OptimumPageWeight</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -324,7 +376,13 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.MobileControls.MobilePage Page { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.MobilePage Page" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.Page" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Page As MobilePage" />
+      <MemberSignature Language="F#" Value="member this.Page : System.Web.UI.MobileControls.MobilePage with get, set" Usage="System.Web.UI.MobileControls.Adapters.WmlPageAdapter.Page" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::MobileControls::MobilePage ^ Page { System::Web::UI::MobileControls::MobilePage ^ get(); void set(System::Web::UI::MobileControls::MobilePage ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.MobileControls.IPageAdapter.Page</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -343,7 +401,13 @@
       <MemberSignature Language="C#" Value="public bool PersistCookielessData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PersistCookielessData" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.PersistCookielessData" />
+      <MemberSignature Language="VB.NET" Value="Public Property PersistCookielessData As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PersistCookielessData : bool with get, set" Usage="System.Web.UI.MobileControls.Adapters.WmlPageAdapter.PersistCookielessData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PersistCookielessData { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.MobileControls.IPageAdapter.PersistCookielessData</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -370,6 +434,9 @@
       <MemberSignature Language="C#" Value="public override void Render (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Render(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As WmlMobileTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter -&gt; unit" Usage="wmlPageAdapter.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -392,6 +459,8 @@
       <MemberSignature Language="C#" Value="protected virtual void RenderForm (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, System.Web.UI.MobileControls.Form form);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderForm(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer, class System.Web.UI.MobileControls.Form form) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.RenderForm(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter,System.Web.UI.MobileControls.Form)" />
+      <MemberSignature Language="F#" Value="abstract member RenderForm : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter * System.Web.UI.MobileControls.Form -&gt; unit&#xA;override this.RenderForm : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter * System.Web.UI.MobileControls.Form -&gt; unit" Usage="wmlPageAdapter.RenderForm (writer, form)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderForm(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer, System::Web::UI::MobileControls::Form ^ form);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -416,6 +485,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RendersMultipleForms ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RendersMultipleForms() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlPageAdapter.RendersMultipleForms" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RendersMultipleForms () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member RendersMultipleForms : unit -&gt; bool&#xA;override this.RendersMultipleForms : unit -&gt; bool" Usage="wmlPageAdapter.RendersMultipleForms " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool RendersMultipleForms();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

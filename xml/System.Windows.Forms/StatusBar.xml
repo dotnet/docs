@@ -1,7 +1,10 @@
-<Type Name="StatusBar" FullName="System.Windows.Forms.StatusBar">
+﻿<Type Name="StatusBar" FullName="System.Windows.Forms.StatusBar">
   <TypeSignature Language="C#" Value="public class StatusBar : System.Windows.Forms.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatusBar extends System.Windows.Forms.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBar" />
+  <TypeSignature Language="VB.NET" Value="Public Class StatusBar&#xA;Inherits Control" />
+  <TypeSignature Language="F#" Value="type StatusBar = class&#xA;    inherit Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StatusBar : System::Windows::Forms::Control" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,7 +24,7 @@
       <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.StatusBarDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -63,6 +66,8 @@
       <MemberSignature Language="C#" Value="public StatusBar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBar.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StatusBar();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -106,6 +111,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.StatusBar.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -140,6 +148,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackColorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.StatusBar.BackColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackColorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackColorChanged : EventHandler " Usage="member this.BackColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -165,6 +176,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Image BackgroundImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image BackgroundImage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.BackgroundImage" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.StatusBar.BackgroundImage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -198,6 +212,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.StatusBar.BackgroundImageChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -230,6 +247,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.ImageLayout BackgroundImageLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImageLayout BackgroundImageLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.BackgroundImageLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.StatusBar.BackgroundImageLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -263,6 +283,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageLayoutChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageLayoutChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.StatusBar.BackgroundImageLayoutChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayoutChanged : EventHandler " Usage="member this.BackgroundImageLayoutChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -295,6 +318,9 @@
       <MemberSignature Language="C#" Value="protected override void CreateHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CreateHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBar.CreateHandle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CreateHandle ()" />
+      <MemberSignature Language="F#" Value="override this.CreateHandle : unit -&gt; unit" Usage="statusBar.CreateHandle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CreateHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -313,6 +339,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.CreateParams" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.StatusBar.CreateParams" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -332,6 +361,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.ImeMode DefaultImeMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImeMode DefaultImeMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.DefaultImeMode" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultImeMode As ImeMode" />
+      <MemberSignature Language="F#" Value="member this.DefaultImeMode : System.Windows.Forms.ImeMode" Usage="System.Windows.Forms.StatusBar.DefaultImeMode" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::ImeMode DefaultImeMode { System::Windows::Forms::ImeMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -358,6 +390,9 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.StatusBar.DefaultSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -376,6 +411,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBar.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="statusBar.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -413,6 +451,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DockStyle Dock { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DockStyle Dock" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.Dock" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Dock As DockStyle" />
+      <MemberSignature Language="F#" Value="member this.Dock : System.Windows.Forms.DockStyle with get, set" Usage="System.Windows.Forms.StatusBar.Dock" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DockStyle Dock { System::Windows::Forms::DockStyle get(); void set(System::Windows::Forms::DockStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -440,6 +481,9 @@
       <MemberSignature Language="C#" Value="protected override bool DoubleBuffered { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DoubleBuffered" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.DoubleBuffered" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Property DoubleBuffered As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DoubleBuffered : bool with get, set" Usage="System.Windows.Forms.StatusBar.DoubleBuffered" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool DoubleBuffered { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -471,6 +515,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.StatusBarDrawItemEventHandler DrawItem;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.StatusBarDrawItemEventHandler DrawItem" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.StatusBar.DrawItem" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DrawItem As StatusBarDrawItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DrawItem : System.Windows.Forms.StatusBarDrawItemEventHandler " Usage="member this.DrawItem : System.Windows.Forms.StatusBarDrawItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::StatusBarDrawItemEventHandler ^ DrawItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -509,6 +556,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Font As Font" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.StatusBar.Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -533,6 +583,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.StatusBar.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -560,6 +613,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ForeColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ForeColorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.StatusBar.ForeColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ForeColorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -585,6 +641,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ImeMode ImeMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImeMode ImeMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.ImeMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImeMode As ImeMode" />
+      <MemberSignature Language="F#" Value="member this.ImeMode : System.Windows.Forms.ImeMode with get, set" Usage="System.Windows.Forms.StatusBar.ImeMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ImeMode ImeMode { System::Windows::Forms::ImeMode get(); void set(System::Windows::Forms::ImeMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -611,6 +670,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ImeModeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ImeModeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.StatusBar.ImeModeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ImeModeChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ImeModeChanged : EventHandler " Usage="member this.ImeModeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ImeModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -636,6 +698,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDrawItem (System.Windows.Forms.StatusBarDrawItemEventArgs sbdievent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDrawItem(class System.Windows.Forms.StatusBarDrawItemEventArgs sbdievent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBar.OnDrawItem(System.Windows.Forms.StatusBarDrawItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDrawItem (sbdievent As StatusBarDrawItemEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDrawItem : System.Windows.Forms.StatusBarDrawItemEventArgs -&gt; unit&#xA;override this.OnDrawItem : System.Windows.Forms.StatusBarDrawItemEventArgs -&gt; unit" Usage="statusBar.OnDrawItem sbdievent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDrawItem(System::Windows::Forms::StatusBarDrawItemEventArgs ^ sbdievent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -680,6 +745,9 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBar.OnHandleCreated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="statusBar.OnHandleCreated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -711,6 +779,9 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleDestroyed (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleDestroyed(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBar.OnHandleDestroyed(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleDestroyed (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnHandleDestroyed : EventArgs -&gt; unit" Usage="statusBar.OnHandleDestroyed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleDestroyed(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -742,6 +813,9 @@
       <MemberSignature Language="C#" Value="protected override void OnLayout (System.Windows.Forms.LayoutEventArgs levent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLayout(class System.Windows.Forms.LayoutEventArgs levent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBar.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayout (levent As LayoutEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnLayout : System.Windows.Forms.LayoutEventArgs -&gt; unit" Usage="statusBar.OnLayout levent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayout(System::Windows::Forms::LayoutEventArgs ^ levent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -773,6 +847,9 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseDown (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseDown(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBar.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseDown (e As MouseEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseDown : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="statusBar.OnMouseDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseDown(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -804,6 +881,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPanelClick (System.Windows.Forms.StatusBarPanelClickEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPanelClick(class System.Windows.Forms.StatusBarPanelClickEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBar.OnPanelClick(System.Windows.Forms.StatusBarPanelClickEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPanelClick (e As StatusBarPanelClickEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPanelClick : System.Windows.Forms.StatusBarPanelClickEventArgs -&gt; unit&#xA;override this.OnPanelClick : System.Windows.Forms.StatusBarPanelClickEventArgs -&gt; unit" Usage="statusBar.OnPanelClick e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPanelClick(System::Windows::Forms::StatusBarPanelClickEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -839,6 +919,9 @@
       <MemberSignature Language="C#" Value="protected override void OnResize (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnResize(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBar.OnResize(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnResize (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnResize : EventArgs -&gt; unit" Usage="statusBar.OnResize e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnResize(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -870,6 +953,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.PaintEventHandler Paint;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.PaintEventHandler Paint" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.StatusBar.Paint" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Paint As PaintEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Paint : System.Windows.Forms.PaintEventHandler " Usage="member this.Paint : System.Windows.Forms.PaintEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PaintEventHandler ^ Paint;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -895,6 +981,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.StatusBarPanelClickEventHandler PanelClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.StatusBarPanelClickEventHandler PanelClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.StatusBar.PanelClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PanelClick As StatusBarPanelClickEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PanelClick : System.Windows.Forms.StatusBarPanelClickEventHandler " Usage="member this.PanelClick : System.Windows.Forms.StatusBarPanelClickEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::StatusBarPanelClickEventHandler ^ PanelClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -935,6 +1024,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.StatusBar.StatusBarPanelCollection Panels { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.StatusBar/StatusBarPanelCollection Panels" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.Panels" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Panels As StatusBar.StatusBarPanelCollection" />
+      <MemberSignature Language="F#" Value="member this.Panels : System.Windows.Forms.StatusBar.StatusBarPanelCollection" Usage="System.Windows.Forms.StatusBar.Panels" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::StatusBar::StatusBarPanelCollection ^ Panels { System::Windows::Forms::StatusBar::StatusBarPanelCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -942,7 +1034,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
@@ -982,6 +1074,9 @@
       <MemberSignature Language="C#" Value="public bool ShowPanels { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowPanels" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.ShowPanels" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowPanels As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowPanels : bool with get, set" Usage="System.Windows.Forms.StatusBar.ShowPanels" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowPanels { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1023,6 +1118,9 @@
       <MemberSignature Language="C#" Value="public bool SizingGrip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SizingGrip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.SizingGrip" />
+      <MemberSignature Language="VB.NET" Value="Public Property SizingGrip As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SizingGrip : bool with get, set" Usage="System.Windows.Forms.StatusBar.SizingGrip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SizingGrip { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1067,6 +1165,9 @@
       <MemberSignature Language="C#" Value="public bool TabStop { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TabStop" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.TabStop" />
+      <MemberSignature Language="VB.NET" Value="Public Property TabStop As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TabStop : bool with get, set" Usage="System.Windows.Forms.StatusBar.TabStop" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TabStop { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1091,6 +1192,9 @@
       <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.StatusBar.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.StatusBar.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1133,6 +1237,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBar.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="statusBar.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1152,6 +1259,9 @@
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.StatusBar.WndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="statusBar.WndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

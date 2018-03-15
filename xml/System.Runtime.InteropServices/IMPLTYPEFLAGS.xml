@@ -1,7 +1,10 @@
-<Type Name="IMPLTYPEFLAGS" FullName="System.Runtime.InteropServices.IMPLTYPEFLAGS">
+﻿<Type Name="IMPLTYPEFLAGS" FullName="System.Runtime.InteropServices.IMPLTYPEFLAGS">
   <TypeSignature Language="C#" Value="public enum IMPLTYPEFLAGS" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed IMPLTYPEFLAGS extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.IMPLTYPEFLAGS" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IMPLTYPEFLAGS" />
+  <TypeSignature Language="F#" Value="type IMPLTYPEFLAGS = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class IMPLTYPEFLAGS" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="IMPLTYPEFLAG_FDEFAULT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.IMPLTYPEFLAGS IMPLTYPEFLAG_FDEFAULT = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FDEFAULT" />
+      <MemberSignature Language="VB.NET" Value="IMPLTYPEFLAG_FDEFAULT" />
+      <MemberSignature Language="F#" Value="IMPLTYPEFLAG_FDEFAULT = 1" Usage="System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FDEFAULT" />
+      <MemberSignature Language="C++ CLI" Value="IMPLTYPEFLAG_FDEFAULT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.IMPLTYPEFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The interface or dispinterface represents the default for the source or sink.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="IMPLTYPEFLAG_FDEFAULTVTABLE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.IMPLTYPEFLAGS IMPLTYPEFLAG_FDEFAULTVTABLE = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FDEFAULTVTABLE" />
+      <MemberSignature Language="VB.NET" Value="IMPLTYPEFLAG_FDEFAULTVTABLE" />
+      <MemberSignature Language="F#" Value="IMPLTYPEFLAG_FDEFAULTVTABLE = 8" Usage="System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FDEFAULTVTABLE" />
+      <MemberSignature Language="C++ CLI" Value="IMPLTYPEFLAG_FDEFAULTVTABLE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.IMPLTYPEFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Sinks receive events through the virtual function table (VTBL).</summary>
       </Docs>
@@ -68,6 +79,9 @@
       <MemberSignature Language="C#" Value="IMPLTYPEFLAG_FRESTRICTED" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.IMPLTYPEFLAGS IMPLTYPEFLAG_FRESTRICTED = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FRESTRICTED" />
+      <MemberSignature Language="VB.NET" Value="IMPLTYPEFLAG_FRESTRICTED" />
+      <MemberSignature Language="F#" Value="IMPLTYPEFLAG_FRESTRICTED = 4" Usage="System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FRESTRICTED" />
+      <MemberSignature Language="C++ CLI" Value="IMPLTYPEFLAG_FRESTRICTED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.IMPLTYPEFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The member should not be displayed or programmable by users.</summary>
       </Docs>
@@ -85,6 +100,9 @@
       <MemberSignature Language="C#" Value="IMPLTYPEFLAG_FSOURCE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.IMPLTYPEFLAGS IMPLTYPEFLAG_FSOURCE = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FSOURCE" />
+      <MemberSignature Language="VB.NET" Value="IMPLTYPEFLAG_FSOURCE" />
+      <MemberSignature Language="F#" Value="IMPLTYPEFLAG_FSOURCE = 2" Usage="System.Runtime.InteropServices.IMPLTYPEFLAGS.IMPLTYPEFLAG_FSOURCE" />
+      <MemberSignature Language="C++ CLI" Value="IMPLTYPEFLAG_FSOURCE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -94,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.IMPLTYPEFLAGS</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>This member of a coclass is called rather than implemented.</summary>
       </Docs>

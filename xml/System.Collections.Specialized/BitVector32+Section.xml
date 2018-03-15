@@ -1,7 +1,10 @@
-<Type Name="BitVector32+Section" FullName="System.Collections.Specialized.BitVector32+Section">
+﻿<Type Name="BitVector32+Section" FullName="System.Collections.Specialized.BitVector32+Section">
   <TypeSignature Language="C#" Value="public struct BitVector32.Section" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit BitVector32/Section extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.BitVector32.Section" />
+  <TypeSignature Language="VB.NET" Value="Public Structure BitVector32.Section" />
+  <TypeSignature Language="F#" Value="type BitVector32.Section = struct" />
+  <TypeSignature Language="C++ CLI" Value="public: value class BitVector32::Section" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Specialized</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -42,10 +45,23 @@
     <altmember cref="M:System.Collections.Specialized.BitVector32.CreateSection(System.Int16)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two <see cref="T:System.Collections.Specialized.BitVector32.Section" /> objects are the same.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (System.Collections.Specialized.BitVector32.Section obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Collections.Specialized.BitVector32/Section obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.Section.Equals(System.Collections.Specialized.BitVector32.Section)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As BitVector32.Section) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Collections.Specialized.BitVector32.Section -&gt; bool" Usage="section.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Collections::Specialized::BitVector32::Section obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -79,6 +95,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.Section.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="section.Equals o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -122,6 +141,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.Section.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="section.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -163,6 +185,9 @@
       <MemberSignature Language="C#" Value="public short Mask { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int16 Mask" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.BitVector32.Section.Mask" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mask As Short" />
+      <MemberSignature Language="F#" Value="member this.Mask : int16" Usage="System.Collections.Specialized.BitVector32.Section.Mask" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property short Mask { short get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -191,6 +216,9 @@
       <MemberSignature Language="C#" Value="public short Offset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int16 Offset" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Specialized.BitVector32.Section.Offset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Offset As Short" />
+      <MemberSignature Language="F#" Value="member this.Offset : int16" Usage="System.Collections.Specialized.BitVector32.Section.Offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property short Offset { short get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -219,6 +247,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Collections.Specialized.BitVector32.Section a, System.Collections.Specialized.BitVector32.Section b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Collections.Specialized.BitVector32/Section a, valuetype System.Collections.Specialized.BitVector32/Section b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.Section.op_Equality(System.Collections.Specialized.BitVector32.Section,System.Collections.Specialized.BitVector32.Section)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As BitVector32.Section, b As BitVector32.Section) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Collections.Specialized.BitVector32.Section * System.Collections.Specialized.BitVector32.Section -&gt; bool" Usage="a = b" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Collections::Specialized::BitVector32::Section a, System::Collections::Specialized::BitVector32::Section b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -256,6 +287,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Collections.Specialized.BitVector32.Section a, System.Collections.Specialized.BitVector32.Section b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Collections.Specialized.BitVector32/Section a, valuetype System.Collections.Specialized.BitVector32/Section b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.Section.op_Inequality(System.Collections.Specialized.BitVector32.Section,System.Collections.Specialized.BitVector32.Section)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As BitVector32.Section, b As BitVector32.Section) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Collections.Specialized.BitVector32.Section * System.Collections.Specialized.BitVector32.Section -&gt; bool" Usage="System.Collections.Specialized.BitVector32.Section.op_Inequality (a, b)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Collections::Specialized::BitVector32::Section a, System::Collections::Specialized::BitVector32::Section b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -325,10 +359,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.Specialized</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string that represents the current <see cref="T:System.Collections.Specialized.BitVector32.Section" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.Section.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="section.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -367,6 +414,9 @@
       <MemberSignature Language="C#" Value="public static string ToString (System.Collections.Specialized.BitVector32.Section value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string ToString(valuetype System.Collections.Specialized.BitVector32/Section value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Specialized.BitVector32.Section.ToString(System.Collections.Specialized.BitVector32.Section)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString (value As BitVector32.Section) As String" />
+      <MemberSignature Language="F#" Value="static member ToString : System.Collections.Specialized.BitVector32.Section -&gt; string" Usage="System.Collections.Specialized.BitVector32.Section.ToString value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ ToString(System::Collections::Specialized::BitVector32::Section value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Specialized</AssemblyName>
@@ -396,25 +446,5 @@
         <altmember cref="T:System.String" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.Specialized</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a string that represents the current <see cref="T:System.Collections.Specialized.BitVector32.Section" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.Specialized</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether two <see cref="T:System.Collections.Specialized.BitVector32.Section" /> objects are the same.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

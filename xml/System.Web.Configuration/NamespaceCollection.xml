@@ -1,7 +1,10 @@
-<Type Name="NamespaceCollection" FullName="System.Web.Configuration.NamespaceCollection">
+﻿<Type Name="NamespaceCollection" FullName="System.Web.Configuration.NamespaceCollection">
   <TypeSignature Language="C#" Value="public sealed class NamespaceCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NamespaceCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.NamespaceCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NamespaceCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type NamespaceCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NamespaceCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +60,8 @@
       <MemberSignature Language="C#" Value="public NamespaceCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NamespaceCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +77,9 @@
       <MemberSignature Language="C#" Value="public void Add (System.Web.Configuration.NamespaceInfo namespaceInformation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Configuration.NamespaceInfo namespaceInformation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceCollection.Add(System.Web.Configuration.NamespaceInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (namespaceInformation As NamespaceInfo)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.NamespaceInfo -&gt; unit" Usage="namespaceCollection.Add namespaceInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::NamespaceInfo ^ namespaceInformation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +119,9 @@
       <MemberSignature Language="C#" Value="public bool AutoImportVBNamespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoImportVBNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.NamespaceCollection.AutoImportVBNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoImportVBNamespace As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoImportVBNamespace : bool with get, set" Usage="System.Web.Configuration.NamespaceCollection.AutoImportVBNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoImportVBNamespace { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -151,6 +162,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="namespaceCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -185,6 +199,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="namespaceCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -204,6 +221,9 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="namespaceCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -226,6 +246,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.NamespaceInfo this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.NamespaceInfo Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.NamespaceCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As NamespaceInfo" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.NamespaceInfo with get, set" Usage="System.Web.Configuration.NamespaceCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::NamespaceInfo ^ default[int] { System::Web::Configuration::NamespaceInfo ^ get(int index); void set(int index, System::Web::Configuration::NamespaceInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -265,6 +288,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.NamespaceCollection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.NamespaceCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -283,6 +309,9 @@
       <MemberSignature Language="C#" Value="public void Remove (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (s As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="namespaceCollection.Remove s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -329,6 +358,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.NamespaceCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="namespaceCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

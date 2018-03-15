@@ -1,7 +1,10 @@
-<Type Name="IEndpointIdentityProvider" FullName="System.ServiceModel.Security.IEndpointIdentityProvider">
+﻿<Type Name="IEndpointIdentityProvider" FullName="System.ServiceModel.Security.IEndpointIdentityProvider">
   <TypeSignature Language="C#" Value="public interface IEndpointIdentityProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEndpointIdentityProvider" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.IEndpointIdentityProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IEndpointIdentityProvider" />
+  <TypeSignature Language="F#" Value="type IEndpointIdentityProvider = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IEndpointIdentityProvider" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointIdentity GetIdentityOfSelf (System.IdentityModel.Selectors.SecurityTokenRequirement tokenRequirement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.EndpointIdentity GetIdentityOfSelf(class System.IdentityModel.Selectors.SecurityTokenRequirement tokenRequirement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.IEndpointIdentityProvider.GetIdentityOfSelf(System.IdentityModel.Selectors.SecurityTokenRequirement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIdentityOfSelf (tokenRequirement As SecurityTokenRequirement) As EndpointIdentity" />
+      <MemberSignature Language="F#" Value="abstract member GetIdentityOfSelf : System.IdentityModel.Selectors.SecurityTokenRequirement -&gt; System.ServiceModel.EndpointIdentity" Usage="iEndpointIdentityProvider.GetIdentityOfSelf tokenRequirement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::EndpointIdentity ^ GetIdentityOfSelf(System::IdentityModel::Selectors::SecurityTokenRequirement ^ tokenRequirement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ProcessStatus" FullName="System.Web.ProcessStatus">
+﻿<Type Name="ProcessStatus" FullName="System.Web.ProcessStatus">
   <TypeSignature Language="C#" Value="public enum ProcessStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProcessStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.ProcessStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ProcessStatus" />
+  <TypeSignature Language="F#" Value="type ProcessStatus = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ProcessStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="Alive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessStatus Alive = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessStatus.Alive" />
+      <MemberSignature Language="VB.NET" Value="Alive" />
+      <MemberSignature Language="F#" Value="Alive = 1" Usage="System.Web.ProcessStatus.Alive" />
+      <MemberSignature Language="C++ CLI" Value="Alive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -27,6 +33,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ProcessStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the process is running.</summary>
       </Docs>
@@ -35,6 +42,9 @@
       <MemberSignature Language="C#" Value="ShutDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessStatus ShutDown = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessStatus.ShutDown" />
+      <MemberSignature Language="VB.NET" Value="ShutDown" />
+      <MemberSignature Language="F#" Value="ShutDown = 3" Usage="System.Web.ProcessStatus.ShutDown" />
+      <MemberSignature Language="C++ CLI" Value="ShutDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -43,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ProcessStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates that the process has shut down normally after receiving a shutdown message from the Internet Information Services (IIS) process.</summary>
       </Docs>
@@ -51,6 +62,9 @@
       <MemberSignature Language="C#" Value="ShuttingDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessStatus ShuttingDown = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessStatus.ShuttingDown" />
+      <MemberSignature Language="VB.NET" Value="ShuttingDown" />
+      <MemberSignature Language="F#" Value="ShuttingDown = 2" Usage="System.Web.ProcessStatus.ShuttingDown" />
+      <MemberSignature Language="C++ CLI" Value="ShuttingDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ProcessStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the process has begun to shut down.</summary>
       </Docs>
@@ -67,6 +82,9 @@
       <MemberSignature Language="C#" Value="Terminated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.ProcessStatus Terminated = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.ProcessStatus.Terminated" />
+      <MemberSignature Language="VB.NET" Value="Terminated" />
+      <MemberSignature Language="F#" Value="Terminated = 4" Usage="System.Web.ProcessStatus.Terminated" />
+      <MemberSignature Language="C++ CLI" Value="Terminated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Web.ProcessStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that the process was forced to terminate by the Internet Information Services (IIS) process.</summary>
       </Docs>

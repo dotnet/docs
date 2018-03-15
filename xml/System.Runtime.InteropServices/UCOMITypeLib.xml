@@ -1,7 +1,10 @@
-<Type Name="UCOMITypeLib" FullName="System.Runtime.InteropServices.UCOMITypeLib">
+﻿<Type Name="UCOMITypeLib" FullName="System.Runtime.InteropServices.UCOMITypeLib">
   <TypeSignature Language="C#" Value="public interface UCOMITypeLib" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UCOMITypeLib" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMITypeLib" />
+  <TypeSignature Language="VB.NET" Value="Public Interface UCOMITypeLib" />
+  <TypeSignature Language="F#" Value="type UCOMITypeLib = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class UCOMITypeLib" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="public void FindName (string szNameBuf, int lHashVal, System.Runtime.InteropServices.UCOMITypeInfo[] ppTInfo, int[] rgMemId, ref short pcFound);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void FindName(string szNameBuf, int32 lHashVal, [out] class System.Runtime.InteropServices.UCOMITypeInfo[] ppTInfo, [out] int32[] rgMemId, int16&amp; pcFound) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMITypeLib.FindName(System.String,System.Int32,System.Runtime.InteropServices.UCOMITypeInfo[],System.Int32[],System.Int16@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FindName (szNameBuf As String, lHashVal As Integer, ppTInfo As UCOMITypeInfo(), rgMemId As Integer(), ByRef pcFound As Short)" />
+      <MemberSignature Language="F#" Value="abstract member FindName : string * int * System.Runtime.InteropServices.UCOMITypeInfo[] * int[] *  -&gt; unit" Usage="uCOMITypeLib.FindName (szNameBuf, lHashVal, ppTInfo, rgMemId, pcFound)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FindName(System::String ^ szNameBuf, int lHashVal, cli::array &lt;System::Runtime::InteropServices::UCOMITypeInfo ^&gt; ^ ppTInfo, cli::array &lt;int&gt; ^ rgMemId, short % pcFound);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -76,6 +82,9 @@
       <MemberSignature Language="C#" Value="public void GetDocumentation (int index, out string strName, out string strDocString, out int dwHelpContext, out string strHelpFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetDocumentation(int32 index, [out] string&amp; strName, [out] string&amp; strDocString, [out] int32&amp; dwHelpContext, [out] string&amp; strHelpFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMITypeLib.GetDocumentation(System.Int32,System.String@,System.String@,System.Int32@,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetDocumentation (index As Integer, ByRef strName As String, ByRef strDocString As String, ByRef dwHelpContext As Integer, ByRef strHelpFile As String)" />
+      <MemberSignature Language="F#" Value="abstract member GetDocumentation : int *  *  *  *  -&gt; unit" Usage="uCOMITypeLib.GetDocumentation (index, strName, strDocString, dwHelpContext, strHelpFile)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetDocumentation(int index, [Runtime::InteropServices::Out] System::String ^ % strName, [Runtime::InteropServices::Out] System::String ^ % strDocString, [Runtime::InteropServices::Out] int % dwHelpContext, [Runtime::InteropServices::Out] System::String ^ % strHelpFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -113,6 +122,9 @@
       <MemberSignature Language="C#" Value="public void GetLibAttr (out IntPtr ppTLibAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetLibAttr([out] native int&amp; ppTLibAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMITypeLib.GetLibAttr(System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetLibAttr (ByRef ppTLibAttr As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member GetLibAttr :  -&gt; unit" Usage="uCOMITypeLib.GetLibAttr ppTLibAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetLibAttr([Runtime::InteropServices::Out] IntPtr % ppTLibAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -144,6 +156,9 @@
       <MemberSignature Language="C#" Value="public void GetTypeComp (out System.Runtime.InteropServices.UCOMITypeComp ppTComp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeComp([out] class System.Runtime.InteropServices.UCOMITypeComp&amp; ppTComp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMITypeLib.GetTypeComp(System.Runtime.InteropServices.UCOMITypeComp@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetTypeComp (ByRef ppTComp As UCOMITypeComp)" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeComp :  -&gt; unit" Usage="uCOMITypeLib.GetTypeComp ppTComp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeComp([Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMITypeComp ^ % ppTComp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -173,6 +188,9 @@
       <MemberSignature Language="C#" Value="public void GetTypeInfo (int index, out System.Runtime.InteropServices.UCOMITypeInfo ppTI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeInfo(int32 index, [out] class System.Runtime.InteropServices.UCOMITypeInfo&amp; ppTI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfo(System.Int32,System.Runtime.InteropServices.UCOMITypeInfo@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfo (index As Integer, ByRef ppTI As UCOMITypeInfo)" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfo : int *  -&gt; unit" Usage="uCOMITypeLib.GetTypeInfo (index, ppTI)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfo(int index, [Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMITypeInfo ^ % ppTI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -204,6 +222,9 @@
       <MemberSignature Language="C#" Value="public int GetTypeInfoCount ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetTypeInfoCount() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfoCount" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTypeInfoCount () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfoCount : unit -&gt; int" Usage="uCOMITypeLib.GetTypeInfoCount " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetTypeInfoCount();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -231,6 +252,9 @@
       <MemberSignature Language="C#" Value="public void GetTypeInfoOfGuid (ref Guid guid, out System.Runtime.InteropServices.UCOMITypeInfo ppTInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeInfoOfGuid(valuetype System.Guid&amp; guid, [out] class System.Runtime.InteropServices.UCOMITypeInfo&amp; ppTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfoOfGuid(System.Guid@,System.Runtime.InteropServices.UCOMITypeInfo@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfoOfGuid (ByRef guid As Guid, ByRef ppTInfo As UCOMITypeInfo)" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfoOfGuid :  *  -&gt; unit" Usage="uCOMITypeLib.GetTypeInfoOfGuid (guid, ppTInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfoOfGuid(Guid % guid, [Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMITypeInfo ^ % ppTInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -262,6 +286,9 @@
       <MemberSignature Language="C#" Value="public void GetTypeInfoType (int index, out System.Runtime.InteropServices.TYPEKIND pTKind);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeInfoType(int32 index, [out] valuetype System.Runtime.InteropServices.TYPEKIND&amp; pTKind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMITypeLib.GetTypeInfoType(System.Int32,System.Runtime.InteropServices.TYPEKIND@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfoType (index As Integer, ByRef pTKind As TYPEKIND)" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfoType : int *  -&gt; unit" Usage="uCOMITypeLib.GetTypeInfoType (index, pTKind)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfoType(int index, [Runtime::InteropServices::Out] System::Runtime::InteropServices::TYPEKIND % pTKind);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -293,6 +320,9 @@
       <MemberSignature Language="C#" Value="public bool IsName (string szNameBuf, int lHashVal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsName(string szNameBuf, int32 lHashVal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMITypeLib.IsName(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsName (szNameBuf As String, lHashVal As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsName : string * int -&gt; bool" Usage="uCOMITypeLib.IsName (szNameBuf, lHashVal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsName(System::String ^ szNameBuf, int lHashVal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -326,6 +356,9 @@
       <MemberSignature Language="C#" Value="public void ReleaseTLibAttr (IntPtr pTLibAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseTLibAttr(native int pTLibAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMITypeLib.ReleaseTLibAttr(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReleaseTLibAttr (pTLibAttr As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseTLibAttr : nativeint -&gt; unit" Usage="uCOMITypeLib.ReleaseTLibAttr pTLibAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReleaseTLibAttr(IntPtr pTLibAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

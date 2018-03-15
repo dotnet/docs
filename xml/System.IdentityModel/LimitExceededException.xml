@@ -1,7 +1,10 @@
-<Type Name="LimitExceededException" FullName="System.IdentityModel.LimitExceededException">
+﻿<Type Name="LimitExceededException" FullName="System.IdentityModel.LimitExceededException">
   <TypeSignature Language="C#" Value="public class LimitExceededException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit LimitExceededException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.LimitExceededException" />
+  <TypeSignature Language="VB.NET" Value="Public Class LimitExceededException&#xA;Inherits SystemException" />
+  <TypeSignature Language="F#" Value="type LimitExceededException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LimitExceededException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.LimitExceededException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LimitExceededException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.LimitExceededException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LimitExceededException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -48,6 +62,9 @@
       <MemberSignature Language="C#" Value="public LimitExceededException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.LimitExceededException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.LimitExceededException : string -&gt; System.IdentityModel.LimitExceededException" Usage="new System.IdentityModel.LimitExceededException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LimitExceededException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -80,6 +97,9 @@
       <MemberSignature Language="C#" Value="protected LimitExceededException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.LimitExceededException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.LimitExceededException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.LimitExceededException" Usage="new System.IdentityModel.LimitExceededException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; LimitExceededException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -107,6 +127,9 @@
       <MemberSignature Language="C#" Value="public LimitExceededException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.LimitExceededException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.LimitExceededException : string * Exception -&gt; System.IdentityModel.LimitExceededException" Usage="new System.IdentityModel.LimitExceededException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LimitExceededException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -137,14 +160,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.LimitExceededException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

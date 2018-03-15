@@ -1,7 +1,10 @@
-<Type Name="ServiceModelEnhancedConfigurationElementCollection&lt;TConfigurationElement&gt;" FullName="System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection&lt;TConfigurationElement&gt;">
+﻿<Type Name="ServiceModelEnhancedConfigurationElementCollection&lt;TConfigurationElement&gt;" FullName="System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection&lt;TConfigurationElement&gt;">
   <TypeSignature Language="C#" Value="public abstract class ServiceModelEnhancedConfigurationElementCollection&lt;TConfigurationElement&gt; : System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection&lt;TConfigurationElement&gt; where TConfigurationElement : ConfigurationElementnew()" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ServiceModelEnhancedConfigurationElementCollection`1&lt;.ctor (class System.Configuration.ConfigurationElement) TConfigurationElement&gt; extends System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1&lt;!TConfigurationElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ServiceModelEnhancedConfigurationElementCollection(Of TConfigurationElement)&#xA;Inherits ServiceModelConfigurationElementCollection(Of TConfigurationElement)" />
+  <TypeSignature Language="F#" Value="type ServiceModelEnhancedConfigurationElementCollection&lt;'ConfigurationElement (requires 'ConfigurationElement :&gt; ConfigurationElement and 'ConfigurationElement : (new : unit -&gt; 'ConfigurationElement))&gt; = class&#xA;    inherit ServiceModelConfigurationElementCollection&lt;'ConfigurationElement (requires 'ConfigurationElement :&gt; ConfigurationElement and 'ConfigurationElement : (new : unit -&gt; 'ConfigurationElement))&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TConfigurationElement&gt;&#xA; where TConfigurationElement : ConfigurationElementgcnew()public ref class ServiceModelEnhancedConfigurationElementCollection abstract : System::ServiceModel::Configuration::ServiceModelConfigurationElementCollection&lt;TConfigurationElement&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="protected override void BaseAdd (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void BaseAdd(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection`1.BaseAdd(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub BaseAdd (element As ConfigurationElement)" />
+      <MemberSignature Language="F#" Value="override this.BaseAdd : System.Configuration.ConfigurationElement -&gt; unit" Usage="serviceModelEnhancedConfigurationElementCollection.BaseAdd element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void BaseAdd(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -52,6 +58,9 @@
       <MemberSignature Language="C#" Value="protected override bool ThrowOnDuplicate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ThrowOnDuplicate" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection`1.ThrowOnDuplicate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ThrowOnDuplicate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ThrowOnDuplicate : bool" Usage="System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection&lt;'ConfigurationElement (requires 'ConfigurationElement :&gt; System.Configuration.ConfigurationElement and 'ConfigurationElement : (new : unit -&gt; 'ConfigurationElement))&gt;.ThrowOnDuplicate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ThrowOnDuplicate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

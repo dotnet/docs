@@ -1,7 +1,10 @@
-<Type Name="TreeNode" FullName="System.Windows.Forms.TreeNode">
+﻿<Type Name="TreeNode" FullName="System.Windows.Forms.TreeNode">
   <TypeSignature Language="C#" Value="public class TreeNode : MarshalByRefObject, ICloneable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TreeNode extends System.MarshalByRefObject implements class System.ICloneable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeNode" />
+  <TypeSignature Language="VB.NET" Value="Public Class TreeNode&#xA;Inherits MarshalByRefObject&#xA;Implements ICloneable, ISerializable" />
+  <TypeSignature Language="F#" Value="type TreeNode = class&#xA;    inherit MarshalByRefObject&#xA;    interface ICloneable&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TreeNode : MarshalByRefObject, ICloneable, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,10 +61,21 @@
     <altmember cref="T:System.Windows.Forms.TreeNodeCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNode" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TreeNode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeNode();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +104,9 @@
       <MemberSignature Language="C#" Value="public TreeNode (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.TreeNode : string -&gt; System.Windows.Forms.TreeNode" Usage="new System.Windows.Forms.TreeNode text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeNode(System::String ^ text);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -126,6 +143,8 @@
       <MemberSignature Language="C#" Value="protected TreeNode (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.TreeNode : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Windows.Forms.TreeNode" Usage="new System.Windows.Forms.TreeNode (serializationInfo, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TreeNode(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -146,6 +165,9 @@
       <MemberSignature Language="C#" Value="public TreeNode (string text, System.Windows.Forms.TreeNode[] children);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, class System.Windows.Forms.TreeNode[] children) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.#ctor(System.String,System.Windows.Forms.TreeNode[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, children As TreeNode())" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.TreeNode : string * System.Windows.Forms.TreeNode[] -&gt; System.Windows.Forms.TreeNode" Usage="new System.Windows.Forms.TreeNode (text, children)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeNode(System::String ^ text, cli::array &lt;System::Windows::Forms::TreeNode ^&gt; ^ children);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -184,6 +206,9 @@
       <MemberSignature Language="C#" Value="public TreeNode (string text, int imageIndex, int selectedImageIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, int32 imageIndex, int32 selectedImageIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.#ctor(System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, imageIndex As Integer, selectedImageIndex As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.TreeNode : string * int * int -&gt; System.Windows.Forms.TreeNode" Usage="new System.Windows.Forms.TreeNode (text, imageIndex, selectedImageIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeNode(System::String ^ text, int imageIndex, int selectedImageIndex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -224,6 +249,9 @@
       <MemberSignature Language="C#" Value="public TreeNode (string text, int imageIndex, int selectedImageIndex, System.Windows.Forms.TreeNode[] children);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, int32 imageIndex, int32 selectedImageIndex, class System.Windows.Forms.TreeNode[] children) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.#ctor(System.String,System.Int32,System.Int32,System.Windows.Forms.TreeNode[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, imageIndex As Integer, selectedImageIndex As Integer, children As TreeNode())" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.TreeNode : string * int * int * System.Windows.Forms.TreeNode[] -&gt; System.Windows.Forms.TreeNode" Usage="new System.Windows.Forms.TreeNode (text, imageIndex, selectedImageIndex, children)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TreeNode(System::String ^ text, int imageIndex, int selectedImageIndex, cli::array &lt;System::Windows::Forms::TreeNode ^&gt; ^ children);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -266,6 +294,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.TreeNode.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -301,6 +332,9 @@
       <MemberSignature Language="C#" Value="public void BeginEdit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginEdit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.BeginEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginEdit ()" />
+      <MemberSignature Language="F#" Value="member this.BeginEdit : unit -&gt; unit" Usage="treeNode.BeginEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -342,6 +376,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.TreeNode.Bounds" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -381,6 +418,9 @@
       <MemberSignature Language="C#" Value="public bool Checked { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Checked" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Checked" />
+      <MemberSignature Language="VB.NET" Value="Public Property Checked As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Checked : bool with get, set" Usage="System.Windows.Forms.TreeNode.Checked" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Checked { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -417,7 +457,13 @@
       <MemberSignature Language="C#" Value="public virtual object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="treeNode.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -451,10 +497,22 @@
         <altmember cref="M:System.Windows.Forms.TreeNode.Remove" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Collapse">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Collapses the <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Collapse">
       <MemberSignature Language="C#" Value="public void Collapse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Collapse() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Collapse" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Collapse ()" />
+      <MemberSignature Language="F#" Value="member this.Collapse : unit -&gt; unit" Usage="treeNode.Collapse " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Collapse();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -496,6 +554,9 @@
       <MemberSignature Language="C#" Value="public void Collapse (bool ignoreChildren);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Collapse(bool ignoreChildren) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Collapse(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Collapse (ignoreChildren As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Collapse : bool -&gt; unit" Usage="treeNode.Collapse ignoreChildren" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Collapse(bool ignoreChildren);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -525,6 +586,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ContextMenu ContextMenu { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ContextMenu ContextMenu" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.ContextMenu" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ContextMenu As ContextMenu" />
+      <MemberSignature Language="F#" Value="member this.ContextMenu : System.Windows.Forms.ContextMenu with get, set" Usage="System.Windows.Forms.TreeNode.ContextMenu" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ContextMenu ^ ContextMenu { System::Windows::Forms::ContextMenu ^ get(); void set(System::Windows::Forms::ContextMenu ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -555,6 +619,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ContextMenuStrip ContextMenuStrip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ContextMenuStrip ContextMenuStrip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.ContextMenuStrip" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ContextMenuStrip As ContextMenuStrip" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStrip : System.Windows.Forms.ContextMenuStrip with get, set" Usage="System.Windows.Forms.TreeNode.ContextMenuStrip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ContextMenuStrip ^ ContextMenuStrip { System::Windows::Forms::ContextMenuStrip ^ get(); void set(System::Windows::Forms::ContextMenuStrip ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -585,6 +652,8 @@
       <MemberSignature Language="C#" Value="protected virtual void Deserialize (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Deserialize(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Deserialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.Deserialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="treeNode.Deserialize (serializationInfo, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Deserialize(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -608,6 +677,9 @@
       <MemberSignature Language="C#" Value="public void EndEdit (bool cancel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndEdit(bool cancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.EndEdit(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndEdit (cancel As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.EndEdit : bool -&gt; unit" Usage="treeNode.EndEdit cancel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndEdit(bool cancel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -643,6 +715,9 @@
       <MemberSignature Language="C#" Value="public void EnsureVisible ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnsureVisible() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.EnsureVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnsureVisible ()" />
+      <MemberSignature Language="F#" Value="member this.EnsureVisible : unit -&gt; unit" Usage="treeNode.EnsureVisible " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnsureVisible();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -683,6 +758,9 @@
       <MemberSignature Language="C#" Value="public void Expand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Expand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Expand" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Expand ()" />
+      <MemberSignature Language="F#" Value="member this.Expand : unit -&gt; unit" Usage="treeNode.Expand " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Expand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -724,6 +802,9 @@
       <MemberSignature Language="C#" Value="public void ExpandAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ExpandAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.ExpandAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ExpandAll ()" />
+      <MemberSignature Language="F#" Value="member this.ExpandAll : unit -&gt; unit" Usage="treeNode.ExpandAll " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ExpandAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -765,6 +846,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode FirstNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode FirstNode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.FirstNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstNode As TreeNode" />
+      <MemberSignature Language="F#" Value="member this.FirstNode : System.Windows.Forms.TreeNode" Usage="System.Windows.Forms.TreeNode.FirstNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeNode ^ FirstNode { System::Windows::Forms::TreeNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -804,6 +888,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.TreeNode.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -839,6 +926,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.TreeNode FromHandle (System.Windows.Forms.TreeView tree, IntPtr handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.TreeNode FromHandle(class System.Windows.Forms.TreeView tree, native int handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.FromHandle(System.Windows.Forms.TreeView,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromHandle (tree As TreeView, handle As IntPtr) As TreeNode" />
+      <MemberSignature Language="F#" Value="static member FromHandle : System.Windows.Forms.TreeView * nativeint -&gt; System.Windows.Forms.TreeNode" Usage="System.Windows.Forms.TreeNode.FromHandle (tree, handle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::TreeNode ^ FromHandle(System::Windows::Forms::TreeView ^ tree, IntPtr handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -881,6 +971,9 @@
       <MemberSignature Language="C#" Value="public string FullPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FullPath" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.FullPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullPath As String" />
+      <MemberSignature Language="F#" Value="member this.FullPath : string" Usage="System.Windows.Forms.TreeNode.FullPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -922,6 +1015,9 @@
       <MemberSignature Language="C#" Value="public int GetNodeCount (bool includeSubTrees);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetNodeCount(bool includeSubTrees) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.GetNodeCount(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNodeCount (includeSubTrees As Boolean) As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetNodeCount : bool -&gt; int" Usage="treeNode.GetNodeCount includeSubTrees" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetNodeCount(bool includeSubTrees);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -958,6 +1054,9 @@
       <MemberSignature Language="C#" Value="public IntPtr Handle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Handle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Handle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.Handle : nativeint" Usage="System.Windows.Forms.TreeNode.Handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Handle { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -997,6 +1096,9 @@
       <MemberSignature Language="C#" Value="public int ImageIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ImageIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.ImageIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.ImageIndex : int with get, set" Usage="System.Windows.Forms.TreeNode.ImageIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ImageIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1013,7 +1115,7 @@
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.TreeViewImageIndexConverter))</AttributeName>
@@ -1059,6 +1161,9 @@
       <MemberSignature Language="C#" Value="public string ImageKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ImageKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.ImageKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageKey As String" />
+      <MemberSignature Language="F#" Value="member this.ImageKey : string with get, set" Usage="System.Windows.Forms.TreeNode.ImageKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1075,7 +1180,7 @@
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.TreeViewImageKeyConverter))</AttributeName>
@@ -1108,6 +1213,9 @@
       <MemberSignature Language="C#" Value="public int Index { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="System.Windows.Forms.TreeNode.Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1137,6 +1245,9 @@
       <MemberSignature Language="C#" Value="public bool IsEditing { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEditing" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.IsEditing" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEditing As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEditing : bool" Usage="System.Windows.Forms.TreeNode.IsEditing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEditing { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1174,6 +1285,9 @@
       <MemberSignature Language="C#" Value="public bool IsExpanded { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsExpanded" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.IsExpanded" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsExpanded As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsExpanded : bool" Usage="System.Windows.Forms.TreeNode.IsExpanded" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsExpanded { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1211,6 +1325,9 @@
       <MemberSignature Language="C#" Value="public bool IsSelected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSelected" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.IsSelected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSelected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSelected : bool" Usage="System.Windows.Forms.TreeNode.IsSelected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelected { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1247,6 +1364,9 @@
       <MemberSignature Language="C#" Value="public bool IsVisible { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsVisible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.IsVisible" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsVisible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsVisible : bool" Usage="System.Windows.Forms.TreeNode.IsVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsVisible { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1284,6 +1404,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode LastNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode LastNode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.LastNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastNode As TreeNode" />
+      <MemberSignature Language="F#" Value="member this.LastNode : System.Windows.Forms.TreeNode" Usage="System.Windows.Forms.TreeNode.LastNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeNode ^ LastNode { System::Windows::Forms::TreeNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1326,6 +1449,9 @@
       <MemberSignature Language="C#" Value="public int Level { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Level" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Level" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Level As Integer" />
+      <MemberSignature Language="F#" Value="member this.Level : int" Usage="System.Windows.Forms.TreeNode.Level" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Level { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1356,6 +1482,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.TreeNode.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1381,6 +1510,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode NextNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode NextNode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.NextNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextNode As TreeNode" />
+      <MemberSignature Language="F#" Value="member this.NextNode : System.Windows.Forms.TreeNode" Usage="System.Windows.Forms.TreeNode.NextNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeNode ^ NextNode { System::Windows::Forms::TreeNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1423,6 +1555,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode NextVisibleNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode NextVisibleNode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.NextVisibleNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextVisibleNode As TreeNode" />
+      <MemberSignature Language="F#" Value="member this.NextVisibleNode : System.Windows.Forms.TreeNode" Usage="System.Windows.Forms.TreeNode.NextVisibleNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeNode ^ NextVisibleNode { System::Windows::Forms::TreeNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1464,6 +1599,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font NodeFont { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font NodeFont" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.NodeFont" />
+      <MemberSignature Language="VB.NET" Value="Public Property NodeFont As Font" />
+      <MemberSignature Language="F#" Value="member this.NodeFont : System.Drawing.Font with get, set" Usage="System.Windows.Forms.TreeNode.NodeFont" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ NodeFont { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1511,6 +1649,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNodeCollection Nodes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNodeCollection Nodes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Nodes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Nodes As TreeNodeCollection" />
+      <MemberSignature Language="F#" Value="member this.Nodes : System.Windows.Forms.TreeNodeCollection" Usage="System.Windows.Forms.TreeNode.Nodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeNodeCollection ^ Nodes { System::Windows::Forms::TreeNodeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1555,6 +1696,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode Parent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As TreeNode" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Windows.Forms.TreeNode" Usage="System.Windows.Forms.TreeNode.Parent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeNode ^ Parent { System::Windows::Forms::TreeNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1594,6 +1738,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode PrevNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode PrevNode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.PrevNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrevNode As TreeNode" />
+      <MemberSignature Language="F#" Value="member this.PrevNode : System.Windows.Forms.TreeNode" Usage="System.Windows.Forms.TreeNode.PrevNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeNode ^ PrevNode { System::Windows::Forms::TreeNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1636,6 +1783,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeNode PrevVisibleNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeNode PrevVisibleNode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.PrevVisibleNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrevVisibleNode As TreeNode" />
+      <MemberSignature Language="F#" Value="member this.PrevVisibleNode : System.Windows.Forms.TreeNode" Usage="System.Windows.Forms.TreeNode.PrevVisibleNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeNode ^ PrevVisibleNode { System::Windows::Forms::TreeNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1677,6 +1827,9 @@
       <MemberSignature Language="C#" Value="public void Remove ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Remove" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove ()" />
+      <MemberSignature Language="F#" Value="member this.Remove : unit -&gt; unit" Usage="treeNode.Remove " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1713,6 +1866,9 @@
       <MemberSignature Language="C#" Value="public int SelectedImageIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedImageIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.SelectedImageIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedImageIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.SelectedImageIndex : int with get, set" Usage="System.Windows.Forms.TreeNode.SelectedImageIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectedImageIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1729,7 +1885,7 @@
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.TreeViewImageIndexConverter))</AttributeName>
@@ -1771,6 +1927,9 @@
       <MemberSignature Language="C#" Value="public string SelectedImageKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectedImageKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.SelectedImageKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedImageKey As String" />
+      <MemberSignature Language="F#" Value="member this.SelectedImageKey : string with get, set" Usage="System.Windows.Forms.TreeNode.SelectedImageKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SelectedImageKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1787,7 +1946,7 @@
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.TreeViewImageKeyConverter))</AttributeName>
@@ -1816,6 +1975,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Serialize (System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Serialize(class System.Runtime.Serialization.SerializationInfo si, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Serialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Serialize (si As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.Serialize : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="treeNode.Serialize (si, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Serialize(System::Runtime::Serialization::SerializationInfo ^ si, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1840,6 +2002,9 @@
       <MemberSignature Language="C#" Value="public int StateImageIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StateImageIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.StateImageIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property StateImageIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.StateImageIndex : int with get, set" Usage="System.Windows.Forms.TreeNode.StateImageIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StateImageIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1856,7 +2021,7 @@
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.NoneExcludedImageIndexConverter))</AttributeName>
@@ -1891,6 +2056,9 @@
       <MemberSignature Language="C#" Value="public string StateImageKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StateImageKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.StateImageKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property StateImageKey As String" />
+      <MemberSignature Language="F#" Value="member this.StateImageKey : string with get, set" Usage="System.Windows.Forms.TreeNode.StateImageKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StateImageKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1907,7 +2075,7 @@
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.Forms.ImageKeyConverter))</AttributeName>
@@ -1941,7 +2109,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo si, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (si As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ si, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1965,6 +2138,9 @@
       <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.TreeNode.Tag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2017,6 +2193,9 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.TreeNode.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2061,6 +2240,9 @@
       <MemberSignature Language="C#" Value="public void Toggle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Toggle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.Toggle" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Toggle ()" />
+      <MemberSignature Language="F#" Value="member this.Toggle : unit -&gt; unit" Usage="treeNode.Toggle " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Toggle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2102,6 +2284,9 @@
       <MemberSignature Language="C#" Value="public string ToolTipText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTipText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.ToolTipText" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipText As String" />
+      <MemberSignature Language="F#" Value="member this.ToolTipText : string with get, set" Usage="System.Windows.Forms.TreeNode.ToolTipText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2145,6 +2330,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TreeNode.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="treeNode.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2165,6 +2353,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.TreeView TreeView { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.TreeView TreeView" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.TreeNode.TreeView" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TreeView As TreeView" />
+      <MemberSignature Language="F#" Value="member this.TreeView : System.Windows.Forms.TreeView" Usage="System.Windows.Forms.TreeNode.TreeView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::TreeView ^ TreeView { System::Windows::Forms::TreeView ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2196,23 +2387,5 @@
         <altmember cref="T:System.Windows.Forms.TreeView" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNode" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Collapse">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Collapses the <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

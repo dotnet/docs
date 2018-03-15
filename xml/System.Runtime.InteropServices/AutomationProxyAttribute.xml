@@ -1,7 +1,10 @@
-<Type Name="AutomationProxyAttribute" FullName="System.Runtime.InteropServices.AutomationProxyAttribute">
+﻿<Type Name="AutomationProxyAttribute" FullName="System.Runtime.InteropServices.AutomationProxyAttribute">
   <TypeSignature Language="C#" Value="public sealed class AutomationProxyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AutomationProxyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.AutomationProxyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AutomationProxyAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type AutomationProxyAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AutomationProxyAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public AutomationProxyAttribute (bool val);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool val) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.AutomationProxyAttribute.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (val As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.AutomationProxyAttribute : bool -&gt; System.Runtime.InteropServices.AutomationProxyAttribute" Usage="new System.Runtime.InteropServices.AutomationProxyAttribute val" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AutomationProxyAttribute(bool val);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -65,6 +71,9 @@
       <MemberSignature Language="C#" Value="public bool Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Value" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.AutomationProxyAttribute.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Value : bool" Usage="System.Runtime.InteropServices.AutomationProxyAttribute.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Value { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ActiveDirectorySchedule" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule">
+﻿<Type Name="ActiveDirectorySchedule" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule">
   <TypeSignature Language="C#" Value="public class ActiveDirectorySchedule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActiveDirectorySchedule extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectorySchedule" />
+  <TypeSignature Language="F#" Value="type ActiveDirectorySchedule = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectorySchedule" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +19,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ActiveDirectorySchedule ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectorySchedule();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -36,6 +51,9 @@
       <MemberSignature Language="C#" Value="public ActiveDirectorySchedule (System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule schedule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule schedule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.#ctor(System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (schedule As ActiveDirectorySchedule)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule : System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule -&gt; System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" Usage="new System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule schedule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActiveDirectorySchedule(System::DirectoryServices::ActiveDirectory::ActiveDirectorySchedule ^ schedule);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -57,6 +75,9 @@
       <MemberSignature Language="C#" Value="public bool[,,] RawSchedule { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool[,,] RawSchedule" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.RawSchedule" />
+      <MemberSignature Language="VB.NET" Value="Public Property RawSchedule As Boolean(,,)" />
+      <MemberSignature Language="F#" Value="member this.RawSchedule : bool[,,] with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.RawSchedule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;bool, 3&gt; ^ RawSchedule { cli::array &lt;bool, 3&gt; ^ get(); void set(cli::array &lt;bool, 3&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -152,6 +173,9 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       <MemberSignature Language="C#" Value="public void ResetSchedule ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetSchedule() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetSchedule ()" />
+      <MemberSignature Language="F#" Value="member this.ResetSchedule : unit -&gt; unit" Usage="activeDirectorySchedule.ResetSchedule " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetSchedule();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -171,6 +195,9 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       <MemberSignature Language="C#" Value="public void SetDailySchedule (System.DirectoryServices.ActiveDirectory.HourOfDay fromHour, System.DirectoryServices.ActiveDirectory.MinuteOfHour fromMinute, System.DirectoryServices.ActiveDirectory.HourOfDay toHour, System.DirectoryServices.ActiveDirectory.MinuteOfHour toMinute);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetDailySchedule(valuetype System.DirectoryServices.ActiveDirectory.HourOfDay fromHour, valuetype System.DirectoryServices.ActiveDirectory.MinuteOfHour fromMinute, valuetype System.DirectoryServices.ActiveDirectory.HourOfDay toHour, valuetype System.DirectoryServices.ActiveDirectory.MinuteOfHour toMinute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.SetDailySchedule(System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour,System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDailySchedule (fromHour As HourOfDay, fromMinute As MinuteOfHour, toHour As HourOfDay, toMinute As MinuteOfHour)" />
+      <MemberSignature Language="F#" Value="member this.SetDailySchedule : System.DirectoryServices.ActiveDirectory.HourOfDay * System.DirectoryServices.ActiveDirectory.MinuteOfHour * System.DirectoryServices.ActiveDirectory.HourOfDay * System.DirectoryServices.ActiveDirectory.MinuteOfHour -&gt; unit" Usage="activeDirectorySchedule.SetDailySchedule (fromHour, fromMinute, toHour, toMinute)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDailySchedule(System::DirectoryServices::ActiveDirectory::HourOfDay fromHour, System::DirectoryServices::ActiveDirectory::MinuteOfHour fromMinute, System::DirectoryServices::ActiveDirectory::HourOfDay toHour, System::DirectoryServices::ActiveDirectory::MinuteOfHour toMinute);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -207,10 +234,23 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
         <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetSchedule">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a range of times to the schedule.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetSchedule">
       <MemberSignature Language="C#" Value="public void SetSchedule (DayOfWeek day, System.DirectoryServices.ActiveDirectory.HourOfDay fromHour, System.DirectoryServices.ActiveDirectory.MinuteOfHour fromMinute, System.DirectoryServices.ActiveDirectory.HourOfDay toHour, System.DirectoryServices.ActiveDirectory.MinuteOfHour toMinute);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSchedule(valuetype System.DayOfWeek day, valuetype System.DirectoryServices.ActiveDirectory.HourOfDay fromHour, valuetype System.DirectoryServices.ActiveDirectory.MinuteOfHour fromMinute, valuetype System.DirectoryServices.ActiveDirectory.HourOfDay toHour, valuetype System.DirectoryServices.ActiveDirectory.MinuteOfHour toMinute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.SetSchedule(System.DayOfWeek,System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour,System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSchedule (day As DayOfWeek, fromHour As HourOfDay, fromMinute As MinuteOfHour, toHour As HourOfDay, toMinute As MinuteOfHour)" />
+      <MemberSignature Language="F#" Value="member this.SetSchedule : DayOfWeek * System.DirectoryServices.ActiveDirectory.HourOfDay * System.DirectoryServices.ActiveDirectory.MinuteOfHour * System.DirectoryServices.ActiveDirectory.HourOfDay * System.DirectoryServices.ActiveDirectory.MinuteOfHour -&gt; unit" Usage="activeDirectorySchedule.SetSchedule (day, fromHour, fromMinute, toHour, toMinute)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSchedule(DayOfWeek day, System::DirectoryServices::ActiveDirectory::HourOfDay fromHour, System::DirectoryServices::ActiveDirectory::MinuteOfHour fromMinute, System::DirectoryServices::ActiveDirectory::HourOfDay toHour, System::DirectoryServices::ActiveDirectory::MinuteOfHour toMinute);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -258,6 +298,9 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
       <MemberSignature Language="C#" Value="public void SetSchedule (DayOfWeek[] days, System.DirectoryServices.ActiveDirectory.HourOfDay fromHour, System.DirectoryServices.ActiveDirectory.MinuteOfHour fromMinute, System.DirectoryServices.ActiveDirectory.HourOfDay toHour, System.DirectoryServices.ActiveDirectory.MinuteOfHour toMinute);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSchedule(valuetype System.DayOfWeek[] days, valuetype System.DirectoryServices.ActiveDirectory.HourOfDay fromHour, valuetype System.DirectoryServices.ActiveDirectory.MinuteOfHour fromMinute, valuetype System.DirectoryServices.ActiveDirectory.HourOfDay toHour, valuetype System.DirectoryServices.ActiveDirectory.MinuteOfHour toMinute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.SetSchedule(System.DayOfWeek[],System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour,System.DirectoryServices.ActiveDirectory.HourOfDay,System.DirectoryServices.ActiveDirectory.MinuteOfHour)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSchedule (days As DayOfWeek(), fromHour As HourOfDay, fromMinute As MinuteOfHour, toHour As HourOfDay, toMinute As MinuteOfHour)" />
+      <MemberSignature Language="F#" Value="member this.SetSchedule : DayOfWeek[] * System.DirectoryServices.ActiveDirectory.HourOfDay * System.DirectoryServices.ActiveDirectory.MinuteOfHour * System.DirectoryServices.ActiveDirectory.HourOfDay * System.DirectoryServices.ActiveDirectory.MinuteOfHour -&gt; unit" Usage="activeDirectorySchedule.SetSchedule (days, fromHour, fromMinute, toHour, toMinute)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSchedule(cli::array &lt;DayOfWeek&gt; ^ days, System::DirectoryServices::ActiveDirectory::HourOfDay fromHour, System::DirectoryServices::ActiveDirectory::MinuteOfHour fromMinute, System::DirectoryServices::ActiveDirectory::HourOfDay toHour, System::DirectoryServices::ActiveDirectory::MinuteOfHour toMinute);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -301,25 +344,5 @@ Boolean isAvailable = scheduleObject.RawSchedule[2, 15, (Int32)50/15];
         <altmember cref="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule.ResetSchedule" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchedule" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetSchedule">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a range of times to the schedule.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

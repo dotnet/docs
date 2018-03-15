@@ -1,7 +1,10 @@
-<Type Name="Consistency" FullName="System.Runtime.ConstrainedExecution.Consistency">
+﻿<Type Name="Consistency" FullName="System.Runtime.ConstrainedExecution.Consistency">
   <TypeSignature Language="C#" Value="public enum Consistency" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed Consistency extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.ConstrainedExecution.Consistency" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Consistency" />
+  <TypeSignature Language="F#" Value="type Consistency = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class Consistency" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="MayCorruptAppDomain" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.ConstrainedExecution.Consistency MayCorruptAppDomain = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Consistency.MayCorruptAppDomain" />
+      <MemberSignature Language="VB.NET" Value="MayCorruptAppDomain" />
+      <MemberSignature Language="F#" Value="MayCorruptAppDomain = 1" Usage="System.Runtime.ConstrainedExecution.Consistency.MayCorruptAppDomain" />
+      <MemberSignature Language="C++ CLI" Value="MayCorruptAppDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.ConstrainedExecution.Consistency</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>In the face of exceptional conditions, the common language runtime (CLR) makes no guarantees regarding state consistency in the current application domain.</summary>
       </Docs>
@@ -68,6 +75,9 @@
       <MemberSignature Language="C#" Value="MayCorruptInstance" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.ConstrainedExecution.Consistency MayCorruptInstance = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Consistency.MayCorruptInstance" />
+      <MemberSignature Language="VB.NET" Value="MayCorruptInstance" />
+      <MemberSignature Language="F#" Value="MayCorruptInstance = 2" Usage="System.Runtime.ConstrainedExecution.Consistency.MayCorruptInstance" />
+      <MemberSignature Language="C++ CLI" Value="MayCorruptInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -85,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.ConstrainedExecution.Consistency</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>In the face of exceptional conditions, the method is guaranteed to limit state corruption to the current instance.</summary>
       </Docs>
@@ -93,6 +104,9 @@
       <MemberSignature Language="C#" Value="MayCorruptProcess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.ConstrainedExecution.Consistency MayCorruptProcess = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Consistency.MayCorruptProcess" />
+      <MemberSignature Language="VB.NET" Value="MayCorruptProcess" />
+      <MemberSignature Language="F#" Value="MayCorruptProcess = 0" Usage="System.Runtime.ConstrainedExecution.Consistency.MayCorruptProcess" />
+      <MemberSignature Language="C++ CLI" Value="MayCorruptProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -110,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.ConstrainedExecution.Consistency</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>In the face of exceptional conditions, the CLR makes no guarantees regarding state consistency; that is, the condition might corrupt the process.</summary>
       </Docs>
@@ -118,6 +133,9 @@
       <MemberSignature Language="C#" Value="WillNotCorruptState" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.ConstrainedExecution.Consistency WillNotCorruptState = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState" />
+      <MemberSignature Language="VB.NET" Value="WillNotCorruptState" />
+      <MemberSignature Language="F#" Value="WillNotCorruptState = 3" Usage="System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState" />
+      <MemberSignature Language="C++ CLI" Value="WillNotCorruptState" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -135,6 +153,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.ConstrainedExecution.Consistency</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>In the face of exceptional conditions, the method is guaranteed not to corrupt state.</summary>
         <remarks>

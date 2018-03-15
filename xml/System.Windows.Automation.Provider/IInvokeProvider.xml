@@ -1,7 +1,10 @@
-<Type Name="IInvokeProvider" FullName="System.Windows.Automation.Provider.IInvokeProvider">
+﻿<Type Name="IInvokeProvider" FullName="System.Windows.Automation.Provider.IInvokeProvider">
   <TypeSignature Language="C#" Value="public interface IInvokeProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInvokeProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Provider.IInvokeProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInvokeProvider" />
+  <TypeSignature Language="F#" Value="type IInvokeProvider = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IInvokeProvider" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationProvider</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,7 +18,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("54fcb24b-e18e-47a2-b4d3-eccbe77599a2")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public void Invoke ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invoke() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Provider.IInvokeProvider.Invoke" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invoke ()" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : unit -&gt; unit" Usage="iInvokeProvider.Invoke " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invoke();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationProvider</AssemblyName>

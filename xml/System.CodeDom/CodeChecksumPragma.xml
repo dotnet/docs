@@ -1,7 +1,10 @@
-<Type Name="CodeChecksumPragma" FullName="System.CodeDom.CodeChecksumPragma">
+﻿<Type Name="CodeChecksumPragma" FullName="System.CodeDom.CodeChecksumPragma">
   <TypeSignature Language="C#" Value="public class CodeChecksumPragma : System.CodeDom.CodeDirective" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeChecksumPragma extends System.CodeDom.CodeDirective" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeChecksumPragma" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeChecksumPragma&#xA;Inherits CodeDirective" />
+  <TypeSignature Language="F#" Value="type CodeChecksumPragma = class&#xA;    inherit CodeDirective" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeChecksumPragma : System::CodeDom::CodeDirective" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -42,10 +45,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeChecksumPragma" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeChecksumPragma ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeChecksumPragma.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeChecksumPragma();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -75,6 +89,9 @@
       <MemberSignature Language="C#" Value="public CodeChecksumPragma (string fileName, Guid checksumAlgorithmId, byte[] checksumData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, valuetype System.Guid checksumAlgorithmId, unsigned int8[] checksumData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeChecksumPragma.#ctor(System.String,System.Guid,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, checksumAlgorithmId As Guid, checksumData As Byte())" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeChecksumPragma : string * Guid * byte[] -&gt; System.CodeDom.CodeChecksumPragma" Usage="new System.CodeDom.CodeChecksumPragma (fileName, checksumAlgorithmId, checksumData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeChecksumPragma(System::String ^ fileName, Guid checksumAlgorithmId, cli::array &lt;System::Byte&gt; ^ checksumData);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -116,6 +133,9 @@
       <MemberSignature Language="C#" Value="public Guid ChecksumAlgorithmId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid ChecksumAlgorithmId" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeChecksumPragma.ChecksumAlgorithmId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChecksumAlgorithmId As Guid" />
+      <MemberSignature Language="F#" Value="member this.ChecksumAlgorithmId : Guid with get, set" Usage="System.CodeDom.CodeChecksumPragma.ChecksumAlgorithmId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid ChecksumAlgorithmId { Guid get(); void set(Guid value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -155,6 +175,9 @@
       <MemberSignature Language="C#" Value="public byte[] ChecksumData { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] ChecksumData" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeChecksumPragma.ChecksumData" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChecksumData As Byte()" />
+      <MemberSignature Language="F#" Value="member this.ChecksumData : byte[] with get, set" Usage="System.CodeDom.CodeChecksumPragma.ChecksumData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ ChecksumData { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -192,6 +215,9 @@
       <MemberSignature Language="C#" Value="public string FileName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeChecksumPragma.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
+      <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="System.CodeDom.CodeChecksumPragma.FileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -225,14 +251,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeChecksumPragma" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

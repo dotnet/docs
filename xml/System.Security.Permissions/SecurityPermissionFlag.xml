@@ -1,7 +1,10 @@
-<Type Name="SecurityPermissionFlag" FullName="System.Security.Permissions.SecurityPermissionFlag">
+﻿<Type Name="SecurityPermissionFlag" FullName="System.Security.Permissions.SecurityPermissionFlag">
   <TypeSignature Language="C#" Value="public enum SecurityPermissionFlag" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SecurityPermissionFlag extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.SecurityPermissionFlag" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SecurityPermissionFlag" />
+  <TypeSignature Language="F#" Value="type SecurityPermissionFlag = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SecurityPermissionFlag" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -58,6 +61,9 @@
       <MemberSignature Language="C#" Value="AllFlags" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag AllFlags = int32(16383)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.AllFlags" />
+      <MemberSignature Language="VB.NET" Value="AllFlags" />
+      <MemberSignature Language="F#" Value="AllFlags = 16383" Usage="System.Security.Permissions.SecurityPermissionFlag.AllFlags" />
+      <MemberSignature Language="C++ CLI" Value="AllFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -75,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>16383</MemberValue>
       <Docs>
         <summary>The unrestricted state of the permission.</summary>
       </Docs>
@@ -83,6 +90,9 @@
       <MemberSignature Language="C#" Value="Assertion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag Assertion = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.Assertion" />
+      <MemberSignature Language="VB.NET" Value="Assertion" />
+      <MemberSignature Language="F#" Value="Assertion = 1" Usage="System.Security.Permissions.SecurityPermissionFlag.Assertion" />
+      <MemberSignature Language="C++ CLI" Value="Assertion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -100,6 +110,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Ability to assert that all this code's callers have the requisite permission for the operation.</summary>
       </Docs>
@@ -108,6 +119,9 @@
       <MemberSignature Language="C#" Value="BindingRedirects" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag BindingRedirects = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.BindingRedirects" />
+      <MemberSignature Language="VB.NET" Value="BindingRedirects" />
+      <MemberSignature Language="F#" Value="BindingRedirects = 8192" Usage="System.Security.Permissions.SecurityPermissionFlag.BindingRedirects" />
+      <MemberSignature Language="C++ CLI" Value="BindingRedirects" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -125,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>Permission to perform explicit binding redirection in the application configuration file. This includes redirection of .NET Framework assemblies that have been unified as well as other assemblies found outside the .NET Framework.</summary>
       </Docs>
@@ -133,6 +148,9 @@
       <MemberSignature Language="C#" Value="ControlAppDomain" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag ControlAppDomain = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlAppDomain" />
+      <MemberSignature Language="VB.NET" Value="ControlAppDomain" />
+      <MemberSignature Language="F#" Value="ControlAppDomain = 1024" Usage="System.Security.Permissions.SecurityPermissionFlag.ControlAppDomain" />
+      <MemberSignature Language="C++ CLI" Value="ControlAppDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -150,6 +168,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>Ability to create and manipulate an <see cref="T:System.AppDomain" />.</summary>
       </Docs>
@@ -158,6 +177,9 @@
       <MemberSignature Language="C#" Value="ControlDomainPolicy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag ControlDomainPolicy = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlDomainPolicy" />
+      <MemberSignature Language="VB.NET" Value="ControlDomainPolicy" />
+      <MemberSignature Language="F#" Value="ControlDomainPolicy = 256" Usage="System.Security.Permissions.SecurityPermissionFlag.ControlDomainPolicy" />
+      <MemberSignature Language="C++ CLI" Value="ControlDomainPolicy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -175,6 +197,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Ability to specify domain policy.</summary>
       </Docs>
@@ -183,6 +206,9 @@
       <MemberSignature Language="C#" Value="ControlEvidence" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag ControlEvidence = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />
+      <MemberSignature Language="VB.NET" Value="ControlEvidence" />
+      <MemberSignature Language="F#" Value="ControlEvidence = 32" Usage="System.Security.Permissions.SecurityPermissionFlag.ControlEvidence" />
+      <MemberSignature Language="C++ CLI" Value="ControlEvidence" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -200,6 +226,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Ability to provide evidence, including the ability to alter the evidence provided by the common language runtime.</summary>
         <remarks>
@@ -216,6 +243,9 @@
       <MemberSignature Language="C#" Value="ControlPolicy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag ControlPolicy = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" />
+      <MemberSignature Language="VB.NET" Value="ControlPolicy" />
+      <MemberSignature Language="F#" Value="ControlPolicy = 64" Usage="System.Security.Permissions.SecurityPermissionFlag.ControlPolicy" />
+      <MemberSignature Language="C++ CLI" Value="ControlPolicy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -233,6 +263,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Ability to view and modify policy.</summary>
         <remarks>
@@ -249,6 +280,9 @@
       <MemberSignature Language="C#" Value="ControlPrincipal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag ControlPrincipal = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />
+      <MemberSignature Language="VB.NET" Value="ControlPrincipal" />
+      <MemberSignature Language="F#" Value="ControlPrincipal = 512" Usage="System.Security.Permissions.SecurityPermissionFlag.ControlPrincipal" />
+      <MemberSignature Language="C++ CLI" Value="ControlPrincipal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -266,6 +300,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>Ability to manipulate the principal object.</summary>
       </Docs>
@@ -274,6 +309,9 @@
       <MemberSignature Language="C#" Value="ControlThread" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag ControlThread = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.ControlThread" />
+      <MemberSignature Language="VB.NET" Value="ControlThread" />
+      <MemberSignature Language="F#" Value="ControlThread = 16" Usage="System.Security.Permissions.SecurityPermissionFlag.ControlThread" />
+      <MemberSignature Language="C++ CLI" Value="ControlThread" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -291,6 +329,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Ability to use certain advanced operations on threads.</summary>
       </Docs>
@@ -299,6 +338,9 @@
       <MemberSignature Language="C#" Value="Execution" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag Execution = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.Execution" />
+      <MemberSignature Language="VB.NET" Value="Execution" />
+      <MemberSignature Language="F#" Value="Execution = 8" Usage="System.Security.Permissions.SecurityPermissionFlag.Execution" />
+      <MemberSignature Language="C++ CLI" Value="Execution" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -316,6 +358,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Permission for the code to run. Without this permission, managed code will not be executed.</summary>
         <remarks>
@@ -332,6 +375,9 @@
       <MemberSignature Language="C#" Value="Infrastructure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag Infrastructure = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" />
+      <MemberSignature Language="VB.NET" Value="Infrastructure" />
+      <MemberSignature Language="F#" Value="Infrastructure = 4096" Usage="System.Security.Permissions.SecurityPermissionFlag.Infrastructure" />
+      <MemberSignature Language="C++ CLI" Value="Infrastructure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -349,6 +395,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>Permission to plug code into the common language runtime infrastructure, such as adding Remoting Context Sinks, Envoy Sinks and Dynamic Sinks.</summary>
       </Docs>
@@ -357,6 +404,9 @@
       <MemberSignature Language="C#" Value="NoFlags" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag NoFlags = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.NoFlags" />
+      <MemberSignature Language="VB.NET" Value="NoFlags" />
+      <MemberSignature Language="F#" Value="NoFlags = 0" Usage="System.Security.Permissions.SecurityPermissionFlag.NoFlags" />
+      <MemberSignature Language="C++ CLI" Value="NoFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -374,6 +424,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No security access.</summary>
       </Docs>
@@ -382,6 +433,9 @@
       <MemberSignature Language="C#" Value="RemotingConfiguration" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag RemotingConfiguration = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" />
+      <MemberSignature Language="VB.NET" Value="RemotingConfiguration" />
+      <MemberSignature Language="F#" Value="RemotingConfiguration = 2048" Usage="System.Security.Permissions.SecurityPermissionFlag.RemotingConfiguration" />
+      <MemberSignature Language="C++ CLI" Value="RemotingConfiguration" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -399,6 +453,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>Permission to configure Remoting types and channels.</summary>
       </Docs>
@@ -407,6 +462,9 @@
       <MemberSignature Language="C#" Value="SerializationFormatter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag SerializationFormatter = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />
+      <MemberSignature Language="VB.NET" Value="SerializationFormatter" />
+      <MemberSignature Language="F#" Value="SerializationFormatter = 128" Usage="System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />
+      <MemberSignature Language="C++ CLI" Value="SerializationFormatter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -424,6 +482,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>Ability to provide serialization services. Used by serialization formatters.</summary>
       </Docs>
@@ -432,6 +491,9 @@
       <MemberSignature Language="C#" Value="SkipVerification" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag SkipVerification = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.SkipVerification" />
+      <MemberSignature Language="VB.NET" Value="SkipVerification" />
+      <MemberSignature Language="F#" Value="SkipVerification = 4" Usage="System.Security.Permissions.SecurityPermissionFlag.SkipVerification" />
+      <MemberSignature Language="C++ CLI" Value="SkipVerification" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -449,6 +511,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Ability to skip verification of code in this assembly. Code that is unverifiable can be run if this permission is granted.</summary>
         <remarks>
@@ -467,6 +530,9 @@
       <MemberSignature Language="C#" Value="UnmanagedCode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.SecurityPermissionFlag UnmanagedCode = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />
+      <MemberSignature Language="VB.NET" Value="UnmanagedCode" />
+      <MemberSignature Language="F#" Value="UnmanagedCode = 2" Usage="System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />
+      <MemberSignature Language="C++ CLI" Value="UnmanagedCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -484,6 +550,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.SecurityPermissionFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Ability to call unmanaged code.</summary>
         <remarks>

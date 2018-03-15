@@ -1,7 +1,10 @@
-<Type Name="ValidationErrorInfo" FullName="System.Activities.Presentation.Validation.ValidationErrorInfo">
+﻿<Type Name="ValidationErrorInfo" FullName="System.Activities.Presentation.Validation.ValidationErrorInfo">
   <TypeSignature Language="C#" Value="public class ValidationErrorInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ValidationErrorInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Validation.ValidationErrorInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class ValidationErrorInfo" />
+  <TypeSignature Language="F#" Value="type ValidationErrorInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ValidationErrorInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,10 +22,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Validation.ValidationErrorInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ValidationErrorInfo (System.Activities.Validation.ValidationError validationError);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Validation.ValidationError validationError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Validation.ValidationErrorInfo.#ctor(System.Activities.Validation.ValidationError)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Validation.ValidationErrorInfo : System.Activities.Validation.ValidationError -&gt; System.Activities.Presentation.Validation.ValidationErrorInfo" Usage="new System.Activities.Presentation.Validation.ValidationErrorInfo validationError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationErrorInfo(System::Activities::Validation::ValidationError ^ validationError);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -41,6 +55,9 @@
       <MemberSignature Language="C#" Value="public ValidationErrorInfo (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Validation.ValidationErrorInfo.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Validation.ValidationErrorInfo : string -&gt; System.Activities.Presentation.Validation.ValidationErrorInfo" Usage="new System.Activities.Presentation.Validation.ValidationErrorInfo message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationErrorInfo(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -59,6 +76,9 @@
       <MemberSignature Language="C#" Value="public string FileName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Validation.ValidationErrorInfo.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FileName As String" />
+      <MemberSignature Language="F#" Value="member this.FileName : string with get, set" Usage="System.Activities.Presentation.Validation.ValidationErrorInfo.FileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -77,6 +97,9 @@
       <MemberSignature Language="C#" Value="public string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Validation.ValidationErrorInfo.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.Activities.Presentation.Validation.ValidationErrorInfo.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -95,6 +118,9 @@
       <MemberSignature Language="C#" Value="public bool IsWarning { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsWarning" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Validation.ValidationErrorInfo.IsWarning" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWarning As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsWarning : bool" Usage="System.Activities.Presentation.Validation.ValidationErrorInfo.IsWarning" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWarning { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -114,6 +140,9 @@
       <MemberSignature Language="C#" Value="public string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Validation.ValidationErrorInfo.Message" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Activities.Presentation.Validation.ValidationErrorInfo.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -132,6 +161,9 @@
       <MemberSignature Language="C#" Value="public string PropertyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Validation.ValidationErrorInfo.PropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.Activities.Presentation.Validation.ValidationErrorInfo.PropertyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -150,6 +182,9 @@
       <MemberSignature Language="C#" Value="public Guid SourceReferenceId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid SourceReferenceId" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Validation.ValidationErrorInfo.SourceReferenceId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceReferenceId As Guid" />
+      <MemberSignature Language="F#" Value="member this.SourceReferenceId : Guid with get, set" Usage="System.Activities.Presentation.Validation.ValidationErrorInfo.SourceReferenceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid SourceReferenceId { Guid get(); void set(Guid value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -164,14 +199,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Presentation.Validation.ValidationErrorInfo" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

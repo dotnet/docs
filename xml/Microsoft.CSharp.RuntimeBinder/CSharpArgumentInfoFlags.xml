@@ -1,7 +1,10 @@
-<Type Name="CSharpArgumentInfoFlags" FullName="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags">
+﻿<Type Name="CSharpArgumentInfoFlags" FullName="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags">
   <TypeSignature Language="C#" Value="public enum CSharpArgumentInfoFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CSharpArgumentInfoFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CSharpArgumentInfoFlags" />
+  <TypeSignature Language="F#" Value="type CSharpArgumentInfoFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CSharpArgumentInfoFlags" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.CSharp</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Constant" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags Constant = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags.Constant" />
+      <MemberSignature Language="VB.NET" Value="Constant" />
+      <MemberSignature Language="F#" Value="Constant = 2" Usage="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags.Constant" />
+      <MemberSignature Language="C++ CLI" Value="Constant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -34,6 +40,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The argument is a constant.</summary>
         <forInternalUseOnly />
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="IsOut" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags IsOut = int32(16)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags.IsOut" />
+      <MemberSignature Language="VB.NET" Value="IsOut" />
+      <MemberSignature Language="F#" Value="IsOut = 16" Usage="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags.IsOut" />
+      <MemberSignature Language="C++ CLI" Value="IsOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The argument is passed to an out parameter.</summary>
         <forInternalUseOnly />
@@ -61,6 +72,9 @@
       <MemberSignature Language="C#" Value="IsRef" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags IsRef = int32(8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags.IsRef" />
+      <MemberSignature Language="VB.NET" Value="IsRef" />
+      <MemberSignature Language="F#" Value="IsRef = 8" Usage="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags.IsRef" />
+      <MemberSignature Language="C++ CLI" Value="IsRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -70,6 +84,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The argument is passed to a ref parameter.</summary>
         <forInternalUseOnly />
@@ -79,6 +94,9 @@
       <MemberSignature Language="C#" Value="IsStaticType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags IsStaticType = int32(32)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags.IsStaticType" />
+      <MemberSignature Language="VB.NET" Value="IsStaticType" />
+      <MemberSignature Language="F#" Value="IsStaticType = 32" Usage="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags.IsStaticType" />
+      <MemberSignature Language="C++ CLI" Value="IsStaticType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -88,6 +106,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The argument is a <see cref="T:System.Type" /> indicating an actual type name used in source. Used only for target objects in static calls.</summary>
         <forInternalUseOnly />
@@ -97,6 +116,9 @@
       <MemberSignature Language="C#" Value="NamedArgument" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags NamedArgument = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags.NamedArgument" />
+      <MemberSignature Language="VB.NET" Value="NamedArgument" />
+      <MemberSignature Language="F#" Value="NamedArgument = 4" Usage="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags.NamedArgument" />
+      <MemberSignature Language="C++ CLI" Value="NamedArgument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -106,6 +128,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The argument is a named argument.</summary>
         <forInternalUseOnly />
@@ -115,6 +138,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -124,6 +150,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No additional information to represent.</summary>
         <forInternalUseOnly />
@@ -133,6 +160,9 @@
       <MemberSignature Language="C#" Value="UseCompileTimeType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags UseCompileTimeType = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags.UseCompileTimeType" />
+      <MemberSignature Language="VB.NET" Value="UseCompileTimeType" />
+      <MemberSignature Language="F#" Value="UseCompileTimeType = 1" Usage="Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags.UseCompileTimeType" />
+      <MemberSignature Language="C++ CLI" Value="UseCompileTimeType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.CSharp</AssemblyName>
@@ -142,6 +172,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.CSharp.RuntimeBinder.CSharpArgumentInfoFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The argument's compile-time type should be considered during binding.</summary>
         <forInternalUseOnly />

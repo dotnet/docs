@@ -1,7 +1,10 @@
-<Type Name="ColumnWidthChangedEventHandler" FullName="System.Windows.Forms.ColumnWidthChangedEventHandler">
+﻿<Type Name="ColumnWidthChangedEventHandler" FullName="System.Windows.Forms.ColumnWidthChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ColumnWidthChangedEventHandler(object sender, ColumnWidthChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColumnWidthChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnWidthChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ColumnWidthChangedEventHandler(sender As Object, e As ColumnWidthChangedEventArgs)" />
+  <TypeSignature Language="F#" Value="type ColumnWidthChangedEventHandler = delegate of obj * ColumnWidthChangedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ColumnWidthChangedEventHandler(System::Object ^ sender, ColumnWidthChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

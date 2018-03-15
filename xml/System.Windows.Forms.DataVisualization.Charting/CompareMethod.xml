@@ -1,7 +1,10 @@
-<Type Name="CompareMethod" FullName="System.Windows.Forms.DataVisualization.Charting.CompareMethod">
+﻿<Type Name="CompareMethod" FullName="System.Windows.Forms.DataVisualization.Charting.CompareMethod">
   <TypeSignature Language="C#" Value="public enum CompareMethod" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompareMethod extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.CompareMethod" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CompareMethod" />
+  <TypeSignature Language="F#" Value="type CompareMethod = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CompareMethod" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="EqualTo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.CompareMethod EqualTo = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.EqualTo" />
+      <MemberSignature Language="VB.NET" Value="EqualTo" />
+      <MemberSignature Language="F#" Value="EqualTo = 2" Usage="System.Windows.Forms.DataVisualization.Charting.CompareMethod.EqualTo" />
+      <MemberSignature Language="C++ CLI" Value="EqualTo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -36,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.CompareMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>If the data point value is equal to the compared value, the point is filtered.</summary>
       </Docs>
@@ -44,6 +51,9 @@
       <MemberSignature Language="C#" Value="LessThan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.CompareMethod LessThan = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.LessThan" />
+      <MemberSignature Language="VB.NET" Value="LessThan" />
+      <MemberSignature Language="F#" Value="LessThan = 1" Usage="System.Windows.Forms.DataVisualization.Charting.CompareMethod.LessThan" />
+      <MemberSignature Language="C++ CLI" Value="LessThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.CompareMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>If the data point value is less than the compared value, the point is filtered.</summary>
       </Docs>
@@ -60,6 +71,9 @@
       <MemberSignature Language="C#" Value="LessThanOrEqualTo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.CompareMethod LessThanOrEqualTo = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.LessThanOrEqualTo" />
+      <MemberSignature Language="VB.NET" Value="LessThanOrEqualTo" />
+      <MemberSignature Language="F#" Value="LessThanOrEqualTo = 4" Usage="System.Windows.Forms.DataVisualization.Charting.CompareMethod.LessThanOrEqualTo" />
+      <MemberSignature Language="C++ CLI" Value="LessThanOrEqualTo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -68,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.CompareMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>If the data point value is less than or equal to the compared value, the point is filtered.</summary>
       </Docs>
@@ -76,6 +91,9 @@
       <MemberSignature Language="C#" Value="MoreThan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.CompareMethod MoreThan = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.MoreThan" />
+      <MemberSignature Language="VB.NET" Value="MoreThan" />
+      <MemberSignature Language="F#" Value="MoreThan = 0" Usage="System.Windows.Forms.DataVisualization.Charting.CompareMethod.MoreThan" />
+      <MemberSignature Language="C++ CLI" Value="MoreThan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -84,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.CompareMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>If the data point value is more than the compared value, the point is filtered.</summary>
       </Docs>
@@ -92,6 +111,9 @@
       <MemberSignature Language="C#" Value="MoreThanOrEqualTo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.CompareMethod MoreThanOrEqualTo = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.MoreThanOrEqualTo" />
+      <MemberSignature Language="VB.NET" Value="MoreThanOrEqualTo" />
+      <MemberSignature Language="F#" Value="MoreThanOrEqualTo = 3" Usage="System.Windows.Forms.DataVisualization.Charting.CompareMethod.MoreThanOrEqualTo" />
+      <MemberSignature Language="C++ CLI" Value="MoreThanOrEqualTo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -100,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.CompareMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>If the data point value more than or equal to the compared value, the point is filtered.</summary>
       </Docs>
@@ -108,6 +131,9 @@
       <MemberSignature Language="C#" Value="NotEqualTo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.CompareMethod NotEqualTo = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.CompareMethod.NotEqualTo" />
+      <MemberSignature Language="VB.NET" Value="NotEqualTo" />
+      <MemberSignature Language="F#" Value="NotEqualTo = 5" Usage="System.Windows.Forms.DataVisualization.Charting.CompareMethod.NotEqualTo" />
+      <MemberSignature Language="C++ CLI" Value="NotEqualTo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -116,6 +142,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.CompareMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>If the data point value is not equal to the compared value, the point is filtered.</summary>
       </Docs>

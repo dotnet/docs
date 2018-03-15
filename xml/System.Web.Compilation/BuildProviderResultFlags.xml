@@ -1,7 +1,10 @@
-<Type Name="BuildProviderResultFlags" FullName="System.Web.Compilation.BuildProviderResultFlags">
+﻿<Type Name="BuildProviderResultFlags" FullName="System.Web.Compilation.BuildProviderResultFlags">
   <TypeSignature Language="C#" Value="public enum BuildProviderResultFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildProviderResultFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.BuildProviderResultFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BuildProviderResultFlags" />
+  <TypeSignature Language="F#" Value="type BuildProviderResultFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class BuildProviderResultFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Compilation.BuildProviderResultFlags Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.BuildProviderResultFlags.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Web.Compilation.BuildProviderResultFlags.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Compilation.BuildProviderResultFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The default value; no special action is required after compilation.</summary>
       </Docs>
@@ -49,6 +56,9 @@
       <MemberSignature Language="C#" Value="ShutdownAppDomainOnChange" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Compilation.BuildProviderResultFlags ShutdownAppDomainOnChange = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Compilation.BuildProviderResultFlags.ShutdownAppDomainOnChange" />
+      <MemberSignature Language="VB.NET" Value="ShutdownAppDomainOnChange" />
+      <MemberSignature Language="F#" Value="ShutdownAppDomainOnChange = 1" Usage="System.Web.Compilation.BuildProviderResultFlags.ShutdownAppDomainOnChange" />
+      <MemberSignature Language="C++ CLI" Value="ShutdownAppDomainOnChange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Compilation.BuildProviderResultFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The compilation of the virtual path requires the containing <see cref="T:System.AppDomain" /> to be unloaded and restarted. This is only used in advanced compilation scenarios; typically, you should use the <see cref="F:System.Web.Compilation.BuildProviderResultFlags.Default" /> value.</summary>
       </Docs>

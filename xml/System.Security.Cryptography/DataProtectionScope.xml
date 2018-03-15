@@ -1,7 +1,10 @@
-<Type Name="DataProtectionScope" FullName="System.Security.Cryptography.DataProtectionScope">
+﻿<Type Name="DataProtectionScope" FullName="System.Security.Cryptography.DataProtectionScope">
   <TypeSignature Language="C#" Value="public enum DataProtectionScope" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataProtectionScope extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DataProtectionScope" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataProtectionScope" />
+  <TypeSignature Language="F#" Value="type DataProtectionScope = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataProtectionScope" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="CurrentUser" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.DataProtectionScope CurrentUser = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.DataProtectionScope.CurrentUser" />
+      <MemberSignature Language="VB.NET" Value="CurrentUser" />
+      <MemberSignature Language="F#" Value="CurrentUser = 0" Usage="System.Security.Cryptography.DataProtectionScope.CurrentUser" />
+      <MemberSignature Language="C++ CLI" Value="CurrentUser" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>
@@ -56,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.DataProtectionScope</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The protected data is associated with the current user. Only threads running under the current user context can unprotect the data.</summary>
       </Docs>
@@ -64,6 +71,9 @@
       <MemberSignature Language="C#" Value="LocalMachine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.DataProtectionScope LocalMachine = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.DataProtectionScope.LocalMachine" />
+      <MemberSignature Language="VB.NET" Value="LocalMachine" />
+      <MemberSignature Language="F#" Value="LocalMachine = 1" Usage="System.Security.Cryptography.DataProtectionScope.LocalMachine" />
+      <MemberSignature Language="C++ CLI" Value="LocalMachine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>
@@ -78,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.DataProtectionScope</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The protected data is associated with the machine context. Any process running on the computer can unprotect data. This enumeration value is usually used in server-specific applications that run on a server where untrusted users are not allowed access.</summary>
       </Docs>

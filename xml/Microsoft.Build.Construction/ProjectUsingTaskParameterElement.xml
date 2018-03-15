@@ -1,7 +1,10 @@
-<Type Name="ProjectUsingTaskParameterElement" FullName="Microsoft.Build.Construction.ProjectUsingTaskParameterElement">
+﻿<Type Name="ProjectUsingTaskParameterElement" FullName="Microsoft.Build.Construction.ProjectUsingTaskParameterElement">
   <TypeSignature Language="C#" Value="public class ProjectUsingTaskParameterElement : Microsoft.Build.Construction.ProjectElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProjectUsingTaskParameterElement extends Microsoft.Build.Construction.ProjectElement" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.ProjectUsingTaskParameterElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProjectUsingTaskParameterElement&#xA;Inherits ProjectElement" />
+  <TypeSignature Language="F#" Value="type ProjectUsingTaskParameterElement = class&#xA;    inherit ProjectElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProjectUsingTaskParameterElement : Microsoft::Build::Construction::ProjectElement" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="public override string Condition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Condition" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectUsingTaskParameterElement.Condition" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Condition As String" />
+      <MemberSignature Language="F#" Value="member this.Condition : string with get, set" Usage="Microsoft.Build.Construction.ProjectUsingTaskParameterElement.Condition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Condition { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -42,6 +48,9 @@
       <MemberSignature Language="C#" Value="public override Microsoft.Build.Construction.ElementLocation ConditionLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation ConditionLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectUsingTaskParameterElement.ConditionLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ConditionLocation As ElementLocation" />
+      <MemberSignature Language="F#" Value="member this.ConditionLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectUsingTaskParameterElement.ConditionLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Microsoft::Build::Construction::ElementLocation ^ ConditionLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -60,6 +69,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectUsingTaskParameterElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Build.Construction.ProjectUsingTaskParameterElement.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -83,6 +95,9 @@
       <MemberSignature Language="C#" Value="public string Output { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Output" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectUsingTaskParameterElement.Output" />
+      <MemberSignature Language="VB.NET" Value="Public Property Output As String" />
+      <MemberSignature Language="F#" Value="member this.Output : string with get, set" Usage="Microsoft.Build.Construction.ProjectUsingTaskParameterElement.Output" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Output { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -108,6 +123,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation OutputLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation OutputLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectUsingTaskParameterElement.OutputLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputLocation As ElementLocation" />
+      <MemberSignature Language="F#" Value="member this.OutputLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectUsingTaskParameterElement.OutputLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ OutputLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -126,6 +144,9 @@
       <MemberSignature Language="C#" Value="public string ParameterType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ParameterType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectUsingTaskParameterElement.ParameterType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParameterType As String" />
+      <MemberSignature Language="F#" Value="member this.ParameterType : string with get, set" Usage="Microsoft.Build.Construction.ProjectUsingTaskParameterElement.ParameterType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParameterType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -151,6 +172,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation ParameterTypeLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation ParameterTypeLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectUsingTaskParameterElement.ParameterTypeLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterTypeLocation As ElementLocation" />
+      <MemberSignature Language="F#" Value="member this.ParameterTypeLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectUsingTaskParameterElement.ParameterTypeLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ ParameterTypeLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -169,6 +193,9 @@
       <MemberSignature Language="C#" Value="public string Required { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Required" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectUsingTaskParameterElement.Required" />
+      <MemberSignature Language="VB.NET" Value="Public Property Required As String" />
+      <MemberSignature Language="F#" Value="member this.Required : string with get, set" Usage="Microsoft.Build.Construction.ProjectUsingTaskParameterElement.Required" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Required { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -194,6 +221,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation RequiredLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation RequiredLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectUsingTaskParameterElement.RequiredLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequiredLocation As ElementLocation" />
+      <MemberSignature Language="F#" Value="member this.RequiredLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectUsingTaskParameterElement.RequiredLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ RequiredLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

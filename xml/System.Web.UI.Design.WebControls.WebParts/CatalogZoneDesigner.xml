@@ -1,7 +1,10 @@
-<Type Name="CatalogZoneDesigner" FullName="System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner">
+﻿<Type Name="CatalogZoneDesigner" FullName="System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner">
   <TypeSignature Language="C#" Value="public class CatalogZoneDesigner : System.Web.UI.Design.WebControls.WebParts.ToolZoneDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CatalogZoneDesigner extends System.Web.UI.Design.WebControls.WebParts.ToolZoneDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class CatalogZoneDesigner&#xA;Inherits ToolZoneDesigner" />
+  <TypeSignature Language="F#" Value="type CatalogZoneDesigner = class&#xA;    inherit ToolZoneDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CatalogZoneDesigner : System::Web::UI::Design::WebControls::WebParts::ToolZoneDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,8 @@
       <MemberSignature Language="C#" Value="public CatalogZoneDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CatalogZoneDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -48,6 +53,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.DesignerAutoFormatCollection AutoFormats" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.AutoFormats" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AutoFormats As DesignerAutoFormatCollection" />
+      <MemberSignature Language="F#" Value="member this.AutoFormats : System.Web.UI.Design.DesignerAutoFormatCollection" Usage="System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.AutoFormats" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::DesignerAutoFormatCollection ^ AutoFormats { System::Web::UI::Design::DesignerAutoFormatCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -69,10 +77,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDesignTimeHtml">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the markup that is used to represent the control at design time.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDesignTimeHtml">
       <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.GetDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="catalogZoneDesigner.GetDesignTimeHtml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -95,6 +115,9 @@
       <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml (System.Web.UI.Design.DesignerRegionCollection regions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml(class System.Web.UI.Design.DesignerRegionCollection regions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml (regions As DesignerRegionCollection) As String" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : System.Web.UI.Design.DesignerRegionCollection -&gt; string" Usage="catalogZoneDesigner.GetDesignTimeHtml regions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml(System::Web::UI::Design::DesignerRegionCollection ^ regions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -120,6 +143,9 @@
       <MemberSignature Language="C#" Value="public override string GetEditableDesignerRegionContent (System.Web.UI.Design.EditableDesignerRegion region);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetEditableDesignerRegionContent(class System.Web.UI.Design.EditableDesignerRegion region) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.GetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEditableDesignerRegionContent (region As EditableDesignerRegion) As String" />
+      <MemberSignature Language="F#" Value="override this.GetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion -&gt; string" Usage="catalogZoneDesigner.GetEditableDesignerRegionContent region" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetEditableDesignerRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -142,6 +168,9 @@
       <MemberSignature Language="C#" Value="protected override string GetEmptyDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetEmptyDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.GetEmptyDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetEmptyDesignTimeHtml () As String" />
+      <MemberSignature Language="F#" Value="override this.GetEmptyDesignTimeHtml : unit -&gt; string" Usage="catalogZoneDesigner.GetEmptyDesignTimeHtml " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetEmptyDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -161,6 +190,9 @@
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="catalogZoneDesigner.Initialize component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -182,6 +214,9 @@
       <MemberSignature Language="C#" Value="public override void SetEditableDesignerRegionContent (System.Web.UI.Design.EditableDesignerRegion region, string content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetEditableDesignerRegionContent(class System.Web.UI.Design.EditableDesignerRegion region, string content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.SetEditableDesignerRegionContent(System.Web.UI.Design.EditableDesignerRegion,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetEditableDesignerRegionContent (region As EditableDesignerRegion, content As String)" />
+      <MemberSignature Language="F#" Value="override this.SetEditableDesignerRegionContent : System.Web.UI.Design.EditableDesignerRegion * string -&gt; unit" Usage="catalogZoneDesigner.SetEditableDesignerRegionContent (region, content)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetEditableDesignerRegionContent(System::Web::UI::Design::EditableDesignerRegion ^ region, System::String ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -205,6 +240,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Design.TemplateGroupCollection TemplateGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.TemplateGroupCollection TemplateGroups" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.TemplateGroups" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property TemplateGroups As TemplateGroupCollection" />
+      <MemberSignature Language="F#" Value="member this.TemplateGroups : System.Web.UI.Design.TemplateGroupCollection" Usage="System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.TemplateGroups" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::TemplateGroupCollection ^ TemplateGroups { System::Web::UI::Design::TemplateGroupCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -226,14 +264,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetDesignTimeHtml">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the markup that is used to represent the control at design time.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

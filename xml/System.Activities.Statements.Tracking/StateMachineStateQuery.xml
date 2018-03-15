@@ -1,7 +1,10 @@
-<Type Name="StateMachineStateQuery" FullName="System.Activities.Statements.Tracking.StateMachineStateQuery">
+﻿<Type Name="StateMachineStateQuery" FullName="System.Activities.Statements.Tracking.StateMachineStateQuery">
   <TypeSignature Language="C#" Value="public sealed class StateMachineStateQuery : System.Activities.Tracking.CustomTrackingQuery" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StateMachineStateQuery extends System.Activities.Tracking.CustomTrackingQuery" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Tracking.StateMachineStateQuery" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StateMachineStateQuery&#xA;Inherits CustomTrackingQuery" />
+  <TypeSignature Language="F#" Value="type StateMachineStateQuery = class&#xA;    inherit CustomTrackingQuery" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StateMachineStateQuery sealed : System::Activities::Tracking::CustomTrackingQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public StateMachineStateQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Tracking.StateMachineStateQuery.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StateMachineStateQuery();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Tracking.StateMachineStateQuery.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Activities.Statements.Tracking.StateMachineStateQuery.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

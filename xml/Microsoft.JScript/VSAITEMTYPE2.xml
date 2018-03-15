@@ -1,7 +1,10 @@
-<Type Name="VSAITEMTYPE2" FullName="Microsoft.JScript.VSAITEMTYPE2">
+﻿<Type Name="VSAITEMTYPE2" FullName="Microsoft.JScript.VSAITEMTYPE2">
   <TypeSignature Language="C#" Value="public enum VSAITEMTYPE2" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VSAITEMTYPE2 extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.VSAITEMTYPE2" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VSAITEMTYPE2" />
+  <TypeSignature Language="F#" Value="type VSAITEMTYPE2 = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class VSAITEMTYPE2" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="EXPRESSION" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 EXPRESSION = int32(22)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.EXPRESSION" />
+      <MemberSignature Language="VB.NET" Value="EXPRESSION" />
+      <MemberSignature Language="F#" Value="EXPRESSION = 22" Usage="Microsoft.JScript.VSAITEMTYPE2.EXPRESSION" />
+      <MemberSignature Language="C++ CLI" Value="EXPRESSION" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -38,6 +44,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>Specifies an expression. This applies to an <see cref="T:Microsoft.JScript.IVsaScriptCodeItem" />.</summary>
         <forInternalUseOnly />
@@ -47,6 +54,9 @@
       <MemberSignature Language="C#" Value="HOSTOBJECT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 HOSTOBJECT = int32(16)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.HOSTOBJECT" />
+      <MemberSignature Language="VB.NET" Value="HOSTOBJECT" />
+      <MemberSignature Language="F#" Value="HOSTOBJECT = 16" Usage="Microsoft.JScript.VSAITEMTYPE2.HOSTOBJECT" />
+      <MemberSignature Language="C++ CLI" Value="HOSTOBJECT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -55,6 +65,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Specifies a host object.</summary>
         <forInternalUseOnly />
@@ -64,6 +75,9 @@
       <MemberSignature Language="C#" Value="HOSTSCOPE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 HOSTSCOPE = int32(17)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.HOSTSCOPE" />
+      <MemberSignature Language="VB.NET" Value="HOSTSCOPE" />
+      <MemberSignature Language="F#" Value="HOSTSCOPE = 17" Usage="Microsoft.JScript.VSAITEMTYPE2.HOSTSCOPE" />
+      <MemberSignature Language="C++ CLI" Value="HOSTSCOPE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -72,6 +86,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>Specifies the scope.</summary>
         <forInternalUseOnly />
@@ -81,6 +96,9 @@
       <MemberSignature Language="C#" Value="HOSTSCOPEANDOBJECT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 HOSTSCOPEANDOBJECT = int32(18)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.HOSTSCOPEANDOBJECT" />
+      <MemberSignature Language="VB.NET" Value="HOSTSCOPEANDOBJECT" />
+      <MemberSignature Language="F#" Value="HOSTSCOPEANDOBJECT = 18" Usage="Microsoft.JScript.VSAITEMTYPE2.HOSTSCOPEANDOBJECT" />
+      <MemberSignature Language="C++ CLI" Value="HOSTSCOPEANDOBJECT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -89,6 +107,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>Specifies both the scope and the object.</summary>
         <forInternalUseOnly />
@@ -98,6 +117,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.JScript.VSAITEMTYPE2.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -106,6 +128,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies none. This is the default value.</summary>
         <forInternalUseOnly />
@@ -115,6 +138,9 @@
       <MemberSignature Language="C#" Value="SCRIPTBLOCK" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 SCRIPTBLOCK = int32(20)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.SCRIPTBLOCK" />
+      <MemberSignature Language="VB.NET" Value="SCRIPTBLOCK" />
+      <MemberSignature Language="F#" Value="SCRIPTBLOCK = 20" Usage="Microsoft.JScript.VSAITEMTYPE2.SCRIPTBLOCK" />
+      <MemberSignature Language="C++ CLI" Value="SCRIPTBLOCK" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -123,6 +149,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>Specifies a script block. This applies to an <see cref="T:Microsoft.JScript.IVsaScriptCodeItem" />.</summary>
         <forInternalUseOnly />
@@ -132,6 +159,9 @@
       <MemberSignature Language="C#" Value="SCRIPTSCOPE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 SCRIPTSCOPE = int32(19)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.SCRIPTSCOPE" />
+      <MemberSignature Language="VB.NET" Value="SCRIPTSCOPE" />
+      <MemberSignature Language="F#" Value="SCRIPTSCOPE = 19" Usage="Microsoft.JScript.VSAITEMTYPE2.SCRIPTSCOPE" />
+      <MemberSignature Language="C++ CLI" Value="SCRIPTSCOPE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -140,6 +170,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>Specifies the script scope.</summary>
         <forInternalUseOnly />
@@ -149,6 +180,9 @@
       <MemberSignature Language="C#" Value="STATEMENT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.VSAITEMTYPE2 STATEMENT = int32(21)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.VSAITEMTYPE2.STATEMENT" />
+      <MemberSignature Language="VB.NET" Value="STATEMENT" />
+      <MemberSignature Language="F#" Value="STATEMENT = 21" Usage="Microsoft.JScript.VSAITEMTYPE2.STATEMENT" />
+      <MemberSignature Language="C++ CLI" Value="STATEMENT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -157,6 +191,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.VSAITEMTYPE2</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>Specifies a single statement. This applies to an <see cref="T:Microsoft.JScript.IVsaScriptCodeItem" />.</summary>
         <forInternalUseOnly />

@@ -1,7 +1,10 @@
-<Type Name="LogExtent" FullName="System.IO.Log.LogExtent">
+﻿<Type Name="LogExtent" FullName="System.IO.Log.LogExtent">
   <TypeSignature Language="C#" Value="public sealed class LogExtent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LogExtent extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Log.LogExtent" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LogExtent" />
+  <TypeSignature Language="F#" Value="type LogExtent = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LogExtent sealed" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="public string Path { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogExtent.Path" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string" Usage="System.IO.Log.LogExtent.Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -71,6 +77,9 @@
       <MemberSignature Language="C#" Value="public long Size { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Size" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogExtent.Size" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Long" />
+      <MemberSignature Language="F#" Value="member this.Size : int64" Usage="System.IO.Log.LogExtent.Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Size { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -99,6 +108,9 @@
       <MemberSignature Language="C#" Value="public System.IO.Log.LogExtentState State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.LogExtentState State" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogExtent.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As LogExtentState" />
+      <MemberSignature Language="F#" Value="member this.State : System.IO.Log.LogExtentState" Usage="System.IO.Log.LogExtent.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Log::LogExtentState State { System::IO::Log::LogExtentState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>

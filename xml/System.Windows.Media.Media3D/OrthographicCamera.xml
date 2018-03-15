@@ -1,7 +1,10 @@
-<Type Name="OrthographicCamera" FullName="System.Windows.Media.Media3D.OrthographicCamera">
+﻿<Type Name="OrthographicCamera" FullName="System.Windows.Media.Media3D.OrthographicCamera">
   <TypeSignature Language="C#" Value="public sealed class OrthographicCamera : System.Windows.Media.Media3D.ProjectionCamera" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OrthographicCamera extends System.Windows.Media.Media3D.ProjectionCamera" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.OrthographicCamera" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OrthographicCamera&#xA;Inherits ProjectionCamera" />
+  <TypeSignature Language="F#" Value="type OrthographicCamera = class&#xA;    inherit ProjectionCamera" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OrthographicCamera sealed : System::Windows::Media::Media3D::ProjectionCamera" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +37,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.OrthographicCamera" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OrthographicCamera ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.OrthographicCamera.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OrthographicCamera();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +77,9 @@
       <MemberSignature Language="C#" Value="public OrthographicCamera (System.Windows.Media.Media3D.Point3D position, System.Windows.Media.Media3D.Vector3D lookDirection, System.Windows.Media.Media3D.Vector3D upDirection, double width);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Point3D position, valuetype System.Windows.Media.Media3D.Vector3D lookDirection, valuetype System.Windows.Media.Media3D.Vector3D upDirection, float64 width) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.OrthographicCamera.#ctor(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (position As Point3D, lookDirection As Vector3D, upDirection As Vector3D, width As Double)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.OrthographicCamera : System.Windows.Media.Media3D.Point3D * System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Vector3D * double -&gt; System.Windows.Media.Media3D.OrthographicCamera" Usage="new System.Windows.Media.Media3D.OrthographicCamera (position, lookDirection, upDirection, width)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OrthographicCamera(System::Windows::Media::Media3D::Point3D position, System::Windows::Media::Media3D::Vector3D lookDirection, System::Windows::Media::Media3D::Vector3D upDirection, double width);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -97,6 +114,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.OrthographicCamera Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.OrthographicCamera Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.OrthographicCamera.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As OrthographicCamera" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.OrthographicCamera" Usage="orthographicCamera.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::OrthographicCamera ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +145,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.OrthographicCamera CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.OrthographicCamera CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.OrthographicCamera.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As OrthographicCamera" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.OrthographicCamera" Usage="orthographicCamera.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::OrthographicCamera ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -153,6 +176,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.OrthographicCamera.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="orthographicCamera.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -172,6 +198,9 @@
       <MemberSignature Language="C#" Value="public double Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.OrthographicCamera.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
+      <MemberSignature Language="F#" Value="member this.Width : double with get, set" Usage="System.Windows.Media.Media3D.OrthographicCamera.Width" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -216,6 +245,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty WidthProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty WidthProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.OrthographicCamera.WidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WidthProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable WidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.OrthographicCamera.WidthProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ WidthProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -229,14 +261,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.OrthographicCamera" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

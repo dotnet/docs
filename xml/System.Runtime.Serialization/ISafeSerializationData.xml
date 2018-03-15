@@ -1,7 +1,10 @@
-<Type Name="ISafeSerializationData" FullName="System.Runtime.Serialization.ISafeSerializationData">
+﻿<Type Name="ISafeSerializationData" FullName="System.Runtime.Serialization.ISafeSerializationData">
   <TypeSignature Language="C#" Value="public interface ISafeSerializationData" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISafeSerializationData" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ISafeSerializationData" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISafeSerializationData" />
+  <TypeSignature Language="F#" Value="type ISafeSerializationData = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISafeSerializationData" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="public void CompleteDeserialization (object deserialized);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CompleteDeserialization(object deserialized) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ISafeSerializationData.CompleteDeserialization(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CompleteDeserialization (deserialized As Object)" />
+      <MemberSignature Language="F#" Value="abstract member CompleteDeserialization : obj -&gt; unit" Usage="iSafeSerializationData.CompleteDeserialization deserialized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CompleteDeserialization(System::Object ^ deserialized);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

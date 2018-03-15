@@ -1,7 +1,10 @@
-<Type Name="CriticalFinalizerObject" FullName="System.Runtime.ConstrainedExecution.CriticalFinalizerObject">
+﻿<Type Name="CriticalFinalizerObject" FullName="System.Runtime.ConstrainedExecution.CriticalFinalizerObject">
   <TypeSignature Language="C#" Value="public abstract class CriticalFinalizerObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CriticalFinalizerObject extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.ConstrainedExecution.CriticalFinalizerObject" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class CriticalFinalizerObject" />
+  <TypeSignature Language="F#" Value="type CriticalFinalizerObject = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CriticalFinalizerObject abstract" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -57,6 +60,8 @@
       <MemberSignature Language="C#" Value="protected CriticalFinalizerObject ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.ConstrainedExecution.CriticalFinalizerObject.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CriticalFinalizerObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -88,6 +93,9 @@
       <MemberSignature Language="C#" Value="~CriticalFinalizerObject ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.ConstrainedExecution.CriticalFinalizerObject.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="criticalFinalizerObject.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!CriticalFinalizerObject ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

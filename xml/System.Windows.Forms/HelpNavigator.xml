@@ -1,7 +1,10 @@
-<Type Name="HelpNavigator" FullName="System.Windows.Forms.HelpNavigator">
+﻿<Type Name="HelpNavigator" FullName="System.Windows.Forms.HelpNavigator">
   <TypeSignature Language="C#" Value="public enum HelpNavigator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HelpNavigator extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HelpNavigator" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HelpNavigator" />
+  <TypeSignature Language="F#" Value="type HelpNavigator = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class HelpNavigator" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="AssociateIndex" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HelpNavigator AssociateIndex = int32(-2147483643)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HelpNavigator.AssociateIndex" />
+      <MemberSignature Language="VB.NET" Value="AssociateIndex" />
+      <MemberSignature Language="F#" Value="AssociateIndex = -2147483643" Usage="System.Windows.Forms.HelpNavigator.AssociateIndex" />
+      <MemberSignature Language="C++ CLI" Value="AssociateIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483643</MemberValue>
       <Docs>
         <summary>The Help file opens to the index entry for the first letter of a specified topic.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="Find" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HelpNavigator Find = int32(-2147483644)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HelpNavigator.Find" />
+      <MemberSignature Language="VB.NET" Value="Find" />
+      <MemberSignature Language="F#" Value="Find = -2147483644" Usage="System.Windows.Forms.HelpNavigator.Find" />
+      <MemberSignature Language="C++ CLI" Value="Find" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483644</MemberValue>
       <Docs>
         <summary>The Help file opens to the search page.</summary>
       </Docs>
@@ -70,6 +81,9 @@
       <MemberSignature Language="C#" Value="Index" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HelpNavigator Index = int32(-2147483645)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HelpNavigator.Index" />
+      <MemberSignature Language="VB.NET" Value="Index" />
+      <MemberSignature Language="F#" Value="Index = -2147483645" Usage="System.Windows.Forms.HelpNavigator.Index" />
+      <MemberSignature Language="C++ CLI" Value="Index" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483645</MemberValue>
       <Docs>
         <summary>The Help file opens to the index.</summary>
       </Docs>
@@ -86,6 +101,9 @@
       <MemberSignature Language="C#" Value="KeywordIndex" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HelpNavigator KeywordIndex = int32(-2147483642)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HelpNavigator.KeywordIndex" />
+      <MemberSignature Language="VB.NET" Value="KeywordIndex" />
+      <MemberSignature Language="F#" Value="KeywordIndex = -2147483642" Usage="System.Windows.Forms.HelpNavigator.KeywordIndex" />
+      <MemberSignature Language="C++ CLI" Value="KeywordIndex" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483642</MemberValue>
       <Docs>
         <summary>The Help file opens to the topic with the specified index entry, if one exists; otherwise, the index entry closest to the specified keyword is displayed.</summary>
       </Docs>
@@ -102,6 +121,9 @@
       <MemberSignature Language="C#" Value="TableOfContents" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HelpNavigator TableOfContents = int32(-2147483646)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HelpNavigator.TableOfContents" />
+      <MemberSignature Language="VB.NET" Value="TableOfContents" />
+      <MemberSignature Language="F#" Value="TableOfContents = -2147483646" Usage="System.Windows.Forms.HelpNavigator.TableOfContents" />
+      <MemberSignature Language="C++ CLI" Value="TableOfContents" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -110,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483646</MemberValue>
       <Docs>
         <summary>The Help file opens to the table of contents.</summary>
       </Docs>
@@ -118,6 +141,9 @@
       <MemberSignature Language="C#" Value="Topic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HelpNavigator Topic = int32(-2147483647)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HelpNavigator.Topic" />
+      <MemberSignature Language="VB.NET" Value="Topic" />
+      <MemberSignature Language="F#" Value="Topic = -2147483647" Usage="System.Windows.Forms.HelpNavigator.Topic" />
+      <MemberSignature Language="C++ CLI" Value="Topic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -126,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483647</MemberValue>
       <Docs>
         <summary>The Help file opens to a specified topic, if the topic exists.</summary>
       </Docs>
@@ -134,6 +161,9 @@
       <MemberSignature Language="C#" Value="TopicId" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HelpNavigator TopicId = int32(-2147483641)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HelpNavigator.TopicId" />
+      <MemberSignature Language="VB.NET" Value="TopicId" />
+      <MemberSignature Language="F#" Value="TopicId = -2147483641" Usage="System.Windows.Forms.HelpNavigator.TopicId" />
+      <MemberSignature Language="C++ CLI" Value="TopicId" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -142,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HelpNavigator</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483641</MemberValue>
       <Docs>
         <summary>The Help file opens to a topic indicated by a numeric topic identifier.</summary>
       </Docs>

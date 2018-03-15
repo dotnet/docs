@@ -1,7 +1,10 @@
-<Type Name="Setter" FullName="System.Windows.Setter">
+﻿<Type Name="Setter" FullName="System.Windows.Setter">
   <TypeSignature Language="C#" Value="public class Setter : System.Windows.SetterBase, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Setter extends System.Windows.SetterBase implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Setter" />
+  <TypeSignature Language="VB.NET" Value="Public Class Setter&#xA;Inherits SetterBase&#xA;Implements ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type Setter = class&#xA;    inherit SetterBase&#xA;    interface ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Setter : System::Windows::SetterBase, System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,10 +54,21 @@
     <altmember cref="T:System.Windows.TriggerBase" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Setter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Setter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Setter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Setter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -70,6 +84,9 @@
       <MemberSignature Language="C#" Value="public Setter (System.Windows.DependencyProperty property, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.DependencyProperty property, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Setter.#ctor(System.Windows.DependencyProperty,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (property As DependencyProperty, value As Object)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Setter : System.Windows.DependencyProperty * obj -&gt; System.Windows.Setter" Usage="new System.Windows.Setter (property, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Setter(System::Windows::DependencyProperty ^ property, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +107,9 @@
       <MemberSignature Language="C#" Value="public Setter (System.Windows.DependencyProperty property, object value, string targetName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.DependencyProperty property, object value, string targetName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Setter.#ctor(System.Windows.DependencyProperty,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (property As DependencyProperty, value As Object, targetName As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Setter : System.Windows.DependencyProperty * obj * string -&gt; System.Windows.Setter" Usage="new System.Windows.Setter (property, value, targetName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Setter(System::Windows::DependencyProperty ^ property, System::Object ^ value, System::String ^ targetName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -112,6 +132,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.DependencyProperty Property { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyProperty Property" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Setter.Property" />
+      <MemberSignature Language="VB.NET" Value="Public Property Property As DependencyProperty" />
+      <MemberSignature Language="F#" Value="member this.Property : System.Windows.DependencyProperty with get, set" Usage="System.Windows.Setter.Property" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyProperty ^ Property { System::Windows::DependencyProperty ^ get(); void set(System::Windows::DependencyProperty ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -163,6 +186,9 @@
       <MemberSignature Language="C#" Value="public static void ReceiveMarkupExtension (object targetObject, System.Windows.Markup.XamlSetMarkupExtensionEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReceiveMarkupExtension(object targetObject, class System.Windows.Markup.XamlSetMarkupExtensionEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Setter.ReceiveMarkupExtension(System.Object,System.Windows.Markup.XamlSetMarkupExtensionEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ReceiveMarkupExtension (targetObject As Object, eventArgs As XamlSetMarkupExtensionEventArgs)" />
+      <MemberSignature Language="F#" Value="static member ReceiveMarkupExtension : obj * System.Windows.Markup.XamlSetMarkupExtensionEventArgs -&gt; unit" Usage="System.Windows.Setter.ReceiveMarkupExtension (targetObject, eventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ReceiveMarkupExtension(System::Object ^ targetObject, System::Windows::Markup::XamlSetMarkupExtensionEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -195,6 +221,9 @@
       <MemberSignature Language="C#" Value="public static void ReceiveTypeConverter (object targetObject, System.Windows.Markup.XamlSetTypeConverterEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ReceiveTypeConverter(object targetObject, class System.Windows.Markup.XamlSetTypeConverterEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Setter.ReceiveTypeConverter(System.Object,System.Windows.Markup.XamlSetTypeConverterEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ReceiveTypeConverter (targetObject As Object, eventArgs As XamlSetTypeConverterEventArgs)" />
+      <MemberSignature Language="F#" Value="static member ReceiveTypeConverter : obj * System.Windows.Markup.XamlSetTypeConverterEventArgs -&gt; unit" Usage="System.Windows.Setter.ReceiveTypeConverter (targetObject, eventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ReceiveTypeConverter(System::Object ^ targetObject, System::Windows::Markup::XamlSetTypeConverterEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -227,6 +256,8 @@
       <MemberSignature Language="C#" Value="void ISupportInitialize.BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Setter.System#ComponentModel#ISupportInitialize#BeginInit" />
+      <MemberSignature Language="VB.NET" Value="Sub BeginInit () Implements ISupportInitialize.BeginInit" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ISupportInitialize.BeginInit() = System::ComponentModel::ISupportInitialize::BeginInit;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -252,6 +283,8 @@
       <MemberSignature Language="C#" Value="void ISupportInitialize.EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.ISupportInitialize.EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Setter.System#ComponentModel#ISupportInitialize#EndInit" />
+      <MemberSignature Language="VB.NET" Value="Sub EndInit () Implements ISupportInitialize.EndInit" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ISupportInitialize.EndInit() = System::ComponentModel::ISupportInitialize::EndInit;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -277,6 +310,9 @@
       <MemberSignature Language="C#" Value="public string TargetName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Setter.TargetName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetName As String" />
+      <MemberSignature Language="F#" Value="member this.TargetName : string with get, set" Usage="System.Windows.Setter.TargetName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -319,6 +355,9 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Setter.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Windows.Setter.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -401,14 +440,5 @@
         <altmember cref="P:System.Windows.Setter.Property" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Setter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

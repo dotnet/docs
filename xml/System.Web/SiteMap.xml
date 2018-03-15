@@ -1,7 +1,10 @@
-<Type Name="SiteMap" FullName="System.Web.SiteMap">
+﻿<Type Name="SiteMap" FullName="System.Web.SiteMap">
   <TypeSignature Language="C#" Value="public static class SiteMap" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SiteMap extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.SiteMap" />
+  <TypeSignature Language="VB.NET" Value="Public Class SiteMap" />
+  <TypeSignature Language="F#" Value="type SiteMap = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SiteMap abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +74,9 @@
       <MemberSignature Language="C#" Value="public static System.Web.SiteMapNode CurrentNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Web.SiteMapNode CurrentNode" />
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMap.CurrentNode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentNode As SiteMapNode" />
+      <MemberSignature Language="F#" Value="member this.CurrentNode : System.Web.SiteMapNode" Usage="System.Web.SiteMap.CurrentNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::SiteMapNode ^ CurrentNode { System::Web::SiteMapNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -115,6 +121,9 @@
       <MemberSignature Language="C#" Value="public static bool Enabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMap.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Enabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool" Usage="System.Web.SiteMap.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool Enabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +166,9 @@
       <MemberSignature Language="C#" Value="public static System.Web.SiteMapProvider Provider { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Web.SiteMapProvider Provider" />
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMap.Provider" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Provider As SiteMapProvider" />
+      <MemberSignature Language="F#" Value="member this.Provider : System.Web.SiteMapProvider" Usage="System.Web.SiteMap.Provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::SiteMapProvider ^ Provider { System::Web::SiteMapProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -196,6 +208,9 @@
       <MemberSignature Language="C#" Value="public static System.Web.SiteMapProviderCollection Providers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Web.SiteMapProviderCollection Providers" />
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMap.Providers" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Providers As SiteMapProviderCollection" />
+      <MemberSignature Language="F#" Value="member this.Providers : System.Web.SiteMapProviderCollection" Usage="System.Web.SiteMap.Providers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::SiteMapProviderCollection ^ Providers { System::Web::SiteMapProviderCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -242,6 +257,9 @@ AccessSiteMapProvider   Samples.AspNet.AccessSiteMapProvider
       <MemberSignature Language="C#" Value="public static System.Web.SiteMapNode RootNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Web.SiteMapNode RootNode" />
       <MemberSignature Language="DocId" Value="P:System.Web.SiteMap.RootNode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RootNode As SiteMapNode" />
+      <MemberSignature Language="F#" Value="member this.RootNode : System.Web.SiteMapNode" Usage="System.Web.SiteMap.RootNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::SiteMapNode ^ RootNode { System::Web::SiteMapNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -289,6 +307,9 @@ AccessSiteMapProvider   Samples.AspNet.AccessSiteMapProvider
       <MemberSignature Language="C#" Value="public static event System.Web.SiteMapResolveEventHandler SiteMapResolve;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.SiteMapResolveEventHandler SiteMapResolve" />
       <MemberSignature Language="DocId" Value="E:System.Web.SiteMap.SiteMapResolve" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event SiteMapResolve As SiteMapResolveEventHandler " />
+      <MemberSignature Language="F#" Value="member this.SiteMapResolve : System.Web.SiteMapResolveEventHandler " Usage="member this.SiteMapResolve : System.Web.SiteMapResolveEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event System::Web::SiteMapResolveEventHandler ^ SiteMapResolve;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

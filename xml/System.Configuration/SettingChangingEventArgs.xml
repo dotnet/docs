@@ -1,7 +1,10 @@
-<Type Name="SettingChangingEventArgs" FullName="System.Configuration.SettingChangingEventArgs">
+﻿<Type Name="SettingChangingEventArgs" FullName="System.Configuration.SettingChangingEventArgs">
   <TypeSignature Language="C#" Value="public class SettingChangingEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SettingChangingEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SettingChangingEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SettingChangingEventArgs&#xA;Inherits CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type SettingChangingEventArgs = class&#xA;    inherit CancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SettingChangingEventArgs : System::ComponentModel::CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public SettingChangingEventArgs (string settingName, string settingClass, string settingKey, object newValue, bool cancel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string settingName, string settingClass, string settingKey, object newValue, bool cancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SettingChangingEventArgs.#ctor(System.String,System.String,System.String,System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (settingName As String, settingClass As String, settingKey As String, newValue As Object, cancel As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.SettingChangingEventArgs : string * string * string * obj * bool -&gt; System.Configuration.SettingChangingEventArgs" Usage="new System.Configuration.SettingChangingEventArgs (settingName, settingClass, settingKey, newValue, cancel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingChangingEventArgs(System::String ^ settingName, System::String ^ settingClass, System::String ^ settingKey, System::Object ^ newValue, bool cancel);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -77,6 +83,9 @@
       <MemberSignature Language="C#" Value="public object NewValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object NewValue" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingChangingEventArgs.NewValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewValue As Object" />
+      <MemberSignature Language="F#" Value="member this.NewValue : obj" Usage="System.Configuration.SettingChangingEventArgs.NewValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NewValue { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -108,6 +117,9 @@
       <MemberSignature Language="C#" Value="public string SettingClass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SettingClass" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingChangingEventArgs.SettingClass" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SettingClass As String" />
+      <MemberSignature Language="F#" Value="member this.SettingClass : string" Usage="System.Configuration.SettingChangingEventArgs.SettingClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SettingClass { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -138,6 +150,9 @@
       <MemberSignature Language="C#" Value="public string SettingKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SettingKey" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingChangingEventArgs.SettingKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SettingKey As String" />
+      <MemberSignature Language="F#" Value="member this.SettingKey : string" Usage="System.Configuration.SettingChangingEventArgs.SettingKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SettingKey { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -169,6 +184,9 @@
       <MemberSignature Language="C#" Value="public string SettingName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SettingName" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SettingChangingEventArgs.SettingName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SettingName As String" />
+      <MemberSignature Language="F#" Value="member this.SettingName : string" Usage="System.Configuration.SettingChangingEventArgs.SettingName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SettingName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

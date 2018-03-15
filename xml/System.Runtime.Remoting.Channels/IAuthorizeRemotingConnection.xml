@@ -1,7 +1,10 @@
-<Type Name="IAuthorizeRemotingConnection" FullName="System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection">
+﻿<Type Name="IAuthorizeRemotingConnection" FullName="System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection">
   <TypeSignature Language="C#" Value="public interface IAuthorizeRemotingConnection" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAuthorizeRemotingConnection" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAuthorizeRemotingConnection" />
+  <TypeSignature Language="F#" Value="type IAuthorizeRemotingConnection = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IAuthorizeRemotingConnection" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,8 @@
       <MemberSignature Language="C#" Value="public bool IsConnectingEndPointAuthorized (System.Net.EndPoint endPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsConnectingEndPointAuthorized(class System.Net.EndPoint endPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection.IsConnectingEndPointAuthorized(System.Net.EndPoint)" />
+      <MemberSignature Language="F#" Value="abstract member IsConnectingEndPointAuthorized : System.Net.EndPoint -&gt; bool" Usage="iAuthorizeRemotingConnection.IsConnectingEndPointAuthorized endPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsConnectingEndPointAuthorized(System::Net::EndPoint ^ endPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -53,6 +58,9 @@
       <MemberSignature Language="C#" Value="public bool IsConnectingIdentityAuthorized (System.Security.Principal.IIdentity identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsConnectingIdentityAuthorized(class System.Security.Principal.IIdentity identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IAuthorizeRemotingConnection.IsConnectingIdentityAuthorized(System.Security.Principal.IIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsConnectingIdentityAuthorized (identity As IIdentity) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsConnectingIdentityAuthorized : System.Security.Principal.IIdentity -&gt; bool" Usage="iAuthorizeRemotingConnection.IsConnectingIdentityAuthorized identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsConnectingIdentityAuthorized(System::Security::Principal::IIdentity ^ identity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="CultureNotFoundException" FullName="System.Globalization.CultureNotFoundException">
+﻿<Type Name="CultureNotFoundException" FullName="System.Globalization.CultureNotFoundException">
   <TypeSignature Language="C#" Value="public class CultureNotFoundException : ArgumentException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CultureNotFoundException extends System.ArgumentException implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.CultureNotFoundException" />
+  <TypeSignature Language="VB.NET" Value="Public Class CultureNotFoundException&#xA;Inherits ArgumentException" />
+  <TypeSignature Language="F#" Value="type CultureNotFoundException = class&#xA;    inherit ArgumentException&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CultureNotFoundException : ArgumentException" />
   <AssemblyInfo>
     <AssemblyName>System.Globalization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +79,8 @@
       <MemberSignature Language="C#" Value="public CultureNotFoundException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureNotFoundException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -112,6 +117,9 @@
       <MemberSignature Language="C#" Value="public CultureNotFoundException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : string -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureNotFoundException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -153,6 +161,9 @@
       <MemberSignature Language="C#" Value="protected CultureNotFoundException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CultureNotFoundException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -189,6 +200,9 @@
       <MemberSignature Language="C#" Value="public CultureNotFoundException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : string * Exception -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureNotFoundException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -232,6 +246,9 @@
       <MemberSignature Language="C#" Value="public CultureNotFoundException (string paramName, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string paramName, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (paramName As String, message As String)" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : string * string -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException (paramName, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureNotFoundException(System::String ^ paramName, System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -277,6 +294,9 @@
       <MemberSignature Language="C#" Value="public CultureNotFoundException (string message, int invalidCultureId, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, int32 invalidCultureId, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.String,System.Int32,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, invalidCultureId As Integer, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : string * int * Exception -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException (message, invalidCultureId, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureNotFoundException(System::String ^ message, int invalidCultureId, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -317,6 +337,9 @@
       <MemberSignature Language="C#" Value="public CultureNotFoundException (string paramName, int invalidCultureId, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string paramName, int32 invalidCultureId, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.String,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (paramName As String, invalidCultureId As Integer, message As String)" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : string * int * string -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException (paramName, invalidCultureId, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureNotFoundException(System::String ^ paramName, int invalidCultureId, System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -359,6 +382,9 @@
       <MemberSignature Language="C#" Value="public CultureNotFoundException (string message, string invalidCultureName, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string invalidCultureName, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.String,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, invalidCultureName As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : string * string * Exception -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException (message, invalidCultureName, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureNotFoundException(System::String ^ message, System::String ^ invalidCultureName, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -404,6 +430,9 @@
       <MemberSignature Language="C#" Value="public CultureNotFoundException (string paramName, string invalidCultureName, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string paramName, string invalidCultureName, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (paramName As String, invalidCultureName As String, message As String)" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureNotFoundException : string * string * string -&gt; System.Globalization.CultureNotFoundException" Usage="new System.Globalization.CultureNotFoundException (paramName, invalidCultureName, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureNotFoundException(System::String ^ paramName, System::String ^ invalidCultureName, System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -451,7 +480,13 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureNotFoundException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="cultureNotFoundException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -500,6 +535,9 @@
       <MemberSignature Language="C#" Value="public virtual Nullable&lt;int&gt; InvalidCultureId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; InvalidCultureId" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureNotFoundException.InvalidCultureId" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InvalidCultureId As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.InvalidCultureId : Nullable&lt;int&gt;" Usage="System.Globalization.CultureNotFoundException.InvalidCultureId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Nullable&lt;int&gt; InvalidCultureId { Nullable&lt;int&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -534,6 +572,9 @@
       <MemberSignature Language="C#" Value="public virtual string InvalidCultureName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InvalidCultureName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureNotFoundException.InvalidCultureName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InvalidCultureName As String" />
+      <MemberSignature Language="F#" Value="member this.InvalidCultureName : string" Usage="System.Globalization.CultureNotFoundException.InvalidCultureName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InvalidCultureName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>
@@ -573,6 +614,9 @@
       <MemberSignature Language="C#" Value="public override string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureNotFoundException.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="System.Globalization.CultureNotFoundException.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Globalization</AssemblyName>

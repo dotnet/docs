@@ -1,7 +1,10 @@
-<Type Name="WebConfigurationFileMap" FullName="System.Web.Configuration.WebConfigurationFileMap">
+﻿<Type Name="WebConfigurationFileMap" FullName="System.Web.Configuration.WebConfigurationFileMap">
   <TypeSignature Language="C#" Value="public sealed class WebConfigurationFileMap : System.Configuration.ConfigurationFileMap" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebConfigurationFileMap extends System.Configuration.ConfigurationFileMap" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.WebConfigurationFileMap" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebConfigurationFileMap&#xA;Inherits ConfigurationFileMap" />
+  <TypeSignature Language="F#" Value="type WebConfigurationFileMap = class&#xA;    inherit ConfigurationFileMap" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebConfigurationFileMap sealed : System::Configuration::ConfigurationFileMap" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,10 +28,21 @@
     <altmember cref="T:System.Configuration.ConfigurationFileMap" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.WebConfigurationFileMap" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebConfigurationFileMap ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationFileMap.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebConfigurationFileMap();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -44,6 +58,9 @@
       <MemberSignature Language="C#" Value="public WebConfigurationFileMap (string machineConfigFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string machineConfigFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationFileMap.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (machineConfigFileName As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.WebConfigurationFileMap : string -&gt; System.Web.Configuration.WebConfigurationFileMap" Usage="new System.Web.Configuration.WebConfigurationFileMap machineConfigFileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebConfigurationFileMap(System::String ^ machineConfigFileName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +89,9 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebConfigurationFileMap.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="webConfigurationFileMap.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +111,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.VirtualDirectoryMappingCollection VirtualDirectories { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.VirtualDirectoryMappingCollection VirtualDirectories" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebConfigurationFileMap.VirtualDirectories" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VirtualDirectories As VirtualDirectoryMappingCollection" />
+      <MemberSignature Language="F#" Value="member this.VirtualDirectories : System.Web.Configuration.VirtualDirectoryMappingCollection" Usage="System.Web.Configuration.WebConfigurationFileMap.VirtualDirectories" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::VirtualDirectoryMappingCollection ^ VirtualDirectories { System::Web::Configuration::VirtualDirectoryMappingCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,14 +135,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Configuration.WebConfigurationFileMap" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

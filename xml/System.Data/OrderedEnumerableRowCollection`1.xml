@@ -1,7 +1,10 @@
-<Type Name="OrderedEnumerableRowCollection&lt;TRow&gt;" FullName="System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;">
+﻿<Type Name="OrderedEnumerableRowCollection&lt;TRow&gt;" FullName="System.Data.OrderedEnumerableRowCollection&lt;TRow&gt;">
   <TypeSignature Language="C#" Value="public sealed class OrderedEnumerableRowCollection&lt;TRow&gt; : System.Data.EnumerableRowCollection&lt;TRow&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OrderedEnumerableRowCollection`1&lt;TRow&gt; extends System.Data.EnumerableRowCollection`1&lt;!TRow&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Data.OrderedEnumerableRowCollection`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OrderedEnumerableRowCollection(Of TRow)&#xA;Inherits EnumerableRowCollection(Of TRow)" />
+  <TypeSignature Language="F#" Value="type OrderedEnumerableRowCollection&lt;'Row&gt; = class&#xA;    inherit EnumerableRowCollection&lt;'Row&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TRow&gt;&#xA;public ref class OrderedEnumerableRowCollection sealed : System::Data::EnumerableRowCollection&lt;TRow&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

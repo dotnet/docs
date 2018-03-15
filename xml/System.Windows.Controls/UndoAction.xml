@@ -1,7 +1,10 @@
-<Type Name="UndoAction" FullName="System.Windows.Controls.UndoAction">
+﻿<Type Name="UndoAction" FullName="System.Windows.Controls.UndoAction">
   <TypeSignature Language="C#" Value="public enum UndoAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UndoAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.UndoAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum UndoAction" />
+  <TypeSignature Language="F#" Value="type UndoAction = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class UndoAction" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Clear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.UndoAction Clear = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.Clear" />
+      <MemberSignature Language="VB.NET" Value="Clear" />
+      <MemberSignature Language="F#" Value="Clear = 4" Usage="System.Windows.Controls.UndoAction.Clear" />
+      <MemberSignature Language="C++ CLI" Value="Clear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.UndoAction</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>This change will clear the undo stack</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="Create" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.UndoAction Create = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.Create" />
+      <MemberSignature Language="VB.NET" Value="Create" />
+      <MemberSignature Language="F#" Value="Create = 5" Usage="System.Windows.Controls.UndoAction.Create" />
+      <MemberSignature Language="C++ CLI" Value="Create" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.UndoAction</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>This change will create a new undo unit</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="Merge" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.UndoAction Merge = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.Merge" />
+      <MemberSignature Language="VB.NET" Value="Merge" />
+      <MemberSignature Language="F#" Value="Merge = 1" Usage="System.Windows.Controls.UndoAction.Merge" />
+      <MemberSignature Language="C++ CLI" Value="Merge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.UndoAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>This change will merge into the previous undo unit</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.UndoAction None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Controls.UndoAction.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.UndoAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>This change will not affect the undo stack at all</summary>
       </Docs>
@@ -82,6 +101,9 @@
       <MemberSignature Language="C#" Value="Redo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.UndoAction Redo = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.Redo" />
+      <MemberSignature Language="VB.NET" Value="Redo" />
+      <MemberSignature Language="F#" Value="Redo = 3" Usage="System.Windows.Controls.UndoAction.Redo" />
+      <MemberSignature Language="C++ CLI" Value="Redo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -90,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.UndoAction</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>This change is the result of a call to Redo()</summary>
       </Docs>
@@ -98,6 +121,9 @@
       <MemberSignature Language="C#" Value="Undo" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.UndoAction Undo = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.UndoAction.Undo" />
+      <MemberSignature Language="VB.NET" Value="Undo" />
+      <MemberSignature Language="F#" Value="Undo = 2" Usage="System.Windows.Controls.UndoAction.Undo" />
+      <MemberSignature Language="C++ CLI" Value="Undo" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -106,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.UndoAction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>This change is the result of a call to Undo()</summary>
       </Docs>

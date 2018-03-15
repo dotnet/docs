@@ -1,7 +1,10 @@
-<Type Name="WorkflowLoaderService" FullName="System.Workflow.Runtime.Hosting.WorkflowLoaderService">
+﻿<Type Name="WorkflowLoaderService" FullName="System.Workflow.Runtime.Hosting.WorkflowLoaderService">
   <TypeSignature Language="C#" Value="public abstract class WorkflowLoaderService : System.Workflow.Runtime.Hosting.WorkflowRuntimeService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WorkflowLoaderService extends System.Workflow.Runtime.Hosting.WorkflowRuntimeService" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.WorkflowLoaderService" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowLoaderService&#xA;Inherits WorkflowRuntimeService" />
+  <TypeSignature Language="F#" Value="type WorkflowLoaderService = class&#xA;    inherit WorkflowRuntimeService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowLoaderService abstract : System::Workflow::Runtime::Hosting::WorkflowRuntimeService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,8 @@
       <MemberSignature Language="C#" Value="protected WorkflowLoaderService ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowLoaderService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowLoaderService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -48,10 +53,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateInstance">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new workflow instance by using the specified workflow <see cref="T:System.Type" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="protected abstract System.Workflow.ComponentModel.Activity CreateInstance (Type workflowType);" />
+      <MemberSignature Language="C#" Value="protected internal abstract System.Workflow.ComponentModel.Activity CreateInstance (Type workflowType);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Workflow.ComponentModel.Activity CreateInstance(class System.Type workflowType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowLoaderService.CreateInstance(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function CreateInstance (workflowType As Type) As Activity" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : Type -&gt; System.Workflow.ComponentModel.Activity" Usage="workflowLoaderService.CreateInstance workflowType" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Workflow::ComponentModel::Activity ^ CreateInstance(Type ^ workflowType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -71,9 +88,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateInstance">
-      <MemberSignature Language="C#" Value="protected abstract System.Workflow.ComponentModel.Activity CreateInstance (System.Xml.XmlReader workflowDefinitionReader, System.Xml.XmlReader rulesReader);" />
+      <MemberSignature Language="C#" Value="protected internal abstract System.Workflow.ComponentModel.Activity CreateInstance (System.Xml.XmlReader workflowDefinitionReader, System.Xml.XmlReader rulesReader);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Workflow.ComponentModel.Activity CreateInstance(class System.Xml.XmlReader workflowDefinitionReader, class System.Xml.XmlReader rulesReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.WorkflowLoaderService.CreateInstance(System.Xml.XmlReader,System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function CreateInstance (workflowDefinitionReader As XmlReader, rulesReader As XmlReader) As Activity" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : System.Xml.XmlReader * System.Xml.XmlReader -&gt; System.Workflow.ComponentModel.Activity" Usage="workflowLoaderService.CreateInstance (workflowDefinitionReader, rulesReader)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Workflow::ComponentModel::Activity ^ CreateInstance(System::Xml::XmlReader ^ workflowDefinitionReader, System::Xml::XmlReader ^ rulesReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -94,14 +114,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateInstance">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new workflow instance by using the specified workflow <see cref="T:System.Type" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="HttpHandlerActionCollection" FullName="System.Web.Configuration.HttpHandlerActionCollection">
+﻿<Type Name="HttpHandlerActionCollection" FullName="System.Web.Configuration.HttpHandlerActionCollection">
   <TypeSignature Language="C#" Value="public sealed class HttpHandlerActionCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpHandlerActionCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpHandlerActionCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpHandlerActionCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type HttpHandlerActionCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpHandlerActionCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +54,8 @@
       <MemberSignature Language="C#" Value="public HttpHandlerActionCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpHandlerActionCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpHandlerActionCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +78,8 @@
       <MemberSignature Language="C#" Value="public void Add (System.Web.Configuration.HttpHandlerAction httpHandlerAction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Configuration.HttpHandlerAction httpHandlerAction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpHandlerActionCollection.Add(System.Web.Configuration.HttpHandlerAction)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.HttpHandlerAction -&gt; unit" Usage="httpHandlerActionCollection.Add httpHandlerAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::HttpHandlerAction ^ httpHandlerAction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -115,6 +122,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpHandlerActionCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="httpHandlerActionCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -148,6 +158,9 @@
       <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationElementCollectionType CollectionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationElementCollectionType CollectionType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpHandlerActionCollection.CollectionType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
+      <MemberSignature Language="F#" Value="member this.CollectionType : System.Configuration.ConfigurationElementCollectionType" Usage="System.Web.Configuration.HttpHandlerActionCollection.CollectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -166,6 +179,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpHandlerActionCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="httpHandlerActionCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -185,6 +201,9 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpHandlerActionCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="httpHandlerActionCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -207,6 +226,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Configuration.HttpHandlerAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Configuration.HttpHandlerAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpHandlerActionCollection.IndexOf(System.Web.Configuration.HttpHandlerAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (action As HttpHandlerAction) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.Configuration.HttpHandlerAction -&gt; int" Usage="httpHandlerActionCollection.IndexOf action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Configuration::HttpHandlerAction ^ action);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -244,6 +266,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.HttpHandlerAction this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.HttpHandlerAction Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpHandlerActionCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As HttpHandlerAction" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.HttpHandlerAction with get, set" Usage="System.Web.Configuration.HttpHandlerActionCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::HttpHandlerAction ^ default[int] { System::Web::Configuration::HttpHandlerAction ^ get(int index); void set(int index, System::Web::Configuration::HttpHandlerAction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -273,6 +298,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpHandlerActionCollection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.HttpHandlerActionCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -287,10 +315,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes an <see cref="T:System.Web.Configuration.HttpHandlerAction" /> object from the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (System.Web.Configuration.HttpHandlerAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Configuration.HttpHandlerAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpHandlerActionCollection.Remove(System.Web.Configuration.HttpHandlerAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (action As HttpHandlerAction)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.Configuration.HttpHandlerAction -&gt; unit" Usage="httpHandlerActionCollection.Remove action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Configuration::HttpHandlerAction ^ action);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -328,6 +368,9 @@
       <MemberSignature Language="C#" Value="public void Remove (string verb, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string verb, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpHandlerActionCollection.Remove(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (verb As String, path As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string * string -&gt; unit" Usage="httpHandlerActionCollection.Remove (verb, path)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ verb, System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -367,6 +410,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpHandlerActionCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="httpHandlerActionCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -404,6 +450,9 @@
       <MemberSignature Language="C#" Value="protected override bool ThrowOnDuplicate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ThrowOnDuplicate" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpHandlerActionCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ThrowOnDuplicate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ThrowOnDuplicate : bool" Usage="System.Web.Configuration.HttpHandlerActionCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ThrowOnDuplicate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -418,14 +467,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Remove">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes an <see cref="T:System.Web.Configuration.HttpHandlerAction" /> object from the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

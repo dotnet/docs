@@ -1,7 +1,10 @@
-<Type Name="SecurityTokenReceivedEventArgs" FullName="System.IdentityModel.Services.SecurityTokenReceivedEventArgs">
+﻿<Type Name="SecurityTokenReceivedEventArgs" FullName="System.IdentityModel.Services.SecurityTokenReceivedEventArgs">
   <TypeSignature Language="C#" Value="public class SecurityTokenReceivedEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityTokenReceivedEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.SecurityTokenReceivedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SecurityTokenReceivedEventArgs&#xA;Inherits CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type SecurityTokenReceivedEventArgs = class&#xA;    inherit CancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenReceivedEventArgs : System::ComponentModel::CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,10 +26,21 @@
     <altmember cref="E:System.IdentityModel.Services.WSFederationAuthenticationModule.SecurityTokenReceived" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SecurityTokenReceivedEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SecurityTokenReceivedEventArgs (System.IdentityModel.Tokens.SecurityToken securityToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityToken securityToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SecurityTokenReceivedEventArgs.#ctor(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SecurityTokenReceivedEventArgs : System.IdentityModel.Tokens.SecurityToken -&gt; System.IdentityModel.Services.SecurityTokenReceivedEventArgs" Usage="new System.IdentityModel.Services.SecurityTokenReceivedEventArgs securityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenReceivedEventArgs(System::IdentityModel::Tokens::SecurityToken ^ securityToken);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -54,6 +68,8 @@
       <MemberSignature Language="C#" Value="public SecurityTokenReceivedEventArgs (System.IdentityModel.Tokens.SecurityToken securityToken, string signInContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityToken securityToken, string signInContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.SecurityTokenReceivedEventArgs.#ctor(System.IdentityModel.Tokens.SecurityToken,System.String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.SecurityTokenReceivedEventArgs : System.IdentityModel.Tokens.SecurityToken * string -&gt; System.IdentityModel.Services.SecurityTokenReceivedEventArgs" Usage="new System.IdentityModel.Services.SecurityTokenReceivedEventArgs (securityToken, signInContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityTokenReceivedEventArgs(System::IdentityModel::Tokens::SecurityToken ^ securityToken, System::String ^ signInContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -83,6 +99,9 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Tokens.SecurityToken SecurityToken { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SecurityToken SecurityToken" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SecurityTokenReceivedEventArgs.SecurityToken" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecurityToken As SecurityToken" />
+      <MemberSignature Language="F#" Value="member this.SecurityToken : System.IdentityModel.Tokens.SecurityToken with get, set" Usage="System.IdentityModel.Services.SecurityTokenReceivedEventArgs.SecurityToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Tokens::SecurityToken ^ SecurityToken { System::IdentityModel::Tokens::SecurityToken ^ get(); void set(System::IdentityModel::Tokens::SecurityToken ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -108,6 +127,9 @@
       <MemberSignature Language="C#" Value="public string SignInContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SignInContext" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.SecurityTokenReceivedEventArgs.SignInContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SignInContext As String" />
+      <MemberSignature Language="F#" Value="member this.SignInContext : string" Usage="System.IdentityModel.Services.SecurityTokenReceivedEventArgs.SignInContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SignInContext { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -122,14 +144,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.SecurityTokenReceivedEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

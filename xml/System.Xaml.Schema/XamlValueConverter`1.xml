@@ -1,7 +1,10 @@
-<Type Name="XamlValueConverter&lt;TConverterBase&gt;" FullName="System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt;">
+﻿<Type Name="XamlValueConverter&lt;TConverterBase&gt;" FullName="System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt;">
   <TypeSignature Language="C#" Value="public class XamlValueConverter&lt;TConverterBase&gt; : IEquatable&lt;System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt;&gt; where TConverterBase : class" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlValueConverter`1&lt;class TConverterBase&gt; extends System.Object implements class System.IEquatable`1&lt;class System.Xaml.Schema.XamlValueConverter`1&lt;!TConverterBase&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.Schema.XamlValueConverter`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlValueConverter(Of TConverterBase)&#xA;Implements IEquatable(Of XamlValueConverter(Of TConverterBase))" />
+  <TypeSignature Language="F#" Value="type XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt; = class&#xA;    interface IEquatable&lt;XamlValueConverter&lt;'ConverterBase&gt;&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TConverterBase&gt;&#xA; where TConverterBase : classpublic ref class XamlValueConverter : IEquatable&lt;System::Xaml::Schema::XamlValueConverter&lt;TConverterBase&gt; ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,10 +41,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XamlValueConverter (Type converterType, System.Xaml.XamlType targetType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type converterType, class System.Xaml.XamlType targetType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlValueConverter`1.#ctor(System.Type,System.Xaml.XamlType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (converterType As Type, targetType As XamlType)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt; : Type * System.Xaml.XamlType -&gt; System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt;" Usage="new System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt; (converterType, targetType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlValueConverter(Type ^ converterType, System::Xaml::XamlType ^ targetType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -62,6 +77,9 @@
       <MemberSignature Language="C#" Value="public XamlValueConverter (Type converterType, System.Xaml.XamlType targetType, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type converterType, class System.Xaml.XamlType targetType, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlValueConverter`1.#ctor(System.Type,System.Xaml.XamlType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (converterType As Type, targetType As XamlType, name As String)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt; : Type * System.Xaml.XamlType * string -&gt; System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt;" Usage="new System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt; (converterType, targetType, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlValueConverter(Type ^ converterType, System::Xaml::XamlType ^ targetType, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -92,6 +110,9 @@
       <MemberSignature Language="C#" Value="public TConverterBase ConverterInstance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TConverterBase ConverterInstance" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlValueConverter`1.ConverterInstance" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConverterInstance As TConverterBase" />
+      <MemberSignature Language="F#" Value="member this.ConverterInstance : 'ConverterBase" Usage="System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt;.ConverterInstance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TConverterBase ConverterInstance { TConverterBase get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -119,6 +140,9 @@
       <MemberSignature Language="C#" Value="public Type ConverterType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ConverterType" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlValueConverter`1.ConverterType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConverterType As Type" />
+      <MemberSignature Language="F#" Value="member this.ConverterType : Type" Usage="System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt;.ConverterType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ConverterType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -138,6 +162,9 @@
       <MemberSignature Language="C#" Value="protected virtual TConverterBase CreateInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance !TConverterBase CreateInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlValueConverter`1.CreateInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateInstance () As TConverterBase" />
+      <MemberSignature Language="F#" Value="abstract member CreateInstance : unit -&gt; 'ConverterBase&#xA;override this.CreateInstance : unit -&gt; 'ConverterBase" Usage="xamlValueConverter.CreateInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual TConverterBase CreateInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -163,10 +190,22 @@
         <exception cref="T:System.Xaml.XamlSchemaException">Converter did not implement the correct base type.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether this instance of <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> and an object have the same value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlValueConverter`1.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="xamlValueConverter.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -190,7 +229,13 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Xaml.Schema.XamlValueConverter`1&lt;!TConverterBase&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlValueConverter`1.Equals(System.Xaml.Schema.XamlValueConverter{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As XamlValueConverter(Of TConverterBase)) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt; -&gt; bool" Usage="xamlValueConverter.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Xaml::Schema::XamlValueConverter&lt;TConverterBase&gt; ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -213,6 +258,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlValueConverter`1.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="xamlValueConverter.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -232,6 +280,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlValueConverter`1.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt;.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -261,6 +312,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt; converter1, System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt; converter2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Xaml.Schema.XamlValueConverter`1&lt;!TConverterBase&gt; converter1, class System.Xaml.Schema.XamlValueConverter`1&lt;!TConverterBase&gt; converter2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlValueConverter`1.op_Equality(System.Xaml.Schema.XamlValueConverter{`0},System.Xaml.Schema.XamlValueConverter{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (converter1 As XamlValueConverter(Of TConverterBase), converter2 As XamlValueConverter(Of TConverterBase)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt; * System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt; -&gt; bool" Usage="converter1 = converter2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Xaml::Schema::XamlValueConverter&lt;TConverterBase&gt; ^ converter1, System::Xaml::Schema::XamlValueConverter&lt;TConverterBase&gt; ^ converter2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -286,6 +340,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt; converter1, System.Xaml.Schema.XamlValueConverter&lt;TConverterBase&gt; converter2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Xaml.Schema.XamlValueConverter`1&lt;!TConverterBase&gt; converter1, class System.Xaml.Schema.XamlValueConverter`1&lt;!TConverterBase&gt; converter2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlValueConverter`1.op_Inequality(System.Xaml.Schema.XamlValueConverter{`0},System.Xaml.Schema.XamlValueConverter{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (converter1 As XamlValueConverter(Of TConverterBase), converter2 As XamlValueConverter(Of TConverterBase)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt; * System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt; -&gt; bool" Usage="System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt;.op_Inequality (converter1, converter2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Xaml::Schema::XamlValueConverter&lt;TConverterBase&gt; ^ converter1, System::Xaml::Schema::XamlValueConverter&lt;TConverterBase&gt; ^ converter2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -311,6 +368,9 @@
       <MemberSignature Language="C#" Value="public System.Xaml.XamlType TargetType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlType TargetType" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.Schema.XamlValueConverter`1.TargetType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetType As XamlType" />
+      <MemberSignature Language="F#" Value="member this.TargetType : System.Xaml.XamlType" Usage="System.Xaml.Schema.XamlValueConverter&lt;'ConverterBase (requires 'ConverterBase : null)&gt;.TargetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlType ^ TargetType { System::Xaml::XamlType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -330,6 +390,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.Schema.XamlValueConverter`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xamlValueConverter.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -352,23 +415,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether this instance of <see cref="T:System.Xaml.Schema.XamlValueConverter`1" /> and an object have the same value.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

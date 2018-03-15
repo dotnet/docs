@@ -1,7 +1,10 @@
-<Type Name="XamlObjectWriterException" FullName="System.Xaml.XamlObjectWriterException">
+﻿<Type Name="XamlObjectWriterException" FullName="System.Xaml.XamlObjectWriterException">
   <TypeSignature Language="C#" Value="public class XamlObjectWriterException : System.Xaml.XamlException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit XamlObjectWriterException extends System.Xaml.XamlException" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlObjectWriterException" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlObjectWriterException&#xA;Inherits XamlException" />
+  <TypeSignature Language="F#" Value="type XamlObjectWriterException = class&#xA;    inherit XamlException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlObjectWriterException : System::Xaml::XamlException" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +25,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectWriterException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XamlObjectWriterException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectWriterException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlObjectWriterException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -41,6 +55,9 @@
       <MemberSignature Language="C#" Value="public XamlObjectWriterException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectWriterException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlObjectWriterException : string -&gt; System.Xaml.XamlObjectWriterException" Usage="new System.Xaml.XamlObjectWriterException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlObjectWriterException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -59,6 +76,9 @@
       <MemberSignature Language="C#" Value="protected XamlObjectWriterException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectWriterException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlObjectWriterException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Xaml.XamlObjectWriterException" Usage="new System.Xaml.XamlObjectWriterException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XamlObjectWriterException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -79,6 +99,9 @@
       <MemberSignature Language="C#" Value="public XamlObjectWriterException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectWriterException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlObjectWriterException : string * Exception -&gt; System.Xaml.XamlObjectWriterException" Usage="new System.Xaml.XamlObjectWriterException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlObjectWriterException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -102,14 +125,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlObjectWriterException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

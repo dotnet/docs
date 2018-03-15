@@ -1,7 +1,10 @@
-<Type Name="IncrementalHitTester" FullName="System.Windows.Ink.IncrementalHitTester">
+﻿<Type Name="IncrementalHitTester" FullName="System.Windows.Ink.IncrementalHitTester">
   <TypeSignature Language="C#" Value="public abstract class IncrementalHitTester" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit IncrementalHitTester extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.IncrementalHitTester" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class IncrementalHitTester" />
+  <TypeSignature Language="F#" Value="type IncrementalHitTester = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IncrementalHitTester abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +55,8 @@
       <MemberSignature Language="C#" Value="public void AddPoint (System.Windows.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPoint(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.IncrementalHitTester.AddPoint(System.Windows.Point)" />
+      <MemberSignature Language="F#" Value="member this.AddPoint : System.Windows.Point -&gt; unit" Usage="incrementalHitTester.AddPoint point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPoint(System::Windows::Point point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -81,10 +86,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddPoints">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds points to the <see cref="T:System.Windows.Ink.IncrementalHitTester" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddPoints">
       <MemberSignature Language="C#" Value="public void AddPoints (System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt; points);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPoints(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Point&gt; points) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.IncrementalHitTester.AddPoints(System.Collections.Generic.IEnumerable{System.Windows.Point})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddPoints (points As IEnumerable(Of Point))" />
+      <MemberSignature Language="F#" Value="member this.AddPoints : seq&lt;System.Windows.Point&gt; -&gt; unit" Usage="incrementalHitTester.AddPoints points" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPoints(System::Collections::Generic::IEnumerable&lt;System::Windows::Point&gt; ^ points);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,6 +133,9 @@
       <MemberSignature Language="C#" Value="public void AddPoints (System.Windows.Input.StylusPointCollection stylusPoints);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddPoints(class System.Windows.Input.StylusPointCollection stylusPoints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.IncrementalHitTester.AddPoints(System.Windows.Input.StylusPointCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddPoints (stylusPoints As StylusPointCollection)" />
+      <MemberSignature Language="F#" Value="member this.AddPoints : System.Windows.Input.StylusPointCollection -&gt; unit" Usage="incrementalHitTester.AddPoints stylusPoints" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddPoints(System::Windows::Input::StylusPointCollection ^ stylusPoints);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -147,6 +167,9 @@
       <MemberSignature Language="C#" Value="protected abstract void AddPointsCore (System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt; points);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddPointsCore(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Point&gt; points) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.IncrementalHitTester.AddPointsCore(System.Collections.Generic.IEnumerable{System.Windows.Point})" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub AddPointsCore (points As IEnumerable(Of Point))" />
+      <MemberSignature Language="F#" Value="abstract member AddPointsCore : seq&lt;System.Windows.Point&gt; -&gt; unit" Usage="incrementalHitTester.AddPointsCore points" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void AddPointsCore(System::Collections::Generic::IEnumerable&lt;System::Windows::Point&gt; ^ points);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -168,6 +191,9 @@
       <MemberSignature Language="C#" Value="public void EndHitTesting ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndHitTesting() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.IncrementalHitTester.EndHitTesting" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndHitTesting ()" />
+      <MemberSignature Language="F#" Value="member this.EndHitTesting : unit -&gt; unit" Usage="incrementalHitTester.EndHitTesting " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndHitTesting();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -201,6 +227,9 @@
       <MemberSignature Language="C#" Value="public bool IsValid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Ink.IncrementalHitTester.IsValid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool" Usage="System.Windows.Ink.IncrementalHitTester.IsValid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -231,14 +260,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddPoints">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds points to the <see cref="T:System.Windows.Ink.IncrementalHitTester" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

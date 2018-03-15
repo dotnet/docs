@@ -1,7 +1,10 @@
-<Type Name="GridLengthConverter" FullName="System.Windows.GridLengthConverter">
+﻿<Type Name="GridLengthConverter" FullName="System.Windows.GridLengthConverter">
   <TypeSignature Language="C#" Value="public class GridLengthConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridLengthConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Windows.GridLengthConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class GridLengthConverter&#xA;Inherits TypeConverter" />
+  <TypeSignature Language="F#" Value="type GridLengthConverter = class&#xA;    inherit TypeConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GridLengthConverter : System::ComponentModel::TypeConverter" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,8 @@
       <MemberSignature Language="C#" Value="public GridLengthConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.GridLengthConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GridLengthConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -44,6 +49,9 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, Type sourceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, class System.Type sourceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.GridLengthConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFrom (typeDescriptorContext As ITypeDescriptorContext, sourceType As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="gridLengthConverter.CanConvertFrom (typeDescriptorContext, sourceType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ typeDescriptorContext, Type ^ sourceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +87,9 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertTo (System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, Type destinationType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertTo(class System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, class System.Type destinationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.GridLengthConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertTo (typeDescriptorContext As ITypeDescriptorContext, destinationType As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="gridLengthConverter.CanConvertTo (typeDescriptorContext, destinationType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertTo(System::ComponentModel::ITypeDescriptorContext ^ typeDescriptorContext, Type ^ destinationType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -114,6 +125,8 @@
       <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, System.Globalization.CultureInfo cultureInfo, object source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, class System.Globalization.CultureInfo cultureInfo, object source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.GridLengthConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberSignature Language="F#" Value="override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="gridLengthConverter.ConvertFrom (typeDescriptorContext, cultureInfo, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ typeDescriptorContext, System::Globalization::CultureInfo ^ cultureInfo, System::Object ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -154,6 +167,8 @@
       <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, System.Globalization.CultureInfo cultureInfo, object value, Type destinationType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext typeDescriptorContext, class System.Globalization.CultureInfo cultureInfo, object value, class System.Type destinationType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.GridLengthConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberSignature Language="F#" Value="override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="gridLengthConverter.ConvertTo (typeDescriptorContext, cultureInfo, value, destinationType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertTo(System::ComponentModel::ITypeDescriptorContext ^ typeDescriptorContext, System::Globalization::CultureInfo ^ cultureInfo, System::Object ^ value, Type ^ destinationType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

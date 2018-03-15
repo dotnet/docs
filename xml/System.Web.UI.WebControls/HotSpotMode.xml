@@ -1,7 +1,10 @@
-<Type Name="HotSpotMode" FullName="System.Web.UI.WebControls.HotSpotMode">
+﻿<Type Name="HotSpotMode" FullName="System.Web.UI.WebControls.HotSpotMode">
   <TypeSignature Language="C#" Value="public enum HotSpotMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HotSpotMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.HotSpotMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HotSpotMode" />
+  <TypeSignature Language="F#" Value="type HotSpotMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class HotSpotMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +66,9 @@
       <MemberSignature Language="C#" Value="Inactive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HotSpotMode Inactive = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HotSpotMode.Inactive" />
+      <MemberSignature Language="VB.NET" Value="Inactive" />
+      <MemberSignature Language="F#" Value="Inactive = 3" Usage="System.Web.UI.WebControls.HotSpotMode.Inactive" />
+      <MemberSignature Language="C++ CLI" Value="Inactive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -71,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.HotSpotMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Web.UI.WebControls.HotSpot" /> does not have any behavior.</summary>
       </Docs>
@@ -79,6 +86,9 @@
       <MemberSignature Language="C#" Value="Navigate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HotSpotMode Navigate = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HotSpotMode.Navigate" />
+      <MemberSignature Language="VB.NET" Value="Navigate" />
+      <MemberSignature Language="F#" Value="Navigate = 1" Usage="System.Web.UI.WebControls.HotSpotMode.Navigate" />
+      <MemberSignature Language="C++ CLI" Value="Navigate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.HotSpotMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Web.UI.WebControls.HotSpot" /> navigates to a URL.</summary>
       </Docs>
@@ -95,6 +106,9 @@
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HotSpotMode NotSet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HotSpotMode.NotSet" />
+      <MemberSignature Language="VB.NET" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Web.UI.WebControls.HotSpotMode.NotSet" />
+      <MemberSignature Language="C++ CLI" Value="NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -103,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.HotSpotMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Web.UI.WebControls.HotSpot" /> uses the behavior set by the <see cref="T:System.Web.UI.WebControls.ImageMap" /> control's <see cref="P:System.Web.UI.WebControls.ImageMap.HotSpotMode" /> property. If the <see cref="T:System.Web.UI.WebControls.ImageMap" /> control does not define the behavior, the <see cref="T:System.Web.UI.WebControls.HotSpot" /> object navigates to a URL.</summary>
       </Docs>
@@ -111,6 +126,9 @@
       <MemberSignature Language="C#" Value="PostBack" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.HotSpotMode PostBack = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.HotSpotMode.PostBack" />
+      <MemberSignature Language="VB.NET" Value="PostBack" />
+      <MemberSignature Language="F#" Value="PostBack = 2" Usage="System.Web.UI.WebControls.HotSpotMode.PostBack" />
+      <MemberSignature Language="C++ CLI" Value="PostBack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -119,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.HotSpotMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Web.UI.WebControls.HotSpot" /> generates a postback to the server.</summary>
       </Docs>

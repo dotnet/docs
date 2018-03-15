@@ -1,7 +1,10 @@
-<Type Name="HierarchicalVirtualizationConstraints" FullName="System.Windows.Controls.HierarchicalVirtualizationConstraints">
+﻿<Type Name="HierarchicalVirtualizationConstraints" FullName="System.Windows.Controls.HierarchicalVirtualizationConstraints">
   <TypeSignature Language="C#" Value="public struct HierarchicalVirtualizationConstraints" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit HierarchicalVirtualizationConstraints extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" />
+  <TypeSignature Language="VB.NET" Value="Public Structure HierarchicalVirtualizationConstraints" />
+  <TypeSignature Language="F#" Value="type HierarchicalVirtualizationConstraints = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class HierarchicalVirtualizationConstraints" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public HierarchicalVirtualizationConstraints (System.Windows.Controls.VirtualizationCacheLength cacheLength, System.Windows.Controls.VirtualizationCacheLengthUnit cacheLengthUnit, System.Windows.Rect viewport);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Controls.VirtualizationCacheLength cacheLength, valuetype System.Windows.Controls.VirtualizationCacheLengthUnit cacheLengthUnit, valuetype System.Windows.Rect viewport) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationConstraints.#ctor(System.Windows.Controls.VirtualizationCacheLength,System.Windows.Controls.VirtualizationCacheLengthUnit,System.Windows.Rect)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cacheLength As VirtualizationCacheLength, cacheLengthUnit As VirtualizationCacheLengthUnit, viewport As Rect)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.HierarchicalVirtualizationConstraints : System.Windows.Controls.VirtualizationCacheLength * System.Windows.Controls.VirtualizationCacheLengthUnit * System.Windows.Rect -&gt; System.Windows.Controls.HierarchicalVirtualizationConstraints" Usage="new System.Windows.Controls.HierarchicalVirtualizationConstraints (cacheLength, cacheLengthUnit, viewport)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HierarchicalVirtualizationConstraints(System::Windows::Controls::VirtualizationCacheLength cacheLength, System::Windows::Controls::VirtualizationCacheLengthUnit cacheLengthUnit, System::Windows::Rect viewport);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +47,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.VirtualizationCacheLength CacheLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.VirtualizationCacheLength CacheLength" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationConstraints.CacheLength" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CacheLength As VirtualizationCacheLength" />
+      <MemberSignature Language="F#" Value="member this.CacheLength : System.Windows.Controls.VirtualizationCacheLength" Usage="System.Windows.Controls.HierarchicalVirtualizationConstraints.CacheLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::VirtualizationCacheLength CacheLength { System::Windows::Controls::VirtualizationCacheLength get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -59,6 +68,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.VirtualizationCacheLengthUnit CacheLengthUnit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.VirtualizationCacheLengthUnit CacheLengthUnit" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationConstraints.CacheLengthUnit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CacheLengthUnit As VirtualizationCacheLengthUnit" />
+      <MemberSignature Language="F#" Value="member this.CacheLengthUnit : System.Windows.Controls.VirtualizationCacheLengthUnit" Usage="System.Windows.Controls.HierarchicalVirtualizationConstraints.CacheLengthUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::VirtualizationCacheLengthUnit CacheLengthUnit { System::Windows::Controls::VirtualizationCacheLengthUnit get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,10 +85,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the specified object is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object oCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object oCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationConstraints.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (oCompare As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="hierarchicalVirtualizationConstraints.Equals oCompare" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ oCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -100,6 +124,9 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Controls.HierarchicalVirtualizationConstraints comparisonConstraints);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Controls.HierarchicalVirtualizationConstraints comparisonConstraints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationConstraints.Equals(System.Windows.Controls.HierarchicalVirtualizationConstraints)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (comparisonConstraints As HierarchicalVirtualizationConstraints) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Controls.HierarchicalVirtualizationConstraints -&gt; bool" Usage="hierarchicalVirtualizationConstraints.Equals comparisonConstraints" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Controls::HierarchicalVirtualizationConstraints comparisonConstraints);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,6 +150,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationConstraints.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="hierarchicalVirtualizationConstraints.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -142,6 +172,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Controls.HierarchicalVirtualizationConstraints constraints1, System.Windows.Controls.HierarchicalVirtualizationConstraints constraints2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.HierarchicalVirtualizationConstraints constraints1, valuetype System.Windows.Controls.HierarchicalVirtualizationConstraints constraints2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationConstraints.op_Equality(System.Windows.Controls.HierarchicalVirtualizationConstraints,System.Windows.Controls.HierarchicalVirtualizationConstraints)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (constraints1 As HierarchicalVirtualizationConstraints, constraints2 As HierarchicalVirtualizationConstraints) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Controls.HierarchicalVirtualizationConstraints * System.Windows.Controls.HierarchicalVirtualizationConstraints -&gt; bool" Usage="constraints1 = constraints2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Controls::HierarchicalVirtualizationConstraints constraints1, System::Windows::Controls::HierarchicalVirtualizationConstraints constraints2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -167,6 +200,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Controls.HierarchicalVirtualizationConstraints constraints1, System.Windows.Controls.HierarchicalVirtualizationConstraints constraints2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.HierarchicalVirtualizationConstraints constraints1, valuetype System.Windows.Controls.HierarchicalVirtualizationConstraints constraints2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationConstraints.op_Inequality(System.Windows.Controls.HierarchicalVirtualizationConstraints,System.Windows.Controls.HierarchicalVirtualizationConstraints)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (constraints1 As HierarchicalVirtualizationConstraints, constraints2 As HierarchicalVirtualizationConstraints) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Controls.HierarchicalVirtualizationConstraints * System.Windows.Controls.HierarchicalVirtualizationConstraints -&gt; bool" Usage="System.Windows.Controls.HierarchicalVirtualizationConstraints.op_Inequality (constraints1, constraints2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Controls::HierarchicalVirtualizationConstraints constraints1, System::Windows::Controls::HierarchicalVirtualizationConstraints constraints2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -192,6 +228,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Rect Viewport { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect Viewport" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationConstraints.Viewport" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Viewport As Rect" />
+      <MemberSignature Language="F#" Value="member this.Viewport : System.Windows.Rect" Usage="System.Windows.Controls.HierarchicalVirtualizationConstraints.Viewport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect Viewport { System::Windows::Rect get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -206,14 +245,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the specified object is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationConstraints" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

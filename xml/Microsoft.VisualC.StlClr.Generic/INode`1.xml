@@ -1,7 +1,10 @@
-<Type Name="INode&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.INode&lt;TValue&gt;">
+﻿<Type Name="INode&lt;TValue&gt;" FullName="Microsoft.VisualC.StlClr.Generic.INode&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public interface INode&lt;TValue&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract beforefieldinit INode`1&lt;TValue&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.StlClr.Generic.INode`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface INode(Of TValue)" />
+  <TypeSignature Language="F#" Value="type INode&lt;'Value&gt; = interface" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public interface class INode" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public TValue _Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TValue _Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualC.StlClr.Generic.INode`1._Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property _Value As TValue" />
+      <MemberSignature Language="F#" Value="member this._Value :  with get, set" Usage="Microsoft.VisualC.StlClr.Generic.INode&lt;'Value&gt;._Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TValue % _Value { TValue % get(); void set(TValue % value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -38,6 +44,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer&lt;TValue&gt; container ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer`1&lt;!TValue&gt; container() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.INode`1.container" />
+      <MemberSignature Language="VB.NET" Value="Public Function container () As IBidirectionalContainer(Of TValue)" />
+      <MemberSignature Language="F#" Value="abstract member container : unit -&gt; Microsoft.VisualC.StlClr.Generic.IBidirectionalContainer&lt;'Value&gt;" Usage="iNode.container " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::Generic::IBidirectionalContainer&lt;TValue&gt; ^ container();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -57,6 +66,9 @@
       <MemberSignature Language="C#" Value="public bool is_head ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool is_head() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.INode`1.is_head" />
+      <MemberSignature Language="VB.NET" Value="Public Function is_head () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member is_head : unit -&gt; bool" Usage="iNode.is_head " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool is_head();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -77,6 +89,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.Generic.INode&lt;TValue&gt; next_node ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.VisualC.StlClr.Generic.INode`1&lt;!TValue&gt; next_node() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.INode`1.next_node" />
+      <MemberSignature Language="VB.NET" Value="Public Function next_node () As INode(Of TValue)" />
+      <MemberSignature Language="F#" Value="abstract member next_node : unit -&gt; Microsoft.VisualC.StlClr.Generic.INode&lt;'Value&gt;" Usage="iNode.next_node " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::Generic::INode&lt;TValue&gt; ^ next_node();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>
@@ -96,6 +111,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualC.StlClr.Generic.INode&lt;TValue&gt; prev_node ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.VisualC.StlClr.Generic.INode`1&lt;!TValue&gt; prev_node() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.StlClr.Generic.INode`1.prev_node" />
+      <MemberSignature Language="VB.NET" Value="Public Function prev_node () As INode(Of TValue)" />
+      <MemberSignature Language="F#" Value="abstract member prev_node : unit -&gt; Microsoft.VisualC.StlClr.Generic.INode&lt;'Value&gt;" Usage="iNode.prev_node " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::VisualC::StlClr::Generic::INode&lt;TValue&gt; ^ prev_node();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC.STLCLR</AssemblyName>

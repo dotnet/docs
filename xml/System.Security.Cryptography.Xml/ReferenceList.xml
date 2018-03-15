@@ -1,7 +1,10 @@
-<Type Name="ReferenceList" FullName="System.Security.Cryptography.Xml.ReferenceList">
+﻿<Type Name="ReferenceList" FullName="System.Security.Cryptography.Xml.ReferenceList">
   <TypeSignature Language="C#" Value="public sealed class ReferenceList : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ReferenceList extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.ReferenceList" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ReferenceList&#xA;Implements IList" />
+  <TypeSignature Language="F#" Value="type ReferenceList = class&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReferenceList sealed : System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="public ReferenceList ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.ReferenceList.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ReferenceList();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -59,7 +64,13 @@
       <MemberSignature Language="C#" Value="public int Add (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.ReferenceList.Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj -&gt; int&#xA;override this.Add : obj -&gt; int" Usage="referenceList.Add value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -91,7 +102,13 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.ReferenceList.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="referenceList.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -113,7 +130,13 @@
       <MemberSignature Language="C#" Value="public bool Contains (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.ReferenceList.Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Contains : obj -&gt; bool&#xA;override this.Contains : obj -&gt; bool" Usage="referenceList.Contains value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -140,7 +163,12 @@
       <MemberSignature Language="C#" Value="public void CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.ReferenceList.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="referenceList.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -167,7 +195,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.ReferenceList.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Security.Cryptography.Xml.ReferenceList.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -189,7 +223,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.ReferenceList.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="referenceList.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -219,7 +259,13 @@
       <MemberSignature Language="C#" Value="public int IndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.ReferenceList.IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : obj -&gt; int&#xA;override this.IndexOf : obj -&gt; int" Usage="referenceList.IndexOf value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -245,7 +291,13 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.ReferenceList.Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * obj -&gt; unit&#xA;override this.Insert : int * obj -&gt; unit" Usage="referenceList.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -278,7 +330,13 @@
       <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.ReferenceList.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Security.Cryptography.Xml.ReferenceList.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -301,6 +359,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Xml.EncryptedReference Item (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Cryptography.Xml.EncryptedReference Item(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.ReferenceList.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Item (index As Integer) As EncryptedReference" />
+      <MemberSignature Language="F#" Value="member this.Item : int -&gt; System.Security.Cryptography.Xml.EncryptedReference" Usage="referenceList.Item index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Cryptography::Xml::EncryptedReference ^ Item(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -327,6 +388,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Xml.EncryptedReference this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Xml.EncryptedReference ItemOf(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.ReferenceList.ItemOf(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property ItemOf(index As Integer) As EncryptedReference" />
+      <MemberSignature Language="F#" Value="member this.ItemOf(int) : System.Security.Cryptography.Xml.EncryptedReference with get, set" Usage="System.Security.Cryptography.Xml.ReferenceList.ItemOf" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Xml::EncryptedReference ^ default[int] { System::Security::Cryptography::Xml::EncryptedReference ^ get(int index); void set(int index, System::Security::Cryptography::Xml::EncryptedReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -353,7 +417,13 @@
       <MemberSignature Language="C#" Value="public void Remove (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.ReferenceList.Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Remove : obj -&gt; unit&#xA;override this.Remove : obj -&gt; unit" Usage="referenceList.Remove value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -378,7 +448,13 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.ReferenceList.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="referenceList.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -403,7 +479,13 @@
       <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.ReferenceList.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Security.Cryptography.Xml.ReferenceList.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -425,7 +507,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.ReferenceList.System#Collections#IList#IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
+      <MemberSignature Language="F#" Usage="System.Security.Cryptography.Xml.ReferenceList.System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -455,7 +543,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.ReferenceList.System#Collections#IList#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
+      <MemberSignature Language="F#" Usage="System.Security.Cryptography.Xml.ReferenceList.System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -485,7 +579,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.ReferenceList.System#Collections#IList#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
+      <MemberSignature Language="F#" Usage="System.Security.Cryptography.Xml.ReferenceList.System.Collections.IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

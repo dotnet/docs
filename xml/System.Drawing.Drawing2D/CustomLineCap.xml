@@ -1,7 +1,10 @@
-<Type Name="CustomLineCap" FullName="System.Drawing.Drawing2D.CustomLineCap">
+﻿<Type Name="CustomLineCap" FullName="System.Drawing.Drawing2D.CustomLineCap">
   <TypeSignature Language="C#" Value="public class CustomLineCap : MarshalByRefObject, ICloneable, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CustomLineCap extends System.MarshalByRefObject implements class System.ICloneable, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.CustomLineCap" />
+  <TypeSignature Language="VB.NET" Value="Public Class CustomLineCap&#xA;Inherits MarshalByRefObject&#xA;Implements ICloneable, IDisposable" />
+  <TypeSignature Language="F#" Value="type CustomLineCap = class&#xA;    inherit MarshalByRefObject&#xA;    interface ICloneable&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CustomLineCap : MarshalByRefObject, ICloneable, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,10 +40,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> class with the specified outline and fill.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CustomLineCap (System.Drawing.Drawing2D.GraphicsPath fillPath, System.Drawing.Drawing2D.GraphicsPath strokePath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Drawing2D.GraphicsPath fillPath, class System.Drawing.Drawing2D.GraphicsPath strokePath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.#ctor(System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.GraphicsPath)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fillPath As GraphicsPath, strokePath As GraphicsPath)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.CustomLineCap : System.Drawing.Drawing2D.GraphicsPath * System.Drawing.Drawing2D.GraphicsPath -&gt; System.Drawing.Drawing2D.CustomLineCap" Usage="new System.Drawing.Drawing2D.CustomLineCap (fillPath, strokePath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomLineCap(System::Drawing::Drawing2D::GraphicsPath ^ fillPath, System::Drawing::Drawing2D::GraphicsPath ^ strokePath);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -78,6 +93,9 @@
       <MemberSignature Language="C#" Value="public CustomLineCap (System.Drawing.Drawing2D.GraphicsPath fillPath, System.Drawing.Drawing2D.GraphicsPath strokePath, System.Drawing.Drawing2D.LineCap baseCap);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Drawing2D.GraphicsPath fillPath, class System.Drawing.Drawing2D.GraphicsPath strokePath, valuetype System.Drawing.Drawing2D.LineCap baseCap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.#ctor(System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.LineCap)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fillPath As GraphicsPath, strokePath As GraphicsPath, baseCap As LineCap)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.CustomLineCap : System.Drawing.Drawing2D.GraphicsPath * System.Drawing.Drawing2D.GraphicsPath * System.Drawing.Drawing2D.LineCap -&gt; System.Drawing.Drawing2D.CustomLineCap" Usage="new System.Drawing.Drawing2D.CustomLineCap (fillPath, strokePath, baseCap)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomLineCap(System::Drawing::Drawing2D::GraphicsPath ^ fillPath, System::Drawing::Drawing2D::GraphicsPath ^ strokePath, System::Drawing::Drawing2D::LineCap baseCap);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -109,6 +127,9 @@
       <MemberSignature Language="C#" Value="public CustomLineCap (System.Drawing.Drawing2D.GraphicsPath fillPath, System.Drawing.Drawing2D.GraphicsPath strokePath, System.Drawing.Drawing2D.LineCap baseCap, float baseInset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Drawing2D.GraphicsPath fillPath, class System.Drawing.Drawing2D.GraphicsPath strokePath, valuetype System.Drawing.Drawing2D.LineCap baseCap, float32 baseInset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.#ctor(System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.LineCap,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fillPath As GraphicsPath, strokePath As GraphicsPath, baseCap As LineCap, baseInset As Single)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Drawing2D.CustomLineCap : System.Drawing.Drawing2D.GraphicsPath * System.Drawing.Drawing2D.GraphicsPath * System.Drawing.Drawing2D.LineCap * single -&gt; System.Drawing.Drawing2D.CustomLineCap" Usage="new System.Drawing.Drawing2D.CustomLineCap (fillPath, strokePath, baseCap, baseInset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomLineCap(System::Drawing::Drawing2D::GraphicsPath ^ fillPath, System::Drawing::Drawing2D::GraphicsPath ^ strokePath, System::Drawing::Drawing2D::LineCap baseCap, float baseInset);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -142,6 +163,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.LineCap BaseCap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.LineCap BaseCap" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.CustomLineCap.BaseCap" />
+      <MemberSignature Language="VB.NET" Value="Public Property BaseCap As LineCap" />
+      <MemberSignature Language="F#" Value="member this.BaseCap : System.Drawing.Drawing2D.LineCap with get, set" Usage="System.Drawing.Drawing2D.CustomLineCap.BaseCap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Drawing2D::LineCap BaseCap { System::Drawing::Drawing2D::LineCap get(); void set(System::Drawing::Drawing2D::LineCap value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -160,6 +184,9 @@
       <MemberSignature Language="C#" Value="public float BaseInset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 BaseInset" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.CustomLineCap.BaseInset" />
+      <MemberSignature Language="VB.NET" Value="Public Property BaseInset As Single" />
+      <MemberSignature Language="F#" Value="member this.BaseInset : single with get, set" Usage="System.Drawing.Drawing2D.CustomLineCap.BaseInset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float BaseInset { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -178,7 +205,13 @@
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="customLineCap.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -268,7 +301,13 @@ private void CloneExample(PaintEventArgs e)
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="customLineCap.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -293,6 +332,9 @@ private void CloneExample(PaintEventArgs e)
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="customLineCap.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -315,6 +357,9 @@ private void CloneExample(PaintEventArgs e)
       <MemberSignature Language="C#" Value="~CustomLineCap ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="customLineCap.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!CustomLineCap ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -333,6 +378,9 @@ private void CloneExample(PaintEventArgs e)
       <MemberSignature Language="C#" Value="public void GetStrokeCaps (out System.Drawing.Drawing2D.LineCap startCap, out System.Drawing.Drawing2D.LineCap endCap);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetStrokeCaps([out] valuetype System.Drawing.Drawing2D.LineCap&amp; startCap, [out] valuetype System.Drawing.Drawing2D.LineCap&amp; endCap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.GetStrokeCaps(System.Drawing.Drawing2D.LineCap@,System.Drawing.Drawing2D.LineCap@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetStrokeCaps (ByRef startCap As LineCap, ByRef endCap As LineCap)" />
+      <MemberSignature Language="F#" Value="member this.GetStrokeCaps :  *  -&gt; unit" Usage="customLineCap.GetStrokeCaps (startCap, endCap)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetStrokeCaps([Runtime::InteropServices::Out] System::Drawing::Drawing2D::LineCap % startCap, [Runtime::InteropServices::Out] System::Drawing::Drawing2D::LineCap % endCap);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -366,6 +414,9 @@ private void CloneExample(PaintEventArgs e)
       <MemberSignature Language="C#" Value="public void SetStrokeCaps (System.Drawing.Drawing2D.LineCap startCap, System.Drawing.Drawing2D.LineCap endCap);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetStrokeCaps(valuetype System.Drawing.Drawing2D.LineCap startCap, valuetype System.Drawing.Drawing2D.LineCap endCap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Drawing2D.CustomLineCap.SetStrokeCaps(System.Drawing.Drawing2D.LineCap,System.Drawing.Drawing2D.LineCap)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetStrokeCaps (startCap As LineCap, endCap As LineCap)" />
+      <MemberSignature Language="F#" Value="member this.SetStrokeCaps : System.Drawing.Drawing2D.LineCap * System.Drawing.Drawing2D.LineCap -&gt; unit" Usage="customLineCap.SetStrokeCaps (startCap, endCap)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetStrokeCaps(System::Drawing::Drawing2D::LineCap startCap, System::Drawing::Drawing2D::LineCap endCap);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -399,6 +450,9 @@ private void CloneExample(PaintEventArgs e)
       <MemberSignature Language="C#" Value="public System.Drawing.Drawing2D.LineJoin StrokeJoin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Drawing2D.LineJoin StrokeJoin" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.CustomLineCap.StrokeJoin" />
+      <MemberSignature Language="VB.NET" Value="Public Property StrokeJoin As LineJoin" />
+      <MemberSignature Language="F#" Value="member this.StrokeJoin : System.Drawing.Drawing2D.LineJoin with get, set" Usage="System.Drawing.Drawing2D.CustomLineCap.StrokeJoin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Drawing2D::LineJoin StrokeJoin { System::Drawing::Drawing2D::LineJoin get(); void set(System::Drawing::Drawing2D::LineJoin value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -424,6 +478,9 @@ private void CloneExample(PaintEventArgs e)
       <MemberSignature Language="C#" Value="public float WidthScale { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 WidthScale" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.CustomLineCap.WidthScale" />
+      <MemberSignature Language="VB.NET" Value="Public Property WidthScale As Single" />
+      <MemberSignature Language="F#" Value="member this.WidthScale : single with get, set" Usage="System.Drawing.Drawing2D.CustomLineCap.WidthScale" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float WidthScale { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -445,14 +502,5 @@ private void CloneExample(PaintEventArgs e)
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Drawing2D.CustomLineCap" /> class with the specified outline and fill.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

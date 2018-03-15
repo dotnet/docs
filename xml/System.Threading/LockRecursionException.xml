@@ -1,7 +1,10 @@
-<Type Name="LockRecursionException" FullName="System.Threading.LockRecursionException">
+﻿<Type Name="LockRecursionException" FullName="System.Threading.LockRecursionException">
   <TypeSignature Language="C#" Value="public class LockRecursionException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit LockRecursionException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:System.Threading.LockRecursionException" />
+  <TypeSignature Language="VB.NET" Value="Public Class LockRecursionException&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type LockRecursionException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LockRecursionException : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,10 +56,23 @@
     <altmember cref="T:System.Threading.ReaderWriterLockSlim" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.LockRecursionException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LockRecursionException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.LockRecursionException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LockRecursionException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -97,6 +113,9 @@
       <MemberSignature Language="C#" Value="public LockRecursionException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.LockRecursionException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Threading.LockRecursionException : string -&gt; System.Threading.LockRecursionException" Usage="new System.Threading.LockRecursionException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LockRecursionException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -140,6 +159,9 @@
       <MemberSignature Language="C#" Value="protected LockRecursionException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.LockRecursionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Threading.LockRecursionException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Threading.LockRecursionException" Usage="new System.Threading.LockRecursionException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; LockRecursionException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -176,6 +198,9 @@
       <MemberSignature Language="C#" Value="public LockRecursionException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.LockRecursionException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Threading.LockRecursionException : string * Exception -&gt; System.Threading.LockRecursionException" Usage="new System.Threading.LockRecursionException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LockRecursionException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -217,16 +242,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Threading.LockRecursionException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

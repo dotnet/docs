@@ -1,7 +1,10 @@
-<Type Name="SpinWait" FullName="System.Threading.SpinWait">
+﻿<Type Name="SpinWait" FullName="System.Threading.SpinWait">
   <TypeSignature Language="C#" Value="public struct SpinWait" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SpinWait extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Threading.SpinWait" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SpinWait" />
+  <TypeSignature Language="F#" Value="type SpinWait = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class SpinWait" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +51,9 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Threading.SpinWait.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Threading.SpinWait.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -77,6 +83,9 @@
       <MemberSignature Language="C#" Value="public bool NextSpinWillYield { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NextSpinWillYield" />
       <MemberSignature Language="DocId" Value="P:System.Threading.SpinWait.NextSpinWillYield" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextSpinWillYield As Boolean" />
+      <MemberSignature Language="F#" Value="member this.NextSpinWillYield : bool" Usage="System.Threading.SpinWait.NextSpinWillYield" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NextSpinWillYield { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -113,6 +122,9 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinWait.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="F#" Value="member this.Reset : unit -&gt; unit" Usage="spinWait.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -292,6 +304,9 @@
       <MemberSignature Language="C#" Value="public void SpinOnce ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SpinOnce() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinWait.SpinOnce" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SpinOnce ()" />
+      <MemberSignature Language="F#" Value="member this.SpinOnce : unit -&gt; unit" Usage="spinWait.SpinOnce " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SpinOnce();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -324,10 +339,24 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SpinUntil">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Spins until the specified condition is satisfied.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SpinUntil">
       <MemberSignature Language="C#" Value="public static void SpinUntil (Func&lt;bool&gt; condition);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SpinUntil(class System.Func`1&lt;bool&gt; condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinWait.SpinUntil(System.Func{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SpinUntil (condition As Func(Of Boolean))" />
+      <MemberSignature Language="F#" Value="static member SpinUntil : Func&lt;bool&gt; -&gt; unit" Usage="System.Threading.SpinWait.SpinUntil condition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SpinUntil(Func&lt;bool&gt; ^ condition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -361,6 +390,9 @@
       <MemberSignature Language="C#" Value="public static bool SpinUntil (Func&lt;bool&gt; condition, int millisecondsTimeout);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SpinUntil(class System.Func`1&lt;bool&gt; condition, int32 millisecondsTimeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinWait.SpinUntil(System.Func{System.Boolean},System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SpinUntil (condition As Func(Of Boolean), millisecondsTimeout As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="static member SpinUntil : Func&lt;bool&gt; * int -&gt; bool" Usage="System.Threading.SpinWait.SpinUntil (condition, millisecondsTimeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SpinUntil(Func&lt;bool&gt; ^ condition, int millisecondsTimeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -399,6 +431,9 @@
       <MemberSignature Language="C#" Value="public static bool SpinUntil (Func&lt;bool&gt; condition, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool SpinUntil(class System.Func`1&lt;bool&gt; condition, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.SpinWait.SpinUntil(System.Func{System.Boolean},System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SpinUntil (condition As Func(Of Boolean), timeout As TimeSpan) As Boolean" />
+      <MemberSignature Language="F#" Value="static member SpinUntil : Func&lt;bool&gt; * TimeSpan -&gt; bool" Usage="System.Threading.SpinWait.SpinUntil (condition, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool SpinUntil(Func&lt;bool&gt; ^ condition, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -433,16 +468,5 @@
           <paramref name="timeout" /> is a negative number other than -1 milliseconds, which represents an infinite time-out -or- timeout is greater than <see cref="F:System.Int32.MaxValue" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SpinUntil">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Spins until the specified condition is satisfied.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

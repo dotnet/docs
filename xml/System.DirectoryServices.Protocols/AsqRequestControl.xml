@@ -1,7 +1,10 @@
-<Type Name="AsqRequestControl" FullName="System.DirectoryServices.Protocols.AsqRequestControl">
+﻿<Type Name="AsqRequestControl" FullName="System.DirectoryServices.Protocols.AsqRequestControl">
   <TypeSignature Language="C#" Value="public class AsqRequestControl : System.DirectoryServices.Protocols.DirectoryControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AsqRequestControl extends System.DirectoryServices.Protocols.DirectoryControl" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.AsqRequestControl" />
+  <TypeSignature Language="VB.NET" Value="Public Class AsqRequestControl&#xA;Inherits DirectoryControl" />
+  <TypeSignature Language="F#" Value="type AsqRequestControl = class&#xA;    inherit DirectoryControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AsqRequestControl : System::DirectoryServices::Protocols::DirectoryControl" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +19,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.AsqRequestControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.AsqRequestControl" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AsqRequestControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.AsqRequestControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AsqRequestControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -36,6 +51,9 @@
       <MemberSignature Language="C#" Value="public AsqRequestControl (string attributeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.AsqRequestControl.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.AsqRequestControl : string -&gt; System.DirectoryServices.Protocols.AsqRequestControl" Usage="new System.DirectoryServices.Protocols.AsqRequestControl attributeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AsqRequestControl(System::String ^ attributeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -55,6 +73,9 @@
       <MemberSignature Language="C#" Value="public string AttributeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AttributeName" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.AsqRequestControl.AttributeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttributeName As String" />
+      <MemberSignature Language="F#" Value="member this.AttributeName : string with get, set" Usage="System.DirectoryServices.Protocols.AsqRequestControl.AttributeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AttributeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -74,6 +95,9 @@
       <MemberSignature Language="C#" Value="public override byte[] GetValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.AsqRequestControl.GetValue" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue () As Byte()" />
+      <MemberSignature Language="F#" Value="override this.GetValue : unit -&gt; byte[]" Usage="asqRequestControl.GetValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -90,15 +114,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>The <see cref="M:System.DirectoryServices.Protocols.AsqRequestControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.AsqRequestControl" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

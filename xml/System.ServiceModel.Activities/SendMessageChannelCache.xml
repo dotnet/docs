@@ -1,7 +1,10 @@
-<Type Name="SendMessageChannelCache" FullName="System.ServiceModel.Activities.SendMessageChannelCache">
+﻿<Type Name="SendMessageChannelCache" FullName="System.ServiceModel.Activities.SendMessageChannelCache">
   <TypeSignature Language="C#" Value="public sealed class SendMessageChannelCache : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SendMessageChannelCache extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.SendMessageChannelCache" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SendMessageChannelCache&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type SendMessageChannelCache = class&#xA;    interface IDisposable&#xA;    interface ICancelable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SendMessageChannelCache sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,10 +40,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.SendMessageChannelCache" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SendMessageChannelCache ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendMessageChannelCache.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SendMessageChannelCache();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -56,6 +70,9 @@
       <MemberSignature Language="C#" Value="public SendMessageChannelCache (System.ServiceModel.Activities.ChannelCacheSettings factorySettings, System.ServiceModel.Activities.ChannelCacheSettings channelSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Activities.ChannelCacheSettings factorySettings, class System.ServiceModel.Activities.ChannelCacheSettings channelSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendMessageChannelCache.#ctor(System.ServiceModel.Activities.ChannelCacheSettings,System.ServiceModel.Activities.ChannelCacheSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (factorySettings As ChannelCacheSettings, channelSettings As ChannelCacheSettings)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.SendMessageChannelCache : System.ServiceModel.Activities.ChannelCacheSettings * System.ServiceModel.Activities.ChannelCacheSettings -&gt; System.ServiceModel.Activities.SendMessageChannelCache" Usage="new System.ServiceModel.Activities.SendMessageChannelCache (factorySettings, channelSettings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SendMessageChannelCache(System::ServiceModel::Activities::ChannelCacheSettings ^ factorySettings, System::ServiceModel::Activities::ChannelCacheSettings ^ channelSettings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -92,6 +109,9 @@
       <MemberSignature Language="C#" Value="public SendMessageChannelCache (System.ServiceModel.Activities.ChannelCacheSettings factorySettings, System.ServiceModel.Activities.ChannelCacheSettings channelSettings, bool allowUnsafeCaching);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Activities.ChannelCacheSettings factorySettings, class System.ServiceModel.Activities.ChannelCacheSettings channelSettings, bool allowUnsafeCaching) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendMessageChannelCache.#ctor(System.ServiceModel.Activities.ChannelCacheSettings,System.ServiceModel.Activities.ChannelCacheSettings,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (factorySettings As ChannelCacheSettings, channelSettings As ChannelCacheSettings, allowUnsafeCaching As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.SendMessageChannelCache : System.ServiceModel.Activities.ChannelCacheSettings * System.ServiceModel.Activities.ChannelCacheSettings * bool -&gt; System.ServiceModel.Activities.SendMessageChannelCache" Usage="new System.ServiceModel.Activities.SendMessageChannelCache (factorySettings, channelSettings, allowUnsafeCaching)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SendMessageChannelCache(System::ServiceModel::Activities::ChannelCacheSettings ^ factorySettings, System::ServiceModel::Activities::ChannelCacheSettings ^ channelSettings, bool allowUnsafeCaching);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -124,6 +144,9 @@
       <MemberSignature Language="C#" Value="public bool AllowUnsafeCaching { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowUnsafeCaching" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendMessageChannelCache.AllowUnsafeCaching" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowUnsafeCaching As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowUnsafeCaching : bool with get, set" Usage="System.ServiceModel.Activities.SendMessageChannelCache.AllowUnsafeCaching" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowUnsafeCaching { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -150,6 +173,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Activities.ChannelCacheSettings ChannelSettings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.ChannelCacheSettings ChannelSettings" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendMessageChannelCache.ChannelSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChannelSettings As ChannelCacheSettings" />
+      <MemberSignature Language="F#" Value="member this.ChannelSettings : System.ServiceModel.Activities.ChannelCacheSettings with get, set" Usage="System.ServiceModel.Activities.SendMessageChannelCache.ChannelSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::ChannelCacheSettings ^ ChannelSettings { System::ServiceModel::Activities::ChannelCacheSettings ^ get(); void set(System::ServiceModel::Activities::ChannelCacheSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -168,7 +194,13 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendMessageChannelCache.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="sendMessageChannelCache.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -186,6 +218,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Activities.ChannelCacheSettings FactorySettings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.ChannelCacheSettings FactorySettings" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendMessageChannelCache.FactorySettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property FactorySettings As ChannelCacheSettings" />
+      <MemberSignature Language="F#" Value="member this.FactorySettings : System.ServiceModel.Activities.ChannelCacheSettings with get, set" Usage="System.ServiceModel.Activities.SendMessageChannelCache.FactorySettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Activities::ChannelCacheSettings ^ FactorySettings { System::ServiceModel::Activities::ChannelCacheSettings ^ get(); void set(System::ServiceModel::Activities::ChannelCacheSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -207,14 +242,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.SendMessageChannelCache" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

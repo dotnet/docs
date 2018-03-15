@@ -1,7 +1,10 @@
-<Type Name="MessageEncoder" FullName="System.ServiceModel.Channels.MessageEncoder">
+﻿<Type Name="MessageEncoder" FullName="System.ServiceModel.Channels.MessageEncoder">
   <TypeSignature Language="C#" Value="public abstract class MessageEncoder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MessageEncoder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageEncoder" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MessageEncoder" />
+  <TypeSignature Language="F#" Value="type MessageEncoder = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageEncoder abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,6 +57,8 @@
       <MemberSignature Language="C#" Value="protected MessageEncoder ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncoder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MessageEncoder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -76,6 +81,8 @@
       <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginWriteMessage (System.ServiceModel.Channels.Message message, System.IO.Stream stream, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginWriteMessage(class System.ServiceModel.Channels.Message message, class System.IO.Stream stream, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncoder.BeginWriteMessage(System.ServiceModel.Channels.Message,System.IO.Stream,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member BeginWriteMessage : System.ServiceModel.Channels.Message * System.IO.Stream * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginWriteMessage : System.ServiceModel.Channels.Message * System.IO.Stream * AsyncCallback * obj -&gt; IAsyncResult" Usage="messageEncoder.BeginWriteMessage (message, stream, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginWriteMessage(System::ServiceModel::Channels::Message ^ message, System::IO::Stream ^ stream, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -104,6 +111,9 @@
       <MemberSignature Language="C#" Value="public abstract string ContentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageEncoder.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string" Usage="System.ServiceModel.Channels.MessageEncoder.ContentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ ContentType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -143,6 +153,9 @@
       <MemberSignature Language="C#" Value="public virtual void EndWriteMessage (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndWriteMessage(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncoder.EndWriteMessage(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndWriteMessage (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndWriteMessage : IAsyncResult -&gt; unit&#xA;override this.EndWriteMessage : IAsyncResult -&gt; unit" Usage="messageEncoder.EndWriteMessage result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndWriteMessage(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -164,6 +177,9 @@
       <MemberSignature Language="C#" Value="public virtual T GetProperty&lt;T&gt; () where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T GetProperty&lt;class T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncoder.GetProperty``1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperty(Of T As Class) () As T" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : unit -&gt; 'T (requires 'T : null)&#xA;override this.GetProperty : unit -&gt; 'T (requires 'T : null)" Usage="messageEncoder.GetProperty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class virtual T GetProperty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -205,6 +221,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsContentTypeSupported (string contentType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsContentTypeSupported(string contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncoder.IsContentTypeSupported(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsContentTypeSupported (contentType As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsContentTypeSupported : string -&gt; bool&#xA;override this.IsContentTypeSupported : string -&gt; bool" Usage="messageEncoder.IsContentTypeSupported contentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsContentTypeSupported(System::String ^ contentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -252,6 +271,9 @@
       <MemberSignature Language="C#" Value="public abstract string MediaType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MediaType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageEncoder.MediaType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MediaType As String" />
+      <MemberSignature Language="F#" Value="member this.MediaType : string" Usage="System.ServiceModel.Channels.MessageEncoder.MediaType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ MediaType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -291,6 +313,9 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Channels.MessageVersion MessageVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.MessageVersion MessageVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageEncoder.MessageVersion" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property MessageVersion As MessageVersion" />
+      <MemberSignature Language="F#" Value="member this.MessageVersion : System.ServiceModel.Channels.MessageVersion" Usage="System.ServiceModel.Channels.MessageEncoder.MessageVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Channels::MessageVersion ^ MessageVersion { System::ServiceModel::Channels::MessageVersion ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -326,10 +351,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadMessage">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, reads a message from a specified stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadMessage">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ReadMessage (ArraySegment&lt;byte&gt; buffer, System.ServiceModel.Channels.BufferManager bufferManager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.Message ReadMessage(valuetype System.ArraySegment`1&lt;unsigned int8&gt; buffer, class System.ServiceModel.Channels.BufferManager bufferManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncoder.ReadMessage(System.ArraySegment{System.Byte},System.ServiceModel.Channels.BufferManager)" />
+      <MemberSignature Language="F#" Value="member this.ReadMessage : ArraySegment&lt;byte&gt; * System.ServiceModel.Channels.BufferManager -&gt; System.ServiceModel.Channels.Message" Usage="messageEncoder.ReadMessage (buffer, bufferManager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ ReadMessage(ArraySegment&lt;System::Byte&gt; buffer, System::ServiceModel::Channels::BufferManager ^ bufferManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -361,6 +398,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message ReadMessage (System.IO.Stream stream, int maxSizeOfHeaders);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.Message ReadMessage(class System.IO.Stream stream, int32 maxSizeOfHeaders) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncoder.ReadMessage(System.IO.Stream,System.Int32)" />
+      <MemberSignature Language="F#" Value="member this.ReadMessage : System.IO.Stream * int -&gt; System.ServiceModel.Channels.Message" Usage="messageEncoder.ReadMessage (stream, maxSizeOfHeaders)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ ReadMessage(System::IO::Stream ^ stream, int maxSizeOfHeaders);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -392,6 +431,8 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Channels.Message ReadMessage (ArraySegment&lt;byte&gt; buffer, System.ServiceModel.Channels.BufferManager bufferManager, string contentType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ReadMessage(valuetype System.ArraySegment`1&lt;unsigned int8&gt; buffer, class System.ServiceModel.Channels.BufferManager bufferManager, string contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncoder.ReadMessage(System.ArraySegment{System.Byte},System.ServiceModel.Channels.BufferManager,System.String)" />
+      <MemberSignature Language="F#" Value="abstract member ReadMessage : ArraySegment&lt;byte&gt; * System.ServiceModel.Channels.BufferManager * string -&gt; System.ServiceModel.Channels.Message" Usage="messageEncoder.ReadMessage (buffer, bufferManager, contentType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Channels::Message ^ ReadMessage(ArraySegment&lt;System::Byte&gt; buffer, System::ServiceModel::Channels::BufferManager ^ bufferManager, System::String ^ contentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -434,6 +475,8 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Channels.Message ReadMessage (System.IO.Stream stream, int maxSizeOfHeaders, string contentType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.Message ReadMessage(class System.IO.Stream stream, int32 maxSizeOfHeaders, string contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncoder.ReadMessage(System.IO.Stream,System.Int32,System.String)" />
+      <MemberSignature Language="F#" Value="abstract member ReadMessage : System.IO.Stream * int * string -&gt; System.ServiceModel.Channels.Message" Usage="messageEncoder.ReadMessage (stream, maxSizeOfHeaders, contentType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Channels::Message ^ ReadMessage(System::IO::Stream ^ stream, int maxSizeOfHeaders, System::String ^ contentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -476,6 +519,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncoder.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="messageEncoder.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -498,10 +544,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteMessage">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, writes a message to a specified stream or buffer.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteMessage">
       <MemberSignature Language="C#" Value="public abstract void WriteMessage (System.ServiceModel.Channels.Message message, System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteMessage(class System.ServiceModel.Channels.Message message, class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncoder.WriteMessage(System.ServiceModel.Channels.Message,System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="abstract member WriteMessage : System.ServiceModel.Channels.Message * System.IO.Stream -&gt; unit" Usage="messageEncoder.WriteMessage (message, stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteMessage(System::ServiceModel::Channels::Message ^ message, System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -541,6 +599,8 @@
       <MemberSignature Language="C#" Value="public ArraySegment&lt;byte&gt; WriteMessage (System.ServiceModel.Channels.Message message, int maxMessageSize, System.ServiceModel.Channels.BufferManager bufferManager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.ArraySegment`1&lt;unsigned int8&gt; WriteMessage(class System.ServiceModel.Channels.Message message, int32 maxMessageSize, class System.ServiceModel.Channels.BufferManager bufferManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncoder.WriteMessage(System.ServiceModel.Channels.Message,System.Int32,System.ServiceModel.Channels.BufferManager)" />
+      <MemberSignature Language="F#" Value="member this.WriteMessage : System.ServiceModel.Channels.Message * int * System.ServiceModel.Channels.BufferManager -&gt; ArraySegment&lt;byte&gt;" Usage="messageEncoder.WriteMessage (message, maxMessageSize, bufferManager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArraySegment&lt;System::Byte&gt; WriteMessage(System::ServiceModel::Channels::Message ^ message, int maxMessageSize, System::ServiceModel::Channels::BufferManager ^ bufferManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -581,6 +641,8 @@
       <MemberSignature Language="C#" Value="public abstract ArraySegment&lt;byte&gt; WriteMessage (System.ServiceModel.Channels.Message message, int maxMessageSize, System.ServiceModel.Channels.BufferManager bufferManager, int messageOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.ArraySegment`1&lt;unsigned int8&gt; WriteMessage(class System.ServiceModel.Channels.Message message, int32 maxMessageSize, class System.ServiceModel.Channels.BufferManager bufferManager, int32 messageOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncoder.WriteMessage(System.ServiceModel.Channels.Message,System.Int32,System.ServiceModel.Channels.BufferManager,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member WriteMessage : System.ServiceModel.Channels.Message * int * System.ServiceModel.Channels.BufferManager * int -&gt; ArraySegment&lt;byte&gt;" Usage="messageEncoder.WriteMessage (message, maxMessageSize, bufferManager, messageOffset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract ArraySegment&lt;System::Byte&gt; WriteMessage(System::ServiceModel::Channels::Message ^ message, int maxMessageSize, System::ServiceModel::Channels::BufferManager ^ bufferManager, int messageOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -626,25 +688,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteMessage">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, writes a message to a specified stream or buffer.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadMessage">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, reads a message from a specified stream.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

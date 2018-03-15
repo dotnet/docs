@@ -1,7 +1,10 @@
-<Type Name="GetPageCompletedEventArgs" FullName="System.Windows.Documents.GetPageCompletedEventArgs">
+﻿<Type Name="GetPageCompletedEventArgs" FullName="System.Windows.Documents.GetPageCompletedEventArgs">
   <TypeSignature Language="C#" Value="public class GetPageCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GetPageCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.GetPageCompletedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class GetPageCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type GetPageCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GetPageCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public GetPageCompletedEventArgs (System.Windows.Documents.DocumentPage page, int pageNumber, Exception error, bool cancelled, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.DocumentPage page, int32 pageNumber, class System.Exception error, bool cancelled, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.GetPageCompletedEventArgs.#ctor(System.Windows.Documents.DocumentPage,System.Int32,System.Exception,System.Boolean,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (page As DocumentPage, pageNumber As Integer, error As Exception, cancelled As Boolean, userState As Object)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Documents.GetPageCompletedEventArgs : System.Windows.Documents.DocumentPage * int * Exception * bool * obj -&gt; System.Windows.Documents.GetPageCompletedEventArgs" Usage="new System.Windows.Documents.GetPageCompletedEventArgs (page, pageNumber, error, cancelled, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GetPageCompletedEventArgs(System::Windows::Documents::DocumentPage ^ page, int pageNumber, Exception ^ error, bool cancelled, System::Object ^ userState);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -56,6 +62,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.DocumentPage DocumentPage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.DocumentPage DocumentPage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.GetPageCompletedEventArgs.DocumentPage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentPage As DocumentPage" />
+      <MemberSignature Language="F#" Value="member this.DocumentPage : System.Windows.Documents.DocumentPage" Usage="System.Windows.Documents.GetPageCompletedEventArgs.DocumentPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::DocumentPage ^ DocumentPage { System::Windows::Documents::DocumentPage ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +92,9 @@
       <MemberSignature Language="C#" Value="public int PageNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageNumber" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Documents.GetPageCompletedEventArgs.PageNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.PageNumber : int" Usage="System.Windows.Documents.GetPageCompletedEventArgs.PageNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

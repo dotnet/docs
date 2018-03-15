@@ -1,7 +1,10 @@
-<Type Name="EventAccessors" FullName="System.Reflection.Metadata.EventAccessors">
+﻿<Type Name="EventAccessors" FullName="System.Reflection.Metadata.EventAccessors">
   <TypeSignature Language="C#" Value="public struct EventAccessors" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit EventAccessors extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.EventAccessors" />
+  <TypeSignature Language="VB.NET" Value="Public Structure EventAccessors" />
+  <TypeSignature Language="F#" Value="type EventAccessors = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class EventAccessors" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +24,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodDefinitionHandle Adder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.MethodDefinitionHandle Adder" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.EventAccessors.Adder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Adder As MethodDefinitionHandle" />
+      <MemberSignature Language="F#" Value="member this.Adder : System.Reflection.Metadata.MethodDefinitionHandle" Usage="System.Reflection.Metadata.EventAccessors.Adder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::MethodDefinitionHandle Adder { System::Reflection::Metadata::MethodDefinitionHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +47,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodDefinitionHandle Raiser { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.MethodDefinitionHandle Raiser" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.EventAccessors.Raiser" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Raiser As MethodDefinitionHandle" />
+      <MemberSignature Language="F#" Value="member this.Raiser : System.Reflection.Metadata.MethodDefinitionHandle" Usage="System.Reflection.Metadata.EventAccessors.Raiser" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::MethodDefinitionHandle Raiser { System::Reflection::Metadata::MethodDefinitionHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -61,6 +70,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodDefinitionHandle Remover { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.MethodDefinitionHandle Remover" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.EventAccessors.Remover" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Remover As MethodDefinitionHandle" />
+      <MemberSignature Language="F#" Value="member this.Remover : System.Reflection.Metadata.MethodDefinitionHandle" Usage="System.Reflection.Metadata.EventAccessors.Remover" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::MethodDefinitionHandle Remover { System::Reflection::Metadata::MethodDefinitionHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

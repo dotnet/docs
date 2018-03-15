@@ -1,7 +1,10 @@
-<Type Name="IPv6InterfaceProperties" FullName="System.Net.NetworkInformation.IPv6InterfaceProperties">
+﻿<Type Name="IPv6InterfaceProperties" FullName="System.Net.NetworkInformation.IPv6InterfaceProperties">
   <TypeSignature Language="C#" Value="public abstract class IPv6InterfaceProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit IPv6InterfaceProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.IPv6InterfaceProperties" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class IPv6InterfaceProperties" />
+  <TypeSignature Language="F#" Value="type IPv6InterfaceProperties = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IPv6InterfaceProperties abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="protected IPv6InterfaceProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPv6InterfaceProperties.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; IPv6InterfaceProperties();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -79,6 +84,8 @@
       <MemberSignature Language="C#" Value="public virtual long GetScopeId (System.Net.NetworkInformation.ScopeLevel scopeLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 GetScopeId(valuetype System.Net.NetworkInformation.ScopeLevel scopeLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.IPv6InterfaceProperties.GetScopeId(System.Net.NetworkInformation.ScopeLevel)" />
+      <MemberSignature Language="F#" Value="abstract member GetScopeId : System.Net.NetworkInformation.ScopeLevel -&gt; int64&#xA;override this.GetScopeId : System.Net.NetworkInformation.ScopeLevel -&gt; int64" Usage="iPv6InterfaceProperties.GetScopeId scopeLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual long GetScopeId(System::Net::NetworkInformation::ScopeLevel scopeLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -113,6 +120,9 @@
       <MemberSignature Language="C#" Value="public abstract int Index { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv6InterfaceProperties.Index" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Index As Integer" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="System.Net.NetworkInformation.IPv6InterfaceProperties.Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Index { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -157,6 +167,9 @@
       <MemberSignature Language="C#" Value="public abstract int Mtu { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Mtu" />
       <MemberSignature Language="DocId" Value="P:System.Net.NetworkInformation.IPv6InterfaceProperties.Mtu" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Mtu As Integer" />
+      <MemberSignature Language="F#" Value="member this.Mtu : int" Usage="System.Net.NetworkInformation.IPv6InterfaceProperties.Mtu" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Mtu { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>

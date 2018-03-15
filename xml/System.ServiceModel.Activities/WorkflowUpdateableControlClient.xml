@@ -1,7 +1,10 @@
-<Type Name="WorkflowUpdateableControlClient" FullName="System.ServiceModel.Activities.WorkflowUpdateableControlClient">
+﻿<Type Name="WorkflowUpdateableControlClient" FullName="System.ServiceModel.Activities.WorkflowUpdateableControlClient">
   <TypeSignature Language="C#" Value="public class WorkflowUpdateableControlClient : System.ServiceModel.ClientBase&lt;System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WorkflowUpdateableControlClient extends System.ServiceModel.ClientBase`1&lt;class System.ServiceModel.Activities.IWorkflowUpdateableInstanceManagement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" />
+  <TypeSignature Language="VB.NET" Value="Public Class WorkflowUpdateableControlClient&#xA;Inherits ClientBase(Of IWorkflowUpdateableInstanceManagement)" />
+  <TypeSignature Language="F#" Value="type WorkflowUpdateableControlClient = class&#xA;    inherit ClientBase&lt;IWorkflowUpdateableInstanceManagement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowUpdateableControlClient : System::ServiceModel::ClientBase&lt;System::ServiceModel::Activities::IWorkflowUpdateableInstanceManagement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,10 +21,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WorkflowUpdateableControlClient ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowUpdateableControlClient();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -37,6 +51,9 @@
       <MemberSignature Language="C#" Value="public WorkflowUpdateableControlClient (System.ServiceModel.Activities.WorkflowControlEndpoint workflowEndpoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Activities.WorkflowControlEndpoint workflowEndpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.#ctor(System.ServiceModel.Activities.WorkflowControlEndpoint)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (workflowEndpoint As WorkflowControlEndpoint)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.WorkflowUpdateableControlClient : System.ServiceModel.Activities.WorkflowControlEndpoint -&gt; System.ServiceModel.Activities.WorkflowUpdateableControlClient" Usage="new System.ServiceModel.Activities.WorkflowUpdateableControlClient workflowEndpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowUpdateableControlClient(System::ServiceModel::Activities::WorkflowControlEndpoint ^ workflowEndpoint);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -55,6 +72,9 @@
       <MemberSignature Language="C#" Value="public WorkflowUpdateableControlClient (string endpointConfigurationName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (endpointConfigurationName As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.WorkflowUpdateableControlClient : string -&gt; System.ServiceModel.Activities.WorkflowUpdateableControlClient" Usage="new System.ServiceModel.Activities.WorkflowUpdateableControlClient endpointConfigurationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowUpdateableControlClient(System::String ^ endpointConfigurationName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -73,6 +93,8 @@
       <MemberSignature Language="C#" Value="public WorkflowUpdateableControlClient (System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.WorkflowUpdateableControlClient : System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.Activities.WorkflowUpdateableControlClient" Usage="new System.ServiceModel.Activities.WorkflowUpdateableControlClient (binding, remoteAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowUpdateableControlClient(System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -93,6 +115,9 @@
       <MemberSignature Language="C#" Value="public WorkflowUpdateableControlClient (string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName, class System.ServiceModel.EndpointAddress remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.#ctor(System.String,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (endpointConfigurationName As String, remoteAddress As EndpointAddress)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.WorkflowUpdateableControlClient : string * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.Activities.WorkflowUpdateableControlClient" Usage="new System.ServiceModel.Activities.WorkflowUpdateableControlClient (endpointConfigurationName, remoteAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowUpdateableControlClient(System::String ^ endpointConfigurationName, System::ServiceModel::EndpointAddress ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -113,6 +138,9 @@
       <MemberSignature Language="C#" Value="public WorkflowUpdateableControlClient (string endpointConfigurationName, string remoteAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string endpointConfigurationName, string remoteAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (endpointConfigurationName As String, remoteAddress As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Activities.WorkflowUpdateableControlClient : string * string -&gt; System.ServiceModel.Activities.WorkflowUpdateableControlClient" Usage="new System.ServiceModel.Activities.WorkflowUpdateableControlClient (endpointConfigurationName, remoteAddress)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WorkflowUpdateableControlClient(System::String ^ endpointConfigurationName, System::String ^ remoteAddress);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -129,10 +157,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Abandon">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Abandons a workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Abandon">
       <MemberSignature Language="C#" Value="public void Abandon (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Abandon(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Abandon(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Abandon (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.Abandon : Guid -&gt; unit" Usage="workflowUpdateableControlClient.Abandon instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abandon(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -154,6 +194,9 @@
       <MemberSignature Language="C#" Value="public void Abandon (Guid instanceId, string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Abandon(valuetype System.Guid instanceId, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Abandon(System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Abandon (instanceId As Guid, reason As String)" />
+      <MemberSignature Language="F#" Value="member this.Abandon : Guid * string -&gt; unit" Usage="workflowUpdateableControlClient.Abandon (instanceId, reason)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abandon(Guid instanceId, System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -173,10 +216,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AbandonAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AbandonAsync">
       <MemberSignature Language="C#" Value="public void AbandonAsync (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AbandonAsync(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.AbandonAsync(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AbandonAsync (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.AbandonAsync : Guid -&gt; unit" Usage="workflowUpdateableControlClient.AbandonAsync instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AbandonAsync(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -198,6 +253,9 @@
       <MemberSignature Language="C#" Value="public void AbandonAsync (Guid instanceId, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AbandonAsync(valuetype System.Guid instanceId, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.AbandonAsync(System.Guid,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AbandonAsync (instanceId As Guid, userState As Object)" />
+      <MemberSignature Language="F#" Value="member this.AbandonAsync : Guid * obj -&gt; unit" Usage="workflowUpdateableControlClient.AbandonAsync (instanceId, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AbandonAsync(Guid instanceId, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -221,6 +279,9 @@
       <MemberSignature Language="C#" Value="public void AbandonAsync (Guid instanceId, string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AbandonAsync(valuetype System.Guid instanceId, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.AbandonAsync(System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AbandonAsync (instanceId As Guid, reason As String)" />
+      <MemberSignature Language="F#" Value="member this.AbandonAsync : Guid * string -&gt; unit" Usage="workflowUpdateableControlClient.AbandonAsync (instanceId, reason)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AbandonAsync(Guid instanceId, System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -244,6 +305,9 @@
       <MemberSignature Language="C#" Value="public void AbandonAsync (Guid instanceId, string reason, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AbandonAsync(valuetype System.Guid instanceId, string reason, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.AbandonAsync(System.Guid,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AbandonAsync (instanceId As Guid, reason As String, userState As Object)" />
+      <MemberSignature Language="F#" Value="member this.AbandonAsync : Guid * string * obj -&gt; unit" Usage="workflowUpdateableControlClient.AbandonAsync (instanceId, reason, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AbandonAsync(Guid instanceId, System::String ^ reason, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -269,6 +333,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; AbandonCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; AbandonCompleted" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Activities.WorkflowUpdateableControlClient.AbandonCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event AbandonCompleted As EventHandler(Of AsyncCompletedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.AbandonCompleted : EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " Usage="member this.AbandonCompleted : System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::AsyncCompletedEventArgs ^&gt; ^ AbandonCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -282,10 +349,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginAbandon">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginAbandon">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginAbandon (Guid instanceId, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginAbandon(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginAbandon(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginAbandon (instanceId As Guid, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginAbandon : Guid * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowUpdateableControlClient.BeginAbandon (instanceId, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAbandon(Guid instanceId, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -312,6 +391,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginAbandon (Guid instanceId, string reason, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginAbandon(valuetype System.Guid instanceId, string reason, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginAbandon(System.Guid,System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginAbandon (instanceId As Guid, reason As String, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginAbandon : Guid * string * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowUpdateableControlClient.BeginAbandon (instanceId, reason, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAbandon(Guid instanceId, System::String ^ reason, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -340,6 +422,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginCancel (Guid instanceId, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginCancel(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginCancel(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginCancel (instanceId As Guid, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginCancel : Guid * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowUpdateableControlClient.BeginCancel (instanceId, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginCancel(Guid instanceId, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -366,6 +451,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginRun (Guid instanceId, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginRun(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginRun(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginRun (instanceId As Guid, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginRun : Guid * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowUpdateableControlClient.BeginRun (instanceId, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginRun(Guid instanceId, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -388,10 +476,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginSuspend">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation that suspends the specified operation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginSuspend">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSuspend (Guid instanceId, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSuspend(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginSuspend(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginSuspend (instanceId As Guid, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginSuspend : Guid * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowUpdateableControlClient.BeginSuspend (instanceId, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSuspend(Guid instanceId, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -418,6 +518,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSuspend (Guid instanceId, string reason, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSuspend(valuetype System.Guid instanceId, string reason, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginSuspend(System.Guid,System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginSuspend (instanceId As Guid, reason As String, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginSuspend : Guid * string * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowUpdateableControlClient.BeginSuspend (instanceId, reason, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSuspend(Guid instanceId, System::String ^ reason, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -442,10 +545,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginTerminate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation that terminates a workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginTerminate">
       <MemberSignature Language="C#" Value="public IAsyncResult BeginTerminate (Guid instanceId, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginTerminate(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginTerminate(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginTerminate (instanceId As Guid, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginTerminate : Guid * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowUpdateableControlClient.BeginTerminate (instanceId, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTerminate(Guid instanceId, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -472,6 +587,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginTerminate (Guid instanceId, string reason, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginTerminate(valuetype System.Guid instanceId, string reason, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginTerminate(System.Guid,System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginTerminate (instanceId As Guid, reason As String, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginTerminate : Guid * string * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowUpdateableControlClient.BeginTerminate (instanceId, reason, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTerminate(Guid instanceId, System::String ^ reason, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -500,6 +618,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginUnsuspend (Guid instanceId, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginUnsuspend(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginUnsuspend(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginUnsuspend (instanceId As Guid, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginUnsuspend : Guid * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowUpdateableControlClient.BeginUnsuspend (instanceId, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginUnsuspend(Guid instanceId, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -526,6 +647,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginUpdate (Guid instanceId, System.Activities.WorkflowIdentity updatedDefinitionIdentity, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginUpdate(valuetype System.Guid instanceId, class System.Activities.WorkflowIdentity updatedDefinitionIdentity, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.BeginUpdate(System.Guid,System.Activities.WorkflowIdentity,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginUpdate (instanceId As Guid, updatedDefinitionIdentity As WorkflowIdentity, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginUpdate : Guid * System.Activities.WorkflowIdentity * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowUpdateableControlClient.BeginUpdate (instanceId, updatedDefinitionIdentity, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginUpdate(Guid instanceId, System::Activities::WorkflowIdentity ^ updatedDefinitionIdentity, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -554,6 +678,9 @@
       <MemberSignature Language="C#" Value="public void Cancel (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Cancel(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Cancel(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cancel (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.Cancel : Guid -&gt; unit" Usage="workflowUpdateableControlClient.Cancel instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cancel(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -571,10 +698,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CancelAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation that cancels the specified workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CancelAsync">
       <MemberSignature Language="C#" Value="public void CancelAsync (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelAsync(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.CancelAsync(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelAsync (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.CancelAsync : Guid -&gt; unit" Usage="workflowUpdateableControlClient.CancelAsync instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelAsync(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -596,6 +735,9 @@
       <MemberSignature Language="C#" Value="public void CancelAsync (Guid instanceId, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelAsync(valuetype System.Guid instanceId, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.CancelAsync(System.Guid,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelAsync (instanceId As Guid, userState As Object)" />
+      <MemberSignature Language="F#" Value="member this.CancelAsync : Guid * obj -&gt; unit" Usage="workflowUpdateableControlClient.CancelAsync (instanceId, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelAsync(Guid instanceId, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -619,6 +761,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; CancelCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; CancelCompleted" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Activities.WorkflowUpdateableControlClient.CancelCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event CancelCompleted As EventHandler(Of AsyncCompletedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.CancelCompleted : EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " Usage="member this.CancelCompleted : System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::AsyncCompletedEventArgs ^&gt; ^ CancelCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -636,6 +781,9 @@
       <MemberSignature Language="C#" Value="public void EndAbandon (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndAbandon(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.EndAbandon(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndAbandon (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndAbandon : IAsyncResult -&gt; unit" Usage="workflowUpdateableControlClient.EndAbandon result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndAbandon(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -657,6 +805,9 @@
       <MemberSignature Language="C#" Value="public void EndCancel (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndCancel(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.EndCancel(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndCancel (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndCancel : IAsyncResult -&gt; unit" Usage="workflowUpdateableControlClient.EndCancel result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndCancel(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -678,6 +829,9 @@
       <MemberSignature Language="C#" Value="public void EndRun (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndRun(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.EndRun(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndRun (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndRun : IAsyncResult -&gt; unit" Usage="workflowUpdateableControlClient.EndRun result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndRun(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -699,6 +853,9 @@
       <MemberSignature Language="C#" Value="public void EndSuspend (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndSuspend(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.EndSuspend(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndSuspend (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndSuspend : IAsyncResult -&gt; unit" Usage="workflowUpdateableControlClient.EndSuspend result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndSuspend(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -720,6 +877,9 @@
       <MemberSignature Language="C#" Value="public void EndTerminate (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndTerminate(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.EndTerminate(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndTerminate (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndTerminate : IAsyncResult -&gt; unit" Usage="workflowUpdateableControlClient.EndTerminate result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndTerminate(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -741,6 +901,9 @@
       <MemberSignature Language="C#" Value="public void EndUnsuspend (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndUnsuspend(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.EndUnsuspend(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndUnsuspend (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndUnsuspend : IAsyncResult -&gt; unit" Usage="workflowUpdateableControlClient.EndUnsuspend result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndUnsuspend(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -762,6 +925,9 @@
       <MemberSignature Language="C#" Value="public void EndUpdate (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndUpdate(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.EndUpdate(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndUpdate (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndUpdate : IAsyncResult -&gt; unit" Usage="workflowUpdateableControlClient.EndUpdate result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndUpdate(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -783,6 +949,9 @@
       <MemberSignature Language="C#" Value="public void Run (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Run(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Run(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Run (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.Run : Guid -&gt; unit" Usage="workflowUpdateableControlClient.Run instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Run(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -800,10 +969,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RunAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous operation that runs the specified workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RunAsync">
       <MemberSignature Language="C#" Value="public void RunAsync (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RunAsync(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.RunAsync(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RunAsync (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.RunAsync : Guid -&gt; unit" Usage="workflowUpdateableControlClient.RunAsync instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RunAsync(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -825,6 +1006,9 @@
       <MemberSignature Language="C#" Value="public void RunAsync (Guid instanceId, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RunAsync(valuetype System.Guid instanceId, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.RunAsync(System.Guid,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RunAsync (instanceId As Guid, userState As Object)" />
+      <MemberSignature Language="F#" Value="member this.RunAsync : Guid * obj -&gt; unit" Usage="workflowUpdateableControlClient.RunAsync (instanceId, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RunAsync(Guid instanceId, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -848,6 +1032,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; RunCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; RunCompleted" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Activities.WorkflowUpdateableControlClient.RunCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event RunCompleted As EventHandler(Of AsyncCompletedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.RunCompleted : EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " Usage="member this.RunCompleted : System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::AsyncCompletedEventArgs ^&gt; ^ RunCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -861,10 +1048,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Suspend">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Suspends the specified workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Suspend">
       <MemberSignature Language="C#" Value="public void Suspend (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Suspend(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Suspend(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Suspend (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.Suspend : Guid -&gt; unit" Usage="workflowUpdateableControlClient.Suspend instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Suspend(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -886,6 +1085,9 @@
       <MemberSignature Language="C#" Value="public void Suspend (Guid instanceId, string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Suspend(valuetype System.Guid instanceId, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Suspend(System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Suspend (instanceId As Guid, reason As String)" />
+      <MemberSignature Language="F#" Value="member this.Suspend : Guid * string -&gt; unit" Usage="workflowUpdateableControlClient.Suspend (instanceId, reason)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Suspend(Guid instanceId, System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -905,10 +1107,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SuspendAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous suspend operation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SuspendAsync">
       <MemberSignature Language="C#" Value="public void SuspendAsync (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SuspendAsync(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.SuspendAsync(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SuspendAsync (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.SuspendAsync : Guid -&gt; unit" Usage="workflowUpdateableControlClient.SuspendAsync instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SuspendAsync(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -930,6 +1144,9 @@
       <MemberSignature Language="C#" Value="public void SuspendAsync (Guid instanceId, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SuspendAsync(valuetype System.Guid instanceId, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.SuspendAsync(System.Guid,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SuspendAsync (instanceId As Guid, userState As Object)" />
+      <MemberSignature Language="F#" Value="member this.SuspendAsync : Guid * obj -&gt; unit" Usage="workflowUpdateableControlClient.SuspendAsync (instanceId, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SuspendAsync(Guid instanceId, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -953,6 +1170,9 @@
       <MemberSignature Language="C#" Value="public void SuspendAsync (Guid instanceId, string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SuspendAsync(valuetype System.Guid instanceId, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.SuspendAsync(System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SuspendAsync (instanceId As Guid, reason As String)" />
+      <MemberSignature Language="F#" Value="member this.SuspendAsync : Guid * string -&gt; unit" Usage="workflowUpdateableControlClient.SuspendAsync (instanceId, reason)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SuspendAsync(Guid instanceId, System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -976,6 +1196,9 @@
       <MemberSignature Language="C#" Value="public void SuspendAsync (Guid instanceId, string reason, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SuspendAsync(valuetype System.Guid instanceId, string reason, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.SuspendAsync(System.Guid,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SuspendAsync (instanceId As Guid, reason As String, userState As Object)" />
+      <MemberSignature Language="F#" Value="member this.SuspendAsync : Guid * string * obj -&gt; unit" Usage="workflowUpdateableControlClient.SuspendAsync (instanceId, reason, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SuspendAsync(Guid instanceId, System::String ^ reason, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1001,6 +1224,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; SuspendCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; SuspendCompleted" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Activities.WorkflowUpdateableControlClient.SuspendCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event SuspendCompleted As EventHandler(Of AsyncCompletedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.SuspendCompleted : EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " Usage="member this.SuspendCompleted : System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::AsyncCompletedEventArgs ^&gt; ^ SuspendCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1014,10 +1240,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Terminate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Terminates the specified workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Terminate">
       <MemberSignature Language="C#" Value="public void Terminate (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Terminate(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Terminate(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Terminate (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.Terminate : Guid -&gt; unit" Usage="workflowUpdateableControlClient.Terminate instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Terminate(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1039,6 +1277,9 @@
       <MemberSignature Language="C#" Value="public void Terminate (Guid instanceId, string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Terminate(valuetype System.Guid instanceId, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Terminate(System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Terminate (instanceId As Guid, reason As String)" />
+      <MemberSignature Language="F#" Value="member this.Terminate : Guid * string -&gt; unit" Usage="workflowUpdateableControlClient.Terminate (instanceId, reason)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Terminate(Guid instanceId, System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1058,10 +1299,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TerminateAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous terminate operation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TerminateAsync">
       <MemberSignature Language="C#" Value="public void TerminateAsync (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TerminateAsync(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.TerminateAsync(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TerminateAsync (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.TerminateAsync : Guid -&gt; unit" Usage="workflowUpdateableControlClient.TerminateAsync instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TerminateAsync(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1083,6 +1336,9 @@
       <MemberSignature Language="C#" Value="public void TerminateAsync (Guid instanceId, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TerminateAsync(valuetype System.Guid instanceId, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.TerminateAsync(System.Guid,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TerminateAsync (instanceId As Guid, userState As Object)" />
+      <MemberSignature Language="F#" Value="member this.TerminateAsync : Guid * obj -&gt; unit" Usage="workflowUpdateableControlClient.TerminateAsync (instanceId, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TerminateAsync(Guid instanceId, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1106,6 +1362,9 @@
       <MemberSignature Language="C#" Value="public void TerminateAsync (Guid instanceId, string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TerminateAsync(valuetype System.Guid instanceId, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.TerminateAsync(System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TerminateAsync (instanceId As Guid, reason As String)" />
+      <MemberSignature Language="F#" Value="member this.TerminateAsync : Guid * string -&gt; unit" Usage="workflowUpdateableControlClient.TerminateAsync (instanceId, reason)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TerminateAsync(Guid instanceId, System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1129,6 +1388,9 @@
       <MemberSignature Language="C#" Value="public void TerminateAsync (Guid instanceId, string reason, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void TerminateAsync(valuetype System.Guid instanceId, string reason, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.TerminateAsync(System.Guid,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TerminateAsync (instanceId As Guid, reason As String, userState As Object)" />
+      <MemberSignature Language="F#" Value="member this.TerminateAsync : Guid * string * obj -&gt; unit" Usage="workflowUpdateableControlClient.TerminateAsync (instanceId, reason, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TerminateAsync(Guid instanceId, System::String ^ reason, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1154,6 +1416,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; TerminateCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; TerminateCompleted" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Activities.WorkflowUpdateableControlClient.TerminateCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event TerminateCompleted As EventHandler(Of AsyncCompletedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.TerminateCompleted : EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " Usage="member this.TerminateCompleted : System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::AsyncCompletedEventArgs ^&gt; ^ TerminateCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1171,6 +1436,9 @@
       <MemberSignature Language="C#" Value="public void Unsuspend (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Unsuspend(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Unsuspend(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unsuspend (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.Unsuspend : Guid -&gt; unit" Usage="workflowUpdateableControlClient.Unsuspend instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unsuspend(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1188,10 +1456,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UnsuspendAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous unsuspend operation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="UnsuspendAsync">
       <MemberSignature Language="C#" Value="public void UnsuspendAsync (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnsuspendAsync(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.UnsuspendAsync(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnsuspendAsync (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="member this.UnsuspendAsync : Guid -&gt; unit" Usage="workflowUpdateableControlClient.UnsuspendAsync instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnsuspendAsync(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1213,6 +1493,9 @@
       <MemberSignature Language="C#" Value="public void UnsuspendAsync (Guid instanceId, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnsuspendAsync(valuetype System.Guid instanceId, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.UnsuspendAsync(System.Guid,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnsuspendAsync (instanceId As Guid, userState As Object)" />
+      <MemberSignature Language="F#" Value="member this.UnsuspendAsync : Guid * obj -&gt; unit" Usage="workflowUpdateableControlClient.UnsuspendAsync (instanceId, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnsuspendAsync(Guid instanceId, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1236,6 +1519,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; UnsuspendCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; UnsuspendCompleted" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Activities.WorkflowUpdateableControlClient.UnsuspendCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event UnsuspendCompleted As EventHandler(Of AsyncCompletedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.UnsuspendCompleted : EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " Usage="member this.UnsuspendCompleted : System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::AsyncCompletedEventArgs ^&gt; ^ UnsuspendCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1253,6 +1539,9 @@
       <MemberSignature Language="C#" Value="public void Update (Guid instanceId, System.Activities.WorkflowIdentity updatedDefinitionIdentity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Update(valuetype System.Guid instanceId, class System.Activities.WorkflowIdentity updatedDefinitionIdentity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.Update(System.Guid,System.Activities.WorkflowIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Update (instanceId As Guid, updatedDefinitionIdentity As WorkflowIdentity)" />
+      <MemberSignature Language="F#" Value="member this.Update : Guid * System.Activities.WorkflowIdentity -&gt; unit" Usage="workflowUpdateableControlClient.Update (instanceId, updatedDefinitionIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Update(Guid instanceId, System::Activities::WorkflowIdentity ^ updatedDefinitionIdentity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1272,10 +1561,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UpdateAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous update operation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="UpdateAsync">
       <MemberSignature Language="C#" Value="public void UpdateAsync (Guid instanceId, System.Activities.WorkflowIdentity updatedDefinitionIdentity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateAsync(valuetype System.Guid instanceId, class System.Activities.WorkflowIdentity updatedDefinitionIdentity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.UpdateAsync(System.Guid,System.Activities.WorkflowIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateAsync (instanceId As Guid, updatedDefinitionIdentity As WorkflowIdentity)" />
+      <MemberSignature Language="F#" Value="member this.UpdateAsync : Guid * System.Activities.WorkflowIdentity -&gt; unit" Usage="workflowUpdateableControlClient.UpdateAsync (instanceId, updatedDefinitionIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateAsync(Guid instanceId, System::Activities::WorkflowIdentity ^ updatedDefinitionIdentity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1299,6 +1600,9 @@
       <MemberSignature Language="C#" Value="public void UpdateAsync (Guid instanceId, System.Activities.WorkflowIdentity updatedDefinitionIdentity, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateAsync(valuetype System.Guid instanceId, class System.Activities.WorkflowIdentity updatedDefinitionIdentity, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.WorkflowUpdateableControlClient.UpdateAsync(System.Guid,System.Activities.WorkflowIdentity,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateAsync (instanceId As Guid, updatedDefinitionIdentity As WorkflowIdentity, userState As Object)" />
+      <MemberSignature Language="F#" Value="member this.UpdateAsync : Guid * System.Activities.WorkflowIdentity * obj -&gt; unit" Usage="workflowUpdateableControlClient.UpdateAsync (instanceId, updatedDefinitionIdentity, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateAsync(Guid instanceId, System::Activities::WorkflowIdentity ^ updatedDefinitionIdentity, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1324,6 +1628,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; UpdateCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.ComponentModel.AsyncCompletedEventArgs&gt; UpdateCompleted" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Activities.WorkflowUpdateableControlClient.UpdateCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event UpdateCompleted As EventHandler(Of AsyncCompletedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.UpdateCompleted : EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " Usage="member this.UpdateCompleted : System.EventHandler&lt;System.ComponentModel.AsyncCompletedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::ComponentModel::AsyncCompletedEventArgs ^&gt; ^ UpdateCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1337,131 +1644,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CancelAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation that cancels the specified workflow instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Abandon">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Abandons a workflow instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Terminate">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Terminates the specified workflow instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="UpdateAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous update operation.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="UnsuspendAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous unsuspend operation.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SuspendAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous suspend operation.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Activities.WorkflowUpdateableControlClient" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginAbandon">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TerminateAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous terminate operation.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Suspend">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Suspends the specified workflow instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginTerminate">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation that terminates a workflow instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AbandonAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation that abandons the specified workflow instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RunAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation that runs the specified workflow instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginSuspend">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous operation that suspends the specified operation.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

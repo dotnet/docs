@@ -1,7 +1,10 @@
-<Type Name="StartupNextInstanceEventArgs" FullName="Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs">
+﻿<Type Name="StartupNextInstanceEventArgs" FullName="Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs">
   <TypeSignature Language="C#" Value="public class StartupNextInstanceEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi StartupNextInstanceEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class StartupNextInstanceEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type StartupNextInstanceEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StartupNextInstanceEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="public StartupNextInstanceEventArgs (System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; args, bool bringToForegroundFlag);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; args, bool bringToForegroundFlag) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.#ctor(System.Collections.ObjectModel.ReadOnlyCollection{System.String},System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (args As ReadOnlyCollection(Of String), bringToForegroundFlag As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; * bool -&gt; Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs" Usage="new Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs (args, bringToForegroundFlag)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StartupNextInstanceEventArgs(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ args, bool bringToForegroundFlag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -66,6 +72,9 @@
       <MemberSignature Language="C#" Value="public bool BringToForeground { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BringToForeground" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.BringToForeground" />
+      <MemberSignature Language="VB.NET" Value="Public Property BringToForeground As Boolean" />
+      <MemberSignature Language="F#" Value="member this.BringToForeground : bool with get, set" Usage="Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.BringToForeground" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BringToForeground { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -93,6 +102,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; CommandLine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; CommandLine" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.CommandLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandLine As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.CommandLine : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs.CommandLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ CommandLine { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

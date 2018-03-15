@@ -1,7 +1,10 @@
-<Type Name="RawSecurityDescriptor" FullName="System.Security.AccessControl.RawSecurityDescriptor">
+﻿<Type Name="RawSecurityDescriptor" FullName="System.Security.AccessControl.RawSecurityDescriptor">
   <TypeSignature Language="C#" Value="public sealed class RawSecurityDescriptor : System.Security.AccessControl.GenericSecurityDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RawSecurityDescriptor extends System.Security.AccessControl.GenericSecurityDescriptor" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.RawSecurityDescriptor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RawSecurityDescriptor&#xA;Inherits GenericSecurityDescriptor" />
+  <TypeSignature Language="F#" Value="type RawSecurityDescriptor = class&#xA;    inherit GenericSecurityDescriptor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RawSecurityDescriptor sealed : System::Security::AccessControl::GenericSecurityDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,10 +24,23 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RawSecurityDescriptor (string sddlForm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sddlForm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RawSecurityDescriptor.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sddlForm As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.RawSecurityDescriptor : string -&gt; System.Security.AccessControl.RawSecurityDescriptor" Usage="new System.Security.AccessControl.RawSecurityDescriptor sddlForm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RawSecurityDescriptor(System::String ^ sddlForm);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -49,6 +65,9 @@
       <MemberSignature Language="C#" Value="public RawSecurityDescriptor (byte[] binaryForm, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] binaryForm, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RawSecurityDescriptor.#ctor(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (binaryForm As Byte(), offset As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.RawSecurityDescriptor : byte[] * int -&gt; System.Security.AccessControl.RawSecurityDescriptor" Usage="new System.Security.AccessControl.RawSecurityDescriptor (binaryForm, offset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RawSecurityDescriptor(cli::array &lt;System::Byte&gt; ^ binaryForm, int offset);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -75,6 +94,9 @@
       <MemberSignature Language="C#" Value="public RawSecurityDescriptor (System.Security.AccessControl.ControlFlags flags, System.Security.Principal.SecurityIdentifier owner, System.Security.Principal.SecurityIdentifier group, System.Security.AccessControl.RawAcl systemAcl, System.Security.AccessControl.RawAcl discretionaryAcl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.AccessControl.ControlFlags flags, class System.Security.Principal.SecurityIdentifier owner, class System.Security.Principal.SecurityIdentifier group, class System.Security.AccessControl.RawAcl systemAcl, class System.Security.AccessControl.RawAcl discretionaryAcl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RawSecurityDescriptor.#ctor(System.Security.AccessControl.ControlFlags,System.Security.Principal.SecurityIdentifier,System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.RawAcl,System.Security.AccessControl.RawAcl)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (flags As ControlFlags, owner As SecurityIdentifier, group As SecurityIdentifier, systemAcl As RawAcl, discretionaryAcl As RawAcl)" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.RawSecurityDescriptor : System.Security.AccessControl.ControlFlags * System.Security.Principal.SecurityIdentifier * System.Security.Principal.SecurityIdentifier * System.Security.AccessControl.RawAcl * System.Security.AccessControl.RawAcl -&gt; System.Security.AccessControl.RawSecurityDescriptor" Usage="new System.Security.AccessControl.RawSecurityDescriptor (flags, owner, group, systemAcl, discretionaryAcl)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RawSecurityDescriptor(System::Security::AccessControl::ControlFlags flags, System::Security::Principal::SecurityIdentifier ^ owner, System::Security::Principal::SecurityIdentifier ^ group, System::Security::AccessControl::RawAcl ^ systemAcl, System::Security::AccessControl::RawAcl ^ discretionaryAcl);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -107,6 +129,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.AccessControl.ControlFlags ControlFlags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.ControlFlags ControlFlags" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RawSecurityDescriptor.ControlFlags" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ControlFlags As ControlFlags" />
+      <MemberSignature Language="F#" Value="member this.ControlFlags : System.Security.AccessControl.ControlFlags" Usage="System.Security.AccessControl.RawSecurityDescriptor.ControlFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::AccessControl::ControlFlags ControlFlags { System::Security::AccessControl::ControlFlags get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -131,6 +156,9 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.RawAcl DiscretionaryAcl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.AccessControl.RawAcl DiscretionaryAcl" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RawSecurityDescriptor.DiscretionaryAcl" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiscretionaryAcl As RawAcl" />
+      <MemberSignature Language="F#" Value="member this.DiscretionaryAcl : System.Security.AccessControl.RawAcl with get, set" Usage="System.Security.AccessControl.RawSecurityDescriptor.DiscretionaryAcl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::RawAcl ^ DiscretionaryAcl { System::Security::AccessControl::RawAcl ^ get(); void set(System::Security::AccessControl::RawAcl ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -155,6 +183,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.Principal.SecurityIdentifier Group { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.SecurityIdentifier Group" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RawSecurityDescriptor.Group" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Group As SecurityIdentifier" />
+      <MemberSignature Language="F#" Value="member this.Group : System.Security.Principal.SecurityIdentifier with get, set" Usage="System.Security.AccessControl.RawSecurityDescriptor.Group" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::SecurityIdentifier ^ Group { System::Security::Principal::SecurityIdentifier ^ get(); void set(System::Security::Principal::SecurityIdentifier ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -179,6 +210,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.Principal.SecurityIdentifier Owner { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.SecurityIdentifier Owner" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RawSecurityDescriptor.Owner" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Owner As SecurityIdentifier" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.Security.Principal.SecurityIdentifier with get, set" Usage="System.Security.AccessControl.RawSecurityDescriptor.Owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Security::Principal::SecurityIdentifier ^ Owner { System::Security::Principal::SecurityIdentifier ^ get(); void set(System::Security::Principal::SecurityIdentifier ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -203,6 +237,9 @@
       <MemberSignature Language="C#" Value="public byte ResourceManagerControl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 ResourceManagerControl" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RawSecurityDescriptor.ResourceManagerControl" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceManagerControl As Byte" />
+      <MemberSignature Language="F#" Value="member this.ResourceManagerControl : byte with get, set" Usage="System.Security.AccessControl.RawSecurityDescriptor.ResourceManagerControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte ResourceManagerControl { System::Byte get(); void set(System::Byte value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -234,6 +271,9 @@
       <MemberSignature Language="C#" Value="public void SetFlags (System.Security.AccessControl.ControlFlags flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFlags(valuetype System.Security.AccessControl.ControlFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.RawSecurityDescriptor.SetFlags(System.Security.AccessControl.ControlFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFlags (flags As ControlFlags)" />
+      <MemberSignature Language="F#" Value="member this.SetFlags : System.Security.AccessControl.ControlFlags -&gt; unit" Usage="rawSecurityDescriptor.SetFlags flags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFlags(System::Security::AccessControl::ControlFlags flags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -261,6 +301,9 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.RawAcl SystemAcl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.AccessControl.RawAcl SystemAcl" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.RawSecurityDescriptor.SystemAcl" />
+      <MemberSignature Language="VB.NET" Value="Public Property SystemAcl As RawAcl" />
+      <MemberSignature Language="F#" Value="member this.SystemAcl : System.Security.AccessControl.RawAcl with get, set" Usage="System.Security.AccessControl.RawSecurityDescriptor.SystemAcl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::RawAcl ^ SystemAcl { System::Security::AccessControl::RawAcl ^ get(); void set(System::Security::AccessControl::RawAcl ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -281,15 +324,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.RawSecurityDescriptor" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

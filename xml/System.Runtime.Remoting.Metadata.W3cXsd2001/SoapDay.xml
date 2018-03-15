@@ -1,7 +1,10 @@
-<Type Name="SoapDay" FullName="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay">
+﻿<Type Name="SoapDay" FullName="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay">
   <TypeSignature Language="C#" Value="public sealed class SoapDay : System.Runtime.Remoting.Metadata.W3cXsd2001.ISoapXsd" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SoapDay extends System.Object implements class System.Runtime.Remoting.Metadata.W3cXsd2001.ISoapXsd" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapDay&#xA;Implements ISoapXsd" />
+  <TypeSignature Language="F#" Value="type SoapDay = class&#xA;    interface ISoapXsd" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapDay sealed : System::Runtime::Remoting::Metadata::W3cXsd2001::ISoapXsd" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,10 +43,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SoapDay ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapDay();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +85,9 @@
       <MemberSignature Language="C#" Value="public SoapDay (DateTime value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.#ctor(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As DateTime)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay : DateTime -&gt; System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay" Usage="new System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapDay(DateTime value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,7 +117,13 @@
       <MemberSignature Language="C#" Value="public string GetXsdType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetXsdType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.GetXsdType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetXsdType () As String" />
+      <MemberSignature Language="F#" Value="abstract member GetXsdType : unit -&gt; string&#xA;override this.GetXsdType : unit -&gt; string" Usage="soapDay.GetXsdType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetXsdType();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Metadata.W3cXsd2001.ISoapXsd.GetXsdType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -129,6 +153,9 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay Parse (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay Parse(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (value As String) As SoapDay" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.Parse value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::Metadata::W3cXsd2001::SoapDay ^ Parse(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -174,6 +201,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="soapDay.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -204,6 +234,9 @@
       <MemberSignature Language="C#" Value="public DateTime Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Value" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As DateTime" />
+      <MemberSignature Language="F#" Value="member this.Value : DateTime with get, set" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Value { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -233,6 +266,9 @@
       <MemberSignature Language="C#" Value="public static string XsdType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string XsdType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.XsdType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XsdType As String" />
+      <MemberSignature Language="F#" Value="member this.XsdType : string" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay.XsdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ XsdType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -258,15 +294,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDay" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

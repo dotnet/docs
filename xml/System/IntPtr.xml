@@ -1,7 +1,10 @@
-<Type Name="IntPtr" FullName="System.IntPtr">
+﻿<Type Name="IntPtr" FullName="System.IntPtr">
   <TypeSignature Language="C#" Value="public struct IntPtr : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit native int extends System.ValueType implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.IntPtr" />
+  <TypeSignature Language="VB.NET" Value="Public Structure IntPtr&#xA;Implements ISerializable" />
+  <TypeSignature Language="F#" Value="type nativeint = struct&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public value class IntPtr : System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,10 +84,26 @@
     <altmember cref="T:System.UIntPtr" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.IntPtr" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public IntPtr (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Integer)" />
+      <MemberSignature Language="F#" Value="new nativeint : int -&gt; nativeint" Usage="new System.nativeint value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr(int value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -121,6 +140,9 @@
       <MemberSignature Language="C#" Value="public IntPtr (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.#ctor(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Long)" />
+      <MemberSignature Language="F#" Value="new nativeint : int64 -&gt; nativeint" Usage="new System.nativeint value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr(long value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -165,6 +187,8 @@
       <MemberSignature Language="C#" Value="public IntPtr (void* value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(void* value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.#ctor(System.Void*)" />
+      <MemberSignature Language="F#" Value="new nativeint : nativeptr&lt;unit&gt; -&gt; nativeint" Usage="new System.nativeint value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr(void* value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -206,6 +230,9 @@
       <MemberSignature Language="C#" Value="public static IntPtr Add (IntPtr pointer, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int Add(native int pointer, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.Add(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add (pointer As IntPtr, offset As Integer) As IntPtr" />
+      <MemberSignature Language="F#" Value="static member Add : nativeint * int -&gt; nativeint" Usage="System.nativeint.Add (pointer, offset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr Add(IntPtr pointer, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -266,6 +293,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="nativeint.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -302,6 +332,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="nativeint.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -334,6 +367,9 @@
       <MemberSignature Language="C#" Value="public static IntPtr operator + (IntPtr pointer, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Addition(native int pointer, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Addition(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (pointer As IntPtr, offset As Integer) As IntPtr" />
+      <MemberSignature Language="F#" Value="static member ( + ) : nativeint * int -&gt; nativeint" Usage="pointer + offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr operator +(IntPtr pointer, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -391,6 +427,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (IntPtr value1, IntPtr value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(native int value1, native int value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Equality(System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (value1 As IntPtr, value2 As IntPtr) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : nativeint * nativeint -&gt; bool" Usage="value1 = value2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(IntPtr value1, IntPtr value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -432,10 +471,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified data type to an <see cref="T:System.IntPtr" /> value, or an <see cref="T:System.IntPtr" /> value to a specified data type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Explicit">
       <MemberSignature Language="C#" Value="public static explicit operator IntPtr (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Explicit(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.Int32)~System.IntPtr" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Integer) As IntPtr" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : int -&gt; nativeint" Usage="System.nativeint.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator IntPtr(int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -469,8 +524,7 @@
         <param name="value">A 32-bit signed integer.</param>
         <summary>Converts the value of a 32-bit signed integer to an <see cref="T:System.IntPtr" />.</summary>
         <returns>A new instance of <see cref="T:System.IntPtr" /> initialized to <paramref name="value" />.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
         <altmember cref="Overload:System.IntPtr.#ctor" />
       </Docs>
     </Member>
@@ -478,6 +532,9 @@
       <MemberSignature Language="C#" Value="public static explicit operator IntPtr (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Explicit(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.Int64)~System.IntPtr" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As Long) As IntPtr" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : int64 -&gt; nativeint" Usage="System.nativeint.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator IntPtr(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -511,8 +568,7 @@
         <param name="value">A 64-bit signed integer.</param>
         <summary>Converts the value of a 64-bit signed integer to an <see cref="T:System.IntPtr" />.</summary>
         <returns>A new instance of <see cref="T:System.IntPtr" /> initialized to <paramref name="value" />.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
         <exception cref="T:System.OverflowException">On a 32-bit platform, <paramref name="value" /> is too large to represent as an <see cref="T:System.IntPtr" />.</exception>
         <altmember cref="Overload:System.IntPtr.#ctor" />
       </Docs>
@@ -521,6 +577,9 @@
       <MemberSignature Language="C#" Value="public static explicit operator int (IntPtr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int32 op_Explicit(native int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.IntPtr)~System.Int32" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As IntPtr) As Integer" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : nativeint -&gt; int" Usage="System.nativeint.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator int(IntPtr value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -564,6 +623,9 @@
       <MemberSignature Language="C#" Value="public static explicit operator long (IntPtr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname int64 op_Explicit(native int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.IntPtr)~System.Int64" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (value As IntPtr) As Long" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : nativeint -&gt; int64" Usage="System.nativeint.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator long(IntPtr value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -592,8 +654,7 @@
         <param name="value">The pointer or handle to convert.</param>
         <summary>Converts the value of the specified <see cref="T:System.IntPtr" /> to a 64-bit signed integer.</summary>
         <returns>The contents of <paramref name="value" />.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
         <altmember cref="M:System.IntPtr.ToInt64" />
       </Docs>
     </Member>
@@ -601,6 +662,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator void* (IntPtr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname void* op_Explicit(native int value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.IntPtr)~System.Void*" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : nativeint -&gt; nativeptr&lt;unit&gt;" Usage="System.nativeint.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator void*(IntPtr value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -636,8 +699,7 @@
   
  This API is not CLS-compliant.</summary>
         <returns>The contents of <paramref name="value" />.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
         <altmember cref="M:System.IntPtr.ToPointer" />
       </Docs>
     </Member>
@@ -645,6 +707,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator IntPtr (void* value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Explicit(void* value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Explicit(System.Void*)~System.IntPtr" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : nativeptr&lt;unit&gt; -&gt; nativeint" Usage="System.nativeint.op_Explicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator IntPtr(void* value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -683,8 +747,7 @@
   
  This API is not CLS-compliant.</summary>
         <returns>A new instance of <see cref="T:System.IntPtr" /> initialized to <paramref name="value" />.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
         <permission cref="T:System.Security.SecurityCriticalAttribute">requires full trust for the immediate caller. This member cannot be used by partially trusted or transparent code.</permission>
         <altmember cref="Overload:System.IntPtr.#ctor" />
       </Docs>
@@ -693,6 +756,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (IntPtr value1, IntPtr value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(native int value1, native int value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Inequality(System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (value1 As IntPtr, value2 As IntPtr) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : nativeint * nativeint -&gt; bool" Usage="System.nativeint.op_Inequality (value1, value2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(IntPtr value1, IntPtr value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -738,6 +804,9 @@
       <MemberSignature Language="C#" Value="public static IntPtr operator - (IntPtr pointer, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname native int op_Subtraction(native int pointer, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.op_Subtraction(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (pointer As IntPtr, offset As Integer) As IntPtr" />
+      <MemberSignature Language="F#" Value="static member ( - ) : nativeint * int -&gt; nativeint" Usage="pointer - offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr operator -(IntPtr pointer, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -795,6 +864,9 @@
       <MemberSignature Language="C#" Value="public static int Size { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 Size" />
       <MemberSignature Language="DocId" Value="P:System.IntPtr.Size" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Size As Integer" />
+      <MemberSignature Language="F#" Value="member this.Size : int" Usage="System.nativeint.Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int Size { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -831,6 +903,9 @@
       <MemberSignature Language="C#" Value="public static IntPtr Subtract (IntPtr pointer, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int Subtract(native int pointer, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.Subtract(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (pointer As IntPtr, offset As Integer) As IntPtr" />
+      <MemberSignature Language="F#" Value="static member Subtract : nativeint * int -&gt; nativeint" Usage="System.nativeint.Subtract (pointer, offset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static IntPtr Subtract(IntPtr pointer, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -891,7 +966,12 @@
       <MemberSignature Language="C#" Value="bool IEquatable&lt;IntPtr&gt;.Equals (IntPtr other);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IEquatable&lt;System.IntPtr&gt;.Equals(native int other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.System#IEquatable&lt;System#IntPtr&gt;#Equals(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Function Equals (other As IntPtr) As Boolean Implements IEquatable(Of IntPtr).Equals" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.IEquatable&lt;System.IntPtr&gt;.Equals(IntPtr other) = IEquatable&lt;IntPtr&gt;::Equals;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -913,7 +993,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -955,6 +1040,9 @@
       <MemberSignature Language="C#" Value="public int ToInt32 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 ToInt32() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.ToInt32" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToInt32 () As Integer" />
+      <MemberSignature Language="F#" Value="member this.ToInt32 : unit -&gt; int" Usage="nativeint.ToInt32 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int ToInt32();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -993,6 +1081,9 @@
       <MemberSignature Language="C#" Value="public long ToInt64 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int64 ToInt64() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.ToInt64" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToInt64 () As Long" />
+      <MemberSignature Language="F#" Value="member this.ToInt64 : unit -&gt; int64" Usage="nativeint.ToInt64 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; long ToInt64();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1030,6 +1121,8 @@
       <MemberSignature Language="C#" Value="public void* ToPointer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void* ToPointer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.ToPointer" />
+      <MemberSignature Language="F#" Value="member this.ToPointer : unit -&gt; nativeptr&lt;unit&gt;" Usage="nativeint.ToPointer " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void* ToPointer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1088,10 +1181,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the numeric value of the current <see cref="T:System.IntPtr" /> object to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="nativeint.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1131,6 +1240,9 @@
       <MemberSignature Language="C#" Value="public string ToString (string format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IntPtr.ToString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String) As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : string -&gt; string" Usage="nativeint.ToString format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1176,6 +1288,9 @@
       <MemberSignature Language="C#" Value="public static readonly IntPtr Zero;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly native int Zero" />
       <MemberSignature Language="DocId" Value="F:System.IntPtr.Zero" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Zero As IntPtr " />
+      <MemberSignature Language="F#" Value=" staticval mutable Zero : nativeint" Usage="System.nativeint.Zero" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly IntPtr Zero;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1224,44 +1339,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="op_Explicit">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts a specified data type to an <see cref="T:System.IntPtr" /> value, or an <see cref="T:System.IntPtr" /> value to a specified data type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the numeric value of the current <see cref="T:System.IntPtr" /> object to its equivalent string representation.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.IntPtr" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

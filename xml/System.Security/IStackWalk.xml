@@ -1,7 +1,10 @@
-<Type Name="IStackWalk" FullName="System.Security.IStackWalk">
+﻿<Type Name="IStackWalk" FullName="System.Security.IStackWalk">
   <TypeSignature Language="C#" Value="public interface IStackWalk" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IStackWalk" />
   <TypeSignature Language="DocId" Value="T:System.Security.IStackWalk" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IStackWalk" />
+  <TypeSignature Language="F#" Value="type IStackWalk = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IStackWalk" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="public void Assert ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Assert() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.IStackWalk.Assert" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Assert ()" />
+      <MemberSignature Language="F#" Value="abstract member Assert : unit -&gt; unit" Usage="iStackWalk.Assert " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Assert();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -73,6 +79,9 @@
       <MemberSignature Language="C#" Value="public void Demand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Demand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.IStackWalk.Demand" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Demand ()" />
+      <MemberSignature Language="F#" Value="abstract member Demand : unit -&gt; unit" Usage="iStackWalk.Demand " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Demand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -110,6 +119,9 @@
       <MemberSignature Language="C#" Value="public void Deny ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Deny() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.IStackWalk.Deny" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Deny ()" />
+      <MemberSignature Language="F#" Value="abstract member Deny : unit -&gt; unit" Usage="iStackWalk.Deny " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Deny();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +159,9 @@
       <MemberSignature Language="C#" Value="public void PermitOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PermitOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.IStackWalk.PermitOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PermitOnly ()" />
+      <MemberSignature Language="F#" Value="abstract member PermitOnly : unit -&gt; unit" Usage="iStackWalk.PermitOnly " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PermitOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

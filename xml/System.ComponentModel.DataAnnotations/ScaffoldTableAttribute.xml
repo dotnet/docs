@@ -1,7 +1,10 @@
-<Type Name="ScaffoldTableAttribute" FullName="System.ComponentModel.DataAnnotations.ScaffoldTableAttribute">
+﻿<Type Name="ScaffoldTableAttribute" FullName="System.ComponentModel.DataAnnotations.ScaffoldTableAttribute">
   <TypeSignature Language="C#" Value="public class ScaffoldTableAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScaffoldTableAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.ScaffoldTableAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScaffoldTableAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ScaffoldTableAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScaffoldTableAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -85,6 +88,9 @@ End Class
       <MemberSignature Language="C#" Value="public ScaffoldTableAttribute (bool scaffold);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool scaffold) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ScaffoldTableAttribute.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (scaffold As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.ScaffoldTableAttribute : bool -&gt; System.ComponentModel.DataAnnotations.ScaffoldTableAttribute" Usage="new System.ComponentModel.DataAnnotations.ScaffoldTableAttribute scaffold" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScaffoldTableAttribute(bool scaffold);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -111,6 +117,9 @@ End Class
       <MemberSignature Language="C#" Value="public bool Scaffold { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Scaffold" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.ScaffoldTableAttribute.Scaffold" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scaffold As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Scaffold : bool" Usage="System.ComponentModel.DataAnnotations.ScaffoldTableAttribute.Scaffold" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Scaffold { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>

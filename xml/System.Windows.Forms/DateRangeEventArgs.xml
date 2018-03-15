@@ -1,7 +1,10 @@
-<Type Name="DateRangeEventArgs" FullName="System.Windows.Forms.DateRangeEventArgs">
+﻿<Type Name="DateRangeEventArgs" FullName="System.Windows.Forms.DateRangeEventArgs">
   <TypeSignature Language="C#" Value="public class DateRangeEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DateRangeEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DateRangeEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DateRangeEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type DateRangeEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DateRangeEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="public DateRangeEventArgs (DateTime start, DateTime end);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime start, valuetype System.DateTime end) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DateRangeEventArgs.#ctor(System.DateTime,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (start As DateTime, end As DateTime)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DateRangeEventArgs : DateTime * DateTime -&gt; System.Windows.Forms.DateRangeEventArgs" Usage="new System.Windows.Forms.DateRangeEventArgs (start, end)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DateRangeEventArgs(DateTime start, DateTime end);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -71,6 +77,9 @@
       <MemberSignature Language="C#" Value="public DateTime End { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime End" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateRangeEventArgs.End" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property End As DateTime" />
+      <MemberSignature Language="F#" Value="member this.End : DateTime" Usage="System.Windows.Forms.DateRangeEventArgs.End" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime End { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -101,6 +110,9 @@
       <MemberSignature Language="C#" Value="public DateTime Start { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Start" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DateRangeEventArgs.Start" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Start As DateTime" />
+      <MemberSignature Language="F#" Value="member this.Start : DateTime" Usage="System.Windows.Forms.DateRangeEventArgs.Start" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Start { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="PageImageableArea" FullName="System.Printing.PageImageableArea">
+﻿<Type Name="PageImageableArea" FullName="System.Printing.PageImageableArea">
   <TypeSignature Language="C#" Value="public sealed class PageImageableArea" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PageImageableArea extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PageImageableArea" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PageImageableArea" />
+  <TypeSignature Language="F#" Value="type PageImageableArea = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PageImageableArea sealed" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="public double ExtentHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ExtentHeight" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PageImageableArea.ExtentHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.ExtentHeight : double" Usage="System.Printing.PageImageableArea.ExtentHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentHeight { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -58,6 +64,9 @@
       <MemberSignature Language="C#" Value="public double ExtentWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ExtentWidth" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PageImageableArea.ExtentWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.ExtentWidth : double" Usage="System.Printing.PageImageableArea.ExtentWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentWidth { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -83,6 +92,9 @@
       <MemberSignature Language="C#" Value="public double OriginHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 OriginHeight" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PageImageableArea.OriginHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.OriginHeight : double" Usage="System.Printing.PageImageableArea.OriginHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OriginHeight { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -101,6 +113,9 @@
       <MemberSignature Language="C#" Value="public double OriginWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 OriginWidth" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PageImageableArea.OriginWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.OriginWidth : double" Usage="System.Printing.PageImageableArea.OriginWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OriginWidth { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -119,6 +134,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PageImageableArea.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="pageImageableArea.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="XmlSerializerAssemblyAttribute" FullName="System.Xml.Serialization.XmlSerializerAssemblyAttribute">
+﻿<Type Name="XmlSerializerAssemblyAttribute" FullName="System.Xml.Serialization.XmlSerializerAssemblyAttribute">
   <TypeSignature Language="C#" Value="public sealed class XmlSerializerAssemblyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlSerializerAssemblyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlSerializerAssemblyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlSerializerAssemblyAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type XmlSerializerAssemblyAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSerializerAssemblyAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -21,7 +24,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Enum | System.AttributeTargets.Interface, AllowMultiple=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Enum | System.AttributeTargets.Interface | System.AttributeTargets.Struct, AllowMultiple=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -87,10 +90,22 @@ End Class
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSerializerAssemblyAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlSerializerAssemblyAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerAssemblyAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSerializerAssemblyAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -115,6 +130,9 @@ End Class
       <MemberSignature Language="C#" Value="public XmlSerializerAssemblyAttribute (string assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerAssemblyAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyName As String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializerAssemblyAttribute : string -&gt; System.Xml.Serialization.XmlSerializerAssemblyAttribute" Usage="new System.Xml.Serialization.XmlSerializerAssemblyAttribute assemblyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSerializerAssemblyAttribute(System::String ^ assemblyName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -142,6 +160,9 @@ End Class
       <MemberSignature Language="C#" Value="public XmlSerializerAssemblyAttribute (string assemblyName, string codeBase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string assemblyName, string codeBase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.XmlSerializerAssemblyAttribute.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyName As String, codeBase As String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.XmlSerializerAssemblyAttribute : string * string -&gt; System.Xml.Serialization.XmlSerializerAssemblyAttribute" Usage="new System.Xml.Serialization.XmlSerializerAssemblyAttribute (assemblyName, codeBase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSerializerAssemblyAttribute(System::String ^ assemblyName, System::String ^ codeBase);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -171,6 +192,9 @@ End Class
       <MemberSignature Language="C#" Value="public string AssemblyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerAssemblyAttribute.AssemblyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssemblyName As String" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string with get, set" Usage="System.Xml.Serialization.XmlSerializerAssemblyAttribute.AssemblyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -198,6 +222,9 @@ End Class
       <MemberSignature Language="C#" Value="public string CodeBase { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CodeBase" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlSerializerAssemblyAttribute.CodeBase" />
+      <MemberSignature Language="VB.NET" Value="Public Property CodeBase As String" />
+      <MemberSignature Language="F#" Value="member this.CodeBase : string with get, set" Usage="System.Xml.Serialization.XmlSerializerAssemblyAttribute.CodeBase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CodeBase { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -221,15 +248,5 @@ End Class
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.XmlSerializerAssemblyAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

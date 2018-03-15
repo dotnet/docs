@@ -1,7 +1,10 @@
-<Type Name="IColumnMappingCollection" FullName="System.Data.IColumnMappingCollection">
+﻿<Type Name="IColumnMappingCollection" FullName="System.Data.IColumnMappingCollection">
   <TypeSignature Language="C#" Value="public interface IColumnMappingCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IColumnMappingCollection implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Data.IColumnMappingCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IColumnMappingCollection&#xA;Implements IList" />
+  <TypeSignature Language="F#" Value="type IColumnMappingCollection = interface&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IColumnMappingCollection : System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -61,6 +64,9 @@
       <MemberSignature Language="C#" Value="public System.Data.IColumnMapping Add (string sourceColumnName, string dataSetColumnName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.IColumnMapping Add(string sourceColumnName, string dataSetColumnName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IColumnMappingCollection.Add(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (sourceColumnName As String, dataSetColumnName As String) As IColumnMapping" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * string -&gt; System.Data.IColumnMapping" Usage="iColumnMappingCollection.Add (sourceColumnName, dataSetColumnName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IColumnMapping ^ Add(System::String ^ sourceColumnName, System::String ^ dataSetColumnName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -94,6 +100,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (string sourceColumnName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(string sourceColumnName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IColumnMappingCollection.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (sourceColumnName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Contains : string -&gt; bool" Usage="iColumnMappingCollection.Contains sourceColumnName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ sourceColumnName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -126,6 +135,9 @@
       <MemberSignature Language="C#" Value="public System.Data.IColumnMapping GetByDataSetColumn (string dataSetColumnName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.IColumnMapping GetByDataSetColumn(string dataSetColumnName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IColumnMappingCollection.GetByDataSetColumn(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetByDataSetColumn (dataSetColumnName As String) As IColumnMapping" />
+      <MemberSignature Language="F#" Value="abstract member GetByDataSetColumn : string -&gt; System.Data.IColumnMapping" Usage="iColumnMappingCollection.GetByDataSetColumn dataSetColumnName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::IColumnMapping ^ GetByDataSetColumn(System::String ^ dataSetColumnName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -157,6 +169,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (string sourceColumnName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(string sourceColumnName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IColumnMappingCollection.IndexOf(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (sourceColumnName As String) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : string -&gt; int" Usage="iColumnMappingCollection.IndexOf sourceColumnName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ sourceColumnName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -198,6 +213,9 @@
       <MemberSignature Language="C#" Value="public object this[string index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.IColumnMappingCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Data.IColumnMappingCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ index); void set(System::String ^ index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -229,6 +247,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (string sourceColumnName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(string sourceColumnName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IColumnMappingCollection.RemoveAt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (sourceColumnName As String)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : string -&gt; unit" Usage="iColumnMappingCollection.RemoveAt sourceColumnName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(System::String ^ sourceColumnName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="IProfileNotification" FullName="System.Workflow.Runtime.Tracking.IProfileNotification">
+﻿<Type Name="IProfileNotification" FullName="System.Workflow.Runtime.Tracking.IProfileNotification">
   <TypeSignature Language="C#" Value="public interface IProfileNotification" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProfileNotification" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.IProfileNotification" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IProfileNotification" />
+  <TypeSignature Language="F#" Value="type IProfileNotification = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IProfileNotification" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,9 +32,12 @@
   </Docs>
   <Members>
     <Member MemberName="ProfileRemoved">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs&gt; ProfileRemoved;" />
+      <MemberSignature Language="C#" Value="event EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs&gt; ProfileRemoved;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs&gt; ProfileRemoved" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileRemoved" />
+      <MemberSignature Language="VB.NET" Value="Event ProfileRemoved As EventHandler(Of ProfileRemovedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ProfileRemoved : EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs&gt; " Usage="member this.ProfileRemoved : System.EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::Tracking::ProfileRemovedEventArgs ^&gt; ^ ProfileRemoved;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -53,9 +59,12 @@
       </Docs>
     </Member>
     <Member MemberName="ProfileUpdated">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs&gt; ProfileUpdated;" />
+      <MemberSignature Language="C#" Value="event EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs&gt; ProfileUpdated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs&gt; ProfileUpdated" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Runtime.Tracking.IProfileNotification.ProfileUpdated" />
+      <MemberSignature Language="VB.NET" Value="Event ProfileUpdated As EventHandler(Of ProfileUpdatedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ProfileUpdated : EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs&gt; " Usage="member this.ProfileUpdated : System.EventHandler&lt;System.Workflow.Runtime.Tracking.ProfileUpdatedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Workflow::Runtime::Tracking::ProfileUpdatedEventArgs ^&gt; ^ ProfileUpdated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

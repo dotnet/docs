@@ -1,7 +1,10 @@
-<Type Name="RuleSchema" FullName="Microsoft.Build.Framework.XamlTypes.RuleSchema">
+﻿<Type Name="RuleSchema" FullName="Microsoft.Build.Framework.XamlTypes.RuleSchema">
   <TypeSignature Language="C#" Value="public abstract class RuleSchema" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit RuleSchema extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.RuleSchema" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class RuleSchema" />
+  <TypeSignature Language="F#" Value="type RuleSchema = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleSchema abstract" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="protected RuleSchema ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.RuleSchema.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; RuleSchema();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

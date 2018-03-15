@@ -1,7 +1,10 @@
-<Type Name="InkCanvasStrokesReplacedEventArgs" FullName="System.Windows.Controls.InkCanvasStrokesReplacedEventArgs">
+﻿<Type Name="InkCanvasStrokesReplacedEventArgs" FullName="System.Windows.Controls.InkCanvasStrokesReplacedEventArgs">
   <TypeSignature Language="C#" Value="public class InkCanvasStrokesReplacedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InkCanvasStrokesReplacedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvasStrokesReplacedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class InkCanvasStrokesReplacedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type InkCanvasStrokesReplacedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InkCanvasStrokesReplacedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection NewStrokes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.StrokeCollection NewStrokes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasStrokesReplacedEventArgs.NewStrokes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewStrokes As StrokeCollection" />
+      <MemberSignature Language="F#" Value="member this.NewStrokes : System.Windows.Ink.StrokeCollection" Usage="System.Windows.Controls.InkCanvasStrokesReplacedEventArgs.NewStrokes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::StrokeCollection ^ NewStrokes { System::Windows::Ink::StrokeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection PreviousStrokes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.StrokeCollection PreviousStrokes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvasStrokesReplacedEventArgs.PreviousStrokes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousStrokes As StrokeCollection" />
+      <MemberSignature Language="F#" Value="member this.PreviousStrokes : System.Windows.Ink.StrokeCollection" Usage="System.Windows.Controls.InkCanvasStrokesReplacedEventArgs.PreviousStrokes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::StrokeCollection ^ PreviousStrokes { System::Windows::Ink::StrokeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

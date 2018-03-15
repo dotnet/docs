@@ -1,7 +1,10 @@
-<Type Name="FileAssociation" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation">
+﻿<Type Name="FileAssociation" FullName="Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation">
   <TypeSignature Language="C#" Value="public sealed class FileAssociation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileAssociation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileAssociation" />
+  <TypeSignature Language="F#" Value="type FileAssociation = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileAssociation sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,8 @@
       <MemberSignature Language="C#" Value="public FileAssociation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileAssociation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -39,6 +44,9 @@
       <MemberSignature Language="C#" Value="public string DefaultIcon { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultIcon" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.DefaultIcon" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultIcon As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultIcon : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.DefaultIcon" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultIcon { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -62,6 +70,9 @@
       <MemberSignature Language="C#" Value="public string Description { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -85,6 +96,9 @@
       <MemberSignature Language="C#" Value="public string Extension { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Extension" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.Extension" />
+      <MemberSignature Language="VB.NET" Value="Public Property Extension As String" />
+      <MemberSignature Language="F#" Value="member this.Extension : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.Extension" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Extension { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -108,6 +122,9 @@
       <MemberSignature Language="C#" Value="public string ProgId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProgId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.ProgId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProgId As String" />
+      <MemberSignature Language="F#" Value="member this.ProgId : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.ProgId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProgId { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -131,6 +148,9 @@
       <MemberSignature Language="C#" Value="public string XmlDefaultIcon { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlDefaultIcon" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.XmlDefaultIcon" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlDefaultIcon As String" />
+      <MemberSignature Language="F#" Value="member this.XmlDefaultIcon : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.XmlDefaultIcon" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlDefaultIcon { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -160,6 +180,9 @@
       <MemberSignature Language="C#" Value="public string XmlDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlDescription" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.XmlDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlDescription As String" />
+      <MemberSignature Language="F#" Value="member this.XmlDescription : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.XmlDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -189,6 +212,9 @@
       <MemberSignature Language="C#" Value="public string XmlExtension { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlExtension" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.XmlExtension" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlExtension As String" />
+      <MemberSignature Language="F#" Value="member this.XmlExtension : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.XmlExtension" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlExtension { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -218,6 +244,9 @@
       <MemberSignature Language="C#" Value="public string XmlProgId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlProgId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.XmlProgId" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlProgId As String" />
+      <MemberSignature Language="F#" Value="member this.XmlProgId : string with get, set" Usage="Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileAssociation.XmlProgId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlProgId { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

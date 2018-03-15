@@ -1,7 +1,10 @@
-<Type Name="XpsStructure" FullName="System.Windows.Xps.Packaging.XpsStructure">
+﻿<Type Name="XpsStructure" FullName="System.Windows.Xps.Packaging.XpsStructure">
   <TypeSignature Language="C#" Value="public class XpsStructure : System.Windows.Xps.Packaging.XpsResource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsStructure extends System.Windows.Xps.Packaging.XpsResource" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsStructure" />
+  <TypeSignature Language="VB.NET" Value="Public Class XpsStructure&#xA;Inherits XpsResource" />
+  <TypeSignature Language="F#" Value="type XpsStructure = class&#xA;    inherit XpsResource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XpsStructure : System::Windows::Xps::Packaging::XpsResource" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

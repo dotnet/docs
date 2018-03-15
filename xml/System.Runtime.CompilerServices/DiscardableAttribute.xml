@@ -1,7 +1,10 @@
-<Type Name="DiscardableAttribute" FullName="System.Runtime.CompilerServices.DiscardableAttribute">
+﻿<Type Name="DiscardableAttribute" FullName="System.Runtime.CompilerServices.DiscardableAttribute">
   <TypeSignature Language="C#" Value="public class DiscardableAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DiscardableAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.DiscardableAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class DiscardableAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type DiscardableAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscardableAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +53,8 @@
       <MemberSignature Language="C#" Value="public DiscardableAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.DiscardableAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscardableAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

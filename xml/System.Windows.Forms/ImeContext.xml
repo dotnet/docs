@@ -1,7 +1,10 @@
-<Type Name="ImeContext" FullName="System.Windows.Forms.ImeContext">
+﻿<Type Name="ImeContext" FullName="System.Windows.Forms.ImeContext">
   <TypeSignature Language="C#" Value="public static class ImeContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ImeContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImeContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class ImeContext" />
+  <TypeSignature Language="F#" Value="type ImeContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImeContext abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public static void Disable (IntPtr handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Disable(native int handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImeContext.Disable(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Disable (handle As IntPtr)" />
+      <MemberSignature Language="F#" Value="static member Disable : nativeint -&gt; unit" Usage="System.Windows.Forms.ImeContext.Disable handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Disable(IntPtr handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -42,6 +48,9 @@
       <MemberSignature Language="C#" Value="public static void Enable (IntPtr handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Enable(native int handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImeContext.Enable(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Enable (handle As IntPtr)" />
+      <MemberSignature Language="F#" Value="static member Enable : nativeint -&gt; unit" Usage="System.Windows.Forms.ImeContext.Enable handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Enable(IntPtr handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +73,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.ImeMode GetImeMode (IntPtr handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Forms.ImeMode GetImeMode(native int handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImeContext.GetImeMode(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetImeMode (handle As IntPtr) As ImeMode" />
+      <MemberSignature Language="F#" Value="static member GetImeMode : nativeint -&gt; System.Windows.Forms.ImeMode" Usage="System.Windows.Forms.ImeContext.GetImeMode handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::ImeMode GetImeMode(IntPtr handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -87,6 +99,9 @@
       <MemberSignature Language="C#" Value="public static bool IsOpen (IntPtr handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsOpen(native int handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImeContext.IsOpen(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsOpen (handle As IntPtr) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsOpen : nativeint -&gt; bool" Usage="System.Windows.Forms.ImeContext.IsOpen handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsOpen(IntPtr handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -111,6 +126,8 @@
       <MemberSignature Language="C#" Value="public static void SetImeStatus (System.Windows.Forms.ImeMode imeMode, IntPtr handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetImeStatus(valuetype System.Windows.Forms.ImeMode imeMode, native int handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImeContext.SetImeStatus(System.Windows.Forms.ImeMode,System.IntPtr)" />
+      <MemberSignature Language="F#" Value="static member SetImeStatus : System.Windows.Forms.ImeMode * nativeint -&gt; unit" Usage="System.Windows.Forms.ImeContext.SetImeStatus (imeMode, handle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetImeStatus(System::Windows::Forms::ImeMode imeMode, IntPtr handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -135,6 +152,9 @@
       <MemberSignature Language="C#" Value="public static void SetOpenStatus (bool open, IntPtr handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetOpenStatus(bool open, native int handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ImeContext.SetOpenStatus(System.Boolean,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetOpenStatus (open As Boolean, handle As IntPtr)" />
+      <MemberSignature Language="F#" Value="static member SetOpenStatus : bool * nativeint -&gt; unit" Usage="System.Windows.Forms.ImeContext.SetOpenStatus (open, handle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetOpenStatus(bool open, IntPtr handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

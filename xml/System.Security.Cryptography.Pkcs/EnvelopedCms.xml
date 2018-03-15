@@ -1,7 +1,10 @@
-<Type Name="EnvelopedCms" FullName="System.Security.Cryptography.Pkcs.EnvelopedCms">
+﻿<Type Name="EnvelopedCms" FullName="System.Security.Cryptography.Pkcs.EnvelopedCms">
   <TypeSignature Language="C#" Value="public sealed class EnvelopedCms" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EnvelopedCms extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.EnvelopedCms" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EnvelopedCms" />
+  <TypeSignature Language="F#" Value="type EnvelopedCms = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EnvelopedCms sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,10 +36,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.EnvelopedCms" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EnvelopedCms ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnvelopedCms();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -73,6 +88,8 @@
       <MemberSignature Language="C#" Value="public EnvelopedCms (System.Security.Cryptography.Pkcs.ContentInfo contentInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Pkcs.ContentInfo contentInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.EnvelopedCms : System.Security.Cryptography.Pkcs.ContentInfo -&gt; System.Security.Cryptography.Pkcs.EnvelopedCms" Usage="new System.Security.Cryptography.Pkcs.EnvelopedCms contentInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnvelopedCms(System::Security::Cryptography::Pkcs::ContentInfo ^ contentInfo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -106,6 +123,8 @@
       <MemberSignature Language="C#" Value="public EnvelopedCms (System.Security.Cryptography.Pkcs.ContentInfo contentInfo, System.Security.Cryptography.Pkcs.AlgorithmIdentifier encryptionAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Pkcs.ContentInfo contentInfo, class System.Security.Cryptography.Pkcs.AlgorithmIdentifier encryptionAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor(System.Security.Cryptography.Pkcs.ContentInfo,System.Security.Cryptography.Pkcs.AlgorithmIdentifier)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.EnvelopedCms : System.Security.Cryptography.Pkcs.ContentInfo * System.Security.Cryptography.Pkcs.AlgorithmIdentifier -&gt; System.Security.Cryptography.Pkcs.EnvelopedCms" Usage="new System.Security.Cryptography.Pkcs.EnvelopedCms (contentInfo, encryptionAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnvelopedCms(System::Security::Cryptography::Pkcs::ContentInfo ^ contentInfo, System::Security::Cryptography::Pkcs::AlgorithmIdentifier ^ encryptionAlgorithm);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -142,6 +161,8 @@
       <MemberSignature Language="C#" Value="public EnvelopedCms (System.Security.Cryptography.Pkcs.SubjectIdentifierType recipientIdentifierType, System.Security.Cryptography.Pkcs.ContentInfo contentInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierType recipientIdentifierType, class System.Security.Cryptography.Pkcs.ContentInfo contentInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.EnvelopedCms : System.Security.Cryptography.Pkcs.SubjectIdentifierType * System.Security.Cryptography.Pkcs.ContentInfo -&gt; System.Security.Cryptography.Pkcs.EnvelopedCms" Usage="new System.Security.Cryptography.Pkcs.EnvelopedCms (recipientIdentifierType, contentInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnvelopedCms(System::Security::Cryptography::Pkcs::SubjectIdentifierType recipientIdentifierType, System::Security::Cryptography::Pkcs::ContentInfo ^ contentInfo);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -175,6 +196,8 @@
       <MemberSignature Language="C#" Value="public EnvelopedCms (System.Security.Cryptography.Pkcs.SubjectIdentifierType recipientIdentifierType, System.Security.Cryptography.Pkcs.ContentInfo contentInfo, System.Security.Cryptography.Pkcs.AlgorithmIdentifier encryptionAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.Pkcs.SubjectIdentifierType recipientIdentifierType, class System.Security.Cryptography.Pkcs.ContentInfo contentInfo, class System.Security.Cryptography.Pkcs.AlgorithmIdentifier encryptionAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo,System.Security.Cryptography.Pkcs.AlgorithmIdentifier)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Pkcs.EnvelopedCms : System.Security.Cryptography.Pkcs.SubjectIdentifierType * System.Security.Cryptography.Pkcs.ContentInfo * System.Security.Cryptography.Pkcs.AlgorithmIdentifier -&gt; System.Security.Cryptography.Pkcs.EnvelopedCms" Usage="new System.Security.Cryptography.Pkcs.EnvelopedCms (recipientIdentifierType, contentInfo, encryptionAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EnvelopedCms(System::Security::Cryptography::Pkcs::SubjectIdentifierType recipientIdentifierType, System::Security::Cryptography::Pkcs::ContentInfo ^ contentInfo, System::Security::Cryptography::Pkcs::AlgorithmIdentifier ^ encryptionAlgorithm);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -199,6 +222,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509Certificate2Collection Certificates" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.EnvelopedCms.Certificates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Certificates As X509Certificate2Collection" />
+      <MemberSignature Language="F#" Value="member this.Certificates : System.Security.Cryptography.X509Certificates.X509Certificate2Collection" Usage="System.Security.Cryptography.Pkcs.EnvelopedCms.Certificates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ Certificates { System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -223,6 +249,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.AlgorithmIdentifier ContentEncryptionAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Pkcs.AlgorithmIdentifier ContentEncryptionAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.EnvelopedCms.ContentEncryptionAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentEncryptionAlgorithm As AlgorithmIdentifier" />
+      <MemberSignature Language="F#" Value="member this.ContentEncryptionAlgorithm : System.Security.Cryptography.Pkcs.AlgorithmIdentifier" Usage="System.Security.Cryptography.Pkcs.EnvelopedCms.ContentEncryptionAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Pkcs::AlgorithmIdentifier ^ ContentEncryptionAlgorithm { System::Security::Cryptography::Pkcs::AlgorithmIdentifier ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -254,6 +283,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.ContentInfo ContentInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Pkcs.ContentInfo ContentInfo" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.EnvelopedCms.ContentInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentInfo As ContentInfo" />
+      <MemberSignature Language="F#" Value="member this.ContentInfo : System.Security.Cryptography.Pkcs.ContentInfo" Usage="System.Security.Cryptography.Pkcs.EnvelopedCms.ContentInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Pkcs::ContentInfo ^ ContentInfo { System::Security::Cryptography::Pkcs::ContentInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -285,6 +317,9 @@
       <MemberSignature Language="C#" Value="public void Decode (byte[] encodedMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decode(unsigned int8[] encodedMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Decode(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Decode (encodedMessage As Byte())" />
+      <MemberSignature Language="F#" Value="member this.Decode : byte[] -&gt; unit" Usage="envelopedCms.Decode encodedMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Decode(cli::array &lt;System::Byte&gt; ^ encodedMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -317,10 +352,23 @@
         <altmember cref="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Encode" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Decrypt">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Decrypts the contents of the decoded enveloped CMS/PKCS #7 message.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Decrypt">
       <MemberSignature Language="C#" Value="public void Decrypt ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decrypt() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Decrypt ()" />
+      <MemberSignature Language="F#" Value="member this.Decrypt : unit -&gt; unit" Usage="envelopedCms.Decrypt " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Decrypt();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -363,6 +411,8 @@
       <MemberSignature Language="C#" Value="public void Decrypt (System.Security.Cryptography.Pkcs.RecipientInfo recipientInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decrypt(class System.Security.Cryptography.Pkcs.RecipientInfo recipientInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt(System.Security.Cryptography.Pkcs.RecipientInfo)" />
+      <MemberSignature Language="F#" Value="member this.Decrypt : System.Security.Cryptography.Pkcs.RecipientInfo -&gt; unit" Usage="envelopedCms.Decrypt recipientInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Decrypt(System::Security::Cryptography::Pkcs::RecipientInfo ^ recipientInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -406,6 +456,9 @@
       <MemberSignature Language="C#" Value="public void Decrypt (System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraStore);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decrypt(class System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraStore) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt(System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Decrypt (extraStore As X509Certificate2Collection)" />
+      <MemberSignature Language="F#" Value="member this.Decrypt : System.Security.Cryptography.X509Certificates.X509Certificate2Collection -&gt; unit" Usage="envelopedCms.Decrypt extraStore" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Decrypt(System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ extraStore);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -449,6 +502,8 @@
       <MemberSignature Language="C#" Value="public void Decrypt (System.Security.Cryptography.Pkcs.RecipientInfo recipientInfo, System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraStore);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decrypt(class System.Security.Cryptography.Pkcs.RecipientInfo recipientInfo, class System.Security.Cryptography.X509Certificates.X509Certificate2Collection extraStore) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt(System.Security.Cryptography.Pkcs.RecipientInfo,System.Security.Cryptography.X509Certificates.X509Certificate2Collection)" />
+      <MemberSignature Language="F#" Value="member this.Decrypt : System.Security.Cryptography.Pkcs.RecipientInfo * System.Security.Cryptography.X509Certificates.X509Certificate2Collection -&gt; unit" Usage="envelopedCms.Decrypt (recipientInfo, extraStore)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Decrypt(System::Security::Cryptography::Pkcs::RecipientInfo ^ recipientInfo, System::Security::Cryptography::X509Certificates::X509Certificate2Collection ^ extraStore);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -494,6 +549,9 @@
       <MemberSignature Language="C#" Value="public byte[] Encode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] Encode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Encode" />
+      <MemberSignature Language="VB.NET" Value="Public Function Encode () As Byte()" />
+      <MemberSignature Language="F#" Value="member this.Encode : unit -&gt; byte[]" Usage="envelopedCms.Encode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ Encode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -528,10 +586,23 @@
         <altmember cref="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Decode(System.Byte[])" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Encrypt">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encrypts the contents of the CMS/PKCS #7 message.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Encrypt">
       <MemberSignature Language="C#" Value="public void Encrypt ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Encrypt() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Encrypt ()" />
+      <MemberSignature Language="F#" Value="member this.Encrypt : unit -&gt; unit" Usage="envelopedCms.Encrypt " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Encrypt();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -568,6 +639,9 @@
       <MemberSignature Language="C#" Value="public void Encrypt (System.Security.Cryptography.Pkcs.CmsRecipient recipient);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Encrypt(class System.Security.Cryptography.Pkcs.CmsRecipient recipient) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt(System.Security.Cryptography.Pkcs.CmsRecipient)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Encrypt (recipient As CmsRecipient)" />
+      <MemberSignature Language="F#" Value="member this.Encrypt : System.Security.Cryptography.Pkcs.CmsRecipient -&gt; unit" Usage="envelopedCms.Encrypt recipient" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Encrypt(System::Security::Cryptography::Pkcs::CmsRecipient ^ recipient);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -604,6 +678,9 @@
       <MemberSignature Language="C#" Value="public void Encrypt (System.Security.Cryptography.Pkcs.CmsRecipientCollection recipients);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Encrypt(class System.Security.Cryptography.Pkcs.CmsRecipientCollection recipients) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt(System.Security.Cryptography.Pkcs.CmsRecipientCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Encrypt (recipients As CmsRecipientCollection)" />
+      <MemberSignature Language="F#" Value="member this.Encrypt : System.Security.Cryptography.Pkcs.CmsRecipientCollection -&gt; unit" Usage="envelopedCms.Encrypt recipients" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Encrypt(System::Security::Cryptography::Pkcs::CmsRecipientCollection ^ recipients);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -640,6 +717,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.RecipientInfoCollection RecipientInfos { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Pkcs.RecipientInfoCollection RecipientInfos" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecipientInfos As RecipientInfoCollection" />
+      <MemberSignature Language="F#" Value="member this.RecipientInfos : System.Security.Cryptography.Pkcs.RecipientInfoCollection" Usage="System.Security.Cryptography.Pkcs.EnvelopedCms.RecipientInfos" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Pkcs::RecipientInfoCollection ^ RecipientInfos { System::Security::Cryptography::Pkcs::RecipientInfoCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -673,6 +753,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.CryptographicAttributeObjectCollection UnprotectedAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.CryptographicAttributeObjectCollection UnprotectedAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.EnvelopedCms.UnprotectedAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnprotectedAttributes As CryptographicAttributeObjectCollection" />
+      <MemberSignature Language="F#" Value="member this.UnprotectedAttributes : System.Security.Cryptography.CryptographicAttributeObjectCollection" Usage="System.Security.Cryptography.Pkcs.EnvelopedCms.UnprotectedAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CryptographicAttributeObjectCollection ^ UnprotectedAttributes { System::Security::Cryptography::CryptographicAttributeObjectCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -697,6 +780,9 @@
       <MemberSignature Language="C#" Value="public int Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Version" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.EnvelopedCms.Version" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Version As Integer" />
+      <MemberSignature Language="F#" Value="member this.Version : int" Usage="System.Security.Cryptography.Pkcs.EnvelopedCms.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Version { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -724,35 +810,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Security.Cryptography.Pkcs.EnvelopedCms" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Decrypt">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Decrypts the contents of the decoded enveloped CMS/PKCS #7 message.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Encrypt">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Encrypts the contents of the CMS/PKCS #7 message.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

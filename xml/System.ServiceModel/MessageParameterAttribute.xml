@@ -1,7 +1,10 @@
-<Type Name="MessageParameterAttribute" FullName="System.ServiceModel.MessageParameterAttribute">
+﻿<Type Name="MessageParameterAttribute" FullName="System.ServiceModel.MessageParameterAttribute">
   <TypeSignature Language="C#" Value="public sealed class MessageParameterAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MessageParameterAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageParameterAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessageParameterAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type MessageParameterAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageParameterAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -58,6 +61,8 @@
       <MemberSignature Language="C#" Value="public MessageParameterAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageParameterAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageParameterAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -95,6 +100,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageParameterAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.MessageParameterAttribute.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ConfiguredTaskAwaitable&lt;TResult&gt;+ConfiguredTaskAwaiter" FullName="System.Runtime.CompilerServices.ConfiguredTaskAwaitable&lt;TResult&gt;+ConfiguredTaskAwaiter">
+﻿<Type Name="ConfiguredTaskAwaitable&lt;TResult&gt;+ConfiguredTaskAwaiter" FullName="System.Runtime.CompilerServices.ConfiguredTaskAwaitable&lt;TResult&gt;+ConfiguredTaskAwaiter">
   <TypeSignature Language="C#" Value="public struct ConfiguredTaskAwaitable&lt;TResult&gt;.ConfiguredTaskAwaiter : System.Runtime.CompilerServices.ICriticalNotifyCompletion" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit ConfiguredTaskAwaitable`1/ConfiguredTaskAwaiter&lt;TResult&gt; extends System.ValueType implements class System.Runtime.CompilerServices.ICriticalNotifyCompletion, class System.Runtime.CompilerServices.INotifyCompletion" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ConfiguredTaskAwaitable(Of TResult).ConfiguredTaskAwaiter&#xA;Implements ICriticalNotifyCompletion" />
+  <TypeSignature Language="F#" Value="type ConfiguredTaskAwaitable&lt;'Result&gt;.ConfiguredTaskAwaiter = struct&#xA;    interface ICriticalNotifyCompletion&#xA;    interface INotifyCompletion" />
+  <TypeSignature Language="C++ CLI" Value="public: value class ConfiguredTaskAwaitable&lt;TResult&gt;::ConfiguredTaskAwaiter : System::Runtime::CompilerServices::ICriticalNotifyCompletion" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,9 @@
       <MemberSignature Language="C#" Value="public TResult GetResult ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !TResult GetResult() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResult () As TResult" />
+      <MemberSignature Language="F#" Value="member this.GetResult : unit -&gt; 'Result" Usage="configuredTaskAwaiter.GetResult " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TResult GetResult();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -90,6 +96,9 @@
       <MemberSignature Language="C#" Value="public bool IsCompleted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCompleted" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.IsCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCompleted : bool" Usage="System.Runtime.CompilerServices.ConfiguredTaskAwaitable&lt;'Result&gt;.ConfiguredTaskAwaiter.IsCompleted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompleted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -131,7 +140,13 @@
       <MemberSignature Language="C#" Value="public void OnCompleted (Action continuation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnCompleted(class System.Action continuation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.OnCompleted(System.Action)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnCompleted (continuation As Action)" />
+      <MemberSignature Language="F#" Value="abstract member OnCompleted : Action -&gt; unit&#xA;override this.OnCompleted : Action -&gt; unit" Usage="configuredTaskAwaiter.OnCompleted continuation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnCompleted(Action ^ continuation);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.CompilerServices.INotifyCompletion.OnCompleted(System.Action)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -180,7 +195,13 @@
       <MemberSignature Language="C#" Value="public void UnsafeOnCompleted (Action continuation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnsafeOnCompleted(class System.Action continuation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.UnsafeOnCompleted(System.Action)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnsafeOnCompleted (continuation As Action)" />
+      <MemberSignature Language="F#" Value="abstract member UnsafeOnCompleted : Action -&gt; unit&#xA;override this.UnsafeOnCompleted : Action -&gt; unit" Usage="configuredTaskAwaiter.UnsafeOnCompleted continuation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnsafeOnCompleted(Action ^ continuation);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted(System.Action)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

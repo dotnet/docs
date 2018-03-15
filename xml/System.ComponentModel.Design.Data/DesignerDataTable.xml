@@ -1,7 +1,10 @@
-<Type Name="DesignerDataTable" FullName="System.ComponentModel.Design.Data.DesignerDataTable">
+﻿<Type Name="DesignerDataTable" FullName="System.ComponentModel.Design.Data.DesignerDataTable">
   <TypeSignature Language="C#" Value="public abstract class DesignerDataTable : System.ComponentModel.Design.Data.DesignerDataTableBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DesignerDataTable extends System.ComponentModel.Design.Data.DesignerDataTableBase" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataTable" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerDataTable&#xA;Inherits DesignerDataTableBase" />
+  <TypeSignature Language="F#" Value="type DesignerDataTable = class&#xA;    inherit DesignerDataTableBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerDataTable abstract : System::ComponentModel::Design::Data::DesignerDataTableBase" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +27,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataTable" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected DesignerDataTable (string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataTable.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataTable : string -&gt; System.ComponentModel.Design.Data.DesignerDataTable" Usage="new System.ComponentModel.Design.Data.DesignerDataTable name" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerDataTable(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -46,6 +61,9 @@
       <MemberSignature Language="C#" Value="protected DesignerDataTable (string name, string owner);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name, string owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataTable.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String, owner As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataTable : string * string -&gt; System.ComponentModel.Design.Data.DesignerDataTable" Usage="new System.ComponentModel.Design.Data.DesignerDataTable (name, owner)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerDataTable(System::String ^ name, System::String ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -66,6 +84,9 @@
       <MemberSignature Language="C#" Value="protected abstract System.Collections.ICollection CreateRelationships ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.ICollection CreateRelationships() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataTable.CreateRelationships" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateRelationships () As ICollection" />
+      <MemberSignature Language="F#" Value="abstract member CreateRelationships : unit -&gt; System.Collections.ICollection" Usage="designerDataTable.CreateRelationships " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::ICollection ^ CreateRelationships();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -92,6 +113,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection Relationships { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Relationships" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Data.DesignerDataTable.Relationships" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Relationships As ICollection" />
+      <MemberSignature Language="F#" Value="member this.Relationships : System.Collections.ICollection" Usage="System.ComponentModel.Design.Data.DesignerDataTable.Relationships" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Relationships { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -113,14 +137,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataTable" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

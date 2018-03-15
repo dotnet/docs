@@ -1,7 +1,10 @@
-<Type Name="Window" FullName="System.Windows.Window">
+﻿<Type Name="Window" FullName="System.Windows.Window">
   <TypeSignature Language="C#" Value="public class Window : System.Windows.Controls.ContentControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Window extends System.Windows.Controls.ContentControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Window" />
+  <TypeSignature Language="VB.NET" Value="Public Class Window&#xA;Inherits ContentControl" />
+  <TypeSignature Language="F#" Value="type Window = class&#xA;    inherit ContentControl&#xA;    interface IWindowService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Window : System::Windows::Controls::ContentControl" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -106,6 +109,8 @@
       <MemberSignature Language="C#" Value="public Window ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Window();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -136,6 +141,9 @@
       <MemberSignature Language="C#" Value="public bool Activate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Activate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.Activate" />
+      <MemberSignature Language="VB.NET" Value="Public Function Activate () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Activate : unit -&gt; bool" Usage="window.Activate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Activate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -177,6 +185,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Activated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Activated" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Window.Activated" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Activated As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Activated : EventHandler " Usage="member this.Activated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Activated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -216,6 +227,9 @@
       <MemberSignature Language="C#" Value="public bool AllowsTransparency { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowsTransparency" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.AllowsTransparency" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowsTransparency As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowsTransparency : bool with get, set" Usage="System.Windows.Window.AllowsTransparency" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowsTransparency { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -253,6 +267,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AllowsTransparencyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AllowsTransparencyProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Window.AllowsTransparencyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AllowsTransparencyProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable AllowsTransparencyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Window.AllowsTransparencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AllowsTransparencyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -270,6 +287,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeBounds);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeBounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeBounds As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="window.ArrangeOverride arrangeBounds" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeBounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -304,6 +324,9 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="window.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -387,6 +410,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Closed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Closed" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Window.Closed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Closed As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Closed : EventHandler " Usage="member this.Closed : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Closed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -418,6 +444,9 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.CancelEventHandler Closing;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CancelEventHandler Closing" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Window.Closing" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Closing As CancelEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Closing : System.ComponentModel.CancelEventHandler " Usage="member this.Closing : System.ComponentModel.CancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ Closing;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -467,6 +496,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ContentRendered;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ContentRendered" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Window.ContentRendered" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ContentRendered As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ContentRendered : EventHandler " Usage="member this.ContentRendered : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ ContentRendered;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -493,6 +525,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Deactivated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Deactivated" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Window.Deactivated" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Deactivated As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Deactivated : EventHandler " Usage="member this.Deactivated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Deactivated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -532,6 +567,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; DialogResult { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; DialogResult" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.DialogResult" />
+      <MemberSignature Language="VB.NET" Value="Public Property DialogResult As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.DialogResult : Nullable&lt;bool&gt; with get, set" Usage="System.Windows.Window.DialogResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; DialogResult { Nullable&lt;bool&gt; get(); void set(Nullable&lt;bool&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -539,7 +577,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Windows.DialogResultConverter))</AttributeName>
@@ -604,6 +642,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.DpiChangedEventHandler DpiChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.DpiChangedEventHandler DpiChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Window.DpiChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DpiChanged As DpiChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DpiChanged : System.Windows.DpiChangedEventHandler " Usage="member this.DpiChanged : System.Windows.DpiChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::DpiChangedEventHandler ^ DpiChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -621,6 +662,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent DpiChangedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent DpiChangedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Window.DpiChangedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DpiChangedEvent As RoutedEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable DpiChangedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Window.DpiChangedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ DpiChangedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -638,6 +682,9 @@
       <MemberSignature Language="C#" Value="public void DragMove ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DragMove() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.DragMove" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DragMove ()" />
+      <MemberSignature Language="F#" Value="member this.DragMove : unit -&gt; unit" Usage="window.DragMove " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DragMove();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -684,6 +731,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Window GetWindow (System.Windows.DependencyObject dependencyObject);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Window GetWindow(class System.Windows.DependencyObject dependencyObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.GetWindow(System.Windows.DependencyObject)" />
+      <MemberSignature Language="F#" Value="static member GetWindow : System.Windows.DependencyObject -&gt; System.Windows.Window" Usage="System.Windows.Window.GetWindow dependencyObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Window ^ GetWindow(System::Windows::DependencyObject ^ dependencyObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -708,6 +757,9 @@
       <MemberSignature Language="C#" Value="public void Hide ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Hide() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.Hide" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Hide ()" />
+      <MemberSignature Language="F#" Value="member this.Hide : unit -&gt; unit" Usage="window.Hide " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Hide();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -742,6 +794,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource Icon { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource Icon" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.Icon" />
+      <MemberSignature Language="VB.NET" Value="Public Property Icon As ImageSource" />
+      <MemberSignature Language="F#" Value="member this.Icon : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Window.Icon" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ Icon { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -817,6 +872,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IconProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IconProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Window.IconProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IconProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IconProperty : System.Windows.DependencyProperty" Usage="System.Windows.Window.IconProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IconProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -834,6 +892,9 @@
       <MemberSignature Language="C#" Value="public bool IsActive { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsActive" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.IsActive" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsActive As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsActive : bool" Usage="System.Windows.Window.IsActive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsActive { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -871,6 +932,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsActiveProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsActiveProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Window.IsActiveProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsActiveProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsActiveProperty : System.Windows.DependencyProperty" Usage="System.Windows.Window.IsActiveProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsActiveProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -888,6 +952,9 @@
       <MemberSignature Language="C#" Value="public double Left { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Left" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Double" />
+      <MemberSignature Language="F#" Value="member this.Left : double with get, set" Usage="System.Windows.Window.Left" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Left { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -934,6 +1001,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LeftProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LeftProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Window.LeftProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LeftProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable LeftProperty : System.Windows.DependencyProperty" Usage="System.Windows.Window.LeftProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LeftProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -951,6 +1021,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler LocationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LocationChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Window.LocationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LocationChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.LocationChanged : EventHandler " Usage="member this.LocationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LocationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -985,9 +1058,12 @@
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
-      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator LogicalChildren { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Collections.IEnumerator LogicalChildren { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator LogicalChildren" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.LogicalChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Window.LogicalChildren" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1007,6 +1083,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size availableSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size availableSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="window.MeasureOverride availableSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1041,6 +1120,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnActivated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnActivated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.OnActivated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActivated (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnActivated : EventArgs -&gt; unit&#xA;override this.OnActivated : EventArgs -&gt; unit" Usage="window.OnActivated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnActivated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1072,6 +1154,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnClosed (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClosed(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.OnClosed(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClosed (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnClosed : EventArgs -&gt; unit&#xA;override this.OnClosed : EventArgs -&gt; unit" Usage="window.OnClosed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClosed(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1103,6 +1188,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnClosing (System.ComponentModel.CancelEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClosing(class System.ComponentModel.CancelEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.OnClosing(System.ComponentModel.CancelEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClosing (e As CancelEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnClosing : System.ComponentModel.CancelEventArgs -&gt; unit&#xA;override this.OnClosing : System.ComponentModel.CancelEventArgs -&gt; unit" Usage="window.OnClosing e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClosing(System::ComponentModel::CancelEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1134,6 +1222,9 @@
       <MemberSignature Language="C#" Value="protected override void OnContentChanged (object oldContent, object newContent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnContentChanged(object oldContent, object newContent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.OnContentChanged(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnContentChanged (oldContent As Object, newContent As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnContentChanged : obj * obj -&gt; unit" Usage="window.OnContentChanged (oldContent, newContent)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnContentChanged(System::Object ^ oldContent, System::Object ^ newContent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1157,6 +1248,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnContentRendered (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnContentRendered(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.OnContentRendered(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnContentRendered (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnContentRendered : EventArgs -&gt; unit&#xA;override this.OnContentRendered : EventArgs -&gt; unit" Usage="window.OnContentRendered e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnContentRendered(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1187,6 +1281,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="window.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1213,6 +1310,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDeactivated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDeactivated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.OnDeactivated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDeactivated (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDeactivated : EventArgs -&gt; unit&#xA;override this.OnDeactivated : EventArgs -&gt; unit" Usage="window.OnDeactivated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDeactivated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1244,6 +1344,9 @@
       <MemberSignature Language="C#" Value="protected override void OnDpiChanged (System.Windows.DpiScale oldDpi, System.Windows.DpiScale newDpi);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDpiChanged(valuetype System.Windows.DpiScale oldDpi, valuetype System.Windows.DpiScale newDpi) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDpiChanged (oldDpi As DpiScale, newDpi As DpiScale)" />
+      <MemberSignature Language="F#" Value="override this.OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit" Usage="window.OnDpiChanged (oldDpi, newDpi)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDpiChanged(System::Windows::DpiScale oldDpi, System::Windows::DpiScale newDpi);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1267,6 +1370,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnLocationChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLocationChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.OnLocationChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLocationChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnLocationChanged : EventArgs -&gt; unit&#xA;override this.OnLocationChanged : EventArgs -&gt; unit" Usage="window.OnLocationChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLocationChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1299,6 +1405,9 @@
       <MemberSignature Language="C#" Value="protected override void OnManipulationBoundaryFeedback (System.Windows.Input.ManipulationBoundaryFeedbackEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnManipulationBoundaryFeedback(class System.Windows.Input.ManipulationBoundaryFeedbackEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.OnManipulationBoundaryFeedback(System.Windows.Input.ManipulationBoundaryFeedbackEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnManipulationBoundaryFeedback (e As ManipulationBoundaryFeedbackEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnManipulationBoundaryFeedback : System.Windows.Input.ManipulationBoundaryFeedbackEventArgs -&gt; unit" Usage="window.OnManipulationBoundaryFeedback e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnManipulationBoundaryFeedback(System::Windows::Input::ManipulationBoundaryFeedbackEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1330,6 +1439,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSourceInitialized (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSourceInitialized(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.OnSourceInitialized(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSourceInitialized (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSourceInitialized : EventArgs -&gt; unit&#xA;override this.OnSourceInitialized : EventArgs -&gt; unit" Usage="window.OnSourceInitialized e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSourceInitialized(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1360,6 +1472,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnStateChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnStateChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.OnStateChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStateChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnStateChanged : EventArgs -&gt; unit&#xA;override this.OnStateChanged : EventArgs -&gt; unit" Usage="window.OnStateChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStateChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1387,9 +1502,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnVisualParentChanged">
-      <MemberSignature Language="C#" Value="protected override sealed void OnVisualParentChanged (System.Windows.DependencyObject oldParent);" />
+      <MemberSignature Language="C#" Value="protected internal override sealed void OnVisualParentChanged (System.Windows.DependencyObject oldParent);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnVisualParentChanged(class System.Windows.DependencyObject oldParent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.OnVisualParentChanged(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides NotOverridable Sub OnVisualParentChanged (oldParent As DependencyObject)" />
+      <MemberSignature Language="F#" Value="override this.OnVisualParentChanged : System.Windows.DependencyObject -&gt; unit" Usage="window.OnVisualParentChanged oldParent" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnVisualParentChanged(System::Windows::DependencyObject ^ oldParent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1412,6 +1530,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.WindowCollection OwnedWindows { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.WindowCollection OwnedWindows" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.OwnedWindows" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwnedWindows As WindowCollection" />
+      <MemberSignature Language="F#" Value="member this.OwnedWindows : System.Windows.WindowCollection" Usage="System.Windows.Window.OwnedWindows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::WindowCollection ^ OwnedWindows { System::Windows::WindowCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1445,6 +1566,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Window Owner { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Window Owner" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.Owner" />
+      <MemberSignature Language="VB.NET" Value="Public Property Owner As Window" />
+      <MemberSignature Language="F#" Value="member this.Owner : System.Windows.Window with get, set" Usage="System.Windows.Window.Owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Window ^ Owner { System::Windows::Window ^ get(); void set(System::Windows::Window ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1533,6 +1657,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.ResizeMode ResizeMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.ResizeMode ResizeMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.ResizeMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResizeMode As ResizeMode" />
+      <MemberSignature Language="F#" Value="member this.ResizeMode : System.Windows.ResizeMode with get, set" Usage="System.Windows.Window.ResizeMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ResizeMode ResizeMode { System::Windows::ResizeMode get(); void set(System::Windows::ResizeMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1578,6 +1705,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ResizeModeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ResizeModeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Window.ResizeModeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ResizeModeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ResizeModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Window.ResizeModeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ResizeModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1595,6 +1725,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Rect RestoreBounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect RestoreBounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.RestoreBounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RestoreBounds As Rect" />
+      <MemberSignature Language="F#" Value="member this.RestoreBounds : System.Windows.Rect" Usage="System.Windows.Window.RestoreBounds" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect RestoreBounds { System::Windows::Rect get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1644,6 +1777,9 @@
       <MemberSignature Language="C#" Value="public void Show ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.Show" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Show ()" />
+      <MemberSignature Language="F#" Value="member this.Show : unit -&gt; unit" Usage="window.Show " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1698,6 +1834,9 @@
       <MemberSignature Language="C#" Value="public bool ShowActivated { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowActivated" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.ShowActivated" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowActivated As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowActivated : bool with get, set" Usage="System.Windows.Window.ShowActivated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowActivated { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1752,6 +1891,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ShowActivatedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ShowActivatedProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Window.ShowActivatedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShowActivatedProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ShowActivatedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Window.ShowActivatedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ShowActivatedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1769,6 +1911,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; ShowDialog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;bool&gt; ShowDialog() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Window.ShowDialog" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShowDialog () As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ShowDialog : unit -&gt; Nullable&lt;bool&gt;" Usage="window.ShowDialog " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable&lt;bool&gt; ShowDialog();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1822,6 +1967,9 @@
       <MemberSignature Language="C#" Value="public bool ShowInTaskbar { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowInTaskbar" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.ShowInTaskbar" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowInTaskbar As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowInTaskbar : bool with get, set" Usage="System.Windows.Window.ShowInTaskbar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowInTaskbar { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1861,6 +2009,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ShowInTaskbarProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ShowInTaskbarProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Window.ShowInTaskbarProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ShowInTaskbarProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ShowInTaskbarProperty : System.Windows.DependencyProperty" Usage="System.Windows.Window.ShowInTaskbarProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ShowInTaskbarProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1878,6 +2029,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.SizeToContent SizeToContent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.SizeToContent SizeToContent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.SizeToContent" />
+      <MemberSignature Language="VB.NET" Value="Public Property SizeToContent As SizeToContent" />
+      <MemberSignature Language="F#" Value="member this.SizeToContent : System.Windows.SizeToContent with get, set" Usage="System.Windows.Window.SizeToContent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::SizeToContent SizeToContent { System::Windows::SizeToContent get(); void set(System::Windows::SizeToContent value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1937,6 +2091,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SizeToContentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SizeToContentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Window.SizeToContentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SizeToContentProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SizeToContentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Window.SizeToContentProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SizeToContentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1954,6 +2111,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler SourceInitialized;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SourceInitialized" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Window.SourceInitialized" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SourceInitialized As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SourceInitialized : EventHandler " Usage="member this.SourceInitialized : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SourceInitialized;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1971,6 +2131,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler StateChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler StateChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Window.StateChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event StateChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.StateChanged : EventHandler " Usage="member this.StateChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StateChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1989,6 +2152,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Shell.TaskbarItemInfo TaskbarItemInfo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Shell.TaskbarItemInfo TaskbarItemInfo" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.TaskbarItemInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property TaskbarItemInfo As TaskbarItemInfo" />
+      <MemberSignature Language="F#" Value="member this.TaskbarItemInfo : System.Windows.Shell.TaskbarItemInfo with get, set" Usage="System.Windows.Window.TaskbarItemInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Shell::TaskbarItemInfo ^ TaskbarItemInfo { System::Windows::Shell::TaskbarItemInfo ^ get(); void set(System::Windows::Shell::TaskbarItemInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2015,6 +2181,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TaskbarItemInfoProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TaskbarItemInfoProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Window.TaskbarItemInfoProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TaskbarItemInfoProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TaskbarItemInfoProperty : System.Windows.DependencyProperty" Usage="System.Windows.Window.TaskbarItemInfoProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TaskbarItemInfoProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2032,7 +2201,13 @@
       <MemberSignature Language="C#" Value="public string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Windows.Window.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.IWindowService.Title</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2070,6 +2245,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TitleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TitleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Window.TitleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TitleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TitleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Window.TitleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TitleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2087,6 +2265,9 @@
       <MemberSignature Language="C#" Value="public double Top { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Top" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Double" />
+      <MemberSignature Language="F#" Value="member this.Top : double with get, set" Usage="System.Windows.Window.Top" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Top { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2133,6 +2314,9 @@
       <MemberSignature Language="C#" Value="public bool Topmost { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Topmost" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.Topmost" />
+      <MemberSignature Language="VB.NET" Value="Public Property Topmost As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Topmost : bool with get, set" Usage="System.Windows.Window.Topmost" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Topmost { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2174,6 +2358,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TopmostProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TopmostProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Window.TopmostProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TopmostProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TopmostProperty : System.Windows.DependencyProperty" Usage="System.Windows.Window.TopmostProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TopmostProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2191,6 +2378,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TopProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TopProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Window.TopProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TopProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TopProperty : System.Windows.DependencyProperty" Usage="System.Windows.Window.TopProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TopProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2208,6 +2398,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.WindowStartupLocation WindowStartupLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.WindowStartupLocation WindowStartupLocation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.WindowStartupLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property WindowStartupLocation As WindowStartupLocation" />
+      <MemberSignature Language="F#" Value="member this.WindowStartupLocation : System.Windows.WindowStartupLocation with get, set" Usage="System.Windows.Window.WindowStartupLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::WindowStartupLocation WindowStartupLocation { System::Windows::WindowStartupLocation get(); void set(System::Windows::WindowStartupLocation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2250,6 +2443,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.WindowState WindowState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.WindowState WindowState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.WindowState" />
+      <MemberSignature Language="VB.NET" Value="Public Property WindowState As WindowState" />
+      <MemberSignature Language="F#" Value="member this.WindowState : System.Windows.WindowState with get, set" Usage="System.Windows.Window.WindowState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::WindowState WindowState { System::Windows::WindowState get(); void set(System::Windows::WindowState value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2289,6 +2485,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty WindowStateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty WindowStateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Window.WindowStateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WindowStateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable WindowStateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Window.WindowStateProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ WindowStateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2306,6 +2505,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.WindowStyle WindowStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.WindowStyle WindowStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Window.WindowStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property WindowStyle As WindowStyle" />
+      <MemberSignature Language="F#" Value="member this.WindowStyle : System.Windows.WindowStyle with get, set" Usage="System.Windows.Window.WindowStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::WindowStyle WindowStyle { System::Windows::WindowStyle get(); void set(System::Windows::WindowStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2346,6 +2548,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty WindowStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty WindowStyleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Window.WindowStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WindowStyleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable WindowStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Window.WindowStyleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ WindowStyleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

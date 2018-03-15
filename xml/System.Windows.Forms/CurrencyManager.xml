@@ -1,7 +1,10 @@
-<Type Name="CurrencyManager" FullName="System.Windows.Forms.CurrencyManager">
+﻿<Type Name="CurrencyManager" FullName="System.Windows.Forms.CurrencyManager">
   <TypeSignature Language="C#" Value="public class CurrencyManager : System.Windows.Forms.BindingManagerBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CurrencyManager extends System.Windows.Forms.BindingManagerBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CurrencyManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class CurrencyManager&#xA;Inherits BindingManagerBase" />
+  <TypeSignature Language="F#" Value="type CurrencyManager = class&#xA;    inherit BindingManagerBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CurrencyManager : System::Windows::Forms::BindingManagerBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="public override void AddNew ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddNew() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.AddNew" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddNew ()" />
+      <MemberSignature Language="F#" Value="override this.AddNew : unit -&gt; unit" Usage="currencyManager.AddNew " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddNew();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -85,6 +91,9 @@
       <MemberSignature Language="C#" Value="public override void CancelCurrentEdit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CancelCurrentEdit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.CancelCurrentEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CancelCurrentEdit ()" />
+      <MemberSignature Language="F#" Value="override this.CancelCurrentEdit : unit -&gt; unit" Usage="currencyManager.CancelCurrentEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CancelCurrentEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -123,6 +132,9 @@
       <MemberSignature Language="C#" Value="protected void CheckEmpty ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CheckEmpty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.CheckEmpty" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub CheckEmpty ()" />
+      <MemberSignature Language="F#" Value="member this.CheckEmpty : unit -&gt; unit" Usage="currencyManager.CheckEmpty " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckEmpty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -142,6 +154,9 @@
       <MemberSignature Language="C#" Value="public override int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CurrencyManager.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.CurrencyManager.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -179,6 +194,9 @@
       <MemberSignature Language="C#" Value="public override object Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CurrencyManager.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Current As Object" />
+      <MemberSignature Language="F#" Value="member this.Current : obj" Usage="System.Windows.Forms.CurrencyManager.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Current { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -217,6 +235,9 @@
       <MemberSignature Language="C#" Value="public override void EndCurrentEdit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndCurrentEdit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.EndCurrentEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndCurrentEdit ()" />
+      <MemberSignature Language="F#" Value="override this.EndCurrentEdit : unit -&gt; unit" Usage="currencyManager.EndCurrentEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndCurrentEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -257,6 +278,9 @@
       <MemberSignature Language="C#" Value="protected Type finalType;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Type finalType" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CurrencyManager.finalType" />
+      <MemberSignature Language="VB.NET" Value="Protected finalType As Type " />
+      <MemberSignature Language="F#" Value="val mutable finalType : Type" Usage="System.Windows.Forms.CurrencyManager.finalType" />
+      <MemberSignature Language="C++ CLI" Value="protected: Type ^ finalType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -275,6 +299,9 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptorCollection GetItemProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptorCollection GetItemProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.GetItemProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetItemProperties () As PropertyDescriptorCollection" />
+      <MemberSignature Language="F#" Value="override this.GetItemProperties : unit -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="currencyManager.GetItemProperties " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetItemProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -310,9 +337,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetListName">
-      <MemberSignature Language="C#" Value="protected override string GetListName (System.Collections.ArrayList listAccessors);" />
+      <MemberSignature Language="C#" Value="protected internal override string GetListName (System.Collections.ArrayList listAccessors);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string GetListName(class System.Collections.ArrayList listAccessors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.GetListName(System.Collections.ArrayList)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetListName (listAccessors As ArrayList) As String" />
+      <MemberSignature Language="F#" Value="override this.GetListName : System.Collections.ArrayList -&gt; string" Usage="currencyManager.GetListName listAccessors" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::String ^ GetListName(System::Collections::ArrayList ^ listAccessors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -343,6 +373,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ItemChangedEventHandler ItemChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ItemChangedEventHandler ItemChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CurrencyManager.ItemChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ItemChanged As ItemChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ItemChanged : System.Windows.Forms.ItemChangedEventHandler " Usage="member this.ItemChanged : System.Windows.Forms.ItemChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ItemChangedEventHandler ^ ItemChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -386,6 +419,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IList List { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IList List" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CurrencyManager.List" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property List As IList" />
+      <MemberSignature Language="F#" Value="member this.List : System.Collections.IList" Usage="System.Windows.Forms.CurrencyManager.List" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IList ^ List { System::Collections::IList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -435,6 +471,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       <MemberSignature Language="C#" Value="public event System.ComponentModel.ListChangedEventHandler ListChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.ListChangedEventHandler ListChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CurrencyManager.ListChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ListChanged As ListChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " Usage="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::ListChangedEventHandler ^ ListChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -475,6 +514,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       <MemberSignature Language="C#" Value="protected int listposition;" />
       <MemberSignature Language="ILAsm" Value=".field family int32 listposition" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.CurrencyManager.listposition" />
+      <MemberSignature Language="VB.NET" Value="Protected listposition As Integer " />
+      <MemberSignature Language="F#" Value="val mutable listposition : int" Usage="System.Windows.Forms.CurrencyManager.listposition" />
+      <MemberSignature Language="C++ CLI" Value="protected: int listposition;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -500,6 +542,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       <MemberSignature Language="C#" Value="public event EventHandler MetaDataChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MetaDataChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.CurrencyManager.MetaDataChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MetaDataChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MetaDataChanged : EventHandler " Usage="member this.MetaDataChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MetaDataChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -534,9 +579,12 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       </Docs>
     </Member>
     <Member MemberName="OnCurrentChanged">
-      <MemberSignature Language="C#" Value="protected override void OnCurrentChanged (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnCurrentChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnCurrentChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.OnCurrentChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnCurrentChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnCurrentChanged : EventArgs -&gt; unit" Usage="currencyManager.OnCurrentChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnCurrentChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -556,9 +604,12 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       </Docs>
     </Member>
     <Member MemberName="OnCurrentItemChanged">
-      <MemberSignature Language="C#" Value="protected override void OnCurrentItemChanged (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnCurrentItemChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnCurrentItemChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.OnCurrentItemChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnCurrentItemChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnCurrentItemChanged : EventArgs -&gt; unit" Usage="currencyManager.OnCurrentItemChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnCurrentItemChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -581,6 +632,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       <MemberSignature Language="C#" Value="protected virtual void OnItemChanged (System.Windows.Forms.ItemChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemChanged(class System.Windows.Forms.ItemChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.OnItemChanged(System.Windows.Forms.ItemChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemChanged (e As ItemChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnItemChanged : System.Windows.Forms.ItemChangedEventArgs -&gt; unit&#xA;override this.OnItemChanged : System.Windows.Forms.ItemChangedEventArgs -&gt; unit" Usage="currencyManager.OnItemChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemChanged(System::Windows::Forms::ItemChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -613,9 +667,12 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       </Docs>
     </Member>
     <Member MemberName="OnMetaDataChanged">
-      <MemberSignature Language="C#" Value="protected void OnMetaDataChanged (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal void OnMetaDataChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void OnMetaDataChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.OnMetaDataChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub OnMetaDataChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="member this.OnMetaDataChanged : EventArgs -&gt; unit" Usage="currencyManager.OnMetaDataChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void OnMetaDataChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -649,6 +706,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       <MemberSignature Language="C#" Value="protected virtual void OnPositionChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPositionChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.OnPositionChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPositionChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPositionChanged : EventArgs -&gt; unit&#xA;override this.OnPositionChanged : EventArgs -&gt; unit" Usage="currencyManager.OnPositionChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPositionChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -685,6 +745,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       <MemberSignature Language="C#" Value="public override int Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Position" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.CurrencyManager.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Position As Integer" />
+      <MemberSignature Language="F#" Value="member this.Position : int with get, set" Usage="System.Windows.Forms.CurrencyManager.Position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Position { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -724,6 +787,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       <MemberSignature Language="C#" Value="public void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="F#" Value="member this.Refresh : unit -&gt; unit" Usage="currencyManager.Refresh " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -759,6 +825,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       <MemberSignature Language="C#" Value="public override void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.RemoveAt : int -&gt; unit" Usage="currencyManager.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -799,6 +868,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       <MemberSignature Language="C#" Value="public override void ResumeBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResumeBinding() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.ResumeBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResumeBinding ()" />
+      <MemberSignature Language="F#" Value="override this.ResumeBinding : unit -&gt; unit" Usage="currencyManager.ResumeBinding " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResumeBinding();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -841,6 +913,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       <MemberSignature Language="C#" Value="public override void SuspendBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SuspendBinding() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.SuspendBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SuspendBinding ()" />
+      <MemberSignature Language="F#" Value="override this.SuspendBinding : unit -&gt; unit" Usage="currencyManager.SuspendBinding " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SuspendBinding();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -883,6 +958,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       <MemberSignature Language="C#" Value="protected override void UpdateIsBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void UpdateIsBinding() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.CurrencyManager.UpdateIsBinding" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub UpdateIsBinding ()" />
+      <MemberSignature Language="F#" Value="override this.UpdateIsBinding : unit -&gt; unit" Usage="currencyManager.UpdateIsBinding " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void UpdateIsBinding();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

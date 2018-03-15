@@ -1,7 +1,10 @@
-<Type Name="TrackingCondition" FullName="System.Workflow.Runtime.Tracking.TrackingCondition">
+﻿<Type Name="TrackingCondition" FullName="System.Workflow.Runtime.Tracking.TrackingCondition">
   <TypeSignature Language="C#" Value="public abstract class TrackingCondition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit TrackingCondition extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingCondition" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TrackingCondition" />
+  <TypeSignature Language="F#" Value="type TrackingCondition = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TrackingCondition abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,8 @@
       <MemberSignature Language="C#" Value="protected TrackingCondition ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingCondition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TrackingCondition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -52,6 +57,9 @@
       <MemberSignature Language="C#" Value="public abstract string Member { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Member" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingCondition.Member" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property Member As String" />
+      <MemberSignature Language="F#" Value="member this.Member : string with get, set" Usage="System.Workflow.Runtime.Tracking.TrackingCondition.Member" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Member { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -77,6 +85,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Workflow.Runtime.Tracking.ComparisonOperator Operator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Workflow.Runtime.Tracking.ComparisonOperator Operator" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingCondition.Operator" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property Operator As ComparisonOperator" />
+      <MemberSignature Language="F#" Value="member this.Operator : System.Workflow.Runtime.Tracking.ComparisonOperator with get, set" Usage="System.Workflow.Runtime.Tracking.TrackingCondition.Operator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Workflow::Runtime::Tracking::ComparisonOperator Operator { System::Workflow::Runtime::Tracking::ComparisonOperator get(); void set(System::Workflow::Runtime::Tracking::ComparisonOperator value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -102,6 +113,9 @@
       <MemberSignature Language="C#" Value="public abstract string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingCondition.Value" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Workflow.Runtime.Tracking.TrackingCondition.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

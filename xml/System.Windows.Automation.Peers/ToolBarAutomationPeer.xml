@@ -1,7 +1,10 @@
-<Type Name="ToolBarAutomationPeer" FullName="System.Windows.Automation.Peers.ToolBarAutomationPeer">
+﻿<Type Name="ToolBarAutomationPeer" FullName="System.Windows.Automation.Peers.ToolBarAutomationPeer">
   <TypeSignature Language="C#" Value="public class ToolBarAutomationPeer : System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolBarAutomationPeer extends System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ToolBarAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolBarAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer" />
+  <TypeSignature Language="F#" Value="type ToolBarAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolBarAutomationPeer : System::Windows::Automation::Peers::FrameworkElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public ToolBarAutomationPeer (System.Windows.Controls.ToolBar owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.ToolBar owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ToolBarAutomationPeer.#ctor(System.Windows.Controls.ToolBar)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ToolBar)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.ToolBarAutomationPeer : System.Windows.Controls.ToolBar -&gt; System.Windows.Automation.Peers.ToolBarAutomationPeer" Usage="new System.Windows.Automation.Peers.ToolBarAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolBarAutomationPeer(System::Windows::Controls::ToolBar ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ToolBarAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="toolBarAutomationPeer.GetAutomationControlTypeCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +65,9 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ToolBarAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="toolBarAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

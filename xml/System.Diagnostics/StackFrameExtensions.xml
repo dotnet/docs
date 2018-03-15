@@ -1,7 +1,10 @@
-<Type Name="StackFrameExtensions" FullName="System.Diagnostics.StackFrameExtensions">
+﻿<Type Name="StackFrameExtensions" FullName="System.Diagnostics.StackFrameExtensions">
   <TypeSignature Language="C#" Value="public static class StackFrameExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit StackFrameExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.StackFrameExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module StackFrameExtensions" />
+  <TypeSignature Language="F#" Value="type StackFrameExtensions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StackFrameExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
     <AssemblyVersion>4.0.2.0</AssemblyVersion>
@@ -33,6 +36,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetNativeImageBase (this System.Diagnostics.StackFrame stackFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetNativeImageBase(class System.Diagnostics.StackFrame stackFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.GetNativeImageBase(System.Diagnostics.StackFrame)" />
+      <MemberSignature Language="F#" Value="static member GetNativeImageBase : System.Diagnostics.StackFrame -&gt; nativeint" Usage="System.Diagnostics.StackFrameExtensions.GetNativeImageBase stackFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static IntPtr GetNativeImageBase(System::Diagnostics::StackFrame ^ stackFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -65,6 +70,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr GetNativeIP (this System.Diagnostics.StackFrame stackFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig native int GetNativeIP(class System.Diagnostics.StackFrame stackFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.GetNativeIP(System.Diagnostics.StackFrame)" />
+      <MemberSignature Language="F#" Value="static member GetNativeIP : System.Diagnostics.StackFrame -&gt; nativeint" Usage="System.Diagnostics.StackFrameExtensions.GetNativeIP stackFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static IntPtr GetNativeIP(System::Diagnostics::StackFrame ^ stackFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -96,6 +103,8 @@
       <MemberSignature Language="C#" Value="public static bool HasILOffset (this System.Diagnostics.StackFrame stackFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasILOffset(class System.Diagnostics.StackFrame stackFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.HasILOffset(System.Diagnostics.StackFrame)" />
+      <MemberSignature Language="F#" Value="static member HasILOffset : System.Diagnostics.StackFrame -&gt; bool" Usage="System.Diagnostics.StackFrameExtensions.HasILOffset stackFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool HasILOffset(System::Diagnostics::StackFrame ^ stackFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -129,6 +138,8 @@
       <MemberSignature Language="C#" Value="public static bool HasMethod (this System.Diagnostics.StackFrame stackFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasMethod(class System.Diagnostics.StackFrame stackFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.HasMethod(System.Diagnostics.StackFrame)" />
+      <MemberSignature Language="F#" Value="static member HasMethod : System.Diagnostics.StackFrame -&gt; bool" Usage="System.Diagnostics.StackFrameExtensions.HasMethod stackFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool HasMethod(System::Diagnostics::StackFrame ^ stackFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -162,6 +173,8 @@
       <MemberSignature Language="C#" Value="public static bool HasNativeImage (this System.Diagnostics.StackFrame stackFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasNativeImage(class System.Diagnostics.StackFrame stackFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.HasNativeImage(System.Diagnostics.StackFrame)" />
+      <MemberSignature Language="F#" Value="static member HasNativeImage : System.Diagnostics.StackFrame -&gt; bool" Usage="System.Diagnostics.StackFrameExtensions.HasNativeImage stackFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool HasNativeImage(System::Diagnostics::StackFrame ^ stackFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>
@@ -195,6 +208,8 @@
       <MemberSignature Language="C#" Value="public static bool HasSource (this System.Diagnostics.StackFrame stackFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasSource(class System.Diagnostics.StackFrame stackFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.StackFrameExtensions.HasSource(System.Diagnostics.StackFrame)" />
+      <MemberSignature Language="F#" Value="static member HasSource : System.Diagnostics.StackFrame -&gt; bool" Usage="System.Diagnostics.StackFrameExtensions.HasSource stackFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool HasSource(System::Diagnostics::StackFrame ^ stackFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.StackTrace</AssemblyName>

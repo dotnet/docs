@@ -1,7 +1,10 @@
-<Type Name="SecurityElementBase" FullName="System.ServiceModel.Configuration.SecurityElementBase">
+﻿<Type Name="SecurityElementBase" FullName="System.ServiceModel.Configuration.SecurityElementBase">
   <TypeSignature Language="C#" Value="public class SecurityElementBase : System.ServiceModel.Configuration.BindingElementExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SecurityElementBase extends System.ServiceModel.Configuration.BindingElementExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.SecurityElementBase" />
+  <TypeSignature Language="VB.NET" Value="Public Class SecurityElementBase&#xA;Inherits BindingElementExtensionElement" />
+  <TypeSignature Language="F#" Value="type SecurityElementBase = class&#xA;    inherit BindingElementExtensionElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityElementBase : System::ServiceModel::Configuration::BindingElementExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="protected void AddBindingTemplate (System.Collections.Generic.Dictionary&lt;System.ServiceModel.Configuration.AuthenticationMode,System.ServiceModel.Channels.SecurityBindingElement&gt; bindingTemplates, System.ServiceModel.Configuration.AuthenticationMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddBindingTemplate(class System.Collections.Generic.Dictionary`2&lt;valuetype System.ServiceModel.Configuration.AuthenticationMode, class System.ServiceModel.Channels.SecurityBindingElement&gt; bindingTemplates, valuetype System.ServiceModel.Configuration.AuthenticationMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.SecurityElementBase.AddBindingTemplate(System.Collections.Generic.Dictionary{System.ServiceModel.Configuration.AuthenticationMode,System.ServiceModel.Channels.SecurityBindingElement},System.ServiceModel.Configuration.AuthenticationMode)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub AddBindingTemplate (bindingTemplates As Dictionary(Of AuthenticationMode, SecurityBindingElement), mode As AuthenticationMode)" />
+      <MemberSignature Language="F#" Value="member this.AddBindingTemplate : System.Collections.Generic.Dictionary&lt;System.ServiceModel.Configuration.AuthenticationMode, System.ServiceModel.Channels.SecurityBindingElement&gt; * System.ServiceModel.Configuration.AuthenticationMode -&gt; unit" Usage="securityElementBase.AddBindingTemplate (bindingTemplates, mode)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddBindingTemplate(System::Collections::Generic::Dictionary&lt;System::ServiceModel::Configuration::AuthenticationMode, System::ServiceModel::Channels::SecurityBindingElement ^&gt; ^ bindingTemplates, System::ServiceModel::Configuration::AuthenticationMode mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +48,9 @@
       <MemberSignature Language="C#" Value="protected virtual void AddBindingTemplates (System.Collections.Generic.Dictionary&lt;System.ServiceModel.Configuration.AuthenticationMode,System.ServiceModel.Channels.SecurityBindingElement&gt; bindingTemplates);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddBindingTemplates(class System.Collections.Generic.Dictionary`2&lt;valuetype System.ServiceModel.Configuration.AuthenticationMode, class System.ServiceModel.Channels.SecurityBindingElement&gt; bindingTemplates) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.SecurityElementBase.AddBindingTemplates(System.Collections.Generic.Dictionary{System.ServiceModel.Configuration.AuthenticationMode,System.ServiceModel.Channels.SecurityBindingElement})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddBindingTemplates (bindingTemplates As Dictionary(Of AuthenticationMode, SecurityBindingElement))" />
+      <MemberSignature Language="F#" Value="abstract member AddBindingTemplates : System.Collections.Generic.Dictionary&lt;System.ServiceModel.Configuration.AuthenticationMode, System.ServiceModel.Channels.SecurityBindingElement&gt; -&gt; unit&#xA;override this.AddBindingTemplates : System.Collections.Generic.Dictionary&lt;System.ServiceModel.Configuration.AuthenticationMode, System.ServiceModel.Channels.SecurityBindingElement&gt; -&gt; unit" Usage="securityElementBase.AddBindingTemplates bindingTemplates" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddBindingTemplates(System::Collections::Generic::Dictionary&lt;System::ServiceModel::Configuration::AuthenticationMode, System::ServiceModel::Channels::SecurityBindingElement ^&gt; ^ bindingTemplates);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +72,9 @@
       <MemberSignature Language="C#" Value="public bool AllowInsecureTransport { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowInsecureTransport" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.AllowInsecureTransport" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowInsecureTransport As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowInsecureTransport : bool with get, set" Usage="System.ServiceModel.Configuration.SecurityElementBase.AllowInsecureTransport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowInsecureTransport { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -87,6 +99,9 @@
       <MemberSignature Language="C#" Value="public bool AllowSerializedSigningTokenOnReply { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowSerializedSigningTokenOnReply" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.AllowSerializedSigningTokenOnReply" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowSerializedSigningTokenOnReply As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowSerializedSigningTokenOnReply : bool with get, set" Usage="System.ServiceModel.Configuration.SecurityElementBase.AllowSerializedSigningTokenOnReply" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowSerializedSigningTokenOnReply { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -111,6 +126,8 @@
       <MemberSignature Language="C#" Value="public override void ApplyConfiguration (System.ServiceModel.Channels.BindingElement bindingElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.SecurityElementBase.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
+      <MemberSignature Language="F#" Value="override this.ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="securityElementBase.ApplyConfiguration bindingElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyConfiguration(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -132,6 +149,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.AuthenticationMode AuthenticationMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Configuration.AuthenticationMode AuthenticationMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.AuthenticationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property AuthenticationMode As AuthenticationMode" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationMode : System.ServiceModel.Configuration.AuthenticationMode with get, set" Usage="System.ServiceModel.Configuration.SecurityElementBase.AuthenticationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::AuthenticationMode AuthenticationMode { System::ServiceModel::Configuration::AuthenticationMode get(); void set(System::ServiceModel::Configuration::AuthenticationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -155,6 +175,9 @@
       <MemberSignature Language="C#" Value="public override Type BindingElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BindingElementType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.BindingElementType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BindingElementType As Type" />
+      <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.SecurityElementBase.BindingElementType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -173,6 +196,9 @@
       <MemberSignature Language="C#" Value="public bool CanRenewSecurityContextToken { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRenewSecurityContextToken" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.CanRenewSecurityContextToken" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanRenewSecurityContextToken As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRenewSecurityContextToken : bool with get, set" Usage="System.ServiceModel.Configuration.SecurityElementBase.CanRenewSecurityContextToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanRenewSecurityContextToken { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -197,6 +223,9 @@
       <MemberSignature Language="C#" Value="public override void CopyFrom (System.ServiceModel.Configuration.ServiceModelExtensionElement from);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.ServiceModel.Configuration.ServiceModelExtensionElement from) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.SecurityElementBase.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (from As ServiceModelExtensionElement)" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.ServiceModel.Configuration.ServiceModelExtensionElement -&gt; unit" Usage="securityElementBase.CopyFrom from" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::ServiceModel::Configuration::ServiceModelExtensionElement ^ from);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -214,10 +243,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateBindingElement">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a custom binding element object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateBindingElement">
-      <MemberSignature Language="C#" Value="protected override System.ServiceModel.Channels.BindingElement CreateBindingElement ();" />
+      <MemberSignature Language="C#" Value="protected internal override System.ServiceModel.Channels.BindingElement CreateBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.ServiceModel.Channels.BindingElement CreateBindingElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.SecurityElementBase.CreateBindingElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBindingElement () As BindingElement" />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElement : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="securityElementBase.CreateBindingElement " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Channels::BindingElement ^ CreateBindingElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -234,9 +275,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateBindingElement">
-      <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Channels.BindingElement CreateBindingElement (bool createTemplateOnly);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.ServiceModel.Channels.BindingElement CreateBindingElement (bool createTemplateOnly);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.ServiceModel.Channels.BindingElement CreateBindingElement(bool createTemplateOnly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.SecurityElementBase.CreateBindingElement(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function CreateBindingElement (createTemplateOnly As Boolean) As BindingElement" />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElement : bool -&gt; System.ServiceModel.Channels.BindingElement" Usage="securityElementBase.CreateBindingElement createTemplateOnly" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::ServiceModel::Channels::BindingElement ^ CreateBindingElement(bool createTemplateOnly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -260,6 +304,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityAlgorithmSuite DefaultAlgorithmSuite { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityAlgorithmSuite DefaultAlgorithmSuite" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.DefaultAlgorithmSuite" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultAlgorithmSuite As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="member this.DefaultAlgorithmSuite : System.ServiceModel.Security.SecurityAlgorithmSuite with get, set" Usage="System.ServiceModel.Configuration.SecurityElementBase.DefaultAlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityAlgorithmSuite ^ DefaultAlgorithmSuite { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); void set(System::ServiceModel::Security::SecurityAlgorithmSuite ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -286,6 +333,9 @@
       <MemberSignature Language="C#" Value="public bool EnableUnsecuredResponse { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableUnsecuredResponse" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.EnableUnsecuredResponse" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableUnsecuredResponse As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableUnsecuredResponse : bool with get, set" Usage="System.ServiceModel.Configuration.SecurityElementBase.EnableUnsecuredResponse" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableUnsecuredResponse { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -310,6 +360,9 @@
       <MemberSignature Language="C#" Value="public bool IncludeTimestamp { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IncludeTimestamp" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.IncludeTimestamp" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeTimestamp As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeTimestamp : bool with get, set" Usage="System.ServiceModel.Configuration.SecurityElementBase.IncludeTimestamp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeTimestamp { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -331,9 +384,11 @@
       </Docs>
     </Member>
     <Member MemberName="InitializeFrom">
-      <MemberSignature Language="C#" Value="protected override void InitializeFrom (System.ServiceModel.Channels.BindingElement bindingElement);" />
+      <MemberSignature Language="C#" Value="protected internal override void InitializeFrom (System.ServiceModel.Channels.BindingElement bindingElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.SecurityElementBase.InitializeFrom(System.ServiceModel.Channels.BindingElement)" />
+      <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="securityElementBase.InitializeFrom bindingElement" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -355,6 +410,9 @@
       <MemberSignature Language="C#" Value="protected virtual void InitializeNestedTokenParameterSettings (System.ServiceModel.Security.Tokens.SecurityTokenParameters sp, bool initializeNestedBindings);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void InitializeNestedTokenParameterSettings(class System.ServiceModel.Security.Tokens.SecurityTokenParameters sp, bool initializeNestedBindings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.SecurityElementBase.InitializeNestedTokenParameterSettings(System.ServiceModel.Security.Tokens.SecurityTokenParameters,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub InitializeNestedTokenParameterSettings (sp As SecurityTokenParameters, initializeNestedBindings As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member InitializeNestedTokenParameterSettings : System.ServiceModel.Security.Tokens.SecurityTokenParameters * bool -&gt; unit&#xA;override this.InitializeNestedTokenParameterSettings : System.ServiceModel.Security.Tokens.SecurityTokenParameters * bool -&gt; unit" Usage="securityElementBase.InitializeNestedTokenParameterSettings (sp, initializeNestedBindings)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void InitializeNestedTokenParameterSettings(System::ServiceModel::Security::Tokens::SecurityTokenParameters ^ sp, bool initializeNestedBindings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -379,6 +437,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.IssuedTokenParametersElement IssuedTokenParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.IssuedTokenParametersElement IssuedTokenParameters" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.IssuedTokenParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IssuedTokenParameters As IssuedTokenParametersElement" />
+      <MemberSignature Language="F#" Value="member this.IssuedTokenParameters : System.ServiceModel.Configuration.IssuedTokenParametersElement" Usage="System.ServiceModel.Configuration.SecurityElementBase.IssuedTokenParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::IssuedTokenParametersElement ^ IssuedTokenParameters { System::ServiceModel::Configuration::IssuedTokenParametersElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -402,6 +463,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityKeyEntropyMode KeyEntropyMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Security.SecurityKeyEntropyMode KeyEntropyMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.KeyEntropyMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyEntropyMode As SecurityKeyEntropyMode" />
+      <MemberSignature Language="F#" Value="member this.KeyEntropyMode : System.ServiceModel.Security.SecurityKeyEntropyMode with get, set" Usage="System.ServiceModel.Configuration.SecurityElementBase.KeyEntropyMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityKeyEntropyMode KeyEntropyMode { System::ServiceModel::Security::SecurityKeyEntropyMode get(); void set(System::ServiceModel::Security::SecurityKeyEntropyMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -425,6 +489,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.LocalClientSecuritySettingsElement LocalClientSettings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.LocalClientSecuritySettingsElement LocalClientSettings" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.LocalClientSettings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalClientSettings As LocalClientSecuritySettingsElement" />
+      <MemberSignature Language="F#" Value="member this.LocalClientSettings : System.ServiceModel.Configuration.LocalClientSecuritySettingsElement" Usage="System.ServiceModel.Configuration.SecurityElementBase.LocalClientSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::LocalClientSecuritySettingsElement ^ LocalClientSettings { System::ServiceModel::Configuration::LocalClientSecuritySettingsElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -448,6 +515,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement LocalServiceSettings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement LocalServiceSettings" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.LocalServiceSettings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalServiceSettings As LocalServiceSecuritySettingsElement" />
+      <MemberSignature Language="F#" Value="member this.LocalServiceSettings : System.ServiceModel.Configuration.LocalServiceSecuritySettingsElement" Usage="System.ServiceModel.Configuration.SecurityElementBase.LocalServiceSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::LocalServiceSecuritySettingsElement ^ LocalServiceSettings { System::ServiceModel::Configuration::LocalServiceSecuritySettingsElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -471,6 +541,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.MessageProtectionOrder MessageProtectionOrder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Security.MessageProtectionOrder MessageProtectionOrder" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.MessageProtectionOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageProtectionOrder As MessageProtectionOrder" />
+      <MemberSignature Language="F#" Value="member this.MessageProtectionOrder : System.ServiceModel.Security.MessageProtectionOrder with get, set" Usage="System.ServiceModel.Configuration.SecurityElementBase.MessageProtectionOrder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::MessageProtectionOrder MessageProtectionOrder { System::ServiceModel::Security::MessageProtectionOrder get(); void set(System::ServiceModel::Security::MessageProtectionOrder value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -494,6 +567,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.MessageSecurityVersion MessageSecurityVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.MessageSecurityVersion MessageSecurityVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.MessageSecurityVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageSecurityVersion As MessageSecurityVersion" />
+      <MemberSignature Language="F#" Value="member this.MessageSecurityVersion : System.ServiceModel.MessageSecurityVersion with get, set" Usage="System.ServiceModel.Configuration.SecurityElementBase.MessageSecurityVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MessageSecurityVersion ^ MessageSecurityVersion { System::ServiceModel::MessageSecurityVersion ^ get(); void set(System::ServiceModel::MessageSecurityVersion ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -520,6 +596,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.SecurityElementBase.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -538,6 +617,9 @@
       <MemberSignature Language="C#" Value="public bool ProtectTokens { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ProtectTokens" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.ProtectTokens" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProtectTokens As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ProtectTokens : bool with get, set" Usage="System.ServiceModel.Configuration.SecurityElementBase.ProtectTokens" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ProtectTokens { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -562,6 +644,9 @@
       <MemberSignature Language="C#" Value="public bool RequireDerivedKeys { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequireDerivedKeys" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.RequireDerivedKeys" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequireDerivedKeys As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequireDerivedKeys : bool with get, set" Usage="System.ServiceModel.Configuration.SecurityElementBase.RequireDerivedKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireDerivedKeys { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -586,6 +671,9 @@
       <MemberSignature Language="C#" Value="public bool RequireSecurityContextCancellation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequireSecurityContextCancellation" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.RequireSecurityContextCancellation" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequireSecurityContextCancellation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequireSecurityContextCancellation : bool with get, set" Usage="System.ServiceModel.Configuration.SecurityElementBase.RequireSecurityContextCancellation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireSecurityContextCancellation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -610,6 +698,9 @@
       <MemberSignature Language="C#" Value="public bool RequireSignatureConfirmation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequireSignatureConfirmation" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.RequireSignatureConfirmation" />
+      <MemberSignature Language="VB.NET" Value="Public Property RequireSignatureConfirmation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequireSignatureConfirmation : bool with get, set" Usage="System.ServiceModel.Configuration.SecurityElementBase.RequireSignatureConfirmation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RequireSignatureConfirmation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -634,6 +725,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.SecurityHeaderLayout SecurityHeaderLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Channels.SecurityHeaderLayout SecurityHeaderLayout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.SecurityElementBase.SecurityHeaderLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecurityHeaderLayout As SecurityHeaderLayout" />
+      <MemberSignature Language="F#" Value="member this.SecurityHeaderLayout : System.ServiceModel.Channels.SecurityHeaderLayout with get, set" Usage="System.ServiceModel.Configuration.SecurityElementBase.SecurityHeaderLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::SecurityHeaderLayout SecurityHeaderLayout { System::ServiceModel::Channels::SecurityHeaderLayout get(); void set(System::ServiceModel::Channels::SecurityHeaderLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -657,6 +751,9 @@
       <MemberSignature Language="C#" Value="protected override bool SerializeElement (System.Xml.XmlWriter writer, bool serializeCollectionKey);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool SerializeElement(class System.Xml.XmlWriter writer, bool serializeCollectionKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.SecurityElementBase.SerializeElement(System.Xml.XmlWriter,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SerializeElement (writer As XmlWriter, serializeCollectionKey As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.SerializeElement : System.Xml.XmlWriter * bool -&gt; bool" Usage="securityElementBase.SerializeElement (writer, serializeCollectionKey)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool SerializeElement(System::Xml::XmlWriter ^ writer, bool serializeCollectionKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -683,6 +780,9 @@
       <MemberSignature Language="C#" Value="protected override bool SerializeToXmlElement (System.Xml.XmlWriter writer, string elementName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool SerializeToXmlElement(class System.Xml.XmlWriter writer, string elementName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.SecurityElementBase.SerializeToXmlElement(System.Xml.XmlWriter,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SerializeToXmlElement (writer As XmlWriter, elementName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.SerializeToXmlElement : System.Xml.XmlWriter * string -&gt; bool" Usage="securityElementBase.SerializeToXmlElement (writer, elementName)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool SerializeToXmlElement(System::Xml::XmlWriter ^ writer, System::String ^ elementName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -708,6 +808,9 @@
       <MemberSignature Language="C#" Value="protected override void Unmerge (System.Configuration.ConfigurationElement sourceElement, System.Configuration.ConfigurationElement parentElement, System.Configuration.ConfigurationSaveMode saveMode);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Unmerge(class System.Configuration.ConfigurationElement sourceElement, class System.Configuration.ConfigurationElement parentElement, valuetype System.Configuration.ConfigurationSaveMode saveMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.SecurityElementBase.Unmerge(System.Configuration.ConfigurationElement,System.Configuration.ConfigurationElement,System.Configuration.ConfigurationSaveMode)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Unmerge (sourceElement As ConfigurationElement, parentElement As ConfigurationElement, saveMode As ConfigurationSaveMode)" />
+      <MemberSignature Language="F#" Value="override this.Unmerge : System.Configuration.ConfigurationElement * System.Configuration.ConfigurationElement * System.Configuration.ConfigurationSaveMode -&gt; unit" Usage="securityElementBase.Unmerge (sourceElement, parentElement, saveMode)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Unmerge(System::Configuration::ConfigurationElement ^ sourceElement, System::Configuration::ConfigurationElement ^ parentElement, System::Configuration::ConfigurationSaveMode saveMode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -729,14 +832,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateBindingElement">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a custom binding element object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

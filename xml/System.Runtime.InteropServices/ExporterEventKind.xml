@@ -1,7 +1,10 @@
-<Type Name="ExporterEventKind" FullName="System.Runtime.InteropServices.ExporterEventKind">
+﻿<Type Name="ExporterEventKind" FullName="System.Runtime.InteropServices.ExporterEventKind">
   <TypeSignature Language="C#" Value="public enum ExporterEventKind" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ExporterEventKind extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ExporterEventKind" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ExporterEventKind" />
+  <TypeSignature Language="F#" Value="type ExporterEventKind = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ExporterEventKind" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="ERROR_REFTOINVALIDASSEMBLY" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ExporterEventKind ERROR_REFTOINVALIDASSEMBLY = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ExporterEventKind.ERROR_REFTOINVALIDASSEMBLY" />
+      <MemberSignature Language="VB.NET" Value="ERROR_REFTOINVALIDASSEMBLY" />
+      <MemberSignature Language="F#" Value="ERROR_REFTOINVALIDASSEMBLY = 2" Usage="System.Runtime.InteropServices.ExporterEventKind.ERROR_REFTOINVALIDASSEMBLY" />
+      <MemberSignature Language="C++ CLI" Value="ERROR_REFTOINVALIDASSEMBLY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -40,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ExporterEventKind</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>This value is not supported in this version of the .NET Framework.</summary>
       </Docs>
@@ -48,6 +55,9 @@
       <MemberSignature Language="C#" Value="NOTIF_CONVERTWARNING" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ExporterEventKind NOTIF_CONVERTWARNING = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ExporterEventKind.NOTIF_CONVERTWARNING" />
+      <MemberSignature Language="VB.NET" Value="NOTIF_CONVERTWARNING" />
+      <MemberSignature Language="F#" Value="NOTIF_CONVERTWARNING = 1" Usage="System.Runtime.InteropServices.ExporterEventKind.NOTIF_CONVERTWARNING" />
+      <MemberSignature Language="C++ CLI" Value="NOTIF_CONVERTWARNING" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -57,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ExporterEventKind</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the event is invoked when a warning occurs during conversion.</summary>
       </Docs>
@@ -65,6 +76,9 @@
       <MemberSignature Language="C#" Value="NOTIF_TYPECONVERTED" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ExporterEventKind NOTIF_TYPECONVERTED = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ExporterEventKind.NOTIF_TYPECONVERTED" />
+      <MemberSignature Language="VB.NET" Value="NOTIF_TYPECONVERTED" />
+      <MemberSignature Language="F#" Value="NOTIF_TYPECONVERTED = 0" Usage="System.Runtime.InteropServices.ExporterEventKind.NOTIF_TYPECONVERTED" />
+      <MemberSignature Language="C++ CLI" Value="NOTIF_TYPECONVERTED" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ExporterEventKind</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the event is invoked when a type has been exported.</summary>
       </Docs>

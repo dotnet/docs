@@ -1,7 +1,10 @@
-<Type Name="CustomAttributeArrayTypeEncoder" FullName="System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder">
+﻿<Type Name="CustomAttributeArrayTypeEncoder" FullName="System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder">
   <TypeSignature Language="C#" Value="public struct CustomAttributeArrayTypeEncoder" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CustomAttributeArrayTypeEncoder extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder" />
+  <TypeSignature Language="VB.NET" Value="Public Structure CustomAttributeArrayTypeEncoder" />
+  <TypeSignature Language="F#" Value="type CustomAttributeArrayTypeEncoder = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class CustomAttributeArrayTypeEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public CustomAttributeArrayTypeEncoder (System.Reflection.Metadata.BlobBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Metadata.BlobBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder : System.Reflection.Metadata.BlobBuilder -&gt; System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder" Usage="new System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CustomAttributeArrayTypeEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -39,6 +45,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobBuilder Builder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Metadata.BlobBuilder Builder" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder.Builder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
+      <MemberSignature Language="F#" Value="member this.Builder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder.Builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -58,6 +67,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder ElementType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder ElementType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder.ElementType" />
+      <MemberSignature Language="VB.NET" Value="Public Function ElementType () As CustomAttributeElementTypeEncoder" />
+      <MemberSignature Language="F#" Value="member this.ElementType : unit -&gt; System.Reflection.Metadata.Ecma335.CustomAttributeElementTypeEncoder" Usage="customAttributeArrayTypeEncoder.ElementType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::Ecma335::CustomAttributeElementTypeEncoder ElementType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -78,6 +90,9 @@
       <MemberSignature Language="C#" Value="public void ObjectArray ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ObjectArray() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.CustomAttributeArrayTypeEncoder.ObjectArray" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ObjectArray ()" />
+      <MemberSignature Language="F#" Value="member this.ObjectArray : unit -&gt; unit" Usage="customAttributeArrayTypeEncoder.ObjectArray " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ObjectArray();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="AsymmetricProofDescriptor" FullName="System.IdentityModel.Tokens.AsymmetricProofDescriptor">
+﻿<Type Name="AsymmetricProofDescriptor" FullName="System.IdentityModel.Tokens.AsymmetricProofDescriptor">
   <TypeSignature Language="C#" Value="public class AsymmetricProofDescriptor : System.IdentityModel.Tokens.ProofDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AsymmetricProofDescriptor extends System.IdentityModel.Tokens.ProofDescriptor" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.AsymmetricProofDescriptor" />
+  <TypeSignature Language="VB.NET" Value="Public Class AsymmetricProofDescriptor&#xA;Inherits ProofDescriptor" />
+  <TypeSignature Language="F#" Value="type AsymmetricProofDescriptor = class&#xA;    inherit ProofDescriptor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AsymmetricProofDescriptor : System::IdentityModel::Tokens::ProofDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.AsymmetricProofDescriptor" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AsymmetricProofDescriptor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AsymmetricProofDescriptor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -41,6 +55,9 @@
       <MemberSignature Language="C#" Value="public AsymmetricProofDescriptor (System.IdentityModel.Tokens.SecurityKeyIdentifier keyIdentifier);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityKeyIdentifier keyIdentifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifier)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (keyIdentifier As SecurityKeyIdentifier)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.AsymmetricProofDescriptor : System.IdentityModel.Tokens.SecurityKeyIdentifier -&gt; System.IdentityModel.Tokens.AsymmetricProofDescriptor" Usage="new System.IdentityModel.Tokens.AsymmetricProofDescriptor keyIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AsymmetricProofDescriptor(System::IdentityModel::Tokens::SecurityKeyIdentifier ^ keyIdentifier);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -66,6 +83,9 @@
       <MemberSignature Language="C#" Value="public AsymmetricProofDescriptor (System.Security.Cryptography.RSA rsaAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.RSA rsaAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor(System.Security.Cryptography.RSA)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (rsaAlgorithm As RSA)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.AsymmetricProofDescriptor : System.Security.Cryptography.RSA -&gt; System.IdentityModel.Tokens.AsymmetricProofDescriptor" Usage="new System.IdentityModel.Tokens.AsymmetricProofDescriptor rsaAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AsymmetricProofDescriptor(System::Security::Cryptography::RSA ^ rsaAlgorithm);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -91,6 +111,9 @@
       <MemberSignature Language="C#" Value="public override void ApplyTo (System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyTo(class System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse response) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.AsymmetricProofDescriptor.ApplyTo(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ApplyTo (response As RequestSecurityTokenResponse)" />
+      <MemberSignature Language="F#" Value="override this.ApplyTo : System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse -&gt; unit" Usage="asymmetricProofDescriptor.ApplyTo response" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyTo(System::IdentityModel::Protocols::WSTrust::RequestSecurityTokenResponse ^ response);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -119,6 +142,9 @@
       <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityKeyIdentifier KeyIdentifier { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Tokens.SecurityKeyIdentifier KeyIdentifier" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Tokens.AsymmetricProofDescriptor.KeyIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeyIdentifier As SecurityKeyIdentifier" />
+      <MemberSignature Language="F#" Value="member this.KeyIdentifier : System.IdentityModel.Tokens.SecurityKeyIdentifier" Usage="System.IdentityModel.Tokens.AsymmetricProofDescriptor.KeyIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IdentityModel::Tokens::SecurityKeyIdentifier ^ KeyIdentifier { System::IdentityModel::Tokens::SecurityKeyIdentifier ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -133,14 +159,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.AsymmetricProofDescriptor" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

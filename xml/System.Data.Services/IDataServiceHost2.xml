@@ -1,7 +1,10 @@
-<Type Name="IDataServiceHost2" FullName="System.Data.Services.IDataServiceHost2">
+﻿<Type Name="IDataServiceHost2" FullName="System.Data.Services.IDataServiceHost2">
   <TypeSignature Language="C#" Value="public interface IDataServiceHost2 : System.Data.Services.IDataServiceHost" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataServiceHost2 implements class System.Data.Services.IDataServiceHost" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.IDataServiceHost2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataServiceHost2&#xA;Implements IDataServiceHost" />
+  <TypeSignature Language="F#" Value="type IDataServiceHost2 = interface&#xA;    interface IDataServiceHost" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataServiceHost2 : System::Data::Services::IDataServiceHost" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public System.Net.WebHeaderCollection RequestHeaders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection RequestHeaders" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost2.RequestHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestHeaders As WebHeaderCollection" />
+      <MemberSignature Language="F#" Value="member this.RequestHeaders : System.Net.WebHeaderCollection" Usage="System.Data.Services.IDataServiceHost2.RequestHeaders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebHeaderCollection ^ RequestHeaders { System::Net::WebHeaderCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -38,6 +44,9 @@
       <MemberSignature Language="C#" Value="public System.Net.WebHeaderCollection ResponseHeaders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection ResponseHeaders" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.IDataServiceHost2.ResponseHeaders" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResponseHeaders As WebHeaderCollection" />
+      <MemberSignature Language="F#" Value="member this.ResponseHeaders : System.Net.WebHeaderCollection" Usage="System.Data.Services.IDataServiceHost2.ResponseHeaders" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebHeaderCollection ^ ResponseHeaders { System::Net::WebHeaderCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

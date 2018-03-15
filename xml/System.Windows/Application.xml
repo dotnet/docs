@@ -1,7 +1,10 @@
-<Type Name="Application" FullName="System.Windows.Application">
+﻿<Type Name="Application" FullName="System.Windows.Application">
   <TypeSignature Language="C#" Value="public class Application : System.Windows.Threading.DispatcherObject, System.Windows.Markup.IQueryAmbient" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Application extends System.Windows.Threading.DispatcherObject implements class System.Windows.Markup.IQueryAmbient" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Application" />
+  <TypeSignature Language="VB.NET" Value="Public Class Application&#xA;Inherits DispatcherObject&#xA;Implements IQueryAmbient" />
+  <TypeSignature Language="F#" Value="type Application = class&#xA;    inherit DispatcherObject&#xA;    interface IHaveResources&#xA;    interface IQueryAmbient" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Application : System::Windows::Threading::DispatcherObject, System::Windows::Markup::IQueryAmbient" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,6 +69,8 @@
       <MemberSignature Language="C#" Value="public Application ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Application();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +101,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Activated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Activated" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Application.Activated" />
+      <MemberSignature Language="VB.NET" Value="Public Event Activated As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Activated : EventHandler " Usage="member this.Activated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Activated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -146,6 +154,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Application Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Application Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Application.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As Application" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Windows.Application" Usage="System.Windows.Application.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Application ^ Current { System::Windows::Application ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -173,6 +184,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Deactivated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Deactivated" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Application.Deactivated" />
+      <MemberSignature Language="VB.NET" Value="Public Event Deactivated As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Deactivated : EventHandler " Usage="member this.Deactivated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Deactivated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -219,6 +233,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Threading.DispatcherUnhandledExceptionEventHandler DispatcherUnhandledException;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Threading.DispatcherUnhandledExceptionEventHandler DispatcherUnhandledException" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Application.DispatcherUnhandledException" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DispatcherUnhandledException As DispatcherUnhandledExceptionEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DispatcherUnhandledException : System.Windows.Threading.DispatcherUnhandledExceptionEventHandler " Usage="member this.DispatcherUnhandledException : System.Windows.Threading.DispatcherUnhandledExceptionEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Threading::DispatcherUnhandledExceptionEventHandler ^ DispatcherUnhandledException;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -279,6 +296,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.ExitEventHandler Exit;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.ExitEventHandler Exit" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Application.Exit" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Exit As ExitEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Exit : System.Windows.ExitEventHandler " Usage="member this.Exit : System.Windows.ExitEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::ExitEventHandler ^ Exit;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -346,6 +366,9 @@
       <MemberSignature Language="C#" Value="public object FindResource (object resourceKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object FindResource(object resourceKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.FindResource(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindResource (resourceKey As Object) As Object" />
+      <MemberSignature Language="F#" Value="member this.FindResource : obj -&gt; obj" Usage="application.FindResource resourceKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ FindResource(System::Object ^ resourceKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -392,6 +415,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.FragmentNavigationEventHandler FragmentNavigation;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.FragmentNavigationEventHandler FragmentNavigation" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Application.FragmentNavigation" />
+      <MemberSignature Language="VB.NET" Value="Public Event FragmentNavigation As FragmentNavigationEventHandler " />
+      <MemberSignature Language="F#" Value="member this.FragmentNavigation : System.Windows.Navigation.FragmentNavigationEventHandler " Usage="member this.FragmentNavigation : System.Windows.Navigation.FragmentNavigationEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::FragmentNavigationEventHandler ^ FragmentNavigation;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -424,6 +450,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Resources.StreamResourceInfo GetContentStream (Uri uriContent);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Resources.StreamResourceInfo GetContentStream(class System.Uri uriContent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.GetContentStream(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetContentStream (uriContent As Uri) As StreamResourceInfo" />
+      <MemberSignature Language="F#" Value="static member GetContentStream : Uri -&gt; System.Windows.Resources.StreamResourceInfo" Usage="System.Windows.Application.GetContentStream uriContent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Resources::StreamResourceInfo ^ GetContentStream(Uri ^ uriContent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -463,6 +492,8 @@
       <MemberSignature Language="C#" Value="public static string GetCookie (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetCookie(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.GetCookie(System.Uri)" />
+      <MemberSignature Language="F#" Value="static member GetCookie : Uri -&gt; string" Usage="System.Windows.Application.GetCookie uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetCookie(Uri ^ uri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -498,6 +529,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Resources.StreamResourceInfo GetRemoteStream (Uri uriRemote);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Resources.StreamResourceInfo GetRemoteStream(class System.Uri uriRemote) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.GetRemoteStream(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRemoteStream (uriRemote As Uri) As StreamResourceInfo" />
+      <MemberSignature Language="F#" Value="static member GetRemoteStream : Uri -&gt; System.Windows.Resources.StreamResourceInfo" Usage="System.Windows.Application.GetRemoteStream uriRemote" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Resources::StreamResourceInfo ^ GetRemoteStream(Uri ^ uriRemote);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -537,6 +571,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Resources.StreamResourceInfo GetResourceStream (Uri uriResource);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Resources.StreamResourceInfo GetResourceStream(class System.Uri uriResource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.GetResourceStream(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetResourceStream (uriResource As Uri) As StreamResourceInfo" />
+      <MemberSignature Language="F#" Value="static member GetResourceStream : Uri -&gt; System.Windows.Resources.StreamResourceInfo" Usage="System.Windows.Application.GetResourceStream uriResource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Resources::StreamResourceInfo ^ GetResourceStream(Uri ^ uriResource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -577,6 +614,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.LoadCompletedEventHandler LoadCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.LoadCompletedEventHandler LoadCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Application.LoadCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event LoadCompleted As LoadCompletedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.LoadCompleted : System.Windows.Navigation.LoadCompletedEventHandler " Usage="member this.LoadCompleted : System.Windows.Navigation.LoadCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::LoadCompletedEventHandler ^ LoadCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -635,6 +675,9 @@
       <MemberSignature Language="C#" Value="public static object LoadComponent (Uri resourceLocator);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object LoadComponent(class System.Uri resourceLocator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.LoadComponent(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LoadComponent (resourceLocator As Uri) As Object" />
+      <MemberSignature Language="F#" Value="static member LoadComponent : Uri -&gt; obj" Usage="System.Windows.Application.LoadComponent resourceLocator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ LoadComponent(Uri ^ resourceLocator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -676,6 +719,9 @@
       <MemberSignature Language="C#" Value="public static void LoadComponent (object component, Uri resourceLocator);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void LoadComponent(object component, class System.Uri resourceLocator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.LoadComponent(System.Object,System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub LoadComponent (component As Object, resourceLocator As Uri)" />
+      <MemberSignature Language="F#" Value="static member LoadComponent : obj * Uri -&gt; unit" Usage="System.Windows.Application.LoadComponent (component, resourceLocator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void LoadComponent(System::Object ^ component, Uri ^ resourceLocator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -722,6 +768,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Window MainWindow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Window MainWindow" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Application.MainWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Property MainWindow As Window" />
+      <MemberSignature Language="F#" Value="member this.MainWindow : System.Windows.Window with get, set" Usage="System.Windows.Application.MainWindow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Window ^ MainWindow { System::Windows::Window ^ get(); void set(System::Windows::Window ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -784,6 +833,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.NavigatedEventHandler Navigated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.NavigatedEventHandler Navigated" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Application.Navigated" />
+      <MemberSignature Language="VB.NET" Value="Public Event Navigated As NavigatedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Navigated : System.Windows.Navigation.NavigatedEventHandler " Usage="member this.Navigated : System.Windows.Navigation.NavigatedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::NavigatedEventHandler ^ Navigated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -816,6 +868,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.NavigatingCancelEventHandler Navigating;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.NavigatingCancelEventHandler Navigating" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Application.Navigating" />
+      <MemberSignature Language="VB.NET" Value="Public Event Navigating As NavigatingCancelEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Navigating : System.Windows.Navigation.NavigatingCancelEventHandler " Usage="member this.Navigating : System.Windows.Navigation.NavigatingCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::NavigatingCancelEventHandler ^ Navigating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -848,6 +903,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.NavigationFailedEventHandler NavigationFailed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.NavigationFailedEventHandler NavigationFailed" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Application.NavigationFailed" />
+      <MemberSignature Language="VB.NET" Value="Public Event NavigationFailed As NavigationFailedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NavigationFailed : System.Windows.Navigation.NavigationFailedEventHandler " Usage="member this.NavigationFailed : System.Windows.Navigation.NavigationFailedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::NavigationFailedEventHandler ^ NavigationFailed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -880,6 +938,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.NavigationProgressEventHandler NavigationProgress;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.NavigationProgressEventHandler NavigationProgress" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Application.NavigationProgress" />
+      <MemberSignature Language="VB.NET" Value="Public Event NavigationProgress As NavigationProgressEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NavigationProgress : System.Windows.Navigation.NavigationProgressEventHandler " Usage="member this.NavigationProgress : System.Windows.Navigation.NavigationProgressEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::NavigationProgressEventHandler ^ NavigationProgress;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -912,6 +973,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.NavigationStoppedEventHandler NavigationStopped;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.NavigationStoppedEventHandler NavigationStopped" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Application.NavigationStopped" />
+      <MemberSignature Language="VB.NET" Value="Public Event NavigationStopped As NavigationStoppedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NavigationStopped : System.Windows.Navigation.NavigationStoppedEventHandler " Usage="member this.NavigationStopped : System.Windows.Navigation.NavigationStoppedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::NavigationStoppedEventHandler ^ NavigationStopped;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -944,6 +1008,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnActivated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnActivated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.OnActivated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActivated (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnActivated : EventArgs -&gt; unit&#xA;override this.OnActivated : EventArgs -&gt; unit" Usage="application.OnActivated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnActivated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -975,6 +1042,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDeactivated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDeactivated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.OnDeactivated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDeactivated (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDeactivated : EventArgs -&gt; unit&#xA;override this.OnDeactivated : EventArgs -&gt; unit" Usage="application.OnDeactivated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDeactivated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1006,6 +1076,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnExit (System.Windows.ExitEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnExit(class System.Windows.ExitEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.OnExit(System.Windows.ExitEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnExit (e As ExitEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnExit : System.Windows.ExitEventArgs -&gt; unit&#xA;override this.OnExit : System.Windows.ExitEventArgs -&gt; unit" Usage="application.OnExit e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnExit(System::Windows::ExitEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1038,6 +1111,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnFragmentNavigation (System.Windows.Navigation.FragmentNavigationEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFragmentNavigation(class System.Windows.Navigation.FragmentNavigationEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.OnFragmentNavigation(System.Windows.Navigation.FragmentNavigationEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFragmentNavigation (e As FragmentNavigationEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnFragmentNavigation : System.Windows.Navigation.FragmentNavigationEventArgs -&gt; unit&#xA;override this.OnFragmentNavigation : System.Windows.Navigation.FragmentNavigationEventArgs -&gt; unit" Usage="application.OnFragmentNavigation e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFragmentNavigation(System::Windows::Navigation::FragmentNavigationEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1074,6 +1150,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnLoadCompleted (System.Windows.Navigation.NavigationEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLoadCompleted(class System.Windows.Navigation.NavigationEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.OnLoadCompleted(System.Windows.Navigation.NavigationEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoadCompleted (e As NavigationEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnLoadCompleted : System.Windows.Navigation.NavigationEventArgs -&gt; unit&#xA;override this.OnLoadCompleted : System.Windows.Navigation.NavigationEventArgs -&gt; unit" Usage="application.OnLoadCompleted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoadCompleted(System::Windows::Navigation::NavigationEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1110,6 +1189,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnNavigated (System.Windows.Navigation.NavigationEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnNavigated(class System.Windows.Navigation.NavigationEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.OnNavigated(System.Windows.Navigation.NavigationEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNavigated (e As NavigationEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnNavigated : System.Windows.Navigation.NavigationEventArgs -&gt; unit&#xA;override this.OnNavigated : System.Windows.Navigation.NavigationEventArgs -&gt; unit" Usage="application.OnNavigated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnNavigated(System::Windows::Navigation::NavigationEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1146,6 +1228,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnNavigating (System.Windows.Navigation.NavigatingCancelEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnNavigating(class System.Windows.Navigation.NavigatingCancelEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.OnNavigating(System.Windows.Navigation.NavigatingCancelEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNavigating (e As NavigatingCancelEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnNavigating : System.Windows.Navigation.NavigatingCancelEventArgs -&gt; unit&#xA;override this.OnNavigating : System.Windows.Navigation.NavigatingCancelEventArgs -&gt; unit" Usage="application.OnNavigating e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnNavigating(System::Windows::Navigation::NavigatingCancelEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1182,6 +1267,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnNavigationFailed (System.Windows.Navigation.NavigationFailedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnNavigationFailed(class System.Windows.Navigation.NavigationFailedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.OnNavigationFailed(System.Windows.Navigation.NavigationFailedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNavigationFailed (e As NavigationFailedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnNavigationFailed : System.Windows.Navigation.NavigationFailedEventArgs -&gt; unit&#xA;override this.OnNavigationFailed : System.Windows.Navigation.NavigationFailedEventArgs -&gt; unit" Usage="application.OnNavigationFailed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnNavigationFailed(System::Windows::Navigation::NavigationFailedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1227,6 +1315,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnNavigationProgress (System.Windows.Navigation.NavigationProgressEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnNavigationProgress(class System.Windows.Navigation.NavigationProgressEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.OnNavigationProgress(System.Windows.Navigation.NavigationProgressEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNavigationProgress (e As NavigationProgressEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnNavigationProgress : System.Windows.Navigation.NavigationProgressEventArgs -&gt; unit&#xA;override this.OnNavigationProgress : System.Windows.Navigation.NavigationProgressEventArgs -&gt; unit" Usage="application.OnNavigationProgress e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnNavigationProgress(System::Windows::Navigation::NavigationProgressEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1263,6 +1354,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnNavigationStopped (System.Windows.Navigation.NavigationEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnNavigationStopped(class System.Windows.Navigation.NavigationEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.OnNavigationStopped(System.Windows.Navigation.NavigationEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNavigationStopped (e As NavigationEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnNavigationStopped : System.Windows.Navigation.NavigationEventArgs -&gt; unit&#xA;override this.OnNavigationStopped : System.Windows.Navigation.NavigationEventArgs -&gt; unit" Usage="application.OnNavigationStopped e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnNavigationStopped(System::Windows::Navigation::NavigationEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1299,6 +1393,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSessionEnding (System.Windows.SessionEndingCancelEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSessionEnding(class System.Windows.SessionEndingCancelEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.OnSessionEnding(System.Windows.SessionEndingCancelEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSessionEnding (e As SessionEndingCancelEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSessionEnding : System.Windows.SessionEndingCancelEventArgs -&gt; unit&#xA;override this.OnSessionEnding : System.Windows.SessionEndingCancelEventArgs -&gt; unit" Usage="application.OnSessionEnding e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSessionEnding(System::Windows::SessionEndingCancelEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1331,6 +1428,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnStartup (System.Windows.StartupEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnStartup(class System.Windows.StartupEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.OnStartup(System.Windows.StartupEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStartup (e As StartupEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnStartup : System.Windows.StartupEventArgs -&gt; unit&#xA;override this.OnStartup : System.Windows.StartupEventArgs -&gt; unit" Usage="application.OnStartup e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStartup(System::Windows::StartupEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1363,6 +1463,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Properties" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Application.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IDictionary" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.IDictionary" Usage="System.Windows.Application.Properties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ Properties { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1409,6 +1512,9 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.Assembly ResourceAssembly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Reflection.Assembly ResourceAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Application.ResourceAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property ResourceAssembly As Assembly" />
+      <MemberSignature Language="F#" Value="member this.ResourceAssembly : System.Reflection.Assembly with get, set" Usage="System.Windows.Application.ResourceAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Reflection::Assembly ^ ResourceAssembly { System::Reflection::Assembly ^ get(); void set(System::Reflection::Assembly ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1458,7 +1564,13 @@
       <MemberSignature Language="C#" Value="public System.Windows.ResourceDictionary Resources { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.ResourceDictionary Resources" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Application.Resources" />
+      <MemberSignature Language="VB.NET" Value="Public Property Resources As ResourceDictionary" />
+      <MemberSignature Language="F#" Value="member this.Resources : System.Windows.ResourceDictionary with get, set" Usage="System.Windows.Application.Resources" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ResourceDictionary ^ Resources { System::Windows::ResourceDictionary ^ get(); void set(System::Windows::ResourceDictionary ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Markup.IHaveResources.Resources</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1522,10 +1634,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Run">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Starts a Windows Presentation Foundation (WPF) application.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Run">
       <MemberSignature Language="C#" Value="public int Run ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Run() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.Run" />
+      <MemberSignature Language="VB.NET" Value="Public Function Run () As Integer" />
+      <MemberSignature Language="F#" Value="member this.Run : unit -&gt; int" Usage="application.Run " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Run();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1571,6 +1695,8 @@
       <MemberSignature Language="C#" Value="public int Run (System.Windows.Window window);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Run(class System.Windows.Window window) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.Run(System.Windows.Window)" />
+      <MemberSignature Language="F#" Value="member this.Run : System.Windows.Window -&gt; int" Usage="application.Run window" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Run(System::Windows::Window ^ window);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1625,6 +1751,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.SessionEndingCancelEventHandler SessionEnding;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.SessionEndingCancelEventHandler SessionEnding" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Application.SessionEnding" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SessionEnding As SessionEndingCancelEventHandler " />
+      <MemberSignature Language="F#" Value="member this.SessionEnding : System.Windows.SessionEndingCancelEventHandler " Usage="member this.SessionEnding : System.Windows.SessionEndingCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::SessionEndingCancelEventHandler ^ SessionEnding;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1673,6 +1802,8 @@
       <MemberSignature Language="C#" Value="public static void SetCookie (Uri uri, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCookie(class System.Uri uri, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.SetCookie(System.Uri,System.String)" />
+      <MemberSignature Language="F#" Value="static member SetCookie : Uri * string -&gt; unit" Usage="System.Windows.Application.SetCookie (uri, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCookie(Uri ^ uri, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1717,10 +1848,22 @@
         <altmember cref="M:System.Windows.Application.GetCookie(System.Uri)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Shutdown">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Shuts down an application.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Shutdown">
       <MemberSignature Language="C#" Value="public void Shutdown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Shutdown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.Shutdown" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Shutdown ()" />
+      <MemberSignature Language="F#" Value="member this.Shutdown : unit -&gt; unit" Usage="application.Shutdown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Shutdown();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1767,6 +1910,9 @@
       <MemberSignature Language="C#" Value="public void Shutdown (int exitCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Shutdown(int32 exitCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.Shutdown(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Shutdown (exitCode As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Shutdown : int -&gt; unit" Usage="application.Shutdown exitCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Shutdown(int exitCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1804,6 +1950,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.ShutdownMode ShutdownMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.ShutdownMode ShutdownMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Application.ShutdownMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShutdownMode As ShutdownMode" />
+      <MemberSignature Language="F#" Value="member this.ShutdownMode : System.Windows.ShutdownMode with get, set" Usage="System.Windows.Application.ShutdownMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::ShutdownMode ShutdownMode { System::Windows::ShutdownMode get(); void set(System::Windows::ShutdownMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1848,6 +1997,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.StartupEventHandler Startup;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.StartupEventHandler Startup" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Application.Startup" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Startup As StartupEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Startup : System.Windows.StartupEventHandler " Usage="member this.Startup : System.Windows.StartupEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::StartupEventHandler ^ Startup;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1914,6 +2066,9 @@
       <MemberSignature Language="C#" Value="public Uri StartupUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri StartupUri" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Application.StartupUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property StartupUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.StartupUri : Uri with get, set" Usage="System.Windows.Application.StartupUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ StartupUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1956,7 +2111,12 @@
       <MemberSignature Language="C#" Value="bool IQueryAmbient.IsAmbientPropertyAvailable (string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Windows.Markup.IQueryAmbient.IsAmbientPropertyAvailable(string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.System#Windows#Markup#IQueryAmbient#IsAmbientPropertyAvailable(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function IsAmbientPropertyAvailable (propertyName As String) As Boolean Implements IQueryAmbient.IsAmbientPropertyAvailable" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Windows.Markup.IQueryAmbient.IsAmbientPropertyAvailable(System::String ^ propertyName) = System::Windows::Markup::IQueryAmbient::IsAmbientPropertyAvailable;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IQueryAmbient.IsAmbientPropertyAvailable(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1987,6 +2147,9 @@
       <MemberSignature Language="C#" Value="public object TryFindResource (object resourceKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object TryFindResource(object resourceKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Application.TryFindResource(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryFindResource (resourceKey As Object) As Object" />
+      <MemberSignature Language="F#" Value="member this.TryFindResource : obj -&gt; obj" Usage="application.TryFindResource resourceKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ TryFindResource(System::Object ^ resourceKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2033,6 +2196,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.WindowCollection Windows { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.WindowCollection Windows" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Application.Windows" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Windows As WindowCollection" />
+      <MemberSignature Language="F#" Value="member this.Windows : System.Windows.WindowCollection" Usage="System.Windows.Application.Windows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::WindowCollection ^ Windows { System::Windows::WindowCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2074,23 +2240,5 @@
         <altmember cref="T:System.Windows.Window" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Run">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Starts a Windows Presentation Foundation (WPF) application.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Shutdown">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Shuts down an application.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

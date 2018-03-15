@@ -1,7 +1,10 @@
-<Type Name="MultipleViewPattern+MultipleViewPatternInformation" FullName="System.Windows.Automation.MultipleViewPattern+MultipleViewPatternInformation">
+﻿<Type Name="MultipleViewPattern+MultipleViewPatternInformation" FullName="System.Windows.Automation.MultipleViewPattern+MultipleViewPatternInformation">
   <TypeSignature Language="C#" Value="public struct MultipleViewPattern.MultipleViewPatternInformation" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit MultipleViewPattern/MultipleViewPatternInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation" />
+  <TypeSignature Language="VB.NET" Value="Public Structure MultipleViewPattern.MultipleViewPatternInformation" />
+  <TypeSignature Language="F#" Value="type MultipleViewPattern.MultipleViewPatternInformation = struct" />
+  <TypeSignature Language="C++ CLI" Value="public: value class MultipleViewPattern::MultipleViewPatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public int CurrentView { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CurrentView" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation.CurrentView" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentView As Integer" />
+      <MemberSignature Language="F#" Value="member this.CurrentView : int" Usage="System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation.CurrentView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CurrentView { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -54,6 +60,9 @@
       <MemberSignature Language="C#" Value="public int[] GetSupportedViews ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32[] GetSupportedViews() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.MultipleViewPattern.MultipleViewPatternInformation.GetSupportedViews" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSupportedViews () As Integer()" />
+      <MemberSignature Language="F#" Value="member this.GetSupportedViews : unit -&gt; int[]" Usage="multipleViewPatternInformation.GetSupportedViews " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;int&gt; ^ GetSupportedViews();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

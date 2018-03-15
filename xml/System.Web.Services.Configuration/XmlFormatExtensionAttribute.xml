@@ -1,7 +1,10 @@
-<Type Name="XmlFormatExtensionAttribute" FullName="System.Web.Services.Configuration.XmlFormatExtensionAttribute">
+﻿<Type Name="XmlFormatExtensionAttribute" FullName="System.Web.Services.Configuration.XmlFormatExtensionAttribute">
   <TypeSignature Language="C#" Value="public sealed class XmlFormatExtensionAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlFormatExtensionAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Configuration.XmlFormatExtensionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlFormatExtensionAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type XmlFormatExtensionAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlFormatExtensionAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,10 +53,22 @@
     <altmember cref="T:System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Configuration.XmlFormatExtensionAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlFormatExtensionAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlFormatExtensionAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -70,6 +85,9 @@
       <MemberSignature Language="C#" Value="public XmlFormatExtensionAttribute (string elementName, string ns, Type extensionPoint1);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string elementName, string ns, class System.Type extensionPoint1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor(System.String,System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (elementName As String, ns As String, extensionPoint1 As Type)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.XmlFormatExtensionAttribute : string * string * Type -&gt; System.Web.Services.Configuration.XmlFormatExtensionAttribute" Usage="new System.Web.Services.Configuration.XmlFormatExtensionAttribute (elementName, ns, extensionPoint1)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlFormatExtensionAttribute(System::String ^ elementName, System::String ^ ns, Type ^ extensionPoint1);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -101,6 +119,9 @@
       <MemberSignature Language="C#" Value="public XmlFormatExtensionAttribute (string elementName, string ns, Type[] extensionPoints);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string elementName, string ns, class System.Type[] extensionPoints) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor(System.String,System.String,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (elementName As String, ns As String, extensionPoints As Type())" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.XmlFormatExtensionAttribute : string * string * Type[] -&gt; System.Web.Services.Configuration.XmlFormatExtensionAttribute" Usage="new System.Web.Services.Configuration.XmlFormatExtensionAttribute (elementName, ns, extensionPoints)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlFormatExtensionAttribute(System::String ^ elementName, System::String ^ ns, cli::array &lt;Type ^&gt; ^ extensionPoints);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -124,6 +145,9 @@
       <MemberSignature Language="C#" Value="public XmlFormatExtensionAttribute (string elementName, string ns, Type extensionPoint1, Type extensionPoint2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string elementName, string ns, class System.Type extensionPoint1, class System.Type extensionPoint2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor(System.String,System.String,System.Type,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (elementName As String, ns As String, extensionPoint1 As Type, extensionPoint2 As Type)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.XmlFormatExtensionAttribute : string * string * Type * Type -&gt; System.Web.Services.Configuration.XmlFormatExtensionAttribute" Usage="new System.Web.Services.Configuration.XmlFormatExtensionAttribute (elementName, ns, extensionPoint1, extensionPoint2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlFormatExtensionAttribute(System::String ^ elementName, System::String ^ ns, Type ^ extensionPoint1, Type ^ extensionPoint2);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -149,6 +173,9 @@
       <MemberSignature Language="C#" Value="public XmlFormatExtensionAttribute (string elementName, string ns, Type extensionPoint1, Type extensionPoint2, Type extensionPoint3);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string elementName, string ns, class System.Type extensionPoint1, class System.Type extensionPoint2, class System.Type extensionPoint3) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor(System.String,System.String,System.Type,System.Type,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (elementName As String, ns As String, extensionPoint1 As Type, extensionPoint2 As Type, extensionPoint3 As Type)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.XmlFormatExtensionAttribute : string * string * Type * Type * Type -&gt; System.Web.Services.Configuration.XmlFormatExtensionAttribute" Usage="new System.Web.Services.Configuration.XmlFormatExtensionAttribute (elementName, ns, extensionPoint1, extensionPoint2, extensionPoint3)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlFormatExtensionAttribute(System::String ^ elementName, System::String ^ ns, Type ^ extensionPoint1, Type ^ extensionPoint2, Type ^ extensionPoint3);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -176,6 +203,9 @@
       <MemberSignature Language="C#" Value="public XmlFormatExtensionAttribute (string elementName, string ns, Type extensionPoint1, Type extensionPoint2, Type extensionPoint3, Type extensionPoint4);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string elementName, string ns, class System.Type extensionPoint1, class System.Type extensionPoint2, class System.Type extensionPoint3, class System.Type extensionPoint4) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor(System.String,System.String,System.Type,System.Type,System.Type,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (elementName As String, ns As String, extensionPoint1 As Type, extensionPoint2 As Type, extensionPoint3 As Type, extensionPoint4 As Type)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.Configuration.XmlFormatExtensionAttribute : string * string * Type * Type * Type * Type -&gt; System.Web.Services.Configuration.XmlFormatExtensionAttribute" Usage="new System.Web.Services.Configuration.XmlFormatExtensionAttribute (elementName, ns, extensionPoint1, extensionPoint2, extensionPoint3, extensionPoint4)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlFormatExtensionAttribute(System::String ^ elementName, System::String ^ ns, Type ^ extensionPoint1, Type ^ extensionPoint2, Type ^ extensionPoint3, Type ^ extensionPoint4);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -205,6 +235,9 @@
       <MemberSignature Language="C#" Value="public string ElementName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.XmlFormatExtensionAttribute.ElementName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ElementName As String" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string with get, set" Usage="System.Web.Services.Configuration.XmlFormatExtensionAttribute.ElementName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ElementName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -232,6 +265,9 @@
       <MemberSignature Language="C#" Value="public Type[] ExtensionPoints { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] ExtensionPoints" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.XmlFormatExtensionAttribute.ExtensionPoints" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExtensionPoints As Type()" />
+      <MemberSignature Language="F#" Value="member this.ExtensionPoints : Type[] with get, set" Usage="System.Web.Services.Configuration.XmlFormatExtensionAttribute.ExtensionPoints" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Type ^&gt; ^ ExtensionPoints { cli::array &lt;Type ^&gt; ^ get(); void set(cli::array &lt;Type ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -284,6 +320,9 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Configuration.XmlFormatExtensionAttribute.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Web.Services.Configuration.XmlFormatExtensionAttribute.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -307,15 +346,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.Configuration.XmlFormatExtensionAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

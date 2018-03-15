@@ -1,7 +1,10 @@
-<Type Name="ResolveAddressCompletedEventArgs" FullName="System.Device.Location.ResolveAddressCompletedEventArgs">
+﻿<Type Name="ResolveAddressCompletedEventArgs" FullName="System.Device.Location.ResolveAddressCompletedEventArgs">
   <TypeSignature Language="C#" Value="public class ResolveAddressCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResolveAddressCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Device.Location.ResolveAddressCompletedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResolveAddressCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type ResolveAddressCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResolveAddressCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="public ResolveAddressCompletedEventArgs (System.Device.Location.CivicAddress address, Exception error, bool cancelled, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Device.Location.CivicAddress address, class System.Exception error, bool cancelled, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Device.Location.ResolveAddressCompletedEventArgs.#ctor(System.Device.Location.CivicAddress,System.Exception,System.Boolean,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (address As CivicAddress, error As Exception, cancelled As Boolean, userState As Object)" />
+      <MemberSignature Language="F#" Value="new System.Device.Location.ResolveAddressCompletedEventArgs : System.Device.Location.CivicAddress * Exception * bool * obj -&gt; System.Device.Location.ResolveAddressCompletedEventArgs" Usage="new System.Device.Location.ResolveAddressCompletedEventArgs (address, error, cancelled, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResolveAddressCompletedEventArgs(System::Device::Location::CivicAddress ^ address, Exception ^ error, bool cancelled, System::Object ^ userState);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -61,6 +67,9 @@
       <MemberSignature Language="C#" Value="public System.Device.Location.CivicAddress Address { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Device.Location.CivicAddress Address" />
       <MemberSignature Language="DocId" Value="P:System.Device.Location.ResolveAddressCompletedEventArgs.Address" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Address As CivicAddress" />
+      <MemberSignature Language="F#" Value="member this.Address : System.Device.Location.CivicAddress" Usage="System.Device.Location.ResolveAddressCompletedEventArgs.Address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Device::Location::CivicAddress ^ Address { System::Device::Location::CivicAddress ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>

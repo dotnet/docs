@@ -1,7 +1,10 @@
-<Type Name="RepeatDirection" FullName="System.Web.UI.WebControls.RepeatDirection">
+﻿<Type Name="RepeatDirection" FullName="System.Web.UI.WebControls.RepeatDirection">
   <TypeSignature Language="C#" Value="public enum RepeatDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RepeatDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.RepeatDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RepeatDirection" />
+  <TypeSignature Language="F#" Value="type RepeatDirection = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class RepeatDirection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +65,9 @@
       <MemberSignature Language="C#" Value="Horizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.RepeatDirection Horizontal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.RepeatDirection.Horizontal" />
+      <MemberSignature Language="VB.NET" Value="Horizontal" />
+      <MemberSignature Language="F#" Value="Horizontal = 0" Usage="System.Web.UI.WebControls.RepeatDirection.Horizontal" />
+      <MemberSignature Language="C++ CLI" Value="Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.RepeatDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Items of a list are displayed horizontally in rows from left to right, then top to bottom, until all items are rendered.</summary>
       </Docs>
@@ -78,6 +85,9 @@
       <MemberSignature Language="C#" Value="Vertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.RepeatDirection Vertical = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.RepeatDirection.Vertical" />
+      <MemberSignature Language="VB.NET" Value="Vertical" />
+      <MemberSignature Language="F#" Value="Vertical = 1" Usage="System.Web.UI.WebControls.RepeatDirection.Vertical" />
+      <MemberSignature Language="C++ CLI" Value="Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -86,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.RepeatDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Items of a list are displayed vertically in columns from top to bottom, and then left to right, until all items are rendered.</summary>
       </Docs>

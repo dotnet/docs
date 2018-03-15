@@ -1,7 +1,10 @@
-<Type Name="ChartElementCollection&lt;T&gt;" FullName="System.Windows.Forms.DataVisualization.Charting.ChartElementCollection&lt;T&gt;">
+﻿<Type Name="ChartElementCollection&lt;T&gt;" FullName="System.Windows.Forms.DataVisualization.Charting.ChartElementCollection&lt;T&gt;">
   <TypeSignature Language="C#" Value="public abstract class ChartElementCollection&lt;T&gt; : System.Collections.ObjectModel.Collection&lt;T&gt;, IDisposable where T : ChartElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ChartElementCollection`1&lt;(class System.Windows.Forms.DataVisualization.Charting.ChartElement) T&gt; extends System.Collections.ObjectModel.Collection`1&lt;!T&gt; implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ChartElementCollection(Of T)&#xA;Inherits Collection(Of T)&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type ChartElementCollection&lt;'T (requires 'T :&gt; ChartElement)&gt; = class&#xA;    inherit Collection&lt;'T (requires 'T :&gt; ChartElement)&gt;&#xA;    interface IChartElement&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : ChartElementpublic ref class ChartElementCollection abstract : System::Collections::ObjectModel::Collection&lt;T&gt;, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="protected override void ClearItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1.ClearItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="chartElementCollection.ClearItems " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -48,11 +54,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="chartElementCollection.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,6 +91,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="chartElementCollection.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -92,6 +116,9 @@
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, T item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, !T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1.InsertItem(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As T)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * 'T -&gt; unit" Usage="chartElementCollection.InsertItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -115,7 +142,13 @@
       <MemberSignature Language="C#" Value="public virtual void Invalidate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invalidate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1.Invalidate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Invalidate ()" />
+      <MemberSignature Language="F#" Value="abstract member Invalidate : unit -&gt; unit&#xA;override this.Invalidate : unit -&gt; unit" Usage="chartElementCollection.Invalidate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Invalidate();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Forms.DataVisualization.Charting.IChartElement.Invalidate</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -133,6 +166,9 @@
       <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1.RemoveItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="chartElementCollection.RemoveItem index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -154,6 +190,9 @@
       <MemberSignature Language="C#" Value="public virtual void ResumeUpdates ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResumeUpdates() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1.ResumeUpdates" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ResumeUpdates ()" />
+      <MemberSignature Language="F#" Value="abstract member ResumeUpdates : unit -&gt; unit&#xA;override this.ResumeUpdates : unit -&gt; unit" Usage="chartElementCollection.ResumeUpdates " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResumeUpdates();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -179,6 +218,9 @@
       <MemberSignature Language="C#" Value="protected override void SetItem (int index, T item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, !T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1.SetItem(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As T)" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * 'T -&gt; unit" Usage="chartElementCollection.SetItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -202,6 +244,9 @@
       <MemberSignature Language="C#" Value="public virtual void SuspendUpdates ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SuspendUpdates() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1.SuspendUpdates" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SuspendUpdates ()" />
+      <MemberSignature Language="F#" Value="abstract member SuspendUpdates : unit -&gt; unit&#xA;override this.SuspendUpdates : unit -&gt; unit" Usage="chartElementCollection.SuspendUpdates " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SuspendUpdates();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -225,14 +270,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

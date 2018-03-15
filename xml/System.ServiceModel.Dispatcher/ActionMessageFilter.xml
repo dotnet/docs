@@ -1,7 +1,10 @@
-<Type Name="ActionMessageFilter" FullName="System.ServiceModel.Dispatcher.ActionMessageFilter">
+﻿<Type Name="ActionMessageFilter" FullName="System.ServiceModel.Dispatcher.ActionMessageFilter">
   <TypeSignature Language="C#" Value="public class ActionMessageFilter : System.ServiceModel.Dispatcher.MessageFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActionMessageFilter extends System.ServiceModel.Dispatcher.MessageFilter" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ActionMessageFilter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActionMessageFilter&#xA;Inherits MessageFilter" />
+  <TypeSignature Language="F#" Value="type ActionMessageFilter = class&#xA;    inherit MessageFilter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActionMessageFilter : System::ServiceModel::Dispatcher::MessageFilter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public ActionMessageFilter (params string[] actions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] actions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ActionMessageFilter.#ctor(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray actions As String())" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.ActionMessageFilter : string[] -&gt; System.ServiceModel.Dispatcher.ActionMessageFilter" Usage="new System.ServiceModel.Dispatcher.ActionMessageFilter actions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActionMessageFilter(... cli::array &lt;System::String ^&gt; ^ actions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +87,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; Actions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; Actions" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ActionMessageFilter.Actions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Actions As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Actions : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.ServiceModel.Dispatcher.ActionMessageFilter.Actions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ Actions { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,9 +112,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateFilterTable&lt;FilterData&gt;">
-      <MemberSignature Language="C#" Value="protected override System.ServiceModel.Dispatcher.IMessageFilterTable&lt;FilterData&gt; CreateFilterTable&lt;FilterData&gt; ();" />
+      <MemberSignature Language="C#" Value="protected internal override System.ServiceModel.Dispatcher.IMessageFilterTable&lt;FilterData&gt; CreateFilterTable&lt;FilterData&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.ServiceModel.Dispatcher.IMessageFilterTable`1&lt;!!FilterData&gt; CreateFilterTable&lt;FilterData&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ActionMessageFilter.CreateFilterTable``1" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateFilterTable(Of FilterData) () As IMessageFilterTable(Of FilterData)" />
+      <MemberSignature Language="F#" Value="override this.CreateFilterTable : unit -&gt; System.ServiceModel.Dispatcher.IMessageFilterTable&lt;'FilterData&gt;" Usage="actionMessageFilter.CreateFilterTable " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename FilterData&gt;&#xA; override System::ServiceModel::Dispatcher::IMessageFilterTable&lt;FilterData&gt; ^ CreateFilterTable();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -157,6 +169,8 @@
       <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ActionMessageFilter.Match(System.ServiceModel.Channels.Message)" />
+      <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.Message -&gt; bool" Usage="actionMessageFilter.Match message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -186,9 +200,17 @@
       </Docs>
     </Member>
     <Member MemberName="Match">
-      <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.MessageBuffer buffer);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.MessageBuffer buffer) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ActionMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" />
+      <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.MessageBuffer messageBuffer);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.MessageBuffer messageBuffer) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ActionMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.MessageBuffer -&gt; bool" Usage="actionMessageFilter.Match buffer" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Match (buffer As MessageBuffer) As Boolean" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::MessageBuffer ^ messageBuffer);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.MessageBuffer buffer);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.MessageBuffer buffer) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.ActionMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Match (buffer As MessageBuffer) As Boolean" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::MessageBuffer ^ buffer);" FrameworkAlternate="xamarinmac-3.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -198,7 +220,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="messageBuffer" Type="System.ServiceModel.Channels.MessageBuffer" />
+        <Parameter Name="messageBuffer" Type="System.ServiceModel.Channels.MessageBuffer" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="buffer" Type="System.ServiceModel.Channels.MessageBuffer" Index="0" FrameworkAlternate="xamarinmac-3.0" />
       </Parameters>
       <Docs>
         <param name="buffer">To be added.</param>

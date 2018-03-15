@@ -1,7 +1,10 @@
-<Type Name="ChartPaintEventArgs" FullName="System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs">
+﻿<Type Name="ChartPaintEventArgs" FullName="System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs">
   <TypeSignature Language="C#" Value="public class ChartPaintEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChartPaintEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChartPaintEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type ChartPaintEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChartPaintEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.Chart Chart { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.Chart Chart" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs.Chart" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Chart As Chart" />
+      <MemberSignature Language="F#" Value="member this.Chart : System.Web.UI.DataVisualization.Charting.Chart" Usage="System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs.Chart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::Chart ^ Chart { System::Web::UI::DataVisualization::Charting::Chart ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -55,6 +61,9 @@
       <MemberSignature Language="C#" Value="public object ChartElement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ChartElement" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs.ChartElement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartElement As Object" />
+      <MemberSignature Language="F#" Value="member this.ChartElement : obj" Usage="System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs.ChartElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChartElement { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -73,6 +82,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ChartGraphics ChartGraphics { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.ChartGraphics ChartGraphics" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs.ChartGraphics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChartGraphics As ChartGraphics" />
+      <MemberSignature Language="F#" Value="member this.ChartGraphics : System.Web.UI.DataVisualization.Charting.ChartGraphics" Usage="System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs.ChartGraphics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ChartGraphics ^ ChartGraphics { System::Web::UI::DataVisualization::Charting::ChartGraphics ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -102,6 +114,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.ElementPosition Position { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataVisualization.Charting.ElementPosition Position" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs.Position" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Position As ElementPosition" />
+      <MemberSignature Language="F#" Value="member this.Position : System.Web.UI.DataVisualization.Charting.ElementPosition" Usage="System.Web.UI.DataVisualization.Charting.ChartPaintEventArgs.Position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataVisualization::Charting::ElementPosition ^ Position { System::Web::UI::DataVisualization::Charting::ElementPosition ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

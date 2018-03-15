@@ -1,7 +1,10 @@
-<Type Name="TextDecorations" FullName="System.Windows.TextDecorations">
+﻿<Type Name="TextDecorations" FullName="System.Windows.TextDecorations">
   <TypeSignature Language="C#" Value="public static class TextDecorations" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed TextDecorations extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.TextDecorations" />
+  <TypeSignature Language="VB.NET" Value="Public Class TextDecorations" />
+  <TypeSignature Language="F#" Value="type TextDecorations = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextDecorations abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +72,9 @@ Example of text decoration types
       <MemberSignature Language="C#" Value="public static System.Windows.TextDecorationCollection Baseline { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.TextDecorationCollection Baseline" />
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecorations.Baseline" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Baseline As TextDecorationCollection" />
+      <MemberSignature Language="F#" Value="member this.Baseline : System.Windows.TextDecorationCollection" Usage="System.Windows.TextDecorations.Baseline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::TextDecorationCollection ^ Baseline { System::Windows::TextDecorationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -97,6 +103,9 @@ Example of a baseline text decoration
       <MemberSignature Language="C#" Value="public static System.Windows.TextDecorationCollection OverLine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.TextDecorationCollection OverLine" />
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecorations.OverLine" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OverLine As TextDecorationCollection" />
+      <MemberSignature Language="F#" Value="member this.OverLine : System.Windows.TextDecorationCollection" Usage="System.Windows.TextDecorations.OverLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::TextDecorationCollection ^ OverLine { System::Windows::TextDecorationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,6 +134,9 @@ Example of an overline text decoration
       <MemberSignature Language="C#" Value="public static System.Windows.TextDecorationCollection Strikethrough { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.TextDecorationCollection Strikethrough" />
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecorations.Strikethrough" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Strikethrough As TextDecorationCollection" />
+      <MemberSignature Language="F#" Value="member this.Strikethrough : System.Windows.TextDecorationCollection" Usage="System.Windows.TextDecorations.Strikethrough" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::TextDecorationCollection ^ Strikethrough { System::Windows::TextDecorationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -162,6 +174,9 @@ Example of a strikethrough text decoration
       <MemberSignature Language="C#" Value="public static System.Windows.TextDecorationCollection Underline { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.TextDecorationCollection Underline" />
       <MemberSignature Language="DocId" Value="P:System.Windows.TextDecorations.Underline" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Underline As TextDecorationCollection" />
+      <MemberSignature Language="F#" Value="member this.Underline : System.Windows.TextDecorationCollection" Usage="System.Windows.TextDecorations.Underline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::TextDecorationCollection ^ Underline { System::Windows::TextDecorationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="NamedImagesCollection" FullName="System.Web.UI.DataVisualization.Charting.NamedImagesCollection">
+﻿<Type Name="NamedImagesCollection" FullName="System.Web.UI.DataVisualization.Charting.NamedImagesCollection">
   <TypeSignature Language="C#" Value="public class NamedImagesCollection : System.Web.UI.DataVisualization.Charting.ChartNamedElementCollection&lt;System.Web.UI.DataVisualization.Charting.NamedImage&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NamedImagesCollection extends System.Web.UI.DataVisualization.Charting.ChartNamedElementCollection`1&lt;class System.Web.UI.DataVisualization.Charting.NamedImage&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.NamedImagesCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class NamedImagesCollection&#xA;Inherits ChartNamedElementCollection(Of NamedImage)" />
+  <TypeSignature Language="F#" Value="type NamedImagesCollection = class&#xA;    inherit ChartNamedElementCollection&lt;NamedImage&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NamedImagesCollection : System::Web::UI::DataVisualization::Charting::ChartNamedElementCollection&lt;System::Web::UI::DataVisualization::Charting::NamedImage ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="BackgroundType" FullName="System.Windows.Forms.VisualStyles.BackgroundType">
+﻿<Type Name="BackgroundType" FullName="System.Windows.Forms.VisualStyles.BackgroundType">
   <TypeSignature Language="C#" Value="public enum BackgroundType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BackgroundType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.BackgroundType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BackgroundType" />
+  <TypeSignature Language="F#" Value="type BackgroundType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class BackgroundType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="BorderFill" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.BackgroundType BorderFill = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.BackgroundType.BorderFill" />
+      <MemberSignature Language="VB.NET" Value="BorderFill" />
+      <MemberSignature Language="F#" Value="BorderFill = 1" Usage="System.Windows.Forms.VisualStyles.BackgroundType.BorderFill" />
+      <MemberSignature Language="C++ CLI" Value="BorderFill" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BackgroundType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The background of the element is a rectangle filled with a color or pattern.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="ImageFile" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.BackgroundType ImageFile = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.BackgroundType.ImageFile" />
+      <MemberSignature Language="VB.NET" Value="ImageFile" />
+      <MemberSignature Language="F#" Value="ImageFile = 0" Usage="System.Windows.Forms.VisualStyles.BackgroundType.ImageFile" />
+      <MemberSignature Language="C++ CLI" Value="ImageFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BackgroundType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The background of the element is a bitmap. If this value is set, then the property corresponding to the <see cref="F:System.Windows.Forms.VisualStyles.FilenameProperty.ImageFile" /> value will contain the name of a valid image file.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.BackgroundType None = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.BackgroundType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 2" Usage="System.Windows.Forms.VisualStyles.BackgroundType.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.BackgroundType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The element has no background.</summary>
       </Docs>

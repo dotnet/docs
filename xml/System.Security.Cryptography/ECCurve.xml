@@ -1,7 +1,10 @@
-<Type Name="ECCurve" FullName="System.Security.Cryptography.ECCurve">
+﻿<Type Name="ECCurve" FullName="System.Security.Cryptography.ECCurve">
   <TypeSignature Language="C#" Value="public struct ECCurve" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ECCurve extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECCurve" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ECCurve" />
+  <TypeSignature Language="F#" Value="type ECCurve = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class ECCurve" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public byte[] A;" />
       <MemberSignature Language="ILAsm" Value=".field public unsigned int8[] A" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.A" />
+      <MemberSignature Language="VB.NET" Value="Public A As Byte() " />
+      <MemberSignature Language="F#" Value="val mutable A : byte[]" Usage="System.Security.Cryptography.ECCurve.A" />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ A;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -63,6 +69,9 @@
       <MemberSignature Language="C#" Value="public byte[] B;" />
       <MemberSignature Language="ILAsm" Value=".field public unsigned int8[] B" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.B" />
+      <MemberSignature Language="VB.NET" Value="Public B As Byte() " />
+      <MemberSignature Language="F#" Value="val mutable B : byte[]" Usage="System.Security.Cryptography.ECCurve.B" />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ B;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -90,6 +99,9 @@
       <MemberSignature Language="C#" Value="public byte[] Cofactor;" />
       <MemberSignature Language="ILAsm" Value=".field public unsigned int8[] Cofactor" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.Cofactor" />
+      <MemberSignature Language="VB.NET" Value="Public Cofactor As Byte() " />
+      <MemberSignature Language="F#" Value="val mutable Cofactor : byte[]" Usage="System.Security.Cryptography.ECCurve.Cofactor" />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ Cofactor;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -117,6 +129,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve CreateFromFriendlyName (string oidFriendlyName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Security.Cryptography.ECCurve CreateFromFriendlyName(string oidFriendlyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECCurve.CreateFromFriendlyName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromFriendlyName (oidFriendlyName As String) As ECCurve" />
+      <MemberSignature Language="F#" Value="static member CreateFromFriendlyName : string -&gt; System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.CreateFromFriendlyName oidFriendlyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ECCurve CreateFromFriendlyName(System::String ^ oidFriendlyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -151,6 +166,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve CreateFromOid (System.Security.Cryptography.Oid curveOid);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Security.Cryptography.ECCurve CreateFromOid(class System.Security.Cryptography.Oid curveOid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECCurve.CreateFromOid(System.Security.Cryptography.Oid)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromOid (curveOid As Oid) As ECCurve" />
+      <MemberSignature Language="F#" Value="static member CreateFromOid : System.Security.Cryptography.Oid -&gt; System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.CreateFromOid curveOid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ECCurve CreateFromOid(System::Security::Cryptography::Oid ^ curveOid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -183,6 +201,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECCurve CreateFromValue (string oidValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Security.Cryptography.ECCurve CreateFromValue(string oidValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECCurve.CreateFromValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromValue (oidValue As String) As ECCurve" />
+      <MemberSignature Language="F#" Value="static member CreateFromValue : string -&gt; System.Security.Cryptography.ECCurve" Usage="System.Security.Cryptography.ECCurve.CreateFromValue oidValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ECCurve CreateFromValue(System::String ^ oidValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -217,6 +238,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.ECCurve.ECCurveType CurveType;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Security.Cryptography.ECCurve/ECCurveType CurveType" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.CurveType" />
+      <MemberSignature Language="VB.NET" Value="Public CurveType As ECCurve.ECCurveType " />
+      <MemberSignature Language="F#" Value="val mutable CurveType : System.Security.Cryptography.ECCurve.ECCurveType" Usage="System.Security.Cryptography.ECCurve.CurveType" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Security::Cryptography::ECCurve::ECCurveType CurveType;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -244,6 +268,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.ECPoint G;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Security.Cryptography.ECPoint G" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.G" />
+      <MemberSignature Language="VB.NET" Value="Public G As ECPoint " />
+      <MemberSignature Language="F#" Value="val mutable G : System.Security.Cryptography.ECPoint" Usage="System.Security.Cryptography.ECCurve.G" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Security::Cryptography::ECPoint G;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -271,6 +298,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Security.Cryptography.HashAlgorithmName&gt; Hash;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Nullable`1&lt;valuetype System.Security.Cryptography.HashAlgorithmName&gt; Hash" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.Hash" />
+      <MemberSignature Language="VB.NET" Value="Public Hash As Nullable(Of HashAlgorithmName) " />
+      <MemberSignature Language="F#" Value="val mutable Hash : Nullable&lt;System.Security.Cryptography.HashAlgorithmName&gt;" Usage="System.Security.Cryptography.ECCurve.Hash" />
+      <MemberSignature Language="C++ CLI" Value="public: Nullable&lt;System::Security::Cryptography::HashAlgorithmName&gt; Hash;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -298,6 +328,9 @@
       <MemberSignature Language="C#" Value="public bool IsCharacteristic2 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCharacteristic2" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.IsCharacteristic2" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCharacteristic2 As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCharacteristic2 : bool" Usage="System.Security.Cryptography.ECCurve.IsCharacteristic2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCharacteristic2 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -327,6 +360,9 @@
       <MemberSignature Language="C#" Value="public bool IsExplicit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsExplicit" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.IsExplicit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsExplicit As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsExplicit : bool" Usage="System.Security.Cryptography.ECCurve.IsExplicit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsExplicit { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -356,6 +392,9 @@
       <MemberSignature Language="C#" Value="public bool IsNamed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNamed" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.IsNamed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNamed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNamed : bool" Usage="System.Security.Cryptography.ECCurve.IsNamed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNamed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -385,6 +424,9 @@
       <MemberSignature Language="C#" Value="public bool IsPrime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPrime" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.IsPrime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrime As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPrime : bool" Usage="System.Security.Cryptography.ECCurve.IsPrime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrime { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -414,6 +456,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Oid Oid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Oid Oid" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECCurve.Oid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Oid As Oid" />
+      <MemberSignature Language="F#" Value="member this.Oid : System.Security.Cryptography.Oid" Usage="System.Security.Cryptography.ECCurve.Oid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Oid ^ Oid { System::Security::Cryptography::Oid ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -451,6 +496,9 @@
       <MemberSignature Language="C#" Value="public byte[] Order;" />
       <MemberSignature Language="ILAsm" Value=".field public unsigned int8[] Order" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.Order" />
+      <MemberSignature Language="VB.NET" Value="Public Order As Byte() " />
+      <MemberSignature Language="F#" Value="val mutable Order : byte[]" Usage="System.Security.Cryptography.ECCurve.Order" />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ Order;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -485,6 +533,9 @@
       <MemberSignature Language="C#" Value="public byte[] Polynomial;" />
       <MemberSignature Language="ILAsm" Value=".field public unsigned int8[] Polynomial" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.Polynomial" />
+      <MemberSignature Language="VB.NET" Value="Public Polynomial As Byte() " />
+      <MemberSignature Language="F#" Value="val mutable Polynomial : byte[]" Usage="System.Security.Cryptography.ECCurve.Polynomial" />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ Polynomial;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -512,6 +563,9 @@
       <MemberSignature Language="C#" Value="public byte[] Prime;" />
       <MemberSignature Language="ILAsm" Value=".field public unsigned int8[] Prime" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.Prime" />
+      <MemberSignature Language="VB.NET" Value="Public Prime As Byte() " />
+      <MemberSignature Language="F#" Value="val mutable Prime : byte[]" Usage="System.Security.Cryptography.ECCurve.Prime" />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ Prime;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -539,6 +593,9 @@
       <MemberSignature Language="C#" Value="public byte[] Seed;" />
       <MemberSignature Language="ILAsm" Value=".field public unsigned int8[] Seed" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.ECCurve.Seed" />
+      <MemberSignature Language="VB.NET" Value="Public Seed As Byte() " />
+      <MemberSignature Language="F#" Value="val mutable Seed : byte[]" Usage="System.Security.Cryptography.ECCurve.Seed" />
+      <MemberSignature Language="C++ CLI" Value="public: cli::array &lt;System::Byte&gt; ^ Seed;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -566,6 +623,9 @@
       <MemberSignature Language="C#" Value="public void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECCurve.Validate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Validate ()" />
+      <MemberSignature Language="F#" Value="member this.Validate : unit -&gt; unit" Usage="eCCurve.Validate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>

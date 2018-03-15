@@ -1,7 +1,10 @@
-<Type Name="DockingBehavior" FullName="System.Windows.Forms.DockingBehavior">
+﻿<Type Name="DockingBehavior" FullName="System.Windows.Forms.DockingBehavior">
   <TypeSignature Language="C#" Value="public enum DockingBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DockingBehavior extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DockingBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DockingBehavior" />
+  <TypeSignature Language="F#" Value="type DockingBehavior = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DockingBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="Ask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DockingBehavior Ask = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DockingBehavior.Ask" />
+      <MemberSignature Language="VB.NET" Value="Ask" />
+      <MemberSignature Language="F#" Value="Ask = 1" Usage="System.Windows.Forms.DockingBehavior.Ask" />
+      <MemberSignature Language="C++ CLI" Value="Ask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -36,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DockingBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Prompt the user for the desired docking behavior.</summary>
       </Docs>
@@ -44,6 +51,9 @@
       <MemberSignature Language="C#" Value="AutoDock" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DockingBehavior AutoDock = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DockingBehavior.AutoDock" />
+      <MemberSignature Language="VB.NET" Value="AutoDock" />
+      <MemberSignature Language="F#" Value="AutoDock = 2" Usage="System.Windows.Forms.DockingBehavior.AutoDock" />
+      <MemberSignature Language="C++ CLI" Value="AutoDock" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DockingBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Set the control's <see cref="P:System.Windows.Forms.Control.Dock" /> property to <see cref="F:System.Windows.Forms.DockStyle.Fill" /> when it is dropped into a container with no other child controls.</summary>
       </Docs>
@@ -60,6 +71,9 @@
       <MemberSignature Language="C#" Value="Never" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DockingBehavior Never = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DockingBehavior.Never" />
+      <MemberSignature Language="VB.NET" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 0" Usage="System.Windows.Forms.DockingBehavior.Never" />
+      <MemberSignature Language="C++ CLI" Value="Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -68,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DockingBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Do not prompt the user for the desired docking behavior.</summary>
       </Docs>

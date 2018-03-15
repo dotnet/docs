@@ -1,7 +1,10 @@
-<Type Name="NameScopePropertyAttribute" FullName="System.Windows.Markup.NameScopePropertyAttribute">
+﻿<Type Name="NameScopePropertyAttribute" FullName="System.Windows.Markup.NameScopePropertyAttribute">
   <TypeSignature Language="C#" Value="public sealed class NameScopePropertyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NameScopePropertyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.NameScopePropertyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NameScopePropertyAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type NameScopePropertyAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NameScopePropertyAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,10 +42,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.NameScopePropertyAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public NameScopePropertyAttribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.NameScopePropertyAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.NameScopePropertyAttribute : string -&gt; System.Windows.Markup.NameScopePropertyAttribute" Usage="new System.Windows.Markup.NameScopePropertyAttribute name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NameScopePropertyAttribute(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -61,6 +76,8 @@
       <MemberSignature Language="C#" Value="public NameScopePropertyAttribute (string name, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.NameScopePropertyAttribute.#ctor(System.String,System.Type)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.NameScopePropertyAttribute : string * Type -&gt; System.Windows.Markup.NameScopePropertyAttribute" Usage="new System.Windows.Markup.NameScopePropertyAttribute (name, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NameScopePropertyAttribute(System::String ^ name, Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -81,6 +98,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.NameScopePropertyAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Windows.Markup.NameScopePropertyAttribute.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -106,6 +126,9 @@
       <MemberSignature Language="C#" Value="public Type Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.NameScopePropertyAttribute.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Windows.Markup.NameScopePropertyAttribute.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -127,14 +150,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Markup.NameScopePropertyAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

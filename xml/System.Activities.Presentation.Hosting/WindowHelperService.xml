@@ -1,7 +1,10 @@
-<Type Name="WindowHelperService" FullName="System.Activities.Presentation.Hosting.WindowHelperService">
+﻿<Type Name="WindowHelperService" FullName="System.Activities.Presentation.Hosting.WindowHelperService">
   <TypeSignature Language="C#" Value="public class WindowHelperService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WindowHelperService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.WindowHelperService" />
+  <TypeSignature Language="VB.NET" Value="Public Class WindowHelperService" />
+  <TypeSignature Language="F#" Value="type WindowHelperService = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowHelperService" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public WindowHelperService (IntPtr hwnd);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int hwnd) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.WindowHelperService.#ctor(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (hwnd As IntPtr)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Hosting.WindowHelperService : nativeint -&gt; System.Activities.Presentation.Hosting.WindowHelperService" Usage="new System.Activities.Presentation.Hosting.WindowHelperService hwnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WindowHelperService(IntPtr hwnd);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public IntPtr ParentWindowHwnd { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int ParentWindowHwnd" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Hosting.WindowHelperService.ParentWindowHwnd" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentWindowHwnd As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.ParentWindowHwnd : nativeint" Usage="System.Activities.Presentation.Hosting.WindowHelperService.ParentWindowHwnd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr ParentWindowHwnd { IntPtr get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -55,6 +64,9 @@
       <MemberSignature Language="C#" Value="public bool RegisterWindowMessageHandler (System.Activities.Presentation.Hosting.WindowMessage callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RegisterWindowMessageHandler(class System.Activities.Presentation.Hosting.WindowMessage callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.WindowHelperService.RegisterWindowMessageHandler(System.Activities.Presentation.Hosting.WindowMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RegisterWindowMessageHandler (callback As WindowMessage) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RegisterWindowMessageHandler : System.Activities.Presentation.Hosting.WindowMessage -&gt; bool" Usage="windowHelperService.RegisterWindowMessageHandler callback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RegisterWindowMessageHandler(System::Activities::Presentation::Hosting::WindowMessage ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -80,6 +92,9 @@
       <MemberSignature Language="C#" Value="public bool TrySetWindowOwner (System.Windows.DependencyObject source, System.Windows.Window target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TrySetWindowOwner(class System.Windows.DependencyObject source, class System.Windows.Window target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.WindowHelperService.TrySetWindowOwner(System.Windows.DependencyObject,System.Windows.Window)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TrySetWindowOwner (source As DependencyObject, target As Window) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TrySetWindowOwner : System.Windows.DependencyObject * System.Windows.Window -&gt; bool" Usage="windowHelperService.TrySetWindowOwner (source, target)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TrySetWindowOwner(System::Windows::DependencyObject ^ source, System::Windows::Window ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -105,6 +120,9 @@
       <MemberSignature Language="C#" Value="public bool UnregisterWindowMessageHandler (System.Activities.Presentation.Hosting.WindowMessage callback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool UnregisterWindowMessageHandler(class System.Activities.Presentation.Hosting.WindowMessage callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.WindowHelperService.UnregisterWindowMessageHandler(System.Activities.Presentation.Hosting.WindowMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Function UnregisterWindowMessageHandler (callback As WindowMessage) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UnregisterWindowMessageHandler : System.Activities.Presentation.Hosting.WindowMessage -&gt; bool" Usage="windowHelperService.UnregisterWindowMessageHandler callback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool UnregisterWindowMessageHandler(System::Activities::Presentation::Hosting::WindowMessage ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

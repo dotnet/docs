@@ -1,7 +1,10 @@
-<Type Name="DispatchRuntime" FullName="System.ServiceModel.Dispatcher.DispatchRuntime">
+﻿<Type Name="DispatchRuntime" FullName="System.ServiceModel.Dispatcher.DispatchRuntime">
   <TypeSignature Language="C#" Value="public sealed class DispatchRuntime" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DispatchRuntime extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.DispatchRuntime" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DispatchRuntime" />
+  <TypeSignature Language="F#" Value="type DispatchRuntime = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DispatchRuntime sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -65,6 +68,9 @@
       <MemberSignature Language="C#" Value="public bool AutomaticInputSessionShutdown { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutomaticInputSessionShutdown" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.AutomaticInputSessionShutdown" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutomaticInputSessionShutdown As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutomaticInputSessionShutdown : bool with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.AutomaticInputSessionShutdown" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutomaticInputSessionShutdown { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -93,6 +99,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.ClientRuntime CallbackClientRuntime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.ClientRuntime CallbackClientRuntime" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.CallbackClientRuntime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallbackClientRuntime As ClientRuntime" />
+      <MemberSignature Language="F#" Value="member this.CallbackClientRuntime : System.ServiceModel.Dispatcher.ClientRuntime" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.CallbackClientRuntime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::ClientRuntime ^ CallbackClientRuntime { System::ServiceModel::Dispatcher::ClientRuntime ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,6 +127,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.ChannelDispatcher ChannelDispatcher { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.ChannelDispatcher ChannelDispatcher" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.ChannelDispatcher" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelDispatcher As ChannelDispatcher" />
+      <MemberSignature Language="F#" Value="member this.ChannelDispatcher : System.ServiceModel.Dispatcher.ChannelDispatcher" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.ChannelDispatcher" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::ChannelDispatcher ^ ChannelDispatcher { System::ServiceModel::Dispatcher::ChannelDispatcher ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -136,6 +148,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.ConcurrencyMode ConcurrencyMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.ConcurrencyMode ConcurrencyMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.ConcurrencyMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConcurrencyMode As ConcurrencyMode" />
+      <MemberSignature Language="F#" Value="member this.ConcurrencyMode : System.ServiceModel.ConcurrencyMode with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.ConcurrencyMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ConcurrencyMode ConcurrencyMode { System::ServiceModel::ConcurrencyMode get(); void set(System::ServiceModel::ConcurrencyMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -161,6 +176,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.EndpointDispatcher EndpointDispatcher { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.EndpointDispatcher EndpointDispatcher" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.EndpointDispatcher" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndpointDispatcher As EndpointDispatcher" />
+      <MemberSignature Language="F#" Value="member this.EndpointDispatcher : System.ServiceModel.Dispatcher.EndpointDispatcher" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.EndpointDispatcher" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::EndpointDispatcher ^ EndpointDispatcher { System::ServiceModel::Dispatcher::EndpointDispatcher ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -186,6 +204,9 @@
       <MemberSignature Language="C#" Value="public bool EnsureOrderedDispatch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnsureOrderedDispatch" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.EnsureOrderedDispatch" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnsureOrderedDispatch As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnsureOrderedDispatch : bool with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.EnsureOrderedDispatch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnsureOrderedDispatch { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -205,6 +226,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; ExternalAuthorizationPolicies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; ExternalAuthorizationPolicies" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.ExternalAuthorizationPolicies" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExternalAuthorizationPolicies As ReadOnlyCollection(Of IAuthorizationPolicy)" />
+      <MemberSignature Language="F#" Value="member this.ExternalAuthorizationPolicies : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.ExternalAuthorizationPolicies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ ExternalAuthorizationPolicies { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ get(); void set(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -230,6 +254,9 @@
       <MemberSignature Language="C#" Value="public bool IgnoreTransactionMessageProperty { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreTransactionMessageProperty" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.IgnoreTransactionMessageProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreTransactionMessageProperty As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IgnoreTransactionMessageProperty : bool with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.IgnoreTransactionMessageProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreTransactionMessageProperty { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -256,6 +283,9 @@
       <MemberSignature Language="C#" Value="public bool ImpersonateCallerForAllOperations { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ImpersonateCallerForAllOperations" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.ImpersonateCallerForAllOperations" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImpersonateCallerForAllOperations As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ImpersonateCallerForAllOperations : bool with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.ImpersonateCallerForAllOperations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ImpersonateCallerForAllOperations { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -284,6 +314,9 @@
       <MemberSignature Language="C#" Value="public bool ImpersonateOnSerializingReply { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ImpersonateOnSerializingReply" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.ImpersonateOnSerializingReply" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImpersonateOnSerializingReply As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ImpersonateOnSerializingReply : bool with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.ImpersonateOnSerializingReply" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ImpersonateOnSerializingReply { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -303,6 +336,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IInputSessionShutdown&gt; InputSessionShutdownHandlers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.SynchronizedCollection`1&lt;class System.ServiceModel.Dispatcher.IInputSessionShutdown&gt; InputSessionShutdownHandlers" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.InputSessionShutdownHandlers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputSessionShutdownHandlers As SynchronizedCollection(Of IInputSessionShutdown)" />
+      <MemberSignature Language="F#" Value="member this.InputSessionShutdownHandlers : System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IInputSessionShutdown&gt;" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.InputSessionShutdownHandlers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::IInputSessionShutdown ^&gt; ^ InputSessionShutdownHandlers { System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::IInputSessionShutdown ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -328,6 +364,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IInstanceContextInitializer&gt; InstanceContextInitializers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.SynchronizedCollection`1&lt;class System.ServiceModel.Dispatcher.IInstanceContextInitializer&gt; InstanceContextInitializers" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceContextInitializers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceContextInitializers As SynchronizedCollection(Of IInstanceContextInitializer)" />
+      <MemberSignature Language="F#" Value="member this.InstanceContextInitializers : System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IInstanceContextInitializer&gt;" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.InstanceContextInitializers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::IInstanceContextInitializer ^&gt; ^ InstanceContextInitializers { System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::IInstanceContextInitializer ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -353,6 +392,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.IInstanceContextProvider InstanceContextProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.IInstanceContextProvider InstanceContextProvider" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceContextProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceContextProvider As IInstanceContextProvider" />
+      <MemberSignature Language="F#" Value="member this.InstanceContextProvider : System.ServiceModel.Dispatcher.IInstanceContextProvider with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.InstanceContextProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::IInstanceContextProvider ^ InstanceContextProvider { System::ServiceModel::Dispatcher::IInstanceContextProvider ^ get(); void set(System::ServiceModel::Dispatcher::IInstanceContextProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -371,6 +413,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.IInstanceProvider InstanceProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.IInstanceProvider InstanceProvider" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Property InstanceProvider As IInstanceProvider" />
+      <MemberSignature Language="F#" Value="member this.InstanceProvider : System.ServiceModel.Dispatcher.IInstanceProvider with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.InstanceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::IInstanceProvider ^ InstanceProvider { System::ServiceModel::Dispatcher::IInstanceProvider ^ get(); void set(System::ServiceModel::Dispatcher::IInstanceProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -400,6 +445,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.AuditLevel MessageAuthenticationAuditLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.AuditLevel MessageAuthenticationAuditLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.MessageAuthenticationAuditLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageAuthenticationAuditLevel As AuditLevel" />
+      <MemberSignature Language="F#" Value="member this.MessageAuthenticationAuditLevel : System.ServiceModel.AuditLevel with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.MessageAuthenticationAuditLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::AuditLevel MessageAuthenticationAuditLevel { System::ServiceModel::AuditLevel get(); void set(System::ServiceModel::AuditLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -425,6 +473,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IDispatchMessageInspector&gt; MessageInspectors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.SynchronizedCollection`1&lt;class System.ServiceModel.Dispatcher.IDispatchMessageInspector&gt; MessageInspectors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.MessageInspectors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MessageInspectors As SynchronizedCollection(Of IDispatchMessageInspector)" />
+      <MemberSignature Language="F#" Value="member this.MessageInspectors : System.Collections.Generic.SynchronizedCollection&lt;System.ServiceModel.Dispatcher.IDispatchMessageInspector&gt;" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.MessageInspectors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::IDispatchMessageInspector ^&gt; ^ MessageInspectors { System::Collections::Generic::SynchronizedCollection&lt;System::ServiceModel::Dispatcher::IDispatchMessageInspector ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -450,6 +501,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.SynchronizedKeyedCollection&lt;string,System.ServiceModel.Dispatcher.DispatchOperation&gt; Operations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.SynchronizedKeyedCollection`2&lt;string, class System.ServiceModel.Dispatcher.DispatchOperation&gt; Operations" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.Operations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operations As SynchronizedKeyedCollection(Of String, DispatchOperation)" />
+      <MemberSignature Language="F#" Value="member this.Operations : System.Collections.Generic.SynchronizedKeyedCollection&lt;string, System.ServiceModel.Dispatcher.DispatchOperation&gt;" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.Operations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::SynchronizedKeyedCollection&lt;System::String ^, System::ServiceModel::Dispatcher::DispatchOperation ^&gt; ^ Operations { System::Collections::Generic::SynchronizedKeyedCollection&lt;System::String ^, System::ServiceModel::Dispatcher::DispatchOperation ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -475,6 +529,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.IDispatchOperationSelector OperationSelector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.IDispatchOperationSelector OperationSelector" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.OperationSelector" />
+      <MemberSignature Language="VB.NET" Value="Public Property OperationSelector As IDispatchOperationSelector" />
+      <MemberSignature Language="F#" Value="member this.OperationSelector : System.ServiceModel.Dispatcher.IDispatchOperationSelector with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.OperationSelector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::IDispatchOperationSelector ^ OperationSelector { System::ServiceModel::Dispatcher::IDispatchOperationSelector ^ get(); void set(System::ServiceModel::Dispatcher::IDispatchOperationSelector ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -500,6 +557,9 @@
       <MemberSignature Language="C#" Value="public bool PreserveMessage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PreserveMessage" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.PreserveMessage" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreserveMessage As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PreserveMessage : bool with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.PreserveMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PreserveMessage { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -519,6 +579,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.PrincipalPermissionMode PrincipalPermissionMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Description.PrincipalPermissionMode PrincipalPermissionMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.PrincipalPermissionMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrincipalPermissionMode As PrincipalPermissionMode" />
+      <MemberSignature Language="F#" Value="member this.PrincipalPermissionMode : System.ServiceModel.Description.PrincipalPermissionMode with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.PrincipalPermissionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::PrincipalPermissionMode PrincipalPermissionMode { System::ServiceModel::Description::PrincipalPermissionMode get(); void set(System::ServiceModel::Description::PrincipalPermissionMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -550,6 +613,9 @@
       <MemberSignature Language="C#" Value="public bool ReleaseServiceInstanceOnTransactionComplete { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReleaseServiceInstanceOnTransactionComplete" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.ReleaseServiceInstanceOnTransactionComplete" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReleaseServiceInstanceOnTransactionComplete As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ReleaseServiceInstanceOnTransactionComplete : bool with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.ReleaseServiceInstanceOnTransactionComplete" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReleaseServiceInstanceOnTransactionComplete { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -576,6 +642,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Security.RoleProvider RoleProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Security.RoleProvider RoleProvider" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.RoleProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Property RoleProvider As RoleProvider" />
+      <MemberSignature Language="F#" Value="member this.RoleProvider : System.Web.Security.RoleProvider with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.RoleProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Security::RoleProvider ^ RoleProvider { System::Web::Security::RoleProvider ^ get(); void set(System::Web::Security::RoleProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -594,6 +663,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.AuditLogLocation SecurityAuditLogLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.AuditLogLocation SecurityAuditLogLocation" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.SecurityAuditLogLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecurityAuditLogLocation As AuditLogLocation" />
+      <MemberSignature Language="F#" Value="member this.SecurityAuditLogLocation : System.ServiceModel.AuditLogLocation with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.SecurityAuditLogLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::AuditLogLocation SecurityAuditLogLocation { System::ServiceModel::AuditLogLocation get(); void set(System::ServiceModel::AuditLogLocation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -612,6 +684,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.ServiceAuthenticationManager ServiceAuthenticationManager { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.ServiceAuthenticationManager ServiceAuthenticationManager" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.ServiceAuthenticationManager" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceAuthenticationManager As ServiceAuthenticationManager" />
+      <MemberSignature Language="F#" Value="member this.ServiceAuthenticationManager : System.ServiceModel.ServiceAuthenticationManager with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.ServiceAuthenticationManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ServiceAuthenticationManager ^ ServiceAuthenticationManager { System::ServiceModel::ServiceAuthenticationManager ^ get(); void set(System::ServiceModel::ServiceAuthenticationManager ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -637,6 +712,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.AuditLevel ServiceAuthorizationAuditLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.AuditLevel ServiceAuthorizationAuditLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.ServiceAuthorizationAuditLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceAuthorizationAuditLevel As AuditLevel" />
+      <MemberSignature Language="F#" Value="member this.ServiceAuthorizationAuditLevel : System.ServiceModel.AuditLevel with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.ServiceAuthorizationAuditLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::AuditLevel ServiceAuthorizationAuditLevel { System::ServiceModel::AuditLevel get(); void set(System::ServiceModel::AuditLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -662,6 +740,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.ServiceAuthorizationManager ServiceAuthorizationManager { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.ServiceAuthorizationManager ServiceAuthorizationManager" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.ServiceAuthorizationManager" />
+      <MemberSignature Language="VB.NET" Value="Public Property ServiceAuthorizationManager As ServiceAuthorizationManager" />
+      <MemberSignature Language="F#" Value="member this.ServiceAuthorizationManager : System.ServiceModel.ServiceAuthorizationManager with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.ServiceAuthorizationManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::ServiceAuthorizationManager ^ ServiceAuthorizationManager { System::ServiceModel::ServiceAuthorizationManager ^ get(); void set(System::ServiceModel::ServiceAuthorizationManager ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -680,6 +761,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.InstanceContext SingletonInstanceContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.InstanceContext SingletonInstanceContext" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.SingletonInstanceContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property SingletonInstanceContext As InstanceContext" />
+      <MemberSignature Language="F#" Value="member this.SingletonInstanceContext : System.ServiceModel.InstanceContext with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.SingletonInstanceContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::InstanceContext ^ SingletonInstanceContext { System::ServiceModel::InstanceContext ^ get(); void set(System::ServiceModel::InstanceContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -698,6 +782,9 @@
       <MemberSignature Language="C#" Value="public bool SuppressAuditFailure { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SuppressAuditFailure" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.SuppressAuditFailure" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuppressAuditFailure As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SuppressAuditFailure : bool with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.SuppressAuditFailure" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressAuditFailure { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -724,6 +811,9 @@
       <MemberSignature Language="C#" Value="public System.Threading.SynchronizationContext SynchronizationContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.SynchronizationContext SynchronizationContext" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.SynchronizationContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property SynchronizationContext As SynchronizationContext" />
+      <MemberSignature Language="F#" Value="member this.SynchronizationContext : System.Threading.SynchronizationContext with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.SynchronizationContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::SynchronizationContext ^ SynchronizationContext { System::Threading::SynchronizationContext ^ get(); void set(System::Threading::SynchronizationContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -749,6 +839,9 @@
       <MemberSignature Language="C#" Value="public bool TransactionAutoCompleteOnSessionClose { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TransactionAutoCompleteOnSessionClose" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.TransactionAutoCompleteOnSessionClose" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransactionAutoCompleteOnSessionClose As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TransactionAutoCompleteOnSessionClose : bool with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.TransactionAutoCompleteOnSessionClose" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TransactionAutoCompleteOnSessionClose { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -775,6 +868,9 @@
       <MemberSignature Language="C#" Value="public Type Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -793,6 +889,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Dispatcher.DispatchOperation UnhandledDispatchOperation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Dispatcher.DispatchOperation UnhandledDispatchOperation" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.UnhandledDispatchOperation" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnhandledDispatchOperation As DispatchOperation" />
+      <MemberSignature Language="F#" Value="member this.UnhandledDispatchOperation : System.ServiceModel.Dispatcher.DispatchOperation with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.UnhandledDispatchOperation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Dispatcher::DispatchOperation ^ UnhandledDispatchOperation { System::ServiceModel::Dispatcher::DispatchOperation ^ get(); void set(System::ServiceModel::Dispatcher::DispatchOperation ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -819,6 +918,9 @@
       <MemberSignature Language="C#" Value="public bool ValidateMustUnderstand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ValidateMustUnderstand" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.DispatchRuntime.ValidateMustUnderstand" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidateMustUnderstand As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ValidateMustUnderstand : bool with get, set" Usage="System.ServiceModel.Dispatcher.DispatchRuntime.ValidateMustUnderstand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValidateMustUnderstand { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="DataErrorValidationRule" FullName="System.Windows.Controls.DataErrorValidationRule">
+﻿<Type Name="DataErrorValidationRule" FullName="System.Windows.Controls.DataErrorValidationRule">
   <TypeSignature Language="C#" Value="public sealed class DataErrorValidationRule : System.Windows.Controls.ValidationRule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataErrorValidationRule extends System.Windows.Controls.ValidationRule" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataErrorValidationRule" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataErrorValidationRule&#xA;Inherits ValidationRule" />
+  <TypeSignature Language="F#" Value="type DataErrorValidationRule = class&#xA;    inherit ValidationRule" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataErrorValidationRule sealed : System::Windows::Controls::ValidationRule" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public DataErrorValidationRule ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataErrorValidationRule.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataErrorValidationRule();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -56,6 +61,8 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Controls.ValidationResult Validate (object value, System.Globalization.CultureInfo cultureInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Controls.ValidationResult Validate(object value, class System.Globalization.CultureInfo cultureInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataErrorValidationRule.Validate(System.Object,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="F#" Value="override this.Validate : obj * System.Globalization.CultureInfo -&gt; System.Windows.Controls.ValidationResult" Usage="dataErrorValidationRule.Validate (value, cultureInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Controls::ValidationResult ^ Validate(System::Object ^ value, System::Globalization::CultureInfo ^ cultureInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

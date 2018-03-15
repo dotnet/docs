@@ -1,7 +1,10 @@
-<Type Name="ErrorType" FullName="Microsoft.JScript.ErrorType">
+﻿<Type Name="ErrorType" FullName="Microsoft.JScript.ErrorType">
   <TypeSignature Language="C#" Value="public enum ErrorType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ErrorType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ErrorType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ErrorType" />
+  <TypeSignature Language="F#" Value="type ErrorType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ErrorType" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +25,9 @@
       <MemberSignature Language="C#" Value="EvalError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.ErrorType EvalError = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.EvalError" />
+      <MemberSignature Language="VB.NET" Value="EvalError" />
+      <MemberSignature Language="F#" Value="EvalError = 1" Usage="Microsoft.JScript.ErrorType.EvalError" />
+      <MemberSignature Language="C++ CLI" Value="EvalError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -30,6 +36,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.ErrorType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An [eval Method (Visual Studio - JScript)](http://msdn.microsoft.com/library/8af3274a-ce81-46db-854c-25db60cd9b38) error. Corresponds to the <see cref="T:Microsoft.JScript.EvalErrorObject" /> object.</summary>
         <forInternalUseOnly />
@@ -39,6 +46,9 @@
       <MemberSignature Language="C#" Value="OtherError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.ErrorType OtherError = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.OtherError" />
+      <MemberSignature Language="VB.NET" Value="OtherError" />
+      <MemberSignature Language="F#" Value="OtherError = 0" Usage="Microsoft.JScript.ErrorType.OtherError" />
+      <MemberSignature Language="C++ CLI" Value="OtherError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -47,6 +57,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.ErrorType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Any error other than one of the other error types. This is the default value.</summary>
         <forInternalUseOnly />
@@ -56,6 +67,9 @@
       <MemberSignature Language="C#" Value="RangeError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.ErrorType RangeError = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.RangeError" />
+      <MemberSignature Language="VB.NET" Value="RangeError" />
+      <MemberSignature Language="F#" Value="RangeError = 2" Usage="Microsoft.JScript.ErrorType.RangeError" />
+      <MemberSignature Language="C++ CLI" Value="RangeError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -64,6 +78,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.ErrorType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A range error. Corresponds to the <see cref="T:Microsoft.JScript.RangeErrorObject" /> object.</summary>
         <forInternalUseOnly />
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="ReferenceError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.ErrorType ReferenceError = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.ReferenceError" />
+      <MemberSignature Language="VB.NET" Value="ReferenceError" />
+      <MemberSignature Language="F#" Value="ReferenceError = 3" Usage="Microsoft.JScript.ErrorType.ReferenceError" />
+      <MemberSignature Language="C++ CLI" Value="ReferenceError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -81,6 +99,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.ErrorType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A reference error. Corresponds to the <see cref="T:Microsoft.JScript.ReferenceErrorObject" /> object.</summary>
         <forInternalUseOnly />
@@ -90,6 +109,9 @@
       <MemberSignature Language="C#" Value="SyntaxError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.ErrorType SyntaxError = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.SyntaxError" />
+      <MemberSignature Language="VB.NET" Value="SyntaxError" />
+      <MemberSignature Language="F#" Value="SyntaxError = 4" Usage="Microsoft.JScript.ErrorType.SyntaxError" />
+      <MemberSignature Language="C++ CLI" Value="SyntaxError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -98,6 +120,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.ErrorType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A syntax error. Corresponds to the <see cref="T:Microsoft.JScript.SyntaxErrorObject" /> object.</summary>
         <forInternalUseOnly />
@@ -107,6 +130,9 @@
       <MemberSignature Language="C#" Value="TypeError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.ErrorType TypeError = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.TypeError" />
+      <MemberSignature Language="VB.NET" Value="TypeError" />
+      <MemberSignature Language="F#" Value="TypeError = 5" Usage="Microsoft.JScript.ErrorType.TypeError" />
+      <MemberSignature Language="C++ CLI" Value="TypeError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -115,6 +141,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.ErrorType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A type error. Corresponds to the <see cref="T:Microsoft.JScript.TypeErrorObject" /> object.</summary>
         <forInternalUseOnly />
@@ -124,6 +151,9 @@
       <MemberSignature Language="C#" Value="URIError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.ErrorType URIError = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ErrorType.URIError" />
+      <MemberSignature Language="VB.NET" Value="URIError" />
+      <MemberSignature Language="F#" Value="URIError = 6" Usage="Microsoft.JScript.ErrorType.URIError" />
+      <MemberSignature Language="C++ CLI" Value="URIError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -132,6 +162,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.ErrorType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A Uniform Resource Identifier (URI) error. Corresponds to the <see cref="T:Microsoft.JScript.URIErrorObject" /> object.</summary>
         <forInternalUseOnly />

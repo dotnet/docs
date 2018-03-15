@@ -1,7 +1,10 @@
-<Type Name="EventCommand" FullName="System.Diagnostics.Tracing.EventCommand">
+﻿<Type Name="EventCommand" FullName="System.Diagnostics.Tracing.EventCommand">
   <TypeSignature Language="C#" Value="public enum EventCommand" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventCommand extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventCommand" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EventCommand" />
+  <TypeSignature Language="F#" Value="type EventCommand = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EventCommand" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="Disable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventCommand Disable = int32(-3)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventCommand.Disable" />
+      <MemberSignature Language="VB.NET" Value="Disable" />
+      <MemberSignature Language="F#" Value="Disable = -3" Usage="System.Diagnostics.Tracing.EventCommand.Disable" />
+      <MemberSignature Language="C++ CLI" Value="Disable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -52,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventCommand</ReturnType>
       </ReturnValue>
+      <MemberValue>-3</MemberValue>
       <Docs>
         <summary>Disable the event.</summary>
       </Docs>
@@ -60,6 +67,9 @@
       <MemberSignature Language="C#" Value="Enable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventCommand Enable = int32(-2)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventCommand.Enable" />
+      <MemberSignature Language="VB.NET" Value="Enable" />
+      <MemberSignature Language="F#" Value="Enable = -2" Usage="System.Diagnostics.Tracing.EventCommand.Enable" />
+      <MemberSignature Language="C++ CLI" Value="Enable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -81,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventCommand</ReturnType>
       </ReturnValue>
+      <MemberValue>-2</MemberValue>
       <Docs>
         <summary>Enable the event.</summary>
       </Docs>
@@ -89,6 +100,9 @@
       <MemberSignature Language="C#" Value="SendManifest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventCommand SendManifest = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventCommand.SendManifest" />
+      <MemberSignature Language="VB.NET" Value="SendManifest" />
+      <MemberSignature Language="F#" Value="SendManifest = -1" Usage="System.Diagnostics.Tracing.EventCommand.SendManifest" />
+      <MemberSignature Language="C++ CLI" Value="SendManifest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -110,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventCommand</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>Send the manifest.</summary>
       </Docs>
@@ -118,6 +133,9 @@
       <MemberSignature Language="C#" Value="Update" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventCommand Update = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventCommand.Update" />
+      <MemberSignature Language="VB.NET" Value="Update" />
+      <MemberSignature Language="F#" Value="Update = 0" Usage="System.Diagnostics.Tracing.EventCommand.Update" />
+      <MemberSignature Language="C++ CLI" Value="Update" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -139,6 +157,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventCommand</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Update the event.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="FormsAuthenticationEventArgs" FullName="System.Web.Security.FormsAuthenticationEventArgs">
+﻿<Type Name="FormsAuthenticationEventArgs" FullName="System.Web.Security.FormsAuthenticationEventArgs">
   <TypeSignature Language="C#" Value="public sealed class FormsAuthenticationEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FormsAuthenticationEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.FormsAuthenticationEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormsAuthenticationEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type FormsAuthenticationEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FormsAuthenticationEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="public FormsAuthenticationEventArgs (System.Web.HttpContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.FormsAuthenticationEventArgs.#ctor(System.Web.HttpContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As HttpContext)" />
+      <MemberSignature Language="F#" Value="new System.Web.Security.FormsAuthenticationEventArgs : System.Web.HttpContext -&gt; System.Web.Security.FormsAuthenticationEventArgs" Usage="new System.Web.Security.FormsAuthenticationEventArgs context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FormsAuthenticationEventArgs(System::Web::HttpContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +73,9 @@
       <MemberSignature Language="C#" Value="public System.Web.HttpContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthenticationEventArgs.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.Security.FormsAuthenticationEventArgs.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +101,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Principal.IPrincipal User { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.IPrincipal User" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.FormsAuthenticationEventArgs.User" />
+      <MemberSignature Language="VB.NET" Value="Public Property User As IPrincipal" />
+      <MemberSignature Language="F#" Value="member this.User : System.Security.Principal.IPrincipal with get, set" Usage="System.Web.Security.FormsAuthenticationEventArgs.User" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IPrincipal ^ User { System::Security::Principal::IPrincipal ^ get(); void set(System::Security::Principal::IPrincipal ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

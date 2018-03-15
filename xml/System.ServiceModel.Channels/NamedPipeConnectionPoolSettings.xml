@@ -1,7 +1,10 @@
-<Type Name="NamedPipeConnectionPoolSettings" FullName="System.ServiceModel.Channels.NamedPipeConnectionPoolSettings">
+﻿<Type Name="NamedPipeConnectionPoolSettings" FullName="System.ServiceModel.Channels.NamedPipeConnectionPoolSettings">
   <TypeSignature Language="C#" Value="public sealed class NamedPipeConnectionPoolSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NamedPipeConnectionPoolSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NamedPipeConnectionPoolSettings" />
+  <TypeSignature Language="F#" Value="type NamedPipeConnectionPoolSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NamedPipeConnectionPoolSettings sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public string GroupName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string GroupName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings.GroupName" />
+      <MemberSignature Language="VB.NET" Value="Public Property GroupName As String" />
+      <MemberSignature Language="F#" Value="member this.GroupName : string with get, set" Usage="System.ServiceModel.Channels.NamedPipeConnectionPoolSettings.GroupName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GroupName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +51,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan IdleTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan IdleTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings.IdleTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property IdleTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.IdleTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Channels.NamedPipeConnectionPoolSettings.IdleTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan IdleTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -64,6 +73,9 @@
       <MemberSignature Language="C#" Value="public int MaxOutboundConnectionsPerEndpoint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxOutboundConnectionsPerEndpoint" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.NamedPipeConnectionPoolSettings.MaxOutboundConnectionsPerEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxOutboundConnectionsPerEndpoint As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxOutboundConnectionsPerEndpoint : int with get, set" Usage="System.ServiceModel.Channels.NamedPipeConnectionPoolSettings.MaxOutboundConnectionsPerEndpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxOutboundConnectionsPerEndpoint { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

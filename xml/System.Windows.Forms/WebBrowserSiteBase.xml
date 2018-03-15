@@ -1,7 +1,10 @@
-<Type Name="WebBrowserSiteBase" FullName="System.Windows.Forms.WebBrowserSiteBase">
+﻿<Type Name="WebBrowserSiteBase" FullName="System.Windows.Forms.WebBrowserSiteBase">
   <TypeSignature Language="C#" Value="public class WebBrowserSiteBase : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebBrowserSiteBase extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserSiteBase" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebBrowserSiteBase&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type WebBrowserSiteBase = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebBrowserSiteBase : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,11 +23,26 @@
     <forInternalUseOnly />
   </Docs>
   <Members>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Windows.Forms.WebBrowserSiteBase" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserSiteBase.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="webBrowserSiteBase.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +61,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.WebBrowserSiteBase.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="webBrowserSiteBase.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,14 +83,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Windows.Forms.WebBrowserSiteBase" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

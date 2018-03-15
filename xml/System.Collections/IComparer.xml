@@ -1,7 +1,10 @@
-<Type Name="IComparer" FullName="System.Collections.IComparer">
+﻿<Type Name="IComparer" FullName="System.Collections.IComparer">
   <TypeSignature Language="C#" Value="public interface IComparer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComparer" />
   <TypeSignature Language="DocId" Value="T:System.Collections.IComparer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComparer" />
+  <TypeSignature Language="F#" Value="type IComparer = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IComparer" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +60,9 @@
       <MemberSignature Language="C#" Value="public int Compare (object x, object y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Compare(object x, object y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.IComparer.Compare(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Compare (x As Object, y As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Compare : obj * obj -&gt; int" Usage="iComparer.Compare (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Compare(System::Object ^ x, System::Object ^ y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

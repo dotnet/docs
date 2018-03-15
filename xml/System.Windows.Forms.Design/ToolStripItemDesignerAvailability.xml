@@ -1,7 +1,10 @@
-<Type Name="ToolStripItemDesignerAvailability" FullName="System.Windows.Forms.Design.ToolStripItemDesignerAvailability">
+﻿<Type Name="ToolStripItemDesignerAvailability" FullName="System.Windows.Forms.Design.ToolStripItemDesignerAvailability">
   <TypeSignature Language="C#" Value="public enum ToolStripItemDesignerAvailability" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripItemDesignerAvailability extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ToolStripItemDesignerAvailability" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ToolStripItemDesignerAvailability" />
+  <TypeSignature Language="F#" Value="type ToolStripItemDesignerAvailability = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ToolStripItemDesignerAvailability" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.ToolStripItemDesignerAvailability All = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="F#" Value="All = 15" Usage="System.Windows.Forms.Design.ToolStripItemDesignerAvailability.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -31,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.ToolStripItemDesignerAvailability</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>Specifies that all controls are visible.</summary>
       </Docs>
@@ -39,6 +46,9 @@
       <MemberSignature Language="C#" Value="ContextMenuStrip" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.ToolStripItemDesignerAvailability ContextMenuStrip = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.ContextMenuStrip" />
+      <MemberSignature Language="VB.NET" Value="ContextMenuStrip" />
+      <MemberSignature Language="F#" Value="ContextMenuStrip = 4" Usage="System.Windows.Forms.Design.ToolStripItemDesignerAvailability.ContextMenuStrip" />
+      <MemberSignature Language="C++ CLI" Value="ContextMenuStrip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -47,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.ToolStripItemDesignerAvailability</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that <see cref="T:System.Windows.Forms.ContextMenuStrip" /> is visible.</summary>
       </Docs>
@@ -55,6 +66,9 @@
       <MemberSignature Language="C#" Value="MenuStrip" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.ToolStripItemDesignerAvailability MenuStrip = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.MenuStrip" />
+      <MemberSignature Language="VB.NET" Value="MenuStrip" />
+      <MemberSignature Language="F#" Value="MenuStrip = 2" Usage="System.Windows.Forms.Design.ToolStripItemDesignerAvailability.MenuStrip" />
+      <MemberSignature Language="C++ CLI" Value="MenuStrip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.ToolStripItemDesignerAvailability</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that <see cref="T:System.Windows.Forms.MenuStrip" /> is visible.</summary>
       </Docs>
@@ -71,6 +86,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.ToolStripItemDesignerAvailability None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.Design.ToolStripItemDesignerAvailability.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.ToolStripItemDesignerAvailability</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that no controls are visible.</summary>
       </Docs>
@@ -87,6 +106,9 @@
       <MemberSignature Language="C#" Value="StatusStrip" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.ToolStripItemDesignerAvailability StatusStrip = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.StatusStrip" />
+      <MemberSignature Language="VB.NET" Value="StatusStrip" />
+      <MemberSignature Language="F#" Value="StatusStrip = 8" Usage="System.Windows.Forms.Design.ToolStripItemDesignerAvailability.StatusStrip" />
+      <MemberSignature Language="C++ CLI" Value="StatusStrip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -95,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.ToolStripItemDesignerAvailability</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Specifies that <see cref="T:System.Windows.Forms.StatusStrip" /> is visible.</summary>
       </Docs>
@@ -103,6 +126,9 @@
       <MemberSignature Language="C#" Value="ToolStrip" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.ToolStripItemDesignerAvailability ToolStrip = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailability.ToolStrip" />
+      <MemberSignature Language="VB.NET" Value="ToolStrip" />
+      <MemberSignature Language="F#" Value="ToolStrip = 1" Usage="System.Windows.Forms.Design.ToolStripItemDesignerAvailability.ToolStrip" />
+      <MemberSignature Language="C++ CLI" Value="ToolStrip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -111,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.ToolStripItemDesignerAvailability</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that <see cref="T:System.Windows.Forms.ToolStrip" /> is visible.</summary>
       </Docs>

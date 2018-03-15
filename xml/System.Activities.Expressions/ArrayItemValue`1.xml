@@ -1,7 +1,10 @@
-<Type Name="ArrayItemValue&lt;TItem&gt;" FullName="System.Activities.Expressions.ArrayItemValue&lt;TItem&gt;">
+﻿<Type Name="ArrayItemValue&lt;TItem&gt;" FullName="System.Activities.Expressions.ArrayItemValue&lt;TItem&gt;">
   <TypeSignature Language="C#" Value="public sealed class ArrayItemValue&lt;TItem&gt; : System.Activities.CodeActivity&lt;TItem&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ArrayItemValue`1&lt;TItem&gt; extends System.Activities.CodeActivity`1&lt;!TItem&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Expressions.ArrayItemValue`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ArrayItemValue(Of TItem)&#xA;Inherits CodeActivity(Of TItem)" />
+  <TypeSignature Language="F#" Value="type ArrayItemValue&lt;'Item&gt; = class&#xA;    inherit CodeActivity&lt;'Item&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TItem&gt;&#xA;public ref class ArrayItemValue sealed : System::Activities::CodeActivity&lt;TItem&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public ArrayItemValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ArrayItemValue`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayItemValue();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;TItem[]&gt; Array { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;!TItem[]&gt; Array" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.ArrayItemValue`1.Array" />
+      <MemberSignature Language="VB.NET" Value="Public Property Array As InArgument(Of TItem())" />
+      <MemberSignature Language="F#" Value="member this.Array : System.Activities.InArgument&lt;'Item[]&gt; with get, set" Usage="System.Activities.Expressions.ArrayItemValue&lt;'Item&gt;.Array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;cli::array &lt;TItem&gt; ^&gt; ^ Array { System::Activities::InArgument&lt;cli::array &lt;TItem&gt; ^&gt; ^ get(); void set(System::Activities::InArgument&lt;cli::array &lt;TItem&gt; ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -67,6 +75,9 @@
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.CodeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ArrayItemValue`1.CacheMetadata(System.Activities.CodeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="arrayItemValue.CacheMetadata metadata" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -88,6 +99,9 @@
       <MemberSignature Language="C#" Value="protected override TItem Execute (System.Activities.CodeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance !TItem Execute(class System.Activities.CodeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Expressions.ArrayItemValue`1.Execute(System.Activities.CodeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (context As CodeActivityContext) As TItem" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; 'Item" Usage="arrayItemValue.Execute context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override TItem Execute(System::Activities::CodeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -110,6 +124,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;int&gt; Index { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;int32&gt; Index" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Expressions.ArrayItemValue`1.Index" />
+      <MemberSignature Language="VB.NET" Value="Public Property Index As InArgument(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Index : System.Activities.InArgument&lt;int&gt; with get, set" Usage="System.Activities.Expressions.ArrayItemValue&lt;'Item&gt;.Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;int&gt; ^ Index { System::Activities::InArgument&lt;int&gt; ^ get(); void set(System::Activities::InArgument&lt;int&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

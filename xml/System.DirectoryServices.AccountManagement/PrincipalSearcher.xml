@@ -1,7 +1,10 @@
-<Type Name="PrincipalSearcher" FullName="System.DirectoryServices.AccountManagement.PrincipalSearcher">
+﻿<Type Name="PrincipalSearcher" FullName="System.DirectoryServices.AccountManagement.PrincipalSearcher">
   <TypeSignature Language="C#" Value="public class PrincipalSearcher : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrincipalSearcher extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrincipalSearcher&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type PrincipalSearcher = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrincipalSearcher : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +31,23 @@
     <altmember cref="N:System.DirectoryServices.AccountManagement" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" /> class. The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> property must be set before the Principal searcher object can be used to perform a search.</summary>
+        <altmember cref="N:System.DirectoryServices.AccountManagement" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PrincipalSearcher ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalSearcher();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -54,6 +70,9 @@
       <MemberSignature Language="C#" Value="public PrincipalSearcher (System.DirectoryServices.AccountManagement.Principal queryFilter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.DirectoryServices.AccountManagement.Principal queryFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.#ctor(System.DirectoryServices.AccountManagement.Principal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (queryFilter As Principal)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.AccountManagement.PrincipalSearcher : System.DirectoryServices.AccountManagement.Principal -&gt; System.DirectoryServices.AccountManagement.PrincipalSearcher" Usage="new System.DirectoryServices.AccountManagement.PrincipalSearcher queryFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrincipalSearcher(System::DirectoryServices::AccountManagement::Principal ^ queryFilter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -82,6 +101,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.PrincipalContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.AccountManagement.PrincipalContext Context" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As PrincipalContext" />
+      <MemberSignature Language="F#" Value="member this.Context : System.DirectoryServices.AccountManagement.PrincipalContext" Usage="System.DirectoryServices.AccountManagement.PrincipalSearcher.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::AccountManagement::PrincipalContext ^ Context { System::DirectoryServices::AccountManagement::PrincipalContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -114,7 +136,13 @@
       <MemberSignature Language="C#" Value="public virtual void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="principalSearcher.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -139,6 +167,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt; FindAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.AccountManagement.PrincipalSearchResult`1&lt;class System.DirectoryServices.AccountManagement.Principal&gt; FindAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.FindAll" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindAll () As PrincipalSearchResult(Of Principal)" />
+      <MemberSignature Language="F#" Value="member this.FindAll : unit -&gt; System.DirectoryServices.AccountManagement.PrincipalSearchResult&lt;System.DirectoryServices.AccountManagement.Principal&gt;" Usage="principalSearcher.FindAll " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::AccountManagement::PrincipalSearchResult&lt;System::DirectoryServices::AccountManagement::Principal ^&gt; ^ FindAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -176,6 +207,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.Principal FindOne ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.DirectoryServices.AccountManagement.Principal FindOne() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.FindOne" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindOne () As Principal" />
+      <MemberSignature Language="F#" Value="member this.FindOne : unit -&gt; System.DirectoryServices.AccountManagement.Principal" Usage="principalSearcher.FindOne " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::DirectoryServices::AccountManagement::Principal ^ FindOne();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -215,6 +249,9 @@
       <MemberSignature Language="C#" Value="public object GetUnderlyingSearcher ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetUnderlyingSearcher() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.GetUnderlyingSearcher" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUnderlyingSearcher () As Object" />
+      <MemberSignature Language="F#" Value="member this.GetUnderlyingSearcher : unit -&gt; obj" Usage="principalSearcher.GetUnderlyingSearcher " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetUnderlyingSearcher();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -253,6 +290,9 @@
       <MemberSignature Language="C#" Value="public Type GetUnderlyingSearcherType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type GetUnderlyingSearcherType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.AccountManagement.PrincipalSearcher.GetUnderlyingSearcherType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUnderlyingSearcherType () As Type" />
+      <MemberSignature Language="F#" Value="member this.GetUnderlyingSearcherType : unit -&gt; Type" Usage="principalSearcher.GetUnderlyingSearcherType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetUnderlyingSearcherType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -280,6 +320,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.AccountManagement.Principal QueryFilter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.AccountManagement.Principal QueryFilter" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property QueryFilter As Principal" />
+      <MemberSignature Language="F#" Value="member this.QueryFilter : System.DirectoryServices.AccountManagement.Principal with get, set" Usage="System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::AccountManagement::Principal ^ QueryFilter { System::DirectoryServices::AccountManagement::Principal ^ get(); void set(System::DirectoryServices::AccountManagement::Principal ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
@@ -314,16 +357,5 @@
         <altmember cref="N:System.DirectoryServices.AccountManagement" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.AccountManagement</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.DirectoryServices.AccountManagement.PrincipalSearcher" /> class. The <see cref="P:System.DirectoryServices.AccountManagement.PrincipalSearcher.QueryFilter" /> property must be set before the Principal searcher object can be used to perform a search.</summary>
-        <altmember cref="N:System.DirectoryServices.AccountManagement" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

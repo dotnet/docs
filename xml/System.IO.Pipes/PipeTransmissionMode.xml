@@ -1,7 +1,10 @@
-<Type Name="PipeTransmissionMode" FullName="System.IO.Pipes.PipeTransmissionMode">
+﻿<Type Name="PipeTransmissionMode" FullName="System.IO.Pipes.PipeTransmissionMode">
   <TypeSignature Language="C#" Value="public enum PipeTransmissionMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PipeTransmissionMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Pipes.PipeTransmissionMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PipeTransmissionMode" />
+  <TypeSignature Language="F#" Value="type PipeTransmissionMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PipeTransmissionMode" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="Byte" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Pipes.PipeTransmissionMode Byte = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeTransmissionMode.Byte" />
+      <MemberSignature Language="VB.NET" Value="Byte" />
+      <MemberSignature Language="F#" Value="Byte = 0" Usage="System.IO.Pipes.PipeTransmissionMode.Byte" />
+      <MemberSignature Language="C++ CLI" Value="Byte" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -53,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeTransmissionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that data in the pipe is transmitted and read as a stream of bytes.</summary>
       </Docs>
@@ -61,6 +68,9 @@
       <MemberSignature Language="C#" Value="Message" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Pipes.PipeTransmissionMode Message = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Pipes.PipeTransmissionMode.Message" />
+      <MemberSignature Language="VB.NET" Value="Message" />
+      <MemberSignature Language="F#" Value="Message = 1" Usage="System.IO.Pipes.PipeTransmissionMode.Message" />
+      <MemberSignature Language="C++ CLI" Value="Message" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
@@ -79,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Pipes.PipeTransmissionMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that data in the pipe is transmitted and read as a stream of messages.</summary>
       </Docs>

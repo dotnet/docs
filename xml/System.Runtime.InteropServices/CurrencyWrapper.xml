@@ -1,7 +1,10 @@
-<Type Name="CurrencyWrapper" FullName="System.Runtime.InteropServices.CurrencyWrapper">
+﻿<Type Name="CurrencyWrapper" FullName="System.Runtime.InteropServices.CurrencyWrapper">
   <TypeSignature Language="C#" Value="public sealed class CurrencyWrapper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit CurrencyWrapper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CurrencyWrapper" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CurrencyWrapper" />
+  <TypeSignature Language="F#" Value="type CurrencyWrapper = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CurrencyWrapper sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,10 +44,27 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.CurrencyWrapper" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CurrencyWrapper (decimal obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Decimal obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CurrencyWrapper.#ctor(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (obj As Decimal)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.CurrencyWrapper : decimal -&gt; System.Runtime.InteropServices.CurrencyWrapper" Usage="new System.Runtime.InteropServices.CurrencyWrapper obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CurrencyWrapper(System::Decimal obj);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -77,6 +97,9 @@
       <MemberSignature Language="C#" Value="public CurrencyWrapper (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CurrencyWrapper.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (obj As Object)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.CurrencyWrapper : obj -&gt; System.Runtime.InteropServices.CurrencyWrapper" Usage="new System.Runtime.InteropServices.CurrencyWrapper obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CurrencyWrapper(System::Object ^ obj);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -110,6 +133,9 @@
       <MemberSignature Language="C#" Value="public decimal WrappedObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Decimal WrappedObject" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.CurrencyWrapper.WrappedObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WrappedObject As Decimal" />
+      <MemberSignature Language="F#" Value="member this.WrappedObject : decimal" Usage="System.Runtime.InteropServices.CurrencyWrapper.WrappedObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal WrappedObject { System::Decimal get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -138,19 +164,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.InteropServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.InteropServices.CurrencyWrapper" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

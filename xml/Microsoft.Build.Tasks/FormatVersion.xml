@@ -1,7 +1,10 @@
-<Type Name="FormatVersion" FullName="Microsoft.Build.Tasks.FormatVersion">
+﻿<Type Name="FormatVersion" FullName="Microsoft.Build.Tasks.FormatVersion">
   <TypeSignature Language="C#" Value="public sealed class FormatVersion : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FormatVersion extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.FormatVersion" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormatVersion&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="F#" Value="type FormatVersion = class&#xA;    inherit TaskExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FormatVersion sealed : Microsoft::Build::Tasks::TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public FormatVersion ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.FormatVersion.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FormatVersion();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -36,6 +41,9 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.FormatVersion.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="formatVersion.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -57,6 +65,9 @@
       <MemberSignature Language="C#" Value="public string FormatType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FormatType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.FormatVersion.FormatType" />
+      <MemberSignature Language="VB.NET" Value="Public Property FormatType As String" />
+      <MemberSignature Language="F#" Value="member this.FormatType : string with get, set" Usage="Microsoft.Build.Tasks.FormatVersion.FormatType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FormatType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -83,6 +94,9 @@
       <MemberSignature Language="C#" Value="public string OutputVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OutputVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.FormatVersion.OutputVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputVersion As String" />
+      <MemberSignature Language="F#" Value="member this.OutputVersion : string with get, set" Usage="Microsoft.Build.Tasks.FormatVersion.OutputVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OutputVersion { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -107,6 +121,9 @@
       <MemberSignature Language="C#" Value="public int Revision { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Revision" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.FormatVersion.Revision" />
+      <MemberSignature Language="VB.NET" Value="Public Property Revision As Integer" />
+      <MemberSignature Language="F#" Value="member this.Revision : int with get, set" Usage="Microsoft.Build.Tasks.FormatVersion.Revision" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Revision { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -126,6 +143,9 @@
       <MemberSignature Language="C#" Value="public string Version { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Version" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.FormatVersion.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
+      <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="Microsoft.Build.Tasks.FormatVersion.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

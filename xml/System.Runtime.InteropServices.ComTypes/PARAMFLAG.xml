@@ -1,7 +1,10 @@
-<Type Name="PARAMFLAG" FullName="System.Runtime.InteropServices.ComTypes.PARAMFLAG">
+﻿<Type Name="PARAMFLAG" FullName="System.Runtime.InteropServices.ComTypes.PARAMFLAG">
   <TypeSignature Language="C#" Value="public enum PARAMFLAG" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PARAMFLAG extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.PARAMFLAG" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PARAMFLAG" />
+  <TypeSignature Language="F#" Value="type PARAMFLAG = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PARAMFLAG" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_FHASCUSTDATA" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.PARAMFLAG PARAMFLAG_FHASCUSTDATA = int16(64)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FHASCUSTDATA" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_FHASCUSTDATA" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_FHASCUSTDATA = 64" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FHASCUSTDATA" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FHASCUSTDATA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -66,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The parameter has custom data.</summary>
       </Docs>
@@ -74,6 +81,9 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_FHASDEFAULT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.PARAMFLAG PARAMFLAG_FHASDEFAULT = int16(32)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FHASDEFAULT" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_FHASDEFAULT" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_FHASDEFAULT = 32" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FHASDEFAULT" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FHASDEFAULT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -96,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The parameter has default behaviors defined.</summary>
       </Docs>
@@ -104,6 +115,9 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_FIN" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.PARAMFLAG PARAMFLAG_FIN = int16(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FIN" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_FIN" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_FIN = 1" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FIN" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FIN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -126,6 +140,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The parameter passes information from the caller to the callee.</summary>
       </Docs>
@@ -134,6 +149,9 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_FLCID" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.PARAMFLAG PARAMFLAG_FLCID = int16(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FLCID" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_FLCID" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_FLCID = 4" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FLCID" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FLCID" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -156,6 +174,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The parameter is the local identifier of a client application.</summary>
       </Docs>
@@ -164,6 +183,9 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_FOPT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.PARAMFLAG PARAMFLAG_FOPT = int16(16)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FOPT" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_FOPT" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_FOPT = 16" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FOPT" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FOPT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -186,6 +208,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The parameter is optional.</summary>
       </Docs>
@@ -194,6 +217,9 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_FOUT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.PARAMFLAG PARAMFLAG_FOUT = int16(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FOUT" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_FOUT" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_FOUT = 2" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FOUT" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FOUT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -216,6 +242,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The parameter returns information from the callee to the caller.</summary>
       </Docs>
@@ -224,6 +251,9 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_FRETVAL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.PARAMFLAG PARAMFLAG_FRETVAL = int16(8)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FRETVAL" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_FRETVAL" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_FRETVAL = 8" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_FRETVAL" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_FRETVAL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -246,6 +276,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The parameter is the return value of the member.</summary>
       </Docs>
@@ -254,6 +285,9 @@
       <MemberSignature Language="C#" Value="PARAMFLAG_NONE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.PARAMFLAG PARAMFLAG_NONE = int16(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_NONE" />
+      <MemberSignature Language="VB.NET" Value="PARAMFLAG_NONE" />
+      <MemberSignature Language="F#" Value="PARAMFLAG_NONE = 0" Usage="System.Runtime.InteropServices.ComTypes.PARAMFLAG.PARAMFLAG_NONE" />
+      <MemberSignature Language="C++ CLI" Value="PARAMFLAG_NONE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -276,6 +310,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.PARAMFLAG</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Does not specify whether the parameter passes or receives information.</summary>
       </Docs>

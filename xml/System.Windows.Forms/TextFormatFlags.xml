@@ -1,7 +1,10 @@
-<Type Name="TextFormatFlags" FullName="System.Windows.Forms.TextFormatFlags">
+﻿<Type Name="TextFormatFlags" FullName="System.Windows.Forms.TextFormatFlags">
   <TypeSignature Language="C#" Value="public enum TextFormatFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextFormatFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TextFormatFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TextFormatFlags" />
+  <TypeSignature Language="F#" Value="type TextFormatFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TextFormatFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="Bottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags Bottom = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 8" Usage="System.Windows.Forms.TextFormatFlags.Bottom" />
+      <MemberSignature Language="C++ CLI" Value="Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Aligns the text on the bottom of the bounding rectangle. Applied only when the text is a single line.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Windows.Forms.TextFormatFlags.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Applies the default formatting, which is left-aligned.</summary>
       </Docs>
@@ -70,6 +81,9 @@
       <MemberSignature Language="C#" Value="EndEllipsis" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags EndEllipsis = int32(32768)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.EndEllipsis" />
+      <MemberSignature Language="VB.NET" Value="EndEllipsis" />
+      <MemberSignature Language="F#" Value="EndEllipsis = 32768" Usage="System.Windows.Forms.TextFormatFlags.EndEllipsis" />
+      <MemberSignature Language="C++ CLI" Value="EndEllipsis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>32768</MemberValue>
       <Docs>
         <summary>Removes the end of trimmed lines, and replaces them with an ellipsis.</summary>
       </Docs>
@@ -86,6 +101,9 @@
       <MemberSignature Language="C#" Value="ExpandTabs" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags ExpandTabs = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.ExpandTabs" />
+      <MemberSignature Language="VB.NET" Value="ExpandTabs" />
+      <MemberSignature Language="F#" Value="ExpandTabs = 64" Usage="System.Windows.Forms.TextFormatFlags.ExpandTabs" />
+      <MemberSignature Language="C++ CLI" Value="ExpandTabs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Expands tab characters. The default number of characters per tab is eight. The <see cref="F:System.Windows.Forms.TextFormatFlags.WordEllipsis" />, <see cref="F:System.Windows.Forms.TextFormatFlags.PathEllipsis" />, and <see cref="F:System.Windows.Forms.TextFormatFlags.EndEllipsis" /> values cannot be used with <see cref="F:System.Windows.Forms.TextFormatFlags.ExpandTabs" />.</summary>
       </Docs>
@@ -102,6 +121,9 @@
       <MemberSignature Language="C#" Value="ExternalLeading" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags ExternalLeading = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.ExternalLeading" />
+      <MemberSignature Language="VB.NET" Value="ExternalLeading" />
+      <MemberSignature Language="F#" Value="ExternalLeading = 512" Usage="System.Windows.Forms.TextFormatFlags.ExternalLeading" />
+      <MemberSignature Language="C++ CLI" Value="ExternalLeading" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -110,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>Includes the font external leading in line height. Typically, external leading is not included in the height of a line of text.</summary>
       </Docs>
@@ -118,6 +141,9 @@
       <MemberSignature Language="C#" Value="GlyphOverhangPadding" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags GlyphOverhangPadding = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.GlyphOverhangPadding" />
+      <MemberSignature Language="VB.NET" Value="GlyphOverhangPadding" />
+      <MemberSignature Language="F#" Value="GlyphOverhangPadding = 0" Usage="System.Windows.Forms.TextFormatFlags.GlyphOverhangPadding" />
+      <MemberSignature Language="C++ CLI" Value="GlyphOverhangPadding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -126,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Adds padding to the bounding rectangle to accommodate overhanging glyphs.</summary>
       </Docs>
@@ -134,6 +161,9 @@
       <MemberSignature Language="C#" Value="HidePrefix" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags HidePrefix = int32(1048576)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.HidePrefix" />
+      <MemberSignature Language="VB.NET" Value="HidePrefix" />
+      <MemberSignature Language="F#" Value="HidePrefix = 1048576" Usage="System.Windows.Forms.TextFormatFlags.HidePrefix" />
+      <MemberSignature Language="C++ CLI" Value="HidePrefix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -142,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1048576</MemberValue>
       <Docs>
         <summary>Applies to Windows 2000 and Windows XP only:</summary>
         <remarks>
@@ -160,6 +191,9 @@
       <MemberSignature Language="C#" Value="HorizontalCenter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags HorizontalCenter = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.HorizontalCenter" />
+      <MemberSignature Language="VB.NET" Value="HorizontalCenter" />
+      <MemberSignature Language="F#" Value="HorizontalCenter = 1" Usage="System.Windows.Forms.TextFormatFlags.HorizontalCenter" />
+      <MemberSignature Language="C++ CLI" Value="HorizontalCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +202,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Centers the text horizontally within the bounding rectangle.</summary>
       </Docs>
@@ -176,6 +211,9 @@
       <MemberSignature Language="C#" Value="Internal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags Internal = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Internal" />
+      <MemberSignature Language="VB.NET" Value="Internal" />
+      <MemberSignature Language="F#" Value="Internal = 4096" Usage="System.Windows.Forms.TextFormatFlags.Internal" />
+      <MemberSignature Language="C++ CLI" Value="Internal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -184,6 +222,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>Uses the system font to calculate text metrics.</summary>
       </Docs>
@@ -192,6 +231,9 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags Left = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 0" Usage="System.Windows.Forms.TextFormatFlags.Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -200,6 +242,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Aligns the text on the left side of the clipping area.</summary>
       </Docs>
@@ -208,6 +251,9 @@
       <MemberSignature Language="C#" Value="LeftAndRightPadding" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags LeftAndRightPadding = int32(536870912)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.LeftAndRightPadding" />
+      <MemberSignature Language="VB.NET" Value="LeftAndRightPadding" />
+      <MemberSignature Language="F#" Value="LeftAndRightPadding = 536870912" Usage="System.Windows.Forms.TextFormatFlags.LeftAndRightPadding" />
+      <MemberSignature Language="C++ CLI" Value="LeftAndRightPadding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -216,6 +262,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>536870912</MemberValue>
       <Docs>
         <summary>Adds padding to both sides of the bounding rectangle.</summary>
       </Docs>
@@ -224,6 +271,9 @@
       <MemberSignature Language="C#" Value="ModifyString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags ModifyString = int32(65536)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.ModifyString" />
+      <MemberSignature Language="VB.NET" Value="ModifyString" />
+      <MemberSignature Language="F#" Value="ModifyString = 65536" Usage="System.Windows.Forms.TextFormatFlags.ModifyString" />
+      <MemberSignature Language="C++ CLI" Value="ModifyString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -232,6 +282,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>65536</MemberValue>
       <Docs>
         <summary>Has no effect on the drawn text.</summary>
       </Docs>
@@ -240,6 +291,9 @@
       <MemberSignature Language="C#" Value="NoClipping" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags NoClipping = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.NoClipping" />
+      <MemberSignature Language="VB.NET" Value="NoClipping" />
+      <MemberSignature Language="F#" Value="NoClipping = 256" Usage="System.Windows.Forms.TextFormatFlags.NoClipping" />
+      <MemberSignature Language="C++ CLI" Value="NoClipping" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -248,6 +302,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Allows the overhanging parts of glyphs and unwrapped text reaching outside the formatting rectangle to show.</summary>
       </Docs>
@@ -256,6 +311,9 @@
       <MemberSignature Language="C#" Value="NoFullWidthCharacterBreak" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags NoFullWidthCharacterBreak = int32(524288)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.NoFullWidthCharacterBreak" />
+      <MemberSignature Language="VB.NET" Value="NoFullWidthCharacterBreak" />
+      <MemberSignature Language="F#" Value="NoFullWidthCharacterBreak = 524288" Usage="System.Windows.Forms.TextFormatFlags.NoFullWidthCharacterBreak" />
+      <MemberSignature Language="C++ CLI" Value="NoFullWidthCharacterBreak" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -264,6 +322,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>524288</MemberValue>
       <Docs>
         <summary>Applies to Windows 98, Windows Me, Windows 2000, or Windows XP only:</summary>
         <remarks>
@@ -280,6 +339,9 @@
       <MemberSignature Language="C#" Value="NoPadding" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags NoPadding = int32(268435456)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.NoPadding" />
+      <MemberSignature Language="VB.NET" Value="NoPadding" />
+      <MemberSignature Language="F#" Value="NoPadding = 268435456" Usage="System.Windows.Forms.TextFormatFlags.NoPadding" />
+      <MemberSignature Language="C++ CLI" Value="NoPadding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -288,6 +350,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>268435456</MemberValue>
       <Docs>
         <summary>Does not add padding to the bounding rectangle.</summary>
       </Docs>
@@ -296,6 +359,9 @@
       <MemberSignature Language="C#" Value="NoPrefix" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags NoPrefix = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.NoPrefix" />
+      <MemberSignature Language="VB.NET" Value="NoPrefix" />
+      <MemberSignature Language="F#" Value="NoPrefix = 2048" Usage="System.Windows.Forms.TextFormatFlags.NoPrefix" />
+      <MemberSignature Language="C++ CLI" Value="NoPrefix" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -304,6 +370,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>Turns off processing of prefix characters. Typically, the ampersand (&amp;) mnemonic-prefix character is interpreted as a directive to underscore the character that follows, and the double-ampersand (&amp;&amp;) mnemonic-prefix characters as a directive to print a single ampersand. By specifying <see cref="F:System.Windows.Forms.TextFormatFlags.NoPrefix" />, this processing is turned off. For example, an input string of "A&amp;bc&amp;&amp;d" with <see cref="F:System.Windows.Forms.TextFormatFlags.NoPrefix" /> applied would result in output of "A&amp;bc&amp;&amp;d".</summary>
         <remarks>
@@ -320,6 +387,9 @@
       <MemberSignature Language="C#" Value="PathEllipsis" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags PathEllipsis = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.PathEllipsis" />
+      <MemberSignature Language="VB.NET" Value="PathEllipsis" />
+      <MemberSignature Language="F#" Value="PathEllipsis = 16384" Usage="System.Windows.Forms.TextFormatFlags.PathEllipsis" />
+      <MemberSignature Language="C++ CLI" Value="PathEllipsis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -328,6 +398,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>Removes the center of trimmed lines and replaces it with an ellipsis.</summary>
       </Docs>
@@ -336,6 +407,9 @@
       <MemberSignature Language="C#" Value="PrefixOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags PrefixOnly = int32(2097152)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.PrefixOnly" />
+      <MemberSignature Language="VB.NET" Value="PrefixOnly" />
+      <MemberSignature Language="F#" Value="PrefixOnly = 2097152" Usage="System.Windows.Forms.TextFormatFlags.PrefixOnly" />
+      <MemberSignature Language="C++ CLI" Value="PrefixOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -344,6 +418,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2097152</MemberValue>
       <Docs>
         <summary>Applies to Windows 2000 or Windows XP only:</summary>
         <remarks>
@@ -362,6 +437,9 @@
       <MemberSignature Language="C#" Value="PreserveGraphicsClipping" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags PreserveGraphicsClipping = int32(16777216)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.PreserveGraphicsClipping" />
+      <MemberSignature Language="VB.NET" Value="PreserveGraphicsClipping" />
+      <MemberSignature Language="F#" Value="PreserveGraphicsClipping = 16777216" Usage="System.Windows.Forms.TextFormatFlags.PreserveGraphicsClipping" />
+      <MemberSignature Language="C++ CLI" Value="PreserveGraphicsClipping" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -370,6 +448,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16777216</MemberValue>
       <Docs>
         <summary>Preserves the clipping specified by a <see cref="T:System.Drawing.Graphics" /> object. Applies only to methods receiving an <see cref="T:System.Drawing.IDeviceContext" /> that is a <see cref="T:System.Drawing.Graphics" />.</summary>
       </Docs>
@@ -378,6 +457,9 @@
       <MemberSignature Language="C#" Value="PreserveGraphicsTranslateTransform" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags PreserveGraphicsTranslateTransform = int32(33554432)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.PreserveGraphicsTranslateTransform" />
+      <MemberSignature Language="VB.NET" Value="PreserveGraphicsTranslateTransform" />
+      <MemberSignature Language="F#" Value="PreserveGraphicsTranslateTransform = 33554432" Usage="System.Windows.Forms.TextFormatFlags.PreserveGraphicsTranslateTransform" />
+      <MemberSignature Language="C++ CLI" Value="PreserveGraphicsTranslateTransform" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -386,6 +468,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>33554432</MemberValue>
       <Docs>
         <summary>Preserves the transformation specified by a <see cref="T:System.Drawing.Graphics" />. Applies only to methods receiving an <see cref="T:System.Drawing.IDeviceContext" /> that is a <see cref="T:System.Drawing.Graphics" />.</summary>
       </Docs>
@@ -394,6 +477,9 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags Right = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 2" Usage="System.Windows.Forms.TextFormatFlags.Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -402,6 +488,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Aligns the text on the right side of the clipping area.</summary>
       </Docs>
@@ -410,6 +497,9 @@
       <MemberSignature Language="C#" Value="RightToLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags RightToLeft = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.RightToLeft" />
+      <MemberSignature Language="VB.NET" Value="RightToLeft" />
+      <MemberSignature Language="F#" Value="RightToLeft = 131072" Usage="System.Windows.Forms.TextFormatFlags.RightToLeft" />
+      <MemberSignature Language="C++ CLI" Value="RightToLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -418,6 +508,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>Displays the text from right to left.</summary>
       </Docs>
@@ -426,6 +517,9 @@
       <MemberSignature Language="C#" Value="SingleLine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags SingleLine = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.SingleLine" />
+      <MemberSignature Language="VB.NET" Value="SingleLine" />
+      <MemberSignature Language="F#" Value="SingleLine = 32" Usage="System.Windows.Forms.TextFormatFlags.SingleLine" />
+      <MemberSignature Language="C++ CLI" Value="SingleLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -434,6 +528,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Displays the text in a single line.</summary>
       </Docs>
@@ -442,6 +537,9 @@
       <MemberSignature Language="C#" Value="TextBoxControl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags TextBoxControl = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.TextBoxControl" />
+      <MemberSignature Language="VB.NET" Value="TextBoxControl" />
+      <MemberSignature Language="F#" Value="TextBoxControl = 8192" Usage="System.Windows.Forms.TextFormatFlags.TextBoxControl" />
+      <MemberSignature Language="C++ CLI" Value="TextBoxControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -450,6 +548,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>Specifies the text should be formatted for display on a <see cref="T:System.Windows.Forms.TextBox" /> control.</summary>
       </Docs>
@@ -458,6 +557,9 @@
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags Top = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.Top" />
+      <MemberSignature Language="VB.NET" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 0" Usage="System.Windows.Forms.TextFormatFlags.Top" />
+      <MemberSignature Language="C++ CLI" Value="Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -466,6 +568,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Aligns the text on the top of the bounding rectangle.</summary>
       </Docs>
@@ -474,6 +577,9 @@
       <MemberSignature Language="C#" Value="VerticalCenter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags VerticalCenter = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.VerticalCenter" />
+      <MemberSignature Language="VB.NET" Value="VerticalCenter" />
+      <MemberSignature Language="F#" Value="VerticalCenter = 4" Usage="System.Windows.Forms.TextFormatFlags.VerticalCenter" />
+      <MemberSignature Language="C++ CLI" Value="VerticalCenter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -482,6 +588,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Centers the text vertically, within the bounding rectangle.</summary>
       </Docs>
@@ -490,6 +597,9 @@
       <MemberSignature Language="C#" Value="WordBreak" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags WordBreak = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.WordBreak" />
+      <MemberSignature Language="VB.NET" Value="WordBreak" />
+      <MemberSignature Language="F#" Value="WordBreak = 16" Usage="System.Windows.Forms.TextFormatFlags.WordBreak" />
+      <MemberSignature Language="C++ CLI" Value="WordBreak" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -498,6 +608,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Breaks the text at the end of a word.</summary>
       </Docs>
@@ -506,6 +617,9 @@
       <MemberSignature Language="C#" Value="WordEllipsis" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.TextFormatFlags WordEllipsis = int32(262144)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.TextFormatFlags.WordEllipsis" />
+      <MemberSignature Language="VB.NET" Value="WordEllipsis" />
+      <MemberSignature Language="F#" Value="WordEllipsis = 262144" Usage="System.Windows.Forms.TextFormatFlags.WordEllipsis" />
+      <MemberSignature Language="C++ CLI" Value="WordEllipsis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -514,6 +628,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>262144</MemberValue>
       <Docs>
         <summary>Trims the line to the nearest word and an ellipsis is placed at the end of a trimmed line.</summary>
       </Docs>

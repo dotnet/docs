@@ -1,7 +1,10 @@
-<Type Name="ErrorResponseCategory" FullName="System.DirectoryServices.Protocols.ErrorResponseCategory">
+﻿<Type Name="ErrorResponseCategory" FullName="System.DirectoryServices.Protocols.ErrorResponseCategory">
   <TypeSignature Language="C#" Value="public enum ErrorResponseCategory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ErrorResponseCategory extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.ErrorResponseCategory" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ErrorResponseCategory" />
+  <TypeSignature Language="F#" Value="type ErrorResponseCategory = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ErrorResponseCategory" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="AuthenticationFailed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ErrorResponseCategory AuthenticationFailed = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.AuthenticationFailed" />
+      <MemberSignature Language="VB.NET" Value="AuthenticationFailed" />
+      <MemberSignature Language="F#" Value="AuthenticationFailed = 5" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.AuthenticationFailed" />
+      <MemberSignature Language="C++ CLI" Value="AuthenticationFailed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Authentication failed. The value is equal to 5.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="ConnectionClosed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ErrorResponseCategory ConnectionClosed = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.ConnectionClosed" />
+      <MemberSignature Language="VB.NET" Value="ConnectionClosed" />
+      <MemberSignature Language="F#" Value="ConnectionClosed = 2" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.ConnectionClosed" />
+      <MemberSignature Language="C++ CLI" Value="ConnectionClosed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The DSML provider connected to a server, but the server closed the connection without responding to the request. The value is equal to 2.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="CouldNotConnect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ErrorResponseCategory CouldNotConnect = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.CouldNotConnect" />
+      <MemberSignature Language="VB.NET" Value="CouldNotConnect" />
+      <MemberSignature Language="F#" Value="CouldNotConnect = 1" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.CouldNotConnect" />
+      <MemberSignature Language="C++ CLI" Value="CouldNotConnect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The DSML provider was unable to connect to a server. The value is equal to 1.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="GatewayInternalError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ErrorResponseCategory GatewayInternalError = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.GatewayInternalError" />
+      <MemberSignature Language="VB.NET" Value="GatewayInternalError" />
+      <MemberSignature Language="F#" Value="GatewayInternalError = 4" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.GatewayInternalError" />
+      <MemberSignature Language="C++ CLI" Value="GatewayInternalError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>There is an internal gateway error. The value is equal to 4.</summary>
       </Docs>
@@ -82,6 +101,9 @@
       <MemberSignature Language="C#" Value="MalformedRequest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ErrorResponseCategory MalformedRequest = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.MalformedRequest" />
+      <MemberSignature Language="VB.NET" Value="MalformedRequest" />
+      <MemberSignature Language="F#" Value="MalformedRequest = 3" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.MalformedRequest" />
+      <MemberSignature Language="C++ CLI" Value="MalformedRequest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -90,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The client failed to specify a request ID for each request. The value is equal to 3.</summary>
       </Docs>
@@ -98,6 +121,9 @@
       <MemberSignature Language="C#" Value="NotAttempted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ErrorResponseCategory NotAttempted = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.NotAttempted" />
+      <MemberSignature Language="VB.NET" Value="NotAttempted" />
+      <MemberSignature Language="F#" Value="NotAttempted = 0" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.NotAttempted" />
+      <MemberSignature Language="C++ CLI" Value="NotAttempted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -106,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The DSML provider did not attempt to execute a request element. The value is equal to 0.</summary>
       </Docs>
@@ -114,6 +141,9 @@
       <MemberSignature Language="C#" Value="Other" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ErrorResponseCategory Other = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.Other" />
+      <MemberSignature Language="VB.NET" Value="Other" />
+      <MemberSignature Language="F#" Value="Other = 7" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.Other" />
+      <MemberSignature Language="C++ CLI" Value="Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -122,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>An unknown error occurred. The value is equal to 7.</summary>
       </Docs>
@@ -130,6 +161,9 @@
       <MemberSignature Language="C#" Value="UnresolvableUri" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.ErrorResponseCategory UnresolvableUri = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.ErrorResponseCategory.UnresolvableUri" />
+      <MemberSignature Language="VB.NET" Value="UnresolvableUri" />
+      <MemberSignature Language="F#" Value="UnresolvableUri = 6" Usage="System.DirectoryServices.Protocols.ErrorResponseCategory.UnresolvableUri" />
+      <MemberSignature Language="C++ CLI" Value="UnresolvableUri" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -138,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.ErrorResponseCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The client provider is unable to resolve the URI to a value that can transferred to the server. The value is equal to 6.</summary>
       </Docs>

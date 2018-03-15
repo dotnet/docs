@@ -1,7 +1,10 @@
-<Type Name="RibbonQuickAccessToolBarPanel" FullName="System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel">
+﻿<Type Name="RibbonQuickAccessToolBarPanel" FullName="System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel">
   <TypeSignature Language="C#" Value="public class RibbonQuickAccessToolBarPanel : System.Windows.Controls.VirtualizingPanel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonQuickAccessToolBarPanel extends System.Windows.Controls.VirtualizingPanel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonQuickAccessToolBarPanel&#xA;Inherits VirtualizingPanel" />
+  <TypeSignature Language="F#" Value="type RibbonQuickAccessToolBarPanel = class&#xA;    inherit VirtualizingPanel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonQuickAccessToolBarPanel : System::Windows::Controls::VirtualizingPanel" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public RibbonQuickAccessToolBarPanel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonQuickAccessToolBarPanel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size finalSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size finalSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (finalSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="ribbonQuickAccessToolBarPanel.ArrangeOverride finalSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size finalSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -63,6 +71,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size availableSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size availableSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="ribbonQuickAccessToolBarPanel.MeasureOverride availableSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -85,6 +96,9 @@
       <MemberSignature Language="C#" Value="protected override void OnItemsChanged (object sender, System.Windows.Controls.Primitives.ItemsChangedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnItemsChanged(object sender, class System.Windows.Controls.Primitives.ItemsChangedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.RibbonQuickAccessToolBarPanel.OnItemsChanged(System.Object,System.Windows.Controls.Primitives.ItemsChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnItemsChanged (sender As Object, args As ItemsChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnItemsChanged : obj * System.Windows.Controls.Primitives.ItemsChangedEventArgs -&gt; unit" Usage="ribbonQuickAccessToolBarPanel.OnItemsChanged (sender, args)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnItemsChanged(System::Object ^ sender, System::Windows::Controls::Primitives::ItemsChangedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

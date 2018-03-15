@@ -1,7 +1,10 @@
-<Type Name="FormStartPosition" FullName="System.Windows.Forms.FormStartPosition">
+﻿<Type Name="FormStartPosition" FullName="System.Windows.Forms.FormStartPosition">
   <TypeSignature Language="C#" Value="public enum FormStartPosition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormStartPosition extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormStartPosition" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FormStartPosition" />
+  <TypeSignature Language="F#" Value="type FormStartPosition = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FormStartPosition" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +43,9 @@
       <MemberSignature Language="C#" Value="CenterParent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormStartPosition CenterParent = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormStartPosition.CenterParent" />
+      <MemberSignature Language="VB.NET" Value="CenterParent" />
+      <MemberSignature Language="F#" Value="CenterParent = 4" Usage="System.Windows.Forms.FormStartPosition.CenterParent" />
+      <MemberSignature Language="C++ CLI" Value="CenterParent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -48,6 +54,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The form is centered within the bounds of its parent form.</summary>
       </Docs>
@@ -56,6 +63,9 @@
       <MemberSignature Language="C#" Value="CenterScreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormStartPosition CenterScreen = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormStartPosition.CenterScreen" />
+      <MemberSignature Language="VB.NET" Value="CenterScreen" />
+      <MemberSignature Language="F#" Value="CenterScreen = 1" Usage="System.Windows.Forms.FormStartPosition.CenterScreen" />
+      <MemberSignature Language="C++ CLI" Value="CenterScreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +74,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The form is centered on the current display, and has the dimensions specified in the form's size.</summary>
       </Docs>
@@ -72,6 +83,9 @@
       <MemberSignature Language="C#" Value="Manual" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormStartPosition Manual = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormStartPosition.Manual" />
+      <MemberSignature Language="VB.NET" Value="Manual" />
+      <MemberSignature Language="F#" Value="Manual = 0" Usage="System.Windows.Forms.FormStartPosition.Manual" />
+      <MemberSignature Language="C++ CLI" Value="Manual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -80,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The position of the form is determined by the <see cref="P:System.Windows.Forms.Control.Location" /> property.</summary>
       </Docs>
@@ -88,6 +103,9 @@
       <MemberSignature Language="C#" Value="WindowsDefaultBounds" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormStartPosition WindowsDefaultBounds = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormStartPosition.WindowsDefaultBounds" />
+      <MemberSignature Language="VB.NET" Value="WindowsDefaultBounds" />
+      <MemberSignature Language="F#" Value="WindowsDefaultBounds = 3" Usage="System.Windows.Forms.FormStartPosition.WindowsDefaultBounds" />
+      <MemberSignature Language="C++ CLI" Value="WindowsDefaultBounds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -96,6 +114,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The form is positioned at the Windows default location and has the bounds determined by Windows default.</summary>
       </Docs>
@@ -104,6 +123,9 @@
       <MemberSignature Language="C#" Value="WindowsDefaultLocation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.FormStartPosition WindowsDefaultLocation = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.FormStartPosition.WindowsDefaultLocation" />
+      <MemberSignature Language="VB.NET" Value="WindowsDefaultLocation" />
+      <MemberSignature Language="F#" Value="WindowsDefaultLocation = 2" Usage="System.Windows.Forms.FormStartPosition.WindowsDefaultLocation" />
+      <MemberSignature Language="C++ CLI" Value="WindowsDefaultLocation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -112,6 +134,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The form is positioned at the Windows default location and has the dimensions specified in the form's size.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="IComponent" FullName="System.ComponentModel.IComponent">
+﻿<Type Name="IComponent" FullName="System.ComponentModel.IComponent">
   <TypeSignature Language="C#" Value="public interface IComponent : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComponent implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IComponent" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComponent&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type IComponent = interface&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IComponent : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -73,9 +76,12 @@
   </Docs>
   <Members>
     <Member MemberName="Disposed">
-      <MemberSignature Language="C#" Value="public event EventHandler Disposed;" />
+      <MemberSignature Language="C#" Value="event EventHandler Disposed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Disposed" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.IComponent.Disposed" />
+      <MemberSignature Language="VB.NET" Value="Event Disposed As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Disposed : EventHandler " Usage="member this.Disposed : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Disposed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -111,6 +117,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.ISite Site { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISite Site" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IComponent.Site" />
+      <MemberSignature Language="VB.NET" Value="Public Property Site As ISite" />
+      <MemberSignature Language="F#" Value="member this.Site : System.ComponentModel.ISite with get, set" Usage="System.ComponentModel.IComponent.Site" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ISite ^ Site { System::ComponentModel::ISite ^ get(); void set(System::ComponentModel::ISite ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>

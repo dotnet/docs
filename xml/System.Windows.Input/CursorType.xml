@@ -1,7 +1,10 @@
-<Type Name="CursorType" FullName="System.Windows.Input.CursorType">
+﻿<Type Name="CursorType" FullName="System.Windows.Input.CursorType">
   <TypeSignature Language="C#" Value="public enum CursorType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CursorType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.CursorType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CursorType" />
+  <TypeSignature Language="F#" Value="type CursorType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CursorType" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="AppStarting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType AppStarting = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.AppStarting" />
+      <MemberSignature Language="VB.NET" Value="AppStarting" />
+      <MemberSignature Language="F#" Value="AppStarting = 3" Usage="System.Windows.Input.CursorType.AppStarting" />
+      <MemberSignature Language="C++ CLI" Value="AppStarting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A standard arrow with small hourglass cursor.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="Arrow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType Arrow = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.Arrow" />
+      <MemberSignature Language="VB.NET" Value="Arrow" />
+      <MemberSignature Language="F#" Value="Arrow = 2" Usage="System.Windows.Input.CursorType.Arrow" />
+      <MemberSignature Language="C++ CLI" Value="Arrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A standard arrow cursor.</summary>
       </Docs>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="ArrowCD" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType ArrowCD = int32(27)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ArrowCD" />
+      <MemberSignature Language="VB.NET" Value="ArrowCD" />
+      <MemberSignature Language="F#" Value="ArrowCD = 27" Usage="System.Windows.Input.CursorType.ArrowCD" />
+      <MemberSignature Language="C++ CLI" Value="ArrowCD" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>27</MemberValue>
       <Docs>
         <summary>An arrow cd cursor.</summary>
       </Docs>
@@ -75,6 +90,9 @@
       <MemberSignature Language="C#" Value="Cross" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType Cross = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.Cross" />
+      <MemberSignature Language="VB.NET" Value="Cross" />
+      <MemberSignature Language="F#" Value="Cross = 4" Usage="System.Windows.Input.CursorType.Cross" />
+      <MemberSignature Language="C++ CLI" Value="Cross" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A crosshair cursor.</summary>
       </Docs>
@@ -91,6 +110,9 @@
       <MemberSignature Language="C#" Value="Hand" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType Hand = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.Hand" />
+      <MemberSignature Language="VB.NET" Value="Hand" />
+      <MemberSignature Language="F#" Value="Hand = 14" Usage="System.Windows.Input.CursorType.Hand" />
+      <MemberSignature Language="C++ CLI" Value="Hand" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -99,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>A hand cursor.</summary>
       </Docs>
@@ -107,6 +130,9 @@
       <MemberSignature Language="C#" Value="Help" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType Help = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.Help" />
+      <MemberSignature Language="VB.NET" Value="Help" />
+      <MemberSignature Language="F#" Value="Help = 5" Usage="System.Windows.Input.CursorType.Help" />
+      <MemberSignature Language="C++ CLI" Value="Help" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -115,6 +141,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A help cursor.</summary>
       </Docs>
@@ -123,6 +150,9 @@
       <MemberSignature Language="C#" Value="IBeam" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType IBeam = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.IBeam" />
+      <MemberSignature Language="VB.NET" Value="IBeam" />
+      <MemberSignature Language="F#" Value="IBeam = 6" Usage="System.Windows.Input.CursorType.IBeam" />
+      <MemberSignature Language="C++ CLI" Value="IBeam" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -131,6 +161,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A text I-Beam cursor.</summary>
       </Docs>
@@ -139,6 +170,9 @@
       <MemberSignature Language="C#" Value="No" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType No = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.No" />
+      <MemberSignature Language="VB.NET" Value="No" />
+      <MemberSignature Language="F#" Value="No = 1" Usage="System.Windows.Input.CursorType.No" />
+      <MemberSignature Language="C++ CLI" Value="No" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -147,6 +181,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>No cursor.</summary>
       </Docs>
@@ -155,6 +190,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Input.CursorType.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -163,6 +201,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A value indicating that no cursor should be displayed.</summary>
       </Docs>
@@ -171,6 +210,9 @@
       <MemberSignature Language="C#" Value="Pen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType Pen = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.Pen" />
+      <MemberSignature Language="VB.NET" Value="Pen" />
+      <MemberSignature Language="F#" Value="Pen = 15" Usage="System.Windows.Input.CursorType.Pen" />
+      <MemberSignature Language="C++ CLI" Value="Pen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -179,6 +221,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>A pen cursor.</summary>
       </Docs>
@@ -187,6 +230,9 @@
       <MemberSignature Language="C#" Value="ScrollAll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType ScrollAll = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollAll" />
+      <MemberSignature Language="VB.NET" Value="ScrollAll" />
+      <MemberSignature Language="F#" Value="ScrollAll = 18" Usage="System.Windows.Input.CursorType.ScrollAll" />
+      <MemberSignature Language="C++ CLI" Value="ScrollAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -195,6 +241,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>A scrolling cursor with arrows pointing north, south, east, and west.</summary>
       </Docs>
@@ -203,6 +250,9 @@
       <MemberSignature Language="C#" Value="ScrollE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType ScrollE = int32(22)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollE" />
+      <MemberSignature Language="VB.NET" Value="ScrollE" />
+      <MemberSignature Language="F#" Value="ScrollE = 22" Usage="System.Windows.Input.CursorType.ScrollE" />
+      <MemberSignature Language="C++ CLI" Value="ScrollE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -211,6 +261,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>A scrolling cursor with an arrow pointing east.</summary>
       </Docs>
@@ -219,6 +270,9 @@
       <MemberSignature Language="C#" Value="ScrollN" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType ScrollN = int32(19)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollN" />
+      <MemberSignature Language="VB.NET" Value="ScrollN" />
+      <MemberSignature Language="F#" Value="ScrollN = 19" Usage="System.Windows.Input.CursorType.ScrollN" />
+      <MemberSignature Language="C++ CLI" Value="ScrollN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -227,6 +281,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>A scrolling cursor with an arrow pointing north.</summary>
       </Docs>
@@ -235,6 +290,9 @@
       <MemberSignature Language="C#" Value="ScrollNE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType ScrollNE = int32(24)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollNE" />
+      <MemberSignature Language="VB.NET" Value="ScrollNE" />
+      <MemberSignature Language="F#" Value="ScrollNE = 24" Usage="System.Windows.Input.CursorType.ScrollNE" />
+      <MemberSignature Language="C++ CLI" Value="ScrollNE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -243,6 +301,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>A scrolling cursor with arrows pointing north and east.</summary>
       </Docs>
@@ -251,6 +310,9 @@
       <MemberSignature Language="C#" Value="ScrollNS" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType ScrollNS = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollNS" />
+      <MemberSignature Language="VB.NET" Value="ScrollNS" />
+      <MemberSignature Language="F#" Value="ScrollNS = 16" Usage="System.Windows.Input.CursorType.ScrollNS" />
+      <MemberSignature Language="C++ CLI" Value="ScrollNS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -259,6 +321,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>A scrolling cursor with arrows pointing north and south.</summary>
       </Docs>
@@ -267,6 +330,9 @@
       <MemberSignature Language="C#" Value="ScrollNW" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType ScrollNW = int32(23)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollNW" />
+      <MemberSignature Language="VB.NET" Value="ScrollNW" />
+      <MemberSignature Language="F#" Value="ScrollNW = 23" Usage="System.Windows.Input.CursorType.ScrollNW" />
+      <MemberSignature Language="C++ CLI" Value="ScrollNW" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -275,6 +341,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>A scrolling cursor with arrows pointing north and west.</summary>
       </Docs>
@@ -283,6 +350,9 @@
       <MemberSignature Language="C#" Value="ScrollS" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType ScrollS = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollS" />
+      <MemberSignature Language="VB.NET" Value="ScrollS" />
+      <MemberSignature Language="F#" Value="ScrollS = 20" Usage="System.Windows.Input.CursorType.ScrollS" />
+      <MemberSignature Language="C++ CLI" Value="ScrollS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -291,6 +361,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>A scrolling cursor with an arrow pointing south.</summary>
       </Docs>
@@ -299,6 +370,9 @@
       <MemberSignature Language="C#" Value="ScrollSE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType ScrollSE = int32(26)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollSE" />
+      <MemberSignature Language="VB.NET" Value="ScrollSE" />
+      <MemberSignature Language="F#" Value="ScrollSE = 26" Usage="System.Windows.Input.CursorType.ScrollSE" />
+      <MemberSignature Language="C++ CLI" Value="ScrollSE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -307,6 +381,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>A scrolling cursor with arrows pointing south and east.</summary>
       </Docs>
@@ -315,6 +390,9 @@
       <MemberSignature Language="C#" Value="ScrollSW" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType ScrollSW = int32(25)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollSW" />
+      <MemberSignature Language="VB.NET" Value="ScrollSW" />
+      <MemberSignature Language="F#" Value="ScrollSW = 25" Usage="System.Windows.Input.CursorType.ScrollSW" />
+      <MemberSignature Language="C++ CLI" Value="ScrollSW" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -323,6 +401,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>A scrolling cursor with arrows pointing south and west.</summary>
       </Docs>
@@ -331,6 +410,9 @@
       <MemberSignature Language="C#" Value="ScrollW" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType ScrollW = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollW" />
+      <MemberSignature Language="VB.NET" Value="ScrollW" />
+      <MemberSignature Language="F#" Value="ScrollW = 21" Usage="System.Windows.Input.CursorType.ScrollW" />
+      <MemberSignature Language="C++ CLI" Value="ScrollW" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -339,6 +421,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>A scrolling cursor with an arrow pointing west.</summary>
       </Docs>
@@ -347,6 +430,9 @@
       <MemberSignature Language="C#" Value="ScrollWE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType ScrollWE = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.ScrollWE" />
+      <MemberSignature Language="VB.NET" Value="ScrollWE" />
+      <MemberSignature Language="F#" Value="ScrollWE = 17" Usage="System.Windows.Input.CursorType.ScrollWE" />
+      <MemberSignature Language="C++ CLI" Value="ScrollWE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -355,6 +441,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>A scrolling cursor with arrows pointing west and east.</summary>
       </Docs>
@@ -363,6 +450,9 @@
       <MemberSignature Language="C#" Value="SizeAll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType SizeAll = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.SizeAll" />
+      <MemberSignature Language="VB.NET" Value="SizeAll" />
+      <MemberSignature Language="F#" Value="SizeAll = 7" Usage="System.Windows.Input.CursorType.SizeAll" />
+      <MemberSignature Language="C++ CLI" Value="SizeAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -371,6 +461,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>A cursor with arrows pointing north, south, east, and west.</summary>
       </Docs>
@@ -379,6 +470,9 @@
       <MemberSignature Language="C#" Value="SizeNESW" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType SizeNESW = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.SizeNESW" />
+      <MemberSignature Language="VB.NET" Value="SizeNESW" />
+      <MemberSignature Language="F#" Value="SizeNESW = 8" Usage="System.Windows.Input.CursorType.SizeNESW" />
+      <MemberSignature Language="C++ CLI" Value="SizeNESW" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -387,6 +481,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A cursor with arrows pointing northeast and southwest.</summary>
       </Docs>
@@ -395,6 +490,9 @@
       <MemberSignature Language="C#" Value="SizeNS" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType SizeNS = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.SizeNS" />
+      <MemberSignature Language="VB.NET" Value="SizeNS" />
+      <MemberSignature Language="F#" Value="SizeNS = 9" Usage="System.Windows.Input.CursorType.SizeNS" />
+      <MemberSignature Language="C++ CLI" Value="SizeNS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -403,6 +501,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>A cursor with arrows pointing north and south.</summary>
       </Docs>
@@ -411,6 +510,9 @@
       <MemberSignature Language="C#" Value="SizeNWSE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType SizeNWSE = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.SizeNWSE" />
+      <MemberSignature Language="VB.NET" Value="SizeNWSE" />
+      <MemberSignature Language="F#" Value="SizeNWSE = 10" Usage="System.Windows.Input.CursorType.SizeNWSE" />
+      <MemberSignature Language="C++ CLI" Value="SizeNWSE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -419,6 +521,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>A cursor with arrows pointing northwest and southeast.</summary>
       </Docs>
@@ -427,6 +530,9 @@
       <MemberSignature Language="C#" Value="SizeWE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType SizeWE = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.SizeWE" />
+      <MemberSignature Language="VB.NET" Value="SizeWE" />
+      <MemberSignature Language="F#" Value="SizeWE = 11" Usage="System.Windows.Input.CursorType.SizeWE" />
+      <MemberSignature Language="C++ CLI" Value="SizeWE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -435,6 +541,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>A cursor with arrows pointing west and east.</summary>
       </Docs>
@@ -443,6 +550,9 @@
       <MemberSignature Language="C#" Value="UpArrow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType UpArrow = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.UpArrow" />
+      <MemberSignature Language="VB.NET" Value="UpArrow" />
+      <MemberSignature Language="F#" Value="UpArrow = 12" Usage="System.Windows.Input.CursorType.UpArrow" />
+      <MemberSignature Language="C++ CLI" Value="UpArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -451,6 +561,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>A vertical arrow cursor.</summary>
       </Docs>
@@ -459,6 +570,9 @@
       <MemberSignature Language="C#" Value="Wait" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Input.CursorType Wait = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.CursorType.Wait" />
+      <MemberSignature Language="VB.NET" Value="Wait" />
+      <MemberSignature Language="F#" Value="Wait = 13" Usage="System.Windows.Input.CursorType.Wait" />
+      <MemberSignature Language="C++ CLI" Value="Wait" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -467,6 +581,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Input.CursorType</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>An hourglass cursor.</summary>
       </Docs>

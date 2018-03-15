@@ -1,7 +1,10 @@
-<Type Name="SqlBulkCopyColumnMapping" FullName="System.Data.SqlClient.SqlBulkCopyColumnMapping">
+﻿<Type Name="SqlBulkCopyColumnMapping" FullName="System.Data.SqlClient.SqlBulkCopyColumnMapping">
   <TypeSignature Language="C#" Value="public sealed class SqlBulkCopyColumnMapping" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlBulkCopyColumnMapping extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlBulkCopyColumnMapping" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlBulkCopyColumnMapping" />
+  <TypeSignature Language="F#" Value="type SqlBulkCopyColumnMapping = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlBulkCopyColumnMapping sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlClient</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -49,10 +52,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlClient</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlBulkCopyColumnMapping" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SqlBulkCopyColumnMapping ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopyColumnMapping.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBulkCopyColumnMapping();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -96,6 +111,9 @@
       <MemberSignature Language="C#" Value="public SqlBulkCopyColumnMapping (int sourceColumnOrdinal, int destinationOrdinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 sourceColumnOrdinal, int32 destinationOrdinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopyColumnMapping.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceColumnOrdinal As Integer, destinationOrdinal As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlBulkCopyColumnMapping : int * int -&gt; System.Data.SqlClient.SqlBulkCopyColumnMapping" Usage="new System.Data.SqlClient.SqlBulkCopyColumnMapping (sourceColumnOrdinal, destinationOrdinal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBulkCopyColumnMapping(int sourceColumnOrdinal, int destinationOrdinal);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -139,6 +157,9 @@
       <MemberSignature Language="C#" Value="public SqlBulkCopyColumnMapping (int sourceColumnOrdinal, string destinationColumn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 sourceColumnOrdinal, string destinationColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopyColumnMapping.#ctor(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceColumnOrdinal As Integer, destinationColumn As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlBulkCopyColumnMapping : int * string -&gt; System.Data.SqlClient.SqlBulkCopyColumnMapping" Usage="new System.Data.SqlClient.SqlBulkCopyColumnMapping (sourceColumnOrdinal, destinationColumn)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBulkCopyColumnMapping(int sourceColumnOrdinal, System::String ^ destinationColumn);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -182,6 +203,9 @@
       <MemberSignature Language="C#" Value="public SqlBulkCopyColumnMapping (string sourceColumn, int destinationOrdinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sourceColumn, int32 destinationOrdinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopyColumnMapping.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceColumn As String, destinationOrdinal As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlBulkCopyColumnMapping : string * int -&gt; System.Data.SqlClient.SqlBulkCopyColumnMapping" Usage="new System.Data.SqlClient.SqlBulkCopyColumnMapping (sourceColumn, destinationOrdinal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBulkCopyColumnMapping(System::String ^ sourceColumn, int destinationOrdinal);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -225,6 +249,9 @@
       <MemberSignature Language="C#" Value="public SqlBulkCopyColumnMapping (string sourceColumn, string destinationColumn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string sourceColumn, string destinationColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlBulkCopyColumnMapping.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceColumn As String, destinationColumn As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlBulkCopyColumnMapping : string * string -&gt; System.Data.SqlClient.SqlBulkCopyColumnMapping" Usage="new System.Data.SqlClient.SqlBulkCopyColumnMapping (sourceColumn, destinationColumn)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlBulkCopyColumnMapping(System::String ^ sourceColumn, System::String ^ destinationColumn);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -268,6 +295,9 @@
       <MemberSignature Language="C#" Value="public string DestinationColumn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DestinationColumn" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlBulkCopyColumnMapping.DestinationColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property DestinationColumn As String" />
+      <MemberSignature Language="F#" Value="member this.DestinationColumn : string with get, set" Usage="System.Data.SqlClient.SqlBulkCopyColumnMapping.DestinationColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DestinationColumn { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -314,6 +344,9 @@
       <MemberSignature Language="C#" Value="public int DestinationOrdinal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DestinationOrdinal" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlBulkCopyColumnMapping.DestinationOrdinal" />
+      <MemberSignature Language="VB.NET" Value="Public Property DestinationOrdinal As Integer" />
+      <MemberSignature Language="F#" Value="member this.DestinationOrdinal : int with get, set" Usage="System.Data.SqlClient.SqlBulkCopyColumnMapping.DestinationOrdinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DestinationOrdinal { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -360,6 +393,9 @@
       <MemberSignature Language="C#" Value="public string SourceColumn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SourceColumn" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlBulkCopyColumnMapping.SourceColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceColumn As String" />
+      <MemberSignature Language="F#" Value="member this.SourceColumn : string with get, set" Usage="System.Data.SqlClient.SqlBulkCopyColumnMapping.SourceColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SourceColumn { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -406,6 +442,9 @@
       <MemberSignature Language="C#" Value="public int SourceOrdinal { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SourceOrdinal" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlBulkCopyColumnMapping.SourceOrdinal" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceOrdinal As Integer" />
+      <MemberSignature Language="F#" Value="member this.SourceOrdinal : int with get, set" Usage="System.Data.SqlClient.SqlBulkCopyColumnMapping.SourceOrdinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SourceOrdinal { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlClient</AssemblyName>
@@ -448,15 +487,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlClient</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlBulkCopyColumnMapping" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

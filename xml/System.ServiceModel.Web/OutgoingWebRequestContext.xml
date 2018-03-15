@@ -1,7 +1,10 @@
-<Type Name="OutgoingWebRequestContext" FullName="System.ServiceModel.Web.OutgoingWebRequestContext">
+﻿<Type Name="OutgoingWebRequestContext" FullName="System.ServiceModel.Web.OutgoingWebRequestContext">
   <TypeSignature Language="C#" Value="public class OutgoingWebRequestContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OutgoingWebRequestContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Web.OutgoingWebRequestContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class OutgoingWebRequestContext" />
+  <TypeSignature Language="F#" Value="type OutgoingWebRequestContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OutgoingWebRequestContext" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public string Accept { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Accept" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebRequestContext.Accept" />
+      <MemberSignature Language="VB.NET" Value="Public Property Accept As String" />
+      <MemberSignature Language="F#" Value="member this.Accept : string with get, set" Usage="System.ServiceModel.Web.OutgoingWebRequestContext.Accept" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Accept { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -39,6 +45,9 @@
       <MemberSignature Language="C#" Value="public long ContentLength { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 ContentLength" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebRequestContext.ContentLength" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentLength As Long" />
+      <MemberSignature Language="F#" Value="member this.ContentLength : int64 with get, set" Usage="System.ServiceModel.Web.OutgoingWebRequestContext.ContentLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long ContentLength { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -58,6 +67,9 @@
       <MemberSignature Language="C#" Value="public string ContentType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebRequestContext.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="System.ServiceModel.Web.OutgoingWebRequestContext.ContentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -77,6 +89,9 @@
       <MemberSignature Language="C#" Value="public System.Net.WebHeaderCollection Headers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.WebHeaderCollection Headers" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebRequestContext.Headers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Headers As WebHeaderCollection" />
+      <MemberSignature Language="F#" Value="member this.Headers : System.Net.WebHeaderCollection" Usage="System.ServiceModel.Web.OutgoingWebRequestContext.Headers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::WebHeaderCollection ^ Headers { System::Net::WebHeaderCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -96,6 +111,9 @@
       <MemberSignature Language="C#" Value="public string IfMatch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IfMatch" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebRequestContext.IfMatch" />
+      <MemberSignature Language="VB.NET" Value="Public Property IfMatch As String" />
+      <MemberSignature Language="F#" Value="member this.IfMatch : string with get, set" Usage="System.ServiceModel.Web.OutgoingWebRequestContext.IfMatch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IfMatch { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -115,6 +133,9 @@
       <MemberSignature Language="C#" Value="public string IfModifiedSince { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IfModifiedSince" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebRequestContext.IfModifiedSince" />
+      <MemberSignature Language="VB.NET" Value="Public Property IfModifiedSince As String" />
+      <MemberSignature Language="F#" Value="member this.IfModifiedSince : string with get, set" Usage="System.ServiceModel.Web.OutgoingWebRequestContext.IfModifiedSince" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IfModifiedSince { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -134,6 +155,9 @@
       <MemberSignature Language="C#" Value="public string IfNoneMatch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IfNoneMatch" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebRequestContext.IfNoneMatch" />
+      <MemberSignature Language="VB.NET" Value="Public Property IfNoneMatch As String" />
+      <MemberSignature Language="F#" Value="member this.IfNoneMatch : string with get, set" Usage="System.ServiceModel.Web.OutgoingWebRequestContext.IfNoneMatch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IfNoneMatch { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -153,6 +177,9 @@
       <MemberSignature Language="C#" Value="public string IfUnmodifiedSince { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IfUnmodifiedSince" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebRequestContext.IfUnmodifiedSince" />
+      <MemberSignature Language="VB.NET" Value="Public Property IfUnmodifiedSince As String" />
+      <MemberSignature Language="F#" Value="member this.IfUnmodifiedSince : string with get, set" Usage="System.ServiceModel.Web.OutgoingWebRequestContext.IfUnmodifiedSince" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IfUnmodifiedSince { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -172,6 +199,9 @@
       <MemberSignature Language="C#" Value="public string Method { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Method" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebRequestContext.Method" />
+      <MemberSignature Language="VB.NET" Value="Public Property Method As String" />
+      <MemberSignature Language="F#" Value="member this.Method : string with get, set" Usage="System.ServiceModel.Web.OutgoingWebRequestContext.Method" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Method { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -191,6 +221,9 @@
       <MemberSignature Language="C#" Value="public bool SuppressEntityBody { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SuppressEntityBody" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebRequestContext.SuppressEntityBody" />
+      <MemberSignature Language="VB.NET" Value="Public Property SuppressEntityBody As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SuppressEntityBody : bool with get, set" Usage="System.ServiceModel.Web.OutgoingWebRequestContext.SuppressEntityBody" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SuppressEntityBody { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -210,6 +243,9 @@
       <MemberSignature Language="C#" Value="public string UserAgent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UserAgent" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Web.OutgoingWebRequestContext.UserAgent" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserAgent As String" />
+      <MemberSignature Language="F#" Value="member this.UserAgent : string with get, set" Usage="System.ServiceModel.Web.OutgoingWebRequestContext.UserAgent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UserAgent { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

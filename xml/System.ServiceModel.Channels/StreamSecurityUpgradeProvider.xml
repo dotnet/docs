@@ -1,7 +1,10 @@
-<Type Name="StreamSecurityUpgradeProvider" FullName="System.ServiceModel.Channels.StreamSecurityUpgradeProvider">
+﻿<Type Name="StreamSecurityUpgradeProvider" FullName="System.ServiceModel.Channels.StreamSecurityUpgradeProvider">
   <TypeSignature Language="C#" Value="public abstract class StreamSecurityUpgradeProvider : System.ServiceModel.Channels.StreamUpgradeProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit StreamSecurityUpgradeProvider extends System.ServiceModel.Channels.StreamUpgradeProvider" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.StreamSecurityUpgradeProvider" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class StreamSecurityUpgradeProvider&#xA;Inherits StreamUpgradeProvider" />
+  <TypeSignature Language="F#" Value="type StreamSecurityUpgradeProvider = class&#xA;    inherit StreamUpgradeProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StreamSecurityUpgradeProvider abstract : System::ServiceModel::Channels::StreamUpgradeProvider" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +37,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.StreamSecurityUpgradeProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected StreamSecurityUpgradeProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamSecurityUpgradeProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; StreamSecurityUpgradeProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -53,6 +67,9 @@
       <MemberSignature Language="C#" Value="protected StreamSecurityUpgradeProvider (System.ServiceModel.IDefaultCommunicationTimeouts timeouts);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.IDefaultCommunicationTimeouts timeouts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamSecurityUpgradeProvider.#ctor(System.ServiceModel.IDefaultCommunicationTimeouts)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (timeouts As IDefaultCommunicationTimeouts)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.StreamSecurityUpgradeProvider : System.ServiceModel.IDefaultCommunicationTimeouts -&gt; System.ServiceModel.Channels.StreamSecurityUpgradeProvider" Usage="new System.ServiceModel.Channels.StreamSecurityUpgradeProvider timeouts" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; StreamSecurityUpgradeProvider(System::ServiceModel::IDefaultCommunicationTimeouts ^ timeouts);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -78,6 +95,9 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.EndpointIdentity Identity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointIdentity Identity" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.StreamSecurityUpgradeProvider.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Identity As EndpointIdentity" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.ServiceModel.EndpointIdentity" Usage="System.ServiceModel.Channels.StreamSecurityUpgradeProvider.Identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::EndpointIdentity ^ Identity { System::ServiceModel::EndpointIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -99,14 +119,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.StreamSecurityUpgradeProvider" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

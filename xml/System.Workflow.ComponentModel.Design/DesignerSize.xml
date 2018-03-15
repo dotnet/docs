@@ -1,7 +1,10 @@
-<Type Name="DesignerSize" FullName="System.Workflow.ComponentModel.Design.DesignerSize">
+﻿<Type Name="DesignerSize" FullName="System.Workflow.ComponentModel.Design.DesignerSize">
   <TypeSignature Language="C#" Value="public enum DesignerSize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DesignerSize extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.DesignerSize" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DesignerSize" />
+  <TypeSignature Language="F#" Value="type DesignerSize = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DesignerSize" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="Large" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerSize Large = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerSize.Large" />
+      <MemberSignature Language="VB.NET" Value="Large" />
+      <MemberSignature Language="F#" Value="Large = 2" Usage="System.Workflow.ComponentModel.Design.DesignerSize.Large" />
+      <MemberSignature Language="C++ CLI" Value="Large" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -40,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerSize</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The activity designer is large.</summary>
       </Docs>
@@ -48,6 +55,9 @@
       <MemberSignature Language="C#" Value="Medium" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerSize Medium = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerSize.Medium" />
+      <MemberSignature Language="VB.NET" Value="Medium" />
+      <MemberSignature Language="F#" Value="Medium = 1" Usage="System.Workflow.ComponentModel.Design.DesignerSize.Medium" />
+      <MemberSignature Language="C++ CLI" Value="Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -56,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerSize</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The activity designer is medium.</summary>
       </Docs>
@@ -64,6 +75,9 @@
       <MemberSignature Language="C#" Value="Small" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.DesignerSize Small = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.DesignerSize.Small" />
+      <MemberSignature Language="VB.NET" Value="Small" />
+      <MemberSignature Language="F#" Value="Small = 0" Usage="System.Workflow.ComponentModel.Design.DesignerSize.Small" />
+      <MemberSignature Language="C++ CLI" Value="Small" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -72,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.DesignerSize</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The activity designer is small.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="DataGridColumnEventArgs" FullName="System.Windows.Controls.DataGridColumnEventArgs">
+﻿<Type Name="DataGridColumnEventArgs" FullName="System.Windows.Controls.DataGridColumnEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridColumnEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridColumnEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridColumnEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridColumnEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridColumnEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridColumnEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public DataGridColumnEventArgs (System.Windows.Controls.DataGridColumn column);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.DataGridColumn column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridColumnEventArgs.#ctor(System.Windows.Controls.DataGridColumn)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (column As DataGridColumn)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DataGridColumnEventArgs : System.Windows.Controls.DataGridColumn -&gt; System.Windows.Controls.DataGridColumnEventArgs" Usage="new System.Windows.Controls.DataGridColumnEventArgs column" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridColumnEventArgs(System::Windows::Controls::DataGridColumn ^ column);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.DataGridColumn Column { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataGridColumn Column" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridColumnEventArgs.Column" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As DataGridColumn" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Windows.Controls.DataGridColumn" Usage="System.Windows.Controls.DataGridColumnEventArgs.Column" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridColumn ^ Column { System::Windows::Controls::DataGridColumn ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

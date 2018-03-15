@@ -1,7 +1,10 @@
-<Type Name="IXamlTypeResolver" FullName="System.Windows.Markup.IXamlTypeResolver">
+﻿<Type Name="IXamlTypeResolver" FullName="System.Windows.Markup.IXamlTypeResolver">
   <TypeSignature Language="C#" Value="public interface IXamlTypeResolver" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXamlTypeResolver" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IXamlTypeResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXamlTypeResolver" />
+  <TypeSignature Language="F#" Value="type IXamlTypeResolver = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXamlTypeResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="public Type Resolve (string qualifiedTypeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type Resolve(string qualifiedTypeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.IXamlTypeResolver.Resolve(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Resolve (qualifiedTypeName As String) As Type" />
+      <MemberSignature Language="F#" Value="abstract member Resolve : string -&gt; Type" Usage="iXamlTypeResolver.Resolve qualifiedTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ Resolve(System::String ^ qualifiedTypeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

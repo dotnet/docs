@@ -1,7 +1,10 @@
-<Type Name="WSTrustServiceHost" FullName="System.ServiceModel.Security.WSTrustServiceHost">
+﻿<Type Name="WSTrustServiceHost" FullName="System.ServiceModel.Security.WSTrustServiceHost">
   <TypeSignature Language="C#" Value="public class WSTrustServiceHost : System.ServiceModel.ServiceHost" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WSTrustServiceHost extends System.ServiceModel.ServiceHost" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.WSTrustServiceHost" />
+  <TypeSignature Language="VB.NET" Value="Public Class WSTrustServiceHost&#xA;Inherits ServiceHost" />
+  <TypeSignature Language="F#" Value="type WSTrustServiceHost = class&#xA;    inherit ServiceHost" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WSTrustServiceHost : System::ServiceModel::ServiceHost" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,10 +35,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustServiceHost" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WSTrustServiceHost (System.IdentityModel.Configuration.SecurityTokenServiceConfiguration securityTokenServiceConfiguration, params Uri[] baseAddresses);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Configuration.SecurityTokenServiceConfiguration securityTokenServiceConfiguration, class System.Uri[] baseAddresses) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceHost.#ctor(System.IdentityModel.Configuration.SecurityTokenServiceConfiguration,System.Uri[])" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.WSTrustServiceHost : System.IdentityModel.Configuration.SecurityTokenServiceConfiguration * Uri[] -&gt; System.ServiceModel.Security.WSTrustServiceHost" Usage="new System.ServiceModel.Security.WSTrustServiceHost (securityTokenServiceConfiguration, baseAddresses)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustServiceHost(System::IdentityModel::Configuration::SecurityTokenServiceConfiguration ^ securityTokenServiceConfiguration, ... cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +85,9 @@
       <MemberSignature Language="C#" Value="public WSTrustServiceHost (System.ServiceModel.Security.WSTrustServiceContract serviceContract, params Uri[] baseAddresses);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Security.WSTrustServiceContract serviceContract, class System.Uri[] baseAddresses) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceHost.#ctor(System.ServiceModel.Security.WSTrustServiceContract,System.Uri[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (serviceContract As WSTrustServiceContract, ParamArray baseAddresses As Uri())" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.WSTrustServiceHost : System.ServiceModel.Security.WSTrustServiceContract * Uri[] -&gt; System.ServiceModel.Security.WSTrustServiceHost" Usage="new System.ServiceModel.Security.WSTrustServiceHost (serviceContract, baseAddresses)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSTrustServiceHost(System::ServiceModel::Security::WSTrustServiceContract ^ serviceContract, ... cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,6 +120,9 @@
       <MemberSignature Language="C#" Value="protected override void ApplyConfiguration ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ApplyConfiguration() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceHost.ApplyConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ApplyConfiguration ()" />
+      <MemberSignature Language="F#" Value="override this.ApplyConfiguration : unit -&gt; unit" Usage="wSTrustServiceHost.ApplyConfiguration " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ApplyConfiguration();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,6 +141,9 @@
       <MemberSignature Language="C#" Value="protected virtual void ConfigureMetadata ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ConfigureMetadata() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceHost.ConfigureMetadata" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ConfigureMetadata ()" />
+      <MemberSignature Language="F#" Value="abstract member ConfigureMetadata : unit -&gt; unit&#xA;override this.ConfigureMetadata : unit -&gt; unit" Usage="wSTrustServiceHost.ConfigureMetadata " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConfigureMetadata();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,6 +169,9 @@
       <MemberSignature Language="C#" Value="protected override void InitializeRuntime ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitializeRuntime() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceHost.InitializeRuntime" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeRuntime ()" />
+      <MemberSignature Language="F#" Value="override this.InitializeRuntime : unit -&gt; unit" Usage="wSTrustServiceHost.InitializeRuntime " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeRuntime();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -171,6 +197,9 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Configuration.SecurityTokenServiceConfiguration SecurityTokenServiceConfiguration { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Configuration.SecurityTokenServiceConfiguration SecurityTokenServiceConfiguration" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustServiceHost.SecurityTokenServiceConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityTokenServiceConfiguration As SecurityTokenServiceConfiguration" />
+      <MemberSignature Language="F#" Value="member this.SecurityTokenServiceConfiguration : System.IdentityModel.Configuration.SecurityTokenServiceConfiguration" Usage="System.ServiceModel.Security.WSTrustServiceHost.SecurityTokenServiceConfiguration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Configuration::SecurityTokenServiceConfiguration ^ SecurityTokenServiceConfiguration { System::IdentityModel::Configuration::SecurityTokenServiceConfiguration ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -189,6 +218,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.WSTrustServiceContract ServiceContract { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.WSTrustServiceContract ServiceContract" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.WSTrustServiceHost.ServiceContract" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceContract As WSTrustServiceContract" />
+      <MemberSignature Language="F#" Value="member this.ServiceContract : System.ServiceModel.Security.WSTrustServiceContract" Usage="System.ServiceModel.Security.WSTrustServiceHost.ServiceContract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::WSTrustServiceContract ^ ServiceContract { System::ServiceModel::Security::WSTrustServiceContract ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -207,6 +239,9 @@
       <MemberSignature Language="C#" Value="protected virtual void UpdateServiceConfiguration ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void UpdateServiceConfiguration() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.WSTrustServiceHost.UpdateServiceConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub UpdateServiceConfiguration ()" />
+      <MemberSignature Language="F#" Value="abstract member UpdateServiceConfiguration : unit -&gt; unit&#xA;override this.UpdateServiceConfiguration : unit -&gt; unit" Usage="wSTrustServiceHost.UpdateServiceConfiguration " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void UpdateServiceConfiguration();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -221,14 +256,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustServiceHost" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="StyleSimulations" FullName="System.Windows.Media.StyleSimulations">
+﻿<Type Name="StyleSimulations" FullName="System.Windows.Media.StyleSimulations">
   <TypeSignature Language="C#" Value="public enum StyleSimulations" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StyleSimulations extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.StyleSimulations" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StyleSimulations" />
+  <TypeSignature Language="F#" Value="type StyleSimulations = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class StyleSimulations" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="BoldItalicSimulation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.StyleSimulations BoldItalicSimulation = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.StyleSimulations.BoldItalicSimulation" />
+      <MemberSignature Language="VB.NET" Value="BoldItalicSimulation" />
+      <MemberSignature Language="F#" Value="BoldItalicSimulation = 3" Usage="System.Windows.Media.StyleSimulations.BoldItalicSimulation" />
+      <MemberSignature Language="C++ CLI" Value="BoldItalicSimulation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -31,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.StyleSimulations</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Bold and Italic style simulation.</summary>
       </Docs>
@@ -39,6 +46,9 @@
       <MemberSignature Language="C#" Value="BoldSimulation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.StyleSimulations BoldSimulation = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.StyleSimulations.BoldSimulation" />
+      <MemberSignature Language="VB.NET" Value="BoldSimulation" />
+      <MemberSignature Language="F#" Value="BoldSimulation = 1" Usage="System.Windows.Media.StyleSimulations.BoldSimulation" />
+      <MemberSignature Language="C++ CLI" Value="BoldSimulation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.StyleSimulations</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Bold style simulation.</summary>
       </Docs>
@@ -55,6 +66,9 @@
       <MemberSignature Language="C#" Value="ItalicSimulation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.StyleSimulations ItalicSimulation = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.StyleSimulations.ItalicSimulation" />
+      <MemberSignature Language="VB.NET" Value="ItalicSimulation" />
+      <MemberSignature Language="F#" Value="ItalicSimulation = 2" Usage="System.Windows.Media.StyleSimulations.ItalicSimulation" />
+      <MemberSignature Language="C++ CLI" Value="ItalicSimulation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.StyleSimulations</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Italic style simulation.</summary>
       </Docs>
@@ -71,6 +86,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.StyleSimulations None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.StyleSimulations.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Media.StyleSimulations.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.StyleSimulations</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No font style simulation.</summary>
       </Docs>

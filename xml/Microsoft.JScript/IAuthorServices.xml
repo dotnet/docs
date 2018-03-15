@@ -1,7 +1,10 @@
-<Type Name="IAuthorServices" FullName="Microsoft.JScript.IAuthorServices">
+﻿<Type Name="IAuthorServices" FullName="Microsoft.JScript.IAuthorServices">
   <TypeSignature Language="C#" Value="public interface IAuthorServices" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAuthorServices" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IAuthorServices" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAuthorServices" />
+  <TypeSignature Language="F#" Value="type IAuthorServices = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IAuthorServices" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.IParseText GetCodeSense ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.IParseText GetCodeSense() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IAuthorServices.GetCodeSense" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCodeSense () As IParseText" />
+      <MemberSignature Language="F#" Value="abstract member GetCodeSense : unit -&gt; Microsoft.JScript.IParseText" Usage="iAuthorServices.GetCodeSense " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::IParseText ^ GetCodeSense();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.IColorizeText GetColorizer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.IColorizeText GetColorizer() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IAuthorServices.GetColorizer" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetColorizer () As IColorizeText" />
+      <MemberSignature Language="F#" Value="abstract member GetColorizer : unit -&gt; Microsoft.JScript.IColorizeText" Usage="iAuthorServices.GetColorizer " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::IColorizeText ^ GetColorizer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

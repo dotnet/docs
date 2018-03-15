@@ -1,7 +1,10 @@
-<Type Name="PropertyConditionFlags" FullName="System.Windows.Automation.PropertyConditionFlags">
+﻿<Type Name="PropertyConditionFlags" FullName="System.Windows.Automation.PropertyConditionFlags">
   <TypeSignature Language="C#" Value="public enum PropertyConditionFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyConditionFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.PropertyConditionFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PropertyConditionFlags" />
+  <TypeSignature Language="F#" Value="type PropertyConditionFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PropertyConditionFlags" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="IgnoreCase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.PropertyConditionFlags IgnoreCase = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.PropertyConditionFlags.IgnoreCase" />
+      <MemberSignature Language="VB.NET" Value="IgnoreCase" />
+      <MemberSignature Language="F#" Value="IgnoreCase = 1" Usage="System.Windows.Automation.PropertyConditionFlags.IgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="IgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -42,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.PropertyConditionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that comparison with a string property value is not case-sensitive.</summary>
       </Docs>
@@ -50,6 +57,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.PropertyConditionFlags None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.PropertyConditionFlags.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Automation.PropertyConditionFlags.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.PropertyConditionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the property value is tested using default behavior (case-sensitive comparison for strings).</summary>
       </Docs>

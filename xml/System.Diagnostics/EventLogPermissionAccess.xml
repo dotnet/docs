@@ -1,7 +1,10 @@
-<Type Name="EventLogPermissionAccess" FullName="System.Diagnostics.EventLogPermissionAccess">
+﻿<Type Name="EventLogPermissionAccess" FullName="System.Diagnostics.EventLogPermissionAccess">
   <TypeSignature Language="C#" Value="public enum EventLogPermissionAccess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventLogPermissionAccess extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EventLogPermissionAccess" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EventLogPermissionAccess" />
+  <TypeSignature Language="F#" Value="type EventLogPermissionAccess = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EventLogPermissionAccess" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="Administer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogPermissionAccess Administer = int32(48)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogPermissionAccess.Administer" />
+      <MemberSignature Language="VB.NET" Value="Administer" />
+      <MemberSignature Language="F#" Value="Administer = 48" Usage="System.Diagnostics.EventLogPermissionAccess.Administer" />
+      <MemberSignature Language="C++ CLI" Value="Administer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.EventLogPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Diagnostics.EventLog" /> can create an event source, read existing logs, delete event sources or logs, respond to entries, clear an event log, listen to events, and access a collection of all event logs.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="Audit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogPermissionAccess Audit = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogPermissionAccess.Audit" />
+      <MemberSignature Language="VB.NET" Value="Audit" />
+      <MemberSignature Language="F#" Value="Audit = 10" Usage="System.Diagnostics.EventLogPermissionAccess.Audit" />
+      <MemberSignature Language="C++ CLI" Value="Audit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +78,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.EventLogPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Diagnostics.EventLog" /> can read existing logs, delete event sources or logs, respond to entries, clear an event log, listen to events, and access a collection of all event logs. <see langword="Note" /> This member is now obsolete, use <see cref="F:System.Diagnostics.EventLogPermissionAccess.Administer" /> instead.</summary>
       </Docs>
@@ -76,6 +87,9 @@
       <MemberSignature Language="C#" Value="Browse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogPermissionAccess Browse = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogPermissionAccess.Browse" />
+      <MemberSignature Language="VB.NET" Value="Browse" />
+      <MemberSignature Language="F#" Value="Browse = 2" Usage="System.Diagnostics.EventLogPermissionAccess.Browse" />
+      <MemberSignature Language="C++ CLI" Value="Browse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -93,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.EventLogPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Diagnostics.EventLog" /> can read existing logs. <see langword="Note" /> This member is now obsolete, use <see cref="F:System.Diagnostics.EventLogPermissionAccess.Administer" /> instead.</summary>
       </Docs>
@@ -101,6 +116,9 @@
       <MemberSignature Language="C#" Value="Instrument" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogPermissionAccess Instrument = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogPermissionAccess.Instrument" />
+      <MemberSignature Language="VB.NET" Value="Instrument" />
+      <MemberSignature Language="F#" Value="Instrument = 6" Usage="System.Diagnostics.EventLogPermissionAccess.Instrument" />
+      <MemberSignature Language="C++ CLI" Value="Instrument" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -118,6 +136,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.EventLogPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Diagnostics.EventLog" /> can read or write to existing logs, and create event sources and logs. <see langword="Note" /> This member is now obsolete, use <see cref="F:System.Diagnostics.EventLogPermissionAccess.Write" /> instead.</summary>
       </Docs>
@@ -126,6 +145,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogPermissionAccess None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogPermissionAccess.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Diagnostics.EventLogPermissionAccess.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -138,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.EventLogPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Diagnostics.EventLog" /> has no permissions.</summary>
       </Docs>
@@ -146,6 +169,9 @@
       <MemberSignature Language="C#" Value="Write" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.EventLogPermissionAccess Write = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.EventLogPermissionAccess.Write" />
+      <MemberSignature Language="VB.NET" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 16" Usage="System.Diagnostics.EventLogPermissionAccess.Write" />
+      <MemberSignature Language="C++ CLI" Value="Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -158,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.EventLogPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Diagnostics.EventLog" /> can write to existing logs, and create event sources and logs.</summary>
       </Docs>

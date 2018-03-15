@@ -1,7 +1,10 @@
-<Type Name="RowToParametersTransformer" FullName="System.Web.UI.WebControls.WebParts.RowToParametersTransformer">
+﻿<Type Name="RowToParametersTransformer" FullName="System.Web.UI.WebControls.WebParts.RowToParametersTransformer">
   <TypeSignature Language="C#" Value="public sealed class RowToParametersTransformer : System.Web.UI.WebControls.WebParts.WebPartTransformer, System.Web.UI.WebControls.WebParts.IWebPartParameters" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RowToParametersTransformer extends System.Web.UI.WebControls.WebParts.WebPartTransformer implements class System.Web.UI.WebControls.WebParts.IWebPartParameters" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.RowToParametersTransformer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RowToParametersTransformer&#xA;Inherits WebPartTransformer&#xA;Implements IWebPartParameters" />
+  <TypeSignature Language="F#" Value="type RowToParametersTransformer = class&#xA;    inherit WebPartTransformer&#xA;    interface IWebPartParameters" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RowToParametersTransformer sealed : System::Web::UI::WebControls::WebParts::WebPartTransformer, System::Web::UI::WebControls::WebParts::IWebPartParameters" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="public RowToParametersTransformer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.RowToParametersTransformer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RowToParametersTransformer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +55,9 @@
       <MemberSignature Language="C#" Value="public string[] ConsumerFieldNames { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ConsumerFieldNames" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.RowToParametersTransformer.ConsumerFieldNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConsumerFieldNames As String()" />
+      <MemberSignature Language="F#" Value="member this.ConsumerFieldNames : string[] with get, set" Usage="System.Web.UI.WebControls.WebParts.RowToParametersTransformer.ConsumerFieldNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ConsumerFieldNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -80,6 +88,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Control CreateConfigurationControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.Control CreateConfigurationControl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.RowToParametersTransformer.CreateConfigurationControl" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateConfigurationControl () As Control" />
+      <MemberSignature Language="F#" Value="override this.CreateConfigurationControl : unit -&gt; System.Web.UI.Control" Usage="rowToParametersTransformer.CreateConfigurationControl " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::Control ^ CreateConfigurationControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,9 +116,12 @@
       </Docs>
     </Member>
     <Member MemberName="LoadConfigurationState">
-      <MemberSignature Language="C#" Value="protected override void LoadConfigurationState (object savedState);" />
+      <MemberSignature Language="C#" Value="protected internal override void LoadConfigurationState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void LoadConfigurationState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.RowToParametersTransformer.LoadConfigurationState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadConfigurationState (savedState As Object)" />
+      <MemberSignature Language="F#" Value="override this.LoadConfigurationState : obj -&gt; unit" Usage="rowToParametersTransformer.LoadConfigurationState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadConfigurationState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +143,9 @@
       <MemberSignature Language="C#" Value="public string[] ProviderFieldNames { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ProviderFieldNames" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.RowToParametersTransformer.ProviderFieldNames" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProviderFieldNames As String()" />
+      <MemberSignature Language="F#" Value="member this.ProviderFieldNames : string[] with get, set" Usage="System.Web.UI.WebControls.WebParts.RowToParametersTransformer.ProviderFieldNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ProviderFieldNames { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,9 +173,12 @@
       </Docs>
     </Member>
     <Member MemberName="SaveConfigurationState">
-      <MemberSignature Language="C#" Value="protected override object SaveConfigurationState ();" />
+      <MemberSignature Language="C#" Value="protected internal override object SaveConfigurationState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object SaveConfigurationState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.RowToParametersTransformer.SaveConfigurationState" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveConfigurationState () As Object" />
+      <MemberSignature Language="F#" Value="override this.SaveConfigurationState : unit -&gt; obj" Usage="rowToParametersTransformer.SaveConfigurationState " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveConfigurationState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -178,7 +198,12 @@
       <MemberSignature Language="C#" Value="void IWebPartParameters.GetParametersData (System.Web.UI.WebControls.WebParts.ParametersCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.WebParts.IWebPartParameters.GetParametersData(class System.Web.UI.WebControls.WebParts.ParametersCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.RowToParametersTransformer.System#Web#UI#WebControls#WebParts#IWebPartParameters#GetParametersData(System.Web.UI.WebControls.WebParts.ParametersCallback)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetParametersData (callback As ParametersCallback) Implements IWebPartParameters.GetParametersData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.WebControls.WebParts.IWebPartParameters.GetParametersData(System::Web::UI::WebControls::WebParts::ParametersCallback ^ callback) = System::Web::UI::WebControls::WebParts::IWebPartParameters::GetParametersData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.WebControls.WebParts.IWebPartParameters.GetParametersData(System.Web.UI.WebControls.WebParts.ParametersCallback)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -208,7 +233,13 @@
       <MemberSignature Language="C#" Value="System.ComponentModel.PropertyDescriptorCollection System.Web.UI.WebControls.WebParts.IWebPartParameters.Schema { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.PropertyDescriptorCollection System.Web.UI.WebControls.WebParts.IWebPartParameters.Schema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.RowToParametersTransformer.System#Web#UI#WebControls#WebParts#IWebPartParameters#Schema" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Schema As PropertyDescriptorCollection Implements IWebPartParameters.Schema" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.WebParts.RowToParametersTransformer.System.Web.UI.WebControls.WebParts.IWebPartParameters.Schema" />
+      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::PropertyDescriptorCollection ^ System.Web.UI.WebControls.WebParts.IWebPartParameters.Schema { System::ComponentModel::PropertyDescriptorCollection ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.WebControls.WebParts.IWebPartParameters.Schema</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -233,7 +264,12 @@
       <MemberSignature Language="C#" Value="void IWebPartParameters.SetConsumerSchema (System.ComponentModel.PropertyDescriptorCollection schema);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.WebParts.IWebPartParameters.SetConsumerSchema(class System.ComponentModel.PropertyDescriptorCollection schema) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.RowToParametersTransformer.System#Web#UI#WebControls#WebParts#IWebPartParameters#SetConsumerSchema(System.ComponentModel.PropertyDescriptorCollection)" />
+      <MemberSignature Language="VB.NET" Value="Sub SetConsumerSchema (schema As PropertyDescriptorCollection) Implements IWebPartParameters.SetConsumerSchema" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.WebControls.WebParts.IWebPartParameters.SetConsumerSchema(System::ComponentModel::PropertyDescriptorCollection ^ schema) = System::Web::UI::WebControls::WebParts::IWebPartParameters::SetConsumerSchema;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.WebControls.WebParts.IWebPartParameters.SetConsumerSchema(System.ComponentModel.PropertyDescriptorCollection)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -261,6 +297,9 @@
       <MemberSignature Language="C#" Value="public override object Transform (object providerData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Transform(object providerData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.RowToParametersTransformer.Transform(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Transform (providerData As Object) As Object" />
+      <MemberSignature Language="F#" Value="override this.Transform : obj -&gt; obj" Usage="rowToParametersTransformer.Transform providerData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Transform(System::Object ^ providerData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

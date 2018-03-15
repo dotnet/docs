@@ -1,7 +1,10 @@
-<Type Name="WebServiceErrorEvent" FullName="System.Web.Management.WebServiceErrorEvent">
+﻿<Type Name="WebServiceErrorEvent" FullName="System.Web.Management.WebServiceErrorEvent">
   <TypeSignature Language="C#" Value="public class WebServiceErrorEvent : System.Web.Management.WebRequestErrorEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebServiceErrorEvent extends System.Web.Management.WebRequestErrorEvent" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebServiceErrorEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebServiceErrorEvent&#xA;Inherits WebRequestErrorEvent" />
+  <TypeSignature Language="F#" Value="type WebServiceErrorEvent = class&#xA;    inherit WebRequestErrorEvent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebServiceErrorEvent : System::Web::Management::WebRequestErrorEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,9 +26,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected WebServiceErrorEvent (string message, object eventSource, Exception exception);" />
+      <MemberSignature Language="C#" Value="protected internal WebServiceErrorEvent (string message, object eventSource, Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebServiceErrorEvent.#ctor(System.String,System.Object,System.Exception)" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebServiceErrorEvent : string * obj * Exception -&gt; System.Web.Management.WebServiceErrorEvent" Usage="new System.Web.Management.WebServiceErrorEvent (message, eventSource, exception)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebServiceErrorEvent(System::String ^ message, System::Object ^ eventSource, Exception ^ exception);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -48,6 +53,9 @@
       <MemberSignature Language="C#" Value="public static int WebServiceErrorEventCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 WebServiceErrorEventCode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebServiceErrorEvent.WebServiceErrorEventCode" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property WebServiceErrorEventCode As Integer" />
+      <MemberSignature Language="F#" Value="member this.WebServiceErrorEventCode : int" Usage="System.Web.Management.WebServiceErrorEvent.WebServiceErrorEventCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int WebServiceErrorEventCode { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

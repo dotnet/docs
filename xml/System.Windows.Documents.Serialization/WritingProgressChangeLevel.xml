@@ -1,7 +1,10 @@
-<Type Name="WritingProgressChangeLevel" FullName="System.Windows.Documents.Serialization.WritingProgressChangeLevel">
+﻿<Type Name="WritingProgressChangeLevel" FullName="System.Windows.Documents.Serialization.WritingProgressChangeLevel">
   <TypeSignature Language="C#" Value="public enum WritingProgressChangeLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WritingProgressChangeLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.WritingProgressChangeLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WritingProgressChangeLevel" />
+  <TypeSignature Language="F#" Value="type WritingProgressChangeLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class WritingProgressChangeLevel" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="FixedDocumentSequenceWritingProgress" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Documents.Serialization.WritingProgressChangeLevel FixedDocumentSequenceWritingProgress = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Serialization.WritingProgressChangeLevel.FixedDocumentSequenceWritingProgress" />
+      <MemberSignature Language="VB.NET" Value="FixedDocumentSequenceWritingProgress" />
+      <MemberSignature Language="F#" Value="FixedDocumentSequenceWritingProgress = 1" Usage="System.Windows.Documents.Serialization.WritingProgressChangeLevel.FixedDocumentSequenceWritingProgress" />
+      <MemberSignature Language="C++ CLI" Value="FixedDocumentSequenceWritingProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Documents.Serialization.WritingProgressChangeLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The output progress of a multiple document sequence.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="FixedDocumentWritingProgress" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Documents.Serialization.WritingProgressChangeLevel FixedDocumentWritingProgress = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Serialization.WritingProgressChangeLevel.FixedDocumentWritingProgress" />
+      <MemberSignature Language="VB.NET" Value="FixedDocumentWritingProgress" />
+      <MemberSignature Language="F#" Value="FixedDocumentWritingProgress = 2" Usage="System.Windows.Documents.Serialization.WritingProgressChangeLevel.FixedDocumentWritingProgress" />
+      <MemberSignature Language="C++ CLI" Value="FixedDocumentWritingProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Documents.Serialization.WritingProgressChangeLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The output progress of a single document.</summary>
       </Docs>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="FixedPageWritingProgress" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Documents.Serialization.WritingProgressChangeLevel FixedPageWritingProgress = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Serialization.WritingProgressChangeLevel.FixedPageWritingProgress" />
+      <MemberSignature Language="VB.NET" Value="FixedPageWritingProgress" />
+      <MemberSignature Language="F#" Value="FixedPageWritingProgress = 3" Usage="System.Windows.Documents.Serialization.WritingProgressChangeLevel.FixedPageWritingProgress" />
+      <MemberSignature Language="C++ CLI" Value="FixedPageWritingProgress" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Documents.Serialization.WritingProgressChangeLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The output progress of a single page.</summary>
       </Docs>
@@ -75,6 +90,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Documents.Serialization.WritingProgressChangeLevel None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Documents.Serialization.WritingProgressChangeLevel.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Documents.Serialization.WritingProgressChangeLevel.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -83,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Documents.Serialization.WritingProgressChangeLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The output progress is unspecified.</summary>
       </Docs>

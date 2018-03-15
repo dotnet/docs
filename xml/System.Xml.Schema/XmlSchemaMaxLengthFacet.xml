@@ -1,7 +1,10 @@
-<Type Name="XmlSchemaMaxLengthFacet" FullName="System.Xml.Schema.XmlSchemaMaxLengthFacet">
+﻿<Type Name="XmlSchemaMaxLengthFacet" FullName="System.Xml.Schema.XmlSchemaMaxLengthFacet">
   <TypeSignature Language="C#" Value="public class XmlSchemaMaxLengthFacet : System.Xml.Schema.XmlSchemaNumericFacet" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaMaxLengthFacet extends System.Xml.Schema.XmlSchemaNumericFacet" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaMaxLengthFacet" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaMaxLengthFacet&#xA;Inherits XmlSchemaNumericFacet" />
+  <TypeSignature Language="F#" Value="type XmlSchemaMaxLengthFacet = class&#xA;    inherit XmlSchemaNumericFacet" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaMaxLengthFacet : System::Xml::Schema::XmlSchemaNumericFacet" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaMaxLengthFacet ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaMaxLengthFacet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaMaxLengthFacet();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

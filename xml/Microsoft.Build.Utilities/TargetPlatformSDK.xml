@@ -1,7 +1,10 @@
-<Type Name="TargetPlatformSDK" FullName="Microsoft.Build.Utilities.TargetPlatformSDK">
+﻿<Type Name="TargetPlatformSDK" FullName="Microsoft.Build.Utilities.TargetPlatformSDK">
   <TypeSignature Language="C#" Value="public class TargetPlatformSDK : IEquatable&lt;Microsoft.Build.Utilities.TargetPlatformSDK&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TargetPlatformSDK extends System.Object implements class System.IEquatable`1&lt;class Microsoft.Build.Utilities.TargetPlatformSDK&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.TargetPlatformSDK" />
+  <TypeSignature Language="VB.NET" Value="Public Class TargetPlatformSDK&#xA;Implements IEquatable(Of TargetPlatformSDK)" />
+  <TypeSignature Language="F#" Value="type TargetPlatformSDK = class&#xA;    interface IEquatable&lt;TargetPlatformSDK&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TargetPlatformSDK : IEquatable&lt;Microsoft::Build::Utilities::TargetPlatformSDK ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="public TargetPlatformSDK (string targetPlatformIdentifier, Version targetPlatformVersion, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string targetPlatformIdentifier, class System.Version targetPlatformVersion, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TargetPlatformSDK.#ctor(System.String,System.Version,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetPlatformIdentifier As String, targetPlatformVersion As Version, path As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.TargetPlatformSDK : string * Version * string -&gt; Microsoft.Build.Utilities.TargetPlatformSDK" Usage="new Microsoft.Build.Utilities.TargetPlatformSDK (targetPlatformIdentifier, targetPlatformVersion, path)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TargetPlatformSDK(System::String ^ targetPlatformIdentifier, Version ^ targetPlatformVersion, System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -41,11 +47,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Implements equality operator for target platform comparisons.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (Microsoft.Build.Utilities.TargetPlatformSDK other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class Microsoft.Build.Utilities.TargetPlatformSDK other) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TargetPlatformSDK.Equals(Microsoft.Build.Utilities.TargetPlatformSDK)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As TargetPlatformSDK) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : Microsoft.Build.Utilities.TargetPlatformSDK -&gt; bool" Usage="targetPlatformSDK.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(Microsoft::Build::Utilities::TargetPlatformSDK ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -67,6 +88,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TargetPlatformSDK.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="targetPlatformSDK.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -89,6 +113,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.TargetPlatformSDK.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="targetPlatformSDK.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -108,6 +135,9 @@
       <MemberSignature Language="C#" Value="public string Path { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Path" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.TargetPlatformSDK.Path" />
+      <MemberSignature Language="VB.NET" Value="Public Property Path As String" />
+      <MemberSignature Language="F#" Value="member this.Path : string with get, set" Usage="Microsoft.Build.Utilities.TargetPlatformSDK.Path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Path { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -126,6 +156,9 @@
       <MemberSignature Language="C#" Value="public string TargetPlatformIdentifier { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetPlatformIdentifier" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.TargetPlatformSDK.TargetPlatformIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetPlatformIdentifier As String" />
+      <MemberSignature Language="F#" Value="member this.TargetPlatformIdentifier : string" Usage="Microsoft.Build.Utilities.TargetPlatformSDK.TargetPlatformIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetPlatformIdentifier { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -144,6 +177,9 @@
       <MemberSignature Language="C#" Value="public Version TargetPlatformVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version TargetPlatformVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.TargetPlatformSDK.TargetPlatformVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetPlatformVersion As Version" />
+      <MemberSignature Language="F#" Value="member this.TargetPlatformVersion : Version" Usage="Microsoft.Build.Utilities.TargetPlatformSDK.TargetPlatformVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ TargetPlatformVersion { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -158,14 +194,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Implements equality operator for target platform comparisons.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

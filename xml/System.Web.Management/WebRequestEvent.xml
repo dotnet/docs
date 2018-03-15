@@ -1,7 +1,10 @@
-<Type Name="WebRequestEvent" FullName="System.Web.Management.WebRequestEvent">
+﻿<Type Name="WebRequestEvent" FullName="System.Web.Management.WebRequestEvent">
   <TypeSignature Language="C#" Value="public class WebRequestEvent : System.Web.Management.WebManagementEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebRequestEvent extends System.Web.Management.WebManagementEvent" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebRequestEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebRequestEvent&#xA;Inherits WebManagementEvent" />
+  <TypeSignature Language="F#" Value="type WebRequestEvent = class&#xA;    inherit WebManagementEvent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebRequestEvent : System::Web::Management::WebManagementEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,10 +69,22 @@ type="SamplesAspNet.SampleWebRequestEvent,webrequestevent,Version=1.0.1573.23947
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebRequestEvent" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected WebRequestEvent (string message, object eventSource, int eventCode);" />
+      <MemberSignature Language="C#" Value="protected internal WebRequestEvent (string message, object eventSource, int eventCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebRequestEvent.#ctor(System.String,System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebRequestEvent : string * obj * int -&gt; System.Web.Management.WebRequestEvent" Usage="new System.Web.Management.WebRequestEvent (message, eventSource, eventCode)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebRequestEvent(System::String ^ message, System::Object ^ eventSource, int eventCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,9 +122,12 @@ type="SamplesAspNet.SampleWebRequestEvent,webrequestevent,Version=1.0.1573.23947
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected WebRequestEvent (string message, object eventSource, int eventCode, int eventDetailCode);" />
+      <MemberSignature Language="C#" Value="protected internal WebRequestEvent (string message, object eventSource, int eventCode, int eventDetailCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, int32 eventDetailCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebRequestEvent.#ctor(System.String,System.Object,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer, eventDetailCode As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebRequestEvent : string * obj * int * int -&gt; System.Web.Management.WebRequestEvent" Usage="new System.Web.Management.WebRequestEvent (message, eventSource, eventCode, eventDetailCode)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebRequestEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, int eventDetailCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,9 +167,12 @@ type="SamplesAspNet.SampleWebRequestEvent,webrequestevent,Version=1.0.1573.23947
       </Docs>
     </Member>
     <Member MemberName="IncrementPerfCounters">
-      <MemberSignature Language="C#" Value="protected override void IncrementPerfCounters ();" />
+      <MemberSignature Language="C#" Value="protected internal override void IncrementPerfCounters ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void IncrementPerfCounters() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebRequestEvent.IncrementPerfCounters" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub IncrementPerfCounters ()" />
+      <MemberSignature Language="F#" Value="override this.IncrementPerfCounters : unit -&gt; unit" Usage="webRequestEvent.IncrementPerfCounters " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void IncrementPerfCounters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +191,9 @@ type="SamplesAspNet.SampleWebRequestEvent,webrequestevent,Version=1.0.1573.23947
       <MemberSignature Language="C#" Value="public System.Web.Management.WebRequestInformation RequestInformation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Management.WebRequestInformation RequestInformation" />
       <MemberSignature Language="DocId" Value="P:System.Web.Management.WebRequestEvent.RequestInformation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequestInformation As WebRequestInformation" />
+      <MemberSignature Language="F#" Value="member this.RequestInformation : System.Web.Management.WebRequestInformation" Usage="System.Web.Management.WebRequestEvent.RequestInformation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Management::WebRequestInformation ^ RequestInformation { System::Web::Management::WebRequestInformation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -199,14 +223,5 @@ type="SamplesAspNet.SampleWebRequestEvent,webrequestevent,Version=1.0.1573.23947
         <altmember cref="T:System.Web.Management.WebRequestInformation" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebRequestEvent" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

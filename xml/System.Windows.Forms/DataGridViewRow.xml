@@ -1,7 +1,10 @@
-<Type Name="DataGridViewRow" FullName="System.Windows.Forms.DataGridViewRow">
+﻿<Type Name="DataGridViewRow" FullName="System.Windows.Forms.DataGridViewRow">
   <TypeSignature Language="C#" Value="public class DataGridViewRow : System.Windows.Forms.DataGridViewBand" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewRow extends System.Windows.Forms.DataGridViewBand" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRow" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridViewRow&#xA;Inherits DataGridViewBand" />
+  <TypeSignature Language="F#" Value="type DataGridViewRow = class&#xA;    inherit DataGridViewBand" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewRow : System::Windows::Forms::DataGridViewBand" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +55,8 @@
       <MemberSignature Language="C#" Value="public DataGridViewRow ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewRow();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +80,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.AccessibleObject AccessibilityObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.AccessibleObject AccessibilityObject" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.AccessibilityObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AccessibilityObject As AccessibleObject" />
+      <MemberSignature Language="F#" Value="member this.AccessibilityObject : System.Windows.Forms.AccessibleObject" Usage="System.Windows.Forms.DataGridViewRow.AccessibilityObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::AccessibleObject ^ AccessibilityObject { System::Windows::Forms::AccessibleObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -116,6 +124,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataGridViewAdvancedBorderStyle AdjustRowHeaderBorderStyle (System.Windows.Forms.DataGridViewAdvancedBorderStyle dataGridViewAdvancedBorderStyleInput, System.Windows.Forms.DataGridViewAdvancedBorderStyle dataGridViewAdvancedBorderStylePlaceholder, bool singleVerticalBorderAdded, bool singleHorizontalBorderAdded, bool isFirstDisplayedRow, bool isLastVisibleRow);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.DataGridViewAdvancedBorderStyle AdjustRowHeaderBorderStyle(class System.Windows.Forms.DataGridViewAdvancedBorderStyle dataGridViewAdvancedBorderStyleInput, class System.Windows.Forms.DataGridViewAdvancedBorderStyle dataGridViewAdvancedBorderStylePlaceholder, bool singleVerticalBorderAdded, bool singleHorizontalBorderAdded, bool isFirstDisplayedRow, bool isLastVisibleRow) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.AdjustRowHeaderBorderStyle(System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Windows.Forms.DataGridViewAdvancedBorderStyle,System.Boolean,System.Boolean,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function AdjustRowHeaderBorderStyle (dataGridViewAdvancedBorderStyleInput As DataGridViewAdvancedBorderStyle, dataGridViewAdvancedBorderStylePlaceholder As DataGridViewAdvancedBorderStyle, singleVerticalBorderAdded As Boolean, singleHorizontalBorderAdded As Boolean, isFirstDisplayedRow As Boolean, isLastVisibleRow As Boolean) As DataGridViewAdvancedBorderStyle" />
+      <MemberSignature Language="F#" Value="abstract member AdjustRowHeaderBorderStyle : System.Windows.Forms.DataGridViewAdvancedBorderStyle * System.Windows.Forms.DataGridViewAdvancedBorderStyle * bool * bool * bool * bool -&gt; System.Windows.Forms.DataGridViewAdvancedBorderStyle&#xA;override this.AdjustRowHeaderBorderStyle : System.Windows.Forms.DataGridViewAdvancedBorderStyle * System.Windows.Forms.DataGridViewAdvancedBorderStyle * bool * bool * bool * bool -&gt; System.Windows.Forms.DataGridViewAdvancedBorderStyle" Usage="dataGridViewRow.AdjustRowHeaderBorderStyle (dataGridViewAdvancedBorderStyleInput, dataGridViewAdvancedBorderStylePlaceholder, singleVerticalBorderAdded, singleHorizontalBorderAdded, isFirstDisplayedRow, isLastVisibleRow)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::DataGridViewAdvancedBorderStyle ^ AdjustRowHeaderBorderStyle(System::Windows::Forms::DataGridViewAdvancedBorderStyle ^ dataGridViewAdvancedBorderStyleInput, System::Windows::Forms::DataGridViewAdvancedBorderStyle ^ dataGridViewAdvancedBorderStylePlaceholder, bool singleVerticalBorderAdded, bool singleHorizontalBorderAdded, bool isFirstDisplayedRow, bool isLastVisibleRow);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -179,6 +190,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewCellCollection Cells { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCellCollection Cells" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.Cells" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Cells As DataGridViewCellCollection" />
+      <MemberSignature Language="F#" Value="member this.Cells : System.Windows.Forms.DataGridViewCellCollection" Usage="System.Windows.Forms.DataGridViewRow.Cells" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewCellCollection ^ Cells { System::Windows::Forms::DataGridViewCellCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -189,7 +203,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -225,6 +239,9 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="dataGridViewRow.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -265,6 +282,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.ContextMenuStrip ContextMenuStrip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ContextMenuStrip ContextMenuStrip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.ContextMenuStrip" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ContextMenuStrip As ContextMenuStrip" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStrip : System.Windows.Forms.ContextMenuStrip with get, set" Usage="System.Windows.Forms.DataGridViewRow.ContextMenuStrip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ContextMenuStrip ^ ContextMenuStrip { System::Windows::Forms::ContextMenuStrip ^ get(); void set(System::Windows::Forms::ContextMenuStrip ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -319,6 +339,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.CreateAccessibilityInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateAccessibilityInstance () As AccessibleObject" />
+      <MemberSignature Language="F#" Value="abstract member CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject&#xA;override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="dataGridViewRow.CreateAccessibilityInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -345,10 +368,21 @@
         <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateCells">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resets the cells in the row.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateCells">
       <MemberSignature Language="C#" Value="public void CreateCells (System.Windows.Forms.DataGridView dataGridView);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CreateCells(class System.Windows.Forms.DataGridView dataGridView) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.CreateCells(System.Windows.Forms.DataGridView)" />
+      <MemberSignature Language="F#" Value="member this.CreateCells : System.Windows.Forms.DataGridView -&gt; unit" Usage="dataGridViewRow.CreateCells dataGridView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateCells(System::Windows::Forms::DataGridView ^ dataGridView);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -388,6 +422,8 @@
       <MemberSignature Language="C#" Value="public void CreateCells (System.Windows.Forms.DataGridView dataGridView, params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CreateCells(class System.Windows.Forms.DataGridView dataGridView, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.CreateCells(System.Windows.Forms.DataGridView,System.Object[])" />
+      <MemberSignature Language="F#" Value="member this.CreateCells : System.Windows.Forms.DataGridView * obj[] -&gt; unit" Usage="dataGridViewRow.CreateCells (dataGridView, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CreateCells(System::Windows::Forms::DataGridView ^ dataGridView, ... cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -437,6 +473,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.DataGridViewCellCollection CreateCellsInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Forms.DataGridViewCellCollection CreateCellsInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.CreateCellsInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateCellsInstance () As DataGridViewCellCollection" />
+      <MemberSignature Language="F#" Value="abstract member CreateCellsInstance : unit -&gt; System.Windows.Forms.DataGridViewCellCollection&#xA;override this.CreateCellsInstance : unit -&gt; System.Windows.Forms.DataGridViewCellCollection" Usage="dataGridViewRow.CreateCellsInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Forms::DataGridViewCellCollection ^ CreateCellsInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -473,6 +512,9 @@
       <MemberSignature Language="C#" Value="public object DataBoundItem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DataBoundItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.DataBoundItem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataBoundItem As Object" />
+      <MemberSignature Language="F#" Value="member this.DataBoundItem : obj" Usage="System.Windows.Forms.DataGridViewRow.DataBoundItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataBoundItem { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -515,6 +557,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewCellStyle DefaultCellStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCellStyle DefaultCellStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.DefaultCellStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property DefaultCellStyle As DataGridViewCellStyle" />
+      <MemberSignature Language="F#" Value="member this.DefaultCellStyle : System.Windows.Forms.DataGridViewCellStyle with get, set" Usage="System.Windows.Forms.DataGridViewRow.DefaultCellStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCellStyle ^ DefaultCellStyle { System::Windows::Forms::DataGridViewCellStyle ^ get(); void set(System::Windows::Forms::DataGridViewCellStyle ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -525,7 +570,7 @@
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -566,6 +611,9 @@
       <MemberSignature Language="C#" Value="public override bool Displayed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Displayed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.Displayed" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Displayed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Displayed : bool" Usage="System.Windows.Forms.DataGridViewRow.Displayed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Displayed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -592,6 +640,9 @@
       <MemberSignature Language="C#" Value="public int DividerHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DividerHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.DividerHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property DividerHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.DividerHeight : int with get, set" Usage="System.Windows.Forms.DataGridViewRow.DividerHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DividerHeight { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -633,9 +684,11 @@
       </Docs>
     </Member>
     <Member MemberName="DrawFocus">
-      <MemberSignature Language="C#" Value="protected virtual void DrawFocus (System.Drawing.Graphics graphics, System.Drawing.Rectangle clipBounds, System.Drawing.Rectangle bounds, int rowIndex, System.Windows.Forms.DataGridViewElementStates rowState, System.Windows.Forms.DataGridViewCellStyle cellStyle, bool cellsPaintSelectionBackground);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void DrawFocus (System.Drawing.Graphics graphics, System.Drawing.Rectangle clipBounds, System.Drawing.Rectangle bounds, int rowIndex, System.Windows.Forms.DataGridViewElementStates rowState, System.Windows.Forms.DataGridViewCellStyle cellStyle, bool cellsPaintSelectionBackground);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void DrawFocus(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle clipBounds, valuetype System.Drawing.Rectangle bounds, int32 rowIndex, valuetype System.Windows.Forms.DataGridViewElementStates rowState, class System.Windows.Forms.DataGridViewCellStyle cellStyle, bool cellsPaintSelectionBackground) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.DrawFocus(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Windows.Forms.DataGridViewCellStyle,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member DrawFocus : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Rectangle * int * System.Windows.Forms.DataGridViewElementStates * System.Windows.Forms.DataGridViewCellStyle * bool -&gt; unit&#xA;override this.DrawFocus : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Rectangle * int * System.Windows.Forms.DataGridViewElementStates * System.Windows.Forms.DataGridViewCellStyle * bool -&gt; unit" Usage="dataGridViewRow.DrawFocus (graphics, clipBounds, bounds, rowIndex, rowState, cellStyle, cellsPaintSelectionBackground)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void DrawFocus(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle clipBounds, System::Drawing::Rectangle bounds, int rowIndex, System::Windows::Forms::DataGridViewElementStates rowState, System::Windows::Forms::DataGridViewCellStyle ^ cellStyle, bool cellsPaintSelectionBackground);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -690,6 +743,9 @@
       <MemberSignature Language="C#" Value="public string ErrorText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.ErrorText" />
+      <MemberSignature Language="VB.NET" Value="Public Property ErrorText As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorText : string with get, set" Usage="System.Windows.Forms.DataGridViewRow.ErrorText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -750,6 +806,9 @@
       <MemberSignature Language="C#" Value="public override bool Frozen { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Frozen" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.Frozen" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Frozen As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Frozen : bool with get, set" Usage="System.Windows.Forms.DataGridViewRow.Frozen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Frozen { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -792,6 +851,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ContextMenuStrip GetContextMenuStrip (int rowIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ContextMenuStrip GetContextMenuStrip(int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.GetContextMenuStrip(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetContextMenuStrip (rowIndex As Integer) As ContextMenuStrip" />
+      <MemberSignature Language="F#" Value="member this.GetContextMenuStrip : int -&gt; System.Windows.Forms.ContextMenuStrip" Usage="dataGridViewRow.GetContextMenuStrip rowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ContextMenuStrip ^ GetContextMenuStrip(int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -826,6 +888,9 @@
       <MemberSignature Language="C#" Value="public string GetErrorText (int rowIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetErrorText(int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.GetErrorText(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetErrorText (rowIndex As Integer) As String" />
+      <MemberSignature Language="F#" Value="member this.GetErrorText : int -&gt; string" Usage="dataGridViewRow.GetErrorText rowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetErrorText(int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -858,6 +923,9 @@
       <MemberSignature Language="C#" Value="public virtual int GetPreferredHeight (int rowIndex, System.Windows.Forms.DataGridViewAutoSizeRowMode autoSizeRowMode, bool fixedWidth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetPreferredHeight(int32 rowIndex, valuetype System.Windows.Forms.DataGridViewAutoSizeRowMode autoSizeRowMode, bool fixedWidth) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.GetPreferredHeight(System.Int32,System.Windows.Forms.DataGridViewAutoSizeRowMode,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPreferredHeight (rowIndex As Integer, autoSizeRowMode As DataGridViewAutoSizeRowMode, fixedWidth As Boolean) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetPreferredHeight : int * System.Windows.Forms.DataGridViewAutoSizeRowMode * bool -&gt; int&#xA;override this.GetPreferredHeight : int * System.Windows.Forms.DataGridViewAutoSizeRowMode * bool -&gt; int" Usage="dataGridViewRow.GetPreferredHeight (rowIndex, autoSizeRowMode, fixedWidth)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetPreferredHeight(int rowIndex, System::Windows::Forms::DataGridViewAutoSizeRowMode autoSizeRowMode, bool fixedWidth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -913,6 +981,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataGridViewElementStates GetState (int rowIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Forms.DataGridViewElementStates GetState(int32 rowIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.GetState(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetState (rowIndex As Integer) As DataGridViewElementStates" />
+      <MemberSignature Language="F#" Value="abstract member GetState : int -&gt; System.Windows.Forms.DataGridViewElementStates&#xA;override this.GetState : int -&gt; System.Windows.Forms.DataGridViewElementStates" Usage="dataGridViewRow.GetState rowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::DataGridViewElementStates GetState(int rowIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -958,6 +1029,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewRowHeaderCell HeaderCell { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewRowHeaderCell HeaderCell" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.HeaderCell" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderCell As DataGridViewRowHeaderCell" />
+      <MemberSignature Language="F#" Value="member this.HeaderCell : System.Windows.Forms.DataGridViewRowHeaderCell with get, set" Usage="System.Windows.Forms.DataGridViewRow.HeaderCell" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewRowHeaderCell ^ HeaderCell { System::Windows::Forms::DataGridViewRowHeaderCell ^ get(); void set(System::Windows::Forms::DataGridViewRowHeaderCell ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -968,7 +1042,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1003,6 +1077,9 @@
       <MemberSignature Language="C#" Value="public int Height { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
+      <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="System.Windows.Forms.DataGridViewRow.Height" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1048,6 +1125,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewCellStyle InheritedStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCellStyle InheritedStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.InheritedStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property InheritedStyle As DataGridViewCellStyle" />
+      <MemberSignature Language="F#" Value="member this.InheritedStyle : System.Windows.Forms.DataGridViewCellStyle" Usage="System.Windows.Forms.DataGridViewRow.InheritedStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCellStyle ^ InheritedStyle { System::Windows::Forms::DataGridViewCellStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1090,6 +1170,9 @@
       <MemberSignature Language="C#" Value="public bool IsNewRow { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNewRow" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.IsNewRow" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNewRow As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNewRow : bool" Usage="System.Windows.Forms.DataGridViewRow.IsNewRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNewRow { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1100,7 +1183,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1136,6 +1219,9 @@
       <MemberSignature Language="C#" Value="public int MinimumHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinimumHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.MinimumHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinimumHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.MinimumHeight : int with get, set" Usage="System.Windows.Forms.DataGridViewRow.MinimumHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumHeight { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1146,7 +1232,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1179,9 +1265,11 @@
       </Docs>
     </Member>
     <Member MemberName="Paint">
-      <MemberSignature Language="C#" Value="protected virtual void Paint (System.Drawing.Graphics graphics, System.Drawing.Rectangle clipBounds, System.Drawing.Rectangle rowBounds, int rowIndex, System.Windows.Forms.DataGridViewElementStates rowState, bool isFirstDisplayedRow, bool isLastVisibleRow);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void Paint (System.Drawing.Graphics graphics, System.Drawing.Rectangle clipBounds, System.Drawing.Rectangle rowBounds, int rowIndex, System.Windows.Forms.DataGridViewElementStates rowState, bool isFirstDisplayedRow, bool isLastVisibleRow);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Paint(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle clipBounds, valuetype System.Drawing.Rectangle rowBounds, int32 rowIndex, valuetype System.Windows.Forms.DataGridViewElementStates rowState, bool isFirstDisplayedRow, bool isLastVisibleRow) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Paint : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Rectangle * int * System.Windows.Forms.DataGridViewElementStates * bool * bool -&gt; unit&#xA;override this.Paint : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Rectangle * int * System.Windows.Forms.DataGridViewElementStates * bool * bool -&gt; unit" Usage="dataGridViewRow.Paint (graphics, clipBounds, rowBounds, rowIndex, rowState, isFirstDisplayedRow, isLastVisibleRow)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Paint(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle clipBounds, System::Drawing::Rectangle rowBounds, int rowIndex, System::Windows::Forms::DataGridViewElementStates rowState, bool isFirstDisplayedRow, bool isLastVisibleRow);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1234,9 +1322,11 @@
       </Docs>
     </Member>
     <Member MemberName="PaintCells">
-      <MemberSignature Language="C#" Value="protected virtual void PaintCells (System.Drawing.Graphics graphics, System.Drawing.Rectangle clipBounds, System.Drawing.Rectangle rowBounds, int rowIndex, System.Windows.Forms.DataGridViewElementStates rowState, bool isFirstDisplayedRow, bool isLastVisibleRow, System.Windows.Forms.DataGridViewPaintParts paintParts);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void PaintCells (System.Drawing.Graphics graphics, System.Drawing.Rectangle clipBounds, System.Drawing.Rectangle rowBounds, int rowIndex, System.Windows.Forms.DataGridViewElementStates rowState, bool isFirstDisplayedRow, bool isLastVisibleRow, System.Windows.Forms.DataGridViewPaintParts paintParts);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void PaintCells(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle clipBounds, valuetype System.Drawing.Rectangle rowBounds, int32 rowIndex, valuetype System.Windows.Forms.DataGridViewElementStates rowState, bool isFirstDisplayedRow, bool isLastVisibleRow, valuetype System.Windows.Forms.DataGridViewPaintParts paintParts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.PaintCells(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Boolean,System.Boolean,System.Windows.Forms.DataGridViewPaintParts)" />
+      <MemberSignature Language="F#" Value="abstract member PaintCells : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Rectangle * int * System.Windows.Forms.DataGridViewElementStates * bool * bool * System.Windows.Forms.DataGridViewPaintParts -&gt; unit&#xA;override this.PaintCells : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Rectangle * int * System.Windows.Forms.DataGridViewElementStates * bool * bool * System.Windows.Forms.DataGridViewPaintParts -&gt; unit" Usage="dataGridViewRow.PaintCells (graphics, clipBounds, rowBounds, rowIndex, rowState, isFirstDisplayedRow, isLastVisibleRow, paintParts)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void PaintCells(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle clipBounds, System::Drawing::Rectangle rowBounds, int rowIndex, System::Windows::Forms::DataGridViewElementStates rowState, bool isFirstDisplayedRow, bool isLastVisibleRow, System::Windows::Forms::DataGridViewPaintParts paintParts);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1290,9 +1380,11 @@
       </Docs>
     </Member>
     <Member MemberName="PaintHeader">
-      <MemberSignature Language="C#" Value="protected virtual void PaintHeader (System.Drawing.Graphics graphics, System.Drawing.Rectangle clipBounds, System.Drawing.Rectangle rowBounds, int rowIndex, System.Windows.Forms.DataGridViewElementStates rowState, bool isFirstDisplayedRow, bool isLastVisibleRow, System.Windows.Forms.DataGridViewPaintParts paintParts);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void PaintHeader (System.Drawing.Graphics graphics, System.Drawing.Rectangle clipBounds, System.Drawing.Rectangle rowBounds, int rowIndex, System.Windows.Forms.DataGridViewElementStates rowState, bool isFirstDisplayedRow, bool isLastVisibleRow, System.Windows.Forms.DataGridViewPaintParts paintParts);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void PaintHeader(class System.Drawing.Graphics graphics, valuetype System.Drawing.Rectangle clipBounds, valuetype System.Drawing.Rectangle rowBounds, int32 rowIndex, valuetype System.Windows.Forms.DataGridViewElementStates rowState, bool isFirstDisplayedRow, bool isLastVisibleRow, valuetype System.Windows.Forms.DataGridViewPaintParts paintParts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.PaintHeader(System.Drawing.Graphics,System.Drawing.Rectangle,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.DataGridViewElementStates,System.Boolean,System.Boolean,System.Windows.Forms.DataGridViewPaintParts)" />
+      <MemberSignature Language="F#" Value="abstract member PaintHeader : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Rectangle * int * System.Windows.Forms.DataGridViewElementStates * bool * bool * System.Windows.Forms.DataGridViewPaintParts -&gt; unit&#xA;override this.PaintHeader : System.Drawing.Graphics * System.Drawing.Rectangle * System.Drawing.Rectangle * int * System.Windows.Forms.DataGridViewElementStates * bool * bool * System.Windows.Forms.DataGridViewPaintParts -&gt; unit" Usage="dataGridViewRow.PaintHeader (graphics, clipBounds, rowBounds, rowIndex, rowState, isFirstDisplayedRow, isLastVisibleRow, paintParts)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void PaintHeader(System::Drawing::Graphics ^ graphics, System::Drawing::Rectangle clipBounds, System::Drawing::Rectangle rowBounds, int rowIndex, System::Windows::Forms::DataGridViewElementStates rowState, bool isFirstDisplayedRow, bool isLastVisibleRow, System::Windows::Forms::DataGridViewPaintParts paintParts);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1349,6 +1441,9 @@
       <MemberSignature Language="C#" Value="public override bool ReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool with get, set" Usage="System.Windows.Forms.DataGridViewRow.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1400,6 +1495,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewTriState Resizable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewTriState Resizable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.Resizable" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Resizable As DataGridViewTriState" />
+      <MemberSignature Language="F#" Value="member this.Resizable : System.Windows.Forms.DataGridViewTriState with get, set" Usage="System.Windows.Forms.DataGridViewRow.Resizable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewTriState Resizable { System::Windows::Forms::DataGridViewTriState get(); void set(System::Windows::Forms::DataGridViewTriState value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1448,6 +1546,9 @@
       <MemberSignature Language="C#" Value="public override bool Selected { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Selected" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.Selected" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Selected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Selected : bool with get, set" Usage="System.Windows.Forms.DataGridViewRow.Selected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Selected { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1484,6 +1585,9 @@
       <MemberSignature Language="C#" Value="public bool SetValues (params object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SetValues(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.SetValues(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function SetValues (ParamArray values As Object()) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SetValues : obj[] -&gt; bool" Usage="dataGridViewRow.SetValues values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SetValues(... cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1539,6 +1643,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewElementStates State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewElementStates State" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.State" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As DataGridViewElementStates" />
+      <MemberSignature Language="F#" Value="member this.State : System.Windows.Forms.DataGridViewElementStates" Usage="System.Windows.Forms.DataGridViewRow.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewElementStates State { System::Windows::Forms::DataGridViewElementStates get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1568,6 +1675,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewRow.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataGridViewRow.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1596,6 +1706,9 @@
       <MemberSignature Language="C#" Value="public override bool Visible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRow.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Windows.Forms.DataGridViewRow.Visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1635,14 +1748,5 @@
         <altmember cref="M:System.Windows.Forms.DataGridViewRowCollection.Remove(System.Windows.Forms.DataGridViewRow)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateCells">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Resets the cells in the row.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

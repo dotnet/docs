@@ -1,7 +1,10 @@
-<Type Name="BodyWriter" FullName="System.ServiceModel.Channels.BodyWriter">
+﻿<Type Name="BodyWriter" FullName="System.ServiceModel.Channels.BodyWriter">
   <TypeSignature Language="C#" Value="public abstract class BodyWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BodyWriter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.BodyWriter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BodyWriter" />
+  <TypeSignature Language="F#" Value="type BodyWriter = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BodyWriter abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="protected BodyWriter (bool isBuffered);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool isBuffered) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (isBuffered As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.BodyWriter : bool -&gt; System.ServiceModel.Channels.BodyWriter" Usage="new System.ServiceModel.Channels.BodyWriter isBuffered" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BodyWriter(bool isBuffered);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -74,6 +80,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginWriteBodyContents (System.Xml.XmlDictionaryWriter writer, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginWriteBodyContents(class System.Xml.XmlDictionaryWriter writer, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.BeginWriteBodyContents(System.Xml.XmlDictionaryWriter,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginWriteBodyContents (writer As XmlDictionaryWriter, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginWriteBodyContents : System.Xml.XmlDictionaryWriter * AsyncCallback * obj -&gt; IAsyncResult" Usage="bodyWriter.BeginWriteBodyContents (writer, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginWriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -100,6 +109,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.BodyWriter CreateBufferedCopy (int maxBufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.BodyWriter CreateBufferedCopy(int32 maxBufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.CreateBufferedCopy(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateBufferedCopy (maxBufferSize As Integer) As BodyWriter" />
+      <MemberSignature Language="F#" Value="member this.CreateBufferedCopy : int -&gt; System.ServiceModel.Channels.BodyWriter" Usage="bodyWriter.CreateBufferedCopy maxBufferSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::BodyWriter ^ CreateBufferedCopy(int maxBufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,6 +158,9 @@
       <MemberSignature Language="C#" Value="public void EndWriteBodyContents (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndWriteBodyContents(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.EndWriteBodyContents(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndWriteBodyContents (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndWriteBodyContents : IAsyncResult -&gt; unit" Usage="bodyWriter.EndWriteBodyContents result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndWriteBodyContents(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +182,9 @@
       <MemberSignature Language="C#" Value="public bool IsBuffered { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBuffered" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.BodyWriter.IsBuffered" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBuffered As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsBuffered : bool" Usage="System.ServiceModel.Channels.BodyWriter.IsBuffered" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBuffered { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -200,6 +218,9 @@
       <MemberSignature Language="C#" Value="protected virtual IAsyncResult OnBeginWriteBodyContents (System.Xml.XmlDictionaryWriter writer, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginWriteBodyContents(class System.Xml.XmlDictionaryWriter writer, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.OnBeginWriteBodyContents(System.Xml.XmlDictionaryWriter,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnBeginWriteBodyContents (writer As XmlDictionaryWriter, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginWriteBodyContents : System.Xml.XmlDictionaryWriter * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.OnBeginWriteBodyContents : System.Xml.XmlDictionaryWriter * AsyncCallback * obj -&gt; IAsyncResult" Usage="bodyWriter.OnBeginWriteBodyContents (writer, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ OnBeginWriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -226,6 +247,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.ServiceModel.Channels.BodyWriter OnCreateBufferedCopy (int maxBufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Channels.BodyWriter OnCreateBufferedCopy(int32 maxBufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.OnCreateBufferedCopy(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnCreateBufferedCopy (maxBufferSize As Integer) As BodyWriter" />
+      <MemberSignature Language="F#" Value="abstract member OnCreateBufferedCopy : int -&gt; System.ServiceModel.Channels.BodyWriter&#xA;override this.OnCreateBufferedCopy : int -&gt; System.ServiceModel.Channels.BodyWriter" Usage="bodyWriter.OnCreateBufferedCopy maxBufferSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::ServiceModel::Channels::BodyWriter ^ OnCreateBufferedCopy(int maxBufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -264,6 +288,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnEndWriteBodyContents (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEndWriteBodyContents(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.OnEndWriteBodyContents(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEndWriteBodyContents (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member OnEndWriteBodyContents : IAsyncResult -&gt; unit&#xA;override this.OnEndWriteBodyContents : IAsyncResult -&gt; unit" Usage="bodyWriter.OnEndWriteBodyContents result" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEndWriteBodyContents(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -285,6 +312,9 @@
       <MemberSignature Language="C#" Value="protected abstract void OnWriteBodyContents (System.Xml.XmlDictionaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnWriteBodyContents(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.OnWriteBodyContents(System.Xml.XmlDictionaryWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnWriteBodyContents (writer As XmlDictionaryWriter)" />
+      <MemberSignature Language="F#" Value="abstract member OnWriteBodyContents : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="bodyWriter.OnWriteBodyContents writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnWriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -328,6 +358,9 @@
       <MemberSignature Language="C#" Value="public void WriteBodyContents (System.Xml.XmlDictionaryWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteBodyContents(class System.Xml.XmlDictionaryWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.BodyWriter.WriteBodyContents(System.Xml.XmlDictionaryWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteBodyContents (writer As XmlDictionaryWriter)" />
+      <MemberSignature Language="F#" Value="member this.WriteBodyContents : System.Xml.XmlDictionaryWriter -&gt; unit" Usage="bodyWriter.WriteBodyContents writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteBodyContents(System::Xml::XmlDictionaryWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

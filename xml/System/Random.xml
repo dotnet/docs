@@ -1,7 +1,10 @@
-<Type Name="Random" FullName="System.Random">
+﻿<Type Name="Random" FullName="System.Random">
   <TypeSignature Language="C#" Value="public class Random" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Random extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Random" />
+  <TypeSignature Language="VB.NET" Value="Public Class Random" />
+  <TypeSignature Language="F#" Value="type Random = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Random" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -315,10 +318,24 @@ Random.NextDouble() * (maxValue – minValue) + minValue
     </block>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Random" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Random ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Random.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Random();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -365,6 +382,9 @@ Random.NextDouble() * (maxValue – minValue) + minValue
       <MemberSignature Language="C#" Value="public Random (int Seed);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 Seed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Random.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Seed As Integer)" />
+      <MemberSignature Language="F#" Value="new Random : int -&gt; Random" Usage="new System.Random Seed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Random(int Seed);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -414,10 +434,25 @@ Random.NextDouble() * (maxValue – minValue) + minValue
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Next">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a random integer.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Next">
       <MemberSignature Language="C#" Value="public virtual int Next ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Random.Next" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Next () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Next : unit -&gt; int&#xA;override this.Next : unit -&gt; int" Usage="random.Next " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Next();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -475,6 +510,9 @@ Random.NextDouble() * (maxValue – minValue) + minValue
       <MemberSignature Language="C#" Value="public virtual int Next (int maxValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(int32 maxValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Random.Next(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Next (maxValue As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Next : int -&gt; int&#xA;override this.Next : int -&gt; int" Usage="random.Next maxValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Next(int maxValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -534,6 +572,9 @@ Random.NextDouble() * (maxValue – minValue) + minValue
       <MemberSignature Language="C#" Value="public virtual int Next (int minValue, int maxValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(int32 minValue, int32 maxValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Random.Next(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Next (minValue As Integer, maxValue As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Next : int * int -&gt; int&#xA;override this.Next : int * int -&gt; int" Usage="random.Next (minValue, maxValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Next(int minValue, int maxValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -600,6 +641,9 @@ Random.NextDouble() * (maxValue – minValue) + minValue
       <MemberSignature Language="C#" Value="public virtual void NextBytes (byte[] buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NextBytes(unsigned int8[] buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Random.NextBytes(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub NextBytes (buffer As Byte())" />
+      <MemberSignature Language="F#" Value="abstract member NextBytes : byte[] -&gt; unit&#xA;override this.NextBytes : byte[] -&gt; unit" Usage="random.NextBytes buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void NextBytes(cli::array &lt;System::Byte&gt; ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -657,6 +701,9 @@ Random.NextDouble() * (maxValue – minValue) + minValue
       <MemberSignature Language="C#" Value="public virtual double NextDouble ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 NextDouble() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Random.NextDouble" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function NextDouble () As Double" />
+      <MemberSignature Language="F#" Value="abstract member NextDouble : unit -&gt; double&#xA;override this.NextDouble : unit -&gt; double" Usage="random.NextDouble " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual double NextDouble();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -713,6 +760,9 @@ Random.NextDouble() * (maxValue – minValue) + minValue
       <MemberSignature Language="C#" Value="protected virtual double Sample ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance float64 Sample() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Random.Sample" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function Sample () As Double" />
+      <MemberSignature Language="F#" Value="abstract member Sample : unit -&gt; double&#xA;override this.Sample : unit -&gt; double" Usage="random.Sample " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual double Sample();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Extensions</AssemblyName>
@@ -771,29 +821,5 @@ Random.NextDouble() * (maxValue – minValue) + minValue
         <altmember cref="M:System.Random.NextDouble" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Next">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a random integer.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Random" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

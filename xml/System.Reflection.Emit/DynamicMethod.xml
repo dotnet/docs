@@ -1,7 +1,10 @@
-<Type Name="DynamicMethod" FullName="System.Reflection.Emit.DynamicMethod">
+﻿<Type Name="DynamicMethod" FullName="System.Reflection.Emit.DynamicMethod">
   <TypeSignature Language="C#" Value="public sealed class DynamicMethod : System.Reflection.MethodInfo" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit DynamicMethod extends System.Reflection.MethodInfo" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.DynamicMethod" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DynamicMethod&#xA;Inherits MethodInfo" />
+  <TypeSignature Language="F#" Value="type DynamicMethod = class&#xA;    inherit MethodInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicMethod sealed : System::Reflection::MethodInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,10 +95,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a dynamic method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DynamicMethod (string name, Type returnType, Type[] parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type returnType, class System.Type[] parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, returnType As Type, parameterTypes As Type())" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * Type * Type[] -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, returnType, parameterTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -145,6 +161,9 @@
       <MemberSignature Language="C#" Value="public DynamicMethod (string name, Type returnType, Type[] parameterTypes, bool restrictedSkipVisibility);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type returnType, class System.Type[] parameterTypes, bool restrictedSkipVisibility) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, returnType As Type, parameterTypes As Type(), restrictedSkipVisibility As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * Type * Type[] * bool -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, returnType, parameterTypes, restrictedSkipVisibility)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes, bool restrictedSkipVisibility);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -210,6 +229,9 @@
       <MemberSignature Language="C#" Value="public DynamicMethod (string name, Type returnType, Type[] parameterTypes, System.Reflection.Module m);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type returnType, class System.Type[] parameterTypes, class System.Reflection.Module m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Reflection.Module)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, returnType As Type, parameterTypes As Type(), m As Module)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * Type * Type[] * System.Reflection.Module -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, returnType, parameterTypes, m)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes, System::Reflection::Module ^ m);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -278,6 +300,9 @@
       <MemberSignature Language="C#" Value="public DynamicMethod (string name, Type returnType, Type[] parameterTypes, Type owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type returnType, class System.Type[] parameterTypes, class System.Type owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, returnType As Type, parameterTypes As Type(), owner As Type)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * Type * Type[] * Type -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, returnType, parameterTypes, owner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes, Type ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -359,6 +384,9 @@
       <MemberSignature Language="C#" Value="public DynamicMethod (string name, Type returnType, Type[] parameterTypes, System.Reflection.Module m, bool skipVisibility);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type returnType, class System.Type[] parameterTypes, class System.Reflection.Module m, bool skipVisibility) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Reflection.Module,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, returnType As Type, parameterTypes As Type(), m As Module, skipVisibility As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * Type * Type[] * System.Reflection.Module * bool -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, returnType, parameterTypes, m, skipVisibility)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes, System::Reflection::Module ^ m, bool skipVisibility);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -421,6 +449,9 @@
       <MemberSignature Language="C#" Value="public DynamicMethod (string name, Type returnType, Type[] parameterTypes, Type owner, bool skipVisibility);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Type returnType, class System.Type[] parameterTypes, class System.Type owner, bool skipVisibility) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Type,System.Type[],System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, returnType As Type, parameterTypes As Type(), owner As Type, skipVisibility As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * Type * Type[] * Type * bool -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, returnType, parameterTypes, owner, skipVisibility)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes, Type ^ owner, bool skipVisibility);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -483,6 +514,9 @@
       <MemberSignature Language="C#" Value="public DynamicMethod (string name, System.Reflection.MethodAttributes attributes, System.Reflection.CallingConventions callingConvention, Type returnType, Type[] parameterTypes, System.Reflection.Module m, bool skipVisibility);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Reflection.MethodAttributes attributes, valuetype System.Reflection.CallingConventions callingConvention, class System.Type returnType, class System.Type[] parameterTypes, class System.Reflection.Module m, bool skipVisibility) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Reflection.Module,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, attributes As MethodAttributes, callingConvention As CallingConventions, returnType As Type, parameterTypes As Type(), m As Module, skipVisibility As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * System.Reflection.MethodAttributes * System.Reflection.CallingConventions * Type * Type[] * System.Reflection.Module * bool -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, attributes, callingConvention, returnType, parameterTypes, m, skipVisibility)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, System::Reflection::MethodAttributes attributes, System::Reflection::CallingConventions callingConvention, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes, System::Reflection::Module ^ m, bool skipVisibility);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -557,6 +591,9 @@
       <MemberSignature Language="C#" Value="public DynamicMethod (string name, System.Reflection.MethodAttributes attributes, System.Reflection.CallingConventions callingConvention, Type returnType, Type[] parameterTypes, Type owner, bool skipVisibility);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Reflection.MethodAttributes attributes, valuetype System.Reflection.CallingConventions callingConvention, class System.Type returnType, class System.Type[] parameterTypes, class System.Type owner, bool skipVisibility) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.#ctor(System.String,System.Reflection.MethodAttributes,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, attributes As MethodAttributes, callingConvention As CallingConventions, returnType As Type, parameterTypes As Type(), owner As Type, skipVisibility As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Emit.DynamicMethod : string * System.Reflection.MethodAttributes * System.Reflection.CallingConventions * Type * Type[] * Type * bool -&gt; System.Reflection.Emit.DynamicMethod" Usage="new System.Reflection.Emit.DynamicMethod (name, attributes, callingConvention, returnType, parameterTypes, owner, skipVisibility)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicMethod(System::String ^ name, System::Reflection::MethodAttributes attributes, System::Reflection::CallingConventions callingConvention, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes, Type ^ owner, bool skipVisibility);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -631,6 +668,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.MethodAttributes Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.MethodAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Attributes As MethodAttributes" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.MethodAttributes" Usage="System.Reflection.Emit.DynamicMethod.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MethodAttributes Attributes { System::Reflection::MethodAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -671,6 +711,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.CallingConventions CallingConvention { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.CallingConventions CallingConvention" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.CallingConvention" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CallingConvention As CallingConventions" />
+      <MemberSignature Language="F#" Value="member this.CallingConvention : System.Reflection.CallingConventions" Usage="System.Reflection.Emit.DynamicMethod.CallingConvention" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::CallingConventions CallingConvention { System::Reflection::CallingConventions get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -707,10 +750,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateDelegate">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Completes the dynamic method and creates a delegate that can be used to execute it.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateDelegate">
       <MemberSignature Language="C#" Value="public override sealed Delegate CreateDelegate (Type delegateType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Delegate CreateDelegate(class System.Type delegateType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.CreateDelegate(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function CreateDelegate (delegateType As Type) As Delegate" />
+      <MemberSignature Language="F#" Value="override this.CreateDelegate : Type -&gt; Delegate" Usage="dynamicMethod.CreateDelegate delegateType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Delegate ^ CreateDelegate(Type ^ delegateType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -765,6 +821,9 @@
       <MemberSignature Language="C#" Value="public override sealed Delegate CreateDelegate (Type delegateType, object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Delegate CreateDelegate(class System.Type delegateType, object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.CreateDelegate(System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function CreateDelegate (delegateType As Type, target As Object) As Delegate" />
+      <MemberSignature Language="F#" Value="override this.CreateDelegate : Type * obj -&gt; Delegate" Usage="dynamicMethod.CreateDelegate (delegateType, target)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Delegate ^ CreateDelegate(Type ^ delegateType, System::Object ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -842,6 +901,9 @@
       <MemberSignature Language="C#" Value="public override Type DeclaringType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DeclaringType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.DeclaringType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DeclaringType As Type" />
+      <MemberSignature Language="F#" Value="member this.DeclaringType : Type" Usage="System.Reflection.Emit.DynamicMethod.DeclaringType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ DeclaringType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -882,6 +944,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Emit.ParameterBuilder DefineParameter (int position, System.Reflection.ParameterAttributes attributes, string parameterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.Emit.ParameterBuilder DefineParameter(int32 position, valuetype System.Reflection.ParameterAttributes attributes, string parameterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.DefineParameter(System.Int32,System.Reflection.ParameterAttributes,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DefineParameter (position As Integer, attributes As ParameterAttributes, parameterName As String) As ParameterBuilder" />
+      <MemberSignature Language="F#" Value="member this.DefineParameter : int * System.Reflection.ParameterAttributes * string -&gt; System.Reflection.Emit.ParameterBuilder" Usage="dynamicMethod.DefineParameter (position, attributes, parameterName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::ParameterBuilder ^ DefineParameter(int position, System::Reflection::ParameterAttributes attributes, System::String ^ parameterName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -936,6 +1001,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.MethodInfo GetBaseDefinition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.MethodInfo GetBaseDefinition() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetBaseDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetBaseDefinition () As MethodInfo" />
+      <MemberSignature Language="F#" Value="override this.GetBaseDefinition : unit -&gt; System.Reflection.MethodInfo" Usage="dynamicMethod.GetBaseDefinition " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::MethodInfo ^ GetBaseDefinition();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -963,10 +1031,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the custom attributes applied to the method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCustomAttributes">
       <MemberSignature Language="C#" Value="public override object[] GetCustomAttributes (bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object[] GetCustomAttributes(bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetCustomAttributes(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (inherit As Boolean) As Object()" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : bool -&gt; obj[]" Usage="dynamicMethod.GetCustomAttributes inherit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1006,6 +1087,9 @@
       <MemberSignature Language="C#" Value="public override object[] GetCustomAttributes (Type attributeType, bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object[] GetCustomAttributes(class System.Type attributeType, bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetCustomAttributes(System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (attributeType As Type, inherit As Boolean) As Object()" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : Type * bool -&gt; obj[]" Usage="dynamicMethod.GetCustomAttributes (attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1049,6 +1133,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Emit.DynamicILInfo GetDynamicILInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.Emit.DynamicILInfo GetDynamicILInfo() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetDynamicILInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDynamicILInfo () As DynamicILInfo" />
+      <MemberSignature Language="F#" Value="member this.GetDynamicILInfo : unit -&gt; System.Reflection.Emit.DynamicILInfo" Usage="dynamicMethod.GetDynamicILInfo " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::DynamicILInfo ^ GetDynamicILInfo();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1074,10 +1161,23 @@
         <altmember cref="T:System.Reflection.Emit.DynamicILInfo" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetILGenerator">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an MSIL generator that can be used to emit a body for the dynamic method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetILGenerator">
       <MemberSignature Language="C#" Value="public System.Reflection.Emit.ILGenerator GetILGenerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.Emit.ILGenerator GetILGenerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetILGenerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetILGenerator () As ILGenerator" />
+      <MemberSignature Language="F#" Value="member this.GetILGenerator : unit -&gt; System.Reflection.Emit.ILGenerator" Usage="dynamicMethod.GetILGenerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::ILGenerator ^ GetILGenerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1122,6 +1222,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Emit.ILGenerator GetILGenerator (int streamSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Reflection.Emit.ILGenerator GetILGenerator(int32 streamSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetILGenerator(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetILGenerator (streamSize As Integer) As ILGenerator" />
+      <MemberSignature Language="F#" Value="member this.GetILGenerator : int -&gt; System.Reflection.Emit.ILGenerator" Usage="dynamicMethod.GetILGenerator streamSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Emit::ILGenerator ^ GetILGenerator(int streamSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1169,6 +1272,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.MethodImplAttributes GetMethodImplementationFlags ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Reflection.MethodImplAttributes GetMethodImplementationFlags() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetMethodImplementationFlags" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMethodImplementationFlags () As MethodImplAttributes" />
+      <MemberSignature Language="F#" Value="override this.GetMethodImplementationFlags : unit -&gt; System.Reflection.MethodImplAttributes" Usage="dynamicMethod.GetMethodImplementationFlags " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::MethodImplAttributes GetMethodImplementationFlags();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1200,6 +1306,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.ParameterInfo[] GetParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.ParameterInfo[] GetParameters() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.GetParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetParameters () As ParameterInfo()" />
+      <MemberSignature Language="F#" Value="override this.GetParameters : unit -&gt; System.Reflection.ParameterInfo[]" Usage="dynamicMethod.GetParameters " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::ParameterInfo ^&gt; ^ GetParameters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1242,6 +1351,9 @@
       <MemberSignature Language="C#" Value="public bool InitLocals { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool InitLocals" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.InitLocals" />
+      <MemberSignature Language="VB.NET" Value="Public Property InitLocals As Boolean" />
+      <MemberSignature Language="F#" Value="member this.InitLocals : bool with get, set" Usage="System.Reflection.Emit.DynamicMethod.InitLocals" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool InitLocals { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1283,6 +1395,8 @@
       <MemberSignature Language="C#" Value="public override object Invoke (object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, object[] parameters, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Invoke(object obj, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object[] parameters, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.Invoke(System.Object,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object[],System.Globalization.CultureInfo)" />
+      <MemberSignature Language="F#" Value="override this.Invoke : obj * System.Reflection.BindingFlags * System.Reflection.Binder * obj[] * System.Globalization.CultureInfo -&gt; obj" Usage="dynamicMethod.Invoke (obj, invokeAttr, binder, parameters, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Invoke(System::Object ^ obj, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, cli::array &lt;System::Object ^&gt; ^ parameters, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1363,6 +1477,9 @@
       <MemberSignature Language="C#" Value="public override bool IsDefined (Type attributeType, bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefined(class System.Type attributeType, bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.IsDefined(System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefined (attributeType As Type, inherit As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsDefined : Type * bool -&gt; bool" Usage="dynamicMethod.IsDefined (attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefined(Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1405,6 +1522,9 @@
       <MemberSignature Language="C#" Value="public override bool IsSecurityCritical { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSecurityCritical" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.IsSecurityCritical" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsSecurityCritical As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSecurityCritical : bool" Usage="System.Reflection.Emit.DynamicMethod.IsSecurityCritical" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecurityCritical { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1469,6 +1589,9 @@
       <MemberSignature Language="C#" Value="public override bool IsSecuritySafeCritical { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSecuritySafeCritical" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.IsSecuritySafeCritical" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsSecuritySafeCritical As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSecuritySafeCritical : bool" Usage="System.Reflection.Emit.DynamicMethod.IsSecuritySafeCritical" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecuritySafeCritical { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1533,6 +1656,9 @@
       <MemberSignature Language="C#" Value="public override bool IsSecurityTransparent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSecurityTransparent" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.IsSecurityTransparent" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsSecurityTransparent As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSecurityTransparent : bool" Usage="System.Reflection.Emit.DynamicMethod.IsSecurityTransparent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSecurityTransparent { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1597,6 +1723,9 @@
       <MemberSignature Language="C#" Value="public override RuntimeMethodHandle MethodHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.RuntimeMethodHandle MethodHandle" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.MethodHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MethodHandle As RuntimeMethodHandle" />
+      <MemberSignature Language="F#" Value="member this.MethodHandle : RuntimeMethodHandle" Usage="System.Reflection.Emit.DynamicMethod.MethodHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property RuntimeMethodHandle MethodHandle { RuntimeMethodHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1621,6 +1750,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.MethodImplAttributes MethodImplementationFlags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.MethodImplAttributes MethodImplementationFlags" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.MethodImplementationFlags" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MethodImplementationFlags As MethodImplAttributes" />
+      <MemberSignature Language="F#" Value="member this.MethodImplementationFlags : System.Reflection.MethodImplAttributes" Usage="System.Reflection.Emit.DynamicMethod.MethodImplementationFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MethodImplAttributes MethodImplementationFlags { System::Reflection::MethodImplAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1639,6 +1771,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.Module Module { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Module Module" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.Module" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Module As Module" />
+      <MemberSignature Language="F#" Value="member this.Module : System.Reflection.Module" Usage="System.Reflection.Emit.DynamicMethod.Module" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::Module ^ Module { System::Reflection::Module ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1674,6 +1809,9 @@
       <MemberSignature Language="C#" Value="public override string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Reflection.Emit.DynamicMethod.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1716,6 +1854,9 @@
       <MemberSignature Language="C#" Value="public override Type ReflectedType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReflectedType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.ReflectedType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReflectedType As Type" />
+      <MemberSignature Language="F#" Value="member this.ReflectedType : Type" Usage="System.Reflection.Emit.DynamicMethod.ReflectedType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ReflectedType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1755,6 +1896,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.ParameterInfo ReturnParameter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.ParameterInfo ReturnParameter" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.ReturnParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReturnParameter As ParameterInfo" />
+      <MemberSignature Language="F#" Value="member this.ReturnParameter : System.Reflection.ParameterInfo" Usage="System.Reflection.Emit.DynamicMethod.ReturnParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::ParameterInfo ^ ReturnParameter { System::Reflection::ParameterInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1786,6 +1930,9 @@
       <MemberSignature Language="C#" Value="public override Type ReturnType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReturnType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.ReturnType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReturnType As Type" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Reflection.Emit.DynamicMethod.ReturnType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ReturnType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1826,6 +1973,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.ICustomAttributeProvider ReturnTypeCustomAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.ICustomAttributeProvider ReturnTypeCustomAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.DynamicMethod.ReturnTypeCustomAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReturnTypeCustomAttributes As ICustomAttributeProvider" />
+      <MemberSignature Language="F#" Value="member this.ReturnTypeCustomAttributes : System.Reflection.ICustomAttributeProvider" Usage="System.Reflection.Emit.DynamicMethod.ReturnTypeCustomAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::ICustomAttributeProvider ^ ReturnTypeCustomAttributes { System::Reflection::ICustomAttributeProvider ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1866,6 +2016,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.DynamicMethod.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dynamicMethod.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
@@ -1903,45 +2056,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetILGenerator">
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an MSIL generator that can be used to emit a body for the dynamic method.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetCustomAttributes">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the custom attributes applied to the method.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a dynamic method.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateDelegate">
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection.Emit.Lightweight</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Completes the dynamic method and creates a delegate that can be used to execute it.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="ParallelActivity" FullName="System.Workflow.Activities.ParallelActivity">
+﻿<Type Name="ParallelActivity" FullName="System.Workflow.Activities.ParallelActivity">
   <TypeSignature Language="C#" Value="public sealed class ParallelActivity : System.Workflow.ComponentModel.CompositeActivity, System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ParallelActivity extends System.Workflow.ComponentModel.CompositeActivity implements class System.Workflow.ComponentModel.IActivityEventListener`1&lt;class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ParallelActivity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ParallelActivity&#xA;Inherits CompositeActivity&#xA;Implements IActivityEventListener(Of ActivityExecutionStatusChangedEventArgs)" />
+  <TypeSignature Language="F#" Value="type ParallelActivity = class&#xA;    inherit CompositeActivity&#xA;    interface IActivityEventListener&lt;ActivityExecutionStatusChangedEventArgs&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParallelActivity sealed : System::Workflow::ComponentModel::CompositeActivity, System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,10 +69,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ParallelActivity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ParallelActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ParallelActivity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParallelActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -95,6 +109,9 @@
       <MemberSignature Language="C#" Value="public ParallelActivity (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ParallelActivity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.ParallelActivity : string -&gt; System.Workflow.Activities.ParallelActivity" Usage="new System.Workflow.Activities.ParallelActivity name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParallelActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -113,6 +130,9 @@
       <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.ActivityExecutionStatus Cancel (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus Cancel(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ParallelActivity.Cancel(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Cancel (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
+      <MemberSignature Language="F#" Value="override this.Cancel : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="parallelActivity.Cancel executionContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Cancel(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -135,6 +155,9 @@
       <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.ActivityExecutionStatus Execute (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus Execute(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ParallelActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="parallelActivity.Execute executionContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -157,6 +180,9 @@
       <MemberSignature Language="C#" Value="protected override void OnActivityChangeAdd (System.Workflow.ComponentModel.ActivityExecutionContext executionContext, System.Workflow.ComponentModel.Activity addedActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnActivityChangeAdd(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext, class System.Workflow.ComponentModel.Activity addedActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ParallelActivity.OnActivityChangeAdd(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnActivityChangeAdd (executionContext As ActivityExecutionContext, addedActivity As Activity)" />
+      <MemberSignature Language="F#" Value="override this.OnActivityChangeAdd : System.Workflow.ComponentModel.ActivityExecutionContext * System.Workflow.ComponentModel.Activity -&gt; unit" Usage="parallelActivity.OnActivityChangeAdd (executionContext, addedActivity)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivityChangeAdd(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext, System::Workflow::ComponentModel::Activity ^ addedActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -180,6 +206,9 @@
       <MemberSignature Language="C#" Value="protected override void OnActivityChangeRemove (System.Workflow.ComponentModel.ActivityExecutionContext rootExecutionContext, System.Workflow.ComponentModel.Activity removedActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnActivityChangeRemove(class System.Workflow.ComponentModel.ActivityExecutionContext rootExecutionContext, class System.Workflow.ComponentModel.Activity removedActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ParallelActivity.OnActivityChangeRemove(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnActivityChangeRemove (rootExecutionContext As ActivityExecutionContext, removedActivity As Activity)" />
+      <MemberSignature Language="F#" Value="override this.OnActivityChangeRemove : System.Workflow.ComponentModel.ActivityExecutionContext * System.Workflow.ComponentModel.Activity -&gt; unit" Usage="parallelActivity.OnActivityChangeRemove (rootExecutionContext, removedActivity)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnActivityChangeRemove(System::Workflow::ComponentModel::ActivityExecutionContext ^ rootExecutionContext, System::Workflow::ComponentModel::Activity ^ removedActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -203,6 +232,9 @@
       <MemberSignature Language="C#" Value="protected override void OnClosed (IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClosed(class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ParallelActivity.OnClosed(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClosed (provider As IServiceProvider)" />
+      <MemberSignature Language="F#" Value="override this.OnClosed : IServiceProvider -&gt; unit" Usage="parallelActivity.OnClosed provider" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClosed(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -224,6 +256,9 @@
       <MemberSignature Language="C#" Value="protected override void OnWorkflowChangesCompleted (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnWorkflowChangesCompleted(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ParallelActivity.OnWorkflowChangesCompleted(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnWorkflowChangesCompleted (executionContext As ActivityExecutionContext)" />
+      <MemberSignature Language="F#" Value="override this.OnWorkflowChangesCompleted : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; unit" Usage="parallelActivity.OnWorkflowChangesCompleted executionContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnWorkflowChangesCompleted(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -245,7 +280,12 @@
       <MemberSignature Language="C#" Value="void IActivityEventListener&lt;ActivityExecutionStatusChangedEventArgs&gt;.OnEvent (object sender, System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;.OnEvent(object sender, class System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ParallelActivity.System#Workflow#ComponentModel#IActivityEventListener&lt;System#Workflow#ComponentModel#ActivityExecutionStatusChangedEventArgs&gt;#OnEvent(System.Object,System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnEvent (sender As Object, e As ActivityExecutionStatusChangedEventArgs) Implements IActivityEventListener(Of ActivityExecutionStatusChangedEventArgs).OnEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Workflow.ComponentModel.IActivityEventListener&lt;System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs&gt;.OnEvent(System::Object ^ sender, System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^ e) = System::Workflow::ComponentModel::IActivityEventListener&lt;System::Workflow::ComponentModel::ActivityExecutionStatusChangedEventArgs ^&gt;::OnEvent;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.IActivityEventListener`1.OnEvent(System.Object,`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -264,14 +304,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ParallelActivity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

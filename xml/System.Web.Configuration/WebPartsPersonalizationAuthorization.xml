@@ -1,7 +1,10 @@
-<Type Name="WebPartsPersonalizationAuthorization" FullName="System.Web.Configuration.WebPartsPersonalizationAuthorization">
+﻿<Type Name="WebPartsPersonalizationAuthorization" FullName="System.Web.Configuration.WebPartsPersonalizationAuthorization">
   <TypeSignature Language="C#" Value="public sealed class WebPartsPersonalizationAuthorization : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebPartsPersonalizationAuthorization extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.WebPartsPersonalizationAuthorization" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPartsPersonalizationAuthorization&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type WebPartsPersonalizationAuthorization = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartsPersonalizationAuthorization sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +51,8 @@
       <MemberSignature Language="C#" Value="public WebPartsPersonalizationAuthorization ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.WebPartsPersonalizationAuthorization.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartsPersonalizationAuthorization();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +75,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebPartsPersonalizationAuthorization.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.WebPartsPersonalizationAuthorization.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +96,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.AuthorizationRuleCollection Rules { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.AuthorizationRuleCollection Rules" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.WebPartsPersonalizationAuthorization.Rules" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Rules As AuthorizationRuleCollection" />
+      <MemberSignature Language="F#" Value="member this.Rules : System.Web.Configuration.AuthorizationRuleCollection" Usage="System.Web.Configuration.WebPartsPersonalizationAuthorization.Rules" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::AuthorizationRuleCollection ^ Rules { System::Web::Configuration::AuthorizationRuleCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

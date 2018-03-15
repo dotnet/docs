@@ -1,7 +1,10 @@
-<Type Name="FieldMetadata" FullName="System.Data.Common.FieldMetadata">
+﻿<Type Name="FieldMetadata" FullName="System.Data.Common.FieldMetadata">
   <TypeSignature Language="C#" Value="public struct FieldMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit FieldMetadata extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.FieldMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Structure FieldMetadata" />
+  <TypeSignature Language="F#" Value="type FieldMetadata = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class FieldMetadata" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public FieldMetadata (int ordinal, System.Data.Metadata.Edm.EdmMember fieldType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 ordinal, class System.Data.Metadata.Edm.EdmMember fieldType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.FieldMetadata.#ctor(System.Int32,System.Data.Metadata.Edm.EdmMember)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ordinal As Integer, fieldType As EdmMember)" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.FieldMetadata : int * System.Data.Metadata.Edm.EdmMember -&gt; System.Data.Common.FieldMetadata" Usage="new System.Data.Common.FieldMetadata (ordinal, fieldType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FieldMetadata(int ordinal, System::Data::Metadata::Edm::EdmMember ^ fieldType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -39,6 +45,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.EdmMember FieldType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.EdmMember FieldType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.FieldMetadata.FieldType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FieldType As EdmMember" />
+      <MemberSignature Language="F#" Value="member this.FieldType : System.Data.Metadata.Edm.EdmMember" Usage="System.Data.Common.FieldMetadata.FieldType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::EdmMember ^ FieldType { System::Data::Metadata::Edm::EdmMember ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -57,6 +66,9 @@
       <MemberSignature Language="C#" Value="public int Ordinal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Ordinal" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.FieldMetadata.Ordinal" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ordinal As Integer" />
+      <MemberSignature Language="F#" Value="member this.Ordinal : int" Usage="System.Data.Common.FieldMetadata.Ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Ordinal { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

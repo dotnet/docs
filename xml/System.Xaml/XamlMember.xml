@@ -1,7 +1,10 @@
-<Type Name="XamlMember" FullName="System.Xaml.XamlMember">
+﻿<Type Name="XamlMember" FullName="System.Xaml.XamlMember">
   <TypeSignature Language="C#" Value="public class XamlMember : IEquatable&lt;System.Xaml.XamlMember&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlMember extends System.Object implements class System.IEquatable`1&lt;class System.Xaml.XamlMember&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlMember" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlMember&#xA;Implements IEquatable(Of XamlMember)" />
+  <TypeSignature Language="F#" Value="type XamlMember = class&#xA;    interface IEquatable&lt;XamlMember&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlMember : IEquatable&lt;System::Xaml::XamlMember ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,10 +54,21 @@
     <altmember cref="T:System.Xaml.XamlObjectWriter" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XamlMember (System.Reflection.EventInfo eventInfo, System.Xaml.XamlSchemaContext schemaContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.EventInfo eventInfo, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.#ctor(System.Reflection.EventInfo,System.Xaml.XamlSchemaContext)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlMember : System.Reflection.EventInfo * System.Xaml.XamlSchemaContext -&gt; System.Xaml.XamlMember" Usage="new System.Xaml.XamlMember (eventInfo, schemaContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlMember(System::Reflection::EventInfo ^ eventInfo, System::Xaml::XamlSchemaContext ^ schemaContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -82,6 +96,8 @@
       <MemberSignature Language="C#" Value="public XamlMember (System.Reflection.PropertyInfo propertyInfo, System.Xaml.XamlSchemaContext schemaContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.PropertyInfo propertyInfo, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.#ctor(System.Reflection.PropertyInfo,System.Xaml.XamlSchemaContext)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlMember : System.Reflection.PropertyInfo * System.Xaml.XamlSchemaContext -&gt; System.Xaml.XamlMember" Usage="new System.Xaml.XamlMember (propertyInfo, schemaContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlMember(System::Reflection::PropertyInfo ^ propertyInfo, System::Xaml::XamlSchemaContext ^ schemaContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -109,6 +125,8 @@
       <MemberSignature Language="C#" Value="public XamlMember (System.Reflection.EventInfo eventInfo, System.Xaml.XamlSchemaContext schemaContext, System.Xaml.Schema.XamlMemberInvoker invoker);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.EventInfo eventInfo, class System.Xaml.XamlSchemaContext schemaContext, class System.Xaml.Schema.XamlMemberInvoker invoker) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.#ctor(System.Reflection.EventInfo,System.Xaml.XamlSchemaContext,System.Xaml.Schema.XamlMemberInvoker)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlMember : System.Reflection.EventInfo * System.Xaml.XamlSchemaContext * System.Xaml.Schema.XamlMemberInvoker -&gt; System.Xaml.XamlMember" Usage="new System.Xaml.XamlMember (eventInfo, schemaContext, invoker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlMember(System::Reflection::EventInfo ^ eventInfo, System::Xaml::XamlSchemaContext ^ schemaContext, System::Xaml::Schema::XamlMemberInvoker ^ invoker);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -138,6 +156,8 @@
       <MemberSignature Language="C#" Value="public XamlMember (System.Reflection.PropertyInfo propertyInfo, System.Xaml.XamlSchemaContext schemaContext, System.Xaml.Schema.XamlMemberInvoker invoker);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.PropertyInfo propertyInfo, class System.Xaml.XamlSchemaContext schemaContext, class System.Xaml.Schema.XamlMemberInvoker invoker) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.#ctor(System.Reflection.PropertyInfo,System.Xaml.XamlSchemaContext,System.Xaml.Schema.XamlMemberInvoker)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlMember : System.Reflection.PropertyInfo * System.Xaml.XamlSchemaContext * System.Xaml.Schema.XamlMemberInvoker -&gt; System.Xaml.XamlMember" Usage="new System.Xaml.XamlMember (propertyInfo, schemaContext, invoker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlMember(System::Reflection::PropertyInfo ^ propertyInfo, System::Xaml::XamlSchemaContext ^ schemaContext, System::Xaml::Schema::XamlMemberInvoker ^ invoker);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -167,6 +187,9 @@
       <MemberSignature Language="C#" Value="public XamlMember (string attachableEventName, System.Reflection.MethodInfo adder, System.Xaml.XamlSchemaContext schemaContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attachableEventName, class System.Reflection.MethodInfo adder, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.#ctor(System.String,System.Reflection.MethodInfo,System.Xaml.XamlSchemaContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (attachableEventName As String, adder As MethodInfo, schemaContext As XamlSchemaContext)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlMember : string * System.Reflection.MethodInfo * System.Xaml.XamlSchemaContext -&gt; System.Xaml.XamlMember" Usage="new System.Xaml.XamlMember (attachableEventName, adder, schemaContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlMember(System::String ^ attachableEventName, System::Reflection::MethodInfo ^ adder, System::Xaml::XamlSchemaContext ^ schemaContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -196,6 +219,9 @@
       <MemberSignature Language="C#" Value="public XamlMember (string name, System.Xaml.XamlType declaringType, bool isAttachable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Xaml.XamlType declaringType, bool isAttachable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.#ctor(System.String,System.Xaml.XamlType,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, declaringType As XamlType, isAttachable As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlMember : string * System.Xaml.XamlType * bool -&gt; System.Xaml.XamlMember" Usage="new System.Xaml.XamlMember (name, declaringType, isAttachable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlMember(System::String ^ name, System::Xaml::XamlType ^ declaringType, bool isAttachable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -238,6 +264,9 @@
       <MemberSignature Language="C#" Value="public XamlMember (string attachablePropertyName, System.Reflection.MethodInfo getter, System.Reflection.MethodInfo setter, System.Xaml.XamlSchemaContext schemaContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attachablePropertyName, class System.Reflection.MethodInfo getter, class System.Reflection.MethodInfo setter, class System.Xaml.XamlSchemaContext schemaContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.#ctor(System.String,System.Reflection.MethodInfo,System.Reflection.MethodInfo,System.Xaml.XamlSchemaContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (attachablePropertyName As String, getter As MethodInfo, setter As MethodInfo, schemaContext As XamlSchemaContext)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlMember : string * System.Reflection.MethodInfo * System.Reflection.MethodInfo * System.Xaml.XamlSchemaContext -&gt; System.Xaml.XamlMember" Usage="new System.Xaml.XamlMember (attachablePropertyName, getter, setter, schemaContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlMember(System::String ^ attachablePropertyName, System::Reflection::MethodInfo ^ getter, System::Reflection::MethodInfo ^ setter, System::Xaml::XamlSchemaContext ^ schemaContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -269,6 +298,9 @@
       <MemberSignature Language="C#" Value="public XamlMember (string attachableEventName, System.Reflection.MethodInfo adder, System.Xaml.XamlSchemaContext schemaContext, System.Xaml.Schema.XamlMemberInvoker invoker);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attachableEventName, class System.Reflection.MethodInfo adder, class System.Xaml.XamlSchemaContext schemaContext, class System.Xaml.Schema.XamlMemberInvoker invoker) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.#ctor(System.String,System.Reflection.MethodInfo,System.Xaml.XamlSchemaContext,System.Xaml.Schema.XamlMemberInvoker)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (attachableEventName As String, adder As MethodInfo, schemaContext As XamlSchemaContext, invoker As XamlMemberInvoker)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlMember : string * System.Reflection.MethodInfo * System.Xaml.XamlSchemaContext * System.Xaml.Schema.XamlMemberInvoker -&gt; System.Xaml.XamlMember" Usage="new System.Xaml.XamlMember (attachableEventName, adder, schemaContext, invoker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlMember(System::String ^ attachableEventName, System::Reflection::MethodInfo ^ adder, System::Xaml::XamlSchemaContext ^ schemaContext, System::Xaml::Schema::XamlMemberInvoker ^ invoker);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -300,6 +332,9 @@
       <MemberSignature Language="C#" Value="public XamlMember (string attachablePropertyName, System.Reflection.MethodInfo getter, System.Reflection.MethodInfo setter, System.Xaml.XamlSchemaContext schemaContext, System.Xaml.Schema.XamlMemberInvoker invoker);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attachablePropertyName, class System.Reflection.MethodInfo getter, class System.Reflection.MethodInfo setter, class System.Xaml.XamlSchemaContext schemaContext, class System.Xaml.Schema.XamlMemberInvoker invoker) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.#ctor(System.String,System.Reflection.MethodInfo,System.Reflection.MethodInfo,System.Xaml.XamlSchemaContext,System.Xaml.Schema.XamlMemberInvoker)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (attachablePropertyName As String, getter As MethodInfo, setter As MethodInfo, schemaContext As XamlSchemaContext, invoker As XamlMemberInvoker)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlMember : string * System.Reflection.MethodInfo * System.Reflection.MethodInfo * System.Xaml.XamlSchemaContext * System.Xaml.Schema.XamlMemberInvoker -&gt; System.Xaml.XamlMember" Usage="new System.Xaml.XamlMember (attachablePropertyName, getter, setter, schemaContext, invoker)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlMember(System::String ^ attachablePropertyName, System::Reflection::MethodInfo ^ getter, System::Reflection::MethodInfo ^ setter, System::Xaml::XamlSchemaContext ^ schemaContext, System::Xaml::Schema::XamlMemberInvoker ^ invoker);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -333,6 +368,9 @@
       <MemberSignature Language="C#" Value="public System.Xaml.XamlType DeclaringType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlType DeclaringType" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.DeclaringType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeclaringType As XamlType" />
+      <MemberSignature Language="F#" Value="member this.DeclaringType : System.Xaml.XamlType" Usage="System.Xaml.XamlMember.DeclaringType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlType ^ DeclaringType { System::Xaml::XamlType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -361,6 +399,9 @@
       <MemberSignature Language="C#" Value="public System.Xaml.Schema.XamlValueConverter&lt;System.Xaml.XamlDeferringLoader&gt; DeferringLoader { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.Schema.XamlValueConverter`1&lt;class System.Xaml.XamlDeferringLoader&gt; DeferringLoader" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.DeferringLoader" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeferringLoader As XamlValueConverter(Of XamlDeferringLoader)" />
+      <MemberSignature Language="F#" Value="member this.DeferringLoader : System.Xaml.Schema.XamlValueConverter&lt;System.Xaml.XamlDeferringLoader&gt;" Usage="System.Xaml.XamlMember.DeferringLoader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::Schema::XamlValueConverter&lt;System::Xaml::XamlDeferringLoader ^&gt; ^ DeferringLoader { System::Xaml::Schema::XamlValueConverter&lt;System::Xaml::XamlDeferringLoader ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -386,6 +427,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Xaml.XamlMember&gt; DependsOn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Xaml.XamlMember&gt; DependsOn" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.DependsOn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DependsOn As IList(Of XamlMember)" />
+      <MemberSignature Language="F#" Value="member this.DependsOn : System.Collections.Generic.IList&lt;System.Xaml.XamlMember&gt;" Usage="System.Xaml.XamlMember.DependsOn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Xaml::XamlMember ^&gt; ^ DependsOn { System::Collections::Generic::IList&lt;System::Xaml::XamlMember ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -414,10 +458,22 @@
         <altmember cref="T:System.Windows.Markup.DependsOnAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the current object is equal to another object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="xamlMember.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -441,7 +497,13 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Xaml.XamlMember other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Xaml.XamlMember other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.Equals(System.Xaml.XamlMember)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As XamlMember) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Xaml.XamlMember -&gt; bool" Usage="xamlMember.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Xaml::XamlMember ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -464,6 +526,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="xamlMember.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -483,6 +548,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IList&lt;string&gt; GetXamlNamespaces ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;string&gt; GetXamlNamespaces() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.GetXamlNamespaces" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetXamlNamespaces () As IList(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member GetXamlNamespaces : unit -&gt; System.Collections.Generic.IList&lt;string&gt;&#xA;override this.GetXamlNamespaces : unit -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="xamlMember.GetXamlNamespaces " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IList&lt;System::String ^&gt; ^ GetXamlNamespaces();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -509,6 +577,9 @@
       <MemberSignature Language="C#" Value="public System.Xaml.Schema.XamlMemberInvoker Invoker { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.Schema.XamlMemberInvoker Invoker" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.Invoker" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Invoker As XamlMemberInvoker" />
+      <MemberSignature Language="F#" Value="member this.Invoker : System.Xaml.Schema.XamlMemberInvoker" Usage="System.Xaml.XamlMember.Invoker" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::Schema::XamlMemberInvoker ^ Invoker { System::Xaml::Schema::XamlMemberInvoker ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -540,6 +611,9 @@
       <MemberSignature Language="C#" Value="public bool IsAmbient { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAmbient" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.IsAmbient" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAmbient As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAmbient : bool" Usage="System.Xaml.XamlMember.IsAmbient" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAmbient { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -571,6 +645,9 @@
       <MemberSignature Language="C#" Value="public bool IsAttachable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAttachable" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.IsAttachable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAttachable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAttachable : bool" Usage="System.Xaml.XamlMember.IsAttachable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAttachable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -597,6 +674,9 @@
       <MemberSignature Language="C#" Value="public bool IsDirective { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDirective" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.IsDirective" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDirective As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDirective : bool" Usage="System.Xaml.XamlMember.IsDirective" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirective { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -625,6 +705,9 @@
       <MemberSignature Language="C#" Value="public bool IsEvent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEvent" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.IsEvent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEvent As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEvent : bool" Usage="System.Xaml.XamlMember.IsEvent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEvent { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -651,6 +734,9 @@
       <MemberSignature Language="C#" Value="public bool IsNameValid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNameValid" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.IsNameValid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNameValid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNameValid : bool" Usage="System.Xaml.XamlMember.IsNameValid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNameValid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -670,6 +756,9 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Xaml.XamlMember.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -696,6 +785,9 @@
       <MemberSignature Language="C#" Value="public bool IsReadPublic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadPublic" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.IsReadPublic" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadPublic As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadPublic : bool" Usage="System.Xaml.XamlMember.IsReadPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadPublic { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -727,6 +819,9 @@
       <MemberSignature Language="C#" Value="public bool IsUnknown { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUnknown" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.IsUnknown" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUnknown As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsUnknown : bool" Usage="System.Xaml.XamlMember.IsUnknown" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUnknown { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -759,6 +854,9 @@
       <MemberSignature Language="C#" Value="public bool IsWriteOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsWriteOnly" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.IsWriteOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWriteOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsWriteOnly : bool" Usage="System.Xaml.XamlMember.IsWriteOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWriteOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -785,6 +883,9 @@
       <MemberSignature Language="C#" Value="public bool IsWritePublic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsWritePublic" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.IsWritePublic" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWritePublic As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsWritePublic : bool" Usage="System.Xaml.XamlMember.IsWritePublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWritePublic { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -816,6 +917,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Reflection.ICustomAttributeProvider LookupCustomAttributeProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Reflection.ICustomAttributeProvider LookupCustomAttributeProvider() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupCustomAttributeProvider" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupCustomAttributeProvider () As ICustomAttributeProvider" />
+      <MemberSignature Language="F#" Value="abstract member LookupCustomAttributeProvider : unit -&gt; System.Reflection.ICustomAttributeProvider&#xA;override this.LookupCustomAttributeProvider : unit -&gt; System.Reflection.ICustomAttributeProvider" Usage="xamlMember.LookupCustomAttributeProvider " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Reflection::ICustomAttributeProvider ^ LookupCustomAttributeProvider();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -844,6 +948,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Xaml.Schema.XamlValueConverter&lt;System.Xaml.XamlDeferringLoader&gt; LookupDeferringLoader ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.Schema.XamlValueConverter`1&lt;class System.Xaml.XamlDeferringLoader&gt; LookupDeferringLoader() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupDeferringLoader" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupDeferringLoader () As XamlValueConverter(Of XamlDeferringLoader)" />
+      <MemberSignature Language="F#" Value="abstract member LookupDeferringLoader : unit -&gt; System.Xaml.Schema.XamlValueConverter&lt;System.Xaml.XamlDeferringLoader&gt;&#xA;override this.LookupDeferringLoader : unit -&gt; System.Xaml.Schema.XamlValueConverter&lt;System.Xaml.XamlDeferringLoader&gt;" Usage="xamlMember.LookupDeferringLoader " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::Schema::XamlValueConverter&lt;System::Xaml::XamlDeferringLoader ^&gt; ^ LookupDeferringLoader();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -873,6 +980,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IList&lt;System.Xaml.XamlMember&gt; LookupDependsOn ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Xaml.XamlMember&gt; LookupDependsOn() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupDependsOn" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupDependsOn () As IList(Of XamlMember)" />
+      <MemberSignature Language="F#" Value="abstract member LookupDependsOn : unit -&gt; System.Collections.Generic.IList&lt;System.Xaml.XamlMember&gt;&#xA;override this.LookupDependsOn : unit -&gt; System.Collections.Generic.IList&lt;System.Xaml.XamlMember&gt;" Usage="xamlMember.LookupDependsOn " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IList&lt;System::Xaml::XamlMember ^&gt; ^ LookupDependsOn();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -906,6 +1016,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Xaml.Schema.XamlMemberInvoker LookupInvoker ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.Schema.XamlMemberInvoker LookupInvoker() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupInvoker" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupInvoker () As XamlMemberInvoker" />
+      <MemberSignature Language="F#" Value="abstract member LookupInvoker : unit -&gt; System.Xaml.Schema.XamlMemberInvoker&#xA;override this.LookupInvoker : unit -&gt; System.Xaml.Schema.XamlMemberInvoker" Usage="xamlMember.LookupInvoker " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::Schema::XamlMemberInvoker ^ LookupInvoker();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -938,6 +1051,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool LookupIsAmbient ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsAmbient() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupIsAmbient" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsAmbient () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsAmbient : unit -&gt; bool&#xA;override this.LookupIsAmbient : unit -&gt; bool" Usage="xamlMember.LookupIsAmbient " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsAmbient();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -970,6 +1086,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool LookupIsEvent ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsEvent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupIsEvent" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsEvent () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsEvent : unit -&gt; bool&#xA;override this.LookupIsEvent : unit -&gt; bool" Usage="xamlMember.LookupIsEvent " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsEvent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1000,6 +1119,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool LookupIsReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupIsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsReadOnly () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsReadOnly : unit -&gt; bool&#xA;override this.LookupIsReadOnly : unit -&gt; bool" Usage="xamlMember.LookupIsReadOnly " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1030,6 +1152,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool LookupIsReadPublic ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsReadPublic() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupIsReadPublic" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsReadPublic () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsReadPublic : unit -&gt; bool&#xA;override this.LookupIsReadPublic : unit -&gt; bool" Usage="xamlMember.LookupIsReadPublic " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsReadPublic();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1065,6 +1190,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool LookupIsUnknown ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsUnknown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupIsUnknown" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsUnknown () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsUnknown : unit -&gt; bool&#xA;override this.LookupIsUnknown : unit -&gt; bool" Usage="xamlMember.LookupIsUnknown " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsUnknown();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1095,6 +1223,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool LookupIsWriteOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsWriteOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupIsWriteOnly" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsWriteOnly () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsWriteOnly : unit -&gt; bool&#xA;override this.LookupIsWriteOnly : unit -&gt; bool" Usage="xamlMember.LookupIsWriteOnly " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsWriteOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1125,6 +1256,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool LookupIsWritePublic ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool LookupIsWritePublic() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupIsWritePublic" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupIsWritePublic () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member LookupIsWritePublic : unit -&gt; bool&#xA;override this.LookupIsWritePublic : unit -&gt; bool" Usage="xamlMember.LookupIsWritePublic " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool LookupIsWritePublic();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1158,6 +1292,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IReadOnlyDictionary&lt;char,char&gt; LookupMarkupExtensionBracketCharacters ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;char, char&gt; LookupMarkupExtensionBracketCharacters() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupMarkupExtensionBracketCharacters" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupMarkupExtensionBracketCharacters () As IReadOnlyDictionary(Of Char, Char)" />
+      <MemberSignature Language="F#" Value="abstract member LookupMarkupExtensionBracketCharacters : unit -&gt; System.Collections.Generic.IReadOnlyDictionary&lt;char, char&gt;&#xA;override this.LookupMarkupExtensionBracketCharacters : unit -&gt; System.Collections.Generic.IReadOnlyDictionary&lt;char, char&gt;" Usage="xamlMember.LookupMarkupExtensionBracketCharacters " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IReadOnlyDictionary&lt;char, char&gt; ^ LookupMarkupExtensionBracketCharacters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1177,6 +1314,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Xaml.XamlType LookupTargetType ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.XamlType LookupTargetType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupTargetType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupTargetType () As XamlType" />
+      <MemberSignature Language="F#" Value="abstract member LookupTargetType : unit -&gt; System.Xaml.XamlType&#xA;override this.LookupTargetType : unit -&gt; System.Xaml.XamlType" Usage="xamlMember.LookupTargetType " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::XamlType ^ LookupTargetType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1206,6 +1346,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Xaml.XamlType LookupType ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.XamlType LookupType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupType () As XamlType" />
+      <MemberSignature Language="F#" Value="abstract member LookupType : unit -&gt; System.Xaml.XamlType&#xA;override this.LookupType : unit -&gt; System.Xaml.XamlType" Usage="xamlMember.LookupType " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::XamlType ^ LookupType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1245,6 +1388,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Xaml.Schema.XamlValueConverter&lt;System.ComponentModel.TypeConverter&gt; LookupTypeConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.Schema.XamlValueConverter`1&lt;class System.ComponentModel.TypeConverter&gt; LookupTypeConverter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupTypeConverter" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupTypeConverter () As XamlValueConverter(Of TypeConverter)" />
+      <MemberSignature Language="F#" Value="abstract member LookupTypeConverter : unit -&gt; System.Xaml.Schema.XamlValueConverter&lt;System.ComponentModel.TypeConverter&gt;&#xA;override this.LookupTypeConverter : unit -&gt; System.Xaml.Schema.XamlValueConverter&lt;System.ComponentModel.TypeConverter&gt;" Usage="xamlMember.LookupTypeConverter " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::Schema::XamlValueConverter&lt;System::ComponentModel::TypeConverter ^&gt; ^ LookupTypeConverter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1280,6 +1426,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Reflection.MethodInfo LookupUnderlyingGetter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Reflection.MethodInfo LookupUnderlyingGetter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupUnderlyingGetter" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupUnderlyingGetter () As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member LookupUnderlyingGetter : unit -&gt; System.Reflection.MethodInfo&#xA;override this.LookupUnderlyingGetter : unit -&gt; System.Reflection.MethodInfo" Usage="xamlMember.LookupUnderlyingGetter " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Reflection::MethodInfo ^ LookupUnderlyingGetter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1308,6 +1457,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Reflection.MemberInfo LookupUnderlyingMember ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Reflection.MemberInfo LookupUnderlyingMember() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupUnderlyingMember" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupUnderlyingMember () As MemberInfo" />
+      <MemberSignature Language="F#" Value="abstract member LookupUnderlyingMember : unit -&gt; System.Reflection.MemberInfo&#xA;override this.LookupUnderlyingMember : unit -&gt; System.Reflection.MemberInfo" Usage="xamlMember.LookupUnderlyingMember " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Reflection::MemberInfo ^ LookupUnderlyingMember();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1339,6 +1491,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Reflection.MethodInfo LookupUnderlyingSetter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Reflection.MethodInfo LookupUnderlyingSetter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupUnderlyingSetter" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupUnderlyingSetter () As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member LookupUnderlyingSetter : unit -&gt; System.Reflection.MethodInfo&#xA;override this.LookupUnderlyingSetter : unit -&gt; System.Reflection.MethodInfo" Usage="xamlMember.LookupUnderlyingSetter " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Reflection::MethodInfo ^ LookupUnderlyingSetter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1367,6 +1522,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Xaml.Schema.XamlValueConverter&lt;System.Windows.Markup.ValueSerializer&gt; LookupValueSerializer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xaml.Schema.XamlValueConverter`1&lt;class System.Windows.Markup.ValueSerializer&gt; LookupValueSerializer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.LookupValueSerializer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function LookupValueSerializer () As XamlValueConverter(Of ValueSerializer)" />
+      <MemberSignature Language="F#" Value="abstract member LookupValueSerializer : unit -&gt; System.Xaml.Schema.XamlValueConverter&lt;System.Windows.Markup.ValueSerializer&gt;&#xA;override this.LookupValueSerializer : unit -&gt; System.Xaml.Schema.XamlValueConverter&lt;System.Windows.Markup.ValueSerializer&gt;" Usage="xamlMember.LookupValueSerializer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xaml::Schema::XamlValueConverter&lt;System::Windows::Markup::ValueSerializer ^&gt; ^ LookupValueSerializer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1402,6 +1560,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IReadOnlyDictionary&lt;char,char&gt; MarkupExtensionBracketCharacters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IReadOnlyDictionary`2&lt;char, char&gt; MarkupExtensionBracketCharacters" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.MarkupExtensionBracketCharacters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MarkupExtensionBracketCharacters As IReadOnlyDictionary(Of Char, Char)" />
+      <MemberSignature Language="F#" Value="member this.MarkupExtensionBracketCharacters : System.Collections.Generic.IReadOnlyDictionary&lt;char, char&gt;" Usage="System.Xaml.XamlMember.MarkupExtensionBracketCharacters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IReadOnlyDictionary&lt;char, char&gt; ^ MarkupExtensionBracketCharacters { System::Collections::Generic::IReadOnlyDictionary&lt;char, char&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1420,6 +1581,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Xaml.XamlMember.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1447,6 +1611,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Xaml.XamlMember xamlMember1, System.Xaml.XamlMember xamlMember2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Xaml.XamlMember xamlMember1, class System.Xaml.XamlMember xamlMember2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.op_Equality(System.Xaml.XamlMember,System.Xaml.XamlMember)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (xamlMember1 As XamlMember, xamlMember2 As XamlMember) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Xaml.XamlMember * System.Xaml.XamlMember -&gt; bool" Usage="xamlMember1 = xamlMember2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Xaml::XamlMember ^ xamlMember1, System::Xaml::XamlMember ^ xamlMember2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1472,6 +1639,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Xaml.XamlMember xamlMember1, System.Xaml.XamlMember xamlMember2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Xaml.XamlMember xamlMember1, class System.Xaml.XamlMember xamlMember2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.op_Inequality(System.Xaml.XamlMember,System.Xaml.XamlMember)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (xamlMember1 As XamlMember, xamlMember2 As XamlMember) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Xaml.XamlMember * System.Xaml.XamlMember -&gt; bool" Usage="System.Xaml.XamlMember.op_Inequality (xamlMember1, xamlMember2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Xaml::XamlMember ^ xamlMember1, System::Xaml::XamlMember ^ xamlMember2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1497,6 +1667,9 @@
       <MemberSignature Language="C#" Value="public string PreferredXamlNamespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PreferredXamlNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.PreferredXamlNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreferredXamlNamespace As String" />
+      <MemberSignature Language="F#" Value="member this.PreferredXamlNamespace : string" Usage="System.Xaml.XamlMember.PreferredXamlNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PreferredXamlNamespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1522,6 +1695,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.DesignerSerializationVisibility SerializationVisibility { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.DesignerSerializationVisibility SerializationVisibility" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.SerializationVisibility" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SerializationVisibility As DesignerSerializationVisibility" />
+      <MemberSignature Language="F#" Value="member this.SerializationVisibility : System.ComponentModel.DesignerSerializationVisibility" Usage="System.Xaml.XamlMember.SerializationVisibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::DesignerSerializationVisibility SerializationVisibility { System::ComponentModel::DesignerSerializationVisibility get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1540,6 +1716,9 @@
       <MemberSignature Language="C#" Value="public System.Xaml.XamlType TargetType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlType TargetType" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.TargetType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetType As XamlType" />
+      <MemberSignature Language="F#" Value="member this.TargetType : System.Xaml.XamlType" Usage="System.Xaml.XamlMember.TargetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlType ^ TargetType { System::Xaml::XamlType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1569,6 +1748,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlMember.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xamlMember.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1595,6 +1777,9 @@
       <MemberSignature Language="C#" Value="public System.Xaml.XamlType Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.XamlType Type" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As XamlType" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Xaml.XamlType" Usage="System.Xaml.XamlMember.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::XamlType ^ Type { System::Xaml::XamlType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1630,6 +1815,9 @@
       <MemberSignature Language="C#" Value="public System.Xaml.Schema.XamlValueConverter&lt;System.ComponentModel.TypeConverter&gt; TypeConverter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.Schema.XamlValueConverter`1&lt;class System.ComponentModel.TypeConverter&gt; TypeConverter" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.TypeConverter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeConverter As XamlValueConverter(Of TypeConverter)" />
+      <MemberSignature Language="F#" Value="member this.TypeConverter : System.Xaml.Schema.XamlValueConverter&lt;System.ComponentModel.TypeConverter&gt;" Usage="System.Xaml.XamlMember.TypeConverter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::Schema::XamlValueConverter&lt;System::ComponentModel::TypeConverter ^&gt; ^ TypeConverter { System::Xaml::Schema::XamlValueConverter&lt;System::ComponentModel::TypeConverter ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1665,6 +1853,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo UnderlyingMember { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MemberInfo UnderlyingMember" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.UnderlyingMember" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnderlyingMember As MemberInfo" />
+      <MemberSignature Language="F#" Value="member this.UnderlyingMember : System.Reflection.MemberInfo" Usage="System.Xaml.XamlMember.UnderlyingMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MemberInfo ^ UnderlyingMember { System::Reflection::MemberInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1695,6 +1886,9 @@
       <MemberSignature Language="C#" Value="public System.Xaml.Schema.XamlValueConverter&lt;System.Windows.Markup.ValueSerializer&gt; ValueSerializer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xaml.Schema.XamlValueConverter`1&lt;class System.Windows.Markup.ValueSerializer&gt; ValueSerializer" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlMember.ValueSerializer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueSerializer As XamlValueConverter(Of ValueSerializer)" />
+      <MemberSignature Language="F#" Value="member this.ValueSerializer : System.Xaml.Schema.XamlValueConverter&lt;System.Windows.Markup.ValueSerializer&gt;" Usage="System.Xaml.XamlMember.ValueSerializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xaml::Schema::XamlValueConverter&lt;System::Windows::Markup::ValueSerializer ^&gt; ^ ValueSerializer { System::Xaml::Schema::XamlValueConverter&lt;System::Windows::Markup::ValueSerializer ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -1718,23 +1912,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether the current object is equal to another object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlMember" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

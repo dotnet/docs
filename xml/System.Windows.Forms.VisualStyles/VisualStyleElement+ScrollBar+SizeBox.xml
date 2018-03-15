@@ -1,7 +1,10 @@
-<Type Name="VisualStyleElement+ScrollBar+SizeBox" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ScrollBar+SizeBox">
+﻿<Type Name="VisualStyleElement+ScrollBar+SizeBox" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ScrollBar+SizeBox">
   <TypeSignature Language="C#" Value="public static class VisualStyleElement.ScrollBar.SizeBox" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/ScrollBar/SizeBox extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.SizeBox" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualStyleElement.ScrollBar.SizeBox" />
+  <TypeSignature Language="F#" Value="type VisualStyleElement.ScrollBar.SizeBox = class" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class VisualStyleElement::ScrollBar::SizeBox abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement LeftAlign { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement LeftAlign" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.SizeBox.LeftAlign" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property LeftAlign As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.LeftAlign : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.SizeBox.LeftAlign" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ LeftAlign { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +75,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement RightAlign { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement RightAlign" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.SizeBox.RightAlign" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property RightAlign As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.RightAlign : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.SizeBox.RightAlign" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ RightAlign { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

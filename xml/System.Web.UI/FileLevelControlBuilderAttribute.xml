@@ -1,7 +1,10 @@
-<Type Name="FileLevelControlBuilderAttribute" FullName="System.Web.UI.FileLevelControlBuilderAttribute">
+﻿<Type Name="FileLevelControlBuilderAttribute" FullName="System.Web.UI.FileLevelControlBuilderAttribute">
   <TypeSignature Language="C#" Value="public sealed class FileLevelControlBuilderAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileLevelControlBuilderAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.FileLevelControlBuilderAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileLevelControlBuilderAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type FileLevelControlBuilderAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileLevelControlBuilderAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="public FileLevelControlBuilderAttribute (Type builderType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type builderType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FileLevelControlBuilderAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (builderType As Type)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.FileLevelControlBuilderAttribute : Type -&gt; System.Web.UI.FileLevelControlBuilderAttribute" Usage="new System.Web.UI.FileLevelControlBuilderAttribute builderType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileLevelControlBuilderAttribute(Type ^ builderType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +69,9 @@
       <MemberSignature Language="C#" Value="public Type BuilderType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BuilderType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.FileLevelControlBuilderAttribute.BuilderType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuilderType As Type" />
+      <MemberSignature Language="F#" Value="member this.BuilderType : Type" Usage="System.Web.UI.FileLevelControlBuilderAttribute.BuilderType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ BuilderType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +90,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.FileLevelControlBuilderAttribute Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.FileLevelControlBuilderAttribute Default" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.FileLevelControlBuilderAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As FileLevelControlBuilderAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.Web.UI.FileLevelControlBuilderAttribute" Usage="System.Web.UI.FileLevelControlBuilderAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::FileLevelControlBuilderAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -98,6 +110,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FileLevelControlBuilderAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="fileLevelControlBuilderAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -121,6 +136,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FileLevelControlBuilderAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="fileLevelControlBuilderAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -141,6 +159,9 @@
       <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.FileLevelControlBuilderAttribute.IsDefaultAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="fileLevelControlBuilderAttribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

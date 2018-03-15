@@ -1,7 +1,10 @@
-<Type Name="XpsResourceSharing" FullName="System.Windows.Xps.Packaging.XpsResourceSharing">
+﻿<Type Name="XpsResourceSharing" FullName="System.Windows.Xps.Packaging.XpsResourceSharing">
   <TypeSignature Language="C#" Value="public enum XpsResourceSharing" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XpsResourceSharing extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsResourceSharing" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XpsResourceSharing" />
+  <TypeSignature Language="F#" Value="type XpsResourceSharing = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class XpsResourceSharing" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="NoResourceSharing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.XpsResourceSharing NoResourceSharing = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsResourceSharing.NoResourceSharing" />
+      <MemberSignature Language="VB.NET" Value="NoResourceSharing" />
+      <MemberSignature Language="F#" Value="NoResourceSharing = 1" Usage="System.Windows.Xps.Packaging.XpsResourceSharing.NoResourceSharing" />
+      <MemberSignature Language="C++ CLI" Value="NoResourceSharing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsResourceSharing</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The resources can not be shared.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="ShareResources" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.XpsResourceSharing ShareResources = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.XpsResourceSharing.ShareResources" />
+      <MemberSignature Language="VB.NET" Value="ShareResources" />
+      <MemberSignature Language="F#" Value="ShareResources = 0" Usage="System.Windows.Xps.Packaging.XpsResourceSharing.ShareResources" />
+      <MemberSignature Language="C++ CLI" Value="ShareResources" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.XpsResourceSharing</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The resources can be shared.</summary>
       </Docs>

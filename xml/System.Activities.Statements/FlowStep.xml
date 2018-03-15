@@ -1,7 +1,10 @@
-<Type Name="FlowStep" FullName="System.Activities.Statements.FlowStep">
+﻿<Type Name="FlowStep" FullName="System.Activities.Statements.FlowStep">
   <TypeSignature Language="C#" Value="public sealed class FlowStep : System.Activities.Statements.FlowNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FlowStep extends System.Activities.Statements.FlowNode" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.FlowStep" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FlowStep&#xA;Inherits FlowNode" />
+  <TypeSignature Language="F#" Value="type FlowStep = class&#xA;    inherit FlowNode" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FlowStep sealed : System::Activities::Statements::FlowNode" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,8 @@
       <MemberSignature Language="C#" Value="public FlowStep ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.FlowStep.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FlowStep();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -57,6 +62,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Activity Action { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity Action" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.FlowStep.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As Activity" />
+      <MemberSignature Language="F#" Value="member this.Action : System.Activities.Activity with get, set" Usage="System.Activities.Statements.FlowStep.Action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Action { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -89,6 +97,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Statements.FlowNode Next { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Statements.FlowNode Next" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.FlowStep.Next" />
+      <MemberSignature Language="VB.NET" Value="Public Property Next As FlowNode" />
+      <MemberSignature Language="F#" Value="member this.Next : System.Activities.Statements.FlowNode with get, set" Usage="System.Activities.Statements.FlowStep.Next" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Statements::FlowNode ^ Next { System::Activities::Statements::FlowNode ^ get(); void set(System::Activities::Statements::FlowNode ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

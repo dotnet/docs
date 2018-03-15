@@ -1,7 +1,10 @@
-<Type Name="SystemFonts" FullName="System.Windows.SystemFonts">
+﻿<Type Name="SystemFonts" FullName="System.Windows.SystemFonts">
   <TypeSignature Language="C#" Value="public static class SystemFonts" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SystemFonts extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.SystemFonts" />
+  <TypeSignature Language="VB.NET" Value="Public Class SystemFonts" />
+  <TypeSignature Language="F#" Value="type SystemFonts = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SystemFonts abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.FontFamily CaptionFontFamily { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.FontFamily CaptionFontFamily" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.CaptionFontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionFontFamily As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.CaptionFontFamily : System.Windows.Media.FontFamily" Usage="System.Windows.SystemFonts.CaptionFontFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::FontFamily ^ CaptionFontFamily { System::Windows::Media::FontFamily ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -48,6 +54,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey CaptionFontFamilyKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey CaptionFontFamilyKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.CaptionFontFamilyKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionFontFamilyKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.CaptionFontFamilyKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.CaptionFontFamilyKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ CaptionFontFamilyKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -76,6 +85,9 @@
       <MemberSignature Language="C#" Value="public static double CaptionFontSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property float64 CaptionFontSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.CaptionFontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionFontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.CaptionFontSize : double" Usage="System.Windows.SystemFonts.CaptionFontSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double CaptionFontSize { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -105,6 +117,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey CaptionFontSizeKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey CaptionFontSizeKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.CaptionFontSizeKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionFontSizeKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.CaptionFontSizeKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.CaptionFontSizeKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ CaptionFontSizeKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -133,6 +148,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStyle CaptionFontStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStyle CaptionFontStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.CaptionFontStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionFontStyle As FontStyle" />
+      <MemberSignature Language="F#" Value="member this.CaptionFontStyle : System.Windows.FontStyle" Usage="System.Windows.SystemFonts.CaptionFontStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontStyle CaptionFontStyle { System::Windows::FontStyle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -162,6 +180,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey CaptionFontStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey CaptionFontStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.CaptionFontStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionFontStyleKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.CaptionFontStyleKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.CaptionFontStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ CaptionFontStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -190,6 +211,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.TextDecorationCollection CaptionFontTextDecorations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.TextDecorationCollection CaptionFontTextDecorations" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.CaptionFontTextDecorations" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionFontTextDecorations As TextDecorationCollection" />
+      <MemberSignature Language="F#" Value="member this.CaptionFontTextDecorations : System.Windows.TextDecorationCollection" Usage="System.Windows.SystemFonts.CaptionFontTextDecorations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::TextDecorationCollection ^ CaptionFontTextDecorations { System::Windows::TextDecorationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -219,6 +243,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey CaptionFontTextDecorationsKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey CaptionFontTextDecorationsKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.CaptionFontTextDecorationsKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionFontTextDecorationsKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.CaptionFontTextDecorationsKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.CaptionFontTextDecorationsKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ CaptionFontTextDecorationsKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -247,6 +274,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontWeight CaptionFontWeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight CaptionFontWeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.CaptionFontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionFontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.CaptionFontWeight : System.Windows.FontWeight" Usage="System.Windows.SystemFonts.CaptionFontWeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight CaptionFontWeight { System::Windows::FontWeight get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -276,6 +306,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey CaptionFontWeightKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey CaptionFontWeightKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.CaptionFontWeightKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CaptionFontWeightKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.CaptionFontWeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.CaptionFontWeightKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ CaptionFontWeightKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -304,6 +337,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.FontFamily IconFontFamily { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.FontFamily IconFontFamily" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.IconFontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconFontFamily As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.IconFontFamily : System.Windows.Media.FontFamily" Usage="System.Windows.SystemFonts.IconFontFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::FontFamily ^ IconFontFamily { System::Windows::Media::FontFamily ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -333,6 +369,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey IconFontFamilyKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey IconFontFamilyKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.IconFontFamilyKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconFontFamilyKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.IconFontFamilyKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.IconFontFamilyKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IconFontFamilyKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -361,6 +400,9 @@
       <MemberSignature Language="C#" Value="public static double IconFontSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property float64 IconFontSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.IconFontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconFontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.IconFontSize : double" Usage="System.Windows.SystemFonts.IconFontSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double IconFontSize { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -390,6 +432,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey IconFontSizeKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey IconFontSizeKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.IconFontSizeKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconFontSizeKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.IconFontSizeKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.IconFontSizeKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IconFontSizeKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -418,6 +463,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStyle IconFontStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStyle IconFontStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.IconFontStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconFontStyle As FontStyle" />
+      <MemberSignature Language="F#" Value="member this.IconFontStyle : System.Windows.FontStyle" Usage="System.Windows.SystemFonts.IconFontStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontStyle IconFontStyle { System::Windows::FontStyle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -447,6 +495,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey IconFontStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey IconFontStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.IconFontStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconFontStyleKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.IconFontStyleKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.IconFontStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IconFontStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -475,6 +526,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.TextDecorationCollection IconFontTextDecorations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.TextDecorationCollection IconFontTextDecorations" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.IconFontTextDecorations" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconFontTextDecorations As TextDecorationCollection" />
+      <MemberSignature Language="F#" Value="member this.IconFontTextDecorations : System.Windows.TextDecorationCollection" Usage="System.Windows.SystemFonts.IconFontTextDecorations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::TextDecorationCollection ^ IconFontTextDecorations { System::Windows::TextDecorationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -504,6 +558,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey IconFontTextDecorationsKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey IconFontTextDecorationsKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.IconFontTextDecorationsKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconFontTextDecorationsKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.IconFontTextDecorationsKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.IconFontTextDecorationsKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IconFontTextDecorationsKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -532,6 +589,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontWeight IconFontWeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight IconFontWeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.IconFontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconFontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.IconFontWeight : System.Windows.FontWeight" Usage="System.Windows.SystemFonts.IconFontWeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight IconFontWeight { System::Windows::FontWeight get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -561,6 +621,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey IconFontWeightKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey IconFontWeightKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.IconFontWeightKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IconFontWeightKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.IconFontWeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.IconFontWeightKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ IconFontWeightKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -589,6 +652,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.FontFamily MenuFontFamily { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.FontFamily MenuFontFamily" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MenuFontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuFontFamily As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.MenuFontFamily : System.Windows.Media.FontFamily" Usage="System.Windows.SystemFonts.MenuFontFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::FontFamily ^ MenuFontFamily { System::Windows::Media::FontFamily ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -618,6 +684,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey MenuFontFamilyKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey MenuFontFamilyKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MenuFontFamilyKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuFontFamilyKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.MenuFontFamilyKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.MenuFontFamilyKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuFontFamilyKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -646,6 +715,9 @@
       <MemberSignature Language="C#" Value="public static double MenuFontSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property float64 MenuFontSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MenuFontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuFontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.MenuFontSize : double" Usage="System.Windows.SystemFonts.MenuFontSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MenuFontSize { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -675,6 +747,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey MenuFontSizeKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey MenuFontSizeKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MenuFontSizeKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuFontSizeKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.MenuFontSizeKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.MenuFontSizeKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuFontSizeKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -703,6 +778,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStyle MenuFontStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStyle MenuFontStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MenuFontStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuFontStyle As FontStyle" />
+      <MemberSignature Language="F#" Value="member this.MenuFontStyle : System.Windows.FontStyle" Usage="System.Windows.SystemFonts.MenuFontStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontStyle MenuFontStyle { System::Windows::FontStyle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -732,6 +810,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey MenuFontStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey MenuFontStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MenuFontStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuFontStyleKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.MenuFontStyleKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.MenuFontStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuFontStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -760,6 +841,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.TextDecorationCollection MenuFontTextDecorations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.TextDecorationCollection MenuFontTextDecorations" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MenuFontTextDecorations" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuFontTextDecorations As TextDecorationCollection" />
+      <MemberSignature Language="F#" Value="member this.MenuFontTextDecorations : System.Windows.TextDecorationCollection" Usage="System.Windows.SystemFonts.MenuFontTextDecorations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::TextDecorationCollection ^ MenuFontTextDecorations { System::Windows::TextDecorationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -789,6 +873,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey MenuFontTextDecorationsKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey MenuFontTextDecorationsKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MenuFontTextDecorationsKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuFontTextDecorationsKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.MenuFontTextDecorationsKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.MenuFontTextDecorationsKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuFontTextDecorationsKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -817,6 +904,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontWeight MenuFontWeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight MenuFontWeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MenuFontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuFontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.MenuFontWeight : System.Windows.FontWeight" Usage="System.Windows.SystemFonts.MenuFontWeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight MenuFontWeight { System::Windows::FontWeight get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -846,6 +936,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey MenuFontWeightKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey MenuFontWeightKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MenuFontWeightKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MenuFontWeightKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.MenuFontWeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.MenuFontWeightKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MenuFontWeightKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -874,6 +967,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.FontFamily MessageFontFamily { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.FontFamily MessageFontFamily" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MessageFontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MessageFontFamily As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.MessageFontFamily : System.Windows.Media.FontFamily" Usage="System.Windows.SystemFonts.MessageFontFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::FontFamily ^ MessageFontFamily { System::Windows::Media::FontFamily ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -903,6 +999,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey MessageFontFamilyKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey MessageFontFamilyKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MessageFontFamilyKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MessageFontFamilyKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.MessageFontFamilyKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.MessageFontFamilyKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MessageFontFamilyKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -931,6 +1030,9 @@
       <MemberSignature Language="C#" Value="public static double MessageFontSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property float64 MessageFontSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MessageFontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MessageFontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.MessageFontSize : double" Usage="System.Windows.SystemFonts.MessageFontSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double MessageFontSize { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -960,6 +1062,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey MessageFontSizeKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey MessageFontSizeKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MessageFontSizeKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MessageFontSizeKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.MessageFontSizeKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.MessageFontSizeKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MessageFontSizeKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -988,6 +1093,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStyle MessageFontStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStyle MessageFontStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MessageFontStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MessageFontStyle As FontStyle" />
+      <MemberSignature Language="F#" Value="member this.MessageFontStyle : System.Windows.FontStyle" Usage="System.Windows.SystemFonts.MessageFontStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontStyle MessageFontStyle { System::Windows::FontStyle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1017,6 +1125,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey MessageFontStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey MessageFontStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MessageFontStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MessageFontStyleKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.MessageFontStyleKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.MessageFontStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MessageFontStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1045,6 +1156,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.TextDecorationCollection MessageFontTextDecorations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.TextDecorationCollection MessageFontTextDecorations" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MessageFontTextDecorations" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MessageFontTextDecorations As TextDecorationCollection" />
+      <MemberSignature Language="F#" Value="member this.MessageFontTextDecorations : System.Windows.TextDecorationCollection" Usage="System.Windows.SystemFonts.MessageFontTextDecorations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::TextDecorationCollection ^ MessageFontTextDecorations { System::Windows::TextDecorationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1074,6 +1188,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey MessageFontTextDecorationsKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey MessageFontTextDecorationsKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MessageFontTextDecorationsKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MessageFontTextDecorationsKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.MessageFontTextDecorationsKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.MessageFontTextDecorationsKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MessageFontTextDecorationsKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1102,6 +1219,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontWeight MessageFontWeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight MessageFontWeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MessageFontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MessageFontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.MessageFontWeight : System.Windows.FontWeight" Usage="System.Windows.SystemFonts.MessageFontWeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight MessageFontWeight { System::Windows::FontWeight get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1131,6 +1251,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey MessageFontWeightKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey MessageFontWeightKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.MessageFontWeightKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property MessageFontWeightKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.MessageFontWeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.MessageFontWeightKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ MessageFontWeightKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1159,6 +1282,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.FontFamily SmallCaptionFontFamily { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.FontFamily SmallCaptionFontFamily" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.SmallCaptionFontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionFontFamily As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionFontFamily : System.Windows.Media.FontFamily" Usage="System.Windows.SystemFonts.SmallCaptionFontFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::FontFamily ^ SmallCaptionFontFamily { System::Windows::Media::FontFamily ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1188,6 +1314,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey SmallCaptionFontFamilyKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey SmallCaptionFontFamilyKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.SmallCaptionFontFamilyKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionFontFamilyKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionFontFamilyKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.SmallCaptionFontFamilyKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SmallCaptionFontFamilyKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1216,6 +1345,9 @@
       <MemberSignature Language="C#" Value="public static double SmallCaptionFontSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property float64 SmallCaptionFontSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.SmallCaptionFontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionFontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionFontSize : double" Usage="System.Windows.SystemFonts.SmallCaptionFontSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double SmallCaptionFontSize { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1245,6 +1377,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey SmallCaptionFontSizeKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey SmallCaptionFontSizeKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.SmallCaptionFontSizeKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionFontSizeKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionFontSizeKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.SmallCaptionFontSizeKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SmallCaptionFontSizeKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1273,6 +1408,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStyle SmallCaptionFontStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStyle SmallCaptionFontStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.SmallCaptionFontStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionFontStyle As FontStyle" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionFontStyle : System.Windows.FontStyle" Usage="System.Windows.SystemFonts.SmallCaptionFontStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontStyle SmallCaptionFontStyle { System::Windows::FontStyle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1302,6 +1440,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey SmallCaptionFontStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey SmallCaptionFontStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.SmallCaptionFontStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionFontStyleKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionFontStyleKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.SmallCaptionFontStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SmallCaptionFontStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1330,6 +1471,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.TextDecorationCollection SmallCaptionFontTextDecorations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.TextDecorationCollection SmallCaptionFontTextDecorations" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.SmallCaptionFontTextDecorations" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionFontTextDecorations As TextDecorationCollection" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionFontTextDecorations : System.Windows.TextDecorationCollection" Usage="System.Windows.SystemFonts.SmallCaptionFontTextDecorations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::TextDecorationCollection ^ SmallCaptionFontTextDecorations { System::Windows::TextDecorationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1359,6 +1503,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey SmallCaptionFontTextDecorationsKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey SmallCaptionFontTextDecorationsKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.SmallCaptionFontTextDecorationsKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionFontTextDecorationsKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionFontTextDecorationsKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.SmallCaptionFontTextDecorationsKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SmallCaptionFontTextDecorationsKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1387,6 +1534,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontWeight SmallCaptionFontWeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight SmallCaptionFontWeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.SmallCaptionFontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionFontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionFontWeight : System.Windows.FontWeight" Usage="System.Windows.SystemFonts.SmallCaptionFontWeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight SmallCaptionFontWeight { System::Windows::FontWeight get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1416,6 +1566,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey SmallCaptionFontWeightKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey SmallCaptionFontWeightKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.SmallCaptionFontWeightKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SmallCaptionFontWeightKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.SmallCaptionFontWeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.SmallCaptionFontWeightKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ SmallCaptionFontWeightKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1444,6 +1597,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.FontFamily StatusFontFamily { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.FontFamily StatusFontFamily" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.StatusFontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StatusFontFamily As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.StatusFontFamily : System.Windows.Media.FontFamily" Usage="System.Windows.SystemFonts.StatusFontFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::FontFamily ^ StatusFontFamily { System::Windows::Media::FontFamily ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1473,6 +1629,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey StatusFontFamilyKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey StatusFontFamilyKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.StatusFontFamilyKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StatusFontFamilyKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.StatusFontFamilyKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.StatusFontFamilyKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ StatusFontFamilyKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1501,6 +1660,9 @@
       <MemberSignature Language="C#" Value="public static double StatusFontSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property float64 StatusFontSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.StatusFontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StatusFontSize As Double" />
+      <MemberSignature Language="F#" Value="member this.StatusFontSize : double" Usage="System.Windows.SystemFonts.StatusFontSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double StatusFontSize { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1530,6 +1692,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey StatusFontSizeKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey StatusFontSizeKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.StatusFontSizeKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StatusFontSizeKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.StatusFontSizeKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.StatusFontSizeKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ StatusFontSizeKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1558,6 +1723,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontStyle StatusFontStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontStyle StatusFontStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.StatusFontStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StatusFontStyle As FontStyle" />
+      <MemberSignature Language="F#" Value="member this.StatusFontStyle : System.Windows.FontStyle" Usage="System.Windows.SystemFonts.StatusFontStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontStyle StatusFontStyle { System::Windows::FontStyle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1587,6 +1755,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey StatusFontStyleKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey StatusFontStyleKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.StatusFontStyleKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StatusFontStyleKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.StatusFontStyleKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.StatusFontStyleKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ StatusFontStyleKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1615,6 +1786,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.TextDecorationCollection StatusFontTextDecorations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.TextDecorationCollection StatusFontTextDecorations" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.StatusFontTextDecorations" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StatusFontTextDecorations As TextDecorationCollection" />
+      <MemberSignature Language="F#" Value="member this.StatusFontTextDecorations : System.Windows.TextDecorationCollection" Usage="System.Windows.SystemFonts.StatusFontTextDecorations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::TextDecorationCollection ^ StatusFontTextDecorations { System::Windows::TextDecorationCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1644,6 +1818,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey StatusFontTextDecorationsKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey StatusFontTextDecorationsKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.StatusFontTextDecorationsKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StatusFontTextDecorationsKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.StatusFontTextDecorationsKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.StatusFontTextDecorationsKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ StatusFontTextDecorationsKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1672,6 +1849,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.FontWeight StatusFontWeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.FontWeight StatusFontWeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.StatusFontWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StatusFontWeight As FontWeight" />
+      <MemberSignature Language="F#" Value="member this.StatusFontWeight : System.Windows.FontWeight" Usage="System.Windows.SystemFonts.StatusFontWeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::FontWeight StatusFontWeight { System::Windows::FontWeight get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1701,6 +1881,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ResourceKey StatusFontWeightKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.ResourceKey StatusFontWeightKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.SystemFonts.StatusFontWeightKey" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StatusFontWeightKey As ResourceKey" />
+      <MemberSignature Language="F#" Value="member this.StatusFontWeightKey : System.Windows.ResourceKey" Usage="System.Windows.SystemFonts.StatusFontWeightKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::ResourceKey ^ StatusFontWeightKey { System::Windows::ResourceKey ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="WriteLinesToFile" FullName="Microsoft.Build.Tasks.WriteLinesToFile">
+﻿<Type Name="WriteLinesToFile" FullName="Microsoft.Build.Tasks.WriteLinesToFile">
   <TypeSignature Language="C#" Value="public class WriteLinesToFile : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WriteLinesToFile extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.WriteLinesToFile" />
+  <TypeSignature Language="VB.NET" Value="Public Class WriteLinesToFile&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="F#" Value="type WriteLinesToFile = class&#xA;    inherit TaskExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WriteLinesToFile : Microsoft::Build::Tasks::TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public WriteLinesToFile ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.WriteLinesToFile.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WriteLinesToFile();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -36,6 +41,9 @@
       <MemberSignature Language="C#" Value="public string Encoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Encoding" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WriteLinesToFile.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Encoding As String" />
+      <MemberSignature Language="F#" Value="member this.Encoding : string with get, set" Usage="Microsoft.Build.Tasks.WriteLinesToFile.Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Encoding { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -55,6 +63,9 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.WriteLinesToFile.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="writeLinesToFile.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -76,6 +87,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem File { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem File" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WriteLinesToFile.File" />
+      <MemberSignature Language="VB.NET" Value="Public Property File As ITaskItem" />
+      <MemberSignature Language="F#" Value="member this.File : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.WriteLinesToFile.File" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ File { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -100,6 +114,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Lines { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Lines" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WriteLinesToFile.Lines" />
+      <MemberSignature Language="VB.NET" Value="Public Property Lines As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.Lines : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.WriteLinesToFile.Lines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ Lines { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -119,6 +136,9 @@
       <MemberSignature Language="C#" Value="public bool Overwrite { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Overwrite" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.WriteLinesToFile.Overwrite" />
+      <MemberSignature Language="VB.NET" Value="Public Property Overwrite As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Overwrite : bool with get, set" Usage="Microsoft.Build.Tasks.WriteLinesToFile.Overwrite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Overwrite { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

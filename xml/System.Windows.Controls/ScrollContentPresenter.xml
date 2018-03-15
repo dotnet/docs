@@ -1,7 +1,10 @@
-<Type Name="ScrollContentPresenter" FullName="System.Windows.Controls.ScrollContentPresenter">
+﻿<Type Name="ScrollContentPresenter" FullName="System.Windows.Controls.ScrollContentPresenter">
   <TypeSignature Language="C#" Value="public sealed class ScrollContentPresenter : System.Windows.Controls.ContentPresenter, System.Windows.Controls.Primitives.IScrollInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScrollContentPresenter extends System.Windows.Controls.ContentPresenter implements class System.Windows.Controls.Primitives.IScrollInfo" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ScrollContentPresenter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ScrollContentPresenter&#xA;Inherits ContentPresenter&#xA;Implements IScrollInfo" />
+  <TypeSignature Language="F#" Value="type ScrollContentPresenter = class&#xA;    inherit ContentPresenter&#xA;    interface IScrollInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScrollContentPresenter sealed : System::Windows::Controls::ContentPresenter, System::Windows::Controls::Primitives::IScrollInfo" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="public ScrollContentPresenter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScrollContentPresenter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -54,6 +59,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.AdornerLayer AdornerLayer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.AdornerLayer AdornerLayer" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollContentPresenter.AdornerLayer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AdornerLayer As AdornerLayer" />
+      <MemberSignature Language="F#" Value="member this.AdornerLayer : System.Windows.Documents.AdornerLayer" Usage="System.Windows.Controls.ScrollContentPresenter.AdornerLayer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::AdornerLayer ^ AdornerLayer { System::Windows::Documents::AdornerLayer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +87,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="scrollContentPresenter.ArrangeOverride arrangeSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -101,6 +112,9 @@
       <MemberSignature Language="C#" Value="public bool CanContentScroll { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanContentScroll" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollContentPresenter.CanContentScroll" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanContentScroll As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanContentScroll : bool with get, set" Usage="System.Windows.Controls.ScrollContentPresenter.CanContentScroll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanContentScroll { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -141,6 +155,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CanContentScrollProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CanContentScrollProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.ScrollContentPresenter.CanContentScrollProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanContentScrollProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CanContentScrollProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.ScrollContentPresenter.CanContentScrollProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanContentScrollProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -159,7 +176,13 @@
       <MemberSignature Language="C#" Value="public bool CanHorizontallyScroll { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanHorizontallyScroll" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollContentPresenter.CanHorizontallyScroll" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanHorizontallyScroll As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanHorizontallyScroll : bool with get, set" Usage="System.Windows.Controls.ScrollContentPresenter.CanHorizontallyScroll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanHorizontallyScroll { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.CanHorizontallyScroll</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -178,7 +201,13 @@
       <MemberSignature Language="C#" Value="public bool CanVerticallyScroll { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanVerticallyScroll" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollContentPresenter.CanVerticallyScroll" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanVerticallyScroll As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanVerticallyScroll : bool with get, set" Usage="System.Windows.Controls.ScrollContentPresenter.CanVerticallyScroll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanVerticallyScroll { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.CanVerticallyScroll</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -197,7 +226,13 @@
       <MemberSignature Language="C#" Value="public double ExtentHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ExtentHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollContentPresenter.ExtentHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.ExtentHeight : double" Usage="System.Windows.Controls.ScrollContentPresenter.ExtentHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentHeight { double get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.ExtentHeight</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -215,7 +250,13 @@
       <MemberSignature Language="C#" Value="public double ExtentWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ExtentWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollContentPresenter.ExtentWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.ExtentWidth : double" Usage="System.Windows.Controls.ScrollContentPresenter.ExtentWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentWidth { double get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.ExtentWidth</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -233,6 +274,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Geometry GetLayoutClip (System.Windows.Size layoutSlotSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Geometry GetLayoutClip(valuetype System.Windows.Size layoutSlotSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.GetLayoutClip(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLayoutClip (layoutSlotSize As Size) As Geometry" />
+      <MemberSignature Language="F#" Value="override this.GetLayoutClip : System.Windows.Size -&gt; System.Windows.Media.Geometry" Usage="scrollContentPresenter.GetLayoutClip layoutSlotSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Geometry ^ GetLayoutClip(System::Windows::Size layoutSlotSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -255,6 +299,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Visual GetVisualChild (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Visual GetVisualChild(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.GetVisualChild(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetVisualChild (index As Integer) As Visual" />
+      <MemberSignature Language="F#" Value="override this.GetVisualChild : int -&gt; System.Windows.Media.Visual" Usage="scrollContentPresenter.GetVisualChild index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Visual ^ GetVisualChild(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -277,14 +324,20 @@
       <MemberSignature Language="C#" Value="public double HorizontalOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 HorizontalOffset" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollContentPresenter.HorizontalOffset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalOffset As Double" />
+      <MemberSignature Language="F#" Value="member this.HorizontalOffset : double" Usage="System.Windows.Controls.ScrollContentPresenter.HorizontalOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double HorizontalOffset { double get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.HorizontalOffset</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -307,7 +360,13 @@
       <MemberSignature Language="C#" Value="public void LineDown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LineDown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.LineDown" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LineDown ()" />
+      <MemberSignature Language="F#" Value="abstract member LineDown : unit -&gt; unit&#xA;override this.LineDown : unit -&gt; unit" Usage="scrollContentPresenter.LineDown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineDown();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.LineDown</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -325,7 +384,13 @@
       <MemberSignature Language="C#" Value="public void LineLeft ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LineLeft() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.LineLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LineLeft ()" />
+      <MemberSignature Language="F#" Value="abstract member LineLeft : unit -&gt; unit&#xA;override this.LineLeft : unit -&gt; unit" Usage="scrollContentPresenter.LineLeft " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineLeft();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.LineLeft</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -343,7 +408,13 @@
       <MemberSignature Language="C#" Value="public void LineRight ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LineRight() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.LineRight" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LineRight ()" />
+      <MemberSignature Language="F#" Value="abstract member LineRight : unit -&gt; unit&#xA;override this.LineRight : unit -&gt; unit" Usage="scrollContentPresenter.LineRight " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineRight();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.LineRight</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -361,7 +432,13 @@
       <MemberSignature Language="C#" Value="public void LineUp ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LineUp() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.LineUp" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LineUp ()" />
+      <MemberSignature Language="F#" Value="abstract member LineUp : unit -&gt; unit&#xA;override this.LineUp : unit -&gt; unit" Usage="scrollContentPresenter.LineUp " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LineUp();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.LineUp</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -379,7 +456,12 @@
       <MemberSignature Language="C#" Value="public System.Windows.Rect MakeVisible (System.Windows.Media.Visual visual, System.Windows.Rect rectangle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Rect MakeVisible(class System.Windows.Media.Visual visual, valuetype System.Windows.Rect rectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.MakeVisible(System.Windows.Media.Visual,System.Windows.Rect)" />
+      <MemberSignature Language="F#" Value="abstract member MakeVisible : System.Windows.Media.Visual * System.Windows.Rect -&gt; System.Windows.Rect&#xA;override this.MakeVisible : System.Windows.Media.Visual * System.Windows.Rect -&gt; System.Windows.Rect" Usage="scrollContentPresenter.MakeVisible (visual, rectangle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Rect MakeVisible(System::Windows::Media::Visual ^ visual, System::Windows::Rect rectangle);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.MakeVisible(System.Windows.Media.Visual,System.Windows.Rect)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -410,6 +492,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="scrollContentPresenter.MeasureOverride constraint" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -432,7 +517,13 @@
       <MemberSignature Language="C#" Value="public void MouseWheelDown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MouseWheelDown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.MouseWheelDown" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MouseWheelDown ()" />
+      <MemberSignature Language="F#" Value="abstract member MouseWheelDown : unit -&gt; unit&#xA;override this.MouseWheelDown : unit -&gt; unit" Usage="scrollContentPresenter.MouseWheelDown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelDown();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelDown</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -450,7 +541,13 @@
       <MemberSignature Language="C#" Value="public void MouseWheelLeft ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MouseWheelLeft() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.MouseWheelLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MouseWheelLeft ()" />
+      <MemberSignature Language="F#" Value="abstract member MouseWheelLeft : unit -&gt; unit&#xA;override this.MouseWheelLeft : unit -&gt; unit" Usage="scrollContentPresenter.MouseWheelLeft " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelLeft();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelLeft</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -468,7 +565,13 @@
       <MemberSignature Language="C#" Value="public void MouseWheelRight ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MouseWheelRight() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.MouseWheelRight" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MouseWheelRight ()" />
+      <MemberSignature Language="F#" Value="abstract member MouseWheelRight : unit -&gt; unit&#xA;override this.MouseWheelRight : unit -&gt; unit" Usage="scrollContentPresenter.MouseWheelRight " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelRight();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelRight</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -486,7 +589,13 @@
       <MemberSignature Language="C#" Value="public void MouseWheelUp ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MouseWheelUp() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.MouseWheelUp" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MouseWheelUp ()" />
+      <MemberSignature Language="F#" Value="abstract member MouseWheelUp : unit -&gt; unit&#xA;override this.MouseWheelUp : unit -&gt; unit" Usage="scrollContentPresenter.MouseWheelUp " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MouseWheelUp();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.MouseWheelUp</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -504,6 +613,9 @@
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="scrollContentPresenter.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -522,7 +634,13 @@
       <MemberSignature Language="C#" Value="public void PageDown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageDown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.PageDown" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PageDown ()" />
+      <MemberSignature Language="F#" Value="abstract member PageDown : unit -&gt; unit&#xA;override this.PageDown : unit -&gt; unit" Usage="scrollContentPresenter.PageDown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageDown();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.PageDown</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -540,7 +658,13 @@
       <MemberSignature Language="C#" Value="public void PageLeft ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageLeft() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.PageLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PageLeft ()" />
+      <MemberSignature Language="F#" Value="abstract member PageLeft : unit -&gt; unit&#xA;override this.PageLeft : unit -&gt; unit" Usage="scrollContentPresenter.PageLeft " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageLeft();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.PageLeft</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -558,7 +682,13 @@
       <MemberSignature Language="C#" Value="public void PageRight ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageRight() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.PageRight" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PageRight ()" />
+      <MemberSignature Language="F#" Value="abstract member PageRight : unit -&gt; unit&#xA;override this.PageRight : unit -&gt; unit" Usage="scrollContentPresenter.PageRight " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageRight();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.PageRight</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -576,7 +706,13 @@
       <MemberSignature Language="C#" Value="public void PageUp ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PageUp() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.PageUp" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PageUp ()" />
+      <MemberSignature Language="F#" Value="abstract member PageUp : unit -&gt; unit&#xA;override this.PageUp : unit -&gt; unit" Usage="scrollContentPresenter.PageUp " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PageUp();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.PageUp</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -594,14 +730,20 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.ScrollViewer ScrollOwner { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.ScrollViewer ScrollOwner" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollContentPresenter.ScrollOwner" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollOwner As ScrollViewer" />
+      <MemberSignature Language="F#" Value="member this.ScrollOwner : System.Windows.Controls.ScrollViewer with get, set" Usage="System.Windows.Controls.ScrollContentPresenter.ScrollOwner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ScrollViewer ^ ScrollOwner { System::Windows::Controls::ScrollViewer ^ get(); void set(System::Windows::Controls::ScrollViewer ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.ScrollOwner</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -618,7 +760,13 @@
       <MemberSignature Language="C#" Value="public void SetHorizontalOffset (double offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetHorizontalOffset(float64 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.SetHorizontalOffset(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetHorizontalOffset (offset As Double)" />
+      <MemberSignature Language="F#" Value="abstract member SetHorizontalOffset : double -&gt; unit&#xA;override this.SetHorizontalOffset : double -&gt; unit" Usage="scrollContentPresenter.SetHorizontalOffset offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetHorizontalOffset(double offset);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.SetHorizontalOffset(System.Double)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -639,7 +787,13 @@
       <MemberSignature Language="C#" Value="public void SetVerticalOffset (double offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetVerticalOffset(float64 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.ScrollContentPresenter.SetVerticalOffset(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetVerticalOffset (offset As Double)" />
+      <MemberSignature Language="F#" Value="abstract member SetVerticalOffset : double -&gt; unit&#xA;override this.SetVerticalOffset : double -&gt; unit" Usage="scrollContentPresenter.SetVerticalOffset offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetVerticalOffset(double offset);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Controls.Primitives.IScrollInfo.SetVerticalOffset(System.Double)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -660,14 +814,20 @@
       <MemberSignature Language="C#" Value="public double VerticalOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 VerticalOffset" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollContentPresenter.VerticalOffset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalOffset As Double" />
+      <MemberSignature Language="F#" Value="member this.VerticalOffset : double" Usage="System.Windows.Controls.ScrollContentPresenter.VerticalOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double VerticalOffset { double get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.VerticalOffset</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -683,7 +843,13 @@
       <MemberSignature Language="C#" Value="public double ViewportHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ViewportHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollContentPresenter.ViewportHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewportHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.ViewportHeight : double" Usage="System.Windows.Controls.ScrollContentPresenter.ViewportHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportHeight { double get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.ViewportHeight</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -701,7 +867,13 @@
       <MemberSignature Language="C#" Value="public double ViewportWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ViewportWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollContentPresenter.ViewportWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ViewportWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.ViewportWidth : double" Usage="System.Windows.Controls.ScrollContentPresenter.ViewportWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ViewportWidth { double get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Controls.Primitives.IScrollInfo.ViewportWidth</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -719,6 +891,9 @@
       <MemberSignature Language="C#" Value="protected override int VisualChildrenCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VisualChildrenCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.ScrollContentPresenter.VisualChildrenCount" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property VisualChildrenCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.VisualChildrenCount : int" Usage="System.Windows.Controls.ScrollContentPresenter.VisualChildrenCount" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int VisualChildrenCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

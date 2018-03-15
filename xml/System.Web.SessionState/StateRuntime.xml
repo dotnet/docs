@@ -1,7 +1,10 @@
-<Type Name="StateRuntime" FullName="System.Web.SessionState.StateRuntime">
+﻿<Type Name="StateRuntime" FullName="System.Web.SessionState.StateRuntime">
   <TypeSignature Language="C#" Value="public sealed class StateRuntime : System.Web.SessionState.IStateRuntime" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StateRuntime extends System.Object implements class System.Web.SessionState.IStateRuntime" />
   <TypeSignature Language="DocId" Value="T:System.Web.SessionState.StateRuntime" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StateRuntime&#xA;Implements IStateRuntime" />
+  <TypeSignature Language="F#" Value="type StateRuntime = class&#xA;    interface IStateRuntime" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StateRuntime sealed : System::Web::SessionState::IStateRuntime" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,8 @@
       <MemberSignature Language="C#" Value="public StateRuntime ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.StateRuntime.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StateRuntime();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,11 +55,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ProcessRequest">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Used by the ASP.NET state server to process session data.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ProcessRequest">
       <MemberSignature Language="C#" Value="public void ProcessRequest (IntPtr tracker, int verb, string uri, int exclusive, int timeout, int lockCookieExists, int lockCookie, int contentLength, IntPtr content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessRequest(native int tracker, int32 verb, string uri, int32 exclusive, int32 timeout, int32 lockCookieExists, int32 lockCookie, int32 contentLength, native int content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.StateRuntime.ProcessRequest(System.IntPtr,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ProcessRequest (tracker As IntPtr, verb As Integer, uri As String, exclusive As Integer, timeout As Integer, lockCookieExists As Integer, lockCookie As Integer, contentLength As Integer, content As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : nativeint * int * string * int * int * int * int * int * nativeint -&gt; unit&#xA;override this.ProcessRequest : nativeint * int * string * int * int * int * int * int * nativeint -&gt; unit" Usage="stateRuntime.ProcessRequest (tracker, verb, uri, exclusive, timeout, lockCookieExists, lockCookie, contentLength, content)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessRequest(IntPtr tracker, int verb, System::String ^ uri, int exclusive, int timeout, int lockCookieExists, int lockCookie, int contentLength, IntPtr content);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.SessionState.IStateRuntime.ProcessRequest(System.IntPtr,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,7 +120,13 @@
       <MemberSignature Language="C#" Value="public void ProcessRequest (IntPtr tracker, int verb, string uri, int exclusive, int extraFlags, int timeout, int lockCookieExists, int lockCookie, int contentLength, IntPtr content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessRequest(native int tracker, int32 verb, string uri, int32 exclusive, int32 extraFlags, int32 timeout, int32 lockCookieExists, int32 lockCookie, int32 contentLength, native int content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.StateRuntime.ProcessRequest(System.IntPtr,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ProcessRequest (tracker As IntPtr, verb As Integer, uri As String, exclusive As Integer, extraFlags As Integer, timeout As Integer, lockCookieExists As Integer, lockCookie As Integer, contentLength As Integer, content As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRequest : nativeint * int * string * int * int * int * int * int * int * nativeint -&gt; unit&#xA;override this.ProcessRequest : nativeint * int * string * int * int * int * int * int * int * nativeint -&gt; unit" Usage="stateRuntime.ProcessRequest (tracker, verb, uri, exclusive, extraFlags, timeout, lockCookieExists, lockCookie, contentLength, content)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ProcessRequest(IntPtr tracker, int verb, System::String ^ uri, int exclusive, int extraFlags, int timeout, int lockCookieExists, int lockCookie, int contentLength, IntPtr content);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.SessionState.IStateRuntime.ProcessRequest(System.IntPtr,System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.IntPtr)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -148,7 +174,13 @@
       <MemberSignature Language="C#" Value="public void StopProcessing ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopProcessing() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.SessionState.StateRuntime.StopProcessing" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StopProcessing ()" />
+      <MemberSignature Language="F#" Value="abstract member StopProcessing : unit -&gt; unit&#xA;override this.StopProcessing : unit -&gt; unit" Usage="stateRuntime.StopProcessing " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void StopProcessing();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.SessionState.IStateRuntime.StopProcessing</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -169,14 +201,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ProcessRequest">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Used by the ASP.NET state server to process session data.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

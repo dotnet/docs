@@ -1,7 +1,10 @@
-<Type Name="SessionSwitchEventArgs" FullName="Microsoft.Win32.SessionSwitchEventArgs">
+﻿<Type Name="SessionSwitchEventArgs" FullName="Microsoft.Win32.SessionSwitchEventArgs">
   <TypeSignature Language="C#" Value="public class SessionSwitchEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SessionSwitchEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SessionSwitchEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SessionSwitchEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type SessionSwitchEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SessionSwitchEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="public SessionSwitchEventArgs (Microsoft.Win32.SessionSwitchReason reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype Microsoft.Win32.SessionSwitchReason reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SessionSwitchEventArgs.#ctor(Microsoft.Win32.SessionSwitchReason)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (reason As SessionSwitchReason)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Win32.SessionSwitchEventArgs : Microsoft.Win32.SessionSwitchReason -&gt; Microsoft.Win32.SessionSwitchEventArgs" Usage="new Microsoft.Win32.SessionSwitchEventArgs reason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SessionSwitchEventArgs(Microsoft::Win32::SessionSwitchReason reason);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -48,6 +54,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Win32.SessionSwitchReason Reason { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Win32.SessionSwitchReason Reason" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SessionSwitchEventArgs.Reason" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Reason As SessionSwitchReason" />
+      <MemberSignature Language="F#" Value="member this.Reason : Microsoft.Win32.SessionSwitchReason" Usage="Microsoft.Win32.SessionSwitchEventArgs.Reason" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Win32::SessionSwitchReason Reason { Microsoft::Win32::SessionSwitchReason get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

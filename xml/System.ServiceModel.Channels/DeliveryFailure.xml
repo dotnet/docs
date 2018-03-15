@@ -1,7 +1,10 @@
-<Type Name="DeliveryFailure" FullName="System.ServiceModel.Channels.DeliveryFailure">
+﻿<Type Name="DeliveryFailure" FullName="System.ServiceModel.Channels.DeliveryFailure">
   <TypeSignature Language="C#" Value="public enum DeliveryFailure" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeliveryFailure extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.DeliveryFailure" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DeliveryFailure" />
+  <TypeSignature Language="F#" Value="type DeliveryFailure = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DeliveryFailure" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="AccessDenied" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryFailure AccessDenied = int32(32772)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.AccessDenied" />
+      <MemberSignature Language="VB.NET" Value="AccessDenied" />
+      <MemberSignature Language="F#" Value="AccessDenied = 32772" Usage="System.ServiceModel.Channels.DeliveryFailure.AccessDenied" />
+      <MemberSignature Language="C++ CLI" Value="AccessDenied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
+      <MemberValue>32772</MemberValue>
       <Docs>
         <summary>The sender does not have access rights to place messages in the destination queue.</summary>
       </Docs>
@@ -49,6 +56,9 @@
       <MemberSignature Language="C#" Value="BadDestinationQueue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryFailure BadDestinationQueue = int32(32768)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.BadDestinationQueue" />
+      <MemberSignature Language="VB.NET" Value="BadDestinationQueue" />
+      <MemberSignature Language="F#" Value="BadDestinationQueue = 32768" Usage="System.ServiceModel.Channels.DeliveryFailure.BadDestinationQueue" />
+      <MemberSignature Language="C++ CLI" Value="BadDestinationQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
+      <MemberValue>32768</MemberValue>
       <Docs>
         <summary>The destination queue was not found.</summary>
       </Docs>
@@ -65,6 +76,9 @@
       <MemberSignature Language="C#" Value="BadEncryption" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryFailure BadEncryption = int32(32775)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.BadEncryption" />
+      <MemberSignature Language="VB.NET" Value="BadEncryption" />
+      <MemberSignature Language="F#" Value="BadEncryption = 32775" Usage="System.ServiceModel.Channels.DeliveryFailure.BadEncryption" />
+      <MemberSignature Language="C++ CLI" Value="BadEncryption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
+      <MemberValue>32775</MemberValue>
       <Docs>
         <summary>The destination queue manager cannot decrypt the message.</summary>
       </Docs>
@@ -81,6 +96,9 @@
       <MemberSignature Language="C#" Value="BadSignature" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryFailure BadSignature = int32(32774)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.BadSignature" />
+      <MemberSignature Language="VB.NET" Value="BadSignature" />
+      <MemberSignature Language="F#" Value="BadSignature = 32774" Usage="System.ServiceModel.Channels.DeliveryFailure.BadSignature" />
+      <MemberSignature Language="C++ CLI" Value="BadSignature" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -89,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
+      <MemberValue>32774</MemberValue>
       <Docs>
         <summary>The destination queue manager cannot authenticate the message because the attached signature is invalid.</summary>
       </Docs>
@@ -97,6 +116,9 @@
       <MemberSignature Language="C#" Value="CouldNotEncrypt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryFailure CouldNotEncrypt = int32(32776)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.CouldNotEncrypt" />
+      <MemberSignature Language="VB.NET" Value="CouldNotEncrypt" />
+      <MemberSignature Language="F#" Value="CouldNotEncrypt = 32776" Usage="System.ServiceModel.Channels.DeliveryFailure.CouldNotEncrypt" />
+      <MemberSignature Language="C++ CLI" Value="CouldNotEncrypt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -105,6 +127,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
+      <MemberValue>32776</MemberValue>
       <Docs>
         <summary>The source queue manager cannot encrypt the message.</summary>
       </Docs>
@@ -113,6 +136,9 @@
       <MemberSignature Language="C#" Value="HopCountExceeded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryFailure HopCountExceeded = int32(32773)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.HopCountExceeded" />
+      <MemberSignature Language="VB.NET" Value="HopCountExceeded" />
+      <MemberSignature Language="F#" Value="HopCountExceeded = 32773" Usage="System.ServiceModel.Channels.DeliveryFailure.HopCountExceeded" />
+      <MemberSignature Language="C++ CLI" Value="HopCountExceeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,6 +147,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
+      <MemberValue>32773</MemberValue>
       <Docs>
         <summary>The message hop count was exceeded, which indicates the number of intermediate servers.</summary>
       </Docs>
@@ -129,6 +156,9 @@
       <MemberSignature Language="C#" Value="NotTransactionalMessage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryFailure NotTransactionalMessage = int32(32778)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.NotTransactionalMessage" />
+      <MemberSignature Language="VB.NET" Value="NotTransactionalMessage" />
+      <MemberSignature Language="F#" Value="NotTransactionalMessage = 32778" Usage="System.ServiceModel.Channels.DeliveryFailure.NotTransactionalMessage" />
+      <MemberSignature Language="C++ CLI" Value="NotTransactionalMessage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -137,6 +167,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
+      <MemberValue>32778</MemberValue>
       <Docs>
         <summary>A nontransactional message was sent to a transactional queue.</summary>
       </Docs>
@@ -145,6 +176,9 @@
       <MemberSignature Language="C#" Value="NotTransactionalQueue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryFailure NotTransactionalQueue = int32(32777)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.NotTransactionalQueue" />
+      <MemberSignature Language="VB.NET" Value="NotTransactionalQueue" />
+      <MemberSignature Language="F#" Value="NotTransactionalQueue = 32777" Usage="System.ServiceModel.Channels.DeliveryFailure.NotTransactionalQueue" />
+      <MemberSignature Language="C++ CLI" Value="NotTransactionalQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -153,6 +187,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
+      <MemberValue>32777</MemberValue>
       <Docs>
         <summary>A transactional message was sent to a nontransactional queue.</summary>
       </Docs>
@@ -161,6 +196,9 @@
       <MemberSignature Language="C#" Value="Purged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryFailure Purged = int32(32769)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.Purged" />
+      <MemberSignature Language="VB.NET" Value="Purged" />
+      <MemberSignature Language="F#" Value="Purged = 32769" Usage="System.ServiceModel.Channels.DeliveryFailure.Purged" />
+      <MemberSignature Language="C++ CLI" Value="Purged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -169,6 +207,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
+      <MemberValue>32769</MemberValue>
       <Docs>
         <summary>The message was purged before reaching the destination queue.</summary>
       </Docs>
@@ -177,6 +216,9 @@
       <MemberSignature Language="C#" Value="QueueDeleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryFailure QueueDeleted = int32(49152)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.QueueDeleted" />
+      <MemberSignature Language="VB.NET" Value="QueueDeleted" />
+      <MemberSignature Language="F#" Value="QueueDeleted = 49152" Usage="System.ServiceModel.Channels.DeliveryFailure.QueueDeleted" />
+      <MemberSignature Language="C++ CLI" Value="QueueDeleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -185,6 +227,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
+      <MemberValue>49152</MemberValue>
       <Docs>
         <summary>The destination queue was deleted before the message could be delivered to the application.</summary>
       </Docs>
@@ -193,6 +236,9 @@
       <MemberSignature Language="C#" Value="QueueExceedMaximumSize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryFailure QueueExceedMaximumSize = int32(32771)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.QueueExceedMaximumSize" />
+      <MemberSignature Language="VB.NET" Value="QueueExceedMaximumSize" />
+      <MemberSignature Language="F#" Value="QueueExceedMaximumSize = 32771" Usage="System.ServiceModel.Channels.DeliveryFailure.QueueExceedMaximumSize" />
+      <MemberSignature Language="C++ CLI" Value="QueueExceedMaximumSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -201,6 +247,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
+      <MemberValue>32771</MemberValue>
       <Docs>
         <summary>The message was not delivered because the destination queue is full.</summary>
       </Docs>
@@ -209,6 +256,9 @@
       <MemberSignature Language="C#" Value="QueuePurged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryFailure QueuePurged = int32(49153)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.QueuePurged" />
+      <MemberSignature Language="VB.NET" Value="QueuePurged" />
+      <MemberSignature Language="F#" Value="QueuePurged = 49153" Usage="System.ServiceModel.Channels.DeliveryFailure.QueuePurged" />
+      <MemberSignature Language="C++ CLI" Value="QueuePurged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -217,6 +267,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
+      <MemberValue>49153</MemberValue>
       <Docs>
         <summary>The queue was purged and the message no longer exists.</summary>
       </Docs>
@@ -225,6 +276,9 @@
       <MemberSignature Language="C#" Value="ReachQueueTimeout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryFailure ReachQueueTimeout = int32(32770)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.ReachQueueTimeout" />
+      <MemberSignature Language="VB.NET" Value="ReachQueueTimeout" />
+      <MemberSignature Language="F#" Value="ReachQueueTimeout = 32770" Usage="System.ServiceModel.Channels.DeliveryFailure.ReachQueueTimeout" />
+      <MemberSignature Language="C++ CLI" Value="ReachQueueTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -233,6 +287,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
+      <MemberValue>32770</MemberValue>
       <Docs>
         <summary>The message did not reach the destination queue before timing out.</summary>
       </Docs>
@@ -241,6 +296,9 @@
       <MemberSignature Language="C#" Value="ReceiveTimeout" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryFailure ReceiveTimeout = int32(49154)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.ReceiveTimeout" />
+      <MemberSignature Language="VB.NET" Value="ReceiveTimeout" />
+      <MemberSignature Language="F#" Value="ReceiveTimeout = 49154" Usage="System.ServiceModel.Channels.DeliveryFailure.ReceiveTimeout" />
+      <MemberSignature Language="C++ CLI" Value="ReceiveTimeout" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -249,6 +307,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
+      <MemberValue>49154</MemberValue>
       <Docs>
         <summary>The message was not delivered to the application on time.</summary>
       </Docs>
@@ -257,6 +316,9 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.DeliveryFailure Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.DeliveryFailure.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.ServiceModel.Channels.DeliveryFailure.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -265,6 +327,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.DeliveryFailure</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An unknown error occurred.</summary>
       </Docs>

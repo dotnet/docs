@@ -1,7 +1,10 @@
-<Type Name="ImageClickEventHandler" FullName="System.Web.UI.ImageClickEventHandler">
+﻿<Type Name="ImageClickEventHandler" FullName="System.Web.UI.ImageClickEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ImageClickEventHandler(object sender, ImageClickEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImageClickEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ImageClickEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ImageClickEventHandler(sender As Object, e As ImageClickEventArgs)" />
+  <TypeSignature Language="F#" Value="type ImageClickEventHandler = delegate of obj * ImageClickEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ImageClickEventHandler(System::Object ^ sender, ImageClickEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

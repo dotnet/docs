@@ -1,7 +1,10 @@
-<Type Name="MobileControlBuilder" FullName="System.Web.UI.MobileControls.MobileControlBuilder">
+﻿<Type Name="MobileControlBuilder" FullName="System.Web.UI.MobileControls.MobileControlBuilder">
   <TypeSignature Language="C#" Value="public class MobileControlBuilder : System.Web.UI.ControlBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MobileControlBuilder extends System.Web.UI.ControlBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.MobileControlBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class MobileControlBuilder&#xA;Inherits ControlBuilder" />
+  <TypeSignature Language="F#" Value="type MobileControlBuilder = class&#xA;    inherit ControlBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MobileControlBuilder : System::Web::UI::ControlBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public MobileControlBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileControlBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MobileControlBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -58,6 +63,9 @@
       <MemberSignature Language="C#" Value="public override bool AllowWhitespaceLiterals ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool AllowWhitespaceLiterals() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileControlBuilder.AllowWhitespaceLiterals" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function AllowWhitespaceLiterals () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.AllowWhitespaceLiterals : unit -&gt; bool" Usage="mobileControlBuilder.AllowWhitespaceLiterals " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool AllowWhitespaceLiterals();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -78,6 +86,9 @@
       <MemberSignature Language="C#" Value="public override Type GetChildControlType (string tagName, System.Collections.IDictionary attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type GetChildControlType(string tagName, class System.Collections.IDictionary attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileControlBuilder.GetChildControlType(System.String,System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildControlType (tagName As String, attributes As IDictionary) As Type" />
+      <MemberSignature Language="F#" Value="override this.GetChildControlType : string * System.Collections.IDictionary -&gt; Type" Usage="mobileControlBuilder.GetChildControlType (tagName, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetChildControlType(System::String ^ tagName, System::Collections::IDictionary ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

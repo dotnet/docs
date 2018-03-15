@@ -1,7 +1,10 @@
-<Type Name="AssemblyFlagsAttribute" FullName="System.Reflection.AssemblyFlagsAttribute">
+﻿<Type Name="AssemblyFlagsAttribute" FullName="System.Reflection.AssemblyFlagsAttribute">
   <TypeSignature Language="C#" Value="public sealed class AssemblyFlagsAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyFlagsAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyFlagsAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyFlagsAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type AssemblyFlagsAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyFlagsAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,10 +62,23 @@
     <altmember cref="P:System.Reflection.AssemblyName.Flags" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyFlagsAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AssemblyFlagsAttribute (int assemblyFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 assemblyFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyFlagsAttribute.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyFlags As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyFlagsAttribute : int -&gt; System.Reflection.AssemblyFlagsAttribute" Usage="new System.Reflection.AssemblyFlagsAttribute assemblyFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyFlagsAttribute(int assemblyFlags);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +118,9 @@
       <MemberSignature Language="C#" Value="public AssemblyFlagsAttribute (System.Reflection.AssemblyNameFlags assemblyFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Reflection.AssemblyNameFlags assemblyFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyFlagsAttribute.#ctor(System.Reflection.AssemblyNameFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyFlags As AssemblyNameFlags)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyFlagsAttribute : System.Reflection.AssemblyNameFlags -&gt; System.Reflection.AssemblyFlagsAttribute" Usage="new System.Reflection.AssemblyFlagsAttribute assemblyFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyFlagsAttribute(System::Reflection::AssemblyNameFlags assemblyFlags);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -145,6 +164,9 @@
       <MemberSignature Language="C#" Value="public AssemblyFlagsAttribute (uint flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int32 flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyFlagsAttribute.#ctor(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (flags As UInteger)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyFlagsAttribute : uint32 -&gt; System.Reflection.AssemblyFlagsAttribute" Usage="new System.Reflection.AssemblyFlagsAttribute flags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyFlagsAttribute(System::UInt32 flags);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -188,6 +210,9 @@
       <MemberSignature Language="C#" Value="public int AssemblyFlags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AssemblyFlags" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyFlagsAttribute.AssemblyFlags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyFlags As Integer" />
+      <MemberSignature Language="F#" Value="member this.AssemblyFlags : int" Usage="System.Reflection.AssemblyFlagsAttribute.AssemblyFlags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AssemblyFlags { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -236,6 +261,9 @@
       <MemberSignature Language="C#" Value="public uint Flags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 Flags" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyFlagsAttribute.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Flags As UInteger" />
+      <MemberSignature Language="F#" Value="member this.Flags : uint32" Usage="System.Reflection.AssemblyFlagsAttribute.Flags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt32 Flags { System::UInt32 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -276,15 +304,5 @@
         <altmember cref="T:System.Reflection.AssemblyNameFlags" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyFlagsAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

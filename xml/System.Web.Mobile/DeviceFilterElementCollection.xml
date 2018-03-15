@@ -1,7 +1,10 @@
-<Type Name="DeviceFilterElementCollection" FullName="System.Web.Mobile.DeviceFilterElementCollection">
+﻿<Type Name="DeviceFilterElementCollection" FullName="System.Web.Mobile.DeviceFilterElementCollection">
   <TypeSignature Language="C#" Value="public sealed class DeviceFilterElementCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DeviceFilterElementCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Mobile.DeviceFilterElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DeviceFilterElementCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type DeviceFilterElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeviceFilterElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public DeviceFilterElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeviceFilterElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="public void Add (System.Web.Mobile.DeviceFilterElement deviceFilter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Mobile.DeviceFilterElement deviceFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.Add(System.Web.Mobile.DeviceFilterElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (deviceFilter As DeviceFilterElement)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Mobile.DeviceFilterElement -&gt; unit" Usage="deviceFilterElementCollection.Add deviceFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Mobile::DeviceFilterElement ^ deviceFilter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -63,6 +71,9 @@
       <MemberSignature Language="C#" Value="public object[] AllKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object[] AllKeys" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElementCollection.AllKeys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllKeys As Object()" />
+      <MemberSignature Language="F#" Value="member this.AllKeys : obj[]" Usage="System.Web.Mobile.DeviceFilterElementCollection.AllKeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Object ^&gt; ^ AllKeys { cli::array &lt;System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -81,6 +92,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="deviceFilterElementCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -99,6 +113,9 @@
       <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationElementCollectionType CollectionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationElementCollectionType CollectionType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElementCollection.CollectionType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
+      <MemberSignature Language="F#" Value="member this.CollectionType : System.Configuration.ConfigurationElementCollectionType" Usage="System.Web.Mobile.DeviceFilterElementCollection.CollectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -117,6 +134,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="deviceFilterElementCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -136,6 +156,9 @@
       <MemberSignature Language="C#" Value="protected override string ElementName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElementCollection.ElementName" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ElementName As String" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string" Usage="System.Web.Mobile.DeviceFilterElementCollection.ElementName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ElementName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -154,6 +177,9 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="deviceFilterElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -193,6 +219,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Mobile.DeviceFilterElement this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Mobile.DeviceFilterElement Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElementCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As DeviceFilterElement" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Mobile.DeviceFilterElement with get, set" Usage="System.Web.Mobile.DeviceFilterElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Mobile::DeviceFilterElement ^ default[int] { System::Web::Mobile::DeviceFilterElement ^ get(int index); void set(int index, System::Web::Mobile::DeviceFilterElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -222,6 +251,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Mobile.DeviceFilterElement this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Mobile.DeviceFilterElement Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElementCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As DeviceFilterElement" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Mobile.DeviceFilterElement" Usage="System.Web.Mobile.DeviceFilterElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Mobile::DeviceFilterElement ^ default[System::String ^] { System::Web::Mobile::DeviceFilterElement ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -251,6 +283,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Mobile.DeviceFilterElementCollection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Mobile.DeviceFilterElementCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -265,10 +300,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes a specified object from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public void Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="deviceFilterElementCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -290,6 +337,9 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.Mobile.DeviceFilterElement deviceFilter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Mobile.DeviceFilterElement deviceFilter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.Remove(System.Web.Mobile.DeviceFilterElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (deviceFilter As DeviceFilterElement)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.Mobile.DeviceFilterElement -&gt; unit" Usage="deviceFilterElementCollection.Remove deviceFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Mobile::DeviceFilterElement ^ deviceFilter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -318,6 +368,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Mobile.DeviceFilterElementCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="deviceFilterElementCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -335,14 +388,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Remove">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes a specified object from the collection. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

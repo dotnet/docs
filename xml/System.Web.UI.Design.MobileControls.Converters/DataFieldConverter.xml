@@ -1,7 +1,10 @@
-<Type Name="DataFieldConverter" FullName="System.Web.UI.Design.MobileControls.Converters.DataFieldConverter">
+﻿<Type Name="DataFieldConverter" FullName="System.Web.UI.Design.MobileControls.Converters.DataFieldConverter">
   <TypeSignature Language="C#" Value="public class DataFieldConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataFieldConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.MobileControls.Converters.DataFieldConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataFieldConverter&#xA;Inherits TypeConverter" />
+  <TypeSignature Language="F#" Value="type DataFieldConverter = class&#xA;    inherit TypeConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataFieldConverter : System::ComponentModel::TypeConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="public DataFieldConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataFieldConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -64,6 +69,9 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertFrom (System.ComponentModel.ITypeDescriptorContext context, Type sourceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Type sourceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFrom (context As ITypeDescriptorContext, sourceType As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanConvertFrom : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="dataFieldConverter.CanConvertFrom (context, sourceType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ sourceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -100,6 +108,9 @@
       <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext context, System.Globalization.CultureInfo culture, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext context, class System.Globalization.CultureInfo culture, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFrom (context As ITypeDescriptorContext, culture As CultureInfo, value As Object) As Object" />
+      <MemberSignature Language="F#" Value="override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="dataFieldConverter.ConvertFrom (context, culture, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -139,6 +150,9 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.TypeConverter.StandardValuesCollection GetStandardValues (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.TypeConverter/StandardValuesCollection GetStandardValues(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValues (context As ITypeDescriptorContext) As TypeConverter.StandardValuesCollection" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValues : System.ComponentModel.ITypeDescriptorContext -&gt; System.ComponentModel.TypeConverter.StandardValuesCollection" Usage="dataFieldConverter.GetStandardValues context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::TypeConverter::StandardValuesCollection ^ GetStandardValues(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -172,6 +186,9 @@
       <MemberSignature Language="C#" Value="public override bool GetStandardValuesExclusive (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetStandardValuesExclusive(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.GetStandardValuesExclusive(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesExclusive (context As ITypeDescriptorContext) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValuesExclusive : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dataFieldConverter.GetStandardValuesExclusive context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesExclusive(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -207,6 +224,9 @@
       <MemberSignature Language="C#" Value="public override bool GetStandardValuesSupported (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool GetStandardValuesSupported(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.MobileControls.Converters.DataFieldConverter.GetStandardValuesSupported(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetStandardValuesSupported (context As ITypeDescriptorContext) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.GetStandardValuesSupported : System.ComponentModel.ITypeDescriptorContext -&gt; bool" Usage="dataFieldConverter.GetStandardValuesSupported context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool GetStandardValuesSupported(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="UpperCodeCharts" FullName="System.Web.Security.AntiXss.UpperCodeCharts">
+﻿<Type Name="UpperCodeCharts" FullName="System.Web.Security.AntiXss.UpperCodeCharts">
   <TypeSignature Language="C#" Value="public enum UpperCodeCharts" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UpperCodeCharts extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.AntiXss.UpperCodeCharts" />
+  <TypeSignature Language="VB.NET" Value="Public Enum UpperCodeCharts" />
+  <TypeSignature Language="F#" Value="type UpperCodeCharts = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class UpperCodeCharts" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="AlphabeticPresentationForms" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts AlphabeticPresentationForms = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.AlphabeticPresentationForms" />
+      <MemberSignature Language="VB.NET" Value="AlphabeticPresentationForms" />
+      <MemberSignature Language="F#" Value="AlphabeticPresentationForms = 4096" Usage="System.Web.Security.AntiXss.UpperCodeCharts.AlphabeticPresentationForms" />
+      <MemberSignature Language="C++ CLI" Value="AlphabeticPresentationForms" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -31,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>The Alphabetic Presentation Forms code chart.</summary>
       </Docs>
@@ -39,6 +46,9 @@
       <MemberSignature Language="C#" Value="ArabicPresentationFormsA" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts ArabicPresentationFormsA = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.ArabicPresentationFormsA" />
+      <MemberSignature Language="VB.NET" Value="ArabicPresentationFormsA" />
+      <MemberSignature Language="F#" Value="ArabicPresentationFormsA = 8192" Usage="System.Web.Security.AntiXss.UpperCodeCharts.ArabicPresentationFormsA" />
+      <MemberSignature Language="C++ CLI" Value="ArabicPresentationFormsA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -47,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>The Arabic Presentation Forms-A code chart.</summary>
       </Docs>
@@ -55,6 +66,9 @@
       <MemberSignature Language="C#" Value="ArabicPresentationFormsB" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts ArabicPresentationFormsB = int32(524288)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.ArabicPresentationFormsB" />
+      <MemberSignature Language="VB.NET" Value="ArabicPresentationFormsB" />
+      <MemberSignature Language="F#" Value="ArabicPresentationFormsB = 524288" Usage="System.Web.Security.AntiXss.UpperCodeCharts.ArabicPresentationFormsB" />
+      <MemberSignature Language="C++ CLI" Value="ArabicPresentationFormsB" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>524288</MemberValue>
       <Docs>
         <summary>The Arabic Presentation Forms-B code chart.</summary>
       </Docs>
@@ -71,6 +86,9 @@
       <MemberSignature Language="C#" Value="Cham" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts Cham = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.Cham" />
+      <MemberSignature Language="VB.NET" Value="Cham" />
+      <MemberSignature Language="F#" Value="Cham = 32" Usage="System.Web.Security.AntiXss.UpperCodeCharts.Cham" />
+      <MemberSignature Language="C++ CLI" Value="Cham" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -79,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The Cham code chart.</summary>
       </Docs>
@@ -87,6 +106,9 @@
       <MemberSignature Language="C#" Value="CjkCompatibilityForms" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts CjkCompatibilityForms = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.CjkCompatibilityForms" />
+      <MemberSignature Language="VB.NET" Value="CjkCompatibilityForms" />
+      <MemberSignature Language="F#" Value="CjkCompatibilityForms = 131072" Usage="System.Web.Security.AntiXss.UpperCodeCharts.CjkCompatibilityForms" />
+      <MemberSignature Language="C++ CLI" Value="CjkCompatibilityForms" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>The CJK Compatibility Forms code chart.</summary>
       </Docs>
@@ -103,6 +126,9 @@
       <MemberSignature Language="C#" Value="CjkCompatibilityIdeographs" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts CjkCompatibilityIdeographs = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.CjkCompatibilityIdeographs" />
+      <MemberSignature Language="VB.NET" Value="CjkCompatibilityIdeographs" />
+      <MemberSignature Language="F#" Value="CjkCompatibilityIdeographs = 2048" Usage="System.Web.Security.AntiXss.UpperCodeCharts.CjkCompatibilityIdeographs" />
+      <MemberSignature Language="C++ CLI" Value="CjkCompatibilityIdeographs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -111,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>The CJK Compatibility Ideographs code chart.</summary>
       </Docs>
@@ -119,6 +146,9 @@
       <MemberSignature Language="C#" Value="CombiningHalfMarks" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts CombiningHalfMarks = int32(65536)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.CombiningHalfMarks" />
+      <MemberSignature Language="VB.NET" Value="CombiningHalfMarks" />
+      <MemberSignature Language="F#" Value="CombiningHalfMarks = 65536" Usage="System.Web.Security.AntiXss.UpperCodeCharts.CombiningHalfMarks" />
+      <MemberSignature Language="C++ CLI" Value="CombiningHalfMarks" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +157,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>65536</MemberValue>
       <Docs>
         <summary>The Combining Half Marks code chart.</summary>
       </Docs>
@@ -135,6 +166,9 @@
       <MemberSignature Language="C#" Value="DevanagariExtended" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts DevanagariExtended = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.DevanagariExtended" />
+      <MemberSignature Language="VB.NET" Value="DevanagariExtended" />
+      <MemberSignature Language="F#" Value="DevanagariExtended = 1" Usage="System.Web.Security.AntiXss.UpperCodeCharts.DevanagariExtended" />
+      <MemberSignature Language="C++ CLI" Value="DevanagariExtended" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +177,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The Devanagari Extended code chart.</summary>
       </Docs>
@@ -151,6 +186,9 @@
       <MemberSignature Language="C#" Value="HalfWidthAndFullWidthForms" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts HalfWidthAndFullWidthForms = int32(1048576)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.HalfWidthAndFullWidthForms" />
+      <MemberSignature Language="VB.NET" Value="HalfWidthAndFullWidthForms" />
+      <MemberSignature Language="F#" Value="HalfWidthAndFullWidthForms = 1048576" Usage="System.Web.Security.AntiXss.UpperCodeCharts.HalfWidthAndFullWidthForms" />
+      <MemberSignature Language="C++ CLI" Value="HalfWidthAndFullWidthForms" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -159,6 +197,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>1048576</MemberValue>
       <Docs>
         <summary>The Halfwidth and Fullwidth Forms code chart</summary>
       </Docs>
@@ -167,6 +206,9 @@
       <MemberSignature Language="C#" Value="HangulJamoExtendedA" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts HangulJamoExtendedA = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.HangulJamoExtendedA" />
+      <MemberSignature Language="VB.NET" Value="HangulJamoExtendedA" />
+      <MemberSignature Language="F#" Value="HangulJamoExtendedA = 8" Usage="System.Web.Security.AntiXss.UpperCodeCharts.HangulJamoExtendedA" />
+      <MemberSignature Language="C++ CLI" Value="HangulJamoExtendedA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -175,6 +217,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The Hangul Jamo Extended-A code chart.</summary>
       </Docs>
@@ -183,6 +226,9 @@
       <MemberSignature Language="C#" Value="HangulJamoExtendedB" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts HangulJamoExtendedB = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.HangulJamoExtendedB" />
+      <MemberSignature Language="VB.NET" Value="HangulJamoExtendedB" />
+      <MemberSignature Language="F#" Value="HangulJamoExtendedB = 1024" Usage="System.Web.Security.AntiXss.UpperCodeCharts.HangulJamoExtendedB" />
+      <MemberSignature Language="C++ CLI" Value="HangulJamoExtendedB" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -191,6 +237,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>The Hangul Jamo Extended-B code chart.</summary>
       </Docs>
@@ -199,6 +246,9 @@
       <MemberSignature Language="C#" Value="HangulSyllables" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts HangulSyllables = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.HangulSyllables" />
+      <MemberSignature Language="VB.NET" Value="HangulSyllables" />
+      <MemberSignature Language="F#" Value="HangulSyllables = 512" Usage="System.Web.Security.AntiXss.UpperCodeCharts.HangulSyllables" />
+      <MemberSignature Language="C++ CLI" Value="HangulSyllables" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -207,6 +257,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>The Hangul Syllables code chart.</summary>
       </Docs>
@@ -215,6 +266,9 @@
       <MemberSignature Language="C#" Value="Javanese" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts Javanese = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.Javanese" />
+      <MemberSignature Language="VB.NET" Value="Javanese" />
+      <MemberSignature Language="F#" Value="Javanese = 16" Usage="System.Web.Security.AntiXss.UpperCodeCharts.Javanese" />
+      <MemberSignature Language="C++ CLI" Value="Javanese" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -223,6 +277,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The Javanese code chart.</summary>
       </Docs>
@@ -231,6 +286,9 @@
       <MemberSignature Language="C#" Value="KayahLi" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts KayahLi = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.KayahLi" />
+      <MemberSignature Language="VB.NET" Value="KayahLi" />
+      <MemberSignature Language="F#" Value="KayahLi = 2" Usage="System.Web.Security.AntiXss.UpperCodeCharts.KayahLi" />
+      <MemberSignature Language="C++ CLI" Value="KayahLi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -239,6 +297,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The Kayah Li code chart.</summary>
       </Docs>
@@ -247,6 +306,9 @@
       <MemberSignature Language="C#" Value="MeeteiMayek" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts MeeteiMayek = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.MeeteiMayek" />
+      <MemberSignature Language="VB.NET" Value="MeeteiMayek" />
+      <MemberSignature Language="F#" Value="MeeteiMayek = 256" Usage="System.Web.Security.AntiXss.UpperCodeCharts.MeeteiMayek" />
+      <MemberSignature Language="C++ CLI" Value="MeeteiMayek" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -255,6 +317,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>The Meetei Mayek code chart.</summary>
       </Docs>
@@ -263,6 +326,9 @@
       <MemberSignature Language="C#" Value="MyanmarExtendedA" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts MyanmarExtendedA = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.MyanmarExtendedA" />
+      <MemberSignature Language="VB.NET" Value="MyanmarExtendedA" />
+      <MemberSignature Language="F#" Value="MyanmarExtendedA = 64" Usage="System.Web.Security.AntiXss.UpperCodeCharts.MyanmarExtendedA" />
+      <MemberSignature Language="C++ CLI" Value="MyanmarExtendedA" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -271,6 +337,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The Myanmar Extended-A code chart.</summary>
       </Docs>
@@ -279,6 +346,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.Security.AntiXss.UpperCodeCharts.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -287,6 +357,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>None of the UTF-8 Unicode code charts from the upper region are marked as safe.</summary>
       </Docs>
@@ -295,6 +366,9 @@
       <MemberSignature Language="C#" Value="Rejang" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts Rejang = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.Rejang" />
+      <MemberSignature Language="VB.NET" Value="Rejang" />
+      <MemberSignature Language="F#" Value="Rejang = 4" Usage="System.Web.Security.AntiXss.UpperCodeCharts.Rejang" />
+      <MemberSignature Language="C++ CLI" Value="Rejang" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -303,6 +377,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The Rejang code chart.</summary>
       </Docs>
@@ -311,6 +386,9 @@
       <MemberSignature Language="C#" Value="SmallFormVariants" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts SmallFormVariants = int32(262144)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.SmallFormVariants" />
+      <MemberSignature Language="VB.NET" Value="SmallFormVariants" />
+      <MemberSignature Language="F#" Value="SmallFormVariants = 262144" Usage="System.Web.Security.AntiXss.UpperCodeCharts.SmallFormVariants" />
+      <MemberSignature Language="C++ CLI" Value="SmallFormVariants" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -319,6 +397,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>262144</MemberValue>
       <Docs>
         <summary>The Small Form Variants code chart.</summary>
       </Docs>
@@ -327,6 +406,9 @@
       <MemberSignature Language="C#" Value="Specials" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts Specials = int32(2097152)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.Specials" />
+      <MemberSignature Language="VB.NET" Value="Specials" />
+      <MemberSignature Language="F#" Value="Specials = 2097152" Usage="System.Web.Security.AntiXss.UpperCodeCharts.Specials" />
+      <MemberSignature Language="C++ CLI" Value="Specials" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -335,6 +417,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>2097152</MemberValue>
       <Docs>
         <summary>The Specials code chart.</summary>
       </Docs>
@@ -343,6 +426,9 @@
       <MemberSignature Language="C#" Value="TaiViet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts TaiViet = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.TaiViet" />
+      <MemberSignature Language="VB.NET" Value="TaiViet" />
+      <MemberSignature Language="F#" Value="TaiViet = 128" Usage="System.Web.Security.AntiXss.UpperCodeCharts.TaiViet" />
+      <MemberSignature Language="C++ CLI" Value="TaiViet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -351,6 +437,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The Tai Viet code chart.</summary>
       </Docs>
@@ -359,6 +446,9 @@
       <MemberSignature Language="C#" Value="VariationSelectors" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts VariationSelectors = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.VariationSelectors" />
+      <MemberSignature Language="VB.NET" Value="VariationSelectors" />
+      <MemberSignature Language="F#" Value="VariationSelectors = 16384" Usage="System.Web.Security.AntiXss.UpperCodeCharts.VariationSelectors" />
+      <MemberSignature Language="C++ CLI" Value="VariationSelectors" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -367,6 +457,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>The Variation Selectors code chart.</summary>
       </Docs>
@@ -375,6 +466,9 @@
       <MemberSignature Language="C#" Value="VerticalForms" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Security.AntiXss.UpperCodeCharts VerticalForms = int32(32768)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Security.AntiXss.UpperCodeCharts.VerticalForms" />
+      <MemberSignature Language="VB.NET" Value="VerticalForms" />
+      <MemberSignature Language="F#" Value="VerticalForms = 32768" Usage="System.Web.Security.AntiXss.UpperCodeCharts.VerticalForms" />
+      <MemberSignature Language="C++ CLI" Value="VerticalForms" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -383,6 +477,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Security.AntiXss.UpperCodeCharts</ReturnType>
       </ReturnValue>
+      <MemberValue>32768</MemberValue>
       <Docs>
         <summary>The Vertical Forms code chart.</summary>
       </Docs>

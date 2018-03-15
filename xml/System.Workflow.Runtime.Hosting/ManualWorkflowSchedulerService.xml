@@ -1,7 +1,10 @@
-<Type Name="ManualWorkflowSchedulerService" FullName="System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService">
+﻿<Type Name="ManualWorkflowSchedulerService" FullName="System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService">
   <TypeSignature Language="C#" Value="public class ManualWorkflowSchedulerService : System.Workflow.Runtime.Hosting.WorkflowSchedulerService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ManualWorkflowSchedulerService extends System.Workflow.Runtime.Hosting.WorkflowSchedulerService" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService" />
+  <TypeSignature Language="VB.NET" Value="Public Class ManualWorkflowSchedulerService&#xA;Inherits WorkflowSchedulerService" />
+  <TypeSignature Language="F#" Value="type ManualWorkflowSchedulerService = class&#xA;    inherit WorkflowSchedulerService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManualWorkflowSchedulerService : System::Workflow::Runtime::Hosting::WorkflowSchedulerService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +34,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ManualWorkflowSchedulerService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManualWorkflowSchedulerService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -50,6 +64,9 @@
       <MemberSignature Language="C#" Value="public ManualWorkflowSchedulerService (bool useActiveTimers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool useActiveTimers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (useActiveTimers As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService : bool -&gt; System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService" Usage="new System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService useActiveTimers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManualWorkflowSchedulerService(bool useActiveTimers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -69,6 +86,9 @@
       <MemberSignature Language="C#" Value="public ManualWorkflowSchedulerService (System.Collections.Specialized.NameValueCollection parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Specialized.NameValueCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.#ctor(System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameters As NameValueCollection)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService : System.Collections.Specialized.NameValueCollection -&gt; System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService" Usage="new System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManualWorkflowSchedulerService(System::Collections::Specialized::NameValueCollection ^ parameters);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -84,9 +104,12 @@
       </Docs>
     </Member>
     <Member MemberName="Cancel">
-      <MemberSignature Language="C#" Value="protected override void Cancel (Guid timerId);" />
+      <MemberSignature Language="C#" Value="protected internal override void Cancel (Guid timerId);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Cancel(valuetype System.Guid timerId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.Cancel(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Cancel (timerId As Guid)" />
+      <MemberSignature Language="F#" Value="override this.Cancel : Guid -&gt; unit" Usage="manualWorkflowSchedulerService.Cancel timerId" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Cancel(Guid timerId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -108,6 +131,9 @@
       <MemberSignature Language="C#" Value="protected override void OnStarted ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnStarted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.OnStarted" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnStarted ()" />
+      <MemberSignature Language="F#" Value="override this.OnStarted : unit -&gt; unit" Usage="manualWorkflowSchedulerService.OnStarted " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnStarted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -126,6 +152,9 @@
       <MemberSignature Language="C#" Value="public bool RunWorkflow (Guid workflowInstanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RunWorkflow(valuetype System.Guid workflowInstanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.RunWorkflow(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RunWorkflow (workflowInstanceId As Guid) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RunWorkflow : Guid -&gt; bool" Usage="manualWorkflowSchedulerService.RunWorkflow workflowInstanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RunWorkflow(Guid workflowInstanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -154,10 +183,22 @@
           <paramref name="workflowInstanceId" /> is an empty GUID.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Schedule">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a workflow instance to the pending work items queue.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Schedule">
-      <MemberSignature Language="C#" Value="protected override void Schedule (System.Threading.WaitCallback callback, Guid workflowInstanceId);" />
+      <MemberSignature Language="C#" Value="protected internal override void Schedule (System.Threading.WaitCallback callback, Guid workflowInstanceId);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Schedule(class System.Threading.WaitCallback callback, valuetype System.Guid workflowInstanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.Schedule(System.Threading.WaitCallback,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Schedule (callback As WaitCallback, workflowInstanceId As Guid)" />
+      <MemberSignature Language="F#" Value="override this.Schedule : System.Threading.WaitCallback * Guid -&gt; unit" Usage="manualWorkflowSchedulerService.Schedule (callback, workflowInstanceId)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Schedule(System::Threading::WaitCallback ^ callback, Guid workflowInstanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -180,9 +221,12 @@
       </Docs>
     </Member>
     <Member MemberName="Schedule">
-      <MemberSignature Language="C#" Value="protected override void Schedule (System.Threading.WaitCallback callback, Guid workflowInstanceId, DateTime whenUtc, Guid timerId);" />
+      <MemberSignature Language="C#" Value="protected internal override void Schedule (System.Threading.WaitCallback callback, Guid workflowInstanceId, DateTime whenUtc, Guid timerId);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Schedule(class System.Threading.WaitCallback callback, valuetype System.Guid workflowInstanceId, valuetype System.DateTime whenUtc, valuetype System.Guid timerId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.Schedule(System.Threading.WaitCallback,System.Guid,System.DateTime,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Schedule (callback As WaitCallback, workflowInstanceId As Guid, whenUtc As DateTime, timerId As Guid)" />
+      <MemberSignature Language="F#" Value="override this.Schedule : System.Threading.WaitCallback * Guid * DateTime * Guid -&gt; unit" Usage="manualWorkflowSchedulerService.Schedule (callback, workflowInstanceId, whenUtc, timerId)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Schedule(System::Threading::WaitCallback ^ callback, Guid workflowInstanceId, DateTime whenUtc, Guid timerId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -211,9 +255,12 @@
       </Docs>
     </Member>
     <Member MemberName="Stop">
-      <MemberSignature Language="C#" Value="protected override void Stop ();" />
+      <MemberSignature Language="C#" Value="protected internal override void Stop ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.Stop" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Stop ()" />
+      <MemberSignature Language="F#" Value="override this.Stop : unit -&gt; unit" Usage="manualWorkflowSchedulerService.Stop " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Stop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -228,23 +275,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Schedule">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a workflow instance to the pending work items queue.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

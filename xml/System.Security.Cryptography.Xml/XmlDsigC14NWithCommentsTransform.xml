@@ -1,7 +1,10 @@
-<Type Name="XmlDsigC14NWithCommentsTransform" FullName="System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform">
+﻿<Type Name="XmlDsigC14NWithCommentsTransform" FullName="System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform">
   <TypeSignature Language="C#" Value="public class XmlDsigC14NWithCommentsTransform : System.Security.Cryptography.Xml.XmlDsigC14NTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDsigC14NWithCommentsTransform extends System.Security.Cryptography.Xml.XmlDsigC14NTransform" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlDsigC14NWithCommentsTransform&#xA;Inherits XmlDsigC14NTransform" />
+  <TypeSignature Language="F#" Value="type XmlDsigC14NWithCommentsTransform = class&#xA;    inherit XmlDsigC14NTransform" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlDsigC14NWithCommentsTransform : System::Security::Cryptography::Xml::XmlDsigC14NTransform" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +60,8 @@
       <MemberSignature Language="C#" Value="public XmlDsigC14NWithCommentsTransform ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigC14NWithCommentsTransform.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDsigC14NWithCommentsTransform();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

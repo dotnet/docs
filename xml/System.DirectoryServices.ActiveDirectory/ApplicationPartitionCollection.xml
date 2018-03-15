@@ -1,7 +1,10 @@
-<Type Name="ApplicationPartitionCollection" FullName="System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection">
+﻿<Type Name="ApplicationPartitionCollection" FullName="System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection">
   <TypeSignature Language="C#" Value="public class ApplicationPartitionCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationPartitionCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ApplicationPartitionCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type ApplicationPartitionCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationPartitionCollection : System::Collections::ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +25,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.ActiveDirectory.ApplicationPartition applicationPartition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.ActiveDirectory.ApplicationPartition applicationPartition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection.Contains(System.DirectoryServices.ActiveDirectory.ApplicationPartition)" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.ApplicationPartition -&gt; bool" Usage="applicationPartitionCollection.Contains applicationPartition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::ApplicationPartition ^ applicationPartition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -49,6 +54,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.ActiveDirectory.ApplicationPartition[] applicationPartitions, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.DirectoryServices.ActiveDirectory.ApplicationPartition[] applicationPartitions, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ApplicationPartition[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (applicationPartitions As ApplicationPartition(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.ApplicationPartition[] * int -&gt; unit" Usage="applicationPartitionCollection.CopyTo (applicationPartitions, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::ApplicationPartition ^&gt; ^ applicationPartitions, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -79,6 +87,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.DirectoryServices.ActiveDirectory.ApplicationPartition applicationPartition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.DirectoryServices.ActiveDirectory.ApplicationPartition applicationPartition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ApplicationPartition)" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.ApplicationPartition -&gt; int" Usage="applicationPartitionCollection.IndexOf applicationPartition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::ApplicationPartition ^ applicationPartition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -106,6 +116,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ApplicationPartition this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ApplicationPartition Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ApplicationPartition" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.ApplicationPartition" Usage="System.DirectoryServices.ActiveDirectory.ApplicationPartitionCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ApplicationPartition ^ default[int] { System::DirectoryServices::ActiveDirectory::ApplicationPartition ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>

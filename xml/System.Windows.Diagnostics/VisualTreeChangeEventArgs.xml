@@ -1,7 +1,10 @@
-<Type Name="VisualTreeChangeEventArgs" FullName="System.Windows.Diagnostics.VisualTreeChangeEventArgs">
+﻿<Type Name="VisualTreeChangeEventArgs" FullName="System.Windows.Diagnostics.VisualTreeChangeEventArgs">
   <TypeSignature Language="C#" Value="public class VisualTreeChangeEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VisualTreeChangeEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Diagnostics.VisualTreeChangeEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualTreeChangeEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type VisualTreeChangeEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VisualTreeChangeEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public VisualTreeChangeEventArgs (System.Windows.DependencyObject parent, System.Windows.DependencyObject child, int childIndex, System.Windows.Diagnostics.VisualTreeChangeType changeType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.DependencyObject parent, class System.Windows.DependencyObject child, int32 childIndex, valuetype System.Windows.Diagnostics.VisualTreeChangeType changeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Diagnostics.VisualTreeChangeEventArgs.#ctor(System.Windows.DependencyObject,System.Windows.DependencyObject,System.Int32,System.Windows.Diagnostics.VisualTreeChangeType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parent As DependencyObject, child As DependencyObject, childIndex As Integer, changeType As VisualTreeChangeType)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Diagnostics.VisualTreeChangeEventArgs : System.Windows.DependencyObject * System.Windows.DependencyObject * int * System.Windows.Diagnostics.VisualTreeChangeType -&gt; System.Windows.Diagnostics.VisualTreeChangeEventArgs" Usage="new System.Windows.Diagnostics.VisualTreeChangeEventArgs (parent, child, childIndex, changeType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VisualTreeChangeEventArgs(System::Windows::DependencyObject ^ parent, System::Windows::DependencyObject ^ child, int childIndex, System::Windows::Diagnostics::VisualTreeChangeType changeType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -57,6 +63,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Diagnostics.VisualTreeChangeType ChangeType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Diagnostics.VisualTreeChangeType ChangeType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.VisualTreeChangeEventArgs.ChangeType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChangeType As VisualTreeChangeType" />
+      <MemberSignature Language="F#" Value="member this.ChangeType : System.Windows.Diagnostics.VisualTreeChangeType" Usage="System.Windows.Diagnostics.VisualTreeChangeEventArgs.ChangeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Diagnostics::VisualTreeChangeType ChangeType { System::Windows::Diagnostics::VisualTreeChangeType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +91,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.DependencyObject Child { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyObject Child" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.VisualTreeChangeEventArgs.Child" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Child As DependencyObject" />
+      <MemberSignature Language="F#" Value="member this.Child : System.Windows.DependencyObject" Usage="System.Windows.Diagnostics.VisualTreeChangeEventArgs.Child" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObject ^ Child { System::Windows::DependencyObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -107,6 +119,9 @@
       <MemberSignature Language="C#" Value="public int ChildIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ChildIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.VisualTreeChangeEventArgs.ChildIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.ChildIndex : int" Usage="System.Windows.Diagnostics.VisualTreeChangeEventArgs.ChildIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ChildIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -132,6 +147,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.DependencyObject Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyObject Parent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Diagnostics.VisualTreeChangeEventArgs.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As DependencyObject" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Windows.DependencyObject" Usage="System.Windows.Diagnostics.VisualTreeChangeEventArgs.Parent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObject ^ Parent { System::Windows::DependencyObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

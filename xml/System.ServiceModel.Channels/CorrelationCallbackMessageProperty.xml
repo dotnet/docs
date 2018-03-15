@@ -1,7 +1,10 @@
-<Type Name="CorrelationCallbackMessageProperty" FullName="System.ServiceModel.Channels.CorrelationCallbackMessageProperty">
+﻿<Type Name="CorrelationCallbackMessageProperty" FullName="System.ServiceModel.Channels.CorrelationCallbackMessageProperty">
   <TypeSignature Language="C#" Value="public abstract class CorrelationCallbackMessageProperty : System.ServiceModel.Channels.IMessageProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CorrelationCallbackMessageProperty extends System.Object implements class System.ServiceModel.Channels.IMessageProperty" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class CorrelationCallbackMessageProperty&#xA;Implements IMessageProperty" />
+  <TypeSignature Language="F#" Value="type CorrelationCallbackMessageProperty = class&#xA;    interface IMessageProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CorrelationCallbackMessageProperty abstract : System::ServiceModel::Channels::IMessageProperty" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +29,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called by derived class constructors to initialize the object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected CorrelationCallbackMessageProperty (System.Collections.Generic.ICollection&lt;string&gt; neededData);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.ICollection`1&lt;string&gt; neededData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.#ctor(System.Collections.Generic.ICollection{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (neededData As ICollection(Of String))" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.CorrelationCallbackMessageProperty : System.Collections.Generic.ICollection&lt;string&gt; -&gt; System.ServiceModel.Channels.CorrelationCallbackMessageProperty" Usage="new System.ServiceModel.Channels.CorrelationCallbackMessageProperty neededData" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CorrelationCallbackMessageProperty(System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ neededData);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,6 +63,9 @@
       <MemberSignature Language="C#" Value="protected CorrelationCallbackMessageProperty (System.ServiceModel.Channels.CorrelationCallbackMessageProperty callback);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.CorrelationCallbackMessageProperty callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.#ctor(System.ServiceModel.Channels.CorrelationCallbackMessageProperty)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (callback As CorrelationCallbackMessageProperty)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.CorrelationCallbackMessageProperty : System.ServiceModel.Channels.CorrelationCallbackMessageProperty -&gt; System.ServiceModel.Channels.CorrelationCallbackMessageProperty" Usage="new System.ServiceModel.Channels.CorrelationCallbackMessageProperty callback" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; CorrelationCallbackMessageProperty(System::ServiceModel::Channels::CorrelationCallbackMessageProperty ^ callback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +84,9 @@
       <MemberSignature Language="C#" Value="public void AddData (string name, Func&lt;string&gt; value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddData(string name, class System.Func`1&lt;string&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.AddData(System.String,System.Func{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddData (name As String, value As Func(Of String))" />
+      <MemberSignature Language="F#" Value="member this.AddData : string * Func&lt;string&gt; -&gt; unit" Usage="correlationCallbackMessageProperty.AddData (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddData(System::String ^ name, Func&lt;System::String ^&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +117,8 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginFinalizeCorrelation (System.ServiceModel.Channels.Message message, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginFinalizeCorrelation(class System.ServiceModel.Channels.Message message, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.BeginFinalizeCorrelation(System.ServiceModel.Channels.Message,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="member this.BeginFinalizeCorrelation : System.ServiceModel.Channels.Message * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="correlationCallbackMessageProperty.BeginFinalizeCorrelation (message, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginFinalizeCorrelation(System::ServiceModel::Channels::Message ^ message, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -135,7 +158,13 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Channels.IMessageProperty CreateCopy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.IMessageProperty CreateCopy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.CreateCopy" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateCopy () As IMessageProperty" />
+      <MemberSignature Language="F#" Value="abstract member CreateCopy : unit -&gt; System.ServiceModel.Channels.IMessageProperty" Usage="correlationCallbackMessageProperty.CreateCopy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Channels::IMessageProperty ^ CreateCopy();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Channels.IMessageProperty.CreateCopy</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -154,6 +183,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message EndFinalizeCorrelation (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.Message EndFinalizeCorrelation(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.EndFinalizeCorrelation(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndFinalizeCorrelation (result As IAsyncResult) As Message" />
+      <MemberSignature Language="F#" Value="member this.EndFinalizeCorrelation : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="correlationCallbackMessageProperty.EndFinalizeCorrelation result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ EndFinalizeCorrelation(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -187,6 +219,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Message FinalizeCorrelation (System.ServiceModel.Channels.Message message, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.Message FinalizeCorrelation(class System.ServiceModel.Channels.Message message, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.FinalizeCorrelation(System.ServiceModel.Channels.Message,System.TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.FinalizeCorrelation : System.ServiceModel.Channels.Message * TimeSpan -&gt; System.ServiceModel.Channels.Message" Usage="correlationCallbackMessageProperty.FinalizeCorrelation (message, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::Message ^ FinalizeCorrelation(System::ServiceModel::Channels::Message ^ message, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -218,6 +252,9 @@
       <MemberSignature Language="C#" Value="public bool IsFullyDefined { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFullyDefined" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.IsFullyDefined" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFullyDefined As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFullyDefined : bool" Usage="System.ServiceModel.Channels.CorrelationCallbackMessageProperty.IsFullyDefined" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFullyDefined { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -244,6 +281,9 @@
       <MemberSignature Language="C#" Value="public static string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.Channels.CorrelationCallbackMessageProperty.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -262,6 +302,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;string&gt; NeededData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;string&gt; NeededData" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.NeededData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NeededData As IEnumerable(Of String)" />
+      <MemberSignature Language="F#" Value="member this.NeededData : seq&lt;string&gt;" Usage="System.ServiceModel.Channels.CorrelationCallbackMessageProperty.NeededData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ NeededData { System::Collections::Generic::IEnumerable&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -280,6 +323,8 @@
       <MemberSignature Language="C#" Value="protected abstract IAsyncResult OnBeginFinalizeCorrelation (System.ServiceModel.Channels.Message message, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginFinalizeCorrelation(class System.ServiceModel.Channels.Message message, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.OnBeginFinalizeCorrelation(System.ServiceModel.Channels.Message,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginFinalizeCorrelation : System.ServiceModel.Channels.Message * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="correlationCallbackMessageProperty.OnBeginFinalizeCorrelation (message, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract IAsyncResult ^ OnBeginFinalizeCorrelation(System::ServiceModel::Channels::Message ^ message, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -315,6 +360,9 @@
       <MemberSignature Language="C#" Value="protected abstract System.ServiceModel.Channels.Message OnEndFinalizeCorrelation (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Channels.Message OnEndFinalizeCorrelation(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.OnEndFinalizeCorrelation(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnEndFinalizeCorrelation (result As IAsyncResult) As Message" />
+      <MemberSignature Language="F#" Value="abstract member OnEndFinalizeCorrelation : IAsyncResult -&gt; System.ServiceModel.Channels.Message" Usage="correlationCallbackMessageProperty.OnEndFinalizeCorrelation result" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::ServiceModel::Channels::Message ^ OnEndFinalizeCorrelation(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -344,6 +392,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.ServiceModel.Channels.Message OnFinalizeCorrelation (System.ServiceModel.Channels.Message message, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.ServiceModel.Channels.Message OnFinalizeCorrelation(class System.ServiceModel.Channels.Message message, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.OnFinalizeCorrelation(System.ServiceModel.Channels.Message,System.TimeSpan)" />
+      <MemberSignature Language="F#" Value="abstract member OnFinalizeCorrelation : System.ServiceModel.Channels.Message * TimeSpan -&gt; System.ServiceModel.Channels.Message" Usage="correlationCallbackMessageProperty.OnFinalizeCorrelation (message, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::ServiceModel::Channels::Message ^ OnFinalizeCorrelation(System::ServiceModel::Channels::Message ^ message, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -371,10 +421,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGet">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to get the attached <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" /> from a message or a collection of message properties.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryGet">
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.Message message, out System.ServiceModel.Channels.CorrelationCallbackMessageProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, [out] class System.ServiceModel.Channels.CorrelationCallbackMessageProperty&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.CorrelationCallbackMessageProperty@)" />
+      <MemberSignature Language="F#" Value="static member TryGet : System.ServiceModel.Channels.Message *  -&gt; bool" Usage="System.ServiceModel.Channels.CorrelationCallbackMessageProperty.TryGet (message, property)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(System::ServiceModel::Channels::Message ^ message, [Runtime::InteropServices::Out] System::ServiceModel::Channels::CorrelationCallbackMessageProperty ^ % property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -400,6 +461,9 @@
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.MessageProperties properties, out System.ServiceModel.Channels.CorrelationCallbackMessageProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, [out] class System.ServiceModel.Channels.CorrelationCallbackMessageProperty&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.CorrelationCallbackMessageProperty.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Channels.CorrelationCallbackMessageProperty@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGet (properties As MessageProperties, ByRef property As CorrelationCallbackMessageProperty) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryGet : System.ServiceModel.Channels.MessageProperties *  -&gt; bool" Usage="System.ServiceModel.Channels.CorrelationCallbackMessageProperty.TryGet (properties, property)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(System::ServiceModel::Channels::MessageProperties ^ properties, [Runtime::InteropServices::Out] System::ServiceModel::Channels::CorrelationCallbackMessageProperty ^ % property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -421,23 +485,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Called by derived class constructors to initialize the object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TryGet">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Attempts to get the attached <see cref="T:System.ServiceModel.Channels.CorrelationCallbackMessageProperty" /> from a message or a collection of message properties.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

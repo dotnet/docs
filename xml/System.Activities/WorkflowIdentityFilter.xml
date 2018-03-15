@@ -1,7 +1,10 @@
-<Type Name="WorkflowIdentityFilter" FullName="System.Activities.WorkflowIdentityFilter">
+﻿<Type Name="WorkflowIdentityFilter" FullName="System.Activities.WorkflowIdentityFilter">
   <TypeSignature Language="C#" Value="public enum WorkflowIdentityFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkflowIdentityFilter extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Activities.WorkflowIdentityFilter" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WorkflowIdentityFilter" />
+  <TypeSignature Language="F#" Value="type WorkflowIdentityFilter = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class WorkflowIdentityFilter" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="Any" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.WorkflowIdentityFilter Any = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.WorkflowIdentityFilter.Any" />
+      <MemberSignature Language="VB.NET" Value="Any" />
+      <MemberSignature Language="F#" Value="Any = 1" Usage="System.Activities.WorkflowIdentityFilter.Any" />
+      <MemberSignature Language="C++ CLI" Value="Any" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -51,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.WorkflowIdentityFilter</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies any workflow identity filter.</summary>
       </Docs>
@@ -59,6 +66,9 @@
       <MemberSignature Language="C#" Value="AnyRevision" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.WorkflowIdentityFilter AnyRevision = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.WorkflowIdentityFilter.AnyRevision" />
+      <MemberSignature Language="VB.NET" Value="AnyRevision" />
+      <MemberSignature Language="F#" Value="AnyRevision = 2" Usage="System.Activities.WorkflowIdentityFilter.AnyRevision" />
+      <MemberSignature Language="C++ CLI" Value="AnyRevision" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.WorkflowIdentityFilter</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies any revision of workflow identity filter.</summary>
       </Docs>
@@ -75,6 +86,9 @@
       <MemberSignature Language="C#" Value="Exact" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.WorkflowIdentityFilter Exact = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.WorkflowIdentityFilter.Exact" />
+      <MemberSignature Language="VB.NET" Value="Exact" />
+      <MemberSignature Language="F#" Value="Exact = 0" Usage="System.Activities.WorkflowIdentityFilter.Exact" />
+      <MemberSignature Language="C++ CLI" Value="Exact" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -83,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.WorkflowIdentityFilter</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The exact workflow identity filter.</summary>
       </Docs>

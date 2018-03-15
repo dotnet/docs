@@ -1,7 +1,10 @@
-<Type Name="DictionaryValueProvider&lt;TValue&gt;" FullName="System.Web.ModelBinding.DictionaryValueProvider&lt;TValue&gt;">
+﻿<Type Name="DictionaryValueProvider&lt;TValue&gt;" FullName="System.Web.ModelBinding.DictionaryValueProvider&lt;TValue&gt;">
   <TypeSignature Language="C#" Value="public class DictionaryValueProvider&lt;TValue&gt; : System.Web.ModelBinding.IValueProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DictionaryValueProvider`1&lt;TValue&gt; extends System.Object implements class System.Web.ModelBinding.IValueProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DictionaryValueProvider`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class DictionaryValueProvider(Of TValue)&#xA;Implements IValueProvider" />
+  <TypeSignature Language="F#" Value="type DictionaryValueProvider&lt;'Value&gt; = class&#xA;    interface IValueProvider" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TValue&gt;&#xA;public ref class DictionaryValueProvider : System::Web::ModelBinding::IValueProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="public DictionaryValueProvider (System.Collections.Generic.IDictionary&lt;string,TValue&gt; dictionary, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;string, !TValue&gt; dictionary, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DictionaryValueProvider`1.#ctor(System.Collections.Generic.IDictionary{System.String,`0},System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dictionary As IDictionary(Of String, TValue), culture As CultureInfo)" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.DictionaryValueProvider&lt;'Value&gt; : System.Collections.Generic.IDictionary&lt;string, 'Value&gt; * System.Globalization.CultureInfo -&gt; System.Web.ModelBinding.DictionaryValueProvider&lt;'Value&gt;" Usage="new System.Web.ModelBinding.DictionaryValueProvider&lt;'Value&gt; (dictionary, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DictionaryValueProvider(System::Collections::Generic::IDictionary&lt;System::String ^, TValue&gt; ^ dictionary, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -48,7 +54,13 @@
       <MemberSignature Language="C#" Value="public virtual bool ContainsPrefix (string prefix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsPrefix(string prefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DictionaryValueProvider`1.ContainsPrefix(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsPrefix (prefix As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ContainsPrefix : string -&gt; bool&#xA;override this.ContainsPrefix : string -&gt; bool" Usage="dictionaryValueProvider.ContainsPrefix prefix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsPrefix(System::String ^ prefix);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.ModelBinding.IValueProvider.ContainsPrefix(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,7 +83,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.ModelBinding.ValueProviderResult GetValue (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.ModelBinding.ValueProviderResult GetValue(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DictionaryValueProvider`1.GetValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetValue (key As String) As ValueProviderResult" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : string -&gt; System.Web.ModelBinding.ValueProviderResult&#xA;override this.GetValue : string -&gt; System.Web.ModelBinding.ValueProviderResult" Usage="dictionaryValueProvider.GetValue key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::ModelBinding::ValueProviderResult ^ GetValue(System::String ^ key);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.ModelBinding.IValueProvider.GetValue(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

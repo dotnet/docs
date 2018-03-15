@@ -1,7 +1,10 @@
-<Type Name="AddingNewItemEventArgs" FullName="System.Windows.Controls.AddingNewItemEventArgs">
+﻿<Type Name="AddingNewItemEventArgs" FullName="System.Windows.Controls.AddingNewItemEventArgs">
   <TypeSignature Language="C#" Value="public class AddingNewItemEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AddingNewItemEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.AddingNewItemEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class AddingNewItemEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type AddingNewItemEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AddingNewItemEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public AddingNewItemEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.AddingNewItemEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AddingNewItemEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public object NewItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object NewItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.AddingNewItemEventArgs.NewItem" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewItem As Object" />
+      <MemberSignature Language="F#" Value="member this.NewItem : obj with get, set" Usage="System.Windows.Controls.AddingNewItemEventArgs.NewItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NewItem { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

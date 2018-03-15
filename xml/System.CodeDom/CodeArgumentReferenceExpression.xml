@@ -1,7 +1,10 @@
-<Type Name="CodeArgumentReferenceExpression" FullName="System.CodeDom.CodeArgumentReferenceExpression">
+﻿<Type Name="CodeArgumentReferenceExpression" FullName="System.CodeDom.CodeArgumentReferenceExpression">
   <TypeSignature Language="C#" Value="public class CodeArgumentReferenceExpression : System.CodeDom.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeArgumentReferenceExpression extends System.CodeDom.CodeExpression" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeArgumentReferenceExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeArgumentReferenceExpression&#xA;Inherits CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeArgumentReferenceExpression = class&#xA;    inherit CodeExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeArgumentReferenceExpression : System::CodeDom::CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -45,10 +48,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArgumentReferenceExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeArgumentReferenceExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArgumentReferenceExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeArgumentReferenceExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +82,9 @@
       <MemberSignature Language="C#" Value="public CodeArgumentReferenceExpression (string parameterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string parameterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeArgumentReferenceExpression.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameterName As String)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeArgumentReferenceExpression : string -&gt; System.CodeDom.CodeArgumentReferenceExpression" Usage="new System.CodeDom.CodeArgumentReferenceExpression parameterName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeArgumentReferenceExpression(System::String ^ parameterName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -90,6 +107,9 @@
       <MemberSignature Language="C#" Value="public string ParameterName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ParameterName" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeArgumentReferenceExpression.ParameterName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ParameterName As String" />
+      <MemberSignature Language="F#" Value="member this.ParameterName : string with get, set" Usage="System.CodeDom.CodeArgumentReferenceExpression.ParameterName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ParameterName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -108,14 +128,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeArgumentReferenceExpression" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="IEnumerableContract&lt;C&gt;" FullName="System.AddIn.Contract.Collections.IEnumerableContract&lt;C&gt;">
+﻿<Type Name="IEnumerableContract&lt;C&gt;" FullName="System.AddIn.Contract.Collections.IEnumerableContract&lt;C&gt;">
   <TypeSignature Language="C#" Value="public interface IEnumerableContract&lt;C&gt; : System.AddIn.Contract.IContract where C : IContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEnumerableContract`1&lt;(class System.AddIn.Contract.IContract) C&gt; implements class System.AddIn.Contract.IContract" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.Collections.IEnumerableContract`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IEnumerableContract(Of C)&#xA;Implements IContract" />
+  <TypeSignature Language="F#" Value="type IEnumerableContract&lt;'C (requires 'C :&gt; IContract)&gt; = interface&#xA;    interface IContract" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename C&gt;&#xA; where C : IContractpublic interface class IEnumerableContract : System::AddIn::Contract::IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public System.AddIn.Contract.Collections.IEnumeratorContract&lt;C&gt; GetEnumeratorContract ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.Collections.IEnumeratorContract`1&lt;!C&gt; GetEnumeratorContract() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.Collections.IEnumerableContract`1.GetEnumeratorContract" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumeratorContract () As IEnumeratorContract(Of C)" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumeratorContract : unit -&gt; System.AddIn.Contract.Collections.IEnumeratorContract&lt;'C (requires 'C :&gt; System.AddIn.Contract.IContract)&gt;" Usage="iEnumerableContract.GetEnumeratorContract " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::AddIn::Contract::Collections::IEnumeratorContract&lt;C&gt; ^ GetEnumeratorContract();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

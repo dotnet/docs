@@ -1,7 +1,10 @@
-<Type Name="FieldTemplateUserControl" FullName="System.Web.DynamicData.FieldTemplateUserControl">
+﻿<Type Name="FieldTemplateUserControl" FullName="System.Web.DynamicData.FieldTemplateUserControl">
   <TypeSignature Language="C#" Value="public class FieldTemplateUserControl : System.Web.UI.UserControl, System.Web.DynamicData.IFieldTemplate, System.Web.UI.IBindableControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FieldTemplateUserControl extends System.Web.UI.UserControl implements class System.Web.DynamicData.IFieldTemplate, class System.Web.UI.IBindableControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.FieldTemplateUserControl" />
+  <TypeSignature Language="VB.NET" Value="Public Class FieldTemplateUserControl&#xA;Inherits UserControl&#xA;Implements IBindableControl, IFieldTemplate" />
+  <TypeSignature Language="F#" Value="type FieldTemplateUserControl = class&#xA;    inherit UserControl&#xA;    interface IBindableControl&#xA;    interface IFieldTemplate" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FieldTemplateUserControl : System::Web::UI::UserControl, System::Web::DynamicData::IFieldTemplate, System::Web::UI::IBindableControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,6 +101,8 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public FieldTemplateUserControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FieldTemplateUserControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -113,6 +118,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="protected string BuildChildrenPath (string path);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string BuildChildrenPath(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.BuildChildrenPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function BuildChildrenPath (path As String) As String" />
+      <MemberSignature Language="F#" Value="member this.BuildChildrenPath : string -&gt; string" Usage="fieldTemplateUserControl.BuildChildrenPath path" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ BuildChildrenPath(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -142,6 +150,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="protected string BuildForeignKeyPath (string path);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string BuildForeignKeyPath(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.BuildForeignKeyPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function BuildForeignKeyPath (path As String) As String" />
+      <MemberSignature Language="F#" Value="member this.BuildForeignKeyPath : string -&gt; string" Usage="fieldTemplateUserControl.BuildForeignKeyPath path" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ BuildForeignKeyPath(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -171,6 +182,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaChildrenColumn ChildrenColumn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaChildrenColumn ChildrenColumn" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.ChildrenColumn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildrenColumn As MetaChildrenColumn" />
+      <MemberSignature Language="F#" Value="member this.ChildrenColumn : System.Web.DynamicData.MetaChildrenColumn" Usage="System.Web.DynamicData.FieldTemplateUserControl.ChildrenColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaChildrenColumn ^ ChildrenColumn { System::Web::DynamicData::MetaChildrenColumn ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -203,6 +217,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="protected string ChildrenPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ChildrenPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.ChildrenPath" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ChildrenPath As String" />
+      <MemberSignature Language="F#" Value="member this.ChildrenPath : string" Usage="System.Web.DynamicData.FieldTemplateUserControl.ChildrenPath" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ ChildrenPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -228,6 +245,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaColumn Column { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaColumn Column" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.Column" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As MetaColumn" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Web.DynamicData.MetaColumn" Usage="System.Web.DynamicData.FieldTemplateUserControl.Column" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaColumn ^ Column { System::Web::DynamicData::MetaColumn ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -251,6 +271,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public virtual System.Web.DynamicData.ContainerType ContainerType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.DynamicData.ContainerType ContainerType" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.ContainerType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ContainerType As ContainerType" />
+      <MemberSignature Language="F#" Value="member this.ContainerType : System.Web.DynamicData.ContainerType" Usage="System.Web.DynamicData.FieldTemplateUserControl.ContainerType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::DynamicData::ContainerType ContainerType { System::Web::DynamicData::ContainerType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -274,6 +297,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="protected virtual object ConvertEditedValue (string value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object ConvertEditedValue(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.ConvertEditedValue(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ConvertEditedValue (value As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member ConvertEditedValue : string -&gt; obj&#xA;override this.ConvertEditedValue : string -&gt; obj" Usage="fieldTemplateUserControl.ConvertEditedValue value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ ConvertEditedValue(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -303,6 +329,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.Control DataControl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control DataControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.DataControl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DataControl As Control" />
+      <MemberSignature Language="F#" Value="member this.DataControl : System.Web.UI.Control" Usage="System.Web.DynamicData.FieldTemplateUserControl.DataControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Control ^ DataControl { System::Web::UI::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -326,6 +355,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="protected virtual void ExtractForeignKey (System.Collections.IDictionary dictionary, string selectedValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ExtractForeignKey(class System.Collections.IDictionary dictionary, string selectedValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.ExtractForeignKey(System.Collections.IDictionary,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ExtractForeignKey (dictionary As IDictionary, selectedValue As String)" />
+      <MemberSignature Language="F#" Value="abstract member ExtractForeignKey : System.Collections.IDictionary * string -&gt; unit&#xA;override this.ExtractForeignKey : System.Collections.IDictionary * string -&gt; unit" Usage="fieldTemplateUserControl.ExtractForeignKey (dictionary, selectedValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ExtractForeignKey(System::Collections::IDictionary ^ dictionary, System::String ^ selectedValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -356,6 +388,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="protected virtual void ExtractValues (System.Collections.Specialized.IOrderedDictionary dictionary);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ExtractValues(class System.Collections.Specialized.IOrderedDictionary dictionary) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.ExtractValues(System.Collections.Specialized.IOrderedDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ExtractValues (dictionary As IOrderedDictionary)" />
+      <MemberSignature Language="F#" Value="abstract member ExtractValues : System.Collections.Specialized.IOrderedDictionary -&gt; unit&#xA;override this.ExtractValues : System.Collections.Specialized.IOrderedDictionary -&gt; unit" Usage="fieldTemplateUserControl.ExtractValues dictionary" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ExtractValues(System::Collections::Specialized::IOrderedDictionary ^ dictionary);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -384,6 +419,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public virtual object FieldValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object FieldValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.FieldValue" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FieldValue As Object" />
+      <MemberSignature Language="F#" Value="member this.FieldValue : obj with get, set" Usage="System.Web.DynamicData.FieldTemplateUserControl.FieldValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ FieldValue { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -407,6 +445,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public virtual string FieldValueEditString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FieldValueEditString" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.FieldValueEditString" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FieldValueEditString As String" />
+      <MemberSignature Language="F#" Value="member this.FieldValueEditString : string" Usage="System.Web.DynamicData.FieldTemplateUserControl.FieldValueEditString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FieldValueEditString { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -437,6 +478,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public virtual string FieldValueString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FieldValueString" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.FieldValueString" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FieldValueString As String" />
+      <MemberSignature Language="F#" Value="member this.FieldValueString : string" Usage="System.Web.DynamicData.FieldTemplateUserControl.FieldValueString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FieldValueString { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -460,6 +504,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="protected System.Web.DynamicData.FieldTemplateUserControl FindOtherFieldTemplate (string columnName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Web.DynamicData.FieldTemplateUserControl FindOtherFieldTemplate(string columnName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.FindOtherFieldTemplate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function FindOtherFieldTemplate (columnName As String) As FieldTemplateUserControl" />
+      <MemberSignature Language="F#" Value="member this.FindOtherFieldTemplate : string -&gt; System.Web.DynamicData.FieldTemplateUserControl" Usage="fieldTemplateUserControl.FindOtherFieldTemplate columnName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Web::DynamicData::FieldTemplateUserControl ^ FindOtherFieldTemplate(System::String ^ columnName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -482,6 +529,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaForeignKeyColumn ForeignKeyColumn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaForeignKeyColumn ForeignKeyColumn" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.ForeignKeyColumn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForeignKeyColumn As MetaForeignKeyColumn" />
+      <MemberSignature Language="F#" Value="member this.ForeignKeyColumn : System.Web.DynamicData.MetaForeignKeyColumn" Usage="System.Web.DynamicData.FieldTemplateUserControl.ForeignKeyColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaForeignKeyColumn ^ ForeignKeyColumn { System::Web::DynamicData::MetaForeignKeyColumn ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -513,6 +563,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="protected string ForeignKeyPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ForeignKeyPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.ForeignKeyPath" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ForeignKeyPath As String" />
+      <MemberSignature Language="F#" Value="member this.ForeignKeyPath : string" Usage="System.Web.DynamicData.FieldTemplateUserControl.ForeignKeyPath" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ ForeignKeyPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -538,6 +591,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public virtual string FormatFieldValue (object fieldValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string FormatFieldValue(object fieldValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.FormatFieldValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function FormatFieldValue (fieldValue As Object) As String" />
+      <MemberSignature Language="F#" Value="abstract member FormatFieldValue : obj -&gt; string&#xA;override this.FormatFieldValue : obj -&gt; string" Usage="fieldTemplateUserControl.FormatFieldValue fieldValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ FormatFieldValue(System::Object ^ fieldValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -560,6 +616,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public System.Web.DynamicData.IFieldFormattingOptions FormattingOptions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.IFieldFormattingOptions FormattingOptions" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.FormattingOptions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FormattingOptions As IFieldFormattingOptions" />
+      <MemberSignature Language="F#" Value="member this.FormattingOptions : System.Web.DynamicData.IFieldFormattingOptions" Usage="System.Web.DynamicData.FieldTemplateUserControl.FormattingOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::IFieldFormattingOptions ^ FormattingOptions { System::Web::DynamicData::IFieldFormattingOptions ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -583,6 +642,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="protected virtual object GetColumnValue (System.Web.DynamicData.MetaColumn column);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object GetColumnValue(class System.Web.DynamicData.MetaColumn column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.GetColumnValue(System.Web.DynamicData.MetaColumn)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetColumnValue (column As MetaColumn) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetColumnValue : System.Web.DynamicData.MetaColumn -&gt; obj&#xA;override this.GetColumnValue : System.Web.DynamicData.MetaColumn -&gt; obj" Usage="fieldTemplateUserControl.GetColumnValue column" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ GetColumnValue(System::Web::DynamicData::MetaColumn ^ column);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -605,6 +667,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="protected string GetSelectedValueString ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetSelectedValueString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.GetSelectedValueString" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetSelectedValueString () As String" />
+      <MemberSignature Language="F#" Value="member this.GetSelectedValueString : unit -&gt; string" Usage="fieldTemplateUserControl.GetSelectedValueString " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetSelectedValueString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -631,6 +696,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public System.Web.DynamicData.IFieldTemplateHost Host { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.IFieldTemplateHost Host" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.Host" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Host As IFieldTemplateHost" />
+      <MemberSignature Language="F#" Value="member this.Host : System.Web.DynamicData.IFieldTemplateHost" Usage="System.Web.DynamicData.FieldTemplateUserControl.Host" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::IFieldTemplateHost ^ Host { System::Web::DynamicData::IFieldTemplateHost ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -654,6 +722,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="protected void IgnoreModelValidationAttribute (Type attributeType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void IgnoreModelValidationAttribute(class System.Type attributeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.IgnoreModelValidationAttribute(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub IgnoreModelValidationAttribute (attributeType As Type)" />
+      <MemberSignature Language="F#" Value="member this.IgnoreModelValidationAttribute : Type -&gt; unit" Usage="fieldTemplateUserControl.IgnoreModelValidationAttribute attributeType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void IgnoreModelValidationAttribute(Type ^ attributeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -682,6 +753,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public System.ComponentModel.AttributeCollection MetadataAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.AttributeCollection MetadataAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.MetadataAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataAttributes As AttributeCollection" />
+      <MemberSignature Language="F#" Value="member this.MetadataAttributes : System.ComponentModel.AttributeCollection" Usage="System.Web.DynamicData.FieldTemplateUserControl.MetadataAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::AttributeCollection ^ MetadataAttributes { System::ComponentModel::AttributeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -705,6 +779,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.DataBoundControlMode Mode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.DataBoundControlMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mode As DataBoundControlMode" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Web.UI.WebControls.DataBoundControlMode" Usage="System.Web.DynamicData.FieldTemplateUserControl.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::DataBoundControlMode Mode { System::Web::UI::WebControls::DataBoundControlMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -735,6 +812,8 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="protected void PopulateListControl (System.Web.UI.WebControls.ListControl listControl);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void PopulateListControl(class System.Web.UI.WebControls.ListControl listControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.PopulateListControl(System.Web.UI.WebControls.ListControl)" />
+      <MemberSignature Language="F#" Value="member this.PopulateListControl : System.Web.UI.WebControls.ListControl -&gt; unit" Usage="fieldTemplateUserControl.PopulateListControl listControl" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void PopulateListControl(System::Web::UI::WebControls::ListControl ^ listControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -763,6 +842,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public virtual object Row { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Row" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.Row" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Row As Object" />
+      <MemberSignature Language="F#" Value="member this.Row : obj" Usage="System.Web.DynamicData.FieldTemplateUserControl.Row" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Row { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -789,10 +871,22 @@ public partial class ForeignKeyField :
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetUpValidator">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets up a <see cref="T:System.Web.DynamicData.DynamicValidator" /> for field templates to use.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetUpValidator">
       <MemberSignature Language="C#" Value="protected virtual void SetUpValidator (System.Web.UI.WebControls.BaseValidator validator);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetUpValidator(class System.Web.UI.WebControls.BaseValidator validator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.SetUpValidator(System.Web.UI.WebControls.BaseValidator)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetUpValidator (validator As BaseValidator)" />
+      <MemberSignature Language="F#" Value="abstract member SetUpValidator : System.Web.UI.WebControls.BaseValidator -&gt; unit&#xA;override this.SetUpValidator : System.Web.UI.WebControls.BaseValidator -&gt; unit" Usage="fieldTemplateUserControl.SetUpValidator validator" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetUpValidator(System::Web::UI::WebControls::BaseValidator ^ validator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -821,6 +915,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="protected virtual void SetUpValidator (System.Web.UI.WebControls.BaseValidator validator, System.Web.DynamicData.MetaColumn column);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetUpValidator(class System.Web.UI.WebControls.BaseValidator validator, class System.Web.DynamicData.MetaColumn column) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.SetUpValidator(System.Web.UI.WebControls.BaseValidator,System.Web.DynamicData.MetaColumn)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub SetUpValidator (validator As BaseValidator, column As MetaColumn)" />
+      <MemberSignature Language="F#" Value="abstract member SetUpValidator : System.Web.UI.WebControls.BaseValidator * System.Web.DynamicData.MetaColumn -&gt; unit&#xA;override this.SetUpValidator : System.Web.UI.WebControls.BaseValidator * System.Web.DynamicData.MetaColumn -&gt; unit" Usage="fieldTemplateUserControl.SetUpValidator (validator, column)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetUpValidator(System::Web::UI::WebControls::BaseValidator ^ validator, System::Web::DynamicData::MetaColumn ^ column);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -853,7 +950,12 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="void IFieldTemplate.SetHost (System.Web.DynamicData.IFieldTemplateHost host);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.DynamicData.IFieldTemplate.SetHost(class System.Web.DynamicData.IFieldTemplateHost host) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.System#Web#DynamicData#IFieldTemplate#SetHost(System.Web.DynamicData.IFieldTemplateHost)" />
+      <MemberSignature Language="VB.NET" Value="Sub SetHost (host As IFieldTemplateHost) Implements IFieldTemplate.SetHost" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.DynamicData.IFieldTemplate.SetHost(System::Web::DynamicData::IFieldTemplateHost ^ host) = System::Web::DynamicData::IFieldTemplate::SetHost;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.DynamicData.IFieldTemplate.SetHost(System.Web.DynamicData.IFieldTemplateHost)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -881,6 +983,8 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="void IBindableControl.ExtractValues (System.Collections.Specialized.IOrderedDictionary dictionary);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IBindableControl.ExtractValues(class System.Collections.Specialized.IOrderedDictionary dictionary) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.FieldTemplateUserControl.System#Web#UI#IBindableControl#ExtractValues(System.Collections.Specialized.IOrderedDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Sub ExtractValues (dictionary As IOrderedDictionary) Implements IBindableControl.ExtractValues" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IBindableControl.ExtractValues(System::Collections::Specialized::IOrderedDictionary ^ dictionary) = System::Web::UI::IBindableControl::ExtractValues;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -902,6 +1006,9 @@ public partial class ForeignKeyField :
       <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaTable Table { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaTable Table" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.FieldTemplateUserControl.Table" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Table As MetaTable" />
+      <MemberSignature Language="F#" Value="member this.Table : System.Web.DynamicData.MetaTable" Usage="System.Web.DynamicData.FieldTemplateUserControl.Table" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::DynamicData::MetaTable ^ Table { System::Web::DynamicData::MetaTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -921,14 +1028,5 @@ public partial class ForeignKeyField :
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetUpValidator">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets up a <see cref="T:System.Web.DynamicData.DynamicValidator" /> for field templates to use.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

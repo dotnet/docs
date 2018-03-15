@@ -1,7 +1,10 @@
-<Type Name="MetaTable" FullName="System.Data.Linq.Mapping.MetaTable">
+﻿<Type Name="MetaTable" FullName="System.Data.Linq.Mapping.MetaTable">
   <TypeSignature Language="C#" Value="public abstract class MetaTable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MetaTable extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.MetaTable" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MetaTable" />
+  <TypeSignature Language="F#" Value="type MetaTable = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MetaTable abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="protected MetaTable ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MetaTable.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MetaTable();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Reflection.MethodInfo DeleteMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MethodInfo DeleteMethod" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaTable.DeleteMethod" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property DeleteMethod As MethodInfo" />
+      <MemberSignature Language="F#" Value="member this.DeleteMethod : System.Reflection.MethodInfo" Usage="System.Data.Linq.Mapping.MetaTable.DeleteMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::MethodInfo ^ DeleteMethod { System::Reflection::MethodInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -52,6 +60,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Reflection.MethodInfo InsertMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MethodInfo InsertMethod" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaTable.InsertMethod" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property InsertMethod As MethodInfo" />
+      <MemberSignature Language="F#" Value="member this.InsertMethod : System.Reflection.MethodInfo" Usage="System.Data.Linq.Mapping.MetaTable.InsertMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::MethodInfo ^ InsertMethod { System::Reflection::MethodInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -70,6 +81,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaModel Model { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Linq.Mapping.MetaModel Model" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaTable.Model" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Model As MetaModel" />
+      <MemberSignature Language="F#" Value="member this.Model : System.Data.Linq.Mapping.MetaModel" Usage="System.Data.Linq.Mapping.MetaTable.Model" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Data::Linq::Mapping::MetaModel ^ Model { System::Data::Linq::Mapping::MetaModel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -88,6 +102,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Data.Linq.Mapping.MetaType RowType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Linq.Mapping.MetaType RowType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaTable.RowType" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RowType As MetaType" />
+      <MemberSignature Language="F#" Value="member this.RowType : System.Data.Linq.Mapping.MetaType" Usage="System.Data.Linq.Mapping.MetaTable.RowType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Data::Linq::Mapping::MetaType ^ RowType { System::Data::Linq::Mapping::MetaType ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -106,6 +123,9 @@
       <MemberSignature Language="C#" Value="public abstract string TableName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TableName" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaTable.TableName" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TableName As String" />
+      <MemberSignature Language="F#" Value="member this.TableName : string" Usage="System.Data.Linq.Mapping.MetaTable.TableName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ TableName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -124,6 +144,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Reflection.MethodInfo UpdateMethod { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.MethodInfo UpdateMethod" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.Mapping.MetaTable.UpdateMethod" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property UpdateMethod As MethodInfo" />
+      <MemberSignature Language="F#" Value="member this.UpdateMethod : System.Reflection.MethodInfo" Usage="System.Data.Linq.Mapping.MetaTable.UpdateMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::MethodInfo ^ UpdateMethod { System::Reflection::MethodInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

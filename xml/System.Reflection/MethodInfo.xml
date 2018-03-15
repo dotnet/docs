@@ -1,7 +1,10 @@
-<Type Name="MethodInfo" FullName="System.Reflection.MethodInfo">
+﻿<Type Name="MethodInfo" FullName="System.Reflection.MethodInfo">
   <TypeSignature Language="C#" Value="public abstract class MethodInfo : System.Reflection.MethodBase, System.Runtime.InteropServices._MethodInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit MethodInfo extends System.Reflection.MethodBase implements class System.Runtime.InteropServices._MethodInfo" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.MethodInfo" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MethodInfo&#xA;Inherits MethodBase&#xA;Implements _MethodInfo" />
+  <TypeSignature Language="F#" Value="type MethodInfo = class&#xA;    inherit MethodBase&#xA;    interface _MethodInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MethodInfo abstract : System::Reflection::MethodBase, System::Runtime::InteropServices::_MethodInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -80,6 +83,8 @@
       <MemberSignature Language="C#" Value="protected MethodInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MethodInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -100,10 +105,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateDelegate">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a delegate from this method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateDelegate">
       <MemberSignature Language="C#" Value="public virtual Delegate CreateDelegate (Type delegateType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Delegate CreateDelegate(class System.Type delegateType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.CreateDelegate(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDelegate (delegateType As Type) As Delegate" />
+      <MemberSignature Language="F#" Value="abstract member CreateDelegate : Type -&gt; Delegate&#xA;override this.CreateDelegate : Type -&gt; Delegate" Usage="methodInfo.CreateDelegate delegateType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Delegate ^ CreateDelegate(Type ^ delegateType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -141,6 +160,9 @@
       <MemberSignature Language="C#" Value="public virtual Delegate CreateDelegate (Type delegateType, object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Delegate CreateDelegate(class System.Type delegateType, object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.CreateDelegate(System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateDelegate (delegateType As Type, target As Object) As Delegate" />
+      <MemberSignature Language="F#" Value="abstract member CreateDelegate : Type * obj -&gt; Delegate&#xA;override this.CreateDelegate : Type * obj -&gt; Delegate" Usage="methodInfo.CreateDelegate (delegateType, target)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Delegate ^ CreateDelegate(Type ^ delegateType, System::Object ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -180,7 +202,13 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="methodInfo.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._MethodInfo.Equals(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -218,7 +246,13 @@
       <MemberSignature Language="C#" Value="public abstract System.Reflection.MethodInfo GetBaseDefinition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetBaseDefinition() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.GetBaseDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetBaseDefinition () As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetBaseDefinition : unit -&gt; System.Reflection.MethodInfo" Usage="methodInfo.GetBaseDefinition " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Reflection::MethodInfo ^ GetBaseDefinition();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._MethodInfo.GetBaseDefinition</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -290,6 +324,9 @@
       <MemberSignature Language="C#" Value="public override Type[] GetGenericArguments ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type[] GetGenericArguments() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.GetGenericArguments" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetGenericArguments () As Type()" />
+      <MemberSignature Language="F#" Value="override this.GetGenericArguments : unit -&gt; Type[]" Usage="methodInfo.GetGenericArguments " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;Type ^&gt; ^ GetGenericArguments();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -360,6 +397,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.MethodInfo GetGenericMethodDefinition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetGenericMethodDefinition() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.GetGenericMethodDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGenericMethodDefinition () As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetGenericMethodDefinition : unit -&gt; System.Reflection.MethodInfo&#xA;override this.GetGenericMethodDefinition : unit -&gt; System.Reflection.MethodInfo" Usage="methodInfo.GetGenericMethodDefinition " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodInfo ^ GetGenericMethodDefinition();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -458,7 +498,13 @@ public:
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="methodInfo.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._MethodInfo.GetHashCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -492,6 +538,9 @@ public:
       <MemberSignature Language="C#" Value="public virtual System.Reflection.MethodInfo MakeGenericMethod (params Type[] typeArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo MakeGenericMethod(class System.Type[] typeArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.MakeGenericMethod(System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function MakeGenericMethod (ParamArray typeArguments As Type()) As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member MakeGenericMethod : Type[] -&gt; System.Reflection.MethodInfo&#xA;override this.MakeGenericMethod : Type[] -&gt; System.Reflection.MethodInfo" Usage="methodInfo.MakeGenericMethod typeArguments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::MethodInfo ^ MakeGenericMethod(... cli::array &lt;Type ^&gt; ^ typeArguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -615,7 +664,13 @@ public:
       <MemberSignature Language="C#" Value="public override System.Reflection.MemberTypes MemberType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.MemberTypes MemberType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodInfo.MemberType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MemberType As MemberTypes" />
+      <MemberSignature Language="F#" Value="member this.MemberType : System.Reflection.MemberTypes" Usage="System.Reflection.MethodInfo.MemberType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::MemberTypes MemberType { System::Reflection::MemberTypes get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.InteropServices._MethodInfo.MemberType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -664,6 +719,9 @@ public:
       <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.MethodInfo left, System.Reflection.MethodInfo right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Reflection.MethodInfo left, class System.Reflection.MethodInfo right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.op_Equality(System.Reflection.MethodInfo,System.Reflection.MethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As MethodInfo, right As MethodInfo) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.MethodInfo * System.Reflection.MethodInfo -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::MethodInfo ^ left, System::Reflection::MethodInfo ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -698,6 +756,9 @@ public:
       <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.MethodInfo left, System.Reflection.MethodInfo right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Reflection.MethodInfo left, class System.Reflection.MethodInfo right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.op_Inequality(System.Reflection.MethodInfo,System.Reflection.MethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As MethodInfo, right As MethodInfo) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.MethodInfo * System.Reflection.MethodInfo -&gt; bool" Usage="System.Reflection.MethodInfo.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::MethodInfo ^ left, System::Reflection::MethodInfo ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -732,6 +793,9 @@ public:
       <MemberSignature Language="C#" Value="public virtual System.Reflection.ParameterInfo ReturnParameter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.ParameterInfo ReturnParameter" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodInfo.ReturnParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ReturnParameter As ParameterInfo" />
+      <MemberSignature Language="F#" Value="member this.ReturnParameter : System.Reflection.ParameterInfo" Usage="System.Reflection.MethodInfo.ReturnParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::ParameterInfo ^ ReturnParameter { System::Reflection::ParameterInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -775,7 +839,13 @@ public:
       <MemberSignature Language="C#" Value="public virtual Type ReturnType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReturnType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodInfo.ReturnType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ReturnType As Type" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Reflection.MethodInfo.ReturnType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ReturnType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.InteropServices._MethodInfo.ReturnType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -824,7 +894,13 @@ public:
       <MemberSignature Language="C#" Value="public abstract System.Reflection.ICustomAttributeProvider ReturnTypeCustomAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.ICustomAttributeProvider ReturnTypeCustomAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.MethodInfo.ReturnTypeCustomAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ReturnTypeCustomAttributes As ICustomAttributeProvider" />
+      <MemberSignature Language="F#" Value="member this.ReturnTypeCustomAttributes : System.Reflection.ICustomAttributeProvider" Usage="System.Reflection.MethodInfo.ReturnTypeCustomAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Reflection::ICustomAttributeProvider ^ ReturnTypeCustomAttributes { System::Reflection::ICustomAttributeProvider ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.InteropServices._MethodInfo.ReturnTypeCustomAttributes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -855,7 +931,12 @@ public:
       <MemberSignature Language="C#" Value="void _MethodInfo.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._MethodInfo.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.System#Runtime#InteropServices#_MethodInfo#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr) Implements _MethodInfo.GetIDsOfNames" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._MethodInfo.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_MethodInfo::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._MethodInfo.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -892,7 +973,12 @@ public:
       <MemberSignature Language="C#" Value="Type _MethodInfo.GetType ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Type System.Runtime.InteropServices._MethodInfo.GetType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.System#Runtime#InteropServices#_MethodInfo#GetType" />
+      <MemberSignature Language="VB.NET" Value="Function GetType () As Type Implements _MethodInfo.GetType" />
+      <MemberSignature Language="C++ CLI" Value=" virtual Type ^ System.Runtime.InteropServices._MethodInfo.GetType() = System::Runtime::InteropServices::_MethodInfo::GetType;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._MethodInfo.GetType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -911,7 +997,12 @@ public:
       <MemberSignature Language="C#" Value="void _MethodInfo.GetTypeInfo (uint iTInfo, uint lcid, IntPtr ppTInfo);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._MethodInfo.GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.System#Runtime#InteropServices#_MethodInfo#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr) Implements _MethodInfo.GetTypeInfo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._MethodInfo.GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo) = System::Runtime::InteropServices::_MethodInfo::GetTypeInfo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._MethodInfo.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -944,7 +1035,12 @@ public:
       <MemberSignature Language="C#" Value="void _MethodInfo.GetTypeInfoCount (out uint pcTInfo);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._MethodInfo.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.System#Runtime#InteropServices#_MethodInfo#GetTypeInfoCount(System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetTypeInfoCount (ByRef pcTInfo As UInteger) Implements _MethodInfo.GetTypeInfoCount" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._MethodInfo.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_MethodInfo::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._MethodInfo.GetTypeInfoCount(System.UInt32@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -973,7 +1069,12 @@ public:
       <MemberSignature Language="C#" Value="void _MethodInfo.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._MethodInfo.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MethodInfo.System#Runtime#InteropServices#_MethodInfo#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr) Implements _MethodInfo.Invoke" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._MethodInfo.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_MethodInfo::Invoke;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._MethodInfo.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1012,16 +1113,5 @@ public:
         <exception cref="T:System.NotImplementedException">Late-bound access using the COM <c>IDispatch</c> interface is not supported.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateDelegate">
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a delegate from this method.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

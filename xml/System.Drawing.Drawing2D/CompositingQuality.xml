@@ -1,7 +1,10 @@
-<Type Name="CompositingQuality" FullName="System.Drawing.Drawing2D.CompositingQuality">
+﻿<Type Name="CompositingQuality" FullName="System.Drawing.Drawing2D.CompositingQuality">
   <TypeSignature Language="C#" Value="public enum CompositingQuality" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompositingQuality extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.CompositingQuality" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CompositingQuality" />
+  <TypeSignature Language="F#" Value="type CompositingQuality = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CompositingQuality" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="AssumeLinear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.CompositingQuality AssumeLinear = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingQuality.AssumeLinear" />
+      <MemberSignature Language="VB.NET" Value="AssumeLinear" />
+      <MemberSignature Language="F#" Value="AssumeLinear = 4" Usage="System.Drawing.Drawing2D.CompositingQuality.AssumeLinear" />
+      <MemberSignature Language="C++ CLI" Value="AssumeLinear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.CompositingQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Assume linear values.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.CompositingQuality Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingQuality.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Drawing.Drawing2D.CompositingQuality.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.CompositingQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Default quality.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="GammaCorrected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.CompositingQuality GammaCorrected = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingQuality.GammaCorrected" />
+      <MemberSignature Language="VB.NET" Value="GammaCorrected" />
+      <MemberSignature Language="F#" Value="GammaCorrected = 3" Usage="System.Drawing.Drawing2D.CompositingQuality.GammaCorrected" />
+      <MemberSignature Language="C++ CLI" Value="GammaCorrected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.CompositingQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Gamma correction is used.</summary>
       </Docs>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="HighQuality" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.CompositingQuality HighQuality = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingQuality.HighQuality" />
+      <MemberSignature Language="VB.NET" Value="HighQuality" />
+      <MemberSignature Language="F#" Value="HighQuality = 2" Usage="System.Drawing.Drawing2D.CompositingQuality.HighQuality" />
+      <MemberSignature Language="C++ CLI" Value="HighQuality" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -81,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.CompositingQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>High quality, low speed compositing.</summary>
       </Docs>
@@ -89,6 +108,9 @@
       <MemberSignature Language="C#" Value="HighSpeed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.CompositingQuality HighSpeed = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingQuality.HighSpeed" />
+      <MemberSignature Language="VB.NET" Value="HighSpeed" />
+      <MemberSignature Language="F#" Value="HighSpeed = 1" Usage="System.Drawing.Drawing2D.CompositingQuality.HighSpeed" />
+      <MemberSignature Language="C++ CLI" Value="HighSpeed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -97,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.CompositingQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>High speed, low quality.</summary>
       </Docs>
@@ -105,6 +128,9 @@
       <MemberSignature Language="C#" Value="Invalid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.CompositingQuality Invalid = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.CompositingQuality.Invalid" />
+      <MemberSignature Language="VB.NET" Value="Invalid" />
+      <MemberSignature Language="F#" Value="Invalid = -1" Usage="System.Drawing.Drawing2D.CompositingQuality.Invalid" />
+      <MemberSignature Language="C++ CLI" Value="Invalid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -113,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.CompositingQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>Invalid quality.</summary>
       </Docs>

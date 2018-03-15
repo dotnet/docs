@@ -1,7 +1,10 @@
-<Type Name="BaseOcxArray" FullName="Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray">
+﻿<Type Name="BaseOcxArray" FullName="Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray">
   <TypeSignature Language="C#" Value="public abstract class BaseOcxArray : Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract BaseOcxArray extends Microsoft.VisualBasic.Compatibility.VB6.BaseControlArray" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseOcxArray&#xA;Inherits BaseControlArray" />
+  <TypeSignature Language="F#" Value="type BaseOcxArray = class&#xA;    inherit BaseControlArray" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BaseOcxArray abstract : Microsoft::VisualBasic::Compatibility::VB6::BaseControlArray" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -30,10 +33,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see langword="BaseOcxArray" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected BaseOcxArray ();" />
       <MemberSignature Language="ILAsm" Value=".method familyspecialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BaseOcxArray();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -59,6 +73,9 @@
       <MemberSignature Language="C#" Value="protected BaseOcxArray (System.ComponentModel.IContainer Container);" />
       <MemberSignature Language="ILAsm" Value=".method familyspecialname rtspecialname instance void .ctor(class System.ComponentModel.IContainer Container) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.#ctor(System.ComponentModel.IContainer)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (Container As IContainer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray : System.ComponentModel.IContainer -&gt; Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray" Usage="new Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray Container" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BaseOcxArray(System::ComponentModel::IContainer ^ Container);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -87,6 +104,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler CausesValidationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CausesValidationChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.CausesValidationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CausesValidationChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CausesValidationChanged : EventHandler " Usage="member this.CausesValidationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CausesValidationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -116,6 +136,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ClientSizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ClientSizeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ClientSizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ClientSizeChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ClientSizeChanged : EventHandler " Usage="member this.ClientSizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ClientSizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -145,6 +168,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ContextMenuChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ContextMenuChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ContextMenuChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ContextMenuChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ContextMenuChanged : EventHandler " Usage="member this.ContextMenuChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -179,6 +205,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ContextMenuStripChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ContextMenuStripChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ContextMenuStripChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ContextMenuStripChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStripChanged : EventHandler " Usage="member this.ContextMenuStripChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuStripChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -208,6 +237,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ControlEventHandler ControlAdded;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ControlEventHandler ControlAdded" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ControlAdded" />
+      <MemberSignature Language="VB.NET" Value="Public Event ControlAdded As ControlEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlAdded : System.Windows.Forms.ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlAdded;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -235,6 +267,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.ControlEventHandler ControlRemoved;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.ControlEventHandler ControlRemoved" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ControlRemoved" />
+      <MemberSignature Language="VB.NET" Value="Public Event ControlRemoved As ControlEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " Usage="member this.ControlRemoved : System.Windows.Forms.ControlEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::ControlEventHandler ^ ControlRemoved;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -262,6 +297,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler DockChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DockChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.DockChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event DockChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DockChanged : EventHandler " Usage="member this.DockChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DockChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -291,6 +329,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Enter;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Enter" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Enter" />
+      <MemberSignature Language="VB.NET" Value="Public Event Enter As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Enter : EventHandler " Usage="member this.Enter : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Enter;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -318,6 +359,9 @@
       <MemberSignature Language="C#" Value="protected override void HookUpControlEvents (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void HookUpControlEvents(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.HookUpControlEvents(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HookUpControlEvents (o As Object)" />
+      <MemberSignature Language="F#" Value="override this.HookUpControlEvents : obj -&gt; unit" Usage="baseOcxArray.HookUpControlEvents o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HookUpControlEvents(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -349,6 +393,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Leave;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Leave" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Leave" />
+      <MemberSignature Language="VB.NET" Value="Public Event Leave As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Leave : EventHandler " Usage="member this.Leave : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Leave;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -397,6 +444,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler LocationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler LocationChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.LocationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event LocationChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.LocationChanged : EventHandler " Usage="member this.LocationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ LocationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -426,6 +476,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler MarginChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MarginChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.MarginChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event MarginChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MarginChanged : EventHandler " Usage="member this.MarginChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MarginChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -455,6 +508,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler MouseCaptureChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler MouseCaptureChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.MouseCaptureChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event MouseCaptureChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseCaptureChanged : EventHandler " Usage="member this.MouseCaptureChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ MouseCaptureChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -497,6 +553,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Move;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Move" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Move" />
+      <MemberSignature Language="VB.NET" Value="Public Event Move As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Move : EventHandler " Usage="member this.Move : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Move;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -525,6 +584,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler PaddingChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PaddingChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.PaddingChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event PaddingChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -554,6 +616,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ParentChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ParentChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.ParentChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event ParentChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ParentChanged : EventHandler " Usage="member this.ParentChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ParentChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -583,6 +648,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler RegionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler RegionChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.RegionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event RegionChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.RegionChanged : EventHandler " Usage="member this.RegionChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ RegionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -612,6 +680,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Resize;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Resize" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Resize" />
+      <MemberSignature Language="VB.NET" Value="Public Event Resize As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Resize : EventHandler " Usage="member this.Resize : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Resize;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -644,6 +715,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler SizeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SizeChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.SizeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SizeChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SizeChanged : EventHandler " Usage="member this.SizeChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SizeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -673,6 +747,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler SystemColorsChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SystemColorsChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.SystemColorsChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SystemColorsChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SystemColorsChanged : EventHandler " Usage="member this.SystemColorsChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SystemColorsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -703,6 +780,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Validated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Validated" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Validated" />
+      <MemberSignature Language="VB.NET" Value="Public Event Validated As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Validated : EventHandler " Usage="member this.Validated : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Validated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -763,6 +843,9 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.CancelEventHandler Validating;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CancelEventHandler Validating" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Validating" />
+      <MemberSignature Language="VB.NET" Value="Public Event Validating As CancelEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Validating : System.ComponentModel.CancelEventHandler " Usage="member this.Validating : System.ComponentModel.CancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CancelEventHandler ^ Validating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -823,6 +906,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler VisibleChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler VisibleChanged" />
       <MemberSignature Language="DocId" Value="E:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.VisibleChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event VisibleChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.VisibleChanged : EventHandler " Usage="member this.VisibleChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ VisibleChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -848,14 +934,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see langword="BaseOcxArray" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

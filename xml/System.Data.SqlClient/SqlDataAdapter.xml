@@ -1,7 +1,10 @@
-<Type Name="SqlDataAdapter" FullName="System.Data.SqlClient.SqlDataAdapter">
+﻿<Type Name="SqlDataAdapter" FullName="System.Data.SqlClient.SqlDataAdapter">
   <TypeSignature Language="C#" Value="public sealed class SqlDataAdapter : System.Data.Common.DbDataAdapter, ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SqlDataAdapter extends System.Data.Common.DbDataAdapter implements class System.Data.IDataAdapter, class System.Data.IDbDataAdapter, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Data.SqlClient.SqlDataAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SqlDataAdapter&#xA;Inherits DbDataAdapter&#xA;Implements ICloneable" />
+  <TypeSignature Language="F#" Value="type SqlDataAdapter = class&#xA;    inherit DbDataAdapter&#xA;    interface IDbDataAdapter&#xA;    interface IDataAdapter&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlDataAdapter sealed : System::Data::Common::DbDataAdapter, ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -66,10 +69,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SqlDataAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDataAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -112,6 +127,9 @@
       <MemberSignature Language="C#" Value="public SqlDataAdapter (System.Data.SqlClient.SqlCommand selectCommand);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.SqlClient.SqlCommand selectCommand) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.#ctor(System.Data.SqlClient.SqlCommand)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (selectCommand As SqlCommand)" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlDataAdapter : System.Data.SqlClient.SqlCommand -&gt; System.Data.SqlClient.SqlDataAdapter" Usage="new System.Data.SqlClient.SqlDataAdapter selectCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDataAdapter(System::Data::SqlClient::SqlCommand ^ selectCommand);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -161,6 +179,9 @@
       <MemberSignature Language="C#" Value="public SqlDataAdapter (string selectCommandText, System.Data.SqlClient.SqlConnection selectConnection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string selectCommandText, class System.Data.SqlClient.SqlConnection selectConnection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.#ctor(System.String,System.Data.SqlClient.SqlConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (selectCommandText As String, selectConnection As SqlConnection)" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlDataAdapter : string * System.Data.SqlClient.SqlConnection -&gt; System.Data.SqlClient.SqlDataAdapter" Usage="new System.Data.SqlClient.SqlDataAdapter (selectCommandText, selectConnection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDataAdapter(System::String ^ selectCommandText, System::Data::SqlClient::SqlConnection ^ selectConnection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -210,6 +231,9 @@
       <MemberSignature Language="C#" Value="public SqlDataAdapter (string selectCommandText, string selectConnectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string selectCommandText, string selectConnectionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (selectCommandText As String, selectConnectionString As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.SqlClient.SqlDataAdapter : string * string -&gt; System.Data.SqlClient.SqlDataAdapter" Usage="new System.Data.SqlClient.SqlDataAdapter (selectCommandText, selectConnectionString)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDataAdapter(System::String ^ selectCommandText, System::String ^ selectConnectionString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -259,6 +283,9 @@
       <MemberSignature Language="C#" Value="protected override int AddToBatch (System.Data.IDbCommand command);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 AddToBatch(class System.Data.IDbCommand command) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.AddToBatch(System.Data.IDbCommand)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function AddToBatch (command As IDbCommand) As Integer" />
+      <MemberSignature Language="F#" Value="override this.AddToBatch : System.Data.IDbCommand -&gt; int" Usage="sqlDataAdapter.AddToBatch command" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int AddToBatch(System::Data::IDbCommand ^ command);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -282,6 +309,9 @@
       <MemberSignature Language="C#" Value="protected override void ClearBatch ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearBatch() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.ClearBatch" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearBatch ()" />
+      <MemberSignature Language="F#" Value="override this.ClearBatch : unit -&gt; unit" Usage="sqlDataAdapter.ClearBatch " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearBatch();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -301,6 +331,8 @@
       <MemberSignature Language="C#" Value="protected override System.Data.Common.RowUpdatedEventArgs CreateRowUpdatedEvent (System.Data.DataRow dataRow, System.Data.IDbCommand command, System.Data.StatementType statementType, System.Data.Common.DataTableMapping tableMapping);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.RowUpdatedEventArgs CreateRowUpdatedEvent(class System.Data.DataRow dataRow, class System.Data.IDbCommand command, valuetype System.Data.StatementType statementType, class System.Data.Common.DataTableMapping tableMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.CreateRowUpdatedEvent(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
+      <MemberSignature Language="F#" Value="override this.CreateRowUpdatedEvent : System.Data.DataRow * System.Data.IDbCommand * System.Data.StatementType * System.Data.Common.DataTableMapping -&gt; System.Data.Common.RowUpdatedEventArgs" Usage="sqlDataAdapter.CreateRowUpdatedEvent (dataRow, command, statementType, tableMapping)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::RowUpdatedEventArgs ^ CreateRowUpdatedEvent(System::Data::DataRow ^ dataRow, System::Data::IDbCommand ^ command, System::Data::StatementType statementType, System::Data::Common::DataTableMapping ^ tableMapping);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -330,6 +362,8 @@
       <MemberSignature Language="C#" Value="protected override System.Data.Common.RowUpdatingEventArgs CreateRowUpdatingEvent (System.Data.DataRow dataRow, System.Data.IDbCommand command, System.Data.StatementType statementType, System.Data.Common.DataTableMapping tableMapping);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.RowUpdatingEventArgs CreateRowUpdatingEvent(class System.Data.DataRow dataRow, class System.Data.IDbCommand command, valuetype System.Data.StatementType statementType, class System.Data.Common.DataTableMapping tableMapping) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.CreateRowUpdatingEvent(System.Data.DataRow,System.Data.IDbCommand,System.Data.StatementType,System.Data.Common.DataTableMapping)" />
+      <MemberSignature Language="F#" Value="override this.CreateRowUpdatingEvent : System.Data.DataRow * System.Data.IDbCommand * System.Data.StatementType * System.Data.Common.DataTableMapping -&gt; System.Data.Common.RowUpdatingEventArgs" Usage="sqlDataAdapter.CreateRowUpdatingEvent (dataRow, command, statementType, tableMapping)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::RowUpdatingEventArgs ^ CreateRowUpdatingEvent(System::Data::DataRow ^ dataRow, System::Data::IDbCommand ^ command, System::Data::StatementType statementType, System::Data::Common::DataTableMapping ^ tableMapping);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -359,6 +393,9 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlCommand DeleteCommand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.SqlClient.SqlCommand DeleteCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataAdapter.DeleteCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeleteCommand As SqlCommand" />
+      <MemberSignature Language="F#" Value="member this.DeleteCommand : System.Data.SqlClient.SqlCommand with get, set" Usage="System.Data.SqlClient.SqlDataAdapter.DeleteCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlCommand ^ DeleteCommand { System::Data::SqlClient::SqlCommand ^ get(); void set(System::Data::SqlClient::SqlCommand ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -409,6 +446,9 @@
       <MemberSignature Language="C#" Value="protected override int ExecuteBatch ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 ExecuteBatch() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.ExecuteBatch" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteBatch () As Integer" />
+      <MemberSignature Language="F#" Value="override this.ExecuteBatch : unit -&gt; int" Usage="sqlDataAdapter.ExecuteBatch " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteBatch();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -429,6 +469,9 @@
       <MemberSignature Language="C#" Value="protected override System.Data.IDataParameter GetBatchedParameter (int commandIdentifier, int parameterIndex);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.IDataParameter GetBatchedParameter(int32 commandIdentifier, int32 parameterIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.GetBatchedParameter(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetBatchedParameter (commandIdentifier As Integer, parameterIndex As Integer) As IDataParameter" />
+      <MemberSignature Language="F#" Value="override this.GetBatchedParameter : int * int -&gt; System.Data.IDataParameter" Usage="sqlDataAdapter.GetBatchedParameter (commandIdentifier, parameterIndex)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::IDataParameter ^ GetBatchedParameter(int commandIdentifier, int parameterIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -454,6 +497,9 @@
       <MemberSignature Language="C#" Value="protected override bool GetBatchedRecordsAffected (int commandIdentifier, out int recordsAffected, out Exception error);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool GetBatchedRecordsAffected(int32 commandIdentifier, [out] int32&amp; recordsAffected, [out] class System.Exception&amp; error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.GetBatchedRecordsAffected(System.Int32,System.Int32@,System.Exception@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetBatchedRecordsAffected (commandIdentifier As Integer, ByRef recordsAffected As Integer, ByRef error As Exception) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.GetBatchedRecordsAffected : int *  *  -&gt; bool" Usage="sqlDataAdapter.GetBatchedRecordsAffected (commandIdentifier, recordsAffected, error)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool GetBatchedRecordsAffected(int commandIdentifier, [Runtime::InteropServices::Out] int % recordsAffected, [Runtime::InteropServices::Out] Exception ^ % error);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -480,6 +526,9 @@
       <MemberSignature Language="C#" Value="protected override void InitializeBatching ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InitializeBatching() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.InitializeBatching" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InitializeBatching ()" />
+      <MemberSignature Language="F#" Value="override this.InitializeBatching : unit -&gt; unit" Usage="sqlDataAdapter.InitializeBatching " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InitializeBatching();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -499,6 +548,9 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlCommand InsertCommand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.SqlClient.SqlCommand InsertCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataAdapter.InsertCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Property InsertCommand As SqlCommand" />
+      <MemberSignature Language="F#" Value="member this.InsertCommand : System.Data.SqlClient.SqlCommand with get, set" Usage="System.Data.SqlClient.SqlDataAdapter.InsertCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlCommand ^ InsertCommand { System::Data::SqlClient::SqlCommand ^ get(); void set(System::Data::SqlClient::SqlCommand ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -551,6 +603,9 @@
       <MemberSignature Language="C#" Value="protected override void OnRowUpdated (System.Data.Common.RowUpdatedEventArgs value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRowUpdated(class System.Data.Common.RowUpdatedEventArgs value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.OnRowUpdated(System.Data.Common.RowUpdatedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRowUpdated (value As RowUpdatedEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnRowUpdated : System.Data.Common.RowUpdatedEventArgs -&gt; unit" Usage="sqlDataAdapter.OnRowUpdated value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRowUpdated(System::Data::Common::RowUpdatedEventArgs ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -577,6 +632,9 @@
       <MemberSignature Language="C#" Value="protected override void OnRowUpdating (System.Data.Common.RowUpdatingEventArgs value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRowUpdating(class System.Data.Common.RowUpdatingEventArgs value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.OnRowUpdating(System.Data.Common.RowUpdatingEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRowUpdating (value As RowUpdatingEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnRowUpdating : System.Data.Common.RowUpdatingEventArgs -&gt; unit" Usage="sqlDataAdapter.OnRowUpdating value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRowUpdating(System::Data::Common::RowUpdatingEventArgs ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -603,6 +661,9 @@
       <MemberSignature Language="C#" Value="public event System.Data.SqlClient.SqlRowUpdatedEventHandler RowUpdated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Data.SqlClient.SqlRowUpdatedEventHandler RowUpdated" />
       <MemberSignature Language="DocId" Value="E:System.Data.SqlClient.SqlDataAdapter.RowUpdated" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event RowUpdated As SqlRowUpdatedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.RowUpdated : System.Data.SqlClient.SqlRowUpdatedEventHandler " Usage="member this.RowUpdated : System.Data.SqlClient.SqlRowUpdatedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::SqlClient::SqlRowUpdatedEventHandler ^ RowUpdated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -662,6 +723,9 @@
       <MemberSignature Language="C#" Value="public event System.Data.SqlClient.SqlRowUpdatingEventHandler RowUpdating;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Data.SqlClient.SqlRowUpdatingEventHandler RowUpdating" />
       <MemberSignature Language="DocId" Value="E:System.Data.SqlClient.SqlDataAdapter.RowUpdating" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event RowUpdating As SqlRowUpdatingEventHandler " />
+      <MemberSignature Language="F#" Value="member this.RowUpdating : System.Data.SqlClient.SqlRowUpdatingEventHandler " Usage="member this.RowUpdating : System.Data.SqlClient.SqlRowUpdatingEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Data::SqlClient::SqlRowUpdatingEventHandler ^ RowUpdating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -721,6 +785,9 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlCommand SelectCommand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.SqlClient.SqlCommand SelectCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataAdapter.SelectCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectCommand As SqlCommand" />
+      <MemberSignature Language="F#" Value="member this.SelectCommand : System.Data.SqlClient.SqlCommand with get, set" Usage="System.Data.SqlClient.SqlDataAdapter.SelectCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlCommand ^ SelectCommand { System::Data::SqlClient::SqlCommand ^ get(); void set(System::Data::SqlClient::SqlCommand ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -769,7 +836,13 @@
       <MemberSignature Language="C#" Value="System.Data.IDbCommand System.Data.IDbDataAdapter.DeleteCommand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbCommand System.Data.IDbDataAdapter.DeleteCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataAdapter.System#Data#IDbDataAdapter#DeleteCommand" />
+      <MemberSignature Language="VB.NET" Value=" Property DeleteCommand As IDbCommand Implements IDbDataAdapter.DeleteCommand" />
+      <MemberSignature Language="F#" Usage="System.Data.SqlClient.SqlDataAdapter.System.Data.IDbDataAdapter.DeleteCommand" />
+      <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System.Data.IDbDataAdapter.DeleteCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbDataAdapter.DeleteCommand</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -799,7 +872,13 @@
       <MemberSignature Language="C#" Value="System.Data.IDbCommand System.Data.IDbDataAdapter.InsertCommand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbCommand System.Data.IDbDataAdapter.InsertCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataAdapter.System#Data#IDbDataAdapter#InsertCommand" />
+      <MemberSignature Language="VB.NET" Value=" Property InsertCommand As IDbCommand Implements IDbDataAdapter.InsertCommand" />
+      <MemberSignature Language="F#" Usage="System.Data.SqlClient.SqlDataAdapter.System.Data.IDbDataAdapter.InsertCommand" />
+      <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System.Data.IDbDataAdapter.InsertCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbDataAdapter.InsertCommand</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -829,7 +908,13 @@
       <MemberSignature Language="C#" Value="System.Data.IDbCommand System.Data.IDbDataAdapter.SelectCommand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbCommand System.Data.IDbDataAdapter.SelectCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataAdapter.System#Data#IDbDataAdapter#SelectCommand" />
+      <MemberSignature Language="VB.NET" Value=" Property SelectCommand As IDbCommand Implements IDbDataAdapter.SelectCommand" />
+      <MemberSignature Language="F#" Usage="System.Data.SqlClient.SqlDataAdapter.System.Data.IDbDataAdapter.SelectCommand" />
+      <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System.Data.IDbDataAdapter.SelectCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbDataAdapter.SelectCommand</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -859,7 +944,13 @@
       <MemberSignature Language="C#" Value="System.Data.IDbCommand System.Data.IDbDataAdapter.UpdateCommand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.IDbCommand System.Data.IDbDataAdapter.UpdateCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataAdapter.System#Data#IDbDataAdapter#UpdateCommand" />
+      <MemberSignature Language="VB.NET" Value=" Property UpdateCommand As IDbCommand Implements IDbDataAdapter.UpdateCommand" />
+      <MemberSignature Language="F#" Usage="System.Data.SqlClient.SqlDataAdapter.System.Data.IDbDataAdapter.UpdateCommand" />
+      <MemberSignature Language="C++ CLI" Value="property System::Data::IDbCommand ^ System.Data.IDbDataAdapter.UpdateCommand { System::Data::IDbCommand ^ get(); void set(System::Data::IDbCommand ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDbDataAdapter.UpdateCommand</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -889,7 +980,12 @@
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -920,6 +1016,9 @@
       <MemberSignature Language="C#" Value="protected override void TerminateBatching ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TerminateBatching() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.SqlClient.SqlDataAdapter.TerminateBatching" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TerminateBatching ()" />
+      <MemberSignature Language="F#" Value="override this.TerminateBatching : unit -&gt; unit" Usage="sqlDataAdapter.TerminateBatching " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TerminateBatching();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -939,6 +1038,9 @@
       <MemberSignature Language="C#" Value="public override int UpdateBatchSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 UpdateBatchSize" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataAdapter.UpdateBatchSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property UpdateBatchSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.UpdateBatchSize : int with get, set" Usage="System.Data.SqlClient.SqlDataAdapter.UpdateBatchSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int UpdateBatchSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -995,6 +1097,9 @@
       <MemberSignature Language="C#" Value="public System.Data.SqlClient.SqlCommand UpdateCommand { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.SqlClient.SqlCommand UpdateCommand" />
       <MemberSignature Language="DocId" Value="P:System.Data.SqlClient.SqlDataAdapter.UpdateCommand" />
+      <MemberSignature Language="VB.NET" Value="Public Property UpdateCommand As SqlCommand" />
+      <MemberSignature Language="F#" Value="member this.UpdateCommand : System.Data.SqlClient.SqlCommand with get, set" Usage="System.Data.SqlClient.SqlDataAdapter.UpdateCommand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::SqlClient::SqlCommand ^ UpdateCommand { System::Data::SqlClient::SqlCommand ^ get(); void set(System::Data::SqlClient::SqlCommand ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1046,15 +1151,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

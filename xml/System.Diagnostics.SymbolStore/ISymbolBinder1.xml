@@ -1,7 +1,10 @@
-<Type Name="ISymbolBinder1" FullName="System.Diagnostics.SymbolStore.ISymbolBinder1">
+﻿<Type Name="ISymbolBinder1" FullName="System.Diagnostics.SymbolStore.ISymbolBinder1">
   <TypeSignature Language="C#" Value="public interface ISymbolBinder1" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISymbolBinder1" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.ISymbolBinder1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISymbolBinder1" />
+  <TypeSignature Language="F#" Value="type ISymbolBinder1 = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISymbolBinder1" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.SymbolStore.ISymbolReader GetReader (IntPtr importer, string filename, string searchPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Diagnostics.SymbolStore.ISymbolReader GetReader(native int importer, string filename, string searchPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolBinder1.GetReader(System.IntPtr,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetReader (importer As IntPtr, filename As String, searchPath As String) As ISymbolReader" />
+      <MemberSignature Language="F#" Value="abstract member GetReader : nativeint * string * string -&gt; System.Diagnostics.SymbolStore.ISymbolReader" Usage="iSymbolBinder1.GetReader (importer, filename, searchPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Diagnostics::SymbolStore::ISymbolReader ^ GetReader(IntPtr importer, System::String ^ filename, System::String ^ searchPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

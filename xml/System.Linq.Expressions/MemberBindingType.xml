@@ -1,7 +1,10 @@
-<Type Name="MemberBindingType" FullName="System.Linq.Expressions.MemberBindingType">
+﻿<Type Name="MemberBindingType" FullName="System.Linq.Expressions.MemberBindingType">
   <TypeSignature Language="C#" Value="public enum MemberBindingType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MemberBindingType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.MemberBindingType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MemberBindingType" />
+  <TypeSignature Language="F#" Value="type MemberBindingType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MemberBindingType" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="Assignment" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Linq.Expressions.MemberBindingType Assignment = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.MemberBindingType.Assignment" />
+      <MemberSignature Language="VB.NET" Value="Assignment" />
+      <MemberSignature Language="F#" Value="Assignment = 0" Usage="System.Linq.Expressions.MemberBindingType.Assignment" />
+      <MemberSignature Language="C++ CLI" Value="Assignment" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -50,6 +56,7 @@
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.MemberBindingType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A binding that represents initializing a member with the value of an expression.</summary>
       </Docs>
@@ -58,6 +65,9 @@
       <MemberSignature Language="C#" Value="ListBinding" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Linq.Expressions.MemberBindingType ListBinding = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.MemberBindingType.ListBinding" />
+      <MemberSignature Language="VB.NET" Value="ListBinding" />
+      <MemberSignature Language="F#" Value="ListBinding = 2" Usage="System.Linq.Expressions.MemberBindingType.ListBinding" />
+      <MemberSignature Language="C++ CLI" Value="ListBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -78,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.MemberBindingType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A binding that represents initializing a member of type <see cref="T:System.Collections.IList" /> or <see cref="T:System.Collections.Generic.ICollection`1" /> from a list of elements.</summary>
       </Docs>
@@ -86,6 +97,9 @@
       <MemberSignature Language="C#" Value="MemberBinding" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Linq.Expressions.MemberBindingType MemberBinding = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Linq.Expressions.MemberBindingType.MemberBinding" />
+      <MemberSignature Language="VB.NET" Value="MemberBinding" />
+      <MemberSignature Language="F#" Value="MemberBinding = 1" Usage="System.Linq.Expressions.MemberBindingType.MemberBinding" />
+      <MemberSignature Language="C++ CLI" Value="MemberBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -106,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Linq.Expressions.MemberBindingType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A binding that represents recursively initializing members of a member.</summary>
       </Docs>

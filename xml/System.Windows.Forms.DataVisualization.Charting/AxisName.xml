@@ -1,7 +1,10 @@
-<Type Name="AxisName" FullName="System.Windows.Forms.DataVisualization.Charting.AxisName">
+﻿<Type Name="AxisName" FullName="System.Windows.Forms.DataVisualization.Charting.AxisName">
   <TypeSignature Language="C#" Value="public enum AxisName" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AxisName extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.AxisName" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AxisName" />
+  <TypeSignature Language="F#" Value="type AxisName = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AxisName" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="X" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.AxisName X = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.AxisName.X" />
+      <MemberSignature Language="VB.NET" Value="X" />
+      <MemberSignature Language="F#" Value="X = 0" Usage="System.Windows.Forms.DataVisualization.Charting.AxisName.X" />
+      <MemberSignature Language="C++ CLI" Value="X" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisName</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Primary X-axis.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="X2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.AxisName X2 = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.AxisName.X2" />
+      <MemberSignature Language="VB.NET" Value="X2" />
+      <MemberSignature Language="F#" Value="X2 = 2" Usage="System.Windows.Forms.DataVisualization.Charting.AxisName.X2" />
+      <MemberSignature Language="C++ CLI" Value="X2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -62,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisName</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Secondary X-axis.</summary>
       </Docs>
@@ -70,6 +81,9 @@
       <MemberSignature Language="C#" Value="Y" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.AxisName Y = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.AxisName.Y" />
+      <MemberSignature Language="VB.NET" Value="Y" />
+      <MemberSignature Language="F#" Value="Y = 1" Usage="System.Windows.Forms.DataVisualization.Charting.AxisName.Y" />
+      <MemberSignature Language="C++ CLI" Value="Y" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -78,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisName</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Primary Y-axis.</summary>
       </Docs>
@@ -86,6 +101,9 @@
       <MemberSignature Language="C#" Value="Y2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.AxisName Y2 = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.AxisName.Y2" />
+      <MemberSignature Language="VB.NET" Value="Y2" />
+      <MemberSignature Language="F#" Value="Y2 = 3" Usage="System.Windows.Forms.DataVisualization.Charting.AxisName.Y2" />
+      <MemberSignature Language="C++ CLI" Value="Y2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -94,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AxisName</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Secondary Y-axis.</summary>
       </Docs>

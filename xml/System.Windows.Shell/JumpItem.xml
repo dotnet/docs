@@ -1,7 +1,10 @@
-<Type Name="JumpItem" FullName="System.Windows.Shell.JumpItem">
+﻿<Type Name="JumpItem" FullName="System.Windows.Shell.JumpItem">
   <TypeSignature Language="C#" Value="public abstract class JumpItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit JumpItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Shell.JumpItem" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class JumpItem" />
+  <TypeSignature Language="F#" Value="type JumpItem = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JumpItem abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public string CustomCategory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CustomCategory" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shell.JumpItem.CustomCategory" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomCategory As String" />
+      <MemberSignature Language="F#" Value="member this.CustomCategory : string with get, set" Usage="System.Windows.Shell.JumpItem.CustomCategory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomCategory { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="DsmlResponseOrder" FullName="System.DirectoryServices.Protocols.DsmlResponseOrder">
+﻿<Type Name="DsmlResponseOrder" FullName="System.DirectoryServices.Protocols.DsmlResponseOrder">
   <TypeSignature Language="C#" Value="public enum DsmlResponseOrder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DsmlResponseOrder extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DsmlResponseOrder" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DsmlResponseOrder" />
+  <TypeSignature Language="F#" Value="type DsmlResponseOrder = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DsmlResponseOrder" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Sequential" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.DsmlResponseOrder Sequential = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DsmlResponseOrder.Sequential" />
+      <MemberSignature Language="VB.NET" Value="Sequential" />
+      <MemberSignature Language="F#" Value="Sequential = 0" Usage="System.DirectoryServices.Protocols.DsmlResponseOrder.Sequential" />
+      <MemberSignature Language="C++ CLI" Value="Sequential" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.DsmlResponseOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Sequential. The value is equal to 0.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="Unordered" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.DsmlResponseOrder Unordered = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.DsmlResponseOrder.Unordered" />
+      <MemberSignature Language="VB.NET" Value="Unordered" />
+      <MemberSignature Language="F#" Value="Unordered = 1" Usage="System.DirectoryServices.Protocols.DsmlResponseOrder.Unordered" />
+      <MemberSignature Language="C++ CLI" Value="Unordered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.DsmlResponseOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Unordered. The value is equal to 1.</summary>
       </Docs>

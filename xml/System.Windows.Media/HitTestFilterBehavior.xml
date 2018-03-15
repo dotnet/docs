@@ -1,7 +1,10 @@
-<Type Name="HitTestFilterBehavior" FullName="System.Windows.Media.HitTestFilterBehavior">
+﻿<Type Name="HitTestFilterBehavior" FullName="System.Windows.Media.HitTestFilterBehavior">
   <TypeSignature Language="C#" Value="public enum HitTestFilterBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HitTestFilterBehavior extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.HitTestFilterBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HitTestFilterBehavior" />
+  <TypeSignature Language="F#" Value="type HitTestFilterBehavior = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class HitTestFilterBehavior" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@ Pruning a visual tree
       <MemberSignature Language="C#" Value="Continue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.HitTestFilterBehavior Continue = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestFilterBehavior.Continue" />
+      <MemberSignature Language="VB.NET" Value="Continue" />
+      <MemberSignature Language="F#" Value="Continue = 6" Usage="System.Windows.Media.HitTestFilterBehavior.Continue" />
+      <MemberSignature Language="C++ CLI" Value="Continue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,6 +53,7 @@ Pruning a visual tree
       <ReturnValue>
         <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Hit test against the current <see cref="T:System.Windows.Media.Visual" /> and its descendants.</summary>
       </Docs>
@@ -55,6 +62,9 @@ Pruning a visual tree
       <MemberSignature Language="C#" Value="ContinueSkipChildren" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.HitTestFilterBehavior ContinueSkipChildren = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestFilterBehavior.ContinueSkipChildren" />
+      <MemberSignature Language="VB.NET" Value="ContinueSkipChildren" />
+      <MemberSignature Language="F#" Value="ContinueSkipChildren = 2" Usage="System.Windows.Media.HitTestFilterBehavior.ContinueSkipChildren" />
+      <MemberSignature Language="C++ CLI" Value="ContinueSkipChildren" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +73,7 @@ Pruning a visual tree
       <ReturnValue>
         <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Hit test against the current <see cref="T:System.Windows.Media.Visual" />, but not its descendants.</summary>
       </Docs>
@@ -71,6 +82,9 @@ Pruning a visual tree
       <MemberSignature Language="C#" Value="ContinueSkipSelf" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.HitTestFilterBehavior ContinueSkipSelf = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestFilterBehavior.ContinueSkipSelf" />
+      <MemberSignature Language="VB.NET" Value="ContinueSkipSelf" />
+      <MemberSignature Language="F#" Value="ContinueSkipSelf = 4" Usage="System.Windows.Media.HitTestFilterBehavior.ContinueSkipSelf" />
+      <MemberSignature Language="C++ CLI" Value="ContinueSkipSelf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -79,6 +93,7 @@ Pruning a visual tree
       <ReturnValue>
         <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Do not hit test against the current <see cref="T:System.Windows.Media.Visual" />, but hit test against its descendants.</summary>
       </Docs>
@@ -87,6 +102,9 @@ Pruning a visual tree
       <MemberSignature Language="C#" Value="ContinueSkipSelfAndChildren" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.HitTestFilterBehavior ContinueSkipSelfAndChildren = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestFilterBehavior.ContinueSkipSelfAndChildren" />
+      <MemberSignature Language="VB.NET" Value="ContinueSkipSelfAndChildren" />
+      <MemberSignature Language="F#" Value="ContinueSkipSelfAndChildren = 0" Usage="System.Windows.Media.HitTestFilterBehavior.ContinueSkipSelfAndChildren" />
+      <MemberSignature Language="C++ CLI" Value="ContinueSkipSelfAndChildren" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -95,6 +113,7 @@ Pruning a visual tree
       <ReturnValue>
         <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Do not hit test against the current <see cref="T:System.Windows.Media.Visual" /> or its descendants.</summary>
       </Docs>
@@ -103,6 +122,9 @@ Pruning a visual tree
       <MemberSignature Language="C#" Value="Stop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.HitTestFilterBehavior Stop = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.HitTestFilterBehavior.Stop" />
+      <MemberSignature Language="VB.NET" Value="Stop" />
+      <MemberSignature Language="F#" Value="Stop = 8" Usage="System.Windows.Media.HitTestFilterBehavior.Stop" />
+      <MemberSignature Language="C++ CLI" Value="Stop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -111,6 +133,7 @@ Pruning a visual tree
       <ReturnValue>
         <ReturnType>System.Windows.Media.HitTestFilterBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Stop hit testing at the current <see cref="T:System.Windows.Media.Visual" />.</summary>
       </Docs>

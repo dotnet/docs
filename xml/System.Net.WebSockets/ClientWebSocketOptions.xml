@@ -1,7 +1,10 @@
-<Type Name="ClientWebSocketOptions" FullName="System.Net.WebSockets.ClientWebSocketOptions">
+﻿<Type Name="ClientWebSocketOptions" FullName="System.Net.WebSockets.ClientWebSocketOptions">
   <TypeSignature Language="C#" Value="public sealed class ClientWebSocketOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClientWebSocketOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.WebSockets.ClientWebSocketOptions" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClientWebSocketOptions" />
+  <TypeSignature Language="F#" Value="type ClientWebSocketOptions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClientWebSocketOptions sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,8 @@
       <MemberSignature Language="C#" Value="public ClientWebSocketOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.ClientWebSocketOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientWebSocketOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -45,6 +50,9 @@
       <MemberSignature Language="C#" Value="public void AddSubProtocol (string subProtocol);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddSubProtocol(string subProtocol) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.ClientWebSocketOptions.AddSubProtocol(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddSubProtocol (subProtocol As String)" />
+      <MemberSignature Language="F#" Value="member this.AddSubProtocol : string -&gt; unit" Usage="clientWebSocketOptions.AddSubProtocol subProtocol" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddSubProtocol(System::String ^ subProtocol);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
@@ -76,6 +84,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509CertificateCollection ClientCertificates { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.X509Certificates.X509CertificateCollection ClientCertificates" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.ClientWebSocketOptions.ClientCertificates" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientCertificates As X509CertificateCollection" />
+      <MemberSignature Language="F#" Value="member this.ClientCertificates : System.Security.Cryptography.X509Certificates.X509CertificateCollection with get, set" Usage="System.Net.WebSockets.ClientWebSocketOptions.ClientCertificates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ ClientCertificates { System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ get(); void set(System::Security::Cryptography::X509Certificates::X509CertificateCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
@@ -106,6 +117,9 @@
       <MemberSignature Language="C#" Value="public System.Net.CookieContainer Cookies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.CookieContainer Cookies" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.ClientWebSocketOptions.Cookies" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cookies As CookieContainer" />
+      <MemberSignature Language="F#" Value="member this.Cookies : System.Net.CookieContainer with get, set" Usage="System.Net.WebSockets.ClientWebSocketOptions.Cookies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::CookieContainer ^ Cookies { System::Net::CookieContainer ^ get(); void set(System::Net::CookieContainer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
@@ -136,6 +150,9 @@
       <MemberSignature Language="C#" Value="public System.Net.ICredentials Credentials { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.ICredentials Credentials" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.ClientWebSocketOptions.Credentials" />
+      <MemberSignature Language="VB.NET" Value="Public Property Credentials As ICredentials" />
+      <MemberSignature Language="F#" Value="member this.Credentials : System.Net.ICredentials with get, set" Usage="System.Net.WebSockets.ClientWebSocketOptions.Credentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::ICredentials ^ Credentials { System::Net::ICredentials ^ get(); void set(System::Net::ICredentials ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
@@ -166,6 +183,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan KeepAliveInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan KeepAliveInterval" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.ClientWebSocketOptions.KeepAliveInterval" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeepAliveInterval As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.KeepAliveInterval : TimeSpan with get, set" Usage="System.Net.WebSockets.ClientWebSocketOptions.KeepAliveInterval" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan KeepAliveInterval { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
@@ -196,6 +216,9 @@
       <MemberSignature Language="C#" Value="public System.Net.IWebProxy Proxy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IWebProxy Proxy" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.ClientWebSocketOptions.Proxy" />
+      <MemberSignature Language="VB.NET" Value="Public Property Proxy As IWebProxy" />
+      <MemberSignature Language="F#" Value="member this.Proxy : System.Net.IWebProxy with get, set" Usage="System.Net.WebSockets.ClientWebSocketOptions.Proxy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::IWebProxy ^ Proxy { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
@@ -222,10 +245,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetBuffer">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets client buffer parameters.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetBuffer">
       <MemberSignature Language="C#" Value="public void SetBuffer (int receiveBufferSize, int sendBufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBuffer(int32 receiveBufferSize, int32 sendBufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.ClientWebSocketOptions.SetBuffer(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetBuffer (receiveBufferSize As Integer, sendBufferSize As Integer)" />
+      <MemberSignature Language="F#" Value="member this.SetBuffer : int * int -&gt; unit" Usage="clientWebSocketOptions.SetBuffer (receiveBufferSize, sendBufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBuffer(int receiveBufferSize, int sendBufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -258,6 +294,9 @@
       <MemberSignature Language="C#" Value="public void SetBuffer (int receiveBufferSize, int sendBufferSize, ArraySegment&lt;byte&gt; buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetBuffer(int32 receiveBufferSize, int32 sendBufferSize, valuetype System.ArraySegment`1&lt;unsigned int8&gt; buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.ClientWebSocketOptions.SetBuffer(System.Int32,System.Int32,System.ArraySegment{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetBuffer (receiveBufferSize As Integer, sendBufferSize As Integer, buffer As ArraySegment(Of Byte))" />
+      <MemberSignature Language="F#" Value="member this.SetBuffer : int * int * ArraySegment&lt;byte&gt; -&gt; unit" Usage="clientWebSocketOptions.SetBuffer (receiveBufferSize, sendBufferSize, buffer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetBuffer(int receiveBufferSize, int sendBufferSize, ArraySegment&lt;System::Byte&gt; buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -292,6 +331,9 @@
       <MemberSignature Language="C#" Value="public void SetRequestHeader (string headerName, string headerValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetRequestHeader(string headerName, string headerValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.WebSockets.ClientWebSocketOptions.SetRequestHeader(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetRequestHeader (headerName As String, headerValue As String)" />
+      <MemberSignature Language="F#" Value="member this.SetRequestHeader : string * string -&gt; unit" Usage="clientWebSocketOptions.SetRequestHeader (headerName, headerValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRequestHeader(System::String ^ headerName, System::String ^ headerValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.WebSockets.Client</AssemblyName>
@@ -325,6 +367,9 @@
       <MemberSignature Language="C#" Value="public bool UseDefaultCredentials { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseDefaultCredentials" />
       <MemberSignature Language="DocId" Value="P:System.Net.WebSockets.ClientWebSocketOptions.UseDefaultCredentials" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseDefaultCredentials As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseDefaultCredentials : bool with get, set" Usage="System.Net.WebSockets.ClientWebSocketOptions.UseDefaultCredentials" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseDefaultCredentials { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -350,15 +395,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetBuffer">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets client buffer parameters.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

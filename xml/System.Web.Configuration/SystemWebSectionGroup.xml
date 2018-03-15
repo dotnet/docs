@@ -1,7 +1,10 @@
-<Type Name="SystemWebSectionGroup" FullName="System.Web.Configuration.SystemWebSectionGroup">
+﻿<Type Name="SystemWebSectionGroup" FullName="System.Web.Configuration.SystemWebSectionGroup">
   <TypeSignature Language="C#" Value="public sealed class SystemWebSectionGroup : System.Configuration.ConfigurationSectionGroup" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SystemWebSectionGroup extends System.Configuration.ConfigurationSectionGroup" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.SystemWebSectionGroup" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SystemWebSectionGroup&#xA;Inherits ConfigurationSectionGroup" />
+  <TypeSignature Language="F#" Value="type SystemWebSectionGroup = class&#xA;    inherit ConfigurationSectionGroup" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SystemWebSectionGroup sealed : System::Configuration::ConfigurationSectionGroup" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public SystemWebSectionGroup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.SystemWebSectionGroup.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SystemWebSectionGroup();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +61,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.AnonymousIdentificationSection AnonymousIdentification { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.AnonymousIdentificationSection AnonymousIdentification" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.AnonymousIdentification" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AnonymousIdentification As AnonymousIdentificationSection" />
+      <MemberSignature Language="F#" Value="member this.AnonymousIdentification : System.Web.Configuration.AnonymousIdentificationSection" Usage="System.Web.Configuration.SystemWebSectionGroup.AnonymousIdentification" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::AnonymousIdentificationSection ^ AnonymousIdentification { System::Web::Configuration::AnonymousIdentificationSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +103,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.AuthenticationSection Authentication { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.AuthenticationSection Authentication" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Authentication" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authentication As AuthenticationSection" />
+      <MemberSignature Language="F#" Value="member this.Authentication : System.Web.Configuration.AuthenticationSection" Usage="System.Web.Configuration.SystemWebSectionGroup.Authentication" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::AuthenticationSection ^ Authentication { System::Web::Configuration::AuthenticationSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -134,6 +145,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.AuthorizationSection Authorization { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.AuthorizationSection Authorization" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Authorization" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Authorization As AuthorizationSection" />
+      <MemberSignature Language="F#" Value="member this.Authorization : System.Web.Configuration.AuthorizationSection" Usage="System.Web.Configuration.SystemWebSectionGroup.Authorization" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::AuthorizationSection ^ Authorization { System::Web::Configuration::AuthorizationSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -173,6 +187,9 @@
       <MemberSignature Language="C#" Value="public System.Configuration.DefaultSection BrowserCaps { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.DefaultSection BrowserCaps" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.BrowserCaps" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BrowserCaps As DefaultSection" />
+      <MemberSignature Language="F#" Value="member this.BrowserCaps : System.Configuration.DefaultSection" Usage="System.Web.Configuration.SystemWebSectionGroup.BrowserCaps" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::DefaultSection ^ BrowserCaps { System::Configuration::DefaultSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -212,6 +229,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.ClientTargetSection ClientTarget { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ClientTargetSection ClientTarget" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.ClientTarget" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ClientTarget As ClientTargetSection" />
+      <MemberSignature Language="F#" Value="member this.ClientTarget : System.Web.Configuration.ClientTargetSection" Usage="System.Web.Configuration.SystemWebSectionGroup.ClientTarget" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ClientTargetSection ^ ClientTarget { System::Web::Configuration::ClientTargetSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -251,6 +271,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.CompilationSection Compilation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.CompilationSection Compilation" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Compilation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Compilation As CompilationSection" />
+      <MemberSignature Language="F#" Value="member this.Compilation : System.Web.Configuration.CompilationSection" Usage="System.Web.Configuration.SystemWebSectionGroup.Compilation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::CompilationSection ^ Compilation { System::Web::Configuration::CompilationSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -290,6 +313,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.CustomErrorsSection CustomErrors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.CustomErrorsSection CustomErrors" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.CustomErrors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomErrors As CustomErrorsSection" />
+      <MemberSignature Language="F#" Value="member this.CustomErrors : System.Web.Configuration.CustomErrorsSection" Usage="System.Web.Configuration.SystemWebSectionGroup.CustomErrors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::CustomErrorsSection ^ CustomErrors { System::Web::Configuration::CustomErrorsSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -329,6 +355,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.DeploymentSection Deployment { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.DeploymentSection Deployment" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Deployment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Deployment As DeploymentSection" />
+      <MemberSignature Language="F#" Value="member this.Deployment : System.Web.Configuration.DeploymentSection" Usage="System.Web.Configuration.SystemWebSectionGroup.Deployment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::DeploymentSection ^ Deployment { System::Web::Configuration::DeploymentSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -368,6 +397,9 @@
       <MemberSignature Language="C#" Value="public System.Configuration.DefaultSection DeviceFilters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.DefaultSection DeviceFilters" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.DeviceFilters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeviceFilters As DefaultSection" />
+      <MemberSignature Language="F#" Value="member this.DeviceFilters : System.Configuration.DefaultSection" Usage="System.Web.Configuration.SystemWebSectionGroup.DeviceFilters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::DefaultSection ^ DeviceFilters { System::Configuration::DefaultSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -407,6 +439,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.FullTrustAssembliesSection FullTrustAssemblies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.FullTrustAssembliesSection FullTrustAssemblies" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.FullTrustAssemblies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullTrustAssemblies As FullTrustAssembliesSection" />
+      <MemberSignature Language="F#" Value="member this.FullTrustAssemblies : System.Web.Configuration.FullTrustAssembliesSection" Usage="System.Web.Configuration.SystemWebSectionGroup.FullTrustAssemblies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::FullTrustAssembliesSection ^ FullTrustAssemblies { System::Web::Configuration::FullTrustAssembliesSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -432,6 +467,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.GlobalizationSection Globalization { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.GlobalizationSection Globalization" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Globalization" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Globalization As GlobalizationSection" />
+      <MemberSignature Language="F#" Value="member this.Globalization : System.Web.Configuration.GlobalizationSection" Usage="System.Web.Configuration.SystemWebSectionGroup.Globalization" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::GlobalizationSection ^ Globalization { System::Web::Configuration::GlobalizationSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -471,6 +509,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.HealthMonitoringSection HealthMonitoring { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.HealthMonitoringSection HealthMonitoring" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.HealthMonitoring" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HealthMonitoring As HealthMonitoringSection" />
+      <MemberSignature Language="F#" Value="member this.HealthMonitoring : System.Web.Configuration.HealthMonitoringSection" Usage="System.Web.Configuration.SystemWebSectionGroup.HealthMonitoring" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::HealthMonitoringSection ^ HealthMonitoring { System::Web::Configuration::HealthMonitoringSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -510,6 +551,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.HostingEnvironmentSection HostingEnvironment { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.HostingEnvironmentSection HostingEnvironment" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.HostingEnvironment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HostingEnvironment As HostingEnvironmentSection" />
+      <MemberSignature Language="F#" Value="member this.HostingEnvironment : System.Web.Configuration.HostingEnvironmentSection" Usage="System.Web.Configuration.SystemWebSectionGroup.HostingEnvironment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::HostingEnvironmentSection ^ HostingEnvironment { System::Web::Configuration::HostingEnvironmentSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -544,6 +588,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.HttpCookiesSection HttpCookies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.HttpCookiesSection HttpCookies" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.HttpCookies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HttpCookies As HttpCookiesSection" />
+      <MemberSignature Language="F#" Value="member this.HttpCookies : System.Web.Configuration.HttpCookiesSection" Usage="System.Web.Configuration.SystemWebSectionGroup.HttpCookies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::HttpCookiesSection ^ HttpCookies { System::Web::Configuration::HttpCookiesSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -583,6 +630,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.HttpHandlersSection HttpHandlers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.HttpHandlersSection HttpHandlers" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.HttpHandlers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HttpHandlers As HttpHandlersSection" />
+      <MemberSignature Language="F#" Value="member this.HttpHandlers : System.Web.Configuration.HttpHandlersSection" Usage="System.Web.Configuration.SystemWebSectionGroup.HttpHandlers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::HttpHandlersSection ^ HttpHandlers { System::Web::Configuration::HttpHandlersSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -622,6 +672,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.HttpModulesSection HttpModules { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.HttpModulesSection HttpModules" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.HttpModules" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HttpModules As HttpModulesSection" />
+      <MemberSignature Language="F#" Value="member this.HttpModules : System.Web.Configuration.HttpModulesSection" Usage="System.Web.Configuration.SystemWebSectionGroup.HttpModules" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::HttpModulesSection ^ HttpModules { System::Web::Configuration::HttpModulesSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -661,6 +714,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.HttpRuntimeSection HttpRuntime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.HttpRuntimeSection HttpRuntime" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.HttpRuntime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HttpRuntime As HttpRuntimeSection" />
+      <MemberSignature Language="F#" Value="member this.HttpRuntime : System.Web.Configuration.HttpRuntimeSection" Usage="System.Web.Configuration.SystemWebSectionGroup.HttpRuntime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::HttpRuntimeSection ^ HttpRuntime { System::Web::Configuration::HttpRuntimeSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -700,6 +756,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.IdentitySection Identity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.IdentitySection Identity" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Identity As IdentitySection" />
+      <MemberSignature Language="F#" Value="member this.Identity : System.Web.Configuration.IdentitySection" Usage="System.Web.Configuration.SystemWebSectionGroup.Identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::IdentitySection ^ Identity { System::Web::Configuration::IdentitySection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -739,6 +798,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.MachineKeySection MachineKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.MachineKeySection MachineKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.MachineKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MachineKey As MachineKeySection" />
+      <MemberSignature Language="F#" Value="member this.MachineKey : System.Web.Configuration.MachineKeySection" Usage="System.Web.Configuration.SystemWebSectionGroup.MachineKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::MachineKeySection ^ MachineKey { System::Web::Configuration::MachineKeySection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -778,6 +840,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.MembershipSection Membership { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.MembershipSection Membership" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Membership" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Membership As MembershipSection" />
+      <MemberSignature Language="F#" Value="member this.Membership : System.Web.Configuration.MembershipSection" Usage="System.Web.Configuration.SystemWebSectionGroup.Membership" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::MembershipSection ^ Membership { System::Web::Configuration::MembershipSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -817,6 +882,9 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSection MobileControls { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationSection MobileControls" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.MobileControls" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MobileControls As ConfigurationSection" />
+      <MemberSignature Language="F#" Value="member this.MobileControls : System.Configuration.ConfigurationSection" Usage="System.Web.Configuration.SystemWebSectionGroup.MobileControls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::ConfigurationSection ^ MobileControls { System::Configuration::ConfigurationSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -854,6 +922,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.PagesSection Pages { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.PagesSection Pages" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Pages" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pages As PagesSection" />
+      <MemberSignature Language="F#" Value="member this.Pages : System.Web.Configuration.PagesSection" Usage="System.Web.Configuration.SystemWebSectionGroup.Pages" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::PagesSection ^ Pages { System::Web::Configuration::PagesSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -893,6 +964,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.PartialTrustVisibleAssembliesSection PartialTrustVisibleAssemblies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.PartialTrustVisibleAssembliesSection PartialTrustVisibleAssemblies" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.PartialTrustVisibleAssemblies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PartialTrustVisibleAssemblies As PartialTrustVisibleAssembliesSection" />
+      <MemberSignature Language="F#" Value="member this.PartialTrustVisibleAssemblies : System.Web.Configuration.PartialTrustVisibleAssembliesSection" Usage="System.Web.Configuration.SystemWebSectionGroup.PartialTrustVisibleAssemblies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::PartialTrustVisibleAssembliesSection ^ PartialTrustVisibleAssemblies { System::Web::Configuration::PartialTrustVisibleAssembliesSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -918,6 +992,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.ProcessModelSection ProcessModel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ProcessModelSection ProcessModel" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.ProcessModel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProcessModel As ProcessModelSection" />
+      <MemberSignature Language="F#" Value="member this.ProcessModel : System.Web.Configuration.ProcessModelSection" Usage="System.Web.Configuration.SystemWebSectionGroup.ProcessModel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ProcessModelSection ^ ProcessModel { System::Web::Configuration::ProcessModelSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -957,6 +1034,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.ProfileSection Profile { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.ProfileSection Profile" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Profile" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Profile As ProfileSection" />
+      <MemberSignature Language="F#" Value="member this.Profile : System.Web.Configuration.ProfileSection" Usage="System.Web.Configuration.SystemWebSectionGroup.Profile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::ProfileSection ^ Profile { System::Web::Configuration::ProfileSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -996,6 +1076,9 @@
       <MemberSignature Language="C#" Value="public System.Configuration.DefaultSection Protocols { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.DefaultSection Protocols" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Protocols" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Protocols As DefaultSection" />
+      <MemberSignature Language="F#" Value="member this.Protocols : System.Configuration.DefaultSection" Usage="System.Web.Configuration.SystemWebSectionGroup.Protocols" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::DefaultSection ^ Protocols { System::Configuration::DefaultSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1030,6 +1113,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.RoleManagerSection RoleManager { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.RoleManagerSection RoleManager" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.RoleManager" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RoleManager As RoleManagerSection" />
+      <MemberSignature Language="F#" Value="member this.RoleManager : System.Web.Configuration.RoleManagerSection" Usage="System.Web.Configuration.SystemWebSectionGroup.RoleManager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::RoleManagerSection ^ RoleManager { System::Web::Configuration::RoleManagerSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1069,6 +1155,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.SecurityPolicySection SecurityPolicy { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.SecurityPolicySection SecurityPolicy" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.SecurityPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityPolicy As SecurityPolicySection" />
+      <MemberSignature Language="F#" Value="member this.SecurityPolicy : System.Web.Configuration.SecurityPolicySection" Usage="System.Web.Configuration.SystemWebSectionGroup.SecurityPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::SecurityPolicySection ^ SecurityPolicy { System::Web::Configuration::SecurityPolicySection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1108,6 +1197,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.SessionStateSection SessionState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.SessionStateSection SessionState" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.SessionState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SessionState As SessionStateSection" />
+      <MemberSignature Language="F#" Value="member this.SessionState : System.Web.Configuration.SessionStateSection" Usage="System.Web.Configuration.SystemWebSectionGroup.SessionState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::SessionStateSection ^ SessionState { System::Web::Configuration::SessionStateSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1147,6 +1239,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.SiteMapSection SiteMap { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.SiteMapSection SiteMap" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.SiteMap" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SiteMap As SiteMapSection" />
+      <MemberSignature Language="F#" Value="member this.SiteMap : System.Web.Configuration.SiteMapSection" Usage="System.Web.Configuration.SystemWebSectionGroup.SiteMap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::SiteMapSection ^ SiteMap { System::Web::Configuration::SiteMapSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1186,6 +1281,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.TraceSection Trace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.TraceSection Trace" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Trace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Trace As TraceSection" />
+      <MemberSignature Language="F#" Value="member this.Trace : System.Web.Configuration.TraceSection" Usage="System.Web.Configuration.SystemWebSectionGroup.Trace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::TraceSection ^ Trace { System::Web::Configuration::TraceSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1225,6 +1323,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.TrustSection Trust { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.TrustSection Trust" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.Trust" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Trust As TrustSection" />
+      <MemberSignature Language="F#" Value="member this.Trust : System.Web.Configuration.TrustSection" Usage="System.Web.Configuration.SystemWebSectionGroup.Trust" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::TrustSection ^ Trust { System::Web::Configuration::TrustSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1264,6 +1365,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.UrlMappingsSection UrlMappings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.UrlMappingsSection UrlMappings" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.UrlMappings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UrlMappings As UrlMappingsSection" />
+      <MemberSignature Language="F#" Value="member this.UrlMappings : System.Web.Configuration.UrlMappingsSection" Usage="System.Web.Configuration.SystemWebSectionGroup.UrlMappings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::UrlMappingsSection ^ UrlMappings { System::Web::Configuration::UrlMappingsSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1298,6 +1402,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.WebControlsSection WebControls { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.WebControlsSection WebControls" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.WebControls" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebControls As WebControlsSection" />
+      <MemberSignature Language="F#" Value="member this.WebControls : System.Web.Configuration.WebControlsSection" Usage="System.Web.Configuration.SystemWebSectionGroup.WebControls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::WebControlsSection ^ WebControls { System::Web::Configuration::WebControlsSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1332,6 +1439,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.WebPartsSection WebParts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.WebPartsSection WebParts" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.WebParts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebParts As WebPartsSection" />
+      <MemberSignature Language="F#" Value="member this.WebParts : System.Web.Configuration.WebPartsSection" Usage="System.Web.Configuration.SystemWebSectionGroup.WebParts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::WebPartsSection ^ WebParts { System::Web::Configuration::WebPartsSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1366,6 +1476,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Configuration.WebServicesSection WebServices { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Configuration.WebServicesSection WebServices" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.WebServices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebServices As WebServicesSection" />
+      <MemberSignature Language="F#" Value="member this.WebServices : System.Web.Services.Configuration.WebServicesSection" Usage="System.Web.Configuration.SystemWebSectionGroup.WebServices" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Configuration::WebServicesSection ^ WebServices { System::Web::Services::Configuration::WebServicesSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1399,6 +1512,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.XhtmlConformanceSection XhtmlConformance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.XhtmlConformanceSection XhtmlConformance" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.SystemWebSectionGroup.XhtmlConformance" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XhtmlConformance As XhtmlConformanceSection" />
+      <MemberSignature Language="F#" Value="member this.XhtmlConformance : System.Web.Configuration.XhtmlConformanceSection" Usage="System.Web.Configuration.SystemWebSectionGroup.XhtmlConformance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::XhtmlConformanceSection ^ XhtmlConformance { System::Web::Configuration::XhtmlConformanceSection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

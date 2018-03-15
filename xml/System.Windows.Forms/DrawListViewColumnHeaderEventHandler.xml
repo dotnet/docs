@@ -1,7 +1,10 @@
-<Type Name="DrawListViewColumnHeaderEventHandler" FullName="System.Windows.Forms.DrawListViewColumnHeaderEventHandler">
+﻿<Type Name="DrawListViewColumnHeaderEventHandler" FullName="System.Windows.Forms.DrawListViewColumnHeaderEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DrawListViewColumnHeaderEventHandler(object sender, DrawListViewColumnHeaderEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DrawListViewColumnHeaderEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawListViewColumnHeaderEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DrawListViewColumnHeaderEventHandler(sender As Object, e As DrawListViewColumnHeaderEventArgs)" />
+  <TypeSignature Language="F#" Value="type DrawListViewColumnHeaderEventHandler = delegate of obj * DrawListViewColumnHeaderEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DrawListViewColumnHeaderEventHandler(System::Object ^ sender, DrawListViewColumnHeaderEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

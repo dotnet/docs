@@ -1,7 +1,10 @@
-<Type Name="PriorityBinding" FullName="System.Windows.Data.PriorityBinding">
+﻿<Type Name="PriorityBinding" FullName="System.Windows.Data.PriorityBinding">
   <TypeSignature Language="C#" Value="public class PriorityBinding : System.Windows.Data.BindingBase, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PriorityBinding extends System.Windows.Data.BindingBase implements class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.PriorityBinding" />
+  <TypeSignature Language="VB.NET" Value="Public Class PriorityBinding&#xA;Inherits BindingBase&#xA;Implements IAddChild" />
+  <TypeSignature Language="F#" Value="type PriorityBinding = class&#xA;    inherit BindingBase&#xA;    interface IAddChild" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PriorityBinding : System::Windows::Data::BindingBase, System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +56,8 @@
       <MemberSignature Language="C#" Value="public PriorityBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.PriorityBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PriorityBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -68,6 +73,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Windows.Data.BindingBase&gt; Bindings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.Windows.Data.BindingBase&gt; Bindings" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.PriorityBinding.Bindings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bindings As Collection(Of BindingBase)" />
+      <MemberSignature Language="F#" Value="member this.Bindings : System.Collections.ObjectModel.Collection&lt;System.Windows.Data.BindingBase&gt;" Usage="System.Windows.Data.PriorityBinding.Bindings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::Windows::Data::BindingBase ^&gt; ^ Bindings { System::Collections::ObjectModel::Collection&lt;System::Windows::Data::BindingBase ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -75,7 +83,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -121,6 +129,9 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeBindings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeBindings() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.PriorityBinding.ShouldSerializeBindings" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeBindings () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeBindings : unit -&gt; bool" Usage="priorityBinding.ShouldSerializeBindings " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeBindings();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -146,7 +157,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.PriorityBinding.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -167,7 +183,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.PriorityBinding.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ text) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

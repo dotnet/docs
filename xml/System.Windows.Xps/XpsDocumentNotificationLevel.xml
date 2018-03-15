@@ -1,7 +1,10 @@
-<Type Name="XpsDocumentNotificationLevel" FullName="System.Windows.Xps.XpsDocumentNotificationLevel">
+﻿<Type Name="XpsDocumentNotificationLevel" FullName="System.Windows.Xps.XpsDocumentNotificationLevel">
   <TypeSignature Language="C#" Value="public enum XpsDocumentNotificationLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XpsDocumentNotificationLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.XpsDocumentNotificationLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XpsDocumentNotificationLevel" />
+  <TypeSignature Language="F#" Value="type XpsDocumentNotificationLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class XpsDocumentNotificationLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.XpsDocumentNotificationLevel None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.XpsDocumentNotificationLevel.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Xps.XpsDocumentNotificationLevel.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Xps.XpsDocumentNotificationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The notification status is not indicated.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="ReceiveNotificationDisabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.XpsDocumentNotificationLevel ReceiveNotificationDisabled = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.XpsDocumentNotificationLevel.ReceiveNotificationDisabled" />
+      <MemberSignature Language="VB.NET" Value="ReceiveNotificationDisabled" />
+      <MemberSignature Language="F#" Value="ReceiveNotificationDisabled = 2" Usage="System.Windows.Xps.XpsDocumentNotificationLevel.ReceiveNotificationDisabled" />
+      <MemberSignature Language="C++ CLI" Value="ReceiveNotificationDisabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Xps.XpsDocumentNotificationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Progress notifications are disabled.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="ReceiveNotificationEnabled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.XpsDocumentNotificationLevel ReceiveNotificationEnabled = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.XpsDocumentNotificationLevel.ReceiveNotificationEnabled" />
+      <MemberSignature Language="VB.NET" Value="ReceiveNotificationEnabled" />
+      <MemberSignature Language="F#" Value="ReceiveNotificationEnabled = 1" Usage="System.Windows.Xps.XpsDocumentNotificationLevel.ReceiveNotificationEnabled" />
+      <MemberSignature Language="C++ CLI" Value="ReceiveNotificationEnabled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Xps.XpsDocumentNotificationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Progress notifications are enabled.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="ToolStripItemDesignerAvailabilityAttribute" FullName="System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute">
+﻿<Type Name="ToolStripItemDesignerAvailabilityAttribute" FullName="System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute">
   <TypeSignature Language="C#" Value="public sealed class ToolStripItemDesignerAvailabilityAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ToolStripItemDesignerAvailabilityAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ToolStripItemDesignerAvailabilityAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ToolStripItemDesignerAvailabilityAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolStripItemDesignerAvailabilityAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,10 +30,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ToolStripItemDesignerAvailabilityAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripItemDesignerAvailabilityAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -46,6 +60,9 @@
       <MemberSignature Language="C#" Value="public ToolStripItemDesignerAvailabilityAttribute (System.Windows.Forms.Design.ToolStripItemDesignerAvailability visibility);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Forms.Design.ToolStripItemDesignerAvailability visibility) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.#ctor(System.Windows.Forms.Design.ToolStripItemDesignerAvailability)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (visibility As ToolStripItemDesignerAvailability)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute : System.Windows.Forms.Design.ToolStripItemDesignerAvailability -&gt; System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute" Usage="new System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute visibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripItemDesignerAvailabilityAttribute(System::Windows::Forms::Design::ToolStripItemDesignerAvailability visibility);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +81,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute Default" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As ToolStripItemDesignerAvailabilityAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute" Usage="System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Forms::Design::ToolStripItemDesignerAvailabilityAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +101,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="toolStripItemDesignerAvailabilityAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +128,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="toolStripItemDesignerAvailabilityAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -125,6 +151,9 @@
       <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.IsDefaultAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="toolStripItemDesignerAvailabilityAttribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -145,6 +174,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Design.ToolStripItemDesignerAvailability ItemAdditionVisibility { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Design.ToolStripItemDesignerAvailability ItemAdditionVisibility" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.ItemAdditionVisibility" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemAdditionVisibility As ToolStripItemDesignerAvailability" />
+      <MemberSignature Language="F#" Value="member this.ItemAdditionVisibility : System.Windows.Forms.Design.ToolStripItemDesignerAvailability" Usage="System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.ItemAdditionVisibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Design::ToolStripItemDesignerAvailability ItemAdditionVisibility { System::Windows::Forms::Design::ToolStripItemDesignerAvailability get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -159,14 +191,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

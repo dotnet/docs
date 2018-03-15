@@ -1,7 +1,10 @@
-<Type Name="BasicHttpContextBinding" FullName="System.ServiceModel.BasicHttpContextBinding">
+﻿<Type Name="BasicHttpContextBinding" FullName="System.ServiceModel.BasicHttpContextBinding">
   <TypeSignature Language="C#" Value="public class BasicHttpContextBinding : System.ServiceModel.BasicHttpBinding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BasicHttpContextBinding extends System.ServiceModel.BasicHttpBinding" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.BasicHttpContextBinding" />
+  <TypeSignature Language="VB.NET" Value="Public Class BasicHttpContextBinding&#xA;Inherits BasicHttpBinding" />
+  <TypeSignature Language="F#" Value="type BasicHttpContextBinding = class&#xA;    inherit BasicHttpBinding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BasicHttpContextBinding : System::ServiceModel::BasicHttpBinding" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +23,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.BasicHttpContextBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BasicHttpContextBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpContextBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BasicHttpContextBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +53,9 @@
       <MemberSignature Language="C#" Value="public BasicHttpContextBinding (System.ServiceModel.BasicHttpSecurityMode securityMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceModel.BasicHttpSecurityMode securityMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpContextBinding.#ctor(System.ServiceModel.BasicHttpSecurityMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (securityMode As BasicHttpSecurityMode)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.BasicHttpContextBinding : System.ServiceModel.BasicHttpSecurityMode -&gt; System.ServiceModel.BasicHttpContextBinding" Usage="new System.ServiceModel.BasicHttpContextBinding securityMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BasicHttpContextBinding(System::ServiceModel::BasicHttpSecurityMode securityMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +74,9 @@
       <MemberSignature Language="C#" Value="public BasicHttpContextBinding (string configName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string configName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpContextBinding.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (configName As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.BasicHttpContextBinding : string -&gt; System.ServiceModel.BasicHttpContextBinding" Usage="new System.ServiceModel.BasicHttpContextBinding configName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BasicHttpContextBinding(System::String ^ configName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +102,9 @@
       <MemberSignature Language="C#" Value="public bool ContextManagementEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ContextManagementEnabled" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.BasicHttpContextBinding.ContextManagementEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextManagementEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ContextManagementEnabled : bool with get, set" Usage="System.ServiceModel.BasicHttpContextBinding.ContextManagementEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ContextManagementEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -106,6 +129,9 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.BindingElementCollection CreateBindingElements ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.BindingElementCollection CreateBindingElements() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.BasicHttpContextBinding.CreateBindingElements" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateBindingElements () As BindingElementCollection" />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElements : unit -&gt; System.ServiceModel.Channels.BindingElementCollection" Usage="basicHttpContextBinding.CreateBindingElements " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElementCollection ^ CreateBindingElements();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -128,14 +154,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.BasicHttpContextBinding" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

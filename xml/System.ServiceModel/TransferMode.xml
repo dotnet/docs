@@ -1,7 +1,10 @@
-<Type Name="TransferMode" FullName="System.ServiceModel.TransferMode">
+﻿<Type Name="TransferMode" FullName="System.ServiceModel.TransferMode">
   <TypeSignature Language="C#" Value="public enum TransferMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TransferMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.TransferMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TransferMode" />
+  <TypeSignature Language="F#" Value="type TransferMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TransferMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -81,6 +84,9 @@ CustomBinding binding = new CustomBinding(encoder, transport);
       <MemberSignature Language="C#" Value="Buffered" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.TransferMode Buffered = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.TransferMode.Buffered" />
+      <MemberSignature Language="VB.NET" Value="Buffered" />
+      <MemberSignature Language="F#" Value="Buffered = 0" Usage="System.ServiceModel.TransferMode.Buffered" />
+      <MemberSignature Language="C++ CLI" Value="Buffered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -96,6 +102,7 @@ CustomBinding binding = new CustomBinding(encoder, transport);
       <ReturnValue>
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The request and response messages are both buffered.</summary>
       </Docs>
@@ -104,6 +111,9 @@ CustomBinding binding = new CustomBinding(encoder, transport);
       <MemberSignature Language="C#" Value="Streamed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.TransferMode Streamed = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.TransferMode.Streamed" />
+      <MemberSignature Language="VB.NET" Value="Streamed" />
+      <MemberSignature Language="F#" Value="Streamed = 1" Usage="System.ServiceModel.TransferMode.Streamed" />
+      <MemberSignature Language="C++ CLI" Value="Streamed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -119,6 +129,7 @@ CustomBinding binding = new CustomBinding(encoder, transport);
       <ReturnValue>
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The request and response messages are both streamed.</summary>
       </Docs>
@@ -127,6 +138,9 @@ CustomBinding binding = new CustomBinding(encoder, transport);
       <MemberSignature Language="C#" Value="StreamedRequest" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.TransferMode StreamedRequest = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.TransferMode.StreamedRequest" />
+      <MemberSignature Language="VB.NET" Value="StreamedRequest" />
+      <MemberSignature Language="F#" Value="StreamedRequest = 2" Usage="System.ServiceModel.TransferMode.StreamedRequest" />
+      <MemberSignature Language="C++ CLI" Value="StreamedRequest" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -142,6 +156,7 @@ CustomBinding binding = new CustomBinding(encoder, transport);
       <ReturnValue>
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The request message is streamed and the response message is buffered.</summary>
       </Docs>
@@ -150,6 +165,9 @@ CustomBinding binding = new CustomBinding(encoder, transport);
       <MemberSignature Language="C#" Value="StreamedResponse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.TransferMode StreamedResponse = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.TransferMode.StreamedResponse" />
+      <MemberSignature Language="VB.NET" Value="StreamedResponse" />
+      <MemberSignature Language="F#" Value="StreamedResponse = 3" Usage="System.ServiceModel.TransferMode.StreamedResponse" />
+      <MemberSignature Language="C++ CLI" Value="StreamedResponse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -165,6 +183,7 @@ CustomBinding binding = new CustomBinding(encoder, transport);
       <ReturnValue>
         <ReturnType>System.ServiceModel.TransferMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The request message is buffered and the response message is streamed.</summary>
       </Docs>

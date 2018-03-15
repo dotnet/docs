@@ -1,7 +1,10 @@
-<Type Name="IPHostEntry" FullName="System.Net.IPHostEntry">
+﻿<Type Name="IPHostEntry" FullName="System.Net.IPHostEntry">
   <TypeSignature Language="C#" Value="public class IPHostEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IPHostEntry extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.IPHostEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Class IPHostEntry" />
+  <TypeSignature Language="F#" Value="type IPHostEntry = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IPHostEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NameResolution</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +51,8 @@
       <MemberSignature Language="C#" Value="public IPHostEntry ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.IPHostEntry.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IPHostEntry();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NameResolution</AssemblyName>
@@ -73,6 +78,9 @@
       <MemberSignature Language="C#" Value="public System.Net.IPAddress[] AddressList { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.IPAddress[] AddressList" />
       <MemberSignature Language="DocId" Value="P:System.Net.IPHostEntry.AddressList" />
+      <MemberSignature Language="VB.NET" Value="Public Property AddressList As IPAddress()" />
+      <MemberSignature Language="F#" Value="member this.AddressList : System.Net.IPAddress[] with get, set" Usage="System.Net.IPHostEntry.AddressList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Net::IPAddress ^&gt; ^ AddressList { cli::array &lt;System::Net::IPAddress ^&gt; ^ get(); void set(cli::array &lt;System::Net::IPAddress ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NameResolution</AssemblyName>
@@ -112,6 +120,9 @@
       <MemberSignature Language="C#" Value="public string[] Aliases { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] Aliases" />
       <MemberSignature Language="DocId" Value="P:System.Net.IPHostEntry.Aliases" />
+      <MemberSignature Language="VB.NET" Value="Public Property Aliases As String()" />
+      <MemberSignature Language="F#" Value="member this.Aliases : string[] with get, set" Usage="System.Net.IPHostEntry.Aliases" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ Aliases { cli::array &lt;System::String ^&gt; ^ get(); void set(cli::array &lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NameResolution</AssemblyName>
@@ -140,6 +151,9 @@
       <MemberSignature Language="C#" Value="public string HostName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HostName" />
       <MemberSignature Language="DocId" Value="P:System.Net.IPHostEntry.HostName" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostName As String" />
+      <MemberSignature Language="F#" Value="member this.HostName : string with get, set" Usage="System.Net.IPHostEntry.HostName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HostName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NameResolution</AssemblyName>

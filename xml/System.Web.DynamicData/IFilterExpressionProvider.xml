@@ -1,7 +1,10 @@
-<Type Name="IFilterExpressionProvider" FullName="System.Web.DynamicData.IFilterExpressionProvider">
+﻿<Type Name="IFilterExpressionProvider" FullName="System.Web.DynamicData.IFilterExpressionProvider">
   <TypeSignature Language="C#" Value="public interface IFilterExpressionProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFilterExpressionProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.IFilterExpressionProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFilterExpressionProvider" />
+  <TypeSignature Language="F#" Value="type IFilterExpressionProvider = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IFilterExpressionProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +19,9 @@
       <MemberSignature Language="C#" Value="public System.Linq.IQueryable GetQueryable (System.Linq.IQueryable source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.IQueryable GetQueryable(class System.Linq.IQueryable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.IFilterExpressionProvider.GetQueryable(System.Linq.IQueryable)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetQueryable (source As IQueryable) As IQueryable" />
+      <MemberSignature Language="F#" Value="abstract member GetQueryable : System.Linq.IQueryable -&gt; System.Linq.IQueryable" Usage="iFilterExpressionProvider.GetQueryable source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::IQueryable ^ GetQueryable(System::Linq::IQueryable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -38,6 +44,9 @@
       <MemberSignature Language="C#" Value="public void Initialize (System.Web.UI.WebControls.IQueryableDataSource dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class System.Web.UI.WebControls.IQueryableDataSource dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.IFilterExpressionProvider.Initialize(System.Web.UI.WebControls.IQueryableDataSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (dataSource As IQueryableDataSource)" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : System.Web.UI.WebControls.IQueryableDataSource -&gt; unit" Usage="iFilterExpressionProvider.Initialize dataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::Web::UI::WebControls::IQueryableDataSource ^ dataSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

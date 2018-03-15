@@ -1,7 +1,10 @@
-<Type Name="SweepDirection" FullName="System.Windows.Media.SweepDirection">
+﻿<Type Name="SweepDirection" FullName="System.Windows.Media.SweepDirection">
   <TypeSignature Language="C#" Value="public enum SweepDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SweepDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.SweepDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SweepDirection" />
+  <TypeSignature Language="F#" Value="type SweepDirection = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SweepDirection" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="Clockwise" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.SweepDirection Clockwise = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.SweepDirection.Clockwise" />
+      <MemberSignature Language="VB.NET" Value="Clockwise" />
+      <MemberSignature Language="F#" Value="Clockwise = 1" Usage="System.Windows.Media.SweepDirection.Clockwise" />
+      <MemberSignature Language="C++ CLI" Value="Clockwise" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -27,6 +33,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.SweepDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that arcs are drawn in a clockwise (positive-angle) direction.</summary>
       </Docs>
@@ -35,6 +42,9 @@
       <MemberSignature Language="C#" Value="Counterclockwise" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.SweepDirection Counterclockwise = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.SweepDirection.Counterclockwise" />
+      <MemberSignature Language="VB.NET" Value="Counterclockwise" />
+      <MemberSignature Language="F#" Value="Counterclockwise = 0" Usage="System.Windows.Media.SweepDirection.Counterclockwise" />
+      <MemberSignature Language="C++ CLI" Value="Counterclockwise" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.SweepDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that arcs are drawn in a counter clockwise (negative-angle) direction.</summary>
       </Docs>

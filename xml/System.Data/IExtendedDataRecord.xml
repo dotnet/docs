@@ -1,7 +1,10 @@
-<Type Name="IExtendedDataRecord" FullName="System.Data.IExtendedDataRecord">
+﻿<Type Name="IExtendedDataRecord" FullName="System.Data.IExtendedDataRecord">
   <TypeSignature Language="C#" Value="public interface IExtendedDataRecord : System.Data.IDataRecord" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExtendedDataRecord implements class System.Data.IDataRecord" />
   <TypeSignature Language="DocId" Value="T:System.Data.IExtendedDataRecord" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IExtendedDataRecord&#xA;Implements IDataRecord" />
+  <TypeSignature Language="F#" Value="type IExtendedDataRecord = interface&#xA;    interface IDataRecord" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IExtendedDataRecord : System::Data::IDataRecord" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DataRecordInfo DataRecordInfo { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DataRecordInfo DataRecordInfo" />
       <MemberSignature Language="DocId" Value="P:System.Data.IExtendedDataRecord.DataRecordInfo" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataRecordInfo As DataRecordInfo" />
+      <MemberSignature Language="F#" Value="member this.DataRecordInfo : System.Data.Common.DataRecordInfo" Usage="System.Data.IExtendedDataRecord.DataRecordInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DataRecordInfo ^ DataRecordInfo { System::Data::Common::DataRecordInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -38,6 +44,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DbDataReader GetDataReader (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Common.DbDataReader GetDataReader(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IExtendedDataRecord.GetDataReader(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDataReader (i As Integer) As DbDataReader" />
+      <MemberSignature Language="F#" Value="abstract member GetDataReader : int -&gt; System.Data.Common.DbDataReader" Usage="iExtendedDataRecord.GetDataReader i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbDataReader ^ GetDataReader(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -60,6 +69,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DbDataRecord GetDataRecord (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.Common.DbDataRecord GetDataRecord(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.IExtendedDataRecord.GetDataRecord(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDataRecord (i As Integer) As DbDataRecord" />
+      <MemberSignature Language="F#" Value="abstract member GetDataRecord : int -&gt; System.Data.Common.DbDataRecord" Usage="iExtendedDataRecord.GetDataRecord i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbDataRecord ^ GetDataRecord(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

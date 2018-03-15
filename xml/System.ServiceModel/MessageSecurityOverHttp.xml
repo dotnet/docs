@@ -1,7 +1,10 @@
-<Type Name="MessageSecurityOverHttp" FullName="System.ServiceModel.MessageSecurityOverHttp">
+﻿<Type Name="MessageSecurityOverHttp" FullName="System.ServiceModel.MessageSecurityOverHttp">
   <TypeSignature Language="C#" Value="public class MessageSecurityOverHttp" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageSecurityOverHttp extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageSecurityOverHttp" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageSecurityOverHttp" />
+  <TypeSignature Language="F#" Value="type MessageSecurityOverHttp = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageSecurityOverHttp" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public MessageSecurityOverHttp ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageSecurityOverHttp.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageSecurityOverHttp();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityAlgorithmSuite AlgorithmSuite { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityAlgorithmSuite AlgorithmSuite" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlgorithmSuite As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="member this.AlgorithmSuite : System.ServiceModel.Security.SecurityAlgorithmSuite with get, set" Usage="System.ServiceModel.MessageSecurityOverHttp.AlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityAlgorithmSuite ^ AlgorithmSuite { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); void set(System::ServiceModel::Security::SecurityAlgorithmSuite ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -75,6 +83,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.MessageCredentialType ClientCredentialType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.MessageCredentialType ClientCredentialType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientCredentialType As MessageCredentialType" />
+      <MemberSignature Language="F#" Value="member this.ClientCredentialType : System.ServiceModel.MessageCredentialType with get, set" Usage="System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MessageCredentialType ClientCredentialType { System::ServiceModel::MessageCredentialType get(); void set(System::ServiceModel::MessageCredentialType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,6 +129,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool IsSecureConversationEnabled ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool IsSecureConversationEnabled() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageSecurityOverHttp.IsSecureConversationEnabled" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function IsSecureConversationEnabled () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsSecureConversationEnabled : unit -&gt; bool&#xA;override this.IsSecureConversationEnabled : unit -&gt; bool" Usage="messageSecurityOverHttp.IsSecureConversationEnabled " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool IsSecureConversationEnabled();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -137,6 +151,9 @@
       <MemberSignature Language="C#" Value="public bool NegotiateServiceCredential { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NegotiateServiceCredential" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential" />
+      <MemberSignature Language="VB.NET" Value="Public Property NegotiateServiceCredential As Boolean" />
+      <MemberSignature Language="F#" Value="member this.NegotiateServiceCredential : bool with get, set" Usage="System.ServiceModel.MessageSecurityOverHttp.NegotiateServiceCredential" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool NegotiateServiceCredential { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -179,6 +196,9 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeAlgorithmSuite ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeAlgorithmSuite() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageSecurityOverHttp.ShouldSerializeAlgorithmSuite" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeAlgorithmSuite () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeAlgorithmSuite : unit -&gt; bool" Usage="messageSecurityOverHttp.ShouldSerializeAlgorithmSuite " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeAlgorithmSuite();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -204,6 +224,9 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeClientCredentialType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeClientCredentialType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageSecurityOverHttp.ShouldSerializeClientCredentialType" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeClientCredentialType () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeClientCredentialType : unit -&gt; bool" Usage="messageSecurityOverHttp.ShouldSerializeClientCredentialType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeClientCredentialType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -229,6 +252,9 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeNegotiateServiceCredential ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeNegotiateServiceCredential() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageSecurityOverHttp.ShouldSerializeNegotiateServiceCredential" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeNegotiateServiceCredential () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeNegotiateServiceCredential : unit -&gt; bool" Usage="messageSecurityOverHttp.ShouldSerializeNegotiateServiceCredential " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeNegotiateServiceCredential();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

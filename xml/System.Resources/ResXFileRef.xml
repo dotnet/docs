@@ -1,7 +1,10 @@
-<Type Name="ResXFileRef" FullName="System.Resources.ResXFileRef">
+﻿<Type Name="ResXFileRef" FullName="System.Resources.ResXFileRef">
   <TypeSignature Language="C#" Value="public class ResXFileRef" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ResXFileRef extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXFileRef" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResXFileRef" />
+  <TypeSignature Language="F#" Value="type ResXFileRef = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResXFileRef" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,10 +50,22 @@
     <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This class cannot be used by partially trusted code.</permission>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXFileRef" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ResXFileRef (string fileName, string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXFileRef.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, typeName As String)" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXFileRef : string * string -&gt; System.Resources.ResXFileRef" Usage="new System.Resources.ResXFileRef (fileName, typeName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXFileRef(System::String ^ fileName, System::String ^ typeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +96,9 @@
       <MemberSignature Language="C#" Value="public ResXFileRef (string fileName, string typeName, System.Text.Encoding textFileEncoding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, string typeName, class System.Text.Encoding textFileEncoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXFileRef.#ctor(System.String,System.String,System.Text.Encoding)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, typeName As String, textFileEncoding As Encoding)" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResXFileRef : string * string * System.Text.Encoding -&gt; System.Resources.ResXFileRef" Usage="new System.Resources.ResXFileRef (fileName, typeName, textFileEncoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResXFileRef(System::String ^ fileName, System::String ^ typeName, System::Text::Encoding ^ textFileEncoding);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -111,6 +129,9 @@
       <MemberSignature Language="C#" Value="public string FileName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:System.Resources.ResXFileRef.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FileName As String" />
+      <MemberSignature Language="F#" Value="member this.FileName : string" Usage="System.Resources.ResXFileRef.FileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FileName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +150,9 @@
       <MemberSignature Language="C#" Value="public System.Text.Encoding TextFileEncoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding TextFileEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Resources.ResXFileRef.TextFileEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextFileEncoding As Encoding" />
+      <MemberSignature Language="F#" Value="member this.TextFileEncoding : System.Text.Encoding" Usage="System.Resources.ResXFileRef.TextFileEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ TextFileEncoding { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -147,6 +171,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXFileRef.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="resXFileRef.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -167,6 +194,9 @@
       <MemberSignature Language="C#" Value="public string TypeName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
       <MemberSignature Language="DocId" Value="P:System.Resources.ResXFileRef.TypeName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeName As String" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string" Usage="System.Resources.ResXFileRef.TypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -181,14 +211,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXFileRef" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

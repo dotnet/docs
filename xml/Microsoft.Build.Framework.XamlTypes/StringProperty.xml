@@ -1,7 +1,10 @@
-<Type Name="StringProperty" FullName="Microsoft.Build.Framework.XamlTypes.StringProperty">
+﻿<Type Name="StringProperty" FullName="Microsoft.Build.Framework.XamlTypes.StringProperty">
   <TypeSignature Language="C#" Value="public sealed class StringProperty : Microsoft.Build.Framework.XamlTypes.BaseProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StringProperty extends Microsoft.Build.Framework.XamlTypes.BaseProperty" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.StringProperty" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StringProperty&#xA;Inherits BaseProperty" />
+  <TypeSignature Language="F#" Value="type StringProperty = class&#xA;    inherit BaseProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StringProperty sealed : Microsoft::Build::Framework::XamlTypes::BaseProperty" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public StringProperty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.StringProperty.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringProperty();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public string Subtype { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Subtype" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.StringProperty.Subtype" />
+      <MemberSignature Language="VB.NET" Value="Public Property Subtype As String" />
+      <MemberSignature Language="F#" Value="member this.Subtype : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.StringProperty.Subtype" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subtype { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

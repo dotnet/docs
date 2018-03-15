@@ -1,7 +1,10 @@
-<Type Name="IssuedTokenParametersEndpointAddressElement" FullName="System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement">
+﻿<Type Name="IssuedTokenParametersEndpointAddressElement" FullName="System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement">
   <TypeSignature Language="C#" Value="public sealed class IssuedTokenParametersEndpointAddressElement : System.ServiceModel.Configuration.EndpointAddressElementBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IssuedTokenParametersEndpointAddressElement extends System.ServiceModel.Configuration.EndpointAddressElementBase" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IssuedTokenParametersEndpointAddressElement&#xA;Inherits EndpointAddressElementBase" />
+  <TypeSignature Language="F#" Value="type IssuedTokenParametersEndpointAddressElement = class&#xA;    inherit EndpointAddressElementBase&#xA;    interface IConfigurationContextProviderInternal" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IssuedTokenParametersEndpointAddressElement sealed : System::ServiceModel::Configuration::EndpointAddressElementBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public IssuedTokenParametersEndpointAddressElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IssuedTokenParametersEndpointAddressElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public string Binding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Binding" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement.Binding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Binding As String" />
+      <MemberSignature Language="F#" Value="member this.Binding : string with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement.Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Binding { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +75,9 @@
       <MemberSignature Language="C#" Value="public string BindingConfiguration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BindingConfiguration" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement.BindingConfiguration" />
+      <MemberSignature Language="VB.NET" Value="Public Property BindingConfiguration As String" />
+      <MemberSignature Language="F#" Value="member this.BindingConfiguration : string with get, set" Usage="System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement.BindingConfiguration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BindingConfiguration { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -100,6 +111,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.IssuedTokenParametersEndpointAddressElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="PluralizationService" FullName="System.Data.Entity.Design.PluralizationServices.PluralizationService">
+﻿<Type Name="PluralizationService" FullName="System.Data.Entity.Design.PluralizationServices.PluralizationService">
   <TypeSignature Language="C#" Value="public abstract class PluralizationService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PluralizationService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.PluralizationServices.PluralizationService" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PluralizationService" />
+  <TypeSignature Language="F#" Value="type PluralizationService = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PluralizationService abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="protected PluralizationService ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.PluralizationServices.PluralizationService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PluralizationService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Entity.Design.PluralizationServices.PluralizationService CreateService (System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Entity.Design.PluralizationServices.PluralizationService CreateService(class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.PluralizationServices.PluralizationService.CreateService(System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateService (culture As CultureInfo) As PluralizationService" />
+      <MemberSignature Language="F#" Value="static member CreateService : System.Globalization.CultureInfo -&gt; System.Data.Entity.Design.PluralizationServices.PluralizationService" Usage="System.Data.Entity.Design.PluralizationServices.PluralizationService.CreateService culture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Entity::Design::PluralizationServices::PluralizationService ^ CreateService(System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -70,6 +78,9 @@
       <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo Culture { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo Culture" />
       <MemberSignature Language="DocId" Value="P:System.Data.Entity.Design.PluralizationServices.PluralizationService.Culture" />
+      <MemberSignature Language="VB.NET" Value="Public Property Culture As CultureInfo" />
+      <MemberSignature Language="F#" Value="member this.Culture : System.Globalization.CultureInfo with get, set" Usage="System.Data.Entity.Design.PluralizationServices.PluralizationService.Culture" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Globalization::CultureInfo ^ Culture {  public:&#xA;System::Globalization::CultureInfo ^ get(); protected:&#xA; void set(System::Globalization::CultureInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -95,6 +106,9 @@
       <MemberSignature Language="C#" Value="public abstract bool IsPlural (string word);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsPlural(string word) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.PluralizationServices.PluralizationService.IsPlural(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsPlural (word As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsPlural : string -&gt; bool" Usage="pluralizationService.IsPlural word" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsPlural(System::String ^ word);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -127,6 +141,9 @@
       <MemberSignature Language="C#" Value="public abstract bool IsSingular (string word);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSingular(string word) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.PluralizationServices.PluralizationService.IsSingular(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsSingular (word As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsSingular : string -&gt; bool" Usage="pluralizationService.IsSingular word" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsSingular(System::String ^ word);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -159,6 +176,9 @@
       <MemberSignature Language="C#" Value="public abstract string Pluralize (string word);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Pluralize(string word) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.PluralizationServices.PluralizationService.Pluralize(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Pluralize (word As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member Pluralize : string -&gt; string" Usage="pluralizationService.Pluralize word" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ Pluralize(System::String ^ word);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -188,6 +208,9 @@
       <MemberSignature Language="C#" Value="public abstract string Singularize (string word);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Singularize(string word) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Entity.Design.PluralizationServices.PluralizationService.Singularize(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Singularize (word As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member Singularize : string -&gt; string" Usage="pluralizationService.Singularize word" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ Singularize(System::String ^ word);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>

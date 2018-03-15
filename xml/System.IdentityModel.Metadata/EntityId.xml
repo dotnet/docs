@@ -1,7 +1,10 @@
-<Type Name="EntityId" FullName="System.IdentityModel.Metadata.EntityId">
+﻿<Type Name="EntityId" FullName="System.IdentityModel.Metadata.EntityId">
   <TypeSignature Language="C#" Value="public class EntityId" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityId extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.EntityId" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityId" />
+  <TypeSignature Language="F#" Value="type EntityId = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityId" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.EntityId" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EntityId ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.EntityId.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityId();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -41,6 +55,9 @@
       <MemberSignature Language="C#" Value="public EntityId (string id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.EntityId.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (id As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Metadata.EntityId : string -&gt; System.IdentityModel.Metadata.EntityId" Usage="new System.IdentityModel.Metadata.EntityId id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityId(System::String ^ id);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -59,6 +76,9 @@
       <MemberSignature Language="C#" Value="public string Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Metadata.EntityId.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="System.IdentityModel.Metadata.EntityId.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -74,14 +94,5 @@
         <exception cref="T:System.ArgumentException">An attempt to set an entity ID longer than 1024 characters occurs.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Metadata.EntityId" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

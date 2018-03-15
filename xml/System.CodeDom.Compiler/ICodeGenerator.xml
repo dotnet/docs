@@ -1,7 +1,10 @@
-<Type Name="ICodeGenerator" FullName="System.CodeDom.Compiler.ICodeGenerator">
+﻿<Type Name="ICodeGenerator" FullName="System.CodeDom.Compiler.ICodeGenerator">
   <TypeSignature Language="C#" Value="public interface ICodeGenerator" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICodeGenerator" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.ICodeGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICodeGenerator" />
+  <TypeSignature Language="F#" Value="type ICodeGenerator = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICodeGenerator" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="public string CreateEscapedIdentifier (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string CreateEscapedIdentifier(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeGenerator.CreateEscapedIdentifier(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateEscapedIdentifier (value As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member CreateEscapedIdentifier : string -&gt; string" Usage="iCodeGenerator.CreateEscapedIdentifier value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ CreateEscapedIdentifier(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,6 +75,9 @@
       <MemberSignature Language="C#" Value="public string CreateValidIdentifier (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string CreateValidIdentifier(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeGenerator.CreateValidIdentifier(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateValidIdentifier (value As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member CreateValidIdentifier : string -&gt; string" Usage="iCodeGenerator.CreateValidIdentifier value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ CreateValidIdentifier(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -105,6 +114,9 @@
       <MemberSignature Language="C#" Value="public void GenerateCodeFromCompileUnit (System.CodeDom.CodeCompileUnit e, System.IO.TextWriter w, System.CodeDom.Compiler.CodeGeneratorOptions o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateCodeFromCompileUnit(class System.CodeDom.CodeCompileUnit e, class System.IO.TextWriter w, class System.CodeDom.Compiler.CodeGeneratorOptions o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromCompileUnit(System.CodeDom.CodeCompileUnit,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GenerateCodeFromCompileUnit (e As CodeCompileUnit, w As TextWriter, o As CodeGeneratorOptions)" />
+      <MemberSignature Language="F#" Value="abstract member GenerateCodeFromCompileUnit : System.CodeDom.CodeCompileUnit * System.IO.TextWriter * System.CodeDom.Compiler.CodeGeneratorOptions -&gt; unit" Usage="iCodeGenerator.GenerateCodeFromCompileUnit (e, w, o)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GenerateCodeFromCompileUnit(System::CodeDom::CodeCompileUnit ^ e, System::IO::TextWriter ^ w, System::CodeDom::Compiler::CodeGeneratorOptions ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -139,6 +151,9 @@
       <MemberSignature Language="C#" Value="public void GenerateCodeFromExpression (System.CodeDom.CodeExpression e, System.IO.TextWriter w, System.CodeDom.Compiler.CodeGeneratorOptions o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateCodeFromExpression(class System.CodeDom.CodeExpression e, class System.IO.TextWriter w, class System.CodeDom.Compiler.CodeGeneratorOptions o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromExpression(System.CodeDom.CodeExpression,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GenerateCodeFromExpression (e As CodeExpression, w As TextWriter, o As CodeGeneratorOptions)" />
+      <MemberSignature Language="F#" Value="abstract member GenerateCodeFromExpression : System.CodeDom.CodeExpression * System.IO.TextWriter * System.CodeDom.Compiler.CodeGeneratorOptions -&gt; unit" Usage="iCodeGenerator.GenerateCodeFromExpression (e, w, o)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GenerateCodeFromExpression(System::CodeDom::CodeExpression ^ e, System::IO::TextWriter ^ w, System::CodeDom::Compiler::CodeGeneratorOptions ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -173,6 +188,9 @@
       <MemberSignature Language="C#" Value="public void GenerateCodeFromNamespace (System.CodeDom.CodeNamespace e, System.IO.TextWriter w, System.CodeDom.Compiler.CodeGeneratorOptions o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateCodeFromNamespace(class System.CodeDom.CodeNamespace e, class System.IO.TextWriter w, class System.CodeDom.Compiler.CodeGeneratorOptions o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromNamespace(System.CodeDom.CodeNamespace,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GenerateCodeFromNamespace (e As CodeNamespace, w As TextWriter, o As CodeGeneratorOptions)" />
+      <MemberSignature Language="F#" Value="abstract member GenerateCodeFromNamespace : System.CodeDom.CodeNamespace * System.IO.TextWriter * System.CodeDom.Compiler.CodeGeneratorOptions -&gt; unit" Usage="iCodeGenerator.GenerateCodeFromNamespace (e, w, o)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GenerateCodeFromNamespace(System::CodeDom::CodeNamespace ^ e, System::IO::TextWriter ^ w, System::CodeDom::Compiler::CodeGeneratorOptions ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -207,6 +225,9 @@
       <MemberSignature Language="C#" Value="public void GenerateCodeFromStatement (System.CodeDom.CodeStatement e, System.IO.TextWriter w, System.CodeDom.Compiler.CodeGeneratorOptions o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateCodeFromStatement(class System.CodeDom.CodeStatement e, class System.IO.TextWriter w, class System.CodeDom.Compiler.CodeGeneratorOptions o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromStatement(System.CodeDom.CodeStatement,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GenerateCodeFromStatement (e As CodeStatement, w As TextWriter, o As CodeGeneratorOptions)" />
+      <MemberSignature Language="F#" Value="abstract member GenerateCodeFromStatement : System.CodeDom.CodeStatement * System.IO.TextWriter * System.CodeDom.Compiler.CodeGeneratorOptions -&gt; unit" Usage="iCodeGenerator.GenerateCodeFromStatement (e, w, o)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GenerateCodeFromStatement(System::CodeDom::CodeStatement ^ e, System::IO::TextWriter ^ w, System::CodeDom::Compiler::CodeGeneratorOptions ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -241,6 +262,9 @@
       <MemberSignature Language="C#" Value="public void GenerateCodeFromType (System.CodeDom.CodeTypeDeclaration e, System.IO.TextWriter w, System.CodeDom.Compiler.CodeGeneratorOptions o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateCodeFromType(class System.CodeDom.CodeTypeDeclaration e, class System.IO.TextWriter w, class System.CodeDom.Compiler.CodeGeneratorOptions o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeGenerator.GenerateCodeFromType(System.CodeDom.CodeTypeDeclaration,System.IO.TextWriter,System.CodeDom.Compiler.CodeGeneratorOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GenerateCodeFromType (e As CodeTypeDeclaration, w As TextWriter, o As CodeGeneratorOptions)" />
+      <MemberSignature Language="F#" Value="abstract member GenerateCodeFromType : System.CodeDom.CodeTypeDeclaration * System.IO.TextWriter * System.CodeDom.Compiler.CodeGeneratorOptions -&gt; unit" Usage="iCodeGenerator.GenerateCodeFromType (e, w, o)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GenerateCodeFromType(System::CodeDom::CodeTypeDeclaration ^ e, System::IO::TextWriter ^ w, System::CodeDom::Compiler::CodeGeneratorOptions ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -275,6 +299,9 @@
       <MemberSignature Language="C#" Value="public string GetTypeOutput (System.CodeDom.CodeTypeReference type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetTypeOutput(class System.CodeDom.CodeTypeReference type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeGenerator.GetTypeOutput(System.CodeDom.CodeTypeReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTypeOutput (type As CodeTypeReference) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeOutput : System.CodeDom.CodeTypeReference -&gt; string" Usage="iCodeGenerator.GetTypeOutput type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetTypeOutput(System::CodeDom::CodeTypeReference ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -303,6 +330,9 @@
       <MemberSignature Language="C#" Value="public bool IsValidIdentifier (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsValidIdentifier(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeGenerator.IsValidIdentifier(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsValidIdentifier (value As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsValidIdentifier : string -&gt; bool" Usage="iCodeGenerator.IsValidIdentifier value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsValidIdentifier(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -339,6 +369,9 @@
       <MemberSignature Language="C#" Value="public bool Supports (System.CodeDom.Compiler.GeneratorSupport supports);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Supports(valuetype System.CodeDom.Compiler.GeneratorSupport supports) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeGenerator.Supports(System.CodeDom.Compiler.GeneratorSupport)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Supports (supports As GeneratorSupport) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Supports : System.CodeDom.Compiler.GeneratorSupport -&gt; bool" Usage="iCodeGenerator.Supports supports" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Supports(System::CodeDom::Compiler::GeneratorSupport supports);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -375,6 +408,9 @@
       <MemberSignature Language="C#" Value="public void ValidateIdentifier (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ValidateIdentifier(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeGenerator.ValidateIdentifier(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ValidateIdentifier (value As String)" />
+      <MemberSignature Language="F#" Value="abstract member ValidateIdentifier : string -&gt; unit" Usage="iCodeGenerator.ValidateIdentifier value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ValidateIdentifier(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

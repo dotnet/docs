@@ -1,7 +1,10 @@
-<Type Name="MimeParameterWriter" FullName="System.Web.Services.Protocols.MimeParameterWriter">
+﻿<Type Name="MimeParameterWriter" FullName="System.Web.Services.Protocols.MimeParameterWriter">
   <TypeSignature Language="C#" Value="public abstract class MimeParameterWriter : System.Web.Services.Protocols.MimeFormatter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MimeParameterWriter extends System.Web.Services.Protocols.MimeFormatter" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.MimeParameterWriter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MimeParameterWriter&#xA;Inherits MimeFormatter" />
+  <TypeSignature Language="F#" Value="type MimeParameterWriter = class&#xA;    inherit MimeFormatter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MimeParameterWriter abstract : System::Web::Services::Protocols::MimeFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="protected MimeParameterWriter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeParameterWriter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MimeParameterWriter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -51,6 +56,9 @@
       <MemberSignature Language="C#" Value="public virtual string GetRequestUrl (string url, object[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetRequestUrl(string url, object[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeParameterWriter.GetRequestUrl(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRequestUrl (url As String, parameters As Object()) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetRequestUrl : string * obj[] -&gt; string&#xA;override this.GetRequestUrl : string * obj[] -&gt; string" Usage="mimeParameterWriter.GetRequestUrl (url, parameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetRequestUrl(System::String ^ url, cli::array &lt;System::Object ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -83,6 +91,9 @@
       <MemberSignature Language="C#" Value="public virtual void InitializeRequest (System.Net.WebRequest request, object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeRequest(class System.Net.WebRequest request, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeParameterWriter.InitializeRequest(System.Net.WebRequest,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub InitializeRequest (request As WebRequest, values As Object())" />
+      <MemberSignature Language="F#" Value="abstract member InitializeRequest : System.Net.WebRequest * obj[] -&gt; unit&#xA;override this.InitializeRequest : System.Net.WebRequest * obj[] -&gt; unit" Usage="mimeParameterWriter.InitializeRequest (request, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InitializeRequest(System::Net::WebRequest ^ request, cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -114,6 +125,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Text.Encoding RequestEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding RequestEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.MimeParameterWriter.RequestEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property RequestEncoding As Encoding" />
+      <MemberSignature Language="F#" Value="member this.RequestEncoding : System.Text.Encoding with get, set" Usage="System.Web.Services.Protocols.MimeParameterWriter.RequestEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Text::Encoding ^ RequestEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -140,6 +154,9 @@
       <MemberSignature Language="C#" Value="public virtual bool UsesWriteRequest { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UsesWriteRequest" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.MimeParameterWriter.UsesWriteRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UsesWriteRequest As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UsesWriteRequest : bool" Usage="System.Web.Services.Protocols.MimeParameterWriter.UsesWriteRequest" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UsesWriteRequest { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -169,6 +186,9 @@
       <MemberSignature Language="C#" Value="public virtual void WriteRequest (System.IO.Stream requestStream, object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteRequest(class System.IO.Stream requestStream, object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.MimeParameterWriter.WriteRequest(System.IO.Stream,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub WriteRequest (requestStream As Stream, values As Object())" />
+      <MemberSignature Language="F#" Value="abstract member WriteRequest : System.IO.Stream * obj[] -&gt; unit&#xA;override this.WriteRequest : System.IO.Stream * obj[] -&gt; unit" Usage="mimeParameterWriter.WriteRequest (requestStream, values)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void WriteRequest(System::IO::Stream ^ requestStream, cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

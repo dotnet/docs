@@ -1,7 +1,10 @@
-<Type Name="WSHttpSecurityElement" FullName="System.ServiceModel.Configuration.WSHttpSecurityElement">
+﻿<Type Name="WSHttpSecurityElement" FullName="System.ServiceModel.Configuration.WSHttpSecurityElement">
   <TypeSignature Language="C#" Value="public sealed class WSHttpSecurityElement : System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WSHttpSecurityElement extends System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WSHttpSecurityElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WSHttpSecurityElement&#xA;Inherits ServiceModelConfigurationElement" />
+  <TypeSignature Language="F#" Value="type WSHttpSecurityElement = class&#xA;    inherit ServiceModelConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WSHttpSecurityElement sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public WSHttpSecurityElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WSHttpSecurityElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WSHttpSecurityElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -35,6 +40,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement Message" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpSecurityElement.Message" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As NonDualMessageSecurityOverHttpElement" />
+      <MemberSignature Language="F#" Value="member this.Message : System.ServiceModel.Configuration.NonDualMessageSecurityOverHttpElement" Usage="System.ServiceModel.Configuration.WSHttpSecurityElement.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::NonDualMessageSecurityOverHttpElement ^ Message { System::ServiceModel::Configuration::NonDualMessageSecurityOverHttpElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +66,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.SecurityMode Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.SecurityMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpSecurityElement.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As SecurityMode" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.SecurityMode with get, set" Usage="System.ServiceModel.Configuration.WSHttpSecurityElement.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::SecurityMode Mode { System::ServiceModel::SecurityMode get(); void set(System::ServiceModel::SecurityMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,6 +92,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpSecurityElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.WSHttpSecurityElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -99,6 +113,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.WSHttpTransportSecurityElement Transport { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.WSHttpTransportSecurityElement Transport" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WSHttpSecurityElement.Transport" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transport As WSHttpTransportSecurityElement" />
+      <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.Configuration.WSHttpTransportSecurityElement" Usage="System.ServiceModel.Configuration.WSHttpSecurityElement.Transport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::WSHttpTransportSecurityElement ^ Transport { System::ServiceModel::Configuration::WSHttpTransportSecurityElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

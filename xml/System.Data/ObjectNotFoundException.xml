@@ -1,7 +1,10 @@
-<Type Name="ObjectNotFoundException" FullName="System.Data.ObjectNotFoundException">
+﻿<Type Name="ObjectNotFoundException" FullName="System.Data.ObjectNotFoundException">
   <TypeSignature Language="C#" Value="public sealed class ObjectNotFoundException : System.Data.DataException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ObjectNotFoundException extends System.Data.DataException" />
   <TypeSignature Language="DocId" Value="T:System.Data.ObjectNotFoundException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectNotFoundException&#xA;Inherits DataException" />
+  <TypeSignature Language="F#" Value="type ObjectNotFoundException = class&#xA;    inherit DataException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectNotFoundException sealed : System::Data::DataException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public ObjectNotFoundException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ObjectNotFoundException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectNotFoundException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -65,6 +70,9 @@
       <MemberSignature Language="C#" Value="public ObjectNotFoundException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ObjectNotFoundException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.ObjectNotFoundException : string -&gt; System.Data.ObjectNotFoundException" Usage="new System.Data.ObjectNotFoundException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectNotFoundException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -90,6 +98,9 @@
       <MemberSignature Language="C#" Value="public ObjectNotFoundException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.ObjectNotFoundException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Data.ObjectNotFoundException : string * Exception -&gt; System.Data.ObjectNotFoundException" Usage="new System.Data.ObjectNotFoundException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectNotFoundException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

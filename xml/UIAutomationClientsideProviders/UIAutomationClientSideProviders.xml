@@ -1,7 +1,10 @@
-<Type Name="UIAutomationClientSideProviders" FullName="UIAutomationClientsideProviders.UIAutomationClientSideProviders">
+﻿<Type Name="UIAutomationClientSideProviders" FullName="UIAutomationClientsideProviders.UIAutomationClientSideProviders">
   <TypeSignature Language="C#" Value="public static class UIAutomationClientSideProviders" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit UIAutomationClientSideProviders extends System.Object" />
   <TypeSignature Language="DocId" Value="T:UIAutomationClientsideProviders.UIAutomationClientSideProviders" />
+  <TypeSignature Language="VB.NET" Value="Public Class UIAutomationClientSideProviders" />
+  <TypeSignature Language="F#" Value="type UIAutomationClientSideProviders = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UIAutomationClientSideProviders abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClientsideProviders</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Automation.ClientSideProviderDescription[] ClientSideProviderDescriptionTable;" />
       <MemberSignature Language="ILAsm" Value=".field public static valuetype System.Windows.Automation.ClientSideProviderDescription[] ClientSideProviderDescriptionTable" />
       <MemberSignature Language="DocId" Value="F:UIAutomationClientsideProviders.UIAutomationClientSideProviders.ClientSideProviderDescriptionTable" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ClientSideProviderDescriptionTable As ClientSideProviderDescription() " />
+      <MemberSignature Language="F#" Value=" staticval mutable ClientSideProviderDescriptionTable : System.Windows.Automation.ClientSideProviderDescription[]" Usage="UIAutomationClientsideProviders.UIAutomationClientSideProviders.ClientSideProviderDescriptionTable" />
+      <MemberSignature Language="C++ CLI" Value="public: static cli::array &lt;System::Windows::Automation::ClientSideProviderDescription&gt; ^ ClientSideProviderDescriptionTable;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClientsideProviders</AssemblyName>

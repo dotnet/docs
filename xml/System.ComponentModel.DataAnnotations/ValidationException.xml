@@ -1,7 +1,10 @@
-<Type Name="ValidationException" FullName="System.ComponentModel.DataAnnotations.ValidationException">
+﻿<Type Name="ValidationException" FullName="System.ComponentModel.DataAnnotations.ValidationException">
   <TypeSignature Language="C#" Value="public class ValidationException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ValidationException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.ValidationException" />
+  <TypeSignature Language="VB.NET" Value="Public Class ValidationException&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type ValidationException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ValidationException : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -30,10 +33,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.ValidationException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ValidationException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -62,6 +77,9 @@
       <MemberSignature Language="C#" Value="public ValidationException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.ValidationException : string -&gt; System.ComponentModel.DataAnnotations.ValidationException" Usage="new System.ComponentModel.DataAnnotations.ValidationException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -93,6 +111,9 @@
       <MemberSignature Language="C#" Value="protected ValidationException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.ValidationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ComponentModel.DataAnnotations.ValidationException" Usage="new System.ComponentModel.DataAnnotations.ValidationException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ValidationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.DataAnnotations</AssemblyName>
@@ -125,6 +146,9 @@
       <MemberSignature Language="C#" Value="public ValidationException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.ValidationException : string * Exception -&gt; System.ComponentModel.DataAnnotations.ValidationException" Usage="new System.ComponentModel.DataAnnotations.ValidationException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -158,6 +182,8 @@
       <MemberSignature Language="C#" Value="public ValidationException (System.ComponentModel.DataAnnotations.ValidationResult validationResult, System.ComponentModel.DataAnnotations.ValidationAttribute validatingAttribute, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.DataAnnotations.ValidationResult validationResult, class System.ComponentModel.DataAnnotations.ValidationAttribute validatingAttribute, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationException.#ctor(System.ComponentModel.DataAnnotations.ValidationResult,System.ComponentModel.DataAnnotations.ValidationAttribute,System.Object)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.ValidationException : System.ComponentModel.DataAnnotations.ValidationResult * System.ComponentModel.DataAnnotations.ValidationAttribute * obj -&gt; System.ComponentModel.DataAnnotations.ValidationException" Usage="new System.ComponentModel.DataAnnotations.ValidationException (validationResult, validatingAttribute, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationException(System::ComponentModel::DataAnnotations::ValidationResult ^ validationResult, System::ComponentModel::DataAnnotations::ValidationAttribute ^ validatingAttribute, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -186,6 +212,9 @@
       <MemberSignature Language="C#" Value="public ValidationException (string errorMessage, System.ComponentModel.DataAnnotations.ValidationAttribute validatingAttribute, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string errorMessage, class System.ComponentModel.DataAnnotations.ValidationAttribute validatingAttribute, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.ValidationException.#ctor(System.String,System.ComponentModel.DataAnnotations.ValidationAttribute,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (errorMessage As String, validatingAttribute As ValidationAttribute, value As Object)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.ValidationException : string * System.ComponentModel.DataAnnotations.ValidationAttribute * obj -&gt; System.ComponentModel.DataAnnotations.ValidationException" Usage="new System.ComponentModel.DataAnnotations.ValidationException (errorMessage, validatingAttribute, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationException(System::String ^ errorMessage, System::ComponentModel::DataAnnotations::ValidationAttribute ^ validatingAttribute, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -221,6 +250,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.DataAnnotations.ValidationAttribute ValidationAttribute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.DataAnnotations.ValidationAttribute ValidationAttribute" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.ValidationException.ValidationAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationAttribute As ValidationAttribute" />
+      <MemberSignature Language="F#" Value="member this.ValidationAttribute : System.ComponentModel.DataAnnotations.ValidationAttribute" Usage="System.ComponentModel.DataAnnotations.ValidationException.ValidationAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::DataAnnotations::ValidationAttribute ^ ValidationAttribute { System::ComponentModel::DataAnnotations::ValidationAttribute ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -256,6 +288,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.DataAnnotations.ValidationResult ValidationResult { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.DataAnnotations.ValidationResult ValidationResult" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.ValidationException.ValidationResult" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValidationResult As ValidationResult" />
+      <MemberSignature Language="F#" Value="member this.ValidationResult : System.ComponentModel.DataAnnotations.ValidationResult" Usage="System.ComponentModel.DataAnnotations.ValidationException.ValidationResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::DataAnnotations::ValidationResult ^ ValidationResult { System::ComponentModel::DataAnnotations::ValidationResult ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -280,6 +315,9 @@
       <MemberSignature Language="C#" Value="public object Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.ValidationException.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.ComponentModel.DataAnnotations.ValidationException.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -300,15 +338,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.ValidationException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

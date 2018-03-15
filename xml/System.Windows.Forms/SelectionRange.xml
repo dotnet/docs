@@ -1,7 +1,10 @@
-<Type Name="SelectionRange" FullName="System.Windows.Forms.SelectionRange">
+﻿<Type Name="SelectionRange" FullName="System.Windows.Forms.SelectionRange">
   <TypeSignature Language="C#" Value="public sealed class SelectionRange" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SelectionRange extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SelectionRange" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SelectionRange" />
+  <TypeSignature Language="F#" Value="type SelectionRange = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SelectionRange sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,10 +41,21 @@
     <altmember cref="T:System.DateTime" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.SelectionRange" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SelectionRange ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SelectionRange.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectionRange();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -73,6 +87,9 @@
       <MemberSignature Language="C#" Value="public SelectionRange (System.Windows.Forms.SelectionRange range);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.SelectionRange range) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SelectionRange.#ctor(System.Windows.Forms.SelectionRange)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (range As SelectionRange)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.SelectionRange : System.Windows.Forms.SelectionRange -&gt; System.Windows.Forms.SelectionRange" Usage="new System.Windows.Forms.SelectionRange range" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectionRange(System::Windows::Forms::SelectionRange ^ range);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +126,9 @@
       <MemberSignature Language="C#" Value="public SelectionRange (DateTime lower, DateTime upper);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime lower, valuetype System.DateTime upper) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SelectionRange.#ctor(System.DateTime,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (lower As DateTime, upper As DateTime)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.SelectionRange : DateTime * DateTime -&gt; System.Windows.Forms.SelectionRange" Usage="new System.Windows.Forms.SelectionRange (lower, upper)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectionRange(DateTime lower, DateTime upper);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -149,6 +169,9 @@
       <MemberSignature Language="C#" Value="public DateTime End { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime End" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SelectionRange.End" />
+      <MemberSignature Language="VB.NET" Value="Public Property End As DateTime" />
+      <MemberSignature Language="F#" Value="member this.End : DateTime with get, set" Usage="System.Windows.Forms.SelectionRange.End" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime End { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -179,6 +202,9 @@
       <MemberSignature Language="C#" Value="public DateTime Start { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Start" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SelectionRange.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Property Start As DateTime" />
+      <MemberSignature Language="F#" Value="member this.Start : DateTime with get, set" Usage="System.Windows.Forms.SelectionRange.Start" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Start { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -209,6 +235,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SelectionRange.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="selectionRange.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -231,14 +260,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.SelectionRange" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

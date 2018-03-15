@@ -1,7 +1,10 @@
-<Type Name="CLSCompliantAttribute" FullName="System.CLSCompliantAttribute">
+﻿<Type Name="CLSCompliantAttribute" FullName="System.CLSCompliantAttribute">
   <TypeSignature Language="C#" Value="public sealed class CLSCompliantAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit CLSCompliantAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.CLSCompliantAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CLSCompliantAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type CLSCompliantAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CLSCompliantAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -90,6 +93,9 @@ public int SetValue(UInt32 value);
       <MemberSignature Language="C#" Value="public CLSCompliantAttribute (bool isCompliant);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isCompliant) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CLSCompliantAttribute.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isCompliant As Boolean)" />
+      <MemberSignature Language="F#" Value="new CLSCompliantAttribute : bool -&gt; CLSCompliantAttribute" Usage="new System.CLSCompliantAttribute isCompliant" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CLSCompliantAttribute(bool isCompliant);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -122,6 +128,9 @@ public int SetValue(UInt32 value);
       <MemberSignature Language="C#" Value="public bool IsCompliant { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCompliant" />
       <MemberSignature Language="DocId" Value="P:System.CLSCompliantAttribute.IsCompliant" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompliant As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCompliant : bool" Usage="System.CLSCompliantAttribute.IsCompliant" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompliant { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

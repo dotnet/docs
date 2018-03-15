@@ -1,7 +1,10 @@
-<Type Name="XpsDocument" FullName="System.Windows.Xps.Packaging.XpsDocument">
+﻿<Type Name="XpsDocument" FullName="System.Windows.Xps.Packaging.XpsDocument">
   <TypeSignature Language="C#" Value="public class XpsDocument : System.Windows.Xps.Packaging.XpsPartBase, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsDocument extends System.Windows.Xps.Packaging.XpsPartBase implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.XpsDocument" />
+  <TypeSignature Language="VB.NET" Value="Public Class XpsDocument&#xA;Inherits XpsPartBase&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type XpsDocument = class&#xA;    inherit XpsPartBase&#xA;    interface INode&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XpsDocument : System::Windows::Xps::Packaging::XpsPartBase, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +71,8 @@
       <MemberSignature Language="C#" Value="public XpsDocument (System.IO.Packaging.Package package);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Packaging.Package package) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.#ctor(System.IO.Packaging.Package)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.Packaging.XpsDocument : System.IO.Packaging.Package -&gt; System.Windows.Xps.Packaging.XpsDocument" Usage="new System.Windows.Xps.Packaging.XpsDocument package" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsDocument(System::IO::Packaging::Package ^ package);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -101,6 +106,8 @@
       <MemberSignature Language="C#" Value="public XpsDocument (System.IO.Packaging.Package package, System.IO.Packaging.CompressionOption compressionOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Packaging.Package package, valuetype System.IO.Packaging.CompressionOption compressionOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.#ctor(System.IO.Packaging.Package,System.IO.Packaging.CompressionOption)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.Packaging.XpsDocument : System.IO.Packaging.Package * System.IO.Packaging.CompressionOption -&gt; System.Windows.Xps.Packaging.XpsDocument" Usage="new System.Windows.Xps.Packaging.XpsDocument (package, compressionOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsDocument(System::IO::Packaging::Package ^ package, System::IO::Packaging::CompressionOption compressionOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -136,6 +143,9 @@
       <MemberSignature Language="C#" Value="public XpsDocument (string path, System.IO.FileAccess packageAccess);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.IO.FileAccess packageAccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.#ctor(System.String,System.IO.FileAccess)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (path As String, packageAccess As FileAccess)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.Packaging.XpsDocument : string * System.IO.FileAccess -&gt; System.Windows.Xps.Packaging.XpsDocument" Usage="new System.Windows.Xps.Packaging.XpsDocument (path, packageAccess)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsDocument(System::String ^ path, System::IO::FileAccess packageAccess);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -171,6 +181,8 @@
       <MemberSignature Language="C#" Value="public XpsDocument (System.IO.Packaging.Package package, System.IO.Packaging.CompressionOption compressionOption, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Packaging.Package package, valuetype System.IO.Packaging.CompressionOption compressionOption, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.#ctor(System.IO.Packaging.Package,System.IO.Packaging.CompressionOption,System.String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.Packaging.XpsDocument : System.IO.Packaging.Package * System.IO.Packaging.CompressionOption * string -&gt; System.Windows.Xps.Packaging.XpsDocument" Usage="new System.Windows.Xps.Packaging.XpsDocument (package, compressionOption, path)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsDocument(System::IO::Packaging::Package ^ package, System::IO::Packaging::CompressionOption compressionOption, System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -208,6 +220,8 @@
       <MemberSignature Language="C#" Value="public XpsDocument (string path, System.IO.FileAccess packageAccess, System.IO.Packaging.CompressionOption compressionOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string path, valuetype System.IO.FileAccess packageAccess, valuetype System.IO.Packaging.CompressionOption compressionOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.#ctor(System.String,System.IO.FileAccess,System.IO.Packaging.CompressionOption)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.Packaging.XpsDocument : string * System.IO.FileAccess * System.IO.Packaging.CompressionOption -&gt; System.Windows.Xps.Packaging.XpsDocument" Usage="new System.Windows.Xps.Packaging.XpsDocument (path, packageAccess, compressionOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsDocument(System::String ^ path, System::IO::FileAccess packageAccess, System::IO::Packaging::CompressionOption compressionOption);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -245,6 +259,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter AddFixedDocumentSequence ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter AddFixedDocumentSequence() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.AddFixedDocumentSequence" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddFixedDocumentSequence () As IXpsFixedDocumentSequenceWriter" />
+      <MemberSignature Language="F#" Value="member this.AddFixedDocumentSequence : unit -&gt; System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceWriter" Usage="xpsDocument.AddFixedDocumentSequence " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::IXpsFixedDocumentSequenceWriter ^ AddFixedDocumentSequence();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -281,6 +298,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.XpsThumbnail AddThumbnail (System.Windows.Xps.Packaging.XpsImageType imageType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Xps.Packaging.XpsThumbnail AddThumbnail(valuetype System.Windows.Xps.Packaging.XpsImageType imageType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.AddThumbnail(System.Windows.Xps.Packaging.XpsImageType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddThumbnail (imageType As XpsImageType) As XpsThumbnail" />
+      <MemberSignature Language="F#" Value="member this.AddThumbnail : System.Windows.Xps.Packaging.XpsImageType -&gt; System.Windows.Xps.Packaging.XpsThumbnail" Usage="xpsDocument.AddThumbnail imageType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::XpsThumbnail ^ AddThumbnail(System::Windows::Xps::Packaging::XpsImageType imageType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -303,6 +323,9 @@
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="F#" Value="member this.Close : unit -&gt; unit" Usage="xpsDocument.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -343,6 +366,9 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.PackageProperties CoreDocumentProperties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Packaging.PackageProperties CoreDocumentProperties" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDocument.CoreDocumentProperties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CoreDocumentProperties As PackageProperties" />
+      <MemberSignature Language="F#" Value="member this.CoreDocumentProperties : System.IO.Packaging.PackageProperties" Usage="System.Windows.Xps.Packaging.XpsDocument.CoreDocumentProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Packaging::PackageProperties ^ CoreDocumentProperties { System::IO::Packaging::PackageProperties ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -361,6 +387,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter (System.Windows.Xps.Packaging.XpsDocument xpsDocument);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Xps.XpsDocumentWriter CreateXpsDocumentWriter(class System.Windows.Xps.Packaging.XpsDocument xpsDocument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.CreateXpsDocumentWriter(System.Windows.Xps.Packaging.XpsDocument)" />
+      <MemberSignature Language="F#" Value="static member CreateXpsDocumentWriter : System.Windows.Xps.Packaging.XpsDocument -&gt; System.Windows.Xps.XpsDocumentWriter" Usage="System.Windows.Xps.Packaging.XpsDocument.CreateXpsDocumentWriter xpsDocument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Xps::XpsDocumentWriter ^ CreateXpsDocumentWriter(System::Windows::Xps::Packaging::XpsDocument ^ xpsDocument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -392,6 +420,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="xpsDocument.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -428,6 +459,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader FixedDocumentSequenceReader { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader FixedDocumentSequenceReader" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDocument.FixedDocumentSequenceReader" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FixedDocumentSequenceReader As IXpsFixedDocumentSequenceReader" />
+      <MemberSignature Language="F#" Value="member this.FixedDocumentSequenceReader : System.Windows.Xps.Packaging.IXpsFixedDocumentSequenceReader" Usage="System.Windows.Xps.Packaging.XpsDocument.FixedDocumentSequenceReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Xps::Packaging::IXpsFixedDocumentSequenceReader ^ FixedDocumentSequenceReader { System::Windows::Xps::Packaging::IXpsFixedDocumentSequenceReader ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -463,6 +497,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.FixedDocumentSequence GetFixedDocumentSequence ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Documents.FixedDocumentSequence GetFixedDocumentSequence() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.GetFixedDocumentSequence" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFixedDocumentSequence () As FixedDocumentSequence" />
+      <MemberSignature Language="F#" Value="member this.GetFixedDocumentSequence : unit -&gt; System.Windows.Documents.FixedDocumentSequence" Usage="xpsDocument.GetFixedDocumentSequence " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Documents::FixedDocumentSequence ^ GetFixedDocumentSequence();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -489,6 +526,9 @@
       <MemberSignature Language="C#" Value="public bool IsReader { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReader" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDocument.IsReader" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReader As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReader : bool" Usage="System.Windows.Xps.Packaging.XpsDocument.IsReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReader { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -509,6 +549,9 @@
       <MemberSignature Language="C#" Value="public bool IsSignable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSignable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDocument.IsSignable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSignable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSignable : bool" Usage="System.Windows.Xps.Packaging.XpsDocument.IsSignable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSignable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -528,6 +571,9 @@
       <MemberSignature Language="C#" Value="public bool IsWriter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsWriter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDocument.IsWriter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsWriter As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsWriter : bool" Usage="System.Windows.Xps.Packaging.XpsDocument.IsWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWriter { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -548,6 +594,9 @@
       <MemberSignature Language="C#" Value="public void RemoveSignature (System.Windows.Xps.Packaging.XpsDigitalSignature signature);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveSignature(class System.Windows.Xps.Packaging.XpsDigitalSignature signature) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.RemoveSignature(System.Windows.Xps.Packaging.XpsDigitalSignature)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveSignature (signature As XpsDigitalSignature)" />
+      <MemberSignature Language="F#" Value="member this.RemoveSignature : System.Windows.Xps.Packaging.XpsDigitalSignature -&gt; unit" Usage="xpsDocument.RemoveSignature signature" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveSignature(System::Windows::Xps::Packaging::XpsDigitalSignature ^ signature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -569,6 +618,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Xps.Packaging.XpsDigitalSignature&gt; Signatures { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Xps.Packaging.XpsDigitalSignature&gt; Signatures" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDocument.Signatures" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Signatures As ReadOnlyCollection(Of XpsDigitalSignature)" />
+      <MemberSignature Language="F#" Value="member this.Signatures : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Xps.Packaging.XpsDigitalSignature&gt;" Usage="System.Windows.Xps.Packaging.XpsDocument.Signatures" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Xps::Packaging::XpsDigitalSignature ^&gt; ^ Signatures { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Xps::Packaging::XpsDigitalSignature ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -614,6 +666,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.XpsDigitalSignature SignDigitally (System.Security.Cryptography.X509Certificates.X509Certificate certificate, bool embedCertificate, System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions restrictions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Xps.Packaging.XpsDigitalSignature SignDigitally(class System.Security.Cryptography.X509Certificates.X509Certificate certificate, bool embedCertificate, valuetype System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions restrictions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.SignDigitally(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SignDigitally (certificate As X509Certificate, embedCertificate As Boolean, restrictions As XpsDigSigPartAlteringRestrictions) As XpsDigitalSignature" />
+      <MemberSignature Language="F#" Value="member this.SignDigitally : System.Security.Cryptography.X509Certificates.X509Certificate * bool * System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions -&gt; System.Windows.Xps.Packaging.XpsDigitalSignature" Usage="xpsDocument.SignDigitally (certificate, embedCertificate, restrictions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::XpsDigitalSignature ^ SignDigitally(System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate, bool embedCertificate, System::Windows::Xps::Packaging::XpsDigSigPartAlteringRestrictions restrictions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -656,6 +711,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.XpsDigitalSignature SignDigitally (System.Security.Cryptography.X509Certificates.X509Certificate certificate, bool embedCertificate, System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions restrictions, Guid id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Xps.Packaging.XpsDigitalSignature SignDigitally(class System.Security.Cryptography.X509Certificates.X509Certificate certificate, bool embedCertificate, valuetype System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions restrictions, valuetype System.Guid id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.SignDigitally(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SignDigitally (certificate As X509Certificate, embedCertificate As Boolean, restrictions As XpsDigSigPartAlteringRestrictions, id As Guid) As XpsDigitalSignature" />
+      <MemberSignature Language="F#" Value="member this.SignDigitally : System.Security.Cryptography.X509Certificates.X509Certificate * bool * System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions * Guid -&gt; System.Windows.Xps.Packaging.XpsDigitalSignature" Usage="xpsDocument.SignDigitally (certificate, embedCertificate, restrictions, id)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::XpsDigitalSignature ^ SignDigitally(System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate, bool embedCertificate, System::Windows::Xps::Packaging::XpsDigSigPartAlteringRestrictions restrictions, Guid id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -700,6 +758,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.XpsDigitalSignature SignDigitally (System.Security.Cryptography.X509Certificates.X509Certificate certificate, bool embedCertificate, System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions restrictions, Guid id, bool testIsSignable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Xps.Packaging.XpsDigitalSignature SignDigitally(class System.Security.Cryptography.X509Certificates.X509Certificate certificate, bool embedCertificate, valuetype System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions restrictions, valuetype System.Guid id, bool testIsSignable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.SignDigitally(System.Security.Cryptography.X509Certificates.X509Certificate,System.Boolean,System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions,System.Guid,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SignDigitally (certificate As X509Certificate, embedCertificate As Boolean, restrictions As XpsDigSigPartAlteringRestrictions, id As Guid, testIsSignable As Boolean) As XpsDigitalSignature" />
+      <MemberSignature Language="F#" Value="member this.SignDigitally : System.Security.Cryptography.X509Certificates.X509Certificate * bool * System.Windows.Xps.Packaging.XpsDigSigPartAlteringRestrictions * Guid * bool -&gt; System.Windows.Xps.Packaging.XpsDigitalSignature" Usage="xpsDocument.SignDigitally (certificate, embedCertificate, restrictions, id, testIsSignable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Xps::Packaging::XpsDigitalSignature ^ SignDigitally(System::Security::Cryptography::X509Certificates::X509Certificate ^ certificate, bool embedCertificate, System::Windows::Xps::Packaging::XpsDigSigPartAlteringRestrictions restrictions, Guid id, bool testIsSignable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -749,7 +810,12 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Packaging.XpsDocument.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -767,6 +833,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.XpsThumbnail Thumbnail { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Xps.Packaging.XpsThumbnail Thumbnail" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Packaging.XpsDocument.Thumbnail" />
+      <MemberSignature Language="VB.NET" Value="Public Property Thumbnail As XpsThumbnail" />
+      <MemberSignature Language="F#" Value="member this.Thumbnail : System.Windows.Xps.Packaging.XpsThumbnail with get, set" Usage="System.Windows.Xps.Packaging.XpsDocument.Thumbnail" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Xps::Packaging::XpsThumbnail ^ Thumbnail { System::Windows::Xps::Packaging::XpsThumbnail ^ get(); void set(System::Windows::Xps::Packaging::XpsThumbnail ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

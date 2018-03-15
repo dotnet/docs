@@ -1,7 +1,10 @@
-<Type Name="MessageEncodingBindingElement" FullName="System.ServiceModel.Channels.MessageEncodingBindingElement">
+﻿<Type Name="MessageEncodingBindingElement" FullName="System.ServiceModel.Channels.MessageEncodingBindingElement">
   <TypeSignature Language="C#" Value="public abstract class MessageEncodingBindingElement : System.ServiceModel.Channels.BindingElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MessageEncodingBindingElement extends System.ServiceModel.Channels.BindingElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.MessageEncodingBindingElement" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MessageEncodingBindingElement&#xA;Inherits BindingElement" />
+  <TypeSignature Language="F#" Value="type MessageEncodingBindingElement = class&#xA;    inherit BindingElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageEncodingBindingElement abstract : System::ServiceModel::Channels::BindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,10 +59,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.MessageEncodingBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MessageEncodingBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncodingBindingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageEncodingBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +97,9 @@
       <MemberSignature Language="C#" Value="public MessageEncodingBindingElement (System.ServiceModel.Channels.MessageEncodingBindingElement elementToBeCloned);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.MessageEncodingBindingElement elementToBeCloned) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncodingBindingElement.#ctor(System.ServiceModel.Channels.MessageEncodingBindingElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (elementToBeCloned As MessageEncodingBindingElement)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.MessageEncodingBindingElement : System.ServiceModel.Channels.MessageEncodingBindingElement -&gt; System.ServiceModel.Channels.MessageEncodingBindingElement" Usage="new System.ServiceModel.Channels.MessageEncodingBindingElement elementToBeCloned" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageEncodingBindingElement(System::ServiceModel::Channels::MessageEncodingBindingElement ^ elementToBeCloned);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +134,9 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Channels.MessageEncoderFactory CreateMessageEncoderFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Channels.MessageEncoderFactory CreateMessageEncoderFactory() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateMessageEncoderFactory () As MessageEncoderFactory" />
+      <MemberSignature Language="F#" Value="abstract member CreateMessageEncoderFactory : unit -&gt; System.ServiceModel.Channels.MessageEncoderFactory" Usage="messageEncodingBindingElement.CreateMessageEncoderFactory " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Channels::MessageEncoderFactory ^ CreateMessageEncoderFactory();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -151,6 +172,9 @@
       <MemberSignature Language="C#" Value="public override T GetProperty&lt;T&gt; (System.ServiceModel.Channels.BindingContext context) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!T GetProperty&lt;class T&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.MessageEncodingBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
+      <MemberSignature Language="F#" Value="override this.GetProperty : System.ServiceModel.Channels.BindingContext -&gt; 'T (requires 'T : null)" Usage="messageEncodingBindingElement.GetProperty context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -204,6 +228,9 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Channels.MessageVersion MessageVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.MessageVersion MessageVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.MessageEncodingBindingElement.MessageVersion" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property MessageVersion As MessageVersion" />
+      <MemberSignature Language="F#" Value="member this.MessageVersion : System.ServiceModel.Channels.MessageVersion with get, set" Usage="System.ServiceModel.Channels.MessageEncodingBindingElement.MessageVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Channels::MessageVersion ^ MessageVersion { System::ServiceModel::Channels::MessageVersion ^ get(); void set(System::ServiceModel::Channels::MessageVersion ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -239,15 +266,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.MessageEncodingBindingElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="ChannelBindingKind" FullName="System.Security.Authentication.ExtendedProtection.ChannelBindingKind">
+﻿<Type Name="ChannelBindingKind" FullName="System.Security.Authentication.ExtendedProtection.ChannelBindingKind">
   <TypeSignature Language="C#" Value="public enum ChannelBindingKind" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChannelBindingKind extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExtendedProtection.ChannelBindingKind" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ChannelBindingKind" />
+  <TypeSignature Language="F#" Value="type ChannelBindingKind = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ChannelBindingKind" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="Endpoint" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.ExtendedProtection.ChannelBindingKind Endpoint = int32(26)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Endpoint" />
+      <MemberSignature Language="VB.NET" Value="Endpoint" />
+      <MemberSignature Language="F#" Value="Endpoint = 26" Usage="System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Endpoint" />
+      <MemberSignature Language="C++ CLI" Value="Endpoint" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Authentication.ExtendedProtection.ChannelBindingKind</ReturnType>
       </ReturnValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>A channel binding unique to a given endpoint (a TLS server certificate, for example).</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="Unique" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.ExtendedProtection.ChannelBindingKind Unique = int32(25)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Unique" />
+      <MemberSignature Language="VB.NET" Value="Unique" />
+      <MemberSignature Language="F#" Value="Unique = 25" Usage="System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Unique" />
+      <MemberSignature Language="C++ CLI" Value="Unique" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Authentication.ExtendedProtection.ChannelBindingKind</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>A channel binding completely unique to a given channel (a TLS session key, for example).</summary>
       </Docs>
@@ -80,6 +91,9 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.ExtendedProtection.ChannelBindingKind Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -98,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Authentication.ExtendedProtection.ChannelBindingKind</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An unknown channel binding type.</summary>
       </Docs>

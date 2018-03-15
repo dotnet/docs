@@ -1,7 +1,10 @@
-<Type Name="DecoderReplacementFallback" FullName="System.Text.DecoderReplacementFallback">
+﻿<Type Name="DecoderReplacementFallback" FullName="System.Text.DecoderReplacementFallback">
   <TypeSignature Language="C#" Value="public sealed class DecoderReplacementFallback : System.Text.DecoderFallback" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit DecoderReplacementFallback extends System.Text.DecoderFallback" />
   <TypeSignature Language="DocId" Value="T:System.Text.DecoderReplacementFallback" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DecoderReplacementFallback&#xA;Inherits DecoderFallback" />
+  <TypeSignature Language="F#" Value="type DecoderReplacementFallback = class&#xA;    inherit DecoderFallback" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DecoderReplacementFallback sealed : System::Text::DecoderFallback" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -55,10 +58,21 @@
     <altmember cref="P:System.Text.DecoderReplacementFallback.DefaultString" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.DecoderReplacementFallback" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DecoderReplacementFallback ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderReplacementFallback.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DecoderReplacementFallback();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -94,6 +108,9 @@
       <MemberSignature Language="C#" Value="public DecoderReplacementFallback (string replacement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string replacement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderReplacementFallback.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (replacement As String)" />
+      <MemberSignature Language="F#" Value="new System.Text.DecoderReplacementFallback : string -&gt; System.Text.DecoderReplacementFallback" Usage="new System.Text.DecoderReplacementFallback replacement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DecoderReplacementFallback(System::String ^ replacement);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -138,6 +155,9 @@
       <MemberSignature Language="C#" Value="public override System.Text.DecoderFallbackBuffer CreateFallbackBuffer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Text.DecoderFallbackBuffer CreateFallbackBuffer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderReplacementFallback.CreateFallbackBuffer" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateFallbackBuffer () As DecoderFallbackBuffer" />
+      <MemberSignature Language="F#" Value="override this.CreateFallbackBuffer : unit -&gt; System.Text.DecoderFallbackBuffer" Usage="decoderReplacementFallback.CreateFallbackBuffer " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Text::DecoderFallbackBuffer ^ CreateFallbackBuffer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -170,6 +190,9 @@
       <MemberSignature Language="C#" Value="public string DefaultString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultString" />
       <MemberSignature Language="DocId" Value="P:System.Text.DecoderReplacementFallback.DefaultString" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultString As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultString : string" Usage="System.Text.DecoderReplacementFallback.DefaultString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultString { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -202,6 +225,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderReplacementFallback.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="decoderReplacementFallback.Equals value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -238,6 +264,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.DecoderReplacementFallback.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="decoderReplacementFallback.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -277,6 +306,9 @@
       <MemberSignature Language="C#" Value="public override int MaxCharCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxCharCount" />
       <MemberSignature Language="DocId" Value="P:System.Text.DecoderReplacementFallback.MaxCharCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property MaxCharCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxCharCount : int" Usage="System.Text.DecoderReplacementFallback.MaxCharCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaxCharCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -306,14 +338,5 @@
         <altmember cref="M:System.Text.DecoderReplacementFallback.#ctor(System.String)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Text.Encoding</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Text.DecoderReplacementFallback" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

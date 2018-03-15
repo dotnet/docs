@@ -1,7 +1,10 @@
-<Type Name="SchemeSettingElementCollection" FullName="System.Configuration.SchemeSettingElementCollection">
+﻿<Type Name="SchemeSettingElementCollection" FullName="System.Configuration.SchemeSettingElementCollection">
   <TypeSignature Language="C#" Value="public sealed class SchemeSettingElementCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SchemeSettingElementCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.SchemeSettingElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SchemeSettingElementCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type SchemeSettingElementCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SchemeSettingElementCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +59,8 @@
       <MemberSignature Language="C#" Value="public SchemeSettingElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SchemeSettingElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SchemeSettingElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -78,6 +83,9 @@
       <MemberSignature Language="C#" Value="public override System.Configuration.ConfigurationElementCollectionType CollectionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Configuration.ConfigurationElementCollectionType CollectionType" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SchemeSettingElementCollection.CollectionType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property CollectionType As ConfigurationElementCollectionType" />
+      <MemberSignature Language="F#" Value="member this.CollectionType : System.Configuration.ConfigurationElementCollectionType" Usage="System.Configuration.SchemeSettingElementCollection.CollectionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Configuration::ConfigurationElementCollectionType CollectionType { System::Configuration::ConfigurationElementCollectionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +118,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SchemeSettingElementCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="schemeSettingElementCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -133,6 +144,9 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SchemeSettingElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="schemeSettingElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -159,6 +173,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Configuration.SchemeSettingElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Configuration.SchemeSettingElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.SchemeSettingElementCollection.IndexOf(System.Configuration.SchemeSettingElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (element As SchemeSettingElement) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Configuration.SchemeSettingElement -&gt; int" Usage="schemeSettingElementCollection.IndexOf element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Configuration::SchemeSettingElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -184,10 +201,25 @@
         <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Accesses an instance of the <see cref="T:System.Configuration.SchemeSettingElementCollection" /> class.</summary>
+        <altmember cref="T:System.Configuration.UriSection" />
+        <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
+        <altmember cref="T:System.Uri" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Configuration.SchemeSettingElement this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SchemeSettingElement Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SchemeSettingElementCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As SchemeSettingElement" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Configuration.SchemeSettingElement" Usage="System.Configuration.SchemeSettingElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::SchemeSettingElement ^ default[int] { System::Configuration::SchemeSettingElement ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -229,6 +261,9 @@
       <MemberSignature Language="C#" Value="public System.Configuration.SchemeSettingElement this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.SchemeSettingElement Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Configuration.SchemeSettingElementCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As SchemeSettingElement" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Configuration.SchemeSettingElement" Usage="System.Configuration.SchemeSettingElementCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::SchemeSettingElement ^ default[System::String ^] { System::Configuration::SchemeSettingElement ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -261,17 +296,5 @@
         <altmember cref="T:System.Uri" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Accesses an instance of the <see cref="T:System.Configuration.SchemeSettingElementCollection" /> class.</summary>
-        <altmember cref="T:System.Configuration.UriSection" />
-        <altmember cref="P:System.Configuration.UriSection.SchemeSettings" />
-        <altmember cref="T:System.Uri" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

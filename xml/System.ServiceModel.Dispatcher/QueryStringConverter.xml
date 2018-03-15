@@ -1,7 +1,10 @@
-<Type Name="QueryStringConverter" FullName="System.ServiceModel.Dispatcher.QueryStringConverter">
+﻿<Type Name="QueryStringConverter" FullName="System.ServiceModel.Dispatcher.QueryStringConverter">
   <TypeSignature Language="C#" Value="public class QueryStringConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryStringConverter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.QueryStringConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class QueryStringConverter" />
+  <TypeSignature Language="F#" Value="type QueryStringConverter = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class QueryStringConverter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -97,6 +100,8 @@ interface Calculator
       <MemberSignature Language="C#" Value="public QueryStringConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.QueryStringConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryStringConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -123,6 +128,8 @@ interface Calculator
       <MemberSignature Language="C#" Value="public virtual bool CanConvert (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanConvert(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.QueryStringConverter.CanConvert(System.Type)" />
+      <MemberSignature Language="F#" Value="abstract member CanConvert : Type -&gt; bool&#xA;override this.CanConvert : Type -&gt; bool" Usage="queryStringConverter.CanConvert type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanConvert(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -156,6 +163,9 @@ interface Calculator
       <MemberSignature Language="C#" Value="public virtual object ConvertStringToValue (string parameter, Type parameterType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object ConvertStringToValue(string parameter, class System.Type parameterType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.QueryStringConverter.ConvertStringToValue(System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ConvertStringToValue (parameter As String, parameterType As Type) As Object" />
+      <MemberSignature Language="F#" Value="abstract member ConvertStringToValue : string * Type -&gt; obj&#xA;override this.ConvertStringToValue : string * Type -&gt; obj" Usage="queryStringConverter.ConvertStringToValue (parameter, parameterType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ ConvertStringToValue(System::String ^ parameter, Type ^ parameterType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -197,6 +207,9 @@ interface Calculator
       <MemberSignature Language="C#" Value="public virtual string ConvertValueToString (object parameter, Type parameterType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ConvertValueToString(object parameter, class System.Type parameterType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.QueryStringConverter.ConvertValueToString(System.Object,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ConvertValueToString (parameter As Object, parameterType As Type) As String" />
+      <MemberSignature Language="F#" Value="abstract member ConvertValueToString : obj * Type -&gt; string&#xA;override this.ConvertValueToString : obj * Type -&gt; string" Usage="queryStringConverter.ConvertValueToString (parameter, parameterType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ConvertValueToString(System::Object ^ parameter, Type ^ parameterType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>

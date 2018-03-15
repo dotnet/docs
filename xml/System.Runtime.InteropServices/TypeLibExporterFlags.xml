@@ -1,7 +1,10 @@
-<Type Name="TypeLibExporterFlags" FullName="System.Runtime.InteropServices.TypeLibExporterFlags">
+﻿<Type Name="TypeLibExporterFlags" FullName="System.Runtime.InteropServices.TypeLibExporterFlags">
   <TypeSignature Language="C#" Value="public enum TypeLibExporterFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TypeLibExporterFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.TypeLibExporterFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TypeLibExporterFlags" />
+  <TypeSignature Language="F#" Value="type TypeLibExporterFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TypeLibExporterFlags" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="CallerResolvedReferences" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibExporterFlags CallerResolvedReferences = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibExporterFlags.CallerResolvedReferences" />
+      <MemberSignature Language="VB.NET" Value="CallerResolvedReferences" />
+      <MemberSignature Language="F#" Value="CallerResolvedReferences = 2" Usage="System.Runtime.InteropServices.TypeLibExporterFlags.CallerResolvedReferences" />
+      <MemberSignature Language="C++ CLI" Value="CallerResolvedReferences" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibExporterFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Allows the caller to explicitly resolve type library references without consulting the registry.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="ExportAs32Bit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibExporterFlags ExportAs32Bit = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibExporterFlags.ExportAs32Bit" />
+      <MemberSignature Language="VB.NET" Value="ExportAs32Bit" />
+      <MemberSignature Language="F#" Value="ExportAs32Bit = 16" Usage="System.Runtime.InteropServices.TypeLibExporterFlags.ExportAs32Bit" />
+      <MemberSignature Language="C++ CLI" Value="ExportAs32Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibExporterFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>When compiling on a 64-bit computer, specifies that the Type Library Exporter (Tlbexp.exe) generates a 32-bit type library. All data types are transformed appropriately.</summary>
       </Docs>
@@ -68,6 +79,9 @@
       <MemberSignature Language="C#" Value="ExportAs64Bit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibExporterFlags ExportAs64Bit = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibExporterFlags.ExportAs64Bit" />
+      <MemberSignature Language="VB.NET" Value="ExportAs64Bit" />
+      <MemberSignature Language="F#" Value="ExportAs64Bit = 32" Usage="System.Runtime.InteropServices.TypeLibExporterFlags.ExportAs64Bit" />
+      <MemberSignature Language="C++ CLI" Value="ExportAs64Bit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibExporterFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>When compiling on a 32-bit computer, specifies that the Type Library Exporter (Tlbexp.exe) generates a 64-bit type library. All data types are transformed appropriately.</summary>
       </Docs>
@@ -85,6 +100,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibExporterFlags None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibExporterFlags.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Runtime.InteropServices.TypeLibExporterFlags.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -94,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibExporterFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies no flags. This is the default.</summary>
       </Docs>
@@ -102,6 +121,9 @@
       <MemberSignature Language="C#" Value="OldNames" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibExporterFlags OldNames = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibExporterFlags.OldNames" />
+      <MemberSignature Language="VB.NET" Value="OldNames" />
+      <MemberSignature Language="F#" Value="OldNames = 4" Usage="System.Runtime.InteropServices.TypeLibExporterFlags.OldNames" />
+      <MemberSignature Language="C++ CLI" Value="OldNames" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +133,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibExporterFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>When exporting type libraries, the .NET Framework resolves type name conflicts by decorating the type with the name of the namespace; for example, <see langword="System.Windows.Forms.HorizontalAlignment" /> is exported as <see langword="System_Windows_Forms_HorizontalAlignment" />. When there is a conflict with the name of a type that is not visible from COM, the .NET Framework exports the undecorated name. Set the <see cref="F:System.Runtime.InteropServices.TypeLibExporterFlags.OldNames" /> flag or use the <see langword="/oldnames" /> option in the Type Library Exporter (Tlbexp.exe) to force the .NET Framework to export the decorated name. Note that exporting the decorated name was the default behavior in versions prior to the .NET Framework version 2.0.</summary>
       </Docs>
@@ -119,6 +142,9 @@
       <MemberSignature Language="C#" Value="OnlyReferenceRegistered" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.TypeLibExporterFlags OnlyReferenceRegistered = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.TypeLibExporterFlags.OnlyReferenceRegistered" />
+      <MemberSignature Language="VB.NET" Value="OnlyReferenceRegistered" />
+      <MemberSignature Language="F#" Value="OnlyReferenceRegistered = 1" Usage="System.Runtime.InteropServices.TypeLibExporterFlags.OnlyReferenceRegistered" />
+      <MemberSignature Language="C++ CLI" Value="OnlyReferenceRegistered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -128,6 +154,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.TypeLibExporterFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Exports references to types that were imported from COM as <see langword="IUnknown" /> if the type does not have a registered type library. Set this flag when you want the type library exporter to look for dependent types in the registry rather than in the same directory as the input assembly.</summary>
       </Docs>

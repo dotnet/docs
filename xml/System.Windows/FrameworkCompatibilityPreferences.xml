@@ -1,7 +1,10 @@
-<Type Name="FrameworkCompatibilityPreferences" FullName="System.Windows.FrameworkCompatibilityPreferences">
+﻿<Type Name="FrameworkCompatibilityPreferences" FullName="System.Windows.FrameworkCompatibilityPreferences">
   <TypeSignature Language="C#" Value="public static class FrameworkCompatibilityPreferences" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed FrameworkCompatibilityPreferences extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.FrameworkCompatibilityPreferences" />
+  <TypeSignature Language="VB.NET" Value="Public Class FrameworkCompatibilityPreferences" />
+  <TypeSignature Language="F#" Value="type FrameworkCompatibilityPreferences = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FrameworkCompatibilityPreferences abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public static bool AreInactiveSelectionHighlightBrushKeysSupported { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool AreInactiveSelectionHighlightBrushKeysSupported" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkCompatibilityPreferences.AreInactiveSelectionHighlightBrushKeysSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property AreInactiveSelectionHighlightBrushKeysSupported As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AreInactiveSelectionHighlightBrushKeysSupported : bool with get, set" Usage="System.Windows.FrameworkCompatibilityPreferences.AreInactiveSelectionHighlightBrushKeysSupported" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool AreInactiveSelectionHighlightBrushKeysSupported { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -45,6 +51,9 @@
       <MemberSignature Language="C#" Value="public static bool KeepTextBoxDisplaySynchronizedWithTextProperty { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool KeepTextBoxDisplaySynchronizedWithTextProperty" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkCompatibilityPreferences.KeepTextBoxDisplaySynchronizedWithTextProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property KeepTextBoxDisplaySynchronizedWithTextProperty As Boolean" />
+      <MemberSignature Language="F#" Value="member this.KeepTextBoxDisplaySynchronizedWithTextProperty : bool with get, set" Usage="System.Windows.FrameworkCompatibilityPreferences.KeepTextBoxDisplaySynchronizedWithTextProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool KeepTextBoxDisplaySynchronizedWithTextProperty { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -71,6 +80,9 @@
       <MemberSignature Language="C#" Value="public static bool ShouldThrowOnCopyOrCutFailure { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property bool ShouldThrowOnCopyOrCutFailure" />
       <MemberSignature Language="DocId" Value="P:System.Windows.FrameworkCompatibilityPreferences.ShouldThrowOnCopyOrCutFailure" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property ShouldThrowOnCopyOrCutFailure As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldThrowOnCopyOrCutFailure : bool with get, set" Usage="System.Windows.FrameworkCompatibilityPreferences.ShouldThrowOnCopyOrCutFailure" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool ShouldThrowOnCopyOrCutFailure { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

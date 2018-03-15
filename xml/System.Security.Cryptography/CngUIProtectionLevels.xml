@@ -1,7 +1,10 @@
-<Type Name="CngUIProtectionLevels" FullName="System.Security.Cryptography.CngUIProtectionLevels">
+﻿<Type Name="CngUIProtectionLevels" FullName="System.Security.Cryptography.CngUIProtectionLevels">
   <TypeSignature Language="C#" Value="public enum CngUIProtectionLevels" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CngUIProtectionLevels extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngUIProtectionLevels" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CngUIProtectionLevels" />
+  <TypeSignature Language="F#" Value="type CngUIProtectionLevels = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CngUIProtectionLevels" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="ForceHighProtection" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngUIProtectionLevels ForceHighProtection = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngUIProtectionLevels.ForceHighProtection" />
+      <MemberSignature Language="VB.NET" Value="ForceHighProtection" />
+      <MemberSignature Language="F#" Value="ForceHighProtection = 2" Usage="System.Security.Cryptography.CngUIProtectionLevels.ForceHighProtection" />
+      <MemberSignature Language="C++ CLI" Value="ForceHighProtection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -51,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngUIProtectionLevels</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A UI prompt is displayed every time the key is accessed.</summary>
       </Docs>
@@ -59,6 +66,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngUIProtectionLevels None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngUIProtectionLevels.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Cryptography.CngUIProtectionLevels.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -77,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngUIProtectionLevels</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No UI prompt is displayed when the key is accessed.</summary>
       </Docs>
@@ -85,6 +96,9 @@
       <MemberSignature Language="C#" Value="ProtectKey" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngUIProtectionLevels ProtectKey = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngUIProtectionLevels.ProtectKey" />
+      <MemberSignature Language="VB.NET" Value="ProtectKey" />
+      <MemberSignature Language="F#" Value="ProtectKey = 1" Usage="System.Security.Cryptography.CngUIProtectionLevels.ProtectKey" />
+      <MemberSignature Language="C++ CLI" Value="ProtectKey" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -103,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngUIProtectionLevels</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A UI prompt is displayed the first time the key is accessed in a process.</summary>
       </Docs>

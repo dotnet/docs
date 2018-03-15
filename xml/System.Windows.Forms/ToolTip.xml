@@ -1,7 +1,10 @@
-<Type Name="ToolTip" FullName="System.Windows.Forms.ToolTip">
+﻿<Type Name="ToolTip" FullName="System.Windows.Forms.ToolTip">
   <TypeSignature Language="C#" Value="public class ToolTip : System.ComponentModel.Component, System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolTip extends System.ComponentModel.Component implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolTip" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolTip&#xA;Inherits Component&#xA;Implements IExtenderProvider" />
+  <TypeSignature Language="F#" Value="type ToolTip = class&#xA;    inherit Component&#xA;    interface IExtenderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolTip : System::ComponentModel::Component, System::ComponentModel::IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,10 +69,21 @@
     <altmember cref="T:System.Windows.Forms.HelpProvider" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolTip" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ToolTip ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolTip();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -103,6 +117,9 @@
       <MemberSignature Language="C#" Value="public ToolTip (System.ComponentModel.IContainer cont);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IContainer cont) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.#ctor(System.ComponentModel.IContainer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cont As IContainer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolTip : System.ComponentModel.IContainer -&gt; System.Windows.Forms.ToolTip" Usage="new System.Windows.Forms.ToolTip cont" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolTip(System::ComponentModel::IContainer ^ cont);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +146,9 @@
       <MemberSignature Language="C#" Value="public bool Active { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Active" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.Active" />
+      <MemberSignature Language="VB.NET" Value="Public Property Active As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Active : bool with get, set" Usage="System.Windows.Forms.ToolTip.Active" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Active { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -164,6 +184,9 @@
       <MemberSignature Language="C#" Value="public int AutomaticDelay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AutomaticDelay" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.AutomaticDelay" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutomaticDelay As Integer" />
+      <MemberSignature Language="F#" Value="member this.AutomaticDelay : int with get, set" Usage="System.Windows.Forms.ToolTip.AutomaticDelay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AutomaticDelay { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -174,7 +197,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(500)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -210,6 +233,9 @@
       <MemberSignature Language="C#" Value="public int AutoPopDelay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AutoPopDelay" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.AutoPopDelay" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoPopDelay As Integer" />
+      <MemberSignature Language="F#" Value="member this.AutoPopDelay : int with get, set" Usage="System.Windows.Forms.ToolTip.AutoPopDelay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AutoPopDelay { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -217,7 +243,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -258,6 +284,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ToolTip.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -294,6 +323,9 @@
       <MemberSignature Language="C#" Value="public bool CanExtend (object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExtend(object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.CanExtend(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanExtend (target As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="toolTip.CanExtend target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -325,6 +357,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.CreateParams CreateParams { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.CreateParams" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property CreateParams As CreateParams" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.ToolTip.CreateParams" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -356,6 +391,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="toolTip.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -379,6 +417,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DrawToolTipEventHandler Draw;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DrawToolTipEventHandler Draw" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolTip.Draw" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Draw As DrawToolTipEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Draw : System.Windows.Forms.DrawToolTipEventHandler " Usage="member this.Draw : System.Windows.Forms.DrawToolTipEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DrawToolTipEventHandler ^ Draw;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -423,6 +464,9 @@
       <MemberSignature Language="C#" Value="~ToolTip ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="toolTip.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!ToolTip ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -451,6 +495,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ToolTip.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -485,6 +532,8 @@
       <MemberSignature Language="C#" Value="public string GetToolTip (System.Windows.Forms.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetToolTip(class System.Windows.Forms.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.GetToolTip(System.Windows.Forms.Control)" />
+      <MemberSignature Language="F#" Value="member this.GetToolTip : System.Windows.Forms.Control -&gt; string" Usage="toolTip.GetToolTip control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetToolTip(System::Windows::Forms::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -530,6 +579,9 @@
       <MemberSignature Language="C#" Value="public void Hide (System.Windows.Forms.IWin32Window win);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Hide(class System.Windows.Forms.IWin32Window win) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.Hide(System.Windows.Forms.IWin32Window)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Hide (win As IWin32Window)" />
+      <MemberSignature Language="F#" Value="member this.Hide : System.Windows.Forms.IWin32Window -&gt; unit" Usage="toolTip.Hide win" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Hide(System::Windows::Forms::IWin32Window ^ win);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -570,6 +622,9 @@
       <MemberSignature Language="C#" Value="public int InitialDelay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 InitialDelay" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.InitialDelay" />
+      <MemberSignature Language="VB.NET" Value="Public Property InitialDelay As Integer" />
+      <MemberSignature Language="F#" Value="member this.InitialDelay : int with get, set" Usage="System.Windows.Forms.ToolTip.InitialDelay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int InitialDelay { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -577,7 +632,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -618,6 +673,9 @@
       <MemberSignature Language="C#" Value="public bool IsBalloon { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBalloon" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.IsBalloon" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsBalloon As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsBalloon : bool with get, set" Usage="System.Windows.Forms.ToolTip.IsBalloon" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBalloon { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -653,6 +711,9 @@
       <MemberSignature Language="C#" Value="public bool OwnerDraw { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OwnerDraw" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.OwnerDraw" />
+      <MemberSignature Language="VB.NET" Value="Public Property OwnerDraw As Boolean" />
+      <MemberSignature Language="F#" Value="member this.OwnerDraw : bool with get, set" Usage="System.Windows.Forms.ToolTip.OwnerDraw" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OwnerDraw { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -701,6 +762,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.PopupEventHandler Popup;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.PopupEventHandler Popup" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolTip.Popup" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Popup As PopupEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Popup : System.Windows.Forms.PopupEventHandler " Usage="member this.Popup : System.Windows.Forms.PopupEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PopupEventHandler ^ Popup;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -743,6 +807,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.RemoveAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAll ()" />
+      <MemberSignature Language="F#" Value="member this.RemoveAll : unit -&gt; unit" Usage="toolTip.RemoveAll " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -771,6 +838,9 @@
       <MemberSignature Language="C#" Value="public int ReshowDelay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ReshowDelay" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.ReshowDelay" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReshowDelay As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReshowDelay : int with get, set" Usage="System.Windows.Forms.ToolTip.ReshowDelay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReshowDelay { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -778,7 +848,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -817,6 +887,8 @@
       <MemberSignature Language="C#" Value="public void SetToolTip (System.Windows.Forms.Control control, string caption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetToolTip(class System.Windows.Forms.Control control, string caption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.SetToolTip(System.Windows.Forms.Control,System.String)" />
+      <MemberSignature Language="F#" Value="member this.SetToolTip : System.Windows.Forms.Control * string -&gt; unit" Usage="toolTip.SetToolTip (control, caption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetToolTip(System::Windows::Forms::Control ^ control, System::String ^ caption);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -859,10 +931,22 @@
         <altmember cref="P:System.Windows.Forms.ToolTip.Tag" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Show">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the text associated with a ToolTip, and then displays it.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Show">
       <MemberSignature Language="C#" Value="public void Show (string text, System.Windows.Forms.IWin32Window window);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show(string text, class System.Windows.Forms.IWin32Window window) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.Show(System.String,System.Windows.Forms.IWin32Window)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Show (text As String, window As IWin32Window)" />
+      <MemberSignature Language="F#" Value="member this.Show : string * System.Windows.Forms.IWin32Window -&gt; unit" Usage="toolTip.Show (text, window)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show(System::String ^ text, System::Windows::Forms::IWin32Window ^ window);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -906,6 +990,8 @@
       <MemberSignature Language="C#" Value="public void Show (string text, System.Windows.Forms.IWin32Window window, System.Drawing.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show(string text, class System.Windows.Forms.IWin32Window window, valuetype System.Drawing.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.Show(System.String,System.Windows.Forms.IWin32Window,System.Drawing.Point)" />
+      <MemberSignature Language="F#" Value="member this.Show : string * System.Windows.Forms.IWin32Window * System.Drawing.Point -&gt; unit" Usage="toolTip.Show (text, window, point)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show(System::String ^ text, System::Windows::Forms::IWin32Window ^ window, System::Drawing::Point point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -951,6 +1037,9 @@
       <MemberSignature Language="C#" Value="public void Show (string text, System.Windows.Forms.IWin32Window window, int duration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show(string text, class System.Windows.Forms.IWin32Window window, int32 duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.Show(System.String,System.Windows.Forms.IWin32Window,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Show (text As String, window As IWin32Window, duration As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Show : string * System.Windows.Forms.IWin32Window * int -&gt; unit" Usage="toolTip.Show (text, window, duration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show(System::String ^ text, System::Windows::Forms::IWin32Window ^ window, int duration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -998,6 +1087,8 @@
       <MemberSignature Language="C#" Value="public void Show (string text, System.Windows.Forms.IWin32Window window, System.Drawing.Point point, int duration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show(string text, class System.Windows.Forms.IWin32Window window, valuetype System.Drawing.Point point, int32 duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.Show(System.String,System.Windows.Forms.IWin32Window,System.Drawing.Point,System.Int32)" />
+      <MemberSignature Language="F#" Value="member this.Show : string * System.Windows.Forms.IWin32Window * System.Drawing.Point * int -&gt; unit" Usage="toolTip.Show (text, window, point, duration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show(System::String ^ text, System::Windows::Forms::IWin32Window ^ window, System::Drawing::Point point, int duration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1047,6 +1138,9 @@
       <MemberSignature Language="C#" Value="public void Show (string text, System.Windows.Forms.IWin32Window window, int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show(string text, class System.Windows.Forms.IWin32Window window, int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.Show(System.String,System.Windows.Forms.IWin32Window,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Show (text As String, window As IWin32Window, x As Integer, y As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Show : string * System.Windows.Forms.IWin32Window * int * int -&gt; unit" Usage="toolTip.Show (text, window, x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show(System::String ^ text, System::Windows::Forms::IWin32Window ^ window, int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1093,6 +1187,9 @@
       <MemberSignature Language="C#" Value="public void Show (string text, System.Windows.Forms.IWin32Window window, int x, int y, int duration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Show(string text, class System.Windows.Forms.IWin32Window window, int32 x, int32 y, int32 duration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.Show(System.String,System.Windows.Forms.IWin32Window,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Show (text As String, window As IWin32Window, x As Integer, y As Integer, duration As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Show : string * System.Windows.Forms.IWin32Window * int * int * int -&gt; unit" Usage="toolTip.Show (text, window, x, y, duration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Show(System::String ^ text, System::Windows::Forms::IWin32Window ^ window, int x, int y, int duration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1144,6 +1241,9 @@
       <MemberSignature Language="C#" Value="public bool ShowAlways { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowAlways" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.ShowAlways" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowAlways As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowAlways : bool with get, set" Usage="System.Windows.Forms.ToolTip.ShowAlways" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowAlways { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1187,6 +1287,9 @@
       <MemberSignature Language="C#" Value="protected void StopTimer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void StopTimer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.StopTimer" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub StopTimer ()" />
+      <MemberSignature Language="F#" Value="member this.StopTimer : unit -&gt; unit" Usage="toolTip.StopTimer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void StopTimer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1216,6 +1319,9 @@
       <MemberSignature Language="C#" Value="public bool StripAmpersands { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StripAmpersands" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.StripAmpersands" />
+      <MemberSignature Language="VB.NET" Value="Public Property StripAmpersands As Boolean" />
+      <MemberSignature Language="F#" Value="member this.StripAmpersands : bool with get, set" Usage="System.Windows.Forms.ToolTip.StripAmpersands" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StripAmpersands { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1252,6 +1358,9 @@
       <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.ToolTip.Tag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1292,6 +1401,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolTipIcon ToolTipIcon { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ToolTipIcon ToolTipIcon" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.ToolTipIcon" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipIcon As ToolTipIcon" />
+      <MemberSignature Language="F#" Value="member this.ToolTipIcon : System.Windows.Forms.ToolTipIcon with get, set" Usage="System.Windows.Forms.ToolTip.ToolTipIcon" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolTipIcon ToolTipIcon { System::Windows::Forms::ToolTipIcon get(); void set(System::Windows::Forms::ToolTipIcon value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1329,6 +1441,9 @@
       <MemberSignature Language="C#" Value="public string ToolTipTitle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTipTitle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.ToolTipTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipTitle As String" />
+      <MemberSignature Language="F#" Value="member this.ToolTipTitle : string with get, set" Usage="System.Windows.Forms.ToolTip.ToolTipTitle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipTitle { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1366,6 +1481,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolTip.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="toolTip.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1395,6 +1513,9 @@
       <MemberSignature Language="C#" Value="public bool UseAnimation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseAnimation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.UseAnimation" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseAnimation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseAnimation : bool with get, set" Usage="System.Windows.Forms.ToolTip.UseAnimation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseAnimation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1431,6 +1552,9 @@
       <MemberSignature Language="C#" Value="public bool UseFading { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseFading" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolTip.UseFading" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseFading As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseFading : bool with get, set" Usage="System.Windows.Forms.ToolTip.UseFading" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseFading { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1463,23 +1587,5 @@
         <altmember cref="P:System.Windows.Forms.ToolTip.OwnerDraw" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolTip" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Show">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the text associated with a ToolTip, and then displays it.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

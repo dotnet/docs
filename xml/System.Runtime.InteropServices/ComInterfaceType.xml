@@ -1,7 +1,10 @@
-<Type Name="ComInterfaceType" FullName="System.Runtime.InteropServices.ComInterfaceType">
+﻿<Type Name="ComInterfaceType" FullName="System.Runtime.InteropServices.ComInterfaceType">
   <TypeSignature Language="C#" Value="public enum ComInterfaceType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ComInterfaceType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComInterfaceType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ComInterfaceType" />
+  <TypeSignature Language="F#" Value="type ComInterfaceType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ComInterfaceType" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="InterfaceIsDual" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComInterfaceType InterfaceIsDual = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual" />
+      <MemberSignature Language="VB.NET" Value="InterfaceIsDual" />
+      <MemberSignature Language="F#" Value="InterfaceIsDual = 0" Usage="System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual" />
+      <MemberSignature Language="C++ CLI" Value="InterfaceIsDual" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -66,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that the interface is exposed to COM as a [dual interface](http://msdn.microsoft.com/library/1d39d64c-e23a-4249-a167-4369d5bd2b65), which enables both early and late binding. <see cref="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsDual" /> is the default value.</summary>
       </Docs>
@@ -74,6 +81,9 @@
       <MemberSignature Language="C#" Value="InterfaceIsIDispatch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComInterfaceType InterfaceIsIDispatch = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIDispatch" />
+      <MemberSignature Language="VB.NET" Value="InterfaceIsIDispatch" />
+      <MemberSignature Language="F#" Value="InterfaceIsIDispatch = 2" Usage="System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIDispatch" />
+      <MemberSignature Language="C++ CLI" Value="InterfaceIsIDispatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -96,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that an interface is exposed to COM as a [dispinterface](http://msdn.microsoft.com/library/e8c18ae5-3d9e-4dff-aa20-b5acc723eacf), which enables late binding only.</summary>
       </Docs>
@@ -104,6 +115,9 @@
       <MemberSignature Language="C#" Value="InterfaceIsIInspectable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComInterfaceType InterfaceIsIInspectable = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable" />
+      <MemberSignature Language="VB.NET" Value="InterfaceIsIInspectable" />
+      <MemberSignature Language="F#" Value="InterfaceIsIInspectable = 3" Usage="System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIInspectable" />
+      <MemberSignature Language="C++ CLI" Value="InterfaceIsIInspectable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -131,6 +145,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates that an interface is exposed to COM as a [!INCLUDE[wrt](~/includes/wrt-md.md)] interface.</summary>
       </Docs>
@@ -139,6 +154,9 @@
       <MemberSignature Language="C#" Value="InterfaceIsIUnknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComInterfaceType InterfaceIsIUnknown = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown" />
+      <MemberSignature Language="VB.NET" Value="InterfaceIsIUnknown" />
+      <MemberSignature Language="F#" Value="InterfaceIsIUnknown = 1" Usage="System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown" />
+      <MemberSignature Language="C++ CLI" Value="InterfaceIsIUnknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -161,6 +179,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that an interface is exposed to COM as an interface that is derived from [IUnknown](http://go.microsoft.com/fwlink/?LinkId=148003), which enables only early binding.</summary>
       </Docs>

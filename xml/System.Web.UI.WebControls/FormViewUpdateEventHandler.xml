@@ -1,7 +1,10 @@
-<Type Name="FormViewUpdateEventHandler" FullName="System.Web.UI.WebControls.FormViewUpdateEventHandler">
+﻿<Type Name="FormViewUpdateEventHandler" FullName="System.Web.UI.WebControls.FormViewUpdateEventHandler">
   <TypeSignature Language="C#" Value="public delegate void FormViewUpdateEventHandler(object sender, FormViewUpdateEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormViewUpdateEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewUpdateEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub FormViewUpdateEventHandler(sender As Object, e As FormViewUpdateEventArgs)" />
+  <TypeSignature Language="F#" Value="type FormViewUpdateEventHandler = delegate of obj * FormViewUpdateEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void FormViewUpdateEventHandler(System::Object ^ sender, FormViewUpdateEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

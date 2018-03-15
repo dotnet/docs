@@ -1,7 +1,10 @@
-<Type Name="HierarchicalVirtualizationHeaderDesiredSizes" FullName="System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes">
+﻿<Type Name="HierarchicalVirtualizationHeaderDesiredSizes" FullName="System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes">
   <TypeSignature Language="C#" Value="public struct HierarchicalVirtualizationHeaderDesiredSizes" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit HierarchicalVirtualizationHeaderDesiredSizes extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" />
+  <TypeSignature Language="VB.NET" Value="Public Structure HierarchicalVirtualizationHeaderDesiredSizes" />
+  <TypeSignature Language="F#" Value="type HierarchicalVirtualizationHeaderDesiredSizes = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class HierarchicalVirtualizationHeaderDesiredSizes" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public HierarchicalVirtualizationHeaderDesiredSizes (System.Windows.Size logicalSize, System.Windows.Size pixelSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Size logicalSize, valuetype System.Windows.Size pixelSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.#ctor(System.Windows.Size,System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (logicalSize As Size, pixelSize As Size)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes : System.Windows.Size * System.Windows.Size -&gt; System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" Usage="new System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes (logicalSize, pixelSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HierarchicalVirtualizationHeaderDesiredSizes(System::Windows::Size logicalSize, System::Windows::Size pixelSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -35,10 +41,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the specified object is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object oCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object oCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (oCompare As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="hierarchicalVirtualizationHeaderDesiredSizes.Equals oCompare" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ oCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -62,6 +80,9 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes comparisonHeaderSizes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes comparisonHeaderSizes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.Equals(System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (comparisonHeaderSizes As HierarchicalVirtualizationHeaderDesiredSizes) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes -&gt; bool" Usage="hierarchicalVirtualizationHeaderDesiredSizes.Equals comparisonHeaderSizes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes comparisonHeaderSizes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +106,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="hierarchicalVirtualizationHeaderDesiredSizes.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -104,6 +128,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Size LogicalSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size LogicalSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.LogicalSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogicalSize As Size" />
+      <MemberSignature Language="F#" Value="member this.LogicalSize : System.Windows.Size" Usage="System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.LogicalSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size LogicalSize { System::Windows::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -122,6 +149,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes1, System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes1, valuetype System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.op_Equality(System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes,System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (headerDesiredSizes1 As HierarchicalVirtualizationHeaderDesiredSizes, headerDesiredSizes2 As HierarchicalVirtualizationHeaderDesiredSizes) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes * System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes -&gt; bool" Usage="headerDesiredSizes1 = headerDesiredSizes2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes1, System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -147,6 +177,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes1, System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes1, valuetype System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.op_Inequality(System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes,System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (headerDesiredSizes1 As HierarchicalVirtualizationHeaderDesiredSizes, headerDesiredSizes2 As HierarchicalVirtualizationHeaderDesiredSizes) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes * System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes -&gt; bool" Usage="System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.op_Inequality (headerDesiredSizes1, headerDesiredSizes2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes1, System::Windows::Controls::HierarchicalVirtualizationHeaderDesiredSizes headerDesiredSizes2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -172,6 +205,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Size PixelSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size PixelSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.PixelSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelSize As Size" />
+      <MemberSignature Language="F#" Value="member this.PixelSize : System.Windows.Size" Usage="System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes.PixelSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size PixelSize { System::Windows::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -186,14 +222,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the specified object is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationHeaderDesiredSizes" /> object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

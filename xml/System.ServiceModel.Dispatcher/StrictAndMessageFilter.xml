@@ -1,7 +1,10 @@
-<Type Name="StrictAndMessageFilter" FullName="System.ServiceModel.Dispatcher.StrictAndMessageFilter">
+﻿<Type Name="StrictAndMessageFilter" FullName="System.ServiceModel.Dispatcher.StrictAndMessageFilter">
   <TypeSignature Language="C#" Value="public class StrictAndMessageFilter : System.ServiceModel.Dispatcher.MessageFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StrictAndMessageFilter extends System.ServiceModel.Dispatcher.MessageFilter" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.StrictAndMessageFilter" />
+  <TypeSignature Language="VB.NET" Value="Public Class StrictAndMessageFilter&#xA;Inherits MessageFilter" />
+  <TypeSignature Language="F#" Value="type StrictAndMessageFilter = class&#xA;    inherit MessageFilter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StrictAndMessageFilter : System::ServiceModel::Dispatcher::MessageFilter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Routing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public StrictAndMessageFilter (System.ServiceModel.Dispatcher.MessageFilter filter1, System.ServiceModel.Dispatcher.MessageFilter filter2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Dispatcher.MessageFilter filter1, class System.ServiceModel.Dispatcher.MessageFilter filter2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.StrictAndMessageFilter.#ctor(System.ServiceModel.Dispatcher.MessageFilter,System.ServiceModel.Dispatcher.MessageFilter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (filter1 As MessageFilter, filter2 As MessageFilter)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.StrictAndMessageFilter : System.ServiceModel.Dispatcher.MessageFilter * System.ServiceModel.Dispatcher.MessageFilter -&gt; System.ServiceModel.Dispatcher.StrictAndMessageFilter" Usage="new System.ServiceModel.Dispatcher.StrictAndMessageFilter (filter1, filter2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StrictAndMessageFilter(System::ServiceModel::Dispatcher::MessageFilter ^ filter1, System::ServiceModel::Dispatcher::MessageFilter ^ filter2);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -45,9 +51,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateFilterTable&lt;TFilterData&gt;">
-      <MemberSignature Language="C#" Value="protected override System.ServiceModel.Dispatcher.IMessageFilterTable&lt;TFilterData&gt; CreateFilterTable&lt;TFilterData&gt; ();" />
+      <MemberSignature Language="C#" Value="protected internal override System.ServiceModel.Dispatcher.IMessageFilterTable&lt;TFilterData&gt; CreateFilterTable&lt;TFilterData&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.ServiceModel.Dispatcher.IMessageFilterTable`1&lt;!!TFilterData&gt; CreateFilterTable&lt;TFilterData&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.StrictAndMessageFilter.CreateFilterTable``1" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateFilterTable(Of TFilterData) () As IMessageFilterTable(Of TFilterData)" />
+      <MemberSignature Language="F#" Value="override this.CreateFilterTable : unit -&gt; System.ServiceModel.Dispatcher.IMessageFilterTable&lt;'FilterData&gt;" Usage="strictAndMessageFilter.CreateFilterTable " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename TFilterData&gt;&#xA; override System::ServiceModel::Dispatcher::IMessageFilterTable&lt;TFilterData&gt; ^ CreateFilterTable();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -88,6 +97,8 @@
       <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.StrictAndMessageFilter.Match(System.ServiceModel.Channels.Message)" />
+      <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.Message -&gt; bool" Usage="strictAndMessageFilter.Match message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::Message ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>
@@ -110,6 +121,9 @@
       <MemberSignature Language="C#" Value="public override bool Match (System.ServiceModel.Channels.MessageBuffer buffer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Match(class System.ServiceModel.Channels.MessageBuffer buffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.StrictAndMessageFilter.Match(System.ServiceModel.Channels.MessageBuffer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Match (buffer As MessageBuffer) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Match : System.ServiceModel.Channels.MessageBuffer -&gt; bool" Usage="strictAndMessageFilter.Match buffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Match(System::ServiceModel::Channels::MessageBuffer ^ buffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Routing</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ContentType" FullName="Microsoft.Build.Framework.XamlTypes.ContentType">
+﻿<Type Name="ContentType" FullName="Microsoft.Build.Framework.XamlTypes.ContentType">
   <TypeSignature Language="C#" Value="public sealed class ContentType : Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContentType extends System.Object implements class Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode, class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.ContentType" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContentType&#xA;Implements IProjectSchemaNode, ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type ContentType = class&#xA;    interface ISupportInitialize&#xA;    interface IProjectSchemaNode" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContentType sealed : Microsoft::Build::Framework::XamlTypes::IProjectSchemaNode, System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,8 @@
       <MemberSignature Language="C#" Value="public ContentType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.ContentType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContentType();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -46,6 +51,9 @@
       <MemberSignature Language="C#" Value="public void BeginInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.ContentType.BeginInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginInit ()" />
+      <MemberSignature Language="F#" Value="abstract member BeginInit : unit -&gt; unit&#xA;override this.BeginInit : unit -&gt; unit" Usage="contentType.BeginInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -64,6 +72,9 @@
       <MemberSignature Language="C#" Value="public bool DefaultContentTypeForItemType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DefaultContentTypeForItemType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.ContentType.DefaultContentTypeForItemType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultContentTypeForItemType As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DefaultContentTypeForItemType : bool with get, set" Usage="Microsoft.Build.Framework.XamlTypes.ContentType.DefaultContentTypeForItemType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DefaultContentTypeForItemType { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -82,6 +93,9 @@
       <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.ContentType.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.ContentType.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -105,6 +119,9 @@
       <MemberSignature Language="C#" Value="public void EndInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.ContentType.EndInit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndInit ()" />
+      <MemberSignature Language="F#" Value="abstract member EndInit : unit -&gt; unit&#xA;override this.EndInit : unit -&gt; unit" Usage="contentType.EndInit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndInit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -123,6 +140,9 @@
       <MemberSignature Language="C#" Value="public string GetMetadata (string metadataName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetMetadata(string metadataName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.ContentType.GetMetadata(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMetadata (metadataName As String) As String" />
+      <MemberSignature Language="F#" Value="member this.GetMetadata : string -&gt; string" Usage="contentType.GetMetadata metadataName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetMetadata(System::String ^ metadataName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -145,7 +165,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;object&gt; GetSchemaObjects (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; GetSchemaObjects(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.ContentType.GetSchemaObjects(System.Type)" />
+      <MemberSignature Language="F#" Value="abstract member GetSchemaObjects : Type -&gt; seq&lt;obj&gt;&#xA;override this.GetSchemaObjects : Type -&gt; seq&lt;obj&gt;" Usage="contentType.GetSchemaObjects type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ GetSchemaObjects(Type ^ type);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode.GetSchemaObjects(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -172,7 +197,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Type&gt; GetSchemaObjectTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; GetSchemaObjectTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.ContentType.GetSchemaObjectTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Iterator Overridable NotOverridable Function GetSchemaObjectTypes () As IEnumerable(Of Type)" />
+      <MemberSignature Language="F#" Value="abstract member GetSchemaObjectTypes : unit -&gt; seq&lt;Type&gt;&#xA;override this.GetSchemaObjectTypes : unit -&gt; seq&lt;Type&gt;" Usage="contentType.GetSchemaObjectTypes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ GetSchemaObjectTypes();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode.GetSchemaObjectTypes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -196,6 +227,9 @@
       <MemberSignature Language="C#" Value="public string ItemGroupName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ItemGroupName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.ContentType.ItemGroupName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemGroupName As String" />
+      <MemberSignature Language="F#" Value="member this.ItemGroupName : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.ContentType.ItemGroupName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemGroupName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -219,6 +253,9 @@
       <MemberSignature Language="C#" Value="public string ItemType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ItemType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.ContentType.ItemType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ItemType As String" />
+      <MemberSignature Language="F#" Value="member this.ItemType : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.ContentType.ItemType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ItemType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -237,6 +274,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.NameValuePair&gt; Metadata { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.List`1&lt;class Microsoft.Build.Framework.XamlTypes.NameValuePair&gt; Metadata" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.ContentType.Metadata" />
+      <MemberSignature Language="VB.NET" Value="Public Property Metadata As List(Of NameValuePair)" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.List&lt;Microsoft.Build.Framework.XamlTypes.NameValuePair&gt; with get, set" Usage="Microsoft.Build.Framework.XamlTypes.ContentType.Metadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::NameValuePair ^&gt; ^ Metadata { System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::NameValuePair ^&gt; ^ get(); void set(System::Collections::Generic::List&lt;Microsoft::Build::Framework::XamlTypes::NameValuePair ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -262,6 +302,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.ContentType.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.ContentType.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

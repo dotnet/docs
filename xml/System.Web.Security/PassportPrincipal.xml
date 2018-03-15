@@ -1,7 +1,10 @@
-<Type Name="PassportPrincipal" FullName="System.Web.Security.PassportPrincipal">
+﻿<Type Name="PassportPrincipal" FullName="System.Web.Security.PassportPrincipal">
   <TypeSignature Language="C#" Value="public sealed class PassportPrincipal : System.Security.Principal.GenericPrincipal" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PassportPrincipal extends System.Security.Principal.GenericPrincipal" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.PassportPrincipal" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PassportPrincipal&#xA;Inherits GenericPrincipal" />
+  <TypeSignature Language="F#" Value="type PassportPrincipal = class&#xA;    inherit GenericPrincipal" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PassportPrincipal sealed : System::Security::Principal::GenericPrincipal" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public PassportPrincipal (System.Web.Security.PassportIdentity identity, string[] roles);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.Security.PassportIdentity identity, string[] roles) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportPrincipal.#ctor(System.Web.Security.PassportIdentity,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As PassportIdentity, roles As String())" />
+      <MemberSignature Language="F#" Value="new System.Web.Security.PassportPrincipal : System.Web.Security.PassportIdentity * string[] -&gt; System.Web.Security.PassportPrincipal" Usage="new System.Web.Security.PassportPrincipal (identity, roles)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PassportPrincipal(System::Web::Security::PassportIdentity ^ identity, cli::array &lt;System::String ^&gt; ^ roles);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

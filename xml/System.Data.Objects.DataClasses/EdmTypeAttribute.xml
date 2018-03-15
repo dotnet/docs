@@ -1,7 +1,10 @@
-<Type Name="EdmTypeAttribute" FullName="System.Data.Objects.DataClasses.EdmTypeAttribute">
+﻿<Type Name="EdmTypeAttribute" FullName="System.Data.Objects.DataClasses.EdmTypeAttribute">
   <TypeSignature Language="C#" Value="public abstract class EdmTypeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EdmTypeAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EdmTypeAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class EdmTypeAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type EdmTypeAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EdmTypeAttribute abstract : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmTypeAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Data.Objects.DataClasses.EdmTypeAttribute.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -51,6 +57,9 @@
       <MemberSignature Language="C#" Value="public string NamespaceName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NamespaceName" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmTypeAttribute.NamespaceName" />
+      <MemberSignature Language="VB.NET" Value="Public Property NamespaceName As String" />
+      <MemberSignature Language="F#" Value="member this.NamespaceName : string with get, set" Usage="System.Data.Objects.DataClasses.EdmTypeAttribute.NamespaceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

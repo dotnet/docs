@@ -1,7 +1,10 @@
-<Type Name="CustomAttributeHandleCollection+Enumerator" FullName="System.Reflection.Metadata.CustomAttributeHandleCollection+Enumerator">
+﻿<Type Name="CustomAttributeHandleCollection+Enumerator" FullName="System.Reflection.Metadata.CustomAttributeHandleCollection+Enumerator">
   <TypeSignature Language="C#" Value="public struct CustomAttributeHandleCollection.Enumerator : System.Collections.Generic.IEnumerator&lt;System.Reflection.Metadata.CustomAttributeHandle&gt;" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit CustomAttributeHandleCollection/Enumerator extends System.ValueType implements class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Reflection.Metadata.CustomAttributeHandle&gt;, class System.Collections.IEnumerator, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.CustomAttributeHandleCollection.Enumerator" />
+  <TypeSignature Language="VB.NET" Value="Public Structure CustomAttributeHandleCollection.Enumerator&#xA;Implements IEnumerator(Of CustomAttributeHandle)" />
+  <TypeSignature Language="F#" Value="type CustomAttributeHandleCollection.Enumerator = struct&#xA;    interface IEnumerator&lt;CustomAttributeHandle&gt;&#xA;    interface IEnumerator&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public: value class CustomAttributeHandleCollection::Enumerator : System::Collections::Generic::IEnumerator&lt;System::Reflection::Metadata::CustomAttributeHandle&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -25,7 +28,13 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.CustomAttributeHandle Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.CustomAttributeHandle Current" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.CustomAttributeHandleCollection.Enumerator.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As CustomAttributeHandle" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Reflection.Metadata.CustomAttributeHandle" Usage="System.Reflection.Metadata.CustomAttributeHandleCollection.Enumerator.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::CustomAttributeHandle Current { System::Reflection::Metadata::CustomAttributeHandle get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IEnumerator`1.Current</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -45,7 +54,13 @@
       <MemberSignature Language="C#" Value="public bool MoveNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.CustomAttributeHandleCollection.Enumerator.MoveNext" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="enumerator.MoveNext " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -66,7 +81,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.IEnumerator.Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IEnumerator.Current" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.CustomAttributeHandleCollection.Enumerator.System#Collections#IEnumerator#Current" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
+      <MemberSignature Language="F#" Usage="System.Reflection.Metadata.CustomAttributeHandleCollection.Enumerator.System.Collections.IEnumerator.Current" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -86,7 +107,12 @@
       <MemberSignature Language="C#" Value="void IEnumerator.Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IEnumerator.Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.CustomAttributeHandleCollection.Enumerator.System#Collections#IEnumerator#Reset" />
+      <MemberSignature Language="VB.NET" Value="Sub Reset () Implements IEnumerator.Reset" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IEnumerator.Reset() = System::Collections::IEnumerator::Reset;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -106,7 +132,12 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.CustomAttributeHandleCollection.Enumerator.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.3.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="Size" FullName="System.Drawing.Size">
+﻿<Type Name="Size" FullName="System.Drawing.Size">
   <TypeSignature Language="C#" Value="public struct Size" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Size extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Size" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Size" />
+  <TypeSignature Language="F#" Value="type Size = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class Size" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,8 +21,7 @@
   <Base>
     <BaseTypeName>System.ValueType</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Docs>
     <summary>Stores an ordered pair of integers, which specify a <see cref="P:System.Drawing.Size.Height" /> and <see cref="P:System.Drawing.Size.Width" />.</summary>
     <remarks>
@@ -32,10 +34,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing.Primitives</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Size" /> structure from the specified <see cref="T:System.Drawing.Point" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Size (System.Drawing.Point pt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Drawing.Point pt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.#ctor(System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pt As Point)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Size : System.Drawing.Point -&gt; System.Drawing.Size" Usage="new System.Drawing.Size pt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Size(System::Drawing::Point pt);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -63,6 +78,9 @@
       <MemberSignature Language="C#" Value="public Size (int width, int height);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 width, int32 height) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (width As Integer, height As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Size : int * int -&gt; System.Drawing.Size" Usage="new System.Drawing.Size (width, height)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Size(int width, int height);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -103,6 +121,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Size Add (System.Drawing.Size sz1, System.Drawing.Size sz2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size Add(valuetype System.Drawing.Size sz1, valuetype System.Drawing.Size sz2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.Add(System.Drawing.Size,System.Drawing.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add (sz1 As Size, sz2 As Size) As Size" />
+      <MemberSignature Language="F#" Value="static member Add : System.Drawing.Size * System.Drawing.Size -&gt; System.Drawing.Size" Usage="System.Drawing.Size.Add (sz1, sz2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size Add(System::Drawing::Size sz1, System::Drawing::Size sz2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -147,6 +168,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Size Ceiling (System.Drawing.SizeF value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size Ceiling(valuetype System.Drawing.SizeF value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.Ceiling(System.Drawing.SizeF)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Ceiling (value As SizeF) As Size" />
+      <MemberSignature Language="F#" Value="static member Ceiling : System.Drawing.SizeF -&gt; System.Drawing.Size" Usage="System.Drawing.Size.Ceiling value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size Ceiling(System::Drawing::SizeF value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -178,6 +202,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Drawing.Size Empty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Drawing.Size Empty" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Size.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As Size " />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Drawing.Size" Usage="System.Drawing.Size.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Drawing::Size Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -204,7 +231,13 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Drawing.Size other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Drawing.Size other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.Equals(System.Drawing.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Size) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Drawing.Size -&gt; bool" Usage="size.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Drawing::Size other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -226,6 +259,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="size.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -258,6 +294,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="size.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -293,6 +332,9 @@
       <MemberSignature Language="C#" Value="public int Height { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Size.Height" />
+      <MemberSignature Language="VB.NET" Value="Public Property Height As Integer" />
+      <MemberSignature Language="F#" Value="member this.Height : int with get, set" Usage="System.Drawing.Size.Height" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -327,6 +369,9 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Size.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Drawing.Size.IsEmpty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -354,6 +399,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Size operator + (System.Drawing.Size sz1, System.Drawing.Size sz2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.Size op_Addition(valuetype System.Drawing.Size sz1, valuetype System.Drawing.Size sz2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.op_Addition(System.Drawing.Size,System.Drawing.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (sz1 As Size, sz2 As Size) As Size" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Drawing.Size * System.Drawing.Size -&gt; System.Drawing.Size" Usage="sz1 + sz2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size operator +(System::Drawing::Size sz1, System::Drawing::Size sz2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -398,6 +446,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Drawing.Size sz1, System.Drawing.Size sz2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Drawing.Size sz1, valuetype System.Drawing.Size sz2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.op_Equality(System.Drawing.Size,System.Drawing.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (sz1 As Size, sz2 As Size) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Drawing.Size * System.Drawing.Size -&gt; bool" Usage="sz1 = sz2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Drawing::Size sz1, System::Drawing::Size sz2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -445,6 +496,8 @@
       <MemberSignature Language="C#" Value="public static explicit operator System.Drawing.Point (System.Drawing.Size size);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.Point op_Explicit(valuetype System.Drawing.Size size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.op_Explicit(System.Drawing.Size)~System.Drawing.Point" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Drawing.Size -&gt; System.Drawing.Point" Usage="System.Drawing.Size.op_Explicit size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Drawing::Point(System::Drawing::Size size);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -476,6 +529,9 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Drawing.SizeF (System.Drawing.Size p);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.SizeF op_Implicit(valuetype System.Drawing.Size p) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.op_Implicit(System.Drawing.Size)~System.Drawing.SizeF" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (p As Size) As SizeF" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Drawing.Size -&gt; System.Drawing.SizeF" Usage="System.Drawing.Size.op_Implicit p" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Drawing::SizeF(System::Drawing::Size p);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -520,6 +576,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Drawing.Size sz1, System.Drawing.Size sz2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Drawing.Size sz1, valuetype System.Drawing.Size sz2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.op_Inequality(System.Drawing.Size,System.Drawing.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (sz1 As Size, sz2 As Size) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Drawing.Size * System.Drawing.Size -&gt; bool" Usage="System.Drawing.Size.op_Inequality (sz1, sz2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Drawing::Size sz1, System::Drawing::Size sz2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -554,6 +613,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Size operator - (System.Drawing.Size sz1, System.Drawing.Size sz2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Drawing.Size op_Subtraction(valuetype System.Drawing.Size sz1, valuetype System.Drawing.Size sz2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.op_Subtraction(System.Drawing.Size,System.Drawing.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (sz1 As Size, sz2 As Size) As Size" />
+      <MemberSignature Language="F#" Value="static member ( - ) : System.Drawing.Size * System.Drawing.Size -&gt; System.Drawing.Size" Usage="sz1 - sz2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size operator -(System::Drawing::Size sz1, System::Drawing::Size sz2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -598,6 +660,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Size Round (System.Drawing.SizeF value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size Round(valuetype System.Drawing.SizeF value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.Round(System.Drawing.SizeF)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Round (value As SizeF) As Size" />
+      <MemberSignature Language="F#" Value="static member Round : System.Drawing.SizeF -&gt; System.Drawing.Size" Usage="System.Drawing.Size.Round value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size Round(System::Drawing::SizeF value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -640,6 +705,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Size Subtract (System.Drawing.Size sz1, System.Drawing.Size sz2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size Subtract(valuetype System.Drawing.Size sz1, valuetype System.Drawing.Size sz2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.Subtract(System.Drawing.Size,System.Drawing.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (sz1 As Size, sz2 As Size) As Size" />
+      <MemberSignature Language="F#" Value="static member Subtract : System.Drawing.Size * System.Drawing.Size -&gt; System.Drawing.Size" Usage="System.Drawing.Size.Subtract (sz1, sz2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size Subtract(System::Drawing::Size sz1, System::Drawing::Size sz2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -684,6 +752,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="size.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -712,6 +783,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Size Truncate (System.Drawing.SizeF value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Drawing.Size Truncate(valuetype System.Drawing.SizeF value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Size.Truncate(System.Drawing.SizeF)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Truncate (value As SizeF) As Size" />
+      <MemberSignature Language="F#" Value="static member Truncate : System.Drawing.SizeF -&gt; System.Drawing.Size" Usage="System.Drawing.Size.Truncate value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Size Truncate(System::Drawing::SizeF value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -754,6 +828,9 @@
       <MemberSignature Language="C#" Value="public int Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Size.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="System.Drawing.Size.Width" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Primitives</AssemblyName>
@@ -784,15 +861,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing.Primitives</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Size" /> structure from the specified <see cref="T:System.Drawing.Point" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

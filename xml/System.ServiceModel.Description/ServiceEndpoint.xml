@@ -1,7 +1,10 @@
-<Type Name="ServiceEndpoint" FullName="System.ServiceModel.Description.ServiceEndpoint">
+﻿<Type Name="ServiceEndpoint" FullName="System.ServiceModel.Description.ServiceEndpoint">
   <TypeSignature Language="C#" Value="public class ServiceEndpoint" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceEndpoint extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceEndpoint" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceEndpoint" />
+  <TypeSignature Language="F#" Value="type ServiceEndpoint = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceEndpoint" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,10 +46,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ServiceEndpoint (System.ServiceModel.Description.ContractDescription contract);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ContractDescription contract) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceEndpoint.#ctor(System.ServiceModel.Description.ContractDescription)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contract As ContractDescription)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ServiceEndpoint : System.ServiceModel.Description.ContractDescription -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="new System.ServiceModel.Description.ServiceEndpoint contract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceEndpoint(System::ServiceModel::Description::ContractDescription ^ contract);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -85,6 +101,8 @@
       <MemberSignature Language="C#" Value="public ServiceEndpoint (System.ServiceModel.Description.ContractDescription contract, System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress address);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Description.ContractDescription contract, class System.ServiceModel.Channels.Binding binding, class System.ServiceModel.EndpointAddress address) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceEndpoint.#ctor(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ServiceEndpoint : System.ServiceModel.Description.ContractDescription * System.ServiceModel.Channels.Binding * System.ServiceModel.EndpointAddress -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="new System.ServiceModel.Description.ServiceEndpoint (contract, binding, address)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceEndpoint(System::ServiceModel::Description::ContractDescription ^ contract, System::ServiceModel::Channels::Binding ^ binding, System::ServiceModel::EndpointAddress ^ address);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -127,6 +145,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress Address { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress Address" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.Address" />
+      <MemberSignature Language="VB.NET" Value="Public Property Address As EndpointAddress" />
+      <MemberSignature Language="F#" Value="member this.Address : System.ServiceModel.EndpointAddress with get, set" Usage="System.ServiceModel.Description.ServiceEndpoint.Address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ Address { System::ServiceModel::EndpointAddress ^ get(); void set(System::ServiceModel::EndpointAddress ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +188,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IEndpointBehavior&gt; Behaviors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.KeyedByTypeCollection`1&lt;class System.ServiceModel.Description.IEndpointBehavior&gt; Behaviors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.Behaviors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Behaviors As KeyedByTypeCollection(Of IEndpointBehavior)" />
+      <MemberSignature Language="F#" Value="member this.Behaviors : System.Collections.Generic.KeyedByTypeCollection&lt;System.ServiceModel.Description.IEndpointBehavior&gt;" Usage="System.ServiceModel.Description.ServiceEndpoint.Behaviors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::KeyedByTypeCollection&lt;System::ServiceModel::Description::IEndpointBehavior ^&gt; ^ Behaviors { System::Collections::Generic::KeyedByTypeCollection&lt;System::ServiceModel::Description::IEndpointBehavior ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -203,6 +227,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Binding Binding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.Binding Binding" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.Binding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Binding As Binding" />
+      <MemberSignature Language="F#" Value="member this.Binding : System.ServiceModel.Channels.Binding with get, set" Usage="System.ServiceModel.Description.ServiceEndpoint.Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::Binding ^ Binding { System::ServiceModel::Channels::Binding ^ get(); void set(System::ServiceModel::Channels::Binding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -241,6 +268,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ContractDescription Contract { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Description.ContractDescription Contract" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.Contract" />
+      <MemberSignature Language="VB.NET" Value="Public Property Contract As ContractDescription" />
+      <MemberSignature Language="F#" Value="member this.Contract : System.ServiceModel.Description.ContractDescription with get, set" Usage="System.ServiceModel.Description.ServiceEndpoint.Contract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ContractDescription ^ Contract { System::ServiceModel::Description::ContractDescription ^ get(); void set(System::ServiceModel::Description::ContractDescription ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -279,6 +309,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.KeyedCollection&lt;Type,System.ServiceModel.Description.IEndpointBehavior&gt; EndpointBehaviors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.KeyedCollection`2&lt;class System.Type, class System.ServiceModel.Description.IEndpointBehavior&gt; EndpointBehaviors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.EndpointBehaviors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndpointBehaviors As KeyedCollection(Of Type, IEndpointBehavior)" />
+      <MemberSignature Language="F#" Value="member this.EndpointBehaviors : System.Collections.ObjectModel.KeyedCollection&lt;Type, System.ServiceModel.Description.IEndpointBehavior&gt;" Usage="System.ServiceModel.Description.ServiceEndpoint.EndpointBehaviors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::KeyedCollection&lt;Type ^, System::ServiceModel::Description::IEndpointBehavior ^&gt; ^ EndpointBehaviors { System::Collections::ObjectModel::KeyedCollection&lt;Type ^, System::ServiceModel::Description::IEndpointBehavior ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -304,6 +337,9 @@
       <MemberSignature Language="C#" Value="public bool IsSystemEndpoint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSystemEndpoint" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.IsSystemEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSystemEndpoint As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSystemEndpoint : bool with get, set" Usage="System.ServiceModel.Description.ServiceEndpoint.IsSystemEndpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSystemEndpoint { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -324,6 +360,9 @@
       <MemberSignature Language="C#" Value="public Uri ListenUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ListenUri" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.ListenUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListenUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.ListenUri : Uri with get, set" Usage="System.ServiceModel.Description.ServiceEndpoint.ListenUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ListenUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -356,6 +395,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ListenUriMode ListenUriMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Description.ListenUriMode ListenUriMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.ListenUriMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ListenUriMode As ListenUriMode" />
+      <MemberSignature Language="F#" Value="member this.ListenUriMode : System.ServiceModel.Description.ListenUriMode with get, set" Usage="System.ServiceModel.Description.ServiceEndpoint.ListenUriMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ListenUriMode ListenUriMode { System::ServiceModel::Description::ListenUriMode get(); void set(System::ServiceModel::Description::ListenUriMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -388,6 +430,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceEndpoint.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.ServiceModel.Description.ServiceEndpoint.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -425,15 +470,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

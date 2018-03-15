@@ -1,7 +1,10 @@
-<Type Name="SqlDataSourceStatusEventArgs" FullName="System.Web.UI.WebControls.SqlDataSourceStatusEventArgs">
+﻿<Type Name="SqlDataSourceStatusEventArgs" FullName="System.Web.UI.WebControls.SqlDataSourceStatusEventArgs">
   <TypeSignature Language="C#" Value="public class SqlDataSourceStatusEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SqlDataSourceStatusEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlDataSourceStatusEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type SqlDataSourceStatusEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlDataSourceStatusEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +51,8 @@
       <MemberSignature Language="C#" Value="public SqlDataSourceStatusEventArgs (System.Data.Common.DbCommand command, int affectedRows, Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Common.DbCommand command, int32 affectedRows, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs.#ctor(System.Data.Common.DbCommand,System.Int32,System.Exception)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.SqlDataSourceStatusEventArgs : System.Data.Common.DbCommand * int * Exception -&gt; System.Web.UI.WebControls.SqlDataSourceStatusEventArgs" Usage="new System.Web.UI.WebControls.SqlDataSourceStatusEventArgs (command, affectedRows, exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SqlDataSourceStatusEventArgs(System::Data::Common::DbCommand ^ command, int affectedRows, Exception ^ exception);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +77,9 @@
       <MemberSignature Language="C#" Value="public int AffectedRows { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AffectedRows" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs.AffectedRows" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AffectedRows As Integer" />
+      <MemberSignature Language="F#" Value="member this.AffectedRows : int" Usage="System.Web.UI.WebControls.SqlDataSourceStatusEventArgs.AffectedRows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AffectedRows { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +110,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DbCommand Command { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DbCommand Command" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs.Command" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Command As DbCommand" />
+      <MemberSignature Language="F#" Value="member this.Command : System.Data.Common.DbCommand" Usage="System.Web.UI.WebControls.SqlDataSourceStatusEventArgs.Command" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Common::DbCommand ^ Command { System::Data::Common::DbCommand ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -141,6 +152,9 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Web.UI.WebControls.SqlDataSourceStatusEventArgs.Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +184,9 @@
       <MemberSignature Language="C#" Value="public bool ExceptionHandled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExceptionHandled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.SqlDataSourceStatusEventArgs.ExceptionHandled" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExceptionHandled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ExceptionHandled : bool with get, set" Usage="System.Web.UI.WebControls.SqlDataSourceStatusEventArgs.ExceptionHandled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceptionHandled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

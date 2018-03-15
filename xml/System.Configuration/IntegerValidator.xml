@@ -1,7 +1,10 @@
-<Type Name="IntegerValidator" FullName="System.Configuration.IntegerValidator">
+﻿<Type Name="IntegerValidator" FullName="System.Configuration.IntegerValidator">
   <TypeSignature Language="C#" Value="public class IntegerValidator : System.Configuration.ConfigurationValidatorBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IntegerValidator extends System.Configuration.ConfigurationValidatorBase" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.IntegerValidator" />
+  <TypeSignature Language="VB.NET" Value="Public Class IntegerValidator&#xA;Inherits ConfigurationValidatorBase" />
+  <TypeSignature Language="F#" Value="type IntegerValidator = class&#xA;    inherit ConfigurationValidatorBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IntegerValidator : System::Configuration::ConfigurationValidatorBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,10 +40,22 @@
     <altmember cref="T:System.Configuration.ConfigurationValidatorBase" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Configuration.IntegerValidator" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public IntegerValidator (int minValue, int maxValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 minValue, int32 maxValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.IntegerValidator.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (minValue As Integer, maxValue As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.IntegerValidator : int * int -&gt; System.Configuration.IntegerValidator" Usage="new System.Configuration.IntegerValidator (minValue, maxValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntegerValidator(int minValue, int maxValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -72,6 +87,9 @@
       <MemberSignature Language="C#" Value="public IntegerValidator (int minValue, int maxValue, bool rangeIsExclusive);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 minValue, int32 maxValue, bool rangeIsExclusive) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.IntegerValidator.#ctor(System.Int32,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (minValue As Integer, maxValue As Integer, rangeIsExclusive As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.IntegerValidator : int * int * bool -&gt; System.Configuration.IntegerValidator" Usage="new System.Configuration.IntegerValidator (minValue, maxValue, rangeIsExclusive)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntegerValidator(int minValue, int maxValue, bool rangeIsExclusive);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -114,6 +132,9 @@
       <MemberSignature Language="C#" Value="public IntegerValidator (int minValue, int maxValue, bool rangeIsExclusive, int resolution);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 minValue, int32 maxValue, bool rangeIsExclusive, int32 resolution) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.IntegerValidator.#ctor(System.Int32,System.Int32,System.Boolean,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (minValue As Integer, maxValue As Integer, rangeIsExclusive As Boolean, resolution As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.IntegerValidator : int * int * bool * int -&gt; System.Configuration.IntegerValidator" Usage="new System.Configuration.IntegerValidator (minValue, maxValue, rangeIsExclusive, resolution)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntegerValidator(int minValue, int maxValue, bool rangeIsExclusive, int resolution);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -155,6 +176,8 @@
       <MemberSignature Language="C#" Value="public override bool CanValidate (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanValidate(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.IntegerValidator.CanValidate(System.Type)" />
+      <MemberSignature Language="F#" Value="override this.CanValidate : Type -&gt; bool" Usage="integerValidator.CanValidate type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanValidate(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -192,6 +215,9 @@
       <MemberSignature Language="C#" Value="public override void Validate (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.IntegerValidator.Validate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate (value As Object)" />
+      <MemberSignature Language="F#" Value="override this.Validate : obj -&gt; unit" Usage="integerValidator.Validate value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -229,14 +255,5 @@
         <altmember cref="T:System.Configuration.ConfigurationValidatorBase" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Configuration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Configuration.IntegerValidator" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

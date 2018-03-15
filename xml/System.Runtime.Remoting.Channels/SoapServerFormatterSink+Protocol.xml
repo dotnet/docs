@@ -1,7 +1,10 @@
-<Type Name="SoapServerFormatterSink+Protocol" FullName="System.Runtime.Remoting.Channels.SoapServerFormatterSink+Protocol">
+﻿<Type Name="SoapServerFormatterSink+Protocol" FullName="System.Runtime.Remoting.Channels.SoapServerFormatterSink+Protocol">
   <TypeSignature Language="C#" Value="public enum SoapServerFormatterSink.Protocol" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable sealed SoapServerFormatterSink/Protocol extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.SoapServerFormatterSink.Protocol" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SoapServerFormatterSink.Protocol" />
+  <TypeSignature Language="F#" Value="type SoapServerFormatterSink.Protocol = " />
+  <TypeSignature Language="C++ CLI" Value="public: enum class SoapServerFormatterSink::Protocol" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Remoting</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Http" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Channels.SoapServerFormatterSink/Protocol Http = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.SoapServerFormatterSink.Protocol.Http" />
+      <MemberSignature Language="VB.NET" Value="Http" />
+      <MemberSignature Language="F#" Value="Http = 0" Usage="System.Runtime.Remoting.Channels.SoapServerFormatterSink.Protocol.Http" />
+      <MemberSignature Language="C++ CLI" Value="Http" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Channels.SoapServerFormatterSink+Protocol</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that the current formatter sink is using the HTTP protocol, and therefore requires special processing.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="Other" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Channels.SoapServerFormatterSink/Protocol Other = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Channels.SoapServerFormatterSink.Protocol.Other" />
+      <MemberSignature Language="VB.NET" Value="Other" />
+      <MemberSignature Language="F#" Value="Other = 1" Usage="System.Runtime.Remoting.Channels.SoapServerFormatterSink.Protocol.Other" />
+      <MemberSignature Language="C++ CLI" Value="Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Remoting</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Channels.SoapServerFormatterSink+Protocol</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that a protocol other than HTTP is used with the current formatter sink.</summary>
       </Docs>

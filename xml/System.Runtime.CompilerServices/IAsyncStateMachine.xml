@@ -1,7 +1,10 @@
-<Type Name="IAsyncStateMachine" FullName="System.Runtime.CompilerServices.IAsyncStateMachine">
+﻿<Type Name="IAsyncStateMachine" FullName="System.Runtime.CompilerServices.IAsyncStateMachine">
   <TypeSignature Language="C#" Value="public interface IAsyncStateMachine" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAsyncStateMachine" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.IAsyncStateMachine" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAsyncStateMachine" />
+  <TypeSignature Language="F#" Value="type IAsyncStateMachine = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IAsyncStateMachine" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="public void MoveNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.IAsyncStateMachine.MoveNext" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MoveNext ()" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; unit" Usage="iAsyncStateMachine.MoveNext " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveNext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -56,6 +62,9 @@
       <MemberSignature Language="C#" Value="public void SetStateMachine (System.Runtime.CompilerServices.IAsyncStateMachine stateMachine);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetStateMachine(class System.Runtime.CompilerServices.IAsyncStateMachine stateMachine) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.IAsyncStateMachine.SetStateMachine(System.Runtime.CompilerServices.IAsyncStateMachine)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetStateMachine (stateMachine As IAsyncStateMachine)" />
+      <MemberSignature Language="F#" Value="abstract member SetStateMachine : System.Runtime.CompilerServices.IAsyncStateMachine -&gt; unit" Usage="iAsyncStateMachine.SetStateMachine stateMachine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetStateMachine(System::Runtime::CompilerServices::IAsyncStateMachine ^ stateMachine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

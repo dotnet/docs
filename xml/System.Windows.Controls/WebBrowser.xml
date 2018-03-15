@@ -1,7 +1,10 @@
-<Type Name="WebBrowser" FullName="System.Windows.Controls.WebBrowser">
+﻿<Type Name="WebBrowser" FullName="System.Windows.Controls.WebBrowser">
   <TypeSignature Language="C#" Value="public sealed class WebBrowser : System.Windows.Interop.ActiveXHost" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebBrowser extends System.Windows.Interop.ActiveXHost" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.WebBrowser" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebBrowser&#xA;Inherits ActiveXHost" />
+  <TypeSignature Language="F#" Value="type WebBrowser = class&#xA;    inherit ActiveXHost" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebBrowser sealed : System::Windows::Interop::ActiveXHost" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -119,6 +122,8 @@ internal interface IServiceProvider
       <MemberSignature Language="C#" Value="public WebBrowser ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBrowser();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -140,6 +145,9 @@ internal interface IServiceProvider
       <MemberSignature Language="C#" Value="public bool CanGoBack { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanGoBack" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.WebBrowser.CanGoBack" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanGoBack As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanGoBack : bool" Usage="System.Windows.Controls.WebBrowser.CanGoBack" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanGoBack { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -178,6 +186,9 @@ private void backButton_Click(object sender, RoutedEventArgs e)
       <MemberSignature Language="C#" Value="public bool CanGoForward { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanGoForward" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.WebBrowser.CanGoForward" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanGoForward As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanGoForward : bool" Usage="System.Windows.Controls.WebBrowser.CanGoForward" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanGoForward { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -216,6 +227,9 @@ private void forwardButton_Click(object sender, RoutedEventArgs e)
       <MemberSignature Language="C#" Value="public object Document { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Document" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.WebBrowser.Document" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Document As Object" />
+      <MemberSignature Language="F#" Value="member this.Document : obj" Usage="System.Windows.Controls.WebBrowser.Document" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Document { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -249,6 +263,9 @@ private void forwardButton_Click(object sender, RoutedEventArgs e)
       <MemberSignature Language="C#" Value="public void GoBack ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GoBack() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.GoBack" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GoBack ()" />
+      <MemberSignature Language="F#" Value="member this.GoBack : unit -&gt; unit" Usage="webBrowser.GoBack " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GoBack();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -300,6 +317,9 @@ private void backButton_Click(object sender, RoutedEventArgs e)
       <MemberSignature Language="C#" Value="public void GoForward ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GoForward() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.GoForward" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GoForward ()" />
+      <MemberSignature Language="F#" Value="member this.GoForward : unit -&gt; unit" Usage="webBrowser.GoForward " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GoForward();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -347,10 +367,22 @@ private void forwardButton_Click(object sender, RoutedEventArgs e)
         <altmember cref="M:System.Windows.Controls.WebBrowser.GoBack" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeScript">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Executes a scripting function defined in the currently loaded document.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InvokeScript">
       <MemberSignature Language="C#" Value="public object InvokeScript (string scriptName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object InvokeScript(string scriptName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.InvokeScript(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InvokeScript (scriptName As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.InvokeScript : string -&gt; obj" Usage="webBrowser.InvokeScript scriptName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeScript(System::String ^ scriptName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -434,6 +466,9 @@ private void callScriptFunctionNoParamButton_Click(object sender, RoutedEventArg
       <MemberSignature Language="C#" Value="public object InvokeScript (string scriptName, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object InvokeScript(string scriptName, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.InvokeScript(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function InvokeScript (scriptName As String, ParamArray args As Object()) As Object" />
+      <MemberSignature Language="F#" Value="member this.InvokeScript : string * obj[] -&gt; obj" Usage="webBrowser.InvokeScript (scriptName, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeScript(System::String ^ scriptName, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -532,6 +567,9 @@ private void callScriptFunctionNoParamButton_Click(object sender, RoutedEventArg
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.LoadCompletedEventHandler LoadCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.LoadCompletedEventHandler LoadCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.WebBrowser.LoadCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event LoadCompleted As LoadCompletedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.LoadCompleted : System.Windows.Navigation.LoadCompletedEventHandler " Usage="member this.LoadCompleted : System.Windows.Navigation.LoadCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::LoadCompletedEventHandler ^ LoadCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -556,10 +594,22 @@ private void callScriptFunctionNoParamButton_Click(object sender, RoutedEventArg
         <altmember cref="E:System.Windows.Controls.WebBrowser.Navigated" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Navigate">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Navigate asynchronously to the document at the specified <see cref="T:System.Uri" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Navigate">
       <MemberSignature Language="C#" Value="public void Navigate (string source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Navigate(string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.Navigate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Navigate (source As String)" />
+      <MemberSignature Language="F#" Value="member this.Navigate : string -&gt; unit" Usage="webBrowser.Navigate source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Navigate(System::String ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -588,6 +638,9 @@ private void callScriptFunctionNoParamButton_Click(object sender, RoutedEventArg
       <MemberSignature Language="C#" Value="public void Navigate (Uri source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Navigate(class System.Uri source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.Navigate(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Navigate (source As Uri)" />
+      <MemberSignature Language="F#" Value="member this.Navigate : Uri -&gt; unit" Usage="webBrowser.Navigate source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Navigate(Uri ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -654,6 +707,9 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
       <MemberSignature Language="C#" Value="public void Navigate (string source, string targetFrameName, byte[] postData, string additionalHeaders);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Navigate(string source, string targetFrameName, unsigned int8[] postData, string additionalHeaders) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.Navigate(System.String,System.String,System.Byte[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Navigate (source As String, targetFrameName As String, postData As Byte(), additionalHeaders As String)" />
+      <MemberSignature Language="F#" Value="member this.Navigate : string * string * byte[] * string -&gt; unit" Usage="webBrowser.Navigate (source, targetFrameName, postData, additionalHeaders)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Navigate(System::String ^ source, System::String ^ targetFrameName, cli::array &lt;System::Byte&gt; ^ postData, System::String ^ additionalHeaders);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -688,6 +744,9 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
       <MemberSignature Language="C#" Value="public void Navigate (Uri source, string targetFrameName, byte[] postData, string additionalHeaders);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Navigate(class System.Uri source, string targetFrameName, unsigned int8[] postData, string additionalHeaders) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.Navigate(System.Uri,System.String,System.Byte[],System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Navigate (source As Uri, targetFrameName As String, postData As Byte(), additionalHeaders As String)" />
+      <MemberSignature Language="F#" Value="member this.Navigate : Uri * string * byte[] * string -&gt; unit" Usage="webBrowser.Navigate (source, targetFrameName, postData, additionalHeaders)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Navigate(Uri ^ source, System::String ^ targetFrameName, cli::array &lt;System::Byte&gt; ^ postData, System::String ^ additionalHeaders);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -762,6 +821,9 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.NavigatedEventHandler Navigated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.NavigatedEventHandler Navigated" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.WebBrowser.Navigated" />
+      <MemberSignature Language="VB.NET" Value="Public Event Navigated As NavigatedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Navigated : System.Windows.Navigation.NavigatedEventHandler " Usage="member this.Navigated : System.Windows.Navigation.NavigatedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::NavigatedEventHandler ^ Navigated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -790,6 +852,8 @@ private void goNavigateButton_Click(object sender, RoutedEventArgs e)
       <MemberSignature Language="C#" Value="public void NavigateToStream (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void NavigateToStream(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.NavigateToStream(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="member this.NavigateToStream : System.IO.Stream -&gt; unit" Usage="webBrowser.NavigateToStream stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NavigateToStream(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -842,6 +906,9 @@ private void goNavigateToStreamButton_Click(object sender, RoutedEventArgs e)
       <MemberSignature Language="C#" Value="public void NavigateToString (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void NavigateToString(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.NavigateToString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NavigateToString (text As String)" />
+      <MemberSignature Language="F#" Value="member this.NavigateToString : string -&gt; unit" Usage="webBrowser.NavigateToString text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NavigateToString(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -896,6 +963,9 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
       <MemberSignature Language="C#" Value="public event System.Windows.Navigation.NavigatingCancelEventHandler Navigating;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Navigation.NavigatingCancelEventHandler Navigating" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.WebBrowser.Navigating" />
+      <MemberSignature Language="VB.NET" Value="Public Event Navigating As NavigatingCancelEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Navigating : System.Windows.Navigation.NavigatingCancelEventHandler " Usage="member this.Navigating : System.Windows.Navigation.NavigatingCancelEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Navigation::NavigatingCancelEventHandler ^ Navigating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -924,6 +994,9 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
       <MemberSignature Language="C#" Value="public object ObjectForScripting { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ObjectForScripting" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.WebBrowser.ObjectForScripting" />
+      <MemberSignature Language="VB.NET" Value="Public Property ObjectForScripting As Object" />
+      <MemberSignature Language="F#" Value="member this.ObjectForScripting : obj with get, set" Usage="System.Windows.Controls.WebBrowser.ObjectForScripting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ObjectForScripting { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -954,10 +1027,22 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
           <see cref="P:System.Windows.Controls.WebBrowser.ObjectForScripting" /> is set with an instance of type that is not <see langword="COMVisible" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Refresh">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reloads the current page.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Refresh">
       <MemberSignature Language="C#" Value="public void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="F#" Value="member this.Refresh : unit -&gt; unit" Usage="webBrowser.Refresh " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -983,6 +1068,9 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
       <MemberSignature Language="C#" Value="public void Refresh (bool noCache);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh(bool noCache) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.Refresh(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh (noCache As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Refresh : bool -&gt; unit" Usage="webBrowser.Refresh noCache" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh(bool noCache);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1018,6 +1106,9 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
       <MemberSignature Language="C#" Value="public Uri Source { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Source" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.WebBrowser.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Property Source As Uri" />
+      <MemberSignature Language="F#" Value="member this.Source : Uri with get, set" Usage="System.Windows.Controls.WebBrowser.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Source { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1062,6 +1153,9 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
       <MemberSignature Language="C#" Value="protected override bool TabIntoCore (System.Windows.Input.TraversalRequest request);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TabIntoCore(class System.Windows.Input.TraversalRequest request) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.TabIntoCore(System.Windows.Input.TraversalRequest)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function TabIntoCore (request As TraversalRequest) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.TabIntoCore : System.Windows.Input.TraversalRequest -&gt; bool" Usage="webBrowser.TabIntoCore request" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TabIntoCore(System::Windows::Input::TraversalRequest ^ request);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1089,6 +1183,9 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
       <MemberSignature Language="C#" Value="protected override bool TranslateAcceleratorCore (ref System.Windows.Interop.MSG msg, System.Windows.Input.ModifierKeys modifiers);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool TranslateAcceleratorCore(valuetype System.Windows.Interop.MSG&amp; msg, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.WebBrowser.TranslateAcceleratorCore(System.Windows.Interop.MSG@,System.Windows.Input.ModifierKeys)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function TranslateAcceleratorCore (ByRef msg As MSG, modifiers As ModifierKeys) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.TranslateAcceleratorCore :  * System.Windows.Input.ModifierKeys -&gt; bool" Usage="webBrowser.TranslateAcceleratorCore (msg, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool TranslateAcceleratorCore(System::Windows::Interop::MSG % msg, System::Windows::Input::ModifierKeys modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1117,32 +1214,5 @@ private void goNavigateToStringButton_Click(object sender, RoutedEventArgs e)
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Refresh">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reloads the current page.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="InvokeScript">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Executes a scripting function defined in the currently loaded document.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Navigate">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Navigate asynchronously to the document at the specified <see cref="T:System.Uri" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

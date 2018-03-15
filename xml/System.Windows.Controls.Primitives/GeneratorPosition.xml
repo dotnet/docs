@@ -1,7 +1,10 @@
-<Type Name="GeneratorPosition" FullName="System.Windows.Controls.Primitives.GeneratorPosition">
+﻿<Type Name="GeneratorPosition" FullName="System.Windows.Controls.Primitives.GeneratorPosition">
   <TypeSignature Language="C#" Value="public struct GeneratorPosition" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit GeneratorPosition extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.GeneratorPosition" />
+  <TypeSignature Language="VB.NET" Value="Public Structure GeneratorPosition" />
+  <TypeSignature Language="F#" Value="type GeneratorPosition = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class GeneratorPosition" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +48,9 @@
       <MemberSignature Language="C#" Value="public GeneratorPosition (int index, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 index, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GeneratorPosition.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (index As Integer, offset As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.Primitives.GeneratorPosition : int * int -&gt; System.Windows.Controls.Primitives.GeneratorPosition" Usage="new System.Windows.Controls.Primitives.GeneratorPosition (index, offset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GeneratorPosition(int index, int offset);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -65,6 +71,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GeneratorPosition.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="generatorPosition.Equals o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -88,6 +97,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GeneratorPosition.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="generatorPosition.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -107,6 +119,9 @@
       <MemberSignature Language="C#" Value="public int Index { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.GeneratorPosition.Index" />
+      <MemberSignature Language="VB.NET" Value="Public Property Index As Integer" />
+      <MemberSignature Language="F#" Value="member this.Index : int with get, set" Usage="System.Windows.Controls.Primitives.GeneratorPosition.Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -132,6 +147,9 @@
       <MemberSignature Language="C#" Value="public int Offset { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Offset" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.GeneratorPosition.Offset" />
+      <MemberSignature Language="VB.NET" Value="Public Property Offset As Integer" />
+      <MemberSignature Language="F#" Value="member this.Offset : int with get, set" Usage="System.Windows.Controls.Primitives.GeneratorPosition.Offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Offset { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -157,6 +175,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Controls.Primitives.GeneratorPosition gp1, System.Windows.Controls.Primitives.GeneratorPosition gp2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.Primitives.GeneratorPosition gp1, valuetype System.Windows.Controls.Primitives.GeneratorPosition gp2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GeneratorPosition.op_Equality(System.Windows.Controls.Primitives.GeneratorPosition,System.Windows.Controls.Primitives.GeneratorPosition)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (gp1 As GeneratorPosition, gp2 As GeneratorPosition) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Controls.Primitives.GeneratorPosition * System.Windows.Controls.Primitives.GeneratorPosition -&gt; bool" Usage="gp1 = gp2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Controls::Primitives::GeneratorPosition gp1, System::Windows::Controls::Primitives::GeneratorPosition gp2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -184,6 +205,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Controls.Primitives.GeneratorPosition gp1, System.Windows.Controls.Primitives.GeneratorPosition gp2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.Primitives.GeneratorPosition gp1, valuetype System.Windows.Controls.Primitives.GeneratorPosition gp2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GeneratorPosition.op_Inequality(System.Windows.Controls.Primitives.GeneratorPosition,System.Windows.Controls.Primitives.GeneratorPosition)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (gp1 As GeneratorPosition, gp2 As GeneratorPosition) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Controls.Primitives.GeneratorPosition * System.Windows.Controls.Primitives.GeneratorPosition -&gt; bool" Usage="System.Windows.Controls.Primitives.GeneratorPosition.op_Inequality (gp1, gp2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Controls::Primitives::GeneratorPosition gp1, System::Windows::Controls::Primitives::GeneratorPosition gp2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -211,6 +235,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.GeneratorPosition.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="generatorPosition.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

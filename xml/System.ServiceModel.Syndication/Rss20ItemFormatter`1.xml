@@ -1,7 +1,10 @@
-<Type Name="Rss20ItemFormatter&lt;TSyndicationItem&gt;" FullName="System.ServiceModel.Syndication.Rss20ItemFormatter&lt;TSyndicationItem&gt;">
+﻿<Type Name="Rss20ItemFormatter&lt;TSyndicationItem&gt;" FullName="System.ServiceModel.Syndication.Rss20ItemFormatter&lt;TSyndicationItem&gt;">
   <TypeSignature Language="C#" Value="public class Rss20ItemFormatter&lt;TSyndicationItem&gt; : System.ServiceModel.Syndication.Rss20ItemFormatter where TSyndicationItem : SyndicationItemnew()" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Rss20ItemFormatter`1&lt;.ctor (class System.ServiceModel.Syndication.SyndicationItem) TSyndicationItem&gt; extends System.ServiceModel.Syndication.Rss20ItemFormatter" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Syndication.Rss20ItemFormatter`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class Rss20ItemFormatter(Of TSyndicationItem)&#xA;Inherits Rss20ItemFormatter" />
+  <TypeSignature Language="F#" Value="type Rss20ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; = class&#xA;    inherit Rss20ItemFormatter" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TSyndicationItem&gt;&#xA; where TSyndicationItem : SyndicationItemgcnew()public ref class Rss20ItemFormatter : System::ServiceModel::Syndication::Rss20ItemFormatter" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,8 +24,7 @@
   <Base>
     <BaseTypeName>System.ServiceModel.Syndication.Rss20ItemFormatter</BaseTypeName>
   </Base>
-  <Interfaces>
-  </Interfaces>
+  <Interfaces></Interfaces>
   <Attributes>
     <Attribute>
       <AttributeName>System.Xml.Serialization.XmlRoot("item", Namespace="")</AttributeName>
@@ -49,10 +51,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Rss20ItemFormatter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rss20ItemFormatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +85,9 @@
       <MemberSignature Language="C#" Value="public Rss20ItemFormatter (TSyndicationItem itemToWrite);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TSyndicationItem itemToWrite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter`1.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (itemToWrite As TSyndicationItem)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Rss20ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; : 'SyndicationItem -&gt; System.ServiceModel.Syndication.Rss20ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt;" Usage="new System.ServiceModel.Syndication.Rss20ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; itemToWrite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rss20ItemFormatter(TSyndicationItem itemToWrite);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -104,6 +120,9 @@
       <MemberSignature Language="C#" Value="public Rss20ItemFormatter (TSyndicationItem itemToWrite, bool serializeExtensionsAsAtom);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!TSyndicationItem itemToWrite, bool serializeExtensionsAsAtom) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter`1.#ctor(`0,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (itemToWrite As TSyndicationItem, serializeExtensionsAsAtom As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Syndication.Rss20ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; : 'SyndicationItem * bool -&gt; System.ServiceModel.Syndication.Rss20ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt;" Usage="new System.ServiceModel.Syndication.Rss20ItemFormatter&lt;'SyndicationItem (requires 'SyndicationItem :&gt; System.ServiceModel.Syndication.SyndicationItem and 'SyndicationItem : (new : unit -&gt; 'SyndicationItem))&gt; (itemToWrite, serializeExtensionsAsAtom)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rss20ItemFormatter(TSyndicationItem itemToWrite, bool serializeExtensionsAsAtom);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -143,6 +162,9 @@
       <MemberSignature Language="C#" Value="protected override System.ServiceModel.Syndication.SyndicationItem CreateItemInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ServiceModel.Syndication.SyndicationItem CreateItemInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Syndication.Rss20ItemFormatter`1.CreateItemInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemInstance () As SyndicationItem" />
+      <MemberSignature Language="F#" Value="override this.CreateItemInstance : unit -&gt; System.ServiceModel.Syndication.SyndicationItem" Usage="rss20ItemFormatter.CreateItemInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ServiceModel::Syndication::SyndicationItem ^ CreateItemInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -162,14 +184,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.ServiceModel.Syndication.Rss20ItemFormatter`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

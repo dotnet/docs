@@ -1,7 +1,10 @@
-<Type Name="ImageSourceValueSerializer" FullName="System.Windows.Media.ImageSourceValueSerializer">
+﻿<Type Name="ImageSourceValueSerializer" FullName="System.Windows.Media.ImageSourceValueSerializer">
   <TypeSignature Language="C#" Value="public class ImageSourceValueSerializer : System.Windows.Markup.ValueSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImageSourceValueSerializer extends System.Windows.Markup.ValueSerializer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.ImageSourceValueSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class ImageSourceValueSerializer&#xA;Inherits ValueSerializer" />
+  <TypeSignature Language="F#" Value="type ImageSourceValueSerializer = class&#xA;    inherit ValueSerializer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImageSourceValueSerializer : System::Windows::Markup::ValueSerializer" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public ImageSourceValueSerializer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageSourceValueSerializer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageSourceValueSerializer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertFromString (string value, System.Windows.Markup.IValueSerializerContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertFromString(string value, class System.Windows.Markup.IValueSerializerContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageSourceValueSerializer.CanConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertFromString (value As String, context As IValueSerializerContext) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanConvertFromString : string * System.Windows.Markup.IValueSerializerContext -&gt; bool" Usage="imageSourceValueSerializer.CanConvertFromString (value, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertFromString(System::String ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -67,6 +75,9 @@
       <MemberSignature Language="C#" Value="public override bool CanConvertToString (object value, System.Windows.Markup.IValueSerializerContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanConvertToString(object value, class System.Windows.Markup.IValueSerializerContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageSourceValueSerializer.CanConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertToString (value As Object, context As IValueSerializerContext) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanConvertToString : obj * System.Windows.Markup.IValueSerializerContext -&gt; bool" Usage="imageSourceValueSerializer.CanConvertToString (value, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertToString(System::Object ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -92,6 +103,9 @@
       <MemberSignature Language="C#" Value="public override object ConvertFromString (string value, System.Windows.Markup.IValueSerializerContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFromString(string value, class System.Windows.Markup.IValueSerializerContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageSourceValueSerializer.ConvertFromString(System.String,System.Windows.Markup.IValueSerializerContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFromString (value As String, context As IValueSerializerContext) As Object" />
+      <MemberSignature Language="F#" Value="override this.ConvertFromString : string * System.Windows.Markup.IValueSerializerContext -&gt; obj" Usage="imageSourceValueSerializer.ConvertFromString (value, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFromString(System::String ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,6 +130,9 @@
       <MemberSignature Language="C#" Value="public override string ConvertToString (object value, System.Windows.Markup.IValueSerializerContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ConvertToString(object value, class System.Windows.Markup.IValueSerializerContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.ImageSourceValueSerializer.ConvertToString(System.Object,System.Windows.Markup.IValueSerializerContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertToString (value As Object, context As IValueSerializerContext) As String" />
+      <MemberSignature Language="F#" Value="override this.ConvertToString : obj * System.Windows.Markup.IValueSerializerContext -&gt; string" Usage="imageSourceValueSerializer.ConvertToString (value, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ConvertToString(System::Object ^ value, System::Windows::Markup::IValueSerializerContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

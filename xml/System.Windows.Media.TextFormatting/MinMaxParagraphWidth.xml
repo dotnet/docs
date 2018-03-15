@@ -1,7 +1,10 @@
-<Type Name="MinMaxParagraphWidth" FullName="System.Windows.Media.TextFormatting.MinMaxParagraphWidth">
+﻿<Type Name="MinMaxParagraphWidth" FullName="System.Windows.Media.TextFormatting.MinMaxParagraphWidth">
   <TypeSignature Language="C#" Value="public struct MinMaxParagraphWidth : IEquatable&lt;System.Windows.Media.TextFormatting.MinMaxParagraphWidth&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MinMaxParagraphWidth extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.Media.TextFormatting.MinMaxParagraphWidth&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.MinMaxParagraphWidth" />
+  <TypeSignature Language="VB.NET" Value="Public Structure MinMaxParagraphWidth&#xA;Implements IEquatable(Of MinMaxParagraphWidth)" />
+  <TypeSignature Language="F#" Value="type MinMaxParagraphWidth = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class MinMaxParagraphWidth : IEquatable&lt;System::Windows::Media::TextFormatting::MinMaxParagraphWidth&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +32,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.MinMaxParagraphWidth.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="minMaxParagraphWidth.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -56,7 +71,13 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Media.TextFormatting.MinMaxParagraphWidth value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.Media.TextFormatting.MinMaxParagraphWidth value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.MinMaxParagraphWidth.Equals(System.Windows.Media.TextFormatting.MinMaxParagraphWidth)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (value As MinMaxParagraphWidth) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Media.TextFormatting.MinMaxParagraphWidth -&gt; bool" Usage="minMaxParagraphWidth.Equals value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Windows::Media::TextFormatting::MinMaxParagraphWidth value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -79,6 +100,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.MinMaxParagraphWidth.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="minMaxParagraphWidth.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +122,9 @@
       <MemberSignature Language="C#" Value="public double MaxWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 MaxWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.MinMaxParagraphWidth.MaxWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.MaxWidth : double" Usage="System.Windows.Media.TextFormatting.MinMaxParagraphWidth.MaxWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MaxWidth { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -116,6 +143,9 @@
       <MemberSignature Language="C#" Value="public double MinWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 MinWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.MinMaxParagraphWidth.MinWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.MinWidth : double" Usage="System.Windows.Media.TextFormatting.MinMaxParagraphWidth.MinWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MinWidth { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -149,6 +179,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Media.TextFormatting.MinMaxParagraphWidth left, System.Windows.Media.TextFormatting.MinMaxParagraphWidth right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Media.TextFormatting.MinMaxParagraphWidth left, valuetype System.Windows.Media.TextFormatting.MinMaxParagraphWidth right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.MinMaxParagraphWidth.op_Equality(System.Windows.Media.TextFormatting.MinMaxParagraphWidth,System.Windows.Media.TextFormatting.MinMaxParagraphWidth)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As MinMaxParagraphWidth, right As MinMaxParagraphWidth) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Media.TextFormatting.MinMaxParagraphWidth * System.Windows.Media.TextFormatting.MinMaxParagraphWidth -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Media::TextFormatting::MinMaxParagraphWidth left, System::Windows::Media::TextFormatting::MinMaxParagraphWidth right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -175,6 +208,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Media.TextFormatting.MinMaxParagraphWidth left, System.Windows.Media.TextFormatting.MinMaxParagraphWidth right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Media.TextFormatting.MinMaxParagraphWidth left, valuetype System.Windows.Media.TextFormatting.MinMaxParagraphWidth right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.MinMaxParagraphWidth.op_Inequality(System.Windows.Media.TextFormatting.MinMaxParagraphWidth,System.Windows.Media.TextFormatting.MinMaxParagraphWidth)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As MinMaxParagraphWidth, right As MinMaxParagraphWidth) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Media.TextFormatting.MinMaxParagraphWidth * System.Windows.Media.TextFormatting.MinMaxParagraphWidth -&gt; bool" Usage="System.Windows.Media.TextFormatting.MinMaxParagraphWidth.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Media::TextFormatting::MinMaxParagraphWidth left, System::Windows::Media::TextFormatting::MinMaxParagraphWidth right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -203,14 +239,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the specified object is equal to the current <see cref="T:System.Windows.Media.TextFormatting.CharacterBufferReference" /> object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

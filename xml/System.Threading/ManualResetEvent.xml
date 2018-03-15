@@ -1,7 +1,10 @@
-<Type Name="ManualResetEvent" FullName="System.Threading.ManualResetEvent">
+﻿<Type Name="ManualResetEvent" FullName="System.Threading.ManualResetEvent">
   <TypeSignature Language="C#" Value="public sealed class ManualResetEvent : System.Threading.EventWaitHandle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManualResetEvent extends System.Threading.EventWaitHandle" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ManualResetEvent" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManualResetEvent&#xA;Inherits EventWaitHandle" />
+  <TypeSignature Language="F#" Value="type ManualResetEvent = class&#xA;    inherit EventWaitHandle" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManualResetEvent sealed : System::Threading::EventWaitHandle" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +75,9 @@
       <MemberSignature Language="C#" Value="public ManualResetEvent (bool initialState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool initialState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ManualResetEvent.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initialState As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Threading.ManualResetEvent : bool -&gt; System.Threading.ManualResetEvent" Usage="new System.Threading.ManualResetEvent initialState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ManualResetEvent(bool initialState);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

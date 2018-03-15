@@ -1,7 +1,10 @@
-<Type Name="FileSystemInfo" FullName="System.IO.FileSystemInfo">
+﻿<Type Name="FileSystemInfo" FullName="System.IO.FileSystemInfo">
   <TypeSignature Language="C#" Value="public abstract class FileSystemInfo : MarshalByRefObject, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit FileSystemInfo extends System.MarshalByRefObject implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.IO.FileSystemInfo" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class FileSystemInfo&#xA;Inherits MarshalByRefObject&#xA;Implements ISerializable" />
+  <TypeSignature Language="F#" Value="type FileSystemInfo = class&#xA;    inherit MarshalByRefObject&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileSystemInfo abstract : MarshalByRefObject, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -70,10 +73,22 @@
     <altmember cref="T:System.IO.DriveInfo" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.FileSystemInfo" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected FileSystemInfo ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemInfo.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; FileSystemInfo();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -107,6 +122,9 @@
       <MemberSignature Language="C#" Value="protected FileSystemInfo (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemInfo.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.IO.FileSystemInfo : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IO.FileSystemInfo" Usage="new System.IO.FileSystemInfo (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; FileSystemInfo(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -145,6 +163,9 @@
       <MemberSignature Language="C#" Value="public System.IO.FileAttributes Attributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.FileAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemInfo.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property Attributes As FileAttributes" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.IO.FileAttributes with get, set" Usage="System.IO.FileSystemInfo.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::FileAttributes Attributes { System::IO::FileAttributes get(); void set(System::IO::FileAttributes value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -232,6 +253,9 @@
       <MemberSignature Language="C#" Value="public DateTime CreationTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreationTime" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemInfo.CreationTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreationTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.CreationTime : DateTime with get, set" Usage="System.IO.FileSystemInfo.CreationTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CreationTime { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -305,6 +329,9 @@ On Unix platforms that do not support creation or birth time, this property retu
       <MemberSignature Language="C#" Value="public DateTime CreationTimeUtc { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime CreationTimeUtc" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemInfo.CreationTimeUtc" />
+      <MemberSignature Language="VB.NET" Value="Public Property CreationTimeUtc As DateTime" />
+      <MemberSignature Language="F#" Value="member this.CreationTimeUtc : DateTime with get, set" Usage="System.IO.FileSystemInfo.CreationTimeUtc" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime CreationTimeUtc { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -379,6 +406,9 @@ On Unix platforms that do not support creation or birth time, this property retu
       <MemberSignature Language="C#" Value="public abstract void Delete ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemInfo.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Delete ()" />
+      <MemberSignature Language="F#" Value="abstract member Delete : unit -&gt; unit" Usage="fileSystemInfo.Delete " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Delete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -410,6 +440,9 @@ On Unix platforms that do not support creation or birth time, this property retu
       <MemberSignature Language="C#" Value="public abstract bool Exists { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Exists" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemInfo.Exists" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Exists As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Exists : bool" Usage="System.IO.FileSystemInfo.Exists" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool Exists { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -447,6 +480,9 @@ On Unix platforms that do not support creation or birth time, this property retu
       <MemberSignature Language="C#" Value="public string Extension { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Extension" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemInfo.Extension" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Extension As String" />
+      <MemberSignature Language="F#" Value="member this.Extension : string" Usage="System.IO.FileSystemInfo.Extension" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Extension { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -495,6 +531,9 @@ On Unix platforms that do not support creation or birth time, this property retu
       <MemberSignature Language="C#" Value="public virtual string FullName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FullName" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemInfo.FullName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property FullName As String" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="System.IO.FileSystemInfo.FullName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FullName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -550,6 +589,9 @@ On Unix platforms that do not support creation or birth time, this property retu
       <MemberSignature Language="C#" Value="protected string FullPath;" />
       <MemberSignature Language="ILAsm" Value=".field family string FullPath" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileSystemInfo.FullPath" />
+      <MemberSignature Language="VB.NET" Value="Protected FullPath As String " />
+      <MemberSignature Language="F#" Value="val mutable FullPath : string" Usage="System.IO.FileSystemInfo.FullPath" />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ FullPath;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -584,7 +626,13 @@ On Unix platforms that do not support creation or birth time, this property retu
       <MemberSignature Language="C#" Value="public virtual void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit&#xA;override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="fileSystemInfo.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -639,6 +687,9 @@ On Unix platforms that do not support creation or birth time, this property retu
       <MemberSignature Language="C#" Value="public DateTime LastAccessTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastAccessTime" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemInfo.LastAccessTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastAccessTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.LastAccessTime : DateTime with get, set" Usage="System.IO.FileSystemInfo.LastAccessTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastAccessTime { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -708,6 +759,9 @@ On Unix platforms that do not support creation or birth time, this property retu
       <MemberSignature Language="C#" Value="public DateTime LastAccessTimeUtc { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastAccessTimeUtc" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemInfo.LastAccessTimeUtc" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastAccessTimeUtc As DateTime" />
+      <MemberSignature Language="F#" Value="member this.LastAccessTimeUtc : DateTime with get, set" Usage="System.IO.FileSystemInfo.LastAccessTimeUtc" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastAccessTimeUtc { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -779,6 +833,9 @@ On Unix platforms that do not support creation or birth time, this property retu
       <MemberSignature Language="C#" Value="public DateTime LastWriteTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastWriteTime" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemInfo.LastWriteTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastWriteTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.LastWriteTime : DateTime with get, set" Usage="System.IO.FileSystemInfo.LastWriteTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastWriteTime { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -846,6 +903,9 @@ On Unix platforms that do not support creation or birth time, this property retu
       <MemberSignature Language="C#" Value="public DateTime LastWriteTimeUtc { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime LastWriteTimeUtc" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemInfo.LastWriteTimeUtc" />
+      <MemberSignature Language="VB.NET" Value="Public Property LastWriteTimeUtc As DateTime" />
+      <MemberSignature Language="F#" Value="member this.LastWriteTimeUtc : DateTime with get, set" Usage="System.IO.FileSystemInfo.LastWriteTimeUtc" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime LastWriteTimeUtc { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -915,6 +975,9 @@ On Unix platforms that do not support creation or birth time, this property retu
       <MemberSignature Language="C#" Value="public abstract string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.IO.FileSystemInfo.Name" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.IO.FileSystemInfo.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -953,6 +1016,9 @@ On Unix platforms that do not support creation or birth time, this property retu
       <MemberSignature Language="C#" Value="protected string OriginalPath;" />
       <MemberSignature Language="ILAsm" Value=".field family string OriginalPath" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileSystemInfo.OriginalPath" />
+      <MemberSignature Language="VB.NET" Value="Protected OriginalPath As String " />
+      <MemberSignature Language="F#" Value="val mutable OriginalPath : string" Usage="System.IO.FileSystemInfo.OriginalPath" />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ OriginalPath;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -988,6 +1054,9 @@ On Unix platforms that do not support creation or birth time, this property retu
       <MemberSignature Language="C#" Value="public void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.FileSystemInfo.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Refresh ()" />
+      <MemberSignature Language="F#" Value="member this.Refresh : unit -&gt; unit" Usage="fileSystemInfo.Refresh " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -1028,15 +1097,5 @@ On Unix platforms that do not support creation or birth time, this property retu
         <altmember cref="T:System.IO.FileSystemWatcher" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IO.FileSystem</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.FileSystemInfo" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

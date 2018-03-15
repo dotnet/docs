@@ -1,7 +1,10 @@
-<Type Name="SessionSecurityTokenCache" FullName="System.IdentityModel.Tokens.SessionSecurityTokenCache">
+﻿<Type Name="SessionSecurityTokenCache" FullName="System.IdentityModel.Tokens.SessionSecurityTokenCache">
   <TypeSignature Language="C#" Value="public abstract class SessionSecurityTokenCache : System.IdentityModel.Configuration.ICustomIdentityConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SessionSecurityTokenCache extends System.Object implements class System.IdentityModel.Configuration.ICustomIdentityConfiguration" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.SessionSecurityTokenCache" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SessionSecurityTokenCache&#xA;Implements ICustomIdentityConfiguration" />
+  <TypeSignature Language="F#" Value="type SessionSecurityTokenCache = class&#xA;    interface ICustomIdentityConfiguration" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SessionSecurityTokenCache abstract : System::IdentityModel::Configuration::ICustomIdentityConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,8 @@
       <MemberSignature Language="C#" Value="protected SessionSecurityTokenCache ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SessionSecurityTokenCache();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -38,6 +43,9 @@
       <MemberSignature Language="C#" Value="public abstract void AddOrUpdate (System.IdentityModel.Tokens.SessionSecurityTokenCacheKey key, System.IdentityModel.Tokens.SessionSecurityToken value, DateTime expiryTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddOrUpdate(class System.IdentityModel.Tokens.SessionSecurityTokenCacheKey key, class System.IdentityModel.Tokens.SessionSecurityToken value, valuetype System.DateTime expiryTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.AddOrUpdate(System.IdentityModel.Tokens.SessionSecurityTokenCacheKey,System.IdentityModel.Tokens.SessionSecurityToken,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub AddOrUpdate (key As SessionSecurityTokenCacheKey, value As SessionSecurityToken, expiryTime As DateTime)" />
+      <MemberSignature Language="F#" Value="abstract member AddOrUpdate : System.IdentityModel.Tokens.SessionSecurityTokenCacheKey * System.IdentityModel.Tokens.SessionSecurityToken * DateTime -&gt; unit" Usage="sessionSecurityTokenCache.AddOrUpdate (key, value, expiryTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void AddOrUpdate(System::IdentityModel::Tokens::SessionSecurityTokenCacheKey ^ key, System::IdentityModel::Tokens::SessionSecurityToken ^ value, DateTime expiryTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -63,6 +71,9 @@
       <MemberSignature Language="C#" Value="public abstract System.IdentityModel.Tokens.SessionSecurityToken Get (System.IdentityModel.Tokens.SessionSecurityTokenCacheKey key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IdentityModel.Tokens.SessionSecurityToken Get(class System.IdentityModel.Tokens.SessionSecurityTokenCacheKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.Get(System.IdentityModel.Tokens.SessionSecurityTokenCacheKey)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Get (key As SessionSecurityTokenCacheKey) As SessionSecurityToken" />
+      <MemberSignature Language="F#" Value="abstract member Get : System.IdentityModel.Tokens.SessionSecurityTokenCacheKey -&gt; System.IdentityModel.Tokens.SessionSecurityToken" Usage="sessionSecurityTokenCache.Get key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IdentityModel::Tokens::SessionSecurityToken ^ Get(System::IdentityModel::Tokens::SessionSecurityTokenCacheKey ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -85,6 +96,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IEnumerable&lt;System.IdentityModel.Tokens.SessionSecurityToken&gt; GetAll (string endpointId, System.Xml.UniqueId contextId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.IdentityModel.Tokens.SessionSecurityToken&gt; GetAll(string endpointId, class System.Xml.UniqueId contextId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.GetAll(System.String,System.Xml.UniqueId)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAll (endpointId As String, contextId As UniqueId) As IEnumerable(Of SessionSecurityToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetAll : string * System.Xml.UniqueId -&gt; seq&lt;System.IdentityModel.Tokens.SessionSecurityToken&gt;" Usage="sessionSecurityTokenCache.GetAll (endpointId, contextId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::IdentityModel::Tokens::SessionSecurityToken ^&gt; ^ GetAll(System::String ^ endpointId, System::Xml::UniqueId ^ contextId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -109,7 +123,13 @@
       <MemberSignature Language="C#" Value="public virtual void LoadCustomConfiguration (System.Xml.XmlNodeList nodelist);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadCustomConfiguration(class System.Xml.XmlNodeList nodelist) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.LoadCustomConfiguration(System.Xml.XmlNodeList)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub LoadCustomConfiguration (nodelist As XmlNodeList)" />
+      <MemberSignature Language="F#" Value="abstract member LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit&#xA;override this.LoadCustomConfiguration : System.Xml.XmlNodeList -&gt; unit" Usage="sessionSecurityTokenCache.LoadCustomConfiguration nodelist" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LoadCustomConfiguration(System::Xml::XmlNodeList ^ nodelist);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IdentityModel.Configuration.ICustomIdentityConfiguration.LoadCustomConfiguration(System.Xml.XmlNodeList)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -137,6 +157,9 @@
       <MemberSignature Language="C#" Value="public abstract void Remove (System.IdentityModel.Tokens.SessionSecurityTokenCacheKey key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(class System.IdentityModel.Tokens.SessionSecurityTokenCacheKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.Remove(System.IdentityModel.Tokens.SessionSecurityTokenCacheKey)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Remove (key As SessionSecurityTokenCacheKey)" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.IdentityModel.Tokens.SessionSecurityTokenCacheKey -&gt; unit" Usage="sessionSecurityTokenCache.Remove key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Remove(System::IdentityModel::Tokens::SessionSecurityTokenCacheKey ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -154,10 +177,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveAll">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When implemented in a derived class, attempts to remove all of the entries associated with the specified identifiers.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveAll">
       <MemberSignature Language="C#" Value="public abstract void RemoveAll (string endpointId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAll(string endpointId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.RemoveAll(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub RemoveAll (endpointId As String)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAll : string -&gt; unit" Usage="sessionSecurityTokenCache.RemoveAll endpointId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void RemoveAll(System::String ^ endpointId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -179,6 +214,9 @@
       <MemberSignature Language="C#" Value="public abstract void RemoveAll (string endpointId, System.Xml.UniqueId contextId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAll(string endpointId, class System.Xml.UniqueId contextId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.SessionSecurityTokenCache.RemoveAll(System.String,System.Xml.UniqueId)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub RemoveAll (endpointId As String, contextId As UniqueId)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAll : string * System.Xml.UniqueId -&gt; unit" Usage="sessionSecurityTokenCache.RemoveAll (endpointId, contextId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void RemoveAll(System::String ^ endpointId, System::Xml::UniqueId ^ contextId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -198,14 +236,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="RemoveAll">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When implemented in a derived class, attempts to remove all of the entries associated with the specified identifiers.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

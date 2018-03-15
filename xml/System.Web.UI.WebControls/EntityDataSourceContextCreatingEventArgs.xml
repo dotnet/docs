@@ -1,7 +1,10 @@
-<Type Name="EntityDataSourceContextCreatingEventArgs" FullName="System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs">
+﻿<Type Name="EntityDataSourceContextCreatingEventArgs" FullName="System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs">
   <TypeSignature Language="C#" Value="public class EntityDataSourceContextCreatingEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityDataSourceContextCreatingEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityDataSourceContextCreatingEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type EntityDataSourceContextCreatingEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityDataSourceContextCreatingEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@ public partial class _Default : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectContext Context { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Objects.ObjectContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context" />
+      <MemberSignature Language="VB.NET" Value="Public Property Context As ObjectContext" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Data.Objects.ObjectContext with get, set" Usage="System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Objects::ObjectContext ^ Context { System::Data::Objects::ObjectContext ^ get(); void set(System::Data::Objects::ObjectContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>

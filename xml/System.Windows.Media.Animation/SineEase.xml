@@ -1,7 +1,10 @@
-<Type Name="SineEase" FullName="System.Windows.Media.Animation.SineEase">
+﻿<Type Name="SineEase" FullName="System.Windows.Media.Animation.SineEase">
   <TypeSignature Language="C#" Value="public class SineEase : System.Windows.Media.Animation.EasingFunctionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SineEase extends System.Windows.Media.Animation.EasingFunctionBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.SineEase" />
+  <TypeSignature Language="VB.NET" Value="Public Class SineEase&#xA;Inherits EasingFunctionBase" />
+  <TypeSignature Language="F#" Value="type SineEase = class&#xA;    inherit EasingFunctionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SineEase : System::Windows::Media::Animation::EasingFunctionBase" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +68,8 @@
       <MemberSignature Language="C#" Value="public SineEase ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SineEase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SineEase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -80,6 +85,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SineEase.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="sineEase.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -114,6 +122,9 @@
       <MemberSignature Language="C#" Value="protected override double EaseInCore (double normalizedTime);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance float64 EaseInCore(float64 normalizedTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.SineEase.EaseInCore(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function EaseInCore (normalizedTime As Double) As Double" />
+      <MemberSignature Language="F#" Value="override this.EaseInCore : double -&gt; double" Usage="sineEase.EaseInCore normalizedTime" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override double EaseInCore(double normalizedTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

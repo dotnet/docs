@@ -1,7 +1,10 @@
-<Type Name="CatalogExportProvider" FullName="System.ComponentModel.Composition.Hosting.CatalogExportProvider">
+﻿<Type Name="CatalogExportProvider" FullName="System.ComponentModel.Composition.Hosting.CatalogExportProvider">
   <TypeSignature Language="C#" Value="public class CatalogExportProvider : System.ComponentModel.Composition.Hosting.ExportProvider, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CatalogExportProvider extends System.ComponentModel.Composition.Hosting.ExportProvider implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Hosting.CatalogExportProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class CatalogExportProvider&#xA;Inherits ExportProvider&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type CatalogExportProvider = class&#xA;    inherit ExportProvider&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CatalogExportProvider : System::ComponentModel::Composition::Hosting::ExportProvider, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,10 +32,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.CatalogExportProvider" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CatalogExportProvider (System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CatalogExportProvider.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (catalog As ComposablePartCatalog)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Hosting.CatalogExportProvider : System.ComponentModel.Composition.Primitives.ComposablePartCatalog -&gt; System.ComponentModel.Composition.Hosting.CatalogExportProvider" Usage="new System.ComponentModel.Composition.Hosting.CatalogExportProvider catalog" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CatalogExportProvider(System::ComponentModel::Composition::Primitives::ComposablePartCatalog ^ catalog);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -54,6 +70,9 @@
       <MemberSignature Language="C#" Value="public CatalogExportProvider (System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog, bool isThreadSafe);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog, bool isThreadSafe) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CatalogExportProvider.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (catalog As ComposablePartCatalog, isThreadSafe As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Hosting.CatalogExportProvider : System.ComponentModel.Composition.Primitives.ComposablePartCatalog * bool -&gt; System.ComponentModel.Composition.Hosting.CatalogExportProvider" Usage="new System.ComponentModel.Composition.Hosting.CatalogExportProvider (catalog, isThreadSafe)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CatalogExportProvider(System::ComponentModel::Composition::Primitives::ComposablePartCatalog ^ catalog, bool isThreadSafe);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -78,6 +97,8 @@
       <MemberSignature Language="C#" Value="public CatalogExportProvider (System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog, System.ComponentModel.Composition.Hosting.CompositionOptions compositionOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.Composition.Primitives.ComposablePartCatalog catalog, valuetype System.ComponentModel.Composition.Hosting.CompositionOptions compositionOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CatalogExportProvider.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.ComponentModel.Composition.Hosting.CompositionOptions)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.Hosting.CatalogExportProvider : System.ComponentModel.Composition.Primitives.ComposablePartCatalog * System.ComponentModel.Composition.Hosting.CompositionOptions -&gt; System.ComponentModel.Composition.Hosting.CatalogExportProvider" Usage="new System.ComponentModel.Composition.Hosting.CatalogExportProvider (catalog, compositionOptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CatalogExportProvider(System::ComponentModel::Composition::Primitives::ComposablePartCatalog ^ catalog, System::ComponentModel::Composition::Hosting::CompositionOptions compositionOptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -101,6 +122,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Primitives.ComposablePartCatalog Catalog { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Composition.Primitives.ComposablePartCatalog Catalog" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.CatalogExportProvider.Catalog" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Catalog As ComposablePartCatalog" />
+      <MemberSignature Language="F#" Value="member this.Catalog : System.ComponentModel.Composition.Primitives.ComposablePartCatalog" Usage="System.ComponentModel.Composition.Hosting.CatalogExportProvider.Catalog" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Composition::Primitives::ComposablePartCatalog ^ Catalog { System::ComponentModel::Composition::Primitives::ComposablePartCatalog ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -117,11 +141,27 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Composition.Hosting.CompositionContainer" /> has been disposed of.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Composition.Hosting.CatalogExportProvider" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CatalogExportProvider.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="catalogExportProvider.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -152,6 +192,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CatalogExportProvider.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="catalogExportProvider.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -175,6 +218,8 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.Generic.IEnumerable&lt;System.ComponentModel.Composition.Primitives.Export&gt; GetExportsCore (System.ComponentModel.Composition.Primitives.ImportDefinition definition, System.ComponentModel.Composition.Hosting.AtomicComposition atomicComposition);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.Composition.Primitives.Export&gt; GetExportsCore(class System.ComponentModel.Composition.Primitives.ImportDefinition definition, class System.ComponentModel.Composition.Hosting.AtomicComposition atomicComposition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.Hosting.CatalogExportProvider.GetExportsCore(System.ComponentModel.Composition.Primitives.ImportDefinition,System.ComponentModel.Composition.Hosting.AtomicComposition)" />
+      <MemberSignature Language="F#" Value="override this.GetExportsCore : System.ComponentModel.Composition.Primitives.ImportDefinition * System.ComponentModel.Composition.Hosting.AtomicComposition -&gt; seq&lt;System.ComponentModel.Composition.Primitives.Export&gt;" Usage="catalogExportProvider.GetExportsCore (definition, atomicComposition)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::IEnumerable&lt;System::ComponentModel::Composition::Primitives::Export ^&gt; ^ GetExportsCore(System::ComponentModel::Composition::Primitives::ImportDefinition ^ definition, System::ComponentModel::Composition::Hosting::AtomicComposition ^ atomicComposition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -207,6 +252,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Hosting.ExportProvider SourceProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Composition.Hosting.ExportProvider SourceProvider" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Hosting.CatalogExportProvider.SourceProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Property SourceProvider As ExportProvider" />
+      <MemberSignature Language="F#" Value="member this.SourceProvider : System.ComponentModel.Composition.Hosting.ExportProvider with get, set" Usage="System.ComponentModel.Composition.Hosting.CatalogExportProvider.SourceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Composition::Hosting::ExportProvider ^ SourceProvider { System::ComponentModel::Composition::Hosting::ExportProvider ^ get(); void set(System::ComponentModel::Composition::Hosting::ExportProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -237,25 +285,5 @@
  The methods on the <see cref="T:System.ComponentModel.Composition.Hosting.CatalogExportProvider" /> object have already been accessed.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Composition.Hosting.CatalogExportProvider" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.Hosting.CatalogExportProvider" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

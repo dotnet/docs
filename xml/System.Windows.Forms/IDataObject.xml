@@ -1,7 +1,10 @@
-<Type Name="IDataObject" FullName="System.Windows.Forms.IDataObject">
+﻿<Type Name="IDataObject" FullName="System.Windows.Forms.IDataObject">
   <TypeSignature Language="C#" Value="public interface IDataObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IDataObject" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataObject" />
+  <TypeSignature Language="F#" Value="type IDataObject = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,10 +41,22 @@
     <altmember cref="T:System.Windows.Forms.DataFormats" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="GetData">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the data associated with the specified data format.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetData">
       <MemberSignature Language="C#" Value="public object GetData (string format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetData(string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetData(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetData (format As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetData : string -&gt; obj" Usage="iDataObject.GetData format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetData(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +109,9 @@
       <MemberSignature Language="C#" Value="public object GetData (Type format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetData(class System.Type format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetData(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetData (format As Type) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetData : Type -&gt; obj" Usage="iDataObject.GetData format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetData(Type ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -146,6 +164,9 @@
       <MemberSignature Language="C#" Value="public object GetData (string format, bool autoConvert);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetData(string format, bool autoConvert) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetData(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetData (format As String, autoConvert As Boolean) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetData : string * bool -&gt; obj" Usage="iDataObject.GetData (format, autoConvert)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetData(System::String ^ format, bool autoConvert);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -199,10 +220,22 @@
         <altmember cref="M:System.Windows.Forms.DataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDataPresent">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether data stored in this instance is associated with the specified format.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDataPresent">
       <MemberSignature Language="C#" Value="public bool GetDataPresent (string format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetDataPresent(string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDataPresent (format As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member GetDataPresent : string -&gt; bool" Usage="iDataObject.GetDataPresent format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetDataPresent(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -250,6 +283,9 @@
       <MemberSignature Language="C#" Value="public bool GetDataPresent (Type format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetDataPresent(class System.Type format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetDataPresent(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDataPresent (format As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member GetDataPresent : Type -&gt; bool" Usage="iDataObject.GetDataPresent format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetDataPresent(Type ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -297,6 +333,9 @@
       <MemberSignature Language="C#" Value="public bool GetDataPresent (string format, bool autoConvert);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetDataPresent(string format, bool autoConvert) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetDataPresent(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDataPresent (format As String, autoConvert As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member GetDataPresent : string * bool -&gt; bool" Usage="iDataObject.GetDataPresent (format, autoConvert)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetDataPresent(System::String ^ format, bool autoConvert);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -356,10 +395,22 @@
         <altmember cref="M:System.Windows.Forms.IDataObject.GetFormats(System.Boolean)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetFormats">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list of all formats that data stored in this instance is associated with or can be converted to.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetFormats">
       <MemberSignature Language="C#" Value="public string[] GetFormats ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GetFormats() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetFormats" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFormats () As String()" />
+      <MemberSignature Language="F#" Value="abstract member GetFormats : unit -&gt; string[]" Usage="iDataObject.GetFormats " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetFormats();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -402,6 +453,9 @@
       <MemberSignature Language="C#" Value="public string[] GetFormats (bool autoConvert);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GetFormats(bool autoConvert) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.GetFormats(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFormats (autoConvert As Boolean) As String()" />
+      <MemberSignature Language="F#" Value="abstract member GetFormats : bool -&gt; string[]" Usage="iDataObject.GetFormats autoConvert" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetFormats(bool autoConvert);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -444,10 +498,22 @@
         <altmember cref="M:System.Windows.Forms.DataObject.GetData(System.String,System.Boolean)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetData">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Stores the specified data and its associated format in this instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetData">
       <MemberSignature Language="C#" Value="public void SetData (object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetData(object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.SetData(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetData (data As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetData : obj -&gt; unit" Usage="iDataObject.SetData data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -492,6 +558,9 @@
       <MemberSignature Language="C#" Value="public void SetData (string format, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetData(string format, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetData (format As String, data As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetData : string * obj -&gt; unit" Usage="iDataObject.SetData (format, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(System::String ^ format, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -538,6 +607,9 @@
       <MemberSignature Language="C#" Value="public void SetData (Type format, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetData(class System.Type format, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.SetData(System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetData (format As Type, data As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetData : Type * obj -&gt; unit" Usage="iDataObject.SetData (format, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(Type ^ format, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -585,6 +657,9 @@
       <MemberSignature Language="C#" Value="public void SetData (string format, bool autoConvert, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetData(string format, bool autoConvert, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.IDataObject.SetData(System.String,System.Boolean,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetData (format As String, autoConvert As Boolean, data As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SetData : string * bool * obj -&gt; unit" Usage="iDataObject.SetData (format, autoConvert, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetData(System::String ^ format, bool autoConvert, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -628,41 +703,5 @@
         <altmember cref="M:System.Windows.Forms.DataObject.SetData(System.String,System.Boolean,System.Object)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetData">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the data associated with the specified data format.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetData">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Stores the specified data and its associated format in this instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetFormats">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a list of all formats that data stored in this instance is associated with or can be converted to.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetDataPresent">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether data stored in this instance is associated with the specified format.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

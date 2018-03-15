@@ -1,7 +1,10 @@
-<Type Name="IDataSourceProvider" FullName="System.Web.UI.Design.IDataSourceProvider">
+﻿<Type Name="IDataSourceProvider" FullName="System.Web.UI.Design.IDataSourceProvider">
   <TypeSignature Language="C#" Value="public interface IDataSourceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataSourceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IDataSourceProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataSourceProvider" />
+  <TypeSignature Language="F#" Value="type IDataSourceProvider = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataSourceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable GetResolvedSelectedDataSource ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerable GetResolvedSelectedDataSource() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceProvider.GetResolvedSelectedDataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResolvedSelectedDataSource () As IEnumerable" />
+      <MemberSignature Language="F#" Value="abstract member GetResolvedSelectedDataSource : unit -&gt; System.Collections.IEnumerable" Usage="iDataSourceProvider.GetResolvedSelectedDataSource " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerable ^ GetResolvedSelectedDataSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -58,6 +64,9 @@
       <MemberSignature Language="C#" Value="public object GetSelectedDataSource ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetSelectedDataSource() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.IDataSourceProvider.GetSelectedDataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSelectedDataSource () As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetSelectedDataSource : unit -&gt; obj" Usage="iDataSourceProvider.GetSelectedDataSource " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetSelectedDataSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

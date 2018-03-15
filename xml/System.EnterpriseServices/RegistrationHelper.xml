@@ -1,7 +1,10 @@
-<Type Name="RegistrationHelper" FullName="System.EnterpriseServices.RegistrationHelper">
+﻿<Type Name="RegistrationHelper" FullName="System.EnterpriseServices.RegistrationHelper">
   <TypeSignature Language="C#" Value="public sealed class RegistrationHelper : MarshalByRefObject, System.EnterpriseServices.IRegistrationHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegistrationHelper extends System.MarshalByRefObject implements class System.EnterpriseServices.IRegistrationHelper" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.RegistrationHelper" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegistrationHelper&#xA;Inherits MarshalByRefObject&#xA;Implements IRegistrationHelper" />
+  <TypeSignature Language="F#" Value="type RegistrationHelper = class&#xA;    inherit MarshalByRefObject&#xA;    interface IRegistrationHelper" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegistrationHelper sealed : MarshalByRefObject, System::EnterpriseServices::IRegistrationHelper" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="public RegistrationHelper ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegistrationHelper();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -59,7 +64,13 @@
       <MemberSignature Language="C#" Value="public void InstallAssembly (string assembly, ref string application, ref string tlb, System.EnterpriseServices.InstallationFlags installFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InstallAssembly(string assembly, string&amp; application, string&amp; tlb, valuetype System.EnterpriseServices.InstallationFlags installFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.InstallAssembly(System.String,System.String@,System.String@,System.EnterpriseServices.InstallationFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InstallAssembly (assembly As String, ByRef application As String, ByRef tlb As String, installFlags As InstallationFlags)" />
+      <MemberSignature Language="F#" Value="abstract member InstallAssembly : string *  *  * System.EnterpriseServices.InstallationFlags -&gt; unit&#xA;override this.InstallAssembly : string *  *  * System.EnterpriseServices.InstallationFlags -&gt; unit" Usage="registrationHelper.InstallAssembly (assembly, application, tlb, installFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InstallAssembly(System::String ^ assembly, System::String ^ % application, System::String ^ % tlb, System::EnterpriseServices::InstallationFlags installFlags);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.EnterpriseServices.IRegistrationHelper.InstallAssembly(System.String,System.String@,System.String@,System.EnterpriseServices.InstallationFlags)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -107,6 +118,9 @@
       <MemberSignature Language="C#" Value="public void InstallAssembly (string assembly, ref string application, string partition, ref string tlb, System.EnterpriseServices.InstallationFlags installFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssembly(string assembly, string&amp; application, string partition, string&amp; tlb, valuetype System.EnterpriseServices.InstallationFlags installFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.InstallAssembly(System.String,System.String@,System.String,System.String@,System.EnterpriseServices.InstallationFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InstallAssembly (assembly As String, ByRef application As String, partition As String, ByRef tlb As String, installFlags As InstallationFlags)" />
+      <MemberSignature Language="F#" Value="member this.InstallAssembly : string *  * string *  * System.EnterpriseServices.InstallationFlags -&gt; unit" Usage="registrationHelper.InstallAssembly (assembly, application, partition, tlb, installFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InstallAssembly(System::String ^ assembly, System::String ^ % application, System::String ^ partition, System::String ^ % tlb, System::EnterpriseServices::InstallationFlags installFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -148,6 +162,9 @@
       <MemberSignature Language="C#" Value="public void InstallAssemblyFromConfig (ref System.EnterpriseServices.RegistrationConfig regConfig);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void InstallAssemblyFromConfig(class System.EnterpriseServices.RegistrationConfig&amp; regConfig) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.InstallAssemblyFromConfig(System.EnterpriseServices.RegistrationConfig@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InstallAssemblyFromConfig (ByRef regConfig As RegistrationConfig)" />
+      <MemberSignature Language="F#" Value="member this.InstallAssemblyFromConfig :  -&gt; unit" Usage="registrationHelper.InstallAssemblyFromConfig regConfig" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InstallAssemblyFromConfig(System::EnterpriseServices::RegistrationConfig ^ % regConfig);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -194,7 +211,13 @@
       <MemberSignature Language="C#" Value="public void UninstallAssembly (string assembly, string application);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UninstallAssembly(string assembly, string application) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.UninstallAssembly(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UninstallAssembly (assembly As String, application As String)" />
+      <MemberSignature Language="F#" Value="abstract member UninstallAssembly : string * string -&gt; unit&#xA;override this.UninstallAssembly : string * string -&gt; unit" Usage="registrationHelper.UninstallAssembly (assembly, application)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UninstallAssembly(System::String ^ assembly, System::String ^ application);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.EnterpriseServices.IRegistrationHelper.UninstallAssembly(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -219,6 +242,9 @@
       <MemberSignature Language="C#" Value="public void UninstallAssembly (string assembly, string application, string partition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UninstallAssembly(string assembly, string application, string partition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.UninstallAssembly(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UninstallAssembly (assembly As String, application As String, partition As String)" />
+      <MemberSignature Language="F#" Value="member this.UninstallAssembly : string * string * string -&gt; unit" Usage="registrationHelper.UninstallAssembly (assembly, application, partition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UninstallAssembly(System::String ^ assembly, System::String ^ application, System::String ^ partition);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -246,6 +272,9 @@
       <MemberSignature Language="C#" Value="public void UninstallAssemblyFromConfig (ref System.EnterpriseServices.RegistrationConfig regConfig);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UninstallAssemblyFromConfig(class System.EnterpriseServices.RegistrationConfig&amp; regConfig) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.RegistrationHelper.UninstallAssemblyFromConfig(System.EnterpriseServices.RegistrationConfig@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UninstallAssemblyFromConfig (ByRef regConfig As RegistrationConfig)" />
+      <MemberSignature Language="F#" Value="member this.UninstallAssemblyFromConfig :  -&gt; unit" Usage="registrationHelper.UninstallAssemblyFromConfig regConfig" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UninstallAssemblyFromConfig(System::EnterpriseServices::RegistrationConfig ^ % regConfig);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

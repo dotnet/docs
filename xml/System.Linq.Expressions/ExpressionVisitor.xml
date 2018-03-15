@@ -1,7 +1,10 @@
-<Type Name="ExpressionVisitor" FullName="System.Linq.Expressions.ExpressionVisitor">
+﻿<Type Name="ExpressionVisitor" FullName="System.Linq.Expressions.ExpressionVisitor">
   <TypeSignature Language="C#" Value="public abstract class ExpressionVisitor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExpressionVisitor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Linq.Expressions.ExpressionVisitor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExpressionVisitor" />
+  <TypeSignature Language="F#" Value="type ExpressionVisitor = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExpressionVisitor abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Expressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="protected ExpressionVisitor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ExpressionVisitor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -61,10 +66,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Visit">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Dispatches the expression or the list of expressions to one of the more specialized visit methods in this class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Visit">
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt; Visit (System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt; nodes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Linq.Expressions.Expression&gt; Visit(class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Linq.Expressions.Expression&gt; nodes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.Visit(System.Collections.ObjectModel.ReadOnlyCollection{System.Linq.Expressions.Expression})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Visit (nodes As ReadOnlyCollection(Of Expression)) As ReadOnlyCollection(Of Expression)" />
+      <MemberSignature Language="F#" Value="member this.Visit : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt; -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Linq.Expressions.Expression&gt;" Usage="expressionVisitor.Visit nodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ Visit(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Linq::Expressions::Expression ^&gt; ^ nodes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -99,6 +119,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Linq.Expressions.Expression Visit (System.Linq.Expressions.Expression node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.Expressions.Expression Visit(class System.Linq.Expressions.Expression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.Visit(System.Linq.Expressions.Expression)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Visit (node As Expression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member Visit : System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.Expression&#xA;override this.Visit : System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.Visit node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Linq::Expressions::Expression ^ Visit(System::Linq::Expressions::Expression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -133,6 +156,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt; Visit&lt;T&gt; (System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt; nodes, Func&lt;T,T&gt; elementVisitor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;!!T&gt; Visit&lt;T&gt;(class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;!!T&gt; nodes, class System.Func`2&lt;!!T, !!T&gt; elementVisitor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.Visit``1(System.Collections.ObjectModel.ReadOnlyCollection{``0},System.Func{``0,``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Visit(Of T) (nodes As ReadOnlyCollection(Of T), elementVisitor As Func(Of T, T)) As ReadOnlyCollection(Of T)" />
+      <MemberSignature Language="F#" Value="static member Visit : System.Collections.ObjectModel.ReadOnlyCollection&lt;'T&gt; * Func&lt;'T, 'T&gt; -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;'T&gt;" Usage="System.Linq.Expressions.ExpressionVisitor.Visit (nodes, elementVisitor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; static System::Collections::ObjectModel::ReadOnlyCollection&lt;T&gt; ^ Visit(System::Collections::ObjectModel::ReadOnlyCollection&lt;T&gt; ^ nodes, Func&lt;T, T&gt; ^ elementVisitor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -169,10 +195,25 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="VisitAndConvert&lt;T&gt;">
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Visits an expression, casting the result back to the original expression type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="VisitAndConvert&lt;T&gt;">
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt; VisitAndConvert&lt;T&gt; (System.Collections.ObjectModel.ReadOnlyCollection&lt;T&gt; nodes, string callerName) where T : System.Linq.Expressions.Expression;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;!!T&gt; VisitAndConvert&lt;(class System.Linq.Expressions.Expression) T&gt;(class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;!!T&gt; nodes, string callerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitAndConvert``1(System.Collections.ObjectModel.ReadOnlyCollection{``0},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitAndConvert(Of T As Expression) (nodes As ReadOnlyCollection(Of T), callerName As String) As ReadOnlyCollection(Of T)" />
+      <MemberSignature Language="F#" Value="member this.VisitAndConvert : System.Collections.ObjectModel.ReadOnlyCollection&lt;'T (requires 'T :&gt; System.Linq.Expressions.Expression)&gt; * string -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;'T (requires 'T :&gt; System.Linq.Expressions.Expression)&gt; (requires 'T :&gt; System.Linq.Expressions.Expression)" Usage="expressionVisitor.VisitAndConvert (nodes, callerName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Linq::Expressions::Expression System::Collections::ObjectModel::ReadOnlyCollection&lt;T&gt; ^ VisitAndConvert(System::Collections::ObjectModel::ReadOnlyCollection&lt;T&gt; ^ nodes, System::String ^ callerName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -218,6 +259,9 @@
       <MemberSignature Language="C#" Value="public T VisitAndConvert&lt;T&gt; (T node, string callerName) where T : System.Linq.Expressions.Expression;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T VisitAndConvert&lt;(class System.Linq.Expressions.Expression) T&gt;(!!T node, string callerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitAndConvert``1(``0,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VisitAndConvert(Of T As Expression) (node As T, callerName As String) As T" />
+      <MemberSignature Language="F#" Value="member this.VisitAndConvert : 'T * string -&gt; 'T (requires 'T :&gt; System.Linq.Expressions.Expression)" Usage="expressionVisitor.VisitAndConvert (node, callerName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : System::Linq::Expressions::Expression T VisitAndConvert(T node, System::String ^ callerName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -260,9 +304,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitBinary">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitBinary (System.Linq.Expressions.BinaryExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitBinary (System.Linq.Expressions.BinaryExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitBinary(class System.Linq.Expressions.BinaryExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitBinary(System.Linq.Expressions.BinaryExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitBinary (node As BinaryExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitBinary : System.Linq.Expressions.BinaryExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitBinary : System.Linq.Expressions.BinaryExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitBinary node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitBinary(System::Linq::Expressions::BinaryExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -294,9 +341,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitBlock">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitBlock (System.Linq.Expressions.BlockExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitBlock (System.Linq.Expressions.BlockExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitBlock(class System.Linq.Expressions.BlockExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitBlock(System.Linq.Expressions.BlockExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitBlock (node As BlockExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitBlock : System.Linq.Expressions.BlockExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitBlock : System.Linq.Expressions.BlockExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitBlock node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitBlock(System::Linq::Expressions::BlockExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -331,6 +381,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.CatchBlock VisitCatchBlock (System.Linq.Expressions.CatchBlock node);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Linq.Expressions.CatchBlock VisitCatchBlock(class System.Linq.Expressions.CatchBlock node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitCatchBlock(System.Linq.Expressions.CatchBlock)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function VisitCatchBlock (node As CatchBlock) As CatchBlock" />
+      <MemberSignature Language="F#" Value="abstract member VisitCatchBlock : System.Linq.Expressions.CatchBlock -&gt; System.Linq.Expressions.CatchBlock&#xA;override this.VisitCatchBlock : System.Linq.Expressions.CatchBlock -&gt; System.Linq.Expressions.CatchBlock" Usage="expressionVisitor.VisitCatchBlock node" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Linq::Expressions::CatchBlock ^ VisitCatchBlock(System::Linq::Expressions::CatchBlock ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -362,9 +415,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitConditional">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitConditional (System.Linq.Expressions.ConditionalExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitConditional (System.Linq.Expressions.ConditionalExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitConditional(class System.Linq.Expressions.ConditionalExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitConditional(System.Linq.Expressions.ConditionalExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitConditional (node As ConditionalExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitConditional : System.Linq.Expressions.ConditionalExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitConditional : System.Linq.Expressions.ConditionalExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitConditional node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitConditional(System::Linq::Expressions::ConditionalExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -396,9 +452,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitConstant">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitConstant (System.Linq.Expressions.ConstantExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitConstant (System.Linq.Expressions.ConstantExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitConstant(class System.Linq.Expressions.ConstantExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitConstant(System.Linq.Expressions.ConstantExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitConstant (node As ConstantExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitConstant : System.Linq.Expressions.ConstantExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitConstant : System.Linq.Expressions.ConstantExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitConstant node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitConstant(System::Linq::Expressions::ConstantExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -430,9 +489,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitDebugInfo">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitDebugInfo (System.Linq.Expressions.DebugInfoExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitDebugInfo (System.Linq.Expressions.DebugInfoExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitDebugInfo(class System.Linq.Expressions.DebugInfoExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitDebugInfo(System.Linq.Expressions.DebugInfoExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitDebugInfo (node As DebugInfoExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitDebugInfo : System.Linq.Expressions.DebugInfoExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitDebugInfo : System.Linq.Expressions.DebugInfoExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitDebugInfo node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitDebugInfo(System::Linq::Expressions::DebugInfoExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -464,9 +526,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitDefault">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitDefault (System.Linq.Expressions.DefaultExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitDefault (System.Linq.Expressions.DefaultExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitDefault(class System.Linq.Expressions.DefaultExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitDefault(System.Linq.Expressions.DefaultExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitDefault (node As DefaultExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitDefault : System.Linq.Expressions.DefaultExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitDefault : System.Linq.Expressions.DefaultExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitDefault node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitDefault(System::Linq::Expressions::DefaultExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -498,9 +563,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitDynamic">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitDynamic (System.Linq.Expressions.DynamicExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitDynamic (System.Linq.Expressions.DynamicExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitDynamic(class System.Linq.Expressions.DynamicExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitDynamic(System.Linq.Expressions.DynamicExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitDynamic (node As DynamicExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitDynamic : System.Linq.Expressions.DynamicExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitDynamic : System.Linq.Expressions.DynamicExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitDynamic node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitDynamic(System::Linq::Expressions::DynamicExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -532,6 +600,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.ElementInit VisitElementInit (System.Linq.Expressions.ElementInit node);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Linq.Expressions.ElementInit VisitElementInit(class System.Linq.Expressions.ElementInit node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitElementInit(System.Linq.Expressions.ElementInit)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function VisitElementInit (node As ElementInit) As ElementInit" />
+      <MemberSignature Language="F#" Value="abstract member VisitElementInit : System.Linq.Expressions.ElementInit -&gt; System.Linq.Expressions.ElementInit&#xA;override this.VisitElementInit : System.Linq.Expressions.ElementInit -&gt; System.Linq.Expressions.ElementInit" Usage="expressionVisitor.VisitElementInit node" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Linq::Expressions::ElementInit ^ VisitElementInit(System::Linq::Expressions::ElementInit ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -563,9 +634,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitExtension">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitExtension (System.Linq.Expressions.Expression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitExtension (System.Linq.Expressions.Expression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitExtension(class System.Linq.Expressions.Expression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitExtension(System.Linq.Expressions.Expression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitExtension (node As Expression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitExtension : System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitExtension : System.Linq.Expressions.Expression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitExtension node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitExtension(System::Linq::Expressions::Expression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -606,9 +680,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitGoto">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitGoto (System.Linq.Expressions.GotoExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitGoto (System.Linq.Expressions.GotoExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitGoto(class System.Linq.Expressions.GotoExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitGoto(System.Linq.Expressions.GotoExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitGoto (node As GotoExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitGoto : System.Linq.Expressions.GotoExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitGoto : System.Linq.Expressions.GotoExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitGoto node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitGoto(System::Linq::Expressions::GotoExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -640,9 +717,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitIndex">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitIndex (System.Linq.Expressions.IndexExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitIndex (System.Linq.Expressions.IndexExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitIndex(class System.Linq.Expressions.IndexExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitIndex(System.Linq.Expressions.IndexExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitIndex (node As IndexExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitIndex : System.Linq.Expressions.IndexExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitIndex : System.Linq.Expressions.IndexExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitIndex node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitIndex(System::Linq::Expressions::IndexExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -674,9 +754,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitInvocation">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitInvocation (System.Linq.Expressions.InvocationExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitInvocation (System.Linq.Expressions.InvocationExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitInvocation(class System.Linq.Expressions.InvocationExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitInvocation(System.Linq.Expressions.InvocationExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitInvocation (node As InvocationExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitInvocation : System.Linq.Expressions.InvocationExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitInvocation : System.Linq.Expressions.InvocationExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitInvocation node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitInvocation(System::Linq::Expressions::InvocationExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -708,9 +791,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitLabel">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitLabel (System.Linq.Expressions.LabelExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitLabel (System.Linq.Expressions.LabelExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitLabel(class System.Linq.Expressions.LabelExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitLabel(System.Linq.Expressions.LabelExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitLabel (node As LabelExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitLabel : System.Linq.Expressions.LabelExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitLabel : System.Linq.Expressions.LabelExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitLabel node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitLabel(System::Linq::Expressions::LabelExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -745,6 +831,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.LabelTarget VisitLabelTarget (System.Linq.Expressions.LabelTarget node);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Linq.Expressions.LabelTarget VisitLabelTarget(class System.Linq.Expressions.LabelTarget node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitLabelTarget(System.Linq.Expressions.LabelTarget)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function VisitLabelTarget (node As LabelTarget) As LabelTarget" />
+      <MemberSignature Language="F#" Value="abstract member VisitLabelTarget : System.Linq.Expressions.LabelTarget -&gt; System.Linq.Expressions.LabelTarget&#xA;override this.VisitLabelTarget : System.Linq.Expressions.LabelTarget -&gt; System.Linq.Expressions.LabelTarget" Usage="expressionVisitor.VisitLabelTarget node" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Linq::Expressions::LabelTarget ^ VisitLabelTarget(System::Linq::Expressions::LabelTarget ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -776,9 +865,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitLambda&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitLambda&lt;T&gt; (System.Linq.Expressions.Expression&lt;T&gt; node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitLambda&lt;T&gt; (System.Linq.Expressions.Expression&lt;T&gt; node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitLambda&lt;T&gt;(class System.Linq.Expressions.Expression`1&lt;!!T&gt; node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitLambda``1(System.Linq.Expressions.Expression{``0})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitLambda(Of T) (node As Expression(Of T)) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitLambda : System.Linq.Expressions.Expression&lt;'T&gt; -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitLambda : System.Linq.Expressions.Expression&lt;'T&gt; -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitLambda node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename T&gt;&#xA; virtual System::Linq::Expressions::Expression ^ VisitLambda(System::Linq::Expressions::Expression&lt;T&gt; ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -814,9 +906,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitListInit">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitListInit (System.Linq.Expressions.ListInitExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitListInit (System.Linq.Expressions.ListInitExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitListInit(class System.Linq.Expressions.ListInitExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitListInit(System.Linq.Expressions.ListInitExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitListInit (node As ListInitExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitListInit : System.Linq.Expressions.ListInitExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitListInit : System.Linq.Expressions.ListInitExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitListInit node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitListInit(System::Linq::Expressions::ListInitExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -848,9 +943,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitLoop">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitLoop (System.Linq.Expressions.LoopExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitLoop (System.Linq.Expressions.LoopExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitLoop(class System.Linq.Expressions.LoopExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitLoop(System.Linq.Expressions.LoopExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitLoop (node As LoopExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitLoop : System.Linq.Expressions.LoopExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitLoop : System.Linq.Expressions.LoopExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitLoop node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitLoop(System::Linq::Expressions::LoopExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -882,9 +980,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitMember">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitMember (System.Linq.Expressions.MemberExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitMember (System.Linq.Expressions.MemberExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitMember(class System.Linq.Expressions.MemberExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitMember(System.Linq.Expressions.MemberExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitMember (node As MemberExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitMember : System.Linq.Expressions.MemberExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitMember : System.Linq.Expressions.MemberExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitMember node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitMember(System::Linq::Expressions::MemberExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -919,6 +1020,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.MemberAssignment VisitMemberAssignment (System.Linq.Expressions.MemberAssignment node);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Linq.Expressions.MemberAssignment VisitMemberAssignment(class System.Linq.Expressions.MemberAssignment node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitMemberAssignment(System.Linq.Expressions.MemberAssignment)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function VisitMemberAssignment (node As MemberAssignment) As MemberAssignment" />
+      <MemberSignature Language="F#" Value="abstract member VisitMemberAssignment : System.Linq.Expressions.MemberAssignment -&gt; System.Linq.Expressions.MemberAssignment&#xA;override this.VisitMemberAssignment : System.Linq.Expressions.MemberAssignment -&gt; System.Linq.Expressions.MemberAssignment" Usage="expressionVisitor.VisitMemberAssignment node" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Linq::Expressions::MemberAssignment ^ VisitMemberAssignment(System::Linq::Expressions::MemberAssignment ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -953,6 +1057,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.MemberBinding VisitMemberBinding (System.Linq.Expressions.MemberBinding node);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Linq.Expressions.MemberBinding VisitMemberBinding(class System.Linq.Expressions.MemberBinding node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitMemberBinding(System.Linq.Expressions.MemberBinding)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function VisitMemberBinding (node As MemberBinding) As MemberBinding" />
+      <MemberSignature Language="F#" Value="abstract member VisitMemberBinding : System.Linq.Expressions.MemberBinding -&gt; System.Linq.Expressions.MemberBinding&#xA;override this.VisitMemberBinding : System.Linq.Expressions.MemberBinding -&gt; System.Linq.Expressions.MemberBinding" Usage="expressionVisitor.VisitMemberBinding node" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Linq::Expressions::MemberBinding ^ VisitMemberBinding(System::Linq::Expressions::MemberBinding ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -984,9 +1091,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitMemberInit">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitMemberInit (System.Linq.Expressions.MemberInitExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitMemberInit (System.Linq.Expressions.MemberInitExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitMemberInit(class System.Linq.Expressions.MemberInitExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitMemberInit(System.Linq.Expressions.MemberInitExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitMemberInit (node As MemberInitExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitMemberInit : System.Linq.Expressions.MemberInitExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitMemberInit : System.Linq.Expressions.MemberInitExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitMemberInit node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitMemberInit(System::Linq::Expressions::MemberInitExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1021,6 +1131,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.MemberListBinding VisitMemberListBinding (System.Linq.Expressions.MemberListBinding node);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Linq.Expressions.MemberListBinding VisitMemberListBinding(class System.Linq.Expressions.MemberListBinding node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitMemberListBinding(System.Linq.Expressions.MemberListBinding)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function VisitMemberListBinding (node As MemberListBinding) As MemberListBinding" />
+      <MemberSignature Language="F#" Value="abstract member VisitMemberListBinding : System.Linq.Expressions.MemberListBinding -&gt; System.Linq.Expressions.MemberListBinding&#xA;override this.VisitMemberListBinding : System.Linq.Expressions.MemberListBinding -&gt; System.Linq.Expressions.MemberListBinding" Usage="expressionVisitor.VisitMemberListBinding node" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Linq::Expressions::MemberListBinding ^ VisitMemberListBinding(System::Linq::Expressions::MemberListBinding ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1055,6 +1168,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.MemberMemberBinding VisitMemberMemberBinding (System.Linq.Expressions.MemberMemberBinding node);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Linq.Expressions.MemberMemberBinding VisitMemberMemberBinding(class System.Linq.Expressions.MemberMemberBinding node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitMemberMemberBinding(System.Linq.Expressions.MemberMemberBinding)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function VisitMemberMemberBinding (node As MemberMemberBinding) As MemberMemberBinding" />
+      <MemberSignature Language="F#" Value="abstract member VisitMemberMemberBinding : System.Linq.Expressions.MemberMemberBinding -&gt; System.Linq.Expressions.MemberMemberBinding&#xA;override this.VisitMemberMemberBinding : System.Linq.Expressions.MemberMemberBinding -&gt; System.Linq.Expressions.MemberMemberBinding" Usage="expressionVisitor.VisitMemberMemberBinding node" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Linq::Expressions::MemberMemberBinding ^ VisitMemberMemberBinding(System::Linq::Expressions::MemberMemberBinding ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1086,9 +1202,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitMethodCall">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitMethodCall (System.Linq.Expressions.MethodCallExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitMethodCall (System.Linq.Expressions.MethodCallExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitMethodCall(class System.Linq.Expressions.MethodCallExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitMethodCall(System.Linq.Expressions.MethodCallExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitMethodCall (node As MethodCallExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitMethodCall : System.Linq.Expressions.MethodCallExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitMethodCall : System.Linq.Expressions.MethodCallExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitMethodCall node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitMethodCall(System::Linq::Expressions::MethodCallExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1120,9 +1239,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitNew">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitNew (System.Linq.Expressions.NewExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitNew (System.Linq.Expressions.NewExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitNew(class System.Linq.Expressions.NewExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitNew(System.Linq.Expressions.NewExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitNew (node As NewExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitNew : System.Linq.Expressions.NewExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitNew : System.Linq.Expressions.NewExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitNew node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitNew(System::Linq::Expressions::NewExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1154,9 +1276,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitNewArray">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitNewArray (System.Linq.Expressions.NewArrayExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitNewArray (System.Linq.Expressions.NewArrayExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitNewArray(class System.Linq.Expressions.NewArrayExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitNewArray(System.Linq.Expressions.NewArrayExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitNewArray (node As NewArrayExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitNewArray : System.Linq.Expressions.NewArrayExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitNewArray : System.Linq.Expressions.NewArrayExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitNewArray node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitNewArray(System::Linq::Expressions::NewArrayExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1188,9 +1313,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitParameter">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitParameter (System.Linq.Expressions.ParameterExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitParameter (System.Linq.Expressions.ParameterExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitParameter(class System.Linq.Expressions.ParameterExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitParameter(System.Linq.Expressions.ParameterExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitParameter (node As ParameterExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitParameter : System.Linq.Expressions.ParameterExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitParameter : System.Linq.Expressions.ParameterExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitParameter node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitParameter(System::Linq::Expressions::ParameterExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1222,9 +1350,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitRuntimeVariables">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitRuntimeVariables (System.Linq.Expressions.RuntimeVariablesExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitRuntimeVariables (System.Linq.Expressions.RuntimeVariablesExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitRuntimeVariables(class System.Linq.Expressions.RuntimeVariablesExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitRuntimeVariables(System.Linq.Expressions.RuntimeVariablesExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitRuntimeVariables (node As RuntimeVariablesExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitRuntimeVariables : System.Linq.Expressions.RuntimeVariablesExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitRuntimeVariables : System.Linq.Expressions.RuntimeVariablesExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitRuntimeVariables node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitRuntimeVariables(System::Linq::Expressions::RuntimeVariablesExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1256,9 +1387,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitSwitch">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitSwitch (System.Linq.Expressions.SwitchExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitSwitch (System.Linq.Expressions.SwitchExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitSwitch(class System.Linq.Expressions.SwitchExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitSwitch(System.Linq.Expressions.SwitchExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitSwitch (node As SwitchExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitSwitch : System.Linq.Expressions.SwitchExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitSwitch : System.Linq.Expressions.SwitchExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitSwitch node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitSwitch(System::Linq::Expressions::SwitchExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1293,6 +1427,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.SwitchCase VisitSwitchCase (System.Linq.Expressions.SwitchCase node);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Linq.Expressions.SwitchCase VisitSwitchCase(class System.Linq.Expressions.SwitchCase node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitSwitchCase(System.Linq.Expressions.SwitchCase)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function VisitSwitchCase (node As SwitchCase) As SwitchCase" />
+      <MemberSignature Language="F#" Value="abstract member VisitSwitchCase : System.Linq.Expressions.SwitchCase -&gt; System.Linq.Expressions.SwitchCase&#xA;override this.VisitSwitchCase : System.Linq.Expressions.SwitchCase -&gt; System.Linq.Expressions.SwitchCase" Usage="expressionVisitor.VisitSwitchCase node" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Linq::Expressions::SwitchCase ^ VisitSwitchCase(System::Linq::Expressions::SwitchCase ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1324,9 +1461,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitTry">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitTry (System.Linq.Expressions.TryExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitTry (System.Linq.Expressions.TryExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitTry(class System.Linq.Expressions.TryExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitTry(System.Linq.Expressions.TryExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitTry (node As TryExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitTry : System.Linq.Expressions.TryExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitTry : System.Linq.Expressions.TryExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitTry node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitTry(System::Linq::Expressions::TryExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1358,9 +1498,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitTypeBinary">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitTypeBinary (System.Linq.Expressions.TypeBinaryExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitTypeBinary (System.Linq.Expressions.TypeBinaryExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitTypeBinary(class System.Linq.Expressions.TypeBinaryExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitTypeBinary(System.Linq.Expressions.TypeBinaryExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitTypeBinary (node As TypeBinaryExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitTypeBinary : System.Linq.Expressions.TypeBinaryExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitTypeBinary : System.Linq.Expressions.TypeBinaryExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitTypeBinary node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitTypeBinary(System::Linq::Expressions::TypeBinaryExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1392,9 +1535,12 @@
       </Docs>
     </Member>
     <Member MemberName="VisitUnary">
-      <MemberSignature Language="C#" Value="protected virtual System.Linq.Expressions.Expression VisitUnary (System.Linq.Expressions.UnaryExpression node);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Linq.Expressions.Expression VisitUnary (System.Linq.Expressions.UnaryExpression node);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Linq.Expressions.Expression VisitUnary(class System.Linq.Expressions.UnaryExpression node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.Expressions.ExpressionVisitor.VisitUnary(System.Linq.Expressions.UnaryExpression)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function VisitUnary (node As UnaryExpression) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member VisitUnary : System.Linq.Expressions.UnaryExpression -&gt; System.Linq.Expressions.Expression&#xA;override this.VisitUnary : System.Linq.Expressions.UnaryExpression -&gt; System.Linq.Expressions.Expression" Usage="expressionVisitor.VisitUnary node" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Linq::Expressions::Expression ^ VisitUnary(System::Linq::Expressions::UnaryExpression ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
@@ -1425,29 +1571,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Visit">
-      <AssemblyInfo>
-        <AssemblyName>System.Linq.Expressions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Dispatches the expression or the list of expressions to one of the more specialized visit methods in this class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="VisitAndConvert&lt;T&gt;">
-      <AssemblyInfo>
-        <AssemblyName>System.Linq.Expressions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Visits an expression, casting the result back to the original expression type.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

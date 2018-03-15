@@ -1,7 +1,10 @@
-<Type Name="ProjectData" FullName="Microsoft.VisualBasic.CompilerServices.ProjectData">
+﻿<Type Name="ProjectData" FullName="Microsoft.VisualBasic.CompilerServices.ProjectData">
   <TypeSignature Language="C#" Value="public sealed class ProjectData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProjectData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.ProjectData" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProjectData" />
+  <TypeSignature Language="F#" Value="type ProjectData = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProjectData sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public static void ClearProjectError ();" />
       <MemberSignature Language="ILAsm" Value=".method public static void ClearProjectError() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ProjectData.ClearProjectError" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearProjectError ()" />
+      <MemberSignature Language="F#" Value="static member ClearProjectError : unit -&gt; unit" Usage="Microsoft.VisualBasic.CompilerServices.ProjectData.ClearProjectError " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearProjectError();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -66,6 +72,9 @@
       <MemberSignature Language="C#" Value="public static Exception CreateProjectError (int hr);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Exception CreateProjectError(int32 hr) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ProjectData.CreateProjectError(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateProjectError (hr As Integer) As Exception" />
+      <MemberSignature Language="F#" Value="static member CreateProjectError : int -&gt; Exception" Usage="Microsoft.VisualBasic.CompilerServices.ProjectData.CreateProjectError hr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Exception ^ CreateProjectError(int hr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -96,6 +105,9 @@
       <MemberSignature Language="C#" Value="public static void EndApp ();" />
       <MemberSignature Language="ILAsm" Value=".method public static void EndApp() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ProjectData.EndApp" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub EndApp ()" />
+      <MemberSignature Language="F#" Value="static member EndApp : unit -&gt; unit" Usage="Microsoft.VisualBasic.CompilerServices.ProjectData.EndApp " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void EndApp();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -144,6 +156,9 @@
       <MemberSignature Language="C#" Value="public static void SetProjectError (Exception ex);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetProjectError(class System.Exception ex) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ProjectData.SetProjectError(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetProjectError (ex As Exception)" />
+      <MemberSignature Language="F#" Value="static member SetProjectError : Exception -&gt; unit" Usage="Microsoft.VisualBasic.CompilerServices.ProjectData.SetProjectError ex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetProjectError(Exception ^ ex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -181,6 +196,9 @@
       <MemberSignature Language="C#" Value="public static void SetProjectError (Exception ex, int lErl);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetProjectError(class System.Exception ex, int32 lErl) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ProjectData.SetProjectError(System.Exception,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetProjectError (ex As Exception, lErl As Integer)" />
+      <MemberSignature Language="F#" Value="static member SetProjectError : Exception * int -&gt; unit" Usage="Microsoft.VisualBasic.CompilerServices.ProjectData.SetProjectError (ex, lErl)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetProjectError(Exception ^ ex, int lErl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

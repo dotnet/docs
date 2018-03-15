@@ -1,7 +1,10 @@
-<Type Name="EventSourceOptions" FullName="System.Diagnostics.Tracing.EventSourceOptions">
+﻿<Type Name="EventSourceOptions" FullName="System.Diagnostics.Tracing.EventSourceOptions">
   <TypeSignature Language="C#" Value="public struct EventSourceOptions" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit EventSourceOptions extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventSourceOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Structure EventSourceOptions" />
+  <TypeSignature Language="F#" Value="type EventSourceOptions = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class EventSourceOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.Tracing.EventActivityOptions ActivityOptions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.Tracing.EventActivityOptions ActivityOptions" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSourceOptions.ActivityOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property ActivityOptions As EventActivityOptions" />
+      <MemberSignature Language="F#" Value="member this.ActivityOptions : System.Diagnostics.Tracing.EventActivityOptions with get, set" Usage="System.Diagnostics.Tracing.EventSourceOptions.ActivityOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventActivityOptions ActivityOptions { System::Diagnostics::Tracing::EventActivityOptions get(); void set(System::Diagnostics::Tracing::EventActivityOptions value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -66,6 +72,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.Tracing.EventKeywords Keywords { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.Tracing.EventKeywords Keywords" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSourceOptions.Keywords" />
+      <MemberSignature Language="VB.NET" Value="Public Property Keywords As EventKeywords" />
+      <MemberSignature Language="F#" Value="member this.Keywords : System.Diagnostics.Tracing.EventKeywords with get, set" Usage="System.Diagnostics.Tracing.EventSourceOptions.Keywords" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventKeywords Keywords { System::Diagnostics::Tracing::EventKeywords get(); void set(System::Diagnostics::Tracing::EventKeywords value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -95,6 +104,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.Tracing.EventLevel Level { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.Tracing.EventLevel Level" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSourceOptions.Level" />
+      <MemberSignature Language="VB.NET" Value="Public Property Level As EventLevel" />
+      <MemberSignature Language="F#" Value="member this.Level : System.Diagnostics.Tracing.EventLevel with get, set" Usage="System.Diagnostics.Tracing.EventSourceOptions.Level" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventLevel Level { System::Diagnostics::Tracing::EventLevel get(); void set(System::Diagnostics::Tracing::EventLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -131,6 +143,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.Tracing.EventOpcode Opcode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.Tracing.EventOpcode Opcode" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSourceOptions.Opcode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Opcode As EventOpcode" />
+      <MemberSignature Language="F#" Value="member this.Opcode : System.Diagnostics.Tracing.EventOpcode with get, set" Usage="System.Diagnostics.Tracing.EventSourceOptions.Opcode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventOpcode Opcode { System::Diagnostics::Tracing::EventOpcode get(); void set(System::Diagnostics::Tracing::EventOpcode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -160,6 +175,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.Tracing.EventTags Tags { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.Tracing.EventTags Tags" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Tracing.EventSourceOptions.Tags" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tags As EventTags" />
+      <MemberSignature Language="F#" Value="member this.Tags : System.Diagnostics.Tracing.EventTags with get, set" Usage="System.Diagnostics.Tracing.EventSourceOptions.Tags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::Tracing::EventTags Tags { System::Diagnostics::Tracing::EventTags get(); void set(System::Diagnostics::Tracing::EventTags value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

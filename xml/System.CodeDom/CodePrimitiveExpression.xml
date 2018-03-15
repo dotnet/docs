@@ -1,7 +1,10 @@
-<Type Name="CodePrimitiveExpression" FullName="System.CodeDom.CodePrimitiveExpression">
+﻿<Type Name="CodePrimitiveExpression" FullName="System.CodeDom.CodePrimitiveExpression">
   <TypeSignature Language="C#" Value="public class CodePrimitiveExpression : System.CodeDom.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodePrimitiveExpression extends System.CodeDom.CodeExpression" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodePrimitiveExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodePrimitiveExpression&#xA;Inherits CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodePrimitiveExpression = class&#xA;    inherit CodeExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodePrimitiveExpression : System::CodeDom::CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -47,10 +50,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodePrimitiveExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodePrimitiveExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodePrimitiveExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodePrimitiveExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -70,6 +84,9 @@
       <MemberSignature Language="C#" Value="public CodePrimitiveExpression (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodePrimitiveExpression.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodePrimitiveExpression : obj -&gt; System.CodeDom.CodePrimitiveExpression" Usage="new System.CodeDom.CodePrimitiveExpression value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodePrimitiveExpression(System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -92,6 +109,9 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodePrimitiveExpression.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.CodeDom.CodePrimitiveExpression.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -117,14 +137,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodePrimitiveExpression" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

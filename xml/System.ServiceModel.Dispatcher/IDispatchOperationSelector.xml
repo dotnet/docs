@@ -1,7 +1,10 @@
-<Type Name="IDispatchOperationSelector" FullName="System.ServiceModel.Dispatcher.IDispatchOperationSelector">
+﻿<Type Name="IDispatchOperationSelector" FullName="System.ServiceModel.Dispatcher.IDispatchOperationSelector">
   <TypeSignature Language="C#" Value="public interface IDispatchOperationSelector" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDispatchOperationSelector" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IDispatchOperationSelector" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDispatchOperationSelector" />
+  <TypeSignature Language="F#" Value="type IDispatchOperationSelector = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDispatchOperationSelector" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,9 @@ public string SelectOperation( ref Message message )
       <MemberSignature Language="C#" Value="public string SelectOperation (ref System.ServiceModel.Channels.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string SelectOperation(class System.ServiceModel.Channels.Message&amp; message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IDispatchOperationSelector.SelectOperation(System.ServiceModel.Channels.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectOperation (ByRef message As Message) As String" />
+      <MemberSignature Language="F#" Value="abstract member SelectOperation :  -&gt; string" Usage="iDispatchOperationSelector.SelectOperation message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ SelectOperation(System::ServiceModel::Channels::Message ^ % message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

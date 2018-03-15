@@ -1,7 +1,10 @@
-<Type Name="ActivityDesignerVerbCollection" FullName="System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection">
+﻿<Type Name="ActivityDesignerVerbCollection" FullName="System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection">
   <TypeSignature Language="C#" Value="public sealed class ActivityDesignerVerbCollection : System.ComponentModel.Design.DesignerVerbCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityDesignerVerbCollection extends System.ComponentModel.Design.DesignerVerbCollection" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityDesignerVerbCollection&#xA;Inherits DesignerVerbCollection" />
+  <TypeSignature Language="F#" Value="type ActivityDesignerVerbCollection = class&#xA;    inherit DesignerVerbCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityDesignerVerbCollection sealed : System::ComponentModel::Design::DesignerVerbCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +34,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of an <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ActivityDesignerVerbCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityDesignerVerbCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -50,6 +64,9 @@
       <MemberSignature Language="C#" Value="public ActivityDesignerVerbCollection (System.Collections.Generic.IEnumerable&lt;System.Workflow.ComponentModel.Design.ActivityDesignerVerb&gt; verbs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Workflow.ComponentModel.Design.ActivityDesignerVerb&gt; verbs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.Design.ActivityDesignerVerb})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (verbs As IEnumerable(Of ActivityDesignerVerb))" />
+      <MemberSignature Language="F#" Value="new System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection : seq&lt;System.Workflow.ComponentModel.Design.ActivityDesignerVerb&gt; -&gt; System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection" Usage="new System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection verbs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityDesignerVerbCollection(System::Collections::Generic::IEnumerable&lt;System::Workflow::ComponentModel::Design::ActivityDesignerVerb ^&gt; ^ verbs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -75,6 +92,9 @@
       <MemberSignature Language="C#" Value="protected override void OnValidate (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidate(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection.OnValidate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnValidate : obj -&gt; unit" Usage="activityDesignerVerbCollection.OnValidate value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -92,14 +112,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes an instance of an <see cref="T:System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

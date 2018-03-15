@@ -1,7 +1,10 @@
-<Type Name="InstanceDataCollection" FullName="System.Diagnostics.InstanceDataCollection">
+﻿<Type Name="InstanceDataCollection" FullName="System.Diagnostics.InstanceDataCollection">
   <TypeSignature Language="C#" Value="public class InstanceDataCollection : System.Collections.DictionaryBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InstanceDataCollection extends System.Collections.DictionaryBase" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.InstanceDataCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class InstanceDataCollection&#xA;Inherits DictionaryBase" />
+  <TypeSignature Language="F#" Value="type InstanceDataCollection = class&#xA;    inherit DictionaryBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InstanceDataCollection : System::Collections::DictionaryBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="public InstanceDataCollection (string counterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string counterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.InstanceDataCollection.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (counterName As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.InstanceDataCollection : string -&gt; System.Diagnostics.InstanceDataCollection" Usage="new System.Diagnostics.InstanceDataCollection counterName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceDataCollection(System::String ^ counterName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -62,6 +68,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (string instanceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string instanceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.InstanceDataCollection.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (instanceName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="instanceDataCollection.Contains instanceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ instanceName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +110,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Diagnostics.InstanceData[] instances, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Diagnostics.InstanceData[] instances, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.InstanceDataCollection.CopyTo(System.Diagnostics.InstanceData[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (instances As InstanceData(), index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Diagnostics.InstanceData[] * int -&gt; unit" Usage="instanceDataCollection.CopyTo (instances, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Diagnostics::InstanceData ^&gt; ^ instances, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -134,6 +146,9 @@
       <MemberSignature Language="C#" Value="public string CounterName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CounterName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.InstanceDataCollection.CounterName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CounterName As String" />
+      <MemberSignature Language="F#" Value="member this.CounterName : string" Usage="System.Diagnostics.InstanceDataCollection.CounterName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CounterName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -162,6 +177,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.InstanceData this[string instanceName] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.InstanceData Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.InstanceDataCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(instanceName As String) As InstanceData" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Diagnostics.InstanceData" Usage="System.Diagnostics.InstanceDataCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::InstanceData ^ default[System::String ^] { System::Diagnostics::InstanceData ^ get(System::String ^ instanceName); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -200,6 +218,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Keys" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.InstanceDataCollection.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Diagnostics.InstanceDataCollection.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -233,6 +254,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Values" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.InstanceDataCollection.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.ICollection" Usage="System.Diagnostics.InstanceDataCollection.Values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Values { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

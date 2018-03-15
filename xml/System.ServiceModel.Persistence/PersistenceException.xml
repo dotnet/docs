@@ -1,7 +1,10 @@
-<Type Name="PersistenceException" FullName="System.ServiceModel.Persistence.PersistenceException">
+﻿<Type Name="PersistenceException" FullName="System.ServiceModel.Persistence.PersistenceException">
   <TypeSignature Language="C#" Value="public class PersistenceException : System.ServiceModel.CommunicationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PersistenceException extends System.ServiceModel.CommunicationException" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Persistence.PersistenceException" />
+  <TypeSignature Language="VB.NET" Value="Public Class PersistenceException&#xA;Inherits CommunicationException" />
+  <TypeSignature Language="F#" Value="type PersistenceException = class&#xA;    inherit CommunicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersistenceException : System::ServiceModel::CommunicationException" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,10 +30,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Persistence.PersistenceException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PersistenceException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PersistenceException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -46,6 +60,9 @@
       <MemberSignature Language="C#" Value="public PersistenceException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Persistence.PersistenceException : string -&gt; System.ServiceModel.Persistence.PersistenceException" Usage="new System.ServiceModel.Persistence.PersistenceException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PersistenceException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -64,6 +81,9 @@
       <MemberSignature Language="C#" Value="protected PersistenceException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Persistence.PersistenceException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.Persistence.PersistenceException" Usage="new System.ServiceModel.Persistence.PersistenceException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PersistenceException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -84,6 +104,9 @@
       <MemberSignature Language="C#" Value="public PersistenceException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Persistence.PersistenceException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Persistence.PersistenceException : string * Exception -&gt; System.ServiceModel.Persistence.PersistenceException" Usage="new System.ServiceModel.Persistence.PersistenceException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PersistenceException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -100,14 +123,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Persistence.PersistenceException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

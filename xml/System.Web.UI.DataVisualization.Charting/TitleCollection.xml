@@ -1,7 +1,10 @@
-<Type Name="TitleCollection" FullName="System.Web.UI.DataVisualization.Charting.TitleCollection">
+﻿<Type Name="TitleCollection" FullName="System.Web.UI.DataVisualization.Charting.TitleCollection">
   <TypeSignature Language="C#" Value="public class TitleCollection : System.Web.UI.DataVisualization.Charting.ChartNamedElementCollection&lt;System.Web.UI.DataVisualization.Charting.Title&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TitleCollection extends System.Web.UI.DataVisualization.Charting.ChartNamedElementCollection`1&lt;class System.Web.UI.DataVisualization.Charting.Title&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.TitleCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class TitleCollection&#xA;Inherits ChartNamedElementCollection(Of Title)" />
+  <TypeSignature Language="F#" Value="type TitleCollection = class&#xA;    inherit ChartNamedElementCollection&lt;Title&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TitleCollection : System::Web::UI::DataVisualization::Charting::ChartNamedElementCollection&lt;System::Web::UI::DataVisualization::Charting::Title ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataVisualization.Charting.Title Add (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.UI.DataVisualization.Charting.Title Add(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.TitleCollection.Add(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (name As String) As Title" />
+      <MemberSignature Language="F#" Value="override this.Add : string -&gt; System.Web.UI.DataVisualization.Charting.Title" Usage="titleCollection.Add name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataVisualization::Charting::Title ^ Add(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="WebClassWebItemNotValid" FullName="Microsoft.VisualBasic.Compatibility.VB6.WebClassWebItemNotValid">
+﻿<Type Name="WebClassWebItemNotValid" FullName="Microsoft.VisualBasic.Compatibility.VB6.WebClassWebItemNotValid">
   <TypeSignature Language="C#" Value="public class WebClassWebItemNotValid : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi WebClassWebItemNotValid extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.WebClassWebItemNotValid" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebClassWebItemNotValid&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type WebClassWebItemNotValid = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebClassWebItemNotValid : Exception" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public WebClassWebItemNotValid (string itemName);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string itemName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.WebClassWebItemNotValid.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (itemName As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.WebClassWebItemNotValid : string -&gt; Microsoft.VisualBasic.Compatibility.VB6.WebClassWebItemNotValid" Usage="new Microsoft.VisualBasic.Compatibility.VB6.WebClassWebItemNotValid itemName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebClassWebItemNotValid(System::String ^ itemName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>

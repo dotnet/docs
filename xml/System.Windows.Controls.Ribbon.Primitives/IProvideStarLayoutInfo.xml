@@ -1,7 +1,10 @@
-<Type Name="IProvideStarLayoutInfo" FullName="System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo">
+﻿<Type Name="IProvideStarLayoutInfo" FullName="System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo">
   <TypeSignature Language="C#" Value="public interface IProvideStarLayoutInfo : System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProvideStarLayoutInfo implements class System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfoBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IProvideStarLayoutInfo&#xA;Implements IProvideStarLayoutInfoBase" />
+  <TypeSignature Language="F#" Value="type IProvideStarLayoutInfo = interface&#xA;    interface IProvideStarLayoutInfoBase" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IProvideStarLayoutInfo : System::Windows::Controls::Ribbon::Primitives::IProvideStarLayoutInfoBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="public void OnStarSizeAllocationCompleted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnStarSizeAllocationCompleted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo.OnStarSizeAllocationCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnStarSizeAllocationCompleted ()" />
+      <MemberSignature Language="F#" Value="abstract member OnStarSizeAllocationCompleted : unit -&gt; unit" Usage="iProvideStarLayoutInfo.OnStarSizeAllocationCompleted " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnStarSizeAllocationCompleted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -45,6 +51,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo&gt; StarLayoutCombinations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo&gt; StarLayoutCombinations" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo.StarLayoutCombinations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StarLayoutCombinations As IEnumerable(Of StarLayoutInfo)" />
+      <MemberSignature Language="F#" Value="member this.StarLayoutCombinations : seq&lt;System.Windows.Controls.Ribbon.Primitives.StarLayoutInfo&gt;" Usage="System.Windows.Controls.Ribbon.Primitives.IProvideStarLayoutInfo.StarLayoutCombinations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Windows::Controls::Ribbon::Primitives::StarLayoutInfo ^&gt; ^ StarLayoutCombinations { System::Collections::Generic::IEnumerable&lt;System::Windows::Controls::Ribbon::Primitives::StarLayoutInfo ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

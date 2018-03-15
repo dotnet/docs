@@ -1,7 +1,10 @@
-<Type Name="IFieldControl" FullName="System.Web.UI.WebControls.IFieldControl">
+﻿<Type Name="IFieldControl" FullName="System.Web.UI.WebControls.IFieldControl">
   <TypeSignature Language="C#" Value="public interface IFieldControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFieldControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IFieldControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFieldControl" />
+  <TypeSignature Language="F#" Value="type IFieldControl = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IFieldControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.IAutoFieldGenerator FieldsGenerator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.IAutoFieldGenerator FieldsGenerator" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IFieldControl.FieldsGenerator" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldsGenerator As IAutoFieldGenerator" />
+      <MemberSignature Language="F#" Value="member this.FieldsGenerator : System.Web.UI.IAutoFieldGenerator with get, set" Usage="System.Web.UI.WebControls.IFieldControl.FieldsGenerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::IAutoFieldGenerator ^ FieldsGenerator { System::Web::UI::IAutoFieldGenerator ^ get(); void set(System::Web::UI::IAutoFieldGenerator ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

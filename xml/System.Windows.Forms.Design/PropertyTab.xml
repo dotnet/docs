@@ -1,7 +1,10 @@
-<Type Name="PropertyTab" FullName="System.Windows.Forms.Design.PropertyTab">
+﻿<Type Name="PropertyTab" FullName="System.Windows.Forms.Design.PropertyTab">
   <TypeSignature Language="C#" Value="public abstract class PropertyTab : System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PropertyTab extends System.Object implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.PropertyTab" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PropertyTab&#xA;Implements IExtenderProvider" />
+  <TypeSignature Language="F#" Value="type PropertyTab = class&#xA;    interface IExtenderProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyTab abstract : System::ComponentModel::IExtenderProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="protected PropertyTab ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.PropertyTab.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PropertyTab();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +64,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Bitmap Bitmap { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Bitmap Bitmap" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.PropertyTab.Bitmap" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Bitmap As Bitmap" />
+      <MemberSignature Language="F#" Value="member this.Bitmap : System.Drawing.Bitmap" Usage="System.Windows.Forms.Design.PropertyTab.Bitmap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Bitmap ^ Bitmap { System::Drawing::Bitmap ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +85,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanExtend (object extendee);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExtend(object extendee) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.PropertyTab.CanExtend(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CanExtend (extendee As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanExtend : obj -&gt; bool&#xA;override this.CanExtend : obj -&gt; bool" Usage="propertyTab.CanExtend extendee" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanExtend(System::Object ^ extendee);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -100,6 +111,9 @@
       <MemberSignature Language="C#" Value="public virtual object[] Components { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object[] Components" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.PropertyTab.Components" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Components As Object()" />
+      <MemberSignature Language="F#" Value="member this.Components : obj[] with get, set" Usage="System.Windows.Forms.Design.PropertyTab.Components" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Object ^&gt; ^ Components { cli::array &lt;System::Object ^&gt; ^ get(); void set(cli::array &lt;System::Object ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -114,10 +128,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all the resources used by the <see cref="T:System.Windows.Forms.Design.PropertyTab" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public virtual void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.PropertyTab.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="propertyTab.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -146,6 +172,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.PropertyTab.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="propertyTab.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -183,6 +212,9 @@
       <MemberSignature Language="C#" Value="~PropertyTab ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.PropertyTab.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="propertyTab.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!PropertyTab ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -201,6 +233,9 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.PropertyDescriptor GetDefaultProperty (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptor GetDefaultProperty(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.PropertyTab.GetDefaultProperty(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDefaultProperty (component As Object) As PropertyDescriptor" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultProperty : obj -&gt; System.ComponentModel.PropertyDescriptor&#xA;override this.GetDefaultProperty : obj -&gt; System.ComponentModel.PropertyDescriptor" Usage="propertyTab.GetDefaultProperty component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptor ^ GetDefaultProperty(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -219,10 +254,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the properties of the specified component.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetProperties">
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.PropertyDescriptorCollection GetProperties (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.PropertyTab.GetProperties(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperties (component As Object) As PropertyDescriptorCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetProperties : obj -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetProperties : obj -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="propertyTab.GetProperties component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -245,6 +292,9 @@
       <MemberSignature Language="C#" Value="public abstract System.ComponentModel.PropertyDescriptorCollection GetProperties (object component, Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties(object component, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.PropertyTab.GetProperties(System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetProperties (component As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetProperties : obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="propertyTab.GetProperties (component, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::Object ^ component, cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -269,6 +319,9 @@
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.PropertyDescriptorCollection GetProperties (System.ComponentModel.ITypeDescriptorContext context, object component, Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection GetProperties(class System.ComponentModel.ITypeDescriptorContext context, object component, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.PropertyTab.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperties (context As ITypeDescriptorContext, component As Object, attributes As Attribute()) As PropertyDescriptorCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetProperties : System.ComponentModel.ITypeDescriptorContext * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection&#xA;override this.GetProperties : System.ComponentModel.ITypeDescriptorContext * obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="propertyTab.GetProperties (context, component, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::PropertyDescriptorCollection ^ GetProperties(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ component, cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -295,6 +348,9 @@
       <MemberSignature Language="C#" Value="public virtual string HelpKeyword { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpKeyword" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.PropertyTab.HelpKeyword" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HelpKeyword As String" />
+      <MemberSignature Language="F#" Value="member this.HelpKeyword : string" Usage="System.Windows.Forms.Design.PropertyTab.HelpKeyword" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HelpKeyword { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -320,6 +376,9 @@
       <MemberSignature Language="C#" Value="public abstract string TabName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TabName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.Design.PropertyTab.TabName" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TabName As String" />
+      <MemberSignature Language="F#" Value="member this.TabName : string" Usage="System.Windows.Forms.Design.PropertyTab.TabName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ TabName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -334,23 +393,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetProperties">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the properties of the specified component.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases all the resources used by the <see cref="T:System.Windows.Forms.Design.PropertyTab" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

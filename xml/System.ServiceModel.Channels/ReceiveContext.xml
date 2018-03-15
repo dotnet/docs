@@ -1,7 +1,10 @@
-<Type Name="ReceiveContext" FullName="System.ServiceModel.Channels.ReceiveContext">
+﻿<Type Name="ReceiveContext" FullName="System.ServiceModel.Channels.ReceiveContext">
   <TypeSignature Language="C#" Value="public abstract class ReceiveContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ReceiveContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ReceiveContext" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ReceiveContext" />
+  <TypeSignature Language="F#" Value="type ReceiveContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ReceiveContext abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="protected ReceiveContext ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ReceiveContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -76,6 +81,9 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="public virtual void Abandon (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abandon(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.Abandon(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Abandon (timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="abstract member Abandon : TimeSpan -&gt; unit&#xA;override this.Abandon : TimeSpan -&gt; unit" Usage="receiveContext.Abandon timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Abandon(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -97,6 +105,8 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="public virtual void Abandon (Exception exception, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abandon(class System.Exception exception, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.Abandon(System.Exception,System.TimeSpan)" />
+      <MemberSignature Language="F#" Value="abstract member Abandon : Exception * TimeSpan -&gt; unit&#xA;override this.Abandon : Exception * TimeSpan -&gt; unit" Usage="receiveContext.Abandon (exception, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Abandon(Exception ^ exception, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,10 +126,22 @@ using (TransactionScope ts = new TransactionScope())
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginAbandon">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Begins an asynchronous abandon operation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginAbandon">
       <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginAbandon (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAbandon(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.BeginAbandon(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginAbandon (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginAbandon : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginAbandon : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="receiveContext.BeginAbandon (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginAbandon(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -146,6 +168,8 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginAbandon (Exception exception, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAbandon(class System.Exception exception, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.BeginAbandon(System.Exception,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member BeginAbandon : Exception * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginAbandon : Exception * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="receiveContext.BeginAbandon (exception, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginAbandon(Exception ^ exception, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -174,6 +198,9 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="public virtual IAsyncResult BeginComplete (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginComplete(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.BeginComplete(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginComplete (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginComplete : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.BeginComplete : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="receiveContext.BeginComplete (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IAsyncResult ^ BeginComplete(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -200,6 +227,9 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="public virtual void Complete (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Complete(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.Complete(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Complete (timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="abstract member Complete : TimeSpan -&gt; unit&#xA;override this.Complete : TimeSpan -&gt; unit" Usage="receiveContext.Complete timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Complete(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -221,6 +251,9 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="public virtual void EndAbandon (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndAbandon(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.EndAbandon(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndAbandon (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndAbandon : IAsyncResult -&gt; unit&#xA;override this.EndAbandon : IAsyncResult -&gt; unit" Usage="receiveContext.EndAbandon result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndAbandon(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -242,6 +275,9 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="public virtual void EndComplete (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndComplete(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.EndComplete(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndComplete (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndComplete : IAsyncResult -&gt; unit&#xA;override this.EndComplete : IAsyncResult -&gt; unit" Usage="receiveContext.EndComplete result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndComplete(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -260,9 +296,12 @@ using (TransactionScope ts = new TransactionScope())
       </Docs>
     </Member>
     <Member MemberName="Fault">
-      <MemberSignature Language="C#" Value="protected virtual void Fault ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual void Fault ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void Fault() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.Fault" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub Fault ()" />
+      <MemberSignature Language="F#" Value="abstract member Fault : unit -&gt; unit&#xA;override this.Fault : unit -&gt; unit" Usage="receiveContext.Fault " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void Fault();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -281,6 +320,9 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="public event EventHandler Faulted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Faulted" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.Channels.ReceiveContext.Faulted" />
+      <MemberSignature Language="VB.NET" Value="Public Event Faulted As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Faulted : EventHandler " Usage="member this.Faulted : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Faulted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -298,6 +340,9 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="public static readonly string Name;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string Name" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.ReceiveContext.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Name As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable Name : string" Usage="System.ServiceModel.Channels.ReceiveContext.Name" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ Name;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -311,10 +356,22 @@ using (TransactionScope ts = new TransactionScope())
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnAbandon">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called when the state machine is transitioning to the abandoned state.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OnAbandon">
       <MemberSignature Language="C#" Value="protected abstract void OnAbandon (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAbandon(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.OnAbandon(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnAbandon (timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="abstract member OnAbandon : TimeSpan -&gt; unit" Usage="receiveContext.OnAbandon timeout" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnAbandon(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -336,6 +393,8 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="protected virtual void OnAbandon (Exception exception, TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAbandon(class System.Exception exception, valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.OnAbandon(System.Exception,System.TimeSpan)" />
+      <MemberSignature Language="F#" Value="abstract member OnAbandon : Exception * TimeSpan -&gt; unit&#xA;override this.OnAbandon : Exception * TimeSpan -&gt; unit" Usage="receiveContext.OnAbandon (exception, timeout)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAbandon(Exception ^ exception, TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -355,10 +414,22 @@ using (TransactionScope ts = new TransactionScope())
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnBeginAbandon">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called when the state machine is transitioning to the abandoned state asynchronously.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OnBeginAbandon">
       <MemberSignature Language="C#" Value="protected abstract IAsyncResult OnBeginAbandon (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginAbandon(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.OnBeginAbandon(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnBeginAbandon (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginAbandon : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="receiveContext.OnBeginAbandon (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract IAsyncResult ^ OnBeginAbandon(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -385,6 +456,8 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="protected virtual IAsyncResult OnBeginAbandon (Exception exception, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginAbandon(class System.Exception exception, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.OnBeginAbandon(System.Exception,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginAbandon : Exception * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.OnBeginAbandon : Exception * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="receiveContext.OnBeginAbandon (exception, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ OnBeginAbandon(Exception ^ exception, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -413,6 +486,9 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="protected abstract IAsyncResult OnBeginComplete (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginComplete(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.OnBeginComplete(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function OnBeginComplete (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginComplete : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="receiveContext.OnBeginComplete (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract IAsyncResult ^ OnBeginComplete(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -439,6 +515,9 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="protected abstract void OnComplete (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnComplete(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.OnComplete(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnComplete (timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="abstract member OnComplete : TimeSpan -&gt; unit" Usage="receiveContext.OnComplete timeout" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnComplete(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -460,6 +539,9 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="protected abstract void OnEndAbandon (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEndAbandon(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.OnEndAbandon(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnEndAbandon (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member OnEndAbandon : IAsyncResult -&gt; unit" Usage="receiveContext.OnEndAbandon result" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnEndAbandon(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -481,6 +563,9 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="protected abstract void OnEndComplete (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEndComplete(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.OnEndComplete(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnEndComplete (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member OnEndComplete : IAsyncResult -&gt; unit" Usage="receiveContext.OnEndComplete result" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnEndComplete(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -502,6 +587,9 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="protected virtual void OnFaulted ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFaulted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.OnFaulted" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFaulted ()" />
+      <MemberSignature Language="F#" Value="abstract member OnFaulted : unit -&gt; unit&#xA;override this.OnFaulted : unit -&gt; unit" Usage="receiveContext.OnFaulted " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFaulted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -520,6 +608,9 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.ReceiveContextState State { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Channels.ReceiveContextState State" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ReceiveContext.State" />
+      <MemberSignature Language="VB.NET" Value="Public Property State As ReceiveContextState" />
+      <MemberSignature Language="F#" Value="member this.State : System.ServiceModel.Channels.ReceiveContextState with get, set" Usage="System.ServiceModel.Channels.ReceiveContext.State" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::ServiceModel::Channels::ReceiveContextState State {  public:&#xA;System::ServiceModel::Channels::ReceiveContextState get(); protected:&#xA; void set(System::ServiceModel::Channels::ReceiveContextState value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -538,6 +629,9 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="protected object ThisLock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ThisLock" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ReceiveContext.ThisLock" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ThisLock As Object" />
+      <MemberSignature Language="F#" Value="member this.ThisLock : obj" Usage="System.ServiceModel.Channels.ReceiveContext.ThisLock" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ ThisLock { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -553,10 +647,21 @@ using (TransactionScope ts = new TransactionScope())
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGet">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Attempts to get the receive context.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryGet">
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.Message message, out System.ServiceModel.Channels.ReceiveContext property);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.Message message, [out] class System.ServiceModel.Channels.ReceiveContext&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.TryGet(System.ServiceModel.Channels.Message,System.ServiceModel.Channels.ReceiveContext@)" />
+      <MemberSignature Language="F#" Value="static member TryGet : System.ServiceModel.Channels.Message *  -&gt; bool" Usage="System.ServiceModel.Channels.ReceiveContext.TryGet (message, property)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(System::ServiceModel::Channels::Message ^ message, [Runtime::InteropServices::Out] System::ServiceModel::Channels::ReceiveContext ^ % property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -582,6 +687,9 @@ using (TransactionScope ts = new TransactionScope())
       <MemberSignature Language="C#" Value="public static bool TryGet (System.ServiceModel.Channels.MessageProperties properties, out System.ServiceModel.Channels.ReceiveContext property);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryGet(class System.ServiceModel.Channels.MessageProperties properties, [out] class System.ServiceModel.Channels.ReceiveContext&amp; property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ReceiveContext.TryGet(System.ServiceModel.Channels.MessageProperties,System.ServiceModel.Channels.ReceiveContext@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryGet (properties As MessageProperties, ByRef property As ReceiveContext) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryGet : System.ServiceModel.Channels.MessageProperties *  -&gt; bool" Usage="System.ServiceModel.Channels.ReceiveContext.TryGet (properties, property)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryGet(System::ServiceModel::Channels::MessageProperties ^ properties, [Runtime::InteropServices::Out] System::ServiceModel::Channels::ReceiveContext ^ % property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -603,41 +711,5 @@ using (TransactionScope ts = new TransactionScope())
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="OnBeginAbandon">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Called when the state machine is transitioning to the abandoned state asynchronously.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BeginAbandon">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Begins an asynchronous abandon operation.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="OnAbandon">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Called when the state machine is transitioning to the abandoned state.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TryGet">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Attempts to get the receive context.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

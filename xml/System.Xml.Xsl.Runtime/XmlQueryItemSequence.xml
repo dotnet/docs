@@ -1,7 +1,10 @@
-<Type Name="XmlQueryItemSequence" FullName="System.Xml.Xsl.Runtime.XmlQueryItemSequence">
+﻿<Type Name="XmlQueryItemSequence" FullName="System.Xml.Xsl.Runtime.XmlQueryItemSequence">
   <TypeSignature Language="C#" Value="public sealed class XmlQueryItemSequence : System.Xml.Xsl.Runtime.XmlQuerySequence&lt;System.Xml.XPath.XPathItem&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlQueryItemSequence extends System.Xml.Xsl.Runtime.XmlQuerySequence`1&lt;class System.Xml.XPath.XPathItem&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlQueryItemSequence&#xA;Inherits XmlQuerySequence(Of XPathItem)" />
+  <TypeSignature Language="F#" Value="type XmlQueryItemSequence = class&#xA;    inherit XmlQuerySequence&lt;XPathItem&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlQueryItemSequence sealed : System::Xml::Xsl::Runtime::XmlQuerySequence&lt;System::Xml::XPath::XPathItem ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +31,21 @@
     <forInternalUseOnly />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlQueryItemSequence ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryItemSequence.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlQueryItemSequence();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -52,6 +66,9 @@
       <MemberSignature Language="C#" Value="public XmlQueryItemSequence (int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryItemSequence.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Xsl.Runtime.XmlQueryItemSequence : int -&gt; System.Xml.Xsl.Runtime.XmlQueryItemSequence" Usage="new System.Xml.Xsl.Runtime.XmlQueryItemSequence capacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlQueryItemSequence(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -75,6 +92,9 @@
       <MemberSignature Language="C#" Value="public XmlQueryItemSequence (System.Xml.XPath.XPathItem item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XPath.XPathItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryItemSequence.#ctor(System.Xml.XPath.XPathItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (item As XPathItem)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Xsl.Runtime.XmlQueryItemSequence : System.Xml.XPath.XPathItem -&gt; System.Xml.Xsl.Runtime.XmlQueryItemSequence" Usage="new System.Xml.Xsl.Runtime.XmlQueryItemSequence item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlQueryItemSequence(System::Xml::XPath::XPathItem ^ item);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -98,6 +118,9 @@
       <MemberSignature Language="C#" Value="public void AddClone (System.Xml.XPath.XPathItem item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddClone(class System.Xml.XPath.XPathItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryItemSequence.AddClone(System.Xml.XPath.XPathItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddClone (item As XPathItem)" />
+      <MemberSignature Language="F#" Value="member this.AddClone : System.Xml.XPath.XPathItem -&gt; unit" Usage="xmlQueryItemSequence.AddClone item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddClone(System::Xml::XPath::XPathItem ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -120,10 +143,22 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateOrReuse">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.SqlXml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Clears and reuses an <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> object if it is available. Otherwise, creates a new <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateOrReuse">
       <MemberSignature Language="C#" Value="public static System.Xml.Xsl.Runtime.XmlQueryItemSequence CreateOrReuse (System.Xml.Xsl.Runtime.XmlQueryItemSequence seq);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Xsl.Runtime.XmlQueryItemSequence CreateOrReuse(class System.Xml.Xsl.Runtime.XmlQueryItemSequence seq) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryItemSequence.CreateOrReuse(System.Xml.Xsl.Runtime.XmlQueryItemSequence)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateOrReuse (seq As XmlQueryItemSequence) As XmlQueryItemSequence" />
+      <MemberSignature Language="F#" Value="static member CreateOrReuse : System.Xml.Xsl.Runtime.XmlQueryItemSequence -&gt; System.Xml.Xsl.Runtime.XmlQueryItemSequence" Usage="System.Xml.Xsl.Runtime.XmlQueryItemSequence.CreateOrReuse seq" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Xsl::Runtime::XmlQueryItemSequence ^ CreateOrReuse(System::Xml::Xsl::Runtime::XmlQueryItemSequence ^ seq);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -151,6 +186,9 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Xsl.Runtime.XmlQueryItemSequence CreateOrReuse (System.Xml.Xsl.Runtime.XmlQueryItemSequence seq, System.Xml.XPath.XPathItem item);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Xsl.Runtime.XmlQueryItemSequence CreateOrReuse(class System.Xml.Xsl.Runtime.XmlQueryItemSequence seq, class System.Xml.XPath.XPathItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlQueryItemSequence.CreateOrReuse(System.Xml.Xsl.Runtime.XmlQueryItemSequence,System.Xml.XPath.XPathItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateOrReuse (seq As XmlQueryItemSequence, item As XPathItem) As XmlQueryItemSequence" />
+      <MemberSignature Language="F#" Value="static member CreateOrReuse : System.Xml.Xsl.Runtime.XmlQueryItemSequence * System.Xml.XPath.XPathItem -&gt; System.Xml.Xsl.Runtime.XmlQueryItemSequence" Usage="System.Xml.Xsl.Runtime.XmlQueryItemSequence.CreateOrReuse (seq, item)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Xsl::Runtime::XmlQueryItemSequence ^ CreateOrReuse(System::Xml::Xsl::Runtime::XmlQueryItemSequence ^ seq, System::Xml::XPath::XPathItem ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -180,6 +218,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Xml.Xsl.Runtime.XmlQueryItemSequence Empty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Xml.Xsl.Runtime.XmlQueryItemSequence Empty" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Xsl.Runtime.XmlQueryItemSequence.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As XmlQueryItemSequence " />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Xml.Xsl.Runtime.XmlQueryItemSequence" Usage="System.Xml.Xsl.Runtime.XmlQueryItemSequence.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Xml::Xsl::Runtime::XmlQueryItemSequence ^ Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -198,23 +239,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateOrReuse">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.SqlXml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Clears and reuses an <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" /> object if it is available. Otherwise, creates a new <see cref="T:System.Xml.Xsl.Runtime.XmlQueryItemSequence" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

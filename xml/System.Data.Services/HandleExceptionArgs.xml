@@ -1,7 +1,10 @@
-<Type Name="HandleExceptionArgs" FullName="System.Data.Services.HandleExceptionArgs">
+﻿<Type Name="HandleExceptionArgs" FullName="System.Data.Services.HandleExceptionArgs">
   <TypeSignature Language="C#" Value="public class HandleExceptionArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HandleExceptionArgs extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.HandleExceptionArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class HandleExceptionArgs" />
+  <TypeSignature Language="F#" Value="type HandleExceptionArgs = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HandleExceptionArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.HandleExceptionArgs.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public Property Exception As Exception" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception with get, set" Usage="System.Data.Services.HandleExceptionArgs.Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); void set(Exception ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -44,6 +50,9 @@
       <MemberSignature Language="C#" Value="public string ResponseContentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResponseContentType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.HandleExceptionArgs.ResponseContentType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResponseContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ResponseContentType : string" Usage="System.Data.Services.HandleExceptionArgs.ResponseContentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResponseContentType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -69,6 +78,9 @@
       <MemberSignature Language="C#" Value="public int ResponseStatusCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ResponseStatusCode" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.HandleExceptionArgs.ResponseStatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResponseStatusCode As Integer" />
+      <MemberSignature Language="F#" Value="member this.ResponseStatusCode : int" Usage="System.Data.Services.HandleExceptionArgs.ResponseStatusCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ResponseStatusCode { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -87,6 +99,9 @@
       <MemberSignature Language="C#" Value="public bool ResponseWritten { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ResponseWritten" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.HandleExceptionArgs.ResponseWritten" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResponseWritten As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ResponseWritten : bool" Usage="System.Data.Services.HandleExceptionArgs.ResponseWritten" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ResponseWritten { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -112,6 +127,9 @@
       <MemberSignature Language="C#" Value="public bool UseVerboseErrors { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseVerboseErrors" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.HandleExceptionArgs.UseVerboseErrors" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseVerboseErrors As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseVerboseErrors : bool with get, set" Usage="System.Data.Services.HandleExceptionArgs.UseVerboseErrors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseVerboseErrors { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

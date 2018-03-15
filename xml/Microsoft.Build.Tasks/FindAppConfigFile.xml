@@ -1,7 +1,10 @@
-<Type Name="FindAppConfigFile" FullName="Microsoft.Build.Tasks.FindAppConfigFile">
+﻿<Type Name="FindAppConfigFile" FullName="Microsoft.Build.Tasks.FindAppConfigFile">
   <TypeSignature Language="C#" Value="public class FindAppConfigFile : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FindAppConfigFile extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.FindAppConfigFile" />
+  <TypeSignature Language="VB.NET" Value="Public Class FindAppConfigFile&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="F#" Value="type FindAppConfigFile = class&#xA;    inherit TaskExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FindAppConfigFile : Microsoft::Build::Tasks::TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public FindAppConfigFile ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.FindAppConfigFile.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FindAppConfigFile();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem AppConfigFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem AppConfigFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.FindAppConfigFile.AppConfigFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property AppConfigFile As ITaskItem" />
+      <MemberSignature Language="F#" Value="member this.AppConfigFile : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.FindAppConfigFile.AppConfigFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ AppConfigFile { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -64,6 +72,9 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.FindAppConfigFile.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="findAppConfigFile.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -91,6 +102,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] PrimaryList { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] PrimaryList" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.FindAppConfigFile.PrimaryList" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrimaryList As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.PrimaryList : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.FindAppConfigFile.PrimaryList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ PrimaryList { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -114,6 +128,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] SecondaryList { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] SecondaryList" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.FindAppConfigFile.SecondaryList" />
+      <MemberSignature Language="VB.NET" Value="Public Property SecondaryList As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.SecondaryList : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.FindAppConfigFile.SecondaryList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ SecondaryList { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -137,6 +154,9 @@
       <MemberSignature Language="C#" Value="public string TargetPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetPath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.FindAppConfigFile.TargetPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetPath As String" />
+      <MemberSignature Language="F#" Value="member this.TargetPath : string with get, set" Usage="Microsoft.Build.Tasks.FindAppConfigFile.TargetPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

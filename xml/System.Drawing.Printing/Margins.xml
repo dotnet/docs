@@ -1,7 +1,10 @@
-<Type Name="Margins" FullName="System.Drawing.Printing.Margins">
+﻿<Type Name="Margins" FullName="System.Drawing.Printing.Margins">
   <TypeSignature Language="C#" Value="public class Margins : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit Margins extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.Margins" />
+  <TypeSignature Language="VB.NET" Value="Public Class Margins&#xA;Implements ICloneable" />
+  <TypeSignature Language="F#" Value="type Margins = class&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Margins : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,10 +52,21 @@
     <altmember cref="T:System.Drawing.Printing.MarginsConverter" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.Margins" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Margins ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.Margins.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Margins();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -68,6 +82,9 @@
       <MemberSignature Language="C#" Value="public Margins (int left, int right, int top, int bottom);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 left, int32 right, int32 top, int32 bottom) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.Margins.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (left As Integer, right As Integer, top As Integer, bottom As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Printing.Margins : int * int * int * int -&gt; System.Drawing.Printing.Margins" Usage="new System.Drawing.Printing.Margins (left, right, top, bottom)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Margins(int left, int right, int top, int bottom);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -118,6 +135,9 @@
       <MemberSignature Language="C#" Value="public int Bottom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Bottom" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.Margins.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Public Property Bottom As Integer" />
+      <MemberSignature Language="F#" Value="member this.Bottom : int with get, set" Usage="System.Drawing.Printing.Margins.Bottom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Bottom { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -158,7 +178,13 @@
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.Margins.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="margins.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -178,6 +204,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.Margins.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="margins.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -202,6 +231,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.Margins.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="margins.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -221,6 +253,9 @@
       <MemberSignature Language="C#" Value="public int Left { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Left" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.Margins.Left" />
+      <MemberSignature Language="VB.NET" Value="Public Property Left As Integer" />
+      <MemberSignature Language="F#" Value="member this.Left : int with get, set" Usage="System.Drawing.Printing.Margins.Left" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Left { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -261,6 +296,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Drawing.Printing.Margins m1, System.Drawing.Printing.Margins m2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Drawing.Printing.Margins m1, class System.Drawing.Printing.Margins m2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.Margins.op_Equality(System.Drawing.Printing.Margins,System.Drawing.Printing.Margins)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (m1 As Margins, m2 As Margins) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Drawing.Printing.Margins * System.Drawing.Printing.Margins -&gt; bool" Usage="m1 = m2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Drawing::Printing::Margins ^ m1, System::Drawing::Printing::Margins ^ m2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -288,6 +326,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Drawing.Printing.Margins m1, System.Drawing.Printing.Margins m2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Drawing.Printing.Margins m1, class System.Drawing.Printing.Margins m2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.Margins.op_Inequality(System.Drawing.Printing.Margins,System.Drawing.Printing.Margins)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (m1 As Margins, m2 As Margins) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Drawing.Printing.Margins * System.Drawing.Printing.Margins -&gt; bool" Usage="System.Drawing.Printing.Margins.op_Inequality (m1, m2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Drawing::Printing::Margins ^ m1, System::Drawing::Printing::Margins ^ m2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -315,6 +356,9 @@
       <MemberSignature Language="C#" Value="public int Right { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Right" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.Margins.Right" />
+      <MemberSignature Language="VB.NET" Value="Public Property Right As Integer" />
+      <MemberSignature Language="F#" Value="member this.Right : int with get, set" Usage="System.Drawing.Printing.Margins.Right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Right { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -355,6 +399,9 @@
       <MemberSignature Language="C#" Value="public int Top { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Top" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.Margins.Top" />
+      <MemberSignature Language="VB.NET" Value="Public Property Top As Integer" />
+      <MemberSignature Language="F#" Value="member this.Top : int with get, set" Usage="System.Drawing.Printing.Margins.Top" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Top { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -395,6 +442,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.Margins.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="margins.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -410,14 +460,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Printing.Margins" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

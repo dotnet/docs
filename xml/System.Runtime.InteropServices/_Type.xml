@@ -2,6 +2,9 @@
   <TypeSignature Language="C#" Value="public interface _Type" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _Type" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices._Type" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _Type" />
+  <TypeSignature Language="F#" Value="type _Type = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _Type" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Assembly Assembly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Assembly Assembly" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.Assembly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Assembly As Assembly" />
+      <MemberSignature Language="F#" Value="member this.Assembly : System.Reflection.Assembly" Usage="System.Runtime.InteropServices._Type.Assembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ Assembly { System::Reflection::Assembly ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -71,6 +77,9 @@
       <MemberSignature Language="C#" Value="public string AssemblyQualifiedName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyQualifiedName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.AssemblyQualifiedName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyQualifiedName As String" />
+      <MemberSignature Language="F#" Value="member this.AssemblyQualifiedName : string" Usage="System.Runtime.InteropServices._Type.AssemblyQualifiedName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AssemblyQualifiedName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,6 +108,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.TypeAttributes Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.TypeAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As TypeAttributes" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.TypeAttributes" Usage="System.Runtime.InteropServices._Type.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::TypeAttributes Attributes { System::Reflection::TypeAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -127,6 +139,9 @@
       <MemberSignature Language="C#" Value="public Type BaseType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BaseType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.BaseType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseType As Type" />
+      <MemberSignature Language="F#" Value="member this.BaseType : Type" Usage="System.Runtime.InteropServices._Type.BaseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ BaseType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -155,6 +170,9 @@
       <MemberSignature Language="C#" Value="public Type DeclaringType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DeclaringType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.DeclaringType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeclaringType As Type" />
+      <MemberSignature Language="F#" Value="member this.DeclaringType : Type" Usage="System.Runtime.InteropServices._Type.DeclaringType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ DeclaringType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -205,6 +223,9 @@
       <MemberSignature Language="C#" Value="public bool Equals (object other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(object other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Equals : obj -&gt; bool" Usage="_Type.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Object ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -238,6 +259,9 @@
       <MemberSignature Language="C#" Value="public bool Equals (Type o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Type o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.Equals(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (o As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Equals : Type -&gt; bool" Usage="_Type.Equals o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(Type ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -271,6 +295,9 @@
       <MemberSignature Language="C#" Value="public Type[] FindInterfaces (System.Reflection.TypeFilter filter, object filterCriteria);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] FindInterfaces(class System.Reflection.TypeFilter filter, object filterCriteria) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.FindInterfaces(System.Reflection.TypeFilter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindInterfaces (filter As TypeFilter, filterCriteria As Object) As Type()" />
+      <MemberSignature Language="F#" Value="abstract member FindInterfaces : System.Reflection.TypeFilter * obj -&gt; Type[]" Usage="_Type.FindInterfaces (filter, filterCriteria)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Type ^&gt; ^ FindInterfaces(System::Reflection::TypeFilter ^ filter, System::Object ^ filterCriteria);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -309,6 +336,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo[] FindMembers (System.Reflection.MemberTypes memberType, System.Reflection.BindingFlags bindingAttr, System.Reflection.MemberFilter filter, object filterCriteria);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MemberInfo[] FindMembers(valuetype System.Reflection.MemberTypes memberType, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.MemberFilter filter, object filterCriteria) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindMembers (memberType As MemberTypes, bindingAttr As BindingFlags, filter As MemberFilter, filterCriteria As Object) As MemberInfo()" />
+      <MemberSignature Language="F#" Value="abstract member FindMembers : System.Reflection.MemberTypes * System.Reflection.BindingFlags * System.Reflection.MemberFilter * obj -&gt; System.Reflection.MemberInfo[]" Usage="_Type.FindMembers (memberType, bindingAttr, filter, filterCriteria)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ FindMembers(System::Reflection::MemberTypes memberType, System::Reflection::BindingFlags bindingAttr, System::Reflection::MemberFilter ^ filter, System::Object ^ filterCriteria);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -357,6 +387,9 @@
       <MemberSignature Language="C#" Value="public string FullName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FullName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.FullName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullName As String" />
+      <MemberSignature Language="F#" Value="member this.FullName : string" Usage="System.Runtime.InteropServices._Type.FullName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FullName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -385,6 +418,9 @@
       <MemberSignature Language="C#" Value="public int GetArrayRank ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetArrayRank() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetArrayRank" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetArrayRank () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetArrayRank : unit -&gt; int" Usage="_Type.GetArrayRank " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetArrayRank();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -434,6 +470,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.ConstructorInfo GetConstructor (Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.ConstructorInfo GetConstructor(class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetConstructor(System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConstructor (types As Type()) As ConstructorInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetConstructor : Type[] -&gt; System.Reflection.ConstructorInfo" Usage="_Type.GetConstructor types" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::ConstructorInfo ^ GetConstructor(cli::array &lt;Type ^&gt; ^ types);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -470,6 +509,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.ConstructorInfo GetConstructor (System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, Type[] types, System.Reflection.ParameterModifier[] modifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.ConstructorInfo GetConstructor(valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetConstructor(System.Reflection.BindingFlags,System.Reflection.Binder,System.Type[],System.Reflection.ParameterModifier[])" />
+      <MemberSignature Language="F#" Value="abstract member GetConstructor : System.Reflection.BindingFlags * System.Reflection.Binder * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.ConstructorInfo" Usage="_Type.GetConstructor (bindingAttr, binder, types, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::ConstructorInfo ^ GetConstructor(System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -524,6 +565,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.ConstructorInfo GetConstructor (System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Reflection.CallingConventions callConvention, Type[] types, System.Reflection.ParameterModifier[] modifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.ConstructorInfo GetConstructor(valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, valuetype System.Reflection.CallingConventions callConvention, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetConstructor(System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
+      <MemberSignature Language="F#" Value="abstract member GetConstructor : System.Reflection.BindingFlags * System.Reflection.Binder * System.Reflection.CallingConventions * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.ConstructorInfo" Usage="_Type.GetConstructor (bindingAttr, binder, callConvention, types, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::ConstructorInfo ^ GetConstructor(System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, System::Reflection::CallingConventions callConvention, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -596,6 +639,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.ConstructorInfo[] GetConstructors ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.ConstructorInfo[] GetConstructors() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetConstructors" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConstructors () As ConstructorInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetConstructors : unit -&gt; System.Reflection.ConstructorInfo[]" Usage="_Type.GetConstructors " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::ConstructorInfo ^&gt; ^ GetConstructors();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -625,6 +671,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.ConstructorInfo[] GetConstructors (System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.ConstructorInfo[] GetConstructors(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetConstructors(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConstructors (bindingAttr As BindingFlags) As ConstructorInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetConstructors : System.Reflection.BindingFlags -&gt; System.Reflection.ConstructorInfo[]" Usage="_Type.GetConstructors bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::ConstructorInfo ^&gt; ^ GetConstructors(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -681,6 +730,9 @@
       <MemberSignature Language="C#" Value="public object[] GetCustomAttributes (bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetCustomAttributes(bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetCustomAttributes(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes (inherit As Boolean) As Object()" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomAttributes : bool -&gt; obj[]" Usage="_Type.GetCustomAttributes inherit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -713,6 +765,9 @@
       <MemberSignature Language="C#" Value="public object[] GetCustomAttributes (Type attributeType, bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetCustomAttributes(class System.Type attributeType, bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetCustomAttributes(System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes (attributeType As Type, inherit As Boolean) As Object()" />
+      <MemberSignature Language="F#" Value="abstract member GetCustomAttributes : Type * bool -&gt; obj[]" Usage="_Type.GetCustomAttributes (attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -747,6 +802,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo[] GetDefaultMembers ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MemberInfo[] GetDefaultMembers() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetDefaultMembers" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDefaultMembers () As MemberInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultMembers : unit -&gt; System.Reflection.MemberInfo[]" Usage="_Type.GetDefaultMembers " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetDefaultMembers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -780,6 +838,9 @@
       <MemberSignature Language="C#" Value="public Type GetElementType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetElementType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetElementType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetElementType () As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetElementType : unit -&gt; Type" Usage="_Type.GetElementType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetElementType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -833,6 +894,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.EventInfo GetEvent (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.EventInfo GetEvent(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEvent (name As String) As EventInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetEvent : string -&gt; System.Reflection.EventInfo" Usage="_Type.GetEvent name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::EventInfo ^ GetEvent(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -873,6 +937,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.EventInfo GetEvent (string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.EventInfo GetEvent(string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetEvent(System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEvent (name As String, bindingAttr As BindingFlags) As EventInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetEvent : string * System.Reflection.BindingFlags -&gt; System.Reflection.EventInfo" Usage="_Type.GetEvent (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::EventInfo ^ GetEvent(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -931,6 +998,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.EventInfo[] GetEvents ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.EventInfo[] GetEvents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetEvents" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEvents () As EventInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetEvents : unit -&gt; System.Reflection.EventInfo[]" Usage="_Type.GetEvents " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::EventInfo ^&gt; ^ GetEvents();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -964,6 +1034,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.EventInfo[] GetEvents (System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.EventInfo[] GetEvents(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetEvents(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEvents (bindingAttr As BindingFlags) As EventInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetEvents : System.Reflection.BindingFlags -&gt; System.Reflection.EventInfo[]" Usage="_Type.GetEvents bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::EventInfo ^&gt; ^ GetEvents(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1024,6 +1097,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.FieldInfo GetField (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo GetField(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetField(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetField (name As String) As FieldInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetField : string -&gt; System.Reflection.FieldInfo" Usage="_Type.GetField name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::FieldInfo ^ GetField(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1056,6 +1132,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.FieldInfo GetField (string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo GetField(string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetField(System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetField (name As String, bindingAttr As BindingFlags) As FieldInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetField : string * System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo" Usage="_Type.GetField (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::FieldInfo ^ GetField(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1114,6 +1193,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.FieldInfo[] GetFields ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo[] GetFields() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetFields" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFields () As FieldInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetFields : unit -&gt; System.Reflection.FieldInfo[]" Usage="_Type.GetFields " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ GetFields();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1147,6 +1229,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.FieldInfo[] GetFields (System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo[] GetFields(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetFields(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFields (bindingAttr As BindingFlags) As FieldInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetFields : System.Reflection.BindingFlags -&gt; System.Reflection.FieldInfo[]" Usage="_Type.GetFields bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ GetFields(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1187,6 +1272,9 @@
       <MemberSignature Language="C#" Value="public int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetHashCode : unit -&gt; int" Usage="_Type.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1216,6 +1304,9 @@
       <MemberSignature Language="C#" Value="public void GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member GetIDsOfNames :  * nativeint * uint32 * uint32 * nativeint -&gt; unit" Usage="_Type.GetIDsOfNames (riid, rgszNames, cNames, lcid, rgDispId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1273,6 +1364,9 @@
       <MemberSignature Language="C#" Value="public Type GetInterface (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetInterface(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetInterface(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInterface (name As String) As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetInterface : string -&gt; Type" Usage="_Type.GetInterface name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetInterface(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1305,6 +1399,9 @@
       <MemberSignature Language="C#" Value="public Type GetInterface (string name, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetInterface(string name, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetInterface(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInterface (name As String, ignoreCase As Boolean) As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetInterface : string * bool -&gt; Type" Usage="_Type.GetInterface (name, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetInterface(System::String ^ name, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1344,6 +1441,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.InterfaceMapping GetInterfaceMap (Type interfaceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Reflection.InterfaceMapping GetInterfaceMap(class System.Type interfaceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetInterfaceMap(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInterfaceMap (interfaceType As Type) As InterfaceMapping" />
+      <MemberSignature Language="F#" Value="abstract member GetInterfaceMap : Type -&gt; System.Reflection.InterfaceMapping" Usage="_Type.GetInterfaceMap interfaceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::InterfaceMapping GetInterfaceMap(Type ^ interfaceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1376,6 +1476,9 @@
       <MemberSignature Language="C#" Value="public Type[] GetInterfaces ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetInterfaces() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetInterfaces" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInterfaces () As Type()" />
+      <MemberSignature Language="F#" Value="abstract member GetInterfaces : unit -&gt; Type[]" Usage="_Type.GetInterfaces " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Type ^&gt; ^ GetInterfaces();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1429,6 +1532,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo[] GetMember (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MemberInfo[] GetMember(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetMember(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMember (name As String) As MemberInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetMember : string -&gt; System.Reflection.MemberInfo[]" Usage="_Type.GetMember name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1461,6 +1567,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo[] GetMember (string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MemberInfo[] GetMember(string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetMember(System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMember (name As String, bindingAttr As BindingFlags) As MemberInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetMember : string * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="_Type.GetMember (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1499,6 +1608,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo[] GetMember (string name, System.Reflection.MemberTypes type, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MemberInfo[] GetMember(string name, valuetype System.Reflection.MemberTypes type, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetMember(System.String,System.Reflection.MemberTypes,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMember (name As String, type As MemberTypes, bindingAttr As BindingFlags) As MemberInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetMember : string * System.Reflection.MemberTypes * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="_Type.GetMember (name, type, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(System::String ^ name, System::Reflection::MemberTypes type, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1559,6 +1671,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo[] GetMembers ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MemberInfo[] GetMembers() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetMembers" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMembers () As MemberInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetMembers : unit -&gt; System.Reflection.MemberInfo[]" Usage="_Type.GetMembers " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMembers();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1592,6 +1707,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MemberInfo[] GetMembers (System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MemberInfo[] GetMembers(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetMembers(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMembers (bindingAttr As BindingFlags) As MemberInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetMembers : System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="_Type.GetMembers bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMembers(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1652,6 +1770,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetMethod (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetMethod(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetMethod(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMethod (name As String) As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetMethod : string -&gt; System.Reflection.MethodInfo" Usage="_Type.GetMethod name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetMethod(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1684,6 +1805,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetMethod (string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetMethod(string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetMethod(System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMethod (name As String, bindingAttr As BindingFlags) As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetMethod : string * System.Reflection.BindingFlags -&gt; System.Reflection.MethodInfo" Usage="_Type.GetMethod (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetMethod(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1722,6 +1846,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetMethod (string name, Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetMethod(string name, class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetMethod(System.String,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMethod (name As String, types As Type()) As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetMethod : string * Type[] -&gt; System.Reflection.MethodInfo" Usage="_Type.GetMethod (name, types)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetMethod(System::String ^ name, cli::array &lt;Type ^&gt; ^ types);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1760,6 +1887,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetMethod (string name, Type[] types, System.Reflection.ParameterModifier[] modifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetMethod(string name, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetMethod(System.String,System.Type[],System.Reflection.ParameterModifier[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMethod (name As String, types As Type(), modifiers As ParameterModifier()) As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetMethod : string * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.MethodInfo" Usage="_Type.GetMethod (name, types, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetMethod(System::String ^ name, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1800,6 +1930,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetMethod (string name, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, Type[] types, System.Reflection.ParameterModifier[] modifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetMethod(string name, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type[],System.Reflection.ParameterModifier[])" />
+      <MemberSignature Language="F#" Value="abstract member GetMethod : string * System.Reflection.BindingFlags * System.Reflection.Binder * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.MethodInfo" Usage="_Type.GetMethod (name, bindingAttr, binder, types, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetMethod(System::String ^ name, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1852,6 +1984,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetMethod (string name, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, System.Reflection.CallingConventions callConvention, Type[] types, System.Reflection.ParameterModifier[] modifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetMethod(string name, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, valuetype System.Reflection.CallingConventions callConvention, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetMethod(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Reflection.CallingConventions,System.Type[],System.Reflection.ParameterModifier[])" />
+      <MemberSignature Language="F#" Value="abstract member GetMethod : string * System.Reflection.BindingFlags * System.Reflection.Binder * System.Reflection.CallingConventions * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.MethodInfo" Usage="_Type.GetMethod (name, bindingAttr, binder, callConvention, types, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::MethodInfo ^ GetMethod(System::String ^ name, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, System::Reflection::CallingConventions callConvention, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1926,6 +2060,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo[] GetMethods ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo[] GetMethods() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetMethods" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMethods () As MethodInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetMethods : unit -&gt; System.Reflection.MethodInfo[]" Usage="_Type.GetMethods " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetMethods();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1959,6 +2096,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo[] GetMethods (System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo[] GetMethods(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetMethods(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMethods (bindingAttr As BindingFlags) As MethodInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetMethods : System.Reflection.BindingFlags -&gt; System.Reflection.MethodInfo[]" Usage="_Type.GetMethods bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::MethodInfo ^&gt; ^ GetMethods(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2019,6 +2159,9 @@
       <MemberSignature Language="C#" Value="public Type GetNestedType (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetNestedType(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetNestedType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNestedType (name As String) As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetNestedType : string -&gt; Type" Usage="_Type.GetNestedType name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetNestedType(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2051,6 +2194,9 @@
       <MemberSignature Language="C#" Value="public Type GetNestedType (string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetNestedType(string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetNestedType(System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNestedType (name As String, bindingAttr As BindingFlags) As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetNestedType : string * System.Reflection.BindingFlags -&gt; Type" Usage="_Type.GetNestedType (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetNestedType(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2109,6 +2255,9 @@
       <MemberSignature Language="C#" Value="public Type[] GetNestedTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetNestedTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetNestedTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNestedTypes () As Type()" />
+      <MemberSignature Language="F#" Value="abstract member GetNestedTypes : unit -&gt; Type[]" Usage="_Type.GetNestedTypes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Type ^&gt; ^ GetNestedTypes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2142,6 +2291,9 @@
       <MemberSignature Language="C#" Value="public Type[] GetNestedTypes (System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type[] GetNestedTypes(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetNestedTypes(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNestedTypes (bindingAttr As BindingFlags) As Type()" />
+      <MemberSignature Language="F#" Value="abstract member GetNestedTypes : System.Reflection.BindingFlags -&gt; Type[]" Usage="_Type.GetNestedTypes bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Type ^&gt; ^ GetNestedTypes(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2200,6 +2352,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo[] GetProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo[] GetProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperties () As PropertyInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetProperties : unit -&gt; System.Reflection.PropertyInfo[]" Usage="_Type.GetProperties " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ GetProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2233,6 +2388,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo[] GetProperties (System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo[] GetProperties(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetProperties(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperties (bindingAttr As BindingFlags) As PropertyInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetProperties : System.Reflection.BindingFlags -&gt; System.Reflection.PropertyInfo[]" Usage="_Type.GetProperties bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Reflection::PropertyInfo ^&gt; ^ GetProperties(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2293,6 +2451,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo GetProperty (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo GetProperty(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetProperty(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (name As String) As PropertyInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : string -&gt; System.Reflection.PropertyInfo" Usage="_Type.GetProperty name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PropertyInfo ^ GetProperty(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2325,6 +2486,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo GetProperty (string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo GetProperty(string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetProperty(System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (name As String, bindingAttr As BindingFlags) As PropertyInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : string * System.Reflection.BindingFlags -&gt; System.Reflection.PropertyInfo" Usage="_Type.GetProperty (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PropertyInfo ^ GetProperty(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2363,6 +2527,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo GetProperty (string name, Type returnType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo GetProperty(string name, class System.Type returnType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetProperty(System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (name As String, returnType As Type) As PropertyInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : string * Type -&gt; System.Reflection.PropertyInfo" Usage="_Type.GetProperty (name, returnType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PropertyInfo ^ GetProperty(System::String ^ name, Type ^ returnType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2397,6 +2564,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo GetProperty (string name, Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo GetProperty(string name, class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetProperty(System.String,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (name As String, types As Type()) As PropertyInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : string * Type[] -&gt; System.Reflection.PropertyInfo" Usage="_Type.GetProperty (name, types)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PropertyInfo ^ GetProperty(System::String ^ name, cli::array &lt;Type ^&gt; ^ types);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2435,6 +2605,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo GetProperty (string name, Type returnType, Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo GetProperty(string name, class System.Type returnType, class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetProperty(System.String,System.Type,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (name As String, returnType As Type, types As Type()) As PropertyInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : string * Type * Type[] -&gt; System.Reflection.PropertyInfo" Usage="_Type.GetProperty (name, returnType, types)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PropertyInfo ^ GetProperty(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ types);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2475,6 +2648,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo GetProperty (string name, Type returnType, Type[] types, System.Reflection.ParameterModifier[] modifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo GetProperty(string name, class System.Type returnType, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetProperty(System.String,System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProperty (name As String, returnType As Type, types As Type(), modifiers As ParameterModifier()) As PropertyInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : string * Type * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.PropertyInfo" Usage="_Type.GetProperty (name, returnType, types, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PropertyInfo ^ GetProperty(System::String ^ name, Type ^ returnType, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2517,6 +2693,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.PropertyInfo GetProperty (string name, System.Reflection.BindingFlags bindingAttr, System.Reflection.Binder binder, Type returnType, Type[] types, System.Reflection.ParameterModifier[] modifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.PropertyInfo GetProperty(string name, valuetype System.Reflection.BindingFlags bindingAttr, class System.Reflection.Binder binder, class System.Type returnType, class System.Type[] types, valuetype System.Reflection.ParameterModifier[] modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetProperty(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Type,System.Type[],System.Reflection.ParameterModifier[])" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : string * System.Reflection.BindingFlags * System.Reflection.Binder * Type * Type[] * System.Reflection.ParameterModifier[] -&gt; System.Reflection.PropertyInfo" Usage="_Type.GetProperty (name, bindingAttr, binder, returnType, types, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::PropertyInfo ^ GetProperty(System::String ^ name, System::Reflection::BindingFlags bindingAttr, System::Reflection::Binder ^ binder, Type ^ returnType, cli::array &lt;Type ^&gt; ^ types, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2571,6 +2749,9 @@
       <MemberSignature Language="C#" Value="public Type GetType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetType () As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetType : unit -&gt; Type" Usage="_Type.GetType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2600,6 +2781,9 @@
       <MemberSignature Language="C#" Value="public void GetTypeInfo (uint iTInfo, uint lcid, IntPtr ppTInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfo : uint32 * uint32 * nativeint -&gt; unit" Usage="_Type.GetTypeInfo (iTInfo, lcid, ppTInfo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2633,6 +2817,9 @@
       <MemberSignature Language="C#" Value="public void GetTypeInfoCount (out uint pcTInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.GetTypeInfoCount(System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetTypeInfoCount (ByRef pcTInfo As UInteger)" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeInfoCount :  -&gt; unit" Usage="_Type.GetTypeInfoCount pcTInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2662,6 +2849,9 @@
       <MemberSignature Language="C#" Value="public Guid GUID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid GUID" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.GUID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GUID As Guid" />
+      <MemberSignature Language="F#" Value="member this.GUID : Guid" Usage="System.Runtime.InteropServices._Type.GUID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid GUID { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2690,6 +2880,9 @@
       <MemberSignature Language="C#" Value="public bool HasElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasElementType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.HasElementType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasElementType As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasElementType : bool" Usage="System.Runtime.InteropServices._Type.HasElementType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasElementType { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2719,6 +2912,9 @@
       <MemberSignature Language="C#" Value="public void Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member Invoke : uint32 *  * uint32 * int16 * nativeint * nativeint * nativeint * nativeint -&gt; unit" Usage="_Type.Invoke (dispIdMember, riid, lcid, wFlags, pDispParams, pVarResult, pExcepInfo, puArgErr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2784,6 +2980,8 @@
       <MemberSignature Language="C#" Value="public object InvokeMember (string name, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, object target, object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object InvokeMember(string name, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object target, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[])" />
+      <MemberSignature Language="F#" Value="abstract member InvokeMember : string * System.Reflection.BindingFlags * System.Reflection.Binder * obj * obj[] -&gt; obj" Usage="_Type.InvokeMember (name, invokeAttr, binder, target, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeMember(System::String ^ name, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, System::Object ^ target, cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2836,6 +3034,8 @@
       <MemberSignature Language="C#" Value="public object InvokeMember (string name, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, object target, object[] args, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object InvokeMember(string name, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object target, object[] args, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Globalization.CultureInfo)" />
+      <MemberSignature Language="F#" Value="abstract member InvokeMember : string * System.Reflection.BindingFlags * System.Reflection.Binder * obj * obj[] * System.Globalization.CultureInfo -&gt; obj" Usage="_Type.InvokeMember (name, invokeAttr, binder, target, args, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeMember(System::String ^ name, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, System::Object ^ target, cli::array &lt;System::Object ^&gt; ^ args, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2894,6 +3094,8 @@
       <MemberSignature Language="C#" Value="public object InvokeMember (string name, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, object target, object[] args, System.Reflection.ParameterModifier[] modifiers, System.Globalization.CultureInfo culture, string[] namedParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object InvokeMember(string name, valuetype System.Reflection.BindingFlags invokeAttr, class System.Reflection.Binder binder, object target, object[] args, valuetype System.Reflection.ParameterModifier[] modifiers, class System.Globalization.CultureInfo culture, string[] namedParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />
+      <MemberSignature Language="F#" Value="abstract member InvokeMember : string * System.Reflection.BindingFlags * System.Reflection.Binder * obj * obj[] * System.Reflection.ParameterModifier[] * System.Globalization.CultureInfo * string[] -&gt; obj" Usage="_Type.InvokeMember (name, invokeAttr, binder, target, args, modifiers, culture, namedParameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeMember(System::String ^ name, System::Reflection::BindingFlags invokeAttr, System::Reflection::Binder ^ binder, System::Object ^ target, cli::array &lt;System::Object ^&gt; ^ args, cli::array &lt;System::Reflection::ParameterModifier&gt; ^ modifiers, System::Globalization::CultureInfo ^ culture, cli::array &lt;System::String ^&gt; ^ namedParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2956,6 +3158,9 @@
       <MemberSignature Language="C#" Value="public bool IsAbstract { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAbstract" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsAbstract" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAbstract As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAbstract : bool" Usage="System.Runtime.InteropServices._Type.IsAbstract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAbstract { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2985,6 +3190,9 @@
       <MemberSignature Language="C#" Value="public bool IsAnsiClass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAnsiClass" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsAnsiClass" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAnsiClass As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAnsiClass : bool" Usage="System.Runtime.InteropServices._Type.IsAnsiClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAnsiClass { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3014,6 +3222,9 @@
       <MemberSignature Language="C#" Value="public bool IsArray { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsArray" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsArray" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsArray As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsArray : bool" Usage="System.Runtime.InteropServices._Type.IsArray" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsArray { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3043,6 +3254,9 @@
       <MemberSignature Language="C#" Value="public bool IsAssignableFrom (Type c);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsAssignableFrom(class System.Type c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.IsAssignableFrom(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsAssignableFrom (c As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsAssignableFrom : Type -&gt; bool" Usage="_Type.IsAssignableFrom c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsAssignableFrom(Type ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3074,6 +3288,9 @@
       <MemberSignature Language="C#" Value="public bool IsAutoClass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAutoClass" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsAutoClass" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAutoClass As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAutoClass : bool" Usage="System.Runtime.InteropServices._Type.IsAutoClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAutoClass { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3103,6 +3320,9 @@
       <MemberSignature Language="C#" Value="public bool IsAutoLayout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAutoLayout" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsAutoLayout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAutoLayout As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAutoLayout : bool" Usage="System.Runtime.InteropServices._Type.IsAutoLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAutoLayout { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3132,6 +3352,9 @@
       <MemberSignature Language="C#" Value="public bool IsByRef { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsByRef" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsByRef" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsByRef As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsByRef : bool" Usage="System.Runtime.InteropServices._Type.IsByRef" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsByRef { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3161,6 +3384,9 @@
       <MemberSignature Language="C#" Value="public bool IsClass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsClass" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsClass" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsClass As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsClass : bool" Usage="System.Runtime.InteropServices._Type.IsClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsClass { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3190,6 +3416,9 @@
       <MemberSignature Language="C#" Value="public bool IsCOMObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCOMObject" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsCOMObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCOMObject As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCOMObject : bool" Usage="System.Runtime.InteropServices._Type.IsCOMObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCOMObject { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3219,6 +3448,9 @@
       <MemberSignature Language="C#" Value="public bool IsContextful { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsContextful" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsContextful" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsContextful As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsContextful : bool" Usage="System.Runtime.InteropServices._Type.IsContextful" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsContextful { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3248,6 +3480,9 @@
       <MemberSignature Language="C#" Value="public bool IsDefined (Type attributeType, bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsDefined(class System.Type attributeType, bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.IsDefined(System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsDefined (attributeType As Type, inherit As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsDefined : Type * bool -&gt; bool" Usage="_Type.IsDefined (attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsDefined(Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3283,6 +3518,9 @@
       <MemberSignature Language="C#" Value="public bool IsEnum { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEnum" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsEnum" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEnum As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEnum : bool" Usage="System.Runtime.InteropServices._Type.IsEnum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEnum { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3312,6 +3550,9 @@
       <MemberSignature Language="C#" Value="public bool IsExplicitLayout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsExplicitLayout" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsExplicitLayout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsExplicitLayout As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsExplicitLayout : bool" Usage="System.Runtime.InteropServices._Type.IsExplicitLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsExplicitLayout { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3341,6 +3582,9 @@
       <MemberSignature Language="C#" Value="public bool IsImport { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsImport" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsImport" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsImport As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsImport : bool" Usage="System.Runtime.InteropServices._Type.IsImport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsImport { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3370,6 +3614,9 @@
       <MemberSignature Language="C#" Value="public bool IsInstanceOfType (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsInstanceOfType(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.IsInstanceOfType(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsInstanceOfType (o As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsInstanceOfType : obj -&gt; bool" Usage="_Type.IsInstanceOfType o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsInstanceOfType(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3403,6 +3650,9 @@
       <MemberSignature Language="C#" Value="public bool IsInterface { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInterface" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsInterface" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInterface As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInterface : bool" Usage="System.Runtime.InteropServices._Type.IsInterface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInterface { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3432,6 +3682,9 @@
       <MemberSignature Language="C#" Value="public bool IsLayoutSequential { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLayoutSequential" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsLayoutSequential" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLayoutSequential As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsLayoutSequential : bool" Usage="System.Runtime.InteropServices._Type.IsLayoutSequential" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLayoutSequential { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3461,6 +3714,9 @@
       <MemberSignature Language="C#" Value="public bool IsMarshalByRef { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMarshalByRef" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsMarshalByRef" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsMarshalByRef As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsMarshalByRef : bool" Usage="System.Runtime.InteropServices._Type.IsMarshalByRef" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMarshalByRef { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3490,6 +3746,9 @@
       <MemberSignature Language="C#" Value="public bool IsNestedAssembly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNestedAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsNestedAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNestedAssembly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNestedAssembly : bool" Usage="System.Runtime.InteropServices._Type.IsNestedAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNestedAssembly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3519,6 +3778,9 @@
       <MemberSignature Language="C#" Value="public bool IsNestedFamANDAssem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNestedFamANDAssem" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsNestedFamANDAssem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNestedFamANDAssem As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNestedFamANDAssem : bool" Usage="System.Runtime.InteropServices._Type.IsNestedFamANDAssem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNestedFamANDAssem { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3548,6 +3810,9 @@
       <MemberSignature Language="C#" Value="public bool IsNestedFamily { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNestedFamily" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsNestedFamily" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNestedFamily As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNestedFamily : bool" Usage="System.Runtime.InteropServices._Type.IsNestedFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNestedFamily { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3577,6 +3842,9 @@
       <MemberSignature Language="C#" Value="public bool IsNestedFamORAssem { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNestedFamORAssem" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsNestedFamORAssem" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNestedFamORAssem As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNestedFamORAssem : bool" Usage="System.Runtime.InteropServices._Type.IsNestedFamORAssem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNestedFamORAssem { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3606,6 +3874,9 @@
       <MemberSignature Language="C#" Value="public bool IsNestedPrivate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNestedPrivate" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsNestedPrivate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNestedPrivate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNestedPrivate : bool" Usage="System.Runtime.InteropServices._Type.IsNestedPrivate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNestedPrivate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3635,6 +3906,9 @@
       <MemberSignature Language="C#" Value="public bool IsNestedPublic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNestedPublic" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsNestedPublic" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNestedPublic As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNestedPublic : bool" Usage="System.Runtime.InteropServices._Type.IsNestedPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNestedPublic { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3664,6 +3938,9 @@
       <MemberSignature Language="C#" Value="public bool IsNotPublic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNotPublic" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsNotPublic" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNotPublic As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNotPublic : bool" Usage="System.Runtime.InteropServices._Type.IsNotPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNotPublic { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3693,6 +3970,9 @@
       <MemberSignature Language="C#" Value="public bool IsPointer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPointer" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsPointer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPointer As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPointer : bool" Usage="System.Runtime.InteropServices._Type.IsPointer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPointer { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3722,6 +4002,9 @@
       <MemberSignature Language="C#" Value="public bool IsPrimitive { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPrimitive" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsPrimitive" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrimitive As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPrimitive : bool" Usage="System.Runtime.InteropServices._Type.IsPrimitive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrimitive { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3751,6 +4034,9 @@
       <MemberSignature Language="C#" Value="public bool IsPublic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPublic" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsPublic" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPublic As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPublic : bool" Usage="System.Runtime.InteropServices._Type.IsPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPublic { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3780,6 +4066,9 @@
       <MemberSignature Language="C#" Value="public bool IsSealed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSealed" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsSealed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSealed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSealed : bool" Usage="System.Runtime.InteropServices._Type.IsSealed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSealed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3809,6 +4098,9 @@
       <MemberSignature Language="C#" Value="public bool IsSerializable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSerializable" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsSerializable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSerializable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSerializable : bool" Usage="System.Runtime.InteropServices._Type.IsSerializable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSerializable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3838,6 +4130,9 @@
       <MemberSignature Language="C#" Value="public bool IsSpecialName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSpecialName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsSpecialName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSpecialName As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSpecialName : bool" Usage="System.Runtime.InteropServices._Type.IsSpecialName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSpecialName { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3867,6 +4162,9 @@
       <MemberSignature Language="C#" Value="public bool IsSubclassOf (Type c);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsSubclassOf(class System.Type c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.IsSubclassOf(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsSubclassOf (c As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsSubclassOf : Type -&gt; bool" Usage="_Type.IsSubclassOf c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsSubclassOf(Type ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3900,6 +4198,9 @@
       <MemberSignature Language="C#" Value="public bool IsUnicodeClass { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUnicodeClass" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsUnicodeClass" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUnicodeClass As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsUnicodeClass : bool" Usage="System.Runtime.InteropServices._Type.IsUnicodeClass" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUnicodeClass { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3929,6 +4230,9 @@
       <MemberSignature Language="C#" Value="public bool IsValueType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsValueType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.IsValueType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValueType As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsValueType : bool" Usage="System.Runtime.InteropServices._Type.IsValueType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValueType { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3958,6 +4262,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MemberTypes MemberType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.MemberTypes MemberType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.MemberType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MemberType As MemberTypes" />
+      <MemberSignature Language="F#" Value="member this.MemberType : System.Reflection.MemberTypes" Usage="System.Runtime.InteropServices._Type.MemberType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MemberTypes MemberType { System::Reflection::MemberTypes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3986,6 +4293,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Module Module { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Module Module" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.Module" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Module As Module" />
+      <MemberSignature Language="F#" Value="member this.Module : System.Reflection.Module" Usage="System.Runtime.InteropServices._Type.Module" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Module ^ Module { System::Reflection::Module ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4014,6 +4324,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Runtime.InteropServices._Type.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4042,6 +4355,9 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string" Usage="System.Runtime.InteropServices._Type.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4070,6 +4386,9 @@
       <MemberSignature Language="C#" Value="public Type ReflectedType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReflectedType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.ReflectedType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReflectedType As Type" />
+      <MemberSignature Language="F#" Value="member this.ReflectedType : Type" Usage="System.Runtime.InteropServices._Type.ReflectedType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReflectedType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4098,6 +4417,9 @@
       <MemberSignature Language="C#" Value="public string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices._Type.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString () As String" />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string" Usage="_Type.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4127,6 +4449,9 @@
       <MemberSignature Language="C#" Value="public RuntimeTypeHandle TypeHandle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.RuntimeTypeHandle TypeHandle" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.TypeHandle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeHandle As RuntimeTypeHandle" />
+      <MemberSignature Language="F#" Value="member this.TypeHandle : RuntimeTypeHandle" Usage="System.Runtime.InteropServices._Type.TypeHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property RuntimeTypeHandle TypeHandle { RuntimeTypeHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4155,6 +4480,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.ConstructorInfo TypeInitializer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.ConstructorInfo TypeInitializer" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.TypeInitializer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeInitializer As ConstructorInfo" />
+      <MemberSignature Language="F#" Value="member this.TypeInitializer : System.Reflection.ConstructorInfo" Usage="System.Runtime.InteropServices._Type.TypeInitializer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::ConstructorInfo ^ TypeInitializer { System::Reflection::ConstructorInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4183,6 +4511,9 @@
       <MemberSignature Language="C#" Value="public Type UnderlyingSystemType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type UnderlyingSystemType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices._Type.UnderlyingSystemType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnderlyingSystemType As Type" />
+      <MemberSignature Language="F#" Value="member this.UnderlyingSystemType : Type" Usage="System.Runtime.InteropServices._Type.UnderlyingSystemType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ UnderlyingSystemType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="MouseWheelEventHandler" FullName="System.Windows.Input.MouseWheelEventHandler">
+﻿<Type Name="MouseWheelEventHandler" FullName="System.Windows.Input.MouseWheelEventHandler">
   <TypeSignature Language="C#" Value="public delegate void MouseWheelEventHandler(object sender, MouseWheelEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MouseWheelEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.MouseWheelEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub MouseWheelEventHandler(sender As Object, e As MouseWheelEventArgs)" />
+  <TypeSignature Language="F#" Value="type MouseWheelEventHandler = delegate of obj * MouseWheelEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void MouseWheelEventHandler(System::Object ^ sender, MouseWheelEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

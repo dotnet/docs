@@ -1,7 +1,10 @@
-<Type Name="SplitterEventArgs" FullName="System.Windows.Forms.SplitterEventArgs">
+﻿<Type Name="SplitterEventArgs" FullName="System.Windows.Forms.SplitterEventArgs">
   <TypeSignature Language="C#" Value="public class SplitterEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplitterEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SplitterEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SplitterEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type SplitterEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SplitterEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="public SplitterEventArgs (int x, int y, int splitX, int splitY);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 x, int32 y, int32 splitX, int32 splitY) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SplitterEventArgs.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (x As Integer, y As Integer, splitX As Integer, splitY As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.SplitterEventArgs : int * int * int * int -&gt; System.Windows.Forms.SplitterEventArgs" Usage="new System.Windows.Forms.SplitterEventArgs (x, y, splitX, splitY)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SplitterEventArgs(int x, int y, int splitX, int splitY);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +75,9 @@
       <MemberSignature Language="C#" Value="public int SplitX { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SplitX" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitterEventArgs.SplitX" />
+      <MemberSignature Language="VB.NET" Value="Public Property SplitX As Integer" />
+      <MemberSignature Language="F#" Value="member this.SplitX : int with get, set" Usage="System.Windows.Forms.SplitterEventArgs.SplitX" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SplitX { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +116,9 @@
       <MemberSignature Language="C#" Value="public int SplitY { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SplitY" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitterEventArgs.SplitY" />
+      <MemberSignature Language="VB.NET" Value="Public Property SplitY As Integer" />
+      <MemberSignature Language="F#" Value="member this.SplitY : int with get, set" Usage="System.Windows.Forms.SplitterEventArgs.SplitY" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SplitY { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -145,6 +157,9 @@
       <MemberSignature Language="C#" Value="public int X { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 X" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitterEventArgs.X" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property X As Integer" />
+      <MemberSignature Language="F#" Value="member this.X : int" Usage="System.Windows.Forms.SplitterEventArgs.X" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int X { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -183,6 +198,9 @@
       <MemberSignature Language="C#" Value="public int Y { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Y" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.SplitterEventArgs.Y" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Y As Integer" />
+      <MemberSignature Language="F#" Value="member this.Y : int" Usage="System.Windows.Forms.SplitterEventArgs.Y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Y { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

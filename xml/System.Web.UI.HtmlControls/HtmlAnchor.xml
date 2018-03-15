@@ -1,7 +1,10 @@
-<Type Name="HtmlAnchor" FullName="System.Web.UI.HtmlControls.HtmlAnchor">
+﻿<Type Name="HtmlAnchor" FullName="System.Web.UI.HtmlControls.HtmlAnchor">
   <TypeSignature Language="C#" Value="public class HtmlAnchor : System.Web.UI.HtmlControls.HtmlContainerControl, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlAnchor extends System.Web.UI.HtmlControls.HtmlContainerControl implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlAnchor" />
+  <TypeSignature Language="VB.NET" Value="Public Class HtmlAnchor&#xA;Inherits HtmlContainerControl&#xA;Implements IPostBackEventHandler" />
+  <TypeSignature Language="F#" Value="type HtmlAnchor = class&#xA;    inherit HtmlContainerControl&#xA;    interface IPostBackEventHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlAnchor : System::Web::UI::HtmlControls::HtmlContainerControl, System::Web::UI::IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +55,8 @@
       <MemberSignature Language="C#" Value="public HtmlAnchor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlAnchor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlAnchor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +93,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CausesValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlAnchor.CausesValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CausesValidation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Web.UI.HtmlControls.HtmlAnchor.CausesValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CausesValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +130,9 @@
       <MemberSignature Language="C#" Value="public string HRef { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HRef" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlAnchor.HRef" />
+      <MemberSignature Language="VB.NET" Value="Public Property HRef As String" />
+      <MemberSignature Language="F#" Value="member this.HRef : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlAnchor.HRef" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HRef { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,7 +143,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Web.UI.UrlProperty</AttributeName>
@@ -166,6 +177,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlAnchor.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlAnchor.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -176,7 +190,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -207,9 +221,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlAnchor.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="htmlAnchor.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -244,6 +261,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnServerClick (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnServerClick(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlAnchor.OnServerClick(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnServerClick (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnServerClick : EventArgs -&gt; unit&#xA;override this.OnServerClick : EventArgs -&gt; unit" Usage="htmlAnchor.OnServerClick e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnServerClick(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -294,7 +314,13 @@
       <MemberSignature Language="C#" Value="protected virtual void RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlAnchor.RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="htmlAnchor.RaisePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -324,6 +350,9 @@
       <MemberSignature Language="C#" Value="protected override void RenderAttributes (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlAnchor.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAttributes (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlAnchor.RenderAttributes writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -366,6 +395,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ServerClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ServerClick" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.HtmlControls.HtmlAnchor.ServerClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ServerClick As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ServerClick : EventHandler " Usage="member this.ServerClick : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ServerClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -406,7 +438,12 @@
       <MemberSignature Language="C#" Value="void IPostBackEventHandler.RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlAnchor.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -438,6 +475,9 @@
       <MemberSignature Language="C#" Value="public string Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlAnchor.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
+      <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlAnchor.Target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -448,7 +488,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -497,6 +537,9 @@
       <MemberSignature Language="C#" Value="public string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlAnchor.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlAnchor.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -507,7 +550,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
@@ -541,6 +584,9 @@
       <MemberSignature Language="C#" Value="public virtual string ValidationGroup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlAnchor.ValidationGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ValidationGroup As String" />
+      <MemberSignature Language="F#" Value="member this.ValidationGroup : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlAnchor.ValidationGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

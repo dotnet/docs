@@ -1,7 +1,10 @@
-<Type Name="FileMode" FullName="System.IO.FileMode">
+﻿<Type Name="FileMode" FullName="System.IO.FileMode">
   <TypeSignature Language="C#" Value="public enum FileMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FileMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.FileMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FileMode" />
+  <TypeSignature Language="F#" Value="type FileMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FileMode" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -60,6 +63,9 @@
       <MemberSignature Language="C#" Value="Append" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileMode Append = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileMode.Append" />
+      <MemberSignature Language="VB.NET" Value="Append" />
+      <MemberSignature Language="F#" Value="Append = 6" Usage="System.IO.FileMode.Append" />
+      <MemberSignature Language="C++ CLI" Value="Append" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -81,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileMode</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Opens the file if it exists and seeks to the end of the file, or creates a new file. This requires <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" /> permission. <see langword="FileMode.Append" /> can be used only in conjunction with <see langword="FileAccess.Write" />. Trying to seek to a position before the end of the file throws an <see cref="T:System.IO.IOException" /> exception, and any attempt to read fails and throws a <see cref="T:System.NotSupportedException" /> exception.</summary>
       </Docs>
@@ -89,6 +96,9 @@
       <MemberSignature Language="C#" Value="Create" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileMode Create = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileMode.Create" />
+      <MemberSignature Language="VB.NET" Value="Create" />
+      <MemberSignature Language="F#" Value="Create = 2" Usage="System.IO.FileMode.Create" />
+      <MemberSignature Language="C++ CLI" Value="Create" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -110,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the operating system should create a new file. If the file already exists, it will be overwritten. This requires <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /> permission. <see langword="FileMode.Create" /> is equivalent to requesting that if the file does not exist, use <see cref="F:System.IO.FileMode.CreateNew" />; otherwise, use <see cref="F:System.IO.FileMode.Truncate" />. If the file already exists but is a hidden file, an <see cref="T:System.UnauthorizedAccessException" /> exception is thrown.</summary>
       </Docs>
@@ -118,6 +129,9 @@
       <MemberSignature Language="C#" Value="CreateNew" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileMode CreateNew = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileMode.CreateNew" />
+      <MemberSignature Language="VB.NET" Value="CreateNew" />
+      <MemberSignature Language="F#" Value="CreateNew = 1" Usage="System.IO.FileMode.CreateNew" />
+      <MemberSignature Language="C++ CLI" Value="CreateNew" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -139,6 +153,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the operating system should create a new file. This requires <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /> permission. If the file already exists, an <see cref="T:System.IO.IOException" /> exception is thrown.</summary>
       </Docs>
@@ -147,6 +162,9 @@
       <MemberSignature Language="C#" Value="Open" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileMode Open = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileMode.Open" />
+      <MemberSignature Language="VB.NET" Value="Open" />
+      <MemberSignature Language="F#" Value="Open = 3" Usage="System.IO.FileMode.Open" />
+      <MemberSignature Language="C++ CLI" Value="Open" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -168,6 +186,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies that the operating system should open an existing file. The ability to open the file is dependent on the value specified by the <see cref="T:System.IO.FileAccess" /> enumeration. A <see cref="T:System.IO.FileNotFoundException" /> exception is thrown if the file does not exist.</summary>
       </Docs>
@@ -176,6 +195,9 @@
       <MemberSignature Language="C#" Value="OpenOrCreate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileMode OpenOrCreate = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileMode.OpenOrCreate" />
+      <MemberSignature Language="VB.NET" Value="OpenOrCreate" />
+      <MemberSignature Language="F#" Value="OpenOrCreate = 4" Usage="System.IO.FileMode.OpenOrCreate" />
+      <MemberSignature Language="C++ CLI" Value="OpenOrCreate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -197,6 +219,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileMode</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that the operating system should open a file if it exists; otherwise, a new file should be created. If the file is opened with <see langword="FileAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /> permission is required. If the file access is <see langword="FileAccess.Write" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /> permission is required. If the file is opened with <see langword="FileAccess.ReadWrite" />, both <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" /> and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /> permissions are required.</summary>
       </Docs>
@@ -205,6 +228,9 @@
       <MemberSignature Language="C#" Value="Truncate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileMode Truncate = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileMode.Truncate" />
+      <MemberSignature Language="VB.NET" Value="Truncate" />
+      <MemberSignature Language="F#" Value="Truncate = 5" Usage="System.IO.FileMode.Truncate" />
+      <MemberSignature Language="C++ CLI" Value="Truncate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -226,6 +252,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileMode</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Specifies that the operating system should open an existing file. When the file is opened, it should be truncated so that its size is zero bytes. This requires <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /> permission. Attempts to read from a file opened with <see langword="FileMode.Truncate" /> cause an <see cref="T:System.ArgumentException" /> exception.</summary>
       </Docs>

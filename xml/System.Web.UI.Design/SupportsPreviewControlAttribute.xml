@@ -1,7 +1,10 @@
-<Type Name="SupportsPreviewControlAttribute" FullName="System.Web.UI.Design.SupportsPreviewControlAttribute">
+﻿<Type Name="SupportsPreviewControlAttribute" FullName="System.Web.UI.Design.SupportsPreviewControlAttribute">
   <TypeSignature Language="C#" Value="public sealed class SupportsPreviewControlAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SupportsPreviewControlAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.SupportsPreviewControlAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SupportsPreviewControlAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type SupportsPreviewControlAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SupportsPreviewControlAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +60,9 @@
       <MemberSignature Language="C#" Value="public SupportsPreviewControlAttribute (bool supportsPreviewControl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool supportsPreviewControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.SupportsPreviewControlAttribute.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (supportsPreviewControl As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.SupportsPreviewControlAttribute : bool -&gt; System.Web.UI.Design.SupportsPreviewControlAttribute" Usage="new System.Web.UI.Design.SupportsPreviewControlAttribute supportsPreviewControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SupportsPreviewControlAttribute(bool supportsPreviewControl);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -82,6 +88,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.Design.SupportsPreviewControlAttribute Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.Design.SupportsPreviewControlAttribute Default" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.SupportsPreviewControlAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As SupportsPreviewControlAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.Web.UI.Design.SupportsPreviewControlAttribute" Usage="System.Web.UI.Design.SupportsPreviewControlAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::Design::SupportsPreviewControlAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -109,6 +118,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.SupportsPreviewControlAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="supportsPreviewControlAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -142,6 +154,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.SupportsPreviewControlAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="supportsPreviewControlAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -173,6 +188,9 @@
       <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.SupportsPreviewControlAttribute.IsDefaultAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="supportsPreviewControlAttribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -201,6 +219,9 @@
       <MemberSignature Language="C#" Value="public bool SupportsPreviewControl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsPreviewControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsPreviewControl As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsPreviewControl : bool" Usage="System.Web.UI.Design.SupportsPreviewControlAttribute.SupportsPreviewControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsPreviewControl { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

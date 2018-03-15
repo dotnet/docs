@@ -1,7 +1,10 @@
-<Type Name="ResizeMode" FullName="System.Windows.ResizeMode">
+﻿<Type Name="ResizeMode" FullName="System.Windows.ResizeMode">
   <TypeSignature Language="C#" Value="public enum ResizeMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ResizeMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.ResizeMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ResizeMode" />
+  <TypeSignature Language="F#" Value="type ResizeMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ResizeMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="CanMinimize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.ResizeMode CanMinimize = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.ResizeMode.CanMinimize" />
+      <MemberSignature Language="VB.NET" Value="CanMinimize" />
+      <MemberSignature Language="F#" Value="CanMinimize = 1" Usage="System.Windows.ResizeMode.CanMinimize" />
+      <MemberSignature Language="C++ CLI" Value="CanMinimize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -31,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.ResizeMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A window can only be minimized and restored. The **Minimize** and **Maximize** buttons are both shown, but only the **Minimize** button is enabled.</summary>
       </Docs>
@@ -39,6 +46,9 @@
       <MemberSignature Language="C#" Value="CanResize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.ResizeMode CanResize = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.ResizeMode.CanResize" />
+      <MemberSignature Language="VB.NET" Value="CanResize" />
+      <MemberSignature Language="F#" Value="CanResize = 2" Usage="System.Windows.ResizeMode.CanResize" />
+      <MemberSignature Language="C++ CLI" Value="CanResize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.ResizeMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A window can be resized. The **Minimize** and **Maximize** buttons are both shown and enabled.</summary>
       </Docs>
@@ -55,6 +66,9 @@
       <MemberSignature Language="C#" Value="CanResizeWithGrip" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.ResizeMode CanResizeWithGrip = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.ResizeMode.CanResizeWithGrip" />
+      <MemberSignature Language="VB.NET" Value="CanResizeWithGrip" />
+      <MemberSignature Language="F#" Value="CanResizeWithGrip = 3" Usage="System.Windows.ResizeMode.CanResizeWithGrip" />
+      <MemberSignature Language="C++ CLI" Value="CanResizeWithGrip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.ResizeMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A window can be resized. The **Minimize** and **Maximize** buttons are both shown and enabled. A resize grip appears in the bottom-right corner of the window.</summary>
       </Docs>
@@ -71,6 +86,9 @@
       <MemberSignature Language="C#" Value="NoResize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.ResizeMode NoResize = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.ResizeMode.NoResize" />
+      <MemberSignature Language="VB.NET" Value="NoResize" />
+      <MemberSignature Language="F#" Value="NoResize = 0" Usage="System.Windows.ResizeMode.NoResize" />
+      <MemberSignature Language="C++ CLI" Value="NoResize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.ResizeMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A window cannot be resized. The **Minimize** and **Maximize** buttons are not displayed in the title bar.</summary>
       </Docs>

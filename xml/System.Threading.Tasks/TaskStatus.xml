@@ -1,7 +1,10 @@
-<Type Name="TaskStatus" FullName="System.Threading.Tasks.TaskStatus">
+﻿<Type Name="TaskStatus" FullName="System.Threading.Tasks.TaskStatus">
   <TypeSignature Language="C#" Value="public enum TaskStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TaskStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Tasks.TaskStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TaskStatus" />
+  <TypeSignature Language="F#" Value="type TaskStatus = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TaskStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +51,9 @@
       <MemberSignature Language="C#" Value="Canceled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskStatus Canceled = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.Canceled" />
+      <MemberSignature Language="VB.NET" Value="Canceled" />
+      <MemberSignature Language="F#" Value="Canceled = 6" Usage="System.Threading.Tasks.TaskStatus.Canceled" />
+      <MemberSignature Language="C++ CLI" Value="Canceled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -70,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The task acknowledged cancellation by throwing an OperationCanceledException with its own CancellationToken while the token was in signaled state, or the task's CancellationToken was already signaled before the task started executing. For more information, see [Task Cancellation](~/docs/standard/parallel-programming/task-cancellation.md).</summary>
       </Docs>
@@ -78,6 +85,9 @@
       <MemberSignature Language="C#" Value="Created" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskStatus Created = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.Created" />
+      <MemberSignature Language="VB.NET" Value="Created" />
+      <MemberSignature Language="F#" Value="Created = 0" Usage="System.Threading.Tasks.TaskStatus.Created" />
+      <MemberSignature Language="C++ CLI" Value="Created" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -100,6 +110,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The task has been initialized but has not yet been scheduled.</summary>
       </Docs>
@@ -108,6 +119,9 @@
       <MemberSignature Language="C#" Value="Faulted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskStatus Faulted = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.Faulted" />
+      <MemberSignature Language="VB.NET" Value="Faulted" />
+      <MemberSignature Language="F#" Value="Faulted = 7" Usage="System.Threading.Tasks.TaskStatus.Faulted" />
+      <MemberSignature Language="C++ CLI" Value="Faulted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -130,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The task completed due to an unhandled exception.</summary>
       </Docs>
@@ -138,6 +153,9 @@
       <MemberSignature Language="C#" Value="RanToCompletion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskStatus RanToCompletion = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.RanToCompletion" />
+      <MemberSignature Language="VB.NET" Value="RanToCompletion" />
+      <MemberSignature Language="F#" Value="RanToCompletion = 5" Usage="System.Threading.Tasks.TaskStatus.RanToCompletion" />
+      <MemberSignature Language="C++ CLI" Value="RanToCompletion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -160,6 +178,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The task completed execution successfully.</summary>
       </Docs>
@@ -168,6 +187,9 @@
       <MemberSignature Language="C#" Value="Running" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskStatus Running = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.Running" />
+      <MemberSignature Language="VB.NET" Value="Running" />
+      <MemberSignature Language="F#" Value="Running = 3" Usage="System.Threading.Tasks.TaskStatus.Running" />
+      <MemberSignature Language="C++ CLI" Value="Running" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -190,6 +212,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The task is running but has not yet completed.</summary>
       </Docs>
@@ -198,6 +221,9 @@
       <MemberSignature Language="C#" Value="WaitingForActivation" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskStatus WaitingForActivation = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.WaitingForActivation" />
+      <MemberSignature Language="VB.NET" Value="WaitingForActivation" />
+      <MemberSignature Language="F#" Value="WaitingForActivation = 1" Usage="System.Threading.Tasks.TaskStatus.WaitingForActivation" />
+      <MemberSignature Language="C++ CLI" Value="WaitingForActivation" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -220,6 +246,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The task is waiting to be activated and scheduled internally by the .NET Framework infrastructure.</summary>
       </Docs>
@@ -228,6 +255,9 @@
       <MemberSignature Language="C#" Value="WaitingForChildrenToComplete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskStatus WaitingForChildrenToComplete = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.WaitingForChildrenToComplete" />
+      <MemberSignature Language="VB.NET" Value="WaitingForChildrenToComplete" />
+      <MemberSignature Language="F#" Value="WaitingForChildrenToComplete = 4" Usage="System.Threading.Tasks.TaskStatus.WaitingForChildrenToComplete" />
+      <MemberSignature Language="C++ CLI" Value="WaitingForChildrenToComplete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -250,6 +280,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The task has finished executing and is implicitly waiting for attached child tasks to complete.</summary>
       </Docs>
@@ -258,6 +289,9 @@
       <MemberSignature Language="C#" Value="WaitingToRun" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Threading.Tasks.TaskStatus WaitingToRun = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Threading.Tasks.TaskStatus.WaitingToRun" />
+      <MemberSignature Language="VB.NET" Value="WaitingToRun" />
+      <MemberSignature Language="F#" Value="WaitingToRun = 2" Usage="System.Threading.Tasks.TaskStatus.WaitingToRun" />
+      <MemberSignature Language="C++ CLI" Value="WaitingToRun" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>
@@ -280,6 +314,7 @@
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The task has been scheduled for execution but has not yet begun executing.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="IisTraceListener" FullName="System.Web.IisTraceListener">
+﻿<Type Name="IisTraceListener" FullName="System.Web.IisTraceListener">
   <TypeSignature Language="C#" Value="public sealed class IisTraceListener : System.Diagnostics.TraceListener" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IisTraceListener extends System.Diagnostics.TraceListener" />
   <TypeSignature Language="DocId" Value="T:System.Web.IisTraceListener" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IisTraceListener&#xA;Inherits TraceListener" />
+  <TypeSignature Language="F#" Value="type IisTraceListener = class&#xA;    inherit TraceListener" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IisTraceListener sealed : System::Diagnostics::TraceListener" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,8 @@
       <MemberSignature Language="C#" Value="public IisTraceListener ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.IisTraceListener.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IisTraceListener();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +75,9 @@
       <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.IisTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, data As Object)" />
+      <MemberSignature Language="F#" Value="override this.TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj -&gt; unit" Usage="iisTraceListener.TraceData (eventCache, source, eventType, id, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,6 +116,9 @@
       <MemberSignature Language="C#" Value="public override void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, params object[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.IisTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, ParamArray data As Object())" />
+      <MemberSignature Language="F#" Value="override this.TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj[] -&gt; unit" Usage="iisTraceListener.TraceData (eventCache, source, eventType, id, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, ... cli::array &lt;System::Object ^&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +180,9 @@
       <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType severity, int id, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType severity, int32 id, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.IisTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, severity As TraceEventType, id As Integer, message As String)" />
+      <MemberSignature Language="F#" Value="override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string -&gt; unit" Usage="iisTraceListener.TraceEvent (eventCache, source, severity, id, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType severity, int id, System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -207,6 +221,9 @@
       <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType severity, int id, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType severity, int32 id, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.IisTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, severity As TraceEventType, id As Integer, format As String, ParamArray args As Object())" />
+      <MemberSignature Language="F#" Value="override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string * obj[] -&gt; unit" Usage="iisTraceListener.TraceEvent (eventCache, source, severity, id, format, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType severity, int id, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -270,6 +287,9 @@
       <MemberSignature Language="C#" Value="public override void Write (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.IisTraceListener.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (message As String)" />
+      <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="iisTraceListener.Write message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -298,6 +318,9 @@
       <MemberSignature Language="C#" Value="public override void Write (string message, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string message, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.IisTraceListener.Write(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (message As String, category As String)" />
+      <MemberSignature Language="F#" Value="override this.Write : string * string -&gt; unit" Usage="iisTraceListener.Write (message, category)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ message, System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -326,10 +349,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a message and a category name to the <see cref="T:System.Web.IisTraceListener" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteLine">
       <MemberSignature Language="C#" Value="public override void WriteLine (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.IisTraceListener.WriteLine(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (message As String)" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string -&gt; unit" Usage="iisTraceListener.WriteLine message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -358,6 +393,9 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (string message, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string message, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.IisTraceListener.WriteLine(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (message As String, category As String)" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string * string -&gt; unit" Usage="iisTraceListener.WriteLine (message, category)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ message, System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -384,14 +422,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteLine">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a message and a category name to the <see cref="T:System.Web.IisTraceListener" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

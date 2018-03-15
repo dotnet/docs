@@ -1,7 +1,10 @@
-<Type Name="FormsAuthenticationUser" FullName="System.Web.Configuration.FormsAuthenticationUser">
+﻿<Type Name="FormsAuthenticationUser" FullName="System.Web.Configuration.FormsAuthenticationUser">
   <TypeSignature Language="C#" Value="public sealed class FormsAuthenticationUser : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormsAuthenticationUser extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.FormsAuthenticationUser" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FormsAuthenticationUser&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type FormsAuthenticationUser = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FormsAuthenticationUser sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +62,9 @@
       <MemberSignature Language="C#" Value="public FormsAuthenticationUser (string name, string password);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string password) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.FormsAuthenticationUser.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, password As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.FormsAuthenticationUser : string * string -&gt; System.Web.Configuration.FormsAuthenticationUser" Usage="new System.Web.Configuration.FormsAuthenticationUser (name, password)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FormsAuthenticationUser(System::String ^ name, System::String ^ password);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +100,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationUser.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationUser.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +142,9 @@
       <MemberSignature Language="C#" Value="public string Password { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Password" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationUser.Password" />
+      <MemberSignature Language="VB.NET" Value="Public Property Password As String" />
+      <MemberSignature Language="F#" Value="member this.Password : string with get, set" Usage="System.Web.Configuration.FormsAuthenticationUser.Password" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Password { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +181,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.FormsAuthenticationUser.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.FormsAuthenticationUser.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

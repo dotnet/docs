@@ -1,7 +1,10 @@
-<Type Name="HttpBrowserCapabilitiesBase" FullName="System.Web.HttpBrowserCapabilitiesBase">
+﻿<Type Name="HttpBrowserCapabilitiesBase" FullName="System.Web.HttpBrowserCapabilitiesBase">
   <TypeSignature Language="C#" Value="public abstract class HttpBrowserCapabilitiesBase : System.Web.UI.IFilterResolutionService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HttpBrowserCapabilitiesBase extends System.Object implements class System.Web.UI.IFilterResolutionService" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpBrowserCapabilitiesBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class HttpBrowserCapabilitiesBase&#xA;Implements IFilterResolutionService" />
+  <TypeSignature Language="F#" Value="type HttpBrowserCapabilitiesBase = class&#xA;    interface IFilterResolutionService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpBrowserCapabilitiesBase abstract : System::Web::UI::IFilterResolutionService" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,8 @@
       <MemberSignature Language="C#" Value="protected HttpBrowserCapabilitiesBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpBrowserCapabilitiesBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HttpBrowserCapabilitiesBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +57,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ActiveXControls { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ActiveXControls" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.ActiveXControls" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ActiveXControls As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ActiveXControls : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.ActiveXControls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ActiveXControls { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +80,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IDictionary Adapters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Adapters" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Adapters" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Adapters As IDictionary" />
+      <MemberSignature Language="F#" Value="member this.Adapters : System.Collections.IDictionary" Usage="System.Web.HttpBrowserCapabilitiesBase.Adapters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IDictionary ^ Adapters { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +102,9 @@
       <MemberSignature Language="C#" Value="public virtual void AddBrowser (string browserName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddBrowser(string browserName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpBrowserCapabilitiesBase.AddBrowser(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddBrowser (browserName As String)" />
+      <MemberSignature Language="F#" Value="abstract member AddBrowser : string -&gt; unit&#xA;override this.AddBrowser : string -&gt; unit" Usage="httpBrowserCapabilitiesBase.AddBrowser browserName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddBrowser(System::String ^ browserName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +127,9 @@
       <MemberSignature Language="C#" Value="public virtual bool AOL { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AOL" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.AOL" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property AOL As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AOL : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.AOL" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AOL { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +150,9 @@
       <MemberSignature Language="C#" Value="public virtual bool BackgroundSounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BackgroundSounds" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.BackgroundSounds" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BackgroundSounds As Boolean" />
+      <MemberSignature Language="F#" Value="member this.BackgroundSounds : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.BackgroundSounds" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool BackgroundSounds { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -153,6 +173,9 @@
       <MemberSignature Language="C#" Value="public virtual bool Beta { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Beta" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Beta" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Beta As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Beta : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.Beta" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Beta { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -173,6 +196,9 @@
       <MemberSignature Language="C#" Value="public virtual string Browser { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Browser" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Browser" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Browser As String" />
+      <MemberSignature Language="F#" Value="member this.Browser : string" Usage="System.Web.HttpBrowserCapabilitiesBase.Browser" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Browser { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -192,6 +218,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.ArrayList Browsers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ArrayList Browsers" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Browsers" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Browsers As ArrayList" />
+      <MemberSignature Language="F#" Value="member this.Browsers : System.Collections.ArrayList" Usage="System.Web.HttpBrowserCapabilitiesBase.Browsers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::ArrayList ^ Browsers { System::Collections::ArrayList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -211,6 +240,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanCombineFormsInDeck { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanCombineFormsInDeck" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.CanCombineFormsInDeck" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanCombineFormsInDeck As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanCombineFormsInDeck : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.CanCombineFormsInDeck" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanCombineFormsInDeck { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -231,6 +263,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanInitiateVoiceCall { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanInitiateVoiceCall" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.CanInitiateVoiceCall" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanInitiateVoiceCall As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanInitiateVoiceCall : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.CanInitiateVoiceCall" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanInitiateVoiceCall { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -251,6 +286,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanRenderAfterInputOrSelectElement { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRenderAfterInputOrSelectElement" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.CanRenderAfterInputOrSelectElement" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanRenderAfterInputOrSelectElement As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRenderAfterInputOrSelectElement : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.CanRenderAfterInputOrSelectElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRenderAfterInputOrSelectElement { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -271,6 +309,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanRenderEmptySelects { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRenderEmptySelects" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.CanRenderEmptySelects" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanRenderEmptySelects As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRenderEmptySelects : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.CanRenderEmptySelects" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRenderEmptySelects { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -291,6 +332,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanRenderInputAndSelectElementsTogether { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRenderInputAndSelectElementsTogether" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.CanRenderInputAndSelectElementsTogether" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanRenderInputAndSelectElementsTogether As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRenderInputAndSelectElementsTogether : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.CanRenderInputAndSelectElementsTogether" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRenderInputAndSelectElementsTogether { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -311,6 +355,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanRenderMixedSelects { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRenderMixedSelects" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.CanRenderMixedSelects" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanRenderMixedSelects As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRenderMixedSelects : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.CanRenderMixedSelects" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRenderMixedSelects { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -331,6 +378,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanRenderOneventAndPrevElementsTogether { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRenderOneventAndPrevElementsTogether" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.CanRenderOneventAndPrevElementsTogether" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanRenderOneventAndPrevElementsTogether As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRenderOneventAndPrevElementsTogether : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.CanRenderOneventAndPrevElementsTogether" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRenderOneventAndPrevElementsTogether { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -351,6 +401,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanRenderPostBackCards { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRenderPostBackCards" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.CanRenderPostBackCards" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanRenderPostBackCards As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRenderPostBackCards : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.CanRenderPostBackCards" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRenderPostBackCards { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -371,6 +424,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanRenderSetvarZeroWithMultiSelectionList { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRenderSetvarZeroWithMultiSelectionList" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.CanRenderSetvarZeroWithMultiSelectionList" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanRenderSetvarZeroWithMultiSelectionList As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRenderSetvarZeroWithMultiSelectionList : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.CanRenderSetvarZeroWithMultiSelectionList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRenderSetvarZeroWithMultiSelectionList { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -391,6 +447,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanSendMail { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanSendMail" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.CanSendMail" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanSendMail As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanSendMail : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.CanSendMail" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanSendMail { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -411,6 +470,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IDictionary Capabilities { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary Capabilities" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Capabilities" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Capabilities As IDictionary" />
+      <MemberSignature Language="F#" Value="member this.Capabilities : System.Collections.IDictionary with get, set" Usage="System.Web.HttpBrowserCapabilitiesBase.Capabilities" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Collections::IDictionary ^ Capabilities { System::Collections::IDictionary ^ get(); void set(System::Collections::IDictionary ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -430,6 +492,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CDF { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CDF" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.CDF" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CDF As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CDF : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.CDF" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CDF { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -450,6 +515,9 @@
       <MemberSignature Language="C#" Value="public virtual Version ClrVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version ClrVersion" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.ClrVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ClrVersion As Version" />
+      <MemberSignature Language="F#" Value="member this.ClrVersion : Version" Usage="System.Web.HttpBrowserCapabilitiesBase.ClrVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Version ^ ClrVersion { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -469,7 +537,13 @@
       <MemberSignature Language="C#" Value="public virtual int CompareFilters (string filter1, string filter2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareFilters(string filter1, string filter2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpBrowserCapabilitiesBase.CompareFilters(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CompareFilters (filter1 As String, filter2 As String) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member CompareFilters : string * string -&gt; int&#xA;override this.CompareFilters : string * string -&gt; int" Usage="httpBrowserCapabilitiesBase.CompareFilters (filter1, filter2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareFilters(System::String ^ filter1, System::String ^ filter2);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IFilterResolutionService.CompareFilters(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -494,6 +568,9 @@
       <MemberSignature Language="C#" Value="public virtual bool Cookies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Cookies" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Cookies" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Cookies As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Cookies : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.Cookies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Cookies { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -519,6 +596,9 @@
       <MemberSignature Language="C#" Value="public virtual bool Crawler { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Crawler" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Crawler" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Crawler As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Crawler : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.Crawler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Crawler { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -539,6 +619,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.HtmlTextWriter CreateHtmlTextWriter (System.IO.TextWriter w);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.HtmlTextWriter CreateHtmlTextWriter(class System.IO.TextWriter w) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpBrowserCapabilitiesBase.CreateHtmlTextWriter(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CreateHtmlTextWriter (w As TextWriter) As HtmlTextWriter" />
+      <MemberSignature Language="F#" Value="abstract member CreateHtmlTextWriter : System.IO.TextWriter -&gt; System.Web.UI.HtmlTextWriter&#xA;override this.CreateHtmlTextWriter : System.IO.TextWriter -&gt; System.Web.UI.HtmlTextWriter" Usage="httpBrowserCapabilitiesBase.CreateHtmlTextWriter w" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::HtmlTextWriter ^ CreateHtmlTextWriter(System::IO::TextWriter ^ w);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -562,6 +645,9 @@
       <MemberSignature Language="C#" Value="public virtual int DefaultSubmitButtonLimit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DefaultSubmitButtonLimit" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.DefaultSubmitButtonLimit" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DefaultSubmitButtonLimit As Integer" />
+      <MemberSignature Language="F#" Value="member this.DefaultSubmitButtonLimit : int" Usage="System.Web.HttpBrowserCapabilitiesBase.DefaultSubmitButtonLimit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int DefaultSubmitButtonLimit { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -581,6 +667,9 @@
       <MemberSignature Language="C#" Value="public virtual void DisableOptimizedCacheKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DisableOptimizedCacheKey() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpBrowserCapabilitiesBase.DisableOptimizedCacheKey" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub DisableOptimizedCacheKey ()" />
+      <MemberSignature Language="F#" Value="abstract member DisableOptimizedCacheKey : unit -&gt; unit&#xA;override this.DisableOptimizedCacheKey : unit -&gt; unit" Usage="httpBrowserCapabilitiesBase.DisableOptimizedCacheKey " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DisableOptimizedCacheKey();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -600,6 +689,9 @@
       <MemberSignature Language="C#" Value="public virtual Version EcmaScriptVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version EcmaScriptVersion" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.EcmaScriptVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EcmaScriptVersion As Version" />
+      <MemberSignature Language="F#" Value="member this.EcmaScriptVersion : Version" Usage="System.Web.HttpBrowserCapabilitiesBase.EcmaScriptVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Version ^ EcmaScriptVersion { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -619,7 +711,13 @@
       <MemberSignature Language="C#" Value="public virtual bool EvaluateFilter (string filterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EvaluateFilter(string filterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpBrowserCapabilitiesBase.EvaluateFilter(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function EvaluateFilter (filterName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member EvaluateFilter : string -&gt; bool&#xA;override this.EvaluateFilter : string -&gt; bool" Usage="httpBrowserCapabilitiesBase.EvaluateFilter filterName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool EvaluateFilter(System::String ^ filterName);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IFilterResolutionService.EvaluateFilter(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -643,6 +741,9 @@
       <MemberSignature Language="C#" Value="public virtual bool Frames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Frames" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Frames" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Frames As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Frames : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.Frames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Frames { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -663,6 +764,9 @@
       <MemberSignature Language="C#" Value="public virtual int GatewayMajorVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 GatewayMajorVersion" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.GatewayMajorVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property GatewayMajorVersion As Integer" />
+      <MemberSignature Language="F#" Value="member this.GatewayMajorVersion : int" Usage="System.Web.HttpBrowserCapabilitiesBase.GatewayMajorVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int GatewayMajorVersion { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -682,6 +786,9 @@
       <MemberSignature Language="C#" Value="public virtual double GatewayMinorVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 GatewayMinorVersion" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.GatewayMinorVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property GatewayMinorVersion As Double" />
+      <MemberSignature Language="F#" Value="member this.GatewayMinorVersion : double" Usage="System.Web.HttpBrowserCapabilitiesBase.GatewayMinorVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double GatewayMinorVersion { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -701,6 +808,9 @@
       <MemberSignature Language="C#" Value="public virtual string GatewayVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string GatewayVersion" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.GatewayVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property GatewayVersion As String" />
+      <MemberSignature Language="F#" Value="member this.GatewayVersion : string" Usage="System.Web.HttpBrowserCapabilitiesBase.GatewayVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ GatewayVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -720,6 +830,9 @@
       <MemberSignature Language="C#" Value="public virtual Version[] GetClrVersions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Version[] GetClrVersions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpBrowserCapabilitiesBase.GetClrVersions" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetClrVersions () As Version()" />
+      <MemberSignature Language="F#" Value="abstract member GetClrVersions : unit -&gt; Version[]&#xA;override this.GetClrVersions : unit -&gt; Version[]" Usage="httpBrowserCapabilitiesBase.GetClrVersions " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;Version ^&gt; ^ GetClrVersions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -740,6 +853,9 @@
       <MemberSignature Language="C#" Value="public virtual bool HasBackButton { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasBackButton" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.HasBackButton" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HasBackButton As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasBackButton : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.HasBackButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HasBackButton { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -760,6 +876,9 @@
       <MemberSignature Language="C#" Value="public virtual bool HidesRightAlignedMultiselectScrollbars { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HidesRightAlignedMultiselectScrollbars" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.HidesRightAlignedMultiselectScrollbars" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HidesRightAlignedMultiselectScrollbars As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HidesRightAlignedMultiselectScrollbars : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.HidesRightAlignedMultiselectScrollbars" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool HidesRightAlignedMultiselectScrollbars { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -780,6 +899,9 @@
       <MemberSignature Language="C#" Value="public virtual string HtmlTextWriter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HtmlTextWriter" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.HtmlTextWriter" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HtmlTextWriter As String" />
+      <MemberSignature Language="F#" Value="member this.HtmlTextWriter : string with get, set" Usage="System.Web.HttpBrowserCapabilitiesBase.HtmlTextWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HtmlTextWriter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -799,6 +921,9 @@
       <MemberSignature Language="C#" Value="public virtual string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.Web.HttpBrowserCapabilitiesBase.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Id { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -818,6 +943,9 @@
       <MemberSignature Language="C#" Value="public virtual string InputType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InputType" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.InputType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property InputType As String" />
+      <MemberSignature Language="F#" Value="member this.InputType : string" Usage="System.Web.HttpBrowserCapabilitiesBase.InputType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ InputType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -837,6 +965,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsBrowser (string browserName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsBrowser(string browserName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpBrowserCapabilitiesBase.IsBrowser(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IsBrowser (browserName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsBrowser : string -&gt; bool&#xA;override this.IsBrowser : string -&gt; bool" Usage="httpBrowserCapabilitiesBase.IsBrowser browserName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsBrowser(System::String ^ browserName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -861,6 +992,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.IsColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsColor As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsColor : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.IsColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsColor { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -881,6 +1015,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsMobileDevice { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMobileDevice" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.IsMobileDevice" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsMobileDevice As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsMobileDevice : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.IsMobileDevice" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsMobileDevice { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -901,6 +1038,9 @@
       <MemberSignature Language="C#" Value="public virtual string this[string key] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(key As String) As String" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string" Usage="System.Web.HttpBrowserCapabilitiesBase.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ key); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -924,6 +1064,9 @@
       <MemberSignature Language="C#" Value="public virtual bool JavaApplets { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool JavaApplets" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.JavaApplets" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property JavaApplets As Boolean" />
+      <MemberSignature Language="F#" Value="member this.JavaApplets : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.JavaApplets" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool JavaApplets { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -949,6 +1092,9 @@
       <MemberSignature Language="C#" Value="public virtual Version JScriptVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version JScriptVersion" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.JScriptVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property JScriptVersion As Version" />
+      <MemberSignature Language="F#" Value="member this.JScriptVersion : Version" Usage="System.Web.HttpBrowserCapabilitiesBase.JScriptVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Version ^ JScriptVersion { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -975,6 +1121,9 @@
       <MemberSignature Language="C#" Value="public virtual int MajorVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MajorVersion" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.MajorVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MajorVersion As Integer" />
+      <MemberSignature Language="F#" Value="member this.MajorVersion : int" Usage="System.Web.HttpBrowserCapabilitiesBase.MajorVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MajorVersion { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -994,6 +1143,9 @@
       <MemberSignature Language="C#" Value="public virtual int MaximumHrefLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumHrefLength" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.MaximumHrefLength" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MaximumHrefLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaximumHrefLength : int" Usage="System.Web.HttpBrowserCapabilitiesBase.MaximumHrefLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaximumHrefLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1013,6 +1165,9 @@
       <MemberSignature Language="C#" Value="public virtual int MaximumRenderedPageSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumRenderedPageSize" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.MaximumRenderedPageSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MaximumRenderedPageSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaximumRenderedPageSize : int" Usage="System.Web.HttpBrowserCapabilitiesBase.MaximumRenderedPageSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaximumRenderedPageSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1032,6 +1187,9 @@
       <MemberSignature Language="C#" Value="public virtual int MaximumSoftkeyLabelLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumSoftkeyLabelLength" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.MaximumSoftkeyLabelLength" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MaximumSoftkeyLabelLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaximumSoftkeyLabelLength : int" Usage="System.Web.HttpBrowserCapabilitiesBase.MaximumSoftkeyLabelLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MaximumSoftkeyLabelLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1051,6 +1209,9 @@
       <MemberSignature Language="C#" Value="public virtual double MinorVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 MinorVersion" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.MinorVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MinorVersion As Double" />
+      <MemberSignature Language="F#" Value="member this.MinorVersion : double" Usage="System.Web.HttpBrowserCapabilitiesBase.MinorVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property double MinorVersion { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1070,6 +1231,9 @@
       <MemberSignature Language="C#" Value="public virtual string MinorVersionString { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MinorVersionString" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.MinorVersionString" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MinorVersionString As String" />
+      <MemberSignature Language="F#" Value="member this.MinorVersionString : string" Usage="System.Web.HttpBrowserCapabilitiesBase.MinorVersionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MinorVersionString { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1089,6 +1253,9 @@
       <MemberSignature Language="C#" Value="public virtual string MobileDeviceManufacturer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MobileDeviceManufacturer" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.MobileDeviceManufacturer" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MobileDeviceManufacturer As String" />
+      <MemberSignature Language="F#" Value="member this.MobileDeviceManufacturer : string" Usage="System.Web.HttpBrowserCapabilitiesBase.MobileDeviceManufacturer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MobileDeviceManufacturer { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1108,6 +1275,9 @@
       <MemberSignature Language="C#" Value="public virtual string MobileDeviceModel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MobileDeviceModel" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.MobileDeviceModel" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MobileDeviceModel As String" />
+      <MemberSignature Language="F#" Value="member this.MobileDeviceModel : string" Usage="System.Web.HttpBrowserCapabilitiesBase.MobileDeviceModel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MobileDeviceModel { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1127,6 +1297,9 @@
       <MemberSignature Language="C#" Value="public virtual Version MSDomVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version MSDomVersion" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.MSDomVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MSDomVersion As Version" />
+      <MemberSignature Language="F#" Value="member this.MSDomVersion : Version" Usage="System.Web.HttpBrowserCapabilitiesBase.MSDomVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Version ^ MSDomVersion { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1146,6 +1319,9 @@
       <MemberSignature Language="C#" Value="public virtual int NumberOfSoftkeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfSoftkeys" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.NumberOfSoftkeys" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property NumberOfSoftkeys As Integer" />
+      <MemberSignature Language="F#" Value="member this.NumberOfSoftkeys : int" Usage="System.Web.HttpBrowserCapabilitiesBase.NumberOfSoftkeys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int NumberOfSoftkeys { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1165,6 +1341,9 @@
       <MemberSignature Language="C#" Value="public virtual string Platform { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Platform" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Platform" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Platform As String" />
+      <MemberSignature Language="F#" Value="member this.Platform : string" Usage="System.Web.HttpBrowserCapabilitiesBase.Platform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Platform { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1184,6 +1363,9 @@
       <MemberSignature Language="C#" Value="public virtual string PreferredImageMime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PreferredImageMime" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.PreferredImageMime" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PreferredImageMime As String" />
+      <MemberSignature Language="F#" Value="member this.PreferredImageMime : string" Usage="System.Web.HttpBrowserCapabilitiesBase.PreferredImageMime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PreferredImageMime { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1203,6 +1385,9 @@
       <MemberSignature Language="C#" Value="public virtual string PreferredRenderingMime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PreferredRenderingMime" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.PreferredRenderingMime" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PreferredRenderingMime As String" />
+      <MemberSignature Language="F#" Value="member this.PreferredRenderingMime : string" Usage="System.Web.HttpBrowserCapabilitiesBase.PreferredRenderingMime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PreferredRenderingMime { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1222,6 +1407,9 @@
       <MemberSignature Language="C#" Value="public virtual string PreferredRenderingType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PreferredRenderingType" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.PreferredRenderingType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PreferredRenderingType As String" />
+      <MemberSignature Language="F#" Value="member this.PreferredRenderingType : string" Usage="System.Web.HttpBrowserCapabilitiesBase.PreferredRenderingType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PreferredRenderingType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1241,6 +1429,9 @@
       <MemberSignature Language="C#" Value="public virtual string PreferredRequestEncoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PreferredRequestEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.PreferredRequestEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PreferredRequestEncoding As String" />
+      <MemberSignature Language="F#" Value="member this.PreferredRequestEncoding : string" Usage="System.Web.HttpBrowserCapabilitiesBase.PreferredRequestEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PreferredRequestEncoding { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1260,6 +1451,9 @@
       <MemberSignature Language="C#" Value="public virtual string PreferredResponseEncoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PreferredResponseEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.PreferredResponseEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property PreferredResponseEncoding As String" />
+      <MemberSignature Language="F#" Value="member this.PreferredResponseEncoding : string" Usage="System.Web.HttpBrowserCapabilitiesBase.PreferredResponseEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PreferredResponseEncoding { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1279,6 +1473,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RendersBreakBeforeWmlSelectAndInput { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RendersBreakBeforeWmlSelectAndInput" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RendersBreakBeforeWmlSelectAndInput" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RendersBreakBeforeWmlSelectAndInput As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RendersBreakBeforeWmlSelectAndInput : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RendersBreakBeforeWmlSelectAndInput" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RendersBreakBeforeWmlSelectAndInput { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1299,6 +1496,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RendersBreaksAfterHtmlLists { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RendersBreaksAfterHtmlLists" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RendersBreaksAfterHtmlLists" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RendersBreaksAfterHtmlLists As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RendersBreaksAfterHtmlLists : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RendersBreaksAfterHtmlLists" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RendersBreaksAfterHtmlLists { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1319,6 +1519,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RendersBreaksAfterWmlAnchor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RendersBreaksAfterWmlAnchor" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RendersBreaksAfterWmlAnchor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RendersBreaksAfterWmlAnchor As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RendersBreaksAfterWmlAnchor : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RendersBreaksAfterWmlAnchor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RendersBreaksAfterWmlAnchor { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1339,6 +1542,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RendersBreaksAfterWmlInput { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RendersBreaksAfterWmlInput" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RendersBreaksAfterWmlInput" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RendersBreaksAfterWmlInput As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RendersBreaksAfterWmlInput : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RendersBreaksAfterWmlInput" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RendersBreaksAfterWmlInput { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1359,6 +1565,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RendersWmlDoAcceptsInline { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RendersWmlDoAcceptsInline" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RendersWmlDoAcceptsInline" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RendersWmlDoAcceptsInline As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RendersWmlDoAcceptsInline : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RendersWmlDoAcceptsInline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RendersWmlDoAcceptsInline { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1379,6 +1588,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RendersWmlSelectsAsMenuCards { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RendersWmlSelectsAsMenuCards" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RendersWmlSelectsAsMenuCards" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RendersWmlSelectsAsMenuCards As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RendersWmlSelectsAsMenuCards : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RendersWmlSelectsAsMenuCards" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RendersWmlSelectsAsMenuCards { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1399,6 +1611,9 @@
       <MemberSignature Language="C#" Value="public virtual string RequiredMetaTagNameValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RequiredMetaTagNameValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RequiredMetaTagNameValue" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiredMetaTagNameValue As String" />
+      <MemberSignature Language="F#" Value="member this.RequiredMetaTagNameValue : string" Usage="System.Web.HttpBrowserCapabilitiesBase.RequiredMetaTagNameValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ RequiredMetaTagNameValue { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1418,6 +1633,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RequiresAttributeColonSubstitution { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresAttributeColonSubstitution" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RequiresAttributeColonSubstitution" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresAttributeColonSubstitution As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresAttributeColonSubstitution : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RequiresAttributeColonSubstitution" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresAttributeColonSubstitution { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1438,6 +1656,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RequiresContentTypeMetaTag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresContentTypeMetaTag" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RequiresContentTypeMetaTag" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresContentTypeMetaTag As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresContentTypeMetaTag : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RequiresContentTypeMetaTag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresContentTypeMetaTag { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1458,6 +1679,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RequiresControlStateInSession { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresControlStateInSession" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RequiresControlStateInSession" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresControlStateInSession As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresControlStateInSession : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RequiresControlStateInSession" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresControlStateInSession { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1478,6 +1702,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RequiresDBCSCharacter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresDBCSCharacter" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RequiresDBCSCharacter" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresDBCSCharacter As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresDBCSCharacter : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RequiresDBCSCharacter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresDBCSCharacter { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1498,6 +1725,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RequiresHtmlAdaptiveErrorReporting { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresHtmlAdaptiveErrorReporting" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RequiresHtmlAdaptiveErrorReporting" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresHtmlAdaptiveErrorReporting As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresHtmlAdaptiveErrorReporting : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RequiresHtmlAdaptiveErrorReporting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresHtmlAdaptiveErrorReporting { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1518,6 +1748,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RequiresLeadingPageBreak { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresLeadingPageBreak" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RequiresLeadingPageBreak" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresLeadingPageBreak As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresLeadingPageBreak : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RequiresLeadingPageBreak" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresLeadingPageBreak { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1538,6 +1771,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RequiresNoBreakInFormatting { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresNoBreakInFormatting" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RequiresNoBreakInFormatting" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresNoBreakInFormatting As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresNoBreakInFormatting : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RequiresNoBreakInFormatting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresNoBreakInFormatting { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1558,6 +1794,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RequiresOutputOptimization { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresOutputOptimization" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RequiresOutputOptimization" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresOutputOptimization As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresOutputOptimization : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RequiresOutputOptimization" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresOutputOptimization { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1578,6 +1817,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RequiresPhoneNumbersAsPlainText { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresPhoneNumbersAsPlainText" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RequiresPhoneNumbersAsPlainText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresPhoneNumbersAsPlainText As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresPhoneNumbersAsPlainText : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RequiresPhoneNumbersAsPlainText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresPhoneNumbersAsPlainText { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1598,6 +1840,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RequiresSpecialViewStateEncoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresSpecialViewStateEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RequiresSpecialViewStateEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresSpecialViewStateEncoding As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresSpecialViewStateEncoding : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RequiresSpecialViewStateEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresSpecialViewStateEncoding { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1618,6 +1863,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RequiresUniqueFilePathSuffix { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresUniqueFilePathSuffix" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RequiresUniqueFilePathSuffix" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresUniqueFilePathSuffix As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresUniqueFilePathSuffix : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RequiresUniqueFilePathSuffix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresUniqueFilePathSuffix { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1638,6 +1886,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RequiresUniqueHtmlCheckboxNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresUniqueHtmlCheckboxNames" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RequiresUniqueHtmlCheckboxNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresUniqueHtmlCheckboxNames As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresUniqueHtmlCheckboxNames : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RequiresUniqueHtmlCheckboxNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresUniqueHtmlCheckboxNames { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1658,6 +1909,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RequiresUniqueHtmlInputNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresUniqueHtmlInputNames" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RequiresUniqueHtmlInputNames" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresUniqueHtmlInputNames As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresUniqueHtmlInputNames : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RequiresUniqueHtmlInputNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresUniqueHtmlInputNames { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1678,6 +1932,9 @@
       <MemberSignature Language="C#" Value="public virtual bool RequiresUrlEncodedPostfieldValues { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresUrlEncodedPostfieldValues" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.RequiresUrlEncodedPostfieldValues" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RequiresUrlEncodedPostfieldValues As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresUrlEncodedPostfieldValues : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.RequiresUrlEncodedPostfieldValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresUrlEncodedPostfieldValues { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1698,6 +1955,9 @@
       <MemberSignature Language="C#" Value="public virtual int ScreenBitDepth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ScreenBitDepth" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.ScreenBitDepth" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ScreenBitDepth As Integer" />
+      <MemberSignature Language="F#" Value="member this.ScreenBitDepth : int" Usage="System.Web.HttpBrowserCapabilitiesBase.ScreenBitDepth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ScreenBitDepth { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1717,6 +1977,9 @@
       <MemberSignature Language="C#" Value="public virtual int ScreenCharactersHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ScreenCharactersHeight" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.ScreenCharactersHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ScreenCharactersHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.ScreenCharactersHeight : int" Usage="System.Web.HttpBrowserCapabilitiesBase.ScreenCharactersHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ScreenCharactersHeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1736,6 +1999,9 @@
       <MemberSignature Language="C#" Value="public virtual int ScreenCharactersWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ScreenCharactersWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.ScreenCharactersWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ScreenCharactersWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.ScreenCharactersWidth : int" Usage="System.Web.HttpBrowserCapabilitiesBase.ScreenCharactersWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ScreenCharactersWidth { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1755,6 +2021,9 @@
       <MemberSignature Language="C#" Value="public virtual int ScreenPixelsHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ScreenPixelsHeight" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.ScreenPixelsHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ScreenPixelsHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.ScreenPixelsHeight : int" Usage="System.Web.HttpBrowserCapabilitiesBase.ScreenPixelsHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ScreenPixelsHeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1774,6 +2043,9 @@
       <MemberSignature Language="C#" Value="public virtual int ScreenPixelsWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ScreenPixelsWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.ScreenPixelsWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ScreenPixelsWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.ScreenPixelsWidth : int" Usage="System.Web.HttpBrowserCapabilitiesBase.ScreenPixelsWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ScreenPixelsWidth { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1793,6 +2065,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsAccesskeyAttribute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsAccesskeyAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsAccesskeyAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsAccesskeyAttribute As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsAccesskeyAttribute : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsAccesskeyAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsAccesskeyAttribute { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1813,6 +2088,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsBodyColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsBodyColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsBodyColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsBodyColor As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsBodyColor : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsBodyColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsBodyColor { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1833,6 +2111,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsBold { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsBold" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsBold" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsBold As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsBold : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsBold" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsBold { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1853,6 +2134,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsCacheControlMetaTag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsCacheControlMetaTag" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsCacheControlMetaTag" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsCacheControlMetaTag As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsCacheControlMetaTag : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsCacheControlMetaTag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsCacheControlMetaTag { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1873,6 +2157,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsCallback { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsCallback" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsCallback As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsCallback : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsCallback { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1893,6 +2180,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsCss { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsCss" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsCss" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsCss As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsCss : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsCss" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsCss { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1913,6 +2203,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsDivAlign { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDivAlign" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsDivAlign" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsDivAlign As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsDivAlign : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsDivAlign" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsDivAlign { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1933,6 +2226,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsDivNoWrap { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDivNoWrap" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsDivNoWrap" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsDivNoWrap As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsDivNoWrap : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsDivNoWrap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsDivNoWrap { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1953,6 +2249,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsEmptyStringInCookieValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsEmptyStringInCookieValue" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsEmptyStringInCookieValue" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsEmptyStringInCookieValue As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsEmptyStringInCookieValue : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsEmptyStringInCookieValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsEmptyStringInCookieValue { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1973,6 +2272,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsFontColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsFontColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsFontColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsFontColor As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsFontColor : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsFontColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsFontColor { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1993,6 +2295,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsFontName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsFontName" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsFontName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsFontName As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsFontName : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsFontName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsFontName { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2013,6 +2318,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsFontSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsFontSize" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsFontSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsFontSize As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsFontSize : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsFontSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsFontSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2033,6 +2341,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsImageSubmit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsImageSubmit" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsImageSubmit" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsImageSubmit As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsImageSubmit : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsImageSubmit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsImageSubmit { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2053,6 +2364,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsIModeSymbols { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsIModeSymbols" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsIModeSymbols" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsIModeSymbols As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsIModeSymbols : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsIModeSymbols" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsIModeSymbols { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2073,6 +2387,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsInputIStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsInputIStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsInputIStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsInputIStyle As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsInputIStyle : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsInputIStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsInputIStyle { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2093,6 +2410,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsInputMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsInputMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsInputMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsInputMode As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsInputMode : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsInputMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsInputMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2113,6 +2433,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsItalic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsItalic" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsItalic" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsItalic As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsItalic : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsItalic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsItalic { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2133,6 +2456,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsJPhoneMultiMediaAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsJPhoneMultiMediaAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsJPhoneMultiMediaAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsJPhoneMultiMediaAttributes As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsJPhoneMultiMediaAttributes : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsJPhoneMultiMediaAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsJPhoneMultiMediaAttributes { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2153,6 +2479,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsJPhoneSymbols { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsJPhoneSymbols" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsJPhoneSymbols" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsJPhoneSymbols As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsJPhoneSymbols : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsJPhoneSymbols" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsJPhoneSymbols { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2173,6 +2502,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsQueryStringInFormAction { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsQueryStringInFormAction" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsQueryStringInFormAction" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsQueryStringInFormAction As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsQueryStringInFormAction : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsQueryStringInFormAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsQueryStringInFormAction { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2193,6 +2525,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsRedirectWithCookie { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsRedirectWithCookie" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsRedirectWithCookie" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsRedirectWithCookie As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsRedirectWithCookie : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsRedirectWithCookie" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsRedirectWithCookie { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2213,6 +2548,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsSelectMultiple { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsSelectMultiple" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsSelectMultiple" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsSelectMultiple As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsSelectMultiple : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsSelectMultiple" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsSelectMultiple { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2233,6 +2571,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsUncheck { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsUncheck" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsUncheck" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsUncheck As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsUncheck : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsUncheck" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsUncheck { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2253,6 +2594,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsXmlHttp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsXmlHttp" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.SupportsXmlHttp" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsXmlHttp As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsXmlHttp : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.SupportsXmlHttp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsXmlHttp { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2273,6 +2617,9 @@
       <MemberSignature Language="C#" Value="public virtual bool Tables { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Tables" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Tables" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Tables As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Tables : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.Tables" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Tables { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2293,6 +2640,9 @@
       <MemberSignature Language="C#" Value="public virtual Type TagWriter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TagWriter" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.TagWriter" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property TagWriter As Type" />
+      <MemberSignature Language="F#" Value="member this.TagWriter : Type" Usage="System.Web.HttpBrowserCapabilitiesBase.TagWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ TagWriter { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2312,6 +2662,9 @@
       <MemberSignature Language="C#" Value="public virtual string Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Type" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Type As String" />
+      <MemberSignature Language="F#" Value="member this.Type : string" Usage="System.Web.HttpBrowserCapabilitiesBase.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Type { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2331,6 +2684,9 @@
       <MemberSignature Language="C#" Value="public virtual bool UseOptimizedCacheKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseOptimizedCacheKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.UseOptimizedCacheKey" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property UseOptimizedCacheKey As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseOptimizedCacheKey : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.UseOptimizedCacheKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseOptimizedCacheKey { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2351,6 +2707,9 @@
       <MemberSignature Language="C#" Value="public virtual bool VBScript { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool VBScript" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.VBScript" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property VBScript As Boolean" />
+      <MemberSignature Language="F#" Value="member this.VBScript : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.VBScript" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool VBScript { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2376,6 +2735,9 @@
       <MemberSignature Language="C#" Value="public virtual string Version { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Version" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Version As String" />
+      <MemberSignature Language="F#" Value="member this.Version : string" Usage="System.Web.HttpBrowserCapabilitiesBase.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Version { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2395,6 +2757,9 @@
       <MemberSignature Language="C#" Value="public virtual Version W3CDomVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version W3CDomVersion" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.W3CDomVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property W3CDomVersion As Version" />
+      <MemberSignature Language="F#" Value="member this.W3CDomVersion : Version" Usage="System.Web.HttpBrowserCapabilitiesBase.W3CDomVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Version ^ W3CDomVersion { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2414,6 +2779,9 @@
       <MemberSignature Language="C#" Value="public virtual bool Win16 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Win16" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Win16" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Win16 As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Win16 : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.Win16" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Win16 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2434,6 +2802,9 @@
       <MemberSignature Language="C#" Value="public virtual bool Win32 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Win32" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpBrowserCapabilitiesBase.Win32" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Win32 As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Win32 : bool" Usage="System.Web.HttpBrowserCapabilitiesBase.Win32" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Win32 { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

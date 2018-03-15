@@ -1,7 +1,10 @@
-<Type Name="ActivityValidator" FullName="System.Workflow.ComponentModel.Compiler.ActivityValidator">
+﻿<Type Name="ActivityValidator" FullName="System.Workflow.ComponentModel.Compiler.ActivityValidator">
   <TypeSignature Language="C#" Value="public class ActivityValidator : System.Workflow.ComponentModel.Compiler.DependencyObjectValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityValidator extends System.Workflow.ComponentModel.Compiler.DependencyObjectValidator" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.ActivityValidator" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityValidator&#xA;Inherits DependencyObjectValidator" />
+  <TypeSignature Language="F#" Value="type ActivityValidator = class&#xA;    inherit DependencyObjectValidator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityValidator : System::Workflow::ComponentModel::Compiler::DependencyObjectValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public ActivityValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ActivityValidator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityValidator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -56,6 +61,9 @@
       <MemberSignature Language="C#" Value="public override System.Workflow.ComponentModel.Compiler.ValidationErrorCollection Validate (System.Workflow.ComponentModel.Compiler.ValidationManager manager, object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Workflow.ComponentModel.Compiler.ValidationErrorCollection Validate(class System.Workflow.ComponentModel.Compiler.ValidationManager manager, object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Compiler.ActivityValidator.Validate(System.Workflow.ComponentModel.Compiler.ValidationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Validate (manager As ValidationManager, obj As Object) As ValidationErrorCollection" />
+      <MemberSignature Language="F#" Value="override this.Validate : System.Workflow.ComponentModel.Compiler.ValidationManager * obj -&gt; System.Workflow.ComponentModel.Compiler.ValidationErrorCollection" Usage="activityValidator.Validate (manager, obj)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Workflow::ComponentModel::Compiler::ValidationErrorCollection ^ Validate(System::Workflow::ComponentModel::Compiler::ValidationManager ^ manager, System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

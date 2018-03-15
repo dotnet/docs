@@ -1,7 +1,10 @@
-<Type Name="StringWithQualityHeaderValue" FullName="System.Net.Http.Headers.StringWithQualityHeaderValue">
+﻿<Type Name="StringWithQualityHeaderValue" FullName="System.Net.Http.Headers.StringWithQualityHeaderValue">
   <TypeSignature Language="C#" Value="public class StringWithQualityHeaderValue : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StringWithQualityHeaderValue extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.Headers.StringWithQualityHeaderValue" />
+  <TypeSignature Language="VB.NET" Value="Public Class StringWithQualityHeaderValue&#xA;Implements ICloneable" />
+  <TypeSignature Language="F#" Value="type StringWithQualityHeaderValue = class&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StringWithQualityHeaderValue : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,10 +38,25 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.StringWithQualityHeaderValue" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StringWithQualityHeaderValue (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.StringWithQualityHeaderValue.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.StringWithQualityHeaderValue : string -&gt; System.Net.Http.Headers.StringWithQualityHeaderValue" Usage="new System.Net.Http.Headers.StringWithQualityHeaderValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringWithQualityHeaderValue(System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -64,6 +82,9 @@
       <MemberSignature Language="C#" Value="public StringWithQualityHeaderValue (string value, double quality);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value, float64 quality) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.StringWithQualityHeaderValue.#ctor(System.String,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String, quality As Double)" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.Headers.StringWithQualityHeaderValue : string * double -&gt; System.Net.Http.Headers.StringWithQualityHeaderValue" Usage="new System.Net.Http.Headers.StringWithQualityHeaderValue (value, quality)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StringWithQualityHeaderValue(System::String ^ value, double quality);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -91,6 +112,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.StringWithQualityHeaderValue.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="stringWithQualityHeaderValue.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -121,6 +145,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.StringWithQualityHeaderValue.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="stringWithQualityHeaderValue.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -156,6 +183,9 @@
       <MemberSignature Language="C#" Value="public static System.Net.Http.Headers.StringWithQualityHeaderValue Parse (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Http.Headers.StringWithQualityHeaderValue Parse(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.StringWithQualityHeaderValue.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (input As String) As StringWithQualityHeaderValue" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Net.Http.Headers.StringWithQualityHeaderValue" Usage="System.Net.Http.Headers.StringWithQualityHeaderValue.Parse input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Http::Headers::StringWithQualityHeaderValue ^ Parse(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -189,6 +219,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Quality { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Quality" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.StringWithQualityHeaderValue.Quality" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Quality As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.Quality : Nullable&lt;double&gt;" Usage="System.Net.Http.Headers.StringWithQualityHeaderValue.Quality" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; Quality { Nullable&lt;double&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -214,7 +247,12 @@
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.StringWithQualityHeaderValue.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -238,6 +276,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.StringWithQualityHeaderValue.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="stringWithQualityHeaderValue.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -264,6 +305,9 @@
       <MemberSignature Language="C#" Value="public static bool TryParse (string input, out System.Net.Http.Headers.StringWithQualityHeaderValue parsedValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(string input, [out] class System.Net.Http.Headers.StringWithQualityHeaderValue&amp; parsedValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.Headers.StringWithQualityHeaderValue.TryParse(System.String,System.Net.Http.Headers.StringWithQualityHeaderValue@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (input As String, ByRef parsedValue As StringWithQualityHeaderValue) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool" Usage="System.Net.Http.Headers.StringWithQualityHeaderValue.TryParse (input, parsedValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(System::String ^ input, [Runtime::InteropServices::Out] System::Net::Http::Headers::StringWithQualityHeaderValue ^ % parsedValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -296,6 +340,9 @@
       <MemberSignature Language="C#" Value="public string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Net.Http.Headers.StringWithQualityHeaderValue.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Net.Http.Headers.StringWithQualityHeaderValue.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -317,17 +364,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Http</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Http.Headers.StringWithQualityHeaderValue" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

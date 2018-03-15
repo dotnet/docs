@@ -1,7 +1,10 @@
-<Type Name="AttributeTargets" FullName="System.AttributeTargets">
+﻿<Type Name="AttributeTargets" FullName="System.AttributeTargets">
   <TypeSignature Language="C#" Value="public enum AttributeTargets" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AttributeTargets extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.AttributeTargets" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AttributeTargets" />
+  <TypeSignature Language="F#" Value="type AttributeTargets = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AttributeTargets" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +64,9 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets All = int32(32767)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="F#" Value="All = 32767" Usage="System.AttributeTargets.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -82,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>32767</MemberValue>
       <Docs>
         <summary>Attribute can be applied to any application element.</summary>
       </Docs>
@@ -90,6 +97,9 @@
       <MemberSignature Language="C#" Value="Assembly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Assembly = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Assembly" />
+      <MemberSignature Language="VB.NET" Value="Assembly" />
+      <MemberSignature Language="F#" Value="Assembly = 1" Usage="System.AttributeTargets.Assembly" />
+      <MemberSignature Language="C++ CLI" Value="Assembly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -111,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Attribute can be applied to an assembly.</summary>
       </Docs>
@@ -119,6 +130,9 @@
       <MemberSignature Language="C#" Value="Class" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Class = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Class" />
+      <MemberSignature Language="VB.NET" Value="Class" />
+      <MemberSignature Language="F#" Value="Class = 4" Usage="System.AttributeTargets.Class" />
+      <MemberSignature Language="C++ CLI" Value="Class" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -140,6 +154,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Attribute can be applied to a class.</summary>
       </Docs>
@@ -148,6 +163,9 @@
       <MemberSignature Language="C#" Value="Constructor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Constructor = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Constructor" />
+      <MemberSignature Language="VB.NET" Value="Constructor" />
+      <MemberSignature Language="F#" Value="Constructor = 32" Usage="System.AttributeTargets.Constructor" />
+      <MemberSignature Language="C++ CLI" Value="Constructor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -169,6 +187,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Attribute can be applied to a constructor.</summary>
       </Docs>
@@ -177,6 +196,9 @@
       <MemberSignature Language="C#" Value="Delegate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Delegate = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Delegate" />
+      <MemberSignature Language="VB.NET" Value="Delegate" />
+      <MemberSignature Language="F#" Value="Delegate = 4096" Usage="System.AttributeTargets.Delegate" />
+      <MemberSignature Language="C++ CLI" Value="Delegate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -198,6 +220,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>Attribute can be applied to a delegate.</summary>
       </Docs>
@@ -206,6 +229,9 @@
       <MemberSignature Language="C#" Value="Enum" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Enum = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Enum" />
+      <MemberSignature Language="VB.NET" Value="Enum" />
+      <MemberSignature Language="F#" Value="Enum = 16" Usage="System.AttributeTargets.Enum" />
+      <MemberSignature Language="C++ CLI" Value="Enum" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -227,6 +253,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Attribute can be applied to an enumeration.</summary>
       </Docs>
@@ -235,6 +262,9 @@
       <MemberSignature Language="C#" Value="Event" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Event = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Event" />
+      <MemberSignature Language="VB.NET" Value="Event" />
+      <MemberSignature Language="F#" Value="Event = 512" Usage="System.AttributeTargets.Event" />
+      <MemberSignature Language="C++ CLI" Value="Event" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -256,6 +286,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>Attribute can be applied to an event.</summary>
       </Docs>
@@ -264,6 +295,9 @@
       <MemberSignature Language="C#" Value="Field" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Field = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Field" />
+      <MemberSignature Language="VB.NET" Value="Field" />
+      <MemberSignature Language="F#" Value="Field = 256" Usage="System.AttributeTargets.Field" />
+      <MemberSignature Language="C++ CLI" Value="Field" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -285,6 +319,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Attribute can be applied to a field.</summary>
       </Docs>
@@ -293,6 +328,9 @@
       <MemberSignature Language="C#" Value="GenericParameter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets GenericParameter = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.GenericParameter" />
+      <MemberSignature Language="VB.NET" Value="GenericParameter" />
+      <MemberSignature Language="F#" Value="GenericParameter = 16384" Usage="System.AttributeTargets.GenericParameter" />
+      <MemberSignature Language="C++ CLI" Value="GenericParameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -314,6 +352,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>Attribute can be applied to a generic parameter.</summary>
         <remarks>
@@ -332,6 +371,9 @@
       <MemberSignature Language="C#" Value="Interface" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Interface = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Interface" />
+      <MemberSignature Language="VB.NET" Value="Interface" />
+      <MemberSignature Language="F#" Value="Interface = 1024" Usage="System.AttributeTargets.Interface" />
+      <MemberSignature Language="C++ CLI" Value="Interface" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -353,6 +395,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>Attribute can be applied to an interface.</summary>
       </Docs>
@@ -361,6 +404,9 @@
       <MemberSignature Language="C#" Value="Method" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Method = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Method" />
+      <MemberSignature Language="VB.NET" Value="Method" />
+      <MemberSignature Language="F#" Value="Method = 64" Usage="System.AttributeTargets.Method" />
+      <MemberSignature Language="C++ CLI" Value="Method" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -382,6 +428,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Attribute can be applied to a method.</summary>
       </Docs>
@@ -390,6 +437,9 @@
       <MemberSignature Language="C#" Value="Module" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Module = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Module" />
+      <MemberSignature Language="VB.NET" Value="Module" />
+      <MemberSignature Language="F#" Value="Module = 2" Usage="System.AttributeTargets.Module" />
+      <MemberSignature Language="C++ CLI" Value="Module" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -411,6 +461,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Attribute can be applied to a module.</summary>
         <remarks>
@@ -429,6 +480,9 @@
       <MemberSignature Language="C#" Value="Parameter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Parameter = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Parameter" />
+      <MemberSignature Language="VB.NET" Value="Parameter" />
+      <MemberSignature Language="F#" Value="Parameter = 2048" Usage="System.AttributeTargets.Parameter" />
+      <MemberSignature Language="C++ CLI" Value="Parameter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -450,6 +504,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>Attribute can be applied to a parameter.</summary>
       </Docs>
@@ -458,6 +513,9 @@
       <MemberSignature Language="C#" Value="Property" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Property = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Property" />
+      <MemberSignature Language="VB.NET" Value="Property" />
+      <MemberSignature Language="F#" Value="Property = 128" Usage="System.AttributeTargets.Property" />
+      <MemberSignature Language="C++ CLI" Value="Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -479,6 +537,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>Attribute can be applied to a property.</summary>
       </Docs>
@@ -487,6 +546,9 @@
       <MemberSignature Language="C#" Value="ReturnValue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets ReturnValue = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.ReturnValue" />
+      <MemberSignature Language="VB.NET" Value="ReturnValue" />
+      <MemberSignature Language="F#" Value="ReturnValue = 8192" Usage="System.AttributeTargets.ReturnValue" />
+      <MemberSignature Language="C++ CLI" Value="ReturnValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -508,6 +570,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>Attribute can be applied to a return value.</summary>
       </Docs>
@@ -516,6 +579,9 @@
       <MemberSignature Language="C#" Value="Struct" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.AttributeTargets Struct = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.AttributeTargets.Struct" />
+      <MemberSignature Language="VB.NET" Value="Struct" />
+      <MemberSignature Language="F#" Value="Struct = 8" Usage="System.AttributeTargets.Struct" />
+      <MemberSignature Language="C++ CLI" Value="Struct" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -537,6 +603,7 @@
       <ReturnValue>
         <ReturnType>System.AttributeTargets</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Attribute can be applied to a structure; that is, a value type.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="Partitioner&lt;TSource&gt;" FullName="System.Collections.Concurrent.Partitioner&lt;TSource&gt;">
+﻿<Type Name="Partitioner&lt;TSource&gt;" FullName="System.Collections.Concurrent.Partitioner&lt;TSource&gt;">
   <TypeSignature Language="C#" Value="public abstract class Partitioner&lt;TSource&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Partitioner`1&lt;TSource&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Concurrent.Partitioner`1" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Partitioner(Of TSource)" />
+  <TypeSignature Language="F#" Value="type Partitioner&lt;'Source&gt; = class" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TSource&gt;&#xA;public ref class Partitioner abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.Concurrent</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +55,8 @@
       <MemberSignature Language="C#" Value="protected Partitioner ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Partitioner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -80,6 +85,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.Generic.IEnumerable&lt;TSource&gt; GetDynamicPartitions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;!TSource&gt; GetDynamicPartitions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner`1.GetDynamicPartitions" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDynamicPartitions () As IEnumerable(Of TSource)" />
+      <MemberSignature Language="F#" Value="abstract member GetDynamicPartitions : unit -&gt; seq&lt;'Source&gt;&#xA;override this.GetDynamicPartitions : unit -&gt; seq&lt;'Source&gt;" Usage="partitioner.GetDynamicPartitions " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;TSource&gt; ^ GetDynamicPartitions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -122,6 +130,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IList&lt;System.Collections.Generic.IEnumerator&lt;TSource&gt;&gt; GetPartitions (int partitionCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Collections.Generic.IEnumerator`1&lt;!TSource&gt;&gt; GetPartitions(int32 partitionCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Concurrent.Partitioner`1.GetPartitions(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetPartitions (partitionCount As Integer) As IList(Of IEnumerator(Of TSource))" />
+      <MemberSignature Language="F#" Value="abstract member GetPartitions : int -&gt; System.Collections.Generic.IList&lt;System.Collections.Generic.IEnumerator&lt;'Source&gt;&gt;" Usage="partitioner.GetPartitions partitionCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IList&lt;System::Collections::Generic::IEnumerator&lt;TSource&gt; ^&gt; ^ GetPartitions(int partitionCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>
@@ -164,6 +175,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SupportsDynamicPartitions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDynamicPartitions" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Concurrent.Partitioner`1.SupportsDynamicPartitions" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SupportsDynamicPartitions As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsDynamicPartitions : bool" Usage="System.Collections.Concurrent.Partitioner&lt;'Source&gt;.SupportsDynamicPartitions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsDynamicPartitions { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.Concurrent</AssemblyName>

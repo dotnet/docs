@@ -1,7 +1,10 @@
-<Type Name="RibbonTitleAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonTitleAutomationPeer">
+﻿<Type Name="RibbonTitleAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonTitleAutomationPeer">
   <TypeSignature Language="C#" Value="public class RibbonTitleAutomationPeer : System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonTitleAutomationPeer extends System.Windows.Automation.Peers.FrameworkElementAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonTitleAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonTitleAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer" />
+  <TypeSignature Language="F#" Value="type RibbonTitleAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonTitleAutomationPeer : System::Windows::Automation::Peers::FrameworkElementAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public RibbonTitleAutomationPeer (System.Windows.FrameworkElement owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.FrameworkElement owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTitleAutomationPeer.#ctor(System.Windows.FrameworkElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As FrameworkElement)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonTitleAutomationPeer : System.Windows.FrameworkElement -&gt; System.Windows.Automation.Peers.RibbonTitleAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonTitleAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonTitleAutomationPeer(System::Windows::FrameworkElement ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTitleAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="ribbonTitleAutomationPeer.GetAutomationControlTypeCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -56,6 +65,9 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTitleAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonTitleAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -75,6 +87,9 @@
       <MemberSignature Language="C#" Value="protected override string GetNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTitleAutomationPeer.GetNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetNameCore : unit -&gt; string" Usage="ribbonTitleAutomationPeer.GetNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -94,6 +109,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsContentElementCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsContentElementCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonTitleAutomationPeer.IsContentElementCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsContentElementCore () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsContentElementCore : unit -&gt; bool" Usage="ribbonTitleAutomationPeer.IsContentElementCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsContentElementCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

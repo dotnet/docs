@@ -1,7 +1,10 @@
-<Type Name="WebProxyScriptElement" FullName="System.Net.Configuration.WebProxyScriptElement">
+﻿<Type Name="WebProxyScriptElement" FullName="System.Net.Configuration.WebProxyScriptElement">
   <TypeSignature Language="C#" Value="public sealed class WebProxyScriptElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebProxyScriptElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.WebProxyScriptElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebProxyScriptElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type WebProxyScriptElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebProxyScriptElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public WebProxyScriptElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebProxyScriptElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebProxyScriptElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan DownloadTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DownloadTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.WebProxyScriptElement.DownloadTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property DownloadTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.DownloadTimeout : TimeSpan with get, set" Usage="System.Net.Configuration.WebProxyScriptElement.DownloadTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan DownloadTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -57,6 +65,9 @@
       <MemberSignature Language="C#" Value="protected override void PostDeserialize ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PostDeserialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebProxyScriptElement.PostDeserialize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostDeserialize ()" />
+      <MemberSignature Language="F#" Value="override this.PostDeserialize : unit -&gt; unit" Usage="webProxyScriptElement.PostDeserialize " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostDeserialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -75,6 +86,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.WebProxyScriptElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.WebProxyScriptElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

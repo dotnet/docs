@@ -1,7 +1,10 @@
-<Type Name="RefreshDataCompletedEventArgs" FullName="System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs">
+﻿<Type Name="RefreshDataCompletedEventArgs" FullName="System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs">
   <TypeSignature Language="C#" Value="public class RefreshDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RefreshDataCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class RefreshDataCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type RefreshDataCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RefreshDataCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +24,9 @@
       <MemberSignature Language="C#" Value="public System.Net.PeerToPeer.Collaboration.PeerEndPoint PeerEndPoint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.PeerToPeer.Collaboration.PeerEndPoint PeerEndPoint" />
       <MemberSignature Language="DocId" Value="P:System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs.PeerEndPoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PeerEndPoint As PeerEndPoint" />
+      <MemberSignature Language="F#" Value="member this.PeerEndPoint : System.Net.PeerToPeer.Collaboration.PeerEndPoint" Usage="System.Net.PeerToPeer.Collaboration.RefreshDataCompletedEventArgs.PeerEndPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ PeerEndPoint { System::Net::PeerToPeer::Collaboration::PeerEndPoint ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="SizeType" FullName="System.Windows.Forms.SizeType">
+﻿<Type Name="SizeType" FullName="System.Windows.Forms.SizeType">
   <TypeSignature Language="C#" Value="public enum SizeType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SizeType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SizeType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SizeType" />
+  <TypeSignature Language="F#" Value="type SizeType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SizeType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="Absolute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SizeType Absolute = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SizeType.Absolute" />
+      <MemberSignature Language="VB.NET" Value="Absolute" />
+      <MemberSignature Language="F#" Value="Absolute = 1" Usage="System.Windows.Forms.SizeType.Absolute" />
+      <MemberSignature Language="C++ CLI" Value="Absolute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -47,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SizeType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The row or column should be sized to an exact number of pixels.</summary>
       </Docs>
@@ -55,6 +62,9 @@
       <MemberSignature Language="C#" Value="AutoSize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SizeType AutoSize = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SizeType.AutoSize" />
+      <MemberSignature Language="VB.NET" Value="AutoSize" />
+      <MemberSignature Language="F#" Value="AutoSize = 0" Usage="System.Windows.Forms.SizeType.AutoSize" />
+      <MemberSignature Language="C++ CLI" Value="AutoSize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SizeType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The row or column should be automatically sized to share space with its peers.</summary>
       </Docs>
@@ -71,6 +82,9 @@
       <MemberSignature Language="C#" Value="Percent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.SizeType Percent = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.SizeType.Percent" />
+      <MemberSignature Language="VB.NET" Value="Percent" />
+      <MemberSignature Language="F#" Value="Percent = 2" Usage="System.Windows.Forms.SizeType.Percent" />
+      <MemberSignature Language="C++ CLI" Value="Percent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SizeType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The row or column should be sized as a percentage of the parent container.</summary>
       </Docs>

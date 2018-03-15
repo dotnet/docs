@@ -1,7 +1,10 @@
-<Type Name="DecimalAggregator" FullName="System.Xml.Xsl.Runtime.DecimalAggregator">
+﻿<Type Name="DecimalAggregator" FullName="System.Xml.Xsl.Runtime.DecimalAggregator">
   <TypeSignature Language="C#" Value="public struct DecimalAggregator" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit DecimalAggregator extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.DecimalAggregator" />
+  <TypeSignature Language="VB.NET" Value="Public Structure DecimalAggregator" />
+  <TypeSignature Language="F#" Value="type DecimalAggregator = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class DecimalAggregator" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="public void Average (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Average(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.DecimalAggregator.Average(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Average (value As Decimal)" />
+      <MemberSignature Language="F#" Value="member this.Average : decimal -&gt; unit" Usage="decimalAggregator.Average value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Average(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -55,6 +61,9 @@
       <MemberSignature Language="C#" Value="public decimal AverageResult { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Decimal AverageResult" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.DecimalAggregator.AverageResult" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AverageResult As Decimal" />
+      <MemberSignature Language="F#" Value="member this.AverageResult : decimal" Usage="System.Xml.Xsl.Runtime.DecimalAggregator.AverageResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal AverageResult { System::Decimal get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -78,6 +87,9 @@
       <MemberSignature Language="C#" Value="public void Create ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Create() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.DecimalAggregator.Create" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Create ()" />
+      <MemberSignature Language="F#" Value="member this.Create : unit -&gt; unit" Usage="decimalAggregator.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -101,6 +113,9 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.DecimalAggregator.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Xml.Xsl.Runtime.DecimalAggregator.IsEmpty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -125,6 +140,9 @@
       <MemberSignature Language="C#" Value="public void Maximum (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Maximum(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.DecimalAggregator.Maximum(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Maximum (value As Decimal)" />
+      <MemberSignature Language="F#" Value="member this.Maximum : decimal -&gt; unit" Usage="decimalAggregator.Maximum value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Maximum(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -151,6 +169,9 @@
       <MemberSignature Language="C#" Value="public decimal MaximumResult { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Decimal MaximumResult" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.DecimalAggregator.MaximumResult" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumResult As Decimal" />
+      <MemberSignature Language="F#" Value="member this.MaximumResult : decimal" Usage="System.Xml.Xsl.Runtime.DecimalAggregator.MaximumResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal MaximumResult { System::Decimal get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -174,6 +195,9 @@
       <MemberSignature Language="C#" Value="public void Minimum (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Minimum(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.DecimalAggregator.Minimum(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Minimum (value As Decimal)" />
+      <MemberSignature Language="F#" Value="member this.Minimum : decimal -&gt; unit" Usage="decimalAggregator.Minimum value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Minimum(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -200,6 +224,9 @@
       <MemberSignature Language="C#" Value="public decimal MinimumResult { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Decimal MinimumResult" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.DecimalAggregator.MinimumResult" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinimumResult As Decimal" />
+      <MemberSignature Language="F#" Value="member this.MinimumResult : decimal" Usage="System.Xml.Xsl.Runtime.DecimalAggregator.MinimumResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal MinimumResult { System::Decimal get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -223,6 +250,9 @@
       <MemberSignature Language="C#" Value="public void Sum (decimal value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Sum(valuetype System.Decimal value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.DecimalAggregator.Sum(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Sum (value As Decimal)" />
+      <MemberSignature Language="F#" Value="member this.Sum : decimal -&gt; unit" Usage="decimalAggregator.Sum value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Sum(System::Decimal value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -249,6 +279,9 @@
       <MemberSignature Language="C#" Value="public decimal SumResult { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Decimal SumResult" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.Runtime.DecimalAggregator.SumResult" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SumResult As Decimal" />
+      <MemberSignature Language="F#" Value="member this.SumResult : decimal" Usage="System.Xml.Xsl.Runtime.DecimalAggregator.SumResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Decimal SumResult { System::Decimal get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

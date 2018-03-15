@@ -1,7 +1,10 @@
-<Type Name="IWrappedMember" FullName="Microsoft.JScript.IWrappedMember">
+﻿<Type Name="IWrappedMember" FullName="Microsoft.JScript.IWrappedMember">
   <TypeSignature Language="C#" Value="public interface IWrappedMember" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWrappedMember" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IWrappedMember" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWrappedMember" />
+  <TypeSignature Language="F#" Value="type IWrappedMember = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWrappedMember" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public object GetWrappedObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetWrappedObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IWrappedMember.GetWrappedObject" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetWrappedObject () As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetWrappedObject : unit -&gt; obj" Usage="iWrappedMember.GetWrappedObject " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetWrappedObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

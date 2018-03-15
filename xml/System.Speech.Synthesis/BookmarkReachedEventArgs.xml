@@ -1,7 +1,10 @@
-<Type Name="BookmarkReachedEventArgs" FullName="System.Speech.Synthesis.BookmarkReachedEventArgs">
+﻿<Type Name="BookmarkReachedEventArgs" FullName="System.Speech.Synthesis.BookmarkReachedEventArgs">
   <TypeSignature Language="C#" Value="public class BookmarkReachedEventArgs : System.Speech.Synthesis.PromptEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BookmarkReachedEventArgs extends System.Speech.Synthesis.PromptEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.BookmarkReachedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class BookmarkReachedEventArgs&#xA;Inherits PromptEventArgs" />
+  <TypeSignature Language="F#" Value="type BookmarkReachedEventArgs = class&#xA;    inherit PromptEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BookmarkReachedEventArgs : System::Speech::Synthesis::PromptEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,6 +92,9 @@ namespace SampleSynthesis
       <MemberSignature Language="C#" Value="public TimeSpan AudioPosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan AudioPosition" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.BookmarkReachedEventArgs.AudioPosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AudioPosition As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.AudioPosition : TimeSpan" Usage="System.Speech.Synthesis.BookmarkReachedEventArgs.AudioPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan AudioPosition { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -107,6 +113,9 @@ namespace SampleSynthesis
       <MemberSignature Language="C#" Value="public string Bookmark { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Bookmark" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Synthesis.BookmarkReachedEventArgs.Bookmark" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bookmark As String" />
+      <MemberSignature Language="F#" Value="member this.Bookmark : string" Usage="System.Speech.Synthesis.BookmarkReachedEventArgs.Bookmark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Bookmark { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

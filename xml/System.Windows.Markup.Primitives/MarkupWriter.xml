@@ -1,7 +1,10 @@
-<Type Name="MarkupWriter" FullName="System.Windows.Markup.Primitives.MarkupWriter">
+﻿<Type Name="MarkupWriter" FullName="System.Windows.Markup.Primitives.MarkupWriter">
   <TypeSignature Language="C#" Value="public sealed class MarkupWriter : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MarkupWriter extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.Primitives.MarkupWriter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MarkupWriter&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type MarkupWriter = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MarkupWriter sealed : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,7 +36,13 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Primitives.MarkupWriter.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="markupWriter.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,10 +56,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetMarkupObjectFor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of a <see cref="T:System.Windows.Markup.Primitives.MarkupObject" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetMarkupObjectFor">
       <MemberSignature Language="C#" Value="public static System.Windows.Markup.Primitives.MarkupObject GetMarkupObjectFor (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Markup.Primitives.MarkupObject GetMarkupObjectFor(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Primitives.MarkupWriter.GetMarkupObjectFor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMarkupObjectFor (instance As Object) As MarkupObject" />
+      <MemberSignature Language="F#" Value="static member GetMarkupObjectFor : obj -&gt; System.Windows.Markup.Primitives.MarkupObject" Usage="System.Windows.Markup.Primitives.MarkupWriter.GetMarkupObjectFor instance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Markup::Primitives::MarkupObject ^ GetMarkupObjectFor(System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -75,6 +96,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Markup.Primitives.MarkupObject GetMarkupObjectFor (object instance, System.Windows.Markup.XamlDesignerSerializationManager manager);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Markup.Primitives.MarkupObject GetMarkupObjectFor(object instance, class System.Windows.Markup.XamlDesignerSerializationManager manager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.Primitives.MarkupWriter.GetMarkupObjectFor(System.Object,System.Windows.Markup.XamlDesignerSerializationManager)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetMarkupObjectFor (instance As Object, manager As XamlDesignerSerializationManager) As MarkupObject" />
+      <MemberSignature Language="F#" Value="static member GetMarkupObjectFor : obj * System.Windows.Markup.XamlDesignerSerializationManager -&gt; System.Windows.Markup.Primitives.MarkupObject" Usage="System.Windows.Markup.Primitives.MarkupWriter.GetMarkupObjectFor (instance, manager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Markup::Primitives::MarkupObject ^ GetMarkupObjectFor(System::Object ^ instance, System::Windows::Markup::XamlDesignerSerializationManager ^ manager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -97,14 +121,5 @@
           <paramref name="instance" /> or <paramref name="manager" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetMarkupObjectFor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of a <see cref="T:System.Windows.Markup.Primitives.MarkupObject" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

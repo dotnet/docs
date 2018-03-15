@@ -1,7 +1,10 @@
-<Type Name="CmsRecipientEnumerator" FullName="System.Security.Cryptography.Pkcs.CmsRecipientEnumerator">
+﻿<Type Name="CmsRecipientEnumerator" FullName="System.Security.Cryptography.Pkcs.CmsRecipientEnumerator">
   <TypeSignature Language="C#" Value="public sealed class CmsRecipientEnumerator : System.Collections.IEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CmsRecipientEnumerator extends System.Object implements class System.Collections.IEnumerator" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CmsRecipientEnumerator&#xA;Implements IEnumerator" />
+  <TypeSignature Language="F#" Value="type CmsRecipientEnumerator = class&#xA;    interface IEnumerator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CmsRecipientEnumerator sealed : System::Collections::IEnumerator" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Pkcs.CmsRecipient Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Pkcs.CmsRecipient Current" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator.Current" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Current As CmsRecipient" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Security.Cryptography.Pkcs.CmsRecipient" Usage="System.Security.Cryptography.Pkcs.CmsRecipientEnumerator.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Pkcs::CmsRecipient ^ Current { System::Security::Cryptography::Pkcs::CmsRecipient ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
@@ -57,7 +63,13 @@
       <MemberSignature Language="C#" Value="public bool MoveNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MoveNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator.MoveNext" />
+      <MemberSignature Language="VB.NET" Value="Public Function MoveNext () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member MoveNext : unit -&gt; bool&#xA;override this.MoveNext : unit -&gt; bool" Usage="cmsRecipientEnumerator.MoveNext " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool MoveNext();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.MoveNext</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,7 +96,13 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="cmsRecipientEnumerator.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerator.Reset</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -109,7 +127,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.IEnumerator.Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IEnumerator.Current" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Pkcs.CmsRecipientEnumerator.System#Collections#IEnumerator#Current" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Current As Object Implements IEnumerator.Current" />
+      <MemberSignature Language="F#" Usage="System.Security.Cryptography.Pkcs.CmsRecipientEnumerator.System.Collections.IEnumerator.Current" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IEnumerator.Current { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IEnumerator.Current</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Pkcs</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

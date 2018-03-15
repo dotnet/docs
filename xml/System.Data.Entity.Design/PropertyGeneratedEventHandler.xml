@@ -1,7 +1,10 @@
-<Type Name="PropertyGeneratedEventHandler" FullName="System.Data.Entity.Design.PropertyGeneratedEventHandler">
+﻿<Type Name="PropertyGeneratedEventHandler" FullName="System.Data.Entity.Design.PropertyGeneratedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void PropertyGeneratedEventHandler(object sender, PropertyGeneratedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyGeneratedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.PropertyGeneratedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub PropertyGeneratedEventHandler(sender As Object, e As PropertyGeneratedEventArgs)" />
+  <TypeSignature Language="F#" Value="type PropertyGeneratedEventHandler = delegate of obj * PropertyGeneratedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void PropertyGeneratedEventHandler(System::Object ^ sender, PropertyGeneratedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

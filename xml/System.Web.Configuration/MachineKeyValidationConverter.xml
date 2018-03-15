@@ -1,7 +1,10 @@
-<Type Name="MachineKeyValidationConverter" FullName="System.Web.Configuration.MachineKeyValidationConverter">
+﻿<Type Name="MachineKeyValidationConverter" FullName="System.Web.Configuration.MachineKeyValidationConverter">
   <TypeSignature Language="C#" Value="public sealed class MachineKeyValidationConverter : System.Configuration.ConfigurationConverterBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MachineKeyValidationConverter extends System.Configuration.ConfigurationConverterBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.MachineKeyValidationConverter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MachineKeyValidationConverter&#xA;Inherits ConfigurationConverterBase" />
+  <TypeSignature Language="F#" Value="type MachineKeyValidationConverter = class&#xA;    inherit ConfigurationConverterBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MachineKeyValidationConverter sealed : System::Configuration::ConfigurationConverterBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,8 @@
       <MemberSignature Language="C#" Value="public MachineKeyValidationConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.MachineKeyValidationConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MachineKeyValidationConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -43,6 +48,9 @@
       <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext ctx, System.Globalization.CultureInfo ci, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext ctx, class System.Globalization.CultureInfo ci, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.MachineKeyValidationConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFrom (ctx As ITypeDescriptorContext, ci As CultureInfo, data As Object) As Object" />
+      <MemberSignature Language="F#" Value="override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="machineKeyValidationConverter.ConvertFrom (ctx, ci, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ ctx, System::Globalization::CultureInfo ^ ci, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext ctx, System.Globalization.CultureInfo ci, object value, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext ctx, class System.Globalization.CultureInfo ci, object value, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.MachineKeyValidationConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberSignature Language="F#" Value="override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="machineKeyValidationConverter.ConvertTo (ctx, ci, value, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertTo(System::ComponentModel::ITypeDescriptorContext ^ ctx, System::Globalization::CultureInfo ^ ci, System::Object ^ value, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

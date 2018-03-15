@@ -1,7 +1,10 @@
-<Type Name="EventProviderTraceListener" FullName="System.Diagnostics.Eventing.EventProviderTraceListener">
+﻿<Type Name="EventProviderTraceListener" FullName="System.Diagnostics.Eventing.EventProviderTraceListener">
   <TypeSignature Language="C#" Value="public class EventProviderTraceListener : System.Diagnostics.TraceListener" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventProviderTraceListener extends System.Diagnostics.TraceListener" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.EventProviderTraceListener" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventProviderTraceListener&#xA;Inherits TraceListener" />
+  <TypeSignature Language="F#" Value="type EventProviderTraceListener = class&#xA;    inherit TraceListener" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventProviderTraceListener : System::Diagnostics::TraceListener" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -74,10 +77,22 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
     <altmember cref="T:System.Diagnostics.TraceListener" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.EventProviderTraceListener" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventProviderTraceListener (string providerId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string providerId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProviderTraceListener.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (providerId As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.EventProviderTraceListener : string -&gt; System.Diagnostics.Eventing.EventProviderTraceListener" Usage="new System.Diagnostics.Eventing.EventProviderTraceListener providerId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventProviderTraceListener(System::String ^ providerId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -96,6 +111,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="public EventProviderTraceListener (string providerId, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string providerId, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProviderTraceListener.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (providerId As String, name As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.EventProviderTraceListener : string * string -&gt; System.Diagnostics.Eventing.EventProviderTraceListener" Usage="new System.Diagnostics.Eventing.EventProviderTraceListener (providerId, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventProviderTraceListener(System::String ^ providerId, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -116,6 +134,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="public EventProviderTraceListener (string providerId, string name, string delimiter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string providerId, string name, string delimiter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProviderTraceListener.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (providerId As String, name As String, delimiter As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Eventing.EventProviderTraceListener : string * string * string -&gt; System.Diagnostics.Eventing.EventProviderTraceListener" Usage="new System.Diagnostics.Eventing.EventProviderTraceListener (providerId, name, delimiter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventProviderTraceListener(System::String ^ providerId, System::String ^ name, System::String ^ delimiter);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -146,6 +167,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="public override void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProviderTraceListener.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Close ()" />
+      <MemberSignature Language="F#" Value="override this.Close : unit -&gt; unit" Usage="eventProviderTraceListener.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -164,6 +188,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="public string Delimiter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Delimiter" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventProviderTraceListener.Delimiter" />
+      <MemberSignature Language="VB.NET" Value="Public Property Delimiter As String" />
+      <MemberSignature Language="F#" Value="member this.Delimiter : string with get, set" Usage="System.Diagnostics.Eventing.EventProviderTraceListener.Delimiter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Delimiter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -197,6 +224,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="public override void Fail (string message, string detailMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Fail(string message, string detailMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProviderTraceListener.Fail(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Fail (message As String, detailMessage As String)" />
+      <MemberSignature Language="F#" Value="override this.Fail : string * string -&gt; unit" Usage="eventProviderTraceListener.Fail (message, detailMessage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Fail(System::String ^ message, System::String ^ detailMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -221,6 +251,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="public override sealed void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProviderTraceListener.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Flush ()" />
+      <MemberSignature Language="F#" Value="override this.Flush : unit -&gt; unit" Usage="eventProviderTraceListener.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -239,6 +272,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="protected override string[] GetSupportedAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string[] GetSupportedAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProviderTraceListener.GetSupportedAttributes" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetSupportedAttributes () As String()" />
+      <MemberSignature Language="F#" Value="override this.GetSupportedAttributes : unit -&gt; string[]" Usage="eventProviderTraceListener.GetSupportedAttributes " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::String ^&gt; ^ GetSupportedAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -259,6 +295,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="public override sealed bool IsThreadSafe { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsThreadSafe" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.EventProviderTraceListener.IsThreadSafe" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property IsThreadSafe As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsThreadSafe : bool" Usage="System.Diagnostics.Eventing.EventProviderTraceListener.IsThreadSafe" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsThreadSafe { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -279,6 +318,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="public override sealed void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProviderTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, data As Object)" />
+      <MemberSignature Language="F#" Value="override this.TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj -&gt; unit" Usage="eventProviderTraceListener.TraceData (eventCache, source, eventType, id, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -309,6 +351,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="public override sealed void TraceData (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, params object[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceData(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, object[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProviderTraceListener.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub TraceData (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, ParamArray data As Object())" />
+      <MemberSignature Language="F#" Value="override this.TraceData : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * obj[] -&gt; unit" Usage="eventProviderTraceListener.TraceData (eventCache, source, eventType, id, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceData(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, ... cli::array &lt;System::Object ^&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -345,6 +390,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="public override sealed void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProviderTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer)" />
+      <MemberSignature Language="F#" Value="override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int -&gt; unit" Usage="eventProviderTraceListener.TraceEvent (eventCache, source, eventType, id)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -373,6 +421,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="public override sealed void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProviderTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, message As String)" />
+      <MemberSignature Language="F#" Value="override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string -&gt; unit" Usage="eventProviderTraceListener.TraceEvent (eventCache, source, eventType, id, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -403,6 +454,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="public override sealed void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType eventType, int id, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType eventType, int32 id, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProviderTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub TraceEvent (eventCache As TraceEventCache, source As String, eventType As TraceEventType, id As Integer, format As String, ParamArray args As Object())" />
+      <MemberSignature Language="F#" Value="override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string * obj[] -&gt; unit" Usage="eventProviderTraceListener.TraceEvent (eventCache, source, eventType, id, format, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType eventType, int id, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -441,6 +495,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="public override sealed void TraceTransfer (System.Diagnostics.TraceEventCache eventCache, string source, int id, string message, Guid relatedActivityId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceTransfer(class System.Diagnostics.TraceEventCache eventCache, string source, int32 id, string message, valuetype System.Guid relatedActivityId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProviderTraceListener.TraceTransfer(System.Diagnostics.TraceEventCache,System.String,System.Int32,System.String,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub TraceTransfer (eventCache As TraceEventCache, source As String, id As Integer, message As String, relatedActivityId As Guid)" />
+      <MemberSignature Language="F#" Value="override this.TraceTransfer : System.Diagnostics.TraceEventCache * string * int * string * Guid -&gt; unit" Usage="eventProviderTraceListener.TraceTransfer (eventCache, source, id, message, relatedActivityId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceTransfer(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, int id, System::String ^ message, Guid relatedActivityId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -476,6 +533,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="public override sealed void Write (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProviderTraceListener.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Write (message As String)" />
+      <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="eventProviderTraceListener.Write message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -498,6 +558,9 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
       <MemberSignature Language="C#" Value="public override sealed void WriteLine (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Eventing.EventProviderTraceListener.WriteLine(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub WriteLine (message As String)" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string -&gt; unit" Usage="eventProviderTraceListener.WriteLine message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -516,14 +579,5 @@ private static Guid providerId = new Guid("{B3F0C8FC-E8A8-4868-8901-1465E8A2F41B
         <altmember cref="M:System.Diagnostics.TraceListener.WriteLine(System.String)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.Eventing.EventProviderTraceListener" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

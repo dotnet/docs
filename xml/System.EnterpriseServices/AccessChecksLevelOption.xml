@@ -1,7 +1,10 @@
-<Type Name="AccessChecksLevelOption" FullName="System.EnterpriseServices.AccessChecksLevelOption">
+﻿<Type Name="AccessChecksLevelOption" FullName="System.EnterpriseServices.AccessChecksLevelOption">
   <TypeSignature Language="C#" Value="public enum AccessChecksLevelOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AccessChecksLevelOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.AccessChecksLevelOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AccessChecksLevelOption" />
+  <TypeSignature Language="F#" Value="type AccessChecksLevelOption = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AccessChecksLevelOption" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="Application" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.AccessChecksLevelOption Application = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.AccessChecksLevelOption.Application" />
+      <MemberSignature Language="VB.NET" Value="Application" />
+      <MemberSignature Language="F#" Value="Application = 0" Usage="System.EnterpriseServices.AccessChecksLevelOption.Application" />
+      <MemberSignature Language="C++ CLI" Value="Application" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -37,6 +43,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.AccessChecksLevelOption</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Enables access checks only at the process level. No access checks are made at the component, interface, or method level.</summary>
       </Docs>
@@ -45,6 +52,9 @@
       <MemberSignature Language="C#" Value="ApplicationComponent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.EnterpriseServices.AccessChecksLevelOption ApplicationComponent = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.EnterpriseServices.AccessChecksLevelOption.ApplicationComponent" />
+      <MemberSignature Language="VB.NET" Value="ApplicationComponent" />
+      <MemberSignature Language="F#" Value="ApplicationComponent = 1" Usage="System.EnterpriseServices.AccessChecksLevelOption.ApplicationComponent" />
+      <MemberSignature Language="C++ CLI" Value="ApplicationComponent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -53,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.EnterpriseServices.AccessChecksLevelOption</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Enables access checks at every level on calls into the application.</summary>
       </Docs>

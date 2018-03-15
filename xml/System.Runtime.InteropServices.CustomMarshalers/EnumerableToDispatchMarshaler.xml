@@ -1,7 +1,10 @@
-<Type Name="EnumerableToDispatchMarshaler" FullName="System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler">
+﻿<Type Name="EnumerableToDispatchMarshaler" FullName="System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler">
   <TypeSignature Language="C#" Value="public class EnumerableToDispatchMarshaler : System.Runtime.InteropServices.ICustomMarshaler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EnumerableToDispatchMarshaler extends System.Object implements class System.Runtime.InteropServices.ICustomMarshaler" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler" />
+  <TypeSignature Language="VB.NET" Value="Public Class EnumerableToDispatchMarshaler&#xA;Implements ICustomMarshaler" />
+  <TypeSignature Language="F#" Value="type EnumerableToDispatchMarshaler = class&#xA;    interface ICustomMarshaler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EnumerableToDispatchMarshaler : System::Runtime::InteropServices::ICustomMarshaler" />
   <AssemblyInfo>
     <AssemblyName>CustomMarshalers</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public virtual void CleanUpManagedData (object pManagedObj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CleanUpManagedData(object pManagedObj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler.CleanUpManagedData(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub CleanUpManagedData (pManagedObj As Object)" />
+      <MemberSignature Language="F#" Value="abstract member CleanUpManagedData : obj -&gt; unit&#xA;override this.CleanUpManagedData : obj -&gt; unit" Usage="enumerableToDispatchMarshaler.CleanUpManagedData pManagedObj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CleanUpManagedData(System::Object ^ pManagedObj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
@@ -58,6 +64,9 @@
       <MemberSignature Language="C#" Value="public virtual void CleanUpNativeData (IntPtr pNativeData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CleanUpNativeData(native int pNativeData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler.CleanUpNativeData(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub CleanUpNativeData (pNativeData As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member CleanUpNativeData : nativeint -&gt; unit&#xA;override this.CleanUpNativeData : nativeint -&gt; unit" Usage="enumerableToDispatchMarshaler.CleanUpNativeData pNativeData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CleanUpNativeData(IntPtr pNativeData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
@@ -86,6 +95,9 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.InteropServices.ICustomMarshaler GetInstance (string pstrCookie);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.InteropServices.ICustomMarshaler GetInstance(string pstrCookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler.GetInstance(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetInstance (pstrCookie As String) As ICustomMarshaler" />
+      <MemberSignature Language="F#" Value="static member GetInstance : string -&gt; System.Runtime.InteropServices.ICustomMarshaler" Usage="System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler.GetInstance pstrCookie" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::InteropServices::ICustomMarshaler ^ GetInstance(System::String ^ pstrCookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
@@ -115,6 +127,9 @@
       <MemberSignature Language="C#" Value="public virtual int GetNativeDataSize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetNativeDataSize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler.GetNativeDataSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetNativeDataSize () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetNativeDataSize : unit -&gt; int&#xA;override this.GetNativeDataSize : unit -&gt; int" Usage="enumerableToDispatchMarshaler.GetNativeDataSize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetNativeDataSize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
@@ -141,6 +156,9 @@
       <MemberSignature Language="C#" Value="public virtual IntPtr MarshalManagedToNative (object pManagedObj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int MarshalManagedToNative(object pManagedObj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler.MarshalManagedToNative(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function MarshalManagedToNative (pManagedObj As Object) As IntPtr" />
+      <MemberSignature Language="F#" Value="abstract member MarshalManagedToNative : obj -&gt; nativeint&#xA;override this.MarshalManagedToNative : obj -&gt; nativeint" Usage="enumerableToDispatchMarshaler.MarshalManagedToNative pManagedObj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual IntPtr MarshalManagedToNative(System::Object ^ pManagedObj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>
@@ -172,6 +190,9 @@
       <MemberSignature Language="C#" Value="public virtual object MarshalNativeToManaged (IntPtr pNativeData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object MarshalNativeToManaged(native int pNativeData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.CustomMarshalers.EnumerableToDispatchMarshaler.MarshalNativeToManaged(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function MarshalNativeToManaged (pNativeData As IntPtr) As Object" />
+      <MemberSignature Language="F#" Value="abstract member MarshalNativeToManaged : nativeint -&gt; obj&#xA;override this.MarshalNativeToManaged : nativeint -&gt; obj" Usage="enumerableToDispatchMarshaler.MarshalNativeToManaged pNativeData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ MarshalNativeToManaged(IntPtr pNativeData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>CustomMarshalers</AssemblyName>

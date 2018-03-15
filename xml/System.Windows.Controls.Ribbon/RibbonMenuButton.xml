@@ -1,7 +1,10 @@
-<Type Name="RibbonMenuButton" FullName="System.Windows.Controls.Ribbon.RibbonMenuButton">
+﻿<Type Name="RibbonMenuButton" FullName="System.Windows.Controls.Ribbon.RibbonMenuButton">
   <TypeSignature Language="C#" Value="public class RibbonMenuButton : System.Windows.Controls.Menu" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi RibbonMenuButton extends System.Windows.Controls.Menu" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonMenuButton" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonMenuButton&#xA;Inherits Menu" />
+  <TypeSignature Language="F#" Value="type RibbonMenuButton = class&#xA;    inherit Menu" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonMenuButton : System::Windows::Controls::Menu" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +64,8 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public RibbonMenuButton ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonMenuButton();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -76,6 +81,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public bool CanAddToQuickAccessToolBarDirectly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanAddToQuickAccessToolBarDirectly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.CanAddToQuickAccessToolBarDirectly" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanAddToQuickAccessToolBarDirectly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanAddToQuickAccessToolBarDirectly : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.CanAddToQuickAccessToolBarDirectly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanAddToQuickAccessToolBarDirectly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -109,6 +117,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CanAddToQuickAccessToolBarDirectlyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CanAddToQuickAccessToolBarDirectlyProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.CanAddToQuickAccessToolBarDirectlyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanAddToQuickAccessToolBarDirectlyProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CanAddToQuickAccessToolBarDirectlyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.CanAddToQuickAccessToolBarDirectlyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanAddToQuickAccessToolBarDirectlyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -126,6 +137,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public bool CanUserResizeHorizontally { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanUserResizeHorizontally" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.CanUserResizeHorizontally" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanUserResizeHorizontally As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanUserResizeHorizontally : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.CanUserResizeHorizontally" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanUserResizeHorizontally { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -159,6 +173,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CanUserResizeHorizontallyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CanUserResizeHorizontallyProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.CanUserResizeHorizontallyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanUserResizeHorizontallyProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CanUserResizeHorizontallyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.CanUserResizeHorizontallyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanUserResizeHorizontallyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -176,6 +193,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public bool CanUserResizeVertically { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanUserResizeVertically" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.CanUserResizeVertically" />
+      <MemberSignature Language="VB.NET" Value="Public Property CanUserResizeVertically As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanUserResizeVertically : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.CanUserResizeVertically" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanUserResizeVertically { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -209,6 +229,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CanUserResizeVerticallyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CanUserResizeVerticallyProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.CanUserResizeVerticallyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanUserResizeVerticallyProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CanUserResizeVerticallyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.CanUserResizeVerticallyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanUserResizeVerticallyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -226,6 +249,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected override void ClearContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.ClearContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearContainerForItemOverride (element As DependencyObject, item As Object)" />
+      <MemberSignature Language="F#" Value="override this.ClearContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="ribbonMenuButton.ClearContainerForItemOverride (element, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -256,6 +282,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.RibbonControlSizeDefinition ControlSizeDefinition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Ribbon.RibbonControlSizeDefinition ControlSizeDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.ControlSizeDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlSizeDefinition As RibbonControlSizeDefinition" />
+      <MemberSignature Language="F#" Value="member this.ControlSizeDefinition : System.Windows.Controls.Ribbon.RibbonControlSizeDefinition with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.ControlSizeDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ ControlSizeDefinition { System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ get(); void set(System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -289,6 +318,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ControlSizeDefinitionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ControlSizeDefinitionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.ControlSizeDefinitionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ControlSizeDefinitionProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ControlSizeDefinitionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.ControlSizeDefinitionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ControlSizeDefinitionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -306,6 +338,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public event EventHandler DropDownClosed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DropDownClosed" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Ribbon.RibbonMenuButton.DropDownClosed" />
+      <MemberSignature Language="VB.NET" Value="Public Event DropDownClosed As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DropDownClosed : EventHandler " Usage="member this.DropDownClosed : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DropDownClosed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -323,6 +358,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public double DropDownHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 DropDownHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.DropDownHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property DropDownHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.DropDownHeight : double with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.DropDownHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DropDownHeight { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -355,6 +393,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DropDownHeightProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DropDownHeightProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.DropDownHeightProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DropDownHeightProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DropDownHeightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.DropDownHeightProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DropDownHeightProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -372,6 +413,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public event EventHandler DropDownOpened;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DropDownOpened" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Ribbon.RibbonMenuButton.DropDownOpened" />
+      <MemberSignature Language="VB.NET" Value="Public Event DropDownOpened As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DropDownOpened : EventHandler " Usage="member this.DropDownOpened : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DropDownOpened;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -389,6 +433,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush FocusedBackground { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush FocusedBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.FocusedBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Property FocusedBackground As Brush" />
+      <MemberSignature Language="F#" Value="member this.FocusedBackground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.FocusedBackground" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ FocusedBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -421,6 +468,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FocusedBackgroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FocusedBackgroundProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.FocusedBackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FocusedBackgroundProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FocusedBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.FocusedBackgroundProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FocusedBackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -438,6 +488,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush FocusedBorderBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush FocusedBorderBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.FocusedBorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property FocusedBorderBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.FocusedBorderBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.FocusedBorderBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ FocusedBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -470,6 +523,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty FocusedBorderBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty FocusedBorderBrushProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.FocusedBorderBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FocusedBorderBrushProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FocusedBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.FocusedBorderBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ FocusedBorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -487,6 +543,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected override System.Windows.DependencyObject GetContainerForItemOverride ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.DependencyObject GetContainerForItemOverride() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.GetContainerForItemOverride" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetContainerForItemOverride () As DependencyObject" />
+      <MemberSignature Language="F#" Value="override this.GetContainerForItemOverride : unit -&gt; System.Windows.DependencyObject" Usage="ribbonMenuButton.GetContainerForItemOverride " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::DependencyObject ^ GetContainerForItemOverride();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -506,6 +565,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected override void HandleMouseButton (System.Windows.Input.MouseButtonEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void HandleMouseButton(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.HandleMouseButton(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HandleMouseButton (e As MouseButtonEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.HandleMouseButton : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="ribbonMenuButton.HandleMouseButton e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HandleMouseButton(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -531,9 +593,12 @@ Ribbon menu button control with drop-down open
       </Docs>
     </Member>
     <Member MemberName="HandlesScrolling">
-      <MemberSignature Language="C#" Value="protected override bool HandlesScrolling { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override bool HandlesScrolling { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HandlesScrolling" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.HandlesScrolling" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property HandlesScrolling As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HandlesScrolling : bool" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.HandlesScrolling" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool HandlesScrolling { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -553,6 +618,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public bool HasGallery { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasGallery" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.HasGallery" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasGallery As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasGallery : bool" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.HasGallery" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasGallery { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -586,6 +654,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HasGalleryProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HasGalleryProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.HasGalleryProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HasGalleryProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HasGalleryProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.HasGalleryProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HasGalleryProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -603,6 +674,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public bool IsDropDownOpen { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDropDownOpen" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.IsDropDownOpen" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDropDownOpen As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDropDownOpen : bool with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.IsDropDownOpen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDropDownOpen { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -636,6 +710,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsDropDownOpenProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsDropDownOpenProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.IsDropDownOpenProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsDropDownOpenProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsDropDownOpenProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.IsDropDownOpenProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsDropDownOpenProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -653,6 +730,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public bool IsDropDownPositionedAbove { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDropDownPositionedAbove" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.IsDropDownPositionedAbove" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDropDownPositionedAbove As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDropDownPositionedAbove : bool" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.IsDropDownPositionedAbove" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDropDownPositionedAbove { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -687,6 +767,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsDropDownPositionedAboveProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsDropDownPositionedAboveProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.IsDropDownPositionedAboveProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsDropDownPositionedAboveProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsDropDownPositionedAboveProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.IsDropDownPositionedAboveProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsDropDownPositionedAboveProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -704,6 +787,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public bool IsInControlGroup { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInControlGroup" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.IsInControlGroup" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInControlGroup As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInControlGroup : bool" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.IsInControlGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInControlGroup { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -737,6 +823,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsInControlGroupProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsInControlGroupProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.IsInControlGroupProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInControlGroupProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInControlGroupProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.IsInControlGroupProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInControlGroupProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -754,6 +843,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public bool IsInQuickAccessToolBar { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInQuickAccessToolBar" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.IsInQuickAccessToolBar" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInQuickAccessToolBar As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInQuickAccessToolBar : bool" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.IsInQuickAccessToolBar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInQuickAccessToolBar { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -787,6 +879,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsInQuickAccessToolBarProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsInQuickAccessToolBarProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.IsInQuickAccessToolBarProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInQuickAccessToolBarProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInQuickAccessToolBarProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.IsInQuickAccessToolBarProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInQuickAccessToolBarProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -804,6 +899,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected override bool IsItemItsOwnContainerOverride (object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsItemItsOwnContainerOverride(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.IsItemItsOwnContainerOverride(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsItemItsOwnContainerOverride (item As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsItemItsOwnContainerOverride : obj -&gt; bool" Usage="ribbonMenuButton.IsItemItsOwnContainerOverride item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsItemItsOwnContainerOverride(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -827,6 +925,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public string KeyTip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeyTip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.KeyTip" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyTip As String" />
+      <MemberSignature Language="F#" Value="member this.KeyTip : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.KeyTip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeyTip { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -862,6 +963,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KeyTipProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeyTipProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.KeyTipProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyTipProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable KeyTipProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.KeyTipProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeyTipProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -879,6 +983,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public string Label { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Label" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.Label" />
+      <MemberSignature Language="VB.NET" Value="Public Property Label As String" />
+      <MemberSignature Language="F#" Value="member this.Label : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.Label" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Label { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -912,6 +1019,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LabelProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LabelProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.LabelProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LabelProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable LabelProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.LabelProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LabelProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -929,6 +1039,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource LargeImageSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource LargeImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.LargeImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property LargeImageSource As ImageSource" />
+      <MemberSignature Language="F#" Value="member this.LargeImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.LargeImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ LargeImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -969,6 +1082,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LargeImageSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LargeImageSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.LargeImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LargeImageSourceProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable LargeImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.LargeImageSourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LargeImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -986,6 +1102,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush MouseOverBackground { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush MouseOverBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.MouseOverBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Property MouseOverBackground As Brush" />
+      <MemberSignature Language="F#" Value="member this.MouseOverBackground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.MouseOverBackground" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ MouseOverBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1018,6 +1137,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MouseOverBackgroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MouseOverBackgroundProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.MouseOverBackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseOverBackgroundProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MouseOverBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.MouseOverBackgroundProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MouseOverBackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1035,6 +1157,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush MouseOverBorderBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush MouseOverBorderBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.MouseOverBorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property MouseOverBorderBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.MouseOverBorderBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.MouseOverBorderBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ MouseOverBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1067,6 +1192,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MouseOverBorderBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MouseOverBorderBrushProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.MouseOverBorderBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MouseOverBorderBrushProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MouseOverBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.MouseOverBorderBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MouseOverBorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1084,6 +1212,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected virtual void OnActivatingKeyTip (System.Windows.Controls.ActivatingKeyTipEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnActivatingKeyTip(class System.Windows.Controls.ActivatingKeyTipEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.OnActivatingKeyTip(System.Windows.Controls.ActivatingKeyTipEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActivatingKeyTip (e As ActivatingKeyTipEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnActivatingKeyTip : System.Windows.Controls.ActivatingKeyTipEventArgs -&gt; unit&#xA;override this.OnActivatingKeyTip : System.Windows.Controls.ActivatingKeyTipEventArgs -&gt; unit" Usage="ribbonMenuButton.OnActivatingKeyTip e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnActivatingKeyTip(System::Windows::Controls::ActivatingKeyTipEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1105,6 +1236,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="ribbonMenuButton.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1130,6 +1264,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="ribbonMenuButton.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1149,6 +1286,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected virtual void OnDismissPopup (System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDismissPopup(class System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.OnDismissPopup(System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDismissPopup (e As RibbonDismissPopupEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDismissPopup : System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs -&gt; unit&#xA;override this.OnDismissPopup : System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs -&gt; unit" Usage="ribbonMenuButton.OnDismissPopup e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDismissPopup(System::Windows::Controls::Ribbon::RibbonDismissPopupEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1177,6 +1317,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected override void OnGotKeyboardFocus (System.Windows.Input.KeyboardFocusChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnGotKeyboardFocus(class System.Windows.Input.KeyboardFocusChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.OnGotKeyboardFocus(System.Windows.Input.KeyboardFocusChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnGotKeyboardFocus (e As KeyboardFocusChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnGotKeyboardFocus : System.Windows.Input.KeyboardFocusChangedEventArgs -&gt; unit" Usage="ribbonMenuButton.OnGotKeyboardFocus e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnGotKeyboardFocus(System::Windows::Input::KeyboardFocusChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1198,6 +1341,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected override void OnIsKeyboardFocusWithinChanged (System.Windows.DependencyPropertyChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnIsKeyboardFocusWithinChanged(valuetype System.Windows.DependencyPropertyChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.OnIsKeyboardFocusWithinChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnIsKeyboardFocusWithinChanged (e As DependencyPropertyChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnIsKeyboardFocusWithinChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="ribbonMenuButton.OnIsKeyboardFocusWithinChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnIsKeyboardFocusWithinChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1226,6 +1372,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Input.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Input.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="ribbonMenuButton.OnKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1247,6 +1396,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected virtual void OnKeyTipAccessed (System.Windows.Controls.KeyTipAccessedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnKeyTipAccessed(class System.Windows.Controls.KeyTipAccessedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.OnKeyTipAccessed(System.Windows.Controls.KeyTipAccessedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnKeyTipAccessed (e As KeyTipAccessedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnKeyTipAccessed : System.Windows.Controls.KeyTipAccessedEventArgs -&gt; unit&#xA;override this.OnKeyTipAccessed : System.Windows.Controls.KeyTipAccessedEventArgs -&gt; unit" Usage="ribbonMenuButton.OnKeyTipAccessed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnKeyTipAccessed(System::Windows::Controls::KeyTipAccessedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1268,6 +1420,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected override void OnKeyUp (System.Windows.Input.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyUp(class System.Windows.Input.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.OnKeyUp(System.Windows.Input.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyUp (e As KeyEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnKeyUp : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="ribbonMenuButton.OnKeyUp e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyUp(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1289,6 +1444,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected override void OnPreviewKeyDown (System.Windows.Input.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreviewKeyDown(class System.Windows.Input.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.OnPreviewKeyDown(System.Windows.Input.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewKeyDown (e As KeyEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPreviewKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="ribbonMenuButton.OnPreviewKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1310,6 +1468,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected override void OnPreviewMouseDown (System.Windows.Input.MouseButtonEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPreviewMouseDown(class System.Windows.Input.MouseButtonEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.OnPreviewMouseDown(System.Windows.Input.MouseButtonEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPreviewMouseDown (e As MouseButtonEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPreviewMouseDown : System.Windows.Input.MouseButtonEventArgs -&gt; unit" Usage="ribbonMenuButton.OnPreviewMouseDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPreviewMouseDown(System::Windows::Input::MouseButtonEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1331,6 +1492,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected override void OnTemplateChanged (System.Windows.Controls.ControlTemplate oldTemplate, System.Windows.Controls.ControlTemplate newTemplate);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnTemplateChanged(class System.Windows.Controls.ControlTemplate oldTemplate, class System.Windows.Controls.ControlTemplate newTemplate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.OnTemplateChanged(System.Windows.Controls.ControlTemplate,System.Windows.Controls.ControlTemplate)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTemplateChanged (oldTemplate As ControlTemplate, newTemplate As ControlTemplate)" />
+      <MemberSignature Language="F#" Value="override this.OnTemplateChanged : System.Windows.Controls.ControlTemplate * System.Windows.Controls.ControlTemplate -&gt; unit" Usage="ribbonMenuButton.OnTemplateChanged (oldTemplate, newTemplate)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTemplateChanged(System::Windows::Controls::ControlTemplate ^ oldTemplate, System::Windows::Controls::ControlTemplate ^ newTemplate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1354,6 +1518,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected override void PrepareContainerForItemOverride (System.Windows.DependencyObject element, object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PrepareContainerForItemOverride(class System.Windows.DependencyObject element, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.PrepareContainerForItemOverride(System.Windows.DependencyObject,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PrepareContainerForItemOverride (element As DependencyObject, item As Object)" />
+      <MemberSignature Language="F#" Value="override this.PrepareContainerForItemOverride : System.Windows.DependencyObject * obj -&gt; unit" Usage="ribbonMenuButton.PrepareContainerForItemOverride (element, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PrepareContainerForItemOverride(System::Windows::DependencyObject ^ element, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1377,6 +1544,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush PressedBackground { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush PressedBackground" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.PressedBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Property PressedBackground As Brush" />
+      <MemberSignature Language="F#" Value="member this.PressedBackground : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.PressedBackground" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ PressedBackground { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1409,6 +1579,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PressedBackgroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PressedBackgroundProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.PressedBackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PressedBackgroundProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PressedBackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.PressedBackgroundProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PressedBackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1426,6 +1599,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush PressedBorderBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush PressedBorderBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.PressedBorderBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property PressedBorderBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.PressedBorderBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.PressedBorderBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ PressedBorderBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1458,6 +1634,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PressedBorderBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PressedBorderBrushProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.PressedBorderBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PressedBorderBrushProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PressedBorderBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.PressedBorderBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PressedBorderBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1475,6 +1654,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.RibbonControlSizeDefinition QuickAccessToolBarControlSizeDefinition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Ribbon.RibbonControlSizeDefinition QuickAccessToolBarControlSizeDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.QuickAccessToolBarControlSizeDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuickAccessToolBarControlSizeDefinition As RibbonControlSizeDefinition" />
+      <MemberSignature Language="F#" Value="member this.QuickAccessToolBarControlSizeDefinition : System.Windows.Controls.Ribbon.RibbonControlSizeDefinition with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.QuickAccessToolBarControlSizeDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ QuickAccessToolBarControlSizeDefinition { System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ get(); void set(System::Windows::Controls::Ribbon::RibbonControlSizeDefinition ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1509,6 +1691,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty QuickAccessToolBarControlSizeDefinitionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty QuickAccessToolBarControlSizeDefinitionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.QuickAccessToolBarControlSizeDefinitionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QuickAccessToolBarControlSizeDefinitionProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable QuickAccessToolBarControlSizeDefinitionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.QuickAccessToolBarControlSizeDefinitionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ QuickAccessToolBarControlSizeDefinitionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1526,6 +1711,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public object QuickAccessToolBarId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object QuickAccessToolBarId" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.QuickAccessToolBarId" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuickAccessToolBarId As Object" />
+      <MemberSignature Language="F#" Value="member this.QuickAccessToolBarId : obj with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.QuickAccessToolBarId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ QuickAccessToolBarId { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1558,6 +1746,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty QuickAccessToolBarIdProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty QuickAccessToolBarIdProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.QuickAccessToolBarIdProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly QuickAccessToolBarIdProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable QuickAccessToolBarIdProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.QuickAccessToolBarIdProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ QuickAccessToolBarIdProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1575,6 +1766,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.Ribbon Ribbon { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Ribbon.Ribbon Ribbon" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.Ribbon" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Ribbon As Ribbon" />
+      <MemberSignature Language="F#" Value="member this.Ribbon : System.Windows.Controls.Ribbon.Ribbon" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.Ribbon" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::Ribbon ^ Ribbon { System::Windows::Controls::Ribbon::Ribbon ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1608,6 +1802,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RibbonProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RibbonProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.RibbonProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RibbonProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RibbonProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.RibbonProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RibbonProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1625,6 +1822,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="protected override bool ShouldApplyItemContainerStyle (System.Windows.DependencyObject container, object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ShouldApplyItemContainerStyle(class System.Windows.DependencyObject container, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonMenuButton.ShouldApplyItemContainerStyle(System.Windows.DependencyObject,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ShouldApplyItemContainerStyle (container As DependencyObject, item As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ShouldApplyItemContainerStyle : System.Windows.DependencyObject * obj -&gt; bool" Usage="ribbonMenuButton.ShouldApplyItemContainerStyle (container, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ShouldApplyItemContainerStyle(System::Windows::DependencyObject ^ container, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1650,6 +1850,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource SmallImageSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource SmallImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.SmallImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property SmallImageSource As ImageSource" />
+      <MemberSignature Language="F#" Value="member this.SmallImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.SmallImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ SmallImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1690,6 +1893,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SmallImageSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SmallImageSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.SmallImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SmallImageSourceProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SmallImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.SmallImageSourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SmallImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1707,6 +1913,9 @@ Ribbon menu button control with drop-down open
       <MemberSignature Language="C#" Value="public string ToolTipDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTipDescription" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipDescription As String" />
+      <MemberSignature Language="F#" Value="member this.ToolTipDescription : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1753,6 +1962,9 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipDescriptionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipDescriptionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipDescriptionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipDescriptionProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipDescriptionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipDescriptionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipDescriptionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1770,6 +1982,9 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public string ToolTipFooterDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTipFooterDescription" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipFooterDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipFooterDescription As String" />
+      <MemberSignature Language="F#" Value="member this.ToolTipFooterDescription : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipFooterDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipFooterDescription { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1816,6 +2031,9 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipFooterDescriptionProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipFooterDescriptionProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipFooterDescriptionProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipFooterDescriptionProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipFooterDescriptionProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipFooterDescriptionProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipFooterDescriptionProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1833,6 +2051,9 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource ToolTipFooterImageSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource ToolTipFooterImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipFooterImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipFooterImageSource As ImageSource" />
+      <MemberSignature Language="F#" Value="member this.ToolTipFooterImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipFooterImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ ToolTipFooterImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1879,6 +2100,9 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipFooterImageSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipFooterImageSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipFooterImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipFooterImageSourceProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipFooterImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipFooterImageSourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipFooterImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1896,6 +2120,9 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public string ToolTipFooterTitle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTipFooterTitle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipFooterTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipFooterTitle As String" />
+      <MemberSignature Language="F#" Value="member this.ToolTipFooterTitle : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipFooterTitle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipFooterTitle { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1942,6 +2169,9 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipFooterTitleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipFooterTitleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipFooterTitleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipFooterTitleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipFooterTitleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipFooterTitleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipFooterTitleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -1959,6 +2189,9 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public System.Windows.Media.ImageSource ToolTipImageSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.ImageSource ToolTipImageSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipImageSource" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipImageSource As ImageSource" />
+      <MemberSignature Language="F#" Value="member this.ToolTipImageSource : System.Windows.Media.ImageSource with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipImageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::ImageSource ^ ToolTipImageSource { System::Windows::Media::ImageSource ^ get(); void set(System::Windows::Media::ImageSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2005,6 +2238,9 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipImageSourceProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipImageSourceProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipImageSourceProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipImageSourceProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipImageSourceProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipImageSourceProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipImageSourceProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2022,6 +2258,9 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public string ToolTipTitle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTipTitle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipTitle As String" />
+      <MemberSignature Language="F#" Value="member this.ToolTipTitle : string with get, set" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipTitle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipTitle { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -2068,6 +2307,9 @@ Enhanced ToolTip
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ToolTipTitleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ToolTipTitleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipTitleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTipTitleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTipTitleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Ribbon.RibbonMenuButton.ToolTipTitleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ToolTipTitleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

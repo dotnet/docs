@@ -1,7 +1,10 @@
-<Type Name="TypeWrapper" FullName="System.Activities.Presentation.View.TypeWrapper">
+﻿<Type Name="TypeWrapper" FullName="System.Activities.Presentation.View.TypeWrapper">
   <TypeSignature Language="C#" Value="public sealed class TypeWrapper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeWrapper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.TypeWrapper" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeWrapper" />
+  <TypeSignature Language="F#" Value="type TypeWrapper = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeWrapper sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypeWrapper.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.Activities.Presentation.View.TypeWrapper.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -44,6 +50,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypeWrapper.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="typeWrapper.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -67,6 +76,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypeWrapper.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="typeWrapper.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -86,6 +98,9 @@
       <MemberSignature Language="C#" Value="public bool IsTypeDefinition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTypeDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypeWrapper.IsTypeDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsTypeDefinition As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTypeDefinition : bool" Usage="System.Activities.Presentation.View.TypeWrapper.IsTypeDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsTypeDefinition { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -105,6 +120,9 @@
       <MemberSignature Language="C#" Value="public object Tag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypeWrapper.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tag As Object" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj" Usage="System.Activities.Presentation.View.TypeWrapper.Tag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -123,6 +141,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypeWrapper.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="typeWrapper.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -142,6 +163,9 @@
       <MemberSignature Language="C#" Value="public Type Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypeWrapper.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Activities.Presentation.View.TypeWrapper.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

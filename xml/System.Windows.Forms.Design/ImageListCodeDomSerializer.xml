@@ -1,7 +1,10 @@
-<Type Name="ImageListCodeDomSerializer" FullName="System.Windows.Forms.Design.ImageListCodeDomSerializer">
+﻿<Type Name="ImageListCodeDomSerializer" FullName="System.Windows.Forms.Design.ImageListCodeDomSerializer">
   <TypeSignature Language="C#" Value="public class ImageListCodeDomSerializer : System.ComponentModel.Design.Serialization.CodeDomSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImageListCodeDomSerializer extends System.ComponentModel.Design.Serialization.CodeDomSerializer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ImageListCodeDomSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class ImageListCodeDomSerializer&#xA;Inherits CodeDomSerializer" />
+  <TypeSignature Language="F#" Value="type ImageListCodeDomSerializer = class&#xA;    inherit CodeDomSerializer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ImageListCodeDomSerializer : System::ComponentModel::Design::Serialization::CodeDomSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public ImageListCodeDomSerializer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ImageListCodeDomSerializer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ImageListCodeDomSerializer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public override object Deserialize (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object codeObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Deserialize(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object codeObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ImageListCodeDomSerializer.Deserialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Deserialize (manager As IDesignerSerializationManager, codeObject As Object) As Object" />
+      <MemberSignature Language="F#" Value="override this.Deserialize : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; obj" Usage="imageListCodeDomSerializer.Deserialize (manager, codeObject)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Deserialize(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ codeObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -67,6 +75,9 @@
       <MemberSignature Language="C#" Value="public override object Serialize (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Serialize(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ImageListCodeDomSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Serialize (manager As IDesignerSerializationManager, value As Object) As Object" />
+      <MemberSignature Language="F#" Value="override this.Serialize : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj -&gt; obj" Usage="imageListCodeDomSerializer.Serialize (manager, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Serialize(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

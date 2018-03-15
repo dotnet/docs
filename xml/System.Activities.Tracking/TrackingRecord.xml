@@ -1,7 +1,10 @@
-<Type Name="TrackingRecord" FullName="System.Activities.Tracking.TrackingRecord">
+﻿<Type Name="TrackingRecord" FullName="System.Activities.Tracking.TrackingRecord">
   <TypeSignature Language="C#" Value="public abstract class TrackingRecord" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TrackingRecord extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Tracking.TrackingRecord" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TrackingRecord" />
+  <TypeSignature Language="F#" Value="type TrackingRecord = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TrackingRecord abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +23,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When implemented in a derived class, creates a new instance of the derived class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected TrackingRecord (System.Activities.Tracking.TrackingRecord record);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Activities.Tracking.TrackingRecord record) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.TrackingRecord.#ctor(System.Activities.Tracking.TrackingRecord)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (record As TrackingRecord)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.TrackingRecord : System.Activities.Tracking.TrackingRecord -&gt; System.Activities.Tracking.TrackingRecord" Usage="new System.Activities.Tracking.TrackingRecord record" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TrackingRecord(System::Activities::Tracking::TrackingRecord ^ record);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -42,6 +57,9 @@
       <MemberSignature Language="C#" Value="protected TrackingRecord (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.TrackingRecord.#ctor(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.TrackingRecord : Guid -&gt; System.Activities.Tracking.TrackingRecord" Usage="new System.Activities.Tracking.TrackingRecord instanceId" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TrackingRecord(Guid instanceId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -60,6 +78,9 @@
       <MemberSignature Language="C#" Value="protected TrackingRecord (Guid instanceId, long recordNumber);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid instanceId, int64 recordNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.TrackingRecord.#ctor(System.Guid,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (instanceId As Guid, recordNumber As Long)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Tracking.TrackingRecord : Guid * int64 -&gt; System.Activities.Tracking.TrackingRecord" Usage="new System.Activities.Tracking.TrackingRecord (instanceId, recordNumber)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TrackingRecord(Guid instanceId, long recordNumber);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -80,6 +101,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,string&gt; Annotations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, string&gt; Annotations" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.TrackingRecord.Annotations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Annotations As IDictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.Annotations : System.Collections.Generic.IDictionary&lt;string, string&gt;" Usage="System.Activities.Tracking.TrackingRecord.Annotations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ Annotations { System::Collections::Generic::IDictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -95,9 +119,12 @@
       </Docs>
     </Member>
     <Member MemberName="Clone">
-      <MemberSignature Language="C#" Value="protected abstract System.Activities.Tracking.TrackingRecord Clone ();" />
+      <MemberSignature Language="C#" Value="protected internal abstract System.Activities.Tracking.TrackingRecord Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Activities.Tracking.TrackingRecord Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.TrackingRecord.Clone" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function Clone () As TrackingRecord" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Activities.Tracking.TrackingRecord" Usage="trackingRecord.Clone " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Activities::Tracking::TrackingRecord ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -117,6 +144,9 @@
       <MemberSignature Language="C#" Value="public DateTime EventTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime EventTime" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.TrackingRecord.EventTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EventTime As DateTime" />
+      <MemberSignature Language="F#" Value="member this.EventTime : DateTime" Usage="System.Activities.Tracking.TrackingRecord.EventTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime EventTime { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -135,6 +165,9 @@
       <MemberSignature Language="C#" Value="public Guid InstanceId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid InstanceId" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.TrackingRecord.InstanceId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceId As Guid" />
+      <MemberSignature Language="F#" Value="member this.InstanceId : Guid" Usage="System.Activities.Tracking.TrackingRecord.InstanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid InstanceId { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -158,6 +191,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.TraceLevel Level { get; protected set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.TraceLevel Level" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.TrackingRecord.Level" />
+      <MemberSignature Language="VB.NET" Value="Public Property Level As TraceLevel" />
+      <MemberSignature Language="F#" Value="member this.Level : System.Diagnostics.TraceLevel with get, set" Usage="System.Activities.Tracking.TrackingRecord.Level" />
+      <MemberSignature Language="C++ CLI" Value="public:  property System::Diagnostics::TraceLevel Level {  public:&#xA;System::Diagnostics::TraceLevel get(); protected:&#xA; void set(System::Diagnostics::TraceLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -176,6 +212,9 @@
       <MemberSignature Language="C#" Value="public long RecordNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 RecordNumber" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Tracking.TrackingRecord.RecordNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RecordNumber As Long" />
+      <MemberSignature Language="F#" Value="member this.RecordNumber : int64" Usage="System.Activities.Tracking.TrackingRecord.RecordNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long RecordNumber { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -199,6 +238,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Tracking.TrackingRecord.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="trackingRecord.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -214,14 +256,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When implemented in a derived class, creates a new instance of the derived class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

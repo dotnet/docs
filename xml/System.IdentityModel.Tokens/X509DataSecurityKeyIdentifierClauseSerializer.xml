@@ -1,7 +1,10 @@
-<Type Name="X509DataSecurityKeyIdentifierClauseSerializer" FullName="System.IdentityModel.Tokens.X509DataSecurityKeyIdentifierClauseSerializer">
+﻿<Type Name="X509DataSecurityKeyIdentifierClauseSerializer" FullName="System.IdentityModel.Tokens.X509DataSecurityKeyIdentifierClauseSerializer">
   <TypeSignature Language="C#" Value="public class X509DataSecurityKeyIdentifierClauseSerializer : System.IdentityModel.Tokens.SecurityKeyIdentifierClauseSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit X509DataSecurityKeyIdentifierClauseSerializer extends System.IdentityModel.Tokens.SecurityKeyIdentifierClauseSerializer" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.X509DataSecurityKeyIdentifierClauseSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class X509DataSecurityKeyIdentifierClauseSerializer&#xA;Inherits SecurityKeyIdentifierClauseSerializer" />
+  <TypeSignature Language="F#" Value="type X509DataSecurityKeyIdentifierClauseSerializer = class&#xA;    inherit SecurityKeyIdentifierClauseSerializer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509DataSecurityKeyIdentifierClauseSerializer : System::IdentityModel::Tokens::SecurityKeyIdentifierClauseSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public X509DataSecurityKeyIdentifierClauseSerializer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509DataSecurityKeyIdentifierClauseSerializer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509DataSecurityKeyIdentifierClauseSerializer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public override bool CanReadKeyIdentifierClause (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanReadKeyIdentifierClause(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509DataSecurityKeyIdentifierClauseSerializer.CanReadKeyIdentifierClause(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanReadKeyIdentifierClause (reader As XmlReader) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanReadKeyIdentifierClause : System.Xml.XmlReader -&gt; bool" Usage="x509DataSecurityKeyIdentifierClauseSerializer.CanReadKeyIdentifierClause reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanReadKeyIdentifierClause(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -59,6 +67,8 @@
       <MemberSignature Language="C#" Value="public override bool CanWriteKeyIdentifierClause (System.IdentityModel.Tokens.SecurityKeyIdentifierClause securityKeyIdentifierClause);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanWriteKeyIdentifierClause(class System.IdentityModel.Tokens.SecurityKeyIdentifierClause securityKeyIdentifierClause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509DataSecurityKeyIdentifierClauseSerializer.CanWriteKeyIdentifierClause(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberSignature Language="F#" Value="override this.CanWriteKeyIdentifierClause : System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; bool" Usage="x509DataSecurityKeyIdentifierClauseSerializer.CanWriteKeyIdentifierClause securityKeyIdentifierClause" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanWriteKeyIdentifierClause(System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ securityKeyIdentifierClause);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -97,6 +107,9 @@
       <MemberSignature Language="C#" Value="public override System.IdentityModel.Tokens.SecurityKeyIdentifierClause ReadKeyIdentifierClause (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.IdentityModel.Tokens.SecurityKeyIdentifierClause ReadKeyIdentifierClause(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509DataSecurityKeyIdentifierClauseSerializer.ReadKeyIdentifierClause(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ReadKeyIdentifierClause (reader As XmlReader) As SecurityKeyIdentifierClause" />
+      <MemberSignature Language="F#" Value="override this.ReadKeyIdentifierClause : System.Xml.XmlReader -&gt; System.IdentityModel.Tokens.SecurityKeyIdentifierClause" Usage="x509DataSecurityKeyIdentifierClauseSerializer.ReadKeyIdentifierClause reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ ReadKeyIdentifierClause(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -130,6 +143,8 @@
       <MemberSignature Language="C#" Value="public override void WriteKeyIdentifierClause (System.Xml.XmlWriter writer, System.IdentityModel.Tokens.SecurityKeyIdentifierClause securityKeyIdentifierClause);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteKeyIdentifierClause(class System.Xml.XmlWriter writer, class System.IdentityModel.Tokens.SecurityKeyIdentifierClause securityKeyIdentifierClause) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509DataSecurityKeyIdentifierClauseSerializer.WriteKeyIdentifierClause(System.Xml.XmlWriter,System.IdentityModel.Tokens.SecurityKeyIdentifierClause)" />
+      <MemberSignature Language="F#" Value="override this.WriteKeyIdentifierClause : System.Xml.XmlWriter * System.IdentityModel.Tokens.SecurityKeyIdentifierClause -&gt; unit" Usage="x509DataSecurityKeyIdentifierClauseSerializer.WriteKeyIdentifierClause (writer, securityKeyIdentifierClause)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteKeyIdentifierClause(System::Xml::XmlWriter ^ writer, System::IdentityModel::Tokens::SecurityKeyIdentifierClause ^ securityKeyIdentifierClause);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

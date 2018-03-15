@@ -1,7 +1,10 @@
-<Type Name="CollectionSynchronizationCallback" FullName="System.Windows.Data.CollectionSynchronizationCallback">
+﻿<Type Name="CollectionSynchronizationCallback" FullName="System.Windows.Data.CollectionSynchronizationCallback">
   <TypeSignature Language="C#" Value="public delegate void CollectionSynchronizationCallback(IEnumerable collection, object context, Action accessMethod, bool writeAccess);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CollectionSynchronizationCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.CollectionSynchronizationCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub CollectionSynchronizationCallback(collection As IEnumerable, context As Object, accessMethod As Action, writeAccess As Boolean)" />
+  <TypeSignature Language="F#" Value="type CollectionSynchronizationCallback = delegate of IEnumerable * obj * Action * bool -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void CollectionSynchronizationCallback(IEnumerable ^ collection, System::Object ^ context, Action ^ accessMethod, bool writeAccess);" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="AssemblyLoadEventHandler" FullName="System.AssemblyLoadEventHandler">
+﻿<Type Name="AssemblyLoadEventHandler" FullName="System.AssemblyLoadEventHandler">
   <TypeSignature Language="C#" Value="public delegate void AssemblyLoadEventHandler(object sender, AssemblyLoadEventArgs args);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AssemblyLoadEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.AssemblyLoadEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub AssemblyLoadEventHandler(sender As Object, args As AssemblyLoadEventArgs)" />
+  <TypeSignature Language="F#" Value="type AssemblyLoadEventHandler = delegate of obj * AssemblyLoadEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void AssemblyLoadEventHandler(System::Object ^ sender, AssemblyLoadEventArgs ^ args);" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

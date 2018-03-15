@@ -1,7 +1,10 @@
-<Type Name="BuildMessageEventArgs" FullName="Microsoft.Build.Framework.BuildMessageEventArgs">
+﻿<Type Name="BuildMessageEventArgs" FullName="Microsoft.Build.Framework.BuildMessageEventArgs">
   <TypeSignature Language="C#" Value="public class BuildMessageEventArgs : Microsoft.Build.Framework.LazyFormattedBuildEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit BuildMessageEventArgs extends Microsoft.Build.Framework.LazyFormattedBuildEventArgs" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.BuildMessageEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class BuildMessageEventArgs&#xA;Inherits LazyFormattedBuildEventArgs" />
+  <TypeSignature Language="F#" Value="type BuildMessageEventArgs = class&#xA;    inherit LazyFormattedBuildEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BuildMessageEventArgs : Microsoft::Build::Framework::LazyFormattedBuildEventArgs" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildMessageEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected BuildMessageEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildMessageEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BuildMessageEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -34,6 +48,9 @@
       <MemberSignature Language="C#" Value="public BuildMessageEventArgs (string message, string helpKeyword, string senderName, Microsoft.Build.Framework.MessageImportance importance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, string senderName, valuetype Microsoft.Build.Framework.MessageImportance importance) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildMessageEventArgs.#ctor(System.String,System.String,System.String,Microsoft.Build.Framework.MessageImportance)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, senderName As String, importance As MessageImportance)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildMessageEventArgs : string * string * string * Microsoft.Build.Framework.MessageImportance -&gt; Microsoft.Build.Framework.BuildMessageEventArgs" Usage="new Microsoft.Build.Framework.BuildMessageEventArgs (message, helpKeyword, senderName, importance)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildMessageEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, Microsoft::Build::Framework::MessageImportance importance);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -58,6 +75,9 @@
       <MemberSignature Language="C#" Value="public BuildMessageEventArgs (string message, string helpKeyword, string senderName, Microsoft.Build.Framework.MessageImportance importance, DateTime eventTimestamp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, string senderName, valuetype Microsoft.Build.Framework.MessageImportance importance, valuetype System.DateTime eventTimestamp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildMessageEventArgs.#ctor(System.String,System.String,System.String,Microsoft.Build.Framework.MessageImportance,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, senderName As String, importance As MessageImportance, eventTimestamp As DateTime)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildMessageEventArgs : string * string * string * Microsoft.Build.Framework.MessageImportance * DateTime -&gt; Microsoft.Build.Framework.BuildMessageEventArgs" Usage="new Microsoft.Build.Framework.BuildMessageEventArgs (message, helpKeyword, senderName, importance, eventTimestamp)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildMessageEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, Microsoft::Build::Framework::MessageImportance importance, DateTime eventTimestamp);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -84,6 +104,9 @@
       <MemberSignature Language="C#" Value="public BuildMessageEventArgs (string message, string helpKeyword, string senderName, Microsoft.Build.Framework.MessageImportance importance, DateTime eventTimestamp, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, string helpKeyword, string senderName, valuetype Microsoft.Build.Framework.MessageImportance importance, valuetype System.DateTime eventTimestamp, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildMessageEventArgs.#ctor(System.String,System.String,System.String,Microsoft.Build.Framework.MessageImportance,System.DateTime,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, helpKeyword As String, senderName As String, importance As MessageImportance, eventTimestamp As DateTime, ParamArray messageArgs As Object())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildMessageEventArgs : string * string * string * Microsoft.Build.Framework.MessageImportance * DateTime * obj[] -&gt; Microsoft.Build.Framework.BuildMessageEventArgs" Usage="new Microsoft.Build.Framework.BuildMessageEventArgs (message, helpKeyword, senderName, importance, eventTimestamp, messageArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildMessageEventArgs(System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, Microsoft::Build::Framework::MessageImportance importance, DateTime eventTimestamp, ... cli::array &lt;System::Object ^&gt; ^ messageArgs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -118,6 +141,9 @@
       <MemberSignature Language="C#" Value="public BuildMessageEventArgs (string subcategory, string code, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string message, string helpKeyword, string senderName, Microsoft.Build.Framework.MessageImportance importance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string subcategory, string code, string file, int32 lineNumber, int32 columnNumber, int32 endLineNumber, int32 endColumnNumber, string message, string helpKeyword, string senderName, valuetype Microsoft.Build.Framework.MessageImportance importance) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildMessageEventArgs.#ctor(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,Microsoft.Build.Framework.MessageImportance)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (subcategory As String, code As String, file As String, lineNumber As Integer, columnNumber As Integer, endLineNumber As Integer, endColumnNumber As Integer, message As String, helpKeyword As String, senderName As String, importance As MessageImportance)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildMessageEventArgs : string * string * string * int * int * int * int * string * string * string * Microsoft.Build.Framework.MessageImportance -&gt; Microsoft.Build.Framework.BuildMessageEventArgs" Usage="new Microsoft.Build.Framework.BuildMessageEventArgs (subcategory, code, file, lineNumber, columnNumber, endLineNumber, endColumnNumber, message, helpKeyword, senderName, importance)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildMessageEventArgs(System::String ^ subcategory, System::String ^ code, System::String ^ file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, Microsoft::Build::Framework::MessageImportance importance);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -156,6 +182,9 @@
       <MemberSignature Language="C#" Value="public BuildMessageEventArgs (string subcategory, string code, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string message, string helpKeyword, string senderName, Microsoft.Build.Framework.MessageImportance importance, DateTime eventTimestamp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string subcategory, string code, string file, int32 lineNumber, int32 columnNumber, int32 endLineNumber, int32 endColumnNumber, string message, string helpKeyword, string senderName, valuetype Microsoft.Build.Framework.MessageImportance importance, valuetype System.DateTime eventTimestamp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildMessageEventArgs.#ctor(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,Microsoft.Build.Framework.MessageImportance,System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (subcategory As String, code As String, file As String, lineNumber As Integer, columnNumber As Integer, endLineNumber As Integer, endColumnNumber As Integer, message As String, helpKeyword As String, senderName As String, importance As MessageImportance, eventTimestamp As DateTime)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildMessageEventArgs : string * string * string * int * int * int * int * string * string * string * Microsoft.Build.Framework.MessageImportance * DateTime -&gt; Microsoft.Build.Framework.BuildMessageEventArgs" Usage="new Microsoft.Build.Framework.BuildMessageEventArgs (subcategory, code, file, lineNumber, columnNumber, endLineNumber, endColumnNumber, message, helpKeyword, senderName, importance, eventTimestamp)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildMessageEventArgs(System::String ^ subcategory, System::String ^ code, System::String ^ file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, Microsoft::Build::Framework::MessageImportance importance, DateTime eventTimestamp);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -196,6 +225,9 @@
       <MemberSignature Language="C#" Value="public BuildMessageEventArgs (string subcategory, string code, string file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, string message, string helpKeyword, string senderName, Microsoft.Build.Framework.MessageImportance importance, DateTime eventTimestamp, params object[] messageArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string subcategory, string code, string file, int32 lineNumber, int32 columnNumber, int32 endLineNumber, int32 endColumnNumber, string message, string helpKeyword, string senderName, valuetype Microsoft.Build.Framework.MessageImportance importance, valuetype System.DateTime eventTimestamp, object[] messageArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.BuildMessageEventArgs.#ctor(System.String,System.String,System.String,System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.String,System.String,Microsoft.Build.Framework.MessageImportance,System.DateTime,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (subcategory As String, code As String, file As String, lineNumber As Integer, columnNumber As Integer, endLineNumber As Integer, endColumnNumber As Integer, message As String, helpKeyword As String, senderName As String, importance As MessageImportance, eventTimestamp As DateTime, ParamArray messageArgs As Object())" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Framework.BuildMessageEventArgs : string * string * string * int * int * int * int * string * string * string * Microsoft.Build.Framework.MessageImportance * DateTime * obj[] -&gt; Microsoft.Build.Framework.BuildMessageEventArgs" Usage="new Microsoft.Build.Framework.BuildMessageEventArgs (subcategory, code, file, lineNumber, columnNumber, endLineNumber, endColumnNumber, message, helpKeyword, senderName, importance, eventTimestamp, messageArgs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BuildMessageEventArgs(System::String ^ subcategory, System::String ^ code, System::String ^ file, int lineNumber, int columnNumber, int endLineNumber, int endColumnNumber, System::String ^ message, System::String ^ helpKeyword, System::String ^ senderName, Microsoft::Build::Framework::MessageImportance importance, DateTime eventTimestamp, ... cli::array &lt;System::Object ^&gt; ^ messageArgs);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -244,6 +276,9 @@
       <MemberSignature Language="C#" Value="public string Code { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Code" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildMessageEventArgs.Code" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Code As String" />
+      <MemberSignature Language="F#" Value="member this.Code : string" Usage="Microsoft.Build.Framework.BuildMessageEventArgs.Code" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Code { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -262,6 +297,9 @@
       <MemberSignature Language="C#" Value="public int ColumnNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildMessageEventArgs.ColumnNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.ColumnNumber : int" Usage="Microsoft.Build.Framework.BuildMessageEventArgs.ColumnNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -280,6 +318,9 @@
       <MemberSignature Language="C#" Value="public int EndColumnNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EndColumnNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildMessageEventArgs.EndColumnNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndColumnNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndColumnNumber : int" Usage="Microsoft.Build.Framework.BuildMessageEventArgs.EndColumnNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndColumnNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -298,6 +339,9 @@
       <MemberSignature Language="C#" Value="public int EndLineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EndLineNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildMessageEventArgs.EndLineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndLineNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndLineNumber : int" Usage="Microsoft.Build.Framework.BuildMessageEventArgs.EndLineNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndLineNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -316,6 +360,9 @@
       <MemberSignature Language="C#" Value="public string File { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string File" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildMessageEventArgs.File" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property File As String" />
+      <MemberSignature Language="F#" Value="member this.File : string" Usage="Microsoft.Build.Framework.BuildMessageEventArgs.File" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ File { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -334,6 +381,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.MessageImportance Importance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Framework.MessageImportance Importance" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildMessageEventArgs.Importance" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Importance As MessageImportance" />
+      <MemberSignature Language="F#" Value="member this.Importance : Microsoft.Build.Framework.MessageImportance" Usage="Microsoft.Build.Framework.BuildMessageEventArgs.Importance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::MessageImportance Importance { Microsoft::Build::Framework::MessageImportance get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -352,6 +402,9 @@
       <MemberSignature Language="C#" Value="public int LineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LineNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildMessageEventArgs.LineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LineNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.LineNumber : int" Usage="Microsoft.Build.Framework.BuildMessageEventArgs.LineNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LineNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -370,6 +423,9 @@
       <MemberSignature Language="C#" Value="public string ProjectFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProjectFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildMessageEventArgs.ProjectFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProjectFile As String" />
+      <MemberSignature Language="F#" Value="member this.ProjectFile : string with get, set" Usage="Microsoft.Build.Framework.BuildMessageEventArgs.ProjectFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProjectFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -388,6 +444,9 @@
       <MemberSignature Language="C#" Value="public string Subcategory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Subcategory" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.BuildMessageEventArgs.Subcategory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Subcategory As String" />
+      <MemberSignature Language="F#" Value="member this.Subcategory : string" Usage="Microsoft.Build.Framework.BuildMessageEventArgs.Subcategory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subcategory { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -402,14 +461,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Framework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Framework.BuildMessageEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

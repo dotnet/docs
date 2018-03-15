@@ -1,7 +1,10 @@
-<Type Name="WebContentFormat" FullName="System.ServiceModel.Channels.WebContentFormat">
+﻿<Type Name="WebContentFormat" FullName="System.ServiceModel.Channels.WebContentFormat">
   <TypeSignature Language="C#" Value="public enum WebContentFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebContentFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.WebContentFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WebContentFormat" />
+  <TypeSignature Language="F#" Value="type WebContentFormat = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class WebContentFormat" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Web</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.WebContentFormat Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebContentFormat.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.ServiceModel.Channels.WebContentFormat.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.WebContentFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The format to map to cannot be determined.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="Json" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.WebContentFormat Json = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebContentFormat.Json" />
+      <MemberSignature Language="VB.NET" Value="Json" />
+      <MemberSignature Language="F#" Value="Json = 2" Usage="System.ServiceModel.Channels.WebContentFormat.Json" />
+      <MemberSignature Language="C++ CLI" Value="Json" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.WebContentFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Map to the JSON format.</summary>
       </Docs>
@@ -60,6 +71,9 @@
       <MemberSignature Language="C#" Value="Raw" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.WebContentFormat Raw = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebContentFormat.Raw" />
+      <MemberSignature Language="VB.NET" Value="Raw" />
+      <MemberSignature Language="F#" Value="Raw = 3" Usage="System.ServiceModel.Channels.WebContentFormat.Raw" />
+      <MemberSignature Language="C++ CLI" Value="Raw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -69,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.WebContentFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Map to the "Raw" binary format.</summary>
       </Docs>
@@ -77,6 +92,9 @@
       <MemberSignature Language="C#" Value="Xml" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.WebContentFormat Xml = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.WebContentFormat.Xml" />
+      <MemberSignature Language="VB.NET" Value="Xml" />
+      <MemberSignature Language="F#" Value="Xml = 1" Usage="System.ServiceModel.Channels.WebContentFormat.Xml" />
+      <MemberSignature Language="C++ CLI" Value="Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Web</AssemblyName>
@@ -86,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.WebContentFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Map to the XML format.</summary>
       </Docs>

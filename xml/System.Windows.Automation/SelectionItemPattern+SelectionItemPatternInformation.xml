@@ -1,7 +1,10 @@
-<Type Name="SelectionItemPattern+SelectionItemPatternInformation" FullName="System.Windows.Automation.SelectionItemPattern+SelectionItemPatternInformation">
+﻿<Type Name="SelectionItemPattern+SelectionItemPatternInformation" FullName="System.Windows.Automation.SelectionItemPattern+SelectionItemPatternInformation">
   <TypeSignature Language="C#" Value="public struct SelectionItemPattern.SelectionItemPatternInformation" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit SelectionItemPattern/SelectionItemPatternInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.SelectionItemPattern.SelectionItemPatternInformation" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SelectionItemPattern.SelectionItemPatternInformation" />
+  <TypeSignature Language="F#" Value="type SelectionItemPattern.SelectionItemPatternInformation = struct" />
+  <TypeSignature Language="C++ CLI" Value="public: value class SelectionItemPattern::SelectionItemPatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public bool IsSelected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSelected" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.SelectionItemPattern.SelectionItemPatternInformation.IsSelected" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSelected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSelected : bool" Usage="System.Windows.Automation.SelectionItemPattern.SelectionItemPatternInformation.IsSelected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelected { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElement SelectionContainer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.AutomationElement SelectionContainer" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.SelectionItemPattern.SelectionItemPatternInformation.SelectionContainer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectionContainer As AutomationElement" />
+      <MemberSignature Language="F#" Value="member this.SelectionContainer : System.Windows.Automation.AutomationElement" Usage="System.Windows.Automation.SelectionItemPattern.SelectionItemPatternInformation.SelectionContainer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::AutomationElement ^ SelectionContainer { System::Windows::Automation::AutomationElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

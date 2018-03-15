@@ -1,7 +1,10 @@
-<Type Name="Cursors" FullName="System.Windows.Input.Cursors">
+﻿<Type Name="Cursors" FullName="System.Windows.Input.Cursors">
   <TypeSignature Language="C#" Value="public static class Cursors" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Cursors extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Cursors" />
+  <TypeSignature Language="VB.NET" Value="Public Class Cursors" />
+  <TypeSignature Language="F#" Value="type Cursors = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Cursors abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor AppStarting { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor AppStarting" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.AppStarting" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property AppStarting As Cursor" />
+      <MemberSignature Language="F#" Value="member this.AppStarting : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.AppStarting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ AppStarting { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -62,6 +68,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor Arrow { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor Arrow" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.Arrow" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Arrow As Cursor" />
+      <MemberSignature Language="F#" Value="member this.Arrow : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.Arrow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ Arrow { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +100,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor ArrowCD { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor ArrowCD" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.ArrowCD" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ArrowCD As Cursor" />
+      <MemberSignature Language="F#" Value="member this.ArrowCD : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.ArrowCD" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ ArrowCD { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -119,6 +131,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor Cross { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor Cross" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.Cross" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Cross As Cursor" />
+      <MemberSignature Language="F#" Value="member this.Cross : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.Cross" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ Cross { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -148,6 +163,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor Hand { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor Hand" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.Hand" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Hand As Cursor" />
+      <MemberSignature Language="F#" Value="member this.Hand : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.Hand" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ Hand { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -177,6 +195,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor Help { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor Help" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.Help" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Help As Cursor" />
+      <MemberSignature Language="F#" Value="member this.Help : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.Help" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ Help { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -206,6 +227,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor IBeam { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor IBeam" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.IBeam" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IBeam As Cursor" />
+      <MemberSignature Language="F#" Value="member this.IBeam : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.IBeam" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ IBeam { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -234,6 +258,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor No { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor No" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.No" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property No As Cursor" />
+      <MemberSignature Language="F#" Value="member this.No : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.No" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ No { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -262,6 +289,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor None { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor None" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.None" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property None As Cursor" />
+      <MemberSignature Language="F#" Value="member this.None : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.None" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ None { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -291,6 +321,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor Pen { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor Pen" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.Pen" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Pen As Cursor" />
+      <MemberSignature Language="F#" Value="member this.Pen : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.Pen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ Pen { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -319,6 +352,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor ScrollAll { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor ScrollAll" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.ScrollAll" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollAll As Cursor" />
+      <MemberSignature Language="F#" Value="member this.ScrollAll : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.ScrollAll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ ScrollAll { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -347,6 +383,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor ScrollE { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor ScrollE" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.ScrollE" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollE As Cursor" />
+      <MemberSignature Language="F#" Value="member this.ScrollE : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.ScrollE" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ ScrollE { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -375,6 +414,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor ScrollN { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor ScrollN" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.ScrollN" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollN As Cursor" />
+      <MemberSignature Language="F#" Value="member this.ScrollN : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.ScrollN" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ ScrollN { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -403,6 +445,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor ScrollNE { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor ScrollNE" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.ScrollNE" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollNE As Cursor" />
+      <MemberSignature Language="F#" Value="member this.ScrollNE : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.ScrollNE" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ ScrollNE { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -421,6 +466,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor ScrollNS { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor ScrollNS" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.ScrollNS" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollNS As Cursor" />
+      <MemberSignature Language="F#" Value="member this.ScrollNS : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.ScrollNS" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ ScrollNS { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -449,6 +497,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor ScrollNW { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor ScrollNW" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.ScrollNW" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollNW As Cursor" />
+      <MemberSignature Language="F#" Value="member this.ScrollNW : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.ScrollNW" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ ScrollNW { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -477,6 +528,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor ScrollS { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor ScrollS" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.ScrollS" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollS As Cursor" />
+      <MemberSignature Language="F#" Value="member this.ScrollS : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.ScrollS" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ ScrollS { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -505,6 +559,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor ScrollSE { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor ScrollSE" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.ScrollSE" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollSE As Cursor" />
+      <MemberSignature Language="F#" Value="member this.ScrollSE : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.ScrollSE" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ ScrollSE { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -533,6 +590,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor ScrollSW { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor ScrollSW" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.ScrollSW" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollSW As Cursor" />
+      <MemberSignature Language="F#" Value="member this.ScrollSW : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.ScrollSW" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ ScrollSW { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -561,6 +621,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor ScrollW { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor ScrollW" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.ScrollW" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollW As Cursor" />
+      <MemberSignature Language="F#" Value="member this.ScrollW : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.ScrollW" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ ScrollW { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -589,6 +652,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor ScrollWE { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor ScrollWE" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.ScrollWE" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ScrollWE As Cursor" />
+      <MemberSignature Language="F#" Value="member this.ScrollWE : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.ScrollWE" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ ScrollWE { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -617,6 +683,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor SizeAll { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor SizeAll" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.SizeAll" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SizeAll As Cursor" />
+      <MemberSignature Language="F#" Value="member this.SizeAll : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.SizeAll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ SizeAll { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -645,6 +714,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor SizeNESW { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor SizeNESW" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.SizeNESW" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SizeNESW As Cursor" />
+      <MemberSignature Language="F#" Value="member this.SizeNESW : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.SizeNESW" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ SizeNESW { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -673,6 +745,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor SizeNS { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor SizeNS" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.SizeNS" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SizeNS As Cursor" />
+      <MemberSignature Language="F#" Value="member this.SizeNS : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.SizeNS" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ SizeNS { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -701,6 +776,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor SizeNWSE { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor SizeNWSE" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.SizeNWSE" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SizeNWSE As Cursor" />
+      <MemberSignature Language="F#" Value="member this.SizeNWSE : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.SizeNWSE" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ SizeNWSE { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -729,6 +807,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor SizeWE { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor SizeWE" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.SizeWE" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SizeWE As Cursor" />
+      <MemberSignature Language="F#" Value="member this.SizeWE : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.SizeWE" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ SizeWE { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -747,6 +828,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor UpArrow { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor UpArrow" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.UpArrow" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UpArrow As Cursor" />
+      <MemberSignature Language="F#" Value="member this.UpArrow : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.UpArrow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ UpArrow { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -775,6 +859,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.Cursor Wait { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.Cursor Wait" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Cursors.Wait" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Wait As Cursor" />
+      <MemberSignature Language="F#" Value="member this.Wait : System.Windows.Input.Cursor" Usage="System.Windows.Input.Cursors.Wait" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::Cursor ^ Wait { System::Windows::Input::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

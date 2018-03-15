@@ -1,7 +1,10 @@
-<Type Name="SafeWaitHandle" FullName="Microsoft.Win32.SafeHandles.SafeWaitHandle">
+﻿<Type Name="SafeWaitHandle" FullName="Microsoft.Win32.SafeHandles.SafeWaitHandle">
   <TypeSignature Language="C#" Value="public sealed class SafeWaitHandle : Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SafeWaitHandle extends Microsoft.Win32.SafeHandles.SafeHandleZeroOrMinusOneIsInvalid" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SafeHandles.SafeWaitHandle" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SafeWaitHandle&#xA;Inherits SafeHandleZeroOrMinusOneIsInvalid" />
+  <TypeSignature Language="F#" Value="type SafeWaitHandle = class&#xA;    inherit SafeHandleZeroOrMinusOneIsInvalid" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SafeWaitHandle sealed : Microsoft::Win32::SafeHandles::SafeHandleZeroOrMinusOneIsInvalid" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Handles</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +65,9 @@
       <MemberSignature Language="C#" Value="public SafeWaitHandle (IntPtr existingHandle, bool ownsHandle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(native int existingHandle, bool ownsHandle) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeWaitHandle.#ctor(System.IntPtr,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (existingHandle As IntPtr, ownsHandle As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Win32.SafeHandles.SafeWaitHandle : nativeint * bool -&gt; Microsoft.Win32.SafeHandles.SafeWaitHandle" Usage="new Microsoft.Win32.SafeHandles.SafeWaitHandle (existingHandle, ownsHandle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SafeWaitHandle(IntPtr existingHandle, bool ownsHandle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -114,6 +120,9 @@
       <MemberSignature Language="C#" Value="public override bool IsInvalid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInvalid" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Win32.SafeHandles.SafeWaitHandle.IsInvalid" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsInvalid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInvalid : bool" Usage="Microsoft.Win32.SafeHandles.SafeWaitHandle.IsInvalid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsInvalid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>
@@ -137,6 +146,9 @@
       <MemberSignature Language="C#" Value="protected override bool ReleaseHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ReleaseHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Win32.SafeHandles.SafeWaitHandle.ReleaseHandle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ReleaseHandle () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ReleaseHandle : unit -&gt; bool" Usage="safeWaitHandle.ReleaseHandle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ReleaseHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Handles</AssemblyName>

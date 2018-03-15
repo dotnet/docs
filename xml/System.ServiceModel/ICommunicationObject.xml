@@ -1,7 +1,10 @@
-<Type Name="ICommunicationObject" FullName="System.ServiceModel.ICommunicationObject">
+﻿<Type Name="ICommunicationObject" FullName="System.ServiceModel.ICommunicationObject">
   <TypeSignature Language="C#" Value="public interface ICommunicationObject" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICommunicationObject" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ICommunicationObject" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICommunicationObject" />
+  <TypeSignature Language="F#" Value="type ICommunicationObject = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICommunicationObject" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +65,9 @@
       <MemberSignature Language="C#" Value="public void Abort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ICommunicationObject.Abort" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
+      <MemberSignature Language="F#" Value="abstract member Abort : unit -&gt; unit" Usage="iCommunicationObject.Abort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -116,6 +122,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginClose (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginClose(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ICommunicationObject.BeginClose(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginClose (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginClose : AsyncCallback * obj -&gt; IAsyncResult" Usage="iCommunicationObject.BeginClose (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginClose(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -157,6 +166,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginClose (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginClose(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ICommunicationObject.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginClose (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginClose : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="iCommunicationObject.BeginClose (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginClose(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -220,6 +232,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginOpen (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginOpen(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ICommunicationObject.BeginOpen(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginOpen (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginOpen : AsyncCallback * obj -&gt; IAsyncResult" Usage="iCommunicationObject.BeginOpen (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginOpen(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -262,6 +277,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginOpen (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginOpen(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ICommunicationObject.BeginOpen(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginOpen (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginOpen : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="iCommunicationObject.BeginOpen (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginOpen(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -305,10 +323,23 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Close">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Causes a communication object to transition from its current state into the closed state.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Close">
       <MemberSignature Language="C#" Value="public void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ICommunicationObject.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit" Usage="iCommunicationObject.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -354,6 +385,9 @@
       <MemberSignature Language="C#" Value="public void Close (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ICommunicationObject.Close(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close (timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="abstract member Close : TimeSpan -&gt; unit" Usage="iCommunicationObject.Close timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -402,9 +436,12 @@
       </Docs>
     </Member>
     <Member MemberName="Closed">
-      <MemberSignature Language="C#" Value="public event EventHandler Closed;" />
+      <MemberSignature Language="C#" Value="event EventHandler Closed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Closed" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.ICommunicationObject.Closed" />
+      <MemberSignature Language="VB.NET" Value="Event Closed As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Closed : EventHandler " Usage="member this.Closed : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Closed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -426,9 +463,12 @@
       </Docs>
     </Member>
     <Member MemberName="Closing">
-      <MemberSignature Language="C#" Value="public event EventHandler Closing;" />
+      <MemberSignature Language="C#" Value="event EventHandler Closing;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Closing" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.ICommunicationObject.Closing" />
+      <MemberSignature Language="VB.NET" Value="Event Closing As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Closing : EventHandler " Usage="member this.Closing : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Closing;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -460,6 +500,9 @@
       <MemberSignature Language="C#" Value="public void EndClose (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndClose(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ICommunicationObject.EndClose(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndClose (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndClose : IAsyncResult -&gt; unit" Usage="iCommunicationObject.EndClose result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndClose(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -491,6 +534,9 @@
       <MemberSignature Language="C#" Value="public void EndOpen (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndOpen(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ICommunicationObject.EndOpen(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndOpen (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndOpen : IAsyncResult -&gt; unit" Usage="iCommunicationObject.EndOpen result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndOpen(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -518,9 +564,12 @@
       </Docs>
     </Member>
     <Member MemberName="Faulted">
-      <MemberSignature Language="C#" Value="public event EventHandler Faulted;" />
+      <MemberSignature Language="C#" Value="event EventHandler Faulted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Faulted" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.ICommunicationObject.Faulted" />
+      <MemberSignature Language="VB.NET" Value="Event Faulted As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Faulted : EventHandler " Usage="member this.Faulted : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Faulted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -563,6 +612,9 @@
       <MemberSignature Language="C#" Value="public void Open ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ICommunicationObject.Open" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open ()" />
+      <MemberSignature Language="F#" Value="abstract member Open : unit -&gt; unit" Usage="iCommunicationObject.Open " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -601,6 +653,9 @@
       <MemberSignature Language="C#" Value="public void Open (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Open(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ICommunicationObject.Open(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Open (timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="abstract member Open : TimeSpan -&gt; unit" Usage="iCommunicationObject.Open timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Open(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -642,9 +697,12 @@
       </Docs>
     </Member>
     <Member MemberName="Opened">
-      <MemberSignature Language="C#" Value="public event EventHandler Opened;" />
+      <MemberSignature Language="C#" Value="event EventHandler Opened;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Opened" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.ICommunicationObject.Opened" />
+      <MemberSignature Language="VB.NET" Value="Event Opened As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Opened : EventHandler " Usage="member this.Opened : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Opened;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -666,9 +724,12 @@
       </Docs>
     </Member>
     <Member MemberName="Opening">
-      <MemberSignature Language="C#" Value="public event EventHandler Opening;" />
+      <MemberSignature Language="C#" Value="event EventHandler Opening;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Opening" />
       <MemberSignature Language="DocId" Value="E:System.ServiceModel.ICommunicationObject.Opening" />
+      <MemberSignature Language="VB.NET" Value="Event Opening As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Opening : EventHandler " Usage="member this.Opening : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Opening;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -700,6 +761,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.CommunicationState State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.CommunicationState State" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.ICommunicationObject.State" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property State As CommunicationState" />
+      <MemberSignature Language="F#" Value="member this.State : System.ServiceModel.CommunicationState" Usage="System.ServiceModel.ICommunicationObject.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::CommunicationState State { System::ServiceModel::CommunicationState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -742,15 +806,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Close">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Causes a communication object to transition from its current state into the closed state.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

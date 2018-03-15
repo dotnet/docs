@@ -1,7 +1,10 @@
-<Type Name="IDocumentPersistenceService" FullName="System.Activities.Presentation.Hosting.IDocumentPersistenceService">
+﻿<Type Name="IDocumentPersistenceService" FullName="System.Activities.Presentation.Hosting.IDocumentPersistenceService">
   <TypeSignature Language="C#" Value="public interface IDocumentPersistenceService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDocumentPersistenceService" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Hosting.IDocumentPersistenceService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDocumentPersistenceService" />
+  <TypeSignature Language="F#" Value="type IDocumentPersistenceService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDocumentPersistenceService" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="public void Flush (object documentRoot);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flush(object documentRoot) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.IDocumentPersistenceService.Flush(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Flush (documentRoot As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Flush : obj -&gt; unit" Usage="iDocumentPersistenceService.Flush documentRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Flush(System::Object ^ documentRoot);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -44,6 +50,9 @@
       <MemberSignature Language="C#" Value="public object Load (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Load(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.IDocumentPersistenceService.Load(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Load (fileName As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Load : string -&gt; obj" Usage="iDocumentPersistenceService.Load fileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Load(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -66,6 +75,9 @@
       <MemberSignature Language="C#" Value="public void OnModelChanged (object documentRoot);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnModelChanged(object documentRoot) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Hosting.IDocumentPersistenceService.OnModelChanged(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnModelChanged (documentRoot As Object)" />
+      <MemberSignature Language="F#" Value="abstract member OnModelChanged : obj -&gt; unit" Usage="iDocumentPersistenceService.OnModelChanged documentRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnModelChanged(System::Object ^ documentRoot);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

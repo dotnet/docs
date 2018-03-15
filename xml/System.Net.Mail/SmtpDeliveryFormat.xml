@@ -1,7 +1,10 @@
-<Type Name="SmtpDeliveryFormat" FullName="System.Net.Mail.SmtpDeliveryFormat">
+﻿<Type Name="SmtpDeliveryFormat" FullName="System.Net.Mail.SmtpDeliveryFormat">
   <TypeSignature Language="C#" Value="public enum SmtpDeliveryFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SmtpDeliveryFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.SmtpDeliveryFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SmtpDeliveryFormat" />
+  <TypeSignature Language="F#" Value="type SmtpDeliveryFormat = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SmtpDeliveryFormat" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="International" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpDeliveryFormat International = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpDeliveryFormat.International" />
+      <MemberSignature Language="VB.NET" Value="International" />
+      <MemberSignature Language="F#" Value="International = 1" Usage="System.Net.Mail.SmtpDeliveryFormat.International" />
+      <MemberSignature Language="C++ CLI" Value="International" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -44,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpDeliveryFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A delivery format where non-ASCII characters in the envelope and header fields used in the Simple Mail Transport Protocol (SMTP) for mail messages are encoded with UTF-8 characters.  
   
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="SevenBit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Mail.SmtpDeliveryFormat SevenBit = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Mail.SmtpDeliveryFormat.SevenBit" />
+      <MemberSignature Language="VB.NET" Value="SevenBit" />
+      <MemberSignature Language="F#" Value="SevenBit = 0" Usage="System.Net.Mail.SmtpDeliveryFormat.SevenBit" />
+      <MemberSignature Language="C++ CLI" Value="SevenBit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -71,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Mail.SmtpDeliveryFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A delivery format using 7-bit ASCII.  
   

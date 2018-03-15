@@ -1,7 +1,10 @@
-<Type Name="PeerCollaborationPermission" FullName="System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission">
+﻿<Type Name="PeerCollaborationPermission" FullName="System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission">
   <TypeSignature Language="C#" Value="public sealed class PeerCollaborationPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit PeerCollaborationPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PeerCollaborationPermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
+  <TypeSignature Language="F#" Value="type PeerCollaborationPermission = class&#xA;    inherit CodeAccessPermission&#xA;    interface IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PeerCollaborationPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="public PeerCollaborationPermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
+      <MemberSignature Language="F#" Value="new System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission : System.Security.Permissions.PermissionState -&gt; System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission" Usage="new System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerCollaborationPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -72,6 +78,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="peerCollaborationPermission.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -103,6 +112,9 @@
       <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (e As SecurityElement)" />
+      <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="peerCollaborationPermission.FromXml e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -145,6 +157,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Intersect(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="peerCollaborationPermission.Intersect target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -190,6 +205,9 @@
       <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="peerCollaborationPermission.IsSubsetOf target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -238,6 +256,9 @@
       <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.IsUnrestricted" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsUnrestricted : unit -&gt; bool&#xA;override this.IsUnrestricted : unit -&gt; bool" Usage="peerCollaborationPermission.IsUnrestricted " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -272,6 +293,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="peerCollaborationPermission.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -304,6 +328,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.PeerToPeer.Collaboration.PeerCollaborationPermission.Union(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="peerCollaborationPermission.Union target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="HostSettings" FullName="System.ServiceModel.Activities.HostSettings">
+﻿<Type Name="HostSettings" FullName="System.ServiceModel.Activities.HostSettings">
   <TypeSignature Language="C#" Value="public sealed class HostSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HostSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.HostSettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HostSettings" />
+  <TypeSignature Language="F#" Value="type HostSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HostSettings sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public HostSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.HostSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HostSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public bool IncludeExceptionDetailInFaults { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IncludeExceptionDetailInFaults" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.HostSettings.IncludeExceptionDetailInFaults" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeExceptionDetailInFaults As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeExceptionDetailInFaults : bool with get, set" Usage="System.ServiceModel.Activities.HostSettings.IncludeExceptionDetailInFaults" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeExceptionDetailInFaults { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -53,6 +61,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Linq.XName ScopeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XName ScopeName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.HostSettings.ScopeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScopeName As XName" />
+      <MemberSignature Language="F#" Value="member this.ScopeName : System.Xml.Linq.XName with get, set" Usage="System.ServiceModel.Activities.HostSettings.ScopeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XName ^ ScopeName { System::Xml::Linq::XName ^ get(); void set(System::Xml::Linq::XName ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -71,6 +82,9 @@
       <MemberSignature Language="C#" Value="public bool UseNoPersistHandle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseNoPersistHandle" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.HostSettings.UseNoPersistHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseNoPersistHandle As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseNoPersistHandle : bool with get, set" Usage="System.ServiceModel.Activities.HostSettings.UseNoPersistHandle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseNoPersistHandle { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

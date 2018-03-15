@@ -1,7 +1,10 @@
-<Type Name="SharedPropertyGroupManager" FullName="System.EnterpriseServices.SharedPropertyGroupManager">
+﻿<Type Name="SharedPropertyGroupManager" FullName="System.EnterpriseServices.SharedPropertyGroupManager">
   <TypeSignature Language="C#" Value="public sealed class SharedPropertyGroupManager : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SharedPropertyGroupManager extends System.Object implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.SharedPropertyGroupManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SharedPropertyGroupManager&#xA;Implements IEnumerable" />
+  <TypeSignature Language="F#" Value="type SharedPropertyGroupManager = class&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SharedPropertyGroupManager sealed : System::Collections::IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,8 @@
       <MemberSignature Language="C#" Value="public SharedPropertyGroupManager ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroupManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SharedPropertyGroupManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -65,6 +70,9 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedPropertyGroup CreatePropertyGroup (string name, ref System.EnterpriseServices.PropertyLockMode dwIsoMode, ref System.EnterpriseServices.PropertyReleaseMode dwRelMode, out bool fExist);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedPropertyGroup CreatePropertyGroup(string name, valuetype System.EnterpriseServices.PropertyLockMode&amp; dwIsoMode, valuetype System.EnterpriseServices.PropertyReleaseMode&amp; dwRelMode, [out] bool&amp; fExist) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroupManager.CreatePropertyGroup(System.String,System.EnterpriseServices.PropertyLockMode@,System.EnterpriseServices.PropertyReleaseMode@,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreatePropertyGroup (name As String, ByRef dwIsoMode As PropertyLockMode, ByRef dwRelMode As PropertyReleaseMode, ByRef fExist As Boolean) As SharedPropertyGroup" />
+      <MemberSignature Language="F#" Value="member this.CreatePropertyGroup : string *  *  *  -&gt; System.EnterpriseServices.SharedPropertyGroup" Usage="sharedPropertyGroupManager.CreatePropertyGroup (name, dwIsoMode, dwRelMode, fExist)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::EnterpriseServices::SharedPropertyGroup ^ CreatePropertyGroup(System::String ^ name, System::EnterpriseServices::PropertyLockMode % dwIsoMode, System::EnterpriseServices::PropertyReleaseMode % dwRelMode, [Runtime::InteropServices::Out] bool % fExist);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -114,7 +122,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroupManager.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="sharedPropertyGroupManager.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -133,6 +147,9 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.SharedPropertyGroup Group (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.EnterpriseServices.SharedPropertyGroup Group(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.SharedPropertyGroupManager.Group(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Group (name As String) As SharedPropertyGroup" />
+      <MemberSignature Language="F#" Value="member this.Group : string -&gt; System.EnterpriseServices.SharedPropertyGroup" Usage="sharedPropertyGroupManager.Group name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::EnterpriseServices::SharedPropertyGroup ^ Group(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

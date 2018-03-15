@@ -1,7 +1,10 @@
-<Type Name="INativeHandleContract" FullName="System.AddIn.Contract.INativeHandleContract">
+﻿<Type Name="INativeHandleContract" FullName="System.AddIn.Contract.INativeHandleContract">
   <TypeSignature Language="C#" Value="public interface INativeHandleContract : System.AddIn.Contract.IContract" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INativeHandleContract implements class System.AddIn.Contract.IContract" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Contract.INativeHandleContract" />
+  <TypeSignature Language="VB.NET" Value="Public Interface INativeHandleContract&#xA;Implements IContract" />
+  <TypeSignature Language="F#" Value="type INativeHandleContract = interface&#xA;    interface IContract" />
+  <TypeSignature Language="C++ CLI" Value="public interface class INativeHandleContract : System::AddIn::Contract::IContract" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn.Contract</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="public IntPtr GetHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int GetHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Contract.INativeHandleContract.GetHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHandle () As IntPtr" />
+      <MemberSignature Language="F#" Value="abstract member GetHandle : unit -&gt; nativeint" Usage="iNativeHandleContract.GetHandle " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr GetHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn.Contract</AssemblyName>

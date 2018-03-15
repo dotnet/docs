@@ -1,7 +1,10 @@
-<Type Name="SerialError" FullName="System.IO.Ports.SerialError">
+﻿<Type Name="SerialError" FullName="System.IO.Ports.SerialError">
   <TypeSignature Language="C#" Value="public enum SerialError" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SerialError extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Ports.SerialError" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SerialError" />
+  <TypeSignature Language="F#" Value="type SerialError = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SerialError" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="Frame" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.SerialError Frame = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialError.Frame" />
+      <MemberSignature Language="VB.NET" Value="Frame" />
+      <MemberSignature Language="F#" Value="Frame = 8" Usage="System.IO.Ports.SerialError.Frame" />
+      <MemberSignature Language="C++ CLI" Value="Frame" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -41,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.SerialError</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The hardware detected a framing error.</summary>
       </Docs>
@@ -49,6 +56,9 @@
       <MemberSignature Language="C#" Value="Overrun" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.SerialError Overrun = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialError.Overrun" />
+      <MemberSignature Language="VB.NET" Value="Overrun" />
+      <MemberSignature Language="F#" Value="Overrun = 2" Usage="System.IO.Ports.SerialError.Overrun" />
+      <MemberSignature Language="C++ CLI" Value="Overrun" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -61,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.SerialError</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A character-buffer overrun has occurred. The next character is lost.</summary>
       </Docs>
@@ -69,6 +80,9 @@
       <MemberSignature Language="C#" Value="RXOver" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.SerialError RXOver = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialError.RXOver" />
+      <MemberSignature Language="VB.NET" Value="RXOver" />
+      <MemberSignature Language="F#" Value="RXOver = 1" Usage="System.IO.Ports.SerialError.RXOver" />
+      <MemberSignature Language="C++ CLI" Value="RXOver" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -81,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.SerialError</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An input buffer overflow has occurred. There is either no room in the input buffer, or a character was received after the end-of-file (EOF) character.</summary>
       </Docs>
@@ -89,6 +104,9 @@
       <MemberSignature Language="C#" Value="RXParity" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.SerialError RXParity = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialError.RXParity" />
+      <MemberSignature Language="VB.NET" Value="RXParity" />
+      <MemberSignature Language="F#" Value="RXParity = 4" Usage="System.IO.Ports.SerialError.RXParity" />
+      <MemberSignature Language="C++ CLI" Value="RXParity" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.SerialError</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The hardware detected a parity error.</summary>
       </Docs>
@@ -109,6 +128,9 @@
       <MemberSignature Language="C#" Value="TXFull" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Ports.SerialError TXFull = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Ports.SerialError.TXFull" />
+      <MemberSignature Language="VB.NET" Value="TXFull" />
+      <MemberSignature Language="F#" Value="TXFull = 256" Usage="System.IO.Ports.SerialError.TXFull" />
+      <MemberSignature Language="C++ CLI" Value="TXFull" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -121,6 +143,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Ports.SerialError</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>The application tried to transmit a character, but the output buffer was full.</summary>
       </Docs>

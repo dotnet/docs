@@ -1,7 +1,10 @@
-<Type Name="Label" FullName="System.Reflection.Emit.Label">
+﻿<Type Name="Label" FullName="System.Reflection.Emit.Label">
   <TypeSignature Language="C#" Value="public struct Label" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Label extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.Label" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Label" />
+  <TypeSignature Language="F#" Value="type Label = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class Label" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +29,23 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the current instance is equal to a specified object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.Label.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="label.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -58,6 +74,9 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Reflection.Emit.Label obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Reflection.Emit.Label obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.Label.Equals(System.Reflection.Emit.Label)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (obj As Label) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Reflection.Emit.Label -&gt; bool" Usage="label.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Reflection::Emit::Label obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -87,6 +106,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.Label.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="label.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -112,6 +134,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.Emit.Label a, System.Reflection.Emit.Label b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.Emit.Label a, valuetype System.Reflection.Emit.Label b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.Label.op_Equality(System.Reflection.Emit.Label,System.Reflection.Emit.Label)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (a As Label, b As Label) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.Emit.Label * System.Reflection.Emit.Label -&gt; bool" Usage="a = b" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::Emit::Label a, System::Reflection::Emit::Label b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -145,6 +170,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.Emit.Label a, System.Reflection.Emit.Label b);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Emit.Label a, valuetype System.Reflection.Emit.Label b) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.Label.op_Inequality(System.Reflection.Emit.Label,System.Reflection.Emit.Label)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (a As Label, b As Label) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.Emit.Label * System.Reflection.Emit.Label -&gt; bool" Usage="System.Reflection.Emit.Label.op_Inequality (a, b)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::Emit::Label a, System::Reflection::Emit::Label b);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -174,15 +202,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether the current instance is equal to a specified object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

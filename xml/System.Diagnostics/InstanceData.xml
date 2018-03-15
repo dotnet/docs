@@ -1,7 +1,10 @@
-<Type Name="InstanceData" FullName="System.Diagnostics.InstanceData">
+﻿<Type Name="InstanceData" FullName="System.Diagnostics.InstanceData">
   <TypeSignature Language="C#" Value="public class InstanceData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InstanceData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.InstanceData" />
+  <TypeSignature Language="VB.NET" Value="Public Class InstanceData" />
+  <TypeSignature Language="F#" Value="type InstanceData = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InstanceData" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public InstanceData (string instanceName, System.Diagnostics.CounterSample sample);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string instanceName, valuetype System.Diagnostics.CounterSample sample) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.InstanceData.#ctor(System.String,System.Diagnostics.CounterSample)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (instanceName As String, sample As CounterSample)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.InstanceData : string * System.Diagnostics.CounterSample -&gt; System.Diagnostics.InstanceData" Usage="new System.Diagnostics.InstanceData (instanceName, sample)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceData(System::String ^ instanceName, System::Diagnostics::CounterSample sample);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +66,9 @@
       <MemberSignature Language="C#" Value="public string InstanceName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InstanceName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.InstanceData.InstanceName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceName As String" />
+      <MemberSignature Language="F#" Value="member this.InstanceName : string" Usage="System.Diagnostics.InstanceData.InstanceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InstanceName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -88,6 +97,9 @@
       <MemberSignature Language="C#" Value="public long RawValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 RawValue" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.InstanceData.RawValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RawValue As Long" />
+      <MemberSignature Language="F#" Value="member this.RawValue : int64" Usage="System.Diagnostics.InstanceData.RawValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long RawValue { long get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -116,6 +128,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.CounterSample Sample { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Diagnostics.CounterSample Sample" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.InstanceData.Sample" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sample As CounterSample" />
+      <MemberSignature Language="F#" Value="member this.Sample : System.Diagnostics.CounterSample" Usage="System.Diagnostics.InstanceData.Sample" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::CounterSample Sample { System::Diagnostics::CounterSample get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ExpressionContext" FullName="System.ComponentModel.Design.Serialization.ExpressionContext">
+﻿<Type Name="ExpressionContext" FullName="System.ComponentModel.Design.Serialization.ExpressionContext">
   <TypeSignature Language="C#" Value="public sealed class ExpressionContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpressionContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.ExpressionContext" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExpressionContext" />
+  <TypeSignature Language="F#" Value="type ExpressionContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExpressionContext sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,10 +39,22 @@ button1.Text = rm.GetString("button1_Text");
     <altmember cref="T:System.CodeDom.CodeExpression" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.ExpressionContext" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ExpressionContext (System.CodeDom.CodeExpression expression, Type expressionType, object owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression expression, class System.Type expressionType, object owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ExpressionContext.#ctor(System.CodeDom.CodeExpression,System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (expression As CodeExpression, expressionType As Type, owner As Object)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.ExpressionContext : System.CodeDom.CodeExpression * Type * obj -&gt; System.ComponentModel.Design.Serialization.ExpressionContext" Usage="new System.ComponentModel.Design.Serialization.ExpressionContext (expression, expressionType, owner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpressionContext(System::CodeDom::CodeExpression ^ expression, Type ^ expressionType, System::Object ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -66,6 +81,9 @@ button1.Text = rm.GetString("button1_Text");
       <MemberSignature Language="C#" Value="public ExpressionContext (System.CodeDom.CodeExpression expression, Type expressionType, object owner, object presetValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeExpression expression, class System.Type expressionType, object owner, object presetValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ExpressionContext.#ctor(System.CodeDom.CodeExpression,System.Type,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (expression As CodeExpression, expressionType As Type, owner As Object, presetValue As Object)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Serialization.ExpressionContext : System.CodeDom.CodeExpression * Type * obj * obj -&gt; System.ComponentModel.Design.Serialization.ExpressionContext" Usage="new System.ComponentModel.Design.Serialization.ExpressionContext (expression, expressionType, owner, presetValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpressionContext(System::CodeDom::CodeExpression ^ expression, Type ^ expressionType, System::Object ^ owner, System::Object ^ presetValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -94,6 +112,9 @@ button1.Text = rm.GetString("button1_Text");
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression Expression { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression Expression" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.ExpressionContext.Expression" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Expression As CodeExpression" />
+      <MemberSignature Language="F#" Value="member this.Expression : System.CodeDom.CodeExpression" Usage="System.ComponentModel.Design.Serialization.ExpressionContext.Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ Expression { System::CodeDom::CodeExpression ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -114,6 +135,9 @@ button1.Text = rm.GetString("button1_Text");
       <MemberSignature Language="C#" Value="public Type ExpressionType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ExpressionType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.ExpressionContext.ExpressionType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExpressionType As Type" />
+      <MemberSignature Language="F#" Value="member this.ExpressionType : Type" Usage="System.ComponentModel.Design.Serialization.ExpressionContext.ExpressionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ExpressionType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -141,6 +165,9 @@ button1.Text = rm.GetString("button1_Text");
       <MemberSignature Language="C#" Value="public object Owner { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Owner" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.ExpressionContext.Owner" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Owner As Object" />
+      <MemberSignature Language="F#" Value="member this.Owner : obj" Usage="System.ComponentModel.Design.Serialization.ExpressionContext.Owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Owner { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -168,6 +195,9 @@ button1.Text = rm.GetString("button1_Text");
       <MemberSignature Language="C#" Value="public object PresetValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object PresetValue" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Design.Serialization.ExpressionContext.PresetValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresetValue As Object" />
+      <MemberSignature Language="F#" Value="member this.PresetValue : obj" Usage="System.ComponentModel.Design.Serialization.ExpressionContext.PresetValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ PresetValue { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -203,14 +233,5 @@ button1.Padding.Left = 5;
         <altmember cref="T:System.CodeDom.CodeExpression" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.ExpressionContext" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

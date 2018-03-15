@@ -1,7 +1,10 @@
-<Type Name="DependentCloneOption" FullName="System.Transactions.DependentCloneOption">
+﻿<Type Name="DependentCloneOption" FullName="System.Transactions.DependentCloneOption">
   <TypeSignature Language="C#" Value="public enum DependentCloneOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DependentCloneOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.DependentCloneOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DependentCloneOption" />
+  <TypeSignature Language="F#" Value="type DependentCloneOption = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DependentCloneOption" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="BlockCommitUntilComplete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.DependentCloneOption BlockCommitUntilComplete = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Transactions.DependentCloneOption.BlockCommitUntilComplete" />
+      <MemberSignature Language="VB.NET" Value="BlockCommitUntilComplete" />
+      <MemberSignature Language="F#" Value="BlockCommitUntilComplete = 0" Usage="System.Transactions.DependentCloneOption.BlockCommitUntilComplete" />
+      <MemberSignature Language="C++ CLI" Value="BlockCommitUntilComplete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -59,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Transactions.DependentCloneOption</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The dependent transaction blocks the commit process of the transaction until the parent transaction times out, or <see cref="M:System.Transactions.DependentTransaction.Complete" /> is called. In this case, additional work can be done on the transaction and new enlistments can be created.</summary>
       </Docs>
@@ -67,6 +74,9 @@
       <MemberSignature Language="C#" Value="RollbackIfNotComplete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.DependentCloneOption RollbackIfNotComplete = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Transactions.DependentCloneOption.RollbackIfNotComplete" />
+      <MemberSignature Language="VB.NET" Value="RollbackIfNotComplete" />
+      <MemberSignature Language="F#" Value="RollbackIfNotComplete = 1" Usage="System.Transactions.DependentCloneOption.RollbackIfNotComplete" />
+      <MemberSignature Language="C++ CLI" Value="RollbackIfNotComplete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -84,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Transactions.DependentCloneOption</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The dependent transaction automatically aborts the transaction if Commit is called on the parent transaction before <see cref="M:System.Transactions.DependentTransaction.Complete" /> is called.</summary>
       </Docs>

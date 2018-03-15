@@ -1,7 +1,10 @@
-<Type Name="OneWayAttribute" FullName="System.Runtime.Remoting.Messaging.OneWayAttribute">
+﻿<Type Name="OneWayAttribute" FullName="System.Runtime.Remoting.Messaging.OneWayAttribute">
   <TypeSignature Language="C#" Value="public class OneWayAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OneWayAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Messaging.OneWayAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class OneWayAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type OneWayAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OneWayAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="public OneWayAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Messaging.OneWayAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OneWayAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ShiftConstants" FullName="Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants">
+﻿<Type Name="ShiftConstants" FullName="Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants">
   <TypeSignature Language="C#" Value="public enum ShiftConstants" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ShiftConstants extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ShiftConstants" />
+  <TypeSignature Language="F#" Value="type ShiftConstants = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ShiftConstants" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="AltMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants AltMask = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants.AltMask" />
+      <MemberSignature Language="VB.NET" Value="AltMask" />
+      <MemberSignature Language="F#" Value="AltMask = 4" Usage="Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants.AltMask" />
+      <MemberSignature Language="C++ CLI" Value="AltMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -42,6 +48,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Equivalent to the Visual Basic 6.0 constant <see langword="vbAltMask" />.</summary>
       </Docs>
@@ -50,6 +57,9 @@
       <MemberSignature Language="C#" Value="CtrlMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants CtrlMask = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants.CtrlMask" />
+      <MemberSignature Language="VB.NET" Value="CtrlMask" />
+      <MemberSignature Language="F#" Value="CtrlMask = 2" Usage="Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants.CtrlMask" />
+      <MemberSignature Language="C++ CLI" Value="CtrlMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Equivalent to the Visual Basic 6.0 constant <see langword="vbCtrlMask" />.</summary>
       </Docs>
@@ -66,6 +77,9 @@
       <MemberSignature Language="C#" Value="ShiftMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants ShiftMask = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants.ShiftMask" />
+      <MemberSignature Language="VB.NET" Value="ShiftMask" />
+      <MemberSignature Language="F#" Value="ShiftMask = 1" Usage="Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants.ShiftMask" />
+      <MemberSignature Language="C++ CLI" Value="ShiftMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -74,6 +88,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.ShiftConstants</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Equivalent to the Visual Basic 6.0 constant <see langword="vbShiftMask" />.</summary>
       </Docs>

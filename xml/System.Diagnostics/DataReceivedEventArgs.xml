@@ -1,7 +1,10 @@
-<Type Name="DataReceivedEventArgs" FullName="System.Diagnostics.DataReceivedEventArgs">
+﻿<Type Name="DataReceivedEventArgs" FullName="System.Diagnostics.DataReceivedEventArgs">
   <TypeSignature Language="C#" Value="public class DataReceivedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataReceivedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.DataReceivedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataReceivedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type DataReceivedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataReceivedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Process</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -51,6 +54,9 @@
       <MemberSignature Language="C#" Value="public string Data { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Data" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.DataReceivedEventArgs.Data" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Data As String" />
+      <MemberSignature Language="F#" Value="member this.Data : string" Usage="System.Diagnostics.DataReceivedEventArgs.Data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Data { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>

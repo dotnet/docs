@@ -1,7 +1,10 @@
-<Type Name="ViewStateData" FullName="System.Activities.Presentation.ViewState.ViewStateData">
+﻿<Type Name="ViewStateData" FullName="System.Activities.Presentation.ViewState.ViewStateData">
   <TypeSignature Language="C#" Value="public sealed class ViewStateData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ViewStateData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.ViewState.ViewStateData" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ViewStateData" />
+  <TypeSignature Language="F#" Value="type ViewStateData = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ViewStateData sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public ViewStateData ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.ViewState.ViewStateData.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ViewStateData();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public string Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.ViewState.ViewStateData.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string with get, set" Usage="System.Activities.Presentation.ViewState.ViewStateData.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

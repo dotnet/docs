@@ -1,7 +1,10 @@
-<Type Name="Mouse" FullName="Microsoft.VisualBasic.Devices.Mouse">
+﻿<Type Name="Mouse" FullName="Microsoft.VisualBasic.Devices.Mouse">
   <TypeSignature Language="C#" Value="public class Mouse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Mouse extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.Mouse" />
+  <TypeSignature Language="VB.NET" Value="Public Class Mouse" />
+  <TypeSignature Language="F#" Value="type Mouse = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Mouse" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -45,6 +48,8 @@
       <MemberSignature Language="C#" Value="public Mouse ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Devices.Mouse.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mouse();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -67,6 +72,9 @@
       <MemberSignature Language="C#" Value="public bool ButtonsSwapped { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ButtonsSwapped" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Mouse.ButtonsSwapped" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ButtonsSwapped As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ButtonsSwapped : bool" Usage="Microsoft.VisualBasic.Devices.Mouse.ButtonsSwapped" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ButtonsSwapped { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -116,6 +124,9 @@
       <MemberSignature Language="C#" Value="public bool WheelExists { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool WheelExists" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Mouse.WheelExists" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WheelExists As Boolean" />
+      <MemberSignature Language="F#" Value="member this.WheelExists : bool" Usage="Microsoft.VisualBasic.Devices.Mouse.WheelExists" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool WheelExists { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -166,6 +177,9 @@
       <MemberSignature Language="C#" Value="public int WheelScrollLines { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 WheelScrollLines" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Devices.Mouse.WheelScrollLines" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WheelScrollLines As Integer" />
+      <MemberSignature Language="F#" Value="member this.WheelScrollLines : int" Usage="Microsoft.VisualBasic.Devices.Mouse.WheelScrollLines" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int WheelScrollLines { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

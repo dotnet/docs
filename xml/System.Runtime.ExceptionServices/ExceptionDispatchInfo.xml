@@ -1,7 +1,10 @@
-<Type Name="ExceptionDispatchInfo" FullName="System.Runtime.ExceptionServices.ExceptionDispatchInfo">
+﻿<Type Name="ExceptionDispatchInfo" FullName="System.Runtime.ExceptionServices.ExceptionDispatchInfo">
   <TypeSignature Language="C#" Value="public sealed class ExceptionDispatchInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExceptionDispatchInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.ExceptionServices.ExceptionDispatchInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExceptionDispatchInfo" />
+  <TypeSignature Language="F#" Value="type ExceptionDispatchInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExceptionDispatchInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.ExceptionServices.ExceptionDispatchInfo Capture (Exception source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.ExceptionServices.ExceptionDispatchInfo Capture(class System.Exception source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Capture (source As Exception) As ExceptionDispatchInfo" />
+      <MemberSignature Language="F#" Value="static member Capture : Exception -&gt; System.Runtime.ExceptionServices.ExceptionDispatchInfo" Usage="System.Runtime.ExceptionServices.ExceptionDispatchInfo.Capture source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::ExceptionServices::ExceptionDispatchInfo ^ Capture(Exception ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -87,6 +93,9 @@
       <MemberSignature Language="C#" Value="public Exception SourceException { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception SourceException" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.ExceptionServices.ExceptionDispatchInfo.SourceException" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceException As Exception" />
+      <MemberSignature Language="F#" Value="member this.SourceException : Exception" Usage="System.Runtime.ExceptionServices.ExceptionDispatchInfo.SourceException" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ SourceException { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -125,6 +134,9 @@
       <MemberSignature Language="C#" Value="public void Throw ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Throw() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Throw ()" />
+      <MemberSignature Language="F#" Value="member this.Throw : unit -&gt; unit" Usage="exceptionDispatchInfo.Throw " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Throw();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -163,6 +175,9 @@
       <MemberSignature Language="C#" Value="public static void Throw (Exception source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Throw(class System.Exception source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Throw (source As Exception)" />
+      <MemberSignature Language="F#" Value="static member Throw : Exception -&gt; unit" Usage="System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Throw(Exception ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

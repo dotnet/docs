@@ -1,7 +1,10 @@
-<Type Name="XpsSerializationManager" FullName="System.Windows.Xps.Serialization.XpsSerializationManager">
+﻿<Type Name="XpsSerializationManager" FullName="System.Windows.Xps.Serialization.XpsSerializationManager">
   <TypeSignature Language="C#" Value="public class XpsSerializationManager : System.Windows.Xps.Serialization.PackageSerializationManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsSerializationManager extends System.Windows.Xps.Serialization.PackageSerializationManager" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsSerializationManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class XpsSerializationManager&#xA;Inherits PackageSerializationManager" />
+  <TypeSignature Language="F#" Value="type XpsSerializationManager = class&#xA;    inherit PackageSerializationManager&#xA;    interface IXpsSerializationManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XpsSerializationManager : System::Windows::Xps::Serialization::PackageSerializationManager" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="public XpsSerializationManager (System.Windows.Xps.Serialization.BasePackagingPolicy packagingPolicy, bool batchMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Xps.Serialization.BasePackagingPolicy packagingPolicy, bool batchMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManager.#ctor(System.Windows.Xps.Serialization.BasePackagingPolicy,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (packagingPolicy As BasePackagingPolicy, batchMode As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.Serialization.XpsSerializationManager : System.Windows.Xps.Serialization.BasePackagingPolicy * bool -&gt; System.Windows.Xps.Serialization.XpsSerializationManager" Usage="new System.Windows.Xps.Serialization.XpsSerializationManager (packagingPolicy, batchMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsSerializationManager(System::Windows::Xps::Serialization::BasePackagingPolicy ^ packagingPolicy, bool batchMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -51,6 +57,9 @@
       <MemberSignature Language="C#" Value="public virtual void Commit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Commit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManager.Commit" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Commit ()" />
+      <MemberSignature Language="F#" Value="abstract member Commit : unit -&gt; unit&#xA;override this.Commit : unit -&gt; unit" Usage="xpsSerializationManager.Commit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Commit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -69,6 +78,9 @@
       <MemberSignature Language="C#" Value="public bool IsBatchMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBatchMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsSerializationManager.IsBatchMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBatchMode As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsBatchMode : bool" Usage="System.Windows.Xps.Serialization.XpsSerializationManager.IsBatchMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBatchMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -95,6 +107,9 @@
       <MemberSignature Language="C#" Value="public override void SaveAsXaml (object serializedObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SaveAsXaml(object serializedObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManager.SaveAsXaml(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SaveAsXaml (serializedObject As Object)" />
+      <MemberSignature Language="F#" Value="override this.SaveAsXaml : obj -&gt; unit" Usage="xpsSerializationManager.SaveAsXaml serializedObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SaveAsXaml(System::Object ^ serializedObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -116,6 +131,9 @@
       <MemberSignature Language="C#" Value="public void SetFontSubsettingCountPolicy (int countPolicy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFontSubsettingCountPolicy(int32 countPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManager.SetFontSubsettingCountPolicy(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFontSubsettingCountPolicy (countPolicy As Integer)" />
+      <MemberSignature Language="F#" Value="member this.SetFontSubsettingCountPolicy : int -&gt; unit" Usage="xpsSerializationManager.SetFontSubsettingCountPolicy countPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontSubsettingCountPolicy(int countPolicy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -154,6 +172,9 @@
       <MemberSignature Language="C#" Value="public void SetFontSubsettingPolicy (System.Windows.Xps.Serialization.FontSubsetterCommitPolicies policy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetFontSubsettingPolicy(valuetype System.Windows.Xps.Serialization.FontSubsetterCommitPolicies policy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationManager.SetFontSubsettingPolicy(System.Windows.Xps.Serialization.FontSubsetterCommitPolicies)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetFontSubsettingPolicy (policy As FontSubsetterCommitPolicies)" />
+      <MemberSignature Language="F#" Value="member this.SetFontSubsettingPolicy : System.Windows.Xps.Serialization.FontSubsetterCommitPolicies -&gt; unit" Usage="xpsSerializationManager.SetFontSubsettingPolicy policy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetFontSubsettingPolicy(System::Windows::Xps::Serialization::FontSubsetterCommitPolicies policy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -194,6 +215,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventHandler XpsSerializationPrintTicketRequired;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventHandler XpsSerializationPrintTicketRequired" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Xps.Serialization.XpsSerializationManager.XpsSerializationPrintTicketRequired" />
+      <MemberSignature Language="VB.NET" Value="Public Event XpsSerializationPrintTicketRequired As XpsSerializationPrintTicketRequiredEventHandler " />
+      <MemberSignature Language="F#" Value="member this.XpsSerializationPrintTicketRequired : System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventHandler " Usage="member this.XpsSerializationPrintTicketRequired : System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Xps::Serialization::XpsSerializationPrintTicketRequiredEventHandler ^ XpsSerializationPrintTicketRequired;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -218,6 +242,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventHandler XpsSerializationProgressChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventHandler XpsSerializationProgressChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Xps.Serialization.XpsSerializationManager.XpsSerializationProgressChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event XpsSerializationProgressChanged As XpsSerializationProgressChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.XpsSerializationProgressChanged : System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventHandler " Usage="member this.XpsSerializationProgressChanged : System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Xps::Serialization::XpsSerializationProgressChangedEventHandler ^ XpsSerializationProgressChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

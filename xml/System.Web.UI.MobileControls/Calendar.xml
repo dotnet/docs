@@ -1,7 +1,10 @@
-<Type Name="Calendar" FullName="System.Web.UI.MobileControls.Calendar">
+﻿<Type Name="Calendar" FullName="System.Web.UI.MobileControls.Calendar">
   <TypeSignature Language="C#" Value="public class Calendar : System.Web.UI.MobileControls.MobileControl, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Calendar extends System.Web.UI.MobileControls.MobileControl implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Calendar" />
+  <TypeSignature Language="VB.NET" Value="Public Class Calendar&#xA;Inherits MobileControl&#xA;Implements IPostBackEventHandler" />
+  <TypeSignature Language="F#" Value="type Calendar = class&#xA;    inherit MobileControl&#xA;    interface IPostBackEventHandler" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Calendar : System::Web::UI::MobileControls::MobileControl, System::Web::UI::IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +76,8 @@
       <MemberSignature Language="C#" Value="public Calendar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Calendar.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Calendar();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -88,6 +93,9 @@
       <MemberSignature Language="C#" Value="public string CalendarEntryText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CalendarEntryText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Calendar.CalendarEntryText" />
+      <MemberSignature Language="VB.NET" Value="Public Property CalendarEntryText As String" />
+      <MemberSignature Language="F#" Value="member this.CalendarEntryText : string with get, set" Usage="System.Web.UI.MobileControls.Calendar.CalendarEntryText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CalendarEntryText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -129,6 +137,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.Calendar CreateWebCalendar ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.Calendar CreateWebCalendar() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Calendar.CreateWebCalendar" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateWebCalendar () As Calendar" />
+      <MemberSignature Language="F#" Value="abstract member CreateWebCalendar : unit -&gt; System.Web.UI.WebControls.Calendar&#xA;override this.CreateWebCalendar : unit -&gt; System.Web.UI.WebControls.Calendar" Usage="calendar.CreateWebCalendar " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::Calendar ^ CreateWebCalendar();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -155,6 +166,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.FirstDayOfWeek FirstDayOfWeek { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.FirstDayOfWeek FirstDayOfWeek" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Calendar.FirstDayOfWeek" />
+      <MemberSignature Language="VB.NET" Value="Public Property FirstDayOfWeek As FirstDayOfWeek" />
+      <MemberSignature Language="F#" Value="member this.FirstDayOfWeek : System.Web.UI.WebControls.FirstDayOfWeek with get, set" Usage="System.Web.UI.MobileControls.Calendar.FirstDayOfWeek" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::FirstDayOfWeek FirstDayOfWeek { System::Web::UI::WebControls::FirstDayOfWeek get(); void set(System::Web::UI::WebControls::FirstDayOfWeek value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -165,7 +179,7 @@
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -190,6 +204,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelectionChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectionChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Calendar.OnSelectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectionChanged ()" />
+      <MemberSignature Language="F#" Value="abstract member OnSelectionChanged : unit -&gt; unit&#xA;override this.OnSelectionChanged : unit -&gt; unit" Usage="calendar.OnSelectionChanged " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectionChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -220,6 +237,9 @@
       <MemberSignature Language="C#" Value="protected void RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Calendar.RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RaisePostBackEvent (eventArgument As String)" />
+      <MemberSignature Language="F#" Value="member this.RaisePostBackEvent : string -&gt; unit" Usage="calendar.RaisePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -248,6 +268,9 @@
       <MemberSignature Language="C#" Value="public void RaiseSelectionChangedEvent ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RaiseSelectionChangedEvent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Calendar.RaiseSelectionChangedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RaiseSelectionChangedEvent ()" />
+      <MemberSignature Language="F#" Value="member this.RaiseSelectionChangedEvent : unit -&gt; unit" Usage="calendar.RaiseSelectionChangedEvent " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RaiseSelectionChangedEvent();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -273,6 +296,9 @@
       <MemberSignature Language="C#" Value="public DateTime SelectedDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime SelectedDate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Calendar.SelectedDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.SelectedDate : DateTime with get, set" Usage="System.Web.UI.MobileControls.Calendar.SelectedDate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime SelectedDate { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -319,6 +345,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.SelectedDatesCollection SelectedDates { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.SelectedDatesCollection SelectedDates" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Calendar.SelectedDates" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedDates As SelectedDatesCollection" />
+      <MemberSignature Language="F#" Value="member this.SelectedDates : System.Web.UI.WebControls.SelectedDatesCollection" Usage="System.Web.UI.MobileControls.Calendar.SelectedDates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::SelectedDatesCollection ^ SelectedDates { System::Web::UI::WebControls::SelectedDatesCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -329,7 +358,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -360,6 +389,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler SelectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.Calendar.SelectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SelectionChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectionChanged : EventHandler " Usage="member this.SelectionChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -378,6 +410,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.CalendarSelectionMode SelectionMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.CalendarSelectionMode SelectionMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Calendar.SelectionMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionMode As CalendarSelectionMode" />
+      <MemberSignature Language="F#" Value="member this.SelectionMode : System.Web.UI.WebControls.CalendarSelectionMode with get, set" Usage="System.Web.UI.MobileControls.Calendar.SelectionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::CalendarSelectionMode SelectionMode { System::Web::UI::WebControls::CalendarSelectionMode get(); void set(System::Web::UI::WebControls::CalendarSelectionMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -388,7 +423,7 @@
           <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
+          <AttributeName>System.ComponentModel.DefaultValue</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -420,6 +455,9 @@
       <MemberSignature Language="C#" Value="public bool ShowDayHeader { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowDayHeader" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Calendar.ShowDayHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShowDayHeader As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowDayHeader : bool with get, set" Usage="System.Web.UI.MobileControls.Calendar.ShowDayHeader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ShowDayHeader { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -462,6 +500,8 @@
       <MemberSignature Language="C#" Value="void IPostBackEventHandler.RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Calendar.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -490,6 +530,9 @@
       <MemberSignature Language="C#" Value="public DateTime VisibleDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime VisibleDate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Calendar.VisibleDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property VisibleDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.VisibleDate : DateTime with get, set" Usage="System.Web.UI.MobileControls.Calendar.VisibleDate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime VisibleDate { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -535,6 +578,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Calendar WebCalendar { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Calendar WebCalendar" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Calendar.WebCalendar" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebCalendar As Calendar" />
+      <MemberSignature Language="F#" Value="member this.WebCalendar : System.Web.UI.WebControls.Calendar" Usage="System.Web.UI.MobileControls.Calendar.WebCalendar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Calendar ^ WebCalendar { System::Web::UI::WebControls::Calendar ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -548,7 +594,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

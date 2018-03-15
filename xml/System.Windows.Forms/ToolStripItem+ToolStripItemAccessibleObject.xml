@@ -1,7 +1,10 @@
-<Type Name="ToolStripItem+ToolStripItemAccessibleObject" FullName="System.Windows.Forms.ToolStripItem+ToolStripItemAccessibleObject">
+﻿<Type Name="ToolStripItem+ToolStripItemAccessibleObject" FullName="System.Windows.Forms.ToolStripItem+ToolStripItemAccessibleObject">
   <TypeSignature Language="C#" Value="public class ToolStripItem.ToolStripItemAccessibleObject : System.Windows.Forms.AccessibleObject" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ToolStripItem/ToolStripItemAccessibleObject extends System.Windows.Forms.AccessibleObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolStripItem.ToolStripItemAccessibleObject&#xA;Inherits AccessibleObject" />
+  <TypeSignature Language="F#" Value="type ToolStripItem.ToolStripItemAccessibleObject = class&#xA;    inherit AccessibleObject" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class ToolStripItem::ToolStripItemAccessibleObject : System::Windows::Forms::AccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="public ToolStripItemAccessibleObject (System.Windows.Forms.ToolStripItem ownerItem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ToolStripItem ownerItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.#ctor(System.Windows.Forms.ToolStripItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ownerItem As ToolStripItem)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject : System.Windows.Forms.ToolStripItem -&gt; System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject" Usage="new System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject ownerItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripItemAccessibleObject(System::Windows::Forms::ToolStripItem ^ ownerItem);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -43,6 +49,9 @@
       <MemberSignature Language="C#" Value="public void AddState (System.Windows.Forms.AccessibleStates state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddState(valuetype System.Windows.Forms.AccessibleStates state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.AddState(System.Windows.Forms.AccessibleStates)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddState (state As AccessibleStates)" />
+      <MemberSignature Language="F#" Value="member this.AddState : System.Windows.Forms.AccessibleStates -&gt; unit" Usage="toolStripItemAccessibleObject.AddState state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddState(System::Windows::Forms::AccessibleStates state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +73,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Rectangle Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Bounds As Rectangle" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.Bounds" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +94,9 @@
       <MemberSignature Language="C#" Value="public override string DefaultAction { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultAction" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.DefaultAction" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DefaultAction As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultAction : string" Usage="System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.DefaultAction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DefaultAction { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -100,6 +115,9 @@
       <MemberSignature Language="C#" Value="public override string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -118,6 +136,9 @@
       <MemberSignature Language="C#" Value="public override void DoDefaultAction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DoDefaultAction() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.DoDefaultAction" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub DoDefaultAction ()" />
+      <MemberSignature Language="F#" Value="override this.DoDefaultAction : unit -&gt; unit" Usage="toolStripItemAccessibleObject.DoDefaultAction " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DoDefaultAction();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -136,6 +157,9 @@
       <MemberSignature Language="C#" Value="public override int GetHelpTopic (out string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHelpTopic([out] string&amp; fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.GetHelpTopic(System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHelpTopic (ByRef fileName As String) As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHelpTopic :  -&gt; int" Usage="toolStripItemAccessibleObject.GetHelpTopic fileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHelpTopic([Runtime::InteropServices::Out] System::String ^ % fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +182,9 @@
       <MemberSignature Language="C#" Value="public override string Help { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Help" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.Help" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Help As String" />
+      <MemberSignature Language="F#" Value="member this.Help : string" Usage="System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.Help" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Help { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -176,6 +203,9 @@
       <MemberSignature Language="C#" Value="public override string KeyboardShortcut { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeyboardShortcut" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.KeyboardShortcut" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeyboardShortcut As String" />
+      <MemberSignature Language="F#" Value="member this.KeyboardShortcut : string" Usage="System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.KeyboardShortcut" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ KeyboardShortcut { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -194,6 +224,9 @@
       <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -212,6 +245,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject Navigate (System.Windows.Forms.AccessibleNavigation navigationDirection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Windows.Forms.AccessibleObject Navigate(valuetype System.Windows.Forms.AccessibleNavigation navigationDirection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Navigate (navigationDirection As AccessibleNavigation) As AccessibleObject" />
+      <MemberSignature Language="F#" Value="override this.Navigate : System.Windows.Forms.AccessibleNavigation -&gt; System.Windows.Forms.AccessibleObject" Usage="toolStripItemAccessibleObject.Navigate navigationDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Windows::Forms::AccessibleObject ^ Navigate(System::Windows::Forms::AccessibleNavigation navigationDirection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -234,6 +270,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.AccessibleObject Parent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Parent As AccessibleObject" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Windows.Forms.AccessibleObject" Usage="System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.Parent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleObject ^ Parent { System::Windows::Forms::AccessibleObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -252,6 +291,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleRole Role { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleRole Role" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.Role" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Role As AccessibleRole" />
+      <MemberSignature Language="F#" Value="member this.Role : System.Windows.Forms.AccessibleRole" Usage="System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.Role" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleRole Role { System::Windows::Forms::AccessibleRole get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -270,6 +312,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleStates State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleStates State" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.State" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As AccessibleStates" />
+      <MemberSignature Language="F#" Value="member this.State : System.Windows.Forms.AccessibleStates" Usage="System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleStates State { System::Windows::Forms::AccessibleStates get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -288,6 +333,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="toolStripItemAccessibleObject.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

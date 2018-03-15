@@ -1,7 +1,10 @@
-<Type Name="StringDigitSubstitute" FullName="System.Drawing.StringDigitSubstitute">
+﻿<Type Name="StringDigitSubstitute" FullName="System.Drawing.StringDigitSubstitute">
   <TypeSignature Language="C#" Value="public enum StringDigitSubstitute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StringDigitSubstitute extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.StringDigitSubstitute" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StringDigitSubstitute" />
+  <TypeSignature Language="F#" Value="type StringDigitSubstitute = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class StringDigitSubstitute" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="National" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringDigitSubstitute National = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringDigitSubstitute.National" />
+      <MemberSignature Language="VB.NET" Value="National" />
+      <MemberSignature Language="F#" Value="National = 2" Usage="System.Drawing.StringDigitSubstitute.National" />
+      <MemberSignature Language="C++ CLI" Value="National" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.StringDigitSubstitute</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies substitution digits that correspond with the official national language of the user's locale.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringDigitSubstitute None = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringDigitSubstitute.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Drawing.StringDigitSubstitute.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.StringDigitSubstitute</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies to disable substitutions.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="Traditional" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringDigitSubstitute Traditional = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringDigitSubstitute.Traditional" />
+      <MemberSignature Language="VB.NET" Value="Traditional" />
+      <MemberSignature Language="F#" Value="Traditional = 3" Usage="System.Drawing.StringDigitSubstitute.Traditional" />
+      <MemberSignature Language="C++ CLI" Value="Traditional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.StringDigitSubstitute</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies substitution digits that correspond with the user's native script or language, which may be different from the official national language of the user's locale.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="User" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.StringDigitSubstitute User = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.StringDigitSubstitute.User" />
+      <MemberSignature Language="VB.NET" Value="User" />
+      <MemberSignature Language="F#" Value="User = 0" Usage="System.Drawing.StringDigitSubstitute.User" />
+      <MemberSignature Language="C++ CLI" Value="User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.StringDigitSubstitute</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies a user-defined substitution scheme.</summary>
       </Docs>

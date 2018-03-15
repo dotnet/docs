@@ -1,7 +1,10 @@
-<Type Name="WebService" FullName="System.Web.Services.WebService">
+﻿<Type Name="WebService" FullName="System.Web.Services.WebService">
   <TypeSignature Language="C#" Value="public class WebService : System.ComponentModel.MarshalByValueComponent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebService extends System.ComponentModel.MarshalByValueComponent" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.WebService" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebService&#xA;Inherits MarshalByValueComponent" />
+  <TypeSignature Language="F#" Value="type WebService = class&#xA;    inherit MarshalByValueComponent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebService : System::ComponentModel::MarshalByValueComponent" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,8 @@
       <MemberSignature Language="C#" Value="public WebService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.WebService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -52,6 +57,9 @@
       <MemberSignature Language="C#" Value="public System.Web.HttpApplicationState Application { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpApplicationState Application" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As HttpApplicationState" />
+      <MemberSignature Language="F#" Value="member this.Application : System.Web.HttpApplicationState" Usage="System.Web.Services.WebService.Application" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpApplicationState ^ Application { System::Web::HttpApplicationState ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -65,7 +73,7 @@
           <AttributeName>System.ComponentModel.Description("The ASP.NET application object for the current request.")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -96,6 +104,9 @@
       <MemberSignature Language="C#" Value="public System.Web.HttpContext Context { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpContext Context" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.Context" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Context As HttpContext" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Web.HttpContext" Usage="System.Web.Services.WebService.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpContext ^ Context { System::Web::HttpContext ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -106,7 +117,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -139,6 +150,9 @@
       <MemberSignature Language="C#" Value="public System.Web.HttpServerUtility Server { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.HttpServerUtility Server" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.Server" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Server As HttpServerUtility" />
+      <MemberSignature Language="F#" Value="member this.Server : System.Web.HttpServerUtility" Usage="System.Web.Services.WebService.Server" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::HttpServerUtility ^ Server { System::Web::HttpServerUtility ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -149,7 +163,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -181,6 +195,9 @@
       <MemberSignature Language="C#" Value="public System.Web.SessionState.HttpSessionState Session { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.SessionState.HttpSessionState Session" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.Session" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Session As HttpSessionState" />
+      <MemberSignature Language="F#" Value="member this.Session : System.Web.SessionState.HttpSessionState" Usage="System.Web.Services.WebService.Session" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::SessionState::HttpSessionState ^ Session { System::Web::SessionState::HttpSessionState ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -191,7 +208,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -217,6 +234,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.SoapProtocolVersion SoapVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Protocols.SoapProtocolVersion SoapVersion" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.SoapVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SoapVersion As SoapProtocolVersion" />
+      <MemberSignature Language="F#" Value="member this.SoapVersion : System.Web.Services.Protocols.SoapProtocolVersion" Usage="System.Web.Services.WebService.SoapVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Protocols::SoapProtocolVersion SoapVersion { System::Web::Services::Protocols::SoapProtocolVersion get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -227,7 +247,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -257,6 +277,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Principal.IPrincipal User { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.IPrincipal User" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebService.User" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property User As IPrincipal" />
+      <MemberSignature Language="F#" Value="member this.User : System.Security.Principal.IPrincipal" Usage="System.Web.Services.WebService.User" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IPrincipal ^ User { System::Security::Principal::IPrincipal ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -267,7 +290,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

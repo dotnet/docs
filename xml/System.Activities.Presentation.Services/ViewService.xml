@@ -1,7 +1,10 @@
-<Type Name="ViewService" FullName="System.Activities.Presentation.Services.ViewService">
+﻿<Type Name="ViewService" FullName="System.Activities.Presentation.Services.ViewService">
   <TypeSignature Language="C#" Value="public abstract class ViewService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ViewService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Services.ViewService" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ViewService" />
+  <TypeSignature Language="F#" Value="type ViewService = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ViewService abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="protected ViewService ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ViewService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ViewService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Activities.Presentation.Model.ModelItem GetModel (System.Windows.DependencyObject view);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Presentation.Model.ModelItem GetModel(class System.Windows.DependencyObject view) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ViewService.GetModel(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetModel (view As DependencyObject) As ModelItem" />
+      <MemberSignature Language="F#" Value="abstract member GetModel : System.Windows.DependencyObject -&gt; System.Activities.Presentation.Model.ModelItem" Usage="viewService.GetModel view" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Activities::Presentation::Model::ModelItem ^ GetModel(System::Windows::DependencyObject ^ view);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -66,6 +74,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.DependencyObject GetView (System.Activities.Presentation.Model.ModelItem model);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.DependencyObject GetView(class System.Activities.Presentation.Model.ModelItem model) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Services.ViewService.GetView(System.Activities.Presentation.Model.ModelItem)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetView (model As ModelItem) As DependencyObject" />
+      <MemberSignature Language="F#" Value="abstract member GetView : System.Activities.Presentation.Model.ModelItem -&gt; System.Windows.DependencyObject" Usage="viewService.GetView model" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::DependencyObject ^ GetView(System::Activities::Presentation::Model::ModelItem ^ model);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

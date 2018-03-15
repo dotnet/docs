@@ -1,7 +1,10 @@
-<Type Name="LocalClientSecuritySettings" FullName="System.ServiceModel.Channels.LocalClientSecuritySettings">
+﻿<Type Name="LocalClientSecuritySettings" FullName="System.ServiceModel.Channels.LocalClientSecuritySettings">
   <TypeSignature Language="C#" Value="public sealed class LocalClientSecuritySettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LocalClientSecuritySettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.LocalClientSecuritySettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LocalClientSecuritySettings" />
+  <TypeSignature Language="F#" Value="type LocalClientSecuritySettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LocalClientSecuritySettings sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public LocalClientSecuritySettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.LocalClientSecuritySettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalClientSecuritySettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +78,9 @@
       <MemberSignature Language="C#" Value="public bool CacheCookies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CacheCookies" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.LocalClientSecuritySettings.CacheCookies" />
+      <MemberSignature Language="VB.NET" Value="Public Property CacheCookies As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CacheCookies : bool with get, set" Usage="System.ServiceModel.Channels.LocalClientSecuritySettings.CacheCookies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CacheCookies { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -102,6 +110,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.LocalClientSecuritySettings Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Channels.LocalClientSecuritySettings Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.LocalClientSecuritySettings.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As LocalClientSecuritySettings" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.ServiceModel.Channels.LocalClientSecuritySettings" Usage="localClientSecuritySettings.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::Channels::LocalClientSecuritySettings ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,6 +149,9 @@
       <MemberSignature Language="C#" Value="public int CookieRenewalThresholdPercentage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CookieRenewalThresholdPercentage" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.LocalClientSecuritySettings.CookieRenewalThresholdPercentage" />
+      <MemberSignature Language="VB.NET" Value="Public Property CookieRenewalThresholdPercentage As Integer" />
+      <MemberSignature Language="F#" Value="member this.CookieRenewalThresholdPercentage : int with get, set" Usage="System.ServiceModel.Channels.LocalClientSecuritySettings.CookieRenewalThresholdPercentage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CookieRenewalThresholdPercentage { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -172,6 +186,9 @@
       <MemberSignature Language="C#" Value="public bool DetectReplays { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DetectReplays" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.LocalClientSecuritySettings.DetectReplays" />
+      <MemberSignature Language="VB.NET" Value="Public Property DetectReplays As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DetectReplays : bool with get, set" Usage="System.ServiceModel.Channels.LocalClientSecuritySettings.DetectReplays" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DetectReplays { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -201,6 +218,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.IdentityVerifier IdentityVerifier { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.IdentityVerifier IdentityVerifier" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.LocalClientSecuritySettings.IdentityVerifier" />
+      <MemberSignature Language="VB.NET" Value="Public Property IdentityVerifier As IdentityVerifier" />
+      <MemberSignature Language="F#" Value="member this.IdentityVerifier : System.ServiceModel.Security.IdentityVerifier with get, set" Usage="System.ServiceModel.Channels.LocalClientSecuritySettings.IdentityVerifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::IdentityVerifier ^ IdentityVerifier { System::ServiceModel::Security::IdentityVerifier ^ get(); void set(System::ServiceModel::Security::IdentityVerifier ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -234,6 +254,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan MaxClockSkew { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MaxClockSkew" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.LocalClientSecuritySettings.MaxClockSkew" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxClockSkew As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.MaxClockSkew : TimeSpan with get, set" Usage="System.ServiceModel.Channels.LocalClientSecuritySettings.MaxClockSkew" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxClockSkew { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -279,6 +302,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan MaxCookieCachingTime { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MaxCookieCachingTime" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.LocalClientSecuritySettings.MaxCookieCachingTime" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxCookieCachingTime As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.MaxCookieCachingTime : TimeSpan with get, set" Usage="System.ServiceModel.Channels.LocalClientSecuritySettings.MaxCookieCachingTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxCookieCachingTime { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -308,6 +334,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.NonceCache NonceCache { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.NonceCache NonceCache" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.LocalClientSecuritySettings.NonceCache" />
+      <MemberSignature Language="VB.NET" Value="Public Property NonceCache As NonceCache" />
+      <MemberSignature Language="F#" Value="member this.NonceCache : System.ServiceModel.Security.NonceCache with get, set" Usage="System.ServiceModel.Channels.LocalClientSecuritySettings.NonceCache" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::NonceCache ^ NonceCache { System::ServiceModel::Security::NonceCache ^ get(); void set(System::ServiceModel::Security::NonceCache ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -326,6 +355,9 @@
       <MemberSignature Language="C#" Value="public bool ReconnectTransportOnFailure { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReconnectTransportOnFailure" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.LocalClientSecuritySettings.ReconnectTransportOnFailure" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReconnectTransportOnFailure As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ReconnectTransportOnFailure : bool with get, set" Usage="System.ServiceModel.Channels.LocalClientSecuritySettings.ReconnectTransportOnFailure" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ReconnectTransportOnFailure { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -360,6 +392,9 @@
       <MemberSignature Language="C#" Value="public int ReplayCacheSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ReplayCacheSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.LocalClientSecuritySettings.ReplayCacheSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReplayCacheSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReplayCacheSize : int with get, set" Usage="System.ServiceModel.Channels.LocalClientSecuritySettings.ReplayCacheSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReplayCacheSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -395,6 +430,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan ReplayWindow { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ReplayWindow" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.LocalClientSecuritySettings.ReplayWindow" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReplayWindow As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.ReplayWindow : TimeSpan with get, set" Usage="System.ServiceModel.Channels.LocalClientSecuritySettings.ReplayWindow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ReplayWindow { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -436,6 +474,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan SessionKeyRenewalInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan SessionKeyRenewalInterval" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.LocalClientSecuritySettings.SessionKeyRenewalInterval" />
+      <MemberSignature Language="VB.NET" Value="Public Property SessionKeyRenewalInterval As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.SessionKeyRenewalInterval : TimeSpan with get, set" Usage="System.ServiceModel.Channels.LocalClientSecuritySettings.SessionKeyRenewalInterval" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan SessionKeyRenewalInterval { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -484,6 +525,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan SessionKeyRolloverInterval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan SessionKeyRolloverInterval" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.LocalClientSecuritySettings.SessionKeyRolloverInterval" />
+      <MemberSignature Language="VB.NET" Value="Public Property SessionKeyRolloverInterval As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.SessionKeyRolloverInterval : TimeSpan with get, set" Usage="System.ServiceModel.Channels.LocalClientSecuritySettings.SessionKeyRolloverInterval" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan SessionKeyRolloverInterval { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -534,6 +578,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan TimestampValidityDuration { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan TimestampValidityDuration" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.LocalClientSecuritySettings.TimestampValidityDuration" />
+      <MemberSignature Language="VB.NET" Value="Public Property TimestampValidityDuration As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.TimestampValidityDuration : TimeSpan with get, set" Usage="System.ServiceModel.Channels.LocalClientSecuritySettings.TimestampValidityDuration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan TimestampValidityDuration { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="MutexSecurity" FullName="System.Security.AccessControl.MutexSecurity">
+﻿<Type Name="MutexSecurity" FullName="System.Security.AccessControl.MutexSecurity">
   <TypeSignature Language="C#" Value="public sealed class MutexSecurity : System.Security.AccessControl.NativeObjectSecurity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MutexSecurity extends System.Security.AccessControl.NativeObjectSecurity" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.MutexSecurity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MutexSecurity&#xA;Inherits NativeObjectSecurity" />
+  <TypeSignature Language="F#" Value="type MutexSecurity = class&#xA;    inherit NativeObjectSecurity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MutexSecurity sealed : System::Security::AccessControl::NativeObjectSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,10 +84,22 @@
     <altmember cref="M:System.Threading.Mutex.SetAccessControl(System.Security.AccessControl.MutexSecurity)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.MutexSecurity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MutexSecurity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MutexSecurity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -114,6 +129,9 @@
       <MemberSignature Language="C#" Value="public MutexSecurity (string name, System.Security.AccessControl.AccessControlSections includeSections);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, valuetype System.Security.AccessControl.AccessControlSections includeSections) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.#ctor(System.String,System.Security.AccessControl.AccessControlSections)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, includeSections As AccessControlSections)" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.MutexSecurity : string * System.Security.AccessControl.AccessControlSections -&gt; System.Security.AccessControl.MutexSecurity" Usage="new System.Security.AccessControl.MutexSecurity (name, includeSections)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MutexSecurity(System::String ^ name, System::Security::AccessControl::AccessControlSections includeSections);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -151,6 +169,9 @@
       <MemberSignature Language="C#" Value="public override Type AccessRightType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AccessRightType" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.MutexSecurity.AccessRightType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRightType As Type" />
+      <MemberSignature Language="F#" Value="member this.AccessRightType : Type" Usage="System.Security.AccessControl.MutexSecurity.AccessRightType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRightType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -182,6 +203,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.AccessControl.AccessRule AccessRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AccessRule AccessRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
+      <MemberSignature Language="F#" Value="override this.AccessRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.AccessRule" Usage="mutexSecurity.AccessRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AccessRule ^ AccessRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -240,6 +263,9 @@
       <MemberSignature Language="C#" Value="public override Type AccessRuleType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AccessRuleType" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.MutexSecurity.AccessRuleType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRuleType As Type" />
+      <MemberSignature Language="F#" Value="member this.AccessRuleType : Type" Usage="System.Security.AccessControl.MutexSecurity.AccessRuleType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRuleType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -271,6 +297,9 @@
       <MemberSignature Language="C#" Value="public void AddAccessRule (System.Security.AccessControl.MutexAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAccessRule(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.AddAccessRule(System.Security.AccessControl.MutexAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAccessRule (rule As MutexAccessRule)" />
+      <MemberSignature Language="F#" Value="override this.AddAccessRule : System.Security.AccessControl.MutexAccessRule -&gt; unit" Usage="mutexSecurity.AddAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAccessRule(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -320,6 +349,9 @@
       <MemberSignature Language="C#" Value="public void AddAuditRule (System.Security.AccessControl.MutexAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAuditRule(class System.Security.AccessControl.MutexAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.AddAuditRule(System.Security.AccessControl.MutexAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAuditRule (rule As MutexAuditRule)" />
+      <MemberSignature Language="F#" Value="override this.AddAuditRule : System.Security.AccessControl.MutexAuditRule -&gt; unit" Usage="mutexSecurity.AddAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAuditRule(System::Security::AccessControl::MutexAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -354,6 +386,8 @@
       <MemberSignature Language="C#" Value="public override System.Security.AccessControl.AuditRule AuditRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AuditFlags flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AuditRule AuditRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
+      <MemberSignature Language="F#" Value="override this.AuditRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.AuditRule" Usage="mutexSecurity.AuditRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, flags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AuditRule ^ AuditRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -412,6 +446,9 @@
       <MemberSignature Language="C#" Value="public override Type AuditRuleType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AuditRuleType" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.MutexSecurity.AuditRuleType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AuditRuleType As Type" />
+      <MemberSignature Language="F#" Value="member this.AuditRuleType : Type" Usage="System.Security.AccessControl.MutexSecurity.AuditRuleType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AuditRuleType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -443,6 +480,9 @@
       <MemberSignature Language="C#" Value="public bool RemoveAccessRule (System.Security.AccessControl.MutexAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAccessRule(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAccessRule(System.Security.AccessControl.MutexAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveAccessRule (rule As MutexAccessRule) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.RemoveAccessRule : System.Security.AccessControl.MutexAccessRule -&gt; bool" Usage="mutexSecurity.RemoveAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAccessRule(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -497,6 +537,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAccessRuleAll (System.Security.AccessControl.MutexAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessRuleAll(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleAll(System.Security.AccessControl.MutexAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccessRuleAll (rule As MutexAccessRule)" />
+      <MemberSignature Language="F#" Value="override this.RemoveAccessRuleAll : System.Security.AccessControl.MutexAccessRule -&gt; unit" Usage="mutexSecurity.RemoveAccessRuleAll rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleAll(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -546,6 +589,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAccessRuleSpecific (System.Security.AccessControl.MutexAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessRuleSpecific(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.MutexAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccessRuleSpecific (rule As MutexAccessRule)" />
+      <MemberSignature Language="F#" Value="override this.RemoveAccessRuleSpecific : System.Security.AccessControl.MutexAccessRule -&gt; unit" Usage="mutexSecurity.RemoveAccessRuleSpecific rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleSpecific(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -598,6 +644,9 @@
       <MemberSignature Language="C#" Value="public bool RemoveAuditRule (System.Security.AccessControl.MutexAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAuditRule(class System.Security.AccessControl.MutexAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAuditRule(System.Security.AccessControl.MutexAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveAuditRule (rule As MutexAuditRule) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.RemoveAuditRule : System.Security.AccessControl.MutexAuditRule -&gt; bool" Usage="mutexSecurity.RemoveAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAuditRule(System::Security::AccessControl::MutexAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -639,6 +688,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAuditRuleAll (System.Security.AccessControl.MutexAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditRuleAll(class System.Security.AccessControl.MutexAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAuditRuleAll(System.Security.AccessControl.MutexAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditRuleAll (rule As MutexAuditRule)" />
+      <MemberSignature Language="F#" Value="override this.RemoveAuditRuleAll : System.Security.AccessControl.MutexAuditRule -&gt; unit" Usage="mutexSecurity.RemoveAuditRuleAll rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleAll(System::Security::AccessControl::MutexAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -675,6 +727,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAuditRuleSpecific (System.Security.AccessControl.MutexAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditRuleSpecific(class System.Security.AccessControl.MutexAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.MutexAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditRuleSpecific (rule As MutexAuditRule)" />
+      <MemberSignature Language="F#" Value="override this.RemoveAuditRuleSpecific : System.Security.AccessControl.MutexAuditRule -&gt; unit" Usage="mutexSecurity.RemoveAuditRuleSpecific rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleSpecific(System::Security::AccessControl::MutexAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -714,6 +769,9 @@
       <MemberSignature Language="C#" Value="public void ResetAccessRule (System.Security.AccessControl.MutexAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetAccessRule(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.ResetAccessRule(System.Security.AccessControl.MutexAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetAccessRule (rule As MutexAccessRule)" />
+      <MemberSignature Language="F#" Value="override this.ResetAccessRule : System.Security.AccessControl.MutexAccessRule -&gt; unit" Usage="mutexSecurity.ResetAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetAccessRule(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -763,6 +821,9 @@
       <MemberSignature Language="C#" Value="public void SetAccessRule (System.Security.AccessControl.MutexAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessRule(class System.Security.AccessControl.MutexAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.SetAccessRule(System.Security.AccessControl.MutexAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAccessRule (rule As MutexAccessRule)" />
+      <MemberSignature Language="F#" Value="override this.SetAccessRule : System.Security.AccessControl.MutexAccessRule -&gt; unit" Usage="mutexSecurity.SetAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessRule(System::Security::AccessControl::MutexAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -814,6 +875,9 @@
       <MemberSignature Language="C#" Value="public void SetAuditRule (System.Security.AccessControl.MutexAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAuditRule(class System.Security.AccessControl.MutexAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.MutexSecurity.SetAuditRule(System.Security.AccessControl.MutexAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAuditRule (rule As MutexAuditRule)" />
+      <MemberSignature Language="F#" Value="override this.SetAuditRule : System.Security.AccessControl.MutexAuditRule -&gt; unit" Usage="mutexSecurity.SetAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAuditRule(System::Security::AccessControl::MutexAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -846,15 +910,5 @@
           <paramref name="rule" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.2.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.MutexSecurity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

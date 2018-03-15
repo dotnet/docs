@@ -1,7 +1,10 @@
-<Type Name="QueueTransferProtocol" FullName="System.ServiceModel.QueueTransferProtocol">
+﻿<Type Name="QueueTransferProtocol" FullName="System.ServiceModel.QueueTransferProtocol">
   <TypeSignature Language="C#" Value="public enum QueueTransferProtocol" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QueueTransferProtocol extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.QueueTransferProtocol" />
+  <TypeSignature Language="VB.NET" Value="Public Enum QueueTransferProtocol" />
+  <TypeSignature Language="F#" Value="type QueueTransferProtocol = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class QueueTransferProtocol" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="Native" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.QueueTransferProtocol Native = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.QueueTransferProtocol.Native" />
+      <MemberSignature Language="VB.NET" Value="Native" />
+      <MemberSignature Language="F#" Value="Native = 0" Usage="System.ServiceModel.QueueTransferProtocol.Native" />
+      <MemberSignature Language="C++ CLI" Value="Native" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -37,6 +43,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.QueueTransferProtocol</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Use the native MSMQ protocol.</summary>
       </Docs>
@@ -45,6 +52,9 @@
       <MemberSignature Language="C#" Value="Srmp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.QueueTransferProtocol Srmp = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.QueueTransferProtocol.Srmp" />
+      <MemberSignature Language="VB.NET" Value="Srmp" />
+      <MemberSignature Language="F#" Value="Srmp = 1" Usage="System.ServiceModel.QueueTransferProtocol.Srmp" />
+      <MemberSignature Language="C++ CLI" Value="Srmp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -54,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.QueueTransferProtocol</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Use the Soap Reliable Messaging Protocol (SRMP).</summary>
       </Docs>
@@ -62,6 +73,9 @@
       <MemberSignature Language="C#" Value="SrmpSecure" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.QueueTransferProtocol SrmpSecure = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.QueueTransferProtocol.SrmpSecure" />
+      <MemberSignature Language="VB.NET" Value="SrmpSecure" />
+      <MemberSignature Language="F#" Value="SrmpSecure = 2" Usage="System.ServiceModel.QueueTransferProtocol.SrmpSecure" />
+      <MemberSignature Language="C++ CLI" Value="SrmpSecure" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -71,6 +85,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.QueueTransferProtocol</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Use the Soap Reliable Messaging Protocol Secure (SRMPS) transport.</summary>
       </Docs>

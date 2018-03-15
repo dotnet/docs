@@ -1,7 +1,10 @@
-<Type Name="WebUtilityElement" FullName="System.Net.Configuration.WebUtilityElement">
+﻿<Type Name="WebUtilityElement" FullName="System.Net.Configuration.WebUtilityElement">
   <TypeSignature Language="C#" Value="public sealed class WebUtilityElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebUtilityElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.WebUtilityElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebUtilityElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type WebUtilityElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebUtilityElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public WebUtilityElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebUtilityElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebUtilityElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.WebUtilityElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.WebUtilityElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -60,6 +68,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.UnicodeDecodingConformance UnicodeDecodingConformance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Configuration.UnicodeDecodingConformance UnicodeDecodingConformance" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.WebUtilityElement.UnicodeDecodingConformance" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnicodeDecodingConformance As UnicodeDecodingConformance" />
+      <MemberSignature Language="F#" Value="member this.UnicodeDecodingConformance : System.Net.Configuration.UnicodeDecodingConformance with get, set" Usage="System.Net.Configuration.WebUtilityElement.UnicodeDecodingConformance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::UnicodeDecodingConformance UnicodeDecodingConformance { System::Net::Configuration::UnicodeDecodingConformance get(); void set(System::Net::Configuration::UnicodeDecodingConformance value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -87,6 +98,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Configuration.UnicodeEncodingConformance UnicodeEncodingConformance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Configuration.UnicodeEncodingConformance UnicodeEncodingConformance" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.WebUtilityElement.UnicodeEncodingConformance" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnicodeEncodingConformance As UnicodeEncodingConformance" />
+      <MemberSignature Language="F#" Value="member this.UnicodeEncodingConformance : System.Net.Configuration.UnicodeEncodingConformance with get, set" Usage="System.Net.Configuration.WebUtilityElement.UnicodeEncodingConformance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Configuration::UnicodeEncodingConformance UnicodeEncodingConformance { System::Net::Configuration::UnicodeEncodingConformance get(); void set(System::Net::Configuration::UnicodeEncodingConformance value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

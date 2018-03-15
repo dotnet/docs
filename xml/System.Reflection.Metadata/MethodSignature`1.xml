@@ -1,7 +1,10 @@
-<Type Name="MethodSignature&lt;TType&gt;" FullName="System.Reflection.Metadata.MethodSignature&lt;TType&gt;">
+﻿<Type Name="MethodSignature&lt;TType&gt;" FullName="System.Reflection.Metadata.MethodSignature&lt;TType&gt;">
   <TypeSignature Language="C#" Value="public struct MethodSignature&lt;TType&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MethodSignature`1&lt;TType&gt; extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MethodSignature`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure MethodSignature(Of TType)" />
+  <TypeSignature Language="F#" Value="type MethodSignature&lt;'ype&gt; = struct" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TType&gt;&#xA;public value class MethodSignature" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -17,14 +20,16 @@
   <Docs>
     <typeparam name="TType">The method type.</typeparam>
     <summary>Represents a method (definition, reference, or standalone) or property signature. In the case of properties, the signature matches that of a getter with a distinguishing <see cref="T:System.Reflection.Metadata.SignatureHeader" />.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MethodSignature (System.Reflection.Metadata.SignatureHeader header, TType returnType, int requiredParameterCount, int genericParameterCount, System.Collections.Immutable.ImmutableArray&lt;TType&gt; parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Reflection.Metadata.SignatureHeader header, !TType returnType, int32 requiredParameterCount, int32 genericParameterCount, valuetype System.Collections.Immutable.ImmutableArray`1&lt;!TType&gt; parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodSignature`1.#ctor(System.Reflection.Metadata.SignatureHeader,`0,System.Int32,System.Int32,System.Collections.Immutable.ImmutableArray{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (header As SignatureHeader, returnType As TType, requiredParameterCount As Integer, genericParameterCount As Integer, parameterTypes As ImmutableArray(Of TType))" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.MethodSignature&lt;'ype&gt; : System.Reflection.Metadata.SignatureHeader * 'ype * int * int * System.Collections.Immutable.ImmutableArray&lt;'ype&gt; -&gt; System.Reflection.Metadata.MethodSignature&lt;'ype&gt;" Usage="new System.Reflection.Metadata.MethodSignature&lt;'ype&gt; (header, returnType, requiredParameterCount, genericParameterCount, parameterTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MethodSignature(System::Reflection::Metadata::SignatureHeader header, TType returnType, int requiredParameterCount, int genericParameterCount, System::Collections::Immutable::ImmutableArray&lt;TType&gt; parameterTypes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -45,14 +50,16 @@
         <param name="genericParameterCount">The number of generic type parameters.</param>
         <param name="parameterTypes">The parameter types.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Reflection.Metadata.MethodSignature`1" /> structure using the specified header, return type, and parameter information.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GenericParameterCount">
       <MemberSignature Language="C#" Value="public int GenericParameterCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 GenericParameterCount" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodSignature`1.GenericParameterCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GenericParameterCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.GenericParameterCount : int" Usage="System.Reflection.Metadata.MethodSignature&lt;'ype&gt;.GenericParameterCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GenericParameterCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -65,14 +72,16 @@
       <Docs>
         <summary>Gets the number of generic type parameters for the method.</summary>
         <value>The number of generic type parameters, or 0 for non-generic methods.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Header">
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.SignatureHeader Header { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.SignatureHeader Header" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodSignature`1.Header" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Header As SignatureHeader" />
+      <MemberSignature Language="F#" Value="member this.Header : System.Reflection.Metadata.SignatureHeader" Usage="System.Reflection.Metadata.MethodSignature&lt;'ype&gt;.Header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::SignatureHeader Header { System::Reflection::Metadata::SignatureHeader get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -85,14 +94,16 @@
       <Docs>
         <summary>Gets the information in the leading byte of the signature (kind, calling convention, flags).</summary>
         <value>The header signature.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterTypes">
       <MemberSignature Language="C#" Value="public System.Collections.Immutable.ImmutableArray&lt;TType&gt; ParameterTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Collections.Immutable.ImmutableArray`1&lt;!TType&gt; ParameterTypes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodSignature`1.ParameterTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParameterTypes As ImmutableArray(Of TType)" />
+      <MemberSignature Language="F#" Value="member this.ParameterTypes : System.Collections.Immutable.ImmutableArray&lt;'ype&gt;" Usage="System.Reflection.Metadata.MethodSignature&lt;'ype&gt;.ParameterTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Immutable::ImmutableArray&lt;TType&gt; ParameterTypes { System::Collections::Immutable::ImmutableArray&lt;TType&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -105,14 +116,16 @@
       <Docs>
         <summary>Gets the method's parameter types.</summary>
         <value>An immutable collection of parameter types.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="RequiredParameterCount">
       <MemberSignature Language="C#" Value="public int RequiredParameterCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RequiredParameterCount" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodSignature`1.RequiredParameterCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RequiredParameterCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.RequiredParameterCount : int" Usage="System.Reflection.Metadata.MethodSignature&lt;'ype&gt;.RequiredParameterCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RequiredParameterCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -139,6 +152,9 @@
       <MemberSignature Language="C#" Value="public TType ReturnType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !TType ReturnType" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodSignature`1.ReturnType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnType As TType" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : 'ype" Usage="System.Reflection.Metadata.MethodSignature&lt;'ype&gt;.ReturnType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TType ReturnType { TType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -151,8 +167,7 @@
       <Docs>
         <summary>Gets the return type of the method.</summary>
         <value>The return type.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

@@ -1,7 +1,10 @@
-<Type Name="LineStackingStrategy" FullName="System.Windows.LineStackingStrategy">
+﻿<Type Name="LineStackingStrategy" FullName="System.Windows.LineStackingStrategy">
   <TypeSignature Language="C#" Value="public enum LineStackingStrategy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LineStackingStrategy extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.LineStackingStrategy" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LineStackingStrategy" />
+  <TypeSignature Language="F#" Value="type LineStackingStrategy = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LineStackingStrategy" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="BlockLineHeight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LineStackingStrategy BlockLineHeight = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LineStackingStrategy.BlockLineHeight" />
+      <MemberSignature Language="VB.NET" Value="BlockLineHeight" />
+      <MemberSignature Language="F#" Value="BlockLineHeight = 0" Usage="System.Windows.LineStackingStrategy.BlockLineHeight" />
+      <MemberSignature Language="C++ CLI" Value="BlockLineHeight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -39,6 +45,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LineStackingStrategy</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The stack height is determined by the block element line-height property value.</summary>
       </Docs>
@@ -47,6 +54,9 @@
       <MemberSignature Language="C#" Value="MaxHeight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LineStackingStrategy MaxHeight = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LineStackingStrategy.MaxHeight" />
+      <MemberSignature Language="VB.NET" Value="MaxHeight" />
+      <MemberSignature Language="F#" Value="MaxHeight = 1" Usage="System.Windows.LineStackingStrategy.MaxHeight" />
+      <MemberSignature Language="C++ CLI" Value="MaxHeight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LineStackingStrategy</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The stack height is the smallest value that containing all the inline elements on that line when those elements are properly aligned.</summary>
       </Docs>

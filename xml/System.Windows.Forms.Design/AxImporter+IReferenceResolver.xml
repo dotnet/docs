@@ -1,7 +1,10 @@
-<Type Name="AxImporter+IReferenceResolver" FullName="System.Windows.Forms.Design.AxImporter+IReferenceResolver">
+﻿<Type Name="AxImporter+IReferenceResolver" FullName="System.Windows.Forms.Design.AxImporter+IReferenceResolver">
   <TypeSignature Language="C#" Value="public interface AxImporter.IReferenceResolver" />
   <TypeSignature Language="ILAsm" Value=".class nested public interface auto ansi abstract AxImporter/IReferenceResolver" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.AxImporter.IReferenceResolver" />
+  <TypeSignature Language="VB.NET" Value="Public Interface AxImporter.IReferenceResolver" />
+  <TypeSignature Language="F#" Value="type AxImporter.IReferenceResolver = interface" />
+  <TypeSignature Language="C++ CLI" Value="public: interface class AxImporter::IReferenceResolver" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +19,9 @@
       <MemberSignature Language="C#" Value="public string ResolveActiveXReference (System.Runtime.InteropServices.UCOMITypeLib typeLib);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ResolveActiveXReference(class System.Runtime.InteropServices.UCOMITypeLib typeLib) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxImporter.IReferenceResolver.ResolveActiveXReference(System.Runtime.InteropServices.UCOMITypeLib)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveActiveXReference (typeLib As UCOMITypeLib) As String" />
+      <MemberSignature Language="F#" Value="abstract member ResolveActiveXReference : System.Runtime.InteropServices.UCOMITypeLib -&gt; string" Usage="iReferenceResolver.ResolveActiveXReference typeLib" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveActiveXReference(System::Runtime::InteropServices::UCOMITypeLib ^ typeLib);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -34,10 +40,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ResolveComReference">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Resolves a reference to the specified type library.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ResolveComReference">
       <MemberSignature Language="C#" Value="public string ResolveComReference (System.Reflection.AssemblyName name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ResolveComReference(class System.Reflection.AssemblyName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxImporter.IReferenceResolver.ResolveComReference(System.Reflection.AssemblyName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveComReference (name As AssemblyName) As String" />
+      <MemberSignature Language="F#" Value="abstract member ResolveComReference : System.Reflection.AssemblyName -&gt; string" Usage="iReferenceResolver.ResolveComReference name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveComReference(System::Reflection::AssemblyName ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -60,6 +78,9 @@
       <MemberSignature Language="C#" Value="public string ResolveComReference (System.Runtime.InteropServices.UCOMITypeLib typeLib);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ResolveComReference(class System.Runtime.InteropServices.UCOMITypeLib typeLib) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxImporter.IReferenceResolver.ResolveComReference(System.Runtime.InteropServices.UCOMITypeLib)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveComReference (typeLib As UCOMITypeLib) As String" />
+      <MemberSignature Language="F#" Value="abstract member ResolveComReference : System.Runtime.InteropServices.UCOMITypeLib -&gt; string" Usage="iReferenceResolver.ResolveComReference typeLib" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveComReference(System::Runtime::InteropServices::UCOMITypeLib ^ typeLib);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -82,6 +103,9 @@
       <MemberSignature Language="C#" Value="public string ResolveManagedReference (string assemName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ResolveManagedReference(string assemName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.AxImporter.IReferenceResolver.ResolveManagedReference(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveManagedReference (assemName As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member ResolveManagedReference : string -&gt; string" Usage="iReferenceResolver.ResolveManagedReference assemName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ResolveManagedReference(System::String ^ assemName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -100,14 +124,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ResolveComReference">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Resolves a reference to the specified type library.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

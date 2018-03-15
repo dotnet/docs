@@ -1,7 +1,10 @@
-<Type Name="BindingFlags" FullName="System.Reflection.BindingFlags">
+﻿<Type Name="BindingFlags" FullName="System.Reflection.BindingFlags">
   <TypeSignature Language="C#" Value="public enum BindingFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed BindingFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.BindingFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BindingFlags" />
+  <TypeSignature Language="F#" Value="type BindingFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class BindingFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -118,6 +121,9 @@
       <MemberSignature Language="C#" Value="CreateInstance" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags CreateInstance = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.CreateInstance" />
+      <MemberSignature Language="VB.NET" Value="CreateInstance" />
+      <MemberSignature Language="F#" Value="CreateInstance = 512" Usage="System.Reflection.BindingFlags.CreateInstance" />
+      <MemberSignature Language="C++ CLI" Value="CreateInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -139,6 +145,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>Specifies that reflection should create an instance of the specified type. Calls the constructor that matches the given arguments. The supplied member name is ignored. If the type of lookup is not specified, (Instance | Public) will apply. It is not possible to call a type initializer.  
   
@@ -149,6 +156,9 @@
       <MemberSignature Language="C#" Value="DeclaredOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags DeclaredOnly = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.DeclaredOnly" />
+      <MemberSignature Language="VB.NET" Value="DeclaredOnly" />
+      <MemberSignature Language="F#" Value="DeclaredOnly = 2" Usage="System.Reflection.BindingFlags.DeclaredOnly" />
+      <MemberSignature Language="C++ CLI" Value="DeclaredOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -170,6 +180,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that only members declared at the level of the supplied type's hierarchy should be considered. Inherited members are not considered.</summary>
       </Docs>
@@ -178,6 +189,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Reflection.BindingFlags.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -199,6 +213,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that no binding flags are defined.</summary>
       </Docs>
@@ -207,6 +222,9 @@
       <MemberSignature Language="C#" Value="ExactBinding" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags ExactBinding = int32(65536)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.ExactBinding" />
+      <MemberSignature Language="VB.NET" Value="ExactBinding" />
+      <MemberSignature Language="F#" Value="ExactBinding = 65536" Usage="System.Reflection.BindingFlags.ExactBinding" />
+      <MemberSignature Language="C++ CLI" Value="ExactBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -224,6 +242,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>65536</MemberValue>
       <Docs>
         <summary>Specifies that types of the supplied arguments must exactly match the types of the corresponding formal parameters. Reflection throws an exception if the caller supplies a non-null <see langword="Binder" /> object, since that implies that the caller is supplying <see langword="BindToXXX" /> implementations that will pick the appropriate method.</summary>
         <remarks>
@@ -244,6 +263,9 @@
       <MemberSignature Language="C#" Value="FlattenHierarchy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags FlattenHierarchy = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.FlattenHierarchy" />
+      <MemberSignature Language="VB.NET" Value="FlattenHierarchy" />
+      <MemberSignature Language="F#" Value="FlattenHierarchy = 64" Usage="System.Reflection.BindingFlags.FlattenHierarchy" />
+      <MemberSignature Language="C++ CLI" Value="FlattenHierarchy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -265,6 +287,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Specifies that public and protected static members up the hierarchy should be returned. Private static members in inherited classes are not returned. Static members include fields, methods, events, and properties. Nested types are not returned.</summary>
       </Docs>
@@ -273,6 +296,9 @@
       <MemberSignature Language="C#" Value="GetField" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags GetField = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.GetField" />
+      <MemberSignature Language="VB.NET" Value="GetField" />
+      <MemberSignature Language="F#" Value="GetField = 1024" Usage="System.Reflection.BindingFlags.GetField" />
+      <MemberSignature Language="C++ CLI" Value="GetField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -294,6 +320,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>Specifies that the value of the specified field should be returned.  
   
@@ -304,6 +331,9 @@
       <MemberSignature Language="C#" Value="GetProperty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags GetProperty = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.GetProperty" />
+      <MemberSignature Language="VB.NET" Value="GetProperty" />
+      <MemberSignature Language="F#" Value="GetProperty = 4096" Usage="System.Reflection.BindingFlags.GetProperty" />
+      <MemberSignature Language="C++ CLI" Value="GetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -325,6 +355,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>Specifies that the value of the specified property should be returned.  
   
@@ -335,6 +366,9 @@
       <MemberSignature Language="C#" Value="IgnoreCase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags IgnoreCase = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.IgnoreCase" />
+      <MemberSignature Language="VB.NET" Value="IgnoreCase" />
+      <MemberSignature Language="F#" Value="IgnoreCase = 1" Usage="System.Reflection.BindingFlags.IgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="IgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -356,6 +390,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the case of the member name should not be considered when binding.</summary>
       </Docs>
@@ -364,6 +399,9 @@
       <MemberSignature Language="C#" Value="IgnoreReturn" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags IgnoreReturn = int32(16777216)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.IgnoreReturn" />
+      <MemberSignature Language="VB.NET" Value="IgnoreReturn" />
+      <MemberSignature Language="F#" Value="IgnoreReturn = 16777216" Usage="System.Reflection.BindingFlags.IgnoreReturn" />
+      <MemberSignature Language="C++ CLI" Value="IgnoreReturn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -381,6 +419,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16777216</MemberValue>
       <Docs>
         <summary>Used in COM interop to specify that the return value of the member can be ignored.</summary>
       </Docs>
@@ -389,6 +428,9 @@
       <MemberSignature Language="C#" Value="Instance" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags Instance = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.Instance" />
+      <MemberSignature Language="VB.NET" Value="Instance" />
+      <MemberSignature Language="F#" Value="Instance = 4" Usage="System.Reflection.BindingFlags.Instance" />
+      <MemberSignature Language="C++ CLI" Value="Instance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -410,6 +452,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that instance members are to be included in the search.</summary>
       </Docs>
@@ -418,6 +461,9 @@
       <MemberSignature Language="C#" Value="InvokeMethod" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags InvokeMethod = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.InvokeMethod" />
+      <MemberSignature Language="VB.NET" Value="InvokeMethod" />
+      <MemberSignature Language="F#" Value="InvokeMethod = 256" Usage="System.Reflection.BindingFlags.InvokeMethod" />
+      <MemberSignature Language="C++ CLI" Value="InvokeMethod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -439,6 +485,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Specifies that a method is to be invoked. This must not be a constructor or a type initializer.  
   
@@ -449,6 +496,9 @@
       <MemberSignature Language="C#" Value="NonPublic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags NonPublic = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.NonPublic" />
+      <MemberSignature Language="VB.NET" Value="NonPublic" />
+      <MemberSignature Language="F#" Value="NonPublic = 32" Usage="System.Reflection.BindingFlags.NonPublic" />
+      <MemberSignature Language="C++ CLI" Value="NonPublic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -470,6 +520,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Specifies that non-public members are to be included in the search.</summary>
       </Docs>
@@ -478,6 +529,9 @@
       <MemberSignature Language="C#" Value="OptionalParamBinding" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags OptionalParamBinding = int32(262144)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.OptionalParamBinding" />
+      <MemberSignature Language="VB.NET" Value="OptionalParamBinding" />
+      <MemberSignature Language="F#" Value="OptionalParamBinding = 262144" Usage="System.Reflection.BindingFlags.OptionalParamBinding" />
+      <MemberSignature Language="C++ CLI" Value="OptionalParamBinding" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -495,6 +549,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>262144</MemberValue>
       <Docs>
         <summary>Returns the set of members whose parameter count matches the number of supplied arguments. This binding flag is used for methods with parameters that have default values and methods with variable arguments (varargs). This flag should only be used with <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />.</summary>
         <remarks>
@@ -511,6 +566,9 @@
       <MemberSignature Language="C#" Value="Public" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags Public = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.Public" />
+      <MemberSignature Language="VB.NET" Value="Public" />
+      <MemberSignature Language="F#" Value="Public = 16" Usage="System.Reflection.BindingFlags.Public" />
+      <MemberSignature Language="C++ CLI" Value="Public" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -532,6 +590,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Specifies that public members are to be included in the search.</summary>
       </Docs>
@@ -540,6 +599,9 @@
       <MemberSignature Language="C#" Value="PutDispProperty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags PutDispProperty = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.PutDispProperty" />
+      <MemberSignature Language="VB.NET" Value="PutDispProperty" />
+      <MemberSignature Language="F#" Value="PutDispProperty = 16384" Usage="System.Reflection.BindingFlags.PutDispProperty" />
+      <MemberSignature Language="C++ CLI" Value="PutDispProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -557,6 +619,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>Specifies that the <see langword="PROPPUT" /> member on a COM object should be invoked. <see langword="PROPPUT" /> specifies a property-setting function that uses a value. Use <see langword="PutDispProperty" /> if a property has both <see langword="PROPPUT" /> and <see langword="PROPPUTREF" /> and you need to distinguish which one is called.</summary>
       </Docs>
@@ -565,6 +628,9 @@
       <MemberSignature Language="C#" Value="PutRefDispProperty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags PutRefDispProperty = int32(32768)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.PutRefDispProperty" />
+      <MemberSignature Language="VB.NET" Value="PutRefDispProperty" />
+      <MemberSignature Language="F#" Value="PutRefDispProperty = 32768" Usage="System.Reflection.BindingFlags.PutRefDispProperty" />
+      <MemberSignature Language="C++ CLI" Value="PutRefDispProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -582,6 +648,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>32768</MemberValue>
       <Docs>
         <summary>Specifies that the <see langword="PROPPUTREF" /> member on a COM object should be invoked. <see langword="PROPPUTREF" /> specifies a property-setting function that uses a reference instead of a value. Use <see langword="PutRefDispProperty" /> if a property has both <see langword="PROPPUT" /> and <see langword="PROPPUTREF" /> and you need to distinguish which one is called.</summary>
       </Docs>
@@ -590,6 +657,9 @@
       <MemberSignature Language="C#" Value="SetField" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags SetField = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.SetField" />
+      <MemberSignature Language="VB.NET" Value="SetField" />
+      <MemberSignature Language="F#" Value="SetField = 2048" Usage="System.Reflection.BindingFlags.SetField" />
+      <MemberSignature Language="C++ CLI" Value="SetField" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -611,6 +681,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>Specifies that the value of the specified field should be set.  
   
@@ -621,6 +692,9 @@
       <MemberSignature Language="C#" Value="SetProperty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags SetProperty = int32(8192)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.SetProperty" />
+      <MemberSignature Language="VB.NET" Value="SetProperty" />
+      <MemberSignature Language="F#" Value="SetProperty = 8192" Usage="System.Reflection.BindingFlags.SetProperty" />
+      <MemberSignature Language="C++ CLI" Value="SetProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -642,6 +716,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>8192</MemberValue>
       <Docs>
         <summary>Specifies that the value of the specified property should be set. For COM properties, specifying this binding flag is equivalent to specifying <see langword="PutDispProperty" /> and <see langword="PutRefDispProperty" />.  
   
@@ -652,6 +727,9 @@
       <MemberSignature Language="C#" Value="Static" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags Static = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.Static" />
+      <MemberSignature Language="VB.NET" Value="Static" />
+      <MemberSignature Language="F#" Value="Static = 8" Usage="System.Reflection.BindingFlags.Static" />
+      <MemberSignature Language="C++ CLI" Value="Static" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection</AssemblyName>
@@ -673,6 +751,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Specifies that static members are to be included in the search.</summary>
       </Docs>
@@ -681,6 +760,9 @@
       <MemberSignature Language="C#" Value="SuppressChangeType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.BindingFlags SuppressChangeType = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.BindingFlags.SuppressChangeType" />
+      <MemberSignature Language="VB.NET" Value="SuppressChangeType" />
+      <MemberSignature Language="F#" Value="SuppressChangeType = 131072" Usage="System.Reflection.BindingFlags.SuppressChangeType" />
+      <MemberSignature Language="C++ CLI" Value="SuppressChangeType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -698,6 +780,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.BindingFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>Not implemented.</summary>
       </Docs>

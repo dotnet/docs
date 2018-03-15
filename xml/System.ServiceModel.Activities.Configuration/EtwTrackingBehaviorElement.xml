@@ -1,7 +1,10 @@
-<Type Name="EtwTrackingBehaviorElement" FullName="System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement">
+﻿<Type Name="EtwTrackingBehaviorElement" FullName="System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement">
   <TypeSignature Language="C#" Value="public class EtwTrackingBehaviorElement : System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EtwTrackingBehaviorElement extends System.ServiceModel.Configuration.BehaviorExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class EtwTrackingBehaviorElement&#xA;Inherits BehaviorExtensionElement" />
+  <TypeSignature Language="F#" Value="type EtwTrackingBehaviorElement = class&#xA;    inherit BehaviorExtensionElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EtwTrackingBehaviorElement : System::ServiceModel::Configuration::BehaviorExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public EtwTrackingBehaviorElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EtwTrackingBehaviorElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public override Type BehaviorType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BehaviorType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement.BehaviorType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BehaviorType As Type" />
+      <MemberSignature Language="F#" Value="member this.BehaviorType : Type" Usage="System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement.BehaviorType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BehaviorType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -56,9 +64,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateBehavior">
-      <MemberSignature Language="C#" Value="protected override object CreateBehavior ();" />
+      <MemberSignature Language="C#" Value="protected internal override object CreateBehavior ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object CreateBehavior() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement.CreateBehavior" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBehavior () As Object" />
+      <MemberSignature Language="F#" Value="override this.CreateBehavior : unit -&gt; obj" Usage="etwTrackingBehaviorElement.CreateBehavior " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ CreateBehavior();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -78,6 +89,9 @@
       <MemberSignature Language="C#" Value="public string ProfileName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ProfileName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement.ProfileName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProfileName As String" />
+      <MemberSignature Language="F#" Value="member this.ProfileName : string with get, set" Usage="System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement.ProfileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ProfileName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -111,6 +125,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Activities.Configuration.EtwTrackingBehaviorElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

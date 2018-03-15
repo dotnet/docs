@@ -1,7 +1,10 @@
-<Type Name="XmlSchemaNumericFacet" FullName="System.Xml.Schema.XmlSchemaNumericFacet">
+﻿<Type Name="XmlSchemaNumericFacet" FullName="System.Xml.Schema.XmlSchemaNumericFacet">
   <TypeSignature Language="C#" Value="public abstract class XmlSchemaNumericFacet : System.Xml.Schema.XmlSchemaFacet" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlSchemaNumericFacet extends System.Xml.Schema.XmlSchemaFacet" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaNumericFacet" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlSchemaNumericFacet&#xA;Inherits XmlSchemaFacet" />
+  <TypeSignature Language="F#" Value="type XmlSchemaNumericFacet = class&#xA;    inherit XmlSchemaFacet" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaNumericFacet abstract : System::Xml::Schema::XmlSchemaFacet" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="protected XmlSchemaNumericFacet ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaNumericFacet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XmlSchemaNumericFacet();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

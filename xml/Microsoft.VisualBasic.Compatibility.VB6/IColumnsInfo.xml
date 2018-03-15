@@ -1,7 +1,10 @@
-<Type Name="IColumnsInfo" FullName="Microsoft.VisualBasic.Compatibility.VB6.IColumnsInfo">
+﻿<Type Name="IColumnsInfo" FullName="Microsoft.VisualBasic.Compatibility.VB6.IColumnsInfo">
   <TypeSignature Language="C#" Value="public interface IColumnsInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IColumnsInfo" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IColumnsInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IColumnsInfo" />
+  <TypeSignature Language="F#" Value="type IColumnsInfo = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IColumnsInfo" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -15,7 +18,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("0C733A11-2A1C-11CE-ADE5-00AA0044773D")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public void GetColumnInfo (out int cColumns, out IntPtr pColumnInfo, out IntPtr pStringsBuffer);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetColumnInfo([out] int32&amp; cColumns, [out] native int&amp; pColumnInfo, [out] native int&amp; pStringsBuffer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IColumnsInfo.GetColumnInfo(System.Int32@,System.IntPtr@,System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetColumnInfo (ByRef cColumns As Integer, ByRef pColumnInfo As IntPtr, ByRef pStringsBuffer As IntPtr)" />
+      <MemberSignature Language="F#" Value="abstract member GetColumnInfo :  *  *  -&gt; unit" Usage="iColumnsInfo.GetColumnInfo (cColumns, pColumnInfo, pStringsBuffer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetColumnInfo([Runtime::InteropServices::Out] int % cColumns, [Runtime::InteropServices::Out] IntPtr % pColumnInfo, [Runtime::InteropServices::Out] IntPtr % pStringsBuffer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -66,6 +72,9 @@
       <MemberSignature Language="C#" Value="public void MapColumnIDs (int cColumnIDs, Microsoft.VisualBasic.Compatibility.VB6.DBID[] columnIDs, int[] rgColumns);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void MapColumnIDs([in]int32 cColumnIDs, [in]valuetype Microsoft.VisualBasic.Compatibility.VB6.DBID[] columnIDs, [out] int32[] rgColumns) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IColumnsInfo.MapColumnIDs(System.Int32,Microsoft.VisualBasic.Compatibility.VB6.DBID[],System.Int32[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MapColumnIDs (cColumnIDs As Integer, columnIDs As DBID(), rgColumns As Integer())" />
+      <MemberSignature Language="F#" Value="abstract member MapColumnIDs : int * Microsoft.VisualBasic.Compatibility.VB6.DBID[] * int[] -&gt; unit" Usage="iColumnsInfo.MapColumnIDs (cColumnIDs, columnIDs, rgColumns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MapColumnIDs(int cColumnIDs, cli::array &lt;Microsoft::VisualBasic::Compatibility::VB6::DBID&gt; ^ columnIDs, cli::array &lt;int&gt; ^ rgColumns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

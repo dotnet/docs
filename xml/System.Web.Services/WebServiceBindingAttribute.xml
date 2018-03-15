@@ -1,7 +1,10 @@
-<Type Name="WebServiceBindingAttribute" FullName="System.Web.Services.WebServiceBindingAttribute">
+﻿<Type Name="WebServiceBindingAttribute" FullName="System.Web.Services.WebServiceBindingAttribute">
   <TypeSignature Language="C#" Value="public sealed class WebServiceBindingAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebServiceBindingAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.WebServiceBindingAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebServiceBindingAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type WebServiceBindingAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebServiceBindingAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,10 +44,22 @@
     <altmember cref="T:System.Web.Services.Protocols.SoapRpcMethodAttribute" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.WebServiceBindingAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebServiceBindingAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.WebServiceBindingAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebServiceBindingAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -61,6 +76,9 @@
       <MemberSignature Language="C#" Value="public WebServiceBindingAttribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.WebServiceBindingAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.WebServiceBindingAttribute : string -&gt; System.Web.Services.WebServiceBindingAttribute" Usage="new System.Web.Services.WebServiceBindingAttribute name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebServiceBindingAttribute(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -97,6 +115,9 @@
       <MemberSignature Language="C#" Value="public WebServiceBindingAttribute (string name, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.WebServiceBindingAttribute.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, ns As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.WebServiceBindingAttribute : string * string -&gt; System.Web.Services.WebServiceBindingAttribute" Usage="new System.Web.Services.WebServiceBindingAttribute (name, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebServiceBindingAttribute(System::String ^ name, System::String ^ ns);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -136,6 +157,9 @@
       <MemberSignature Language="C#" Value="public WebServiceBindingAttribute (string name, string ns, string location);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string ns, string location) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.WebServiceBindingAttribute.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, ns As String, location As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Services.WebServiceBindingAttribute : string * string * string -&gt; System.Web.Services.WebServiceBindingAttribute" Usage="new System.Web.Services.WebServiceBindingAttribute (name, ns, location)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebServiceBindingAttribute(System::String ^ name, System::String ^ ns, System::String ^ location);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -178,6 +202,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.WsiProfiles ConformsTo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.WsiProfiles ConformsTo" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceBindingAttribute.ConformsTo" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConformsTo As WsiProfiles" />
+      <MemberSignature Language="F#" Value="member this.ConformsTo : System.Web.Services.WsiProfiles with get, set" Usage="System.Web.Services.WebServiceBindingAttribute.ConformsTo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::WsiProfiles ConformsTo { System::Web::Services::WsiProfiles get(); void set(System::Web::Services::WsiProfiles value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -207,6 +234,9 @@
       <MemberSignature Language="C#" Value="public bool EmitConformanceClaims { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EmitConformanceClaims" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceBindingAttribute.EmitConformanceClaims" />
+      <MemberSignature Language="VB.NET" Value="Public Property EmitConformanceClaims As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EmitConformanceClaims : bool with get, set" Usage="System.Web.Services.WebServiceBindingAttribute.EmitConformanceClaims" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EmitConformanceClaims { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -234,6 +264,9 @@
       <MemberSignature Language="C#" Value="public string Location { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Location" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceBindingAttribute.Location" />
+      <MemberSignature Language="VB.NET" Value="Public Property Location As String" />
+      <MemberSignature Language="F#" Value="member this.Location : string with get, set" Usage="System.Web.Services.WebServiceBindingAttribute.Location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Location { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -263,6 +296,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceBindingAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.Services.WebServiceBindingAttribute.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -291,6 +327,9 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.WebServiceBindingAttribute.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Web.Services.WebServiceBindingAttribute.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -315,15 +354,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Services.WebServiceBindingAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

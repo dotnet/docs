@@ -1,7 +1,10 @@
-<Type Name="AxisType" FullName="System.Web.UI.DataVisualization.Charting.AxisType">
+﻿<Type Name="AxisType" FullName="System.Web.UI.DataVisualization.Charting.AxisType">
   <TypeSignature Language="C#" Value="public enum AxisType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AxisType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.AxisType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AxisType" />
+  <TypeSignature Language="F#" Value="type AxisType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AxisType" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="Primary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.AxisType Primary = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisType.Primary" />
+      <MemberSignature Language="VB.NET" Value="Primary" />
+      <MemberSignature Language="F#" Value="Primary = 0" Usage="System.Web.UI.DataVisualization.Charting.AxisType.Primary" />
+      <MemberSignature Language="C++ CLI" Value="Primary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.AxisType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Designates an axis as the primary axis.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="Secondary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.AxisType Secondary = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisType.Secondary" />
+      <MemberSignature Language="VB.NET" Value="Secondary" />
+      <MemberSignature Language="F#" Value="Secondary = 1" Usage="System.Web.UI.DataVisualization.Charting.AxisType.Secondary" />
+      <MemberSignature Language="C++ CLI" Value="Secondary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -62,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.AxisType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Designates an axis as the secondary axis.</summary>
       </Docs>

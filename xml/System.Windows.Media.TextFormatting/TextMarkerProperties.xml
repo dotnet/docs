@@ -1,7 +1,10 @@
-<Type Name="TextMarkerProperties" FullName="System.Windows.Media.TextFormatting.TextMarkerProperties">
+﻿<Type Name="TextMarkerProperties" FullName="System.Windows.Media.TextFormatting.TextMarkerProperties">
   <TypeSignature Language="C#" Value="public abstract class TextMarkerProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit TextMarkerProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TextFormatting.TextMarkerProperties" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TextMarkerProperties" />
+  <TypeSignature Language="F#" Value="type TextMarkerProperties = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TextMarkerProperties abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="protected TextMarkerProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TextFormatting.TextMarkerProperties.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TextMarkerProperties();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public abstract double Offset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Offset" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextMarkerProperties.Offset" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Offset As Double" />
+      <MemberSignature Language="F#" Value="member this.Offset : double" Usage="System.Windows.Media.TextFormatting.TextMarkerProperties.Offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property double Offset { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +67,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Media.TextFormatting.TextSource TextSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.TextFormatting.TextSource TextSource" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TextFormatting.TextMarkerProperties.TextSource" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property TextSource As TextSource" />
+      <MemberSignature Language="F#" Value="member this.TextSource : System.Windows.Media.TextFormatting.TextSource" Usage="System.Windows.Media.TextFormatting.TextMarkerProperties.TextSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Windows::Media::TextFormatting::TextSource ^ TextSource { System::Windows::Media::TextFormatting::TextSource ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

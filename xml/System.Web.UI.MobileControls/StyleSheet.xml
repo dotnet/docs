@@ -1,7 +1,10 @@
-<Type Name="StyleSheet" FullName="System.Web.UI.MobileControls.StyleSheet">
+﻿<Type Name="StyleSheet" FullName="System.Web.UI.MobileControls.StyleSheet">
   <TypeSignature Language="C#" Value="public class StyleSheet : System.Web.UI.MobileControls.MobileControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi StyleSheet extends System.Web.UI.MobileControls.MobileControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.StyleSheet" />
+  <TypeSignature Language="VB.NET" Value="Public Class StyleSheet&#xA;Inherits MobileControl" />
+  <TypeSignature Language="F#" Value="type StyleSheet = class&#xA;    inherit MobileControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StyleSheet : System::Web::UI::MobileControls::MobileControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,6 +64,8 @@
       <MemberSignature Language="C#" Value="public StyleSheet ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.StyleSheet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StyleSheet();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -76,6 +81,9 @@
       <MemberSignature Language="C#" Value="protected override void AddParsedSubObject (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddParsedSubObject(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.StyleSheet.AddParsedSubObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddParsedSubObject (o As Object)" />
+      <MemberSignature Language="F#" Value="override this.AddParsedSubObject : obj -&gt; unit" Usage="styleSheet.AddParsedSubObject o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddParsedSubObject(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -99,6 +107,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.MobileControls.Alignment Alignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.MobileControls.Alignment Alignment" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.Alignment" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Alignment As Alignment" />
+      <MemberSignature Language="F#" Value="member this.Alignment : System.Web.UI.MobileControls.Alignment with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.Alignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::MobileControls::Alignment Alignment { System::Web::UI::MobileControls::Alignment get(); void set(System::Web::UI::MobileControls::Alignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -112,7 +123,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -145,6 +156,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -158,7 +172,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -191,6 +205,9 @@
       <MemberSignature Language="C#" Value="public override bool BreakAfter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BreakAfter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.BreakAfter" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BreakAfter As Boolean" />
+      <MemberSignature Language="F#" Value="member this.BreakAfter : bool with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.BreakAfter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool BreakAfter { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -204,7 +221,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -231,6 +248,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.StyleSheet.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="styleSheet.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -260,6 +280,9 @@
       <MemberSignature Language="C#" Value="public static System.Web.UI.MobileControls.StyleSheet Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Web.UI.MobileControls.StyleSheet Default" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As StyleSheet" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Web.UI.MobileControls.StyleSheet" Usage="System.Web.UI.MobileControls.StyleSheet.Default" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Web::UI::MobileControls::StyleSheet ^ Default { System::Web::UI::MobileControls::StyleSheet ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -286,6 +309,9 @@
       <MemberSignature Language="C#" Value="public override bool EnableViewState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.EnableViewState" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property EnableViewState As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableViewState : bool with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.EnableViewState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EnableViewState { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -299,7 +325,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -317,6 +343,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.MobileControls.FontInfo Font { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.FontInfo Font" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Font As FontInfo" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Web.UI.MobileControls.FontInfo" Usage="System.Web.UI.MobileControls.StyleSheet.Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::MobileControls::FontInfo ^ Font { System::Web::UI::MobileControls::FontInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -330,7 +359,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -352,6 +381,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -365,7 +397,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -398,6 +430,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.Style this[string name] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Style Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As Style" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.UI.MobileControls.Style with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Style ^ default[System::String ^] { System::Web::UI::MobileControls::Style ^ get(System::String ^ name); void set(System::String ^ name, System::Web::UI::MobileControls::Style ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -422,6 +457,9 @@
       <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.StyleSheet.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="styleSheet.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -444,6 +482,9 @@
       <MemberSignature Language="C#" Value="public string ReferencePath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ReferencePath" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.ReferencePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReferencePath As String" />
+      <MemberSignature Language="F#" Value="member this.ReferencePath : string with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.ReferencePath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ReferencePath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -481,6 +522,9 @@
       <MemberSignature Language="C#" Value="public void Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.StyleSheet.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="styleSheet.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -508,6 +552,9 @@
       <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.StyleSheet.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="styleSheet.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -528,6 +575,9 @@
       <MemberSignature Language="C#" Value="public override string StyleReference { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StyleReference" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.StyleReference" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property StyleReference As String" />
+      <MemberSignature Language="F#" Value="member this.StyleReference : string with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.StyleReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StyleReference { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -541,7 +591,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -574,6 +624,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection Styles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Styles" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.Styles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Styles As ICollection" />
+      <MemberSignature Language="F#" Value="member this.Styles : System.Collections.ICollection" Usage="System.Web.UI.MobileControls.StyleSheet.Styles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Styles { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -584,7 +637,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -601,6 +654,9 @@
       <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.StyleSheet.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="styleSheet.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -619,6 +675,9 @@
       <MemberSignature Language="C#" Value="public override bool Visible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.Visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -632,7 +691,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -650,6 +709,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.MobileControls.Wrapping Wrapping { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.MobileControls.Wrapping Wrapping" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.StyleSheet.Wrapping" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Wrapping As Wrapping" />
+      <MemberSignature Language="F#" Value="member this.Wrapping : System.Web.UI.MobileControls.Wrapping with get, set" Usage="System.Web.UI.MobileControls.StyleSheet.Wrapping" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::MobileControls::Wrapping Wrapping { System::Web::UI::MobileControls::Wrapping get(); void set(System::Web::UI::MobileControls::Wrapping value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -663,7 +725,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>

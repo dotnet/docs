@@ -1,7 +1,10 @@
-<Type Name="ObservableCollection&lt;T&gt;" FullName="System.Collections.ObjectModel.ObservableCollection&lt;T&gt;">
+﻿<Type Name="ObservableCollection&lt;T&gt;" FullName="System.Collections.ObjectModel.ObservableCollection&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class ObservableCollection&lt;T&gt; : System.Collections.ObjectModel.Collection&lt;T&gt;, System.Collections.Specialized.INotifyCollectionChanged, System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ObservableCollection`1&lt;T&gt; extends System.Collections.ObjectModel.Collection`1&lt;!T&gt; implements class System.Collections.Specialized.INotifyCollectionChanged, class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Collections.ObjectModel.ObservableCollection`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class ObservableCollection(Of T)&#xA;Inherits Collection(Of T)&#xA;Implements INotifyCollectionChanged, INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type ObservableCollection&lt;'T&gt; = class&#xA;    inherit Collection&lt;'T&gt;&#xA;    interface INotifyCollectionChanged&#xA;    interface INotifyPropertyChanged" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class ObservableCollection : System::Collections::ObjectModel::Collection&lt;T&gt;, System::Collections::Specialized::INotifyCollectionChanged, System::ComponentModel::INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,10 +78,23 @@
     <altmember cref="T:System.Windows.Data.CollectionView" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ObjectModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ObservableCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObservableCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -105,6 +121,9 @@
       <MemberSignature Language="C#" Value="public ObservableCollection (System.Collections.Generic.IEnumerable&lt;T&gt; collection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; collection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of T))" />
+      <MemberSignature Language="F#" Value="new System.Collections.ObjectModel.ObservableCollection&lt;'T&gt; : seq&lt;'T&gt; -&gt; System.Collections.ObjectModel.ObservableCollection&lt;'T&gt;" Usage="new System.Collections.ObjectModel.ObservableCollection&lt;'T&gt; collection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObservableCollection(System::Collections::Generic::IEnumerable&lt;T&gt; ^ collection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -142,6 +161,9 @@
       <MemberSignature Language="C#" Value="public ObservableCollection (System.Collections.Generic.List&lt;T&gt; list);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.List`1&lt;!T&gt; list) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.#ctor(System.Collections.Generic.List{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (list As List(Of T))" />
+      <MemberSignature Language="F#" Value="new System.Collections.ObjectModel.ObservableCollection&lt;'T&gt; : System.Collections.Generic.List&lt;'T&gt; -&gt; System.Collections.ObjectModel.ObservableCollection&lt;'T&gt;" Usage="new System.Collections.ObjectModel.ObservableCollection&lt;'T&gt; list" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObservableCollection(System::Collections::Generic::List&lt;T&gt; ^ list);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -177,6 +199,9 @@
       <MemberSignature Language="C#" Value="protected IDisposable BlockReentrancy ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.IDisposable BlockReentrancy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.BlockReentrancy" />
+      <MemberSignature Language="VB.NET" Value="Protected Function BlockReentrancy () As IDisposable" />
+      <MemberSignature Language="F#" Value="member this.BlockReentrancy : unit -&gt; IDisposable" Usage="observableCollection.BlockReentrancy " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; IDisposable ^ BlockReentrancy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -218,6 +243,9 @@
       <MemberSignature Language="C#" Value="protected void CheckReentrancy ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void CheckReentrancy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.CheckReentrancy" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub CheckReentrancy ()" />
+      <MemberSignature Language="F#" Value="member this.CheckReentrancy : unit -&gt; unit" Usage="observableCollection.CheckReentrancy " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void CheckReentrancy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -249,6 +277,9 @@
       <MemberSignature Language="C#" Value="protected override void ClearItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ClearItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.ClearItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ClearItems ()" />
+      <MemberSignature Language="F#" Value="override this.ClearItems : unit -&gt; unit" Usage="observableCollection.ClearItems " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ClearItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -287,7 +318,13 @@
       <MemberSignature Language="C#" Value="public virtual event System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Collections.ObjectModel.ObservableCollection`1.CollectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Custom Event CollectionChanged As NotifyCollectionChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ CollectionChanged;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -316,6 +353,9 @@
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, T item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, !T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.InsertItem(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As T)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * 'T -&gt; unit" Usage="observableCollection.InsertItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -359,6 +399,9 @@
       <MemberSignature Language="C#" Value="public void Move (int oldIndex, int newIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Move(int32 oldIndex, int32 newIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.Move(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Move (oldIndex As Integer, newIndex As Integer)" />
+      <MemberSignature Language="F#" Value="member this.Move : int * int -&gt; unit" Usage="observableCollection.Move (oldIndex, newIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Move(int oldIndex, int newIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -400,6 +443,9 @@
       <MemberSignature Language="C#" Value="protected virtual void MoveItem (int oldIndex, int newIndex);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void MoveItem(int32 oldIndex, int32 newIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.MoveItem(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub MoveItem (oldIndex As Integer, newIndex As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member MoveItem : int * int -&gt; unit&#xA;override this.MoveItem : int * int -&gt; unit" Usage="observableCollection.MoveItem (oldIndex, newIndex)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void MoveItem(int oldIndex, int newIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -443,6 +489,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCollectionChanged (System.Collections.Specialized.NotifyCollectionChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCollectionChanged(class System.Collections.Specialized.NotifyCollectionChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollectionChanged (e As NotifyCollectionChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit&#xA;override this.OnCollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventArgs -&gt; unit" Usage="observableCollection.OnCollectionChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollectionChanged(System::Collections::Specialized::NotifyCollectionChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -490,6 +539,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (System.ComponentModel.PropertyChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(class System.ComponentModel.PropertyChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (e As PropertyChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit&#xA;override this.OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="observableCollection.OnPropertyChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanged(System::ComponentModel::PropertyChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -522,7 +574,13 @@
       <MemberSignature Language="C#" Value="protected virtual event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
       <MemberSignature Language="DocId" Value="E:System.Collections.ObjectModel.ObservableCollection`1.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Custom Event PropertyChanged As PropertyChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -551,6 +609,9 @@
       <MemberSignature Language="C#" Value="protected override void RemoveItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RemoveItem(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.RemoveItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RemoveItem (index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.RemoveItem : int -&gt; unit" Usage="observableCollection.RemoveItem index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RemoveItem(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -592,6 +653,9 @@
       <MemberSignature Language="C#" Value="protected override void SetItem (int index, T item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, !T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ObjectModel.ObservableCollection`1.SetItem(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As T)" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * 'T -&gt; unit" Usage="observableCollection.SetItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
@@ -631,16 +695,37 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
+    <Member MemberName="System.ComponentModel.INotifyPropertyChanged.PropertyChanged">
+      <MemberSignature Language="C#" Value="event System.ComponentModel.PropertyChangedEventHandler System.ComponentModel.INotifyPropertyChanged.PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Collections.ObjectModel.ObservableCollection`1.System#ComponentModel#INotifyPropertyChanged#PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Custom Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> class.</summary>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
-    </MemberGroup>
+    </Member>
   </Members>
 </Type>

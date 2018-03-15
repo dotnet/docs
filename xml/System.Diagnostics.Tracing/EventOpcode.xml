@@ -1,7 +1,10 @@
-<Type Name="EventOpcode" FullName="System.Diagnostics.Tracing.EventOpcode">
+﻿<Type Name="EventOpcode" FullName="System.Diagnostics.Tracing.EventOpcode">
   <TypeSignature Language="C#" Value="public enum EventOpcode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EventOpcode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventOpcode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EventOpcode" />
+  <TypeSignature Language="F#" Value="type EventOpcode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EventOpcode" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="DataCollectionStart" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode DataCollectionStart = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.DataCollectionStart" />
+      <MemberSignature Language="VB.NET" Value="DataCollectionStart" />
+      <MemberSignature Language="F#" Value="DataCollectionStart = 3" Usage="System.Diagnostics.Tracing.EventOpcode.DataCollectionStart" />
+      <MemberSignature Language="C++ CLI" Value="DataCollectionStart" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -65,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventOpcode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A trace collection start event.</summary>
       </Docs>
@@ -73,6 +80,9 @@
       <MemberSignature Language="C#" Value="DataCollectionStop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode DataCollectionStop = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.DataCollectionStop" />
+      <MemberSignature Language="VB.NET" Value="DataCollectionStop" />
+      <MemberSignature Language="F#" Value="DataCollectionStop = 4" Usage="System.Diagnostics.Tracing.EventOpcode.DataCollectionStop" />
+      <MemberSignature Language="C++ CLI" Value="DataCollectionStop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -94,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventOpcode</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A trace collection stop event.</summary>
       </Docs>
@@ -102,6 +113,9 @@
       <MemberSignature Language="C#" Value="Extension" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Extension = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Extension" />
+      <MemberSignature Language="VB.NET" Value="Extension" />
+      <MemberSignature Language="F#" Value="Extension = 5" Usage="System.Diagnostics.Tracing.EventOpcode.Extension" />
+      <MemberSignature Language="C++ CLI" Value="Extension" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -123,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventOpcode</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>An extension event.</summary>
       </Docs>
@@ -131,6 +146,9 @@
       <MemberSignature Language="C#" Value="Info" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Info = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Info" />
+      <MemberSignature Language="VB.NET" Value="Info" />
+      <MemberSignature Language="F#" Value="Info = 0" Usage="System.Diagnostics.Tracing.EventOpcode.Info" />
+      <MemberSignature Language="C++ CLI" Value="Info" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -152,6 +170,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventOpcode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An informational event.</summary>
       </Docs>
@@ -160,6 +179,9 @@
       <MemberSignature Language="C#" Value="Receive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Receive = int32(240)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Receive" />
+      <MemberSignature Language="VB.NET" Value="Receive" />
+      <MemberSignature Language="F#" Value="Receive = 240" Usage="System.Diagnostics.Tracing.EventOpcode.Receive" />
+      <MemberSignature Language="C++ CLI" Value="Receive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -181,6 +203,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventOpcode</ReturnType>
       </ReturnValue>
+      <MemberValue>240</MemberValue>
       <Docs>
         <summary>An event that is published when one activity in an application receives data.</summary>
       </Docs>
@@ -189,6 +212,9 @@
       <MemberSignature Language="C#" Value="Reply" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Reply = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Reply" />
+      <MemberSignature Language="VB.NET" Value="Reply" />
+      <MemberSignature Language="F#" Value="Reply = 6" Usage="System.Diagnostics.Tracing.EventOpcode.Reply" />
+      <MemberSignature Language="C++ CLI" Value="Reply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -210,6 +236,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventOpcode</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>An event that is published after an activity in an application replies to an event.</summary>
       </Docs>
@@ -218,6 +245,9 @@
       <MemberSignature Language="C#" Value="Resume" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Resume = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Resume" />
+      <MemberSignature Language="VB.NET" Value="Resume" />
+      <MemberSignature Language="F#" Value="Resume = 7" Usage="System.Diagnostics.Tracing.EventOpcode.Resume" />
+      <MemberSignature Language="C++ CLI" Value="Resume" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -239,6 +269,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventOpcode</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>An event that is published after an activity in an application resumes from a suspended state. The event should follow an event that has the <see cref="F:System.Diagnostics.Tracing.EventOpcode.Suspend" /> operation code.</summary>
       </Docs>
@@ -247,6 +278,9 @@
       <MemberSignature Language="C#" Value="Send" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Send = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Send" />
+      <MemberSignature Language="VB.NET" Value="Send" />
+      <MemberSignature Language="F#" Value="Send = 9" Usage="System.Diagnostics.Tracing.EventOpcode.Send" />
+      <MemberSignature Language="C++ CLI" Value="Send" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -268,6 +302,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventOpcode</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>An event that is published when one activity in an application transfers data or system resources to another activity.</summary>
       </Docs>
@@ -276,6 +311,9 @@
       <MemberSignature Language="C#" Value="Start" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Start = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Start" />
+      <MemberSignature Language="VB.NET" Value="Start" />
+      <MemberSignature Language="F#" Value="Start = 1" Usage="System.Diagnostics.Tracing.EventOpcode.Start" />
+      <MemberSignature Language="C++ CLI" Value="Start" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -297,6 +335,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventOpcode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An event that is published when an application starts a new transaction or activity. This operation code can be embedded within another transaction or activity when multiple events that have the <see cref="F:System.Diagnostics.Tracing.EventOpcode.Start" /> code follow each other without an intervening event that has a <see cref="F:System.Diagnostics.Tracing.EventOpcode.Stop" /> code.</summary>
         <remarks>
@@ -316,6 +355,9 @@
       <MemberSignature Language="C#" Value="Stop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Stop = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Stop" />
+      <MemberSignature Language="VB.NET" Value="Stop" />
+      <MemberSignature Language="F#" Value="Stop = 2" Usage="System.Diagnostics.Tracing.EventOpcode.Stop" />
+      <MemberSignature Language="C++ CLI" Value="Stop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -337,6 +379,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventOpcode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>An event that is published when an activity or a transaction in an application ends. The event corresponds to the last unpaired event that has a <see cref="F:System.Diagnostics.Tracing.EventOpcode.Start" /> operation code.</summary>
         <remarks>
@@ -356,6 +399,9 @@
       <MemberSignature Language="C#" Value="Suspend" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.Tracing.EventOpcode Suspend = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.Tracing.EventOpcode.Suspend" />
+      <MemberSignature Language="VB.NET" Value="Suspend" />
+      <MemberSignature Language="F#" Value="Suspend = 8" Usage="System.Diagnostics.Tracing.EventOpcode.Suspend" />
+      <MemberSignature Language="C++ CLI" Value="Suspend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -377,6 +423,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.Tracing.EventOpcode</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>An event that is published when an activity in an application is suspended.</summary>
       </Docs>

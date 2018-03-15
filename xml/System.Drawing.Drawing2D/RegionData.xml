@@ -1,7 +1,10 @@
-<Type Name="RegionData" FullName="System.Drawing.Drawing2D.RegionData">
+﻿<Type Name="RegionData" FullName="System.Drawing.Drawing2D.RegionData">
   <TypeSignature Language="C#" Value="public sealed class RegionData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RegionData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.RegionData" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RegionData" />
+  <TypeSignature Language="F#" Value="type RegionData = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegionData sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="public byte[] Data { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Data" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Drawing2D.RegionData.Data" />
+      <MemberSignature Language="VB.NET" Value="Public Property Data As Byte()" />
+      <MemberSignature Language="F#" Value="member this.Data : byte[] with get, set" Usage="System.Drawing.Drawing2D.RegionData.Data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Data { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

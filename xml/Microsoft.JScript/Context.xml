@@ -1,7 +1,10 @@
-<Type Name="Context" FullName="Microsoft.JScript.Context">
+﻿<Type Name="Context" FullName="Microsoft.JScript.Context">
   <TypeSignature Language="C#" Value="public class Context" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Context extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Context" />
+  <TypeSignature Language="VB.NET" Value="Public Class Context" />
+  <TypeSignature Language="F#" Value="type Context = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Context" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public int EndColumn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EndColumn" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Context.EndColumn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndColumn As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndColumn : int" Usage="Microsoft.JScript.Context.EndColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndColumn { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -54,6 +60,9 @@
       <MemberSignature Language="C#" Value="public int EndLine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EndLine" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Context.EndLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndLine As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndLine : int" Usage="Microsoft.JScript.Context.EndLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndLine { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -78,6 +87,9 @@
       <MemberSignature Language="C#" Value="public int EndPosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EndPosition" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Context.EndPosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndPosition As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndPosition : int" Usage="Microsoft.JScript.Context.EndPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int EndPosition { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -102,6 +114,9 @@
       <MemberSignature Language="C#" Value="public string GetCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Context.GetCode" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCode () As String" />
+      <MemberSignature Language="F#" Value="member this.GetCode : unit -&gt; string" Usage="context.GetCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -127,6 +142,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.JSToken GetToken ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype Microsoft.JScript.JSToken GetToken() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Context.GetToken" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetToken () As JSToken" />
+      <MemberSignature Language="F#" Value="member this.GetToken : unit -&gt; Microsoft.JScript.JSToken" Usage="context.GetToken " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::JSToken GetToken();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -151,6 +169,9 @@
       <MemberSignature Language="C#" Value="public int StartColumn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartColumn" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Context.StartColumn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartColumn As Integer" />
+      <MemberSignature Language="F#" Value="member this.StartColumn : int" Usage="Microsoft.JScript.Context.StartColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartColumn { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -175,6 +196,9 @@
       <MemberSignature Language="C#" Value="public int StartLine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartLine" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Context.StartLine" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartLine As Integer" />
+      <MemberSignature Language="F#" Value="member this.StartLine : int" Usage="Microsoft.JScript.Context.StartLine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartLine { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -199,6 +223,9 @@
       <MemberSignature Language="C#" Value="public int StartPosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartPosition" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.Context.StartPosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartPosition As Integer" />
+      <MemberSignature Language="F#" Value="member this.StartPosition : int" Usage="Microsoft.JScript.Context.StartPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartPosition { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

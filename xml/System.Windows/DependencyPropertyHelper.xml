@@ -1,7 +1,10 @@
-<Type Name="DependencyPropertyHelper" FullName="System.Windows.DependencyPropertyHelper">
+﻿<Type Name="DependencyPropertyHelper" FullName="System.Windows.DependencyPropertyHelper">
   <TypeSignature Language="C#" Value="public static class DependencyPropertyHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DependencyPropertyHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.DependencyPropertyHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class DependencyPropertyHelper" />
+  <TypeSignature Language="F#" Value="type DependencyPropertyHelper = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DependencyPropertyHelper abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.ValueSource GetValueSource (System.Windows.DependencyObject dependencyObject, System.Windows.DependencyProperty dependencyProperty);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.ValueSource GetValueSource(class System.Windows.DependencyObject dependencyObject, class System.Windows.DependencyProperty dependencyProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyPropertyHelper.GetValueSource(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="F#" Value="static member GetValueSource : System.Windows.DependencyObject * System.Windows.DependencyProperty -&gt; System.Windows.ValueSource" Usage="System.Windows.DependencyPropertyHelper.GetValueSource (dependencyObject, dependencyProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::ValueSource GetValueSource(System::Windows::DependencyObject ^ dependencyObject, System::Windows::DependencyProperty ^ dependencyProperty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +65,8 @@
       <MemberSignature Language="C#" Value="public static bool IsTemplatedValueDynamic (System.Windows.DependencyObject elementInTemplate, System.Windows.DependencyProperty dependencyProperty);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsTemplatedValueDynamic(class System.Windows.DependencyObject elementInTemplate, class System.Windows.DependencyProperty dependencyProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.DependencyPropertyHelper.IsTemplatedValueDynamic(System.Windows.DependencyObject,System.Windows.DependencyProperty)" />
+      <MemberSignature Language="F#" Value="static member IsTemplatedValueDynamic : System.Windows.DependencyObject * System.Windows.DependencyProperty -&gt; bool" Usage="System.Windows.DependencyPropertyHelper.IsTemplatedValueDynamic (elementInTemplate, dependencyProperty)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsTemplatedValueDynamic(System::Windows::DependencyObject ^ elementInTemplate, System::Windows::DependencyProperty ^ dependencyProperty);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="CacheEntryUpdateCallback" FullName="System.Runtime.Caching.CacheEntryUpdateCallback">
+﻿<Type Name="CacheEntryUpdateCallback" FullName="System.Runtime.Caching.CacheEntryUpdateCallback">
   <TypeSignature Language="C#" Value="public delegate void CacheEntryUpdateCallback(CacheEntryUpdateArguments arguments);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheEntryUpdateCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheEntryUpdateCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub CacheEntryUpdateCallback(arguments As CacheEntryUpdateArguments)" />
+  <TypeSignature Language="F#" Value="type CacheEntryUpdateCallback = delegate of CacheEntryUpdateArguments -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void CacheEntryUpdateCallback(CacheEntryUpdateArguments ^ arguments);" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

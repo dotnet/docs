@@ -1,7 +1,10 @@
-<Type Name="IDynamicPropertyTypeProvider" FullName="System.Workflow.ComponentModel.IDynamicPropertyTypeProvider">
+﻿<Type Name="IDynamicPropertyTypeProvider" FullName="System.Workflow.ComponentModel.IDynamicPropertyTypeProvider">
   <TypeSignature Language="C#" Value="public interface IDynamicPropertyTypeProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDynamicPropertyTypeProvider" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.IDynamicPropertyTypeProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDynamicPropertyTypeProvider" />
+  <TypeSignature Language="F#" Value="type IDynamicPropertyTypeProvider = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDynamicPropertyTypeProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Compiler.AccessTypes GetAccessType (IServiceProvider serviceProvider, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Workflow.ComponentModel.Compiler.AccessTypes GetAccessType(class System.IServiceProvider serviceProvider, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.IDynamicPropertyTypeProvider.GetAccessType(System.IServiceProvider,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAccessType (serviceProvider As IServiceProvider, propertyName As String) As AccessTypes" />
+      <MemberSignature Language="F#" Value="abstract member GetAccessType : IServiceProvider * string -&gt; System.Workflow.ComponentModel.Compiler.AccessTypes" Usage="iDynamicPropertyTypeProvider.GetAccessType (serviceProvider, propertyName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Workflow::ComponentModel::Compiler::AccessTypes GetAccessType(IServiceProvider ^ serviceProvider, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -63,6 +69,9 @@
       <MemberSignature Language="C#" Value="public Type GetPropertyType (IServiceProvider serviceProvider, string propertyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetPropertyType(class System.IServiceProvider serviceProvider, string propertyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.IDynamicPropertyTypeProvider.GetPropertyType(System.IServiceProvider,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPropertyType (serviceProvider As IServiceProvider, propertyName As String) As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetPropertyType : IServiceProvider * string -&gt; Type" Usage="iDynamicPropertyTypeProvider.GetPropertyType (serviceProvider, propertyName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetPropertyType(IServiceProvider ^ serviceProvider, System::String ^ propertyName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

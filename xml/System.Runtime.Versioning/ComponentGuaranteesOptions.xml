@@ -1,7 +1,10 @@
-<Type Name="ComponentGuaranteesOptions" FullName="System.Runtime.Versioning.ComponentGuaranteesOptions">
+﻿<Type Name="ComponentGuaranteesOptions" FullName="System.Runtime.Versioning.ComponentGuaranteesOptions">
   <TypeSignature Language="C#" Value="public enum ComponentGuaranteesOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ComponentGuaranteesOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Versioning.ComponentGuaranteesOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ComponentGuaranteesOptions" />
+  <TypeSignature Language="F#" Value="type ComponentGuaranteesOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ComponentGuaranteesOptions" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="Exchange" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Versioning.ComponentGuaranteesOptions Exchange = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange" />
+      <MemberSignature Language="VB.NET" Value="Exchange" />
+      <MemberSignature Language="F#" Value="Exchange = 1" Usage="System.Runtime.Versioning.ComponentGuaranteesOptions.Exchange" />
+      <MemberSignature Language="C++ CLI" Value="Exchange" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -59,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ComponentGuaranteesOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The developer promises multi-version exchange compatibility for the type. Consumers of the type can expect compatibility across future versions and can use the type in all their interfaces. Versioning problems cannot be fixed by side-by-side execution.</summary>
       </Docs>
@@ -67,6 +74,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Versioning.ComponentGuaranteesOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Versioning.ComponentGuaranteesOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Runtime.Versioning.ComponentGuaranteesOptions.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ComponentGuaranteesOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The developer does not guarantee compatibility across versions. Consumers of the component, type, or member can expect future versions to break the existing client.</summary>
       </Docs>
@@ -92,6 +103,9 @@
       <MemberSignature Language="C#" Value="SideBySide" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Versioning.ComponentGuaranteesOptions SideBySide = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Versioning.ComponentGuaranteesOptions.SideBySide" />
+      <MemberSignature Language="VB.NET" Value="SideBySide" />
+      <MemberSignature Language="F#" Value="SideBySide = 4" Usage="System.Runtime.Versioning.ComponentGuaranteesOptions.SideBySide" />
+      <MemberSignature Language="C++ CLI" Value="SideBySide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -109,6 +123,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ComponentGuaranteesOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The component has been tested to work when more than one version of the assembly is loaded into the same application domain. Future versions can break compatibility. However, when such breaking changes are made, the old version is not modified but continues to exist alongside the new version.</summary>
       </Docs>
@@ -117,6 +132,9 @@
       <MemberSignature Language="C#" Value="Stable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Versioning.ComponentGuaranteesOptions Stable = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Versioning.ComponentGuaranteesOptions.Stable" />
+      <MemberSignature Language="VB.NET" Value="Stable" />
+      <MemberSignature Language="F#" Value="Stable = 2" Usage="System.Runtime.Versioning.ComponentGuaranteesOptions.Stable" />
+      <MemberSignature Language="C++ CLI" Value="Stable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -134,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Versioning.ComponentGuaranteesOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The developer promises stable compatibility across versions. Consumers of the type can expect that future versions will not break the existing client. However, if they do and if the client has not used the type in its interfaces, side-by-side execution may fix the problem.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="OleDbTransaction" FullName="System.Data.OleDb.OleDbTransaction">
+﻿<Type Name="OleDbTransaction" FullName="System.Data.OleDb.OleDbTransaction">
   <TypeSignature Language="C#" Value="public sealed class OleDbTransaction : System.Data.Common.DbTransaction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbTransaction extends System.Data.Common.DbTransaction" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbTransaction" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbTransaction&#xA;Inherits DbTransaction" />
+  <TypeSignature Language="F#" Value="type OleDbTransaction = class&#xA;    inherit DbTransaction" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OleDbTransaction sealed : System::Data::Common::DbTransaction" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +27,22 @@
     <altmember cref="T:System.Data.OleDb.OleDbConnection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="Begin">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiates a nested database transaction.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Begin">
       <MemberSignature Language="C#" Value="public System.Data.OleDb.OleDbTransaction Begin ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OleDb.OleDbTransaction Begin() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbTransaction.Begin" />
+      <MemberSignature Language="VB.NET" Value="Public Function Begin () As OleDbTransaction" />
+      <MemberSignature Language="F#" Value="member this.Begin : unit -&gt; System.Data.OleDb.OleDbTransaction" Usage="oleDbTransaction.Begin " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OleDb::OleDbTransaction ^ Begin();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -55,6 +70,9 @@
       <MemberSignature Language="C#" Value="public System.Data.OleDb.OleDbTransaction Begin (System.Data.IsolationLevel isolevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.OleDb.OleDbTransaction Begin(valuetype System.Data.IsolationLevel isolevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbTransaction.Begin(System.Data.IsolationLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Begin (isolevel As IsolationLevel) As OleDbTransaction" />
+      <MemberSignature Language="F#" Value="member this.Begin : System.Data.IsolationLevel -&gt; System.Data.OleDb.OleDbTransaction" Usage="oleDbTransaction.Begin isolevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::OleDb::OleDbTransaction ^ Begin(System::Data::IsolationLevel isolevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -85,6 +103,9 @@
       <MemberSignature Language="C#" Value="public override void Commit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Commit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbTransaction.Commit" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Commit ()" />
+      <MemberSignature Language="F#" Value="override this.Commit : unit -&gt; unit" Usage="oleDbTransaction.Commit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Commit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -119,6 +140,9 @@
       <MemberSignature Language="C#" Value="public System.Data.OleDb.OleDbConnection Connection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.OleDb.OleDbConnection Connection" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbTransaction.Connection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Connection As OleDbConnection" />
+      <MemberSignature Language="F#" Value="member this.Connection : System.Data.OleDb.OleDbConnection" Usage="System.Data.OleDb.OleDbTransaction.Connection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::OleDb::OleDbConnection ^ Connection { System::Data::OleDb::OleDbConnection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -144,6 +168,9 @@
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbConnection DbConnection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DbConnection DbConnection" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbTransaction.DbConnection" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DbConnection As DbConnection" />
+      <MemberSignature Language="F#" Value="member this.DbConnection : System.Data.Common.DbConnection" Usage="System.Data.OleDb.OleDbTransaction.DbConnection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbConnection ^ DbConnection { System::Data::Common::DbConnection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -162,6 +189,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbTransaction.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="oleDbTransaction.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -183,6 +213,9 @@
       <MemberSignature Language="C#" Value="public override System.Data.IsolationLevel IsolationLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.IsolationLevel IsolationLevel" />
       <MemberSignature Language="DocId" Value="P:System.Data.OleDb.OleDbTransaction.IsolationLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsolationLevel As IsolationLevel" />
+      <MemberSignature Language="F#" Value="member this.IsolationLevel : System.Data.IsolationLevel" Usage="System.Data.OleDb.OleDbTransaction.IsolationLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::IsolationLevel IsolationLevel { System::Data::IsolationLevel get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -208,6 +241,9 @@
       <MemberSignature Language="C#" Value="public override void Rollback ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Rollback() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbTransaction.Rollback" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Rollback ()" />
+      <MemberSignature Language="F#" Value="override this.Rollback : unit -&gt; unit" Usage="oleDbTransaction.Rollback " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Rollback();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -243,14 +279,5 @@
  The connection is broken.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Begin">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initiates a nested database transaction.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

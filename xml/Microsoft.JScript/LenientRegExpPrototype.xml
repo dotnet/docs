@@ -1,7 +1,10 @@
-<Type Name="LenientRegExpPrototype" FullName="Microsoft.JScript.LenientRegExpPrototype">
+﻿<Type Name="LenientRegExpPrototype" FullName="Microsoft.JScript.LenientRegExpPrototype">
   <TypeSignature Language="C#" Value="public sealed class LenientRegExpPrototype : Microsoft.JScript.RegExpPrototype" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LenientRegExpPrototype extends Microsoft.JScript.RegExpPrototype" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientRegExpPrototype" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LenientRegExpPrototype&#xA;Inherits RegExpPrototype" />
+  <TypeSignature Language="F#" Value="type LenientRegExpPrototype = class&#xA;    inherit RegExpPrototype" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LenientRegExpPrototype sealed : Microsoft::JScript::RegExpPrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +25,9 @@
       <MemberSignature Language="C#" Value="public object compile;" />
       <MemberSignature Language="ILAsm" Value=".field public object compile" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientRegExpPrototype.compile" />
+      <MemberSignature Language="VB.NET" Value="Public compile As Object " />
+      <MemberSignature Language="F#" Value="val mutable compile : obj" Usage="Microsoft.JScript.LenientRegExpPrototype.compile" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ compile;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -42,6 +48,9 @@
       <MemberSignature Language="C#" Value="public object constructor;" />
       <MemberSignature Language="ILAsm" Value=".field public object constructor" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientRegExpPrototype.constructor" />
+      <MemberSignature Language="VB.NET" Value="Public constructor As Object " />
+      <MemberSignature Language="F#" Value="val mutable constructor : obj" Usage="Microsoft.JScript.LenientRegExpPrototype.constructor" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ constructor;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -62,6 +71,9 @@
       <MemberSignature Language="C#" Value="public object exec;" />
       <MemberSignature Language="ILAsm" Value=".field public object exec" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientRegExpPrototype.exec" />
+      <MemberSignature Language="VB.NET" Value="Public exec As Object " />
+      <MemberSignature Language="F#" Value="val mutable exec : obj" Usage="Microsoft.JScript.LenientRegExpPrototype.exec" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ exec;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -82,6 +94,9 @@
       <MemberSignature Language="C#" Value="public object test;" />
       <MemberSignature Language="ILAsm" Value=".field public object test" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientRegExpPrototype.test" />
+      <MemberSignature Language="VB.NET" Value="Public test As Object " />
+      <MemberSignature Language="F#" Value="val mutable test : obj" Usage="Microsoft.JScript.LenientRegExpPrototype.test" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ test;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -102,6 +117,9 @@
       <MemberSignature Language="C#" Value="public object toString;" />
       <MemberSignature Language="ILAsm" Value=".field public object toString" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientRegExpPrototype.toString" />
+      <MemberSignature Language="VB.NET" Value="Public toString As Object " />
+      <MemberSignature Language="F#" Value="val mutable toString : obj" Usage="Microsoft.JScript.LenientRegExpPrototype.toString" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="DbProviderFactories" FullName="System.Data.Common.DbProviderFactories">
+﻿<Type Name="DbProviderFactories" FullName="System.Data.Common.DbProviderFactories">
   <TypeSignature Language="C#" Value="public static class DbProviderFactories" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DbProviderFactories extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbProviderFactories" />
+  <TypeSignature Language="VB.NET" Value="Public Class DbProviderFactories" />
+  <TypeSignature Language="F#" Value="type DbProviderFactories = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DbProviderFactories abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="GetFactory">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an instance of a <see cref="T:System.Data.Common.DbProviderFactory" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetFactory">
       <MemberSignature Language="C#" Value="public static System.Data.Common.DbProviderFactory GetFactory (System.Data.Common.DbConnection connection);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.DbProviderFactory GetFactory(class System.Data.Common.DbConnection connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.GetFactory(System.Data.Common.DbConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFactory (connection As DbConnection) As DbProviderFactory" />
+      <MemberSignature Language="F#" Value="static member GetFactory : System.Data.Common.DbConnection -&gt; System.Data.Common.DbProviderFactory" Usage="System.Data.Common.DbProviderFactories.GetFactory connection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::DbProviderFactory ^ GetFactory(System::Data::Common::DbConnection ^ connection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -41,6 +56,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.DbProviderFactory GetFactory (System.Data.DataRow providerRow);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.DbProviderFactory GetFactory(class System.Data.DataRow providerRow) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.GetFactory(System.Data.DataRow)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFactory (providerRow As DataRow) As DbProviderFactory" />
+      <MemberSignature Language="F#" Value="static member GetFactory : System.Data.DataRow -&gt; System.Data.Common.DbProviderFactory" Usage="System.Data.Common.DbProviderFactories.GetFactory providerRow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::DbProviderFactory ^ GetFactory(System::Data::DataRow ^ providerRow);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -71,6 +89,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Common.DbProviderFactory GetFactory (string providerInvariantName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Common.DbProviderFactory GetFactory(string providerInvariantName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.GetFactory(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFactory (providerInvariantName As String) As DbProviderFactory" />
+      <MemberSignature Language="F#" Value="static member GetFactory : string -&gt; System.Data.Common.DbProviderFactory" Usage="System.Data.Common.DbProviderFactories.GetFactory providerInvariantName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Common::DbProviderFactory ^ GetFactory(System::String ^ providerInvariantName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -100,6 +121,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.DataTable GetFactoryClasses ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.DataTable GetFactoryClasses() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbProviderFactories.GetFactoryClasses" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFactoryClasses () As DataTable" />
+      <MemberSignature Language="F#" Value="static member GetFactoryClasses : unit -&gt; System.Data.DataTable" Usage="System.Data.Common.DbProviderFactories.GetFactoryClasses " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::DataTable ^ GetFactoryClasses();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -147,14 +171,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetFactory">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an instance of a <see cref="T:System.Data.Common.DbProviderFactory" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

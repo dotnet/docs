@@ -1,7 +1,10 @@
-<Type Name="BitmapMetadata" FullName="System.Windows.Media.Imaging.BitmapMetadata">
+﻿<Type Name="BitmapMetadata" FullName="System.Windows.Media.Imaging.BitmapMetadata">
   <TypeSignature Language="C#" Value="public class BitmapMetadata : System.Windows.Media.ImageMetadata, System.Collections.Generic.IEnumerable&lt;string&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BitmapMetadata extends System.Windows.Media.ImageMetadata implements class System.Collections.Generic.IEnumerable`1&lt;string&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Imaging.BitmapMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Class BitmapMetadata&#xA;Inherits ImageMetadata&#xA;Implements IEnumerable(Of String)" />
+  <TypeSignature Language="F#" Value="type BitmapMetadata = class&#xA;    inherit ImageMetadata&#xA;    interface IEnumerable&#xA;    interface seq&lt;string&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BitmapMetadata : System::Windows::Media::ImageMetadata, System::Collections::Generic::IEnumerable&lt;System::String ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,9 @@
       <MemberSignature Language="C#" Value="public BitmapMetadata (string containerFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string containerFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapMetadata.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (containerFormat As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Imaging.BitmapMetadata : string -&gt; System.Windows.Media.Imaging.BitmapMetadata" Usage="new System.Windows.Media.Imaging.BitmapMetadata containerFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapMetadata(System::String ^ containerFormat);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -82,6 +88,9 @@
       <MemberSignature Language="C#" Value="public string ApplicationName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ApplicationName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapMetadata.ApplicationName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationName As String" />
+      <MemberSignature Language="F#" Value="member this.ApplicationName : string with get, set" Usage="System.Windows.Media.Imaging.BitmapMetadata.ApplicationName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ApplicationName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -110,6 +119,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; Author { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; Author" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapMetadata.Author" />
+      <MemberSignature Language="VB.NET" Value="Public Property Author As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Author : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; with get, set" Usage="System.Windows.Media.Imaging.BitmapMetadata.Author" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ Author { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); void set(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -138,6 +150,9 @@
       <MemberSignature Language="C#" Value="public string CameraManufacturer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CameraManufacturer" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapMetadata.CameraManufacturer" />
+      <MemberSignature Language="VB.NET" Value="Public Property CameraManufacturer As String" />
+      <MemberSignature Language="F#" Value="member this.CameraManufacturer : string with get, set" Usage="System.Windows.Media.Imaging.BitmapMetadata.CameraManufacturer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CameraManufacturer { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -166,6 +181,9 @@
       <MemberSignature Language="C#" Value="public string CameraModel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CameraModel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapMetadata.CameraModel" />
+      <MemberSignature Language="VB.NET" Value="Public Property CameraModel As String" />
+      <MemberSignature Language="F#" Value="member this.CameraModel : string with get, set" Usage="System.Windows.Media.Imaging.BitmapMetadata.CameraModel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CameraModel { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -194,6 +212,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Imaging.BitmapMetadata Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Imaging.BitmapMetadata Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapMetadata.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As BitmapMetadata" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Imaging.BitmapMetadata" Usage="bitmapMetadata.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Imaging::BitmapMetadata ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -225,6 +246,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapMetadata.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="bitmapMetadata.CloneCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -258,6 +282,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapMetadata.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="bitmapMetadata.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -289,6 +316,9 @@
       <MemberSignature Language="C#" Value="public string Comment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Comment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapMetadata.Comment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Comment As String" />
+      <MemberSignature Language="F#" Value="member this.Comment : string with get, set" Usage="System.Windows.Media.Imaging.BitmapMetadata.Comment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Comment { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -317,6 +347,9 @@
       <MemberSignature Language="C#" Value="public bool ContainsQuery (string query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ContainsQuery(string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapMetadata.ContainsQuery(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsQuery (query As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ContainsQuery : string -&gt; bool" Usage="bitmapMetadata.ContainsQuery query" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ContainsQuery(System::String ^ query);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -356,6 +389,9 @@
       <MemberSignature Language="C#" Value="public string Copyright { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Copyright" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapMetadata.Copyright" />
+      <MemberSignature Language="VB.NET" Value="Public Property Copyright As String" />
+      <MemberSignature Language="F#" Value="member this.Copyright : string with get, set" Usage="System.Windows.Media.Imaging.BitmapMetadata.Copyright" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Copyright { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -384,6 +420,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapMetadata.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="bitmapMetadata.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -404,6 +443,9 @@
       <MemberSignature Language="C#" Value="public string DateTaken { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DateTaken" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapMetadata.DateTaken" />
+      <MemberSignature Language="VB.NET" Value="Public Property DateTaken As String" />
+      <MemberSignature Language="F#" Value="member this.DateTaken : string with get, set" Usage="System.Windows.Media.Imaging.BitmapMetadata.DateTaken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DateTaken { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -432,6 +474,9 @@
       <MemberSignature Language="C#" Value="public string Format { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Format" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapMetadata.Format" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As String" />
+      <MemberSignature Language="F#" Value="member this.Format : string" Usage="System.Windows.Media.Imaging.BitmapMetadata.Format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Format { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -465,6 +510,9 @@
       <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapMetadata.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="bitmapMetadata.GetAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -498,6 +546,9 @@
       <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapMetadata.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="bitmapMetadata.GetCurrentValueAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -529,6 +580,9 @@
       <MemberSignature Language="C#" Value="public object GetQuery (string query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetQuery(string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapMetadata.GetQuery(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetQuery (query As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetQuery : string -&gt; obj" Usage="bitmapMetadata.GetQuery query" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetQuery(System::String ^ query);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -582,6 +636,9 @@
       <MemberSignature Language="C#" Value="public bool IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapMetadata.IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFixedSize As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Windows.Media.Imaging.BitmapMetadata.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -611,6 +668,9 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapMetadata.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Media.Imaging.BitmapMetadata.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -640,6 +700,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; Keywords { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; Keywords" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapMetadata.Keywords" />
+      <MemberSignature Language="VB.NET" Value="Public Property Keywords As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Keywords : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; with get, set" Usage="System.Windows.Media.Imaging.BitmapMetadata.Keywords" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ Keywords { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); void set(System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -658,6 +721,9 @@
       <MemberSignature Language="C#" Value="public string Location { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Location" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapMetadata.Location" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Location As String" />
+      <MemberSignature Language="F#" Value="member this.Location : string" Usage="System.Windows.Media.Imaging.BitmapMetadata.Location" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Location { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -691,6 +757,9 @@
       <MemberSignature Language="C#" Value="public int Rating { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Rating" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapMetadata.Rating" />
+      <MemberSignature Language="VB.NET" Value="Public Property Rating As Integer" />
+      <MemberSignature Language="F#" Value="member this.Rating : int with get, set" Usage="System.Windows.Media.Imaging.BitmapMetadata.Rating" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Rating { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -709,6 +778,9 @@
       <MemberSignature Language="C#" Value="public void RemoveQuery (string query);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveQuery(string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapMetadata.RemoveQuery(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveQuery (query As String)" />
+      <MemberSignature Language="F#" Value="member this.RemoveQuery : string -&gt; unit" Usage="bitmapMetadata.RemoveQuery query" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveQuery(System::String ^ query);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -747,6 +819,9 @@
       <MemberSignature Language="C#" Value="public void SetQuery (string query, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetQuery(string query, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapMetadata.SetQuery(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetQuery (query As String, value As Object)" />
+      <MemberSignature Language="F#" Value="member this.SetQuery : string * obj -&gt; unit" Usage="bitmapMetadata.SetQuery (query, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetQuery(System::String ^ query, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -799,6 +874,9 @@
       <MemberSignature Language="C#" Value="public string Subject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Subject" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapMetadata.Subject" />
+      <MemberSignature Language="VB.NET" Value="Public Property Subject As String" />
+      <MemberSignature Language="F#" Value="member this.Subject : string with get, set" Usage="System.Windows.Media.Imaging.BitmapMetadata.Subject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Subject { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -827,7 +905,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;string&gt; IEnumerable&lt;string&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;string&gt; System.Collections.Generic.IEnumerable&lt;System.String&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapMetadata.System#Collections#Generic#IEnumerable&lt;System#String&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of String) Implements IEnumerable(Of String).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::String ^&gt; ^ System.Collections.Generic.IEnumerable&lt;System.String&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::String ^&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -861,7 +944,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Imaging.BitmapMetadata.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -895,6 +983,9 @@
       <MemberSignature Language="C#" Value="public string Title { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Title" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Imaging.BitmapMetadata.Title" />
+      <MemberSignature Language="VB.NET" Value="Public Property Title As String" />
+      <MemberSignature Language="F#" Value="member this.Title : string with get, set" Usage="System.Windows.Media.Imaging.BitmapMetadata.Title" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Title { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

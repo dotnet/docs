@@ -1,7 +1,10 @@
-<Type Name="IsolationLevel" FullName="System.Transactions.IsolationLevel">
+﻿<Type Name="IsolationLevel" FullName="System.Transactions.IsolationLevel">
   <TypeSignature Language="C#" Value="public enum IsolationLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IsolationLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.IsolationLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IsolationLevel" />
+  <TypeSignature Language="F#" Value="type IsolationLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class IsolationLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="Chaos" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.IsolationLevel Chaos = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Transactions.IsolationLevel.Chaos" />
+      <MemberSignature Language="VB.NET" Value="Chaos" />
+      <MemberSignature Language="F#" Value="Chaos = 5" Usage="System.Transactions.IsolationLevel.Chaos" />
+      <MemberSignature Language="C++ CLI" Value="Chaos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -55,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Transactions.IsolationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The pending changes from more highly isolated transactions cannot be overwritten.</summary>
       </Docs>
@@ -63,6 +70,9 @@
       <MemberSignature Language="C#" Value="ReadCommitted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.IsolationLevel ReadCommitted = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Transactions.IsolationLevel.ReadCommitted" />
+      <MemberSignature Language="VB.NET" Value="ReadCommitted" />
+      <MemberSignature Language="F#" Value="ReadCommitted = 2" Usage="System.Transactions.IsolationLevel.ReadCommitted" />
+      <MemberSignature Language="C++ CLI" Value="ReadCommitted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -80,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Transactions.IsolationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Volatile data cannot be read during the transaction, but can be modified.</summary>
       </Docs>
@@ -88,6 +99,9 @@
       <MemberSignature Language="C#" Value="ReadUncommitted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.IsolationLevel ReadUncommitted = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Transactions.IsolationLevel.ReadUncommitted" />
+      <MemberSignature Language="VB.NET" Value="ReadUncommitted" />
+      <MemberSignature Language="F#" Value="ReadUncommitted = 3" Usage="System.Transactions.IsolationLevel.ReadUncommitted" />
+      <MemberSignature Language="C++ CLI" Value="ReadUncommitted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -105,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Transactions.IsolationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Volatile data can be read and modified during the transaction.</summary>
       </Docs>
@@ -113,6 +128,9 @@
       <MemberSignature Language="C#" Value="RepeatableRead" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.IsolationLevel RepeatableRead = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Transactions.IsolationLevel.RepeatableRead" />
+      <MemberSignature Language="VB.NET" Value="RepeatableRead" />
+      <MemberSignature Language="F#" Value="RepeatableRead = 1" Usage="System.Transactions.IsolationLevel.RepeatableRead" />
+      <MemberSignature Language="C++ CLI" Value="RepeatableRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -130,6 +148,7 @@
       <ReturnValue>
         <ReturnType>System.Transactions.IsolationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Volatile data can be read but not modified during the transaction. New data can be added during the transaction.</summary>
       </Docs>
@@ -138,6 +157,9 @@
       <MemberSignature Language="C#" Value="Serializable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.IsolationLevel Serializable = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Transactions.IsolationLevel.Serializable" />
+      <MemberSignature Language="VB.NET" Value="Serializable" />
+      <MemberSignature Language="F#" Value="Serializable = 0" Usage="System.Transactions.IsolationLevel.Serializable" />
+      <MemberSignature Language="C++ CLI" Value="Serializable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -155,6 +177,7 @@
       <ReturnValue>
         <ReturnType>System.Transactions.IsolationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Volatile data can be read but not modified, and no new data can be added during the transaction.</summary>
       </Docs>
@@ -163,6 +186,9 @@
       <MemberSignature Language="C#" Value="Snapshot" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.IsolationLevel Snapshot = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Transactions.IsolationLevel.Snapshot" />
+      <MemberSignature Language="VB.NET" Value="Snapshot" />
+      <MemberSignature Language="F#" Value="Snapshot = 4" Usage="System.Transactions.IsolationLevel.Snapshot" />
+      <MemberSignature Language="C++ CLI" Value="Snapshot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -180,6 +206,7 @@
       <ReturnValue>
         <ReturnType>System.Transactions.IsolationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Volatile data can be read. Before a transaction modifies data, it verifies if another transaction has changed the data after it was initially read. If the data has been updated, an error is raised. This allows a transaction to get to the previously committed value of the data.</summary>
         <remarks>
@@ -196,6 +223,9 @@
       <MemberSignature Language="C#" Value="Unspecified" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Transactions.IsolationLevel Unspecified = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Transactions.IsolationLevel.Unspecified" />
+      <MemberSignature Language="VB.NET" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 6" Usage="System.Transactions.IsolationLevel.Unspecified" />
+      <MemberSignature Language="C++ CLI" Value="Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -213,6 +243,7 @@
       <ReturnValue>
         <ReturnType>System.Transactions.IsolationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A different isolation level than the one specified is being used, but the level cannot be determined. An exception is thrown if this value is set.</summary>
       </Docs>

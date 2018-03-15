@@ -1,7 +1,10 @@
-<Type Name="TemplateBindingExtension" FullName="System.Windows.TemplateBindingExtension">
+﻿<Type Name="TemplateBindingExtension" FullName="System.Windows.TemplateBindingExtension">
   <TypeSignature Language="C#" Value="public class TemplateBindingExtension : System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateBindingExtension extends System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="DocId" Value="T:System.Windows.TemplateBindingExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemplateBindingExtension&#xA;Inherits MarkupExtension" />
+  <TypeSignature Language="F#" Value="type TemplateBindingExtension = class&#xA;    inherit MarkupExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplateBindingExtension : System::Windows::Markup::MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,10 +48,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.TemplateBindingExtension" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TemplateBindingExtension ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.TemplateBindingExtension.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateBindingExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -64,6 +78,9 @@
       <MemberSignature Language="C#" Value="public TemplateBindingExtension (System.Windows.DependencyProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.DependencyProperty property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.TemplateBindingExtension.#ctor(System.Windows.DependencyProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (property As DependencyProperty)" />
+      <MemberSignature Language="F#" Value="new System.Windows.TemplateBindingExtension : System.Windows.DependencyProperty -&gt; System.Windows.TemplateBindingExtension" Usage="new System.Windows.TemplateBindingExtension property" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateBindingExtension(System::Windows::DependencyProperty ^ property);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -82,6 +99,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Data.IValueConverter Converter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.IValueConverter Converter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.TemplateBindingExtension.Converter" />
+      <MemberSignature Language="VB.NET" Value="Public Property Converter As IValueConverter" />
+      <MemberSignature Language="F#" Value="member this.Converter : System.Windows.Data.IValueConverter with get, set" Usage="System.Windows.TemplateBindingExtension.Converter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::IValueConverter ^ Converter { System::Windows::Data::IValueConverter ^ get(); void set(System::Windows::Data::IValueConverter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -116,6 +136,9 @@
       <MemberSignature Language="C#" Value="public object ConverterParameter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ConverterParameter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.TemplateBindingExtension.ConverterParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConverterParameter As Object" />
+      <MemberSignature Language="F#" Value="member this.ConverterParameter : obj with get, set" Usage="System.Windows.TemplateBindingExtension.ConverterParameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ConverterParameter { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -150,6 +173,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.DependencyProperty Property { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyProperty Property" />
       <MemberSignature Language="DocId" Value="P:System.Windows.TemplateBindingExtension.Property" />
+      <MemberSignature Language="VB.NET" Value="Public Property Property As DependencyProperty" />
+      <MemberSignature Language="F#" Value="member this.Property : System.Windows.DependencyProperty with get, set" Usage="System.Windows.TemplateBindingExtension.Property" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyProperty ^ Property { System::Windows::DependencyProperty ^ get(); void set(System::Windows::DependencyProperty ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -183,6 +209,9 @@
       <MemberSignature Language="C#" Value="public override object ProvideValue (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.TemplateBindingExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="templateBindingExtension.ProvideValue serviceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -201,14 +230,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.TemplateBindingExtension" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

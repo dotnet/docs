@@ -1,7 +1,10 @@
-<Type Name="ParsingCulture" FullName="System.Web.UI.WebControls.ParsingCulture">
+﻿<Type Name="ParsingCulture" FullName="System.Web.UI.WebControls.ParsingCulture">
   <TypeSignature Language="C#" Value="public enum ParsingCulture" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ParsingCulture extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ParsingCulture" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ParsingCulture" />
+  <TypeSignature Language="F#" Value="type ParsingCulture = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ParsingCulture" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Current" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ParsingCulture Current = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ParsingCulture.Current" />
+      <MemberSignature Language="VB.NET" Value="Current" />
+      <MemberSignature Language="F#" Value="Current = 1" Usage="System.Web.UI.WebControls.ParsingCulture.Current" />
+      <MemberSignature Language="C++ CLI" Value="Current" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ParsingCulture</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies the <see cref="P:System.Globalization.CultureInfo.InvariantCulture" /> option.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="Invariant" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ParsingCulture Invariant = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ParsingCulture.Invariant" />
+      <MemberSignature Language="VB.NET" Value="Invariant" />
+      <MemberSignature Language="F#" Value="Invariant = 0" Usage="System.Web.UI.WebControls.ParsingCulture.Invariant" />
+      <MemberSignature Language="C++ CLI" Value="Invariant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ParsingCulture</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies the <see cref="P:System.Globalization.CultureInfo.CurrentCulture" /> option.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="HtmlForm" FullName="System.Web.UI.HtmlControls.HtmlForm">
+﻿<Type Name="HtmlForm" FullName="System.Web.UI.HtmlControls.HtmlForm">
   <TypeSignature Language="C#" Value="public class HtmlForm : System.Web.UI.HtmlControls.HtmlContainerControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlForm extends System.Web.UI.HtmlControls.HtmlContainerControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.HtmlControls.HtmlForm" />
+  <TypeSignature Language="VB.NET" Value="Public Class HtmlForm&#xA;Inherits HtmlContainerControl" />
+  <TypeSignature Language="F#" Value="type HtmlForm = class&#xA;    inherit HtmlContainerControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlForm : System::Web::UI::HtmlControls::HtmlContainerControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +52,8 @@
       <MemberSignature Language="C#" Value="public HtmlForm ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlForm.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlForm();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -86,6 +91,9 @@
       <MemberSignature Language="C#" Value="public string Action { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Action" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.Action" />
+      <MemberSignature Language="VB.NET" Value="Public Property Action As String" />
+      <MemberSignature Language="F#" Value="member this.Action : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.Action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Action { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,7 +104,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -120,6 +128,9 @@
       <MemberSignature Language="C#" Value="public override string ClientID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClientID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.ClientID" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ClientID As String" />
+      <MemberSignature Language="F#" Value="member this.ClientID : string" Usage="System.Web.UI.HtmlControls.HtmlForm.ClientID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ClientID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -145,6 +156,9 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.ControlCollection CreateControlCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlForm.CreateControlCollection" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
+      <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="htmlForm.CreateControlCollection " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,6 +179,9 @@
       <MemberSignature Language="C#" Value="public string DefaultButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultButton" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.DefaultButton" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultButton As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultButton : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.DefaultButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultButton { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -220,6 +237,9 @@
       <MemberSignature Language="C#" Value="public string DefaultFocus { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultFocus" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.DefaultFocus" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultFocus As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultFocus : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.DefaultFocus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultFocus { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -264,6 +284,9 @@
       <MemberSignature Language="C#" Value="public string Enctype { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Enctype" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.Enctype" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enctype As String" />
+      <MemberSignature Language="F#" Value="member this.Enctype : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.Enctype" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Enctype { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -274,7 +297,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -316,6 +339,9 @@
       <MemberSignature Language="C#" Value="public string Method { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Method" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.Method" />
+      <MemberSignature Language="VB.NET" Value="Public Property Method As String" />
+      <MemberSignature Language="F#" Value="member this.Method : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.Method" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Method { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -326,7 +352,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -361,6 +387,9 @@
       <MemberSignature Language="C#" Value="public virtual string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -371,7 +400,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -395,9 +424,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnInit">
-      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlForm.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="htmlForm.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -433,9 +465,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlForm.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="htmlForm.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -465,9 +500,12 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter output);" />
+      <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter output);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlForm.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (output As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlForm.Render output" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -505,6 +543,9 @@
       <MemberSignature Language="C#" Value="protected override void RenderAttributes (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderAttributes(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlForm.RenderAttributes(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderAttributes (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderAttributes : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlForm.RenderAttributes writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderAttributes(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -543,9 +584,12 @@
       </Docs>
     </Member>
     <Member MemberName="RenderChildren">
-      <MemberSignature Language="C#" Value="protected override void RenderChildren (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void RenderChildren (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void RenderChildren(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlForm.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub RenderChildren (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderChildren : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlForm.RenderChildren writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void RenderChildren(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -584,6 +628,9 @@
       <MemberSignature Language="C#" Value="public override void RenderControl (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RenderControl(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.HtmlControls.HtmlForm.RenderControl(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RenderControl (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderControl : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="htmlForm.RenderControl writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RenderControl(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -610,6 +657,9 @@
       <MemberSignature Language="C#" Value="public virtual bool SubmitDisabledControls { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SubmitDisabledControls" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.SubmitDisabledControls" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SubmitDisabledControls As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SubmitDisabledControls : bool with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.SubmitDisabledControls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SubmitDisabledControls { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -649,6 +699,9 @@
       <MemberSignature Language="C#" Value="public string Target { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Target" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.Target" />
+      <MemberSignature Language="VB.NET" Value="Public Property Target As String" />
+      <MemberSignature Language="F#" Value="member this.Target : string with get, set" Usage="System.Web.UI.HtmlControls.HtmlForm.Target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Target { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -659,7 +712,7 @@
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -706,6 +759,9 @@
       <MemberSignature Language="C#" Value="public override string UniqueID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UniqueID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.HtmlControls.HtmlForm.UniqueID" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property UniqueID As String" />
+      <MemberSignature Language="F#" Value="member this.UniqueID : string" Usage="System.Web.UI.HtmlControls.HtmlForm.UniqueID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ UniqueID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

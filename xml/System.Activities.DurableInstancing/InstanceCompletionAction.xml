@@ -1,7 +1,10 @@
-<Type Name="InstanceCompletionAction" FullName="System.Activities.DurableInstancing.InstanceCompletionAction">
+﻿<Type Name="InstanceCompletionAction" FullName="System.Activities.DurableInstancing.InstanceCompletionAction">
   <TypeSignature Language="C#" Value="public enum InstanceCompletionAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InstanceCompletionAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.InstanceCompletionAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum InstanceCompletionAction" />
+  <TypeSignature Language="F#" Value="type InstanceCompletionAction = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class InstanceCompletionAction" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="DeleteAll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.DurableInstancing.InstanceCompletionAction DeleteAll = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.DurableInstancing.InstanceCompletionAction.DeleteAll" />
+      <MemberSignature Language="VB.NET" Value="DeleteAll" />
+      <MemberSignature Language="F#" Value="DeleteAll = 1" Usage="System.Activities.DurableInstancing.InstanceCompletionAction.DeleteAll" />
+      <MemberSignature Language="C++ CLI" Value="DeleteAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.DurableInstancing.InstanceCompletionAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that data and metadata for a workflow instance must be deleted from the persistence store after the workflow instance completes.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="DeleteNothing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Activities.DurableInstancing.InstanceCompletionAction DeleteNothing = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Activities.DurableInstancing.InstanceCompletionAction.DeleteNothing" />
+      <MemberSignature Language="VB.NET" Value="DeleteNothing" />
+      <MemberSignature Language="F#" Value="DeleteNothing = 0" Usage="System.Activities.DurableInstancing.InstanceCompletionAction.DeleteNothing" />
+      <MemberSignature Language="C++ CLI" Value="DeleteNothing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.DurableInstancing</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Activities.DurableInstancing.InstanceCompletionAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that data and metadata for a workflow instance must be kept in the persistence database even after the workflow instance completes.</summary>
       </Docs>

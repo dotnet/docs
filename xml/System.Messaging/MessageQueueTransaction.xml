@@ -1,7 +1,10 @@
-<Type Name="MessageQueueTransaction" FullName="System.Messaging.MessageQueueTransaction">
+﻿<Type Name="MessageQueueTransaction" FullName="System.Messaging.MessageQueueTransaction">
   <TypeSignature Language="C#" Value="public class MessageQueueTransaction : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessageQueueTransaction extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueueTransaction" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessageQueueTransaction&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type MessageQueueTransaction = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageQueueTransaction : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,8 @@
       <MemberSignature Language="C#" Value="public MessageQueueTransaction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueueTransaction();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -68,6 +73,9 @@
       <MemberSignature Language="C#" Value="public void Abort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Abort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Abort" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Abort ()" />
+      <MemberSignature Language="F#" Value="member this.Abort : unit -&gt; unit" Usage="messageQueueTransaction.Abort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -102,6 +110,9 @@
       <MemberSignature Language="C#" Value="public void Begin ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Begin" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Begin ()" />
+      <MemberSignature Language="F#" Value="member this.Begin : unit -&gt; unit" Usage="messageQueueTransaction.Begin " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Begin();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -134,6 +145,9 @@
       <MemberSignature Language="C#" Value="public void Commit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Commit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Commit" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Commit ()" />
+      <MemberSignature Language="F#" Value="member this.Commit : unit -&gt; unit" Usage="messageQueueTransaction.Commit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Commit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -162,11 +176,26 @@
         <altmember cref="P:System.Messaging.MessageQueue.Transactional" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Messaging.MessageQueueTransaction" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="messageQueueTransaction.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -193,6 +222,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="messageQueueTransaction.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -230,6 +262,9 @@
       <MemberSignature Language="C#" Value="~MessageQueueTransaction ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueueTransaction.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="messageQueueTransaction.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!MessageQueueTransaction ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -257,6 +292,9 @@
       <MemberSignature Language="C#" Value="public System.Messaging.MessageQueueTransactionStatus Status { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Messaging.MessageQueueTransactionStatus Status" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueueTransaction.Status" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Status As MessageQueueTransactionStatus" />
+      <MemberSignature Language="F#" Value="member this.Status : System.Messaging.MessageQueueTransactionStatus" Usage="System.Messaging.MessageQueueTransaction.Status" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::MessageQueueTransactionStatus Status { System::Messaging::MessageQueueTransactionStatus get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -279,14 +317,5 @@
         <altmember cref="T:System.Messaging.MessageQueueTransactionStatus" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Messaging.MessageQueueTransaction" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

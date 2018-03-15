@@ -1,7 +1,10 @@
-<Type Name="WsiProfiles" FullName="System.Web.Services.WsiProfiles">
+﻿<Type Name="WsiProfiles" FullName="System.Web.Services.WsiProfiles">
   <TypeSignature Language="C#" Value="public enum WsiProfiles" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WsiProfiles extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.WsiProfiles" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WsiProfiles" />
+  <TypeSignature Language="F#" Value="type WsiProfiles = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class WsiProfiles" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="BasicProfile1_1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.WsiProfiles BasicProfile1_1 = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.WsiProfiles.BasicProfile1_1" />
+      <MemberSignature Language="VB.NET" Value="BasicProfile1_1" />
+      <MemberSignature Language="F#" Value="BasicProfile1_1 = 1" Usage="System.Web.Services.WsiProfiles.BasicProfile1_1" />
+      <MemberSignature Language="C++ CLI" Value="BasicProfile1_1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -41,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.WsiProfiles</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The web service claims to conform to the WSI Basic Profile version 1.1.</summary>
       </Docs>
@@ -49,6 +56,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.WsiProfiles None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.WsiProfiles.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.Services.WsiProfiles.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.WsiProfiles</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The web service makes no conformance claims.</summary>
       </Docs>

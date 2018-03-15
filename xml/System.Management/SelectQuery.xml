@@ -1,7 +1,10 @@
-<Type Name="SelectQuery" FullName="System.Management.SelectQuery">
+﻿<Type Name="SelectQuery" FullName="System.Management.SelectQuery">
   <TypeSignature Language="C#" Value="public class SelectQuery : System.Management.WqlObjectQuery" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SelectQuery extends System.Management.WqlObjectQuery" />
   <TypeSignature Language="DocId" Value="T:System.Management.SelectQuery" />
+  <TypeSignature Language="VB.NET" Value="Public Class SelectQuery&#xA;Inherits WqlObjectQuery" />
+  <TypeSignature Language="F#" Value="type SelectQuery = class&#xA;    inherit WqlObjectQuery" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SelectQuery : System::Management::WqlObjectQuery" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.SelectQuery" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SelectQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectQuery();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -43,6 +57,9 @@
       <MemberSignature Language="C#" Value="public SelectQuery (string queryOrClassName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string queryOrClassName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (queryOrClassName As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.SelectQuery : string -&gt; System.Management.SelectQuery" Usage="new System.Management.SelectQuery queryOrClassName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectQuery(System::String ^ queryOrClassName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -78,6 +95,9 @@
       <MemberSignature Language="C#" Value="public SelectQuery (bool isSchemaQuery, string condition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isSchemaQuery, string condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.#ctor(System.Boolean,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isSchemaQuery As Boolean, condition As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.SelectQuery : bool * string -&gt; System.Management.SelectQuery" Usage="new System.Management.SelectQuery (isSchemaQuery, condition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectQuery(bool isSchemaQuery, System::String ^ condition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -116,6 +136,9 @@
       <MemberSignature Language="C#" Value="public SelectQuery (string className, string condition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string className, string condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (className As String, condition As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.SelectQuery : string * string -&gt; System.Management.SelectQuery" Usage="new System.Management.SelectQuery (className, condition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectQuery(System::String ^ className, System::String ^ condition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -153,6 +176,9 @@
       <MemberSignature Language="C#" Value="public SelectQuery (string className, string condition, string[] selectedProperties);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string className, string condition, string[] selectedProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.#ctor(System.String,System.String,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (className As String, condition As String, selectedProperties As String())" />
+      <MemberSignature Language="F#" Value="new System.Management.SelectQuery : string * string * string[] -&gt; System.Management.SelectQuery" Usage="new System.Management.SelectQuery (className, condition, selectedProperties)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SelectQuery(System::String ^ className, System::String ^ condition, cli::array &lt;System::String ^&gt; ^ selectedProperties);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -189,9 +215,12 @@
       </Docs>
     </Member>
     <Member MemberName="BuildQuery">
-      <MemberSignature Language="C#" Value="protected void BuildQuery ();" />
+      <MemberSignature Language="C#" Value="protected internal void BuildQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void BuildQuery() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.BuildQuery" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub BuildQuery ()" />
+      <MemberSignature Language="F#" Value="member this.BuildQuery : unit -&gt; unit" Usage="selectQuery.BuildQuery " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void BuildQuery();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -219,6 +248,9 @@
       <MemberSignature Language="C#" Value="public string ClassName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ClassName" />
       <MemberSignature Language="DocId" Value="P:System.Management.SelectQuery.ClassName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClassName As String" />
+      <MemberSignature Language="F#" Value="member this.ClassName : string with get, set" Usage="System.Management.SelectQuery.ClassName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ClassName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -260,6 +292,9 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="selectQuery.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -288,6 +323,9 @@
       <MemberSignature Language="C#" Value="public string Condition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Condition" />
       <MemberSignature Language="DocId" Value="P:System.Management.SelectQuery.Condition" />
+      <MemberSignature Language="VB.NET" Value="Public Property Condition As String" />
+      <MemberSignature Language="F#" Value="member this.Condition : string with get, set" Usage="System.Management.SelectQuery.Condition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Condition { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -321,6 +359,9 @@
       <MemberSignature Language="C#" Value="public bool IsSchemaQuery { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSchemaQuery" />
       <MemberSignature Language="DocId" Value="P:System.Management.SelectQuery.IsSchemaQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSchemaQuery As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSchemaQuery : bool with get, set" Usage="System.Management.SelectQuery.IsSchemaQuery" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSchemaQuery { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -349,9 +390,12 @@
       </Docs>
     </Member>
     <Member MemberName="ParseQuery">
-      <MemberSignature Language="C#" Value="protected override void ParseQuery (string query);" />
+      <MemberSignature Language="C#" Value="protected internal override void ParseQuery (string query);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void ParseQuery(string query) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.SelectQuery.ParseQuery(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub ParseQuery (query As String)" />
+      <MemberSignature Language="F#" Value="override this.ParseQuery : string -&gt; unit" Usage="selectQuery.ParseQuery query" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void ParseQuery(System::String ^ query);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -382,6 +426,9 @@
       <MemberSignature Language="C#" Value="public override string QueryString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string QueryString" />
       <MemberSignature Language="DocId" Value="P:System.Management.SelectQuery.QueryString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property QueryString As String" />
+      <MemberSignature Language="F#" Value="member this.QueryString : string with get, set" Usage="System.Management.SelectQuery.QueryString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ QueryString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -421,6 +468,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection SelectedProperties { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection SelectedProperties" />
       <MemberSignature Language="DocId" Value="P:System.Management.SelectQuery.SelectedProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedProperties As StringCollection" />
+      <MemberSignature Language="F#" Value="member this.SelectedProperties : System.Collections.Specialized.StringCollection with get, set" Usage="System.Management.SelectQuery.SelectedProperties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ SelectedProperties { System::Collections::Specialized::StringCollection ^ get(); void set(System::Collections::Specialized::StringCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -450,14 +500,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.SelectQuery" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

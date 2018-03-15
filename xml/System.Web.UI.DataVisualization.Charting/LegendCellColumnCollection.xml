@@ -1,7 +1,10 @@
-<Type Name="LegendCellColumnCollection" FullName="System.Web.UI.DataVisualization.Charting.LegendCellColumnCollection">
+﻿<Type Name="LegendCellColumnCollection" FullName="System.Web.UI.DataVisualization.Charting.LegendCellColumnCollection">
   <TypeSignature Language="C#" Value="public class LegendCellColumnCollection : System.Web.UI.DataVisualization.Charting.ChartNamedElementCollection&lt;System.Web.UI.DataVisualization.Charting.LegendCellColumn&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LegendCellColumnCollection extends System.Web.UI.DataVisualization.Charting.ChartNamedElementCollection`1&lt;class System.Web.UI.DataVisualization.Charting.LegendCellColumn&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LegendCellColumnCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class LegendCellColumnCollection&#xA;Inherits ChartNamedElementCollection(Of LegendCellColumn)" />
+  <TypeSignature Language="F#" Value="type LegendCellColumnCollection = class&#xA;    inherit ChartNamedElementCollection&lt;LegendCellColumn&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LegendCellColumnCollection : System::Web::UI::DataVisualization::Charting::ChartNamedElementCollection&lt;System::Web::UI::DataVisualization::Charting::LegendCellColumn ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.LegendCellColumnCollection.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="legendCellColumnCollection.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="SerializationFormat" FullName="System.Data.SerializationFormat">
+﻿<Type Name="SerializationFormat" FullName="System.Data.SerializationFormat">
   <TypeSignature Language="C#" Value="public enum SerializationFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SerializationFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.SerializationFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SerializationFormat" />
+  <TypeSignature Language="F#" Value="type SerializationFormat = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SerializationFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="Binary" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SerializationFormat Binary = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.SerializationFormat.Binary" />
+      <MemberSignature Language="VB.NET" Value="Binary" />
+      <MemberSignature Language="F#" Value="Binary = 1" Usage="System.Data.SerializationFormat.Binary" />
+      <MemberSignature Language="C++ CLI" Value="Binary" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -53,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Data.SerializationFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Serialize as binary content. Available in ADO.NET 2.0 only.</summary>
       </Docs>
@@ -61,6 +68,9 @@
       <MemberSignature Language="C#" Value="Xml" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.SerializationFormat Xml = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.SerializationFormat.Xml" />
+      <MemberSignature Language="VB.NET" Value="Xml" />
+      <MemberSignature Language="F#" Value="Xml = 0" Usage="System.Data.SerializationFormat.Xml" />
+      <MemberSignature Language="C++ CLI" Value="Xml" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -78,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Data.SerializationFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Serialize as XML content. The default.</summary>
       </Docs>

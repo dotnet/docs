@@ -1,7 +1,10 @@
-<Type Name="PipeException" FullName="System.IO.PipeException">
+﻿<Type Name="PipeException" FullName="System.IO.PipeException">
   <TypeSignature Language="C#" Value="public class PipeException : System.IO.IOException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PipeException extends System.IO.IOException" />
   <TypeSignature Language="DocId" Value="T:System.IO.PipeException" />
+  <TypeSignature Language="VB.NET" Value="Public Class PipeException&#xA;Inherits IOException" />
+  <TypeSignature Language="F#" Value="type PipeException = class&#xA;    inherit IOException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PipeException : System::IO::IOException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IO.PipeException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PipeException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.PipeException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PipeException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -34,6 +48,9 @@
       <MemberSignature Language="C#" Value="public PipeException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.PipeException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.IO.PipeException : string -&gt; System.IO.PipeException" Usage="new System.IO.PipeException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PipeException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -52,6 +69,9 @@
       <MemberSignature Language="C#" Value="protected PipeException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.PipeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.IO.PipeException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IO.PipeException" Usage="new System.IO.PipeException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PipeException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +92,9 @@
       <MemberSignature Language="C#" Value="public PipeException (string message, Exception inner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.PipeException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, inner As Exception)" />
+      <MemberSignature Language="F#" Value="new System.IO.PipeException : string * Exception -&gt; System.IO.PipeException" Usage="new System.IO.PipeException (message, inner)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PipeException(System::String ^ message, Exception ^ inner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +115,9 @@
       <MemberSignature Language="C#" Value="public PipeException (string message, int errorCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, int32 errorCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.PipeException.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, errorCode As Integer)" />
+      <MemberSignature Language="F#" Value="new System.IO.PipeException : string * int -&gt; System.IO.PipeException" Usage="new System.IO.PipeException (message, errorCode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PipeException(System::String ^ message, int errorCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -112,6 +138,9 @@
       <MemberSignature Language="C#" Value="public virtual int ErrorCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ErrorCode" />
       <MemberSignature Language="DocId" Value="P:System.IO.PipeException.ErrorCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ErrorCode As Integer" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int" Usage="System.IO.PipeException.ErrorCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ErrorCode { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -126,14 +155,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IO.PipeException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

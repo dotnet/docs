@@ -1,7 +1,10 @@
-<Type Name="ListItem" FullName="System.Web.UI.WebControls.ListItem">
+﻿<Type Name="ListItem" FullName="System.Web.UI.WebControls.ListItem">
   <TypeSignature Language="C#" Value="public sealed class ListItem : System.Web.UI.IAttributeAccessor, System.Web.UI.IParserAccessor, System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ListItem extends System.Object implements class System.Web.UI.IAttributeAccessor, class System.Web.UI.IParserAccessor, class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListItem" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ListItem&#xA;Implements IAttributeAccessor, IParserAccessor, IStateManager" />
+  <TypeSignature Language="F#" Value="type ListItem = class&#xA;    interface IStateManager&#xA;    interface IParserAccessor&#xA;    interface IAttributeAccessor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListItem sealed : System::Web::UI::IAttributeAccessor, System::Web::UI::IParserAccessor, System::Web::UI::IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -108,10 +111,21 @@
     <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ListItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ListItem ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +171,9 @@
       <MemberSignature Language="C#" Value="public ListItem (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItem.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ListItem : string -&gt; System.Web.UI.WebControls.ListItem" Usage="new System.Web.UI.WebControls.ListItem text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListItem(System::String ^ text);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -205,6 +222,9 @@
       <MemberSignature Language="C#" Value="public ListItem (string text, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItem.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ListItem : string * string -&gt; System.Web.UI.WebControls.ListItem" Usage="new System.Web.UI.WebControls.ListItem (text, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListItem(System::String ^ text, System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -255,6 +275,9 @@
       <MemberSignature Language="C#" Value="public ListItem (string text, string value, bool enabled);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, string value, bool enabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItem.#ctor(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (text As String, value As String, enabled As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ListItem : string * string * bool -&gt; System.Web.UI.WebControls.ListItem" Usage="new System.Web.UI.WebControls.ListItem (text, value, enabled)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListItem(System::String ^ text, System::String ^ value, bool enabled);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -306,6 +329,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.AttributeCollection Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.AttributeCollection Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListItem.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As AttributeCollection" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Web.UI.AttributeCollection" Usage="System.Web.UI.WebControls.ListItem.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::AttributeCollection ^ Attributes { System::Web::UI::AttributeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -316,7 +342,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -345,6 +371,9 @@
       <MemberSignature Language="C#" Value="public bool Enabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Enabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListItem.Enabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property Enabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Enabled : bool with get, set" Usage="System.Web.UI.WebControls.ListItem.Enabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Enabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -395,6 +424,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItem.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="listItem.Equals o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -418,6 +450,9 @@
       <MemberSignature Language="C#" Value="public static System.Web.UI.WebControls.ListItem FromString (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.WebControls.ListItem FromString(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItem.FromString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (s As String) As ListItem" />
+      <MemberSignature Language="F#" Value="static member FromString : string -&gt; System.Web.UI.WebControls.ListItem" Usage="System.Web.UI.WebControls.ListItem.FromString s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::WebControls::ListItem ^ FromString(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -453,6 +488,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItem.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="listItem.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -472,6 +510,9 @@
       <MemberSignature Language="C#" Value="public bool Selected { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Selected" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListItem.Selected" />
+      <MemberSignature Language="VB.NET" Value="Public Property Selected As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Selected : bool with get, set" Usage="System.Web.UI.WebControls.ListItem.Selected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Selected { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -523,7 +564,12 @@
       <MemberSignature Language="C#" Value="string IAttributeAccessor.GetAttribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.Web.UI.IAttributeAccessor.GetAttribute(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItem.System#Web#UI#IAttributeAccessor#GetAttribute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function GetAttribute (name As String) As String Implements IAttributeAccessor.GetAttribute" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.Web.UI.IAttributeAccessor.GetAttribute(System::String ^ name) = System::Web::UI::IAttributeAccessor::GetAttribute;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.GetAttribute(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -558,7 +604,12 @@
       <MemberSignature Language="C#" Value="void IAttributeAccessor.SetAttribute (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IAttributeAccessor.SetAttribute(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItem.System#Web#UI#IAttributeAccessor#SetAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub SetAttribute (name As String, value As String) Implements IAttributeAccessor.SetAttribute" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IAttributeAccessor.SetAttribute(System::String ^ name, System::String ^ value) = System::Web::UI::IAttributeAccessor::SetAttribute;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IAttributeAccessor.SetAttribute(System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -594,7 +645,12 @@
       <MemberSignature Language="C#" Value="void IParserAccessor.AddParsedSubObject (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IParserAccessor.AddParsedSubObject(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItem.System#Web#UI#IParserAccessor#AddParsedSubObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddParsedSubObject (obj As Object) Implements IParserAccessor.AddParsedSubObject" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IParserAccessor.AddParsedSubObject(System::Object ^ obj) = System::Web::UI::IParserAccessor::AddParsedSubObject;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IParserAccessor.AddParsedSubObject(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -634,7 +690,13 @@
       <MemberSignature Language="C#" Value="bool System.Web.UI.IStateManager.IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListItem.System#Web#UI#IStateManager#IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.WebControls.ListItem.System.Web.UI.IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.IStateManager.IsTrackingViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -653,7 +715,12 @@
       <MemberSignature Language="C#" Value="void IStateManager.LoadViewState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItem.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub LoadViewState (state As Object) Implements IStateManager.LoadViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.LoadViewState(System::Object ^ state) = System::Web::UI::IStateManager::LoadViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.LoadViewState(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -686,7 +753,12 @@
       <MemberSignature Language="C#" Value="object IStateManager.SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItem.System#Web#UI#IStateManager#SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Function SaveViewState () As Object Implements IStateManager.SaveViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Web.UI.IStateManager.SaveViewState() = System::Web::UI::IStateManager::SaveViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.SaveViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -717,7 +789,12 @@
       <MemberSignature Language="C#" Value="void IStateManager.TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItem.System#Web#UI#IStateManager#TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Sub TrackViewState () Implements IStateManager.TrackViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.TrackViewState() = System::Web::UI::IStateManager::TrackViewState;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IStateManager.TrackViewState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -747,6 +824,9 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListItem.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.WebControls.ListItem.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -804,6 +884,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListItem.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="listItem.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -824,6 +907,9 @@
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListItem.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Web.UI.WebControls.ListItem.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -874,14 +960,5 @@
         <altmember cref="T:System.Web.UI.WebControls.CheckBoxList" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.ListItem" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="RibbonCheckBoxAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonCheckBoxAutomationPeer">
+﻿<Type Name="RibbonCheckBoxAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonCheckBoxAutomationPeer">
   <TypeSignature Language="C#" Value="public class RibbonCheckBoxAutomationPeer : System.Windows.Automation.Peers.CheckBoxAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonCheckBoxAutomationPeer extends System.Windows.Automation.Peers.CheckBoxAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonCheckBoxAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonCheckBoxAutomationPeer&#xA;Inherits CheckBoxAutomationPeer" />
+  <TypeSignature Language="F#" Value="type RibbonCheckBoxAutomationPeer = class&#xA;    inherit CheckBoxAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonCheckBoxAutomationPeer : System::Windows::Automation::Peers::CheckBoxAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public RibbonCheckBoxAutomationPeer (System.Windows.Controls.Ribbon.RibbonCheckBox owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Ribbon.RibbonCheckBox owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonCheckBoxAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonCheckBox)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonCheckBox)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonCheckBoxAutomationPeer : System.Windows.Controls.Ribbon.RibbonCheckBox -&gt; System.Windows.Automation.Peers.RibbonCheckBoxAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonCheckBoxAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonCheckBoxAutomationPeer(System::Windows::Controls::Ribbon::RibbonCheckBox ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="protected override string GetAccessKeyCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetAccessKeyCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonCheckBoxAutomationPeer.GetAccessKeyCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAccessKeyCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetAccessKeyCore : unit -&gt; string" Usage="ribbonCheckBoxAutomationPeer.GetAccessKeyCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAccessKeyCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -56,6 +65,9 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonCheckBoxAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonCheckBoxAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -75,6 +87,9 @@
       <MemberSignature Language="C#" Value="protected override string GetHelpTextCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetHelpTextCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonCheckBoxAutomationPeer.GetHelpTextCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetHelpTextCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetHelpTextCore : unit -&gt; string" Usage="ribbonCheckBoxAutomationPeer.GetHelpTextCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetHelpTextCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -94,6 +109,9 @@
       <MemberSignature Language="C#" Value="protected override string GetNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonCheckBoxAutomationPeer.GetNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetNameCore : unit -&gt; string" Usage="ribbonCheckBoxAutomationPeer.GetNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

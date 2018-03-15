@@ -1,7 +1,10 @@
-<Type Name="WS2007FederationHttpBindingElement" FullName="System.ServiceModel.Configuration.WS2007FederationHttpBindingElement">
+﻿<Type Name="WS2007FederationHttpBindingElement" FullName="System.ServiceModel.Configuration.WS2007FederationHttpBindingElement">
   <TypeSignature Language="C#" Value="public class WS2007FederationHttpBindingElement : System.ServiceModel.Configuration.WSFederationHttpBindingElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WS2007FederationHttpBindingElement extends System.ServiceModel.Configuration.WSFederationHttpBindingElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class WS2007FederationHttpBindingElement&#xA;Inherits WSFederationHttpBindingElement" />
+  <TypeSignature Language="F#" Value="type WS2007FederationHttpBindingElement = class&#xA;    inherit WSFederationHttpBindingElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WS2007FederationHttpBindingElement : System::ServiceModel::Configuration::WSFederationHttpBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +19,21 @@
     <altmember cref="T:System.ServiceModel.WS2007FederationHttpBinding" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WS2007FederationHttpBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WS2007FederationHttpBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -35,6 +49,9 @@
       <MemberSignature Language="C#" Value="public WS2007FederationHttpBindingElement (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Configuration.WS2007FederationHttpBindingElement : string -&gt; System.ServiceModel.Configuration.WS2007FederationHttpBindingElement" Usage="new System.ServiceModel.Configuration.WS2007FederationHttpBindingElement name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WS2007FederationHttpBindingElement(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -53,6 +70,9 @@
       <MemberSignature Language="C#" Value="protected override Type BindingElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BindingElementType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement.BindingElementType" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property BindingElementType As Type" />
+      <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Configuration.WS2007FederationHttpBindingElement.BindingElementType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,14 +87,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Configuration.WS2007FederationHttpBindingElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

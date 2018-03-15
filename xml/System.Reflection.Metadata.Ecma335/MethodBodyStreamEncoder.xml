@@ -1,7 +1,10 @@
-<Type Name="MethodBodyStreamEncoder" FullName="System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder">
+﻿<Type Name="MethodBodyStreamEncoder" FullName="System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder">
   <TypeSignature Language="C#" Value="public struct MethodBodyStreamEncoder" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MethodBodyStreamEncoder extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder" />
+  <TypeSignature Language="VB.NET" Value="Public Structure MethodBodyStreamEncoder" />
+  <TypeSignature Language="F#" Value="type MethodBodyStreamEncoder = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class MethodBodyStreamEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public MethodBodyStreamEncoder (System.Reflection.Metadata.BlobBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Metadata.BlobBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder : System.Reflection.Metadata.BlobBuilder -&gt; System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder" Usage="new System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MethodBodyStreamEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -39,6 +45,7 @@
       <MemberSignature Language="C#" Value="public int AddMethodBody (System.Reflection.Metadata.Ecma335.InstructionEncoder instructionEncoder, int maxStack = 8, System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature = null, System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes = System.Reflection.Metadata.Ecma335.MethodBodyAttributes.InitLocals);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 AddMethodBody(valuetype System.Reflection.Metadata.Ecma335.InstructionEncoder instructionEncoder, int32 maxStack, valuetype System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature, valuetype System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.AddMethodBody(System.Reflection.Metadata.Ecma335.InstructionEncoder,System.Int32,System.Reflection.Metadata.StandaloneSignatureHandle,System.Reflection.Metadata.Ecma335.MethodBodyAttributes)" />
+      <MemberSignature Language="F#" Value="member this.AddMethodBody : System.Reflection.Metadata.Ecma335.InstructionEncoder * int * System.Reflection.Metadata.StandaloneSignatureHandle * System.Reflection.Metadata.Ecma335.MethodBodyAttributes -&gt; int" Usage="methodBodyStreamEncoder.AddMethodBody (instructionEncoder, maxStack, localVariablesSignature, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -68,6 +75,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.MethodBody AddMethodBody (int codeSize, int maxStack = 8, int exceptionRegionCount = 0, bool hasSmallExceptionRegions = true, System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature = null, System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes = System.Reflection.Metadata.Ecma335.MethodBodyAttributes.InitLocals);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder/MethodBody AddMethodBody(int32 codeSize, int32 maxStack, int32 exceptionRegionCount, bool hasSmallExceptionRegions, valuetype System.Reflection.Metadata.StandaloneSignatureHandle localVariablesSignature, valuetype System.Reflection.Metadata.Ecma335.MethodBodyAttributes attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.AddMethodBody(System.Int32,System.Int32,System.Int32,System.Boolean,System.Reflection.Metadata.StandaloneSignatureHandle,System.Reflection.Metadata.Ecma335.MethodBodyAttributes)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddMethodBody (codeSize As Integer, Optional maxStack As Integer = 8, Optional exceptionRegionCount As Integer = 0, Optional hasSmallExceptionRegions As Boolean = true, Optional localVariablesSignature As StandaloneSignatureHandle = null, Optional attributes As MethodBodyAttributes = System.Reflection.Metadata.Ecma335.MethodBodyAttributes.InitLocals) As MethodBodyStreamEncoder.MethodBody" />
+      <MemberSignature Language="F#" Value="member this.AddMethodBody : int * int * int * bool * System.Reflection.Metadata.StandaloneSignatureHandle * System.Reflection.Metadata.Ecma335.MethodBodyAttributes -&gt; System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.MethodBody" Usage="methodBodyStreamEncoder.AddMethodBody (codeSize, maxStack, exceptionRegionCount, hasSmallExceptionRegions, localVariablesSignature, attributes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -101,6 +110,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobBuilder Builder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Metadata.BlobBuilder Builder" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.Builder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
+      <MemberSignature Language="F#" Value="member this.Builder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.MethodBodyStreamEncoder.Builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

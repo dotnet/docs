@@ -1,7 +1,10 @@
-<Type Name="OperationFaultCollection" FullName="System.Web.Services.Description.OperationFaultCollection">
+﻿<Type Name="OperationFaultCollection" FullName="System.Web.Services.Description.OperationFaultCollection">
   <TypeSignature Language="C#" Value="public sealed class OperationFaultCollection : System.Web.Services.Description.ServiceDescriptionBaseCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OperationFaultCollection extends System.Web.Services.Description.ServiceDescriptionBaseCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.OperationFaultCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OperationFaultCollection&#xA;Inherits ServiceDescriptionBaseCollection" />
+  <TypeSignature Language="F#" Value="type OperationFaultCollection = class&#xA;    inherit ServiceDescriptionBaseCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OperationFaultCollection sealed : System::Web::Services::Description::ServiceDescriptionBaseCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public int Add (System.Web.Services.Description.OperationFault operationFaultMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.Services.Description.OperationFault operationFaultMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationFaultCollection.Add(System.Web.Services.Description.OperationFault)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (operationFaultMessage As OperationFault) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Services.Description.OperationFault -&gt; int" Usage="operationFaultCollection.Add operationFaultMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::Services::Description::OperationFault ^ operationFaultMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -66,6 +72,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.Services.Description.OperationFault operationFaultMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.Services.Description.OperationFault operationFaultMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationFaultCollection.Contains(System.Web.Services.Description.OperationFault)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (operationFaultMessage As OperationFault) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.Services.Description.OperationFault -&gt; bool" Usage="operationFaultCollection.Contains operationFaultMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::Services::Description::OperationFault ^ operationFaultMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -99,6 +108,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.Services.Description.OperationFault[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.Services.Description.OperationFault[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationFaultCollection.CopyTo(System.Web.Services.Description.OperationFault[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As OperationFault(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.Services.Description.OperationFault[] * int -&gt; unit" Usage="operationFaultCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::Services::Description::OperationFault ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -132,6 +144,9 @@
       <MemberSignature Language="C#" Value="protected override string GetKey (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetKey(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationFaultCollection.GetKey(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKey (value As Object) As String" />
+      <MemberSignature Language="F#" Value="override this.GetKey : obj -&gt; string" Usage="operationFaultCollection.GetKey value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetKey(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -155,6 +170,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Services.Description.OperationFault operationFaultMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Services.Description.OperationFault operationFaultMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationFaultCollection.IndexOf(System.Web.Services.Description.OperationFault)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (operationFaultMessage As OperationFault) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.Services.Description.OperationFault -&gt; int" Usage="operationFaultCollection.IndexOf operationFaultMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Services::Description::OperationFault ^ operationFaultMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -187,6 +205,9 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.Services.Description.OperationFault operationFaultMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.Services.Description.OperationFault operationFaultMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationFaultCollection.Insert(System.Int32,System.Web.Services.Description.OperationFault)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, operationFaultMessage As OperationFault)" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.Services.Description.OperationFault -&gt; unit" Usage="operationFaultCollection.Insert (index, operationFaultMessage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::Services::Description::OperationFault ^ operationFaultMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -225,10 +246,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Web.Services.Description.OperationFault" /> specified by the parameter passed in.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationFault this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.OperationFault Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationFaultCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As OperationFault" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Services.Description.OperationFault with get, set" Usage="System.Web.Services.Description.OperationFaultCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::OperationFault ^ default[int] { System::Web::Services::Description::OperationFault ^ get(int index); void set(int index, System::Web::Services::Description::OperationFault ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -261,6 +295,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Description.OperationFault this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Description.OperationFault Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.OperationFaultCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(name As String) As OperationFault" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Services.Description.OperationFault" Usage="System.Web.Services.Description.OperationFaultCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Description::OperationFault ^ default[System::String ^] { System::Web::Services::Description::OperationFault ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -293,6 +330,9 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.Services.Description.OperationFault operationFaultMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Services.Description.OperationFault operationFaultMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationFaultCollection.Remove(System.Web.Services.Description.OperationFault)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (operationFaultMessage As OperationFault)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.Services.Description.OperationFault -&gt; unit" Usage="operationFaultCollection.Remove operationFaultMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Services::Description::OperationFault ^ operationFaultMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -331,6 +371,9 @@
       <MemberSignature Language="C#" Value="protected override void SetParent (object value, object parent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetParent(object value, object parent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.OperationFaultCollection.SetParent(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetParent (value As Object, parent As Object)" />
+      <MemberSignature Language="F#" Value="override this.SetParent : obj * obj -&gt; unit" Usage="operationFaultCollection.SetParent (value, parent)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetParent(System::Object ^ value, System::Object ^ parent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -351,15 +394,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets the <see cref="T:System.Web.Services.Description.OperationFault" /> specified by the parameter passed in.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

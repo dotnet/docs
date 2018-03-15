@@ -1,7 +1,10 @@
-<Type Name="StateMachineWorkflowInstance" FullName="System.Workflow.Activities.StateMachineWorkflowInstance">
+﻿<Type Name="StateMachineWorkflowInstance" FullName="System.Workflow.Activities.StateMachineWorkflowInstance">
   <TypeSignature Language="C#" Value="public sealed class StateMachineWorkflowInstance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StateMachineWorkflowInstance extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.StateMachineWorkflowInstance" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StateMachineWorkflowInstance" />
+  <TypeSignature Language="F#" Value="type StateMachineWorkflowInstance = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StateMachineWorkflowInstance sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +48,9 @@
       <MemberSignature Language="C#" Value="public StateMachineWorkflowInstance (System.Workflow.Runtime.WorkflowRuntime runtime, Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.Runtime.WorkflowRuntime runtime, valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.StateMachineWorkflowInstance.#ctor(System.Workflow.Runtime.WorkflowRuntime,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (runtime As WorkflowRuntime, instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.StateMachineWorkflowInstance : System.Workflow.Runtime.WorkflowRuntime * Guid -&gt; System.Workflow.Activities.StateMachineWorkflowInstance" Usage="new System.Workflow.Activities.StateMachineWorkflowInstance (runtime, instanceId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StateMachineWorkflowInstance(System::Workflow::Runtime::WorkflowRuntime ^ runtime, Guid instanceId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -80,6 +86,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Activities.StateActivity CurrentState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.StateActivity CurrentState" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowInstance.CurrentState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentState As StateActivity" />
+      <MemberSignature Language="F#" Value="member this.CurrentState : System.Workflow.Activities.StateActivity" Usage="System.Workflow.Activities.StateMachineWorkflowInstance.CurrentState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::StateActivity ^ CurrentState { System::Workflow::Activities::StateActivity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -98,6 +107,9 @@
       <MemberSignature Language="C#" Value="public string CurrentStateName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CurrentStateName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowInstance.CurrentStateName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentStateName As String" />
+      <MemberSignature Language="F#" Value="member this.CurrentStateName : string" Usage="System.Workflow.Activities.StateMachineWorkflowInstance.CurrentStateName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CurrentStateName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -112,10 +124,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EnqueueItem">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Posts a message to the <see cref="T:System.Workflow.Activities.StateMachineWorkflowInstance" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EnqueueItem">
       <MemberSignature Language="C#" Value="public void EnqueueItem (IComparable queueName, object item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnqueueItem(class System.IComparable queueName, object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.StateMachineWorkflowInstance.EnqueueItem(System.IComparable,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnqueueItem (queueName As IComparable, item As Object)" />
+      <MemberSignature Language="F#" Value="member this.EnqueueItem : IComparable * obj -&gt; unit" Usage="stateMachineWorkflowInstance.EnqueueItem (queueName, item)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnqueueItem(IComparable ^ queueName, System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -139,6 +163,9 @@
       <MemberSignature Language="C#" Value="public void EnqueueItem (IComparable queueName, object item, System.Workflow.Runtime.IPendingWork pendingWork, object workItem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EnqueueItem(class System.IComparable queueName, object item, class System.Workflow.Runtime.IPendingWork pendingWork, object workItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.StateMachineWorkflowInstance.EnqueueItem(System.IComparable,System.Object,System.Workflow.Runtime.IPendingWork,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnqueueItem (queueName As IComparable, item As Object, pendingWork As IPendingWork, workItem As Object)" />
+      <MemberSignature Language="F#" Value="member this.EnqueueItem : IComparable * obj * System.Workflow.Runtime.IPendingWork * obj -&gt; unit" Usage="stateMachineWorkflowInstance.EnqueueItem (queueName, item, pendingWork, workItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnqueueItem(IComparable ^ queueName, System::Object ^ item, System::Workflow::Runtime::IPendingWork ^ pendingWork, System::Object ^ workItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -166,6 +193,9 @@
       <MemberSignature Language="C#" Value="public Guid InstanceId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid InstanceId" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowInstance.InstanceId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceId As Guid" />
+      <MemberSignature Language="F#" Value="member this.InstanceId : Guid" Usage="System.Workflow.Activities.StateMachineWorkflowInstance.InstanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid InstanceId { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -184,6 +214,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; PossibleStateTransitions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; PossibleStateTransitions" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowInstance.PossibleStateTransitions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PossibleStateTransitions As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.PossibleStateTransitions : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.Workflow.Activities.StateMachineWorkflowInstance.PossibleStateTransitions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ PossibleStateTransitions { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -198,10 +231,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetState">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides a transition to a <see cref="T:System.Workflow.Activities.StateActivity" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetState">
       <MemberSignature Language="C#" Value="public void SetState (string targetStateName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetState(string targetStateName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.StateMachineWorkflowInstance.SetState(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetState (targetStateName As String)" />
+      <MemberSignature Language="F#" Value="member this.SetState : string -&gt; unit" Usage="stateMachineWorkflowInstance.SetState targetStateName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetState(System::String ^ targetStateName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -226,6 +271,9 @@
       <MemberSignature Language="C#" Value="public void SetState (System.Workflow.Activities.StateActivity targetState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetState(class System.Workflow.Activities.StateActivity targetState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.StateMachineWorkflowInstance.SetState(System.Workflow.Activities.StateActivity)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetState (targetState As StateActivity)" />
+      <MemberSignature Language="F#" Value="member this.SetState : System.Workflow.Activities.StateActivity -&gt; unit" Usage="stateMachineWorkflowInstance.SetState targetState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetState(System::Workflow::Activities::StateActivity ^ targetState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -249,6 +297,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; StateHistory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; StateHistory" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowInstance.StateHistory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateHistory As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.StateHistory : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.Workflow.Activities.StateMachineWorkflowInstance.StateHistory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ StateHistory { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -274,6 +325,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Activities.StateMachineWorkflowActivity StateMachineWorkflow { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Activities.StateMachineWorkflowActivity StateMachineWorkflow" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowInstance.StateMachineWorkflow" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StateMachineWorkflow As StateMachineWorkflowActivity" />
+      <MemberSignature Language="F#" Value="member this.StateMachineWorkflow : System.Workflow.Activities.StateMachineWorkflowActivity" Usage="System.Workflow.Activities.StateMachineWorkflowInstance.StateMachineWorkflow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Activities::StateMachineWorkflowActivity ^ StateMachineWorkflow { System::Workflow::Activities::StateMachineWorkflowActivity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -300,6 +354,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.Activities.StateActivity&gt; States { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Workflow.Activities.StateActivity&gt; States" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowInstance.States" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property States As ReadOnlyCollection(Of StateActivity)" />
+      <MemberSignature Language="F#" Value="member this.States : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Workflow.Activities.StateActivity&gt;" Usage="System.Workflow.Activities.StateMachineWorkflowInstance.States" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::Activities::StateActivity ^&gt; ^ States { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Workflow::Activities::StateActivity ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -319,6 +376,9 @@
       <MemberSignature Language="C#" Value="public System.Workflow.Runtime.WorkflowInstance WorkflowInstance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.Runtime.WorkflowInstance WorkflowInstance" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.StateMachineWorkflowInstance.WorkflowInstance" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowInstance As WorkflowInstance" />
+      <MemberSignature Language="F#" Value="member this.WorkflowInstance : System.Workflow.Runtime.WorkflowInstance" Usage="System.Workflow.Activities.StateMachineWorkflowInstance.WorkflowInstance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Workflow::Runtime::WorkflowInstance ^ WorkflowInstance { System::Workflow::Runtime::WorkflowInstance ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -333,23 +393,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SetState">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides a transition to a <see cref="T:System.Workflow.Activities.StateActivity" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="EnqueueItem">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Posts a message to the <see cref="T:System.Workflow.Activities.StateMachineWorkflowInstance" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

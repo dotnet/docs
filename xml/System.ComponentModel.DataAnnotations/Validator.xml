@@ -1,7 +1,10 @@
-<Type Name="Validator" FullName="System.ComponentModel.DataAnnotations.Validator">
+﻿<Type Name="Validator" FullName="System.ComponentModel.DataAnnotations.Validator">
   <TypeSignature Language="C#" Value="public static class Validator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Validator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.Validator" />
+  <TypeSignature Language="VB.NET" Value="Public Class Validator" />
+  <TypeSignature Language="F#" Value="type Validator = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Validator abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -21,10 +24,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="TryValidateObject">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified object is valid.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryValidateObject">
       <MemberSignature Language="C#" Value="public static bool TryValidateObject (object instance, System.ComponentModel.DataAnnotations.ValidationContext validationContext, System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryValidateObject(object instance, class System.ComponentModel.DataAnnotations.ValidationContext validationContext, class System.Collections.Generic.ICollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.TryValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult})" />
+      <MemberSignature Language="F#" Value="static member TryValidateObject : obj * System.ComponentModel.DataAnnotations.ValidationContext * System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; -&gt; bool" Usage="System.ComponentModel.DataAnnotations.Validator.TryValidateObject (instance, validationContext, validationResults)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryValidateObject(System::Object ^ instance, System::ComponentModel::DataAnnotations::ValidationContext ^ validationContext, System::Collections::Generic::ICollection&lt;System::ComponentModel::DataAnnotations::ValidationResult ^&gt; ^ validationResults);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -67,6 +82,8 @@
       <MemberSignature Language="C#" Value="public static bool TryValidateObject (object instance, System.ComponentModel.DataAnnotations.ValidationContext validationContext, System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults, bool validateAllProperties);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryValidateObject(object instance, class System.ComponentModel.DataAnnotations.ValidationContext validationContext, class System.Collections.Generic.ICollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults, bool validateAllProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.TryValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult},System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member TryValidateObject : obj * System.ComponentModel.DataAnnotations.ValidationContext * System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; * bool -&gt; bool" Usage="System.ComponentModel.DataAnnotations.Validator.TryValidateObject (instance, validationContext, validationResults, validateAllProperties)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryValidateObject(System::Object ^ instance, System::ComponentModel::DataAnnotations::ValidationContext ^ validationContext, System::Collections::Generic::ICollection&lt;System::ComponentModel::DataAnnotations::ValidationResult ^&gt; ^ validationResults, bool validateAllProperties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -112,6 +129,8 @@
       <MemberSignature Language="C#" Value="public static bool TryValidateProperty (object value, System.ComponentModel.DataAnnotations.ValidationContext validationContext, System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryValidateProperty(object value, class System.ComponentModel.DataAnnotations.ValidationContext validationContext, class System.Collections.Generic.ICollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.TryValidateProperty(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult})" />
+      <MemberSignature Language="F#" Value="static member TryValidateProperty : obj * System.ComponentModel.DataAnnotations.ValidationContext * System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; -&gt; bool" Usage="System.ComponentModel.DataAnnotations.Validator.TryValidateProperty (value, validationContext, validationResults)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryValidateProperty(System::Object ^ value, System::ComponentModel::DataAnnotations::ValidationContext ^ validationContext, System::Collections::Generic::ICollection&lt;System::ComponentModel::DataAnnotations::ValidationResult ^&gt; ^ validationResults);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -158,6 +177,8 @@
       <MemberSignature Language="C#" Value="public static bool TryValidateValue (object value, System.ComponentModel.DataAnnotations.ValidationContext validationContext, System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults, System.Collections.Generic.IEnumerable&lt;System.ComponentModel.DataAnnotations.ValidationAttribute&gt; validationAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryValidateValue(object value, class System.ComponentModel.DataAnnotations.ValidationContext validationContext, class System.Collections.Generic.ICollection`1&lt;class System.ComponentModel.DataAnnotations.ValidationResult&gt; validationResults, class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.DataAnnotations.ValidationAttribute&gt; validationAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.TryValidateValue(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult},System.Collections.Generic.IEnumerable{System.ComponentModel.DataAnnotations.ValidationAttribute})" />
+      <MemberSignature Language="F#" Value="static member TryValidateValue : obj * System.ComponentModel.DataAnnotations.ValidationContext * System.Collections.Generic.ICollection&lt;System.ComponentModel.DataAnnotations.ValidationResult&gt; * seq&lt;System.ComponentModel.DataAnnotations.ValidationAttribute&gt; -&gt; bool" Usage="System.ComponentModel.DataAnnotations.Validator.TryValidateValue (value, validationContext, validationResults, validationAttributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryValidateValue(System::Object ^ value, System::ComponentModel::DataAnnotations::ValidationContext ^ validationContext, System::Collections::Generic::ICollection&lt;System::ComponentModel::DataAnnotations::ValidationResult ^&gt; ^ validationResults, System::Collections::Generic::IEnumerable&lt;System::ComponentModel::DataAnnotations::ValidationAttribute ^&gt; ^ validationAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -196,10 +217,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ValidateObject">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified object is valid.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ValidateObject">
       <MemberSignature Language="C#" Value="public static void ValidateObject (object instance, System.ComponentModel.DataAnnotations.ValidationContext validationContext);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ValidateObject(object instance, class System.ComponentModel.DataAnnotations.ValidationContext validationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.ValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)" />
+      <MemberSignature Language="F#" Value="static member ValidateObject : obj * System.ComponentModel.DataAnnotations.ValidationContext -&gt; unit" Usage="System.ComponentModel.DataAnnotations.Validator.ValidateObject (instance, validationContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ValidateObject(System::Object ^ instance, System::ComponentModel::DataAnnotations::ValidationContext ^ validationContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -239,6 +272,8 @@
       <MemberSignature Language="C#" Value="public static void ValidateObject (object instance, System.ComponentModel.DataAnnotations.ValidationContext validationContext, bool validateAllProperties);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ValidateObject(object instance, class System.ComponentModel.DataAnnotations.ValidationContext validationContext, bool validateAllProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.ValidateObject(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member ValidateObject : obj * System.ComponentModel.DataAnnotations.ValidationContext * bool -&gt; unit" Usage="System.ComponentModel.DataAnnotations.Validator.ValidateObject (instance, validationContext, validateAllProperties)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ValidateObject(System::Object ^ instance, System::ComponentModel::DataAnnotations::ValidationContext ^ validationContext, bool validateAllProperties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -282,6 +317,8 @@
       <MemberSignature Language="C#" Value="public static void ValidateProperty (object value, System.ComponentModel.DataAnnotations.ValidationContext validationContext);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ValidateProperty(object value, class System.ComponentModel.DataAnnotations.ValidationContext validationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.ValidateProperty(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)" />
+      <MemberSignature Language="F#" Value="static member ValidateProperty : obj * System.ComponentModel.DataAnnotations.ValidationContext -&gt; unit" Usage="System.ComponentModel.DataAnnotations.Validator.ValidateProperty (value, validationContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ValidateProperty(System::Object ^ value, System::ComponentModel::DataAnnotations::ValidationContext ^ validationContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -321,6 +358,8 @@
       <MemberSignature Language="C#" Value="public static void ValidateValue (object value, System.ComponentModel.DataAnnotations.ValidationContext validationContext, System.Collections.Generic.IEnumerable&lt;System.ComponentModel.DataAnnotations.ValidationAttribute&gt; validationAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ValidateValue(object value, class System.ComponentModel.DataAnnotations.ValidationContext validationContext, class System.Collections.Generic.IEnumerable`1&lt;class System.ComponentModel.DataAnnotations.ValidationAttribute&gt; validationAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.Validator.ValidateValue(System.Object,System.ComponentModel.DataAnnotations.ValidationContext,System.Collections.Generic.IEnumerable{System.ComponentModel.DataAnnotations.ValidationAttribute})" />
+      <MemberSignature Language="F#" Value="static member ValidateValue : obj * System.ComponentModel.DataAnnotations.ValidationContext * seq&lt;System.ComponentModel.DataAnnotations.ValidationAttribute&gt; -&gt; unit" Usage="System.ComponentModel.DataAnnotations.Validator.ValidateValue (value, validationContext, validationAttributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ValidateValue(System::Object ^ value, System::ComponentModel::DataAnnotations::ValidationContext ^ validationContext, System::Collections::Generic::IEnumerable&lt;System::ComponentModel::DataAnnotations::ValidationAttribute ^&gt; ^ validationAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -357,25 +396,5 @@
         <exception cref="T:System.ComponentModel.DataAnnotations.ValidationException">The <paramref name="value" /> parameter does not validate with the <paramref name="validationAttributes" /> parameter.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TryValidateObject">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the specified object is valid.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ValidateObject">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the specified object is valid.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

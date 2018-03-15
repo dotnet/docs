@@ -1,7 +1,10 @@
-<Type Name="PolygonHotSpot" FullName="System.Web.UI.WebControls.PolygonHotSpot">
+﻿<Type Name="PolygonHotSpot" FullName="System.Web.UI.WebControls.PolygonHotSpot">
   <TypeSignature Language="C#" Value="public sealed class PolygonHotSpot : System.Web.UI.WebControls.HotSpot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PolygonHotSpot extends System.Web.UI.WebControls.HotSpot" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.PolygonHotSpot" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PolygonHotSpot&#xA;Inherits HotSpot" />
+  <TypeSignature Language="F#" Value="type PolygonHotSpot = class&#xA;    inherit HotSpot" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PolygonHotSpot sealed : System::Web::UI::WebControls::HotSpot" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="public PolygonHotSpot ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PolygonHotSpot.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PolygonHotSpot();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +75,9 @@
       <MemberSignature Language="C#" Value="public string Coordinates { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Coordinates" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PolygonHotSpot.Coordinates" />
+      <MemberSignature Language="VB.NET" Value="Public Property Coordinates As String" />
+      <MemberSignature Language="F#" Value="member this.Coordinates : string with get, set" Usage="System.Web.UI.WebControls.PolygonHotSpot.Coordinates" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Coordinates { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +117,9 @@
       <MemberSignature Language="C#" Value="public override string GetCoordinates ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetCoordinates() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.PolygonHotSpot.GetCoordinates" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCoordinates () As String" />
+      <MemberSignature Language="F#" Value="override this.GetCoordinates : unit -&gt; string" Usage="polygonHotSpot.GetCoordinates " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetCoordinates();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,9 +155,12 @@
       </Docs>
     </Member>
     <Member MemberName="MarkupName">
-      <MemberSignature Language="C#" Value="protected override string MarkupName { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override string MarkupName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MarkupName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.PolygonHotSpot.MarkupName" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property MarkupName As String" />
+      <MemberSignature Language="F#" Value="member this.MarkupName : string" Usage="System.Web.UI.WebControls.PolygonHotSpot.MarkupName" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::String ^ MarkupName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

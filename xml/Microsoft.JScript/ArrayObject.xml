@@ -1,7 +1,10 @@
-<Type Name="ArrayObject" FullName="Microsoft.JScript.ArrayObject">
+﻿<Type Name="ArrayObject" FullName="Microsoft.JScript.ArrayObject">
   <TypeSignature Language="C#" Value="public class ArrayObject : Microsoft.JScript.JSObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArrayObject extends Microsoft.JScript.JSObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ArrayObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArrayObject&#xA;Inherits JSObject" />
+  <TypeSignature Language="F#" Value="type ArrayObject = class&#xA;    inherit JSObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ArrayObject : Microsoft::JScript::JSObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +25,9 @@
       <MemberSignature Language="C#" Value="public virtual object length { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object length" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ArrayObject.length" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property length As Object" />
+      <MemberSignature Language="F#" Value="member this.length : obj with get, set" Usage="Microsoft.JScript.ArrayObject.length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ length { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -43,6 +49,9 @@
       <MemberSignature Language="C#" Value="protected void SpliceSlowly (uint start, uint deleteCount, object[] args, Microsoft.JScript.ArrayObject outArray, uint oldLength, uint newLength);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void SpliceSlowly(unsigned int32 start, unsigned int32 deleteCount, object[] args, class Microsoft.JScript.ArrayObject outArray, unsigned int32 oldLength, unsigned int32 newLength) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayObject.SpliceSlowly(System.UInt32,System.UInt32,System.Object[],Microsoft.JScript.ArrayObject,System.UInt32,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub SpliceSlowly (start As UInteger, deleteCount As UInteger, args As Object(), outArray As ArrayObject, oldLength As UInteger, newLength As UInteger)" />
+      <MemberSignature Language="F#" Value="member this.SpliceSlowly : uint32 * uint32 * obj[] * Microsoft.JScript.ArrayObject * uint32 * uint32 -&gt; unit" Usage="arrayObject.SpliceSlowly (start, deleteCount, args, outArray, oldLength, newLength)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void SpliceSlowly(System::UInt32 start, System::UInt32 deleteCount, cli::array &lt;System::Object ^&gt; ^ args, Microsoft::JScript::ArrayObject ^ outArray, System::UInt32 oldLength, System::UInt32 newLength);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

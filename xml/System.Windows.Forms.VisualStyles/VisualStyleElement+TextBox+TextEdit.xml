@@ -1,7 +1,10 @@
-<Type Name="VisualStyleElement+TextBox+TextEdit" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+TextBox+TextEdit">
+﻿<Type Name="VisualStyleElement+TextBox+TextEdit" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+TextBox+TextEdit">
   <TypeSignature Language="C#" Value="public static class VisualStyleElement.TextBox.TextEdit" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/TextBox/TextEdit extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualStyleElement.TextBox.TextEdit" />
+  <TypeSignature Language="F#" Value="type VisualStyleElement.TextBox.TextEdit = class" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class VisualStyleElement::TextBox::TextEdit abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Assist { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Assist" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit.Assist" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Assist As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Assist : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit.Assist" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Assist { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +75,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Disabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Disabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit.Disabled" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Disabled As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Disabled : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit.Disabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Disabled { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +111,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Focused { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Focused" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit.Focused" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Focused As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Focused : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit.Focused" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Focused { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -135,6 +147,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Hot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Hot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit.Hot" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Hot As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Hot : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit.Hot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Hot { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -168,6 +183,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Normal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Normal" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit.Normal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Normal As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Normal : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit.Normal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Normal { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -201,6 +219,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement ReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement ReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ReadOnly As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ ReadOnly { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -234,6 +255,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Selected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Selected" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit.Selected" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Selected As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Selected : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox.TextEdit.Selected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Selected { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

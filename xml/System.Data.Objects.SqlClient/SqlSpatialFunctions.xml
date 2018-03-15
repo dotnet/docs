@@ -1,7 +1,10 @@
-<Type Name="SqlSpatialFunctions" FullName="System.Data.Objects.SqlClient.SqlSpatialFunctions">
+﻿<Type Name="SqlSpatialFunctions" FullName="System.Data.Objects.SqlClient.SqlSpatialFunctions">
   <TypeSignature Language="C#" Value="public static class SqlSpatialFunctions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SqlSpatialFunctions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.SqlClient.SqlSpatialFunctions" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlSpatialFunctions" />
+  <TypeSignature Language="F#" Value="type SqlSpatialFunctions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlSpatialFunctions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="AsTextZM">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the Open Geospatial Consortium (OGC) Well-Known Text (WKT) representation of a geography instance augmented with any Z (elevation) and M (measure) values carried by the instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AsTextZM">
       <MemberSignature Language="C#" Value="public static string AsTextZM (System.Data.Spatial.DbGeography geographyValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string AsTextZM(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.AsTextZM(System.Data.Spatial.DbGeography)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AsTextZM (geographyValue As DbGeography) As String" />
+      <MemberSignature Language="F#" Value="static member AsTextZM : System.Data.Spatial.DbGeography -&gt; string" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.AsTextZM geographyValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ AsTextZM(System::Data::Spatial::DbGeography ^ geographyValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -46,6 +61,9 @@
       <MemberSignature Language="C#" Value="public static string AsTextZM (System.Data.Spatial.DbGeometry geometryValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string AsTextZM(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.AsTextZM(System.Data.Spatial.DbGeometry)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AsTextZM (geometryValue As DbGeometry) As String" />
+      <MemberSignature Language="F#" Value="static member AsTextZM : System.Data.Spatial.DbGeometry -&gt; string" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.AsTextZM geometryValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ AsTextZM(System::Data::Spatial::DbGeometry ^ geometryValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -69,10 +87,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BufferWithTolerance">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a geometric object representing the union of all point values whose distance from an instance is less than or equal to a specified value, allowing for a specified tolerance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BufferWithTolerance">
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography BufferWithTolerance (System.Data.Spatial.DbGeography geographyValue, Nullable&lt;double&gt; distance, Nullable&lt;double&gt; tolerance, Nullable&lt;bool&gt; relative);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography BufferWithTolerance(class System.Data.Spatial.DbGeography geographyValue, valuetype System.Nullable`1&lt;float64&gt; distance, valuetype System.Nullable`1&lt;float64&gt; tolerance, valuetype System.Nullable`1&lt;bool&gt; relative) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.BufferWithTolerance(System.Data.Spatial.DbGeography,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BufferWithTolerance (geographyValue As DbGeography, distance As Nullable(Of Double), tolerance As Nullable(Of Double), relative As Nullable(Of Boolean)) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member BufferWithTolerance : System.Data.Spatial.DbGeography * Nullable&lt;double&gt; * Nullable&lt;double&gt; * Nullable&lt;bool&gt; -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.BufferWithTolerance (geographyValue, distance, tolerance, relative)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ BufferWithTolerance(System::Data::Spatial::DbGeography ^ geographyValue, Nullable&lt;double&gt; distance, Nullable&lt;double&gt; tolerance, Nullable&lt;bool&gt; relative);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -106,6 +136,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry BufferWithTolerance (System.Data.Spatial.DbGeometry geometryValue, Nullable&lt;double&gt; distance, Nullable&lt;double&gt; tolerance, Nullable&lt;bool&gt; relative);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry BufferWithTolerance(class System.Data.Spatial.DbGeometry geometryValue, valuetype System.Nullable`1&lt;float64&gt; distance, valuetype System.Nullable`1&lt;float64&gt; tolerance, valuetype System.Nullable`1&lt;bool&gt; relative) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.BufferWithTolerance(System.Data.Spatial.DbGeometry,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function BufferWithTolerance (geometryValue As DbGeometry, distance As Nullable(Of Double), tolerance As Nullable(Of Double), relative As Nullable(Of Boolean)) As DbGeometry" />
+      <MemberSignature Language="F#" Value="static member BufferWithTolerance : System.Data.Spatial.DbGeometry * Nullable&lt;double&gt; * Nullable&lt;double&gt; * Nullable&lt;bool&gt; -&gt; System.Data.Spatial.DbGeometry" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.BufferWithTolerance (geometryValue, distance, tolerance, relative)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeometry ^ BufferWithTolerance(System::Data::Spatial::DbGeometry ^ geometryValue, Nullable&lt;double&gt; distance, Nullable&lt;double&gt; tolerance, Nullable&lt;bool&gt; relative);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -139,6 +172,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; EnvelopeAngle (System.Data.Spatial.DbGeography geographyValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;float64&gt; EnvelopeAngle(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.EnvelopeAngle(System.Data.Spatial.DbGeography)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EnvelopeAngle (geographyValue As DbGeography) As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="static member EnvelopeAngle : System.Data.Spatial.DbGeography -&gt; Nullable&lt;double&gt;" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.EnvelopeAngle geographyValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;double&gt; EnvelopeAngle(System::Data::Spatial::DbGeography ^ geographyValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -166,6 +202,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography EnvelopeCenter (System.Data.Spatial.DbGeography geographyValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography EnvelopeCenter(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.EnvelopeCenter(System.Data.Spatial.DbGeography)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EnvelopeCenter (geographyValue As DbGeography) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member EnvelopeCenter : System.Data.Spatial.DbGeography -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.EnvelopeCenter geographyValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ EnvelopeCenter(System::Data::Spatial::DbGeography ^ geographyValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -189,10 +228,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Filter">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Offers a fast, index-only intersection method to determine if a geography instance intersects another SqlGeography instance, assuming an index is available.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Filter">
       <MemberSignature Language="C#" Value="public static Nullable&lt;bool&gt; Filter (System.Data.Spatial.DbGeography geographyValue, System.Data.Spatial.DbGeography geographyOther);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;bool&gt; Filter(class System.Data.Spatial.DbGeography geographyValue, class System.Data.Spatial.DbGeography geographyOther) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.Filter(System.Data.Spatial.DbGeography,System.Data.Spatial.DbGeography)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Filter (geographyValue As DbGeography, geographyOther As DbGeography) As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member Filter : System.Data.Spatial.DbGeography * System.Data.Spatial.DbGeography -&gt; Nullable&lt;bool&gt;" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.Filter (geographyValue, geographyOther)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;bool&gt; Filter(System::Data::Spatial::DbGeography ^ geographyValue, System::Data::Spatial::DbGeography ^ geographyOther);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -223,6 +274,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;bool&gt; Filter (System.Data.Spatial.DbGeometry geometryValue, System.Data.Spatial.DbGeometry geometryOther);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;bool&gt; Filter(class System.Data.Spatial.DbGeometry geometryValue, class System.Data.Spatial.DbGeometry geometryOther) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.Filter(System.Data.Spatial.DbGeometry,System.Data.Spatial.DbGeometry)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Filter (geometryValue As DbGeometry, geometryOther As DbGeometry) As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member Filter : System.Data.Spatial.DbGeometry * System.Data.Spatial.DbGeometry -&gt; Nullable&lt;bool&gt;" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.Filter (geometryValue, geometryOther)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;bool&gt; Filter(System::Data::Spatial::DbGeometry ^ geometryValue, System::Data::Spatial::DbGeometry ^ geometryOther);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -249,10 +303,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InstanceOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tests if the SqlGeography instance is the same as the specified type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InstanceOf">
       <MemberSignature Language="C#" Value="public static Nullable&lt;bool&gt; InstanceOf (System.Data.Spatial.DbGeography geographyValue, string geometryTypeName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;bool&gt; InstanceOf(class System.Data.Spatial.DbGeography geographyValue, string geometryTypeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.InstanceOf(System.Data.Spatial.DbGeography,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InstanceOf (geographyValue As DbGeography, geometryTypeName As String) As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member InstanceOf : System.Data.Spatial.DbGeography * string -&gt; Nullable&lt;bool&gt;" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.InstanceOf (geographyValue, geometryTypeName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;bool&gt; InstanceOf(System::Data::Spatial::DbGeography ^ geographyValue, System::String ^ geometryTypeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -282,6 +348,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;bool&gt; InstanceOf (System.Data.Spatial.DbGeometry geometryValue, string geometryTypeName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;bool&gt; InstanceOf(class System.Data.Spatial.DbGeometry geometryValue, string geometryTypeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.InstanceOf(System.Data.Spatial.DbGeometry,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InstanceOf (geometryValue As DbGeometry, geometryTypeName As String) As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="static member InstanceOf : System.Data.Spatial.DbGeometry * string -&gt; Nullable&lt;bool&gt;" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.InstanceOf (geometryValue, geometryTypeName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;bool&gt; InstanceOf(System::Data::Spatial::DbGeometry ^ geometryValue, System::String ^ geometryTypeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -311,6 +380,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry MakeValid (System.Data.Spatial.DbGeometry geometryValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry MakeValid(class System.Data.Spatial.DbGeometry geometryValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.MakeValid(System.Data.Spatial.DbGeometry)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeValid (geometryValue As DbGeometry) As DbGeometry" />
+      <MemberSignature Language="F#" Value="static member MakeValid : System.Data.Spatial.DbGeometry -&gt; System.Data.Spatial.DbGeometry" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.MakeValid geometryValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeometry ^ MakeValid(System::Data::Spatial::DbGeometry ^ geometryValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -338,6 +410,9 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; NumRings (System.Data.Spatial.DbGeography geographyValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Nullable`1&lt;int32&gt; NumRings(class System.Data.Spatial.DbGeography geographyValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.NumRings(System.Data.Spatial.DbGeography)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NumRings (geographyValue As DbGeography) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="static member NumRings : System.Data.Spatial.DbGeography -&gt; Nullable&lt;int&gt;" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.NumRings geographyValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Nullable&lt;int&gt; NumRings(System::Data::Spatial::DbGeography ^ geographyValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -365,6 +440,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography PointGeography (Nullable&lt;double&gt; latitude, Nullable&lt;double&gt; longitude, Nullable&lt;int&gt; spatialReferenceId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography PointGeography(valuetype System.Nullable`1&lt;float64&gt; latitude, valuetype System.Nullable`1&lt;float64&gt; longitude, valuetype System.Nullable`1&lt;int32&gt; spatialReferenceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.PointGeography(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PointGeography (latitude As Nullable(Of Double), longitude As Nullable(Of Double), spatialReferenceId As Nullable(Of Integer)) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member PointGeography : Nullable&lt;double&gt; * Nullable&lt;double&gt; * Nullable&lt;int&gt; -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.PointGeography (latitude, longitude, spatialReferenceId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ PointGeography(Nullable&lt;double&gt; latitude, Nullable&lt;double&gt; longitude, Nullable&lt;int&gt; spatialReferenceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -396,6 +474,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry PointGeometry (Nullable&lt;double&gt; xCoordinate, Nullable&lt;double&gt; yCoordinate, Nullable&lt;int&gt; spatialReferenceId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry PointGeometry(valuetype System.Nullable`1&lt;float64&gt; xCoordinate, valuetype System.Nullable`1&lt;float64&gt; yCoordinate, valuetype System.Nullable`1&lt;int32&gt; spatialReferenceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.PointGeometry(System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PointGeometry (xCoordinate As Nullable(Of Double), yCoordinate As Nullable(Of Double), spatialReferenceId As Nullable(Of Integer)) As DbGeometry" />
+      <MemberSignature Language="F#" Value="static member PointGeometry : Nullable&lt;double&gt; * Nullable&lt;double&gt; * Nullable&lt;int&gt; -&gt; System.Data.Spatial.DbGeometry" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.PointGeometry (xCoordinate, yCoordinate, spatialReferenceId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeometry ^ PointGeometry(Nullable&lt;double&gt; xCoordinate, Nullable&lt;double&gt; yCoordinate, Nullable&lt;int&gt; spatialReferenceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -423,10 +504,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Reduce">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an approximation of the given geography instance produced by running the Douglas-Peucker algorithm on the instance with the given tolerance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Reduce">
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography Reduce (System.Data.Spatial.DbGeography geographyValue, Nullable&lt;double&gt; tolerance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography Reduce(class System.Data.Spatial.DbGeography geographyValue, valuetype System.Nullable`1&lt;float64&gt; tolerance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.Reduce(System.Data.Spatial.DbGeography,System.Nullable{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Reduce (geographyValue As DbGeography, tolerance As Nullable(Of Double)) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member Reduce : System.Data.Spatial.DbGeography * Nullable&lt;double&gt; -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.Reduce (geographyValue, tolerance)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ Reduce(System::Data::Spatial::DbGeography ^ geographyValue, Nullable&lt;double&gt; tolerance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -456,6 +549,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeometry Reduce (System.Data.Spatial.DbGeometry geometryValue, Nullable&lt;double&gt; tolerance);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeometry Reduce(class System.Data.Spatial.DbGeometry geometryValue, valuetype System.Nullable`1&lt;float64&gt; tolerance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.Reduce(System.Data.Spatial.DbGeometry,System.Nullable{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Reduce (geometryValue As DbGeometry, tolerance As Nullable(Of Double)) As DbGeometry" />
+      <MemberSignature Language="F#" Value="static member Reduce : System.Data.Spatial.DbGeometry * Nullable&lt;double&gt; -&gt; System.Data.Spatial.DbGeometry" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.Reduce (geometryValue, tolerance)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeometry ^ Reduce(System::Data::Spatial::DbGeometry ^ geometryValue, Nullable&lt;double&gt; tolerance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -485,6 +581,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography RingN (System.Data.Spatial.DbGeography geographyValue, Nullable&lt;int&gt; index);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography RingN(class System.Data.Spatial.DbGeography geographyValue, valuetype System.Nullable`1&lt;int32&gt; index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.SqlClient.SqlSpatialFunctions.RingN(System.Data.Spatial.DbGeography,System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RingN (geographyValue As DbGeography, index As Nullable(Of Integer)) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member RingN : System.Data.Spatial.DbGeography * Nullable&lt;int&gt; -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Objects.SqlClient.SqlSpatialFunctions.RingN (geographyValue, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ RingN(System::Data::Spatial::DbGeography ^ geographyValue, Nullable&lt;int&gt; index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -510,50 +609,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Filter">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Offers a fast, index-only intersection method to determine if a geography instance intersects another SqlGeography instance, assuming an index is available.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="InstanceOf">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Tests if the SqlGeography instance is the same as the specified type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BufferWithTolerance">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a geometric object representing the union of all point values whose distance from an instance is less than or equal to a specified value, allowing for a specified tolerance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Reduce">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an approximation of the given geography instance produced by running the Douglas-Peucker algorithm on the instance with the given tolerance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AsTextZM">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the Open Geospatial Consortium (OGC) Well-Known Text (WKT) representation of a geography instance augmented with any Z (elevation) and M (measure) values carried by the instance.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

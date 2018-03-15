@@ -1,7 +1,10 @@
-<Type Name="SoapHeaderDirection" FullName="System.Web.Services.Protocols.SoapHeaderDirection">
+﻿<Type Name="SoapHeaderDirection" FullName="System.Web.Services.Protocols.SoapHeaderDirection">
   <TypeSignature Language="C#" Value="public enum SoapHeaderDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SoapHeaderDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapHeaderDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SoapHeaderDirection" />
+  <TypeSignature Language="F#" Value="type SoapHeaderDirection = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SoapHeaderDirection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="Fault" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.SoapHeaderDirection Fault = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapHeaderDirection.Fault" />
+      <MemberSignature Language="VB.NET" Value="Fault" />
+      <MemberSignature Language="F#" Value="Fault = 4" Usage="System.Web.Services.Protocols.SoapHeaderDirection.Fault" />
+      <MemberSignature Language="C++ CLI" Value="Fault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -53,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.SoapHeaderDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies the <see cref="T:System.Web.Services.Protocols.SoapHeader" /> is sent to the XML Web service client when an exception is thrown by the XML Web service method.</summary>
       </Docs>
@@ -61,6 +68,9 @@
       <MemberSignature Language="C#" Value="In" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.SoapHeaderDirection In = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapHeaderDirection.In" />
+      <MemberSignature Language="VB.NET" Value="In" />
+      <MemberSignature Language="F#" Value="In = 1" Usage="System.Web.Services.Protocols.SoapHeaderDirection.In" />
+      <MemberSignature Language="C++ CLI" Value="In" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.SoapHeaderDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies the <see cref="T:System.Web.Services.Protocols.SoapHeader" /> is sent to the XML Web service.</summary>
       </Docs>
@@ -78,6 +89,9 @@
       <MemberSignature Language="C#" Value="InOut" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.SoapHeaderDirection InOut = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapHeaderDirection.InOut" />
+      <MemberSignature Language="VB.NET" Value="InOut" />
+      <MemberSignature Language="F#" Value="InOut = 3" Usage="System.Web.Services.Protocols.SoapHeaderDirection.InOut" />
+      <MemberSignature Language="C++ CLI" Value="InOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -87,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.SoapHeaderDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies the <see cref="T:System.Web.Services.Protocols.SoapHeader" /> is sent to both the XML Web service and the XML Web service client.</summary>
       </Docs>
@@ -95,6 +110,9 @@
       <MemberSignature Language="C#" Value="Out" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.SoapHeaderDirection Out = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapHeaderDirection.Out" />
+      <MemberSignature Language="VB.NET" Value="Out" />
+      <MemberSignature Language="F#" Value="Out = 2" Usage="System.Web.Services.Protocols.SoapHeaderDirection.Out" />
+      <MemberSignature Language="C++ CLI" Value="Out" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -104,6 +122,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.SoapHeaderDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies the <see cref="T:System.Web.Services.Protocols.SoapHeader" /> is sent to the XML Web service client.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="SHA1Managed" FullName="System.Security.Cryptography.SHA1Managed">
+﻿<Type Name="SHA1Managed" FullName="System.Security.Cryptography.SHA1Managed">
   <TypeSignature Language="C#" Value="public class SHA1Managed : System.Security.Cryptography.SHA1" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SHA1Managed extends System.Security.Cryptography.SHA1" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.SHA1Managed" />
+  <TypeSignature Language="VB.NET" Value="Public Class SHA1Managed&#xA;Inherits SHA1" />
+  <TypeSignature Language="F#" Value="type SHA1Managed = class&#xA;    inherit SHA1" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SHA1Managed : System::Security::Cryptography::SHA1" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -53,6 +56,8 @@
       <MemberSignature Language="C#" Value="public SHA1Managed ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA1Managed.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SHA1Managed();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -78,6 +83,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA1Managed.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="sHA1Managed.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -103,6 +111,9 @@
       <MemberSignature Language="C#" Value="~SHA1Managed ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA1Managed.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="sHA1Managed.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!SHA1Managed ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,9 +129,12 @@
       </Docs>
     </Member>
     <Member MemberName="HashCore">
-      <MemberSignature Language="C#" Value="protected override void HashCore (byte[] rgb, int ibStart, int cbSize);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void HashCore(unsigned int8[] rgb, int32 ibStart, int32 cbSize) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA1Managed.HashCore(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="F#" Value="override this.HashCore : byte[] * int * int -&gt; unit" Usage="sHA1Managed.HashCore (rgb, ibStart, cbSize)" />
+      <MemberSignature Language="C#" Value="protected override sealed void HashCore (byte[] array, int ibStart, int cbSize);" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void HashCore(unsigned int8[] array, int32 ibStart, int32 cbSize) cil managed" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA1Managed.HashCore(System.Byte[],System.Int32,System.Int32)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub HashCore (array As Byte(), ibStart As Integer, cbSize As Integer)" FrameworkAlternate="netcore-2.0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HashCore(cli::array &lt;System::Byte&gt; ^ array, int ibStart, int cbSize);" FrameworkAlternate="netcore-2.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -139,12 +153,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="rgb" Type="System.Byte[]" />
-        <Parameter Name="ibStart" Type="System.Int32" />
-        <Parameter Name="cbSize" Type="System.Int32" />
+        <Parameter Name="array" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-2.0" />
+        <Parameter Name="ibStart" Type="System.Int32" Index="1" />
+        <Parameter Name="cbSize" Type="System.Int32" Index="2" />
       </Parameters>
       <Docs>
         <param name="rgb">The input data.</param>
+        <param name="array">To be added.</param>
         <param name="ibStart">The offset into the byte array from which to begin using data.</param>
         <param name="cbSize">The number of bytes in the array to use as data.</param>
         <summary>Routes data written to the object into the <see cref="T:System.Security.Cryptography.SHA1Managed" /> hash algorithm for computing the hash.</summary>
@@ -156,6 +171,9 @@
       <MemberSignature Language="C#" Value="protected override byte[] HashFinal ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance unsigned int8[] HashFinal() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA1Managed.HashFinal" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashFinal () As Byte()" />
+      <MemberSignature Language="F#" Value="override this.HashFinal : unit -&gt; byte[]" Usage="sHA1Managed.HashFinal " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashFinal();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -184,6 +202,9 @@
       <MemberSignature Language="C#" Value="public override void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.SHA1Managed.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
+      <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="sHA1Managed.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

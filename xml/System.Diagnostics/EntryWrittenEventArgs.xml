@@ -1,7 +1,10 @@
-<Type Name="EntryWrittenEventArgs" FullName="System.Diagnostics.EntryWrittenEventArgs">
+﻿<Type Name="EntryWrittenEventArgs" FullName="System.Diagnostics.EntryWrittenEventArgs">
   <TypeSignature Language="C#" Value="public class EntryWrittenEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntryWrittenEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.EntryWrittenEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntryWrittenEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type EntryWrittenEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntryWrittenEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +32,21 @@
     <altmember cref="T:System.Diagnostics.EventLog" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EntryWrittenEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EntryWrittenEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EntryWrittenEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntryWrittenEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -59,6 +73,9 @@
       <MemberSignature Language="C#" Value="public EntryWrittenEventArgs (System.Diagnostics.EventLogEntry entry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Diagnostics.EventLogEntry entry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.EntryWrittenEventArgs.#ctor(System.Diagnostics.EventLogEntry)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (entry As EventLogEntry)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.EntryWrittenEventArgs : System.Diagnostics.EventLogEntry -&gt; System.Diagnostics.EntryWrittenEventArgs" Usage="new System.Diagnostics.EntryWrittenEventArgs entry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntryWrittenEventArgs(System::Diagnostics::EventLogEntry ^ entry);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -88,6 +105,9 @@
       <MemberSignature Language="C#" Value="public System.Diagnostics.EventLogEntry Entry { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Diagnostics.EventLogEntry Entry" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.EntryWrittenEventArgs.Entry" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Entry As EventLogEntry" />
+      <MemberSignature Language="F#" Value="member this.Entry : System.Diagnostics.EventLogEntry" Usage="System.Diagnostics.EntryWrittenEventArgs.Entry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Diagnostics::EventLogEntry ^ Entry { System::Diagnostics::EventLogEntry ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -115,14 +135,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Diagnostics.EntryWrittenEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

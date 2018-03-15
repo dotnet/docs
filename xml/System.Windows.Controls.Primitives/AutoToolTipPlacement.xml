@@ -1,7 +1,10 @@
-<Type Name="AutoToolTipPlacement" FullName="System.Windows.Controls.Primitives.AutoToolTipPlacement">
+﻿<Type Name="AutoToolTipPlacement" FullName="System.Windows.Controls.Primitives.AutoToolTipPlacement">
   <TypeSignature Language="C#" Value="public enum AutoToolTipPlacement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutoToolTipPlacement extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.AutoToolTipPlacement" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AutoToolTipPlacement" />
+  <TypeSignature Language="F#" Value="type AutoToolTipPlacement = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AutoToolTipPlacement" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="BottomRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.AutoToolTipPlacement BottomRight = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.AutoToolTipPlacement.BottomRight" />
+      <MemberSignature Language="VB.NET" Value="BottomRight" />
+      <MemberSignature Language="F#" Value="BottomRight = 2" Usage="System.Windows.Controls.Primitives.AutoToolTipPlacement.BottomRight" />
+      <MemberSignature Language="C++ CLI" Value="BottomRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.AutoToolTipPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>For a horizontal <see cref="T:System.Windows.Controls.Slider" /> show the automatic <see cref="T:System.Windows.Controls.ToolTip" /> at the bottom edge of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />. For a vertical <see cref="T:System.Windows.Controls.Slider" /> show the automatic <see cref="T:System.Windows.Controls.ToolTip" /> at the right edge of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.AutoToolTipPlacement None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.AutoToolTipPlacement.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Controls.Primitives.AutoToolTipPlacement.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.AutoToolTipPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No automatic <see cref="T:System.Windows.Controls.ToolTip" /></summary>
       </Docs>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="TopLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.AutoToolTipPlacement TopLeft = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.AutoToolTipPlacement.TopLeft" />
+      <MemberSignature Language="VB.NET" Value="TopLeft" />
+      <MemberSignature Language="F#" Value="TopLeft = 1" Usage="System.Windows.Controls.Primitives.AutoToolTipPlacement.TopLeft" />
+      <MemberSignature Language="C++ CLI" Value="TopLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.AutoToolTipPlacement</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>For a horizontal <see cref="T:System.Windows.Controls.Slider" /> show the automatic <see cref="T:System.Windows.Controls.ToolTip" /> at the top edge of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />. For a vertical <see cref="T:System.Windows.Controls.Slider" /> show the automatic <see cref="T:System.Windows.Controls.ToolTip" /> at the left edge of the <see cref="T:System.Windows.Controls.Primitives.Thumb" />.</summary>
       </Docs>

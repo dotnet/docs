@@ -1,7 +1,10 @@
-<Type Name="SortDirection" FullName="System.Web.UI.WebControls.SortDirection">
+﻿<Type Name="SortDirection" FullName="System.Web.UI.WebControls.SortDirection">
   <TypeSignature Language="C#" Value="public enum SortDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SortDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.SortDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SortDirection" />
+  <TypeSignature Language="F#" Value="type SortDirection = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SortDirection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="Ascending" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.SortDirection Ascending = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SortDirection.Ascending" />
+      <MemberSignature Language="VB.NET" Value="Ascending" />
+      <MemberSignature Language="F#" Value="Ascending = 0" Usage="System.Web.UI.WebControls.SortDirection.Ascending" />
+      <MemberSignature Language="C++ CLI" Value="Ascending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.SortDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Sort from smallest to largest. For example, from A to Z.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="Descending" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.SortDirection Descending = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.SortDirection.Descending" />
+      <MemberSignature Language="VB.NET" Value="Descending" />
+      <MemberSignature Language="F#" Value="Descending = 1" Usage="System.Web.UI.WebControls.SortDirection.Descending" />
+      <MemberSignature Language="C++ CLI" Value="Descending" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.SortDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Sort from largest to smallest. For example, from Z to A.</summary>
       </Docs>

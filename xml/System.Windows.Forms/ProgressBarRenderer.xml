@@ -1,7 +1,10 @@
-<Type Name="ProgressBarRenderer" FullName="System.Windows.Forms.ProgressBarRenderer">
+﻿<Type Name="ProgressBarRenderer" FullName="System.Windows.Forms.ProgressBarRenderer">
   <TypeSignature Language="C#" Value="public sealed class ProgressBarRenderer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProgressBarRenderer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ProgressBarRenderer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProgressBarRenderer" />
+  <TypeSignature Language="F#" Value="type ProgressBarRenderer = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProgressBarRenderer sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public static int ChunkSpaceThickness { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 ChunkSpaceThickness" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProgressBarRenderer.ChunkSpaceThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ChunkSpaceThickness As Integer" />
+      <MemberSignature Language="F#" Value="member this.ChunkSpaceThickness : int" Usage="System.Windows.Forms.ProgressBarRenderer.ChunkSpaceThickness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ChunkSpaceThickness { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +92,9 @@
       <MemberSignature Language="C#" Value="public static int ChunkThickness { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 ChunkThickness" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProgressBarRenderer.ChunkThickness" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property ChunkThickness As Integer" />
+      <MemberSignature Language="F#" Value="member this.ChunkThickness : int" Usage="System.Windows.Forms.ProgressBarRenderer.ChunkThickness" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int ChunkThickness { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -131,6 +140,9 @@
       <MemberSignature Language="C#" Value="public static void DrawHorizontalBar (System.Drawing.Graphics g, System.Drawing.Rectangle bounds);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawHorizontalBar(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ProgressBarRenderer.DrawHorizontalBar(System.Drawing.Graphics,System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawHorizontalBar (g As Graphics, bounds As Rectangle)" />
+      <MemberSignature Language="F#" Value="static member DrawHorizontalBar : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; unit" Usage="System.Windows.Forms.ProgressBarRenderer.DrawHorizontalBar (g, bounds)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawHorizontalBar(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -170,6 +182,9 @@
       <MemberSignature Language="C#" Value="public static void DrawHorizontalChunks (System.Drawing.Graphics g, System.Drawing.Rectangle bounds);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawHorizontalChunks(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ProgressBarRenderer.DrawHorizontalChunks(System.Drawing.Graphics,System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawHorizontalChunks (g As Graphics, bounds As Rectangle)" />
+      <MemberSignature Language="F#" Value="static member DrawHorizontalChunks : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; unit" Usage="System.Windows.Forms.ProgressBarRenderer.DrawHorizontalChunks (g, bounds)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawHorizontalChunks(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -211,6 +226,9 @@
       <MemberSignature Language="C#" Value="public static void DrawVerticalBar (System.Drawing.Graphics g, System.Drawing.Rectangle bounds);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawVerticalBar(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ProgressBarRenderer.DrawVerticalBar(System.Drawing.Graphics,System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawVerticalBar (g As Graphics, bounds As Rectangle)" />
+      <MemberSignature Language="F#" Value="static member DrawVerticalBar : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; unit" Usage="System.Windows.Forms.ProgressBarRenderer.DrawVerticalBar (g, bounds)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawVerticalBar(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -259,6 +277,9 @@
       <MemberSignature Language="C#" Value="public static void DrawVerticalChunks (System.Drawing.Graphics g, System.Drawing.Rectangle bounds);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawVerticalChunks(class System.Drawing.Graphics g, valuetype System.Drawing.Rectangle bounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ProgressBarRenderer.DrawVerticalChunks(System.Drawing.Graphics,System.Drawing.Rectangle)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub DrawVerticalChunks (g As Graphics, bounds As Rectangle)" />
+      <MemberSignature Language="F#" Value="static member DrawVerticalChunks : System.Drawing.Graphics * System.Drawing.Rectangle -&gt; unit" Usage="System.Windows.Forms.ProgressBarRenderer.DrawVerticalChunks (g, bounds)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void DrawVerticalChunks(System::Drawing::Graphics ^ g, System::Drawing::Rectangle bounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -309,6 +330,9 @@
       <MemberSignature Language="C#" Value="public static bool IsSupported { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool IsSupported" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ProgressBarRenderer.IsSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsSupported As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSupported : bool" Usage="System.Windows.Forms.ProgressBarRenderer.IsSupported" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsSupported { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

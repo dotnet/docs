@@ -1,7 +1,10 @@
-<Type Name="PrintDocument" FullName="System.Drawing.Printing.PrintDocument">
+﻿<Type Name="PrintDocument" FullName="System.Drawing.Printing.PrintDocument">
   <TypeSignature Language="C#" Value="public class PrintDocument : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrintDocument extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrintDocument" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrintDocument&#xA;Inherits Component" />
+  <TypeSignature Language="F#" Value="type PrintDocument = class&#xA;    inherit Component" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintDocument : System::ComponentModel::Component" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +60,8 @@
       <MemberSignature Language="C#" Value="public PrintDocument ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintDocument.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintDocument();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -90,6 +95,9 @@
       <MemberSignature Language="C#" Value="public event System.Drawing.Printing.PrintEventHandler BeginPrint;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Drawing.Printing.PrintEventHandler BeginPrint" />
       <MemberSignature Language="DocId" Value="E:System.Drawing.Printing.PrintDocument.BeginPrint" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BeginPrint As PrintEventHandler " />
+      <MemberSignature Language="F#" Value="member this.BeginPrint : System.Drawing.Printing.PrintEventHandler " Usage="member this.BeginPrint : System.Drawing.Printing.PrintEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Drawing::Printing::PrintEventHandler ^ BeginPrint;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -121,6 +129,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PageSettings DefaultPageSettings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PageSettings DefaultPageSettings" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintDocument.DefaultPageSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultPageSettings As PageSettings" />
+      <MemberSignature Language="F#" Value="member this.DefaultPageSettings : System.Drawing.Printing.PageSettings with get, set" Usage="System.Drawing.Printing.PrintDocument.DefaultPageSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PageSettings ^ DefaultPageSettings { System::Drawing::Printing::PageSettings ^ get(); void set(System::Drawing::Printing::PageSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -131,7 +142,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -173,6 +184,9 @@
       <MemberSignature Language="C#" Value="public string DocumentName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DocumentName" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintDocument.DocumentName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DocumentName As String" />
+      <MemberSignature Language="F#" Value="member this.DocumentName : string with get, set" Usage="System.Drawing.Printing.PrintDocument.DocumentName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DocumentName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -216,6 +230,9 @@
       <MemberSignature Language="C#" Value="public event System.Drawing.Printing.PrintEventHandler EndPrint;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Drawing.Printing.PrintEventHandler EndPrint" />
       <MemberSignature Language="DocId" Value="E:System.Drawing.Printing.PrintDocument.EndPrint" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event EndPrint As PrintEventHandler " />
+      <MemberSignature Language="F#" Value="member this.EndPrint : System.Drawing.Printing.PrintEventHandler " Usage="member this.EndPrint : System.Drawing.Printing.PrintEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Drawing::Printing::PrintEventHandler ^ EndPrint;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -249,6 +266,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnBeginPrint (System.Drawing.Printing.PrintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBeginPrint(class System.Drawing.Printing.PrintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintDocument.OnBeginPrint(System.Drawing.Printing.PrintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnBeginPrint (e As PrintEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginPrint : System.Drawing.Printing.PrintEventArgs -&gt; unit&#xA;override this.OnBeginPrint : System.Drawing.Printing.PrintEventArgs -&gt; unit" Usage="printDocument.OnBeginPrint e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBeginPrint(System::Drawing::Printing::PrintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -284,6 +304,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnEndPrint (System.Drawing.Printing.PrintEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEndPrint(class System.Drawing.Printing.PrintEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintDocument.OnEndPrint(System.Drawing.Printing.PrintEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEndPrint (e As PrintEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnEndPrint : System.Drawing.Printing.PrintEventArgs -&gt; unit&#xA;override this.OnEndPrint : System.Drawing.Printing.PrintEventArgs -&gt; unit" Usage="printDocument.OnEndPrint e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEndPrint(System::Drawing::Printing::PrintEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -319,6 +342,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPrintPage (System.Drawing.Printing.PrintPageEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPrintPage(class System.Drawing.Printing.PrintPageEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintDocument.OnPrintPage(System.Drawing.Printing.PrintPageEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPrintPage (e As PrintPageEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPrintPage : System.Drawing.Printing.PrintPageEventArgs -&gt; unit&#xA;override this.OnPrintPage : System.Drawing.Printing.PrintPageEventArgs -&gt; unit" Usage="printDocument.OnPrintPage e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPrintPage(System::Drawing::Printing::PrintPageEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -354,6 +380,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnQueryPageSettings (System.Drawing.Printing.QueryPageSettingsEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnQueryPageSettings(class System.Drawing.Printing.QueryPageSettingsEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintDocument.OnQueryPageSettings(System.Drawing.Printing.QueryPageSettingsEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnQueryPageSettings (e As QueryPageSettingsEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnQueryPageSettings : System.Drawing.Printing.QueryPageSettingsEventArgs -&gt; unit&#xA;override this.OnQueryPageSettings : System.Drawing.Printing.QueryPageSettingsEventArgs -&gt; unit" Usage="printDocument.OnQueryPageSettings e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnQueryPageSettings(System::Drawing::Printing::QueryPageSettingsEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -389,6 +418,9 @@
       <MemberSignature Language="C#" Value="public bool OriginAtMargins { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool OriginAtMargins" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintDocument.OriginAtMargins" />
+      <MemberSignature Language="VB.NET" Value="Public Property OriginAtMargins As Boolean" />
+      <MemberSignature Language="F#" Value="member this.OriginAtMargins : bool with get, set" Usage="System.Drawing.Printing.PrintDocument.OriginAtMargins" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool OriginAtMargins { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -425,6 +457,9 @@
       <MemberSignature Language="C#" Value="public void Print ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Print() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintDocument.Print" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Print ()" />
+      <MemberSignature Language="F#" Value="member this.Print : unit -&gt; unit" Usage="printDocument.Print " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Print();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -473,6 +508,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PrintController PrintController { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PrintController PrintController" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintDocument.PrintController" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrintController As PrintController" />
+      <MemberSignature Language="F#" Value="member this.PrintController : System.Drawing.Printing.PrintController with get, set" Usage="System.Drawing.Printing.PrintDocument.PrintController" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrintController ^ PrintController { System::Drawing::Printing::PrintController ^ get(); void set(System::Drawing::Printing::PrintController ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -483,7 +521,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -525,6 +563,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PrinterSettings PrinterSettings { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PrinterSettings PrinterSettings" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrintDocument.PrinterSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrinterSettings As PrinterSettings" />
+      <MemberSignature Language="F#" Value="member this.PrinterSettings : System.Drawing.Printing.PrinterSettings with get, set" Usage="System.Drawing.Printing.PrintDocument.PrinterSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrinterSettings ^ PrinterSettings { System::Drawing::Printing::PrinterSettings ^ get(); void set(System::Drawing::Printing::PrinterSettings ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -535,7 +576,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -573,6 +614,9 @@
       <MemberSignature Language="C#" Value="public event System.Drawing.Printing.PrintPageEventHandler PrintPage;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Drawing.Printing.PrintPageEventHandler PrintPage" />
       <MemberSignature Language="DocId" Value="E:System.Drawing.Printing.PrintDocument.PrintPage" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PrintPage As PrintPageEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PrintPage : System.Drawing.Printing.PrintPageEventHandler " Usage="member this.PrintPage : System.Drawing.Printing.PrintPageEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Drawing::Printing::PrintPageEventHandler ^ PrintPage;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -620,6 +664,9 @@
       <MemberSignature Language="C#" Value="public event System.Drawing.Printing.QueryPageSettingsEventHandler QueryPageSettings;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Drawing.Printing.QueryPageSettingsEventHandler QueryPageSettings" />
       <MemberSignature Language="DocId" Value="E:System.Drawing.Printing.PrintDocument.QueryPageSettings" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event QueryPageSettings As QueryPageSettingsEventHandler " />
+      <MemberSignature Language="F#" Value="member this.QueryPageSettings : System.Drawing.Printing.QueryPageSettingsEventHandler " Usage="member this.QueryPageSettings : System.Drawing.Printing.QueryPageSettingsEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Drawing::Printing::QueryPageSettingsEventHandler ^ QueryPageSettings;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -662,6 +709,9 @@ If you use the <xref:System.Drawing.Printing.PrintDocument.QueryPageSettings> ev
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrintDocument.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="printDocument.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

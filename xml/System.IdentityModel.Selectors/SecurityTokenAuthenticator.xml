@@ -1,7 +1,10 @@
-<Type Name="SecurityTokenAuthenticator" FullName="System.IdentityModel.Selectors.SecurityTokenAuthenticator">
+﻿<Type Name="SecurityTokenAuthenticator" FullName="System.IdentityModel.Selectors.SecurityTokenAuthenticator">
   <TypeSignature Language="C#" Value="public abstract class SecurityTokenAuthenticator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SecurityTokenAuthenticator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Selectors.SecurityTokenAuthenticator" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SecurityTokenAuthenticator" />
+  <TypeSignature Language="F#" Value="type SecurityTokenAuthenticator = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityTokenAuthenticator abstract" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,8 @@
       <MemberSignature Language="C#" Value="protected SecurityTokenAuthenticator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenAuthenticator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityTokenAuthenticator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -44,6 +49,9 @@
       <MemberSignature Language="C#" Value="public bool CanValidateToken (System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanValidateToken(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenAuthenticator.CanValidateToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanValidateToken (token As SecurityToken) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanValidateToken : System.IdentityModel.Tokens.SecurityToken -&gt; bool" Usage="securityTokenAuthenticator.CanValidateToken token" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanValidateToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -77,6 +85,9 @@
       <MemberSignature Language="C#" Value="protected abstract bool CanValidateTokenCore (System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool CanValidateTokenCore(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenAuthenticator.CanValidateTokenCore(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CanValidateTokenCore (token As SecurityToken) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanValidateTokenCore : System.IdentityModel.Tokens.SecurityToken -&gt; bool" Usage="securityTokenAuthenticator.CanValidateTokenCore token" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract bool CanValidateTokenCore(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -108,6 +119,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; ValidateToken (System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; ValidateToken(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateToken(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ValidateToken (token As SecurityToken) As ReadOnlyCollection(Of IAuthorizationPolicy)" />
+      <MemberSignature Language="F#" Value="member this.ValidateToken : System.IdentityModel.Tokens.SecurityToken -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" Usage="securityTokenAuthenticator.ValidateToken token" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ ValidateToken(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -147,6 +161,9 @@
       <MemberSignature Language="C#" Value="protected abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; ValidateTokenCore (System.IdentityModel.Tokens.SecurityToken token);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; ValidateTokenCore(class System.IdentityModel.Tokens.SecurityToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Selectors.SecurityTokenAuthenticator.ValidateTokenCore(System.IdentityModel.Tokens.SecurityToken)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function ValidateTokenCore (token As SecurityToken) As ReadOnlyCollection(Of IAuthorizationPolicy)" />
+      <MemberSignature Language="F#" Value="abstract member ValidateTokenCore : System.IdentityModel.Tokens.SecurityToken -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt;" Usage="securityTokenAuthenticator.ValidateTokenCore token" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ ValidateTokenCore(System::IdentityModel::Tokens::SecurityToken ^ token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

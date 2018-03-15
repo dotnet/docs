@@ -1,7 +1,10 @@
-<Type Name="NetworkAvailableEventHandler" FullName="Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler">
+﻿<Type Name="NetworkAvailableEventHandler" FullName="Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler">
   <TypeSignature Language="C#" Value="public delegate void NetworkAvailableEventHandler(object sender, NetworkAvailableEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NetworkAvailableEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Devices.NetworkAvailableEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub NetworkAvailableEventHandler(sender As Object, e As NetworkAvailableEventArgs)" />
+  <TypeSignature Language="F#" Value="type NetworkAvailableEventHandler = delegate of obj * NetworkAvailableEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void NetworkAvailableEventHandler(System::Object ^ sender, NetworkAvailableEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>

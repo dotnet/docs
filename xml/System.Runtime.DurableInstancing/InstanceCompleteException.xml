@@ -1,7 +1,10 @@
-<Type Name="InstanceCompleteException" FullName="System.Runtime.DurableInstancing.InstanceCompleteException">
+﻿<Type Name="InstanceCompleteException" FullName="System.Runtime.DurableInstancing.InstanceCompleteException">
   <TypeSignature Language="C#" Value="public class InstanceCompleteException : System.Runtime.DurableInstancing.InstancePersistenceCommandException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InstanceCompleteException extends System.Runtime.DurableInstancing.InstancePersistenceCommandException" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceCompleteException" />
+  <TypeSignature Language="VB.NET" Value="Public Class InstanceCompleteException&#xA;Inherits InstancePersistenceCommandException" />
+  <TypeSignature Language="F#" Value="type InstanceCompleteException = class&#xA;    inherit InstancePersistenceCommandException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InstanceCompleteException : System::Runtime::DurableInstancing::InstancePersistenceCommandException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceCompleteException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InstanceCompleteException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceCompleteException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceCompleteException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -34,6 +48,9 @@
       <MemberSignature Language="C#" Value="public InstanceCompleteException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceCompleteException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceCompleteException : string -&gt; System.Runtime.DurableInstancing.InstanceCompleteException" Usage="new System.Runtime.DurableInstancing.InstanceCompleteException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceCompleteException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -52,6 +69,9 @@
       <MemberSignature Language="C#" Value="protected InstanceCompleteException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceCompleteException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceCompleteException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Runtime.DurableInstancing.InstanceCompleteException" Usage="new System.Runtime.DurableInstancing.InstanceCompleteException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InstanceCompleteException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -77,6 +97,9 @@
       <MemberSignature Language="C#" Value="public InstanceCompleteException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceCompleteException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceCompleteException : string * Exception -&gt; System.Runtime.DurableInstancing.InstanceCompleteException" Usage="new System.Runtime.DurableInstancing.InstanceCompleteException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceCompleteException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -97,6 +120,9 @@
       <MemberSignature Language="C#" Value="public InstanceCompleteException (System.Xml.Linq.XName commandName, Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName commandName, valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceCompleteException.#ctor(System.Xml.Linq.XName,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (commandName As XName, instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceCompleteException : System.Xml.Linq.XName * Guid -&gt; System.Runtime.DurableInstancing.InstanceCompleteException" Usage="new System.Runtime.DurableInstancing.InstanceCompleteException (commandName, instanceId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceCompleteException(System::Xml::Linq::XName ^ commandName, Guid instanceId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -117,6 +143,9 @@
       <MemberSignature Language="C#" Value="public InstanceCompleteException (System.Xml.Linq.XName commandName, Guid instanceId, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName commandName, valuetype System.Guid instanceId, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceCompleteException.#ctor(System.Xml.Linq.XName,System.Guid,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (commandName As XName, instanceId As Guid, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceCompleteException : System.Xml.Linq.XName * Guid * Exception -&gt; System.Runtime.DurableInstancing.InstanceCompleteException" Usage="new System.Runtime.DurableInstancing.InstanceCompleteException (commandName, instanceId, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceCompleteException(System::Xml::Linq::XName ^ commandName, Guid instanceId, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -139,6 +168,9 @@
       <MemberSignature Language="C#" Value="public InstanceCompleteException (System.Xml.Linq.XName commandName, Guid instanceId, string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XName commandName, valuetype System.Guid instanceId, string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceCompleteException.#ctor(System.Xml.Linq.XName,System.Guid,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (commandName As XName, instanceId As Guid, message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.DurableInstancing.InstanceCompleteException : System.Xml.Linq.XName * Guid * string * Exception -&gt; System.Runtime.DurableInstancing.InstanceCompleteException" Usage="new System.Runtime.DurableInstancing.InstanceCompleteException (commandName, instanceId, message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstanceCompleteException(System::Xml::Linq::XName ^ commandName, Guid instanceId, System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -159,14 +191,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes an instance of the <see cref="T:System.Runtime.DurableInstancing.InstanceCompleteException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

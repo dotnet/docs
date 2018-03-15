@@ -1,7 +1,10 @@
-<Type Name="PageExecutionListener" FullName="System.Web.Instrumentation.PageExecutionListener">
+﻿<Type Name="PageExecutionListener" FullName="System.Web.Instrumentation.PageExecutionListener">
   <TypeSignature Language="C#" Value="public abstract class PageExecutionListener" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PageExecutionListener extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Instrumentation.PageExecutionListener" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PageExecutionListener" />
+  <TypeSignature Language="F#" Value="type PageExecutionListener = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PageExecutionListener abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="protected PageExecutionListener ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Instrumentation.PageExecutionListener.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PageExecutionListener();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public abstract void BeginContext (System.Web.Instrumentation.PageExecutionContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginContext(class System.Web.Instrumentation.PageExecutionContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Instrumentation.PageExecutionListener.BeginContext(System.Web.Instrumentation.PageExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub BeginContext (context As PageExecutionContext)" />
+      <MemberSignature Language="F#" Value="abstract member BeginContext : System.Web.Instrumentation.PageExecutionContext -&gt; unit" Usage="pageExecutionListener.BeginContext context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void BeginContext(System::Web::Instrumentation::PageExecutionContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -55,6 +63,9 @@
       <MemberSignature Language="C#" Value="public abstract void EndContext (System.Web.Instrumentation.PageExecutionContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndContext(class System.Web.Instrumentation.PageExecutionContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Instrumentation.PageExecutionListener.EndContext(System.Web.Instrumentation.PageExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EndContext (context As PageExecutionContext)" />
+      <MemberSignature Language="F#" Value="abstract member EndContext : System.Web.Instrumentation.PageExecutionContext -&gt; unit" Usage="pageExecutionListener.EndContext context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndContext(System::Web::Instrumentation::PageExecutionContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

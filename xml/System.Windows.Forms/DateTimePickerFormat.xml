@@ -1,7 +1,10 @@
-<Type Name="DateTimePickerFormat" FullName="System.Windows.Forms.DateTimePickerFormat">
+﻿<Type Name="DateTimePickerFormat" FullName="System.Windows.Forms.DateTimePickerFormat">
   <TypeSignature Language="C#" Value="public enum DateTimePickerFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DateTimePickerFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DateTimePickerFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DateTimePickerFormat" />
+  <TypeSignature Language="F#" Value="type DateTimePickerFormat = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DateTimePickerFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="Custom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DateTimePickerFormat Custom = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DateTimePickerFormat.Custom" />
+      <MemberSignature Language="VB.NET" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 8" Usage="System.Windows.Forms.DateTimePickerFormat.Custom" />
+      <MemberSignature Language="C++ CLI" Value="Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -47,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DateTimePickerFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.DateTimePicker" /> control displays the date/time value in a custom format. For more information, see <see cref="P:System.Windows.Forms.DateTimePicker.CustomFormat" />.</summary>
       </Docs>
@@ -55,6 +62,9 @@
       <MemberSignature Language="C#" Value="Long" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DateTimePickerFormat Long = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DateTimePickerFormat.Long" />
+      <MemberSignature Language="VB.NET" Value="Long" />
+      <MemberSignature Language="F#" Value="Long = 1" Usage="System.Windows.Forms.DateTimePickerFormat.Long" />
+      <MemberSignature Language="C++ CLI" Value="Long" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DateTimePickerFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.DateTimePicker" /> control displays the date/time value in the long date format set by the user's operating system.</summary>
       </Docs>
@@ -71,6 +82,9 @@
       <MemberSignature Language="C#" Value="Short" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DateTimePickerFormat Short = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DateTimePickerFormat.Short" />
+      <MemberSignature Language="VB.NET" Value="Short" />
+      <MemberSignature Language="F#" Value="Short = 2" Usage="System.Windows.Forms.DateTimePickerFormat.Short" />
+      <MemberSignature Language="C++ CLI" Value="Short" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DateTimePickerFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.DateTimePicker" /> control displays the date/time value in the short date format set by the user's operating system.</summary>
       </Docs>
@@ -87,6 +102,9 @@
       <MemberSignature Language="C#" Value="Time" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DateTimePickerFormat Time = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DateTimePickerFormat.Time" />
+      <MemberSignature Language="VB.NET" Value="Time" />
+      <MemberSignature Language="F#" Value="Time = 4" Usage="System.Windows.Forms.DateTimePickerFormat.Time" />
+      <MemberSignature Language="C++ CLI" Value="Time" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -95,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DateTimePickerFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.DateTimePicker" /> control displays the date/time value in the time format set by the user's operating system.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="ApplicationContainerSettings" FullName="System.ServiceModel.Channels.ApplicationContainerSettings">
+﻿<Type Name="ApplicationContainerSettings" FullName="System.ServiceModel.Channels.ApplicationContainerSettings">
   <TypeSignature Language="C#" Value="public sealed class ApplicationContainerSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationContainerSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ApplicationContainerSettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationContainerSettings" />
+  <TypeSignature Language="F#" Value="type ApplicationContainerSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationContainerSettings sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public const int CurrentSession = -1;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 CurrentSession = (-1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.ApplicationContainerSettings.CurrentSession" />
+      <MemberSignature Language="VB.NET" Value="Public Const CurrentSession As Integer  = -1" />
+      <MemberSignature Language="F#" Value="val mutable CurrentSession : int" Usage="System.ServiceModel.Channels.ApplicationContainerSettings.CurrentSession" />
+      <MemberSignature Language="C++ CLI" Value="public: int CurrentSession = -1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public string PackageFullName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PackageFullName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ApplicationContainerSettings.PackageFullName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PackageFullName As String" />
+      <MemberSignature Language="F#" Value="member this.PackageFullName : string with get, set" Usage="System.ServiceModel.Channels.ApplicationContainerSettings.PackageFullName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PackageFullName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -55,6 +64,9 @@
       <MemberSignature Language="C#" Value="public const int ServiceSession = 0;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 ServiceSession = (0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.ApplicationContainerSettings.ServiceSession" />
+      <MemberSignature Language="VB.NET" Value="Public Const ServiceSession As Integer  = 0" />
+      <MemberSignature Language="F#" Value="val mutable ServiceSession : int" Usage="System.ServiceModel.Channels.ApplicationContainerSettings.ServiceSession" />
+      <MemberSignature Language="C++ CLI" Value="public: int ServiceSession = 0;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -73,6 +85,9 @@
       <MemberSignature Language="C#" Value="public int SessionId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SessionId" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ApplicationContainerSettings.SessionId" />
+      <MemberSignature Language="VB.NET" Value="Public Property SessionId As Integer" />
+      <MemberSignature Language="F#" Value="member this.SessionId : int with get, set" Usage="System.ServiceModel.Channels.ApplicationContainerSettings.SessionId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SessionId { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

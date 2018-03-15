@@ -1,7 +1,10 @@
-<Type Name="HierarchicalDataSourceDesigner" FullName="System.Web.UI.Design.HierarchicalDataSourceDesigner">
+﻿<Type Name="HierarchicalDataSourceDesigner" FullName="System.Web.UI.Design.HierarchicalDataSourceDesigner">
   <TypeSignature Language="C#" Value="public class HierarchicalDataSourceDesigner : System.Web.UI.Design.ControlDesigner, System.Web.UI.Design.IHierarchicalDataSourceDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HierarchicalDataSourceDesigner extends System.Web.UI.Design.ControlDesigner implements class System.Web.UI.Design.IHierarchicalDataSourceDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.HierarchicalDataSourceDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class HierarchicalDataSourceDesigner&#xA;Inherits ControlDesigner&#xA;Implements IHierarchicalDataSourceDesigner" />
+  <TypeSignature Language="F#" Value="type HierarchicalDataSourceDesigner = class&#xA;    inherit ControlDesigner&#xA;    interface IHierarchicalDataSourceDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HierarchicalDataSourceDesigner : System::Web::UI::Design::ControlDesigner, System::Web::UI::Design::IHierarchicalDataSourceDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,8 @@
       <MemberSignature Language="C#" Value="public HierarchicalDataSourceDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HierarchicalDataSourceDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HierarchicalDataSourceDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -49,6 +54,9 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.HierarchicalDataSourceDesigner.ActionLists" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.HierarchicalDataSourceDesigner.ActionLists" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -69,7 +77,13 @@
       <MemberSignature Language="C#" Value="public virtual bool CanConfigure { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanConfigure" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.HierarchicalDataSourceDesigner.CanConfigure" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanConfigure As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanConfigure : bool" Usage="System.Web.UI.Design.HierarchicalDataSourceDesigner.CanConfigure" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanConfigure { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanConfigure</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,7 +109,13 @@
       <MemberSignature Language="C#" Value="public virtual bool CanRefreshSchema { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanRefreshSchema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.HierarchicalDataSourceDesigner.CanRefreshSchema" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanRefreshSchema As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanRefreshSchema : bool" Usage="System.Web.UI.Design.HierarchicalDataSourceDesigner.CanRefreshSchema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanRefreshSchema { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.Design.IHierarchicalDataSourceDesigner.CanRefreshSchema</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -121,7 +141,13 @@
       <MemberSignature Language="C#" Value="public virtual void Configure ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Configure() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HierarchicalDataSourceDesigner.Configure" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Configure ()" />
+      <MemberSignature Language="F#" Value="abstract member Configure : unit -&gt; unit&#xA;override this.Configure : unit -&gt; unit" Usage="hierarchicalDataSourceDesigner.Configure " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Configure();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.Configure</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -149,7 +175,13 @@
       <MemberSignature Language="C#" Value="public event EventHandler DataSourceChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DataSourceChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.HierarchicalDataSourceDesigner.DataSourceChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DataSourceChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DataSourceChanged : EventHandler " Usage="member this.DataSourceChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ DataSourceChanged;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Web.UI.Design.IHierarchicalDataSourceDesigner.DataSourceChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -168,6 +200,9 @@
       <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HierarchicalDataSourceDesigner.GetDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="hierarchicalDataSourceDesigner.GetDesignTimeHtml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -189,7 +224,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.Design.DesignerHierarchicalDataSourceView GetView (string viewPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.Design.DesignerHierarchicalDataSourceView GetView(string viewPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HierarchicalDataSourceDesigner.GetView(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetView (viewPath As String) As DesignerHierarchicalDataSourceView" />
+      <MemberSignature Language="F#" Value="abstract member GetView : string -&gt; System.Web.UI.Design.DesignerHierarchicalDataSourceView&#xA;override this.GetView : string -&gt; System.Web.UI.Design.DesignerHierarchicalDataSourceView" Usage="hierarchicalDataSourceDesigner.GetView viewPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::UI::Design::DesignerHierarchicalDataSourceView ^ GetView(System::String ^ viewPath);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.GetView(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -212,6 +253,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDataSourceChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDataSourceChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HierarchicalDataSourceDesigner.OnDataSourceChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDataSourceChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDataSourceChanged : EventArgs -&gt; unit&#xA;override this.OnDataSourceChanged : EventArgs -&gt; unit" Usage="hierarchicalDataSourceDesigner.OnDataSourceChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDataSourceChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -243,6 +287,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSchemaRefreshed (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSchemaRefreshed(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HierarchicalDataSourceDesigner.OnSchemaRefreshed(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSchemaRefreshed (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSchemaRefreshed : EventArgs -&gt; unit&#xA;override this.OnSchemaRefreshed : EventArgs -&gt; unit" Usage="hierarchicalDataSourceDesigner.OnSchemaRefreshed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSchemaRefreshed(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -274,7 +321,13 @@
       <MemberSignature Language="C#" Value="public virtual void RefreshSchema (bool preferSilent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RefreshSchema(bool preferSilent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RefreshSchema (preferSilent As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member RefreshSchema : bool -&gt; unit&#xA;override this.RefreshSchema : bool -&gt; unit" Usage="hierarchicalDataSourceDesigner.RefreshSchema preferSilent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RefreshSchema(bool preferSilent);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.RefreshSchema(System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -305,7 +358,13 @@
       <MemberSignature Language="C#" Value="public virtual void ResumeDataSourceEvents ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResumeDataSourceEvents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HierarchicalDataSourceDesigner.ResumeDataSourceEvents" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ResumeDataSourceEvents ()" />
+      <MemberSignature Language="F#" Value="abstract member ResumeDataSourceEvents : unit -&gt; unit&#xA;override this.ResumeDataSourceEvents : unit -&gt; unit" Usage="hierarchicalDataSourceDesigner.ResumeDataSourceEvents " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ResumeDataSourceEvents();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.ResumeDataSourceEvents</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -332,7 +391,13 @@
       <MemberSignature Language="C#" Value="public event EventHandler SchemaRefreshed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SchemaRefreshed" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.Design.HierarchicalDataSourceDesigner.SchemaRefreshed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SchemaRefreshed As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SchemaRefreshed : EventHandler " Usage="member this.SchemaRefreshed : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ SchemaRefreshed;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Web.UI.Design.IHierarchicalDataSourceDesigner.SchemaRefreshed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -351,7 +416,13 @@
       <MemberSignature Language="C#" Value="public virtual void SuppressDataSourceEvents ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SuppressDataSourceEvents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.HierarchicalDataSourceDesigner.SuppressDataSourceEvents" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SuppressDataSourceEvents ()" />
+      <MemberSignature Language="F#" Value="abstract member SuppressDataSourceEvents : unit -&gt; unit&#xA;override this.SuppressDataSourceEvents : unit -&gt; unit" Usage="hierarchicalDataSourceDesigner.SuppressDataSourceEvents " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SuppressDataSourceEvents();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.Design.IHierarchicalDataSourceDesigner.SuppressDataSourceEvents</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -370,6 +441,9 @@
       <MemberSignature Language="C#" Value="protected bool SuppressingDataSourceEvents { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SuppressingDataSourceEvents" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.HierarchicalDataSourceDesigner.SuppressingDataSourceEvents" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property SuppressingDataSourceEvents As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SuppressingDataSourceEvents : bool" Usage="System.Web.UI.Design.HierarchicalDataSourceDesigner.SuppressingDataSourceEvents" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool SuppressingDataSourceEvents { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

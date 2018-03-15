@@ -1,7 +1,10 @@
-<Type Name="ChangeMonitor" FullName="System.Runtime.Caching.ChangeMonitor">
+﻿<Type Name="ChangeMonitor" FullName="System.Runtime.Caching.ChangeMonitor">
   <TypeSignature Language="C#" Value="public abstract class ChangeMonitor : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ChangeMonitor extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.ChangeMonitor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ChangeMonitor&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type ChangeMonitor = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChangeMonitor abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,6 +98,8 @@
       <MemberSignature Language="C#" Value="protected ChangeMonitor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ChangeMonitor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ChangeMonitor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -137,7 +142,13 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ChangeMonitor.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="changeMonitor.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -192,6 +203,9 @@
       <MemberSignature Language="C#" Value="protected abstract void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ChangeMonitor.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit" Usage="changeMonitor.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -226,6 +240,9 @@
       <MemberSignature Language="C#" Value="public bool HasChanged { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasChanged" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.ChangeMonitor.HasChanged" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasChanged As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasChanged : bool" Usage="System.Runtime.Caching.ChangeMonitor.HasChanged" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasChanged { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -259,6 +276,9 @@
       <MemberSignature Language="C#" Value="protected void InitializationComplete ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InitializationComplete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ChangeMonitor.InitializationComplete" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub InitializationComplete ()" />
+      <MemberSignature Language="F#" Value="member this.InitializationComplete : unit -&gt; unit" Usage="changeMonitor.InitializationComplete " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InitializationComplete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -289,6 +309,9 @@
       <MemberSignature Language="C#" Value="public bool IsDisposed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDisposed" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.ChangeMonitor.IsDisposed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDisposed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDisposed : bool" Usage="System.Runtime.Caching.ChangeMonitor.IsDisposed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDisposed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -315,6 +338,8 @@
       <MemberSignature Language="C#" Value="public void NotifyOnChanged (System.Runtime.Caching.OnChangedCallback onChangedCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void NotifyOnChanged(class System.Runtime.Caching.OnChangedCallback onChangedCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ChangeMonitor.NotifyOnChanged(System.Runtime.Caching.OnChangedCallback)" />
+      <MemberSignature Language="F#" Value="member this.NotifyOnChanged : System.Runtime.Caching.OnChangedCallback -&gt; unit" Usage="changeMonitor.NotifyOnChanged onChangedCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NotifyOnChanged(System::Runtime::Caching::OnChangedCallback ^ onChangedCallback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -361,6 +386,9 @@
       <MemberSignature Language="C#" Value="protected void OnChanged (object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnChanged(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.ChangeMonitor.OnChanged(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnChanged (state As Object)" />
+      <MemberSignature Language="F#" Value="member this.OnChanged : obj -&gt; unit" Usage="changeMonitor.OnChanged state" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnChanged(System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -394,6 +422,9 @@
       <MemberSignature Language="C#" Value="public abstract string UniqueId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UniqueId" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.ChangeMonitor.UniqueId" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property UniqueId As String" />
+      <MemberSignature Language="F#" Value="member this.UniqueId : string" Usage="System.Runtime.Caching.ChangeMonitor.UniqueId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ UniqueId { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

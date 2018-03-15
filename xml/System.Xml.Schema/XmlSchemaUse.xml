@@ -1,7 +1,10 @@
-<Type Name="XmlSchemaUse" FullName="System.Xml.Schema.XmlSchemaUse">
+﻿<Type Name="XmlSchemaUse" FullName="System.Xml.Schema.XmlSchemaUse">
   <TypeSignature Language="C#" Value="public enum XmlSchemaUse" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlSchemaUse extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaUse" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XmlSchemaUse" />
+  <TypeSignature Language="F#" Value="type XmlSchemaUse = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class XmlSchemaUse" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlSchemaUse None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaUse.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Xml.Schema.XmlSchemaUse.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -56,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaUse</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Attribute use not specified.</summary>
       </Docs>
@@ -64,6 +71,9 @@
       <MemberSignature Language="C#" Value="Optional" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlSchemaUse Optional = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaUse.Optional" />
+      <MemberSignature Language="VB.NET" Value="Optional" />
+      <MemberSignature Language="F#" Value="Optional = 1" Usage="System.Xml.Schema.XmlSchemaUse.Optional" />
+      <MemberSignature Language="C++ CLI" Value="Optional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -86,6 +96,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaUse</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Attribute is optional.</summary>
       </Docs>
@@ -94,6 +105,9 @@
       <MemberSignature Language="C#" Value="Prohibited" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlSchemaUse Prohibited = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaUse.Prohibited" />
+      <MemberSignature Language="VB.NET" Value="Prohibited" />
+      <MemberSignature Language="F#" Value="Prohibited = 2" Usage="System.Xml.Schema.XmlSchemaUse.Prohibited" />
+      <MemberSignature Language="C++ CLI" Value="Prohibited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -116,6 +130,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaUse</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Attribute cannot be used.</summary>
       </Docs>
@@ -124,6 +139,9 @@
       <MemberSignature Language="C#" Value="Required" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.Schema.XmlSchemaUse Required = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.Schema.XmlSchemaUse.Required" />
+      <MemberSignature Language="VB.NET" Value="Required" />
+      <MemberSignature Language="F#" Value="Required = 3" Usage="System.Xml.Schema.XmlSchemaUse.Required" />
+      <MemberSignature Language="C++ CLI" Value="Required" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -146,6 +164,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaUse</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Attribute must appear once.</summary>
       </Docs>

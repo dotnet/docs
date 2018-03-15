@@ -1,7 +1,10 @@
-<Type Name="MobileControlsSection" FullName="System.Web.UI.MobileControls.MobileControlsSection">
+﻿<Type Name="MobileControlsSection" FullName="System.Web.UI.MobileControls.MobileControlsSection">
   <TypeSignature Language="C#" Value="public sealed class MobileControlsSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MobileControlsSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.MobileControlsSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MobileControlsSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type MobileControlsSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MobileControlsSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,8 @@
       <MemberSignature Language="C#" Value="public MobileControlsSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.MobileControlsSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MobileControlsSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -46,6 +51,9 @@
       <MemberSignature Language="C#" Value="public bool AllowCustomAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowCustomAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobileControlsSection.AllowCustomAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowCustomAttributes As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowCustomAttributes : bool with get, set" Usage="System.Web.UI.MobileControls.MobileControlsSection.AllowCustomAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowCustomAttributes { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -70,6 +78,9 @@
       <MemberSignature Language="C#" Value="public Type CookielessDataDictionaryType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type CookielessDataDictionaryType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobileControlsSection.CookielessDataDictionaryType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CookielessDataDictionaryType As Type" />
+      <MemberSignature Language="F#" Value="member this.CookielessDataDictionaryType : Type with get, set" Usage="System.Web.UI.MobileControls.MobileControlsSection.CookielessDataDictionaryType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ CookielessDataDictionaryType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -99,6 +110,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.DeviceElementCollection Devices { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.DeviceElementCollection Devices" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobileControlsSection.Devices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Devices As DeviceElementCollection" />
+      <MemberSignature Language="F#" Value="member this.Devices : System.Web.UI.MobileControls.DeviceElementCollection" Usage="System.Web.UI.MobileControls.MobileControlsSection.Devices" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::DeviceElementCollection ^ Devices { System::Web::UI::MobileControls::DeviceElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -122,6 +136,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobileControlsSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.UI.MobileControls.MobileControlsSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -140,6 +157,9 @@
       <MemberSignature Language="C#" Value="public int SessionStateHistorySize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SessionStateHistorySize" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.MobileControlsSection.SessionStateHistorySize" />
+      <MemberSignature Language="VB.NET" Value="Public Property SessionStateHistorySize As Integer" />
+      <MemberSignature Language="F#" Value="member this.SessionStateHistorySize : int with get, set" Usage="System.Web.UI.MobileControls.MobileControlsSection.SessionStateHistorySize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SessionStateHistorySize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

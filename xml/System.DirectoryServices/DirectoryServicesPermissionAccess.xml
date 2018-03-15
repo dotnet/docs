@@ -1,7 +1,10 @@
-<Type Name="DirectoryServicesPermissionAccess" FullName="System.DirectoryServices.DirectoryServicesPermissionAccess">
+﻿<Type Name="DirectoryServicesPermissionAccess" FullName="System.DirectoryServices.DirectoryServicesPermissionAccess">
   <TypeSignature Language="C#" Value="public enum DirectoryServicesPermissionAccess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DirectoryServicesPermissionAccess extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.DirectoryServicesPermissionAccess" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DirectoryServicesPermissionAccess" />
+  <TypeSignature Language="F#" Value="type DirectoryServicesPermissionAccess = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DirectoryServicesPermissionAccess" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="Browse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DirectoryServicesPermissionAccess Browse = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectoryServicesPermissionAccess.Browse" />
+      <MemberSignature Language="VB.NET" Value="Browse" />
+      <MemberSignature Language="F#" Value="Browse = 2" Usage="System.DirectoryServices.DirectoryServicesPermissionAccess.Browse" />
+      <MemberSignature Language="C++ CLI" Value="Browse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -31,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DirectoryServicesPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Reading the Active Directory Domain Services tree is allowed.</summary>
       </Docs>
@@ -39,6 +46,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DirectoryServicesPermissionAccess None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectoryServicesPermissionAccess.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.DirectoryServices.DirectoryServicesPermissionAccess.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -47,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DirectoryServicesPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No permissions are allowed.</summary>
       </Docs>
@@ -55,6 +66,9 @@
       <MemberSignature Language="C#" Value="Write" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.DirectoryServicesPermissionAccess Write = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.DirectoryServicesPermissionAccess.Write" />
+      <MemberSignature Language="VB.NET" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 6" Usage="System.DirectoryServices.DirectoryServicesPermissionAccess.Write" />
+      <MemberSignature Language="C++ CLI" Value="Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -63,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DirectoryServicesPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Reading, writing, deleting, changing, and adding to the Active Directory Domain Srevices tree are allowed.</summary>
       </Docs>

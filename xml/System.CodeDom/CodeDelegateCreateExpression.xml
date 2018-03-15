@@ -1,7 +1,10 @@
-<Type Name="CodeDelegateCreateExpression" FullName="System.CodeDom.CodeDelegateCreateExpression">
+﻿<Type Name="CodeDelegateCreateExpression" FullName="System.CodeDom.CodeDelegateCreateExpression">
   <TypeSignature Language="C#" Value="public class CodeDelegateCreateExpression : System.CodeDom.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeDelegateCreateExpression extends System.CodeDom.CodeExpression" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeDelegateCreateExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeDelegateCreateExpression&#xA;Inherits CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeDelegateCreateExpression = class&#xA;    inherit CodeExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeDelegateCreateExpression : System::CodeDom::CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -47,10 +50,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDelegateCreateExpression" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CodeDelegateCreateExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDelegateCreateExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDelegateCreateExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -70,6 +84,9 @@
       <MemberSignature Language="C#" Value="public CodeDelegateCreateExpression (System.CodeDom.CodeTypeReference delegateType, System.CodeDom.CodeExpression targetObject, string methodName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeTypeReference delegateType, class System.CodeDom.CodeExpression targetObject, string methodName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeDelegateCreateExpression.#ctor(System.CodeDom.CodeTypeReference,System.CodeDom.CodeExpression,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (delegateType As CodeTypeReference, targetObject As CodeExpression, methodName As String)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.CodeDelegateCreateExpression : System.CodeDom.CodeTypeReference * System.CodeDom.CodeExpression * string -&gt; System.CodeDom.CodeDelegateCreateExpression" Usage="new System.CodeDom.CodeDelegateCreateExpression (delegateType, targetObject, methodName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeDelegateCreateExpression(System::CodeDom::CodeTypeReference ^ delegateType, System::CodeDom::CodeExpression ^ targetObject, System::String ^ methodName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +114,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference DelegateType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeTypeReference DelegateType" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDelegateCreateExpression.DelegateType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DelegateType As CodeTypeReference" />
+      <MemberSignature Language="F#" Value="member this.DelegateType : System.CodeDom.CodeTypeReference with get, set" Usage="System.CodeDom.CodeDelegateCreateExpression.DelegateType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeTypeReference ^ DelegateType { System::CodeDom::CodeTypeReference ^ get(); void set(System::CodeDom::CodeTypeReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -119,6 +139,9 @@
       <MemberSignature Language="C#" Value="public string MethodName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MethodName" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDelegateCreateExpression.MethodName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MethodName As String" />
+      <MemberSignature Language="F#" Value="member this.MethodName : string with get, set" Usage="System.CodeDom.CodeDelegateCreateExpression.MethodName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MethodName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -141,6 +164,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeExpression TargetObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeExpression TargetObject" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeDelegateCreateExpression.TargetObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetObject As CodeExpression" />
+      <MemberSignature Language="F#" Value="member this.TargetObject : System.CodeDom.CodeExpression with get, set" Usage="System.CodeDom.CodeDelegateCreateExpression.TargetObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeExpression ^ TargetObject { System::CodeDom::CodeExpression ^ get(); void set(System::CodeDom::CodeExpression ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -159,14 +185,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.CodeDom.CodeDelegateCreateExpression" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

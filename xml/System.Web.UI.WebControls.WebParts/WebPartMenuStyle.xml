@@ -1,7 +1,10 @@
-<Type Name="WebPartMenuStyle" FullName="System.Web.UI.WebControls.WebParts.WebPartMenuStyle">
+﻿<Type Name="WebPartMenuStyle" FullName="System.Web.UI.WebControls.WebParts.WebPartMenuStyle">
   <TypeSignature Language="C#" Value="public sealed class WebPartMenuStyle : System.Web.UI.WebControls.TableStyle, System.ComponentModel.ICustomTypeDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebPartMenuStyle extends System.Web.UI.WebControls.TableStyle implements class System.ComponentModel.ICustomTypeDescriptor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartMenuStyle" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPartMenuStyle&#xA;Inherits TableStyle&#xA;Implements ICustomTypeDescriptor" />
+  <TypeSignature Language="F#" Value="type WebPartMenuStyle = class&#xA;    inherit TableStyle&#xA;    interface ICustomTypeDescriptor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartMenuStyle sealed : System::Web::UI::WebControls::TableStyle, System::ComponentModel::ICustomTypeDescriptor" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,10 +41,21 @@
     <altmember cref="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupStyle" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartMenuStyle" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebPartMenuStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartMenuStyle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +71,9 @@
       <MemberSignature Language="C#" Value="public WebPartMenuStyle (System.Web.UI.StateBag bag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.StateBag bag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.#ctor(System.Web.UI.StateBag)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bag As StateBag)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.WebPartMenuStyle : System.Web.UI.StateBag -&gt; System.Web.UI.WebControls.WebParts.WebPartMenuStyle" Usage="new System.Web.UI.WebControls.WebParts.WebPartMenuStyle bag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartMenuStyle(System::Web::UI::StateBag ^ bag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +92,9 @@
       <MemberSignature Language="C#" Value="public override void CopyFrom (System.Web.UI.WebControls.Style s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.Web.UI.WebControls.Style s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.CopyFrom(System.Web.UI.WebControls.Style)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (s As Style)" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.Web.UI.WebControls.Style -&gt; unit" Usage="webPartMenuStyle.CopyFrom s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::Web::UI::WebControls::Style ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,6 +126,9 @@
       <MemberSignature Language="C#" Value="protected override void FillStyleAttributes (System.Web.UI.CssStyleCollection attributes, System.Web.UI.IUrlResolutionService urlResolver);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void FillStyleAttributes(class System.Web.UI.CssStyleCollection attributes, class System.Web.UI.IUrlResolutionService urlResolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.FillStyleAttributes(System.Web.UI.CssStyleCollection,System.Web.UI.IUrlResolutionService)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub FillStyleAttributes (attributes As CssStyleCollection, urlResolver As IUrlResolutionService)" />
+      <MemberSignature Language="F#" Value="override this.FillStyleAttributes : System.Web.UI.CssStyleCollection * System.Web.UI.IUrlResolutionService -&gt; unit" Usage="webPartMenuStyle.FillStyleAttributes (attributes, urlResolver)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void FillStyleAttributes(System::Web::UI::CssStyleCollection ^ attributes, System::Web::UI::IUrlResolutionService ^ urlResolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +152,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.HorizontalAlign HorizontalAlign { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.HorizontalAlign HorizontalAlign" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.HorizontalAlign" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property HorizontalAlign As HorizontalAlign" />
+      <MemberSignature Language="F#" Value="member this.HorizontalAlign : System.Web.UI.WebControls.HorizontalAlign with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartMenuStyle.HorizontalAlign" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::HorizontalAlign HorizontalAlign { System::Web::UI::WebControls::HorizontalAlign get(); void set(System::Web::UI::WebControls::HorizontalAlign value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -139,7 +165,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -166,6 +192,9 @@
       <MemberSignature Language="C#" Value="public override void MergeWith (System.Web.UI.WebControls.Style s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void MergeWith(class System.Web.UI.WebControls.Style s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.MergeWith(System.Web.UI.WebControls.Style)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub MergeWith (s As Style)" />
+      <MemberSignature Language="F#" Value="override this.MergeWith : System.Web.UI.WebControls.Style -&gt; unit" Usage="webPartMenuStyle.MergeWith s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void MergeWith(System::Web::UI::WebControls::Style ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +226,9 @@
       <MemberSignature Language="C#" Value="public override void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="webPartMenuStyle.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -222,6 +254,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ShadowColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ShadowColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.ShadowColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ShadowColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ShadowColor : System.Drawing.Color with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartMenuStyle.ShadowColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ShadowColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -255,6 +290,8 @@
       <MemberSignature Language="C#" Value="System.ComponentModel.AttributeCollection ICustomTypeDescriptor.GetAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.AttributeCollection System.ComponentModel.ICustomTypeDescriptor.GetAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetAttributes" />
+      <MemberSignature Language="VB.NET" Value="Function GetAttributes () As AttributeCollection Implements ICustomTypeDescriptor.GetAttributes" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::AttributeCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetAttributes() = System::ComponentModel::ICustomTypeDescriptor::GetAttributes;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -274,6 +311,8 @@
       <MemberSignature Language="C#" Value="string ICustomTypeDescriptor.GetClassName ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ComponentModel.ICustomTypeDescriptor.GetClassName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetClassName" />
+      <MemberSignature Language="VB.NET" Value="Function GetClassName () As String Implements ICustomTypeDescriptor.GetClassName" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.ICustomTypeDescriptor.GetClassName() = System::ComponentModel::ICustomTypeDescriptor::GetClassName;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -293,6 +332,8 @@
       <MemberSignature Language="C#" Value="string ICustomTypeDescriptor.GetComponentName ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ComponentModel.ICustomTypeDescriptor.GetComponentName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetComponentName" />
+      <MemberSignature Language="VB.NET" Value="Function GetComponentName () As String Implements ICustomTypeDescriptor.GetComponentName" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.ICustomTypeDescriptor.GetComponentName() = System::ComponentModel::ICustomTypeDescriptor::GetComponentName;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -312,6 +353,8 @@
       <MemberSignature Language="C#" Value="System.ComponentModel.TypeConverter ICustomTypeDescriptor.GetConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.TypeConverter System.ComponentModel.ICustomTypeDescriptor.GetConverter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetConverter" />
+      <MemberSignature Language="VB.NET" Value="Function GetConverter () As TypeConverter Implements ICustomTypeDescriptor.GetConverter" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::TypeConverter ^ System.ComponentModel.ICustomTypeDescriptor.GetConverter() = System::ComponentModel::ICustomTypeDescriptor::GetConverter;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -331,6 +374,8 @@
       <MemberSignature Language="C#" Value="System.ComponentModel.EventDescriptor ICustomTypeDescriptor.GetDefaultEvent ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.EventDescriptor System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetDefaultEvent" />
+      <MemberSignature Language="VB.NET" Value="Function GetDefaultEvent () As EventDescriptor Implements ICustomTypeDescriptor.GetDefaultEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptor ^ System.ComponentModel.ICustomTypeDescriptor.GetDefaultEvent() = System::ComponentModel::ICustomTypeDescriptor::GetDefaultEvent;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -350,6 +395,8 @@
       <MemberSignature Language="C#" Value="System.ComponentModel.PropertyDescriptor ICustomTypeDescriptor.GetDefaultProperty ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptor System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetDefaultProperty" />
+      <MemberSignature Language="VB.NET" Value="Function GetDefaultProperty () As PropertyDescriptor Implements ICustomTypeDescriptor.GetDefaultProperty" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptor ^ System.ComponentModel.ICustomTypeDescriptor.GetDefaultProperty() = System::ComponentModel::ICustomTypeDescriptor::GetDefaultProperty;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -369,6 +416,8 @@
       <MemberSignature Language="C#" Value="object ICustomTypeDescriptor.GetEditor (Type editorBaseType);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ComponentModel.ICustomTypeDescriptor.GetEditor(class System.Type editorBaseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetEditor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Function GetEditor (editorBaseType As Type) As Object Implements ICustomTypeDescriptor.GetEditor" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.ICustomTypeDescriptor.GetEditor(Type ^ editorBaseType) = System::ComponentModel::ICustomTypeDescriptor::GetEditor;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -387,10 +436,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEvents">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the events for this instance of a component. This method implements the overloaded <see cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetEvents" /> method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEvents">
       <MemberSignature Language="C#" Value="System.ComponentModel.EventDescriptorCollection ICustomTypeDescriptor.GetEvents ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.EventDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetEvents() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetEvents" />
+      <MemberSignature Language="VB.NET" Value="Function GetEvents () As EventDescriptorCollection Implements ICustomTypeDescriptor.GetEvents" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetEvents() = System::ComponentModel::ICustomTypeDescriptor::GetEvents;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -410,6 +470,8 @@
       <MemberSignature Language="C#" Value="System.ComponentModel.EventDescriptorCollection ICustomTypeDescriptor.GetEvents (Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.EventDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetEvents(class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetEvents(System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Function GetEvents (attributes As Attribute()) As EventDescriptorCollection Implements ICustomTypeDescriptor.GetEvents" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::EventDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetEvents(cli::array &lt;Attribute ^&gt; ^ attributes) = System::ComponentModel::ICustomTypeDescriptor::GetEvents;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -428,10 +490,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="System.ComponentModel.ICustomTypeDescriptor.GetProperties">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the properties for this instance of a component. This method implements the overloaded <see cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetProperties" /> method.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="System.ComponentModel.ICustomTypeDescriptor.GetProperties">
       <MemberSignature Language="C#" Value="System.ComponentModel.PropertyDescriptorCollection ICustomTypeDescriptor.GetProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetProperties" />
+      <MemberSignature Language="VB.NET" Value="Function GetProperties () As PropertyDescriptorCollection Implements ICustomTypeDescriptor.GetProperties" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetProperties() = System::ComponentModel::ICustomTypeDescriptor::GetProperties;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -451,6 +524,8 @@
       <MemberSignature Language="C#" Value="System.ComponentModel.PropertyDescriptorCollection ICustomTypeDescriptor.GetProperties (Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.ICustomTypeDescriptor.GetProperties(class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetProperties(System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Function GetProperties (attributes As Attribute()) As PropertyDescriptorCollection Implements ICustomTypeDescriptor.GetProperties" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.ICustomTypeDescriptor.GetProperties(cli::array &lt;Attribute ^&gt; ^ attributes) = System::ComponentModel::ICustomTypeDescriptor::GetProperties;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -473,6 +548,8 @@
       <MemberSignature Language="C#" Value="object ICustomTypeDescriptor.GetPropertyOwner (System.ComponentModel.PropertyDescriptor pd);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(class System.ComponentModel.PropertyDescriptor pd) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetPropertyOwner(System.ComponentModel.PropertyDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Function GetPropertyOwner (pd As PropertyDescriptor) As Object Implements ICustomTypeDescriptor.GetPropertyOwner" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.ICustomTypeDescriptor.GetPropertyOwner(System::ComponentModel::PropertyDescriptor ^ pd) = System::ComponentModel::ICustomTypeDescriptor::GetPropertyOwner;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -491,32 +568,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="System.ComponentModel.ICustomTypeDescriptor.GetProperties">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the properties for this instance of a component. This method implements the overloaded <see cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetProperties" /> method.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.WebPartMenuStyle" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="System.ComponentModel.ICustomTypeDescriptor.GetEvents">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the events for this instance of a component. This method implements the overloaded <see cref="Overload:System.ComponentModel.ICustomTypeDescriptor.GetEvents" /> method.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

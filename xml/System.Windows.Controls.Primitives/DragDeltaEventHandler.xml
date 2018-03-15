@@ -1,7 +1,10 @@
-<Type Name="DragDeltaEventHandler" FullName="System.Windows.Controls.Primitives.DragDeltaEventHandler">
+﻿<Type Name="DragDeltaEventHandler" FullName="System.Windows.Controls.Primitives.DragDeltaEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DragDeltaEventHandler(object sender, DragDeltaEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DragDeltaEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DragDeltaEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DragDeltaEventHandler(sender As Object, e As DragDeltaEventArgs)" />
+  <TypeSignature Language="F#" Value="type DragDeltaEventHandler = delegate of obj * DragDeltaEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DragDeltaEventHandler(System::Object ^ sender, DragDeltaEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

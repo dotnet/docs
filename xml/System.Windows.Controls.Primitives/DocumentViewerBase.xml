@@ -1,7 +1,10 @@
-<Type Name="DocumentViewerBase" FullName="System.Windows.Controls.Primitives.DocumentViewerBase">
+﻿<Type Name="DocumentViewerBase" FullName="System.Windows.Controls.Primitives.DocumentViewerBase">
   <TypeSignature Language="C#" Value="public abstract class DocumentViewerBase : System.Windows.Controls.Control, IServiceProvider, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract DocumentViewerBase extends System.Windows.Controls.Control implements class System.IServiceProvider, class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.DocumentViewerBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DocumentViewerBase&#xA;Inherits Control&#xA;Implements IAddChild, IServiceProvider" />
+  <TypeSignature Language="F#" Value="type DocumentViewerBase = class&#xA;    inherit Control&#xA;    interface IAddChild&#xA;    interface IServiceProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DocumentViewerBase abstract : System::Windows::Controls::Control, IServiceProvider, System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="protected DocumentViewerBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DocumentViewerBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +60,9 @@
       <MemberSignature Language="C#" Value="public void CancelPrint ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelPrint() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.CancelPrint" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelPrint ()" />
+      <MemberSignature Language="F#" Value="member this.CancelPrint : unit -&gt; unit" Usage="documentViewerBase.CancelPrint " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelPrint();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,6 +88,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanGoToNextPage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanGoToNextPage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanGoToNextPage As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanGoToNextPage : bool" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanGoToNextPage { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -121,6 +132,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CanGoToNextPageProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CanGoToNextPageProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPageProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanGoToNextPageProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CanGoToNextPageProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPageProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanGoToNextPageProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -138,6 +152,9 @@
       <MemberSignature Language="C#" Value="protected static readonly System.Windows.DependencyPropertyKey CanGoToNextPagePropertyKey;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly class System.Windows.DependencyPropertyKey CanGoToNextPagePropertyKey" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPagePropertyKey" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly CanGoToNextPagePropertyKey As DependencyPropertyKey " />
+      <MemberSignature Language="F#" Value=" staticval mutable CanGoToNextPagePropertyKey : System.Windows.DependencyPropertyKey" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToNextPagePropertyKey" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Windows::DependencyPropertyKey ^ CanGoToNextPagePropertyKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -162,6 +179,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanGoToPage (int pageNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanGoToPage(int32 pageNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPage(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function CanGoToPage (pageNumber As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanGoToPage : int -&gt; bool&#xA;override this.CanGoToPage : int -&gt; bool" Usage="documentViewerBase.CanGoToPage pageNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool CanGoToPage(int pageNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -191,6 +211,9 @@
       <MemberSignature Language="C#" Value="public virtual bool CanGoToPreviousPage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanGoToPreviousPage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CanGoToPreviousPage As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanGoToPreviousPage : bool" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool CanGoToPreviousPage { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -232,6 +255,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CanGoToPreviousPageProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CanGoToPreviousPageProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPageProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanGoToPreviousPageProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CanGoToPreviousPageProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPageProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanGoToPreviousPageProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -249,6 +275,9 @@
       <MemberSignature Language="C#" Value="protected static readonly System.Windows.DependencyPropertyKey CanGoToPreviousPagePropertyKey;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly class System.Windows.DependencyPropertyKey CanGoToPreviousPagePropertyKey" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPagePropertyKey" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly CanGoToPreviousPagePropertyKey As DependencyPropertyKey " />
+      <MemberSignature Language="F#" Value=" staticval mutable CanGoToPreviousPagePropertyKey : System.Windows.DependencyPropertyKey" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.CanGoToPreviousPagePropertyKey" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Windows::DependencyPropertyKey ^ CanGoToPreviousPagePropertyKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -273,6 +302,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.IDocumentPaginatorSource Document { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.IDocumentPaginatorSource Document" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DocumentViewerBase.Document" />
+      <MemberSignature Language="VB.NET" Value="Public Property Document As IDocumentPaginatorSource" />
+      <MemberSignature Language="F#" Value="member this.Document : System.Windows.Documents.IDocumentPaginatorSource with get, set" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.Document" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::IDocumentPaginatorSource ^ Document { System::Windows::Documents::IDocumentPaginatorSource ^ get(); void set(System::Windows::Documents::IDocumentPaginatorSource ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -307,6 +339,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DocumentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DocumentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DocumentViewerBase.DocumentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DocumentProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DocumentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.DocumentProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DocumentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -324,6 +359,9 @@
       <MemberSignature Language="C#" Value="public void FirstPage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void FirstPage() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.FirstPage" />
+      <MemberSignature Language="VB.NET" Value="Public Sub FirstPage ()" />
+      <MemberSignature Language="F#" Value="member this.FirstPage : unit -&gt; unit" Usage="documentViewerBase.FirstPage " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void FirstPage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -349,6 +387,9 @@
       <MemberSignature Language="C#" Value="public static bool GetIsMasterPage (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsMasterPage(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.GetIsMasterPage(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsMasterPage (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="F#" Value="static member GetIsMasterPage : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.GetIsMasterPage element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsMasterPage(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -380,6 +421,9 @@
       <MemberSignature Language="C#" Value="protected System.Windows.Controls.Primitives.DocumentPageView GetMasterPageView ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Windows.Controls.Primitives.DocumentPageView GetMasterPageView() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.GetMasterPageView" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetMasterPageView () As DocumentPageView" />
+      <MemberSignature Language="F#" Value="member this.GetMasterPageView : unit -&gt; System.Windows.Controls.Primitives.DocumentPageView" Usage="documentViewerBase.GetMasterPageView " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Windows::Controls::Primitives::DocumentPageView ^ GetMasterPageView();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -408,6 +452,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.Primitives.DocumentPageView&gt; GetPageViewsCollection (out bool changed);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Controls.Primitives.DocumentPageView&gt; GetPageViewsCollection([out] bool&amp; changed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.GetPageViewsCollection(System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetPageViewsCollection (ByRef changed As Boolean) As ReadOnlyCollection(Of DocumentPageView)" />
+      <MemberSignature Language="F#" Value="abstract member GetPageViewsCollection :  -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.Primitives.DocumentPageView&gt;&#xA;override this.GetPageViewsCollection :  -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.Primitives.DocumentPageView&gt;" Usage="documentViewerBase.GetPageViewsCollection changed" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Controls::Primitives::DocumentPageView ^&gt; ^ GetPageViewsCollection([Runtime::InteropServices::Out] bool % changed);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -438,6 +485,9 @@
       <MemberSignature Language="C#" Value="public void GoToPage (int pageNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GoToPage(int32 pageNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.GoToPage(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GoToPage (pageNumber As Integer)" />
+      <MemberSignature Language="F#" Value="member this.GoToPage : int -&gt; unit" Usage="documentViewerBase.GoToPage pageNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GoToPage(int pageNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -473,6 +523,9 @@
       <MemberSignature Language="C#" Value="protected void InvalidatePageViews ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InvalidatePageViews() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.InvalidatePageViews" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub InvalidatePageViews ()" />
+      <MemberSignature Language="F#" Value="member this.InvalidatePageViews : unit -&gt; unit" Usage="documentViewerBase.InvalidatePageViews " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InvalidatePageViews();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -487,10 +540,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsMasterPage">
+      <MemberSignature Language="C#" Value="see GetIsMasterPage, and SetIsMasterPage" />
+      <MemberSignature Language="ILAsm" Value="see GetIsMasterPage, and SetIsMasterPage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPage" />
+      <MemberSignature Language="VB.NET" Value="see GetIsMasterPage, and SetIsMasterPage" />
+      <MemberSignature Language="F#" Value="see GetIsMasterPage, and SetIsMasterPage" Usage="see GetIsMasterPage, and SetIsMasterPage" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsMasterPageProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsMasterPageProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsMasterPageProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPageProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsMasterPageProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsMasterPageProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.IsMasterPageProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsMasterPageProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -508,6 +580,9 @@
       <MemberSignature Language="C#" Value="public void LastPage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LastPage() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.LastPage" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LastPage ()" />
+      <MemberSignature Language="F#" Value="member this.LastPage : unit -&gt; unit" Usage="documentViewerBase.LastPage " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LastPage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -530,9 +605,12 @@
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
-      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator LogicalChildren { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Collections.IEnumerator LogicalChildren { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator LogicalChildren" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DocumentViewerBase.LogicalChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.LogicalChildren" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -560,6 +638,9 @@
       <MemberSignature Language="C#" Value="public virtual int MasterPageNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MasterPageNumber" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MasterPageNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.MasterPageNumber : int" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int MasterPageNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -595,6 +676,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MasterPageNumberProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MasterPageNumberProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumberProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MasterPageNumberProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MasterPageNumberProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumberProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MasterPageNumberProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -612,6 +696,9 @@
       <MemberSignature Language="C#" Value="protected static readonly System.Windows.DependencyPropertyKey MasterPageNumberPropertyKey;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly class System.Windows.DependencyPropertyKey MasterPageNumberPropertyKey" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumberPropertyKey" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly MasterPageNumberPropertyKey As DependencyPropertyKey " />
+      <MemberSignature Language="F#" Value=" staticval mutable MasterPageNumberPropertyKey : System.Windows.DependencyPropertyKey" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.MasterPageNumberPropertyKey" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Windows::DependencyPropertyKey ^ MasterPageNumberPropertyKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -636,6 +723,9 @@
       <MemberSignature Language="C#" Value="public void NextPage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void NextPage() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.NextPage" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NextPage ()" />
+      <MemberSignature Language="F#" Value="member this.NextPage : unit -&gt; unit" Usage="documentViewerBase.NextPage " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NextPage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -661,6 +751,9 @@
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="documentViewerBase.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -688,6 +781,8 @@
       <MemberSignature Language="C#" Value="protected virtual void OnBringIntoView (System.Windows.DependencyObject element, System.Windows.Rect rect, int pageNumber);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnBringIntoView(class System.Windows.DependencyObject element, valuetype System.Windows.Rect rect, int32 pageNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnBringIntoView(System.Windows.DependencyObject,System.Windows.Rect,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member OnBringIntoView : System.Windows.DependencyObject * System.Windows.Rect * int -&gt; unit&#xA;override this.OnBringIntoView : System.Windows.DependencyObject * System.Windows.Rect * int -&gt; unit" Usage="documentViewerBase.OnBringIntoView (element, rect, pageNumber)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnBringIntoView(System::Windows::DependencyObject ^ element, System::Windows::Rect rect, int pageNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -721,6 +816,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCancelPrintCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCancelPrintCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnCancelPrintCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCancelPrintCommand ()" />
+      <MemberSignature Language="F#" Value="abstract member OnCancelPrintCommand : unit -&gt; unit&#xA;override this.OnCancelPrintCommand : unit -&gt; unit" Usage="documentViewerBase.OnCancelPrintCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCancelPrintCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -746,6 +844,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="documentViewerBase.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -772,6 +873,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDocumentChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDocumentChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnDocumentChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDocumentChanged ()" />
+      <MemberSignature Language="F#" Value="abstract member OnDocumentChanged : unit -&gt; unit&#xA;override this.OnDocumentChanged : unit -&gt; unit" Usage="documentViewerBase.OnDocumentChanged " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDocumentChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -797,6 +901,9 @@
       <MemberSignature Language="C#" Value="protected override void OnDpiChanged (System.Windows.DpiScale oldDpiScaleInfo, System.Windows.DpiScale newDpiScaleInfo);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDpiChanged(valuetype System.Windows.DpiScale oldDpiScaleInfo, valuetype System.Windows.DpiScale newDpiScaleInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnDpiChanged(System.Windows.DpiScale,System.Windows.DpiScale)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDpiChanged (oldDpiScaleInfo As DpiScale, newDpiScaleInfo As DpiScale)" />
+      <MemberSignature Language="F#" Value="override this.OnDpiChanged : System.Windows.DpiScale * System.Windows.DpiScale -&gt; unit" Usage="documentViewerBase.OnDpiChanged (oldDpiScaleInfo, newDpiScaleInfo)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDpiChanged(System::Windows::DpiScale oldDpiScaleInfo, System::Windows::DpiScale newDpiScaleInfo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -820,6 +927,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnFirstPageCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFirstPageCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnFirstPageCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFirstPageCommand ()" />
+      <MemberSignature Language="F#" Value="abstract member OnFirstPageCommand : unit -&gt; unit&#xA;override this.OnFirstPageCommand : unit -&gt; unit" Usage="documentViewerBase.OnFirstPageCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFirstPageCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -849,6 +959,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnGoToPageCommand (int pageNumber);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnGoToPageCommand(int32 pageNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnGoToPageCommand(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnGoToPageCommand (pageNumber As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member OnGoToPageCommand : int -&gt; unit&#xA;override this.OnGoToPageCommand : int -&gt; unit" Usage="documentViewerBase.OnGoToPageCommand pageNumber" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnGoToPageCommand(int pageNumber);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -883,6 +996,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnLastPageCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLastPageCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnLastPageCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLastPageCommand ()" />
+      <MemberSignature Language="F#" Value="abstract member OnLastPageCommand : unit -&gt; unit&#xA;override this.OnLastPageCommand : unit -&gt; unit" Usage="documentViewerBase.OnLastPageCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLastPageCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -912,6 +1028,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMasterPageNumberChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMasterPageNumberChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnMasterPageNumberChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMasterPageNumberChanged ()" />
+      <MemberSignature Language="F#" Value="abstract member OnMasterPageNumberChanged : unit -&gt; unit&#xA;override this.OnMasterPageNumberChanged : unit -&gt; unit" Usage="documentViewerBase.OnMasterPageNumberChanged " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMasterPageNumberChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -937,6 +1056,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnNextPageCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnNextPageCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnNextPageCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNextPageCommand ()" />
+      <MemberSignature Language="F#" Value="abstract member OnNextPageCommand : unit -&gt; unit&#xA;override this.OnNextPageCommand : unit -&gt; unit" Usage="documentViewerBase.OnNextPageCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnNextPageCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -966,6 +1088,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPageViewsChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPageViewsChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnPageViewsChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPageViewsChanged ()" />
+      <MemberSignature Language="F#" Value="abstract member OnPageViewsChanged : unit -&gt; unit&#xA;override this.OnPageViewsChanged : unit -&gt; unit" Usage="documentViewerBase.OnPageViewsChanged " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPageViewsChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -984,6 +1109,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPreviousPageCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPreviousPageCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnPreviousPageCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPreviousPageCommand ()" />
+      <MemberSignature Language="F#" Value="abstract member OnPreviousPageCommand : unit -&gt; unit&#xA;override this.OnPreviousPageCommand : unit -&gt; unit" Usage="documentViewerBase.OnPreviousPageCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPreviousPageCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1013,6 +1141,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPrintCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPrintCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.OnPrintCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPrintCommand ()" />
+      <MemberSignature Language="F#" Value="abstract member OnPrintCommand : unit -&gt; unit&#xA;override this.OnPrintCommand : unit -&gt; unit" Usage="documentViewerBase.OnPrintCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPrintCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1040,6 +1171,9 @@
       <MemberSignature Language="C#" Value="public int PageCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DocumentViewerBase.PageCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.PageCount : int" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.PageCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1075,6 +1209,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PageCountProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PageCountProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DocumentViewerBase.PageCountProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PageCountProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PageCountProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.PageCountProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PageCountProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1092,6 +1229,9 @@
       <MemberSignature Language="C#" Value="protected static readonly System.Windows.DependencyPropertyKey PageCountPropertyKey;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly class System.Windows.DependencyPropertyKey PageCountPropertyKey" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.DocumentViewerBase.PageCountPropertyKey" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly PageCountPropertyKey As DependencyPropertyKey " />
+      <MemberSignature Language="F#" Value=" staticval mutable PageCountPropertyKey : System.Windows.DependencyPropertyKey" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.PageCountPropertyKey" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::Windows::DependencyPropertyKey ^ PageCountPropertyKey;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1116,6 +1256,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.Primitives.DocumentPageView&gt; PageViews { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.Controls.Primitives.DocumentPageView&gt; PageViews" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Primitives.DocumentViewerBase.PageViews" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageViews As ReadOnlyCollection(Of DocumentPageView)" />
+      <MemberSignature Language="F#" Value="member this.PageViews : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Controls.Primitives.DocumentPageView&gt;" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.PageViews" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Controls::Primitives::DocumentPageView ^&gt; ^ PageViews { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Controls::Primitives::DocumentPageView ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1150,6 +1293,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler PageViewsChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PageViewsChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.Primitives.DocumentViewerBase.PageViewsChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event PageViewsChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.PageViewsChanged : EventHandler " Usage="member this.PageViewsChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PageViewsChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1167,6 +1313,9 @@
       <MemberSignature Language="C#" Value="public void PreviousPage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PreviousPage() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.PreviousPage" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PreviousPage ()" />
+      <MemberSignature Language="F#" Value="member this.PreviousPage : unit -&gt; unit" Usage="documentViewerBase.PreviousPage " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PreviousPage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1192,6 +1341,9 @@
       <MemberSignature Language="C#" Value="public void Print ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Print() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.Print" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Print ()" />
+      <MemberSignature Language="F#" Value="member this.Print : unit -&gt; unit" Usage="documentViewerBase.Print " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Print();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1220,6 +1372,9 @@
       <MemberSignature Language="C#" Value="public static void SetIsMasterPage (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsMasterPage(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.SetIsMasterPage(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsMasterPage (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetIsMasterPage : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Controls.Primitives.DocumentViewerBase.SetIsMasterPage (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsMasterPage(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1252,6 +1407,8 @@
       <MemberSignature Language="C#" Value="object IServiceProvider.GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.IServiceProvider.GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.System#IServiceProvider#GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Function GetService (serviceType As Type) As Object Implements IServiceProvider.GetService" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.IServiceProvider.GetService(Type ^ serviceType) = IServiceProvider::GetService;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1275,7 +1432,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1296,7 +1458,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.DocumentViewerBase.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ text) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

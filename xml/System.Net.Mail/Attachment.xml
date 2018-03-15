@@ -1,7 +1,10 @@
-<Type Name="Attachment" FullName="System.Net.Mail.Attachment">
+﻿<Type Name="Attachment" FullName="System.Net.Mail.Attachment">
   <TypeSignature Language="C#" Value="public class Attachment : System.Net.Mail.AttachmentBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Attachment extends System.Net.Mail.AttachmentBase" />
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.Attachment" />
+  <TypeSignature Language="VB.NET" Value="Public Class Attachment&#xA;Inherits AttachmentBase" />
+  <TypeSignature Language="F#" Value="type Attachment = class&#xA;    inherit AttachmentBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Attachment : System::Net::Mail::AttachmentBase" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,10 +50,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.Attachment" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Attachment (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.Attachment.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String)" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.Attachment : string -&gt; System.Net.Mail.Attachment" Usage="new System.Net.Mail.Attachment fileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Attachment(System::String ^ fileName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -102,6 +118,8 @@
       <MemberSignature Language="C#" Value="public Attachment (System.IO.Stream contentStream, System.Net.Mime.ContentType contentType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream contentStream, class System.Net.Mime.ContentType contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.Attachment.#ctor(System.IO.Stream,System.Net.Mime.ContentType)" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.Attachment : System.IO.Stream * System.Net.Mime.ContentType -&gt; System.Net.Mail.Attachment" Usage="new System.Net.Mail.Attachment (contentStream, contentType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Attachment(System::IO::Stream ^ contentStream, System::Net::Mime::ContentType ^ contentType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -154,6 +172,9 @@
       <MemberSignature Language="C#" Value="public Attachment (System.IO.Stream contentStream, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream contentStream, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.Attachment.#ctor(System.IO.Stream,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contentStream As Stream, name As String)" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.Attachment : System.IO.Stream * string -&gt; System.Net.Mail.Attachment" Usage="new System.Net.Mail.Attachment (contentStream, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Attachment(System::IO::Stream ^ contentStream, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -202,6 +223,8 @@
       <MemberSignature Language="C#" Value="public Attachment (string fileName, System.Net.Mime.ContentType contentType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, class System.Net.Mime.ContentType contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.Attachment.#ctor(System.String,System.Net.Mime.ContentType)" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.Attachment : string * System.Net.Mime.ContentType -&gt; System.Net.Mail.Attachment" Usage="new System.Net.Mail.Attachment (fileName, contentType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Attachment(System::String ^ fileName, System::Net::Mime::ContentType ^ contentType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -235,6 +258,9 @@
       <MemberSignature Language="C#" Value="public Attachment (string fileName, string mediaType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string fileName, string mediaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.Attachment.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fileName As String, mediaType As String)" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.Attachment : string * string -&gt; System.Net.Mail.Attachment" Usage="new System.Net.Mail.Attachment (fileName, mediaType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Attachment(System::String ^ fileName, System::String ^ mediaType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -283,6 +309,9 @@
       <MemberSignature Language="C#" Value="public Attachment (System.IO.Stream contentStream, string name, string mediaType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream contentStream, string name, string mediaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.Attachment.#ctor(System.IO.Stream,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contentStream As Stream, name As String, mediaType As String)" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.Attachment : System.IO.Stream * string * string -&gt; System.Net.Mail.Attachment" Usage="new System.Net.Mail.Attachment (contentStream, name, mediaType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Attachment(System::IO::Stream ^ contentStream, System::String ^ name, System::String ^ mediaType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -337,6 +366,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Mime.ContentDisposition ContentDisposition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Mime.ContentDisposition ContentDisposition" />
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.Attachment.ContentDisposition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentDisposition As ContentDisposition" />
+      <MemberSignature Language="F#" Value="member this.ContentDisposition : System.Net.Mime.ContentDisposition" Usage="System.Net.Mail.Attachment.ContentDisposition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Mime::ContentDisposition ^ ContentDisposition { System::Net::Mime::ContentDisposition ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -375,10 +407,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateAttachmentFromString">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an attachment from a string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateAttachmentFromString">
       <MemberSignature Language="C#" Value="public static System.Net.Mail.Attachment CreateAttachmentFromString (string content, System.Net.Mime.ContentType contentType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Mail.Attachment CreateAttachmentFromString(string content, class System.Net.Mime.ContentType contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.Attachment.CreateAttachmentFromString(System.String,System.Net.Mime.ContentType)" />
+      <MemberSignature Language="F#" Value="static member CreateAttachmentFromString : string * System.Net.Mime.ContentType -&gt; System.Net.Mail.Attachment" Usage="System.Net.Mail.Attachment.CreateAttachmentFromString (content, contentType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Mail::Attachment ^ CreateAttachmentFromString(System::String ^ content, System::Net::Mime::ContentType ^ contentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -412,6 +456,9 @@
       <MemberSignature Language="C#" Value="public static System.Net.Mail.Attachment CreateAttachmentFromString (string content, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Mail.Attachment CreateAttachmentFromString(string content, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.Attachment.CreateAttachmentFromString(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAttachmentFromString (content As String, name As String) As Attachment" />
+      <MemberSignature Language="F#" Value="static member CreateAttachmentFromString : string * string -&gt; System.Net.Mail.Attachment" Usage="System.Net.Mail.Attachment.CreateAttachmentFromString (content, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Mail::Attachment ^ CreateAttachmentFromString(System::String ^ content, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -454,6 +501,9 @@
       <MemberSignature Language="C#" Value="public static System.Net.Mail.Attachment CreateAttachmentFromString (string content, string name, System.Text.Encoding contentEncoding, string mediaType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.Mail.Attachment CreateAttachmentFromString(string content, string name, class System.Text.Encoding contentEncoding, string mediaType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.Attachment.CreateAttachmentFromString(System.String,System.String,System.Text.Encoding,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateAttachmentFromString (content As String, name As String, contentEncoding As Encoding, mediaType As String) As Attachment" />
+      <MemberSignature Language="F#" Value="static member CreateAttachmentFromString : string * string * System.Text.Encoding * string -&gt; System.Net.Mail.Attachment" Usage="System.Net.Mail.Attachment.CreateAttachmentFromString (content, name, contentEncoding, mediaType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::Mail::Attachment ^ CreateAttachmentFromString(System::String ^ content, System::String ^ name, System::Text::Encoding ^ contentEncoding, System::String ^ mediaType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -491,6 +541,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.Attachment.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Net.Mail.Attachment.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -535,6 +588,9 @@
       <MemberSignature Language="C#" Value="public System.Text.Encoding NameEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding NameEncoding" />
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.Attachment.NameEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property NameEncoding As Encoding" />
+      <MemberSignature Language="F#" Value="member this.NameEncoding : System.Text.Encoding with get, set" Usage="System.Net.Mail.Attachment.NameEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::Encoding ^ NameEncoding { System::Text::Encoding ^ get(); void set(System::Text::Encoding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -558,25 +614,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateAttachmentFromString">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an attachment from a string.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.Attachment" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

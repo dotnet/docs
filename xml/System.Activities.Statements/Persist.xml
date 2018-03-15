@@ -1,7 +1,10 @@
-<Type Name="Persist" FullName="System.Activities.Statements.Persist">
+﻿<Type Name="Persist" FullName="System.Activities.Statements.Persist">
   <TypeSignature Language="C#" Value="public sealed class Persist : System.Activities.NativeActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Persist extends System.Activities.NativeActivity" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.Persist" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Persist&#xA;Inherits NativeActivity" />
+  <TypeSignature Language="F#" Value="type Persist = class&#xA;    inherit NativeActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Persist sealed : System::Activities::NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public Persist ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Persist.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Persist();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.NativeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Persist.CacheMetadata(System.Activities.NativeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="persist.CacheMetadata metadata" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -55,6 +63,9 @@
       <MemberSignature Language="C#" Value="protected override bool CanInduceIdle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanInduceIdle" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.Persist.CanInduceIdle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CanInduceIdle As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanInduceIdle : bool" Usage="System.Activities.Statements.Persist.CanInduceIdle" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool CanInduceIdle { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -73,6 +84,9 @@
       <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.Persist.Execute(System.Activities.NativeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="persist.Execute context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

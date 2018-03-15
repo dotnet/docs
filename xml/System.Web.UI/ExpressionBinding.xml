@@ -1,7 +1,10 @@
-<Type Name="ExpressionBinding" FullName="System.Web.UI.ExpressionBinding">
+﻿<Type Name="ExpressionBinding" FullName="System.Web.UI.ExpressionBinding">
   <TypeSignature Language="C#" Value="public sealed class ExpressionBinding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpressionBinding extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ExpressionBinding" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExpressionBinding" />
+  <TypeSignature Language="F#" Value="type ExpressionBinding = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExpressionBinding sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public ExpressionBinding (string propertyName, Type propertyType, string expressionPrefix, string expression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string propertyName, class System.Type propertyType, string expressionPrefix, string expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExpressionBinding.#ctor(System.String,System.Type,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (propertyName As String, propertyType As Type, expressionPrefix As String, expression As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.ExpressionBinding : string * Type * string * string -&gt; System.Web.UI.ExpressionBinding" Usage="new System.Web.UI.ExpressionBinding (propertyName, propertyType, expressionPrefix, expression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpressionBinding(System::String ^ propertyName, Type ^ propertyType, System::String ^ expressionPrefix, System::String ^ expression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +51,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExpressionBinding.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="expressionBinding.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +78,9 @@
       <MemberSignature Language="C#" Value="public string Expression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Expression" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExpressionBinding.Expression" />
+      <MemberSignature Language="VB.NET" Value="Public Property Expression As String" />
+      <MemberSignature Language="F#" Value="member this.Expression : string with get, set" Usage="System.Web.UI.ExpressionBinding.Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Expression { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +100,9 @@
       <MemberSignature Language="C#" Value="public string ExpressionPrefix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ExpressionPrefix" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExpressionBinding.ExpressionPrefix" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpressionPrefix As String" />
+      <MemberSignature Language="F#" Value="member this.ExpressionPrefix : string with get, set" Usage="System.Web.UI.ExpressionBinding.ExpressionPrefix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ExpressionPrefix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +122,9 @@
       <MemberSignature Language="C#" Value="public bool Generated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Generated" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExpressionBinding.Generated" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Generated As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Generated : bool" Usage="System.Web.UI.ExpressionBinding.Generated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Generated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -127,6 +145,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExpressionBinding.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="expressionBinding.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -147,6 +168,9 @@
       <MemberSignature Language="C#" Value="public object ParsedExpressionData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ParsedExpressionData" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExpressionBinding.ParsedExpressionData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParsedExpressionData As Object" />
+      <MemberSignature Language="F#" Value="member this.ParsedExpressionData : obj" Usage="System.Web.UI.ExpressionBinding.ParsedExpressionData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ParsedExpressionData { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -166,6 +190,9 @@
       <MemberSignature Language="C#" Value="public string PropertyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExpressionBinding.PropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="System.Web.UI.ExpressionBinding.PropertyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -185,6 +212,9 @@
       <MemberSignature Language="C#" Value="public Type PropertyType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type PropertyType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExpressionBinding.PropertyType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyType As Type" />
+      <MemberSignature Language="F#" Value="member this.PropertyType : Type" Usage="System.Web.UI.ExpressionBinding.PropertyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ PropertyType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

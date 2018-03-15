@@ -1,7 +1,10 @@
-<Type Name="EventCounter" FullName="System.Diagnostics.Tracing.EventCounter">
+﻿<Type Name="EventCounter" FullName="System.Diagnostics.Tracing.EventCounter">
   <TypeSignature Language="C#" Value="public class EventCounter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventCounter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Tracing.EventCounter" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventCounter" />
+  <TypeSignature Language="F#" Value="type EventCounter = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventCounter" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -28,8 +31,7 @@
 
 For an example of how to use the <xref:System.Diagnostics.Tracing.EventCounter> class, see the [Introduction Tutorial: How to measure performance for very frequent events using EventCounters](https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.Tracing/documentation/EventCounterTutorial.md) topic.
 
-   ]]>
-      </format>
+   ]]></format>
     </remarks>
   </Docs>
   <Members>
@@ -37,6 +39,8 @@ For an example of how to use the <xref:System.Diagnostics.Tracing.EventCounter> 
       <MemberSignature Language="C#" Value="public EventCounter (string name, System.Diagnostics.Tracing.EventSource eventSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Diagnostics.Tracing.EventSource eventSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventCounter.#ctor(System.String,System.Diagnostics.Tracing.EventSource)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.Tracing.EventCounter : string * System.Diagnostics.Tracing.EventSource -&gt; System.Diagnostics.Tracing.EventCounter" Usage="new System.Diagnostics.Tracing.EventCounter (name, eventSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventCounter(System::String ^ name, System::Diagnostics::Tracing::EventSource ^ eventSource);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>
@@ -73,6 +77,9 @@ For an example of how to use the <xref:System.Diagnostics.Tracing.EventCounter> 
       <MemberSignature Language="C#" Value="public void WriteMetric (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void WriteMetric(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Tracing.EventCounter.WriteMetric(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub WriteMetric (value As Single)" />
+      <MemberSignature Language="F#" Value="member this.WriteMetric : single -&gt; unit" Usage="eventCounter.WriteMetric value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void WriteMetric(float value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Tracing</AssemblyName>

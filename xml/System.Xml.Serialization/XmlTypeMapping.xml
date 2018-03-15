@@ -1,7 +1,10 @@
-<Type Name="XmlTypeMapping" FullName="System.Xml.Serialization.XmlTypeMapping">
+﻿<Type Name="XmlTypeMapping" FullName="System.Xml.Serialization.XmlTypeMapping">
   <TypeSignature Language="C#" Value="public class XmlTypeMapping : System.Xml.Serialization.XmlMapping" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlTypeMapping extends System.Xml.Serialization.XmlMapping" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlTypeMapping" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlTypeMapping&#xA;Inherits XmlMapping" />
+  <TypeSignature Language="F#" Value="type XmlTypeMapping = class&#xA;    inherit XmlMapping" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlTypeMapping : System::Xml::Serialization::XmlMapping" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="public string TypeFullName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeFullName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlTypeMapping.TypeFullName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeFullName As String" />
+      <MemberSignature Language="F#" Value="member this.TypeFullName : string" Usage="System.Xml.Serialization.XmlTypeMapping.TypeFullName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeFullName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -80,6 +86,9 @@
       <MemberSignature Language="C#" Value="public string TypeName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlTypeMapping.TypeName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeName As String" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string" Usage="System.Xml.Serialization.XmlTypeMapping.TypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -123,6 +132,9 @@
       <MemberSignature Language="C#" Value="public string XsdTypeName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XsdTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlTypeMapping.XsdTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XsdTypeName As String" />
+      <MemberSignature Language="F#" Value="member this.XsdTypeName : string" Usage="System.Xml.Serialization.XmlTypeMapping.XsdTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XsdTypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -164,6 +176,9 @@
       <MemberSignature Language="C#" Value="public string XsdTypeNamespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XsdTypeNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlTypeMapping.XsdTypeNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XsdTypeNamespace As String" />
+      <MemberSignature Language="F#" Value="member this.XsdTypeNamespace : string" Usage="System.Xml.Serialization.XmlTypeMapping.XsdTypeNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XsdTypeNamespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ITargetAwareCodeDomProvider" FullName="System.Resources.Tools.ITargetAwareCodeDomProvider">
+﻿<Type Name="ITargetAwareCodeDomProvider" FullName="System.Resources.Tools.ITargetAwareCodeDomProvider">
   <TypeSignature Language="C#" Value="public interface ITargetAwareCodeDomProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITargetAwareCodeDomProvider" />
   <TypeSignature Language="DocId" Value="T:System.Resources.Tools.ITargetAwareCodeDomProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITargetAwareCodeDomProvider" />
+  <TypeSignature Language="F#" Value="type ITargetAwareCodeDomProvider = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITargetAwareCodeDomProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,6 +20,8 @@
       <MemberSignature Language="C#" Value="public bool SupportsProperty (Type type, string propertyName, bool isWritable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool SupportsProperty(class System.Type type, string propertyName, bool isWritable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.Tools.ITargetAwareCodeDomProvider.SupportsProperty(System.Type,System.String,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member SupportsProperty : Type * string * bool -&gt; bool" Usage="iTargetAwareCodeDomProvider.SupportsProperty (type, propertyName, isWritable)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SupportsProperty(Type ^ type, System::String ^ propertyName, bool isWritable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

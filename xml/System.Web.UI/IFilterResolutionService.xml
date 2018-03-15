@@ -1,7 +1,10 @@
-<Type Name="IFilterResolutionService" FullName="System.Web.UI.IFilterResolutionService">
+﻿<Type Name="IFilterResolutionService" FullName="System.Web.UI.IFilterResolutionService">
   <TypeSignature Language="C#" Value="public interface IFilterResolutionService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFilterResolutionService" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IFilterResolutionService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IFilterResolutionService" />
+  <TypeSignature Language="F#" Value="type IFilterResolutionService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IFilterResolutionService" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public int CompareFilters (string filter1, string filter2);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareFilters(string filter1, string filter2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IFilterResolutionService.CompareFilters(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareFilters (filter1 As String, filter2 As String) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member CompareFilters : string * string -&gt; int" Usage="iFilterResolutionService.CompareFilters (filter1, filter2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int CompareFilters(System::String ^ filter1, System::String ^ filter2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -55,6 +61,9 @@
       <MemberSignature Language="C#" Value="public bool EvaluateFilter (string filterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EvaluateFilter(string filterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IFilterResolutionService.EvaluateFilter(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EvaluateFilter (filterName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member EvaluateFilter : string -&gt; bool" Usage="iFilterResolutionService.EvaluateFilter filterName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EvaluateFilter(System::String ^ filterName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

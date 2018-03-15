@@ -1,7 +1,10 @@
-<Type Name="HtmlObjectListAdapter" FullName="System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter">
+﻿<Type Name="HtmlObjectListAdapter" FullName="System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter">
   <TypeSignature Language="C#" Value="public class HtmlObjectListAdapter : System.Web.UI.MobileControls.Adapters.HtmlControlAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlObjectListAdapter extends System.Web.UI.MobileControls.Adapters.HtmlControlAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class HtmlObjectListAdapter&#xA;Inherits HtmlControlAdapter" />
+  <TypeSignature Language="F#" Value="type HtmlObjectListAdapter = class&#xA;    inherit HtmlControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HtmlObjectListAdapter : System::Web::UI::MobileControls::Adapters::HtmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,8 @@
       <MemberSignature Language="C#" Value="public HtmlObjectListAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HtmlObjectListAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -44,9 +49,12 @@
       </Docs>
     </Member>
     <Member MemberName="BackToList">
-      <MemberSignature Language="C#" Value="protected static readonly string BackToList;" />
+      <MemberSignature Language="C#" Value="protected internal static readonly string BackToList;" />
       <MemberSignature Language="ILAsm" Value=".field familyorassembly static initonly string BackToList" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.BackToList" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared ReadOnly BackToList As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable BackToList : string" Usage="System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.BackToList" />
+      <MemberSignature Language="C++ CLI" Value="protected public: static initonly System::String ^ BackToList;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -71,6 +79,9 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.MobileControls.ObjectList Control { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.ObjectList Control" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.Control" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As ObjectList" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.ObjectList" Usage="System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::ObjectList ^ Control { System::Web::UI::MobileControls::ObjectList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -89,6 +100,9 @@
       <MemberSignature Language="C#" Value="public override void CreateTemplatedUI (bool doDataBind);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CreateTemplatedUI(bool doDataBind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.CreateTemplatedUI(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CreateTemplatedUI (doDataBind As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.CreateTemplatedUI : bool -&gt; unit" Usage="htmlObjectListAdapter.CreateTemplatedUI doDataBind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CreateTemplatedUI(bool doDataBind);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -111,6 +125,9 @@
       <MemberSignature Language="C#" Value="public override bool HandlePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool HandlePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.HandlePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function HandlePostBackEvent (eventArgument As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.HandlePostBackEvent : string -&gt; bool" Usage="htmlObjectListAdapter.HandlePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool HandlePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -142,6 +159,9 @@
       <MemberSignature Language="C#" Value="protected bool HasCommands ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool HasCommands() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.HasCommands" />
+      <MemberSignature Language="VB.NET" Value="Protected Function HasCommands () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasCommands : unit -&gt; bool" Usage="htmlObjectListAdapter.HasCommands " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasCommands();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -162,6 +182,9 @@
       <MemberSignature Language="C#" Value="protected bool HasDefaultCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool HasDefaultCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.HasDefaultCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Function HasDefaultCommand () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasDefaultCommand : unit -&gt; bool" Usage="htmlObjectListAdapter.HasDefaultCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasDefaultCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -182,6 +205,9 @@
       <MemberSignature Language="C#" Value="protected bool HasItemDetails ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool HasItemDetails() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.HasItemDetails" />
+      <MemberSignature Language="VB.NET" Value="Protected Function HasItemDetails () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasItemDetails : unit -&gt; bool" Usage="htmlObjectListAdapter.HasItemDetails " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool HasItemDetails();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -202,6 +228,9 @@
       <MemberSignature Language="C#" Value="public override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="htmlObjectListAdapter.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -224,6 +253,9 @@
       <MemberSignature Language="C#" Value="protected bool OnlyHasDefaultCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance bool OnlyHasDefaultCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.OnlyHasDefaultCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Function OnlyHasDefaultCommand () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.OnlyHasDefaultCommand : unit -&gt; bool" Usage="htmlObjectListAdapter.OnlyHasDefaultCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; bool OnlyHasDefaultCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -244,6 +276,9 @@
       <MemberSignature Language="C#" Value="public override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="htmlObjectListAdapter.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -266,6 +301,9 @@
       <MemberSignature Language="C#" Value="public override void Render (System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Render(class System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.Render(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As HtmlMobileTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="htmlObjectListAdapter.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -288,6 +326,9 @@
       <MemberSignature Language="C#" Value="protected virtual void RenderItemDetails (System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer, System.Web.UI.MobileControls.ObjectListItem item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderItemDetails(class System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer, class System.Web.UI.MobileControls.ObjectListItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.RenderItemDetails(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter,System.Web.UI.MobileControls.ObjectListItem)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderItemDetails (writer As HtmlMobileTextWriter, item As ObjectListItem)" />
+      <MemberSignature Language="F#" Value="abstract member RenderItemDetails : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter * System.Web.UI.MobileControls.ObjectListItem -&gt; unit&#xA;override this.RenderItemDetails : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter * System.Web.UI.MobileControls.ObjectListItem -&gt; unit" Usage="htmlObjectListAdapter.RenderItemDetails (writer, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderItemDetails(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer, System::Web::UI::MobileControls::ObjectListItem ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -311,6 +352,9 @@
       <MemberSignature Language="C#" Value="protected virtual void RenderItemsList (System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderItemsList(class System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.RenderItemsList(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderItemsList (writer As HtmlMobileTextWriter)" />
+      <MemberSignature Language="F#" Value="abstract member RenderItemsList : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit&#xA;override this.RenderItemsList : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="htmlObjectListAdapter.RenderItemsList writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderItemsList(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -332,6 +376,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool ShouldRenderAsTable ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldRenderAsTable() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.ShouldRenderAsTable" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldRenderAsTable () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ShouldRenderAsTable : unit -&gt; bool&#xA;override this.ShouldRenderAsTable : unit -&gt; bool" Usage="htmlObjectListAdapter.ShouldRenderAsTable " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldRenderAsTable();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -362,9 +409,12 @@
       </Docs>
     </Member>
     <Member MemberName="ShowMore">
-      <MemberSignature Language="C#" Value="protected static readonly string ShowMore;" />
+      <MemberSignature Language="C#" Value="protected internal static readonly string ShowMore;" />
       <MemberSignature Language="ILAsm" Value=".field familyorassembly static initonly string ShowMore" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.ShowMore" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared ReadOnly ShowMore As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ShowMore : string" Usage="System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.ShowMore" />
+      <MemberSignature Language="C++ CLI" Value="protected public: static initonly System::String ^ ShowMore;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -379,9 +429,12 @@
       </Docs>
     </Member>
     <Member MemberName="ShowMoreFormat">
-      <MemberSignature Language="C#" Value="protected static readonly string ShowMoreFormat;" />
+      <MemberSignature Language="C#" Value="protected internal static readonly string ShowMoreFormat;" />
       <MemberSignature Language="ILAsm" Value=".field familyorassembly static initonly string ShowMoreFormat" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.ShowMoreFormat" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Shared ReadOnly ShowMoreFormat As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable ShowMoreFormat : string" Usage="System.Web.UI.MobileControls.Adapters.HtmlObjectListAdapter.ShowMoreFormat" />
+      <MemberSignature Language="C++ CLI" Value="protected public: static initonly System::String ^ ShowMoreFormat;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

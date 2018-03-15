@@ -1,7 +1,10 @@
-<Type Name="PassportIdentity" FullName="System.Web.Security.PassportIdentity">
+﻿<Type Name="PassportIdentity" FullName="System.Web.Security.PassportIdentity">
   <TypeSignature Language="C#" Value="public sealed class PassportIdentity : IDisposable, System.Security.Principal.IIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PassportIdentity extends System.Object implements class System.IDisposable, class System.Security.Principal.IIdentity" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.PassportIdentity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PassportIdentity&#xA;Implements IDisposable, IIdentity" />
+  <TypeSignature Language="F#" Value="type PassportIdentity = class&#xA;    interface IIdentity&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PassportIdentity sealed : IDisposable, System::Security::Principal::IIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,8 @@
       <MemberSignature Language="C#" Value="public PassportIdentity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PassportIdentity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +73,9 @@
       <MemberSignature Language="C#" Value="public string AuthenticationType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AuthenticationType" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.AuthenticationType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationType As String" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationType : string" Usage="System.Web.Security.PassportIdentity.AuthenticationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AuthenticationType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,10 +97,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AuthUrl">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string containing the Login server URL for a member, as well as optional information sent to the Login server in the query string. This class is deprecated.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AuthUrl">
       <MemberSignature Language="C#" Value="public string AuthUrl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Function AuthUrl () As String" />
+      <MemberSignature Language="F#" Value="member this.AuthUrl : unit -&gt; string" Usage="passportIdentity.AuthUrl " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ AuthUrl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -125,6 +145,9 @@
       <MemberSignature Language="C#" Value="public string AuthUrl (string strReturnUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl(string strReturnUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AuthUrl (strReturnUrl As String) As String" />
+      <MemberSignature Language="F#" Value="member this.AuthUrl : string -&gt; string" Usage="passportIdentity.AuthUrl strReturnUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ AuthUrl(System::String ^ strReturnUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -154,6 +177,9 @@
       <MemberSignature Language="C#" Value="public string AuthUrl (string strReturnUrl, int iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int iLangID, string strNameSpace, int iKPP, bool bUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl(string strReturnUrl, int32 iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int32 iLangID, string strNameSpace, int32 iKPP, bool bUseSecureAuth) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl(System.String,System.Int32,System.Boolean,System.String,System.Int32,System.String,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AuthUrl (strReturnUrl As String, iTimeWindow As Integer, fForceLogin As Boolean, strCoBrandedArgs As String, iLangID As Integer, strNameSpace As String, iKPP As Integer, bUseSecureAuth As Boolean) As String" />
+      <MemberSignature Language="F#" Value="member this.AuthUrl : string * int * bool * string * int * string * int * bool -&gt; string" Usage="passportIdentity.AuthUrl (strReturnUrl, iTimeWindow, fForceLogin, strCoBrandedArgs, iLangID, strNameSpace, iKPP, bUseSecureAuth)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ AuthUrl(System::String ^ strReturnUrl, int iTimeWindow, bool fForceLogin, System::String ^ strCoBrandedArgs, int iLangID, System::String ^ strNameSpace, int iKPP, bool bUseSecureAuth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,6 +223,9 @@
       <MemberSignature Language="C#" Value="public string AuthUrl (string strReturnUrl, int iTimeWindow, int iForceLogin, string strCoBrandedArgs, int iLangID, string strNameSpace, int iKPP, int iUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl(string strReturnUrl, int32 iTimeWindow, int32 iForceLogin, string strCoBrandedArgs, int32 iLangID, string strNameSpace, int32 iKPP, int32 iUseSecureAuth) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AuthUrl (strReturnUrl As String, iTimeWindow As Integer, iForceLogin As Integer, strCoBrandedArgs As String, iLangID As Integer, strNameSpace As String, iKPP As Integer, iUseSecureAuth As Integer) As String" />
+      <MemberSignature Language="F#" Value="member this.AuthUrl : string * int * int * string * int * string * int * int -&gt; string" Usage="passportIdentity.AuthUrl (strReturnUrl, iTimeWindow, iForceLogin, strCoBrandedArgs, iLangID, strNameSpace, iKPP, iUseSecureAuth)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ AuthUrl(System::String ^ strReturnUrl, int iTimeWindow, int iForceLogin, System::String ^ strCoBrandedArgs, int iLangID, System::String ^ strNameSpace, int iKPP, int iUseSecureAuth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -236,10 +265,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AuthUrl2">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a string containing the Login server URL for a member, as well as optional information sent to the Login server in the query string. This class is deprecated.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AuthUrl2">
       <MemberSignature Language="C#" Value="public string AuthUrl2 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl2() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl2" />
+      <MemberSignature Language="VB.NET" Value="Public Function AuthUrl2 () As String" />
+      <MemberSignature Language="F#" Value="member this.AuthUrl2 : unit -&gt; string" Usage="passportIdentity.AuthUrl2 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ AuthUrl2();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -272,6 +313,9 @@
       <MemberSignature Language="C#" Value="public string AuthUrl2 (string strReturnUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl2(string strReturnUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl2(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AuthUrl2 (strReturnUrl As String) As String" />
+      <MemberSignature Language="F#" Value="member this.AuthUrl2 : string -&gt; string" Usage="passportIdentity.AuthUrl2 strReturnUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ AuthUrl2(System::String ^ strReturnUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -301,6 +345,9 @@
       <MemberSignature Language="C#" Value="public string AuthUrl2 (string strReturnUrl, int iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int iLangID, string strNameSpace, int iKPP, bool bUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl2(string strReturnUrl, int32 iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int32 iLangID, string strNameSpace, int32 iKPP, bool bUseSecureAuth) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl2(System.String,System.Int32,System.Boolean,System.String,System.Int32,System.String,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AuthUrl2 (strReturnUrl As String, iTimeWindow As Integer, fForceLogin As Boolean, strCoBrandedArgs As String, iLangID As Integer, strNameSpace As String, iKPP As Integer, bUseSecureAuth As Boolean) As String" />
+      <MemberSignature Language="F#" Value="member this.AuthUrl2 : string * int * bool * string * int * string * int * bool -&gt; string" Usage="passportIdentity.AuthUrl2 (strReturnUrl, iTimeWindow, fForceLogin, strCoBrandedArgs, iLangID, strNameSpace, iKPP, bUseSecureAuth)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ AuthUrl2(System::String ^ strReturnUrl, int iTimeWindow, bool fForceLogin, System::String ^ strCoBrandedArgs, int iLangID, System::String ^ strNameSpace, int iKPP, bool bUseSecureAuth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -344,6 +391,9 @@
       <MemberSignature Language="C#" Value="public string AuthUrl2 (string strReturnUrl, int iTimeWindow, int iForceLogin, string strCoBrandedArgs, int iLangID, string strNameSpace, int iKPP, int iUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AuthUrl2(string strReturnUrl, int32 iTimeWindow, int32 iForceLogin, string strCoBrandedArgs, int32 iLangID, string strNameSpace, int32 iKPP, int32 iUseSecureAuth) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.AuthUrl2(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AuthUrl2 (strReturnUrl As String, iTimeWindow As Integer, iForceLogin As Integer, strCoBrandedArgs As String, iLangID As Integer, strNameSpace As String, iKPP As Integer, iUseSecureAuth As Integer) As String" />
+      <MemberSignature Language="F#" Value="member this.AuthUrl2 : string * int * int * string * int * string * int * int -&gt; string" Usage="passportIdentity.AuthUrl2 (strReturnUrl, iTimeWindow, iForceLogin, strCoBrandedArgs, iLangID, strNameSpace, iKPP, iUseSecureAuth)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ AuthUrl2(System::String ^ strReturnUrl, int iTimeWindow, int iForceLogin, System::String ^ strCoBrandedArgs, int iLangID, System::String ^ strNameSpace, int iKPP, int iUseSecureAuth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -387,6 +437,9 @@
       <MemberSignature Language="C#" Value="public static string Compress (string strData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Compress(string strData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.Compress(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compress (strData As String) As String" />
+      <MemberSignature Language="F#" Value="static member Compress : string -&gt; string" Usage="System.Web.Security.PassportIdentity.Compress strData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Compress(System::String ^ strData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -416,6 +469,9 @@
       <MemberSignature Language="C#" Value="public static bool CryptIsValid ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CryptIsValid() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.CryptIsValid" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CryptIsValid () As Boolean" />
+      <MemberSignature Language="F#" Value="static member CryptIsValid : unit -&gt; bool" Usage="System.Web.Security.PassportIdentity.CryptIsValid " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CryptIsValid();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -443,6 +499,9 @@
       <MemberSignature Language="C#" Value="public static int CryptPutHost (string strHost);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CryptPutHost(string strHost) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.CryptPutHost(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CryptPutHost (strHost As String) As Integer" />
+      <MemberSignature Language="F#" Value="static member CryptPutHost : string -&gt; int" Usage="System.Web.Security.PassportIdentity.CryptPutHost strHost" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CryptPutHost(System::String ^ strHost);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -472,6 +531,9 @@
       <MemberSignature Language="C#" Value="public static int CryptPutSite (string strSite);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CryptPutSite(string strSite) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.CryptPutSite(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CryptPutSite (strSite As String) As Integer" />
+      <MemberSignature Language="F#" Value="static member CryptPutSite : string -&gt; int" Usage="System.Web.Security.PassportIdentity.CryptPutSite strSite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CryptPutSite(System::String ^ strSite);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -501,6 +563,9 @@
       <MemberSignature Language="C#" Value="public static string Decompress (string strData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Decompress(string strData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.Decompress(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Decompress (strData As String) As String" />
+      <MemberSignature Language="F#" Value="static member Decompress : string -&gt; string" Usage="System.Web.Security.PassportIdentity.Decompress strData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Decompress(System::String ^ strData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -530,6 +595,9 @@
       <MemberSignature Language="C#" Value="public static string Decrypt (string strData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Decrypt(string strData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.Decrypt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Decrypt (strData As String) As String" />
+      <MemberSignature Language="F#" Value="static member Decrypt : string -&gt; string" Usage="System.Web.Security.PassportIdentity.Decrypt strData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Decrypt(System::String ^ strData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -559,6 +627,9 @@
       <MemberSignature Language="C#" Value="public static string Encrypt (string strData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Encrypt(string strData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.Encrypt(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Encrypt (strData As String) As String" />
+      <MemberSignature Language="F#" Value="static member Encrypt : string -&gt; string" Usage="System.Web.Security.PassportIdentity.Encrypt strData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Encrypt(System::String ^ strData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -588,6 +659,9 @@
       <MemberSignature Language="C#" Value="public int Error { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Error" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.Error" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Error As Integer" />
+      <MemberSignature Language="F#" Value="member this.Error : int" Usage="System.Web.Security.PassportIdentity.Error" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Error { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -613,6 +687,9 @@
       <MemberSignature Language="C#" Value="~PassportIdentity ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="passportIdentity.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!PassportIdentity ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -631,6 +708,9 @@
       <MemberSignature Language="C#" Value="public object GetCurrentConfig (string strAttribute);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetCurrentConfig(string strAttribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetCurrentConfig(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCurrentConfig (strAttribute As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentConfig : string -&gt; obj" Usage="passportIdentity.GetCurrentConfig strAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetCurrentConfig(System::String ^ strAttribute);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -660,6 +740,9 @@
       <MemberSignature Language="C#" Value="public string GetDomainAttribute (string strAttribute, int iLCID, string strDomain);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetDomainAttribute(string strAttribute, int32 iLCID, string strDomain) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetDomainAttribute(System.String,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDomainAttribute (strAttribute As String, iLCID As Integer, strDomain As String) As String" />
+      <MemberSignature Language="F#" Value="member this.GetDomainAttribute : string * int * string -&gt; string" Usage="passportIdentity.GetDomainAttribute (strAttribute, iLCID, strDomain)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetDomainAttribute(System::String ^ strAttribute, int iLCID, System::String ^ strDomain);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -693,6 +776,9 @@
       <MemberSignature Language="C#" Value="public string GetDomainFromMemberName (string strMemberName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetDomainFromMemberName(string strMemberName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetDomainFromMemberName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDomainFromMemberName (strMemberName As String) As String" />
+      <MemberSignature Language="F#" Value="member this.GetDomainFromMemberName : string -&gt; string" Usage="passportIdentity.GetDomainFromMemberName strMemberName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetDomainFromMemberName(System::String ^ strMemberName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -728,6 +814,9 @@
       <MemberSignature Language="C#" Value="public bool GetFromNetworkServer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool GetFromNetworkServer" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.GetFromNetworkServer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GetFromNetworkServer As Boolean" />
+      <MemberSignature Language="F#" Value="member this.GetFromNetworkServer : bool" Usage="System.Web.Security.PassportIdentity.GetFromNetworkServer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GetFromNetworkServer { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -771,6 +860,9 @@
       <MemberSignature Language="C#" Value="public bool GetIsAuthenticated (int iTimeWindow, bool bForceLogin, bool bCheckSecure);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetIsAuthenticated(int32 iTimeWindow, bool bForceLogin, bool bCheckSecure) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetIsAuthenticated(System.Int32,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIsAuthenticated (iTimeWindow As Integer, bForceLogin As Boolean, bCheckSecure As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.GetIsAuthenticated : int * bool * bool -&gt; bool" Usage="passportIdentity.GetIsAuthenticated (iTimeWindow, bForceLogin, bCheckSecure)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetIsAuthenticated(int iTimeWindow, bool bForceLogin, bool bCheckSecure);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -805,6 +897,9 @@
       <MemberSignature Language="C#" Value="public bool GetIsAuthenticated (int iTimeWindow, int iForceLogin, int iCheckSecure);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetIsAuthenticated(int32 iTimeWindow, int32 iForceLogin, int32 iCheckSecure) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetIsAuthenticated(System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetIsAuthenticated (iTimeWindow As Integer, iForceLogin As Integer, iCheckSecure As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.GetIsAuthenticated : int * int * int -&gt; bool" Usage="passportIdentity.GetIsAuthenticated (iTimeWindow, iForceLogin, iCheckSecure)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetIsAuthenticated(int iTimeWindow, int iForceLogin, int iCheckSecure);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -849,10 +944,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetLoginChallenge">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Logs the user on by outputting the appropriate headers to either a 302 redirect URL or the initiation of a Passport-aware client authentication exchange. This class is deprecated.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetLoginChallenge">
       <MemberSignature Language="C#" Value="public string GetLoginChallenge ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetLoginChallenge() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetLoginChallenge" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLoginChallenge () As String" />
+      <MemberSignature Language="F#" Value="member this.GetLoginChallenge : unit -&gt; string" Usage="passportIdentity.GetLoginChallenge " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetLoginChallenge();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -879,6 +986,9 @@
       <MemberSignature Language="C#" Value="public string GetLoginChallenge (string strReturnUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetLoginChallenge(string strReturnUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetLoginChallenge(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLoginChallenge (strReturnUrl As String) As String" />
+      <MemberSignature Language="F#" Value="member this.GetLoginChallenge : string -&gt; string" Usage="passportIdentity.GetLoginChallenge strReturnUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetLoginChallenge(System::String ^ strReturnUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -908,6 +1018,9 @@
       <MemberSignature Language="C#" Value="public string GetLoginChallenge (string szRetURL, int iTimeWindow, int fForceLogin, string szCOBrandArgs, int iLangID, string strNameSpace, int iKPP, int iUseSecureAuth, object oExtraParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetLoginChallenge(string szRetURL, int32 iTimeWindow, int32 fForceLogin, string szCOBrandArgs, int32 iLangID, string strNameSpace, int32 iKPP, int32 iUseSecureAuth, object oExtraParams) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetLoginChallenge(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLoginChallenge (szRetURL As String, iTimeWindow As Integer, fForceLogin As Integer, szCOBrandArgs As String, iLangID As Integer, strNameSpace As String, iKPP As Integer, iUseSecureAuth As Integer, oExtraParams As Object) As String" />
+      <MemberSignature Language="F#" Value="member this.GetLoginChallenge : string * int * int * string * int * string * int * int * obj -&gt; string" Usage="passportIdentity.GetLoginChallenge (szRetURL, iTimeWindow, fForceLogin, szCOBrandArgs, iLangID, strNameSpace, iKPP, iUseSecureAuth, oExtraParams)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetLoginChallenge(System::String ^ szRetURL, int iTimeWindow, int fForceLogin, System::String ^ szCOBrandArgs, int iLangID, System::String ^ strNameSpace, int iKPP, int iUseSecureAuth, System::Object ^ oExtraParams);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -953,6 +1066,9 @@
       <MemberSignature Language="C#" Value="public object GetOption (string strOpt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetOption(string strOpt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetOption(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOption (strOpt As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetOption : string -&gt; obj" Usage="passportIdentity.GetOption strOpt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetOption(System::String ^ strOpt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -982,6 +1098,9 @@
       <MemberSignature Language="C#" Value="public object GetProfileObject (string strProfileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetProfileObject(string strProfileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.GetProfileObject(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetProfileObject (strProfileName As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.GetProfileObject : string -&gt; obj" Usage="passportIdentity.GetProfileObject strProfileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetProfileObject(System::String ^ strProfileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1011,6 +1130,9 @@
       <MemberSignature Language="C#" Value="public bool HasFlag (int iFlagMask);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasFlag(int32 iFlagMask) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.HasFlag(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasFlag (iFlagMask As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasFlag : int -&gt; bool" Usage="passportIdentity.HasFlag iFlagMask" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasFlag(int iFlagMask);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1041,6 +1163,9 @@
       <MemberSignature Language="C#" Value="public bool HasProfile (string strProfile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasProfile(string strProfile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.HasProfile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasProfile (strProfile As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasProfile : string -&gt; bool" Usage="passportIdentity.HasProfile strProfile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasProfile(System::String ^ strProfile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1081,6 +1206,9 @@
       <MemberSignature Language="C#" Value="public bool HasSavedPassword { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasSavedPassword" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.HasSavedPassword" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasSavedPassword As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasSavedPassword : bool" Usage="System.Web.Security.PassportIdentity.HasSavedPassword" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasSavedPassword { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1113,6 +1241,9 @@
       <MemberSignature Language="C#" Value="public bool HasTicket { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasTicket" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.HasTicket" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasTicket As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasTicket : bool" Usage="System.Web.Security.PassportIdentity.HasTicket" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasTicket { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1147,6 +1278,9 @@
       <MemberSignature Language="C#" Value="public bool HaveConsent (bool bNeedFullConsent, bool bNeedBirthdate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HaveConsent(bool bNeedFullConsent, bool bNeedBirthdate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.HaveConsent(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HaveConsent (bNeedFullConsent As Boolean, bNeedBirthdate As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HaveConsent : bool * bool -&gt; bool" Usage="passportIdentity.HaveConsent (bNeedFullConsent, bNeedBirthdate)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HaveConsent(bool bNeedFullConsent, bool bNeedBirthdate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1181,6 +1315,9 @@
       <MemberSignature Language="C#" Value="public string HexPUID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HexPUID" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.HexPUID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HexPUID As String" />
+      <MemberSignature Language="F#" Value="member this.HexPUID : string" Usage="System.Web.Security.PassportIdentity.HexPUID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HexPUID { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1206,6 +1343,9 @@
       <MemberSignature Language="C#" Value="public bool IsAuthenticated { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAuthenticated" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.IsAuthenticated" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAuthenticated As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAuthenticated : bool" Usage="System.Web.Security.PassportIdentity.IsAuthenticated" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAuthenticated { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1238,6 +1378,9 @@
       <MemberSignature Language="C#" Value="public string this[string strProfileName] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(strProfileName As String) As String" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string" Usage="System.Web.Security.PassportIdentity.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ strProfileName); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1284,6 +1427,9 @@
       <MemberSignature Language="C#" Value="public int LoginUser ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LoginUser() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LoginUser" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoginUser () As Integer" />
+      <MemberSignature Language="F#" Value="member this.LoginUser : unit -&gt; int" Usage="passportIdentity.LoginUser " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LoginUser();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1310,6 +1456,9 @@
       <MemberSignature Language="C#" Value="public int LoginUser (string strReturnUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LoginUser(string strReturnUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LoginUser(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoginUser (strReturnUrl As String) As Integer" />
+      <MemberSignature Language="F#" Value="member this.LoginUser : string -&gt; int" Usage="passportIdentity.LoginUser strReturnUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LoginUser(System::String ^ strReturnUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1339,6 +1488,9 @@
       <MemberSignature Language="C#" Value="public int LoginUser (string szRetURL, int iTimeWindow, bool fForceLogin, string szCOBrandArgs, int iLangID, string strNameSpace, int iKPP, bool fUseSecureAuth, object oExtraParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LoginUser(string szRetURL, int32 iTimeWindow, bool fForceLogin, string szCOBrandArgs, int32 iLangID, string strNameSpace, int32 iKPP, bool fUseSecureAuth, object oExtraParams) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LoginUser(System.String,System.Int32,System.Boolean,System.String,System.Int32,System.String,System.Int32,System.Boolean,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoginUser (szRetURL As String, iTimeWindow As Integer, fForceLogin As Boolean, szCOBrandArgs As String, iLangID As Integer, strNameSpace As String, iKPP As Integer, fUseSecureAuth As Boolean, oExtraParams As Object) As Integer" />
+      <MemberSignature Language="F#" Value="member this.LoginUser : string * int * bool * string * int * string * int * bool * obj -&gt; int" Usage="passportIdentity.LoginUser (szRetURL, iTimeWindow, fForceLogin, szCOBrandArgs, iLangID, strNameSpace, iKPP, fUseSecureAuth, oExtraParams)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LoginUser(System::String ^ szRetURL, int iTimeWindow, bool fForceLogin, System::String ^ szCOBrandArgs, int iLangID, System::String ^ strNameSpace, int iKPP, bool fUseSecureAuth, System::Object ^ oExtraParams);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1393,6 +1545,9 @@
       <MemberSignature Language="C#" Value="public int LoginUser (string szRetURL, int iTimeWindow, int fForceLogin, string szCOBrandArgs, int iLangID, string strNameSpace, int iKPP, int iUseSecureAuth, object oExtraParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 LoginUser(string szRetURL, int32 iTimeWindow, int32 fForceLogin, string szCOBrandArgs, int32 iLangID, string strNameSpace, int32 iKPP, int32 iUseSecureAuth, object oExtraParams) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LoginUser(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoginUser (szRetURL As String, iTimeWindow As Integer, fForceLogin As Integer, szCOBrandArgs As String, iLangID As Integer, strNameSpace As String, iKPP As Integer, iUseSecureAuth As Integer, oExtraParams As Object) As Integer" />
+      <MemberSignature Language="F#" Value="member this.LoginUser : string * int * int * string * int * string * int * int * obj -&gt; int" Usage="passportIdentity.LoginUser (szRetURL, iTimeWindow, fForceLogin, szCOBrandArgs, iLangID, strNameSpace, iKPP, iUseSecureAuth, oExtraParams)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int LoginUser(System::String ^ szRetURL, int iTimeWindow, int fForceLogin, System::String ^ szCOBrandArgs, int iLangID, System::String ^ strNameSpace, int iKPP, int iUseSecureAuth, System::Object ^ oExtraParams);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1455,6 +1610,9 @@
       <MemberSignature Language="C#" Value="public string LogoTag ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag" />
+      <MemberSignature Language="VB.NET" Value="Public Function LogoTag () As String" />
+      <MemberSignature Language="F#" Value="member this.LogoTag : unit -&gt; string" Usage="passportIdentity.LogoTag " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LogoTag();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1487,6 +1645,9 @@
       <MemberSignature Language="C#" Value="public string LogoTag (string strReturnUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag(string strReturnUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LogoTag (strReturnUrl As String) As String" />
+      <MemberSignature Language="F#" Value="member this.LogoTag : string -&gt; string" Usage="passportIdentity.LogoTag strReturnUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LogoTag(System::String ^ strReturnUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1516,6 +1677,9 @@
       <MemberSignature Language="C#" Value="public string LogoTag (string strReturnUrl, int iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int iLangID, bool fSecure, string strNameSpace, int iKPP, bool bUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag(string strReturnUrl, int32 iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int32 iLangID, bool fSecure, string strNameSpace, int32 iKPP, bool bUseSecureAuth) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag(System.String,System.Int32,System.Boolean,System.String,System.Int32,System.Boolean,System.String,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LogoTag (strReturnUrl As String, iTimeWindow As Integer, fForceLogin As Boolean, strCoBrandedArgs As String, iLangID As Integer, fSecure As Boolean, strNameSpace As String, iKPP As Integer, bUseSecureAuth As Boolean) As String" />
+      <MemberSignature Language="F#" Value="member this.LogoTag : string * int * bool * string * int * bool * string * int * bool -&gt; string" Usage="passportIdentity.LogoTag (strReturnUrl, iTimeWindow, fForceLogin, strCoBrandedArgs, iLangID, fSecure, strNameSpace, iKPP, bUseSecureAuth)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LogoTag(System::String ^ strReturnUrl, int iTimeWindow, bool fForceLogin, System::String ^ strCoBrandedArgs, int iLangID, bool fSecure, System::String ^ strNameSpace, int iKPP, bool bUseSecureAuth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1561,6 +1725,9 @@
       <MemberSignature Language="C#" Value="public string LogoTag (string strReturnUrl, int iTimeWindow, int iForceLogin, string strCoBrandedArgs, int iLangID, int iSecure, string strNameSpace, int iKPP, int iUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag(string strReturnUrl, int32 iTimeWindow, int32 iForceLogin, string strCoBrandedArgs, int32 iLangID, int32 iSecure, string strNameSpace, int32 iKPP, int32 iUseSecureAuth) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag(System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LogoTag (strReturnUrl As String, iTimeWindow As Integer, iForceLogin As Integer, strCoBrandedArgs As String, iLangID As Integer, iSecure As Integer, strNameSpace As String, iKPP As Integer, iUseSecureAuth As Integer) As String" />
+      <MemberSignature Language="F#" Value="member this.LogoTag : string * int * int * string * int * int * string * int * int -&gt; string" Usage="passportIdentity.LogoTag (strReturnUrl, iTimeWindow, iForceLogin, strCoBrandedArgs, iLangID, iSecure, strNameSpace, iKPP, iUseSecureAuth)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LogoTag(System::String ^ strReturnUrl, int iTimeWindow, int iForceLogin, System::String ^ strCoBrandedArgs, int iLangID, int iSecure, System::String ^ strNameSpace, int iKPP, int iUseSecureAuth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1623,6 +1790,9 @@
       <MemberSignature Language="C#" Value="public string LogoTag2 ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag2() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag2" />
+      <MemberSignature Language="VB.NET" Value="Public Function LogoTag2 () As String" />
+      <MemberSignature Language="F#" Value="member this.LogoTag2 : unit -&gt; string" Usage="passportIdentity.LogoTag2 " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LogoTag2();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1655,6 +1825,9 @@
       <MemberSignature Language="C#" Value="public string LogoTag2 (string strReturnUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag2(string strReturnUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag2(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LogoTag2 (strReturnUrl As String) As String" />
+      <MemberSignature Language="F#" Value="member this.LogoTag2 : string -&gt; string" Usage="passportIdentity.LogoTag2 strReturnUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LogoTag2(System::String ^ strReturnUrl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1684,6 +1857,9 @@
       <MemberSignature Language="C#" Value="public string LogoTag2 (string strReturnUrl, int iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int iLangID, bool fSecure, string strNameSpace, int iKPP, bool bUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag2(string strReturnUrl, int32 iTimeWindow, bool fForceLogin, string strCoBrandedArgs, int32 iLangID, bool fSecure, string strNameSpace, int32 iKPP, bool bUseSecureAuth) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag2(System.String,System.Int32,System.Boolean,System.String,System.Int32,System.Boolean,System.String,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LogoTag2 (strReturnUrl As String, iTimeWindow As Integer, fForceLogin As Boolean, strCoBrandedArgs As String, iLangID As Integer, fSecure As Boolean, strNameSpace As String, iKPP As Integer, bUseSecureAuth As Boolean) As String" />
+      <MemberSignature Language="F#" Value="member this.LogoTag2 : string * int * bool * string * int * bool * string * int * bool -&gt; string" Usage="passportIdentity.LogoTag2 (strReturnUrl, iTimeWindow, fForceLogin, strCoBrandedArgs, iLangID, fSecure, strNameSpace, iKPP, bUseSecureAuth)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LogoTag2(System::String ^ strReturnUrl, int iTimeWindow, bool fForceLogin, System::String ^ strCoBrandedArgs, int iLangID, bool fSecure, System::String ^ strNameSpace, int iKPP, bool bUseSecureAuth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1729,6 +1905,9 @@
       <MemberSignature Language="C#" Value="public string LogoTag2 (string strReturnUrl, int iTimeWindow, int iForceLogin, string strCoBrandedArgs, int iLangID, int iSecure, string strNameSpace, int iKPP, int iUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoTag2(string strReturnUrl, int32 iTimeWindow, int32 iForceLogin, string strCoBrandedArgs, int32 iLangID, int32 iSecure, string strNameSpace, int32 iKPP, int32 iUseSecureAuth) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoTag2(System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LogoTag2 (strReturnUrl As String, iTimeWindow As Integer, iForceLogin As Integer, strCoBrandedArgs As String, iLangID As Integer, iSecure As Integer, strNameSpace As String, iKPP As Integer, iUseSecureAuth As Integer) As String" />
+      <MemberSignature Language="F#" Value="member this.LogoTag2 : string * int * int * string * int * int * string * int * int -&gt; string" Usage="passportIdentity.LogoTag2 (strReturnUrl, iTimeWindow, iForceLogin, strCoBrandedArgs, iLangID, iSecure, strNameSpace, iKPP, iUseSecureAuth)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LogoTag2(System::String ^ strReturnUrl, int iTimeWindow, int iForceLogin, System::String ^ strCoBrandedArgs, int iLangID, int iSecure, System::String ^ strNameSpace, int iKPP, int iUseSecureAuth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1791,6 +1970,9 @@
       <MemberSignature Language="C#" Value="public string LogoutURL ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoutURL() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoutURL" />
+      <MemberSignature Language="VB.NET" Value="Public Function LogoutURL () As String" />
+      <MemberSignature Language="F#" Value="member this.LogoutURL : unit -&gt; string" Usage="passportIdentity.LogoutURL " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LogoutURL();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1817,6 +1999,9 @@
       <MemberSignature Language="C#" Value="public string LogoutURL (string szReturnURL, string szCOBrandArgs, int iLangID, string strDomain, int iUseSecureAuth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string LogoutURL(string szReturnURL, string szCOBrandArgs, int32 iLangID, string strDomain, int32 iUseSecureAuth) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.LogoutURL(System.String,System.String,System.Int32,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LogoutURL (szReturnURL As String, szCOBrandArgs As String, iLangID As Integer, strDomain As String, iUseSecureAuth As Integer) As String" />
+      <MemberSignature Language="F#" Value="member this.LogoutURL : string * string * int * string * int -&gt; string" Usage="passportIdentity.LogoutURL (szReturnURL, szCOBrandArgs, iLangID, strDomain, iUseSecureAuth)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ LogoutURL(System::String ^ szReturnURL, System::String ^ szCOBrandArgs, int iLangID, System::String ^ strDomain, int iUseSecureAuth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1854,6 +2039,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.Security.PassportIdentity.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1885,6 +2073,9 @@
       <MemberSignature Language="C#" Value="public void SetOption (string strOpt, object vOpt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetOption(string strOpt, object vOpt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.SetOption(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetOption (strOpt As String, vOpt As Object)" />
+      <MemberSignature Language="F#" Value="member this.SetOption : string * obj -&gt; unit" Usage="passportIdentity.SetOption (strOpt, vOpt)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetOption(System::String ^ strOpt, System::Object ^ vOpt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1915,6 +2106,9 @@
       <MemberSignature Language="C#" Value="public static void SignOut (string strSignOutDotGifFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SignOut(string strSignOutDotGifFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.SignOut(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SignOut (strSignOutDotGifFileName As String)" />
+      <MemberSignature Language="F#" Value="static member SignOut : string -&gt; unit" Usage="System.Web.Security.PassportIdentity.SignOut strSignOutDotGifFileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SignOut(System::String ^ strSignOutDotGifFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1949,7 +2143,12 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1974,6 +2173,9 @@
       <MemberSignature Language="C#" Value="public object Ticket (string strAttribute);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object Ticket(string strAttribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.PassportIdentity.Ticket(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Ticket (strAttribute As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Ticket : string -&gt; obj" Usage="passportIdentity.Ticket strAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ Ticket(System::String ^ strAttribute);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2003,6 +2205,9 @@
       <MemberSignature Language="C#" Value="public int TicketAge { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TicketAge" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.TicketAge" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TicketAge As Integer" />
+      <MemberSignature Language="F#" Value="member this.TicketAge : int" Usage="System.Web.Security.PassportIdentity.TicketAge" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TicketAge { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2034,6 +2239,9 @@
       <MemberSignature Language="C#" Value="public int TimeSinceSignIn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TimeSinceSignIn" />
       <MemberSignature Language="DocId" Value="P:System.Web.Security.PassportIdentity.TimeSinceSignIn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeSinceSignIn As Integer" />
+      <MemberSignature Language="F#" Value="member this.TimeSinceSignIn : int" Usage="System.Web.Security.PassportIdentity.TimeSinceSignIn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TimeSinceSignIn { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2061,32 +2269,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AuthUrl2">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a string containing the Login server URL for a member, as well as optional information sent to the Login server in the query string. This class is deprecated.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AuthUrl">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a string containing the Login server URL for a member, as well as optional information sent to the Login server in the query string. This class is deprecated.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetLoginChallenge">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Logs the user on by outputting the appropriate headers to either a 302 redirect URL or the initiation of a Passport-aware client authentication exchange. This class is deprecated.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="TranslateTransform3D" FullName="System.Windows.Media.Media3D.TranslateTransform3D">
+﻿<Type Name="TranslateTransform3D" FullName="System.Windows.Media.Media3D.TranslateTransform3D">
   <TypeSignature Language="C#" Value="public sealed class TranslateTransform3D : System.Windows.Media.Media3D.AffineTransform3D" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TranslateTransform3D extends System.Windows.Media.Media3D.AffineTransform3D" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.TranslateTransform3D" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TranslateTransform3D&#xA;Inherits AffineTransform3D" />
+  <TypeSignature Language="F#" Value="type TranslateTransform3D = class&#xA;    inherit AffineTransform3D" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TranslateTransform3D sealed : System::Windows::Media::Media3D::AffineTransform3D" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.TranslateTransform3D" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TranslateTransform3D ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.TranslateTransform3D.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TranslateTransform3D();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -34,6 +48,9 @@
       <MemberSignature Language="C#" Value="public TranslateTransform3D (System.Windows.Media.Media3D.Vector3D offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Vector3D offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.TranslateTransform3D.#ctor(System.Windows.Media.Media3D.Vector3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (offset As Vector3D)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.TranslateTransform3D : System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.TranslateTransform3D" Usage="new System.Windows.Media.Media3D.TranslateTransform3D offset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TranslateTransform3D(System::Windows::Media::Media3D::Vector3D offset);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +80,9 @@
       <MemberSignature Language="C#" Value="public TranslateTransform3D (double offsetX, double offsetY, double offsetZ);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 offsetX, float64 offsetY, float64 offsetZ) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.TranslateTransform3D.#ctor(System.Double,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (offsetX As Double, offsetY As Double, offsetZ As Double)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.TranslateTransform3D : double * double * double -&gt; System.Windows.Media.Media3D.TranslateTransform3D" Usage="new System.Windows.Media.Media3D.TranslateTransform3D (offsetX, offsetY, offsetZ)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TranslateTransform3D(double offsetX, double offsetY, double offsetZ);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +105,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.TranslateTransform3D Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.TranslateTransform3D Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.TranslateTransform3D.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As TranslateTransform3D" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Media3D.TranslateTransform3D" Usage="translateTransform3D.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::TranslateTransform3D ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -113,6 +136,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.TranslateTransform3D CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Media3D.TranslateTransform3D CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.TranslateTransform3D.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As TranslateTransform3D" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Media3D.TranslateTransform3D" Usage="translateTransform3D.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::TranslateTransform3D ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -141,6 +167,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.TranslateTransform3D.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="translateTransform3D.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -160,6 +189,9 @@
       <MemberSignature Language="C#" Value="public double OffsetX { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 OffsetX" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.TranslateTransform3D.OffsetX" />
+      <MemberSignature Language="VB.NET" Value="Public Property OffsetX As Double" />
+      <MemberSignature Language="F#" Value="member this.OffsetX : double with get, set" Usage="System.Windows.Media.Media3D.TranslateTransform3D.OffsetX" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OffsetX { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -199,6 +231,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OffsetXProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OffsetXProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.TranslateTransform3D.OffsetXProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OffsetXProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable OffsetXProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.TranslateTransform3D.OffsetXProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OffsetXProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -216,6 +251,9 @@
       <MemberSignature Language="C#" Value="public double OffsetY { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 OffsetY" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.TranslateTransform3D.OffsetY" />
+      <MemberSignature Language="VB.NET" Value="Public Property OffsetY As Double" />
+      <MemberSignature Language="F#" Value="member this.OffsetY : double with get, set" Usage="System.Windows.Media.Media3D.TranslateTransform3D.OffsetY" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OffsetY { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -255,6 +293,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OffsetYProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OffsetYProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.TranslateTransform3D.OffsetYProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OffsetYProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable OffsetYProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.TranslateTransform3D.OffsetYProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OffsetYProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -272,6 +313,9 @@
       <MemberSignature Language="C#" Value="public double OffsetZ { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 OffsetZ" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.TranslateTransform3D.OffsetZ" />
+      <MemberSignature Language="VB.NET" Value="Public Property OffsetZ As Double" />
+      <MemberSignature Language="F#" Value="member this.OffsetZ : double with get, set" Usage="System.Windows.Media.Media3D.TranslateTransform3D.OffsetZ" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OffsetZ { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -311,6 +355,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty OffsetZProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty OffsetZProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Media3D.TranslateTransform3D.OffsetZProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly OffsetZProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable OffsetZProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Media3D.TranslateTransform3D.OffsetZProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ OffsetZProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -328,6 +375,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Media.Media3D.Matrix3D Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Media3D.Matrix3D Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.TranslateTransform3D.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As Matrix3D" />
+      <MemberSignature Language="F#" Value="member this.Value : System.Windows.Media.Media3D.Matrix3D" Usage="System.Windows.Media.Media3D.TranslateTransform3D.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Media3D::Matrix3D Value { System::Windows::Media::Media3D::Matrix3D get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -342,14 +392,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Media3D.TranslateTransform3D" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

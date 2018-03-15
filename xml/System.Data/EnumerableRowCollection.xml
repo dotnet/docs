@@ -1,7 +1,10 @@
-<Type Name="EnumerableRowCollection" FullName="System.Data.EnumerableRowCollection">
+﻿<Type Name="EnumerableRowCollection" FullName="System.Data.EnumerableRowCollection">
   <TypeSignature Language="C#" Value="public abstract class EnumerableRowCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EnumerableRowCollection extends System.Object implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Data.EnumerableRowCollection" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class EnumerableRowCollection&#xA;Implements IEnumerable" />
+  <TypeSignature Language="F#" Value="type EnumerableRowCollection = class&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EnumerableRowCollection abstract : System::Collections::IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,7 +38,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EnumerableRowCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.DataSetExtensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

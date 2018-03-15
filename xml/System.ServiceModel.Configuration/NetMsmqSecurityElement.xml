@@ -1,7 +1,10 @@
-<Type Name="NetMsmqSecurityElement" FullName="System.ServiceModel.Configuration.NetMsmqSecurityElement">
+﻿<Type Name="NetMsmqSecurityElement" FullName="System.ServiceModel.Configuration.NetMsmqSecurityElement">
   <TypeSignature Language="C#" Value="public sealed class NetMsmqSecurityElement : System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NetMsmqSecurityElement extends System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetMsmqSecurityElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetMsmqSecurityElement&#xA;Inherits ServiceModelConfigurationElement" />
+  <TypeSignature Language="F#" Value="type NetMsmqSecurityElement = class&#xA;    inherit ServiceModelConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetMsmqSecurityElement sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public NetMsmqSecurityElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetMsmqSecurityElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetMsmqSecurityElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.MessageSecurityOverMsmqElement Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.MessageSecurityOverMsmqElement Message" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetMsmqSecurityElement.Message" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As MessageSecurityOverMsmqElement" />
+      <MemberSignature Language="F#" Value="member this.Message : System.ServiceModel.Configuration.MessageSecurityOverMsmqElement" Usage="System.ServiceModel.Configuration.NetMsmqSecurityElement.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::MessageSecurityOverMsmqElement ^ Message { System::ServiceModel::Configuration::MessageSecurityOverMsmqElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +80,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.NetMsmqSecurityMode Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.NetMsmqSecurityMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetMsmqSecurityElement.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As NetMsmqSecurityMode" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.NetMsmqSecurityMode with get, set" Usage="System.ServiceModel.Configuration.NetMsmqSecurityElement.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::NetMsmqSecurityMode Mode { System::ServiceModel::NetMsmqSecurityMode get(); void set(System::ServiceModel::NetMsmqSecurityMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -110,6 +121,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetMsmqSecurityElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.NetMsmqSecurityElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -128,6 +142,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.MsmqTransportSecurityElement Transport { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.MsmqTransportSecurityElement Transport" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetMsmqSecurityElement.Transport" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transport As MsmqTransportSecurityElement" />
+      <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.Configuration.MsmqTransportSecurityElement" Usage="System.ServiceModel.Configuration.NetMsmqSecurityElement.Transport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::MsmqTransportSecurityElement ^ Transport { System::ServiceModel::Configuration::MsmqTransportSecurityElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

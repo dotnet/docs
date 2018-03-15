@@ -1,7 +1,10 @@
-<Type Name="ActivityCondition" FullName="System.Workflow.ComponentModel.ActivityCondition">
+﻿<Type Name="ActivityCondition" FullName="System.Workflow.ComponentModel.ActivityCondition">
   <TypeSignature Language="C#" Value="public abstract class ActivityCondition : System.Workflow.ComponentModel.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ActivityCondition extends System.Workflow.ComponentModel.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.ActivityCondition" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ActivityCondition&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="F#" Value="type ActivityCondition = class&#xA;    inherit DependencyObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityCondition abstract : System::Workflow::ComponentModel::DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +60,8 @@
       <MemberSignature Language="C#" Value="protected ActivityCondition ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCondition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ActivityCondition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -72,6 +77,8 @@
       <MemberSignature Language="C#" Value="public abstract bool Evaluate (System.Workflow.ComponentModel.Activity activity, IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Evaluate(class System.Workflow.ComponentModel.Activity activity, class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.ActivityCondition.Evaluate(System.Workflow.ComponentModel.Activity,System.IServiceProvider)" />
+      <MemberSignature Language="F#" Value="abstract member Evaluate : System.Workflow.ComponentModel.Activity * IServiceProvider -&gt; bool" Usage="activityCondition.Evaluate (activity, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Evaluate(System::Workflow::ComponentModel::Activity ^ activity, IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

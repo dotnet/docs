@@ -1,7 +1,10 @@
-<Type Name="ParameterMode" FullName="System.Data.Metadata.Edm.ParameterMode">
+﻿<Type Name="ParameterMode" FullName="System.Data.Metadata.Edm.ParameterMode">
   <TypeSignature Language="C#" Value="public enum ParameterMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ParameterMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.ParameterMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ParameterMode" />
+  <TypeSignature Language="F#" Value="type ParameterMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ParameterMode" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="In" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.ParameterMode In = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ParameterMode.In" />
+      <MemberSignature Language="VB.NET" Value="In" />
+      <MemberSignature Language="F#" Value="In = 0" Usage="System.Data.Metadata.Edm.ParameterMode.In" />
+      <MemberSignature Language="C++ CLI" Value="In" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.ParameterMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An input parameter.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="InOut" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.ParameterMode InOut = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ParameterMode.InOut" />
+      <MemberSignature Language="VB.NET" Value="InOut" />
+      <MemberSignature Language="F#" Value="InOut = 2" Usage="System.Data.Metadata.Edm.ParameterMode.InOut" />
+      <MemberSignature Language="C++ CLI" Value="InOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.ParameterMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Both an input and an output parameter.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="Out" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.ParameterMode Out = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ParameterMode.Out" />
+      <MemberSignature Language="VB.NET" Value="Out" />
+      <MemberSignature Language="F#" Value="Out = 1" Usage="System.Data.Metadata.Edm.ParameterMode.Out" />
+      <MemberSignature Language="C++ CLI" Value="Out" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.ParameterMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An output parameter.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="ReturnValue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.ParameterMode ReturnValue = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.ParameterMode.ReturnValue" />
+      <MemberSignature Language="VB.NET" Value="ReturnValue" />
+      <MemberSignature Language="F#" Value="ReturnValue = 3" Usage="System.Data.Metadata.Edm.ParameterMode.ReturnValue" />
+      <MemberSignature Language="C++ CLI" Value="ReturnValue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.ParameterMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A return value of the method.</summary>
       </Docs>

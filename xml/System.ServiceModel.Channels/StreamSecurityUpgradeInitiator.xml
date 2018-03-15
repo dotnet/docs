@@ -1,7 +1,10 @@
-<Type Name="StreamSecurityUpgradeInitiator" FullName="System.ServiceModel.Channels.StreamSecurityUpgradeInitiator">
+﻿<Type Name="StreamSecurityUpgradeInitiator" FullName="System.ServiceModel.Channels.StreamSecurityUpgradeInitiator">
   <TypeSignature Language="C#" Value="public abstract class StreamSecurityUpgradeInitiator : System.ServiceModel.Channels.StreamUpgradeInitiator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit StreamSecurityUpgradeInitiator extends System.ServiceModel.Channels.StreamUpgradeInitiator" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class StreamSecurityUpgradeInitiator&#xA;Inherits StreamUpgradeInitiator" />
+  <TypeSignature Language="F#" Value="type StreamSecurityUpgradeInitiator = class&#xA;    inherit StreamUpgradeInitiator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StreamSecurityUpgradeInitiator abstract : System::ServiceModel::Channels::StreamUpgradeInitiator" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,8 @@
       <MemberSignature Language="C#" Value="protected StreamSecurityUpgradeInitiator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; StreamSecurityUpgradeInitiator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +48,9 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Security.SecurityMessageProperty GetRemoteSecurity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.Security.SecurityMessageProperty GetRemoteSecurity() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamSecurityUpgradeInitiator.GetRemoteSecurity" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetRemoteSecurity () As SecurityMessageProperty" />
+      <MemberSignature Language="F#" Value="abstract member GetRemoteSecurity : unit -&gt; System.ServiceModel.Security.SecurityMessageProperty" Usage="streamSecurityUpgradeInitiator.GetRemoteSecurity " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::Security::SecurityMessageProperty ^ GetRemoteSecurity();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

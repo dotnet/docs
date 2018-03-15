@@ -1,7 +1,10 @@
-<Type Name="DataGridViewColumnSortMode" FullName="System.Windows.Forms.DataGridViewColumnSortMode">
+﻿<Type Name="DataGridViewColumnSortMode" FullName="System.Windows.Forms.DataGridViewColumnSortMode">
   <TypeSignature Language="C#" Value="public enum DataGridViewColumnSortMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewColumnSortMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnSortMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewColumnSortMode" />
+  <TypeSignature Language="F#" Value="type DataGridViewColumnSortMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewColumnSortMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="Automatic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewColumnSortMode Automatic = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewColumnSortMode.Automatic" />
+      <MemberSignature Language="VB.NET" Value="Automatic" />
+      <MemberSignature Language="F#" Value="Automatic = 1" Usage="System.Windows.Forms.DataGridViewColumnSortMode.Automatic" />
+      <MemberSignature Language="C++ CLI" Value="Automatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewColumnSortMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The user can sort the column by clicking the column header (or pressing F3 on a cell) unless the column headers are used for selection. A sorting glyph will be displayed automatically.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="NotSortable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewColumnSortMode NotSortable = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable" />
+      <MemberSignature Language="VB.NET" Value="NotSortable" />
+      <MemberSignature Language="F#" Value="NotSortable = 0" Usage="System.Windows.Forms.DataGridViewColumnSortMode.NotSortable" />
+      <MemberSignature Language="C++ CLI" Value="NotSortable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewColumnSortMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The column can only be sorted programmatically, but it is not intended for sorting, so the column header will not include space for a sorting glyph.</summary>
       </Docs>
@@ -70,6 +81,9 @@
       <MemberSignature Language="C#" Value="Programmatic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewColumnSortMode Programmatic = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewColumnSortMode.Programmatic" />
+      <MemberSignature Language="VB.NET" Value="Programmatic" />
+      <MemberSignature Language="F#" Value="Programmatic = 2" Usage="System.Windows.Forms.DataGridViewColumnSortMode.Programmatic" />
+      <MemberSignature Language="C++ CLI" Value="Programmatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewColumnSortMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The column can only be sorted programmatically, and the column header will include space for a sorting glyph.</summary>
       </Docs>

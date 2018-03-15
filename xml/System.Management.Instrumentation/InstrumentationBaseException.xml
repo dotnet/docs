@@ -1,7 +1,10 @@
-<Type Name="InstrumentationBaseException" FullName="System.Management.Instrumentation.InstrumentationBaseException">
+﻿<Type Name="InstrumentationBaseException" FullName="System.Management.Instrumentation.InstrumentationBaseException">
   <TypeSignature Language="C#" Value="public class InstrumentationBaseException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit InstrumentationBaseException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.InstrumentationBaseException" />
+  <TypeSignature Language="VB.NET" Value="Public Class InstrumentationBaseException&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type InstrumentationBaseException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InstrumentationBaseException : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,10 +20,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.InstrumentationBaseException" />. This is the default constructor.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InstrumentationBaseException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.InstrumentationBaseException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstrumentationBaseException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -36,6 +50,9 @@
       <MemberSignature Language="C#" Value="public InstrumentationBaseException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.InstrumentationBaseException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Management.Instrumentation.InstrumentationBaseException : string -&gt; System.Management.Instrumentation.InstrumentationBaseException" Usage="new System.Management.Instrumentation.InstrumentationBaseException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstrumentationBaseException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -54,6 +71,9 @@
       <MemberSignature Language="C#" Value="protected InstrumentationBaseException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.InstrumentationBaseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Management.Instrumentation.InstrumentationBaseException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Management.Instrumentation.InstrumentationBaseException" Usage="new System.Management.Instrumentation.InstrumentationBaseException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InstrumentationBaseException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -74,6 +94,9 @@
       <MemberSignature Language="C#" Value="public InstrumentationBaseException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.InstrumentationBaseException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Management.Instrumentation.InstrumentationBaseException : string * Exception -&gt; System.Management.Instrumentation.InstrumentationBaseException" Usage="new System.Management.Instrumentation.InstrumentationBaseException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InstrumentationBaseException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -90,14 +113,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.Instrumentation.InstrumentationBaseException" />. This is the default constructor.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

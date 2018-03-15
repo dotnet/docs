@@ -1,7 +1,10 @@
-<Type Name="SqlServices" FullName="System.Web.Management.SqlServices">
+﻿<Type Name="SqlServices" FullName="System.Web.Management.SqlServices">
   <TypeSignature Language="C#" Value="public static class SqlServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit SqlServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.SqlServices" />
+  <TypeSignature Language="VB.NET" Value="Public Class SqlServices" />
+  <TypeSignature Language="F#" Value="type SqlServices = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SqlServices abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public static string GenerateApplicationServicesScripts (bool install, System.Web.Management.SqlFeatures features, string database);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GenerateApplicationServicesScripts(bool install, valuetype System.Web.Management.SqlFeatures features, string database) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.GenerateApplicationServicesScripts(System.Boolean,System.Web.Management.SqlFeatures,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateApplicationServicesScripts (install As Boolean, features As SqlFeatures, database As String) As String" />
+      <MemberSignature Language="F#" Value="static member GenerateApplicationServicesScripts : bool * System.Web.Management.SqlFeatures * string -&gt; string" Usage="System.Web.Management.SqlServices.GenerateApplicationServicesScripts (install, features, database)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GenerateApplicationServicesScripts(bool install, System::Web::Management::SqlFeatures features, System::String ^ database);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +71,9 @@
       <MemberSignature Language="C#" Value="public static string GenerateSessionStateScripts (bool install, System.Web.Management.SessionStateType type, string customDatabase);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GenerateSessionStateScripts(bool install, valuetype System.Web.Management.SessionStateType type, string customDatabase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.GenerateSessionStateScripts(System.Boolean,System.Web.Management.SessionStateType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenerateSessionStateScripts (install As Boolean, type As SessionStateType, customDatabase As String) As String" />
+      <MemberSignature Language="F#" Value="static member GenerateSessionStateScripts : bool * System.Web.Management.SessionStateType * string -&gt; string" Usage="System.Web.Management.SqlServices.GenerateSessionStateScripts (install, type, customDatabase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GenerateSessionStateScripts(bool install, System::Web::Management::SessionStateType type, System::String ^ customDatabase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -90,10 +99,23 @@
         <altmember cref="T:System.Web.Management.SessionStateType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Install">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Installs components for specified ASP.NET features on a SQL Server database.</summary>
+        <altmember cref="T:System.Web.Management.SqlFeatures" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Install">
       <MemberSignature Language="C#" Value="public static void Install (string server, string database, System.Web.Management.SqlFeatures features);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Install(string server, string database, valuetype System.Web.Management.SqlFeatures features) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.Install(System.String,System.String,System.Web.Management.SqlFeatures)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Install (server As String, database As String, features As SqlFeatures)" />
+      <MemberSignature Language="F#" Value="static member Install : string * string * System.Web.Management.SqlFeatures -&gt; unit" Usage="System.Web.Management.SqlServices.Install (server, database, features)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Install(System::String ^ server, System::String ^ database, System::Web::Management::SqlFeatures features);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -141,6 +163,9 @@
       <MemberSignature Language="C#" Value="public static void Install (string database, System.Web.Management.SqlFeatures features, string connectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Install(string database, valuetype System.Web.Management.SqlFeatures features, string connectionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.Install(System.String,System.Web.Management.SqlFeatures,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Install (database As String, features As SqlFeatures, connectionString As String)" />
+      <MemberSignature Language="F#" Value="static member Install : string * System.Web.Management.SqlFeatures * string -&gt; unit" Usage="System.Web.Management.SqlServices.Install (database, features, connectionString)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Install(System::String ^ database, System::Web::Management::SqlFeatures features, System::String ^ connectionString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -185,6 +210,9 @@
       <MemberSignature Language="C#" Value="public static void Install (string server, string user, string password, string database, System.Web.Management.SqlFeatures features);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Install(string server, string user, string password, string database, valuetype System.Web.Management.SqlFeatures features) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.Install(System.String,System.String,System.String,System.String,System.Web.Management.SqlFeatures)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Install (server As String, user As String, password As String, database As String, features As SqlFeatures)" />
+      <MemberSignature Language="F#" Value="static member Install : string * string * string * string * System.Web.Management.SqlFeatures -&gt; unit" Usage="System.Web.Management.SqlServices.Install (server, user, password, database, features)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Install(System::String ^ server, System::String ^ user, System::String ^ password, System::String ^ database, System::Web::Management::SqlFeatures features);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -224,10 +252,23 @@
         <altmember cref="T:System.Web.Management.SqlFeatures" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="InstallSessionState">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Installs components for ASP.NET session state on a SQL Server database.</summary>
+        <altmember cref="T:System.Web.Management.SessionStateType" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InstallSessionState">
       <MemberSignature Language="C#" Value="public static void InstallSessionState (string server, string customDatabase, System.Web.Management.SessionStateType type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InstallSessionState(string server, string customDatabase, valuetype System.Web.Management.SessionStateType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.InstallSessionState(System.String,System.String,System.Web.Management.SessionStateType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub InstallSessionState (server As String, customDatabase As String, type As SessionStateType)" />
+      <MemberSignature Language="F#" Value="static member InstallSessionState : string * string * System.Web.Management.SessionStateType -&gt; unit" Usage="System.Web.Management.SqlServices.InstallSessionState (server, customDatabase, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InstallSessionState(System::String ^ server, System::String ^ customDatabase, System::Web::Management::SessionStateType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -275,6 +316,9 @@
       <MemberSignature Language="C#" Value="public static void InstallSessionState (string customDatabase, System.Web.Management.SessionStateType type, string connectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InstallSessionState(string customDatabase, valuetype System.Web.Management.SessionStateType type, string connectionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.InstallSessionState(System.String,System.Web.Management.SessionStateType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub InstallSessionState (customDatabase As String, type As SessionStateType, connectionString As String)" />
+      <MemberSignature Language="F#" Value="static member InstallSessionState : string * System.Web.Management.SessionStateType * string -&gt; unit" Usage="System.Web.Management.SqlServices.InstallSessionState (customDatabase, type, connectionString)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InstallSessionState(System::String ^ customDatabase, System::Web::Management::SessionStateType type, System::String ^ connectionString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -314,6 +358,9 @@
       <MemberSignature Language="C#" Value="public static void InstallSessionState (string server, string user, string password, string customDatabase, System.Web.Management.SessionStateType type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void InstallSessionState(string server, string user, string password, string customDatabase, valuetype System.Web.Management.SessionStateType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.InstallSessionState(System.String,System.String,System.String,System.String,System.Web.Management.SessionStateType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub InstallSessionState (server As String, user As String, password As String, customDatabase As String, type As SessionStateType)" />
+      <MemberSignature Language="F#" Value="static member InstallSessionState : string * string * string * string * System.Web.Management.SessionStateType -&gt; unit" Usage="System.Web.Management.SqlServices.InstallSessionState (server, user, password, customDatabase, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void InstallSessionState(System::String ^ server, System::String ^ user, System::String ^ password, System::String ^ customDatabase, System::Web::Management::SessionStateType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -361,10 +408,23 @@
         <altmember cref="T:System.Web.Management.SessionStateType" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Uninstall">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes components for selected ASP.NET features from a SQL Server database.</summary>
+        <altmember cref="T:System.Web.Management.SqlFeatures" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Uninstall">
       <MemberSignature Language="C#" Value="public static void Uninstall (string server, string database, System.Web.Management.SqlFeatures features);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Uninstall(string server, string database, valuetype System.Web.Management.SqlFeatures features) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.Uninstall(System.String,System.String,System.Web.Management.SqlFeatures)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Uninstall (server As String, database As String, features As SqlFeatures)" />
+      <MemberSignature Language="F#" Value="static member Uninstall : string * string * System.Web.Management.SqlFeatures -&gt; unit" Usage="System.Web.Management.SqlServices.Uninstall (server, database, features)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Uninstall(System::String ^ server, System::String ^ database, System::Web::Management::SqlFeatures features);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -412,6 +472,9 @@
       <MemberSignature Language="C#" Value="public static void Uninstall (string database, System.Web.Management.SqlFeatures features, string connectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Uninstall(string database, valuetype System.Web.Management.SqlFeatures features, string connectionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.Uninstall(System.String,System.Web.Management.SqlFeatures,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Uninstall (database As String, features As SqlFeatures, connectionString As String)" />
+      <MemberSignature Language="F#" Value="static member Uninstall : string * System.Web.Management.SqlFeatures * string -&gt; unit" Usage="System.Web.Management.SqlServices.Uninstall (database, features, connectionString)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Uninstall(System::String ^ database, System::Web::Management::SqlFeatures features, System::String ^ connectionString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -459,6 +522,9 @@
       <MemberSignature Language="C#" Value="public static void Uninstall (string server, string user, string password, string database, System.Web.Management.SqlFeatures features);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Uninstall(string server, string user, string password, string database, valuetype System.Web.Management.SqlFeatures features) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.Uninstall(System.String,System.String,System.String,System.String,System.Web.Management.SqlFeatures)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Uninstall (server As String, user As String, password As String, database As String, features As SqlFeatures)" />
+      <MemberSignature Language="F#" Value="static member Uninstall : string * string * string * string * System.Web.Management.SqlFeatures -&gt; unit" Usage="System.Web.Management.SqlServices.Uninstall (server, user, password, database, features)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Uninstall(System::String ^ server, System::String ^ user, System::String ^ password, System::String ^ database, System::Web::Management::SqlFeatures features);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -498,10 +564,23 @@
         <altmember cref="T:System.Web.Management.SqlFeatures" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="UninstallSessionState">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes components for ASP.NET session state from a SQL Server database.</summary>
+        <altmember cref="T:System.Web.Management.SessionStateType" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="UninstallSessionState">
       <MemberSignature Language="C#" Value="public static void UninstallSessionState (string server, string customDatabase, System.Web.Management.SessionStateType type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UninstallSessionState(string server, string customDatabase, valuetype System.Web.Management.SessionStateType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.UninstallSessionState(System.String,System.String,System.Web.Management.SessionStateType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub UninstallSessionState (server As String, customDatabase As String, type As SessionStateType)" />
+      <MemberSignature Language="F#" Value="static member UninstallSessionState : string * string * System.Web.Management.SessionStateType -&gt; unit" Usage="System.Web.Management.SqlServices.UninstallSessionState (server, customDatabase, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UninstallSessionState(System::String ^ server, System::String ^ customDatabase, System::Web::Management::SessionStateType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -548,6 +627,9 @@
       <MemberSignature Language="C#" Value="public static void UninstallSessionState (string customDatabase, System.Web.Management.SessionStateType type, string connectionString);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UninstallSessionState(string customDatabase, valuetype System.Web.Management.SessionStateType type, string connectionString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.UninstallSessionState(System.String,System.Web.Management.SessionStateType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub UninstallSessionState (customDatabase As String, type As SessionStateType, connectionString As String)" />
+      <MemberSignature Language="F#" Value="static member UninstallSessionState : string * System.Web.Management.SessionStateType * string -&gt; unit" Usage="System.Web.Management.SqlServices.UninstallSessionState (customDatabase, type, connectionString)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UninstallSessionState(System::String ^ customDatabase, System::Web::Management::SessionStateType type, System::String ^ connectionString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -587,6 +669,9 @@
       <MemberSignature Language="C#" Value="public static void UninstallSessionState (string server, string user, string password, string customDatabase, System.Web.Management.SessionStateType type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UninstallSessionState(string server, string user, string password, string customDatabase, valuetype System.Web.Management.SessionStateType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.SqlServices.UninstallSessionState(System.String,System.String,System.String,System.String,System.Web.Management.SessionStateType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub UninstallSessionState (server As String, user As String, password As String, customDatabase As String, type As SessionStateType)" />
+      <MemberSignature Language="F#" Value="static member UninstallSessionState : string * string * string * string * System.Web.Management.SessionStateType -&gt; unit" Usage="System.Web.Management.SqlServices.UninstallSessionState (server, user, password, customDatabase, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UninstallSessionState(System::String ^ server, System::String ^ user, System::String ^ password, System::String ^ customDatabase, System::Web::Management::SessionStateType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -633,45 +718,5 @@
         <altmember cref="T:System.Web.Management.SessionStateType" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Uninstall">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes components for selected ASP.NET features from a SQL Server database.</summary>
-        <altmember cref="T:System.Web.Management.SqlFeatures" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="UninstallSessionState">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes components for ASP.NET session state from a SQL Server database.</summary>
-        <altmember cref="T:System.Web.Management.SessionStateType" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="InstallSessionState">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Installs components for ASP.NET session state on a SQL Server database.</summary>
-        <altmember cref="T:System.Web.Management.SessionStateType" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Install">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Installs components for specified ASP.NET features on a SQL Server database.</summary>
-        <altmember cref="T:System.Web.Management.SqlFeatures" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

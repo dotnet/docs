@@ -1,7 +1,10 @@
-<Type Name="ActivityTypeCodeDomSerializer" FullName="System.Workflow.ComponentModel.Serialization.ActivityTypeCodeDomSerializer">
+﻿<Type Name="ActivityTypeCodeDomSerializer" FullName="System.Workflow.ComponentModel.Serialization.ActivityTypeCodeDomSerializer">
   <TypeSignature Language="C#" Value="public class ActivityTypeCodeDomSerializer : System.ComponentModel.Design.Serialization.TypeCodeDomSerializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActivityTypeCodeDomSerializer extends System.ComponentModel.Design.Serialization.TypeCodeDomSerializer" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Serialization.ActivityTypeCodeDomSerializer" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityTypeCodeDomSerializer&#xA;Inherits TypeCodeDomSerializer" />
+  <TypeSignature Language="F#" Value="type ActivityTypeCodeDomSerializer = class&#xA;    inherit TypeCodeDomSerializer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityTypeCodeDomSerializer : System::ComponentModel::Design::Serialization::TypeCodeDomSerializer" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="public ActivityTypeCodeDomSerializer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityTypeCodeDomSerializer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityTypeCodeDomSerializer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -50,6 +55,9 @@
       <MemberSignature Language="C#" Value="public override object Deserialize (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, System.CodeDom.CodeTypeDeclaration declaration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Deserialize(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.CodeDom.CodeTypeDeclaration declaration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityTypeCodeDomSerializer.Deserialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.CodeDom.CodeTypeDeclaration)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Deserialize (manager As IDesignerSerializationManager, declaration As CodeTypeDeclaration) As Object" />
+      <MemberSignature Language="F#" Value="override this.Deserialize : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * System.CodeDom.CodeTypeDeclaration -&gt; obj" Usage="activityTypeCodeDomSerializer.Deserialize (manager, declaration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Deserialize(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::CodeDom::CodeTypeDeclaration ^ declaration);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -74,6 +82,9 @@
       <MemberSignature Language="C#" Value="protected override System.CodeDom.CodeMemberMethod GetInitializeMethod (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, System.CodeDom.CodeTypeDeclaration typeDecl, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.CodeDom.CodeMemberMethod GetInitializeMethod(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.CodeDom.CodeTypeDeclaration typeDecl, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityTypeCodeDomSerializer.GetInitializeMethod(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.CodeDom.CodeTypeDeclaration,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetInitializeMethod (manager As IDesignerSerializationManager, typeDecl As CodeTypeDeclaration, value As Object) As CodeMemberMethod" />
+      <MemberSignature Language="F#" Value="override this.GetInitializeMethod : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * System.CodeDom.CodeTypeDeclaration * obj -&gt; System.CodeDom.CodeMemberMethod" Usage="activityTypeCodeDomSerializer.GetInitializeMethod (manager, typeDecl, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::CodeDom::CodeMemberMethod ^ GetInitializeMethod(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::CodeDom::CodeTypeDeclaration ^ typeDecl, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -109,6 +120,9 @@
       <MemberSignature Language="C#" Value="protected override System.CodeDom.CodeMemberMethod[] GetInitializeMethods (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, System.CodeDom.CodeTypeDeclaration typeDecl);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.CodeDom.CodeMemberMethod[] GetInitializeMethods(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, class System.CodeDom.CodeTypeDeclaration typeDecl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityTypeCodeDomSerializer.GetInitializeMethods(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.CodeDom.CodeTypeDeclaration)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetInitializeMethods (manager As IDesignerSerializationManager, typeDecl As CodeTypeDeclaration) As CodeMemberMethod()" />
+      <MemberSignature Language="F#" Value="override this.GetInitializeMethods : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * System.CodeDom.CodeTypeDeclaration -&gt; System.CodeDom.CodeMemberMethod[]" Usage="activityTypeCodeDomSerializer.GetInitializeMethods (manager, typeDecl)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::CodeDom::CodeMemberMethod ^&gt; ^ GetInitializeMethods(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::CodeDom::CodeTypeDeclaration ^ typeDecl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -135,6 +149,9 @@
       <MemberSignature Language="C#" Value="public override System.CodeDom.CodeTypeDeclaration Serialize (System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object root, System.Collections.ICollection members);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.CodeDom.CodeTypeDeclaration Serialize(class System.ComponentModel.Design.Serialization.IDesignerSerializationManager manager, object root, class System.Collections.ICollection members) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Serialization.ActivityTypeCodeDomSerializer.Serialize(System.ComponentModel.Design.Serialization.IDesignerSerializationManager,System.Object,System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Serialize (manager As IDesignerSerializationManager, root As Object, members As ICollection) As CodeTypeDeclaration" />
+      <MemberSignature Language="F#" Value="override this.Serialize : System.ComponentModel.Design.Serialization.IDesignerSerializationManager * obj * System.Collections.ICollection -&gt; System.CodeDom.CodeTypeDeclaration" Usage="activityTypeCodeDomSerializer.Serialize (manager, root, members)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::CodeDom::CodeTypeDeclaration ^ Serialize(System::ComponentModel::Design::Serialization::IDesignerSerializationManager ^ manager, System::Object ^ root, System::Collections::ICollection ^ members);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="DateType" FullName="Microsoft.VisualBasic.CompilerServices.DateType">
+﻿<Type Name="DateType" FullName="Microsoft.VisualBasic.CompilerServices.DateType">
   <TypeSignature Language="C#" Value="public sealed class DateType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DateType extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.DateType" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DateType" />
+  <TypeSignature Language="F#" Value="type DateType = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DateType sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public static DateTime FromObject (object Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.DateTime FromObject(object Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DateType.FromObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromObject (Value As Object) As DateTime" />
+      <MemberSignature Language="F#" Value="static member FromObject : obj -&gt; DateTime" Usage="Microsoft.VisualBasic.CompilerServices.DateType.FromObject Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime FromObject(System::Object ^ Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -79,6 +85,9 @@
       <MemberSignature Language="C#" Value="public static DateTime FromString (string Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.DateTime FromString(string Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DateType.FromString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (Value As String) As DateTime" />
+      <MemberSignature Language="F#" Value="static member FromString : string -&gt; DateTime" Usage="Microsoft.VisualBasic.CompilerServices.DateType.FromString Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime FromString(System::String ^ Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -109,6 +118,9 @@
       <MemberSignature Language="C#" Value="public static DateTime FromString (string Value, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.DateTime FromString(string Value, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DateType.FromString(System.String,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (Value As String, culture As CultureInfo) As DateTime" />
+      <MemberSignature Language="F#" Value="static member FromString : string * System.Globalization.CultureInfo -&gt; DateTime" Usage="Microsoft.VisualBasic.CompilerServices.DateType.FromString (Value, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime FromString(System::String ^ Value, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

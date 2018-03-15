@@ -1,7 +1,10 @@
-<Type Name="FileAttribute" FullName="Microsoft.VisualBasic.FileAttribute">
+﻿<Type Name="FileAttribute" FullName="Microsoft.VisualBasic.FileAttribute">
   <TypeSignature Language="C#" Value="public enum FileAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FileAttribute extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.FileAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FileAttribute" />
+  <TypeSignature Language="F#" Value="type FileAttribute = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FileAttribute" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="Archive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileAttribute Archive = int32(32)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileAttribute.Archive" />
+      <MemberSignature Language="VB.NET" Value="Archive" />
+      <MemberSignature Language="F#" Value="Archive = 32" Usage="Microsoft.VisualBasic.FileAttribute.Archive" />
+      <MemberSignature Language="C++ CLI" Value="Archive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -45,6 +51,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileAttribute</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>File has changed since last backup. This member is equivalent to the Visual Basic constant <see langword="vbArchive" />.</summary>
       </Docs>
@@ -53,6 +60,9 @@
       <MemberSignature Language="C#" Value="Directory" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileAttribute Directory = int32(16)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileAttribute.Directory" />
+      <MemberSignature Language="VB.NET" Value="Directory" />
+      <MemberSignature Language="F#" Value="Directory = 16" Usage="Microsoft.VisualBasic.FileAttribute.Directory" />
+      <MemberSignature Language="C++ CLI" Value="Directory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -61,6 +71,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileAttribute</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Directory or folder. This member is equivalent to the Visual Basic constant <see langword="vbDirectory" />.</summary>
       </Docs>
@@ -69,6 +80,9 @@
       <MemberSignature Language="C#" Value="Hidden" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileAttribute Hidden = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileAttribute.Hidden" />
+      <MemberSignature Language="VB.NET" Value="Hidden" />
+      <MemberSignature Language="F#" Value="Hidden = 2" Usage="Microsoft.VisualBasic.FileAttribute.Hidden" />
+      <MemberSignature Language="C++ CLI" Value="Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -77,6 +91,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileAttribute</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Hidden. This member is equivalent to the Visual Basic constant <see langword="vbHidden" />.</summary>
       </Docs>
@@ -85,6 +100,9 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileAttribute Normal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileAttribute.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="Microsoft.VisualBasic.FileAttribute.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -93,6 +111,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileAttribute</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Normal (default for <see langword="Dir" /> and <see langword="SetAttr" />). No special characteristics apply to this file. This member is equivalent to the Visual Basic constant <see langword="vbNormal" />.</summary>
       </Docs>
@@ -101,6 +120,9 @@
       <MemberSignature Language="C#" Value="ReadOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileAttribute ReadOnly = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileAttribute.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="ReadOnly" />
+      <MemberSignature Language="F#" Value="ReadOnly = 1" Usage="Microsoft.VisualBasic.FileAttribute.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -109,6 +131,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileAttribute</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Read only. This member is equivalent to the Visual Basic constant <see langword="vbReadOnly" />.</summary>
       </Docs>
@@ -117,6 +140,9 @@
       <MemberSignature Language="C#" Value="System" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileAttribute System = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileAttribute.System" />
+      <MemberSignature Language="VB.NET" Value="System" />
+      <MemberSignature Language="F#" Value="System = 4" Usage="Microsoft.VisualBasic.FileAttribute.System" />
+      <MemberSignature Language="C++ CLI" Value="System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -125,6 +151,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileAttribute</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>System file. This member is equivalent to the Visual Basic constant <see langword="vbSystem" />.</summary>
       </Docs>
@@ -133,6 +160,9 @@
       <MemberSignature Language="C#" Value="Volume" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.FileAttribute Volume = int32(8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.FileAttribute.Volume" />
+      <MemberSignature Language="VB.NET" Value="Volume" />
+      <MemberSignature Language="F#" Value="Volume = 8" Usage="Microsoft.VisualBasic.FileAttribute.Volume" />
+      <MemberSignature Language="C++ CLI" Value="Volume" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -141,6 +171,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.FileAttribute</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Volume label. This attribute is not valid when used with <see langword="SetAttr" />. This member is equivalent to the Visual Basic constant <see langword="vbVolume" />.</summary>
       </Docs>

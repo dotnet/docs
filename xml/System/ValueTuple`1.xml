@@ -1,7 +1,10 @@
-<Type Name="ValueTuple&lt;T1&gt;" FullName="System.ValueTuple&lt;T1&gt;">
+﻿<Type Name="ValueTuple&lt;T1&gt;" FullName="System.ValueTuple&lt;T1&gt;">
   <TypeSignature Language="C#" Value="public struct ValueTuple&lt;T1&gt; : IComparable, IComparable&lt;ValueTuple&lt;T1&gt;&gt;, IEquatable&lt;ValueTuple&lt;T1&gt;&gt;, System.Collections.IStructuralComparable, System.Collections.IStructuralEquatable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ValueTuple`1&lt;T1&gt; extends System.ValueType implements class System.Collections.IStructuralComparable, class System.Collections.IStructuralEquatable, class System.IComparable, class System.IComparable`1&lt;valuetype System.ValueTuple`1&lt;!T1&gt;&gt;, class System.IEquatable`1&lt;valuetype System.ValueTuple`1&lt;!T1&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ValueTuple`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ValueTuple(Of T1)&#xA;Implements IComparable, IComparable(Of ValueTuple(Of T1)), IEquatable(Of ValueTuple(Of T1)), IStructuralComparable, IStructuralEquatable" />
+  <TypeSignature Language="F#" Value="type ValueTuple&lt;'T1&gt; = struct" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T1&gt;&#xA;public value class ValueTuple : IComparable, IComparable&lt;ValueTuple&lt;T1&gt;&gt;, IEquatable&lt;ValueTuple&lt;T1&gt;&gt;, System::Collections::IStructuralComparable, System::Collections::IStructuralEquatable" />
   <AssemblyInfo>
     <AssemblyName>System.ValueTuple</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -73,6 +76,9 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <MemberSignature Language="C#" Value="public ValueTuple (T1 item1);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T1 item1) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ValueTuple`1.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (item1 As T1)" />
+      <MemberSignature Language="F#" Value="new ValueTuple&lt;'T1&gt; : 'T1 -&gt; ValueTuple&lt;'T1&gt;" Usage="new System.ValueTuple&lt;'T1&gt; item1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValueTuple(T1 item1);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -104,7 +110,13 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <MemberSignature Language="C#" Value="public int CompareTo (ValueTuple&lt;T1&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(valuetype System.ValueTuple`1&lt;!T1&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ValueTuple`1.CompareTo(System.ValueTuple{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (other As ValueTuple(Of T1)) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : ValueTuple&lt;'T1&gt; -&gt; int&#xA;override this.CompareTo : ValueTuple&lt;'T1&gt; -&gt; int" Usage="valueTuple.CompareTo other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(ValueTuple&lt;T1&gt; other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -153,10 +165,23 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.ValueTuple</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple`1" /> instance is equal to a specified object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ValueTuple`1.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="valueTuple.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -206,7 +231,13 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <MemberSignature Language="C#" Value="public bool Equals (ValueTuple&lt;T1&gt; other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.ValueTuple`1&lt;!T1&gt; other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ValueTuple`1.Equals(System.ValueTuple{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As ValueTuple(Of T1)) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : ValueTuple&lt;'T1&gt; -&gt; bool" Usage="valueTuple.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(ValueTuple&lt;T1&gt; other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -253,6 +284,9 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ValueTuple`1.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="valueTuple.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -285,6 +319,9 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <MemberSignature Language="C#" Value="public T1 Item1;" />
       <MemberSignature Language="ILAsm" Value=".field public !T1 Item1" />
       <MemberSignature Language="DocId" Value="F:System.ValueTuple`1.Item1" />
+      <MemberSignature Language="VB.NET" Value="Public Item1 As T1 " />
+      <MemberSignature Language="F#" Value="val mutable Item1 : 'T1" Usage="System.ValueTuple&lt;'T1&gt;.Item1" />
+      <MemberSignature Language="C++ CLI" Value="public: T1 Item1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -315,7 +352,12 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <MemberSignature Language="C#" Value="int IStructuralComparable.CompareTo (object other, System.Collections.IComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IStructuralComparable.CompareTo(object other, class System.Collections.IComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ValueTuple`1.System#Collections#IStructuralComparable#CompareTo(System.Object,System.Collections.IComparer)" />
+      <MemberSignature Language="VB.NET" Value="Function CompareTo (other As Object, comparer As IComparer) As Integer Implements IStructuralComparable.CompareTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IStructuralComparable.CompareTo(System::Object ^ other, System::Collections::IComparer ^ comparer) = System::Collections::IStructuralComparable::CompareTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralComparable.CompareTo(System.Object,System.Collections.IComparer)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -370,7 +412,12 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <MemberSignature Language="C#" Value="bool IStructuralEquatable.Equals (object other, System.Collections.IEqualityComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IStructuralEquatable.Equals(object other, class System.Collections.IEqualityComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ValueTuple`1.System#Collections#IStructuralEquatable#Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <MemberSignature Language="VB.NET" Value="Function Equals (other As Object, comparer As IEqualityComparer) As Boolean Implements IStructuralEquatable.Equals" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IStructuralEquatable.Equals(System::Object ^ other, System::Collections::IEqualityComparer ^ comparer) = System::Collections::IStructuralEquatable::Equals;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralEquatable.Equals(System.Object,System.Collections.IEqualityComparer)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -408,7 +455,12 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <MemberSignature Language="C#" Value="int IStructuralEquatable.GetHashCode (System.Collections.IEqualityComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IStructuralEquatable.GetHashCode(class System.Collections.IEqualityComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ValueTuple`1.System#Collections#IStructuralEquatable#GetHashCode(System.Collections.IEqualityComparer)" />
+      <MemberSignature Language="VB.NET" Value="Function GetHashCode (comparer As IEqualityComparer) As Integer Implements IStructuralEquatable.GetHashCode" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IStructuralEquatable.GetHashCode(System::Collections::IEqualityComparer ^ comparer) = System::Collections::IStructuralEquatable::GetHashCode;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -443,7 +495,12 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <MemberSignature Language="C#" Value="int IComparable.CompareTo (object other);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IComparable.CompareTo(object other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ValueTuple`1.System#IComparable#CompareTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function CompareTo (other As Object) As Integer Implements IComparable.CompareTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.IComparable.CompareTo(System::Object ^ other) = IComparable::CompareTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -496,7 +553,13 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <MemberSignature Language="C#" Value="object System.Runtime.CompilerServices.ITuple.Item[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Runtime.CompilerServices.ITuple.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.ValueTuple`1.System#Runtime#CompilerServices#ITuple#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Item(index As Integer) As Object Implements ITuple.Item" />
+      <MemberSignature Language="F#" Usage="System.ValueTuple&lt;'T1&gt;.System.Runtime.CompilerServices.ITuple.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Runtime.CompilerServices.ITuple.Item[int] { System::Object ^ get(int index); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.CompilerServices.ITuple.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -531,7 +594,13 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <MemberSignature Language="C#" Value="int System.Runtime.CompilerServices.ITuple.Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Runtime.CompilerServices.ITuple.Length" />
       <MemberSignature Language="DocId" Value="P:System.ValueTuple`1.System#Runtime#CompilerServices#ITuple#Length" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Length As Integer Implements ITuple.Length" />
+      <MemberSignature Language="F#" Usage="System.ValueTuple&lt;'T1&gt;.System.Runtime.CompilerServices.ITuple.Length" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Runtime.CompilerServices.ITuple.Length { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Runtime.CompilerServices.ITuple.Length</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -560,6 +629,9 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ValueTuple`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="valueTuple.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ValueTuple</AssemblyName>
@@ -595,15 +667,5 @@ The <xref:System.ValueTuple%601> type is not serializable in .NET Core 1.x or in
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.ValueTuple</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the current <see cref="T:System.ValueTuple`1" /> instance is equal to a specified object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

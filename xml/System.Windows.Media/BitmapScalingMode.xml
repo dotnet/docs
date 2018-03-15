@@ -1,7 +1,10 @@
-<Type Name="BitmapScalingMode" FullName="System.Windows.Media.BitmapScalingMode">
+﻿<Type Name="BitmapScalingMode" FullName="System.Windows.Media.BitmapScalingMode">
   <TypeSignature Language="C#" Value="public enum BitmapScalingMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BitmapScalingMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.BitmapScalingMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BitmapScalingMode" />
+  <TypeSignature Language="F#" Value="type BitmapScalingMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class BitmapScalingMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="Fant" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.BitmapScalingMode Fant = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapScalingMode.Fant" />
+      <MemberSignature Language="VB.NET" Value="Fant" />
+      <MemberSignature Language="F#" Value="Fant = 2" Usage="System.Windows.Media.BitmapScalingMode.Fant" />
+      <MemberSignature Language="C++ CLI" Value="Fant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -42,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Use very high quality Fant bitmap scaling, which is slower than all other bitmap scaling modes, but produces higher quality output.</summary>
       </Docs>
@@ -50,6 +57,9 @@
       <MemberSignature Language="C#" Value="HighQuality" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.BitmapScalingMode HighQuality = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapScalingMode.HighQuality" />
+      <MemberSignature Language="VB.NET" Value="HighQuality" />
+      <MemberSignature Language="F#" Value="HighQuality = 2" Usage="System.Windows.Media.BitmapScalingMode.HighQuality" />
+      <MemberSignature Language="C++ CLI" Value="HighQuality" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Use high quality bitmap scaling, which is slower than <see cref="F:System.Windows.Media.BitmapScalingMode.LowQuality" /> mode, but produces higher quality output. The <see cref="F:System.Windows.Media.BitmapScalingMode.HighQuality" /> mode is the same as the <see cref="F:System.Windows.Media.BitmapScalingMode.Fant" /> mode.</summary>
       </Docs>
@@ -66,6 +77,9 @@
       <MemberSignature Language="C#" Value="Linear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.BitmapScalingMode Linear = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapScalingMode.Linear" />
+      <MemberSignature Language="VB.NET" Value="Linear" />
+      <MemberSignature Language="F#" Value="Linear = 1" Usage="System.Windows.Media.BitmapScalingMode.Linear" />
+      <MemberSignature Language="C++ CLI" Value="Linear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -74,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Use linear bitmap scaling, which is faster than <see cref="F:System.Windows.Media.BitmapScalingMode.HighQuality" /> mode, but produces lower quality output.</summary>
       </Docs>
@@ -82,6 +97,9 @@
       <MemberSignature Language="C#" Value="LowQuality" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.BitmapScalingMode LowQuality = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapScalingMode.LowQuality" />
+      <MemberSignature Language="VB.NET" Value="LowQuality" />
+      <MemberSignature Language="F#" Value="LowQuality = 1" Usage="System.Windows.Media.BitmapScalingMode.LowQuality" />
+      <MemberSignature Language="C++ CLI" Value="LowQuality" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,6 +108,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Use bilinear bitmap scaling, which is faster than <see cref="F:System.Windows.Media.BitmapScalingMode.HighQuality" /> mode, but produces lower quality output. The <see cref="F:System.Windows.Media.BitmapScalingMode.LowQuality" /> mode is the same as the <see cref="F:System.Windows.Media.BitmapScalingMode.Linear" /> mode.</summary>
       </Docs>
@@ -98,6 +117,9 @@
       <MemberSignature Language="C#" Value="NearestNeighbor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.BitmapScalingMode NearestNeighbor = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapScalingMode.NearestNeighbor" />
+      <MemberSignature Language="VB.NET" Value="NearestNeighbor" />
+      <MemberSignature Language="F#" Value="NearestNeighbor = 3" Usage="System.Windows.Media.BitmapScalingMode.NearestNeighbor" />
+      <MemberSignature Language="C++ CLI" Value="NearestNeighbor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -106,6 +128,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Use nearest-neighbor bitmap scaling, which provides performance benefits over <see cref="F:System.Windows.Media.BitmapScalingMode.LowQuality" /> mode when the software rasterizer is used. This mode is often used to magnify a bitmap.</summary>
       </Docs>
@@ -114,6 +137,9 @@
       <MemberSignature Language="C#" Value="Unspecified" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.BitmapScalingMode Unspecified = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.BitmapScalingMode.Unspecified" />
+      <MemberSignature Language="VB.NET" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 0" Usage="System.Windows.Media.BitmapScalingMode.Unspecified" />
+      <MemberSignature Language="C++ CLI" Value="Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -122,6 +148,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Media.BitmapScalingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Use the default bitmap scaling mode, which is <see cref="F:System.Windows.Media.BitmapScalingMode.Linear" />.</summary>
       </Docs>

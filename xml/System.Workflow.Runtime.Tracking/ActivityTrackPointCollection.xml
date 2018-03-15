@@ -1,7 +1,10 @@
-<Type Name="ActivityTrackPointCollection" FullName="System.Workflow.Runtime.Tracking.ActivityTrackPointCollection">
+﻿<Type Name="ActivityTrackPointCollection" FullName="System.Workflow.Runtime.Tracking.ActivityTrackPointCollection">
   <TypeSignature Language="C#" Value="public class ActivityTrackPointCollection : System.Collections.Generic.List&lt;System.Workflow.Runtime.Tracking.ActivityTrackPoint&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ActivityTrackPointCollection extends System.Collections.Generic.List`1&lt;class System.Workflow.Runtime.Tracking.ActivityTrackPoint&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.ActivityTrackPointCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActivityTrackPointCollection&#xA;Inherits List(Of ActivityTrackPoint)" />
+  <TypeSignature Language="F#" Value="type ActivityTrackPointCollection = class&#xA;    inherit List&lt;ActivityTrackPoint&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityTrackPointCollection : System::Collections::Generic::List&lt;System::Workflow::Runtime::Tracking::ActivityTrackPoint ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +37,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackPointCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ActivityTrackPointCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityTrackPointCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityTrackPointCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -60,6 +74,9 @@
       <MemberSignature Language="C#" Value="public ActivityTrackPointCollection (System.Collections.Generic.IEnumerable&lt;System.Workflow.Runtime.Tracking.ActivityTrackPoint&gt; points);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Workflow.Runtime.Tracking.ActivityTrackPoint&gt; points) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.ActivityTrackPointCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.ActivityTrackPoint})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (points As IEnumerable(Of ActivityTrackPoint))" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.ActivityTrackPointCollection : seq&lt;System.Workflow.Runtime.Tracking.ActivityTrackPoint&gt; -&gt; System.Workflow.Runtime.Tracking.ActivityTrackPointCollection" Usage="new System.Workflow.Runtime.Tracking.ActivityTrackPointCollection points" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityTrackPointCollection(System::Collections::Generic::IEnumerable&lt;System::Workflow::Runtime::Tracking::ActivityTrackPoint ^&gt; ^ points);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -83,14 +100,5 @@
           <paramref name="points" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.ActivityTrackPointCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

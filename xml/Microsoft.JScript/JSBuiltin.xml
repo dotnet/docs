@@ -1,7 +1,10 @@
-<Type Name="JSBuiltin" FullName="Microsoft.JScript.JSBuiltin">
+﻿<Type Name="JSBuiltin" FullName="Microsoft.JScript.JSBuiltin">
   <TypeSignature Language="C#" Value="public enum JSBuiltin" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed JSBuiltin extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSBuiltin" />
+  <TypeSignature Language="VB.NET" Value="Public Enum JSBuiltin" />
+  <TypeSignature Language="F#" Value="type JSBuiltin = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class JSBuiltin" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="Array_concat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Array_concat = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Array_concat" />
+      <MemberSignature Language="VB.NET" Value="Array_concat" />
+      <MemberSignature Language="F#" Value="Array_concat = 1" Usage="Microsoft.JScript.JSBuiltin.Array_concat" />
+      <MemberSignature Language="C++ CLI" Value="Array_concat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -27,6 +33,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.concat(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -36,6 +43,9 @@
       <MemberSignature Language="C#" Value="Array_join" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Array_join = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Array_join" />
+      <MemberSignature Language="VB.NET" Value="Array_join" />
+      <MemberSignature Language="F#" Value="Array_join = 2" Usage="Microsoft.JScript.JSBuiltin.Array_join" />
+      <MemberSignature Language="C++ CLI" Value="Array_join" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -44,6 +54,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.join(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -53,6 +64,9 @@
       <MemberSignature Language="C#" Value="Array_pop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Array_pop = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Array_pop" />
+      <MemberSignature Language="VB.NET" Value="Array_pop" />
+      <MemberSignature Language="F#" Value="Array_pop = 3" Usage="Microsoft.JScript.JSBuiltin.Array_pop" />
+      <MemberSignature Language="C++ CLI" Value="Array_pop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -61,6 +75,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.pop(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -70,6 +85,9 @@
       <MemberSignature Language="C#" Value="Array_push" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Array_push = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Array_push" />
+      <MemberSignature Language="VB.NET" Value="Array_push" />
+      <MemberSignature Language="F#" Value="Array_push = 4" Usage="Microsoft.JScript.JSBuiltin.Array_push" />
+      <MemberSignature Language="C++ CLI" Value="Array_push" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -78,6 +96,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.push(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -87,6 +106,9 @@
       <MemberSignature Language="C#" Value="Array_reverse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Array_reverse = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Array_reverse" />
+      <MemberSignature Language="VB.NET" Value="Array_reverse" />
+      <MemberSignature Language="F#" Value="Array_reverse = 5" Usage="Microsoft.JScript.JSBuiltin.Array_reverse" />
+      <MemberSignature Language="C++ CLI" Value="Array_reverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -95,6 +117,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.reverse(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -104,6 +127,9 @@
       <MemberSignature Language="C#" Value="Array_shift" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Array_shift = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Array_shift" />
+      <MemberSignature Language="VB.NET" Value="Array_shift" />
+      <MemberSignature Language="F#" Value="Array_shift = 6" Usage="Microsoft.JScript.JSBuiltin.Array_shift" />
+      <MemberSignature Language="C++ CLI" Value="Array_shift" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -112,6 +138,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.shift(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -121,6 +148,9 @@
       <MemberSignature Language="C#" Value="Array_slice" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Array_slice = int32(7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Array_slice" />
+      <MemberSignature Language="VB.NET" Value="Array_slice" />
+      <MemberSignature Language="F#" Value="Array_slice = 7" Usage="Microsoft.JScript.JSBuiltin.Array_slice" />
+      <MemberSignature Language="C++ CLI" Value="Array_slice" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -129,6 +159,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.slice(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -138,6 +169,9 @@
       <MemberSignature Language="C#" Value="Array_sort" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Array_sort = int32(8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Array_sort" />
+      <MemberSignature Language="VB.NET" Value="Array_sort" />
+      <MemberSignature Language="F#" Value="Array_sort = 8" Usage="Microsoft.JScript.JSBuiltin.Array_sort" />
+      <MemberSignature Language="C++ CLI" Value="Array_sort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -146,6 +180,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.sort(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -155,6 +190,9 @@
       <MemberSignature Language="C#" Value="Array_splice" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Array_splice = int32(9)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Array_splice" />
+      <MemberSignature Language="VB.NET" Value="Array_splice" />
+      <MemberSignature Language="F#" Value="Array_splice = 9" Usage="Microsoft.JScript.JSBuiltin.Array_splice" />
+      <MemberSignature Language="C++ CLI" Value="Array_splice" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -163,6 +201,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.splice(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Double,System.Double,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -172,6 +211,9 @@
       <MemberSignature Language="C#" Value="Array_toLocaleString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Array_toLocaleString = int32(10)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Array_toLocaleString" />
+      <MemberSignature Language="VB.NET" Value="Array_toLocaleString" />
+      <MemberSignature Language="F#" Value="Array_toLocaleString = 10" Usage="Microsoft.JScript.JSBuiltin.Array_toLocaleString" />
+      <MemberSignature Language="C++ CLI" Value="Array_toLocaleString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -180,6 +222,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -189,6 +232,9 @@
       <MemberSignature Language="C#" Value="Array_toString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Array_toString = int32(11)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Array_toString" />
+      <MemberSignature Language="VB.NET" Value="Array_toString" />
+      <MemberSignature Language="F#" Value="Array_toString = 11" Usage="Microsoft.JScript.JSBuiltin.Array_toString" />
+      <MemberSignature Language="C++ CLI" Value="Array_toString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -197,6 +243,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -206,6 +253,9 @@
       <MemberSignature Language="C#" Value="Array_unshift" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Array_unshift = int32(12)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Array_unshift" />
+      <MemberSignature Language="VB.NET" Value="Array_unshift" />
+      <MemberSignature Language="F#" Value="Array_unshift = 12" Usage="Microsoft.JScript.JSBuiltin.Array_unshift" />
+      <MemberSignature Language="C++ CLI" Value="Array_unshift" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -214,6 +264,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ArrayPrototype.unshift(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.ArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -223,6 +274,9 @@
       <MemberSignature Language="C#" Value="Boolean_toString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Boolean_toString = int32(13)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Boolean_toString" />
+      <MemberSignature Language="VB.NET" Value="Boolean_toString" />
+      <MemberSignature Language="F#" Value="Boolean_toString = 13" Usage="Microsoft.JScript.JSBuiltin.Boolean_toString" />
+      <MemberSignature Language="C++ CLI" Value="Boolean_toString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -231,6 +285,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.BooleanPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.BooleanPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -240,6 +295,9 @@
       <MemberSignature Language="C#" Value="Boolean_valueOf" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Boolean_valueOf = int32(14)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Boolean_valueOf" />
+      <MemberSignature Language="VB.NET" Value="Boolean_valueOf" />
+      <MemberSignature Language="F#" Value="Boolean_valueOf = 14" Usage="Microsoft.JScript.JSBuiltin.Boolean_valueOf" />
+      <MemberSignature Language="C++ CLI" Value="Boolean_valueOf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -248,6 +306,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.BooleanPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.BooleanPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -257,6 +316,9 @@
       <MemberSignature Language="C#" Value="Date_getDate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getDate = int32(15)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getDate" />
+      <MemberSignature Language="VB.NET" Value="Date_getDate" />
+      <MemberSignature Language="F#" Value="Date_getDate = 15" Usage="Microsoft.JScript.JSBuiltin.Date_getDate" />
+      <MemberSignature Language="C++ CLI" Value="Date_getDate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -265,6 +327,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getDate(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -274,6 +337,9 @@
       <MemberSignature Language="C#" Value="Date_getDay" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getDay = int32(16)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getDay" />
+      <MemberSignature Language="VB.NET" Value="Date_getDay" />
+      <MemberSignature Language="F#" Value="Date_getDay = 16" Usage="Microsoft.JScript.JSBuiltin.Date_getDay" />
+      <MemberSignature Language="C++ CLI" Value="Date_getDay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -282,6 +348,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getDay(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -291,6 +358,9 @@
       <MemberSignature Language="C#" Value="Date_getFullYear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getFullYear = int32(17)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getFullYear" />
+      <MemberSignature Language="VB.NET" Value="Date_getFullYear" />
+      <MemberSignature Language="F#" Value="Date_getFullYear = 17" Usage="Microsoft.JScript.JSBuiltin.Date_getFullYear" />
+      <MemberSignature Language="C++ CLI" Value="Date_getFullYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -299,6 +369,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getFullYear(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -308,6 +379,9 @@
       <MemberSignature Language="C#" Value="Date_getHours" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getHours = int32(18)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getHours" />
+      <MemberSignature Language="VB.NET" Value="Date_getHours" />
+      <MemberSignature Language="F#" Value="Date_getHours = 18" Usage="Microsoft.JScript.JSBuiltin.Date_getHours" />
+      <MemberSignature Language="C++ CLI" Value="Date_getHours" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -316,6 +390,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getHours(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -325,6 +400,9 @@
       <MemberSignature Language="C#" Value="Date_getMilliseconds" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getMilliseconds = int32(19)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getMilliseconds" />
+      <MemberSignature Language="VB.NET" Value="Date_getMilliseconds" />
+      <MemberSignature Language="F#" Value="Date_getMilliseconds = 19" Usage="Microsoft.JScript.JSBuiltin.Date_getMilliseconds" />
+      <MemberSignature Language="C++ CLI" Value="Date_getMilliseconds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -333,6 +411,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getMilliseconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -342,6 +421,9 @@
       <MemberSignature Language="C#" Value="Date_getMinutes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getMinutes = int32(20)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getMinutes" />
+      <MemberSignature Language="VB.NET" Value="Date_getMinutes" />
+      <MemberSignature Language="F#" Value="Date_getMinutes = 20" Usage="Microsoft.JScript.JSBuiltin.Date_getMinutes" />
+      <MemberSignature Language="C++ CLI" Value="Date_getMinutes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -350,6 +432,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getMinutes(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -359,6 +442,9 @@
       <MemberSignature Language="C#" Value="Date_getMonth" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getMonth = int32(21)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getMonth" />
+      <MemberSignature Language="VB.NET" Value="Date_getMonth" />
+      <MemberSignature Language="F#" Value="Date_getMonth = 21" Usage="Microsoft.JScript.JSBuiltin.Date_getMonth" />
+      <MemberSignature Language="C++ CLI" Value="Date_getMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -367,6 +453,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getMonth(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -376,6 +463,9 @@
       <MemberSignature Language="C#" Value="Date_getSeconds" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getSeconds = int32(22)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getSeconds" />
+      <MemberSignature Language="VB.NET" Value="Date_getSeconds" />
+      <MemberSignature Language="F#" Value="Date_getSeconds = 22" Usage="Microsoft.JScript.JSBuiltin.Date_getSeconds" />
+      <MemberSignature Language="C++ CLI" Value="Date_getSeconds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -384,6 +474,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getSeconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -393,6 +484,9 @@
       <MemberSignature Language="C#" Value="Date_getTime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getTime = int32(23)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getTime" />
+      <MemberSignature Language="VB.NET" Value="Date_getTime" />
+      <MemberSignature Language="F#" Value="Date_getTime = 23" Usage="Microsoft.JScript.JSBuiltin.Date_getTime" />
+      <MemberSignature Language="C++ CLI" Value="Date_getTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -401,6 +495,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getTime(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -410,6 +505,9 @@
       <MemberSignature Language="C#" Value="Date_getTimezoneOffset" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getTimezoneOffset = int32(24)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getTimezoneOffset" />
+      <MemberSignature Language="VB.NET" Value="Date_getTimezoneOffset" />
+      <MemberSignature Language="F#" Value="Date_getTimezoneOffset = 24" Usage="Microsoft.JScript.JSBuiltin.Date_getTimezoneOffset" />
+      <MemberSignature Language="C++ CLI" Value="Date_getTimezoneOffset" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -418,6 +516,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getTimezoneOffset(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -427,6 +526,9 @@
       <MemberSignature Language="C#" Value="Date_getUTCDate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getUTCDate = int32(25)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getUTCDate" />
+      <MemberSignature Language="VB.NET" Value="Date_getUTCDate" />
+      <MemberSignature Language="F#" Value="Date_getUTCDate = 25" Usage="Microsoft.JScript.JSBuiltin.Date_getUTCDate" />
+      <MemberSignature Language="C++ CLI" Value="Date_getUTCDate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -435,6 +537,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCDate(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -444,6 +547,9 @@
       <MemberSignature Language="C#" Value="Date_getUTCDay" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getUTCDay = int32(26)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getUTCDay" />
+      <MemberSignature Language="VB.NET" Value="Date_getUTCDay" />
+      <MemberSignature Language="F#" Value="Date_getUTCDay = 26" Usage="Microsoft.JScript.JSBuiltin.Date_getUTCDay" />
+      <MemberSignature Language="C++ CLI" Value="Date_getUTCDay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -452,6 +558,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCDay(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -461,6 +568,9 @@
       <MemberSignature Language="C#" Value="Date_getUTCFullYear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getUTCFullYear = int32(27)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getUTCFullYear" />
+      <MemberSignature Language="VB.NET" Value="Date_getUTCFullYear" />
+      <MemberSignature Language="F#" Value="Date_getUTCFullYear = 27" Usage="Microsoft.JScript.JSBuiltin.Date_getUTCFullYear" />
+      <MemberSignature Language="C++ CLI" Value="Date_getUTCFullYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -469,6 +579,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>27</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCFullYear(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -478,6 +589,9 @@
       <MemberSignature Language="C#" Value="Date_getUTCHours" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getUTCHours = int32(28)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getUTCHours" />
+      <MemberSignature Language="VB.NET" Value="Date_getUTCHours" />
+      <MemberSignature Language="F#" Value="Date_getUTCHours = 28" Usage="Microsoft.JScript.JSBuiltin.Date_getUTCHours" />
+      <MemberSignature Language="C++ CLI" Value="Date_getUTCHours" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -486,6 +600,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>28</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCHours(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -495,6 +610,9 @@
       <MemberSignature Language="C#" Value="Date_getUTCMilliseconds" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getUTCMilliseconds = int32(29)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getUTCMilliseconds" />
+      <MemberSignature Language="VB.NET" Value="Date_getUTCMilliseconds" />
+      <MemberSignature Language="F#" Value="Date_getUTCMilliseconds = 29" Usage="Microsoft.JScript.JSBuiltin.Date_getUTCMilliseconds" />
+      <MemberSignature Language="C++ CLI" Value="Date_getUTCMilliseconds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -503,6 +621,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>29</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCMilliseconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -512,6 +631,9 @@
       <MemberSignature Language="C#" Value="Date_getUTCMinutes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getUTCMinutes = int32(30)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getUTCMinutes" />
+      <MemberSignature Language="VB.NET" Value="Date_getUTCMinutes" />
+      <MemberSignature Language="F#" Value="Date_getUTCMinutes = 30" Usage="Microsoft.JScript.JSBuiltin.Date_getUTCMinutes" />
+      <MemberSignature Language="C++ CLI" Value="Date_getUTCMinutes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -520,6 +642,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCMinutes(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -529,6 +652,9 @@
       <MemberSignature Language="C#" Value="Date_getUTCMonth" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getUTCMonth = int32(31)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getUTCMonth" />
+      <MemberSignature Language="VB.NET" Value="Date_getUTCMonth" />
+      <MemberSignature Language="F#" Value="Date_getUTCMonth = 31" Usage="Microsoft.JScript.JSBuiltin.Date_getUTCMonth" />
+      <MemberSignature Language="C++ CLI" Value="Date_getUTCMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -537,6 +663,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>31</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCMonth(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -546,6 +673,9 @@
       <MemberSignature Language="C#" Value="Date_getUTCSeconds" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getUTCSeconds = int32(32)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getUTCSeconds" />
+      <MemberSignature Language="VB.NET" Value="Date_getUTCSeconds" />
+      <MemberSignature Language="F#" Value="Date_getUTCSeconds = 32" Usage="Microsoft.JScript.JSBuiltin.Date_getUTCSeconds" />
+      <MemberSignature Language="C++ CLI" Value="Date_getUTCSeconds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -554,6 +684,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getUTCSeconds(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -563,6 +694,9 @@
       <MemberSignature Language="C#" Value="Date_getVarDate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getVarDate = int32(33)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getVarDate" />
+      <MemberSignature Language="VB.NET" Value="Date_getVarDate" />
+      <MemberSignature Language="F#" Value="Date_getVarDate = 33" Usage="Microsoft.JScript.JSBuiltin.Date_getVarDate" />
+      <MemberSignature Language="C++ CLI" Value="Date_getVarDate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -571,6 +705,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>33</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getVarDate(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -580,6 +715,9 @@
       <MemberSignature Language="C#" Value="Date_getYear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_getYear = int32(34)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_getYear" />
+      <MemberSignature Language="VB.NET" Value="Date_getYear" />
+      <MemberSignature Language="F#" Value="Date_getYear = 34" Usage="Microsoft.JScript.JSBuiltin.Date_getYear" />
+      <MemberSignature Language="C++ CLI" Value="Date_getYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -588,6 +726,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>34</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.getYear(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -597,6 +736,9 @@
       <MemberSignature Language="C#" Value="Date_parse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_parse = int32(35)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_parse" />
+      <MemberSignature Language="VB.NET" Value="Date_parse" />
+      <MemberSignature Language="F#" Value="Date_parse = 35" Usage="Microsoft.JScript.JSBuiltin.Date_parse" />
+      <MemberSignature Language="C++ CLI" Value="Date_parse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -605,6 +747,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>35</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DateConstructor.parse(System.String)" /> method of the <see cref="T:Microsoft.JScript.DateConstructor" /> class.</summary>
         <forInternalUseOnly />
@@ -614,6 +757,9 @@
       <MemberSignature Language="C#" Value="Date_setDate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setDate = int32(36)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setDate" />
+      <MemberSignature Language="VB.NET" Value="Date_setDate" />
+      <MemberSignature Language="F#" Value="Date_setDate = 36" Usage="Microsoft.JScript.JSBuiltin.Date_setDate" />
+      <MemberSignature Language="C++ CLI" Value="Date_setDate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -622,6 +768,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>36</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setDate(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -631,6 +778,9 @@
       <MemberSignature Language="C#" Value="Date_setFullYear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setFullYear = int32(37)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setFullYear" />
+      <MemberSignature Language="VB.NET" Value="Date_setFullYear" />
+      <MemberSignature Language="F#" Value="Date_setFullYear = 37" Usage="Microsoft.JScript.JSBuiltin.Date_setFullYear" />
+      <MemberSignature Language="C++ CLI" Value="Date_setFullYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -639,6 +789,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>37</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setFullYear(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -648,6 +799,9 @@
       <MemberSignature Language="C#" Value="Date_setHours" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setHours = int32(38)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setHours" />
+      <MemberSignature Language="VB.NET" Value="Date_setHours" />
+      <MemberSignature Language="F#" Value="Date_setHours = 38" Usage="Microsoft.JScript.JSBuiltin.Date_setHours" />
+      <MemberSignature Language="C++ CLI" Value="Date_setHours" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -656,6 +810,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>38</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setHours(System.Object,System.Double,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -665,6 +820,9 @@
       <MemberSignature Language="C#" Value="Date_setMilliseconds" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setMilliseconds = int32(40)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setMilliseconds" />
+      <MemberSignature Language="VB.NET" Value="Date_setMilliseconds" />
+      <MemberSignature Language="F#" Value="Date_setMilliseconds = 40" Usage="Microsoft.JScript.JSBuiltin.Date_setMilliseconds" />
+      <MemberSignature Language="C++ CLI" Value="Date_setMilliseconds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -673,6 +831,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>40</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setMilliseconds(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -682,6 +841,9 @@
       <MemberSignature Language="C#" Value="Date_setMinutes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setMinutes = int32(39)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setMinutes" />
+      <MemberSignature Language="VB.NET" Value="Date_setMinutes" />
+      <MemberSignature Language="F#" Value="Date_setMinutes = 39" Usage="Microsoft.JScript.JSBuiltin.Date_setMinutes" />
+      <MemberSignature Language="C++ CLI" Value="Date_setMinutes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -690,6 +852,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>39</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setMinutes(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -699,6 +862,9 @@
       <MemberSignature Language="C#" Value="Date_setMonth" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setMonth = int32(41)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setMonth" />
+      <MemberSignature Language="VB.NET" Value="Date_setMonth" />
+      <MemberSignature Language="F#" Value="Date_setMonth = 41" Usage="Microsoft.JScript.JSBuiltin.Date_setMonth" />
+      <MemberSignature Language="C++ CLI" Value="Date_setMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -707,6 +873,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>41</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setMonth(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -716,6 +883,9 @@
       <MemberSignature Language="C#" Value="Date_setSeconds" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setSeconds = int32(42)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setSeconds" />
+      <MemberSignature Language="VB.NET" Value="Date_setSeconds" />
+      <MemberSignature Language="F#" Value="Date_setSeconds = 42" Usage="Microsoft.JScript.JSBuiltin.Date_setSeconds" />
+      <MemberSignature Language="C++ CLI" Value="Date_setSeconds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -724,6 +894,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>42</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setSeconds(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -733,6 +904,9 @@
       <MemberSignature Language="C#" Value="Date_setTime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setTime = int32(43)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setTime" />
+      <MemberSignature Language="VB.NET" Value="Date_setTime" />
+      <MemberSignature Language="F#" Value="Date_setTime = 43" Usage="Microsoft.JScript.JSBuiltin.Date_setTime" />
+      <MemberSignature Language="C++ CLI" Value="Date_setTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -741,6 +915,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>43</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setTime(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -750,6 +925,9 @@
       <MemberSignature Language="C#" Value="Date_setUTCDate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setUTCDate = int32(44)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setUTCDate" />
+      <MemberSignature Language="VB.NET" Value="Date_setUTCDate" />
+      <MemberSignature Language="F#" Value="Date_setUTCDate = 44" Usage="Microsoft.JScript.JSBuiltin.Date_setUTCDate" />
+      <MemberSignature Language="C++ CLI" Value="Date_setUTCDate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -758,6 +936,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>44</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCDate(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -767,6 +946,9 @@
       <MemberSignature Language="C#" Value="Date_setUTCFullYear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setUTCFullYear = int32(45)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setUTCFullYear" />
+      <MemberSignature Language="VB.NET" Value="Date_setUTCFullYear" />
+      <MemberSignature Language="F#" Value="Date_setUTCFullYear = 45" Usage="Microsoft.JScript.JSBuiltin.Date_setUTCFullYear" />
+      <MemberSignature Language="C++ CLI" Value="Date_setUTCFullYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -775,6 +957,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>45</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCFullYear(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -784,6 +967,9 @@
       <MemberSignature Language="C#" Value="Date_setUTCHours" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setUTCHours = int32(46)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setUTCHours" />
+      <MemberSignature Language="VB.NET" Value="Date_setUTCHours" />
+      <MemberSignature Language="F#" Value="Date_setUTCHours = 46" Usage="Microsoft.JScript.JSBuiltin.Date_setUTCHours" />
+      <MemberSignature Language="C++ CLI" Value="Date_setUTCHours" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -792,6 +978,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>46</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCHours(System.Object,System.Double,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -801,6 +988,9 @@
       <MemberSignature Language="C#" Value="Date_setUTCMilliseconds" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setUTCMilliseconds = int32(48)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setUTCMilliseconds" />
+      <MemberSignature Language="VB.NET" Value="Date_setUTCMilliseconds" />
+      <MemberSignature Language="F#" Value="Date_setUTCMilliseconds = 48" Usage="Microsoft.JScript.JSBuiltin.Date_setUTCMilliseconds" />
+      <MemberSignature Language="C++ CLI" Value="Date_setUTCMilliseconds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -809,6 +999,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCMilliseconds(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -818,6 +1009,9 @@
       <MemberSignature Language="C#" Value="Date_setUTCMinutes" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setUTCMinutes = int32(47)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setUTCMinutes" />
+      <MemberSignature Language="VB.NET" Value="Date_setUTCMinutes" />
+      <MemberSignature Language="F#" Value="Date_setUTCMinutes = 47" Usage="Microsoft.JScript.JSBuiltin.Date_setUTCMinutes" />
+      <MemberSignature Language="C++ CLI" Value="Date_setUTCMinutes" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -826,6 +1020,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>47</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCMinutes(System.Object,System.Double,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -835,6 +1030,9 @@
       <MemberSignature Language="C#" Value="Date_setUTCMonth" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setUTCMonth = int32(49)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setUTCMonth" />
+      <MemberSignature Language="VB.NET" Value="Date_setUTCMonth" />
+      <MemberSignature Language="F#" Value="Date_setUTCMonth = 49" Usage="Microsoft.JScript.JSBuiltin.Date_setUTCMonth" />
+      <MemberSignature Language="C++ CLI" Value="Date_setUTCMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -843,6 +1041,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>49</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCMonth(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -852,6 +1051,9 @@
       <MemberSignature Language="C#" Value="Date_setUTCSeconds" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setUTCSeconds = int32(50)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setUTCSeconds" />
+      <MemberSignature Language="VB.NET" Value="Date_setUTCSeconds" />
+      <MemberSignature Language="F#" Value="Date_setUTCSeconds = 50" Usage="Microsoft.JScript.JSBuiltin.Date_setUTCSeconds" />
+      <MemberSignature Language="C++ CLI" Value="Date_setUTCSeconds" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -860,6 +1062,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>50</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setUTCSeconds(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -869,6 +1072,9 @@
       <MemberSignature Language="C#" Value="Date_setYear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_setYear = int32(51)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_setYear" />
+      <MemberSignature Language="VB.NET" Value="Date_setYear" />
+      <MemberSignature Language="F#" Value="Date_setYear = 51" Usage="Microsoft.JScript.JSBuiltin.Date_setYear" />
+      <MemberSignature Language="C++ CLI" Value="Date_setYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -877,6 +1083,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>51</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.setYear(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -886,6 +1093,9 @@
       <MemberSignature Language="C#" Value="Date_toDateString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_toDateString = int32(52)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_toDateString" />
+      <MemberSignature Language="VB.NET" Value="Date_toDateString" />
+      <MemberSignature Language="F#" Value="Date_toDateString = 52" Usage="Microsoft.JScript.JSBuiltin.Date_toDateString" />
+      <MemberSignature Language="C++ CLI" Value="Date_toDateString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -894,6 +1104,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>52</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toDateString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -903,6 +1114,9 @@
       <MemberSignature Language="C#" Value="Date_toGMTString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_toGMTString = int32(53)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_toGMTString" />
+      <MemberSignature Language="VB.NET" Value="Date_toGMTString" />
+      <MemberSignature Language="F#" Value="Date_toGMTString = 53" Usage="Microsoft.JScript.JSBuiltin.Date_toGMTString" />
+      <MemberSignature Language="C++ CLI" Value="Date_toGMTString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -911,6 +1125,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>53</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toGMTString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -920,6 +1135,9 @@
       <MemberSignature Language="C#" Value="Date_toLocaleDateString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_toLocaleDateString = int32(54)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_toLocaleDateString" />
+      <MemberSignature Language="VB.NET" Value="Date_toLocaleDateString" />
+      <MemberSignature Language="F#" Value="Date_toLocaleDateString = 54" Usage="Microsoft.JScript.JSBuiltin.Date_toLocaleDateString" />
+      <MemberSignature Language="C++ CLI" Value="Date_toLocaleDateString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -928,6 +1146,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>54</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toLocaleDateString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -937,6 +1156,9 @@
       <MemberSignature Language="C#" Value="Date_toLocaleString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_toLocaleString = int32(55)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_toLocaleString" />
+      <MemberSignature Language="VB.NET" Value="Date_toLocaleString" />
+      <MemberSignature Language="F#" Value="Date_toLocaleString = 55" Usage="Microsoft.JScript.JSBuiltin.Date_toLocaleString" />
+      <MemberSignature Language="C++ CLI" Value="Date_toLocaleString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -945,6 +1167,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>55</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -954,6 +1177,9 @@
       <MemberSignature Language="C#" Value="Date_toLocaleTimeString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_toLocaleTimeString = int32(56)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_toLocaleTimeString" />
+      <MemberSignature Language="VB.NET" Value="Date_toLocaleTimeString" />
+      <MemberSignature Language="F#" Value="Date_toLocaleTimeString = 56" Usage="Microsoft.JScript.JSBuiltin.Date_toLocaleTimeString" />
+      <MemberSignature Language="C++ CLI" Value="Date_toLocaleTimeString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -962,6 +1188,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>56</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toLocaleTimeString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -971,6 +1198,9 @@
       <MemberSignature Language="C#" Value="Date_toString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_toString = int32(57)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_toString" />
+      <MemberSignature Language="VB.NET" Value="Date_toString" />
+      <MemberSignature Language="F#" Value="Date_toString = 57" Usage="Microsoft.JScript.JSBuiltin.Date_toString" />
+      <MemberSignature Language="C++ CLI" Value="Date_toString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -979,6 +1209,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>57</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -988,6 +1219,9 @@
       <MemberSignature Language="C#" Value="Date_toTimeString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_toTimeString = int32(58)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_toTimeString" />
+      <MemberSignature Language="VB.NET" Value="Date_toTimeString" />
+      <MemberSignature Language="F#" Value="Date_toTimeString = 58" Usage="Microsoft.JScript.JSBuiltin.Date_toTimeString" />
+      <MemberSignature Language="C++ CLI" Value="Date_toTimeString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -996,6 +1230,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>58</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toTimeString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1005,6 +1240,9 @@
       <MemberSignature Language="C#" Value="Date_toUTCString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_toUTCString = int32(59)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_toUTCString" />
+      <MemberSignature Language="VB.NET" Value="Date_toUTCString" />
+      <MemberSignature Language="F#" Value="Date_toUTCString = 59" Usage="Microsoft.JScript.JSBuiltin.Date_toUTCString" />
+      <MemberSignature Language="C++ CLI" Value="Date_toUTCString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1013,6 +1251,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>59</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.toUTCString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1022,6 +1261,9 @@
       <MemberSignature Language="C#" Value="Date_UTC" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_UTC = int32(60)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_UTC" />
+      <MemberSignature Language="VB.NET" Value="Date_UTC" />
+      <MemberSignature Language="F#" Value="Date_UTC = 60" Usage="Microsoft.JScript.JSBuiltin.Date_UTC" />
+      <MemberSignature Language="C++ CLI" Value="Date_UTC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1030,6 +1272,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>60</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DateConstructor.UTC(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.DateConstructor" /> class.</summary>
         <forInternalUseOnly />
@@ -1039,6 +1282,9 @@
       <MemberSignature Language="C#" Value="Date_valueOf" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Date_valueOf = int32(61)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Date_valueOf" />
+      <MemberSignature Language="VB.NET" Value="Date_valueOf" />
+      <MemberSignature Language="F#" Value="Date_valueOf = 61" Usage="Microsoft.JScript.JSBuiltin.Date_valueOf" />
+      <MemberSignature Language="C++ CLI" Value="Date_valueOf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1047,6 +1293,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>61</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.DatePrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.DatePrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1056,6 +1303,9 @@
       <MemberSignature Language="C#" Value="Enumerator_atEnd" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Enumerator_atEnd = int32(62)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Enumerator_atEnd" />
+      <MemberSignature Language="VB.NET" Value="Enumerator_atEnd" />
+      <MemberSignature Language="F#" Value="Enumerator_atEnd = 62" Usage="Microsoft.JScript.JSBuiltin.Enumerator_atEnd" />
+      <MemberSignature Language="C++ CLI" Value="Enumerator_atEnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1064,6 +1314,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>62</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.EnumeratorPrototype.atEnd(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1073,6 +1324,9 @@
       <MemberSignature Language="C#" Value="Enumerator_item" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Enumerator_item = int32(63)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Enumerator_item" />
+      <MemberSignature Language="VB.NET" Value="Enumerator_item" />
+      <MemberSignature Language="F#" Value="Enumerator_item = 63" Usage="Microsoft.JScript.JSBuiltin.Enumerator_item" />
+      <MemberSignature Language="C++ CLI" Value="Enumerator_item" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1081,6 +1335,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>63</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.EnumeratorPrototype.item(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1090,6 +1345,9 @@
       <MemberSignature Language="C#" Value="Enumerator_moveFirst" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Enumerator_moveFirst = int32(64)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Enumerator_moveFirst" />
+      <MemberSignature Language="VB.NET" Value="Enumerator_moveFirst" />
+      <MemberSignature Language="F#" Value="Enumerator_moveFirst = 64" Usage="Microsoft.JScript.JSBuiltin.Enumerator_moveFirst" />
+      <MemberSignature Language="C++ CLI" Value="Enumerator_moveFirst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1098,6 +1356,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.EnumeratorPrototype.moveFirst(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1107,6 +1366,9 @@
       <MemberSignature Language="C#" Value="Enumerator_moveNext" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Enumerator_moveNext = int32(65)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Enumerator_moveNext" />
+      <MemberSignature Language="VB.NET" Value="Enumerator_moveNext" />
+      <MemberSignature Language="F#" Value="Enumerator_moveNext = 65" Usage="Microsoft.JScript.JSBuiltin.Enumerator_moveNext" />
+      <MemberSignature Language="C++ CLI" Value="Enumerator_moveNext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1115,6 +1377,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>65</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.EnumeratorPrototype.moveNext(System.Object)" /> method of the <see cref="T:Microsoft.JScript.EnumeratorPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1124,6 +1387,9 @@
       <MemberSignature Language="C#" Value="Error_toString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Error_toString = int32(66)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Error_toString" />
+      <MemberSignature Language="VB.NET" Value="Error_toString" />
+      <MemberSignature Language="F#" Value="Error_toString = 66" Usage="Microsoft.JScript.JSBuiltin.Error_toString" />
+      <MemberSignature Language="C++ CLI" Value="Error_toString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1132,6 +1398,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>66</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ErrorPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ErrorPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1141,6 +1408,9 @@
       <MemberSignature Language="C#" Value="Function_apply" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Function_apply = int32(67)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Function_apply" />
+      <MemberSignature Language="VB.NET" Value="Function_apply" />
+      <MemberSignature Language="F#" Value="Function_apply = 67" Usage="Microsoft.JScript.JSBuiltin.Function_apply" />
+      <MemberSignature Language="C++ CLI" Value="Function_apply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1149,6 +1419,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>67</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.FunctionPrototype.apply(System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.FunctionPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1158,6 +1429,9 @@
       <MemberSignature Language="C#" Value="Function_call" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Function_call = int32(68)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Function_call" />
+      <MemberSignature Language="VB.NET" Value="Function_call" />
+      <MemberSignature Language="F#" Value="Function_call = 68" Usage="Microsoft.JScript.JSBuiltin.Function_call" />
+      <MemberSignature Language="C++ CLI" Value="Function_call" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1166,6 +1440,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>68</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.FunctionPrototype.call(System.Object,System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.FunctionPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1175,6 +1450,9 @@
       <MemberSignature Language="C#" Value="Function_toString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Function_toString = int32(69)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Function_toString" />
+      <MemberSignature Language="VB.NET" Value="Function_toString" />
+      <MemberSignature Language="F#" Value="Function_toString = 69" Usage="Microsoft.JScript.JSBuiltin.Function_toString" />
+      <MemberSignature Language="C++ CLI" Value="Function_toString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1183,6 +1461,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>69</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.FunctionPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.FunctionPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1192,6 +1471,9 @@
       <MemberSignature Language="C#" Value="Global_CollectGarbage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_CollectGarbage = int32(70)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_CollectGarbage" />
+      <MemberSignature Language="VB.NET" Value="Global_CollectGarbage" />
+      <MemberSignature Language="F#" Value="Global_CollectGarbage = 70" Usage="Microsoft.JScript.JSBuiltin.Global_CollectGarbage" />
+      <MemberSignature Language="C++ CLI" Value="Global_CollectGarbage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1200,6 +1482,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>70</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.CollectGarbage" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1209,6 +1492,9 @@
       <MemberSignature Language="C#" Value="Global_decodeURI" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_decodeURI = int32(71)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_decodeURI" />
+      <MemberSignature Language="VB.NET" Value="Global_decodeURI" />
+      <MemberSignature Language="F#" Value="Global_decodeURI = 71" Usage="Microsoft.JScript.JSBuiltin.Global_decodeURI" />
+      <MemberSignature Language="C++ CLI" Value="Global_decodeURI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1217,6 +1503,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>71</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.decodeURI(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1226,6 +1513,9 @@
       <MemberSignature Language="C#" Value="Global_decodeURIComponent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_decodeURIComponent = int32(72)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_decodeURIComponent" />
+      <MemberSignature Language="VB.NET" Value="Global_decodeURIComponent" />
+      <MemberSignature Language="F#" Value="Global_decodeURIComponent = 72" Usage="Microsoft.JScript.JSBuiltin.Global_decodeURIComponent" />
+      <MemberSignature Language="C++ CLI" Value="Global_decodeURIComponent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1234,6 +1524,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>72</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.decodeURIComponent(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1243,6 +1534,9 @@
       <MemberSignature Language="C#" Value="Global_encodeURI" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_encodeURI = int32(73)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_encodeURI" />
+      <MemberSignature Language="VB.NET" Value="Global_encodeURI" />
+      <MemberSignature Language="F#" Value="Global_encodeURI = 73" Usage="Microsoft.JScript.JSBuiltin.Global_encodeURI" />
+      <MemberSignature Language="C++ CLI" Value="Global_encodeURI" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1251,6 +1545,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>73</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.encodeURI(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1260,6 +1555,9 @@
       <MemberSignature Language="C#" Value="Global_encodeURIComponent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_encodeURIComponent = int32(74)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_encodeURIComponent" />
+      <MemberSignature Language="VB.NET" Value="Global_encodeURIComponent" />
+      <MemberSignature Language="F#" Value="Global_encodeURIComponent = 74" Usage="Microsoft.JScript.JSBuiltin.Global_encodeURIComponent" />
+      <MemberSignature Language="C++ CLI" Value="Global_encodeURIComponent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1268,6 +1566,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>74</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.encodeURIComponent(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1277,6 +1576,9 @@
       <MemberSignature Language="C#" Value="Global_escape" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_escape = int32(75)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_escape" />
+      <MemberSignature Language="VB.NET" Value="Global_escape" />
+      <MemberSignature Language="F#" Value="Global_escape = 75" Usage="Microsoft.JScript.JSBuiltin.Global_escape" />
+      <MemberSignature Language="C++ CLI" Value="Global_escape" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1285,6 +1587,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>75</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.escape(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1294,6 +1597,9 @@
       <MemberSignature Language="C#" Value="Global_eval" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_eval = int32(76)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_eval" />
+      <MemberSignature Language="VB.NET" Value="Global_eval" />
+      <MemberSignature Language="F#" Value="Global_eval = 76" Usage="Microsoft.JScript.JSBuiltin.Global_eval" />
+      <MemberSignature Language="C++ CLI" Value="Global_eval" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1302,6 +1608,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>76</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.eval(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1311,6 +1618,9 @@
       <MemberSignature Language="C#" Value="Global_GetObject" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_GetObject = int32(77)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_GetObject" />
+      <MemberSignature Language="VB.NET" Value="Global_GetObject" />
+      <MemberSignature Language="F#" Value="Global_GetObject = 77" Usage="Microsoft.JScript.JSBuiltin.Global_GetObject" />
+      <MemberSignature Language="C++ CLI" Value="Global_GetObject" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1319,6 +1629,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>77</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.GetObject(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1328,6 +1639,9 @@
       <MemberSignature Language="C#" Value="Global_isFinite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_isFinite = int32(79)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_isFinite" />
+      <MemberSignature Language="VB.NET" Value="Global_isFinite" />
+      <MemberSignature Language="F#" Value="Global_isFinite = 79" Usage="Microsoft.JScript.JSBuiltin.Global_isFinite" />
+      <MemberSignature Language="C++ CLI" Value="Global_isFinite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1336,6 +1650,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>79</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.isFinite(System.Double)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1345,6 +1660,9 @@
       <MemberSignature Language="C#" Value="Global_isNaN" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_isNaN = int32(78)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_isNaN" />
+      <MemberSignature Language="VB.NET" Value="Global_isNaN" />
+      <MemberSignature Language="F#" Value="Global_isNaN = 78" Usage="Microsoft.JScript.JSBuiltin.Global_isNaN" />
+      <MemberSignature Language="C++ CLI" Value="Global_isNaN" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1353,6 +1671,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>78</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.isNaN(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1362,6 +1681,9 @@
       <MemberSignature Language="C#" Value="Global_parseFloat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_parseFloat = int32(80)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_parseFloat" />
+      <MemberSignature Language="VB.NET" Value="Global_parseFloat" />
+      <MemberSignature Language="F#" Value="Global_parseFloat = 80" Usage="Microsoft.JScript.JSBuiltin.Global_parseFloat" />
+      <MemberSignature Language="C++ CLI" Value="Global_parseFloat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1370,6 +1692,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>80</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.parseFloat(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1379,6 +1702,9 @@
       <MemberSignature Language="C#" Value="Global_parseInt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_parseInt = int32(81)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_parseInt" />
+      <MemberSignature Language="VB.NET" Value="Global_parseInt" />
+      <MemberSignature Language="F#" Value="Global_parseInt = 81" Usage="Microsoft.JScript.JSBuiltin.Global_parseInt" />
+      <MemberSignature Language="C++ CLI" Value="Global_parseInt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1387,6 +1713,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>81</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.parseInt(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1396,6 +1723,9 @@
       <MemberSignature Language="C#" Value="Global_ScriptEngine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_ScriptEngine = int32(82)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_ScriptEngine" />
+      <MemberSignature Language="VB.NET" Value="Global_ScriptEngine" />
+      <MemberSignature Language="F#" Value="Global_ScriptEngine = 82" Usage="Microsoft.JScript.JSBuiltin.Global_ScriptEngine" />
+      <MemberSignature Language="C++ CLI" Value="Global_ScriptEngine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1404,6 +1734,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>82</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngine" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1413,6 +1744,9 @@
       <MemberSignature Language="C#" Value="Global_ScriptEngineBuildVersion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_ScriptEngineBuildVersion = int32(83)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_ScriptEngineBuildVersion" />
+      <MemberSignature Language="VB.NET" Value="Global_ScriptEngineBuildVersion" />
+      <MemberSignature Language="F#" Value="Global_ScriptEngineBuildVersion = 83" Usage="Microsoft.JScript.JSBuiltin.Global_ScriptEngineBuildVersion" />
+      <MemberSignature Language="C++ CLI" Value="Global_ScriptEngineBuildVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1421,6 +1755,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>83</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineBuildVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1430,6 +1765,9 @@
       <MemberSignature Language="C#" Value="Global_ScriptEngineMajorVersion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_ScriptEngineMajorVersion = int32(84)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_ScriptEngineMajorVersion" />
+      <MemberSignature Language="VB.NET" Value="Global_ScriptEngineMajorVersion" />
+      <MemberSignature Language="F#" Value="Global_ScriptEngineMajorVersion = 84" Usage="Microsoft.JScript.JSBuiltin.Global_ScriptEngineMajorVersion" />
+      <MemberSignature Language="C++ CLI" Value="Global_ScriptEngineMajorVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1438,6 +1776,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>84</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineMajorVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1447,6 +1786,9 @@
       <MemberSignature Language="C#" Value="Global_ScriptEngineMinorVersion" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_ScriptEngineMinorVersion = int32(85)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_ScriptEngineMinorVersion" />
+      <MemberSignature Language="VB.NET" Value="Global_ScriptEngineMinorVersion" />
+      <MemberSignature Language="F#" Value="Global_ScriptEngineMinorVersion = 85" Usage="Microsoft.JScript.JSBuiltin.Global_ScriptEngineMinorVersion" />
+      <MemberSignature Language="C++ CLI" Value="Global_ScriptEngineMinorVersion" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1455,6 +1797,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>85</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.ScriptEngineMinorVersion" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1464,6 +1807,9 @@
       <MemberSignature Language="C#" Value="Global_unescape" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Global_unescape = int32(86)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Global_unescape" />
+      <MemberSignature Language="VB.NET" Value="Global_unescape" />
+      <MemberSignature Language="F#" Value="Global_unescape = 86" Usage="Microsoft.JScript.JSBuiltin.Global_unescape" />
+      <MemberSignature Language="C++ CLI" Value="Global_unescape" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1472,6 +1818,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>86</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.GlobalObject.unescape(System.Object)" /> method of the <see cref="T:Microsoft.JScript.GlobalObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1481,6 +1828,9 @@
       <MemberSignature Language="C#" Value="Math_abs" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_abs = int32(87)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_abs" />
+      <MemberSignature Language="VB.NET" Value="Math_abs" />
+      <MemberSignature Language="F#" Value="Math_abs = 87" Usage="Microsoft.JScript.JSBuiltin.Math_abs" />
+      <MemberSignature Language="C++ CLI" Value="Math_abs" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1489,6 +1839,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>87</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.abs(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1498,6 +1849,9 @@
       <MemberSignature Language="C#" Value="Math_acos" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_acos = int32(88)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_acos" />
+      <MemberSignature Language="VB.NET" Value="Math_acos" />
+      <MemberSignature Language="F#" Value="Math_acos = 88" Usage="Microsoft.JScript.JSBuiltin.Math_acos" />
+      <MemberSignature Language="C++ CLI" Value="Math_acos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1506,6 +1860,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>88</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.acos(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1515,6 +1870,9 @@
       <MemberSignature Language="C#" Value="Math_asin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_asin = int32(89)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_asin" />
+      <MemberSignature Language="VB.NET" Value="Math_asin" />
+      <MemberSignature Language="F#" Value="Math_asin = 89" Usage="Microsoft.JScript.JSBuiltin.Math_asin" />
+      <MemberSignature Language="C++ CLI" Value="Math_asin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1523,6 +1881,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>89</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.asin(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1532,6 +1891,9 @@
       <MemberSignature Language="C#" Value="Math_atan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_atan = int32(90)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_atan" />
+      <MemberSignature Language="VB.NET" Value="Math_atan" />
+      <MemberSignature Language="F#" Value="Math_atan = 90" Usage="Microsoft.JScript.JSBuiltin.Math_atan" />
+      <MemberSignature Language="C++ CLI" Value="Math_atan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1540,6 +1902,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>90</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.atan(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1549,6 +1912,9 @@
       <MemberSignature Language="C#" Value="Math_atan2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_atan2 = int32(91)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_atan2" />
+      <MemberSignature Language="VB.NET" Value="Math_atan2" />
+      <MemberSignature Language="F#" Value="Math_atan2 = 91" Usage="Microsoft.JScript.JSBuiltin.Math_atan2" />
+      <MemberSignature Language="C++ CLI" Value="Math_atan2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1557,6 +1923,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>91</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.atan2(System.Double,System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1566,6 +1933,9 @@
       <MemberSignature Language="C#" Value="Math_ceil" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_ceil = int32(92)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_ceil" />
+      <MemberSignature Language="VB.NET" Value="Math_ceil" />
+      <MemberSignature Language="F#" Value="Math_ceil = 92" Usage="Microsoft.JScript.JSBuiltin.Math_ceil" />
+      <MemberSignature Language="C++ CLI" Value="Math_ceil" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1574,6 +1944,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>92</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.ceil(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1583,6 +1954,9 @@
       <MemberSignature Language="C#" Value="Math_cos" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_cos = int32(93)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_cos" />
+      <MemberSignature Language="VB.NET" Value="Math_cos" />
+      <MemberSignature Language="F#" Value="Math_cos = 93" Usage="Microsoft.JScript.JSBuiltin.Math_cos" />
+      <MemberSignature Language="C++ CLI" Value="Math_cos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1591,6 +1965,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>93</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.cos(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1600,6 +1975,9 @@
       <MemberSignature Language="C#" Value="Math_exp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_exp = int32(94)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_exp" />
+      <MemberSignature Language="VB.NET" Value="Math_exp" />
+      <MemberSignature Language="F#" Value="Math_exp = 94" Usage="Microsoft.JScript.JSBuiltin.Math_exp" />
+      <MemberSignature Language="C++ CLI" Value="Math_exp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1608,6 +1986,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>94</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.exp(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1617,6 +1996,9 @@
       <MemberSignature Language="C#" Value="Math_floor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_floor = int32(95)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_floor" />
+      <MemberSignature Language="VB.NET" Value="Math_floor" />
+      <MemberSignature Language="F#" Value="Math_floor = 95" Usage="Microsoft.JScript.JSBuiltin.Math_floor" />
+      <MemberSignature Language="C++ CLI" Value="Math_floor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1625,6 +2007,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>95</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.floor(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1634,6 +2017,9 @@
       <MemberSignature Language="C#" Value="Math_log" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_log = int32(96)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_log" />
+      <MemberSignature Language="VB.NET" Value="Math_log" />
+      <MemberSignature Language="F#" Value="Math_log = 96" Usage="Microsoft.JScript.JSBuiltin.Math_log" />
+      <MemberSignature Language="C++ CLI" Value="Math_log" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1642,6 +2028,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>96</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.log(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1651,6 +2038,9 @@
       <MemberSignature Language="C#" Value="Math_max" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_max = int32(97)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_max" />
+      <MemberSignature Language="VB.NET" Value="Math_max" />
+      <MemberSignature Language="F#" Value="Math_max = 97" Usage="Microsoft.JScript.JSBuiltin.Math_max" />
+      <MemberSignature Language="C++ CLI" Value="Math_max" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1659,6 +2049,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>97</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.max(System.Object,System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1668,6 +2059,9 @@
       <MemberSignature Language="C#" Value="Math_min" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_min = int32(98)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_min" />
+      <MemberSignature Language="VB.NET" Value="Math_min" />
+      <MemberSignature Language="F#" Value="Math_min = 98" Usage="Microsoft.JScript.JSBuiltin.Math_min" />
+      <MemberSignature Language="C++ CLI" Value="Math_min" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1676,6 +2070,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>98</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.min(System.Object,System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1685,6 +2080,9 @@
       <MemberSignature Language="C#" Value="Math_pow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_pow = int32(99)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_pow" />
+      <MemberSignature Language="VB.NET" Value="Math_pow" />
+      <MemberSignature Language="F#" Value="Math_pow = 99" Usage="Microsoft.JScript.JSBuiltin.Math_pow" />
+      <MemberSignature Language="C++ CLI" Value="Math_pow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1693,6 +2091,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>99</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.pow(System.Double,System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1702,6 +2101,9 @@
       <MemberSignature Language="C#" Value="Math_random" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_random = int32(100)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_random" />
+      <MemberSignature Language="VB.NET" Value="Math_random" />
+      <MemberSignature Language="F#" Value="Math_random = 100" Usage="Microsoft.JScript.JSBuiltin.Math_random" />
+      <MemberSignature Language="C++ CLI" Value="Math_random" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1710,6 +2112,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>100</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.random" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1719,6 +2122,9 @@
       <MemberSignature Language="C#" Value="Math_round" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_round = int32(101)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_round" />
+      <MemberSignature Language="VB.NET" Value="Math_round" />
+      <MemberSignature Language="F#" Value="Math_round = 101" Usage="Microsoft.JScript.JSBuiltin.Math_round" />
+      <MemberSignature Language="C++ CLI" Value="Math_round" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1727,6 +2133,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>101</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.round(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1736,6 +2143,9 @@
       <MemberSignature Language="C#" Value="Math_sin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_sin = int32(102)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_sin" />
+      <MemberSignature Language="VB.NET" Value="Math_sin" />
+      <MemberSignature Language="F#" Value="Math_sin = 102" Usage="Microsoft.JScript.JSBuiltin.Math_sin" />
+      <MemberSignature Language="C++ CLI" Value="Math_sin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1744,6 +2154,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>102</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.sin(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1753,6 +2164,9 @@
       <MemberSignature Language="C#" Value="Math_sqrt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_sqrt = int32(103)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_sqrt" />
+      <MemberSignature Language="VB.NET" Value="Math_sqrt" />
+      <MemberSignature Language="F#" Value="Math_sqrt = 103" Usage="Microsoft.JScript.JSBuiltin.Math_sqrt" />
+      <MemberSignature Language="C++ CLI" Value="Math_sqrt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1761,6 +2175,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>103</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.sqrt(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1770,6 +2185,9 @@
       <MemberSignature Language="C#" Value="Math_tan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Math_tan = int32(104)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Math_tan" />
+      <MemberSignature Language="VB.NET" Value="Math_tan" />
+      <MemberSignature Language="F#" Value="Math_tan = 104" Usage="Microsoft.JScript.JSBuiltin.Math_tan" />
+      <MemberSignature Language="C++ CLI" Value="Math_tan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1778,6 +2196,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>104</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.MathObject.tan(System.Double)" /> method of the <see cref="T:Microsoft.JScript.MathObject" /> class.</summary>
         <forInternalUseOnly />
@@ -1787,6 +2206,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.JScript.JSBuiltin.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1795,6 +2217,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No method. This is the default value.</summary>
         <forInternalUseOnly />
@@ -1804,6 +2227,9 @@
       <MemberSignature Language="C#" Value="Number_toExponential" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Number_toExponential = int32(105)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Number_toExponential" />
+      <MemberSignature Language="VB.NET" Value="Number_toExponential" />
+      <MemberSignature Language="F#" Value="Number_toExponential = 105" Usage="Microsoft.JScript.JSBuiltin.Number_toExponential" />
+      <MemberSignature Language="C++ CLI" Value="Number_toExponential" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1812,6 +2238,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>105</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.toExponential(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1821,6 +2248,9 @@
       <MemberSignature Language="C#" Value="Number_toFixed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Number_toFixed = int32(106)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Number_toFixed" />
+      <MemberSignature Language="VB.NET" Value="Number_toFixed" />
+      <MemberSignature Language="F#" Value="Number_toFixed = 106" Usage="Microsoft.JScript.JSBuiltin.Number_toFixed" />
+      <MemberSignature Language="C++ CLI" Value="Number_toFixed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1829,6 +2259,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>106</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.toFixed(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1838,6 +2269,9 @@
       <MemberSignature Language="C#" Value="Number_toLocaleString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Number_toLocaleString = int32(107)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Number_toLocaleString" />
+      <MemberSignature Language="VB.NET" Value="Number_toLocaleString" />
+      <MemberSignature Language="F#" Value="Number_toLocaleString = 107" Usage="Microsoft.JScript.JSBuiltin.Number_toLocaleString" />
+      <MemberSignature Language="C++ CLI" Value="Number_toLocaleString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1846,6 +2280,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>107</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1855,6 +2290,9 @@
       <MemberSignature Language="C#" Value="Number_toPrecision" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Number_toPrecision = int32(108)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Number_toPrecision" />
+      <MemberSignature Language="VB.NET" Value="Number_toPrecision" />
+      <MemberSignature Language="F#" Value="Number_toPrecision = 108" Usage="Microsoft.JScript.JSBuiltin.Number_toPrecision" />
+      <MemberSignature Language="C++ CLI" Value="Number_toPrecision" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1863,6 +2301,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>108</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.toPrecision(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1872,6 +2311,9 @@
       <MemberSignature Language="C#" Value="Number_toString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Number_toString = int32(109)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Number_toString" />
+      <MemberSignature Language="VB.NET" Value="Number_toString" />
+      <MemberSignature Language="F#" Value="Number_toString = 109" Usage="Microsoft.JScript.JSBuiltin.Number_toString" />
+      <MemberSignature Language="C++ CLI" Value="Number_toString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1880,6 +2322,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>109</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.toString(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1889,6 +2332,9 @@
       <MemberSignature Language="C#" Value="Number_valueOf" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Number_valueOf = int32(110)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Number_valueOf" />
+      <MemberSignature Language="VB.NET" Value="Number_valueOf" />
+      <MemberSignature Language="F#" Value="Number_valueOf = 110" Usage="Microsoft.JScript.JSBuiltin.Number_valueOf" />
+      <MemberSignature Language="C++ CLI" Value="Number_valueOf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1897,6 +2343,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>110</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.NumberPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.NumberPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1906,6 +2353,9 @@
       <MemberSignature Language="C#" Value="Object_hasOwnProperty" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Object_hasOwnProperty = int32(111)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Object_hasOwnProperty" />
+      <MemberSignature Language="VB.NET" Value="Object_hasOwnProperty" />
+      <MemberSignature Language="F#" Value="Object_hasOwnProperty = 111" Usage="Microsoft.JScript.JSBuiltin.Object_hasOwnProperty" />
+      <MemberSignature Language="C++ CLI" Value="Object_hasOwnProperty" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1914,6 +2364,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>111</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.hasOwnProperty(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1923,6 +2374,9 @@
       <MemberSignature Language="C#" Value="Object_isPrototypeOf" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Object_isPrototypeOf = int32(112)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Object_isPrototypeOf" />
+      <MemberSignature Language="VB.NET" Value="Object_isPrototypeOf" />
+      <MemberSignature Language="F#" Value="Object_isPrototypeOf = 112" Usage="Microsoft.JScript.JSBuiltin.Object_isPrototypeOf" />
+      <MemberSignature Language="C++ CLI" Value="Object_isPrototypeOf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1931,6 +2385,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>112</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.isPrototypeOf(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1940,6 +2395,9 @@
       <MemberSignature Language="C#" Value="Object_propertyIsEnumerable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Object_propertyIsEnumerable = int32(113)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Object_propertyIsEnumerable" />
+      <MemberSignature Language="VB.NET" Value="Object_propertyIsEnumerable" />
+      <MemberSignature Language="F#" Value="Object_propertyIsEnumerable = 113" Usage="Microsoft.JScript.JSBuiltin.Object_propertyIsEnumerable" />
+      <MemberSignature Language="C++ CLI" Value="Object_propertyIsEnumerable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1948,6 +2406,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>113</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.propertyIsEnumerable(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1957,6 +2416,9 @@
       <MemberSignature Language="C#" Value="Object_toLocaleString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Object_toLocaleString = int32(114)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Object_toLocaleString" />
+      <MemberSignature Language="VB.NET" Value="Object_toLocaleString" />
+      <MemberSignature Language="F#" Value="Object_toLocaleString = 114" Usage="Microsoft.JScript.JSBuiltin.Object_toLocaleString" />
+      <MemberSignature Language="C++ CLI" Value="Object_toLocaleString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1965,6 +2427,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>114</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.toLocaleString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1974,6 +2437,9 @@
       <MemberSignature Language="C#" Value="Object_toString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Object_toString = int32(115)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Object_toString" />
+      <MemberSignature Language="VB.NET" Value="Object_toString" />
+      <MemberSignature Language="F#" Value="Object_toString = 115" Usage="Microsoft.JScript.JSBuiltin.Object_toString" />
+      <MemberSignature Language="C++ CLI" Value="Object_toString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1982,6 +2448,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>115</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -1991,6 +2458,9 @@
       <MemberSignature Language="C#" Value="Object_valueOf" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin Object_valueOf = int32(116)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.Object_valueOf" />
+      <MemberSignature Language="VB.NET" Value="Object_valueOf" />
+      <MemberSignature Language="F#" Value="Object_valueOf = 116" Usage="Microsoft.JScript.JSBuiltin.Object_valueOf" />
+      <MemberSignature Language="C++ CLI" Value="Object_valueOf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -1999,6 +2469,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>116</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.ObjectPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.ObjectPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2008,6 +2479,9 @@
       <MemberSignature Language="C#" Value="RegExp_compile" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin RegExp_compile = int32(117)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.RegExp_compile" />
+      <MemberSignature Language="VB.NET" Value="RegExp_compile" />
+      <MemberSignature Language="F#" Value="RegExp_compile = 117" Usage="Microsoft.JScript.JSBuiltin.RegExp_compile" />
+      <MemberSignature Language="C++ CLI" Value="RegExp_compile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2016,6 +2490,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>117</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.RegExpPrototype.compile(System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.RegExpPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2025,6 +2500,9 @@
       <MemberSignature Language="C#" Value="RegExp_exec" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin RegExp_exec = int32(118)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.RegExp_exec" />
+      <MemberSignature Language="VB.NET" Value="RegExp_exec" />
+      <MemberSignature Language="F#" Value="RegExp_exec = 118" Usage="Microsoft.JScript.JSBuiltin.RegExp_exec" />
+      <MemberSignature Language="C++ CLI" Value="RegExp_exec" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2033,6 +2511,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>118</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.RegExpPrototype.exec(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.RegExpPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2042,6 +2521,9 @@
       <MemberSignature Language="C#" Value="RegExp_test" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin RegExp_test = int32(119)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.RegExp_test" />
+      <MemberSignature Language="VB.NET" Value="RegExp_test" />
+      <MemberSignature Language="F#" Value="RegExp_test = 119" Usage="Microsoft.JScript.JSBuiltin.RegExp_test" />
+      <MemberSignature Language="C++ CLI" Value="RegExp_test" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2050,6 +2532,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>119</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.RegExpPrototype.test(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.RegExpPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2059,6 +2542,9 @@
       <MemberSignature Language="C#" Value="RegExp_toString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin RegExp_toString = int32(120)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.RegExp_toString" />
+      <MemberSignature Language="VB.NET" Value="RegExp_toString" />
+      <MemberSignature Language="F#" Value="RegExp_toString = 120" Usage="Microsoft.JScript.JSBuiltin.RegExp_toString" />
+      <MemberSignature Language="C++ CLI" Value="RegExp_toString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2067,6 +2553,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>120</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.RegExpPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.RegExpPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2076,6 +2563,9 @@
       <MemberSignature Language="C#" Value="String_anchor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_anchor = int32(121)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_anchor" />
+      <MemberSignature Language="VB.NET" Value="String_anchor" />
+      <MemberSignature Language="F#" Value="String_anchor = 121" Usage="Microsoft.JScript.JSBuiltin.String_anchor" />
+      <MemberSignature Language="C++ CLI" Value="String_anchor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2084,6 +2574,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>121</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.anchor(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2093,6 +2584,9 @@
       <MemberSignature Language="C#" Value="String_big" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_big = int32(122)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_big" />
+      <MemberSignature Language="VB.NET" Value="String_big" />
+      <MemberSignature Language="F#" Value="String_big = 122" Usage="Microsoft.JScript.JSBuiltin.String_big" />
+      <MemberSignature Language="C++ CLI" Value="String_big" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2101,6 +2595,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>122</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.big(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2110,6 +2605,9 @@
       <MemberSignature Language="C#" Value="String_blink" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_blink = int32(123)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_blink" />
+      <MemberSignature Language="VB.NET" Value="String_blink" />
+      <MemberSignature Language="F#" Value="String_blink = 123" Usage="Microsoft.JScript.JSBuiltin.String_blink" />
+      <MemberSignature Language="C++ CLI" Value="String_blink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2118,6 +2616,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>123</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.blink(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2127,6 +2626,9 @@
       <MemberSignature Language="C#" Value="String_bold" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_bold = int32(124)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_bold" />
+      <MemberSignature Language="VB.NET" Value="String_bold" />
+      <MemberSignature Language="F#" Value="String_bold = 124" Usage="Microsoft.JScript.JSBuiltin.String_bold" />
+      <MemberSignature Language="C++ CLI" Value="String_bold" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2135,6 +2637,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>124</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.bold(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2144,6 +2647,9 @@
       <MemberSignature Language="C#" Value="String_charAt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_charAt = int32(125)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_charAt" />
+      <MemberSignature Language="VB.NET" Value="String_charAt" />
+      <MemberSignature Language="F#" Value="String_charAt = 125" Usage="Microsoft.JScript.JSBuiltin.String_charAt" />
+      <MemberSignature Language="C++ CLI" Value="String_charAt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2152,6 +2658,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>125</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.charAt(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2161,6 +2668,9 @@
       <MemberSignature Language="C#" Value="String_charCodeAt" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_charCodeAt = int32(126)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_charCodeAt" />
+      <MemberSignature Language="VB.NET" Value="String_charCodeAt" />
+      <MemberSignature Language="F#" Value="String_charCodeAt = 126" Usage="Microsoft.JScript.JSBuiltin.String_charCodeAt" />
+      <MemberSignature Language="C++ CLI" Value="String_charCodeAt" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2169,6 +2679,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>126</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.charCodeAt(System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2178,6 +2689,9 @@
       <MemberSignature Language="C#" Value="String_concat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_concat = int32(127)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_concat" />
+      <MemberSignature Language="VB.NET" Value="String_concat" />
+      <MemberSignature Language="F#" Value="String_concat = 127" Usage="Microsoft.JScript.JSBuiltin.String_concat" />
+      <MemberSignature Language="C++ CLI" Value="String_concat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2186,6 +2700,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>127</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.concat(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2195,6 +2710,9 @@
       <MemberSignature Language="C#" Value="String_fixed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_fixed = int32(128)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_fixed" />
+      <MemberSignature Language="VB.NET" Value="String_fixed" />
+      <MemberSignature Language="F#" Value="String_fixed = 128" Usage="Microsoft.JScript.JSBuiltin.String_fixed" />
+      <MemberSignature Language="C++ CLI" Value="String_fixed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2203,6 +2721,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.fixed(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2212,6 +2731,9 @@
       <MemberSignature Language="C#" Value="String_fontcolor" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_fontcolor = int32(129)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_fontcolor" />
+      <MemberSignature Language="VB.NET" Value="String_fontcolor" />
+      <MemberSignature Language="F#" Value="String_fontcolor = 129" Usage="Microsoft.JScript.JSBuiltin.String_fontcolor" />
+      <MemberSignature Language="C++ CLI" Value="String_fontcolor" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2220,6 +2742,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>129</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.fontcolor(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2229,6 +2752,9 @@
       <MemberSignature Language="C#" Value="String_fontsize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_fontsize = int32(130)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_fontsize" />
+      <MemberSignature Language="VB.NET" Value="String_fontsize" />
+      <MemberSignature Language="F#" Value="String_fontsize = 130" Usage="Microsoft.JScript.JSBuiltin.String_fontsize" />
+      <MemberSignature Language="C++ CLI" Value="String_fontsize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2237,6 +2763,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>130</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.fontsize(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2246,6 +2773,9 @@
       <MemberSignature Language="C#" Value="String_fromCharCode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_fromCharCode = int32(131)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_fromCharCode" />
+      <MemberSignature Language="VB.NET" Value="String_fromCharCode" />
+      <MemberSignature Language="F#" Value="String_fromCharCode = 131" Usage="Microsoft.JScript.JSBuiltin.String_fromCharCode" />
+      <MemberSignature Language="C++ CLI" Value="String_fromCharCode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2254,6 +2784,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>131</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringConstructor.fromCharCode(System.Object[])" /> method of the <see cref="T:Microsoft.JScript.StringConstructor" /> class.</summary>
         <forInternalUseOnly />
@@ -2263,6 +2794,9 @@
       <MemberSignature Language="C#" Value="String_indexOf" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_indexOf = int32(132)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_indexOf" />
+      <MemberSignature Language="VB.NET" Value="String_indexOf" />
+      <MemberSignature Language="F#" Value="String_indexOf = 132" Usage="Microsoft.JScript.JSBuiltin.String_indexOf" />
+      <MemberSignature Language="C++ CLI" Value="String_indexOf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2271,6 +2805,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>132</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.indexOf(System.Object,System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2280,6 +2815,9 @@
       <MemberSignature Language="C#" Value="String_italics" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_italics = int32(133)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_italics" />
+      <MemberSignature Language="VB.NET" Value="String_italics" />
+      <MemberSignature Language="F#" Value="String_italics = 133" Usage="Microsoft.JScript.JSBuiltin.String_italics" />
+      <MemberSignature Language="C++ CLI" Value="String_italics" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2288,6 +2826,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>133</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.italics(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2297,6 +2836,9 @@
       <MemberSignature Language="C#" Value="String_lastIndexOf" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_lastIndexOf = int32(134)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_lastIndexOf" />
+      <MemberSignature Language="VB.NET" Value="String_lastIndexOf" />
+      <MemberSignature Language="F#" Value="String_lastIndexOf = 134" Usage="Microsoft.JScript.JSBuiltin.String_lastIndexOf" />
+      <MemberSignature Language="C++ CLI" Value="String_lastIndexOf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2305,6 +2847,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>134</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.lastIndexOf(System.Object,System.Object,System.Double)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2314,6 +2857,9 @@
       <MemberSignature Language="C#" Value="String_link" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_link = int32(135)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_link" />
+      <MemberSignature Language="VB.NET" Value="String_link" />
+      <MemberSignature Language="F#" Value="String_link = 135" Usage="Microsoft.JScript.JSBuiltin.String_link" />
+      <MemberSignature Language="C++ CLI" Value="String_link" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2322,6 +2868,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>135</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.link(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2331,6 +2878,9 @@
       <MemberSignature Language="C#" Value="String_localeCompare" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_localeCompare = int32(136)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_localeCompare" />
+      <MemberSignature Language="VB.NET" Value="String_localeCompare" />
+      <MemberSignature Language="F#" Value="String_localeCompare = 136" Usage="Microsoft.JScript.JSBuiltin.String_localeCompare" />
+      <MemberSignature Language="C++ CLI" Value="String_localeCompare" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2339,6 +2889,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>136</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.localeCompare(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2348,6 +2899,9 @@
       <MemberSignature Language="C#" Value="String_match" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_match = int32(137)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_match" />
+      <MemberSignature Language="VB.NET" Value="String_match" />
+      <MemberSignature Language="F#" Value="String_match = 137" Usage="Microsoft.JScript.JSBuiltin.String_match" />
+      <MemberSignature Language="C++ CLI" Value="String_match" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2356,6 +2910,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>137</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.match(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2365,6 +2920,9 @@
       <MemberSignature Language="C#" Value="String_replace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_replace = int32(138)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_replace" />
+      <MemberSignature Language="VB.NET" Value="String_replace" />
+      <MemberSignature Language="F#" Value="String_replace = 138" Usage="Microsoft.JScript.JSBuiltin.String_replace" />
+      <MemberSignature Language="C++ CLI" Value="String_replace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2373,6 +2931,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>138</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.replace(System.Object,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2382,6 +2941,9 @@
       <MemberSignature Language="C#" Value="String_search" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_search = int32(139)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_search" />
+      <MemberSignature Language="VB.NET" Value="String_search" />
+      <MemberSignature Language="F#" Value="String_search = 139" Usage="Microsoft.JScript.JSBuiltin.String_search" />
+      <MemberSignature Language="C++ CLI" Value="String_search" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2390,6 +2952,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>139</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.search(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2399,6 +2962,9 @@
       <MemberSignature Language="C#" Value="String_slice" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_slice = int32(140)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_slice" />
+      <MemberSignature Language="VB.NET" Value="String_slice" />
+      <MemberSignature Language="F#" Value="String_slice = 140" Usage="Microsoft.JScript.JSBuiltin.String_slice" />
+      <MemberSignature Language="C++ CLI" Value="String_slice" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2407,6 +2973,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>140</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.slice(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2416,6 +2983,9 @@
       <MemberSignature Language="C#" Value="String_small" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_small = int32(141)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_small" />
+      <MemberSignature Language="VB.NET" Value="String_small" />
+      <MemberSignature Language="F#" Value="String_small = 141" Usage="Microsoft.JScript.JSBuiltin.String_small" />
+      <MemberSignature Language="C++ CLI" Value="String_small" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2424,6 +2994,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>141</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.small(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2433,6 +3004,9 @@
       <MemberSignature Language="C#" Value="String_split" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_split = int32(142)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_split" />
+      <MemberSignature Language="VB.NET" Value="String_split" />
+      <MemberSignature Language="F#" Value="String_split = 142" Usage="Microsoft.JScript.JSBuiltin.String_split" />
+      <MemberSignature Language="C++ CLI" Value="String_split" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2441,6 +3015,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>142</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.split(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2450,6 +3025,9 @@
       <MemberSignature Language="C#" Value="String_strike" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_strike = int32(143)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_strike" />
+      <MemberSignature Language="VB.NET" Value="String_strike" />
+      <MemberSignature Language="F#" Value="String_strike = 143" Usage="Microsoft.JScript.JSBuiltin.String_strike" />
+      <MemberSignature Language="C++ CLI" Value="String_strike" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2458,6 +3036,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>143</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.strike(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2467,6 +3046,9 @@
       <MemberSignature Language="C#" Value="String_sub" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_sub = int32(144)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_sub" />
+      <MemberSignature Language="VB.NET" Value="String_sub" />
+      <MemberSignature Language="F#" Value="String_sub = 144" Usage="Microsoft.JScript.JSBuiltin.String_sub" />
+      <MemberSignature Language="C++ CLI" Value="String_sub" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2475,6 +3057,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>144</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.sub(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2484,6 +3067,9 @@
       <MemberSignature Language="C#" Value="String_substr" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_substr = int32(145)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_substr" />
+      <MemberSignature Language="VB.NET" Value="String_substr" />
+      <MemberSignature Language="F#" Value="String_substr = 145" Usage="Microsoft.JScript.JSBuiltin.String_substr" />
+      <MemberSignature Language="C++ CLI" Value="String_substr" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2492,6 +3078,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>145</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.substr(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2501,6 +3088,9 @@
       <MemberSignature Language="C#" Value="String_substring" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_substring = int32(146)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_substring" />
+      <MemberSignature Language="VB.NET" Value="String_substring" />
+      <MemberSignature Language="F#" Value="String_substring = 146" Usage="Microsoft.JScript.JSBuiltin.String_substring" />
+      <MemberSignature Language="C++ CLI" Value="String_substring" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2509,6 +3099,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>146</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.substring(System.Object,System.Double,System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2518,6 +3109,9 @@
       <MemberSignature Language="C#" Value="String_sup" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_sup = int32(147)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_sup" />
+      <MemberSignature Language="VB.NET" Value="String_sup" />
+      <MemberSignature Language="F#" Value="String_sup = 147" Usage="Microsoft.JScript.JSBuiltin.String_sup" />
+      <MemberSignature Language="C++ CLI" Value="String_sup" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2526,6 +3120,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>147</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.sup(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2535,6 +3130,9 @@
       <MemberSignature Language="C#" Value="String_toLocaleLowerCase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_toLocaleLowerCase = int32(148)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_toLocaleLowerCase" />
+      <MemberSignature Language="VB.NET" Value="String_toLocaleLowerCase" />
+      <MemberSignature Language="F#" Value="String_toLocaleLowerCase = 148" Usage="Microsoft.JScript.JSBuiltin.String_toLocaleLowerCase" />
+      <MemberSignature Language="C++ CLI" Value="String_toLocaleLowerCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2543,6 +3141,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>148</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.toLocaleLowerCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2552,6 +3151,9 @@
       <MemberSignature Language="C#" Value="String_toLocaleUpperCase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_toLocaleUpperCase = int32(149)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_toLocaleUpperCase" />
+      <MemberSignature Language="VB.NET" Value="String_toLocaleUpperCase" />
+      <MemberSignature Language="F#" Value="String_toLocaleUpperCase = 149" Usage="Microsoft.JScript.JSBuiltin.String_toLocaleUpperCase" />
+      <MemberSignature Language="C++ CLI" Value="String_toLocaleUpperCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2560,6 +3162,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>149</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.toLocaleUpperCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2569,6 +3172,9 @@
       <MemberSignature Language="C#" Value="String_toLowerCase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_toLowerCase = int32(150)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_toLowerCase" />
+      <MemberSignature Language="VB.NET" Value="String_toLowerCase" />
+      <MemberSignature Language="F#" Value="String_toLowerCase = 150" Usage="Microsoft.JScript.JSBuiltin.String_toLowerCase" />
+      <MemberSignature Language="C++ CLI" Value="String_toLowerCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2577,6 +3183,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>150</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.toLowerCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2586,6 +3193,9 @@
       <MemberSignature Language="C#" Value="String_toString" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_toString = int32(151)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_toString" />
+      <MemberSignature Language="VB.NET" Value="String_toString" />
+      <MemberSignature Language="F#" Value="String_toString = 151" Usage="Microsoft.JScript.JSBuiltin.String_toString" />
+      <MemberSignature Language="C++ CLI" Value="String_toString" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2594,6 +3204,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>151</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.toString(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2603,6 +3214,9 @@
       <MemberSignature Language="C#" Value="String_toUpperCase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_toUpperCase = int32(152)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_toUpperCase" />
+      <MemberSignature Language="VB.NET" Value="String_toUpperCase" />
+      <MemberSignature Language="F#" Value="String_toUpperCase = 152" Usage="Microsoft.JScript.JSBuiltin.String_toUpperCase" />
+      <MemberSignature Language="C++ CLI" Value="String_toUpperCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2611,6 +3225,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>152</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.toUpperCase(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2620,6 +3235,9 @@
       <MemberSignature Language="C#" Value="String_valueOf" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin String_valueOf = int32(153)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.String_valueOf" />
+      <MemberSignature Language="VB.NET" Value="String_valueOf" />
+      <MemberSignature Language="F#" Value="String_valueOf = 153" Usage="Microsoft.JScript.JSBuiltin.String_valueOf" />
+      <MemberSignature Language="C++ CLI" Value="String_valueOf" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2628,6 +3246,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>153</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.StringPrototype.valueOf(System.Object)" /> method of the <see cref="T:Microsoft.JScript.StringPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2637,6 +3256,9 @@
       <MemberSignature Language="C#" Value="VBArray_dimensions" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin VBArray_dimensions = int32(154)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.VBArray_dimensions" />
+      <MemberSignature Language="VB.NET" Value="VBArray_dimensions" />
+      <MemberSignature Language="F#" Value="VBArray_dimensions = 154" Usage="Microsoft.JScript.JSBuiltin.VBArray_dimensions" />
+      <MemberSignature Language="C++ CLI" Value="VBArray_dimensions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2645,6 +3267,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>154</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.VBArrayPrototype.dimensions(System.Object)" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2654,6 +3277,9 @@
       <MemberSignature Language="C#" Value="VBArray_getItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin VBArray_getItem = int32(155)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.VBArray_getItem" />
+      <MemberSignature Language="VB.NET" Value="VBArray_getItem" />
+      <MemberSignature Language="F#" Value="VBArray_getItem = 155" Usage="Microsoft.JScript.JSBuiltin.VBArray_getItem" />
+      <MemberSignature Language="C++ CLI" Value="VBArray_getItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2662,6 +3288,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>155</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.VBArrayPrototype.getItem(System.Object,System.Object[])" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2671,6 +3298,9 @@
       <MemberSignature Language="C#" Value="VBArray_lbound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin VBArray_lbound = int32(156)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.VBArray_lbound" />
+      <MemberSignature Language="VB.NET" Value="VBArray_lbound" />
+      <MemberSignature Language="F#" Value="VBArray_lbound = 156" Usage="Microsoft.JScript.JSBuiltin.VBArray_lbound" />
+      <MemberSignature Language="C++ CLI" Value="VBArray_lbound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2679,6 +3309,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>156</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.VBArrayPrototype.lbound(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2688,6 +3319,9 @@
       <MemberSignature Language="C#" Value="VBArray_toArray" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin VBArray_toArray = int32(157)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.VBArray_toArray" />
+      <MemberSignature Language="VB.NET" Value="VBArray_toArray" />
+      <MemberSignature Language="F#" Value="VBArray_toArray = 157" Usage="Microsoft.JScript.JSBuiltin.VBArray_toArray" />
+      <MemberSignature Language="C++ CLI" Value="VBArray_toArray" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2696,6 +3330,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>157</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.VBArrayPrototype.toArray(System.Object,Microsoft.JScript.Vsa.VsaEngine)" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
         <forInternalUseOnly />
@@ -2705,6 +3340,9 @@
       <MemberSignature Language="C#" Value="VBArray_ubound" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.JScript.JSBuiltin VBArray_ubound = int32(158)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.JSBuiltin.VBArray_ubound" />
+      <MemberSignature Language="VB.NET" Value="VBArray_ubound" />
+      <MemberSignature Language="F#" Value="VBArray_ubound = 158" Usage="Microsoft.JScript.JSBuiltin.VBArray_ubound" />
+      <MemberSignature Language="C++ CLI" Value="VBArray_ubound" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -2713,6 +3351,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.JScript.JSBuiltin</ReturnType>
       </ReturnValue>
+      <MemberValue>158</MemberValue>
       <Docs>
         <summary>The static <see cref="M:Microsoft.JScript.VBArrayPrototype.ubound(System.Object,System.Object)" /> method of the <see cref="T:Microsoft.JScript.VBArrayPrototype" /> class.</summary>
         <forInternalUseOnly />

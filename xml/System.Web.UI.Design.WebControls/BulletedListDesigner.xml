@@ -1,7 +1,10 @@
-<Type Name="BulletedListDesigner" FullName="System.Web.UI.Design.WebControls.BulletedListDesigner">
+﻿<Type Name="BulletedListDesigner" FullName="System.Web.UI.Design.WebControls.BulletedListDesigner">
   <TypeSignature Language="C#" Value="public class BulletedListDesigner : System.Web.UI.Design.WebControls.ListControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BulletedListDesigner extends System.Web.UI.Design.WebControls.ListControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.BulletedListDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class BulletedListDesigner&#xA;Inherits ListControlDesigner" />
+  <TypeSignature Language="F#" Value="type BulletedListDesigner = class&#xA;    inherit ListControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BulletedListDesigner : System::Web::UI::Design::WebControls::ListControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,8 @@
       <MemberSignature Language="C#" Value="public BulletedListDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BulletedListDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BulletedListDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -56,6 +61,9 @@
       <MemberSignature Language="C#" Value="protected override void PostFilterEvents (System.Collections.IDictionary events);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PostFilterEvents(class System.Collections.IDictionary events) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.BulletedListDesigner.PostFilterEvents(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PostFilterEvents (events As IDictionary)" />
+      <MemberSignature Language="F#" Value="override this.PostFilterEvents : System.Collections.IDictionary -&gt; unit" Usage="bulletedListDesigner.PostFilterEvents events" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PostFilterEvents(System::Collections::IDictionary ^ events);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -96,6 +104,9 @@
       <MemberSignature Language="C#" Value="protected override bool UsePreviewControl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UsePreviewControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.BulletedListDesigner.UsePreviewControl" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property UsePreviewControl As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UsePreviewControl : bool" Usage="System.Web.UI.Design.WebControls.BulletedListDesigner.UsePreviewControl" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UsePreviewControl { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

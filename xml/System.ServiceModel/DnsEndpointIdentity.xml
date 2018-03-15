@@ -1,7 +1,10 @@
-<Type Name="DnsEndpointIdentity" FullName="System.ServiceModel.DnsEndpointIdentity">
+﻿<Type Name="DnsEndpointIdentity" FullName="System.ServiceModel.DnsEndpointIdentity">
   <TypeSignature Language="C#" Value="public class DnsEndpointIdentity : System.ServiceModel.EndpointIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DnsEndpointIdentity extends System.ServiceModel.EndpointIdentity" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.DnsEndpointIdentity" />
+  <TypeSignature Language="VB.NET" Value="Public Class DnsEndpointIdentity&#xA;Inherits EndpointIdentity" />
+  <TypeSignature Language="F#" Value="type DnsEndpointIdentity = class&#xA;    inherit EndpointIdentity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DnsEndpointIdentity : System::ServiceModel::EndpointIdentity" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -29,10 +32,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DnsEndpointIdentity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DnsEndpointIdentity (System.IdentityModel.Claims.Claim identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Claims.Claim identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DnsEndpointIdentity.#ctor(System.IdentityModel.Claims.Claim)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (identity As Claim)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DnsEndpointIdentity : System.IdentityModel.Claims.Claim -&gt; System.ServiceModel.DnsEndpointIdentity" Usage="new System.ServiceModel.DnsEndpointIdentity identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DnsEndpointIdentity(System::IdentityModel::Claims::Claim ^ identity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +75,9 @@
       <MemberSignature Language="C#" Value="public DnsEndpointIdentity (string dnsName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dnsName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.DnsEndpointIdentity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dnsName As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.DnsEndpointIdentity : string -&gt; System.ServiceModel.DnsEndpointIdentity" Usage="new System.ServiceModel.DnsEndpointIdentity dnsName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DnsEndpointIdentity(System::String ^ dnsName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,14 +109,5 @@
         <exception cref="T:System.ArgumentException">The claim type of <paramref name="dnsName" /> is not <see cref="P:System.IdentityModel.Claims.ClaimTypes.Dns" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.DnsEndpointIdentity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="MessagePropertyDescription" FullName="System.ServiceModel.Description.MessagePropertyDescription">
+﻿<Type Name="MessagePropertyDescription" FullName="System.ServiceModel.Description.MessagePropertyDescription">
   <TypeSignature Language="C#" Value="public class MessagePropertyDescription : System.ServiceModel.Description.MessagePartDescription" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MessagePropertyDescription extends System.ServiceModel.Description.MessagePartDescription" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.MessagePropertyDescription" />
+  <TypeSignature Language="VB.NET" Value="Public Class MessagePropertyDescription&#xA;Inherits MessagePartDescription" />
+  <TypeSignature Language="F#" Value="type MessagePropertyDescription = class&#xA;    inherit MessagePartDescription" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessagePropertyDescription : System::ServiceModel::Description::MessagePartDescription" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="public MessagePropertyDescription (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.MessagePropertyDescription.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.MessagePropertyDescription : string -&gt; System.ServiceModel.Description.MessagePropertyDescription" Usage="new System.ServiceModel.Description.MessagePropertyDescription name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessagePropertyDescription(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

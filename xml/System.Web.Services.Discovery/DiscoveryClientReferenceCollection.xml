@@ -1,7 +1,10 @@
-<Type Name="DiscoveryClientReferenceCollection" FullName="System.Web.Services.Discovery.DiscoveryClientReferenceCollection">
+﻿<Type Name="DiscoveryClientReferenceCollection" FullName="System.Web.Services.Discovery.DiscoveryClientReferenceCollection">
   <TypeSignature Language="C#" Value="public sealed class DiscoveryClientReferenceCollection : System.Collections.DictionaryBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiscoveryClientReferenceCollection extends System.Collections.DictionaryBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiscoveryClientReferenceCollection&#xA;Inherits DictionaryBase" />
+  <TypeSignature Language="F#" Value="type DiscoveryClientReferenceCollection = class&#xA;    inherit DictionaryBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryClientReferenceCollection sealed : System::Collections::DictionaryBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="public DiscoveryClientReferenceCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientReferenceCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryClientReferenceCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -46,10 +51,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> to the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (System.Web.Services.Discovery.DiscoveryReference value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Services.Discovery.DiscoveryReference value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientReferenceCollection.Add(System.Web.Services.Discovery.DiscoveryReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (value As DiscoveryReference)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Services.Discovery.DiscoveryReference -&gt; unit" Usage="discoveryClientReferenceCollection.Add value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Services::Discovery::DiscoveryReference ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -81,6 +99,9 @@
       <MemberSignature Language="C#" Value="public void Add (string url, System.Web.Services.Discovery.DiscoveryReference value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string url, class System.Web.Services.Discovery.DiscoveryReference value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientReferenceCollection.Add(System.String,System.Web.Services.Discovery.DiscoveryReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (url As String, value As DiscoveryReference)" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Web.Services.Discovery.DiscoveryReference -&gt; unit" Usage="discoveryClientReferenceCollection.Add (url, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ url, System::Web::Services::Discovery::DiscoveryReference ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -114,6 +135,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientReferenceCollection.Contains(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (url As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : string -&gt; bool" Usage="discoveryClientReferenceCollection.Contains url" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -147,6 +171,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Discovery.DiscoveryReference this[string url] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Services.Discovery.DiscoveryReference Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientReferenceCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(url As String) As DiscoveryReference" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.Services.Discovery.DiscoveryReference with get, set" Usage="System.Web.Services.Discovery.DiscoveryClientReferenceCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Discovery::DiscoveryReference ^ default[System::String ^] { System::Web::Services::Discovery::DiscoveryReference ^ get(System::String ^ url); void set(System::String ^ url, System::Web::Services::Discovery::DiscoveryReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -179,6 +206,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Keys" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientReferenceCollection.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.ICollection" Usage="System.Web.Services.Discovery.DiscoveryClientReferenceCollection.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Keys { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -207,6 +237,9 @@
       <MemberSignature Language="C#" Value="public void Remove (string url);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string url) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Discovery.DiscoveryClientReferenceCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (url As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="discoveryClientReferenceCollection.Remove url" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ url);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -238,6 +271,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection Values" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Discovery.DiscoveryClientReferenceCollection.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.ICollection" Usage="System.Web.Services.Discovery.DiscoveryClientReferenceCollection.Values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ Values { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -260,15 +296,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a <see cref="T:System.Web.Services.Discovery.DiscoveryReference" /> to the <see cref="T:System.Web.Services.Discovery.DiscoveryClientReferenceCollection" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

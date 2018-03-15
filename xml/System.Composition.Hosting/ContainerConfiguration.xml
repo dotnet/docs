@@ -1,7 +1,10 @@
-<Type Name="ContainerConfiguration" FullName="System.Composition.Hosting.ContainerConfiguration">
+﻿<Type Name="ContainerConfiguration" FullName="System.Composition.Hosting.ContainerConfiguration">
   <TypeSignature Language="C#" Value="public class ContainerConfiguration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerConfiguration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.ContainerConfiguration" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContainerConfiguration" />
+  <TypeSignature Language="F#" Value="type ContainerConfiguration = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContainerConfiguration" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.TypedParts</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -18,14 +21,15 @@
   </Attributes>
   <Docs>
     <summary>Configures and constructs a lightweight container.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ContainerConfiguration ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContainerConfiguration();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -35,14 +39,16 @@
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Composition.Hosting.ContainerConfiguration" /> class.</summary>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="CreateContainer">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.CompositionHost CreateContainer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.CompositionHost CreateContainer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.CreateContainer" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateContainer () As CompositionHost" />
+      <MemberSignature Language="F#" Value="member this.CreateContainer : unit -&gt; System.Composition.Hosting.CompositionHost" Usage="containerConfiguration.CreateContainer " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::CompositionHost ^ CreateContainer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -56,14 +62,16 @@
       <Docs>
         <summary>Creates the container.</summary>
         <returns>The created container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithAssemblies">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithAssemblies (System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt; assemblies);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithAssemblies(class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.Assembly&gt; assemblies) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithAssemblies(System.Collections.Generic.IEnumerable{System.Reflection.Assembly})" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithAssemblies (assemblies As IEnumerable(Of Assembly)) As ContainerConfiguration" />
+      <MemberSignature Language="F#" Value="member this.WithAssemblies : seq&lt;System.Reflection.Assembly&gt; -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithAssemblies assemblies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithAssemblies(System::Collections::Generic::IEnumerable&lt;System::Reflection::Assembly ^&gt; ^ assemblies);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -80,14 +88,16 @@
         <param name="assemblies">The assemblies to add part types from.</param>
         <summary>Adds part types from the specified collection of assemblies to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithAssemblies">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithAssemblies (System.Collections.Generic.IEnumerable&lt;System.Reflection.Assembly&gt; assemblies, System.Composition.Convention.AttributedModelProvider conventions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithAssemblies(class System.Collections.Generic.IEnumerable`1&lt;class System.Reflection.Assembly&gt; assemblies, class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithAssemblies(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Composition.Convention.AttributedModelProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithAssemblies (assemblies As IEnumerable(Of Assembly), conventions As AttributedModelProvider) As ContainerConfiguration" />
+      <MemberSignature Language="F#" Value="member this.WithAssemblies : seq&lt;System.Reflection.Assembly&gt; * System.Composition.Convention.AttributedModelProvider -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithAssemblies (assemblies, conventions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithAssemblies(System::Collections::Generic::IEnumerable&lt;System::Reflection::Assembly ^&gt; ^ assemblies, System::Composition::Convention::AttributedModelProvider ^ conventions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -106,14 +116,15 @@
         <param name="conventions">The conventions to use for part types.</param>
         <summary>Adds part types from the specified collection of assemblies to the container, using the specified conventions.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithAssembly">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithAssembly (System.Reflection.Assembly assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithAssembly(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithAssembly(System.Reflection.Assembly)" />
+      <MemberSignature Language="F#" Value="member this.WithAssembly : System.Reflection.Assembly -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithAssembly assembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithAssembly(System::Reflection::Assembly ^ assembly);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -130,14 +141,15 @@
         <param name="assembly">The assembly to add part types from.</param>
         <summary>Adds part types from the specified assembly to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithAssembly">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithAssembly (System.Reflection.Assembly assembly, System.Composition.Convention.AttributedModelProvider conventions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithAssembly(class System.Reflection.Assembly assembly, class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithAssembly(System.Reflection.Assembly,System.Composition.Convention.AttributedModelProvider)" />
+      <MemberSignature Language="F#" Value="member this.WithAssembly : System.Reflection.Assembly * System.Composition.Convention.AttributedModelProvider -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithAssembly (assembly, conventions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithAssembly(System::Reflection::Assembly ^ assembly, System::Composition::Convention::AttributedModelProvider ^ conventions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -156,14 +168,16 @@
         <param name="conventions">The conventions to use for part types.</param>
         <summary>Adds part types from the specified assembly to the container, using the specified conventions.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithDefaultConventions">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithDefaultConventions (System.Composition.Convention.AttributedModelProvider conventions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithDefaultConventions(class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithDefaultConventions(System.Composition.Convention.AttributedModelProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithDefaultConventions (conventions As AttributedModelProvider) As ContainerConfiguration" />
+      <MemberSignature Language="F#" Value="member this.WithDefaultConventions : System.Composition.Convention.AttributedModelProvider -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithDefaultConventions conventions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithDefaultConventions(System::Composition::Convention::AttributedModelProvider ^ conventions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -180,14 +194,16 @@
         <param name="conventions">The conventions to use for part types.</param>
         <summary>Specifies the default conventions to use for added parts.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithPart">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithPart (Type partType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithPart(class System.Type partType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithPart(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithPart (partType As Type) As ContainerConfiguration" />
+      <MemberSignature Language="F#" Value="member this.WithPart : Type -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithPart partType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithPart(Type ^ partType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -204,14 +220,16 @@
         <param name="partType">The part type to add.</param>
         <summary>Adds a specified part type to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithPart">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithPart (Type partType, System.Composition.Convention.AttributedModelProvider conventions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithPart(class System.Type partType, class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithPart(System.Type,System.Composition.Convention.AttributedModelProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithPart (partType As Type, conventions As AttributedModelProvider) As ContainerConfiguration" />
+      <MemberSignature Language="F#" Value="member this.WithPart : Type * System.Composition.Convention.AttributedModelProvider -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithPart (partType, conventions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithPart(Type ^ partType, System::Composition::Convention::AttributedModelProvider ^ conventions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -230,14 +248,16 @@
         <param name="conventions">The conventions to use for the part type.</param>
         <summary>Adds a specified part type to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithPart&lt;TPart&gt;">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithPart&lt;TPart&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithPart&lt;TPart&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithPart``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithPart(Of TPart) () As ContainerConfiguration" />
+      <MemberSignature Language="F#" Value="member this.WithPart : unit -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithPart " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TPart&gt;&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithPart();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -255,14 +275,16 @@
         <typeparam name="TPart">The type to add.</typeparam>
         <summary>Adds the specified type to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithPart&lt;TPart&gt;">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithPart&lt;TPart&gt; (System.Composition.Convention.AttributedModelProvider conventions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithPart&lt;TPart&gt;(class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithPart``1(System.Composition.Convention.AttributedModelProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithPart(Of TPart) (conventions As AttributedModelProvider) As ContainerConfiguration" />
+      <MemberSignature Language="F#" Value="member this.WithPart : System.Composition.Convention.AttributedModelProvider -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithPart conventions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TPart&gt;&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithPart(System::Composition::Convention::AttributedModelProvider ^ conventions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -283,14 +305,16 @@
         <param name="conventions">The conventions to use for the part type.</param>
         <summary>Adds the specified type to the container using the specified conventions.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithParts">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithParts (System.Collections.Generic.IEnumerable&lt;Type&gt; partTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithParts(class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; partTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithParts(System.Collections.Generic.IEnumerable{System.Type})" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithParts (partTypes As IEnumerable(Of Type)) As ContainerConfiguration" />
+      <MemberSignature Language="F#" Value="member this.WithParts : seq&lt;Type&gt; -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithParts partTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithParts(System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ partTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -307,14 +331,16 @@
         <param name="partTypes">A collection of part types to add.</param>
         <summary>Adds the specified part types to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithParts">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithParts (params Type[] partTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithParts(class System.Type[] partTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithParts(System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithParts (ParamArray partTypes As Type()) As ContainerConfiguration" />
+      <MemberSignature Language="F#" Value="member this.WithParts : Type[] -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithParts partTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithParts(... cli::array &lt;Type ^&gt; ^ partTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -337,14 +363,16 @@
         <param name="partTypes">An array of part types to add.</param>
         <summary>Adds the specified array of part types to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithParts">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithParts (System.Collections.Generic.IEnumerable&lt;Type&gt; partTypes, System.Composition.Convention.AttributedModelProvider conventions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithParts(class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; partTypes, class System.Composition.Convention.AttributedModelProvider conventions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithParts(System.Collections.Generic.IEnumerable{System.Type},System.Composition.Convention.AttributedModelProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function WithParts (partTypes As IEnumerable(Of Type), conventions As AttributedModelProvider) As ContainerConfiguration" />
+      <MemberSignature Language="F#" Value="member this.WithParts : seq&lt;Type&gt; * System.Composition.Convention.AttributedModelProvider -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithParts (partTypes, conventions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithParts(System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ partTypes, System::Composition::Convention::AttributedModelProvider ^ conventions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -363,14 +391,15 @@
         <param name="conventions">The conventions to use for part types.</param>
         <summary>Adds the specified part types to the container using the specified conventions.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="WithProvider">
       <MemberSignature Language="C#" Value="public System.Composition.Hosting.ContainerConfiguration WithProvider (System.Composition.Hosting.Core.ExportDescriptorProvider exportDescriptorProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Composition.Hosting.ContainerConfiguration WithProvider(class System.Composition.Hosting.Core.ExportDescriptorProvider exportDescriptorProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.ContainerConfiguration.WithProvider(System.Composition.Hosting.Core.ExportDescriptorProvider)" />
+      <MemberSignature Language="F#" Value="member this.WithProvider : System.Composition.Hosting.Core.ExportDescriptorProvider -&gt; System.Composition.Hosting.ContainerConfiguration" Usage="containerConfiguration.WithProvider exportDescriptorProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Composition::Hosting::ContainerConfiguration ^ WithProvider(System::Composition::Hosting::Core::ExportDescriptorProvider ^ exportDescriptorProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.TypedParts</AssemblyName>
@@ -387,8 +416,7 @@
         <param name="exportDescriptorProvider">The provider to add.</param>
         <summary>Adds the specified provider to the container.</summary>
         <returns>An object that can be used to further configure the container.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

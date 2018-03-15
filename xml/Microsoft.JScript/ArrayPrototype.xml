@@ -1,7 +1,10 @@
-<Type Name="ArrayPrototype" FullName="Microsoft.JScript.ArrayPrototype">
+﻿<Type Name="ArrayPrototype" FullName="Microsoft.JScript.ArrayPrototype">
   <TypeSignature Language="C#" Value="public class ArrayPrototype : Microsoft.JScript.ArrayObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArrayPrototype extends Microsoft.JScript.ArrayObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ArrayPrototype" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArrayPrototype&#xA;Inherits ArrayObject" />
+  <TypeSignature Language="F#" Value="type ArrayPrototype = class&#xA;    inherit ArrayObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ArrayPrototype : Microsoft::JScript::ArrayObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayObject concat (object thisob, Microsoft.JScript.Vsa.VsaEngine engine, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.ArrayObject concat(object thisob, class Microsoft.JScript.Vsa.VsaEngine engine, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.concat(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function concat (thisob As Object, engine As VsaEngine, ParamArray args As Object()) As ArrayObject" />
+      <MemberSignature Language="F#" Value="static member concat : obj * Microsoft.JScript.Vsa.VsaEngine * obj[] -&gt; Microsoft.JScript.ArrayObject" Usage="Microsoft.JScript.ArrayPrototype.concat (thisob, engine, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::ArrayObject ^ concat(System::Object ^ thisob, Microsoft::JScript::Vsa::VsaEngine ^ engine, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -59,6 +65,9 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayConstructor constructor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.JScript.ArrayConstructor constructor" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.ArrayPrototype.constructor" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property constructor As ArrayConstructor" />
+      <MemberSignature Language="F#" Value="member this.constructor : Microsoft.JScript.ArrayConstructor" Usage="Microsoft.JScript.ArrayPrototype.constructor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property Microsoft::JScript::ArrayConstructor ^ constructor { Microsoft::JScript::ArrayConstructor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -79,6 +88,9 @@
       <MemberSignature Language="C#" Value="public static string join (object thisob, object separator);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string join(object thisob, object separator) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.join(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function join (thisob As Object, separator As Object) As String" />
+      <MemberSignature Language="F#" Value="static member join : obj * obj -&gt; string" Usage="Microsoft.JScript.ArrayPrototype.join (thisob, separator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ join(System::Object ^ thisob, System::Object ^ separator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -110,6 +122,9 @@
       <MemberSignature Language="C#" Value="public static object pop (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object pop(object thisob) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.pop(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function pop (thisob As Object) As Object" />
+      <MemberSignature Language="F#" Value="static member pop : obj -&gt; obj" Usage="Microsoft.JScript.ArrayPrototype.pop thisob" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ pop(System::Object ^ thisob);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -139,6 +154,9 @@
       <MemberSignature Language="C#" Value="public static long push (object thisob, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int64 push(object thisob, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.push(System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function push (thisob As Object, ParamArray args As Object()) As Long" />
+      <MemberSignature Language="F#" Value="static member push : obj * obj[] -&gt; int64" Usage="Microsoft.JScript.ArrayPrototype.push (thisob, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static long push(System::Object ^ thisob, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -176,6 +194,9 @@
       <MemberSignature Language="C#" Value="public static object reverse (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object reverse(object thisob) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.reverse(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function reverse (thisob As Object) As Object" />
+      <MemberSignature Language="F#" Value="static member reverse : obj -&gt; obj" Usage="Microsoft.JScript.ArrayPrototype.reverse thisob" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ reverse(System::Object ^ thisob);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -206,6 +227,9 @@
       <MemberSignature Language="C#" Value="public static object shift (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object shift(object thisob) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.shift(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function shift (thisob As Object) As Object" />
+      <MemberSignature Language="F#" Value="static member shift : obj -&gt; obj" Usage="Microsoft.JScript.ArrayPrototype.shift thisob" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ shift(System::Object ^ thisob);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -235,6 +259,9 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayObject slice (object thisob, Microsoft.JScript.Vsa.VsaEngine engine, double start, object end);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.ArrayObject slice(object thisob, class Microsoft.JScript.Vsa.VsaEngine engine, float64 start, object end) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.slice(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Double,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function slice (thisob As Object, engine As VsaEngine, start As Double, end As Object) As ArrayObject" />
+      <MemberSignature Language="F#" Value="static member slice : obj * Microsoft.JScript.Vsa.VsaEngine * double * obj -&gt; Microsoft.JScript.ArrayObject" Usage="Microsoft.JScript.ArrayPrototype.slice (thisob, engine, start, end)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::ArrayObject ^ slice(System::Object ^ thisob, Microsoft::JScript::Vsa::VsaEngine ^ engine, double start, System::Object ^ end);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -269,6 +296,9 @@
       <MemberSignature Language="C#" Value="public static object sort (object thisob, object function);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object sort(object thisob, object function) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.sort(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function sort (thisob As Object, function As Object) As Object" />
+      <MemberSignature Language="F#" Value="static member sort : obj * obj -&gt; obj" Usage="Microsoft.JScript.ArrayPrototype.sort (thisob, function)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ sort(System::Object ^ thisob, System::Object ^ function);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -301,6 +331,9 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.ArrayObject splice (object thisob, Microsoft.JScript.Vsa.VsaEngine engine, double start, double deleteCnt, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.ArrayObject splice(object thisob, class Microsoft.JScript.Vsa.VsaEngine engine, float64 start, float64 deleteCnt, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.splice(System.Object,Microsoft.JScript.Vsa.VsaEngine,System.Double,System.Double,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function splice (thisob As Object, engine As VsaEngine, start As Double, deleteCnt As Double, ParamArray args As Object()) As ArrayObject" />
+      <MemberSignature Language="F#" Value="static member splice : obj * Microsoft.JScript.Vsa.VsaEngine * double * double * obj[] -&gt; Microsoft.JScript.ArrayObject" Usage="Microsoft.JScript.ArrayPrototype.splice (thisob, engine, start, deleteCnt, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::ArrayObject ^ splice(System::Object ^ thisob, Microsoft::JScript::Vsa::VsaEngine ^ engine, double start, double deleteCnt, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -343,6 +376,9 @@
       <MemberSignature Language="C#" Value="public static string toLocaleString (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toLocaleString(object thisob) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.toLocaleString(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function toLocaleString (thisob As Object) As String" />
+      <MemberSignature Language="F#" Value="static member toLocaleString : obj -&gt; string" Usage="Microsoft.JScript.ArrayPrototype.toLocaleString thisob" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ toLocaleString(System::Object ^ thisob);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -372,6 +408,9 @@
       <MemberSignature Language="C#" Value="public static string toString (object thisob);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string toString(object thisob) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.toString(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function toString (thisob As Object) As String" />
+      <MemberSignature Language="F#" Value="static member toString : obj -&gt; string" Usage="Microsoft.JScript.ArrayPrototype.toString thisob" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ toString(System::Object ^ thisob);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -401,6 +440,9 @@
       <MemberSignature Language="C#" Value="public static object unshift (object thisob, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object unshift(object thisob, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ArrayPrototype.unshift(System.Object,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function unshift (thisob As Object, ParamArray args As Object()) As Object" />
+      <MemberSignature Language="F#" Value="static member unshift : obj * obj[] -&gt; obj" Usage="Microsoft.JScript.ArrayPrototype.unshift (thisob, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ unshift(System::Object ^ thisob, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="StickyNoteType" FullName="System.Windows.Controls.StickyNoteType">
+﻿<Type Name="StickyNoteType" FullName="System.Windows.Controls.StickyNoteType">
   <TypeSignature Language="C#" Value="public enum StickyNoteType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StickyNoteType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.StickyNoteType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StickyNoteType" />
+  <TypeSignature Language="F#" Value="type StickyNoteType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class StickyNoteType" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="Ink" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.StickyNoteType Ink = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteType.Ink" />
+      <MemberSignature Language="VB.NET" Value="Ink" />
+      <MemberSignature Language="F#" Value="Ink = 1" Usage="System.Windows.Controls.StickyNoteType.Ink" />
+      <MemberSignature Language="C++ CLI" Value="Ink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -36,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.StickyNoteType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An ink sticky note.</summary>
       </Docs>
@@ -44,6 +51,9 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.StickyNoteType Text = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.StickyNoteType.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 0" Usage="System.Windows.Controls.StickyNoteType.Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.StickyNoteType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A text sticky note.</summary>
       </Docs>

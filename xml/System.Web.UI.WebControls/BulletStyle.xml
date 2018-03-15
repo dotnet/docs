@@ -1,7 +1,10 @@
-<Type Name="BulletStyle" FullName="System.Web.UI.WebControls.BulletStyle">
+﻿<Type Name="BulletStyle" FullName="System.Web.UI.WebControls.BulletStyle">
   <TypeSignature Language="C#" Value="public enum BulletStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BulletStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BulletStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BulletStyle" />
+  <TypeSignature Language="F#" Value="type BulletStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class BulletStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="Circle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle Circle = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.Circle" />
+      <MemberSignature Language="VB.NET" Value="Circle" />
+      <MemberSignature Language="F#" Value="Circle = 7" Usage="System.Web.UI.WebControls.BulletStyle.Circle" />
+      <MemberSignature Language="C++ CLI" Value="Circle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -54,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The bullet style is an empty circle shape.</summary>
       </Docs>
@@ -62,6 +69,9 @@
       <MemberSignature Language="C#" Value="CustomImage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle CustomImage = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.CustomImage" />
+      <MemberSignature Language="VB.NET" Value="CustomImage" />
+      <MemberSignature Language="F#" Value="CustomImage = 9" Usage="System.Web.UI.WebControls.BulletStyle.CustomImage" />
+      <MemberSignature Language="C++ CLI" Value="CustomImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The bullet style is a custom image.</summary>
       </Docs>
@@ -78,6 +89,9 @@
       <MemberSignature Language="C#" Value="Disc" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle Disc = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.Disc" />
+      <MemberSignature Language="VB.NET" Value="Disc" />
+      <MemberSignature Language="F#" Value="Disc = 6" Usage="System.Web.UI.WebControls.BulletStyle.Disc" />
+      <MemberSignature Language="C++ CLI" Value="Disc" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -86,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The bullet style is a filled circle shape.</summary>
       </Docs>
@@ -94,6 +109,9 @@
       <MemberSignature Language="C#" Value="LowerAlpha" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle LowerAlpha = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.LowerAlpha" />
+      <MemberSignature Language="VB.NET" Value="LowerAlpha" />
+      <MemberSignature Language="F#" Value="LowerAlpha = 2" Usage="System.Web.UI.WebControls.BulletStyle.LowerAlpha" />
+      <MemberSignature Language="C++ CLI" Value="LowerAlpha" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The bullet style is a lowercase letter (a, b, c, ...).</summary>
       </Docs>
@@ -110,6 +129,9 @@
       <MemberSignature Language="C#" Value="LowerRoman" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle LowerRoman = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.LowerRoman" />
+      <MemberSignature Language="VB.NET" Value="LowerRoman" />
+      <MemberSignature Language="F#" Value="LowerRoman = 4" Usage="System.Web.UI.WebControls.BulletStyle.LowerRoman" />
+      <MemberSignature Language="C++ CLI" Value="LowerRoman" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +140,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The bullet style is a lowercase Roman numeral (i, ii, iii, ...).</summary>
       </Docs>
@@ -126,6 +149,9 @@
       <MemberSignature Language="C#" Value="NotSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle NotSet = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.NotSet" />
+      <MemberSignature Language="VB.NET" Value="NotSet" />
+      <MemberSignature Language="F#" Value="NotSet = 0" Usage="System.Web.UI.WebControls.BulletStyle.NotSet" />
+      <MemberSignature Language="C++ CLI" Value="NotSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -134,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The bullet style is not set. The browser that renders the <see cref="T:System.Web.UI.WebControls.BulletedList" /> control will determine the bullet style to display.</summary>
       </Docs>
@@ -142,6 +169,9 @@
       <MemberSignature Language="C#" Value="Numbered" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle Numbered = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.Numbered" />
+      <MemberSignature Language="VB.NET" Value="Numbered" />
+      <MemberSignature Language="F#" Value="Numbered = 1" Usage="System.Web.UI.WebControls.BulletStyle.Numbered" />
+      <MemberSignature Language="C++ CLI" Value="Numbered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +180,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The bullet style is a number (1, 2, 3, ...).</summary>
       </Docs>
@@ -158,6 +189,9 @@
       <MemberSignature Language="C#" Value="Square" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle Square = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.Square" />
+      <MemberSignature Language="VB.NET" Value="Square" />
+      <MemberSignature Language="F#" Value="Square = 8" Usage="System.Web.UI.WebControls.BulletStyle.Square" />
+      <MemberSignature Language="C++ CLI" Value="Square" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -166,6 +200,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The bullet style is a filled square shape.</summary>
       </Docs>
@@ -174,6 +209,9 @@
       <MemberSignature Language="C#" Value="UpperAlpha" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle UpperAlpha = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.UpperAlpha" />
+      <MemberSignature Language="VB.NET" Value="UpperAlpha" />
+      <MemberSignature Language="F#" Value="UpperAlpha = 3" Usage="System.Web.UI.WebControls.BulletStyle.UpperAlpha" />
+      <MemberSignature Language="C++ CLI" Value="UpperAlpha" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -182,6 +220,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The bullet style is an uppercase letter (A, B, C, ...).</summary>
       </Docs>
@@ -190,6 +229,9 @@
       <MemberSignature Language="C#" Value="UpperRoman" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.BulletStyle UpperRoman = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.BulletStyle.UpperRoman" />
+      <MemberSignature Language="VB.NET" Value="UpperRoman" />
+      <MemberSignature Language="F#" Value="UpperRoman = 5" Usage="System.Web.UI.WebControls.BulletStyle.UpperRoman" />
+      <MemberSignature Language="C++ CLI" Value="UpperRoman" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -198,6 +240,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.BulletStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The bullet style is an uppercase Roman numeral (I, II, III, ...).</summary>
       </Docs>

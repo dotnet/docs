@@ -1,7 +1,10 @@
-<Type Name="XPathMessageContext" FullName="System.ServiceModel.Dispatcher.XPathMessageContext">
+﻿<Type Name="XPathMessageContext" FullName="System.ServiceModel.Dispatcher.XPathMessageContext">
   <TypeSignature Language="C#" Value="public class XPathMessageContext : System.Xml.Xsl.XsltContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi XPathMessageContext extends System.Xml.Xsl.XsltContext" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.XPathMessageContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class XPathMessageContext&#xA;Inherits XsltContext" />
+  <TypeSignature Language="F#" Value="type XPathMessageContext = class&#xA;    inherit XsltContext" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XPathMessageContext : System::Xml::Xsl::XsltContext" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,10 +66,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of <see cref="T:System.ServiceModel.Dispatcher.XPathMessageContext" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XPathMessageContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +96,9 @@
       <MemberSignature Language="C#" Value="public XPathMessageContext (System.Xml.NameTable table);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.NameTable table) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageContext.#ctor(System.Xml.NameTable)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (table As NameTable)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.XPathMessageContext : System.Xml.NameTable -&gt; System.ServiceModel.Dispatcher.XPathMessageContext" Usage="new System.ServiceModel.Dispatcher.XPathMessageContext table" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XPathMessageContext(System::Xml::NameTable ^ table);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +124,9 @@
       <MemberSignature Language="C#" Value="public override int CompareDocument (string baseUri, string nextBaseUri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 CompareDocument(string baseUri, string nextBaseUri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageContext.CompareDocument(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CompareDocument (baseUri As String, nextBaseUri As String) As Integer" />
+      <MemberSignature Language="F#" Value="override this.CompareDocument : string * string -&gt; int" Usage="xPathMessageContext.CompareDocument (baseUri, nextBaseUri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int CompareDocument(System::String ^ baseUri, System::String ^ nextBaseUri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -138,6 +158,9 @@
       <MemberSignature Language="C#" Value="public override bool PreserveWhitespace (System.Xml.XPath.XPathNavigator node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool PreserveWhitespace(class System.Xml.XPath.XPathNavigator node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageContext.PreserveWhitespace(System.Xml.XPath.XPathNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function PreserveWhitespace (node As XPathNavigator) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.PreserveWhitespace : System.Xml.XPath.XPathNavigator -&gt; bool" Usage="xPathMessageContext.PreserveWhitespace node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool PreserveWhitespace(System::Xml::XPath::XPathNavigator ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -167,6 +190,9 @@
       <MemberSignature Language="C#" Value="public override System.Xml.Xsl.IXsltContextFunction ResolveFunction (string prefix, string name, System.Xml.XPath.XPathResultType[] argTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.Xsl.IXsltContextFunction ResolveFunction(string prefix, string name, valuetype System.Xml.XPath.XPathResultType[] argTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageContext.ResolveFunction(System.String,System.String,System.Xml.XPath.XPathResultType[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ResolveFunction (prefix As String, name As String, argTypes As XPathResultType()) As IXsltContextFunction" />
+      <MemberSignature Language="F#" Value="override this.ResolveFunction : string * string * System.Xml.XPath.XPathResultType[] -&gt; System.Xml.Xsl.IXsltContextFunction" Usage="xPathMessageContext.ResolveFunction (prefix, name, argTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::Xsl::IXsltContextFunction ^ ResolveFunction(System::String ^ prefix, System::String ^ name, cli::array &lt;System::Xml::XPath::XPathResultType&gt; ^ argTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -202,6 +228,9 @@
       <MemberSignature Language="C#" Value="public override System.Xml.Xsl.IXsltContextVariable ResolveVariable (string prefix, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.Xsl.IXsltContextVariable ResolveVariable(string prefix, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.XPathMessageContext.ResolveVariable(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ResolveVariable (prefix As String, name As String) As IXsltContextVariable" />
+      <MemberSignature Language="F#" Value="override this.ResolveVariable : string * string -&gt; System.Xml.Xsl.IXsltContextVariable" Usage="xPathMessageContext.ResolveVariable (prefix, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::Xsl::IXsltContextVariable ^ ResolveVariable(System::String ^ prefix, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -233,6 +262,9 @@
       <MemberSignature Language="C#" Value="public override bool Whitespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Whitespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.XPathMessageContext.Whitespace" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Whitespace As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Whitespace : bool" Usage="System.ServiceModel.Dispatcher.XPathMessageContext.Whitespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Whitespace { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -254,14 +286,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of <see cref="T:System.ServiceModel.Dispatcher.XPathMessageContext" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="SecurityKeyEntropyMode" FullName="System.ServiceModel.Security.SecurityKeyEntropyMode">
+﻿<Type Name="SecurityKeyEntropyMode" FullName="System.ServiceModel.Security.SecurityKeyEntropyMode">
   <TypeSignature Language="C#" Value="public enum SecurityKeyEntropyMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SecurityKeyEntropyMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityKeyEntropyMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SecurityKeyEntropyMode" />
+  <TypeSignature Language="F#" Value="type SecurityKeyEntropyMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SecurityKeyEntropyMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="ClientEntropy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.SecurityKeyEntropyMode ClientEntropy = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.SecurityKeyEntropyMode.ClientEntropy" />
+      <MemberSignature Language="VB.NET" Value="ClientEntropy" />
+      <MemberSignature Language="F#" Value="ClientEntropy = 0" Usage="System.ServiceModel.Security.SecurityKeyEntropyMode.ClientEntropy" />
+      <MemberSignature Language="C++ CLI" Value="ClientEntropy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityKeyEntropyMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The client provides the key used for the issued token.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="CombinedEntropy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.SecurityKeyEntropyMode CombinedEntropy = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.SecurityKeyEntropyMode.CombinedEntropy" />
+      <MemberSignature Language="VB.NET" Value="CombinedEntropy" />
+      <MemberSignature Language="F#" Value="CombinedEntropy = 2" Usage="System.ServiceModel.Security.SecurityKeyEntropyMode.CombinedEntropy" />
+      <MemberSignature Language="C++ CLI" Value="CombinedEntropy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityKeyEntropyMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The client and server both provide entropy that is combined using the P-SHA1 function to derive the key of the issued token.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="ServerEntropy" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Security.SecurityKeyEntropyMode ServerEntropy = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Security.SecurityKeyEntropyMode.ServerEntropy" />
+      <MemberSignature Language="VB.NET" Value="ServerEntropy" />
+      <MemberSignature Language="F#" Value="ServerEntropy = 1" Usage="System.ServiceModel.Security.SecurityKeyEntropyMode.ServerEntropy" />
+      <MemberSignature Language="C++ CLI" Value="ServerEntropy" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Security.SecurityKeyEntropyMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The server provides the key for the issued token.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="HostNameComparisonMode" FullName="System.ServiceModel.HostNameComparisonMode">
+﻿<Type Name="HostNameComparisonMode" FullName="System.ServiceModel.HostNameComparisonMode">
   <TypeSignature Language="C#" Value="public enum HostNameComparisonMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HostNameComparisonMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.HostNameComparisonMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HostNameComparisonMode" />
+  <TypeSignature Language="F#" Value="type HostNameComparisonMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class HostNameComparisonMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -56,6 +59,9 @@
       <MemberSignature Language="C#" Value="Exact" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.HostNameComparisonMode Exact = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.HostNameComparisonMode.Exact" />
+      <MemberSignature Language="VB.NET" Value="Exact" />
+      <MemberSignature Language="F#" Value="Exact = 1" Usage="System.ServiceModel.HostNameComparisonMode.Exact" />
+      <MemberSignature Language="C++ CLI" Value="Exact" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -65,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Uses the hostname when dispatching incoming messages to this endpoint, if no strong match was found.</summary>
       </Docs>
@@ -73,6 +80,9 @@
       <MemberSignature Language="C#" Value="StrongWildcard" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.HostNameComparisonMode StrongWildcard = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.HostNameComparisonMode.StrongWildcard" />
+      <MemberSignature Language="VB.NET" Value="StrongWildcard" />
+      <MemberSignature Language="F#" Value="StrongWildcard = 0" Usage="System.ServiceModel.HostNameComparisonMode.StrongWildcard" />
+      <MemberSignature Language="C++ CLI" Value="StrongWildcard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Ignores the hostname when dispatching incoming messages to this endpoint. This is the default value.</summary>
       </Docs>
@@ -90,6 +101,9 @@
       <MemberSignature Language="C#" Value="WeakWildcard" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.HostNameComparisonMode WeakWildcard = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.HostNameComparisonMode.WeakWildcard" />
+      <MemberSignature Language="VB.NET" Value="WeakWildcard" />
+      <MemberSignature Language="F#" Value="WeakWildcard = 2" Usage="System.ServiceModel.HostNameComparisonMode.WeakWildcard" />
+      <MemberSignature Language="C++ CLI" Value="WeakWildcard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -99,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.HostNameComparisonMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>If no strong or exact match was found, ignores the hostname when matching.</summary>
       </Docs>

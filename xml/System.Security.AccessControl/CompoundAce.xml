@@ -1,7 +1,10 @@
-<Type Name="CompoundAce" FullName="System.Security.AccessControl.CompoundAce">
+﻿<Type Name="CompoundAce" FullName="System.Security.AccessControl.CompoundAce">
   <TypeSignature Language="C#" Value="public sealed class CompoundAce : System.Security.AccessControl.KnownAce" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CompoundAce extends System.Security.AccessControl.KnownAce" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.CompoundAce" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompoundAce&#xA;Inherits KnownAce" />
+  <TypeSignature Language="F#" Value="type CompoundAce = class&#xA;    inherit KnownAce" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompoundAce sealed : System::Security::AccessControl::KnownAce" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,8 @@
       <MemberSignature Language="C#" Value="public CompoundAce (System.Security.AccessControl.AceFlags flags, int accessMask, System.Security.AccessControl.CompoundAceType compoundAceType, System.Security.Principal.SecurityIdentifier sid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.AccessControl.AceFlags flags, int32 accessMask, valuetype System.Security.AccessControl.CompoundAceType compoundAceType, class System.Security.Principal.SecurityIdentifier sid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CompoundAce.#ctor(System.Security.AccessControl.AceFlags,System.Int32,System.Security.AccessControl.CompoundAceType,System.Security.Principal.SecurityIdentifier)" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.CompoundAce : System.Security.AccessControl.AceFlags * int * System.Security.AccessControl.CompoundAceType * System.Security.Principal.SecurityIdentifier -&gt; System.Security.AccessControl.CompoundAce" Usage="new System.Security.AccessControl.CompoundAce (flags, accessMask, compoundAceType, sid)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompoundAce(System::Security::AccessControl::AceFlags flags, int accessMask, System::Security::AccessControl::CompoundAceType compoundAceType, System::Security::Principal::SecurityIdentifier ^ sid);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -55,6 +60,9 @@
       <MemberSignature Language="C#" Value="public override int BinaryLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BinaryLength" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CompoundAce.BinaryLength" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BinaryLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.BinaryLength : int" Usage="System.Security.AccessControl.CompoundAce.BinaryLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int BinaryLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -79,6 +87,9 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.CompoundAceType CompoundAceType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.AccessControl.CompoundAceType CompoundAceType" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.CompoundAce.CompoundAceType" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompoundAceType As CompoundAceType" />
+      <MemberSignature Language="F#" Value="member this.CompoundAceType : System.Security.AccessControl.CompoundAceType with get, set" Usage="System.Security.AccessControl.CompoundAce.CompoundAceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::AccessControl::CompoundAceType CompoundAceType { System::Security::AccessControl::CompoundAceType get(); void set(System::Security::AccessControl::CompoundAceType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -103,6 +114,9 @@
       <MemberSignature Language="C#" Value="public override void GetBinaryForm (byte[] binaryForm, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetBinaryForm(unsigned int8[] binaryForm, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.CompoundAce.GetBinaryForm(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetBinaryForm (binaryForm As Byte(), offset As Integer)" />
+      <MemberSignature Language="F#" Value="override this.GetBinaryForm : byte[] * int -&gt; unit" Usage="compoundAce.GetBinaryForm (binaryForm, offset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetBinaryForm(cli::array &lt;System::Byte&gt; ^ binaryForm, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>

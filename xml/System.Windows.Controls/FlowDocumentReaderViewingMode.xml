@@ -1,7 +1,10 @@
-<Type Name="FlowDocumentReaderViewingMode" FullName="System.Windows.Controls.FlowDocumentReaderViewingMode">
+﻿<Type Name="FlowDocumentReaderViewingMode" FullName="System.Windows.Controls.FlowDocumentReaderViewingMode">
   <TypeSignature Language="C#" Value="public enum FlowDocumentReaderViewingMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FlowDocumentReaderViewingMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.FlowDocumentReaderViewingMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FlowDocumentReaderViewingMode" />
+  <TypeSignature Language="F#" Value="type FlowDocumentReaderViewingMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FlowDocumentReaderViewingMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="Page" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.FlowDocumentReaderViewingMode Page = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentReaderViewingMode.Page" />
+      <MemberSignature Language="VB.NET" Value="Page" />
+      <MemberSignature Language="F#" Value="Page = 0" Usage="System.Windows.Controls.FlowDocumentReaderViewingMode.Page" />
+      <MemberSignature Language="C++ CLI" Value="Page" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -44,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.FlowDocumentReaderViewingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> should show content one page at a time.</summary>
       </Docs>
@@ -52,6 +59,9 @@
       <MemberSignature Language="C#" Value="Scroll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.FlowDocumentReaderViewingMode Scroll = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentReaderViewingMode.Scroll" />
+      <MemberSignature Language="VB.NET" Value="Scroll" />
+      <MemberSignature Language="F#" Value="Scroll = 2" Usage="System.Windows.Controls.FlowDocumentReaderViewingMode.Scroll" />
+      <MemberSignature Language="C++ CLI" Value="Scroll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.FlowDocumentReaderViewingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> should show content in continuous scrolling mode.</summary>
       </Docs>
@@ -68,6 +79,9 @@
       <MemberSignature Language="C#" Value="TwoPage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.FlowDocumentReaderViewingMode TwoPage = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentReaderViewingMode.TwoPage" />
+      <MemberSignature Language="VB.NET" Value="TwoPage" />
+      <MemberSignature Language="F#" Value="TwoPage = 1" Usage="System.Windows.Controls.FlowDocumentReaderViewingMode.TwoPage" />
+      <MemberSignature Language="C++ CLI" Value="TwoPage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -76,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.FlowDocumentReaderViewingMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Windows.Controls.FlowDocumentReader" /> should show content two pages at a time, similar to an open book.</summary>
       </Docs>

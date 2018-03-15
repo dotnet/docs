@@ -1,7 +1,10 @@
-<Type Name="AntiXssEncoder" FullName="System.Web.Security.AntiXss.AntiXssEncoder">
+﻿<Type Name="AntiXssEncoder" FullName="System.Web.Security.AntiXss.AntiXssEncoder">
   <TypeSignature Language="C#" Value="public class AntiXssEncoder : System.Web.Util.HttpEncoder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AntiXssEncoder extends System.Web.Util.HttpEncoder" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.AntiXss.AntiXssEncoder" />
+  <TypeSignature Language="VB.NET" Value="Public Class AntiXssEncoder&#xA;Inherits HttpEncoder" />
+  <TypeSignature Language="F#" Value="type AntiXssEncoder = class&#xA;    inherit HttpEncoder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AntiXssEncoder : System::Web::Util::HttpEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,8 @@
       <MemberSignature Language="C#" Value="public AntiXssEncoder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AntiXssEncoder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +56,9 @@
       <MemberSignature Language="C#" Value="public static string CssEncode (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string CssEncode(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.CssEncode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CssEncode (input As String) As String" />
+      <MemberSignature Language="F#" Value="static member CssEncode : string -&gt; string" Usage="System.Web.Security.AntiXss.AntiXssEncoder.CssEncode input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ CssEncode(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -106,9 +114,12 @@
       </Docs>
     </Member>
     <Member MemberName="HtmlAttributeEncode">
-      <MemberSignature Language="C#" Value="protected override void HtmlAttributeEncode (string value, System.IO.TextWriter output);" />
+      <MemberSignature Language="C#" Value="protected internal override void HtmlAttributeEncode (string value, System.IO.TextWriter output);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void HtmlAttributeEncode(string value, class System.IO.TextWriter output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.HtmlAttributeEncode(System.String,System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub HtmlAttributeEncode (value As String, output As TextWriter)" />
+      <MemberSignature Language="F#" Value="override this.HtmlAttributeEncode : string * System.IO.TextWriter -&gt; unit" Usage="antiXssEncoder.HtmlAttributeEncode (value, output)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void HtmlAttributeEncode(System::String ^ value, System::IO::TextWriter ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -197,10 +208,22 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
  <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HtmlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes the specified string for use as text in HTML markup.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="HtmlEncode">
       <MemberSignature Language="C#" Value="public static string HtmlEncode (string input, bool useNamedEntities);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string HtmlEncode(string input, bool useNamedEntities) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.HtmlEncode(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HtmlEncode (input As String, useNamedEntities As Boolean) As String" />
+      <MemberSignature Language="F#" Value="static member HtmlEncode : string * bool -&gt; string" Usage="System.Web.Security.AntiXss.AntiXssEncoder.HtmlEncode (input, useNamedEntities)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ HtmlEncode(System::String ^ input, bool useNamedEntities);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -293,9 +316,12 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
       </Docs>
     </Member>
     <Member MemberName="HtmlEncode">
-      <MemberSignature Language="C#" Value="protected override void HtmlEncode (string value, System.IO.TextWriter output);" />
+      <MemberSignature Language="C#" Value="protected internal override void HtmlEncode (string value, System.IO.TextWriter output);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void HtmlEncode(string value, class System.IO.TextWriter output) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.HtmlEncode(System.String,System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub HtmlEncode (value As String, output As TextWriter)" />
+      <MemberSignature Language="F#" Value="override this.HtmlEncode : string * System.IO.TextWriter -&gt; unit" Usage="antiXssEncoder.HtmlEncode (value, output)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void HtmlEncode(System::String ^ value, System::IO::TextWriter ^ output);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -385,10 +411,22 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
  <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HtmlFormUrlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes the specified string for use in form submissions whose MIME type is "application/x-www-form-urlencoded".</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="HtmlFormUrlEncode">
       <MemberSignature Language="C#" Value="public static string HtmlFormUrlEncode (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string HtmlFormUrlEncode(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.HtmlFormUrlEncode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HtmlFormUrlEncode (input As String) As String" />
+      <MemberSignature Language="F#" Value="static member HtmlFormUrlEncode : string -&gt; string" Usage="System.Web.Security.AntiXss.AntiXssEncoder.HtmlFormUrlEncode input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ HtmlFormUrlEncode(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -441,6 +479,9 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
       <MemberSignature Language="C#" Value="public static string HtmlFormUrlEncode (string input, int codePage);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string HtmlFormUrlEncode(string input, int32 codePage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.HtmlFormUrlEncode(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HtmlFormUrlEncode (input As String, codePage As Integer) As String" />
+      <MemberSignature Language="F#" Value="static member HtmlFormUrlEncode : string * int -&gt; string" Usage="System.Web.Security.AntiXss.AntiXssEncoder.HtmlFormUrlEncode (input, codePage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ HtmlFormUrlEncode(System::String ^ input, int codePage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -497,6 +538,9 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
       <MemberSignature Language="C#" Value="public static string HtmlFormUrlEncode (string input, System.Text.Encoding inputEncoding);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string HtmlFormUrlEncode(string input, class System.Text.Encoding inputEncoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.HtmlFormUrlEncode(System.String,System.Text.Encoding)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function HtmlFormUrlEncode (input As String, inputEncoding As Encoding) As String" />
+      <MemberSignature Language="F#" Value="static member HtmlFormUrlEncode : string * System.Text.Encoding -&gt; string" Usage="System.Web.Security.AntiXss.AntiXssEncoder.HtmlFormUrlEncode (input, inputEncoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ HtmlFormUrlEncode(System::String ^ input, System::Text::Encoding ^ inputEncoding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -553,6 +597,8 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
       <MemberSignature Language="C#" Value="public static void MarkAsSafe (System.Web.Security.AntiXss.LowerCodeCharts lowerCodeCharts, System.Web.Security.AntiXss.LowerMidCodeCharts lowerMidCodeCharts, System.Web.Security.AntiXss.MidCodeCharts midCodeCharts, System.Web.Security.AntiXss.UpperMidCodeCharts upperMidCodeCharts, System.Web.Security.AntiXss.UpperCodeCharts upperCodeCharts);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void MarkAsSafe(valuetype System.Web.Security.AntiXss.LowerCodeCharts lowerCodeCharts, valuetype System.Web.Security.AntiXss.LowerMidCodeCharts lowerMidCodeCharts, valuetype System.Web.Security.AntiXss.MidCodeCharts midCodeCharts, valuetype System.Web.Security.AntiXss.UpperMidCodeCharts upperMidCodeCharts, valuetype System.Web.Security.AntiXss.UpperCodeCharts upperCodeCharts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe(System.Web.Security.AntiXss.LowerCodeCharts,System.Web.Security.AntiXss.LowerMidCodeCharts,System.Web.Security.AntiXss.MidCodeCharts,System.Web.Security.AntiXss.UpperMidCodeCharts,System.Web.Security.AntiXss.UpperCodeCharts)" />
+      <MemberSignature Language="F#" Value="static member MarkAsSafe : System.Web.Security.AntiXss.LowerCodeCharts * System.Web.Security.AntiXss.LowerMidCodeCharts * System.Web.Security.AntiXss.MidCodeCharts * System.Web.Security.AntiXss.UpperMidCodeCharts * System.Web.Security.AntiXss.UpperCodeCharts -&gt; unit" Usage="System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe (lowerCodeCharts, lowerMidCodeCharts, midCodeCharts, upperMidCodeCharts, upperCodeCharts)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void MarkAsSafe(System::Web::Security::AntiXss::LowerCodeCharts lowerCodeCharts, System::Web::Security::AntiXss::LowerMidCodeCharts lowerMidCodeCharts, System::Web::Security::AntiXss::MidCodeCharts midCodeCharts, System::Web::Security::AntiXss::UpperMidCodeCharts upperMidCodeCharts, System::Web::Security::AntiXss::UpperCodeCharts upperCodeCharts);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -609,10 +655,22 @@ MarkAsSafe(
         <exception cref="T:System.InvalidOperationException">The <see cref="M:System.Web.Security.AntiXss.AntiXssEncoder.MarkAsSafe(System.Web.Security.AntiXss.LowerCodeCharts,System.Web.Security.AntiXss.LowerMidCodeCharts,System.Web.Security.AntiXss.MidCodeCharts,System.Web.Security.AntiXss.UpperMidCodeCharts,System.Web.Security.AntiXss.UpperCodeCharts)" /> method was called outside the <see langword="Application_Start" /> method in the Global.asax file.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="UrlEncode">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Encodes strings and byte arrays for use in a URL.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="UrlEncode">
       <MemberSignature Language="C#" Value="public static string UrlEncode (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlEncode(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.UrlEncode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncode (input As String) As String" />
+      <MemberSignature Language="F#" Value="static member UrlEncode : string -&gt; string" Usage="System.Web.Security.AntiXss.AntiXssEncoder.UrlEncode input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -664,6 +722,9 @@ MarkAsSafe(
       <MemberSignature Language="C#" Value="public static string UrlEncode (string input, int codePage);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlEncode(string input, int32 codePage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.UrlEncode(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncode (input As String, codePage As Integer) As String" />
+      <MemberSignature Language="F#" Value="static member UrlEncode : string * int -&gt; string" Usage="System.Web.Security.AntiXss.AntiXssEncoder.UrlEncode (input, codePage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(System::String ^ input, int codePage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -717,6 +778,9 @@ MarkAsSafe(
       <MemberSignature Language="C#" Value="public static string UrlEncode (string input, System.Text.Encoding inputEncoding);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string UrlEncode(string input, class System.Text.Encoding inputEncoding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.UrlEncode(System.String,System.Text.Encoding)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UrlEncode (input As String, inputEncoding As Encoding) As String" />
+      <MemberSignature Language="F#" Value="static member UrlEncode : string * System.Text.Encoding -&gt; string" Usage="System.Web.Security.AntiXss.AntiXssEncoder.UrlEncode (input, inputEncoding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ UrlEncode(System::String ^ input, System::Text::Encoding ^ inputEncoding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -767,9 +831,12 @@ MarkAsSafe(
       </Docs>
     </Member>
     <Member MemberName="UrlEncode">
-      <MemberSignature Language="C#" Value="protected override byte[] UrlEncode (byte[] bytes, int offset, int count);" />
+      <MemberSignature Language="C#" Value="protected internal override byte[] UrlEncode (byte[] bytes, int offset, int count);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance unsigned int8[] UrlEncode(unsigned int8[] bytes, int32 offset, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.UrlEncode(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function UrlEncode (bytes As Byte(), offset As Integer, count As Integer) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.UrlEncode : byte[] * int * int -&gt; byte[]" Usage="antiXssEncoder.UrlEncode (bytes, offset, count)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override cli::array &lt;System::Byte&gt; ^ UrlEncode(cli::array &lt;System::Byte&gt; ^ bytes, int offset, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -822,9 +889,12 @@ MarkAsSafe(
       </Docs>
     </Member>
     <Member MemberName="UrlPathEncode">
-      <MemberSignature Language="C#" Value="protected override string UrlPathEncode (string value);" />
+      <MemberSignature Language="C#" Value="protected internal override string UrlPathEncode (string value);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string UrlPathEncode(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.UrlPathEncode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function UrlPathEncode (value As String) As String" />
+      <MemberSignature Language="F#" Value="override this.UrlPathEncode : string -&gt; string" Usage="antiXssEncoder.UrlPathEncode value" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::String ^ UrlPathEncode(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -886,6 +956,9 @@ MarkAsSafe(
       <MemberSignature Language="C#" Value="public static string XmlAttributeEncode (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string XmlAttributeEncode(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.XmlAttributeEncode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function XmlAttributeEncode (input As String) As String" />
+      <MemberSignature Language="F#" Value="static member XmlAttributeEncode : string -&gt; string" Usage="System.Web.Security.AntiXss.AntiXssEncoder.XmlAttributeEncode input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ XmlAttributeEncode(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -977,6 +1050,9 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
       <MemberSignature Language="C#" Value="public static string XmlEncode (string input);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string XmlEncode(string input) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Security.AntiXss.AntiXssEncoder.XmlEncode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function XmlEncode (input As String) As String" />
+      <MemberSignature Language="F#" Value="static member XmlEncode : string -&gt; string" Usage="System.Web.Security.AntiXss.AntiXssEncoder.XmlEncode input" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ XmlEncode(System::String ^ input);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1065,32 +1141,5 @@ Combining Diacritical Marks](http://www.unicode.org/charts/PDF/U0300.pdf)|0x0300
  <paramref name="input" /> contained a low surrogate code point that was not preceded by a high surrogate code point.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="HtmlFormUrlEncode">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Encodes the specified string for use in form submissions whose MIME type is "application/x-www-form-urlencoded".</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="HtmlEncode">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Encodes the specified string for use as text in HTML markup.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="UrlEncode">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Encodes strings and byte arrays for use in a URL.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="PrintDocumentImageableArea" FullName="System.Printing.PrintDocumentImageableArea">
+﻿<Type Name="PrintDocumentImageableArea" FullName="System.Printing.PrintDocumentImageableArea">
   <TypeSignature Language="C#" Value="public class PrintDocumentImageableArea" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrintDocumentImageableArea extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintDocumentImageableArea" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrintDocumentImageableArea" />
+  <TypeSignature Language="F#" Value="type PrintDocumentImageableArea = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintDocumentImageableArea" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="public double ExtentHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ExtentHeight" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintDocumentImageableArea.ExtentHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.ExtentHeight : double" Usage="System.Printing.PrintDocumentImageableArea.ExtentHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentHeight { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -58,6 +64,9 @@
       <MemberSignature Language="C#" Value="public double ExtentWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ExtentWidth" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintDocumentImageableArea.ExtentWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ExtentWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.ExtentWidth : double" Usage="System.Printing.PrintDocumentImageableArea.ExtentWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ExtentWidth { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -83,6 +92,9 @@
       <MemberSignature Language="C#" Value="public double MediaSizeHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 MediaSizeHeight" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintDocumentImageableArea.MediaSizeHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MediaSizeHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.MediaSizeHeight : double" Usage="System.Printing.PrintDocumentImageableArea.MediaSizeHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MediaSizeHeight { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -101,6 +113,9 @@
       <MemberSignature Language="C#" Value="public double MediaSizeWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 MediaSizeWidth" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintDocumentImageableArea.MediaSizeWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MediaSizeWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.MediaSizeWidth : double" Usage="System.Printing.PrintDocumentImageableArea.MediaSizeWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MediaSizeWidth { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -119,6 +134,9 @@
       <MemberSignature Language="C#" Value="public double OriginHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 OriginHeight" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintDocumentImageableArea.OriginHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.OriginHeight : double" Usage="System.Printing.PrintDocumentImageableArea.OriginHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OriginHeight { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -137,6 +155,9 @@
       <MemberSignature Language="C#" Value="public double OriginWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 OriginWidth" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintDocumentImageableArea.OriginWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.OriginWidth : double" Usage="System.Printing.PrintDocumentImageableArea.OriginWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double OriginWidth { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

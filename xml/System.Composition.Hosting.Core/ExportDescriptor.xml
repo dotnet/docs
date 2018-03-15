@@ -1,7 +1,10 @@
-<Type Name="ExportDescriptor" FullName="System.Composition.Hosting.Core.ExportDescriptor">
+﻿<Type Name="ExportDescriptor" FullName="System.Composition.Hosting.Core.ExportDescriptor">
   <TypeSignature Language="C#" Value="public abstract class ExportDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExportDescriptor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Composition.Hosting.Core.ExportDescriptor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExportDescriptor" />
+  <TypeSignature Language="F#" Value="type ExportDescriptor = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExportDescriptor abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Composition.Hosting</AssemblyName>
     <AssemblyVersion>1.0.31.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="protected ExportDescriptor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.ExportDescriptor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ExportDescriptor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -50,6 +55,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Composition.Hosting.Core.CompositeActivator Activator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Composition.Hosting.Core.CompositeActivator Activator" />
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.ExportDescriptor.Activator" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Activator As CompositeActivator" />
+      <MemberSignature Language="F#" Value="member this.Activator : System.Composition.Hosting.Core.CompositeActivator" Usage="System.Composition.Hosting.Core.ExportDescriptor.Activator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Composition::Hosting::Core::CompositeActivator ^ Activator { System::Composition::Hosting::Core::CompositeActivator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -62,14 +70,16 @@
       <Docs>
         <summary>Gets the activator used to retrieve instances of the export.</summary>
         <value>The activator.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Composition.Hosting.Core.ExportDescriptor Create (System.Composition.Hosting.Core.CompositeActivator activator, System.Collections.Generic.IDictionary&lt;string,object&gt; metadata);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Composition.Hosting.Core.ExportDescriptor Create(class System.Composition.Hosting.Core.CompositeActivator activator, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Composition.Hosting.Core.ExportDescriptor.Create(System.Composition.Hosting.Core.CompositeActivator,System.Collections.Generic.IDictionary{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (activator As CompositeActivator, metadata As IDictionary(Of String, Object)) As ExportDescriptor" />
+      <MemberSignature Language="F#" Value="static member Create : System.Composition.Hosting.Core.CompositeActivator * System.Collections.Generic.IDictionary&lt;string, obj&gt; -&gt; System.Composition.Hosting.Core.ExportDescriptor" Usage="System.Composition.Hosting.Core.ExportDescriptor.Create (activator, metadata)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Composition::Hosting::Core::ExportDescriptor ^ Create(System::Composition::Hosting::Core::CompositeActivator ^ activator, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -88,14 +98,16 @@
         <param name="metadata">The metadata associated with the export.</param>
         <summary>Creates an export descriptor that has the specified activator and metadata.</summary>
         <returns>The created descriptor.</returns>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Metadata">
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IDictionary&lt;string,object&gt; Metadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; Metadata" />
       <MemberSignature Language="DocId" Value="P:System.Composition.Hosting.Core.ExportDescriptor.Metadata" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Metadata As IDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Composition.Hosting.Core.ExportDescriptor.Metadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ Metadata { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Composition.Hosting</AssemblyName>
@@ -108,8 +120,7 @@
       <Docs>
         <summary>Gets the metadata for the export.</summary>
         <value>A collection of metadata.</value>
-        <remarks>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

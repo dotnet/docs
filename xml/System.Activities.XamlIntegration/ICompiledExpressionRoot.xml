@@ -1,7 +1,10 @@
-<Type Name="ICompiledExpressionRoot" FullName="System.Activities.XamlIntegration.ICompiledExpressionRoot">
+﻿<Type Name="ICompiledExpressionRoot" FullName="System.Activities.XamlIntegration.ICompiledExpressionRoot">
   <TypeSignature Language="C#" Value="public interface ICompiledExpressionRoot" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICompiledExpressionRoot" />
   <TypeSignature Language="DocId" Value="T:System.Activities.XamlIntegration.ICompiledExpressionRoot" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICompiledExpressionRoot" />
+  <TypeSignature Language="F#" Value="type ICompiledExpressionRoot = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICompiledExpressionRoot" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +19,9 @@
       <MemberSignature Language="C#" Value="public bool CanExecuteExpression (string expressionText, bool isReference, System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; locations, out int expressionId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanExecuteExpression(string expressionText, bool isReference, class System.Collections.Generic.IList`1&lt;class System.Activities.LocationReference&gt; locations, [out] int32&amp; expressionId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ICompiledExpressionRoot.CanExecuteExpression(System.String,System.Boolean,System.Collections.Generic.IList{System.Activities.LocationReference},System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanExecuteExpression (expressionText As String, isReference As Boolean, locations As IList(Of LocationReference), ByRef expressionId As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanExecuteExpression : string * bool * System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; *  -&gt; bool" Usage="iCompiledExpressionRoot.CanExecuteExpression (expressionText, isReference, locations, expressionId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanExecuteExpression(System::String ^ expressionText, bool isReference, System::Collections::Generic::IList&lt;System::Activities::LocationReference ^&gt; ^ locations, [Runtime::InteropServices::Out] int % expressionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -46,6 +52,9 @@
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.Expression GetExpressionTreeForExpression (int expressionId, System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; locationReferences);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Linq.Expressions.Expression GetExpressionTreeForExpression(int32 expressionId, class System.Collections.Generic.IList`1&lt;class System.Activities.LocationReference&gt; locationReferences) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ICompiledExpressionRoot.GetExpressionTreeForExpression(System.Int32,System.Collections.Generic.IList{System.Activities.LocationReference})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetExpressionTreeForExpression (expressionId As Integer, locationReferences As IList(Of LocationReference)) As Expression" />
+      <MemberSignature Language="F#" Value="abstract member GetExpressionTreeForExpression : int * System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; -&gt; System.Linq.Expressions.Expression" Usage="iCompiledExpressionRoot.GetExpressionTreeForExpression (expressionId, locationReferences)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Linq::Expressions::Expression ^ GetExpressionTreeForExpression(int expressionId, System::Collections::Generic::IList&lt;System::Activities::LocationReference ^&gt; ^ locationReferences);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -70,6 +79,9 @@
       <MemberSignature Language="C#" Value="public string GetLanguage ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetLanguage() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ICompiledExpressionRoot.GetLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLanguage () As String" />
+      <MemberSignature Language="F#" Value="abstract member GetLanguage : unit -&gt; string" Usage="iCompiledExpressionRoot.GetLanguage " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetLanguage();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -89,6 +101,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;string&gt; GetRequiredLocations (int expressionId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;string&gt; GetRequiredLocations(int32 expressionId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ICompiledExpressionRoot.GetRequiredLocations(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRequiredLocations (expressionId As Integer) As IList(Of String)" />
+      <MemberSignature Language="F#" Value="abstract member GetRequiredLocations : int -&gt; System.Collections.Generic.IList&lt;string&gt;" Usage="iCompiledExpressionRoot.GetRequiredLocations expressionId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IList&lt;System::String ^&gt; ^ GetRequiredLocations(int expressionId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -107,10 +122,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeExpression">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the <see cref="T:System.Activities.XamlIntegration.ICompiledExpressionRoot" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InvokeExpression">
       <MemberSignature Language="C#" Value="public object InvokeExpression (int expressionId, System.Collections.Generic.IList&lt;System.Activities.Location&gt; locations);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object InvokeExpression(int32 expressionId, class System.Collections.Generic.IList`1&lt;class System.Activities.Location&gt; locations) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ICompiledExpressionRoot.InvokeExpression(System.Int32,System.Collections.Generic.IList{System.Activities.Location})" />
+      <MemberSignature Language="VB.NET" Value="Public Function InvokeExpression (expressionId As Integer, locations As IList(Of Location)) As Object" />
+      <MemberSignature Language="F#" Value="abstract member InvokeExpression : int * System.Collections.Generic.IList&lt;System.Activities.Location&gt; -&gt; obj" Usage="iCompiledExpressionRoot.InvokeExpression (expressionId, locations)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeExpression(int expressionId, System::Collections::Generic::IList&lt;System::Activities::Location ^&gt; ^ locations);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -135,6 +162,8 @@
       <MemberSignature Language="C#" Value="public object InvokeExpression (int expressionId, System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; locations, System.Activities.ActivityContext activityContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object InvokeExpression(int32 expressionId, class System.Collections.Generic.IList`1&lt;class System.Activities.LocationReference&gt; locations, class System.Activities.ActivityContext activityContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.XamlIntegration.ICompiledExpressionRoot.InvokeExpression(System.Int32,System.Collections.Generic.IList{System.Activities.LocationReference},System.Activities.ActivityContext)" />
+      <MemberSignature Language="F#" Value="abstract member InvokeExpression : int * System.Collections.Generic.IList&lt;System.Activities.LocationReference&gt; * System.Activities.ActivityContext -&gt; obj" Usage="iCompiledExpressionRoot.InvokeExpression (expressionId, locations, activityContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ InvokeExpression(int expressionId, System::Collections::Generic::IList&lt;System::Activities::LocationReference ^&gt; ^ locations, System::Activities::ActivityContext ^ activityContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -157,14 +186,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="InvokeExpression">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the <see cref="T:System.Activities.XamlIntegration.ICompiledExpressionRoot" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

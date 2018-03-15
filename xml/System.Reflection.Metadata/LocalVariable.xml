@@ -1,7 +1,10 @@
-<Type Name="LocalVariable" FullName="System.Reflection.Metadata.LocalVariable">
+﻿<Type Name="LocalVariable" FullName="System.Reflection.Metadata.LocalVariable">
   <TypeSignature Language="C#" Value="public struct LocalVariable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit LocalVariable extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.LocalVariable" />
+  <TypeSignature Language="VB.NET" Value="Public Structure LocalVariable" />
+  <TypeSignature Language="F#" Value="type LocalVariable = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class LocalVariable" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +24,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.LocalVariableAttributes Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.LocalVariableAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.LocalVariable.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As LocalVariableAttributes" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.Metadata.LocalVariableAttributes" Usage="System.Reflection.Metadata.LocalVariable.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::LocalVariableAttributes Attributes { System::Reflection::Metadata::LocalVariableAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +47,9 @@
       <MemberSignature Language="C#" Value="public int Index { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Index" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.LocalVariable.Index" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Index As Integer" />
+      <MemberSignature Language="F#" Value="member this.Index : int" Usage="System.Reflection.Metadata.LocalVariable.Index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Index { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -61,6 +70,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.StringHandle Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.StringHandle Name" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.LocalVariable.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As StringHandle" />
+      <MemberSignature Language="F#" Value="member this.Name : System.Reflection.Metadata.StringHandle" Usage="System.Reflection.Metadata.LocalVariable.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::StringHandle Name { System::Reflection::Metadata::StringHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

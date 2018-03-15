@@ -1,7 +1,10 @@
-<Type Name="XmlNodeOrder" FullName="System.Xml.XmlNodeOrder">
+﻿<Type Name="XmlNodeOrder" FullName="System.Xml.XmlNodeOrder">
   <TypeSignature Language="C#" Value="public enum XmlNodeOrder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed XmlNodeOrder extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlNodeOrder" />
+  <TypeSignature Language="VB.NET" Value="Public Enum XmlNodeOrder" />
+  <TypeSignature Language="F#" Value="type XmlNodeOrder = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class XmlNodeOrder" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XPath</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="After" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlNodeOrder After = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeOrder.After" />
+      <MemberSignature Language="VB.NET" Value="After" />
+      <MemberSignature Language="F#" Value="After = 1" Usage="System.Xml.XmlNodeOrder.After" />
+      <MemberSignature Language="C++ CLI" Value="After" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -53,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlNodeOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The current node of this navigator is after the current node of the supplied navigator.</summary>
       </Docs>
@@ -61,6 +68,9 @@
       <MemberSignature Language="C#" Value="Before" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlNodeOrder Before = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeOrder.Before" />
+      <MemberSignature Language="VB.NET" Value="Before" />
+      <MemberSignature Language="F#" Value="Before = 0" Usage="System.Xml.XmlNodeOrder.Before" />
+      <MemberSignature Language="C++ CLI" Value="Before" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -82,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlNodeOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The current node of this navigator is before the current node of the supplied navigator.</summary>
       </Docs>
@@ -90,6 +101,9 @@
       <MemberSignature Language="C#" Value="Same" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlNodeOrder Same = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeOrder.Same" />
+      <MemberSignature Language="VB.NET" Value="Same" />
+      <MemberSignature Language="F#" Value="Same = 2" Usage="System.Xml.XmlNodeOrder.Same" />
+      <MemberSignature Language="C++ CLI" Value="Same" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -111,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlNodeOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The two navigators are positioned on the same node.</summary>
       </Docs>
@@ -119,6 +134,9 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.XmlNodeOrder Unknown = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.XmlNodeOrder.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 3" Usage="System.Xml.XmlNodeOrder.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XPath</AssemblyName>
@@ -140,6 +158,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.XmlNodeOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The node positions cannot be determined in document order, relative to each other. This could occur if the two nodes reside in different trees.</summary>
       </Docs>

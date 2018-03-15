@@ -1,7 +1,10 @@
-<Type Name="ManipulationInertiaStartingEventArgs" FullName="System.Windows.Input.ManipulationInertiaStartingEventArgs">
+﻿<Type Name="ManipulationInertiaStartingEventArgs" FullName="System.Windows.Input.ManipulationInertiaStartingEventArgs">
   <TypeSignature Language="C#" Value="public sealed class ManipulationInertiaStartingEventArgs : System.Windows.Input.InputEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ManipulationInertiaStartingEventArgs extends System.Windows.Input.InputEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.ManipulationInertiaStartingEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ManipulationInertiaStartingEventArgs&#xA;Inherits InputEventArgs" />
+  <TypeSignature Language="F#" Value="type ManipulationInertiaStartingEventArgs = class&#xA;    inherit InputEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManipulationInertiaStartingEventArgs sealed : System::Windows::Input::InputEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="public bool Cancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Cancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationInertiaStartingEventArgs.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Function Cancel () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Cancel : unit -&gt; bool" Usage="manipulationInertiaStartingEventArgs.Cancel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Cancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -71,6 +77,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.InertiaExpansionBehavior ExpansionBehavior { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.InertiaExpansionBehavior ExpansionBehavior" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationInertiaStartingEventArgs.ExpansionBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExpansionBehavior As InertiaExpansionBehavior" />
+      <MemberSignature Language="F#" Value="member this.ExpansionBehavior : System.Windows.Input.InertiaExpansionBehavior with get, set" Usage="System.Windows.Input.ManipulationInertiaStartingEventArgs.ExpansionBehavior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::InertiaExpansionBehavior ^ ExpansionBehavior { System::Windows::Input::InertiaExpansionBehavior ^ get(); void set(System::Windows::Input::InertiaExpansionBehavior ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -106,6 +115,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.ManipulationVelocities InitialVelocities { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.ManipulationVelocities InitialVelocities" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationInertiaStartingEventArgs.InitialVelocities" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InitialVelocities As ManipulationVelocities" />
+      <MemberSignature Language="F#" Value="member this.InitialVelocities : System.Windows.Input.ManipulationVelocities" Usage="System.Windows.Input.ManipulationInertiaStartingEventArgs.InitialVelocities" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ManipulationVelocities ^ InitialVelocities { System::Windows::Input::ManipulationVelocities ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -131,6 +143,9 @@
       <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationInertiaStartingEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="manipulationInertiaStartingEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -154,6 +169,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.IInputElement ManipulationContainer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.IInputElement ManipulationContainer" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationInertiaStartingEventArgs.ManipulationContainer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ManipulationContainer As IInputElement" />
+      <MemberSignature Language="F#" Value="member this.ManipulationContainer : System.Windows.IInputElement" Usage="System.Windows.Input.ManipulationInertiaStartingEventArgs.ManipulationContainer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::IInputElement ^ ManipulationContainer { System::Windows::IInputElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -179,6 +197,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Point ManipulationOrigin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Point ManipulationOrigin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationInertiaStartingEventArgs.ManipulationOrigin" />
+      <MemberSignature Language="VB.NET" Value="Public Property ManipulationOrigin As Point" />
+      <MemberSignature Language="F#" Value="member this.ManipulationOrigin : System.Windows.Point with get, set" Usage="System.Windows.Input.ManipulationInertiaStartingEventArgs.ManipulationOrigin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Point ManipulationOrigin { System::Windows::Point get(); void set(System::Windows::Point value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -206,6 +227,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Windows.Input.IManipulator&gt; Manipulators { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Input.IManipulator&gt; Manipulators" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationInertiaStartingEventArgs.Manipulators" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Manipulators As IEnumerable(Of IManipulator)" />
+      <MemberSignature Language="F#" Value="member this.Manipulators : seq&lt;System.Windows.Input.IManipulator&gt;" Usage="System.Windows.Input.ManipulationInertiaStartingEventArgs.Manipulators" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Windows::Input::IManipulator ^&gt; ^ Manipulators { System::Collections::Generic::IEnumerable&lt;System::Windows::Input::IManipulator ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -224,6 +248,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.InertiaRotationBehavior RotationBehavior { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.InertiaRotationBehavior RotationBehavior" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationInertiaStartingEventArgs.RotationBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property RotationBehavior As InertiaRotationBehavior" />
+      <MemberSignature Language="F#" Value="member this.RotationBehavior : System.Windows.Input.InertiaRotationBehavior with get, set" Usage="System.Windows.Input.ManipulationInertiaStartingEventArgs.RotationBehavior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::InertiaRotationBehavior ^ RotationBehavior { System::Windows::Input::InertiaRotationBehavior ^ get(); void set(System::Windows::Input::InertiaRotationBehavior ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -259,6 +286,9 @@
       <MemberSignature Language="C#" Value="public void SetInertiaParameter (System.Windows.Input.Manipulations.InertiaParameters2D parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetInertiaParameter(class System.Windows.Input.Manipulations.InertiaParameters2D parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.ManipulationInertiaStartingEventArgs.SetInertiaParameter(System.Windows.Input.Manipulations.InertiaParameters2D)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetInertiaParameter (parameter As InertiaParameters2D)" />
+      <MemberSignature Language="F#" Value="member this.SetInertiaParameter : System.Windows.Input.Manipulations.InertiaParameters2D -&gt; unit" Usage="manipulationInertiaStartingEventArgs.SetInertiaParameter parameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetInertiaParameter(System::Windows::Input::Manipulations::InertiaParameters2D ^ parameter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -294,6 +324,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.InertiaTranslationBehavior TranslationBehavior { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.InertiaTranslationBehavior TranslationBehavior" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.ManipulationInertiaStartingEventArgs.TranslationBehavior" />
+      <MemberSignature Language="VB.NET" Value="Public Property TranslationBehavior As InertiaTranslationBehavior" />
+      <MemberSignature Language="F#" Value="member this.TranslationBehavior : System.Windows.Input.InertiaTranslationBehavior with get, set" Usage="System.Windows.Input.ManipulationInertiaStartingEventArgs.TranslationBehavior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::InertiaTranslationBehavior ^ TranslationBehavior { System::Windows::Input::InertiaTranslationBehavior ^ get(); void set(System::Windows::Input::InertiaTranslationBehavior ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="Oid" FullName="System.Security.Cryptography.Oid">
+﻿<Type Name="Oid" FullName="System.Security.Cryptography.Oid">
   <TypeSignature Language="C#" Value="public sealed class Oid" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Oid extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Oid" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Oid" />
+  <TypeSignature Language="F#" Value="type Oid = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Oid sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,10 +44,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Oid" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Oid ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Oid();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +100,8 @@
       <MemberSignature Language="C#" Value="public Oid (System.Security.Cryptography.Oid oid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.Oid oid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.#ctor(System.Security.Cryptography.Oid)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Oid : System.Security.Cryptography.Oid -&gt; System.Security.Cryptography.Oid" Usage="new System.Security.Cryptography.Oid oid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Oid(System::Security::Cryptography::Oid ^ oid);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -131,6 +148,9 @@
       <MemberSignature Language="C#" Value="public Oid (string oid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string oid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (oid As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Oid : string -&gt; System.Security.Cryptography.Oid" Usage="new System.Security.Cryptography.Oid oid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Oid(System::String ^ oid);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -175,6 +195,9 @@
       <MemberSignature Language="C#" Value="public Oid (string value, string friendlyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value, string friendlyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String, friendlyName As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Oid : string * string -&gt; System.Security.Cryptography.Oid" Usage="new System.Security.Cryptography.Oid (value, friendlyName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Oid(System::String ^ value, System::String ^ friendlyName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -221,6 +244,9 @@
       <MemberSignature Language="C#" Value="public string FriendlyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FriendlyName" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Oid.FriendlyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FriendlyName As String" />
+      <MemberSignature Language="F#" Value="member this.FriendlyName : string with get, set" Usage="System.Security.Cryptography.Oid.FriendlyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FriendlyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -265,6 +291,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.Oid FromFriendlyName (string friendlyName, System.Security.Cryptography.OidGroup group);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.Oid FromFriendlyName(string friendlyName, valuetype System.Security.Cryptography.OidGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.FromFriendlyName(System.String,System.Security.Cryptography.OidGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromFriendlyName (friendlyName As String, group As OidGroup) As Oid" />
+      <MemberSignature Language="F#" Value="static member FromFriendlyName : string * System.Security.Cryptography.OidGroup -&gt; System.Security.Cryptography.Oid" Usage="System.Security.Cryptography.Oid.FromFriendlyName (friendlyName, group)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::Oid ^ FromFriendlyName(System::String ^ friendlyName, System::Security::Cryptography::OidGroup group);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -302,6 +331,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.Oid FromOidValue (string oidValue, System.Security.Cryptography.OidGroup group);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.Oid FromOidValue(string oidValue, valuetype System.Security.Cryptography.OidGroup group) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Oid.FromOidValue(System.String,System.Security.Cryptography.OidGroup)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromOidValue (oidValue As String, group As OidGroup) As Oid" />
+      <MemberSignature Language="F#" Value="static member FromOidValue : string * System.Security.Cryptography.OidGroup -&gt; System.Security.Cryptography.Oid" Usage="System.Security.Cryptography.Oid.FromOidValue (oidValue, group)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::Oid ^ FromOidValue(System::String ^ oidValue, System::Security::Cryptography::OidGroup group);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -339,6 +371,9 @@
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Oid.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Security.Cryptography.Oid.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Encoding</AssemblyName>
@@ -379,15 +414,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Oid" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

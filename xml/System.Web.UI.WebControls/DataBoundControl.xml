@@ -1,7 +1,10 @@
-<Type Name="DataBoundControl" FullName="System.Web.UI.WebControls.DataBoundControl">
+﻿<Type Name="DataBoundControl" FullName="System.Web.UI.WebControls.DataBoundControl">
   <TypeSignature Language="C#" Value="public abstract class DataBoundControl : System.Web.UI.WebControls.BaseDataBoundControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataBoundControl extends System.Web.UI.WebControls.BaseDataBoundControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataBoundControl" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataBoundControl&#xA;Inherits BaseDataBoundControl" />
+  <TypeSignature Language="F#" Value="type DataBoundControl = class&#xA;    inherit BaseDataBoundControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataBoundControl abstract : System::Web::UI::WebControls::BaseDataBoundControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +55,8 @@
       <MemberSignature Language="C#" Value="protected DataBoundControl ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataBoundControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +72,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.CallingDataMethodsEventHandler CallingDataMethods;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.CallingDataMethodsEventHandler CallingDataMethods" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataBoundControl.CallingDataMethods" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CallingDataMethods As CallingDataMethodsEventHandler " />
+      <MemberSignature Language="F#" Value="member this.CallingDataMethods : System.Web.UI.WebControls.CallingDataMethodsEventHandler " Usage="member this.CallingDataMethods : System.Web.UI.WebControls.CallingDataMethodsEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::CallingDataMethodsEventHandler ^ CallingDataMethods;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +101,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.DataSourceSelectArguments CreateDataSourceSelectArguments ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.DataSourceSelectArguments CreateDataSourceSelectArguments() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.CreateDataSourceSelectArguments" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateDataSourceSelectArguments () As DataSourceSelectArguments" />
+      <MemberSignature Language="F#" Value="abstract member CreateDataSourceSelectArguments : unit -&gt; System.Web.UI.DataSourceSelectArguments&#xA;override this.CreateDataSourceSelectArguments : unit -&gt; System.Web.UI.DataSourceSelectArguments" Usage="dataBoundControl.CreateDataSourceSelectArguments " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::DataSourceSelectArguments ^ CreateDataSourceSelectArguments();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +140,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.CreatingModelDataSourceEventHandler CreatingModelDataSource;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.CreatingModelDataSourceEventHandler CreatingModelDataSource" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.DataBoundControl.CreatingModelDataSource" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CreatingModelDataSource As CreatingModelDataSourceEventHandler " />
+      <MemberSignature Language="F#" Value="member this.CreatingModelDataSource : System.Web.UI.WebControls.CreatingModelDataSourceEventHandler " Usage="member this.CreatingModelDataSource : System.Web.UI.WebControls.CreatingModelDataSourceEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::CreatingModelDataSourceEventHandler ^ CreatingModelDataSource;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -153,6 +167,9 @@
       <MemberSignature Language="C#" Value="public virtual string DataMember { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataMember" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataBoundControl.DataMember" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DataMember As String" />
+      <MemberSignature Language="F#" Value="member this.DataMember : string with get, set" Usage="System.Web.UI.WebControls.DataBoundControl.DataMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataMember { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,6 +205,9 @@
       <MemberSignature Language="C#" Value="public override string DataSourceID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataSourceID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataBoundControl.DataSourceID" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property DataSourceID As String" />
+      <MemberSignature Language="F#" Value="member this.DataSourceID : string with get, set" Usage="System.Web.UI.WebControls.DataBoundControl.DataSourceID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DataSourceID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -211,6 +231,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.IDataSource DataSourceObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.IDataSource DataSourceObject" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataBoundControl.DataSourceObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSourceObject As IDataSource" />
+      <MemberSignature Language="F#" Value="member this.DataSourceObject : System.Web.UI.IDataSource" Usage="System.Web.UI.WebControls.DataBoundControl.DataSourceObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::IDataSource ^ DataSourceObject { System::Web::UI::IDataSource ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -221,7 +244,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -237,6 +260,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.DataSourceView GetData ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.DataSourceView GetData() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.GetData" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetData () As DataSourceView" />
+      <MemberSignature Language="F#" Value="abstract member GetData : unit -&gt; System.Web.UI.DataSourceView&#xA;override this.GetData : unit -&gt; System.Web.UI.DataSourceView" Usage="dataBoundControl.GetData " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::DataSourceView ^ GetData();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -278,6 +304,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.IDataSource GetDataSource ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.IDataSource GetDataSource() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.GetDataSource" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetDataSource () As IDataSource" />
+      <MemberSignature Language="F#" Value="abstract member GetDataSource : unit -&gt; System.Web.UI.IDataSource&#xA;override this.GetDataSource : unit -&gt; System.Web.UI.IDataSource" Usage="dataBoundControl.GetDataSource " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::IDataSource ^ GetDataSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -310,6 +339,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsUsingModelBinders { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUsingModelBinders" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataBoundControl.IsUsingModelBinders" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property IsUsingModelBinders As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsUsingModelBinders : bool" Usage="System.Web.UI.WebControls.DataBoundControl.IsUsingModelBinders" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsUsingModelBinders { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -336,6 +368,9 @@
       <MemberSignature Language="C#" Value="public virtual string ItemType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ItemType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataBoundControl.ItemType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ItemType As String" />
+      <MemberSignature Language="F#" Value="member this.ItemType : string with get, set" Usage="System.Web.UI.WebControls.DataBoundControl.ItemType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ItemType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -373,6 +408,9 @@
       <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="dataBoundControl.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -394,6 +432,9 @@
       <MemberSignature Language="C#" Value="protected void MarkAsDataBound ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void MarkAsDataBound() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.MarkAsDataBound" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub MarkAsDataBound ()" />
+      <MemberSignature Language="F#" Value="member this.MarkAsDataBound : unit -&gt; unit" Usage="dataBoundControl.MarkAsDataBound " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void MarkAsDataBound();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -428,6 +469,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCreatingModelDataSource (System.Web.UI.WebControls.CreatingModelDataSourceEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCreatingModelDataSource(class System.Web.UI.WebControls.CreatingModelDataSourceEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.OnCreatingModelDataSource(System.Web.UI.WebControls.CreatingModelDataSourceEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCreatingModelDataSource (e As CreatingModelDataSourceEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnCreatingModelDataSource : System.Web.UI.WebControls.CreatingModelDataSourceEventArgs -&gt; unit&#xA;override this.OnCreatingModelDataSource : System.Web.UI.WebControls.CreatingModelDataSourceEventArgs -&gt; unit" Usage="dataBoundControl.OnCreatingModelDataSource e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCreatingModelDataSource(System::Web::UI::WebControls::CreatingModelDataSourceEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -449,6 +493,9 @@
       <MemberSignature Language="C#" Value="protected override void OnDataPropertyChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDataPropertyChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.OnDataPropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataPropertyChanged ()" />
+      <MemberSignature Language="F#" Value="override this.OnDataPropertyChanged : unit -&gt; unit" Usage="dataBoundControl.OnDataPropertyChanged " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataPropertyChanged();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -467,6 +514,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDataSourceViewChanged (object sender, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDataSourceViewChanged(object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.OnDataSourceViewChanged(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDataSourceViewChanged (sender As Object, e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDataSourceViewChanged : obj * EventArgs -&gt; unit&#xA;override this.OnDataSourceViewChanged : obj * EventArgs -&gt; unit" Usage="dataBoundControl.OnDataSourceViewChanged (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDataSourceViewChanged(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -503,9 +553,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnLoad">
-      <MemberSignature Language="C#" Value="protected override void OnLoad (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnLoad (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnLoad(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.OnLoad(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnLoad (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnLoad : EventArgs -&gt; unit" Usage="dataBoundControl.OnLoad e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnLoad(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -534,6 +587,9 @@
       <MemberSignature Language="C#" Value="protected override void OnPagePreLoad (object sender, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPagePreLoad(object sender, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.OnPagePreLoad(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPagePreLoad (sender As Object, e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPagePreLoad : obj * EventArgs -&gt; unit" Usage="dataBoundControl.OnPagePreLoad (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPagePreLoad(System::Object ^ sender, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -562,9 +618,12 @@
       </Docs>
     </Member>
     <Member MemberName="PerformDataBinding">
-      <MemberSignature Language="C#" Value="protected virtual void PerformDataBinding (System.Collections.IEnumerable data);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void PerformDataBinding (System.Collections.IEnumerable data);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void PerformDataBinding(class System.Collections.IEnumerable data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.PerformDataBinding(System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub PerformDataBinding (data As IEnumerable)" />
+      <MemberSignature Language="F#" Value="abstract member PerformDataBinding : System.Collections.IEnumerable -&gt; unit&#xA;override this.PerformDataBinding : System.Collections.IEnumerable -&gt; unit" Usage="dataBoundControl.PerformDataBinding data" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void PerformDataBinding(System::Collections::IEnumerable ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -603,6 +662,9 @@
       <MemberSignature Language="C#" Value="protected override void PerformSelect ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void PerformSelect() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.PerformSelect" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub PerformSelect ()" />
+      <MemberSignature Language="F#" Value="override this.PerformSelect : unit -&gt; unit" Usage="dataBoundControl.PerformSelect " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void PerformSelect();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -639,6 +701,9 @@
       <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="dataBoundControl.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -658,6 +723,9 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.DataSourceSelectArguments SelectArguments { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataSourceSelectArguments SelectArguments" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataBoundControl.SelectArguments" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property SelectArguments As DataSourceSelectArguments" />
+      <MemberSignature Language="F#" Value="member this.SelectArguments : System.Web.UI.DataSourceSelectArguments" Usage="System.Web.UI.WebControls.DataBoundControl.SelectArguments" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::DataSourceSelectArguments ^ SelectArguments { System::Web::UI::DataSourceSelectArguments ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -684,6 +752,9 @@
       <MemberSignature Language="C#" Value="public virtual string SelectMethod { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SelectMethod" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DataBoundControl.SelectMethod" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectMethod As String" />
+      <MemberSignature Language="F#" Value="member this.SelectMethod : string with get, set" Usage="System.Web.UI.WebControls.DataBoundControl.SelectMethod" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SelectMethod { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -719,6 +790,9 @@
       <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="dataBoundControl.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -737,6 +811,9 @@
       <MemberSignature Language="C#" Value="protected override void ValidateDataSource (object dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ValidateDataSource(object dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DataBoundControl.ValidateDataSource(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ValidateDataSource (dataSource As Object)" />
+      <MemberSignature Language="F#" Value="override this.ValidateDataSource : obj -&gt; unit" Usage="dataBoundControl.ValidateDataSource dataSource" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ValidateDataSource(System::Object ^ dataSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

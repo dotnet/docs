@@ -1,7 +1,10 @@
-<Type Name="ItemAutomationPeer" FullName="System.Windows.Automation.Peers.ItemAutomationPeer">
+﻿<Type Name="ItemAutomationPeer" FullName="System.Windows.Automation.Peers.ItemAutomationPeer">
   <TypeSignature Language="C#" Value="public abstract class ItemAutomationPeer : System.Windows.Automation.Peers.AutomationPeer, System.Windows.Automation.Provider.IVirtualizedItemProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ItemAutomationPeer extends System.Windows.Automation.Peers.AutomationPeer implements class System.Windows.Automation.Provider.IVirtualizedItemProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ItemAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ItemAutomationPeer&#xA;Inherits AutomationPeer&#xA;Implements IVirtualizedItemProvider" />
+  <TypeSignature Language="F#" Value="type ItemAutomationPeer = class&#xA;    inherit AutomationPeer&#xA;    interface IVirtualizedItemProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ItemAutomationPeer abstract : System::Windows::Automation::Peers::AutomationPeer, System::Windows::Automation::Provider::IVirtualizedItemProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="protected ItemAutomationPeer (object item, System.Windows.Automation.Peers.ItemsControlAutomationPeer itemsControlAutomationPeer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(object item, class System.Windows.Automation.Peers.ItemsControlAutomationPeer itemsControlAutomationPeer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.#ctor(System.Object,System.Windows.Automation.Peers.ItemsControlAutomationPeer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.ItemAutomationPeer : obj * System.Windows.Automation.Peers.ItemsControlAutomationPeer -&gt; System.Windows.Automation.Peers.ItemAutomationPeer" Usage="new System.Windows.Automation.Peers.ItemAutomationPeer (item, itemsControlAutomationPeer)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ItemAutomationPeer(System::Object ^ item, System::Windows::Automation::Peers::ItemsControlAutomationPeer ^ itemsControlAutomationPeer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -54,6 +59,9 @@
       <MemberSignature Language="C#" Value="protected override string GetAcceleratorKeyCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetAcceleratorKeyCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetAcceleratorKeyCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAcceleratorKeyCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetAcceleratorKeyCore : unit -&gt; string" Usage="itemAutomationPeer.GetAcceleratorKeyCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAcceleratorKeyCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -81,6 +89,9 @@
       <MemberSignature Language="C#" Value="protected override string GetAccessKeyCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetAccessKeyCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetAccessKeyCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAccessKeyCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetAccessKeyCore : unit -&gt; string" Usage="itemAutomationPeer.GetAccessKeyCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAccessKeyCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -108,6 +119,9 @@
       <MemberSignature Language="C#" Value="protected override string GetAutomationIdCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetAutomationIdCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetAutomationIdCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationIdCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationIdCore : unit -&gt; string" Usage="itemAutomationPeer.GetAutomationIdCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAutomationIdCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -137,6 +151,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Rect GetBoundingRectangleCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Rect GetBoundingRectangleCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetBoundingRectangleCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetBoundingRectangleCore () As Rect" />
+      <MemberSignature Language="F#" Value="override this.GetBoundingRectangleCore : unit -&gt; System.Windows.Rect" Usage="itemAutomationPeer.GetBoundingRectangleCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Rect GetBoundingRectangleCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -164,6 +181,9 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetChildrenCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="itemAutomationPeer.GetChildrenCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -191,6 +211,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Point GetClickablePointCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Point GetClickablePointCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetClickablePointCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClickablePointCore () As Point" />
+      <MemberSignature Language="F#" Value="override this.GetClickablePointCore : unit -&gt; System.Windows.Point" Usage="itemAutomationPeer.GetClickablePointCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Point GetClickablePointCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -218,6 +241,9 @@
       <MemberSignature Language="C#" Value="protected override string GetHelpTextCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetHelpTextCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetHelpTextCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetHelpTextCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetHelpTextCore : unit -&gt; string" Usage="itemAutomationPeer.GetHelpTextCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetHelpTextCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -245,6 +271,9 @@
       <MemberSignature Language="C#" Value="protected override string GetItemStatusCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetItemStatusCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetItemStatusCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetItemStatusCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetItemStatusCore : unit -&gt; string" Usage="itemAutomationPeer.GetItemStatusCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetItemStatusCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -272,6 +301,9 @@
       <MemberSignature Language="C#" Value="protected override string GetItemTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetItemTypeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetItemTypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetItemTypeCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetItemTypeCore : unit -&gt; string" Usage="itemAutomationPeer.GetItemTypeCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetItemTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -299,6 +331,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer GetLabeledByCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer GetLabeledByCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetLabeledByCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLabeledByCore () As AutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.GetLabeledByCore : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="itemAutomationPeer.GetLabeledByCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ GetLabeledByCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -326,6 +361,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.AutomationLiveSetting GetLiveSettingCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetLiveSettingCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetLiveSettingCore () As AutomationLiveSetting" />
+      <MemberSignature Language="F#" Value="override this.GetLiveSettingCore : unit -&gt; System.Windows.Automation.AutomationLiveSetting" Usage="itemAutomationPeer.GetLiveSettingCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::AutomationLiveSetting GetLiveSettingCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -345,6 +383,9 @@
       <MemberSignature Language="C#" Value="protected override string GetNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetNameCore : unit -&gt; string" Usage="itemAutomationPeer.GetNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -374,6 +415,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationOrientation GetOrientationCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationOrientation GetOrientationCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetOrientationCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetOrientationCore () As AutomationOrientation" />
+      <MemberSignature Language="F#" Value="override this.GetOrientationCore : unit -&gt; System.Windows.Automation.Peers.AutomationOrientation" Usage="itemAutomationPeer.GetOrientationCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationOrientation GetOrientationCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -401,6 +445,8 @@
       <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="itemAutomationPeer.GetPattern patternInterface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -430,6 +476,9 @@
       <MemberSignature Language="C#" Value="protected override bool HasKeyboardFocusCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool HasKeyboardFocusCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.HasKeyboardFocusCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function HasKeyboardFocusCore () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.HasKeyboardFocusCore : unit -&gt; bool" Usage="itemAutomationPeer.HasKeyboardFocusCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool HasKeyboardFocusCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -458,6 +507,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsContentElementCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsContentElementCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.IsContentElementCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsContentElementCore () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsContentElementCore : unit -&gt; bool" Usage="itemAutomationPeer.IsContentElementCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsContentElementCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -486,6 +538,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsControlElementCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsControlElementCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.IsControlElementCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsControlElementCore () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsControlElementCore : unit -&gt; bool" Usage="itemAutomationPeer.IsControlElementCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsControlElementCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -514,6 +569,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsEnabledCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsEnabledCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.IsEnabledCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsEnabledCore () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsEnabledCore : unit -&gt; bool" Usage="itemAutomationPeer.IsEnabledCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsEnabledCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -542,6 +600,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsKeyboardFocusableCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsKeyboardFocusableCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.IsKeyboardFocusableCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsKeyboardFocusableCore () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsKeyboardFocusableCore : unit -&gt; bool" Usage="itemAutomationPeer.IsKeyboardFocusableCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsKeyboardFocusableCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -570,6 +631,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsOffscreenCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsOffscreenCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.IsOffscreenCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsOffscreenCore () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsOffscreenCore : unit -&gt; bool" Usage="itemAutomationPeer.IsOffscreenCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsOffscreenCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -600,6 +664,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsPasswordCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsPasswordCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.IsPasswordCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsPasswordCore () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsPasswordCore : unit -&gt; bool" Usage="itemAutomationPeer.IsPasswordCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsPasswordCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -628,6 +695,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsRequiredForFormCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsRequiredForFormCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.IsRequiredForFormCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsRequiredForFormCore () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsRequiredForFormCore : unit -&gt; bool" Usage="itemAutomationPeer.IsRequiredForFormCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsRequiredForFormCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -656,6 +726,9 @@
       <MemberSignature Language="C#" Value="public object Item { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ItemAutomationPeer.Item" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As Object" />
+      <MemberSignature Language="F#" Value="member this.Item : obj" Usage="System.Windows.Automation.Peers.ItemAutomationPeer.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Item { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -674,6 +747,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Peers.ItemsControlAutomationPeer ItemsControlAutomationPeer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.Peers.ItemsControlAutomationPeer ItemsControlAutomationPeer" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ItemAutomationPeer.ItemsControlAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemsControlAutomationPeer As ItemsControlAutomationPeer" />
+      <MemberSignature Language="F#" Value="member this.ItemsControlAutomationPeer : System.Windows.Automation.Peers.ItemsControlAutomationPeer" Usage="System.Windows.Automation.Peers.ItemAutomationPeer.ItemsControlAutomationPeer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::Peers::ItemsControlAutomationPeer ^ ItemsControlAutomationPeer { System::Windows::Automation::Peers::ItemsControlAutomationPeer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -692,6 +768,9 @@
       <MemberSignature Language="C#" Value="protected override void SetFocusCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetFocusCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.SetFocusCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetFocusCore ()" />
+      <MemberSignature Language="F#" Value="override this.SetFocusCore : unit -&gt; unit" Usage="itemAutomationPeer.SetFocusCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetFocusCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -718,7 +797,12 @@
       <MemberSignature Language="C#" Value="void IVirtualizedItemProvider.Realize ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IVirtualizedItemProvider.Realize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemAutomationPeer.System#Windows#Automation#Provider#IVirtualizedItemProvider#Realize" />
+      <MemberSignature Language="VB.NET" Value="Sub Realize () Implements IVirtualizedItemProvider.Realize" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.IVirtualizedItemProvider.Realize() = System::Windows::Automation::Provider::IVirtualizedItemProvider::Realize;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Automation.Provider.IVirtualizedItemProvider.Realize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="PrintSystemObjects" FullName="System.Printing.PrintSystemObjects">
+﻿<Type Name="PrintSystemObjects" FullName="System.Printing.PrintSystemObjects">
   <TypeSignature Language="C#" Value="public abstract class PrintSystemObjects : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PrintSystemObjects extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintSystemObjects" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PrintSystemObjects&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type PrintSystemObjects = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintSystemObjects abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="protected PrintSystemObjects ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemObjects.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PrintSystemObjects();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -46,11 +51,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Printing.PrintSystemObjects" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public override sealed void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemObjects.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="printSystemObjects.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +98,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool A_0);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool A_0) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemObjects.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (A_0 As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="printSystemObjects.Dispose A_0" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool A_0);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -110,14 +133,5 @@
         </block>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Printing.PrintSystemObjects" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

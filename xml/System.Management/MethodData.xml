@@ -1,7 +1,10 @@
-<Type Name="MethodData" FullName="System.Management.MethodData">
+﻿<Type Name="MethodData" FullName="System.Management.MethodData">
   <TypeSignature Language="C#" Value="public class MethodData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MethodData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Management.MethodData" />
+  <TypeSignature Language="VB.NET" Value="Public Class MethodData" />
+  <TypeSignature Language="F#" Value="type MethodData = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MethodData" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementBaseObject InParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ManagementBaseObject InParameters" />
       <MemberSignature Language="DocId" Value="P:System.Management.MethodData.InParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InParameters As ManagementBaseObject" />
+      <MemberSignature Language="F#" Value="member this.InParameters : System.Management.ManagementBaseObject" Usage="System.Management.MethodData.InParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementBaseObject ^ InParameters { System::Management::ManagementBaseObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -68,6 +74,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Management.MethodData.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Management.MethodData.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -106,6 +115,9 @@
       <MemberSignature Language="C#" Value="public string Origin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Origin" />
       <MemberSignature Language="DocId" Value="P:System.Management.MethodData.Origin" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Origin As String" />
+      <MemberSignature Language="F#" Value="member this.Origin : string" Usage="System.Management.MethodData.Origin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Origin { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -136,6 +148,9 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementBaseObject OutParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ManagementBaseObject OutParameters" />
       <MemberSignature Language="DocId" Value="P:System.Management.MethodData.OutParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutParameters As ManagementBaseObject" />
+      <MemberSignature Language="F#" Value="member this.OutParameters : System.Management.ManagementBaseObject" Usage="System.Management.MethodData.OutParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementBaseObject ^ OutParameters { System::Management::ManagementBaseObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -177,6 +192,9 @@
       <MemberSignature Language="C#" Value="public System.Management.QualifierDataCollection Qualifiers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.QualifierDataCollection Qualifiers" />
       <MemberSignature Language="DocId" Value="P:System.Management.MethodData.Qualifiers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Qualifiers As QualifierDataCollection" />
+      <MemberSignature Language="F#" Value="member this.Qualifiers : System.Management.QualifierDataCollection" Usage="System.Management.MethodData.Qualifiers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::QualifierDataCollection ^ Qualifiers { System::Management::QualifierDataCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

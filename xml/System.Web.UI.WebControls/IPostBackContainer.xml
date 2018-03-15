@@ -1,7 +1,10 @@
-<Type Name="IPostBackContainer" FullName="System.Web.UI.WebControls.IPostBackContainer">
+﻿<Type Name="IPostBackContainer" FullName="System.Web.UI.WebControls.IPostBackContainer">
   <TypeSignature Language="C#" Value="public interface IPostBackContainer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPostBackContainer" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IPostBackContainer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IPostBackContainer" />
+  <TypeSignature Language="F#" Value="type IPostBackContainer = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IPostBackContainer" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.PostBackOptions GetPostBackOptions (System.Web.UI.WebControls.IButtonControl buttonControl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.PostBackOptions GetPostBackOptions(class System.Web.UI.WebControls.IButtonControl buttonControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.IPostBackContainer.GetPostBackOptions(System.Web.UI.WebControls.IButtonControl)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPostBackOptions (buttonControl As IButtonControl) As PostBackOptions" />
+      <MemberSignature Language="F#" Value="abstract member GetPostBackOptions : System.Web.UI.WebControls.IButtonControl -&gt; System.Web.UI.PostBackOptions" Usage="iPostBackContainer.GetPostBackOptions buttonControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::PostBackOptions ^ GetPostBackOptions(System::Web::UI::WebControls::IButtonControl ^ buttonControl);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

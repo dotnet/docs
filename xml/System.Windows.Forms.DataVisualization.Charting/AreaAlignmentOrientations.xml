@@ -1,7 +1,10 @@
-<Type Name="AreaAlignmentOrientations" FullName="System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations">
+﻿<Type Name="AreaAlignmentOrientations" FullName="System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations">
   <TypeSignature Language="C#" Value="public enum AreaAlignmentOrientations" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AreaAlignmentOrientations extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AreaAlignmentOrientations" />
+  <TypeSignature Language="F#" Value="type AreaAlignmentOrientations = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AreaAlignmentOrientations" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations All = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="F#" Value="All = 3" Usage="System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -40,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Chart areas are aligned horizontally and vertically.</summary>
       </Docs>
@@ -48,6 +55,9 @@
       <MemberSignature Language="C#" Value="Horizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations Horizontal = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal" />
+      <MemberSignature Language="VB.NET" Value="Horizontal" />
+      <MemberSignature Language="F#" Value="Horizontal = 2" Usage="System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Horizontal" />
+      <MemberSignature Language="C++ CLI" Value="Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -56,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Chart areas are aligned horizontally.</summary>
       </Docs>
@@ -64,6 +75,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -72,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Chart areas are not automatically aligned.</summary>
       </Docs>
@@ -80,6 +95,9 @@
       <MemberSignature Language="C#" Value="Vertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations Vertical = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical" />
+      <MemberSignature Language="VB.NET" Value="Vertical" />
+      <MemberSignature Language="F#" Value="Vertical = 1" Usage="System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations.Vertical" />
+      <MemberSignature Language="C++ CLI" Value="Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -88,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.AreaAlignmentOrientations</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Chart areas are aligned vertically.</summary>
       </Docs>

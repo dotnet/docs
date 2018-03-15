@@ -1,7 +1,10 @@
-<Type Name="OverflowAction" FullName="System.Diagnostics.OverflowAction">
+﻿<Type Name="OverflowAction" FullName="System.Diagnostics.OverflowAction">
   <TypeSignature Language="C#" Value="public enum OverflowAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OverflowAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.OverflowAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OverflowAction" />
+  <TypeSignature Language="F#" Value="type OverflowAction = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class OverflowAction" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="DoNotOverwrite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.OverflowAction DoNotOverwrite = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.OverflowAction.DoNotOverwrite" />
+      <MemberSignature Language="VB.NET" Value="DoNotOverwrite" />
+      <MemberSignature Language="F#" Value="DoNotOverwrite = -1" Usage="System.Diagnostics.OverflowAction.DoNotOverwrite" />
+      <MemberSignature Language="C++ CLI" Value="DoNotOverwrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -41,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.OverflowAction</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>Indicates that existing entries are retained when the event log is full and new entries are discarded.</summary>
       </Docs>
@@ -49,6 +56,9 @@
       <MemberSignature Language="C#" Value="OverwriteAsNeeded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.OverflowAction OverwriteAsNeeded = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.OverflowAction.OverwriteAsNeeded" />
+      <MemberSignature Language="VB.NET" Value="OverwriteAsNeeded" />
+      <MemberSignature Language="F#" Value="OverwriteAsNeeded = 0" Usage="System.Diagnostics.OverflowAction.OverwriteAsNeeded" />
+      <MemberSignature Language="C++ CLI" Value="OverwriteAsNeeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -57,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.OverflowAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that each new entry overwrites the oldest entry when the event log is full.</summary>
       </Docs>
@@ -65,6 +76,9 @@
       <MemberSignature Language="C#" Value="OverwriteOlder" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Diagnostics.OverflowAction OverwriteOlder = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Diagnostics.OverflowAction.OverwriteOlder" />
+      <MemberSignature Language="VB.NET" Value="OverwriteOlder" />
+      <MemberSignature Language="F#" Value="OverwriteOlder = 1" Usage="System.Diagnostics.OverflowAction.OverwriteOlder" />
+      <MemberSignature Language="C++ CLI" Value="OverwriteOlder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -73,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Diagnostics.OverflowAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that new events overwrite events older than specified by the <see cref="P:System.Diagnostics.EventLog.MinimumRetentionDays" /> property value when the event log is full. New events are discarded if the event log is full and there are no events older than specified by the <see cref="P:System.Diagnostics.EventLog.MinimumRetentionDays" /> property value.</summary>
         <remarks>

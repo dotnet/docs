@@ -1,7 +1,10 @@
-<Type Name="DataGridViewRowHeightInfoPushedEventArgs" FullName="System.Windows.Forms.DataGridViewRowHeightInfoPushedEventArgs">
+﻿<Type Name="DataGridViewRowHeightInfoPushedEventArgs" FullName="System.Windows.Forms.DataGridViewRowHeightInfoPushedEventArgs">
   <TypeSignature Language="C#" Value="public class DataGridViewRowHeightInfoPushedEventArgs : System.ComponentModel.HandledEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewRowHeightInfoPushedEventArgs extends System.ComponentModel.HandledEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowHeightInfoPushedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridViewRowHeightInfoPushedEventArgs&#xA;Inherits HandledEventArgs" />
+  <TypeSignature Language="F#" Value="type DataGridViewRowHeightInfoPushedEventArgs = class&#xA;    inherit HandledEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewRowHeightInfoPushedEventArgs : System::ComponentModel::HandledEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public int Height { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowHeightInfoPushedEventArgs.Height" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Integer" />
+      <MemberSignature Language="F#" Value="member this.Height : int" Usage="System.Windows.Forms.DataGridViewRowHeightInfoPushedEventArgs.Height" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +81,9 @@
       <MemberSignature Language="C#" Value="public int MinimumHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinimumHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowHeightInfoPushedEventArgs.MinimumHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MinimumHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.MinimumHeight : int" Usage="System.Windows.Forms.DataGridViewRowHeightInfoPushedEventArgs.MinimumHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumHeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -109,6 +118,9 @@
       <MemberSignature Language="C#" Value="public int RowIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RowIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewRowHeightInfoPushedEventArgs.RowIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.RowIndex : int" Usage="System.Windows.Forms.DataGridViewRowHeightInfoPushedEventArgs.RowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

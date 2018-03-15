@@ -1,7 +1,10 @@
-<Type Name="Image" FullName="System.Drawing.Image">
+﻿<Type Name="Image" FullName="System.Drawing.Image">
   <TypeSignature Language="C#" Value="public abstract class Image : MarshalByRefObject, ICloneable, IDisposable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Image extends System.MarshalByRefObject implements class System.ICloneable, class System.IDisposable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Image" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Image&#xA;Inherits MarshalByRefObject&#xA;Implements ICloneable, IDisposable, ISerializable" />
+  <TypeSignature Language="F#" Value="type Image = class&#xA;    inherit MarshalByRefObject&#xA;    interface ISerializable&#xA;    interface ICloneable&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Image abstract : MarshalByRefObject, ICloneable, IDisposable, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,7 +68,13 @@
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="image.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -103,7 +112,13 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="image.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -133,6 +148,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="image.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -164,6 +182,9 @@
       <MemberSignature Language="C#" Value="~Image ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="image.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!Image ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -182,6 +203,9 @@
       <MemberSignature Language="C#" Value="public int Flags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Flags" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Image.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Flags As Integer" />
+      <MemberSignature Language="F#" Value="member this.Flags : int" Usage="System.Drawing.Image.Flags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Flags { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -231,6 +255,9 @@
       <MemberSignature Language="C#" Value="public Guid[] FrameDimensionsList { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid[] FrameDimensionsList" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Image.FrameDimensionsList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FrameDimensionsList As Guid()" />
+      <MemberSignature Language="F#" Value="member this.FrameDimensionsList : Guid[]" Usage="System.Drawing.Image.FrameDimensionsList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Guid&gt; ^ FrameDimensionsList { cli::array &lt;Guid&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -261,10 +288,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromFile">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Drawing.Image" /> from the specified file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromFile">
       <MemberSignature Language="C#" Value="public static System.Drawing.Image FromFile (string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Image FromFile(string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.FromFile(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromFile (filename As String) As Image" />
+      <MemberSignature Language="F#" Value="static member FromFile : string -&gt; System.Drawing.Image" Usage="System.Drawing.Image.FromFile filename" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Image ^ FromFile(System::String ^ filename);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -328,6 +367,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Image FromFile (string filename, bool useEmbeddedColorManagement);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Image FromFile(string filename, bool useEmbeddedColorManagement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.FromFile(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromFile (filename As String, useEmbeddedColorManagement As Boolean) As Image" />
+      <MemberSignature Language="F#" Value="static member FromFile : string * bool -&gt; System.Drawing.Image" Usage="System.Drawing.Image.FromFile (filename, useEmbeddedColorManagement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Image ^ FromFile(System::String ^ filename, bool useEmbeddedColorManagement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -393,10 +435,22 @@
           <paramref name="filename" /> is a <see cref="T:System.Uri" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromHbitmap">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Drawing.Bitmap" /> from a Windows handle.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromHbitmap">
       <MemberSignature Language="C#" Value="public static System.Drawing.Bitmap FromHbitmap (IntPtr hbitmap);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Bitmap FromHbitmap(native int hbitmap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.FromHbitmap(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromHbitmap (hbitmap As IntPtr) As Bitmap" />
+      <MemberSignature Language="F#" Value="static member FromHbitmap : nativeint -&gt; System.Drawing.Bitmap" Usage="System.Drawing.Image.FromHbitmap hbitmap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Bitmap ^ FromHbitmap(IntPtr hbitmap);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -426,6 +480,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Bitmap FromHbitmap (IntPtr hbitmap, IntPtr hpalette);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Bitmap FromHbitmap(native int hbitmap, native int hpalette) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.FromHbitmap(System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromHbitmap (hbitmap As IntPtr, hpalette As IntPtr) As Bitmap" />
+      <MemberSignature Language="F#" Value="static member FromHbitmap : nativeint * nativeint -&gt; System.Drawing.Bitmap" Usage="System.Drawing.Image.FromHbitmap (hbitmap, hpalette)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Bitmap ^ FromHbitmap(IntPtr hbitmap, IntPtr hpalette);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -453,10 +510,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromStream">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Drawing.Image" /> from the specified data stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromStream">
       <MemberSignature Language="C#" Value="public static System.Drawing.Image FromStream (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Image FromStream(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.FromStream(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="static member FromStream : System.IO.Stream -&gt; System.Drawing.Image" Usage="System.Drawing.Image.FromStream stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Image ^ FromStream(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -496,6 +564,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Image FromStream (System.IO.Stream stream, bool useEmbeddedColorManagement);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Image FromStream(class System.IO.Stream stream, bool useEmbeddedColorManagement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.FromStream(System.IO.Stream,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member FromStream : System.IO.Stream * bool -&gt; System.Drawing.Image" Usage="System.Drawing.Image.FromStream (stream, useEmbeddedColorManagement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Image ^ FromStream(System::IO::Stream ^ stream, bool useEmbeddedColorManagement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -540,6 +610,8 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Image FromStream (System.IO.Stream stream, bool useEmbeddedColorManagement, bool validateImageData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Image FromStream(class System.IO.Stream stream, bool useEmbeddedColorManagement, bool validateImageData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.FromStream(System.IO.Stream,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="F#" Value="static member FromStream : System.IO.Stream * bool * bool -&gt; System.Drawing.Image" Usage="System.Drawing.Image.FromStream (stream, useEmbeddedColorManagement, validateImageData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Image ^ FromStream(System::IO::Stream ^ stream, bool useEmbeddedColorManagement, bool validateImageData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -579,6 +651,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.RectangleF GetBounds (ref System.Drawing.GraphicsUnit pageUnit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.RectangleF GetBounds(valuetype System.Drawing.GraphicsUnit&amp; pageUnit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.GetBounds(System.Drawing.GraphicsUnit@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetBounds (ByRef pageUnit As GraphicsUnit) As RectangleF" />
+      <MemberSignature Language="F#" Value="member this.GetBounds :  -&gt; System.Drawing.RectangleF" Usage="image.GetBounds pageUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::RectangleF GetBounds(System::Drawing::GraphicsUnit % pageUnit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -614,6 +689,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Imaging.EncoderParameters GetEncoderParameterList (Guid encoder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Imaging.EncoderParameters GetEncoderParameterList(valuetype System.Guid encoder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.GetEncoderParameterList(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEncoderParameterList (encoder As Guid) As EncoderParameters" />
+      <MemberSignature Language="F#" Value="member this.GetEncoderParameterList : Guid -&gt; System.Drawing.Imaging.EncoderParameters" Usage="image.GetEncoderParameterList encoder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Imaging::EncoderParameters ^ GetEncoderParameterList(Guid encoder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -636,6 +714,9 @@
       <MemberSignature Language="C#" Value="public int GetFrameCount (System.Drawing.Imaging.FrameDimension dimension);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetFrameCount(class System.Drawing.Imaging.FrameDimension dimension) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.GetFrameCount(System.Drawing.Imaging.FrameDimension)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFrameCount (dimension As FrameDimension) As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetFrameCount : System.Drawing.Imaging.FrameDimension -&gt; int" Usage="image.GetFrameCount dimension" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetFrameCount(System::Drawing::Imaging::FrameDimension ^ dimension);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -669,6 +750,9 @@
       <MemberSignature Language="C#" Value="public static int GetPixelFormatSize (System.Drawing.Imaging.PixelFormat pixfmt);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetPixelFormatSize(valuetype System.Drawing.Imaging.PixelFormat pixfmt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.GetPixelFormatSize(System.Drawing.Imaging.PixelFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPixelFormatSize (pixfmt As PixelFormat) As Integer" />
+      <MemberSignature Language="F#" Value="static member GetPixelFormatSize : System.Drawing.Imaging.PixelFormat -&gt; int" Usage="System.Drawing.Image.GetPixelFormatSize pixfmt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int GetPixelFormatSize(System::Drawing::Imaging::PixelFormat pixfmt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -691,6 +775,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Imaging.PropertyItem GetPropertyItem (int propid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Imaging.PropertyItem GetPropertyItem(int32 propid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.GetPropertyItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPropertyItem (propid As Integer) As PropertyItem" />
+      <MemberSignature Language="F#" Value="member this.GetPropertyItem : int -&gt; System.Drawing.Imaging.PropertyItem" Usage="image.GetPropertyItem propid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Imaging::PropertyItem ^ GetPropertyItem(int propid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -732,6 +819,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Image GetThumbnailImage (int thumbWidth, int thumbHeight, System.Drawing.Image.GetThumbnailImageAbort callback, IntPtr callbackData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Image GetThumbnailImage(int32 thumbWidth, int32 thumbHeight, class System.Drawing.Image/GetThumbnailImageAbort callback, native int callbackData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.GetThumbnailImage(System.Int32,System.Int32,System.Drawing.Image.GetThumbnailImageAbort,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetThumbnailImage (thumbWidth As Integer, thumbHeight As Integer, callback As Image.GetThumbnailImageAbort, callbackData As IntPtr) As Image" />
+      <MemberSignature Language="F#" Value="member this.GetThumbnailImage : int * int * System.Drawing.Image.GetThumbnailImageAbort * nativeint -&gt; System.Drawing.Image" Usage="image.GetThumbnailImage (thumbWidth, thumbHeight, callback, callbackData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Image ^ GetThumbnailImage(int thumbWidth, int thumbHeight, System::Drawing::Image::GetThumbnailImageAbort ^ callback, IntPtr callbackData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -779,6 +869,9 @@
       <MemberSignature Language="C#" Value="public int Height { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Image.Height" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Integer" />
+      <MemberSignature Language="F#" Value="member this.Height : int" Usage="System.Drawing.Image.Height" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -792,7 +885,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -821,6 +914,9 @@
       <MemberSignature Language="C#" Value="public float HorizontalResolution { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 HorizontalResolution" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Image.HorizontalResolution" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HorizontalResolution As Single" />
+      <MemberSignature Language="F#" Value="member this.HorizontalResolution : single" Usage="System.Drawing.Image.HorizontalResolution" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float HorizontalResolution { float get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -839,6 +935,9 @@
       <MemberSignature Language="C#" Value="public static bool IsAlphaPixelFormat (System.Drawing.Imaging.PixelFormat pixfmt);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsAlphaPixelFormat(valuetype System.Drawing.Imaging.PixelFormat pixfmt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.IsAlphaPixelFormat(System.Drawing.Imaging.PixelFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsAlphaPixelFormat (pixfmt As PixelFormat) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsAlphaPixelFormat : System.Drawing.Imaging.PixelFormat -&gt; bool" Usage="System.Drawing.Image.IsAlphaPixelFormat pixfmt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsAlphaPixelFormat(System::Drawing::Imaging::PixelFormat pixfmt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -862,6 +961,9 @@
       <MemberSignature Language="C#" Value="public static bool IsCanonicalPixelFormat (System.Drawing.Imaging.PixelFormat pixfmt);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsCanonicalPixelFormat(valuetype System.Drawing.Imaging.PixelFormat pixfmt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.IsCanonicalPixelFormat(System.Drawing.Imaging.PixelFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsCanonicalPixelFormat (pixfmt As PixelFormat) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsCanonicalPixelFormat : System.Drawing.Imaging.PixelFormat -&gt; bool" Usage="System.Drawing.Image.IsCanonicalPixelFormat pixfmt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsCanonicalPixelFormat(System::Drawing::Imaging::PixelFormat pixfmt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -892,6 +994,9 @@
       <MemberSignature Language="C#" Value="public static bool IsExtendedPixelFormat (System.Drawing.Imaging.PixelFormat pixfmt);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsExtendedPixelFormat(valuetype System.Drawing.Imaging.PixelFormat pixfmt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.IsExtendedPixelFormat(System.Drawing.Imaging.PixelFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsExtendedPixelFormat (pixfmt As PixelFormat) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsExtendedPixelFormat : System.Drawing.Imaging.PixelFormat -&gt; bool" Usage="System.Drawing.Image.IsExtendedPixelFormat pixfmt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsExtendedPixelFormat(System::Drawing::Imaging::PixelFormat pixfmt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -915,6 +1020,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Imaging.ColorPalette Palette { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Imaging.ColorPalette Palette" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Image.Palette" />
+      <MemberSignature Language="VB.NET" Value="Public Property Palette As ColorPalette" />
+      <MemberSignature Language="F#" Value="member this.Palette : System.Drawing.Imaging.ColorPalette with get, set" Usage="System.Drawing.Image.Palette" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Imaging::ColorPalette ^ Palette { System::Drawing::Imaging::ColorPalette ^ get(); void set(System::Drawing::Imaging::ColorPalette ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -945,6 +1053,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.SizeF PhysicalDimension { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.SizeF PhysicalDimension" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Image.PhysicalDimension" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PhysicalDimension As SizeF" />
+      <MemberSignature Language="F#" Value="member this.PhysicalDimension : System.Drawing.SizeF" Usage="System.Drawing.Image.PhysicalDimension" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::SizeF PhysicalDimension { System::Drawing::SizeF get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -970,6 +1081,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Imaging.PixelFormat PixelFormat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Imaging.PixelFormat PixelFormat" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Image.PixelFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelFormat As PixelFormat" />
+      <MemberSignature Language="F#" Value="member this.PixelFormat : System.Drawing.Imaging.PixelFormat" Usage="System.Drawing.Image.PixelFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Imaging::PixelFormat PixelFormat { System::Drawing::Imaging::PixelFormat get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1001,6 +1115,9 @@
       <MemberSignature Language="C#" Value="public int[] PropertyIdList { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32[] PropertyIdList" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Image.PropertyIdList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyIdList As Integer()" />
+      <MemberSignature Language="F#" Value="member this.PropertyIdList : int[]" Usage="System.Drawing.Image.PropertyIdList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;int&gt; ^ PropertyIdList { cli::array &lt;int&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1031,6 +1148,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Imaging.PropertyItem[] PropertyItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Imaging.PropertyItem[] PropertyItems" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Image.PropertyItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyItems As PropertyItem()" />
+      <MemberSignature Language="F#" Value="member this.PropertyItems : System.Drawing.Imaging.PropertyItem[]" Usage="System.Drawing.Image.PropertyItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Drawing::Imaging::PropertyItem ^&gt; ^ PropertyItems { cli::array &lt;System::Drawing::Imaging::PropertyItem ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1072,6 +1192,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Imaging.ImageFormat RawFormat { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Imaging.ImageFormat RawFormat" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Image.RawFormat" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RawFormat As ImageFormat" />
+      <MemberSignature Language="F#" Value="member this.RawFormat : System.Drawing.Imaging.ImageFormat" Usage="System.Drawing.Image.RawFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Imaging::ImageFormat ^ RawFormat { System::Drawing::Imaging::ImageFormat ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1090,6 +1213,9 @@
       <MemberSignature Language="C#" Value="public void RemovePropertyItem (int propid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemovePropertyItem(int32 propid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.RemovePropertyItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemovePropertyItem (propid As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemovePropertyItem : int -&gt; unit" Usage="image.RemovePropertyItem propid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemovePropertyItem(int propid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1123,6 +1249,8 @@
       <MemberSignature Language="C#" Value="public void RotateFlip (System.Drawing.RotateFlipType rotateFlipType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RotateFlip(valuetype System.Drawing.RotateFlipType rotateFlipType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.RotateFlip(System.Drawing.RotateFlipType)" />
+      <MemberSignature Language="F#" Value="member this.RotateFlip : System.Drawing.RotateFlipType -&gt; unit" Usage="image.RotateFlip rotateFlipType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RotateFlip(System::Drawing::RotateFlipType rotateFlipType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1160,10 +1288,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Save">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves this image to the specified stream in the specified format.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Save">
       <MemberSignature Language="C#" Value="public void Save (string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.Save(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (filename As String)" />
+      <MemberSignature Language="F#" Value="member this.Save : string -&gt; unit" Usage="image.Save filename" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ filename);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1210,6 +1350,8 @@
       <MemberSignature Language="C#" Value="public void Save (System.IO.Stream stream, System.Drawing.Imaging.ImageFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream, class System.Drawing.Imaging.ImageFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.Save(System.IO.Stream,System.Drawing.Imaging.ImageFormat)" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.Stream * System.Drawing.Imaging.ImageFormat -&gt; unit" Usage="image.Save (stream, format)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream, System::Drawing::Imaging::ImageFormat ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1245,6 +1387,9 @@
       <MemberSignature Language="C#" Value="public void Save (string filename, System.Drawing.Imaging.ImageFormat format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string filename, class System.Drawing.Imaging.ImageFormat format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.Save(System.String,System.Drawing.Imaging.ImageFormat)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (filename As String, format As ImageFormat)" />
+      <MemberSignature Language="F#" Value="member this.Save : string * System.Drawing.Imaging.ImageFormat -&gt; unit" Usage="image.Save (filename, format)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ filename, System::Drawing::Imaging::ImageFormat ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1286,6 +1431,8 @@
       <MemberSignature Language="C#" Value="public void Save (System.IO.Stream stream, System.Drawing.Imaging.ImageCodecInfo encoder, System.Drawing.Imaging.EncoderParameters encoderParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(class System.IO.Stream stream, class System.Drawing.Imaging.ImageCodecInfo encoder, class System.Drawing.Imaging.EncoderParameters encoderParams) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.Save(System.IO.Stream,System.Drawing.Imaging.ImageCodecInfo,System.Drawing.Imaging.EncoderParameters)" />
+      <MemberSignature Language="F#" Value="member this.Save : System.IO.Stream * System.Drawing.Imaging.ImageCodecInfo * System.Drawing.Imaging.EncoderParameters -&gt; unit" Usage="image.Save (stream, encoder, encoderParams)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::IO::Stream ^ stream, System::Drawing::Imaging::ImageCodecInfo ^ encoder, System::Drawing::Imaging::EncoderParameters ^ encoderParams);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1323,6 +1470,9 @@
       <MemberSignature Language="C#" Value="public void Save (string filename, System.Drawing.Imaging.ImageCodecInfo encoder, System.Drawing.Imaging.EncoderParameters encoderParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string filename, class System.Drawing.Imaging.ImageCodecInfo encoder, class System.Drawing.Imaging.EncoderParameters encoderParams) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.Save(System.String,System.Drawing.Imaging.ImageCodecInfo,System.Drawing.Imaging.EncoderParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (filename As String, encoder As ImageCodecInfo, encoderParams As EncoderParameters)" />
+      <MemberSignature Language="F#" Value="member this.Save : string * System.Drawing.Imaging.ImageCodecInfo * System.Drawing.Imaging.EncoderParameters -&gt; unit" Usage="image.Save (filename, encoder, encoderParams)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ filename, System::Drawing::Imaging::ImageCodecInfo ^ encoder, System::Drawing::Imaging::EncoderParameters ^ encoderParams);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1367,10 +1517,22 @@
  The image was saved to the same file it was created from.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SaveAdd">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the information in the specified <see cref="T:System.Drawing.Image" /> to this <see cref="T:System.Drawing.Image" />. The specified <see cref="T:System.Drawing.Imaging.EncoderParameters" /> determine how the new information is incorporated into the existing image.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SaveAdd">
       <MemberSignature Language="C#" Value="public void SaveAdd (System.Drawing.Imaging.EncoderParameters encoderParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAdd(class System.Drawing.Imaging.EncoderParameters encoderParams) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.SaveAdd(System.Drawing.Imaging.EncoderParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveAdd (encoderParams As EncoderParameters)" />
+      <MemberSignature Language="F#" Value="member this.SaveAdd : System.Drawing.Imaging.EncoderParameters -&gt; unit" Usage="image.SaveAdd encoderParams" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAdd(System::Drawing::Imaging::EncoderParameters ^ encoderParams);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1392,6 +1554,8 @@
       <MemberSignature Language="C#" Value="public void SaveAdd (System.Drawing.Image image, System.Drawing.Imaging.EncoderParameters encoderParams);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveAdd(class System.Drawing.Image image, class System.Drawing.Imaging.EncoderParameters encoderParams) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.SaveAdd(System.Drawing.Image,System.Drawing.Imaging.EncoderParameters)" />
+      <MemberSignature Language="F#" Value="member this.SaveAdd : System.Drawing.Image * System.Drawing.Imaging.EncoderParameters -&gt; unit" Usage="image.SaveAdd (image, encoderParams)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveAdd(System::Drawing::Image ^ image, System::Drawing::Imaging::EncoderParameters ^ encoderParams);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1417,6 +1581,9 @@
       <MemberSignature Language="C#" Value="public int SelectActiveFrame (System.Drawing.Imaging.FrameDimension dimension, int frameIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 SelectActiveFrame(class System.Drawing.Imaging.FrameDimension dimension, int32 frameIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.SelectActiveFrame(System.Drawing.Imaging.FrameDimension,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectActiveFrame (dimension As FrameDimension, frameIndex As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.SelectActiveFrame : System.Drawing.Imaging.FrameDimension * int -&gt; int" Usage="image.SelectActiveFrame (dimension, frameIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int SelectActiveFrame(System::Drawing::Imaging::FrameDimension ^ dimension, int frameIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1450,6 +1617,9 @@
       <MemberSignature Language="C#" Value="public void SetPropertyItem (System.Drawing.Imaging.PropertyItem propitem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetPropertyItem(class System.Drawing.Imaging.PropertyItem propitem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.SetPropertyItem(System.Drawing.Imaging.PropertyItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetPropertyItem (propitem As PropertyItem)" />
+      <MemberSignature Language="F#" Value="member this.SetPropertyItem : System.Drawing.Imaging.PropertyItem -&gt; unit" Usage="image.SetPropertyItem propitem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetPropertyItem(System::Drawing::Imaging::PropertyItem ^ propitem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1490,6 +1660,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Size Size { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size Size" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Image.Size" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Size" />
+      <MemberSignature Language="F#" Value="member this.Size : System.Drawing.Size" Usage="System.Drawing.Image.Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size Size { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1508,7 +1681,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo si, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Image.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (si As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ si, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1531,6 +1709,9 @@
       <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Image.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Drawing.Image.Tag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1563,6 +1744,9 @@
       <MemberSignature Language="C#" Value="public float VerticalResolution { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 VerticalResolution" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Image.VerticalResolution" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VerticalResolution As Single" />
+      <MemberSignature Language="F#" Value="member this.VerticalResolution : single" Usage="System.Drawing.Image.VerticalResolution" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float VerticalResolution { float get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1581,6 +1765,9 @@
       <MemberSignature Language="C#" Value="public int Width { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Image.Width" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Width As Integer" />
+      <MemberSignature Language="F#" Value="member this.Width : int" Usage="System.Drawing.Image.Width" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1594,7 +1781,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1619,50 +1806,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="FromHbitmap">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a <see cref="T:System.Drawing.Bitmap" /> from a Windows handle.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SaveAdd">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the information in the specified <see cref="T:System.Drawing.Image" /> to this <see cref="T:System.Drawing.Image" />. The specified <see cref="T:System.Drawing.Imaging.EncoderParameters" /> determine how the new information is incorporated into the existing image.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FromFile">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an <see cref="T:System.Drawing.Image" /> from the specified file.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Save">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Saves this image to the specified stream in the specified format.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FromStream">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an <see cref="T:System.Drawing.Image" /> from the specified data stream.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

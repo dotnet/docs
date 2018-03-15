@@ -1,7 +1,10 @@
-<Type Name="SoapUnknownHeader" FullName="System.Web.Services.Protocols.SoapUnknownHeader">
+﻿<Type Name="SoapUnknownHeader" FullName="System.Web.Services.Protocols.SoapUnknownHeader">
   <TypeSignature Language="C#" Value="public sealed class SoapUnknownHeader : System.Web.Services.Protocols.SoapHeader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapUnknownHeader extends System.Web.Services.Protocols.SoapHeader" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapUnknownHeader" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapUnknownHeader&#xA;Inherits SoapHeader" />
+  <TypeSignature Language="F#" Value="type SoapUnknownHeader = class&#xA;    inherit SoapHeader" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapUnknownHeader sealed : System::Web::Services::Protocols::SoapHeader" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +39,8 @@
       <MemberSignature Language="C#" Value="public SoapUnknownHeader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapUnknownHeader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapUnknownHeader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -52,6 +57,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlElement Element { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlElement Element" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapUnknownHeader.Element" />
+      <MemberSignature Language="VB.NET" Value="Public Property Element As XmlElement" />
+      <MemberSignature Language="F#" Value="member this.Element : System.Xml.XmlElement with get, set" Usage="System.Web.Services.Protocols.SoapUnknownHeader.Element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlElement ^ Element { System::Xml::XmlElement ^ get(); void set(System::Xml::XmlElement ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

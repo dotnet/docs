@@ -1,7 +1,10 @@
-<Type Name="FormViewMode" FullName="System.Web.UI.WebControls.FormViewMode">
+﻿<Type Name="FormViewMode" FullName="System.Web.UI.WebControls.FormViewMode">
   <TypeSignature Language="C#" Value="public enum FormViewMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormViewMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FormViewMode" />
+  <TypeSignature Language="F#" Value="type FormViewMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FormViewMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +51,9 @@
       <MemberSignature Language="C#" Value="Edit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.FormViewMode Edit = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FormViewMode.Edit" />
+      <MemberSignature Language="VB.NET" Value="Edit" />
+      <MemberSignature Language="F#" Value="Edit = 1" Usage="System.Web.UI.WebControls.FormViewMode.Edit" />
+      <MemberSignature Language="C++ CLI" Value="Edit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FormViewMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An editing mode that allows the user to update the values of an existing record.</summary>
       </Docs>
@@ -64,6 +71,9 @@
       <MemberSignature Language="C#" Value="Insert" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.FormViewMode Insert = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FormViewMode.Insert" />
+      <MemberSignature Language="VB.NET" Value="Insert" />
+      <MemberSignature Language="F#" Value="Insert = 2" Usage="System.Web.UI.WebControls.FormViewMode.Insert" />
+      <MemberSignature Language="C++ CLI" Value="Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FormViewMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>An inserting mode that allows the user to enter the values for a new record.</summary>
       </Docs>
@@ -80,6 +91,9 @@
       <MemberSignature Language="C#" Value="ReadOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.FormViewMode ReadOnly = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.FormViewMode.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="ReadOnly" />
+      <MemberSignature Language="F#" Value="ReadOnly = 0" Usage="System.Web.UI.WebControls.FormViewMode.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.FormViewMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A display mode that prevents the user from modifying the values of a record.</summary>
       </Docs>

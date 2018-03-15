@@ -1,7 +1,10 @@
-<Type Name="OnChangedCallback" FullName="System.Runtime.Caching.OnChangedCallback">
+﻿<Type Name="OnChangedCallback" FullName="System.Runtime.Caching.OnChangedCallback">
   <TypeSignature Language="C#" Value="public delegate void OnChangedCallback(object state);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OnChangedCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.OnChangedCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub OnChangedCallback(state As Object)" />
+  <TypeSignature Language="F#" Value="type OnChangedCallback = delegate of obj -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void OnChangedCallback(System::Object ^ state);" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

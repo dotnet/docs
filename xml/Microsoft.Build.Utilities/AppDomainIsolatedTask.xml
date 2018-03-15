@@ -1,7 +1,10 @@
-<Type Name="AppDomainIsolatedTask" FullName="Microsoft.Build.Utilities.AppDomainIsolatedTask">
+﻿<Type Name="AppDomainIsolatedTask" FullName="Microsoft.Build.Utilities.AppDomainIsolatedTask">
   <TypeSignature Language="C#" Value="public abstract class AppDomainIsolatedTask : MarshalByRefObject, Microsoft.Build.Framework.ITask" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AppDomainIsolatedTask extends System.MarshalByRefObject implements class Microsoft.Build.Framework.ITask" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.AppDomainIsolatedTask" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class AppDomainIsolatedTask&#xA;Inherits MarshalByRefObject&#xA;Implements ITask" />
+  <TypeSignature Language="F#" Value="type AppDomainIsolatedTask = class&#xA;    inherit MarshalByRefObject&#xA;    interface ITask" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AppDomainIsolatedTask abstract : MarshalByRefObject, Microsoft::Build::Framework::ITask" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +27,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Utilities.AppDomainIsolatedTask" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected AppDomainIsolatedTask ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.AppDomainIsolatedTask.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AppDomainIsolatedTask();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -43,6 +57,9 @@
       <MemberSignature Language="C#" Value="protected AppDomainIsolatedTask (System.Resources.ResourceManager taskResources);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Resources.ResourceManager taskResources) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.AppDomainIsolatedTask.#ctor(System.Resources.ResourceManager)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (taskResources As ResourceManager)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.AppDomainIsolatedTask : System.Resources.ResourceManager -&gt; Microsoft.Build.Utilities.AppDomainIsolatedTask" Usage="new Microsoft.Build.Utilities.AppDomainIsolatedTask taskResources" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AppDomainIsolatedTask(System::Resources::ResourceManager ^ taskResources);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -61,6 +78,9 @@
       <MemberSignature Language="C#" Value="protected AppDomainIsolatedTask (System.Resources.ResourceManager taskResources, string helpKeywordPrefix);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Resources.ResourceManager taskResources, string helpKeywordPrefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.AppDomainIsolatedTask.#ctor(System.Resources.ResourceManager,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (taskResources As ResourceManager, helpKeywordPrefix As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.AppDomainIsolatedTask : System.Resources.ResourceManager * string -&gt; Microsoft.Build.Utilities.AppDomainIsolatedTask" Usage="new Microsoft.Build.Utilities.AppDomainIsolatedTask (taskResources, helpKeywordPrefix)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AppDomainIsolatedTask(System::Resources::ResourceManager ^ taskResources, System::String ^ helpKeywordPrefix);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -88,7 +108,13 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.IBuildEngine BuildEngine { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.IBuildEngine BuildEngine" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.AppDomainIsolatedTask.BuildEngine" />
+      <MemberSignature Language="VB.NET" Value="Public Property BuildEngine As IBuildEngine" />
+      <MemberSignature Language="F#" Value="member this.BuildEngine : Microsoft.Build.Framework.IBuildEngine with get, set" Usage="Microsoft.Build.Utilities.AppDomainIsolatedTask.BuildEngine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::IBuildEngine ^ BuildEngine { Microsoft::Build::Framework::IBuildEngine ^ get(); void set(Microsoft::Build::Framework::IBuildEngine ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Framework.ITask.BuildEngine</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -113,7 +139,13 @@
       <MemberSignature Language="C#" Value="public abstract bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.AppDomainIsolatedTask.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Execute : unit -&gt; bool" Usage="appDomainIsolatedTask.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Execute();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.ITask.Execute</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -140,6 +172,9 @@
       <MemberSignature Language="C#" Value="protected string HelpKeywordPrefix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpKeywordPrefix" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.AppDomainIsolatedTask.HelpKeywordPrefix" />
+      <MemberSignature Language="VB.NET" Value="Protected Property HelpKeywordPrefix As String" />
+      <MemberSignature Language="F#" Value="member this.HelpKeywordPrefix : string with get, set" Usage="Microsoft.Build.Utilities.AppDomainIsolatedTask.HelpKeywordPrefix" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::String ^ HelpKeywordPrefix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -165,7 +200,13 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskHost HostObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskHost HostObject" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.AppDomainIsolatedTask.HostObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostObject As ITaskHost" />
+      <MemberSignature Language="F#" Value="member this.HostObject : Microsoft.Build.Framework.ITaskHost with get, set" Usage="Microsoft.Build.Utilities.AppDomainIsolatedTask.HostObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskHost ^ HostObject { Microsoft::Build::Framework::ITaskHost ^ get(); void set(Microsoft::Build::Framework::ITaskHost ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Framework.ITask.HostObject</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -190,6 +231,9 @@
       <MemberSignature Language="C#" Value="public override object InitializeLifetimeService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object InitializeLifetimeService() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.AppDomainIsolatedTask.InitializeLifetimeService" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function InitializeLifetimeService () As Object" />
+      <MemberSignature Language="F#" Value="override this.InitializeLifetimeService : unit -&gt; obj" Usage="appDomainIsolatedTask.InitializeLifetimeService " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ InitializeLifetimeService();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -222,6 +266,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Utilities.TaskLoggingHelper Log { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Utilities.TaskLoggingHelper Log" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.AppDomainIsolatedTask.Log" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Log As TaskLoggingHelper" />
+      <MemberSignature Language="F#" Value="member this.Log : Microsoft.Build.Utilities.TaskLoggingHelper" Usage="Microsoft.Build.Utilities.AppDomainIsolatedTask.Log" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Utilities::TaskLoggingHelper ^ Log { Microsoft::Build::Utilities::TaskLoggingHelper ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -240,6 +287,9 @@
       <MemberSignature Language="C#" Value="protected System.Resources.ResourceManager TaskResources { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Resources.ResourceManager TaskResources" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.AppDomainIsolatedTask.TaskResources" />
+      <MemberSignature Language="VB.NET" Value="Protected Property TaskResources As ResourceManager" />
+      <MemberSignature Language="F#" Value="member this.TaskResources : System.Resources.ResourceManager with get, set" Usage="Microsoft.Build.Utilities.AppDomainIsolatedTask.TaskResources" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Resources::ResourceManager ^ TaskResources { System::Resources::ResourceManager ^ get(); void set(System::Resources::ResourceManager ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -261,14 +311,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.Utilities.AppDomainIsolatedTask" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

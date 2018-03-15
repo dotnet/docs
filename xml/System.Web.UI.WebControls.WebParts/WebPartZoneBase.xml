@@ -1,7 +1,10 @@
-<Type Name="WebPartZoneBase" FullName="System.Web.UI.WebControls.WebParts.WebPartZoneBase">
+﻿<Type Name="WebPartZoneBase" FullName="System.Web.UI.WebControls.WebParts.WebPartZoneBase">
   <TypeSignature Language="C#" Value="public abstract class WebPartZoneBase : System.Web.UI.WebControls.WebParts.WebZone, System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WebPartZoneBase extends System.Web.UI.WebControls.WebParts.WebZone implements class System.Web.UI.IPostBackEventHandler" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartZoneBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebPartZoneBase&#xA;Inherits WebZone&#xA;Implements IPostBackEventHandler" />
+  <TypeSignature Language="F#" Value="type WebPartZoneBase = class&#xA;    inherit WebZone&#xA;    interface IPostBackEventHandler&#xA;    interface IWebPartMenuUser" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartZoneBase abstract : System::Web::UI::WebControls::WebParts::WebZone, System::Web::UI::IPostBackEventHandler" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +81,8 @@
       <MemberSignature Language="C#" Value="protected WebPartZoneBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebPartZoneBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +98,9 @@
       <MemberSignature Language="C#" Value="public virtual bool AllowLayoutChange { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowLayoutChange" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property AllowLayoutChange As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowLayoutChange : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.AllowLayoutChange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowLayoutChange { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -152,6 +160,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BorderColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BorderColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BorderColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BorderColor : System.Drawing.Color with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BorderColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -194,6 +205,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.BorderStyle BorderStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.BorderStyle BorderStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BorderStyle As BorderStyle" />
+      <MemberSignature Language="F#" Value="member this.BorderStyle : System.Web.UI.WebControls.BorderStyle with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::BorderStyle BorderStyle { System::Web::UI::WebControls::BorderStyle get(); void set(System::Web::UI::WebControls::BorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -237,6 +251,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.Unit BorderWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Unit BorderWidth" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BorderWidth As Unit" />
+      <MemberSignature Language="F#" Value="member this.BorderWidth : System.Web.UI.WebControls.Unit with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.BorderWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Unit BorderWidth { System::Web::UI::WebControls::Unit get(); void set(System::Web::UI::WebControls::Unit value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -279,6 +296,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb CloseVerb { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb CloseVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseVerb" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property CloseVerb As WebPartVerb" />
+      <MemberSignature Language="F#" Value="member this.CloseVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ CloseVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -289,7 +309,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -344,6 +364,8 @@
       <MemberSignature Language="C#" Value="protected virtual void CloseWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CloseWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CloseWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberSignature Language="F#" Value="abstract member CloseWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.CloseWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartZoneBase.CloseWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CloseWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -383,6 +405,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb ConnectVerb { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb ConnectVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.ConnectVerb" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ConnectVerb As WebPartVerb" />
+      <MemberSignature Language="F#" Value="member this.ConnectVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.ConnectVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ ConnectVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -393,7 +418,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -415,6 +440,8 @@
       <MemberSignature Language="C#" Value="protected virtual void ConnectWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ConnectWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.ConnectWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberSignature Language="F#" Value="abstract member ConnectWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.ConnectWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartZoneBase.ConnectWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ConnectWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -442,9 +469,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
-      <MemberSignature Language="C#" Value="protected override void CreateChildControls ();" />
+      <MemberSignature Language="C#" Value="protected internal override void CreateChildControls ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateChildControls" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
+      <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="webPartZoneBase.CreateChildControls " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -471,6 +501,9 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.ControlCollection CreateControlCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateControlCollection" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
+      <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="webPartZoneBase.CreateControlCollection " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -491,6 +524,9 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.Style CreateControlStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.Style CreateControlStyle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateControlStyle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlStyle () As Style" />
+      <MemberSignature Language="F#" Value="override this.CreateControlStyle : unit -&gt; System.Web.UI.WebControls.Style" Usage="webPartZoneBase.CreateControlStyle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Style ^ CreateControlStyle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -520,6 +556,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.WebParts.WebPartVerbsEventHandler CreateVerbs;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.WebParts.WebPartVerbsEventHandler CreateVerbs" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateVerbs" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CreateVerbs As WebPartVerbsEventHandler " />
+      <MemberSignature Language="F#" Value="member this.CreateVerbs : System.Web.UI.WebControls.WebParts.WebPartVerbsEventHandler " Usage="member this.CreateVerbs : System.Web.UI.WebControls.WebParts.WebPartVerbsEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WebParts::WebPartVerbsEventHandler ^ CreateVerbs;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -569,6 +608,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.WebParts.WebPartChrome CreateWebPartChrome ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.WebPartChrome CreateWebPartChrome() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.CreateWebPartChrome" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateWebPartChrome () As WebPartChrome" />
+      <MemberSignature Language="F#" Value="abstract member CreateWebPartChrome : unit -&gt; System.Web.UI.WebControls.WebParts.WebPartChrome&#xA;override this.CreateWebPartChrome : unit -&gt; System.Web.UI.WebControls.WebParts.WebPartChrome" Usage="webPartZoneBase.CreateWebPartChrome " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::WebParts::WebPartChrome ^ CreateWebPartChrome();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -601,6 +643,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb DeleteVerb { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb DeleteVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteVerb" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DeleteVerb As WebPartVerb" />
+      <MemberSignature Language="F#" Value="member this.DeleteVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ DeleteVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -611,7 +656,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -660,6 +705,8 @@
       <MemberSignature Language="C#" Value="protected virtual void DeleteWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void DeleteWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DeleteWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberSignature Language="F#" Value="abstract member DeleteWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.DeleteWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartZoneBase.DeleteWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void DeleteWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -692,6 +739,9 @@
       <MemberSignature Language="C#" Value="public virtual string DisplayTitle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayTitle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DisplayTitle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property DisplayTitle As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayTitle : string" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.DisplayTitle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayTitle { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -702,7 +752,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -733,9 +783,12 @@
       </Docs>
     </Member>
     <Member MemberName="DragDropEnabled">
-      <MemberSignature Language="C#" Value="protected bool DragDropEnabled { get; }" />
+      <MemberSignature Language="C#" Value="protected internal bool DragDropEnabled { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DragDropEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DragDropEnabled" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property DragDropEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DragDropEnabled : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.DragDropEnabled" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property bool DragDropEnabled { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -763,6 +816,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Color DragHighlightColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color DragHighlightColor" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.DragHighlightColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DragHighlightColor As Color" />
+      <MemberSignature Language="F#" Value="member this.DragHighlightColor : System.Drawing.Color with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.DragHighlightColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color DragHighlightColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -808,6 +864,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb EditVerb { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb EditVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EditVerb" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EditVerb As WebPartVerb" />
+      <MemberSignature Language="F#" Value="member this.EditVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.EditVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ EditVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -818,7 +877,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -857,6 +916,8 @@
       <MemberSignature Language="C#" Value="protected virtual void EditWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EditWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EditWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberSignature Language="F#" Value="abstract member EditWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.EditWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartZoneBase.EditWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EditWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -889,6 +950,9 @@
       <MemberSignature Language="C#" Value="public override string EmptyZoneText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EmptyZoneText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.EmptyZoneText" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property EmptyZoneText As String" />
+      <MemberSignature Language="F#" Value="member this.EmptyZoneText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.EmptyZoneText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ EmptyZoneText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -927,6 +991,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb ExportVerb { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb ExportVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.ExportVerb" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ExportVerb As WebPartVerb" />
+      <MemberSignature Language="F#" Value="member this.ExportVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.ExportVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ ExportVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -937,7 +1004,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -991,6 +1058,8 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.WebParts.PartChromeType GetEffectiveChromeType (System.Web.UI.WebControls.WebParts.Part part);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Web.UI.WebControls.WebParts.PartChromeType GetEffectiveChromeType(class System.Web.UI.WebControls.WebParts.Part part) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.GetEffectiveChromeType(System.Web.UI.WebControls.WebParts.Part)" />
+      <MemberSignature Language="F#" Value="override this.GetEffectiveChromeType : System.Web.UI.WebControls.WebParts.Part -&gt; System.Web.UI.WebControls.WebParts.PartChromeType" Usage="webPartZoneBase.GetEffectiveChromeType part" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::WebControls::WebParts::PartChromeType GetEffectiveChromeType(System::Web::UI::WebControls::WebParts::Part ^ part);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1011,9 +1080,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetInitialWebParts">
-      <MemberSignature Language="C#" Value="protected abstract System.Web.UI.WebControls.WebParts.WebPartCollection GetInitialWebParts ();" />
+      <MemberSignature Language="C#" Value="protected internal abstract System.Web.UI.WebControls.WebParts.WebPartCollection GetInitialWebParts ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.WebPartCollection GetInitialWebParts() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.GetInitialWebParts" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetInitialWebParts () As WebPartCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetInitialWebParts : unit -&gt; System.Web.UI.WebControls.WebParts.WebPartCollection" Usage="webPartZoneBase.GetInitialWebParts " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Web::UI::WebControls::WebParts::WebPartCollection ^ GetInitialWebParts();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1047,6 +1119,9 @@
       <MemberSignature Language="C#" Value="protected override bool HasFooter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasFooter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HasFooter" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property HasFooter As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasFooter : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.HasFooter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool HasFooter { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1074,6 +1149,9 @@
       <MemberSignature Language="C#" Value="protected override bool HasHeader { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasHeader" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HasHeader" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property HasHeader As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasHeader : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.HasHeader" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool HasHeader { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1103,6 +1181,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb HelpVerb { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb HelpVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.HelpVerb" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property HelpVerb As WebPartVerb" />
+      <MemberSignature Language="F#" Value="member this.HelpVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.HelpVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ HelpVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1113,7 +1194,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1193,6 +1274,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.Orientation LayoutOrientation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.Orientation LayoutOrientation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property LayoutOrientation As Orientation" />
+      <MemberSignature Language="F#" Value="member this.LayoutOrientation : System.Web.UI.WebControls.Orientation with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.LayoutOrientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::Orientation LayoutOrientation { System::Web::UI::WebControls::Orientation get(); void set(System::Web::UI::WebControls::Orientation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1251,6 +1335,9 @@
       <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="webPartZoneBase.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1283,6 +1370,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style MenuCheckImageStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style MenuCheckImageStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuCheckImageStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MenuCheckImageStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.MenuCheckImageStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuCheckImageStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ MenuCheckImageStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1293,7 +1383,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1330,6 +1420,9 @@
       <MemberSignature Language="C#" Value="public virtual string MenuCheckImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MenuCheckImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuCheckImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property MenuCheckImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.MenuCheckImageUrl : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuCheckImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MenuCheckImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1360,6 +1453,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style MenuLabelHoverStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style MenuLabelHoverStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelHoverStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MenuLabelHoverStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.MenuLabelHoverStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelHoverStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ MenuLabelHoverStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1370,7 +1466,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1410,6 +1506,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style MenuLabelStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style MenuLabelStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MenuLabelStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.MenuLabelStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ MenuLabelStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1420,7 +1519,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1460,6 +1559,9 @@
       <MemberSignature Language="C#" Value="public virtual string MenuLabelText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MenuLabelText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property MenuLabelText As String" />
+      <MemberSignature Language="F#" Value="member this.MenuLabelText : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuLabelText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MenuLabelText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1506,6 +1608,9 @@
       <MemberSignature Language="C#" Value="public virtual string MenuPopupImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MenuPopupImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property MenuPopupImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.MenuPopupImageUrl : string with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ MenuPopupImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1553,7 +1658,13 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartMenuStyle MenuPopupStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartMenuStyle MenuPopupStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MenuPopupStyle As WebPartMenuStyle" />
+      <MemberSignature Language="F#" Value="member this.MenuPopupStyle : System.Web.UI.WebControls.WebParts.WebPartMenuStyle" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuPopupStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartMenuStyle ^ MenuPopupStyle { System::Web::UI::WebControls::WebParts::WebPartMenuStyle ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.WebControls.WebParts.IWebPartMenuUser.MenuPopupStyle</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1563,7 +1674,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1595,6 +1706,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style MenuVerbHoverStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style MenuVerbHoverStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuVerbHoverStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MenuVerbHoverStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.MenuVerbHoverStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuVerbHoverStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ MenuVerbHoverStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1605,7 +1719,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1659,6 +1773,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style MenuVerbStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style MenuVerbStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuVerbStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MenuVerbStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.MenuVerbStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MenuVerbStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ MenuVerbStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1669,7 +1786,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1711,6 +1828,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb MinimizeVerb { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb MinimizeVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MinimizeVerb" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property MinimizeVerb As WebPartVerb" />
+      <MemberSignature Language="F#" Value="member this.MinimizeVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.MinimizeVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ MinimizeVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1721,7 +1841,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1770,6 +1890,8 @@
       <MemberSignature Language="C#" Value="protected virtual void MinimizeWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void MinimizeWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.MinimizeWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberSignature Language="F#" Value="abstract member MinimizeWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.MinimizeWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartZoneBase.MinimizeWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void MinimizeWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1805,6 +1927,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCreateVerbs (System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCreateVerbs(class System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnCreateVerbs(System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCreateVerbs (e As WebPartVerbsEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnCreateVerbs : System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs -&gt; unit&#xA;override this.OnCreateVerbs : System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs -&gt; unit" Usage="webPartZoneBase.OnCreateVerbs e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCreateVerbs(System::Web::UI::WebControls::WebParts::WebPartVerbsEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1853,9 +1978,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="webPartZoneBase.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1885,7 +2013,13 @@
       <MemberSignature Language="C#" Value="protected virtual void RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RaisePostBackEvent (eventArgument As String)" />
+      <MemberSignature Language="F#" Value="abstract member RaisePostBackEvent : string -&gt; unit&#xA;override this.RaisePostBackEvent : string -&gt; unit" Usage="webPartZoneBase.RaisePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RaisePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1904,9 +2038,12 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="webPartZoneBase.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1936,6 +2073,9 @@
       <MemberSignature Language="C#" Value="protected override void RenderBody (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderBody(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RenderBody(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderBody (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderBody : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="webPartZoneBase.RenderBody writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderBody(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1967,6 +2107,9 @@
       <MemberSignature Language="C#" Value="protected virtual void RenderDropCue (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderDropCue(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RenderDropCue(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderDropCue (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="abstract member RenderDropCue : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.RenderDropCue : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="webPartZoneBase.RenderDropCue writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderDropCue(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1995,6 +2138,9 @@
       <MemberSignature Language="C#" Value="protected override void RenderHeader (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RenderHeader(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RenderHeader(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RenderHeader (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.RenderHeader : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="webPartZoneBase.RenderHeader writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RenderHeader(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2025,6 +2171,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerb RestoreVerb { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartVerb RestoreVerb" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreVerb" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RestoreVerb As WebPartVerb" />
+      <MemberSignature Language="F#" Value="member this.RestoreVerb : System.Web.UI.WebControls.WebParts.WebPartVerb" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreVerb" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerb ^ RestoreVerb { System::Web::UI::WebControls::WebParts::WebPartVerb ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2035,7 +2184,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -2084,6 +2233,8 @@
       <MemberSignature Language="C#" Value="protected virtual void RestoreWebPart (System.Web.UI.WebControls.WebParts.WebPart webPart);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RestoreWebPart(class System.Web.UI.WebControls.WebParts.WebPart webPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.RestoreWebPart(System.Web.UI.WebControls.WebParts.WebPart)" />
+      <MemberSignature Language="F#" Value="abstract member RestoreWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit&#xA;override this.RestoreWebPart : System.Web.UI.WebControls.WebParts.WebPart -&gt; unit" Usage="webPartZoneBase.RestoreWebPart webPart" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RestoreWebPart(System::Web::UI::WebControls::WebParts::WebPart ^ webPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2119,6 +2270,9 @@
       <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="webPartZoneBase.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2147,6 +2301,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style SelectedPartChromeStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style SelectedPartChromeStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.SelectedPartChromeStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedPartChromeStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.SelectedPartChromeStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.SelectedPartChromeStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ SelectedPartChromeStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2157,7 +2314,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -2196,6 +2353,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ShowTitleIcons { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ShowTitleIcons" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.ShowTitleIcons" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ShowTitleIcons As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShowTitleIcons : bool with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.ShowTitleIcons" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ShowTitleIcons { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2228,7 +2388,12 @@
       <MemberSignature Language="C#" Value="void IPostBackEventHandler.RaisePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub RaisePostBackEvent (eventArgument As String) Implements IPostBackEventHandler.RaisePostBackEvent" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System::String ^ eventArgument) = System::Web::UI::IPostBackEventHandler::RaisePostBackEvent;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IPostBackEventHandler.RaisePostBackEvent(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2256,6 +2421,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ButtonType TitleBarVerbButtonType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonType TitleBarVerbButtonType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.TitleBarVerbButtonType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property TitleBarVerbButtonType As ButtonType" />
+      <MemberSignature Language="F#" Value="member this.TitleBarVerbButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.TitleBarVerbButtonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType TitleBarVerbButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2289,6 +2457,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style TitleBarVerbStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style TitleBarVerbStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.TitleBarVerbStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TitleBarVerbStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.TitleBarVerbStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.TitleBarVerbStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ TitleBarVerbStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2299,7 +2470,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -2332,6 +2503,9 @@
       <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartZoneBase.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="webPartZoneBase.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2359,6 +2533,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.WebControls.ButtonType VerbButtonType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonType VerbButtonType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.VerbButtonType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property VerbButtonType As ButtonType" />
+      <MemberSignature Language="F#" Value="member this.VerbButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.VerbButtonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType VerbButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2402,6 +2579,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartChrome WebPartChrome { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartChrome WebPartChrome" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartChrome" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebPartChrome As WebPartChrome" />
+      <MemberSignature Language="F#" Value="member this.WebPartChrome : System.Web.UI.WebControls.WebParts.WebPartChrome" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartChrome" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartChrome ^ WebPartChrome { System::Web::UI::WebControls::WebParts::WebPartChrome ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2412,7 +2592,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2429,6 +2609,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartCollection WebParts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartCollection WebParts" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebParts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebParts As WebPartCollection" />
+      <MemberSignature Language="F#" Value="member this.WebParts : System.Web.UI.WebControls.WebParts.WebPartCollection" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebParts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartCollection ^ WebParts { System::Web::UI::WebControls::WebParts::WebPartCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2439,7 +2622,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2473,6 +2656,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode WebPartVerbRenderMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode WebPartVerbRenderMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property WebPartVerbRenderMode As WebPartVerbRenderMode" />
+      <MemberSignature Language="F#" Value="member this.WebPartVerbRenderMode : System.Web.UI.WebControls.WebParts.WebPartVerbRenderMode with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartZoneBase.WebPartVerbRenderMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WebParts::WebPartVerbRenderMode WebPartVerbRenderMode { System::Web::UI::WebControls::WebParts::WebPartVerbRenderMode get(); void set(System::Web::UI::WebControls::WebParts::WebPartVerbRenderMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

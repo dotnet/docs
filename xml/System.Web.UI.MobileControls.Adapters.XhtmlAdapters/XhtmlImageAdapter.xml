@@ -1,7 +1,10 @@
-<Type Name="XhtmlImageAdapter" FullName="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlImageAdapter">
+﻿<Type Name="XhtmlImageAdapter" FullName="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlImageAdapter">
   <TypeSignature Language="C#" Value="public class XhtmlImageAdapter : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XhtmlImageAdapter extends System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlControlAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlImageAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class XhtmlImageAdapter&#xA;Inherits XhtmlControlAdapter" />
+  <TypeSignature Language="F#" Value="type XhtmlImageAdapter = class&#xA;    inherit XhtmlControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XhtmlImageAdapter : System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,8 @@
       <MemberSignature Language="C#" Value="public XhtmlImageAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlImageAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XhtmlImageAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -48,6 +53,9 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.MobileControls.Image Control { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Image Control" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlImageAdapter.Control" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As Image" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.Image" Usage="System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlImageAdapter.Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::Image ^ Control { System::Web::UI::MobileControls::Image ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -67,6 +75,9 @@
       <MemberSignature Language="C#" Value="public override void Render (System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Render(class System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlImageAdapter.Render(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As XhtmlMobileTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlImageAdapter.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -88,6 +99,9 @@
       <MemberSignature Language="C#" Value="protected virtual void RenderImage (System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RenderImage(class System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlImageAdapter.RenderImage(System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RenderImage (writer As XhtmlMobileTextWriter)" />
+      <MemberSignature Language="F#" Value="abstract member RenderImage : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit&#xA;override this.RenderImage : System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter -&gt; unit" Usage="xhtmlImageAdapter.RenderImage writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RenderImage(System::Web::UI::MobileControls::Adapters::XhtmlAdapters::XhtmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

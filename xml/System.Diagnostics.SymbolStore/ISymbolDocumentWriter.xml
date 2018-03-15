@@ -1,7 +1,10 @@
-<Type Name="ISymbolDocumentWriter" FullName="System.Diagnostics.SymbolStore.ISymbolDocumentWriter">
+﻿<Type Name="ISymbolDocumentWriter" FullName="System.Diagnostics.SymbolStore.ISymbolDocumentWriter">
   <TypeSignature Language="C#" Value="public interface ISymbolDocumentWriter" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISymbolDocumentWriter" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.SymbolStore.ISymbolDocumentWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISymbolDocumentWriter" />
+  <TypeSignature Language="F#" Value="type ISymbolDocumentWriter = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISymbolDocumentWriter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -52,6 +55,9 @@
       <MemberSignature Language="C#" Value="public void SetCheckSum (Guid algorithmId, byte[] checkSum);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetCheckSum(valuetype System.Guid algorithmId, unsigned int8[] checkSum) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolDocumentWriter.SetCheckSum(System.Guid,System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetCheckSum (algorithmId As Guid, checkSum As Byte())" />
+      <MemberSignature Language="F#" Value="abstract member SetCheckSum : Guid * byte[] -&gt; unit" Usage="iSymbolDocumentWriter.SetCheckSum (algorithmId, checkSum)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetCheckSum(Guid algorithmId, cli::array &lt;System::Byte&gt; ^ checkSum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -91,6 +97,9 @@
       <MemberSignature Language="C#" Value="public void SetSource (byte[] source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetSource(unsigned int8[] source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.SymbolStore.ISymbolDocumentWriter.SetSource(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSource (source As Byte())" />
+      <MemberSignature Language="F#" Value="abstract member SetSource : byte[] -&gt; unit" Usage="iSymbolDocumentWriter.SetSource source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSource(cli::array &lt;System::Byte&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

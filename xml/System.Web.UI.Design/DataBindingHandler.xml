@@ -1,7 +1,10 @@
-<Type Name="DataBindingHandler" FullName="System.Web.UI.Design.DataBindingHandler">
+﻿<Type Name="DataBindingHandler" FullName="System.Web.UI.Design.DataBindingHandler">
   <TypeSignature Language="C#" Value="public abstract class DataBindingHandler" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DataBindingHandler extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DataBindingHandler" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DataBindingHandler" />
+  <TypeSignature Language="F#" Value="type DataBindingHandler = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataBindingHandler abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,8 @@
       <MemberSignature Language="C#" Value="protected DataBindingHandler ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataBindingHandler.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DataBindingHandler();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -48,6 +53,8 @@
       <MemberSignature Language="C#" Value="public abstract void DataBindControl (System.ComponentModel.Design.IDesignerHost designerHost, System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DataBindControl(class System.ComponentModel.Design.IDesignerHost designerHost, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DataBindingHandler.DataBindControl(System.ComponentModel.Design.IDesignerHost,System.Web.UI.Control)" />
+      <MemberSignature Language="F#" Value="abstract member DataBindControl : System.ComponentModel.Design.IDesignerHost * System.Web.UI.Control -&gt; unit" Usage="dataBindingHandler.DataBindControl (designerHost, control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void DataBindControl(System::ComponentModel::Design::IDesignerHost ^ designerHost, System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

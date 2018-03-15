@@ -1,7 +1,10 @@
-<Type Name="Int16Converter" FullName="System.ComponentModel.Int16Converter">
+﻿<Type Name="Int16Converter" FullName="System.ComponentModel.Int16Converter">
   <TypeSignature Language="C#" Value="public class Int16Converter : System.ComponentModel.BaseNumberConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Int16Converter extends System.ComponentModel.BaseNumberConverter" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Int16Converter" />
+  <TypeSignature Language="VB.NET" Value="Public Class Int16Converter&#xA;Inherits BaseNumberConverter" />
+  <TypeSignature Language="F#" Value="type Int16Converter = class&#xA;    inherit BaseNumberConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Int16Converter : System::ComponentModel::BaseNumberConverter" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -54,6 +57,8 @@
       <MemberSignature Language="C#" Value="public Int16Converter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Int16Converter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Int16Converter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>

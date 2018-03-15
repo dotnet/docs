@@ -1,7 +1,10 @@
-<Type Name="DataTableNewRowEventHandler" FullName="System.Data.DataTableNewRowEventHandler">
+﻿<Type Name="DataTableNewRowEventHandler" FullName="System.Data.DataTableNewRowEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataTableNewRowEventHandler(object sender, DataTableNewRowEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataTableNewRowEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataTableNewRowEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataTableNewRowEventHandler(sender As Object, e As DataTableNewRowEventArgs)" />
+  <TypeSignature Language="F#" Value="type DataTableNewRowEventHandler = delegate of obj * DataTableNewRowEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataTableNewRowEventHandler(System::Object ^ sender, DataTableNewRowEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

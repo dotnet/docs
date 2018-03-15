@@ -1,7 +1,10 @@
-<Type Name="DataServiceKeyAttribute" FullName="System.Data.Services.Common.DataServiceKeyAttribute">
+﻿<Type Name="DataServiceKeyAttribute" FullName="System.Data.Services.Common.DataServiceKeyAttribute">
   <TypeSignature Language="C#" Value="public sealed class DataServiceKeyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataServiceKeyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Common.DataServiceKeyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataServiceKeyAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type DataServiceKeyAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataServiceKeyAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,10 +31,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Common.DataServiceKeyAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataServiceKeyAttribute (string keyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string keyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Common.DataServiceKeyAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (keyName As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Common.DataServiceKeyAttribute : string -&gt; System.Data.Services.Common.DataServiceKeyAttribute" Usage="new System.Data.Services.Common.DataServiceKeyAttribute keyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceKeyAttribute(System::String ^ keyName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -51,6 +67,9 @@
       <MemberSignature Language="C#" Value="public DataServiceKeyAttribute (params string[] keyNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string[] keyNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Common.DataServiceKeyAttribute.#ctor(System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ParamArray keyNames As String())" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Common.DataServiceKeyAttribute : string[] -&gt; System.Data.Services.Common.DataServiceKeyAttribute" Usage="new System.Data.Services.Common.DataServiceKeyAttribute keyNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceKeyAttribute(... cli::array &lt;System::String ^&gt; ^ keyNames);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -76,6 +95,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; KeyNames { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; KeyNames" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Common.DataServiceKeyAttribute.KeyNames" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeyNames As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.KeyNames : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.Data.Services.Common.DataServiceKeyAttribute.KeyNames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ KeyNames { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -91,15 +113,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Services.Common.DataServiceKeyAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

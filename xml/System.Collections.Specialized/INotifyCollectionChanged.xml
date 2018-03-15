@@ -1,7 +1,10 @@
-<Type Name="INotifyCollectionChanged" FullName="System.Collections.Specialized.INotifyCollectionChanged">
+﻿<Type Name="INotifyCollectionChanged" FullName="System.Collections.Specialized.INotifyCollectionChanged">
   <TypeSignature Language="C#" Value="public interface INotifyCollectionChanged" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INotifyCollectionChanged" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Specialized.INotifyCollectionChanged" />
+  <TypeSignature Language="VB.NET" Value="Public Interface INotifyCollectionChanged" />
+  <TypeSignature Language="F#" Value="type INotifyCollectionChanged = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class INotifyCollectionChanged" />
   <AssemblyInfo>
     <AssemblyName>System.ObjectModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,9 +47,12 @@
   </Docs>
   <Members>
     <Member MemberName="CollectionChanged">
-      <MemberSignature Language="C#" Value="public event System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged;" />
+      <MemberSignature Language="C#" Value="event System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Collections.Specialized.NotifyCollectionChangedEventHandler CollectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Collections.Specialized.INotifyCollectionChanged.CollectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Event CollectionChanged As NotifyCollectionChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " Usage="member this.CollectionChanged : System.Collections.Specialized.NotifyCollectionChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Collections::Specialized::NotifyCollectionChangedEventHandler ^ CollectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ObjectModel</AssemblyName>

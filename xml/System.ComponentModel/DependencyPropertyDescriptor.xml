@@ -1,7 +1,10 @@
-<Type Name="DependencyPropertyDescriptor" FullName="System.ComponentModel.DependencyPropertyDescriptor">
+﻿<Type Name="DependencyPropertyDescriptor" FullName="System.ComponentModel.DependencyPropertyDescriptor">
   <TypeSignature Language="C#" Value="public sealed class DependencyPropertyDescriptor : System.ComponentModel.PropertyDescriptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DependencyPropertyDescriptor extends System.ComponentModel.PropertyDescriptor" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DependencyPropertyDescriptor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DependencyPropertyDescriptor&#xA;Inherits PropertyDescriptor" />
+  <TypeSignature Language="F#" Value="type DependencyPropertyDescriptor = class&#xA;    inherit PropertyDescriptor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DependencyPropertyDescriptor sealed : System::ComponentModel::PropertyDescriptor" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public override void AddValueChanged (object component, EventHandler handler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddValueChanged(object component, class System.EventHandler handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.AddValueChanged(System.Object,System.EventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddValueChanged (component As Object, handler As EventHandler)" />
+      <MemberSignature Language="F#" Value="override this.AddValueChanged : obj * EventHandler -&gt; unit" Usage="dependencyPropertyDescriptor.AddValueChanged (component, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddValueChanged(System::Object ^ component, EventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -51,6 +57,9 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.AttributeCollection Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.AttributeCollection Attributes" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Attributes As AttributeCollection" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.ComponentModel.AttributeCollection" Usage="System.ComponentModel.DependencyPropertyDescriptor.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::AttributeCollection ^ Attributes { System::ComponentModel::AttributeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -69,6 +78,9 @@
       <MemberSignature Language="C#" Value="public override bool CanResetValue (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanResetValue(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.CanResetValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanResetValue (component As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanResetValue : obj -&gt; bool" Usage="dependencyPropertyDescriptor.CanResetValue component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanResetValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -100,6 +112,9 @@
       <MemberSignature Language="C#" Value="public override string Category { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Category" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.Category" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Category As String" />
+      <MemberSignature Language="F#" Value="member this.Category : string" Usage="System.ComponentModel.DependencyPropertyDescriptor.Category" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Category { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -125,6 +140,9 @@
       <MemberSignature Language="C#" Value="public override Type ComponentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ComponentType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.ComponentType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ComponentType As Type" />
+      <MemberSignature Language="F#" Value="member this.ComponentType : Type" Usage="System.ComponentModel.DependencyPropertyDescriptor.ComponentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ComponentType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -150,6 +168,9 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.TypeConverter Converter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.TypeConverter Converter" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.Converter" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Converter As TypeConverter" />
+      <MemberSignature Language="F#" Value="member this.Converter : System.ComponentModel.TypeConverter" Usage="System.ComponentModel.DependencyPropertyDescriptor.Converter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::TypeConverter ^ Converter { System::ComponentModel::TypeConverter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -176,6 +197,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.DependencyProperty DependencyProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyProperty DependencyProperty" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.DependencyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DependencyProperty As DependencyProperty" />
+      <MemberSignature Language="F#" Value="member this.DependencyProperty : System.Windows.DependencyProperty" Usage="System.ComponentModel.DependencyPropertyDescriptor.DependencyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyProperty ^ DependencyProperty { System::Windows::DependencyProperty ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -201,6 +225,9 @@
       <MemberSignature Language="C#" Value="public override string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.Description" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.ComponentModel.DependencyPropertyDescriptor.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -226,6 +253,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.CoerceValueCallback DesignerCoerceValueCallback { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.CoerceValueCallback DesignerCoerceValueCallback" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.DesignerCoerceValueCallback" />
+      <MemberSignature Language="VB.NET" Value="Public Property DesignerCoerceValueCallback As CoerceValueCallback" />
+      <MemberSignature Language="F#" Value="member this.DesignerCoerceValueCallback : System.Windows.CoerceValueCallback with get, set" Usage="System.ComponentModel.DependencyPropertyDescriptor.DesignerCoerceValueCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::CoerceValueCallback ^ DesignerCoerceValueCallback { System::Windows::CoerceValueCallback ^ get(); void set(System::Windows::CoerceValueCallback ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -244,6 +274,9 @@
       <MemberSignature Language="C#" Value="public override bool DesignTimeOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DesignTimeOnly" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.DesignTimeOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DesignTimeOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DesignTimeOnly : bool" Usage="System.ComponentModel.DependencyPropertyDescriptor.DesignTimeOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DesignTimeOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -270,6 +303,9 @@
       <MemberSignature Language="C#" Value="public override string DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.ComponentModel.DependencyPropertyDescriptor.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -296,6 +332,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dependencyPropertyDescriptor.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -315,10 +354,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromName">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.ComponentModel.DependencyPropertyDescriptor" /> for a provided property name.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromName">
       <MemberSignature Language="C#" Value="public static System.ComponentModel.DependencyPropertyDescriptor FromName (string name, Type ownerType, Type targetType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.DependencyPropertyDescriptor FromName(string name, class System.Type ownerType, class System.Type targetType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.FromName(System.String,System.Type,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromName (name As String, ownerType As Type, targetType As Type) As DependencyPropertyDescriptor" />
+      <MemberSignature Language="F#" Value="static member FromName : string * Type * Type -&gt; System.ComponentModel.DependencyPropertyDescriptor" Usage="System.ComponentModel.DependencyPropertyDescriptor.FromName (name, ownerType, targetType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::DependencyPropertyDescriptor ^ FromName(System::String ^ name, Type ^ ownerType, Type ^ targetType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -352,6 +403,9 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.DependencyPropertyDescriptor FromName (string name, Type ownerType, Type targetType, bool ignorePropertyType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.DependencyPropertyDescriptor FromName(string name, class System.Type ownerType, class System.Type targetType, bool ignorePropertyType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.FromName(System.String,System.Type,System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromName (name As String, ownerType As Type, targetType As Type, ignorePropertyType As Boolean) As DependencyPropertyDescriptor" />
+      <MemberSignature Language="F#" Value="static member FromName : string * Type * Type * bool -&gt; System.ComponentModel.DependencyPropertyDescriptor" Usage="System.ComponentModel.DependencyPropertyDescriptor.FromName (name, ownerType, targetType, ignorePropertyType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::DependencyPropertyDescriptor ^ FromName(System::String ^ name, Type ^ ownerType, Type ^ targetType, bool ignorePropertyType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -383,10 +437,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromProperty">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.ComponentModel.DependencyPropertyDescriptor" /> based either on a provided <see cref="T:System.ComponentModel.PropertyDescriptor" /> or a provided type, depending on the signature used.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromProperty">
       <MemberSignature Language="C#" Value="public static System.ComponentModel.DependencyPropertyDescriptor FromProperty (System.ComponentModel.PropertyDescriptor property);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.DependencyPropertyDescriptor FromProperty(class System.ComponentModel.PropertyDescriptor property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.FromProperty(System.ComponentModel.PropertyDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromProperty (property As PropertyDescriptor) As DependencyPropertyDescriptor" />
+      <MemberSignature Language="F#" Value="static member FromProperty : System.ComponentModel.PropertyDescriptor -&gt; System.ComponentModel.DependencyPropertyDescriptor" Usage="System.ComponentModel.DependencyPropertyDescriptor.FromProperty property" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::DependencyPropertyDescriptor ^ FromProperty(System::ComponentModel::PropertyDescriptor ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -416,6 +482,8 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.DependencyPropertyDescriptor FromProperty (System.Windows.DependencyProperty dependencyProperty, Type targetType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.DependencyPropertyDescriptor FromProperty(class System.Windows.DependencyProperty dependencyProperty, class System.Type targetType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.FromProperty(System.Windows.DependencyProperty,System.Type)" />
+      <MemberSignature Language="F#" Value="static member FromProperty : System.Windows.DependencyProperty * Type -&gt; System.ComponentModel.DependencyPropertyDescriptor" Usage="System.ComponentModel.DependencyPropertyDescriptor.FromProperty (dependencyProperty, targetType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::DependencyPropertyDescriptor ^ FromProperty(System::Windows::DependencyProperty ^ dependencyProperty, Type ^ targetType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -447,6 +515,9 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptorCollection GetChildProperties (object instance, Attribute[] filter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptorCollection GetChildProperties(object instance, class System.Attribute[] filter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.GetChildProperties(System.Object,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetChildProperties (instance As Object, filter As Attribute()) As PropertyDescriptorCollection" />
+      <MemberSignature Language="F#" Value="override this.GetChildProperties : obj * Attribute[] -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="dependencyPropertyDescriptor.GetChildProperties (instance, filter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetChildProperties(System::Object ^ instance, cli::array &lt;Attribute ^&gt; ^ filter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -478,6 +549,9 @@
       <MemberSignature Language="C#" Value="public override object GetEditor (Type editorBaseType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetEditor(class System.Type editorBaseType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.GetEditor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEditor (editorBaseType As Type) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetEditor : Type -&gt; obj" Usage="dependencyPropertyDescriptor.GetEditor editorBaseType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetEditor(Type ^ editorBaseType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -507,6 +581,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dependencyPropertyDescriptor.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -533,6 +610,9 @@
       <MemberSignature Language="C#" Value="public override object GetValue (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetValue(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.GetValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue (component As Object) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetValue : obj -&gt; obj" Usage="dependencyPropertyDescriptor.GetValue component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -562,6 +642,9 @@
       <MemberSignature Language="C#" Value="public bool IsAttached { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAttached" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.IsAttached" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAttached As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAttached : bool" Usage="System.ComponentModel.DependencyPropertyDescriptor.IsAttached" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAttached { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -581,6 +664,9 @@
       <MemberSignature Language="C#" Value="public override bool IsBrowsable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBrowsable" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.IsBrowsable" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsBrowsable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsBrowsable : bool" Usage="System.ComponentModel.DependencyPropertyDescriptor.IsBrowsable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsBrowsable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -607,6 +693,9 @@
       <MemberSignature Language="C#" Value="public override bool IsLocalizable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLocalizable" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.IsLocalizable" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsLocalizable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsLocalizable : bool" Usage="System.ComponentModel.DependencyPropertyDescriptor.IsLocalizable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsLocalizable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -633,6 +722,9 @@
       <MemberSignature Language="C#" Value="public override bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.ComponentModel.DependencyPropertyDescriptor.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -661,6 +753,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.PropertyMetadata Metadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.PropertyMetadata Metadata" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.Metadata" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Metadata As PropertyMetadata" />
+      <MemberSignature Language="F#" Value="member this.Metadata : System.Windows.PropertyMetadata" Usage="System.ComponentModel.DependencyPropertyDescriptor.Metadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::PropertyMetadata ^ Metadata { System::Windows::PropertyMetadata ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -688,6 +783,9 @@
       <MemberSignature Language="C#" Value="public override Type PropertyType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type PropertyType" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.PropertyType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property PropertyType As Type" />
+      <MemberSignature Language="F#" Value="member this.PropertyType : Type" Usage="System.ComponentModel.DependencyPropertyDescriptor.PropertyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ PropertyType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -713,6 +811,9 @@
       <MemberSignature Language="C#" Value="public override void RemoveValueChanged (object component, EventHandler handler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RemoveValueChanged(object component, class System.EventHandler handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.RemoveValueChanged(System.Object,System.EventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveValueChanged (component As Object, handler As EventHandler)" />
+      <MemberSignature Language="F#" Value="override this.RemoveValueChanged : obj * EventHandler -&gt; unit" Usage="dependencyPropertyDescriptor.RemoveValueChanged (component, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveValueChanged(System::Object ^ component, EventHandler ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -743,6 +844,9 @@
       <MemberSignature Language="C#" Value="public override void ResetValue (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResetValue(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.ResetValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetValue (component As Object)" />
+      <MemberSignature Language="F#" Value="override this.ResetValue : obj -&gt; unit" Usage="dependencyPropertyDescriptor.ResetValue component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -771,6 +875,9 @@
       <MemberSignature Language="C#" Value="public override void SetValue (object component, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetValue(object component, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.SetValue(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetValue (component As Object, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.SetValue : obj * obj -&gt; unit" Usage="dependencyPropertyDescriptor.SetValue (component, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetValue(System::Object ^ component, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -801,6 +908,9 @@
       <MemberSignature Language="C#" Value="public override bool ShouldSerializeValue (object component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool ShouldSerializeValue(object component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.ShouldSerializeValue(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ShouldSerializeValue (component As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ShouldSerializeValue : obj -&gt; bool" Usage="dependencyPropertyDescriptor.ShouldSerializeValue component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool ShouldSerializeValue(System::Object ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -824,6 +934,9 @@
       <MemberSignature Language="C#" Value="public override bool SupportsChangeEvents { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsChangeEvents" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DependencyPropertyDescriptor.SupportsChangeEvents" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SupportsChangeEvents As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsChangeEvents : bool" Usage="System.ComponentModel.DependencyPropertyDescriptor.SupportsChangeEvents" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsChangeEvents { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -852,6 +965,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DependencyPropertyDescriptor.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dependencyPropertyDescriptor.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -867,23 +983,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="FromProperty">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.ComponentModel.DependencyPropertyDescriptor" /> based either on a provided <see cref="T:System.ComponentModel.PropertyDescriptor" /> or a provided type, depending on the signature used.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FromName">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.ComponentModel.DependencyPropertyDescriptor" /> for a provided property name.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

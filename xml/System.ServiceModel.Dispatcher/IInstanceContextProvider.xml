@@ -1,7 +1,10 @@
-<Type Name="IInstanceContextProvider" FullName="System.ServiceModel.Dispatcher.IInstanceContextProvider">
+﻿<Type Name="IInstanceContextProvider" FullName="System.ServiceModel.Dispatcher.IInstanceContextProvider">
   <TypeSignature Language="C#" Value="public interface IInstanceContextProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInstanceContextProvider" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.IInstanceContextProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInstanceContextProvider" />
+  <TypeSignature Language="F#" Value="type IInstanceContextProvider = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IInstanceContextProvider" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,8 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.InstanceContext GetExistingInstanceContext (System.ServiceModel.Channels.Message message, System.ServiceModel.IContextChannel channel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ServiceModel.InstanceContext GetExistingInstanceContext(class System.ServiceModel.Channels.Message message, class System.ServiceModel.IContextChannel channel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInstanceContextProvider.GetExistingInstanceContext(System.ServiceModel.Channels.Message,System.ServiceModel.IContextChannel)" />
+      <MemberSignature Language="F#" Value="abstract member GetExistingInstanceContext : System.ServiceModel.Channels.Message * System.ServiceModel.IContextChannel -&gt; System.ServiceModel.InstanceContext" Usage="iInstanceContextProvider.GetExistingInstanceContext (message, channel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::ServiceModel::InstanceContext ^ GetExistingInstanceContext(System::ServiceModel::Channels::Message ^ message, System::ServiceModel::IContextChannel ^ channel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +68,8 @@
       <MemberSignature Language="C#" Value="public void InitializeInstanceContext (System.ServiceModel.InstanceContext instanceContext, System.ServiceModel.Channels.Message message, System.ServiceModel.IContextChannel channel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeInstanceContext(class System.ServiceModel.InstanceContext instanceContext, class System.ServiceModel.Channels.Message message, class System.ServiceModel.IContextChannel channel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInstanceContextProvider.InitializeInstanceContext(System.ServiceModel.InstanceContext,System.ServiceModel.Channels.Message,System.ServiceModel.IContextChannel)" />
+      <MemberSignature Language="F#" Value="abstract member InitializeInstanceContext : System.ServiceModel.InstanceContext * System.ServiceModel.Channels.Message * System.ServiceModel.IContextChannel -&gt; unit" Usage="iInstanceContextProvider.InitializeInstanceContext (instanceContext, message, channel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitializeInstanceContext(System::ServiceModel::InstanceContext ^ instanceContext, System::ServiceModel::Channels::Message ^ message, System::ServiceModel::IContextChannel ^ channel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -95,6 +102,8 @@
       <MemberSignature Language="C#" Value="public bool IsIdle (System.ServiceModel.InstanceContext instanceContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsIdle(class System.ServiceModel.InstanceContext instanceContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInstanceContextProvider.IsIdle(System.ServiceModel.InstanceContext)" />
+      <MemberSignature Language="F#" Value="abstract member IsIdle : System.ServiceModel.InstanceContext -&gt; bool" Usage="iInstanceContextProvider.IsIdle instanceContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsIdle(System::ServiceModel::InstanceContext ^ instanceContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -127,6 +136,8 @@
       <MemberSignature Language="C#" Value="public void NotifyIdle (System.ServiceModel.Dispatcher.InstanceContextIdleCallback callback, System.ServiceModel.InstanceContext instanceContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NotifyIdle(class System.ServiceModel.Dispatcher.InstanceContextIdleCallback callback, class System.ServiceModel.InstanceContext instanceContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.IInstanceContextProvider.NotifyIdle(System.ServiceModel.Dispatcher.InstanceContextIdleCallback,System.ServiceModel.InstanceContext)" />
+      <MemberSignature Language="F#" Value="abstract member NotifyIdle : System.ServiceModel.Dispatcher.InstanceContextIdleCallback * System.ServiceModel.InstanceContext -&gt; unit" Usage="iInstanceContextProvider.NotifyIdle (callback, instanceContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NotifyIdle(System::ServiceModel::Dispatcher::InstanceContextIdleCallback ^ callback, System::ServiceModel::InstanceContext ^ instanceContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

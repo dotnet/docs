@@ -1,7 +1,10 @@
-<Type Name="RSAEncryptionPadding" FullName="System.Security.Cryptography.RSAEncryptionPadding">
+﻿<Type Name="RSAEncryptionPadding" FullName="System.Security.Cryptography.RSAEncryptionPadding">
   <TypeSignature Language="C#" Value="public sealed class RSAEncryptionPadding : IEquatable&lt;System.Security.Cryptography.RSAEncryptionPadding&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RSAEncryptionPadding extends System.Object implements class System.IEquatable`1&lt;class System.Security.Cryptography.RSAEncryptionPadding&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSAEncryptionPadding" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RSAEncryptionPadding&#xA;Implements IEquatable(Of RSAEncryptionPadding)" />
+  <TypeSignature Language="F#" Value="type RSAEncryptionPadding = class&#xA;    interface IEquatable&lt;RSAEncryptionPadding&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RSAEncryptionPadding sealed : IEquatable&lt;System::Security::Cryptography::RSAEncryptionPadding ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.RSAEncryptionPadding CreateOaep (System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.RSAEncryptionPadding CreateOaep(valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAEncryptionPadding.CreateOaep(System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateOaep (hashAlgorithm As HashAlgorithmName) As RSAEncryptionPadding" />
+      <MemberSignature Language="F#" Value="static member CreateOaep : System.Security.Cryptography.HashAlgorithmName -&gt; System.Security.Cryptography.RSAEncryptionPadding" Usage="System.Security.Cryptography.RSAEncryptionPadding.CreateOaep hashAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::RSAEncryptionPadding ^ CreateOaep(System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -66,10 +72,25 @@
         <exception cref="T:System.ArgumentException">The <see cref="P:System.Security.Cryptography.HashAlgorithmName.Name" /> property of <paramref name="hashAlgorithm" /> is either <see langword="null" /> or <see cref="F:System.String.Empty" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two <see cref="T:System.Security.Cryptography.RSAEncryptionPadding" /> objects for equality.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAEncryptionPadding.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="rSAEncryptionPadding.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -112,7 +133,13 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Security.Cryptography.RSAEncryptionPadding other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Security.Cryptography.RSAEncryptionPadding other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAEncryptionPadding.Equals(System.Security.Cryptography.RSAEncryptionPadding)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As RSAEncryptionPadding) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Security.Cryptography.RSAEncryptionPadding -&gt; bool" Usage="rSAEncryptionPadding.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Security::Cryptography::RSAEncryptionPadding ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -154,6 +181,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAEncryptionPadding.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="rSAEncryptionPadding.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -185,6 +215,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.RSAEncryptionPaddingMode Mode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.RSAEncryptionPaddingMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAEncryptionPadding.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mode As RSAEncryptionPaddingMode" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Security.Cryptography.RSAEncryptionPaddingMode" Usage="System.Security.Cryptography.RSAEncryptionPadding.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::RSAEncryptionPaddingMode Mode { System::Security::Cryptography::RSAEncryptionPaddingMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -215,6 +248,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.HashAlgorithmName OaepHashAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.HashAlgorithmName OaepHashAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OaepHashAlgorithm As HashAlgorithmName" />
+      <MemberSignature Language="F#" Value="member this.OaepHashAlgorithm : System.Security.Cryptography.HashAlgorithmName" Usage="System.Security.Cryptography.RSAEncryptionPadding.OaepHashAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::HashAlgorithmName OaepHashAlgorithm { System::Security::Cryptography::HashAlgorithmName get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -245,6 +281,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.RSAEncryptionPadding OaepSHA1 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Security.Cryptography.RSAEncryptionPadding OaepSHA1" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAEncryptionPadding.OaepSHA1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OaepSHA1 As RSAEncryptionPadding" />
+      <MemberSignature Language="F#" Value="member this.OaepSHA1 : System.Security.Cryptography.RSAEncryptionPadding" Usage="System.Security.Cryptography.RSAEncryptionPadding.OaepSHA1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::RSAEncryptionPadding ^ OaepSHA1 { System::Security::Cryptography::RSAEncryptionPadding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -275,6 +314,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.RSAEncryptionPadding OaepSHA256 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Security.Cryptography.RSAEncryptionPadding OaepSHA256" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAEncryptionPadding.OaepSHA256" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OaepSHA256 As RSAEncryptionPadding" />
+      <MemberSignature Language="F#" Value="member this.OaepSHA256 : System.Security.Cryptography.RSAEncryptionPadding" Usage="System.Security.Cryptography.RSAEncryptionPadding.OaepSHA256" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::RSAEncryptionPadding ^ OaepSHA256 { System::Security::Cryptography::RSAEncryptionPadding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -305,6 +347,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.RSAEncryptionPadding OaepSHA384 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Security.Cryptography.RSAEncryptionPadding OaepSHA384" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAEncryptionPadding.OaepSHA384" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OaepSHA384 As RSAEncryptionPadding" />
+      <MemberSignature Language="F#" Value="member this.OaepSHA384 : System.Security.Cryptography.RSAEncryptionPadding" Usage="System.Security.Cryptography.RSAEncryptionPadding.OaepSHA384" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::RSAEncryptionPadding ^ OaepSHA384 { System::Security::Cryptography::RSAEncryptionPadding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -335,6 +380,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.RSAEncryptionPadding OaepSHA512 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Security.Cryptography.RSAEncryptionPadding OaepSHA512" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAEncryptionPadding.OaepSHA512" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property OaepSHA512 As RSAEncryptionPadding" />
+      <MemberSignature Language="F#" Value="member this.OaepSHA512 : System.Security.Cryptography.RSAEncryptionPadding" Usage="System.Security.Cryptography.RSAEncryptionPadding.OaepSHA512" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::RSAEncryptionPadding ^ OaepSHA512 { System::Security::Cryptography::RSAEncryptionPadding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -365,6 +413,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Security.Cryptography.RSAEncryptionPadding left, System.Security.Cryptography.RSAEncryptionPadding right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Security.Cryptography.RSAEncryptionPadding left, class System.Security.Cryptography.RSAEncryptionPadding right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAEncryptionPadding.op_Equality(System.Security.Cryptography.RSAEncryptionPadding,System.Security.Cryptography.RSAEncryptionPadding)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As RSAEncryptionPadding, right As RSAEncryptionPadding) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Security.Cryptography.RSAEncryptionPadding * System.Security.Cryptography.RSAEncryptionPadding -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Security::Cryptography::RSAEncryptionPadding ^ left, System::Security::Cryptography::RSAEncryptionPadding ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -409,6 +460,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Security.Cryptography.RSAEncryptionPadding left, System.Security.Cryptography.RSAEncryptionPadding right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Security.Cryptography.RSAEncryptionPadding left, class System.Security.Cryptography.RSAEncryptionPadding right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAEncryptionPadding.op_Inequality(System.Security.Cryptography.RSAEncryptionPadding,System.Security.Cryptography.RSAEncryptionPadding)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As RSAEncryptionPadding, right As RSAEncryptionPadding) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Security.Cryptography.RSAEncryptionPadding * System.Security.Cryptography.RSAEncryptionPadding -&gt; bool" Usage="System.Security.Cryptography.RSAEncryptionPadding.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Security::Cryptography::RSAEncryptionPadding ^ left, System::Security::Cryptography::RSAEncryptionPadding ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -453,6 +507,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.RSAEncryptionPadding Pkcs1 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Security.Cryptography.RSAEncryptionPadding Pkcs1" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAEncryptionPadding.Pkcs1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Pkcs1 As RSAEncryptionPadding" />
+      <MemberSignature Language="F#" Value="member this.Pkcs1 : System.Security.Cryptography.RSAEncryptionPadding" Usage="System.Security.Cryptography.RSAEncryptionPadding.Pkcs1" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Security::Cryptography::RSAEncryptionPadding ^ Pkcs1 { System::Security::Cryptography::RSAEncryptionPadding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -483,6 +540,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAEncryptionPadding.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="rSAEncryptionPadding.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -517,17 +577,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.3.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares two <see cref="T:System.Security.Cryptography.RSAEncryptionPadding" /> objects for equality.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="Versioned" FullName="Microsoft.VisualBasic.CompilerServices.Versioned">
+﻿<Type Name="Versioned" FullName="Microsoft.VisualBasic.CompilerServices.Versioned">
   <TypeSignature Language="C#" Value="public sealed class Versioned" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Versioned extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.Versioned" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Versioned" />
+  <TypeSignature Language="F#" Value="type Versioned = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Versioned sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public static object CallByName (object Instance, string MethodName, Microsoft.VisualBasic.CallType UseCallType, params object[] Arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static object CallByName(object Instance, string MethodName, valuetype Microsoft.VisualBasic.CallType UseCallType, object[] Arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Versioned.CallByName(System.Object,System.String,Microsoft.VisualBasic.CallType,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CallByName (Instance As Object, MethodName As String, UseCallType As CallType, ParamArray Arguments As Object()) As Object" />
+      <MemberSignature Language="F#" Value="static member CallByName : obj * string * Microsoft.VisualBasic.CallType * obj[] -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.Versioned.CallByName (Instance, MethodName, UseCallType, Arguments)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CallByName(System::Object ^ Instance, System::String ^ MethodName, Microsoft::VisualBasic::CallType UseCallType, ... cli::array &lt;System::Object ^&gt; ^ Arguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -69,6 +75,9 @@
       <MemberSignature Language="C#" Value="public static bool IsNumeric (object Expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsNumeric(object Expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Versioned.IsNumeric(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsNumeric (Expression As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsNumeric : obj -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.Versioned.IsNumeric Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsNumeric(System::Object ^ Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -92,6 +101,9 @@
       <MemberSignature Language="C#" Value="public static string SystemTypeName (string VbName);" />
       <MemberSignature Language="ILAsm" Value=".method public static string SystemTypeName(string VbName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Versioned.SystemTypeName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SystemTypeName (VbName As String) As String" />
+      <MemberSignature Language="F#" Value="static member SystemTypeName : string -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Versioned.SystemTypeName VbName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ SystemTypeName(System::String ^ VbName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -115,6 +127,9 @@
       <MemberSignature Language="C#" Value="public static string TypeName (object Expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static string TypeName(object Expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Versioned.TypeName(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TypeName (Expression As Object) As String" />
+      <MemberSignature Language="F#" Value="static member TypeName : obj -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Versioned.TypeName Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ TypeName(System::Object ^ Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -138,6 +153,9 @@
       <MemberSignature Language="C#" Value="public static string VbTypeName (string SystemName);" />
       <MemberSignature Language="ILAsm" Value=".method public static string VbTypeName(string SystemName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.Versioned.VbTypeName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VbTypeName (SystemName As String) As String" />
+      <MemberSignature Language="F#" Value="static member VbTypeName : string -&gt; string" Usage="Microsoft.VisualBasic.CompilerServices.Versioned.VbTypeName SystemName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ VbTypeName(System::String ^ SystemName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

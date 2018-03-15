@@ -1,7 +1,10 @@
-<Type Name="AssignTargetPath" FullName="Microsoft.Build.Tasks.AssignTargetPath">
+﻿<Type Name="AssignTargetPath" FullName="Microsoft.Build.Tasks.AssignTargetPath">
   <TypeSignature Language="C#" Value="public class AssignTargetPath : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AssignTargetPath extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.AssignTargetPath" />
+  <TypeSignature Language="VB.NET" Value="Public Class AssignTargetPath&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="F#" Value="type AssignTargetPath = class&#xA;    inherit TaskExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssignTargetPath : Microsoft::Build::Tasks::TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public AssignTargetPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.AssignTargetPath.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssignTargetPath();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -36,6 +41,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] AssignedFiles { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] AssignedFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AssignTargetPath.AssignedFiles" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssignedFiles As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.AssignedFiles : Microsoft.Build.Framework.ITaskItem[]" Usage="Microsoft.Build.Tasks.AssignTargetPath.AssignedFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ AssignedFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -60,6 +68,9 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.AssignTargetPath.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="assignTargetPath.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -81,6 +92,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Files { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Files" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AssignTargetPath.Files" />
+      <MemberSignature Language="VB.NET" Value="Public Property Files As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.Files : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.AssignTargetPath.Files" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ Files { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -100,6 +114,9 @@
       <MemberSignature Language="C#" Value="public string RootFolder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RootFolder" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.AssignTargetPath.RootFolder" />
+      <MemberSignature Language="VB.NET" Value="Public Property RootFolder As String" />
+      <MemberSignature Language="F#" Value="member this.RootFolder : string with get, set" Usage="Microsoft.Build.Tasks.AssignTargetPath.RootFolder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RootFolder { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

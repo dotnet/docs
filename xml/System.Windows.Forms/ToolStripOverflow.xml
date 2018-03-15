@@ -1,7 +1,10 @@
-<Type Name="ToolStripOverflow" FullName="System.Windows.Forms.ToolStripOverflow">
+﻿<Type Name="ToolStripOverflow" FullName="System.Windows.Forms.ToolStripOverflow">
   <TypeSignature Language="C#" Value="public class ToolStripOverflow : System.Windows.Forms.ToolStripDropDown, IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripOverflow extends System.Windows.Forms.ToolStripDropDown implements class System.ComponentModel.IComponent, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripOverflow" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolStripOverflow&#xA;Inherits ToolStripDropDown&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type ToolStripOverflow = class&#xA;    inherit ToolStripDropDown&#xA;    interface IArrangedElement&#xA;    interface IComponent&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolStripOverflow : System::Windows::Forms::ToolStripDropDown, IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="public ToolStripOverflow (System.Windows.Forms.ToolStripItem parentItem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ToolStripItem parentItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripOverflow.#ctor(System.Windows.Forms.ToolStripItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parentItem As ToolStripItem)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripOverflow : System.Windows.Forms.ToolStripItem -&gt; System.Windows.Forms.ToolStripOverflow" Usage="new System.Windows.Forms.ToolStripOverflow parentItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripOverflow(System::Windows::Forms::ToolStripItem ^ parentItem);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -56,6 +62,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripOverflow.CreateAccessibilityInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
+      <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="toolStripOverflow.CreateAccessibilityInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -95,9 +104,12 @@
       </Docs>
     </Member>
     <Member MemberName="DisplayedItems">
-      <MemberSignature Language="C#" Value="protected override System.Windows.Forms.ToolStripItemCollection DisplayedItems { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Windows.Forms.ToolStripItemCollection DisplayedItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripItemCollection DisplayedItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripOverflow.DisplayedItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DisplayedItems As ToolStripItemCollection" />
+      <MemberSignature Language="F#" Value="member this.DisplayedItems : System.Windows.Forms.ToolStripItemCollection" Usage="System.Windows.Forms.ToolStripOverflow.DisplayedItems" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Windows::Forms::ToolStripItemCollection ^ DisplayedItems { System::Windows::Forms::ToolStripItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -123,7 +135,13 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Size GetPreferredSize (System.Drawing.Size constrainingSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Drawing.Size GetPreferredSize(valuetype System.Drawing.Size constrainingSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripOverflow.GetPreferredSize(System.Drawing.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPreferredSize (constrainingSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.GetPreferredSize : System.Drawing.Size -&gt; System.Drawing.Size" Usage="toolStripOverflow.GetPreferredSize constrainingSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Size GetPreferredSize(System::Drawing::Size constrainingSize);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Forms.Layout.IArrangedElement.GetPreferredSize(System.Drawing.Size)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -145,6 +163,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.ToolStripItemCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripItemCollection Items" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripOverflow.Items" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Items As ToolStripItemCollection" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Windows.Forms.ToolStripItemCollection" Usage="System.Windows.Forms.ToolStripOverflow.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ToolStripItemCollection ^ Items { System::Windows::Forms::ToolStripItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -170,6 +191,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.Layout.LayoutEngine LayoutEngine { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Layout.LayoutEngine LayoutEngine" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripOverflow.LayoutEngine" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property LayoutEngine As LayoutEngine" />
+      <MemberSignature Language="F#" Value="member this.LayoutEngine : System.Windows.Forms.Layout.LayoutEngine" Usage="System.Windows.Forms.ToolStripOverflow.LayoutEngine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Layout::LayoutEngine ^ LayoutEngine { System::Windows::Forms::Layout::LayoutEngine ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -189,6 +213,9 @@
       <MemberSignature Language="C#" Value="protected override void OnLayout (System.Windows.Forms.LayoutEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnLayout(class System.Windows.Forms.LayoutEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripOverflow.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnLayout (e As LayoutEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnLayout : System.Windows.Forms.LayoutEventArgs -&gt; unit" Usage="toolStripOverflow.OnLayout e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnLayout(System::Windows::Forms::LayoutEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -222,6 +249,9 @@
       <MemberSignature Language="C#" Value="protected override void SetDisplayedItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDisplayedItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripOverflow.SetDisplayedItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDisplayedItems ()" />
+      <MemberSignature Language="F#" Value="override this.SetDisplayedItems : unit -&gt; unit" Usage="toolStripOverflow.SetDisplayedItems " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDisplayedItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

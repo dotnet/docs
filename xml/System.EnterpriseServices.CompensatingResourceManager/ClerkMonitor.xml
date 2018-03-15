@@ -1,7 +1,10 @@
-<Type Name="ClerkMonitor" FullName="System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor">
+﻿<Type Name="ClerkMonitor" FullName="System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor">
   <TypeSignature Language="C#" Value="public sealed class ClerkMonitor : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ClerkMonitor extends System.Object implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClerkMonitor&#xA;Implements IEnumerable" />
+  <TypeSignature Language="F#" Value="type ClerkMonitor = class&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClerkMonitor sealed : System::Collections::IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,8 @@
       <MemberSignature Language="C#" Value="public ClerkMonitor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClerkMonitor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -45,6 +50,9 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -63,6 +71,9 @@
       <MemberSignature Language="C#" Value="~ClerkMonitor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="clerkMonitor.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!ClerkMonitor ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -81,7 +92,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="clerkMonitor.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -109,6 +126,9 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.CompensatingResourceManager.ClerkInfo this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.EnterpriseServices.CompensatingResourceManager.ClerkInfo Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ClerkInfo" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.EnterpriseServices.CompensatingResourceManager.ClerkInfo" Usage="System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::CompensatingResourceManager::ClerkInfo ^ default[int] { System::EnterpriseServices::CompensatingResourceManager::ClerkInfo ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -131,6 +151,9 @@
       <MemberSignature Language="C#" Value="public System.EnterpriseServices.CompensatingResourceManager.ClerkInfo this[string index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.EnterpriseServices.CompensatingResourceManager.ClerkInfo Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As String) As ClerkInfo" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.EnterpriseServices.CompensatingResourceManager.ClerkInfo" Usage="System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::EnterpriseServices::CompensatingResourceManager::ClerkInfo ^ default[System::String ^] { System::EnterpriseServices::CompensatingResourceManager::ClerkInfo ^ get(System::String ^ index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -153,6 +176,9 @@
       <MemberSignature Language="C#" Value="public void Populate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Populate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.CompensatingResourceManager.ClerkMonitor.Populate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Populate ()" />
+      <MemberSignature Language="F#" Value="member this.Populate : unit -&gt; unit" Usage="clerkMonitor.Populate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Populate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

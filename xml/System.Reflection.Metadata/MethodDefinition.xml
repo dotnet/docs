@@ -1,7 +1,10 @@
-<Type Name="MethodDefinition" FullName="System.Reflection.Metadata.MethodDefinition">
+﻿<Type Name="MethodDefinition" FullName="System.Reflection.Metadata.MethodDefinition">
   <TypeSignature Language="C#" Value="public struct MethodDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit MethodDefinition extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.MethodDefinition" />
+  <TypeSignature Language="VB.NET" Value="Public Structure MethodDefinition" />
+  <TypeSignature Language="F#" Value="type MethodDefinition = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class MethodDefinition" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +24,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodAttributes Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.MethodAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodDefinition.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As MethodAttributes" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.MethodAttributes" Usage="System.Reflection.Metadata.MethodDefinition.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodAttributes Attributes { System::Reflection::MethodAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +47,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodSignature&lt;TType&gt; DecodeSignature&lt;TType&gt; (System.Reflection.Metadata.ISignatureTypeProvider&lt;TType&gt; provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.MethodSignature`1&lt;!!TType&gt; DecodeSignature&lt;TType&gt;(class System.Reflection.Metadata.ISignatureTypeProvider`1&lt;!!TType&gt; provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodDefinition.DecodeSignature``1(System.Reflection.Metadata.ISignatureTypeProvider{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecodeSignature(Of TType) (provider As ISignatureTypeProvider(Of TType)) As MethodSignature(Of TType)" />
+      <MemberSignature Language="F#" Value="member this.DecodeSignature : System.Reflection.Metadata.ISignatureTypeProvider&lt;'ype&gt; -&gt; System.Reflection.Metadata.MethodSignature&lt;'ype&gt;" Usage="methodDefinition.DecodeSignature provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TType&gt;&#xA; System::Reflection::Metadata::MethodSignature&lt;TType&gt; DecodeSignature(System::Reflection::Metadata::ISignatureTypeProvider&lt;TType&gt; ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -67,6 +76,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodSignature&lt;TType&gt; DecodeSignature&lt;TType,TGenericContext&gt; (System.Reflection.Metadata.ISignatureTypeProvider&lt;TType,TGenericContext&gt; provider, TGenericContext genericContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.MethodSignature`1&lt;!!TType&gt; DecodeSignature&lt;TType, TGenericContext&gt;(class System.Reflection.Metadata.ISignatureTypeProvider`2&lt;!!TType, !!TGenericContext&gt; provider, !!TGenericContext genericContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodDefinition.DecodeSignature``2(System.Reflection.Metadata.ISignatureTypeProvider{``0,``1},``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Function DecodeSignature(Of TType, TGenericContext) (provider As ISignatureTypeProvider(Of TType, TGenericContext), genericContext As TGenericContext) As MethodSignature(Of TType)" />
+      <MemberSignature Language="F#" Value="member this.DecodeSignature : System.Reflection.Metadata.ISignatureTypeProvider&lt;'ype, 'GenericContext&gt; * 'GenericContext -&gt; System.Reflection.Metadata.MethodSignature&lt;'ype&gt;" Usage="methodDefinition.DecodeSignature (provider, genericContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TType, typename TGenericContext&gt;&#xA; System::Reflection::Metadata::MethodSignature&lt;TType&gt; DecodeSignature(System::Reflection::Metadata::ISignatureTypeProvider&lt;TType, TGenericContext&gt; ^ provider, TGenericContext genericContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -97,6 +109,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.CustomAttributeHandleCollection GetCustomAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.CustomAttributeHandleCollection GetCustomAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodDefinition.GetCustomAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCustomAttributes () As CustomAttributeHandleCollection" />
+      <MemberSignature Language="F#" Value="member this.GetCustomAttributes : unit -&gt; System.Reflection.Metadata.CustomAttributeHandleCollection" Usage="methodDefinition.GetCustomAttributes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::CustomAttributeHandleCollection GetCustomAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -118,6 +133,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection GetDeclarativeSecurityAttributes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection GetDeclarativeSecurityAttributes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodDefinition.GetDeclarativeSecurityAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDeclarativeSecurityAttributes () As DeclarativeSecurityAttributeHandleCollection" />
+      <MemberSignature Language="F#" Value="member this.GetDeclarativeSecurityAttributes : unit -&gt; System.Reflection.Metadata.DeclarativeSecurityAttributeHandleCollection" Usage="methodDefinition.GetDeclarativeSecurityAttributes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::DeclarativeSecurityAttributeHandleCollection GetDeclarativeSecurityAttributes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -139,6 +157,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.TypeDefinitionHandle GetDeclaringType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.TypeDefinitionHandle GetDeclaringType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodDefinition.GetDeclaringType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDeclaringType () As TypeDefinitionHandle" />
+      <MemberSignature Language="F#" Value="member this.GetDeclaringType : unit -&gt; System.Reflection.Metadata.TypeDefinitionHandle" Usage="methodDefinition.GetDeclaringType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::TypeDefinitionHandle GetDeclaringType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -160,6 +181,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.GenericParameterHandleCollection GetGenericParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.GenericParameterHandleCollection GetGenericParameters() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodDefinition.GetGenericParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetGenericParameters () As GenericParameterHandleCollection" />
+      <MemberSignature Language="F#" Value="member this.GetGenericParameters : unit -&gt; System.Reflection.Metadata.GenericParameterHandleCollection" Usage="methodDefinition.GetGenericParameters " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::GenericParameterHandleCollection GetGenericParameters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -181,6 +205,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.MethodImport GetImport ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.MethodImport GetImport() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodDefinition.GetImport" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetImport () As MethodImport" />
+      <MemberSignature Language="F#" Value="member this.GetImport : unit -&gt; System.Reflection.Metadata.MethodImport" Usage="methodDefinition.GetImport " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::MethodImport GetImport();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -202,6 +229,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.ParameterHandleCollection GetParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Reflection.Metadata.ParameterHandleCollection GetParameters() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.MethodDefinition.GetParameters" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetParameters () As ParameterHandleCollection" />
+      <MemberSignature Language="F#" Value="member this.GetParameters : unit -&gt; System.Reflection.Metadata.ParameterHandleCollection" Usage="methodDefinition.GetParameters " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Reflection::Metadata::ParameterHandleCollection GetParameters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -223,6 +253,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodImplAttributes ImplAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.MethodImplAttributes ImplAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodDefinition.ImplAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ImplAttributes As MethodImplAttributes" />
+      <MemberSignature Language="F#" Value="member this.ImplAttributes : System.Reflection.MethodImplAttributes" Usage="System.Reflection.Metadata.MethodDefinition.ImplAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::MethodImplAttributes ImplAttributes { System::Reflection::MethodImplAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -243,6 +276,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.StringHandle Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.StringHandle Name" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodDefinition.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As StringHandle" />
+      <MemberSignature Language="F#" Value="member this.Name : System.Reflection.Metadata.StringHandle" Usage="System.Reflection.Metadata.MethodDefinition.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::StringHandle Name { System::Reflection::Metadata::StringHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -263,6 +299,9 @@
       <MemberSignature Language="C#" Value="public int RelativeVirtualAddress { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RelativeVirtualAddress" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodDefinition.RelativeVirtualAddress" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelativeVirtualAddress As Integer" />
+      <MemberSignature Language="F#" Value="member this.RelativeVirtualAddress : int" Usage="System.Reflection.Metadata.MethodDefinition.RelativeVirtualAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RelativeVirtualAddress { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -283,6 +322,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobHandle Signature { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.BlobHandle Signature" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.MethodDefinition.Signature" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Signature As BlobHandle" />
+      <MemberSignature Language="F#" Value="member this.Signature : System.Reflection.Metadata.BlobHandle" Usage="System.Reflection.Metadata.MethodDefinition.Signature" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobHandle Signature { System::Reflection::Metadata::BlobHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

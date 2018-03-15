@@ -1,7 +1,10 @@
-<Type Name="ValidationDataType" FullName="System.Web.UI.WebControls.ValidationDataType">
+﻿<Type Name="ValidationDataType" FullName="System.Web.UI.WebControls.ValidationDataType">
   <TypeSignature Language="C#" Value="public enum ValidationDataType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidationDataType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ValidationDataType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ValidationDataType" />
+  <TypeSignature Language="F#" Value="type ValidationDataType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ValidationDataType" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="Currency" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidationDataType Currency = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationDataType.Currency" />
+      <MemberSignature Language="VB.NET" Value="Currency" />
+      <MemberSignature Language="F#" Value="Currency = 4" Usage="System.Web.UI.WebControls.ValidationDataType.Currency" />
+      <MemberSignature Language="C++ CLI" Value="Currency" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationDataType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A monetary data type. The value is treated as a <see cref="T:System.Decimal" />. However, currency and grouping symbols are still allowed.</summary>
       </Docs>
@@ -49,6 +56,9 @@
       <MemberSignature Language="C#" Value="Date" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidationDataType Date = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationDataType.Date" />
+      <MemberSignature Language="VB.NET" Value="Date" />
+      <MemberSignature Language="F#" Value="Date = 3" Usage="System.Web.UI.WebControls.ValidationDataType.Date" />
+      <MemberSignature Language="C++ CLI" Value="Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -57,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationDataType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A date data type. Only numeric dates are allowed. The time portion cannot be specified.</summary>
       </Docs>
@@ -65,6 +76,9 @@
       <MemberSignature Language="C#" Value="Double" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidationDataType Double = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationDataType.Double" />
+      <MemberSignature Language="VB.NET" Value="Double" />
+      <MemberSignature Language="F#" Value="Double = 2" Usage="System.Web.UI.WebControls.ValidationDataType.Double" />
+      <MemberSignature Language="C++ CLI" Value="Double" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationDataType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A double precision floating point number data type. The value is treated as a <see cref="T:System.Double" />.</summary>
       </Docs>
@@ -81,6 +96,9 @@
       <MemberSignature Language="C#" Value="Integer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidationDataType Integer = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationDataType.Integer" />
+      <MemberSignature Language="VB.NET" Value="Integer" />
+      <MemberSignature Language="F#" Value="Integer = 1" Usage="System.Web.UI.WebControls.ValidationDataType.Integer" />
+      <MemberSignature Language="C++ CLI" Value="Integer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationDataType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A 32-bit signed integer data type. The value is treated as a <see cref="T:System.Int32" />.</summary>
       </Docs>
@@ -97,6 +116,9 @@
       <MemberSignature Language="C#" Value="String" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ValidationDataType String = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ValidationDataType.String" />
+      <MemberSignature Language="VB.NET" Value="String" />
+      <MemberSignature Language="F#" Value="String = 0" Usage="System.Web.UI.WebControls.ValidationDataType.String" />
+      <MemberSignature Language="C++ CLI" Value="String" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,6 +127,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ValidationDataType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A string data type. The value is treated as a <see cref="T:System.String" />.</summary>
       </Docs>

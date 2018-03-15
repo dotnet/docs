@@ -1,7 +1,10 @@
-<Type Name="XpsSerializationPrintTicketRequiredEventArgs" FullName="System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs">
+﻿<Type Name="XpsSerializationPrintTicketRequiredEventArgs" FullName="System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs">
   <TypeSignature Language="C#" Value="public class XpsSerializationPrintTicketRequiredEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsSerializationPrintTicketRequiredEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class XpsSerializationPrintTicketRequiredEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type XpsSerializationPrintTicketRequiredEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XpsSerializationPrintTicketRequiredEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public XpsSerializationPrintTicketRequiredEventArgs (System.Windows.Xps.Serialization.PrintTicketLevel printTicketLevel, int sequence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Xps.Serialization.PrintTicketLevel printTicketLevel, int32 sequence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs.#ctor(System.Windows.Xps.Serialization.PrintTicketLevel,System.Int32)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs : System.Windows.Xps.Serialization.PrintTicketLevel * int -&gt; System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs" Usage="new System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs (printTicketLevel, sequence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsSerializationPrintTicketRequiredEventArgs(System::Windows::Xps::Serialization::PrintTicketLevel printTicketLevel, int sequence);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -39,6 +44,9 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintTicket PrintTicket { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PrintTicket PrintTicket" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs.PrintTicket" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrintTicket As PrintTicket" />
+      <MemberSignature Language="F#" Value="member this.PrintTicket : System.Printing.PrintTicket with get, set" Usage="System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs.PrintTicket" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PrintTicket ^ PrintTicket { System::Printing::PrintTicket ^ get(); void set(System::Printing::PrintTicket ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -57,6 +65,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Xps.Serialization.PrintTicketLevel PrintTicketLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Xps.Serialization.PrintTicketLevel PrintTicketLevel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs.PrintTicketLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrintTicketLevel As PrintTicketLevel" />
+      <MemberSignature Language="F#" Value="member this.PrintTicketLevel : System.Windows.Xps.Serialization.PrintTicketLevel" Usage="System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs.PrintTicketLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Xps::Serialization::PrintTicketLevel PrintTicketLevel { System::Windows::Xps::Serialization::PrintTicketLevel get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -75,6 +86,9 @@
       <MemberSignature Language="C#" Value="public int Sequence { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Sequence" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs.Sequence" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Sequence As Integer" />
+      <MemberSignature Language="F#" Value="member this.Sequence : int" Usage="System.Windows.Xps.Serialization.XpsSerializationPrintTicketRequiredEventArgs.Sequence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Sequence { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

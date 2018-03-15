@@ -1,7 +1,10 @@
-<Type Name="AcceptedMarkupExtensionExpressionTypeAttribute" FullName="System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute">
+﻿<Type Name="AcceptedMarkupExtensionExpressionTypeAttribute" FullName="System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute">
   <TypeSignature Language="C#" Value="public class AcceptedMarkupExtensionExpressionTypeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AcceptedMarkupExtensionExpressionTypeAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class AcceptedMarkupExtensionExpressionTypeAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type AcceptedMarkupExtensionExpressionTypeAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AcceptedMarkupExtensionExpressionTypeAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,8 @@
       <MemberSignature Language="C#" Value="public AcceptedMarkupExtensionExpressionTypeAttribute (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute : Type -&gt; System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute" Usage="new System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AcceptedMarkupExtensionExpressionTypeAttribute(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -60,6 +65,9 @@
       <MemberSignature Language="C#" Value="public Type Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Windows.Markup.AcceptedMarkupExtensionExpressionTypeAttribute.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

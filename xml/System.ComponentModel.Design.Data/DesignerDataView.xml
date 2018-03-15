@@ -1,7 +1,10 @@
-<Type Name="DesignerDataView" FullName="System.ComponentModel.Design.Data.DesignerDataView">
+﻿<Type Name="DesignerDataView" FullName="System.ComponentModel.Design.Data.DesignerDataView">
   <TypeSignature Language="C#" Value="public abstract class DesignerDataView : System.ComponentModel.Design.Data.DesignerDataTableBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DesignerDataView extends System.ComponentModel.Design.Data.DesignerDataTableBase" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Data.DesignerDataView" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DesignerDataView&#xA;Inherits DesignerDataTableBase" />
+  <TypeSignature Language="F#" Value="type DesignerDataView = class&#xA;    inherit DesignerDataTableBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignerDataView abstract : System::ComponentModel::Design::Data::DesignerDataTableBase" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +27,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataView" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected DesignerDataView (string name);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataView.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataView : string -&gt; System.ComponentModel.Design.Data.DesignerDataView" Usage="new System.ComponentModel.Design.Data.DesignerDataView name" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerDataView(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -46,6 +61,9 @@
       <MemberSignature Language="C#" Value="protected DesignerDataView (string name, string owner);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string name, string owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Data.DesignerDataView.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (name As String, owner As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Design.Data.DesignerDataView : string * string -&gt; System.ComponentModel.Design.Data.DesignerDataView" Usage="new System.ComponentModel.Design.Data.DesignerDataView (name, owner)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DesignerDataView(System::String ^ name, System::String ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -62,14 +80,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Data.DesignerDataView" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

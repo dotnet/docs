@@ -1,7 +1,10 @@
-<Type Name="StateItem" FullName="System.Web.UI.StateItem">
+﻿<Type Name="StateItem" FullName="System.Web.UI.StateItem">
   <TypeSignature Language="C#" Value="public sealed class StateItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StateItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.StateItem" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StateItem" />
+  <TypeSignature Language="F#" Value="type StateItem = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StateItem sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="public bool IsDirty { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDirty" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.StateItem.IsDirty" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsDirty As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDirty : bool with get, set" Usage="System.Web.UI.StateItem.IsDirty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDirty { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +64,9 @@
       <MemberSignature Language="C#" Value="public object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.StateItem.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Web.UI.StateItem.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="CodeClass" FullName="Mono.CodeGeneration.CodeClass">
+﻿<Type Name="CodeClass" FullName="Mono.CodeGeneration.CodeClass">
   <TypeSignature Language="C#" Value="public class CodeClass" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CodeClass extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeClass" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeClass" />
+  <TypeSignature Language="F#" Value="type CodeClass = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeClass" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public CodeClass (System.Reflection.Emit.ModuleBuilder mb, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Emit.ModuleBuilder mb, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.#ctor(System.Reflection.Emit.ModuleBuilder,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mb As ModuleBuilder, name As String)" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeClass : System.Reflection.Emit.ModuleBuilder * string -&gt; Mono.CodeGeneration.CodeClass" Usage="new Mono.CodeGeneration.CodeClass (mb, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeClass(System::Reflection::Emit::ModuleBuilder ^ mb, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +47,9 @@
       <MemberSignature Language="C#" Value="public CodeClass (System.Reflection.Emit.ModuleBuilder mb, string name, Type baseType, params Type[] interfaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Emit.ModuleBuilder mb, string name, class System.Type baseType, class System.Type[] interfaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.#ctor(System.Reflection.Emit.ModuleBuilder,System.String,System.Type,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mb As ModuleBuilder, name As String, baseType As Type, ParamArray interfaces As Type())" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeClass : System.Reflection.Emit.ModuleBuilder * string * Type * Type[] -&gt; Mono.CodeGeneration.CodeClass" Usage="new Mono.CodeGeneration.CodeClass (mb, name, baseType, interfaces)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeClass(System::Reflection::Emit::ModuleBuilder ^ mb, System::String ^ name, Type ^ baseType, ... cli::array &lt;Type ^&gt; ^ interfaces);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -72,6 +81,9 @@
       <MemberSignature Language="C#" Value="public CodeClass (System.Reflection.Emit.ModuleBuilder mb, string name, System.Reflection.TypeAttributes attr, Type baseType, params Type[] interfaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Emit.ModuleBuilder mb, string name, valuetype System.Reflection.TypeAttributes attr, class System.Type baseType, class System.Type[] interfaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.#ctor(System.Reflection.Emit.ModuleBuilder,System.String,System.Reflection.TypeAttributes,System.Type,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (mb As ModuleBuilder, name As String, attr As TypeAttributes, baseType As Type, ParamArray interfaces As Type())" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeClass : System.Reflection.Emit.ModuleBuilder * string * System.Reflection.TypeAttributes * Type * Type[] -&gt; Mono.CodeGeneration.CodeClass" Usage="new Mono.CodeGeneration.CodeClass (mb, name, attr, baseType, interfaces)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeClass(System::Reflection::Emit::ModuleBuilder ^ mb, System::String ^ name, System::Reflection::TypeAttributes attr, Type ^ baseType, ... cli::array &lt;Type ^&gt; ^ interfaces);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -105,6 +117,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateConstructor (params Type[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod CreateConstructor(class System.Type[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateConstructor(System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateConstructor (ParamArray parameters As Type()) As CodeMethod" />
+      <MemberSignature Language="F#" Value="member this.CreateConstructor : Type[] -&gt; Mono.CodeGeneration.CodeMethod" Usage="codeClass.CreateConstructor parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeMethod ^ CreateConstructor(... cli::array &lt;Type ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -134,6 +149,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateConstructor (System.Reflection.MethodAttributes attributes, params Type[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod CreateConstructor(valuetype System.Reflection.MethodAttributes attributes, class System.Type[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateConstructor(System.Reflection.MethodAttributes,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateConstructor (attributes As MethodAttributes, ParamArray parameters As Type()) As CodeMethod" />
+      <MemberSignature Language="F#" Value="member this.CreateConstructor : System.Reflection.MethodAttributes * Type[] -&gt; Mono.CodeGeneration.CodeMethod" Usage="codeClass.CreateConstructor (attributes, parameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeMethod ^ CreateConstructor(System::Reflection::MethodAttributes attributes, ... cli::array &lt;Type ^&gt; ^ parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -165,6 +183,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeCustomAttribute CreateCustomAttribute (Type attributeType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeCustomAttribute CreateCustomAttribute(class System.Type attributeType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateCustomAttribute(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCustomAttribute (attributeType As Type) As CodeCustomAttribute" />
+      <MemberSignature Language="F#" Value="member this.CreateCustomAttribute : Type -&gt; Mono.CodeGeneration.CodeCustomAttribute" Usage="codeClass.CreateCustomAttribute attributeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeCustomAttribute ^ CreateCustomAttribute(Type ^ attributeType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -188,6 +209,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeCustomAttribute CreateCustomAttribute (Type attributeType, Type[] ctorArgTypes, Mono.CodeGeneration.CodeLiteral[] ctorArgs, System.Reflection.FieldInfo[] fields, Mono.CodeGeneration.CodeLiteral[] fieldValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeCustomAttribute CreateCustomAttribute(class System.Type attributeType, class System.Type[] ctorArgTypes, class Mono.CodeGeneration.CodeLiteral[] ctorArgs, class System.Reflection.FieldInfo[] fields, class Mono.CodeGeneration.CodeLiteral[] fieldValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateCustomAttribute(System.Type,System.Type[],Mono.CodeGeneration.CodeLiteral[],System.Reflection.FieldInfo[],Mono.CodeGeneration.CodeLiteral[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCustomAttribute (attributeType As Type, ctorArgTypes As Type(), ctorArgs As CodeLiteral(), fields As FieldInfo(), fieldValues As CodeLiteral()) As CodeCustomAttribute" />
+      <MemberSignature Language="F#" Value="member this.CreateCustomAttribute : Type * Type[] * Mono.CodeGeneration.CodeLiteral[] * System.Reflection.FieldInfo[] * Mono.CodeGeneration.CodeLiteral[] -&gt; Mono.CodeGeneration.CodeCustomAttribute" Usage="codeClass.CreateCustomAttribute (attributeType, ctorArgTypes, ctorArgs, fields, fieldValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeCustomAttribute ^ CreateCustomAttribute(Type ^ attributeType, cli::array &lt;Type ^&gt; ^ ctorArgTypes, cli::array &lt;Mono::CodeGeneration::CodeLiteral ^&gt; ^ ctorArgs, cli::array &lt;System::Reflection::FieldInfo ^&gt; ^ fields, cli::array &lt;Mono::CodeGeneration::CodeLiteral ^&gt; ^ fieldValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -219,6 +243,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeCustomAttribute CreateCustomAttribute (Type attributeType, Type[] ctorArgTypes, object[] ctorArgs, string[] namedArgFieldNames, object[] namedArgValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeCustomAttribute CreateCustomAttribute(class System.Type attributeType, class System.Type[] ctorArgTypes, object[] ctorArgs, string[] namedArgFieldNames, object[] namedArgValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateCustomAttribute(System.Type,System.Type[],System.Object[],System.String[],System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCustomAttribute (attributeType As Type, ctorArgTypes As Type(), ctorArgs As Object(), namedArgFieldNames As String(), namedArgValues As Object()) As CodeCustomAttribute" />
+      <MemberSignature Language="F#" Value="member this.CreateCustomAttribute : Type * Type[] * obj[] * string[] * obj[] -&gt; Mono.CodeGeneration.CodeCustomAttribute" Usage="codeClass.CreateCustomAttribute (attributeType, ctorArgTypes, ctorArgs, namedArgFieldNames, namedArgValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeCustomAttribute ^ CreateCustomAttribute(Type ^ attributeType, cli::array &lt;Type ^&gt; ^ ctorArgTypes, cli::array &lt;System::Object ^&gt; ^ ctorArgs, cli::array &lt;System::String ^&gt; ^ namedArgFieldNames, cli::array &lt;System::Object ^&gt; ^ namedArgValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -250,6 +277,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateMethod (string name, Type returnType, params Type[] parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod CreateMethod(string name, class System.Type returnType, class System.Type[] parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateMethod(System.String,System.Type,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateMethod (name As String, returnType As Type, ParamArray parameterTypes As Type()) As CodeMethod" />
+      <MemberSignature Language="F#" Value="member this.CreateMethod : string * Type * Type[] -&gt; Mono.CodeGeneration.CodeMethod" Usage="codeClass.CreateMethod (name, returnType, parameterTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeMethod ^ CreateMethod(System::String ^ name, Type ^ returnType, ... cli::array &lt;Type ^&gt; ^ parameterTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -283,6 +313,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateMethod (string name, System.Reflection.MethodAttributes attributes, Type returnType, params Type[] parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod CreateMethod(string name, valuetype System.Reflection.MethodAttributes attributes, class System.Type returnType, class System.Type[] parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateMethod(System.String,System.Reflection.MethodAttributes,System.Type,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateMethod (name As String, attributes As MethodAttributes, returnType As Type, ParamArray parameterTypes As Type()) As CodeMethod" />
+      <MemberSignature Language="F#" Value="member this.CreateMethod : string * System.Reflection.MethodAttributes * Type * Type[] -&gt; Mono.CodeGeneration.CodeMethod" Usage="codeClass.CreateMethod (name, attributes, returnType, parameterTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeMethod ^ CreateMethod(System::String ^ name, System::Reflection::MethodAttributes attributes, Type ^ returnType, ... cli::array &lt;Type ^&gt; ^ parameterTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -318,6 +351,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeProperty CreateProperty (string name, Type returnType, params Type[] parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeProperty CreateProperty(string name, class System.Type returnType, class System.Type[] parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateProperty(System.String,System.Type,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateProperty (name As String, returnType As Type, ParamArray parameterTypes As Type()) As CodeProperty" />
+      <MemberSignature Language="F#" Value="member this.CreateProperty : string * Type * Type[] -&gt; Mono.CodeGeneration.CodeProperty" Usage="codeClass.CreateProperty (name, returnType, parameterTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeProperty ^ CreateProperty(System::String ^ name, Type ^ returnType, ... cli::array &lt;Type ^&gt; ^ parameterTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -351,6 +387,8 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeProperty CreateProperty (string name, Type returnType, System.Reflection.MethodAttributes methodAttributes, params Type[] parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeProperty CreateProperty(string name, class System.Type returnType, valuetype System.Reflection.MethodAttributes methodAttributes, class System.Type[] parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateProperty(System.String,System.Type,System.Reflection.MethodAttributes,System.Type[])" />
+      <MemberSignature Language="F#" Value="member this.CreateProperty : string * Type * System.Reflection.MethodAttributes * Type[] -&gt; Mono.CodeGeneration.CodeProperty" Usage="codeClass.CreateProperty (name, returnType, methodAttributes, parameterTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeProperty ^ CreateProperty(System::String ^ name, Type ^ returnType, System::Reflection::MethodAttributes methodAttributes, ... cli::array &lt;Type ^&gt; ^ parameterTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -386,6 +424,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateStaticMethod (string name, Type returnType, params Type[] parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod CreateStaticMethod(string name, class System.Type returnType, class System.Type[] parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateStaticMethod(System.String,System.Type,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateStaticMethod (name As String, returnType As Type, ParamArray parameterTypes As Type()) As CodeMethod" />
+      <MemberSignature Language="F#" Value="member this.CreateStaticMethod : string * Type * Type[] -&gt; Mono.CodeGeneration.CodeMethod" Usage="codeClass.CreateStaticMethod (name, returnType, parameterTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeMethod ^ CreateStaticMethod(System::String ^ name, Type ^ returnType, ... cli::array &lt;Type ^&gt; ^ parameterTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -419,6 +460,9 @@
       <MemberSignature Language="C#" Value="public Type CreateType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Type CreateType() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateType" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateType () As Type" />
+      <MemberSignature Language="F#" Value="member this.CreateType : unit -&gt; Type" Usage="codeClass.CreateType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ CreateType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -439,6 +483,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod CreateVirtualMethod (string name, Type returnType, params Type[] parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod CreateVirtualMethod(string name, class System.Type returnType, class System.Type[] parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.CreateVirtualMethod(System.String,System.Type,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateVirtualMethod (name As String, returnType As Type, ParamArray parameterTypes As Type()) As CodeMethod" />
+      <MemberSignature Language="F#" Value="member this.CreateVirtualMethod : string * Type * Type[] -&gt; Mono.CodeGeneration.CodeMethod" Usage="codeClass.CreateVirtualMethod (name, returnType, parameterTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeMethod ^ CreateVirtualMethod(System::String ^ name, Type ^ returnType, ... cli::array &lt;Type ^&gt; ^ parameterTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -472,6 +519,8 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeFieldReference DefineField (string name, Type type, params Mono.CodeGeneration.CodeCustomAttribute[] customAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeFieldReference DefineField(string name, class System.Type type, class Mono.CodeGeneration.CodeCustomAttribute[] customAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.DefineField(System.String,System.Type,Mono.CodeGeneration.CodeCustomAttribute[])" />
+      <MemberSignature Language="F#" Value="member this.DefineField : string * Type * Mono.CodeGeneration.CodeCustomAttribute[] -&gt; Mono.CodeGeneration.CodeFieldReference" Usage="codeClass.DefineField (name, type, customAttributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeFieldReference ^ DefineField(System::String ^ name, Type ^ type, ... cli::array &lt;Mono::CodeGeneration::CodeCustomAttribute ^&gt; ^ customAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -505,6 +554,8 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeFieldReference DefineField (string name, Type type, System.Reflection.FieldAttributes attrs, Mono.CodeGeneration.CodeExpression initialValue, params Mono.CodeGeneration.CodeCustomAttribute[] customAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeFieldReference DefineField(string name, class System.Type type, valuetype System.Reflection.FieldAttributes attrs, class Mono.CodeGeneration.CodeExpression initialValue, class Mono.CodeGeneration.CodeCustomAttribute[] customAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.DefineField(System.String,System.Type,System.Reflection.FieldAttributes,Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeCustomAttribute[])" />
+      <MemberSignature Language="F#" Value="member this.DefineField : string * Type * System.Reflection.FieldAttributes * Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeCustomAttribute[] -&gt; Mono.CodeGeneration.CodeFieldReference" Usage="codeClass.DefineField (name, type, attrs, initialValue, customAttributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeFieldReference ^ DefineField(System::String ^ name, Type ^ type, System::Reflection::FieldAttributes attrs, Mono::CodeGeneration::CodeExpression ^ initialValue, ... cli::array &lt;Mono::CodeGeneration::CodeCustomAttribute ^&gt; ^ customAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -542,6 +593,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeFieldReference DefineStaticField (Mono.CodeGeneration.CodeExpression initialValue, params Mono.CodeGeneration.CodeCustomAttribute[] customAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeFieldReference DefineStaticField(class Mono.CodeGeneration.CodeExpression initialValue, class Mono.CodeGeneration.CodeCustomAttribute[] customAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.DefineStaticField(Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeCustomAttribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function DefineStaticField (initialValue As CodeExpression, ParamArray customAttributes As CodeCustomAttribute()) As CodeFieldReference" />
+      <MemberSignature Language="F#" Value="member this.DefineStaticField : Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeCustomAttribute[] -&gt; Mono.CodeGeneration.CodeFieldReference" Usage="codeClass.DefineStaticField (initialValue, customAttributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeFieldReference ^ DefineStaticField(Mono::CodeGeneration::CodeExpression ^ initialValue, ... cli::array &lt;Mono::CodeGeneration::CodeCustomAttribute ^&gt; ^ customAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -573,6 +627,8 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeFieldReference DefineStaticField (string name, Type type, Mono.CodeGeneration.CodeExpression initialValue, params Mono.CodeGeneration.CodeCustomAttribute[] customAttributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeFieldReference DefineStaticField(string name, class System.Type type, class Mono.CodeGeneration.CodeExpression initialValue, class Mono.CodeGeneration.CodeCustomAttribute[] customAttributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.DefineStaticField(System.String,System.Type,Mono.CodeGeneration.CodeExpression,Mono.CodeGeneration.CodeCustomAttribute[])" />
+      <MemberSignature Language="F#" Value="member this.DefineStaticField : string * Type * Mono.CodeGeneration.CodeExpression * Mono.CodeGeneration.CodeCustomAttribute[] -&gt; Mono.CodeGeneration.CodeFieldReference" Usage="codeClass.DefineStaticField (name, type, initialValue, customAttributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeFieldReference ^ DefineStaticField(System::String ^ name, Type ^ type, Mono::CodeGeneration::CodeExpression ^ initialValue, ... cli::array &lt;Mono::CodeGeneration::CodeCustomAttribute ^&gt; ^ customAttributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -608,6 +664,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod GetDefaultConstructor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod GetDefaultConstructor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.GetDefaultConstructor" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDefaultConstructor () As CodeMethod" />
+      <MemberSignature Language="F#" Value="member this.GetDefaultConstructor : unit -&gt; Mono.CodeGeneration.CodeMethod" Usage="codeClass.GetDefaultConstructor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeMethod ^ GetDefaultConstructor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -628,6 +687,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod GetStaticConstructor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod GetStaticConstructor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.GetStaticConstructor" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStaticConstructor () As CodeMethod" />
+      <MemberSignature Language="F#" Value="member this.GetStaticConstructor : unit -&gt; Mono.CodeGeneration.CodeMethod" Usage="codeClass.GetStaticConstructor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeMethod ^ GetStaticConstructor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -648,6 +710,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod ImplementMethod (System.Reflection.MethodInfo basem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod ImplementMethod(class System.Reflection.MethodInfo basem) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.ImplementMethod(System.Reflection.MethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImplementMethod (basem As MethodInfo) As CodeMethod" />
+      <MemberSignature Language="F#" Value="member this.ImplementMethod : System.Reflection.MethodInfo -&gt; Mono.CodeGeneration.CodeMethod" Usage="codeClass.ImplementMethod basem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeMethod ^ ImplementMethod(System::Reflection::MethodInfo ^ basem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -671,6 +736,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod ImplementMethod (Type baseType, System.Reflection.MethodInfo basem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod ImplementMethod(class System.Type baseType, class System.Reflection.MethodInfo basem) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.ImplementMethod(System.Type,System.Reflection.MethodInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImplementMethod (baseType As Type, basem As MethodInfo) As CodeMethod" />
+      <MemberSignature Language="F#" Value="member this.ImplementMethod : Type * System.Reflection.MethodInfo -&gt; Mono.CodeGeneration.CodeMethod" Usage="codeClass.ImplementMethod (baseType, basem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeMethod ^ ImplementMethod(Type ^ baseType, System::Reflection::MethodInfo ^ basem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -696,6 +764,9 @@
       <MemberSignature Language="C#" Value="public Mono.CodeGeneration.CodeMethod ImplementMethod (Type baseType, string methodName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Mono.CodeGeneration.CodeMethod ImplementMethod(class System.Type baseType, string methodName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.ImplementMethod(System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ImplementMethod (baseType As Type, methodName As String) As CodeMethod" />
+      <MemberSignature Language="F#" Value="member this.ImplementMethod : Type * string -&gt; Mono.CodeGeneration.CodeMethod" Usage="codeClass.ImplementMethod (baseType, methodName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Mono::CodeGeneration::CodeMethod ^ ImplementMethod(Type ^ baseType, System::String ^ methodName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -721,6 +792,9 @@
       <MemberSignature Language="C#" Value="public string PrintCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string PrintCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.PrintCode" />
+      <MemberSignature Language="VB.NET" Value="Public Function PrintCode () As String" />
+      <MemberSignature Language="F#" Value="member this.PrintCode : unit -&gt; string" Usage="codeClass.PrintCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ PrintCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -741,6 +815,9 @@
       <MemberSignature Language="C#" Value="public void PrintCode (Mono.CodeGeneration.CodeWriter cw);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PrintCode(class Mono.CodeGeneration.CodeWriter cw) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeClass.PrintCode(Mono.CodeGeneration.CodeWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrintCode (cw As CodeWriter)" />
+      <MemberSignature Language="F#" Value="member this.PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeClass.PrintCode cw" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PrintCode(Mono::CodeGeneration::CodeWriter ^ cw);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -763,6 +840,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Emit.TypeBuilder TypeBuilder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Emit.TypeBuilder TypeBuilder" />
       <MemberSignature Language="DocId" Value="P:Mono.CodeGeneration.CodeClass.TypeBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeBuilder As TypeBuilder" />
+      <MemberSignature Language="F#" Value="member this.TypeBuilder : System.Reflection.Emit.TypeBuilder" Usage="Mono.CodeGeneration.CodeClass.TypeBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Emit::TypeBuilder ^ TypeBuilder { System::Reflection::Emit::TypeBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

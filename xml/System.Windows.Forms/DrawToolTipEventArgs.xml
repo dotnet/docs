@@ -1,7 +1,10 @@
-<Type Name="DrawToolTipEventArgs" FullName="System.Windows.Forms.DrawToolTipEventArgs">
+﻿<Type Name="DrawToolTipEventArgs" FullName="System.Windows.Forms.DrawToolTipEventArgs">
   <TypeSignature Language="C#" Value="public class DrawToolTipEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DrawToolTipEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawToolTipEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DrawToolTipEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type DrawToolTipEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DrawToolTipEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="public DrawToolTipEventArgs (System.Drawing.Graphics graphics, System.Windows.Forms.IWin32Window associatedWindow, System.Windows.Forms.Control associatedControl, System.Drawing.Rectangle bounds, string toolTipText, System.Drawing.Color backColor, System.Drawing.Color foreColor, System.Drawing.Font font);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Graphics graphics, class System.Windows.Forms.IWin32Window associatedWindow, class System.Windows.Forms.Control associatedControl, valuetype System.Drawing.Rectangle bounds, string toolTipText, valuetype System.Drawing.Color backColor, valuetype System.Drawing.Color foreColor, class System.Drawing.Font font) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawToolTipEventArgs.#ctor(System.Drawing.Graphics,System.Windows.Forms.IWin32Window,System.Windows.Forms.Control,System.Drawing.Rectangle,System.String,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DrawToolTipEventArgs : System.Drawing.Graphics * System.Windows.Forms.IWin32Window * System.Windows.Forms.Control * System.Drawing.Rectangle * string * System.Drawing.Color * System.Drawing.Color * System.Drawing.Font -&gt; System.Windows.Forms.DrawToolTipEventArgs" Usage="new System.Windows.Forms.DrawToolTipEventArgs (graphics, associatedWindow, associatedControl, bounds, toolTipText, backColor, foreColor, font)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DrawToolTipEventArgs(System::Drawing::Graphics ^ graphics, System::Windows::Forms::IWin32Window ^ associatedWindow, System::Windows::Forms::Control ^ associatedControl, System::Drawing::Rectangle bounds, System::String ^ toolTipText, System::Drawing::Color backColor, System::Drawing::Color foreColor, System::Drawing::Font ^ font);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -87,6 +92,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Control AssociatedControl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control AssociatedControl" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawToolTipEventArgs.AssociatedControl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssociatedControl As Control" />
+      <MemberSignature Language="F#" Value="member this.AssociatedControl : System.Windows.Forms.Control" Usage="System.Windows.Forms.DrawToolTipEventArgs.AssociatedControl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control ^ AssociatedControl { System::Windows::Forms::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -126,6 +134,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.IWin32Window AssociatedWindow { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.IWin32Window AssociatedWindow" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawToolTipEventArgs.AssociatedWindow" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssociatedWindow As IWin32Window" />
+      <MemberSignature Language="F#" Value="member this.AssociatedWindow : System.Windows.Forms.IWin32Window" Usage="System.Windows.Forms.DrawToolTipEventArgs.AssociatedWindow" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::IWin32Window ^ AssociatedWindow { System::Windows::Forms::IWin32Window ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +173,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawToolTipEventArgs.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.DrawToolTipEventArgs.Bounds" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -198,6 +212,9 @@
       <MemberSignature Language="C#" Value="public void DrawBackground ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawBackground() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawToolTipEventArgs.DrawBackground" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DrawBackground ()" />
+      <MemberSignature Language="F#" Value="member this.DrawBackground : unit -&gt; unit" Usage="drawToolTipEventArgs.DrawBackground " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawBackground();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -234,6 +251,9 @@
       <MemberSignature Language="C#" Value="public void DrawBorder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawBorder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawToolTipEventArgs.DrawBorder" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DrawBorder ()" />
+      <MemberSignature Language="F#" Value="member this.DrawBorder : unit -&gt; unit" Usage="drawToolTipEventArgs.DrawBorder " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawBorder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -266,10 +286,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DrawText">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws the text of the <see cref="T:System.Windows.Forms.ToolTip" /> using the system text color and font, and optionally using specific formatting options.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DrawText">
       <MemberSignature Language="C#" Value="public void DrawText ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawText() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawToolTipEventArgs.DrawText" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DrawText ()" />
+      <MemberSignature Language="F#" Value="member this.DrawText : unit -&gt; unit" Usage="drawToolTipEventArgs.DrawText " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -311,6 +343,9 @@
       <MemberSignature Language="C#" Value="public void DrawText (System.Windows.Forms.TextFormatFlags flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DrawText(valuetype System.Windows.Forms.TextFormatFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DrawToolTipEventArgs.DrawText(System.Windows.Forms.TextFormatFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DrawText (flags As TextFormatFlags)" />
+      <MemberSignature Language="F#" Value="member this.DrawText : System.Windows.Forms.TextFormatFlags -&gt; unit" Usage="drawToolTipEventArgs.DrawText flags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DrawText(System::Windows::Forms::TextFormatFlags flags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -342,6 +377,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawToolTipEventArgs.Font" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Font As Font" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font" Usage="System.Windows.Forms.DrawToolTipEventArgs.Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -381,6 +419,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawToolTipEventArgs.Graphics" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Graphics As Graphics" />
+      <MemberSignature Language="F#" Value="member this.Graphics : System.Drawing.Graphics" Usage="System.Windows.Forms.DrawToolTipEventArgs.Graphics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -421,6 +462,9 @@
       <MemberSignature Language="C#" Value="public string ToolTipText { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTipText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DrawToolTipEventArgs.ToolTipText" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToolTipText As String" />
+      <MemberSignature Language="F#" Value="member this.ToolTipText : string" Usage="System.Windows.Forms.DrawToolTipEventArgs.ToolTipText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipText { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -457,14 +501,5 @@
         <altmember cref="M:System.Drawing.Graphics.DrawString(System.String,System.Drawing.Font,System.Drawing.Brush,System.Single,System.Single)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="DrawText">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Draws the text of the <see cref="T:System.Windows.Forms.ToolTip" /> using the system text color and font, and optionally using specific formatting options.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

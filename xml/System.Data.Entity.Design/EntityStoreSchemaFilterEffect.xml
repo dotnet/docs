@@ -1,7 +1,10 @@
-<Type Name="EntityStoreSchemaFilterEffect" FullName="System.Data.Entity.Design.EntityStoreSchemaFilterEffect">
+﻿<Type Name="EntityStoreSchemaFilterEffect" FullName="System.Data.Entity.Design.EntityStoreSchemaFilterEffect">
   <TypeSignature Language="C#" Value="public enum EntityStoreSchemaFilterEffect" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EntityStoreSchemaFilterEffect extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Entity.Design.EntityStoreSchemaFilterEffect" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EntityStoreSchemaFilterEffect" />
+  <TypeSignature Language="F#" Value="type EntityStoreSchemaFilterEffect = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EntityStoreSchemaFilterEffect" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Allow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Entity.Design.EntityStoreSchemaFilterEffect Allow = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityStoreSchemaFilterEffect.Allow" />
+      <MemberSignature Language="VB.NET" Value="Allow" />
+      <MemberSignature Language="F#" Value="Allow = 0" Usage="System.Data.Entity.Design.EntityStoreSchemaFilterEffect.Allow" />
+      <MemberSignature Language="C++ CLI" Value="Allow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Entity.Design.EntityStoreSchemaFilterEffect</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Allow the entries that match the specified pattern.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Exclude" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Entity.Design.EntityStoreSchemaFilterEffect Exclude = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Entity.Design.EntityStoreSchemaFilterEffect.Exclude" />
+      <MemberSignature Language="VB.NET" Value="Exclude" />
+      <MemberSignature Language="F#" Value="Exclude = 1" Usage="System.Data.Entity.Design.EntityStoreSchemaFilterEffect.Exclude" />
+      <MemberSignature Language="C++ CLI" Value="Exclude" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity.Design</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Entity.Design.EntityStoreSchemaFilterEffect</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Exclude the entries that match the specified pattern.</summary>
       </Docs>

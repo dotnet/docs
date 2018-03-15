@@ -1,7 +1,10 @@
-<Type Name="GeoPositionAccuracy" FullName="System.Device.Location.GeoPositionAccuracy">
+﻿<Type Name="GeoPositionAccuracy" FullName="System.Device.Location.GeoPositionAccuracy">
   <TypeSignature Language="C#" Value="public enum GeoPositionAccuracy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GeoPositionAccuracy extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Device.Location.GeoPositionAccuracy" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GeoPositionAccuracy" />
+  <TypeSignature Language="F#" Value="type GeoPositionAccuracy = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class GeoPositionAccuracy" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Device.Location.GeoPositionAccuracy Default = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionAccuracy.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 0" Usage="System.Device.Location.GeoPositionAccuracy.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -34,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Device.Location.GeoPositionAccuracy</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Optimize for power, performance, and other cost considerations.</summary>
       </Docs>
@@ -42,6 +49,9 @@
       <MemberSignature Language="C#" Value="High" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Device.Location.GeoPositionAccuracy High = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionAccuracy.High" />
+      <MemberSignature Language="VB.NET" Value="High" />
+      <MemberSignature Language="F#" Value="High = 1" Usage="System.Device.Location.GeoPositionAccuracy.High" />
+      <MemberSignature Language="C++ CLI" Value="High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -50,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Device.Location.GeoPositionAccuracy</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Deliver the most accurate report possible. This includes using services that might charge money, or consuming higher levels of battery power or connection bandwidth.</summary>
       </Docs>

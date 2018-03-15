@@ -1,7 +1,10 @@
-<Type Name="Exec" FullName="Microsoft.Build.Tasks.Exec">
+﻿<Type Name="Exec" FullName="Microsoft.Build.Tasks.Exec">
   <TypeSignature Language="C#" Value="public class Exec : Microsoft.Build.Tasks.ToolTaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Exec extends Microsoft.Build.Tasks.ToolTaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Exec" />
+  <TypeSignature Language="VB.NET" Value="Public Class Exec&#xA;Inherits ToolTaskExtension" />
+  <TypeSignature Language="F#" Value="type Exec = class&#xA;    inherit ToolTaskExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Exec : Microsoft::Build::Tasks::ToolTaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public Exec ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Exec.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Exec();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -33,9 +38,12 @@
       </Docs>
     </Member>
     <Member MemberName="AddCommandLineCommands">
-      <MemberSignature Language="C#" Value="protected override void AddCommandLineCommands (Microsoft.Build.Tasks.CommandLineBuilderExtension commandLine);" />
+      <MemberSignature Language="C#" Value="protected internal override void AddCommandLineCommands (Microsoft.Build.Tasks.CommandLineBuilderExtension commandLine);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void AddCommandLineCommands(class Microsoft.Build.Tasks.CommandLineBuilderExtension commandLine) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Exec.AddCommandLineCommands(Microsoft.Build.Tasks.CommandLineBuilderExtension)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub AddCommandLineCommands (commandLine As CommandLineBuilderExtension)" />
+      <MemberSignature Language="F#" Value="override this.AddCommandLineCommands : Microsoft.Build.Tasks.CommandLineBuilderExtension -&gt; unit" Usage="exec.AddCommandLineCommands commandLine" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void AddCommandLineCommands(Microsoft::Build::Tasks::CommandLineBuilderExtension ^ commandLine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -58,6 +66,9 @@
       <MemberSignature Language="C#" Value="public string Command { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Command" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.Command" />
+      <MemberSignature Language="VB.NET" Value="Public Property Command As String" />
+      <MemberSignature Language="F#" Value="member this.Command : string with get, set" Usage="Microsoft.Build.Tasks.Exec.Command" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Command { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -89,6 +100,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ConsoleOutput { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ConsoleOutput" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.ConsoleOutput" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConsoleOutput As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.ConsoleOutput : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Exec.ConsoleOutput" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ConsoleOutput { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -115,6 +129,9 @@
       <MemberSignature Language="C#" Value="public bool ConsoleToMSBuild { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ConsoleToMSBuild" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.ConsoleToMSBuild" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConsoleToMSBuild As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ConsoleToMSBuild : bool with get, set" Usage="Microsoft.Build.Tasks.Exec.ConsoleToMSBuild" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConsoleToMSBuild { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -134,6 +151,9 @@
       <MemberSignature Language="C#" Value="public string CustomErrorRegularExpression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CustomErrorRegularExpression" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.CustomErrorRegularExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomErrorRegularExpression As String" />
+      <MemberSignature Language="F#" Value="member this.CustomErrorRegularExpression : string with get, set" Usage="Microsoft.Build.Tasks.Exec.CustomErrorRegularExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomErrorRegularExpression { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -160,6 +180,9 @@
       <MemberSignature Language="C#" Value="public string CustomWarningRegularExpression { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CustomWarningRegularExpression" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.CustomWarningRegularExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomWarningRegularExpression As String" />
+      <MemberSignature Language="F#" Value="member this.CustomWarningRegularExpression : string with get, set" Usage="Microsoft.Build.Tasks.Exec.CustomWarningRegularExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CustomWarningRegularExpression { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -186,6 +209,9 @@
       <MemberSignature Language="C#" Value="protected override int ExecuteTool (string pathToTool, string responseFileCommands, string commandLineCommands);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance int32 ExecuteTool(string pathToTool, string responseFileCommands, string commandLineCommands) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Exec.ExecuteTool(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteTool (pathToTool As String, responseFileCommands As String, commandLineCommands As String) As Integer" />
+      <MemberSignature Language="F#" Value="override this.ExecuteTool : string * string * string -&gt; int" Usage="exec.ExecuteTool (pathToTool, responseFileCommands, commandLineCommands)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override int ExecuteTool(System::String ^ pathToTool, System::String ^ responseFileCommands, System::String ^ commandLineCommands);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -220,6 +246,9 @@
       <MemberSignature Language="C#" Value="protected override string GenerateFullPathToTool ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GenerateFullPathToTool() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Exec.GenerateFullPathToTool" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GenerateFullPathToTool () As String" />
+      <MemberSignature Language="F#" Value="override this.GenerateFullPathToTool : unit -&gt; string" Usage="exec.GenerateFullPathToTool " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GenerateFullPathToTool();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -240,6 +269,9 @@
       <MemberSignature Language="C#" Value="protected override string GetWorkingDirectory ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetWorkingDirectory() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Exec.GetWorkingDirectory" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetWorkingDirectory () As String" />
+      <MemberSignature Language="F#" Value="override this.GetWorkingDirectory : unit -&gt; string" Usage="exec.GetWorkingDirectory " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetWorkingDirectory();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -267,6 +299,9 @@
       <MemberSignature Language="C#" Value="protected override bool HandleTaskExecutionErrors ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool HandleTaskExecutionErrors() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Exec.HandleTaskExecutionErrors" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function HandleTaskExecutionErrors () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.HandleTaskExecutionErrors : unit -&gt; bool" Usage="exec.HandleTaskExecutionErrors " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool HandleTaskExecutionErrors();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -295,6 +330,9 @@
       <MemberSignature Language="C#" Value="public bool IgnoreExitCode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreExitCode" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.IgnoreExitCode" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreExitCode As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IgnoreExitCode : bool with get, set" Usage="Microsoft.Build.Tasks.Exec.IgnoreExitCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreExitCode { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -315,6 +353,9 @@
       <MemberSignature Language="C#" Value="public bool IgnoreStandardErrorWarningFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreStandardErrorWarningFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.IgnoreStandardErrorWarningFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreStandardErrorWarningFormat As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IgnoreStandardErrorWarningFormat : bool with get, set" Usage="Microsoft.Build.Tasks.Exec.IgnoreStandardErrorWarningFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreStandardErrorWarningFormat { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -342,6 +383,8 @@
       <MemberSignature Language="C#" Value="protected override void LogEventsFromTextOutput (string singleLine, Microsoft.Build.Framework.MessageImportance messageImportance);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LogEventsFromTextOutput(string singleLine, valuetype Microsoft.Build.Framework.MessageImportance messageImportance) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Exec.LogEventsFromTextOutput(System.String,Microsoft.Build.Framework.MessageImportance)" />
+      <MemberSignature Language="F#" Value="override this.LogEventsFromTextOutput : string * Microsoft.Build.Framework.MessageImportance -&gt; unit" Usage="exec.LogEventsFromTextOutput (singleLine, messageImportance)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LogEventsFromTextOutput(System::String ^ singleLine, Microsoft::Build::Framework::MessageImportance messageImportance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -366,6 +409,9 @@
       <MemberSignature Language="C#" Value="protected override void LogPathToTool (string toolName, string pathToTool);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LogPathToTool(string toolName, string pathToTool) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Exec.LogPathToTool(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LogPathToTool (toolName As String, pathToTool As String)" />
+      <MemberSignature Language="F#" Value="override this.LogPathToTool : string * string -&gt; unit" Usage="exec.LogPathToTool (toolName, pathToTool)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LogPathToTool(System::String ^ toolName, System::String ^ pathToTool);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -390,6 +436,9 @@
       <MemberSignature Language="C#" Value="protected override void LogToolCommand (string message);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LogToolCommand(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Exec.LogToolCommand(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LogToolCommand (message As String)" />
+      <MemberSignature Language="F#" Value="override this.LogToolCommand : string -&gt; unit" Usage="exec.LogToolCommand message" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LogToolCommand(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -412,6 +461,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Outputs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Outputs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.Outputs" />
+      <MemberSignature Language="VB.NET" Value="Public Property Outputs As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.Outputs : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Exec.Outputs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ Outputs { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -443,6 +495,9 @@
       <MemberSignature Language="C#" Value="protected override System.Text.Encoding StandardErrorEncoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding StandardErrorEncoding" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.StandardErrorEncoding" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property StandardErrorEncoding As Encoding" />
+      <MemberSignature Language="F#" Value="member this.StandardErrorEncoding : System.Text.Encoding" Usage="Microsoft.Build.Tasks.Exec.StandardErrorEncoding" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Text::Encoding ^ StandardErrorEncoding { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -462,6 +517,9 @@
       <MemberSignature Language="C#" Value="protected override Microsoft.Build.Framework.MessageImportance StandardErrorLoggingImportance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Framework.MessageImportance StandardErrorLoggingImportance" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.StandardErrorLoggingImportance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property StandardErrorLoggingImportance As MessageImportance" />
+      <MemberSignature Language="F#" Value="member this.StandardErrorLoggingImportance : Microsoft.Build.Framework.MessageImportance" Usage="Microsoft.Build.Tasks.Exec.StandardErrorLoggingImportance" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Microsoft::Build::Framework::MessageImportance StandardErrorLoggingImportance { Microsoft::Build::Framework::MessageImportance get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -481,6 +539,9 @@
       <MemberSignature Language="C#" Value="protected override System.Text.Encoding StandardOutputEncoding { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.Encoding StandardOutputEncoding" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.StandardOutputEncoding" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property StandardOutputEncoding As Encoding" />
+      <MemberSignature Language="F#" Value="member this.StandardOutputEncoding : System.Text.Encoding" Usage="Microsoft.Build.Tasks.Exec.StandardOutputEncoding" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Text::Encoding ^ StandardOutputEncoding { System::Text::Encoding ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -500,6 +561,9 @@
       <MemberSignature Language="C#" Value="protected override Microsoft.Build.Framework.MessageImportance StandardOutputLoggingImportance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Framework.MessageImportance StandardOutputLoggingImportance" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.StandardOutputLoggingImportance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property StandardOutputLoggingImportance As MessageImportance" />
+      <MemberSignature Language="F#" Value="member this.StandardOutputLoggingImportance : Microsoft.Build.Framework.MessageImportance" Usage="Microsoft.Build.Tasks.Exec.StandardOutputLoggingImportance" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Microsoft::Build::Framework::MessageImportance StandardOutputLoggingImportance { Microsoft::Build::Framework::MessageImportance get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -519,6 +583,9 @@
       <MemberSignature Language="C#" Value="public string StdErrEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StdErrEncoding" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.StdErrEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property StdErrEncoding As String" />
+      <MemberSignature Language="F#" Value="member this.StdErrEncoding : string with get, set" Usage="Microsoft.Build.Tasks.Exec.StdErrEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StdErrEncoding { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -543,6 +610,9 @@
       <MemberSignature Language="C#" Value="public string StdOutEncoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StdOutEncoding" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.StdOutEncoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property StdOutEncoding As String" />
+      <MemberSignature Language="F#" Value="member this.StdOutEncoding : string with get, set" Usage="Microsoft.Build.Tasks.Exec.StdOutEncoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StdOutEncoding { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -567,6 +637,9 @@
       <MemberSignature Language="C#" Value="protected override string ToolName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.ToolName" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ToolName As String" />
+      <MemberSignature Language="F#" Value="member this.ToolName : string" Usage="Microsoft.Build.Tasks.Exec.ToolName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ ToolName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -586,6 +659,9 @@
       <MemberSignature Language="C#" Value="protected override bool ValidateParameters ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ValidateParameters() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Exec.ValidateParameters" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ValidateParameters () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ValidateParameters : unit -&gt; bool" Usage="exec.ValidateParameters " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ValidateParameters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -607,6 +683,9 @@
       <MemberSignature Language="C#" Value="public string WorkingDirectory { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string WorkingDirectory" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Exec.WorkingDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public Property WorkingDirectory As String" />
+      <MemberSignature Language="F#" Value="member this.WorkingDirectory : string with get, set" Usage="Microsoft.Build.Tasks.Exec.WorkingDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WorkingDirectory { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

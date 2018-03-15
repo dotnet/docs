@@ -1,7 +1,10 @@
-<Type Name="ProtectedData" FullName="System.Security.Cryptography.ProtectedData">
+﻿<Type Name="ProtectedData" FullName="System.Security.Cryptography.ProtectedData">
   <TypeSignature Language="C#" Value="public sealed class ProtectedData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProtectedData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ProtectedData" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProtectedData" />
+  <TypeSignature Language="F#" Value="type ProtectedData = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProtectedData sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +48,9 @@
       <MemberSignature Language="C#" Value="public static byte[] Protect (byte[] userData, byte[] optionalEntropy, System.Security.Cryptography.DataProtectionScope scope);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] Protect(unsigned int8[] userData, unsigned int8[] optionalEntropy, valuetype System.Security.Cryptography.DataProtectionScope scope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ProtectedData.Protect(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Protect (userData As Byte(), optionalEntropy As Byte(), scope As DataProtectionScope) As Byte()" />
+      <MemberSignature Language="F#" Value="static member Protect : byte[] * byte[] * System.Security.Cryptography.DataProtectionScope -&gt; byte[]" Usage="System.Security.Cryptography.ProtectedData.Protect (userData, optionalEntropy, scope)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ Protect(cli::array &lt;System::Byte&gt; ^ userData, cli::array &lt;System::Byte&gt; ^ optionalEntropy, System::Security::Cryptography::DataProtectionScope scope);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>
@@ -101,6 +107,9 @@
       <MemberSignature Language="C#" Value="public static byte[] Unprotect (byte[] encryptedData, byte[] optionalEntropy, System.Security.Cryptography.DataProtectionScope scope);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig unsigned int8[] Unprotect(unsigned int8[] encryptedData, unsigned int8[] optionalEntropy, valuetype System.Security.Cryptography.DataProtectionScope scope) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ProtectedData.Unprotect(System.Byte[],System.Byte[],System.Security.Cryptography.DataProtectionScope)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Unprotect (encryptedData As Byte(), optionalEntropy As Byte(), scope As DataProtectionScope) As Byte()" />
+      <MemberSignature Language="F#" Value="static member Unprotect : byte[] * byte[] * System.Security.Cryptography.DataProtectionScope -&gt; byte[]" Usage="System.Security.Cryptography.ProtectedData.Unprotect (encryptedData, optionalEntropy, scope)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Byte&gt; ^ Unprotect(cli::array &lt;System::Byte&gt; ^ encryptedData, cli::array &lt;System::Byte&gt; ^ optionalEntropy, System::Security::Cryptography::DataProtectionScope scope);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.ProtectedData</AssemblyName>

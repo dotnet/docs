@@ -1,7 +1,10 @@
-<Type Name="Separator" FullName="System.Windows.Controls.Separator">
+﻿<Type Name="Separator" FullName="System.Windows.Controls.Separator">
   <TypeSignature Language="C#" Value="public class Separator : System.Windows.Controls.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi Separator extends System.Windows.Controls.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Separator" />
+  <TypeSignature Language="VB.NET" Value="Public Class Separator&#xA;Inherits Control" />
+  <TypeSignature Language="F#" Value="type Separator = class&#xA;    inherit Control" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Separator : System::Windows::Controls::Control" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="public Separator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Separator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Separator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +60,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Separator.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="separator.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="IBinarySerialize" FullName="Microsoft.SqlServer.Server.IBinarySerialize">
+﻿<Type Name="IBinarySerialize" FullName="Microsoft.SqlServer.Server.IBinarySerialize">
   <TypeSignature Language="C#" Value="public interface IBinarySerialize" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBinarySerialize" />
   <TypeSignature Language="DocId" Value="T:Microsoft.SqlServer.Server.IBinarySerialize" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBinarySerialize" />
+  <TypeSignature Language="F#" Value="type IBinarySerialize = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IBinarySerialize" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public void Read (System.IO.BinaryReader r);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Read(class System.IO.BinaryReader r) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.IBinarySerialize.Read(System.IO.BinaryReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Read (r As BinaryReader)" />
+      <MemberSignature Language="F#" Value="abstract member Read : System.IO.BinaryReader -&gt; unit" Usage="iBinarySerialize.Read r" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Read(System::IO::BinaryReader ^ r);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -65,6 +71,9 @@
       <MemberSignature Language="C#" Value="public void Write (System.IO.BinaryWriter w);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(class System.IO.BinaryWriter w) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.SqlServer.Server.IBinarySerialize.Write(System.IO.BinaryWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Write (w As BinaryWriter)" />
+      <MemberSignature Language="F#" Value="abstract member Write : System.IO.BinaryWriter -&gt; unit" Usage="iBinarySerialize.Write w" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Write(System::IO::BinaryWriter ^ w);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

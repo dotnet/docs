@@ -1,7 +1,10 @@
-<Type Name="OutputColor" FullName="System.Printing.OutputColor">
+﻿<Type Name="OutputColor" FullName="System.Printing.OutputColor">
   <TypeSignature Language="C#" Value="public enum OutputColor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutputColor extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.OutputColor" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OutputColor" />
+  <TypeSignature Language="F#" Value="type OutputColor = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class OutputColor" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +48,9 @@
       <MemberSignature Language="C#" Value="Color" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputColor Color = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputColor.Color" />
+      <MemberSignature Language="VB.NET" Value="Color" />
+      <MemberSignature Language="F#" Value="Color = 1" Usage="System.Printing.OutputColor.Color" />
+      <MemberSignature Language="C++ CLI" Value="Color" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -53,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.OutputColor</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Output that prints in color.</summary>
       </Docs>
@@ -61,6 +68,9 @@
       <MemberSignature Language="C#" Value="Grayscale" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputColor Grayscale = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputColor.Grayscale" />
+      <MemberSignature Language="VB.NET" Value="Grayscale" />
+      <MemberSignature Language="F#" Value="Grayscale = 2" Usage="System.Printing.OutputColor.Grayscale" />
+      <MemberSignature Language="C++ CLI" Value="Grayscale" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.OutputColor</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Output that prints in a grayscale.</summary>
       </Docs>
@@ -77,6 +88,9 @@
       <MemberSignature Language="C#" Value="Monochrome" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputColor Monochrome = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputColor.Monochrome" />
+      <MemberSignature Language="VB.NET" Value="Monochrome" />
+      <MemberSignature Language="F#" Value="Monochrome = 3" Usage="System.Printing.OutputColor.Monochrome" />
+      <MemberSignature Language="C++ CLI" Value="Monochrome" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -85,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.OutputColor</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Output that prints in a single color and with the same degree of intensity.</summary>
       </Docs>
@@ -93,6 +108,9 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputColor Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputColor.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.OutputColor.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -101,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.OutputColor</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
       </Docs>

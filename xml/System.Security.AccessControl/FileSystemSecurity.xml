@@ -1,7 +1,10 @@
-<Type Name="FileSystemSecurity" FullName="System.Security.AccessControl.FileSystemSecurity">
+﻿<Type Name="FileSystemSecurity" FullName="System.Security.AccessControl.FileSystemSecurity">
   <TypeSignature Language="C#" Value="public abstract class FileSystemSecurity : System.Security.AccessControl.NativeObjectSecurity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FileSystemSecurity extends System.Security.AccessControl.NativeObjectSecurity" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.FileSystemSecurity" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class FileSystemSecurity&#xA;Inherits NativeObjectSecurity" />
+  <TypeSignature Language="F#" Value="type FileSystemSecurity = class&#xA;    inherit NativeObjectSecurity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileSystemSecurity abstract : System::Security::AccessControl::NativeObjectSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +54,9 @@
       <MemberSignature Language="C#" Value="public override Type AccessRightType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AccessRightType" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.FileSystemSecurity.AccessRightType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRightType As Type" />
+      <MemberSignature Language="F#" Value="member this.AccessRightType : Type" Usage="System.Security.AccessControl.FileSystemSecurity.AccessRightType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRightType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -82,6 +88,8 @@
       <MemberSignature Language="C#" Value="public override sealed System.Security.AccessControl.AccessRule AccessRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AccessControlType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AccessRule AccessRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AccessControlType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)" />
+      <MemberSignature Language="F#" Value="override this.AccessRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AccessControlType -&gt; System.Security.AccessControl.AccessRule" Usage="fileSystemSecurity.AccessRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AccessRule ^ AccessRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AccessControlType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -137,6 +145,9 @@
       <MemberSignature Language="C#" Value="public override Type AccessRuleType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AccessRuleType" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.FileSystemSecurity.AccessRuleType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AccessRuleType As Type" />
+      <MemberSignature Language="F#" Value="member this.AccessRuleType : Type" Usage="System.Security.AccessControl.FileSystemSecurity.AccessRuleType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AccessRuleType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -168,6 +179,9 @@
       <MemberSignature Language="C#" Value="public void AddAccessRule (System.Security.AccessControl.FileSystemAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAccessRule(class System.Security.AccessControl.FileSystemAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.AddAccessRule(System.Security.AccessControl.FileSystemAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAccessRule (rule As FileSystemAccessRule)" />
+      <MemberSignature Language="F#" Value="override this.AddAccessRule : System.Security.AccessControl.FileSystemAccessRule -&gt; unit" Usage="fileSystemSecurity.AddAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAccessRule(System::Security::AccessControl::FileSystemAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -220,6 +234,9 @@
       <MemberSignature Language="C#" Value="public void AddAuditRule (System.Security.AccessControl.FileSystemAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAuditRule(class System.Security.AccessControl.FileSystemAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.AddAuditRule(System.Security.AccessControl.FileSystemAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAuditRule (rule As FileSystemAuditRule)" />
+      <MemberSignature Language="F#" Value="override this.AddAuditRule : System.Security.AccessControl.FileSystemAuditRule -&gt; unit" Usage="fileSystemSecurity.AddAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAuditRule(System::Security::AccessControl::FileSystemAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -265,6 +282,8 @@
       <MemberSignature Language="C#" Value="public override sealed System.Security.AccessControl.AuditRule AuditRuleFactory (System.Security.Principal.IdentityReference identityReference, int accessMask, bool isInherited, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.AuditFlags flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.AccessControl.AuditRule AuditRuleFactory(class System.Security.Principal.IdentityReference identityReference, int32 accessMask, bool isInherited, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.AuditFlags flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.AuditRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AuditFlags)" />
+      <MemberSignature Language="F#" Value="override this.AuditRuleFactory : System.Security.Principal.IdentityReference * int * bool * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.AuditFlags -&gt; System.Security.AccessControl.AuditRule" Usage="fileSystemSecurity.AuditRuleFactory (identityReference, accessMask, isInherited, inheritanceFlags, propagationFlags, flags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::AccessControl::AuditRule ^ AuditRuleFactory(System::Security::Principal::IdentityReference ^ identityReference, int accessMask, bool isInherited, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::AuditFlags flags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -320,6 +339,9 @@
       <MemberSignature Language="C#" Value="public override Type AuditRuleType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type AuditRuleType" />
       <MemberSignature Language="DocId" Value="P:System.Security.AccessControl.FileSystemSecurity.AuditRuleType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property AuditRuleType As Type" />
+      <MemberSignature Language="F#" Value="member this.AuditRuleType : Type" Usage="System.Security.AccessControl.FileSystemSecurity.AuditRuleType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ AuditRuleType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -351,6 +373,9 @@
       <MemberSignature Language="C#" Value="public bool RemoveAccessRule (System.Security.AccessControl.FileSystemAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAccessRule(class System.Security.AccessControl.FileSystemAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRule(System.Security.AccessControl.FileSystemAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveAccessRule (rule As FileSystemAccessRule) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.RemoveAccessRule : System.Security.AccessControl.FileSystemAccessRule -&gt; bool" Usage="fileSystemSecurity.RemoveAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAccessRule(System::Security::AccessControl::FileSystemAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -403,6 +428,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAccessRuleAll (System.Security.AccessControl.FileSystemAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessRuleAll(class System.Security.AccessControl.FileSystemAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRuleAll(System.Security.AccessControl.FileSystemAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccessRuleAll (rule As FileSystemAccessRule)" />
+      <MemberSignature Language="F#" Value="override this.RemoveAccessRuleAll : System.Security.AccessControl.FileSystemAccessRule -&gt; unit" Usage="fileSystemSecurity.RemoveAccessRuleAll rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleAll(System::Security::AccessControl::FileSystemAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -444,6 +472,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAccessRuleSpecific (System.Security.AccessControl.FileSystemAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessRuleSpecific(class System.Security.AccessControl.FileSystemAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.FileSystemAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccessRuleSpecific (rule As FileSystemAccessRule)" />
+      <MemberSignature Language="F#" Value="override this.RemoveAccessRuleSpecific : System.Security.AccessControl.FileSystemAccessRule -&gt; unit" Usage="fileSystemSecurity.RemoveAccessRuleSpecific rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessRuleSpecific(System::Security::AccessControl::FileSystemAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -485,6 +516,9 @@
       <MemberSignature Language="C#" Value="public bool RemoveAuditRule (System.Security.AccessControl.FileSystemAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAuditRule(class System.Security.AccessControl.FileSystemAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRule(System.Security.AccessControl.FileSystemAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveAuditRule (rule As FileSystemAuditRule) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.RemoveAuditRule : System.Security.AccessControl.FileSystemAuditRule -&gt; bool" Usage="fileSystemSecurity.RemoveAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAuditRule(System::Security::AccessControl::FileSystemAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -530,6 +564,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAuditRuleAll (System.Security.AccessControl.FileSystemAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditRuleAll(class System.Security.AccessControl.FileSystemAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRuleAll(System.Security.AccessControl.FileSystemAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditRuleAll (rule As FileSystemAuditRule)" />
+      <MemberSignature Language="F#" Value="override this.RemoveAuditRuleAll : System.Security.AccessControl.FileSystemAuditRule -&gt; unit" Usage="fileSystemSecurity.RemoveAuditRuleAll rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleAll(System::Security::AccessControl::FileSystemAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -565,6 +602,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAuditRuleSpecific (System.Security.AccessControl.FileSystemAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAuditRuleSpecific(class System.Security.AccessControl.FileSystemAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.FileSystemAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAuditRuleSpecific (rule As FileSystemAuditRule)" />
+      <MemberSignature Language="F#" Value="override this.RemoveAuditRuleSpecific : System.Security.AccessControl.FileSystemAuditRule -&gt; unit" Usage="fileSystemSecurity.RemoveAuditRuleSpecific rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAuditRuleSpecific(System::Security::AccessControl::FileSystemAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -600,6 +640,9 @@
       <MemberSignature Language="C#" Value="public void ResetAccessRule (System.Security.AccessControl.FileSystemAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetAccessRule(class System.Security.AccessControl.FileSystemAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.ResetAccessRule(System.Security.AccessControl.FileSystemAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetAccessRule (rule As FileSystemAccessRule)" />
+      <MemberSignature Language="F#" Value="override this.ResetAccessRule : System.Security.AccessControl.FileSystemAccessRule -&gt; unit" Usage="fileSystemSecurity.ResetAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetAccessRule(System::Security::AccessControl::FileSystemAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -639,6 +682,9 @@
       <MemberSignature Language="C#" Value="public void SetAccessRule (System.Security.AccessControl.FileSystemAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessRule(class System.Security.AccessControl.FileSystemAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.SetAccessRule(System.Security.AccessControl.FileSystemAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAccessRule (rule As FileSystemAccessRule)" />
+      <MemberSignature Language="F#" Value="override this.SetAccessRule : System.Security.AccessControl.FileSystemAccessRule -&gt; unit" Usage="fileSystemSecurity.SetAccessRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessRule(System::Security::AccessControl::FileSystemAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>
@@ -678,6 +724,9 @@
       <MemberSignature Language="C#" Value="public void SetAuditRule (System.Security.AccessControl.FileSystemAuditRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAuditRule(class System.Security.AccessControl.FileSystemAuditRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.FileSystemSecurity.SetAuditRule(System.Security.AccessControl.FileSystemAuditRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAuditRule (rule As FileSystemAuditRule)" />
+      <MemberSignature Language="F#" Value="override this.SetAuditRule : System.Security.AccessControl.FileSystemAuditRule -&gt; unit" Usage="fileSystemSecurity.SetAuditRule rule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAuditRule(System::Security::AccessControl::FileSystemAuditRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.AccessControl</AssemblyName>

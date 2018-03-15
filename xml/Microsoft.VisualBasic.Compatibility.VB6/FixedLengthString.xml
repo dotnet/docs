@@ -1,7 +1,10 @@
-<Type Name="FixedLengthString" FullName="Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString">
+﻿<Type Name="FixedLengthString" FullName="Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString">
   <TypeSignature Language="C#" Value="public class FixedLengthString" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi FixedLengthString extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" />
+  <TypeSignature Language="VB.NET" Value="Public Class FixedLengthString" />
+  <TypeSignature Language="F#" Value="type FixedLengthString = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FixedLengthString" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -51,10 +54,22 @@ End Sub
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FixedLengthString (int MaxChars);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(int32 MaxChars) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (MaxChars As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString : int -&gt; Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" Usage="new Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString MaxChars" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FixedLengthString(int MaxChars);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -101,6 +116,9 @@ End Sub
       <MemberSignature Language="C#" Value="public FixedLengthString (int MaxChars, string InitialValue);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(int32 MaxChars, string InitialValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.#ctor(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (MaxChars As Integer, InitialValue As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString : int * string -&gt; Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" Usage="new Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString (MaxChars, InitialValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FixedLengthString(int MaxChars, System::String ^ InitialValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -152,6 +170,9 @@ End Sub
       <MemberSignature Language="C#" Value="protected int m_nMaxChars;" />
       <MemberSignature Language="ILAsm" Value=".field family int32 m_nMaxChars" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.m_nMaxChars" />
+      <MemberSignature Language="VB.NET" Value="Protected m_nMaxChars As Integer " />
+      <MemberSignature Language="F#" Value="val mutable m_nMaxChars : int" Usage="Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.m_nMaxChars" />
+      <MemberSignature Language="C++ CLI" Value="protected: int m_nMaxChars;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -176,6 +197,9 @@ End Sub
       <MemberSignature Language="C#" Value="protected string m_strValue;" />
       <MemberSignature Language="ILAsm" Value=".field family string m_strValue" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.m_strValue" />
+      <MemberSignature Language="VB.NET" Value="Protected m_strValue As String " />
+      <MemberSignature Language="F#" Value="val mutable m_strValue : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.m_strValue" />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ m_strValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -200,6 +224,9 @@ End Sub
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="fixedLengthString.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -248,6 +275,9 @@ End Sub
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -291,14 +321,5 @@ End Sub
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.FixedLengthString" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

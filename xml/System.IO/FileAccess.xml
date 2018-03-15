@@ -1,7 +1,10 @@
-<Type Name="FileAccess" FullName="System.IO.FileAccess">
+﻿<Type Name="FileAccess" FullName="System.IO.FileAccess">
   <TypeSignature Language="C#" Value="public enum FileAccess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FileAccess extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.FileAccess" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FileAccess" />
+  <TypeSignature Language="F#" Value="type FileAccess = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FileAccess" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -61,6 +64,9 @@
       <MemberSignature Language="C#" Value="Read" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAccess Read = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAccess.Read" />
+      <MemberSignature Language="VB.NET" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 1" Usage="System.IO.FileAccess.Read" />
+      <MemberSignature Language="C++ CLI" Value="Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -82,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Read access to the file. Data can be read from the file. Combine with <see langword="Write" /> for read/write access.</summary>
       </Docs>
@@ -90,6 +97,9 @@
       <MemberSignature Language="C#" Value="ReadWrite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAccess ReadWrite = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAccess.ReadWrite" />
+      <MemberSignature Language="VB.NET" Value="ReadWrite" />
+      <MemberSignature Language="F#" Value="ReadWrite = 3" Usage="System.IO.FileAccess.ReadWrite" />
+      <MemberSignature Language="C++ CLI" Value="ReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -111,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Read and write access to the file. Data can be written to and read from the file.</summary>
       </Docs>
@@ -119,6 +130,9 @@
       <MemberSignature Language="C#" Value="Write" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileAccess Write = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileAccess.Write" />
+      <MemberSignature Language="VB.NET" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 2" Usage="System.IO.FileAccess.Write" />
+      <MemberSignature Language="C++ CLI" Value="Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Primitives</AssemblyName>
@@ -140,6 +154,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Write access to the file. Data can be written to the file. Combine with <see langword="Read" /> for read/write access.</summary>
       </Docs>

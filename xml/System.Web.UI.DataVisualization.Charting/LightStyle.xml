@@ -1,7 +1,10 @@
-<Type Name="LightStyle" FullName="System.Web.UI.DataVisualization.Charting.LightStyle">
+﻿<Type Name="LightStyle" FullName="System.Web.UI.DataVisualization.Charting.LightStyle">
   <TypeSignature Language="C#" Value="public enum LightStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LightStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LightStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LightStyle" />
+  <TypeSignature Language="F#" Value="type LightStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LightStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LightStyle None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LightStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.DataVisualization.Charting.LightStyle.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LightStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No lighting is applied.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Realistic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LightStyle Realistic = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LightStyle.Realistic" />
+      <MemberSignature Language="VB.NET" Value="Realistic" />
+      <MemberSignature Language="F#" Value="Realistic = 2" Usage="System.Web.UI.DataVisualization.Charting.LightStyle.Realistic" />
+      <MemberSignature Language="C++ CLI" Value="Realistic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LightStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A realistic lighting style is applied, where the hue of all chart area elements changes depending on the amount of rotation.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="Simplistic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LightStyle Simplistic = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LightStyle.Simplistic" />
+      <MemberSignature Language="VB.NET" Value="Simplistic" />
+      <MemberSignature Language="F#" Value="Simplistic = 1" Usage="System.Web.UI.DataVisualization.Charting.LightStyle.Simplistic" />
+      <MemberSignature Language="C++ CLI" Value="Simplistic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LightStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A simplistic lighting style is applied, where the hue of all chart area elements is fixed.</summary>
       </Docs>

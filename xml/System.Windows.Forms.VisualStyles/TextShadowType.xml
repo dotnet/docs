@@ -1,7 +1,10 @@
-<Type Name="TextShadowType" FullName="System.Windows.Forms.VisualStyles.TextShadowType">
+﻿<Type Name="TextShadowType" FullName="System.Windows.Forms.VisualStyles.TextShadowType">
   <TypeSignature Language="C#" Value="public enum TextShadowType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextShadowType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.TextShadowType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TextShadowType" />
+  <TypeSignature Language="F#" Value="type TextShadowType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TextShadowType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Continuous" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TextShadowType Continuous = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextShadowType.Continuous" />
+      <MemberSignature Language="VB.NET" Value="Continuous" />
+      <MemberSignature Language="F#" Value="Continuous = 2" Usage="System.Windows.Forms.VisualStyles.TextShadowType.Continuous" />
+      <MemberSignature Language="C++ CLI" Value="Continuous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.TextShadowType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A continuous shadow is drawn.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TextShadowType None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextShadowType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.VisualStyles.TextShadowType.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.TextShadowType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No shadow is drawn.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="Single" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.TextShadowType Single = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.TextShadowType.Single" />
+      <MemberSignature Language="VB.NET" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 1" Usage="System.Windows.Forms.VisualStyles.TextShadowType.Single" />
+      <MemberSignature Language="C++ CLI" Value="Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.TextShadowType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A single shadow is drawn.</summary>
       </Docs>

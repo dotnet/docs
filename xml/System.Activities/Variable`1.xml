@@ -1,7 +1,10 @@
-<Type Name="Variable&lt;T&gt;" FullName="System.Activities.Variable&lt;T&gt;">
+﻿<Type Name="Variable&lt;T&gt;" FullName="System.Activities.Variable&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class Variable&lt;T&gt; : System.Activities.Variable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Variable`1&lt;T&gt; extends System.Activities.Variable" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Variable`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Variable(Of T)&#xA;Inherits Variable" />
+  <TypeSignature Language="F#" Value="type Variable&lt;'T&gt; = class&#xA;    inherit Variable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class Variable sealed : System::Activities::Variable" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,10 +49,21 @@ Activity wf = new Sequence()
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Variable`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Variable ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Variable`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Variable();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -65,6 +79,9 @@ Activity wf = new Sequence()
       <MemberSignature Language="C#" Value="public Variable (System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext,T&gt;&gt; defaultExpression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.Activities.ActivityContext, !T&gt;&gt; defaultExpression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Variable`1.#ctor(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,`0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (defaultExpression As Expression(Of Func(Of ActivityContext, T)))" />
+      <MemberSignature Language="F#" Value="new System.Activities.Variable&lt;'T&gt; : System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext, 'T&gt;&gt; -&gt; System.Activities.Variable&lt;'T&gt;" Usage="new System.Activities.Variable&lt;'T&gt; defaultExpression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Variable(System::Linq::Expressions::Expression&lt;Func&lt;System::Activities::ActivityContext ^, T&gt; ^&gt; ^ defaultExpression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -83,6 +100,9 @@ Activity wf = new Sequence()
       <MemberSignature Language="C#" Value="public Variable (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Variable`1.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Variable&lt;'T&gt; : string -&gt; System.Activities.Variable&lt;'T&gt;" Usage="new System.Activities.Variable&lt;'T&gt; name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Variable(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -101,6 +121,9 @@ Activity wf = new Sequence()
       <MemberSignature Language="C#" Value="public Variable (string name, System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext,T&gt;&gt; defaultExpression);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.Activities.ActivityContext, !T&gt;&gt; defaultExpression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Variable`1.#ctor(System.String,System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,`0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, defaultExpression As Expression(Of Func(Of ActivityContext, T)))" />
+      <MemberSignature Language="F#" Value="new System.Activities.Variable&lt;'T&gt; : string * System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext, 'T&gt;&gt; -&gt; System.Activities.Variable&lt;'T&gt;" Usage="new System.Activities.Variable&lt;'T&gt; (name, defaultExpression)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Variable(System::String ^ name, System::Linq::Expressions::Expression&lt;Func&lt;System::Activities::ActivityContext ^, T&gt; ^&gt; ^ defaultExpression);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -121,6 +144,9 @@ Activity wf = new Sequence()
       <MemberSignature Language="C#" Value="public Variable (string name, T defaultValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, !T defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Variable`1.#ctor(System.String,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, defaultValue As T)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Variable&lt;'T&gt; : string * 'T -&gt; System.Activities.Variable&lt;'T&gt;" Usage="new System.Activities.Variable&lt;'T&gt; (name, defaultValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Variable(System::String ^ name, T defaultValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -141,6 +167,9 @@ Activity wf = new Sequence()
       <MemberSignature Language="C#" Value="public System.Activities.Activity&lt;T&gt; Default { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity`1&lt;!T&gt; Default" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Variable`1.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Property Default As Activity(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Activities.Activity&lt;'T&gt; with get, set" Usage="System.Activities.Variable&lt;'T&gt;.Default" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity&lt;T&gt; ^ Default { System::Activities::Activity&lt;T&gt; ^ get(); void set(System::Activities::Activity&lt;T&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -171,6 +200,9 @@ Activity wf = new Sequence()
       <MemberSignature Language="C#" Value="public T Get (System.Activities.ActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !T Get(class System.Activities.ActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Variable`1.Get(System.Activities.ActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Get (context As ActivityContext) As T" />
+      <MemberSignature Language="F#" Value="override this.Get : System.Activities.ActivityContext -&gt; 'T" Usage="variable.Get context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; T Get(System::Activities::ActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -193,6 +225,9 @@ Activity wf = new Sequence()
       <MemberSignature Language="C#" Value="public System.Activities.Location&lt;T&gt; GetLocation (System.Activities.ActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Location`1&lt;!T&gt; GetLocation(class System.Activities.ActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Variable`1.GetLocation(System.Activities.ActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetLocation (context As ActivityContext) As Location(Of T)" />
+      <MemberSignature Language="F#" Value="override this.GetLocation : System.Activities.ActivityContext -&gt; System.Activities.Location&lt;'T&gt;" Usage="variable.GetLocation context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Location&lt;T&gt; ^ GetLocation(System::Activities::ActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -215,6 +250,9 @@ Activity wf = new Sequence()
       <MemberSignature Language="C#" Value="public void Set (System.Activities.ActivityContext context, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Set(class System.Activities.ActivityContext context, !T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Variable`1.Set(System.Activities.ActivityContext,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Set (context As ActivityContext, value As T)" />
+      <MemberSignature Language="F#" Value="override this.Set : System.Activities.ActivityContext * 'T -&gt; unit" Usage="variable.Set (context, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Set(System::Activities::ActivityContext ^ context, T value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -238,6 +276,9 @@ Activity wf = new Sequence()
       <MemberSignature Language="C#" Value="protected override Type TypeCore { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TypeCore" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Variable`1.TypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TypeCore As Type" />
+      <MemberSignature Language="F#" Value="member this.TypeCore : Type" Usage="System.Activities.Variable&lt;'T&gt;.TypeCore" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property Type ^ TypeCore { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -252,14 +293,5 @@ Activity wf = new Sequence()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Variable`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

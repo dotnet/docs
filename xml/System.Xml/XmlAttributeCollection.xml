@@ -1,7 +1,10 @@
-<Type Name="XmlAttributeCollection" FullName="System.Xml.XmlAttributeCollection">
+﻿<Type Name="XmlAttributeCollection" FullName="System.Xml.XmlAttributeCollection">
   <TypeSignature Language="C#" Value="public sealed class XmlAttributeCollection : System.Xml.XmlNamedNodeMap, System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlAttributeCollection extends System.Xml.XmlNamedNodeMap implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlAttributeCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlAttributeCollection&#xA;Inherits XmlNamedNodeMap&#xA;Implements ICollection" />
+  <TypeSignature Language="F#" Value="type XmlAttributeCollection = class&#xA;    inherit XmlNamedNodeMap&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlAttributeCollection sealed : System::Xml::XmlNamedNodeMap, System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XmlDocument</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -45,6 +48,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlAttribute Append (System.Xml.XmlAttribute node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlAttribute Append(class System.Xml.XmlAttribute node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.Append(System.Xml.XmlAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Append (node As XmlAttribute) As XmlAttribute" />
+      <MemberSignature Language="F#" Value="member this.Append : System.Xml.XmlAttribute -&gt; System.Xml.XmlAttribute" Usage="xmlAttributeCollection.Append node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlAttribute ^ Append(System::Xml::XmlAttribute ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -100,6 +106,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Xml.XmlAttribute[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Xml.XmlAttribute[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.CopyTo(System.Xml.XmlAttribute[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As XmlAttribute(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Xml.XmlAttribute[] * int -&gt; unit" Usage="xmlAttributeCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Xml::XmlAttribute ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -152,6 +161,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlAttribute InsertAfter (System.Xml.XmlAttribute newNode, System.Xml.XmlAttribute refNode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlAttribute InsertAfter(class System.Xml.XmlAttribute newNode, class System.Xml.XmlAttribute refNode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.InsertAfter(System.Xml.XmlAttribute,System.Xml.XmlAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InsertAfter (newNode As XmlAttribute, refNode As XmlAttribute) As XmlAttribute" />
+      <MemberSignature Language="F#" Value="member this.InsertAfter : System.Xml.XmlAttribute * System.Xml.XmlAttribute -&gt; System.Xml.XmlAttribute" Usage="xmlAttributeCollection.InsertAfter (newNode, refNode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlAttribute ^ InsertAfter(System::Xml::XmlAttribute ^ newNode, System::Xml::XmlAttribute ^ refNode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -208,6 +220,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlAttribute InsertBefore (System.Xml.XmlAttribute newNode, System.Xml.XmlAttribute refNode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlAttribute InsertBefore(class System.Xml.XmlAttribute newNode, class System.Xml.XmlAttribute refNode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.InsertBefore(System.Xml.XmlAttribute,System.Xml.XmlAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Function InsertBefore (newNode As XmlAttribute, refNode As XmlAttribute) As XmlAttribute" />
+      <MemberSignature Language="F#" Value="member this.InsertBefore : System.Xml.XmlAttribute * System.Xml.XmlAttribute -&gt; System.Xml.XmlAttribute" Usage="xmlAttributeCollection.InsertBefore (newNode, refNode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlAttribute ^ InsertBefore(System::Xml::XmlAttribute ^ newNode, System::Xml::XmlAttribute ^ refNode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -260,10 +275,22 @@
         <exception cref="T:System.ArgumentException">The <paramref name="newNode" /> was created from a document different from the one that created this collection. Or the <paramref name="refNode" /> is not a member of this collection.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ItemOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the attribute with the specified name or index.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ItemOf">
       <MemberSignature Language="C#" Value="public System.Xml.XmlAttribute this[int i] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlAttribute ItemOf(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlAttributeCollection.ItemOf(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property ItemOf(i As Integer) As XmlAttribute" />
+      <MemberSignature Language="F#" Value="member this.ItemOf(int) : System.Xml.XmlAttribute" Usage="System.Xml.XmlAttributeCollection.ItemOf" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlAttribute ^ default[int] { System::Xml::XmlAttribute ^ get(int i); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -317,6 +344,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlAttribute this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlAttribute ItemOf(string)" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlAttributeCollection.ItemOf(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property ItemOf(name As String) As XmlAttribute" />
+      <MemberSignature Language="F#" Value="member this.ItemOf(string) : System.Xml.XmlAttribute" Usage="System.Xml.XmlAttributeCollection.ItemOf" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlAttribute ^ default[System::String ^] { System::Xml::XmlAttribute ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -368,6 +398,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlAttribute this[string localName, string namespaceURI] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlAttribute ItemOf(string, string)" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlAttributeCollection.ItemOf(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property ItemOf(localName As String, namespaceURI As String) As XmlAttribute" />
+      <MemberSignature Language="F#" Value="member this.ItemOf(string * string) : System.Xml.XmlAttribute" Usage="System.Xml.XmlAttributeCollection.ItemOf" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlAttribute ^ default[System::String ^, System::String ^] { System::Xml::XmlAttribute ^ get(System::String ^ localName, System::String ^ namespaceURI); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -412,6 +445,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlAttribute Prepend (System.Xml.XmlAttribute node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlAttribute Prepend(class System.Xml.XmlAttribute node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.Prepend(System.Xml.XmlAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Prepend (node As XmlAttribute) As XmlAttribute" />
+      <MemberSignature Language="F#" Value="member this.Prepend : System.Xml.XmlAttribute -&gt; System.Xml.XmlAttribute" Usage="xmlAttributeCollection.Prepend node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlAttribute ^ Prepend(System::Xml::XmlAttribute ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -465,6 +501,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlAttribute Remove (System.Xml.XmlAttribute node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlAttribute Remove(class System.Xml.XmlAttribute node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.Remove(System.Xml.XmlAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (node As XmlAttribute) As XmlAttribute" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Xml.XmlAttribute -&gt; System.Xml.XmlAttribute" Usage="xmlAttributeCollection.Remove node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlAttribute ^ Remove(System::Xml::XmlAttribute ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -516,6 +555,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.RemoveAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAll ()" />
+      <MemberSignature Language="F#" Value="member this.RemoveAll : unit -&gt; unit" Usage="xmlAttributeCollection.RemoveAll " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -563,6 +605,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlAttribute RemoveAt (int i);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlAttribute RemoveAt(int32 i) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveAt (i As Integer) As XmlAttribute" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; System.Xml.XmlAttribute" Usage="xmlAttributeCollection.RemoveAt i" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlAttribute ^ RemoveAt(int i);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -614,6 +659,9 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlNode SetNamedItem (System.Xml.XmlNode node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlNode SetNamedItem(class System.Xml.XmlNode node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.SetNamedItem(System.Xml.XmlNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function SetNamedItem (node As XmlNode) As XmlNode" />
+      <MemberSignature Language="F#" Value="override this.SetNamedItem : System.Xml.XmlNode -&gt; System.Xml.XmlNode" Usage="xmlAttributeCollection.SetNamedItem node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlNode ^ SetNamedItem(System::Xml::XmlNode ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
@@ -666,7 +714,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlAttributeCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -709,7 +761,13 @@
       <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlAttributeCollection.System#Collections#ICollection#Count" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
+      <MemberSignature Language="F#" Usage="System.Xml.XmlAttributeCollection.System.Collections.ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -747,7 +805,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlAttributeCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="F#" Usage="System.Xml.XmlAttributeCollection.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -785,7 +849,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlAttributeCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="F#" Usage="System.Xml.XmlAttributeCollection.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XmlDocument</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -819,14 +889,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ItemOf">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XmlDocument</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the attribute with the specified name or index.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

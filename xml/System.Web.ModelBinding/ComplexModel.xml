@@ -1,7 +1,10 @@
-<Type Name="ComplexModel" FullName="System.Web.ModelBinding.ComplexModel">
+﻿<Type Name="ComplexModel" FullName="System.Web.ModelBinding.ComplexModel">
   <TypeSignature Language="C#" Value="public class ComplexModel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComplexModel extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.ComplexModel" />
+  <TypeSignature Language="VB.NET" Value="Public Class ComplexModel" />
+  <TypeSignature Language="F#" Value="type ComplexModel = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComplexModel" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public ComplexModel (System.Web.ModelBinding.ModelMetadata modelMetadata, System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelMetadata&gt; propertyMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelMetadata modelMetadata, class System.Collections.Generic.IEnumerable`1&lt;class System.Web.ModelBinding.ModelMetadata&gt; propertyMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.ComplexModel.#ctor(System.Web.ModelBinding.ModelMetadata,System.Collections.Generic.IEnumerable{System.Web.ModelBinding.ModelMetadata})" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.ComplexModel : System.Web.ModelBinding.ModelMetadata * seq&lt;System.Web.ModelBinding.ModelMetadata&gt; -&gt; System.Web.ModelBinding.ComplexModel" Usage="new System.Web.ModelBinding.ComplexModel (modelMetadata, propertyMetadata)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComplexModel(System::Web::ModelBinding::ModelMetadata ^ modelMetadata, System::Collections::Generic::IEnumerable&lt;System::Web::ModelBinding::ModelMetadata ^&gt; ^ propertyMetadata);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -40,6 +45,9 @@
       <MemberSignature Language="C#" Value="public System.Web.ModelBinding.ModelMetadata ModelMetadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.ModelBinding.ModelMetadata ModelMetadata" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ComplexModel.ModelMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ModelMetadata As ModelMetadata" />
+      <MemberSignature Language="F#" Value="member this.ModelMetadata : System.Web.ModelBinding.ModelMetadata" Usage="System.Web.ModelBinding.ComplexModel.ModelMetadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::ModelBinding::ModelMetadata ^ ModelMetadata { System::Web::ModelBinding::ModelMetadata ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +66,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.ModelBinding.ModelMetadata&gt; PropertyMetadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Web.ModelBinding.ModelMetadata&gt; PropertyMetadata" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ComplexModel.PropertyMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyMetadata As ReadOnlyCollection(Of ModelMetadata)" />
+      <MemberSignature Language="F#" Value="member this.PropertyMetadata : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Web.ModelBinding.ModelMetadata&gt;" Usage="System.Web.ModelBinding.ComplexModel.PropertyMetadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::ModelBinding::ModelMetadata ^&gt; ^ PropertyMetadata { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Web::ModelBinding::ModelMetadata ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -76,6 +87,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ComplexModelResult&gt; Results { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;class System.Web.ModelBinding.ModelMetadata, class System.Web.ModelBinding.ComplexModelResult&gt; Results" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.ComplexModel.Results" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Results As IDictionary(Of ModelMetadata, ComplexModelResult)" />
+      <MemberSignature Language="F#" Value="member this.Results : System.Collections.Generic.IDictionary&lt;System.Web.ModelBinding.ModelMetadata, System.Web.ModelBinding.ComplexModelResult&gt;" Usage="System.Web.ModelBinding.ComplexModel.Results" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Web::ModelBinding::ModelMetadata ^, System::Web::ModelBinding::ComplexModelResult ^&gt; ^ Results { System::Collections::Generic::IDictionary&lt;System::Web::ModelBinding::ModelMetadata ^, System::Web::ModelBinding::ComplexModelResult ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

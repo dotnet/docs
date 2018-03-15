@@ -1,7 +1,10 @@
-<Type Name="DataServiceProcessingPipeline" FullName="System.Data.Services.DataServiceProcessingPipeline">
+﻿<Type Name="DataServiceProcessingPipeline" FullName="System.Data.Services.DataServiceProcessingPipeline">
   <TypeSignature Language="C#" Value="public sealed class DataServiceProcessingPipeline" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DataServiceProcessingPipeline extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.DataServiceProcessingPipeline" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataServiceProcessingPipeline" />
+  <TypeSignature Language="F#" Value="type DataServiceProcessingPipeline = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataServiceProcessingPipeline sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public DataServiceProcessingPipeline ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.DataServiceProcessingPipeline.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceProcessingPipeline();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;EventArgs&gt; ProcessedChangeset;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.EventArgs&gt; ProcessedChangeset" />
       <MemberSignature Language="DocId" Value="E:System.Data.Services.DataServiceProcessingPipeline.ProcessedChangeset" />
+      <MemberSignature Language="VB.NET" Value="Public Event ProcessedChangeset As EventHandler(Of EventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ProcessedChangeset : EventHandler&lt;EventArgs&gt; " Usage="member this.ProcessedChangeset : System.EventHandler&lt;System.EventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;EventArgs ^&gt; ^ ProcessedChangeset;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -51,6 +59,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Data.Services.DataServiceProcessingPipelineEventArgs&gt; ProcessedRequest;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Data.Services.DataServiceProcessingPipelineEventArgs&gt; ProcessedRequest" />
       <MemberSignature Language="DocId" Value="E:System.Data.Services.DataServiceProcessingPipeline.ProcessedRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Event ProcessedRequest As EventHandler(Of DataServiceProcessingPipelineEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ProcessedRequest : EventHandler&lt;System.Data.Services.DataServiceProcessingPipelineEventArgs&gt; " Usage="member this.ProcessedRequest : System.EventHandler&lt;System.Data.Services.DataServiceProcessingPipelineEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Data::Services::DataServiceProcessingPipelineEventArgs ^&gt; ^ ProcessedRequest;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -68,6 +79,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;EventArgs&gt; ProcessingChangeset;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.EventArgs&gt; ProcessingChangeset" />
       <MemberSignature Language="DocId" Value="E:System.Data.Services.DataServiceProcessingPipeline.ProcessingChangeset" />
+      <MemberSignature Language="VB.NET" Value="Public Event ProcessingChangeset As EventHandler(Of EventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ProcessingChangeset : EventHandler&lt;EventArgs&gt; " Usage="member this.ProcessingChangeset : System.EventHandler&lt;System.EventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;EventArgs ^&gt; ^ ProcessingChangeset;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -85,6 +99,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Data.Services.DataServiceProcessingPipelineEventArgs&gt; ProcessingRequest;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Data.Services.DataServiceProcessingPipelineEventArgs&gt; ProcessingRequest" />
       <MemberSignature Language="DocId" Value="E:System.Data.Services.DataServiceProcessingPipeline.ProcessingRequest" />
+      <MemberSignature Language="VB.NET" Value="Public Event ProcessingRequest As EventHandler(Of DataServiceProcessingPipelineEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ProcessingRequest : EventHandler&lt;System.Data.Services.DataServiceProcessingPipelineEventArgs&gt; " Usage="member this.ProcessingRequest : System.EventHandler&lt;System.Data.Services.DataServiceProcessingPipelineEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Data::Services::DataServiceProcessingPipelineEventArgs ^&gt; ^ ProcessingRequest;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ITextControl" FullName="System.Web.UI.ITextControl">
+﻿<Type Name="ITextControl" FullName="System.Web.UI.ITextControl">
   <TypeSignature Language="C#" Value="public interface ITextControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITextControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ITextControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITextControl" />
+  <TypeSignature Language="F#" Value="type ITextControl = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ITextControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ITextControl.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.ITextControl.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

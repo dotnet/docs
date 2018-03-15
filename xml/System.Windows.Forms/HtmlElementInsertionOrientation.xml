@@ -1,7 +1,10 @@
-<Type Name="HtmlElementInsertionOrientation" FullName="System.Windows.Forms.HtmlElementInsertionOrientation">
+﻿<Type Name="HtmlElementInsertionOrientation" FullName="System.Windows.Forms.HtmlElementInsertionOrientation">
   <TypeSignature Language="C#" Value="public enum HtmlElementInsertionOrientation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HtmlElementInsertionOrientation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlElementInsertionOrientation" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HtmlElementInsertionOrientation" />
+  <TypeSignature Language="F#" Value="type HtmlElementInsertionOrientation = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class HtmlElementInsertionOrientation" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="AfterBegin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HtmlElementInsertionOrientation AfterBegin = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HtmlElementInsertionOrientation.AfterBegin" />
+      <MemberSignature Language="VB.NET" Value="AfterBegin" />
+      <MemberSignature Language="F#" Value="AfterBegin = 1" Usage="System.Windows.Forms.HtmlElementInsertionOrientation.AfterBegin" />
+      <MemberSignature Language="C++ CLI" Value="AfterBegin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -36,6 +42,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HtmlElementInsertionOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Insert the element after the current element, but before all other content in the current element.</summary>
       </Docs>
@@ -44,6 +51,9 @@
       <MemberSignature Language="C#" Value="AfterEnd" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HtmlElementInsertionOrientation AfterEnd = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HtmlElementInsertionOrientation.AfterEnd" />
+      <MemberSignature Language="VB.NET" Value="AfterEnd" />
+      <MemberSignature Language="F#" Value="AfterEnd = 3" Usage="System.Windows.Forms.HtmlElementInsertionOrientation.AfterEnd" />
+      <MemberSignature Language="C++ CLI" Value="AfterEnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HtmlElementInsertionOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Insert the element after the current element, but after all other content in the current element.</summary>
       </Docs>
@@ -60,6 +71,9 @@
       <MemberSignature Language="C#" Value="BeforeBegin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HtmlElementInsertionOrientation BeforeBegin = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HtmlElementInsertionOrientation.BeforeBegin" />
+      <MemberSignature Language="VB.NET" Value="BeforeBegin" />
+      <MemberSignature Language="F#" Value="BeforeBegin = 0" Usage="System.Windows.Forms.HtmlElementInsertionOrientation.BeforeBegin" />
+      <MemberSignature Language="C++ CLI" Value="BeforeBegin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -68,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HtmlElementInsertionOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Insert the element before the current element.</summary>
       </Docs>
@@ -76,6 +91,9 @@
       <MemberSignature Language="C#" Value="BeforeEnd" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.HtmlElementInsertionOrientation BeforeEnd = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.HtmlElementInsertionOrientation.BeforeEnd" />
+      <MemberSignature Language="VB.NET" Value="BeforeEnd" />
+      <MemberSignature Language="F#" Value="BeforeEnd = 2" Usage="System.Windows.Forms.HtmlElementInsertionOrientation.BeforeEnd" />
+      <MemberSignature Language="C++ CLI" Value="BeforeEnd" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HtmlElementInsertionOrientation</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Insert the element after the current element.</summary>
       </Docs>

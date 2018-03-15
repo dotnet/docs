@@ -1,7 +1,10 @@
-<Type Name="PaperKind" FullName="System.Drawing.Printing.PaperKind">
+﻿<Type Name="PaperKind" FullName="System.Drawing.Printing.PaperKind">
   <TypeSignature Language="C#" Value="public enum PaperKind" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PaperKind extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PaperKind" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PaperKind" />
+  <TypeSignature Language="F#" Value="type PaperKind = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PaperKind" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="A2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A2 = int32(66)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A2" />
+      <MemberSignature Language="VB.NET" Value="A2" />
+      <MemberSignature Language="F#" Value="A2 = 66" Usage="System.Drawing.Printing.PaperKind.A2" />
+      <MemberSignature Language="C++ CLI" Value="A2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -34,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>66</MemberValue>
       <Docs>
         <summary>A2 paper (420 mm by 594 mm).</summary>
       </Docs>
@@ -42,6 +49,9 @@
       <MemberSignature Language="C#" Value="A3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A3 = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A3" />
+      <MemberSignature Language="VB.NET" Value="A3" />
+      <MemberSignature Language="F#" Value="A3 = 8" Usage="System.Drawing.Printing.PaperKind.A3" />
+      <MemberSignature Language="C++ CLI" Value="A3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -50,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A3 paper (297 mm by 420 mm).</summary>
       </Docs>
@@ -58,6 +69,9 @@
       <MemberSignature Language="C#" Value="A3Extra" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A3Extra = int32(63)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A3Extra" />
+      <MemberSignature Language="VB.NET" Value="A3Extra" />
+      <MemberSignature Language="F#" Value="A3Extra = 63" Usage="System.Drawing.Printing.PaperKind.A3Extra" />
+      <MemberSignature Language="C++ CLI" Value="A3Extra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -66,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>63</MemberValue>
       <Docs>
         <summary>A3 extra paper (322 mm by 445 mm).</summary>
       </Docs>
@@ -74,6 +89,9 @@
       <MemberSignature Language="C#" Value="A3ExtraTransverse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A3ExtraTransverse = int32(68)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A3ExtraTransverse" />
+      <MemberSignature Language="VB.NET" Value="A3ExtraTransverse" />
+      <MemberSignature Language="F#" Value="A3ExtraTransverse = 68" Usage="System.Drawing.Printing.PaperKind.A3ExtraTransverse" />
+      <MemberSignature Language="C++ CLI" Value="A3ExtraTransverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -82,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>68</MemberValue>
       <Docs>
         <summary>A3 extra transverse paper (322 mm by 445 mm).</summary>
       </Docs>
@@ -90,6 +109,9 @@
       <MemberSignature Language="C#" Value="A3Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A3Rotated = int32(76)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A3Rotated" />
+      <MemberSignature Language="VB.NET" Value="A3Rotated" />
+      <MemberSignature Language="F#" Value="A3Rotated = 76" Usage="System.Drawing.Printing.PaperKind.A3Rotated" />
+      <MemberSignature Language="C++ CLI" Value="A3Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -98,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>76</MemberValue>
       <Docs>
         <summary>A3 rotated paper (420 mm by 297 mm).</summary>
       </Docs>
@@ -106,6 +129,9 @@
       <MemberSignature Language="C#" Value="A3Transverse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A3Transverse = int32(67)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A3Transverse" />
+      <MemberSignature Language="VB.NET" Value="A3Transverse" />
+      <MemberSignature Language="F#" Value="A3Transverse = 67" Usage="System.Drawing.Printing.PaperKind.A3Transverse" />
+      <MemberSignature Language="C++ CLI" Value="A3Transverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -114,6 +140,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>67</MemberValue>
       <Docs>
         <summary>A3 transverse paper (297 mm by 420 mm).</summary>
       </Docs>
@@ -122,6 +149,9 @@
       <MemberSignature Language="C#" Value="A4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A4 = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A4" />
+      <MemberSignature Language="VB.NET" Value="A4" />
+      <MemberSignature Language="F#" Value="A4 = 9" Usage="System.Drawing.Printing.PaperKind.A4" />
+      <MemberSignature Language="C++ CLI" Value="A4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -130,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>A4 paper (210 mm by 297 mm).</summary>
       </Docs>
@@ -138,6 +169,9 @@
       <MemberSignature Language="C#" Value="A4Extra" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A4Extra = int32(53)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A4Extra" />
+      <MemberSignature Language="VB.NET" Value="A4Extra" />
+      <MemberSignature Language="F#" Value="A4Extra = 53" Usage="System.Drawing.Printing.PaperKind.A4Extra" />
+      <MemberSignature Language="C++ CLI" Value="A4Extra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -146,6 +180,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>53</MemberValue>
       <Docs>
         <summary>A4 extra paper (236 mm by 322 mm). This value is specific to the PostScript driver and is used only by Linotronic printers to help save paper.</summary>
       </Docs>
@@ -154,6 +189,9 @@
       <MemberSignature Language="C#" Value="A4Plus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A4Plus = int32(60)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A4Plus" />
+      <MemberSignature Language="VB.NET" Value="A4Plus" />
+      <MemberSignature Language="F#" Value="A4Plus = 60" Usage="System.Drawing.Printing.PaperKind.A4Plus" />
+      <MemberSignature Language="C++ CLI" Value="A4Plus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -162,6 +200,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>60</MemberValue>
       <Docs>
         <summary>A4 plus paper (210 mm by 330 mm).</summary>
       </Docs>
@@ -170,6 +209,9 @@
       <MemberSignature Language="C#" Value="A4Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A4Rotated = int32(77)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A4Rotated" />
+      <MemberSignature Language="VB.NET" Value="A4Rotated" />
+      <MemberSignature Language="F#" Value="A4Rotated = 77" Usage="System.Drawing.Printing.PaperKind.A4Rotated" />
+      <MemberSignature Language="C++ CLI" Value="A4Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -178,6 +220,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>77</MemberValue>
       <Docs>
         <summary>A4 rotated paper (297 mm by 210 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -186,6 +229,9 @@
       <MemberSignature Language="C#" Value="A4Small" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A4Small = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A4Small" />
+      <MemberSignature Language="VB.NET" Value="A4Small" />
+      <MemberSignature Language="F#" Value="A4Small = 10" Usage="System.Drawing.Printing.PaperKind.A4Small" />
+      <MemberSignature Language="C++ CLI" Value="A4Small" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -194,6 +240,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>A4 small paper (210 mm by 297 mm).</summary>
       </Docs>
@@ -202,6 +249,9 @@
       <MemberSignature Language="C#" Value="A4Transverse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A4Transverse = int32(55)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A4Transverse" />
+      <MemberSignature Language="VB.NET" Value="A4Transverse" />
+      <MemberSignature Language="F#" Value="A4Transverse = 55" Usage="System.Drawing.Printing.PaperKind.A4Transverse" />
+      <MemberSignature Language="C++ CLI" Value="A4Transverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -210,6 +260,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>55</MemberValue>
       <Docs>
         <summary>A4 transverse paper (210 mm by 297 mm).</summary>
       </Docs>
@@ -218,6 +269,9 @@
       <MemberSignature Language="C#" Value="A5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A5 = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A5" />
+      <MemberSignature Language="VB.NET" Value="A5" />
+      <MemberSignature Language="F#" Value="A5 = 11" Usage="System.Drawing.Printing.PaperKind.A5" />
+      <MemberSignature Language="C++ CLI" Value="A5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -226,6 +280,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>A5 paper (148 mm by 210 mm).</summary>
       </Docs>
@@ -234,6 +289,9 @@
       <MemberSignature Language="C#" Value="A5Extra" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A5Extra = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A5Extra" />
+      <MemberSignature Language="VB.NET" Value="A5Extra" />
+      <MemberSignature Language="F#" Value="A5Extra = 64" Usage="System.Drawing.Printing.PaperKind.A5Extra" />
+      <MemberSignature Language="C++ CLI" Value="A5Extra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -242,6 +300,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>A5 extra paper (174 mm by 235 mm).</summary>
       </Docs>
@@ -250,6 +309,9 @@
       <MemberSignature Language="C#" Value="A5Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A5Rotated = int32(78)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A5Rotated" />
+      <MemberSignature Language="VB.NET" Value="A5Rotated" />
+      <MemberSignature Language="F#" Value="A5Rotated = 78" Usage="System.Drawing.Printing.PaperKind.A5Rotated" />
+      <MemberSignature Language="C++ CLI" Value="A5Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -258,6 +320,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>78</MemberValue>
       <Docs>
         <summary>A5 rotated paper (210 mm by 148 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -266,6 +329,9 @@
       <MemberSignature Language="C#" Value="A5Transverse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A5Transverse = int32(61)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A5Transverse" />
+      <MemberSignature Language="VB.NET" Value="A5Transverse" />
+      <MemberSignature Language="F#" Value="A5Transverse = 61" Usage="System.Drawing.Printing.PaperKind.A5Transverse" />
+      <MemberSignature Language="C++ CLI" Value="A5Transverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -274,6 +340,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>61</MemberValue>
       <Docs>
         <summary>A5 transverse paper (148 mm by 210 mm).</summary>
       </Docs>
@@ -282,6 +349,9 @@
       <MemberSignature Language="C#" Value="A6" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A6 = int32(70)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A6" />
+      <MemberSignature Language="VB.NET" Value="A6" />
+      <MemberSignature Language="F#" Value="A6 = 70" Usage="System.Drawing.Printing.PaperKind.A6" />
+      <MemberSignature Language="C++ CLI" Value="A6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -290,6 +360,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>70</MemberValue>
       <Docs>
         <summary>A6 paper (105 mm by 148 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -298,6 +369,9 @@
       <MemberSignature Language="C#" Value="A6Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind A6Rotated = int32(83)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.A6Rotated" />
+      <MemberSignature Language="VB.NET" Value="A6Rotated" />
+      <MemberSignature Language="F#" Value="A6Rotated = 83" Usage="System.Drawing.Printing.PaperKind.A6Rotated" />
+      <MemberSignature Language="C++ CLI" Value="A6Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -306,6 +380,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>83</MemberValue>
       <Docs>
         <summary>A6 rotated paper (148 mm by 105 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -314,6 +389,9 @@
       <MemberSignature Language="C#" Value="APlus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind APlus = int32(57)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.APlus" />
+      <MemberSignature Language="VB.NET" Value="APlus" />
+      <MemberSignature Language="F#" Value="APlus = 57" Usage="System.Drawing.Printing.PaperKind.APlus" />
+      <MemberSignature Language="C++ CLI" Value="APlus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -322,6 +400,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>57</MemberValue>
       <Docs>
         <summary>SuperA/SuperA/A4 paper (227 mm by 356 mm).</summary>
       </Docs>
@@ -330,6 +409,9 @@
       <MemberSignature Language="C#" Value="B4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind B4 = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B4" />
+      <MemberSignature Language="VB.NET" Value="B4" />
+      <MemberSignature Language="F#" Value="B4 = 12" Usage="System.Drawing.Printing.PaperKind.B4" />
+      <MemberSignature Language="C++ CLI" Value="B4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -338,6 +420,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>B4 paper (250 mm by 353 mm).</summary>
       </Docs>
@@ -346,6 +429,9 @@
       <MemberSignature Language="C#" Value="B4Envelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind B4Envelope = int32(33)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B4Envelope" />
+      <MemberSignature Language="VB.NET" Value="B4Envelope" />
+      <MemberSignature Language="F#" Value="B4Envelope = 33" Usage="System.Drawing.Printing.PaperKind.B4Envelope" />
+      <MemberSignature Language="C++ CLI" Value="B4Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -354,6 +440,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>33</MemberValue>
       <Docs>
         <summary>B4 envelope (250 mm by 353 mm).</summary>
       </Docs>
@@ -362,6 +449,9 @@
       <MemberSignature Language="C#" Value="B4JisRotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind B4JisRotated = int32(79)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B4JisRotated" />
+      <MemberSignature Language="VB.NET" Value="B4JisRotated" />
+      <MemberSignature Language="F#" Value="B4JisRotated = 79" Usage="System.Drawing.Printing.PaperKind.B4JisRotated" />
+      <MemberSignature Language="C++ CLI" Value="B4JisRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -370,6 +460,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>79</MemberValue>
       <Docs>
         <summary>JIS B4 rotated paper (364 mm by 257 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -378,6 +469,9 @@
       <MemberSignature Language="C#" Value="B5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind B5 = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B5" />
+      <MemberSignature Language="VB.NET" Value="B5" />
+      <MemberSignature Language="F#" Value="B5 = 13" Usage="System.Drawing.Printing.PaperKind.B5" />
+      <MemberSignature Language="C++ CLI" Value="B5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -386,6 +480,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>B5 paper (176 mm by 250 mm).</summary>
       </Docs>
@@ -394,6 +489,9 @@
       <MemberSignature Language="C#" Value="B5Envelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind B5Envelope = int32(34)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B5Envelope" />
+      <MemberSignature Language="VB.NET" Value="B5Envelope" />
+      <MemberSignature Language="F#" Value="B5Envelope = 34" Usage="System.Drawing.Printing.PaperKind.B5Envelope" />
+      <MemberSignature Language="C++ CLI" Value="B5Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -402,6 +500,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>34</MemberValue>
       <Docs>
         <summary>B5 envelope (176 mm by 250 mm).</summary>
       </Docs>
@@ -410,6 +509,9 @@
       <MemberSignature Language="C#" Value="B5Extra" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind B5Extra = int32(65)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B5Extra" />
+      <MemberSignature Language="VB.NET" Value="B5Extra" />
+      <MemberSignature Language="F#" Value="B5Extra = 65" Usage="System.Drawing.Printing.PaperKind.B5Extra" />
+      <MemberSignature Language="C++ CLI" Value="B5Extra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -418,6 +520,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>65</MemberValue>
       <Docs>
         <summary>ISO B5 extra paper (201 mm by 276 mm).</summary>
       </Docs>
@@ -426,6 +529,9 @@
       <MemberSignature Language="C#" Value="B5JisRotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind B5JisRotated = int32(80)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B5JisRotated" />
+      <MemberSignature Language="VB.NET" Value="B5JisRotated" />
+      <MemberSignature Language="F#" Value="B5JisRotated = 80" Usage="System.Drawing.Printing.PaperKind.B5JisRotated" />
+      <MemberSignature Language="C++ CLI" Value="B5JisRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -434,6 +540,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>80</MemberValue>
       <Docs>
         <summary>JIS B5 rotated paper (257 mm by 182 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -442,6 +549,9 @@
       <MemberSignature Language="C#" Value="B5Transverse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind B5Transverse = int32(62)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B5Transverse" />
+      <MemberSignature Language="VB.NET" Value="B5Transverse" />
+      <MemberSignature Language="F#" Value="B5Transverse = 62" Usage="System.Drawing.Printing.PaperKind.B5Transverse" />
+      <MemberSignature Language="C++ CLI" Value="B5Transverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -450,6 +560,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>62</MemberValue>
       <Docs>
         <summary>JIS B5 transverse paper (182 mm by 257 mm).</summary>
       </Docs>
@@ -458,6 +569,9 @@
       <MemberSignature Language="C#" Value="B6Envelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind B6Envelope = int32(35)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B6Envelope" />
+      <MemberSignature Language="VB.NET" Value="B6Envelope" />
+      <MemberSignature Language="F#" Value="B6Envelope = 35" Usage="System.Drawing.Printing.PaperKind.B6Envelope" />
+      <MemberSignature Language="C++ CLI" Value="B6Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -466,6 +580,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>35</MemberValue>
       <Docs>
         <summary>B6 envelope (176 mm by 125 mm).</summary>
       </Docs>
@@ -474,6 +589,9 @@
       <MemberSignature Language="C#" Value="B6Jis" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind B6Jis = int32(88)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B6Jis" />
+      <MemberSignature Language="VB.NET" Value="B6Jis" />
+      <MemberSignature Language="F#" Value="B6Jis = 88" Usage="System.Drawing.Printing.PaperKind.B6Jis" />
+      <MemberSignature Language="C++ CLI" Value="B6Jis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -482,6 +600,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>88</MemberValue>
       <Docs>
         <summary>JIS B6 paper (128 mm by 182 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -490,6 +609,9 @@
       <MemberSignature Language="C#" Value="B6JisRotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind B6JisRotated = int32(89)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.B6JisRotated" />
+      <MemberSignature Language="VB.NET" Value="B6JisRotated" />
+      <MemberSignature Language="F#" Value="B6JisRotated = 89" Usage="System.Drawing.Printing.PaperKind.B6JisRotated" />
+      <MemberSignature Language="C++ CLI" Value="B6JisRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -498,6 +620,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>89</MemberValue>
       <Docs>
         <summary>JIS B6 rotated paper (182 mm by 128 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -506,6 +629,9 @@
       <MemberSignature Language="C#" Value="BPlus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind BPlus = int32(58)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.BPlus" />
+      <MemberSignature Language="VB.NET" Value="BPlus" />
+      <MemberSignature Language="F#" Value="BPlus = 58" Usage="System.Drawing.Printing.PaperKind.BPlus" />
+      <MemberSignature Language="C++ CLI" Value="BPlus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -514,6 +640,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>58</MemberValue>
       <Docs>
         <summary>SuperB/SuperB/A3 paper (305 mm by 487 mm).</summary>
       </Docs>
@@ -522,6 +649,9 @@
       <MemberSignature Language="C#" Value="C3Envelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind C3Envelope = int32(29)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.C3Envelope" />
+      <MemberSignature Language="VB.NET" Value="C3Envelope" />
+      <MemberSignature Language="F#" Value="C3Envelope = 29" Usage="System.Drawing.Printing.PaperKind.C3Envelope" />
+      <MemberSignature Language="C++ CLI" Value="C3Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -530,6 +660,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>29</MemberValue>
       <Docs>
         <summary>C3 envelope (324 mm by 458 mm).</summary>
       </Docs>
@@ -538,6 +669,9 @@
       <MemberSignature Language="C#" Value="C4Envelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind C4Envelope = int32(30)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.C4Envelope" />
+      <MemberSignature Language="VB.NET" Value="C4Envelope" />
+      <MemberSignature Language="F#" Value="C4Envelope = 30" Usage="System.Drawing.Printing.PaperKind.C4Envelope" />
+      <MemberSignature Language="C++ CLI" Value="C4Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -546,6 +680,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>C4 envelope (229 mm by 324 mm).</summary>
       </Docs>
@@ -554,6 +689,9 @@
       <MemberSignature Language="C#" Value="C5Envelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind C5Envelope = int32(28)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.C5Envelope" />
+      <MemberSignature Language="VB.NET" Value="C5Envelope" />
+      <MemberSignature Language="F#" Value="C5Envelope = 28" Usage="System.Drawing.Printing.PaperKind.C5Envelope" />
+      <MemberSignature Language="C++ CLI" Value="C5Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -562,6 +700,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>28</MemberValue>
       <Docs>
         <summary>C5 envelope (162 mm by 229 mm).</summary>
       </Docs>
@@ -570,6 +709,9 @@
       <MemberSignature Language="C#" Value="C65Envelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind C65Envelope = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.C65Envelope" />
+      <MemberSignature Language="VB.NET" Value="C65Envelope" />
+      <MemberSignature Language="F#" Value="C65Envelope = 32" Usage="System.Drawing.Printing.PaperKind.C65Envelope" />
+      <MemberSignature Language="C++ CLI" Value="C65Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -578,6 +720,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>C65 envelope (114 mm by 229 mm).</summary>
       </Docs>
@@ -586,6 +729,9 @@
       <MemberSignature Language="C#" Value="C6Envelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind C6Envelope = int32(31)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.C6Envelope" />
+      <MemberSignature Language="VB.NET" Value="C6Envelope" />
+      <MemberSignature Language="F#" Value="C6Envelope = 31" Usage="System.Drawing.Printing.PaperKind.C6Envelope" />
+      <MemberSignature Language="C++ CLI" Value="C6Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -594,6 +740,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>31</MemberValue>
       <Docs>
         <summary>C6 envelope (114 mm by 162 mm).</summary>
       </Docs>
@@ -602,6 +749,9 @@
       <MemberSignature Language="C#" Value="CSheet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind CSheet = int32(24)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.CSheet" />
+      <MemberSignature Language="VB.NET" Value="CSheet" />
+      <MemberSignature Language="F#" Value="CSheet = 24" Usage="System.Drawing.Printing.PaperKind.CSheet" />
+      <MemberSignature Language="C++ CLI" Value="CSheet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -610,6 +760,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>C paper (17 in. by 22 in.).</summary>
       </Docs>
@@ -618,6 +769,9 @@
       <MemberSignature Language="C#" Value="Custom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Custom = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Custom" />
+      <MemberSignature Language="VB.NET" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 0" Usage="System.Drawing.Printing.PaperKind.Custom" />
+      <MemberSignature Language="C++ CLI" Value="Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -626,6 +780,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The paper size is defined by the user.</summary>
       </Docs>
@@ -634,6 +789,9 @@
       <MemberSignature Language="C#" Value="DLEnvelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind DLEnvelope = int32(27)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.DLEnvelope" />
+      <MemberSignature Language="VB.NET" Value="DLEnvelope" />
+      <MemberSignature Language="F#" Value="DLEnvelope = 27" Usage="System.Drawing.Printing.PaperKind.DLEnvelope" />
+      <MemberSignature Language="C++ CLI" Value="DLEnvelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -642,6 +800,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>27</MemberValue>
       <Docs>
         <summary>DL envelope (110 mm by 220 mm).</summary>
       </Docs>
@@ -650,6 +809,9 @@
       <MemberSignature Language="C#" Value="DSheet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind DSheet = int32(25)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.DSheet" />
+      <MemberSignature Language="VB.NET" Value="DSheet" />
+      <MemberSignature Language="F#" Value="DSheet = 25" Usage="System.Drawing.Printing.PaperKind.DSheet" />
+      <MemberSignature Language="C++ CLI" Value="DSheet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -658,6 +820,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>D paper (22 in. by 34 in.).</summary>
       </Docs>
@@ -666,6 +829,9 @@
       <MemberSignature Language="C#" Value="ESheet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind ESheet = int32(26)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.ESheet" />
+      <MemberSignature Language="VB.NET" Value="ESheet" />
+      <MemberSignature Language="F#" Value="ESheet = 26" Usage="System.Drawing.Printing.PaperKind.ESheet" />
+      <MemberSignature Language="C++ CLI" Value="ESheet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -674,6 +840,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>E paper (34 in. by 44 in.).</summary>
       </Docs>
@@ -682,6 +849,9 @@
       <MemberSignature Language="C#" Value="Executive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Executive = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Executive" />
+      <MemberSignature Language="VB.NET" Value="Executive" />
+      <MemberSignature Language="F#" Value="Executive = 7" Usage="System.Drawing.Printing.PaperKind.Executive" />
+      <MemberSignature Language="C++ CLI" Value="Executive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -690,6 +860,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Executive paper (7.25 in. by 10.5 in.).</summary>
       </Docs>
@@ -698,6 +869,9 @@
       <MemberSignature Language="C#" Value="Folio" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Folio = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Folio" />
+      <MemberSignature Language="VB.NET" Value="Folio" />
+      <MemberSignature Language="F#" Value="Folio = 14" Usage="System.Drawing.Printing.PaperKind.Folio" />
+      <MemberSignature Language="C++ CLI" Value="Folio" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -706,6 +880,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>Folio paper (8.5 in. by 13 in.).</summary>
       </Docs>
@@ -714,6 +889,9 @@
       <MemberSignature Language="C#" Value="GermanLegalFanfold" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind GermanLegalFanfold = int32(41)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.GermanLegalFanfold" />
+      <MemberSignature Language="VB.NET" Value="GermanLegalFanfold" />
+      <MemberSignature Language="F#" Value="GermanLegalFanfold = 41" Usage="System.Drawing.Printing.PaperKind.GermanLegalFanfold" />
+      <MemberSignature Language="C++ CLI" Value="GermanLegalFanfold" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -722,6 +900,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>41</MemberValue>
       <Docs>
         <summary>German legal fanfold (8.5 in. by 13 in.).</summary>
       </Docs>
@@ -730,6 +909,9 @@
       <MemberSignature Language="C#" Value="GermanStandardFanfold" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind GermanStandardFanfold = int32(40)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.GermanStandardFanfold" />
+      <MemberSignature Language="VB.NET" Value="GermanStandardFanfold" />
+      <MemberSignature Language="F#" Value="GermanStandardFanfold = 40" Usage="System.Drawing.Printing.PaperKind.GermanStandardFanfold" />
+      <MemberSignature Language="C++ CLI" Value="GermanStandardFanfold" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -738,6 +920,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>40</MemberValue>
       <Docs>
         <summary>German standard fanfold (8.5 in. by 12 in.).</summary>
       </Docs>
@@ -746,6 +929,9 @@
       <MemberSignature Language="C#" Value="InviteEnvelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind InviteEnvelope = int32(47)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.InviteEnvelope" />
+      <MemberSignature Language="VB.NET" Value="InviteEnvelope" />
+      <MemberSignature Language="F#" Value="InviteEnvelope = 47" Usage="System.Drawing.Printing.PaperKind.InviteEnvelope" />
+      <MemberSignature Language="C++ CLI" Value="InviteEnvelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -754,6 +940,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>47</MemberValue>
       <Docs>
         <summary>Invitation envelope (220 mm by 220 mm).</summary>
       </Docs>
@@ -762,6 +949,9 @@
       <MemberSignature Language="C#" Value="IsoB4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind IsoB4 = int32(42)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.IsoB4" />
+      <MemberSignature Language="VB.NET" Value="IsoB4" />
+      <MemberSignature Language="F#" Value="IsoB4 = 42" Usage="System.Drawing.Printing.PaperKind.IsoB4" />
+      <MemberSignature Language="C++ CLI" Value="IsoB4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -770,6 +960,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>42</MemberValue>
       <Docs>
         <summary>ISO B4 (250 mm by 353 mm).</summary>
       </Docs>
@@ -778,6 +969,9 @@
       <MemberSignature Language="C#" Value="ItalyEnvelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind ItalyEnvelope = int32(36)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.ItalyEnvelope" />
+      <MemberSignature Language="VB.NET" Value="ItalyEnvelope" />
+      <MemberSignature Language="F#" Value="ItalyEnvelope = 36" Usage="System.Drawing.Printing.PaperKind.ItalyEnvelope" />
+      <MemberSignature Language="C++ CLI" Value="ItalyEnvelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -786,6 +980,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>36</MemberValue>
       <Docs>
         <summary>Italy envelope (110 mm by 230 mm).</summary>
       </Docs>
@@ -794,6 +989,9 @@
       <MemberSignature Language="C#" Value="JapaneseDoublePostcard" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind JapaneseDoublePostcard = int32(69)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseDoublePostcard" />
+      <MemberSignature Language="VB.NET" Value="JapaneseDoublePostcard" />
+      <MemberSignature Language="F#" Value="JapaneseDoublePostcard = 69" Usage="System.Drawing.Printing.PaperKind.JapaneseDoublePostcard" />
+      <MemberSignature Language="C++ CLI" Value="JapaneseDoublePostcard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -802,6 +1000,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>69</MemberValue>
       <Docs>
         <summary>Japanese double postcard (200 mm by 148 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -810,6 +1009,9 @@
       <MemberSignature Language="C#" Value="JapaneseDoublePostcardRotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind JapaneseDoublePostcardRotated = int32(82)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseDoublePostcardRotated" />
+      <MemberSignature Language="VB.NET" Value="JapaneseDoublePostcardRotated" />
+      <MemberSignature Language="F#" Value="JapaneseDoublePostcardRotated = 82" Usage="System.Drawing.Printing.PaperKind.JapaneseDoublePostcardRotated" />
+      <MemberSignature Language="C++ CLI" Value="JapaneseDoublePostcardRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -818,6 +1020,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>82</MemberValue>
       <Docs>
         <summary>Japanese rotated double postcard (148 mm by 200 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -826,6 +1029,9 @@
       <MemberSignature Language="C#" Value="JapaneseEnvelopeChouNumber3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind JapaneseEnvelopeChouNumber3 = int32(73)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber3" />
+      <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeChouNumber3" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeChouNumber3 = 73" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber3" />
+      <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeChouNumber3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -834,6 +1040,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>73</MemberValue>
       <Docs>
         <summary>Japanese Chou #3 envelope. Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -842,6 +1049,9 @@
       <MemberSignature Language="C#" Value="JapaneseEnvelopeChouNumber3Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind JapaneseEnvelopeChouNumber3Rotated = int32(86)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber3Rotated" />
+      <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeChouNumber3Rotated" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeChouNumber3Rotated = 86" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber3Rotated" />
+      <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeChouNumber3Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -850,6 +1060,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>86</MemberValue>
       <Docs>
         <summary>Japanese rotated Chou #3 envelope. Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -858,6 +1069,9 @@
       <MemberSignature Language="C#" Value="JapaneseEnvelopeChouNumber4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind JapaneseEnvelopeChouNumber4 = int32(74)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber4" />
+      <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeChouNumber4" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeChouNumber4 = 74" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber4" />
+      <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeChouNumber4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -866,6 +1080,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>74</MemberValue>
       <Docs>
         <summary>Japanese Chou #4 envelope. Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -874,6 +1089,9 @@
       <MemberSignature Language="C#" Value="JapaneseEnvelopeChouNumber4Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind JapaneseEnvelopeChouNumber4Rotated = int32(87)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber4Rotated" />
+      <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeChouNumber4Rotated" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeChouNumber4Rotated = 87" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeChouNumber4Rotated" />
+      <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeChouNumber4Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -882,6 +1100,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>87</MemberValue>
       <Docs>
         <summary>Japanese rotated Chou #4 envelope. Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -890,6 +1109,9 @@
       <MemberSignature Language="C#" Value="JapaneseEnvelopeKakuNumber2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind JapaneseEnvelopeKakuNumber2 = int32(71)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber2" />
+      <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeKakuNumber2" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeKakuNumber2 = 71" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber2" />
+      <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeKakuNumber2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -898,6 +1120,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>71</MemberValue>
       <Docs>
         <summary>Japanese Kaku #2 envelope. Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -906,6 +1129,9 @@
       <MemberSignature Language="C#" Value="JapaneseEnvelopeKakuNumber2Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind JapaneseEnvelopeKakuNumber2Rotated = int32(84)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber2Rotated" />
+      <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeKakuNumber2Rotated" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeKakuNumber2Rotated = 84" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber2Rotated" />
+      <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeKakuNumber2Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -914,6 +1140,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>84</MemberValue>
       <Docs>
         <summary>Japanese rotated Kaku #2 envelope. Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -922,6 +1149,9 @@
       <MemberSignature Language="C#" Value="JapaneseEnvelopeKakuNumber3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind JapaneseEnvelopeKakuNumber3 = int32(72)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber3" />
+      <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeKakuNumber3" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeKakuNumber3 = 72" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber3" />
+      <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeKakuNumber3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -930,6 +1160,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>72</MemberValue>
       <Docs>
         <summary>Japanese Kaku #3 envelope. Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -938,6 +1169,9 @@
       <MemberSignature Language="C#" Value="JapaneseEnvelopeKakuNumber3Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind JapaneseEnvelopeKakuNumber3Rotated = int32(85)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber3Rotated" />
+      <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeKakuNumber3Rotated" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeKakuNumber3Rotated = 85" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeKakuNumber3Rotated" />
+      <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeKakuNumber3Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -946,6 +1180,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>85</MemberValue>
       <Docs>
         <summary>Japanese rotated Kaku #3 envelope. Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -954,6 +1189,9 @@
       <MemberSignature Language="C#" Value="JapaneseEnvelopeYouNumber4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind JapaneseEnvelopeYouNumber4 = int32(91)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeYouNumber4" />
+      <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeYouNumber4" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeYouNumber4 = 91" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeYouNumber4" />
+      <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeYouNumber4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -962,6 +1200,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>91</MemberValue>
       <Docs>
         <summary>Japanese You #4 envelope. Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -970,6 +1209,9 @@
       <MemberSignature Language="C#" Value="JapaneseEnvelopeYouNumber4Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind JapaneseEnvelopeYouNumber4Rotated = int32(92)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapaneseEnvelopeYouNumber4Rotated" />
+      <MemberSignature Language="VB.NET" Value="JapaneseEnvelopeYouNumber4Rotated" />
+      <MemberSignature Language="F#" Value="JapaneseEnvelopeYouNumber4Rotated = 92" Usage="System.Drawing.Printing.PaperKind.JapaneseEnvelopeYouNumber4Rotated" />
+      <MemberSignature Language="C++ CLI" Value="JapaneseEnvelopeYouNumber4Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -978,6 +1220,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>92</MemberValue>
       <Docs>
         <summary>Japanese You #4 rotated envelope. Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -986,6 +1229,9 @@
       <MemberSignature Language="C#" Value="JapanesePostcard" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind JapanesePostcard = int32(43)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapanesePostcard" />
+      <MemberSignature Language="VB.NET" Value="JapanesePostcard" />
+      <MemberSignature Language="F#" Value="JapanesePostcard = 43" Usage="System.Drawing.Printing.PaperKind.JapanesePostcard" />
+      <MemberSignature Language="C++ CLI" Value="JapanesePostcard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -994,6 +1240,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>43</MemberValue>
       <Docs>
         <summary>Japanese postcard (100 mm by 148 mm).</summary>
       </Docs>
@@ -1002,6 +1249,9 @@
       <MemberSignature Language="C#" Value="JapanesePostcardRotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind JapanesePostcardRotated = int32(81)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.JapanesePostcardRotated" />
+      <MemberSignature Language="VB.NET" Value="JapanesePostcardRotated" />
+      <MemberSignature Language="F#" Value="JapanesePostcardRotated = 81" Usage="System.Drawing.Printing.PaperKind.JapanesePostcardRotated" />
+      <MemberSignature Language="C++ CLI" Value="JapanesePostcardRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1010,6 +1260,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>81</MemberValue>
       <Docs>
         <summary>Japanese rotated postcard (148 mm by 100 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1018,6 +1269,9 @@
       <MemberSignature Language="C#" Value="Ledger" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Ledger = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Ledger" />
+      <MemberSignature Language="VB.NET" Value="Ledger" />
+      <MemberSignature Language="F#" Value="Ledger = 4" Usage="System.Drawing.Printing.PaperKind.Ledger" />
+      <MemberSignature Language="C++ CLI" Value="Ledger" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1026,6 +1280,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Ledger paper (17 in. by 11 in.).</summary>
       </Docs>
@@ -1034,6 +1289,9 @@
       <MemberSignature Language="C#" Value="Legal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Legal = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Legal" />
+      <MemberSignature Language="VB.NET" Value="Legal" />
+      <MemberSignature Language="F#" Value="Legal = 5" Usage="System.Drawing.Printing.PaperKind.Legal" />
+      <MemberSignature Language="C++ CLI" Value="Legal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1042,6 +1300,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Legal paper (8.5 in. by 14 in.).</summary>
       </Docs>
@@ -1050,6 +1309,9 @@
       <MemberSignature Language="C#" Value="LegalExtra" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind LegalExtra = int32(51)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.LegalExtra" />
+      <MemberSignature Language="VB.NET" Value="LegalExtra" />
+      <MemberSignature Language="F#" Value="LegalExtra = 51" Usage="System.Drawing.Printing.PaperKind.LegalExtra" />
+      <MemberSignature Language="C++ CLI" Value="LegalExtra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1058,6 +1320,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>51</MemberValue>
       <Docs>
         <summary>Legal extra paper (9.275 in. by 15 in.). This value is specific to the PostScript driver and is used only by Linotronic printers in order to conserve paper.</summary>
       </Docs>
@@ -1066,6 +1329,9 @@
       <MemberSignature Language="C#" Value="Letter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Letter = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Letter" />
+      <MemberSignature Language="VB.NET" Value="Letter" />
+      <MemberSignature Language="F#" Value="Letter = 1" Usage="System.Drawing.Printing.PaperKind.Letter" />
+      <MemberSignature Language="C++ CLI" Value="Letter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1074,6 +1340,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Letter paper (8.5 in. by 11 in.).</summary>
       </Docs>
@@ -1082,6 +1349,9 @@
       <MemberSignature Language="C#" Value="LetterExtra" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind LetterExtra = int32(50)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.LetterExtra" />
+      <MemberSignature Language="VB.NET" Value="LetterExtra" />
+      <MemberSignature Language="F#" Value="LetterExtra = 50" Usage="System.Drawing.Printing.PaperKind.LetterExtra" />
+      <MemberSignature Language="C++ CLI" Value="LetterExtra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1090,6 +1360,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>50</MemberValue>
       <Docs>
         <summary>Letter extra paper (9.275 in. by 12 in.). This value is specific to the PostScript driver and is used only by Linotronic printers in order to conserve paper.</summary>
       </Docs>
@@ -1098,6 +1369,9 @@
       <MemberSignature Language="C#" Value="LetterExtraTransverse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind LetterExtraTransverse = int32(56)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.LetterExtraTransverse" />
+      <MemberSignature Language="VB.NET" Value="LetterExtraTransverse" />
+      <MemberSignature Language="F#" Value="LetterExtraTransverse = 56" Usage="System.Drawing.Printing.PaperKind.LetterExtraTransverse" />
+      <MemberSignature Language="C++ CLI" Value="LetterExtraTransverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1106,6 +1380,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>56</MemberValue>
       <Docs>
         <summary>Letter extra transverse paper (9.275 in. by 12 in.).</summary>
       </Docs>
@@ -1114,6 +1389,9 @@
       <MemberSignature Language="C#" Value="LetterPlus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind LetterPlus = int32(59)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.LetterPlus" />
+      <MemberSignature Language="VB.NET" Value="LetterPlus" />
+      <MemberSignature Language="F#" Value="LetterPlus = 59" Usage="System.Drawing.Printing.PaperKind.LetterPlus" />
+      <MemberSignature Language="C++ CLI" Value="LetterPlus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1122,6 +1400,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>59</MemberValue>
       <Docs>
         <summary>Letter plus paper (8.5 in. by 12.69 in.).</summary>
       </Docs>
@@ -1130,6 +1409,9 @@
       <MemberSignature Language="C#" Value="LetterRotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind LetterRotated = int32(75)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.LetterRotated" />
+      <MemberSignature Language="VB.NET" Value="LetterRotated" />
+      <MemberSignature Language="F#" Value="LetterRotated = 75" Usage="System.Drawing.Printing.PaperKind.LetterRotated" />
+      <MemberSignature Language="C++ CLI" Value="LetterRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1138,6 +1420,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>75</MemberValue>
       <Docs>
         <summary>Letter rotated paper (11 in. by 8.5 in.).</summary>
       </Docs>
@@ -1146,6 +1429,9 @@
       <MemberSignature Language="C#" Value="LetterSmall" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind LetterSmall = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.LetterSmall" />
+      <MemberSignature Language="VB.NET" Value="LetterSmall" />
+      <MemberSignature Language="F#" Value="LetterSmall = 2" Usage="System.Drawing.Printing.PaperKind.LetterSmall" />
+      <MemberSignature Language="C++ CLI" Value="LetterSmall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1154,6 +1440,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Letter small paper (8.5 in. by 11 in.).</summary>
       </Docs>
@@ -1162,6 +1449,9 @@
       <MemberSignature Language="C#" Value="LetterTransverse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind LetterTransverse = int32(54)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.LetterTransverse" />
+      <MemberSignature Language="VB.NET" Value="LetterTransverse" />
+      <MemberSignature Language="F#" Value="LetterTransverse = 54" Usage="System.Drawing.Printing.PaperKind.LetterTransverse" />
+      <MemberSignature Language="C++ CLI" Value="LetterTransverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1170,6 +1460,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>54</MemberValue>
       <Docs>
         <summary>Letter transverse paper (8.275 in. by 11 in.).</summary>
       </Docs>
@@ -1178,6 +1469,9 @@
       <MemberSignature Language="C#" Value="MonarchEnvelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind MonarchEnvelope = int32(37)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.MonarchEnvelope" />
+      <MemberSignature Language="VB.NET" Value="MonarchEnvelope" />
+      <MemberSignature Language="F#" Value="MonarchEnvelope = 37" Usage="System.Drawing.Printing.PaperKind.MonarchEnvelope" />
+      <MemberSignature Language="C++ CLI" Value="MonarchEnvelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1186,6 +1480,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>37</MemberValue>
       <Docs>
         <summary>Monarch envelope (3.875 in. by 7.5 in.).</summary>
       </Docs>
@@ -1194,6 +1489,9 @@
       <MemberSignature Language="C#" Value="Note" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Note = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Note" />
+      <MemberSignature Language="VB.NET" Value="Note" />
+      <MemberSignature Language="F#" Value="Note = 18" Usage="System.Drawing.Printing.PaperKind.Note" />
+      <MemberSignature Language="C++ CLI" Value="Note" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1202,6 +1500,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>Note paper (8.5 in. by 11 in.).</summary>
       </Docs>
@@ -1210,6 +1509,9 @@
       <MemberSignature Language="C#" Value="Number10Envelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Number10Envelope = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Number10Envelope" />
+      <MemberSignature Language="VB.NET" Value="Number10Envelope" />
+      <MemberSignature Language="F#" Value="Number10Envelope = 20" Usage="System.Drawing.Printing.PaperKind.Number10Envelope" />
+      <MemberSignature Language="C++ CLI" Value="Number10Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1218,6 +1520,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>\#10 envelope (4.125 in. by 9.5 in.).</summary>
       </Docs>
@@ -1226,6 +1529,9 @@
       <MemberSignature Language="C#" Value="Number11Envelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Number11Envelope = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Number11Envelope" />
+      <MemberSignature Language="VB.NET" Value="Number11Envelope" />
+      <MemberSignature Language="F#" Value="Number11Envelope = 21" Usage="System.Drawing.Printing.PaperKind.Number11Envelope" />
+      <MemberSignature Language="C++ CLI" Value="Number11Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1234,6 +1540,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>\#11 envelope (4.5 in. by 10.375 in.).</summary>
       </Docs>
@@ -1242,6 +1549,9 @@
       <MemberSignature Language="C#" Value="Number12Envelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Number12Envelope = int32(22)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Number12Envelope" />
+      <MemberSignature Language="VB.NET" Value="Number12Envelope" />
+      <MemberSignature Language="F#" Value="Number12Envelope = 22" Usage="System.Drawing.Printing.PaperKind.Number12Envelope" />
+      <MemberSignature Language="C++ CLI" Value="Number12Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1250,6 +1560,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>\#12 envelope (4.75 in. by 11 in.).</summary>
       </Docs>
@@ -1258,6 +1569,9 @@
       <MemberSignature Language="C#" Value="Number14Envelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Number14Envelope = int32(23)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Number14Envelope" />
+      <MemberSignature Language="VB.NET" Value="Number14Envelope" />
+      <MemberSignature Language="F#" Value="Number14Envelope = 23" Usage="System.Drawing.Printing.PaperKind.Number14Envelope" />
+      <MemberSignature Language="C++ CLI" Value="Number14Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1266,6 +1580,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>\#14 envelope (5 in. by 11.5 in.).</summary>
       </Docs>
@@ -1274,6 +1589,9 @@
       <MemberSignature Language="C#" Value="Number9Envelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Number9Envelope = int32(19)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Number9Envelope" />
+      <MemberSignature Language="VB.NET" Value="Number9Envelope" />
+      <MemberSignature Language="F#" Value="Number9Envelope = 19" Usage="System.Drawing.Printing.PaperKind.Number9Envelope" />
+      <MemberSignature Language="C++ CLI" Value="Number9Envelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1282,6 +1600,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>\#9 envelope (3.875 in. by 8.875 in.).</summary>
       </Docs>
@@ -1290,6 +1609,9 @@
       <MemberSignature Language="C#" Value="PersonalEnvelope" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PersonalEnvelope = int32(38)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PersonalEnvelope" />
+      <MemberSignature Language="VB.NET" Value="PersonalEnvelope" />
+      <MemberSignature Language="F#" Value="PersonalEnvelope = 38" Usage="System.Drawing.Printing.PaperKind.PersonalEnvelope" />
+      <MemberSignature Language="C++ CLI" Value="PersonalEnvelope" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1298,6 +1620,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>38</MemberValue>
       <Docs>
         <summary>6 3/4 envelope (3.625 in. by 6.5 in.).</summary>
       </Docs>
@@ -1306,6 +1629,9 @@
       <MemberSignature Language="C#" Value="Prc16K" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Prc16K = int32(93)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Prc16K" />
+      <MemberSignature Language="VB.NET" Value="Prc16K" />
+      <MemberSignature Language="F#" Value="Prc16K = 93" Usage="System.Drawing.Printing.PaperKind.Prc16K" />
+      <MemberSignature Language="C++ CLI" Value="Prc16K" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1314,6 +1640,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>93</MemberValue>
       <Docs>
         <summary>16K paper (146 mm by 215 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1322,6 +1649,9 @@
       <MemberSignature Language="C#" Value="Prc16KRotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Prc16KRotated = int32(106)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Prc16KRotated" />
+      <MemberSignature Language="VB.NET" Value="Prc16KRotated" />
+      <MemberSignature Language="F#" Value="Prc16KRotated = 106" Usage="System.Drawing.Printing.PaperKind.Prc16KRotated" />
+      <MemberSignature Language="C++ CLI" Value="Prc16KRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1330,6 +1660,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>106</MemberValue>
       <Docs>
         <summary>16K rotated paper (146 mm by 215 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1338,6 +1669,9 @@
       <MemberSignature Language="C#" Value="Prc32K" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Prc32K = int32(94)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Prc32K" />
+      <MemberSignature Language="VB.NET" Value="Prc32K" />
+      <MemberSignature Language="F#" Value="Prc32K = 94" Usage="System.Drawing.Printing.PaperKind.Prc32K" />
+      <MemberSignature Language="C++ CLI" Value="Prc32K" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1346,6 +1680,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>94</MemberValue>
       <Docs>
         <summary>32K paper (97 mm by 151 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1354,6 +1689,9 @@
       <MemberSignature Language="C#" Value="Prc32KBig" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Prc32KBig = int32(95)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Prc32KBig" />
+      <MemberSignature Language="VB.NET" Value="Prc32KBig" />
+      <MemberSignature Language="F#" Value="Prc32KBig = 95" Usage="System.Drawing.Printing.PaperKind.Prc32KBig" />
+      <MemberSignature Language="C++ CLI" Value="Prc32KBig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1362,6 +1700,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>95</MemberValue>
       <Docs>
         <summary>32K big paper (97 mm by 151 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1370,6 +1709,9 @@
       <MemberSignature Language="C#" Value="Prc32KBigRotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Prc32KBigRotated = int32(108)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Prc32KBigRotated" />
+      <MemberSignature Language="VB.NET" Value="Prc32KBigRotated" />
+      <MemberSignature Language="F#" Value="Prc32KBigRotated = 108" Usage="System.Drawing.Printing.PaperKind.Prc32KBigRotated" />
+      <MemberSignature Language="C++ CLI" Value="Prc32KBigRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1378,6 +1720,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>108</MemberValue>
       <Docs>
         <summary>32K big rotated paper (97 mm by 151 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1386,6 +1729,9 @@
       <MemberSignature Language="C#" Value="Prc32KRotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Prc32KRotated = int32(107)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Prc32KRotated" />
+      <MemberSignature Language="VB.NET" Value="Prc32KRotated" />
+      <MemberSignature Language="F#" Value="Prc32KRotated = 107" Usage="System.Drawing.Printing.PaperKind.Prc32KRotated" />
+      <MemberSignature Language="C++ CLI" Value="Prc32KRotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1394,6 +1740,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>107</MemberValue>
       <Docs>
         <summary>32K rotated paper (97 mm by 151 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1402,6 +1749,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber1 = int32(96)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber1" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber1" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber1 = 96" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber1" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1410,6 +1760,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>96</MemberValue>
       <Docs>
         <summary>\#1 envelope (102 mm by 165 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1418,6 +1769,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber10" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber10 = int32(105)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber10" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber10" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber10 = 105" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber10" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber10" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1426,6 +1780,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>105</MemberValue>
       <Docs>
         <summary>\#10 envelope (324 mm by 458 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1434,6 +1789,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber10Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber10Rotated = int32(118)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber10Rotated" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber10Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber10Rotated = 118" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber10Rotated" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber10Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1442,6 +1800,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>118</MemberValue>
       <Docs>
         <summary>\#10 rotated envelope (458 mm by 324 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1450,6 +1809,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber1Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber1Rotated = int32(109)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber1Rotated" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber1Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber1Rotated = 109" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber1Rotated" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber1Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1458,6 +1820,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>109</MemberValue>
       <Docs>
         <summary>\#1 rotated envelope (165 mm by 102 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1466,6 +1829,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber2 = int32(97)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber2" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber2" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber2 = 97" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber2" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1474,6 +1840,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>97</MemberValue>
       <Docs>
         <summary>\#2 envelope (102 mm by 176 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1482,6 +1849,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber2Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber2Rotated = int32(110)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber2Rotated" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber2Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber2Rotated = 110" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber2Rotated" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber2Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1490,6 +1860,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>110</MemberValue>
       <Docs>
         <summary>\#2 rotated envelope (176 mm by 102 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1498,6 +1869,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber3 = int32(98)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber3" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber3" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber3 = 98" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber3" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1506,6 +1880,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>98</MemberValue>
       <Docs>
         <summary>\#3 envelope (125 mm by 176 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1514,6 +1889,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber3Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber3Rotated = int32(111)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber3Rotated" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber3Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber3Rotated = 111" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber3Rotated" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber3Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1522,6 +1900,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>111</MemberValue>
       <Docs>
         <summary>\#3 rotated envelope (176 mm by 125 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1530,6 +1909,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber4 = int32(99)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber4" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber4" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber4 = 99" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber4" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1538,6 +1920,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>99</MemberValue>
       <Docs>
         <summary>\#4 envelope (110 mm by 208 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1546,6 +1929,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber4Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber4Rotated = int32(112)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber4Rotated" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber4Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber4Rotated = 112" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber4Rotated" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber4Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1554,6 +1940,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>112</MemberValue>
       <Docs>
         <summary>\#4 rotated envelope (208 mm by 110 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1562,6 +1949,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber5 = int32(100)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber5" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber5" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber5 = 100" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber5" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1570,6 +1960,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>100</MemberValue>
       <Docs>
         <summary>\#5 envelope (110 mm by 220 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1578,6 +1969,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber5Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber5Rotated = int32(113)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber5Rotated" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber5Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber5Rotated = 113" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber5Rotated" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber5Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1586,6 +1980,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>113</MemberValue>
       <Docs>
         <summary>Envelope #5 rotated envelope (220 mm by 110 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1594,6 +1989,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber6" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber6 = int32(101)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber6" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber6" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber6 = 101" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber6" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1602,6 +2000,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>101</MemberValue>
       <Docs>
         <summary>\#6 envelope (120 mm by 230 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1610,6 +2009,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber6Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber6Rotated = int32(114)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber6Rotated" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber6Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber6Rotated = 114" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber6Rotated" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber6Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1618,6 +2020,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>114</MemberValue>
       <Docs>
         <summary>\#6 rotated envelope (230 mm by 120 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1626,6 +2029,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber7" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber7 = int32(102)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber7" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber7" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber7 = 102" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber7" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1634,6 +2040,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>102</MemberValue>
       <Docs>
         <summary>\#7 envelope (160 mm by 230 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1642,6 +2049,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber7Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber7Rotated = int32(115)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber7Rotated" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber7Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber7Rotated = 115" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber7Rotated" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber7Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1650,6 +2060,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>115</MemberValue>
       <Docs>
         <summary>\#7 rotated envelope (230 mm by 160 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1658,6 +2069,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber8" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber8 = int32(103)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber8" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber8" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber8 = 103" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber8" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1666,6 +2080,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>103</MemberValue>
       <Docs>
         <summary>\#8 envelope (120 mm by 309 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1674,6 +2089,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber8Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber8Rotated = int32(116)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber8Rotated" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber8Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber8Rotated = 116" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber8Rotated" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber8Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1682,6 +2100,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>116</MemberValue>
       <Docs>
         <summary>\#8 rotated envelope (309 mm by 120 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1690,6 +2109,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber9" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber9 = int32(104)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber9" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber9" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber9 = 104" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber9" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1698,6 +2120,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>104</MemberValue>
       <Docs>
         <summary>\#9 envelope (229 mm by 324 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1706,6 +2129,9 @@
       <MemberSignature Language="C#" Value="PrcEnvelopeNumber9Rotated" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind PrcEnvelopeNumber9Rotated = int32(117)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.PrcEnvelopeNumber9Rotated" />
+      <MemberSignature Language="VB.NET" Value="PrcEnvelopeNumber9Rotated" />
+      <MemberSignature Language="F#" Value="PrcEnvelopeNumber9Rotated = 117" Usage="System.Drawing.Printing.PaperKind.PrcEnvelopeNumber9Rotated" />
+      <MemberSignature Language="C++ CLI" Value="PrcEnvelopeNumber9Rotated" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1714,6 +2140,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>117</MemberValue>
       <Docs>
         <summary>\#9 rotated envelope (324 mm by 229 mm). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1722,6 +2149,9 @@
       <MemberSignature Language="C#" Value="Quarto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Quarto = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Quarto" />
+      <MemberSignature Language="VB.NET" Value="Quarto" />
+      <MemberSignature Language="F#" Value="Quarto = 15" Usage="System.Drawing.Printing.PaperKind.Quarto" />
+      <MemberSignature Language="C++ CLI" Value="Quarto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1730,6 +2160,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>Quarto paper (215 mm by 275 mm).</summary>
       </Docs>
@@ -1738,6 +2169,9 @@
       <MemberSignature Language="C#" Value="Standard10x11" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Standard10x11 = int32(45)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Standard10x11" />
+      <MemberSignature Language="VB.NET" Value="Standard10x11" />
+      <MemberSignature Language="F#" Value="Standard10x11 = 45" Usage="System.Drawing.Printing.PaperKind.Standard10x11" />
+      <MemberSignature Language="C++ CLI" Value="Standard10x11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1746,6 +2180,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>45</MemberValue>
       <Docs>
         <summary>Standard paper (10 in. by 11 in.).</summary>
       </Docs>
@@ -1754,6 +2189,9 @@
       <MemberSignature Language="C#" Value="Standard10x14" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Standard10x14 = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Standard10x14" />
+      <MemberSignature Language="VB.NET" Value="Standard10x14" />
+      <MemberSignature Language="F#" Value="Standard10x14 = 16" Usage="System.Drawing.Printing.PaperKind.Standard10x14" />
+      <MemberSignature Language="C++ CLI" Value="Standard10x14" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1762,6 +2200,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Standard paper (10 in. by 14 in.).</summary>
       </Docs>
@@ -1770,6 +2209,9 @@
       <MemberSignature Language="C#" Value="Standard11x17" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Standard11x17 = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Standard11x17" />
+      <MemberSignature Language="VB.NET" Value="Standard11x17" />
+      <MemberSignature Language="F#" Value="Standard11x17 = 17" Usage="System.Drawing.Printing.PaperKind.Standard11x17" />
+      <MemberSignature Language="C++ CLI" Value="Standard11x17" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1778,6 +2220,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>Standard paper (11 in. by 17 in.).</summary>
       </Docs>
@@ -1786,6 +2229,9 @@
       <MemberSignature Language="C#" Value="Standard12x11" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Standard12x11 = int32(90)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Standard12x11" />
+      <MemberSignature Language="VB.NET" Value="Standard12x11" />
+      <MemberSignature Language="F#" Value="Standard12x11 = 90" Usage="System.Drawing.Printing.PaperKind.Standard12x11" />
+      <MemberSignature Language="C++ CLI" Value="Standard12x11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1794,6 +2240,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>90</MemberValue>
       <Docs>
         <summary>Standard paper (12 in. by 11 in.). Requires Windows 98, Windows NT 4.0, or later.</summary>
       </Docs>
@@ -1802,6 +2249,9 @@
       <MemberSignature Language="C#" Value="Standard15x11" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Standard15x11 = int32(46)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Standard15x11" />
+      <MemberSignature Language="VB.NET" Value="Standard15x11" />
+      <MemberSignature Language="F#" Value="Standard15x11 = 46" Usage="System.Drawing.Printing.PaperKind.Standard15x11" />
+      <MemberSignature Language="C++ CLI" Value="Standard15x11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1810,6 +2260,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>46</MemberValue>
       <Docs>
         <summary>Standard paper (15 in. by 11 in.).</summary>
       </Docs>
@@ -1818,6 +2269,9 @@
       <MemberSignature Language="C#" Value="Standard9x11" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Standard9x11 = int32(44)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Standard9x11" />
+      <MemberSignature Language="VB.NET" Value="Standard9x11" />
+      <MemberSignature Language="F#" Value="Standard9x11 = 44" Usage="System.Drawing.Printing.PaperKind.Standard9x11" />
+      <MemberSignature Language="C++ CLI" Value="Standard9x11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1826,6 +2280,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>44</MemberValue>
       <Docs>
         <summary>Standard paper (9 in. by 11 in.).</summary>
       </Docs>
@@ -1834,6 +2289,9 @@
       <MemberSignature Language="C#" Value="Statement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Statement = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Statement" />
+      <MemberSignature Language="VB.NET" Value="Statement" />
+      <MemberSignature Language="F#" Value="Statement = 6" Usage="System.Drawing.Printing.PaperKind.Statement" />
+      <MemberSignature Language="C++ CLI" Value="Statement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1842,6 +2300,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Statement paper (5.5 in. by 8.5 in.).</summary>
       </Docs>
@@ -1850,6 +2309,9 @@
       <MemberSignature Language="C#" Value="Tabloid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind Tabloid = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.Tabloid" />
+      <MemberSignature Language="VB.NET" Value="Tabloid" />
+      <MemberSignature Language="F#" Value="Tabloid = 3" Usage="System.Drawing.Printing.PaperKind.Tabloid" />
+      <MemberSignature Language="C++ CLI" Value="Tabloid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1858,6 +2320,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Tabloid paper (11 in. by 17 in.).</summary>
       </Docs>
@@ -1866,6 +2329,9 @@
       <MemberSignature Language="C#" Value="TabloidExtra" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind TabloidExtra = int32(52)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.TabloidExtra" />
+      <MemberSignature Language="VB.NET" Value="TabloidExtra" />
+      <MemberSignature Language="F#" Value="TabloidExtra = 52" Usage="System.Drawing.Printing.PaperKind.TabloidExtra" />
+      <MemberSignature Language="C++ CLI" Value="TabloidExtra" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1874,6 +2340,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>52</MemberValue>
       <Docs>
         <summary>Tabloid extra paper (11.69 in. by 18 in.). This value is specific to the PostScript driver and is used only by Linotronic printers in order to conserve paper.</summary>
       </Docs>
@@ -1882,6 +2349,9 @@
       <MemberSignature Language="C#" Value="USStandardFanfold" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Printing.PaperKind USStandardFanfold = int32(39)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Printing.PaperKind.USStandardFanfold" />
+      <MemberSignature Language="VB.NET" Value="USStandardFanfold" />
+      <MemberSignature Language="F#" Value="USStandardFanfold = 39" Usage="System.Drawing.Printing.PaperKind.USStandardFanfold" />
+      <MemberSignature Language="C++ CLI" Value="USStandardFanfold" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1890,6 +2360,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PaperKind</ReturnType>
       </ReturnValue>
+      <MemberValue>39</MemberValue>
       <Docs>
         <summary>US standard fanfold (14.875 in. by 11 in.).</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="X509RevocationFlag" FullName="System.Security.Cryptography.X509Certificates.X509RevocationFlag">
+﻿<Type Name="X509RevocationFlag" FullName="System.Security.Cryptography.X509Certificates.X509RevocationFlag">
   <TypeSignature Language="C#" Value="public enum X509RevocationFlag" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed X509RevocationFlag extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.X509RevocationFlag" />
+  <TypeSignature Language="VB.NET" Value="Public Enum X509RevocationFlag" />
+  <TypeSignature Language="F#" Value="type X509RevocationFlag = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class X509RevocationFlag" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +48,9 @@
       <MemberSignature Language="C#" Value="EndCertificateOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509RevocationFlag EndCertificateOnly = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509RevocationFlag.EndCertificateOnly" />
+      <MemberSignature Language="VB.NET" Value="EndCertificateOnly" />
+      <MemberSignature Language="F#" Value="EndCertificateOnly = 0" Usage="System.Security.Cryptography.X509Certificates.X509RevocationFlag.EndCertificateOnly" />
+      <MemberSignature Language="C++ CLI" Value="EndCertificateOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -64,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509RevocationFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Only the end certificate is checked for revocation.</summary>
       </Docs>
@@ -72,6 +79,9 @@
       <MemberSignature Language="C#" Value="EntireChain" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509RevocationFlag EntireChain = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509RevocationFlag.EntireChain" />
+      <MemberSignature Language="VB.NET" Value="EntireChain" />
+      <MemberSignature Language="F#" Value="EntireChain = 1" Usage="System.Security.Cryptography.X509Certificates.X509RevocationFlag.EntireChain" />
+      <MemberSignature Language="C++ CLI" Value="EntireChain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -91,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509RevocationFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The entire chain of certificates is checked for revocation.</summary>
       </Docs>
@@ -99,6 +110,9 @@
       <MemberSignature Language="C#" Value="ExcludeRoot" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.X509Certificates.X509RevocationFlag ExcludeRoot = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.X509Certificates.X509RevocationFlag.ExcludeRoot" />
+      <MemberSignature Language="VB.NET" Value="ExcludeRoot" />
+      <MemberSignature Language="F#" Value="ExcludeRoot = 2" Usage="System.Security.Cryptography.X509Certificates.X509RevocationFlag.ExcludeRoot" />
+      <MemberSignature Language="C++ CLI" Value="ExcludeRoot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -118,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.X509Certificates.X509RevocationFlag</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The entire chain, except the root certificate, is checked for revocation.</summary>
       </Docs>

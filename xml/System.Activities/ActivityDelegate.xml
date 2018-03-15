@@ -1,7 +1,10 @@
-<Type Name="ActivityDelegate" FullName="System.Activities.ActivityDelegate">
+﻿<Type Name="ActivityDelegate" FullName="System.Activities.ActivityDelegate">
   <TypeSignature Language="C#" Value="public abstract class ActivityDelegate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ActivityDelegate extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.ActivityDelegate" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ActivityDelegate" />
+  <TypeSignature Language="F#" Value="type ActivityDelegate = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityDelegate abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,8 @@
       <MemberSignature Language="C#" Value="protected ActivityDelegate ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityDelegate.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ActivityDelegate();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -46,6 +51,9 @@
       <MemberSignature Language="C#" Value="public string DisplayName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityDelegate.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string with get, set" Usage="System.Activities.ActivityDelegate.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -68,9 +76,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetResultArgument">
-      <MemberSignature Language="C#" Value="protected virtual System.Activities.DelegateOutArgument GetResultArgument ();" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Activities.DelegateOutArgument GetResultArgument ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Activities.DelegateOutArgument GetResultArgument() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityDelegate.GetResultArgument" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function GetResultArgument () As DelegateOutArgument" />
+      <MemberSignature Language="F#" Value="abstract member GetResultArgument : unit -&gt; System.Activities.DelegateOutArgument&#xA;override this.GetResultArgument : unit -&gt; System.Activities.DelegateOutArgument" Usage="activityDelegate.GetResultArgument " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Activities::DelegateOutArgument ^ GetResultArgument();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -90,6 +101,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Activity Handler { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity Handler" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ActivityDelegate.Handler" />
+      <MemberSignature Language="VB.NET" Value="Public Property Handler As Activity" />
+      <MemberSignature Language="F#" Value="member this.Handler : System.Activities.Activity with get, set" Usage="System.Activities.ActivityDelegate.Handler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Handler { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -120,6 +134,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnGetRuntimeDelegateArguments (System.Collections.Generic.IList&lt;System.Activities.RuntimeDelegateArgument&gt; runtimeDelegateArguments);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnGetRuntimeDelegateArguments(class System.Collections.Generic.IList`1&lt;class System.Activities.RuntimeDelegateArgument&gt; runtimeDelegateArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityDelegate.OnGetRuntimeDelegateArguments(System.Collections.Generic.IList{System.Activities.RuntimeDelegateArgument})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnGetRuntimeDelegateArguments (runtimeDelegateArguments As IList(Of RuntimeDelegateArgument))" />
+      <MemberSignature Language="F#" Value="abstract member OnGetRuntimeDelegateArguments : System.Collections.Generic.IList&lt;System.Activities.RuntimeDelegateArgument&gt; -&gt; unit&#xA;override this.OnGetRuntimeDelegateArguments : System.Collections.Generic.IList&lt;System.Activities.RuntimeDelegateArgument&gt; -&gt; unit" Usage="activityDelegate.OnGetRuntimeDelegateArguments runtimeDelegateArguments" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnGetRuntimeDelegateArguments(System::Collections::Generic::IList&lt;System::Activities::RuntimeDelegateArgument ^&gt; ^ runtimeDelegateArguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -148,6 +165,9 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeDisplayName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeDisplayName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityDelegate.ShouldSerializeDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeDisplayName () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeDisplayName : unit -&gt; bool" Usage="activityDelegate.ShouldSerializeDisplayName " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeDisplayName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -180,6 +200,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityDelegate.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="activityDelegate.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

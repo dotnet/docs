@@ -1,7 +1,10 @@
-<Type Name="AnnotationStore" FullName="System.Windows.Annotations.Storage.AnnotationStore">
+﻿<Type Name="AnnotationStore" FullName="System.Windows.Annotations.Storage.AnnotationStore">
   <TypeSignature Language="C#" Value="public abstract class AnnotationStore : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit AnnotationStore extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Annotations.Storage.AnnotationStore" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class AnnotationStore&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type AnnotationStore = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AnnotationStore abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,8 @@
       <MemberSignature Language="C#" Value="protected AnnotationStore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.AnnotationStore.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AnnotationStore();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -38,6 +43,9 @@
       <MemberSignature Language="C#" Value="public abstract void AddAnnotation (System.Windows.Annotations.Annotation newAnnotation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddAnnotation(class System.Windows.Annotations.Annotation newAnnotation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.AnnotationStore.AddAnnotation(System.Windows.Annotations.Annotation)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub AddAnnotation (newAnnotation As Annotation)" />
+      <MemberSignature Language="F#" Value="abstract member AddAnnotation : System.Windows.Annotations.Annotation -&gt; unit" Usage="annotationStore.AddAnnotation newAnnotation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void AddAnnotation(System::Windows::Annotations::Annotation ^ newAnnotation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +80,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Annotations.AnnotationResourceChangedEventHandler AnchorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Annotations.AnnotationResourceChangedEventHandler AnchorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Annotations.Storage.AnnotationStore.AnchorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event AnchorChanged As AnnotationResourceChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.AnchorChanged : System.Windows.Annotations.AnnotationResourceChangedEventHandler " Usage="member this.AnchorChanged : System.Windows.Annotations.AnnotationResourceChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Annotations::AnnotationResourceChangedEventHandler ^ AnchorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -103,6 +114,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Annotations.AnnotationAuthorChangedEventHandler AuthorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Annotations.AnnotationAuthorChangedEventHandler AuthorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Annotations.Storage.AnnotationStore.AuthorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event AuthorChanged As AnnotationAuthorChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.AuthorChanged : System.Windows.Annotations.AnnotationAuthorChangedEventHandler " Usage="member this.AuthorChanged : System.Windows.Annotations.AnnotationAuthorChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Annotations::AnnotationAuthorChangedEventHandler ^ AuthorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -134,6 +148,9 @@
       <MemberSignature Language="C#" Value="public abstract bool AutoFlush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoFlush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Storage.AnnotationStore.AutoFlush" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property AutoFlush As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoFlush : bool with get, set" Usage="System.Windows.Annotations.Storage.AnnotationStore.AutoFlush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool AutoFlush { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -163,6 +180,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Annotations.AnnotationResourceChangedEventHandler CargoChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Annotations.AnnotationResourceChangedEventHandler CargoChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Annotations.Storage.AnnotationStore.CargoChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event CargoChanged As AnnotationResourceChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.CargoChanged : System.Windows.Annotations.AnnotationResourceChangedEventHandler " Usage="member this.CargoChanged : System.Windows.Annotations.AnnotationResourceChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Annotations::AnnotationResourceChangedEventHandler ^ CargoChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -194,6 +214,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Annotations.Annotation DeleteAnnotation (Guid annotationId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Annotations.Annotation DeleteAnnotation(valuetype System.Guid annotationId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.AnnotationStore.DeleteAnnotation(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function DeleteAnnotation (annotationId As Guid) As Annotation" />
+      <MemberSignature Language="F#" Value="abstract member DeleteAnnotation : Guid -&gt; System.Windows.Annotations.Annotation" Usage="annotationStore.DeleteAnnotation annotationId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Annotations::Annotation ^ DeleteAnnotation(Guid annotationId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -226,11 +249,27 @@
         <altmember cref="Overload:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases resources used by the store.</summary>
+        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.Finalize" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.AnnotationStore.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="annotationStore.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -261,6 +300,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.AnnotationStore.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="annotationStore.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -298,6 +340,9 @@
       <MemberSignature Language="C#" Value="~AnnotationStore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.AnnotationStore.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="annotationStore.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!AnnotationStore ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -325,6 +370,9 @@
       <MemberSignature Language="C#" Value="public abstract void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.AnnotationStore.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Flush ()" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit" Usage="annotationStore.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -367,6 +415,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Windows.Annotations.Annotation GetAnnotation (Guid annotationId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Annotations.Annotation GetAnnotation(valuetype System.Guid annotationId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotation(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAnnotation (annotationId As Guid) As Annotation" />
+      <MemberSignature Language="F#" Value="abstract member GetAnnotation : Guid -&gt; System.Windows.Annotations.Annotation" Usage="annotationStore.GetAnnotation annotationId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Windows::Annotations::Annotation ^ GetAnnotation(Guid annotationId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -413,6 +464,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IList&lt;System.Windows.Annotations.Annotation&gt; GetAnnotations ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Windows.Annotations.Annotation&gt; GetAnnotations() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAnnotations () As IList(Of Annotation)" />
+      <MemberSignature Language="F#" Value="abstract member GetAnnotations : unit -&gt; System.Collections.Generic.IList&lt;System.Windows.Annotations.Annotation&gt;" Usage="annotationStore.GetAnnotations " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IList&lt;System::Windows::Annotations::Annotation ^&gt; ^ GetAnnotations();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -445,6 +499,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IList&lt;System.Windows.Annotations.Annotation&gt; GetAnnotations (System.Windows.Annotations.ContentLocator anchorLocator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Windows.Annotations.Annotation&gt; GetAnnotations(class System.Windows.Annotations.ContentLocator anchorLocator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations(System.Windows.Annotations.ContentLocator)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetAnnotations (anchorLocator As ContentLocator) As IList(Of Annotation)" />
+      <MemberSignature Language="F#" Value="abstract member GetAnnotations : System.Windows.Annotations.ContentLocator -&gt; System.Collections.Generic.IList&lt;System.Windows.Annotations.Annotation&gt;" Usage="annotationStore.GetAnnotations anchorLocator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::Generic::IList&lt;System::Windows::Annotations::Annotation ^&gt; ^ GetAnnotations(System::Windows::Annotations::ContentLocator ^ anchorLocator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -476,6 +533,9 @@
       <MemberSignature Language="C#" Value="protected bool IsDisposed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDisposed" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Storage.AnnotationStore.IsDisposed" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsDisposed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDisposed : bool" Usage="System.Windows.Annotations.Storage.AnnotationStore.IsDisposed" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsDisposed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -495,6 +555,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnAnchorChanged (System.Windows.Annotations.AnnotationResourceChangedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAnchorChanged(class System.Windows.Annotations.AnnotationResourceChangedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.AnnotationStore.OnAnchorChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAnchorChanged (args As AnnotationResourceChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnAnchorChanged : System.Windows.Annotations.AnnotationResourceChangedEventArgs -&gt; unit&#xA;override this.OnAnchorChanged : System.Windows.Annotations.AnnotationResourceChangedEventArgs -&gt; unit" Usage="annotationStore.OnAnchorChanged args" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAnchorChanged(System::Windows::Annotations::AnnotationResourceChangedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -523,6 +586,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnAuthorChanged (System.Windows.Annotations.AnnotationAuthorChangedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAuthorChanged(class System.Windows.Annotations.AnnotationAuthorChangedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.AnnotationStore.OnAuthorChanged(System.Windows.Annotations.AnnotationAuthorChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAuthorChanged (args As AnnotationAuthorChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnAuthorChanged : System.Windows.Annotations.AnnotationAuthorChangedEventArgs -&gt; unit&#xA;override this.OnAuthorChanged : System.Windows.Annotations.AnnotationAuthorChangedEventArgs -&gt; unit" Usage="annotationStore.OnAuthorChanged args" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAuthorChanged(System::Windows::Annotations::AnnotationAuthorChangedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -551,6 +617,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCargoChanged (System.Windows.Annotations.AnnotationResourceChangedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCargoChanged(class System.Windows.Annotations.AnnotationResourceChangedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.AnnotationStore.OnCargoChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCargoChanged (args As AnnotationResourceChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnCargoChanged : System.Windows.Annotations.AnnotationResourceChangedEventArgs -&gt; unit&#xA;override this.OnCargoChanged : System.Windows.Annotations.AnnotationResourceChangedEventArgs -&gt; unit" Usage="annotationStore.OnCargoChanged args" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCargoChanged(System::Windows::Annotations::AnnotationResourceChangedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -579,6 +648,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnStoreContentChanged (System.Windows.Annotations.Storage.StoreContentChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnStoreContentChanged(class System.Windows.Annotations.Storage.StoreContentChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Annotations.Storage.AnnotationStore.OnStoreContentChanged(System.Windows.Annotations.Storage.StoreContentChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStoreContentChanged (e As StoreContentChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnStoreContentChanged : System.Windows.Annotations.Storage.StoreContentChangedEventArgs -&gt; unit&#xA;override this.OnStoreContentChanged : System.Windows.Annotations.Storage.StoreContentChangedEventArgs -&gt; unit" Usage="annotationStore.OnStoreContentChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStoreContentChanged(System::Windows::Annotations::Storage::StoreContentChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -607,6 +679,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Annotations.Storage.StoreContentChangedEventHandler StoreContentChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Annotations.Storage.StoreContentChangedEventHandler StoreContentChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Annotations.Storage.AnnotationStore.StoreContentChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event StoreContentChanged As StoreContentChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.StoreContentChanged : System.Windows.Annotations.Storage.StoreContentChangedEventHandler " Usage="member this.StoreContentChanged : System.Windows.Annotations.Storage.StoreContentChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Annotations::Storage::StoreContentChangedEventHandler ^ StoreContentChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -644,6 +719,9 @@
       <MemberSignature Language="C#" Value="protected object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Annotations.Storage.AnnotationStore.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Windows.Annotations.Storage.AnnotationStore.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -658,15 +736,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases resources used by the store.</summary>
-        <altmember cref="M:System.Windows.Annotations.Storage.AnnotationStore.Finalize" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

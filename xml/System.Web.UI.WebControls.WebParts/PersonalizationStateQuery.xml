@@ -1,7 +1,10 @@
-<Type Name="PersonalizationStateQuery" FullName="System.Web.UI.WebControls.WebParts.PersonalizationStateQuery">
+﻿<Type Name="PersonalizationStateQuery" FullName="System.Web.UI.WebControls.WebParts.PersonalizationStateQuery">
   <TypeSignature Language="C#" Value="public sealed class PersonalizationStateQuery" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PersonalizationStateQuery extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PersonalizationStateQuery" />
+  <TypeSignature Language="F#" Value="type PersonalizationStateQuery = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PersonalizationStateQuery sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public PersonalizationStateQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PersonalizationStateQuery();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,6 +54,9 @@
       <MemberSignature Language="C#" Value="public object this[string queryKey] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(queryKey As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ queryKey); void set(System::String ^ queryKey, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +100,9 @@
       <MemberSignature Language="C#" Value="public string PathToMatch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PathToMatch" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch" />
+      <MemberSignature Language="VB.NET" Value="Public Property PathToMatch As String" />
+      <MemberSignature Language="F#" Value="member this.PathToMatch : string with get, set" Usage="System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PathToMatch { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +128,9 @@
       <MemberSignature Language="C#" Value="public DateTime UserInactiveSinceDate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime UserInactiveSinceDate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate" />
+      <MemberSignature Language="VB.NET" Value="Public Property UserInactiveSinceDate As DateTime" />
+      <MemberSignature Language="F#" Value="member this.UserInactiveSinceDate : DateTime with get, set" Usage="System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime UserInactiveSinceDate { DateTime get(); void set(DateTime value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +158,9 @@
       <MemberSignature Language="C#" Value="public string UsernameToMatch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UsernameToMatch" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch" />
+      <MemberSignature Language="VB.NET" Value="Public Property UsernameToMatch As String" />
+      <MemberSignature Language="F#" Value="member this.UsernameToMatch : string with get, set" Usage="System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UsernameToMatch { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

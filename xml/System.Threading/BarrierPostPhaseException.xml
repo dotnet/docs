@@ -1,7 +1,10 @@
-<Type Name="BarrierPostPhaseException" FullName="System.Threading.BarrierPostPhaseException">
+﻿<Type Name="BarrierPostPhaseException" FullName="System.Threading.BarrierPostPhaseException">
   <TypeSignature Language="C#" Value="public class BarrierPostPhaseException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit BarrierPostPhaseException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:System.Threading.BarrierPostPhaseException" />
+  <TypeSignature Language="VB.NET" Value="Public Class BarrierPostPhaseException&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type BarrierPostPhaseException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BarrierPostPhaseException : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +29,23 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.BarrierPostPhaseException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public BarrierPostPhaseException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.BarrierPostPhaseException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BarrierPostPhaseException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -70,6 +86,9 @@
       <MemberSignature Language="C#" Value="public BarrierPostPhaseException (Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.BarrierPostPhaseException.#ctor(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Threading.BarrierPostPhaseException : Exception -&gt; System.Threading.BarrierPostPhaseException" Usage="new System.Threading.BarrierPostPhaseException innerException" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BarrierPostPhaseException(Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -99,6 +118,9 @@
       <MemberSignature Language="C#" Value="public BarrierPostPhaseException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.BarrierPostPhaseException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Threading.BarrierPostPhaseException : string -&gt; System.Threading.BarrierPostPhaseException" Usage="new System.Threading.BarrierPostPhaseException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BarrierPostPhaseException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -140,6 +162,9 @@
       <MemberSignature Language="C#" Value="protected BarrierPostPhaseException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.BarrierPostPhaseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Threading.BarrierPostPhaseException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Threading.BarrierPostPhaseException" Usage="new System.Threading.BarrierPostPhaseException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BarrierPostPhaseException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -181,6 +206,9 @@
       <MemberSignature Language="C#" Value="public BarrierPostPhaseException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.BarrierPostPhaseException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Threading.BarrierPostPhaseException : string * Exception -&gt; System.Threading.BarrierPostPhaseException" Usage="new System.Threading.BarrierPostPhaseException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BarrierPostPhaseException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -222,16 +250,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Threading.BarrierPostPhaseException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

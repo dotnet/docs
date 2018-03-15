@@ -1,7 +1,10 @@
-<Type Name="MapAreasCollection" FullName="System.Web.UI.DataVisualization.Charting.MapAreasCollection">
+﻿<Type Name="MapAreasCollection" FullName="System.Web.UI.DataVisualization.Charting.MapAreasCollection">
   <TypeSignature Language="C#" Value="public class MapAreasCollection : System.Web.UI.DataVisualization.Charting.ChartElementCollection&lt;System.Web.UI.DataVisualization.Charting.MapArea&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MapAreasCollection extends System.Web.UI.DataVisualization.Charting.ChartElementCollection`1&lt;class System.Web.UI.DataVisualization.Charting.MapArea&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.MapAreasCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class MapAreasCollection&#xA;Inherits ChartElementCollection(Of MapArea)" />
+  <TypeSignature Language="F#" Value="type MapAreasCollection = class&#xA;    inherit ChartElementCollection&lt;MapArea&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MapAreasCollection : System::Web::UI::DataVisualization::Charting::ChartElementCollection&lt;System::Web::UI::DataVisualization::Charting::MapArea ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,8 @@
       <MemberSignature Language="C#" Value="public MapAreasCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DataVisualization.Charting.MapAreasCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MapAreasCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>

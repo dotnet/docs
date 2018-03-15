@@ -1,7 +1,10 @@
-<Type Name="LikeOperator" FullName="Microsoft.VisualBasic.CompilerServices.LikeOperator">
+﻿<Type Name="LikeOperator" FullName="Microsoft.VisualBasic.CompilerServices.LikeOperator">
   <TypeSignature Language="C#" Value="public sealed class LikeOperator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LikeOperator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.LikeOperator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LikeOperator" />
+  <TypeSignature Language="F#" Value="type LikeOperator = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LikeOperator sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="public static object LikeObject (object Source, object Pattern, Microsoft.VisualBasic.CompareMethod CompareOption);" />
       <MemberSignature Language="ILAsm" Value=".method public static object LikeObject(object Source, object Pattern, valuetype Microsoft.VisualBasic.CompareMethod CompareOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LikeOperator.LikeObject(System.Object,System.Object,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LikeObject (Source As Object, Pattern As Object, CompareOption As CompareMethod) As Object" />
+      <MemberSignature Language="F#" Value="static member LikeObject : obj * obj * Microsoft.VisualBasic.CompareMethod -&gt; obj" Usage="Microsoft.VisualBasic.CompilerServices.LikeOperator.LikeObject (Source, Pattern, CompareOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ LikeObject(System::Object ^ Source, System::Object ^ Pattern, Microsoft::VisualBasic::CompareMethod CompareOption);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -57,6 +63,9 @@
       <MemberSignature Language="C#" Value="public static bool LikeString (string Source, string Pattern, Microsoft.VisualBasic.CompareMethod CompareOption);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool LikeString(string Source, string Pattern, valuetype Microsoft.VisualBasic.CompareMethod CompareOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.LikeOperator.LikeString(System.String,System.String,Microsoft.VisualBasic.CompareMethod)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LikeString (Source As String, Pattern As String, CompareOption As CompareMethod) As Boolean" />
+      <MemberSignature Language="F#" Value="static member LikeString : string * string * Microsoft.VisualBasic.CompareMethod -&gt; bool" Usage="Microsoft.VisualBasic.CompilerServices.LikeOperator.LikeString (Source, Pattern, CompareOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool LikeString(System::String ^ Source, System::String ^ Pattern, Microsoft::VisualBasic::CompareMethod CompareOption);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

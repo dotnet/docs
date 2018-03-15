@@ -1,7 +1,10 @@
-<Type Name="VisualStyleElement+Window+FrameRight" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+Window+FrameRight">
+﻿<Type Name="VisualStyleElement+Window+FrameRight" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+Window+FrameRight">
   <TypeSignature Language="C#" Value="public static class VisualStyleElement.Window.FrameRight" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/Window/FrameRight extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.FrameRight" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualStyleElement.Window.FrameRight" />
+  <TypeSignature Language="F#" Value="type VisualStyleElement.Window.FrameRight = class" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class VisualStyleElement::Window::FrameRight abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Active { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Active" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.FrameRight.Active" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Active As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Active : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.Window.FrameRight.Active" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Active { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +75,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Inactive { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Inactive" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.FrameRight.Inactive" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Inactive As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Inactive : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.Window.FrameRight.Inactive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Inactive { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

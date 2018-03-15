@@ -1,7 +1,10 @@
-<Type Name="IDestinationTypeProvider" FullName="System.Xaml.IDestinationTypeProvider">
+﻿<Type Name="IDestinationTypeProvider" FullName="System.Xaml.IDestinationTypeProvider">
   <TypeSignature Language="C#" Value="public interface IDestinationTypeProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDestinationTypeProvider" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.IDestinationTypeProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDestinationTypeProvider" />
+  <TypeSignature Language="F#" Value="type IDestinationTypeProvider = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDestinationTypeProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public Type GetDestinationType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetDestinationType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.IDestinationTypeProvider.GetDestinationType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetDestinationType () As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetDestinationType : unit -&gt; Type" Usage="iDestinationTypeProvider.GetDestinationType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Type ^ GetDestinationType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

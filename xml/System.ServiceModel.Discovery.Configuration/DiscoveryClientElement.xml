@@ -1,7 +1,10 @@
-<Type Name="DiscoveryClientElement" FullName="System.ServiceModel.Discovery.Configuration.DiscoveryClientElement">
+﻿<Type Name="DiscoveryClientElement" FullName="System.ServiceModel.Discovery.Configuration.DiscoveryClientElement">
   <TypeSignature Language="C#" Value="public sealed class DiscoveryClientElement : System.ServiceModel.Configuration.BindingElementExtensionElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiscoveryClientElement extends System.ServiceModel.Configuration.BindingElementExtensionElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiscoveryClientElement&#xA;Inherits BindingElementExtensionElement" />
+  <TypeSignature Language="F#" Value="type DiscoveryClientElement = class&#xA;    inherit BindingElementExtensionElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryClientElement sealed : System::ServiceModel::Configuration::BindingElementExtensionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public DiscoveryClientElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryClientElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="public override void ApplyConfiguration (System.ServiceModel.Channels.BindingElement bindingElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
+      <MemberSignature Language="F#" Value="override this.ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="discoveryClientElement.ApplyConfiguration bindingElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyConfiguration(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -62,6 +69,9 @@
       <MemberSignature Language="C#" Value="public override Type BindingElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type BindingElementType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.BindingElementType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BindingElementType As Type" />
+      <MemberSignature Language="F#" Value="member this.BindingElementType : Type" Usage="System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.BindingElementType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ BindingElementType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -87,6 +97,9 @@
       <MemberSignature Language="C#" Value="public override void CopyFrom (System.ServiceModel.Configuration.ServiceModelExtensionElement from);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.ServiceModel.Configuration.ServiceModelExtensionElement from) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (from As ServiceModelExtensionElement)" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.ServiceModel.Configuration.ServiceModelExtensionElement -&gt; unit" Usage="discoveryClientElement.CopyFrom from" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::ServiceModel::Configuration::ServiceModelExtensionElement ^ from);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -105,9 +118,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateBindingElement">
-      <MemberSignature Language="C#" Value="protected override System.ServiceModel.Channels.BindingElement CreateBindingElement ();" />
+      <MemberSignature Language="C#" Value="protected internal override System.ServiceModel.Channels.BindingElement CreateBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.ServiceModel.Channels.BindingElement CreateBindingElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.CreateBindingElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function CreateBindingElement () As BindingElement" />
+      <MemberSignature Language="F#" Value="override this.CreateBindingElement : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="discoveryClientElement.CreateBindingElement " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Channels::BindingElement ^ CreateBindingElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -127,6 +143,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.ChannelEndpointElement DiscoveryEndpoint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.ChannelEndpointElement DiscoveryEndpoint" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.DiscoveryEndpoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DiscoveryEndpoint As ChannelEndpointElement" />
+      <MemberSignature Language="F#" Value="member this.DiscoveryEndpoint : System.ServiceModel.Configuration.ChannelEndpointElement" Usage="System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.DiscoveryEndpoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::ChannelEndpointElement ^ DiscoveryEndpoint { System::ServiceModel::Configuration::ChannelEndpointElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -150,6 +169,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.Configuration.FindCriteriaElement FindCriteria { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.Configuration.FindCriteriaElement FindCriteria" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.FindCriteria" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FindCriteria As FindCriteriaElement" />
+      <MemberSignature Language="F#" Value="member this.FindCriteria : System.ServiceModel.Discovery.Configuration.FindCriteriaElement" Usage="System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.FindCriteria" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::Configuration::FindCriteriaElement ^ FindCriteria { System::ServiceModel::Discovery::Configuration::FindCriteriaElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -170,9 +192,11 @@
       </Docs>
     </Member>
     <Member MemberName="InitializeFrom">
-      <MemberSignature Language="C#" Value="protected override void InitializeFrom (System.ServiceModel.Channels.BindingElement bindingElement);" />
+      <MemberSignature Language="C#" Value="protected internal override void InitializeFrom (System.ServiceModel.Channels.BindingElement bindingElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.InitializeFrom(System.ServiceModel.Channels.BindingElement)" />
+      <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="discoveryClientElement.InitializeFrom bindingElement" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -194,6 +218,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Discovery.Configuration.DiscoveryClientElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>

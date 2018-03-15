@@ -1,7 +1,10 @@
-<Type Name="LabelAutoFitStyles" FullName="System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles">
+﻿<Type Name="LabelAutoFitStyles" FullName="System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles">
   <TypeSignature Language="C#" Value="public enum LabelAutoFitStyles" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LabelAutoFitStyles extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LabelAutoFitStyles" />
+  <TypeSignature Language="F#" Value="type LabelAutoFitStyles = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LabelAutoFitStyles" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="DecreaseFont" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles DecreaseFont = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.DecreaseFont" />
+      <MemberSignature Language="VB.NET" Value="DecreaseFont" />
+      <MemberSignature Language="F#" Value="DecreaseFont = 2" Usage="System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.DecreaseFont" />
+      <MemberSignature Language="C++ CLI" Value="DecreaseFont" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -38,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Label font can be decreased.</summary>
       </Docs>
@@ -46,6 +53,9 @@
       <MemberSignature Language="C#" Value="IncreaseFont" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles IncreaseFont = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.IncreaseFont" />
+      <MemberSignature Language="VB.NET" Value="IncreaseFont" />
+      <MemberSignature Language="F#" Value="IncreaseFont = 1" Usage="System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.IncreaseFont" />
+      <MemberSignature Language="C++ CLI" Value="IncreaseFont" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -54,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Label font can be increased.</summary>
       </Docs>
@@ -62,6 +73,9 @@
       <MemberSignature Language="C#" Value="LabelsAngleStep30" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles LabelsAngleStep30 = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.LabelsAngleStep30" />
+      <MemberSignature Language="VB.NET" Value="LabelsAngleStep30" />
+      <MemberSignature Language="F#" Value="LabelsAngleStep30 = 8" Usage="System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.LabelsAngleStep30" />
+      <MemberSignature Language="C++ CLI" Value="LabelsAngleStep30" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -70,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Labels can be angled in 30 degree steps: 0, 30, 60 and 90.</summary>
       </Docs>
@@ -78,6 +93,9 @@
       <MemberSignature Language="C#" Value="LabelsAngleStep45" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles LabelsAngleStep45 = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.LabelsAngleStep45" />
+      <MemberSignature Language="VB.NET" Value="LabelsAngleStep45" />
+      <MemberSignature Language="F#" Value="LabelsAngleStep45 = 16" Usage="System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.LabelsAngleStep45" />
+      <MemberSignature Language="C++ CLI" Value="LabelsAngleStep45" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -86,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Labels can be angled in 45 degree steps: 0, 45, and 90.</summary>
       </Docs>
@@ -94,6 +113,9 @@
       <MemberSignature Language="C#" Value="LabelsAngleStep90" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles LabelsAngleStep90 = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.LabelsAngleStep90" />
+      <MemberSignature Language="VB.NET" Value="LabelsAngleStep90" />
+      <MemberSignature Language="F#" Value="LabelsAngleStep90 = 32" Usage="System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.LabelsAngleStep90" />
+      <MemberSignature Language="C++ CLI" Value="LabelsAngleStep90" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -102,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Labels can be angled in 90 degree steps: 0 and 90.</summary>
       </Docs>
@@ -110,6 +133,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -118,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No label changes are allowed.</summary>
       </Docs>
@@ -126,6 +153,9 @@
       <MemberSignature Language="C#" Value="StaggeredLabels" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles StaggeredLabels = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.StaggeredLabels" />
+      <MemberSignature Language="VB.NET" Value="StaggeredLabels" />
+      <MemberSignature Language="F#" Value="StaggeredLabels = 4" Usage="System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.StaggeredLabels" />
+      <MemberSignature Language="C++ CLI" Value="StaggeredLabels" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -134,6 +164,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Labels can be staggered.</summary>
       </Docs>
@@ -142,6 +173,9 @@
       <MemberSignature Language="C#" Value="WordWrap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles WordWrap = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.WordWrap" />
+      <MemberSignature Language="VB.NET" Value="WordWrap" />
+      <MemberSignature Language="F#" Value="WordWrap = 64" Usage="System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles.WordWrap" />
+      <MemberSignature Language="C++ CLI" Value="WordWrap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -150,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelAutoFitStyles</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Labels can be word wrapped.</summary>
       </Docs>

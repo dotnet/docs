@@ -1,7 +1,10 @@
-<Type Name="MouseButtonConstants" FullName="Microsoft.VisualBasic.Compatibility.VB6.MouseButtonConstants">
+﻿<Type Name="MouseButtonConstants" FullName="Microsoft.VisualBasic.Compatibility.VB6.MouseButtonConstants">
   <TypeSignature Language="C#" Value="public enum MouseButtonConstants" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MouseButtonConstants extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.MouseButtonConstants" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MouseButtonConstants" />
+  <TypeSignature Language="F#" Value="type MouseButtonConstants = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MouseButtonConstants" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="LeftButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.Compatibility.VB6.MouseButtonConstants LeftButton = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.MouseButtonConstants.LeftButton" />
+      <MemberSignature Language="VB.NET" Value="LeftButton" />
+      <MemberSignature Language="F#" Value="LeftButton = 1" Usage="Microsoft.VisualBasic.Compatibility.VB6.MouseButtonConstants.LeftButton" />
+      <MemberSignature Language="C++ CLI" Value="LeftButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.MouseButtonConstants</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Equivalent to the Visual Basic 6.0 constant <see langword="vbLeftButton" />.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="MiddleButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.Compatibility.VB6.MouseButtonConstants MiddleButton = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.MouseButtonConstants.MiddleButton" />
+      <MemberSignature Language="VB.NET" Value="MiddleButton" />
+      <MemberSignature Language="F#" Value="MiddleButton = 4" Usage="Microsoft.VisualBasic.Compatibility.VB6.MouseButtonConstants.MiddleButton" />
+      <MemberSignature Language="C++ CLI" Value="MiddleButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -62,6 +72,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.MouseButtonConstants</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Equivalent to the Visual Basic 6.0 constant <see langword="vbMiddleButton" />.</summary>
       </Docs>
@@ -70,6 +81,9 @@
       <MemberSignature Language="C#" Value="RightButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.Compatibility.VB6.MouseButtonConstants RightButton = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.Compatibility.VB6.MouseButtonConstants.RightButton" />
+      <MemberSignature Language="VB.NET" Value="RightButton" />
+      <MemberSignature Language="F#" Value="RightButton = 2" Usage="Microsoft.VisualBasic.Compatibility.VB6.MouseButtonConstants.RightButton" />
+      <MemberSignature Language="C++ CLI" Value="RightButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility</AssemblyName>
@@ -78,6 +92,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.Compatibility.VB6.MouseButtonConstants</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Equivalent to the Visual Basic 6.0 constant <see langword="vbRightButton" />.</summary>
       </Docs>

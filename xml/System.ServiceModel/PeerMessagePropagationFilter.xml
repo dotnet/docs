@@ -1,7 +1,10 @@
-<Type Name="PeerMessagePropagationFilter" FullName="System.ServiceModel.PeerMessagePropagationFilter">
+﻿<Type Name="PeerMessagePropagationFilter" FullName="System.ServiceModel.PeerMessagePropagationFilter">
   <TypeSignature Language="C#" Value="public abstract class PeerMessagePropagationFilter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PeerMessagePropagationFilter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.PeerMessagePropagationFilter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PeerMessagePropagationFilter" />
+  <TypeSignature Language="F#" Value="type PeerMessagePropagationFilter = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PeerMessagePropagationFilter abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="protected PeerMessagePropagationFilter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerMessagePropagationFilter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PeerMessagePropagationFilter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +46,8 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.PeerMessagePropagation ShouldMessagePropagate (System.ServiceModel.Channels.Message message, System.ServiceModel.PeerMessageOrigination origination);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.ServiceModel.PeerMessagePropagation ShouldMessagePropagate(class System.ServiceModel.Channels.Message message, valuetype System.ServiceModel.PeerMessageOrigination origination) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.PeerMessagePropagationFilter.ShouldMessagePropagate(System.ServiceModel.Channels.Message,System.ServiceModel.PeerMessageOrigination)" />
+      <MemberSignature Language="F#" Value="abstract member ShouldMessagePropagate : System.ServiceModel.Channels.Message * System.ServiceModel.PeerMessageOrigination -&gt; System.ServiceModel.PeerMessagePropagation" Usage="peerMessagePropagationFilter.ShouldMessagePropagate (message, origination)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ServiceModel::PeerMessagePropagation ShouldMessagePropagate(System::ServiceModel::Channels::Message ^ message, System::ServiceModel::PeerMessageOrigination origination);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

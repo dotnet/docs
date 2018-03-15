@@ -1,7 +1,10 @@
-<Type Name="ParameterCollection" FullName="System.Web.UI.WebControls.ParameterCollection">
+﻿<Type Name="ParameterCollection" FullName="System.Web.UI.WebControls.ParameterCollection">
   <TypeSignature Language="C#" Value="public class ParameterCollection : System.Web.UI.StateManagedCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ParameterCollection extends System.Web.UI.StateManagedCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ParameterCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ParameterCollection&#xA;Inherits StateManagedCollection" />
+  <TypeSignature Language="F#" Value="type ParameterCollection = class&#xA;    inherit StateManagedCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ParameterCollection : System::Web::UI::StateManagedCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -71,6 +74,8 @@
       <MemberSignature Language="C#" Value="public ParameterCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ParameterCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,10 +87,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Web.UI.WebControls.Parameter" /> object to the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public int Add (System.Web.UI.WebControls.Parameter parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.UI.WebControls.Parameter parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.Add(System.Web.UI.WebControls.Parameter)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.WebControls.Parameter -&gt; int" Usage="parameterCollection.Add parameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::WebControls::Parameter ^ parameter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +145,9 @@
       <MemberSignature Language="C#" Value="public int Add (string name, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(string name, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.Add(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (name As String, value As String) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Add : string * string -&gt; int" Usage="parameterCollection.Add (name, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::String ^ name, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -172,6 +191,8 @@
       <MemberSignature Language="C#" Value="public int Add (string name, System.Data.DbType dbType, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(string name, valuetype System.Data.DbType dbType, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.Add(System.String,System.Data.DbType,System.String)" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Data.DbType * string -&gt; int" Usage="parameterCollection.Add (name, dbType, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::String ^ name, System::Data::DbType dbType, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -205,6 +226,9 @@
       <MemberSignature Language="C#" Value="public int Add (string name, TypeCode type, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(string name, valuetype System.TypeCode type, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.Add(System.String,System.TypeCode,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (name As String, type As TypeCode, value As String) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Add : string * TypeCode * string -&gt; int" Usage="parameterCollection.Add (name, type, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::String ^ name, TypeCode type, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -247,6 +271,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.WebControls.Parameter parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.Parameter parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.Contains(System.Web.UI.WebControls.Parameter)" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.Parameter -&gt; bool" Usage="parameterCollection.Contains parameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::Parameter ^ parameter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -277,6 +303,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.Parameter[] parameterArray, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.Parameter[] parameterArray, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.CopyTo(System.Web.UI.WebControls.Parameter[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (parameterArray As Parameter(), index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Web.UI.WebControls.Parameter[] * int -&gt; unit" Usage="parameterCollection.CopyTo (parameterArray, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::Parameter ^&gt; ^ parameterArray, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -300,6 +329,9 @@
       <MemberSignature Language="C#" Value="protected override object CreateKnownType (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateKnownType(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.CreateKnownType(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateKnownType (index As Integer) As Object" />
+      <MemberSignature Language="F#" Value="override this.CreateKnownType : int -&gt; obj" Usage="parameterCollection.CreateKnownType index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateKnownType(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -341,6 +373,9 @@
       <MemberSignature Language="C#" Value="protected override Type[] GetKnownTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type[] GetKnownTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.GetKnownTypes" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKnownTypes () As Type()" />
+      <MemberSignature Language="F#" Value="override this.GetKnownTypes : unit -&gt; Type[]" Usage="parameterCollection.GetKnownTypes " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetKnownTypes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -361,6 +396,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary GetValues (System.Web.HttpContext context, System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Specialized.IOrderedDictionary GetValues(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.GetValues(System.Web.HttpContext,System.Web.UI.Control)" />
+      <MemberSignature Language="F#" Value="member this.GetValues : System.Web.HttpContext * System.Web.UI.Control -&gt; System.Collections.Specialized.IOrderedDictionary" Usage="parameterCollection.GetValues (context, control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Specialized::IOrderedDictionary ^ GetValues(System::Web::HttpContext ^ context, System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -394,6 +431,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.Parameter parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.Parameter parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.IndexOf(System.Web.UI.WebControls.Parameter)" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.Parameter -&gt; int" Usage="parameterCollection.IndexOf parameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::Parameter ^ parameter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -423,6 +462,8 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.UI.WebControls.Parameter parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.UI.WebControls.Parameter parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.Insert(System.Int32,System.Web.UI.WebControls.Parameter)" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.WebControls.Parameter -&gt; unit" Usage="parameterCollection.Insert (index, parameter)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::Parameter ^ parameter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -459,10 +500,22 @@
         <altmember cref="M:System.Web.UI.StateManagedCollection.System#Collections#IList#IndexOf(System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the <see cref="T:System.Web.UI.WebControls.Parameter" /> object in the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Parameter this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Parameter Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ParameterCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Parameter" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.Parameter with get, set" Usage="System.Web.UI.WebControls.ParameterCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Parameter ^ default[int] { System::Web::UI::WebControls::Parameter ^ get(int index); void set(int index, System::Web::UI::WebControls::Parameter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -498,6 +551,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Parameter this[string name] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Parameter Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ParameterCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(name As String) As Parameter" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.UI.WebControls.Parameter with get, set" Usage="System.Web.UI.WebControls.ParameterCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Parameter ^ default[System::String ^] { System::Web::UI::WebControls::Parameter ^ get(System::String ^ name); void set(System::String ^ name, System::Web::UI::WebControls::Parameter ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -541,6 +597,9 @@
       <MemberSignature Language="C#" Value="protected override void OnClearComplete ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClearComplete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.OnClearComplete" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClearComplete ()" />
+      <MemberSignature Language="F#" Value="override this.OnClearComplete : unit -&gt; unit" Usage="parameterCollection.OnClearComplete " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClearComplete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -572,6 +631,9 @@
       <MemberSignature Language="C#" Value="protected override void OnInsert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.OnInsert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnInsert : int * obj -&gt; unit" Usage="parameterCollection.OnInsert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -606,6 +668,9 @@
       <MemberSignature Language="C#" Value="protected override void OnInsertComplete (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsertComplete(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.OnInsertComplete(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsertComplete (index As Integer, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnInsertComplete : int * obj -&gt; unit" Usage="parameterCollection.OnInsertComplete (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsertComplete(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -640,6 +705,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnParametersChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnParametersChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.OnParametersChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnParametersChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnParametersChanged : EventArgs -&gt; unit&#xA;override this.OnParametersChanged : EventArgs -&gt; unit" Usage="parameterCollection.OnParametersChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnParametersChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -663,6 +731,9 @@
       <MemberSignature Language="C#" Value="protected override void OnRemoveComplete (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemoveComplete(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.OnRemoveComplete(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemoveComplete (index As Integer, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnRemoveComplete : int * obj -&gt; unit" Usage="parameterCollection.OnRemoveComplete (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemoveComplete(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -698,6 +769,9 @@
       <MemberSignature Language="C#" Value="protected override void OnValidate (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidate(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.OnValidate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (o As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnValidate : obj -&gt; unit" Usage="parameterCollection.OnValidate o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -728,6 +802,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ParametersChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ParametersChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.ParameterCollection.ParametersChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ParametersChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ParametersChanged : EventHandler " Usage="member this.ParametersChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ParametersChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -759,6 +836,8 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.WebControls.Parameter parameter);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.WebControls.Parameter parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.Remove(System.Web.UI.WebControls.Parameter)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.WebControls.Parameter -&gt; unit" Usage="parameterCollection.Remove parameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::Parameter ^ parameter);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -798,6 +877,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="parameterCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -837,6 +919,9 @@
       <MemberSignature Language="C#" Value="protected override void SetDirtyObject (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDirtyObject(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.SetDirtyObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDirtyObject (o As Object)" />
+      <MemberSignature Language="F#" Value="override this.SetDirtyObject : obj -&gt; unit" Usage="parameterCollection.SetDirtyObject o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDirtyObject(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -868,6 +953,8 @@
       <MemberSignature Language="C#" Value="public void UpdateValues (System.Web.HttpContext context, System.Web.UI.Control control);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateValues(class System.Web.HttpContext context, class System.Web.UI.Control control) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ParameterCollection.UpdateValues(System.Web.HttpContext,System.Web.UI.Control)" />
+      <MemberSignature Language="F#" Value="member this.UpdateValues : System.Web.HttpContext * System.Web.UI.Control -&gt; unit" Usage="parameterCollection.UpdateValues (context, control)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateValues(System::Web::HttpContext ^ context, System::Web::UI::Control ^ control);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -897,23 +984,5 @@
         <altmember cref="M:System.Web.UI.WebControls.ParameterCollection.GetValues(System.Web.HttpContext,System.Web.UI.Control)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a <see cref="T:System.Web.UI.WebControls.Parameter" /> object to the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets the <see cref="T:System.Web.UI.WebControls.Parameter" /> object in the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="RelationshipMultiplicity" FullName="System.Data.Metadata.Edm.RelationshipMultiplicity">
+﻿<Type Name="RelationshipMultiplicity" FullName="System.Data.Metadata.Edm.RelationshipMultiplicity">
   <TypeSignature Language="C#" Value="public enum RelationshipMultiplicity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RelationshipMultiplicity extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.RelationshipMultiplicity" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RelationshipMultiplicity" />
+  <TypeSignature Language="F#" Value="type RelationshipMultiplicity = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class RelationshipMultiplicity" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Many" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.RelationshipMultiplicity Many = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.RelationshipMultiplicity.Many" />
+      <MemberSignature Language="VB.NET" Value="Many" />
+      <MemberSignature Language="F#" Value="Many = 2" Usage="System.Data.Metadata.Edm.RelationshipMultiplicity.Many" />
+      <MemberSignature Language="C++ CLI" Value="Many" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.RelationshipMultiplicity</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A lower bound is zero and an upper bound is null.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="One" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.RelationshipMultiplicity One = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.RelationshipMultiplicity.One" />
+      <MemberSignature Language="VB.NET" Value="One" />
+      <MemberSignature Language="F#" Value="One = 1" Usage="System.Data.Metadata.Edm.RelationshipMultiplicity.One" />
+      <MemberSignature Language="C++ CLI" Value="One" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.RelationshipMultiplicity</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A lower bound is one and an upper bound is one.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="ZeroOrOne" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.RelationshipMultiplicity ZeroOrOne = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne" />
+      <MemberSignature Language="VB.NET" Value="ZeroOrOne" />
+      <MemberSignature Language="F#" Value="ZeroOrOne = 0" Usage="System.Data.Metadata.Edm.RelationshipMultiplicity.ZeroOrOne" />
+      <MemberSignature Language="C++ CLI" Value="ZeroOrOne" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.RelationshipMultiplicity</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A lower bound is zero and an upper bound is one.</summary>
       </Docs>

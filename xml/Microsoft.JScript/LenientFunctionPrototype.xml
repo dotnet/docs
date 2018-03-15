@@ -1,7 +1,10 @@
-<Type Name="LenientFunctionPrototype" FullName="Microsoft.JScript.LenientFunctionPrototype">
+﻿<Type Name="LenientFunctionPrototype" FullName="Microsoft.JScript.LenientFunctionPrototype">
   <TypeSignature Language="C#" Value="public sealed class LenientFunctionPrototype : Microsoft.JScript.FunctionPrototype" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit LenientFunctionPrototype extends Microsoft.JScript.FunctionPrototype" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.LenientFunctionPrototype" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class LenientFunctionPrototype&#xA;Inherits FunctionPrototype" />
+  <TypeSignature Language="F#" Value="type LenientFunctionPrototype = class&#xA;    inherit FunctionPrototype" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LenientFunctionPrototype sealed : Microsoft::JScript::FunctionPrototype" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -22,6 +25,9 @@
       <MemberSignature Language="C#" Value="public object apply;" />
       <MemberSignature Language="ILAsm" Value=".field public object apply" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientFunctionPrototype.apply" />
+      <MemberSignature Language="VB.NET" Value="Public apply As Object " />
+      <MemberSignature Language="F#" Value="val mutable apply : obj" Usage="Microsoft.JScript.LenientFunctionPrototype.apply" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ apply;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -42,6 +48,9 @@
       <MemberSignature Language="C#" Value="public object call;" />
       <MemberSignature Language="ILAsm" Value=".field public object call" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientFunctionPrototype.call" />
+      <MemberSignature Language="VB.NET" Value="Public call As Object " />
+      <MemberSignature Language="F#" Value="val mutable call : obj" Usage="Microsoft.JScript.LenientFunctionPrototype.call" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ call;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -62,6 +71,9 @@
       <MemberSignature Language="C#" Value="public object constructor;" />
       <MemberSignature Language="ILAsm" Value=".field public object constructor" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientFunctionPrototype.constructor" />
+      <MemberSignature Language="VB.NET" Value="Public constructor As Object " />
+      <MemberSignature Language="F#" Value="val mutable constructor : obj" Usage="Microsoft.JScript.LenientFunctionPrototype.constructor" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ constructor;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -82,6 +94,9 @@
       <MemberSignature Language="C#" Value="public object toString;" />
       <MemberSignature Language="ILAsm" Value=".field public object toString" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.LenientFunctionPrototype.toString" />
+      <MemberSignature Language="VB.NET" Value="Public toString As Object " />
+      <MemberSignature Language="F#" Value="val mutable toString : obj" Usage="Microsoft.JScript.LenientFunctionPrototype.toString" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Object ^ toString;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

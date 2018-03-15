@@ -1,7 +1,10 @@
-<Type Name="SplitterEventHandler" FullName="System.Windows.Forms.SplitterEventHandler">
+﻿<Type Name="SplitterEventHandler" FullName="System.Windows.Forms.SplitterEventHandler">
   <TypeSignature Language="C#" Value="public delegate void SplitterEventHandler(object sender, SplitterEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SplitterEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SplitterEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub SplitterEventHandler(sender As Object, e As SplitterEventArgs)" />
+  <TypeSignature Language="F#" Value="type SplitterEventHandler = delegate of obj * SplitterEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void SplitterEventHandler(System::Object ^ sender, SplitterEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

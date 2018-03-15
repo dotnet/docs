@@ -1,7 +1,10 @@
-<Type Name="TypeDescriptorPermissionAttribute" FullName="System.Security.Permissions.TypeDescriptorPermissionAttribute">
+﻿<Type Name="TypeDescriptorPermissionAttribute" FullName="System.Security.Permissions.TypeDescriptorPermissionAttribute">
   <TypeSignature Language="C#" Value="public sealed class TypeDescriptorPermissionAttribute : System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit TypeDescriptorPermissionAttribute extends System.Security.Permissions.CodeAccessSecurityAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.TypeDescriptorPermissionAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeDescriptorPermissionAttribute&#xA;Inherits CodeAccessSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type TypeDescriptorPermissionAttribute = class&#xA;    inherit CodeAccessSecurityAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeDescriptorPermissionAttribute sealed : System::Security::Permissions::CodeAccessSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Constructor | System.AttributeTargets.Method, AllowMultiple=true, Inherited=false)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Assembly | System.AttributeTargets.Class | System.AttributeTargets.Constructor | System.AttributeTargets.Method | System.AttributeTargets.Struct, AllowMultiple=true, Inherited=false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="public TypeDescriptorPermissionAttribute (System.Security.Permissions.SecurityAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.SecurityAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.TypeDescriptorPermissionAttribute.#ctor(System.Security.Permissions.SecurityAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (action As SecurityAction)" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.TypeDescriptorPermissionAttribute : System.Security.Permissions.SecurityAction -&gt; System.Security.Permissions.TypeDescriptorPermissionAttribute" Usage="new System.Security.Permissions.TypeDescriptorPermissionAttribute action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeDescriptorPermissionAttribute(System::Security::Permissions::SecurityAction action);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -52,6 +58,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission CreatePermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission CreatePermission() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.TypeDescriptorPermissionAttribute.CreatePermission" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePermission () As IPermission" />
+      <MemberSignature Language="F#" Value="override this.CreatePermission : unit -&gt; System.Security.IPermission" Usage="typeDescriptorPermissionAttribute.CreatePermission " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ CreatePermission();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -77,6 +86,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Permissions.TypeDescriptorPermissionFlags Flags { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.TypeDescriptorPermissionFlags Flags" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.TypeDescriptorPermissionAttribute.Flags" />
+      <MemberSignature Language="VB.NET" Value="Public Property Flags As TypeDescriptorPermissionFlags" />
+      <MemberSignature Language="F#" Value="member this.Flags : System.Security.Permissions.TypeDescriptorPermissionFlags with get, set" Usage="System.Security.Permissions.TypeDescriptorPermissionAttribute.Flags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::TypeDescriptorPermissionFlags Flags { System::Security::Permissions::TypeDescriptorPermissionFlags get(); void set(System::Security::Permissions::TypeDescriptorPermissionFlags value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -100,6 +112,9 @@
       <MemberSignature Language="C#" Value="public bool RestrictedRegistrationAccess { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RestrictedRegistrationAccess" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.TypeDescriptorPermissionAttribute.RestrictedRegistrationAccess" />
+      <MemberSignature Language="VB.NET" Value="Public Property RestrictedRegistrationAccess As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RestrictedRegistrationAccess : bool with get, set" Usage="System.Security.Permissions.TypeDescriptorPermissionAttribute.RestrictedRegistrationAccess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RestrictedRegistrationAccess { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

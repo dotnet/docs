@@ -1,7 +1,10 @@
-<Type Name="Instrumentation" FullName="System.Management.Instrumentation.Instrumentation">
+﻿<Type Name="Instrumentation" FullName="System.Management.Instrumentation.Instrumentation">
   <TypeSignature Language="C#" Value="public class Instrumentation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Instrumentation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.Instrumentation" />
+  <TypeSignature Language="VB.NET" Value="Public Class Instrumentation" />
+  <TypeSignature Language="F#" Value="type Instrumentation = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Instrumentation" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +24,8 @@
       <MemberSignature Language="C#" Value="public Instrumentation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Instrumentation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -46,6 +51,9 @@
       <MemberSignature Language="C#" Value="public static void Fire (object eventData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Fire(object eventData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.Fire(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Fire (eventData As Object)" />
+      <MemberSignature Language="F#" Value="static member Fire : obj -&gt; unit" Usage="System.Management.Instrumentation.Instrumentation.Fire eventData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Fire(System::Object ^ eventData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -76,6 +84,9 @@
       <MemberSignature Language="C#" Value="public static bool IsAssemblyRegistered (System.Reflection.Assembly assemblyToRegister);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsAssemblyRegistered(class System.Reflection.Assembly assemblyToRegister) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.IsAssemblyRegistered(System.Reflection.Assembly)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsAssemblyRegistered (assemblyToRegister As Assembly) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsAssemblyRegistered : System.Reflection.Assembly -&gt; bool" Usage="System.Management.Instrumentation.Instrumentation.IsAssemblyRegistered assemblyToRegister" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsAssemblyRegistered(System::Reflection::Assembly ^ assemblyToRegister);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -108,6 +119,9 @@
       <MemberSignature Language="C#" Value="public static void Publish (object instanceData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Publish(object instanceData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.Publish(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Publish (instanceData As Object)" />
+      <MemberSignature Language="F#" Value="static member Publish : obj -&gt; unit" Usage="System.Management.Instrumentation.Instrumentation.Publish instanceData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Publish(System::Object ^ instanceData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -138,6 +152,9 @@
       <MemberSignature Language="C#" Value="public static void RegisterAssembly (System.Reflection.Assembly assemblyToRegister);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterAssembly(class System.Reflection.Assembly assemblyToRegister) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.RegisterAssembly(System.Reflection.Assembly)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterAssembly (assemblyToRegister As Assembly)" />
+      <MemberSignature Language="F#" Value="static member RegisterAssembly : System.Reflection.Assembly -&gt; unit" Usage="System.Management.Instrumentation.Instrumentation.RegisterAssembly assemblyToRegister" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterAssembly(System::Reflection::Assembly ^ assemblyToRegister);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -168,6 +185,9 @@
       <MemberSignature Language="C#" Value="public static void Revoke (object instanceData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Revoke(object instanceData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.Revoke(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Revoke (instanceData As Object)" />
+      <MemberSignature Language="F#" Value="static member Revoke : obj -&gt; unit" Usage="System.Management.Instrumentation.Instrumentation.Revoke instanceData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Revoke(System::Object ^ instanceData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -198,6 +218,9 @@
       <MemberSignature Language="C#" Value="public static void SetBatchSize (Type instrumentationClass, int batchSize);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBatchSize(class System.Type instrumentationClass, int32 batchSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.Instrumentation.Instrumentation.SetBatchSize(System.Type,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetBatchSize (instrumentationClass As Type, batchSize As Integer)" />
+      <MemberSignature Language="F#" Value="static member SetBatchSize : Type * int -&gt; unit" Usage="System.Management.Instrumentation.Instrumentation.SetBatchSize (instrumentationClass, batchSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetBatchSize(Type ^ instrumentationClass, int batchSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

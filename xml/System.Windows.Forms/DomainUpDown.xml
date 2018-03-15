@@ -1,7 +1,10 @@
-<Type Name="DomainUpDown" FullName="System.Windows.Forms.DomainUpDown">
+﻿<Type Name="DomainUpDown" FullName="System.Windows.Forms.DomainUpDown">
   <TypeSignature Language="C#" Value="public class DomainUpDown : System.Windows.Forms.UpDownBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DomainUpDown extends System.Windows.Forms.UpDownBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DomainUpDown" />
+  <TypeSignature Language="VB.NET" Value="Public Class DomainUpDown&#xA;Inherits UpDownBase" />
+  <TypeSignature Language="F#" Value="type DomainUpDown = class&#xA;    inherit UpDownBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DomainUpDown : System::Windows::Forms::UpDownBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,7 +24,7 @@
       <AttributeName>System.ComponentModel.DefaultProperty("Items")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -67,6 +70,8 @@
       <MemberSignature Language="C#" Value="public DomainUpDown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DomainUpDown();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +99,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.AccessibleObject CreateAccessibilityInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.AccessibleObject CreateAccessibilityInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.CreateAccessibilityInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateAccessibilityInstance () As AccessibleObject" />
+      <MemberSignature Language="F#" Value="override this.CreateAccessibilityInstance : unit -&gt; System.Windows.Forms.AccessibleObject" Usage="domainUpDown.CreateAccessibilityInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::AccessibleObject ^ CreateAccessibilityInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -126,6 +134,9 @@
       <MemberSignature Language="C#" Value="public override void DownButton ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void DownButton() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.DownButton" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub DownButton ()" />
+      <MemberSignature Language="F#" Value="override this.DownButton : unit -&gt; unit" Usage="domainUpDown.DownButton " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void DownButton();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -152,6 +163,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DomainUpDown/DomainUpDownItemCollection Items" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As DomainUpDown.DomainUpDownItemCollection" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Windows.Forms.DomainUpDown.DomainUpDownItemCollection" Usage="System.Windows.Forms.DomainUpDown.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DomainUpDown::DomainUpDownItemCollection ^ Items { System::Windows::Forms::DomainUpDown::DomainUpDownItemCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -159,7 +173,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.StringCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -199,6 +213,9 @@
       <MemberSignature Language="C#" Value="protected override void OnChanged (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChanged(object source, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.OnChanged(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnChanged (source As Object, e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnChanged : obj * EventArgs -&gt; unit" Usage="domainUpDown.OnChanged (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnChanged(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -222,6 +239,9 @@
       <MemberSignature Language="C#" Value="protected void OnSelectedItemChanged (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnSelectedItemChanged(object source, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.OnSelectedItemChanged(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnSelectedItemChanged (source As Object, e As EventArgs)" />
+      <MemberSignature Language="F#" Value="member this.OnSelectedItemChanged : obj * EventArgs -&gt; unit" Usage="domainUpDown.OnSelectedItemChanged (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnSelectedItemChanged(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -268,6 +288,9 @@
       <MemberSignature Language="C#" Value="protected override void OnTextBoxKeyPress (object source, System.Windows.Forms.KeyPressEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnTextBoxKeyPress(object source, class System.Windows.Forms.KeyPressEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.OnTextBoxKeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTextBoxKeyPress (source As Object, e As KeyPressEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnTextBoxKeyPress : obj * System.Windows.Forms.KeyPressEventArgs -&gt; unit" Usage="domainUpDown.OnTextBoxKeyPress (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTextBoxKeyPress(System::Object ^ source, System::Windows::Forms::KeyPressEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -305,6 +328,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Padding Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding Padding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.Padding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.DomainUpDown.Padding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -315,7 +341,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -342,6 +368,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler PaddingChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PaddingChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DomainUpDown.PaddingChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PaddingChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -374,6 +403,9 @@
       <MemberSignature Language="C#" Value="public int SelectedIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.SelectedIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.SelectedIndex : int with get, set" Usage="System.Windows.Forms.DomainUpDown.SelectedIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SelectedIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -425,6 +457,9 @@
       <MemberSignature Language="C#" Value="public object SelectedItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SelectedItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.SelectedItem" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedItem As Object" />
+      <MemberSignature Language="F#" Value="member this.SelectedItem : obj with get, set" Usage="System.Windows.Forms.DomainUpDown.SelectedItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SelectedItem { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -435,7 +470,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -468,6 +503,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler SelectedItemChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectedItemChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DomainUpDown.SelectedItemChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SelectedItemChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectedItemChanged : EventHandler " Usage="member this.SelectedItemChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectedItemChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -505,6 +543,9 @@
       <MemberSignature Language="C#" Value="public bool Sorted { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Sorted" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.Sorted" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sorted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Sorted : bool with get, set" Usage="System.Windows.Forms.DomainUpDown.Sorted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Sorted { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -545,6 +586,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="domainUpDown.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -571,6 +615,9 @@
       <MemberSignature Language="C#" Value="public override void UpButton ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void UpButton() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.UpButton" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub UpButton ()" />
+      <MemberSignature Language="F#" Value="override this.UpButton : unit -&gt; unit" Usage="domainUpDown.UpButton " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void UpButton();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -597,6 +644,9 @@
       <MemberSignature Language="C#" Value="protected override void UpdateEditText ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void UpdateEditText() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.UpdateEditText" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub UpdateEditText ()" />
+      <MemberSignature Language="F#" Value="override this.UpdateEditText : unit -&gt; unit" Usage="domainUpDown.UpdateEditText " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void UpdateEditText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -616,6 +666,9 @@
       <MemberSignature Language="C#" Value="public bool Wrap { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Wrap" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.Wrap" />
+      <MemberSignature Language="VB.NET" Value="Public Property Wrap As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Wrap : bool with get, set" Usage="System.Windows.Forms.DomainUpDown.Wrap" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Wrap { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

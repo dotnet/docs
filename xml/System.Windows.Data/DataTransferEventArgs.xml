@@ -1,7 +1,10 @@
-<Type Name="DataTransferEventArgs" FullName="System.Windows.Data.DataTransferEventArgs">
+﻿<Type Name="DataTransferEventArgs" FullName="System.Windows.Data.DataTransferEventArgs">
   <TypeSignature Language="C#" Value="public class DataTransferEventArgs : System.Windows.RoutedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataTransferEventArgs extends System.Windows.RoutedEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.DataTransferEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataTransferEventArgs&#xA;Inherits RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type DataTransferEventArgs = class&#xA;    inherit RoutedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataTransferEventArgs : System::Windows::RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Data.DataTransferEventArgs.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="dataTransferEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -55,6 +61,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.DependencyProperty Property { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyProperty Property" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.DataTransferEventArgs.Property" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Property As DependencyProperty" />
+      <MemberSignature Language="F#" Value="member this.Property : System.Windows.DependencyProperty" Usage="System.Windows.Data.DataTransferEventArgs.Property" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyProperty ^ Property { System::Windows::DependencyProperty ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +82,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.DependencyObject TargetObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DependencyObject TargetObject" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Data.DataTransferEventArgs.TargetObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetObject As DependencyObject" />
+      <MemberSignature Language="F#" Value="member this.TargetObject : System.Windows.DependencyObject" Usage="System.Windows.Data.DataTransferEventArgs.TargetObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DependencyObject ^ TargetObject { System::Windows::DependencyObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ViewCollection" FullName="System.Web.UI.WebControls.ViewCollection">
+﻿<Type Name="ViewCollection" FullName="System.Web.UI.WebControls.ViewCollection">
   <TypeSignature Language="C#" Value="public class ViewCollection : System.Web.UI.ControlCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ViewCollection extends System.Web.UI.ControlCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ViewCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ViewCollection&#xA;Inherits ControlCollection" />
+  <TypeSignature Language="F#" Value="type ViewCollection = class&#xA;    inherit ControlCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ViewCollection : System::Web::UI::ControlCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="public ViewCollection (System.Web.UI.Control owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Control owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ViewCollection.#ctor(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Control)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ViewCollection : System.Web.UI.Control -&gt; System.Web.UI.WebControls.ViewCollection" Usage="new System.Web.UI.WebControls.ViewCollection owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ViewCollection(System::Web::UI::Control ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -66,6 +72,9 @@
       <MemberSignature Language="C#" Value="public override void Add (System.Web.UI.Control v);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Add(class System.Web.UI.Control v) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ViewCollection.Add(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Add (v As Control)" />
+      <MemberSignature Language="F#" Value="override this.Add : System.Web.UI.Control -&gt; unit" Usage="viewCollection.Add v" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Add(System::Web::UI::Control ^ v);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +116,9 @@
       <MemberSignature Language="C#" Value="public override void AddAt (int index, System.Web.UI.Control v);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddAt(int32 index, class System.Web.UI.Control v) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ViewCollection.AddAt(System.Int32,System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddAt (index As Integer, v As Control)" />
+      <MemberSignature Language="F#" Value="override this.AddAt : int * System.Web.UI.Control -&gt; unit" Usage="viewCollection.AddAt (index, v)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddAt(int index, System::Web::UI::Control ^ v);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -150,6 +162,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.View this[int i] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.View Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ViewCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(i As Integer) As View" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.View" Usage="System.Web.UI.WebControls.ViewCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::View ^ default[int] { System::Web::UI::WebControls::View ^ get(int i); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

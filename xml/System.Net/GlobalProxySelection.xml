@@ -1,7 +1,10 @@
-<Type Name="GlobalProxySelection" FullName="System.Net.GlobalProxySelection">
+﻿<Type Name="GlobalProxySelection" FullName="System.Net.GlobalProxySelection">
   <TypeSignature Language="C#" Value="public class GlobalProxySelection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GlobalProxySelection extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.GlobalProxySelection" />
+  <TypeSignature Language="VB.NET" Value="Public Class GlobalProxySelection" />
+  <TypeSignature Language="F#" Value="type GlobalProxySelection = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GlobalProxySelection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -53,6 +56,8 @@
       <MemberSignature Language="C#" Value="public GlobalProxySelection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.GlobalProxySelection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GlobalProxySelection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -77,6 +82,9 @@
       <MemberSignature Language="C#" Value="public static System.Net.IWebProxy GetEmptyWebProxy ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.IWebProxy GetEmptyWebProxy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.GlobalProxySelection.GetEmptyWebProxy" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetEmptyWebProxy () As IWebProxy" />
+      <MemberSignature Language="F#" Value="static member GetEmptyWebProxy : unit -&gt; System.Net.IWebProxy" Usage="System.Net.GlobalProxySelection.GetEmptyWebProxy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Net::IWebProxy ^ GetEmptyWebProxy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -120,6 +128,9 @@
       <MemberSignature Language="C#" Value="public static System.Net.IWebProxy Select { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Net.IWebProxy Select" />
       <MemberSignature Language="DocId" Value="P:System.Net.GlobalProxySelection.Select" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Property Select As IWebProxy" />
+      <MemberSignature Language="F#" Value="member this.Select : System.Net.IWebProxy with get, set" Usage="System.Net.GlobalProxySelection.Select" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Net::IWebProxy ^ Select { System::Net::IWebProxy ^ get(); void set(System::Net::IWebProxy ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

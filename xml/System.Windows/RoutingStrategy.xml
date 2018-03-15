@@ -1,7 +1,10 @@
-<Type Name="RoutingStrategy" FullName="System.Windows.RoutingStrategy">
+﻿<Type Name="RoutingStrategy" FullName="System.Windows.RoutingStrategy">
   <TypeSignature Language="C#" Value="public enum RoutingStrategy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RoutingStrategy extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.RoutingStrategy" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RoutingStrategy" />
+  <TypeSignature Language="F#" Value="type RoutingStrategy = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class RoutingStrategy" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Bubble" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.RoutingStrategy Bubble = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.RoutingStrategy.Bubble" />
+      <MemberSignature Language="VB.NET" Value="Bubble" />
+      <MemberSignature Language="F#" Value="Bubble = 1" Usage="System.Windows.RoutingStrategy.Bubble" />
+      <MemberSignature Language="C++ CLI" Value="Bubble" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.RoutingStrategy</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The routed event uses a bubbling strategy, where the event instance routes upwards through the tree, from event source to root.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Direct" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.RoutingStrategy Direct = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.RoutingStrategy.Direct" />
+      <MemberSignature Language="VB.NET" Value="Direct" />
+      <MemberSignature Language="F#" Value="Direct = 2" Usage="System.Windows.RoutingStrategy.Direct" />
+      <MemberSignature Language="C++ CLI" Value="Direct" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.RoutingStrategy</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The routed event does not route through an element tree, but does support other routed event capabilities such as class handling, <see cref="T:System.Windows.EventTrigger" /> or <see cref="T:System.Windows.EventSetter" />.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="Tunnel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.RoutingStrategy Tunnel = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.RoutingStrategy.Tunnel" />
+      <MemberSignature Language="VB.NET" Value="Tunnel" />
+      <MemberSignature Language="F#" Value="Tunnel = 0" Usage="System.Windows.RoutingStrategy.Tunnel" />
+      <MemberSignature Language="C++ CLI" Value="Tunnel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.RoutingStrategy</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The routed event uses a tunneling strategy, where the event instance routes downwards through the tree, from root to source element.</summary>
       </Docs>

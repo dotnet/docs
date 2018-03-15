@@ -1,7 +1,10 @@
-<Type Name="HttpPostedFileWrapper" FullName="System.Web.HttpPostedFileWrapper">
+﻿<Type Name="HttpPostedFileWrapper" FullName="System.Web.HttpPostedFileWrapper">
   <TypeSignature Language="C#" Value="public class HttpPostedFileWrapper : System.Web.HttpPostedFileBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HttpPostedFileWrapper extends System.Web.HttpPostedFileBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpPostedFileWrapper" />
+  <TypeSignature Language="VB.NET" Value="Public Class HttpPostedFileWrapper&#xA;Inherits HttpPostedFileBase" />
+  <TypeSignature Language="F#" Value="type HttpPostedFileWrapper = class&#xA;    inherit HttpPostedFileBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpPostedFileWrapper : System::Web::HttpPostedFileBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,8 @@
       <MemberSignature Language="C#" Value="public HttpPostedFileWrapper (System.Web.HttpPostedFile httpPostedFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.HttpPostedFile httpPostedFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpPostedFileWrapper.#ctor(System.Web.HttpPostedFile)" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpPostedFileWrapper : System.Web.HttpPostedFile -&gt; System.Web.HttpPostedFileWrapper" Usage="new System.Web.HttpPostedFileWrapper httpPostedFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpPostedFileWrapper(System::Web::HttpPostedFile ^ httpPostedFile);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +56,9 @@
       <MemberSignature Language="C#" Value="public override int ContentLength { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ContentLength" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpPostedFileWrapper.ContentLength" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ContentLength As Integer" />
+      <MemberSignature Language="F#" Value="member this.ContentLength : int" Usage="System.Web.HttpPostedFileWrapper.ContentLength" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ContentLength { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +77,9 @@
       <MemberSignature Language="C#" Value="public override string ContentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpPostedFileWrapper.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string" Usage="System.Web.HttpPostedFileWrapper.ContentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ ContentType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -87,6 +98,9 @@
       <MemberSignature Language="C#" Value="public override string FileName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FileName" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpPostedFileWrapper.FileName" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FileName As String" />
+      <MemberSignature Language="F#" Value="member this.FileName : string" Usage="System.Web.HttpPostedFileWrapper.FileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FileName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,6 +119,9 @@
       <MemberSignature Language="C#" Value="public override System.IO.Stream InputStream { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream InputStream" />
       <MemberSignature Language="DocId" Value="P:System.Web.HttpPostedFileWrapper.InputStream" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property InputStream As Stream" />
+      <MemberSignature Language="F#" Value="member this.InputStream : System.IO.Stream" Usage="System.Web.HttpPostedFileWrapper.InputStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::IO::Stream ^ InputStream { System::IO::Stream ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -123,6 +140,9 @@
       <MemberSignature Language="C#" Value="public override void SaveAs (string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SaveAs(string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpPostedFileWrapper.SaveAs(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SaveAs (filename As String)" />
+      <MemberSignature Language="F#" Value="override this.SaveAs : string -&gt; unit" Usage="httpPostedFileWrapper.SaveAs filename" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SaveAs(System::String ^ filename);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

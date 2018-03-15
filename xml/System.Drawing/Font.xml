@@ -1,7 +1,10 @@
-<Type Name="Font" FullName="System.Drawing.Font">
+﻿<Type Name="Font" FullName="System.Drawing.Font">
   <TypeSignature Language="C#" Value="public sealed class Font : MarshalByRefObject, ICloneable, IDisposable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit Font extends System.MarshalByRefObject implements class System.ICloneable, class System.IDisposable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Font" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Font&#xA;Inherits MarshalByRefObject&#xA;Implements ICloneable, IDisposable, ISerializable" />
+  <TypeSignature Language="F#" Value="type Font = class&#xA;    inherit MarshalByRefObject&#xA;    interface ICloneable&#xA;    interface ISerializable&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Font sealed : MarshalByRefObject, ICloneable, IDisposable, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,10 +55,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> that uses the specified existing <see cref="T:System.Drawing.Font" /> and <see cref="T:System.Drawing.FontStyle" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Font (System.Drawing.Font prototype, System.Drawing.FontStyle newStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Font prototype, valuetype System.Drawing.FontStyle newStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.#ctor(System.Drawing.Font,System.Drawing.FontStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (prototype As Font, newStyle As FontStyle)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Font : System.Drawing.Font * System.Drawing.FontStyle -&gt; System.Drawing.Font" Usage="new System.Drawing.Font (prototype, newStyle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Font(System::Drawing::Font ^ prototype, System::Drawing::FontStyle newStyle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -92,6 +107,9 @@
       <MemberSignature Language="C#" Value="public Font (System.Drawing.FontFamily family, float emSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.FontFamily family, float32 emSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.#ctor(System.Drawing.FontFamily,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (family As FontFamily, emSize As Single)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Font : System.Drawing.FontFamily * single -&gt; System.Drawing.Font" Usage="new System.Drawing.Font (family, emSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Font(System::Drawing::FontFamily ^ family, float emSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -121,6 +139,9 @@
       <MemberSignature Language="C#" Value="public Font (string familyName, float emSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string familyName, float32 emSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.#ctor(System.String,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (familyName As String, emSize As Single)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Font : string * single -&gt; System.Drawing.Font" Usage="new System.Drawing.Font (familyName, emSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Font(System::String ^ familyName, float emSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -158,6 +179,9 @@
       <MemberSignature Language="C#" Value="public Font (System.Drawing.FontFamily family, float emSize, System.Drawing.FontStyle style);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.FontFamily family, float32 emSize, valuetype System.Drawing.FontStyle style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.#ctor(System.Drawing.FontFamily,System.Single,System.Drawing.FontStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (family As FontFamily, emSize As Single, style As FontStyle)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Font : System.Drawing.FontFamily * single * System.Drawing.FontStyle -&gt; System.Drawing.Font" Usage="new System.Drawing.Font (family, emSize, style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Font(System::Drawing::FontFamily ^ family, float emSize, System::Drawing::FontStyle style);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -200,6 +224,9 @@
       <MemberSignature Language="C#" Value="public Font (System.Drawing.FontFamily family, float emSize, System.Drawing.GraphicsUnit unit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.FontFamily family, float32 emSize, valuetype System.Drawing.GraphicsUnit unit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.#ctor(System.Drawing.FontFamily,System.Single,System.Drawing.GraphicsUnit)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (family As FontFamily, emSize As Single, unit As GraphicsUnit)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Font : System.Drawing.FontFamily * single * System.Drawing.GraphicsUnit -&gt; System.Drawing.Font" Usage="new System.Drawing.Font (family, emSize, unit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Font(System::Drawing::FontFamily ^ family, float emSize, System::Drawing::GraphicsUnit unit);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -233,6 +260,9 @@
       <MemberSignature Language="C#" Value="public Font (string familyName, float emSize, System.Drawing.FontStyle style);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string familyName, float32 emSize, valuetype System.Drawing.FontStyle style) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.#ctor(System.String,System.Single,System.Drawing.FontStyle)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (familyName As String, emSize As Single, style As FontStyle)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Font : string * single * System.Drawing.FontStyle -&gt; System.Drawing.Font" Usage="new System.Drawing.Font (familyName, emSize, style)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Font(System::String ^ familyName, float emSize, System::Drawing::FontStyle style);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -264,6 +294,9 @@
       <MemberSignature Language="C#" Value="public Font (string familyName, float emSize, System.Drawing.GraphicsUnit unit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string familyName, float32 emSize, valuetype System.Drawing.GraphicsUnit unit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.#ctor(System.String,System.Single,System.Drawing.GraphicsUnit)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (familyName As String, emSize As Single, unit As GraphicsUnit)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Font : string * single * System.Drawing.GraphicsUnit -&gt; System.Drawing.Font" Usage="new System.Drawing.Font (familyName, emSize, unit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Font(System::String ^ familyName, float emSize, System::Drawing::GraphicsUnit unit);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -295,6 +328,9 @@
       <MemberSignature Language="C#" Value="public Font (System.Drawing.FontFamily family, float emSize, System.Drawing.FontStyle style, System.Drawing.GraphicsUnit unit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.FontFamily family, float32 emSize, valuetype System.Drawing.FontStyle style, valuetype System.Drawing.GraphicsUnit unit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.#ctor(System.Drawing.FontFamily,System.Single,System.Drawing.FontStyle,System.Drawing.GraphicsUnit)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (family As FontFamily, emSize As Single, style As FontStyle, unit As GraphicsUnit)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Font : System.Drawing.FontFamily * single * System.Drawing.FontStyle * System.Drawing.GraphicsUnit -&gt; System.Drawing.Font" Usage="new System.Drawing.Font (family, emSize, style, unit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Font(System::Drawing::FontFamily ^ family, float emSize, System::Drawing::FontStyle style, System::Drawing::GraphicsUnit unit);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -323,6 +359,9 @@
       <MemberSignature Language="C#" Value="public Font (string familyName, float emSize, System.Drawing.FontStyle style, System.Drawing.GraphicsUnit unit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string familyName, float32 emSize, valuetype System.Drawing.FontStyle style, valuetype System.Drawing.GraphicsUnit unit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.#ctor(System.String,System.Single,System.Drawing.FontStyle,System.Drawing.GraphicsUnit)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (familyName As String, emSize As Single, style As FontStyle, unit As GraphicsUnit)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Font : string * single * System.Drawing.FontStyle * System.Drawing.GraphicsUnit -&gt; System.Drawing.Font" Usage="new System.Drawing.Font (familyName, emSize, style, unit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Font(System::String ^ familyName, float emSize, System::Drawing::FontStyle style, System::Drawing::GraphicsUnit unit);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -365,6 +404,9 @@
       <MemberSignature Language="C#" Value="public Font (System.Drawing.FontFamily family, float emSize, System.Drawing.FontStyle style, System.Drawing.GraphicsUnit unit, byte gdiCharSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.FontFamily family, float32 emSize, valuetype System.Drawing.FontStyle style, valuetype System.Drawing.GraphicsUnit unit, unsigned int8 gdiCharSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.#ctor(System.Drawing.FontFamily,System.Single,System.Drawing.FontStyle,System.Drawing.GraphicsUnit,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (family As FontFamily, emSize As Single, style As FontStyle, unit As GraphicsUnit, gdiCharSet As Byte)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Font : System.Drawing.FontFamily * single * System.Drawing.FontStyle * System.Drawing.GraphicsUnit * byte -&gt; System.Drawing.Font" Usage="new System.Drawing.Font (family, emSize, style, unit, gdiCharSet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Font(System::Drawing::FontFamily ^ family, float emSize, System::Drawing::FontStyle style, System::Drawing::GraphicsUnit unit, System::Byte gdiCharSet);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -404,6 +446,9 @@
       <MemberSignature Language="C#" Value="public Font (string familyName, float emSize, System.Drawing.FontStyle style, System.Drawing.GraphicsUnit unit, byte gdiCharSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string familyName, float32 emSize, valuetype System.Drawing.FontStyle style, valuetype System.Drawing.GraphicsUnit unit, unsigned int8 gdiCharSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.#ctor(System.String,System.Single,System.Drawing.FontStyle,System.Drawing.GraphicsUnit,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (familyName As String, emSize As Single, style As FontStyle, unit As GraphicsUnit, gdiCharSet As Byte)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Font : string * single * System.Drawing.FontStyle * System.Drawing.GraphicsUnit * byte -&gt; System.Drawing.Font" Usage="new System.Drawing.Font (familyName, emSize, style, unit, gdiCharSet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Font(System::String ^ familyName, float emSize, System::Drawing::FontStyle style, System::Drawing::GraphicsUnit unit, System::Byte gdiCharSet);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -440,6 +485,9 @@
       <MemberSignature Language="C#" Value="public Font (System.Drawing.FontFamily family, float emSize, System.Drawing.FontStyle style, System.Drawing.GraphicsUnit unit, byte gdiCharSet, bool gdiVerticalFont);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.FontFamily family, float32 emSize, valuetype System.Drawing.FontStyle style, valuetype System.Drawing.GraphicsUnit unit, unsigned int8 gdiCharSet, bool gdiVerticalFont) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.#ctor(System.Drawing.FontFamily,System.Single,System.Drawing.FontStyle,System.Drawing.GraphicsUnit,System.Byte,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (family As FontFamily, emSize As Single, style As FontStyle, unit As GraphicsUnit, gdiCharSet As Byte, gdiVerticalFont As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Font : System.Drawing.FontFamily * single * System.Drawing.FontStyle * System.Drawing.GraphicsUnit * byte * bool -&gt; System.Drawing.Font" Usage="new System.Drawing.Font (family, emSize, style, unit, gdiCharSet, gdiVerticalFont)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Font(System::Drawing::FontFamily ^ family, float emSize, System::Drawing::FontStyle style, System::Drawing::GraphicsUnit unit, System::Byte gdiCharSet, bool gdiVerticalFont);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -481,6 +529,9 @@
       <MemberSignature Language="C#" Value="public Font (string familyName, float emSize, System.Drawing.FontStyle style, System.Drawing.GraphicsUnit unit, byte gdiCharSet, bool gdiVerticalFont);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string familyName, float32 emSize, valuetype System.Drawing.FontStyle style, valuetype System.Drawing.GraphicsUnit unit, unsigned int8 gdiCharSet, bool gdiVerticalFont) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.#ctor(System.String,System.Single,System.Drawing.FontStyle,System.Drawing.GraphicsUnit,System.Byte,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (familyName As String, emSize As Single, style As FontStyle, unit As GraphicsUnit, gdiCharSet As Byte, gdiVerticalFont As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Font : string * single * System.Drawing.FontStyle * System.Drawing.GraphicsUnit * byte * bool -&gt; System.Drawing.Font" Usage="new System.Drawing.Font (familyName, emSize, style, unit, gdiCharSet, gdiVerticalFont)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Font(System::String ^ familyName, float emSize, System::Drawing::FontStyle style, System::Drawing::GraphicsUnit unit, System::Byte gdiCharSet, bool gdiVerticalFont);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -519,6 +570,9 @@
       <MemberSignature Language="C#" Value="public bool Bold { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Bold" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.Bold" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bold As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Bold : bool" Usage="System.Drawing.Font.Bold" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Bold { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -526,7 +580,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -554,7 +608,13 @@
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="font.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -584,7 +644,13 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="font.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -614,6 +680,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="font.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -648,6 +717,9 @@
       <MemberSignature Language="C#" Value="~Font ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="font.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!Font ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -666,6 +738,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.FontFamily FontFamily { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.FontFamily FontFamily" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.FontFamily" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FontFamily As FontFamily" />
+      <MemberSignature Language="F#" Value="member this.FontFamily : System.Drawing.FontFamily" Usage="System.Drawing.Font.FontFamily" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::FontFamily ^ FontFamily { System::Drawing::FontFamily ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -696,6 +771,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Font FromHdc (IntPtr hdc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Font FromHdc(native int hdc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.FromHdc(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromHdc (hdc As IntPtr) As Font" />
+      <MemberSignature Language="F#" Value="static member FromHdc : nativeint -&gt; System.Drawing.Font" Usage="System.Drawing.Font.FromHdc hdc" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Font ^ FromHdc(IntPtr hdc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -727,6 +805,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Font FromHfont (IntPtr hfont);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Font FromHfont(native int hfont) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.FromHfont(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromHfont (hfont As IntPtr) As Font" />
+      <MemberSignature Language="F#" Value="static member FromHfont : nativeint -&gt; System.Drawing.Font" Usage="System.Drawing.Font.FromHfont hfont" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Font ^ FromHfont(IntPtr hfont);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -765,10 +846,22 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromLogFont">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Drawing.Font" /> from the specified GDI logical font (<c>LOGFONT</c>) structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromLogFont">
       <MemberSignature Language="C#" Value="public static System.Drawing.Font FromLogFont (object lf);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Font FromLogFont(object lf) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.FromLogFont(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromLogFont (lf As Object) As Font" />
+      <MemberSignature Language="F#" Value="static member FromLogFont : obj -&gt; System.Drawing.Font" Usage="System.Drawing.Font.FromLogFont lf" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Font ^ FromLogFont(System::Object ^ lf);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -799,6 +892,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Font FromLogFont (object lf, IntPtr hdc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Drawing.Font FromLogFont(object lf, native int hdc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.FromLogFont(System.Object,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromLogFont (lf As Object, hdc As IntPtr) As Font" />
+      <MemberSignature Language="F#" Value="static member FromLogFont : obj * nativeint -&gt; System.Drawing.Font" Usage="System.Drawing.Font.FromLogFont (lf, hdc)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Drawing::Font ^ FromLogFont(System::Object ^ lf, IntPtr hdc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -832,6 +928,9 @@
       <MemberSignature Language="C#" Value="public byte GdiCharSet { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8 GdiCharSet" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.GdiCharSet" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GdiCharSet As Byte" />
+      <MemberSignature Language="F#" Value="member this.GdiCharSet : byte" Usage="System.Drawing.Font.GdiCharSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Byte GdiCharSet { System::Byte get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -839,7 +938,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -885,6 +984,9 @@
       <MemberSignature Language="C#" Value="public bool GdiVerticalFont { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool GdiVerticalFont" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.GdiVerticalFont" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GdiVerticalFont As Boolean" />
+      <MemberSignature Language="F#" Value="member this.GdiVerticalFont : bool" Usage="System.Drawing.Font.GdiVerticalFont" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool GdiVerticalFont { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -892,7 +994,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -920,6 +1022,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="font.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -952,10 +1057,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetHeight">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the line spacing of this font.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetHeight">
       <MemberSignature Language="C#" Value="public float GetHeight ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 GetHeight() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.GetHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHeight () As Single" />
+      <MemberSignature Language="F#" Value="member this.GetHeight : unit -&gt; single" Usage="font.GetHeight " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; float GetHeight();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -986,6 +1103,8 @@
       <MemberSignature Language="C#" Value="public float GetHeight (System.Drawing.Graphics graphics);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 GetHeight(class System.Drawing.Graphics graphics) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.GetHeight(System.Drawing.Graphics)" />
+      <MemberSignature Language="F#" Value="member this.GetHeight : System.Drawing.Graphics -&gt; single" Usage="font.GetHeight graphics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; float GetHeight(System::Drawing::Graphics ^ graphics);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1042,6 +1161,9 @@
       <MemberSignature Language="C#" Value="public float GetHeight (float dpi);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 GetHeight(float32 dpi) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.GetHeight(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHeight (dpi As Single) As Single" />
+      <MemberSignature Language="F#" Value="member this.GetHeight : single -&gt; single" Usage="font.GetHeight dpi" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; float GetHeight(float dpi);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1073,6 +1195,9 @@
       <MemberSignature Language="C#" Value="public int Height { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Height" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.Height" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Height As Integer" />
+      <MemberSignature Language="F#" Value="member this.Height : int" Usage="System.Drawing.Font.Height" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Height { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1109,6 +1234,9 @@
       <MemberSignature Language="C#" Value="public bool IsSystemFont { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSystemFont" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.IsSystemFont" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSystemFont As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSystemFont : bool" Usage="System.Drawing.Font.IsSystemFont" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSystemFont { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1140,6 +1268,9 @@
       <MemberSignature Language="C#" Value="public bool Italic { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Italic" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.Italic" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Italic As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Italic : bool" Usage="System.Drawing.Font.Italic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Italic { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1147,7 +1278,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1165,6 +1296,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Drawing.Font.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1172,7 +1306,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Drawing.Design.FontNameEditor, System.Drawing.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -1205,6 +1339,9 @@
       <MemberSignature Language="C#" Value="public string OriginalFontName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OriginalFontName" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.OriginalFontName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OriginalFontName As String" />
+      <MemberSignature Language="F#" Value="member this.OriginalFontName : string" Usage="System.Drawing.Font.OriginalFontName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OriginalFontName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1235,6 +1372,9 @@
       <MemberSignature Language="C#" Value="public float Size { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Size" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.Size" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Size As Single" />
+      <MemberSignature Language="F#" Value="member this.Size : single" Usage="System.Drawing.Font.Size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Size { float get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1264,6 +1404,9 @@
       <MemberSignature Language="C#" Value="public float SizeInPoints { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 SizeInPoints" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.SizeInPoints" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SizeInPoints As Single" />
+      <MemberSignature Language="F#" Value="member this.SizeInPoints : single" Usage="System.Drawing.Font.SizeInPoints" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float SizeInPoints { float get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1298,6 +1441,9 @@
       <MemberSignature Language="C#" Value="public bool Strikeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Strikeout" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.Strikeout" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Strikeout As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Strikeout : bool" Usage="System.Drawing.Font.Strikeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Strikeout { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1305,7 +1451,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1322,6 +1468,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.FontStyle Style { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.FontStyle Style" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.Style" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Style As FontStyle" />
+      <MemberSignature Language="F#" Value="member this.Style : System.Drawing.FontStyle" Usage="System.Drawing.Font.Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::FontStyle Style { System::Drawing::FontStyle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1356,7 +1505,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo si, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo si, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (si As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ si, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1379,6 +1533,9 @@
       <MemberSignature Language="C#" Value="public string SystemFontName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SystemFontName" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.SystemFontName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SystemFontName As String" />
+      <MemberSignature Language="F#" Value="member this.SystemFontName : string" Usage="System.Drawing.Font.SystemFontName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SystemFontName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1409,6 +1566,9 @@
       <MemberSignature Language="C#" Value="public IntPtr ToHfont ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance native int ToHfont() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.ToHfont" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToHfont () As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.ToHfont : unit -&gt; nativeint" Usage="font.ToHfont " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr ToHfont();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1442,10 +1602,22 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Related enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToLogFont">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a GDI logical font (<c>LOGFONT</c>) structure from this <see cref="T:System.Drawing.Font" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToLogFont">
       <MemberSignature Language="C#" Value="public void ToLogFont (object logFont);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ToLogFont(object logFont) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.ToLogFont(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ToLogFont (logFont As Object)" />
+      <MemberSignature Language="F#" Value="member this.ToLogFont : obj -&gt; unit" Usage="font.ToLogFont logFont" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ToLogFont(System::Object ^ logFont);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1475,6 +1647,8 @@
       <MemberSignature Language="C#" Value="public void ToLogFont (object logFont, System.Drawing.Graphics graphics);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ToLogFont(object logFont, class System.Drawing.Graphics graphics) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.ToLogFont(System.Object,System.Drawing.Graphics)" />
+      <MemberSignature Language="F#" Value="member this.ToLogFont : obj * System.Drawing.Graphics -&gt; unit" Usage="font.ToLogFont (logFont, graphics)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ToLogFont(System::Object ^ logFont, System::Drawing::Graphics ^ graphics);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1508,6 +1682,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Font.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="font.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1551,6 +1728,9 @@
       <MemberSignature Language="C#" Value="public bool Underline { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Underline" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.Underline" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Underline As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Underline : bool" Usage="System.Drawing.Font.Underline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Underline { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1558,7 +1738,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1575,6 +1755,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.GraphicsUnit Unit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.GraphicsUnit Unit" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Font.Unit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Unit As GraphicsUnit" />
+      <MemberSignature Language="F#" Value="member this.Unit : System.Drawing.GraphicsUnit" Usage="System.Drawing.Font.Unit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::GraphicsUnit Unit { System::Drawing::GraphicsUnit get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1605,41 +1788,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetHeight">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the line spacing of this font.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToLogFont">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a GDI logical font (<c>LOGFONT</c>) structure from this <see cref="T:System.Drawing.Font" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new <see cref="T:System.Drawing.Font" /> that uses the specified existing <see cref="T:System.Drawing.Font" /> and <see cref="T:System.Drawing.FontStyle" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FromLogFont">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a <see cref="T:System.Drawing.Font" /> from the specified GDI logical font (<c>LOGFONT</c>) structure.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

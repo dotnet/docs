@@ -1,7 +1,10 @@
-<Type Name="ItemsControlAutomationPeer" FullName="System.Windows.Automation.Peers.ItemsControlAutomationPeer">
+﻿<Type Name="ItemsControlAutomationPeer" FullName="System.Windows.Automation.Peers.ItemsControlAutomationPeer">
   <TypeSignature Language="C#" Value="public abstract class ItemsControlAutomationPeer : System.Windows.Automation.Peers.FrameworkElementAutomationPeer, System.Windows.Automation.Provider.IItemContainerProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ItemsControlAutomationPeer extends System.Windows.Automation.Peers.FrameworkElementAutomationPeer implements class System.Windows.Automation.Provider.IItemContainerProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ItemsControlAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ItemsControlAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer&#xA;Implements IItemContainerProvider" />
+  <TypeSignature Language="F#" Value="type ItemsControlAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer&#xA;    interface IItemContainerProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ItemsControlAutomationPeer abstract : System::Windows::Automation::Peers::FrameworkElementAutomationPeer, System::Windows::Automation::Provider::IItemContainerProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="protected ItemsControlAutomationPeer (System.Windows.Controls.ItemsControl owner);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.ItemsControl owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemsControlAutomationPeer.#ctor(System.Windows.Controls.ItemsControl)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (owner As ItemsControl)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.ItemsControlAutomationPeer : System.Windows.Controls.ItemsControl -&gt; System.Windows.Automation.Peers.ItemsControlAutomationPeer" Usage="new System.Windows.Automation.Peers.ItemsControlAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ItemsControlAutomationPeer(System::Windows::Controls::ItemsControl ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +47,9 @@
       <MemberSignature Language="C#" Value="protected abstract System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer (object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemsControlAutomationPeer.CreateItemAutomationPeer(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
+      <MemberSignature Language="F#" Value="abstract member CreateItemAutomationPeer : obj -&gt; System.Windows.Automation.Peers.ItemAutomationPeer" Usage="itemsControlAutomationPeer.CreateItemAutomationPeer item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Windows::Automation::Peers::ItemAutomationPeer ^ CreateItemAutomationPeer(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,9 +69,12 @@
       </Docs>
     </Member>
     <Member MemberName="FindOrCreateItemAutomationPeer">
-      <MemberSignature Language="C#" Value="protected virtual System.Windows.Automation.Peers.ItemAutomationPeer FindOrCreateItemAutomationPeer (object item);" />
+      <MemberSignature Language="C#" Value="protected internal virtual System.Windows.Automation.Peers.ItemAutomationPeer FindOrCreateItemAutomationPeer (object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Windows.Automation.Peers.ItemAutomationPeer FindOrCreateItemAutomationPeer(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemsControlAutomationPeer.FindOrCreateItemAutomationPeer(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Function FindOrCreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
+      <MemberSignature Language="F#" Value="abstract member FindOrCreateItemAutomationPeer : obj -&gt; System.Windows.Automation.Peers.ItemAutomationPeer&#xA;override this.FindOrCreateItemAutomationPeer : obj -&gt; System.Windows.Automation.Peers.ItemAutomationPeer" Usage="itemsControlAutomationPeer.FindOrCreateItemAutomationPeer item" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual System::Windows::Automation::Peers::ItemAutomationPeer ^ FindOrCreateItemAutomationPeer(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -93,6 +105,9 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemsControlAutomationPeer.GetChildrenCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="itemsControlAutomationPeer.GetChildrenCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -112,6 +127,8 @@
       <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface patternInterface);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface patternInterface) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemsControlAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="itemsControlAutomationPeer.GetPattern patternInterface" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface patternInterface);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -134,6 +151,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool IsVirtualized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsVirtualized" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ItemsControlAutomationPeer.IsVirtualized" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property IsVirtualized As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsVirtualized : bool" Usage="System.Windows.Automation.Peers.ItemsControlAutomationPeer.IsVirtualized" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool IsVirtualized { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -153,7 +173,12 @@
       <MemberSignature Language="C#" Value="System.Windows.Automation.Provider.IRawElementProviderSimple IItemContainerProvider.FindItemByProperty (System.Windows.Automation.Provider.IRawElementProviderSimple startAfter, int propertyId, object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Windows.Automation.Provider.IRawElementProviderSimple System.Windows.Automation.Provider.IItemContainerProvider.FindItemByProperty(class System.Windows.Automation.Provider.IRawElementProviderSimple startAfter, int32 propertyId, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ItemsControlAutomationPeer.System#Windows#Automation#Provider#IItemContainerProvider#FindItemByProperty(System.Windows.Automation.Provider.IRawElementProviderSimple,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function FindItemByProperty (startAfter As IRawElementProviderSimple, propertyId As Integer, value As Object) As IRawElementProviderSimple Implements IItemContainerProvider.FindItemByProperty" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Windows::Automation::Provider::IRawElementProviderSimple ^ System.Windows.Automation.Provider.IItemContainerProvider.FindItemByProperty(System::Windows::Automation::Provider::IRawElementProviderSimple ^ startAfter, int propertyId, System::Object ^ value) = System::Windows::Automation::Provider::IItemContainerProvider::FindItemByProperty;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Automation.Provider.IItemContainerProvider.FindItemByProperty(System.Windows.Automation.Provider.IRawElementProviderSimple,System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

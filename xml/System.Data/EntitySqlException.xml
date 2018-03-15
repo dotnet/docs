@@ -1,7 +1,10 @@
-<Type Name="EntitySqlException" FullName="System.Data.EntitySqlException">
+﻿<Type Name="EntitySqlException" FullName="System.Data.EntitySqlException">
   <TypeSignature Language="C#" Value="public sealed class EntitySqlException : System.Data.EntityException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit EntitySqlException extends System.Data.EntityException" />
   <TypeSignature Language="DocId" Value="T:System.Data.EntitySqlException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntitySqlException&#xA;Inherits EntityException" />
+  <TypeSignature Language="F#" Value="type EntitySqlException = class&#xA;    inherit EntityException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntitySqlException sealed : System::Data::EntityException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public EntitySqlException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntitySqlException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntitySqlException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -65,6 +70,9 @@
       <MemberSignature Language="C#" Value="public EntitySqlException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntitySqlException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.EntitySqlException : string -&gt; System.Data.EntitySqlException" Usage="new System.Data.EntitySqlException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntitySqlException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -90,6 +98,9 @@
       <MemberSignature Language="C#" Value="public EntitySqlException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntitySqlException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Data.EntitySqlException : string * Exception -&gt; System.Data.EntitySqlException" Usage="new System.Data.EntitySqlException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntitySqlException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -117,6 +128,9 @@
       <MemberSignature Language="C#" Value="public int Column { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Column" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntitySqlException.Column" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Column As Integer" />
+      <MemberSignature Language="F#" Value="member this.Column : int" Usage="System.Data.EntitySqlException.Column" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Column { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -135,6 +149,9 @@
       <MemberSignature Language="C#" Value="public string ErrorContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorContext" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntitySqlException.ErrorContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorContext As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorContext : string" Usage="System.Data.EntitySqlException.ErrorContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorContext { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -153,6 +170,9 @@
       <MemberSignature Language="C#" Value="public string ErrorDescription { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorDescription" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntitySqlException.ErrorDescription" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorDescription As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorDescription : string" Usage="System.Data.EntitySqlException.ErrorDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ErrorDescription { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -171,6 +191,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.EntitySqlException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="entitySqlException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -209,6 +232,9 @@
       <MemberSignature Language="C#" Value="public int Line { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Line" />
       <MemberSignature Language="DocId" Value="P:System.Data.EntitySqlException.Line" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Line As Integer" />
+      <MemberSignature Language="F#" Value="member this.Line : int" Usage="System.Data.EntitySqlException.Line" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Line { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

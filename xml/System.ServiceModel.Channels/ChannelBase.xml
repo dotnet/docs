@@ -1,7 +1,10 @@
-<Type Name="ChannelBase" FullName="System.ServiceModel.Channels.ChannelBase">
+﻿<Type Name="ChannelBase" FullName="System.ServiceModel.Channels.ChannelBase">
   <TypeSignature Language="C#" Value="public abstract class ChannelBase : System.ServiceModel.Channels.CommunicationObject, System.ServiceModel.Channels.IChannel, System.ServiceModel.IDefaultCommunicationTimeouts" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ChannelBase extends System.ServiceModel.Channels.CommunicationObject implements class System.ServiceModel.Channels.IChannel, class System.ServiceModel.ICommunicationObject, class System.ServiceModel.IDefaultCommunicationTimeouts" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.ChannelBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ChannelBase&#xA;Inherits CommunicationObject&#xA;Implements IChannel, IDefaultCommunicationTimeouts" />
+  <TypeSignature Language="F#" Value="type ChannelBase = class&#xA;    inherit CommunicationObject&#xA;    interface ICommunicationObject&#xA;    interface IChannel&#xA;    interface IDefaultCommunicationTimeouts" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChannelBase abstract : System::ServiceModel::Channels::CommunicationObject, System::ServiceModel::Channels::IChannel, System::ServiceModel::IDefaultCommunicationTimeouts" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -50,6 +53,9 @@
       <MemberSignature Language="C#" Value="protected ChannelBase (System.ServiceModel.Channels.ChannelManagerBase channelManager);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.ChannelManagerBase channelManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelBase.#ctor(System.ServiceModel.Channels.ChannelManagerBase)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (channelManager As ChannelManagerBase)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.ChannelBase : System.ServiceModel.Channels.ChannelManagerBase -&gt; System.ServiceModel.Channels.ChannelBase" Usage="new System.ServiceModel.Channels.ChannelBase channelManager" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ChannelBase(System::ServiceModel::Channels::ChannelManagerBase ^ channelManager);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -81,9 +87,12 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultCloseTimeout">
-      <MemberSignature Language="C#" Value="protected override TimeSpan DefaultCloseTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override TimeSpan DefaultCloseTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultCloseTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelBase.DefaultCloseTimeout" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultCloseTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.DefaultCloseTimeout : TimeSpan" Usage="System.ServiceModel.Channels.ChannelBase.DefaultCloseTimeout" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property TimeSpan DefaultCloseTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,9 +124,12 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultOpenTimeout">
-      <MemberSignature Language="C#" Value="protected override TimeSpan DefaultOpenTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override TimeSpan DefaultOpenTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultOpenTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelBase.DefaultOpenTimeout" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property DefaultOpenTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.DefaultOpenTimeout : TimeSpan" Usage="System.ServiceModel.Channels.ChannelBase.DefaultOpenTimeout" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property TimeSpan DefaultOpenTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -149,9 +161,12 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultReceiveTimeout">
-      <MemberSignature Language="C#" Value="protected TimeSpan DefaultReceiveTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected internal TimeSpan DefaultReceiveTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultReceiveTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelBase.DefaultReceiveTimeout" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property DefaultReceiveTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.DefaultReceiveTimeout : TimeSpan" Usage="System.ServiceModel.Channels.ChannelBase.DefaultReceiveTimeout" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property TimeSpan DefaultReceiveTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -183,9 +198,12 @@
       </Docs>
     </Member>
     <Member MemberName="DefaultSendTimeout">
-      <MemberSignature Language="C#" Value="protected TimeSpan DefaultSendTimeout { get; }" />
+      <MemberSignature Language="C#" Value="protected internal TimeSpan DefaultSendTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan DefaultSendTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelBase.DefaultSendTimeout" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property DefaultSendTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.DefaultSendTimeout : TimeSpan" Usage="System.ServiceModel.Channels.ChannelBase.DefaultSendTimeout" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property TimeSpan DefaultSendTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -220,7 +238,13 @@
       <MemberSignature Language="C#" Value="public virtual T GetProperty&lt;T&gt; () where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T GetProperty&lt;class T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelBase.GetProperty``1" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProperty(Of T As Class) () As T" />
+      <MemberSignature Language="F#" Value="abstract member GetProperty : unit -&gt; 'T (requires 'T : null)&#xA;override this.GetProperty : unit -&gt; 'T (requires 'T : null)" Usage="channelBase.GetProperty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class virtual T GetProperty();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ServiceModel.Channels.IChannel.GetProperty``1</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -263,6 +287,9 @@
       <MemberSignature Language="C#" Value="protected System.ServiceModel.Channels.ChannelManagerBase Manager { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.ChannelManagerBase Manager" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelBase.Manager" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Manager As ChannelManagerBase" />
+      <MemberSignature Language="F#" Value="member this.Manager : System.ServiceModel.Channels.ChannelManagerBase" Usage="System.ServiceModel.Channels.ChannelBase.Manager" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::ServiceModel::Channels::ChannelManagerBase ^ Manager { System::ServiceModel::Channels::ChannelManagerBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -295,6 +322,9 @@
       <MemberSignature Language="C#" Value="protected override void OnClosed ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClosed() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.ChannelBase.OnClosed" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClosed ()" />
+      <MemberSignature Language="F#" Value="override this.OnClosed : unit -&gt; unit" Usage="channelBase.OnClosed " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClosed();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -327,7 +357,13 @@
       <MemberSignature Language="C#" Value="TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.CloseTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.CloseTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelBase.System#ServiceModel#IDefaultCommunicationTimeouts#CloseTimeout" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property CloseTimeout As TimeSpan Implements IDefaultCommunicationTimeouts.CloseTimeout" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.ChannelBase.System.ServiceModel.IDefaultCommunicationTimeouts.CloseTimeout" />
+      <MemberSignature Language="C++ CLI" Value="property TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.CloseTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.IDefaultCommunicationTimeouts.CloseTimeout</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -359,7 +395,13 @@
       <MemberSignature Language="C#" Value="TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.OpenTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.OpenTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelBase.System#ServiceModel#IDefaultCommunicationTimeouts#OpenTimeout" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property OpenTimeout As TimeSpan Implements IDefaultCommunicationTimeouts.OpenTimeout" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.ChannelBase.System.ServiceModel.IDefaultCommunicationTimeouts.OpenTimeout" />
+      <MemberSignature Language="C++ CLI" Value="property TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.OpenTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.IDefaultCommunicationTimeouts.OpenTimeout</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -391,7 +433,13 @@
       <MemberSignature Language="C#" Value="TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.ReceiveTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.ReceiveTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelBase.System#ServiceModel#IDefaultCommunicationTimeouts#ReceiveTimeout" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ReceiveTimeout As TimeSpan Implements IDefaultCommunicationTimeouts.ReceiveTimeout" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.ChannelBase.System.ServiceModel.IDefaultCommunicationTimeouts.ReceiveTimeout" />
+      <MemberSignature Language="C++ CLI" Value="property TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.ReceiveTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.IDefaultCommunicationTimeouts.ReceiveTimeout</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -423,7 +471,13 @@
       <MemberSignature Language="C#" Value="TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.SendTimeout { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.SendTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.ChannelBase.System#ServiceModel#IDefaultCommunicationTimeouts#SendTimeout" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SendTimeout As TimeSpan Implements IDefaultCommunicationTimeouts.SendTimeout" />
+      <MemberSignature Language="F#" Usage="System.ServiceModel.Channels.ChannelBase.System.ServiceModel.IDefaultCommunicationTimeouts.SendTimeout" />
+      <MemberSignature Language="C++ CLI" Value="property TimeSpan System.ServiceModel.IDefaultCommunicationTimeouts.SendTimeout { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.ServiceModel.IDefaultCommunicationTimeouts.SendTimeout</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="ImpersonationOption" FullName="System.ServiceModel.ImpersonationOption">
+﻿<Type Name="ImpersonationOption" FullName="System.ServiceModel.ImpersonationOption">
   <TypeSignature Language="C#" Value="public enum ImpersonationOption" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImpersonationOption extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ImpersonationOption" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ImpersonationOption" />
+  <TypeSignature Language="F#" Value="type ImpersonationOption = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ImpersonationOption" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="Allowed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.ImpersonationOption Allowed = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.ImpersonationOption.Allowed" />
+      <MemberSignature Language="VB.NET" Value="Allowed" />
+      <MemberSignature Language="F#" Value="Allowed = 1" Usage="System.ServiceModel.ImpersonationOption.Allowed" />
+      <MemberSignature Language="C++ CLI" Value="Allowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.ImpersonationOption</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Impersonation is performed if credentials are available and <see cref="P:System.ServiceModel.Configuration.ServiceAuthorizationElement.ImpersonateCallerForAllOperations" /> is equal to <see langword="true" />.</summary>
       </Docs>
@@ -53,6 +60,9 @@
       <MemberSignature Language="C#" Value="NotAllowed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.ImpersonationOption NotAllowed = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.ImpersonationOption.NotAllowed" />
+      <MemberSignature Language="VB.NET" Value="NotAllowed" />
+      <MemberSignature Language="F#" Value="NotAllowed = 0" Usage="System.ServiceModel.ImpersonationOption.NotAllowed" />
+      <MemberSignature Language="C++ CLI" Value="NotAllowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -62,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.ImpersonationOption</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Impersonation is not performed. If <see cref="P:System.ServiceModel.Configuration.ServiceAuthorizationElement.ImpersonateCallerForAllOperations" /> is equal to <see langword="true" />, a validation exception occurs at service startup time.</summary>
       </Docs>
@@ -70,6 +81,9 @@
       <MemberSignature Language="C#" Value="Required" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.ImpersonationOption Required = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.ImpersonationOption.Required" />
+      <MemberSignature Language="VB.NET" Value="Required" />
+      <MemberSignature Language="F#" Value="Required = 2" Usage="System.ServiceModel.ImpersonationOption.Required" />
+      <MemberSignature Language="C++ CLI" Value="Required" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -79,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.ImpersonationOption</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Impersonation is required.</summary>
       </Docs>

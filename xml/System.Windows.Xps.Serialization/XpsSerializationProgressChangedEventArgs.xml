@@ -1,7 +1,10 @@
-<Type Name="XpsSerializationProgressChangedEventArgs" FullName="System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs">
+﻿<Type Name="XpsSerializationProgressChangedEventArgs" FullName="System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs">
   <TypeSignature Language="C#" Value="public class XpsSerializationProgressChangedEventArgs : System.ComponentModel.ProgressChangedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsSerializationProgressChangedEventArgs extends System.ComponentModel.ProgressChangedEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class XpsSerializationProgressChangedEventArgs&#xA;Inherits ProgressChangedEventArgs" />
+  <TypeSignature Language="F#" Value="type XpsSerializationProgressChangedEventArgs = class&#xA;    inherit ProgressChangedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XpsSerializationProgressChangedEventArgs : System::ComponentModel::ProgressChangedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public XpsSerializationProgressChangedEventArgs (System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel writingLevel, int pageNumber, int progressPercentage, object userToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel writingLevel, int32 pageNumber, int32 progressPercentage, object userToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.#ctor(System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel,System.Int32,System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (writingLevel As XpsWritingProgressChangeLevel, pageNumber As Integer, progressPercentage As Integer, userToken As Object)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs : System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel * int * int * obj -&gt; System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs" Usage="new System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs (writingLevel, pageNumber, progressPercentage, userToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsSerializationProgressChangedEventArgs(System::Windows::Xps::Serialization::XpsWritingProgressChangeLevel writingLevel, int pageNumber, int progressPercentage, System::Object ^ userToken);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="public int PageNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PageNumber" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.PageNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.PageNumber : int" Usage="System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.PageNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PageNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -75,6 +84,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel WritingLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel WritingLevel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.WritingLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WritingLevel As XpsWritingProgressChangeLevel" />
+      <MemberSignature Language="F#" Value="member this.WritingLevel : System.Windows.Xps.Serialization.XpsWritingProgressChangeLevel" Usage="System.Windows.Xps.Serialization.XpsSerializationProgressChangedEventArgs.WritingLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Xps::Serialization::XpsWritingProgressChangeLevel WritingLevel { System::Windows::Xps::Serialization::XpsWritingProgressChangeLevel get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

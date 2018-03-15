@@ -1,7 +1,10 @@
-<Type Name="XNode" FullName="System.Xml.Linq.XNode">
+﻿<Type Name="XNode" FullName="System.Xml.Linq.XNode">
   <TypeSignature Language="C#" Value="public abstract class XNode : System.Xml.Linq.XObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XNode extends System.Xml.Linq.XObject" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XNode" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class XNode&#xA;Inherits XObject" />
+  <TypeSignature Language="F#" Value="type XNode = class&#xA;    inherit XObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XNode abstract : System::Xml::Linq::XObject" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -151,6 +154,9 @@ Console.WriteLine(xmlTree)
       <MemberSignature Language="C#" Value="public void AddAfterSelf (object content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAfterSelf(object content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.AddAfterSelf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAfterSelf (content As Object)" />
+      <MemberSignature Language="F#" Value="member this.AddAfterSelf : obj -&gt; unit" Usage="xNode.AddAfterSelf content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAfterSelf(System::Object ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -241,6 +247,9 @@ Console.WriteLine(xmlTree)
       <MemberSignature Language="C#" Value="public void AddAfterSelf (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAfterSelf(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.AddAfterSelf(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAfterSelf (ParamArray content As Object())" />
+      <MemberSignature Language="F#" Value="member this.AddAfterSelf : obj[] -&gt; unit" Usage="xNode.AddAfterSelf content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAfterSelf(... cli::array &lt;System::Object ^&gt; ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -452,6 +461,9 @@ Console.WriteLine(xmlTree)
       <MemberSignature Language="C#" Value="public void AddBeforeSelf (object content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddBeforeSelf(object content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.AddBeforeSelf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddBeforeSelf (content As Object)" />
+      <MemberSignature Language="F#" Value="member this.AddBeforeSelf : obj -&gt; unit" Usage="xNode.AddBeforeSelf content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBeforeSelf(System::Object ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -544,6 +556,9 @@ Console.WriteLine(xmlTree)
       <MemberSignature Language="C#" Value="public void AddBeforeSelf (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddBeforeSelf(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.AddBeforeSelf(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddBeforeSelf (ParamArray content As Object())" />
+      <MemberSignature Language="F#" Value="member this.AddBeforeSelf : obj[] -&gt; unit" Usage="xNode.AddBeforeSelf content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddBeforeSelf(... cli::array &lt;System::Object ^&gt; ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -687,6 +702,9 @@ Console.WriteLine(xmlTree)
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Ancestors ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; Ancestors() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.Ancestors" />
+      <MemberSignature Language="VB.NET" Value="Public Function Ancestors () As IEnumerable(Of XElement)" />
+      <MemberSignature Language="F#" Value="member this.Ancestors : unit -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xNode.Ancestors " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Ancestors();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -765,6 +783,9 @@ Root
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Ancestors (System.Xml.Linq.XName name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; Ancestors(class System.Xml.Linq.XName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.Ancestors(System.Xml.Linq.XName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Ancestors (name As XName) As IEnumerable(Of XElement)" />
+      <MemberSignature Language="F#" Value="member this.Ancestors : System.Xml.Linq.XName -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xNode.Ancestors name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ Ancestors(System::Xml::Linq::XName ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -845,6 +866,9 @@ Child
       <MemberSignature Language="C#" Value="public static int CompareDocumentOrder (System.Xml.Linq.XNode n1, System.Xml.Linq.XNode n2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 CompareDocumentOrder(class System.Xml.Linq.XNode n1, class System.Xml.Linq.XNode n2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.CompareDocumentOrder(System.Xml.Linq.XNode,System.Xml.Linq.XNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareDocumentOrder (n1 As XNode, n2 As XNode) As Integer" />
+      <MemberSignature Language="F#" Value="static member CompareDocumentOrder : System.Xml.Linq.XNode * System.Xml.Linq.XNode -&gt; int" Usage="System.Xml.Linq.XNode.CompareDocumentOrder (n1, n2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static int CompareDocumentOrder(System::Xml::Linq::XNode ^ n1, System::Xml::Linq::XNode ^ n2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -945,10 +969,24 @@ el1 is before el2
         <exception cref="T:System.InvalidOperationException">The two nodes do not share a common ancestor.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an <see cref="T:System.Xml.XmlReader" /> for this node.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateReader">
       <MemberSignature Language="C#" Value="public System.Xml.XmlReader CreateReader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlReader CreateReader() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.CreateReader" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateReader () As XmlReader" />
+      <MemberSignature Language="F#" Value="member this.CreateReader : unit -&gt; System.Xml.XmlReader" Usage="xNode.CreateReader " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlReader ^ CreateReader();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1121,6 +1159,8 @@ Console.WriteLine(newTree)
       <MemberSignature Language="C#" Value="public System.Xml.XmlReader CreateReader (System.Xml.Linq.ReaderOptions readerOptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlReader CreateReader(valuetype System.Xml.Linq.ReaderOptions readerOptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.CreateReader(System.Xml.Linq.ReaderOptions)" />
+      <MemberSignature Language="F#" Value="member this.CreateReader : System.Xml.Linq.ReaderOptions -&gt; System.Xml.XmlReader" Usage="xNode.CreateReader readerOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlReader ^ CreateReader(System::Xml::Linq::ReaderOptions readerOptions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1154,6 +1194,9 @@ Console.WriteLine(newTree)
       <MemberSignature Language="C#" Value="public static bool DeepEquals (System.Xml.Linq.XNode n1, System.Xml.Linq.XNode n2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool DeepEquals(class System.Xml.Linq.XNode n1, class System.Xml.Linq.XNode n2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.DeepEquals(System.Xml.Linq.XNode,System.Xml.Linq.XNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DeepEquals (n1 As XNode, n2 As XNode) As Boolean" />
+      <MemberSignature Language="F#" Value="static member DeepEquals : System.Xml.Linq.XNode * System.Xml.Linq.XNode -&gt; bool" Usage="System.Xml.Linq.XNode.DeepEquals (n1, n2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool DeepEquals(System::Xml::Linq::XNode ^ n1, System::Xml::Linq::XNode ^ n2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1256,6 +1299,9 @@ True
       <MemberSignature Language="C#" Value="public static System.Xml.Linq.XNodeDocumentOrderComparer DocumentOrderComparer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Xml.Linq.XNodeDocumentOrderComparer DocumentOrderComparer" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNode.DocumentOrderComparer" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DocumentOrderComparer As XNodeDocumentOrderComparer" />
+      <MemberSignature Language="F#" Value="member this.DocumentOrderComparer : System.Xml.Linq.XNodeDocumentOrderComparer" Usage="System.Xml.Linq.XNode.DocumentOrderComparer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Linq::XNodeDocumentOrderComparer ^ DocumentOrderComparer { System::Xml::Linq::XNodeDocumentOrderComparer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1367,6 +1413,9 @@ Next
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsAfterSelf ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; ElementsAfterSelf() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ElementsAfterSelf" />
+      <MemberSignature Language="VB.NET" Value="Public Function ElementsAfterSelf () As IEnumerable(Of XElement)" />
+      <MemberSignature Language="F#" Value="member this.ElementsAfterSelf : unit -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xNode.ElementsAfterSelf " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ ElementsAfterSelf();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1451,6 +1500,9 @@ Child5
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsAfterSelf (System.Xml.Linq.XName name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; ElementsAfterSelf(class System.Xml.Linq.XName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ElementsAfterSelf(System.Xml.Linq.XName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ElementsAfterSelf (name As XName) As IEnumerable(Of XElement)" />
+      <MemberSignature Language="F#" Value="member this.ElementsAfterSelf : System.Xml.Linq.XName -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xNode.ElementsAfterSelf name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ ElementsAfterSelf(System::Xml::Linq::XName ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1556,6 +1608,9 @@ Child4
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsBeforeSelf ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; ElementsBeforeSelf() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ElementsBeforeSelf" />
+      <MemberSignature Language="VB.NET" Value="Public Function ElementsBeforeSelf () As IEnumerable(Of XElement)" />
+      <MemberSignature Language="F#" Value="member this.ElementsBeforeSelf : unit -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xNode.ElementsBeforeSelf " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ ElementsBeforeSelf();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1641,6 +1696,9 @@ Child2
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; ElementsBeforeSelf (System.Xml.Linq.XName name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; ElementsBeforeSelf(class System.Xml.Linq.XName name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ElementsBeforeSelf(System.Xml.Linq.XName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ElementsBeforeSelf (name As XName) As IEnumerable(Of XElement)" />
+      <MemberSignature Language="F#" Value="member this.ElementsBeforeSelf : System.Xml.Linq.XName -&gt; seq&lt;System.Xml.Linq.XElement&gt;" Usage="xNode.ElementsBeforeSelf name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XElement ^&gt; ^ ElementsBeforeSelf(System::Xml::Linq::XName ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1728,6 +1786,9 @@ Child2
       <MemberSignature Language="C#" Value="public static System.Xml.Linq.XNodeEqualityComparer EqualityComparer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Xml.Linq.XNodeEqualityComparer EqualityComparer" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNode.EqualityComparer" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property EqualityComparer As XNodeEqualityComparer" />
+      <MemberSignature Language="F#" Value="member this.EqualityComparer : System.Xml.Linq.XNodeEqualityComparer" Usage="System.Xml.Linq.XNode.EqualityComparer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Linq::XNodeEqualityComparer ^ EqualityComparer { System::Xml::Linq::XNodeEqualityComparer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1807,6 +1868,9 @@ Child 3 Information
       <MemberSignature Language="C#" Value="public bool IsAfter (System.Xml.Linq.XNode node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsAfter(class System.Xml.Linq.XNode node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.IsAfter(System.Xml.Linq.XNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsAfter (node As XNode) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAfter : System.Xml.Linq.XNode -&gt; bool" Usage="xNode.IsAfter node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsAfter(System::Xml::Linq::XNode ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1896,6 +1960,9 @@ Child5 is after Child3
       <MemberSignature Language="C#" Value="public bool IsBefore (System.Xml.Linq.XNode node);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsBefore(class System.Xml.Linq.XNode node) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.IsBefore(System.Xml.Linq.XNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsBefore (node As XNode) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsBefore : System.Xml.Linq.XNode -&gt; bool" Usage="xNode.IsBefore node" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsBefore(System::Xml::Linq::XNode ^ node);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -1985,6 +2052,9 @@ Child5 is not before Child3
       <MemberSignature Language="C#" Value="public System.Xml.Linq.XNode NextNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XNode NextNode" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNode.NextNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextNode As XNode" />
+      <MemberSignature Language="F#" Value="member this.NextNode : System.Xml.Linq.XNode" Usage="System.Xml.Linq.XNode.NextNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XNode ^ NextNode { System::Xml::Linq::XNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2095,6 +2165,9 @@ NodeType: Element   Child3
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt; NodesAfterSelf ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XNode&gt; NodesAfterSelf() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.NodesAfterSelf" />
+      <MemberSignature Language="VB.NET" Value="Public Function NodesAfterSelf () As IEnumerable(Of XNode)" />
+      <MemberSignature Language="F#" Value="member this.NodesAfterSelf : unit -&gt; seq&lt;System.Xml.Linq.XNode&gt;" Usage="xNode.NodesAfterSelf " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XNode ^&gt; ^ NodesAfterSelf();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2187,6 +2260,9 @@ Node type: Element
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XNode&gt; NodesBeforeSelf ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XNode&gt; NodesBeforeSelf() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.NodesBeforeSelf" />
+      <MemberSignature Language="VB.NET" Value="Public Function NodesBeforeSelf () As IEnumerable(Of XNode)" />
+      <MemberSignature Language="F#" Value="member this.NodesBeforeSelf : unit -&gt; seq&lt;System.Xml.Linq.XNode&gt;" Usage="xNode.NodesBeforeSelf " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Xml::Linq::XNode ^&gt; ^ NodesBeforeSelf();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2278,6 +2354,9 @@ Node type: Element
       <MemberSignature Language="C#" Value="public System.Xml.Linq.XNode PreviousNode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Linq.XNode PreviousNode" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XNode.PreviousNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousNode As XNode" />
+      <MemberSignature Language="F#" Value="member this.PreviousNode : System.Xml.Linq.XNode" Usage="System.Xml.Linq.XNode.PreviousNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Linq::XNode ^ PreviousNode { System::Xml::Linq::XNode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2389,6 +2468,9 @@ NodeType: Element   Child1
       <MemberSignature Language="C#" Value="public static System.Xml.Linq.XNode ReadFrom (System.Xml.XmlReader reader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.Linq.XNode ReadFrom(class System.Xml.XmlReader reader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ReadFrom(System.Xml.XmlReader)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadFrom (reader As XmlReader) As XNode" />
+      <MemberSignature Language="F#" Value="static member ReadFrom : System.Xml.XmlReader -&gt; System.Xml.Linq.XNode" Usage="System.Xml.Linq.XNode.ReadFrom reader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Xml::Linq::XNode ^ ReadFrom(System::Xml::XmlReader ^ reader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2510,6 +2592,8 @@ ccc
       <MemberSignature Language="C#" Value="public static System.Threading.Tasks.Task&lt;System.Xml.Linq.XNode&gt; ReadFromAsync (System.Xml.XmlReader reader, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Tasks.Task`1&lt;class System.Xml.Linq.XNode&gt; ReadFromAsync(class System.Xml.XmlReader reader, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ReadFromAsync(System.Xml.XmlReader,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="static member ReadFromAsync : System.Xml.XmlReader * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;System.Xml.Linq.XNode&gt;" Usage="System.Xml.Linq.XNode.ReadFromAsync (reader, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Tasks::Task&lt;System::Xml::Linq::XNode ^&gt; ^ ReadFromAsync(System::Xml::XmlReader ^ reader, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2534,6 +2618,9 @@ ccc
       <MemberSignature Language="C#" Value="public void Remove ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.Remove" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove ()" />
+      <MemberSignature Language="F#" Value="member this.Remove : unit -&gt; unit" Usage="xNode.Remove " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2690,6 +2777,9 @@ Console.WriteLine(xmlTree)
       <MemberSignature Language="C#" Value="public void ReplaceWith (object content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceWith(object content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ReplaceWith(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReplaceWith (content As Object)" />
+      <MemberSignature Language="F#" Value="member this.ReplaceWith : obj -&gt; unit" Usage="xNode.ReplaceWith content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReplaceWith(System::Object ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2782,6 +2872,9 @@ Console.WriteLine(xmlTree)
       <MemberSignature Language="C#" Value="public void ReplaceWith (params object[] content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceWith(object[] content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ReplaceWith(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReplaceWith (ParamArray content As Object())" />
+      <MemberSignature Language="F#" Value="member this.ReplaceWith : obj[] -&gt; unit" Usage="xNode.ReplaceWith content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReplaceWith(... cli::array &lt;System::Object ^&gt; ^ content);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2899,10 +2992,24 @@ Console.WriteLine(xmlTree)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the XML for this node, optionally disabling formatting.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xNode.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -2964,6 +3071,9 @@ Console.WriteLine(xmlTree)
       <MemberSignature Language="C#" Value="public string ToString (System.Xml.Linq.SaveOptions options);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(valuetype System.Xml.Linq.SaveOptions options) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.ToString(System.Xml.Linq.SaveOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (options As SaveOptions) As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : System.Xml.Linq.SaveOptions -&gt; string" Usage="xNode.ToString options" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::Xml::Linq::SaveOptions options);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3030,6 +3140,9 @@ Console.WriteLine(root.ToString(SaveOptions.None))
       <MemberSignature Language="C#" Value="public abstract void WriteTo (System.Xml.XmlWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteTo(class System.Xml.XmlWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.WriteTo(System.Xml.XmlWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub WriteTo (writer As XmlWriter)" />
+      <MemberSignature Language="F#" Value="abstract member WriteTo : System.Xml.XmlWriter -&gt; unit" Usage="xNode.WriteTo writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteTo(System::Xml::XmlWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3130,6 +3243,8 @@ Console.WriteLine(sb.ToString())
       <MemberSignature Language="C#" Value="public abstract System.Threading.Tasks.Task WriteToAsync (System.Xml.XmlWriter writer, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task WriteToAsync(class System.Xml.XmlWriter writer, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XNode.WriteToAsync(System.Xml.XmlWriter,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member WriteToAsync : System.Xml.XmlWriter * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task" Usage="xNode.WriteToAsync (writer, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Threading::Tasks::Task ^ WriteToAsync(System::Xml::XmlWriter ^ writer, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -3150,27 +3265,5 @@ Console.WriteLine(sb.ToString())
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the XML for this node, optionally disabling formatting.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateReader">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an <see cref="T:System.Xml.XmlReader" /> for this node.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="NetworkInterfaceType" FullName="System.Net.NetworkInformation.NetworkInterfaceType">
+﻿<Type Name="NetworkInterfaceType" FullName="System.Net.NetworkInformation.NetworkInterfaceType">
   <TypeSignature Language="C#" Value="public enum NetworkInterfaceType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NetworkInterfaceType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.NetworkInterfaceType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NetworkInterfaceType" />
+  <TypeSignature Language="F#" Value="type NetworkInterfaceType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class NetworkInterfaceType" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="AsymmetricDsl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType AsymmetricDsl = int32(94)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.AsymmetricDsl" />
+      <MemberSignature Language="VB.NET" Value="AsymmetricDsl" />
+      <MemberSignature Language="F#" Value="AsymmetricDsl = 94" Usage="System.Net.NetworkInformation.NetworkInterfaceType.AsymmetricDsl" />
+      <MemberSignature Language="C++ CLI" Value="AsymmetricDsl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -55,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>94</MemberValue>
       <Docs>
         <summary>The network interface uses an Asymmetric Digital Subscriber Line (ADSL).</summary>
       </Docs>
@@ -63,6 +70,9 @@
       <MemberSignature Language="C#" Value="Atm" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType Atm = int32(37)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Atm" />
+      <MemberSignature Language="VB.NET" Value="Atm" />
+      <MemberSignature Language="F#" Value="Atm = 37" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Atm" />
+      <MemberSignature Language="C++ CLI" Value="Atm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -81,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>37</MemberValue>
       <Docs>
         <summary>The network interface uses asynchronous transfer mode (ATM) for data transmission.</summary>
       </Docs>
@@ -89,6 +100,9 @@
       <MemberSignature Language="C#" Value="BasicIsdn" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType BasicIsdn = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.BasicIsdn" />
+      <MemberSignature Language="VB.NET" Value="BasicIsdn" />
+      <MemberSignature Language="F#" Value="BasicIsdn = 20" Usage="System.Net.NetworkInformation.NetworkInterfaceType.BasicIsdn" />
+      <MemberSignature Language="C++ CLI" Value="BasicIsdn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -107,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>The network interface uses a basic rate interface Integrated Services Digital Network (ISDN) connection. ISDN is a set of standards for data transmission over telephone lines.</summary>
       </Docs>
@@ -115,6 +130,9 @@
       <MemberSignature Language="C#" Value="Ethernet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType Ethernet = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Ethernet" />
+      <MemberSignature Language="VB.NET" Value="Ethernet" />
+      <MemberSignature Language="F#" Value="Ethernet = 6" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Ethernet" />
+      <MemberSignature Language="C++ CLI" Value="Ethernet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -133,6 +151,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The network interface uses an Ethernet connection. Ethernet is defined in IEEE standard 802.3.</summary>
       </Docs>
@@ -141,6 +160,9 @@
       <MemberSignature Language="C#" Value="Ethernet3Megabit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType Ethernet3Megabit = int32(26)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Ethernet3Megabit" />
+      <MemberSignature Language="VB.NET" Value="Ethernet3Megabit" />
+      <MemberSignature Language="F#" Value="Ethernet3Megabit = 26" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Ethernet3Megabit" />
+      <MemberSignature Language="C++ CLI" Value="Ethernet3Megabit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -159,6 +181,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>The network interface uses an Ethernet 3 megabit/second connection. This version of Ethernet is defined in IETF RFC 895.</summary>
       </Docs>
@@ -167,6 +190,9 @@
       <MemberSignature Language="C#" Value="FastEthernetFx" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType FastEthernetFx = int32(69)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.FastEthernetFx" />
+      <MemberSignature Language="VB.NET" Value="FastEthernetFx" />
+      <MemberSignature Language="F#" Value="FastEthernetFx = 69" Usage="System.Net.NetworkInformation.NetworkInterfaceType.FastEthernetFx" />
+      <MemberSignature Language="C++ CLI" Value="FastEthernetFx" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -185,6 +211,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>69</MemberValue>
       <Docs>
         <summary>The network interface uses a Fast Ethernet connection over optical fiber and provides a data rate of 100 megabits per second. This type of connection is also known as 100Base-FX.</summary>
       </Docs>
@@ -193,6 +220,9 @@
       <MemberSignature Language="C#" Value="FastEthernetT" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType FastEthernetT = int32(62)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.FastEthernetT" />
+      <MemberSignature Language="VB.NET" Value="FastEthernetT" />
+      <MemberSignature Language="F#" Value="FastEthernetT = 62" Usage="System.Net.NetworkInformation.NetworkInterfaceType.FastEthernetT" />
+      <MemberSignature Language="C++ CLI" Value="FastEthernetT" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -211,6 +241,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>62</MemberValue>
       <Docs>
         <summary>The network interface uses a Fast Ethernet connection over twisted pair and provides a data rate of 100 megabits per second. This type of connection is also known as 100Base-T.</summary>
       </Docs>
@@ -219,6 +250,9 @@
       <MemberSignature Language="C#" Value="Fddi" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType Fddi = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Fddi" />
+      <MemberSignature Language="VB.NET" Value="Fddi" />
+      <MemberSignature Language="F#" Value="Fddi = 15" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Fddi" />
+      <MemberSignature Language="C++ CLI" Value="Fddi" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -237,6 +271,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>The network interface uses a Fiber Distributed Data Interface (FDDI) connection. FDDI is a set of standards for data transmission on fiber optic lines in a local area network.</summary>
       </Docs>
@@ -245,6 +280,9 @@
       <MemberSignature Language="C#" Value="GenericModem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType GenericModem = int32(48)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.GenericModem" />
+      <MemberSignature Language="VB.NET" Value="GenericModem" />
+      <MemberSignature Language="F#" Value="GenericModem = 48" Usage="System.Net.NetworkInformation.NetworkInterfaceType.GenericModem" />
+      <MemberSignature Language="C++ CLI" Value="GenericModem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -263,6 +301,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>The network interface uses a modem.</summary>
       </Docs>
@@ -271,6 +310,9 @@
       <MemberSignature Language="C#" Value="GigabitEthernet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType GigabitEthernet = int32(117)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.GigabitEthernet" />
+      <MemberSignature Language="VB.NET" Value="GigabitEthernet" />
+      <MemberSignature Language="F#" Value="GigabitEthernet = 117" Usage="System.Net.NetworkInformation.NetworkInterfaceType.GigabitEthernet" />
+      <MemberSignature Language="C++ CLI" Value="GigabitEthernet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -289,6 +331,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>117</MemberValue>
       <Docs>
         <summary>The network interface uses a gigabit Ethernet connection and provides a data rate of 1,000 megabits per second (1 gigabit per second).</summary>
       </Docs>
@@ -297,6 +340,9 @@
       <MemberSignature Language="C#" Value="HighPerformanceSerialBus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType HighPerformanceSerialBus = int32(144)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.HighPerformanceSerialBus" />
+      <MemberSignature Language="VB.NET" Value="HighPerformanceSerialBus" />
+      <MemberSignature Language="F#" Value="HighPerformanceSerialBus = 144" Usage="System.Net.NetworkInformation.NetworkInterfaceType.HighPerformanceSerialBus" />
+      <MemberSignature Language="C++ CLI" Value="HighPerformanceSerialBus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -315,6 +361,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>144</MemberValue>
       <Docs>
         <summary>The network interface uses a High Performance Serial Bus.</summary>
       </Docs>
@@ -323,6 +370,9 @@
       <MemberSignature Language="C#" Value="IPOverAtm" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType IPOverAtm = int32(114)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.IPOverAtm" />
+      <MemberSignature Language="VB.NET" Value="IPOverAtm" />
+      <MemberSignature Language="F#" Value="IPOverAtm = 114" Usage="System.Net.NetworkInformation.NetworkInterfaceType.IPOverAtm" />
+      <MemberSignature Language="C++ CLI" Value="IPOverAtm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -341,6 +391,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>114</MemberValue>
       <Docs>
         <summary>The network interface uses the Internet Protocol (IP) in combination with asynchronous transfer mode (ATM) for data transmission.</summary>
       </Docs>
@@ -349,6 +400,9 @@
       <MemberSignature Language="C#" Value="Isdn" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType Isdn = int32(63)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Isdn" />
+      <MemberSignature Language="VB.NET" Value="Isdn" />
+      <MemberSignature Language="F#" Value="Isdn = 63" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Isdn" />
+      <MemberSignature Language="C++ CLI" Value="Isdn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -367,6 +421,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>63</MemberValue>
       <Docs>
         <summary>The network interface uses a connection configured for ISDN and the X.25 protocol. X.25 allows computers on public networks to communicate using an intermediary computer.</summary>
       </Docs>
@@ -375,6 +430,9 @@
       <MemberSignature Language="C#" Value="Loopback" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType Loopback = int32(24)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Loopback" />
+      <MemberSignature Language="VB.NET" Value="Loopback" />
+      <MemberSignature Language="F#" Value="Loopback = 24" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Loopback" />
+      <MemberSignature Language="C++ CLI" Value="Loopback" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -393,6 +451,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>The network interface is a loopback adapter. Such interfaces are often used for testing; no traffic is sent over the wire.</summary>
       </Docs>
@@ -401,6 +460,9 @@
       <MemberSignature Language="C#" Value="MultiRateSymmetricDsl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType MultiRateSymmetricDsl = int32(143)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.MultiRateSymmetricDsl" />
+      <MemberSignature Language="VB.NET" Value="MultiRateSymmetricDsl" />
+      <MemberSignature Language="F#" Value="MultiRateSymmetricDsl = 143" Usage="System.Net.NetworkInformation.NetworkInterfaceType.MultiRateSymmetricDsl" />
+      <MemberSignature Language="C++ CLI" Value="MultiRateSymmetricDsl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -419,6 +481,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>143</MemberValue>
       <Docs>
         <summary>The network interface uses a Multirate Digital Subscriber Line.</summary>
       </Docs>
@@ -427,6 +490,9 @@
       <MemberSignature Language="C#" Value="Ppp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType Ppp = int32(23)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Ppp" />
+      <MemberSignature Language="VB.NET" Value="Ppp" />
+      <MemberSignature Language="F#" Value="Ppp = 23" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Ppp" />
+      <MemberSignature Language="C++ CLI" Value="Ppp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -445,6 +511,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>The network interface uses a Point-To-Point protocol (PPP) connection. PPP is a protocol for data transmission using a serial device.</summary>
       </Docs>
@@ -453,6 +520,9 @@
       <MemberSignature Language="C#" Value="PrimaryIsdn" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType PrimaryIsdn = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.PrimaryIsdn" />
+      <MemberSignature Language="VB.NET" Value="PrimaryIsdn" />
+      <MemberSignature Language="F#" Value="PrimaryIsdn = 21" Usage="System.Net.NetworkInformation.NetworkInterfaceType.PrimaryIsdn" />
+      <MemberSignature Language="C++ CLI" Value="PrimaryIsdn" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -471,6 +541,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>The network interface uses a primary rate interface Integrated Services Digital Network (ISDN) connection. ISDN is a set of standards for data transmission over telephone lines.</summary>
       </Docs>
@@ -479,6 +550,9 @@
       <MemberSignature Language="C#" Value="RateAdaptDsl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType RateAdaptDsl = int32(95)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.RateAdaptDsl" />
+      <MemberSignature Language="VB.NET" Value="RateAdaptDsl" />
+      <MemberSignature Language="F#" Value="RateAdaptDsl = 95" Usage="System.Net.NetworkInformation.NetworkInterfaceType.RateAdaptDsl" />
+      <MemberSignature Language="C++ CLI" Value="RateAdaptDsl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -497,6 +571,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>95</MemberValue>
       <Docs>
         <summary>The network interface uses a Rate Adaptive Digital Subscriber Line (RADSL).</summary>
       </Docs>
@@ -505,6 +580,9 @@
       <MemberSignature Language="C#" Value="Slip" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType Slip = int32(28)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Slip" />
+      <MemberSignature Language="VB.NET" Value="Slip" />
+      <MemberSignature Language="F#" Value="Slip = 28" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Slip" />
+      <MemberSignature Language="C++ CLI" Value="Slip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -523,6 +601,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>28</MemberValue>
       <Docs>
         <summary>The network interface uses a Serial Line Internet Protocol (SLIP) connection. SLIP is defined in IETF RFC 1055.</summary>
       </Docs>
@@ -531,6 +610,9 @@
       <MemberSignature Language="C#" Value="SymmetricDsl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType SymmetricDsl = int32(96)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.SymmetricDsl" />
+      <MemberSignature Language="VB.NET" Value="SymmetricDsl" />
+      <MemberSignature Language="F#" Value="SymmetricDsl = 96" Usage="System.Net.NetworkInformation.NetworkInterfaceType.SymmetricDsl" />
+      <MemberSignature Language="C++ CLI" Value="SymmetricDsl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -549,6 +631,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>96</MemberValue>
       <Docs>
         <summary>The network interface uses a Symmetric Digital Subscriber Line (SDSL).</summary>
       </Docs>
@@ -557,6 +640,9 @@
       <MemberSignature Language="C#" Value="TokenRing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType TokenRing = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.TokenRing" />
+      <MemberSignature Language="VB.NET" Value="TokenRing" />
+      <MemberSignature Language="F#" Value="TokenRing = 9" Usage="System.Net.NetworkInformation.NetworkInterfaceType.TokenRing" />
+      <MemberSignature Language="C++ CLI" Value="TokenRing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -575,6 +661,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The network interface uses a Token-Ring connection. Token-Ring is defined in IEEE standard 802.5.</summary>
       </Docs>
@@ -583,6 +670,9 @@
       <MemberSignature Language="C#" Value="Tunnel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType Tunnel = int32(131)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Tunnel" />
+      <MemberSignature Language="VB.NET" Value="Tunnel" />
+      <MemberSignature Language="F#" Value="Tunnel = 131" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Tunnel" />
+      <MemberSignature Language="C++ CLI" Value="Tunnel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -601,6 +691,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>131</MemberValue>
       <Docs>
         <summary>The network interface uses a tunnel connection.</summary>
       </Docs>
@@ -609,6 +700,9 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType Unknown = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 1" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -627,6 +721,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The interface type is not known.</summary>
       </Docs>
@@ -635,6 +730,9 @@
       <MemberSignature Language="C#" Value="VeryHighSpeedDsl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType VeryHighSpeedDsl = int32(97)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.VeryHighSpeedDsl" />
+      <MemberSignature Language="VB.NET" Value="VeryHighSpeedDsl" />
+      <MemberSignature Language="F#" Value="VeryHighSpeedDsl = 97" Usage="System.Net.NetworkInformation.NetworkInterfaceType.VeryHighSpeedDsl" />
+      <MemberSignature Language="C++ CLI" Value="VeryHighSpeedDsl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -653,6 +751,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>97</MemberValue>
       <Docs>
         <summary>The network interface uses a Very High Data Rate Digital Subscriber Line (VDSL).</summary>
       </Docs>
@@ -661,6 +760,9 @@
       <MemberSignature Language="C#" Value="Wireless80211" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType Wireless80211 = int32(71)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Wireless80211" />
+      <MemberSignature Language="VB.NET" Value="Wireless80211" />
+      <MemberSignature Language="F#" Value="Wireless80211 = 71" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Wireless80211" />
+      <MemberSignature Language="C++ CLI" Value="Wireless80211" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -679,6 +781,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>71</MemberValue>
       <Docs>
         <summary>The network interface uses a wireless LAN connection (IEEE 802.11 standard).</summary>
       </Docs>
@@ -687,6 +790,9 @@
       <MemberSignature Language="C#" Value="Wman" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType Wman = int32(237)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Wman" />
+      <MemberSignature Language="VB.NET" Value="Wman" />
+      <MemberSignature Language="F#" Value="Wman = 237" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Wman" />
+      <MemberSignature Language="C++ CLI" Value="Wman" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -705,6 +811,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>237</MemberValue>
       <Docs>
         <summary>The network interface uses a mobile broadband interface for WiMax devices.</summary>
       </Docs>
@@ -713,6 +820,9 @@
       <MemberSignature Language="C#" Value="Wwanpp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType Wwanpp = int32(243)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Wwanpp" />
+      <MemberSignature Language="VB.NET" Value="Wwanpp" />
+      <MemberSignature Language="F#" Value="Wwanpp = 243" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Wwanpp" />
+      <MemberSignature Language="C++ CLI" Value="Wwanpp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -731,6 +841,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>243</MemberValue>
       <Docs>
         <summary>The network interface uses a mobile broadband interface for GSM-based devices.</summary>
       </Docs>
@@ -739,6 +850,9 @@
       <MemberSignature Language="C#" Value="Wwanpp2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.NetworkInterfaceType Wwanpp2 = int32(244)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.NetworkInterfaceType.Wwanpp2" />
+      <MemberSignature Language="VB.NET" Value="Wwanpp2" />
+      <MemberSignature Language="F#" Value="Wwanpp2 = 244" Usage="System.Net.NetworkInformation.NetworkInterfaceType.Wwanpp2" />
+      <MemberSignature Language="C++ CLI" Value="Wwanpp2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -757,6 +871,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.NetworkInterfaceType</ReturnType>
       </ReturnValue>
+      <MemberValue>244</MemberValue>
       <Docs>
         <summary>The network interface uses a mobile broadband interface for CDMA-based devices.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="DataViewRowState" FullName="System.Data.DataViewRowState">
+﻿<Type Name="DataViewRowState" FullName="System.Data.DataViewRowState">
   <TypeSignature Language="C#" Value="public enum DataViewRowState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataViewRowState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataViewRowState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataViewRowState" />
+  <TypeSignature Language="F#" Value="type DataViewRowState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataViewRowState" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -59,6 +62,9 @@
       <MemberSignature Language="C#" Value="Added" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState Added = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.Added" />
+      <MemberSignature Language="VB.NET" Value="Added" />
+      <MemberSignature Language="F#" Value="Added = 4" Usage="System.Data.DataViewRowState.Added" />
+      <MemberSignature Language="C++ CLI" Value="Added" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -76,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A new row.</summary>
       </Docs>
@@ -84,6 +91,9 @@
       <MemberSignature Language="C#" Value="CurrentRows" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState CurrentRows = int32(22)" />
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.CurrentRows" />
+      <MemberSignature Language="VB.NET" Value="CurrentRows" />
+      <MemberSignature Language="F#" Value="CurrentRows = 22" Usage="System.Data.DataViewRowState.CurrentRows" />
+      <MemberSignature Language="C++ CLI" Value="CurrentRows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -101,6 +111,7 @@
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>Current rows including unchanged, new, and modified rows. By default, <see cref="T:System.Data.DataViewRowState" /> is set to CurrentRows.</summary>
       </Docs>
@@ -109,6 +120,9 @@
       <MemberSignature Language="C#" Value="Deleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState Deleted = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.Deleted" />
+      <MemberSignature Language="VB.NET" Value="Deleted" />
+      <MemberSignature Language="F#" Value="Deleted = 8" Usage="System.Data.DataViewRowState.Deleted" />
+      <MemberSignature Language="C++ CLI" Value="Deleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -126,6 +140,7 @@
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A deleted row.</summary>
       </Docs>
@@ -134,6 +149,9 @@
       <MemberSignature Language="C#" Value="ModifiedCurrent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState ModifiedCurrent = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.ModifiedCurrent" />
+      <MemberSignature Language="VB.NET" Value="ModifiedCurrent" />
+      <MemberSignature Language="F#" Value="ModifiedCurrent = 16" Usage="System.Data.DataViewRowState.ModifiedCurrent" />
+      <MemberSignature Language="C++ CLI" Value="ModifiedCurrent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -151,6 +169,7 @@
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>A current version of original data that has been modified (see <see langword="ModifiedOriginal" />).</summary>
       </Docs>
@@ -159,6 +178,9 @@
       <MemberSignature Language="C#" Value="ModifiedOriginal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState ModifiedOriginal = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.ModifiedOriginal" />
+      <MemberSignature Language="VB.NET" Value="ModifiedOriginal" />
+      <MemberSignature Language="F#" Value="ModifiedOriginal = 32" Usage="System.Data.DataViewRowState.ModifiedOriginal" />
+      <MemberSignature Language="C++ CLI" Value="ModifiedOriginal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -176,6 +198,7 @@
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The original version of the data that was modified. (Although the data has since been modified, it is available as <see langword="ModifiedCurrent" />).</summary>
       </Docs>
@@ -184,6 +207,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.DataViewRowState.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -201,6 +227,7 @@
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>None.</summary>
       </Docs>
@@ -209,6 +236,9 @@
       <MemberSignature Language="C#" Value="OriginalRows" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState OriginalRows = int32(42)" />
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.OriginalRows" />
+      <MemberSignature Language="VB.NET" Value="OriginalRows" />
+      <MemberSignature Language="F#" Value="OriginalRows = 42" Usage="System.Data.DataViewRowState.OriginalRows" />
+      <MemberSignature Language="C++ CLI" Value="OriginalRows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -226,6 +256,7 @@
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
+      <MemberValue>42</MemberValue>
       <Docs>
         <summary>Original rows including unchanged and deleted rows.</summary>
       </Docs>
@@ -234,6 +265,9 @@
       <MemberSignature Language="C#" Value="Unchanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.DataViewRowState Unchanged = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.DataViewRowState.Unchanged" />
+      <MemberSignature Language="VB.NET" Value="Unchanged" />
+      <MemberSignature Language="F#" Value="Unchanged = 2" Usage="System.Data.DataViewRowState.Unchanged" />
+      <MemberSignature Language="C++ CLI" Value="Unchanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -251,6 +285,7 @@
       <ReturnValue>
         <ReturnType>System.Data.DataViewRowState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>An unchanged row.</summary>
       </Docs>

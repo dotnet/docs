@@ -1,7 +1,10 @@
-<Type Name="WebBrowserPermissionLevel" FullName="System.Security.Permissions.WebBrowserPermissionLevel">
+﻿<Type Name="WebBrowserPermissionLevel" FullName="System.Security.Permissions.WebBrowserPermissionLevel">
   <TypeSignature Language="C#" Value="public enum WebBrowserPermissionLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebBrowserPermissionLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.WebBrowserPermissionLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WebBrowserPermissionLevel" />
+  <TypeSignature Language="F#" Value="type WebBrowserPermissionLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class WebBrowserPermissionLevel" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.WebBrowserPermissionLevel None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.WebBrowserPermissionLevel.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Permissions.WebBrowserPermissionLevel.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -49,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.WebBrowserPermissionLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A Web browser that cannot navigate frames to HTML.</summary>
       </Docs>
@@ -57,6 +64,9 @@
       <MemberSignature Language="C#" Value="Safe" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.WebBrowserPermissionLevel Safe = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.WebBrowserPermissionLevel.Safe" />
+      <MemberSignature Language="VB.NET" Value="Safe" />
+      <MemberSignature Language="F#" Value="Safe = 1" Usage="System.Security.Permissions.WebBrowserPermissionLevel.Safe" />
+      <MemberSignature Language="C++ CLI" Value="Safe" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.WebBrowserPermissionLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A Web browser that can safely navigate frames to HTML but with several restrictions.</summary>
       </Docs>
@@ -73,6 +84,9 @@
       <MemberSignature Language="C#" Value="Unrestricted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.WebBrowserPermissionLevel Unrestricted = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.WebBrowserPermissionLevel.Unrestricted" />
+      <MemberSignature Language="VB.NET" Value="Unrestricted" />
+      <MemberSignature Language="F#" Value="Unrestricted = 2" Usage="System.Security.Permissions.WebBrowserPermissionLevel.Unrestricted" />
+      <MemberSignature Language="C++ CLI" Value="Unrestricted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -81,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.WebBrowserPermissionLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A Web browser that can navigate without restrictions.</summary>
       </Docs>

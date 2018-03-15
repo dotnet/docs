@@ -1,7 +1,10 @@
-<Type Name="SecurityProtocol" FullName="System.DirectoryServices.Protocols.SecurityProtocol">
+﻿<Type Name="SecurityProtocol" FullName="System.DirectoryServices.Protocols.SecurityProtocol">
   <TypeSignature Language="C#" Value="public enum SecurityProtocol" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SecurityProtocol extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.SecurityProtocol" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SecurityProtocol" />
+  <TypeSignature Language="F#" Value="type SecurityProtocol = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SecurityProtocol" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="Pct1Client" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SecurityProtocol Pct1Client = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Pct1Client" />
+      <MemberSignature Language="VB.NET" Value="Pct1Client" />
+      <MemberSignature Language="F#" Value="Pct1Client = 2" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Pct1Client" />
+      <MemberSignature Language="C++ CLI" Value="Pct1Client" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -28,6 +34,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the client is using the PCT1 protocol. The value is equal to 2.</summary>
       </Docs>
@@ -36,6 +43,9 @@
       <MemberSignature Language="C#" Value="Pct1Server" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SecurityProtocol Pct1Server = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Pct1Server" />
+      <MemberSignature Language="VB.NET" Value="Pct1Server" />
+      <MemberSignature Language="F#" Value="Pct1Server = 1" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Pct1Server" />
+      <MemberSignature Language="C++ CLI" Value="Pct1Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -45,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the server is using the PCT1 protocol. The value is equal to 1.</summary>
       </Docs>
@@ -53,6 +64,9 @@
       <MemberSignature Language="C#" Value="Ssl2Client" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SecurityProtocol Ssl2Client = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Ssl2Client" />
+      <MemberSignature Language="VB.NET" Value="Ssl2Client" />
+      <MemberSignature Language="F#" Value="Ssl2Client = 8" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Ssl2Client" />
+      <MemberSignature Language="C++ CLI" Value="Ssl2Client" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -62,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Indicates that the client is using the SSL2 protocol. The value is equal to 8.</summary>
       </Docs>
@@ -70,6 +85,9 @@
       <MemberSignature Language="C#" Value="Ssl2Server" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SecurityProtocol Ssl2Server = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Ssl2Server" />
+      <MemberSignature Language="VB.NET" Value="Ssl2Server" />
+      <MemberSignature Language="F#" Value="Ssl2Server = 4" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Ssl2Server" />
+      <MemberSignature Language="C++ CLI" Value="Ssl2Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -79,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that the server is using the SSL2 protocol. The value is equal to 4.</summary>
       </Docs>
@@ -87,6 +106,9 @@
       <MemberSignature Language="C#" Value="Ssl3Client" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SecurityProtocol Ssl3Client = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Ssl3Client" />
+      <MemberSignature Language="VB.NET" Value="Ssl3Client" />
+      <MemberSignature Language="F#" Value="Ssl3Client = 32" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Ssl3Client" />
+      <MemberSignature Language="C++ CLI" Value="Ssl3Client" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -96,6 +118,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Indicates that the client is using the SSL3 protocol. The value is equal to 32.</summary>
       </Docs>
@@ -104,6 +127,9 @@
       <MemberSignature Language="C#" Value="Ssl3Server" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SecurityProtocol Ssl3Server = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Ssl3Server" />
+      <MemberSignature Language="VB.NET" Value="Ssl3Server" />
+      <MemberSignature Language="F#" Value="Ssl3Server = 16" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Ssl3Server" />
+      <MemberSignature Language="C++ CLI" Value="Ssl3Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -113,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Indicates that the server is using the SSL3 protocol. The value is equal to 16.</summary>
       </Docs>
@@ -121,6 +148,9 @@
       <MemberSignature Language="C#" Value="Tls1Client" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SecurityProtocol Tls1Client = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Tls1Client" />
+      <MemberSignature Language="VB.NET" Value="Tls1Client" />
+      <MemberSignature Language="F#" Value="Tls1Client = 128" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Tls1Client" />
+      <MemberSignature Language="C++ CLI" Value="Tls1Client" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -130,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>Indicates that the client is using the TLS1 protocol. The value is equal to 128.</summary>
       </Docs>
@@ -138,6 +169,9 @@
       <MemberSignature Language="C#" Value="Tls1Server" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.Protocols.SecurityProtocol Tls1Server = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.Protocols.SecurityProtocol.Tls1Server" />
+      <MemberSignature Language="VB.NET" Value="Tls1Server" />
+      <MemberSignature Language="F#" Value="Tls1Server = 64" Usage="System.DirectoryServices.Protocols.SecurityProtocol.Tls1Server" />
+      <MemberSignature Language="C++ CLI" Value="Tls1Server" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -147,6 +181,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.Protocols.SecurityProtocol</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Indicates that the server is using the TLS1 protocol. The value is equal to 64.</summary>
       </Docs>

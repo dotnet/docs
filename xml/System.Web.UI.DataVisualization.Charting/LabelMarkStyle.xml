@@ -1,7 +1,10 @@
-<Type Name="LabelMarkStyle" FullName="System.Web.UI.DataVisualization.Charting.LabelMarkStyle">
+﻿<Type Name="LabelMarkStyle" FullName="System.Web.UI.DataVisualization.Charting.LabelMarkStyle">
   <TypeSignature Language="C#" Value="public enum LabelMarkStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LabelMarkStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.LabelMarkStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LabelMarkStyle" />
+  <TypeSignature Language="F#" Value="type LabelMarkStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LabelMarkStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Box" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelMarkStyle Box = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelMarkStyle.Box" />
+      <MemberSignature Language="VB.NET" Value="Box" />
+      <MemberSignature Language="F#" Value="Box = 3" Usage="System.Web.UI.DataVisualization.Charting.LabelMarkStyle.Box" />
+      <MemberSignature Language="C++ CLI" Value="Box" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelMarkStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A box is drawn around the label.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="LineSideMark" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelMarkStyle LineSideMark = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelMarkStyle.LineSideMark" />
+      <MemberSignature Language="VB.NET" Value="LineSideMark" />
+      <MemberSignature Language="F#" Value="LineSideMark = 2" Usage="System.Web.UI.DataVisualization.Charting.LabelMarkStyle.LineSideMark" />
+      <MemberSignature Language="C++ CLI" Value="LineSideMark" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelMarkStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Custom labels use line and side marks.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelMarkStyle None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelMarkStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.DataVisualization.Charting.LabelMarkStyle.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelMarkStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No label marks are used.</summary>
       </Docs>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="SideMark" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.LabelMarkStyle SideMark = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.LabelMarkStyle.SideMark" />
+      <MemberSignature Language="VB.NET" Value="SideMark" />
+      <MemberSignature Language="F#" Value="SideMark = 1" Usage="System.Web.UI.DataVisualization.Charting.LabelMarkStyle.SideMark" />
+      <MemberSignature Language="C++ CLI" Value="SideMark" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -81,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.LabelMarkStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Custom labels use side marks.</summary>
       </Docs>

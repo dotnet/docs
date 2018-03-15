@@ -1,7 +1,10 @@
-<Type Name="IWorkflowInstanceManagement" FullName="System.ServiceModel.Activities.IWorkflowInstanceManagement">
+﻿<Type Name="IWorkflowInstanceManagement" FullName="System.ServiceModel.Activities.IWorkflowInstanceManagement">
   <TypeSignature Language="C#" Value="public interface IWorkflowInstanceManagement" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWorkflowInstanceManagement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.IWorkflowInstanceManagement" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWorkflowInstanceManagement" />
+  <TypeSignature Language="F#" Value="type IWorkflowInstanceManagement = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWorkflowInstanceManagement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="public void Abandon (Guid instanceId, string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Abandon(valuetype System.Guid instanceId, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.Abandon(System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Abandon (instanceId As Guid, reason As String)" />
+      <MemberSignature Language="F#" Value="abstract member Abandon : Guid * string -&gt; unit" Usage="iWorkflowInstanceManagement.Abandon (instanceId, reason)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Abandon(Guid instanceId, System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -59,6 +65,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginAbandon (Guid instanceId, string reason, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAbandon(valuetype System.Guid instanceId, string reason, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginAbandon(System.Guid,System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginAbandon (instanceId As Guid, reason As String, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginAbandon : Guid * string * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWorkflowInstanceManagement.BeginAbandon (instanceId, reason, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginAbandon(Guid instanceId, System::String ^ reason, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -99,6 +108,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginCancel (Guid instanceId, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginCancel(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginCancel(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginCancel (instanceId As Guid, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginCancel : Guid * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWorkflowInstanceManagement.BeginCancel (instanceId, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginCancel(Guid instanceId, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -137,6 +149,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginRun (Guid instanceId, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginRun(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginRun(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginRun (instanceId As Guid, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginRun : Guid * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWorkflowInstanceManagement.BeginRun (instanceId, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginRun(Guid instanceId, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -168,6 +183,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSuspend (Guid instanceId, string reason, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginSuspend(valuetype System.Guid instanceId, string reason, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginSuspend(System.Guid,System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginSuspend (instanceId As Guid, reason As String, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginSuspend : Guid * string * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWorkflowInstanceManagement.BeginSuspend (instanceId, reason, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSuspend(Guid instanceId, System::String ^ reason, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -208,6 +226,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginTerminate (Guid instanceId, string reason, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTerminate(valuetype System.Guid instanceId, string reason, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginTerminate(System.Guid,System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginTerminate (instanceId As Guid, reason As String, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginTerminate : Guid * string * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWorkflowInstanceManagement.BeginTerminate (instanceId, reason, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTerminate(Guid instanceId, System::String ^ reason, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -248,6 +269,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginTransactedCancel (Guid instanceId, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTransactedCancel(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginTransactedCancel(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginTransactedCancel (instanceId As Guid, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginTransactedCancel : Guid * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWorkflowInstanceManagement.BeginTransactedCancel (instanceId, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTransactedCancel(Guid instanceId, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -286,6 +310,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginTransactedRun (Guid instanceId, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTransactedRun(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginTransactedRun(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginTransactedRun (instanceId As Guid, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginTransactedRun : Guid * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWorkflowInstanceManagement.BeginTransactedRun (instanceId, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTransactedRun(Guid instanceId, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -317,6 +344,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginTransactedSuspend (Guid instanceId, string reason, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTransactedSuspend(valuetype System.Guid instanceId, string reason, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginTransactedSuspend(System.Guid,System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginTransactedSuspend (instanceId As Guid, reason As String, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginTransactedSuspend : Guid * string * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWorkflowInstanceManagement.BeginTransactedSuspend (instanceId, reason, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTransactedSuspend(Guid instanceId, System::String ^ reason, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -357,6 +387,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginTransactedTerminate (Guid instanceId, string reason, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTransactedTerminate(valuetype System.Guid instanceId, string reason, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginTransactedTerminate(System.Guid,System.String,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginTransactedTerminate (instanceId As Guid, reason As String, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginTransactedTerminate : Guid * string * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWorkflowInstanceManagement.BeginTransactedTerminate (instanceId, reason, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTransactedTerminate(Guid instanceId, System::String ^ reason, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -397,6 +430,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginTransactedUnsuspend (Guid instanceId, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginTransactedUnsuspend(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginTransactedUnsuspend(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginTransactedUnsuspend (instanceId As Guid, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginTransactedUnsuspend : Guid * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWorkflowInstanceManagement.BeginTransactedUnsuspend (instanceId, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginTransactedUnsuspend(Guid instanceId, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -435,6 +471,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginUnsuspend (Guid instanceId, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginUnsuspend(valuetype System.Guid instanceId, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.BeginUnsuspend(System.Guid,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginUnsuspend (instanceId As Guid, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member BeginUnsuspend : Guid * AsyncCallback * obj -&gt; IAsyncResult" Usage="iWorkflowInstanceManagement.BeginUnsuspend (instanceId, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginUnsuspend(Guid instanceId, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -473,6 +512,9 @@
       <MemberSignature Language="C#" Value="public void Cancel (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cancel(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.Cancel(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cancel (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="abstract member Cancel : Guid -&gt; unit" Usage="iWorkflowInstanceManagement.Cancel instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cancel(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -506,6 +548,9 @@
       <MemberSignature Language="C#" Value="public void EndAbandon (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndAbandon(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.EndAbandon(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndAbandon (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndAbandon : IAsyncResult -&gt; unit" Usage="iWorkflowInstanceManagement.EndAbandon result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndAbandon(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -527,6 +572,9 @@
       <MemberSignature Language="C#" Value="public void EndCancel (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndCancel(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.EndCancel(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndCancel (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndCancel : IAsyncResult -&gt; unit" Usage="iWorkflowInstanceManagement.EndCancel result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndCancel(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -555,6 +603,9 @@
       <MemberSignature Language="C#" Value="public void EndRun (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndRun(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.EndRun(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndRun (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndRun : IAsyncResult -&gt; unit" Usage="iWorkflowInstanceManagement.EndRun result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndRun(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -576,6 +627,9 @@
       <MemberSignature Language="C#" Value="public void EndSuspend (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndSuspend(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.EndSuspend(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndSuspend (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndSuspend : IAsyncResult -&gt; unit" Usage="iWorkflowInstanceManagement.EndSuspend result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndSuspend(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -604,6 +658,9 @@
       <MemberSignature Language="C#" Value="public void EndTerminate (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndTerminate(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.EndTerminate(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndTerminate (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndTerminate : IAsyncResult -&gt; unit" Usage="iWorkflowInstanceManagement.EndTerminate result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndTerminate(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -632,6 +689,9 @@
       <MemberSignature Language="C#" Value="public void EndTransactedCancel (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndTransactedCancel(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.EndTransactedCancel(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndTransactedCancel (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndTransactedCancel : IAsyncResult -&gt; unit" Usage="iWorkflowInstanceManagement.EndTransactedCancel result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndTransactedCancel(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -653,6 +713,9 @@
       <MemberSignature Language="C#" Value="public void EndTransactedRun (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndTransactedRun(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.EndTransactedRun(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndTransactedRun (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndTransactedRun : IAsyncResult -&gt; unit" Usage="iWorkflowInstanceManagement.EndTransactedRun result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndTransactedRun(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -674,6 +737,9 @@
       <MemberSignature Language="C#" Value="public void EndTransactedSuspend (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndTransactedSuspend(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.EndTransactedSuspend(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndTransactedSuspend (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndTransactedSuspend : IAsyncResult -&gt; unit" Usage="iWorkflowInstanceManagement.EndTransactedSuspend result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndTransactedSuspend(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -702,6 +768,9 @@
       <MemberSignature Language="C#" Value="public void EndTransactedTerminate (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndTransactedTerminate(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.EndTransactedTerminate(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndTransactedTerminate (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndTransactedTerminate : IAsyncResult -&gt; unit" Usage="iWorkflowInstanceManagement.EndTransactedTerminate result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndTransactedTerminate(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -730,6 +799,9 @@
       <MemberSignature Language="C#" Value="public void EndTransactedUnsuspend (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndTransactedUnsuspend(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.EndTransactedUnsuspend(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndTransactedUnsuspend (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndTransactedUnsuspend : IAsyncResult -&gt; unit" Usage="iWorkflowInstanceManagement.EndTransactedUnsuspend result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndTransactedUnsuspend(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -758,6 +830,9 @@
       <MemberSignature Language="C#" Value="public void EndUnsuspend (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndUnsuspend(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.EndUnsuspend(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndUnsuspend (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member EndUnsuspend : IAsyncResult -&gt; unit" Usage="iWorkflowInstanceManagement.EndUnsuspend result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndUnsuspend(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -786,6 +861,9 @@
       <MemberSignature Language="C#" Value="public void Run (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Run(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.Run(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Run (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="abstract member Run : Guid -&gt; unit" Usage="iWorkflowInstanceManagement.Run instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Run(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -812,6 +890,9 @@
       <MemberSignature Language="C#" Value="public void Suspend (Guid instanceId, string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Suspend(valuetype System.Guid instanceId, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.Suspend(System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Suspend (instanceId As Guid, reason As String)" />
+      <MemberSignature Language="F#" Value="abstract member Suspend : Guid * string -&gt; unit" Usage="iWorkflowInstanceManagement.Suspend (instanceId, reason)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Suspend(Guid instanceId, System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -847,6 +928,9 @@
       <MemberSignature Language="C#" Value="public void Terminate (Guid instanceId, string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Terminate(valuetype System.Guid instanceId, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.Terminate(System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Terminate (instanceId As Guid, reason As String)" />
+      <MemberSignature Language="F#" Value="abstract member Terminate : Guid * string -&gt; unit" Usage="iWorkflowInstanceManagement.Terminate (instanceId, reason)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Terminate(Guid instanceId, System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -882,6 +966,9 @@
       <MemberSignature Language="C#" Value="public void TransactedCancel (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TransactedCancel(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.TransactedCancel(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TransactedCancel (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="abstract member TransactedCancel : Guid -&gt; unit" Usage="iWorkflowInstanceManagement.TransactedCancel instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TransactedCancel(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -911,6 +998,9 @@
       <MemberSignature Language="C#" Value="public void TransactedRun (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TransactedRun(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.TransactedRun(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TransactedRun (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="abstract member TransactedRun : Guid -&gt; unit" Usage="iWorkflowInstanceManagement.TransactedRun instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TransactedRun(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -940,6 +1030,9 @@
       <MemberSignature Language="C#" Value="public void TransactedSuspend (Guid instanceId, string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TransactedSuspend(valuetype System.Guid instanceId, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.TransactedSuspend(System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TransactedSuspend (instanceId As Guid, reason As String)" />
+      <MemberSignature Language="F#" Value="abstract member TransactedSuspend : Guid * string -&gt; unit" Usage="iWorkflowInstanceManagement.TransactedSuspend (instanceId, reason)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TransactedSuspend(Guid instanceId, System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -978,6 +1071,9 @@
       <MemberSignature Language="C#" Value="public void TransactedTerminate (Guid instanceId, string reason);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TransactedTerminate(valuetype System.Guid instanceId, string reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.TransactedTerminate(System.Guid,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TransactedTerminate (instanceId As Guid, reason As String)" />
+      <MemberSignature Language="F#" Value="abstract member TransactedTerminate : Guid * string -&gt; unit" Usage="iWorkflowInstanceManagement.TransactedTerminate (instanceId, reason)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TransactedTerminate(Guid instanceId, System::String ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1016,6 +1112,9 @@
       <MemberSignature Language="C#" Value="public void TransactedUnsuspend (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TransactedUnsuspend(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.TransactedUnsuspend(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TransactedUnsuspend (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="abstract member TransactedUnsuspend : Guid -&gt; unit" Usage="iWorkflowInstanceManagement.TransactedUnsuspend instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TransactedUnsuspend(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -1052,6 +1151,9 @@
       <MemberSignature Language="C#" Value="public void Unsuspend (Guid instanceId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unsuspend(valuetype System.Guid instanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.IWorkflowInstanceManagement.Unsuspend(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unsuspend (instanceId As Guid)" />
+      <MemberSignature Language="F#" Value="abstract member Unsuspend : Guid -&gt; unit" Usage="iWorkflowInstanceManagement.Unsuspend instanceId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unsuspend(Guid instanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

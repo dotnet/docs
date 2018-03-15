@@ -1,7 +1,10 @@
-<Type Name="Vector3DAnimationBase" FullName="System.Windows.Media.Animation.Vector3DAnimationBase">
+﻿<Type Name="Vector3DAnimationBase" FullName="System.Windows.Media.Animation.Vector3DAnimationBase">
   <TypeSignature Language="C#" Value="public abstract class Vector3DAnimationBase : System.Windows.Media.Animation.AnimationTimeline" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Vector3DAnimationBase extends System.Windows.Media.Animation.AnimationTimeline" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.Vector3DAnimationBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Vector3DAnimationBase&#xA;Inherits AnimationTimeline" />
+  <TypeSignature Language="F#" Value="type Vector3DAnimationBase = class&#xA;    inherit AnimationTimeline" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Vector3DAnimationBase abstract : System::Windows::Media::Animation::AnimationTimeline" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +25,8 @@
       <MemberSignature Language="C#" Value="protected Vector3DAnimationBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Vector3DAnimationBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -37,6 +42,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.Vector3DAnimationBase Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.Vector3DAnimationBase Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationBase.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Vector3DAnimationBase" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.Vector3DAnimationBase" Usage="vector3DAnimationBase.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::Vector3DAnimationBase ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -61,10 +69,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCurrentValue">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the current value of the animation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCurrentValue">
       <MemberSignature Language="C#" Value="public override sealed object GetCurrentValue (object defaultOriginValue, object defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetCurrentValue(object defaultOriginValue, object defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationBase.GetCurrentValue(System.Object,System.Object,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValue : obj * obj * System.Windows.Media.Animation.AnimationClock -&gt; obj" Usage="vector3DAnimationBase.GetCurrentValue (defaultOriginValue, defaultDestinationValue, animationClock)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetCurrentValue(System::Object ^ defaultOriginValue, System::Object ^ defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -112,6 +131,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Vector3D GetCurrentValue (System.Windows.Media.Media3D.Vector3D defaultOriginValue, System.Windows.Media.Media3D.Vector3D defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.Media3D.Vector3D GetCurrentValue(valuetype System.Windows.Media.Media3D.Vector3D defaultOriginValue, valuetype System.Windows.Media.Media3D.Vector3D defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationBase.GetCurrentValue(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValue : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Animation.AnimationClock -&gt; System.Windows.Media.Media3D.Vector3D" Usage="vector3DAnimationBase.GetCurrentValue (defaultOriginValue, defaultDestinationValue, animationClock)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Media3D::Vector3D GetCurrentValue(System::Windows::Media::Media3D::Vector3D defaultOriginValue, System::Windows::Media::Media3D::Vector3D defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -159,6 +180,8 @@
       <MemberSignature Language="C#" Value="protected abstract System.Windows.Media.Media3D.Vector3D GetCurrentValueCore (System.Windows.Media.Media3D.Vector3D defaultOriginValue, System.Windows.Media.Media3D.Vector3D defaultDestinationValue, System.Windows.Media.Animation.AnimationClock animationClock);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance valuetype System.Windows.Media.Media3D.Vector3D GetCurrentValueCore(valuetype System.Windows.Media.Media3D.Vector3D defaultOriginValue, valuetype System.Windows.Media.Media3D.Vector3D defaultDestinationValue, class System.Windows.Media.Animation.AnimationClock animationClock) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.Vector3DAnimationBase.GetCurrentValueCore(System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Media3D.Vector3D,System.Windows.Media.Animation.AnimationClock)" />
+      <MemberSignature Language="F#" Value="abstract member GetCurrentValueCore : System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Media3D.Vector3D * System.Windows.Media.Animation.AnimationClock -&gt; System.Windows.Media.Media3D.Vector3D" Usage="vector3DAnimationBase.GetCurrentValueCore (defaultOriginValue, defaultDestinationValue, animationClock)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Windows::Media::Media3D::Vector3D GetCurrentValueCore(System::Windows::Media::Media3D::Vector3D defaultOriginValue, System::Windows::Media::Media3D::Vector3D defaultDestinationValue, System::Windows::Media::Animation::AnimationClock ^ animationClock);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -206,6 +229,9 @@
       <MemberSignature Language="C#" Value="public override sealed Type TargetPropertyType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TargetPropertyType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.Vector3DAnimationBase.TargetPropertyType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property TargetPropertyType As Type" />
+      <MemberSignature Language="F#" Value="member this.TargetPropertyType : Type" Usage="System.Windows.Media.Animation.Vector3DAnimationBase.TargetPropertyType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetPropertyType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -220,14 +246,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetCurrentValue">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the current value of the animation.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

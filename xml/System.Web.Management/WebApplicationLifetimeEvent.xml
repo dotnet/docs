@@ -1,7 +1,10 @@
-<Type Name="WebApplicationLifetimeEvent" FullName="System.Web.Management.WebApplicationLifetimeEvent">
+﻿<Type Name="WebApplicationLifetimeEvent" FullName="System.Web.Management.WebApplicationLifetimeEvent">
   <TypeSignature Language="C#" Value="public class WebApplicationLifetimeEvent : System.Web.Management.WebManagementEvent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebApplicationLifetimeEvent extends System.Web.Management.WebManagementEvent" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebApplicationLifetimeEvent" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebApplicationLifetimeEvent&#xA;Inherits WebManagementEvent" />
+  <TypeSignature Language="F#" Value="type WebApplicationLifetimeEvent = class&#xA;    inherit WebManagementEvent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebApplicationLifetimeEvent : System::Web::Management::WebManagementEvent" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -88,10 +91,22 @@
     </block>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebApplicationLifetimeEvent" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected WebApplicationLifetimeEvent (string message, object eventSource, int eventCode);" />
+      <MemberSignature Language="C#" Value="protected internal WebApplicationLifetimeEvent (string message, object eventSource, int eventCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebApplicationLifetimeEvent.#ctor(System.String,System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebApplicationLifetimeEvent : string * obj * int -&gt; System.Web.Management.WebApplicationLifetimeEvent" Usage="new System.Web.Management.WebApplicationLifetimeEvent (message, eventSource, eventCode)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebApplicationLifetimeEvent(System::String ^ message, System::Object ^ eventSource, int eventCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,9 +144,12 @@
       </Docs>
     </Member>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected WebApplicationLifetimeEvent (string message, object eventSource, int eventCode, int eventDetailCode);" />
+      <MemberSignature Language="C#" Value="protected internal WebApplicationLifetimeEvent (string message, object eventSource, int eventCode, int eventDetailCode);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor(string message, object eventSource, int32 eventCode, int32 eventDetailCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebApplicationLifetimeEvent.#ctor(System.String,System.Object,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New (message As String, eventSource As Object, eventCode As Integer, eventDetailCode As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Web.Management.WebApplicationLifetimeEvent : string * obj * int * int -&gt; System.Web.Management.WebApplicationLifetimeEvent" Usage="new System.Web.Management.WebApplicationLifetimeEvent (message, eventSource, eventCode, eventDetailCode)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; WebApplicationLifetimeEvent(System::String ^ message, System::Object ^ eventSource, int eventCode, int eventDetailCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -171,9 +189,12 @@
       </Docs>
     </Member>
     <Member MemberName="IncrementPerfCounters">
-      <MemberSignature Language="C#" Value="protected override void IncrementPerfCounters ();" />
+      <MemberSignature Language="C#" Value="protected internal override void IncrementPerfCounters ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void IncrementPerfCounters() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebApplicationLifetimeEvent.IncrementPerfCounters" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub IncrementPerfCounters ()" />
+      <MemberSignature Language="F#" Value="override this.IncrementPerfCounters : unit -&gt; unit" Usage="webApplicationLifetimeEvent.IncrementPerfCounters " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void IncrementPerfCounters();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -188,14 +209,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Management.WebApplicationLifetimeEvent" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

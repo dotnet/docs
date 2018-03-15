@@ -1,7 +1,10 @@
-<Type Name="BaseCompareValidator" FullName="System.Web.UI.WebControls.BaseCompareValidator">
+﻿<Type Name="BaseCompareValidator" FullName="System.Web.UI.WebControls.BaseCompareValidator">
   <TypeSignature Language="C#" Value="public abstract class BaseCompareValidator : System.Web.UI.WebControls.BaseValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BaseCompareValidator extends System.Web.UI.WebControls.BaseValidator" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.BaseCompareValidator" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BaseCompareValidator&#xA;Inherits BaseValidator" />
+  <TypeSignature Language="F#" Value="type BaseCompareValidator = class&#xA;    inherit BaseValidator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BaseCompareValidator abstract : System::Web::UI::WebControls::BaseValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +51,8 @@
       <MemberSignature Language="C#" Value="protected BaseCompareValidator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BaseCompareValidator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -72,6 +77,9 @@
       <MemberSignature Language="C#" Value="protected override void AddAttributesToRender (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributesToRender(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.AddAttributesToRender(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributesToRender (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.AddAttributesToRender : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="baseCompareValidator.AddAttributesToRender writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributesToRender(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -100,10 +108,22 @@
         <altmember cref="T:System.Web.UI.HtmlTextWriter" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CanConvert">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the specified string can be converted to the specified data type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CanConvert">
       <MemberSignature Language="C#" Value="public static bool CanConvert (string text, System.Web.UI.WebControls.ValidationDataType type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanConvert(string text, valuetype System.Web.UI.WebControls.ValidationDataType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.CanConvert(System.String,System.Web.UI.WebControls.ValidationDataType)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CanConvert (text As String, type As ValidationDataType) As Boolean" />
+      <MemberSignature Language="F#" Value="static member CanConvert : string * System.Web.UI.WebControls.ValidationDataType -&gt; bool" Usage="System.Web.UI.WebControls.BaseCompareValidator.CanConvert (text, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CanConvert(System::String ^ text, System::Web::UI::WebControls::ValidationDataType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,6 +169,9 @@
       <MemberSignature Language="C#" Value="public static bool CanConvert (string text, System.Web.UI.WebControls.ValidationDataType type, bool cultureInvariant);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CanConvert(string text, valuetype System.Web.UI.WebControls.ValidationDataType type, bool cultureInvariant) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.CanConvert(System.String,System.Web.UI.WebControls.ValidationDataType,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CanConvert (text As String, type As ValidationDataType, cultureInvariant As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="static member CanConvert : string * System.Web.UI.WebControls.ValidationDataType * bool -&gt; bool" Usage="System.Web.UI.WebControls.BaseCompareValidator.CanConvert (text, type, cultureInvariant)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool CanConvert(System::String ^ text, System::Web::UI::WebControls::ValidationDataType type, bool cultureInvariant);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -183,10 +206,22 @@
         <altmember cref="Overload:System.Web.UI.WebControls.BaseCompareValidator.Convert" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Compare">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares two strings using the specified operator and validation data type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Compare">
       <MemberSignature Language="C#" Value="protected static bool Compare (string leftText, string rightText, System.Web.UI.WebControls.ValidationCompareOperator op, System.Web.UI.WebControls.ValidationDataType type);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool Compare(string leftText, string rightText, valuetype System.Web.UI.WebControls.ValidationCompareOperator op, valuetype System.Web.UI.WebControls.ValidationDataType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.Compare(System.String,System.String,System.Web.UI.WebControls.ValidationCompareOperator,System.Web.UI.WebControls.ValidationDataType)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function Compare (leftText As String, rightText As String, op As ValidationCompareOperator, type As ValidationDataType) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Compare : string * string * System.Web.UI.WebControls.ValidationCompareOperator * System.Web.UI.WebControls.ValidationDataType -&gt; bool" Usage="System.Web.UI.WebControls.BaseCompareValidator.Compare (leftText, rightText, op, type)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static bool Compare(System::String ^ leftText, System::String ^ rightText, System::Web::UI::WebControls::ValidationCompareOperator op, System::Web::UI::WebControls::ValidationDataType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -231,6 +266,9 @@
       <MemberSignature Language="C#" Value="protected static bool Compare (string leftText, bool cultureInvariantLeftText, string rightText, bool cultureInvariantRightText, System.Web.UI.WebControls.ValidationCompareOperator op, System.Web.UI.WebControls.ValidationDataType type);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool Compare(string leftText, bool cultureInvariantLeftText, string rightText, bool cultureInvariantRightText, valuetype System.Web.UI.WebControls.ValidationCompareOperator op, valuetype System.Web.UI.WebControls.ValidationDataType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.Compare(System.String,System.Boolean,System.String,System.Boolean,System.Web.UI.WebControls.ValidationCompareOperator,System.Web.UI.WebControls.ValidationDataType)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function Compare (leftText As String, cultureInvariantLeftText As Boolean, rightText As String, cultureInvariantRightText As Boolean, op As ValidationCompareOperator, type As ValidationDataType) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Compare : string * bool * string * bool * System.Web.UI.WebControls.ValidationCompareOperator * System.Web.UI.WebControls.ValidationDataType -&gt; bool" Usage="System.Web.UI.WebControls.BaseCompareValidator.Compare (leftText, cultureInvariantLeftText, rightText, cultureInvariantRightText, op, type)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static bool Compare(System::String ^ leftText, bool cultureInvariantLeftText, System::String ^ rightText, bool cultureInvariantRightText, System::Web::UI::WebControls::ValidationCompareOperator op, System::Web::UI::WebControls::ValidationDataType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -277,10 +315,22 @@
         <altmember cref="M:System.Web.UI.WebControls.BaseCompareValidator.Convert(System.String,System.Web.UI.WebControls.ValidationDataType,System.Object@)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Convert">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the specified text into an object of the specified data type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Convert">
       <MemberSignature Language="C#" Value="protected static bool Convert (string text, System.Web.UI.WebControls.ValidationDataType type, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool Convert(string text, valuetype System.Web.UI.WebControls.ValidationDataType type, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.Convert(System.String,System.Web.UI.WebControls.ValidationDataType,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function Convert (text As String, type As ValidationDataType, ByRef value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Convert : string * System.Web.UI.WebControls.ValidationDataType *  -&gt; bool" Usage="System.Web.UI.WebControls.BaseCompareValidator.Convert (text, type, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static bool Convert(System::String ^ text, System::Web::UI::WebControls::ValidationDataType type, [Runtime::InteropServices::Out] System::Object ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -322,6 +372,9 @@
       <MemberSignature Language="C#" Value="protected static bool Convert (string text, System.Web.UI.WebControls.ValidationDataType type, bool cultureInvariant, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig bool Convert(string text, valuetype System.Web.UI.WebControls.ValidationDataType type, bool cultureInvariant, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.Convert(System.String,System.Web.UI.WebControls.ValidationDataType,System.Boolean,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function Convert (text As String, type As ValidationDataType, cultureInvariant As Boolean, ByRef value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member Convert : string * System.Web.UI.WebControls.ValidationDataType * bool *  -&gt; bool" Usage="System.Web.UI.WebControls.BaseCompareValidator.Convert (text, type, cultureInvariant, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static bool Convert(System::String ^ text, System::Web::UI::WebControls::ValidationDataType type, bool cultureInvariant, [Runtime::InteropServices::Out] System::Object ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -366,6 +419,9 @@
       <MemberSignature Language="C#" Value="public bool CultureInvariantValues { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CultureInvariantValues" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseCompareValidator.CultureInvariantValues" />
+      <MemberSignature Language="VB.NET" Value="Public Property CultureInvariantValues As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CultureInvariantValues : bool with get, set" Usage="System.Web.UI.WebControls.BaseCompareValidator.CultureInvariantValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CultureInvariantValues { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -406,6 +462,9 @@
       <MemberSignature Language="C#" Value="protected static int CutoffYear { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 CutoffYear" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseCompareValidator.CutoffYear" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly Property CutoffYear As Integer" />
+      <MemberSignature Language="F#" Value="member this.CutoffYear : int" Usage="System.Web.UI.WebControls.BaseCompareValidator.CutoffYear" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static property int CutoffYear { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -433,6 +492,9 @@
       <MemberSignature Language="C#" Value="protected override bool DetermineRenderUplevel ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool DetermineRenderUplevel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.DetermineRenderUplevel" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function DetermineRenderUplevel () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.DetermineRenderUplevel : unit -&gt; bool" Usage="baseCompareValidator.DetermineRenderUplevel " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool DetermineRenderUplevel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -467,6 +529,9 @@
       <MemberSignature Language="C#" Value="protected static string GetDateElementOrder ();" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig string GetDateElementOrder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.GetDateElementOrder" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function GetDateElementOrder () As String" />
+      <MemberSignature Language="F#" Value="static member GetDateElementOrder : unit -&gt; string" Usage="System.Web.UI.WebControls.BaseCompareValidator.GetDateElementOrder " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::String ^ GetDateElementOrder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -502,6 +567,9 @@
       <MemberSignature Language="C#" Value="protected static int GetFullYear (int shortYear);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig int32 GetFullYear(int32 shortYear) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.BaseCompareValidator.GetFullYear(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function GetFullYear (shortYear As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="static member GetFullYear : int -&gt; int" Usage="System.Web.UI.WebControls.BaseCompareValidator.GetFullYear shortYear" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static int GetFullYear(int shortYear);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -537,6 +605,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ValidationDataType Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ValidationDataType Type" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.BaseCompareValidator.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As ValidationDataType" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Web.UI.WebControls.ValidationDataType with get, set" Usage="System.Web.UI.WebControls.BaseCompareValidator.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ValidationDataType Type { System::Web::UI::WebControls::ValidationDataType get(); void set(System::Web::UI::WebControls::ValidationDataType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -596,32 +667,5 @@
         <altmember cref="T:System.Web.UI.WebControls.ValidationDataType" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Convert">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the specified text into an object of the specified data type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CanConvert">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the specified string can be converted to the specified data type.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Compare">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares two strings using the specified operator and validation data type.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

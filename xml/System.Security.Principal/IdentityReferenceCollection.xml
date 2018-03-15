@@ -1,7 +1,10 @@
-<Type Name="IdentityReferenceCollection" FullName="System.Security.Principal.IdentityReferenceCollection">
+﻿<Type Name="IdentityReferenceCollection" FullName="System.Security.Principal.IdentityReferenceCollection">
   <TypeSignature Language="C#" Value="public class IdentityReferenceCollection : System.Collections.Generic.ICollection&lt;System.Security.Principal.IdentityReference&gt;, System.Collections.Generic.IEnumerable&lt;System.Security.Principal.IdentityReference&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IdentityReferenceCollection extends System.Object implements class System.Collections.Generic.ICollection`1&lt;class System.Security.Principal.IdentityReference&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.Security.Principal.IdentityReference&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Principal.IdentityReferenceCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class IdentityReferenceCollection&#xA;Implements ICollection(Of IdentityReference), IEnumerable(Of IdentityReference)" />
+  <TypeSignature Language="F#" Value="type IdentityReferenceCollection = class&#xA;    interface IEnumerable&#xA;    interface ICollection&lt;IdentityReference&gt;&#xA;    interface seq&lt;IdentityReference&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IdentityReferenceCollection : System::Collections::Generic::ICollection&lt;System::Security::Principal::IdentityReference ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Security::Principal::IdentityReference ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Principal.Windows</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,10 +36,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.IdentityReferenceCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public IdentityReferenceCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IdentityReferenceCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -58,6 +73,9 @@
       <MemberSignature Language="C#" Value="public IdentityReferenceCollection (int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Security.Principal.IdentityReferenceCollection : int -&gt; System.Security.Principal.IdentityReferenceCollection" Usage="new System.Security.Principal.IdentityReferenceCollection capacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IdentityReferenceCollection(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -82,7 +100,13 @@
       <MemberSignature Language="C#" Value="public void Add (System.Security.Principal.IdentityReference identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Security.Principal.IdentityReference identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.Add(System.Security.Principal.IdentityReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (identity As IdentityReference)" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Security.Principal.IdentityReference -&gt; unit&#xA;override this.Add : System.Security.Principal.IdentityReference -&gt; unit" Usage="identityReferenceCollection.Add identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Security::Principal::IdentityReference ^ identity);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,7 +135,13 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="identityReferenceCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -135,7 +165,13 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Security.Principal.IdentityReference identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Security.Principal.IdentityReference identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.Contains(System.Security.Principal.IdentityReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (identity As IdentityReference) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Security.Principal.IdentityReference -&gt; bool&#xA;override this.Contains : System.Security.Principal.IdentityReference -&gt; bool" Usage="identityReferenceCollection.Contains identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Security::Principal::IdentityReference ^ identity);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -166,6 +202,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Security.Principal.IdentityReference[] array, int offset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Security.Principal.IdentityReference[] array, int32 offset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.CopyTo(System.Security.Principal.IdentityReference[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As IdentityReference(), offset As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Security.Principal.IdentityReference[] * int -&gt; unit&#xA;override this.CopyTo : System.Security.Principal.IdentityReference[] * int -&gt; unit" Usage="identityReferenceCollection.CopyTo (array, offset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Security::Principal::IdentityReference ^&gt; ^ array, int offset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -195,7 +234,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.IdentityReferenceCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Security.Principal.IdentityReferenceCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -219,7 +264,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;System.Security.Principal.IdentityReference&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Security.Principal.IdentityReference&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of IdentityReference)" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Security.Principal.IdentityReference&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Security.Principal.IdentityReference&gt;" Usage="identityReferenceCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Security::Principal::IdentityReference ^&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -244,7 +295,13 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.IdentityReferenceCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Security.Principal.IdentityReferenceCollection.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -263,6 +320,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Principal.IdentityReference this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Principal.IdentityReference Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.IdentityReferenceCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As IdentityReference" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Security.Principal.IdentityReference with get, set" Usage="System.Security.Principal.IdentityReferenceCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Principal::IdentityReference ^ default[int] { System::Security::Principal::IdentityReference ^ get(int index); void set(int index, System::Security::Principal::IdentityReference ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -291,7 +351,13 @@
       <MemberSignature Language="C#" Value="public bool Remove (System.Security.Principal.IdentityReference identity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class System.Security.Principal.IdentityReference identity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.Remove(System.Security.Principal.IdentityReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (identity As IdentityReference) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Security.Principal.IdentityReference -&gt; bool&#xA;override this.Remove : System.Security.Principal.IdentityReference -&gt; bool" Usage="identityReferenceCollection.Remove identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Security::Principal::IdentityReference ^ identity);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -322,7 +388,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;System.Security.Principal.IdentityReference&gt;.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Security.Principal.IdentityReference&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Security.Principal.IdentityReferenceCollection.System#Collections#Generic#ICollection&lt;System#Security#Principal#IdentityReference&gt;#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of IdentityReference).IsReadOnly" />
+      <MemberSignature Language="F#" Usage="System.Security.Principal.IdentityReferenceCollection.System.Collections.Generic.ICollection&lt;System.Security.Principal.IdentityReference&gt;.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Security.Principal.IdentityReference&gt;.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -341,7 +413,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -362,10 +439,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Translate">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the objects in the <see cref="T:System.Security.Principal.IdentityReferenceCollection" /> collection to the specified type.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Translate">
       <MemberSignature Language="C#" Value="public System.Security.Principal.IdentityReferenceCollection Translate (Type targetType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Principal.IdentityReferenceCollection Translate(class System.Type targetType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.Translate(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Translate (targetType As Type) As IdentityReferenceCollection" />
+      <MemberSignature Language="F#" Value="member this.Translate : Type -&gt; System.Security.Principal.IdentityReferenceCollection" Usage="identityReferenceCollection.Translate targetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Principal::IdentityReferenceCollection ^ Translate(Type ^ targetType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -403,6 +493,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Principal.IdentityReferenceCollection Translate (Type targetType, bool forceSuccess);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.Principal.IdentityReferenceCollection Translate(class System.Type targetType, bool forceSuccess) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Principal.IdentityReferenceCollection.Translate(System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Translate (targetType As Type, forceSuccess As Boolean) As IdentityReferenceCollection" />
+      <MemberSignature Language="F#" Value="member this.Translate : Type * bool -&gt; System.Security.Principal.IdentityReferenceCollection" Usage="identityReferenceCollection.Translate (targetType, forceSuccess)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Principal::IdentityReferenceCollection ^ Translate(Type ^ targetType, bool forceSuccess);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
@@ -442,25 +535,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Principal.IdentityReferenceCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Translate">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the objects in the <see cref="T:System.Security.Principal.IdentityReferenceCollection" /> collection to the specified type.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

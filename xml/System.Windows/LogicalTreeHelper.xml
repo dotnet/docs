@@ -1,7 +1,10 @@
-<Type Name="LogicalTreeHelper" FullName="System.Windows.LogicalTreeHelper">
+﻿<Type Name="LogicalTreeHelper" FullName="System.Windows.LogicalTreeHelper">
   <TypeSignature Language="C#" Value="public static class LogicalTreeHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit LogicalTreeHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.LogicalTreeHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class LogicalTreeHelper" />
+  <TypeSignature Language="F#" Value="type LogicalTreeHelper = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LogicalTreeHelper abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public static void BringIntoView (System.Windows.DependencyObject current);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void BringIntoView(class System.Windows.DependencyObject current) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LogicalTreeHelper.BringIntoView(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub BringIntoView (current As DependencyObject)" />
+      <MemberSignature Language="F#" Value="static member BringIntoView : System.Windows.DependencyObject -&gt; unit" Usage="System.Windows.LogicalTreeHelper.BringIntoView current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void BringIntoView(System::Windows::DependencyObject ^ current);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +69,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.DependencyObject FindLogicalNode (System.Windows.DependencyObject logicalTreeNode, string elementName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyObject FindLogicalNode(class System.Windows.DependencyObject logicalTreeNode, string elementName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LogicalTreeHelper.FindLogicalNode(System.Windows.DependencyObject,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindLogicalNode (logicalTreeNode As DependencyObject, elementName As String) As DependencyObject" />
+      <MemberSignature Language="F#" Value="static member FindLogicalNode : System.Windows.DependencyObject * string -&gt; System.Windows.DependencyObject" Usage="System.Windows.LogicalTreeHelper.FindLogicalNode (logicalTreeNode, elementName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyObject ^ FindLogicalNode(System::Windows::DependencyObject ^ logicalTreeNode, System::String ^ elementName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -94,10 +103,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetChildren">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the collection of immediate child objects of the specified object by processing the logical tree.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetChildren">
       <MemberSignature Language="C#" Value="public static System.Collections.IEnumerable GetChildren (System.Windows.DependencyObject current);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerable GetChildren(class System.Windows.DependencyObject current) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LogicalTreeHelper.GetChildren(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetChildren (current As DependencyObject) As IEnumerable" />
+      <MemberSignature Language="F#" Value="static member GetChildren : System.Windows.DependencyObject -&gt; System.Collections.IEnumerable" Usage="System.Windows.LogicalTreeHelper.GetChildren current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IEnumerable ^ GetChildren(System::Windows::DependencyObject ^ current);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -127,6 +148,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IEnumerable GetChildren (System.Windows.FrameworkContentElement current);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerable GetChildren(class System.Windows.FrameworkContentElement current) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LogicalTreeHelper.GetChildren(System.Windows.FrameworkContentElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetChildren (current As FrameworkContentElement) As IEnumerable" />
+      <MemberSignature Language="F#" Value="static member GetChildren : System.Windows.FrameworkContentElement -&gt; System.Collections.IEnumerable" Usage="System.Windows.LogicalTreeHelper.GetChildren current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IEnumerable ^ GetChildren(System::Windows::FrameworkContentElement ^ current);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -149,6 +173,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IEnumerable GetChildren (System.Windows.FrameworkElement current);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerable GetChildren(class System.Windows.FrameworkElement current) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LogicalTreeHelper.GetChildren(System.Windows.FrameworkElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetChildren (current As FrameworkElement) As IEnumerable" />
+      <MemberSignature Language="F#" Value="static member GetChildren : System.Windows.FrameworkElement -&gt; System.Collections.IEnumerable" Usage="System.Windows.LogicalTreeHelper.GetChildren current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IEnumerable ^ GetChildren(System::Windows::FrameworkElement ^ current);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -171,6 +198,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.DependencyObject GetParent (System.Windows.DependencyObject current);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.DependencyObject GetParent(class System.Windows.DependencyObject current) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.LogicalTreeHelper.GetParent(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetParent (current As DependencyObject) As DependencyObject" />
+      <MemberSignature Language="F#" Value="static member GetParent : System.Windows.DependencyObject -&gt; System.Windows.DependencyObject" Usage="System.Windows.LogicalTreeHelper.GetParent current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::DependencyObject ^ GetParent(System::Windows::DependencyObject ^ current);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -196,14 +226,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetChildren">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the collection of immediate child objects of the specified object by processing the logical tree.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="ActivityAction" FullName="System.Activities.ActivityAction">
+﻿<Type Name="ActivityAction" FullName="System.Activities.ActivityAction">
   <TypeSignature Language="C#" Value="public sealed class ActivityAction : System.Activities.ActivityDelegate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityAction extends System.Activities.ActivityDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Activities.ActivityAction" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityAction&#xA;Inherits ActivityDelegate" />
+  <TypeSignature Language="F#" Value="type ActivityAction = class&#xA;    inherit ActivityDelegate" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityAction sealed : System::Activities::ActivityDelegate" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="public ActivityAction ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ActivityAction.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityAction();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="SecurityZone" FullName="System.Security.SecurityZone">
+﻿<Type Name="SecurityZone" FullName="System.Security.SecurityZone">
   <TypeSignature Language="C#" Value="public enum SecurityZone" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed SecurityZone extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.SecurityZone" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SecurityZone" />
+  <TypeSignature Language="F#" Value="type SecurityZone = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SecurityZone" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="Internet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.SecurityZone Internet = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.Internet" />
+      <MemberSignature Language="VB.NET" Value="Internet" />
+      <MemberSignature Language="F#" Value="Internet = 3" Usage="System.Security.SecurityZone.Internet" />
+      <MemberSignature Language="C++ CLI" Value="Internet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -48,6 +54,7 @@
       <ReturnValue>
         <ReturnType>System.Security.SecurityZone</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The Internet zone is used for the Web sites on the Internet that do not belong to another zone.</summary>
       </Docs>
@@ -56,6 +63,9 @@
       <MemberSignature Language="C#" Value="Intranet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.SecurityZone Intranet = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.Intranet" />
+      <MemberSignature Language="VB.NET" Value="Intranet" />
+      <MemberSignature Language="F#" Value="Intranet = 1" Usage="System.Security.SecurityZone.Intranet" />
+      <MemberSignature Language="C++ CLI" Value="Intranet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Security.SecurityZone</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The local intranet zone is used for content located on a company's intranet. Because the servers and information would be within a company's firewall, a user or company could assign a higher trust level to the content on the intranet.</summary>
       </Docs>
@@ -77,6 +88,9 @@
       <MemberSignature Language="C#" Value="MyComputer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.SecurityZone MyComputer = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.MyComputer" />
+      <MemberSignature Language="VB.NET" Value="MyComputer" />
+      <MemberSignature Language="F#" Value="MyComputer = 0" Usage="System.Security.SecurityZone.MyComputer" />
+      <MemberSignature Language="C++ CLI" Value="MyComputer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -90,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.Security.SecurityZone</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The local computer zone is an implicit zone used for content that exists on the user's computer.</summary>
       </Docs>
@@ -98,6 +113,9 @@
       <MemberSignature Language="C#" Value="NoZone" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.SecurityZone NoZone = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.NoZone" />
+      <MemberSignature Language="VB.NET" Value="NoZone" />
+      <MemberSignature Language="F#" Value="NoZone = -1" Usage="System.Security.SecurityZone.NoZone" />
+      <MemberSignature Language="C++ CLI" Value="NoZone" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -111,6 +129,7 @@
       <ReturnValue>
         <ReturnType>System.Security.SecurityZone</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>No zone is specified.</summary>
       </Docs>
@@ -119,6 +138,9 @@
       <MemberSignature Language="C#" Value="Trusted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.SecurityZone Trusted = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.Trusted" />
+      <MemberSignature Language="VB.NET" Value="Trusted" />
+      <MemberSignature Language="F#" Value="Trusted = 2" Usage="System.Security.SecurityZone.Trusted" />
+      <MemberSignature Language="C++ CLI" Value="Trusted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -132,6 +154,7 @@
       <ReturnValue>
         <ReturnType>System.Security.SecurityZone</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The trusted sites zone is used for content located on Web sites considered more reputable or trustworthy than other sites on the Internet. Users can use this zone to assign a higher trust level to these sites to minimize the number of authentication requests. The URLs of these trusted Web sites need to be mapped into this zone by the user.</summary>
       </Docs>
@@ -140,6 +163,9 @@
       <MemberSignature Language="C#" Value="Untrusted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.SecurityZone Untrusted = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.SecurityZone.Untrusted" />
+      <MemberSignature Language="VB.NET" Value="Untrusted" />
+      <MemberSignature Language="F#" Value="Untrusted = 4" Usage="System.Security.SecurityZone.Untrusted" />
+      <MemberSignature Language="C++ CLI" Value="Untrusted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -153,6 +179,7 @@
       <ReturnValue>
         <ReturnType>System.Security.SecurityZone</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The restricted sites zone is used for Web sites with content that could cause, or could have caused, problems when downloaded. The URLs of these untrusted Web sites need to be mapped into this zone by the user.</summary>
       </Docs>

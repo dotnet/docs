@@ -1,7 +1,10 @@
-<Type Name="GridViewColumn" FullName="System.Windows.Controls.GridViewColumn">
+﻿<Type Name="GridViewColumn" FullName="System.Windows.Controls.GridViewColumn">
   <TypeSignature Language="C#" Value="public class GridViewColumn : System.Windows.DependencyObject, System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridViewColumn extends System.Windows.DependencyObject implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.GridViewColumn" />
+  <TypeSignature Language="VB.NET" Value="Public Class GridViewColumn&#xA;Inherits DependencyObject&#xA;Implements INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type GridViewColumn = class&#xA;    inherit DependencyObject&#xA;    interface INotifyPropertyChanged" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GridViewColumn : System::Windows::DependencyObject, System::ComponentModel::INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +67,8 @@
       <MemberSignature Language="C#" Value="public GridViewColumn ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewColumn.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; GridViewColumn();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +84,9 @@
       <MemberSignature Language="C#" Value="public double ActualWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ActualWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.ActualWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActualWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.ActualWidth : double" Usage="System.Windows.Controls.GridViewColumn.ActualWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ActualWidth { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -106,6 +114,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.DataTemplate CellTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate CellTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.CellTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property CellTemplate As DataTemplate" />
+      <MemberSignature Language="F#" Value="member this.CellTemplate : System.Windows.DataTemplate with get, set" Usage="System.Windows.Controls.GridViewColumn.CellTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ CellTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -177,6 +188,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CellTemplateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CellTemplateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.CellTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CellTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CellTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.GridViewColumn.CellTemplateProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CellTemplateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -201,6 +215,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.DataTemplateSelector CellTemplateSelector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataTemplateSelector CellTemplateSelector" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.CellTemplateSelector" />
+      <MemberSignature Language="VB.NET" Value="Public Property CellTemplateSelector As DataTemplateSelector" />
+      <MemberSignature Language="F#" Value="member this.CellTemplateSelector : System.Windows.Controls.DataTemplateSelector with get, set" Usage="System.Windows.Controls.GridViewColumn.CellTemplateSelector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataTemplateSelector ^ CellTemplateSelector { System::Windows::Controls::DataTemplateSelector ^ get(); void set(System::Windows::Controls::DataTemplateSelector ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -208,7 +225,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -281,6 +298,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CellTemplateSelectorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CellTemplateSelectorProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.CellTemplateSelectorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CellTemplateSelectorProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CellTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.GridViewColumn.CellTemplateSelectorProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CellTemplateSelectorProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -305,6 +325,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Data.BindingBase DisplayMemberBinding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Data.BindingBase DisplayMemberBinding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.DisplayMemberBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayMemberBinding As BindingBase" />
+      <MemberSignature Language="F#" Value="member this.DisplayMemberBinding : System.Windows.Data.BindingBase with get, set" Usage="System.Windows.Controls.GridViewColumn.DisplayMemberBinding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Data::BindingBase ^ DisplayMemberBinding { System::Windows::Data::BindingBase ^ get(); void set(System::Windows::Data::BindingBase ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -347,6 +370,9 @@
       <MemberSignature Language="C#" Value="public object Header { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Header" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.Header" />
+      <MemberSignature Language="VB.NET" Value="Public Property Header As Object" />
+      <MemberSignature Language="F#" Value="member this.Header : obj with get, set" Usage="System.Windows.Controls.GridViewColumn.Header" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Header { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -413,6 +439,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Style HeaderContainerStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Style HeaderContainerStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.HeaderContainerStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderContainerStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.HeaderContainerStyle : System.Windows.Style with get, set" Usage="System.Windows.Controls.GridViewColumn.HeaderContainerStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Style ^ HeaderContainerStyle { System::Windows::Style ^ get(); void set(System::Windows::Style ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -488,6 +517,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HeaderContainerStyleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HeaderContainerStyleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.HeaderContainerStyleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderContainerStyleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderContainerStyleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.GridViewColumn.HeaderContainerStyleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderContainerStyleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -512,6 +544,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HeaderProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HeaderProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.HeaderProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.GridViewColumn.HeaderProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -536,6 +571,9 @@
       <MemberSignature Language="C#" Value="public string HeaderStringFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HeaderStringFormat" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.HeaderStringFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderStringFormat As String" />
+      <MemberSignature Language="F#" Value="member this.HeaderStringFormat : string with get, set" Usage="System.Windows.Controls.GridViewColumn.HeaderStringFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HeaderStringFormat { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -577,6 +615,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HeaderStringFormatProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HeaderStringFormatProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.HeaderStringFormatProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderStringFormatProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderStringFormatProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.GridViewColumn.HeaderStringFormatProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderStringFormatProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -594,6 +635,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.DataTemplate HeaderTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.DataTemplate HeaderTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.HeaderTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderTemplate As DataTemplate" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplate : System.Windows.DataTemplate with get, set" Usage="System.Windows.Controls.GridViewColumn.HeaderTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::DataTemplate ^ HeaderTemplate { System::Windows::DataTemplate ^ get(); void set(System::Windows::DataTemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -666,6 +710,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HeaderTemplateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HeaderTemplateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.HeaderTemplateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderTemplateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderTemplateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.GridViewColumn.HeaderTemplateProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderTemplateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -690,6 +737,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.DataTemplateSelector HeaderTemplateSelector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.DataTemplateSelector HeaderTemplateSelector" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.HeaderTemplateSelector" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderTemplateSelector As DataTemplateSelector" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplateSelector : System.Windows.Controls.DataTemplateSelector with get, set" Usage="System.Windows.Controls.GridViewColumn.HeaderTemplateSelector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataTemplateSelector ^ HeaderTemplateSelector { System::Windows::Controls::DataTemplateSelector ^ get(); void set(System::Windows::Controls::DataTemplateSelector ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -697,7 +747,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -759,6 +809,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HeaderTemplateSelectorProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HeaderTemplateSelectorProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.HeaderTemplateSelectorProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderTemplateSelectorProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderTemplateSelectorProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.GridViewColumn.HeaderTemplateSelectorProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HeaderTemplateSelectorProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -783,6 +836,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnHeaderStringFormatChanged (string oldHeaderStringFormat, string newHeaderStringFormat);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnHeaderStringFormatChanged(string oldHeaderStringFormat, string newHeaderStringFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewColumn.OnHeaderStringFormatChanged(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnHeaderStringFormatChanged (oldHeaderStringFormat As String, newHeaderStringFormat As String)" />
+      <MemberSignature Language="F#" Value="abstract member OnHeaderStringFormatChanged : string * string -&gt; unit&#xA;override this.OnHeaderStringFormatChanged : string * string -&gt; unit" Usage="gridViewColumn.OnHeaderStringFormatChanged (oldHeaderStringFormat, newHeaderStringFormat)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnHeaderStringFormatChanged(System::String ^ oldHeaderStringFormat, System::String ^ newHeaderStringFormat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -806,6 +862,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPropertyChanged (System.ComponentModel.PropertyChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPropertyChanged(class System.ComponentModel.PropertyChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewColumn.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPropertyChanged (e As PropertyChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : System.ComponentModel.PropertyChangedEventArgs -&gt; unit" Usage="gridViewColumn.OnPropertyChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPropertyChanged(System::ComponentModel::PropertyChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -827,6 +886,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.GridViewColumn.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="gridViewColumn.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -846,6 +908,9 @@
       <MemberSignature Language="C#" Value="public double Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Width" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.GridViewColumn.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Double" />
+      <MemberSignature Language="F#" Value="member this.Width : double with get, set" Usage="System.Windows.Controls.GridViewColumn.Width" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Width { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -926,6 +991,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty WidthProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty WidthProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.GridViewColumn.WidthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WidthProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable WidthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.GridViewColumn.WidthProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ WidthProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

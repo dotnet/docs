@@ -1,7 +1,10 @@
-<Type Name="FileOptions" FullName="System.IO.FileOptions">
+﻿<Type Name="FileOptions" FullName="System.IO.FileOptions">
   <TypeSignature Language="C#" Value="public enum FileOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FileOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.FileOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FileOptions" />
+  <TypeSignature Language="F#" Value="type FileOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FileOptions" />
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -49,6 +52,9 @@
       <MemberSignature Language="C#" Value="Asynchronous" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileOptions Asynchronous = int32(1073741824)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.Asynchronous" />
+      <MemberSignature Language="VB.NET" Value="Asynchronous" />
+      <MemberSignature Language="F#" Value="Asynchronous = 1073741824" Usage="System.IO.FileOptions.Asynchronous" />
+      <MemberSignature Language="C++ CLI" Value="Asynchronous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -70,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1073741824</MemberValue>
       <Docs>
         <summary>Indicates that a file can be used for asynchronous reading and writing.</summary>
       </Docs>
@@ -78,6 +85,9 @@
       <MemberSignature Language="C#" Value="DeleteOnClose" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileOptions DeleteOnClose = int32(67108864)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.DeleteOnClose" />
+      <MemberSignature Language="VB.NET" Value="DeleteOnClose" />
+      <MemberSignature Language="F#" Value="DeleteOnClose = 67108864" Usage="System.IO.FileOptions.DeleteOnClose" />
+      <MemberSignature Language="C++ CLI" Value="DeleteOnClose" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -99,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>67108864</MemberValue>
       <Docs>
         <summary>Indicates that a file is automatically deleted when it is no longer in use.</summary>
       </Docs>
@@ -107,6 +118,9 @@
       <MemberSignature Language="C#" Value="Encrypted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileOptions Encrypted = int32(16384)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.Encrypted" />
+      <MemberSignature Language="VB.NET" Value="Encrypted" />
+      <MemberSignature Language="F#" Value="Encrypted = 16384" Usage="System.IO.FileOptions.Encrypted" />
+      <MemberSignature Language="C++ CLI" Value="Encrypted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -128,6 +142,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>16384</MemberValue>
       <Docs>
         <summary>Indicates that a file is encrypted and can be decrypted only by using the same user account used for encryption.</summary>
       </Docs>
@@ -136,6 +151,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.IO.FileOptions.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -157,6 +175,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that no additional options should be used when creating a <see cref="T:System.IO.FileStream" /> object.</summary>
       </Docs>
@@ -165,6 +184,9 @@
       <MemberSignature Language="C#" Value="RandomAccess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileOptions RandomAccess = int32(268435456)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.RandomAccess" />
+      <MemberSignature Language="VB.NET" Value="RandomAccess" />
+      <MemberSignature Language="F#" Value="RandomAccess = 268435456" Usage="System.IO.FileOptions.RandomAccess" />
+      <MemberSignature Language="C++ CLI" Value="RandomAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -186,6 +208,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>268435456</MemberValue>
       <Docs>
         <summary>Indicates that the file is accessed randomly. The system can use this as a hint to optimize file caching.</summary>
       </Docs>
@@ -194,6 +217,9 @@
       <MemberSignature Language="C#" Value="SequentialScan" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileOptions SequentialScan = int32(134217728)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.SequentialScan" />
+      <MemberSignature Language="VB.NET" Value="SequentialScan" />
+      <MemberSignature Language="F#" Value="SequentialScan = 134217728" Usage="System.IO.FileOptions.SequentialScan" />
+      <MemberSignature Language="C++ CLI" Value="SequentialScan" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -215,6 +241,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>134217728</MemberValue>
       <Docs>
         <summary>Indicates that the file is to be accessed sequentially from beginning to end. The system can use this as a hint to optimize file caching. If an application moves the file pointer for random access, optimum caching may not occur; however, correct operation is still guaranteed.</summary>
         <remarks>
@@ -231,6 +258,9 @@
       <MemberSignature Language="C#" Value="WriteThrough" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.FileOptions WriteThrough = int32(-2147483648)" />
       <MemberSignature Language="DocId" Value="F:System.IO.FileOptions.WriteThrough" />
+      <MemberSignature Language="VB.NET" Value="WriteThrough" />
+      <MemberSignature Language="F#" Value="WriteThrough = -2147483648" Usage="System.IO.FileOptions.WriteThrough" />
+      <MemberSignature Language="C++ CLI" Value="WriteThrough" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem</AssemblyName>
@@ -252,6 +282,7 @@
       <ReturnValue>
         <ReturnType>System.IO.FileOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>-2147483648</MemberValue>
       <Docs>
         <summary>Indicates that the system should write through any intermediate cache and go directly to disk.</summary>
       </Docs>

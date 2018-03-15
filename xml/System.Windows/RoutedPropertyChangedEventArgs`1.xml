@@ -1,7 +1,10 @@
-<Type Name="RoutedPropertyChangedEventArgs&lt;T&gt;" FullName="System.Windows.RoutedPropertyChangedEventArgs&lt;T&gt;">
+﻿<Type Name="RoutedPropertyChangedEventArgs&lt;T&gt;" FullName="System.Windows.RoutedPropertyChangedEventArgs&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class RoutedPropertyChangedEventArgs&lt;T&gt; : System.Windows.RoutedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RoutedPropertyChangedEventArgs`1&lt;T&gt; extends System.Windows.RoutedEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.RoutedPropertyChangedEventArgs`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class RoutedPropertyChangedEventArgs(Of T)&#xA;Inherits RoutedEventArgs" />
+  <TypeSignature Language="F#" Value="type RoutedPropertyChangedEventArgs&lt;'T&gt; = class&#xA;    inherit RoutedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class RoutedPropertyChangedEventArgs : System::Windows::RoutedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="public RoutedPropertyChangedEventArgs (T oldValue, T newValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T oldValue, !T newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.RoutedPropertyChangedEventArgs`1.#ctor(`0,`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (oldValue As T, newValue As T)" />
+      <MemberSignature Language="F#" Value="new System.Windows.RoutedPropertyChangedEventArgs&lt;'T&gt; : 'T * 'T -&gt; System.Windows.RoutedPropertyChangedEventArgs&lt;'T&gt;" Usage="new System.Windows.RoutedPropertyChangedEventArgs&lt;'T&gt; (oldValue, newValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RoutedPropertyChangedEventArgs(T oldValue, T newValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -62,6 +68,8 @@
       <MemberSignature Language="C#" Value="public RoutedPropertyChangedEventArgs (T oldValue, T newValue, System.Windows.RoutedEvent routedEvent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(!T oldValue, !T newValue, class System.Windows.RoutedEvent routedEvent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.RoutedPropertyChangedEventArgs`1.#ctor(`0,`0,System.Windows.RoutedEvent)" />
+      <MemberSignature Language="F#" Value="new System.Windows.RoutedPropertyChangedEventArgs&lt;'T&gt; : 'T * 'T * System.Windows.RoutedEvent -&gt; System.Windows.RoutedPropertyChangedEventArgs&lt;'T&gt;" Usage="new System.Windows.RoutedPropertyChangedEventArgs&lt;'T&gt; (oldValue, newValue, routedEvent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RoutedPropertyChangedEventArgs(T oldValue, T newValue, System::Windows::RoutedEvent ^ routedEvent);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -91,6 +99,9 @@
       <MemberSignature Language="C#" Value="protected override void InvokeEventHandler (Delegate genericHandler, object genericTarget);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InvokeEventHandler(class System.Delegate genericHandler, object genericTarget) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.RoutedPropertyChangedEventArgs`1.InvokeEventHandler(System.Delegate,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InvokeEventHandler (genericHandler As Delegate, genericTarget As Object)" />
+      <MemberSignature Language="F#" Value="override this.InvokeEventHandler : Delegate * obj -&gt; unit" Usage="routedPropertyChangedEventArgs.InvokeEventHandler (genericHandler, genericTarget)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InvokeEventHandler(Delegate ^ genericHandler, System::Object ^ genericTarget);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -121,6 +132,9 @@
       <MemberSignature Language="C#" Value="public T NewValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T NewValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.RoutedPropertyChangedEventArgs`1.NewValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewValue As T" />
+      <MemberSignature Language="F#" Value="member this.NewValue : 'T" Usage="System.Windows.RoutedPropertyChangedEventArgs&lt;'T&gt;.NewValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T NewValue { T get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -146,6 +160,9 @@
       <MemberSignature Language="C#" Value="public T OldValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T OldValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.RoutedPropertyChangedEventArgs`1.OldValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldValue As T" />
+      <MemberSignature Language="F#" Value="member this.OldValue : 'T" Usage="System.Windows.RoutedPropertyChangedEventArgs&lt;'T&gt;.OldValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T OldValue { T get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

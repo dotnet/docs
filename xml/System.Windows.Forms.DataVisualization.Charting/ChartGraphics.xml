@@ -1,7 +1,10 @@
-<Type Name="ChartGraphics" FullName="System.Windows.Forms.DataVisualization.Charting.ChartGraphics">
+﻿<Type Name="ChartGraphics" FullName="System.Windows.Forms.DataVisualization.Charting.ChartGraphics">
   <TypeSignature Language="C#" Value="public class ChartGraphics : System.Windows.Forms.DataVisualization.Charting.ChartElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChartGraphics extends System.Windows.Forms.DataVisualization.Charting.ChartElement" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.ChartGraphics" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChartGraphics&#xA;Inherits ChartElement" />
+  <TypeSignature Language="F#" Value="type ChartGraphics = class&#xA;    inherit ChartElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChartGraphics : System::Windows::Forms::DataVisualization::Charting::ChartElement" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="chartGraphics.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -55,6 +61,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.PointF GetAbsolutePoint (System.Drawing.PointF point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.PointF GetAbsolutePoint(valuetype System.Drawing.PointF point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.GetAbsolutePoint(System.Drawing.PointF)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAbsolutePoint (point As PointF) As PointF" />
+      <MemberSignature Language="F#" Value="member this.GetAbsolutePoint : System.Drawing.PointF -&gt; System.Drawing.PointF" Usage="chartGraphics.GetAbsolutePoint point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::PointF GetAbsolutePoint(System::Drawing::PointF point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -77,6 +86,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.RectangleF GetAbsoluteRectangle (System.Drawing.RectangleF rectangle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.RectangleF GetAbsoluteRectangle(valuetype System.Drawing.RectangleF rectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.GetAbsoluteRectangle(System.Drawing.RectangleF)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAbsoluteRectangle (rectangle As RectangleF) As RectangleF" />
+      <MemberSignature Language="F#" Value="member this.GetAbsoluteRectangle : System.Drawing.RectangleF -&gt; System.Drawing.RectangleF" Usage="chartGraphics.GetAbsoluteRectangle rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::RectangleF GetAbsoluteRectangle(System::Drawing::RectangleF rectangle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -99,6 +111,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.SizeF GetAbsoluteSize (System.Drawing.SizeF size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.SizeF GetAbsoluteSize(valuetype System.Drawing.SizeF size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.GetAbsoluteSize(System.Drawing.SizeF)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAbsoluteSize (size As SizeF) As SizeF" />
+      <MemberSignature Language="F#" Value="member this.GetAbsoluteSize : System.Drawing.SizeF -&gt; System.Drawing.SizeF" Usage="chartGraphics.GetAbsoluteSize size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::SizeF GetAbsoluteSize(System::Drawing::SizeF size);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -121,6 +136,9 @@
       <MemberSignature Language="C#" Value="public double GetPositionFromAxis (string chartAreaName, System.Windows.Forms.DataVisualization.Charting.AxisName axis, double axisValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetPositionFromAxis(string chartAreaName, valuetype System.Windows.Forms.DataVisualization.Charting.AxisName axis, float64 axisValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.GetPositionFromAxis(System.String,System.Windows.Forms.DataVisualization.Charting.AxisName,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPositionFromAxis (chartAreaName As String, axis As AxisName, axisValue As Double) As Double" />
+      <MemberSignature Language="F#" Value="member this.GetPositionFromAxis : string * System.Windows.Forms.DataVisualization.Charting.AxisName * double -&gt; double" Usage="chartGraphics.GetPositionFromAxis (chartAreaName, axis, axisValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double GetPositionFromAxis(System::String ^ chartAreaName, System::Windows::Forms::DataVisualization::Charting::AxisName axis, double axisValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -147,6 +165,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.PointF GetRelativePoint (System.Drawing.PointF point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.PointF GetRelativePoint(valuetype System.Drawing.PointF point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.GetRelativePoint(System.Drawing.PointF)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRelativePoint (point As PointF) As PointF" />
+      <MemberSignature Language="F#" Value="member this.GetRelativePoint : System.Drawing.PointF -&gt; System.Drawing.PointF" Usage="chartGraphics.GetRelativePoint point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::PointF GetRelativePoint(System::Drawing::PointF point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -169,6 +190,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.RectangleF GetRelativeRectangle (System.Drawing.RectangleF rectangle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.RectangleF GetRelativeRectangle(valuetype System.Drawing.RectangleF rectangle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.GetRelativeRectangle(System.Drawing.RectangleF)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRelativeRectangle (rectangle As RectangleF) As RectangleF" />
+      <MemberSignature Language="F#" Value="member this.GetRelativeRectangle : System.Drawing.RectangleF -&gt; System.Drawing.RectangleF" Usage="chartGraphics.GetRelativeRectangle rectangle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::RectangleF GetRelativeRectangle(System::Drawing::RectangleF rectangle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -191,6 +215,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.SizeF GetRelativeSize (System.Drawing.SizeF size);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.SizeF GetRelativeSize(valuetype System.Drawing.SizeF size) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.GetRelativeSize(System.Drawing.SizeF)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRelativeSize (size As SizeF) As SizeF" />
+      <MemberSignature Language="F#" Value="member this.GetRelativeSize : System.Drawing.SizeF -&gt; System.Drawing.SizeF" Usage="chartGraphics.GetRelativeSize size" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::SizeF GetRelativeSize(System::Drawing::SizeF size);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -213,6 +240,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Graphics Graphics { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Graphics Graphics" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.ChartGraphics.Graphics" />
+      <MemberSignature Language="VB.NET" Value="Public Property Graphics As Graphics" />
+      <MemberSignature Language="F#" Value="member this.Graphics : System.Drawing.Graphics with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.ChartGraphics.Graphics" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Graphics ^ Graphics { System::Drawing::Graphics ^ get(); void set(System::Drawing::Graphics ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

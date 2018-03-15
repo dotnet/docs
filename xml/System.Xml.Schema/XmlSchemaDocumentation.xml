@@ -1,7 +1,10 @@
-<Type Name="XmlSchemaDocumentation" FullName="System.Xml.Schema.XmlSchemaDocumentation">
+﻿<Type Name="XmlSchemaDocumentation" FullName="System.Xml.Schema.XmlSchemaDocumentation">
   <TypeSignature Language="C#" Value="public class XmlSchemaDocumentation : System.Xml.Schema.XmlSchemaObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaDocumentation extends System.Xml.Schema.XmlSchemaObject" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaDocumentation" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaDocumentation&#xA;Inherits XmlSchemaObject" />
+  <TypeSignature Language="F#" Value="type XmlSchemaDocumentation = class&#xA;    inherit XmlSchemaObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaDocumentation : System::Xml::Schema::XmlSchemaObject" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +51,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaDocumentation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaDocumentation.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaDocumentation();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -72,6 +77,9 @@
       <MemberSignature Language="C#" Value="public string Language { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Language" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaDocumentation.Language" />
+      <MemberSignature Language="VB.NET" Value="Public Property Language As String" />
+      <MemberSignature Language="F#" Value="member this.Language : string with get, set" Usage="System.Xml.Schema.XmlSchemaDocumentation.Language" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Language { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -106,6 +114,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlNode[] Markup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlNode[] Markup" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaDocumentation.Markup" />
+      <MemberSignature Language="VB.NET" Value="Public Property Markup As XmlNode()" />
+      <MemberSignature Language="F#" Value="member this.Markup : System.Xml.XmlNode[] with get, set" Usage="System.Xml.Schema.XmlSchemaDocumentation.Markup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Xml::XmlNode ^&gt; ^ Markup { cli::array &lt;System::Xml::XmlNode ^&gt; ^ get(); void set(cli::array &lt;System::Xml::XmlNode ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -141,6 +152,9 @@
       <MemberSignature Language="C#" Value="public string Source { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Source" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaDocumentation.Source" />
+      <MemberSignature Language="VB.NET" Value="Public Property Source As String" />
+      <MemberSignature Language="F#" Value="member this.Source : string with get, set" Usage="System.Xml.Schema.XmlSchemaDocumentation.Source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Source { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

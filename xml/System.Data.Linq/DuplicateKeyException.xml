@@ -1,7 +1,10 @@
-<Type Name="DuplicateKeyException" FullName="System.Data.Linq.DuplicateKeyException">
+﻿<Type Name="DuplicateKeyException" FullName="System.Data.Linq.DuplicateKeyException">
   <TypeSignature Language="C#" Value="public class DuplicateKeyException : InvalidOperationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DuplicateKeyException extends System.InvalidOperationException" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.DuplicateKeyException" />
+  <TypeSignature Language="VB.NET" Value="Public Class DuplicateKeyException&#xA;Inherits InvalidOperationException" />
+  <TypeSignature Language="F#" Value="type DuplicateKeyException = class&#xA;    inherit InvalidOperationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DuplicateKeyException : InvalidOperationException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Linq</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.DuplicateKeyException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DuplicateKeyException (object duplicate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object duplicate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DuplicateKeyException.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (duplicate As Object)" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.DuplicateKeyException : obj -&gt; System.Data.Linq.DuplicateKeyException" Usage="new System.Data.Linq.DuplicateKeyException duplicate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplicateKeyException(System::Object ^ duplicate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -37,6 +52,9 @@
       <MemberSignature Language="C#" Value="public DuplicateKeyException (object duplicate, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object duplicate, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DuplicateKeyException.#ctor(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (duplicate As Object, message As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.DuplicateKeyException : obj * string -&gt; System.Data.Linq.DuplicateKeyException" Usage="new System.Data.Linq.DuplicateKeyException (duplicate, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplicateKeyException(System::Object ^ duplicate, System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -57,6 +75,9 @@
       <MemberSignature Language="C#" Value="public DuplicateKeyException (object duplicate, string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object duplicate, string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.DuplicateKeyException.#ctor(System.Object,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (duplicate As Object, message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Data.Linq.DuplicateKeyException : obj * string * Exception -&gt; System.Data.Linq.DuplicateKeyException" Usage="new System.Data.Linq.DuplicateKeyException (duplicate, message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DuplicateKeyException(System::Object ^ duplicate, System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -79,6 +100,9 @@
       <MemberSignature Language="C#" Value="public object Object { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Object" />
       <MemberSignature Language="DocId" Value="P:System.Data.Linq.DuplicateKeyException.Object" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Object As Object" />
+      <MemberSignature Language="F#" Value="member this.Object : obj" Usage="System.Data.Linq.DuplicateKeyException.Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Object { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -93,14 +117,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Linq</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Linq.DuplicateKeyException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

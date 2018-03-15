@@ -1,7 +1,10 @@
-<Type Name="AsyncLocalValueChangedArgs&lt;T&gt;" FullName="System.Threading.AsyncLocalValueChangedArgs&lt;T&gt;">
+﻿<Type Name="AsyncLocalValueChangedArgs&lt;T&gt;" FullName="System.Threading.AsyncLocalValueChangedArgs&lt;T&gt;">
   <TypeSignature Language="C#" Value="public struct AsyncLocalValueChangedArgs&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit AsyncLocalValueChangedArgs`1&lt;T&gt; extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Threading.AsyncLocalValueChangedArgs`1" />
+  <TypeSignature Language="VB.NET" Value="Public Structure AsyncLocalValueChangedArgs(Of T)" />
+  <TypeSignature Language="F#" Value="type AsyncLocalValueChangedArgs&lt;'T&gt; = struct" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public value class AsyncLocalValueChangedArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -40,6 +43,9 @@
       <MemberSignature Language="C#" Value="public T CurrentValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T CurrentValue" />
       <MemberSignature Language="DocId" Value="P:System.Threading.AsyncLocalValueChangedArgs`1.CurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentValue As T" />
+      <MemberSignature Language="F#" Value="member this.CurrentValue : 'T" Usage="System.Threading.AsyncLocalValueChangedArgs&lt;'T&gt;.CurrentValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T CurrentValue { T get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -68,6 +74,9 @@
       <MemberSignature Language="C#" Value="public T PreviousValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T PreviousValue" />
       <MemberSignature Language="DocId" Value="P:System.Threading.AsyncLocalValueChangedArgs`1.PreviousValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousValue As T" />
+      <MemberSignature Language="F#" Value="member this.PreviousValue : 'T" Usage="System.Threading.AsyncLocalValueChangedArgs&lt;'T&gt;.PreviousValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property T PreviousValue { T get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -96,6 +105,9 @@
       <MemberSignature Language="C#" Value="public bool ThreadContextChanged { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ThreadContextChanged" />
       <MemberSignature Language="DocId" Value="P:System.Threading.AsyncLocalValueChangedArgs`1.ThreadContextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ThreadContextChanged As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ThreadContextChanged : bool" Usage="System.Threading.AsyncLocalValueChangedArgs&lt;'T&gt;.ThreadContextChanged" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ThreadContextChanged { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="OleDbEnumerator" FullName="System.Data.OleDb.OleDbEnumerator">
+﻿<Type Name="OleDbEnumerator" FullName="System.Data.OleDb.OleDbEnumerator">
   <TypeSignature Language="C#" Value="public sealed class OleDbEnumerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OleDbEnumerator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.OleDb.OleDbEnumerator" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OleDbEnumerator" />
+  <TypeSignature Language="F#" Value="type OleDbEnumerator = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OleDbEnumerator sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public OleDbEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbEnumerator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OleDbEnumerator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataTable GetElements ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataTable GetElements() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbEnumerator.GetElements" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetElements () As DataTable" />
+      <MemberSignature Language="F#" Value="member this.GetElements : unit -&gt; System.Data.DataTable" Usage="oleDbEnumerator.GetElements " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataTable ^ GetElements();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -135,6 +143,8 @@ class Program
       <MemberSignature Language="C#" Value="public static System.Data.OleDb.OleDbDataReader GetEnumerator (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OleDb.OleDbDataReader GetEnumerator(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbEnumerator.GetEnumerator(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetEnumerator : Type -&gt; System.Data.OleDb.OleDbDataReader" Usage="System.Data.OleDb.OleDbEnumerator.GetEnumerator type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OleDb::OleDbDataReader ^ GetEnumerator(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -244,6 +254,9 @@ class Program
       <MemberSignature Language="C#" Value="public static System.Data.OleDb.OleDbDataReader GetRootEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.OleDb.OleDbDataReader GetRootEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OleDb.OleDbEnumerator.GetRootEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRootEnumerator () As OleDbDataReader" />
+      <MemberSignature Language="F#" Value="static member GetRootEnumerator : unit -&gt; System.Data.OleDb.OleDbDataReader" Usage="System.Data.OleDb.OleDbEnumerator.GetRootEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OleDb::OleDbDataReader ^ GetRootEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

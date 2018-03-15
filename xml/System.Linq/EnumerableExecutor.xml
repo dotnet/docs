@@ -1,7 +1,10 @@
-<Type Name="EnumerableExecutor" FullName="System.Linq.EnumerableExecutor">
+﻿<Type Name="EnumerableExecutor" FullName="System.Linq.EnumerableExecutor">
   <TypeSignature Language="C#" Value="public abstract class EnumerableExecutor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit EnumerableExecutor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Linq.EnumerableExecutor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class EnumerableExecutor" />
+  <TypeSignature Language="F#" Value="type EnumerableExecutor = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EnumerableExecutor abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Linq.Queryable</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,8 @@
       <MemberSignature Language="C#" Value="protected EnumerableExecutor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Linq.EnumerableExecutor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; EnumerableExecutor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>

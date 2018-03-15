@@ -1,7 +1,10 @@
-<Type Name="TraceContextEventArgs" FullName="System.Web.TraceContextEventArgs">
+﻿<Type Name="TraceContextEventArgs" FullName="System.Web.TraceContextEventArgs">
   <TypeSignature Language="C#" Value="public sealed class TraceContextEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TraceContextEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.TraceContextEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TraceContextEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type TraceContextEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TraceContextEventArgs sealed : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public TraceContextEventArgs (System.Collections.ICollection records);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection records) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.TraceContextEventArgs.#ctor(System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (records As ICollection)" />
+      <MemberSignature Language="F#" Value="new System.Web.TraceContextEventArgs : System.Collections.ICollection -&gt; System.Web.TraceContextEventArgs" Usage="new System.Web.TraceContextEventArgs records" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TraceContextEventArgs(System::Collections::ICollection ^ records);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -55,6 +61,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection TraceRecords { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection TraceRecords" />
       <MemberSignature Language="DocId" Value="P:System.Web.TraceContextEventArgs.TraceRecords" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TraceRecords As ICollection" />
+      <MemberSignature Language="F#" Value="member this.TraceRecords : System.Collections.ICollection" Usage="System.Web.TraceContextEventArgs.TraceRecords" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ICollection ^ TraceRecords { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

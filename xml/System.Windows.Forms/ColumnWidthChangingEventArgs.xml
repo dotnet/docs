@@ -1,7 +1,10 @@
-<Type Name="ColumnWidthChangingEventArgs" FullName="System.Windows.Forms.ColumnWidthChangingEventArgs">
+﻿<Type Name="ColumnWidthChangingEventArgs" FullName="System.Windows.Forms.ColumnWidthChangingEventArgs">
   <TypeSignature Language="C#" Value="public class ColumnWidthChangingEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ColumnWidthChangingEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnWidthChangingEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ColumnWidthChangingEventArgs&#xA;Inherits CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type ColumnWidthChangingEventArgs = class&#xA;    inherit CancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ColumnWidthChangingEventArgs : System::ComponentModel::CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,10 +35,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ColumnWidthChangingEventArgs" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ColumnWidthChangingEventArgs (int columnIndex, int newWidth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 columnIndex, int32 newWidth) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnWidthChangingEventArgs.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (columnIndex As Integer, newWidth As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ColumnWidthChangingEventArgs : int * int -&gt; System.Windows.Forms.ColumnWidthChangingEventArgs" Usage="new System.Windows.Forms.ColumnWidthChangingEventArgs (columnIndex, newWidth)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ColumnWidthChangingEventArgs(int columnIndex, int newWidth);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -56,6 +71,9 @@
       <MemberSignature Language="C#" Value="public ColumnWidthChangingEventArgs (int columnIndex, int newWidth, bool cancel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 columnIndex, int32 newWidth, bool cancel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnWidthChangingEventArgs.#ctor(System.Int32,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (columnIndex As Integer, newWidth As Integer, cancel As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ColumnWidthChangingEventArgs : int * int * bool -&gt; System.Windows.Forms.ColumnWidthChangingEventArgs" Usage="new System.Windows.Forms.ColumnWidthChangingEventArgs (columnIndex, newWidth, cancel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ColumnWidthChangingEventArgs(int columnIndex, int newWidth, bool cancel);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +104,9 @@
       <MemberSignature Language="C#" Value="public int ColumnIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnWidthChangingEventArgs.ColumnIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.ColumnIndex : int" Usage="System.Windows.Forms.ColumnWidthChangingEventArgs.ColumnIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -116,6 +137,9 @@
       <MemberSignature Language="C#" Value="public int NewWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NewWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ColumnWidthChangingEventArgs.NewWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.NewWidth : int with get, set" Usage="System.Windows.Forms.ColumnWidthChangingEventArgs.NewWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NewWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -147,14 +171,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ColumnWidthChangingEventArgs" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

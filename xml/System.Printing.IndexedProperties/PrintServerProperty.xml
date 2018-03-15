@@ -1,7 +1,10 @@
-<Type Name="PrintServerProperty" FullName="System.Printing.IndexedProperties.PrintServerProperty">
+﻿<Type Name="PrintServerProperty" FullName="System.Printing.IndexedProperties.PrintServerProperty">
   <TypeSignature Language="C#" Value="public sealed class PrintServerProperty : System.Printing.IndexedProperties.PrintProperty" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintServerProperty extends System.Printing.IndexedProperties.PrintProperty" />
   <TypeSignature Language="DocId" Value="T:System.Printing.IndexedProperties.PrintServerProperty" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrintServerProperty&#xA;Inherits PrintProperty" />
+  <TypeSignature Language="F#" Value="type PrintServerProperty = class&#xA;    inherit PrintProperty" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintServerProperty sealed : System::Printing::IndexedProperties::PrintProperty" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintServerProperty" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PrintServerProperty (string attributeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintServerProperty.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String)" />
+      <MemberSignature Language="F#" Value="new System.Printing.IndexedProperties.PrintServerProperty : string -&gt; System.Printing.IndexedProperties.PrintServerProperty" Usage="new System.Printing.IndexedProperties.PrintServerProperty attributeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintServerProperty(System::String ^ attributeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -44,6 +59,9 @@
       <MemberSignature Language="C#" Value="public PrintServerProperty (string attributeName, object attributeValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string attributeName, object attributeValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintServerProperty.#ctor(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (attributeName As String, attributeValue As Object)" />
+      <MemberSignature Language="F#" Value="new System.Printing.IndexedProperties.PrintServerProperty : string * obj -&gt; System.Printing.IndexedProperties.PrintServerProperty" Usage="new System.Printing.IndexedProperties.PrintServerProperty (attributeName, attributeValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintServerProperty(System::String ^ attributeName, System::Object ^ attributeValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -71,6 +89,9 @@
       <MemberSignature Language="C#" Value="protected override sealed void InternalDispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InternalDispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintServerProperty.InternalDispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub InternalDispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.InternalDispose : bool -&gt; unit" Usage="printServerProperty.InternalDispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InternalDispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -93,10 +114,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Implicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides implicit conversion from a <see cref="T:System.Printing.IndexedProperties.PrintServerProperty" /> (or from a pointer to such a property) to a <see cref="T:System.Printing.PrintServer" /> value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Implicit">
       <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintServer (System.Printing.IndexedProperties.PrintServerProperty attribRef);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Printing.PrintServer op_Implicit(class System.Printing.IndexedProperties.PrintServerProperty attribRef) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintServerProperty.op_Implicit(System.Printing.IndexedProperties.PrintServerProperty)~System.Printing.PrintServer" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attribRef As PrintServerProperty) As PrintServer" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Printing.IndexedProperties.PrintServerProperty -&gt; System.Printing.PrintServer" Usage="System.Printing.IndexedProperties.PrintServerProperty.op_Implicit attribRef" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Printing::PrintServer ^(System::Printing::IndexedProperties::PrintServerProperty ^ attribRef);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -115,10 +148,37 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="op_Implicit">
+      <MemberSignature Language="C#" Value="public static implicit operator System.Printing.PrintServer (System.Printing.IndexedProperties.PrintServerProperty attribRef);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Printing.PrintServer op_Implicit(class System.Printing.IndexedProperties.PrintServerProperty modreq(System.Runtime.CompilerServices.IsImplicitlyDereferenced) attribRef) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Printing.IndexedProperties.PrintServerProperty.op_Implicit(System.Printing.IndexedProperties.PrintServerProperty|System.Runtime.CompilerServices.IsImplicitlyDereferenced)~System.Printing.PrintServer" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (attribRef As PrintServerProperty) As PrintServer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Printing::PrintServer ^(System::Printing::IndexedProperties::PrintServerProperty ^ attribRef);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Printing.PrintServer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="attribRef" Type="System.Printing.IndexedProperties.PrintServerProperty" />
+      </Parameters>
+      <Docs>
+        <param name="attribRef">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Value">
       <MemberSignature Language="C#" Value="public override object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Printing.IndexedProperties.PrintServerProperty.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Printing.IndexedProperties.PrintServerProperty.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -134,23 +194,5 @@
         <exception cref="T:System.InvalidOperationException">The property is not internally initialized.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="op_Implicit">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides implicit conversion from a <see cref="T:System.Printing.IndexedProperties.PrintServerProperty" /> (or from a pointer to such a property) to a <see cref="T:System.Printing.PrintServer" /> value.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Printing.IndexedProperties.PrintServerProperty" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

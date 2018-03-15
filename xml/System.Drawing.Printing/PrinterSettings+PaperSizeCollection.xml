@@ -1,7 +1,10 @@
-<Type Name="PrinterSettings+PaperSizeCollection" FullName="System.Drawing.Printing.PrinterSettings+PaperSizeCollection">
+﻿<Type Name="PrinterSettings+PaperSizeCollection" FullName="System.Drawing.Printing.PrinterSettings+PaperSizeCollection">
   <TypeSignature Language="C#" Value="public class PrinterSettings.PaperSizeCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit PrinterSettings/PaperSizeCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrinterSettings.PaperSizeCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrinterSettings.PaperSizeCollection&#xA;Implements ICollection" />
+  <TypeSignature Language="F#" Value="type PrinterSettings.PaperSizeCollection = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class PrinterSettings::PaperSizeCollection : System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +52,9 @@
       <MemberSignature Language="C#" Value="public PaperSizeCollection (System.Drawing.Printing.PaperSize[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Drawing.Printing.PaperSize[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.PaperSizeCollection.#ctor(System.Drawing.Printing.PaperSize[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (array As PaperSize())" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Printing.PrinterSettings.PaperSizeCollection : System.Drawing.Printing.PaperSize[] -&gt; System.Drawing.Printing.PrinterSettings.PaperSizeCollection" Usage="new System.Drawing.Printing.PrinterSettings.PaperSizeCollection array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PaperSizeCollection(cli::array &lt;System::Drawing::Printing::PaperSize ^&gt; ^ array);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -68,6 +74,8 @@
       <MemberSignature Language="C#" Value="public int Add (System.Drawing.Printing.PaperSize paperSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Drawing.Printing.PaperSize paperSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.PaperSizeCollection.Add(System.Drawing.Printing.PaperSize)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Drawing.Printing.PaperSize -&gt; int" Usage="paperSizeCollection.Add paperSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Drawing::Printing::PaperSize ^ paperSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -95,6 +103,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Drawing.Printing.PaperSize[] paperSizes, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Drawing.Printing.PaperSize[] paperSizes, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.PaperSizeCollection.CopyTo(System.Drawing.Printing.PaperSize[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (paperSizes As PaperSize(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Drawing.Printing.PaperSize[] * int -&gt; unit" Usage="paperSizeCollection.CopyTo (paperSizes, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Drawing::Printing::PaperSize ^&gt; ^ paperSizes, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -118,7 +129,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.PaperSizeCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Drawing.Printing.PrinterSettings.PaperSizeCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -147,7 +164,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.PaperSizeCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="paperSizeCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -178,6 +201,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Drawing.Printing.PaperSize this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PaperSize Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.PaperSizeCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As PaperSize" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Drawing.Printing.PaperSize" Usage="System.Drawing.Printing.PrinterSettings.PaperSizeCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Printing::PaperSize ^ default[int] { System::Drawing::Printing::PaperSize ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -212,7 +238,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.PaperSizeCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -242,7 +272,13 @@
       <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.PaperSizeCollection.System#Collections#ICollection#Count" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
+      <MemberSignature Language="F#" Usage="System.Drawing.Printing.PrinterSettings.PaperSizeCollection.System.Collections.ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -267,7 +303,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.PaperSizeCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="F#" Usage="System.Drawing.Printing.PrinterSettings.PaperSizeCollection.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -292,7 +334,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.PaperSizeCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="F#" Usage="System.Drawing.Printing.PrinterSettings.PaperSizeCollection.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -317,7 +365,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.PaperSizeCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="VirtualizingPanel" FullName="System.Windows.Controls.VirtualizingPanel">
+﻿<Type Name="VirtualizingPanel" FullName="System.Windows.Controls.VirtualizingPanel">
   <TypeSignature Language="C#" Value="public abstract class VirtualizingPanel : System.Windows.Controls.Panel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit VirtualizingPanel extends System.Windows.Controls.Panel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.VirtualizingPanel" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class VirtualizingPanel&#xA;Inherits Panel" />
+  <TypeSignature Language="F#" Value="type VirtualizingPanel = class&#xA;    inherit Panel" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VirtualizingPanel abstract : System::Windows::Controls::Panel" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,8 @@
       <MemberSignature Language="C#" Value="protected VirtualizingPanel ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; VirtualizingPanel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -57,6 +62,9 @@
       <MemberSignature Language="C#" Value="protected void AddInternalChild (System.Windows.UIElement child);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void AddInternalChild(class System.Windows.UIElement child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.AddInternalChild(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub AddInternalChild (child As UIElement)" />
+      <MemberSignature Language="F#" Value="member this.AddInternalChild : System.Windows.UIElement -&gt; unit" Usage="virtualizingPanel.AddInternalChild child" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void AddInternalChild(System::Windows::UIElement ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -82,9 +90,12 @@
       </Docs>
     </Member>
     <Member MemberName="BringIndexIntoView">
-      <MemberSignature Language="C#" Value="protected virtual void BringIndexIntoView (int index);" />
+      <MemberSignature Language="C#" Value="protected internal virtual void BringIndexIntoView (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void BringIndexIntoView(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.BringIndexIntoView(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub BringIndexIntoView (index As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member BringIndexIntoView : int -&gt; unit&#xA;override this.BringIndexIntoView : int -&gt; unit" Usage="virtualizingPanel.BringIndexIntoView index" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void BringIndexIntoView(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -106,6 +117,9 @@
       <MemberSignature Language="C#" Value="public void BringIndexIntoViewPublic (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BringIndexIntoViewPublic(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.BringIndexIntoViewPublic(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BringIndexIntoViewPublic (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.BringIndexIntoViewPublic : int -&gt; unit" Usage="virtualizingPanel.BringIndexIntoViewPublic index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BringIndexIntoViewPublic(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -123,10 +137,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CacheLength">
+      <MemberSignature Language="C#" Value="see GetCacheLength, and SetCacheLength" />
+      <MemberSignature Language="ILAsm" Value="see GetCacheLength, and SetCacheLength" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingPanel.CacheLength" />
+      <MemberSignature Language="VB.NET" Value="see GetCacheLength, and SetCacheLength" />
+      <MemberSignature Language="F#" Value="see GetCacheLength, and SetCacheLength" Usage="see GetCacheLength, and SetCacheLength" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CacheLengthProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CacheLengthProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CacheLengthProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizingPanel.CacheLengthProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CacheLengthProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CacheLengthProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.VirtualizingPanel.CacheLengthProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CacheLengthProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -140,10 +173,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="CacheLengthUnit">
+      <MemberSignature Language="C#" Value="see GetCacheLengthUnit, and SetCacheLengthUnit" />
+      <MemberSignature Language="ILAsm" Value="see GetCacheLengthUnit, and SetCacheLengthUnit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingPanel.CacheLengthUnit" />
+      <MemberSignature Language="VB.NET" Value="see GetCacheLengthUnit, and SetCacheLengthUnit" />
+      <MemberSignature Language="F#" Value="see GetCacheLengthUnit, and SetCacheLengthUnit" Usage="see GetCacheLengthUnit, and SetCacheLengthUnit" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="CacheLengthUnitProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CacheLengthUnitProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CacheLengthUnitProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizingPanel.CacheLengthUnitProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CacheLengthUnitProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CacheLengthUnitProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.VirtualizingPanel.CacheLengthUnitProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CacheLengthUnitProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -161,6 +213,9 @@
       <MemberSignature Language="C#" Value="public bool CanHierarchicallyScrollAndVirtualize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanHierarchicallyScrollAndVirtualize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingPanel.CanHierarchicallyScrollAndVirtualize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanHierarchicallyScrollAndVirtualize As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanHierarchicallyScrollAndVirtualize : bool" Usage="System.Windows.Controls.VirtualizingPanel.CanHierarchicallyScrollAndVirtualize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanHierarchicallyScrollAndVirtualize { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -186,6 +241,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool CanHierarchicallyScrollAndVirtualizeCore { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanHierarchicallyScrollAndVirtualizeCore" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingPanel.CanHierarchicallyScrollAndVirtualizeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property CanHierarchicallyScrollAndVirtualizeCore As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanHierarchicallyScrollAndVirtualizeCore : bool" Usage="System.Windows.Controls.VirtualizingPanel.CanHierarchicallyScrollAndVirtualizeCore" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool CanHierarchicallyScrollAndVirtualizeCore { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -212,6 +270,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Controls.VirtualizationCacheLength GetCacheLength (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Controls.VirtualizationCacheLength GetCacheLength(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.GetCacheLength(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCacheLength (element As DependencyObject) As VirtualizationCacheLength" />
+      <MemberSignature Language="F#" Value="static member GetCacheLength : System.Windows.DependencyObject -&gt; System.Windows.Controls.VirtualizationCacheLength" Usage="System.Windows.Controls.VirtualizingPanel.GetCacheLength element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::VirtualizationCacheLength GetCacheLength(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -234,6 +295,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Controls.VirtualizationCacheLengthUnit GetCacheLengthUnit (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Controls.VirtualizationCacheLengthUnit GetCacheLengthUnit(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.GetCacheLengthUnit(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetCacheLengthUnit (element As DependencyObject) As VirtualizationCacheLengthUnit" />
+      <MemberSignature Language="F#" Value="static member GetCacheLengthUnit : System.Windows.DependencyObject -&gt; System.Windows.Controls.VirtualizationCacheLengthUnit" Usage="System.Windows.Controls.VirtualizingPanel.GetCacheLengthUnit element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::VirtualizationCacheLengthUnit GetCacheLengthUnit(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -263,6 +327,9 @@
       <MemberSignature Language="C#" Value="public static bool GetIsContainerVirtualizable (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsContainerVirtualizable(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.GetIsContainerVirtualizable(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsContainerVirtualizable (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="F#" Value="static member GetIsContainerVirtualizable : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.VirtualizingPanel.GetIsContainerVirtualizable element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsContainerVirtualizable(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -293,6 +360,9 @@
       <MemberSignature Language="C#" Value="public static bool GetIsVirtualizing (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsVirtualizing(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.GetIsVirtualizing(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsVirtualizing (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="F#" Value="static member GetIsVirtualizing : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.VirtualizingPanel.GetIsVirtualizing element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsVirtualizing(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -323,6 +393,9 @@
       <MemberSignature Language="C#" Value="public static bool GetIsVirtualizingWhenGrouping (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsVirtualizingWhenGrouping(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.GetIsVirtualizingWhenGrouping(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsVirtualizingWhenGrouping (element As DependencyObject) As Boolean" />
+      <MemberSignature Language="F#" Value="static member GetIsVirtualizingWhenGrouping : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Controls.VirtualizingPanel.GetIsVirtualizingWhenGrouping element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsVirtualizingWhenGrouping(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -353,6 +426,9 @@
       <MemberSignature Language="C#" Value="public double GetItemOffset (System.Windows.UIElement child);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetItemOffset(class System.Windows.UIElement child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.GetItemOffset(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItemOffset (child As UIElement) As Double" />
+      <MemberSignature Language="F#" Value="member this.GetItemOffset : System.Windows.UIElement -&gt; double" Usage="virtualizingPanel.GetItemOffset child" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double GetItemOffset(System::Windows::UIElement ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -382,6 +458,9 @@
       <MemberSignature Language="C#" Value="protected virtual double GetItemOffsetCore (System.Windows.UIElement child);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance float64 GetItemOffsetCore(class System.Windows.UIElement child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.GetItemOffsetCore(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetItemOffsetCore (child As UIElement) As Double" />
+      <MemberSignature Language="F#" Value="abstract member GetItemOffsetCore : System.Windows.UIElement -&gt; double&#xA;override this.GetItemOffsetCore : System.Windows.UIElement -&gt; double" Usage="virtualizingPanel.GetItemOffsetCore child" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual double GetItemOffsetCore(System::Windows::UIElement ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -411,6 +490,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Controls.ScrollUnit GetScrollUnit (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Controls.ScrollUnit GetScrollUnit(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.GetScrollUnit(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetScrollUnit (element As DependencyObject) As ScrollUnit" />
+      <MemberSignature Language="F#" Value="static member GetScrollUnit : System.Windows.DependencyObject -&gt; System.Windows.Controls.ScrollUnit" Usage="System.Windows.Controls.VirtualizingPanel.GetScrollUnit element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::ScrollUnit GetScrollUnit(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -440,6 +522,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Controls.VirtualizationMode GetVirtualizationMode (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Controls.VirtualizationMode GetVirtualizationMode(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.GetVirtualizationMode(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetVirtualizationMode (element As DependencyObject) As VirtualizationMode" />
+      <MemberSignature Language="F#" Value="static member GetVirtualizationMode : System.Windows.DependencyObject -&gt; System.Windows.Controls.VirtualizationMode" Usage="System.Windows.Controls.VirtualizingPanel.GetVirtualizationMode element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Controls::VirtualizationMode GetVirtualizationMode(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -462,6 +547,9 @@
       <MemberSignature Language="C#" Value="protected void InsertInternalChild (int index, System.Windows.UIElement child);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InsertInternalChild(int32 index, class System.Windows.UIElement child) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.InsertInternalChild(System.Int32,System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub InsertInternalChild (index As Integer, child As UIElement)" />
+      <MemberSignature Language="F#" Value="member this.InsertInternalChild : int * System.Windows.UIElement -&gt; unit" Usage="virtualizingPanel.InsertInternalChild (index, child)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InsertInternalChild(int index, System::Windows::UIElement ^ child);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -488,10 +576,29 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsContainerVirtualizable">
+      <MemberSignature Language="C#" Value="see GetIsContainerVirtualizable, and SetIsContainerVirtualizable" />
+      <MemberSignature Language="ILAsm" Value="see GetIsContainerVirtualizable, and SetIsContainerVirtualizable" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingPanel.IsContainerVirtualizable" />
+      <MemberSignature Language="VB.NET" Value="see GetIsContainerVirtualizable, and SetIsContainerVirtualizable" />
+      <MemberSignature Language="F#" Value="see GetIsContainerVirtualizable, and SetIsContainerVirtualizable" Usage="see GetIsContainerVirtualizable, and SetIsContainerVirtualizable" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsContainerVirtualizableProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsContainerVirtualizableProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsContainerVirtualizableProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizingPanel.IsContainerVirtualizableProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsContainerVirtualizableProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsContainerVirtualizableProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.VirtualizingPanel.IsContainerVirtualizableProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsContainerVirtualizableProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -505,10 +612,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsVirtualizing">
+      <MemberSignature Language="C#" Value="see GetIsVirtualizing, and SetIsVirtualizing" />
+      <MemberSignature Language="ILAsm" Value="see GetIsVirtualizing, and SetIsVirtualizing" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingPanel.IsVirtualizing" />
+      <MemberSignature Language="VB.NET" Value="see GetIsVirtualizing, and SetIsVirtualizing" />
+      <MemberSignature Language="F#" Value="see GetIsVirtualizing, and SetIsVirtualizing" Usage="see GetIsVirtualizing, and SetIsVirtualizing" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsVirtualizingProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsVirtualizingProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsVirtualizingProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizingPanel.IsVirtualizingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsVirtualizingProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsVirtualizingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.VirtualizingPanel.IsVirtualizingProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsVirtualizingProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -522,10 +648,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsVirtualizingWhenGrouping">
+      <MemberSignature Language="C#" Value="see GetIsVirtualizingWhenGrouping, and SetIsVirtualizingWhenGrouping" />
+      <MemberSignature Language="ILAsm" Value="see GetIsVirtualizingWhenGrouping, and SetIsVirtualizingWhenGrouping" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingPanel.IsVirtualizingWhenGrouping" />
+      <MemberSignature Language="VB.NET" Value="see GetIsVirtualizingWhenGrouping, and SetIsVirtualizingWhenGrouping" />
+      <MemberSignature Language="F#" Value="see GetIsVirtualizingWhenGrouping, and SetIsVirtualizingWhenGrouping" Usage="see GetIsVirtualizingWhenGrouping, and SetIsVirtualizingWhenGrouping" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsVirtualizingWhenGroupingProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsVirtualizingWhenGroupingProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsVirtualizingWhenGroupingProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizingPanel.IsVirtualizingWhenGroupingProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsVirtualizingWhenGroupingProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsVirtualizingWhenGroupingProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.VirtualizingPanel.IsVirtualizingWhenGroupingProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsVirtualizingWhenGroupingProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -543,6 +688,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Primitives.IItemContainerGenerator ItemContainerGenerator { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.Primitives.IItemContainerGenerator ItemContainerGenerator" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingPanel.ItemContainerGenerator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemContainerGenerator As IItemContainerGenerator" />
+      <MemberSignature Language="F#" Value="member this.ItemContainerGenerator : System.Windows.Controls.Primitives.IItemContainerGenerator" Usage="System.Windows.Controls.VirtualizingPanel.ItemContainerGenerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Primitives::IItemContainerGenerator ^ ItemContainerGenerator { System::Windows::Controls::Primitives::IItemContainerGenerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -561,6 +709,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnClearChildren ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnClearChildren() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.OnClearChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnClearChildren ()" />
+      <MemberSignature Language="F#" Value="abstract member OnClearChildren : unit -&gt; unit&#xA;override this.OnClearChildren : unit -&gt; unit" Usage="virtualizingPanel.OnClearChildren " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnClearChildren();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -579,6 +730,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnItemsChanged (object sender, System.Windows.Controls.Primitives.ItemsChangedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnItemsChanged(object sender, class System.Windows.Controls.Primitives.ItemsChangedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.OnItemsChanged(System.Object,System.Windows.Controls.Primitives.ItemsChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnItemsChanged (sender As Object, args As ItemsChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnItemsChanged : obj * System.Windows.Controls.Primitives.ItemsChangedEventArgs -&gt; unit" Usage="virtualizingPanel.OnItemsChanged (sender, args)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnItemsChanged(System::Object ^ sender, System::Windows::Controls::Primitives::ItemsChangedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -602,6 +756,9 @@
       <MemberSignature Language="C#" Value="protected void RemoveInternalChildRange (int index, int range);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RemoveInternalChildRange(int32 index, int32 range) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.RemoveInternalChildRange(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RemoveInternalChildRange (index As Integer, range As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemoveInternalChildRange : int * int -&gt; unit" Usage="virtualizingPanel.RemoveInternalChildRange (index, range)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RemoveInternalChildRange(int index, int range);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -628,10 +785,29 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="ScrollUnit">
+      <MemberSignature Language="C#" Value="see GetScrollUnit, and SetScrollUnit" />
+      <MemberSignature Language="ILAsm" Value="see GetScrollUnit, and SetScrollUnit" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingPanel.ScrollUnit" />
+      <MemberSignature Language="VB.NET" Value="see GetScrollUnit, and SetScrollUnit" />
+      <MemberSignature Language="F#" Value="see GetScrollUnit, and SetScrollUnit" Usage="see GetScrollUnit, and SetScrollUnit" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="ScrollUnitProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ScrollUnitProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ScrollUnitProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizingPanel.ScrollUnitProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScrollUnitProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ScrollUnitProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.VirtualizingPanel.ScrollUnitProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ScrollUnitProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -649,6 +825,9 @@
       <MemberSignature Language="C#" Value="public static void SetCacheLength (System.Windows.DependencyObject element, System.Windows.Controls.VirtualizationCacheLength value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCacheLength(class System.Windows.DependencyObject element, valuetype System.Windows.Controls.VirtualizationCacheLength value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.SetCacheLength(System.Windows.DependencyObject,System.Windows.Controls.VirtualizationCacheLength)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCacheLength (element As DependencyObject, value As VirtualizationCacheLength)" />
+      <MemberSignature Language="F#" Value="static member SetCacheLength : System.Windows.DependencyObject * System.Windows.Controls.VirtualizationCacheLength -&gt; unit" Usage="System.Windows.Controls.VirtualizingPanel.SetCacheLength (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCacheLength(System::Windows::DependencyObject ^ element, System::Windows::Controls::VirtualizationCacheLength value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -679,6 +858,9 @@
       <MemberSignature Language="C#" Value="public static void SetCacheLengthUnit (System.Windows.DependencyObject element, System.Windows.Controls.VirtualizationCacheLengthUnit value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetCacheLengthUnit(class System.Windows.DependencyObject element, valuetype System.Windows.Controls.VirtualizationCacheLengthUnit value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.SetCacheLengthUnit(System.Windows.DependencyObject,System.Windows.Controls.VirtualizationCacheLengthUnit)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetCacheLengthUnit (element As DependencyObject, value As VirtualizationCacheLengthUnit)" />
+      <MemberSignature Language="F#" Value="static member SetCacheLengthUnit : System.Windows.DependencyObject * System.Windows.Controls.VirtualizationCacheLengthUnit -&gt; unit" Usage="System.Windows.Controls.VirtualizingPanel.SetCacheLengthUnit (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetCacheLengthUnit(System::Windows::DependencyObject ^ element, System::Windows::Controls::VirtualizationCacheLengthUnit value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -702,6 +884,9 @@
       <MemberSignature Language="C#" Value="public static void SetIsContainerVirtualizable (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsContainerVirtualizable(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.SetIsContainerVirtualizable(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsContainerVirtualizable (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetIsContainerVirtualizable : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Controls.VirtualizingPanel.SetIsContainerVirtualizable (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsContainerVirtualizable(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -726,6 +911,9 @@
       <MemberSignature Language="C#" Value="public static void SetIsVirtualizing (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsVirtualizing(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.SetIsVirtualizing(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsVirtualizing (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetIsVirtualizing : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Controls.VirtualizingPanel.SetIsVirtualizing (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsVirtualizing(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -750,6 +938,9 @@
       <MemberSignature Language="C#" Value="public static void SetIsVirtualizingWhenGrouping (System.Windows.DependencyObject element, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsVirtualizingWhenGrouping(class System.Windows.DependencyObject element, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.SetIsVirtualizingWhenGrouping(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsVirtualizingWhenGrouping (element As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetIsVirtualizingWhenGrouping : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Controls.VirtualizingPanel.SetIsVirtualizingWhenGrouping (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsVirtualizingWhenGrouping(System::Windows::DependencyObject ^ element, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -774,6 +965,9 @@
       <MemberSignature Language="C#" Value="public static void SetScrollUnit (System.Windows.DependencyObject element, System.Windows.Controls.ScrollUnit value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetScrollUnit(class System.Windows.DependencyObject element, valuetype System.Windows.Controls.ScrollUnit value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.SetScrollUnit(System.Windows.DependencyObject,System.Windows.Controls.ScrollUnit)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetScrollUnit (element As DependencyObject, value As ScrollUnit)" />
+      <MemberSignature Language="F#" Value="static member SetScrollUnit : System.Windows.DependencyObject * System.Windows.Controls.ScrollUnit -&gt; unit" Usage="System.Windows.Controls.VirtualizingPanel.SetScrollUnit (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetScrollUnit(System::Windows::DependencyObject ^ element, System::Windows::Controls::ScrollUnit value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -797,6 +991,9 @@
       <MemberSignature Language="C#" Value="public static void SetVirtualizationMode (System.Windows.DependencyObject element, System.Windows.Controls.VirtualizationMode value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetVirtualizationMode(class System.Windows.DependencyObject element, valuetype System.Windows.Controls.VirtualizationMode value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.SetVirtualizationMode(System.Windows.DependencyObject,System.Windows.Controls.VirtualizationMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetVirtualizationMode (element As DependencyObject, value As VirtualizationMode)" />
+      <MemberSignature Language="F#" Value="static member SetVirtualizationMode : System.Windows.DependencyObject * System.Windows.Controls.VirtualizationMode -&gt; unit" Usage="System.Windows.Controls.VirtualizingPanel.SetVirtualizationMode (element, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetVirtualizationMode(System::Windows::DependencyObject ^ element, System::Windows::Controls::VirtualizationMode value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -820,6 +1017,9 @@
       <MemberSignature Language="C#" Value="public bool ShouldItemsChangeAffectLayout (bool areItemChangesLocal, System.Windows.Controls.Primitives.ItemsChangedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldItemsChangeAffectLayout(bool areItemChangesLocal, class System.Windows.Controls.Primitives.ItemsChangedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.ShouldItemsChangeAffectLayout(System.Boolean,System.Windows.Controls.Primitives.ItemsChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldItemsChangeAffectLayout (areItemChangesLocal As Boolean, args As ItemsChangedEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldItemsChangeAffectLayout : bool * System.Windows.Controls.Primitives.ItemsChangedEventArgs -&gt; bool" Usage="virtualizingPanel.ShouldItemsChangeAffectLayout (areItemChangesLocal, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldItemsChangeAffectLayout(bool areItemChangesLocal, System::Windows::Controls::Primitives::ItemsChangedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -846,6 +1046,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool ShouldItemsChangeAffectLayoutCore (bool areItemChangesLocal, System.Windows.Controls.Primitives.ItemsChangedEventArgs args);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ShouldItemsChangeAffectLayoutCore(bool areItemChangesLocal, class System.Windows.Controls.Primitives.ItemsChangedEventArgs args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.VirtualizingPanel.ShouldItemsChangeAffectLayoutCore(System.Boolean,System.Windows.Controls.Primitives.ItemsChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function ShouldItemsChangeAffectLayoutCore (areItemChangesLocal As Boolean, args As ItemsChangedEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ShouldItemsChangeAffectLayoutCore : bool * System.Windows.Controls.Primitives.ItemsChangedEventArgs -&gt; bool&#xA;override this.ShouldItemsChangeAffectLayoutCore : bool * System.Windows.Controls.Primitives.ItemsChangedEventArgs -&gt; bool" Usage="virtualizingPanel.ShouldItemsChangeAffectLayoutCore (areItemChangesLocal, args)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ShouldItemsChangeAffectLayoutCore(bool areItemChangesLocal, System::Windows::Controls::Primitives::ItemsChangedEventArgs ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -868,10 +1071,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="VirtualizationMode">
+      <MemberSignature Language="C#" Value="see GetVirtualizationMode, and SetVirtualizationMode" />
+      <MemberSignature Language="ILAsm" Value="see GetVirtualizationMode, and SetVirtualizationMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.VirtualizingPanel.VirtualizationMode" />
+      <MemberSignature Language="VB.NET" Value="see GetVirtualizationMode, and SetVirtualizationMode" />
+      <MemberSignature Language="F#" Value="see GetVirtualizationMode, and SetVirtualizationMode" Usage="see GetVirtualizationMode, and SetVirtualizationMode" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="VirtualizationModeProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty VirtualizationModeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty VirtualizationModeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.VirtualizingPanel.VirtualizationModeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VirtualizationModeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable VirtualizationModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.VirtualizingPanel.VirtualizationModeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VirtualizationModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

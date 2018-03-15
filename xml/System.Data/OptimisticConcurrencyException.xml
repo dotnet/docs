@@ -1,7 +1,10 @@
-<Type Name="OptimisticConcurrencyException" FullName="System.Data.OptimisticConcurrencyException">
+﻿<Type Name="OptimisticConcurrencyException" FullName="System.Data.OptimisticConcurrencyException">
   <TypeSignature Language="C#" Value="public sealed class OptimisticConcurrencyException : System.Data.UpdateException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit OptimisticConcurrencyException extends System.Data.UpdateException" />
   <TypeSignature Language="DocId" Value="T:System.Data.OptimisticConcurrencyException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OptimisticConcurrencyException&#xA;Inherits UpdateException" />
+  <TypeSignature Language="F#" Value="type OptimisticConcurrencyException = class&#xA;    inherit UpdateException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OptimisticConcurrencyException sealed : System::Data::UpdateException" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public OptimisticConcurrencyException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OptimisticConcurrencyException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OptimisticConcurrencyException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -65,6 +70,9 @@
       <MemberSignature Language="C#" Value="public OptimisticConcurrencyException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OptimisticConcurrencyException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.OptimisticConcurrencyException : string -&gt; System.Data.OptimisticConcurrencyException" Usage="new System.Data.OptimisticConcurrencyException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OptimisticConcurrencyException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -90,6 +98,9 @@
       <MemberSignature Language="C#" Value="public OptimisticConcurrencyException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OptimisticConcurrencyException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Data.OptimisticConcurrencyException : string * Exception -&gt; System.Data.OptimisticConcurrencyException" Usage="new System.Data.OptimisticConcurrencyException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OptimisticConcurrencyException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -117,6 +128,9 @@
       <MemberSignature Language="C#" Value="public OptimisticConcurrencyException (string message, Exception innerException, System.Collections.Generic.IEnumerable&lt;System.Data.Objects.ObjectStateEntry&gt; stateEntries);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException, class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Objects.ObjectStateEntry&gt; stateEntries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OptimisticConcurrencyException.#ctor(System.String,System.Exception,System.Collections.Generic.IEnumerable{System.Data.Objects.ObjectStateEntry})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, stateEntries As IEnumerable(Of ObjectStateEntry))" />
+      <MemberSignature Language="F#" Value="new System.Data.OptimisticConcurrencyException : string * Exception * seq&lt;System.Data.Objects.ObjectStateEntry&gt; -&gt; System.Data.OptimisticConcurrencyException" Usage="new System.Data.OptimisticConcurrencyException (message, innerException, stateEntries)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OptimisticConcurrencyException(System::String ^ message, Exception ^ innerException, System::Collections::Generic::IEnumerable&lt;System::Data::Objects::ObjectStateEntry ^&gt; ^ stateEntries);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

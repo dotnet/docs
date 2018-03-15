@@ -1,7 +1,10 @@
-<Type Name="LocationReference" FullName="System.Activities.LocationReference">
+﻿<Type Name="LocationReference" FullName="System.Activities.LocationReference">
   <TypeSignature Language="C#" Value="public abstract class LocationReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit LocationReference extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.LocationReference" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class LocationReference" />
+  <TypeSignature Language="F#" Value="type LocationReference = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LocationReference abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,8 @@
       <MemberSignature Language="C#" Value="protected LocationReference ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.LocationReference.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; LocationReference();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -43,6 +48,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Activities.Location GetLocation (System.Activities.ActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Location GetLocation(class System.Activities.ActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.LocationReference.GetLocation(System.Activities.ActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetLocation (context As ActivityContext) As Location" />
+      <MemberSignature Language="F#" Value="abstract member GetLocation : System.Activities.ActivityContext -&gt; System.Activities.Location" Usage="locationReference.GetLocation context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Activities::Location ^ GetLocation(System::Activities::ActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -65,6 +73,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Activities.LocationReference.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Activities.LocationReference.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -83,6 +94,9 @@
       <MemberSignature Language="C#" Value="protected abstract string NameCore { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NameCore" />
       <MemberSignature Language="DocId" Value="P:System.Activities.LocationReference.NameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property NameCore As String" />
+      <MemberSignature Language="F#" Value="member this.NameCore : string" Usage="System.Activities.LocationReference.NameCore" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::String ^ NameCore { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -101,6 +115,9 @@
       <MemberSignature Language="C#" Value="public Type Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Activities.LocationReference.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="System.Activities.LocationReference.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -119,6 +136,9 @@
       <MemberSignature Language="C#" Value="protected abstract Type TypeCore { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TypeCore" />
       <MemberSignature Language="DocId" Value="P:System.Activities.LocationReference.TypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property TypeCore As Type" />
+      <MemberSignature Language="F#" Value="member this.TypeCore : Type" Usage="System.Activities.LocationReference.TypeCore" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property Type ^ TypeCore { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

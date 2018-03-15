@@ -1,7 +1,10 @@
-<Type Name="EventWatcherOptions" FullName="System.Management.EventWatcherOptions">
+﻿<Type Name="EventWatcherOptions" FullName="System.Management.EventWatcherOptions">
   <TypeSignature Language="C#" Value="public class EventWatcherOptions : System.Management.ManagementOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventWatcherOptions extends System.Management.ManagementOptions" />
   <TypeSignature Language="DocId" Value="T:System.Management.EventWatcherOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class EventWatcherOptions&#xA;Inherits ManagementOptions" />
+  <TypeSignature Language="F#" Value="type EventWatcherOptions = class&#xA;    inherit ManagementOptions" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventWatcherOptions : System::Management::ManagementOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,10 +28,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Management</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Management.EventWatcherOptions" /> class for event watching.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EventWatcherOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.EventWatcherOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventWatcherOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -61,6 +75,9 @@
       <MemberSignature Language="C#" Value="public EventWatcherOptions (System.Management.ManagementNamedValueCollection context, TimeSpan timeout, int blockSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Management.ManagementNamedValueCollection context, valuetype System.TimeSpan timeout, int32 blockSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.EventWatcherOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As ManagementNamedValueCollection, timeout As TimeSpan, blockSize As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Management.EventWatcherOptions : System.Management.ManagementNamedValueCollection * TimeSpan * int -&gt; System.Management.EventWatcherOptions" Usage="new System.Management.EventWatcherOptions (context, timeout, blockSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventWatcherOptions(System::Management::ManagementNamedValueCollection ^ context, TimeSpan timeout, int blockSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -100,6 +117,9 @@
       <MemberSignature Language="C#" Value="public int BlockSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BlockSize" />
       <MemberSignature Language="DocId" Value="P:System.Management.EventWatcherOptions.BlockSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property BlockSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.BlockSize : int with get, set" Usage="System.Management.EventWatcherOptions.BlockSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int BlockSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -138,6 +158,9 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.EventWatcherOptions.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="eventWatcherOptions.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -163,14 +186,5 @@
         <altmember cref="M:System.ICloneable.Clone" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Management</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Management.EventWatcherOptions" /> class for event watching.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

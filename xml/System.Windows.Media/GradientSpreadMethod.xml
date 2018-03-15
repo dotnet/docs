@@ -1,7 +1,10 @@
-<Type Name="GradientSpreadMethod" FullName="System.Windows.Media.GradientSpreadMethod">
+﻿<Type Name="GradientSpreadMethod" FullName="System.Windows.Media.GradientSpreadMethod">
   <TypeSignature Language="C#" Value="public enum GradientSpreadMethod" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GradientSpreadMethod extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.GradientSpreadMethod" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GradientSpreadMethod" />
+  <TypeSignature Language="F#" Value="type GradientSpreadMethod = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class GradientSpreadMethod" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@ Gradient spread methods
       <MemberSignature Language="C#" Value="Pad" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.GradientSpreadMethod Pad = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GradientSpreadMethod.Pad" />
+      <MemberSignature Language="VB.NET" Value="Pad" />
+      <MemberSignature Language="F#" Value="Pad = 0" Usage="System.Windows.Media.GradientSpreadMethod.Pad" />
+      <MemberSignature Language="C++ CLI" Value="Pad" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -36,6 +42,7 @@ Gradient spread methods
       <ReturnValue>
         <ReturnType>System.Windows.Media.GradientSpreadMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Default value. The color values at the ends of the gradient vector fill the remaining space.</summary>
       </Docs>
@@ -44,6 +51,9 @@ Gradient spread methods
       <MemberSignature Language="C#" Value="Reflect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.GradientSpreadMethod Reflect = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GradientSpreadMethod.Reflect" />
+      <MemberSignature Language="VB.NET" Value="Reflect" />
+      <MemberSignature Language="F#" Value="Reflect = 1" Usage="System.Windows.Media.GradientSpreadMethod.Reflect" />
+      <MemberSignature Language="C++ CLI" Value="Reflect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +62,7 @@ Gradient spread methods
       <ReturnValue>
         <ReturnType>System.Windows.Media.GradientSpreadMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The gradient is repeated in the reverse direction until the space is filled.</summary>
       </Docs>
@@ -60,6 +71,9 @@ Gradient spread methods
       <MemberSignature Language="C#" Value="Repeat" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.GradientSpreadMethod Repeat = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.GradientSpreadMethod.Repeat" />
+      <MemberSignature Language="VB.NET" Value="Repeat" />
+      <MemberSignature Language="F#" Value="Repeat = 2" Usage="System.Windows.Media.GradientSpreadMethod.Repeat" />
+      <MemberSignature Language="C++ CLI" Value="Repeat" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -68,6 +82,7 @@ Gradient spread methods
       <ReturnValue>
         <ReturnType>System.Windows.Media.GradientSpreadMethod</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The gradient is repeated in the original direction until the space is filled.</summary>
       </Docs>

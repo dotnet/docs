@@ -1,7 +1,10 @@
-<Type Name="UpdatePanelRenderMode" FullName="System.Web.UI.UpdatePanelRenderMode">
+﻿<Type Name="UpdatePanelRenderMode" FullName="System.Web.UI.UpdatePanelRenderMode">
   <TypeSignature Language="C#" Value="public enum UpdatePanelRenderMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UpdatePanelRenderMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.UpdatePanelRenderMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum UpdatePanelRenderMode" />
+  <TypeSignature Language="F#" Value="type UpdatePanelRenderMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class UpdatePanelRenderMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="Block" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.UpdatePanelRenderMode Block = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.UpdatePanelRenderMode.Block" />
+      <MemberSignature Language="VB.NET" Value="Block" />
+      <MemberSignature Language="F#" Value="Block = 0" Usage="System.Web.UI.UpdatePanelRenderMode.Block" />
+      <MemberSignature Language="C++ CLI" Value="Block" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -45,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.UpdatePanelRenderMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the content of the <see cref="T:System.Web.UI.UpdatePanel" /> control is rendered inside an HTML <see langword="&lt;div&gt;" /> element.</summary>
       </Docs>
@@ -53,6 +60,9 @@
       <MemberSignature Language="C#" Value="Inline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.UpdatePanelRenderMode Inline = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.UpdatePanelRenderMode.Inline" />
+      <MemberSignature Language="VB.NET" Value="Inline" />
+      <MemberSignature Language="F#" Value="Inline = 1" Usage="System.Web.UI.UpdatePanelRenderMode.Inline" />
+      <MemberSignature Language="C++ CLI" Value="Inline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -61,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.UpdatePanelRenderMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the content of the <see cref="T:System.Web.UI.UpdatePanel" /> control is rendered inside an HTML <see langword="&lt;span&gt;" /> element.</summary>
       </Docs>

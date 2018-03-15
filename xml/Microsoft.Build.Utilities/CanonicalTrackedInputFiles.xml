@@ -1,7 +1,10 @@
-<Type Name="CanonicalTrackedInputFiles" FullName="Microsoft.Build.Utilities.CanonicalTrackedInputFiles">
+﻿<Type Name="CanonicalTrackedInputFiles" FullName="Microsoft.Build.Utilities.CanonicalTrackedInputFiles">
   <TypeSignature Language="C#" Value="public class CanonicalTrackedInputFiles" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CanonicalTrackedInputFiles extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Utilities.CanonicalTrackedInputFiles" />
+  <TypeSignature Language="VB.NET" Value="Public Class CanonicalTrackedInputFiles" />
+  <TypeSignature Language="F#" Value="type CanonicalTrackedInputFiles = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CanonicalTrackedInputFiles" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Constructor for multiple input source files</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CanonicalTrackedInputFiles (Microsoft.Build.Framework.ITaskItem[] tlogFiles, Microsoft.Build.Framework.ITaskItem[] sourceFiles, Microsoft.Build.Utilities.CanonicalTrackedOutputFiles outputs, bool useMinimalRebuildOptimization, bool maintainCompositeRootingMarkers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Framework.ITaskItem[] tlogFiles, class Microsoft.Build.Framework.ITaskItem[] sourceFiles, class Microsoft.Build.Utilities.CanonicalTrackedOutputFiles outputs, bool useMinimalRebuildOptimization, bool maintainCompositeRootingMarkers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.#ctor(Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Utilities.CanonicalTrackedOutputFiles,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tlogFiles As ITaskItem(), sourceFiles As ITaskItem(), outputs As CanonicalTrackedOutputFiles, useMinimalRebuildOptimization As Boolean, maintainCompositeRootingMarkers As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.CanonicalTrackedInputFiles : Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Utilities.CanonicalTrackedOutputFiles * bool * bool -&gt; Microsoft.Build.Utilities.CanonicalTrackedInputFiles" Usage="new Microsoft.Build.Utilities.CanonicalTrackedInputFiles (tlogFiles, sourceFiles, outputs, useMinimalRebuildOptimization, maintainCompositeRootingMarkers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CanonicalTrackedInputFiles(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFiles, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ sourceFiles, Microsoft::Build::Utilities::CanonicalTrackedOutputFiles ^ outputs, bool useMinimalRebuildOptimization, bool maintainCompositeRootingMarkers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -45,6 +60,9 @@
       <MemberSignature Language="C#" Value="public CanonicalTrackedInputFiles (Microsoft.Build.Framework.ITaskItem[] tlogFiles, Microsoft.Build.Framework.ITaskItem[] sourceFiles, Microsoft.Build.Framework.ITaskItem[] excludedInputPaths, Microsoft.Build.Utilities.CanonicalTrackedOutputFiles outputs, bool useMinimalRebuildOptimization, bool maintainCompositeRootingMarkers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Framework.ITaskItem[] tlogFiles, class Microsoft.Build.Framework.ITaskItem[] sourceFiles, class Microsoft.Build.Framework.ITaskItem[] excludedInputPaths, class Microsoft.Build.Utilities.CanonicalTrackedOutputFiles outputs, bool useMinimalRebuildOptimization, bool maintainCompositeRootingMarkers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.#ctor(Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Utilities.CanonicalTrackedOutputFiles,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tlogFiles As ITaskItem(), sourceFiles As ITaskItem(), excludedInputPaths As ITaskItem(), outputs As CanonicalTrackedOutputFiles, useMinimalRebuildOptimization As Boolean, maintainCompositeRootingMarkers As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.CanonicalTrackedInputFiles : Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Utilities.CanonicalTrackedOutputFiles * bool * bool -&gt; Microsoft.Build.Utilities.CanonicalTrackedInputFiles" Usage="new Microsoft.Build.Utilities.CanonicalTrackedInputFiles (tlogFiles, sourceFiles, excludedInputPaths, outputs, useMinimalRebuildOptimization, maintainCompositeRootingMarkers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CanonicalTrackedInputFiles(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFiles, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ sourceFiles, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ excludedInputPaths, Microsoft::Build::Utilities::CanonicalTrackedOutputFiles ^ outputs, bool useMinimalRebuildOptimization, bool maintainCompositeRootingMarkers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -73,6 +91,9 @@
       <MemberSignature Language="C#" Value="public CanonicalTrackedInputFiles (Microsoft.Build.Framework.ITask ownerTask, Microsoft.Build.Framework.ITaskItem[] tlogFiles, Microsoft.Build.Framework.ITaskItem sourceFile, Microsoft.Build.Framework.ITaskItem[] excludedInputPaths, Microsoft.Build.Utilities.CanonicalTrackedOutputFiles outputs, bool useMinimalRebuildOptimization, bool maintainCompositeRootingMarkers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Framework.ITask ownerTask, class Microsoft.Build.Framework.ITaskItem[] tlogFiles, class Microsoft.Build.Framework.ITaskItem sourceFile, class Microsoft.Build.Framework.ITaskItem[] excludedInputPaths, class Microsoft.Build.Utilities.CanonicalTrackedOutputFiles outputs, bool useMinimalRebuildOptimization, bool maintainCompositeRootingMarkers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.#ctor(Microsoft.Build.Framework.ITask,Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem,Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Utilities.CanonicalTrackedOutputFiles,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ownerTask As ITask, tlogFiles As ITaskItem(), sourceFile As ITaskItem, excludedInputPaths As ITaskItem(), outputs As CanonicalTrackedOutputFiles, useMinimalRebuildOptimization As Boolean, maintainCompositeRootingMarkers As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.CanonicalTrackedInputFiles : Microsoft.Build.Framework.ITask * Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem * Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Utilities.CanonicalTrackedOutputFiles * bool * bool -&gt; Microsoft.Build.Utilities.CanonicalTrackedInputFiles" Usage="new Microsoft.Build.Utilities.CanonicalTrackedInputFiles (ownerTask, tlogFiles, sourceFile, excludedInputPaths, outputs, useMinimalRebuildOptimization, maintainCompositeRootingMarkers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CanonicalTrackedInputFiles(Microsoft::Build::Framework::ITask ^ ownerTask, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFiles, Microsoft::Build::Framework::ITaskItem ^ sourceFile, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ excludedInputPaths, Microsoft::Build::Utilities::CanonicalTrackedOutputFiles ^ outputs, bool useMinimalRebuildOptimization, bool maintainCompositeRootingMarkers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -103,6 +124,9 @@
       <MemberSignature Language="C#" Value="public CanonicalTrackedInputFiles (Microsoft.Build.Framework.ITask ownerTask, Microsoft.Build.Framework.ITaskItem[] tlogFiles, Microsoft.Build.Framework.ITaskItem[] sourceFiles, Microsoft.Build.Framework.ITaskItem[] excludedInputPaths, Microsoft.Build.Framework.ITaskItem[] outputs, bool useMinimalRebuildOptimization, bool maintainCompositeRootingMarkers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Framework.ITask ownerTask, class Microsoft.Build.Framework.ITaskItem[] tlogFiles, class Microsoft.Build.Framework.ITaskItem[] sourceFiles, class Microsoft.Build.Framework.ITaskItem[] excludedInputPaths, class Microsoft.Build.Framework.ITaskItem[] outputs, bool useMinimalRebuildOptimization, bool maintainCompositeRootingMarkers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.#ctor(Microsoft.Build.Framework.ITask,Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[],System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ownerTask As ITask, tlogFiles As ITaskItem(), sourceFiles As ITaskItem(), excludedInputPaths As ITaskItem(), outputs As ITaskItem(), useMinimalRebuildOptimization As Boolean, maintainCompositeRootingMarkers As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.CanonicalTrackedInputFiles : Microsoft.Build.Framework.ITask * Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] * bool * bool -&gt; Microsoft.Build.Utilities.CanonicalTrackedInputFiles" Usage="new Microsoft.Build.Utilities.CanonicalTrackedInputFiles (ownerTask, tlogFiles, sourceFiles, excludedInputPaths, outputs, useMinimalRebuildOptimization, maintainCompositeRootingMarkers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CanonicalTrackedInputFiles(Microsoft::Build::Framework::ITask ^ ownerTask, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFiles, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ sourceFiles, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ excludedInputPaths, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ outputs, bool useMinimalRebuildOptimization, bool maintainCompositeRootingMarkers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -133,6 +157,9 @@
       <MemberSignature Language="C#" Value="public CanonicalTrackedInputFiles (Microsoft.Build.Framework.ITask ownerTask, Microsoft.Build.Framework.ITaskItem[] tlogFiles, Microsoft.Build.Framework.ITaskItem[] sourceFiles, Microsoft.Build.Framework.ITaskItem[] excludedInputPaths, Microsoft.Build.Utilities.CanonicalTrackedOutputFiles outputs, bool useMinimalRebuildOptimization, bool maintainCompositeRootingMarkers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.Build.Framework.ITask ownerTask, class Microsoft.Build.Framework.ITaskItem[] tlogFiles, class Microsoft.Build.Framework.ITaskItem[] sourceFiles, class Microsoft.Build.Framework.ITaskItem[] excludedInputPaths, class Microsoft.Build.Utilities.CanonicalTrackedOutputFiles outputs, bool useMinimalRebuildOptimization, bool maintainCompositeRootingMarkers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.#ctor(Microsoft.Build.Framework.ITask,Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Utilities.CanonicalTrackedOutputFiles,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ownerTask As ITask, tlogFiles As ITaskItem(), sourceFiles As ITaskItem(), excludedInputPaths As ITaskItem(), outputs As CanonicalTrackedOutputFiles, useMinimalRebuildOptimization As Boolean, maintainCompositeRootingMarkers As Boolean)" />
+      <MemberSignature Language="F#" Value="new Microsoft.Build.Utilities.CanonicalTrackedInputFiles : Microsoft.Build.Framework.ITask * Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Utilities.CanonicalTrackedOutputFiles * bool * bool -&gt; Microsoft.Build.Utilities.CanonicalTrackedInputFiles" Usage="new Microsoft.Build.Utilities.CanonicalTrackedInputFiles (ownerTask, tlogFiles, sourceFiles, excludedInputPaths, outputs, useMinimalRebuildOptimization, maintainCompositeRootingMarkers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CanonicalTrackedInputFiles(Microsoft::Build::Framework::ITask ^ ownerTask, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ tlogFiles, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ sourceFiles, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ excludedInputPaths, Microsoft::Build::Utilities::CanonicalTrackedOutputFiles ^ outputs, bool useMinimalRebuildOptimization, bool maintainCompositeRootingMarkers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -159,10 +186,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ComputeSourcesNeedingCompilation">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This method computes the sources that need to be compiled based on the output files and the full dependency graph of inputs.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ComputeSourcesNeedingCompilation">
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ComputeSourcesNeedingCompilation ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Framework.ITaskItem[] ComputeSourcesNeedingCompilation() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.ComputeSourcesNeedingCompilation" />
+      <MemberSignature Language="VB.NET" Value="Public Function ComputeSourcesNeedingCompilation () As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.ComputeSourcesNeedingCompilation : unit -&gt; Microsoft.Build.Framework.ITaskItem[]" Usage="canonicalTrackedInputFiles.ComputeSourcesNeedingCompilation " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ComputeSourcesNeedingCompilation();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -182,6 +221,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ComputeSourcesNeedingCompilation (bool searchForSubRootsInCompositeRootingMarkers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Framework.ITaskItem[] ComputeSourcesNeedingCompilation(bool searchForSubRootsInCompositeRootingMarkers) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.ComputeSourcesNeedingCompilation(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ComputeSourcesNeedingCompilation (searchForSubRootsInCompositeRootingMarkers As Boolean) As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.ComputeSourcesNeedingCompilation : bool -&gt; Microsoft.Build.Framework.ITaskItem[]" Usage="canonicalTrackedInputFiles.ComputeSourcesNeedingCompilation searchForSubRootsInCompositeRootingMarkers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ComputeSourcesNeedingCompilation(bool searchForSubRootsInCompositeRootingMarkers);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -204,6 +246,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.Dictionary&lt;string,string&gt;&gt; DependencyTable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, class System.Collections.Generic.Dictionary`2&lt;string, string&gt;&gt; DependencyTable" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.DependencyTable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DependencyTable As Dictionary(Of String, Dictionary(Of String, String))" />
+      <MemberSignature Language="F#" Value="member this.DependencyTable : System.Collections.Generic.Dictionary&lt;string, System.Collections.Generic.Dictionary&lt;string, string&gt;&gt;" Usage="Microsoft.Build.Utilities.CanonicalTrackedInputFiles.DependencyTable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt; ^&gt; ^ DependencyTable { System::Collections::Generic::Dictionary&lt;System::String ^, System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt; ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -222,6 +267,9 @@
       <MemberSignature Language="C#" Value="public bool FileIsExcludedFromDependencyCheck (string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool FileIsExcludedFromDependencyCheck(string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.FileIsExcludedFromDependencyCheck(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FileIsExcludedFromDependencyCheck (fileName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.FileIsExcludedFromDependencyCheck : string -&gt; bool" Usage="canonicalTrackedInputFiles.FileIsExcludedFromDependencyCheck fileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool FileIsExcludedFromDependencyCheck(System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -240,10 +288,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveDependenciesFromEntryIfMissing">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Remove the output graph entries for the given sources and corresponding outputs.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveDependenciesFromEntryIfMissing">
       <MemberSignature Language="C#" Value="public void RemoveDependenciesFromEntryIfMissing (Microsoft.Build.Framework.ITaskItem source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveDependenciesFromEntryIfMissing(class Microsoft.Build.Framework.ITaskItem source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.RemoveDependenciesFromEntryIfMissing(Microsoft.Build.Framework.ITaskItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveDependenciesFromEntryIfMissing (source As ITaskItem)" />
+      <MemberSignature Language="F#" Value="member this.RemoveDependenciesFromEntryIfMissing : Microsoft.Build.Framework.ITaskItem -&gt; unit" Usage="canonicalTrackedInputFiles.RemoveDependenciesFromEntryIfMissing source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveDependenciesFromEntryIfMissing(Microsoft::Build::Framework::ITaskItem ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -265,6 +325,9 @@
       <MemberSignature Language="C#" Value="public void RemoveDependenciesFromEntryIfMissing (Microsoft.Build.Framework.ITaskItem[] source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveDependenciesFromEntryIfMissing(class Microsoft.Build.Framework.ITaskItem[] source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.RemoveDependenciesFromEntryIfMissing(Microsoft.Build.Framework.ITaskItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveDependenciesFromEntryIfMissing (source As ITaskItem())" />
+      <MemberSignature Language="F#" Value="member this.RemoveDependenciesFromEntryIfMissing : Microsoft.Build.Framework.ITaskItem[] -&gt; unit" Usage="canonicalTrackedInputFiles.RemoveDependenciesFromEntryIfMissing source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveDependenciesFromEntryIfMissing(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -286,6 +349,9 @@
       <MemberSignature Language="C#" Value="public void RemoveDependenciesFromEntryIfMissing (Microsoft.Build.Framework.ITaskItem source, Microsoft.Build.Framework.ITaskItem correspondingOutput);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveDependenciesFromEntryIfMissing(class Microsoft.Build.Framework.ITaskItem source, class Microsoft.Build.Framework.ITaskItem correspondingOutput) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.RemoveDependenciesFromEntryIfMissing(Microsoft.Build.Framework.ITaskItem,Microsoft.Build.Framework.ITaskItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveDependenciesFromEntryIfMissing (source As ITaskItem, correspondingOutput As ITaskItem)" />
+      <MemberSignature Language="F#" Value="member this.RemoveDependenciesFromEntryIfMissing : Microsoft.Build.Framework.ITaskItem * Microsoft.Build.Framework.ITaskItem -&gt; unit" Usage="canonicalTrackedInputFiles.RemoveDependenciesFromEntryIfMissing (source, correspondingOutput)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveDependenciesFromEntryIfMissing(Microsoft::Build::Framework::ITaskItem ^ source, Microsoft::Build::Framework::ITaskItem ^ correspondingOutput);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -309,6 +375,9 @@
       <MemberSignature Language="C#" Value="public void RemoveDependenciesFromEntryIfMissing (Microsoft.Build.Framework.ITaskItem[] source, Microsoft.Build.Framework.ITaskItem[] correspondingOutputs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveDependenciesFromEntryIfMissing(class Microsoft.Build.Framework.ITaskItem[] source, class Microsoft.Build.Framework.ITaskItem[] correspondingOutputs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.RemoveDependenciesFromEntryIfMissing(Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveDependenciesFromEntryIfMissing (source As ITaskItem(), correspondingOutputs As ITaskItem())" />
+      <MemberSignature Language="F#" Value="member this.RemoveDependenciesFromEntryIfMissing : Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem[] -&gt; unit" Usage="canonicalTrackedInputFiles.RemoveDependenciesFromEntryIfMissing (source, correspondingOutputs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveDependenciesFromEntryIfMissing(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ source, cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ correspondingOutputs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -328,10 +397,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveDependencyFromEntry">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Remove the output graph entries for the given source and corresponding outputs.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveDependencyFromEntry">
       <MemberSignature Language="C#" Value="public void RemoveDependencyFromEntry (Microsoft.Build.Framework.ITaskItem source, Microsoft.Build.Framework.ITaskItem dependencyToRemove);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveDependencyFromEntry(class Microsoft.Build.Framework.ITaskItem source, class Microsoft.Build.Framework.ITaskItem dependencyToRemove) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.RemoveDependencyFromEntry(Microsoft.Build.Framework.ITaskItem,Microsoft.Build.Framework.ITaskItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveDependencyFromEntry (source As ITaskItem, dependencyToRemove As ITaskItem)" />
+      <MemberSignature Language="F#" Value="member this.RemoveDependencyFromEntry : Microsoft.Build.Framework.ITaskItem * Microsoft.Build.Framework.ITaskItem -&gt; unit" Usage="canonicalTrackedInputFiles.RemoveDependencyFromEntry (source, dependencyToRemove)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveDependencyFromEntry(Microsoft::Build::Framework::ITaskItem ^ source, Microsoft::Build::Framework::ITaskItem ^ dependencyToRemove);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -355,6 +436,9 @@
       <MemberSignature Language="C#" Value="public void RemoveDependencyFromEntry (Microsoft.Build.Framework.ITaskItem[] sources, Microsoft.Build.Framework.ITaskItem dependencyToRemove);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveDependencyFromEntry(class Microsoft.Build.Framework.ITaskItem[] sources, class Microsoft.Build.Framework.ITaskItem dependencyToRemove) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.RemoveDependencyFromEntry(Microsoft.Build.Framework.ITaskItem[],Microsoft.Build.Framework.ITaskItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveDependencyFromEntry (sources As ITaskItem(), dependencyToRemove As ITaskItem)" />
+      <MemberSignature Language="F#" Value="member this.RemoveDependencyFromEntry : Microsoft.Build.Framework.ITaskItem[] * Microsoft.Build.Framework.ITaskItem -&gt; unit" Usage="canonicalTrackedInputFiles.RemoveDependencyFromEntry (sources, dependencyToRemove)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveDependencyFromEntry(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ sources, Microsoft::Build::Framework::ITaskItem ^ dependencyToRemove);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -374,10 +458,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveEntriesForSource">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the output graph entries for the given sources and corresponding outputs.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveEntriesForSource">
       <MemberSignature Language="C#" Value="public void RemoveEntriesForSource (Microsoft.Build.Framework.ITaskItem source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveEntriesForSource(class Microsoft.Build.Framework.ITaskItem source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.RemoveEntriesForSource(Microsoft.Build.Framework.ITaskItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveEntriesForSource (source As ITaskItem)" />
+      <MemberSignature Language="F#" Value="member this.RemoveEntriesForSource : Microsoft.Build.Framework.ITaskItem -&gt; unit" Usage="canonicalTrackedInputFiles.RemoveEntriesForSource source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveEntriesForSource(Microsoft::Build::Framework::ITaskItem ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -399,6 +495,9 @@
       <MemberSignature Language="C#" Value="public void RemoveEntriesForSource (Microsoft.Build.Framework.ITaskItem[] source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveEntriesForSource(class Microsoft.Build.Framework.ITaskItem[] source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.RemoveEntriesForSource(Microsoft.Build.Framework.ITaskItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveEntriesForSource (source As ITaskItem())" />
+      <MemberSignature Language="F#" Value="member this.RemoveEntriesForSource : Microsoft.Build.Framework.ITaskItem[] -&gt; unit" Usage="canonicalTrackedInputFiles.RemoveEntriesForSource source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveEntriesForSource(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -420,6 +519,9 @@
       <MemberSignature Language="C#" Value="public void RemoveEntryForSourceRoot (string rootingMarker);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveEntryForSourceRoot(string rootingMarker) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.RemoveEntryForSourceRoot(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveEntryForSourceRoot (rootingMarker As String)" />
+      <MemberSignature Language="F#" Value="member this.RemoveEntryForSourceRoot : string -&gt; unit" Usage="canonicalTrackedInputFiles.RemoveEntryForSourceRoot rootingMarker" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveEntryForSourceRoot(System::String ^ rootingMarker);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -437,10 +539,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SaveTlog">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>This method will re-write the tlogs from the current output table new entries will be tracked.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SaveTlog">
       <MemberSignature Language="C#" Value="public void SaveTlog ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveTlog() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.SaveTlog" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveTlog ()" />
+      <MemberSignature Language="F#" Value="member this.SaveTlog : unit -&gt; unit" Usage="canonicalTrackedInputFiles.SaveTlog " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveTlog();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -459,6 +573,9 @@
       <MemberSignature Language="C#" Value="public void SaveTlog (Microsoft.Build.Utilities.DependencyFilter includeInTLog);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveTlog(class Microsoft.Build.Utilities.DependencyFilter includeInTLog) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Utilities.CanonicalTrackedInputFiles.SaveTlog(Microsoft.Build.Utilities.DependencyFilter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveTlog (includeInTLog As DependencyFilter)" />
+      <MemberSignature Language="F#" Value="member this.SaveTlog : Microsoft.Build.Utilities.DependencyFilter -&gt; unit" Usage="canonicalTrackedInputFiles.SaveTlog includeInTLog" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveTlog(Microsoft::Build::Utilities::DependencyFilter ^ includeInTLog);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
@@ -476,59 +593,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ComputeSourcesNeedingCompilation">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>This method computes the sources that need to be compiled based on the output files and the full dependency graph of inputs.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveDependenciesFromEntryIfMissing">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Remove the output graph entries for the given sources and corresponding outputs.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SaveTlog">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>This method will re-write the tlogs from the current output table new entries will be tracked.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveEntriesForSource">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the output graph entries for the given sources and corresponding outputs.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveDependencyFromEntry">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Remove the output graph entries for the given source and corresponding outputs.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Utilities.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Constructor for multiple input source files</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="DataSpace" FullName="System.Data.Metadata.Edm.DataSpace">
+﻿<Type Name="DataSpace" FullName="System.Data.Metadata.Edm.DataSpace">
   <TypeSignature Language="C#" Value="public enum DataSpace" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataSpace extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.DataSpace" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataSpace" />
+  <TypeSignature Language="F#" Value="type DataSpace = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataSpace" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="CSpace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.DataSpace CSpace = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.DataSpace.CSpace" />
+      <MemberSignature Language="VB.NET" Value="CSpace" />
+      <MemberSignature Language="F#" Value="CSpace = 1" Usage="System.Data.Metadata.Edm.DataSpace.CSpace" />
+      <MemberSignature Language="C++ CLI" Value="CSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.DataSpace</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Represents the default name for the conceptual model.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="CSSpace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.DataSpace CSSpace = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.DataSpace.CSSpace" />
+      <MemberSignature Language="VB.NET" Value="CSSpace" />
+      <MemberSignature Language="F#" Value="CSSpace = 4" Usage="System.Data.Metadata.Edm.DataSpace.CSSpace" />
+      <MemberSignature Language="C++ CLI" Value="CSSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.DataSpace</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Represents the default name for the mapping between the conceptual model and the storage model.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="OCSpace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.DataSpace OCSpace = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.DataSpace.OCSpace" />
+      <MemberSignature Language="VB.NET" Value="OCSpace" />
+      <MemberSignature Language="F#" Value="OCSpace = 3" Usage="System.Data.Metadata.Edm.DataSpace.OCSpace" />
+      <MemberSignature Language="C++ CLI" Value="OCSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.DataSpace</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Represents the default name for the mapping between the object model and the conceptual model.</summary>
       </Docs>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="OSpace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.DataSpace OSpace = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.DataSpace.OSpace" />
+      <MemberSignature Language="VB.NET" Value="OSpace" />
+      <MemberSignature Language="F#" Value="OSpace = 0" Usage="System.Data.Metadata.Edm.DataSpace.OSpace" />
+      <MemberSignature Language="C++ CLI" Value="OSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -81,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.DataSpace</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Represents the default name for the object model.</summary>
       </Docs>
@@ -89,6 +108,9 @@
       <MemberSignature Language="C#" Value="SSpace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Metadata.Edm.DataSpace SSpace = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Metadata.Edm.DataSpace.SSpace" />
+      <MemberSignature Language="VB.NET" Value="SSpace" />
+      <MemberSignature Language="F#" Value="SSpace = 2" Usage="System.Data.Metadata.Edm.DataSpace.SSpace" />
+      <MemberSignature Language="C++ CLI" Value="SSpace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -97,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Metadata.Edm.DataSpace</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Represents the default name for the storage model.</summary>
       </Docs>

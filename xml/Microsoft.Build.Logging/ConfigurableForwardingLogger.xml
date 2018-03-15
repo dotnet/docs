@@ -1,7 +1,10 @@
-<Type Name="ConfigurableForwardingLogger" FullName="Microsoft.Build.Logging.ConfigurableForwardingLogger">
+﻿<Type Name="ConfigurableForwardingLogger" FullName="Microsoft.Build.Logging.ConfigurableForwardingLogger">
   <TypeSignature Language="C#" Value="public class ConfigurableForwardingLogger : Microsoft.Build.Framework.IForwardingLogger" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ConfigurableForwardingLogger extends System.Object implements class Microsoft.Build.Framework.IForwardingLogger, class Microsoft.Build.Framework.ILogger, class Microsoft.Build.Framework.INodeLogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Logging.ConfigurableForwardingLogger" />
+  <TypeSignature Language="VB.NET" Value="Public Class ConfigurableForwardingLogger&#xA;Implements IForwardingLogger" />
+  <TypeSignature Language="F#" Value="type ConfigurableForwardingLogger = class&#xA;    interface IForwardingLogger&#xA;    interface INodeLogger&#xA;    interface ILogger" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConfigurableForwardingLogger : Microsoft::Build::Framework::IForwardingLogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,8 @@
       <MemberSignature Language="C#" Value="public ConfigurableForwardingLogger ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConfigurableForwardingLogger.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ConfigurableForwardingLogger();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -38,7 +43,13 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.IEventRedirector BuildEventRedirector { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.IEventRedirector BuildEventRedirector" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Logging.ConfigurableForwardingLogger.BuildEventRedirector" />
+      <MemberSignature Language="VB.NET" Value="Public Property BuildEventRedirector As IEventRedirector" />
+      <MemberSignature Language="F#" Value="member this.BuildEventRedirector : Microsoft.Build.Framework.IEventRedirector with get, set" Usage="Microsoft.Build.Logging.ConfigurableForwardingLogger.BuildEventRedirector" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::IEventRedirector ^ BuildEventRedirector { Microsoft::Build::Framework::IEventRedirector ^ get(); void set(Microsoft::Build::Framework::IEventRedirector ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Framework.IForwardingLogger.BuildEventRedirector</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +67,9 @@
       <MemberSignature Language="C#" Value="protected virtual void ForwardToCentralLogger (Microsoft.Build.Framework.BuildEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ForwardToCentralLogger(class Microsoft.Build.Framework.BuildEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConfigurableForwardingLogger.ForwardToCentralLogger(Microsoft.Build.Framework.BuildEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ForwardToCentralLogger (e As BuildEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member ForwardToCentralLogger : Microsoft.Build.Framework.BuildEventArgs -&gt; unit&#xA;override this.ForwardToCentralLogger : Microsoft.Build.Framework.BuildEventArgs -&gt; unit" Usage="configurableForwardingLogger.ForwardToCentralLogger e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ForwardToCentralLogger(Microsoft::Build::Framework::BuildEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -73,11 +87,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Initialize">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes the logger.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Initialize">
       <MemberSignature Language="C#" Value="public virtual void Initialize (Microsoft.Build.Framework.IEventSource eventSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class Microsoft.Build.Framework.IEventSource eventSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConfigurableForwardingLogger.Initialize(Microsoft.Build.Framework.IEventSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Initialize (eventSource As IEventSource)" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : Microsoft.Build.Framework.IEventSource -&gt; unit&#xA;override this.Initialize : Microsoft.Build.Framework.IEventSource -&gt; unit" Usage="configurableForwardingLogger.Initialize eventSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.ILogger.Initialize(Microsoft.Build.Framework.IEventSource)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -98,7 +127,13 @@
       <MemberSignature Language="C#" Value="public void Initialize (Microsoft.Build.Framework.IEventSource eventSource, int nodeCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class Microsoft.Build.Framework.IEventSource eventSource, int32 nodeCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConfigurableForwardingLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (eventSource As IEventSource, nodeCount As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : Microsoft.Build.Framework.IEventSource * int -&gt; unit&#xA;override this.Initialize : Microsoft.Build.Framework.IEventSource * int -&gt; unit" Usage="configurableForwardingLogger.Initialize (eventSource, nodeCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource, int nodeCount);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.INodeLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -121,7 +156,13 @@
       <MemberSignature Language="C#" Value="public int NodeId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NodeId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Logging.ConfigurableForwardingLogger.NodeId" />
+      <MemberSignature Language="VB.NET" Value="Public Property NodeId As Integer" />
+      <MemberSignature Language="F#" Value="member this.NodeId : int with get, set" Usage="Microsoft.Build.Logging.ConfigurableForwardingLogger.NodeId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NodeId { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Framework.IForwardingLogger.NodeId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -139,7 +180,13 @@
       <MemberSignature Language="C#" Value="public string Parameters { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Parameters" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Logging.ConfigurableForwardingLogger.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parameters As String" />
+      <MemberSignature Language="F#" Value="member this.Parameters : string with get, set" Usage="Microsoft.Build.Logging.ConfigurableForwardingLogger.Parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Parameters { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Framework.ILogger.Parameters</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -157,7 +204,13 @@
       <MemberSignature Language="C#" Value="public virtual void Shutdown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Shutdown() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Logging.ConfigurableForwardingLogger.Shutdown" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Shutdown ()" />
+      <MemberSignature Language="F#" Value="abstract member Shutdown : unit -&gt; unit&#xA;override this.Shutdown : unit -&gt; unit" Usage="configurableForwardingLogger.Shutdown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Shutdown();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.ILogger.Shutdown</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -175,7 +228,13 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.LoggerVerbosity Verbosity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Framework.LoggerVerbosity Verbosity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Logging.ConfigurableForwardingLogger.Verbosity" />
+      <MemberSignature Language="VB.NET" Value="Public Property Verbosity As LoggerVerbosity" />
+      <MemberSignature Language="F#" Value="member this.Verbosity : Microsoft.Build.Framework.LoggerVerbosity with get, set" Usage="Microsoft.Build.Logging.ConfigurableForwardingLogger.Verbosity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::LoggerVerbosity Verbosity { Microsoft::Build::Framework::LoggerVerbosity get(); void set(Microsoft::Build::Framework::LoggerVerbosity value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Framework.ILogger.Verbosity</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -189,14 +248,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Initialize">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes the logger.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

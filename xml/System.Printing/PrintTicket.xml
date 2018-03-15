@@ -1,7 +1,10 @@
-<Type Name="PrintTicket" FullName="System.Printing.PrintTicket">
+﻿<Type Name="PrintTicket" FullName="System.Printing.PrintTicket">
   <TypeSignature Language="C#" Value="public sealed class PrintTicket : System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintTicket extends System.Object implements class System.ComponentModel.INotifyPropertyChanged" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintTicket" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrintTicket&#xA;Implements INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type PrintTicket = class&#xA;    interface INotifyPropertyChanged" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintTicket sealed : System::ComponentModel::INotifyPropertyChanged" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,10 +49,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintTicket" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PrintTicket ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintTicket.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintTicket();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -75,6 +89,9 @@
       <MemberSignature Language="C#" Value="public PrintTicket (System.IO.Stream xmlStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream xmlStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintTicket.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (xmlStream As Stream)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintTicket : System.IO.Stream -&gt; System.Printing.PrintTicket" Usage="new System.Printing.PrintTicket xmlStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintTicket(System::IO::Stream ^ xmlStream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -112,6 +129,9 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintTicket Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Printing.PrintTicket Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintTicket.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As PrintTicket" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Printing.PrintTicket" Usage="printTicket.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Printing::PrintTicket ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -131,6 +151,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.Collation&gt; Collation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.Collation&gt; Collation" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.Collation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Collation As Nullable(Of Collation)" />
+      <MemberSignature Language="F#" Value="member this.Collation : Nullable&lt;System.Printing.Collation&gt; with get, set" Usage="System.Printing.PrintTicket.Collation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::Collation&gt; Collation { Nullable&lt;System::Printing::Collation&gt; get(); void set(Nullable&lt;System::Printing::Collation&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -170,6 +193,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; CopyCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; CopyCount" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.CopyCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property CopyCount As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyCount : Nullable&lt;int&gt; with get, set" Usage="System.Printing.PrintTicket.CopyCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; CopyCount { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -200,6 +226,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.DeviceFontSubstitution&gt; DeviceFontSubstitution { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.DeviceFontSubstitution&gt; DeviceFontSubstitution" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.DeviceFontSubstitution" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeviceFontSubstitution As Nullable(Of DeviceFontSubstitution)" />
+      <MemberSignature Language="F#" Value="member this.DeviceFontSubstitution : Nullable&lt;System.Printing.DeviceFontSubstitution&gt; with get, set" Usage="System.Printing.PrintTicket.DeviceFontSubstitution" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::DeviceFontSubstitution&gt; DeviceFontSubstitution { Nullable&lt;System::Printing::DeviceFontSubstitution&gt; get(); void set(Nullable&lt;System::Printing::DeviceFontSubstitution&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -230,6 +259,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.Duplexing&gt; Duplexing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.Duplexing&gt; Duplexing" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.Duplexing" />
+      <MemberSignature Language="VB.NET" Value="Public Property Duplexing As Nullable(Of Duplexing)" />
+      <MemberSignature Language="F#" Value="member this.Duplexing : Nullable&lt;System.Printing.Duplexing&gt; with get, set" Usage="System.Printing.PrintTicket.Duplexing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::Duplexing&gt; Duplexing { Nullable&lt;System::Printing::Duplexing&gt; get(); void set(Nullable&lt;System::Printing::Duplexing&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -268,6 +300,9 @@
       <MemberSignature Language="C#" Value="public System.IO.MemoryStream GetXmlStream ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.MemoryStream GetXmlStream() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintTicket.GetXmlStream" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetXmlStream () As MemoryStream" />
+      <MemberSignature Language="F#" Value="member this.GetXmlStream : unit -&gt; System.IO.MemoryStream" Usage="printTicket.GetXmlStream " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::MemoryStream ^ GetXmlStream();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -296,6 +331,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.InputBin&gt; InputBin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.InputBin&gt; InputBin" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.InputBin" />
+      <MemberSignature Language="VB.NET" Value="Public Property InputBin As Nullable(Of InputBin)" />
+      <MemberSignature Language="F#" Value="member this.InputBin : Nullable&lt;System.Printing.InputBin&gt; with get, set" Usage="System.Printing.PrintTicket.InputBin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::InputBin&gt; InputBin { Nullable&lt;System::Printing::InputBin&gt; get(); void set(Nullable&lt;System::Printing::InputBin&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -334,6 +372,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.OutputColor&gt; OutputColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.OutputColor&gt; OutputColor" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.OutputColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputColor As Nullable(Of OutputColor)" />
+      <MemberSignature Language="F#" Value="member this.OutputColor : Nullable&lt;System.Printing.OutputColor&gt; with get, set" Usage="System.Printing.PrintTicket.OutputColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::OutputColor&gt; OutputColor { Nullable&lt;System::Printing::OutputColor&gt; get(); void set(Nullable&lt;System::Printing::OutputColor&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -372,6 +413,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.OutputQuality&gt; OutputQuality { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.OutputQuality&gt; OutputQuality" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.OutputQuality" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputQuality As Nullable(Of OutputQuality)" />
+      <MemberSignature Language="F#" Value="member this.OutputQuality : Nullable&lt;System.Printing.OutputQuality&gt; with get, set" Usage="System.Printing.PrintTicket.OutputQuality" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::OutputQuality&gt; OutputQuality { Nullable&lt;System::Printing::OutputQuality&gt; get(); void set(Nullable&lt;System::Printing::OutputQuality&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -402,6 +446,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.PageBorderless&gt; PageBorderless { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.PageBorderless&gt; PageBorderless" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PageBorderless" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageBorderless As Nullable(Of PageBorderless)" />
+      <MemberSignature Language="F#" Value="member this.PageBorderless : Nullable&lt;System.Printing.PageBorderless&gt; with get, set" Usage="System.Printing.PrintTicket.PageBorderless" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::PageBorderless&gt; PageBorderless { Nullable&lt;System::Printing::PageBorderless&gt; get(); void set(Nullable&lt;System::Printing::PageBorderless&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -432,6 +479,9 @@
       <MemberSignature Language="C#" Value="public System.Printing.PageMediaSize PageMediaSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PageMediaSize PageMediaSize" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PageMediaSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageMediaSize As PageMediaSize" />
+      <MemberSignature Language="F#" Value="member this.PageMediaSize : System.Printing.PageMediaSize with get, set" Usage="System.Printing.PrintTicket.PageMediaSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PageMediaSize ^ PageMediaSize { System::Printing::PageMediaSize ^ get(); void set(System::Printing::PageMediaSize ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -476,6 +526,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.PageMediaType&gt; PageMediaType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.PageMediaType&gt; PageMediaType" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PageMediaType" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageMediaType As Nullable(Of PageMediaType)" />
+      <MemberSignature Language="F#" Value="member this.PageMediaType : Nullable&lt;System.Printing.PageMediaType&gt; with get, set" Usage="System.Printing.PrintTicket.PageMediaType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::PageMediaType&gt; PageMediaType { Nullable&lt;System::Printing::PageMediaType&gt; get(); void set(Nullable&lt;System::Printing::PageMediaType&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -506,6 +559,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.PageOrder&gt; PageOrder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.PageOrder&gt; PageOrder" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PageOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageOrder As Nullable(Of PageOrder)" />
+      <MemberSignature Language="F#" Value="member this.PageOrder : Nullable&lt;System.Printing.PageOrder&gt; with get, set" Usage="System.Printing.PrintTicket.PageOrder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::PageOrder&gt; PageOrder { Nullable&lt;System::Printing::PageOrder&gt; get(); void set(Nullable&lt;System::Printing::PageOrder&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -536,6 +592,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.PageOrientation&gt; PageOrientation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.PageOrientation&gt; PageOrientation" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PageOrientation" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageOrientation As Nullable(Of PageOrientation)" />
+      <MemberSignature Language="F#" Value="member this.PageOrientation : Nullable&lt;System.Printing.PageOrientation&gt; with get, set" Usage="System.Printing.PrintTicket.PageOrientation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::PageOrientation&gt; PageOrientation { Nullable&lt;System::Printing::PageOrientation&gt; get(); void set(Nullable&lt;System::Printing::PageOrientation&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -574,6 +633,9 @@
       <MemberSignature Language="C#" Value="public System.Printing.PageResolution PageResolution { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PageResolution PageResolution" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PageResolution" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageResolution As PageResolution" />
+      <MemberSignature Language="F#" Value="member this.PageResolution : System.Printing.PageResolution with get, set" Usage="System.Printing.PrintTicket.PageResolution" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PageResolution ^ PageResolution { System::Printing::PageResolution ^ get(); void set(System::Printing::PageResolution ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -613,6 +675,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; PageScalingFactor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; PageScalingFactor" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PageScalingFactor" />
+      <MemberSignature Language="VB.NET" Value="Public Property PageScalingFactor As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.PageScalingFactor : Nullable&lt;int&gt; with get, set" Usage="System.Printing.PrintTicket.PageScalingFactor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; PageScalingFactor { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -657,6 +722,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; PagesPerSheet { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; PagesPerSheet" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PagesPerSheet" />
+      <MemberSignature Language="VB.NET" Value="Public Property PagesPerSheet As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.PagesPerSheet : Nullable&lt;int&gt; with get, set" Usage="System.Printing.PrintTicket.PagesPerSheet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; PagesPerSheet { Nullable&lt;int&gt; get(); void set(Nullable&lt;int&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -689,6 +757,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.PagesPerSheetDirection&gt; PagesPerSheetDirection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.PagesPerSheetDirection&gt; PagesPerSheetDirection" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PagesPerSheetDirection" />
+      <MemberSignature Language="VB.NET" Value="Public Property PagesPerSheetDirection As Nullable(Of PagesPerSheetDirection)" />
+      <MemberSignature Language="F#" Value="member this.PagesPerSheetDirection : Nullable&lt;System.Printing.PagesPerSheetDirection&gt; with get, set" Usage="System.Printing.PrintTicket.PagesPerSheetDirection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::PagesPerSheetDirection&gt; PagesPerSheetDirection { Nullable&lt;System::Printing::PagesPerSheetDirection&gt; get(); void set(Nullable&lt;System::Printing::PagesPerSheetDirection&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -721,6 +792,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.PhotoPrintingIntent&gt; PhotoPrintingIntent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.PhotoPrintingIntent&gt; PhotoPrintingIntent" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.PhotoPrintingIntent" />
+      <MemberSignature Language="VB.NET" Value="Public Property PhotoPrintingIntent As Nullable(Of PhotoPrintingIntent)" />
+      <MemberSignature Language="F#" Value="member this.PhotoPrintingIntent : Nullable&lt;System.Printing.PhotoPrintingIntent&gt; with get, set" Usage="System.Printing.PrintTicket.PhotoPrintingIntent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::PhotoPrintingIntent&gt; PhotoPrintingIntent { Nullable&lt;System::Printing::PhotoPrintingIntent&gt; get(); void set(Nullable&lt;System::Printing::PhotoPrintingIntent&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -753,6 +827,9 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler PropertyChanged" />
       <MemberSignature Language="DocId" Value="E:System.Printing.PrintTicket.PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event PropertyChanged As PropertyChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " Usage="member this.PropertyChanged : System.ComponentModel.PropertyChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::PropertyChangedEventHandler ^ PropertyChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -770,6 +847,9 @@
       <MemberSignature Language="C#" Value="public void SaveTo (System.IO.Stream outStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveTo(class System.IO.Stream outStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintTicket.SaveTo(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveTo (outStream As Stream)" />
+      <MemberSignature Language="F#" Value="member this.SaveTo : System.IO.Stream -&gt; unit" Usage="printTicket.SaveTo outStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveTo(System::IO::Stream ^ outStream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -802,6 +882,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.Stapling&gt; Stapling { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.Stapling&gt; Stapling" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.Stapling" />
+      <MemberSignature Language="VB.NET" Value="Public Property Stapling As Nullable(Of Stapling)" />
+      <MemberSignature Language="F#" Value="member this.Stapling : Nullable&lt;System.Printing.Stapling&gt; with get, set" Usage="System.Printing.PrintTicket.Stapling" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::Stapling&gt; Stapling { Nullable&lt;System::Printing::Stapling&gt; get(); void set(Nullable&lt;System::Printing::Stapling&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -843,6 +926,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;System.Printing.TrueTypeFontMode&gt; TrueTypeFontMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype System.Printing.TrueTypeFontMode&gt; TrueTypeFontMode" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintTicket.TrueTypeFontMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrueTypeFontMode As Nullable(Of TrueTypeFontMode)" />
+      <MemberSignature Language="F#" Value="member this.TrueTypeFontMode : Nullable&lt;System.Printing.TrueTypeFontMode&gt; with get, set" Usage="System.Printing.PrintTicket.TrueTypeFontMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;System::Printing::TrueTypeFontMode&gt; TrueTypeFontMode { Nullable&lt;System::Printing::TrueTypeFontMode&gt; get(); void set(Nullable&lt;System::Printing::TrueTypeFontMode&gt; value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -869,14 +955,5 @@
         <exception cref="T:System.ArgumentOutOfRangeException">Calling code has attempted to set the property to a value that is not in the <see cref="T:System.Printing.TrueTypeFontMode" /> enumeration.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintTicket" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

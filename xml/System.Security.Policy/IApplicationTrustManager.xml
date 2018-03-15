@@ -1,7 +1,10 @@
-<Type Name="IApplicationTrustManager" FullName="System.Security.Policy.IApplicationTrustManager">
+﻿<Type Name="IApplicationTrustManager" FullName="System.Security.Policy.IApplicationTrustManager">
   <TypeSignature Language="C#" Value="public interface IApplicationTrustManager : System.Security.ISecurityEncodable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IApplicationTrustManager implements class System.Security.ISecurityEncodable" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.IApplicationTrustManager" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IApplicationTrustManager&#xA;Implements ISecurityEncodable" />
+  <TypeSignature Language="F#" Value="type IApplicationTrustManager = interface&#xA;    interface ISecurityEncodable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IApplicationTrustManager : System::Security::ISecurityEncodable" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public System.Security.Policy.ApplicationTrust DetermineApplicationTrust (ActivationContext activationContext, System.Security.Policy.TrustManagerContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Security.Policy.ApplicationTrust DetermineApplicationTrust(class System.ActivationContext activationContext, class System.Security.Policy.TrustManagerContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.IApplicationTrustManager.DetermineApplicationTrust(System.ActivationContext,System.Security.Policy.TrustManagerContext)" />
+      <MemberSignature Language="F#" Value="abstract member DetermineApplicationTrust : ActivationContext * System.Security.Policy.TrustManagerContext -&gt; System.Security.Policy.ApplicationTrust" Usage="iApplicationTrustManager.DetermineApplicationTrust (activationContext, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::Policy::ApplicationTrust ^ DetermineApplicationTrust(ActivationContext ^ activationContext, System::Security::Policy::TrustManagerContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

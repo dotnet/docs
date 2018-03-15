@@ -1,7 +1,10 @@
-<Type Name="BindingManagerDataErrorEventHandler" FullName="System.Windows.Forms.BindingManagerDataErrorEventHandler">
+﻿<Type Name="BindingManagerDataErrorEventHandler" FullName="System.Windows.Forms.BindingManagerDataErrorEventHandler">
   <TypeSignature Language="C#" Value="public delegate void BindingManagerDataErrorEventHandler(object sender, BindingManagerDataErrorEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BindingManagerDataErrorEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingManagerDataErrorEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub BindingManagerDataErrorEventHandler(sender As Object, e As BindingManagerDataErrorEventArgs)" />
+  <TypeSignature Language="F#" Value="type BindingManagerDataErrorEventHandler = delegate of obj * BindingManagerDataErrorEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void BindingManagerDataErrorEventHandler(System::Object ^ sender, BindingManagerDataErrorEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

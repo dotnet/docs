@@ -1,7 +1,10 @@
-<Type Name="SoapTypeAttribute" FullName="System.Runtime.Remoting.Metadata.SoapTypeAttribute">
+﻿<Type Name="SoapTypeAttribute" FullName="System.Runtime.Remoting.Metadata.SoapTypeAttribute">
   <TypeSignature Language="C#" Value="public sealed class SoapTypeAttribute : System.Runtime.Remoting.Metadata.SoapAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapTypeAttribute extends System.Runtime.Remoting.Metadata.SoapAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.SoapTypeAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapTypeAttribute&#xA;Inherits SoapAttribute" />
+  <TypeSignature Language="F#" Value="type SoapTypeAttribute = class&#xA;    inherit SoapAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapTypeAttribute sealed : System::Runtime::Remoting::Metadata::SoapAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="public SoapTypeAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.SoapTypeAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapTypeAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -60,6 +65,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Metadata.SoapOption SoapOptions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Remoting.Metadata.SoapOption SoapOptions" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapTypeAttribute.SoapOptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property SoapOptions As SoapOption" />
+      <MemberSignature Language="F#" Value="member this.SoapOptions : System.Runtime.Remoting.Metadata.SoapOption with get, set" Usage="System.Runtime.Remoting.Metadata.SoapTypeAttribute.SoapOptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Metadata::SoapOption SoapOptions { System::Runtime::Remoting::Metadata::SoapOption get(); void set(System::Runtime::Remoting::Metadata::SoapOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -89,6 +97,9 @@
       <MemberSignature Language="C#" Value="public override bool UseAttribute { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapTypeAttribute.UseAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property UseAttribute As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseAttribute : bool with get, set" Usage="System.Runtime.Remoting.Metadata.SoapTypeAttribute.UseAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool UseAttribute { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -116,6 +127,9 @@
       <MemberSignature Language="C#" Value="public string XmlElementName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlElementName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapTypeAttribute.XmlElementName" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlElementName As String" />
+      <MemberSignature Language="F#" Value="member this.XmlElementName : string with get, set" Usage="System.Runtime.Remoting.Metadata.SoapTypeAttribute.XmlElementName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlElementName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -135,6 +149,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Metadata.XmlFieldOrderOption XmlFieldOrder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Remoting.Metadata.XmlFieldOrderOption XmlFieldOrder" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapTypeAttribute.XmlFieldOrder" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlFieldOrder As XmlFieldOrderOption" />
+      <MemberSignature Language="F#" Value="member this.XmlFieldOrder : System.Runtime.Remoting.Metadata.XmlFieldOrderOption with get, set" Usage="System.Runtime.Remoting.Metadata.SoapTypeAttribute.XmlFieldOrder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::Metadata::XmlFieldOrderOption XmlFieldOrder { System::Runtime::Remoting::Metadata::XmlFieldOrderOption get(); void set(System::Runtime::Remoting::Metadata::XmlFieldOrderOption value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -154,6 +171,9 @@
       <MemberSignature Language="C#" Value="public override string XmlNamespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapTypeAttribute.XmlNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property XmlNamespace As String" />
+      <MemberSignature Language="F#" Value="member this.XmlNamespace : string with get, set" Usage="System.Runtime.Remoting.Metadata.SoapTypeAttribute.XmlNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ XmlNamespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -173,6 +193,9 @@
       <MemberSignature Language="C#" Value="public string XmlTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapTypeAttribute.XmlTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlTypeName As String" />
+      <MemberSignature Language="F#" Value="member this.XmlTypeName : string with get, set" Usage="System.Runtime.Remoting.Metadata.SoapTypeAttribute.XmlTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlTypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -192,6 +215,9 @@
       <MemberSignature Language="C#" Value="public string XmlTypeNamespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string XmlTypeNamespace" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.SoapTypeAttribute.XmlTypeNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property XmlTypeNamespace As String" />
+      <MemberSignature Language="F#" Value="member this.XmlTypeNamespace : string with get, set" Usage="System.Runtime.Remoting.Metadata.SoapTypeAttribute.XmlTypeNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XmlTypeNamespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

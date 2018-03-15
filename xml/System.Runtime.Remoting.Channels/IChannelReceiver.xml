@@ -1,7 +1,10 @@
-<Type Name="IChannelReceiver" FullName="System.Runtime.Remoting.Channels.IChannelReceiver">
+﻿<Type Name="IChannelReceiver" FullName="System.Runtime.Remoting.Channels.IChannelReceiver">
   <TypeSignature Language="C#" Value="public interface IChannelReceiver : System.Runtime.Remoting.Channels.IChannel" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IChannelReceiver implements class System.Runtime.Remoting.Channels.IChannel" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IChannelReceiver" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IChannelReceiver&#xA;Implements IChannel" />
+  <TypeSignature Language="F#" Value="type IChannelReceiver = interface&#xA;    interface IChannel" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IChannelReceiver : System::Runtime::Remoting::Channels::IChannel" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +43,9 @@
       <MemberSignature Language="C#" Value="public object ChannelData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ChannelData" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Channels.IChannelReceiver.ChannelData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChannelData As Object" />
+      <MemberSignature Language="F#" Value="member this.ChannelData : obj" Usage="System.Runtime.Remoting.Channels.IChannelReceiver.ChannelData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ChannelData { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -68,6 +74,9 @@
       <MemberSignature Language="C#" Value="public string[] GetUrlsForUri (string objectURI);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string[] GetUrlsForUri(string objectURI) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IChannelReceiver.GetUrlsForUri(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetUrlsForUri (objectURI As String) As String()" />
+      <MemberSignature Language="F#" Value="abstract member GetUrlsForUri : string -&gt; string[]" Usage="iChannelReceiver.GetUrlsForUri objectURI" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::String ^&gt; ^ GetUrlsForUri(System::String ^ objectURI);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -107,6 +116,9 @@
       <MemberSignature Language="C#" Value="public void StartListening (object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StartListening(object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IChannelReceiver.StartListening(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StartListening (data As Object)" />
+      <MemberSignature Language="F#" Value="abstract member StartListening : obj -&gt; unit" Usage="iChannelReceiver.StartListening data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StartListening(System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -145,6 +157,9 @@
       <MemberSignature Language="C#" Value="public void StopListening (object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void StopListening(object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.IChannelReceiver.StopListening(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub StopListening (data As Object)" />
+      <MemberSignature Language="F#" Value="abstract member StopListening : obj -&gt; unit" Usage="iChannelReceiver.StopListening data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void StopListening(System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

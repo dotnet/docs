@@ -1,7 +1,10 @@
-<Type Name="TimeZoneInfo" FullName="System.TimeZoneInfo">
+﻿<Type Name="TimeZoneInfo" FullName="System.TimeZoneInfo">
   <TypeSignature Language="C#" Value="public sealed class TimeZoneInfo : IEquatable&lt;TimeZoneInfo&gt;, System.Runtime.Serialization.IDeserializationCallback, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit TimeZoneInfo extends System.Object implements class System.IEquatable`1&lt;class System.TimeZoneInfo&gt;, class System.Runtime.Serialization.IDeserializationCallback, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.TimeZoneInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TimeZoneInfo&#xA;Implements IDeserializationCallback, IEquatable(Of TimeZoneInfo), ISerializable" />
+  <TypeSignature Language="F#" Value="type TimeZoneInfo = class&#xA;    interface IEquatable&lt;TimeZoneInfo&gt;&#xA;    interface ISerializable&#xA;    interface IDeserializationCallback" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TimeZoneInfo sealed : IEquatable&lt;TimeZoneInfo ^&gt;, System::Runtime::Serialization::IDeserializationCallback, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +87,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan BaseUtcOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan BaseUtcOffset" />
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.BaseUtcOffset" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseUtcOffset As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.BaseUtcOffset : TimeSpan" Usage="System.TimeZoneInfo.BaseUtcOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan BaseUtcOffset { TimeSpan get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -142,6 +148,9 @@
       <MemberSignature Language="C#" Value="public static void ClearCachedData ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void ClearCachedData() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ClearCachedData" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub ClearCachedData ()" />
+      <MemberSignature Language="F#" Value="static member ClearCachedData : unit -&gt; unit" Usage="System.TimeZoneInfo.ClearCachedData " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void ClearCachedData();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -179,10 +188,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ConvertTime">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a time to the time in a particular time zone.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ConvertTime">
       <MemberSignature Language="C#" Value="public static DateTime ConvertTime (DateTime dateTime, TimeZoneInfo destinationTimeZone);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ConvertTime(valuetype System.DateTime dateTime, class System.TimeZoneInfo destinationTimeZone) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo)" />
+      <MemberSignature Language="F#" Value="static member ConvertTime : DateTime * TimeZoneInfo -&gt; DateTime" Usage="System.TimeZoneInfo.ConvertTime (dateTime, destinationTimeZone)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ConvertTime(DateTime dateTime, TimeZoneInfo ^ destinationTimeZone);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -262,6 +286,8 @@
       <MemberSignature Language="C#" Value="public static DateTimeOffset ConvertTime (DateTimeOffset dateTimeOffset, TimeZoneInfo destinationTimeZone);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTimeOffset ConvertTime(valuetype System.DateTimeOffset dateTimeOffset, class System.TimeZoneInfo destinationTimeZone) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTime(System.DateTimeOffset,System.TimeZoneInfo)" />
+      <MemberSignature Language="F#" Value="static member ConvertTime : DateTimeOffset * TimeZoneInfo -&gt; DateTimeOffset" Usage="System.TimeZoneInfo.ConvertTime (dateTimeOffset, destinationTimeZone)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTimeOffset ConvertTime(DateTimeOffset dateTimeOffset, TimeZoneInfo ^ destinationTimeZone);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -324,6 +350,8 @@
       <MemberSignature Language="C#" Value="public static DateTime ConvertTime (DateTime dateTime, TimeZoneInfo sourceTimeZone, TimeZoneInfo destinationTimeZone);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ConvertTime(valuetype System.DateTime dateTime, class System.TimeZoneInfo sourceTimeZone, class System.TimeZoneInfo destinationTimeZone) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTime(System.DateTime,System.TimeZoneInfo,System.TimeZoneInfo)" />
+      <MemberSignature Language="F#" Value="static member ConvertTime : DateTime * TimeZoneInfo * TimeZoneInfo -&gt; DateTime" Usage="System.TimeZoneInfo.ConvertTime (dateTime, sourceTimeZone, destinationTimeZone)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ConvertTime(DateTime dateTime, TimeZoneInfo ^ sourceTimeZone, TimeZoneInfo ^ destinationTimeZone);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -416,10 +444,22 @@
         <altmember cref="Overload:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ConvertTimeBySystemTimeZoneId">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a time to the time in another time zone based on a time zone identifier.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ConvertTimeBySystemTimeZoneId">
       <MemberSignature Language="C#" Value="public static DateTime ConvertTimeBySystemTimeZoneId (DateTime dateTime, string destinationTimeZoneId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ConvertTimeBySystemTimeZoneId(valuetype System.DateTime dateTime, string destinationTimeZoneId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId(System.DateTime,System.String)" />
+      <MemberSignature Language="F#" Value="static member ConvertTimeBySystemTimeZoneId : DateTime * string -&gt; DateTime" Usage="System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId (dateTime, destinationTimeZoneId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ConvertTimeBySystemTimeZoneId(DateTime dateTime, System::String ^ destinationTimeZoneId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -488,6 +528,8 @@
       <MemberSignature Language="C#" Value="public static DateTimeOffset ConvertTimeBySystemTimeZoneId (DateTimeOffset dateTimeOffset, string destinationTimeZoneId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTimeOffset ConvertTimeBySystemTimeZoneId(valuetype System.DateTimeOffset dateTimeOffset, string destinationTimeZoneId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId(System.DateTimeOffset,System.String)" />
+      <MemberSignature Language="F#" Value="static member ConvertTimeBySystemTimeZoneId : DateTimeOffset * string -&gt; DateTimeOffset" Usage="System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId (dateTimeOffset, destinationTimeZoneId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTimeOffset ConvertTimeBySystemTimeZoneId(DateTimeOffset dateTimeOffset, System::String ^ destinationTimeZoneId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -543,6 +585,8 @@
       <MemberSignature Language="C#" Value="public static DateTime ConvertTimeBySystemTimeZoneId (DateTime dateTime, string sourceTimeZoneId, string destinationTimeZoneId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ConvertTimeBySystemTimeZoneId(valuetype System.DateTime dateTime, string sourceTimeZoneId, string destinationTimeZoneId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId(System.DateTime,System.String,System.String)" />
+      <MemberSignature Language="F#" Value="static member ConvertTimeBySystemTimeZoneId : DateTime * string * string -&gt; DateTime" Usage="System.TimeZoneInfo.ConvertTimeBySystemTimeZoneId (dateTime, sourceTimeZoneId, destinationTimeZoneId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ConvertTimeBySystemTimeZoneId(DateTime dateTime, System::String ^ sourceTimeZoneId, System::String ^ destinationTimeZoneId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -631,6 +675,8 @@
       <MemberSignature Language="C#" Value="public static DateTime ConvertTimeFromUtc (DateTime dateTime, TimeZoneInfo destinationTimeZone);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ConvertTimeFromUtc(valuetype System.DateTime dateTime, class System.TimeZoneInfo destinationTimeZone) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTimeFromUtc(System.DateTime,System.TimeZoneInfo)" />
+      <MemberSignature Language="F#" Value="static member ConvertTimeFromUtc : DateTime * TimeZoneInfo -&gt; DateTime" Usage="System.TimeZoneInfo.ConvertTimeFromUtc (dateTime, destinationTimeZone)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ConvertTimeFromUtc(DateTime dateTime, TimeZoneInfo ^ destinationTimeZone);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -690,10 +736,22 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ConvertTimeToUtc">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a date and time to Coordinated Universal Time (UTC).</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ConvertTimeToUtc">
       <MemberSignature Language="C#" Value="public static DateTime ConvertTimeToUtc (DateTime dateTime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ConvertTimeToUtc(valuetype System.DateTime dateTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTimeToUtc(System.DateTime)" />
+      <MemberSignature Language="F#" Value="static member ConvertTimeToUtc : DateTime -&gt; DateTime" Usage="System.TimeZoneInfo.ConvertTimeToUtc dateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ConvertTimeToUtc(DateTime dateTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -760,6 +818,8 @@
       <MemberSignature Language="C#" Value="public static DateTime ConvertTimeToUtc (DateTime dateTime, TimeZoneInfo sourceTimeZone);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime ConvertTimeToUtc(valuetype System.DateTime dateTime, class System.TimeZoneInfo sourceTimeZone) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ConvertTimeToUtc(System.DateTime,System.TimeZoneInfo)" />
+      <MemberSignature Language="F#" Value="static member ConvertTimeToUtc : DateTime * TimeZoneInfo -&gt; DateTime" Usage="System.TimeZoneInfo.ConvertTimeToUtc (dateTime, sourceTimeZone)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static DateTime ConvertTimeToUtc(DateTime dateTime, TimeZoneInfo ^ sourceTimeZone);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -824,10 +884,23 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateCustomTimeZone">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Defines a time zone that is not found on the local computer.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateCustomTimeZone">
       <MemberSignature Language="C#" Value="public static TimeZoneInfo CreateCustomTimeZone (string id, TimeSpan baseUtcOffset, string displayName, string standardDisplayName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.TimeZoneInfo CreateCustomTimeZone(string id, valuetype System.TimeSpan baseUtcOffset, string displayName, string standardDisplayName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.CreateCustomTimeZone(System.String,System.TimeSpan,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateCustomTimeZone (id As String, baseUtcOffset As TimeSpan, displayName As String, standardDisplayName As String) As TimeZoneInfo" />
+      <MemberSignature Language="F#" Value="static member CreateCustomTimeZone : string * TimeSpan * string * string -&gt; TimeZoneInfo" Usage="System.TimeZoneInfo.CreateCustomTimeZone (id, baseUtcOffset, displayName, standardDisplayName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TimeZoneInfo ^ CreateCustomTimeZone(System::String ^ id, TimeSpan baseUtcOffset, System::String ^ displayName, System::String ^ standardDisplayName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -904,6 +977,9 @@
       <MemberSignature Language="C#" Value="public static TimeZoneInfo CreateCustomTimeZone (string id, TimeSpan baseUtcOffset, string displayName, string standardDisplayName, string daylightDisplayName, TimeZoneInfo.AdjustmentRule[] adjustmentRules);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.TimeZoneInfo CreateCustomTimeZone(string id, valuetype System.TimeSpan baseUtcOffset, string displayName, string standardDisplayName, string daylightDisplayName, class System.TimeZoneInfo/AdjustmentRule[] adjustmentRules) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.CreateCustomTimeZone(System.String,System.TimeSpan,System.String,System.String,System.String,System.TimeZoneInfo.AdjustmentRule[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateCustomTimeZone (id As String, baseUtcOffset As TimeSpan, displayName As String, standardDisplayName As String, daylightDisplayName As String, adjustmentRules As TimeZoneInfo.AdjustmentRule()) As TimeZoneInfo" />
+      <MemberSignature Language="F#" Value="static member CreateCustomTimeZone : string * TimeSpan * string * string * string * TimeZoneInfo.AdjustmentRule[] -&gt; TimeZoneInfo" Usage="System.TimeZoneInfo.CreateCustomTimeZone (id, baseUtcOffset, displayName, standardDisplayName, daylightDisplayName, adjustmentRules)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TimeZoneInfo ^ CreateCustomTimeZone(System::String ^ id, TimeSpan baseUtcOffset, System::String ^ displayName, System::String ^ standardDisplayName, System::String ^ daylightDisplayName, cli::array &lt;TimeZoneInfo::AdjustmentRule ^&gt; ^ adjustmentRules);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1013,6 +1089,9 @@
       <MemberSignature Language="C#" Value="public static TimeZoneInfo CreateCustomTimeZone (string id, TimeSpan baseUtcOffset, string displayName, string standardDisplayName, string daylightDisplayName, TimeZoneInfo.AdjustmentRule[] adjustmentRules, bool disableDaylightSavingTime);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.TimeZoneInfo CreateCustomTimeZone(string id, valuetype System.TimeSpan baseUtcOffset, string displayName, string standardDisplayName, string daylightDisplayName, class System.TimeZoneInfo/AdjustmentRule[] adjustmentRules, bool disableDaylightSavingTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.CreateCustomTimeZone(System.String,System.TimeSpan,System.String,System.String,System.String,System.TimeZoneInfo.AdjustmentRule[],System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateCustomTimeZone (id As String, baseUtcOffset As TimeSpan, displayName As String, standardDisplayName As String, daylightDisplayName As String, adjustmentRules As TimeZoneInfo.AdjustmentRule(), disableDaylightSavingTime As Boolean) As TimeZoneInfo" />
+      <MemberSignature Language="F#" Value="static member CreateCustomTimeZone : string * TimeSpan * string * string * string * TimeZoneInfo.AdjustmentRule[] * bool -&gt; TimeZoneInfo" Usage="System.TimeZoneInfo.CreateCustomTimeZone (id, baseUtcOffset, displayName, standardDisplayName, daylightDisplayName, adjustmentRules, disableDaylightSavingTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TimeZoneInfo ^ CreateCustomTimeZone(System::String ^ id, TimeSpan baseUtcOffset, System::String ^ displayName, System::String ^ standardDisplayName, System::String ^ daylightDisplayName, cli::array &lt;TimeZoneInfo::AdjustmentRule ^&gt; ^ adjustmentRules, bool disableDaylightSavingTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1126,6 +1205,9 @@
       <MemberSignature Language="C#" Value="public string DaylightName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DaylightName" />
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.DaylightName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DaylightName As String" />
+      <MemberSignature Language="F#" Value="member this.DaylightName : string" Usage="System.TimeZoneInfo.DaylightName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DaylightName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1178,6 +1260,9 @@
       <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.TimeZoneInfo.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1229,10 +1314,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether two <see cref="T:System.TimeZoneInfo" /> objects are equal.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="timeZoneInfo.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1288,7 +1386,13 @@
       <MemberSignature Language="C#" Value="public bool Equals (TimeZoneInfo other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.TimeZoneInfo other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.Equals(System.TimeZoneInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As TimeZoneInfo) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : TimeZoneInfo -&gt; bool" Usage="timeZoneInfo.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(TimeZoneInfo ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1355,6 +1459,9 @@
       <MemberSignature Language="C#" Value="public static TimeZoneInfo FindSystemTimeZoneById (string id);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.TimeZoneInfo FindSystemTimeZoneById(string id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.FindSystemTimeZoneById(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindSystemTimeZoneById (id As String) As TimeZoneInfo" />
+      <MemberSignature Language="F#" Value="static member FindSystemTimeZoneById : string -&gt; TimeZoneInfo" Usage="System.TimeZoneInfo.FindSystemTimeZoneById id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TimeZoneInfo ^ FindSystemTimeZoneById(System::String ^ id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1411,6 +1518,9 @@
       <MemberSignature Language="C#" Value="public static TimeZoneInfo FromSerializedString (string source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.TimeZoneInfo FromSerializedString(string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.FromSerializedString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromSerializedString (source As String) As TimeZoneInfo" />
+      <MemberSignature Language="F#" Value="static member FromSerializedString : string -&gt; TimeZoneInfo" Usage="System.TimeZoneInfo.FromSerializedString source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static TimeZoneInfo ^ FromSerializedString(System::String ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1461,6 +1571,9 @@
       <MemberSignature Language="C#" Value="public TimeZoneInfo.AdjustmentRule[] GetAdjustmentRules ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.TimeZoneInfo/AdjustmentRule[] GetAdjustmentRules() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.GetAdjustmentRules" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAdjustmentRules () As TimeZoneInfo.AdjustmentRule()" />
+      <MemberSignature Language="F#" Value="member this.GetAdjustmentRules : unit -&gt; TimeZoneInfo.AdjustmentRule[]" Usage="timeZoneInfo.GetAdjustmentRules " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;TimeZoneInfo::AdjustmentRule ^&gt; ^ GetAdjustmentRules();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1508,10 +1621,25 @@
         <altmember cref="T:System.TimeZoneInfo.AdjustmentRule" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAmbiguousTimeOffsets">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns information about the possible dates and times that an ambiguous date and time can be mapped to.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetAmbiguousTimeOffsets">
       <MemberSignature Language="C#" Value="public TimeSpan[] GetAmbiguousTimeOffsets (DateTime dateTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.TimeSpan[] GetAmbiguousTimeOffsets(valuetype System.DateTime dateTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.GetAmbiguousTimeOffsets(System.DateTime)" />
+      <MemberSignature Language="F#" Value="member this.GetAmbiguousTimeOffsets : DateTime -&gt; TimeSpan[]" Usage="timeZoneInfo.GetAmbiguousTimeOffsets dateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;TimeSpan&gt; ^ GetAmbiguousTimeOffsets(DateTime dateTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1583,6 +1711,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan[] GetAmbiguousTimeOffsets (DateTimeOffset dateTimeOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.TimeSpan[] GetAmbiguousTimeOffsets(valuetype System.DateTimeOffset dateTimeOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.GetAmbiguousTimeOffsets(System.DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.GetAmbiguousTimeOffsets : DateTimeOffset -&gt; TimeSpan[]" Usage="timeZoneInfo.GetAmbiguousTimeOffsets dateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;TimeSpan&gt; ^ GetAmbiguousTimeOffsets(DateTimeOffset dateTimeOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1633,6 +1763,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="timeZoneInfo.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1672,6 +1805,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.ObjectModel.ReadOnlyCollection&lt;TimeZoneInfo&gt; GetSystemTimeZones ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.TimeZoneInfo&gt; GetSystemTimeZones() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.GetSystemTimeZones" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSystemTimeZones () As ReadOnlyCollection(Of TimeZoneInfo)" />
+      <MemberSignature Language="F#" Value="static member GetSystemTimeZones : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;TimeZoneInfo&gt;" Usage="System.TimeZoneInfo.GetSystemTimeZones " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ObjectModel::ReadOnlyCollection&lt;TimeZoneInfo ^&gt; ^ GetSystemTimeZones();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1727,10 +1863,25 @@
         <exception cref="T:System.Security.SecurityException">The user does not have permission to read from the registry keys that contain time zone information.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetUtcOffset">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Calculates the offset or difference between the time in this time zone and Coordinated Universal Time (UTC) for a particular date and time.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetUtcOffset">
       <MemberSignature Language="C#" Value="public TimeSpan GetUtcOffset (DateTime dateTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.TimeSpan GetUtcOffset(valuetype System.DateTime dateTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.GetUtcOffset(System.DateTime)" />
+      <MemberSignature Language="F#" Value="member this.GetUtcOffset : DateTime -&gt; TimeSpan" Usage="timeZoneInfo.GetUtcOffset dateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TimeSpan GetUtcOffset(DateTime dateTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1789,6 +1940,8 @@
       <MemberSignature Language="C#" Value="public TimeSpan GetUtcOffset (DateTimeOffset dateTimeOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.TimeSpan GetUtcOffset(valuetype System.DateTimeOffset dateTimeOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.GetUtcOffset(System.DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.GetUtcOffset : DateTimeOffset -&gt; TimeSpan" Usage="timeZoneInfo.GetUtcOffset dateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TimeSpan GetUtcOffset(DateTimeOffset dateTimeOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1834,6 +1987,9 @@
       <MemberSignature Language="C#" Value="public bool HasSameRules (TimeZoneInfo other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasSameRules(class System.TimeZoneInfo other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.HasSameRules(System.TimeZoneInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasSameRules (other As TimeZoneInfo) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasSameRules : TimeZoneInfo -&gt; bool" Usage="timeZoneInfo.HasSameRules other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasSameRules(TimeZoneInfo ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1882,6 +2038,9 @@
       <MemberSignature Language="C#" Value="public string Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Id" />
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="F#" Value="member this.Id : string" Usage="System.TimeZoneInfo.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1927,10 +2086,25 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsAmbiguousTime">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether a particular date and time in a particular time zone is ambiguous and can be mapped to two or more Coordinated Universal Time (UTC) times.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsAmbiguousTime">
       <MemberSignature Language="C#" Value="public bool IsAmbiguousTime (DateTime dateTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsAmbiguousTime(valuetype System.DateTime dateTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.IsAmbiguousTime(System.DateTime)" />
+      <MemberSignature Language="F#" Value="member this.IsAmbiguousTime : DateTime -&gt; bool" Usage="timeZoneInfo.IsAmbiguousTime dateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsAmbiguousTime(DateTime dateTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2000,6 +2174,8 @@
       <MemberSignature Language="C#" Value="public bool IsAmbiguousTime (DateTimeOffset dateTimeOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsAmbiguousTime(valuetype System.DateTimeOffset dateTimeOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.IsAmbiguousTime(System.DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.IsAmbiguousTime : DateTimeOffset -&gt; bool" Usage="timeZoneInfo.IsAmbiguousTime dateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsAmbiguousTime(DateTimeOffset dateTimeOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2044,10 +2220,25 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsDaylightSavingTime">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a specified date and time falls in the range of daylight saving time for the current <see cref="T:System.TimeZoneInfo" /> object's time zone.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsDaylightSavingTime">
       <MemberSignature Language="C#" Value="public bool IsDaylightSavingTime (DateTime dateTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsDaylightSavingTime(valuetype System.DateTime dateTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.IsDaylightSavingTime(System.DateTime)" />
+      <MemberSignature Language="F#" Value="member this.IsDaylightSavingTime : DateTime -&gt; bool" Usage="timeZoneInfo.IsDaylightSavingTime dateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsDaylightSavingTime(DateTime dateTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2127,6 +2318,8 @@
       <MemberSignature Language="C#" Value="public bool IsDaylightSavingTime (DateTimeOffset dateTimeOffset);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsDaylightSavingTime(valuetype System.DateTimeOffset dateTimeOffset) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.IsDaylightSavingTime(System.DateTimeOffset)" />
+      <MemberSignature Language="F#" Value="member this.IsDaylightSavingTime : DateTimeOffset -&gt; bool" Usage="timeZoneInfo.IsDaylightSavingTime dateTimeOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsDaylightSavingTime(DateTimeOffset dateTimeOffset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2176,6 +2369,8 @@
       <MemberSignature Language="C#" Value="public bool IsInvalidTime (DateTime dateTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsInvalidTime(valuetype System.DateTime dateTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.IsInvalidTime(System.DateTime)" />
+      <MemberSignature Language="F#" Value="member this.IsInvalidTime : DateTime -&gt; bool" Usage="timeZoneInfo.IsInvalidTime dateTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsInvalidTime(DateTime dateTime);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2240,6 +2435,9 @@
       <MemberSignature Language="C#" Value="public static TimeZoneInfo Local { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.TimeZoneInfo Local" />
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.Local" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Local As TimeZoneInfo" />
+      <MemberSignature Language="F#" Value="member this.Local : TimeZoneInfo" Usage="System.TimeZoneInfo.Local" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property TimeZoneInfo ^ Local { TimeZoneInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2311,6 +2509,9 @@
       <MemberSignature Language="C#" Value="public string StandardName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StandardName" />
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.StandardName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StandardName As String" />
+      <MemberSignature Language="F#" Value="member this.StandardName : string" Usage="System.TimeZoneInfo.StandardName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ StandardName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2361,6 +2562,9 @@
       <MemberSignature Language="C#" Value="public bool SupportsDaylightSavingTime { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsDaylightSavingTime" />
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.SupportsDaylightSavingTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsDaylightSavingTime As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsDaylightSavingTime : bool" Usage="System.TimeZoneInfo.SupportsDaylightSavingTime" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsDaylightSavingTime { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2408,7 +2612,12 @@
       <MemberSignature Language="C#" Value="void IDeserializationCallback.OnDeserialization (object sender);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(object sender) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.System#Runtime#Serialization#IDeserializationCallback#OnDeserialization(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub OnDeserialization (sender As Object) Implements IDeserializationCallback.OnDeserialization" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System::Object ^ sender) = System::Runtime::Serialization::IDeserializationCallback::OnDeserialization;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.IDeserializationCallback.OnDeserialization(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2439,7 +2648,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2473,6 +2687,9 @@
       <MemberSignature Language="C#" Value="public string ToSerializedString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToSerializedString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ToSerializedString" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToSerializedString () As String" />
+      <MemberSignature Language="F#" Value="member this.ToSerializedString : unit -&gt; string" Usage="timeZoneInfo.ToSerializedString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToSerializedString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2525,6 +2742,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.TimeZoneInfo.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="timeZoneInfo.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2564,6 +2784,9 @@
       <MemberSignature Language="C#" Value="public static TimeZoneInfo Utc { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.TimeZoneInfo Utc" />
       <MemberSignature Language="DocId" Value="P:System.TimeZoneInfo.Utc" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Utc As TimeZoneInfo" />
+      <MemberSignature Language="F#" Value="member this.Utc : TimeZoneInfo" Usage="System.TimeZoneInfo.Utc" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property TimeZoneInfo ^ Utc { TimeZoneInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2611,110 +2834,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether two <see cref="T:System.TimeZoneInfo" /> objects are equal.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetAmbiguousTimeOffsets">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns information about the possible dates and times that an ambiguous date and time can be mapped to.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateCustomTimeZone">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Defines a time zone that is not found on the local computer.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ConvertTimeBySystemTimeZoneId">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts a time to the time in another time zone based on a time zone identifier.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsAmbiguousTime">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether a particular date and time in a particular time zone is ambiguous and can be mapped to two or more Coordinated Universal Time (UTC) times.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsDaylightSavingTime">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether a specified date and time falls in the range of daylight saving time for the current <see cref="T:System.TimeZoneInfo" /> object's time zone.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ConvertTime">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts a time to the time in a particular time zone.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetUtcOffset">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Calculates the offset or difference between the time in this time zone and Coordinated Universal Time (UTC) for a particular date and time.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ConvertTimeToUtc">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts a date and time to Coordinated Universal Time (UTC).</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

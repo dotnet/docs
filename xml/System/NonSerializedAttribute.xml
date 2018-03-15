@@ -1,7 +1,10 @@
-<Type Name="NonSerializedAttribute" FullName="System.NonSerializedAttribute">
+﻿<Type Name="NonSerializedAttribute" FullName="System.NonSerializedAttribute">
   <TypeSignature Language="C#" Value="public sealed class NonSerializedAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NonSerializedAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.NonSerializedAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NonSerializedAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type NonSerializedAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NonSerializedAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -76,6 +79,8 @@ public event ChangedEventHandler Changed;
       <MemberSignature Language="C#" Value="public NonSerializedAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.NonSerializedAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NonSerializedAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>

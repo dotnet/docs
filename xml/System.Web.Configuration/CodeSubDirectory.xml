@@ -1,7 +1,10 @@
-<Type Name="CodeSubDirectory" FullName="System.Web.Configuration.CodeSubDirectory">
+﻿<Type Name="CodeSubDirectory" FullName="System.Web.Configuration.CodeSubDirectory">
   <TypeSignature Language="C#" Value="public sealed class CodeSubDirectory : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CodeSubDirectory extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.CodeSubDirectory" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CodeSubDirectory&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type CodeSubDirectory = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeSubDirectory sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public CodeSubDirectory (string directoryName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string directoryName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.CodeSubDirectory.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (directoryName As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Configuration.CodeSubDirectory : string -&gt; System.Web.Configuration.CodeSubDirectory" Usage="new System.Web.Configuration.CodeSubDirectory directoryName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeSubDirectory(System::String ^ directoryName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,6 +55,9 @@
       <MemberSignature Language="C#" Value="public string DirectoryName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DirectoryName" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CodeSubDirectory.DirectoryName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DirectoryName As String" />
+      <MemberSignature Language="F#" Value="member this.DirectoryName : string with get, set" Usage="System.Web.Configuration.CodeSubDirectory.DirectoryName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DirectoryName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -82,6 +91,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.CodeSubDirectory.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.CodeSubDirectory.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

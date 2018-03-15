@@ -1,7 +1,10 @@
-<Type Name="UploadStringCompletedEventHandler" FullName="System.Net.UploadStringCompletedEventHandler">
+﻿<Type Name="UploadStringCompletedEventHandler" FullName="System.Net.UploadStringCompletedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void UploadStringCompletedEventHandler(object sender, UploadStringCompletedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UploadStringCompletedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.UploadStringCompletedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub UploadStringCompletedEventHandler(sender As Object, e As UploadStringCompletedEventArgs)" />
+  <TypeSignature Language="F#" Value="type UploadStringCompletedEventHandler = delegate of obj * UploadStringCompletedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void UploadStringCompletedEventHandler(System::Object ^ sender, UploadStringCompletedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

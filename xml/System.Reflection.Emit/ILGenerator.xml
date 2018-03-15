@@ -1,7 +1,10 @@
-<Type Name="ILGenerator" FullName="System.Reflection.Emit.ILGenerator">
+﻿<Type Name="ILGenerator" FullName="System.Reflection.Emit.ILGenerator">
   <TypeSignature Language="C#" Value="public class ILGenerator : System.Runtime.InteropServices._ILGenerator" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit ILGenerator extends System.Object implements class System.Runtime.InteropServices._ILGenerator" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.ILGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public Class ILGenerator&#xA;Implements _ILGenerator" />
+  <TypeSignature Language="F#" Value="type ILGenerator = class&#xA;    interface _ILGenerator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ILGenerator : System::Runtime::InteropServices::_ILGenerator" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +52,9 @@
       <MemberSignature Language="C#" Value="public virtual void BeginCatchBlock (Type exceptionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginCatchBlock(class System.Type exceptionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.BeginCatchBlock(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginCatchBlock (exceptionType As Type)" />
+      <MemberSignature Language="F#" Value="abstract member BeginCatchBlock : Type -&gt; unit&#xA;override this.BeginCatchBlock : Type -&gt; unit" Usage="iLGenerator.BeginCatchBlock exceptionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginCatchBlock(Type ^ exceptionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -99,6 +105,9 @@
       <MemberSignature Language="C#" Value="public virtual void BeginExceptFilterBlock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginExceptFilterBlock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.BeginExceptFilterBlock" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginExceptFilterBlock ()" />
+      <MemberSignature Language="F#" Value="abstract member BeginExceptFilterBlock : unit -&gt; unit&#xA;override this.BeginExceptFilterBlock : unit -&gt; unit" Usage="iLGenerator.BeginExceptFilterBlock " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginExceptFilterBlock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -137,6 +146,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.Emit.Label BeginExceptionBlock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Reflection.Emit.Label BeginExceptionBlock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.BeginExceptionBlock" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BeginExceptionBlock () As Label" />
+      <MemberSignature Language="F#" Value="abstract member BeginExceptionBlock : unit -&gt; System.Reflection.Emit.Label&#xA;override this.BeginExceptionBlock : unit -&gt; System.Reflection.Emit.Label" Usage="iLGenerator.BeginExceptionBlock " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::Emit::Label BeginExceptionBlock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -178,6 +190,9 @@
       <MemberSignature Language="C#" Value="public virtual void BeginFaultBlock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginFaultBlock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.BeginFaultBlock" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginFaultBlock ()" />
+      <MemberSignature Language="F#" Value="abstract member BeginFaultBlock : unit -&gt; unit&#xA;override this.BeginFaultBlock : unit -&gt; unit" Usage="iLGenerator.BeginFaultBlock " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginFaultBlock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -223,6 +238,9 @@
       <MemberSignature Language="C#" Value="public virtual void BeginFinallyBlock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginFinallyBlock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.BeginFinallyBlock" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginFinallyBlock ()" />
+      <MemberSignature Language="F#" Value="abstract member BeginFinallyBlock : unit -&gt; unit&#xA;override this.BeginFinallyBlock : unit -&gt; unit" Usage="iLGenerator.BeginFinallyBlock " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginFinallyBlock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -259,6 +277,9 @@
       <MemberSignature Language="C#" Value="public virtual void BeginScope ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginScope() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.BeginScope" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub BeginScope ()" />
+      <MemberSignature Language="F#" Value="abstract member BeginScope : unit -&gt; unit&#xA;override this.BeginScope : unit -&gt; unit" Usage="iLGenerator.BeginScope " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void BeginScope();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -298,10 +319,23 @@
         <exception cref="T:System.NotSupportedException">This <see cref="T:System.Reflection.Emit.ILGenerator" /> belongs to a <see cref="T:System.Reflection.Emit.DynamicMethod" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="DeclareLocal">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Declares a local variable.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DeclareLocal">
       <MemberSignature Language="C#" Value="public virtual System.Reflection.Emit.LocalBuilder DeclareLocal (Type localType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Emit.LocalBuilder DeclareLocal(class System.Type localType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.DeclareLocal(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeclareLocal (localType As Type) As LocalBuilder" />
+      <MemberSignature Language="F#" Value="abstract member DeclareLocal : Type -&gt; System.Reflection.Emit.LocalBuilder&#xA;override this.DeclareLocal : Type -&gt; System.Reflection.Emit.LocalBuilder" Usage="iLGenerator.DeclareLocal localType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::Emit::LocalBuilder ^ DeclareLocal(Type ^ localType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -351,6 +385,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.Emit.LocalBuilder DeclareLocal (Type localType, bool pinned);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.Emit.LocalBuilder DeclareLocal(class System.Type localType, bool pinned) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.DeclareLocal(System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DeclareLocal (localType As Type, pinned As Boolean) As LocalBuilder" />
+      <MemberSignature Language="F#" Value="abstract member DeclareLocal : Type * bool -&gt; System.Reflection.Emit.LocalBuilder&#xA;override this.DeclareLocal : Type * bool -&gt; System.Reflection.Emit.LocalBuilder" Usage="iLGenerator.DeclareLocal (localType, pinned)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::Emit::LocalBuilder ^ DeclareLocal(Type ^ localType, bool pinned);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -399,6 +436,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.Emit.Label DefineLabel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Reflection.Emit.Label DefineLabel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.DefineLabel" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function DefineLabel () As Label" />
+      <MemberSignature Language="F#" Value="abstract member DefineLabel : unit -&gt; System.Reflection.Emit.Label&#xA;override this.DefineLabel : unit -&gt; System.Reflection.Emit.Label" Usage="iLGenerator.DefineLabel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::Emit::Label DefineLabel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -438,10 +478,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Emit">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Puts an instruction onto the Microsoft Intermediate Language (MSIL) stream for the just-in-time (JIT) compiler.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Emit">
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode)" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode -&gt; unit" Usage="iLGenerator.Emit opcode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -487,6 +539,8 @@
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, byte arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, unsigned int8 arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Byte)" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode * byte -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode * byte -&gt; unit" Usage="iLGenerator.Emit (opcode, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode, System::Byte arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -523,6 +577,8 @@
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, double arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, float64 arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Double)" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode * double -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode * double -&gt; unit" Usage="iLGenerator.Emit (opcode, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode, double arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -559,6 +615,8 @@
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, short arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, int16 arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Int16)" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode * int16 -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode * int16 -&gt; unit" Usage="iLGenerator.Emit (opcode, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode, short arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -595,6 +653,8 @@
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, int arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, int32 arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode * int -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode * int -&gt; unit" Usage="iLGenerator.Emit (opcode, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode, int arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -631,6 +691,8 @@
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, long arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, int64 arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Int64)" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode * int64 -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode * int64 -&gt; unit" Usage="iLGenerator.Emit (opcode, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode, long arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -667,6 +729,8 @@
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, System.Reflection.ConstructorInfo con);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, class System.Reflection.ConstructorInfo con) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.ConstructorInfo)" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode * System.Reflection.ConstructorInfo -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode * System.Reflection.ConstructorInfo -&gt; unit" Usage="iLGenerator.Emit (opcode, con)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode, System::Reflection::ConstructorInfo ^ con);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -712,6 +776,8 @@
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, System.Reflection.Emit.Label label);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, valuetype System.Reflection.Emit.Label label) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.Label)" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode * System.Reflection.Emit.Label -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode * System.Reflection.Emit.Label -&gt; unit" Usage="iLGenerator.Emit (opcode, label)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode, System::Reflection::Emit::Label label);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -759,6 +825,8 @@
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, System.Reflection.Emit.Label[] labels);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, valuetype System.Reflection.Emit.Label[] labels) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.Label[])" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode * System.Reflection.Emit.Label[] -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode * System.Reflection.Emit.Label[] -&gt; unit" Usage="iLGenerator.Emit (opcode, labels)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode, cli::array &lt;System::Reflection::Emit::Label&gt; ^ labels);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -810,6 +878,8 @@
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, System.Reflection.Emit.LocalBuilder local);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, class System.Reflection.Emit.LocalBuilder local) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.LocalBuilder)" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode * System.Reflection.Emit.LocalBuilder -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode * System.Reflection.Emit.LocalBuilder -&gt; unit" Usage="iLGenerator.Emit (opcode, local)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode, System::Reflection::Emit::LocalBuilder ^ local);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -851,6 +921,8 @@
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, System.Reflection.Emit.SignatureHelper signature);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, class System.Reflection.Emit.SignatureHelper signature) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.Emit.SignatureHelper)" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode * System.Reflection.Emit.SignatureHelper -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode * System.Reflection.Emit.SignatureHelper -&gt; unit" Usage="iLGenerator.Emit (opcode, signature)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode, System::Reflection::Emit::SignatureHelper ^ signature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -889,6 +961,8 @@
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, System.Reflection.FieldInfo field);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, class System.Reflection.FieldInfo field) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.FieldInfo)" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode * System.Reflection.FieldInfo -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode * System.Reflection.FieldInfo -&gt; unit" Usage="iLGenerator.Emit (opcode, field)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode, System::Reflection::FieldInfo ^ field);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -925,6 +999,8 @@
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, System.Reflection.MethodInfo meth);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, class System.Reflection.MethodInfo meth) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Reflection.MethodInfo)" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode * System.Reflection.MethodInfo -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode * System.Reflection.MethodInfo -&gt; unit" Usage="iLGenerator.Emit (opcode, meth)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode, System::Reflection::MethodInfo ^ meth);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -969,6 +1045,8 @@
       <MemberSignature Language="C#" Value="public void Emit (System.Reflection.Emit.OpCode opcode, sbyte arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, int8 arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.SByte)" />
+      <MemberSignature Language="F#" Value="member this.Emit : System.Reflection.Emit.OpCode * sbyte -&gt; unit" Usage="iLGenerator.Emit (opcode, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Emit(System::Reflection::Emit::OpCode opcode, System::SByte arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1010,6 +1088,8 @@
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, float arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, float32 arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Single)" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode * single -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode * single -&gt; unit" Usage="iLGenerator.Emit (opcode, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode, float arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1046,6 +1126,8 @@
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, string str);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.String)" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode * string -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode * string -&gt; unit" Usage="iLGenerator.Emit (opcode, str)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode, System::String ^ str);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1082,6 +1164,8 @@
       <MemberSignature Language="C#" Value="public virtual void Emit (System.Reflection.Emit.OpCode opcode, Type cls);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Emit(valuetype System.Reflection.Emit.OpCode opcode, class System.Type cls) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.Emit(System.Reflection.Emit.OpCode,System.Type)" />
+      <MemberSignature Language="F#" Value="abstract member Emit : System.Reflection.Emit.OpCode * Type -&gt; unit&#xA;override this.Emit : System.Reflection.Emit.OpCode * Type -&gt; unit" Usage="iLGenerator.Emit (opcode, cls)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Emit(System::Reflection::Emit::OpCode opcode, Type ^ cls);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1120,6 +1204,8 @@
       <MemberSignature Language="C#" Value="public virtual void EmitCall (System.Reflection.Emit.OpCode opcode, System.Reflection.MethodInfo methodInfo, Type[] optionalParameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EmitCall(valuetype System.Reflection.Emit.OpCode opcode, class System.Reflection.MethodInfo methodInfo, class System.Type[] optionalParameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EmitCall(System.Reflection.Emit.OpCode,System.Reflection.MethodInfo,System.Type[])" />
+      <MemberSignature Language="F#" Value="abstract member EmitCall : System.Reflection.Emit.OpCode * System.Reflection.MethodInfo * Type[] -&gt; unit&#xA;override this.EmitCall : System.Reflection.Emit.OpCode * System.Reflection.MethodInfo * Type[] -&gt; unit" Usage="iLGenerator.EmitCall (opcode, methodInfo, optionalParameterTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EmitCall(System::Reflection::Emit::OpCode opcode, System::Reflection::MethodInfo ^ methodInfo, cli::array &lt;Type ^&gt; ^ optionalParameterTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1173,10 +1259,22 @@
         <exception cref="T:System.InvalidOperationException">The calling convention for the method is not <see langword="varargs" />, but optional parameter types are supplied. This exception is thrown in the .NET Framework versions 1.0 and 1.1, In subsequent versions, no exception is thrown.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EmitCalli">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Puts a <see cref="F:System.Reflection.Emit.OpCodes.Calli" /> instruction onto the Microsoft intermediate language (MSIL) stream.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EmitCalli">
       <MemberSignature Language="C#" Value="public virtual void EmitCalli (System.Reflection.Emit.OpCode opcode, System.Runtime.InteropServices.CallingConvention unmanagedCallConv, Type returnType, Type[] parameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EmitCalli(valuetype System.Reflection.Emit.OpCode opcode, valuetype System.Runtime.InteropServices.CallingConvention unmanagedCallConv, class System.Type returnType, class System.Type[] parameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EmitCalli(System.Reflection.Emit.OpCode,System.Runtime.InteropServices.CallingConvention,System.Type,System.Type[])" />
+      <MemberSignature Language="F#" Value="abstract member EmitCalli : System.Reflection.Emit.OpCode * System.Runtime.InteropServices.CallingConvention * Type * Type[] -&gt; unit&#xA;override this.EmitCalli : System.Reflection.Emit.OpCode * System.Runtime.InteropServices.CallingConvention * Type * Type[] -&gt; unit" Usage="iLGenerator.EmitCalli (opcode, unmanagedCallConv, returnType, parameterTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EmitCalli(System::Reflection::Emit::OpCode opcode, System::Runtime::InteropServices::CallingConvention unmanagedCallConv, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1221,6 +1319,8 @@
       <MemberSignature Language="C#" Value="public virtual void EmitCalli (System.Reflection.Emit.OpCode opcode, System.Reflection.CallingConventions callingConvention, Type returnType, Type[] parameterTypes, Type[] optionalParameterTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EmitCalli(valuetype System.Reflection.Emit.OpCode opcode, valuetype System.Reflection.CallingConventions callingConvention, class System.Type returnType, class System.Type[] parameterTypes, class System.Type[] optionalParameterTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EmitCalli(System.Reflection.Emit.OpCode,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type[])" />
+      <MemberSignature Language="F#" Value="abstract member EmitCalli : System.Reflection.Emit.OpCode * System.Reflection.CallingConventions * Type * Type[] * Type[] -&gt; unit&#xA;override this.EmitCalli : System.Reflection.Emit.OpCode * System.Reflection.CallingConventions * Type * Type[] * Type[] -&gt; unit" Usage="iLGenerator.EmitCalli (opcode, callingConvention, returnType, parameterTypes, optionalParameterTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EmitCalli(System::Reflection::Emit::OpCode opcode, System::Reflection::CallingConventions callingConvention, Type ^ returnType, cli::array &lt;Type ^&gt; ^ parameterTypes, cli::array &lt;Type ^&gt; ^ optionalParameterTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1263,10 +1363,22 @@
           <paramref name="optionalParameterTypes" /> is not <see langword="null" />, but <paramref name="callingConvention" /> does not include the <see cref="F:System.Reflection.CallingConventions.VarArgs" /> flag.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="EmitWriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Helper functions to emit a call to <see cref="M:System.Console.WriteLine" /> with different types of values.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="EmitWriteLine">
       <MemberSignature Language="C#" Value="public virtual void EmitWriteLine (System.Reflection.Emit.LocalBuilder localBuilder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EmitWriteLine(class System.Reflection.Emit.LocalBuilder localBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EmitWriteLine(System.Reflection.Emit.LocalBuilder)" />
+      <MemberSignature Language="F#" Value="abstract member EmitWriteLine : System.Reflection.Emit.LocalBuilder -&gt; unit&#xA;override this.EmitWriteLine : System.Reflection.Emit.LocalBuilder -&gt; unit" Usage="iLGenerator.EmitWriteLine localBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EmitWriteLine(System::Reflection::Emit::LocalBuilder ^ localBuilder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1317,6 +1429,9 @@
       <MemberSignature Language="C#" Value="public virtual void EmitWriteLine (System.Reflection.FieldInfo fld);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EmitWriteLine(class System.Reflection.FieldInfo fld) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EmitWriteLine(System.Reflection.FieldInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EmitWriteLine (fld As FieldInfo)" />
+      <MemberSignature Language="F#" Value="abstract member EmitWriteLine : System.Reflection.FieldInfo -&gt; unit&#xA;override this.EmitWriteLine : System.Reflection.FieldInfo -&gt; unit" Usage="iLGenerator.EmitWriteLine fld" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EmitWriteLine(System::Reflection::FieldInfo ^ fld);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1364,6 +1479,9 @@
       <MemberSignature Language="C#" Value="public virtual void EmitWriteLine (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EmitWriteLine(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EmitWriteLine(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EmitWriteLine (value As String)" />
+      <MemberSignature Language="F#" Value="abstract member EmitWriteLine : string -&gt; unit&#xA;override this.EmitWriteLine : string -&gt; unit" Usage="iLGenerator.EmitWriteLine value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EmitWriteLine(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1407,6 +1525,9 @@
       <MemberSignature Language="C#" Value="public virtual void EndExceptionBlock ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndExceptionBlock() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EndExceptionBlock" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndExceptionBlock ()" />
+      <MemberSignature Language="F#" Value="abstract member EndExceptionBlock : unit -&gt; unit&#xA;override this.EndExceptionBlock : unit -&gt; unit" Usage="iLGenerator.EndExceptionBlock " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndExceptionBlock();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1444,6 +1565,9 @@
       <MemberSignature Language="C#" Value="public virtual void EndScope ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndScope() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.EndScope" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub EndScope ()" />
+      <MemberSignature Language="F#" Value="abstract member EndScope : unit -&gt; unit&#xA;override this.EndScope : unit -&gt; unit" Usage="iLGenerator.EndScope " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void EndScope();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1487,6 +1611,9 @@
       <MemberSignature Language="C#" Value="public virtual int ILOffset { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ILOffset" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Emit.ILGenerator.ILOffset" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ILOffset As Integer" />
+      <MemberSignature Language="F#" Value="member this.ILOffset : int" Usage="System.Reflection.Emit.ILGenerator.ILOffset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ILOffset { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1522,6 +1649,9 @@
       <MemberSignature Language="C#" Value="public virtual void MarkLabel (System.Reflection.Emit.Label loc);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MarkLabel(valuetype System.Reflection.Emit.Label loc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.MarkLabel(System.Reflection.Emit.Label)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub MarkLabel (loc As Label)" />
+      <MemberSignature Language="F#" Value="abstract member MarkLabel : System.Reflection.Emit.Label -&gt; unit&#xA;override this.MarkLabel : System.Reflection.Emit.Label -&gt; unit" Usage="iLGenerator.MarkLabel loc" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MarkLabel(System::Reflection::Emit::Label loc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1571,6 +1701,9 @@
       <MemberSignature Language="C#" Value="public virtual void MarkSequencePoint (System.Diagnostics.SymbolStore.ISymbolDocumentWriter document, int startLine, int startColumn, int endLine, int endColumn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MarkSequencePoint(class System.Diagnostics.SymbolStore.ISymbolDocumentWriter document, int32 startLine, int32 startColumn, int32 endLine, int32 endColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.MarkSequencePoint(System.Diagnostics.SymbolStore.ISymbolDocumentWriter,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub MarkSequencePoint (document As ISymbolDocumentWriter, startLine As Integer, startColumn As Integer, endLine As Integer, endColumn As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member MarkSequencePoint : System.Diagnostics.SymbolStore.ISymbolDocumentWriter * int * int * int * int -&gt; unit&#xA;override this.MarkSequencePoint : System.Diagnostics.SymbolStore.ISymbolDocumentWriter * int * int * int * int -&gt; unit" Usage="iLGenerator.MarkSequencePoint (document, startLine, startColumn, endLine, endColumn)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void MarkSequencePoint(System::Diagnostics::SymbolStore::ISymbolDocumentWriter ^ document, int startLine, int startColumn, int endLine, int endColumn);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1615,7 +1748,12 @@
       <MemberSignature Language="C#" Value="void _ILGenerator.GetIDsOfNames (ref Guid riid, IntPtr rgszNames, uint cNames, uint lcid, IntPtr rgDispId);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ILGenerator.GetIDsOfNames([in]valuetype System.Guid&amp; riid, native int rgszNames, unsigned int32 cNames, unsigned int32 lcid, native int rgDispId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.System#Runtime#InteropServices#_ILGenerator#GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetIDsOfNames (ByRef riid As Guid, rgszNames As IntPtr, cNames As UInteger, lcid As UInteger, rgDispId As IntPtr) Implements _ILGenerator.GetIDsOfNames" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._ILGenerator.GetIDsOfNames(Guid % riid, IntPtr rgszNames, System::UInt32 cNames, System::UInt32 lcid, IntPtr rgDispId) = System::Runtime::InteropServices::_ILGenerator::GetIDsOfNames;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._ILGenerator.GetIDsOfNames(System.Guid@,System.IntPtr,System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1653,7 +1791,12 @@
       <MemberSignature Language="C#" Value="void _ILGenerator.GetTypeInfo (uint iTInfo, uint lcid, IntPtr ppTInfo);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ILGenerator.GetTypeInfo(unsigned int32 iTInfo, unsigned int32 lcid, native int ppTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.System#Runtime#InteropServices#_ILGenerator#GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetTypeInfo (iTInfo As UInteger, lcid As UInteger, ppTInfo As IntPtr) Implements _ILGenerator.GetTypeInfo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._ILGenerator.GetTypeInfo(System::UInt32 iTInfo, System::UInt32 lcid, IntPtr ppTInfo) = System::Runtime::InteropServices::_ILGenerator::GetTypeInfo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._ILGenerator.GetTypeInfo(System.UInt32,System.UInt32,System.IntPtr)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1687,7 +1830,12 @@
       <MemberSignature Language="C#" Value="void _ILGenerator.GetTypeInfoCount (out uint pcTInfo);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ILGenerator.GetTypeInfoCount([out] unsigned int32&amp; pcTInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.System#Runtime#InteropServices#_ILGenerator#GetTypeInfoCount(System.UInt32@)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetTypeInfoCount (ByRef pcTInfo As UInteger) Implements _ILGenerator.GetTypeInfoCount" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._ILGenerator.GetTypeInfoCount([Runtime::InteropServices::Out] System::UInt32 % pcTInfo) = System::Runtime::InteropServices::_ILGenerator::GetTypeInfoCount;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._ILGenerator.GetTypeInfoCount(System.UInt32@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1717,7 +1865,12 @@
       <MemberSignature Language="C#" Value="void _ILGenerator.Invoke (uint dispIdMember, ref Guid riid, uint lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.InteropServices._ILGenerator.Invoke(unsigned int32 dispIdMember, [in]valuetype System.Guid&amp; riid, unsigned int32 lcid, int16 wFlags, native int pDispParams, native int pVarResult, native int pExcepInfo, native int puArgErr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.System#Runtime#InteropServices#_ILGenerator#Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Sub Invoke (dispIdMember As UInteger, ByRef riid As Guid, lcid As UInteger, wFlags As Short, pDispParams As IntPtr, pVarResult As IntPtr, pExcepInfo As IntPtr, puArgErr As IntPtr) Implements _ILGenerator.Invoke" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices._ILGenerator.Invoke(System::UInt32 dispIdMember, Guid % riid, System::UInt32 lcid, short wFlags, IntPtr pDispParams, IntPtr pVarResult, IntPtr pExcepInfo, IntPtr puArgErr) = System::Runtime::InteropServices::_ILGenerator::Invoke;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.InteropServices._ILGenerator.Invoke(System.UInt32,System.Guid@,System.UInt32,System.Int16,System.IntPtr,System.IntPtr,System.IntPtr,System.IntPtr)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1761,6 +1914,9 @@
       <MemberSignature Language="C#" Value="public virtual void ThrowException (Type excType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ThrowException(class System.Type excType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.ThrowException(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ThrowException (excType As Type)" />
+      <MemberSignature Language="F#" Value="abstract member ThrowException : Type -&gt; unit&#xA;override this.ThrowException : Type -&gt; unit" Usage="iLGenerator.ThrowException excType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ThrowException(Type ^ excType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1807,6 +1963,9 @@
       <MemberSignature Language="C#" Value="public virtual void UsingNamespace (string usingNamespace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UsingNamespace(string usingNamespace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Emit.ILGenerator.UsingNamespace(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub UsingNamespace (usingNamespace As String)" />
+      <MemberSignature Language="F#" Value="abstract member UsingNamespace : string -&gt; unit&#xA;override this.UsingNamespace : string -&gt; unit" Usage="iLGenerator.UsingNamespace usingNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UsingNamespace(System::String ^ usingNamespace);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
@@ -1841,45 +2000,5 @@
         <exception cref="T:System.NotSupportedException">This <see cref="T:System.Reflection.Emit.ILGenerator" /> belongs to a <see cref="T:System.Reflection.Emit.DynamicMethod" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="EmitWriteLine">
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Helper functions to emit a call to <see cref="M:System.Console.WriteLine" /> with different types of values.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="EmitCalli">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Puts a <see cref="F:System.Reflection.Emit.OpCodes.Calli" /> instruction onto the Microsoft intermediate language (MSIL) stream.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DeclareLocal">
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Declares a local variable.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Emit">
-      <AssemblyInfo>
-        <AssemblyName>System.Reflection.Emit.ILGeneration</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Puts an instruction onto the Microsoft Intermediate Language (MSIL) stream for the just-in-time (JIT) compiler.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

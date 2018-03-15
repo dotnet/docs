@@ -1,7 +1,10 @@
-<Type Name="ToolZoneDesigner" FullName="System.Web.UI.Design.WebControls.WebParts.ToolZoneDesigner">
+﻿<Type Name="ToolZoneDesigner" FullName="System.Web.UI.Design.WebControls.WebParts.ToolZoneDesigner">
   <TypeSignature Language="C#" Value="public class ToolZoneDesigner : System.Web.UI.Design.WebControls.WebParts.WebZoneDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolZoneDesigner extends System.Web.UI.Design.WebControls.WebParts.WebZoneDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.WebParts.ToolZoneDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolZoneDesigner&#xA;Inherits WebZoneDesigner" />
+  <TypeSignature Language="F#" Value="type ToolZoneDesigner = class&#xA;    inherit WebZoneDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolZoneDesigner : System::Web::UI::Design::WebControls::WebParts::WebZoneDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,8 @@
       <MemberSignature Language="C#" Value="public ToolZoneDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.ToolZoneDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolZoneDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -47,6 +52,9 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.WebParts.ToolZoneDesigner.ActionLists" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.WebControls.WebParts.ToolZoneDesigner.ActionLists" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -72,6 +80,9 @@
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.WebParts.ToolZoneDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="toolZoneDesigner.Initialize component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -93,6 +104,9 @@
       <MemberSignature Language="C#" Value="protected bool ViewInBrowseMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ViewInBrowseMode" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.WebParts.ToolZoneDesigner.ViewInBrowseMode" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ViewInBrowseMode As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ViewInBrowseMode : bool" Usage="System.Web.UI.Design.WebControls.WebParts.ToolZoneDesigner.ViewInBrowseMode" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool ViewInBrowseMode { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

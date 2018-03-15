@@ -1,7 +1,10 @@
-<Type Name="ManagementOptions" FullName="System.Management.ManagementOptions">
+﻿<Type Name="ManagementOptions" FullName="System.Management.ManagementOptions">
   <TypeSignature Language="C#" Value="public abstract class ManagementOptions : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ManagementOptions extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Management.ManagementOptions" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ManagementOptions&#xA;Implements ICloneable" />
+  <TypeSignature Language="F#" Value="type ManagementOptions = class&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ManagementOptions abstract : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Management</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,7 +31,13 @@
       <MemberSignature Language="C#" Value="public abstract object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Management.ManagementOptions.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj" Usage="managementOptions.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,6 +66,9 @@
       <MemberSignature Language="C#" Value="public System.Management.ManagementNamedValueCollection Context { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Management.ManagementNamedValueCollection Context" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementOptions.Context" />
+      <MemberSignature Language="VB.NET" Value="Public Property Context As ManagementNamedValueCollection" />
+      <MemberSignature Language="F#" Value="member this.Context : System.Management.ManagementNamedValueCollection with get, set" Usage="System.Management.ManagementOptions.Context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Management::ManagementNamedValueCollection ^ Context { System::Management::ManagementNamedValueCollection ^ get(); void set(System::Management::ManagementNamedValueCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -87,6 +99,9 @@
       <MemberSignature Language="C#" Value="public static readonly TimeSpan InfiniteTimeout;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.TimeSpan InfiniteTimeout" />
       <MemberSignature Language="DocId" Value="F:System.Management.ManagementOptions.InfiniteTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InfiniteTimeout As TimeSpan " />
+      <MemberSignature Language="F#" Value=" staticval mutable InfiniteTimeout : TimeSpan" Usage="System.Management.ManagementOptions.InfiniteTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly TimeSpan InfiniteTimeout;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>
@@ -111,6 +126,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan Timeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Timeout" />
       <MemberSignature Language="DocId" Value="P:System.Management.ManagementOptions.Timeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property Timeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.Timeout : TimeSpan with get, set" Usage="System.Management.ManagementOptions.Timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Timeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Management</AssemblyName>

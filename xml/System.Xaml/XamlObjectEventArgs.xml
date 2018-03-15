@@ -1,7 +1,10 @@
-<Type Name="XamlObjectEventArgs" FullName="System.Xaml.XamlObjectEventArgs">
+﻿<Type Name="XamlObjectEventArgs" FullName="System.Xaml.XamlObjectEventArgs">
   <TypeSignature Language="C#" Value="public class XamlObjectEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlObjectEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlObjectEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlObjectEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type XamlObjectEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlObjectEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public XamlObjectEventArgs (object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlObjectEventArgs.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (instance As Object)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlObjectEventArgs : obj -&gt; System.Xaml.XamlObjectEventArgs" Usage="new System.Xaml.XamlObjectEventArgs instance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlObjectEventArgs(System::Object ^ instance);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -46,6 +52,9 @@
       <MemberSignature Language="C#" Value="public int ElementLineNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ElementLineNumber" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectEventArgs.ElementLineNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementLineNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.ElementLineNumber : int" Usage="System.Xaml.XamlObjectEventArgs.ElementLineNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ElementLineNumber { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -64,6 +73,9 @@
       <MemberSignature Language="C#" Value="public int ElementLinePosition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ElementLinePosition" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectEventArgs.ElementLinePosition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementLinePosition As Integer" />
+      <MemberSignature Language="F#" Value="member this.ElementLinePosition : int" Usage="System.Xaml.XamlObjectEventArgs.ElementLinePosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ElementLinePosition { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -82,6 +94,9 @@
       <MemberSignature Language="C#" Value="public object Instance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Instance" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectEventArgs.Instance" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Instance As Object" />
+      <MemberSignature Language="F#" Value="member this.Instance : obj" Usage="System.Xaml.XamlObjectEventArgs.Instance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Instance { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -100,6 +115,9 @@
       <MemberSignature Language="C#" Value="public Uri SourceBamlUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri SourceBamlUri" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlObjectEventArgs.SourceBamlUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceBamlUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.SourceBamlUri : Uri" Usage="System.Xaml.XamlObjectEventArgs.SourceBamlUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SourceBamlUri { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

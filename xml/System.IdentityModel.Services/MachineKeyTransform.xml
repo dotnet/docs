@@ -1,7 +1,10 @@
-<Type Name="MachineKeyTransform" FullName="System.IdentityModel.Services.MachineKeyTransform">
+﻿<Type Name="MachineKeyTransform" FullName="System.IdentityModel.Services.MachineKeyTransform">
   <TypeSignature Language="C#" Value="public class MachineKeyTransform : System.IdentityModel.CookieTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MachineKeyTransform extends System.IdentityModel.CookieTransform" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.MachineKeyTransform" />
+  <TypeSignature Language="VB.NET" Value="Public Class MachineKeyTransform&#xA;Inherits CookieTransform" />
+  <TypeSignature Language="F#" Value="type MachineKeyTransform = class&#xA;    inherit CookieTransform" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MachineKeyTransform : System::IdentityModel::CookieTransform" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public MachineKeyTransform ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.MachineKeyTransform.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MachineKeyTransform();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public override byte[] Decode (byte[] encoded);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] Decode(unsigned int8[] encoded) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.MachineKeyTransform.Decode(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Decode (encoded As Byte()) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.Decode : byte[] -&gt; byte[]" Usage="machineKeyTransform.Decode encoded" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Decode(cli::array &lt;System::Byte&gt; ^ encoded);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -56,6 +64,9 @@
       <MemberSignature Language="C#" Value="public override byte[] Encode (byte[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] Encode(unsigned int8[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.MachineKeyTransform.Encode(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Encode (value As Byte()) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.Encode : byte[] -&gt; byte[]" Usage="machineKeyTransform.Encode value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ Encode(cli::array &lt;System::Byte&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

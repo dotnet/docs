@@ -1,7 +1,10 @@
-<Type Name="ObjectStateManager" FullName="System.Data.Objects.ObjectStateManager">
+﻿<Type Name="ObjectStateManager" FullName="System.Data.Objects.ObjectStateManager">
   <TypeSignature Language="C#" Value="public class ObjectStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectStateManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.ObjectStateManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class ObjectStateManager" />
+  <TypeSignature Language="F#" Value="type ObjectStateManager = class&#xA;    interface IEntityStateManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public ObjectStateManager (System.Data.Metadata.Edm.MetadataWorkspace metadataWorkspace);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Metadata.Edm.MetadataWorkspace metadataWorkspace) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectStateManager.#ctor(System.Data.Metadata.Edm.MetadataWorkspace)" />
+      <MemberSignature Language="F#" Value="new System.Data.Objects.ObjectStateManager : System.Data.Metadata.Edm.MetadataWorkspace -&gt; System.Data.Objects.ObjectStateManager" Usage="new System.Data.Objects.ObjectStateManager metadataWorkspace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ObjectStateManager(System::Data::Metadata::Edm::MetadataWorkspace ^ metadataWorkspace);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -66,6 +71,8 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectStateEntry ChangeObjectState (object entity, System.Data.EntityState entityState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectStateEntry ChangeObjectState(object entity, valuetype System.Data.EntityState entityState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectStateManager.ChangeObjectState(System.Object,System.Data.EntityState)" />
+      <MemberSignature Language="F#" Value="member this.ChangeObjectState : obj * System.Data.EntityState -&gt; System.Data.Objects.ObjectStateEntry" Usage="objectStateManager.ChangeObjectState (entity, entityState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectStateEntry ^ ChangeObjectState(System::Object ^ entity, System::Data::EntityState entityState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -130,6 +137,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectStateEntry ChangeRelationshipState (object sourceEntity, object targetEntity, string navigationProperty, System.Data.EntityState relationshipState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectStateEntry ChangeRelationshipState(object sourceEntity, object targetEntity, string navigationProperty, valuetype System.Data.EntityState relationshipState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectStateManager.ChangeRelationshipState(System.Object,System.Object,System.String,System.Data.EntityState)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ChangeRelationshipState (sourceEntity As Object, targetEntity As Object, navigationProperty As String, relationshipState As EntityState) As ObjectStateEntry" />
+      <MemberSignature Language="F#" Value="member this.ChangeRelationshipState : obj * obj * string * System.Data.EntityState -&gt; System.Data.Objects.ObjectStateEntry" Usage="objectStateManager.ChangeRelationshipState (sourceEntity, targetEntity, navigationProperty, relationshipState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectStateEntry ^ ChangeRelationshipState(System::Object ^ sourceEntity, System::Object ^ targetEntity, System::String ^ navigationProperty, System::Data::EntityState relationshipState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -178,6 +188,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectStateEntry ChangeRelationshipState (object sourceEntity, object targetEntity, string relationshipName, string targetRoleName, System.Data.EntityState relationshipState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectStateEntry ChangeRelationshipState(object sourceEntity, object targetEntity, string relationshipName, string targetRoleName, valuetype System.Data.EntityState relationshipState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectStateManager.ChangeRelationshipState(System.Object,System.Object,System.String,System.String,System.Data.EntityState)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ChangeRelationshipState (sourceEntity As Object, targetEntity As Object, relationshipName As String, targetRoleName As String, relationshipState As EntityState) As ObjectStateEntry" />
+      <MemberSignature Language="F#" Value="member this.ChangeRelationshipState : obj * obj * string * string * System.Data.EntityState -&gt; System.Data.Objects.ObjectStateEntry" Usage="objectStateManager.ChangeRelationshipState (sourceEntity, targetEntity, relationshipName, targetRoleName, relationshipState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectStateEntry ^ ChangeRelationshipState(System::Object ^ sourceEntity, System::Object ^ targetEntity, System::String ^ relationshipName, System::String ^ targetRoleName, System::Data::EntityState relationshipState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -228,6 +241,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectStateEntry ChangeRelationshipState&lt;TEntity&gt; (TEntity sourceEntity, object targetEntity, System.Linq.Expressions.Expression&lt;Func&lt;TEntity,object&gt;&gt; navigationPropertySelector, System.Data.EntityState relationshipState) where TEntity : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectStateEntry ChangeRelationshipState&lt;class TEntity&gt;(!!TEntity sourceEntity, object targetEntity, class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!!TEntity, object&gt;&gt; navigationPropertySelector, valuetype System.Data.EntityState relationshipState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectStateManager.ChangeRelationshipState``1(``0,System.Object,System.Linq.Expressions.Expression{System.Func{``0,System.Object}},System.Data.EntityState)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ChangeRelationshipState(Of TEntity As Class) (sourceEntity As TEntity, targetEntity As Object, navigationPropertySelector As Expression(Of Func(Of TEntity, Object)), relationshipState As EntityState) As ObjectStateEntry" />
+      <MemberSignature Language="F#" Value="member this.ChangeRelationshipState : 'Entity * obj * System.Linq.Expressions.Expression&lt;Func&lt;'Entity, obj&gt;&gt; * System.Data.EntityState -&gt; System.Data.Objects.ObjectStateEntry (requires 'Entity : null)" Usage="objectStateManager.ChangeRelationshipState (sourceEntity, targetEntity, navigationPropertySelector, relationshipState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEntity&gt;&#xA; where TEntity : class System::Data::Objects::ObjectStateEntry ^ ChangeRelationshipState(TEntity sourceEntity, System::Object ^ targetEntity, System::Linq::Expressions::Expression&lt;Func&lt;TEntity, System::Object ^&gt; ^&gt; ^ navigationPropertySelector, System::Data::EntityState relationshipState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -286,6 +302,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Data.Objects.ObjectStateEntry&gt; GetObjectStateEntries (System.Data.EntityState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Data.Objects.ObjectStateEntry&gt; GetObjectStateEntries(valuetype System.Data.EntityState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectStateManager.GetObjectStateEntries(System.Data.EntityState)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetObjectStateEntries (state As EntityState) As IEnumerable(Of ObjectStateEntry)" />
+      <MemberSignature Language="F#" Value="member this.GetObjectStateEntries : System.Data.EntityState -&gt; seq&lt;System.Data.Objects.ObjectStateEntry&gt;" Usage="objectStateManager.GetObjectStateEntries state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::Generic::IEnumerable&lt;System::Data::Objects::ObjectStateEntry ^&gt; ^ GetObjectStateEntries(System::Data::EntityState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -312,10 +331,22 @@
         <exception cref="T:System.ArgumentException">When <paramref name="state" /> is <see cref="F:System.Data.EntityState.Detached" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetObjectStateEntry">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an <see cref="T:System.Data.Objects.ObjectStateEntry" /> for a specific object or relationship entry.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetObjectStateEntry">
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectStateEntry GetObjectStateEntry (System.Data.EntityKey key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectStateEntry GetObjectStateEntry(class System.Data.EntityKey key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectStateManager.GetObjectStateEntry(System.Data.EntityKey)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetObjectStateEntry (key As EntityKey) As ObjectStateEntry" />
+      <MemberSignature Language="F#" Value="member this.GetObjectStateEntry : System.Data.EntityKey -&gt; System.Data.Objects.ObjectStateEntry" Usage="objectStateManager.GetObjectStateEntry key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectStateEntry ^ GetObjectStateEntry(System::Data::EntityKey ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -356,6 +387,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.ObjectStateEntry GetObjectStateEntry (object entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.ObjectStateEntry GetObjectStateEntry(object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectStateManager.GetObjectStateEntry(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetObjectStateEntry (entity As Object) As ObjectStateEntry" />
+      <MemberSignature Language="F#" Value="member this.GetObjectStateEntry : obj -&gt; System.Data.Objects.ObjectStateEntry" Usage="objectStateManager.GetObjectStateEntry entity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::ObjectStateEntry ^ GetObjectStateEntry(System::Object ^ entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -386,6 +420,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Objects.DataClasses.RelationshipManager GetRelationshipManager (object entity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Objects.DataClasses.RelationshipManager GetRelationshipManager(object entity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectStateManager.GetRelationshipManager(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRelationshipManager (entity As Object) As RelationshipManager" />
+      <MemberSignature Language="F#" Value="member this.GetRelationshipManager : obj -&gt; System.Data.Objects.DataClasses.RelationshipManager" Usage="objectStateManager.GetRelationshipManager entity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Objects::DataClasses::RelationshipManager ^ GetRelationshipManager(System::Object ^ entity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -418,6 +455,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.MetadataWorkspace MetadataWorkspace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.MetadataWorkspace MetadataWorkspace" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.ObjectStateManager.MetadataWorkspace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MetadataWorkspace As MetadataWorkspace" />
+      <MemberSignature Language="F#" Value="member this.MetadataWorkspace : System.Data.Metadata.Edm.MetadataWorkspace" Usage="System.Data.Objects.ObjectStateManager.MetadataWorkspace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::MetadataWorkspace ^ MetadataWorkspace { System::Data::Metadata::Edm::MetadataWorkspace ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -448,6 +488,9 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.CollectionChangeEventHandler ObjectStateManagerChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CollectionChangeEventHandler ObjectStateManagerChanged" />
       <MemberSignature Language="DocId" Value="E:System.Data.Objects.ObjectStateManager.ObjectStateManagerChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ObjectStateManagerChanged As CollectionChangeEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ObjectStateManagerChanged : System.ComponentModel.CollectionChangeEventHandler " Usage="member this.ObjectStateManagerChanged : System.ComponentModel.CollectionChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CollectionChangeEventHandler ^ ObjectStateManagerChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -461,10 +504,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryGetObjectStateEntry">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Tries to return an <see cref="T:System.Data.Objects.ObjectStateEntry" /> object for a specific object or relationship entry.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryGetObjectStateEntry">
       <MemberSignature Language="C#" Value="public bool TryGetObjectStateEntry (System.Data.EntityKey key, out System.Data.Objects.ObjectStateEntry entry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObjectStateEntry(class System.Data.EntityKey key, [out] class System.Data.Objects.ObjectStateEntry&amp; entry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectStateManager.TryGetObjectStateEntry(System.Data.EntityKey,System.Data.Objects.ObjectStateEntry@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetObjectStateEntry (key As EntityKey, ByRef entry As ObjectStateEntry) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetObjectStateEntry : System.Data.EntityKey *  -&gt; bool" Usage="objectStateManager.TryGetObjectStateEntry (key, entry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetObjectStateEntry(System::Data::EntityKey ^ key, [Runtime::InteropServices::Out] System::Data::Objects::ObjectStateEntry ^ % entry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -512,6 +567,9 @@
       <MemberSignature Language="C#" Value="public bool TryGetObjectStateEntry (object entity, out System.Data.Objects.ObjectStateEntry entry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetObjectStateEntry(object entity, [out] class System.Data.Objects.ObjectStateEntry&amp; entry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectStateManager.TryGetObjectStateEntry(System.Object,System.Data.Objects.ObjectStateEntry@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetObjectStateEntry (entity As Object, ByRef entry As ObjectStateEntry) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetObjectStateEntry : obj *  -&gt; bool" Usage="objectStateManager.TryGetObjectStateEntry (entity, entry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetObjectStateEntry(System::Object ^ entity, [Runtime::InteropServices::Out] System::Data::Objects::ObjectStateEntry ^ % entry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -543,6 +601,9 @@
       <MemberSignature Language="C#" Value="public bool TryGetRelationshipManager (object entity, out System.Data.Objects.DataClasses.RelationshipManager relationshipManager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetRelationshipManager(object entity, [out] class System.Data.Objects.DataClasses.RelationshipManager&amp; relationshipManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.ObjectStateManager.TryGetRelationshipManager(System.Object,System.Data.Objects.DataClasses.RelationshipManager@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetRelationshipManager (entity As Object, ByRef relationshipManager As RelationshipManager) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetRelationshipManager : obj *  -&gt; bool" Usage="objectStateManager.TryGetRelationshipManager (entity, relationshipManager)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetRelationshipManager(System::Object ^ entity, [Runtime::InteropServices::Out] System::Data::Objects::DataClasses::RelationshipManager ^ % relationshipManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -575,23 +636,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TryGetObjectStateEntry">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Tries to return an <see cref="T:System.Data.Objects.ObjectStateEntry" /> object for a specific object or relationship entry.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetObjectStateEntry">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an <see cref="T:System.Data.Objects.ObjectStateEntry" /> for a specific object or relationship entry.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

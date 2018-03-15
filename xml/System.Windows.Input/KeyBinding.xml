@@ -1,7 +1,10 @@
-<Type Name="KeyBinding" FullName="System.Windows.Input.KeyBinding">
+﻿<Type Name="KeyBinding" FullName="System.Windows.Input.KeyBinding">
   <TypeSignature Language="C#" Value="public class KeyBinding : System.Windows.Input.InputBinding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyBinding extends System.Windows.Input.InputBinding" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.KeyBinding" />
+  <TypeSignature Language="VB.NET" Value="Public Class KeyBinding&#xA;Inherits InputBinding" />
+  <TypeSignature Language="F#" Value="type KeyBinding = class&#xA;    inherit InputBinding" />
+  <TypeSignature Language="C++ CLI" Value="public ref class KeyBinding : System::Windows::Input::InputBinding" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,10 +49,21 @@
     <altmember cref="T:System.Windows.Input.InputBinding" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyBinding" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public KeyBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -73,6 +87,9 @@
       <MemberSignature Language="C#" Value="public KeyBinding (System.Windows.Input.ICommand command, System.Windows.Input.KeyGesture gesture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.ICommand command, class System.Windows.Input.KeyGesture gesture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyBinding.#ctor(System.Windows.Input.ICommand,System.Windows.Input.KeyGesture)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (command As ICommand, gesture As KeyGesture)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.KeyBinding : System.Windows.Input.ICommand * System.Windows.Input.KeyGesture -&gt; System.Windows.Input.KeyBinding" Usage="new System.Windows.Input.KeyBinding (command, gesture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyBinding(System::Windows::Input::ICommand ^ command, System::Windows::Input::KeyGesture ^ gesture);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +120,8 @@
       <MemberSignature Language="C#" Value="public KeyBinding (System.Windows.Input.ICommand command, System.Windows.Input.Key key, System.Windows.Input.ModifierKeys modifiers);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Input.ICommand command, valuetype System.Windows.Input.Key key, valuetype System.Windows.Input.ModifierKeys modifiers) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyBinding.#ctor(System.Windows.Input.ICommand,System.Windows.Input.Key,System.Windows.Input.ModifierKeys)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.KeyBinding : System.Windows.Input.ICommand * System.Windows.Input.Key * System.Windows.Input.ModifierKeys -&gt; System.Windows.Input.KeyBinding" Usage="new System.Windows.Input.KeyBinding (command, key, modifiers)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyBinding(System::Windows::Input::ICommand ^ command, System::Windows::Input::Key key, System::Windows::Input::ModifierKeys modifiers);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -133,6 +152,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.KeyBinding.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="keyBinding.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -152,6 +174,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Input.InputGesture Gesture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.InputGesture Gesture" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyBinding.Gesture" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Gesture As InputGesture" />
+      <MemberSignature Language="F#" Value="member this.Gesture : System.Windows.Input.InputGesture with get, set" Usage="System.Windows.Input.KeyBinding.Gesture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Input::InputGesture ^ Gesture { System::Windows::Input::InputGesture ^ get(); void set(System::Windows::Input::InputGesture ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -204,6 +229,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.Key Key { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.Key Key" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyBinding.Key" />
+      <MemberSignature Language="VB.NET" Value="Public Property Key As Key" />
+      <MemberSignature Language="F#" Value="member this.Key : System.Windows.Input.Key with get, set" Usage="System.Windows.Input.KeyBinding.Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::Key Key { System::Windows::Input::Key get(); void set(System::Windows::Input::Key value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -239,6 +267,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty KeyProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty KeyProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyBinding.KeyProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly KeyProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable KeyProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.KeyBinding.KeyProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ KeyProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -256,6 +287,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.ModifierKeys Modifiers { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.ModifierKeys Modifiers" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.KeyBinding.Modifiers" />
+      <MemberSignature Language="VB.NET" Value="Public Property Modifiers As ModifierKeys" />
+      <MemberSignature Language="F#" Value="member this.Modifiers : System.Windows.Input.ModifierKeys with get, set" Usage="System.Windows.Input.KeyBinding.Modifiers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ModifierKeys Modifiers { System::Windows::Input::ModifierKeys get(); void set(System::Windows::Input::ModifierKeys value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -304,6 +338,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ModifiersProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ModifiersProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.KeyBinding.ModifiersProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ModifiersProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ModifiersProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.KeyBinding.ModifiersProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ModifiersProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -317,14 +354,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Input.KeyBinding" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

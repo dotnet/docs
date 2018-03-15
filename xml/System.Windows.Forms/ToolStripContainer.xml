@@ -1,7 +1,10 @@
-<Type Name="ToolStripContainer" FullName="System.Windows.Forms.ToolStripContainer">
+﻿<Type Name="ToolStripContainer" FullName="System.Windows.Forms.ToolStripContainer">
   <TypeSignature Language="C#" Value="public class ToolStripContainer : System.Windows.Forms.ContainerControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripContainer extends System.Windows.Forms.ContainerControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripContainer" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolStripContainer&#xA;Inherits ContainerControl" />
+  <TypeSignature Language="F#" Value="type ToolStripContainer = class&#xA;    inherit ContainerControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolStripContainer : System::Windows::Forms::ContainerControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,7 +18,7 @@
       <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.ToolStripContainerDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -50,6 +53,8 @@
       <MemberSignature Language="C#" Value="public ToolStripContainer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripContainer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripContainer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +70,9 @@
       <MemberSignature Language="C#" Value="public override bool AutoScroll { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoScroll" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.AutoScroll" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property AutoScroll As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoScroll : bool with get, set" Usage="System.Windows.Forms.ToolStripContainer.AutoScroll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AutoScroll { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,7 +83,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -102,6 +110,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Size AutoScrollMargin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size AutoScrollMargin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.AutoScrollMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoScrollMargin As Size" />
+      <MemberSignature Language="F#" Value="member this.AutoScrollMargin : System.Drawing.Size with get, set" Usage="System.Windows.Forms.ToolStripContainer.AutoScrollMargin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size AutoScrollMargin { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -112,7 +123,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -138,6 +149,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Size AutoScrollMinSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size AutoScrollMinSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.AutoScrollMinSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoScrollMinSize As Size" />
+      <MemberSignature Language="F#" Value="member this.AutoScrollMinSize : System.Drawing.Size with get, set" Usage="System.Windows.Forms.ToolStripContainer.AutoScrollMinSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Size AutoScrollMinSize { System::Drawing::Size get(); void set(System::Drawing::Size value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -148,7 +162,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -174,6 +188,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ToolStripContainer.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -184,7 +201,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -210,6 +227,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackColorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripContainer.BackColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackColorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackColorChanged : EventHandler " Usage="member this.BackColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -220,7 +240,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -245,6 +265,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Image BackgroundImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image BackgroundImage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.BackgroundImage" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackgroundImage As Image" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.ToolStripContainer.BackgroundImage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -255,7 +278,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -281,6 +304,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripContainer.BackgroundImageChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -291,7 +317,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -316,6 +342,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.ImageLayout BackgroundImageLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImageLayout BackgroundImageLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.BackgroundImageLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.ToolStripContainer.BackgroundImageLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -326,7 +355,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -352,6 +381,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageLayoutChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageLayoutChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripContainer.BackgroundImageLayoutChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayoutChanged : EventHandler " Usage="member this.BackgroundImageLayoutChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -362,7 +394,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -387,6 +419,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripPanel BottomToolStripPanel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripPanel BottomToolStripPanel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.BottomToolStripPanel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BottomToolStripPanel As ToolStripPanel" />
+      <MemberSignature Language="F#" Value="member this.BottomToolStripPanel : System.Windows.Forms.ToolStripPanel" Usage="System.Windows.Forms.ToolStripContainer.BottomToolStripPanel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripPanel ^ BottomToolStripPanel { System::Windows::Forms::ToolStripPanel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -394,7 +429,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
@@ -420,6 +455,9 @@
       <MemberSignature Language="C#" Value="public bool BottomToolStripPanelVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BottomToolStripPanelVisible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.BottomToolStripPanelVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Property BottomToolStripPanelVisible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.BottomToolStripPanelVisible : bool with get, set" Usage="System.Windows.Forms.ToolStripContainer.BottomToolStripPanelVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BottomToolStripPanelVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -451,6 +489,9 @@
       <MemberSignature Language="C#" Value="public bool CausesValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.CausesValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Property CausesValidation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Windows.Forms.ToolStripContainer.CausesValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CausesValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -461,7 +502,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -488,6 +529,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler CausesValidationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CausesValidationChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripContainer.CausesValidationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CausesValidationChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CausesValidationChanged : EventHandler " Usage="member this.CausesValidationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CausesValidationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -520,6 +564,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripContentPanel ContentPanel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripContentPanel ContentPanel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.ContentPanel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentPanel As ToolStripContentPanel" />
+      <MemberSignature Language="F#" Value="member this.ContentPanel : System.Windows.Forms.ToolStripContentPanel" Usage="System.Windows.Forms.ToolStripContainer.ContentPanel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripContentPanel ^ ContentPanel { System::Windows::Forms::ToolStripContentPanel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -527,7 +574,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
@@ -553,6 +600,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ContextMenuStrip ContextMenuStrip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ContextMenuStrip ContextMenuStrip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.ContextMenuStrip" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextMenuStrip As ContextMenuStrip" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStrip : System.Windows.Forms.ContextMenuStrip with get, set" Usage="System.Windows.Forms.ToolStripContainer.ContextMenuStrip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ContextMenuStrip ^ ContextMenuStrip { System::Windows::Forms::ContextMenuStrip ^ get(); void set(System::Windows::Forms::ContextMenuStrip ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -563,7 +613,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -589,6 +639,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ContextMenuStripChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ContextMenuStripChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripContainer.ContextMenuStripChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ContextMenuStripChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStripChanged : EventHandler " Usage="member this.ContextMenuStripChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ContextMenuStripChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -621,6 +674,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Control.ControlCollection Controls { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Control/ControlCollection Controls" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.Controls" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Controls As Control.ControlCollection" />
+      <MemberSignature Language="F#" Value="member this.Controls : System.Windows.Forms.Control.ControlCollection" Usage="System.Windows.Forms.ToolStripContainer.Controls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Control::ControlCollection ^ Controls { System::Windows::Forms::Control::ControlCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -628,7 +684,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -654,6 +710,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.Control.ControlCollection CreateControlsInstance ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Forms.Control/ControlCollection CreateControlsInstance() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripContainer.CreateControlsInstance" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlsInstance () As Control.ControlCollection" />
+      <MemberSignature Language="F#" Value="override this.CreateControlsInstance : unit -&gt; System.Windows.Forms.Control.ControlCollection" Usage="toolStripContainer.CreateControlsInstance " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Forms::Control::ControlCollection ^ CreateControlsInstance();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -678,6 +737,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.Cursor Cursor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Cursor Cursor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.Cursor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Cursor As Cursor" />
+      <MemberSignature Language="F#" Value="member this.Cursor : System.Windows.Forms.Cursor with get, set" Usage="System.Windows.Forms.ToolStripContainer.Cursor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Cursor ^ Cursor { System::Windows::Forms::Cursor ^ get(); void set(System::Windows::Forms::Cursor ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -688,7 +750,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -714,6 +776,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler CursorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CursorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripContainer.CursorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CursorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CursorChanged : EventHandler " Usage="member this.CursorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CursorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -724,7 +789,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -749,6 +814,9 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.ToolStripContainer.DefaultSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -767,6 +835,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ToolStripContainer.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -777,7 +848,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -803,6 +874,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ForeColorChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ForeColorChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ToolStripContainer.ForeColorChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ForeColorChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ForeColorChanged : EventHandler " Usage="member this.ForeColorChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ForeColorChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -813,7 +887,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -838,6 +912,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripPanel LeftToolStripPanel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripPanel LeftToolStripPanel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.LeftToolStripPanel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LeftToolStripPanel As ToolStripPanel" />
+      <MemberSignature Language="F#" Value="member this.LeftToolStripPanel : System.Windows.Forms.ToolStripPanel" Usage="System.Windows.Forms.ToolStripContainer.LeftToolStripPanel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripPanel ^ LeftToolStripPanel { System::Windows::Forms::ToolStripPanel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -845,7 +922,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
@@ -871,6 +948,9 @@
       <MemberSignature Language="C#" Value="public bool LeftToolStripPanelVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool LeftToolStripPanelVisible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.LeftToolStripPanelVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Property LeftToolStripPanelVisible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.LeftToolStripPanelVisible : bool with get, set" Usage="System.Windows.Forms.ToolStripContainer.LeftToolStripPanelVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool LeftToolStripPanelVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -902,6 +982,9 @@
       <MemberSignature Language="C#" Value="protected override void OnRightToLeftChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRightToLeftChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripContainer.OnRightToLeftChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRightToLeftChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnRightToLeftChanged : EventArgs -&gt; unit" Usage="toolStripContainer.OnRightToLeftChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRightToLeftChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -923,6 +1006,9 @@
       <MemberSignature Language="C#" Value="protected override void OnSizeChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSizeChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripContainer.OnSizeChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSizeChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnSizeChanged : EventArgs -&gt; unit" Usage="toolStripContainer.OnSizeChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSizeChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -956,6 +1042,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripPanel RightToolStripPanel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripPanel RightToolStripPanel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.RightToolStripPanel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RightToolStripPanel As ToolStripPanel" />
+      <MemberSignature Language="F#" Value="member this.RightToolStripPanel : System.Windows.Forms.ToolStripPanel" Usage="System.Windows.Forms.ToolStripContainer.RightToolStripPanel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripPanel ^ RightToolStripPanel { System::Windows::Forms::ToolStripPanel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -963,7 +1052,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
@@ -989,6 +1078,9 @@
       <MemberSignature Language="C#" Value="public bool RightToolStripPanelVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RightToolStripPanelVisible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.RightToolStripPanelVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Property RightToolStripPanelVisible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RightToolStripPanelVisible : bool with get, set" Usage="System.Windows.Forms.ToolStripContainer.RightToolStripPanelVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool RightToolStripPanelVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1020,6 +1112,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripPanel TopToolStripPanel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripPanel TopToolStripPanel" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.TopToolStripPanel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TopToolStripPanel As ToolStripPanel" />
+      <MemberSignature Language="F#" Value="member this.TopToolStripPanel : System.Windows.Forms.ToolStripPanel" Usage="System.Windows.Forms.ToolStripContainer.TopToolStripPanel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ToolStripPanel ^ TopToolStripPanel { System::Windows::Forms::ToolStripPanel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1027,7 +1122,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
@@ -1053,6 +1148,9 @@
       <MemberSignature Language="C#" Value="public bool TopToolStripPanelVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool TopToolStripPanelVisible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripContainer.TopToolStripPanelVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Property TopToolStripPanelVisible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TopToolStripPanelVisible : bool with get, set" Usage="System.Windows.Forms.ToolStripContainer.TopToolStripPanelVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool TopToolStripPanelVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

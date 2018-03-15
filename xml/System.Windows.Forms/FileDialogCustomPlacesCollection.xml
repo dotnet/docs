@@ -1,7 +1,10 @@
-<Type Name="FileDialogCustomPlacesCollection" FullName="System.Windows.Forms.FileDialogCustomPlacesCollection">
+﻿<Type Name="FileDialogCustomPlacesCollection" FullName="System.Windows.Forms.FileDialogCustomPlacesCollection">
   <TypeSignature Language="C#" Value="public class FileDialogCustomPlacesCollection : System.Collections.ObjectModel.Collection&lt;System.Windows.Forms.FileDialogCustomPlace&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileDialogCustomPlacesCollection extends System.Collections.ObjectModel.Collection`1&lt;class System.Windows.Forms.FileDialogCustomPlace&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FileDialogCustomPlacesCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class FileDialogCustomPlacesCollection&#xA;Inherits Collection(Of FileDialogCustomPlace)" />
+  <TypeSignature Language="F#" Value="type FileDialogCustomPlacesCollection = class&#xA;    inherit Collection&lt;FileDialogCustomPlace&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileDialogCustomPlacesCollection : System::Collections::ObjectModel::Collection&lt;System::Windows::Forms::FileDialogCustomPlace ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="public FileDialogCustomPlacesCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlacesCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileDialogCustomPlacesCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -50,10 +55,23 @@
         <altmember cref="T:System.Windows.Forms.FileDialogCustomPlace" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a custom place to the <see cref="T:System.Windows.Forms.FileDialogCustomPlacesCollection" /> collection.</summary>
+        <altmember cref="T:System.Windows.Forms.FileDialogCustomPlace" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (Guid knownFolderGuid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(valuetype System.Guid knownFolderGuid) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlacesCollection.Add(System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (knownFolderGuid As Guid)" />
+      <MemberSignature Language="F#" Value="override this.Add : Guid -&gt; unit" Usage="fileDialogCustomPlacesCollection.Add knownFolderGuid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(Guid knownFolderGuid);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -93,6 +111,9 @@
       <MemberSignature Language="C#" Value="public void Add (string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.FileDialogCustomPlacesCollection.Add(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (path As String)" />
+      <MemberSignature Language="F#" Value="override this.Add : string -&gt; unit" Usage="fileDialogCustomPlacesCollection.Add path" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ path);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,15 +149,5 @@
         <altmember cref="T:System.Windows.Forms.FileDialogCustomPlace" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a custom place to the <see cref="T:System.Windows.Forms.FileDialogCustomPlacesCollection" /> collection.</summary>
-        <altmember cref="T:System.Windows.Forms.FileDialogCustomPlace" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

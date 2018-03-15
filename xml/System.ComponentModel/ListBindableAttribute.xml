@@ -1,7 +1,10 @@
-<Type Name="ListBindableAttribute" FullName="System.ComponentModel.ListBindableAttribute">
+﻿<Type Name="ListBindableAttribute" FullName="System.ComponentModel.ListBindableAttribute">
   <TypeSignature Language="C#" Value="public sealed class ListBindableAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ListBindableAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ListBindableAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ListBindableAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ListBindableAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListBindableAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -36,10 +39,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ListBindableAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ListBindableAttribute (bool listBindable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool listBindable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListBindableAttribute.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (listBindable As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.ListBindableAttribute : bool -&gt; System.ComponentModel.ListBindableAttribute" Usage="new System.ComponentModel.ListBindableAttribute listBindable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListBindableAttribute(bool listBindable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +84,9 @@
       <MemberSignature Language="C#" Value="public ListBindableAttribute (System.ComponentModel.BindableSupport flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ComponentModel.BindableSupport flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListBindableAttribute.#ctor(System.ComponentModel.BindableSupport)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (flags As BindableSupport)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.ListBindableAttribute : System.ComponentModel.BindableSupport -&gt; System.ComponentModel.ListBindableAttribute" Usage="new System.ComponentModel.ListBindableAttribute flags" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListBindableAttribute(System::ComponentModel::BindableSupport flags);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,6 +114,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.ListBindableAttribute Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.ListBindableAttribute Default" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListBindableAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As ListBindableAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.ListBindableAttribute" Usage="System.ComponentModel.ListBindableAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::ListBindableAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -128,6 +150,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListBindableAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="listBindableAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -160,6 +185,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListBindableAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="listBindableAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -188,6 +216,9 @@
       <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ListBindableAttribute.IsDefaultAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="listBindableAttribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -219,6 +250,9 @@
       <MemberSignature Language="C#" Value="public bool ListBindable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ListBindable" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ListBindableAttribute.ListBindable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ListBindable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ListBindable : bool" Usage="System.ComponentModel.ListBindableAttribute.ListBindable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ListBindable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -249,6 +283,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.ListBindableAttribute No;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.ListBindableAttribute No" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListBindableAttribute.No" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As ListBindableAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.ComponentModel.ListBindableAttribute" Usage="System.ComponentModel.ListBindableAttribute.No" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::ListBindableAttribute ^ No;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -275,6 +312,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.ListBindableAttribute Yes;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.ListBindableAttribute Yes" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ListBindableAttribute.Yes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As ListBindableAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.ComponentModel.ListBindableAttribute" Usage="System.ComponentModel.ListBindableAttribute.Yes" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::ListBindableAttribute ^ Yes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -304,15 +344,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ListBindableAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="VirtualPathData" FullName="System.Web.Routing.VirtualPathData">
+﻿<Type Name="VirtualPathData" FullName="System.Web.Routing.VirtualPathData">
   <TypeSignature Language="C#" Value="public class VirtualPathData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VirtualPathData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.Routing.VirtualPathData" />
+  <TypeSignature Language="VB.NET" Value="Public Class VirtualPathData" />
+  <TypeSignature Language="F#" Value="type VirtualPathData = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VirtualPathData" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="public VirtualPathData (System.Web.Routing.RouteBase route, string virtualPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.Routing.RouteBase route, string virtualPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Routing.VirtualPathData.#ctor(System.Web.Routing.RouteBase,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (route As RouteBase, virtualPath As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.Routing.VirtualPathData : System.Web.Routing.RouteBase * string -&gt; System.Web.Routing.VirtualPathData" Usage="new System.Web.Routing.VirtualPathData (route, virtualPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; VirtualPathData(System::Web::Routing::RouteBase ^ route, System::String ^ virtualPath);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +65,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Routing.RouteValueDictionary DataTokens { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Routing.RouteValueDictionary DataTokens" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.VirtualPathData.DataTokens" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataTokens As RouteValueDictionary" />
+      <MemberSignature Language="F#" Value="member this.DataTokens : System.Web.Routing.RouteValueDictionary" Usage="System.Web.Routing.VirtualPathData.DataTokens" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::RouteValueDictionary ^ DataTokens { System::Web::Routing::RouteValueDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +93,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Routing.RouteBase Route { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Routing.RouteBase Route" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.VirtualPathData.Route" />
+      <MemberSignature Language="VB.NET" Value="Public Property Route As RouteBase" />
+      <MemberSignature Language="F#" Value="member this.Route : System.Web.Routing.RouteBase with get, set" Usage="System.Web.Routing.VirtualPathData.Route" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Routing::RouteBase ^ Route { System::Web::Routing::RouteBase ^ get(); void set(System::Web::Routing::RouteBase ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -102,6 +114,9 @@
       <MemberSignature Language="C#" Value="public string VirtualPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string VirtualPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.Routing.VirtualPathData.VirtualPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property VirtualPath As String" />
+      <MemberSignature Language="F#" Value="member this.VirtualPath : string with get, set" Usage="System.Web.Routing.VirtualPathData.VirtualPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ VirtualPath { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

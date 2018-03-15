@@ -1,7 +1,10 @@
-<Type Name="TrackingDataItemValue" FullName="System.Workflow.Runtime.Tracking.TrackingDataItemValue">
+﻿<Type Name="TrackingDataItemValue" FullName="System.Workflow.Runtime.Tracking.TrackingDataItemValue">
   <TypeSignature Language="C#" Value="public class TrackingDataItemValue" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TrackingDataItemValue extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingDataItemValue" />
+  <TypeSignature Language="VB.NET" Value="Public Class TrackingDataItemValue" />
+  <TypeSignature Language="F#" Value="type TrackingDataItemValue = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TrackingDataItemValue" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +34,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingDataItemValue" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TrackingDataItemValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingDataItemValue.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TrackingDataItemValue();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -57,6 +71,9 @@
       <MemberSignature Language="C#" Value="public TrackingDataItemValue (string qualifiedName, string fieldName, string dataValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string qualifiedName, string fieldName, string dataValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingDataItemValue.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (qualifiedName As String, fieldName As String, dataValue As String)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.TrackingDataItemValue : string * string * string -&gt; System.Workflow.Runtime.Tracking.TrackingDataItemValue" Usage="new System.Workflow.Runtime.Tracking.TrackingDataItemValue (qualifiedName, fieldName, dataValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TrackingDataItemValue(System::String ^ qualifiedName, System::String ^ fieldName, System::String ^ dataValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -94,6 +111,9 @@
       <MemberSignature Language="C#" Value="public string DataValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataValue" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingDataItemValue.DataValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataValue As String" />
+      <MemberSignature Language="F#" Value="member this.DataValue : string with get, set" Usage="System.Workflow.Runtime.Tracking.TrackingDataItemValue.DataValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -127,6 +147,9 @@
       <MemberSignature Language="C#" Value="public string FieldName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FieldName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingDataItemValue.FieldName" />
+      <MemberSignature Language="VB.NET" Value="Public Property FieldName As String" />
+      <MemberSignature Language="F#" Value="member this.FieldName : string with get, set" Usage="System.Workflow.Runtime.Tracking.TrackingDataItemValue.FieldName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FieldName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -160,6 +183,9 @@
       <MemberSignature Language="C#" Value="public string QualifiedName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string QualifiedName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Runtime.Tracking.TrackingDataItemValue.QualifiedName" />
+      <MemberSignature Language="VB.NET" Value="Public Property QualifiedName As String" />
+      <MemberSignature Language="F#" Value="member this.QualifiedName : string with get, set" Usage="System.Workflow.Runtime.Tracking.TrackingDataItemValue.QualifiedName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ QualifiedName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -189,14 +215,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingDataItemValue" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

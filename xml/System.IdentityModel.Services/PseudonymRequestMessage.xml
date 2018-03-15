@@ -1,7 +1,10 @@
-<Type Name="PseudonymRequestMessage" FullName="System.IdentityModel.Services.PseudonymRequestMessage">
+﻿<Type Name="PseudonymRequestMessage" FullName="System.IdentityModel.Services.PseudonymRequestMessage">
   <TypeSignature Language="C#" Value="public class PseudonymRequestMessage : System.IdentityModel.Services.WSFederationMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PseudonymRequestMessage extends System.IdentityModel.Services.WSFederationMessage" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.PseudonymRequestMessage" />
+  <TypeSignature Language="VB.NET" Value="Public Class PseudonymRequestMessage&#xA;Inherits WSFederationMessage" />
+  <TypeSignature Language="F#" Value="type PseudonymRequestMessage = class&#xA;    inherit WSFederationMessage" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PseudonymRequestMessage : System::IdentityModel::Services::WSFederationMessage" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public PseudonymRequestMessage (Uri baseUrl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Uri baseUrl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.PseudonymRequestMessage.#ctor(System.Uri)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (baseUrl As Uri)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.PseudonymRequestMessage : Uri -&gt; System.IdentityModel.Services.PseudonymRequestMessage" Usage="new System.IdentityModel.Services.PseudonymRequestMessage baseUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PseudonymRequestMessage(Uri ^ baseUrl);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -44,6 +50,9 @@
       <MemberSignature Language="C#" Value="public string Pseudonym { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Pseudonym" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.PseudonymRequestMessage.Pseudonym" />
+      <MemberSignature Language="VB.NET" Value="Public Property Pseudonym As String" />
+      <MemberSignature Language="F#" Value="member this.Pseudonym : string with get, set" Usage="System.IdentityModel.Services.PseudonymRequestMessage.Pseudonym" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Pseudonym { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -69,6 +78,9 @@
       <MemberSignature Language="C#" Value="public string PseudonymPtr { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PseudonymPtr" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.PseudonymRequestMessage.PseudonymPtr" />
+      <MemberSignature Language="VB.NET" Value="Public Property PseudonymPtr As String" />
+      <MemberSignature Language="F#" Value="member this.PseudonymPtr : string with get, set" Usage="System.IdentityModel.Services.PseudonymRequestMessage.PseudonymPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PseudonymPtr { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -95,6 +107,9 @@
       <MemberSignature Language="C#" Value="public string Reply { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Reply" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.PseudonymRequestMessage.Reply" />
+      <MemberSignature Language="VB.NET" Value="Public Property Reply As String" />
+      <MemberSignature Language="F#" Value="member this.Reply : string with get, set" Usage="System.IdentityModel.Services.PseudonymRequestMessage.Reply" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Reply { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -121,6 +136,9 @@
       <MemberSignature Language="C#" Value="public string Result { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Result" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.PseudonymRequestMessage.Result" />
+      <MemberSignature Language="VB.NET" Value="Public Property Result As String" />
+      <MemberSignature Language="F#" Value="member this.Result : string with get, set" Usage="System.IdentityModel.Services.PseudonymRequestMessage.Result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Result { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -146,6 +164,9 @@
       <MemberSignature Language="C#" Value="public string ResultPtr { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResultPtr" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Services.PseudonymRequestMessage.ResultPtr" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResultPtr As String" />
+      <MemberSignature Language="F#" Value="member this.ResultPtr : string with get, set" Usage="System.IdentityModel.Services.PseudonymRequestMessage.ResultPtr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ResultPtr { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -172,6 +193,9 @@
       <MemberSignature Language="C#" Value="protected override void Validate ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Validate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.PseudonymRequestMessage.Validate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Validate ()" />
+      <MemberSignature Language="F#" Value="override this.Validate : unit -&gt; unit" Usage="pseudonymRequestMessage.Validate " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Validate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -197,6 +221,9 @@
       <MemberSignature Language="C#" Value="public override void Write (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.PseudonymRequestMessage.Write(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (writer As TextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Write : System.IO.TextWriter -&gt; unit" Usage="pseudonymRequestMessage.Write writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::IO::TextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>

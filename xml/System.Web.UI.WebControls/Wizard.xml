@@ -1,7 +1,10 @@
-<Type Name="Wizard" FullName="System.Web.UI.WebControls.Wizard">
+﻿<Type Name="Wizard" FullName="System.Web.UI.WebControls.Wizard">
   <TypeSignature Language="C#" Value="public class Wizard : System.Web.UI.WebControls.CompositeControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Wizard extends System.Web.UI.WebControls.CompositeControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.Wizard" />
+  <TypeSignature Language="VB.NET" Value="Public Class Wizard&#xA;Inherits CompositeControl" />
+  <TypeSignature Language="F#" Value="type Wizard = class&#xA;    inherit CompositeControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Wizard : System::Web::UI::WebControls::CompositeControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -307,6 +310,8 @@
       <MemberSignature Language="C#" Value="public Wizard ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Wizard();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -329,6 +334,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WizardStepBase ActiveStep { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WizardStepBase ActiveStep" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.ActiveStep" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveStep As WizardStepBase" />
+      <MemberSignature Language="F#" Value="member this.ActiveStep : System.Web.UI.WebControls.WizardStepBase" Usage="System.Web.UI.WebControls.Wizard.ActiveStep" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WizardStepBase ^ ActiveStep { System::Web::UI::WebControls::WizardStepBase ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -339,7 +347,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -372,6 +380,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler ActiveStepChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler ActiveStepChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Wizard.ActiveStepChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ActiveStepChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.ActiveStepChanged : EventHandler " Usage="member this.ActiveStepChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ ActiveStepChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -407,6 +418,9 @@
       <MemberSignature Language="C#" Value="public virtual int ActiveStepIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ActiveStepIndex" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ActiveStepIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.ActiveStepIndex : int with get, set" Usage="System.Web.UI.WebControls.Wizard.ActiveStepIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ActiveStepIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -462,6 +476,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool AllowNavigationToStep (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool AllowNavigationToStep(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.AllowNavigationToStep(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function AllowNavigationToStep (index As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member AllowNavigationToStep : int -&gt; bool&#xA;override this.AllowNavigationToStep : int -&gt; bool" Usage="wizard.AllowNavigationToStep index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool AllowNavigationToStep(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -502,6 +519,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler CancelButtonClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CancelButtonClick" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Wizard.CancelButtonClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CancelButtonClick As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CancelButtonClick : EventHandler " Usage="member this.CancelButtonClick : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CancelButtonClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -537,6 +557,9 @@
       <MemberSignature Language="C#" Value="protected static readonly string CancelButtonID;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly string CancelButtonID" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.CancelButtonID" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly CancelButtonID As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable CancelButtonID : string" Usage="System.Web.UI.WebControls.Wizard.CancelButtonID" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ CancelButtonID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -562,6 +585,9 @@
       <MemberSignature Language="C#" Value="public virtual string CancelButtonImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CancelButtonImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CancelButtonImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.CancelButtonImageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.CancelButtonImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CancelButtonImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -603,6 +629,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style CancelButtonStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style CancelButtonStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.CancelButtonStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CancelButtonStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.CancelButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.CancelButtonStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ CancelButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -613,7 +642,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -651,6 +680,9 @@
       <MemberSignature Language="C#" Value="public virtual string CancelButtonText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CancelButtonText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.CancelButtonText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CancelButtonText As String" />
+      <MemberSignature Language="F#" Value="member this.CancelButtonText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.CancelButtonText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CancelButtonText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -697,6 +729,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ButtonType CancelButtonType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonType CancelButtonType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.CancelButtonType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CancelButtonType As ButtonType" />
+      <MemberSignature Language="F#" Value="member this.CancelButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.Wizard.CancelButtonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType CancelButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -724,6 +759,9 @@
       <MemberSignature Language="C#" Value="public static readonly string CancelCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string CancelCommandName" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.CancelCommandName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CancelCommandName As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable CancelCommandName : string" Usage="System.Web.UI.WebControls.Wizard.CancelCommandName" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ CancelCommandName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -749,6 +787,9 @@
       <MemberSignature Language="C#" Value="public virtual string CancelDestinationPageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CancelDestinationPageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CancelDestinationPageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.CancelDestinationPageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.CancelDestinationPageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CancelDestinationPageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -795,6 +836,9 @@
       <MemberSignature Language="C#" Value="public virtual int CellPadding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CellPadding" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.CellPadding" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CellPadding As Integer" />
+      <MemberSignature Language="F#" Value="member this.CellPadding : int with get, set" Usage="System.Web.UI.WebControls.Wizard.CellPadding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CellPadding { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -834,6 +878,9 @@
       <MemberSignature Language="C#" Value="public virtual int CellSpacing { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CellSpacing" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.CellSpacing" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CellSpacing As Integer" />
+      <MemberSignature Language="F#" Value="member this.CellSpacing : int with get, set" Usage="System.Web.UI.WebControls.Wizard.CellSpacing" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CellSpacing { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -870,9 +917,12 @@
       </Docs>
     </Member>
     <Member MemberName="CreateChildControls">
-      <MemberSignature Language="C#" Value="protected override void CreateChildControls ();" />
+      <MemberSignature Language="C#" Value="protected internal override void CreateChildControls ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void CreateChildControls() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.CreateChildControls" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub CreateChildControls ()" />
+      <MemberSignature Language="F#" Value="override this.CreateChildControls : unit -&gt; unit" Usage="wizard.CreateChildControls " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void CreateChildControls();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -891,6 +941,9 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.ControlCollection CreateControlCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.ControlCollection CreateControlCollection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.CreateControlCollection" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlCollection () As ControlCollection" />
+      <MemberSignature Language="F#" Value="override this.CreateControlCollection : unit -&gt; System.Web.UI.ControlCollection" Usage="wizard.CreateControlCollection " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::ControlCollection ^ CreateControlCollection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -910,6 +963,9 @@
       <MemberSignature Language="C#" Value="protected virtual void CreateControlHierarchy ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void CreateControlHierarchy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.CreateControlHierarchy" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub CreateControlHierarchy ()" />
+      <MemberSignature Language="F#" Value="abstract member CreateControlHierarchy : unit -&gt; unit&#xA;override this.CreateControlHierarchy : unit -&gt; unit" Usage="wizard.CreateControlHierarchy " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void CreateControlHierarchy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -932,6 +988,9 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.WebControls.Style CreateControlStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.WebControls.Style CreateControlStyle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.CreateControlStyle" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateControlStyle () As Style" />
+      <MemberSignature Language="F#" Value="override this.CreateControlStyle : unit -&gt; System.Web.UI.WebControls.Style" Usage="wizard.CreateControlStyle " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::WebControls::Style ^ CreateControlStyle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -951,6 +1010,9 @@
       <MemberSignature Language="C#" Value="protected static readonly string CustomFinishButtonID;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly string CustomFinishButtonID" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.CustomFinishButtonID" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly CustomFinishButtonID As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable CustomFinishButtonID : string" Usage="System.Web.UI.WebControls.Wizard.CustomFinishButtonID" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ CustomFinishButtonID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -976,6 +1038,9 @@
       <MemberSignature Language="C#" Value="protected static readonly string CustomNextButtonID;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly string CustomNextButtonID" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.CustomNextButtonID" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly CustomNextButtonID As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable CustomNextButtonID : string" Usage="System.Web.UI.WebControls.Wizard.CustomNextButtonID" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ CustomNextButtonID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1001,6 +1066,9 @@
       <MemberSignature Language="C#" Value="protected static readonly string CustomPreviousButtonID;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly string CustomPreviousButtonID" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.CustomPreviousButtonID" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly CustomPreviousButtonID As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable CustomPreviousButtonID : string" Usage="System.Web.UI.WebControls.Wizard.CustomPreviousButtonID" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ CustomPreviousButtonID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1026,6 +1094,9 @@
       <MemberSignature Language="C#" Value="protected static readonly string DataListID;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly string DataListID" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.DataListID" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly DataListID As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable DataListID : string" Usage="System.Web.UI.WebControls.Wizard.DataListID" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ DataListID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1051,6 +1122,9 @@
       <MemberSignature Language="C#" Value="public virtual bool DisplayCancelButton { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisplayCancelButton" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DisplayCancelButton As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DisplayCancelButton : bool with get, set" Usage="System.Web.UI.WebControls.Wizard.DisplayCancelButton" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DisplayCancelButton { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1085,6 +1159,9 @@
       <MemberSignature Language="C#" Value="public virtual bool DisplaySideBar { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DisplaySideBar" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.DisplaySideBar" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DisplaySideBar As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DisplaySideBar : bool with get, set" Usage="System.Web.UI.WebControls.Wizard.DisplaySideBar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DisplaySideBar { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1124,6 +1201,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.WizardNavigationEventHandler FinishButtonClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.WizardNavigationEventHandler FinishButtonClick" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Wizard.FinishButtonClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event FinishButtonClick As WizardNavigationEventHandler " />
+      <MemberSignature Language="F#" Value="member this.FinishButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " Usage="member this.FinishButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WizardNavigationEventHandler ^ FinishButtonClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1159,6 +1239,9 @@
       <MemberSignature Language="C#" Value="protected static readonly string FinishButtonID;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly string FinishButtonID" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.FinishButtonID" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly FinishButtonID As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable FinishButtonID : string" Usage="System.Web.UI.WebControls.Wizard.FinishButtonID" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ FinishButtonID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1184,6 +1267,9 @@
       <MemberSignature Language="C#" Value="public virtual string FinishCompleteButtonImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FinishCompleteButtonImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishCompleteButtonImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.FinishCompleteButtonImageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishCompleteButtonImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FinishCompleteButtonImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1223,6 +1309,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style FinishCompleteButtonStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style FinishCompleteButtonStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FinishCompleteButtonStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.FinishCompleteButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.FinishCompleteButtonStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ FinishCompleteButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1233,7 +1322,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1269,6 +1358,9 @@
       <MemberSignature Language="C#" Value="public virtual string FinishCompleteButtonText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FinishCompleteButtonText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishCompleteButtonText As String" />
+      <MemberSignature Language="F#" Value="member this.FinishCompleteButtonText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishCompleteButtonText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FinishCompleteButtonText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1313,6 +1405,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ButtonType FinishCompleteButtonType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonType FinishCompleteButtonType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishCompleteButtonType As ButtonType" />
+      <MemberSignature Language="F#" Value="member this.FinishCompleteButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishCompleteButtonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType FinishCompleteButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1339,6 +1434,9 @@
       <MemberSignature Language="C#" Value="public virtual string FinishDestinationPageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FinishDestinationPageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishDestinationPageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishDestinationPageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.FinishDestinationPageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishDestinationPageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FinishDestinationPageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1383,6 +1481,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate FinishNavigationTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate FinishNavigationTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishNavigationTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishNavigationTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.FinishNavigationTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishNavigationTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ FinishNavigationTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1443,6 +1544,9 @@
       <MemberSignature Language="C#" Value="protected static readonly string FinishPreviousButtonID;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly string FinishPreviousButtonID" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.FinishPreviousButtonID" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly FinishPreviousButtonID As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable FinishPreviousButtonID : string" Usage="System.Web.UI.WebControls.Wizard.FinishPreviousButtonID" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ FinishPreviousButtonID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1468,6 +1572,9 @@
       <MemberSignature Language="C#" Value="public virtual string FinishPreviousButtonImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FinishPreviousButtonImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishPreviousButtonImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.FinishPreviousButtonImageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishPreviousButtonImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FinishPreviousButtonImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1507,6 +1614,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style FinishPreviousButtonStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style FinishPreviousButtonStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FinishPreviousButtonStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.FinishPreviousButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.FinishPreviousButtonStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ FinishPreviousButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1517,7 +1627,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1552,6 +1662,9 @@
       <MemberSignature Language="C#" Value="public virtual string FinishPreviousButtonText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FinishPreviousButtonText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishPreviousButtonText As String" />
+      <MemberSignature Language="F#" Value="member this.FinishPreviousButtonText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishPreviousButtonText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ FinishPreviousButtonText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1596,6 +1709,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ButtonType FinishPreviousButtonType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonType FinishPreviousButtonType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property FinishPreviousButtonType As ButtonType" />
+      <MemberSignature Language="F#" Value="member this.FinishPreviousButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.Wizard.FinishPreviousButtonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType FinishPreviousButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1622,6 +1738,9 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.IDictionary GetDesignModeState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.IDictionary GetDesignModeState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.GetDesignModeState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetDesignModeState () As IDictionary" />
+      <MemberSignature Language="F#" Value="override this.GetDesignModeState : unit -&gt; System.Collections.IDictionary" Usage="wizard.GetDesignModeState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::IDictionary ^ GetDesignModeState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1641,6 +1760,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection GetHistory ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ICollection GetHistory() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.GetHistory" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHistory () As ICollection" />
+      <MemberSignature Language="F#" Value="member this.GetHistory : unit -&gt; System.Collections.ICollection" Usage="wizard.GetHistory " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GetHistory();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1667,6 +1789,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WizardStepType GetStepType (System.Web.UI.WebControls.WizardStepBase wizardStep, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Web.UI.WebControls.WizardStepType GetStepType(class System.Web.UI.WebControls.WizardStepBase wizardStep, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.GetStepType(System.Web.UI.WebControls.WizardStepBase,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStepType (wizardStep As WizardStepBase, index As Integer) As WizardStepType" />
+      <MemberSignature Language="F#" Value="member this.GetStepType : System.Web.UI.WebControls.WizardStepBase * int -&gt; System.Web.UI.WebControls.WizardStepType" Usage="wizard.GetStepType (wizardStep, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::WizardStepType GetStepType(System::Web::UI::WebControls::WizardStepBase ^ wizardStep, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1708,6 +1833,9 @@
       <MemberSignature Language="C#" Value="public static readonly string HeaderPlaceholderId;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string HeaderPlaceholderId" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.HeaderPlaceholderId" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderPlaceholderId As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderPlaceholderId : string" Usage="System.Web.UI.WebControls.Wizard.HeaderPlaceholderId" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ HeaderPlaceholderId;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1732,6 +1860,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TableItemStyle HeaderStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle HeaderStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.HeaderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeaderStyle As TableItemStyle" />
+      <MemberSignature Language="F#" Value="member this.HeaderStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Wizard.HeaderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ HeaderStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1742,7 +1873,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -1776,6 +1907,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate HeaderTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate HeaderTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.HeaderTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HeaderTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.HeaderTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Wizard.HeaderTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ HeaderTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1821,6 +1955,9 @@
       <MemberSignature Language="C#" Value="public virtual string HeaderText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HeaderText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.HeaderText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property HeaderText As String" />
+      <MemberSignature Language="F#" Value="member this.HeaderText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.HeaderText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ HeaderText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1871,6 +2008,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate LayoutTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate LayoutTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.LayoutTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property LayoutTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.LayoutTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Wizard.LayoutTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ LayoutTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1917,9 +2057,12 @@
       </Docs>
     </Member>
     <Member MemberName="LoadControlState">
-      <MemberSignature Language="C#" Value="protected override void LoadControlState (object state);" />
+      <MemberSignature Language="C#" Value="protected internal override void LoadControlState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void LoadControlState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.LoadControlState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub LoadControlState (state As Object)" />
+      <MemberSignature Language="F#" Value="override this.LoadControlState : obj -&gt; unit" Usage="wizard.LoadControlState state" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void LoadControlState(System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1941,6 +2084,9 @@
       <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="wizard.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1964,6 +2110,9 @@
       <MemberSignature Language="C#" Value="public static readonly string MoveCompleteCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string MoveCompleteCommandName" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.MoveCompleteCommandName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MoveCompleteCommandName As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable MoveCompleteCommandName : string" Usage="System.Web.UI.WebControls.Wizard.MoveCompleteCommandName" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ MoveCompleteCommandName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -1992,6 +2141,9 @@
       <MemberSignature Language="C#" Value="public static readonly string MoveNextCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string MoveNextCommandName" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.MoveNextCommandName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MoveNextCommandName As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable MoveNextCommandName : string" Usage="System.Web.UI.WebControls.Wizard.MoveNextCommandName" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ MoveNextCommandName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2017,6 +2169,9 @@
       <MemberSignature Language="C#" Value="public static readonly string MovePreviousCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string MovePreviousCommandName" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.MovePreviousCommandName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MovePreviousCommandName As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable MovePreviousCommandName : string" Usage="System.Web.UI.WebControls.Wizard.MovePreviousCommandName" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ MovePreviousCommandName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2042,6 +2197,9 @@
       <MemberSignature Language="C#" Value="public void MoveTo (System.Web.UI.WebControls.WizardStepBase wizardStep);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MoveTo(class System.Web.UI.WebControls.WizardStepBase wizardStep) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.MoveTo(System.Web.UI.WebControls.WizardStepBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MoveTo (wizardStep As WizardStepBase)" />
+      <MemberSignature Language="F#" Value="member this.MoveTo : System.Web.UI.WebControls.WizardStepBase -&gt; unit" Usage="wizard.MoveTo wizardStep" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MoveTo(System::Web::UI::WebControls::WizardStepBase ^ wizardStep);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2084,6 +2242,9 @@
       <MemberSignature Language="C#" Value="public static readonly string MoveToCommandName;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string MoveToCommandName" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.MoveToCommandName" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MoveToCommandName As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable MoveToCommandName : string" Usage="System.Web.UI.WebControls.Wizard.MoveToCommandName" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ MoveToCommandName;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2109,6 +2270,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style NavigationButtonStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style NavigationButtonStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NavigationButtonStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.NavigationButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.NavigationButtonStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ NavigationButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2119,7 +2283,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -2170,6 +2334,9 @@
       <MemberSignature Language="C#" Value="public static readonly string NavigationPlaceholderId;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string NavigationPlaceholderId" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.NavigationPlaceholderId" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NavigationPlaceholderId As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable NavigationPlaceholderId : string" Usage="System.Web.UI.WebControls.Wizard.NavigationPlaceholderId" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ NavigationPlaceholderId;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2194,6 +2361,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TableItemStyle NavigationStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle NavigationStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.NavigationStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NavigationStyle As TableItemStyle" />
+      <MemberSignature Language="F#" Value="member this.NavigationStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Wizard.NavigationStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ NavigationStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2204,7 +2374,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -2257,6 +2427,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.WizardNavigationEventHandler NextButtonClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.WizardNavigationEventHandler NextButtonClick" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Wizard.NextButtonClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event NextButtonClick As WizardNavigationEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NextButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " Usage="member this.NextButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WizardNavigationEventHandler ^ NextButtonClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2292,6 +2465,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnActiveStepChanged (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnActiveStepChanged(object source, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnActiveStepChanged(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActiveStepChanged (source As Object, e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnActiveStepChanged : obj * EventArgs -&gt; unit&#xA;override this.OnActiveStepChanged : obj * EventArgs -&gt; unit" Usage="wizard.OnActiveStepChanged (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnActiveStepChanged(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2338,6 +2514,9 @@
       <MemberSignature Language="C#" Value="protected override bool OnBubbleEvent (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnBubbleEvent(object source, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnBubbleEvent(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="wizard.OnBubbleEvent (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2363,6 +2542,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCancelButtonClick (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCancelButtonClick(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnCancelButtonClick(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCancelButtonClick (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnCancelButtonClick : EventArgs -&gt; unit&#xA;override this.OnCancelButtonClick : EventArgs -&gt; unit" Usage="wizard.OnCancelButtonClick e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCancelButtonClick(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2407,6 +2589,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnFinishButtonClick (System.Web.UI.WebControls.WizardNavigationEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFinishButtonClick(class System.Web.UI.WebControls.WizardNavigationEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnFinishButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFinishButtonClick (e As WizardNavigationEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnFinishButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit&#xA;override this.OnFinishButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit" Usage="wizard.OnFinishButtonClick e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFinishButtonClick(System::Web::UI::WebControls::WizardNavigationEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2448,9 +2633,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnInit">
-      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="wizard.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2472,6 +2660,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnNextButtonClick (System.Web.UI.WebControls.WizardNavigationEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnNextButtonClick(class System.Web.UI.WebControls.WizardNavigationEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnNextButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnNextButtonClick (e As WizardNavigationEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnNextButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit&#xA;override this.OnNextButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit" Usage="wizard.OnNextButtonClick e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnNextButtonClick(System::Web::UI::WebControls::WizardNavigationEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2516,6 +2707,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPreviousButtonClick (System.Web.UI.WebControls.WizardNavigationEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPreviousButtonClick(class System.Web.UI.WebControls.WizardNavigationEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnPreviousButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPreviousButtonClick (e As WizardNavigationEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPreviousButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit&#xA;override this.OnPreviousButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit" Usage="wizard.OnPreviousButtonClick e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPreviousButtonClick(System::Web::UI::WebControls::WizardNavigationEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2560,6 +2754,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSideBarButtonClick (System.Web.UI.WebControls.WizardNavigationEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSideBarButtonClick(class System.Web.UI.WebControls.WizardNavigationEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.OnSideBarButtonClick(System.Web.UI.WebControls.WizardNavigationEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSideBarButtonClick (e As WizardNavigationEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSideBarButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit&#xA;override this.OnSideBarButtonClick : System.Web.UI.WebControls.WizardNavigationEventArgs -&gt; unit" Usage="wizard.OnSideBarButtonClick e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSideBarButtonClick(System::Web::UI::WebControls::WizardNavigationEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2607,6 +2804,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.WizardNavigationEventHandler PreviousButtonClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.WizardNavigationEventHandler PreviousButtonClick" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Wizard.PreviousButtonClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PreviousButtonClick As WizardNavigationEventHandler " />
+      <MemberSignature Language="F#" Value="member this.PreviousButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " Usage="member this.PreviousButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::WizardNavigationEventHandler ^ PreviousButtonClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2639,9 +2839,12 @@
       </Docs>
     </Member>
     <Member MemberName="RegisterCommandEvents">
-      <MemberSignature Language="C#" Value="protected void RegisterCommandEvents (System.Web.UI.WebControls.IButtonControl button);" />
+      <MemberSignature Language="C#" Value="protected internal void RegisterCommandEvents (System.Web.UI.WebControls.IButtonControl button);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void RegisterCommandEvents(class System.Web.UI.WebControls.IButtonControl button) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.RegisterCommandEvents(System.Web.UI.WebControls.IButtonControl)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub RegisterCommandEvents (button As IButtonControl)" />
+      <MemberSignature Language="F#" Value="member this.RegisterCommandEvents : System.Web.UI.WebControls.IButtonControl -&gt; unit" Usage="wizard.RegisterCommandEvents button" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void RegisterCommandEvents(System::Web::UI::WebControls::IButtonControl ^ button);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2660,9 +2863,12 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="wizard.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2681,9 +2887,12 @@
       </Docs>
     </Member>
     <Member MemberName="SaveControlState">
-      <MemberSignature Language="C#" Value="protected override object SaveControlState ();" />
+      <MemberSignature Language="C#" Value="protected internal override object SaveControlState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance object SaveControlState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.SaveControlState" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function SaveControlState () As Object" />
+      <MemberSignature Language="F#" Value="override this.SaveControlState : unit -&gt; obj" Usage="wizard.SaveControlState " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Object ^ SaveControlState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2703,6 +2912,9 @@
       <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="wizard.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2722,6 +2934,9 @@
       <MemberSignature Language="C#" Value="public virtual event System.Web.UI.WebControls.WizardNavigationEventHandler SideBarButtonClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.WizardNavigationEventHandler SideBarButtonClick" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.Wizard.SideBarButtonClick" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Custom Event SideBarButtonClick As WizardNavigationEventHandler " />
+      <MemberSignature Language="F#" Value="member this.SideBarButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " Usage="member this.SideBarButtonClick : System.Web.UI.WebControls.WizardNavigationEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::Web::UI::WebControls::WizardNavigationEventHandler ^ SideBarButtonClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2760,6 +2975,9 @@
       <MemberSignature Language="C#" Value="protected static readonly string SideBarButtonID;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly string SideBarButtonID" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.SideBarButtonID" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly SideBarButtonID As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable SideBarButtonID : string" Usage="System.Web.UI.WebControls.Wizard.SideBarButtonID" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ SideBarButtonID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2785,6 +3003,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style SideBarButtonStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style SideBarButtonStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.SideBarButtonStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SideBarButtonStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.SideBarButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.SideBarButtonStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ SideBarButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2795,7 +3016,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -2852,6 +3073,9 @@
       <MemberSignature Language="C#" Value="public static readonly string SideBarPlaceholderId;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string SideBarPlaceholderId" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.SideBarPlaceholderId" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SideBarPlaceholderId As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable SideBarPlaceholderId : string" Usage="System.Web.UI.WebControls.Wizard.SideBarPlaceholderId" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ SideBarPlaceholderId;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2876,6 +3100,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TableItemStyle SideBarStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle SideBarStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.SideBarStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SideBarStyle As TableItemStyle" />
+      <MemberSignature Language="F#" Value="member this.SideBarStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Wizard.SideBarStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ SideBarStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -2886,7 +3113,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -2944,6 +3171,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate SideBarTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate SideBarTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.SideBarTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SideBarTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.SideBarTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Wizard.SideBarTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ SideBarTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3013,6 +3243,9 @@
       <MemberSignature Language="C#" Value="public virtual string SkipLinkText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SkipLinkText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.SkipLinkText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SkipLinkText As String" />
+      <MemberSignature Language="F#" Value="member this.SkipLinkText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.SkipLinkText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SkipLinkText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3048,6 +3281,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate StartNavigationTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate StartNavigationTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StartNavigationTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.StartNavigationTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Wizard.StartNavigationTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ StartNavigationTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3097,6 +3333,9 @@
       <MemberSignature Language="C#" Value="protected static readonly string StartNextButtonID;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly string StartNextButtonID" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.StartNextButtonID" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly StartNextButtonID As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable StartNextButtonID : string" Usage="System.Web.UI.WebControls.Wizard.StartNextButtonID" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ StartNextButtonID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3122,6 +3361,9 @@
       <MemberSignature Language="C#" Value="public virtual string StartNextButtonImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StartNextButtonImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StartNextButtonImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StartNextButtonImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.StartNextButtonImageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.StartNextButtonImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StartNextButtonImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3162,6 +3404,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style StartNextButtonStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style StartNextButtonStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StartNextButtonStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartNextButtonStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.StartNextButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.StartNextButtonStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ StartNextButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3172,7 +3417,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -3209,6 +3454,9 @@
       <MemberSignature Language="C#" Value="public virtual string StartNextButtonText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StartNextButtonText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StartNextButtonText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StartNextButtonText As String" />
+      <MemberSignature Language="F#" Value="member this.StartNextButtonText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.StartNextButtonText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StartNextButtonText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3254,6 +3502,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ButtonType StartNextButtonType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonType StartNextButtonType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StartNextButtonType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StartNextButtonType As ButtonType" />
+      <MemberSignature Language="F#" Value="member this.StartNextButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.Wizard.StartNextButtonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType StartNextButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3281,6 +3532,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.ITemplate StepNavigationTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ITemplate StepNavigationTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepNavigationTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StepNavigationTemplate As ITemplate" />
+      <MemberSignature Language="F#" Value="member this.StepNavigationTemplate : System.Web.UI.ITemplate with get, set" Usage="System.Web.UI.WebControls.Wizard.StepNavigationTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::ITemplate ^ StepNavigationTemplate { System::Web::UI::ITemplate ^ get(); void set(System::Web::UI::ITemplate ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3329,6 +3583,9 @@
       <MemberSignature Language="C#" Value="protected static readonly string StepNextButtonID;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly string StepNextButtonID" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.StepNextButtonID" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly StepNextButtonID As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable StepNextButtonID : string" Usage="System.Web.UI.WebControls.Wizard.StepNextButtonID" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ StepNextButtonID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3354,6 +3611,9 @@
       <MemberSignature Language="C#" Value="public virtual string StepNextButtonImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StepNextButtonImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StepNextButtonImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.StepNextButtonImageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.StepNextButtonImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StepNextButtonImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3393,6 +3653,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style StepNextButtonStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style StepNextButtonStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StepNextButtonStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.StepNextButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.StepNextButtonStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ StepNextButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3403,7 +3666,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -3439,6 +3702,9 @@
       <MemberSignature Language="C#" Value="public virtual string StepNextButtonText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StepNextButtonText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepNextButtonText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StepNextButtonText As String" />
+      <MemberSignature Language="F#" Value="member this.StepNextButtonText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.StepNextButtonText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StepNextButtonText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3483,6 +3749,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ButtonType StepNextButtonType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonType StepNextButtonType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepNextButtonType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StepNextButtonType As ButtonType" />
+      <MemberSignature Language="F#" Value="member this.StepNextButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.Wizard.StepNextButtonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType StepNextButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3509,6 +3778,9 @@
       <MemberSignature Language="C#" Value="protected static readonly string StepPreviousButtonID;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly string StepPreviousButtonID" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.StepPreviousButtonID" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly StepPreviousButtonID As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable StepPreviousButtonID : string" Usage="System.Web.UI.WebControls.Wizard.StepPreviousButtonID" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly System::String ^ StepPreviousButtonID;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3534,6 +3806,9 @@
       <MemberSignature Language="C#" Value="public virtual string StepPreviousButtonImageUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StepPreviousButtonImageUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StepPreviousButtonImageUrl As String" />
+      <MemberSignature Language="F#" Value="member this.StepPreviousButtonImageUrl : string with get, set" Usage="System.Web.UI.WebControls.Wizard.StepPreviousButtonImageUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StepPreviousButtonImageUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3573,6 +3848,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.Style StepPreviousButtonStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.Style StepPreviousButtonStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StepPreviousButtonStyle As Style" />
+      <MemberSignature Language="F#" Value="member this.StepPreviousButtonStyle : System.Web.UI.WebControls.Style" Usage="System.Web.UI.WebControls.Wizard.StepPreviousButtonStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::Style ^ StepPreviousButtonStyle { System::Web::UI::WebControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3583,7 +3861,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -3619,6 +3897,9 @@
       <MemberSignature Language="C#" Value="public virtual string StepPreviousButtonText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string StepPreviousButtonText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StepPreviousButtonText As String" />
+      <MemberSignature Language="F#" Value="member this.StepPreviousButtonText : string with get, set" Usage="System.Web.UI.WebControls.Wizard.StepPreviousButtonText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ StepPreviousButtonText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3663,6 +3944,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.ButtonType StepPreviousButtonType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.WebControls.ButtonType StepPreviousButtonType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property StepPreviousButtonType As ButtonType" />
+      <MemberSignature Language="F#" Value="member this.StepPreviousButtonType : System.Web.UI.WebControls.ButtonType with get, set" Usage="System.Web.UI.WebControls.Wizard.StepPreviousButtonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::ButtonType StepPreviousButtonType { System::Web::UI::WebControls::ButtonType get(); void set(System::Web::UI::WebControls::ButtonType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3689,6 +3973,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TableItemStyle StepStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TableItemStyle StepStyle" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.StepStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StepStyle As TableItemStyle" />
+      <MemberSignature Language="F#" Value="member this.StepStyle : System.Web.UI.WebControls.TableItemStyle" Usage="System.Web.UI.WebControls.Wizard.StepStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TableItemStyle ^ StepStyle { System::Web::UI::WebControls::TableItemStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3699,7 +3986,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
@@ -3754,6 +4041,9 @@
       <MemberSignature Language="C#" Value="protected override System.Web.UI.HtmlTextWriterTag TagKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.HtmlTextWriterTag TagKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.TagKey" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property TagKey As HtmlTextWriterTag" />
+      <MemberSignature Language="F#" Value="member this.TagKey : System.Web.UI.HtmlTextWriterTag" Usage="System.Web.UI.WebControls.Wizard.TagKey" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::HtmlTextWriterTag TagKey { System::Web::UI::HtmlTextWriterTag get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3780,6 +4070,9 @@
       <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.Wizard.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="wizard.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3798,6 +4091,9 @@
       <MemberSignature Language="C#" Value="public static readonly string WizardStepPlaceholderId;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly string WizardStepPlaceholderId" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.Wizard.WizardStepPlaceholderId" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly WizardStepPlaceholderId As String " />
+      <MemberSignature Language="F#" Value=" staticval mutable WizardStepPlaceholderId : string" Usage="System.Web.UI.WebControls.Wizard.WizardStepPlaceholderId" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::String ^ WizardStepPlaceholderId;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3822,6 +4118,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.WebControls.WizardStepCollection WizardSteps { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WizardStepCollection WizardSteps" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.Wizard.WizardSteps" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property WizardSteps As WizardStepCollection" />
+      <MemberSignature Language="F#" Value="member this.WizardSteps : System.Web.UI.WebControls.WizardStepCollection" Usage="System.Web.UI.WebControls.Wizard.WizardSteps" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::WebControls::WizardStepCollection ^ WizardSteps { System::Web::UI::WebControls::WizardStepCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -3829,7 +4128,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Web.UI.Design.WebControls.WizardStepCollectionEditor,System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>

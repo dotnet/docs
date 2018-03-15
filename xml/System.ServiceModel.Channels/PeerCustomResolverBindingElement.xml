@@ -1,7 +1,10 @@
-<Type Name="PeerCustomResolverBindingElement" FullName="System.ServiceModel.Channels.PeerCustomResolverBindingElement">
+﻿<Type Name="PeerCustomResolverBindingElement" FullName="System.ServiceModel.Channels.PeerCustomResolverBindingElement">
   <TypeSignature Language="C#" Value="public sealed class PeerCustomResolverBindingElement : System.ServiceModel.Channels.PeerResolverBindingElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PeerCustomResolverBindingElement extends System.ServiceModel.Channels.PeerResolverBindingElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.PeerCustomResolverBindingElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PeerCustomResolverBindingElement&#xA;Inherits PeerResolverBindingElement" />
+  <TypeSignature Language="F#" Value="type PeerCustomResolverBindingElement = class&#xA;    inherit PeerResolverBindingElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PeerCustomResolverBindingElement sealed : System::ServiceModel::Channels::PeerResolverBindingElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,10 +23,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.PeerCustomResolverBindingElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PeerCustomResolverBindingElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PeerCustomResolverBindingElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerCustomResolverBindingElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +53,9 @@
       <MemberSignature Language="C#" Value="public PeerCustomResolverBindingElement (System.ServiceModel.Channels.PeerCustomResolverBindingElement other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.PeerCustomResolverBindingElement other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PeerCustomResolverBindingElement.#ctor(System.ServiceModel.Channels.PeerCustomResolverBindingElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (other As PeerCustomResolverBindingElement)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.PeerCustomResolverBindingElement : System.ServiceModel.Channels.PeerCustomResolverBindingElement -&gt; System.ServiceModel.Channels.PeerCustomResolverBindingElement" Usage="new System.ServiceModel.Channels.PeerCustomResolverBindingElement other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerCustomResolverBindingElement(System::ServiceModel::Channels::PeerCustomResolverBindingElement ^ other);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +75,9 @@
       <MemberSignature Language="C#" Value="public PeerCustomResolverBindingElement (System.ServiceModel.PeerResolvers.PeerCustomResolverSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.PeerResolvers.PeerCustomResolverSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PeerCustomResolverBindingElement.#ctor(System.ServiceModel.PeerResolvers.PeerCustomResolverSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (settings As PeerCustomResolverSettings)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.PeerCustomResolverBindingElement : System.ServiceModel.PeerResolvers.PeerCustomResolverSettings -&gt; System.ServiceModel.Channels.PeerCustomResolverBindingElement" Usage="new System.ServiceModel.Channels.PeerCustomResolverBindingElement settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerCustomResolverBindingElement(System::ServiceModel::PeerResolvers::PeerCustomResolverSettings ^ settings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -77,6 +97,9 @@
       <MemberSignature Language="C#" Value="public PeerCustomResolverBindingElement (System.ServiceModel.Channels.BindingContext context, System.ServiceModel.PeerResolvers.PeerCustomResolverSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ServiceModel.Channels.BindingContext context, class System.ServiceModel.PeerResolvers.PeerCustomResolverSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PeerCustomResolverBindingElement.#ctor(System.ServiceModel.Channels.BindingContext,System.ServiceModel.PeerResolvers.PeerCustomResolverSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As BindingContext, settings As PeerCustomResolverSettings)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Channels.PeerCustomResolverBindingElement : System.ServiceModel.Channels.BindingContext * System.ServiceModel.PeerResolvers.PeerCustomResolverSettings -&gt; System.ServiceModel.Channels.PeerCustomResolverBindingElement" Usage="new System.ServiceModel.Channels.PeerCustomResolverBindingElement (context, settings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PeerCustomResolverBindingElement(System::ServiceModel::Channels::BindingContext ^ context, System::ServiceModel::PeerResolvers::PeerCustomResolverSettings ^ settings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -99,6 +122,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.EndpointAddress Address { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.EndpointAddress Address" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.PeerCustomResolverBindingElement.Address" />
+      <MemberSignature Language="VB.NET" Value="Public Property Address As EndpointAddress" />
+      <MemberSignature Language="F#" Value="member this.Address : System.ServiceModel.EndpointAddress with get, set" Usage="System.ServiceModel.Channels.PeerCustomResolverBindingElement.Address" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::EndpointAddress ^ Address { System::ServiceModel::EndpointAddress ^ get(); void set(System::ServiceModel::EndpointAddress ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -118,6 +144,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Channels.Binding Binding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Channels.Binding Binding" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.PeerCustomResolverBindingElement.Binding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Binding As Binding" />
+      <MemberSignature Language="F#" Value="member this.Binding : System.ServiceModel.Channels.Binding with get, set" Usage="System.ServiceModel.Channels.PeerCustomResolverBindingElement.Binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Channels::Binding ^ Binding { System::ServiceModel::Channels::Binding ^ get(); void set(System::ServiceModel::Channels::Binding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -137,6 +166,9 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.IChannelFactory&lt;TChannel&gt; BuildChannelFactory&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.IChannelFactory`1&lt;!!TChannel&gt; BuildChannelFactory&lt;TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PeerCustomResolverBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelFactory(Of TChannel) (context As BindingContext) As IChannelFactory(Of TChannel)" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelFactory&lt;'Channel&gt;" Usage="peerCustomResolverBindingElement.BuildChannelFactory context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override System::ServiceModel::Channels::IChannelFactory&lt;TChannel&gt; ^ BuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -172,6 +204,9 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.IChannelListener&lt;TChannel&gt; BuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.IChannelListener`1&lt;!!TChannel&gt; BuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PeerCustomResolverBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As IChannelListener(Of TChannel)" />
+      <MemberSignature Language="F#" Value="override this.BuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; System.ServiceModel.Channels.IChannelListener&lt;'Channel (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)&gt; (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="peerCustomResolverBindingElement.BuildChannelListener context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override System::ServiceModel::Channels::IChannelListener&lt;TChannel&gt; ^ BuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -213,6 +248,9 @@
       <MemberSignature Language="C#" Value="public override bool CanBuildChannelFactory&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanBuildChannelFactory&lt;TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PeerCustomResolverBindingElement.CanBuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelFactory(Of TChannel) (context As BindingContext) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelFactory : System.ServiceModel.Channels.BindingContext -&gt; bool" Usage="peerCustomResolverBindingElement.CanBuildChannelFactory context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; override bool CanBuildChannelFactory(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -241,6 +279,9 @@
       <MemberSignature Language="C#" Value="public override bool CanBuildChannelListener&lt;TChannel&gt; (System.ServiceModel.Channels.BindingContext context) where TChannel : class, System.ServiceModel.Channels.IChannel;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanBuildChannelListener&lt;class (class System.ServiceModel.Channels.IChannel) TChannel&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PeerCustomResolverBindingElement.CanBuildChannelListener``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CanBuildChannelListener(Of TChannel As {Class, IChannel}) (context As BindingContext) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.CanBuildChannelListener : System.ServiceModel.Channels.BindingContext -&gt; bool (requires 'Channel : null and 'Channel :&gt; System.ServiceModel.Channels.IChannel)" Usage="peerCustomResolverBindingElement.CanBuildChannelListener context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TChannel&gt;&#xA; where TChannel : class, System::ServiceModel::Channels::IChannel override bool CanBuildChannelListener(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -274,6 +315,9 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.Channels.BindingElement Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.Channels.BindingElement Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PeerCustomResolverBindingElement.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As BindingElement" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.ServiceModel.Channels.BindingElement" Usage="peerCustomResolverBindingElement.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::Channels::BindingElement ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -301,6 +345,9 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.PeerResolver CreatePeerResolver ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.PeerResolver CreatePeerResolver() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PeerCustomResolverBindingElement.CreatePeerResolver" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreatePeerResolver () As PeerResolver" />
+      <MemberSignature Language="F#" Value="override this.CreatePeerResolver : unit -&gt; System.ServiceModel.PeerResolver" Usage="peerCustomResolverBindingElement.CreatePeerResolver " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::PeerResolver ^ CreatePeerResolver();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -321,6 +368,9 @@
       <MemberSignature Language="C#" Value="public override T GetProperty&lt;T&gt; (System.ServiceModel.Channels.BindingContext context) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !!T GetProperty&lt;class T&gt;(class System.ServiceModel.Channels.BindingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.PeerCustomResolverBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetProperty(Of T As Class) (context As BindingContext) As T" />
+      <MemberSignature Language="F#" Value="override this.GetProperty : System.ServiceModel.Channels.BindingContext -&gt; 'T (requires 'T : null)" Usage="peerCustomResolverBindingElement.GetProperty context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class override T GetProperty(System::ServiceModel::Channels::BindingContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -352,6 +402,9 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.PeerResolvers.PeerReferralPolicy ReferralPolicy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.PeerResolvers.PeerReferralPolicy ReferralPolicy" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Channels.PeerCustomResolverBindingElement.ReferralPolicy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ReferralPolicy As PeerReferralPolicy" />
+      <MemberSignature Language="F#" Value="member this.ReferralPolicy : System.ServiceModel.PeerResolvers.PeerReferralPolicy with get, set" Usage="System.ServiceModel.Channels.PeerCustomResolverBindingElement.ReferralPolicy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ServiceModel::PeerResolvers::PeerReferralPolicy ReferralPolicy { System::ServiceModel::PeerResolvers::PeerReferralPolicy get(); void set(System::ServiceModel::PeerResolvers::PeerReferralPolicy value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -367,14 +420,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Channels.PeerCustomResolverBindingElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

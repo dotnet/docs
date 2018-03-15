@@ -1,7 +1,10 @@
-<Type Name="ISerializable" FullName="System.Runtime.Serialization.ISerializable">
+﻿<Type Name="ISerializable" FullName="System.Runtime.Serialization.ISerializable">
   <TypeSignature Language="C#" Value="public interface ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISerializable" />
+  <TypeSignature Language="F#" Value="type ISerializable = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -69,6 +72,9 @@
       <MemberSignature Language="C#" Value="public void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="abstract member GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="iSerializable.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>

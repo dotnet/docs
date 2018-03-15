@@ -1,7 +1,10 @@
-<Type Name="SortVersion" FullName="System.Globalization.SortVersion">
+﻿<Type Name="SortVersion" FullName="System.Globalization.SortVersion">
   <TypeSignature Language="C#" Value="public sealed class SortVersion : IEquatable&lt;System.Globalization.SortVersion&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SortVersion extends System.Object implements class System.IEquatable`1&lt;class System.Globalization.SortVersion&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.SortVersion" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SortVersion&#xA;Implements IEquatable(Of SortVersion)" />
+  <TypeSignature Language="F#" Value="type SortVersion = class&#xA;    interface IEquatable&lt;SortVersion&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SortVersion sealed : IEquatable&lt;System::Globalization::SortVersion ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -84,6 +87,9 @@
       <MemberSignature Language="C#" Value="public SortVersion (int fullVersion, Guid sortId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 fullVersion, valuetype System.Guid sortId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.SortVersion.#ctor(System.Int32,System.Guid)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fullVersion As Integer, sortId As Guid)" />
+      <MemberSignature Language="F#" Value="new System.Globalization.SortVersion : int * Guid -&gt; System.Globalization.SortVersion" Usage="new System.Globalization.SortVersion (fullVersion, sortId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SortVersion(int fullVersion, Guid sortId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -119,11 +125,27 @@
         <altmember cref="P:System.Globalization.CompareInfo.Version" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether two <see cref="T:System.Globalization.SortVersion" /> instances are equal.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (System.Globalization.SortVersion other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(class System.Globalization.SortVersion other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.SortVersion.Equals(System.Globalization.SortVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As SortVersion) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Globalization.SortVersion -&gt; bool" Usage="sortVersion.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Globalization::SortVersion ^ other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -163,6 +185,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.SortVersion.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="sortVersion.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -203,6 +228,9 @@
       <MemberSignature Language="C#" Value="public int FullVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 FullVersion" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.SortVersion.FullVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FullVersion As Integer" />
+      <MemberSignature Language="F#" Value="member this.FullVersion : int" Usage="System.Globalization.SortVersion.FullVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FullVersion { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -237,6 +265,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.SortVersion.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="sortVersion.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -265,6 +296,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Globalization.SortVersion left, System.Globalization.SortVersion right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(class System.Globalization.SortVersion left, class System.Globalization.SortVersion right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.SortVersion.op_Equality(System.Globalization.SortVersion,System.Globalization.SortVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As SortVersion, right As SortVersion) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Globalization.SortVersion * System.Globalization.SortVersion -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Globalization::SortVersion ^ left, System::Globalization::SortVersion ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -308,6 +342,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Globalization.SortVersion left, System.Globalization.SortVersion right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(class System.Globalization.SortVersion left, class System.Globalization.SortVersion right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.SortVersion.op_Inequality(System.Globalization.SortVersion,System.Globalization.SortVersion)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As SortVersion, right As SortVersion) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Globalization.SortVersion * System.Globalization.SortVersion -&gt; bool" Usage="System.Globalization.SortVersion.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Globalization::SortVersion ^ left, System::Globalization::SortVersion ^ right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -351,6 +388,9 @@
       <MemberSignature Language="C#" Value="public Guid SortId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid SortId" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.SortVersion.SortId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortId As Guid" />
+      <MemberSignature Language="F#" Value="member this.SortId : Guid" Usage="System.Globalization.SortVersion.SortId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid SortId { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -381,15 +421,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether two <see cref="T:System.Globalization.SortVersion" /> instances are equal.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

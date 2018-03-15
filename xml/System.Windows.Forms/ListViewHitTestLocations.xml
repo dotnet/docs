@@ -1,7 +1,10 @@
-<Type Name="ListViewHitTestLocations" FullName="System.Windows.Forms.ListViewHitTestLocations">
+﻿<Type Name="ListViewHitTestLocations" FullName="System.Windows.Forms.ListViewHitTestLocations">
   <TypeSignature Language="C#" Value="public enum ListViewHitTestLocations" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListViewHitTestLocations extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewHitTestLocations" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ListViewHitTestLocations" />
+  <TypeSignature Language="F#" Value="type ListViewHitTestLocations = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ListViewHitTestLocations" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="AboveClientArea" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewHitTestLocations AboveClientArea = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewHitTestLocations.AboveClientArea" />
+      <MemberSignature Language="VB.NET" Value="AboveClientArea" />
+      <MemberSignature Language="F#" Value="AboveClientArea = 256" Usage="System.Windows.Forms.ListViewHitTestLocations.AboveClientArea" />
+      <MemberSignature Language="C++ CLI" Value="AboveClientArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewHitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>A position above the client portion of a <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="BelowClientArea" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewHitTestLocations BelowClientArea = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewHitTestLocations.BelowClientArea" />
+      <MemberSignature Language="VB.NET" Value="BelowClientArea" />
+      <MemberSignature Language="F#" Value="BelowClientArea = 16" Usage="System.Windows.Forms.ListViewHitTestLocations.BelowClientArea" />
+      <MemberSignature Language="C++ CLI" Value="BelowClientArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewHitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>A position below the client portion of a <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
       </Docs>
@@ -70,6 +81,9 @@
       <MemberSignature Language="C#" Value="Image" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewHitTestLocations Image = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewHitTestLocations.Image" />
+      <MemberSignature Language="VB.NET" Value="Image" />
+      <MemberSignature Language="F#" Value="Image = 2" Usage="System.Windows.Forms.ListViewHitTestLocations.Image" />
+      <MemberSignature Language="C++ CLI" Value="Image" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewHitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A position within the bounds of an image contained in a <see cref="T:System.Windows.Forms.ListView" /> or <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
       </Docs>
@@ -86,6 +101,9 @@
       <MemberSignature Language="C#" Value="Label" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewHitTestLocations Label = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewHitTestLocations.Label" />
+      <MemberSignature Language="VB.NET" Value="Label" />
+      <MemberSignature Language="F#" Value="Label = 4" Usage="System.Windows.Forms.ListViewHitTestLocations.Label" />
+      <MemberSignature Language="C++ CLI" Value="Label" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewHitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A position within the bounds of a text area contained in a <see cref="T:System.Windows.Forms.ListView" /> or <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
       </Docs>
@@ -102,6 +121,9 @@
       <MemberSignature Language="C#" Value="LeftOfClientArea" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewHitTestLocations LeftOfClientArea = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewHitTestLocations.LeftOfClientArea" />
+      <MemberSignature Language="VB.NET" Value="LeftOfClientArea" />
+      <MemberSignature Language="F#" Value="LeftOfClientArea = 64" Usage="System.Windows.Forms.ListViewHitTestLocations.LeftOfClientArea" />
+      <MemberSignature Language="C++ CLI" Value="LeftOfClientArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -110,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewHitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>A position to the left of the client portion of a <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
       </Docs>
@@ -118,6 +141,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewHitTestLocations None = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewHitTestLocations.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 1" Usage="System.Windows.Forms.ListViewHitTestLocations.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -126,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewHitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A position outside the bounds of a <see cref="T:System.Windows.Forms.ListViewItem" /></summary>
       </Docs>
@@ -134,6 +161,9 @@
       <MemberSignature Language="C#" Value="RightOfClientArea" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewHitTestLocations RightOfClientArea = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewHitTestLocations.RightOfClientArea" />
+      <MemberSignature Language="VB.NET" Value="RightOfClientArea" />
+      <MemberSignature Language="F#" Value="RightOfClientArea = 32" Usage="System.Windows.Forms.ListViewHitTestLocations.RightOfClientArea" />
+      <MemberSignature Language="C++ CLI" Value="RightOfClientArea" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -142,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewHitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>A position to the right of the client portion of a <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
       </Docs>
@@ -150,6 +181,9 @@
       <MemberSignature Language="C#" Value="StateImage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ListViewHitTestLocations StateImage = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListViewHitTestLocations.StateImage" />
+      <MemberSignature Language="VB.NET" Value="StateImage" />
+      <MemberSignature Language="F#" Value="StateImage = 512" Usage="System.Windows.Forms.ListViewHitTestLocations.StateImage" />
+      <MemberSignature Language="C++ CLI" Value="StateImage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +192,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewHitTestLocations</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>A position within the bounds of an image associated with a <see cref="T:System.Windows.Forms.ListViewItem" /> that indicates the state of the item.</summary>
       </Docs>

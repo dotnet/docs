@@ -1,7 +1,10 @@
-<Type Name="CompareAttribute" FullName="System.ComponentModel.DataAnnotations.CompareAttribute">
+﻿<Type Name="CompareAttribute" FullName="System.ComponentModel.DataAnnotations.CompareAttribute">
   <TypeSignature Language="C#" Value="public class CompareAttribute : System.ComponentModel.DataAnnotations.ValidationAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CompareAttribute extends System.ComponentModel.DataAnnotations.ValidationAttribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.CompareAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompareAttribute&#xA;Inherits ValidationAttribute" />
+  <TypeSignature Language="F#" Value="type CompareAttribute = class&#xA;    inherit ValidationAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompareAttribute : System::ComponentModel::DataAnnotations::ValidationAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public CompareAttribute (string otherProperty);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string otherProperty) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.CompareAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (otherProperty As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.CompareAttribute : string -&gt; System.ComponentModel.DataAnnotations.CompareAttribute" Usage="new System.ComponentModel.DataAnnotations.CompareAttribute otherProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompareAttribute(System::String ^ otherProperty);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -54,6 +60,9 @@
       <MemberSignature Language="C#" Value="public override string FormatErrorMessage (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string FormatErrorMessage(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.CompareAttribute.FormatErrorMessage(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function FormatErrorMessage (name As String) As String" />
+      <MemberSignature Language="F#" Value="override this.FormatErrorMessage : string -&gt; string" Usage="compareAttribute.FormatErrorMessage name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ FormatErrorMessage(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -82,6 +91,8 @@
       <MemberSignature Language="C#" Value="protected override System.ComponentModel.DataAnnotations.ValidationResult IsValid (object value, System.ComponentModel.DataAnnotations.ValidationContext validationContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.ComponentModel.DataAnnotations.ValidationResult IsValid(object value, class System.ComponentModel.DataAnnotations.ValidationContext validationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.CompareAttribute.IsValid(System.Object,System.ComponentModel.DataAnnotations.ValidationContext)" />
+      <MemberSignature Language="F#" Value="override this.IsValid : obj * System.ComponentModel.DataAnnotations.ValidationContext -&gt; System.ComponentModel.DataAnnotations.ValidationResult" Usage="compareAttribute.IsValid (value, validationContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::ComponentModel::DataAnnotations::ValidationResult ^ IsValid(System::Object ^ value, System::ComponentModel::DataAnnotations::ValidationContext ^ validationContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -113,6 +124,9 @@
       <MemberSignature Language="C#" Value="public string OtherProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OtherProperty" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.CompareAttribute.OtherProperty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OtherProperty As String" />
+      <MemberSignature Language="F#" Value="member this.OtherProperty : string" Usage="System.ComponentModel.DataAnnotations.CompareAttribute.OtherProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OtherProperty { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -137,6 +151,9 @@
       <MemberSignature Language="C#" Value="public string OtherPropertyDisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OtherPropertyDisplayName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.CompareAttribute.OtherPropertyDisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OtherPropertyDisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.OtherPropertyDisplayName : string" Usage="System.ComponentModel.DataAnnotations.CompareAttribute.OtherPropertyDisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OtherPropertyDisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -161,6 +178,9 @@
       <MemberSignature Language="C#" Value="public override bool RequiresValidationContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresValidationContext" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.CompareAttribute.RequiresValidationContext" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequiresValidationContext As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresValidationContext : bool" Usage="System.ComponentModel.DataAnnotations.CompareAttribute.RequiresValidationContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresValidationContext { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>

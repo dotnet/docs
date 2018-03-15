@@ -1,7 +1,10 @@
-<Type Name="MappingSource" FullName="System.Data.Linq.Mapping.MappingSource">
+﻿<Type Name="MappingSource" FullName="System.Data.Linq.Mapping.MappingSource">
   <TypeSignature Language="C#" Value="public abstract class MappingSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MappingSource extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.Mapping.MappingSource" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MappingSource" />
+  <TypeSignature Language="F#" Value="type MappingSource = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MappingSource abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="protected MappingSource ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MappingSource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MappingSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="protected abstract System.Data.Linq.Mapping.MetaModel CreateModel (Type dataContextType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.Linq.Mapping.MetaModel CreateModel(class System.Type dataContextType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MappingSource.CreateModel(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function CreateModel (dataContextType As Type) As MetaModel" />
+      <MemberSignature Language="F#" Value="abstract member CreateModel : Type -&gt; System.Data.Linq.Mapping.MetaModel" Usage="mappingSource.CreateModel dataContextType" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Data::Linq::Mapping::MetaModel ^ CreateModel(Type ^ dataContextType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -64,6 +72,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Linq.Mapping.MetaModel GetModel (Type dataContextType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Linq.Mapping.MetaModel GetModel(class System.Type dataContextType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Linq.Mapping.MappingSource.GetModel(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetModel (dataContextType As Type) As MetaModel" />
+      <MemberSignature Language="F#" Value="member this.GetModel : Type -&gt; System.Data.Linq.Mapping.MetaModel" Usage="mappingSource.GetModel dataContextType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Linq::Mapping::MetaModel ^ GetModel(Type ^ dataContextType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>

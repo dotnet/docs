@@ -1,7 +1,10 @@
-<Type Name="IObservable&lt;T&gt;" FullName="System.IObservable&lt;T&gt;">
+﻿<Type Name="IObservable&lt;T&gt;" FullName="System.IObservable&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IObservable&lt;out T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IObservable`1&lt;+ T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.IObservable`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IObservable(Of Out T)" />
+  <TypeSignature Language="F#" Value="type IObservable&lt;'T&gt; = interface" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IObservable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +90,9 @@
       <MemberSignature Language="C#" Value="public IDisposable Subscribe (IObserver&lt;out T&gt; observer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IDisposable Subscribe(class System.IObserver`1&lt;!T&gt; observer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IObservable`1.Subscribe(System.IObserver{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Subscribe (observer As IObserver(Of Out T)) As IDisposable" />
+      <MemberSignature Language="F#" Value="abstract member Subscribe : IObserver&lt;'T&gt; -&gt; IDisposable" Usage="iObservable.Subscribe observer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ Subscribe(IObserver&lt;T&gt; ^ observer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

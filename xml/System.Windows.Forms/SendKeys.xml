@@ -1,7 +1,10 @@
-<Type Name="SendKeys" FullName="System.Windows.Forms.SendKeys">
+﻿<Type Name="SendKeys" FullName="System.Windows.Forms.SendKeys">
   <TypeSignature Language="C#" Value="public class SendKeys" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi SendKeys extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SendKeys" />
+  <TypeSignature Language="VB.NET" Value="Public Class SendKeys" />
+  <TypeSignature Language="F#" Value="type SendKeys = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SendKeys" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -117,6 +120,9 @@
       <MemberSignature Language="C#" Value="public static void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SendKeys.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Flush ()" />
+      <MemberSignature Language="F#" Value="static member Flush : unit -&gt; unit" Usage="System.Windows.Forms.SendKeys.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -145,6 +151,9 @@
       <MemberSignature Language="C#" Value="public static void Send (string keys);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Send(string keys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SendKeys.Send(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Send (keys As String)" />
+      <MemberSignature Language="F#" Value="static member Send : string -&gt; unit" Usage="System.Windows.Forms.SendKeys.Send keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Send(System::String ^ keys);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -266,6 +275,9 @@
       <MemberSignature Language="C#" Value="public static void SendWait (string keys);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SendWait(string keys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.SendKeys.SendWait(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SendWait (keys As String)" />
+      <MemberSignature Language="F#" Value="static member SendWait : string -&gt; unit" Usage="System.Windows.Forms.SendKeys.SendWait keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SendWait(System::String ^ keys);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

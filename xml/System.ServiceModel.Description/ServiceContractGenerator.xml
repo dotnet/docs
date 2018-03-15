@@ -1,7 +1,10 @@
-<Type Name="ServiceContractGenerator" FullName="System.ServiceModel.Description.ServiceContractGenerator">
+﻿<Type Name="ServiceContractGenerator" FullName="System.ServiceModel.Description.ServiceContractGenerator">
   <TypeSignature Language="C#" Value="public class ServiceContractGenerator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ServiceContractGenerator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Description.ServiceContractGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceContractGenerator" />
+  <TypeSignature Language="F#" Value="type ServiceContractGenerator = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceContractGenerator" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +32,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceContractGenerator" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ServiceContractGenerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceContractGenerator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceContractGenerator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -48,6 +62,9 @@
       <MemberSignature Language="C#" Value="public ServiceContractGenerator (System.CodeDom.CodeCompileUnit targetCompileUnit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeCompileUnit targetCompileUnit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceContractGenerator.#ctor(System.CodeDom.CodeCompileUnit)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetCompileUnit As CodeCompileUnit)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ServiceContractGenerator : System.CodeDom.CodeCompileUnit -&gt; System.ServiceModel.Description.ServiceContractGenerator" Usage="new System.ServiceModel.Description.ServiceContractGenerator targetCompileUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceContractGenerator(System::CodeDom::CodeCompileUnit ^ targetCompileUnit);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -66,6 +83,9 @@
       <MemberSignature Language="C#" Value="public ServiceContractGenerator (System.Configuration.Configuration targetConfig);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Configuration.Configuration targetConfig) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceContractGenerator.#ctor(System.Configuration.Configuration)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetConfig As Configuration)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ServiceContractGenerator : System.Configuration.Configuration -&gt; System.ServiceModel.Description.ServiceContractGenerator" Usage="new System.ServiceModel.Description.ServiceContractGenerator targetConfig" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceContractGenerator(System::Configuration::Configuration ^ targetConfig);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +104,9 @@
       <MemberSignature Language="C#" Value="public ServiceContractGenerator (System.CodeDom.CodeCompileUnit targetCompileUnit, System.Configuration.Configuration targetConfig);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.CodeCompileUnit targetCompileUnit, class System.Configuration.Configuration targetConfig) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceContractGenerator.#ctor(System.CodeDom.CodeCompileUnit,System.Configuration.Configuration)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (targetCompileUnit As CodeCompileUnit, targetConfig As Configuration)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Description.ServiceContractGenerator : System.CodeDom.CodeCompileUnit * System.Configuration.Configuration -&gt; System.ServiceModel.Description.ServiceContractGenerator" Usage="new System.ServiceModel.Description.ServiceContractGenerator (targetCompileUnit, targetConfig)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceContractGenerator(System::CodeDom::CodeCompileUnit ^ targetCompileUnit, System::Configuration::Configuration ^ targetConfig);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -104,6 +127,9 @@
       <MemberSignature Language="C#" Value="public System.Configuration.Configuration Configuration { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.Configuration Configuration" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceContractGenerator.Configuration" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Configuration As Configuration" />
+      <MemberSignature Language="F#" Value="member this.Configuration : System.Configuration.Configuration" Usage="System.ServiceModel.Description.ServiceContractGenerator.Configuration" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Configuration::Configuration ^ Configuration { System::Configuration::Configuration ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -122,6 +148,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.MetadataConversionError&gt; Errors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.MetadataConversionError&gt; Errors" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceContractGenerator.Errors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As Collection(Of MetadataConversionError)" />
+      <MemberSignature Language="F#" Value="member this.Errors : System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.MetadataConversionError&gt;" Usage="System.ServiceModel.Description.ServiceContractGenerator.Errors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::MetadataConversionError ^&gt; ^ Errors { System::Collections::ObjectModel::Collection&lt;System::ServiceModel::Description::MetadataConversionError ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -147,6 +176,8 @@
       <MemberSignature Language="C#" Value="public void GenerateBinding (System.ServiceModel.Channels.Binding binding, out string bindingSectionName, out string configurationName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GenerateBinding(class System.ServiceModel.Channels.Binding binding, [out] string&amp; bindingSectionName, [out] string&amp; configurationName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceContractGenerator.GenerateBinding(System.ServiceModel.Channels.Binding,System.String@,System.String@)" />
+      <MemberSignature Language="F#" Value="member this.GenerateBinding : System.ServiceModel.Channels.Binding *  *  -&gt; unit" Usage="serviceContractGenerator.GenerateBinding (binding, bindingSectionName, configurationName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GenerateBinding(System::ServiceModel::Channels::Binding ^ binding, [Runtime::InteropServices::Out] System::String ^ % bindingSectionName, [Runtime::InteropServices::Out] System::String ^ % configurationName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -181,6 +212,8 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference GenerateServiceContractType (System.ServiceModel.Description.ContractDescription contractDescription);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.CodeDom.CodeTypeReference GenerateServiceContractType(class System.ServiceModel.Description.ContractDescription contractDescription) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceContractGenerator.GenerateServiceContractType(System.ServiceModel.Description.ContractDescription)" />
+      <MemberSignature Language="F#" Value="member this.GenerateServiceContractType : System.ServiceModel.Description.ContractDescription -&gt; System.CodeDom.CodeTypeReference" Usage="serviceContractGenerator.GenerateServiceContractType contractDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::CodeTypeReference ^ GenerateServiceContractType(System::ServiceModel::Description::ContractDescription ^ contractDescription);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -210,6 +243,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeTypeReference GenerateServiceEndpoint (System.ServiceModel.Description.ServiceEndpoint endpoint, out System.ServiceModel.Configuration.ChannelEndpointElement channelElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.CodeDom.CodeTypeReference GenerateServiceEndpoint(class System.ServiceModel.Description.ServiceEndpoint endpoint, [out] class System.ServiceModel.Configuration.ChannelEndpointElement&amp; channelElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Description.ServiceContractGenerator.GenerateServiceEndpoint(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Configuration.ChannelEndpointElement@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateServiceEndpoint (endpoint As ServiceEndpoint, ByRef channelElement As ChannelEndpointElement) As CodeTypeReference" />
+      <MemberSignature Language="F#" Value="member this.GenerateServiceEndpoint : System.ServiceModel.Description.ServiceEndpoint *  -&gt; System.CodeDom.CodeTypeReference" Usage="serviceContractGenerator.GenerateServiceEndpoint (endpoint, channelElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::CodeTypeReference ^ GenerateServiceEndpoint(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, [Runtime::InteropServices::Out] System::ServiceModel::Configuration::ChannelEndpointElement ^ % channelElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -241,6 +277,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;string,string&gt; NamespaceMappings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;string, string&gt; NamespaceMappings" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceContractGenerator.NamespaceMappings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceMappings As Dictionary(Of String, String)" />
+      <MemberSignature Language="F#" Value="member this.NamespaceMappings : System.Collections.Generic.Dictionary&lt;string, string&gt;" Usage="System.ServiceModel.Description.ServiceContractGenerator.NamespaceMappings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt; ^ NamespaceMappings { System::Collections::Generic::Dictionary&lt;System::String ^, System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -270,6 +309,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceContractGenerationOptions Options { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Description.ServiceContractGenerationOptions Options" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceContractGenerator.Options" />
+      <MemberSignature Language="VB.NET" Value="Public Property Options As ServiceContractGenerationOptions" />
+      <MemberSignature Language="F#" Value="member this.Options : System.ServiceModel.Description.ServiceContractGenerationOptions with get, set" Usage="System.ServiceModel.Description.ServiceContractGenerator.Options" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Description::ServiceContractGenerationOptions Options { System::ServiceModel::Description::ServiceContractGenerationOptions get(); void set(System::ServiceModel::Description::ServiceContractGenerationOptions value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -295,6 +337,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.Dictionary&lt;System.ServiceModel.Description.ContractDescription,Type&gt; ReferencedTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.Dictionary`2&lt;class System.ServiceModel.Description.ContractDescription, class System.Type&gt; ReferencedTypes" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceContractGenerator.ReferencedTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferencedTypes As Dictionary(Of ContractDescription, Type)" />
+      <MemberSignature Language="F#" Value="member this.ReferencedTypes : System.Collections.Generic.Dictionary&lt;System.ServiceModel.Description.ContractDescription, Type&gt;" Usage="System.ServiceModel.Description.ServiceContractGenerator.ReferencedTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::Dictionary&lt;System::ServiceModel::Description::ContractDescription ^, Type ^&gt; ^ ReferencedTypes { System::Collections::Generic::Dictionary&lt;System::ServiceModel::Description::ContractDescription ^, Type ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -320,6 +365,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.CodeCompileUnit TargetCompileUnit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.CodeCompileUnit TargetCompileUnit" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Description.ServiceContractGenerator.TargetCompileUnit" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetCompileUnit As CodeCompileUnit" />
+      <MemberSignature Language="F#" Value="member this.TargetCompileUnit : System.CodeDom.CodeCompileUnit" Usage="System.ServiceModel.Description.ServiceContractGenerator.TargetCompileUnit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::CodeCompileUnit ^ TargetCompileUnit { System::CodeDom::CodeCompileUnit ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -334,14 +382,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Description.ServiceContractGenerator" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

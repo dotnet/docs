@@ -1,7 +1,10 @@
-<Type Name="HttpModuleActionCollection" FullName="System.Web.Configuration.HttpModuleActionCollection">
+﻿<Type Name="HttpModuleActionCollection" FullName="System.Web.Configuration.HttpModuleActionCollection">
   <TypeSignature Language="C#" Value="public sealed class HttpModuleActionCollection : System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpModuleActionCollection extends System.Configuration.ConfigurationElementCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.HttpModuleActionCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpModuleActionCollection&#xA;Inherits ConfigurationElementCollection" />
+  <TypeSignature Language="F#" Value="type HttpModuleActionCollection = class&#xA;    inherit ConfigurationElementCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpModuleActionCollection sealed : System::Configuration::ConfigurationElementCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +54,8 @@
       <MemberSignature Language="C#" Value="public HttpModuleActionCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpModuleActionCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpModuleActionCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +86,9 @@
       <MemberSignature Language="C#" Value="public void Add (System.Web.Configuration.HttpModuleAction httpModule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.Configuration.HttpModuleAction httpModule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpModuleActionCollection.Add(System.Web.Configuration.HttpModuleAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (httpModule As HttpModuleAction)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.Configuration.HttpModuleAction -&gt; unit" Usage="httpModuleActionCollection.Add httpModule" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::Configuration::HttpModuleAction ^ httpModule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +126,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpModuleActionCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="httpModuleActionCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -151,6 +162,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpModuleActionCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="httpModuleActionCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -170,6 +184,9 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpModuleActionCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="httpModuleActionCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -192,6 +209,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.Configuration.HttpModuleAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.Configuration.HttpModuleAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpModuleActionCollection.IndexOf(System.Web.Configuration.HttpModuleAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (action As HttpModuleAction) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.Configuration.HttpModuleAction -&gt; int" Usage="httpModuleActionCollection.IndexOf action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::Configuration::HttpModuleAction ^ action);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -229,6 +249,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsElementRemovable (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsElementRemovable(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpModuleActionCollection.IsElementRemovable(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsElementRemovable (element As ConfigurationElement) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsElementRemovable : System.Configuration.ConfigurationElement -&gt; bool" Usage="httpModuleActionCollection.IsElementRemovable element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsElementRemovable(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -251,6 +274,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.HttpModuleAction this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.HttpModuleAction Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpModuleActionCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As HttpModuleAction" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.Configuration.HttpModuleAction with get, set" Usage="System.Web.Configuration.HttpModuleActionCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::HttpModuleAction ^ default[int] { System::Web::Configuration::HttpModuleAction ^ get(int index); void set(int index, System::Web::Configuration::HttpModuleAction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -280,6 +306,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.HttpModuleActionCollection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.HttpModuleActionCollection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -315,6 +344,9 @@
       <MemberSignature Language="C#" Value="public void Remove (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpModuleActionCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (name As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="httpModuleActionCollection.Remove name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -352,6 +384,9 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.Configuration.HttpModuleAction action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.Configuration.HttpModuleAction action) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpModuleActionCollection.Remove(System.Web.Configuration.HttpModuleAction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (action As HttpModuleAction)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.Configuration.HttpModuleAction -&gt; unit" Usage="httpModuleActionCollection.Remove action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::Configuration::HttpModuleAction ^ action);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -389,6 +424,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.HttpModuleActionCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="httpModuleActionCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

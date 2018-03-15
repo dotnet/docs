@@ -1,7 +1,10 @@
-<Type Name="DataGridView+HitTestInfo" FullName="System.Windows.Forms.DataGridView+HitTestInfo">
+﻿<Type Name="DataGridView+HitTestInfo" FullName="System.Windows.Forms.DataGridView+HitTestInfo">
   <TypeSignature Language="C#" Value="public sealed class DataGridView.HitTestInfo" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit DataGridView/HitTestInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridView.HitTestInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DataGridView.HitTestInfo" />
+  <TypeSignature Language="F#" Value="type DataGridView.HitTestInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class DataGridView::HitTestInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public int ColumnIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.HitTestInfo.ColumnIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.ColumnIndex : int" Usage="System.Windows.Forms.DataGridView.HitTestInfo.ColumnIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +73,9 @@
       <MemberSignature Language="C#" Value="public int ColumnX { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnX" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.HitTestInfo.ColumnX" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ColumnX As Integer" />
+      <MemberSignature Language="F#" Value="member this.ColumnX : int" Usage="System.Windows.Forms.DataGridView.HitTestInfo.ColumnX" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnX { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -87,6 +96,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.HitTestInfo.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="hitTestInfo.Equals value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -112,6 +124,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.HitTestInfo.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="hitTestInfo.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -132,6 +147,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Forms.DataGridView.HitTestInfo Nowhere;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Forms.DataGridView/HitTestInfo Nowhere" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridView.HitTestInfo.Nowhere" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Nowhere As DataGridView.HitTestInfo " />
+      <MemberSignature Language="F#" Value=" staticval mutable Nowhere : System.Windows.Forms.DataGridView.HitTestInfo" Usage="System.Windows.Forms.DataGridView.HitTestInfo.Nowhere" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Forms::DataGridView::HitTestInfo ^ Nowhere;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -158,6 +176,9 @@
       <MemberSignature Language="C#" Value="public int RowIndex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RowIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.HitTestInfo.RowIndex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.RowIndex : int" Usage="System.Windows.Forms.DataGridView.HitTestInfo.RowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowIndex { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -188,6 +209,9 @@
       <MemberSignature Language="C#" Value="public int RowY { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RowY" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.HitTestInfo.RowY" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RowY As Integer" />
+      <MemberSignature Language="F#" Value="member this.RowY : int" Usage="System.Windows.Forms.DataGridView.HitTestInfo.RowY" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int RowY { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -208,6 +232,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridView.HitTestInfo.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="hitTestInfo.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -236,6 +263,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewHitTestType Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewHitTestType Type" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridView.HitTestInfo.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As DataGridViewHitTestType" />
+      <MemberSignature Language="F#" Value="member this.Type : System.Windows.Forms.DataGridViewHitTestType" Usage="System.Windows.Forms.DataGridView.HitTestInfo.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewHitTestType Type { System::Windows::Forms::DataGridViewHitTestType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

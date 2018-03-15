@@ -1,7 +1,10 @@
-<Type Name="DynamicFilter" FullName="System.Web.DynamicData.DynamicFilter">
+﻿<Type Name="DynamicFilter" FullName="System.Web.DynamicData.DynamicFilter">
   <TypeSignature Language="C#" Value="public class DynamicFilter : System.Web.UI.Control, System.Web.DynamicData.IFilterExpressionProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DynamicFilter extends System.Web.UI.Control implements class System.Web.DynamicData.IFilterExpressionProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.DynamicFilter" />
+  <TypeSignature Language="VB.NET" Value="Public Class DynamicFilter&#xA;Inherits Control&#xA;Implements IFilterExpressionProvider" />
+  <TypeSignature Language="F#" Value="type DynamicFilter = class&#xA;    inherit Control&#xA;    interface IFilterExpressionProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DynamicFilter : System::Web::UI::Control, System::Web::DynamicData::IFilterExpressionProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -116,6 +119,8 @@
       <MemberSignature Language="C#" Value="public DynamicFilter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicFilter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DynamicFilter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -135,9 +140,12 @@
       </Docs>
     </Member>
     <Member MemberName="Column">
-      <MemberSignature Language="C#" Value="protected System.Web.DynamicData.MetaColumn Column { get; }" />
+      <MemberSignature Language="C#" Value="protected internal System.Web.DynamicData.MetaColumn Column { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.DynamicData.MetaColumn Column" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicFilter.Column" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property Column As MetaColumn" />
+      <MemberSignature Language="F#" Value="member this.Column : System.Web.DynamicData.MetaColumn" Usage="System.Web.DynamicData.DynamicFilter.Column" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::Web::DynamicData::MetaColumn ^ Column { System::Web::DynamicData::MetaColumn ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -163,6 +171,9 @@
       <MemberSignature Language="C#" Value="public string DataField { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataField" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicFilter.DataField" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataField As String" />
+      <MemberSignature Language="F#" Value="member this.DataField : string with get, set" Usage="System.Web.DynamicData.DynamicFilter.DataField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataField { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -201,6 +212,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler FilterChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler FilterChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.DynamicData.DynamicFilter.FilterChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event FilterChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.FilterChanged : EventHandler " Usage="member this.FilterChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ FilterChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -233,6 +247,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Control FilterTemplate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Control FilterTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicFilter.FilterTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FilterTemplate As Control" />
+      <MemberSignature Language="F#" Value="member this.FilterTemplate : System.Web.UI.Control" Usage="System.Web.DynamicData.DynamicFilter.FilterTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Control ^ FilterTemplate { System::Web::UI::Control ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -243,7 +260,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -266,6 +283,9 @@
       <MemberSignature Language="C#" Value="public string FilterUIHint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FilterUIHint" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.DynamicFilter.FilterUIHint" />
+      <MemberSignature Language="VB.NET" Value="Public Property FilterUIHint As String" />
+      <MemberSignature Language="F#" Value="member this.FilterUIHint : string with get, set" Usage="System.Web.DynamicData.DynamicFilter.FilterUIHint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FilterUIHint { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -315,6 +335,9 @@
       <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicFilter.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="dynamicFilter.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -343,7 +366,12 @@
       <MemberSignature Language="C#" Value="System.Linq.IQueryable IFilterExpressionProvider.GetQueryable (System.Linq.IQueryable source);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Linq.IQueryable System.Web.DynamicData.IFilterExpressionProvider.GetQueryable(class System.Linq.IQueryable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicFilter.System#Web#DynamicData#IFilterExpressionProvider#GetQueryable(System.Linq.IQueryable)" />
+      <MemberSignature Language="VB.NET" Value="Function GetQueryable (source As IQueryable) As IQueryable Implements IFilterExpressionProvider.GetQueryable" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Linq::IQueryable ^ System.Web.DynamicData.IFilterExpressionProvider.GetQueryable(System::Linq::IQueryable ^ source) = System::Web::DynamicData::IFilterExpressionProvider::GetQueryable;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.DynamicData.IFilterExpressionProvider.GetQueryable(System.Linq.IQueryable)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -372,7 +400,12 @@
       <MemberSignature Language="C#" Value="void IFilterExpressionProvider.Initialize (System.Web.UI.WebControls.IQueryableDataSource dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.DynamicData.IFilterExpressionProvider.Initialize(class System.Web.UI.WebControls.IQueryableDataSource dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.DynamicFilter.System#Web#DynamicData#IFilterExpressionProvider#Initialize(System.Web.UI.WebControls.IQueryableDataSource)" />
+      <MemberSignature Language="VB.NET" Value="Sub Initialize (dataSource As IQueryableDataSource) Implements IFilterExpressionProvider.Initialize" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.DynamicData.IFilterExpressionProvider.Initialize(System::Web::UI::WebControls::IQueryableDataSource ^ dataSource) = System::Web::DynamicData::IFilterExpressionProvider::Initialize;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.DynamicData.IFilterExpressionProvider.Initialize(System.Web.UI.WebControls.IQueryableDataSource)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

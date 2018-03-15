@@ -1,7 +1,10 @@
-<Type Name="XmlSerializableServices" FullName="System.Runtime.Serialization.XmlSerializableServices">
+﻿<Type Name="XmlSerializableServices" FullName="System.Runtime.Serialization.XmlSerializableServices">
   <TypeSignature Language="C#" Value="public static class XmlSerializableServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit XmlSerializableServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.XmlSerializableServices" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSerializableServices" />
+  <TypeSignature Language="F#" Value="type XmlSerializableServices = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSerializableServices abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public static void AddDefaultSchema (System.Xml.Schema.XmlSchemaSet schemas, System.Xml.XmlQualifiedName typeQName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddDefaultSchema(class System.Xml.Schema.XmlSchemaSet schemas, class System.Xml.XmlQualifiedName typeQName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlSerializableServices.AddDefaultSchema(System.Xml.Schema.XmlSchemaSet,System.Xml.XmlQualifiedName)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddDefaultSchema (schemas As XmlSchemaSet, typeQName As XmlQualifiedName)" />
+      <MemberSignature Language="F#" Value="static member AddDefaultSchema : System.Xml.Schema.XmlSchemaSet * System.Xml.XmlQualifiedName -&gt; unit" Usage="System.Runtime.Serialization.XmlSerializableServices.AddDefaultSchema (schemas, typeQName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddDefaultSchema(System::Xml::Schema::XmlSchemaSet ^ schemas, System::Xml::XmlQualifiedName ^ typeQName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -77,6 +83,8 @@
       <MemberSignature Language="C#" Value="public static System.Xml.XmlNode[] ReadNodes (System.Xml.XmlReader xmlReader);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Xml.XmlNode[] ReadNodes(class System.Xml.XmlReader xmlReader) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlSerializableServices.ReadNodes(System.Xml.XmlReader)" />
+      <MemberSignature Language="F#" Value="static member ReadNodes : System.Xml.XmlReader -&gt; System.Xml.XmlNode[]" Usage="System.Runtime.Serialization.XmlSerializableServices.ReadNodes xmlReader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Xml::XmlNode ^&gt; ^ ReadNodes(System::Xml::XmlReader ^ xmlReader);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>
@@ -117,6 +125,8 @@
       <MemberSignature Language="C#" Value="public static void WriteNodes (System.Xml.XmlWriter xmlWriter, System.Xml.XmlNode[] nodes);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void WriteNodes(class System.Xml.XmlWriter xmlWriter, class System.Xml.XmlNode[] nodes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.XmlSerializableServices.WriteNodes(System.Xml.XmlWriter,System.Xml.XmlNode[])" />
+      <MemberSignature Language="F#" Value="static member WriteNodes : System.Xml.XmlWriter * System.Xml.XmlNode[] -&gt; unit" Usage="System.Runtime.Serialization.XmlSerializableServices.WriteNodes (xmlWriter, nodes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void WriteNodes(System::Xml::XmlWriter ^ xmlWriter, cli::array &lt;System::Xml::XmlNode ^&gt; ^ nodes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization</AssemblyName>

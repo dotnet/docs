@@ -1,7 +1,10 @@
-<Type Name="AdRotator" FullName="System.Web.UI.MobileControls.AdRotator">
+﻿<Type Name="AdRotator" FullName="System.Web.UI.MobileControls.AdRotator">
   <TypeSignature Language="C#" Value="public class AdRotator : System.Web.UI.MobileControls.MobileControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AdRotator extends System.Web.UI.MobileControls.MobileControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.AdRotator" />
+  <TypeSignature Language="VB.NET" Value="Public Class AdRotator&#xA;Inherits MobileControl" />
+  <TypeSignature Language="F#" Value="type AdRotator = class&#xA;    inherit MobileControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AdRotator : System::Web::UI::MobileControls::MobileControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +81,8 @@
       <MemberSignature Language="C#" Value="public AdRotator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.AdRotator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AdRotator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -101,6 +106,9 @@
       <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.AdCreatedEventHandler AdCreated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.AdCreatedEventHandler AdCreated" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.MobileControls.AdRotator.AdCreated" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event AdCreated As AdCreatedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.AdCreated : System.Web.UI.WebControls.AdCreatedEventHandler " Usage="member this.AdCreated : System.Web.UI.WebControls.AdCreatedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::AdCreatedEventHandler ^ AdCreated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -143,6 +151,9 @@
       <MemberSignature Language="C#" Value="public string AdvertisementFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AdvertisementFile" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.AdRotator.AdvertisementFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property AdvertisementFile As String" />
+      <MemberSignature Language="F#" Value="member this.AdvertisementFile : string with get, set" Usage="System.Web.UI.MobileControls.AdRotator.AdvertisementFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AdvertisementFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -185,6 +196,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.AdRotator CreateWebAdRotator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.AdRotator CreateWebAdRotator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.AdRotator.CreateWebAdRotator" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateWebAdRotator () As AdRotator" />
+      <MemberSignature Language="F#" Value="abstract member CreateWebAdRotator : unit -&gt; System.Web.UI.WebControls.AdRotator&#xA;override this.CreateWebAdRotator : unit -&gt; System.Web.UI.WebControls.AdRotator" Usage="adRotator.CreateWebAdRotator " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::AdRotator ^ CreateWebAdRotator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -212,6 +226,9 @@
       <MemberSignature Language="C#" Value="public string ImageKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ImageKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.AdRotator.ImageKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImageKey As String" />
+      <MemberSignature Language="F#" Value="member this.ImageKey : string with get, set" Usage="System.Web.UI.MobileControls.AdRotator.ImageKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ImageKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -263,6 +280,9 @@
       <MemberSignature Language="C#" Value="public string KeywordFilter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeywordFilter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.AdRotator.KeywordFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeywordFilter As String" />
+      <MemberSignature Language="F#" Value="member this.KeywordFilter : string with get, set" Usage="System.Web.UI.MobileControls.AdRotator.KeywordFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeywordFilter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -307,6 +327,9 @@
       <MemberSignature Language="C#" Value="public string NavigateUrlKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NavigateUrlKey" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.AdRotator.NavigateUrlKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property NavigateUrlKey As String" />
+      <MemberSignature Language="F#" Value="member this.NavigateUrlKey : string with get, set" Usage="System.Web.UI.MobileControls.AdRotator.NavigateUrlKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NavigateUrlKey { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -349,6 +372,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnAdCreated (System.Web.UI.WebControls.AdCreatedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnAdCreated(class System.Web.UI.WebControls.AdCreatedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.AdRotator.OnAdCreated(System.Web.UI.WebControls.AdCreatedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnAdCreated (e As AdCreatedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnAdCreated : System.Web.UI.WebControls.AdCreatedEventArgs -&gt; unit&#xA;override this.OnAdCreated : System.Web.UI.WebControls.AdCreatedEventArgs -&gt; unit" Usage="adRotator.OnAdCreated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnAdCreated(System::Web::UI::WebControls::AdCreatedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -378,6 +404,9 @@
       <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.AdRotator.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="adRotator.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

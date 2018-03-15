@@ -1,7 +1,10 @@
-<Type Name="InvalidBodyAccessException" FullName="System.ServiceModel.Dispatcher.InvalidBodyAccessException">
+﻿<Type Name="InvalidBodyAccessException" FullName="System.ServiceModel.Dispatcher.InvalidBodyAccessException">
   <TypeSignature Language="C#" Value="public abstract class InvalidBodyAccessException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit InvalidBodyAccessException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.InvalidBodyAccessException" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class InvalidBodyAccessException&#xA;Inherits SystemException" />
+  <TypeSignature Language="F#" Value="type InvalidBodyAccessException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InvalidBodyAccessException abstract : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.InvalidBodyAccessException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected InvalidBodyAccessException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.InvalidBodyAccessException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.InvalidBodyAccessException : string -&gt; System.ServiceModel.Dispatcher.InvalidBodyAccessException" Usage="new System.ServiceModel.Dispatcher.InvalidBodyAccessException message" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidBodyAccessException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -40,6 +55,9 @@
       <MemberSignature Language="C#" Value="protected InvalidBodyAccessException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.InvalidBodyAccessException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.InvalidBodyAccessException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.Dispatcher.InvalidBodyAccessException" Usage="new System.ServiceModel.Dispatcher.InvalidBodyAccessException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidBodyAccessException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -63,6 +81,9 @@
       <MemberSignature Language="C#" Value="protected InvalidBodyAccessException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Dispatcher.InvalidBodyAccessException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Dispatcher.InvalidBodyAccessException : string * Exception -&gt; System.ServiceModel.Dispatcher.InvalidBodyAccessException" Usage="new System.ServiceModel.Dispatcher.InvalidBodyAccessException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InvalidBodyAccessException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -82,14 +103,5 @@
         </block>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Dispatcher.InvalidBodyAccessException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

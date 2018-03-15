@@ -1,7 +1,10 @@
-<Type Name="SettingsBindableAttribute" FullName="System.ComponentModel.SettingsBindableAttribute">
+﻿<Type Name="SettingsBindableAttribute" FullName="System.ComponentModel.SettingsBindableAttribute">
   <TypeSignature Language="C#" Value="public sealed class SettingsBindableAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SettingsBindableAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.SettingsBindableAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SettingsBindableAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type SettingsBindableAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SettingsBindableAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public SettingsBindableAttribute (bool bindable);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool bindable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SettingsBindableAttribute.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (bindable As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.SettingsBindableAttribute : bool -&gt; System.ComponentModel.SettingsBindableAttribute" Usage="new System.ComponentModel.SettingsBindableAttribute bindable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SettingsBindableAttribute(bool bindable);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -63,6 +69,9 @@
       <MemberSignature Language="C#" Value="public bool Bindable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Bindable" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.SettingsBindableAttribute.Bindable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bindable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Bindable : bool" Usage="System.ComponentModel.SettingsBindableAttribute.Bindable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Bindable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -92,6 +101,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SettingsBindableAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="settingsBindableAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -126,6 +138,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.SettingsBindableAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="settingsBindableAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -156,6 +171,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.SettingsBindableAttribute No;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.SettingsBindableAttribute No" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.SettingsBindableAttribute.No" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As SettingsBindableAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.ComponentModel.SettingsBindableAttribute" Usage="System.ComponentModel.SettingsBindableAttribute.No" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::SettingsBindableAttribute ^ No;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -183,6 +201,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.SettingsBindableAttribute Yes;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.SettingsBindableAttribute Yes" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.SettingsBindableAttribute.Yes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As SettingsBindableAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.ComponentModel.SettingsBindableAttribute" Usage="System.ComponentModel.SettingsBindableAttribute.Yes" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::SettingsBindableAttribute ^ Yes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

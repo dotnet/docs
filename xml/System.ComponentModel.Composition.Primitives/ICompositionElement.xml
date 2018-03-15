@@ -1,7 +1,10 @@
-<Type Name="ICompositionElement" FullName="System.ComponentModel.Composition.Primitives.ICompositionElement">
+﻿<Type Name="ICompositionElement" FullName="System.ComponentModel.Composition.Primitives.ICompositionElement">
   <TypeSignature Language="C#" Value="public interface ICompositionElement" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICompositionElement" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.Primitives.ICompositionElement" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICompositionElement" />
+  <TypeSignature Language="F#" Value="type ICompositionElement = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICompositionElement" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -17,6 +20,9 @@
       <MemberSignature Language="C#" Value="public string DisplayName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ICompositionElement.DisplayName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayName As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayName : string" Usage="System.ComponentModel.Composition.Primitives.ICompositionElement.DisplayName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -43,6 +49,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.Composition.Primitives.ICompositionElement Origin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Composition.Primitives.ICompositionElement Origin" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.Composition.Primitives.ICompositionElement.Origin" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Origin As ICompositionElement" />
+      <MemberSignature Language="F#" Value="member this.Origin : System.ComponentModel.Composition.Primitives.ICompositionElement" Usage="System.ComponentModel.Composition.Primitives.ICompositionElement.Origin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::Composition::Primitives::ICompositionElement ^ Origin { System::ComponentModel::Composition::Primitives::ICompositionElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>

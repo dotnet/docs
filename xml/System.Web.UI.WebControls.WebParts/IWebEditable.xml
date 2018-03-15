@@ -1,7 +1,10 @@
-<Type Name="IWebEditable" FullName="System.Web.UI.WebControls.WebParts.IWebEditable">
+﻿<Type Name="IWebEditable" FullName="System.Web.UI.WebControls.WebParts.IWebEditable">
   <TypeSignature Language="C#" Value="public interface IWebEditable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWebEditable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.IWebEditable" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWebEditable" />
+  <TypeSignature Language="F#" Value="type IWebEditable = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWebEditable" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -63,6 +66,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.EditorPartCollection CreateEditorParts ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.WebControls.WebParts.EditorPartCollection CreateEditorParts() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.IWebEditable.CreateEditorParts" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateEditorParts () As EditorPartCollection" />
+      <MemberSignature Language="F#" Value="abstract member CreateEditorParts : unit -&gt; System.Web.UI.WebControls.WebParts.EditorPartCollection" Usage="iWebEditable.CreateEditorParts " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::WebControls::WebParts::EditorPartCollection ^ CreateEditorParts();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,6 +114,9 @@
       <MemberSignature Language="C#" Value="public object WebBrowsableObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object WebBrowsableObject" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.IWebEditable.WebBrowsableObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WebBrowsableObject As Object" />
+      <MemberSignature Language="F#" Value="member this.WebBrowsableObject : obj" Usage="System.Web.UI.WebControls.WebParts.IWebEditable.WebBrowsableObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ WebBrowsableObject { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

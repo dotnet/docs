@@ -1,7 +1,10 @@
-<Type Name="StreamChangeCallback" FullName="System.Configuration.Internal.StreamChangeCallback">
+﻿<Type Name="StreamChangeCallback" FullName="System.Configuration.Internal.StreamChangeCallback">
   <TypeSignature Language="C#" Value="public delegate void StreamChangeCallback(string streamName);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StreamChangeCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.StreamChangeCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub StreamChangeCallback(streamName As String)" />
+  <TypeSignature Language="F#" Value="type StreamChangeCallback = delegate of string -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void StreamChangeCallback(System::String ^ streamName);" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="TableSectionStyle" FullName="System.Web.UI.WebControls.TableSectionStyle">
+﻿<Type Name="TableSectionStyle" FullName="System.Web.UI.WebControls.TableSectionStyle">
   <TypeSignature Language="C#" Value="public class TableSectionStyle : System.Web.UI.WebControls.Style" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableSectionStyle extends System.Web.UI.WebControls.Style" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableSectionStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Class TableSectionStyle&#xA;Inherits Style" />
+  <TypeSignature Language="F#" Value="type TableSectionStyle = class&#xA;    inherit Style" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TableSectionStyle : System::Web::UI::WebControls::Style" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public TableSectionStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableSectionStyle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TableSectionStyle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="public bool Visible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TableSectionStyle.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.WebControls.TableSectionStyle.Visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

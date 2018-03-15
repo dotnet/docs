@@ -1,7 +1,10 @@
-<Type Name="FontNumeralStyle" FullName="System.Windows.FontNumeralStyle">
+﻿<Type Name="FontNumeralStyle" FullName="System.Windows.FontNumeralStyle">
   <TypeSignature Language="C#" Value="public enum FontNumeralStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FontNumeralStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.FontNumeralStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FontNumeralStyle" />
+  <TypeSignature Language="F#" Value="type FontNumeralStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FontNumeralStyle" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,9 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="Lining" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontNumeralStyle Lining = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.FontNumeralStyle.Lining" />
+      <MemberSignature Language="VB.NET" Value="Lining" />
+      <MemberSignature Language="F#" Value="Lining = 1" Usage="System.Windows.FontNumeralStyle.Lining" />
+      <MemberSignature Language="C++ CLI" Value="Lining" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -51,6 +57,7 @@ Example of standard and old style numeral sets
       <ReturnValue>
         <ReturnType>System.Windows.FontNumeralStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Lining numeral style is used. Replaces default glyphs with numeric forms of even height.</summary>
       </Docs>
@@ -59,6 +66,9 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontNumeralStyle Normal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.FontNumeralStyle.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 0" Usage="System.Windows.FontNumeralStyle.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -67,6 +77,7 @@ Example of standard and old style numeral sets
       <ReturnValue>
         <ReturnType>System.Windows.FontNumeralStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Default numeral style is used.</summary>
       </Docs>
@@ -75,6 +86,9 @@ Example of standard and old style numeral sets
       <MemberSignature Language="C#" Value="OldStyle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.FontNumeralStyle OldStyle = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.FontNumeralStyle.OldStyle" />
+      <MemberSignature Language="VB.NET" Value="OldStyle" />
+      <MemberSignature Language="F#" Value="OldStyle = 2" Usage="System.Windows.FontNumeralStyle.OldStyle" />
+      <MemberSignature Language="C++ CLI" Value="OldStyle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +97,7 @@ Example of standard and old style numeral sets
       <ReturnValue>
         <ReturnType>System.Windows.FontNumeralStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Old style numeral style is used. Replaces default glyphs with a figure style that matches lowercase letters in height and color.</summary>
       </Docs>

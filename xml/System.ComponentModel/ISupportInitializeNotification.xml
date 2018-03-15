@@ -1,7 +1,10 @@
-<Type Name="ISupportInitializeNotification" FullName="System.ComponentModel.ISupportInitializeNotification">
+﻿<Type Name="ISupportInitializeNotification" FullName="System.ComponentModel.ISupportInitializeNotification">
   <TypeSignature Language="C#" Value="public interface ISupportInitializeNotification : System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ISupportInitializeNotification implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ISupportInitializeNotification" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ISupportInitializeNotification&#xA;Implements ISupportInitialize" />
+  <TypeSignature Language="F#" Value="type ISupportInitializeNotification = interface&#xA;    interface ISupportInitialize" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ISupportInitializeNotification : System::ComponentModel::ISupportInitialize" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,9 +38,12 @@
   </Docs>
   <Members>
     <Member MemberName="Initialized">
-      <MemberSignature Language="C#" Value="public event EventHandler Initialized;" />
+      <MemberSignature Language="C#" Value="event EventHandler Initialized;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Initialized" />
       <MemberSignature Language="DocId" Value="E:System.ComponentModel.ISupportInitializeNotification.Initialized" />
+      <MemberSignature Language="VB.NET" Value="Event Initialized As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Initialized : EventHandler " Usage="member this.Initialized : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Initialized;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -73,6 +79,9 @@
       <MemberSignature Language="C#" Value="public bool IsInitialized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInitialized" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ISupportInitializeNotification.IsInitialized" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInitialized As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInitialized : bool" Usage="System.ComponentModel.ISupportInitializeNotification.IsInitialized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInitialized { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

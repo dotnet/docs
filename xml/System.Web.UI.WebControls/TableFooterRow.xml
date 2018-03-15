@@ -1,7 +1,10 @@
-<Type Name="TableFooterRow" FullName="System.Web.UI.WebControls.TableFooterRow">
+﻿<Type Name="TableFooterRow" FullName="System.Web.UI.WebControls.TableFooterRow">
   <TypeSignature Language="C#" Value="public class TableFooterRow : System.Web.UI.WebControls.TableRow" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableFooterRow extends System.Web.UI.WebControls.TableRow" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TableFooterRow" />
+  <TypeSignature Language="VB.NET" Value="Public Class TableFooterRow&#xA;Inherits TableRow" />
+  <TypeSignature Language="F#" Value="type TableFooterRow = class&#xA;    inherit TableRow" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TableFooterRow : System::Web::UI::WebControls::TableRow" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +52,8 @@
       <MemberSignature Language="C#" Value="public TableFooterRow ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TableFooterRow.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TableFooterRow();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

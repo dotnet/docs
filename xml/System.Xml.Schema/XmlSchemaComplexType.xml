@@ -1,7 +1,10 @@
-<Type Name="XmlSchemaComplexType" FullName="System.Xml.Schema.XmlSchemaComplexType">
+﻿<Type Name="XmlSchemaComplexType" FullName="System.Xml.Schema.XmlSchemaComplexType">
   <TypeSignature Language="C#" Value="public class XmlSchemaComplexType : System.Xml.Schema.XmlSchemaType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi XmlSchemaComplexType extends System.Xml.Schema.XmlSchemaType" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaComplexType" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaComplexType&#xA;Inherits XmlSchemaType" />
+  <TypeSignature Language="F#" Value="type XmlSchemaComplexType = class&#xA;    inherit XmlSchemaType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaComplexType : System::Xml::Schema::XmlSchemaType" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -48,6 +51,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaComplexType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaComplexType.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaComplexType();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -72,6 +77,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaAnyAttribute AnyAttribute { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaAnyAttribute AnyAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.AnyAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Property AnyAttribute As XmlSchemaAnyAttribute" />
+      <MemberSignature Language="F#" Value="member this.AnyAttribute : System.Xml.Schema.XmlSchemaAnyAttribute with get, set" Usage="System.Xml.Schema.XmlSchemaComplexType.AnyAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaAnyAttribute ^ AnyAttribute { System::Xml::Schema::XmlSchemaAnyAttribute ^ get(); void set(System::Xml::Schema::XmlSchemaAnyAttribute ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -111,6 +119,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectCollection Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectCollection Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As XmlSchemaObjectCollection" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Xml.Schema.XmlSchemaObjectCollection" Usage="System.Xml.Schema.XmlSchemaComplexType.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectCollection ^ Attributes { System::Xml::Schema::XmlSchemaObjectCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -146,6 +157,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaObjectTable AttributeUses { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaObjectTable AttributeUses" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.AttributeUses" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributeUses As XmlSchemaObjectTable" />
+      <MemberSignature Language="F#" Value="member this.AttributeUses : System.Xml.Schema.XmlSchemaObjectTable" Usage="System.Xml.Schema.XmlSchemaComplexType.AttributeUses" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaObjectTable ^ AttributeUses { System::Xml::Schema::XmlSchemaObjectTable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -187,6 +201,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaAnyAttribute AttributeWildcard { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaAnyAttribute AttributeWildcard" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.AttributeWildcard" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AttributeWildcard As XmlSchemaAnyAttribute" />
+      <MemberSignature Language="F#" Value="member this.AttributeWildcard : System.Xml.Schema.XmlSchemaAnyAttribute" Usage="System.Xml.Schema.XmlSchemaComplexType.AttributeWildcard" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaAnyAttribute ^ AttributeWildcard { System::Xml::Schema::XmlSchemaAnyAttribute ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -226,6 +243,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaDerivationMethod Block { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaDerivationMethod Block" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.Block" />
+      <MemberSignature Language="VB.NET" Value="Public Property Block As XmlSchemaDerivationMethod" />
+      <MemberSignature Language="F#" Value="member this.Block : System.Xml.Schema.XmlSchemaDerivationMethod with get, set" Usage="System.Xml.Schema.XmlSchemaComplexType.Block" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaDerivationMethod Block { System::Xml::Schema::XmlSchemaDerivationMethod get(); void set(System::Xml::Schema::XmlSchemaDerivationMethod value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -281,6 +301,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaDerivationMethod BlockResolved { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaDerivationMethod BlockResolved" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.BlockResolved" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BlockResolved As XmlSchemaDerivationMethod" />
+      <MemberSignature Language="F#" Value="member this.BlockResolved : System.Xml.Schema.XmlSchemaDerivationMethod" Usage="System.Xml.Schema.XmlSchemaComplexType.BlockResolved" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaDerivationMethod BlockResolved { System::Xml::Schema::XmlSchemaDerivationMethod get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -331,6 +354,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaContentModel ContentModel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaContentModel ContentModel" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.ContentModel" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentModel As XmlSchemaContentModel" />
+      <MemberSignature Language="F#" Value="member this.ContentModel : System.Xml.Schema.XmlSchemaContentModel with get, set" Usage="System.Xml.Schema.XmlSchemaComplexType.ContentModel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaContentModel ^ ContentModel { System::Xml::Schema::XmlSchemaContentModel ^ get(); void set(System::Xml::Schema::XmlSchemaContentModel ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -373,6 +399,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaContentType ContentType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.Schema.XmlSchemaContentType ContentType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentType As XmlSchemaContentType" />
+      <MemberSignature Language="F#" Value="member this.ContentType : System.Xml.Schema.XmlSchemaContentType" Usage="System.Xml.Schema.XmlSchemaComplexType.ContentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaContentType ContentType { System::Xml::Schema::XmlSchemaContentType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -427,6 +456,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaParticle ContentTypeParticle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaParticle ContentTypeParticle" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.ContentTypeParticle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ContentTypeParticle As XmlSchemaParticle" />
+      <MemberSignature Language="F#" Value="member this.ContentTypeParticle : System.Xml.Schema.XmlSchemaParticle" Usage="System.Xml.Schema.XmlSchemaComplexType.ContentTypeParticle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaParticle ^ ContentTypeParticle { System::Xml::Schema::XmlSchemaParticle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -466,6 +498,9 @@
       <MemberSignature Language="C#" Value="public bool IsAbstract { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAbstract" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.IsAbstract" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAbstract As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAbstract : bool with get, set" Usage="System.Xml.Schema.XmlSchemaComplexType.IsAbstract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAbstract { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -503,6 +538,9 @@
       <MemberSignature Language="C#" Value="public override bool IsMixed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMixed" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.IsMixed" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property IsMixed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsMixed : bool with get, set" Usage="System.Xml.Schema.XmlSchemaComplexType.IsMixed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsMixed { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -548,6 +586,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Schema.XmlSchemaParticle Particle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Schema.XmlSchemaParticle Particle" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaComplexType.Particle" />
+      <MemberSignature Language="VB.NET" Value="Public Property Particle As XmlSchemaParticle" />
+      <MemberSignature Language="F#" Value="member this.Particle : System.Xml.Schema.XmlSchemaParticle with get, set" Usage="System.Xml.Schema.XmlSchemaComplexType.Particle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Schema::XmlSchemaParticle ^ Particle { System::Xml::Schema::XmlSchemaParticle ^ get(); void set(System::Xml::Schema::XmlSchemaParticle ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

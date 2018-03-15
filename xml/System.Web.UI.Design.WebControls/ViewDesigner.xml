@@ -1,7 +1,10 @@
-<Type Name="ViewDesigner" FullName="System.Web.UI.Design.WebControls.ViewDesigner">
+﻿<Type Name="ViewDesigner" FullName="System.Web.UI.Design.WebControls.ViewDesigner">
   <TypeSignature Language="C#" Value="public class ViewDesigner : System.Web.UI.Design.ContainerControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ViewDesigner extends System.Web.UI.Design.ContainerControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.ViewDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class ViewDesigner&#xA;Inherits ContainerControlDesigner" />
+  <TypeSignature Language="F#" Value="type ViewDesigner = class&#xA;    inherit ContainerControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ViewDesigner : System::Web::UI::Design::ContainerControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +24,8 @@
       <MemberSignature Language="C#" Value="public ViewDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ViewDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ViewDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -33,10 +38,23 @@
         <altmember cref="T:System.Web.UI.WebControls.View" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDesignTimeHtml">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the HTML markup that is used to represent the control at design time.</summary>
+        <altmember cref="T:System.Web.UI.WebControls.View" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDesignTimeHtml">
       <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ViewDesigner.GetDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="viewDesigner.GetDesignTimeHtml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -58,6 +76,9 @@
       <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml (System.Web.UI.Design.DesignerRegionCollection regions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml(class System.Web.UI.Design.DesignerRegionCollection regions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ViewDesigner.GetDesignTimeHtml(System.Web.UI.Design.DesignerRegionCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml (regions As DesignerRegionCollection) As String" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : System.Web.UI.Design.DesignerRegionCollection -&gt; string" Usage="viewDesigner.GetDesignTimeHtml regions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml(System::Web::UI::Design::DesignerRegionCollection ^ regions);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -82,6 +103,9 @@
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.ViewDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="viewDesigner.Initialize component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -104,6 +128,9 @@
       <MemberSignature Language="C#" Value="protected override bool NoWrap { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool NoWrap" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.ViewDesigner.NoWrap" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property NoWrap As Boolean" />
+      <MemberSignature Language="F#" Value="member this.NoWrap : bool" Usage="System.Web.UI.Design.WebControls.ViewDesigner.NoWrap" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool NoWrap { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -119,15 +146,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetDesignTimeHtml">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the HTML markup that is used to represent the control at design time.</summary>
-        <altmember cref="T:System.Web.UI.WebControls.View" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="SnapLinePriority" FullName="System.Windows.Forms.Design.Behavior.SnapLinePriority">
+﻿<Type Name="SnapLinePriority" FullName="System.Windows.Forms.Design.Behavior.SnapLinePriority">
   <TypeSignature Language="C#" Value="public enum SnapLinePriority" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SnapLinePriority extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.SnapLinePriority" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SnapLinePriority" />
+  <TypeSignature Language="F#" Value="type SnapLinePriority = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SnapLinePriority" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="Always" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.Behavior.SnapLinePriority Always = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.Behavior.SnapLinePriority.Always" />
+      <MemberSignature Language="VB.NET" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 4" Usage="System.Windows.Forms.Design.Behavior.SnapLinePriority.Always" />
+      <MemberSignature Language="C++ CLI" Value="Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -38,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.Behavior.SnapLinePriority</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The priority category that is equivalent to the highest priority of all the current snaplines. Indicates that this category of snapline should always be active.</summary>
       </Docs>
@@ -46,6 +53,9 @@
       <MemberSignature Language="C#" Value="High" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.Behavior.SnapLinePriority High = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.Behavior.SnapLinePriority.High" />
+      <MemberSignature Language="VB.NET" Value="High" />
+      <MemberSignature Language="F#" Value="High = 3" Usage="System.Windows.Forms.Design.Behavior.SnapLinePriority.High" />
+      <MemberSignature Language="C++ CLI" Value="High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -54,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.Behavior.SnapLinePriority</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The highest priority category.</summary>
       </Docs>
@@ -62,6 +73,9 @@
       <MemberSignature Language="C#" Value="Low" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.Behavior.SnapLinePriority Low = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.Behavior.SnapLinePriority.Low" />
+      <MemberSignature Language="VB.NET" Value="Low" />
+      <MemberSignature Language="F#" Value="Low = 1" Usage="System.Windows.Forms.Design.Behavior.SnapLinePriority.Low" />
+      <MemberSignature Language="C++ CLI" Value="Low" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -70,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.Behavior.SnapLinePriority</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The lowest priority category.</summary>
       </Docs>
@@ -78,6 +93,9 @@
       <MemberSignature Language="C#" Value="Medium" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.Design.Behavior.SnapLinePriority Medium = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.Design.Behavior.SnapLinePriority.Medium" />
+      <MemberSignature Language="VB.NET" Value="Medium" />
+      <MemberSignature Language="F#" Value="Medium = 2" Usage="System.Windows.Forms.Design.Behavior.SnapLinePriority.Medium" />
+      <MemberSignature Language="C++ CLI" Value="Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -86,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.Behavior.SnapLinePriority</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The middle priority category.</summary>
       </Docs>

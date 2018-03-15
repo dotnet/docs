@@ -1,7 +1,10 @@
-<Type Name="ControlType" FullName="System.Windows.Automation.ControlType">
+﻿<Type Name="ControlType" FullName="System.Windows.Automation.ControlType">
   <TypeSignature Language="C#" Value="public class ControlType : System.Windows.Automation.AutomationIdentifier" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlType extends System.Windows.Automation.AutomationIdentifier" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ControlType" />
+  <TypeSignature Language="VB.NET" Value="Public Class ControlType&#xA;Inherits AutomationIdentifier" />
+  <TypeSignature Language="F#" Value="type ControlType = class&#xA;    inherit AutomationIdentifier" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ControlType : System::Windows::Automation::AutomationIdentifier" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Button;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Button" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Button" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Button As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Button : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Button" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Button;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -60,6 +66,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Calendar;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Calendar" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Calendar" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Calendar As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Calendar : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Calendar" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Calendar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -77,6 +86,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType CheckBox;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType CheckBox" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.CheckBox" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CheckBox As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable CheckBox : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.CheckBox" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ CheckBox;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -101,6 +113,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType ComboBox;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType ComboBox" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.ComboBox" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ComboBox As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable ComboBox : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.ComboBox" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ ComboBox;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -125,6 +140,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Custom;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Custom" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Custom" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Custom As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Custom : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Custom" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Custom;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -153,6 +171,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType DataGrid;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType DataGrid" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.DataGrid" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DataGrid As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable DataGrid : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.DataGrid" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ DataGrid;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -177,6 +198,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType DataItem;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType DataItem" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.DataItem" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DataItem As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable DataItem : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.DataItem" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ DataItem;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -201,6 +225,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Document;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Document" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Document" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Document As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Document : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Document" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Document;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -225,6 +252,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Edit;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Edit" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Edit" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Edit As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Edit : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Edit" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Edit;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -251,6 +281,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationPattern[] GetNeverSupportedPatterns ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationPattern[] GetNeverSupportedPatterns() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ControlType.GetNeverSupportedPatterns" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNeverSupportedPatterns () As AutomationPattern()" />
+      <MemberSignature Language="F#" Value="member this.GetNeverSupportedPatterns : unit -&gt; System.Windows.Automation.AutomationPattern[]" Usage="controlType.GetNeverSupportedPatterns " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::AutomationPattern ^&gt; ^ GetNeverSupportedPatterns();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -285,6 +318,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationPattern[][] GetRequiredPatternSets ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationPattern[][] GetRequiredPatternSets() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ControlType.GetRequiredPatternSets" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRequiredPatternSets () As AutomationPattern()()" />
+      <MemberSignature Language="F#" Value="member this.GetRequiredPatternSets : unit -&gt; System.Windows.Automation.AutomationPattern[][]" Usage="controlType.GetRequiredPatternSets " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;cli::array &lt;System::Windows::Automation::AutomationPattern ^&gt; ^&gt; ^ GetRequiredPatternSets();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -321,6 +357,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationProperty[] GetRequiredProperties ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.AutomationProperty[] GetRequiredProperties() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ControlType.GetRequiredProperties" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetRequiredProperties () As AutomationProperty()" />
+      <MemberSignature Language="F#" Value="member this.GetRequiredProperties : unit -&gt; System.Windows.Automation.AutomationProperty[]" Usage="controlType.GetRequiredProperties " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Automation::AutomationProperty ^&gt; ^ GetRequiredProperties();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -347,6 +386,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Group;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Group" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Group" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Group As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Group : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Group" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Group;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -371,6 +413,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Header;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Header" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Header" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Header As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Header : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Header" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Header;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -388,6 +433,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType HeaderItem;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType HeaderItem" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.HeaderItem" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderItem As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderItem : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.HeaderItem" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ HeaderItem;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -405,6 +453,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Hyperlink;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Hyperlink" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Hyperlink" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Hyperlink As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Hyperlink : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Hyperlink" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Hyperlink;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -429,6 +480,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Image;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Image" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Image" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Image As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Image : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Image" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Image;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -455,6 +509,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType List;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType List" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.List" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly List As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable List : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.List" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ List;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -485,6 +542,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType ListItem;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType ListItem" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.ListItem" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ListItem As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable ListItem : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.ListItem" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ ListItem;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -509,6 +569,9 @@
       <MemberSignature Language="C#" Value="public string LocalizedControlType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalizedControlType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.ControlType.LocalizedControlType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LocalizedControlType As String" />
+      <MemberSignature Language="F#" Value="member this.LocalizedControlType : string" Usage="System.Windows.Automation.ControlType.LocalizedControlType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocalizedControlType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -537,6 +600,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Automation.ControlType LookupById (int id);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Automation.ControlType LookupById(int32 id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.ControlType.LookupById(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LookupById (id As Integer) As ControlType" />
+      <MemberSignature Language="F#" Value="static member LookupById : int -&gt; System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.LookupById id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Automation::ControlType ^ LookupById(int id);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -566,6 +632,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Menu;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Menu" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Menu" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Menu As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Menu : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Menu" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Menu;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -590,6 +659,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType MenuBar;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType MenuBar" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.MenuBar" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MenuBar As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable MenuBar : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.MenuBar" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ MenuBar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -614,6 +686,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType MenuItem;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType MenuItem" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.MenuItem" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MenuItem As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable MenuItem : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.MenuItem" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ MenuItem;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -638,6 +713,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Pane;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Pane" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Pane" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pane As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Pane : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Pane" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Pane;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -662,6 +740,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType ProgressBar;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType ProgressBar" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.ProgressBar" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ProgressBar As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable ProgressBar : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.ProgressBar" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ ProgressBar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -679,6 +760,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType RadioButton;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType RadioButton" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.RadioButton" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RadioButton As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable RadioButton : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.RadioButton" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ RadioButton;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -696,6 +780,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType ScrollBar;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType ScrollBar" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.ScrollBar" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ScrollBar As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable ScrollBar : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.ScrollBar" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ ScrollBar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -722,6 +809,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Separator;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Separator" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Separator" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Separator As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Separator : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Separator" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Separator;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -739,6 +829,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Slider;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Slider" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Slider" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Slider As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Slider : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Slider" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Slider;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -763,6 +856,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Spinner;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Spinner" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Spinner" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Spinner As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Spinner : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Spinner" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Spinner;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -787,6 +883,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType SplitButton;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType SplitButton" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.SplitButton" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SplitButton As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable SplitButton : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.SplitButton" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ SplitButton;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -804,6 +903,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType StatusBar;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType StatusBar" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.StatusBar" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StatusBar As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable StatusBar : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.StatusBar" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ StatusBar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -828,6 +930,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Tab;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Tab" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Tab" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Tab As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Tab : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Tab" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Tab;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -852,6 +957,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType TabItem;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType TabItem" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.TabItem" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TabItem As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable TabItem : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.TabItem" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ TabItem;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -869,6 +977,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Table;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Table" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Table" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Table As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Table : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Table" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Table;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -893,6 +1004,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Text;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Text" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Text As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Text : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Text" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Text;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -917,6 +1031,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Thumb;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Thumb" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Thumb" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Thumb As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Thumb : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Thumb" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Thumb;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -941,6 +1058,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType TitleBar;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType TitleBar" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.TitleBar" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TitleBar As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable TitleBar : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.TitleBar" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ TitleBar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -958,6 +1078,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType ToolBar;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType ToolBar" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.ToolBar" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolBar As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolBar : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.ToolBar" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ ToolBar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -975,6 +1098,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType ToolTip;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType ToolTip" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.ToolTip" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ToolTip As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable ToolTip : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.ToolTip" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ ToolTip;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -992,6 +1118,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Tree;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Tree" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Tree" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Tree As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Tree : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Tree" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Tree;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -1018,6 +1147,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType TreeItem;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType TreeItem" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.TreeItem" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TreeItem As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable TreeItem : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.TreeItem" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ TreeItem;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -1042,6 +1174,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.ControlType Window;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.ControlType Window" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ControlType.Window" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Window As ControlType " />
+      <MemberSignature Language="F#" Value=" staticval mutable Window : System.Windows.Automation.ControlType" Usage="System.Windows.Automation.ControlType.Window" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::ControlType ^ Window;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

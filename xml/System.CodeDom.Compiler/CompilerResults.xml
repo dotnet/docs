@@ -1,7 +1,10 @@
-<Type Name="CompilerResults" FullName="System.CodeDom.Compiler.CompilerResults">
+﻿<Type Name="CompilerResults" FullName="System.CodeDom.Compiler.CompilerResults">
   <TypeSignature Language="C#" Value="public class CompilerResults" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CompilerResults extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.CompilerResults" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompilerResults" />
+  <TypeSignature Language="F#" Value="type CompilerResults = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompilerResults" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +59,9 @@
       <MemberSignature Language="C#" Value="public CompilerResults (System.CodeDom.Compiler.TempFileCollection tempFiles);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.CodeDom.Compiler.TempFileCollection tempFiles) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.CompilerResults.#ctor(System.CodeDom.Compiler.TempFileCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (tempFiles As TempFileCollection)" />
+      <MemberSignature Language="F#" Value="new System.CodeDom.Compiler.CompilerResults : System.CodeDom.Compiler.TempFileCollection -&gt; System.CodeDom.Compiler.CompilerResults" Usage="new System.CodeDom.Compiler.CompilerResults tempFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CompilerResults(System::CodeDom::Compiler::TempFileCollection ^ tempFiles);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -80,6 +86,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Assembly CompiledAssembly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Assembly CompiledAssembly" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerResults.CompiledAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompiledAssembly As Assembly" />
+      <MemberSignature Language="F#" Value="member this.CompiledAssembly : System.Reflection.Assembly with get, set" Usage="System.CodeDom.Compiler.CompilerResults.CompiledAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ CompiledAssembly { System::Reflection::Assembly ^ get(); void set(System::Reflection::Assembly ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -113,6 +122,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.Compiler.CompilerErrorCollection Errors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.Compiler.CompilerErrorCollection Errors" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerResults.Errors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As CompilerErrorCollection" />
+      <MemberSignature Language="F#" Value="member this.Errors : System.CodeDom.Compiler.CompilerErrorCollection" Usage="System.CodeDom.Compiler.CompilerResults.Errors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::Compiler::CompilerErrorCollection ^ Errors { System::CodeDom::Compiler::CompilerErrorCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -143,6 +155,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Policy.Evidence Evidence { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Policy.Evidence Evidence" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerResults.Evidence" />
+      <MemberSignature Language="VB.NET" Value="Public Property Evidence As Evidence" />
+      <MemberSignature Language="F#" Value="member this.Evidence : System.Security.Policy.Evidence with get, set" Usage="System.CodeDom.Compiler.CompilerResults.Evidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::Evidence ^ Evidence { System::Security::Policy::Evidence ^ get(); void set(System::Security::Policy::Evidence ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -169,6 +184,9 @@
       <MemberSignature Language="C#" Value="public int NativeCompilerReturnValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NativeCompilerReturnValue" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerResults.NativeCompilerReturnValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property NativeCompilerReturnValue As Integer" />
+      <MemberSignature Language="F#" Value="member this.NativeCompilerReturnValue : int with get, set" Usage="System.CodeDom.Compiler.CompilerResults.NativeCompilerReturnValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NativeCompilerReturnValue { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -199,6 +217,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.StringCollection Output { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.StringCollection Output" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerResults.Output" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Output As StringCollection" />
+      <MemberSignature Language="F#" Value="member this.Output : System.Collections.Specialized.StringCollection" Usage="System.CodeDom.Compiler.CompilerResults.Output" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::StringCollection ^ Output { System::Collections::Specialized::StringCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -230,6 +251,9 @@
       <MemberSignature Language="C#" Value="public string PathToAssembly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PathToAssembly" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerResults.PathToAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public Property PathToAssembly As String" />
+      <MemberSignature Language="F#" Value="member this.PathToAssembly : string with get, set" Usage="System.CodeDom.Compiler.CompilerResults.PathToAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PathToAssembly { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -253,6 +277,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.Compiler.TempFileCollection TempFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.CodeDom.Compiler.TempFileCollection TempFiles" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.Compiler.CompilerResults.TempFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property TempFiles As TempFileCollection" />
+      <MemberSignature Language="F#" Value="member this.TempFiles : System.CodeDom.Compiler.TempFileCollection with get, set" Usage="System.CodeDom.Compiler.CompilerResults.TempFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::CodeDom::Compiler::TempFileCollection ^ TempFiles { System::CodeDom::Compiler::TempFileCollection ^ get(); void set(System::CodeDom::Compiler::TempFileCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

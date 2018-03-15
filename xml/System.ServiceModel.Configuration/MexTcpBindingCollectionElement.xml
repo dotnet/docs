@@ -1,7 +1,10 @@
-<Type Name="MexTcpBindingCollectionElement" FullName="System.ServiceModel.Configuration.MexTcpBindingCollectionElement">
+﻿<Type Name="MexTcpBindingCollectionElement" FullName="System.ServiceModel.Configuration.MexTcpBindingCollectionElement">
   <TypeSignature Language="C#" Value="public class MexTcpBindingCollectionElement : System.ServiceModel.Configuration.MexBindingBindingCollectionElement&lt;System.ServiceModel.Channels.CustomBinding,System.ServiceModel.Configuration.MexTcpBindingElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MexTcpBindingCollectionElement extends System.ServiceModel.Configuration.MexBindingBindingCollectionElement`2&lt;class System.ServiceModel.Channels.CustomBinding, class System.ServiceModel.Configuration.MexTcpBindingElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MexTcpBindingCollectionElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class MexTcpBindingCollectionElement&#xA;Inherits MexBindingBindingCollectionElement(Of CustomBinding, MexTcpBindingElement)" />
+  <TypeSignature Language="F#" Value="type MexTcpBindingCollectionElement = class&#xA;    inherit MexBindingBindingCollectionElement&lt;CustomBinding, MexTcpBindingElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MexTcpBindingCollectionElement : System::ServiceModel::Configuration::MexBindingBindingCollectionElement&lt;System::ServiceModel::Channels::CustomBinding ^, System::ServiceModel::Configuration::MexTcpBindingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,8 @@
       <MemberSignature Language="C#" Value="public MexTcpBindingCollectionElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexTcpBindingCollectionElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MexTcpBindingCollectionElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -35,9 +40,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetDefault">
-      <MemberSignature Language="C#" Value="protected override System.ServiceModel.Channels.Binding GetDefault ();" />
+      <MemberSignature Language="C#" Value="protected internal override System.ServiceModel.Channels.Binding GetDefault ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.ServiceModel.Channels.Binding GetDefault() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MexTcpBindingCollectionElement.GetDefault" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetDefault () As Binding" />
+      <MemberSignature Language="F#" Value="override this.GetDefault : unit -&gt; System.ServiceModel.Channels.Binding" Usage="mexTcpBindingCollectionElement.GetDefault " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Channels::Binding ^ GetDefault();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

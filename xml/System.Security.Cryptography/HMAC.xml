@@ -1,7 +1,10 @@
-<Type Name="HMAC" FullName="System.Security.Cryptography.HMAC">
+﻿<Type Name="HMAC" FullName="System.Security.Cryptography.HMAC">
   <TypeSignature Language="C#" Value="public abstract class HMAC : System.Security.Cryptography.KeyedHashAlgorithm" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit HMAC extends System.Security.Cryptography.KeyedHashAlgorithm" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.HMAC" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class HMAC&#xA;Inherits KeyedHashAlgorithm" />
+  <TypeSignature Language="F#" Value="type HMAC = class&#xA;    inherit KeyedHashAlgorithm" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HMAC abstract : System::Security::Cryptography::KeyedHashAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +48,8 @@
       <MemberSignature Language="C#" Value="protected HMAC ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMAC.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; HMAC();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -70,6 +75,9 @@
       <MemberSignature Language="C#" Value="protected int BlockSizeValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 BlockSizeValue" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HMAC.BlockSizeValue" />
+      <MemberSignature Language="VB.NET" Value="Protected Property BlockSizeValue As Integer" />
+      <MemberSignature Language="F#" Value="member this.BlockSizeValue : int with get, set" Usage="System.Security.Cryptography.HMAC.BlockSizeValue" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property int BlockSizeValue { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -100,10 +108,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of an implementation of a Hash-based Message Authentication Code (<see cref="T:System.Security.Cryptography.HMAC" />) .</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.HMAC Create ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.HMAC Create() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMAC.Create" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As HMAC" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.HMAC" Usage="System.Security.Cryptography.HMAC.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::HMAC ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -139,6 +160,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.HMAC Create (string algorithmName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.HMAC Create(string algorithmName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMAC.Create(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algorithmName As String) As HMAC" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.HMAC" Usage="System.Security.Cryptography.HMAC.Create algorithmName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::HMAC ^ Create(System::String ^ algorithmName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -215,6 +239,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMAC.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="hMAC.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -262,6 +289,9 @@
       <MemberSignature Language="C#" Value="protected override void HashCore (byte[] rgb, int ib, int cb);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void HashCore(unsigned int8[] rgb, int32 ib, int32 cb) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMAC.HashCore(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub HashCore (rgb As Byte(), ib As Integer, cb As Integer)" />
+      <MemberSignature Language="F#" Value="override this.HashCore : byte[] * int * int -&gt; unit" Usage="hMAC.HashCore (rgb, ib, cb)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void HashCore(cli::array &lt;System::Byte&gt; ^ rgb, int ib, int cb);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -307,6 +337,9 @@
       <MemberSignature Language="C#" Value="protected override byte[] HashFinal ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance unsigned int8[] HashFinal() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMAC.HashFinal" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function HashFinal () As Byte()" />
+      <MemberSignature Language="F#" Value="override this.HashFinal : unit -&gt; byte[]" Usage="hMAC.HashFinal " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::Byte&gt; ^ HashFinal();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -343,6 +376,9 @@
       <MemberSignature Language="C#" Value="public string HashName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HashName" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HMAC.HashName" />
+      <MemberSignature Language="VB.NET" Value="Public Property HashName As String" />
+      <MemberSignature Language="F#" Value="member this.HashName : string with get, set" Usage="System.Security.Cryptography.HMAC.HashName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HashName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -372,6 +408,9 @@
       <MemberSignature Language="C#" Value="public override void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.HMAC.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize ()" />
+      <MemberSignature Language="F#" Value="override this.Initialize : unit -&gt; unit" Usage="hMAC.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -411,6 +450,9 @@
       <MemberSignature Language="C#" Value="public override byte[] Key { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Key" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.HMAC.Key" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Key As Byte()" />
+      <MemberSignature Language="F#" Value="member this.Key : byte[] with get, set" Usage="System.Security.Cryptography.HMAC.Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property cli::array &lt;System::Byte&gt; ^ Key { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Primitives</AssemblyName>
@@ -449,15 +491,5 @@
         <exception cref="T:System.Security.Cryptography.CryptographicException">An attempt is made to change the <see cref="P:System.Security.Cryptography.HMAC.Key" /> property after hashing has begun.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of an implementation of a Hash-based Message Authentication Code (<see cref="T:System.Security.Cryptography.HMAC" />) .</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

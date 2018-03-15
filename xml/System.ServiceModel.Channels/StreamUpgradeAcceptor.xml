@@ -1,7 +1,10 @@
-<Type Name="StreamUpgradeAcceptor" FullName="System.ServiceModel.Channels.StreamUpgradeAcceptor">
+﻿<Type Name="StreamUpgradeAcceptor" FullName="System.ServiceModel.Channels.StreamUpgradeAcceptor">
   <TypeSignature Language="C#" Value="public abstract class StreamUpgradeAcceptor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit StreamUpgradeAcceptor extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.StreamUpgradeAcceptor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class StreamUpgradeAcceptor" />
+  <TypeSignature Language="F#" Value="type StreamUpgradeAcceptor = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StreamUpgradeAcceptor abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,8 @@
       <MemberSignature Language="C#" Value="protected StreamUpgradeAcceptor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeAcceptor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; StreamUpgradeAcceptor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -45,6 +50,8 @@
       <MemberSignature Language="C#" Value="public virtual System.IO.Stream AcceptUpgrade (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream AcceptUpgrade(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeAcceptor.AcceptUpgrade(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="abstract member AcceptUpgrade : System.IO.Stream -&gt; System.IO.Stream&#xA;override this.AcceptUpgrade : System.IO.Stream -&gt; System.IO.Stream" Usage="streamUpgradeAcceptor.AcceptUpgrade stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ AcceptUpgrade(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -74,6 +81,8 @@
       <MemberSignature Language="C#" Value="public abstract IAsyncResult BeginAcceptUpgrade (System.IO.Stream stream, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IAsyncResult BeginAcceptUpgrade(class System.IO.Stream stream, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeAcceptor.BeginAcceptUpgrade(System.IO.Stream,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member BeginAcceptUpgrade : System.IO.Stream * AsyncCallback * obj -&gt; IAsyncResult" Usage="streamUpgradeAcceptor.BeginAcceptUpgrade (stream, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract IAsyncResult ^ BeginAcceptUpgrade(System::IO::Stream ^ stream, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +116,9 @@
       <MemberSignature Language="C#" Value="public abstract bool CanUpgrade (string contentType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool CanUpgrade(string contentType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeAcceptor.CanUpgrade(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CanUpgrade (contentType As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanUpgrade : string -&gt; bool" Usage="streamUpgradeAcceptor.CanUpgrade contentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool CanUpgrade(System::String ^ contentType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -137,6 +149,9 @@
       <MemberSignature Language="C#" Value="public abstract System.IO.Stream EndAcceptUpgrade (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream EndAcceptUpgrade(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Channels.StreamUpgradeAcceptor.EndAcceptUpgrade(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function EndAcceptUpgrade (result As IAsyncResult) As Stream" />
+      <MemberSignature Language="F#" Value="abstract member EndAcceptUpgrade : IAsyncResult -&gt; System.IO.Stream" Usage="streamUpgradeAcceptor.EndAcceptUpgrade result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::IO::Stream ^ EndAcceptUpgrade(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

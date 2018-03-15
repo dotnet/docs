@@ -1,7 +1,10 @@
-<Type Name="TileMode" FullName="System.Windows.Media.TileMode">
+﻿<Type Name="TileMode" FullName="System.Windows.Media.TileMode">
   <TypeSignature Language="C#" Value="public enum TileMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TileMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TileMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TileMode" />
+  <TypeSignature Language="F#" Value="type TileMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TileMode" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@ Available tile modes for the TileMode enumeration
       <MemberSignature Language="C#" Value="FlipX" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TileMode FlipX = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileMode.FlipX" />
+      <MemberSignature Language="VB.NET" Value="FlipX" />
+      <MemberSignature Language="F#" Value="FlipX = 1" Usage="System.Windows.Media.TileMode.FlipX" />
+      <MemberSignature Language="C++ CLI" Value="FlipX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -36,6 +42,7 @@ Available tile modes for the TileMode enumeration
       <ReturnValue>
         <ReturnType>System.Windows.Media.TileMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The same as <see cref="F:System.Windows.Media.TileMode.Tile" /> except that alternate columns of tiles are flipped horizontally. The base tile itself is not flipped.</summary>
       </Docs>
@@ -44,6 +51,9 @@ Available tile modes for the TileMode enumeration
       <MemberSignature Language="C#" Value="FlipXY" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TileMode FlipXY = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileMode.FlipXY" />
+      <MemberSignature Language="VB.NET" Value="FlipXY" />
+      <MemberSignature Language="F#" Value="FlipXY = 3" Usage="System.Windows.Media.TileMode.FlipXY" />
+      <MemberSignature Language="C++ CLI" Value="FlipXY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -52,6 +62,7 @@ Available tile modes for the TileMode enumeration
       <ReturnValue>
         <ReturnType>System.Windows.Media.TileMode</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The combination of <see cref="F:System.Windows.Media.TileMode.FlipX" /> and <see cref="F:System.Windows.Media.TileMode.FlipY" />. The base tile itself is not flipped.</summary>
       </Docs>
@@ -60,6 +71,9 @@ Available tile modes for the TileMode enumeration
       <MemberSignature Language="C#" Value="FlipY" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TileMode FlipY = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileMode.FlipY" />
+      <MemberSignature Language="VB.NET" Value="FlipY" />
+      <MemberSignature Language="F#" Value="FlipY = 2" Usage="System.Windows.Media.TileMode.FlipY" />
+      <MemberSignature Language="C++ CLI" Value="FlipY" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -68,6 +82,7 @@ Available tile modes for the TileMode enumeration
       <ReturnValue>
         <ReturnType>System.Windows.Media.TileMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The same as <see cref="F:System.Windows.Media.TileMode.Tile" /> except that alternate rows of tiles are flipped vertically. The base tile itself is not flipped.</summary>
       </Docs>
@@ -76,6 +91,9 @@ Available tile modes for the TileMode enumeration
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TileMode None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileMode.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Media.TileMode.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -84,6 +102,7 @@ Available tile modes for the TileMode enumeration
       <ReturnValue>
         <ReturnType>System.Windows.Media.TileMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The base tile is drawn but not repeated. The remaining area is transparent</summary>
       </Docs>
@@ -92,6 +111,9 @@ Available tile modes for the TileMode enumeration
       <MemberSignature Language="C#" Value="Tile" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Media.TileMode Tile = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileMode.Tile" />
+      <MemberSignature Language="VB.NET" Value="Tile" />
+      <MemberSignature Language="F#" Value="Tile = 4" Usage="System.Windows.Media.TileMode.Tile" />
+      <MemberSignature Language="C++ CLI" Value="Tile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -100,6 +122,7 @@ Available tile modes for the TileMode enumeration
       <ReturnValue>
         <ReturnType>System.Windows.Media.TileMode</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The base tile is drawn and the remaining area is filled by repeating the base tile. The right edge of one tile meets the left edge of the next, and similarly for the bottom and top edges.</summary>
       </Docs>

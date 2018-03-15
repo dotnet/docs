@@ -1,7 +1,10 @@
-<Type Name="DataGridViewColumn" FullName="System.Windows.Forms.DataGridViewColumn">
+﻿<Type Name="DataGridViewColumn" FullName="System.Windows.Forms.DataGridViewColumn">
   <TypeSignature Language="C#" Value="public class DataGridViewColumn : System.Windows.Forms.DataGridViewBand, IDisposable, System.ComponentModel.IComponent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewColumn extends System.Windows.Forms.DataGridViewBand implements class System.ComponentModel.IComponent, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumn" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridViewColumn&#xA;Inherits DataGridViewBand&#xA;Implements IComponent, IDisposable" />
+  <TypeSignature Language="F#" Value="type DataGridViewColumn = class&#xA;    inherit DataGridViewBand&#xA;    interface IComponent&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewColumn : System::Windows::Forms::DataGridViewBand, IDisposable, System::ComponentModel::IComponent" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,10 +67,21 @@
     <altmember cref="P:System.Windows.Forms.DataGridViewColumn.CellTemplate" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewColumn" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataGridViewColumn ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumn.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewColumn();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -84,6 +98,9 @@
       <MemberSignature Language="C#" Value="public DataGridViewColumn (System.Windows.Forms.DataGridViewCell cellTemplate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridViewCell cellTemplate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumn.#ctor(System.Windows.Forms.DataGridViewCell)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cellTemplate As DataGridViewCell)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewColumn : System.Windows.Forms.DataGridViewCell -&gt; System.Windows.Forms.DataGridViewColumn" Usage="new System.Windows.Forms.DataGridViewColumn cellTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewColumn(System::Windows::Forms::DataGridViewCell ^ cellTemplate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -112,6 +129,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewAutoSizeColumnMode AutoSizeMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewAutoSizeColumnMode AutoSizeMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.AutoSizeMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoSizeMode As DataGridViewAutoSizeColumnMode" />
+      <MemberSignature Language="F#" Value="member this.AutoSizeMode : System.Windows.Forms.DataGridViewAutoSizeColumnMode with get, set" Usage="System.Windows.Forms.DataGridViewColumn.AutoSizeMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewAutoSizeColumnMode AutoSizeMode { System::Windows::Forms::DataGridViewAutoSizeColumnMode get(); void set(System::Windows::Forms::DataGridViewAutoSizeColumnMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -122,7 +142,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -174,6 +194,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataGridViewCell CellTemplate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCell CellTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.CellTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property CellTemplate As DataGridViewCell" />
+      <MemberSignature Language="F#" Value="member this.CellTemplate : System.Windows.Forms.DataGridViewCell with get, set" Usage="System.Windows.Forms.DataGridViewColumn.CellTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCell ^ CellTemplate { System::Windows::Forms::DataGridViewCell ^ get(); void set(System::Windows::Forms::DataGridViewCell ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -184,7 +207,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
@@ -226,6 +249,9 @@
       <MemberSignature Language="C#" Value="public Type CellType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type CellType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.CellType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CellType As Type" />
+      <MemberSignature Language="F#" Value="member this.CellType : Type" Usage="System.Windows.Forms.DataGridViewColumn.CellType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ CellType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -263,6 +289,9 @@
       <MemberSignature Language="C#" Value="public override object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumn.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; obj" Usage="dataGridViewColumn.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -283,6 +312,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.ContextMenuStrip ContextMenuStrip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ContextMenuStrip ContextMenuStrip" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.ContextMenuStrip" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ContextMenuStrip As ContextMenuStrip" />
+      <MemberSignature Language="F#" Value="member this.ContextMenuStrip : System.Windows.Forms.ContextMenuStrip with get, set" Usage="System.Windows.Forms.DataGridViewColumn.ContextMenuStrip" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ContextMenuStrip ^ ContextMenuStrip { System::Windows::Forms::ContextMenuStrip ^ get(); void set(System::Windows::Forms::ContextMenuStrip ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -323,6 +355,9 @@
       <MemberSignature Language="C#" Value="public string DataPropertyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataPropertyName" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.DataPropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataPropertyName As String" />
+      <MemberSignature Language="F#" Value="member this.DataPropertyName : string with get, set" Usage="System.Windows.Forms.DataGridViewColumn.DataPropertyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataPropertyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -375,6 +410,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewCellStyle DefaultCellStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCellStyle DefaultCellStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.DefaultCellStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property DefaultCellStyle As DataGridViewCellStyle" />
+      <MemberSignature Language="F#" Value="member this.DefaultCellStyle : System.Windows.Forms.DataGridViewCellStyle with get, set" Usage="System.Windows.Forms.DataGridViewColumn.DefaultCellStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCellStyle ^ DefaultCellStyle { System::Windows::Forms::DataGridViewCellStyle ^ get(); void set(System::Windows::Forms::DataGridViewCellStyle ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -417,6 +455,9 @@
       <MemberSignature Language="C#" Value="public int DisplayIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DisplayIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.DisplayIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property DisplayIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.DisplayIndex : int with get, set" Usage="System.Windows.Forms.DataGridViewColumn.DisplayIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DisplayIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -427,7 +468,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -479,6 +520,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumn.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="dataGridViewColumn.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -502,6 +546,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Disposed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Disposed" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.DataGridViewColumn.Disposed" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Disposed As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Disposed : EventHandler " Usage="member this.Disposed : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler ^ Disposed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -545,6 +592,9 @@
       <MemberSignature Language="C#" Value="public int DividerWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 DividerWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.DividerWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property DividerWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.DividerWidth : int with get, set" Usage="System.Windows.Forms.DataGridViewColumn.DividerWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int DividerWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -586,6 +636,9 @@
       <MemberSignature Language="C#" Value="public float FillWeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 FillWeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.FillWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property FillWeight As Single" />
+      <MemberSignature Language="F#" Value="member this.FillWeight : single with get, set" Usage="System.Windows.Forms.DataGridViewColumn.FillWeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float FillWeight { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -630,6 +683,9 @@
       <MemberSignature Language="C#" Value="public override bool Frozen { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Frozen" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.Frozen" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Frozen As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Frozen : bool with get, set" Usage="System.Windows.Forms.DataGridViewColumn.Frozen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Frozen { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -640,7 +696,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -675,6 +731,9 @@
       <MemberSignature Language="C#" Value="public virtual int GetPreferredWidth (System.Windows.Forms.DataGridViewAutoSizeColumnMode autoSizeColumnMode, bool fixedHeight);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetPreferredWidth(valuetype System.Windows.Forms.DataGridViewAutoSizeColumnMode autoSizeColumnMode, bool fixedHeight) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumn.GetPreferredWidth(System.Windows.Forms.DataGridViewAutoSizeColumnMode,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetPreferredWidth (autoSizeColumnMode As DataGridViewAutoSizeColumnMode, fixedHeight As Boolean) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetPreferredWidth : System.Windows.Forms.DataGridViewAutoSizeColumnMode * bool -&gt; int&#xA;override this.GetPreferredWidth : System.Windows.Forms.DataGridViewAutoSizeColumnMode * bool -&gt; int" Usage="dataGridViewColumn.GetPreferredWidth (autoSizeColumnMode, fixedHeight)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetPreferredWidth(System::Windows::Forms::DataGridViewAutoSizeColumnMode autoSizeColumnMode, bool fixedHeight);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -719,6 +778,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewColumnHeaderCell HeaderCell { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewColumnHeaderCell HeaderCell" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.HeaderCell" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderCell As DataGridViewColumnHeaderCell" />
+      <MemberSignature Language="F#" Value="member this.HeaderCell : System.Windows.Forms.DataGridViewColumnHeaderCell with get, set" Usage="System.Windows.Forms.DataGridViewColumn.HeaderCell" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewColumnHeaderCell ^ HeaderCell { System::Windows::Forms::DataGridViewColumnHeaderCell ^ get(); void set(System::Windows::Forms::DataGridViewColumnHeaderCell ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -729,7 +791,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -762,6 +824,9 @@
       <MemberSignature Language="C#" Value="public string HeaderText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HeaderText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.HeaderText" />
+      <MemberSignature Language="VB.NET" Value="Public Property HeaderText As String" />
+      <MemberSignature Language="F#" Value="member this.HeaderText : string with get, set" Usage="System.Windows.Forms.DataGridViewColumn.HeaderText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HeaderText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -806,6 +871,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewAutoSizeColumnMode InheritedAutoSizeMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewAutoSizeColumnMode InheritedAutoSizeMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InheritedAutoSizeMode As DataGridViewAutoSizeColumnMode" />
+      <MemberSignature Language="F#" Value="member this.InheritedAutoSizeMode : System.Windows.Forms.DataGridViewAutoSizeColumnMode" Usage="System.Windows.Forms.DataGridViewColumn.InheritedAutoSizeMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewAutoSizeColumnMode InheritedAutoSizeMode { System::Windows::Forms::DataGridViewAutoSizeColumnMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -816,7 +884,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
@@ -856,6 +924,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewCellStyle InheritedStyle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridViewCellStyle InheritedStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.InheritedStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property InheritedStyle As DataGridViewCellStyle" />
+      <MemberSignature Language="F#" Value="member this.InheritedStyle : System.Windows.Forms.DataGridViewCellStyle" Usage="System.Windows.Forms.DataGridViewColumn.InheritedStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewCellStyle ^ InheritedStyle { System::Windows::Forms::DataGridViewCellStyle ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -892,6 +963,9 @@
       <MemberSignature Language="C#" Value="public bool IsDataBound { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDataBound" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.IsDataBound" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDataBound As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDataBound : bool" Usage="System.Windows.Forms.DataGridViewColumn.IsDataBound" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDataBound { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -902,7 +976,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -927,6 +1001,9 @@
       <MemberSignature Language="C#" Value="public int MinimumWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinimumWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.MinimumWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinimumWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.MinimumWidth : int with get, set" Usage="System.Windows.Forms.DataGridViewColumn.MinimumWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -940,7 +1017,7 @@
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -975,6 +1052,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.DataGridViewColumn.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1017,6 +1097,9 @@
       <MemberSignature Language="C#" Value="public override bool ReadOnly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ReadOnly : bool with get, set" Usage="System.Windows.Forms.DataGridViewColumn.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool ReadOnly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1055,6 +1138,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.DataGridViewTriState Resizable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewTriState Resizable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.Resizable" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Resizable As DataGridViewTriState" />
+      <MemberSignature Language="F#" Value="member this.Resizable : System.Windows.Forms.DataGridViewTriState with get, set" Usage="System.Windows.Forms.DataGridViewColumn.Resizable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridViewTriState Resizable { System::Windows::Forms::DataGridViewTriState get(); void set(System::Windows::Forms::DataGridViewTriState value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1094,6 +1180,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.ISite Site { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.ISite Site" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.Site" />
+      <MemberSignature Language="VB.NET" Value="Public Property Site As ISite" />
+      <MemberSignature Language="F#" Value="member this.Site : System.ComponentModel.ISite with get, set" Usage="System.Windows.Forms.DataGridViewColumn.Site" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::ISite ^ Site { System::ComponentModel::ISite ^ get(); void set(System::ComponentModel::ISite ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1104,7 +1193,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1121,6 +1210,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewColumnSortMode SortMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewColumnSortMode SortMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.SortMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property SortMode As DataGridViewColumnSortMode" />
+      <MemberSignature Language="F#" Value="member this.SortMode : System.Windows.Forms.DataGridViewColumnSortMode with get, set" Usage="System.Windows.Forms.DataGridViewColumn.SortMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewColumnSortMode SortMode { System::Windows::Forms::DataGridViewColumnSortMode get(); void set(System::Windows::Forms::DataGridViewColumnSortMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1180,6 +1272,9 @@
       <MemberSignature Language="C#" Value="public string ToolTipText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ToolTipText" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.ToolTipText" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToolTipText As String" />
+      <MemberSignature Language="F#" Value="member this.ToolTipText : string with get, set" Usage="System.Windows.Forms.DataGridViewColumn.ToolTipText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ToolTipText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1223,6 +1318,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewColumn.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataGridViewColumn.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1252,6 +1350,9 @@
       <MemberSignature Language="C#" Value="public Type ValueType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ValueType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.ValueType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValueType As Type" />
+      <MemberSignature Language="F#" Value="member this.ValueType : Type with get, set" Usage="System.Windows.Forms.DataGridViewColumn.ValueType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ValueType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1265,7 +1366,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1298,6 +1399,9 @@
       <MemberSignature Language="C#" Value="public override bool Visible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Windows.Forms.DataGridViewColumn.Visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1344,6 +1448,9 @@
       <MemberSignature Language="C#" Value="public int Width { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Width" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewColumn.Width" />
+      <MemberSignature Language="VB.NET" Value="Public Property Width As Integer" />
+      <MemberSignature Language="F#" Value="member this.Width : int with get, set" Usage="System.Windows.Forms.DataGridViewColumn.Width" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Width { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1354,7 +1461,7 @@
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1385,14 +1492,5 @@
         <altmember cref="P:System.Windows.Forms.DataGridViewColumn.MinimumWidth" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewColumn" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

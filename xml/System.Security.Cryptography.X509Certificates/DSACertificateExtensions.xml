@@ -1,7 +1,10 @@
-<Type Name="DSACertificateExtensions" FullName="System.Security.Cryptography.X509Certificates.DSACertificateExtensions">
+﻿<Type Name="DSACertificateExtensions" FullName="System.Security.Cryptography.X509Certificates.DSACertificateExtensions">
   <TypeSignature Language="C#" Value="public static class DSACertificateExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DSACertificateExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.X509Certificates.DSACertificateExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module DSACertificateExtensions" />
+  <TypeSignature Language="F#" Value="type DSACertificateExtensions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DSACertificateExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.X509Certificates.X509Certificate2 CopyWithPrivateKey (this System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, System.Security.Cryptography.DSA privateKey);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.X509Certificates.X509Certificate2 CopyWithPrivateKey(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate, class System.Security.Cryptography.DSA privateKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.CopyWithPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.DSA)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function CopyWithPrivateKey (certificate As X509Certificate2, privateKey As DSA) As X509Certificate2" />
+      <MemberSignature Language="F#" Value="static member CopyWithPrivateKey : System.Security.Cryptography.X509Certificates.X509Certificate2 * System.Security.Cryptography.DSA -&gt; System.Security.Cryptography.X509Certificates.X509Certificate2" Usage="System.Security.Cryptography.X509Certificates.DSACertificateExtensions.CopyWithPrivateKey (certificate, privateKey)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Security::Cryptography::X509Certificates::X509Certificate2 ^ CopyWithPrivateKey(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate, System::Security::Cryptography::DSA ^ privateKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.X509Certificates</AssemblyName>
@@ -47,6 +53,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.DSA GetDSAPrivateKey (this System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.DSA GetDSAPrivateKey(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPrivateKey(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDSAPrivateKey (certificate As X509Certificate2) As DSA" />
+      <MemberSignature Language="F#" Value="static member GetDSAPrivateKey : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.Security.Cryptography.DSA" Usage="System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPrivateKey certificate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Security::Cryptography::DSA ^ GetDSAPrivateKey(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -80,6 +89,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.DSA GetDSAPublicKey (this System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.DSA GetDSAPublicKey(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPublicKey(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetDSAPublicKey (certificate As X509Certificate2) As DSA" />
+      <MemberSignature Language="F#" Value="static member GetDSAPublicKey : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.Security.Cryptography.DSA" Usage="System.Security.Cryptography.X509Certificates.DSACertificateExtensions.GetDSAPublicKey certificate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static System::Security::Cryptography::DSA ^ GetDSAPublicKey(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

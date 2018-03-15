@@ -1,7 +1,10 @@
-<Type Name="DoWorkEventHandler" FullName="System.ComponentModel.DoWorkEventHandler">
+﻿<Type Name="DoWorkEventHandler" FullName="System.ComponentModel.DoWorkEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DoWorkEventHandler(object sender, DoWorkEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DoWorkEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DoWorkEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DoWorkEventHandler(sender As Object, e As DoWorkEventArgs)" />
+  <TypeSignature Language="F#" Value="type DoWorkEventHandler = delegate of obj * DoWorkEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DoWorkEventHandler(System::Object ^ sender, DoWorkEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>

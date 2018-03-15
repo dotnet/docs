@@ -1,7 +1,10 @@
-<Type Name="HatchStyle" FullName="System.Drawing.Drawing2D.HatchStyle">
+﻿<Type Name="HatchStyle" FullName="System.Drawing.Drawing2D.HatchStyle">
   <TypeSignature Language="C#" Value="public enum HatchStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HatchStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.HatchStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HatchStyle" />
+  <TypeSignature Language="F#" Value="type HatchStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class HatchStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="BackwardDiagonal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle BackwardDiagonal = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal" />
+      <MemberSignature Language="VB.NET" Value="BackwardDiagonal" />
+      <MemberSignature Language="F#" Value="BackwardDiagonal = 3" Usage="System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal" />
+      <MemberSignature Language="C++ CLI" Value="BackwardDiagonal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A pattern of lines on a diagonal from upper right to lower left.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="Cross" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Cross = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Cross" />
+      <MemberSignature Language="VB.NET" Value="Cross" />
+      <MemberSignature Language="F#" Value="Cross = 4" Usage="System.Drawing.Drawing2D.HatchStyle.Cross" />
+      <MemberSignature Language="C++ CLI" Value="Cross" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies horizontal and vertical lines that cross.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="DarkDownwardDiagonal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle DarkDownwardDiagonal = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.DarkDownwardDiagonal" />
+      <MemberSignature Language="VB.NET" Value="DarkDownwardDiagonal" />
+      <MemberSignature Language="F#" Value="DarkDownwardDiagonal = 20" Usage="System.Drawing.Drawing2D.HatchStyle.DarkDownwardDiagonal" />
+      <MemberSignature Language="C++ CLI" Value="DarkDownwardDiagonal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>Specifies diagonal lines that slant to the right from top points to bottom points, are spaced 50 percent closer together than, and are twice the width of <see cref="F:System.Drawing.Drawing2D.HatchStyle.ForwardDiagonal" />. This hatch pattern is not antialiased.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="DarkHorizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle DarkHorizontal = int32(29)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.DarkHorizontal" />
+      <MemberSignature Language="VB.NET" Value="DarkHorizontal" />
+      <MemberSignature Language="F#" Value="DarkHorizontal = 29" Usage="System.Drawing.Drawing2D.HatchStyle.DarkHorizontal" />
+      <MemberSignature Language="C++ CLI" Value="DarkHorizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>29</MemberValue>
       <Docs>
         <summary>Specifies horizontal lines that are spaced 50 percent closer together than <see cref="F:System.Drawing.Drawing2D.HatchStyle.Horizontal" /> and are twice the width of <see cref="F:System.Drawing.Drawing2D.HatchStyle.Horizontal" />.</summary>
       </Docs>
@@ -82,6 +101,9 @@
       <MemberSignature Language="C#" Value="DarkUpwardDiagonal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle DarkUpwardDiagonal = int32(21)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.DarkUpwardDiagonal" />
+      <MemberSignature Language="VB.NET" Value="DarkUpwardDiagonal" />
+      <MemberSignature Language="F#" Value="DarkUpwardDiagonal = 21" Usage="System.Drawing.Drawing2D.HatchStyle.DarkUpwardDiagonal" />
+      <MemberSignature Language="C++ CLI" Value="DarkUpwardDiagonal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -90,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>21</MemberValue>
       <Docs>
         <summary>Specifies diagonal lines that slant to the left from top points to bottom points, are spaced 50 percent closer together than <see cref="F:System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal" />, and are twice its width, but the lines are not antialiased.</summary>
       </Docs>
@@ -98,6 +121,9 @@
       <MemberSignature Language="C#" Value="DarkVertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle DarkVertical = int32(28)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.DarkVertical" />
+      <MemberSignature Language="VB.NET" Value="DarkVertical" />
+      <MemberSignature Language="F#" Value="DarkVertical = 28" Usage="System.Drawing.Drawing2D.HatchStyle.DarkVertical" />
+      <MemberSignature Language="C++ CLI" Value="DarkVertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -106,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>28</MemberValue>
       <Docs>
         <summary>Specifies vertical lines that are spaced 50 percent closer together than <see cref="F:System.Drawing.Drawing2D.HatchStyle.Vertical" /> and are twice its width.</summary>
       </Docs>
@@ -114,6 +141,9 @@
       <MemberSignature Language="C#" Value="DashedDownwardDiagonal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle DashedDownwardDiagonal = int32(30)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.DashedDownwardDiagonal" />
+      <MemberSignature Language="VB.NET" Value="DashedDownwardDiagonal" />
+      <MemberSignature Language="F#" Value="DashedDownwardDiagonal = 30" Usage="System.Drawing.Drawing2D.HatchStyle.DashedDownwardDiagonal" />
+      <MemberSignature Language="C++ CLI" Value="DashedDownwardDiagonal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -122,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>30</MemberValue>
       <Docs>
         <summary>Specifies dashed diagonal lines, that slant to the right from top points to bottom points.</summary>
       </Docs>
@@ -130,6 +161,9 @@
       <MemberSignature Language="C#" Value="DashedHorizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle DashedHorizontal = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.DashedHorizontal" />
+      <MemberSignature Language="VB.NET" Value="DashedHorizontal" />
+      <MemberSignature Language="F#" Value="DashedHorizontal = 32" Usage="System.Drawing.Drawing2D.HatchStyle.DashedHorizontal" />
+      <MemberSignature Language="C++ CLI" Value="DashedHorizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -138,6 +172,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Specifies dashed horizontal lines.</summary>
       </Docs>
@@ -146,6 +181,9 @@
       <MemberSignature Language="C#" Value="DashedUpwardDiagonal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle DashedUpwardDiagonal = int32(31)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.DashedUpwardDiagonal" />
+      <MemberSignature Language="VB.NET" Value="DashedUpwardDiagonal" />
+      <MemberSignature Language="F#" Value="DashedUpwardDiagonal = 31" Usage="System.Drawing.Drawing2D.HatchStyle.DashedUpwardDiagonal" />
+      <MemberSignature Language="C++ CLI" Value="DashedUpwardDiagonal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -154,6 +192,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>31</MemberValue>
       <Docs>
         <summary>Specifies dashed diagonal lines, that slant to the left from top points to bottom points.</summary>
       </Docs>
@@ -162,6 +201,9 @@
       <MemberSignature Language="C#" Value="DashedVertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle DashedVertical = int32(33)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.DashedVertical" />
+      <MemberSignature Language="VB.NET" Value="DashedVertical" />
+      <MemberSignature Language="F#" Value="DashedVertical = 33" Usage="System.Drawing.Drawing2D.HatchStyle.DashedVertical" />
+      <MemberSignature Language="C++ CLI" Value="DashedVertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -170,6 +212,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>33</MemberValue>
       <Docs>
         <summary>Specifies dashed vertical lines.</summary>
       </Docs>
@@ -178,6 +221,9 @@
       <MemberSignature Language="C#" Value="DiagonalBrick" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle DiagonalBrick = int32(38)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.DiagonalBrick" />
+      <MemberSignature Language="VB.NET" Value="DiagonalBrick" />
+      <MemberSignature Language="F#" Value="DiagonalBrick = 38" Usage="System.Drawing.Drawing2D.HatchStyle.DiagonalBrick" />
+      <MemberSignature Language="C++ CLI" Value="DiagonalBrick" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -186,6 +232,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>38</MemberValue>
       <Docs>
         <summary>Specifies a hatch that has the appearance of layered bricks that slant to the left from top points to bottom points.</summary>
       </Docs>
@@ -194,6 +241,9 @@
       <MemberSignature Language="C#" Value="DiagonalCross" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle DiagonalCross = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.DiagonalCross" />
+      <MemberSignature Language="VB.NET" Value="DiagonalCross" />
+      <MemberSignature Language="F#" Value="DiagonalCross = 5" Usage="System.Drawing.Drawing2D.HatchStyle.DiagonalCross" />
+      <MemberSignature Language="C++ CLI" Value="DiagonalCross" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -202,6 +252,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A pattern of crisscross diagonal lines.</summary>
       </Docs>
@@ -210,6 +261,9 @@
       <MemberSignature Language="C#" Value="Divot" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Divot = int32(42)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Divot" />
+      <MemberSignature Language="VB.NET" Value="Divot" />
+      <MemberSignature Language="F#" Value="Divot = 42" Usage="System.Drawing.Drawing2D.HatchStyle.Divot" />
+      <MemberSignature Language="C++ CLI" Value="Divot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -218,6 +272,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>42</MemberValue>
       <Docs>
         <summary>Specifies a hatch that has the appearance of divots.</summary>
       </Docs>
@@ -226,6 +281,9 @@
       <MemberSignature Language="C#" Value="DottedDiamond" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle DottedDiamond = int32(44)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.DottedDiamond" />
+      <MemberSignature Language="VB.NET" Value="DottedDiamond" />
+      <MemberSignature Language="F#" Value="DottedDiamond = 44" Usage="System.Drawing.Drawing2D.HatchStyle.DottedDiamond" />
+      <MemberSignature Language="C++ CLI" Value="DottedDiamond" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -234,6 +292,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>44</MemberValue>
       <Docs>
         <summary>Specifies forward diagonal and backward diagonal lines, each of which is composed of dots, that cross.</summary>
       </Docs>
@@ -242,6 +301,9 @@
       <MemberSignature Language="C#" Value="DottedGrid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle DottedGrid = int32(43)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.DottedGrid" />
+      <MemberSignature Language="VB.NET" Value="DottedGrid" />
+      <MemberSignature Language="F#" Value="DottedGrid = 43" Usage="System.Drawing.Drawing2D.HatchStyle.DottedGrid" />
+      <MemberSignature Language="C++ CLI" Value="DottedGrid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -250,6 +312,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>43</MemberValue>
       <Docs>
         <summary>Specifies horizontal and vertical lines, each of which is composed of dots, that cross.</summary>
       </Docs>
@@ -258,6 +321,9 @@
       <MemberSignature Language="C#" Value="ForwardDiagonal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle ForwardDiagonal = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.ForwardDiagonal" />
+      <MemberSignature Language="VB.NET" Value="ForwardDiagonal" />
+      <MemberSignature Language="F#" Value="ForwardDiagonal = 2" Usage="System.Drawing.Drawing2D.HatchStyle.ForwardDiagonal" />
+      <MemberSignature Language="C++ CLI" Value="ForwardDiagonal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -266,6 +332,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A pattern of lines on a diagonal from upper left to lower right.</summary>
       </Docs>
@@ -274,6 +341,9 @@
       <MemberSignature Language="C#" Value="Horizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Horizontal = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Horizontal" />
+      <MemberSignature Language="VB.NET" Value="Horizontal" />
+      <MemberSignature Language="F#" Value="Horizontal = 0" Usage="System.Drawing.Drawing2D.HatchStyle.Horizontal" />
+      <MemberSignature Language="C++ CLI" Value="Horizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -282,6 +352,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A pattern of horizontal lines.</summary>
       </Docs>
@@ -290,6 +361,9 @@
       <MemberSignature Language="C#" Value="HorizontalBrick" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle HorizontalBrick = int32(39)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.HorizontalBrick" />
+      <MemberSignature Language="VB.NET" Value="HorizontalBrick" />
+      <MemberSignature Language="F#" Value="HorizontalBrick = 39" Usage="System.Drawing.Drawing2D.HatchStyle.HorizontalBrick" />
+      <MemberSignature Language="C++ CLI" Value="HorizontalBrick" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -298,6 +372,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>39</MemberValue>
       <Docs>
         <summary>Specifies a hatch that has the appearance of horizontally layered bricks.</summary>
       </Docs>
@@ -306,6 +381,9 @@
       <MemberSignature Language="C#" Value="LargeCheckerBoard" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle LargeCheckerBoard = int32(50)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.LargeCheckerBoard" />
+      <MemberSignature Language="VB.NET" Value="LargeCheckerBoard" />
+      <MemberSignature Language="F#" Value="LargeCheckerBoard = 50" Usage="System.Drawing.Drawing2D.HatchStyle.LargeCheckerBoard" />
+      <MemberSignature Language="C++ CLI" Value="LargeCheckerBoard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -314,6 +392,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>50</MemberValue>
       <Docs>
         <summary>Specifies a hatch that has the appearance of a checkerboard with squares that are twice the size of <see cref="F:System.Drawing.Drawing2D.HatchStyle.SmallCheckerBoard" />.</summary>
       </Docs>
@@ -322,6 +401,9 @@
       <MemberSignature Language="C#" Value="LargeConfetti" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle LargeConfetti = int32(35)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.LargeConfetti" />
+      <MemberSignature Language="VB.NET" Value="LargeConfetti" />
+      <MemberSignature Language="F#" Value="LargeConfetti = 35" Usage="System.Drawing.Drawing2D.HatchStyle.LargeConfetti" />
+      <MemberSignature Language="C++ CLI" Value="LargeConfetti" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -330,6 +412,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>35</MemberValue>
       <Docs>
         <summary>Specifies a hatch that has the appearance of confetti, and is composed of larger pieces than <see cref="F:System.Drawing.Drawing2D.HatchStyle.SmallConfetti" />.</summary>
       </Docs>
@@ -338,6 +421,9 @@
       <MemberSignature Language="C#" Value="LargeGrid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle LargeGrid = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.LargeGrid" />
+      <MemberSignature Language="VB.NET" Value="LargeGrid" />
+      <MemberSignature Language="F#" Value="LargeGrid = 4" Usage="System.Drawing.Drawing2D.HatchStyle.LargeGrid" />
+      <MemberSignature Language="C++ CLI" Value="LargeGrid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -346,6 +432,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies the hatch style <see cref="F:System.Drawing.Drawing2D.HatchStyle.Cross" />.</summary>
       </Docs>
@@ -354,6 +441,9 @@
       <MemberSignature Language="C#" Value="LightDownwardDiagonal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle LightDownwardDiagonal = int32(18)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.LightDownwardDiagonal" />
+      <MemberSignature Language="VB.NET" Value="LightDownwardDiagonal" />
+      <MemberSignature Language="F#" Value="LightDownwardDiagonal = 18" Usage="System.Drawing.Drawing2D.HatchStyle.LightDownwardDiagonal" />
+      <MemberSignature Language="C++ CLI" Value="LightDownwardDiagonal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -362,6 +452,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>18</MemberValue>
       <Docs>
         <summary>Specifies diagonal lines that slant to the right from top points to bottom points and are spaced 50 percent closer together than <see cref="F:System.Drawing.Drawing2D.HatchStyle.ForwardDiagonal" />, but are not antialiased.</summary>
       </Docs>
@@ -370,6 +461,9 @@
       <MemberSignature Language="C#" Value="LightHorizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle LightHorizontal = int32(25)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.LightHorizontal" />
+      <MemberSignature Language="VB.NET" Value="LightHorizontal" />
+      <MemberSignature Language="F#" Value="LightHorizontal = 25" Usage="System.Drawing.Drawing2D.HatchStyle.LightHorizontal" />
+      <MemberSignature Language="C++ CLI" Value="LightHorizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -378,6 +472,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>25</MemberValue>
       <Docs>
         <summary>Specifies horizontal lines that are spaced 50 percent closer together than <see cref="F:System.Drawing.Drawing2D.HatchStyle.Horizontal" />.</summary>
       </Docs>
@@ -386,6 +481,9 @@
       <MemberSignature Language="C#" Value="LightUpwardDiagonal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle LightUpwardDiagonal = int32(19)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.LightUpwardDiagonal" />
+      <MemberSignature Language="VB.NET" Value="LightUpwardDiagonal" />
+      <MemberSignature Language="F#" Value="LightUpwardDiagonal = 19" Usage="System.Drawing.Drawing2D.HatchStyle.LightUpwardDiagonal" />
+      <MemberSignature Language="C++ CLI" Value="LightUpwardDiagonal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -394,6 +492,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>Specifies diagonal lines that slant to the left from top points to bottom points and are spaced 50 percent closer together than <see cref="F:System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal" />, but they are not antialiased.</summary>
       </Docs>
@@ -402,6 +501,9 @@
       <MemberSignature Language="C#" Value="LightVertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle LightVertical = int32(24)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.LightVertical" />
+      <MemberSignature Language="VB.NET" Value="LightVertical" />
+      <MemberSignature Language="F#" Value="LightVertical = 24" Usage="System.Drawing.Drawing2D.HatchStyle.LightVertical" />
+      <MemberSignature Language="C++ CLI" Value="LightVertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -410,6 +512,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>24</MemberValue>
       <Docs>
         <summary>Specifies vertical lines that are spaced 50 percent closer together than <see cref="F:System.Drawing.Drawing2D.HatchStyle.Vertical" />.</summary>
       </Docs>
@@ -418,6 +521,9 @@
       <MemberSignature Language="C#" Value="Max" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Max = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Max" />
+      <MemberSignature Language="VB.NET" Value="Max" />
+      <MemberSignature Language="F#" Value="Max = 4" Usage="System.Drawing.Drawing2D.HatchStyle.Max" />
+      <MemberSignature Language="C++ CLI" Value="Max" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -426,6 +532,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies hatch style <see cref="F:System.Drawing.Drawing2D.HatchStyle.SolidDiamond" />.</summary>
       </Docs>
@@ -434,6 +541,9 @@
       <MemberSignature Language="C#" Value="Min" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Min = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Min" />
+      <MemberSignature Language="VB.NET" Value="Min" />
+      <MemberSignature Language="F#" Value="Min = 0" Usage="System.Drawing.Drawing2D.HatchStyle.Min" />
+      <MemberSignature Language="C++ CLI" Value="Min" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -442,6 +552,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies hatch style <see cref="F:System.Drawing.Drawing2D.HatchStyle.Horizontal" />.</summary>
       </Docs>
@@ -450,6 +561,9 @@
       <MemberSignature Language="C#" Value="NarrowHorizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle NarrowHorizontal = int32(27)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.NarrowHorizontal" />
+      <MemberSignature Language="VB.NET" Value="NarrowHorizontal" />
+      <MemberSignature Language="F#" Value="NarrowHorizontal = 27" Usage="System.Drawing.Drawing2D.HatchStyle.NarrowHorizontal" />
+      <MemberSignature Language="C++ CLI" Value="NarrowHorizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -458,6 +572,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>27</MemberValue>
       <Docs>
         <summary>Specifies horizontal lines that are spaced 75 percent closer together than hatch style <see cref="F:System.Drawing.Drawing2D.HatchStyle.Horizontal" /> (or 25 percent closer together than <see cref="F:System.Drawing.Drawing2D.HatchStyle.LightHorizontal" />).</summary>
       </Docs>
@@ -466,6 +581,9 @@
       <MemberSignature Language="C#" Value="NarrowVertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle NarrowVertical = int32(26)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.NarrowVertical" />
+      <MemberSignature Language="VB.NET" Value="NarrowVertical" />
+      <MemberSignature Language="F#" Value="NarrowVertical = 26" Usage="System.Drawing.Drawing2D.HatchStyle.NarrowVertical" />
+      <MemberSignature Language="C++ CLI" Value="NarrowVertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -474,6 +592,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>26</MemberValue>
       <Docs>
         <summary>Specifies vertical lines that are spaced 75 percent closer together than hatch style <see cref="F:System.Drawing.Drawing2D.HatchStyle.Vertical" /> (or 25 percent closer together than <see cref="F:System.Drawing.Drawing2D.HatchStyle.LightVertical" />).</summary>
       </Docs>
@@ -482,6 +601,9 @@
       <MemberSignature Language="C#" Value="OutlinedDiamond" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle OutlinedDiamond = int32(51)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.OutlinedDiamond" />
+      <MemberSignature Language="VB.NET" Value="OutlinedDiamond" />
+      <MemberSignature Language="F#" Value="OutlinedDiamond = 51" Usage="System.Drawing.Drawing2D.HatchStyle.OutlinedDiamond" />
+      <MemberSignature Language="C++ CLI" Value="OutlinedDiamond" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -490,6 +612,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>51</MemberValue>
       <Docs>
         <summary>Specifies forward diagonal and backward diagonal lines that cross but are not antialiased.</summary>
       </Docs>
@@ -498,6 +621,9 @@
       <MemberSignature Language="C#" Value="Percent05" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Percent05 = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Percent05" />
+      <MemberSignature Language="VB.NET" Value="Percent05" />
+      <MemberSignature Language="F#" Value="Percent05 = 6" Usage="System.Drawing.Drawing2D.HatchStyle.Percent05" />
+      <MemberSignature Language="C++ CLI" Value="Percent05" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -506,6 +632,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Specifies a 5-percent hatch. The ratio of foreground color to background color is 5:95.</summary>
       </Docs>
@@ -514,6 +641,9 @@
       <MemberSignature Language="C#" Value="Percent10" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Percent10 = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Percent10" />
+      <MemberSignature Language="VB.NET" Value="Percent10" />
+      <MemberSignature Language="F#" Value="Percent10 = 7" Usage="System.Drawing.Drawing2D.HatchStyle.Percent10" />
+      <MemberSignature Language="C++ CLI" Value="Percent10" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -522,6 +652,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Specifies a 10-percent hatch. The ratio of foreground color to background color is 10:90.</summary>
       </Docs>
@@ -530,6 +661,9 @@
       <MemberSignature Language="C#" Value="Percent20" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Percent20 = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Percent20" />
+      <MemberSignature Language="VB.NET" Value="Percent20" />
+      <MemberSignature Language="F#" Value="Percent20 = 8" Usage="System.Drawing.Drawing2D.HatchStyle.Percent20" />
+      <MemberSignature Language="C++ CLI" Value="Percent20" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -538,6 +672,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Specifies a 20-percent hatch. The ratio of foreground color to background color is 20:80.</summary>
       </Docs>
@@ -546,6 +681,9 @@
       <MemberSignature Language="C#" Value="Percent25" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Percent25 = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Percent25" />
+      <MemberSignature Language="VB.NET" Value="Percent25" />
+      <MemberSignature Language="F#" Value="Percent25 = 9" Usage="System.Drawing.Drawing2D.HatchStyle.Percent25" />
+      <MemberSignature Language="C++ CLI" Value="Percent25" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -554,6 +692,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Specifies a 25-percent hatch. The ratio of foreground color to background color is 25:75.</summary>
       </Docs>
@@ -562,6 +701,9 @@
       <MemberSignature Language="C#" Value="Percent30" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Percent30 = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Percent30" />
+      <MemberSignature Language="VB.NET" Value="Percent30" />
+      <MemberSignature Language="F#" Value="Percent30 = 10" Usage="System.Drawing.Drawing2D.HatchStyle.Percent30" />
+      <MemberSignature Language="C++ CLI" Value="Percent30" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -570,6 +712,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>Specifies a 30-percent hatch. The ratio of foreground color to background color is 30:70.</summary>
       </Docs>
@@ -578,6 +721,9 @@
       <MemberSignature Language="C#" Value="Percent40" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Percent40 = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Percent40" />
+      <MemberSignature Language="VB.NET" Value="Percent40" />
+      <MemberSignature Language="F#" Value="Percent40 = 11" Usage="System.Drawing.Drawing2D.HatchStyle.Percent40" />
+      <MemberSignature Language="C++ CLI" Value="Percent40" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -586,6 +732,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>Specifies a 40-percent hatch. The ratio of foreground color to background color is 40:60.</summary>
       </Docs>
@@ -594,6 +741,9 @@
       <MemberSignature Language="C#" Value="Percent50" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Percent50 = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Percent50" />
+      <MemberSignature Language="VB.NET" Value="Percent50" />
+      <MemberSignature Language="F#" Value="Percent50 = 12" Usage="System.Drawing.Drawing2D.HatchStyle.Percent50" />
+      <MemberSignature Language="C++ CLI" Value="Percent50" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -602,6 +752,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>Specifies a 50-percent hatch. The ratio of foreground color to background color is 50:50.</summary>
       </Docs>
@@ -610,6 +761,9 @@
       <MemberSignature Language="C#" Value="Percent60" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Percent60 = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Percent60" />
+      <MemberSignature Language="VB.NET" Value="Percent60" />
+      <MemberSignature Language="F#" Value="Percent60 = 13" Usage="System.Drawing.Drawing2D.HatchStyle.Percent60" />
+      <MemberSignature Language="C++ CLI" Value="Percent60" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -618,6 +772,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>Specifies a 60-percent hatch. The ratio of foreground color to background color is 60:40.</summary>
       </Docs>
@@ -626,6 +781,9 @@
       <MemberSignature Language="C#" Value="Percent70" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Percent70 = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Percent70" />
+      <MemberSignature Language="VB.NET" Value="Percent70" />
+      <MemberSignature Language="F#" Value="Percent70 = 14" Usage="System.Drawing.Drawing2D.HatchStyle.Percent70" />
+      <MemberSignature Language="C++ CLI" Value="Percent70" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -634,6 +792,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>Specifies a 70-percent hatch. The ratio of foreground color to background color is 70:30.</summary>
       </Docs>
@@ -642,6 +801,9 @@
       <MemberSignature Language="C#" Value="Percent75" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Percent75 = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Percent75" />
+      <MemberSignature Language="VB.NET" Value="Percent75" />
+      <MemberSignature Language="F#" Value="Percent75 = 15" Usage="System.Drawing.Drawing2D.HatchStyle.Percent75" />
+      <MemberSignature Language="C++ CLI" Value="Percent75" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -650,6 +812,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>Specifies a 75-percent hatch. The ratio of foreground color to background color is 75:25.</summary>
       </Docs>
@@ -658,6 +821,9 @@
       <MemberSignature Language="C#" Value="Percent80" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Percent80 = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Percent80" />
+      <MemberSignature Language="VB.NET" Value="Percent80" />
+      <MemberSignature Language="F#" Value="Percent80 = 16" Usage="System.Drawing.Drawing2D.HatchStyle.Percent80" />
+      <MemberSignature Language="C++ CLI" Value="Percent80" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -666,6 +832,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Specifies a 80-percent hatch. The ratio of foreground color to background color is 80:100.</summary>
       </Docs>
@@ -674,6 +841,9 @@
       <MemberSignature Language="C#" Value="Percent90" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Percent90 = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Percent90" />
+      <MemberSignature Language="VB.NET" Value="Percent90" />
+      <MemberSignature Language="F#" Value="Percent90 = 17" Usage="System.Drawing.Drawing2D.HatchStyle.Percent90" />
+      <MemberSignature Language="C++ CLI" Value="Percent90" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -682,6 +852,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>Specifies a 90-percent hatch. The ratio of foreground color to background color is 90:10.</summary>
       </Docs>
@@ -690,6 +861,9 @@
       <MemberSignature Language="C#" Value="Plaid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Plaid = int32(41)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Plaid" />
+      <MemberSignature Language="VB.NET" Value="Plaid" />
+      <MemberSignature Language="F#" Value="Plaid = 41" Usage="System.Drawing.Drawing2D.HatchStyle.Plaid" />
+      <MemberSignature Language="C++ CLI" Value="Plaid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -698,6 +872,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>41</MemberValue>
       <Docs>
         <summary>Specifies a hatch that has the appearance of a plaid material.</summary>
       </Docs>
@@ -706,6 +881,9 @@
       <MemberSignature Language="C#" Value="Shingle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Shingle = int32(45)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Shingle" />
+      <MemberSignature Language="VB.NET" Value="Shingle" />
+      <MemberSignature Language="F#" Value="Shingle = 45" Usage="System.Drawing.Drawing2D.HatchStyle.Shingle" />
+      <MemberSignature Language="C++ CLI" Value="Shingle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -714,6 +892,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>45</MemberValue>
       <Docs>
         <summary>Specifies a hatch that has the appearance of diagonally layered shingles that slant to the right from top points to bottom points.</summary>
       </Docs>
@@ -722,6 +901,9 @@
       <MemberSignature Language="C#" Value="SmallCheckerBoard" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle SmallCheckerBoard = int32(49)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.SmallCheckerBoard" />
+      <MemberSignature Language="VB.NET" Value="SmallCheckerBoard" />
+      <MemberSignature Language="F#" Value="SmallCheckerBoard = 49" Usage="System.Drawing.Drawing2D.HatchStyle.SmallCheckerBoard" />
+      <MemberSignature Language="C++ CLI" Value="SmallCheckerBoard" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -730,6 +912,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>49</MemberValue>
       <Docs>
         <summary>Specifies a hatch that has the appearance of a checkerboard.</summary>
       </Docs>
@@ -738,6 +921,9 @@
       <MemberSignature Language="C#" Value="SmallConfetti" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle SmallConfetti = int32(34)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.SmallConfetti" />
+      <MemberSignature Language="VB.NET" Value="SmallConfetti" />
+      <MemberSignature Language="F#" Value="SmallConfetti = 34" Usage="System.Drawing.Drawing2D.HatchStyle.SmallConfetti" />
+      <MemberSignature Language="C++ CLI" Value="SmallConfetti" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -746,6 +932,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>34</MemberValue>
       <Docs>
         <summary>Specifies a hatch that has the appearance of confetti.</summary>
       </Docs>
@@ -754,6 +941,9 @@
       <MemberSignature Language="C#" Value="SmallGrid" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle SmallGrid = int32(48)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.SmallGrid" />
+      <MemberSignature Language="VB.NET" Value="SmallGrid" />
+      <MemberSignature Language="F#" Value="SmallGrid = 48" Usage="System.Drawing.Drawing2D.HatchStyle.SmallGrid" />
+      <MemberSignature Language="C++ CLI" Value="SmallGrid" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -762,6 +952,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>Specifies horizontal and vertical lines that cross and are spaced 50 percent closer together than hatch style <see cref="F:System.Drawing.Drawing2D.HatchStyle.Cross" />.</summary>
       </Docs>
@@ -770,6 +961,9 @@
       <MemberSignature Language="C#" Value="SolidDiamond" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle SolidDiamond = int32(52)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.SolidDiamond" />
+      <MemberSignature Language="VB.NET" Value="SolidDiamond" />
+      <MemberSignature Language="F#" Value="SolidDiamond = 52" Usage="System.Drawing.Drawing2D.HatchStyle.SolidDiamond" />
+      <MemberSignature Language="C++ CLI" Value="SolidDiamond" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -778,6 +972,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>52</MemberValue>
       <Docs>
         <summary>Specifies a hatch that has the appearance of a checkerboard placed diagonally.</summary>
       </Docs>
@@ -786,6 +981,9 @@
       <MemberSignature Language="C#" Value="Sphere" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Sphere = int32(47)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Sphere" />
+      <MemberSignature Language="VB.NET" Value="Sphere" />
+      <MemberSignature Language="F#" Value="Sphere = 47" Usage="System.Drawing.Drawing2D.HatchStyle.Sphere" />
+      <MemberSignature Language="C++ CLI" Value="Sphere" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -794,6 +992,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>47</MemberValue>
       <Docs>
         <summary>Specifies a hatch that has the appearance of spheres laid adjacent to one another.</summary>
       </Docs>
@@ -802,6 +1001,9 @@
       <MemberSignature Language="C#" Value="Trellis" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Trellis = int32(46)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Trellis" />
+      <MemberSignature Language="VB.NET" Value="Trellis" />
+      <MemberSignature Language="F#" Value="Trellis = 46" Usage="System.Drawing.Drawing2D.HatchStyle.Trellis" />
+      <MemberSignature Language="C++ CLI" Value="Trellis" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -810,6 +1012,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>46</MemberValue>
       <Docs>
         <summary>Specifies a hatch that has the appearance of a trellis.</summary>
       </Docs>
@@ -818,6 +1021,9 @@
       <MemberSignature Language="C#" Value="Vertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Vertical = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Vertical" />
+      <MemberSignature Language="VB.NET" Value="Vertical" />
+      <MemberSignature Language="F#" Value="Vertical = 1" Usage="System.Drawing.Drawing2D.HatchStyle.Vertical" />
+      <MemberSignature Language="C++ CLI" Value="Vertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -826,6 +1032,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A pattern of vertical lines.</summary>
       </Docs>
@@ -834,6 +1041,9 @@
       <MemberSignature Language="C#" Value="Wave" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Wave = int32(37)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Wave" />
+      <MemberSignature Language="VB.NET" Value="Wave" />
+      <MemberSignature Language="F#" Value="Wave = 37" Usage="System.Drawing.Drawing2D.HatchStyle.Wave" />
+      <MemberSignature Language="C++ CLI" Value="Wave" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -842,6 +1052,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>37</MemberValue>
       <Docs>
         <summary>Specifies horizontal lines that are composed of tildes.</summary>
       </Docs>
@@ -850,6 +1061,9 @@
       <MemberSignature Language="C#" Value="Weave" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle Weave = int32(40)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.Weave" />
+      <MemberSignature Language="VB.NET" Value="Weave" />
+      <MemberSignature Language="F#" Value="Weave = 40" Usage="System.Drawing.Drawing2D.HatchStyle.Weave" />
+      <MemberSignature Language="C++ CLI" Value="Weave" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -858,6 +1072,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>40</MemberValue>
       <Docs>
         <summary>Specifies a hatch that has the appearance of a woven material.</summary>
       </Docs>
@@ -866,6 +1081,9 @@
       <MemberSignature Language="C#" Value="WideDownwardDiagonal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle WideDownwardDiagonal = int32(22)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.WideDownwardDiagonal" />
+      <MemberSignature Language="VB.NET" Value="WideDownwardDiagonal" />
+      <MemberSignature Language="F#" Value="WideDownwardDiagonal = 22" Usage="System.Drawing.Drawing2D.HatchStyle.WideDownwardDiagonal" />
+      <MemberSignature Language="C++ CLI" Value="WideDownwardDiagonal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -874,6 +1092,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>22</MemberValue>
       <Docs>
         <summary>Specifies diagonal lines that slant to the right from top points to bottom points, have the same spacing as hatch style <see cref="F:System.Drawing.Drawing2D.HatchStyle.ForwardDiagonal" />, and are triple its width, but are not antialiased.</summary>
       </Docs>
@@ -882,6 +1101,9 @@
       <MemberSignature Language="C#" Value="WideUpwardDiagonal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle WideUpwardDiagonal = int32(23)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.WideUpwardDiagonal" />
+      <MemberSignature Language="VB.NET" Value="WideUpwardDiagonal" />
+      <MemberSignature Language="F#" Value="WideUpwardDiagonal = 23" Usage="System.Drawing.Drawing2D.HatchStyle.WideUpwardDiagonal" />
+      <MemberSignature Language="C++ CLI" Value="WideUpwardDiagonal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -890,6 +1112,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>23</MemberValue>
       <Docs>
         <summary>Specifies diagonal lines that slant to the left from top points to bottom points, have the same spacing as hatch style <see cref="F:System.Drawing.Drawing2D.HatchStyle.BackwardDiagonal" />, and are triple its width, but are not antialiased.</summary>
       </Docs>
@@ -898,6 +1121,9 @@
       <MemberSignature Language="C#" Value="ZigZag" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.HatchStyle ZigZag = int32(36)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.HatchStyle.ZigZag" />
+      <MemberSignature Language="VB.NET" Value="ZigZag" />
+      <MemberSignature Language="F#" Value="ZigZag = 36" Usage="System.Drawing.Drawing2D.HatchStyle.ZigZag" />
+      <MemberSignature Language="C++ CLI" Value="ZigZag" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -906,6 +1132,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.HatchStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>36</MemberValue>
       <Docs>
         <summary>Specifies horizontal lines that are composed of zigzags.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="FileChangeMonitor" FullName="System.Runtime.Caching.FileChangeMonitor">
+﻿<Type Name="FileChangeMonitor" FullName="System.Runtime.Caching.FileChangeMonitor">
   <TypeSignature Language="C#" Value="public abstract class FileChangeMonitor : System.Runtime.Caching.ChangeMonitor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FileChangeMonitor extends System.Runtime.Caching.ChangeMonitor" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.FileChangeMonitor" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class FileChangeMonitor&#xA;Inherits ChangeMonitor" />
+  <TypeSignature Language="F#" Value="type FileChangeMonitor = class&#xA;    inherit ChangeMonitor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileChangeMonitor abstract : System::Runtime::Caching::ChangeMonitor" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,8 @@
       <MemberSignature Language="C#" Value="protected FileChangeMonitor ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Caching.FileChangeMonitor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; FileChangeMonitor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -52,6 +57,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt; FilePaths { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;string&gt; FilePaths" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.FileChangeMonitor.FilePaths" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property FilePaths As ReadOnlyCollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.FilePaths : System.Collections.ObjectModel.ReadOnlyCollection&lt;string&gt;" Usage="System.Runtime.Caching.FileChangeMonitor.FilePaths" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ FilePaths { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -79,6 +87,9 @@
       <MemberSignature Language="C#" Value="public abstract DateTimeOffset LastModified { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTimeOffset LastModified" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Caching.FileChangeMonitor.LastModified" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property LastModified As DateTimeOffset" />
+      <MemberSignature Language="F#" Value="member this.LastModified : DateTimeOffset" Usage="System.Runtime.Caching.FileChangeMonitor.LastModified" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property DateTimeOffset LastModified { DateTimeOffset get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>

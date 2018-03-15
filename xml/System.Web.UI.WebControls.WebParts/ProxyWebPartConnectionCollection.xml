@@ -1,7 +1,10 @@
-<Type Name="ProxyWebPartConnectionCollection" FullName="System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection">
+﻿<Type Name="ProxyWebPartConnectionCollection" FullName="System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection">
   <TypeSignature Language="C#" Value="public sealed class ProxyWebPartConnectionCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProxyWebPartConnectionCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProxyWebPartConnectionCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="F#" Value="type ProxyWebPartConnectionCollection = class&#xA;    inherit CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProxyWebPartConnectionCollection sealed : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,8 @@
       <MemberSignature Language="C#" Value="public ProxyWebPartConnectionCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProxyWebPartConnectionCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +56,9 @@
       <MemberSignature Language="C#" Value="public int Add (System.Web.UI.WebControls.WebParts.WebPartConnection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.UI.WebControls.WebParts.WebPartConnection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.Add(System.Web.UI.WebControls.WebParts.WebPartConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As WebPartConnection) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.WebControls.WebParts.WebPartConnection -&gt; int" Usage="proxyWebPartConnectionCollection.Add value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::WebControls::WebParts::WebPartConnection ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -81,6 +89,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.WebControls.WebParts.WebPartConnection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.WebParts.WebPartConnection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.Contains(System.Web.UI.WebControls.WebParts.WebPartConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As WebPartConnection) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.WebParts.WebPartConnection -&gt; bool" Usage="proxyWebPartConnectionCollection.Contains value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::WebParts::WebPartConnection ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -112,6 +123,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.WebParts.WebPartConnection[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.WebParts.WebPartConnection[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.CopyTo(System.Web.UI.WebControls.WebParts.WebPartConnection[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As WebPartConnection(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.WebControls.WebParts.WebPartConnection[] * int -&gt; unit" Usage="proxyWebPartConnectionCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::WebParts::WebPartConnection ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -143,6 +157,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.WebParts.WebPartConnection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.WebParts.WebPartConnection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.IndexOf(System.Web.UI.WebControls.WebParts.WebPartConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As WebPartConnection) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.WebParts.WebPartConnection -&gt; int" Usage="proxyWebPartConnectionCollection.IndexOf value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::WebParts::WebPartConnection ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -173,6 +190,9 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.UI.WebControls.WebParts.WebPartConnection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.UI.WebControls.WebParts.WebPartConnection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.Insert(System.Int32,System.Web.UI.WebControls.WebParts.WebPartConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As WebPartConnection)" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.WebControls.WebParts.WebPartConnection -&gt; unit" Usage="proxyWebPartConnectionCollection.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::WebParts::WebPartConnection ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -204,6 +224,9 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -219,10 +242,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Enables specific connection members to be added to or retrieved from the collection, according to an index or a unique identifier.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartConnection this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartConnection Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As WebPartConnection" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.WebParts.WebPartConnection with get, set" Usage="System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartConnection ^ default[int] { System::Web::UI::WebControls::WebParts::WebPartConnection ^ get(int index); void set(int index, System::Web::UI::WebControls::WebParts::WebPartConnection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -253,6 +288,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartConnection this[string id] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartConnection Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(id As String) As WebPartConnection" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.UI.WebControls.WebParts.WebPartConnection" Usage="System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartConnection ^ default[System::String ^] { System::Web::UI::WebControls::WebParts::WebPartConnection ^ get(System::String ^ id); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -283,6 +321,9 @@
       <MemberSignature Language="C#" Value="protected override void OnClear ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.OnClear" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
+      <MemberSignature Language="F#" Value="override this.OnClear : unit -&gt; unit" Usage="proxyWebPartConnectionCollection.OnClear " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -301,6 +342,9 @@
       <MemberSignature Language="C#" Value="protected override void OnInsert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.OnInsert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnInsert : int * obj -&gt; unit" Usage="proxyWebPartConnectionCollection.OnInsert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -324,6 +368,9 @@
       <MemberSignature Language="C#" Value="protected override void OnRemove (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemove(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.OnRemove(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemove (index As Integer, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnRemove : int * obj -&gt; unit" Usage="proxyWebPartConnectionCollection.OnRemove (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemove(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -347,6 +394,9 @@
       <MemberSignature Language="C#" Value="protected override void OnSet (int index, object oldValue, object newValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSet(int32 index, object oldValue, object newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.OnSet(System.Int32,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSet (index As Integer, oldValue As Object, newValue As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnSet : int * obj * obj -&gt; unit" Usage="proxyWebPartConnectionCollection.OnSet (index, oldValue, newValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -372,6 +422,9 @@
       <MemberSignature Language="C#" Value="protected override void OnValidate (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidate(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.OnValidate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnValidate : obj -&gt; unit" Usage="proxyWebPartConnectionCollection.OnValidate value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -393,6 +446,9 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.WebControls.WebParts.WebPartConnection value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.WebControls.WebParts.WebPartConnection value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.ProxyWebPartConnectionCollection.Remove(System.Web.UI.WebControls.WebParts.WebPartConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As WebPartConnection)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.WebControls.WebParts.WebPartConnection -&gt; unit" Usage="proxyWebPartConnectionCollection.Remove value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::WebParts::WebPartConnection ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -418,14 +474,5 @@
         <altmember cref="M:System.Collections.IList.Remove(System.Object)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Enables specific connection members to be added to or retrieved from the collection, according to an index or a unique identifier.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

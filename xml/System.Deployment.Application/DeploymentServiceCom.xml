@@ -1,7 +1,10 @@
-<Type Name="DeploymentServiceCom" FullName="System.Deployment.Application.DeploymentServiceCom">
+﻿<Type Name="DeploymentServiceCom" FullName="System.Deployment.Application.DeploymentServiceCom">
   <TypeSignature Language="C#" Value="public class DeploymentServiceCom" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi beforefieldinit DeploymentServiceCom extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.DeploymentServiceCom" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeploymentServiceCom" />
+  <TypeSignature Language="F#" Value="type DeploymentServiceCom = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeploymentServiceCom" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +15,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -31,6 +34,8 @@
       <MemberSignature Language="C#" Value="public DeploymentServiceCom ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeploymentServiceCom();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -47,6 +52,9 @@
       <MemberSignature Language="C#" Value="public void ActivateApplicationExtension (string textualSubId, string deploymentProviderUrl, string targetAssociatedFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ActivateApplicationExtension(string textualSubId, string deploymentProviderUrl, string targetAssociatedFile) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.ActivateApplicationExtension(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ActivateApplicationExtension (textualSubId As String, deploymentProviderUrl As String, targetAssociatedFile As String)" />
+      <MemberSignature Language="F#" Value="member this.ActivateApplicationExtension : string * string * string -&gt; unit" Usage="deploymentServiceCom.ActivateApplicationExtension (textualSubId, deploymentProviderUrl, targetAssociatedFile)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateApplicationExtension(System::String ^ textualSubId, System::String ^ deploymentProviderUrl, System::String ^ targetAssociatedFile);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -73,6 +81,9 @@
       <MemberSignature Language="C#" Value="public void ActivateDeployment (string deploymentLocation, bool isShortcut);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ActivateDeployment(string deploymentLocation, bool isShortcut) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.ActivateDeployment(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ActivateDeployment (deploymentLocation As String, isShortcut As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ActivateDeployment : string * bool -&gt; unit" Usage="deploymentServiceCom.ActivateDeployment (deploymentLocation, isShortcut)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateDeployment(System::String ^ deploymentLocation, bool isShortcut);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -97,6 +108,9 @@
       <MemberSignature Language="C#" Value="public void ActivateDeploymentEx (string deploymentLocation, int unsignedPolicy, int signedPolicy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ActivateDeploymentEx(string deploymentLocation, int32 unsignedPolicy, int32 signedPolicy) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.ActivateDeploymentEx(System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ActivateDeploymentEx (deploymentLocation As String, unsignedPolicy As Integer, signedPolicy As Integer)" />
+      <MemberSignature Language="F#" Value="member this.ActivateDeploymentEx : string * int * int -&gt; unit" Usage="deploymentServiceCom.ActivateDeploymentEx (deploymentLocation, unsignedPolicy, signedPolicy)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateDeploymentEx(System::String ^ deploymentLocation, int unsignedPolicy, int signedPolicy);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -123,6 +137,9 @@
       <MemberSignature Language="C#" Value="public void CheckForDeploymentUpdate (string textualSubId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckForDeploymentUpdate(string textualSubId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.CheckForDeploymentUpdate(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CheckForDeploymentUpdate (textualSubId As String)" />
+      <MemberSignature Language="F#" Value="member this.CheckForDeploymentUpdate : string -&gt; unit" Usage="deploymentServiceCom.CheckForDeploymentUpdate textualSubId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CheckForDeploymentUpdate(System::String ^ textualSubId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -145,6 +162,9 @@
       <MemberSignature Language="C#" Value="public void CleanOnlineAppCache ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CleanOnlineAppCache() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CleanOnlineAppCache ()" />
+      <MemberSignature Language="F#" Value="member this.CleanOnlineAppCache : unit -&gt; unit" Usage="deploymentServiceCom.CleanOnlineAppCache " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CleanOnlineAppCache();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -164,6 +184,9 @@
       <MemberSignature Language="C#" Value="public void EndServiceRightNow ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndServiceRightNow() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.EndServiceRightNow" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndServiceRightNow ()" />
+      <MemberSignature Language="F#" Value="member this.EndServiceRightNow : unit -&gt; unit" Usage="deploymentServiceCom.EndServiceRightNow " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndServiceRightNow();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -183,6 +206,9 @@
       <MemberSignature Language="C#" Value="public void MaintainSubscription (string textualSubId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void MaintainSubscription(string textualSubId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.DeploymentServiceCom.MaintainSubscription(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MaintainSubscription (textualSubId As String)" />
+      <MemberSignature Language="F#" Value="member this.MaintainSubscription : string -&gt; unit" Usage="deploymentServiceCom.MaintainSubscription textualSubId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MaintainSubscription(System::String ^ textualSubId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="SignatureKind" FullName="System.Reflection.Metadata.SignatureKind">
+﻿<Type Name="SignatureKind" FullName="System.Reflection.Metadata.SignatureKind">
   <TypeSignature Language="C#" Value="public enum SignatureKind" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SignatureKind extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.SignatureKind" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SignatureKind" />
+  <TypeSignature Language="F#" Value="type SignatureKind = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SignatureKind" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -13,14 +16,16 @@
   </Base>
   <Docs>
     <summary>Specifies the signature kind. The underlying values of the fields in this type correspond to the representation in the leading signature byte represented by a <see cref="T:System.Reflection.Metadata.SignatureHeader" /> structure.</summary>
-    <remarks>
-    </remarks>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName="Field">
       <MemberSignature Language="C#" Value="Field" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureKind Field = unsigned int8(6)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureKind.Field" />
+      <MemberSignature Language="VB.NET" Value="Field" />
+      <MemberSignature Language="F#" Value="Field = 6" Usage="System.Reflection.Metadata.SignatureKind.Field" />
+      <MemberSignature Language="C++ CLI" Value="Field" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -31,6 +36,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.SignatureKind</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A field signature.</summary>
       </Docs>
@@ -39,6 +45,9 @@
       <MemberSignature Language="C#" Value="LocalVariables" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureKind LocalVariables = unsigned int8(7)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureKind.LocalVariables" />
+      <MemberSignature Language="VB.NET" Value="LocalVariables" />
+      <MemberSignature Language="F#" Value="LocalVariables = 7" Usage="System.Reflection.Metadata.SignatureKind.LocalVariables" />
+      <MemberSignature Language="C++ CLI" Value="LocalVariables" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -49,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.SignatureKind</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>A local variables signature.</summary>
       </Docs>
@@ -57,6 +67,9 @@
       <MemberSignature Language="C#" Value="Method" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureKind Method = unsigned int8(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureKind.Method" />
+      <MemberSignature Language="VB.NET" Value="Method" />
+      <MemberSignature Language="F#" Value="Method = 0" Usage="System.Reflection.Metadata.SignatureKind.Method" />
+      <MemberSignature Language="C++ CLI" Value="Method" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -67,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.SignatureKind</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A method reference, method definition, or standalone method signature.</summary>
       </Docs>
@@ -75,6 +89,9 @@
       <MemberSignature Language="C#" Value="MethodSpecification" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureKind MethodSpecification = unsigned int8(10)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureKind.MethodSpecification" />
+      <MemberSignature Language="VB.NET" Value="MethodSpecification" />
+      <MemberSignature Language="F#" Value="MethodSpecification = 10" Usage="System.Reflection.Metadata.SignatureKind.MethodSpecification" />
+      <MemberSignature Language="C++ CLI" Value="MethodSpecification" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -85,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.SignatureKind</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>A method specification signature.</summary>
       </Docs>
@@ -93,6 +111,9 @@
       <MemberSignature Language="C#" Value="Property" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.SignatureKind Property = unsigned int8(8)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.SignatureKind.Property" />
+      <MemberSignature Language="VB.NET" Value="Property" />
+      <MemberSignature Language="F#" Value="Property = 8" Usage="System.Reflection.Metadata.SignatureKind.Property" />
+      <MemberSignature Language="C++ CLI" Value="Property" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -103,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.SignatureKind</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A property signature.</summary>
       </Docs>

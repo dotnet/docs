@@ -1,7 +1,10 @@
-<Type Name="DataControlCellType" FullName="System.Web.UI.WebControls.DataControlCellType">
+﻿<Type Name="DataControlCellType" FullName="System.Web.UI.WebControls.DataControlCellType">
   <TypeSignature Language="C#" Value="public enum DataControlCellType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataControlCellType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DataControlCellType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataControlCellType" />
+  <TypeSignature Language="F#" Value="type DataControlCellType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataControlCellType" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="DataCell" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DataControlCellType DataCell = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCellType.DataCell" />
+      <MemberSignature Language="VB.NET" Value="DataCell" />
+      <MemberSignature Language="F#" Value="DataCell = 2" Usage="System.Web.UI.WebControls.DataControlCellType.DataCell" />
+      <MemberSignature Language="C++ CLI" Value="DataCell" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataControlCellType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> that contains data.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="Footer" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DataControlCellType Footer = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCellType.Footer" />
+      <MemberSignature Language="VB.NET" Value="Footer" />
+      <MemberSignature Language="F#" Value="Footer = 1" Usage="System.Web.UI.WebControls.DataControlCellType.Footer" />
+      <MemberSignature Language="C++ CLI" Value="Footer" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataControlCellType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> that is the footer cell of a table. Items in the cell are not bound to data.</summary>
       </Docs>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="Header" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.DataControlCellType Header = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.DataControlCellType.Header" />
+      <MemberSignature Language="VB.NET" Value="Header" />
+      <MemberSignature Language="F#" Value="Header = 0" Usage="System.Web.UI.WebControls.DataControlCellType.Header" />
+      <MemberSignature Language="C++ CLI" Value="Header" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.DataControlCellType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> that is the header cell of a table. Items in the cell are not bound to data.</summary>
       </Docs>

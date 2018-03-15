@@ -1,7 +1,10 @@
-<Type Name="TextQuality" FullName="System.Workflow.ComponentModel.Design.TextQuality">
+﻿<Type Name="TextQuality" FullName="System.Workflow.ComponentModel.Design.TextQuality">
   <TypeSignature Language="C#" Value="public enum TextQuality" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextQuality extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.TextQuality" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TextQuality" />
+  <TypeSignature Language="F#" Value="type TextQuality = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TextQuality" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="Aliased" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.TextQuality Aliased = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.TextQuality.Aliased" />
+      <MemberSignature Language="VB.NET" Value="Aliased" />
+      <MemberSignature Language="F#" Value="Aliased = 0" Usage="System.Workflow.ComponentModel.Design.TextQuality.Aliased" />
+      <MemberSignature Language="C++ CLI" Value="Aliased" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -42,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.TextQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The ambient text quality setting is aliased.</summary>
       </Docs>
@@ -50,6 +57,9 @@
       <MemberSignature Language="C#" Value="AntiAliased" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Design.TextQuality AntiAliased = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Design.TextQuality.AntiAliased" />
+      <MemberSignature Language="VB.NET" Value="AntiAliased" />
+      <MemberSignature Language="F#" Value="AntiAliased = 1" Usage="System.Workflow.ComponentModel.Design.TextQuality.AntiAliased" />
+      <MemberSignature Language="C++ CLI" Value="AntiAliased" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Design.TextQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The ambient text quality setting is antialiased.</summary>
       </Docs>

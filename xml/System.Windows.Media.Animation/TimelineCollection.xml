@@ -1,7 +1,10 @@
-<Type Name="TimelineCollection" FullName="System.Windows.Media.Animation.TimelineCollection">
+﻿<Type Name="TimelineCollection" FullName="System.Windows.Media.Animation.TimelineCollection">
   <TypeSignature Language="C#" Value="public sealed class TimelineCollection : System.Windows.Media.Animation.Animatable, System.Collections.Generic.ICollection&lt;System.Windows.Media.Animation.Timeline&gt;, System.Collections.Generic.IEnumerable&lt;System.Windows.Media.Animation.Timeline&gt;, System.Collections.Generic.IList&lt;System.Windows.Media.Animation.Timeline&gt;, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TimelineCollection extends System.Windows.Media.Animation.Animatable implements class System.Collections.Generic.ICollection`1&lt;class System.Windows.Media.Animation.Timeline&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Media.Animation.Timeline&gt;, class System.Collections.Generic.IList`1&lt;class System.Windows.Media.Animation.Timeline&gt;, class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.TimelineCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TimelineCollection&#xA;Inherits Animatable&#xA;Implements ICollection(Of Timeline), IEnumerable(Of Timeline), IList, IList(Of Timeline)" />
+  <TypeSignature Language="F#" Value="type TimelineCollection = class&#xA;    inherit Animatable&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IList&lt;Timeline&gt;&#xA;    interface ICollection&lt;Timeline&gt;&#xA;    interface seq&lt;Timeline&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TimelineCollection sealed : System::Windows::Media::Animation::Animatable, System::Collections::Generic::ICollection&lt;System::Windows::Media::Animation::Timeline ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Windows::Media::Animation::Timeline ^&gt;, System::Collections::Generic::IList&lt;System::Windows::Media::Animation::Timeline ^&gt;, System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,10 +54,21 @@
     <altmember cref="T:System.Windows.Media.Animation.Timeline" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.TimelineCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TimelineCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TimelineCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -70,6 +84,9 @@
       <MemberSignature Language="C#" Value="public TimelineCollection (System.Collections.Generic.IEnumerable&lt;System.Windows.Media.Animation.Timeline&gt; collection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Media.Animation.Timeline&gt; collection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Media.Animation.Timeline})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (collection As IEnumerable(Of Timeline))" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.TimelineCollection : seq&lt;System.Windows.Media.Animation.Timeline&gt; -&gt; System.Windows.Media.Animation.TimelineCollection" Usage="new System.Windows.Media.Animation.TimelineCollection collection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TimelineCollection(System::Collections::Generic::IEnumerable&lt;System::Windows::Media::Animation::Timeline ^&gt; ^ collection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -89,6 +106,9 @@
       <MemberSignature Language="C#" Value="public TimelineCollection (int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.TimelineCollection : int -&gt; System.Windows.Media.Animation.TimelineCollection" Usage="new System.Windows.Media.Animation.TimelineCollection capacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TimelineCollection(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -107,7 +127,13 @@
       <MemberSignature Language="C#" Value="public void Add (System.Windows.Media.Animation.Timeline value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class System.Windows.Media.Animation.Timeline value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.Add(System.Windows.Media.Animation.Timeline)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (value As Timeline)" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Windows.Media.Animation.Timeline -&gt; unit&#xA;override this.Add : System.Windows.Media.Animation.Timeline -&gt; unit" Usage="timelineCollection.Add value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Windows::Media::Animation::Timeline ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -128,7 +154,14 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="timelineCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -146,6 +179,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.TimelineCollection Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.TimelineCollection Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As TimelineCollection" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.TimelineCollection" Usage="timelineCollection.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::TimelineCollection ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -174,6 +210,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (source As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="timelineCollection.CloneCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -195,6 +234,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.TimelineCollection CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.TimelineCollection CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As TimelineCollection" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Animation.TimelineCollection" Usage="timelineCollection.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::TimelineCollection ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -223,6 +265,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (source As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="timelineCollection.CloneCurrentValueCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -244,7 +289,13 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Windows.Media.Animation.Timeline value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(class System.Windows.Media.Animation.Timeline value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.Contains(System.Windows.Media.Animation.Timeline)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As Timeline) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Windows.Media.Animation.Timeline -&gt; bool&#xA;override this.Contains : System.Windows.Media.Animation.Timeline -&gt; bool" Usage="timelineCollection.Contains value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Windows::Media::Animation::Timeline ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -267,6 +318,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Windows.Media.Animation.Timeline[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Windows.Media.Animation.Timeline[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.CopyTo(System.Windows.Media.Animation.Timeline[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Timeline(), index As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Windows.Media.Animation.Timeline[] * int -&gt; unit&#xA;override this.CopyTo : System.Windows.Media.Animation.Timeline[] * int -&gt; unit" Usage="timelineCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Windows::Media::Animation::Timeline ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -290,7 +344,14 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.TimelineCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Media.Animation.TimelineCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -308,6 +369,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="timelineCollection.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -327,6 +391,9 @@
       <MemberSignature Language="C#" Value="protected override bool FreezeCore (bool isChecking);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool FreezeCore(bool isChecking) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.FreezeCore(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function FreezeCore (isChecking As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.FreezeCore : bool -&gt; bool" Usage="timelineCollection.FreezeCore isChecking" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -349,6 +416,9 @@
       <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (source As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="timelineCollection.GetAsFrozenCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -370,6 +440,9 @@
       <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable source);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (source As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="timelineCollection.GetCurrentValueAsFrozenCore source" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -391,6 +464,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.TimelineCollection.Enumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.Animation.TimelineCollection/Enumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As TimelineCollection.Enumerator" />
+      <MemberSignature Language="F#" Value="member this.GetEnumerator : unit -&gt; System.Windows.Media.Animation.TimelineCollection.Enumerator" Usage="timelineCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::TimelineCollection::Enumerator GetEnumerator();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -410,7 +486,13 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Windows.Media.Animation.Timeline value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(class System.Windows.Media.Animation.Timeline value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.IndexOf(System.Windows.Media.Animation.Timeline)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As Timeline) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : System.Windows.Media.Animation.Timeline -&gt; int&#xA;override this.IndexOf : System.Windows.Media.Animation.Timeline -&gt; int" Usage="timelineCollection.IndexOf value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Windows::Media::Animation::Timeline ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.IndexOf(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -432,7 +514,13 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Windows.Media.Animation.Timeline value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, class System.Windows.Media.Animation.Timeline value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.Insert(System.Int32,System.Windows.Media.Animation.Timeline)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As Timeline)" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * System.Windows.Media.Animation.Timeline -&gt; unit&#xA;override this.Insert : int * System.Windows.Media.Animation.Timeline -&gt; unit" Usage="timelineCollection.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Windows::Media::Animation::Timeline ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.Insert(System.Int32,`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -455,7 +543,13 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.Timeline this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.Timeline Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.TimelineCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As Timeline" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Media.Animation.Timeline with get, set" Usage="System.Windows.Media.Animation.TimelineCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::Timeline ^ default[int] { System::Windows::Media::Animation::Timeline ^ get(int index); void set(int index, System::Windows::Media::Animation::Timeline ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IList`1.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -479,7 +573,13 @@
       <MemberSignature Language="C#" Value="public bool Remove (System.Windows.Media.Animation.Timeline value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(class System.Windows.Media.Animation.Timeline value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.Remove(System.Windows.Media.Animation.Timeline)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (value As Timeline) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Windows.Media.Animation.Timeline -&gt; bool&#xA;override this.Remove : System.Windows.Media.Animation.Timeline -&gt; bool" Usage="timelineCollection.Remove value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Windows::Media::Animation::Timeline ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -502,7 +602,14 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="timelineCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+        <InterfaceMember>M:System.Collections.Generic.IList`1.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -523,7 +630,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;System.Windows.Media.Animation.Timeline&gt;.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Windows.Media.Animation.Timeline&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.TimelineCollection.System#Collections#Generic#ICollection&lt;System#Windows#Media#Animation#Timeline&gt;#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of Timeline).IsReadOnly" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.TimelineCollection.System.Collections.Generic.ICollection&lt;System.Windows.Media.Animation.Timeline&gt;.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Windows.Media.Animation.Timeline&gt;.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -549,7 +662,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Windows.Media.Animation.Timeline&gt; IEnumerable&lt;Timeline&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;class System.Windows.Media.Animation.Timeline&gt; System.Collections.Generic.IEnumerable&lt;System.Windows.Media.Animation.Timeline&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.System#Collections#Generic#IEnumerable&lt;System#Windows#Media#Animation#Timeline&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of Timeline) Implements IEnumerable(Of Timeline).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Windows::Media::Animation::Timeline ^&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Windows.Media.Animation.Timeline&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Windows::Media::Animation::Timeline ^&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -575,7 +693,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -605,7 +727,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.TimelineCollection.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.TimelineCollection.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -631,7 +759,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.TimelineCollection.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.TimelineCollection.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -656,7 +790,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -682,7 +821,12 @@
       <MemberSignature Language="C#" Value="int IList.Add (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Add (value As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ value) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -711,7 +855,12 @@
       <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.System#Collections#IList#Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (value As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ value) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -741,7 +890,12 @@
       <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function IndexOf (value As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ value) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -770,7 +924,12 @@
       <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, value As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -800,7 +959,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.TimelineCollection.System#Collections#IList#IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.TimelineCollection.System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -826,7 +991,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.TimelineCollection.System#Collections#IList#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.TimelineCollection.System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -852,7 +1023,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.TimelineCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.TimelineCollection.System.Collections.IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -881,7 +1058,12 @@
       <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.TimelineCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Remove (value As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ value) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -905,14 +1087,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.TimelineCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

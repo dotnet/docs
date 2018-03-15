@@ -1,7 +1,10 @@
-<Type Name="DiscretionaryAcl" FullName="System.Security.AccessControl.DiscretionaryAcl">
+﻿<Type Name="DiscretionaryAcl" FullName="System.Security.AccessControl.DiscretionaryAcl">
   <TypeSignature Language="C#" Value="public sealed class DiscretionaryAcl : System.Security.AccessControl.CommonAcl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DiscretionaryAcl extends System.Security.AccessControl.CommonAcl" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.DiscretionaryAcl" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DiscretionaryAcl&#xA;Inherits CommonAcl" />
+  <TypeSignature Language="F#" Value="type DiscretionaryAcl = class&#xA;    inherit CommonAcl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscretionaryAcl sealed : System::Security::AccessControl::CommonAcl" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,10 +24,23 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.DiscretionaryAcl" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DiscretionaryAcl (bool isContainer, bool isDS, int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isContainer, bool isDS, int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DiscretionaryAcl.#ctor(System.Boolean,System.Boolean,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isContainer As Boolean, isDS As Boolean, capacity As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.DiscretionaryAcl : bool * bool * int -&gt; System.Security.AccessControl.DiscretionaryAcl" Usage="new System.Security.AccessControl.DiscretionaryAcl (isContainer, isDS, capacity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscretionaryAcl(bool isContainer, bool isDS, int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -55,6 +71,8 @@
       <MemberSignature Language="C#" Value="public DiscretionaryAcl (bool isContainer, bool isDS, System.Security.AccessControl.RawAcl rawAcl);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isContainer, bool isDS, class System.Security.AccessControl.RawAcl rawAcl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DiscretionaryAcl.#ctor(System.Boolean,System.Boolean,System.Security.AccessControl.RawAcl)" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.DiscretionaryAcl : bool * bool * System.Security.AccessControl.RawAcl -&gt; System.Security.AccessControl.DiscretionaryAcl" Usage="new System.Security.AccessControl.DiscretionaryAcl (isContainer, isDS, rawAcl)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscretionaryAcl(bool isContainer, bool isDS, System::Security::AccessControl::RawAcl ^ rawAcl);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -92,6 +110,9 @@
       <MemberSignature Language="C#" Value="public DiscretionaryAcl (bool isContainer, bool isDS, byte revision, int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool isContainer, bool isDS, unsigned int8 revision, int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DiscretionaryAcl.#ctor(System.Boolean,System.Boolean,System.Byte,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (isContainer As Boolean, isDS As Boolean, revision As Byte, capacity As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.DiscretionaryAcl : bool * bool * byte * int -&gt; System.Security.AccessControl.DiscretionaryAcl" Usage="new System.Security.AccessControl.DiscretionaryAcl (isContainer, isDS, revision, capacity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscretionaryAcl(bool isContainer, bool isDS, System::Byte revision, int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -120,10 +141,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddAccess">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an Access Control Entry (ACE) with the specified settings to the current <see cref="T:System.Security.AccessControl.DiscretionaryAcl" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddAccess">
       <MemberSignature Language="C#" Value="public void AddAccess (System.Security.AccessControl.AccessControlType accessType, System.Security.Principal.SecurityIdentifier sid, System.Security.AccessControl.ObjectAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAccess(valuetype System.Security.AccessControl.AccessControlType accessType, class System.Security.Principal.SecurityIdentifier sid, class System.Security.AccessControl.ObjectAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DiscretionaryAcl.AddAccess(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.ObjectAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAccess (accessType As AccessControlType, sid As SecurityIdentifier, rule As ObjectAccessRule)" />
+      <MemberSignature Language="F#" Value="member this.AddAccess : System.Security.AccessControl.AccessControlType * System.Security.Principal.SecurityIdentifier * System.Security.AccessControl.ObjectAccessRule -&gt; unit" Usage="discretionaryAcl.AddAccess (accessType, sid, rule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAccess(System::Security::AccessControl::AccessControlType accessType, System::Security::Principal::SecurityIdentifier ^ sid, System::Security::AccessControl::ObjectAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -155,6 +189,8 @@
       <MemberSignature Language="C#" Value="public void AddAccess (System.Security.AccessControl.AccessControlType accessType, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAccess(valuetype System.Security.AccessControl.AccessControlType accessType, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DiscretionaryAcl.AddAccess(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags)" />
+      <MemberSignature Language="F#" Value="member this.AddAccess : System.Security.AccessControl.AccessControlType * System.Security.Principal.SecurityIdentifier * int * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags -&gt; unit" Usage="discretionaryAcl.AddAccess (accessType, sid, accessMask, inheritanceFlags, propagationFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAccess(System::Security::AccessControl::AccessControlType accessType, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -197,6 +233,8 @@
       <MemberSignature Language="C#" Value="public void AddAccess (System.Security.AccessControl.AccessControlType accessType, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAccess(valuetype System.Security.AccessControl.AccessControlType accessType, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.ObjectAceFlags objectFlags, valuetype System.Guid objectType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DiscretionaryAcl.AddAccess(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.ObjectAceFlags,System.Guid,System.Guid)" />
+      <MemberSignature Language="F#" Value="member this.AddAccess : System.Security.AccessControl.AccessControlType * System.Security.Principal.SecurityIdentifier * int * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.ObjectAceFlags * Guid * Guid -&gt; unit" Usage="discretionaryAcl.AddAccess (accessType, sid, accessMask, inheritanceFlags, propagationFlags, objectFlags, objectType, inheritedObjectType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAccess(System::Security::AccessControl::AccessControlType accessType, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -262,6 +300,9 @@
       <MemberSignature Language="C#" Value="public bool RemoveAccess (System.Security.AccessControl.AccessControlType accessType, System.Security.Principal.SecurityIdentifier sid, System.Security.AccessControl.ObjectAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAccess(valuetype System.Security.AccessControl.AccessControlType accessType, class System.Security.Principal.SecurityIdentifier sid, class System.Security.AccessControl.ObjectAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DiscretionaryAcl.RemoveAccess(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.ObjectAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveAccess (accessType As AccessControlType, sid As SecurityIdentifier, rule As ObjectAccessRule) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RemoveAccess : System.Security.AccessControl.AccessControlType * System.Security.Principal.SecurityIdentifier * System.Security.AccessControl.ObjectAccessRule -&gt; bool" Usage="discretionaryAcl.RemoveAccess (accessType, sid, rule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAccess(System::Security::AccessControl::AccessControlType accessType, System::Security::Principal::SecurityIdentifier ^ sid, System::Security::AccessControl::ObjectAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -294,6 +335,8 @@
       <MemberSignature Language="C#" Value="public bool RemoveAccess (System.Security.AccessControl.AccessControlType accessType, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAccess(valuetype System.Security.AccessControl.AccessControlType accessType, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DiscretionaryAcl.RemoveAccess(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAccess : System.Security.AccessControl.AccessControlType * System.Security.Principal.SecurityIdentifier * int * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags -&gt; bool" Usage="discretionaryAcl.RemoveAccess (accessType, sid, accessMask, inheritanceFlags, propagationFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAccess(System::Security::AccessControl::AccessControlType accessType, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -338,6 +381,8 @@
       <MemberSignature Language="C#" Value="public bool RemoveAccess (System.Security.AccessControl.AccessControlType accessType, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAccess(valuetype System.Security.AccessControl.AccessControlType accessType, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.ObjectAceFlags objectFlags, valuetype System.Guid objectType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DiscretionaryAcl.RemoveAccess(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.ObjectAceFlags,System.Guid,System.Guid)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAccess : System.Security.AccessControl.AccessControlType * System.Security.Principal.SecurityIdentifier * int * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.ObjectAceFlags * Guid * Guid -&gt; bool" Usage="discretionaryAcl.RemoveAccess (accessType, sid, accessMask, inheritanceFlags, propagationFlags, objectFlags, objectType, inheritedObjectType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool RemoveAccess(System::Security::AccessControl::AccessControlType accessType, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -384,10 +429,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveAccessSpecific">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified Access Control Entry (ACE) from the current <see cref="T:System.Security.AccessControl.DiscretionaryAcl" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveAccessSpecific">
       <MemberSignature Language="C#" Value="public void RemoveAccessSpecific (System.Security.AccessControl.AccessControlType accessType, System.Security.Principal.SecurityIdentifier sid, System.Security.AccessControl.ObjectAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessSpecific(valuetype System.Security.AccessControl.AccessControlType accessType, class System.Security.Principal.SecurityIdentifier sid, class System.Security.AccessControl.ObjectAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DiscretionaryAcl.RemoveAccessSpecific(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.ObjectAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAccessSpecific (accessType As AccessControlType, sid As SecurityIdentifier, rule As ObjectAccessRule)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAccessSpecific : System.Security.AccessControl.AccessControlType * System.Security.Principal.SecurityIdentifier * System.Security.AccessControl.ObjectAccessRule -&gt; unit" Usage="discretionaryAcl.RemoveAccessSpecific (accessType, sid, rule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessSpecific(System::Security::AccessControl::AccessControlType accessType, System::Security::Principal::SecurityIdentifier ^ sid, System::Security::AccessControl::ObjectAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -419,6 +477,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAccessSpecific (System.Security.AccessControl.AccessControlType accessType, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessSpecific(valuetype System.Security.AccessControl.AccessControlType accessType, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DiscretionaryAcl.RemoveAccessSpecific(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAccessSpecific : System.Security.AccessControl.AccessControlType * System.Security.Principal.SecurityIdentifier * int * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags -&gt; unit" Usage="discretionaryAcl.RemoveAccessSpecific (accessType, sid, accessMask, inheritanceFlags, propagationFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessSpecific(System::Security::AccessControl::AccessControlType accessType, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -454,6 +514,8 @@
       <MemberSignature Language="C#" Value="public void RemoveAccessSpecific (System.Security.AccessControl.AccessControlType accessType, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAccessSpecific(valuetype System.Security.AccessControl.AccessControlType accessType, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.ObjectAceFlags objectFlags, valuetype System.Guid objectType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DiscretionaryAcl.RemoveAccessSpecific(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.ObjectAceFlags,System.Guid,System.Guid)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAccessSpecific : System.Security.AccessControl.AccessControlType * System.Security.Principal.SecurityIdentifier * int * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.ObjectAceFlags * Guid * Guid -&gt; unit" Usage="discretionaryAcl.RemoveAccessSpecific (accessType, sid, accessMask, inheritanceFlags, propagationFlags, objectFlags, objectType, inheritedObjectType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAccessSpecific(System::Security::AccessControl::AccessControlType accessType, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -512,6 +574,9 @@
       <MemberSignature Language="C#" Value="public void SetAccess (System.Security.AccessControl.AccessControlType accessType, System.Security.Principal.SecurityIdentifier sid, System.Security.AccessControl.ObjectAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccess(valuetype System.Security.AccessControl.AccessControlType accessType, class System.Security.Principal.SecurityIdentifier sid, class System.Security.AccessControl.ObjectAccessRule rule) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DiscretionaryAcl.SetAccess(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Security.AccessControl.ObjectAccessRule)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAccess (accessType As AccessControlType, sid As SecurityIdentifier, rule As ObjectAccessRule)" />
+      <MemberSignature Language="F#" Value="member this.SetAccess : System.Security.AccessControl.AccessControlType * System.Security.Principal.SecurityIdentifier * System.Security.AccessControl.ObjectAccessRule -&gt; unit" Usage="discretionaryAcl.SetAccess (accessType, sid, rule)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccess(System::Security::AccessControl::AccessControlType accessType, System::Security::Principal::SecurityIdentifier ^ sid, System::Security::AccessControl::ObjectAccessRule ^ rule);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -543,6 +608,8 @@
       <MemberSignature Language="C#" Value="public void SetAccess (System.Security.AccessControl.AccessControlType accessType, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccess(valuetype System.Security.AccessControl.AccessControlType accessType, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DiscretionaryAcl.SetAccess(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags)" />
+      <MemberSignature Language="F#" Value="member this.SetAccess : System.Security.AccessControl.AccessControlType * System.Security.Principal.SecurityIdentifier * int * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags -&gt; unit" Usage="discretionaryAcl.SetAccess (accessType, sid, accessMask, inheritanceFlags, propagationFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccess(System::Security::AccessControl::AccessControlType accessType, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -585,6 +652,8 @@
       <MemberSignature Language="C#" Value="public void SetAccess (System.Security.AccessControl.AccessControlType accessType, System.Security.Principal.SecurityIdentifier sid, int accessMask, System.Security.AccessControl.InheritanceFlags inheritanceFlags, System.Security.AccessControl.PropagationFlags propagationFlags, System.Security.AccessControl.ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccess(valuetype System.Security.AccessControl.AccessControlType accessType, class System.Security.Principal.SecurityIdentifier sid, int32 accessMask, valuetype System.Security.AccessControl.InheritanceFlags inheritanceFlags, valuetype System.Security.AccessControl.PropagationFlags propagationFlags, valuetype System.Security.AccessControl.ObjectAceFlags objectFlags, valuetype System.Guid objectType, valuetype System.Guid inheritedObjectType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.DiscretionaryAcl.SetAccess(System.Security.AccessControl.AccessControlType,System.Security.Principal.SecurityIdentifier,System.Int32,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.ObjectAceFlags,System.Guid,System.Guid)" />
+      <MemberSignature Language="F#" Value="member this.SetAccess : System.Security.AccessControl.AccessControlType * System.Security.Principal.SecurityIdentifier * int * System.Security.AccessControl.InheritanceFlags * System.Security.AccessControl.PropagationFlags * System.Security.AccessControl.ObjectAceFlags * Guid * Guid -&gt; unit" Usage="discretionaryAcl.SetAccess (accessType, sid, accessMask, inheritanceFlags, propagationFlags, objectFlags, objectType, inheritedObjectType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccess(System::Security::AccessControl::AccessControlType accessType, System::Security::Principal::SecurityIdentifier ^ sid, int accessMask, System::Security::AccessControl::InheritanceFlags inheritanceFlags, System::Security::AccessControl::PropagationFlags propagationFlags, System::Security::AccessControl::ObjectAceFlags objectFlags, Guid objectType, Guid inheritedObjectType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -629,35 +698,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.DiscretionaryAcl" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddAccess">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds an Access Control Entry (ACE) with the specified settings to the current <see cref="T:System.Security.AccessControl.DiscretionaryAcl" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RemoveAccessSpecific">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the specified Access Control Entry (ACE) from the current <see cref="T:System.Security.AccessControl.DiscretionaryAcl" /> object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

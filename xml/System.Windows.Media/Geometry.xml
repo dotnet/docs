@@ -1,7 +1,10 @@
-<Type Name="Geometry" FullName="System.Windows.Media.Geometry">
+﻿<Type Name="Geometry" FullName="System.Windows.Media.Geometry">
   <TypeSignature Language="C#" Value="public abstract class Geometry : System.Windows.Media.Animation.Animatable, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract Geometry extends System.Windows.Media.Animation.Animatable implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Geometry" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Geometry&#xA;Inherits Animatable&#xA;Implements IFormattable" />
+  <TypeSignature Language="F#" Value="type Geometry = class&#xA;    inherit Animatable&#xA;    interface IFormattable&#xA;    interface DUCE.IResource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Geometry abstract : System::Windows::Media::Animation::Animatable, IFormattable" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +54,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Rect Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Geometry.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Bounds As Rect" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Windows.Rect" Usage="System.Windows.Media.Geometry.Bounds" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Rect Bounds { System::Windows::Rect get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -76,6 +82,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Geometry Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Geometry Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Geometry" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Geometry" Usage="geometry.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Geometry ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -104,6 +113,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Geometry CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Geometry CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As Geometry" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.Geometry" Usage="geometry.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Geometry ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -128,10 +140,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Combine">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Combines two <see cref="T:System.Windows.Media.Geometry" /> objects.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Combine">
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PathGeometry Combine (System.Windows.Media.Geometry geometry1, System.Windows.Media.Geometry geometry2, System.Windows.Media.GeometryCombineMode mode, System.Windows.Media.Transform transform);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.PathGeometry Combine(class System.Windows.Media.Geometry geometry1, class System.Windows.Media.Geometry geometry2, valuetype System.Windows.Media.GeometryCombineMode mode, class System.Windows.Media.Transform transform) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.Combine(System.Windows.Media.Geometry,System.Windows.Media.Geometry,System.Windows.Media.GeometryCombineMode,System.Windows.Media.Transform)" />
+      <MemberSignature Language="F#" Value="static member Combine : System.Windows.Media.Geometry * System.Windows.Media.Geometry * System.Windows.Media.GeometryCombineMode * System.Windows.Media.Transform -&gt; System.Windows.Media.PathGeometry" Usage="System.Windows.Media.Geometry.Combine (geometry1, geometry2, mode, transform)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::PathGeometry ^ Combine(System::Windows::Media::Geometry ^ geometry1, System::Windows::Media::Geometry ^ geometry2, System::Windows::Media::GeometryCombineMode mode, System::Windows::Media::Transform ^ transform);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -181,6 +204,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.PathGeometry Combine (System.Windows.Media.Geometry geometry1, System.Windows.Media.Geometry geometry2, System.Windows.Media.GeometryCombineMode mode, System.Windows.Media.Transform transform, double tolerance, System.Windows.Media.ToleranceType type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.PathGeometry Combine(class System.Windows.Media.Geometry geometry1, class System.Windows.Media.Geometry geometry2, valuetype System.Windows.Media.GeometryCombineMode mode, class System.Windows.Media.Transform transform, float64 tolerance, valuetype System.Windows.Media.ToleranceType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.Combine(System.Windows.Media.Geometry,System.Windows.Media.Geometry,System.Windows.Media.GeometryCombineMode,System.Windows.Media.Transform,System.Double,System.Windows.Media.ToleranceType)" />
+      <MemberSignature Language="F#" Value="static member Combine : System.Windows.Media.Geometry * System.Windows.Media.Geometry * System.Windows.Media.GeometryCombineMode * System.Windows.Media.Transform * double * System.Windows.Media.ToleranceType -&gt; System.Windows.Media.PathGeometry" Usage="System.Windows.Media.Geometry.Combine (geometry1, geometry2, mode, transform, tolerance, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::PathGeometry ^ Combine(System::Windows::Media::Geometry ^ geometry1, System::Windows::Media::Geometry ^ geometry2, System::Windows::Media::GeometryCombineMode mode, System::Windows::Media::Transform ^ transform, double tolerance, System::Windows::Media::ToleranceType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -232,6 +257,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Geometry Empty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Geometry Empty" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Geometry.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As Geometry" />
+      <MemberSignature Language="F#" Value="member this.Empty : System.Windows.Media.Geometry" Usage="System.Windows.Media.Geometry.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Geometry ^ Empty { System::Windows::Media::Geometry ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -246,10 +274,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FillContains">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether the <see cref="T:System.Windows.Media.Geometry" /> completely contains the specified <see cref="T:System.Windows.Media.Geometry" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FillContains">
       <MemberSignature Language="C#" Value="public bool FillContains (System.Windows.Media.Geometry geometry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool FillContains(class System.Windows.Media.Geometry geometry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.FillContains(System.Windows.Media.Geometry)" />
+      <MemberSignature Language="F#" Value="member this.FillContains : System.Windows.Media.Geometry -&gt; bool" Usage="geometry.FillContains geometry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool FillContains(System::Windows::Media::Geometry ^ geometry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -280,6 +319,9 @@
       <MemberSignature Language="C#" Value="public bool FillContains (System.Windows.Point hitPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool FillContains(valuetype System.Windows.Point hitPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.FillContains(System.Windows.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FillContains (hitPoint As Point) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.FillContains : System.Windows.Point -&gt; bool" Usage="geometry.FillContains hitPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool FillContains(System::Windows::Point hitPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -310,6 +352,8 @@
       <MemberSignature Language="C#" Value="public bool FillContains (System.Windows.Media.Geometry geometry, double tolerance, System.Windows.Media.ToleranceType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool FillContains(class System.Windows.Media.Geometry geometry, float64 tolerance, valuetype System.Windows.Media.ToleranceType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.FillContains(System.Windows.Media.Geometry,System.Double,System.Windows.Media.ToleranceType)" />
+      <MemberSignature Language="F#" Value="member this.FillContains : System.Windows.Media.Geometry * double * System.Windows.Media.ToleranceType -&gt; bool" Usage="geometry.FillContains (geometry, tolerance, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool FillContains(System::Windows::Media::Geometry ^ geometry, double tolerance, System::Windows::Media::ToleranceType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -344,6 +388,9 @@
       <MemberSignature Language="C#" Value="public bool FillContains (System.Windows.Point hitPoint, double tolerance, System.Windows.Media.ToleranceType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool FillContains(valuetype System.Windows.Point hitPoint, float64 tolerance, valuetype System.Windows.Media.ToleranceType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.FillContains(System.Windows.Point,System.Double,System.Windows.Media.ToleranceType)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FillContains (hitPoint As Point, tolerance As Double, type As ToleranceType) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.FillContains : System.Windows.Point * double * System.Windows.Media.ToleranceType -&gt; bool" Usage="geometry.FillContains (hitPoint, tolerance, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool FillContains(System::Windows::Point hitPoint, double tolerance, System::Windows::Media::ToleranceType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -374,10 +421,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FillContainsWithDetail">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that describes the intersection between the geometry and the specified geometry.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FillContainsWithDetail">
       <MemberSignature Language="C#" Value="public System.Windows.Media.IntersectionDetail FillContainsWithDetail (System.Windows.Media.Geometry geometry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.IntersectionDetail FillContainsWithDetail(class System.Windows.Media.Geometry geometry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.FillContainsWithDetail(System.Windows.Media.Geometry)" />
+      <MemberSignature Language="F#" Value="member this.FillContainsWithDetail : System.Windows.Media.Geometry -&gt; System.Windows.Media.IntersectionDetail" Usage="geometry.FillContainsWithDetail geometry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::IntersectionDetail FillContainsWithDetail(System::Windows::Media::Geometry ^ geometry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -409,6 +467,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Media.IntersectionDetail FillContainsWithDetail (System.Windows.Media.Geometry geometry, double tolerance, System.Windows.Media.ToleranceType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Media.IntersectionDetail FillContainsWithDetail(class System.Windows.Media.Geometry geometry, float64 tolerance, valuetype System.Windows.Media.ToleranceType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.FillContainsWithDetail(System.Windows.Media.Geometry,System.Double,System.Windows.Media.ToleranceType)" />
+      <MemberSignature Language="F#" Value="abstract member FillContainsWithDetail : System.Windows.Media.Geometry * double * System.Windows.Media.ToleranceType -&gt; System.Windows.Media.IntersectionDetail&#xA;override this.FillContainsWithDetail : System.Windows.Media.Geometry * double * System.Windows.Media.ToleranceType -&gt; System.Windows.Media.IntersectionDetail" Usage="geometry.FillContainsWithDetail (geometry, tolerance, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Media::IntersectionDetail FillContainsWithDetail(System::Windows::Media::Geometry ^ geometry, double tolerance, System::Windows::Media::ToleranceType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -438,10 +498,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetArea">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the area of the filled region of a <see cref="T:System.Windows.Media.Geometry" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetArea">
       <MemberSignature Language="C#" Value="public double GetArea ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetArea() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.GetArea" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetArea () As Double" />
+      <MemberSignature Language="F#" Value="member this.GetArea : unit -&gt; double" Usage="geometry.GetArea " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; double GetArea();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -468,6 +540,9 @@
       <MemberSignature Language="C#" Value="public virtual double GetArea (double tolerance, System.Windows.Media.ToleranceType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 GetArea(float64 tolerance, valuetype System.Windows.Media.ToleranceType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.GetArea(System.Double,System.Windows.Media.ToleranceType)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetArea (tolerance As Double, type As ToleranceType) As Double" />
+      <MemberSignature Language="F#" Value="abstract member GetArea : double * System.Windows.Media.ToleranceType -&gt; double&#xA;override this.GetArea : double * System.Windows.Media.ToleranceType -&gt; double" Usage="geometry.GetArea (tolerance, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual double GetArea(double tolerance, System::Windows::Media::ToleranceType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -500,10 +575,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetFlattenedPathGeometry">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Media.PathGeometry" /> that is a polygonal approximation of the <see cref="T:System.Windows.Media.Geometry" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetFlattenedPathGeometry">
       <MemberSignature Language="C#" Value="public System.Windows.Media.PathGeometry GetFlattenedPathGeometry ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.PathGeometry GetFlattenedPathGeometry() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.GetFlattenedPathGeometry" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFlattenedPathGeometry () As PathGeometry" />
+      <MemberSignature Language="F#" Value="member this.GetFlattenedPathGeometry : unit -&gt; System.Windows.Media.PathGeometry" Usage="geometry.GetFlattenedPathGeometry " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PathGeometry ^ GetFlattenedPathGeometry();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -532,6 +619,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Media.PathGeometry GetFlattenedPathGeometry (double tolerance, System.Windows.Media.ToleranceType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Media.PathGeometry GetFlattenedPathGeometry(float64 tolerance, valuetype System.Windows.Media.ToleranceType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.GetFlattenedPathGeometry(System.Double,System.Windows.Media.ToleranceType)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFlattenedPathGeometry (tolerance As Double, type As ToleranceType) As PathGeometry" />
+      <MemberSignature Language="F#" Value="abstract member GetFlattenedPathGeometry : double * System.Windows.Media.ToleranceType -&gt; System.Windows.Media.PathGeometry&#xA;override this.GetFlattenedPathGeometry : double * System.Windows.Media.ToleranceType -&gt; System.Windows.Media.PathGeometry" Usage="geometry.GetFlattenedPathGeometry (tolerance, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Media::PathGeometry ^ GetFlattenedPathGeometry(double tolerance, System::Windows::Media::ToleranceType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -564,10 +654,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetOutlinedPathGeometry">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Media.PathGeometry" /> that is a simplified outline of the filled region of the <see cref="T:System.Windows.Media.Geometry" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetOutlinedPathGeometry">
       <MemberSignature Language="C#" Value="public System.Windows.Media.PathGeometry GetOutlinedPathGeometry ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.PathGeometry GetOutlinedPathGeometry() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.GetOutlinedPathGeometry" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetOutlinedPathGeometry () As PathGeometry" />
+      <MemberSignature Language="F#" Value="member this.GetOutlinedPathGeometry : unit -&gt; System.Windows.Media.PathGeometry" Usage="geometry.GetOutlinedPathGeometry " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PathGeometry ^ GetOutlinedPathGeometry();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -596,6 +698,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Media.PathGeometry GetOutlinedPathGeometry (double tolerance, System.Windows.Media.ToleranceType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Media.PathGeometry GetOutlinedPathGeometry(float64 tolerance, valuetype System.Windows.Media.ToleranceType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.GetOutlinedPathGeometry(System.Double,System.Windows.Media.ToleranceType)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetOutlinedPathGeometry (tolerance As Double, type As ToleranceType) As PathGeometry" />
+      <MemberSignature Language="F#" Value="abstract member GetOutlinedPathGeometry : double * System.Windows.Media.ToleranceType -&gt; System.Windows.Media.PathGeometry&#xA;override this.GetOutlinedPathGeometry : double * System.Windows.Media.ToleranceType -&gt; System.Windows.Media.PathGeometry" Usage="geometry.GetOutlinedPathGeometry (tolerance, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Media::PathGeometry ^ GetOutlinedPathGeometry(double tolerance, System::Windows::Media::ToleranceType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -628,10 +733,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetRenderBounds">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an axis-aligned rectangle that is exactly large enough to contain the geometry and its stroke.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetRenderBounds">
       <MemberSignature Language="C#" Value="public System.Windows.Rect GetRenderBounds (System.Windows.Media.Pen pen);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Rect GetRenderBounds(class System.Windows.Media.Pen pen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.GetRenderBounds(System.Windows.Media.Pen)" />
+      <MemberSignature Language="F#" Value="member this.GetRenderBounds : System.Windows.Media.Pen -&gt; System.Windows.Rect" Usage="geometry.GetRenderBounds pen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Rect GetRenderBounds(System::Windows::Media::Pen ^ pen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -663,6 +779,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Rect GetRenderBounds (System.Windows.Media.Pen pen, double tolerance, System.Windows.Media.ToleranceType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Rect GetRenderBounds(class System.Windows.Media.Pen pen, float64 tolerance, valuetype System.Windows.Media.ToleranceType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.GetRenderBounds(System.Windows.Media.Pen,System.Double,System.Windows.Media.ToleranceType)" />
+      <MemberSignature Language="F#" Value="abstract member GetRenderBounds : System.Windows.Media.Pen * double * System.Windows.Media.ToleranceType -&gt; System.Windows.Rect&#xA;override this.GetRenderBounds : System.Windows.Media.Pen * double * System.Windows.Media.ToleranceType -&gt; System.Windows.Rect" Usage="geometry.GetRenderBounds (pen, tolerance, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Rect GetRenderBounds(System::Windows::Media::Pen ^ pen, double tolerance, System::Windows::Media::ToleranceType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -692,10 +810,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetWidenedPathGeometry">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Media.PathGeometry" /> that is the shape defined by the stroke on the <see cref="T:System.Windows.Media.Geometry" /> produced by the specified <see cref="T:System.Windows.Media.Pen" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetWidenedPathGeometry">
       <MemberSignature Language="C#" Value="public System.Windows.Media.PathGeometry GetWidenedPathGeometry (System.Windows.Media.Pen pen);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.PathGeometry GetWidenedPathGeometry(class System.Windows.Media.Pen pen) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.GetWidenedPathGeometry(System.Windows.Media.Pen)" />
+      <MemberSignature Language="F#" Value="member this.GetWidenedPathGeometry : System.Windows.Media.Pen -&gt; System.Windows.Media.PathGeometry" Usage="geometry.GetWidenedPathGeometry pen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::PathGeometry ^ GetWidenedPathGeometry(System::Windows::Media::Pen ^ pen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -725,6 +854,8 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Media.PathGeometry GetWidenedPathGeometry (System.Windows.Media.Pen pen, double tolerance, System.Windows.Media.ToleranceType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Media.PathGeometry GetWidenedPathGeometry(class System.Windows.Media.Pen pen, float64 tolerance, valuetype System.Windows.Media.ToleranceType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.GetWidenedPathGeometry(System.Windows.Media.Pen,System.Double,System.Windows.Media.ToleranceType)" />
+      <MemberSignature Language="F#" Value="abstract member GetWidenedPathGeometry : System.Windows.Media.Pen * double * System.Windows.Media.ToleranceType -&gt; System.Windows.Media.PathGeometry&#xA;override this.GetWidenedPathGeometry : System.Windows.Media.Pen * double * System.Windows.Media.ToleranceType -&gt; System.Windows.Media.PathGeometry" Usage="geometry.GetWidenedPathGeometry (pen, tolerance, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Media::PathGeometry ^ GetWidenedPathGeometry(System::Windows::Media::Pen ^ pen, double tolerance, System::Windows::Media::ToleranceType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -763,6 +894,9 @@
       <MemberSignature Language="C#" Value="public abstract bool IsEmpty ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsEmpty() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsEmpty () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsEmpty : unit -&gt; bool" Usage="geometry.IsEmpty " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsEmpty();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -783,6 +917,9 @@
       <MemberSignature Language="C#" Value="public abstract bool MayHaveCurves ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool MayHaveCurves() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.MayHaveCurves" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function MayHaveCurves () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member MayHaveCurves : unit -&gt; bool" Usage="geometry.MayHaveCurves " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool MayHaveCurves();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -803,6 +940,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Geometry Parse (string source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Media.Geometry Parse(string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (source As String) As Geometry" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Windows.Media.Geometry" Usage="System.Windows.Media.Geometry.Parse source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Media::Geometry ^ Parse(System::String ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -832,6 +972,9 @@
       <MemberSignature Language="C#" Value="public bool ShouldSerializeTransform ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ShouldSerializeTransform() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.ShouldSerializeTransform" />
+      <MemberSignature Language="VB.NET" Value="Public Function ShouldSerializeTransform () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ShouldSerializeTransform : unit -&gt; bool" Usage="geometry.ShouldSerializeTransform " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ShouldSerializeTransform();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -857,6 +1000,9 @@
       <MemberSignature Language="C#" Value="public static double StandardFlatteningTolerance { get; }" />
       <MemberSignature Language="ILAsm" Value=".property float64 StandardFlatteningTolerance" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Geometry.StandardFlatteningTolerance" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property StandardFlatteningTolerance As Double" />
+      <MemberSignature Language="F#" Value="member this.StandardFlatteningTolerance : double" Usage="System.Windows.Media.Geometry.StandardFlatteningTolerance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property double StandardFlatteningTolerance { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -871,10 +1017,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StrokeContains">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the geometry's stroke contains the specified <see cref="T:System.Windows.Point" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="StrokeContains">
       <MemberSignature Language="C#" Value="public bool StrokeContains (System.Windows.Media.Pen pen, System.Windows.Point hitPoint);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool StrokeContains(class System.Windows.Media.Pen pen, valuetype System.Windows.Point hitPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.StrokeContains(System.Windows.Media.Pen,System.Windows.Point)" />
+      <MemberSignature Language="F#" Value="member this.StrokeContains : System.Windows.Media.Pen * System.Windows.Point -&gt; bool" Usage="geometry.StrokeContains (pen, hitPoint)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool StrokeContains(System::Windows::Media::Pen ^ pen, System::Windows::Point hitPoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -909,6 +1066,8 @@
       <MemberSignature Language="C#" Value="public bool StrokeContains (System.Windows.Media.Pen pen, System.Windows.Point hitPoint, double tolerance, System.Windows.Media.ToleranceType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool StrokeContains(class System.Windows.Media.Pen pen, valuetype System.Windows.Point hitPoint, float64 tolerance, valuetype System.Windows.Media.ToleranceType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.StrokeContains(System.Windows.Media.Pen,System.Windows.Point,System.Double,System.Windows.Media.ToleranceType)" />
+      <MemberSignature Language="F#" Value="member this.StrokeContains : System.Windows.Media.Pen * System.Windows.Point * double * System.Windows.Media.ToleranceType -&gt; bool" Usage="geometry.StrokeContains (pen, hitPoint, tolerance, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool StrokeContains(System::Windows::Media::Pen ^ pen, System::Windows::Point hitPoint, double tolerance, System::Windows::Media::ToleranceType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -941,10 +1100,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StrokeContainsWithDetail">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that describes the intersection between the specified geometry and the current geometry's stroke.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="StrokeContainsWithDetail">
       <MemberSignature Language="C#" Value="public System.Windows.Media.IntersectionDetail StrokeContainsWithDetail (System.Windows.Media.Pen pen, System.Windows.Media.Geometry geometry);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.IntersectionDetail StrokeContainsWithDetail(class System.Windows.Media.Pen pen, class System.Windows.Media.Geometry geometry) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.StrokeContainsWithDetail(System.Windows.Media.Pen,System.Windows.Media.Geometry)" />
+      <MemberSignature Language="F#" Value="member this.StrokeContainsWithDetail : System.Windows.Media.Pen * System.Windows.Media.Geometry -&gt; System.Windows.Media.IntersectionDetail" Usage="geometry.StrokeContainsWithDetail (pen, geometry)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::IntersectionDetail StrokeContainsWithDetail(System::Windows::Media::Pen ^ pen, System::Windows::Media::Geometry ^ geometry);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -978,6 +1148,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.IntersectionDetail StrokeContainsWithDetail (System.Windows.Media.Pen pen, System.Windows.Media.Geometry geometry, double tolerance, System.Windows.Media.ToleranceType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Media.IntersectionDetail StrokeContainsWithDetail(class System.Windows.Media.Pen pen, class System.Windows.Media.Geometry geometry, float64 tolerance, valuetype System.Windows.Media.ToleranceType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.StrokeContainsWithDetail(System.Windows.Media.Pen,System.Windows.Media.Geometry,System.Double,System.Windows.Media.ToleranceType)" />
+      <MemberSignature Language="F#" Value="member this.StrokeContainsWithDetail : System.Windows.Media.Pen * System.Windows.Media.Geometry * double * System.Windows.Media.ToleranceType -&gt; System.Windows.Media.IntersectionDetail" Usage="geometry.StrokeContainsWithDetail (pen, geometry, tolerance, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::IntersectionDetail StrokeContainsWithDetail(System::Windows::Media::Pen ^ pen, System::Windows::Media::Geometry ^ geometry, double tolerance, System::Windows::Media::ToleranceType type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1013,7 +1185,12 @@
       <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToString (format As String, provider As IFormatProvider) As String Implements IFormattable.ToString" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.IFormattable.ToString(System::String ^ format, IFormatProvider ^ provider) = IFormattable::ToString;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1041,10 +1218,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of the object based on the current culture.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="geometry.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1064,6 +1253,9 @@
       <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Geometry.ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="geometry.ToString provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1086,6 +1278,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Transform Transform { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Transform Transform" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Geometry.Transform" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transform As Transform" />
+      <MemberSignature Language="F#" Value="member this.Transform : System.Windows.Media.Transform with get, set" Usage="System.Windows.Media.Geometry.Transform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Transform ^ Transform { System::Windows::Media::Transform ^ get(); void set(System::Windows::Media::Transform ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1128,6 +1323,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TransformProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TransformProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Geometry.TransformProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TransformProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TransformProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Geometry.TransformProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TransformProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -1141,104 +1339,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="FillContainsWithDetail">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that describes the intersection between the geometry and the specified geometry.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Combine">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Combines two <see cref="T:System.Windows.Media.Geometry" /> objects.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetArea">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the area of the filled region of a <see cref="T:System.Windows.Media.Geometry" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FillContains">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether the <see cref="T:System.Windows.Media.Geometry" /> completely contains the specified <see cref="T:System.Windows.Media.Geometry" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetWidenedPathGeometry">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Media.PathGeometry" /> that is the shape defined by the stroke on the <see cref="T:System.Windows.Media.Geometry" /> produced by the specified <see cref="T:System.Windows.Media.Pen" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a string representation of the object based on the current culture.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="StrokeContainsWithDetail">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that describes the intersection between the specified geometry and the current geometry's stroke.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetOutlinedPathGeometry">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Media.PathGeometry" /> that is a simplified outline of the filled region of the <see cref="T:System.Windows.Media.Geometry" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetFlattenedPathGeometry">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Media.PathGeometry" /> that is a polygonal approximation of the <see cref="T:System.Windows.Media.Geometry" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetRenderBounds">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an axis-aligned rectangle that is exactly large enough to contain the geometry and its stroke.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="StrokeContains">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the geometry's stroke contains the specified <see cref="T:System.Windows.Point" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

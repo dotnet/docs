@@ -1,7 +1,10 @@
-<Type Name="LoginStatusDesigner" FullName="System.Web.UI.Design.WebControls.LoginStatusDesigner">
+﻿<Type Name="LoginStatusDesigner" FullName="System.Web.UI.Design.WebControls.LoginStatusDesigner">
   <TypeSignature Language="C#" Value="public class LoginStatusDesigner : System.Web.UI.Design.WebControls.CompositeControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LoginStatusDesigner extends System.Web.UI.Design.WebControls.CompositeControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.LoginStatusDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class LoginStatusDesigner&#xA;Inherits CompositeControlDesigner" />
+  <TypeSignature Language="F#" Value="type LoginStatusDesigner = class&#xA;    inherit CompositeControlDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LoginStatusDesigner : System::Web::UI::Design::WebControls::CompositeControlDesigner" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +54,8 @@
       <MemberSignature Language="C#" Value="public LoginStatusDesigner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginStatusDesigner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LoginStatusDesigner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -78,6 +83,9 @@
       <MemberSignature Language="C#" Value="public override System.ComponentModel.Design.DesignerActionListCollection ActionLists { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.Design.DesignerActionListCollection ActionLists" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LoginStatusDesigner.ActionLists" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ActionLists As DesignerActionListCollection" />
+      <MemberSignature Language="F#" Value="member this.ActionLists : System.ComponentModel.Design.DesignerActionListCollection" Usage="System.Web.UI.Design.WebControls.LoginStatusDesigner.ActionLists" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerActionListCollection ^ ActionLists { System::ComponentModel::Design::DesignerActionListCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -108,6 +116,9 @@
       <MemberSignature Language="C#" Value="public override string GetDesignTimeHtml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string GetDesignTimeHtml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginStatusDesigner.GetDesignTimeHtml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeHtml () As String" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeHtml : unit -&gt; string" Usage="loginStatusDesigner.GetDesignTimeHtml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ GetDesignTimeHtml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -148,6 +159,9 @@
       <MemberSignature Language="C#" Value="public override void Initialize (System.ComponentModel.IComponent component);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Initialize(class System.ComponentModel.IComponent component) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.LoginStatusDesigner.Initialize(System.ComponentModel.IComponent)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Initialize (component As IComponent)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="loginStatusDesigner.Initialize component" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -183,6 +197,9 @@
       <MemberSignature Language="C#" Value="protected override bool UsePreviewControl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UsePreviewControl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.LoginStatusDesigner.UsePreviewControl" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property UsePreviewControl As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UsePreviewControl : bool" Usage="System.Web.UI.Design.WebControls.LoginStatusDesigner.UsePreviewControl" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool UsePreviewControl { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

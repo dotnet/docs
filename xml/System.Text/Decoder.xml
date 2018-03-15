@@ -1,7 +1,10 @@
-<Type Name="Decoder" FullName="System.Text.Decoder">
+﻿<Type Name="Decoder" FullName="System.Text.Decoder">
   <TypeSignature Language="C#" Value="public abstract class Decoder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Decoder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Text.Decoder" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Decoder" />
+  <TypeSignature Language="F#" Value="type Decoder = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Decoder abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Text.Encoding</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +71,8 @@
       <MemberSignature Language="C#" Value="protected Decoder ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Decoder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Decoder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -110,10 +115,22 @@
         <altmember cref="T:System.Text.Encoding" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Convert">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts an encoded byte sequence to a string or array of characters.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Convert">
       <MemberSignature Language="C#" Value="public virtual void Convert (byte* bytes, int byteCount, char* chars, int charCount, bool flush, out int bytesUsed, out int charsUsed, out bool completed);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert(unsigned int8* bytes, int32 byteCount, char* chars, int32 charCount, bool flush, [out] int32&amp; bytesUsed, [out] int32&amp; charsUsed, [out] bool&amp; completed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Decoder.Convert(System.Byte*,System.Int32,System.Char*,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
+      <MemberSignature Language="F#" Value="abstract member Convert : nativeptr&lt;byte&gt; * int * nativeptr&lt;char&gt; * int * bool *  *  *  -&gt; unit&#xA;override this.Convert : nativeptr&lt;byte&gt; * int * nativeptr&lt;char&gt; * int * bool *  *  *  -&gt; unit" Usage="decoder.Convert (bytes, byteCount, chars, charCount, flush, bytesUsed, charsUsed, completed)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Convert(System::Byte* bytes, int byteCount, char* chars, int charCount, bool flush, [Runtime::InteropServices::Out] int % bytesUsed, [Runtime::InteropServices::Out] int % charsUsed, [Runtime::InteropServices::Out] bool % completed);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -195,6 +212,9 @@
       <MemberSignature Language="C#" Value="public virtual void Convert (byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex, int charCount, bool flush, out int bytesUsed, out int charsUsed, out bool completed);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Convert(unsigned int8[] bytes, int32 byteIndex, int32 byteCount, char[] chars, int32 charIndex, int32 charCount, bool flush, [out] int32&amp; bytesUsed, [out] int32&amp; charsUsed, [out] bool&amp; completed) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Decoder.Convert(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Convert (bytes As Byte(), byteIndex As Integer, byteCount As Integer, chars As Char(), charIndex As Integer, charCount As Integer, flush As Boolean, ByRef bytesUsed As Integer, ByRef charsUsed As Integer, ByRef completed As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Convert : byte[] * int * int * char[] * int * int * bool *  *  *  -&gt; unit&#xA;override this.Convert : byte[] * int * int * char[] * int * int * bool *  *  *  -&gt; unit" Usage="decoder.Convert (bytes, byteIndex, byteCount, chars, charIndex, charCount, flush, bytesUsed, charsUsed, completed)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Convert(cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex, int byteCount, cli::array &lt;char&gt; ^ chars, int charIndex, int charCount, bool flush, [Runtime::InteropServices::Out] int % bytesUsed, [Runtime::InteropServices::Out] int % charsUsed, [Runtime::InteropServices::Out] bool % completed);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -293,6 +313,9 @@
       <MemberSignature Language="C#" Value="public System.Text.DecoderFallback Fallback { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.DecoderFallback Fallback" />
       <MemberSignature Language="DocId" Value="P:System.Text.Decoder.Fallback" />
+      <MemberSignature Language="VB.NET" Value="Public Property Fallback As DecoderFallback" />
+      <MemberSignature Language="F#" Value="member this.Fallback : System.Text.DecoderFallback with get, set" Usage="System.Text.Decoder.Fallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::DecoderFallback ^ Fallback { System::Text::DecoderFallback ^ get(); void set(System::Text::DecoderFallback ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -340,6 +363,9 @@
       <MemberSignature Language="C#" Value="public System.Text.DecoderFallbackBuffer FallbackBuffer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Text.DecoderFallbackBuffer FallbackBuffer" />
       <MemberSignature Language="DocId" Value="P:System.Text.Decoder.FallbackBuffer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FallbackBuffer As DecoderFallbackBuffer" />
+      <MemberSignature Language="F#" Value="member this.FallbackBuffer : System.Text.DecoderFallbackBuffer" Usage="System.Text.Decoder.FallbackBuffer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Text::DecoderFallbackBuffer ^ FallbackBuffer { System::Text::DecoderFallbackBuffer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -381,10 +407,22 @@
         <altmember cref="P:System.Text.Encoder.Fallback" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCharCount">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, calculates the number of characters produced by decoding a sequence of bytes.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCharCount">
       <MemberSignature Language="C#" Value="public virtual int GetCharCount (byte* bytes, int count, bool flush);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetCharCount(unsigned int8* bytes, int32 count, bool flush) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Decoder.GetCharCount(System.Byte*,System.Int32,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member GetCharCount : nativeptr&lt;byte&gt; * int * bool -&gt; int&#xA;override this.GetCharCount : nativeptr&lt;byte&gt; * int * bool -&gt; int" Usage="decoder.GetCharCount (bytes, count, flush)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetCharCount(System::Byte* bytes, int count, bool flush);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -455,6 +493,9 @@
       <MemberSignature Language="C#" Value="public abstract int GetCharCount (byte[] bytes, int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetCharCount(unsigned int8[] bytes, int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Decoder.GetCharCount(System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetCharCount (bytes As Byte(), index As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetCharCount : byte[] * int * int -&gt; int" Usage="decoder.GetCharCount (bytes, index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetCharCount(cli::array &lt;System::Byte&gt; ^ bytes, int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -530,6 +571,9 @@
       <MemberSignature Language="C#" Value="public virtual int GetCharCount (byte[] bytes, int index, int count, bool flush);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetCharCount(unsigned int8[] bytes, int32 index, int32 count, bool flush) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Decoder.GetCharCount(System.Byte[],System.Int32,System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetCharCount (bytes As Byte(), index As Integer, count As Integer, flush As Boolean) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetCharCount : byte[] * int * int * bool -&gt; int&#xA;override this.GetCharCount : byte[] * int * int * bool -&gt; int" Usage="decoder.GetCharCount (bytes, index, count, flush)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetCharCount(cli::array &lt;System::Byte&gt; ^ bytes, int index, int count, bool flush);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -600,10 +644,22 @@
         <altmember cref="M:System.Text.Decoder.Reset" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetChars">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, decodes a sequence of bytes into a set of characters.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetChars">
       <MemberSignature Language="C#" Value="public virtual int GetChars (byte* bytes, int byteCount, char* chars, int charCount, bool flush);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetChars(unsigned int8* bytes, int32 byteCount, char* chars, int32 charCount, bool flush) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Decoder.GetChars(System.Byte*,System.Int32,System.Char*,System.Int32,System.Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member GetChars : nativeptr&lt;byte&gt; * int * nativeptr&lt;char&gt; * int * bool -&gt; int&#xA;override this.GetChars : nativeptr&lt;byte&gt; * int * nativeptr&lt;char&gt; * int * bool -&gt; int" Usage="decoder.GetChars (bytes, byteCount, chars, charCount, flush)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetChars(System::Byte* bytes, int byteCount, char* chars, int charCount, bool flush);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -686,6 +742,9 @@
       <MemberSignature Language="C#" Value="public abstract int GetChars (byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetChars(unsigned int8[] bytes, int32 byteIndex, int32 byteCount, char[] chars, int32 charIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Decoder.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetChars (bytes As Byte(), byteIndex As Integer, byteCount As Integer, chars As Char(), charIndex As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetChars : byte[] * int * int * char[] * int -&gt; int" Usage="decoder.GetChars (bytes, byteIndex, byteCount, chars, charIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetChars(cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex, int byteCount, cli::array &lt;char&gt; ^ chars, int charIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -777,6 +836,9 @@
       <MemberSignature Language="C#" Value="public virtual int GetChars (byte[] bytes, int byteIndex, int byteCount, char[] chars, int charIndex, bool flush);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetChars(unsigned int8[] bytes, int32 byteIndex, int32 byteCount, char[] chars, int32 charIndex, bool flush) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Decoder.GetChars(System.Byte[],System.Int32,System.Int32,System.Char[],System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetChars (bytes As Byte(), byteIndex As Integer, byteCount As Integer, chars As Char(), charIndex As Integer, flush As Boolean) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetChars : byte[] * int * int * char[] * int * bool -&gt; int&#xA;override this.GetChars : byte[] * int * int * char[] * int * bool -&gt; int" Usage="decoder.GetChars (bytes, byteIndex, byteCount, chars, charIndex, flush)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetChars(cli::array &lt;System::Byte&gt; ^ bytes, int byteIndex, int byteCount, cli::array &lt;char&gt; ^ chars, int charIndex, bool flush);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -862,6 +924,9 @@
       <MemberSignature Language="C#" Value="public virtual void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.Decoder.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reset ()" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit&#xA;override this.Reset : unit -&gt; unit" Usage="decoder.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.Encoding</AssemblyName>
@@ -904,35 +969,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Convert">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts an encoded byte sequence to a string or array of characters.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetChars">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, decodes a sequence of bytes into a set of characters.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetCharCount">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, calculates the number of characters produced by decoding a sequence of bytes.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

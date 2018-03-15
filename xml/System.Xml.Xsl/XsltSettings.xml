@@ -1,7 +1,10 @@
-<Type Name="XsltSettings" FullName="System.Xml.Xsl.XsltSettings">
+﻿<Type Name="XsltSettings" FullName="System.Xml.Xsl.XsltSettings">
   <TypeSignature Language="C#" Value="public sealed class XsltSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XsltSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.XsltSettings" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XsltSettings" />
+  <TypeSignature Language="F#" Value="type XsltSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XsltSettings sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,10 +45,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.XsltSettings" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XsltSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XsltSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -80,6 +95,9 @@
       <MemberSignature Language="C#" Value="public XsltSettings (bool enableDocumentFunction, bool enableScript);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool enableDocumentFunction, bool enableScript) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.XsltSettings.#ctor(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (enableDocumentFunction As Boolean, enableScript As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Xsl.XsltSettings : bool * bool -&gt; System.Xml.Xsl.XsltSettings" Usage="new System.Xml.Xsl.XsltSettings (enableDocumentFunction, enableScript)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XsltSettings(bool enableDocumentFunction, bool enableScript);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -128,6 +146,9 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Xsl.XsltSettings Default { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Xml.Xsl.XsltSettings Default" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltSettings.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Default As XsltSettings" />
+      <MemberSignature Language="F#" Value="member this.Default : System.Xml.Xsl.XsltSettings" Usage="System.Xml.Xsl.XsltSettings.Default" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Xsl::XsltSettings ^ Default { System::Xml::Xsl::XsltSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -165,6 +186,9 @@
       <MemberSignature Language="C#" Value="public bool EnableDocumentFunction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableDocumentFunction" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltSettings.EnableDocumentFunction" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableDocumentFunction As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableDocumentFunction : bool with get, set" Usage="System.Xml.Xsl.XsltSettings.EnableDocumentFunction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableDocumentFunction { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -202,6 +226,9 @@
       <MemberSignature Language="C#" Value="public bool EnableScript { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableScript" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltSettings.EnableScript" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableScript As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableScript : bool with get, set" Usage="System.Xml.Xsl.XsltSettings.EnableScript" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableScript { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -239,6 +266,9 @@
       <MemberSignature Language="C#" Value="public static System.Xml.Xsl.XsltSettings TrustedXslt { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Xml.Xsl.XsltSettings TrustedXslt" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Xsl.XsltSettings.TrustedXslt" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property TrustedXslt As XsltSettings" />
+      <MemberSignature Language="F#" Value="member this.TrustedXslt : System.Xml.Xsl.XsltSettings" Usage="System.Xml.Xsl.XsltSettings.TrustedXslt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::Xsl::XsltSettings ^ TrustedXslt { System::Xml::Xsl::XsltSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -279,15 +309,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Xsl.XsltSettings" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

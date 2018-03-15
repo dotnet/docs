@@ -1,7 +1,10 @@
-<Type Name="ScrollAmount" FullName="System.Windows.Automation.ScrollAmount">
+﻿<Type Name="ScrollAmount" FullName="System.Windows.Automation.ScrollAmount">
   <TypeSignature Language="C#" Value="public enum ScrollAmount" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollAmount extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.ScrollAmount" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ScrollAmount" />
+  <TypeSignature Language="F#" Value="type ScrollAmount = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ScrollAmount" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="LargeDecrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.ScrollAmount LargeDecrement = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollAmount.LargeDecrement" />
+      <MemberSignature Language="VB.NET" Value="LargeDecrement" />
+      <MemberSignature Language="F#" Value="LargeDecrement = 0" Usage="System.Windows.Automation.ScrollAmount.LargeDecrement" />
+      <MemberSignature Language="C++ CLI" Value="LargeDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -34,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ScrollAmount</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that scrolling is done in large decrements, equivalent to **PageUp** or clicking on a blank part of a scrollbar. If **PageUp** is not a relevant amount for the control and/or no scrollbar exists, the value represents an amount equal to the current visible window.</summary>
       </Docs>
@@ -42,6 +49,9 @@
       <MemberSignature Language="C#" Value="LargeIncrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.ScrollAmount LargeIncrement = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollAmount.LargeIncrement" />
+      <MemberSignature Language="VB.NET" Value="LargeIncrement" />
+      <MemberSignature Language="F#" Value="LargeIncrement = 3" Usage="System.Windows.Automation.ScrollAmount.LargeIncrement" />
+      <MemberSignature Language="C++ CLI" Value="LargeIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -50,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ScrollAmount</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies that scrolling is done in large increments, equivalent to a **PageDown** or clicking on the track of a scrollbar component. If a **PageDown** is not a relevant amount for the control and/or no scrollbar exists, the value represents an amount equal to the current visible region.</summary>
       </Docs>
@@ -58,6 +69,9 @@
       <MemberSignature Language="C#" Value="NoAmount" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.ScrollAmount NoAmount = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollAmount.NoAmount" />
+      <MemberSignature Language="VB.NET" Value="NoAmount" />
+      <MemberSignature Language="F#" Value="NoAmount = 2" Usage="System.Windows.Automation.ScrollAmount.NoAmount" />
+      <MemberSignature Language="C++ CLI" Value="NoAmount" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -66,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ScrollAmount</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that scrolling should not be performed.</summary>
       </Docs>
@@ -74,6 +89,9 @@
       <MemberSignature Language="C#" Value="SmallDecrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.ScrollAmount SmallDecrement = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollAmount.SmallDecrement" />
+      <MemberSignature Language="VB.NET" Value="SmallDecrement" />
+      <MemberSignature Language="F#" Value="SmallDecrement = 1" Usage="System.Windows.Automation.ScrollAmount.SmallDecrement" />
+      <MemberSignature Language="C++ CLI" Value="SmallDecrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -82,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ScrollAmount</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that scrolling is done in small decrements, equivalent to pressing an arrow key or clicking the arrow button on a scrollbar.</summary>
       </Docs>
@@ -90,6 +109,9 @@
       <MemberSignature Language="C#" Value="SmallIncrement" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.ScrollAmount SmallIncrement = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.ScrollAmount.SmallIncrement" />
+      <MemberSignature Language="VB.NET" Value="SmallIncrement" />
+      <MemberSignature Language="F#" Value="SmallIncrement = 4" Usage="System.Windows.Automation.ScrollAmount.SmallIncrement" />
+      <MemberSignature Language="C++ CLI" Value="SmallIncrement" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -98,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.ScrollAmount</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that scrolling is done in small increments, equivalent to pressing an arrow key or clicking the arrow button on a scrollbar.</summary>
       </Docs>

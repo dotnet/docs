@@ -1,7 +1,10 @@
-<Type Name="ProgressChangedEventArgs" FullName="System.ComponentModel.ProgressChangedEventArgs">
+﻿<Type Name="ProgressChangedEventArgs" FullName="System.ComponentModel.ProgressChangedEventArgs">
   <TypeSignature Language="C#" Value="public class ProgressChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProgressChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ProgressChangedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProgressChangedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type ProgressChangedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProgressChangedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public ProgressChangedEventArgs (int progressPercentage, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 progressPercentage, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ProgressChangedEventArgs.#ctor(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (progressPercentage As Integer, userState As Object)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.ProgressChangedEventArgs : int * obj -&gt; System.ComponentModel.ProgressChangedEventArgs" Usage="new System.ComponentModel.ProgressChangedEventArgs (progressPercentage, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProgressChangedEventArgs(int progressPercentage, System::Object ^ userState);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -72,6 +78,9 @@
       <MemberSignature Language="C#" Value="public int ProgressPercentage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ProgressPercentage" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProgressPercentage As Integer" />
+      <MemberSignature Language="F#" Value="member this.ProgressPercentage : int" Usage="System.ComponentModel.ProgressChangedEventArgs.ProgressPercentage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ProgressPercentage { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -118,6 +127,9 @@
       <MemberSignature Language="C#" Value="public object UserState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object UserState" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ProgressChangedEventArgs.UserState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserState As Object" />
+      <MemberSignature Language="F#" Value="member this.UserState : obj" Usage="System.ComponentModel.ProgressChangedEventArgs.UserState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ UserState { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>

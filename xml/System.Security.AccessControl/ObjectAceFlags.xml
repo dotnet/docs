@@ -1,7 +1,10 @@
-<Type Name="ObjectAceFlags" FullName="System.Security.AccessControl.ObjectAceFlags">
+﻿<Type Name="ObjectAceFlags" FullName="System.Security.AccessControl.ObjectAceFlags">
   <TypeSignature Language="C#" Value="public enum ObjectAceFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectAceFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.ObjectAceFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ObjectAceFlags" />
+  <TypeSignature Language="F#" Value="type ObjectAceFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ObjectAceFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="InheritedObjectAceTypePresent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ObjectAceFlags InheritedObjectAceTypePresent = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ObjectAceFlags.InheritedObjectAceTypePresent" />
+      <MemberSignature Language="VB.NET" Value="InheritedObjectAceTypePresent" />
+      <MemberSignature Language="F#" Value="InheritedObjectAceTypePresent = 2" Usage="System.Security.AccessControl.ObjectAceFlags.InheritedObjectAceTypePresent" />
+      <MemberSignature Language="C++ CLI" Value="InheritedObjectAceTypePresent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ObjectAceFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The type of object that can inherit the ACE.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ObjectAceFlags None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ObjectAceFlags.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.AccessControl.ObjectAceFlags.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ObjectAceFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No object types are present.</summary>
       </Docs>
@@ -73,6 +84,9 @@
       <MemberSignature Language="C#" Value="ObjectAceTypePresent" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.ObjectAceFlags ObjectAceTypePresent = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.ObjectAceFlags.ObjectAceTypePresent" />
+      <MemberSignature Language="VB.NET" Value="ObjectAceTypePresent" />
+      <MemberSignature Language="F#" Value="ObjectAceTypePresent = 1" Usage="System.Security.AccessControl.ObjectAceFlags.ObjectAceTypePresent" />
+      <MemberSignature Language="C++ CLI" Value="ObjectAceTypePresent" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -87,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.ObjectAceFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The type of object that is associated with the ACE is present.</summary>
       </Docs>

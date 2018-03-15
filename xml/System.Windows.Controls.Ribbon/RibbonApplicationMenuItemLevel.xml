@@ -1,7 +1,10 @@
-<Type Name="RibbonApplicationMenuItemLevel" FullName="System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel">
+﻿<Type Name="RibbonApplicationMenuItemLevel" FullName="System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel">
   <TypeSignature Language="C#" Value="public enum RibbonApplicationMenuItemLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RibbonApplicationMenuItemLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RibbonApplicationMenuItemLevel" />
+  <TypeSignature Language="F#" Value="type RibbonApplicationMenuItemLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class RibbonApplicationMenuItemLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Middle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel Middle = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel.Middle" />
+      <MemberSignature Language="VB.NET" Value="Middle" />
+      <MemberSignature Language="F#" Value="Middle = 1" Usage="System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel.Middle" />
+      <MemberSignature Language="C++ CLI" Value="Middle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The menu item is displayed in the middle level.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Sub" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel Sub = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel.Sub" />
+      <MemberSignature Language="VB.NET" Value="Sub" />
+      <MemberSignature Language="F#" Value="Sub = 2" Usage="System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel.Sub" />
+      <MemberSignature Language="C++ CLI" Value="Sub" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The menu item is displayed in the lowest level.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel Top = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel.Top" />
+      <MemberSignature Language="VB.NET" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 0" Usage="System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel.Top" />
+      <MemberSignature Language="C++ CLI" Value="Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Ribbon.RibbonApplicationMenuItemLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The menu item is displayed in the top level.</summary>
       </Docs>

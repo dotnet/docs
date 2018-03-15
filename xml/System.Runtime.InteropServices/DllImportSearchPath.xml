@@ -1,7 +1,10 @@
-<Type Name="DllImportSearchPath" FullName="System.Runtime.InteropServices.DllImportSearchPath">
+﻿<Type Name="DllImportSearchPath" FullName="System.Runtime.InteropServices.DllImportSearchPath">
   <TypeSignature Language="C#" Value="public enum DllImportSearchPath" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DllImportSearchPath extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.DllImportSearchPath" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DllImportSearchPath" />
+  <TypeSignature Language="F#" Value="type DllImportSearchPath = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DllImportSearchPath" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="ApplicationDirectory" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DllImportSearchPath ApplicationDirectory = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.ApplicationDirectory" />
+      <MemberSignature Language="VB.NET" Value="ApplicationDirectory" />
+      <MemberSignature Language="F#" Value="ApplicationDirectory = 512" Usage="System.Runtime.InteropServices.DllImportSearchPath.ApplicationDirectory" />
+      <MemberSignature Language="C++ CLI" Value="ApplicationDirectory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -66,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DllImportSearchPath</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>Include the application directory in the DLL search path.</summary>
       </Docs>
@@ -74,6 +81,9 @@
       <MemberSignature Language="C#" Value="AssemblyDirectory" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DllImportSearchPath AssemblyDirectory = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory" />
+      <MemberSignature Language="VB.NET" Value="AssemblyDirectory" />
+      <MemberSignature Language="F#" Value="AssemblyDirectory = 2" Usage="System.Runtime.InteropServices.DllImportSearchPath.AssemblyDirectory" />
+      <MemberSignature Language="C++ CLI" Value="AssemblyDirectory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -96,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DllImportSearchPath</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>When searching for assembly dependencies, include the directory that contains the assembly itself, and search that directory first. This value is used by the .NET Framework, before the paths are passed to the Win32 [LoadLibraryEx](http://go.microsoft.com/fwlink/?LinkId=236091) function.</summary>
       </Docs>
@@ -104,6 +115,9 @@
       <MemberSignature Language="C#" Value="LegacyBehavior" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DllImportSearchPath LegacyBehavior = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.LegacyBehavior" />
+      <MemberSignature Language="VB.NET" Value="LegacyBehavior" />
+      <MemberSignature Language="F#" Value="LegacyBehavior = 0" Usage="System.Runtime.InteropServices.DllImportSearchPath.LegacyBehavior" />
+      <MemberSignature Language="C++ CLI" Value="LegacyBehavior" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -126,6 +140,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DllImportSearchPath</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Search the application directory, and then call the Win32 [LoadLibraryEx](http://go.microsoft.com/fwlink/?LinkId=236091) function with the <c>LOAD_WITH_ALTERED_SEARCH_PATH</c> flag. This value is ignored if any other value is specified. Operating systems that do not support the <see cref="T:System.Runtime.InteropServices.DefaultDllImportSearchPathsAttribute" /> attribute use this value, and ignore other values.</summary>
       </Docs>
@@ -134,6 +149,9 @@
       <MemberSignature Language="C#" Value="SafeDirectories" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DllImportSearchPath SafeDirectories = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.SafeDirectories" />
+      <MemberSignature Language="VB.NET" Value="SafeDirectories" />
+      <MemberSignature Language="F#" Value="SafeDirectories = 4096" Usage="System.Runtime.InteropServices.DllImportSearchPath.SafeDirectories" />
+      <MemberSignature Language="C++ CLI" Value="SafeDirectories" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -156,6 +174,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DllImportSearchPath</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>Include the application directory, the <see langword="%WinDir%\System32" /> directory, and user directories in the DLL search path.</summary>
       </Docs>
@@ -164,6 +183,9 @@
       <MemberSignature Language="C#" Value="System32" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DllImportSearchPath System32 = int32(2048)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.System32" />
+      <MemberSignature Language="VB.NET" Value="System32" />
+      <MemberSignature Language="F#" Value="System32 = 2048" Usage="System.Runtime.InteropServices.DllImportSearchPath.System32" />
+      <MemberSignature Language="C++ CLI" Value="System32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -186,6 +208,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DllImportSearchPath</ReturnType>
       </ReturnValue>
+      <MemberValue>2048</MemberValue>
       <Docs>
         <summary>Include the <see langword="%WinDir%\System32" /> directory in the DLL search path.</summary>
       </Docs>
@@ -194,6 +217,9 @@
       <MemberSignature Language="C#" Value="UseDllDirectoryForDependencies" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DllImportSearchPath UseDllDirectoryForDependencies = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.UseDllDirectoryForDependencies" />
+      <MemberSignature Language="VB.NET" Value="UseDllDirectoryForDependencies" />
+      <MemberSignature Language="F#" Value="UseDllDirectoryForDependencies = 256" Usage="System.Runtime.InteropServices.DllImportSearchPath.UseDllDirectoryForDependencies" />
+      <MemberSignature Language="C++ CLI" Value="UseDllDirectoryForDependencies" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -216,6 +242,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DllImportSearchPath</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Search for the dependencies of a DLL in the folder where the DLL is located before searching other folders.</summary>
       </Docs>
@@ -224,6 +251,9 @@
       <MemberSignature Language="C#" Value="UserDirectories" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.DllImportSearchPath UserDirectories = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.DllImportSearchPath.UserDirectories" />
+      <MemberSignature Language="VB.NET" Value="UserDirectories" />
+      <MemberSignature Language="F#" Value="UserDirectories = 1024" Usage="System.Runtime.InteropServices.DllImportSearchPath.UserDirectories" />
+      <MemberSignature Language="C++ CLI" Value="UserDirectories" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -246,6 +276,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.DllImportSearchPath</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>Include any path that was explicitly added to the process-wide search path by using the Win32 <c>AddDllDirectory</c> function.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="EncryptedData" FullName="System.Security.Cryptography.Xml.EncryptedData">
+﻿<Type Name="EncryptedData" FullName="System.Security.Cryptography.Xml.EncryptedData">
   <TypeSignature Language="C#" Value="public sealed class EncryptedData : System.Security.Cryptography.Xml.EncryptedType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EncryptedData extends System.Security.Cryptography.Xml.EncryptedType" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.EncryptedData" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncryptedData&#xA;Inherits EncryptedType" />
+  <TypeSignature Language="F#" Value="type EncryptedData = class&#xA;    inherit EncryptedType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncryptedData sealed : System::Security::Cryptography::Xml::EncryptedType" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="public EncryptedData ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedData.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncryptedData();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -72,6 +77,9 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlElement GetXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlElement GetXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedData.GetXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetXml () As XmlElement" />
+      <MemberSignature Language="F#" Value="override this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="encryptedData.GetXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ GetXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -103,6 +111,9 @@
       <MemberSignature Language="C#" Value="public override void LoadXml (System.Xml.XmlElement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadXml(class System.Xml.XmlElement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedData.LoadXml(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadXml (value As XmlElement)" />
+      <MemberSignature Language="F#" Value="override this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="encryptedData.LoadXml value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadXml(System::Xml::XmlElement ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>

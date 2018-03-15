@@ -1,7 +1,10 @@
-<Type Name="MutableObjectModelBinder" FullName="System.Web.ModelBinding.MutableObjectModelBinder">
+﻿<Type Name="MutableObjectModelBinder" FullName="System.Web.ModelBinding.MutableObjectModelBinder">
   <TypeSignature Language="C#" Value="public class MutableObjectModelBinder : System.Web.ModelBinding.IModelBinder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MutableObjectModelBinder extends System.Object implements class System.Web.ModelBinding.IModelBinder" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.MutableObjectModelBinder" />
+  <TypeSignature Language="VB.NET" Value="Public Class MutableObjectModelBinder&#xA;Implements IModelBinder" />
+  <TypeSignature Language="F#" Value="type MutableObjectModelBinder = class&#xA;    interface IModelBinder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MutableObjectModelBinder : System::Web::ModelBinding::IModelBinder" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,8 @@
       <MemberSignature Language="C#" Value="public MutableObjectModelBinder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.MutableObjectModelBinder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MutableObjectModelBinder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -38,7 +43,12 @@
       <MemberSignature Language="C#" Value="public virtual bool BindModel (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, System.Web.ModelBinding.ModelBindingContext bindingContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool BindModel(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.MutableObjectModelBinder.BindModel(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)" />
+      <MemberSignature Language="F#" Value="abstract member BindModel : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; bool&#xA;override this.BindModel : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; bool" Usage="mutableObjectModelBinder.BindModel (modelBindingExecutionContext, bindingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool BindModel(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.ModelBinding.IModelBinder.BindModel(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,6 +74,9 @@
       <MemberSignature Language="C#" Value="protected virtual bool CanUpdateProperty (System.Web.ModelBinding.ModelMetadata propertyMetadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool CanUpdateProperty(class System.Web.ModelBinding.ModelMetadata propertyMetadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.MutableObjectModelBinder.CanUpdateProperty(System.Web.ModelBinding.ModelMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CanUpdateProperty (propertyMetadata As ModelMetadata) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member CanUpdateProperty : System.Web.ModelBinding.ModelMetadata -&gt; bool&#xA;override this.CanUpdateProperty : System.Web.ModelBinding.ModelMetadata -&gt; bool" Usage="mutableObjectModelBinder.CanUpdateProperty propertyMetadata" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool CanUpdateProperty(System::Web::ModelBinding::ModelMetadata ^ propertyMetadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -94,6 +107,8 @@
       <MemberSignature Language="C#" Value="protected virtual object CreateModel (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, System.Web.ModelBinding.ModelBindingContext bindingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance object CreateModel(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.MutableObjectModelBinder.CreateModel(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)" />
+      <MemberSignature Language="F#" Value="abstract member CreateModel : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; obj&#xA;override this.CreateModel : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; obj" Usage="mutableObjectModelBinder.CreateModel (modelBindingExecutionContext, bindingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ CreateModel(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -118,6 +133,8 @@
       <MemberSignature Language="C#" Value="protected virtual void EnsureModel (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, System.Web.ModelBinding.ModelBindingContext bindingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void EnsureModel(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.MutableObjectModelBinder.EnsureModel(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)" />
+      <MemberSignature Language="F#" Value="abstract member EnsureModel : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; unit&#xA;override this.EnsureModel : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; unit" Usage="mutableObjectModelBinder.EnsureModel (modelBindingExecutionContext, bindingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void EnsureModel(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -141,6 +158,8 @@
       <MemberSignature Language="C#" Value="protected virtual System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelMetadata&gt; GetMetadataForProperties (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, System.Web.ModelBinding.ModelBindingContext bindingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.ModelBinding.ModelMetadata&gt; GetMetadataForProperties(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.MutableObjectModelBinder.GetMetadataForProperties(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext)" />
+      <MemberSignature Language="F#" Value="abstract member GetMetadataForProperties : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; seq&lt;System.Web.ModelBinding.ModelMetadata&gt;&#xA;override this.GetMetadataForProperties : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext -&gt; seq&lt;System.Web.ModelBinding.ModelMetadata&gt;" Usage="mutableObjectModelBinder.GetMetadataForProperties (modelBindingExecutionContext, bindingContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Web::ModelBinding::ModelMetadata ^&gt; ^ GetMetadataForProperties(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,6 +184,8 @@
       <MemberSignature Language="C#" Value="protected virtual void SetProperty (System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, System.Web.ModelBinding.ModelBindingContext bindingContext, System.Web.ModelBinding.ModelMetadata propertyMetadata, System.Web.ModelBinding.ComplexModelResult complexModelResult);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void SetProperty(class System.Web.ModelBinding.ModelBindingExecutionContext modelBindingExecutionContext, class System.Web.ModelBinding.ModelBindingContext bindingContext, class System.Web.ModelBinding.ModelMetadata propertyMetadata, class System.Web.ModelBinding.ComplexModelResult complexModelResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.MutableObjectModelBinder.SetProperty(System.Web.ModelBinding.ModelBindingExecutionContext,System.Web.ModelBinding.ModelBindingContext,System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ComplexModelResult)" />
+      <MemberSignature Language="F#" Value="abstract member SetProperty : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext * System.Web.ModelBinding.ModelMetadata * System.Web.ModelBinding.ComplexModelResult -&gt; unit&#xA;override this.SetProperty : System.Web.ModelBinding.ModelBindingExecutionContext * System.Web.ModelBinding.ModelBindingContext * System.Web.ModelBinding.ModelMetadata * System.Web.ModelBinding.ComplexModelResult -&gt; unit" Usage="mutableObjectModelBinder.SetProperty (modelBindingExecutionContext, bindingContext, propertyMetadata, complexModelResult)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void SetProperty(System::Web::ModelBinding::ModelBindingExecutionContext ^ modelBindingExecutionContext, System::Web::ModelBinding::ModelBindingContext ^ bindingContext, System::Web::ModelBinding::ModelMetadata ^ propertyMetadata, System::Web::ModelBinding::ComplexModelResult ^ complexModelResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

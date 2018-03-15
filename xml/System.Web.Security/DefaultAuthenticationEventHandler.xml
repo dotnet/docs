@@ -1,7 +1,10 @@
-<Type Name="DefaultAuthenticationEventHandler" FullName="System.Web.Security.DefaultAuthenticationEventHandler">
+﻿<Type Name="DefaultAuthenticationEventHandler" FullName="System.Web.Security.DefaultAuthenticationEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DefaultAuthenticationEventHandler(object sender, DefaultAuthenticationEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DefaultAuthenticationEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.Security.DefaultAuthenticationEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DefaultAuthenticationEventHandler(sender As Object, e As DefaultAuthenticationEventArgs)" />
+  <TypeSignature Language="F#" Value="type DefaultAuthenticationEventHandler = delegate of obj * DefaultAuthenticationEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DefaultAuthenticationEventHandler(System::Object ^ sender, DefaultAuthenticationEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

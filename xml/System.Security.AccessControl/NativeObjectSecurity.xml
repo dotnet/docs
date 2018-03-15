@@ -1,7 +1,10 @@
-<Type Name="NativeObjectSecurity" FullName="System.Security.AccessControl.NativeObjectSecurity">
+﻿<Type Name="NativeObjectSecurity" FullName="System.Security.AccessControl.NativeObjectSecurity">
   <TypeSignature Language="C#" Value="public abstract class NativeObjectSecurity : System.Security.AccessControl.CommonObjectSecurity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit NativeObjectSecurity extends System.Security.AccessControl.CommonObjectSecurity" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.NativeObjectSecurity" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class NativeObjectSecurity&#xA;Inherits CommonObjectSecurity" />
+  <TypeSignature Language="F#" Value="type NativeObjectSecurity = class&#xA;    inherit CommonObjectSecurity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NativeObjectSecurity abstract : System::Security::AccessControl::CommonObjectSecurity" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,10 +24,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.NativeObjectSecurity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected NativeObjectSecurity (bool isContainer, System.Security.AccessControl.ResourceType resourceType);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool isContainer, valuetype System.Security.AccessControl.ResourceType resourceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.#ctor(System.Boolean,System.Security.AccessControl.ResourceType)" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.NativeObjectSecurity : bool * System.Security.AccessControl.ResourceType -&gt; System.Security.AccessControl.NativeObjectSecurity" Usage="new System.Security.AccessControl.NativeObjectSecurity (isContainer, resourceType)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NativeObjectSecurity(bool isContainer, System::Security::AccessControl::ResourceType resourceType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -52,6 +67,8 @@
       <MemberSignature Language="C#" Value="protected NativeObjectSecurity (bool isContainer, System.Security.AccessControl.ResourceType resourceType, System.Runtime.InteropServices.SafeHandle handle, System.Security.AccessControl.AccessControlSections includeSections);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool isContainer, valuetype System.Security.AccessControl.ResourceType resourceType, class System.Runtime.InteropServices.SafeHandle handle, valuetype System.Security.AccessControl.AccessControlSections includeSections) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.#ctor(System.Boolean,System.Security.AccessControl.ResourceType,System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections)" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.NativeObjectSecurity : bool * System.Security.AccessControl.ResourceType * System.Runtime.InteropServices.SafeHandle * System.Security.AccessControl.AccessControlSections -&gt; System.Security.AccessControl.NativeObjectSecurity" Usage="new System.Security.AccessControl.NativeObjectSecurity (isContainer, resourceType, handle, includeSections)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NativeObjectSecurity(bool isContainer, System::Security::AccessControl::ResourceType resourceType, System::Runtime::InteropServices::SafeHandle ^ handle, System::Security::AccessControl::AccessControlSections includeSections);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -90,6 +107,8 @@
       <MemberSignature Language="C#" Value="protected NativeObjectSecurity (bool isContainer, System.Security.AccessControl.ResourceType resourceType, System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode exceptionFromErrorCode, object exceptionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool isContainer, valuetype System.Security.AccessControl.ResourceType resourceType, class System.Security.AccessControl.NativeObjectSecurity/ExceptionFromErrorCode exceptionFromErrorCode, object exceptionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.#ctor(System.Boolean,System.Security.AccessControl.ResourceType,System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode,System.Object)" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.NativeObjectSecurity : bool * System.Security.AccessControl.ResourceType * System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode * obj -&gt; System.Security.AccessControl.NativeObjectSecurity" Usage="new System.Security.AccessControl.NativeObjectSecurity (isContainer, resourceType, exceptionFromErrorCode, exceptionContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NativeObjectSecurity(bool isContainer, System::Security::AccessControl::ResourceType resourceType, System::Security::AccessControl::NativeObjectSecurity::ExceptionFromErrorCode ^ exceptionFromErrorCode, System::Object ^ exceptionContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -121,6 +140,8 @@
       <MemberSignature Language="C#" Value="protected NativeObjectSecurity (bool isContainer, System.Security.AccessControl.ResourceType resourceType, string name, System.Security.AccessControl.AccessControlSections includeSections);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool isContainer, valuetype System.Security.AccessControl.ResourceType resourceType, string name, valuetype System.Security.AccessControl.AccessControlSections includeSections) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.#ctor(System.Boolean,System.Security.AccessControl.ResourceType,System.String,System.Security.AccessControl.AccessControlSections)" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.NativeObjectSecurity : bool * System.Security.AccessControl.ResourceType * string * System.Security.AccessControl.AccessControlSections -&gt; System.Security.AccessControl.NativeObjectSecurity" Usage="new System.Security.AccessControl.NativeObjectSecurity (isContainer, resourceType, name, includeSections)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NativeObjectSecurity(bool isContainer, System::Security::AccessControl::ResourceType resourceType, System::String ^ name, System::Security::AccessControl::AccessControlSections includeSections);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -159,6 +180,8 @@
       <MemberSignature Language="C#" Value="protected NativeObjectSecurity (bool isContainer, System.Security.AccessControl.ResourceType resourceType, System.Runtime.InteropServices.SafeHandle handle, System.Security.AccessControl.AccessControlSections includeSections, System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode exceptionFromErrorCode, object exceptionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool isContainer, valuetype System.Security.AccessControl.ResourceType resourceType, class System.Runtime.InteropServices.SafeHandle handle, valuetype System.Security.AccessControl.AccessControlSections includeSections, class System.Security.AccessControl.NativeObjectSecurity/ExceptionFromErrorCode exceptionFromErrorCode, object exceptionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.#ctor(System.Boolean,System.Security.AccessControl.ResourceType,System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections,System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode,System.Object)" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.NativeObjectSecurity : bool * System.Security.AccessControl.ResourceType * System.Runtime.InteropServices.SafeHandle * System.Security.AccessControl.AccessControlSections * System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode * obj -&gt; System.Security.AccessControl.NativeObjectSecurity" Usage="new System.Security.AccessControl.NativeObjectSecurity (isContainer, resourceType, handle, includeSections, exceptionFromErrorCode, exceptionContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NativeObjectSecurity(bool isContainer, System::Security::AccessControl::ResourceType resourceType, System::Runtime::InteropServices::SafeHandle ^ handle, System::Security::AccessControl::AccessControlSections includeSections, System::Security::AccessControl::NativeObjectSecurity::ExceptionFromErrorCode ^ exceptionFromErrorCode, System::Object ^ exceptionContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -201,6 +224,8 @@
       <MemberSignature Language="C#" Value="protected NativeObjectSecurity (bool isContainer, System.Security.AccessControl.ResourceType resourceType, string name, System.Security.AccessControl.AccessControlSections includeSections, System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode exceptionFromErrorCode, object exceptionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(bool isContainer, valuetype System.Security.AccessControl.ResourceType resourceType, string name, valuetype System.Security.AccessControl.AccessControlSections includeSections, class System.Security.AccessControl.NativeObjectSecurity/ExceptionFromErrorCode exceptionFromErrorCode, object exceptionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.#ctor(System.Boolean,System.Security.AccessControl.ResourceType,System.String,System.Security.AccessControl.AccessControlSections,System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode,System.Object)" />
+      <MemberSignature Language="F#" Value="new System.Security.AccessControl.NativeObjectSecurity : bool * System.Security.AccessControl.ResourceType * string * System.Security.AccessControl.AccessControlSections * System.Security.AccessControl.NativeObjectSecurity.ExceptionFromErrorCode * obj -&gt; System.Security.AccessControl.NativeObjectSecurity" Usage="new System.Security.AccessControl.NativeObjectSecurity (isContainer, resourceType, name, includeSections, exceptionFromErrorCode, exceptionContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; NativeObjectSecurity(bool isContainer, System::Security::AccessControl::ResourceType resourceType, System::String ^ name, System::Security::AccessControl::AccessControlSections includeSections, System::Security::AccessControl::NativeObjectSecurity::ExceptionFromErrorCode ^ exceptionFromErrorCode, System::Object ^ exceptionContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -239,10 +264,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Persist">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Saves the specified sections of the security descriptor associated with this <see cref="T:System.Security.AccessControl.NativeObjectSecurity" /> object to permanent storage.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Persist">
       <MemberSignature Language="C#" Value="protected override sealed void Persist (System.Runtime.InteropServices.SafeHandle handle, System.Security.AccessControl.AccessControlSections includeSections);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Persist(class System.Runtime.InteropServices.SafeHandle handle, valuetype System.Security.AccessControl.AccessControlSections includeSections) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub Persist (handle As SafeHandle, includeSections As AccessControlSections)" />
+      <MemberSignature Language="F#" Value="override this.Persist : System.Runtime.InteropServices.SafeHandle * System.Security.AccessControl.AccessControlSections -&gt; unit" Usage="nativeObjectSecurity.Persist (handle, includeSections)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Persist(System::Runtime::InteropServices::SafeHandle ^ handle, System::Security::AccessControl::AccessControlSections includeSections);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -280,6 +318,9 @@
       <MemberSignature Language="C#" Value="protected override sealed void Persist (string name, System.Security.AccessControl.AccessControlSections includeSections);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Persist(string name, valuetype System.Security.AccessControl.AccessControlSections includeSections) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.Persist(System.String,System.Security.AccessControl.AccessControlSections)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub Persist (name As String, includeSections As AccessControlSections)" />
+      <MemberSignature Language="F#" Value="override this.Persist : string * System.Security.AccessControl.AccessControlSections -&gt; unit" Usage="nativeObjectSecurity.Persist (name, includeSections)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Persist(System::String ^ name, System::Security::AccessControl::AccessControlSections includeSections);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -317,6 +358,9 @@
       <MemberSignature Language="C#" Value="protected void Persist (System.Runtime.InteropServices.SafeHandle handle, System.Security.AccessControl.AccessControlSections includeSections, object exceptionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Persist(class System.Runtime.InteropServices.SafeHandle handle, valuetype System.Security.AccessControl.AccessControlSections includeSections, object exceptionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.Persist(System.Runtime.InteropServices.SafeHandle,System.Security.AccessControl.AccessControlSections,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub Persist (handle As SafeHandle, includeSections As AccessControlSections, exceptionContext As Object)" />
+      <MemberSignature Language="F#" Value="override this.Persist : System.Runtime.InteropServices.SafeHandle * System.Security.AccessControl.AccessControlSections * obj -&gt; unit" Usage="nativeObjectSecurity.Persist (handle, includeSections, exceptionContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Persist(System::Runtime::InteropServices::SafeHandle ^ handle, System::Security::AccessControl::AccessControlSections includeSections, System::Object ^ exceptionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -356,6 +400,9 @@
       <MemberSignature Language="C#" Value="protected void Persist (string name, System.Security.AccessControl.AccessControlSections includeSections, object exceptionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Persist(string name, valuetype System.Security.AccessControl.AccessControlSections includeSections, object exceptionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.AccessControl.NativeObjectSecurity.Persist(System.String,System.Security.AccessControl.AccessControlSections,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub Persist (name As String, includeSections As AccessControlSections, exceptionContext As Object)" />
+      <MemberSignature Language="F#" Value="override this.Persist : string * System.Security.AccessControl.AccessControlSections * obj -&gt; unit" Usage="nativeObjectSecurity.Persist (name, includeSections, exceptionContext)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Persist(System::String ^ name, System::Security::AccessControl::AccessControlSections includeSections, System::Object ^ exceptionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -391,25 +438,5 @@
         <exception cref="T:System.IO.FileNotFoundException">The securable object with which this <see cref="T:System.Security.AccessControl.NativeObjectSecurity" /> object is associated is either a directory or a file, and that directory or file could not be found.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Persist">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Saves the specified sections of the security descriptor associated with this <see cref="T:System.Security.AccessControl.NativeObjectSecurity" /> object to permanent storage.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.AccessControl.NativeObjectSecurity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

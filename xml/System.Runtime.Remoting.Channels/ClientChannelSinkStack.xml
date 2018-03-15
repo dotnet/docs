@@ -1,7 +1,10 @@
-<Type Name="ClientChannelSinkStack" FullName="System.Runtime.Remoting.Channels.ClientChannelSinkStack">
+﻿<Type Name="ClientChannelSinkStack" FullName="System.Runtime.Remoting.Channels.ClientChannelSinkStack">
   <TypeSignature Language="C#" Value="public class ClientChannelSinkStack : System.Runtime.Remoting.Channels.IClientChannelSinkStack" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ClientChannelSinkStack extends System.Object implements class System.Runtime.Remoting.Channels.IClientChannelSinkStack, class System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.ClientChannelSinkStack" />
+  <TypeSignature Language="VB.NET" Value="Public Class ClientChannelSinkStack&#xA;Implements IClientChannelSinkStack" />
+  <TypeSignature Language="F#" Value="type ClientChannelSinkStack = class&#xA;    interface IClientChannelSinkStack&#xA;    interface IClientResponseChannelSinkStack" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ClientChannelSinkStack : System::Runtime::Remoting::Channels::IClientChannelSinkStack" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,10 +36,22 @@
     <permission cref="T:System.Security.Permissions.SecurityPermission">For operating with infrastructure code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; Permission Value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.Infrastructure" /></permission>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.ClientChannelSinkStack" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ClientChannelSinkStack ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ClientChannelSinkStack.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientChannelSinkStack();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -53,6 +68,9 @@
       <MemberSignature Language="C#" Value="public ClientChannelSinkStack (System.Runtime.Remoting.Messaging.IMessageSink replySink);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Remoting.Messaging.IMessageSink replySink) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ClientChannelSinkStack.#ctor(System.Runtime.Remoting.Messaging.IMessageSink)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (replySink As IMessageSink)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Channels.ClientChannelSinkStack : System.Runtime.Remoting.Messaging.IMessageSink -&gt; System.Runtime.Remoting.Channels.ClientChannelSinkStack" Usage="new System.Runtime.Remoting.Channels.ClientChannelSinkStack replySink" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ClientChannelSinkStack(System::Runtime::Remoting::Messaging::IMessageSink ^ replySink);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -72,7 +90,12 @@
       <MemberSignature Language="C#" Value="public void AsyncProcessResponse (System.Runtime.Remoting.Channels.ITransportHeaders headers, System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AsyncProcessResponse(class System.Runtime.Remoting.Channels.ITransportHeaders headers, class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ClientChannelSinkStack.AsyncProcessResponse(System.Runtime.Remoting.Channels.ITransportHeaders,System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="abstract member AsyncProcessResponse : System.Runtime.Remoting.Channels.ITransportHeaders * System.IO.Stream -&gt; unit&#xA;override this.AsyncProcessResponse : System.Runtime.Remoting.Channels.ITransportHeaders * System.IO.Stream -&gt; unit" Usage="clientChannelSinkStack.AsyncProcessResponse (headers, stream)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AsyncProcessResponse(System::Runtime::Remoting::Channels::ITransportHeaders ^ headers, System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack.AsyncProcessResponse(System.Runtime.Remoting.Channels.ITransportHeaders,System.IO.Stream)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -104,7 +127,13 @@
       <MemberSignature Language="C#" Value="public void DispatchException (Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DispatchException(class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ClientChannelSinkStack.DispatchException(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DispatchException (e As Exception)" />
+      <MemberSignature Language="F#" Value="abstract member DispatchException : Exception -&gt; unit&#xA;override this.DispatchException : Exception -&gt; unit" Usage="clientChannelSinkStack.DispatchException e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DispatchException(Exception ^ e);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack.DispatchException(System.Exception)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -133,7 +162,13 @@
       <MemberSignature Language="C#" Value="public void DispatchReplyMessage (System.Runtime.Remoting.Messaging.IMessage msg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DispatchReplyMessage(class System.Runtime.Remoting.Messaging.IMessage msg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ClientChannelSinkStack.DispatchReplyMessage(System.Runtime.Remoting.Messaging.IMessage)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DispatchReplyMessage (msg As IMessage)" />
+      <MemberSignature Language="F#" Value="abstract member DispatchReplyMessage : System.Runtime.Remoting.Messaging.IMessage -&gt; unit&#xA;override this.DispatchReplyMessage : System.Runtime.Remoting.Messaging.IMessage -&gt; unit" Usage="clientChannelSinkStack.DispatchReplyMessage msg" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DispatchReplyMessage(System::Runtime::Remoting::Messaging::IMessage ^ msg);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack.DispatchReplyMessage(System.Runtime.Remoting.Messaging.IMessage)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -162,7 +197,13 @@
       <MemberSignature Language="C#" Value="public object Pop (System.Runtime.Remoting.Channels.IClientChannelSink sink);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Pop(class System.Runtime.Remoting.Channels.IClientChannelSink sink) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ClientChannelSinkStack.Pop(System.Runtime.Remoting.Channels.IClientChannelSink)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Pop (sink As IClientChannelSink) As Object" />
+      <MemberSignature Language="F#" Value="abstract member Pop : System.Runtime.Remoting.Channels.IClientChannelSink -&gt; obj&#xA;override this.Pop : System.Runtime.Remoting.Channels.IClientChannelSink -&gt; obj" Usage="clientChannelSinkStack.Pop sink" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Pop(System::Runtime::Remoting::Channels::IClientChannelSink ^ sink);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Channels.IClientChannelSinkStack.Pop(System.Runtime.Remoting.Channels.IClientChannelSink)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -186,7 +227,13 @@
       <MemberSignature Language="C#" Value="public void Push (System.Runtime.Remoting.Channels.IClientChannelSink sink, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Push(class System.Runtime.Remoting.Channels.IClientChannelSink sink, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Channels.ClientChannelSinkStack.Push(System.Runtime.Remoting.Channels.IClientChannelSink,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Push (sink As IClientChannelSink, state As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Push : System.Runtime.Remoting.Channels.IClientChannelSink * obj -&gt; unit&#xA;override this.Push : System.Runtime.Remoting.Channels.IClientChannelSink * obj -&gt; unit" Usage="clientChannelSinkStack.Push (sink, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Push(System::Runtime::Remoting::Channels::IClientChannelSink ^ sink, System::Object ^ state);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Channels.IClientChannelSinkStack.Push(System.Runtime.Remoting.Channels.IClientChannelSink,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -213,15 +260,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Channels.ClientChannelSinkStack" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

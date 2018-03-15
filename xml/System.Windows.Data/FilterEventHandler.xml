@@ -1,7 +1,10 @@
-<Type Name="FilterEventHandler" FullName="System.Windows.Data.FilterEventHandler">
+﻿<Type Name="FilterEventHandler" FullName="System.Windows.Data.FilterEventHandler">
   <TypeSignature Language="C#" Value="public delegate void FilterEventHandler(object sender, FilterEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FilterEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Data.FilterEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub FilterEventHandler(sender As Object, e As FilterEventArgs)" />
+  <TypeSignature Language="F#" Value="type FilterEventHandler = delegate of obj * FilterEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void FilterEventHandler(System::Object ^ sender, FilterEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

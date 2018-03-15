@@ -1,7 +1,10 @@
-<Type Name="PolicyStatementAttribute" FullName="System.Security.Policy.PolicyStatementAttribute">
+﻿<Type Name="PolicyStatementAttribute" FullName="System.Security.Policy.PolicyStatementAttribute">
   <TypeSignature Language="C#" Value="public enum PolicyStatementAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PolicyStatementAttribute extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.PolicyStatementAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PolicyStatementAttribute" />
+  <TypeSignature Language="F#" Value="type PolicyStatementAttribute = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PolicyStatementAttribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Policy.PolicyStatementAttribute All = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.PolicyStatementAttribute.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="F#" Value="All = 3" Usage="System.Security.Policy.PolicyStatementAttribute.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -51,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Policy.PolicyStatementAttribute</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>All attribute flags are set.</summary>
       </Docs>
@@ -59,6 +66,9 @@
       <MemberSignature Language="C#" Value="Exclusive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Policy.PolicyStatementAttribute Exclusive = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.PolicyStatementAttribute.Exclusive" />
+      <MemberSignature Language="VB.NET" Value="Exclusive" />
+      <MemberSignature Language="F#" Value="Exclusive = 1" Usage="System.Security.Policy.PolicyStatementAttribute.Exclusive" />
+      <MemberSignature Language="C++ CLI" Value="Exclusive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -72,6 +82,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Policy.PolicyStatementAttribute</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The exclusive code group flag. When a code group has this flag set, only the permissions associated with that code group are granted to code belonging to the code group. At most, one code group matching a given piece of code can be set as exclusive.</summary>
       </Docs>
@@ -80,6 +91,9 @@
       <MemberSignature Language="C#" Value="LevelFinal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Policy.PolicyStatementAttribute LevelFinal = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.PolicyStatementAttribute.LevelFinal" />
+      <MemberSignature Language="VB.NET" Value="LevelFinal" />
+      <MemberSignature Language="F#" Value="LevelFinal = 2" Usage="System.Security.Policy.PolicyStatementAttribute.LevelFinal" />
+      <MemberSignature Language="C++ CLI" Value="LevelFinal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -93,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Policy.PolicyStatementAttribute</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The flag representing a policy statement that causes lower policy levels to not be evaluated as part of the resolve operation, effectively allowing the policy level to override lower levels.</summary>
       </Docs>
@@ -101,6 +116,9 @@
       <MemberSignature Language="C#" Value="Nothing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Policy.PolicyStatementAttribute Nothing = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Policy.PolicyStatementAttribute.Nothing" />
+      <MemberSignature Language="VB.NET" Value="Nothing" />
+      <MemberSignature Language="F#" Value="Nothing = 0" Usage="System.Security.Policy.PolicyStatementAttribute.Nothing" />
+      <MemberSignature Language="C++ CLI" Value="Nothing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -114,6 +132,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Policy.PolicyStatementAttribute</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No flags are set.</summary>
       </Docs>

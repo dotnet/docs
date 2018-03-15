@@ -1,7 +1,10 @@
-<Type Name="Namespace" FullName="Microsoft.JScript.Namespace">
+﻿<Type Name="Namespace" FullName="Microsoft.JScript.Namespace">
   <TypeSignature Language="C#" Value="public sealed class Namespace" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Namespace extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.Namespace" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Namespace" />
+  <TypeSignature Language="F#" Value="type Namespace = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Namespace sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="public static Microsoft.JScript.Namespace GetNamespace (string name, Microsoft.JScript.Vsa.VsaEngine engine);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class Microsoft.JScript.Namespace GetNamespace(string name, class Microsoft.JScript.Vsa.VsaEngine engine) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.Namespace.GetNamespace(System.String,Microsoft.JScript.Vsa.VsaEngine)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetNamespace (name As String, engine As VsaEngine) As Namespace" />
+      <MemberSignature Language="F#" Value="static member GetNamespace : string * Microsoft.JScript.Vsa.VsaEngine -&gt; Microsoft.JScript.Namespace" Usage="Microsoft.JScript.Namespace.GetNamespace (name, engine)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Microsoft::JScript::Namespace ^ GetNamespace(System::String ^ name, Microsoft::JScript::Vsa::VsaEngine ^ engine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="OracleDateTime" FullName="System.Data.OracleClient.OracleDateTime">
+﻿<Type Name="OracleDateTime" FullName="System.Data.OracleClient.OracleDateTime">
   <TypeSignature Language="C#" Value="public struct OracleDateTime : IComparable, System.Data.SqlTypes.INullable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit OracleDateTime extends System.ValueType implements class System.Data.SqlTypes.INullable, class System.IComparable" />
   <TypeSignature Language="DocId" Value="T:System.Data.OracleClient.OracleDateTime" />
+  <TypeSignature Language="VB.NET" Value="Public Structure OracleDateTime&#xA;Implements IComparable, INullable" />
+  <TypeSignature Language="F#" Value="type OracleDateTime = struct&#xA;    interface INullable" />
+  <TypeSignature Language="C++ CLI" Value="public value class OracleDateTime : IComparable, System::Data::SqlTypes::INullable" />
   <AssemblyInfo>
     <AssemblyName>System.Data.OracleClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +34,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OracleDateTime (System.Data.OracleClient.OracleDateTime from);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Data.OracleClient.OracleDateTime from) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.#ctor(System.Data.OracleClient.OracleDateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (from As OracleDateTime)" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleDateTime : System.Data.OracleClient.OracleDateTime -&gt; System.Data.OracleClient.OracleDateTime" Usage="new System.Data.OracleClient.OracleDateTime from" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleDateTime(System::Data::OracleClient::OracleDateTime from);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -53,6 +68,9 @@
       <MemberSignature Language="C#" Value="public OracleDateTime (DateTime dt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.DateTime dt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.#ctor(System.DateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dt As DateTime)" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleDateTime : DateTime -&gt; System.Data.OracleClient.OracleDateTime" Usage="new System.Data.OracleClient.OracleDateTime dt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleDateTime(DateTime dt);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -71,6 +89,9 @@
       <MemberSignature Language="C#" Value="public OracleDateTime (long ticks);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int64 ticks) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.#ctor(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (ticks As Long)" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleDateTime : int64 -&gt; System.Data.OracleClient.OracleDateTime" Usage="new System.Data.OracleClient.OracleDateTime ticks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleDateTime(long ticks);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -89,6 +110,9 @@
       <MemberSignature Language="C#" Value="public OracleDateTime (int year, int month, int day);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 year, int32 month, int32 day) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.#ctor(System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (year As Integer, month As Integer, day As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleDateTime : int * int * int -&gt; System.Data.OracleClient.OracleDateTime" Usage="new System.Data.OracleClient.OracleDateTime (year, month, day)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleDateTime(int year, int month, int day);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -111,6 +135,8 @@
       <MemberSignature Language="C#" Value="public OracleDateTime (int year, int month, int day, System.Globalization.Calendar calendar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 year, int32 month, int32 day, class System.Globalization.Calendar calendar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Globalization.Calendar)" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleDateTime : int * int * int * System.Globalization.Calendar -&gt; System.Data.OracleClient.OracleDateTime" Usage="new System.Data.OracleClient.OracleDateTime (year, month, day, calendar)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleDateTime(int year, int month, int day, System::Globalization::Calendar ^ calendar);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -135,6 +161,9 @@
       <MemberSignature Language="C#" Value="public OracleDateTime (int year, int month, int day, int hour, int minute, int second);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 year, int32 month, int32 day, int32 hour, int32 minute, int32 second) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleDateTime : int * int * int * int * int * int -&gt; System.Data.OracleClient.OracleDateTime" Usage="new System.Data.OracleClient.OracleDateTime (year, month, day, hour, minute, second)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleDateTime(int year, int month, int day, int hour, int minute, int second);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -163,6 +192,8 @@
       <MemberSignature Language="C#" Value="public OracleDateTime (int year, int month, int day, int hour, int minute, int second, System.Globalization.Calendar calendar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 year, int32 month, int32 day, int32 hour, int32 minute, int32 second, class System.Globalization.Calendar calendar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Globalization.Calendar)" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleDateTime : int * int * int * int * int * int * System.Globalization.Calendar -&gt; System.Data.OracleClient.OracleDateTime" Usage="new System.Data.OracleClient.OracleDateTime (year, month, day, hour, minute, second, calendar)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleDateTime(int year, int month, int day, int hour, int minute, int second, System::Globalization::Calendar ^ calendar);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -193,6 +224,9 @@
       <MemberSignature Language="C#" Value="public OracleDateTime (int year, int month, int day, int hour, int minute, int second, int millisecond);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 year, int32 month, int32 day, int32 hour, int32 minute, int32 second, int32 millisecond) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (year As Integer, month As Integer, day As Integer, hour As Integer, minute As Integer, second As Integer, millisecond As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleDateTime : int * int * int * int * int * int * int -&gt; System.Data.OracleClient.OracleDateTime" Usage="new System.Data.OracleClient.OracleDateTime (year, month, day, hour, minute, second, millisecond)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleDateTime(int year, int month, int day, int hour, int minute, int second, int millisecond);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -223,6 +257,8 @@
       <MemberSignature Language="C#" Value="public OracleDateTime (int year, int month, int day, int hour, int minute, int second, int millisecond, System.Globalization.Calendar calendar);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 year, int32 month, int32 day, int32 hour, int32 minute, int32 second, int32 millisecond, class System.Globalization.Calendar calendar) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Globalization.Calendar)" />
+      <MemberSignature Language="F#" Value="new System.Data.OracleClient.OracleDateTime : int * int * int * int * int * int * int * System.Globalization.Calendar -&gt; System.Data.OracleClient.OracleDateTime" Usage="new System.Data.OracleClient.OracleDateTime (year, month, day, hour, minute, second, millisecond, calendar)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OracleDateTime(int year, int month, int day, int hour, int minute, int second, int millisecond, System::Globalization::Calendar ^ calendar);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -255,7 +291,13 @@
       <MemberSignature Language="C#" Value="public int CompareTo (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.CompareTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (obj As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="oracleDateTime.CompareTo obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -297,6 +339,9 @@
       <MemberSignature Language="C#" Value="public int Day { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Day" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDateTime.Day" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Day As Integer" />
+      <MemberSignature Language="F#" Value="member this.Day : int" Usage="System.Data.OracleClient.OracleDateTime.Day" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Day { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -311,10 +356,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the supplied object parameter to the <see cref="P:System.Data.OracleClient.OracleDateTime.Value" /> property of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="oracleDateTime.Equals value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -338,6 +395,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean Equals (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean Equals(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.Equals(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals (x As OracleDateTime, y As OracleDateTime) As OracleBoolean" />
+      <MemberSignature Language="F#" Value="static member Equals : System.Data.OracleClient.OracleDateTime * System.Data.OracleClient.OracleDateTime -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleDateTime.Equals (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean Equals(System::Data::OracleClient::OracleDateTime x, System::Data::OracleClient::OracleDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -363,6 +423,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="oracleDateTime.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -382,6 +445,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean GreaterThan (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean GreaterThan(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.GreaterThan(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThan (x As OracleDateTime, y As OracleDateTime) As OracleBoolean" />
+      <MemberSignature Language="F#" Value="static member GreaterThan : System.Data.OracleClient.OracleDateTime * System.Data.OracleClient.OracleDateTime -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleDateTime.GreaterThan (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean GreaterThan(System::Data::OracleClient::OracleDateTime x, System::Data::OracleClient::OracleDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -406,6 +472,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean GreaterThanOrEqual (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean GreaterThanOrEqual(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.GreaterThanOrEqual(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GreaterThanOrEqual (x As OracleDateTime, y As OracleDateTime) As OracleBoolean" />
+      <MemberSignature Language="F#" Value="static member GreaterThanOrEqual : System.Data.OracleClient.OracleDateTime * System.Data.OracleClient.OracleDateTime -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleDateTime.GreaterThanOrEqual (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean GreaterThanOrEqual(System::Data::OracleClient::OracleDateTime x, System::Data::OracleClient::OracleDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -430,6 +499,9 @@
       <MemberSignature Language="C#" Value="public int Hour { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Hour" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDateTime.Hour" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Hour As Integer" />
+      <MemberSignature Language="F#" Value="member this.Hour : int" Usage="System.Data.OracleClient.OracleDateTime.Hour" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Hour { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -448,7 +520,13 @@
       <MemberSignature Language="C#" Value="public bool IsNull { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNull" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDateTime.IsNull" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNull As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNull : bool" Usage="System.Data.OracleClient.OracleDateTime.IsNull" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNull { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.SqlTypes.INullable.IsNull</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -467,6 +545,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean LessThan (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean LessThan(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.LessThan(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LessThan (x As OracleDateTime, y As OracleDateTime) As OracleBoolean" />
+      <MemberSignature Language="F#" Value="static member LessThan : System.Data.OracleClient.OracleDateTime * System.Data.OracleClient.OracleDateTime -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleDateTime.LessThan (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean LessThan(System::Data::OracleClient::OracleDateTime x, System::Data::OracleClient::OracleDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -491,6 +572,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean LessThanOrEqual (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean LessThanOrEqual(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.LessThanOrEqual(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LessThanOrEqual (x As OracleDateTime, y As OracleDateTime) As OracleBoolean" />
+      <MemberSignature Language="F#" Value="static member LessThanOrEqual : System.Data.OracleClient.OracleDateTime * System.Data.OracleClient.OracleDateTime -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleDateTime.LessThanOrEqual (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean LessThanOrEqual(System::Data::OracleClient::OracleDateTime x, System::Data::OracleClient::OracleDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -515,6 +599,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleDateTime MaxValue;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleDateTime MaxValue" />
       <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleDateTime.MaxValue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxValue As OracleDateTime " />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxValue : System.Data.OracleClient.OracleDateTime" Usage="System.Data.OracleClient.OracleDateTime.MaxValue" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::OracleClient::OracleDateTime MaxValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -539,6 +626,9 @@
       <MemberSignature Language="C#" Value="public int Millisecond { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Millisecond" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDateTime.Millisecond" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Millisecond As Integer" />
+      <MemberSignature Language="F#" Value="member this.Millisecond : int" Usage="System.Data.OracleClient.OracleDateTime.Millisecond" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Millisecond { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -557,6 +647,9 @@
       <MemberSignature Language="C#" Value="public int Minute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Minute" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDateTime.Minute" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Minute As Integer" />
+      <MemberSignature Language="F#" Value="member this.Minute : int" Usage="System.Data.OracleClient.OracleDateTime.Minute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Minute { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -575,6 +668,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleDateTime MinValue;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleDateTime MinValue" />
       <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleDateTime.MinValue" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinValue As OracleDateTime " />
+      <MemberSignature Language="F#" Value=" staticval mutable MinValue : System.Data.OracleClient.OracleDateTime" Usage="System.Data.OracleClient.OracleDateTime.MinValue" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::OracleClient::OracleDateTime MinValue;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -599,6 +695,9 @@
       <MemberSignature Language="C#" Value="public int Month { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Month" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDateTime.Month" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Month As Integer" />
+      <MemberSignature Language="F#" Value="member this.Month : int" Usage="System.Data.OracleClient.OracleDateTime.Month" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Month { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -617,6 +716,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean NotEquals (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleBoolean NotEquals(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.NotEquals(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NotEquals (x As OracleDateTime, y As OracleDateTime) As OracleBoolean" />
+      <MemberSignature Language="F#" Value="static member NotEquals : System.Data.OracleClient.OracleDateTime * System.Data.OracleClient.OracleDateTime -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleDateTime.NotEquals (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean NotEquals(System::Data::OracleClient::OracleDateTime x, System::Data::OracleClient::OracleDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -641,6 +743,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Data.OracleClient.OracleDateTime Null;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly valuetype System.Data.OracleClient.OracleDateTime Null" />
       <MemberSignature Language="DocId" Value="F:System.Data.OracleClient.OracleDateTime.Null" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Null As OracleDateTime " />
+      <MemberSignature Language="F#" Value=" staticval mutable Null : System.Data.OracleClient.OracleDateTime" Usage="System.Data.OracleClient.OracleDateTime.Null" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Data::OracleClient::OracleDateTime Null;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -665,6 +770,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator == (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Equality(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_Equality(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (x As OracleDateTime, y As OracleDateTime) As OracleBoolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Data.OracleClient.OracleDateTime * System.Data.OracleClient.OracleDateTime -&gt; System.Data.OracleClient.OracleBoolean" Usage="x = y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator ==(System::Data::OracleClient::OracleDateTime x, System::Data::OracleClient::OracleDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -688,10 +796,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Explicit">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.OracleClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Used for explicit <see cref="T:System.Data.OracleClient.OracleDateTime" /> conversion.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Explicit">
       <MemberSignature Language="C#" Value="public static explicit operator DateTime (System.Data.OracleClient.OracleDateTime x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.DateTime op_Explicit(valuetype System.Data.OracleClient.OracleDateTime x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_Explicit(System.Data.OracleClient.OracleDateTime)~System.DateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As OracleDateTime) As DateTime" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : System.Data.OracleClient.OracleDateTime -&gt; DateTime" Usage="System.Data.OracleClient.OracleDateTime.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator DateTime(System::Data::OracleClient::OracleDateTime x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -714,6 +834,9 @@
       <MemberSignature Language="C#" Value="public static explicit operator System.Data.OracleClient.OracleDateTime (string x);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleDateTime op_Explicit(string x) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_Explicit(System.String)~System.Data.OracleClient.OracleDateTime" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Narrowing Operator CType (x As String) As OracleDateTime" />
+      <MemberSignature Language="F#" Value="static member op_Explicit : string -&gt; System.Data.OracleClient.OracleDateTime" Usage="System.Data.OracleClient.OracleDateTime.op_Explicit x" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static explicit operator System::Data::OracleClient::OracleDateTime(System::String ^ x);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -736,6 +859,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &gt; (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThan(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_GreaterThan(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt; (x As OracleDateTime, y As OracleDateTime) As OracleBoolean" />
+      <MemberSignature Language="F#" Value="static member ( &gt; ) : System.Data.OracleClient.OracleDateTime * System.Data.OracleClient.OracleDateTime -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &gt; y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &gt;(System::Data::OracleClient::OracleDateTime x, System::Data::OracleClient::OracleDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -762,6 +888,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &gt;= (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_GreaterThanOrEqual(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_GreaterThanOrEqual(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;= (x As OracleDateTime, y As OracleDateTime) As OracleBoolean" />
+      <MemberSignature Language="F#" Value="static member ( &gt;= ) : System.Data.OracleClient.OracleDateTime * System.Data.OracleClient.OracleDateTime -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &gt;= y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &gt;=(System::Data::OracleClient::OracleDateTime x, System::Data::OracleClient::OracleDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -788,6 +917,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator != (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_Inequality(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_Inequality(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (x As OracleDateTime, y As OracleDateTime) As OracleBoolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Data.OracleClient.OracleDateTime * System.Data.OracleClient.OracleDateTime -&gt; System.Data.OracleClient.OracleBoolean" Usage="System.Data.OracleClient.OracleDateTime.op_Inequality (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator !=(System::Data::OracleClient::OracleDateTime x, System::Data::OracleClient::OracleDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -814,6 +946,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &lt; (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThan(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_LessThan(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt; (x As OracleDateTime, y As OracleDateTime) As OracleBoolean" />
+      <MemberSignature Language="F#" Value="static member ( &lt; ) : System.Data.OracleClient.OracleDateTime * System.Data.OracleClient.OracleDateTime -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &lt; y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &lt;(System::Data::OracleClient::OracleDateTime x, System::Data::OracleClient::OracleDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -840,6 +975,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleBoolean operator &lt;= (System.Data.OracleClient.OracleDateTime x, System.Data.OracleClient.OracleDateTime y);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Data.OracleClient.OracleBoolean op_LessThanOrEqual(valuetype System.Data.OracleClient.OracleDateTime x, valuetype System.Data.OracleClient.OracleDateTime y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.op_LessThanOrEqual(System.Data.OracleClient.OracleDateTime,System.Data.OracleClient.OracleDateTime)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;= (x As OracleDateTime, y As OracleDateTime) As OracleBoolean" />
+      <MemberSignature Language="F#" Value="static member ( &lt;= ) : System.Data.OracleClient.OracleDateTime * System.Data.OracleClient.OracleDateTime -&gt; System.Data.OracleClient.OracleBoolean" Usage="x &lt;= y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleBoolean operator &lt;=(System::Data::OracleClient::OracleDateTime x, System::Data::OracleClient::OracleDateTime y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -866,6 +1004,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.OracleClient.OracleDateTime Parse (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Data.OracleClient.OracleDateTime Parse(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (s As String) As OracleDateTime" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Data.OracleClient.OracleDateTime" Usage="System.Data.OracleClient.OracleDateTime.Parse s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::OracleClient::OracleDateTime Parse(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -888,6 +1029,9 @@
       <MemberSignature Language="C#" Value="public int Second { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Second" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDateTime.Second" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Second As Integer" />
+      <MemberSignature Language="F#" Value="member this.Second : int" Usage="System.Data.OracleClient.OracleDateTime.Second" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Second { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -906,6 +1050,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.OracleClient.OracleDateTime.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="oracleDateTime.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -925,6 +1072,9 @@
       <MemberSignature Language="C#" Value="public DateTime Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Value" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDateTime.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As DateTime" />
+      <MemberSignature Language="F#" Value="member this.Value : DateTime" Usage="System.Data.OracleClient.OracleDateTime.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Value { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -943,6 +1093,9 @@
       <MemberSignature Language="C#" Value="public int Year { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Year" />
       <MemberSignature Language="DocId" Value="P:System.Data.OracleClient.OracleDateTime.Year" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Year As Integer" />
+      <MemberSignature Language="F#" Value="member this.Year : int" Usage="System.Data.OracleClient.OracleDateTime.Year" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Year { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.OracleClient</AssemblyName>
@@ -957,32 +1110,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares the supplied object parameter to the <see cref="P:System.Data.OracleClient.OracleDateTime.Value" /> property of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> object.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="op_Explicit">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Used for explicit <see cref="T:System.Data.OracleClient.OracleDateTime" /> conversion.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.OracleClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.OracleClient.OracleDateTime" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

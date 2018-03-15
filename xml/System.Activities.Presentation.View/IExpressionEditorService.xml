@@ -1,7 +1,10 @@
-<Type Name="IExpressionEditorService" FullName="System.Activities.Presentation.View.IExpressionEditorService">
+﻿<Type Name="IExpressionEditorService" FullName="System.Activities.Presentation.View.IExpressionEditorService">
   <TypeSignature Language="C#" Value="public interface IExpressionEditorService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IExpressionEditorService" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.IExpressionEditorService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IExpressionEditorService" />
+  <TypeSignature Language="F#" Value="type IExpressionEditorService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IExpressionEditorService" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="public void CloseExpressionEditors ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CloseExpressionEditors() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorService.CloseExpressionEditors" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CloseExpressionEditors ()" />
+      <MemberSignature Language="F#" Value="abstract member CloseExpressionEditors : unit -&gt; unit" Usage="iExpressionEditorService.CloseExpressionEditors " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CloseExpressionEditors();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -49,10 +55,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateExpressionEditor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new expression editor.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateExpressionEditor">
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.View.IExpressionEditorInstance CreateExpressionEditor (System.Activities.Presentation.Hosting.AssemblyContextControlItem assemblies, System.Activities.Presentation.Hosting.ImportedNamespaceContextItem importedNamespaces, System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; variables, string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Presentation.View.IExpressionEditorInstance CreateExpressionEditor(class System.Activities.Presentation.Hosting.AssemblyContextControlItem assemblies, class System.Activities.Presentation.Hosting.ImportedNamespaceContextItem importedNamespaces, class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; variables, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor(System.Activities.Presentation.Hosting.AssemblyContextControlItem,System.Activities.Presentation.Hosting.ImportedNamespaceContextItem,System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateExpressionEditor (assemblies As AssemblyContextControlItem, importedNamespaces As ImportedNamespaceContextItem, variables As List(Of ModelItem), text As String) As IExpressionEditorInstance" />
+      <MemberSignature Language="F#" Value="abstract member CreateExpressionEditor : System.Activities.Presentation.Hosting.AssemblyContextControlItem * System.Activities.Presentation.Hosting.ImportedNamespaceContextItem * System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; * string -&gt; System.Activities.Presentation.View.IExpressionEditorInstance" Usage="iExpressionEditorService.CreateExpressionEditor (assemblies, importedNamespaces, variables, text)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Presentation::View::IExpressionEditorInstance ^ CreateExpressionEditor(System::Activities::Presentation::Hosting::AssemblyContextControlItem ^ assemblies, System::Activities::Presentation::Hosting::ImportedNamespaceContextItem ^ importedNamespaces, System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ variables, System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -81,6 +99,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.View.IExpressionEditorInstance CreateExpressionEditor (System.Activities.Presentation.Hosting.AssemblyContextControlItem assemblies, System.Activities.Presentation.Hosting.ImportedNamespaceContextItem importedNamespaces, System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; variables, string text, Type expressionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Presentation.View.IExpressionEditorInstance CreateExpressionEditor(class System.Activities.Presentation.Hosting.AssemblyContextControlItem assemblies, class System.Activities.Presentation.Hosting.ImportedNamespaceContextItem importedNamespaces, class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; variables, string text, class System.Type expressionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor(System.Activities.Presentation.Hosting.AssemblyContextControlItem,System.Activities.Presentation.Hosting.ImportedNamespaceContextItem,System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem},System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateExpressionEditor (assemblies As AssemblyContextControlItem, importedNamespaces As ImportedNamespaceContextItem, variables As List(Of ModelItem), text As String, expressionType As Type) As IExpressionEditorInstance" />
+      <MemberSignature Language="F#" Value="abstract member CreateExpressionEditor : System.Activities.Presentation.Hosting.AssemblyContextControlItem * System.Activities.Presentation.Hosting.ImportedNamespaceContextItem * System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; * string * Type -&gt; System.Activities.Presentation.View.IExpressionEditorInstance" Usage="iExpressionEditorService.CreateExpressionEditor (assemblies, importedNamespaces, variables, text, expressionType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Presentation::View::IExpressionEditorInstance ^ CreateExpressionEditor(System::Activities::Presentation::Hosting::AssemblyContextControlItem ^ assemblies, System::Activities::Presentation::Hosting::ImportedNamespaceContextItem ^ importedNamespaces, System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ variables, System::String ^ text, Type ^ expressionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -111,6 +132,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.View.IExpressionEditorInstance CreateExpressionEditor (System.Activities.Presentation.Hosting.AssemblyContextControlItem assemblies, System.Activities.Presentation.Hosting.ImportedNamespaceContextItem importedNamespaces, System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; variables, string text, System.Windows.Size initialSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Presentation.View.IExpressionEditorInstance CreateExpressionEditor(class System.Activities.Presentation.Hosting.AssemblyContextControlItem assemblies, class System.Activities.Presentation.Hosting.ImportedNamespaceContextItem importedNamespaces, class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; variables, string text, valuetype System.Windows.Size initialSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor(System.Activities.Presentation.Hosting.AssemblyContextControlItem,System.Activities.Presentation.Hosting.ImportedNamespaceContextItem,System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem},System.String,System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateExpressionEditor (assemblies As AssemblyContextControlItem, importedNamespaces As ImportedNamespaceContextItem, variables As List(Of ModelItem), text As String, initialSize As Size) As IExpressionEditorInstance" />
+      <MemberSignature Language="F#" Value="abstract member CreateExpressionEditor : System.Activities.Presentation.Hosting.AssemblyContextControlItem * System.Activities.Presentation.Hosting.ImportedNamespaceContextItem * System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; * string * System.Windows.Size -&gt; System.Activities.Presentation.View.IExpressionEditorInstance" Usage="iExpressionEditorService.CreateExpressionEditor (assemblies, importedNamespaces, variables, text, initialSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Presentation::View::IExpressionEditorInstance ^ CreateExpressionEditor(System::Activities::Presentation::Hosting::AssemblyContextControlItem ^ assemblies, System::Activities::Presentation::Hosting::ImportedNamespaceContextItem ^ importedNamespaces, System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ variables, System::String ^ text, System::Windows::Size initialSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -141,6 +165,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.View.IExpressionEditorInstance CreateExpressionEditor (System.Activities.Presentation.Hosting.AssemblyContextControlItem assemblies, System.Activities.Presentation.Hosting.ImportedNamespaceContextItem importedNamespaces, System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; variables, string text, Type expressionType, System.Windows.Size initialSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Activities.Presentation.View.IExpressionEditorInstance CreateExpressionEditor(class System.Activities.Presentation.Hosting.AssemblyContextControlItem assemblies, class System.Activities.Presentation.Hosting.ImportedNamespaceContextItem importedNamespaces, class System.Collections.Generic.List`1&lt;class System.Activities.Presentation.Model.ModelItem&gt; variables, string text, class System.Type expressionType, valuetype System.Windows.Size initialSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorService.CreateExpressionEditor(System.Activities.Presentation.Hosting.AssemblyContextControlItem,System.Activities.Presentation.Hosting.ImportedNamespaceContextItem,System.Collections.Generic.List{System.Activities.Presentation.Model.ModelItem},System.String,System.Type,System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateExpressionEditor (assemblies As AssemblyContextControlItem, importedNamespaces As ImportedNamespaceContextItem, variables As List(Of ModelItem), text As String, expressionType As Type, initialSize As Size) As IExpressionEditorInstance" />
+      <MemberSignature Language="F#" Value="abstract member CreateExpressionEditor : System.Activities.Presentation.Hosting.AssemblyContextControlItem * System.Activities.Presentation.Hosting.ImportedNamespaceContextItem * System.Collections.Generic.List&lt;System.Activities.Presentation.Model.ModelItem&gt; * string * Type * System.Windows.Size -&gt; System.Activities.Presentation.View.IExpressionEditorInstance" Usage="iExpressionEditorService.CreateExpressionEditor (assemblies, importedNamespaces, variables, text, expressionType, initialSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Presentation::View::IExpressionEditorInstance ^ CreateExpressionEditor(System::Activities::Presentation::Hosting::AssemblyContextControlItem ^ assemblies, System::Activities::Presentation::Hosting::ImportedNamespaceContextItem ^ importedNamespaces, System::Collections::Generic::List&lt;System::Activities::Presentation::Model::ModelItem ^&gt; ^ variables, System::String ^ text, Type ^ expressionType, System::Windows::Size initialSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -173,6 +200,9 @@
       <MemberSignature Language="C#" Value="public void UpdateContext (System.Activities.Presentation.Hosting.AssemblyContextControlItem assemblies, System.Activities.Presentation.Hosting.ImportedNamespaceContextItem importedNamespaces);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UpdateContext(class System.Activities.Presentation.Hosting.AssemblyContextControlItem assemblies, class System.Activities.Presentation.Hosting.ImportedNamespaceContextItem importedNamespaces) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.IExpressionEditorService.UpdateContext(System.Activities.Presentation.Hosting.AssemblyContextControlItem,System.Activities.Presentation.Hosting.ImportedNamespaceContextItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateContext (assemblies As AssemblyContextControlItem, importedNamespaces As ImportedNamespaceContextItem)" />
+      <MemberSignature Language="F#" Value="abstract member UpdateContext : System.Activities.Presentation.Hosting.AssemblyContextControlItem * System.Activities.Presentation.Hosting.ImportedNamespaceContextItem -&gt; unit" Usage="iExpressionEditorService.UpdateContext (assemblies, importedNamespaces)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateContext(System::Activities::Presentation::Hosting::AssemblyContextControlItem ^ assemblies, System::Activities::Presentation::Hosting::ImportedNamespaceContextItem ^ importedNamespaces);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -192,14 +222,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateExpressionEditor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new expression editor.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

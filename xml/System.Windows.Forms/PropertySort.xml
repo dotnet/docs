@@ -1,7 +1,10 @@
-<Type Name="PropertySort" FullName="System.Windows.Forms.PropertySort">
+﻿<Type Name="PropertySort" FullName="System.Windows.Forms.PropertySort">
   <TypeSignature Language="C#" Value="public enum PropertySort" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertySort extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertySort" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PropertySort" />
+  <TypeSignature Language="F#" Value="type PropertySort = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PropertySort" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="Alphabetical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PropertySort Alphabetical = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PropertySort.Alphabetical" />
+      <MemberSignature Language="VB.NET" Value="Alphabetical" />
+      <MemberSignature Language="F#" Value="Alphabetical = 1" Usage="System.Windows.Forms.PropertySort.Alphabetical" />
+      <MemberSignature Language="C++ CLI" Value="Alphabetical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -38,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PropertySort</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Properties are sorted in an alphabetical list.</summary>
       </Docs>
@@ -46,6 +53,9 @@
       <MemberSignature Language="C#" Value="Categorized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PropertySort Categorized = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PropertySort.Categorized" />
+      <MemberSignature Language="VB.NET" Value="Categorized" />
+      <MemberSignature Language="F#" Value="Categorized = 2" Usage="System.Windows.Forms.PropertySort.Categorized" />
+      <MemberSignature Language="C++ CLI" Value="Categorized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -54,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PropertySort</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Properties are displayed according to their category in a group. The categories are defined by the properties themselves.</summary>
       </Docs>
@@ -62,6 +73,9 @@
       <MemberSignature Language="C#" Value="CategorizedAlphabetical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PropertySort CategorizedAlphabetical = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PropertySort.CategorizedAlphabetical" />
+      <MemberSignature Language="VB.NET" Value="CategorizedAlphabetical" />
+      <MemberSignature Language="F#" Value="CategorizedAlphabetical = 3" Usage="System.Windows.Forms.PropertySort.CategorizedAlphabetical" />
+      <MemberSignature Language="C++ CLI" Value="CategorizedAlphabetical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -70,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PropertySort</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Properties are displayed according to their category in a group. The properties are further sorted alphabetically within the group. The categories are defined by the properties themselves.</summary>
       </Docs>
@@ -78,6 +93,9 @@
       <MemberSignature Language="C#" Value="NoSort" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.PropertySort NoSort = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.PropertySort.NoSort" />
+      <MemberSignature Language="VB.NET" Value="NoSort" />
+      <MemberSignature Language="F#" Value="NoSort = 0" Usage="System.Windows.Forms.PropertySort.NoSort" />
+      <MemberSignature Language="C++ CLI" Value="NoSort" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -86,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PropertySort</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Properties are displayed in the order in which they are retrieved from the <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
       </Docs>

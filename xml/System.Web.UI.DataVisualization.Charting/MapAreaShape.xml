@@ -1,7 +1,10 @@
-<Type Name="MapAreaShape" FullName="System.Web.UI.DataVisualization.Charting.MapAreaShape">
+﻿<Type Name="MapAreaShape" FullName="System.Web.UI.DataVisualization.Charting.MapAreaShape">
   <TypeSignature Language="C#" Value="public enum MapAreaShape" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MapAreaShape extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.MapAreaShape" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MapAreaShape" />
+  <TypeSignature Language="F#" Value="type MapAreaShape = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MapAreaShape" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Circle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.MapAreaShape Circle = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.MapAreaShape.Circle" />
+      <MemberSignature Language="VB.NET" Value="Circle" />
+      <MemberSignature Language="F#" Value="Circle = 1" Usage="System.Web.UI.DataVisualization.Charting.MapAreaShape.Circle" />
+      <MemberSignature Language="C++ CLI" Value="Circle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.MapAreaShape</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The shape of the map area is circular.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Polygon" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.MapAreaShape Polygon = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.MapAreaShape.Polygon" />
+      <MemberSignature Language="VB.NET" Value="Polygon" />
+      <MemberSignature Language="F#" Value="Polygon = 2" Usage="System.Web.UI.DataVisualization.Charting.MapAreaShape.Polygon" />
+      <MemberSignature Language="C++ CLI" Value="Polygon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.MapAreaShape</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The shape of the map area is polygonal.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="Rectangle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.MapAreaShape Rectangle = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.MapAreaShape.Rectangle" />
+      <MemberSignature Language="VB.NET" Value="Rectangle" />
+      <MemberSignature Language="F#" Value="Rectangle = 0" Usage="System.Web.UI.DataVisualization.Charting.MapAreaShape.Rectangle" />
+      <MemberSignature Language="C++ CLI" Value="Rectangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.MapAreaShape</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The shape of the map area is rectangular.</summary>
       </Docs>

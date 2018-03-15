@@ -1,7 +1,10 @@
-<Type Name="ServiceControllerPermissionEntry" FullName="System.ServiceProcess.ServiceControllerPermissionEntry">
+﻿<Type Name="ServiceControllerPermissionEntry" FullName="System.ServiceProcess.ServiceControllerPermissionEntry">
   <TypeSignature Language="C#" Value="public class ServiceControllerPermissionEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ServiceControllerPermissionEntry extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceProcess.ServiceControllerPermissionEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Class ServiceControllerPermissionEntry" />
+  <TypeSignature Language="F#" Value="type ServiceControllerPermissionEntry = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceControllerPermissionEntry" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceProcess</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,10 +30,21 @@
     <altmember cref="T:System.ServiceProcess.ServiceControllerPermissionEntryCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceProcess</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ServiceControllerPermissionEntry ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntry.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceControllerPermissionEntry();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -46,6 +60,9 @@
       <MemberSignature Language="C#" Value="public ServiceControllerPermissionEntry (System.ServiceProcess.ServiceControllerPermissionAccess permissionAccess, string machineName, string serviceName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.ServiceProcess.ServiceControllerPermissionAccess permissionAccess, string machineName, string serviceName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceProcess.ServiceControllerPermissionEntry.#ctor(System.ServiceProcess.ServiceControllerPermissionAccess,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccess As ServiceControllerPermissionAccess, machineName As String, serviceName As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceProcess.ServiceControllerPermissionEntry : System.ServiceProcess.ServiceControllerPermissionAccess * string * string -&gt; System.ServiceProcess.ServiceControllerPermissionEntry" Usage="new System.ServiceProcess.ServiceControllerPermissionEntry (permissionAccess, machineName, serviceName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ServiceControllerPermissionEntry(System::ServiceProcess::ServiceControllerPermissionAccess permissionAccess, System::String ^ machineName, System::String ^ serviceName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -76,6 +93,9 @@
       <MemberSignature Language="C#" Value="public string MachineName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MachineName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceControllerPermissionEntry.MachineName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MachineName As String" />
+      <MemberSignature Language="F#" Value="member this.MachineName : string" Usage="System.ServiceProcess.ServiceControllerPermissionEntry.MachineName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MachineName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -94,6 +114,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceProcess.ServiceControllerPermissionAccess PermissionAccess { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceProcess.ServiceControllerPermissionAccess PermissionAccess" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceControllerPermissionEntry.PermissionAccess" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionAccess As ServiceControllerPermissionAccess" />
+      <MemberSignature Language="F#" Value="member this.PermissionAccess : System.ServiceProcess.ServiceControllerPermissionAccess" Usage="System.ServiceProcess.ServiceControllerPermissionEntry.PermissionAccess" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceProcess::ServiceControllerPermissionAccess PermissionAccess { System::ServiceProcess::ServiceControllerPermissionAccess get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -112,6 +135,9 @@
       <MemberSignature Language="C#" Value="public string ServiceName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ServiceName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceProcess.ServiceControllerPermissionEntry.ServiceName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ServiceName As String" />
+      <MemberSignature Language="F#" Value="member this.ServiceName : string" Usage="System.ServiceProcess.ServiceControllerPermissionEntry.ServiceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ServiceName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceProcess</AssemblyName>
@@ -126,14 +152,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceProcess</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceProcess.ServiceControllerPermissionEntry" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

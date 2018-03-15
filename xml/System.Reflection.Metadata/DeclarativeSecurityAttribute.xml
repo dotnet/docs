@@ -1,7 +1,10 @@
-<Type Name="DeclarativeSecurityAttribute" FullName="System.Reflection.Metadata.DeclarativeSecurityAttribute">
+﻿<Type Name="DeclarativeSecurityAttribute" FullName="System.Reflection.Metadata.DeclarativeSecurityAttribute">
   <TypeSignature Language="C#" Value="public struct DeclarativeSecurityAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit DeclarativeSecurityAttribute extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.DeclarativeSecurityAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Structure DeclarativeSecurityAttribute" />
+  <TypeSignature Language="F#" Value="type DeclarativeSecurityAttribute = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class DeclarativeSecurityAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -21,6 +24,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.DeclarativeSecurityAction Action { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.DeclarativeSecurityAction Action" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.DeclarativeSecurityAttribute.Action" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Action As DeclarativeSecurityAction" />
+      <MemberSignature Language="F#" Value="member this.Action : System.Reflection.DeclarativeSecurityAction" Usage="System.Reflection.Metadata.DeclarativeSecurityAttribute.Action" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::DeclarativeSecurityAction Action { System::Reflection::DeclarativeSecurityAction get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -41,6 +47,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.EntityHandle Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.EntityHandle Parent" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.DeclarativeSecurityAttribute.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As EntityHandle" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Reflection.Metadata.EntityHandle" Usage="System.Reflection.Metadata.DeclarativeSecurityAttribute.Parent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::EntityHandle Parent { System::Reflection::Metadata::EntityHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -61,6 +70,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobHandle PermissionSet { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.Metadata.BlobHandle PermissionSet" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.DeclarativeSecurityAttribute.PermissionSet" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionSet As BlobHandle" />
+      <MemberSignature Language="F#" Value="member this.PermissionSet : System.Reflection.Metadata.BlobHandle" Usage="System.Reflection.Metadata.DeclarativeSecurityAttribute.PermissionSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobHandle PermissionSet { System::Reflection::Metadata::BlobHandle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

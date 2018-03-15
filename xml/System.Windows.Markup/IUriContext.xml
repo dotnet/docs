@@ -1,7 +1,10 @@
-<Type Name="IUriContext" FullName="System.Windows.Markup.IUriContext">
+﻿<Type Name="IUriContext" FullName="System.Windows.Markup.IUriContext">
   <TypeSignature Language="C#" Value="public interface IUriContext" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IUriContext" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.IUriContext" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IUriContext" />
+  <TypeSignature Language="F#" Value="type IUriContext = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IUriContext" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public Uri BaseUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseUri" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.IUriContext.BaseUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.Windows.Markup.IUriContext.BaseUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

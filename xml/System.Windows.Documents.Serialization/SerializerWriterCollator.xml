@@ -1,7 +1,10 @@
-<Type Name="SerializerWriterCollator" FullName="System.Windows.Documents.Serialization.SerializerWriterCollator">
+﻿<Type Name="SerializerWriterCollator" FullName="System.Windows.Documents.Serialization.SerializerWriterCollator">
   <TypeSignature Language="C#" Value="public abstract class SerializerWriterCollator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SerializerWriterCollator extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Documents.Serialization.SerializerWriterCollator" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SerializerWriterCollator" />
+  <TypeSignature Language="F#" Value="type SerializerWriterCollator = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SerializerWriterCollator abstract" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,8 @@
       <MemberSignature Language="C#" Value="protected SerializerWriterCollator ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerWriterCollator.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SerializerWriterCollator();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -44,6 +49,9 @@
       <MemberSignature Language="C#" Value="public abstract void BeginBatchWrite ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginBatchWrite() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerWriterCollator.BeginBatchWrite" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub BeginBatchWrite ()" />
+      <MemberSignature Language="F#" Value="abstract member BeginBatchWrite : unit -&gt; unit" Usage="serializerWriterCollator.BeginBatchWrite " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void BeginBatchWrite();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +71,9 @@
       <MemberSignature Language="C#" Value="public abstract void Cancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerWriterCollator.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Cancel ()" />
+      <MemberSignature Language="F#" Value="abstract member Cancel : unit -&gt; unit" Usage="serializerWriterCollator.Cancel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Cancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -82,6 +93,9 @@
       <MemberSignature Language="C#" Value="public abstract void CancelAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CancelAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerWriterCollator.CancelAsync" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub CancelAsync ()" />
+      <MemberSignature Language="F#" Value="abstract member CancelAsync : unit -&gt; unit" Usage="serializerWriterCollator.CancelAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void CancelAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -101,6 +115,9 @@
       <MemberSignature Language="C#" Value="public abstract void EndBatchWrite ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EndBatchWrite() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerWriterCollator.EndBatchWrite" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub EndBatchWrite ()" />
+      <MemberSignature Language="F#" Value="abstract member EndBatchWrite : unit -&gt; unit" Usage="serializerWriterCollator.EndBatchWrite " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void EndBatchWrite();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -139,6 +156,8 @@
       <MemberSignature Language="C#" Value="public abstract void Write (System.Windows.Media.Visual visual);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(class System.Windows.Media.Visual visual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerWriterCollator.Write(System.Windows.Media.Visual)" />
+      <MemberSignature Language="F#" Value="abstract member Write : System.Windows.Media.Visual -&gt; unit" Usage="serializerWriterCollator.Write visual" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Write(System::Windows::Media::Visual ^ visual);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -169,6 +188,8 @@
       <MemberSignature Language="C#" Value="public abstract void Write (System.Windows.Media.Visual visual, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Write(class System.Windows.Media.Visual visual, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerWriterCollator.Write(System.Windows.Media.Visual,System.Printing.PrintTicket)" />
+      <MemberSignature Language="F#" Value="abstract member Write : System.Windows.Media.Visual * System.Printing.PrintTicket -&gt; unit" Usage="serializerWriterCollator.Write (visual, printTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Write(System::Windows::Media::Visual ^ visual, System::Printing::PrintTicket ^ printTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -225,6 +246,8 @@
       <MemberSignature Language="C#" Value="public abstract void WriteAsync (System.Windows.Media.Visual visual);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteAsync(class System.Windows.Media.Visual visual) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerWriterCollator.WriteAsync(System.Windows.Media.Visual)" />
+      <MemberSignature Language="F#" Value="abstract member WriteAsync : System.Windows.Media.Visual -&gt; unit" Usage="serializerWriterCollator.WriteAsync visual" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteAsync(System::Windows::Media::Visual ^ visual);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -255,6 +278,8 @@
       <MemberSignature Language="C#" Value="public abstract void WriteAsync (System.Windows.Media.Visual visual, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteAsync(class System.Windows.Media.Visual visual, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerWriterCollator.WriteAsync(System.Windows.Media.Visual,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member WriteAsync : System.Windows.Media.Visual * obj -&gt; unit" Usage="serializerWriterCollator.WriteAsync (visual, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteAsync(System::Windows::Media::Visual ^ visual, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -289,6 +314,8 @@
       <MemberSignature Language="C#" Value="public abstract void WriteAsync (System.Windows.Media.Visual visual, System.Printing.PrintTicket printTicket);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteAsync(class System.Windows.Media.Visual visual, class System.Printing.PrintTicket printTicket) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerWriterCollator.WriteAsync(System.Windows.Media.Visual,System.Printing.PrintTicket)" />
+      <MemberSignature Language="F#" Value="abstract member WriteAsync : System.Windows.Media.Visual * System.Printing.PrintTicket -&gt; unit" Usage="serializerWriterCollator.WriteAsync (visual, printTicket)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteAsync(System::Windows::Media::Visual ^ visual, System::Printing::PrintTicket ^ printTicket);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -328,6 +355,8 @@
       <MemberSignature Language="C#" Value="public abstract void WriteAsync (System.Windows.Media.Visual visual, System.Printing.PrintTicket printTicket, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void WriteAsync(class System.Windows.Media.Visual visual, class System.Printing.PrintTicket printTicket, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Documents.Serialization.SerializerWriterCollator.WriteAsync(System.Windows.Media.Visual,System.Printing.PrintTicket,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member WriteAsync : System.Windows.Media.Visual * System.Printing.PrintTicket * obj -&gt; unit" Usage="serializerWriterCollator.WriteAsync (visual, printTicket, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void WriteAsync(System::Windows::Media::Visual ^ visual, System::Printing::PrintTicket ^ printTicket, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

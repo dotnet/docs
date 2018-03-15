@@ -1,7 +1,10 @@
-<Type Name="RecognizedWordUnit" FullName="System.Speech.Recognition.RecognizedWordUnit">
+﻿<Type Name="RecognizedWordUnit" FullName="System.Speech.Recognition.RecognizedWordUnit">
   <TypeSignature Language="C#" Value="public class RecognizedWordUnit" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RecognizedWordUnit extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.RecognizedWordUnit" />
+  <TypeSignature Language="VB.NET" Value="Public Class RecognizedWordUnit" />
+  <TypeSignature Language="F#" Value="type RecognizedWordUnit = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RecognizedWordUnit" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -107,6 +110,8 @@ internal static string stringFromWordArray(ReadOnlyCollection<RecognizedWordUnit
       <MemberSignature Language="C#" Value="public RecognizedWordUnit (string text, float confidence, string pronunciation, string lexicalForm, System.Speech.Recognition.DisplayAttributes displayAttributes, TimeSpan audioPosition, TimeSpan audioDuration);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string text, float32 confidence, string pronunciation, string lexicalForm, valuetype System.Speech.Recognition.DisplayAttributes displayAttributes, valuetype System.TimeSpan audioPosition, valuetype System.TimeSpan audioDuration) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.RecognizedWordUnit.#ctor(System.String,System.Single,System.String,System.String,System.Speech.Recognition.DisplayAttributes,System.TimeSpan,System.TimeSpan)" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.RecognizedWordUnit : string * single * string * string * System.Speech.Recognition.DisplayAttributes * TimeSpan * TimeSpan -&gt; System.Speech.Recognition.RecognizedWordUnit" Usage="new System.Speech.Recognition.RecognizedWordUnit (text, confidence, pronunciation, lexicalForm, displayAttributes, audioPosition, audioDuration)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RecognizedWordUnit(System::String ^ text, float confidence, System::String ^ pronunciation, System::String ^ lexicalForm, System::Speech::Recognition::DisplayAttributes displayAttributes, TimeSpan audioPosition, TimeSpan audioDuration);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -213,6 +218,9 @@ private void _emulateAndVerify_Click(object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public float Confidence { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Confidence" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedWordUnit.Confidence" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Confidence As Single" />
+      <MemberSignature Language="F#" Value="member this.Confidence : single" Usage="System.Speech.Recognition.RecognizedWordUnit.Confidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Confidence { float get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -244,6 +252,9 @@ private void _emulateAndVerify_Click(object sender, EventArgs e)
       <MemberSignature Language="C#" Value="public System.Speech.Recognition.DisplayAttributes DisplayAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Speech.Recognition.DisplayAttributes DisplayAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedWordUnit.DisplayAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayAttributes As DisplayAttributes" />
+      <MemberSignature Language="F#" Value="member this.DisplayAttributes : System.Speech.Recognition.DisplayAttributes" Usage="System.Speech.Recognition.RecognizedWordUnit.DisplayAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::DisplayAttributes DisplayAttributes { System::Speech::Recognition::DisplayAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -340,6 +351,9 @@ internal static string stringFromWordArray(
       <MemberSignature Language="C#" Value="public string LexicalForm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LexicalForm" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedWordUnit.LexicalForm" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LexicalForm As String" />
+      <MemberSignature Language="F#" Value="member this.LexicalForm : string" Usage="System.Speech.Recognition.RecognizedWordUnit.LexicalForm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LexicalForm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -436,6 +450,9 @@ internal static string stringFromWordArray(
       <MemberSignature Language="C#" Value="public string Pronunciation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Pronunciation" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedWordUnit.Pronunciation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pronunciation As String" />
+      <MemberSignature Language="F#" Value="member this.Pronunciation : string" Usage="System.Speech.Recognition.RecognizedWordUnit.Pronunciation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Pronunciation { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -531,6 +548,9 @@ internal static string stringFromWordArray(
       <MemberSignature Language="C#" Value="public string Text { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.RecognizedWordUnit.Text" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string" Usage="System.Speech.Recognition.RecognizedWordUnit.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

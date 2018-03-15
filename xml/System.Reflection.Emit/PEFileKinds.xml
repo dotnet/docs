@@ -1,7 +1,10 @@
-<Type Name="PEFileKinds" FullName="System.Reflection.Emit.PEFileKinds">
+﻿<Type Name="PEFileKinds" FullName="System.Reflection.Emit.PEFileKinds">
   <TypeSignature Language="C#" Value="public enum PEFileKinds" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PEFileKinds extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.PEFileKinds" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PEFileKinds" />
+  <TypeSignature Language="F#" Value="type PEFileKinds = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PEFileKinds" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="ConsoleApplication" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PEFileKinds ConsoleApplication = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PEFileKinds.ConsoleApplication" />
+      <MemberSignature Language="VB.NET" Value="ConsoleApplication" />
+      <MemberSignature Language="F#" Value="ConsoleApplication = 2" Usage="System.Reflection.Emit.PEFileKinds.ConsoleApplication" />
+      <MemberSignature Language="C++ CLI" Value="ConsoleApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.PEFileKinds</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The application is a console (not a Windows-based) application.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Dll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PEFileKinds Dll = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PEFileKinds.Dll" />
+      <MemberSignature Language="VB.NET" Value="Dll" />
+      <MemberSignature Language="F#" Value="Dll = 1" Usage="System.Reflection.Emit.PEFileKinds.Dll" />
+      <MemberSignature Language="C++ CLI" Value="Dll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -50,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.PEFileKinds</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The portable executable (PE) file is a DLL.</summary>
       </Docs>
@@ -58,6 +69,9 @@
       <MemberSignature Language="C#" Value="WindowApplication" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PEFileKinds WindowApplication = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PEFileKinds.WindowApplication" />
+      <MemberSignature Language="VB.NET" Value="WindowApplication" />
+      <MemberSignature Language="F#" Value="WindowApplication = 3" Usage="System.Reflection.Emit.PEFileKinds.WindowApplication" />
+      <MemberSignature Language="C++ CLI" Value="WindowApplication" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.PEFileKinds</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The application is a Windows-based application.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="VirtualizedItemPattern" FullName="System.Windows.Automation.VirtualizedItemPattern">
+﻿<Type Name="VirtualizedItemPattern" FullName="System.Windows.Automation.VirtualizedItemPattern">
   <TypeSignature Language="C#" Value="public class VirtualizedItemPattern : System.Windows.Automation.BasePattern" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VirtualizedItemPattern extends System.Windows.Automation.BasePattern" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.VirtualizedItemPattern" />
+  <TypeSignature Language="VB.NET" Value="Public Class VirtualizedItemPattern&#xA;Inherits BasePattern" />
+  <TypeSignature Language="F#" Value="type VirtualizedItemPattern = class&#xA;    inherit BasePattern" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VirtualizedItemPattern : System::Windows::Automation::BasePattern" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.VirtualizedItemPattern.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.VirtualizedItemPattern.Pattern" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -45,6 +51,9 @@
       <MemberSignature Language="C#" Value="public void Realize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Realize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.VirtualizedItemPattern.Realize" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Realize ()" />
+      <MemberSignature Language="F#" Value="member this.Realize : unit -&gt; unit" Usage="virtualizedItemPattern.Realize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Realize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

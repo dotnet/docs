@@ -1,7 +1,10 @@
-<Type Name="MessageSecurityOverTcpElement" FullName="System.ServiceModel.Configuration.MessageSecurityOverTcpElement">
+﻿<Type Name="MessageSecurityOverTcpElement" FullName="System.ServiceModel.Configuration.MessageSecurityOverTcpElement">
   <TypeSignature Language="C#" Value="public sealed class MessageSecurityOverTcpElement : System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MessageSecurityOverTcpElement extends System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.MessageSecurityOverTcpElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessageSecurityOverTcpElement&#xA;Inherits ServiceModelConfigurationElement" />
+  <TypeSignature Language="F#" Value="type MessageSecurityOverTcpElement = class&#xA;    inherit ServiceModelConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageSecurityOverTcpElement sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public MessageSecurityOverTcpElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.MessageSecurityOverTcpElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageSecurityOverTcpElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -35,6 +40,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityAlgorithmSuite AlgorithmSuite { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Security.SecurityAlgorithmSuite AlgorithmSuite" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MessageSecurityOverTcpElement.AlgorithmSuite" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlgorithmSuite As SecurityAlgorithmSuite" />
+      <MemberSignature Language="F#" Value="member this.AlgorithmSuite : System.ServiceModel.Security.SecurityAlgorithmSuite with get, set" Usage="System.ServiceModel.Configuration.MessageSecurityOverTcpElement.AlgorithmSuite" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityAlgorithmSuite ^ AlgorithmSuite { System::ServiceModel::Security::SecurityAlgorithmSuite ^ get(); void set(System::ServiceModel::Security::SecurityAlgorithmSuite ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -61,6 +69,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.MessageCredentialType ClientCredentialType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.MessageCredentialType ClientCredentialType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MessageSecurityOverTcpElement.ClientCredentialType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ClientCredentialType As MessageCredentialType" />
+      <MemberSignature Language="F#" Value="member this.ClientCredentialType : System.ServiceModel.MessageCredentialType with get, set" Usage="System.ServiceModel.Configuration.MessageSecurityOverTcpElement.ClientCredentialType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MessageCredentialType ClientCredentialType { System::ServiceModel::MessageCredentialType get(); void set(System::ServiceModel::MessageCredentialType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +95,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.MessageSecurityOverTcpElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.MessageSecurityOverTcpElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

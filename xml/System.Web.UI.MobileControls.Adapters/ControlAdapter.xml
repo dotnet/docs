@@ -1,7 +1,10 @@
-<Type Name="ControlAdapter" FullName="System.Web.UI.MobileControls.Adapters.ControlAdapter">
+﻿<Type Name="ControlAdapter" FullName="System.Web.UI.MobileControls.Adapters.ControlAdapter">
   <TypeSignature Language="C#" Value="public abstract class ControlAdapter : System.Web.UI.MobileControls.IControlAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ControlAdapter extends System.Object implements class System.Web.UI.MobileControls.IControlAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.ControlAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ControlAdapter&#xA;Implements IControlAdapter" />
+  <TypeSignature Language="F#" Value="type ControlAdapter = class&#xA;    interface IControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ControlAdapter abstract : System::Web::UI::MobileControls::IControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="protected ControlAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ControlAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -53,6 +58,9 @@
       <MemberSignature Language="C#" Value="protected static readonly int BackLabel;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly int32 BackLabel" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.ControlAdapter.BackLabel" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly BackLabel As Integer " />
+      <MemberSignature Language="F#" Value=" staticval mutable BackLabel : int" Usage="System.Web.UI.MobileControls.Adapters.ControlAdapter.BackLabel" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly int BackLabel;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -79,6 +87,9 @@
       <MemberSignature Language="C#" Value="protected virtual int CalculateOptimumPageWeight (int defaultPageWeight);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance int32 CalculateOptimumPageWeight(int32 defaultPageWeight) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.CalculateOptimumPageWeight(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CalculateOptimumPageWeight (defaultPageWeight As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member CalculateOptimumPageWeight : int -&gt; int&#xA;override this.CalculateOptimumPageWeight : int -&gt; int" Usage="controlAdapter.CalculateOptimumPageWeight defaultPageWeight" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual int CalculateOptimumPageWeight(int defaultPageWeight);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -108,6 +119,9 @@
       <MemberSignature Language="C#" Value="protected static readonly int CallLabel;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly int32 CallLabel" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.ControlAdapter.CallLabel" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly CallLabel As Integer " />
+      <MemberSignature Language="F#" Value=" staticval mutable CallLabel : int" Usage="System.Web.UI.MobileControls.Adapters.ControlAdapter.CallLabel" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly int CallLabel;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -134,7 +148,13 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.MobileControl Control { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.MobileControl Control" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.ControlAdapter.Control" />
+      <MemberSignature Language="VB.NET" Value="Public Property Control As MobileControl" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.MobileControl with get, set" Usage="System.Web.UI.MobileControls.Adapters.ControlAdapter.Control" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::MobileControl ^ Control { System::Web::UI::MobileControls::MobileControl ^ get(); void set(System::Web::UI::MobileControls::MobileControl ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.MobileControls.IControlAdapter.Control</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -161,7 +181,13 @@
       <MemberSignature Language="C#" Value="public virtual void CreateTemplatedUI (bool doDataBind);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateTemplatedUI(bool doDataBind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.CreateTemplatedUI(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub CreateTemplatedUI (doDataBind As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member CreateTemplatedUI : bool -&gt; unit&#xA;override this.CreateTemplatedUI : bool -&gt; unit" Usage="controlAdapter.CreateTemplatedUI doDataBind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CreateTemplatedUI(bool doDataBind);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IControlAdapter.CreateTemplatedUI(System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -189,6 +215,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.Mobile.MobileCapabilities Device { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Mobile.MobileCapabilities Device" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.ControlAdapter.Device" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Device As MobileCapabilities" />
+      <MemberSignature Language="F#" Value="member this.Device : System.Web.Mobile.MobileCapabilities" Usage="System.Web.UI.MobileControls.Adapters.ControlAdapter.Device" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::Mobile::MobileCapabilities ^ Device { System::Web::Mobile::MobileCapabilities ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -215,6 +244,9 @@
       <MemberSignature Language="C#" Value="protected string GetDefaultLabel (int labelID);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetDefaultLabel(int32 labelID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.GetDefaultLabel(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetDefaultLabel (labelID As Integer) As String" />
+      <MemberSignature Language="F#" Value="member this.GetDefaultLabel : int -&gt; string" Usage="controlAdapter.GetDefaultLabel labelID" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetDefaultLabel(int labelID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -258,6 +290,9 @@
       <MemberSignature Language="C#" Value="protected static readonly int GoLabel;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly int32 GoLabel" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.ControlAdapter.GoLabel" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly GoLabel As Integer " />
+      <MemberSignature Language="F#" Value=" staticval mutable GoLabel : int" Usage="System.Web.UI.MobileControls.Adapters.ControlAdapter.GoLabel" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly int GoLabel;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -283,7 +318,13 @@
       <MemberSignature Language="C#" Value="public virtual bool HandlePostBackEvent (string eventArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HandlePostBackEvent(string eventArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.HandlePostBackEvent(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function HandlePostBackEvent (eventArgument As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member HandlePostBackEvent : string -&gt; bool&#xA;override this.HandlePostBackEvent : string -&gt; bool" Usage="controlAdapter.HandlePostBackEvent eventArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool HandlePostBackEvent(System::String ^ eventArgument);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IControlAdapter.HandlePostBackEvent(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -315,7 +356,13 @@
       <MemberSignature Language="C#" Value="public virtual int ItemWeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemWeight" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.ControlAdapter.ItemWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ItemWeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.ItemWeight : int" Usage="System.Web.UI.MobileControls.Adapters.ControlAdapter.ItemWeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ItemWeight { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.MobileControls.IControlAdapter.ItemWeight</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -340,6 +387,9 @@
       <MemberSignature Language="C#" Value="protected static readonly int LinkLabel;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly int32 LinkLabel" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.ControlAdapter.LinkLabel" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly LinkLabel As Integer " />
+      <MemberSignature Language="F#" Value=" staticval mutable LinkLabel : int" Usage="System.Web.UI.MobileControls.Adapters.ControlAdapter.LinkLabel" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly int LinkLabel;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -366,7 +416,13 @@
       <MemberSignature Language="C#" Value="public virtual void LoadAdapterState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void LoadAdapterState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.LoadAdapterState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub LoadAdapterState (state As Object)" />
+      <MemberSignature Language="F#" Value="abstract member LoadAdapterState : obj -&gt; unit&#xA;override this.LoadAdapterState : obj -&gt; unit" Usage="controlAdapter.LoadAdapterState state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void LoadAdapterState(System::Object ^ state);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IControlAdapter.LoadAdapterState(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -394,7 +450,13 @@
       <MemberSignature Language="C#" Value="public virtual bool LoadPostData (string key, System.Collections.Specialized.NameValueCollection data, object controlPrivateData, out bool dataChanged);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LoadPostData(string key, class System.Collections.Specialized.NameValueCollection data, object controlPrivateData, [out] bool&amp; dataChanged) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection,System.Object,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LoadPostData (key As String, data As NameValueCollection, controlPrivateData As Object, ByRef dataChanged As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member LoadPostData : string * System.Collections.Specialized.NameValueCollection * obj *  -&gt; bool&#xA;override this.LoadPostData : string * System.Collections.Specialized.NameValueCollection * obj *  -&gt; bool" Usage="controlAdapter.LoadPostData (key, data, controlPrivateData, dataChanged)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool LoadPostData(System::String ^ key, System::Collections::Specialized::NameValueCollection ^ data, System::Object ^ controlPrivateData, [Runtime::InteropServices::Out] bool % dataChanged);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IControlAdapter.LoadPostData(System.String,System.Collections.Specialized.NameValueCollection,System.Object,System.Boolean@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -433,6 +495,9 @@
       <MemberSignature Language="C#" Value="protected static readonly int MoreLabel;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly int32 MoreLabel" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.ControlAdapter.MoreLabel" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly MoreLabel As Integer " />
+      <MemberSignature Language="F#" Value=" staticval mutable MoreLabel : int" Usage="System.Web.UI.MobileControls.Adapters.ControlAdapter.MoreLabel" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly int MoreLabel;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -458,6 +523,9 @@
       <MemberSignature Language="C#" Value="protected static readonly int NextLabel;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly int32 NextLabel" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.ControlAdapter.NextLabel" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly NextLabel As Integer " />
+      <MemberSignature Language="F#" Value=" staticval mutable NextLabel : int" Usage="System.Web.UI.MobileControls.Adapters.ControlAdapter.NextLabel" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly int NextLabel;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -483,6 +551,9 @@
       <MemberSignature Language="C#" Value="protected static readonly int OKLabel;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly int32 OKLabel" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.ControlAdapter.OKLabel" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly OKLabel As Integer " />
+      <MemberSignature Language="F#" Value=" staticval mutable OKLabel : int" Usage="System.Web.UI.MobileControls.Adapters.ControlAdapter.OKLabel" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly int OKLabel;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -508,7 +579,13 @@
       <MemberSignature Language="C#" Value="public virtual void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnInit : EventArgs -&gt; unit&#xA;override this.OnInit : EventArgs -&gt; unit" Usage="controlAdapter.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IControlAdapter.OnInit(System.EventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -536,7 +613,13 @@
       <MemberSignature Language="C#" Value="public virtual void OnLoad (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnLoad(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.OnLoad(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnLoad (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnLoad : EventArgs -&gt; unit&#xA;override this.OnLoad : EventArgs -&gt; unit" Usage="controlAdapter.OnLoad e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnLoad(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IControlAdapter.OnLoad(System.EventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -565,7 +648,13 @@
       <MemberSignature Language="C#" Value="public virtual void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnPreRender : EventArgs -&gt; unit&#xA;override this.OnPreRender : EventArgs -&gt; unit" Usage="controlAdapter.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IControlAdapter.OnPreRender(System.EventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -586,7 +675,13 @@
       <MemberSignature Language="C#" Value="public virtual void OnUnload (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnUnload(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.OnUnload(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub OnUnload (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnUnload : EventArgs -&gt; unit&#xA;override this.OnUnload : EventArgs -&gt; unit" Usage="controlAdapter.OnUnload e" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void OnUnload(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IControlAdapter.OnUnload(System.EventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -614,6 +709,9 @@
       <MemberSignature Language="C#" Value="protected static readonly int OptionsLabel;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly int32 OptionsLabel" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.ControlAdapter.OptionsLabel" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly OptionsLabel As Integer " />
+      <MemberSignature Language="F#" Value=" staticval mutable OptionsLabel : int" Usage="System.Web.UI.MobileControls.Adapters.ControlAdapter.OptionsLabel" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly int OptionsLabel;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -639,6 +737,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.UI.MobileControls.MobilePage Page { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.MobilePage Page" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.ControlAdapter.Page" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Page As MobilePage" />
+      <MemberSignature Language="F#" Value="member this.Page : System.Web.UI.MobileControls.MobilePage with get, set" Usage="System.Web.UI.MobileControls.Adapters.ControlAdapter.Page" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::MobileControls::MobilePage ^ Page { System::Web::UI::MobileControls::MobilePage ^ get(); void set(System::Web::UI::MobileControls::MobilePage ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -665,6 +766,9 @@
       <MemberSignature Language="C#" Value="protected static readonly int PreviousLabel;" />
       <MemberSignature Language="ILAsm" Value=".field family static initonly int32 PreviousLabel" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.Adapters.ControlAdapter.PreviousLabel" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared ReadOnly PreviousLabel As Integer " />
+      <MemberSignature Language="F#" Value=" staticval mutable PreviousLabel : int" Usage="System.Web.UI.MobileControls.Adapters.ControlAdapter.PreviousLabel" />
+      <MemberSignature Language="C++ CLI" Value="protected: static initonly int PreviousLabel;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -690,7 +794,13 @@
       <MemberSignature Language="C#" Value="public virtual void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="abstract member Render : System.Web.UI.HtmlTextWriter -&gt; unit&#xA;override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="controlAdapter.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IControlAdapter.Render(System.Web.UI.HtmlTextWriter)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -718,6 +828,9 @@
       <MemberSignature Language="C#" Value="protected void RenderChildren (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RenderChildren(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.RenderChildren(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RenderChildren (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="member this.RenderChildren : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="controlAdapter.RenderChildren writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RenderChildren(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -739,7 +852,13 @@
       <MemberSignature Language="C#" Value="public virtual object SaveAdapterState ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object SaveAdapterState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ControlAdapter.SaveAdapterState" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SaveAdapterState () As Object" />
+      <MemberSignature Language="F#" Value="abstract member SaveAdapterState : unit -&gt; obj&#xA;override this.SaveAdapterState : unit -&gt; obj" Usage="controlAdapter.SaveAdapterState " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ SaveAdapterState();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.MobileControls.IControlAdapter.SaveAdapterState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -766,6 +885,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.Style Style { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Style Style" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.ControlAdapter.Style" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Style As Style" />
+      <MemberSignature Language="F#" Value="member this.Style : System.Web.UI.MobileControls.Style" Usage="System.Web.UI.MobileControls.Adapters.ControlAdapter.Style" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Style ^ Style { System::Web::UI::MobileControls::Style ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -785,7 +907,13 @@
       <MemberSignature Language="C#" Value="public virtual int VisibleWeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VisibleWeight" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.ControlAdapter.VisibleWeight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property VisibleWeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.VisibleWeight : int" Usage="System.Web.UI.MobileControls.Adapters.ControlAdapter.VisibleWeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int VisibleWeight { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.UI.MobileControls.IControlAdapter.VisibleWeight</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="VerticalAlignment" FullName="System.Windows.VerticalAlignment">
+﻿<Type Name="VerticalAlignment" FullName="System.Windows.VerticalAlignment">
   <TypeSignature Language="C#" Value="public enum VerticalAlignment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VerticalAlignment extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.VerticalAlignment" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VerticalAlignment" />
+  <TypeSignature Language="F#" Value="type VerticalAlignment = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class VerticalAlignment" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="Bottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.VerticalAlignment Bottom = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.VerticalAlignment.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 2" Usage="System.Windows.VerticalAlignment.Bottom" />
+      <MemberSignature Language="C++ CLI" Value="Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.VerticalAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The child element is aligned to the bottom of the parent's layout slot.</summary>
       </Docs>
@@ -55,6 +62,9 @@
       <MemberSignature Language="C#" Value="Center" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.VerticalAlignment Center = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.VerticalAlignment.Center" />
+      <MemberSignature Language="VB.NET" Value="Center" />
+      <MemberSignature Language="F#" Value="Center = 1" Usage="System.Windows.VerticalAlignment.Center" />
+      <MemberSignature Language="C++ CLI" Value="Center" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -63,6 +73,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.VerticalAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The child element is aligned to the center of the parent's layout slot.</summary>
       </Docs>
@@ -71,6 +82,9 @@
       <MemberSignature Language="C#" Value="Stretch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.VerticalAlignment Stretch = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.VerticalAlignment.Stretch" />
+      <MemberSignature Language="VB.NET" Value="Stretch" />
+      <MemberSignature Language="F#" Value="Stretch = 3" Usage="System.Windows.VerticalAlignment.Stretch" />
+      <MemberSignature Language="C++ CLI" Value="Stretch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +93,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.VerticalAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The child element stretches to fill the parent's layout slot.</summary>
       </Docs>
@@ -87,6 +102,9 @@
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.VerticalAlignment Top = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.VerticalAlignment.Top" />
+      <MemberSignature Language="VB.NET" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 0" Usage="System.Windows.VerticalAlignment.Top" />
+      <MemberSignature Language="C++ CLI" Value="Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -95,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.VerticalAlignment</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The child element is aligned to the top of the parent's layout slot.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="XpsResourceStream" FullName="System.Windows.Xps.Serialization.XpsResourceStream">
+﻿<Type Name="XpsResourceStream" FullName="System.Windows.Xps.Serialization.XpsResourceStream">
   <TypeSignature Language="C#" Value="public class XpsResourceStream" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XpsResourceStream extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.XpsResourceStream" />
+  <TypeSignature Language="VB.NET" Value="Public Class XpsResourceStream" />
+  <TypeSignature Language="F#" Value="type XpsResourceStream = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XpsResourceStream" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public XpsResourceStream (System.IO.Stream stream, Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream, class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsResourceStream.#ctor(System.IO.Stream,System.Uri)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Xps.Serialization.XpsResourceStream : System.IO.Stream * Uri -&gt; System.Windows.Xps.Serialization.XpsResourceStream" Usage="new System.Windows.Xps.Serialization.XpsResourceStream (stream, uri)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XpsResourceStream(System::IO::Stream ^ stream, Uri ^ uri);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -39,6 +44,9 @@
       <MemberSignature Language="C#" Value="public void Initialize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Initialize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.XpsResourceStream.Initialize" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize ()" />
+      <MemberSignature Language="F#" Value="member this.Initialize : unit -&gt; unit" Usage="xpsResourceStream.Initialize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -57,6 +65,9 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream Stream { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream Stream" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsResourceStream.Stream" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stream As Stream" />
+      <MemberSignature Language="F#" Value="member this.Stream : System.IO.Stream" Usage="System.Windows.Xps.Serialization.XpsResourceStream.Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ Stream { System::IO::Stream ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -75,6 +86,9 @@
       <MemberSignature Language="C#" Value="public Uri Uri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri Uri" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Xps.Serialization.XpsResourceStream.Uri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Uri As Uri" />
+      <MemberSignature Language="F#" Value="member this.Uri : Uri" Usage="System.Windows.Xps.Serialization.XpsResourceStream.Uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ Uri { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

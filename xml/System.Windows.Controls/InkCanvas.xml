@@ -1,7 +1,10 @@
-<Type Name="InkCanvas" FullName="System.Windows.Controls.InkCanvas">
+﻿<Type Name="InkCanvas" FullName="System.Windows.Controls.InkCanvas">
   <TypeSignature Language="C#" Value="public class InkCanvas : System.Windows.FrameworkElement, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi InkCanvas extends System.Windows.FrameworkElement implements class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.InkCanvas" />
+  <TypeSignature Language="VB.NET" Value="Public Class InkCanvas&#xA;Inherits FrameworkElement&#xA;Implements IAddChild" />
+  <TypeSignature Language="F#" Value="type InkCanvas = class&#xA;    inherit FrameworkElement&#xA;    interface IAddChild" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InkCanvas : System::Windows::FrameworkElement, System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +52,8 @@
       <MemberSignature Language="C#" Value="public InkCanvas ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InkCanvas();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -64,6 +69,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.InkCanvasEditingMode ActiveEditingMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.InkCanvasEditingMode ActiveEditingMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.ActiveEditingMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActiveEditingMode As InkCanvasEditingMode" />
+      <MemberSignature Language="F#" Value="member this.ActiveEditingMode : System.Windows.Controls.InkCanvasEditingMode" Usage="System.Windows.Controls.InkCanvas.ActiveEditingMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::InkCanvasEditingMode ActiveEditingMode { System::Windows::Controls::InkCanvasEditingMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -105,6 +113,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler ActiveEditingModeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler ActiveEditingModeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.InkCanvas.ActiveEditingModeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ActiveEditingModeChanged As RoutedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ActiveEditingModeChanged : System.Windows.RoutedEventHandler " Usage="member this.ActiveEditingModeChanged : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ ActiveEditingModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -152,6 +163,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent ActiveEditingModeChangedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent ActiveEditingModeChangedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.ActiveEditingModeChangedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ActiveEditingModeChangedEvent As RoutedEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable ActiveEditingModeChangedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.InkCanvas.ActiveEditingModeChangedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ ActiveEditingModeChangedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -169,6 +183,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ActiveEditingModeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ActiveEditingModeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.ActiveEditingModeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ActiveEditingModeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ActiveEditingModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.InkCanvas.ActiveEditingModeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ActiveEditingModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -186,6 +203,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size arrangeSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size arrangeSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (arrangeSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="inkCanvas.ArrangeOverride arrangeSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size arrangeSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -208,6 +228,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush Background { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush Background" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.Background" />
+      <MemberSignature Language="VB.NET" Value="Public Property Background As Brush" />
+      <MemberSignature Language="F#" Value="member this.Background : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.InkCanvas.Background" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ Background { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -256,6 +279,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BackgroundProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BackgroundProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.BackgroundProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BackgroundProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BackgroundProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.InkCanvas.BackgroundProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BackgroundProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -269,10 +295,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Bottom">
+      <MemberSignature Language="C#" Value="see GetBottom, and SetBottom" />
+      <MemberSignature Language="ILAsm" Value="see GetBottom, and SetBottom" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.Bottom" />
+      <MemberSignature Language="VB.NET" Value="see GetBottom, and SetBottom" />
+      <MemberSignature Language="F#" Value="see GetBottom, and SetBottom" Usage="see GetBottom, and SetBottom" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="BottomProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BottomProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BottomProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.BottomProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BottomProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BottomProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.InkCanvas.BottomProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BottomProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -290,6 +335,9 @@
       <MemberSignature Language="C#" Value="public bool CanPaste ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CanPaste() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.CanPaste" />
+      <MemberSignature Language="VB.NET" Value="Public Function CanPaste () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanPaste : unit -&gt; bool" Usage="inkCanvas.CanPaste " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CanPaste();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -328,6 +376,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.UIElementCollection Children { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.UIElementCollection Children" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.Children" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Children As UIElementCollection" />
+      <MemberSignature Language="F#" Value="member this.Children : System.Windows.Controls.UIElementCollection" Usage="System.Windows.Controls.InkCanvas.Children" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::UIElementCollection ^ Children { System::Windows::Controls::UIElementCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -335,7 +386,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -379,6 +430,9 @@
       <MemberSignature Language="C#" Value="public void CopySelection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopySelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.CopySelection" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopySelection ()" />
+      <MemberSignature Language="F#" Value="member this.CopySelection : unit -&gt; unit" Usage="inkCanvas.CopySelection " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopySelection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -414,6 +468,9 @@
       <MemberSignature Language="C#" Value="public void CutSelection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CutSelection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.CutSelection" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CutSelection ()" />
+      <MemberSignature Language="F#" Value="member this.CutSelection : unit -&gt; unit" Usage="inkCanvas.CutSelection " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CutSelection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -447,6 +504,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Ink.DrawingAttributes DefaultDrawingAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.DrawingAttributes DefaultDrawingAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.DefaultDrawingAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultDrawingAttributes As DrawingAttributes" />
+      <MemberSignature Language="F#" Value="member this.DefaultDrawingAttributes : System.Windows.Ink.DrawingAttributes with get, set" Usage="System.Windows.Controls.InkCanvas.DefaultDrawingAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::DrawingAttributes ^ DefaultDrawingAttributes { System::Windows::Ink::DrawingAttributes ^ get(); void set(System::Windows::Ink::DrawingAttributes ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -494,6 +554,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DefaultDrawingAttributesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DefaultDrawingAttributesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.DefaultDrawingAttributesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DefaultDrawingAttributesProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DefaultDrawingAttributesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.InkCanvas.DefaultDrawingAttributesProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DefaultDrawingAttributesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -511,6 +574,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Ink.DrawingAttributesReplacedEventHandler DefaultDrawingAttributesReplaced;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Ink.DrawingAttributesReplacedEventHandler DefaultDrawingAttributesReplaced" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.InkCanvas.DefaultDrawingAttributesReplaced" />
+      <MemberSignature Language="VB.NET" Value="Public Event DefaultDrawingAttributesReplaced As DrawingAttributesReplacedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DefaultDrawingAttributesReplaced : System.Windows.Ink.DrawingAttributesReplacedEventHandler " Usage="member this.DefaultDrawingAttributesReplaced : System.Windows.Ink.DrawingAttributesReplacedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Ink::DrawingAttributesReplacedEventHandler ^ DefaultDrawingAttributesReplaced;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -538,6 +604,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.StylusPointDescription DefaultStylusPointDescription { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.StylusPointDescription DefaultStylusPointDescription" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.DefaultStylusPointDescription" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultStylusPointDescription As StylusPointDescription" />
+      <MemberSignature Language="F#" Value="member this.DefaultStylusPointDescription : System.Windows.Input.StylusPointDescription with get, set" Usage="System.Windows.Controls.InkCanvas.DefaultStylusPointDescription" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::StylusPointDescription ^ DefaultStylusPointDescription { System::Windows::Input::StylusPointDescription ^ get(); void set(System::Windows::Input::StylusPointDescription ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -545,7 +614,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -586,6 +655,9 @@
       <MemberSignature Language="C#" Value="protected System.Windows.Input.StylusPlugIns.DynamicRenderer DynamicRenderer { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Input.StylusPlugIns.DynamicRenderer DynamicRenderer" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.DynamicRenderer" />
+      <MemberSignature Language="VB.NET" Value="Protected Property DynamicRenderer As DynamicRenderer" />
+      <MemberSignature Language="F#" Value="member this.DynamicRenderer : System.Windows.Input.StylusPlugIns.DynamicRenderer with get, set" Usage="System.Windows.Controls.InkCanvas.DynamicRenderer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Input::StylusPlugIns::DynamicRenderer ^ DynamicRenderer { System::Windows::Input::StylusPlugIns::DynamicRenderer ^ get(); void set(System::Windows::Input::StylusPlugIns::DynamicRenderer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -614,6 +686,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.InkCanvasEditingMode EditingMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.InkCanvasEditingMode EditingMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.EditingMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property EditingMode As InkCanvasEditingMode" />
+      <MemberSignature Language="F#" Value="member this.EditingMode : System.Windows.Controls.InkCanvasEditingMode with get, set" Usage="System.Windows.Controls.InkCanvas.EditingMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::InkCanvasEditingMode EditingMode { System::Windows::Controls::InkCanvasEditingMode get(); void set(System::Windows::Controls::InkCanvasEditingMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -658,6 +733,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler EditingModeChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler EditingModeChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.InkCanvas.EditingModeChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event EditingModeChanged As RoutedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.EditingModeChanged : System.Windows.RoutedEventHandler " Usage="member this.EditingModeChanged : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ EditingModeChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -704,6 +782,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent EditingModeChangedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent EditingModeChangedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.EditingModeChangedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EditingModeChangedEvent As RoutedEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable EditingModeChangedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.InkCanvas.EditingModeChangedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ EditingModeChangedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -721,6 +802,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.InkCanvasEditingMode EditingModeInverted { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.InkCanvasEditingMode EditingModeInverted" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.EditingModeInverted" />
+      <MemberSignature Language="VB.NET" Value="Public Property EditingModeInverted As InkCanvasEditingMode" />
+      <MemberSignature Language="F#" Value="member this.EditingModeInverted : System.Windows.Controls.InkCanvasEditingMode with get, set" Usage="System.Windows.Controls.InkCanvas.EditingModeInverted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::InkCanvasEditingMode EditingModeInverted { System::Windows::Controls::InkCanvasEditingMode get(); void set(System::Windows::Controls::InkCanvasEditingMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -764,6 +848,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler EditingModeInvertedChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler EditingModeInvertedChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.InkCanvas.EditingModeInvertedChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event EditingModeInvertedChanged As RoutedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.EditingModeInvertedChanged : System.Windows.RoutedEventHandler " Usage="member this.EditingModeInvertedChanged : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ EditingModeInvertedChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -810,6 +897,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent EditingModeInvertedChangedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent EditingModeInvertedChangedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.EditingModeInvertedChangedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EditingModeInvertedChangedEvent As RoutedEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable EditingModeInvertedChangedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.InkCanvas.EditingModeInvertedChangedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ EditingModeInvertedChangedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -827,6 +917,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EditingModeInvertedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EditingModeInvertedProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.EditingModeInvertedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EditingModeInvertedProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable EditingModeInvertedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.InkCanvas.EditingModeInvertedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EditingModeInvertedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -844,6 +937,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty EditingModeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty EditingModeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.EditingModeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly EditingModeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable EditingModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.InkCanvas.EditingModeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ EditingModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -861,6 +957,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Ink.StylusShape EraserShape { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.StylusShape EraserShape" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.EraserShape" />
+      <MemberSignature Language="VB.NET" Value="Public Property EraserShape As StylusShape" />
+      <MemberSignature Language="F#" Value="member this.EraserShape : System.Windows.Ink.StylusShape with get, set" Usage="System.Windows.Controls.InkCanvas.EraserShape" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::StylusShape ^ EraserShape { System::Windows::Ink::StylusShape ^ get(); void set(System::Windows::Ink::StylusShape ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -868,7 +967,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -908,6 +1007,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Controls.InkCanvasGestureEventHandler Gesture;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Controls.InkCanvasGestureEventHandler Gesture" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.InkCanvas.Gesture" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Gesture As InkCanvasGestureEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Gesture : System.Windows.Controls.InkCanvasGestureEventHandler " Usage="member this.Gesture : System.Windows.Controls.InkCanvasGestureEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::InkCanvasGestureEventHandler ^ Gesture;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -955,6 +1057,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent GestureEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent GestureEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.GestureEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly GestureEvent As RoutedEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable GestureEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.InkCanvas.GestureEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ GestureEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -972,6 +1077,9 @@
       <MemberSignature Language="C#" Value="public static double GetBottom (System.Windows.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetBottom(class System.Windows.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.GetBottom(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetBottom (element As UIElement) As Double" />
+      <MemberSignature Language="F#" Value="static member GetBottom : System.Windows.UIElement -&gt; double" Usage="System.Windows.Controls.InkCanvas.GetBottom element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetBottom(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1012,6 +1120,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Ink.ApplicationGesture&gt; GetEnabledGestures ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Windows.Ink.ApplicationGesture&gt; GetEnabledGestures() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.GetEnabledGestures" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnabledGestures () As ReadOnlyCollection(Of ApplicationGesture)" />
+      <MemberSignature Language="F#" Value="member this.GetEnabledGestures : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.Ink.ApplicationGesture&gt;" Usage="inkCanvas.GetEnabledGestures " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::Ink::ApplicationGesture&gt; ^ GetEnabledGestures();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1042,6 +1153,9 @@
       <MemberSignature Language="C#" Value="public static double GetLeft (System.Windows.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetLeft(class System.Windows.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.GetLeft(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetLeft (element As UIElement) As Double" />
+      <MemberSignature Language="F#" Value="static member GetLeft : System.Windows.UIElement -&gt; double" Usage="System.Windows.Controls.InkCanvas.GetLeft element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetLeft(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1082,6 +1196,9 @@
       <MemberSignature Language="C#" Value="public static double GetRight (System.Windows.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetRight(class System.Windows.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.GetRight(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRight (element As UIElement) As Double" />
+      <MemberSignature Language="F#" Value="static member GetRight : System.Windows.UIElement -&gt; double" Usage="System.Windows.Controls.InkCanvas.GetRight element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetRight(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1122,6 +1239,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.UIElement&gt; GetSelectedElements ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Windows.UIElement&gt; GetSelectedElements() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.GetSelectedElements" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSelectedElements () As ReadOnlyCollection(Of UIElement)" />
+      <MemberSignature Language="F#" Value="member this.GetSelectedElements : unit -&gt; System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Windows.UIElement&gt;" Usage="inkCanvas.GetSelectedElements " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Windows::UIElement ^&gt; ^ GetSelectedElements();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1162,6 +1282,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection GetSelectedStrokes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Ink.StrokeCollection GetSelectedStrokes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.GetSelectedStrokes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSelectedStrokes () As StrokeCollection" />
+      <MemberSignature Language="F#" Value="member this.GetSelectedStrokes : unit -&gt; System.Windows.Ink.StrokeCollection" Usage="inkCanvas.GetSelectedStrokes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Ink::StrokeCollection ^ GetSelectedStrokes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1200,6 +1323,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Rect GetSelectionBounds ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Rect GetSelectionBounds() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.GetSelectionBounds" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSelectionBounds () As Rect" />
+      <MemberSignature Language="F#" Value="member this.GetSelectionBounds : unit -&gt; System.Windows.Rect" Usage="inkCanvas.GetSelectionBounds " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Rect GetSelectionBounds();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1229,6 +1355,9 @@
       <MemberSignature Language="C#" Value="public static double GetTop (System.Windows.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float64 GetTop(class System.Windows.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.GetTop(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTop (element As UIElement) As Double" />
+      <MemberSignature Language="F#" Value="static member GetTop : System.Windows.UIElement -&gt; double" Usage="System.Windows.Controls.InkCanvas.GetTop element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static double GetTop(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1269,6 +1398,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Visual GetVisualChild (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.Visual GetVisualChild(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.GetVisualChild(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetVisualChild (index As Integer) As Visual" />
+      <MemberSignature Language="F#" Value="override this.GetVisualChild : int -&gt; System.Windows.Media.Visual" Usage="inkCanvas.GetVisualChild index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Visual ^ GetVisualChild(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1292,6 +1424,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.HitTestResult HitTestCore (System.Windows.Media.PointHitTestParameters hitTestParams);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Media.HitTestResult HitTestCore(class System.Windows.Media.PointHitTestParameters hitTestParams) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.HitTestCore(System.Windows.Media.PointHitTestParameters)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function HitTestCore (hitTestParams As PointHitTestParameters) As HitTestResult" />
+      <MemberSignature Language="F#" Value="override this.HitTestCore : System.Windows.Media.PointHitTestParameters -&gt; System.Windows.Media.HitTestResult" Usage="inkCanvas.HitTestCore hitTestParams" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::HitTestResult ^ HitTestCore(System::Windows::Media::PointHitTestParameters ^ hitTestParams);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1314,6 +1449,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.InkCanvasSelectionHitResult HitTestSelection (System.Windows.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Windows.Controls.InkCanvasSelectionHitResult HitTestSelection(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.HitTestSelection(System.Windows.Point)" />
+      <MemberSignature Language="F#" Value="member this.HitTestSelection : System.Windows.Point -&gt; System.Windows.Controls.InkCanvasSelectionHitResult" Usage="inkCanvas.HitTestSelection point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Controls::InkCanvasSelectionHitResult HitTestSelection(System::Windows::Point point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1351,6 +1488,9 @@
       <MemberSignature Language="C#" Value="protected System.Windows.Controls.InkPresenter InkPresenter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Controls.InkPresenter InkPresenter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.InkPresenter" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property InkPresenter As InkPresenter" />
+      <MemberSignature Language="F#" Value="member this.InkPresenter : System.Windows.Controls.InkPresenter" Usage="System.Windows.Controls.InkCanvas.InkPresenter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Windows::Controls::InkPresenter ^ InkPresenter { System::Windows::Controls::InkPresenter ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1369,6 +1509,9 @@
       <MemberSignature Language="C#" Value="public bool IsGestureRecognizerAvailable { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsGestureRecognizerAvailable" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.IsGestureRecognizerAvailable" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsGestureRecognizerAvailable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsGestureRecognizerAvailable : bool" Usage="System.Windows.Controls.InkCanvas.IsGestureRecognizerAvailable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsGestureRecognizerAvailable { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1376,7 +1519,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1401,10 +1544,29 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="Left">
+      <MemberSignature Language="C#" Value="see GetLeft, and SetLeft" />
+      <MemberSignature Language="ILAsm" Value="see GetLeft, and SetLeft" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.Left" />
+      <MemberSignature Language="VB.NET" Value="see GetLeft, and SetLeft" />
+      <MemberSignature Language="F#" Value="see GetLeft, and SetLeft" Usage="see GetLeft, and SetLeft" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="LeftProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty LeftProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty LeftProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.LeftProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly LeftProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable LeftProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.InkCanvas.LeftProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ LeftProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1419,9 +1581,12 @@
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
-      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator LogicalChildren { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Collections.IEnumerator LogicalChildren { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator LogicalChildren" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.LogicalChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Controls.InkCanvas.LogicalChildren" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1440,6 +1605,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size availableSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size availableSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (availableSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="inkCanvas.MeasureOverride availableSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size availableSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1463,6 +1631,9 @@
       <MemberSignature Language="C#" Value="public bool MoveEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MoveEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.MoveEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property MoveEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MoveEnabled : bool with get, set" Usage="System.Windows.Controls.InkCanvas.MoveEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MoveEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1499,6 +1670,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnActiveEditingModeChanged (System.Windows.RoutedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnActiveEditingModeChanged(class System.Windows.RoutedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnActiveEditingModeChanged(System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnActiveEditingModeChanged (e As RoutedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnActiveEditingModeChanged : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnActiveEditingModeChanged : System.Windows.RoutedEventArgs -&gt; unit" Usage="inkCanvas.OnActiveEditingModeChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnActiveEditingModeChanged(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1520,6 +1694,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="inkCanvas.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1539,6 +1716,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDefaultDrawingAttributesReplaced (System.Windows.Ink.DrawingAttributesReplacedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDefaultDrawingAttributesReplaced(class System.Windows.Ink.DrawingAttributesReplacedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnDefaultDrawingAttributesReplaced(System.Windows.Ink.DrawingAttributesReplacedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDefaultDrawingAttributesReplaced (e As DrawingAttributesReplacedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDefaultDrawingAttributesReplaced : System.Windows.Ink.DrawingAttributesReplacedEventArgs -&gt; unit&#xA;override this.OnDefaultDrawingAttributesReplaced : System.Windows.Ink.DrawingAttributesReplacedEventArgs -&gt; unit" Usage="inkCanvas.OnDefaultDrawingAttributesReplaced e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDefaultDrawingAttributesReplaced(System::Windows::Ink::DrawingAttributesReplacedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1560,6 +1740,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnEditingModeChanged (System.Windows.RoutedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEditingModeChanged(class System.Windows.RoutedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnEditingModeChanged(System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEditingModeChanged (e As RoutedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnEditingModeChanged : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnEditingModeChanged : System.Windows.RoutedEventArgs -&gt; unit" Usage="inkCanvas.OnEditingModeChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEditingModeChanged(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1588,6 +1771,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnEditingModeInvertedChanged (System.Windows.RoutedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEditingModeInvertedChanged(class System.Windows.RoutedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnEditingModeInvertedChanged(System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEditingModeInvertedChanged (e As RoutedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnEditingModeInvertedChanged : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnEditingModeInvertedChanged : System.Windows.RoutedEventArgs -&gt; unit" Usage="inkCanvas.OnEditingModeInvertedChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEditingModeInvertedChanged(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1616,6 +1802,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnGesture (System.Windows.Controls.InkCanvasGestureEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnGesture(class System.Windows.Controls.InkCanvasGestureEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnGesture(System.Windows.Controls.InkCanvasGestureEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnGesture (e As InkCanvasGestureEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnGesture : System.Windows.Controls.InkCanvasGestureEventArgs -&gt; unit&#xA;override this.OnGesture : System.Windows.Controls.InkCanvasGestureEventArgs -&gt; unit" Usage="inkCanvas.OnGesture e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnGesture(System::Windows::Controls::InkCanvasGestureEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1637,6 +1826,9 @@
       <MemberSignature Language="C#" Value="protected override void OnPropertyChanged (System.Windows.DependencyPropertyChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnPropertyChanged(valuetype System.Windows.DependencyPropertyChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnPropertyChanged(System.Windows.DependencyPropertyChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnPropertyChanged (e As DependencyPropertyChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPropertyChanged : System.Windows.DependencyPropertyChangedEventArgs -&gt; unit" Usage="inkCanvas.OnPropertyChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnPropertyChanged(System::Windows::DependencyPropertyChangedEventArgs e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1659,6 +1851,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelectionChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectionChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnSelectionChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectionChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSelectionChanged : EventArgs -&gt; unit&#xA;override this.OnSelectionChanged : EventArgs -&gt; unit" Usage="inkCanvas.OnSelectionChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectionChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1688,6 +1883,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelectionChanging (System.Windows.Controls.InkCanvasSelectionChangingEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectionChanging(class System.Windows.Controls.InkCanvasSelectionChangingEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnSelectionChanging(System.Windows.Controls.InkCanvasSelectionChangingEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectionChanging (e As InkCanvasSelectionChangingEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSelectionChanging : System.Windows.Controls.InkCanvasSelectionChangingEventArgs -&gt; unit&#xA;override this.OnSelectionChanging : System.Windows.Controls.InkCanvasSelectionChangingEventArgs -&gt; unit" Usage="inkCanvas.OnSelectionChanging e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectionChanging(System::Windows::Controls::InkCanvasSelectionChangingEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1717,6 +1915,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelectionMoved (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectionMoved(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnSelectionMoved(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectionMoved (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSelectionMoved : EventArgs -&gt; unit&#xA;override this.OnSelectionMoved : EventArgs -&gt; unit" Usage="inkCanvas.OnSelectionMoved e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectionMoved(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1746,6 +1947,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelectionMoving (System.Windows.Controls.InkCanvasSelectionEditingEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectionMoving(class System.Windows.Controls.InkCanvasSelectionEditingEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnSelectionMoving(System.Windows.Controls.InkCanvasSelectionEditingEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectionMoving (e As InkCanvasSelectionEditingEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSelectionMoving : System.Windows.Controls.InkCanvasSelectionEditingEventArgs -&gt; unit&#xA;override this.OnSelectionMoving : System.Windows.Controls.InkCanvasSelectionEditingEventArgs -&gt; unit" Usage="inkCanvas.OnSelectionMoving e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectionMoving(System::Windows::Controls::InkCanvasSelectionEditingEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1775,6 +1979,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelectionResized (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectionResized(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnSelectionResized(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectionResized (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSelectionResized : EventArgs -&gt; unit&#xA;override this.OnSelectionResized : EventArgs -&gt; unit" Usage="inkCanvas.OnSelectionResized e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectionResized(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1804,6 +2011,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSelectionResizing (System.Windows.Controls.InkCanvasSelectionEditingEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSelectionResizing(class System.Windows.Controls.InkCanvasSelectionEditingEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnSelectionResizing(System.Windows.Controls.InkCanvasSelectionEditingEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSelectionResizing (e As InkCanvasSelectionEditingEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSelectionResizing : System.Windows.Controls.InkCanvasSelectionEditingEventArgs -&gt; unit&#xA;override this.OnSelectionResizing : System.Windows.Controls.InkCanvasSelectionEditingEventArgs -&gt; unit" Usage="inkCanvas.OnSelectionResizing e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSelectionResizing(System::Windows::Controls::InkCanvasSelectionEditingEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1833,6 +2043,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnStrokeCollected (System.Windows.Controls.InkCanvasStrokeCollectedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnStrokeCollected(class System.Windows.Controls.InkCanvasStrokeCollectedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnStrokeCollected(System.Windows.Controls.InkCanvasStrokeCollectedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStrokeCollected (e As InkCanvasStrokeCollectedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnStrokeCollected : System.Windows.Controls.InkCanvasStrokeCollectedEventArgs -&gt; unit&#xA;override this.OnStrokeCollected : System.Windows.Controls.InkCanvasStrokeCollectedEventArgs -&gt; unit" Usage="inkCanvas.OnStrokeCollected e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStrokeCollected(System::Windows::Controls::InkCanvasStrokeCollectedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1863,6 +2076,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnStrokeErased (System.Windows.RoutedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnStrokeErased(class System.Windows.RoutedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnStrokeErased(System.Windows.RoutedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStrokeErased (e As RoutedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnStrokeErased : System.Windows.RoutedEventArgs -&gt; unit&#xA;override this.OnStrokeErased : System.Windows.RoutedEventArgs -&gt; unit" Usage="inkCanvas.OnStrokeErased e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStrokeErased(System::Windows::RoutedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1884,6 +2100,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnStrokeErasing (System.Windows.Controls.InkCanvasStrokeErasingEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnStrokeErasing(class System.Windows.Controls.InkCanvasStrokeErasingEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnStrokeErasing(System.Windows.Controls.InkCanvasStrokeErasingEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStrokeErasing (e As InkCanvasStrokeErasingEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnStrokeErasing : System.Windows.Controls.InkCanvasStrokeErasingEventArgs -&gt; unit&#xA;override this.OnStrokeErasing : System.Windows.Controls.InkCanvasStrokeErasingEventArgs -&gt; unit" Usage="inkCanvas.OnStrokeErasing e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStrokeErasing(System::Windows::Controls::InkCanvasStrokeErasingEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1905,6 +2124,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnStrokesReplaced (System.Windows.Controls.InkCanvasStrokesReplacedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnStrokesReplaced(class System.Windows.Controls.InkCanvasStrokesReplacedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.OnStrokesReplaced(System.Windows.Controls.InkCanvasStrokesReplacedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStrokesReplaced (e As InkCanvasStrokesReplacedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnStrokesReplaced : System.Windows.Controls.InkCanvasStrokesReplacedEventArgs -&gt; unit&#xA;override this.OnStrokesReplaced : System.Windows.Controls.InkCanvasStrokesReplacedEventArgs -&gt; unit" Usage="inkCanvas.OnStrokesReplaced e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStrokesReplaced(System::Windows::Controls::InkCanvasStrokesReplacedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1943,6 +2165,9 @@
       <MemberSignature Language="C#" Value="public void Paste ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Paste() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.Paste" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Paste ()" />
+      <MemberSignature Language="F#" Value="member this.Paste : unit -&gt; unit" Usage="inkCanvas.Paste " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Paste();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1979,6 +2204,8 @@
       <MemberSignature Language="C#" Value="public void Paste (System.Windows.Point point);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Paste(valuetype System.Windows.Point point) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.Paste(System.Windows.Point)" />
+      <MemberSignature Language="F#" Value="member this.Paste : System.Windows.Point -&gt; unit" Usage="inkCanvas.Paste point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Paste(System::Windows::Point point);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2018,6 +2245,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Windows.Controls.InkCanvasClipboardFormat&gt; PreferredPasteFormats { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Controls.InkCanvasClipboardFormat&gt; PreferredPasteFormats" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.PreferredPasteFormats" />
+      <MemberSignature Language="VB.NET" Value="Public Property PreferredPasteFormats As IEnumerable(Of InkCanvasClipboardFormat)" />
+      <MemberSignature Language="F#" Value="member this.PreferredPasteFormats : seq&lt;System.Windows.Controls.InkCanvasClipboardFormat&gt; with get, set" Usage="System.Windows.Controls.InkCanvas.PreferredPasteFormats" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IEnumerable&lt;System::Windows::Controls::InkCanvasClipboardFormat&gt; ^ PreferredPasteFormats { System::Collections::Generic::IEnumerable&lt;System::Windows::Controls::InkCanvasClipboardFormat&gt; ^ get(); void set(System::Collections::Generic::IEnumerable&lt;System::Windows::Controls::InkCanvasClipboardFormat&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2025,7 +2255,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2075,6 +2305,9 @@
       <MemberSignature Language="C#" Value="public bool ResizeEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ResizeEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.ResizeEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResizeEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ResizeEnabled : bool with get, set" Usage="System.Windows.Controls.InkCanvas.ResizeEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ResizeEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2107,10 +2340,29 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="Right">
+      <MemberSignature Language="C#" Value="see GetRight, and SetRight" />
+      <MemberSignature Language="ILAsm" Value="see GetRight, and SetRight" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.Right" />
+      <MemberSignature Language="VB.NET" Value="see GetRight, and SetRight" />
+      <MemberSignature Language="F#" Value="see GetRight, and SetRight" Usage="see GetRight, and SetRight" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RightProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RightProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RightProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.RightProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RightProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RightProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.InkCanvas.RightProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RightProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2147,6 +2399,9 @@
       <MemberSignature Language="C#" Value="public void Select (System.Collections.Generic.IEnumerable&lt;System.Windows.UIElement&gt; selectedElements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Select(class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.UIElement&gt; selectedElements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.Select(System.Collections.Generic.IEnumerable{System.Windows.UIElement})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select (selectedElements As IEnumerable(Of UIElement))" />
+      <MemberSignature Language="F#" Value="member this.Select : seq&lt;System.Windows.UIElement&gt; -&gt; unit" Usage="inkCanvas.Select selectedElements" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select(System::Collections::Generic::IEnumerable&lt;System::Windows::UIElement ^&gt; ^ selectedElements);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2185,6 +2440,9 @@
       <MemberSignature Language="C#" Value="public void Select (System.Windows.Ink.StrokeCollection selectedStrokes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Select(class System.Windows.Ink.StrokeCollection selectedStrokes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.Select(System.Windows.Ink.StrokeCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select (selectedStrokes As StrokeCollection)" />
+      <MemberSignature Language="F#" Value="member this.Select : System.Windows.Ink.StrokeCollection -&gt; unit" Usage="inkCanvas.Select selectedStrokes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select(System::Windows::Ink::StrokeCollection ^ selectedStrokes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2224,6 +2482,9 @@
       <MemberSignature Language="C#" Value="public void Select (System.Windows.Ink.StrokeCollection selectedStrokes, System.Collections.Generic.IEnumerable&lt;System.Windows.UIElement&gt; selectedElements);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Select(class System.Windows.Ink.StrokeCollection selectedStrokes, class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.UIElement&gt; selectedElements) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.Select(System.Windows.Ink.StrokeCollection,System.Collections.Generic.IEnumerable{System.Windows.UIElement})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Select (selectedStrokes As StrokeCollection, selectedElements As IEnumerable(Of UIElement))" />
+      <MemberSignature Language="F#" Value="member this.Select : System.Windows.Ink.StrokeCollection * seq&lt;System.Windows.UIElement&gt; -&gt; unit" Usage="inkCanvas.Select (selectedStrokes, selectedElements)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Select(System::Windows::Ink::StrokeCollection ^ selectedStrokes, System::Collections::Generic::IEnumerable&lt;System::Windows::UIElement ^&gt; ^ selectedElements);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2265,6 +2526,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler SelectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.InkCanvas.SelectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectionChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectionChanged : EventHandler " Usage="member this.SelectionChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2302,6 +2566,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Controls.InkCanvasSelectionChangingEventHandler SelectionChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Controls.InkCanvasSelectionChangingEventHandler SelectionChanging" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.InkCanvas.SelectionChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectionChanging As InkCanvasSelectionChangingEventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectionChanging : System.Windows.Controls.InkCanvasSelectionChangingEventHandler " Usage="member this.SelectionChanging : System.Windows.Controls.InkCanvasSelectionChangingEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::InkCanvasSelectionChangingEventHandler ^ SelectionChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2345,6 +2612,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler SelectionMoved;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectionMoved" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.InkCanvas.SelectionMoved" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectionMoved As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectionMoved : EventHandler " Usage="member this.SelectionMoved : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionMoved;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2380,6 +2650,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Controls.InkCanvasSelectionEditingEventHandler SelectionMoving;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Controls.InkCanvasSelectionEditingEventHandler SelectionMoving" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.InkCanvas.SelectionMoving" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectionMoving As InkCanvasSelectionEditingEventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectionMoving : System.Windows.Controls.InkCanvasSelectionEditingEventHandler " Usage="member this.SelectionMoving : System.Windows.Controls.InkCanvasSelectionEditingEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::InkCanvasSelectionEditingEventHandler ^ SelectionMoving;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2419,6 +2692,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler SelectionResized;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectionResized" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.InkCanvas.SelectionResized" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectionResized As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectionResized : EventHandler " Usage="member this.SelectionResized : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectionResized;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2456,6 +2732,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Controls.InkCanvasSelectionEditingEventHandler SelectionResizing;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Controls.InkCanvasSelectionEditingEventHandler SelectionResizing" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.InkCanvas.SelectionResizing" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectionResizing As InkCanvasSelectionEditingEventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectionResizing : System.Windows.Controls.InkCanvasSelectionEditingEventHandler " Usage="member this.SelectionResizing : System.Windows.Controls.InkCanvasSelectionEditingEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::InkCanvasSelectionEditingEventHandler ^ SelectionResizing;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2495,6 +2774,9 @@
       <MemberSignature Language="C#" Value="public static void SetBottom (System.Windows.UIElement element, double length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetBottom(class System.Windows.UIElement element, float64 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.SetBottom(System.Windows.UIElement,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetBottom (element As UIElement, length As Double)" />
+      <MemberSignature Language="F#" Value="static member SetBottom : System.Windows.UIElement * double -&gt; unit" Usage="System.Windows.Controls.InkCanvas.SetBottom (element, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetBottom(System::Windows::UIElement ^ element, double length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2528,6 +2810,9 @@
       <MemberSignature Language="C#" Value="public void SetEnabledGestures (System.Collections.Generic.IEnumerable&lt;System.Windows.Ink.ApplicationGesture&gt; applicationGestures);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetEnabledGestures(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Ink.ApplicationGesture&gt; applicationGestures) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.SetEnabledGestures(System.Collections.Generic.IEnumerable{System.Windows.Ink.ApplicationGesture})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetEnabledGestures (applicationGestures As IEnumerable(Of ApplicationGesture))" />
+      <MemberSignature Language="F#" Value="member this.SetEnabledGestures : seq&lt;System.Windows.Ink.ApplicationGesture&gt; -&gt; unit" Usage="inkCanvas.SetEnabledGestures applicationGestures" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetEnabledGestures(System::Collections::Generic::IEnumerable&lt;System::Windows::Ink::ApplicationGesture&gt; ^ applicationGestures);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2562,6 +2847,9 @@
       <MemberSignature Language="C#" Value="public static void SetLeft (System.Windows.UIElement element, double length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetLeft(class System.Windows.UIElement element, float64 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.SetLeft(System.Windows.UIElement,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetLeft (element As UIElement, length As Double)" />
+      <MemberSignature Language="F#" Value="static member SetLeft : System.Windows.UIElement * double -&gt; unit" Usage="System.Windows.Controls.InkCanvas.SetLeft (element, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetLeft(System::Windows::UIElement ^ element, double length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2595,6 +2883,9 @@
       <MemberSignature Language="C#" Value="public static void SetRight (System.Windows.UIElement element, double length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetRight(class System.Windows.UIElement element, float64 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.SetRight(System.Windows.UIElement,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetRight (element As UIElement, length As Double)" />
+      <MemberSignature Language="F#" Value="static member SetRight : System.Windows.UIElement * double -&gt; unit" Usage="System.Windows.Controls.InkCanvas.SetRight (element, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetRight(System::Windows::UIElement ^ element, double length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2628,6 +2919,9 @@
       <MemberSignature Language="C#" Value="public static void SetTop (System.Windows.UIElement element, double length);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetTop(class System.Windows.UIElement element, float64 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.SetTop(System.Windows.UIElement,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetTop (element As UIElement, length As Double)" />
+      <MemberSignature Language="F#" Value="static member SetTop : System.Windows.UIElement * double -&gt; unit" Usage="System.Windows.Controls.InkCanvas.SetTop (element, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetTop(System::Windows::UIElement ^ element, double length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2661,6 +2955,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Controls.InkCanvasStrokeCollectedEventHandler StrokeCollected;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Controls.InkCanvasStrokeCollectedEventHandler StrokeCollected" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.InkCanvas.StrokeCollected" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event StrokeCollected As InkCanvasStrokeCollectedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.StrokeCollected : System.Windows.Controls.InkCanvasStrokeCollectedEventHandler " Usage="member this.StrokeCollected : System.Windows.Controls.InkCanvasStrokeCollectedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::InkCanvasStrokeCollectedEventHandler ^ StrokeCollected;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2712,6 +3009,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent StrokeCollectedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent StrokeCollectedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.StrokeCollectedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeCollectedEvent As RoutedEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable StrokeCollectedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.InkCanvas.StrokeCollectedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ StrokeCollectedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2729,6 +3029,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.RoutedEventHandler StrokeErased;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.RoutedEventHandler StrokeErased" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.InkCanvas.StrokeErased" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event StrokeErased As RoutedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.StrokeErased : System.Windows.RoutedEventHandler " Usage="member this.StrokeErased : System.Windows.RoutedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::RoutedEventHandler ^ StrokeErased;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2775,6 +3078,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.RoutedEvent StrokeErasedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.RoutedEvent StrokeErasedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.StrokeErasedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokeErasedEvent As RoutedEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable StrokeErasedEvent : System.Windows.RoutedEvent" Usage="System.Windows.Controls.InkCanvas.StrokeErasedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::RoutedEvent ^ StrokeErasedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2792,6 +3098,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Controls.InkCanvasStrokeErasingEventHandler StrokeErasing;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Controls.InkCanvasStrokeErasingEventHandler StrokeErasing" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.InkCanvas.StrokeErasing" />
+      <MemberSignature Language="VB.NET" Value="Public Event StrokeErasing As InkCanvasStrokeErasingEventHandler " />
+      <MemberSignature Language="F#" Value="member this.StrokeErasing : System.Windows.Controls.InkCanvasStrokeErasingEventHandler " Usage="member this.StrokeErasing : System.Windows.Controls.InkCanvasStrokeErasingEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::InkCanvasStrokeErasingEventHandler ^ StrokeErasing;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2824,6 +3133,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Ink.StrokeCollection Strokes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Ink.StrokeCollection Strokes" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.Strokes" />
+      <MemberSignature Language="VB.NET" Value="Public Property Strokes As StrokeCollection" />
+      <MemberSignature Language="F#" Value="member this.Strokes : System.Windows.Ink.StrokeCollection with get, set" Usage="System.Windows.Controls.InkCanvas.Strokes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Ink::StrokeCollection ^ Strokes { System::Windows::Ink::StrokeCollection ^ get(); void set(System::Windows::Ink::StrokeCollection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2869,6 +3181,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StrokesProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StrokesProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.StrokesProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StrokesProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable StrokesProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.InkCanvas.StrokesProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StrokesProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2886,6 +3201,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Controls.InkCanvasStrokesReplacedEventHandler StrokesReplaced;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Controls.InkCanvasStrokesReplacedEventHandler StrokesReplaced" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Controls.InkCanvas.StrokesReplaced" />
+      <MemberSignature Language="VB.NET" Value="Public Event StrokesReplaced As InkCanvasStrokesReplacedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.StrokesReplaced : System.Windows.Controls.InkCanvasStrokesReplacedEventHandler " Usage="member this.StrokesReplaced : System.Windows.Controls.InkCanvasStrokesReplacedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Controls::InkCanvasStrokesReplacedEventHandler ^ StrokesReplaced;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2913,7 +3231,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2934,7 +3257,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddText (string textData);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string textData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.InkCanvas.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddText (textData As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ textData) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -2951,10 +3279,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="Top">
+      <MemberSignature Language="C#" Value="see GetTop, and SetTop" />
+      <MemberSignature Language="ILAsm" Value="see GetTop, and SetTop" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.Top" />
+      <MemberSignature Language="VB.NET" Value="see GetTop, and SetTop" />
+      <MemberSignature Language="F#" Value="see GetTop, and SetTop" Usage="see GetTop, and SetTop" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TopProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TopProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TopProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.InkCanvas.TopProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TopProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TopProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.InkCanvas.TopProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TopProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2972,6 +3319,9 @@
       <MemberSignature Language="C#" Value="public bool UseCustomCursor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseCustomCursor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.UseCustomCursor" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseCustomCursor As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseCustomCursor : bool with get, set" Usage="System.Windows.Controls.InkCanvas.UseCustomCursor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseCustomCursor { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -2979,7 +3329,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3011,6 +3361,9 @@
       <MemberSignature Language="C#" Value="protected override int VisualChildrenCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VisualChildrenCount" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.InkCanvas.VisualChildrenCount" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property VisualChildrenCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.VisualChildrenCount : int" Usage="System.Windows.Controls.InkCanvas.VisualChildrenCount" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property int VisualChildrenCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

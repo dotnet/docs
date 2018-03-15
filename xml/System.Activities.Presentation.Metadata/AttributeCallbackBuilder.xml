@@ -1,7 +1,10 @@
-<Type Name="AttributeCallbackBuilder" FullName="System.Activities.Presentation.Metadata.AttributeCallbackBuilder">
+﻿<Type Name="AttributeCallbackBuilder" FullName="System.Activities.Presentation.Metadata.AttributeCallbackBuilder">
   <TypeSignature Language="C#" Value="public sealed class AttributeCallbackBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AttributeCallbackBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Metadata.AttributeCallbackBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AttributeCallbackBuilder" />
+  <TypeSignature Language="F#" Value="type AttributeCallbackBuilder = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AttributeCallbackBuilder sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +48,9 @@
       <MemberSignature Language="C#" Value="public void AddCustomAttributes (params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes(System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCustomAttributes (ParamArray attributes As Attribute())" />
+      <MemberSignature Language="F#" Value="member this.AddCustomAttributes : Attribute[] -&gt; unit" Usage="attributeCallbackBuilder.AddCustomAttributes attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCustomAttributes(... cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -83,6 +89,9 @@
       <MemberSignature Language="C#" Value="public void AddCustomAttributes (System.ComponentModel.MemberDescriptor descriptor, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.ComponentModel.MemberDescriptor descriptor, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes(System.ComponentModel.MemberDescriptor,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCustomAttributes (descriptor As MemberDescriptor, ParamArray attributes As Attribute())" />
+      <MemberSignature Language="F#" Value="member this.AddCustomAttributes : System.ComponentModel.MemberDescriptor * Attribute[] -&gt; unit" Usage="attributeCallbackBuilder.AddCustomAttributes (descriptor, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCustomAttributes(System::ComponentModel::MemberDescriptor ^ descriptor, ... cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -123,6 +132,9 @@
       <MemberSignature Language="C#" Value="public void AddCustomAttributes (System.Reflection.MemberInfo member, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Reflection.MemberInfo member, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes(System.Reflection.MemberInfo,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCustomAttributes (member As MemberInfo, ParamArray attributes As Attribute())" />
+      <MemberSignature Language="F#" Value="member this.AddCustomAttributes : System.Reflection.MemberInfo * Attribute[] -&gt; unit" Usage="attributeCallbackBuilder.AddCustomAttributes (member, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCustomAttributes(System::Reflection::MemberInfo ^ member, ... cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -163,6 +175,9 @@
       <MemberSignature Language="C#" Value="public void AddCustomAttributes (string memberName, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(string memberName, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes(System.String,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCustomAttributes (memberName As String, ParamArray attributes As Attribute())" />
+      <MemberSignature Language="F#" Value="member this.AddCustomAttributes : string * Attribute[] -&gt; unit" Usage="attributeCallbackBuilder.AddCustomAttributes (memberName, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCustomAttributes(System::String ^ memberName, ... cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -203,6 +218,9 @@
       <MemberSignature Language="C#" Value="public void AddCustomAttributes (System.Windows.DependencyProperty dp, params Attribute[] attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddCustomAttributes(class System.Windows.DependencyProperty dp, class System.Attribute[] attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.AddCustomAttributes(System.Windows.DependencyProperty,System.Attribute[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddCustomAttributes (dp As DependencyProperty, ParamArray attributes As Attribute())" />
+      <MemberSignature Language="F#" Value="member this.AddCustomAttributes : System.Windows.DependencyProperty * Attribute[] -&gt; unit" Usage="attributeCallbackBuilder.AddCustomAttributes (dp, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddCustomAttributes(System::Windows::DependencyProperty ^ dp, ... cli::array &lt;Attribute ^&gt; ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -243,6 +261,9 @@
       <MemberSignature Language="C#" Value="public Type CallbackType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type CallbackType" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Metadata.AttributeCallbackBuilder.CallbackType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CallbackType As Type" />
+      <MemberSignature Language="F#" Value="member this.CallbackType : Type" Usage="System.Activities.Presentation.Metadata.AttributeCallbackBuilder.CallbackType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ CallbackType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

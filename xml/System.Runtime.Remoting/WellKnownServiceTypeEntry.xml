@@ -1,7 +1,10 @@
-<Type Name="WellKnownServiceTypeEntry" FullName="System.Runtime.Remoting.WellKnownServiceTypeEntry">
+﻿<Type Name="WellKnownServiceTypeEntry" FullName="System.Runtime.Remoting.WellKnownServiceTypeEntry">
   <TypeSignature Language="C#" Value="public class WellKnownServiceTypeEntry : System.Runtime.Remoting.TypeEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WellKnownServiceTypeEntry extends System.Runtime.Remoting.TypeEntry" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.WellKnownServiceTypeEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Class WellKnownServiceTypeEntry&#xA;Inherits TypeEntry" />
+  <TypeSignature Language="F#" Value="type WellKnownServiceTypeEntry = class&#xA;    inherit TypeEntry" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WellKnownServiceTypeEntry : System::Runtime::Remoting::TypeEntry" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,10 +45,22 @@
     <altmember cref="M:System.Runtime.Remoting.RemotingConfiguration.RegisterWellKnownServiceType(System.Type,System.String,System.Runtime.Remoting.WellKnownObjectMode)" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.WellKnownServiceTypeEntry" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WellKnownServiceTypeEntry (Type type, string objectUri, System.Runtime.Remoting.WellKnownObjectMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string objectUri, valuetype System.Runtime.Remoting.WellKnownObjectMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.WellKnownServiceTypeEntry.#ctor(System.Type,System.String,System.Runtime.Remoting.WellKnownObjectMode)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.WellKnownServiceTypeEntry : Type * string * System.Runtime.Remoting.WellKnownObjectMode -&gt; System.Runtime.Remoting.WellKnownServiceTypeEntry" Usage="new System.Runtime.Remoting.WellKnownServiceTypeEntry (type, objectUri, mode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WellKnownServiceTypeEntry(Type ^ type, System::String ^ objectUri, System::Runtime::Remoting::WellKnownObjectMode mode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -69,6 +84,9 @@
       <MemberSignature Language="C#" Value="public WellKnownServiceTypeEntry (string typeName, string assemblyName, string objectUri, System.Runtime.Remoting.WellKnownObjectMode mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typeName, string assemblyName, string objectUri, valuetype System.Runtime.Remoting.WellKnownObjectMode mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.WellKnownServiceTypeEntry.#ctor(System.String,System.String,System.String,System.Runtime.Remoting.WellKnownObjectMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String, assemblyName As String, objectUri As String, mode As WellKnownObjectMode)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.WellKnownServiceTypeEntry : string * string * string * System.Runtime.Remoting.WellKnownObjectMode -&gt; System.Runtime.Remoting.WellKnownServiceTypeEntry" Usage="new System.Runtime.Remoting.WellKnownServiceTypeEntry (typeName, assemblyName, objectUri, mode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WellKnownServiceTypeEntry(System::String ^ typeName, System::String ^ assemblyName, System::String ^ objectUri, System::Runtime::Remoting::WellKnownObjectMode mode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -94,6 +112,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Remoting.Contexts.IContextAttribute[] ContextAttributes { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Runtime.Remoting.Contexts.IContextAttribute[] ContextAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.WellKnownServiceTypeEntry.ContextAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextAttributes As IContextAttribute()" />
+      <MemberSignature Language="F#" Value="member this.ContextAttributes : System.Runtime.Remoting.Contexts.IContextAttribute[] with get, set" Usage="System.Runtime.Remoting.WellKnownServiceTypeEntry.ContextAttributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Runtime::Remoting::Contexts::IContextAttribute ^&gt; ^ ContextAttributes { cli::array &lt;System::Runtime::Remoting::Contexts::IContextAttribute ^&gt; ^ get(); void set(cli::array &lt;System::Runtime::Remoting::Contexts::IContextAttribute ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -126,6 +147,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.Remoting.WellKnownObjectMode Mode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Runtime.Remoting.WellKnownObjectMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.WellKnownServiceTypeEntry.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Mode As WellKnownObjectMode" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Runtime.Remoting.WellKnownObjectMode" Usage="System.Runtime.Remoting.WellKnownServiceTypeEntry.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Runtime::Remoting::WellKnownObjectMode Mode { System::Runtime::Remoting::WellKnownObjectMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -145,6 +169,9 @@
       <MemberSignature Language="C#" Value="public Type ObjectType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ObjectType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.WellKnownServiceTypeEntry.ObjectType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectType As Type" />
+      <MemberSignature Language="F#" Value="member this.ObjectType : Type" Usage="System.Runtime.Remoting.WellKnownServiceTypeEntry.ObjectType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ObjectType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -164,6 +191,9 @@
       <MemberSignature Language="C#" Value="public string ObjectUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ObjectUri" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.WellKnownServiceTypeEntry.ObjectUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectUri As String" />
+      <MemberSignature Language="F#" Value="member this.ObjectUri : string" Usage="System.Runtime.Remoting.WellKnownServiceTypeEntry.ObjectUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ObjectUri { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -183,6 +213,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.WellKnownServiceTypeEntry.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="wellKnownServiceTypeEntry.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -199,15 +232,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.WellKnownServiceTypeEntry" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

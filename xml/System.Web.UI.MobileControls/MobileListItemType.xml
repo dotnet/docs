@@ -1,7 +1,10 @@
-<Type Name="MobileListItemType" FullName="System.Web.UI.MobileControls.MobileListItemType">
+﻿<Type Name="MobileListItemType" FullName="System.Web.UI.MobileControls.MobileListItemType">
   <TypeSignature Language="C#" Value="public enum MobileListItemType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MobileListItemType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.MobileListItemType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MobileListItemType" />
+  <TypeSignature Language="F#" Value="type MobileListItemType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MobileListItemType" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="FooterItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.MobileListItemType FooterItem = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobileListItemType.FooterItem" />
+      <MemberSignature Language="VB.NET" Value="FooterItem" />
+      <MemberSignature Language="F#" Value="FooterItem = 2" Usage="System.Web.UI.MobileControls.MobileListItemType.FooterItem" />
+      <MemberSignature Language="C++ CLI" Value="FooterItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -44,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.MobileListItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Represents a footer for a list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
@@ -52,6 +59,9 @@
       <MemberSignature Language="C#" Value="HeaderItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.MobileListItemType HeaderItem = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobileListItemType.HeaderItem" />
+      <MemberSignature Language="VB.NET" Value="HeaderItem" />
+      <MemberSignature Language="F#" Value="HeaderItem = 0" Usage="System.Web.UI.MobileControls.MobileListItemType.HeaderItem" />
+      <MemberSignature Language="C++ CLI" Value="HeaderItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -60,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.MobileListItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Represents a heading for a list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
@@ -68,6 +79,9 @@
       <MemberSignature Language="C#" Value="ListItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.MobileListItemType ListItem = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobileListItemType.ListItem" />
+      <MemberSignature Language="VB.NET" Value="ListItem" />
+      <MemberSignature Language="F#" Value="ListItem = 1" Usage="System.Web.UI.MobileControls.MobileListItemType.ListItem" />
+      <MemberSignature Language="C++ CLI" Value="ListItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -76,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.MobileListItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Represents an item in a list. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>
@@ -84,6 +99,9 @@
       <MemberSignature Language="C#" Value="SeparatorItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.MobileControls.MobileListItemType SeparatorItem = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.MobileControls.MobileListItemType.SeparatorItem" />
+      <MemberSignature Language="VB.NET" Value="SeparatorItem" />
+      <MemberSignature Language="F#" Value="SeparatorItem = 3" Usage="System.Web.UI.MobileControls.MobileListItemType.SeparatorItem" />
+      <MemberSignature Language="C++ CLI" Value="SeparatorItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -92,6 +110,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.MobileControls.MobileListItemType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Represents a separator between list items. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
       </Docs>

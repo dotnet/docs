@@ -1,7 +1,10 @@
-<Type Name="HttpCacheValidateHandler" FullName="System.Web.HttpCacheValidateHandler">
+﻿<Type Name="HttpCacheValidateHandler" FullName="System.Web.HttpCacheValidateHandler">
   <TypeSignature Language="C#" Value="public delegate void HttpCacheValidateHandler(HttpContext context, object data, ref HttpValidationStatus validationStatus);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HttpCacheValidateHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpCacheValidateHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub HttpCacheValidateHandler(context As HttpContext, data As Object, ByRef validationStatus As HttpValidationStatus)" />
+  <TypeSignature Language="F#" Value="type HttpCacheValidateHandler = delegate of HttpContext * obj *  -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void HttpCacheValidateHandler(HttpContext ^ context, System::Object ^ data, HttpValidationStatus % validationStatus);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

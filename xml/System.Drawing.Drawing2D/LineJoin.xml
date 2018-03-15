@@ -1,7 +1,10 @@
-<Type Name="LineJoin" FullName="System.Drawing.Drawing2D.LineJoin">
+﻿<Type Name="LineJoin" FullName="System.Drawing.Drawing2D.LineJoin">
   <TypeSignature Language="C#" Value="public enum LineJoin" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LineJoin extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Drawing2D.LineJoin" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LineJoin" />
+  <TypeSignature Language="F#" Value="type LineJoin = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LineJoin" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Bevel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineJoin Bevel = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineJoin.Bevel" />
+      <MemberSignature Language="VB.NET" Value="Bevel" />
+      <MemberSignature Language="F#" Value="Bevel = 1" Usage="System.Drawing.Drawing2D.LineJoin.Bevel" />
+      <MemberSignature Language="C++ CLI" Value="Bevel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineJoin</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies a beveled join. This produces a diagonal corner.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="Miter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineJoin Miter = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineJoin.Miter" />
+      <MemberSignature Language="VB.NET" Value="Miter" />
+      <MemberSignature Language="F#" Value="Miter = 0" Usage="System.Drawing.Drawing2D.LineJoin.Miter" />
+      <MemberSignature Language="C++ CLI" Value="Miter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineJoin</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies a mitered join. This produces a sharp corner or a clipped corner, depending on whether the length of the miter exceeds the miter limit.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="MiterClipped" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineJoin MiterClipped = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineJoin.MiterClipped" />
+      <MemberSignature Language="VB.NET" Value="MiterClipped" />
+      <MemberSignature Language="F#" Value="MiterClipped = 3" Usage="System.Drawing.Drawing2D.LineJoin.MiterClipped" />
+      <MemberSignature Language="C++ CLI" Value="MiterClipped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineJoin</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies a mitered join. This produces a sharp corner or a beveled corner, depending on whether the length of the miter exceeds the miter limit.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="Round" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Drawing2D.LineJoin Round = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Drawing2D.LineJoin.Round" />
+      <MemberSignature Language="VB.NET" Value="Round" />
+      <MemberSignature Language="F#" Value="Round = 2" Usage="System.Drawing.Drawing2D.LineJoin.Round" />
+      <MemberSignature Language="C++ CLI" Value="Round" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Drawing2D.LineJoin</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies a circular join. This produces a smooth, circular arc between the lines.</summary>
       </Docs>

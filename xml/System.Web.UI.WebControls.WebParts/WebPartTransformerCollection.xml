@@ -1,7 +1,10 @@
-<Type Name="WebPartTransformerCollection" FullName="System.Web.UI.WebControls.WebParts.WebPartTransformerCollection">
+﻿<Type Name="WebPartTransformerCollection" FullName="System.Web.UI.WebControls.WebParts.WebPartTransformerCollection">
   <TypeSignature Language="C#" Value="public sealed class WebPartTransformerCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebPartTransformerCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebPartTransformerCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="F#" Value="type WebPartTransformerCollection = class&#xA;    inherit CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPartTransformerCollection sealed : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public WebPartTransformerCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPartTransformerCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public int Add (System.Web.UI.WebControls.WebParts.WebPartTransformer transformer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.UI.WebControls.WebParts.WebPartTransformer transformer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.Add(System.Web.UI.WebControls.WebParts.WebPartTransformer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (transformer As WebPartTransformer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.WebControls.WebParts.WebPartTransformer -&gt; int" Usage="webPartTransformerCollection.Add transformer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::WebControls::WebParts::WebPartTransformer ^ transformer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -63,6 +71,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.WebControls.WebParts.WebPartTransformer transformer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.WebParts.WebPartTransformer transformer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.Contains(System.Web.UI.WebControls.WebParts.WebPartTransformer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (transformer As WebPartTransformer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.WebParts.WebPartTransformer -&gt; bool" Usage="webPartTransformerCollection.Contains transformer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::WebParts::WebPartTransformer ^ transformer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -92,6 +103,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.WebParts.WebPartTransformer[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.WebParts.WebPartTransformer[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.CopyTo(System.Web.UI.WebControls.WebParts.WebPartTransformer[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As WebPartTransformer(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.WebControls.WebParts.WebPartTransformer[] * int -&gt; unit" Usage="webPartTransformerCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::WebParts::WebPartTransformer ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -122,6 +136,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.WebParts.WebPartTransformer transformer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.WebParts.WebPartTransformer transformer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.IndexOf(System.Web.UI.WebControls.WebParts.WebPartTransformer)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (transformer As WebPartTransformer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.WebParts.WebPartTransformer -&gt; int" Usage="webPartTransformerCollection.IndexOf transformer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::WebParts::WebPartTransformer ^ transformer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -144,6 +161,9 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.UI.WebControls.WebParts.WebPartTransformer transformer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.UI.WebControls.WebParts.WebPartTransformer transformer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.Insert(System.Int32,System.Web.UI.WebControls.WebParts.WebPartTransformer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, transformer As WebPartTransformer)" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.WebControls.WebParts.WebPartTransformer -&gt; unit" Usage="webPartTransformerCollection.Insert (index, transformer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::WebParts::WebPartTransformer ^ transformer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -167,6 +187,9 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -186,6 +209,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.WebPartTransformer this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.WebPartTransformer Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As WebPartTransformer" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.WebParts.WebPartTransformer with get, set" Usage="System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::WebPartTransformer ^ default[int] { System::Web::UI::WebControls::WebParts::WebPartTransformer ^ get(int index); void set(int index, System::Web::UI::WebControls::WebParts::WebPartTransformer ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -208,6 +234,9 @@
       <MemberSignature Language="C#" Value="protected override void OnClear ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.OnClear" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
+      <MemberSignature Language="F#" Value="override this.OnClear : unit -&gt; unit" Usage="webPartTransformerCollection.OnClear " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -226,6 +255,9 @@
       <MemberSignature Language="C#" Value="protected override void OnInsert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.OnInsert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsert (index As Integer, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnInsert : int * obj -&gt; unit" Usage="webPartTransformerCollection.OnInsert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsert(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -249,6 +281,9 @@
       <MemberSignature Language="C#" Value="protected override void OnRemove (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemove(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.OnRemove(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemove (index As Integer, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnRemove : int * obj -&gt; unit" Usage="webPartTransformerCollection.OnRemove (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemove(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -272,6 +307,9 @@
       <MemberSignature Language="C#" Value="protected override void OnSet (int index, object oldValue, object newValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSet(int32 index, object oldValue, object newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.OnSet(System.Int32,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSet (index As Integer, oldValue As Object, newValue As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnSet : int * obj * obj -&gt; unit" Usage="webPartTransformerCollection.OnSet (index, oldValue, newValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSet(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -297,6 +335,9 @@
       <MemberSignature Language="C#" Value="protected override void OnValidate (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidate(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.OnValidate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnValidate : obj -&gt; unit" Usage="webPartTransformerCollection.OnValidate value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -318,6 +359,9 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.WebControls.WebParts.WebPartTransformer transformer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.WebControls.WebParts.WebPartTransformer transformer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.WebPartTransformerCollection.Remove(System.Web.UI.WebControls.WebParts.WebPartTransformer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (transformer As WebPartTransformer)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.WebControls.WebParts.WebPartTransformer -&gt; unit" Usage="webPartTransformerCollection.Remove transformer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::WebParts::WebPartTransformer ^ transformer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

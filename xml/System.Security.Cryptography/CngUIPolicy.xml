@@ -1,7 +1,10 @@
-<Type Name="CngUIPolicy" FullName="System.Security.Cryptography.CngUIPolicy">
+﻿<Type Name="CngUIPolicy" FullName="System.Security.Cryptography.CngUIPolicy">
   <TypeSignature Language="C#" Value="public sealed class CngUIPolicy" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CngUIPolicy extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngUIPolicy" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CngUIPolicy" />
+  <TypeSignature Language="F#" Value="type CngUIPolicy = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CngUIPolicy sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -32,10 +35,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CngUIPolicy" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public CngUIPolicy (System.Security.Cryptography.CngUIProtectionLevels protectionLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.CngUIProtectionLevels protectionLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngUIPolicy.#ctor(System.Security.Cryptography.CngUIProtectionLevels)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (protectionLevel As CngUIProtectionLevels)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CngUIPolicy : System.Security.Cryptography.CngUIProtectionLevels -&gt; System.Security.Cryptography.CngUIPolicy" Usage="new System.Security.Cryptography.CngUIPolicy protectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CngUIPolicy(System::Security::Cryptography::CngUIProtectionLevels protectionLevel);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -71,6 +87,9 @@
       <MemberSignature Language="C#" Value="public CngUIPolicy (System.Security.Cryptography.CngUIProtectionLevels protectionLevel, string friendlyName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.CngUIProtectionLevels protectionLevel, string friendlyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngUIPolicy.#ctor(System.Security.Cryptography.CngUIProtectionLevels,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (protectionLevel As CngUIProtectionLevels, friendlyName As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CngUIPolicy : System.Security.Cryptography.CngUIProtectionLevels * string -&gt; System.Security.Cryptography.CngUIPolicy" Usage="new System.Security.Cryptography.CngUIPolicy (protectionLevel, friendlyName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CngUIPolicy(System::Security::Cryptography::CngUIProtectionLevels protectionLevel, System::String ^ friendlyName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -101,6 +120,9 @@
       <MemberSignature Language="C#" Value="public CngUIPolicy (System.Security.Cryptography.CngUIProtectionLevels protectionLevel, string friendlyName, string description);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.CngUIProtectionLevels protectionLevel, string friendlyName, string description) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngUIPolicy.#ctor(System.Security.Cryptography.CngUIProtectionLevels,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (protectionLevel As CngUIProtectionLevels, friendlyName As String, description As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CngUIPolicy : System.Security.Cryptography.CngUIProtectionLevels * string * string -&gt; System.Security.Cryptography.CngUIPolicy" Usage="new System.Security.Cryptography.CngUIPolicy (protectionLevel, friendlyName, description)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CngUIPolicy(System::Security::Cryptography::CngUIProtectionLevels protectionLevel, System::String ^ friendlyName, System::String ^ description);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -133,6 +155,9 @@
       <MemberSignature Language="C#" Value="public CngUIPolicy (System.Security.Cryptography.CngUIProtectionLevels protectionLevel, string friendlyName, string description, string useContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.CngUIProtectionLevels protectionLevel, string friendlyName, string description, string useContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngUIPolicy.#ctor(System.Security.Cryptography.CngUIProtectionLevels,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (protectionLevel As CngUIProtectionLevels, friendlyName As String, description As String, useContext As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CngUIPolicy : System.Security.Cryptography.CngUIProtectionLevels * string * string * string -&gt; System.Security.Cryptography.CngUIPolicy" Usage="new System.Security.Cryptography.CngUIPolicy (protectionLevel, friendlyName, description, useContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CngUIPolicy(System::Security::Cryptography::CngUIProtectionLevels protectionLevel, System::String ^ friendlyName, System::String ^ description, System::String ^ useContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -167,6 +192,9 @@
       <MemberSignature Language="C#" Value="public CngUIPolicy (System.Security.Cryptography.CngUIProtectionLevels protectionLevel, string friendlyName, string description, string useContext, string creationTitle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Cryptography.CngUIProtectionLevels protectionLevel, string friendlyName, string description, string useContext, string creationTitle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.CngUIPolicy.#ctor(System.Security.Cryptography.CngUIProtectionLevels,System.String,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (protectionLevel As CngUIProtectionLevels, friendlyName As String, description As String, useContext As String, creationTitle As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.CngUIPolicy : System.Security.Cryptography.CngUIProtectionLevels * string * string * string * string -&gt; System.Security.Cryptography.CngUIPolicy" Usage="new System.Security.Cryptography.CngUIPolicy (protectionLevel, friendlyName, description, useContext, creationTitle)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CngUIPolicy(System::Security::Cryptography::CngUIProtectionLevels protectionLevel, System::String ^ friendlyName, System::String ^ description, System::String ^ useContext, System::String ^ creationTitle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -203,6 +231,9 @@
       <MemberSignature Language="C#" Value="public string CreationTitle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CreationTitle" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngUIPolicy.CreationTitle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CreationTitle As String" />
+      <MemberSignature Language="F#" Value="member this.CreationTitle : string" Usage="System.Security.Cryptography.CngUIPolicy.CreationTitle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CreationTitle { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -231,6 +262,9 @@
       <MemberSignature Language="C#" Value="public string Description { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Description" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngUIPolicy.Description" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Description As String" />
+      <MemberSignature Language="F#" Value="member this.Description : string" Usage="System.Security.Cryptography.CngUIPolicy.Description" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Description { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -259,6 +293,9 @@
       <MemberSignature Language="C#" Value="public string FriendlyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FriendlyName" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngUIPolicy.FriendlyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FriendlyName As String" />
+      <MemberSignature Language="F#" Value="member this.FriendlyName : string" Usage="System.Security.Cryptography.CngUIPolicy.FriendlyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ FriendlyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -287,6 +324,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.CngUIProtectionLevels ProtectionLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.CngUIProtectionLevels ProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngUIPolicy.ProtectionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProtectionLevel As CngUIProtectionLevels" />
+      <MemberSignature Language="F#" Value="member this.ProtectionLevel : System.Security.Cryptography.CngUIProtectionLevels" Usage="System.Security.Cryptography.CngUIPolicy.ProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::CngUIProtectionLevels ProtectionLevel { System::Security::Cryptography::CngUIProtectionLevels get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -315,6 +355,9 @@
       <MemberSignature Language="C#" Value="public string UseContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UseContext" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.CngUIPolicy.UseContext" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UseContext As String" />
+      <MemberSignature Language="F#" Value="member this.UseContext : string" Usage="System.Security.Cryptography.CngUIPolicy.UseContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UseContext { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -339,15 +382,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.3.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.CngUIPolicy" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

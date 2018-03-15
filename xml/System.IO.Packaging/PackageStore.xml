@@ -1,7 +1,10 @@
-<Type Name="PackageStore" FullName="System.IO.Packaging.PackageStore">
+﻿<Type Name="PackageStore" FullName="System.IO.Packaging.PackageStore">
   <TypeSignature Language="C#" Value="public static class PackageStore" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed PackageStore extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.PackageStore" />
+  <TypeSignature Language="VB.NET" Value="Public Class PackageStore" />
+  <TypeSignature Language="F#" Value="type PackageStore = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PackageStore abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +52,8 @@
       <MemberSignature Language="C#" Value="public static void AddPackage (Uri uri, System.IO.Packaging.Package package);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void AddPackage(class System.Uri uri, class System.IO.Packaging.Package package) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageStore.AddPackage(System.Uri,System.IO.Packaging.Package)" />
+      <MemberSignature Language="F#" Value="static member AddPackage : Uri * System.IO.Packaging.Package -&gt; unit" Usage="System.IO.Packaging.PackageStore.AddPackage (uri, package)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void AddPackage(Uri ^ uri, System::IO::Packaging::Package ^ package);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -100,6 +105,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.Packaging.Package GetPackage (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.IO.Packaging.Package GetPackage(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageStore.GetPackage(System.Uri)" />
+      <MemberSignature Language="F#" Value="static member GetPackage : Uri -&gt; System.IO.Packaging.Package" Usage="System.IO.Packaging.PackageStore.GetPackage uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::IO::Packaging::Package ^ GetPackage(Uri ^ uri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -145,6 +152,8 @@
       <MemberSignature Language="C#" Value="public static void RemovePackage (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RemovePackage(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.PackageStore.RemovePackage(System.Uri)" />
+      <MemberSignature Language="F#" Value="static member RemovePackage : Uri -&gt; unit" Usage="System.IO.Packaging.PackageStore.RemovePackage uri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RemovePackage(Uri ^ uri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

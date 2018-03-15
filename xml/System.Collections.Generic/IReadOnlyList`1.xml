@@ -1,7 +1,10 @@
-<Type Name="IReadOnlyList&lt;T&gt;" FullName="System.Collections.Generic.IReadOnlyList&lt;T&gt;">
+﻿<Type Name="IReadOnlyList&lt;T&gt;" FullName="System.Collections.Generic.IReadOnlyList&lt;T&gt;">
   <TypeSignature Language="C#" Value="public interface IReadOnlyList&lt;out T&gt; : System.Collections.Generic.IEnumerable&lt;out T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;out T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IReadOnlyList`1&lt;+ T&gt; implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.IReadOnlyList`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IReadOnlyList(Of Out T)&#xA;Implements IEnumerable(Of Out T), IReadOnlyCollection(Of Out T)" />
+  <TypeSignature Language="F#" Value="type IReadOnlyList&lt;'T&gt; = interface&#xA;    interface IReadOnlyCollection&lt;'T&gt;&#xA;    interface seq&lt;'T&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public interface class IReadOnlyList : System::Collections::Generic::IEnumerable&lt;T&gt;, System::Collections::Generic::IReadOnlyCollection&lt;T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +54,8 @@
       <MemberSignature Language="C#" Value="public T this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As T" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : 'T" Usage="System.Collections.Generic.IReadOnlyList&lt;'T&gt;.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>

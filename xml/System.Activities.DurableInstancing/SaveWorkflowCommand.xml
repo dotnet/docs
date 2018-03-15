@@ -1,7 +1,10 @@
-<Type Name="SaveWorkflowCommand" FullName="System.Activities.DurableInstancing.SaveWorkflowCommand">
+﻿<Type Name="SaveWorkflowCommand" FullName="System.Activities.DurableInstancing.SaveWorkflowCommand">
   <TypeSignature Language="C#" Value="public sealed class SaveWorkflowCommand : System.Runtime.DurableInstancing.InstancePersistenceCommand" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SaveWorkflowCommand extends System.Runtime.DurableInstancing.InstancePersistenceCommand" />
   <TypeSignature Language="DocId" Value="T:System.Activities.DurableInstancing.SaveWorkflowCommand" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SaveWorkflowCommand&#xA;Inherits InstancePersistenceCommand" />
+  <TypeSignature Language="F#" Value="type SaveWorkflowCommand = class&#xA;    inherit InstancePersistenceCommand" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SaveWorkflowCommand sealed : System::Runtime::DurableInstancing::InstancePersistenceCommand" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public SaveWorkflowCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SaveWorkflowCommand.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SaveWorkflowCommand();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -31,9 +36,12 @@
       </Docs>
     </Member>
     <Member MemberName="AutomaticallyAcquiringLock">
-      <MemberSignature Language="C#" Value="protected override bool AutomaticallyAcquiringLock { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override bool AutomaticallyAcquiringLock { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutomaticallyAcquiringLock" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SaveWorkflowCommand.AutomaticallyAcquiringLock" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property AutomaticallyAcquiringLock As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutomaticallyAcquiringLock : bool" Usage="System.Activities.DurableInstancing.SaveWorkflowCommand.AutomaticallyAcquiringLock" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool AutomaticallyAcquiringLock { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -52,6 +60,9 @@
       <MemberSignature Language="C#" Value="public bool CompleteInstance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CompleteInstance" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SaveWorkflowCommand.CompleteInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompleteInstance As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CompleteInstance : bool with get, set" Usage="System.Activities.DurableInstancing.SaveWorkflowCommand.CompleteInstance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CompleteInstance { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -71,6 +82,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt; InstanceData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, class System.Runtime.DurableInstancing.InstanceValue&gt; InstanceData" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceData As IDictionary(Of XName, InstanceValue)" />
+      <MemberSignature Language="F#" Value="member this.InstanceData : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt;" Usage="System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ InstanceData { System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -89,6 +103,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;Guid,System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;&gt; InstanceKeyMetadataChanges { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;valuetype System.Guid, class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, class System.Runtime.DurableInstancing.InstanceValue&gt;&gt; InstanceKeyMetadataChanges" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceKeyMetadataChanges" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceKeyMetadataChanges As IDictionary(Of Guid, IDictionary(Of XName, InstanceValue))" />
+      <MemberSignature Language="F#" Value="member this.InstanceKeyMetadataChanges : System.Collections.Generic.IDictionary&lt;Guid, System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt;&gt;" Usage="System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceKeyMetadataChanges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;Guid, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^&gt; ^ InstanceKeyMetadataChanges { System::Collections::Generic::IDictionary&lt;Guid, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -107,6 +124,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;Guid,System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt;&gt; InstanceKeysToAssociate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;valuetype System.Guid, class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, class System.Runtime.DurableInstancing.InstanceValue&gt;&gt; InstanceKeysToAssociate" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceKeysToAssociate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceKeysToAssociate As IDictionary(Of Guid, IDictionary(Of XName, InstanceValue))" />
+      <MemberSignature Language="F#" Value="member this.InstanceKeysToAssociate : System.Collections.Generic.IDictionary&lt;Guid, System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt;&gt;" Usage="System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceKeysToAssociate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;Guid, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^&gt; ^ InstanceKeysToAssociate { System::Collections::Generic::IDictionary&lt;Guid, System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -125,6 +145,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Guid&gt; InstanceKeysToComplete { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;valuetype System.Guid&gt; InstanceKeysToComplete" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceKeysToComplete" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceKeysToComplete As ICollection(Of Guid)" />
+      <MemberSignature Language="F#" Value="member this.InstanceKeysToComplete : System.Collections.Generic.ICollection&lt;Guid&gt;" Usage="System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceKeysToComplete" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Guid&gt; ^ InstanceKeysToComplete { System::Collections::Generic::ICollection&lt;Guid&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -143,6 +166,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Guid&gt; InstanceKeysToFree { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;valuetype System.Guid&gt; InstanceKeysToFree" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceKeysToFree" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceKeysToFree As ICollection(Of Guid)" />
+      <MemberSignature Language="F#" Value="member this.InstanceKeysToFree : System.Collections.Generic.ICollection&lt;Guid&gt;" Usage="System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceKeysToFree" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Guid&gt; ^ InstanceKeysToFree { System::Collections::Generic::ICollection&lt;Guid&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -161,6 +187,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceValue&gt; InstanceMetadataChanges { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;class System.Xml.Linq.XName, class System.Runtime.DurableInstancing.InstanceValue&gt; InstanceMetadataChanges" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceMetadataChanges" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InstanceMetadataChanges As IDictionary(Of XName, InstanceValue)" />
+      <MemberSignature Language="F#" Value="member this.InstanceMetadataChanges : System.Collections.Generic.IDictionary&lt;System.Xml.Linq.XName, System.Runtime.DurableInstancing.InstanceValue&gt;" Usage="System.Activities.DurableInstancing.SaveWorkflowCommand.InstanceMetadataChanges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ InstanceMetadataChanges { System::Collections::Generic::IDictionary&lt;System::Xml::Linq::XName ^, System::Runtime::DurableInstancing::InstanceValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -176,9 +205,12 @@
       </Docs>
     </Member>
     <Member MemberName="IsTransactionEnlistmentOptional">
-      <MemberSignature Language="C#" Value="protected override bool IsTransactionEnlistmentOptional { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override bool IsTransactionEnlistmentOptional { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTransactionEnlistmentOptional" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SaveWorkflowCommand.IsTransactionEnlistmentOptional" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property IsTransactionEnlistmentOptional As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTransactionEnlistmentOptional : bool" Usage="System.Activities.DurableInstancing.SaveWorkflowCommand.IsTransactionEnlistmentOptional" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property bool IsTransactionEnlistmentOptional { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -197,6 +229,9 @@
       <MemberSignature Language="C#" Value="public bool UnlockInstance { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UnlockInstance" />
       <MemberSignature Language="DocId" Value="P:System.Activities.DurableInstancing.SaveWorkflowCommand.UnlockInstance" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnlockInstance As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UnlockInstance : bool with get, set" Usage="System.Activities.DurableInstancing.SaveWorkflowCommand.UnlockInstance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UnlockInstance { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -213,9 +248,12 @@
       </Docs>
     </Member>
     <Member MemberName="Validate">
-      <MemberSignature Language="C#" Value="protected override void Validate (System.Runtime.DurableInstancing.InstanceView view);" />
+      <MemberSignature Language="C#" Value="protected internal override void Validate (System.Runtime.DurableInstancing.InstanceView view);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Validate(class System.Runtime.DurableInstancing.InstanceView view) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DurableInstancing.SaveWorkflowCommand.Validate(System.Runtime.DurableInstancing.InstanceView)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Validate (view As InstanceView)" />
+      <MemberSignature Language="F#" Value="override this.Validate : System.Runtime.DurableInstancing.InstanceView -&gt; unit" Usage="saveWorkflowCommand.Validate view" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Validate(System::Runtime::DurableInstancing::InstanceView ^ view);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="SemanticResultValue" FullName="System.Speech.Recognition.SemanticResultValue">
+﻿<Type Name="SemanticResultValue" FullName="System.Speech.Recognition.SemanticResultValue">
   <TypeSignature Language="C#" Value="public class SemanticResultValue" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SemanticResultValue extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SemanticResultValue" />
+  <TypeSignature Language="VB.NET" Value="Public Class SemanticResultValue" />
+  <TypeSignature Language="F#" Value="type SemanticResultValue = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SemanticResultValue" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -162,6 +165,9 @@ private Grammar FgBgColorGrammar()
       <MemberSignature Language="C#" Value="public SemanticResultValue (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultValue.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object)" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SemanticResultValue : obj -&gt; System.Speech.Recognition.SemanticResultValue" Usage="new System.Speech.Recognition.SemanticResultValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SemanticResultValue(System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -251,6 +257,9 @@ private Grammar FgBgColorGrammar()
       <MemberSignature Language="C#" Value="public SemanticResultValue (System.Speech.Recognition.GrammarBuilder builder, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Speech.Recognition.GrammarBuilder builder, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultValue.#ctor(System.Speech.Recognition.GrammarBuilder,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (builder As GrammarBuilder, value As Object)" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SemanticResultValue : System.Speech.Recognition.GrammarBuilder * obj -&gt; System.Speech.Recognition.SemanticResultValue" Usage="new System.Speech.Recognition.SemanticResultValue (builder, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SemanticResultValue(System::Speech::Recognition::GrammarBuilder ^ builder, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -342,6 +351,9 @@ private Grammar FgBgColorGrammar()
       <MemberSignature Language="C#" Value="public SemanticResultValue (string phrase, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string phrase, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultValue.#ctor(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (phrase As String, value As Object)" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SemanticResultValue : string * obj -&gt; System.Speech.Recognition.SemanticResultValue" Usage="new System.Speech.Recognition.SemanticResultValue (phrase, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SemanticResultValue(System::String ^ phrase, System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -431,6 +443,9 @@ private Grammar FgBgColorGrammar()
       <MemberSignature Language="C#" Value="public System.Speech.Recognition.GrammarBuilder ToGrammarBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Speech.Recognition.GrammarBuilder ToGrammarBuilder() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticResultValue.ToGrammarBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToGrammarBuilder () As GrammarBuilder" />
+      <MemberSignature Language="F#" Value="member this.ToGrammarBuilder : unit -&gt; System.Speech.Recognition.GrammarBuilder" Usage="semanticResultValue.ToGrammarBuilder " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Speech::Recognition::GrammarBuilder ^ ToGrammarBuilder();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

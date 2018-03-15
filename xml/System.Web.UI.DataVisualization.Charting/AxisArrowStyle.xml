@@ -1,7 +1,10 @@
-<Type Name="AxisArrowStyle" FullName="System.Web.UI.DataVisualization.Charting.AxisArrowStyle">
+﻿<Type Name="AxisArrowStyle" FullName="System.Web.UI.DataVisualization.Charting.AxisArrowStyle">
   <TypeSignature Language="C#" Value="public enum AxisArrowStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AxisArrowStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.AxisArrowStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AxisArrowStyle" />
+  <TypeSignature Language="F#" Value="type AxisArrowStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AxisArrowStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Lines" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.AxisArrowStyle Lines = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisArrowStyle.Lines" />
+      <MemberSignature Language="VB.NET" Value="Lines" />
+      <MemberSignature Language="F#" Value="Lines = 3" Usage="System.Web.UI.DataVisualization.Charting.AxisArrowStyle.Lines" />
+      <MemberSignature Language="C++ CLI" Value="Lines" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.AxisArrowStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A line-shaped arrow is used for the relevant axis.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.AxisArrowStyle None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisArrowStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.DataVisualization.Charting.AxisArrowStyle.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.AxisArrowStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No arrow is used for the relevant axis.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="SharpTriangle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.AxisArrowStyle SharpTriangle = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisArrowStyle.SharpTriangle" />
+      <MemberSignature Language="VB.NET" Value="SharpTriangle" />
+      <MemberSignature Language="F#" Value="SharpTriangle = 2" Usage="System.Web.UI.DataVisualization.Charting.AxisArrowStyle.SharpTriangle" />
+      <MemberSignature Language="C++ CLI" Value="SharpTriangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.AxisArrowStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A sharp triangular arrow is used for the relevant axis.</summary>
       </Docs>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="Triangle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.AxisArrowStyle Triangle = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.AxisArrowStyle.Triangle" />
+      <MemberSignature Language="VB.NET" Value="Triangle" />
+      <MemberSignature Language="F#" Value="Triangle = 1" Usage="System.Web.UI.DataVisualization.Charting.AxisArrowStyle.Triangle" />
+      <MemberSignature Language="C++ CLI" Value="Triangle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -81,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.AxisArrowStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A triangular arrow is used for the relevant axis.</summary>
       </Docs>

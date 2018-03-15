@@ -1,7 +1,10 @@
-<Type Name="DeviceSpecificChoiceTemplateBuilder" FullName="System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder">
+﻿<Type Name="DeviceSpecificChoiceTemplateBuilder" FullName="System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder">
   <TypeSignature Language="C#" Value="public class DeviceSpecificChoiceTemplateBuilder : System.Web.UI.TemplateBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DeviceSpecificChoiceTemplateBuilder extends System.Web.UI.TemplateBuilder" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class DeviceSpecificChoiceTemplateBuilder&#xA;Inherits TemplateBuilder" />
+  <TypeSignature Language="F#" Value="type DeviceSpecificChoiceTemplateBuilder = class&#xA;    inherit TemplateBuilder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DeviceSpecificChoiceTemplateBuilder : System::Web::UI::TemplateBuilder" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,8 @@
       <MemberSignature Language="C#" Value="public DeviceSpecificChoiceTemplateBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DeviceSpecificChoiceTemplateBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -46,6 +51,9 @@
       <MemberSignature Language="C#" Value="public override void AppendLiteralString (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendLiteralString(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder.AppendLiteralString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendLiteralString (text As String)" />
+      <MemberSignature Language="F#" Value="override this.AppendLiteralString : string -&gt; unit" Usage="deviceSpecificChoiceTemplateBuilder.AppendLiteralString text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendLiteralString(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -67,6 +75,9 @@
       <MemberSignature Language="C#" Value="public override void AppendSubBuilder (System.Web.UI.ControlBuilder subBuilder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AppendSubBuilder(class System.Web.UI.ControlBuilder subBuilder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder.AppendSubBuilder(System.Web.UI.ControlBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AppendSubBuilder (subBuilder As ControlBuilder)" />
+      <MemberSignature Language="F#" Value="override this.AppendSubBuilder : System.Web.UI.ControlBuilder -&gt; unit" Usage="deviceSpecificChoiceTemplateBuilder.AppendSubBuilder subBuilder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AppendSubBuilder(System::Web::UI::ControlBuilder ^ subBuilder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -88,6 +99,8 @@
       <MemberSignature Language="C#" Value="public override void Init (System.Web.UI.TemplateParser parser, System.Web.UI.ControlBuilder parentBuilder, Type type, string tagName, string id, System.Collections.IDictionary attributes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Init(class System.Web.UI.TemplateParser parser, class System.Web.UI.ControlBuilder parentBuilder, class System.Type type, string tagName, string id, class System.Collections.IDictionary attributes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.DeviceSpecificChoiceTemplateBuilder.Init(System.Web.UI.TemplateParser,System.Web.UI.ControlBuilder,System.Type,System.String,System.String,System.Collections.IDictionary)" />
+      <MemberSignature Language="F#" Value="override this.Init : System.Web.UI.TemplateParser * System.Web.UI.ControlBuilder * Type * string * string * System.Collections.IDictionary -&gt; unit" Usage="deviceSpecificChoiceTemplateBuilder.Init (parser, parentBuilder, type, tagName, id, attributes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Init(System::Web::UI::TemplateParser ^ parser, System::Web::UI::ControlBuilder ^ parentBuilder, Type ^ type, System::String ^ tagName, System::String ^ id, System::Collections::IDictionary ^ attributes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

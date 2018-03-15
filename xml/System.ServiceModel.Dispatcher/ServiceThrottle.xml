@@ -1,7 +1,10 @@
-<Type Name="ServiceThrottle" FullName="System.ServiceModel.Dispatcher.ServiceThrottle">
+﻿<Type Name="ServiceThrottle" FullName="System.ServiceModel.Dispatcher.ServiceThrottle">
   <TypeSignature Language="C#" Value="public sealed class ServiceThrottle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceThrottle extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Dispatcher.ServiceThrottle" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceThrottle" />
+  <TypeSignature Language="F#" Value="type ServiceThrottle = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceThrottle sealed" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="public int MaxConcurrentCalls { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConcurrentCalls" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ServiceThrottle.MaxConcurrentCalls" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxConcurrentCalls As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxConcurrentCalls : int with get, set" Usage="System.ServiceModel.Dispatcher.ServiceThrottle.MaxConcurrentCalls" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConcurrentCalls { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -77,6 +83,9 @@
       <MemberSignature Language="C#" Value="public int MaxConcurrentInstances { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConcurrentInstances" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ServiceThrottle.MaxConcurrentInstances" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxConcurrentInstances As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxConcurrentInstances : int with get, set" Usage="System.ServiceModel.Dispatcher.ServiceThrottle.MaxConcurrentInstances" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConcurrentInstances { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -112,6 +121,9 @@
       <MemberSignature Language="C#" Value="public int MaxConcurrentSessions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxConcurrentSessions" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Dispatcher.ServiceThrottle.MaxConcurrentSessions" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxConcurrentSessions As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxConcurrentSessions : int with get, set" Usage="System.ServiceModel.Dispatcher.ServiceThrottle.MaxConcurrentSessions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxConcurrentSessions { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

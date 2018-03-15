@@ -1,7 +1,10 @@
-<Type Name="ExceptionPersistenceExtension" FullName="System.Activities.ExceptionPersistenceExtension">
+﻿<Type Name="ExceptionPersistenceExtension" FullName="System.Activities.ExceptionPersistenceExtension">
   <TypeSignature Language="C#" Value="public class ExceptionPersistenceExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExceptionPersistenceExtension extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.ExceptionPersistenceExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExceptionPersistenceExtension" />
+  <TypeSignature Language="F#" Value="type ExceptionPersistenceExtension = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExceptionPersistenceExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public ExceptionPersistenceExtension ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.ExceptionPersistenceExtension.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExceptionPersistenceExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public bool PersistExceptions { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PersistExceptions" />
       <MemberSignature Language="DocId" Value="P:System.Activities.ExceptionPersistenceExtension.PersistExceptions" />
+      <MemberSignature Language="VB.NET" Value="Public Property PersistExceptions As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PersistExceptions : bool with get, set" Usage="System.Activities.ExceptionPersistenceExtension.PersistExceptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PersistExceptions { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

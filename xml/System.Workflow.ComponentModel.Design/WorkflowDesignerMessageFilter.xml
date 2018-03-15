@@ -1,7 +1,10 @@
-<Type Name="WorkflowDesignerMessageFilter" FullName="System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter">
+﻿<Type Name="WorkflowDesignerMessageFilter" FullName="System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter">
   <TypeSignature Language="C#" Value="public abstract class WorkflowDesignerMessageFilter : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WorkflowDesignerMessageFilter extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowDesignerMessageFilter&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type WorkflowDesignerMessageFilter = class&#xA;    interface IDisposable&#xA;    interface IWorkflowDesignerMessageSink" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowDesignerMessageFilter abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -51,6 +54,8 @@
       <MemberSignature Language="C#" Value="protected WorkflowDesignerMessageFilter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowDesignerMessageFilter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -62,11 +67,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="workflowDesignerMessageFilter.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +104,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="workflowDesignerMessageFilter.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -120,6 +143,9 @@
       <MemberSignature Language="C#" Value="~WorkflowDesignerMessageFilter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="workflowDesignerMessageFilter.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!WorkflowDesignerMessageFilter ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -145,6 +171,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Initialize (System.Workflow.ComponentModel.Design.WorkflowView parentView);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Initialize(class System.Workflow.ComponentModel.Design.WorkflowView parentView) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Initialize(System.Workflow.ComponentModel.Design.WorkflowView)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Initialize (parentView As WorkflowView)" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : System.Workflow.ComponentModel.Design.WorkflowView -&gt; unit&#xA;override this.Initialize : System.Workflow.ComponentModel.Design.WorkflowView -&gt; unit" Usage="workflowDesignerMessageFilter.Initialize parentView" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Initialize(System::Workflow::ComponentModel::Design::WorkflowView ^ parentView);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -173,6 +202,9 @@
       <MemberSignature Language="C#" Value="protected System.Workflow.ComponentModel.Design.HitTestInfo MessageHitTestContext { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.HitTestInfo MessageHitTestContext" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.MessageHitTestContext" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property MessageHitTestContext As HitTestInfo" />
+      <MemberSignature Language="F#" Value="member this.MessageHitTestContext : System.Workflow.ComponentModel.Design.HitTestInfo" Usage="System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.MessageHitTestContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Workflow::ComponentModel::Design::HitTestInfo ^ MessageHitTestContext { System::Workflow::ComponentModel::Design::HitTestInfo ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -198,7 +230,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnDragDrop (System.Windows.Forms.DragEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnDragDrop(class System.Windows.Forms.DragEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragDrop(System.Windows.Forms.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnDragDrop (eventArgs As DragEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnDragDrop : System.Windows.Forms.DragEventArgs -&gt; bool&#xA;override this.OnDragDrop : System.Windows.Forms.DragEventArgs -&gt; bool" Usage="workflowDesignerMessageFilter.OnDragDrop eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnDragDrop(System::Windows::Forms::DragEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnDragDrop(System.Windows.Forms.DragEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -228,7 +266,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnDragEnter (System.Windows.Forms.DragEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnDragEnter(class System.Windows.Forms.DragEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragEnter(System.Windows.Forms.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnDragEnter (eventArgs As DragEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnDragEnter : System.Windows.Forms.DragEventArgs -&gt; bool&#xA;override this.OnDragEnter : System.Windows.Forms.DragEventArgs -&gt; bool" Usage="workflowDesignerMessageFilter.OnDragEnter eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnDragEnter(System::Windows::Forms::DragEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnDragEnter(System.Windows.Forms.DragEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -268,7 +312,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnDragLeave ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnDragLeave() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragLeave" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnDragLeave () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnDragLeave : unit -&gt; bool&#xA;override this.OnDragLeave : unit -&gt; bool" Usage="workflowDesignerMessageFilter.OnDragLeave " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnDragLeave();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnDragLeave</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -305,7 +355,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnDragOver (System.Windows.Forms.DragEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnDragOver(class System.Windows.Forms.DragEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnDragOver(System.Windows.Forms.DragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnDragOver (eventArgs As DragEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnDragOver : System.Windows.Forms.DragEventArgs -&gt; bool&#xA;override this.OnDragOver : System.Windows.Forms.DragEventArgs -&gt; bool" Usage="workflowDesignerMessageFilter.OnDragOver eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnDragOver(System::Windows::Forms::DragEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnDragOver(System.Windows.Forms.DragEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -345,7 +401,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnGiveFeedback (System.Windows.Forms.GiveFeedbackEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnGiveFeedback(class System.Windows.Forms.GiveFeedbackEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnGiveFeedback (eventArgs As GiveFeedbackEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnGiveFeedback : System.Windows.Forms.GiveFeedbackEventArgs -&gt; bool&#xA;override this.OnGiveFeedback : System.Windows.Forms.GiveFeedbackEventArgs -&gt; bool" Usage="workflowDesignerMessageFilter.OnGiveFeedback eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnGiveFeedback(System::Windows::Forms::GiveFeedbackEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -385,7 +447,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnKeyDown (System.Windows.Forms.KeyEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnKeyDown(class System.Windows.Forms.KeyEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnKeyDown (eventArgs As KeyEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnKeyDown : System.Windows.Forms.KeyEventArgs -&gt; bool&#xA;override this.OnKeyDown : System.Windows.Forms.KeyEventArgs -&gt; bool" Usage="workflowDesignerMessageFilter.OnKeyDown eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnKeyDown(System::Windows::Forms::KeyEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnKeyDown(System.Windows.Forms.KeyEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -425,7 +493,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnKeyUp (System.Windows.Forms.KeyEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnKeyUp(class System.Windows.Forms.KeyEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnKeyUp (eventArgs As KeyEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnKeyUp : System.Windows.Forms.KeyEventArgs -&gt; bool&#xA;override this.OnKeyUp : System.Windows.Forms.KeyEventArgs -&gt; bool" Usage="workflowDesignerMessageFilter.OnKeyUp eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnKeyUp(System::Windows::Forms::KeyEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnKeyUp(System.Windows.Forms.KeyEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -465,7 +539,13 @@
       <MemberSignature Language="C#" Value="protected virtual void OnLayout (System.Windows.Forms.LayoutEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLayout(class System.Windows.Forms.LayoutEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnLayout(System.Windows.Forms.LayoutEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLayout (eventArgs As LayoutEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnLayout : System.Windows.Forms.LayoutEventArgs -&gt; unit&#xA;override this.OnLayout : System.Windows.Forms.LayoutEventArgs -&gt; unit" Usage="workflowDesignerMessageFilter.OnLayout eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLayout(System::Windows::Forms::LayoutEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnLayout(System.Windows.Forms.LayoutEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -493,7 +573,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnMouseCaptureChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseCaptureChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseCaptureChanged" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnMouseCaptureChanged () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseCaptureChanged : unit -&gt; bool&#xA;override this.OnMouseCaptureChanged : unit -&gt; bool" Usage="workflowDesignerMessageFilter.OnMouseCaptureChanged " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnMouseCaptureChanged();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnMouseCaptureChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -530,7 +616,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnMouseDoubleClick (System.Windows.Forms.MouseEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseDoubleClick(class System.Windows.Forms.MouseEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnMouseDoubleClick (eventArgs As MouseEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseDoubleClick : System.Windows.Forms.MouseEventArgs -&gt; bool&#xA;override this.OnMouseDoubleClick : System.Windows.Forms.MouseEventArgs -&gt; bool" Usage="workflowDesignerMessageFilter.OnMouseDoubleClick eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnMouseDoubleClick(System::Windows::Forms::MouseEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnMouseDoubleClick(System.Windows.Forms.MouseEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -570,7 +662,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnMouseDown (System.Windows.Forms.MouseEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseDown(class System.Windows.Forms.MouseEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseDown(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnMouseDown (eventArgs As MouseEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseDown : System.Windows.Forms.MouseEventArgs -&gt; bool&#xA;override this.OnMouseDown : System.Windows.Forms.MouseEventArgs -&gt; bool" Usage="workflowDesignerMessageFilter.OnMouseDown eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnMouseDown(System::Windows::Forms::MouseEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnMouseDown(System.Windows.Forms.MouseEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -610,7 +708,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnMouseEnter (System.Windows.Forms.MouseEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseEnter(class System.Windows.Forms.MouseEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseEnter(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnMouseEnter (eventArgs As MouseEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseEnter : System.Windows.Forms.MouseEventArgs -&gt; bool&#xA;override this.OnMouseEnter : System.Windows.Forms.MouseEventArgs -&gt; bool" Usage="workflowDesignerMessageFilter.OnMouseEnter eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnMouseEnter(System::Windows::Forms::MouseEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnMouseEnter(System.Windows.Forms.MouseEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -650,7 +754,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnMouseHover (System.Windows.Forms.MouseEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseHover(class System.Windows.Forms.MouseEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseHover(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnMouseHover (eventArgs As MouseEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseHover : System.Windows.Forms.MouseEventArgs -&gt; bool&#xA;override this.OnMouseHover : System.Windows.Forms.MouseEventArgs -&gt; bool" Usage="workflowDesignerMessageFilter.OnMouseHover eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnMouseHover(System::Windows::Forms::MouseEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnMouseHover(System.Windows.Forms.MouseEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -690,7 +800,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnMouseLeave ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseLeave() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseLeave" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnMouseLeave () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseLeave : unit -&gt; bool&#xA;override this.OnMouseLeave : unit -&gt; bool" Usage="workflowDesignerMessageFilter.OnMouseLeave " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnMouseLeave();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnMouseLeave</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -727,7 +843,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnMouseMove (System.Windows.Forms.MouseEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseMove(class System.Windows.Forms.MouseEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseMove(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnMouseMove (eventArgs As MouseEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseMove : System.Windows.Forms.MouseEventArgs -&gt; bool&#xA;override this.OnMouseMove : System.Windows.Forms.MouseEventArgs -&gt; bool" Usage="workflowDesignerMessageFilter.OnMouseMove eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnMouseMove(System::Windows::Forms::MouseEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnMouseMove(System.Windows.Forms.MouseEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -767,7 +889,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnMouseUp (System.Windows.Forms.MouseEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseUp(class System.Windows.Forms.MouseEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseUp(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnMouseUp (eventArgs As MouseEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseUp : System.Windows.Forms.MouseEventArgs -&gt; bool&#xA;override this.OnMouseUp : System.Windows.Forms.MouseEventArgs -&gt; bool" Usage="workflowDesignerMessageFilter.OnMouseUp eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnMouseUp(System::Windows::Forms::MouseEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnMouseUp(System.Windows.Forms.MouseEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -807,7 +935,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnMouseWheel (System.Windows.Forms.MouseEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnMouseWheel(class System.Windows.Forms.MouseEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnMouseWheel (eventArgs As MouseEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnMouseWheel : System.Windows.Forms.MouseEventArgs -&gt; bool&#xA;override this.OnMouseWheel : System.Windows.Forms.MouseEventArgs -&gt; bool" Usage="workflowDesignerMessageFilter.OnMouseWheel eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnMouseWheel(System::Windows::Forms::MouseEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnMouseWheel(System.Windows.Forms.MouseEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -845,6 +979,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnPaint (System.Windows.Forms.PaintEventArgs eventArgs, System.Drawing.Rectangle viewPort, System.Workflow.ComponentModel.Design.AmbientTheme ambientTheme);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnPaint(class System.Windows.Forms.PaintEventArgs eventArgs, valuetype System.Drawing.Rectangle viewPort, class System.Workflow.ComponentModel.Design.AmbientTheme ambientTheme) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnPaint(System.Windows.Forms.PaintEventArgs,System.Drawing.Rectangle,System.Workflow.ComponentModel.Design.AmbientTheme)" />
+      <MemberSignature Language="F#" Value="abstract member OnPaint : System.Windows.Forms.PaintEventArgs * System.Drawing.Rectangle * System.Workflow.ComponentModel.Design.AmbientTheme -&gt; bool&#xA;override this.OnPaint : System.Windows.Forms.PaintEventArgs * System.Drawing.Rectangle * System.Workflow.ComponentModel.Design.AmbientTheme -&gt; bool" Usage="workflowDesignerMessageFilter.OnPaint (eventArgs, viewPort, ambientTheme)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnPaint(System::Windows::Forms::PaintEventArgs ^ eventArgs, System::Drawing::Rectangle viewPort, System::Workflow::ComponentModel::Design::AmbientTheme ^ ambientTheme);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -879,6 +1015,8 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnPaintWorkflowAdornments (System.Windows.Forms.PaintEventArgs eventArgs, System.Drawing.Rectangle viewPort, System.Workflow.ComponentModel.Design.AmbientTheme ambientTheme);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnPaintWorkflowAdornments(class System.Windows.Forms.PaintEventArgs eventArgs, valuetype System.Drawing.Rectangle viewPort, class System.Workflow.ComponentModel.Design.AmbientTheme ambientTheme) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnPaintWorkflowAdornments(System.Windows.Forms.PaintEventArgs,System.Drawing.Rectangle,System.Workflow.ComponentModel.Design.AmbientTheme)" />
+      <MemberSignature Language="F#" Value="abstract member OnPaintWorkflowAdornments : System.Windows.Forms.PaintEventArgs * System.Drawing.Rectangle * System.Workflow.ComponentModel.Design.AmbientTheme -&gt; bool&#xA;override this.OnPaintWorkflowAdornments : System.Windows.Forms.PaintEventArgs * System.Drawing.Rectangle * System.Workflow.ComponentModel.Design.AmbientTheme -&gt; bool" Usage="workflowDesignerMessageFilter.OnPaintWorkflowAdornments (eventArgs, viewPort, ambientTheme)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnPaintWorkflowAdornments(System::Windows::Forms::PaintEventArgs ^ eventArgs, System::Drawing::Rectangle viewPort, System::Workflow::ComponentModel::Design::AmbientTheme ^ ambientTheme);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -913,7 +1051,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnQueryContinueDrag (System.Windows.Forms.QueryContinueDragEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnQueryContinueDrag(class System.Windows.Forms.QueryContinueDragEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnQueryContinueDrag(System.Windows.Forms.QueryContinueDragEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnQueryContinueDrag (eventArgs As QueryContinueDragEventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnQueryContinueDrag : System.Windows.Forms.QueryContinueDragEventArgs -&gt; bool&#xA;override this.OnQueryContinueDrag : System.Windows.Forms.QueryContinueDragEventArgs -&gt; bool" Usage="workflowDesignerMessageFilter.OnQueryContinueDrag eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnQueryContinueDrag(System::Windows::Forms::QueryContinueDragEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnQueryContinueDrag(System.Windows.Forms.QueryContinueDragEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -953,7 +1097,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnScroll (System.Windows.Forms.ScrollBar sender, int value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnScroll(class System.Windows.Forms.ScrollBar sender, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnScroll(System.Windows.Forms.ScrollBar,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnScroll (sender As ScrollBar, value As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnScroll : System.Windows.Forms.ScrollBar * int -&gt; bool&#xA;override this.OnScroll : System.Windows.Forms.ScrollBar * int -&gt; bool" Usage="workflowDesignerMessageFilter.OnScroll (sender, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnScroll(System::Windows::Forms::ScrollBar ^ sender, int value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnScroll(System.Windows.Forms.ScrollBar,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -987,7 +1137,13 @@
       <MemberSignature Language="C#" Value="protected virtual bool OnShowContextMenu (System.Drawing.Point screenMenuPoint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool OnShowContextMenu(valuetype System.Drawing.Point screenMenuPoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnShowContextMenu(System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnShowContextMenu (screenMenuPoint As Point) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnShowContextMenu : System.Drawing.Point -&gt; bool&#xA;override this.OnShowContextMenu : System.Drawing.Point -&gt; bool" Usage="workflowDesignerMessageFilter.OnShowContextMenu screenMenuPoint" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool OnShowContextMenu(System::Drawing::Point screenMenuPoint);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnShowContextMenu(System.Drawing.Point)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1027,7 +1183,13 @@
       <MemberSignature Language="C#" Value="protected virtual void OnThemeChange ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnThemeChange() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnThemeChange" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnThemeChange ()" />
+      <MemberSignature Language="F#" Value="abstract member OnThemeChange : unit -&gt; unit&#xA;override this.OnThemeChange : unit -&gt; unit" Usage="workflowDesignerMessageFilter.OnThemeChange " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnThemeChange();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.OnThemeChange</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1052,6 +1214,9 @@
       <MemberSignature Language="C#" Value="protected System.Workflow.ComponentModel.Design.WorkflowView ParentView { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Workflow.ComponentModel.Design.WorkflowView ParentView" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.ParentView" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ParentView As WorkflowView" />
+      <MemberSignature Language="F#" Value="member this.ParentView : System.Workflow.ComponentModel.Design.WorkflowView" Usage="System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.ParentView" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Workflow::ComponentModel::Design::WorkflowView ^ ParentView { System::Workflow::ComponentModel::Design::WorkflowView ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -1077,7 +1242,12 @@
       <MemberSignature Language="C#" Value="protected virtual bool ProcessMessage (System.Windows.Forms.Message message);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance bool ProcessMessage(valuetype System.Windows.Forms.Message message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.ProcessMessage(System.Windows.Forms.Message)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessMessage : System.Windows.Forms.Message -&gt; bool&#xA;override this.ProcessMessage : System.Windows.Forms.Message -&gt; bool" Usage="workflowDesignerMessageFilter.ProcessMessage message" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual bool ProcessMessage(System::Windows::Forms::Message message);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Workflow.ComponentModel.Design.IWorkflowDesignerMessageSink.ProcessMessage(System.Windows.Forms.Message)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1103,14 +1273,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

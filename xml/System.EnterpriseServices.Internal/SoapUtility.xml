@@ -1,7 +1,10 @@
-<Type Name="SoapUtility" FullName="System.EnterpriseServices.Internal.SoapUtility">
+﻿<Type Name="SoapUtility" FullName="System.EnterpriseServices.Internal.SoapUtility">
   <TypeSignature Language="C#" Value="public sealed class SoapUtility : System.EnterpriseServices.Internal.ISoapUtility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SoapUtility extends System.Object implements class System.EnterpriseServices.Internal.ISoapUtility" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.SoapUtility" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapUtility&#xA;Implements ISoapUtility" />
+  <TypeSignature Language="F#" Value="type SoapUtility = class&#xA;    interface ISoapUtility" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapUtility sealed : System::EnterpriseServices::Internal::ISoapUtility" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,8 @@
       <MemberSignature Language="C#" Value="public SoapUtility ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.SoapUtility.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapUtility();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -52,7 +57,13 @@
       <MemberSignature Language="C#" Value="public void GetServerBinPath (string rootWebServer, string inBaseUrl, string inVirtualRoot, out string binPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetServerBinPath(string rootWebServer, string inBaseUrl, string inVirtualRoot, [out] string&amp; binPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.SoapUtility.GetServerBinPath(System.String,System.String,System.String,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetServerBinPath (rootWebServer As String, inBaseUrl As String, inVirtualRoot As String, ByRef binPath As String)" />
+      <MemberSignature Language="F#" Value="abstract member GetServerBinPath : string * string * string *  -&gt; unit&#xA;override this.GetServerBinPath : string * string * string *  -&gt; unit" Usage="soapUtility.GetServerBinPath (rootWebServer, inBaseUrl, inVirtualRoot, binPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetServerBinPath(System::String ^ rootWebServer, System::String ^ inBaseUrl, System::String ^ inVirtualRoot, [Runtime::InteropServices::Out] System::String ^ % binPath);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapUtility.GetServerBinPath(System.String,System.String,System.String,System.String@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,7 +94,13 @@
       <MemberSignature Language="C#" Value="public void GetServerPhysicalPath (string rootWebServer, string inBaseUrl, string inVirtualRoot, out string physicalPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetServerPhysicalPath(string rootWebServer, string inBaseUrl, string inVirtualRoot, [out] string&amp; physicalPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.SoapUtility.GetServerPhysicalPath(System.String,System.String,System.String,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetServerPhysicalPath (rootWebServer As String, inBaseUrl As String, inVirtualRoot As String, ByRef physicalPath As String)" />
+      <MemberSignature Language="F#" Value="abstract member GetServerPhysicalPath : string * string * string *  -&gt; unit&#xA;override this.GetServerPhysicalPath : string * string * string *  -&gt; unit" Usage="soapUtility.GetServerPhysicalPath (rootWebServer, inBaseUrl, inVirtualRoot, physicalPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GetServerPhysicalPath(System::String ^ rootWebServer, System::String ^ inBaseUrl, System::String ^ inVirtualRoot, [Runtime::InteropServices::Out] System::String ^ % physicalPath);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapUtility.GetServerPhysicalPath(System.String,System.String,System.String,System.String@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -114,7 +131,13 @@
       <MemberSignature Language="C#" Value="public void Present ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Present() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.SoapUtility.Present" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Present ()" />
+      <MemberSignature Language="F#" Value="abstract member Present : unit -&gt; unit&#xA;override this.Present : unit -&gt; unit" Usage="soapUtility.Present " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Present();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.ISoapUtility.Present</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

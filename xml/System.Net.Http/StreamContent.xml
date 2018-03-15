@@ -1,7 +1,10 @@
-<Type Name="StreamContent" FullName="System.Net.Http.StreamContent">
+﻿<Type Name="StreamContent" FullName="System.Net.Http.StreamContent">
   <TypeSignature Language="C#" Value="public class StreamContent : System.Net.Http.HttpContent" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StreamContent extends System.Net.Http.HttpContent" />
   <TypeSignature Language="DocId" Value="T:System.Net.Http.StreamContent" />
+  <TypeSignature Language="VB.NET" Value="Public Class StreamContent&#xA;Inherits HttpContent" />
+  <TypeSignature Language="F#" Value="type StreamContent = class&#xA;    inherit HttpContent" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StreamContent : System::Net::Http::HttpContent" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Http</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +25,25 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Http</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Net.Http.StreamContent" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StreamContent (System.IO.Stream content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream content) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StreamContent.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (content As Stream)" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.StreamContent : System.IO.Stream -&gt; System.Net.Http.StreamContent" Usage="new System.Net.Http.StreamContent content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamContent(System::IO::Stream ^ content);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -51,6 +69,9 @@
       <MemberSignature Language="C#" Value="public StreamContent (System.IO.Stream content, int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream content, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StreamContent.#ctor(System.IO.Stream,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (content As Stream, bufferSize As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Net.Http.StreamContent : System.IO.Stream * int -&gt; System.Net.Http.StreamContent" Usage="new System.Net.Http.StreamContent (content, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StreamContent(System::IO::Stream ^ content, int bufferSize);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -80,6 +101,9 @@
       <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task&lt;System.IO.Stream&gt; CreateContentReadStreamAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Threading.Tasks.Task`1&lt;class System.IO.Stream&gt; CreateContentReadStreamAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StreamContent.CreateContentReadStreamAsync" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateContentReadStreamAsync () As Task(Of Stream)" />
+      <MemberSignature Language="F#" Value="override this.CreateContentReadStreamAsync : unit -&gt; System.Threading.Tasks.Task&lt;System.IO.Stream&gt;" Usage="streamContent.CreateContentReadStreamAsync " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Threading::Tasks::Task&lt;System::IO::Stream ^&gt; ^ CreateContentReadStreamAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -115,6 +139,9 @@
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StreamContent.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="streamContent.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -148,9 +175,11 @@
       </Docs>
     </Member>
     <Member MemberName="SerializeToStreamAsync">
-      <MemberSignature Language="C#" Value="protected override System.Threading.Tasks.Task SerializeToStreamAsync (System.IO.Stream stream, System.Net.TransportContext context);" />
+      <MemberSignature Language="C#" Value="protected internal override System.Threading.Tasks.Task SerializeToStreamAsync (System.IO.Stream stream, System.Net.TransportContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.Threading.Tasks.Task SerializeToStreamAsync(class System.IO.Stream stream, class System.Net.TransportContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StreamContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)" />
+      <MemberSignature Language="F#" Value="override this.SerializeToStreamAsync : System.IO.Stream * System.Net.TransportContext -&gt; System.Threading.Tasks.Task" Usage="streamContent.SerializeToStreamAsync (stream, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::Threading::Tasks::Task ^ SerializeToStreamAsync(System::IO::Stream ^ stream, System::Net::TransportContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -186,9 +215,12 @@
       </Docs>
     </Member>
     <Member MemberName="TryComputeLength">
-      <MemberSignature Language="C#" Value="protected override bool TryComputeLength (out long length);" />
+      <MemberSignature Language="C#" Value="protected internal override bool TryComputeLength (out long length);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance bool TryComputeLength([out] int64&amp; length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Http.StreamContent.TryComputeLength(System.Int64@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function TryComputeLength (ByRef length As Long) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.TryComputeLength :  -&gt; bool" Usage="streamContent.TryComputeLength length" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override bool TryComputeLength([Runtime::InteropServices::Out] long % length);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Http</AssemblyName>
@@ -222,17 +254,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Http</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Net.Http.StreamContent" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

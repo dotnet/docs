@@ -1,7 +1,10 @@
-<Type Name="DirSyncRequestControl" FullName="System.DirectoryServices.Protocols.DirSyncRequestControl">
+﻿<Type Name="DirSyncRequestControl" FullName="System.DirectoryServices.Protocols.DirSyncRequestControl">
   <TypeSignature Language="C#" Value="public class DirSyncRequestControl : System.DirectoryServices.Protocols.DirectoryControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DirSyncRequestControl extends System.DirectoryServices.Protocols.DirectoryControl" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.Protocols.DirSyncRequestControl" />
+  <TypeSignature Language="VB.NET" Value="Public Class DirSyncRequestControl&#xA;Inherits DirectoryControl" />
+  <TypeSignature Language="F#" Value="type DirSyncRequestControl = class&#xA;    inherit DirectoryControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DirSyncRequestControl : System::DirectoryServices::Protocols::DirectoryControl" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,10 +19,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirSyncRequestControl" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DirSyncRequestControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirSyncRequestControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -36,6 +51,9 @@
       <MemberSignature Language="C#" Value="public DirSyncRequestControl (byte[] cookie);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] cookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cookie As Byte())" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DirSyncRequestControl : byte[] -&gt; System.DirectoryServices.Protocols.DirSyncRequestControl" Usage="new System.DirectoryServices.Protocols.DirSyncRequestControl cookie" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirSyncRequestControl(cli::array &lt;System::Byte&gt; ^ cookie);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -55,6 +73,9 @@
       <MemberSignature Language="C#" Value="public DirSyncRequestControl (byte[] cookie, System.DirectoryServices.Protocols.DirectorySynchronizationOptions option);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] cookie, valuetype System.DirectoryServices.Protocols.DirectorySynchronizationOptions option) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor(System.Byte[],System.DirectoryServices.Protocols.DirectorySynchronizationOptions)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cookie As Byte(), option As DirectorySynchronizationOptions)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DirSyncRequestControl : byte[] * System.DirectoryServices.Protocols.DirectorySynchronizationOptions -&gt; System.DirectoryServices.Protocols.DirSyncRequestControl" Usage="new System.DirectoryServices.Protocols.DirSyncRequestControl (cookie, option)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirSyncRequestControl(cli::array &lt;System::Byte&gt; ^ cookie, System::DirectoryServices::Protocols::DirectorySynchronizationOptions option);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -76,6 +97,9 @@
       <MemberSignature Language="C#" Value="public DirSyncRequestControl (byte[] cookie, System.DirectoryServices.Protocols.DirectorySynchronizationOptions option, int attributeCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] cookie, valuetype System.DirectoryServices.Protocols.DirectorySynchronizationOptions option, int32 attributeCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor(System.Byte[],System.DirectoryServices.Protocols.DirectorySynchronizationOptions,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cookie As Byte(), option As DirectorySynchronizationOptions, attributeCount As Integer)" />
+      <MemberSignature Language="F#" Value="new System.DirectoryServices.Protocols.DirSyncRequestControl : byte[] * System.DirectoryServices.Protocols.DirectorySynchronizationOptions * int -&gt; System.DirectoryServices.Protocols.DirSyncRequestControl" Usage="new System.DirectoryServices.Protocols.DirSyncRequestControl (cookie, option, attributeCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DirSyncRequestControl(cli::array &lt;System::Byte&gt; ^ cookie, System::DirectoryServices::Protocols::DirectorySynchronizationOptions option, int attributeCount);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -99,6 +123,9 @@
       <MemberSignature Language="C#" Value="public int AttributeCount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AttributeCount" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirSyncRequestControl.AttributeCount" />
+      <MemberSignature Language="VB.NET" Value="Public Property AttributeCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.AttributeCount : int with get, set" Usage="System.DirectoryServices.Protocols.DirSyncRequestControl.AttributeCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AttributeCount { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -126,6 +153,9 @@
       <MemberSignature Language="C#" Value="public byte[] Cookie { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Cookie" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirSyncRequestControl.Cookie" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cookie As Byte()" />
+      <MemberSignature Language="F#" Value="member this.Cookie : byte[] with get, set" Usage="System.DirectoryServices.Protocols.DirSyncRequestControl.Cookie" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Cookie { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -152,6 +182,9 @@
       <MemberSignature Language="C#" Value="public override byte[] GetValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.Protocols.DirSyncRequestControl.GetValue" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetValue () As Byte()" />
+      <MemberSignature Language="F#" Value="override this.GetValue : unit -&gt; byte[]" Usage="dirSyncRequestControl.GetValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ GetValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -172,6 +205,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.Protocols.DirectorySynchronizationOptions Option { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DirectoryServices.Protocols.DirectorySynchronizationOptions Option" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.Protocols.DirSyncRequestControl.Option" />
+      <MemberSignature Language="VB.NET" Value="Public Property Option As DirectorySynchronizationOptions" />
+      <MemberSignature Language="F#" Value="member this.Option : System.DirectoryServices.Protocols.DirectorySynchronizationOptions with get, set" Usage="System.DirectoryServices.Protocols.DirSyncRequestControl.Option" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::Protocols::DirectorySynchronizationOptions Option { System::DirectoryServices::Protocols::DirectorySynchronizationOptions get(); void set(System::DirectoryServices::Protocols::DirectorySynchronizationOptions value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
@@ -194,15 +230,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices.Protocols</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>The <see cref="M:System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor" /> constructor creates an instance of the <see cref="T:System.DirectoryServices.Protocols.DirSyncRequestControl" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

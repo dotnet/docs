@@ -1,7 +1,10 @@
-<Type Name="NotifyInputEventHandler" FullName="System.Windows.Input.NotifyInputEventHandler">
+﻿<Type Name="NotifyInputEventHandler" FullName="System.Windows.Input.NotifyInputEventHandler">
   <TypeSignature Language="C#" Value="public delegate void NotifyInputEventHandler(object sender, NotifyInputEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NotifyInputEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.NotifyInputEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub NotifyInputEventHandler(sender As Object, e As NotifyInputEventArgs)" />
+  <TypeSignature Language="F#" Value="type NotifyInputEventHandler = delegate of obj * NotifyInputEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void NotifyInputEventHandler(System::Object ^ sender, NotifyInputEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

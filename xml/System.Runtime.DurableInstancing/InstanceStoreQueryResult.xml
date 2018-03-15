@@ -1,7 +1,10 @@
-<Type Name="InstanceStoreQueryResult" FullName="System.Runtime.DurableInstancing.InstanceStoreQueryResult">
+﻿<Type Name="InstanceStoreQueryResult" FullName="System.Runtime.DurableInstancing.InstanceStoreQueryResult">
   <TypeSignature Language="C#" Value="public abstract class InstanceStoreQueryResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit InstanceStoreQueryResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceStoreQueryResult" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class InstanceStoreQueryResult" />
+  <TypeSignature Language="F#" Value="type InstanceStoreQueryResult = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InstanceStoreQueryResult abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="protected InstanceStoreQueryResult ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.DurableInstancing.InstanceStoreQueryResult.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; InstanceStoreQueryResult();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ConnectionOrientedTransportElement" FullName="System.ServiceModel.Configuration.ConnectionOrientedTransportElement">
+﻿<Type Name="ConnectionOrientedTransportElement" FullName="System.ServiceModel.Configuration.ConnectionOrientedTransportElement">
   <TypeSignature Language="C#" Value="public abstract class ConnectionOrientedTransportElement : System.ServiceModel.Configuration.TransportElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ConnectionOrientedTransportElement extends System.ServiceModel.Configuration.TransportElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ConnectionOrientedTransportElement" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ConnectionOrientedTransportElement&#xA;Inherits TransportElement" />
+  <TypeSignature Language="F#" Value="type ConnectionOrientedTransportElement = class&#xA;    inherit TransportElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ConnectionOrientedTransportElement abstract : System::ServiceModel::Configuration::TransportElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public override void ApplyConfiguration (System.ServiceModel.Channels.BindingElement bindingElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ApplyConfiguration(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.ApplyConfiguration(System.ServiceModel.Channels.BindingElement)" />
+      <MemberSignature Language="F#" Value="override this.ApplyConfiguration : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="connectionOrientedTransportElement.ApplyConfiguration bindingElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ApplyConfiguration(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan ChannelInitializationTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan ChannelInitializationTimeout" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.ChannelInitializationTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property ChannelInitializationTimeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.ChannelInitializationTimeout : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.ChannelInitializationTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan ChannelInitializationTimeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +75,9 @@
       <MemberSignature Language="C#" Value="public int ConnectionBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ConnectionBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.ConnectionBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionBufferSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.ConnectionBufferSize : int with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.ConnectionBufferSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ConnectionBufferSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -100,6 +111,9 @@
       <MemberSignature Language="C#" Value="public override void CopyFrom (System.ServiceModel.Configuration.ServiceModelExtensionElement from);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CopyFrom(class System.ServiceModel.Configuration.ServiceModelExtensionElement from) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.CopyFrom(System.ServiceModel.Configuration.ServiceModelExtensionElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CopyFrom (from As ServiceModelExtensionElement)" />
+      <MemberSignature Language="F#" Value="override this.CopyFrom : System.ServiceModel.Configuration.ServiceModelExtensionElement -&gt; unit" Usage="connectionOrientedTransportElement.CopyFrom from" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CopyFrom(System::ServiceModel::Configuration::ServiceModelExtensionElement ^ from);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -121,6 +135,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.HostNameComparisonMode HostNameComparisonMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.HostNameComparisonMode HostNameComparisonMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.HostNameComparisonMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostNameComparisonMode As HostNameComparisonMode" />
+      <MemberSignature Language="F#" Value="member this.HostNameComparisonMode : System.ServiceModel.HostNameComparisonMode with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.HostNameComparisonMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::HostNameComparisonMode HostNameComparisonMode { System::ServiceModel::HostNameComparisonMode get(); void set(System::ServiceModel::HostNameComparisonMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -141,9 +158,11 @@
       </Docs>
     </Member>
     <Member MemberName="InitializeFrom">
-      <MemberSignature Language="C#" Value="protected override void InitializeFrom (System.ServiceModel.Channels.BindingElement bindingElement);" />
+      <MemberSignature Language="C#" Value="protected internal override void InitializeFrom (System.ServiceModel.Channels.BindingElement bindingElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Channels.BindingElement bindingElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.InitializeFrom(System.ServiceModel.Channels.BindingElement)" />
+      <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Channels.BindingElement -&gt; unit" Usage="connectionOrientedTransportElement.InitializeFrom bindingElement" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Channels::BindingElement ^ bindingElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -165,6 +184,9 @@
       <MemberSignature Language="C#" Value="public int MaxBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxBufferSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxBufferSize : int with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxBufferSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxBufferSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -204,6 +226,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan MaxOutputDelay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MaxOutputDelay" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxOutputDelay" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxOutputDelay As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.MaxOutputDelay : TimeSpan with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxOutputDelay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxOutputDelay { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -230,6 +255,9 @@
       <MemberSignature Language="C#" Value="public int MaxPendingAccepts { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPendingAccepts" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxPendingAccepts" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxPendingAccepts As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxPendingAccepts : int with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxPendingAccepts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingAccepts { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -263,6 +291,9 @@
       <MemberSignature Language="C#" Value="public int MaxPendingConnections { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaxPendingConnections" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxPendingConnections" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxPendingConnections As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaxPendingConnections : int with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.MaxPendingConnections" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaxPendingConnections { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -296,6 +327,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -314,6 +348,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.TransferMode TransferMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.TransferMode TransferMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.ConnectionOrientedTransportElement.TransferMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property TransferMode As TransferMode" />
+      <MemberSignature Language="F#" Value="member this.TransferMode : System.ServiceModel.TransferMode with get, set" Usage="System.ServiceModel.Configuration.ConnectionOrientedTransportElement.TransferMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::TransferMode TransferMode { System::ServiceModel::TransferMode get(); void set(System::ServiceModel::TransferMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="PrintCapabilities" FullName="System.Printing.PrintCapabilities">
+﻿<Type Name="PrintCapabilities" FullName="System.Printing.PrintCapabilities">
   <TypeSignature Language="C#" Value="public sealed class PrintCapabilities" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PrintCapabilities extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintCapabilities" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PrintCapabilities" />
+  <TypeSignature Language="F#" Value="type PrintCapabilities = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintCapabilities sealed" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="public PrintCapabilities (System.IO.Stream xmlStream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream xmlStream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintCapabilities.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (xmlStream As Stream)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintCapabilities : System.IO.Stream -&gt; System.Printing.PrintCapabilities" Usage="new System.Printing.PrintCapabilities xmlStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintCapabilities(System::IO::Stream ^ xmlStream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -77,6 +83,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.Collation&gt; CollationCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Printing.Collation&gt; CollationCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.CollationCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CollationCapability As ReadOnlyCollection(Of Collation)" />
+      <MemberSignature Language="F#" Value="member this.CollationCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.Collation&gt;" Usage="System.Printing.PrintCapabilities.CollationCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::Collation&gt; ^ CollationCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::Collation&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -117,6 +126,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.DeviceFontSubstitution&gt; DeviceFontSubstitutionCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Printing.DeviceFontSubstitution&gt; DeviceFontSubstitutionCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.DeviceFontSubstitutionCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeviceFontSubstitutionCapability As ReadOnlyCollection(Of DeviceFontSubstitution)" />
+      <MemberSignature Language="F#" Value="member this.DeviceFontSubstitutionCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.DeviceFontSubstitution&gt;" Usage="System.Printing.PrintCapabilities.DeviceFontSubstitutionCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::DeviceFontSubstitution&gt; ^ DeviceFontSubstitutionCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::DeviceFontSubstitution&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -144,6 +156,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.Duplexing&gt; DuplexingCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Printing.Duplexing&gt; DuplexingCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.DuplexingCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DuplexingCapability As ReadOnlyCollection(Of Duplexing)" />
+      <MemberSignature Language="F#" Value="member this.DuplexingCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.Duplexing&gt;" Usage="System.Printing.PrintCapabilities.DuplexingCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::Duplexing&gt; ^ DuplexingCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::Duplexing&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -180,6 +195,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.InputBin&gt; InputBinCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Printing.InputBin&gt; InputBinCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.InputBinCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputBinCapability As ReadOnlyCollection(Of InputBin)" />
+      <MemberSignature Language="F#" Value="member this.InputBinCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.InputBin&gt;" Usage="System.Printing.PrintCapabilities.InputBinCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::InputBin&gt; ^ InputBinCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::InputBin&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -207,6 +225,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; MaxCopyCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; MaxCopyCount" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.MaxCopyCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaxCopyCount As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.MaxCopyCount : Nullable&lt;int&gt;" Usage="System.Printing.PrintCapabilities.MaxCopyCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; MaxCopyCount { Nullable&lt;int&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -232,6 +253,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; OrientedPageMediaHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; OrientedPageMediaHeight" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.OrientedPageMediaHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OrientedPageMediaHeight As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.OrientedPageMediaHeight : Nullable&lt;double&gt;" Usage="System.Printing.PrintCapabilities.OrientedPageMediaHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; OrientedPageMediaHeight { Nullable&lt;double&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -259,6 +283,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; OrientedPageMediaWidth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; OrientedPageMediaWidth" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.OrientedPageMediaWidth" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OrientedPageMediaWidth As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.OrientedPageMediaWidth : Nullable&lt;double&gt;" Usage="System.Printing.PrintCapabilities.OrientedPageMediaWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; OrientedPageMediaWidth { Nullable&lt;double&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -286,6 +313,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.OutputColor&gt; OutputColorCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Printing.OutputColor&gt; OutputColorCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.OutputColorCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputColorCapability As ReadOnlyCollection(Of OutputColor)" />
+      <MemberSignature Language="F#" Value="member this.OutputColorCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.OutputColor&gt;" Usage="System.Printing.PrintCapabilities.OutputColorCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::OutputColor&gt; ^ OutputColorCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::OutputColor&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -313,6 +343,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.OutputQuality&gt; OutputQualityCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Printing.OutputQuality&gt; OutputQualityCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.OutputQualityCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputQualityCapability As ReadOnlyCollection(Of OutputQuality)" />
+      <MemberSignature Language="F#" Value="member this.OutputQualityCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.OutputQuality&gt;" Usage="System.Printing.PrintCapabilities.OutputQualityCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::OutputQuality&gt; ^ OutputQualityCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::OutputQuality&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -342,6 +375,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PageBorderless&gt; PageBorderlessCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Printing.PageBorderless&gt; PageBorderlessCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.PageBorderlessCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageBorderlessCapability As ReadOnlyCollection(Of PageBorderless)" />
+      <MemberSignature Language="F#" Value="member this.PageBorderlessCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PageBorderless&gt;" Usage="System.Printing.PrintCapabilities.PageBorderlessCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PageBorderless&gt; ^ PageBorderlessCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PageBorderless&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -371,6 +407,9 @@
       <MemberSignature Language="C#" Value="public System.Printing.PageImageableArea PageImageableArea { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PageImageableArea PageImageableArea" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.PageImageableArea" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageImageableArea As PageImageableArea" />
+      <MemberSignature Language="F#" Value="member this.PageImageableArea : System.Printing.PageImageableArea" Usage="System.Printing.PrintCapabilities.PageImageableArea" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PageImageableArea ^ PageImageableArea { System::Printing::PageImageableArea ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -396,6 +435,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PageMediaSize&gt; PageMediaSizeCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Printing.PageMediaSize&gt; PageMediaSizeCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.PageMediaSizeCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageMediaSizeCapability As ReadOnlyCollection(Of PageMediaSize)" />
+      <MemberSignature Language="F#" Value="member this.PageMediaSizeCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PageMediaSize&gt;" Usage="System.Printing.PrintCapabilities.PageMediaSizeCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PageMediaSize ^&gt; ^ PageMediaSizeCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PageMediaSize ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -441,6 +483,9 @@ foreach (PageMediaSize mediaSize in pc.PageMediaSizeCapability)
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PageMediaType&gt; PageMediaTypeCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Printing.PageMediaType&gt; PageMediaTypeCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.PageMediaTypeCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageMediaTypeCapability As ReadOnlyCollection(Of PageMediaType)" />
+      <MemberSignature Language="F#" Value="member this.PageMediaTypeCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PageMediaType&gt;" Usage="System.Printing.PrintCapabilities.PageMediaTypeCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PageMediaType&gt; ^ PageMediaTypeCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PageMediaType&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -468,6 +513,9 @@ foreach (PageMediaSize mediaSize in pc.PageMediaSizeCapability)
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PageOrder&gt; PageOrderCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Printing.PageOrder&gt; PageOrderCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.PageOrderCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageOrderCapability As ReadOnlyCollection(Of PageOrder)" />
+      <MemberSignature Language="F#" Value="member this.PageOrderCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PageOrder&gt;" Usage="System.Printing.PrintCapabilities.PageOrderCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PageOrder&gt; ^ PageOrderCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PageOrder&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -495,6 +543,9 @@ foreach (PageMediaSize mediaSize in pc.PageMediaSizeCapability)
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PageOrientation&gt; PageOrientationCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Printing.PageOrientation&gt; PageOrientationCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.PageOrientationCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageOrientationCapability As ReadOnlyCollection(Of PageOrientation)" />
+      <MemberSignature Language="F#" Value="member this.PageOrientationCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PageOrientation&gt;" Usage="System.Printing.PrintCapabilities.PageOrientationCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PageOrientation&gt; ^ PageOrientationCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PageOrientation&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -522,6 +573,9 @@ foreach (PageMediaSize mediaSize in pc.PageMediaSizeCapability)
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PageResolution&gt; PageResolutionCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.Printing.PageResolution&gt; PageResolutionCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.PageResolutionCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageResolutionCapability As ReadOnlyCollection(Of PageResolution)" />
+      <MemberSignature Language="F#" Value="member this.PageResolutionCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PageResolution&gt;" Usage="System.Printing.PrintCapabilities.PageResolutionCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PageResolution ^&gt; ^ PageResolutionCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PageResolution ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -569,6 +623,9 @@ foreach (PageResolution pageRes in pc.PageResolutionCapability)
       <MemberSignature Language="C#" Value="public System.Printing.PageScalingFactorRange PageScalingFactorRange { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PageScalingFactorRange PageScalingFactorRange" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.PageScalingFactorRange" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PageScalingFactorRange As PageScalingFactorRange" />
+      <MemberSignature Language="F#" Value="member this.PageScalingFactorRange : System.Printing.PageScalingFactorRange" Usage="System.Printing.PrintCapabilities.PageScalingFactorRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PageScalingFactorRange ^ PageScalingFactorRange { System::Printing::PageScalingFactorRange ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -614,6 +671,9 @@ foreach (PageResolution pageRes in pc.PageResolutionCapability)
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;int&gt; PagesPerSheetCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;int32&gt; PagesPerSheetCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.PagesPerSheetCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PagesPerSheetCapability As ReadOnlyCollection(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.PagesPerSheetCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;int&gt;" Usage="System.Printing.PrintCapabilities.PagesPerSheetCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;int&gt; ^ PagesPerSheetCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;int&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -643,6 +703,9 @@ foreach (PageResolution pageRes in pc.PageResolutionCapability)
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PagesPerSheetDirection&gt; PagesPerSheetDirectionCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Printing.PagesPerSheetDirection&gt; PagesPerSheetDirectionCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.PagesPerSheetDirectionCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PagesPerSheetDirectionCapability As ReadOnlyCollection(Of PagesPerSheetDirection)" />
+      <MemberSignature Language="F#" Value="member this.PagesPerSheetDirectionCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PagesPerSheetDirection&gt;" Usage="System.Printing.PrintCapabilities.PagesPerSheetDirectionCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PagesPerSheetDirection&gt; ^ PagesPerSheetDirectionCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PagesPerSheetDirection&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -672,6 +735,9 @@ foreach (PageResolution pageRes in pc.PageResolutionCapability)
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PhotoPrintingIntent&gt; PhotoPrintingIntentCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Printing.PhotoPrintingIntent&gt; PhotoPrintingIntentCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.PhotoPrintingIntentCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PhotoPrintingIntentCapability As ReadOnlyCollection(Of PhotoPrintingIntent)" />
+      <MemberSignature Language="F#" Value="member this.PhotoPrintingIntentCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.PhotoPrintingIntent&gt;" Usage="System.Printing.PrintCapabilities.PhotoPrintingIntentCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PhotoPrintingIntent&gt; ^ PhotoPrintingIntentCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::PhotoPrintingIntent&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -699,6 +765,9 @@ foreach (PageResolution pageRes in pc.PageResolutionCapability)
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.Stapling&gt; StaplingCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Printing.Stapling&gt; StaplingCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.StaplingCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StaplingCapability As ReadOnlyCollection(Of Stapling)" />
+      <MemberSignature Language="F#" Value="member this.StaplingCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.Stapling&gt;" Usage="System.Printing.PrintCapabilities.StaplingCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::Stapling&gt; ^ StaplingCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::Stapling&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -735,6 +804,9 @@ foreach (PageResolution pageRes in pc.PageResolutionCapability)
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.TrueTypeFontMode&gt; TrueTypeFontModeCapability { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;valuetype System.Printing.TrueTypeFontMode&gt; TrueTypeFontModeCapability" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintCapabilities.TrueTypeFontModeCapability" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TrueTypeFontModeCapability As ReadOnlyCollection(Of TrueTypeFontMode)" />
+      <MemberSignature Language="F#" Value="member this.TrueTypeFontModeCapability : System.Collections.ObjectModel.ReadOnlyCollection&lt;System.Printing.TrueTypeFontMode&gt;" Usage="System.Printing.PrintCapabilities.TrueTypeFontModeCapability" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::TrueTypeFontMode&gt; ^ TrueTypeFontModeCapability { System::Collections::ObjectModel::ReadOnlyCollection&lt;System::Printing::TrueTypeFontMode&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>

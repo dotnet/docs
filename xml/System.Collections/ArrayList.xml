@@ -1,7 +1,10 @@
-<Type Name="ArrayList" FullName="System.Collections.ArrayList">
+﻿<Type Name="ArrayList" FullName="System.Collections.ArrayList">
   <TypeSignature Language="C#" Value="public class ArrayList : ICloneable, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ArrayList extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Collections.ArrayList" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArrayList&#xA;Implements ICloneable, IList" />
+  <TypeSignature Language="F#" Value="type ArrayList = class&#xA;    interface IList&#xA;    interface ICloneable&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ArrayList : ICloneable, System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>System.Collections.NonGeneric</AssemblyName>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -87,10 +90,21 @@
     <altmember cref="T:System.Collections.Generic.List`1" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.ArrayList" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ArrayList ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayList();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -131,6 +145,9 @@
       <MemberSignature Language="C#" Value="public ArrayList (System.Collections.ICollection c);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.#ctor(System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (c As ICollection)" />
+      <MemberSignature Language="F#" Value="new System.Collections.ArrayList : System.Collections.ICollection -&gt; System.Collections.ArrayList" Usage="new System.Collections.ArrayList c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayList(System::Collections::ICollection ^ c);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -179,6 +196,9 @@
       <MemberSignature Language="C#" Value="public ArrayList (int capacity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 capacity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.#ctor(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (capacity As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Collections.ArrayList : int -&gt; System.Collections.ArrayList" Usage="new System.Collections.ArrayList capacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ArrayList(int capacity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -224,6 +244,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.ArrayList Adapter (System.Collections.IList list);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ArrayList Adapter(class System.Collections.IList list) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Adapter(System.Collections.IList)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Adapter (list As IList) As ArrayList" />
+      <MemberSignature Language="F#" Value="static member Adapter : System.Collections.IList -&gt; System.Collections.ArrayList" Usage="System.Collections.ArrayList.Adapter list" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ArrayList ^ Adapter(System::Collections::IList ^ list);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -279,7 +302,13 @@
       <MemberSignature Language="C#" Value="public virtual int Add (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Add (value As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Add : obj -&gt; int&#xA;override this.Add : obj -&gt; int" Usage="arrayList.Add value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Add(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -343,6 +372,9 @@
       <MemberSignature Language="C#" Value="public virtual void AddRange (System.Collections.ICollection c);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddRange(class System.Collections.ICollection c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.AddRange(System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddRange (c As ICollection)" />
+      <MemberSignature Language="F#" Value="abstract member AddRange : System.Collections.ICollection -&gt; unit&#xA;override this.AddRange : System.Collections.ICollection -&gt; unit" Usage="arrayList.AddRange c" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddRange(System::Collections::ICollection ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -410,10 +442,22 @@
         <altmember cref="M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="BinarySearch">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uses a binary search algorithm to locate a specific element in the sorted <see cref="T:System.Collections.ArrayList" /> or a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BinarySearch">
       <MemberSignature Language="C#" Value="public virtual int BinarySearch (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 BinarySearch(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.BinarySearch(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BinarySearch (value As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member BinarySearch : obj -&gt; int&#xA;override this.BinarySearch : obj -&gt; int" Usage="arrayList.BinarySearch value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int BinarySearch(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -476,6 +520,9 @@
       <MemberSignature Language="C#" Value="public virtual int BinarySearch (object value, System.Collections.IComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 BinarySearch(object value, class System.Collections.IComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.BinarySearch(System.Object,System.Collections.IComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BinarySearch (value As Object, comparer As IComparer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member BinarySearch : obj * System.Collections.IComparer -&gt; int&#xA;override this.BinarySearch : obj * System.Collections.IComparer -&gt; int" Usage="arrayList.BinarySearch (value, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int BinarySearch(System::Object ^ value, System::Collections::IComparer ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -549,6 +596,9 @@
       <MemberSignature Language="C#" Value="public virtual int BinarySearch (int index, int count, object value, System.Collections.IComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 BinarySearch(int32 index, int32 count, object value, class System.Collections.IComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.BinarySearch(System.Int32,System.Int32,System.Object,System.Collections.IComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function BinarySearch (index As Integer, count As Integer, value As Object, comparer As IComparer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member BinarySearch : int * int * obj * System.Collections.IComparer -&gt; int&#xA;override this.BinarySearch : int * int * obj * System.Collections.IComparer -&gt; int" Usage="arrayList.BinarySearch (index, count, value, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int BinarySearch(int index, int count, System::Object ^ value, System::Collections::IComparer ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -629,6 +679,9 @@
       <MemberSignature Language="C#" Value="public virtual int Capacity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Capacity" />
       <MemberSignature Language="DocId" Value="P:System.Collections.ArrayList.Capacity" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Capacity As Integer" />
+      <MemberSignature Language="F#" Value="member this.Capacity : int with get, set" Usage="System.Collections.ArrayList.Capacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Capacity { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -677,7 +730,13 @@
       <MemberSignature Language="C#" Value="public virtual void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="arrayList.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -736,7 +795,13 @@
       <MemberSignature Language="C#" Value="public virtual object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="arrayList.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -779,7 +844,13 @@
       <MemberSignature Language="C#" Value="public virtual bool Contains (object item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Contains (item As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Contains : obj -&gt; bool&#xA;override this.Contains : obj -&gt; bool" Usage="arrayList.Contains item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Object ^ item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -824,10 +895,21 @@
         <altmember cref="M:System.Collections.ArrayList.LastIndexOf(System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the <see cref="T:System.Collections.ArrayList" /> or a portion of it to a one-dimensional array.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public virtual void CopyTo (Array array);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.CopyTo(System.Array)" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array -&gt; unit&#xA;override this.CopyTo : Array -&gt; unit" Usage="arrayList.CopyTo array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -893,7 +975,12 @@
       <MemberSignature Language="C#" Value="public virtual void CopyTo (Array array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(class System.Array array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : Array * int -&gt; unit&#xA;override this.CopyTo : Array * int -&gt; unit" Usage="arrayList.CopyTo (array, arrayIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(Array ^ array, int arrayIndex);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -962,6 +1049,8 @@
       <MemberSignature Language="C#" Value="public virtual void CopyTo (int index, Array array, int arrayIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(int32 index, class System.Array array, int32 arrayIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.CopyTo(System.Int32,System.Array,System.Int32,System.Int32)" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : int * Array * int * int -&gt; unit&#xA;override this.CopyTo : int * Array * int * int -&gt; unit" Usage="arrayList.CopyTo (index, array, arrayIndex, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(int index, Array ^ array, int arrayIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1047,7 +1136,13 @@
       <MemberSignature Language="C#" Value="public virtual int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Collections.ArrayList.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Collections.ArrayList.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1086,10 +1181,22 @@
         <altmember cref="P:System.Collections.ArrayList.Capacity" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FixedSize">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list wrapper with a fixed size, where elements are allowed to be modified, but not added or removed.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FixedSize">
       <MemberSignature Language="C#" Value="public static System.Collections.ArrayList FixedSize (System.Collections.ArrayList list);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ArrayList FixedSize(class System.Collections.ArrayList list) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.FixedSize(System.Collections.ArrayList)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FixedSize (list As ArrayList) As ArrayList" />
+      <MemberSignature Language="F#" Value="static member FixedSize : System.Collections.ArrayList -&gt; System.Collections.ArrayList" Usage="System.Collections.ArrayList.FixedSize list" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ArrayList ^ FixedSize(System::Collections::ArrayList ^ list);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1147,6 +1254,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IList FixedSize (System.Collections.IList list);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IList FixedSize(class System.Collections.IList list) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.FixedSize(System.Collections.IList)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FixedSize (list As IList) As IList" />
+      <MemberSignature Language="F#" Value="static member FixedSize : System.Collections.IList -&gt; System.Collections.IList" Usage="System.Collections.ArrayList.FixedSize list" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IList ^ FixedSize(System::Collections::IList ^ list);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1191,11 +1301,26 @@
           <paramref name="list" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetEnumerator">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.ArrayList" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetEnumerator">
       <MemberSignature Language="C#" Value="public virtual System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="arrayList.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1257,6 +1382,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.IEnumerator GetEnumerator (int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator(int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.GetEnumerator(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEnumerator (index As Integer, count As Integer) As IEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : int * int -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : int * int -&gt; System.Collections.IEnumerator" Usage="arrayList.GetEnumerator (index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator(int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1335,6 +1463,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Collections.ArrayList GetRange (int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ArrayList GetRange(int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.GetRange(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRange (index As Integer, count As Integer) As ArrayList" />
+      <MemberSignature Language="F#" Value="abstract member GetRange : int * int -&gt; System.Collections.ArrayList&#xA;override this.GetRange : int * int -&gt; System.Collections.ArrayList" Usage="arrayList.GetRange (index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::ArrayList ^ GetRange(int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1398,11 +1529,26 @@
         <altmember cref="M:System.Collections.ArrayList.SetRange(System.Int32,System.Collections.ICollection)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the zero-based index of the first occurrence of a value in the <see cref="T:System.Collections.ArrayList" /> or in a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IndexOf">
       <MemberSignature Language="C#" Value="public virtual int IndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (value As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : obj -&gt; int&#xA;override this.IndexOf : obj -&gt; int" Usage="arrayList.IndexOf value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1461,6 +1607,9 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOf (object value, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(object value, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.IndexOf(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (value As Object, startIndex As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : obj * int -&gt; int&#xA;override this.IndexOf : obj * int -&gt; int" Usage="arrayList.IndexOf (value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Object ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1524,6 +1673,9 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOf (object value, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOf(object value, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.IndexOf(System.Object,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOf (value As Object, startIndex As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member IndexOf : obj * int * int -&gt; int&#xA;override this.IndexOf : obj * int * int -&gt; int" Usage="arrayList.IndexOf (value, startIndex, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOf(System::Object ^ value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1597,7 +1749,13 @@
       <MemberSignature Language="C#" Value="public virtual void Insert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Insert (index As Integer, value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Insert : int * obj -&gt; unit&#xA;override this.Insert : int * obj -&gt; unit" Usage="arrayList.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Insert(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1671,6 +1829,9 @@
       <MemberSignature Language="C#" Value="public virtual void InsertRange (int index, System.Collections.ICollection c);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertRange(int32 index, class System.Collections.ICollection c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.InsertRange(System.Int32,System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub InsertRange (index As Integer, c As ICollection)" />
+      <MemberSignature Language="F#" Value="abstract member InsertRange : int * System.Collections.ICollection -&gt; unit&#xA;override this.InsertRange : int * System.Collections.ICollection -&gt; unit" Usage="arrayList.InsertRange (index, c)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InsertRange(int index, System::Collections::ICollection ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -1751,7 +1912,13 @@
       <MemberSignature Language="C#" Value="public virtual bool IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Collections.ArrayList.IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsFixedSize As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Collections.ArrayList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1803,7 +1970,13 @@
       <MemberSignature Language="C#" Value="public virtual bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Collections.ArrayList.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Collections.ArrayList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1856,7 +2029,13 @@
       <MemberSignature Language="C#" Value="public virtual bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Collections.ArrayList.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Collections.ArrayList.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1916,7 +2095,13 @@
       <MemberSignature Language="C#" Value="public virtual object this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Collections.ArrayList.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(index As Integer) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj with get, set" Usage="System.Collections.ArrayList.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ default[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -1984,10 +2169,22 @@
         <altmember cref="P:System.Collections.ArrayList.Count" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="LastIndexOf">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the zero-based index of the last occurrence of a value in the <see cref="T:System.Collections.ArrayList" /> or in a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="LastIndexOf">
       <MemberSignature Language="C#" Value="public virtual int LastIndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.LastIndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (value As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member LastIndexOf : obj -&gt; int&#xA;override this.LastIndexOf : obj -&gt; int" Usage="arrayList.LastIndexOf value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2045,6 +2242,9 @@
       <MemberSignature Language="C#" Value="public virtual int LastIndexOf (object value, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(object value, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (value As Object, startIndex As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member LastIndexOf : obj * int -&gt; int&#xA;override this.LastIndexOf : obj * int -&gt; int" Usage="arrayList.LastIndexOf (value, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::Object ^ value, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2108,6 +2308,9 @@
       <MemberSignature Language="C#" Value="public virtual int LastIndexOf (object value, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 LastIndexOf(object value, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.LastIndexOf(System.Object,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function LastIndexOf (value As Object, startIndex As Integer, count As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member LastIndexOf : obj * int * int -&gt; int&#xA;override this.LastIndexOf : obj * int * int -&gt; int" Usage="arrayList.LastIndexOf (value, startIndex, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int LastIndexOf(System::Object ^ value, int startIndex, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2177,10 +2380,22 @@
         <altmember cref="M:System.Collections.ArrayList.Contains(System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReadOnly">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list wrapper that is read-only.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReadOnly">
       <MemberSignature Language="C#" Value="public static System.Collections.ArrayList ReadOnly (System.Collections.ArrayList list);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ArrayList ReadOnly(class System.Collections.ArrayList list) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.ReadOnly(System.Collections.ArrayList)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadOnly (list As ArrayList) As ArrayList" />
+      <MemberSignature Language="F#" Value="static member ReadOnly : System.Collections.ArrayList -&gt; System.Collections.ArrayList" Usage="System.Collections.ArrayList.ReadOnly list" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ArrayList ^ ReadOnly(System::Collections::ArrayList ^ list);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2239,6 +2454,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IList ReadOnly (System.Collections.IList list);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IList ReadOnly(class System.Collections.IList list) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.ReadOnly(System.Collections.IList)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadOnly (list As IList) As IList" />
+      <MemberSignature Language="F#" Value="static member ReadOnly : System.Collections.IList -&gt; System.Collections.IList" Usage="System.Collections.ArrayList.ReadOnly list" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IList ^ ReadOnly(System::Collections::IList ^ list);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2288,7 +2506,13 @@
       <MemberSignature Language="C#" Value="public virtual void Remove (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Remove (obj As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Remove : obj -&gt; unit&#xA;override this.Remove : obj -&gt; unit" Usage="arrayList.Remove obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Remove(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -2353,7 +2577,13 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="arrayList.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -2422,6 +2652,9 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveRange (int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveRange(int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveRange (index As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveRange : int * int -&gt; unit&#xA;override this.RemoveRange : int * int -&gt; unit" Usage="arrayList.RemoveRange (index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveRange(int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2495,6 +2728,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.ArrayList Repeat (object value, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ArrayList Repeat(object value, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Repeat(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Repeat (value As Object, count As Integer) As ArrayList" />
+      <MemberSignature Language="F#" Value="static member Repeat : obj * int -&gt; System.Collections.ArrayList" Usage="System.Collections.ArrayList.Repeat (value, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ArrayList ^ Repeat(System::Object ^ value, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2548,10 +2784,22 @@
           <paramref name="count" /> is less than zero.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Reverse">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Reverses the order of the elements in the <see cref="T:System.Collections.ArrayList" /> or a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Reverse">
       <MemberSignature Language="C#" Value="public virtual void Reverse ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reverse() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Reverse" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reverse ()" />
+      <MemberSignature Language="F#" Value="abstract member Reverse : unit -&gt; unit&#xA;override this.Reverse : unit -&gt; unit" Usage="arrayList.Reverse " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reverse();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2602,6 +2850,9 @@
       <MemberSignature Language="C#" Value="public virtual void Reverse (int index, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reverse(int32 index, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Reverse(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Reverse (index As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Reverse : int * int -&gt; unit&#xA;override this.Reverse : int * int -&gt; unit" Usage="arrayList.Reverse (index, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Reverse(int index, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2665,6 +2916,9 @@
       <MemberSignature Language="C#" Value="public virtual void SetRange (int index, System.Collections.ICollection c);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetRange(int32 index, class System.Collections.ICollection c) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.SetRange(System.Int32,System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetRange (index As Integer, c As ICollection)" />
+      <MemberSignature Language="F#" Value="abstract member SetRange : int * System.Collections.ICollection -&gt; unit&#xA;override this.SetRange : int * System.Collections.ICollection -&gt; unit" Usage="arrayList.SetRange (index, c)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetRange(int index, System::Collections::ICollection ^ c);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2730,10 +2984,22 @@
         <altmember cref="M:System.Collections.ArrayList.RemoveRange(System.Int32,System.Int32)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Sort">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sorts the elements in the <see cref="T:System.Collections.ArrayList" /> or a portion of it.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Sort">
       <MemberSignature Language="C#" Value="public virtual void Sort ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Sort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Sort" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Sort ()" />
+      <MemberSignature Language="F#" Value="abstract member Sort : unit -&gt; unit&#xA;override this.Sort : unit -&gt; unit" Usage="arrayList.Sort " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Sort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2784,6 +3050,9 @@
       <MemberSignature Language="C#" Value="public virtual void Sort (System.Collections.IComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Sort(class System.Collections.IComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Sort(System.Collections.IComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Sort (comparer As IComparer)" />
+      <MemberSignature Language="F#" Value="abstract member Sort : System.Collections.IComparer -&gt; unit&#xA;override this.Sort : System.Collections.IComparer -&gt; unit" Usage="arrayList.Sort comparer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Sort(System::Collections::IComparer ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2846,6 +3115,9 @@
       <MemberSignature Language="C#" Value="public virtual void Sort (int index, int count, System.Collections.IComparer comparer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Sort(int32 index, int32 count, class System.Collections.IComparer comparer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Sort(System.Int32,System.Int32,System.Collections.IComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Sort (index As Integer, count As Integer, comparer As IComparer)" />
+      <MemberSignature Language="F#" Value="abstract member Sort : int * int * System.Collections.IComparer -&gt; unit&#xA;override this.Sort : int * int * System.Collections.IComparer -&gt; unit" Usage="arrayList.Sort (index, count, comparer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Sort(int index, int count, System::Collections::IComparer ^ comparer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2912,10 +3184,22 @@
         <exception cref="T:System.InvalidOperationException">An error occurred while comparing two elements.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Synchronized">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list wrapper that is synchronized (thread safe).</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Synchronized">
       <MemberSignature Language="C#" Value="public static System.Collections.ArrayList Synchronized (System.Collections.ArrayList list);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.ArrayList Synchronized(class System.Collections.ArrayList list) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Synchronized(System.Collections.ArrayList)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Synchronized (list As ArrayList) As ArrayList" />
+      <MemberSignature Language="F#" Value="static member Synchronized : System.Collections.ArrayList -&gt; System.Collections.ArrayList" Usage="System.Collections.ArrayList.Synchronized list" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::ArrayList ^ Synchronized(System::Collections::ArrayList ^ list);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -2981,6 +3265,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IList Synchronized (System.Collections.IList list);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IList Synchronized(class System.Collections.IList list) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.Synchronized(System.Collections.IList)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Synchronized (list As IList) As IList" />
+      <MemberSignature Language="F#" Value="static member Synchronized : System.Collections.IList -&gt; System.Collections.IList" Usage="System.Collections.ArrayList.Synchronized list" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IList ^ Synchronized(System::Collections::IList ^ list);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -3040,7 +3327,13 @@
       <MemberSignature Language="C#" Value="public virtual object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Collections.ArrayList.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Collections.ArrayList.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
@@ -3089,10 +3382,22 @@
         <altmember cref="M:System.Collections.ArrayList.Synchronized(System.Collections.IList)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToArray">
+      <AssemblyInfo>
+        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
+        <AssemblyVersion>4.0.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of the <see cref="T:System.Collections.ArrayList" /> to a new array.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToArray">
       <MemberSignature Language="C#" Value="public virtual object[] ToArray ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] ToArray() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.ToArray" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ToArray () As Object()" />
+      <MemberSignature Language="F#" Value="abstract member ToArray : unit -&gt; obj[]&#xA;override this.ToArray : unit -&gt; obj[]" Usage="arrayList.ToArray " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Object ^&gt; ^ ToArray();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -3132,6 +3437,8 @@
       <MemberSignature Language="C#" Value="public virtual Array ToArray (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Array ToArray(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.ToArray(System.Type)" />
+      <MemberSignature Language="F#" Value="abstract member ToArray : Type -&gt; Array&#xA;override this.ToArray : Type -&gt; Array" Usage="arrayList.ToArray type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Array ^ ToArray(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -3194,6 +3501,9 @@
       <MemberSignature Language="C#" Value="public virtual void TrimToSize ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TrimToSize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.ArrayList.TrimToSize" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub TrimToSize ()" />
+      <MemberSignature Language="F#" Value="abstract member TrimToSize : unit -&gt; unit&#xA;override this.TrimToSize : unit -&gt; unit" Usage="arrayList.TrimToSize " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void TrimToSize();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Collections.NonGeneric</AssemblyName>
@@ -3249,113 +3559,5 @@
         <altmember cref="P:System.Collections.ArrayList.Count" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="LastIndexOf">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the zero-based index of the last occurrence of a value in the <see cref="T:System.Collections.ArrayList" /> or in a portion of it.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BinarySearch">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Uses a binary search algorithm to locate a specific element in the sorted <see cref="T:System.Collections.ArrayList" /> or a portion of it.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FixedSize">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a list wrapper with a fixed size, where elements are allowed to be modified, but not added or removed.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Reverse">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Reverses the order of the elements in the <see cref="T:System.Collections.ArrayList" /> or a portion of it.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToArray">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies the elements of the <see cref="T:System.Collections.ArrayList" /> to a new array.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.ArrayList" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReadOnly">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a list wrapper that is read-only.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CopyTo">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies the <see cref="T:System.Collections.ArrayList" /> or a portion of it to a one-dimensional array.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetEnumerator">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an enumerator that iterates through the <see cref="T:System.Collections.ArrayList" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IndexOf">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the zero-based index of the first occurrence of a value in the <see cref="T:System.Collections.ArrayList" /> or in a portion of it.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Synchronized">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a list wrapper that is synchronized (thread safe).</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Sort">
-      <AssemblyInfo>
-        <AssemblyName>System.Collections.NonGeneric</AssemblyName>
-        <AssemblyVersion>4.0.1.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sorts the elements in the <see cref="T:System.Collections.ArrayList" /> or a portion of it.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

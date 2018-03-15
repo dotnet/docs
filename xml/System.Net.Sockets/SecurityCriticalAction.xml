@@ -1,7 +1,10 @@
-<Type Name="SecurityCriticalAction" FullName="System.Net.Sockets.SecurityCriticalAction">
+﻿<Type Name="SecurityCriticalAction" FullName="System.Net.Sockets.SecurityCriticalAction">
   <TypeSignature Language="C#" Value="public delegate void SecurityCriticalAction();" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SecurityCriticalAction extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SecurityCriticalAction" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub SecurityCriticalAction()" />
+  <TypeSignature Language="F#" Value="type SecurityCriticalAction = delegate of unit -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void SecurityCriticalAction();" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

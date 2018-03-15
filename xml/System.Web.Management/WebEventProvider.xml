@@ -1,7 +1,10 @@
-<Type Name="WebEventProvider" FullName="System.Web.Management.WebEventProvider">
+﻿<Type Name="WebEventProvider" FullName="System.Web.Management.WebEventProvider">
   <TypeSignature Language="C#" Value="public abstract class WebEventProvider : System.Configuration.Provider.ProviderBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WebEventProvider extends System.Configuration.Provider.ProviderBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.Management.WebEventProvider" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WebEventProvider&#xA;Inherits ProviderBase" />
+  <TypeSignature Language="F#" Value="type WebEventProvider = class&#xA;    inherit ProviderBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebEventProvider abstract : System::Configuration::Provider::ProviderBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -65,6 +68,8 @@
       <MemberSignature Language="C#" Value="protected WebEventProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventProvider.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WebEventProvider();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +100,9 @@
       <MemberSignature Language="C#" Value="public abstract void Flush ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Flush() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventProvider.Flush" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Flush ()" />
+      <MemberSignature Language="F#" Value="abstract member Flush : unit -&gt; unit" Usage="webEventProvider.Flush " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Flush();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -128,6 +136,9 @@
       <MemberSignature Language="C#" Value="public abstract void ProcessEvent (System.Web.Management.WebBaseEvent raisedEvent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ProcessEvent(class System.Web.Management.WebBaseEvent raisedEvent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventProvider.ProcessEvent(System.Web.Management.WebBaseEvent)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub ProcessEvent (raisedEvent As WebBaseEvent)" />
+      <MemberSignature Language="F#" Value="abstract member ProcessEvent : System.Web.Management.WebBaseEvent -&gt; unit" Usage="webEventProvider.ProcessEvent raisedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void ProcessEvent(System::Web::Management::WebBaseEvent ^ raisedEvent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -164,6 +175,9 @@
       <MemberSignature Language="C#" Value="public abstract void Shutdown ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Shutdown() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Management.WebEventProvider.Shutdown" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Shutdown ()" />
+      <MemberSignature Language="F#" Value="abstract member Shutdown : unit -&gt; unit" Usage="webEventProvider.Shutdown " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Shutdown();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

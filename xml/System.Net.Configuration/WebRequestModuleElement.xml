@@ -1,7 +1,10 @@
-<Type Name="WebRequestModuleElement" FullName="System.Net.Configuration.WebRequestModuleElement">
+﻿<Type Name="WebRequestModuleElement" FullName="System.Net.Configuration.WebRequestModuleElement">
   <TypeSignature Language="C#" Value="public sealed class WebRequestModuleElement : System.Configuration.ConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebRequestModuleElement extends System.Configuration.ConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.Net.Configuration.WebRequestModuleElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebRequestModuleElement&#xA;Inherits ConfigurationElement" />
+  <TypeSignature Language="F#" Value="type WebRequestModuleElement = class&#xA;    inherit ConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebRequestModuleElement sealed : System::Configuration::ConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,10 +41,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.WebRequestModuleElement" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebRequestModuleElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebRequestModuleElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebRequestModuleElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -57,6 +71,9 @@
       <MemberSignature Language="C#" Value="public WebRequestModuleElement (string prefix, string type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prefix, string type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebRequestModuleElement.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (prefix As String, type As String)" />
+      <MemberSignature Language="F#" Value="new System.Net.Configuration.WebRequestModuleElement : string * string -&gt; System.Net.Configuration.WebRequestModuleElement" Usage="new System.Net.Configuration.WebRequestModuleElement (prefix, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebRequestModuleElement(System::String ^ prefix, System::String ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -86,6 +103,8 @@
       <MemberSignature Language="C#" Value="public WebRequestModuleElement (string prefix, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string prefix, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Configuration.WebRequestModuleElement.#ctor(System.String,System.Type)" />
+      <MemberSignature Language="F#" Value="new System.Net.Configuration.WebRequestModuleElement : string * Type -&gt; System.Net.Configuration.WebRequestModuleElement" Usage="new System.Net.Configuration.WebRequestModuleElement (prefix, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebRequestModuleElement(System::String ^ prefix, Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -113,6 +132,9 @@
       <MemberSignature Language="C#" Value="public string Prefix { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Prefix" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.WebRequestModuleElement.Prefix" />
+      <MemberSignature Language="VB.NET" Value="Public Property Prefix As String" />
+      <MemberSignature Language="F#" Value="member this.Prefix : string with get, set" Usage="System.Net.Configuration.WebRequestModuleElement.Prefix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Prefix { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -120,7 +142,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.Configuration.ConfigurationProperty("prefix", Options=System.Configuration.ConfigurationPropertyOptions.IsRequired | System.Configuration.ConfigurationPropertyOptions.IsKey)</AttributeName>
+          <AttributeName>System.Configuration.ConfigurationProperty("prefix", Options=System.Configuration.ConfigurationPropertyOptions.IsKey | System.Configuration.ConfigurationPropertyOptions.IsRequired)</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -151,6 +173,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.WebRequestModuleElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Net.Configuration.WebRequestModuleElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -169,6 +194,9 @@
       <MemberSignature Language="C#" Value="public Type Type { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:System.Net.Configuration.WebRequestModuleElement.Type" />
+      <MemberSignature Language="VB.NET" Value="Public Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type with get, set" Usage="System.Net.Configuration.WebRequestModuleElement.Type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ Type { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -208,14 +236,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Configuration.WebRequestModuleElement" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

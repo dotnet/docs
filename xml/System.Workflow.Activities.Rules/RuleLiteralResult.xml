@@ -1,7 +1,10 @@
-<Type Name="RuleLiteralResult" FullName="System.Workflow.Activities.Rules.RuleLiteralResult">
+﻿<Type Name="RuleLiteralResult" FullName="System.Workflow.Activities.Rules.RuleLiteralResult">
   <TypeSignature Language="C#" Value="public class RuleLiteralResult : System.Workflow.Activities.Rules.RuleExpressionResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RuleLiteralResult extends System.Workflow.Activities.Rules.RuleExpressionResult" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.Rules.RuleLiteralResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class RuleLiteralResult&#xA;Inherits RuleExpressionResult" />
+  <TypeSignature Language="F#" Value="type RuleLiteralResult = class&#xA;    inherit RuleExpressionResult" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RuleLiteralResult : System::Workflow::Activities::Rules::RuleExpressionResult" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public RuleLiteralResult (object literal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object literal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.Rules.RuleLiteralResult.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (literal As Object)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.Rules.RuleLiteralResult : obj -&gt; System.Workflow.Activities.Rules.RuleLiteralResult" Usage="new System.Workflow.Activities.Rules.RuleLiteralResult literal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RuleLiteralResult(System::Object ^ literal);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public override object Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.Rules.RuleLiteralResult.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj with get, set" Usage="System.Workflow.Activities.Rules.RuleLiteralResult.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Value { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>

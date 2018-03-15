@@ -1,7 +1,10 @@
-<Type Name="RichTextBoxFinds" FullName="System.Windows.Forms.RichTextBoxFinds">
+﻿<Type Name="RichTextBoxFinds" FullName="System.Windows.Forms.RichTextBoxFinds">
   <TypeSignature Language="C#" Value="public enum RichTextBoxFinds" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RichTextBoxFinds extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RichTextBoxFinds" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RichTextBoxFinds" />
+  <TypeSignature Language="F#" Value="type RichTextBoxFinds = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class RichTextBoxFinds" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="MatchCase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxFinds MatchCase = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxFinds.MatchCase" />
+      <MemberSignature Language="VB.NET" Value="MatchCase" />
+      <MemberSignature Language="F#" Value="MatchCase = 4" Usage="System.Windows.Forms.RichTextBoxFinds.MatchCase" />
+      <MemberSignature Language="C++ CLI" Value="MatchCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RichTextBoxFinds</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Locate only instances of the search text that have the exact casing.</summary>
       </Docs>
@@ -57,6 +64,9 @@
       <MemberSignature Language="C#" Value="NoHighlight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxFinds NoHighlight = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxFinds.NoHighlight" />
+      <MemberSignature Language="VB.NET" Value="NoHighlight" />
+      <MemberSignature Language="F#" Value="NoHighlight = 8" Usage="System.Windows.Forms.RichTextBoxFinds.NoHighlight" />
+      <MemberSignature Language="C++ CLI" Value="NoHighlight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RichTextBoxFinds</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The search text, if found, should not be highlighted.</summary>
       </Docs>
@@ -73,6 +84,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxFinds None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxFinds.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.RichTextBoxFinds.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RichTextBoxFinds</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Locate all instances of the search text, whether the instances found in the search are whole words or not.</summary>
       </Docs>
@@ -89,6 +104,9 @@
       <MemberSignature Language="C#" Value="Reverse" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxFinds Reverse = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxFinds.Reverse" />
+      <MemberSignature Language="VB.NET" Value="Reverse" />
+      <MemberSignature Language="F#" Value="Reverse = 16" Usage="System.Windows.Forms.RichTextBoxFinds.Reverse" />
+      <MemberSignature Language="C++ CLI" Value="Reverse" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RichTextBoxFinds</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The search starts at the end of the control's document and searches to the beginning of the document.</summary>
       </Docs>
@@ -105,6 +124,9 @@
       <MemberSignature Language="C#" Value="WholeWord" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.RichTextBoxFinds WholeWord = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.RichTextBoxFinds.WholeWord" />
+      <MemberSignature Language="VB.NET" Value="WholeWord" />
+      <MemberSignature Language="F#" Value="WholeWord = 2" Usage="System.Windows.Forms.RichTextBoxFinds.WholeWord" />
+      <MemberSignature Language="C++ CLI" Value="WholeWord" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -113,6 +135,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.RichTextBoxFinds</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Locate only instances of the search text that are whole words.</summary>
       </Docs>

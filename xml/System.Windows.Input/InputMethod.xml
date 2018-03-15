@@ -1,7 +1,10 @@
-<Type Name="InputMethod" FullName="System.Windows.Input.InputMethod">
+﻿<Type Name="InputMethod" FullName="System.Windows.Input.InputMethod">
   <TypeSignature Language="C#" Value="public class InputMethod : System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InputMethod extends System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputMethod" />
+  <TypeSignature Language="VB.NET" Value="Public Class InputMethod&#xA;Inherits DispatcherObject" />
+  <TypeSignature Language="F#" Value="type InputMethod = class&#xA;    inherit DispatcherObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InputMethod : System::Windows::Threading::DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public bool CanShowConfigurationUI { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanShowConfigurationUI" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.CanShowConfigurationUI" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanShowConfigurationUI As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanShowConfigurationUI : bool" Usage="System.Windows.Input.InputMethod.CanShowConfigurationUI" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanShowConfigurationUI { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -66,6 +72,9 @@
       <MemberSignature Language="C#" Value="public bool CanShowRegisterWordUI { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanShowRegisterWordUI" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.CanShowRegisterWordUI" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanShowRegisterWordUI As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanShowRegisterWordUI : bool" Usage="System.Windows.Input.InputMethod.CanShowRegisterWordUI" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanShowRegisterWordUI { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -88,6 +97,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.InputMethod Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.InputMethod Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As InputMethod" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Windows.Input.InputMethod" Usage="System.Windows.Input.InputMethod.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::InputMethod ^ Current { System::Windows::Input::InputMethod ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -118,6 +130,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.InputScope GetInputScope (System.Windows.DependencyObject target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Input.InputScope GetInputScope(class System.Windows.DependencyObject target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.GetInputScope(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetInputScope (target As DependencyObject) As InputScope" />
+      <MemberSignature Language="F#" Value="static member GetInputScope : System.Windows.DependencyObject -&gt; System.Windows.Input.InputScope" Usage="System.Windows.Input.InputMethod.GetInputScope target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Input::InputScope ^ GetInputScope(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -147,6 +162,9 @@
       <MemberSignature Language="C#" Value="public static bool GetIsInputMethodEnabled (System.Windows.DependencyObject target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsInputMethodEnabled(class System.Windows.DependencyObject target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.GetIsInputMethodEnabled(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsInputMethodEnabled (target As DependencyObject) As Boolean" />
+      <MemberSignature Language="F#" Value="static member GetIsInputMethodEnabled : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Input.InputMethod.GetIsInputMethodEnabled target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsInputMethodEnabled(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -176,6 +194,9 @@
       <MemberSignature Language="C#" Value="public static bool GetIsInputMethodSuspended (System.Windows.DependencyObject target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetIsInputMethodSuspended(class System.Windows.DependencyObject target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.GetIsInputMethodSuspended(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetIsInputMethodSuspended (target As DependencyObject) As Boolean" />
+      <MemberSignature Language="F#" Value="static member GetIsInputMethodSuspended : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Input.InputMethod.GetIsInputMethodSuspended target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetIsInputMethodSuspended(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -205,6 +226,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.ImeConversionModeValues GetPreferredImeConversionMode (System.Windows.DependencyObject target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Input.ImeConversionModeValues GetPreferredImeConversionMode(class System.Windows.DependencyObject target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.GetPreferredImeConversionMode(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPreferredImeConversionMode (target As DependencyObject) As ImeConversionModeValues" />
+      <MemberSignature Language="F#" Value="static member GetPreferredImeConversionMode : System.Windows.DependencyObject -&gt; System.Windows.Input.ImeConversionModeValues" Usage="System.Windows.Input.InputMethod.GetPreferredImeConversionMode target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Input::ImeConversionModeValues GetPreferredImeConversionMode(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -234,6 +258,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.ImeSentenceModeValues GetPreferredImeSentenceMode (System.Windows.DependencyObject target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Input.ImeSentenceModeValues GetPreferredImeSentenceMode(class System.Windows.DependencyObject target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.GetPreferredImeSentenceMode(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPreferredImeSentenceMode (target As DependencyObject) As ImeSentenceModeValues" />
+      <MemberSignature Language="F#" Value="static member GetPreferredImeSentenceMode : System.Windows.DependencyObject -&gt; System.Windows.Input.ImeSentenceModeValues" Usage="System.Windows.Input.InputMethod.GetPreferredImeSentenceMode target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Input::ImeSentenceModeValues GetPreferredImeSentenceMode(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -263,6 +290,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.InputMethodState GetPreferredImeState (System.Windows.DependencyObject target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Windows.Input.InputMethodState GetPreferredImeState(class System.Windows.DependencyObject target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.GetPreferredImeState(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPreferredImeState (target As DependencyObject) As InputMethodState" />
+      <MemberSignature Language="F#" Value="static member GetPreferredImeState : System.Windows.DependencyObject -&gt; System.Windows.Input.InputMethodState" Usage="System.Windows.Input.InputMethod.GetPreferredImeState target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Input::InputMethodState GetPreferredImeState(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -292,6 +322,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.InputMethodState HandwritingState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.InputMethodState HandwritingState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.HandwritingState" />
+      <MemberSignature Language="VB.NET" Value="Public Property HandwritingState As InputMethodState" />
+      <MemberSignature Language="F#" Value="member this.HandwritingState : System.Windows.Input.InputMethodState with get, set" Usage="System.Windows.Input.InputMethod.HandwritingState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::InputMethodState HandwritingState { System::Windows::Input::InputMethodState get(); void set(System::Windows::Input::InputMethodState value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -332,6 +365,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.ImeConversionModeValues ImeConversionMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.ImeConversionModeValues ImeConversionMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.ImeConversionMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImeConversionMode As ImeConversionModeValues" />
+      <MemberSignature Language="F#" Value="member this.ImeConversionMode : System.Windows.Input.ImeConversionModeValues with get, set" Usage="System.Windows.Input.InputMethod.ImeConversionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ImeConversionModeValues ImeConversionMode { System::Windows::Input::ImeConversionModeValues get(); void set(System::Windows::Input::ImeConversionModeValues value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -361,6 +397,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.ImeSentenceModeValues ImeSentenceMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.ImeSentenceModeValues ImeSentenceMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.ImeSentenceMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImeSentenceMode As ImeSentenceModeValues" />
+      <MemberSignature Language="F#" Value="member this.ImeSentenceMode : System.Windows.Input.ImeSentenceModeValues with get, set" Usage="System.Windows.Input.InputMethod.ImeSentenceMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::ImeSentenceModeValues ImeSentenceMode { System::Windows::Input::ImeSentenceModeValues get(); void set(System::Windows::Input::ImeSentenceModeValues value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -400,6 +439,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.InputMethodState ImeState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.InputMethodState ImeState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.ImeState" />
+      <MemberSignature Language="VB.NET" Value="Public Property ImeState As InputMethodState" />
+      <MemberSignature Language="F#" Value="member this.ImeState : System.Windows.Input.InputMethodState with get, set" Usage="System.Windows.Input.InputMethod.ImeState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::InputMethodState ImeState { System::Windows::Input::InputMethodState get(); void set(System::Windows::Input::InputMethodState value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -426,10 +468,29 @@
         <altmember cref="P:System.Windows.Input.InputMethod.MicrophoneState" />
       </Docs>
     </Member>
+    <Member MemberName="InputScope">
+      <MemberSignature Language="C#" Value="see GetInputScope, and SetInputScope" />
+      <MemberSignature Language="ILAsm" Value="see GetInputScope, and SetInputScope" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.InputScope" />
+      <MemberSignature Language="VB.NET" Value="see GetInputScope, and SetInputScope" />
+      <MemberSignature Language="F#" Value="see GetInputScope, and SetInputScope" Usage="see GetInputScope, and SetInputScope" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="InputScopeProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty InputScopeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty InputScopeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethod.InputScopeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InputScopeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable InputScopeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.InputMethod.InputScopeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ InputScopeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -443,10 +504,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsInputMethodEnabled">
+      <MemberSignature Language="C#" Value="see GetIsInputMethodEnabled, and SetIsInputMethodEnabled" />
+      <MemberSignature Language="ILAsm" Value="see GetIsInputMethodEnabled, and SetIsInputMethodEnabled" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.IsInputMethodEnabled" />
+      <MemberSignature Language="VB.NET" Value="see GetIsInputMethodEnabled, and SetIsInputMethodEnabled" />
+      <MemberSignature Language="F#" Value="see GetIsInputMethodEnabled, and SetIsInputMethodEnabled" Usage="see GetIsInputMethodEnabled, and SetIsInputMethodEnabled" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsInputMethodEnabledProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsInputMethodEnabledProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsInputMethodEnabledProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethod.IsInputMethodEnabledProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInputMethodEnabledProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInputMethodEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.InputMethod.IsInputMethodEnabledProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInputMethodEnabledProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -460,10 +540,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsInputMethodSuspended">
+      <MemberSignature Language="C#" Value="see GetIsInputMethodSuspended, and SetIsInputMethodSuspended" />
+      <MemberSignature Language="ILAsm" Value="see GetIsInputMethodSuspended, and SetIsInputMethodSuspended" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.IsInputMethodSuspended" />
+      <MemberSignature Language="VB.NET" Value="see GetIsInputMethodSuspended, and SetIsInputMethodSuspended" />
+      <MemberSignature Language="F#" Value="see GetIsInputMethodSuspended, and SetIsInputMethodSuspended" Usage="see GetIsInputMethodSuspended, and SetIsInputMethodSuspended" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="IsInputMethodSuspendedProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsInputMethodSuspendedProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsInputMethodSuspendedProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethod.IsInputMethodSuspendedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInputMethodSuspendedProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInputMethodSuspendedProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.InputMethod.IsInputMethodSuspendedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInputMethodSuspendedProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -481,6 +580,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.InputMethodState MicrophoneState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.InputMethodState MicrophoneState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.MicrophoneState" />
+      <MemberSignature Language="VB.NET" Value="Public Property MicrophoneState As InputMethodState" />
+      <MemberSignature Language="F#" Value="member this.MicrophoneState : System.Windows.Input.InputMethodState with get, set" Usage="System.Windows.Input.InputMethod.MicrophoneState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::InputMethodState MicrophoneState { System::Windows::Input::InputMethodState get(); void set(System::Windows::Input::InputMethodState value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -508,10 +610,29 @@
         <altmember cref="P:System.Windows.Input.InputMethod.HandwritingState" />
       </Docs>
     </Member>
+    <Member MemberName="PreferredImeConversionMode">
+      <MemberSignature Language="C#" Value="see GetPreferredImeConversionMode, and SetPreferredImeConversionMode" />
+      <MemberSignature Language="ILAsm" Value="see GetPreferredImeConversionMode, and SetPreferredImeConversionMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.PreferredImeConversionMode" />
+      <MemberSignature Language="VB.NET" Value="see GetPreferredImeConversionMode, and SetPreferredImeConversionMode" />
+      <MemberSignature Language="F#" Value="see GetPreferredImeConversionMode, and SetPreferredImeConversionMode" Usage="see GetPreferredImeConversionMode, and SetPreferredImeConversionMode" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PreferredImeConversionModeProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PreferredImeConversionModeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PreferredImeConversionModeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethod.PreferredImeConversionModeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreferredImeConversionModeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PreferredImeConversionModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.InputMethod.PreferredImeConversionModeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PreferredImeConversionModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -525,10 +646,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="PreferredImeSentenceMode">
+      <MemberSignature Language="C#" Value="see GetPreferredImeSentenceMode, and SetPreferredImeSentenceMode" />
+      <MemberSignature Language="ILAsm" Value="see GetPreferredImeSentenceMode, and SetPreferredImeSentenceMode" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.PreferredImeSentenceMode" />
+      <MemberSignature Language="VB.NET" Value="see GetPreferredImeSentenceMode, and SetPreferredImeSentenceMode" />
+      <MemberSignature Language="F#" Value="see GetPreferredImeSentenceMode, and SetPreferredImeSentenceMode" Usage="see GetPreferredImeSentenceMode, and SetPreferredImeSentenceMode" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PreferredImeSentenceModeProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PreferredImeSentenceModeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PreferredImeSentenceModeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethod.PreferredImeSentenceModeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreferredImeSentenceModeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PreferredImeSentenceModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.InputMethod.PreferredImeSentenceModeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PreferredImeSentenceModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -542,10 +682,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="PreferredImeState">
+      <MemberSignature Language="C#" Value="see GetPreferredImeState, and SetPreferredImeState" />
+      <MemberSignature Language="ILAsm" Value="see GetPreferredImeState, and SetPreferredImeState" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.PreferredImeState" />
+      <MemberSignature Language="VB.NET" Value="see GetPreferredImeState, and SetPreferredImeState" />
+      <MemberSignature Language="F#" Value="see GetPreferredImeState, and SetPreferredImeState" Usage="see GetPreferredImeState, and SetPreferredImeState" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="PreferredImeStateProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty PreferredImeStateProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty PreferredImeStateProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputMethod.PreferredImeStateProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly PreferredImeStateProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable PreferredImeStateProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.InputMethod.PreferredImeStateProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ PreferredImeStateProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -563,6 +722,9 @@
       <MemberSignature Language="C#" Value="public static void SetInputScope (System.Windows.DependencyObject target, System.Windows.Input.InputScope value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetInputScope(class System.Windows.DependencyObject target, class System.Windows.Input.InputScope value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.SetInputScope(System.Windows.DependencyObject,System.Windows.Input.InputScope)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetInputScope (target As DependencyObject, value As InputScope)" />
+      <MemberSignature Language="F#" Value="static member SetInputScope : System.Windows.DependencyObject * System.Windows.Input.InputScope -&gt; unit" Usage="System.Windows.Input.InputMethod.SetInputScope (target, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetInputScope(System::Windows::DependencyObject ^ target, System::Windows::Input::InputScope ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -598,6 +760,9 @@
       <MemberSignature Language="C#" Value="public static void SetIsInputMethodEnabled (System.Windows.DependencyObject target, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsInputMethodEnabled(class System.Windows.DependencyObject target, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.SetIsInputMethodEnabled(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsInputMethodEnabled (target As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetIsInputMethodEnabled : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Input.InputMethod.SetIsInputMethodEnabled (target, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsInputMethodEnabled(System::Windows::DependencyObject ^ target, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -623,6 +788,9 @@
       <MemberSignature Language="C#" Value="public static void SetIsInputMethodSuspended (System.Windows.DependencyObject target, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetIsInputMethodSuspended(class System.Windows.DependencyObject target, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.SetIsInputMethodSuspended(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetIsInputMethodSuspended (target As DependencyObject, value As Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetIsInputMethodSuspended : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Input.InputMethod.SetIsInputMethodSuspended (target, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetIsInputMethodSuspended(System::Windows::DependencyObject ^ target, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -648,6 +816,9 @@
       <MemberSignature Language="C#" Value="public static void SetPreferredImeConversionMode (System.Windows.DependencyObject target, System.Windows.Input.ImeConversionModeValues value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetPreferredImeConversionMode(class System.Windows.DependencyObject target, valuetype System.Windows.Input.ImeConversionModeValues value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.SetPreferredImeConversionMode(System.Windows.DependencyObject,System.Windows.Input.ImeConversionModeValues)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPreferredImeConversionMode (target As DependencyObject, value As ImeConversionModeValues)" />
+      <MemberSignature Language="F#" Value="static member SetPreferredImeConversionMode : System.Windows.DependencyObject * System.Windows.Input.ImeConversionModeValues -&gt; unit" Usage="System.Windows.Input.InputMethod.SetPreferredImeConversionMode (target, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetPreferredImeConversionMode(System::Windows::DependencyObject ^ target, System::Windows::Input::ImeConversionModeValues value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -673,6 +844,9 @@
       <MemberSignature Language="C#" Value="public static void SetPreferredImeSentenceMode (System.Windows.DependencyObject target, System.Windows.Input.ImeSentenceModeValues value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetPreferredImeSentenceMode(class System.Windows.DependencyObject target, valuetype System.Windows.Input.ImeSentenceModeValues value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.SetPreferredImeSentenceMode(System.Windows.DependencyObject,System.Windows.Input.ImeSentenceModeValues)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPreferredImeSentenceMode (target As DependencyObject, value As ImeSentenceModeValues)" />
+      <MemberSignature Language="F#" Value="static member SetPreferredImeSentenceMode : System.Windows.DependencyObject * System.Windows.Input.ImeSentenceModeValues -&gt; unit" Usage="System.Windows.Input.InputMethod.SetPreferredImeSentenceMode (target, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetPreferredImeSentenceMode(System::Windows::DependencyObject ^ target, System::Windows::Input::ImeSentenceModeValues value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -698,6 +872,9 @@
       <MemberSignature Language="C#" Value="public static void SetPreferredImeState (System.Windows.DependencyObject target, System.Windows.Input.InputMethodState value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetPreferredImeState(class System.Windows.DependencyObject target, valuetype System.Windows.Input.InputMethodState value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.SetPreferredImeState(System.Windows.DependencyObject,System.Windows.Input.InputMethodState)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPreferredImeState (target As DependencyObject, value As InputMethodState)" />
+      <MemberSignature Language="F#" Value="static member SetPreferredImeState : System.Windows.DependencyObject * System.Windows.Input.InputMethodState -&gt; unit" Usage="System.Windows.Input.InputMethod.SetPreferredImeState (target, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetPreferredImeState(System::Windows::DependencyObject ^ target, System::Windows::Input::InputMethodState value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -719,10 +896,24 @@
         <altmember cref="M:System.Windows.Input.InputMethod.GetPreferredImeState(System.Windows.DependencyObject)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ShowConfigureUI">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays configuration user interface (UI) associated with the currently active keyboard text service.</summary>
+        <altmember cref="P:System.Windows.Input.InputMethod.CanShowConfigurationUI" />
+        <altmember cref="Overload:System.Windows.Input.InputMethod.ShowRegisterWordUI" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ShowConfigureUI">
       <MemberSignature Language="C#" Value="public void ShowConfigureUI ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowConfigureUI() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.ShowConfigureUI" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowConfigureUI ()" />
+      <MemberSignature Language="F#" Value="member this.ShowConfigureUI : unit -&gt; unit" Usage="inputMethod.ShowConfigureUI " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowConfigureUI();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -744,6 +935,9 @@
       <MemberSignature Language="C#" Value="public void ShowConfigureUI (System.Windows.UIElement element);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowConfigureUI(class System.Windows.UIElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.ShowConfigureUI(System.Windows.UIElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowConfigureUI (element As UIElement)" />
+      <MemberSignature Language="F#" Value="member this.ShowConfigureUI : System.Windows.UIElement -&gt; unit" Usage="inputMethod.ShowConfigureUI element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowConfigureUI(System::Windows::UIElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -764,10 +958,24 @@
         <altmember cref="Overload:System.Windows.Input.InputMethod.ShowRegisterWordUI" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ShowRegisterWordUI">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Displays word registration user interface (UI) associated with the currently active keyboard text service.</summary>
+        <altmember cref="P:System.Windows.Input.InputMethod.CanShowRegisterWordUI" />
+        <altmember cref="Overload:System.Windows.Input.InputMethod.ShowConfigureUI" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ShowRegisterWordUI">
       <MemberSignature Language="C#" Value="public void ShowRegisterWordUI ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowRegisterWordUI() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.ShowRegisterWordUI" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowRegisterWordUI ()" />
+      <MemberSignature Language="F#" Value="member this.ShowRegisterWordUI : unit -&gt; unit" Usage="inputMethod.ShowRegisterWordUI " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowRegisterWordUI();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -790,6 +998,9 @@
       <MemberSignature Language="C#" Value="public void ShowRegisterWordUI (string registeredText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowRegisterWordUI(string registeredText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.ShowRegisterWordUI(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowRegisterWordUI (registeredText As String)" />
+      <MemberSignature Language="F#" Value="member this.ShowRegisterWordUI : string -&gt; unit" Usage="inputMethod.ShowRegisterWordUI registeredText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowRegisterWordUI(System::String ^ registeredText);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -822,6 +1033,9 @@
       <MemberSignature Language="C#" Value="public void ShowRegisterWordUI (System.Windows.UIElement element, string registeredText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ShowRegisterWordUI(class System.Windows.UIElement element, string registeredText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputMethod.ShowRegisterWordUI(System.Windows.UIElement,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowRegisterWordUI (element As UIElement, registeredText As String)" />
+      <MemberSignature Language="F#" Value="member this.ShowRegisterWordUI : System.Windows.UIElement * string -&gt; unit" Usage="inputMethod.ShowRegisterWordUI (element, registeredText)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ShowRegisterWordUI(System::Windows::UIElement ^ element, System::String ^ registeredText);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -856,6 +1070,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Input.SpeechMode SpeechMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Input.SpeechMode SpeechMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputMethod.SpeechMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property SpeechMode As SpeechMode" />
+      <MemberSignature Language="F#" Value="member this.SpeechMode : System.Windows.Input.SpeechMode with get, set" Usage="System.Windows.Input.InputMethod.SpeechMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Input::SpeechMode SpeechMode { System::Windows::Input::SpeechMode get(); void set(System::Windows::Input::SpeechMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -895,6 +1112,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Input.InputMethodStateChangedEventHandler StateChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.InputMethodStateChangedEventHandler StateChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.InputMethod.StateChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event StateChanged As InputMethodStateChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.StateChanged : System.Windows.Input.InputMethodStateChangedEventHandler " Usage="member this.StateChanged : System.Windows.Input.InputMethodStateChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::InputMethodStateChangedEventHandler ^ StateChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -909,27 +1129,5 @@
         <altmember cref="T:System.Windows.Input.InputMethodStateChangedEventArgs" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ShowRegisterWordUI">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Displays word registration user interface (UI) associated with the currently active keyboard text service.</summary>
-        <altmember cref="P:System.Windows.Input.InputMethod.CanShowRegisterWordUI" />
-        <altmember cref="Overload:System.Windows.Input.InputMethod.ShowConfigureUI" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ShowConfigureUI">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Displays configuration user interface (UI) associated with the currently active keyboard text service.</summary>
-        <altmember cref="P:System.Windows.Input.InputMethod.CanShowConfigurationUI" />
-        <altmember cref="Overload:System.Windows.Input.InputMethod.ShowRegisterWordUI" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

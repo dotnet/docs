@@ -1,7 +1,10 @@
-<Type Name="ExpanderAutomationPeer" FullName="System.Windows.Automation.Peers.ExpanderAutomationPeer">
+﻿<Type Name="ExpanderAutomationPeer" FullName="System.Windows.Automation.Peers.ExpanderAutomationPeer">
   <TypeSignature Language="C#" Value="public class ExpanderAutomationPeer : System.Windows.Automation.Peers.FrameworkElementAutomationPeer, System.Windows.Automation.Provider.IExpandCollapseProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExpanderAutomationPeer extends System.Windows.Automation.Peers.FrameworkElementAutomationPeer implements class System.Windows.Automation.Provider.IExpandCollapseProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.ExpanderAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExpanderAutomationPeer&#xA;Inherits FrameworkElementAutomationPeer&#xA;Implements IExpandCollapseProvider" />
+  <TypeSignature Language="F#" Value="type ExpanderAutomationPeer = class&#xA;    inherit FrameworkElementAutomationPeer&#xA;    interface IExpandCollapseProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExpanderAutomationPeer : System::Windows::Automation::Peers::FrameworkElementAutomationPeer, System::Windows::Automation::Provider::IExpandCollapseProvider" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="public ExpanderAutomationPeer (System.Windows.Controls.Expander owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Expander owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ExpanderAutomationPeer.#ctor(System.Windows.Controls.Expander)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As Expander)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.ExpanderAutomationPeer : System.Windows.Controls.Expander -&gt; System.Windows.Automation.Peers.ExpanderAutomationPeer" Usage="new System.Windows.Automation.Peers.ExpanderAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpanderAutomationPeer(System::Windows::Controls::Expander ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -41,6 +47,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ExpanderAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="expanderAutomationPeer.GetAutomationControlTypeCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -60,6 +69,9 @@
       <MemberSignature Language="C#" Value="protected override System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.Generic.List`1&lt;class System.Windows.Automation.Peers.AutomationPeer&gt; GetChildrenCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ExpanderAutomationPeer.GetChildrenCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetChildrenCore () As List(Of AutomationPeer)" />
+      <MemberSignature Language="F#" Value="override this.GetChildrenCore : unit -&gt; System.Collections.Generic.List&lt;System.Windows.Automation.Peers.AutomationPeer&gt;" Usage="expanderAutomationPeer.GetChildrenCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::Generic::List&lt;System::Windows::Automation::Peers::AutomationPeer ^&gt; ^ GetChildrenCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -79,6 +91,9 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ExpanderAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="expanderAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -98,6 +113,9 @@
       <MemberSignature Language="C#" Value="public override object GetPattern (System.Windows.Automation.Peers.PatternInterface pattern);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object GetPattern(valuetype System.Windows.Automation.Peers.PatternInterface pattern) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ExpanderAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetPattern (pattern As PatternInterface) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetPattern : System.Windows.Automation.Peers.PatternInterface -&gt; obj" Usage="expanderAutomationPeer.GetPattern pattern" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ GetPattern(System::Windows::Automation::Peers::PatternInterface pattern);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -120,6 +138,9 @@
       <MemberSignature Language="C#" Value="protected override bool HasKeyboardFocusCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool HasKeyboardFocusCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ExpanderAutomationPeer.HasKeyboardFocusCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function HasKeyboardFocusCore () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.HasKeyboardFocusCore : unit -&gt; bool" Usage="expanderAutomationPeer.HasKeyboardFocusCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool HasKeyboardFocusCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -148,7 +169,12 @@ The expander should have automation keyboard focus whenever the actual focus is 
       <MemberSignature Language="C#" Value="void IExpandCollapseProvider.Collapse ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IExpandCollapseProvider.Collapse() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ExpanderAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Collapse" />
+      <MemberSignature Language="VB.NET" Value="Sub Collapse () Implements IExpandCollapseProvider.Collapse" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.IExpandCollapseProvider.Collapse() = System::Windows::Automation::Provider::IExpandCollapseProvider::Collapse;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Automation.Provider.IExpandCollapseProvider.Collapse</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -166,7 +192,12 @@ The expander should have automation keyboard focus whenever the actual focus is 
       <MemberSignature Language="C#" Value="void IExpandCollapseProvider.Expand ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Automation.Provider.IExpandCollapseProvider.Expand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.ExpanderAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#Expand" />
+      <MemberSignature Language="VB.NET" Value="Sub Expand () Implements IExpandCollapseProvider.Expand" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Automation.Provider.IExpandCollapseProvider.Expand() = System::Windows::Automation::Provider::IExpandCollapseProvider::Expand;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Automation.Provider.IExpandCollapseProvider.Expand</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -184,7 +215,13 @@ The expander should have automation keyboard focus whenever the actual focus is 
       <MemberSignature Language="C#" Value="System.Windows.Automation.ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.Peers.ExpanderAutomationPeer.System#Windows#Automation#Provider#IExpandCollapseProvider#ExpandCollapseState" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property ExpandCollapseState As ExpandCollapseState Implements IExpandCollapseProvider.ExpandCollapseState" />
+      <MemberSignature Language="F#" Usage="System.Windows.Automation.Peers.ExpanderAutomationPeer.System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState" />
+      <MemberSignature Language="C++ CLI" Value="property System::Windows::Automation::ExpandCollapseState System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState { System::Windows::Automation::ExpandCollapseState get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Automation.Provider.IExpandCollapseProvider.ExpandCollapseState</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

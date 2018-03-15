@@ -1,7 +1,10 @@
-<Type Name="Semaphore" FullName="System.Threading.Semaphore">
+﻿<Type Name="Semaphore" FullName="System.Threading.Semaphore">
   <TypeSignature Language="C#" Value="public sealed class Semaphore : System.Threading.WaitHandle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Semaphore extends System.Threading.WaitHandle" />
   <TypeSignature Language="DocId" Value="T:System.Threading.Semaphore" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Semaphore&#xA;Inherits WaitHandle" />
+  <TypeSignature Language="F#" Value="type Semaphore = class&#xA;    inherit WaitHandle" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Semaphore sealed : System::Threading::WaitHandle" />
   <AssemblyInfo>
     <AssemblyName>System.Threading</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,10 +63,24 @@
     <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.Semaphore" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Semaphore (int initialCount, int maximumCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 initialCount, int32 maximumCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.#ctor(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initialCount As Integer, maximumCount As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Threading.Semaphore : int * int -&gt; System.Threading.Semaphore" Usage="new System.Threading.Semaphore (initialCount, maximumCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Semaphore(int initialCount, int maximumCount);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -126,6 +143,9 @@
       <MemberSignature Language="C#" Value="public Semaphore (int initialCount, int maximumCount, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 initialCount, int32 maximumCount, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.#ctor(System.Int32,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initialCount As Integer, maximumCount As Integer, name As String)" />
+      <MemberSignature Language="F#" Value="new System.Threading.Semaphore : int * int * string -&gt; System.Threading.Semaphore" Usage="new System.Threading.Semaphore (initialCount, maximumCount, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Semaphore(int initialCount, int maximumCount, System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -204,6 +224,9 @@
       <MemberSignature Language="C#" Value="public Semaphore (int initialCount, int maximumCount, string name, out bool createdNew);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 initialCount, int32 maximumCount, string name, [out] bool&amp; createdNew) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.#ctor(System.Int32,System.Int32,System.String,System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (initialCount As Integer, maximumCount As Integer, name As String, ByRef createdNew As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Threading.Semaphore : int * int * string *  -&gt; System.Threading.Semaphore" Usage="new System.Threading.Semaphore (initialCount, maximumCount, name, createdNew)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Semaphore(int initialCount, int maximumCount, System::String ^ name, [Runtime::InteropServices::Out] bool % createdNew);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -281,6 +304,8 @@
       <MemberSignature Language="C#" Value="public Semaphore (int initialCount, int maximumCount, string name, out bool createdNew, System.Security.AccessControl.SemaphoreSecurity semaphoreSecurity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 initialCount, int32 maximumCount, string name, [out] bool&amp; createdNew, class System.Security.AccessControl.SemaphoreSecurity semaphoreSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.#ctor(System.Int32,System.Int32,System.String,System.Boolean@,System.Security.AccessControl.SemaphoreSecurity)" />
+      <MemberSignature Language="F#" Value="new System.Threading.Semaphore : int * int * string *  * System.Security.AccessControl.SemaphoreSecurity -&gt; System.Threading.Semaphore" Usage="new System.Threading.Semaphore (initialCount, maximumCount, name, createdNew, semaphoreSecurity)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Semaphore(int initialCount, int maximumCount, System::String ^ name, [Runtime::InteropServices::Out] bool % createdNew, System::Security::AccessControl::SemaphoreSecurity ^ semaphoreSecurity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -357,6 +382,9 @@
       <MemberSignature Language="C#" Value="public System.Security.AccessControl.SemaphoreSecurity GetAccessControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Security.AccessControl.SemaphoreSecurity GetAccessControl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.GetAccessControl" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAccessControl () As SemaphoreSecurity" />
+      <MemberSignature Language="F#" Value="member this.GetAccessControl : unit -&gt; System.Security.AccessControl.SemaphoreSecurity" Usage="semaphore.GetAccessControl " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Security::AccessControl::SemaphoreSecurity ^ GetAccessControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -405,10 +433,24 @@
         <exception cref="T:System.NotSupportedException">Not supported for Windows 98 or Windows Millennium Edition.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OpenExisting">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a specified named semaphore, if it already exists.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OpenExisting">
       <MemberSignature Language="C#" Value="public static System.Threading.Semaphore OpenExisting (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Semaphore OpenExisting(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.OpenExisting(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenExisting (name As String) As Semaphore" />
+      <MemberSignature Language="F#" Value="static member OpenExisting : string -&gt; System.Threading.Semaphore" Usage="System.Threading.Semaphore.OpenExisting name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Semaphore ^ OpenExisting(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -484,6 +526,9 @@
       <MemberSignature Language="C#" Value="public static System.Threading.Semaphore OpenExisting (string name, System.Security.AccessControl.SemaphoreRights rights);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Threading.Semaphore OpenExisting(string name, valuetype System.Security.AccessControl.SemaphoreRights rights) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.OpenExisting(System.String,System.Security.AccessControl.SemaphoreRights)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OpenExisting (name As String, rights As SemaphoreRights) As Semaphore" />
+      <MemberSignature Language="F#" Value="static member OpenExisting : string * System.Security.AccessControl.SemaphoreRights -&gt; System.Threading.Semaphore" Usage="System.Threading.Semaphore.OpenExisting (name, rights)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Threading::Semaphore ^ OpenExisting(System::String ^ name, System::Security::AccessControl::SemaphoreRights rights);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -545,10 +590,24 @@
  Security action: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Release">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Exits the semaphore.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Release">
       <MemberSignature Language="C#" Value="public int Release ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Release() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.Release" />
+      <MemberSignature Language="VB.NET" Value="Public Function Release () As Integer" />
+      <MemberSignature Language="F#" Value="member this.Release : unit -&gt; int" Usage="semaphore.Release " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Release();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -616,6 +675,9 @@
       <MemberSignature Language="C#" Value="public int Release (int releaseCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Release(int32 releaseCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.Release(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Release (releaseCount As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Release : int -&gt; int" Usage="semaphore.Release releaseCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Release(int releaseCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -685,6 +747,8 @@
       <MemberSignature Language="C#" Value="public void SetAccessControl (System.Security.AccessControl.SemaphoreSecurity semaphoreSecurity);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccessControl(class System.Security.AccessControl.SemaphoreSecurity semaphoreSecurity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.SetAccessControl(System.Security.AccessControl.SemaphoreSecurity)" />
+      <MemberSignature Language="F#" Value="member this.SetAccessControl : System.Security.AccessControl.SemaphoreSecurity -&gt; unit" Usage="semaphore.SetAccessControl semaphoreSecurity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAccessControl(System::Security::AccessControl::SemaphoreSecurity ^ semaphoreSecurity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -735,10 +799,24 @@
         <exception cref="T:System.NotSupportedException">The current <see cref="T:System.Threading.Semaphore" /> object does not represent a named system semaphore.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryOpenExisting">
+      <AssemblyInfo>
+        <AssemblyName>System.Threading</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Opens a specified named semaphore, if it already exists, and returns a value that indicates whether the operation succeeded.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryOpenExisting">
       <MemberSignature Language="C#" Value="public static bool TryOpenExisting (string name, out System.Threading.Semaphore result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryOpenExisting(string name, [out] class System.Threading.Semaphore&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.TryOpenExisting(System.String,System.Threading.Semaphore@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryOpenExisting (name As String, ByRef result As Semaphore) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryOpenExisting : string *  -&gt; bool" Usage="System.Threading.Semaphore.TryOpenExisting (name, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryOpenExisting(System::String ^ name, [Runtime::InteropServices::Out] System::Threading::Semaphore ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading</AssemblyName>
@@ -796,6 +874,9 @@
       <MemberSignature Language="C#" Value="public static bool TryOpenExisting (string name, System.Security.AccessControl.SemaphoreRights rights, out System.Threading.Semaphore result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryOpenExisting(string name, valuetype System.Security.AccessControl.SemaphoreRights rights, [out] class System.Threading.Semaphore&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.Semaphore.TryOpenExisting(System.String,System.Security.AccessControl.SemaphoreRights,System.Threading.Semaphore@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryOpenExisting (name As String, rights As SemaphoreRights, ByRef result As Semaphore) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryOpenExisting : string * System.Security.AccessControl.SemaphoreRights *  -&gt; bool" Usage="System.Threading.Semaphore.TryOpenExisting (name, rights, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryOpenExisting(System::String ^ name, System::Security::AccessControl::SemaphoreRights rights, [Runtime::InteropServices::Out] System::Threading::Semaphore ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -843,49 +924,5 @@
         <exception cref="T:System.UnauthorizedAccessException">The named semaphore exists, but the user does not have the security access required to use it.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="OpenExisting">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens a specified named semaphore, if it already exists.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TryOpenExisting">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Opens a specified named semaphore, if it already exists, and returns a value that indicates whether the operation succeeded.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Release">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Exits the semaphore.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Threading</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Threading.Semaphore" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="WizardStepType" FullName="System.Web.UI.WebControls.WizardStepType">
+﻿<Type Name="WizardStepType" FullName="System.Web.UI.WebControls.WizardStepType">
   <TypeSignature Language="C#" Value="public enum WizardStepType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WizardStepType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WizardStepType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WizardStepType" />
+  <TypeSignature Language="F#" Value="type WizardStepType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class WizardStepType" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +24,9 @@
       <MemberSignature Language="C#" Value="Auto" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WizardStepType Auto = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WizardStepType.Auto" />
+      <MemberSignature Language="VB.NET" Value="Auto" />
+      <MemberSignature Language="F#" Value="Auto = 0" Usage="System.Web.UI.WebControls.WizardStepType.Auto" />
+      <MemberSignature Language="C++ CLI" Value="Auto" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -29,6 +35,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WizardStepType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The navigation UI that is rendered for the step is determined automatically by the order in which the step is declared.</summary>
       </Docs>
@@ -37,6 +44,9 @@
       <MemberSignature Language="C#" Value="Complete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WizardStepType Complete = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WizardStepType.Complete" />
+      <MemberSignature Language="VB.NET" Value="Complete" />
+      <MemberSignature Language="F#" Value="Complete = 1" Usage="System.Web.UI.WebControls.WizardStepType.Complete" />
+      <MemberSignature Language="C++ CLI" Value="Complete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +55,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WizardStepType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The step is the last one to appear. No navigation buttons are rendered.</summary>
       </Docs>
@@ -53,6 +64,9 @@
       <MemberSignature Language="C#" Value="Finish" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WizardStepType Finish = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WizardStepType.Finish" />
+      <MemberSignature Language="VB.NET" Value="Finish" />
+      <MemberSignature Language="F#" Value="Finish = 2" Usage="System.Web.UI.WebControls.WizardStepType.Finish" />
+      <MemberSignature Language="C++ CLI" Value="Finish" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -61,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WizardStepType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The step is the final data collection step. **Finish** and **Previous** buttons are rendered for navigation.</summary>
       </Docs>
@@ -69,6 +84,9 @@
       <MemberSignature Language="C#" Value="Start" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WizardStepType Start = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WizardStepType.Start" />
+      <MemberSignature Language="VB.NET" Value="Start" />
+      <MemberSignature Language="F#" Value="Start = 3" Usage="System.Web.UI.WebControls.WizardStepType.Start" />
+      <MemberSignature Language="C++ CLI" Value="Start" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WizardStepType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The step is the first one to appear. A **Next** button is rendered but a **Previous** button is not rendered for this step.</summary>
       </Docs>
@@ -85,6 +104,9 @@
       <MemberSignature Language="C#" Value="Step" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.WizardStepType Step = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WizardStepType.Step" />
+      <MemberSignature Language="VB.NET" Value="Step" />
+      <MemberSignature Language="F#" Value="Step = 4" Usage="System.Web.UI.WebControls.WizardStepType.Step" />
+      <MemberSignature Language="C++ CLI" Value="Step" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -93,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.WizardStepType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The step is any step between the Start and the Finish steps. **Previous** and **Next** buttons are rendered for navigation. This step type is useful for overriding the <see cref="F:System.Web.UI.WebControls.WizardStepType.Auto" /> step type.</summary>
       </Docs>

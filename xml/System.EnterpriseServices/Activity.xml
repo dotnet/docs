@@ -1,7 +1,10 @@
-<Type Name="Activity" FullName="System.EnterpriseServices.Activity">
+﻿<Type Name="Activity" FullName="System.EnterpriseServices.Activity">
   <TypeSignature Language="C#" Value="public sealed class Activity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Activity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Activity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Activity" />
+  <TypeSignature Language="F#" Value="type Activity = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Activity sealed" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="public Activity (System.EnterpriseServices.ServiceConfig cfg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.EnterpriseServices.ServiceConfig cfg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Activity.#ctor(System.EnterpriseServices.ServiceConfig)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cfg As ServiceConfig)" />
+      <MemberSignature Language="F#" Value="new System.EnterpriseServices.Activity : System.EnterpriseServices.ServiceConfig -&gt; System.EnterpriseServices.Activity" Usage="new System.EnterpriseServices.Activity cfg" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Activity(System::EnterpriseServices::ServiceConfig ^ cfg);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -72,6 +78,9 @@
       <MemberSignature Language="C#" Value="public void AsynchronousCall (System.EnterpriseServices.IServiceCall serviceCall);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AsynchronousCall(class System.EnterpriseServices.IServiceCall serviceCall) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Activity.AsynchronousCall(System.EnterpriseServices.IServiceCall)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AsynchronousCall (serviceCall As IServiceCall)" />
+      <MemberSignature Language="F#" Value="member this.AsynchronousCall : System.EnterpriseServices.IServiceCall -&gt; unit" Usage="activity.AsynchronousCall serviceCall" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AsynchronousCall(System::EnterpriseServices::IServiceCall ^ serviceCall);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -102,6 +111,9 @@
       <MemberSignature Language="C#" Value="public void BindToCurrentThread ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BindToCurrentThread() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Activity.BindToCurrentThread" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BindToCurrentThread ()" />
+      <MemberSignature Language="F#" Value="member this.BindToCurrentThread : unit -&gt; unit" Usage="activity.BindToCurrentThread " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BindToCurrentThread();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -127,6 +139,9 @@
       <MemberSignature Language="C#" Value="public void SynchronousCall (System.EnterpriseServices.IServiceCall serviceCall);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SynchronousCall(class System.EnterpriseServices.IServiceCall serviceCall) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Activity.SynchronousCall(System.EnterpriseServices.IServiceCall)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SynchronousCall (serviceCall As IServiceCall)" />
+      <MemberSignature Language="F#" Value="member this.SynchronousCall : System.EnterpriseServices.IServiceCall -&gt; unit" Usage="activity.SynchronousCall serviceCall" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SynchronousCall(System::EnterpriseServices::IServiceCall ^ serviceCall);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -148,6 +163,9 @@
       <MemberSignature Language="C#" Value="public void UnbindFromThread ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnbindFromThread() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Activity.UnbindFromThread" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnbindFromThread ()" />
+      <MemberSignature Language="F#" Value="member this.UnbindFromThread : unit -&gt; unit" Usage="activity.UnbindFromThread " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnbindFromThread();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

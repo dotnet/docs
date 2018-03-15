@@ -1,7 +1,10 @@
-<Type Name="TYPEKIND" FullName="System.Runtime.InteropServices.ComTypes.TYPEKIND">
+﻿<Type Name="TYPEKIND" FullName="System.Runtime.InteropServices.ComTypes.TYPEKIND">
   <TypeSignature Language="C#" Value="public enum TYPEKIND" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TYPEKIND extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.TYPEKIND" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TYPEKIND" />
+  <TypeSignature Language="F#" Value="type TYPEKIND = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TYPEKIND" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="TKIND_ALIAS" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.TYPEKIND TKIND_ALIAS = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_ALIAS" />
+      <MemberSignature Language="VB.NET" Value="TKIND_ALIAS" />
+      <MemberSignature Language="F#" Value="TKIND_ALIAS = 6" Usage="System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_ALIAS" />
+      <MemberSignature Language="C++ CLI" Value="TKIND_ALIAS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -63,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.TYPEKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A type that is an alias for another type.</summary>
       </Docs>
@@ -71,6 +78,9 @@
       <MemberSignature Language="C#" Value="TKIND_COCLASS" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.TYPEKIND TKIND_COCLASS = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_COCLASS" />
+      <MemberSignature Language="VB.NET" Value="TKIND_COCLASS" />
+      <MemberSignature Language="F#" Value="TKIND_COCLASS = 5" Usage="System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_COCLASS" />
+      <MemberSignature Language="C++ CLI" Value="TKIND_COCLASS" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -93,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.TYPEKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A set of implemented components interfaces.</summary>
       </Docs>
@@ -101,6 +112,9 @@
       <MemberSignature Language="C#" Value="TKIND_DISPATCH" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.TYPEKIND TKIND_DISPATCH = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_DISPATCH" />
+      <MemberSignature Language="VB.NET" Value="TKIND_DISPATCH" />
+      <MemberSignature Language="F#" Value="TKIND_DISPATCH = 4" Usage="System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_DISPATCH" />
+      <MemberSignature Language="C++ CLI" Value="TKIND_DISPATCH" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -123,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.TYPEKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A set of methods and properties that are accessible through <see langword="IDispatch::Invoke" />. By default, dual interfaces return <see langword="TKIND_DISPATCH" />.</summary>
       </Docs>
@@ -131,6 +146,9 @@
       <MemberSignature Language="C#" Value="TKIND_ENUM" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.TYPEKIND TKIND_ENUM = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_ENUM" />
+      <MemberSignature Language="VB.NET" Value="TKIND_ENUM" />
+      <MemberSignature Language="F#" Value="TKIND_ENUM = 0" Usage="System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_ENUM" />
+      <MemberSignature Language="C++ CLI" Value="TKIND_ENUM" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -153,6 +171,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.TYPEKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A set of enumerators.</summary>
       </Docs>
@@ -161,6 +180,9 @@
       <MemberSignature Language="C#" Value="TKIND_INTERFACE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.TYPEKIND TKIND_INTERFACE = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_INTERFACE" />
+      <MemberSignature Language="VB.NET" Value="TKIND_INTERFACE" />
+      <MemberSignature Language="F#" Value="TKIND_INTERFACE = 3" Usage="System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_INTERFACE" />
+      <MemberSignature Language="C++ CLI" Value="TKIND_INTERFACE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -183,6 +205,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.TYPEKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A type that has virtual functions, all of which are pure.</summary>
       </Docs>
@@ -191,6 +214,9 @@
       <MemberSignature Language="C#" Value="TKIND_MAX" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.TYPEKIND TKIND_MAX = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_MAX" />
+      <MemberSignature Language="VB.NET" Value="TKIND_MAX" />
+      <MemberSignature Language="F#" Value="TKIND_MAX = 8" Usage="System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_MAX" />
+      <MemberSignature Language="C++ CLI" Value="TKIND_MAX" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -213,6 +239,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.TYPEKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>End-of-enumeration marker.</summary>
       </Docs>
@@ -221,6 +248,9 @@
       <MemberSignature Language="C#" Value="TKIND_MODULE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.TYPEKIND TKIND_MODULE = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_MODULE" />
+      <MemberSignature Language="VB.NET" Value="TKIND_MODULE" />
+      <MemberSignature Language="F#" Value="TKIND_MODULE = 2" Usage="System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_MODULE" />
+      <MemberSignature Language="C++ CLI" Value="TKIND_MODULE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -243,6 +273,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.TYPEKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A module that can have only static functions and data (for example, a DLL).</summary>
       </Docs>
@@ -251,6 +282,9 @@
       <MemberSignature Language="C#" Value="TKIND_RECORD" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.TYPEKIND TKIND_RECORD = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_RECORD" />
+      <MemberSignature Language="VB.NET" Value="TKIND_RECORD" />
+      <MemberSignature Language="F#" Value="TKIND_RECORD = 1" Usage="System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_RECORD" />
+      <MemberSignature Language="C++ CLI" Value="TKIND_RECORD" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -273,6 +307,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.TYPEKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A structure with no methods.</summary>
       </Docs>
@@ -281,6 +316,9 @@
       <MemberSignature Language="C#" Value="TKIND_UNION" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.TYPEKIND TKIND_UNION = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_UNION" />
+      <MemberSignature Language="VB.NET" Value="TKIND_UNION" />
+      <MemberSignature Language="F#" Value="TKIND_UNION = 7" Usage="System.Runtime.InteropServices.ComTypes.TYPEKIND.TKIND_UNION" />
+      <MemberSignature Language="C++ CLI" Value="TKIND_UNION" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -303,6 +341,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.TYPEKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>A union of all members that have an offset of zero.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="IServerWebConfig" FullName="System.EnterpriseServices.Internal.IServerWebConfig">
+﻿<Type Name="IServerWebConfig" FullName="System.EnterpriseServices.Internal.IServerWebConfig">
   <TypeSignature Language="C#" Value="public interface IServerWebConfig" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IServerWebConfig" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.IServerWebConfig" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IServerWebConfig" />
+  <TypeSignature Language="F#" Value="type IServerWebConfig = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IServerWebConfig" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public void AddElement (string FilePath, string AssemblyName, string TypeName, string ProgId, string Mode, out string Error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddElement(string FilePath, string AssemblyName, string TypeName, string ProgId, string Mode, [out] string&amp; Error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IServerWebConfig.AddElement(System.String,System.String,System.String,System.String,System.String,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddElement (FilePath As String, AssemblyName As String, TypeName As String, ProgId As String, Mode As String, ByRef Error As String)" />
+      <MemberSignature Language="F#" Value="abstract member AddElement : string * string * string * string * string *  -&gt; unit" Usage="iServerWebConfig.AddElement (FilePath, AssemblyName, TypeName, ProgId, Mode, Error)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddElement(System::String ^ FilePath, System::String ^ AssemblyName, System::String ^ TypeName, System::String ^ ProgId, System::String ^ Mode, [Runtime::InteropServices::Out] System::String ^ % Error);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -75,6 +81,9 @@
       <MemberSignature Language="C#" Value="public void Create (string FilePath, string FileRootName, out string Error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create(string FilePath, string FileRootName, [out] string&amp; Error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IServerWebConfig.Create(System.String,System.String,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Create (FilePath As String, FileRootName As String, ByRef Error As String)" />
+      <MemberSignature Language="F#" Value="abstract member Create : string * string *  -&gt; unit" Usage="iServerWebConfig.Create (FilePath, FileRootName, Error)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Create(System::String ^ FilePath, System::String ^ FileRootName, [Runtime::InteropServices::Out] System::String ^ % Error);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

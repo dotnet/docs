@@ -1,7 +1,10 @@
-<Type Name="CatalogPartCollection" FullName="System.Web.UI.WebControls.WebParts.CatalogPartCollection">
+﻿<Type Name="CatalogPartCollection" FullName="System.Web.UI.WebControls.WebParts.CatalogPartCollection">
   <TypeSignature Language="C#" Value="public sealed class CatalogPartCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CatalogPartCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.WebParts.CatalogPartCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CatalogPartCollection&#xA;Inherits ReadOnlyCollectionBase" />
+  <TypeSignature Language="F#" Value="type CatalogPartCollection = class&#xA;    inherit ReadOnlyCollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CatalogPartCollection sealed : System::Collections::ReadOnlyCollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -75,6 +78,8 @@
       <MemberSignature Language="C#" Value="public CatalogPartCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CatalogPartCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +104,9 @@
       <MemberSignature Language="C#" Value="public CatalogPartCollection (System.Collections.ICollection catalogParts);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.ICollection catalogParts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.#ctor(System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (catalogParts As ICollection)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.CatalogPartCollection : System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.CatalogPartCollection" Usage="new System.Web.UI.WebControls.WebParts.CatalogPartCollection catalogParts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CatalogPartCollection(System::Collections::ICollection ^ catalogParts);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +148,9 @@
       <MemberSignature Language="C#" Value="public CatalogPartCollection (System.Web.UI.WebControls.WebParts.CatalogPartCollection existingCatalogParts, System.Collections.ICollection catalogParts);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.WebControls.WebParts.CatalogPartCollection existingCatalogParts, class System.Collections.ICollection catalogParts) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.#ctor(System.Web.UI.WebControls.WebParts.CatalogPartCollection,System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (existingCatalogParts As CatalogPartCollection, catalogParts As ICollection)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.WebParts.CatalogPartCollection : System.Web.UI.WebControls.WebParts.CatalogPartCollection * System.Collections.ICollection -&gt; System.Web.UI.WebControls.WebParts.CatalogPartCollection" Usage="new System.Web.UI.WebControls.WebParts.CatalogPartCollection (existingCatalogParts, catalogParts)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CatalogPartCollection(System::Web::UI::WebControls::WebParts::CatalogPartCollection ^ existingCatalogParts, System::Collections::ICollection ^ catalogParts);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +171,8 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.WebControls.WebParts.CatalogPart catalogPart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.WebParts.CatalogPart catalogPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Contains(System.Web.UI.WebControls.WebParts.CatalogPart)" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.WebParts.CatalogPart -&gt; bool" Usage="catalogPartCollection.Contains catalogPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::WebParts::CatalogPart ^ catalogPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -202,6 +215,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.WebParts.CatalogPart[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.WebParts.CatalogPart[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.CopyTo(System.Web.UI.WebControls.WebParts.CatalogPart[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As CatalogPart(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Web.UI.WebControls.WebParts.CatalogPart[] * int -&gt; unit" Usage="catalogPartCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::WebParts::CatalogPart ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -233,6 +249,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.WebControls.WebParts.CatalogPartCollection Empty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.WebControls.WebParts.CatalogPartCollection Empty" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Empty As CatalogPartCollection " />
+      <MemberSignature Language="F#" Value=" staticval mutable Empty : System.Web.UI.WebControls.WebParts.CatalogPartCollection" Usage="System.Web.UI.WebControls.WebParts.CatalogPartCollection.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::WebControls::WebParts::CatalogPartCollection ^ Empty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -257,6 +276,8 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.WebParts.CatalogPart catalogPart);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.WebParts.CatalogPart catalogPart) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.WebParts.CatalogPartCollection.IndexOf(System.Web.UI.WebControls.WebParts.CatalogPart)" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.WebParts.CatalogPart -&gt; int" Usage="catalogPartCollection.IndexOf catalogPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::WebParts::CatalogPart ^ catalogPart);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -295,10 +316,22 @@
         <altmember cref="M:System.Collections.IList.IndexOf(System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a specific member of the collection according to its position or a unique identifier.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.CatalogPart this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.CatalogPart Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As CatalogPart" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.WebParts.CatalogPart" Usage="System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::CatalogPart ^ default[int] { System::Web::UI::WebControls::WebParts::CatalogPart ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -340,6 +373,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.WebParts.CatalogPart this[string id] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.WebParts.CatalogPart Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(id As String) As CatalogPart" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Web.UI.WebControls.WebParts.CatalogPart" Usage="System.Web.UI.WebControls.WebParts.CatalogPartCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::WebParts::CatalogPart ^ default[System::String ^] { System::Web::UI::WebControls::WebParts::CatalogPart ^ get(System::String ^ id); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -377,14 +413,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a specific member of the collection according to its position or a unique identifier.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

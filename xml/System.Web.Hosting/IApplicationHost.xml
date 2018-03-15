@@ -1,7 +1,10 @@
-<Type Name="IApplicationHost" FullName="System.Web.Hosting.IApplicationHost">
+﻿<Type Name="IApplicationHost" FullName="System.Web.Hosting.IApplicationHost">
   <TypeSignature Language="C#" Value="public interface IApplicationHost" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IApplicationHost" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IApplicationHost" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IApplicationHost" />
+  <TypeSignature Language="F#" Value="type IApplicationHost = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IApplicationHost" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.IConfigMapPathFactory GetConfigMapPathFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.Configuration.IConfigMapPathFactory GetConfigMapPathFactory() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationHost.GetConfigMapPathFactory" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConfigMapPathFactory () As IConfigMapPathFactory" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigMapPathFactory : unit -&gt; System.Web.Configuration.IConfigMapPathFactory" Usage="iApplicationHost.GetConfigMapPathFactory " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::Configuration::IConfigMapPathFactory ^ GetConfigMapPathFactory();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,6 +57,9 @@
       <MemberSignature Language="C#" Value="public IntPtr GetConfigToken ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance native int GetConfigToken() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationHost.GetConfigToken" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetConfigToken () As IntPtr" />
+      <MemberSignature Language="F#" Value="abstract member GetConfigToken : unit -&gt; nativeint" Usage="iApplicationHost.GetConfigToken " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr GetConfigToken();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,6 +87,9 @@
       <MemberSignature Language="C#" Value="public string GetPhysicalPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPhysicalPath() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationHost.GetPhysicalPath" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPhysicalPath () As String" />
+      <MemberSignature Language="F#" Value="abstract member GetPhysicalPath : unit -&gt; string" Usage="iApplicationHost.GetPhysicalPath " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPhysicalPath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -105,6 +117,9 @@
       <MemberSignature Language="C#" Value="public string GetSiteID ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetSiteID() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationHost.GetSiteID" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSiteID () As String" />
+      <MemberSignature Language="F#" Value="abstract member GetSiteID : unit -&gt; string" Usage="iApplicationHost.GetSiteID " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetSiteID();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -132,6 +147,9 @@
       <MemberSignature Language="C#" Value="public string GetSiteName ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetSiteName() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationHost.GetSiteName" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSiteName () As String" />
+      <MemberSignature Language="F#" Value="abstract member GetSiteName : unit -&gt; string" Usage="iApplicationHost.GetSiteName " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetSiteName();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -159,6 +177,9 @@
       <MemberSignature Language="C#" Value="public string GetVirtualPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetVirtualPath() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationHost.GetVirtualPath" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetVirtualPath () As String" />
+      <MemberSignature Language="F#" Value="abstract member GetVirtualPath : unit -&gt; string" Usage="iApplicationHost.GetVirtualPath " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetVirtualPath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -186,6 +207,9 @@
       <MemberSignature Language="C#" Value="public void MessageReceived ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void MessageReceived() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IApplicationHost.MessageReceived" />
+      <MemberSignature Language="VB.NET" Value="Public Sub MessageReceived ()" />
+      <MemberSignature Language="F#" Value="abstract member MessageReceived : unit -&gt; unit" Usage="iApplicationHost.MessageReceived " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void MessageReceived();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

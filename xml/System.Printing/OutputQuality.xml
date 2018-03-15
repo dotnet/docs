@@ -1,7 +1,10 @@
-<Type Name="OutputQuality" FullName="System.Printing.OutputQuality">
+﻿<Type Name="OutputQuality" FullName="System.Printing.OutputQuality">
   <TypeSignature Language="C#" Value="public enum OutputQuality" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OutputQuality extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.OutputQuality" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OutputQuality" />
+  <TypeSignature Language="F#" Value="type OutputQuality = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class OutputQuality" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +55,9 @@
       <MemberSignature Language="C#" Value="Automatic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputQuality Automatic = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.Automatic" />
+      <MemberSignature Language="VB.NET" Value="Automatic" />
+      <MemberSignature Language="F#" Value="Automatic = 1" Usage="System.Printing.OutputQuality.Automatic" />
+      <MemberSignature Language="C++ CLI" Value="Automatic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -60,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.OutputQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Automatically selects a quality type that is based on the contents of a print job.</summary>
       </Docs>
@@ -68,6 +75,9 @@
       <MemberSignature Language="C#" Value="Draft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputQuality Draft = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.Draft" />
+      <MemberSignature Language="VB.NET" Value="Draft" />
+      <MemberSignature Language="F#" Value="Draft = 2" Usage="System.Printing.OutputQuality.Draft" />
+      <MemberSignature Language="C++ CLI" Value="Draft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -76,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.OutputQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Draft quality.</summary>
       </Docs>
@@ -84,6 +95,9 @@
       <MemberSignature Language="C#" Value="Fax" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputQuality Fax = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.Fax" />
+      <MemberSignature Language="VB.NET" Value="Fax" />
+      <MemberSignature Language="F#" Value="Fax = 3" Usage="System.Printing.OutputQuality.Fax" />
+      <MemberSignature Language="C++ CLI" Value="Fax" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -92,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.OutputQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Fax quality.</summary>
       </Docs>
@@ -100,6 +115,9 @@
       <MemberSignature Language="C#" Value="High" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputQuality High = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.High" />
+      <MemberSignature Language="VB.NET" Value="High" />
+      <MemberSignature Language="F#" Value="High = 4" Usage="System.Printing.OutputQuality.High" />
+      <MemberSignature Language="C++ CLI" Value="High" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -108,6 +126,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.OutputQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Higher than normal quality.</summary>
       </Docs>
@@ -116,6 +135,9 @@
       <MemberSignature Language="C#" Value="Normal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputQuality Normal = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.Normal" />
+      <MemberSignature Language="VB.NET" Value="Normal" />
+      <MemberSignature Language="F#" Value="Normal = 5" Usage="System.Printing.OutputQuality.Normal" />
+      <MemberSignature Language="C++ CLI" Value="Normal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -124,6 +146,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.OutputQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Normal quality.</summary>
       </Docs>
@@ -132,6 +155,9 @@
       <MemberSignature Language="C#" Value="Photographic" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputQuality Photographic = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.Photographic" />
+      <MemberSignature Language="VB.NET" Value="Photographic" />
+      <MemberSignature Language="F#" Value="Photographic = 6" Usage="System.Printing.OutputQuality.Photographic" />
+      <MemberSignature Language="C++ CLI" Value="Photographic" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -140,6 +166,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.OutputQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Photographic quality. For more information, see [Notes on OutputQuality.Photographic](#Photographic) in the Remarks section.</summary>
       </Docs>
@@ -148,6 +175,9 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputQuality Text = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 7" Usage="System.Printing.OutputQuality.Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -156,6 +186,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.OutputQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Text quality.</summary>
       </Docs>
@@ -164,6 +195,9 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.OutputQuality Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.OutputQuality.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.OutputQuality.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -172,6 +206,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.OutputQuality</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
       </Docs>

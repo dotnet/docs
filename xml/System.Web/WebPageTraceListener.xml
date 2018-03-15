@@ -1,7 +1,10 @@
-<Type Name="WebPageTraceListener" FullName="System.Web.WebPageTraceListener">
+﻿<Type Name="WebPageTraceListener" FullName="System.Web.WebPageTraceListener">
   <TypeSignature Language="C#" Value="public class WebPageTraceListener : System.Diagnostics.TraceListener" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebPageTraceListener extends System.Diagnostics.TraceListener" />
   <TypeSignature Language="DocId" Value="T:System.Web.WebPageTraceListener" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebPageTraceListener&#xA;Inherits TraceListener" />
+  <TypeSignature Language="F#" Value="type WebPageTraceListener = class&#xA;    inherit TraceListener" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebPageTraceListener : System::Diagnostics::TraceListener" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="public WebPageTraceListener ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebPageTraceListener.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebPageTraceListener();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,10 +54,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TraceEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an event message to a Web page or to the ASP.NET trace viewer.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TraceEvent">
       <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType severity, int id, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType severity, int32 id, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebPageTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, severity As TraceEventType, id As Integer, message As String)" />
+      <MemberSignature Language="F#" Value="override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string -&gt; unit" Usage="webPageTraceListener.TraceEvent (eventCache, source, severity, id, message)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType severity, int id, System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +108,9 @@
       <MemberSignature Language="C#" Value="public override void TraceEvent (System.Diagnostics.TraceEventCache eventCache, string source, System.Diagnostics.TraceEventType severity, int id, string format, params object[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void TraceEvent(class System.Diagnostics.TraceEventCache eventCache, string source, valuetype System.Diagnostics.TraceEventType severity, int32 id, string format, object[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebPageTraceListener.TraceEvent(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub TraceEvent (eventCache As TraceEventCache, source As String, severity As TraceEventType, id As Integer, format As String, ParamArray args As Object())" />
+      <MemberSignature Language="F#" Value="override this.TraceEvent : System.Diagnostics.TraceEventCache * string * System.Diagnostics.TraceEventType * int * string * obj[] -&gt; unit" Usage="webPageTraceListener.TraceEvent (eventCache, source, severity, id, format, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void TraceEvent(System::Diagnostics::TraceEventCache ^ eventCache, System::String ^ source, System::Diagnostics::TraceEventType severity, int id, System::String ^ format, ... cli::array &lt;System::Object ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,10 +153,22 @@
         <altmember cref="Overload:System.Web.WebPageTraceListener.WriteLine" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Write">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a message to a Web page or to the ASP.NET trace viewer.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Write">
       <MemberSignature Language="C#" Value="public override void Write (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebPageTraceListener.Write(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (message As String)" />
+      <MemberSignature Language="F#" Value="override this.Write : string -&gt; unit" Usage="webPageTraceListener.Write message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -171,6 +203,9 @@
       <MemberSignature Language="C#" Value="public override void Write (string message, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string message, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebPageTraceListener.Write(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Write (message As String, category As String)" />
+      <MemberSignature Language="F#" Value="override this.Write : string * string -&gt; unit" Usage="webPageTraceListener.Write (message, category)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ message, System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -203,10 +238,22 @@
         <altmember cref="T:System.Diagnostics.Trace" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes a message to a Web page or to the ASP.NET trace viewer.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteLine">
       <MemberSignature Language="C#" Value="public override void WriteLine (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebPageTraceListener.WriteLine(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (message As String)" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string -&gt; unit" Usage="webPageTraceListener.WriteLine message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ message);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -235,6 +282,9 @@
       <MemberSignature Language="C#" Value="public override void WriteLine (string message, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine(string message, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.WebPageTraceListener.WriteLine(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteLine (message As String, category As String)" />
+      <MemberSignature Language="F#" Value="override this.WriteLine : string * string -&gt; unit" Usage="webPageTraceListener.WriteLine (message, category)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteLine(System::String ^ message, System::String ^ category);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -261,32 +311,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="TraceEvent">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes an event message to a Web page or to the ASP.NET trace viewer.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Write">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a message to a Web page or to the ASP.NET trace viewer.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteLine">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes a message to a Web page or to the ASP.NET trace viewer.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="HttpUnhandledException" FullName="System.Web.HttpUnhandledException">
+﻿<Type Name="HttpUnhandledException" FullName="System.Web.HttpUnhandledException">
   <TypeSignature Language="C#" Value="public sealed class HttpUnhandledException : System.Web.HttpException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit HttpUnhandledException extends System.Web.HttpException" />
   <TypeSignature Language="DocId" Value="T:System.Web.HttpUnhandledException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class HttpUnhandledException&#xA;Inherits HttpException" />
+  <TypeSignature Language="F#" Value="type HttpUnhandledException = class&#xA;    inherit HttpException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class HttpUnhandledException sealed : System::Web::HttpException" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpUnhandledException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HttpUnhandledException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUnhandledException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpUnhandledException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -34,6 +48,9 @@
       <MemberSignature Language="C#" Value="public HttpUnhandledException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUnhandledException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpUnhandledException : string -&gt; System.Web.HttpUnhandledException" Usage="new System.Web.HttpUnhandledException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpUnhandledException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -52,6 +69,9 @@
       <MemberSignature Language="C#" Value="public HttpUnhandledException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.HttpUnhandledException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Web.HttpUnhandledException : string * Exception -&gt; System.Web.HttpUnhandledException" Usage="new System.Web.HttpUnhandledException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HttpUnhandledException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,14 +88,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.HttpUnhandledException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

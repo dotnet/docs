@@ -1,7 +1,10 @@
-<Type Name="ImageCodecFlags" FullName="System.Drawing.Imaging.ImageCodecFlags">
+﻿<Type Name="ImageCodecFlags" FullName="System.Drawing.Imaging.ImageCodecFlags">
   <TypeSignature Language="C#" Value="public enum ImageCodecFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImageCodecFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Imaging.ImageCodecFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ImageCodecFlags" />
+  <TypeSignature Language="F#" Value="type ImageCodecFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ImageCodecFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="BlockingDecode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageCodecFlags BlockingDecode = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageCodecFlags.BlockingDecode" />
+      <MemberSignature Language="VB.NET" Value="BlockingDecode" />
+      <MemberSignature Language="F#" Value="BlockingDecode = 32" Usage="System.Drawing.Imaging.ImageCodecFlags.BlockingDecode" />
+      <MemberSignature Language="C++ CLI" Value="BlockingDecode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -38,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The decoder has blocking behavior during the decoding process.</summary>
       </Docs>
@@ -46,6 +53,9 @@
       <MemberSignature Language="C#" Value="Builtin" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageCodecFlags Builtin = int32(65536)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageCodecFlags.Builtin" />
+      <MemberSignature Language="VB.NET" Value="Builtin" />
+      <MemberSignature Language="F#" Value="Builtin = 65536" Usage="System.Drawing.Imaging.ImageCodecFlags.Builtin" />
+      <MemberSignature Language="C++ CLI" Value="Builtin" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -54,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>65536</MemberValue>
       <Docs>
         <summary>The codec is built into GDI+.</summary>
       </Docs>
@@ -62,6 +73,9 @@
       <MemberSignature Language="C#" Value="Decoder" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageCodecFlags Decoder = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageCodecFlags.Decoder" />
+      <MemberSignature Language="VB.NET" Value="Decoder" />
+      <MemberSignature Language="F#" Value="Decoder = 2" Usage="System.Drawing.Imaging.ImageCodecFlags.Decoder" />
+      <MemberSignature Language="C++ CLI" Value="Decoder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -70,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The codec supports decoding (reading).</summary>
       </Docs>
@@ -78,6 +93,9 @@
       <MemberSignature Language="C#" Value="Encoder" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageCodecFlags Encoder = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageCodecFlags.Encoder" />
+      <MemberSignature Language="VB.NET" Value="Encoder" />
+      <MemberSignature Language="F#" Value="Encoder = 1" Usage="System.Drawing.Imaging.ImageCodecFlags.Encoder" />
+      <MemberSignature Language="C++ CLI" Value="Encoder" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -86,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The codec supports encoding (saving).</summary>
       </Docs>
@@ -94,6 +113,9 @@
       <MemberSignature Language="C#" Value="SeekableEncode" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageCodecFlags SeekableEncode = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageCodecFlags.SeekableEncode" />
+      <MemberSignature Language="VB.NET" Value="SeekableEncode" />
+      <MemberSignature Language="F#" Value="SeekableEncode = 16" Usage="System.Drawing.Imaging.ImageCodecFlags.SeekableEncode" />
+      <MemberSignature Language="C++ CLI" Value="SeekableEncode" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -102,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The encoder requires a seekable output stream.</summary>
       </Docs>
@@ -110,6 +133,9 @@
       <MemberSignature Language="C#" Value="SupportBitmap" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageCodecFlags SupportBitmap = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageCodecFlags.SupportBitmap" />
+      <MemberSignature Language="VB.NET" Value="SupportBitmap" />
+      <MemberSignature Language="F#" Value="SupportBitmap = 4" Usage="System.Drawing.Imaging.ImageCodecFlags.SupportBitmap" />
+      <MemberSignature Language="C++ CLI" Value="SupportBitmap" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -118,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The codec supports raster images (bitmaps).</summary>
       </Docs>
@@ -126,6 +153,9 @@
       <MemberSignature Language="C#" Value="SupportVector" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageCodecFlags SupportVector = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageCodecFlags.SupportVector" />
+      <MemberSignature Language="VB.NET" Value="SupportVector" />
+      <MemberSignature Language="F#" Value="SupportVector = 8" Usage="System.Drawing.Imaging.ImageCodecFlags.SupportVector" />
+      <MemberSignature Language="C++ CLI" Value="SupportVector" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -134,6 +164,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The codec supports vector images (metafiles).</summary>
       </Docs>
@@ -142,6 +173,9 @@
       <MemberSignature Language="C#" Value="System" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageCodecFlags System = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageCodecFlags.System" />
+      <MemberSignature Language="VB.NET" Value="System" />
+      <MemberSignature Language="F#" Value="System = 131072" Usage="System.Drawing.Imaging.ImageCodecFlags.System" />
+      <MemberSignature Language="C++ CLI" Value="System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -150,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>Not used.</summary>
       </Docs>
@@ -158,6 +193,9 @@
       <MemberSignature Language="C#" Value="User" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Drawing.Imaging.ImageCodecFlags User = int32(262144)" />
       <MemberSignature Language="DocId" Value="F:System.Drawing.Imaging.ImageCodecFlags.User" />
+      <MemberSignature Language="VB.NET" Value="User" />
+      <MemberSignature Language="F#" Value="User = 262144" Usage="System.Drawing.Imaging.ImageCodecFlags.User" />
+      <MemberSignature Language="C++ CLI" Value="User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -166,6 +204,7 @@
       <ReturnValue>
         <ReturnType>System.Drawing.Imaging.ImageCodecFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>262144</MemberValue>
       <Docs>
         <summary>Not used.</summary>
       </Docs>

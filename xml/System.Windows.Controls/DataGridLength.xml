@@ -1,7 +1,10 @@
-<Type Name="DataGridLength" FullName="System.Windows.Controls.DataGridLength">
+﻿<Type Name="DataGridLength" FullName="System.Windows.Controls.DataGridLength">
   <TypeSignature Language="C#" Value="public struct DataGridLength : IEquatable&lt;System.Windows.Controls.DataGridLength&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit DataGridLength extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.Controls.DataGridLength&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.DataGridLength" />
+  <TypeSignature Language="VB.NET" Value="Public Structure DataGridLength&#xA;Implements IEquatable(Of DataGridLength)" />
+  <TypeSignature Language="F#" Value="type DataGridLength = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class DataGridLength : IEquatable&lt;System::Windows::Controls::DataGridLength&gt;" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +27,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridLength" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataGridLength (double pixels);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 pixels) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.#ctor(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pixels As Double)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DataGridLength : double -&gt; System.Windows.Controls.DataGridLength" Usage="new System.Windows.Controls.DataGridLength pixels" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridLength(double pixels);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -48,6 +63,9 @@
       <MemberSignature Language="C#" Value="public DataGridLength (double value, System.Windows.Controls.DataGridLengthUnitType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 value, valuetype System.Windows.Controls.DataGridLengthUnitType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.#ctor(System.Double,System.Windows.Controls.DataGridLengthUnitType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double, type As DataGridLengthUnitType)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DataGridLength : double * System.Windows.Controls.DataGridLengthUnitType -&gt; System.Windows.Controls.DataGridLength" Usage="new System.Windows.Controls.DataGridLength (value, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridLength(double value, System::Windows::Controls::DataGridLengthUnitType type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +92,9 @@
       <MemberSignature Language="C#" Value="public DataGridLength (double value, System.Windows.Controls.DataGridLengthUnitType type, double desiredValue, double displayValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 value, valuetype System.Windows.Controls.DataGridLengthUnitType type, float64 desiredValue, float64 displayValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.#ctor(System.Double,System.Windows.Controls.DataGridLengthUnitType,System.Double,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double, type As DataGridLengthUnitType, desiredValue As Double, displayValue As Double)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.DataGridLength : double * System.Windows.Controls.DataGridLengthUnitType * double * double -&gt; System.Windows.Controls.DataGridLength" Usage="new System.Windows.Controls.DataGridLength (value, type, desiredValue, displayValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridLength(double value, System::Windows::Controls::DataGridLengthUnitType type, double desiredValue, double displayValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -112,6 +133,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Controls.DataGridLength Auto { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Controls.DataGridLength Auto" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.Auto" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Auto As DataGridLength" />
+      <MemberSignature Language="F#" Value="member this.Auto : System.Windows.Controls.DataGridLength" Usage="System.Windows.Controls.DataGridLength.Auto" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Controls::DataGridLength Auto { System::Windows::Controls::DataGridLength get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -137,6 +161,9 @@
       <MemberSignature Language="C#" Value="public double DesiredValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 DesiredValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.DesiredValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DesiredValue As Double" />
+      <MemberSignature Language="F#" Value="member this.DesiredValue : double" Usage="System.Windows.Controls.DataGridLength.DesiredValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DesiredValue { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -155,6 +182,9 @@
       <MemberSignature Language="C#" Value="public double DisplayValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 DisplayValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.DisplayValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayValue As Double" />
+      <MemberSignature Language="F#" Value="member this.DisplayValue : double" Usage="System.Windows.Controls.DataGridLength.DisplayValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double DisplayValue { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -169,10 +199,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether an object is equal to the current <see cref="T:System.Windows.Controls.DataGridLength" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataGridLength.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -196,7 +238,13 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Controls.DataGridLength other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.Controls.DataGridLength other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.Equals(System.Windows.Controls.DataGridLength)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As DataGridLength) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Controls.DataGridLength -&gt; bool" Usage="dataGridLength.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Windows::Controls::DataGridLength other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -219,6 +267,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataGridLength.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -238,6 +289,9 @@
       <MemberSignature Language="C#" Value="public bool IsAbsolute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAbsolute" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.IsAbsolute" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAbsolute As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAbsolute : bool" Usage="System.Windows.Controls.DataGridLength.IsAbsolute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAbsolute { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -257,6 +311,9 @@
       <MemberSignature Language="C#" Value="public bool IsAuto { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAuto" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.IsAuto" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAuto As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAuto : bool" Usage="System.Windows.Controls.DataGridLength.IsAuto" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAuto { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -276,6 +333,9 @@
       <MemberSignature Language="C#" Value="public bool IsSizeToCells { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSizeToCells" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.IsSizeToCells" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSizeToCells As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSizeToCells : bool" Usage="System.Windows.Controls.DataGridLength.IsSizeToCells" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSizeToCells { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -295,6 +355,9 @@
       <MemberSignature Language="C#" Value="public bool IsSizeToHeader { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSizeToHeader" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.IsSizeToHeader" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSizeToHeader As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSizeToHeader : bool" Usage="System.Windows.Controls.DataGridLength.IsSizeToHeader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSizeToHeader { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -314,6 +377,9 @@
       <MemberSignature Language="C#" Value="public bool IsStar { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsStar" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.IsStar" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStar As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsStar : bool" Usage="System.Windows.Controls.DataGridLength.IsStar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStar { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -333,6 +399,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Controls.DataGridLength gl1, System.Windows.Controls.DataGridLength gl2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.DataGridLength gl1, valuetype System.Windows.Controls.DataGridLength gl2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.op_Equality(System.Windows.Controls.DataGridLength,System.Windows.Controls.DataGridLength)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (gl1 As DataGridLength, gl2 As DataGridLength) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Controls.DataGridLength * System.Windows.Controls.DataGridLength -&gt; bool" Usage="gl1 = gl2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Controls::DataGridLength gl1, System::Windows::Controls::DataGridLength gl2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -358,6 +427,9 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Windows.Controls.DataGridLength (double value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Windows.Controls.DataGridLength op_Implicit(float64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.op_Implicit(System.Double)~System.Windows.Controls.DataGridLength" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Widening Operator CType (value As Double) As DataGridLength" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : double -&gt; System.Windows.Controls.DataGridLength" Usage="System.Windows.Controls.DataGridLength.op_Implicit value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Windows::Controls::DataGridLength(double value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -380,6 +452,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Controls.DataGridLength gl1, System.Windows.Controls.DataGridLength gl2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.DataGridLength gl1, valuetype System.Windows.Controls.DataGridLength gl2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.op_Inequality(System.Windows.Controls.DataGridLength,System.Windows.Controls.DataGridLength)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (gl1 As DataGridLength, gl2 As DataGridLength) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Controls.DataGridLength * System.Windows.Controls.DataGridLength -&gt; bool" Usage="System.Windows.Controls.DataGridLength.op_Inequality (gl1, gl2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Controls::DataGridLength gl1, System::Windows::Controls::DataGridLength gl2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -405,6 +480,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Controls.DataGridLength SizeToCells { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Controls.DataGridLength SizeToCells" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.SizeToCells" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SizeToCells As DataGridLength" />
+      <MemberSignature Language="F#" Value="member this.SizeToCells : System.Windows.Controls.DataGridLength" Usage="System.Windows.Controls.DataGridLength.SizeToCells" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Controls::DataGridLength SizeToCells { System::Windows::Controls::DataGridLength get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -430,6 +508,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Controls.DataGridLength SizeToHeader { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Controls.DataGridLength SizeToHeader" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.SizeToHeader" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property SizeToHeader As DataGridLength" />
+      <MemberSignature Language="F#" Value="member this.SizeToHeader : System.Windows.Controls.DataGridLength" Usage="System.Windows.Controls.DataGridLength.SizeToHeader" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Controls::DataGridLength SizeToHeader { System::Windows::Controls::DataGridLength get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -455,6 +536,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.DataGridLength.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataGridLength.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -474,6 +558,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.DataGridLengthUnitType UnitType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.DataGridLengthUnitType UnitType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.UnitType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UnitType As DataGridLengthUnitType" />
+      <MemberSignature Language="F#" Value="member this.UnitType : System.Windows.Controls.DataGridLengthUnitType" Usage="System.Windows.Controls.DataGridLength.UnitType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::DataGridLengthUnitType UnitType { System::Windows::Controls::DataGridLengthUnitType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -492,6 +579,9 @@
       <MemberSignature Language="C#" Value="public double Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.DataGridLength.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Double" />
+      <MemberSignature Language="F#" Value="member this.Value : double" Usage="System.Windows.Controls.DataGridLength.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Value { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -506,23 +596,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.DataGridLength" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether an object is equal to the current <see cref="T:System.Windows.Controls.DataGridLength" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="DataGridViewCellErrorTextNeededEventHandler" FullName="System.Windows.Forms.DataGridViewCellErrorTextNeededEventHandler">
+﻿<Type Name="DataGridViewCellErrorTextNeededEventHandler" FullName="System.Windows.Forms.DataGridViewCellErrorTextNeededEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewCellErrorTextNeededEventHandler(object sender, DataGridViewCellErrorTextNeededEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewCellErrorTextNeededEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellErrorTextNeededEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewCellErrorTextNeededEventHandler(sender As Object, e As DataGridViewCellErrorTextNeededEventArgs)" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellErrorTextNeededEventHandler = delegate of obj * DataGridViewCellErrorTextNeededEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewCellErrorTextNeededEventHandler(System::Object ^ sender, DataGridViewCellErrorTextNeededEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

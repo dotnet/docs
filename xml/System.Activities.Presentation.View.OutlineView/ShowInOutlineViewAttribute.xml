@@ -1,7 +1,10 @@
-<Type Name="ShowInOutlineViewAttribute" FullName="System.Activities.Presentation.View.OutlineView.ShowInOutlineViewAttribute">
+﻿<Type Name="ShowInOutlineViewAttribute" FullName="System.Activities.Presentation.View.OutlineView.ShowInOutlineViewAttribute">
   <TypeSignature Language="C#" Value="public sealed class ShowInOutlineViewAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ShowInOutlineViewAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.OutlineView.ShowInOutlineViewAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ShowInOutlineViewAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ShowInOutlineViewAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ShowInOutlineViewAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,8 @@
       <MemberSignature Language="C#" Value="public ShowInOutlineViewAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.OutlineView.ShowInOutlineViewAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ShowInOutlineViewAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -39,6 +44,9 @@
       <MemberSignature Language="C#" Value="public string PromotedProperty { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PromotedProperty" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.OutlineView.ShowInOutlineViewAttribute.PromotedProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Property PromotedProperty As String" />
+      <MemberSignature Language="F#" Value="member this.PromotedProperty : string with get, set" Usage="System.Activities.Presentation.View.OutlineView.ShowInOutlineViewAttribute.PromotedProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PromotedProperty { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

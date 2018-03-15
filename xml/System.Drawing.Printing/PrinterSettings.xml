@@ -1,7 +1,10 @@
-<Type Name="PrinterSettings" FullName="System.Drawing.Printing.PrinterSettings">
+﻿<Type Name="PrinterSettings" FullName="System.Drawing.Printing.PrinterSettings">
   <TypeSignature Language="C#" Value="public class PrinterSettings : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PrinterSettings extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Printing.PrinterSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrinterSettings&#xA;Implements ICloneable" />
+  <TypeSignature Language="F#" Value="type PrinterSettings = class&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrinterSettings : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +55,8 @@
       <MemberSignature Language="C#" Value="public PrinterSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrinterSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -76,6 +81,9 @@
       <MemberSignature Language="C#" Value="public bool CanDuplex { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanDuplex" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.CanDuplex" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanDuplex As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanDuplex : bool" Usage="System.Drawing.Printing.PrinterSettings.CanDuplex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanDuplex { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -107,7 +115,13 @@
       <MemberSignature Language="C#" Value="public object Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; obj&#xA;override this.Clone : unit -&gt; obj" Usage="printerSettings.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ Clone();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -126,6 +140,9 @@
       <MemberSignature Language="C#" Value="public bool Collate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Collate" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.Collate" />
+      <MemberSignature Language="VB.NET" Value="Public Property Collate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Collate : bool with get, set" Usage="System.Drawing.Printing.PrinterSettings.Collate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Collate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -158,6 +175,9 @@
       <MemberSignature Language="C#" Value="public short Copies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int16 Copies" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.Copies" />
+      <MemberSignature Language="VB.NET" Value="Public Property Copies As Short" />
+      <MemberSignature Language="F#" Value="member this.Copies : int16 with get, set" Usage="System.Drawing.Printing.PrinterSettings.Copies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property short Copies { short get(); void set(short value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -194,10 +214,22 @@
         <altmember cref="P:System.Drawing.Printing.PrinterSettings.ToPage" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateMeasurementGraphics">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see cref="T:System.Drawing.Graphics" /> that contains printer information.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateMeasurementGraphics">
       <MemberSignature Language="C#" Value="public System.Drawing.Graphics CreateMeasurementGraphics ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Graphics CreateMeasurementGraphics() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.CreateMeasurementGraphics" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateMeasurementGraphics () As Graphics" />
+      <MemberSignature Language="F#" Value="member this.CreateMeasurementGraphics : unit -&gt; System.Drawing.Graphics" Usage="printerSettings.CreateMeasurementGraphics " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Graphics ^ CreateMeasurementGraphics();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -227,6 +259,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Graphics CreateMeasurementGraphics (bool honorOriginAtMargins);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Graphics CreateMeasurementGraphics(bool honorOriginAtMargins) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.CreateMeasurementGraphics(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateMeasurementGraphics (honorOriginAtMargins As Boolean) As Graphics" />
+      <MemberSignature Language="F#" Value="member this.CreateMeasurementGraphics : bool -&gt; System.Drawing.Graphics" Usage="printerSettings.CreateMeasurementGraphics honorOriginAtMargins" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Graphics ^ CreateMeasurementGraphics(bool honorOriginAtMargins);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -257,6 +292,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Graphics CreateMeasurementGraphics (System.Drawing.Printing.PageSettings pageSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Graphics CreateMeasurementGraphics(class System.Drawing.Printing.PageSettings pageSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.CreateMeasurementGraphics(System.Drawing.Printing.PageSettings)" />
+      <MemberSignature Language="F#" Value="member this.CreateMeasurementGraphics : System.Drawing.Printing.PageSettings -&gt; System.Drawing.Graphics" Usage="printerSettings.CreateMeasurementGraphics pageSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Graphics ^ CreateMeasurementGraphics(System::Drawing::Printing::PageSettings ^ pageSettings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -286,6 +323,8 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Graphics CreateMeasurementGraphics (System.Drawing.Printing.PageSettings pageSettings, bool honorOriginAtMargins);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Drawing.Graphics CreateMeasurementGraphics(class System.Drawing.Printing.PageSettings pageSettings, bool honorOriginAtMargins) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.CreateMeasurementGraphics(System.Drawing.Printing.PageSettings,System.Boolean)" />
+      <MemberSignature Language="F#" Value="member this.CreateMeasurementGraphics : System.Drawing.Printing.PageSettings * bool -&gt; System.Drawing.Graphics" Usage="printerSettings.CreateMeasurementGraphics (pageSettings, honorOriginAtMargins)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Graphics ^ CreateMeasurementGraphics(System::Drawing::Printing::PageSettings ^ pageSettings, bool honorOriginAtMargins);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -318,6 +357,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PageSettings DefaultPageSettings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PageSettings DefaultPageSettings" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.DefaultPageSettings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefaultPageSettings As PageSettings" />
+      <MemberSignature Language="F#" Value="member this.DefaultPageSettings : System.Drawing.Printing.PageSettings" Usage="System.Drawing.Printing.PrinterSettings.DefaultPageSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PageSettings ^ DefaultPageSettings { System::Drawing::Printing::PageSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -344,6 +386,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.Duplex Duplex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Printing.Duplex Duplex" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.Duplex" />
+      <MemberSignature Language="VB.NET" Value="Public Property Duplex As Duplex" />
+      <MemberSignature Language="F#" Value="member this.Duplex : System.Drawing.Printing.Duplex with get, set" Usage="System.Drawing.Printing.PrinterSettings.Duplex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::Duplex Duplex { System::Drawing::Printing::Duplex get(); void set(System::Drawing::Printing::Duplex value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -379,6 +424,9 @@
       <MemberSignature Language="C#" Value="public int FromPage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 FromPage" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.FromPage" />
+      <MemberSignature Language="VB.NET" Value="Public Property FromPage As Integer" />
+      <MemberSignature Language="F#" Value="member this.FromPage : int with get, set" Usage="System.Drawing.Printing.PrinterSettings.FromPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int FromPage { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -409,10 +457,22 @@
         <altmember cref="P:System.Drawing.Printing.PrinterSettings.ToPage" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetHdevmode">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a handle to a <see langword="DEVMODE" /> structure that corresponds to the printer settings.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetHdevmode">
       <MemberSignature Language="C#" Value="public IntPtr GetHdevmode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance native int GetHdevmode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.GetHdevmode" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHdevmode () As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.GetHdevmode : unit -&gt; nativeint" Usage="printerSettings.GetHdevmode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr GetHdevmode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -442,6 +502,8 @@
       <MemberSignature Language="C#" Value="public IntPtr GetHdevmode (System.Drawing.Printing.PageSettings pageSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance native int GetHdevmode(class System.Drawing.Printing.PageSettings pageSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.GetHdevmode(System.Drawing.Printing.PageSettings)" />
+      <MemberSignature Language="F#" Value="member this.GetHdevmode : System.Drawing.Printing.PageSettings -&gt; nativeint" Usage="printerSettings.GetHdevmode pageSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr GetHdevmode(System::Drawing::Printing::PageSettings ^ pageSettings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -476,6 +538,9 @@
       <MemberSignature Language="C#" Value="public IntPtr GetHdevnames ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance native int GetHdevnames() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.GetHdevnames" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetHdevnames () As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.GetHdevnames : unit -&gt; nativeint" Usage="printerSettings.GetHdevnames " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IntPtr GetHdevnames();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -503,6 +568,9 @@
       <MemberSignature Language="C#" Value="public static System.Drawing.Printing.PrinterSettings.StringCollection InstalledPrinters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Drawing.Printing.PrinterSettings/StringCollection InstalledPrinters" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.InstalledPrinters" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InstalledPrinters As PrinterSettings.StringCollection" />
+      <MemberSignature Language="F#" Value="member this.InstalledPrinters : System.Drawing.Printing.PrinterSettings.StringCollection" Usage="System.Drawing.Printing.PrinterSettings.InstalledPrinters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Drawing::Printing::PrinterSettings::StringCollection ^ InstalledPrinters { System::Drawing::Printing::PrinterSettings::StringCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -540,6 +608,9 @@
       <MemberSignature Language="C#" Value="public bool IsDefaultPrinter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDefaultPrinter" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.IsDefaultPrinter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDefaultPrinter As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDefaultPrinter : bool" Usage="System.Drawing.Printing.PrinterSettings.IsDefaultPrinter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefaultPrinter { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -571,10 +642,21 @@
         <altmember cref="P:System.Drawing.Printing.PrinterSettings.PrinterName" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsDirectPrintingSupported">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value indicating whether the printer supports printing an image file.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsDirectPrintingSupported">
       <MemberSignature Language="C#" Value="public bool IsDirectPrintingSupported (System.Drawing.Image image);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsDirectPrintingSupported(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.IsDirectPrintingSupported(System.Drawing.Image)" />
+      <MemberSignature Language="F#" Value="member this.IsDirectPrintingSupported : System.Drawing.Image -&gt; bool" Usage="printerSettings.IsDirectPrintingSupported image" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsDirectPrintingSupported(System::Drawing::Image ^ image);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -598,6 +680,8 @@
       <MemberSignature Language="C#" Value="public bool IsDirectPrintingSupported (System.Drawing.Imaging.ImageFormat imageFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsDirectPrintingSupported(class System.Drawing.Imaging.ImageFormat imageFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.IsDirectPrintingSupported(System.Drawing.Imaging.ImageFormat)" />
+      <MemberSignature Language="F#" Value="member this.IsDirectPrintingSupported : System.Drawing.Imaging.ImageFormat -&gt; bool" Usage="printerSettings.IsDirectPrintingSupported imageFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsDirectPrintingSupported(System::Drawing::Imaging::ImageFormat ^ imageFormat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -621,6 +705,9 @@
       <MemberSignature Language="C#" Value="public bool IsPlotter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPlotter" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.IsPlotter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPlotter As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPlotter : bool" Usage="System.Drawing.Printing.PrinterSettings.IsPlotter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPlotter { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -648,6 +735,9 @@
       <MemberSignature Language="C#" Value="public bool IsValid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsValid" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.IsValid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsValid As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsValid : bool" Usage="System.Drawing.Printing.PrinterSettings.IsValid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsValid { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -692,6 +782,9 @@
       <MemberSignature Language="C#" Value="public int LandscapeAngle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LandscapeAngle" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.LandscapeAngle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LandscapeAngle As Integer" />
+      <MemberSignature Language="F#" Value="member this.LandscapeAngle : int" Usage="System.Drawing.Printing.PrinterSettings.LandscapeAngle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LandscapeAngle { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -719,6 +812,9 @@
       <MemberSignature Language="C#" Value="public int MaximumCopies { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumCopies" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.MaximumCopies" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property MaximumCopies As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaximumCopies : int" Usage="System.Drawing.Printing.PrinterSettings.MaximumCopies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumCopies { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -745,6 +841,9 @@
       <MemberSignature Language="C#" Value="public int MaximumPage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MaximumPage" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.MaximumPage" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaximumPage As Integer" />
+      <MemberSignature Language="F#" Value="member this.MaximumPage : int with get, set" Usage="System.Drawing.Printing.PrinterSettings.MaximumPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MaximumPage { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -775,6 +874,9 @@
       <MemberSignature Language="C#" Value="public int MinimumPage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 MinimumPage" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.MinimumPage" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinimumPage As Integer" />
+      <MemberSignature Language="F#" Value="member this.MinimumPage : int with get, set" Usage="System.Drawing.Printing.PrinterSettings.MinimumPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int MinimumPage { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -805,6 +907,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PrinterSettings.PaperSizeCollection PaperSizes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PrinterSettings/PaperSizeCollection PaperSizes" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.PaperSizes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PaperSizes As PrinterSettings.PaperSizeCollection" />
+      <MemberSignature Language="F#" Value="member this.PaperSizes : System.Drawing.Printing.PrinterSettings.PaperSizeCollection" Usage="System.Drawing.Printing.PrinterSettings.PaperSizes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrinterSettings::PaperSizeCollection ^ PaperSizes { System::Drawing::Printing::PrinterSettings::PaperSizeCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -849,6 +954,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PrinterSettings.PaperSourceCollection PaperSources { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PrinterSettings/PaperSourceCollection PaperSources" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.PaperSources" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PaperSources As PrinterSettings.PaperSourceCollection" />
+      <MemberSignature Language="F#" Value="member this.PaperSources : System.Drawing.Printing.PrinterSettings.PaperSourceCollection" Usage="System.Drawing.Printing.PrinterSettings.PaperSources" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrinterSettings::PaperSourceCollection ^ PaperSources { System::Drawing::Printing::PrinterSettings::PaperSourceCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -891,6 +999,9 @@
       <MemberSignature Language="C#" Value="public string PrinterName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PrinterName" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.PrinterName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrinterName As String" />
+      <MemberSignature Language="F#" Value="member this.PrinterName : string with get, set" Usage="System.Drawing.Printing.PrinterSettings.PrinterName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrinterName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -940,6 +1051,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PrinterSettings.PrinterResolutionCollection PrinterResolutions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Printing.PrinterSettings/PrinterResolutionCollection PrinterResolutions" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.PrinterResolutions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrinterResolutions As PrinterSettings.PrinterResolutionCollection" />
+      <MemberSignature Language="F#" Value="member this.PrinterResolutions : System.Drawing.Printing.PrinterSettings.PrinterResolutionCollection" Usage="System.Drawing.Printing.PrinterSettings.PrinterResolutions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrinterSettings::PrinterResolutionCollection ^ PrinterResolutions { System::Drawing::Printing::PrinterSettings::PrinterResolutionCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -983,6 +1097,9 @@
       <MemberSignature Language="C#" Value="public string PrintFileName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PrintFileName" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.PrintFileName" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrintFileName As String" />
+      <MemberSignature Language="F#" Value="member this.PrintFileName : string with get, set" Usage="System.Drawing.Printing.PrinterSettings.PrintFileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrintFileName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1002,6 +1119,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Printing.PrintRange PrintRange { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Printing.PrintRange PrintRange" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.PrintRange" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrintRange As PrintRange" />
+      <MemberSignature Language="F#" Value="member this.PrintRange : System.Drawing.Printing.PrintRange with get, set" Usage="System.Drawing.Printing.PrinterSettings.PrintRange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Printing::PrintRange PrintRange { System::Drawing::Printing::PrintRange get(); void set(System::Drawing::Printing::PrintRange value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1037,6 +1157,9 @@
       <MemberSignature Language="C#" Value="public bool PrintToFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PrintToFile" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.PrintToFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property PrintToFile As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PrintToFile : bool with get, set" Usage="System.Drawing.Printing.PrinterSettings.PrintToFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool PrintToFile { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1067,6 +1190,9 @@
       <MemberSignature Language="C#" Value="public void SetHdevmode (IntPtr hdevmode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetHdevmode(native int hdevmode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.SetHdevmode(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetHdevmode (hdevmode As IntPtr)" />
+      <MemberSignature Language="F#" Value="member this.SetHdevmode : nativeint -&gt; unit" Usage="printerSettings.SetHdevmode hdevmode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetHdevmode(IntPtr hdevmode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1097,6 +1223,9 @@
       <MemberSignature Language="C#" Value="public void SetHdevnames (IntPtr hdevnames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetHdevnames(native int hdevnames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.SetHdevnames(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetHdevnames (hdevnames As IntPtr)" />
+      <MemberSignature Language="F#" Value="member this.SetHdevnames : nativeint -&gt; unit" Usage="printerSettings.SetHdevnames hdevnames" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetHdevnames(IntPtr hdevnames);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1120,6 +1249,9 @@
       <MemberSignature Language="C#" Value="public bool SupportsColor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsColor" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.SupportsColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportsColor As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsColor : bool" Usage="System.Drawing.Printing.PrinterSettings.SupportsColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportsColor { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1158,6 +1290,9 @@
       <MemberSignature Language="C#" Value="public int ToPage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ToPage" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Printing.PrinterSettings.ToPage" />
+      <MemberSignature Language="VB.NET" Value="Public Property ToPage As Integer" />
+      <MemberSignature Language="F#" Value="member this.ToPage : int with get, set" Usage="System.Drawing.Printing.PrinterSettings.ToPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ToPage { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1192,6 +1327,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Printing.PrinterSettings.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="printerSettings.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -1207,32 +1345,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateMeasurementGraphics">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see cref="T:System.Drawing.Graphics" /> that contains printer information.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetHdevmode">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a handle to a <see langword="DEVMODE" /> structure that corresponds to the printer settings.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsDirectPrintingSupported">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value indicating whether the printer supports printing an image file.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

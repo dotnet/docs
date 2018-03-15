@@ -1,7 +1,10 @@
-<Type Name="BitmapEditor" FullName="System.Drawing.Design.BitmapEditor">
+﻿<Type Name="BitmapEditor" FullName="System.Drawing.Design.BitmapEditor">
   <TypeSignature Language="C#" Value="public class BitmapEditor : System.Drawing.Design.ImageEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BitmapEditor extends System.Drawing.Design.ImageEditor" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.BitmapEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class BitmapEditor&#xA;Inherits ImageEditor" />
+  <TypeSignature Language="F#" Value="type BitmapEditor = class&#xA;    inherit ImageEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BitmapEditor : System::Drawing::Design::ImageEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,8 @@
       <MemberSignature Language="C#" Value="public BitmapEditor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.BitmapEditor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BitmapEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -57,6 +62,9 @@
       <MemberSignature Language="C#" Value="protected override string[] GetExtensions ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string[] GetExtensions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.BitmapEditor.GetExtensions" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetExtensions () As String()" />
+      <MemberSignature Language="F#" Value="override this.GetExtensions : unit -&gt; string[]" Usage="bitmapEditor.GetExtensions " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;System::String ^&gt; ^ GetExtensions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -76,6 +84,9 @@
       <MemberSignature Language="C#" Value="protected override string GetFileDialogDescription ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetFileDialogDescription() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.BitmapEditor.GetFileDialogDescription" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetFileDialogDescription () As String" />
+      <MemberSignature Language="F#" Value="override this.GetFileDialogDescription : unit -&gt; string" Usage="bitmapEditor.GetFileDialogDescription " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetFileDialogDescription();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>
@@ -102,6 +113,8 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Image LoadFromStream (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Drawing.Image LoadFromStream(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.BitmapEditor.LoadFromStream(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="override this.LoadFromStream : System.IO.Stream -&gt; System.Drawing.Image" Usage="bitmapEditor.LoadFromStream stream" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Image ^ LoadFromStream(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing.Design</AssemblyName>

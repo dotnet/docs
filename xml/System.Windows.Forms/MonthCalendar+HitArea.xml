@@ -1,7 +1,10 @@
-<Type Name="MonthCalendar+HitArea" FullName="System.Windows.Forms.MonthCalendar+HitArea">
+﻿<Type Name="MonthCalendar+HitArea" FullName="System.Windows.Forms.MonthCalendar+HitArea">
   <TypeSignature Language="C#" Value="public enum MonthCalendar.HitArea" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed MonthCalendar/HitArea extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MonthCalendar.HitArea" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MonthCalendar.HitArea" />
+  <TypeSignature Language="F#" Value="type MonthCalendar.HitArea = " />
+  <TypeSignature Language="C++ CLI" Value="public: enum class MonthCalendar::HitArea" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="CalendarBackground" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MonthCalendar/HitArea CalendarBackground = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MonthCalendar.HitArea.CalendarBackground" />
+      <MemberSignature Language="VB.NET" Value="CalendarBackground" />
+      <MemberSignature Language="F#" Value="CalendarBackground = 6" Usage="System.Windows.Forms.MonthCalendar.HitArea.CalendarBackground" />
+      <MemberSignature Language="C++ CLI" Value="CalendarBackground" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The specified point is part of the calendar's background.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Date" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MonthCalendar/HitArea Date = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MonthCalendar.HitArea.Date" />
+      <MemberSignature Language="VB.NET" Value="Date" />
+      <MemberSignature Language="F#" Value="Date = 7" Usage="System.Windows.Forms.MonthCalendar.HitArea.Date" />
+      <MemberSignature Language="C++ CLI" Value="Date" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The specified point is on a date within the calendar. The <see cref="P:System.Windows.Forms.MonthCalendar.HitTestInfo.Time" /> property of <see cref="T:System.Windows.Forms.MonthCalendar.HitTestInfo" /> is set to the date at the specified point.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="DayOfWeek" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MonthCalendar/HitArea DayOfWeek = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MonthCalendar.HitArea.DayOfWeek" />
+      <MemberSignature Language="VB.NET" Value="DayOfWeek" />
+      <MemberSignature Language="F#" Value="DayOfWeek = 10" Usage="System.Windows.Forms.MonthCalendar.HitArea.DayOfWeek" />
+      <MemberSignature Language="C++ CLI" Value="DayOfWeek" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The specified point is over a day abbreviation ("Fri", for example). The <see cref="P:System.Windows.Forms.MonthCalendar.HitTestInfo.Time" /> property of <see cref="T:System.Windows.Forms.MonthCalendar.HitTestInfo" /> is set to January 1, 0001.</summary>
       </Docs>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="NextMonthButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MonthCalendar/HitArea NextMonthButton = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MonthCalendar.HitArea.NextMonthButton" />
+      <MemberSignature Language="VB.NET" Value="NextMonthButton" />
+      <MemberSignature Language="F#" Value="NextMonthButton = 4" Usage="System.Windows.Forms.MonthCalendar.HitArea.NextMonthButton" />
+      <MemberSignature Language="C++ CLI" Value="NextMonthButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The specified point is over the button at the upper-right corner of the control. If the user clicks here, the month calendar scrolls its display to the next month or set of months.</summary>
       </Docs>
@@ -89,6 +108,9 @@
       <MemberSignature Language="C#" Value="NextMonthDate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MonthCalendar/HitArea NextMonthDate = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MonthCalendar.HitArea.NextMonthDate" />
+      <MemberSignature Language="VB.NET" Value="NextMonthDate" />
+      <MemberSignature Language="F#" Value="NextMonthDate = 8" Usage="System.Windows.Forms.MonthCalendar.HitArea.NextMonthDate" />
+      <MemberSignature Language="C++ CLI" Value="NextMonthDate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The specified point is over a date from the next month (partially displayed at the top of the currently displayed month). If the user clicks here, the month calendar scrolls its display to the next month or set of months.</summary>
       </Docs>
@@ -105,6 +128,9 @@
       <MemberSignature Language="C#" Value="Nowhere" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MonthCalendar/HitArea Nowhere = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MonthCalendar.HitArea.Nowhere" />
+      <MemberSignature Language="VB.NET" Value="Nowhere" />
+      <MemberSignature Language="F#" Value="Nowhere = 0" Usage="System.Windows.Forms.MonthCalendar.HitArea.Nowhere" />
+      <MemberSignature Language="C++ CLI" Value="Nowhere" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -113,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The specified point is either not on the month calendar control, or it is in an inactive portion of the control.</summary>
       </Docs>
@@ -121,6 +148,9 @@
       <MemberSignature Language="C#" Value="PrevMonthButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MonthCalendar/HitArea PrevMonthButton = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MonthCalendar.HitArea.PrevMonthButton" />
+      <MemberSignature Language="VB.NET" Value="PrevMonthButton" />
+      <MemberSignature Language="F#" Value="PrevMonthButton = 5" Usage="System.Windows.Forms.MonthCalendar.HitArea.PrevMonthButton" />
+      <MemberSignature Language="C++ CLI" Value="PrevMonthButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +159,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The specified point is over the button at the upper-left corner of the control. If the user clicks here, the month calendar scrolls its display to the previous month or set of months.</summary>
       </Docs>
@@ -137,6 +168,9 @@
       <MemberSignature Language="C#" Value="PrevMonthDate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MonthCalendar/HitArea PrevMonthDate = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MonthCalendar.HitArea.PrevMonthDate" />
+      <MemberSignature Language="VB.NET" Value="PrevMonthDate" />
+      <MemberSignature Language="F#" Value="PrevMonthDate = 9" Usage="System.Windows.Forms.MonthCalendar.HitArea.PrevMonthDate" />
+      <MemberSignature Language="C++ CLI" Value="PrevMonthDate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -145,6 +179,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The specified point is over a date from the previous month (partially displayed at the top of the currently displayed month). If the user clicks here, the month calendar scrolls its display to the previous month or set of months.</summary>
       </Docs>
@@ -153,6 +188,9 @@
       <MemberSignature Language="C#" Value="TitleBackground" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MonthCalendar/HitArea TitleBackground = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MonthCalendar.HitArea.TitleBackground" />
+      <MemberSignature Language="VB.NET" Value="TitleBackground" />
+      <MemberSignature Language="F#" Value="TitleBackground = 1" Usage="System.Windows.Forms.MonthCalendar.HitArea.TitleBackground" />
+      <MemberSignature Language="C++ CLI" Value="TitleBackground" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -161,6 +199,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The specified point is over the background of a month's title.</summary>
       </Docs>
@@ -169,6 +208,9 @@
       <MemberSignature Language="C#" Value="TitleMonth" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MonthCalendar/HitArea TitleMonth = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MonthCalendar.HitArea.TitleMonth" />
+      <MemberSignature Language="VB.NET" Value="TitleMonth" />
+      <MemberSignature Language="F#" Value="TitleMonth = 2" Usage="System.Windows.Forms.MonthCalendar.HitArea.TitleMonth" />
+      <MemberSignature Language="C++ CLI" Value="TitleMonth" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -177,6 +219,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The specified point is in a month's title bar, over a month name.</summary>
       </Docs>
@@ -185,6 +228,9 @@
       <MemberSignature Language="C#" Value="TitleYear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MonthCalendar/HitArea TitleYear = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MonthCalendar.HitArea.TitleYear" />
+      <MemberSignature Language="VB.NET" Value="TitleYear" />
+      <MemberSignature Language="F#" Value="TitleYear = 3" Usage="System.Windows.Forms.MonthCalendar.HitArea.TitleYear" />
+      <MemberSignature Language="C++ CLI" Value="TitleYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -193,6 +239,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The specified point is in a month's title bar, over the year value.</summary>
       </Docs>
@@ -201,6 +248,9 @@
       <MemberSignature Language="C#" Value="TodayLink" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MonthCalendar/HitArea TodayLink = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MonthCalendar.HitArea.TodayLink" />
+      <MemberSignature Language="VB.NET" Value="TodayLink" />
+      <MemberSignature Language="F#" Value="TodayLink = 12" Usage="System.Windows.Forms.MonthCalendar.HitArea.TodayLink" />
+      <MemberSignature Language="C++ CLI" Value="TodayLink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -209,6 +259,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>The specified point is on the today link at the bottom of the month calendar control.</summary>
       </Docs>
@@ -217,6 +268,9 @@
       <MemberSignature Language="C#" Value="WeekNumbers" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.MonthCalendar/HitArea WeekNumbers = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.MonthCalendar.HitArea.WeekNumbers" />
+      <MemberSignature Language="VB.NET" Value="WeekNumbers" />
+      <MemberSignature Language="F#" Value="WeekNumbers = 11" Usage="System.Windows.Forms.MonthCalendar.HitArea.WeekNumbers" />
+      <MemberSignature Language="C++ CLI" Value="WeekNumbers" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -225,6 +279,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>The specified point is over a week number. This occurs only if the <see cref="P:System.Windows.Forms.MonthCalendar.ShowWeekNumbers" /> property of <see cref="T:System.Windows.Forms.MonthCalendar" /> is enabled. The <see cref="P:System.Windows.Forms.MonthCalendar.HitTestInfo.Time" /> property of <see cref="T:System.Windows.Forms.MonthCalendar.HitTestInfo" /> is set to the corresponding date in the leftmost column.</summary>
       </Docs>

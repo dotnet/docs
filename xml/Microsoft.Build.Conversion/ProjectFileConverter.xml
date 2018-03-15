@@ -1,7 +1,10 @@
-<Type Name="ProjectFileConverter" FullName="Microsoft.Build.Conversion.ProjectFileConverter">
+﻿<Type Name="ProjectFileConverter" FullName="Microsoft.Build.Conversion.ProjectFileConverter">
   <TypeSignature Language="C#" Value="public sealed class ProjectFileConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProjectFileConverter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Conversion.ProjectFileConverter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProjectFileConverter" />
+  <TypeSignature Language="F#" Value="type ProjectFileConverter = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProjectFileConverter sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="public ProjectFileConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Conversion.ProjectFileConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProjectFileConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
@@ -34,6 +39,9 @@
       <MemberSignature Language="C#" Value="public bool ConversionSkippedBecauseProjectAlreadyConverted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ConversionSkippedBecauseProjectAlreadyConverted" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Conversion.ProjectFileConverter.ConversionSkippedBecauseProjectAlreadyConverted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConversionSkippedBecauseProjectAlreadyConverted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ConversionSkippedBecauseProjectAlreadyConverted : bool" Usage="Microsoft.Build.Conversion.ProjectFileConverter.ConversionSkippedBecauseProjectAlreadyConverted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ConversionSkippedBecauseProjectAlreadyConverted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
@@ -53,6 +61,9 @@
       <MemberSignature Language="C#" Value="public string[] ConversionWarnings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ConversionWarnings" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Conversion.ProjectFileConverter.ConversionWarnings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ConversionWarnings As String()" />
+      <MemberSignature Language="F#" Value="member this.ConversionWarnings : string[]" Usage="Microsoft.Build.Conversion.ProjectFileConverter.ConversionWarnings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::String ^&gt; ^ ConversionWarnings { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
@@ -67,10 +78,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Convert">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the project specified by the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile" /> property and saves it in the file specified by the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.NewProjectFile" /> property.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Convert">
       <MemberSignature Language="C#" Value="public void Convert ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Convert() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Conversion.ProjectFileConverter.Convert" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Convert ()" />
+      <MemberSignature Language="F#" Value="member this.Convert : unit -&gt; unit" Usage="projectFileConverter.Convert " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Convert();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
@@ -89,6 +112,8 @@
       <MemberSignature Language="C#" Value="public void Convert (Microsoft.Build.BuildEngine.ProjectLoadSettings projectLoadSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Convert(valuetype Microsoft.Build.BuildEngine.ProjectLoadSettings projectLoadSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Conversion.ProjectFileConverter.Convert(Microsoft.Build.BuildEngine.ProjectLoadSettings)" />
+      <MemberSignature Language="F#" Value="member this.Convert : Microsoft.Build.BuildEngine.ProjectLoadSettings -&gt; unit" Usage="projectFileConverter.Convert projectLoadSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Convert(Microsoft::Build::BuildEngine::ProjectLoadSettings projectLoadSettings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
@@ -115,6 +140,9 @@
       <MemberSignature Language="C#" Value="public void Convert (string msbuildBinPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Convert(string msbuildBinPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Conversion.ProjectFileConverter.Convert(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Convert (msbuildBinPath As String)" />
+      <MemberSignature Language="F#" Value="member this.Convert : string -&gt; unit" Usage="projectFileConverter.Convert msbuildBinPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Convert(System::String ^ msbuildBinPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
@@ -158,6 +186,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ProjectRootElement ConvertInMemory ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Construction.ProjectRootElement ConvertInMemory() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory" />
+      <MemberSignature Language="VB.NET" Value="Public Function ConvertInMemory () As ProjectRootElement" />
+      <MemberSignature Language="F#" Value="member this.ConvertInMemory : unit -&gt; Microsoft.Build.Construction.ProjectRootElement" Usage="projectFileConverter.ConvertInMemory " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Construction::ProjectRootElement ^ ConvertInMemory();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
@@ -184,6 +215,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.Project ConvertInMemory (Microsoft.Build.BuildEngine.Engine engine);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.BuildEngine.Project ConvertInMemory(class Microsoft.Build.BuildEngine.Engine engine) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory(Microsoft.Build.BuildEngine.Engine)" />
+      <MemberSignature Language="F#" Value="member this.ConvertInMemory : Microsoft.Build.BuildEngine.Engine -&gt; Microsoft.Build.BuildEngine.Project" Usage="projectFileConverter.ConvertInMemory engine" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::Project ^ ConvertInMemory(Microsoft::Build::BuildEngine::Engine ^ engine);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
@@ -211,6 +244,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.BuildEngine.Project ConvertInMemory (Microsoft.Build.BuildEngine.Engine engine, Microsoft.Build.BuildEngine.ProjectLoadSettings projectLoadSettings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.BuildEngine.Project ConvertInMemory(class Microsoft.Build.BuildEngine.Engine engine, valuetype Microsoft.Build.BuildEngine.ProjectLoadSettings projectLoadSettings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory(Microsoft.Build.BuildEngine.Engine,Microsoft.Build.BuildEngine.ProjectLoadSettings)" />
+      <MemberSignature Language="F#" Value="member this.ConvertInMemory : Microsoft.Build.BuildEngine.Engine * Microsoft.Build.BuildEngine.ProjectLoadSettings -&gt; Microsoft.Build.BuildEngine.Project" Usage="projectFileConverter.ConvertInMemory (engine, projectLoadSettings)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::BuildEngine::Project ^ ConvertInMemory(Microsoft::Build::BuildEngine::Engine ^ engine, Microsoft::Build::BuildEngine::ProjectLoadSettings projectLoadSettings);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
@@ -240,6 +275,9 @@
       <MemberSignature Language="C#" Value="public bool FSharpSpecificConversions (bool actuallyMakeChanges);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool FSharpSpecificConversions(bool actuallyMakeChanges) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Conversion.ProjectFileConverter.FSharpSpecificConversions(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FSharpSpecificConversions (actuallyMakeChanges As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.FSharpSpecificConversions : bool -&gt; bool" Usage="projectFileConverter.FSharpSpecificConversions actuallyMakeChanges" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool FSharpSpecificConversions(bool actuallyMakeChanges);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
@@ -264,6 +302,9 @@
       <MemberSignature Language="C#" Value="public bool IsUserFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUserFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Conversion.ProjectFileConverter.IsUserFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsUserFile As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsUserFile : bool with get, set" Usage="Microsoft.Build.Conversion.ProjectFileConverter.IsUserFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUserFile { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
@@ -283,6 +324,9 @@
       <MemberSignature Language="C#" Value="public string NewProjectFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NewProjectFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Conversion.ProjectFileConverter.NewProjectFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewProjectFile As String" />
+      <MemberSignature Language="F#" Value="member this.NewProjectFile : string with get, set" Usage="Microsoft.Build.Conversion.ProjectFileConverter.NewProjectFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NewProjectFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
@@ -308,6 +352,9 @@
       <MemberSignature Language="C#" Value="public string OldProjectFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OldProjectFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property OldProjectFile As String" />
+      <MemberSignature Language="F#" Value="member this.OldProjectFile : string with get, set" Usage="Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OldProjectFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
@@ -333,6 +380,9 @@
       <MemberSignature Language="C#" Value="public string SolutionFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SolutionFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Conversion.ProjectFileConverter.SolutionFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property SolutionFile As String" />
+      <MemberSignature Language="F#" Value="member this.SolutionFile : string with get, set" Usage="Microsoft.Build.Conversion.ProjectFileConverter.SolutionFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SolutionFile { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
@@ -347,14 +397,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Convert">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Conversion.v4.0</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the project specified by the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile" /> property and saves it in the file specified by the <see cref="P:Microsoft.Build.Conversion.ProjectFileConverter.NewProjectFile" /> property.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="MBinding" FullName="Microsoft.VisualBasic.Compatibility.VB6.MBinding">
+﻿<Type Name="MBinding" FullName="Microsoft.VisualBasic.Compatibility.VB6.MBinding">
   <TypeSignature Language="C#" Value="public class MBinding : IDisposable, Microsoft.VisualBasic.Compatibility.VB6.DBinding" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi MBinding extends System.Object implements class Microsoft.VisualBasic.Compatibility.VB6.DBinding, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.MBinding" />
+  <TypeSignature Language="VB.NET" Value="Public Class MBinding&#xA;Implements DBinding, IDisposable" />
+  <TypeSignature Language="F#" Value="type MBinding = class&#xA;    interface DBinding&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MBinding : IDisposable, Microsoft::VisualBasic::Compatibility::VB6::DBinding" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -41,7 +44,13 @@
       <MemberSignature Language="C#" Value="public bool DataChanged { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DataChanged" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBinding.DataChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataChanged As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DataChanged : bool with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.MBinding.DataChanged" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool DataChanged { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.DataChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -67,7 +76,13 @@
       <MemberSignature Language="C#" Value="public string DataField { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataField" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBinding.DataField" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataField As String" />
+      <MemberSignature Language="F#" Value="member this.DataField : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.MBinding.DataField" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataField { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.DataField</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -92,7 +107,13 @@
       <MemberSignature Language="C#" Value="public Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp DataFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp DataFormat" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBinding.DataFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataFormat As IDataFormatDisp" />
+      <MemberSignature Language="F#" Value="member this.DataFormat : Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp with get, set" Usage="Microsoft.VisualBasic.Compatibility.VB6.MBinding.DataFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::VisualBasic::Compatibility::VB6::IDataFormatDisp ^ DataFormat { Microsoft::VisualBasic::Compatibility::VB6::IDataFormatDisp ^ get(); void set(Microsoft::VisualBasic::Compatibility::VB6::IDataFormatDisp ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.DataFormat</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -113,11 +134,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the unmanaged resources that are used by an <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBinding" /> and, optionally, releases the managed resources.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MBinding.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="mBinding.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -144,6 +180,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familynewslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.MBinding.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="mBinding.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -177,7 +216,13 @@
       <MemberSignature Language="C#" Value="public string Key { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Key" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBinding.Key" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As String" />
+      <MemberSignature Language="F#" Value="member this.Key : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.MBinding.Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Key { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.Key</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -202,7 +247,13 @@
       <MemberSignature Language="C#" Value="public object Object { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Object" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBinding.Object" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Object As Object" />
+      <MemberSignature Language="F#" Value="member this.Object : obj" Usage="Microsoft.VisualBasic.Compatibility.VB6.MBinding.Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Object { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.Object</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -227,7 +278,13 @@
       <MemberSignature Language="C#" Value="public string PropertyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PropertyName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.VisualBasic.Compatibility.VB6.MBinding.PropertyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyName As String" />
+      <MemberSignature Language="F#" Value="member this.PropertyName : string" Usage="Microsoft.VisualBasic.Compatibility.VB6.MBinding.PropertyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PropertyName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.VisualBasic.Compatibility.VB6.DBinding.PropertyName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -248,14 +305,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the unmanaged resources that are used by an <see cref="T:Microsoft.VisualBasic.Compatibility.VB6.MBinding" /> and, optionally, releases the managed resources.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

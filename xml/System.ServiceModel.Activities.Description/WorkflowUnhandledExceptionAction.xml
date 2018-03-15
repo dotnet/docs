@@ -1,7 +1,10 @@
-<Type Name="WorkflowUnhandledExceptionAction" FullName="System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction">
+﻿<Type Name="WorkflowUnhandledExceptionAction" FullName="System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction">
   <TypeSignature Language="C#" Value="public enum WorkflowUnhandledExceptionAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkflowUnhandledExceptionAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WorkflowUnhandledExceptionAction" />
+  <TypeSignature Language="F#" Value="type WorkflowUnhandledExceptionAction = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class WorkflowUnhandledExceptionAction" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Abandon" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction Abandon = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Abandon" />
+      <MemberSignature Language="VB.NET" Value="Abandon" />
+      <MemberSignature Language="F#" Value="Abandon = 0" Usage="System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Abandon" />
+      <MemberSignature Language="C++ CLI" Value="Abandon" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Abandons the workflow instance.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="AbandonAndSuspend" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction AbandonAndSuspend = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.AbandonAndSuspend" />
+      <MemberSignature Language="VB.NET" Value="AbandonAndSuspend" />
+      <MemberSignature Language="F#" Value="AbandonAndSuspend = 3" Usage="System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.AbandonAndSuspend" />
+      <MemberSignature Language="C++ CLI" Value="AbandonAndSuspend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Abandons the workflow instance and marks the last persisted state as suspended. If there is no last persisted instance can be found, the workflow instance is aborted.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="Cancel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction Cancel = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Cancel" />
+      <MemberSignature Language="F#" Value="Cancel = 1" Usage="System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Cancel" />
+      <MemberSignature Language="C++ CLI" Value="Cancel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Cancels the workflow instance.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="Terminate" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction Terminate = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Terminate" />
+      <MemberSignature Language="VB.NET" Value="Terminate" />
+      <MemberSignature Language="F#" Value="Terminate = 2" Usage="System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction.Terminate" />
+      <MemberSignature Language="C++ CLI" Value="Terminate" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionAction</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Terminates the workflow instance. The instance state is <see cref="F:System.Activities.Hosting.WorkflowInstanceState.Complete" />.</summary>
       </Docs>

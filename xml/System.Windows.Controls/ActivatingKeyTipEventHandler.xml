@@ -1,7 +1,10 @@
-<Type Name="ActivatingKeyTipEventHandler" FullName="System.Windows.Controls.ActivatingKeyTipEventHandler">
+﻿<Type Name="ActivatingKeyTipEventHandler" FullName="System.Windows.Controls.ActivatingKeyTipEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ActivatingKeyTipEventHandler(object sender, ActivatingKeyTipEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ActivatingKeyTipEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.ActivatingKeyTipEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ActivatingKeyTipEventHandler(sender As Object, e As ActivatingKeyTipEventArgs)" />
+  <TypeSignature Language="F#" Value="type ActivatingKeyTipEventHandler = delegate of obj * ActivatingKeyTipEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ActivatingKeyTipEventHandler(System::Object ^ sender, ActivatingKeyTipEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

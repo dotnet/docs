@@ -1,7 +1,10 @@
-<Type Name="PackingSize" FullName="System.Reflection.Emit.PackingSize">
+﻿<Type Name="PackingSize" FullName="System.Reflection.Emit.PackingSize">
   <TypeSignature Language="C#" Value="public enum PackingSize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed PackingSize extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Emit.PackingSize" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PackingSize" />
+  <TypeSignature Language="F#" Value="type PackingSize = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PackingSize" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -56,6 +59,9 @@
       <MemberSignature Language="C#" Value="Size1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size1 = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size1" />
+      <MemberSignature Language="VB.NET" Value="Size1" />
+      <MemberSignature Language="F#" Value="Size1 = 1" Usage="System.Reflection.Emit.PackingSize.Size1" />
+      <MemberSignature Language="C++ CLI" Value="Size1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -74,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The packing size is 1 byte.</summary>
       </Docs>
@@ -82,6 +89,9 @@
       <MemberSignature Language="C#" Value="Size128" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size128 = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size128" />
+      <MemberSignature Language="VB.NET" Value="Size128" />
+      <MemberSignature Language="F#" Value="Size128 = 128" Usage="System.Reflection.Emit.PackingSize.Size128" />
+      <MemberSignature Language="C++ CLI" Value="Size128" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -100,6 +110,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The packing size is 128 bytes.</summary>
       </Docs>
@@ -108,6 +119,9 @@
       <MemberSignature Language="C#" Value="Size16" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size16 = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size16" />
+      <MemberSignature Language="VB.NET" Value="Size16" />
+      <MemberSignature Language="F#" Value="Size16 = 16" Usage="System.Reflection.Emit.PackingSize.Size16" />
+      <MemberSignature Language="C++ CLI" Value="Size16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -126,6 +140,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The packing size is 16 bytes.</summary>
       </Docs>
@@ -134,6 +149,9 @@
       <MemberSignature Language="C#" Value="Size2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size2 = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size2" />
+      <MemberSignature Language="VB.NET" Value="Size2" />
+      <MemberSignature Language="F#" Value="Size2 = 2" Usage="System.Reflection.Emit.PackingSize.Size2" />
+      <MemberSignature Language="C++ CLI" Value="Size2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -152,6 +170,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The packing size is 2 bytes.</summary>
       </Docs>
@@ -160,6 +179,9 @@
       <MemberSignature Language="C#" Value="Size32" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size32 = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size32" />
+      <MemberSignature Language="VB.NET" Value="Size32" />
+      <MemberSignature Language="F#" Value="Size32 = 32" Usage="System.Reflection.Emit.PackingSize.Size32" />
+      <MemberSignature Language="C++ CLI" Value="Size32" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -178,6 +200,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The packing size is 32 bytes.</summary>
       </Docs>
@@ -186,6 +209,9 @@
       <MemberSignature Language="C#" Value="Size4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size4 = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size4" />
+      <MemberSignature Language="VB.NET" Value="Size4" />
+      <MemberSignature Language="F#" Value="Size4 = 4" Usage="System.Reflection.Emit.PackingSize.Size4" />
+      <MemberSignature Language="C++ CLI" Value="Size4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -204,6 +230,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The packing size is 4 bytes.</summary>
       </Docs>
@@ -212,6 +239,9 @@
       <MemberSignature Language="C#" Value="Size64" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size64 = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size64" />
+      <MemberSignature Language="VB.NET" Value="Size64" />
+      <MemberSignature Language="F#" Value="Size64 = 64" Usage="System.Reflection.Emit.PackingSize.Size64" />
+      <MemberSignature Language="C++ CLI" Value="Size64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -230,6 +260,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>The packing size is 64 bytes.</summary>
       </Docs>
@@ -238,6 +269,9 @@
       <MemberSignature Language="C#" Value="Size8" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Size8 = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Size8" />
+      <MemberSignature Language="VB.NET" Value="Size8" />
+      <MemberSignature Language="F#" Value="Size8 = 8" Usage="System.Reflection.Emit.PackingSize.Size8" />
+      <MemberSignature Language="C++ CLI" Value="Size8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -256,6 +290,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The packing size is 8 bytes.</summary>
       </Docs>
@@ -264,6 +299,9 @@
       <MemberSignature Language="C#" Value="Unspecified" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Emit.PackingSize Unspecified = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Emit.PackingSize.Unspecified" />
+      <MemberSignature Language="VB.NET" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = 0" Usage="System.Reflection.Emit.PackingSize.Unspecified" />
+      <MemberSignature Language="C++ CLI" Value="Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -282,6 +320,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Emit.PackingSize</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The packing size is not specified.</summary>
       </Docs>

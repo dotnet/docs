@@ -1,7 +1,10 @@
-<Type Name="EncoderExceptionFallbackBuffer" FullName="System.Text.EncoderExceptionFallbackBuffer">
+﻿<Type Name="EncoderExceptionFallbackBuffer" FullName="System.Text.EncoderExceptionFallbackBuffer">
   <TypeSignature Language="C#" Value="public sealed class EncoderExceptionFallbackBuffer : System.Text.EncoderFallbackBuffer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EncoderExceptionFallbackBuffer extends System.Text.EncoderFallbackBuffer" />
   <TypeSignature Language="DocId" Value="T:System.Text.EncoderExceptionFallbackBuffer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncoderExceptionFallbackBuffer&#xA;Inherits EncoderFallbackBuffer" />
+  <TypeSignature Language="F#" Value="type EncoderExceptionFallbackBuffer = class&#xA;    inherit EncoderFallbackBuffer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncoderExceptionFallbackBuffer sealed : System::Text::EncoderFallbackBuffer" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +40,8 @@
       <MemberSignature Language="C#" Value="public EncoderExceptionFallbackBuffer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderExceptionFallbackBuffer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderExceptionFallbackBuffer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -57,10 +62,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Fallback">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Throws an exception because the input character cannot be encoded. The nominal return value is not used.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Fallback">
       <MemberSignature Language="C#" Value="public override bool Fallback (char charUnknown, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Fallback(char charUnknown, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderExceptionFallbackBuffer.Fallback(System.Char,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Fallback (charUnknown As Char, index As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Fallback : char * int -&gt; bool" Usage="encoderExceptionFallbackBuffer.Fallback (charUnknown, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Fallback(char charUnknown, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -103,6 +121,9 @@
       <MemberSignature Language="C#" Value="public override bool Fallback (char charUnknownHigh, char charUnknownLow, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Fallback(char charUnknownHigh, char charUnknownLow, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderExceptionFallbackBuffer.Fallback(System.Char,System.Char,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Fallback (charUnknownHigh As Char, charUnknownLow As Char, index As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Fallback : char * char * int -&gt; bool" Usage="encoderExceptionFallbackBuffer.Fallback (charUnknownHigh, charUnknownLow, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Fallback(char charUnknownHigh, char charUnknownLow, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -147,6 +168,9 @@
       <MemberSignature Language="C#" Value="public override char GetNextChar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance char GetNextChar() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderExceptionFallbackBuffer.GetNextChar" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetNextChar () As Char" />
+      <MemberSignature Language="F#" Value="override this.GetNextChar : unit -&gt; char" Usage="encoderExceptionFallbackBuffer.GetNextChar " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override char GetNextChar();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -184,6 +208,9 @@
       <MemberSignature Language="C#" Value="public override bool MovePrevious ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MovePrevious() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderExceptionFallbackBuffer.MovePrevious" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function MovePrevious () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.MovePrevious : unit -&gt; bool" Usage="encoderExceptionFallbackBuffer.MovePrevious " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MovePrevious();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -221,6 +248,9 @@
       <MemberSignature Language="C#" Value="public override int Remaining { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Remaining" />
       <MemberSignature Language="DocId" Value="P:System.Text.EncoderExceptionFallbackBuffer.Remaining" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Remaining As Integer" />
+      <MemberSignature Language="F#" Value="member this.Remaining : int" Usage="System.Text.EncoderExceptionFallbackBuffer.Remaining" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Remaining { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -253,15 +283,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Fallback">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Throws an exception because the input character cannot be encoded. The nominal return value is not used.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

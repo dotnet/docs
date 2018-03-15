@@ -1,7 +1,10 @@
-<Type Name="DesignTimeVisibleAttribute" FullName="System.ComponentModel.DesignTimeVisibleAttribute">
+﻿<Type Name="DesignTimeVisibleAttribute" FullName="System.ComponentModel.DesignTimeVisibleAttribute">
   <TypeSignature Language="C#" Value="public sealed class DesignTimeVisibleAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignTimeVisibleAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DesignTimeVisibleAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignTimeVisibleAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type DesignTimeVisibleAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignTimeVisibleAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,10 +42,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DesignTimeVisibleAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DesignTimeVisibleAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignTimeVisibleAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignTimeVisibleAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +82,9 @@
       <MemberSignature Language="C#" Value="public DesignTimeVisibleAttribute (bool visible);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool visible) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignTimeVisibleAttribute.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (visible As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DesignTimeVisibleAttribute : bool -&gt; System.ComponentModel.DesignTimeVisibleAttribute" Usage="new System.ComponentModel.DesignTimeVisibleAttribute visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DesignTimeVisibleAttribute(bool visible);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -94,6 +112,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.DesignTimeVisibleAttribute Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.DesignTimeVisibleAttribute Default" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignTimeVisibleAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As DesignTimeVisibleAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.DesignTimeVisibleAttribute" Usage="System.ComponentModel.DesignTimeVisibleAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignTimeVisibleAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -120,6 +141,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignTimeVisibleAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="designTimeVisibleAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -153,6 +177,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignTimeVisibleAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="designTimeVisibleAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -182,6 +209,9 @@
       <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DesignTimeVisibleAttribute.IsDefaultAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="designTimeVisibleAttribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -211,6 +241,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.DesignTimeVisibleAttribute No;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.DesignTimeVisibleAttribute No" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignTimeVisibleAttribute.No" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As DesignTimeVisibleAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.ComponentModel.DesignTimeVisibleAttribute" Usage="System.ComponentModel.DesignTimeVisibleAttribute.No" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignTimeVisibleAttribute ^ No;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -237,6 +270,9 @@
       <MemberSignature Language="C#" Value="public bool Visible { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DesignTimeVisibleAttribute.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Visible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool" Usage="System.ComponentModel.DesignTimeVisibleAttribute.Visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Visible { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -265,6 +301,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.DesignTimeVisibleAttribute Yes;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.DesignTimeVisibleAttribute Yes" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignTimeVisibleAttribute.Yes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As DesignTimeVisibleAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.ComponentModel.DesignTimeVisibleAttribute" Usage="System.ComponentModel.DesignTimeVisibleAttribute.Yes" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::DesignTimeVisibleAttribute ^ Yes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -287,15 +326,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DesignTimeVisibleAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

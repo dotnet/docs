@@ -1,7 +1,10 @@
-<Type Name="ImportDefinitionKind" FullName="System.Reflection.Metadata.ImportDefinitionKind">
+﻿<Type Name="ImportDefinitionKind" FullName="System.Reflection.Metadata.ImportDefinitionKind">
   <TypeSignature Language="C#" Value="public enum ImportDefinitionKind" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImportDefinitionKind extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.ImportDefinitionKind" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ImportDefinitionKind" />
+  <TypeSignature Language="F#" Value="type ImportDefinitionKind = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ImportDefinitionKind" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.3.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="AliasAssemblyNamespace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind AliasAssemblyNamespace = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.AliasAssemblyNamespace" />
+      <MemberSignature Language="VB.NET" Value="AliasAssemblyNamespace" />
+      <MemberSignature Language="F#" Value="AliasAssemblyNamespace = 8" Usage="System.Reflection.Metadata.ImportDefinitionKind.AliasAssemblyNamespace" />
+      <MemberSignature Language="C++ CLI" Value="AliasAssemblyNamespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -30,6 +36,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -38,6 +45,9 @@
       <MemberSignature Language="C#" Value="AliasAssemblyReference" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind AliasAssemblyReference = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.AliasAssemblyReference" />
+      <MemberSignature Language="VB.NET" Value="AliasAssemblyReference" />
+      <MemberSignature Language="F#" Value="AliasAssemblyReference = 6" Usage="System.Reflection.Metadata.ImportDefinitionKind.AliasAssemblyReference" />
+      <MemberSignature Language="C++ CLI" Value="AliasAssemblyReference" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -48,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -56,6 +67,9 @@
       <MemberSignature Language="C#" Value="AliasNamespace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind AliasNamespace = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.AliasNamespace" />
+      <MemberSignature Language="VB.NET" Value="AliasNamespace" />
+      <MemberSignature Language="F#" Value="AliasNamespace = 7" Usage="System.Reflection.Metadata.ImportDefinitionKind.AliasNamespace" />
+      <MemberSignature Language="C++ CLI" Value="AliasNamespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -66,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -74,6 +89,9 @@
       <MemberSignature Language="C#" Value="AliasType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind AliasType = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.AliasType" />
+      <MemberSignature Language="VB.NET" Value="AliasType" />
+      <MemberSignature Language="F#" Value="AliasType = 9" Usage="System.Reflection.Metadata.ImportDefinitionKind.AliasType" />
+      <MemberSignature Language="C++ CLI" Value="AliasType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -84,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -92,6 +111,9 @@
       <MemberSignature Language="C#" Value="ImportAssemblyNamespace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind ImportAssemblyNamespace = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.ImportAssemblyNamespace" />
+      <MemberSignature Language="VB.NET" Value="ImportAssemblyNamespace" />
+      <MemberSignature Language="F#" Value="ImportAssemblyNamespace = 2" Usage="System.Reflection.Metadata.ImportDefinitionKind.ImportAssemblyNamespace" />
+      <MemberSignature Language="C++ CLI" Value="ImportAssemblyNamespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -102,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -110,6 +133,9 @@
       <MemberSignature Language="C#" Value="ImportAssemblyReferenceAlias" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind ImportAssemblyReferenceAlias = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.ImportAssemblyReferenceAlias" />
+      <MemberSignature Language="VB.NET" Value="ImportAssemblyReferenceAlias" />
+      <MemberSignature Language="F#" Value="ImportAssemblyReferenceAlias = 5" Usage="System.Reflection.Metadata.ImportDefinitionKind.ImportAssemblyReferenceAlias" />
+      <MemberSignature Language="C++ CLI" Value="ImportAssemblyReferenceAlias" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -120,6 +146,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -128,6 +155,9 @@
       <MemberSignature Language="C#" Value="ImportNamespace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind ImportNamespace = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.ImportNamespace" />
+      <MemberSignature Language="VB.NET" Value="ImportNamespace" />
+      <MemberSignature Language="F#" Value="ImportNamespace = 1" Usage="System.Reflection.Metadata.ImportDefinitionKind.ImportNamespace" />
+      <MemberSignature Language="C++ CLI" Value="ImportNamespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -138,6 +168,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -146,6 +177,9 @@
       <MemberSignature Language="C#" Value="ImportType" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind ImportType = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.ImportType" />
+      <MemberSignature Language="VB.NET" Value="ImportType" />
+      <MemberSignature Language="F#" Value="ImportType = 3" Usage="System.Reflection.Metadata.ImportDefinitionKind.ImportType" />
+      <MemberSignature Language="C++ CLI" Value="ImportType" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -156,6 +190,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>
@@ -164,6 +199,9 @@
       <MemberSignature Language="C#" Value="ImportXmlNamespace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.Metadata.ImportDefinitionKind ImportXmlNamespace = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.Metadata.ImportDefinitionKind.ImportXmlNamespace" />
+      <MemberSignature Language="VB.NET" Value="ImportXmlNamespace" />
+      <MemberSignature Language="F#" Value="ImportXmlNamespace = 4" Usage="System.Reflection.Metadata.ImportDefinitionKind.ImportXmlNamespace" />
+      <MemberSignature Language="C++ CLI" Value="ImportXmlNamespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -174,6 +212,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.Metadata.ImportDefinitionKind</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>To be added.</summary>
       </Docs>

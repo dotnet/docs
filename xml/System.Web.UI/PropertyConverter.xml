@@ -1,7 +1,10 @@
-<Type Name="PropertyConverter" FullName="System.Web.UI.PropertyConverter">
+﻿<Type Name="PropertyConverter" FullName="System.Web.UI.PropertyConverter">
   <TypeSignature Language="C#" Value="public static class PropertyConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit PropertyConverter extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PropertyConverter" />
+  <TypeSignature Language="VB.NET" Value="Public Class PropertyConverter" />
+  <TypeSignature Language="F#" Value="type PropertyConverter = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyConverter abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="public static object EnumFromString (Type enumType, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object EnumFromString(class System.Type enumType, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PropertyConverter.EnumFromString(System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EnumFromString (enumType As Type, value As String) As Object" />
+      <MemberSignature Language="F#" Value="static member EnumFromString : Type * string -&gt; obj" Usage="System.Web.UI.PropertyConverter.EnumFromString (enumType, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ EnumFromString(Type ^ enumType, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +81,9 @@
       <MemberSignature Language="C#" Value="public static string EnumToString (Type enumType, object enumValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string EnumToString(class System.Type enumType, object enumValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PropertyConverter.EnumToString(System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EnumToString (enumType As Type, enumValue As Object) As String" />
+      <MemberSignature Language="F#" Value="static member EnumToString : Type * obj -&gt; string" Usage="System.Web.UI.PropertyConverter.EnumToString (enumType, enumValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ EnumToString(Type ^ enumType, System::Object ^ enumValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -121,6 +130,9 @@
       <MemberSignature Language="C#" Value="public static object ObjectFromString (Type objType, System.Reflection.MemberInfo propertyInfo, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ObjectFromString(class System.Type objType, class System.Reflection.MemberInfo propertyInfo, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PropertyConverter.ObjectFromString(System.Type,System.Reflection.MemberInfo,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ObjectFromString (objType As Type, propertyInfo As MemberInfo, value As String) As Object" />
+      <MemberSignature Language="F#" Value="static member ObjectFromString : Type * System.Reflection.MemberInfo * string -&gt; obj" Usage="System.Web.UI.PropertyConverter.ObjectFromString (objType, propertyInfo, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ObjectFromString(Type ^ objType, System::Reflection::MemberInfo ^ propertyInfo, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

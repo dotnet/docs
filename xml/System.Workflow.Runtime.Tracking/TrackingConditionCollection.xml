@@ -1,7 +1,10 @@
-<Type Name="TrackingConditionCollection" FullName="System.Workflow.Runtime.Tracking.TrackingConditionCollection">
+﻿<Type Name="TrackingConditionCollection" FullName="System.Workflow.Runtime.Tracking.TrackingConditionCollection">
   <TypeSignature Language="C#" Value="public class TrackingConditionCollection : System.Collections.Generic.List&lt;System.Workflow.Runtime.Tracking.TrackingCondition&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TrackingConditionCollection extends System.Collections.Generic.List`1&lt;class System.Workflow.Runtime.Tracking.TrackingCondition&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.TrackingConditionCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class TrackingConditionCollection&#xA;Inherits List(Of TrackingCondition)" />
+  <TypeSignature Language="F#" Value="type TrackingConditionCollection = class&#xA;    inherit List&lt;TrackingCondition&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TrackingConditionCollection : System::Collections::Generic::List&lt;System::Workflow::Runtime::Tracking::TrackingCondition ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,10 +35,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingConditionCollection" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TrackingConditionCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingConditionCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TrackingConditionCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -58,6 +72,9 @@
       <MemberSignature Language="C#" Value="public TrackingConditionCollection (System.Collections.Generic.IEnumerable&lt;System.Workflow.Runtime.Tracking.TrackingCondition&gt; conditions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Workflow.Runtime.Tracking.TrackingCondition&gt; conditions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.Tracking.TrackingConditionCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.Runtime.Tracking.TrackingCondition})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (conditions As IEnumerable(Of TrackingCondition))" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Runtime.Tracking.TrackingConditionCollection : seq&lt;System.Workflow.Runtime.Tracking.TrackingCondition&gt; -&gt; System.Workflow.Runtime.Tracking.TrackingConditionCollection" Usage="new System.Workflow.Runtime.Tracking.TrackingConditionCollection conditions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TrackingConditionCollection(System::Collections::Generic::IEnumerable&lt;System::Workflow::Runtime::Tracking::TrackingCondition ^&gt; ^ conditions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -81,14 +98,5 @@
           <paramref name="conditions" /> is a null reference (Nothing in Visual Basic)</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Runtime.Tracking.TrackingConditionCollection" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

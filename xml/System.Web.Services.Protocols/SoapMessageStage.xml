@@ -1,7 +1,10 @@
-<Type Name="SoapMessageStage" FullName="System.Web.Services.Protocols.SoapMessageStage">
+﻿<Type Name="SoapMessageStage" FullName="System.Web.Services.Protocols.SoapMessageStage">
   <TypeSignature Language="C#" Value="public enum SoapMessageStage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SoapMessageStage extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapMessageStage" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SoapMessageStage" />
+  <TypeSignature Language="F#" Value="type SoapMessageStage = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SoapMessageStage" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="AfterDeserialize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.SoapMessageStage AfterDeserialize = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize" />
+      <MemberSignature Language="VB.NET" Value="AfterDeserialize" />
+      <MemberSignature Language="F#" Value="AfterDeserialize = 8" Usage="System.Web.Services.Protocols.SoapMessageStage.AfterDeserialize" />
+      <MemberSignature Language="C++ CLI" Value="AfterDeserialize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.SoapMessageStage</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The stage just after a <see cref="T:System.Web.Services.Protocols.SoapMessage" /> is deserialized from a SOAP message into an object.</summary>
         <remarks>
@@ -64,6 +71,9 @@
       <MemberSignature Language="C#" Value="AfterSerialize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.SoapMessageStage AfterSerialize = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapMessageStage.AfterSerialize" />
+      <MemberSignature Language="VB.NET" Value="AfterSerialize" />
+      <MemberSignature Language="F#" Value="AfterSerialize = 2" Usage="System.Web.Services.Protocols.SoapMessageStage.AfterSerialize" />
+      <MemberSignature Language="C++ CLI" Value="AfterSerialize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -73,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.SoapMessageStage</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The stage just after a <see cref="T:System.Web.Services.Protocols.SoapMessage" /> is serialized, but before the SOAP message is sent over the wire.</summary>
         <remarks>
@@ -91,6 +102,9 @@
       <MemberSignature Language="C#" Value="BeforeDeserialize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.SoapMessageStage BeforeDeserialize = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapMessageStage.BeforeDeserialize" />
+      <MemberSignature Language="VB.NET" Value="BeforeDeserialize" />
+      <MemberSignature Language="F#" Value="BeforeDeserialize = 4" Usage="System.Web.Services.Protocols.SoapMessageStage.BeforeDeserialize" />
+      <MemberSignature Language="C++ CLI" Value="BeforeDeserialize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -100,6 +114,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.SoapMessageStage</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The stage just before a <see cref="T:System.Web.Services.Protocols.SoapMessage" /> is deserialized from the SOAP message sent across the network into an object.</summary>
         <remarks>
@@ -118,6 +133,9 @@
       <MemberSignature Language="C#" Value="BeforeSerialize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Services.Protocols.SoapMessageStage BeforeSerialize = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize" />
+      <MemberSignature Language="VB.NET" Value="BeforeSerialize" />
+      <MemberSignature Language="F#" Value="BeforeSerialize = 1" Usage="System.Web.Services.Protocols.SoapMessageStage.BeforeSerialize" />
+      <MemberSignature Language="C++ CLI" Value="BeforeSerialize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -127,6 +145,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Services.Protocols.SoapMessageStage</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The stage just prior to a <see cref="T:System.Web.Services.Protocols.SoapMessage" /> being serialized.</summary>
         <remarks>

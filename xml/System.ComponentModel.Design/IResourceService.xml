@@ -1,7 +1,10 @@
-<Type Name="IResourceService" FullName="System.ComponentModel.Design.IResourceService">
+﻿<Type Name="IResourceService" FullName="System.ComponentModel.Design.IResourceService">
   <TypeSignature Language="C#" Value="public interface IResourceService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IResourceService" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IResourceService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IResourceService" />
+  <TypeSignature Language="F#" Value="type IResourceService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IResourceService" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="public System.Resources.IResourceReader GetResourceReader (System.Globalization.CultureInfo info);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Resources.IResourceReader GetResourceReader(class System.Globalization.CultureInfo info) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IResourceService.GetResourceReader(System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResourceReader (info As CultureInfo) As IResourceReader" />
+      <MemberSignature Language="F#" Value="abstract member GetResourceReader : System.Globalization.CultureInfo -&gt; System.Resources.IResourceReader" Usage="iResourceService.GetResourceReader info" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Resources::IResourceReader ^ GetResourceReader(System::Globalization::CultureInfo ^ info);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -81,6 +87,9 @@
       <MemberSignature Language="C#" Value="public System.Resources.IResourceWriter GetResourceWriter (System.Globalization.CultureInfo info);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Resources.IResourceWriter GetResourceWriter(class System.Globalization.CultureInfo info) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IResourceService.GetResourceWriter(System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetResourceWriter (info As CultureInfo) As IResourceWriter" />
+      <MemberSignature Language="F#" Value="abstract member GetResourceWriter : System.Globalization.CultureInfo -&gt; System.Resources.IResourceWriter" Usage="iResourceService.GetResourceWriter info" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Resources::IResourceWriter ^ GetResourceWriter(System::Globalization::CultureInfo ^ info);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

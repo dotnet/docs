@@ -1,7 +1,10 @@
-<Type Name="ModelTreeManager" FullName="System.Activities.Presentation.Model.ModelTreeManager">
+﻿<Type Name="ModelTreeManager" FullName="System.Activities.Presentation.Model.ModelTreeManager">
   <TypeSignature Language="C#" Value="public class ModelTreeManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ModelTreeManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Model.ModelTreeManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class ModelTreeManager" />
+  <TypeSignature Language="F#" Value="type ModelTreeManager = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ModelTreeManager" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public ModelTreeManager (System.Activities.Presentation.EditingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Presentation.EditingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelTreeManager.#ctor(System.Activities.Presentation.EditingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As EditingContext)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.Model.ModelTreeManager : System.Activities.Presentation.EditingContext -&gt; System.Activities.Presentation.Model.ModelTreeManager" Usage="new System.Activities.Presentation.Model.ModelTreeManager context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ModelTreeManager(System::Activities::Presentation::EditingContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -44,6 +50,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.Model.ModelItem CreateModelItem (System.Activities.Presentation.Model.ModelItem parent, object instance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Presentation.Model.ModelItem CreateModelItem(class System.Activities.Presentation.Model.ModelItem parent, object instance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelTreeManager.CreateModelItem(System.Activities.Presentation.Model.ModelItem,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateModelItem (parent As ModelItem, instance As Object) As ModelItem" />
+      <MemberSignature Language="F#" Value="member this.CreateModelItem : System.Activities.Presentation.Model.ModelItem * obj -&gt; System.Activities.Presentation.Model.ModelItem" Usage="modelTreeManager.CreateModelItem (parent, instance)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Presentation::Model::ModelItem ^ CreateModelItem(System::Activities::Presentation::Model::ModelItem ^ parent, System::Object ^ instance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -68,6 +77,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Activities.Presentation.Model.EditingScopeEventArgs&gt; EditingScopeCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Activities.Presentation.Model.EditingScopeEventArgs&gt; EditingScopeCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Activities.Presentation.Model.ModelTreeManager.EditingScopeCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Event EditingScopeCompleted As EventHandler(Of EditingScopeEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.EditingScopeCompleted : EventHandler&lt;System.Activities.Presentation.Model.EditingScopeEventArgs&gt; " Usage="member this.EditingScopeCompleted : System.EventHandler&lt;System.Activities.Presentation.Model.EditingScopeEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Activities::Presentation::Model::EditingScopeEventArgs ^&gt; ^ EditingScopeCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -85,6 +97,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.Model.ModelItem GetModelItem (object instance, bool shouldExpandModelTree);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Activities.Presentation.Model.ModelItem GetModelItem(object instance, bool shouldExpandModelTree) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelTreeManager.GetModelItem(System.Object,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetModelItem (instance As Object, shouldExpandModelTree As Boolean) As ModelItem" />
+      <MemberSignature Language="F#" Value="member this.GetModelItem : obj * bool -&gt; System.Activities.Presentation.Model.ModelItem" Usage="modelTreeManager.GetModelItem (instance, shouldExpandModelTree)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Activities::Presentation::Model::ModelItem ^ GetModelItem(System::Object ^ instance, bool shouldExpandModelTree);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -110,6 +125,9 @@
       <MemberSignature Language="C#" Value="public void Load (object rootInstance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(object rootInstance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Model.ModelTreeManager.Load(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (rootInstance As Object)" />
+      <MemberSignature Language="F#" Value="member this.Load : obj -&gt; unit" Usage="modelTreeManager.Load rootInstance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Object ^ rootInstance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -131,6 +149,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Presentation.Model.ModelItem Root { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Presentation.Model.ModelItem Root" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Model.ModelTreeManager.Root" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Root As ModelItem" />
+      <MemberSignature Language="F#" Value="member this.Root : System.Activities.Presentation.Model.ModelItem" Usage="System.Activities.Presentation.Model.ModelTreeManager.Root" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Presentation::Model::ModelItem ^ Root { System::Activities::Presentation::Model::ModelItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

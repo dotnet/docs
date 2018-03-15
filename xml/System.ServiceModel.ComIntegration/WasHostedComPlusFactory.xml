@@ -1,7 +1,10 @@
-<Type Name="WasHostedComPlusFactory" FullName="System.ServiceModel.ComIntegration.WasHostedComPlusFactory">
+﻿<Type Name="WasHostedComPlusFactory" FullName="System.ServiceModel.ComIntegration.WasHostedComPlusFactory">
   <TypeSignature Language="C#" Value="public sealed class WasHostedComPlusFactory : System.ServiceModel.Activation.ServiceHostFactoryBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WasHostedComPlusFactory extends System.ServiceModel.Activation.ServiceHostFactoryBase" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.ComIntegration.WasHostedComPlusFactory" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WasHostedComPlusFactory&#xA;Inherits ServiceHostFactoryBase" />
+  <TypeSignature Language="F#" Value="type WasHostedComPlusFactory = class&#xA;    inherit ServiceHostFactoryBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WasHostedComPlusFactory sealed : System::ServiceModel::Activation::ServiceHostFactoryBase" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public WasHostedComPlusFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ComIntegration.WasHostedComPlusFactory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WasHostedComPlusFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public override System.ServiceModel.ServiceHostBase CreateServiceHost (string constructorString, Uri[] baseAddresses);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ServiceModel.ServiceHostBase CreateServiceHost(string constructorString, class System.Uri[] baseAddresses) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.ComIntegration.WasHostedComPlusFactory.CreateServiceHost(System.String,System.Uri[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateServiceHost (constructorString As String, baseAddresses As Uri()) As ServiceHostBase" />
+      <MemberSignature Language="F#" Value="override this.CreateServiceHost : string * Uri[] -&gt; System.ServiceModel.ServiceHostBase" Usage="wasHostedComPlusFactory.CreateServiceHost (constructorString, baseAddresses)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ServiceModel::ServiceHostBase ^ CreateServiceHost(System::String ^ constructorString, cli::array &lt;Uri ^&gt; ^ baseAddresses);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="MutexRights" FullName="System.Security.AccessControl.MutexRights">
+﻿<Type Name="MutexRights" FullName="System.Security.AccessControl.MutexRights">
   <TypeSignature Language="C#" Value="public enum MutexRights" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MutexRights extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.MutexRights" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MutexRights" />
+  <TypeSignature Language="F#" Value="type MutexRights = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MutexRights" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +55,9 @@
       <MemberSignature Language="C#" Value="ChangePermissions" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.MutexRights ChangePermissions = int32(262144)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.MutexRights.ChangePermissions" />
+      <MemberSignature Language="VB.NET" Value="ChangePermissions" />
+      <MemberSignature Language="F#" Value="ChangePermissions = 262144" Usage="System.Security.AccessControl.MutexRights.ChangePermissions" />
+      <MemberSignature Language="C++ CLI" Value="ChangePermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -66,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.MutexRights</ReturnType>
       </ReturnValue>
+      <MemberValue>262144</MemberValue>
       <Docs>
         <summary>The right to change the security and audit rules associated with a named mutex.</summary>
       </Docs>
@@ -74,6 +81,9 @@
       <MemberSignature Language="C#" Value="Delete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.MutexRights Delete = int32(65536)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.MutexRights.Delete" />
+      <MemberSignature Language="VB.NET" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 65536" Usage="System.Security.AccessControl.MutexRights.Delete" />
+      <MemberSignature Language="C++ CLI" Value="Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -88,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.MutexRights</ReturnType>
       </ReturnValue>
+      <MemberValue>65536</MemberValue>
       <Docs>
         <summary>The right to delete a named mutex.</summary>
       </Docs>
@@ -96,6 +107,9 @@
       <MemberSignature Language="C#" Value="FullControl" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.MutexRights FullControl = int32(2031617)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.MutexRights.FullControl" />
+      <MemberSignature Language="VB.NET" Value="FullControl" />
+      <MemberSignature Language="F#" Value="FullControl = 2031617" Usage="System.Security.AccessControl.MutexRights.FullControl" />
+      <MemberSignature Language="C++ CLI" Value="FullControl" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -110,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.MutexRights</ReturnType>
       </ReturnValue>
+      <MemberValue>2031617</MemberValue>
       <Docs>
         <summary>The right to exert full control over a named mutex, and to modify its access rules and audit rules.</summary>
       </Docs>
@@ -118,6 +133,9 @@
       <MemberSignature Language="C#" Value="Modify" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.MutexRights Modify = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.MutexRights.Modify" />
+      <MemberSignature Language="VB.NET" Value="Modify" />
+      <MemberSignature Language="F#" Value="Modify = 1" Usage="System.Security.AccessControl.MutexRights.Modify" />
+      <MemberSignature Language="C++ CLI" Value="Modify" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -132,6 +150,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.MutexRights</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The right to release a named mutex.</summary>
       </Docs>
@@ -140,6 +159,9 @@
       <MemberSignature Language="C#" Value="ReadPermissions" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.MutexRights ReadPermissions = int32(131072)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.MutexRights.ReadPermissions" />
+      <MemberSignature Language="VB.NET" Value="ReadPermissions" />
+      <MemberSignature Language="F#" Value="ReadPermissions = 131072" Usage="System.Security.AccessControl.MutexRights.ReadPermissions" />
+      <MemberSignature Language="C++ CLI" Value="ReadPermissions" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -154,6 +176,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.MutexRights</ReturnType>
       </ReturnValue>
+      <MemberValue>131072</MemberValue>
       <Docs>
         <summary>The right to open and copy the access rules and audit rules for a named mutex.</summary>
       </Docs>
@@ -162,6 +185,9 @@
       <MemberSignature Language="C#" Value="Synchronize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.MutexRights Synchronize = int32(1048576)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.MutexRights.Synchronize" />
+      <MemberSignature Language="VB.NET" Value="Synchronize" />
+      <MemberSignature Language="F#" Value="Synchronize = 1048576" Usage="System.Security.AccessControl.MutexRights.Synchronize" />
+      <MemberSignature Language="C++ CLI" Value="Synchronize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -176,6 +202,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.MutexRights</ReturnType>
       </ReturnValue>
+      <MemberValue>1048576</MemberValue>
       <Docs>
         <summary>The right to wait on a named mutex.</summary>
       </Docs>
@@ -184,6 +211,9 @@
       <MemberSignature Language="C#" Value="TakeOwnership" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.MutexRights TakeOwnership = int32(524288)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.MutexRights.TakeOwnership" />
+      <MemberSignature Language="VB.NET" Value="TakeOwnership" />
+      <MemberSignature Language="F#" Value="TakeOwnership = 524288" Usage="System.Security.AccessControl.MutexRights.TakeOwnership" />
+      <MemberSignature Language="C++ CLI" Value="TakeOwnership" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
@@ -198,6 +228,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.MutexRights</ReturnType>
       </ReturnValue>
+      <MemberValue>524288</MemberValue>
       <Docs>
         <summary>The right to change the owner of a named mutex.</summary>
       </Docs>

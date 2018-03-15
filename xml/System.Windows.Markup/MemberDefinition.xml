@@ -1,7 +1,10 @@
-<Type Name="MemberDefinition" FullName="System.Windows.Markup.MemberDefinition">
+﻿<Type Name="MemberDefinition" FullName="System.Windows.Markup.MemberDefinition">
   <TypeSignature Language="C#" Value="public abstract class MemberDefinition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MemberDefinition extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Markup.MemberDefinition" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class MemberDefinition" />
+  <TypeSignature Language="F#" Value="type MemberDefinition = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MemberDefinition abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,8 @@
       <MemberSignature Language="C#" Value="protected MemberDefinition ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Markup.MemberDefinition.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; MemberDefinition();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -44,6 +49,9 @@
       <MemberSignature Language="C#" Value="public abstract string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Markup.MemberDefinition.Name" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Markup.MemberDefinition.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>

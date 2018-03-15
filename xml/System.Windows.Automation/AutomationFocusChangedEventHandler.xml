@@ -1,7 +1,10 @@
-<Type Name="AutomationFocusChangedEventHandler" FullName="System.Windows.Automation.AutomationFocusChangedEventHandler">
+﻿<Type Name="AutomationFocusChangedEventHandler" FullName="System.Windows.Automation.AutomationFocusChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void AutomationFocusChangedEventHandler(object sender, AutomationFocusChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutomationFocusChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.AutomationFocusChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub AutomationFocusChangedEventHandler(sender As Object, e As AutomationFocusChangedEventArgs)" />
+  <TypeSignature Language="F#" Value="type AutomationFocusChangedEventHandler = delegate of obj * AutomationFocusChangedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void AutomationFocusChangedEventHandler(System::Object ^ sender, AutomationFocusChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

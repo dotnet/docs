@@ -1,7 +1,10 @@
-<Type Name="TemplateBuilder" FullName="System.Web.UI.TemplateBuilder">
+﻿<Type Name="TemplateBuilder" FullName="System.Web.UI.TemplateBuilder">
   <TypeSignature Language="C#" Value="public class TemplateBuilder : System.Web.UI.ControlBuilder, System.Web.UI.ITemplate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplateBuilder extends System.Web.UI.ControlBuilder implements class System.Web.UI.ITemplate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.TemplateBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemplateBuilder&#xA;Inherits ControlBuilder&#xA;Implements ITemplate" />
+  <TypeSignature Language="F#" Value="type TemplateBuilder = class&#xA;    inherit ControlBuilder&#xA;    interface ITemplate" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplateBuilder : System::Web::UI::ControlBuilder, System::Web::UI::ITemplate" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,8 @@
       <MemberSignature Language="C#" Value="public TemplateBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +51,9 @@
       <MemberSignature Language="C#" Value="public override object BuildObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object BuildObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateBuilder.BuildObject" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function BuildObject () As Object" />
+      <MemberSignature Language="F#" Value="override this.BuildObject : unit -&gt; obj" Usage="templateBuilder.BuildObject " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ BuildObject();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +73,9 @@
       <MemberSignature Language="C#" Value="public override void CloseControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CloseControl() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateBuilder.CloseControl" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CloseControl ()" />
+      <MemberSignature Language="F#" Value="override this.CloseControl : unit -&gt; unit" Usage="templateBuilder.CloseControl " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CloseControl();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -84,6 +95,8 @@
       <MemberSignature Language="C#" Value="public override void Init (System.Web.UI.TemplateParser parser, System.Web.UI.ControlBuilder parentBuilder, Type type, string tagName, string ID, System.Collections.IDictionary attribs);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Init(class System.Web.UI.TemplateParser parser, class System.Web.UI.ControlBuilder parentBuilder, class System.Type type, string tagName, string ID, class System.Collections.IDictionary attribs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateBuilder.Init(System.Web.UI.TemplateParser,System.Web.UI.ControlBuilder,System.Type,System.String,System.String,System.Collections.IDictionary)" />
+      <MemberSignature Language="F#" Value="override this.Init : System.Web.UI.TemplateParser * System.Web.UI.ControlBuilder * Type * string * string * System.Collections.IDictionary -&gt; unit" Usage="templateBuilder.Init (parser, parentBuilder, type, tagName, ID, attribs)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Init(System::Web::UI::TemplateParser ^ parser, System::Web::UI::ControlBuilder ^ parentBuilder, Type ^ type, System::String ^ tagName, System::String ^ ID, System::Collections::IDictionary ^ attribs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -120,7 +133,13 @@
       <MemberSignature Language="C#" Value="public virtual void InstantiateIn (System.Web.UI.Control container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InstantiateIn(class System.Web.UI.Control container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateBuilder.InstantiateIn(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub InstantiateIn (container As Control)" />
+      <MemberSignature Language="F#" Value="abstract member InstantiateIn : System.Web.UI.Control -&gt; unit&#xA;override this.InstantiateIn : System.Web.UI.Control -&gt; unit" Usage="templateBuilder.InstantiateIn container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InstantiateIn(System::Web::UI::Control ^ container);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.ITemplate.InstantiateIn(System.Web.UI.Control)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -149,6 +168,9 @@
       <MemberSignature Language="C#" Value="public override bool NeedsTagInnerText ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool NeedsTagInnerText() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateBuilder.NeedsTagInnerText" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function NeedsTagInnerText () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.NeedsTagInnerText : unit -&gt; bool" Usage="templateBuilder.NeedsTagInnerText " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool NeedsTagInnerText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -177,6 +199,9 @@
       <MemberSignature Language="C#" Value="public override void SetTagInnerText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetTagInnerText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateBuilder.SetTagInnerText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetTagInnerText (text As String)" />
+      <MemberSignature Language="F#" Value="override this.SetTagInnerText : string -&gt; unit" Usage="templateBuilder.SetTagInnerText text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetTagInnerText(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -206,6 +231,9 @@
       <MemberSignature Language="C#" Value="public virtual string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateBuilder.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.TemplateBuilder.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

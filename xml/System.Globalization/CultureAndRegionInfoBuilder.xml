@@ -1,7 +1,10 @@
-<Type Name="CultureAndRegionInfoBuilder" FullName="System.Globalization.CultureAndRegionInfoBuilder">
+﻿<Type Name="CultureAndRegionInfoBuilder" FullName="System.Globalization.CultureAndRegionInfoBuilder">
   <TypeSignature Language="C#" Value="public sealed class CultureAndRegionInfoBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CultureAndRegionInfoBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Globalization.CultureAndRegionInfoBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CultureAndRegionInfoBuilder" />
+  <TypeSignature Language="F#" Value="type CultureAndRegionInfoBuilder = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CultureAndRegionInfoBuilder sealed" />
   <AssemblyInfo>
     <AssemblyName>sysglobl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,6 +96,9 @@
       <MemberSignature Language="C#" Value="public CultureAndRegionInfoBuilder (string cultureName, System.Globalization.CultureAndRegionModifiers flags);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string cultureName, valuetype System.Globalization.CultureAndRegionModifiers flags) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureAndRegionInfoBuilder.#ctor(System.String,System.Globalization.CultureAndRegionModifiers)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cultureName As String, flags As CultureAndRegionModifiers)" />
+      <MemberSignature Language="F#" Value="new System.Globalization.CultureAndRegionInfoBuilder : string * System.Globalization.CultureAndRegionModifiers -&gt; System.Globalization.CultureAndRegionInfoBuilder" Usage="new System.Globalization.CultureAndRegionInfoBuilder (cultureName, flags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CultureAndRegionInfoBuilder(System::String ^ cultureName, System::Globalization::CultureAndRegionModifiers flags);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -198,6 +204,9 @@
       <MemberSignature Language="C#" Value="public System.Globalization.Calendar[] AvailableCalendars { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.Calendar[] AvailableCalendars" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.AvailableCalendars" />
+      <MemberSignature Language="VB.NET" Value="Public Property AvailableCalendars As Calendar()" />
+      <MemberSignature Language="F#" Value="member this.AvailableCalendars : System.Globalization.Calendar[] with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.AvailableCalendars" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Globalization::Calendar ^&gt; ^ AvailableCalendars { cli::array &lt;System::Globalization::Calendar ^&gt; ^ get(); void set(cli::array &lt;System::Globalization::Calendar ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -234,6 +243,9 @@
       <MemberSignature Language="C#" Value="public System.Globalization.CompareInfo CompareInfo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CompareInfo CompareInfo" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.CompareInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property CompareInfo As CompareInfo" />
+      <MemberSignature Language="F#" Value="member this.CompareInfo : System.Globalization.CompareInfo with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.CompareInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CompareInfo ^ CompareInfo { System::Globalization::CompareInfo ^ get(); void set(System::Globalization::CompareInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -264,6 +276,9 @@
       <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo ConsoleFallbackUICulture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo ConsoleFallbackUICulture" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.ConsoleFallbackUICulture" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConsoleFallbackUICulture As CultureInfo" />
+      <MemberSignature Language="F#" Value="member this.ConsoleFallbackUICulture : System.Globalization.CultureInfo with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.ConsoleFallbackUICulture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ ConsoleFallbackUICulture { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -294,6 +309,9 @@
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureAndRegionInfoBuilder CreateFromLdml (string xmlFileName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.CultureAndRegionInfoBuilder CreateFromLdml(string xmlFileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureAndRegionInfoBuilder.CreateFromLdml(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFromLdml (xmlFileName As String) As CultureAndRegionInfoBuilder" />
+      <MemberSignature Language="F#" Value="static member CreateFromLdml : string -&gt; System.Globalization.CultureAndRegionInfoBuilder" Usage="System.Globalization.CultureAndRegionInfoBuilder.CreateFromLdml xmlFileName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::CultureAndRegionInfoBuilder ^ CreateFromLdml(System::String ^ xmlFileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -360,6 +378,9 @@
       <MemberSignature Language="C#" Value="public string CultureEnglishName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CultureEnglishName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.CultureEnglishName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CultureEnglishName As String" />
+      <MemberSignature Language="F#" Value="member this.CultureEnglishName : string with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.CultureEnglishName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CultureEnglishName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -400,6 +421,9 @@
       <MemberSignature Language="C#" Value="public string CultureName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CultureName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.CultureName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CultureName As String" />
+      <MemberSignature Language="F#" Value="member this.CultureName : string" Usage="System.Globalization.CultureAndRegionInfoBuilder.CultureName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CultureName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -436,6 +460,9 @@
       <MemberSignature Language="C#" Value="public string CultureNativeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CultureNativeName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.CultureNativeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CultureNativeName As String" />
+      <MemberSignature Language="F#" Value="member this.CultureNativeName : string with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.CultureNativeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CultureNativeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -476,6 +503,9 @@
       <MemberSignature Language="C#" Value="public System.Globalization.CultureTypes CultureTypes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Globalization.CultureTypes CultureTypes" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.CultureTypes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CultureTypes As CultureTypes" />
+      <MemberSignature Language="F#" Value="member this.CultureTypes : System.Globalization.CultureTypes" Usage="System.Globalization.CultureAndRegionInfoBuilder.CultureTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureTypes CultureTypes { System::Globalization::CultureTypes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -497,6 +527,9 @@
       <MemberSignature Language="C#" Value="public string CurrencyEnglishName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CurrencyEnglishName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.CurrencyEnglishName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CurrencyEnglishName As String" />
+      <MemberSignature Language="F#" Value="member this.CurrencyEnglishName : string with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.CurrencyEnglishName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CurrencyEnglishName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -525,6 +558,9 @@
       <MemberSignature Language="C#" Value="public string CurrencyNativeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CurrencyNativeName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.CurrencyNativeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CurrencyNativeName As String" />
+      <MemberSignature Language="F#" Value="member this.CurrencyNativeName : string with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.CurrencyNativeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CurrencyNativeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -553,6 +589,9 @@
       <MemberSignature Language="C#" Value="public int GeoId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 GeoId" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.GeoId" />
+      <MemberSignature Language="VB.NET" Value="Public Property GeoId As Integer" />
+      <MemberSignature Language="F#" Value="member this.GeoId : int with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.GeoId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GeoId { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -581,6 +620,9 @@
       <MemberSignature Language="C#" Value="public System.Globalization.DateTimeFormatInfo GregorianDateTimeFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.DateTimeFormatInfo GregorianDateTimeFormat" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.GregorianDateTimeFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property GregorianDateTimeFormat As DateTimeFormatInfo" />
+      <MemberSignature Language="F#" Value="member this.GregorianDateTimeFormat : System.Globalization.DateTimeFormatInfo with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.GregorianDateTimeFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::DateTimeFormatInfo ^ GregorianDateTimeFormat { System::Globalization::DateTimeFormatInfo ^ get(); void set(System::Globalization::DateTimeFormatInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -609,6 +651,9 @@
       <MemberSignature Language="C#" Value="public string IetfLanguageTag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string IetfLanguageTag" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.IetfLanguageTag" />
+      <MemberSignature Language="VB.NET" Value="Public Property IetfLanguageTag As String" />
+      <MemberSignature Language="F#" Value="member this.IetfLanguageTag : string with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.IetfLanguageTag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ IetfLanguageTag { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -644,6 +689,9 @@
       <MemberSignature Language="C#" Value="public bool IsMetric { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsMetric" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.IsMetric" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsMetric As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsMetric : bool with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.IsMetric" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsMetric { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -664,6 +712,9 @@
       <MemberSignature Language="C#" Value="public string ISOCurrencySymbol { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ISOCurrencySymbol" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.ISOCurrencySymbol" />
+      <MemberSignature Language="VB.NET" Value="Public Property ISOCurrencySymbol As String" />
+      <MemberSignature Language="F#" Value="member this.ISOCurrencySymbol : string with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.ISOCurrencySymbol" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ISOCurrencySymbol { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -694,6 +745,9 @@
       <MemberSignature Language="C#" Value="public bool IsRightToLeft { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRightToLeft" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.IsRightToLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsRightToLeft As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRightToLeft : bool with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.IsRightToLeft" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRightToLeft { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -722,6 +776,9 @@
       <MemberSignature Language="C#" Value="public int KeyboardLayoutId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 KeyboardLayoutId" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.KeyboardLayoutId" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeyboardLayoutId As Integer" />
+      <MemberSignature Language="F#" Value="member this.KeyboardLayoutId : int with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.KeyboardLayoutId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int KeyboardLayoutId { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -750,6 +807,9 @@
       <MemberSignature Language="C#" Value="public int LCID { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LCID" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.LCID" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LCID As Integer" />
+      <MemberSignature Language="F#" Value="member this.LCID : int" Usage="System.Globalization.CultureAndRegionInfoBuilder.LCID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LCID { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -777,6 +837,9 @@
       <MemberSignature Language="C#" Value="public void LoadDataFromCultureInfo (System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadDataFromCultureInfo(class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureAndRegionInfoBuilder.LoadDataFromCultureInfo(System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadDataFromCultureInfo (culture As CultureInfo)" />
+      <MemberSignature Language="F#" Value="member this.LoadDataFromCultureInfo : System.Globalization.CultureInfo -&gt; unit" Usage="cultureAndRegionInfoBuilder.LoadDataFromCultureInfo culture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadDataFromCultureInfo(System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -800,6 +863,9 @@
       <MemberSignature Language="C#" Value="public void LoadDataFromRegionInfo (System.Globalization.RegionInfo region);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadDataFromRegionInfo(class System.Globalization.RegionInfo region) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureAndRegionInfoBuilder.LoadDataFromRegionInfo(System.Globalization.RegionInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadDataFromRegionInfo (region As RegionInfo)" />
+      <MemberSignature Language="F#" Value="member this.LoadDataFromRegionInfo : System.Globalization.RegionInfo -&gt; unit" Usage="cultureAndRegionInfoBuilder.LoadDataFromRegionInfo region" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadDataFromRegionInfo(System::Globalization::RegionInfo ^ region);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -824,6 +890,9 @@
       <MemberSignature Language="C#" Value="public System.Globalization.NumberFormatInfo NumberFormat { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.NumberFormatInfo NumberFormat" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.NumberFormat" />
+      <MemberSignature Language="VB.NET" Value="Public Property NumberFormat As NumberFormatInfo" />
+      <MemberSignature Language="F#" Value="member this.NumberFormat : System.Globalization.NumberFormatInfo with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.NumberFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::NumberFormatInfo ^ NumberFormat { System::Globalization::NumberFormatInfo ^ get(); void set(System::Globalization::NumberFormatInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -856,6 +925,9 @@
       <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo Parent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo Parent" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parent As CultureInfo" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Globalization.CultureInfo with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.Parent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ Parent { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -894,6 +966,9 @@
       <MemberSignature Language="C#" Value="public string RegionEnglishName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RegionEnglishName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.RegionEnglishName" />
+      <MemberSignature Language="VB.NET" Value="Public Property RegionEnglishName As String" />
+      <MemberSignature Language="F#" Value="member this.RegionEnglishName : string with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.RegionEnglishName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RegionEnglishName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -924,6 +999,9 @@
       <MemberSignature Language="C#" Value="public string RegionName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RegionName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.RegionName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RegionName As String" />
+      <MemberSignature Language="F#" Value="member this.RegionName : string" Usage="System.Globalization.CultureAndRegionInfoBuilder.RegionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RegionName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -952,6 +1030,9 @@
       <MemberSignature Language="C#" Value="public string RegionNativeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RegionNativeName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.RegionNativeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property RegionNativeName As String" />
+      <MemberSignature Language="F#" Value="member this.RegionNativeName : string with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.RegionNativeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RegionNativeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -980,6 +1061,9 @@
       <MemberSignature Language="C#" Value="public void Register ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Register() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureAndRegionInfoBuilder.Register" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Register ()" />
+      <MemberSignature Language="F#" Value="member this.Register : unit -&gt; unit" Usage="cultureAndRegionInfoBuilder.Register " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Register();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -1027,6 +1111,9 @@
       <MemberSignature Language="C#" Value="public void Save (string filename);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Save(string filename) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureAndRegionInfoBuilder.Save(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Save (filename As String)" />
+      <MemberSignature Language="F#" Value="member this.Save : string -&gt; unit" Usage="cultureAndRegionInfoBuilder.Save filename" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Save(System::String ^ filename);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -1071,6 +1158,9 @@
       <MemberSignature Language="C#" Value="public System.Globalization.TextInfo TextInfo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.TextInfo TextInfo" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.TextInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextInfo As TextInfo" />
+      <MemberSignature Language="F#" Value="member this.TextInfo : System.Globalization.TextInfo with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.TextInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::TextInfo ^ TextInfo { System::Globalization::TextInfo ^ get(); void set(System::Globalization::TextInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -1102,6 +1192,9 @@
       <MemberSignature Language="C#" Value="public string ThreeLetterISOLanguageName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ThreeLetterISOLanguageName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterISOLanguageName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThreeLetterISOLanguageName As String" />
+      <MemberSignature Language="F#" Value="member this.ThreeLetterISOLanguageName : string with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterISOLanguageName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ThreeLetterISOLanguageName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -1132,6 +1225,9 @@
       <MemberSignature Language="C#" Value="public string ThreeLetterISORegionName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ThreeLetterISORegionName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterISORegionName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThreeLetterISORegionName As String" />
+      <MemberSignature Language="F#" Value="member this.ThreeLetterISORegionName : string with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterISORegionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ThreeLetterISORegionName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -1166,6 +1262,9 @@
       <MemberSignature Language="C#" Value="public string ThreeLetterWindowsLanguageName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ThreeLetterWindowsLanguageName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterWindowsLanguageName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThreeLetterWindowsLanguageName As String" />
+      <MemberSignature Language="F#" Value="member this.ThreeLetterWindowsLanguageName : string with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterWindowsLanguageName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ThreeLetterWindowsLanguageName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -1197,6 +1296,9 @@
       <MemberSignature Language="C#" Value="public string ThreeLetterWindowsRegionName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ThreeLetterWindowsRegionName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterWindowsRegionName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ThreeLetterWindowsRegionName As String" />
+      <MemberSignature Language="F#" Value="member this.ThreeLetterWindowsRegionName : string with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.ThreeLetterWindowsRegionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ThreeLetterWindowsRegionName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -1228,6 +1330,9 @@
       <MemberSignature Language="C#" Value="public string TwoLetterISOLanguageName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TwoLetterISOLanguageName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.TwoLetterISOLanguageName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TwoLetterISOLanguageName As String" />
+      <MemberSignature Language="F#" Value="member this.TwoLetterISOLanguageName : string with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.TwoLetterISOLanguageName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TwoLetterISOLanguageName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -1258,6 +1363,9 @@
       <MemberSignature Language="C#" Value="public string TwoLetterISORegionName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TwoLetterISORegionName" />
       <MemberSignature Language="DocId" Value="P:System.Globalization.CultureAndRegionInfoBuilder.TwoLetterISORegionName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TwoLetterISORegionName As String" />
+      <MemberSignature Language="F#" Value="member this.TwoLetterISORegionName : string with get, set" Usage="System.Globalization.CultureAndRegionInfoBuilder.TwoLetterISORegionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TwoLetterISORegionName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>
@@ -1289,6 +1397,9 @@
       <MemberSignature Language="C#" Value="public static void Unregister (string cultureName);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Unregister(string cultureName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Globalization.CultureAndRegionInfoBuilder.Unregister(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Unregister (cultureName As String)" />
+      <MemberSignature Language="F#" Value="static member Unregister : string -&gt; unit" Usage="System.Globalization.CultureAndRegionInfoBuilder.Unregister cultureName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Unregister(System::String ^ cultureName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>sysglobl</AssemblyName>

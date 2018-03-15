@@ -1,7 +1,10 @@
-<Type Name="DataGridViewTextBoxEditingControl" FullName="System.Windows.Forms.DataGridViewTextBoxEditingControl">
+﻿<Type Name="DataGridViewTextBoxEditingControl" FullName="System.Windows.Forms.DataGridViewTextBoxEditingControl">
   <TypeSignature Language="C#" Value="public class DataGridViewTextBoxEditingControl : System.Windows.Forms.TextBox, System.Windows.Forms.IDataGridViewEditingControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewTextBoxEditingControl extends System.Windows.Forms.TextBox implements class System.Windows.Forms.IDataGridViewEditingControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewTextBoxEditingControl" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridViewTextBoxEditingControl&#xA;Inherits TextBox&#xA;Implements IDataGridViewEditingControl" />
+  <TypeSignature Language="F#" Value="type DataGridViewTextBoxEditingControl = class&#xA;    inherit TextBox&#xA;    interface IDataGridViewEditingControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewTextBoxEditingControl : System::Windows::Forms::TextBox, System::Windows::Forms::IDataGridViewEditingControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -48,6 +51,8 @@
       <MemberSignature Language="C#" Value="public DataGridViewTextBoxEditingControl ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxEditingControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewTextBoxEditingControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -76,7 +81,12 @@
       <MemberSignature Language="C#" Value="public virtual void ApplyCellStyleToEditingControl (System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyCellStyleToEditingControl(class System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxEditingControl.ApplyCellStyleToEditingControl(System.Windows.Forms.DataGridViewCellStyle)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyCellStyleToEditingControl : System.Windows.Forms.DataGridViewCellStyle -&gt; unit&#xA;override this.ApplyCellStyleToEditingControl : System.Windows.Forms.DataGridViewCellStyle -&gt; unit" Usage="dataGridViewTextBoxEditingControl.ApplyCellStyleToEditingControl dataGridViewCellStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyCellStyleToEditingControl(System::Windows::Forms::DataGridViewCellStyle ^ dataGridViewCellStyle);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Forms.IDataGridViewEditingControl.ApplyCellStyleToEditingControl(System.Windows.Forms.DataGridViewCellStyle)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -100,7 +110,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataGridView EditingControlDataGridView { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataGridView EditingControlDataGridView" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewTextBoxEditingControl.EditingControlDataGridView" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EditingControlDataGridView As DataGridView" />
+      <MemberSignature Language="F#" Value="member this.EditingControlDataGridView : System.Windows.Forms.DataGridView with get, set" Usage="System.Windows.Forms.DataGridViewTextBoxEditingControl.EditingControlDataGridView" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DataGridView ^ EditingControlDataGridView { System::Windows::Forms::DataGridView ^ get(); void set(System::Windows::Forms::DataGridView ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlDataGridView</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -128,7 +144,13 @@
       <MemberSignature Language="C#" Value="public virtual object EditingControlFormattedValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object EditingControlFormattedValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewTextBoxEditingControl.EditingControlFormattedValue" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EditingControlFormattedValue As Object" />
+      <MemberSignature Language="F#" Value="member this.EditingControlFormattedValue : obj with get, set" Usage="System.Windows.Forms.DataGridViewTextBoxEditingControl.EditingControlFormattedValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ EditingControlFormattedValue { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlFormattedValue</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -156,7 +178,13 @@
       <MemberSignature Language="C#" Value="public virtual int EditingControlRowIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 EditingControlRowIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewTextBoxEditingControl.EditingControlRowIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EditingControlRowIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.EditingControlRowIndex : int with get, set" Usage="System.Windows.Forms.DataGridViewTextBoxEditingControl.EditingControlRowIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int EditingControlRowIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlRowIndex</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -185,7 +213,13 @@
       <MemberSignature Language="C#" Value="public virtual bool EditingControlValueChanged { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EditingControlValueChanged" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewTextBoxEditingControl.EditingControlValueChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property EditingControlValueChanged As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EditingControlValueChanged : bool with get, set" Usage="System.Windows.Forms.DataGridViewTextBoxEditingControl.EditingControlValueChanged" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool EditingControlValueChanged { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Forms.IDataGridViewEditingControl.EditingControlValueChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -217,7 +251,13 @@
       <MemberSignature Language="C#" Value="public virtual bool EditingControlWantsInputKey (System.Windows.Forms.Keys keyData, bool dataGridViewWantsInputKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool EditingControlWantsInputKey(valuetype System.Windows.Forms.Keys keyData, bool dataGridViewWantsInputKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxEditingControl.EditingControlWantsInputKey(System.Windows.Forms.Keys,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function EditingControlWantsInputKey (keyData As Keys, dataGridViewWantsInputKey As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member EditingControlWantsInputKey : System.Windows.Forms.Keys * bool -&gt; bool&#xA;override this.EditingControlWantsInputKey : System.Windows.Forms.Keys * bool -&gt; bool" Usage="dataGridViewTextBoxEditingControl.EditingControlWantsInputKey (keyData, dataGridViewWantsInputKey)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool EditingControlWantsInputKey(System::Windows::Forms::Keys keyData, bool dataGridViewWantsInputKey);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Forms.IDataGridViewEditingControl.EditingControlWantsInputKey(System.Windows.Forms.Keys,System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -246,7 +286,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.Cursor EditingPanelCursor { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.Cursor EditingPanelCursor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewTextBoxEditingControl.EditingPanelCursor" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property EditingPanelCursor As Cursor" />
+      <MemberSignature Language="F#" Value="member this.EditingPanelCursor : System.Windows.Forms.Cursor" Usage="System.Windows.Forms.DataGridViewTextBoxEditingControl.EditingPanelCursor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::Cursor ^ EditingPanelCursor { System::Windows::Forms::Cursor ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Forms.IDataGridViewEditingControl.EditingPanelCursor</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -268,7 +314,13 @@
       <MemberSignature Language="C#" Value="public virtual object GetEditingControlFormattedValue (System.Windows.Forms.DataGridViewDataErrorContexts context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetEditingControlFormattedValue(valuetype System.Windows.Forms.DataGridViewDataErrorContexts context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxEditingControl.GetEditingControlFormattedValue(System.Windows.Forms.DataGridViewDataErrorContexts)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetEditingControlFormattedValue (context As DataGridViewDataErrorContexts) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetEditingControlFormattedValue : System.Windows.Forms.DataGridViewDataErrorContexts -&gt; obj&#xA;override this.GetEditingControlFormattedValue : System.Windows.Forms.DataGridViewDataErrorContexts -&gt; obj" Usage="dataGridViewTextBoxEditingControl.GetEditingControlFormattedValue context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetEditingControlFormattedValue(System::Windows::Forms::DataGridViewDataErrorContexts context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Forms.IDataGridViewEditingControl.GetEditingControlFormattedValue(System.Windows.Forms.DataGridViewDataErrorContexts)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -294,6 +346,9 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseWheel (System.Windows.Forms.MouseEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseWheel(class System.Windows.Forms.MouseEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxEditingControl.OnMouseWheel(System.Windows.Forms.MouseEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseWheel (e As MouseEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseWheel : System.Windows.Forms.MouseEventArgs -&gt; unit" Usage="dataGridViewTextBoxEditingControl.OnMouseWheel e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseWheel(System::Windows::Forms::MouseEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -316,6 +371,9 @@
       <MemberSignature Language="C#" Value="protected override void OnTextChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnTextChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxEditingControl.OnTextChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnTextChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnTextChanged : EventArgs -&gt; unit" Usage="dataGridViewTextBoxEditingControl.OnTextChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnTextChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -337,7 +395,13 @@
       <MemberSignature Language="C#" Value="public virtual void PrepareEditingControlForEdit (bool selectAll);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrepareEditingControlForEdit(bool selectAll) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxEditingControl.PrepareEditingControlForEdit(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub PrepareEditingControlForEdit (selectAll As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member PrepareEditingControlForEdit : bool -&gt; unit&#xA;override this.PrepareEditingControlForEdit : bool -&gt; unit" Usage="dataGridViewTextBoxEditingControl.PrepareEditingControlForEdit selectAll" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void PrepareEditingControlForEdit(bool selectAll);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Forms.IDataGridViewEditingControl.PrepareEditingControlForEdit(System.Boolean)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -361,6 +425,9 @@
       <MemberSignature Language="C#" Value="protected override bool ProcessKeyEventArgs (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool ProcessKeyEventArgs(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewTextBoxEditingControl.ProcessKeyEventArgs(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ProcessKeyEventArgs (ByRef m As Message) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.ProcessKeyEventArgs :  -&gt; bool" Usage="dataGridViewTextBoxEditingControl.ProcessKeyEventArgs m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool ProcessKeyEventArgs(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -395,7 +462,13 @@
       <MemberSignature Language="C#" Value="public virtual bool RepositionEditingControlOnValueChange { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RepositionEditingControlOnValueChange" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewTextBoxEditingControl.RepositionEditingControlOnValueChange" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property RepositionEditingControlOnValueChange As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RepositionEditingControlOnValueChange : bool" Usage="System.Windows.Forms.DataGridViewTextBoxEditingControl.RepositionEditingControlOnValueChange" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RepositionEditingControlOnValueChange { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Forms.IDataGridViewEditingControl.RepositionEditingControlOnValueChange</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

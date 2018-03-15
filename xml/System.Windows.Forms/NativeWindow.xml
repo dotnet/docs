@@ -1,7 +1,10 @@
-<Type Name="NativeWindow" FullName="System.Windows.Forms.NativeWindow">
+﻿<Type Name="NativeWindow" FullName="System.Windows.Forms.NativeWindow">
   <TypeSignature Language="C#" Value="public class NativeWindow : MarshalByRefObject, System.Windows.Forms.IWin32Window" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi NativeWindow extends System.MarshalByRefObject implements class System.Windows.Forms.IWin32Window" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NativeWindow" />
+  <TypeSignature Language="VB.NET" Value="Public Class NativeWindow&#xA;Inherits MarshalByRefObject&#xA;Implements IWin32Window" />
+  <TypeSignature Language="F#" Value="type NativeWindow = class&#xA;    inherit MarshalByRefObject&#xA;    interface IWin32Window" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NativeWindow : MarshalByRefObject, System::Windows::Forms::IWin32Window" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +61,8 @@
       <MemberSignature Language="C#" Value="public NativeWindow ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NativeWindow();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -82,6 +87,9 @@
       <MemberSignature Language="C#" Value="public void AssignHandle (IntPtr handle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AssignHandle(native int handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.AssignHandle(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AssignHandle (handle As IntPtr)" />
+      <MemberSignature Language="F#" Value="member this.AssignHandle : nativeint -&gt; unit" Usage="nativeWindow.AssignHandle handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AssignHandle(IntPtr handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -136,6 +144,9 @@
       <MemberSignature Language="C#" Value="public virtual void CreateHandle (System.Windows.Forms.CreateParams cp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CreateHandle(class System.Windows.Forms.CreateParams cp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.CreateHandle(System.Windows.Forms.CreateParams)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub CreateHandle (cp As CreateParams)" />
+      <MemberSignature Language="F#" Value="abstract member CreateHandle : System.Windows.Forms.CreateParams -&gt; unit&#xA;override this.CreateHandle : System.Windows.Forms.CreateParams -&gt; unit" Usage="nativeWindow.CreateHandle cp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CreateHandle(System::Windows::Forms::CreateParams ^ cp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -195,6 +206,9 @@
       <MemberSignature Language="C#" Value="public void DefWndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DefWndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.DefWndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DefWndProc (ByRef m As Message)" />
+      <MemberSignature Language="F#" Value="member this.DefWndProc :  -&gt; unit" Usage="nativeWindow.DefWndProc m" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DefWndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -233,6 +247,9 @@
       <MemberSignature Language="C#" Value="public virtual void DestroyHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DestroyHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.DestroyHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub DestroyHandle ()" />
+      <MemberSignature Language="F#" Value="abstract member DestroyHandle : unit -&gt; unit&#xA;override this.DestroyHandle : unit -&gt; unit" Usage="nativeWindow.DestroyHandle " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DestroyHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -267,6 +284,9 @@
       <MemberSignature Language="C#" Value="~NativeWindow ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="nativeWindow.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!NativeWindow ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -295,6 +315,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.NativeWindow FromHandle (IntPtr handle);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Forms.NativeWindow FromHandle(native int handle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.FromHandle(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromHandle (handle As IntPtr) As NativeWindow" />
+      <MemberSignature Language="F#" Value="static member FromHandle : nativeint -&gt; System.Windows.Forms.NativeWindow" Usage="System.Windows.Forms.NativeWindow.FromHandle handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Forms::NativeWindow ^ FromHandle(IntPtr handle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -329,7 +352,13 @@
       <MemberSignature Language="C#" Value="public IntPtr Handle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance native int Handle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.NativeWindow.Handle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Handle As IntPtr" />
+      <MemberSignature Language="F#" Value="member this.Handle : nativeint" Usage="System.Windows.Forms.NativeWindow.Handle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IntPtr Handle { IntPtr get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Windows.Forms.IWin32Window.Handle</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -373,6 +402,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnHandleChange ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnHandleChange() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.OnHandleChange" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnHandleChange ()" />
+      <MemberSignature Language="F#" Value="abstract member OnHandleChange : unit -&gt; unit&#xA;override this.OnHandleChange : unit -&gt; unit" Usage="nativeWindow.OnHandleChange " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnHandleChange();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -423,6 +455,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnThreadException (Exception e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnThreadException(class System.Exception e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.OnThreadException(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnThreadException (e As Exception)" />
+      <MemberSignature Language="F#" Value="abstract member OnThreadException : Exception -&gt; unit&#xA;override this.OnThreadException : Exception -&gt; unit" Usage="nativeWindow.OnThreadException e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnThreadException(Exception ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -458,6 +493,9 @@
       <MemberSignature Language="C#" Value="public virtual void ReleaseHandle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseHandle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.ReleaseHandle" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ReleaseHandle ()" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseHandle : unit -&gt; unit&#xA;override this.ReleaseHandle : unit -&gt; unit" Usage="nativeWindow.ReleaseHandle " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReleaseHandle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -505,6 +543,9 @@
       <MemberSignature Language="C#" Value="protected virtual void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.NativeWindow.WndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WndProc (ByRef m As Message)" />
+      <MemberSignature Language="F#" Value="abstract member WndProc :  -&gt; unit&#xA;override this.WndProc :  -&gt; unit" Usage="nativeWindow.WndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

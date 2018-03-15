@@ -1,7 +1,10 @@
-<Type Name="NameScope" FullName="System.Windows.NameScope">
+﻿<Type Name="NameScope" FullName="System.Windows.NameScope">
   <TypeSignature Language="C#" Value="public class NameScope : System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Collections.Generic.IDictionary&lt;string,object&gt;, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Windows.Markup.INameScopeDictionary" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NameScope extends System.Object implements class System.Collections.Generic.ICollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.Generic.IDictionary`2&lt;string, object&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.IEnumerable, class System.Windows.Markup.INameScope, class System.Windows.Markup.INameScopeDictionary" />
   <TypeSignature Language="DocId" Value="T:System.Windows.NameScope" />
+  <TypeSignature Language="VB.NET" Value="Public Class NameScope&#xA;Implements ICollection(Of KeyValuePair(Of String, Object)), IDictionary(Of String, Object), IEnumerable(Of KeyValuePair(Of String, Object)), INameScopeDictionary" />
+  <TypeSignature Language="F#" Value="type NameScope = class&#xA;    interface INameScopeDictionary&#xA;    interface INameScope&#xA;    interface IDictionary&lt;string, obj&gt;&#xA;    interface ICollection&lt;KeyValuePair&lt;string, obj&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;string, obj&gt;&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NameScope : System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;, System::Windows::Markup::INameScopeDictionary" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -55,6 +58,8 @@
       <MemberSignature Language="C#" Value="public NameScope ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NameScope();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -66,11 +71,26 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds an item to the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (System.Collections.Generic.KeyValuePair&lt;string,object&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (item As KeyValuePair(Of String, Object))" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Collections.Generic.KeyValuePair&lt;string, obj&gt; -&gt; unit&#xA;override this.Add : System.Collections.Generic.KeyValuePair&lt;string, obj&gt; -&gt; unit" Usage="nameScope.Add item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt; item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -92,7 +112,13 @@
       <MemberSignature Language="C#" Value="public void Add (string key, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(string key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.Add(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Add : string * obj -&gt; unit&#xA;override this.Add : string * obj -&gt; unit" Usage="nameScope.Add (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::String ^ key, System::Object ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Add(`0,`1)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -126,7 +152,13 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="nameScope.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -144,7 +176,13 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Collections.Generic.KeyValuePair&lt;string,object&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (item As KeyValuePair(Of String, Object)) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Collections.Generic.KeyValuePair&lt;string, obj&gt; -&gt; bool&#xA;override this.Contains : System.Collections.Generic.KeyValuePair&lt;string, obj&gt; -&gt; bool" Usage="nameScope.Contains item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt; item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -176,7 +214,13 @@
       <MemberSignature Language="C#" Value="public bool ContainsKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.ContainsKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool&#xA;override this.ContainsKey : string -&gt; bool" Usage="nameScope.ContainsKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ key);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -208,6 +252,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Collections.Generic.KeyValuePair&lt;string,object&gt;[] array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As KeyValuePair(Of String, Object)(), arrayIndex As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Collections.Generic.KeyValuePair&lt;string, obj&gt;[] * int -&gt; unit&#xA;override this.CopyTo : System.Collections.Generic.KeyValuePair&lt;string, obj&gt;[] * int -&gt; unit" Usage="nameScope.CopyTo (array, arrayIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ array, int arrayIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -231,7 +278,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.NameScope.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.NameScope.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -249,7 +302,13 @@
       <MemberSignature Language="C#" Value="public object FindName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object FindName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.FindName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindName (name As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member FindName : string -&gt; obj&#xA;override this.FindName : string -&gt; obj" Usage="nameScope.FindName name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ FindName(System::String ^ name);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.INameScope.FindName(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -280,6 +339,8 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Markup.INameScope GetNameScope (System.Windows.DependencyObject dependencyObject);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Windows.Markup.INameScope GetNameScope(class System.Windows.DependencyObject dependencyObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.GetNameScope(System.Windows.DependencyObject)" />
+      <MemberSignature Language="F#" Value="static member GetNameScope : System.Windows.DependencyObject -&gt; System.Windows.Markup.INameScope" Usage="System.Windows.NameScope.GetNameScope dependencyObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Windows::Markup::INameScope ^ GetNameScope(System::Windows::DependencyObject ^ dependencyObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -287,7 +348,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -317,7 +378,13 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.NameScope.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.NameScope.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -335,7 +402,13 @@
       <MemberSignature Language="C#" Value="public object this[string key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.NameScope.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj with get, set" Usage="System.Windows.NameScope.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ key); void set(System::String ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -363,7 +436,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;string&gt; Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;string&gt; Keys" />
       <MemberSignature Language="DocId" Value="P:System.Windows.NameScope.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.ICollection&lt;string&gt;" Usage="System.Windows.NameScope.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ Keys { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -377,10 +456,29 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="NameScope">
+      <MemberSignature Language="C#" Value="see GetNameScope, and SetNameScope" />
+      <MemberSignature Language="ILAsm" Value="see GetNameScope, and SetNameScope" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.NameScope.NameScope" />
+      <MemberSignature Language="VB.NET" Value="see GetNameScope, and SetNameScope" />
+      <MemberSignature Language="F#" Value="see GetNameScope, and SetNameScope" Usage="see GetNameScope, and SetNameScope" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="NameScopeProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty NameScopeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty NameScopeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.NameScope.NameScopeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly NameScopeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable NameScopeProperty : System.Windows.DependencyProperty" Usage="System.Windows.NameScope.NameScopeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ NameScopeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -398,7 +496,13 @@
       <MemberSignature Language="C#" Value="public void RegisterName (string name, object scopedElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterName(string name, object scopedElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.RegisterName(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterName (name As String, scopedElement As Object)" />
+      <MemberSignature Language="F#" Value="abstract member RegisterName : string * obj -&gt; unit&#xA;override this.RegisterName : string * obj -&gt; unit" Usage="nameScope.RegisterName (name, scopedElement)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RegisterName(System::String ^ name, System::Object ^ scopedElement);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.INameScope.RegisterName(System.String,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -432,11 +536,26 @@
         <altmember cref="M:System.Windows.FrameworkContentElement.RegisterName(System.String,System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specific object from the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public bool Remove (System.Collections.Generic.KeyValuePair&lt;string,object&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (item As KeyValuePair(Of String, Object)) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Collections.Generic.KeyValuePair&lt;string, obj&gt; -&gt; bool&#xA;override this.Remove : System.Collections.Generic.KeyValuePair&lt;string, obj&gt; -&gt; bool" Usage="nameScope.Remove item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt; item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -466,7 +585,13 @@
       <MemberSignature Language="C#" Value="public bool Remove (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (key As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Remove : string -&gt; bool&#xA;override this.Remove : string -&gt; bool" Usage="nameScope.Remove key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::String ^ key);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -496,6 +621,8 @@
       <MemberSignature Language="C#" Value="public static void SetNameScope (System.Windows.DependencyObject dependencyObject, System.Windows.Markup.INameScope value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetNameScope(class System.Windows.DependencyObject dependencyObject, class System.Windows.Markup.INameScope value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.SetNameScope(System.Windows.DependencyObject,System.Windows.Markup.INameScope)" />
+      <MemberSignature Language="F#" Value="static member SetNameScope : System.Windows.DependencyObject * System.Windows.Markup.INameScope -&gt; unit" Usage="System.Windows.NameScope.SetNameScope (dependencyObject, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetNameScope(System::Windows::DependencyObject ^ dependencyObject, System::Windows::Markup::INameScope ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -529,7 +656,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; IEnumerable&lt;KeyValuePair&lt;string,object&gt;&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Object&gt;&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of String, Object)) Implements IEnumerable(Of KeyValuePair(Of String, Object)).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -548,7 +680,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -567,6 +704,9 @@
       <MemberSignature Language="C#" Value="public bool TryGetValue (string key, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(string key, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.TryGetValue(System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (key As String, ByRef value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : string *  -&gt; bool&#xA;override this.TryGetValue : string *  -&gt; bool" Usage="nameScope.TryGetValue (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(System::String ^ key, [Runtime::InteropServices::Out] System::Object ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -591,7 +731,13 @@
       <MemberSignature Language="C#" Value="public void UnregisterName (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnregisterName(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.NameScope.UnregisterName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnregisterName (name As String)" />
+      <MemberSignature Language="F#" Value="abstract member UnregisterName : string -&gt; unit&#xA;override this.UnregisterName : string -&gt; unit" Usage="nameScope.UnregisterName name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void UnregisterName(System::String ^ name);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.INameScope.UnregisterName(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -631,7 +777,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;object&gt; Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;object&gt; Values" />
       <MemberSignature Language="DocId" Value="P:System.Windows.NameScope.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection(Of Object)" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.ICollection&lt;obj&gt;" Usage="System.Windows.NameScope.Values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ Values { System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -645,23 +797,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Remove">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the specific object from the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds an item to the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

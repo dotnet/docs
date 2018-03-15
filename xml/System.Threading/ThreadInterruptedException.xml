@@ -1,7 +1,10 @@
-<Type Name="ThreadInterruptedException" FullName="System.Threading.ThreadInterruptedException">
+﻿<Type Name="ThreadInterruptedException" FullName="System.Threading.ThreadInterruptedException">
   <TypeSignature Language="C#" Value="public class ThreadInterruptedException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ThreadInterruptedException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Threading.ThreadInterruptedException" />
+  <TypeSignature Language="VB.NET" Value="Public Class ThreadInterruptedException&#xA;Inherits SystemException" />
+  <TypeSignature Language="F#" Value="type ThreadInterruptedException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ThreadInterruptedException : SystemException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -51,10 +54,22 @@
     <altmember cref="T:System.Threading.ThreadState" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Threading.ThreadInterruptedException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ThreadInterruptedException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadInterruptedException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadInterruptedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -91,6 +106,9 @@
       <MemberSignature Language="C#" Value="public ThreadInterruptedException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadInterruptedException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Threading.ThreadInterruptedException : string -&gt; System.Threading.ThreadInterruptedException" Usage="new System.Threading.ThreadInterruptedException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadInterruptedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -130,6 +148,9 @@
       <MemberSignature Language="C#" Value="protected ThreadInterruptedException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadInterruptedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Threading.ThreadInterruptedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Threading.ThreadInterruptedException" Usage="new System.Threading.ThreadInterruptedException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ThreadInterruptedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -166,6 +187,9 @@
       <MemberSignature Language="C#" Value="public ThreadInterruptedException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Threading.ThreadInterruptedException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Threading.ThreadInterruptedException : string * Exception -&gt; System.Threading.ThreadInterruptedException" Usage="new System.Threading.ThreadInterruptedException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ThreadInterruptedException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -205,15 +229,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Threading.ThreadInterruptedException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="IButtonControl" FullName="System.Web.UI.WebControls.IButtonControl">
+﻿<Type Name="IButtonControl" FullName="System.Web.UI.WebControls.IButtonControl">
   <TypeSignature Language="C#" Value="public interface IButtonControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IButtonControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.IButtonControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IButtonControl" />
+  <TypeSignature Language="F#" Value="type IButtonControl = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IButtonControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public bool CausesValidation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CausesValidation" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IButtonControl.CausesValidation" />
+      <MemberSignature Language="VB.NET" Value="Public Property CausesValidation As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CausesValidation : bool with get, set" Usage="System.Web.UI.WebControls.IButtonControl.CausesValidation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CausesValidation { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -51,9 +57,12 @@
       </Docs>
     </Member>
     <Member MemberName="Click">
-      <MemberSignature Language="C#" Value="public event EventHandler Click;" />
+      <MemberSignature Language="C#" Value="event EventHandler Click;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Click" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.IButtonControl.Click" />
+      <MemberSignature Language="VB.NET" Value="Event Click As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Click : EventHandler " Usage="member this.Click : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -78,9 +87,12 @@
       </Docs>
     </Member>
     <Member MemberName="Command">
-      <MemberSignature Language="C#" Value="public event System.Web.UI.WebControls.CommandEventHandler Command;" />
+      <MemberSignature Language="C#" Value="event System.Web.UI.WebControls.CommandEventHandler Command;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Web.UI.WebControls.CommandEventHandler Command" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.IButtonControl.Command" />
+      <MemberSignature Language="VB.NET" Value="Event Command As CommandEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Command : System.Web.UI.WebControls.CommandEventHandler " Usage="member this.Command : System.Web.UI.WebControls.CommandEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Web::UI::WebControls::CommandEventHandler ^ Command;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -108,6 +120,9 @@
       <MemberSignature Language="C#" Value="public string CommandArgument { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CommandArgument" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IButtonControl.CommandArgument" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandArgument As String" />
+      <MemberSignature Language="F#" Value="member this.CommandArgument : string with get, set" Usage="System.Web.UI.WebControls.IButtonControl.CommandArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommandArgument { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -134,6 +149,9 @@
       <MemberSignature Language="C#" Value="public string CommandName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CommandName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IButtonControl.CommandName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandName As String" />
+      <MemberSignature Language="F#" Value="member this.CommandName : string with get, set" Usage="System.Web.UI.WebControls.IButtonControl.CommandName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommandName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -160,6 +178,9 @@
       <MemberSignature Language="C#" Value="public string PostBackUrl { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PostBackUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IButtonControl.PostBackUrl" />
+      <MemberSignature Language="VB.NET" Value="Public Property PostBackUrl As String" />
+      <MemberSignature Language="F#" Value="member this.PostBackUrl : string with get, set" Usage="System.Web.UI.WebControls.IButtonControl.PostBackUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PostBackUrl { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,6 +208,9 @@
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IButtonControl.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Web.UI.WebControls.IButtonControl.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -212,6 +236,9 @@
       <MemberSignature Language="C#" Value="public string ValidationGroup { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ValidationGroup" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.IButtonControl.ValidationGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValidationGroup As String" />
+      <MemberSignature Language="F#" Value="member this.ValidationGroup : string with get, set" Usage="System.Web.UI.WebControls.IButtonControl.ValidationGroup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ValidationGroup { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

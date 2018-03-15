@@ -1,7 +1,10 @@
-<Type Name="EntityHandling" FullName="System.Xml.EntityHandling">
+﻿<Type Name="EntityHandling" FullName="System.Xml.EntityHandling">
   <TypeSignature Language="C#" Value="public enum EntityHandling" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EntityHandling extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Xml.EntityHandling" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EntityHandling" />
+  <TypeSignature Language="F#" Value="type EntityHandling = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EntityHandling" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="ExpandCharEntities" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.EntityHandling ExpandCharEntities = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.EntityHandling.ExpandCharEntities" />
+      <MemberSignature Language="VB.NET" Value="ExpandCharEntities" />
+      <MemberSignature Language="F#" Value="ExpandCharEntities = 2" Usage="System.Xml.EntityHandling.ExpandCharEntities" />
+      <MemberSignature Language="C++ CLI" Value="ExpandCharEntities" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -45,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.EntityHandling</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Expands character entities and returns general entities as <see cref="F:System.Xml.XmlNodeType.EntityReference" /> nodes.</summary>
         <remarks>
@@ -63,6 +70,9 @@
       <MemberSignature Language="C#" Value="ExpandEntities" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Xml.EntityHandling ExpandEntities = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Xml.EntityHandling.ExpandEntities" />
+      <MemberSignature Language="VB.NET" Value="ExpandEntities" />
+      <MemberSignature Language="F#" Value="ExpandEntities = 1" Usage="System.Xml.EntityHandling.ExpandEntities" />
+      <MemberSignature Language="C++ CLI" Value="ExpandEntities" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -80,6 +90,7 @@
       <ReturnValue>
         <ReturnType>System.Xml.EntityHandling</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Expands all entities and returns the expanded nodes.</summary>
         <remarks>

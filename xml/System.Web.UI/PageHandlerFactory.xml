@@ -1,7 +1,10 @@
-<Type Name="PageHandlerFactory" FullName="System.Web.UI.PageHandlerFactory">
+﻿<Type Name="PageHandlerFactory" FullName="System.Web.UI.PageHandlerFactory">
   <TypeSignature Language="C#" Value="public class PageHandlerFactory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PageHandlerFactory extends System.Object implements class System.Web.IHttpHandlerFactory" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PageHandlerFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Class PageHandlerFactory" />
+  <TypeSignature Language="F#" Value="type PageHandlerFactory = class&#xA;    interface IHttpHandlerFactory2&#xA;    interface IHttpHandlerFactory" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PageHandlerFactory" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,9 +31,11 @@
   </Docs>
   <Members>
     <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="protected PageHandlerFactory ();" />
+      <MemberSignature Language="C#" Value="protected internal PageHandlerFactory ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageHandlerFactory.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; PageHandlerFactory();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -53,7 +58,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Web.IHttpHandler GetHandler (System.Web.HttpContext context, string requestType, string virtualPath, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.IHttpHandler GetHandler(class System.Web.HttpContext context, string requestType, string virtualPath, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageHandlerFactory.GetHandler(System.Web.HttpContext,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetHandler (context As HttpContext, requestType As String, virtualPath As String, path As String) As IHttpHandler" />
+      <MemberSignature Language="F#" Value="abstract member GetHandler : System.Web.HttpContext * string * string * string -&gt; System.Web.IHttpHandler&#xA;override this.GetHandler : System.Web.HttpContext * string * string * string -&gt; System.Web.IHttpHandler" Usage="pageHandlerFactory.GetHandler (context, requestType, virtualPath, path)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Web::IHttpHandler ^ GetHandler(System::Web::HttpContext ^ context, System::String ^ requestType, System::String ^ virtualPath, System::String ^ path);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpHandlerFactory.GetHandler(System.Web.HttpContext,System.String,System.String,System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -89,7 +100,13 @@
       <MemberSignature Language="C#" Value="public virtual void ReleaseHandler (System.Web.IHttpHandler handler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseHandler(class System.Web.IHttpHandler handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageHandlerFactory.ReleaseHandler(System.Web.IHttpHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ReleaseHandler (handler As IHttpHandler)" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseHandler : System.Web.IHttpHandler -&gt; unit&#xA;override this.ReleaseHandler : System.Web.IHttpHandler -&gt; unit" Usage="pageHandlerFactory.ReleaseHandler handler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReleaseHandler(System::Web::IHttpHandler ^ handler);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.IHttpHandlerFactory.ReleaseHandler(System.Web.IHttpHandler)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

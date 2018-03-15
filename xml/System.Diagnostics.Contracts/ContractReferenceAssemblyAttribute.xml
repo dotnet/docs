@@ -1,7 +1,10 @@
-<Type Name="ContractReferenceAssemblyAttribute" FullName="System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute">
+﻿<Type Name="ContractReferenceAssemblyAttribute" FullName="System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute">
   <TypeSignature Language="C#" Value="public sealed class ContractReferenceAssemblyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ContractReferenceAssemblyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ContractReferenceAssemblyAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ContractReferenceAssemblyAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContractReferenceAssemblyAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public ContractReferenceAssemblyAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.Contracts.ContractReferenceAssemblyAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractReferenceAssemblyAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>

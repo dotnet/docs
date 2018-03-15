@@ -1,7 +1,10 @@
-<Type Name="WorkflowInstance" FullName="System.Activities.Hosting.WorkflowInstance">
+﻿<Type Name="WorkflowInstance" FullName="System.Activities.Hosting.WorkflowInstance">
   <TypeSignature Language="C#" Value="public abstract class WorkflowInstance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract WorkflowInstance extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Hosting.WorkflowInstance" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class WorkflowInstance" />
+  <TypeSignature Language="F#" Value="type WorkflowInstance = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WorkflowInstance abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,10 +42,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected WorkflowInstance (System.Activities.Activity workflowDefinition);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity workflowDefinition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.#ctor(System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (workflowDefinition As Activity)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Hosting.WorkflowInstance : System.Activities.Activity -&gt; System.Activities.Hosting.WorkflowInstance" Usage="new System.Activities.Hosting.WorkflowInstance workflowDefinition" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowInstance(System::Activities::Activity ^ workflowDefinition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -61,6 +76,9 @@
       <MemberSignature Language="C#" Value="protected WorkflowInstance (System.Activities.Activity workflowDefinition, System.Activities.WorkflowIdentity definitionIdentity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity workflowDefinition, class System.Activities.WorkflowIdentity definitionIdentity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.#ctor(System.Activities.Activity,System.Activities.WorkflowIdentity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (workflowDefinition As Activity, definitionIdentity As WorkflowIdentity)" />
+      <MemberSignature Language="F#" Value="new System.Activities.Hosting.WorkflowInstance : System.Activities.Activity * System.Activities.WorkflowIdentity -&gt; System.Activities.Hosting.WorkflowInstance" Usage="new System.Activities.Hosting.WorkflowInstance (workflowDefinition, definitionIdentity)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; WorkflowInstance(System::Activities::Activity ^ workflowDefinition, System::Activities::WorkflowIdentity ^ definitionIdentity);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -81,6 +99,9 @@
       <MemberSignature Language="C#" Value="protected IAsyncResult BeginFlushTrackingRecords (TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.IAsyncResult BeginFlushTrackingRecords(valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.BeginFlushTrackingRecords(System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function BeginFlushTrackingRecords (timeout As TimeSpan, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginFlushTrackingRecords : TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowInstance.BeginFlushTrackingRecords (timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; IAsyncResult ^ BeginFlushTrackingRecords(TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -107,6 +128,9 @@
       <MemberSignature Language="C#" Value="protected System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl Controller { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.Hosting.WorkflowInstance/WorkflowInstanceControl Controller" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.Controller" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Controller As WorkflowInstance.WorkflowInstanceControl" />
+      <MemberSignature Language="F#" Value="member this.Controller : System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl" Usage="System.Activities.Hosting.WorkflowInstance.Controller" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Activities::Hosting::WorkflowInstance::WorkflowInstanceControl Controller { System::Activities::Hosting::WorkflowInstance::WorkflowInstanceControl get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -125,6 +149,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.WorkflowIdentity DefinitionIdentity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.WorkflowIdentity DefinitionIdentity" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.DefinitionIdentity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DefinitionIdentity As WorkflowIdentity" />
+      <MemberSignature Language="F#" Value="member this.DefinitionIdentity : System.Activities.WorkflowIdentity" Usage="System.Activities.Hosting.WorkflowInstance.DefinitionIdentity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::WorkflowIdentity ^ DefinitionIdentity { System::Activities::WorkflowIdentity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -143,6 +170,9 @@
       <MemberSignature Language="C#" Value="protected void DisposeExtensions ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void DisposeExtensions() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.DisposeExtensions" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub DisposeExtensions ()" />
+      <MemberSignature Language="F#" Value="member this.DisposeExtensions : unit -&gt; unit" Usage="workflowInstance.DisposeExtensions " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void DisposeExtensions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -161,6 +191,9 @@
       <MemberSignature Language="C#" Value="protected void EndFlushTrackingRecords (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void EndFlushTrackingRecords(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.EndFlushTrackingRecords(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub EndFlushTrackingRecords (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndFlushTrackingRecords : IAsyncResult -&gt; unit" Usage="workflowInstance.EndFlushTrackingRecords result" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void EndFlushTrackingRecords(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -182,6 +215,9 @@
       <MemberSignature Language="C#" Value="protected void FlushTrackingRecords (TimeSpan timeout);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void FlushTrackingRecords(valuetype System.TimeSpan timeout) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.FlushTrackingRecords(System.TimeSpan)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub FlushTrackingRecords (timeout As TimeSpan)" />
+      <MemberSignature Language="F#" Value="member this.FlushTrackingRecords : TimeSpan -&gt; unit" Usage="workflowInstance.FlushTrackingRecords timeout" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void FlushTrackingRecords(TimeSpan timeout);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -203,6 +239,9 @@
       <MemberSignature Language="C#" Value="protected static System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt; GetActivitiesBlockingUpdate (object deserializedRuntimeState, System.Activities.DynamicUpdate.DynamicUpdateMap updateMap);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Collections.Generic.IList`1&lt;class System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt; GetActivitiesBlockingUpdate(object deserializedRuntimeState, class System.Activities.DynamicUpdate.DynamicUpdateMap updateMap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.GetActivitiesBlockingUpdate(System.Object,System.Activities.DynamicUpdate.DynamicUpdateMap)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function GetActivitiesBlockingUpdate (deserializedRuntimeState As Object, updateMap As DynamicUpdateMap) As IList(Of ActivityBlockingUpdate)" />
+      <MemberSignature Language="F#" Value="static member GetActivitiesBlockingUpdate : obj * System.Activities.DynamicUpdate.DynamicUpdateMap -&gt; System.Collections.Generic.IList&lt;System.Activities.DynamicUpdate.ActivityBlockingUpdate&gt;" Usage="System.Activities.Hosting.WorkflowInstance.GetActivitiesBlockingUpdate (deserializedRuntimeState, updateMap)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Collections::Generic::IList&lt;System::Activities::DynamicUpdate::ActivityBlockingUpdate ^&gt; ^ GetActivitiesBlockingUpdate(System::Object ^ deserializedRuntimeState, System::Activities::DynamicUpdate::DynamicUpdateMap ^ updateMap);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -224,9 +263,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetExtension&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected T GetExtension&lt;T&gt; () where T : class;" />
+      <MemberSignature Language="C#" Value="protected internal T GetExtension&lt;T&gt; () where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance !!T GetExtension&lt;class T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.GetExtension``1" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function GetExtension(Of T As Class) () As T" />
+      <MemberSignature Language="F#" Value="member this.GetExtension : unit -&gt; 'T (requires 'T : null)" Usage="workflowInstance.GetExtension " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename T&gt;&#xA; where T : class T GetExtension();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -251,9 +293,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetExtensions&lt;T&gt;">
-      <MemberSignature Language="C#" Value="protected System.Collections.Generic.IEnumerable&lt;T&gt; GetExtensions&lt;T&gt; () where T : class;" />
+      <MemberSignature Language="C#" Value="protected internal System.Collections.Generic.IEnumerable&lt;T&gt; GetExtensions&lt;T&gt; () where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; GetExtensions&lt;class T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.GetExtensions``1" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function GetExtensions(Of T As Class) () As IEnumerable(Of T)" />
+      <MemberSignature Language="F#" Value="member this.GetExtensions : unit -&gt; seq&lt;'T (requires 'T : null)&gt; (requires 'T : null)" Usage="workflowInstance.GetExtensions " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA;generic &lt;typename T&gt;&#xA; where T : class System::Collections::Generic::IEnumerable&lt;T&gt; ^ GetExtensions();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -281,6 +326,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.LocationReferenceEnvironment HostEnvironment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.LocationReferenceEnvironment HostEnvironment" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.HostEnvironment" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostEnvironment As LocationReferenceEnvironment" />
+      <MemberSignature Language="F#" Value="member this.HostEnvironment : System.Activities.LocationReferenceEnvironment with get, set" Usage="System.Activities.Hosting.WorkflowInstance.HostEnvironment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::LocationReferenceEnvironment ^ HostEnvironment { System::Activities::LocationReferenceEnvironment ^ get(); void set(System::Activities::LocationReferenceEnvironment ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -306,6 +354,9 @@
       <MemberSignature Language="C#" Value="public abstract Guid Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Id" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.Id" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Id As Guid" />
+      <MemberSignature Language="F#" Value="member this.Id : Guid" Usage="System.Activities.Hosting.WorkflowInstance.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property Guid Id { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -320,10 +371,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Initialize">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Called by the host to initialize the workflow instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Initialize">
       <MemberSignature Language="C#" Value="protected void Initialize (object deserializedRuntimeState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(object deserializedRuntimeState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.Initialize(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub Initialize (deserializedRuntimeState As Object)" />
+      <MemberSignature Language="F#" Value="member this.Initialize : obj -&gt; unit" Usage="workflowInstance.Initialize deserializedRuntimeState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::Object ^ deserializedRuntimeState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -345,6 +408,9 @@
       <MemberSignature Language="C#" Value="protected void Initialize (System.Collections.Generic.IDictionary&lt;string,object&gt; workflowArgumentValues, System.Collections.Generic.IList&lt;System.Activities.Handle&gt; workflowExecutionProperties);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; workflowArgumentValues, class System.Collections.Generic.IList`1&lt;class System.Activities.Handle&gt; workflowExecutionProperties) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.Initialize(System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IList{System.Activities.Handle})" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub Initialize (workflowArgumentValues As IDictionary(Of String, Object), workflowExecutionProperties As IList(Of Handle))" />
+      <MemberSignature Language="F#" Value="member this.Initialize : System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Collections.Generic.IList&lt;System.Activities.Handle&gt; -&gt; unit" Usage="workflowInstance.Initialize (workflowArgumentValues, workflowExecutionProperties)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ workflowArgumentValues, System::Collections::Generic::IList&lt;System::Activities::Handle ^&gt; ^ workflowExecutionProperties);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -368,6 +434,9 @@
       <MemberSignature Language="C#" Value="protected void Initialize (object deserializedRuntimeState, System.Activities.DynamicUpdate.DynamicUpdateMap updateMap);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void Initialize(object deserializedRuntimeState, class System.Activities.DynamicUpdate.DynamicUpdateMap updateMap) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.Initialize(System.Object,System.Activities.DynamicUpdate.DynamicUpdateMap)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub Initialize (deserializedRuntimeState As Object, updateMap As DynamicUpdateMap)" />
+      <MemberSignature Language="F#" Value="member this.Initialize : obj * System.Activities.DynamicUpdate.DynamicUpdateMap -&gt; unit" Usage="workflowInstance.Initialize (deserializedRuntimeState, updateMap)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void Initialize(System::Object ^ deserializedRuntimeState, System::Activities::DynamicUpdate::DynamicUpdateMap ^ updateMap);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -391,6 +460,9 @@
       <MemberSignature Language="C#" Value="protected bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Activities.Hosting.WorkflowInstance.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -407,9 +479,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnBeginAssociateKeys">
-      <MemberSignature Language="C#" Value="protected abstract IAsyncResult OnBeginAssociateKeys (System.Collections.Generic.ICollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt; keys, AsyncCallback callback, object state);" />
+      <MemberSignature Language="C#" Value="protected internal abstract IAsyncResult OnBeginAssociateKeys (System.Collections.Generic.ICollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt; keys, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.IAsyncResult OnBeginAssociateKeys(class System.Collections.Generic.ICollection`1&lt;class System.Runtime.DurableInstancing.InstanceKey&gt; keys, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.OnBeginAssociateKeys(System.Collections.Generic.ICollection{System.Runtime.DurableInstancing.InstanceKey},System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function OnBeginAssociateKeys (keys As ICollection(Of InstanceKey), callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginAssociateKeys : System.Collections.Generic.ICollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt; * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowInstance.OnBeginAssociateKeys (keys, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract IAsyncResult ^ OnBeginAssociateKeys(System::Collections::Generic::ICollection&lt;System::Runtime::DurableInstancing::InstanceKey ^&gt; ^ keys, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -436,6 +511,9 @@
       <MemberSignature Language="C#" Value="protected virtual IAsyncResult OnBeginFlushTrackingRecords (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.IAsyncResult OnBeginFlushTrackingRecords(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.OnBeginFlushTrackingRecords(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function OnBeginFlushTrackingRecords (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginFlushTrackingRecords : AsyncCallback * obj -&gt; IAsyncResult&#xA;override this.OnBeginFlushTrackingRecords : AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowInstance.OnBeginFlushTrackingRecords (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual IAsyncResult ^ OnBeginFlushTrackingRecords(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -457,9 +535,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnBeginPersist">
-      <MemberSignature Language="C#" Value="protected abstract IAsyncResult OnBeginPersist (AsyncCallback callback, object state);" />
+      <MemberSignature Language="C#" Value="protected internal abstract IAsyncResult OnBeginPersist (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.IAsyncResult OnBeginPersist(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.OnBeginPersist(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function OnBeginPersist (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginPersist : AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowInstance.OnBeginPersist (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract IAsyncResult ^ OnBeginPersist(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -481,9 +562,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnBeginResumeBookmark">
-      <MemberSignature Language="C#" Value="protected abstract IAsyncResult OnBeginResumeBookmark (System.Activities.Bookmark bookmark, object value, TimeSpan timeout, AsyncCallback callback, object state);" />
+      <MemberSignature Language="C#" Value="protected internal abstract IAsyncResult OnBeginResumeBookmark (System.Activities.Bookmark bookmark, object value, TimeSpan timeout, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.IAsyncResult OnBeginResumeBookmark(class System.Activities.Bookmark bookmark, object value, valuetype System.TimeSpan timeout, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.OnBeginResumeBookmark(System.Activities.Bookmark,System.Object,System.TimeSpan,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="F#" Value="abstract member OnBeginResumeBookmark : System.Activities.Bookmark * obj * TimeSpan * AsyncCallback * obj -&gt; IAsyncResult" Usage="workflowInstance.OnBeginResumeBookmark (bookmark, value, timeout, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract IAsyncResult ^ OnBeginResumeBookmark(System::Activities::Bookmark ^ bookmark, System::Object ^ value, TimeSpan timeout, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -511,9 +594,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnDisassociateKeys">
-      <MemberSignature Language="C#" Value="protected abstract void OnDisassociateKeys (System.Collections.Generic.ICollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt; keys);" />
+      <MemberSignature Language="C#" Value="protected internal abstract void OnDisassociateKeys (System.Collections.Generic.ICollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt; keys);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnDisassociateKeys(class System.Collections.Generic.ICollection`1&lt;class System.Runtime.DurableInstancing.InstanceKey&gt; keys) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.OnDisassociateKeys(System.Collections.Generic.ICollection{System.Runtime.DurableInstancing.InstanceKey})" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub OnDisassociateKeys (keys As ICollection(Of InstanceKey))" />
+      <MemberSignature Language="F#" Value="abstract member OnDisassociateKeys : System.Collections.Generic.ICollection&lt;System.Runtime.DurableInstancing.InstanceKey&gt; -&gt; unit" Usage="workflowInstance.OnDisassociateKeys keys" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void OnDisassociateKeys(System::Collections::Generic::ICollection&lt;System::Runtime::DurableInstancing::InstanceKey ^&gt; ^ keys);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -532,9 +618,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnEndAssociateKeys">
-      <MemberSignature Language="C#" Value="protected abstract void OnEndAssociateKeys (IAsyncResult result);" />
+      <MemberSignature Language="C#" Value="protected internal abstract void OnEndAssociateKeys (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnEndAssociateKeys(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.OnEndAssociateKeys(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub OnEndAssociateKeys (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member OnEndAssociateKeys : IAsyncResult -&gt; unit" Usage="workflowInstance.OnEndAssociateKeys result" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void OnEndAssociateKeys(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -556,6 +645,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnEndFlushTrackingRecords (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnEndFlushTrackingRecords(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.OnEndFlushTrackingRecords(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnEndFlushTrackingRecords (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member OnEndFlushTrackingRecords : IAsyncResult -&gt; unit&#xA;override this.OnEndFlushTrackingRecords : IAsyncResult -&gt; unit" Usage="workflowInstance.OnEndFlushTrackingRecords result" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnEndFlushTrackingRecords(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -574,9 +666,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnEndPersist">
-      <MemberSignature Language="C#" Value="protected abstract void OnEndPersist (IAsyncResult result);" />
+      <MemberSignature Language="C#" Value="protected internal abstract void OnEndPersist (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnEndPersist(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.OnEndPersist(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub OnEndPersist (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="abstract member OnEndPersist : IAsyncResult -&gt; unit" Usage="workflowInstance.OnEndPersist result" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void OnEndPersist(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -595,9 +690,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnEndResumeBookmark">
-      <MemberSignature Language="C#" Value="protected abstract System.Activities.BookmarkResumptionResult OnEndResumeBookmark (IAsyncResult result);" />
+      <MemberSignature Language="C#" Value="protected internal abstract System.Activities.BookmarkResumptionResult OnEndResumeBookmark (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance valuetype System.Activities.BookmarkResumptionResult OnEndResumeBookmark(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.OnEndResumeBookmark(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function OnEndResumeBookmark (result As IAsyncResult) As BookmarkResumptionResult" />
+      <MemberSignature Language="F#" Value="abstract member OnEndResumeBookmark : IAsyncResult -&gt; System.Activities.BookmarkResumptionResult" Usage="workflowInstance.OnEndResumeBookmark result" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Activities::BookmarkResumptionResult OnEndResumeBookmark(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -620,6 +718,9 @@
       <MemberSignature Language="C#" Value="protected abstract void OnNotifyPaused ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnNotifyPaused() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.OnNotifyPaused" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnNotifyPaused ()" />
+      <MemberSignature Language="F#" Value="abstract member OnNotifyPaused : unit -&gt; unit" Usage="workflowInstance.OnNotifyPaused " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnNotifyPaused();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -638,6 +739,8 @@
       <MemberSignature Language="C#" Value="protected abstract void OnNotifyUnhandledException (Exception exception, System.Activities.Activity source, string sourceInstanceId);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnNotifyUnhandledException(class System.Exception exception, class System.Activities.Activity source, string sourceInstanceId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.OnNotifyUnhandledException(System.Exception,System.Activities.Activity,System.String)" />
+      <MemberSignature Language="F#" Value="abstract member OnNotifyUnhandledException : Exception * System.Activities.Activity * string -&gt; unit" Usage="workflowInstance.OnNotifyUnhandledException (exception, source, sourceInstanceId)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnNotifyUnhandledException(Exception ^ exception, System::Activities::Activity ^ source, System::String ^ sourceInstanceId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -660,9 +763,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnRequestAbort">
-      <MemberSignature Language="C#" Value="protected abstract void OnRequestAbort (Exception reason);" />
+      <MemberSignature Language="C#" Value="protected internal abstract void OnRequestAbort (Exception reason);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnRequestAbort(class System.Exception reason) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.OnRequestAbort(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Sub OnRequestAbort (reason As Exception)" />
+      <MemberSignature Language="F#" Value="abstract member OnRequestAbort : Exception -&gt; unit" Usage="workflowInstance.OnRequestAbort reason" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract void OnRequestAbort(Exception ^ reason);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -691,6 +797,9 @@
       <MemberSignature Language="C#" Value="protected void RegisterExtensionManager (System.Activities.Hosting.WorkflowInstanceExtensionManager extensionManager);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void RegisterExtensionManager(class System.Activities.Hosting.WorkflowInstanceExtensionManager extensionManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.RegisterExtensionManager(System.Activities.Hosting.WorkflowInstanceExtensionManager)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub RegisterExtensionManager (extensionManager As WorkflowInstanceExtensionManager)" />
+      <MemberSignature Language="F#" Value="member this.RegisterExtensionManager : System.Activities.Hosting.WorkflowInstanceExtensionManager -&gt; unit" Usage="workflowInstance.RegisterExtensionManager extensionManager" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void RegisterExtensionManager(System::Activities::Hosting::WorkflowInstanceExtensionManager ^ extensionManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -716,9 +825,12 @@
       </Docs>
     </Member>
     <Member MemberName="SupportsInstanceKeys">
-      <MemberSignature Language="C#" Value="protected abstract bool SupportsInstanceKeys { get; }" />
+      <MemberSignature Language="C#" Value="protected internal abstract bool SupportsInstanceKeys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportsInstanceKeys" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.SupportsInstanceKeys" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride ReadOnly Property SupportsInstanceKeys As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportsInstanceKeys : bool" Usage="System.Activities.Hosting.WorkflowInstance.SupportsInstanceKeys" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract property bool SupportsInstanceKeys { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -738,6 +850,9 @@
       <MemberSignature Language="C#" Value="public System.Threading.SynchronizationContext SynchronizationContext { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Threading.SynchronizationContext SynchronizationContext" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.SynchronizationContext" />
+      <MemberSignature Language="VB.NET" Value="Public Property SynchronizationContext As SynchronizationContext" />
+      <MemberSignature Language="F#" Value="member this.SynchronizationContext : System.Threading.SynchronizationContext with get, set" Usage="System.Activities.Hosting.WorkflowInstance.SynchronizationContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Threading::SynchronizationContext ^ SynchronizationContext { System::Threading::SynchronizationContext ^ get(); void set(System::Threading::SynchronizationContext ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -763,6 +878,9 @@
       <MemberSignature Language="C#" Value="protected void ThrowIfReadOnly ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void ThrowIfReadOnly() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Hosting.WorkflowInstance.ThrowIfReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub ThrowIfReadOnly ()" />
+      <MemberSignature Language="F#" Value="member this.ThrowIfReadOnly : unit -&gt; unit" Usage="workflowInstance.ThrowIfReadOnly " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void ThrowIfReadOnly();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -788,6 +906,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Activity WorkflowDefinition { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity WorkflowDefinition" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Hosting.WorkflowInstance.WorkflowDefinition" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkflowDefinition As Activity" />
+      <MemberSignature Language="F#" Value="member this.WorkflowDefinition : System.Activities.Activity" Usage="System.Activities.Hosting.WorkflowInstance.WorkflowDefinition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ WorkflowDefinition { System::Activities::Activity ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -802,23 +923,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Activities.Hosting.WorkflowInstance" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Initialize">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Called by the host to initialize the workflow instance.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="StorageInfo" FullName="System.IO.Packaging.StorageInfo">
+﻿<Type Name="StorageInfo" FullName="System.IO.Packaging.StorageInfo">
   <TypeSignature Language="C#" Value="public class StorageInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StorageInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IO.Packaging.StorageInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class StorageInfo" />
+  <TypeSignature Language="F#" Value="type StorageInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StorageInfo" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,10 +20,23 @@
     <altmember cref="P:System.IO.Packaging.EncryptedPackageEnvelope.StorageInfo" />
   </Docs>
   <Members>
+    <MemberGroup MemberName="CreateStream">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new I/O stream in the store.</summary>
+        <altmember cref="M:System.IO.Packaging.StorageInfo.DeleteStream(System.String)" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateStream">
       <MemberSignature Language="C#" Value="public System.IO.Packaging.StreamInfo CreateStream (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.StreamInfo CreateStream(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.CreateStream(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateStream (name As String) As StreamInfo" />
+      <MemberSignature Language="F#" Value="member this.CreateStream : string -&gt; System.IO.Packaging.StreamInfo" Usage="storageInfo.CreateStream name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::StreamInfo ^ CreateStream(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -51,6 +67,8 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.StreamInfo CreateStream (string name, System.IO.Packaging.CompressionOption compressionOption, System.IO.Packaging.EncryptionOption encryptionOption);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.StreamInfo CreateStream(string name, valuetype System.IO.Packaging.CompressionOption compressionOption, valuetype System.IO.Packaging.EncryptionOption encryptionOption) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.CreateStream(System.String,System.IO.Packaging.CompressionOption,System.IO.Packaging.EncryptionOption)" />
+      <MemberSignature Language="F#" Value="member this.CreateStream : string * System.IO.Packaging.CompressionOption * System.IO.Packaging.EncryptionOption -&gt; System.IO.Packaging.StreamInfo" Usage="storageInfo.CreateStream (name, compressionOption, encryptionOption)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::StreamInfo ^ CreateStream(System::String ^ name, System::IO::Packaging::CompressionOption compressionOption, System::IO::Packaging::EncryptionOption encryptionOption);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -78,6 +96,9 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.StorageInfo CreateSubStorage (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.StorageInfo CreateSubStorage(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.CreateSubStorage(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateSubStorage (name As String) As StorageInfo" />
+      <MemberSignature Language="F#" Value="member this.CreateSubStorage : string -&gt; System.IO.Packaging.StorageInfo" Usage="storageInfo.CreateSubStorage name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::StorageInfo ^ CreateSubStorage(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -102,6 +123,9 @@
       <MemberSignature Language="C#" Value="public void DeleteStream (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteStream(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.DeleteStream(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteStream (name As String)" />
+      <MemberSignature Language="F#" Value="member this.DeleteStream : string -&gt; unit" Usage="storageInfo.DeleteStream name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteStream(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -125,6 +149,9 @@
       <MemberSignature Language="C#" Value="public void DeleteSubStorage (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeleteSubStorage(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.DeleteSubStorage(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeleteSubStorage (name As String)" />
+      <MemberSignature Language="F#" Value="member this.DeleteSubStorage : string -&gt; unit" Usage="storageInfo.DeleteSubStorage name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeleteSubStorage(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -155,6 +182,9 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.StreamInfo GetStreamInfo (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.StreamInfo GetStreamInfo(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.GetStreamInfo(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStreamInfo (name As String) As StreamInfo" />
+      <MemberSignature Language="F#" Value="member this.GetStreamInfo : string -&gt; System.IO.Packaging.StreamInfo" Usage="storageInfo.GetStreamInfo name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::StreamInfo ^ GetStreamInfo(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -179,6 +209,9 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.StreamInfo[] GetStreams ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.StreamInfo[] GetStreams() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.GetStreams" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStreams () As StreamInfo()" />
+      <MemberSignature Language="F#" Value="member this.GetStreams : unit -&gt; System.IO.Packaging.StreamInfo[]" Usage="storageInfo.GetStreams " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::Packaging::StreamInfo ^&gt; ^ GetStreams();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -210,6 +243,9 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.StorageInfo GetSubStorageInfo (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.StorageInfo GetSubStorageInfo(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.GetSubStorageInfo(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSubStorageInfo (name As String) As StorageInfo" />
+      <MemberSignature Language="F#" Value="member this.GetSubStorageInfo : string -&gt; System.IO.Packaging.StorageInfo" Usage="storageInfo.GetSubStorageInfo name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::Packaging::StorageInfo ^ GetSubStorageInfo(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -236,6 +272,9 @@
       <MemberSignature Language="C#" Value="public System.IO.Packaging.StorageInfo[] GetSubStorages ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.Packaging.StorageInfo[] GetSubStorages() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.GetSubStorages" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSubStorages () As StorageInfo()" />
+      <MemberSignature Language="F#" Value="member this.GetSubStorages : unit -&gt; System.IO.Packaging.StorageInfo[]" Usage="storageInfo.GetSubStorages " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::IO::Packaging::StorageInfo ^&gt; ^ GetSubStorages();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -267,6 +306,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.IO.Packaging.StorageInfo.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.IO.Packaging.StorageInfo.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -292,6 +334,9 @@
       <MemberSignature Language="C#" Value="public bool StreamExists (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool StreamExists(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.StreamExists(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StreamExists (name As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.StreamExists : string -&gt; bool" Usage="storageInfo.StreamExists name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool StreamExists(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -317,6 +362,9 @@
       <MemberSignature Language="C#" Value="public bool SubStorageExists (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SubStorageExists(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Packaging.StorageInfo.SubStorageExists(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SubStorageExists (name As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SubStorageExists : string -&gt; bool" Usage="storageInfo.SubStorageExists name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SubStorageExists(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -338,15 +386,5 @@
         <altmember cref="M:System.IO.Packaging.StorageInfo.DeleteSubStorage(System.String)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateStream">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new I/O stream in the store.</summary>
-        <altmember cref="M:System.IO.Packaging.StorageInfo.DeleteStream(System.String)" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

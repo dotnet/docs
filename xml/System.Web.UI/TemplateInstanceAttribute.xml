@@ -1,7 +1,10 @@
-<Type Name="TemplateInstanceAttribute" FullName="System.Web.UI.TemplateInstanceAttribute">
+﻿<Type Name="TemplateInstanceAttribute" FullName="System.Web.UI.TemplateInstanceAttribute">
   <TypeSignature Language="C#" Value="public sealed class TemplateInstanceAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TemplateInstanceAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.TemplateInstanceAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TemplateInstanceAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type TemplateInstanceAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplateInstanceAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,9 @@
       <MemberSignature Language="C#" Value="public TemplateInstanceAttribute (System.Web.UI.TemplateInstance instances);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Web.UI.TemplateInstance instances) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateInstanceAttribute.#ctor(System.Web.UI.TemplateInstance)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (instances As TemplateInstance)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.TemplateInstanceAttribute : System.Web.UI.TemplateInstance -&gt; System.Web.UI.TemplateInstanceAttribute" Usage="new System.Web.UI.TemplateInstanceAttribute instances" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TemplateInstanceAttribute(System::Web::UI::TemplateInstance instances);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -65,6 +71,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.TemplateInstanceAttribute Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.TemplateInstanceAttribute Default" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.TemplateInstanceAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As TemplateInstanceAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.Web.UI.TemplateInstanceAttribute" Usage="System.Web.UI.TemplateInstanceAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::TemplateInstanceAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -91,6 +100,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateInstanceAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="templateInstanceAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -114,6 +126,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateInstanceAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="templateInstanceAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -133,6 +148,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.TemplateInstance Instances { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.TemplateInstance Instances" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplateInstanceAttribute.Instances" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Instances As TemplateInstance" />
+      <MemberSignature Language="F#" Value="member this.Instances : System.Web.UI.TemplateInstance" Usage="System.Web.UI.TemplateInstanceAttribute.Instances" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::TemplateInstance Instances { System::Web::UI::TemplateInstance get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +187,9 @@
       <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.TemplateInstanceAttribute.IsDefaultAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="templateInstanceAttribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -208,6 +229,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.TemplateInstanceAttribute Multiple;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.TemplateInstanceAttribute Multiple" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.TemplateInstanceAttribute.Multiple" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Multiple As TemplateInstanceAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Multiple : System.Web.UI.TemplateInstanceAttribute" Usage="System.Web.UI.TemplateInstanceAttribute.Multiple" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::TemplateInstanceAttribute ^ Multiple;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -235,6 +259,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Web.UI.TemplateInstanceAttribute Single;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Web.UI.TemplateInstanceAttribute Single" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.TemplateInstanceAttribute.Single" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Single As TemplateInstanceAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Single : System.Web.UI.TemplateInstanceAttribute" Usage="System.Web.UI.TemplateInstanceAttribute.Single" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Web::UI::TemplateInstanceAttribute ^ Single;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

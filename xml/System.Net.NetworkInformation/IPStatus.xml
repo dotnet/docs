@@ -1,7 +1,10 @@
-<Type Name="IPStatus" FullName="System.Net.NetworkInformation.IPStatus">
+﻿<Type Name="IPStatus" FullName="System.Net.NetworkInformation.IPStatus">
   <TypeSignature Language="C#" Value="public enum IPStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IPStatus extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.IPStatus" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IPStatus" />
+  <TypeSignature Language="F#" Value="type IPStatus = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class IPStatus" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Ping</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="BadDestination" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus BadDestination = int32(11018)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.BadDestination" />
+      <MemberSignature Language="VB.NET" Value="BadDestination" />
+      <MemberSignature Language="F#" Value="BadDestination = 11018" Usage="System.Net.NetworkInformation.IPStatus.BadDestination" />
+      <MemberSignature Language="C++ CLI" Value="BadDestination" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -64,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11018</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because the destination IP address cannot receive ICMP echo requests or should never appear in the destination address field of any IP datagram. For example, calling <see cref="Overload:System.Net.NetworkInformation.Ping.Send" /> and specifying IP address "000.0.0.0" returns this status.</summary>
       </Docs>
@@ -72,6 +79,9 @@
       <MemberSignature Language="C#" Value="BadHeader" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus BadHeader = int32(11042)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.BadHeader" />
+      <MemberSignature Language="VB.NET" Value="BadHeader" />
+      <MemberSignature Language="F#" Value="BadHeader = 11042" Usage="System.Net.NetworkInformation.IPStatus.BadHeader" />
+      <MemberSignature Language="C++ CLI" Value="BadHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -90,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11042</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because the header is invalid.</summary>
       </Docs>
@@ -98,6 +109,9 @@
       <MemberSignature Language="C#" Value="BadOption" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus BadOption = int32(11007)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.BadOption" />
+      <MemberSignature Language="VB.NET" Value="BadOption" />
+      <MemberSignature Language="F#" Value="BadOption = 11007" Usage="System.Net.NetworkInformation.IPStatus.BadOption" />
+      <MemberSignature Language="C++ CLI" Value="BadOption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -116,6 +130,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11007</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because it contains an invalid option.</summary>
       </Docs>
@@ -124,6 +139,9 @@
       <MemberSignature Language="C#" Value="BadRoute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus BadRoute = int32(11012)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.BadRoute" />
+      <MemberSignature Language="VB.NET" Value="BadRoute" />
+      <MemberSignature Language="F#" Value="BadRoute = 11012" Usage="System.Net.NetworkInformation.IPStatus.BadRoute" />
+      <MemberSignature Language="C++ CLI" Value="BadRoute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -142,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11012</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because there is no valid route between the source and destination computers.</summary>
       </Docs>
@@ -150,6 +169,9 @@
       <MemberSignature Language="C#" Value="DestinationHostUnreachable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus DestinationHostUnreachable = int32(11003)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.DestinationHostUnreachable" />
+      <MemberSignature Language="VB.NET" Value="DestinationHostUnreachable" />
+      <MemberSignature Language="F#" Value="DestinationHostUnreachable = 11003" Usage="System.Net.NetworkInformation.IPStatus.DestinationHostUnreachable" />
+      <MemberSignature Language="C++ CLI" Value="DestinationHostUnreachable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -168,6 +190,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11003</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because the destination computer is not reachable.</summary>
       </Docs>
@@ -176,6 +199,9 @@
       <MemberSignature Language="C#" Value="DestinationNetworkUnreachable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus DestinationNetworkUnreachable = int32(11002)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.DestinationNetworkUnreachable" />
+      <MemberSignature Language="VB.NET" Value="DestinationNetworkUnreachable" />
+      <MemberSignature Language="F#" Value="DestinationNetworkUnreachable = 11002" Usage="System.Net.NetworkInformation.IPStatus.DestinationNetworkUnreachable" />
+      <MemberSignature Language="C++ CLI" Value="DestinationNetworkUnreachable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -194,6 +220,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11002</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because the network that contains the destination computer is not reachable.</summary>
       </Docs>
@@ -202,6 +229,9 @@
       <MemberSignature Language="C#" Value="DestinationPortUnreachable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus DestinationPortUnreachable = int32(11005)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.DestinationPortUnreachable" />
+      <MemberSignature Language="VB.NET" Value="DestinationPortUnreachable" />
+      <MemberSignature Language="F#" Value="DestinationPortUnreachable = 11005" Usage="System.Net.NetworkInformation.IPStatus.DestinationPortUnreachable" />
+      <MemberSignature Language="C++ CLI" Value="DestinationPortUnreachable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -220,6 +250,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11005</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because the port on the destination computer is not available.</summary>
       </Docs>
@@ -228,6 +259,9 @@
       <MemberSignature Language="C#" Value="DestinationProhibited" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus DestinationProhibited = int32(11004)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.DestinationProhibited" />
+      <MemberSignature Language="VB.NET" Value="DestinationProhibited" />
+      <MemberSignature Language="F#" Value="DestinationProhibited = 11004" Usage="System.Net.NetworkInformation.IPStatus.DestinationProhibited" />
+      <MemberSignature Language="C++ CLI" Value="DestinationProhibited" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -246,6 +280,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11004</MemberValue>
       <Docs>
         <summary>The ICMPv6 echo request failed because contact with the destination computer is administratively prohibited. This value applies only to IPv6.</summary>
       </Docs>
@@ -254,6 +289,9 @@
       <MemberSignature Language="C#" Value="DestinationProtocolUnreachable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus DestinationProtocolUnreachable = int32(11004)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.DestinationProtocolUnreachable" />
+      <MemberSignature Language="VB.NET" Value="DestinationProtocolUnreachable" />
+      <MemberSignature Language="F#" Value="DestinationProtocolUnreachable = 11004" Usage="System.Net.NetworkInformation.IPStatus.DestinationProtocolUnreachable" />
+      <MemberSignature Language="C++ CLI" Value="DestinationProtocolUnreachable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -272,6 +310,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11004</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because the destination computer that is specified in an ICMP echo message is not reachable, because it does not support the packet's protocol. This value applies only to IPv4. This value is described in IETF RFC 1812 as Communication Administratively Prohibited.</summary>
       </Docs>
@@ -280,6 +319,9 @@
       <MemberSignature Language="C#" Value="DestinationScopeMismatch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus DestinationScopeMismatch = int32(11045)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.DestinationScopeMismatch" />
+      <MemberSignature Language="VB.NET" Value="DestinationScopeMismatch" />
+      <MemberSignature Language="F#" Value="DestinationScopeMismatch = 11045" Usage="System.Net.NetworkInformation.IPStatus.DestinationScopeMismatch" />
+      <MemberSignature Language="C++ CLI" Value="DestinationScopeMismatch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -298,6 +340,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11045</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because the source address and destination address that are specified in an ICMP echo message are not in the same scope. This is typically caused by a router forwarding a packet using an interface that is outside the scope of the source address. Address scopes (link-local, site-local, and global scope) determine where on the network an address is valid.</summary>
       </Docs>
@@ -306,6 +349,9 @@
       <MemberSignature Language="C#" Value="DestinationUnreachable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus DestinationUnreachable = int32(11040)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.DestinationUnreachable" />
+      <MemberSignature Language="VB.NET" Value="DestinationUnreachable" />
+      <MemberSignature Language="F#" Value="DestinationUnreachable = 11040" Usage="System.Net.NetworkInformation.IPStatus.DestinationUnreachable" />
+      <MemberSignature Language="C++ CLI" Value="DestinationUnreachable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -324,6 +370,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11040</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because the destination computer that is specified in an ICMP echo message is not reachable; the exact cause of problem is unknown.</summary>
       </Docs>
@@ -332,6 +379,9 @@
       <MemberSignature Language="C#" Value="HardwareError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus HardwareError = int32(11008)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.HardwareError" />
+      <MemberSignature Language="VB.NET" Value="HardwareError" />
+      <MemberSignature Language="F#" Value="HardwareError = 11008" Usage="System.Net.NetworkInformation.IPStatus.HardwareError" />
+      <MemberSignature Language="C++ CLI" Value="HardwareError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -350,6 +400,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11008</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because of a hardware error.</summary>
       </Docs>
@@ -358,6 +409,9 @@
       <MemberSignature Language="C#" Value="IcmpError" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus IcmpError = int32(11044)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.IcmpError" />
+      <MemberSignature Language="VB.NET" Value="IcmpError" />
+      <MemberSignature Language="F#" Value="IcmpError = 11044" Usage="System.Net.NetworkInformation.IPStatus.IcmpError" />
+      <MemberSignature Language="C++ CLI" Value="IcmpError" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -376,6 +430,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11044</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because of an ICMP protocol error.</summary>
       </Docs>
@@ -384,6 +439,9 @@
       <MemberSignature Language="C#" Value="NoResources" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus NoResources = int32(11006)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.NoResources" />
+      <MemberSignature Language="VB.NET" Value="NoResources" />
+      <MemberSignature Language="F#" Value="NoResources = 11006" Usage="System.Net.NetworkInformation.IPStatus.NoResources" />
+      <MemberSignature Language="C++ CLI" Value="NoResources" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -402,6 +460,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11006</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because of insufficient network resources.</summary>
       </Docs>
@@ -410,6 +469,9 @@
       <MemberSignature Language="C#" Value="PacketTooBig" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus PacketTooBig = int32(11009)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.PacketTooBig" />
+      <MemberSignature Language="VB.NET" Value="PacketTooBig" />
+      <MemberSignature Language="F#" Value="PacketTooBig = 11009" Usage="System.Net.NetworkInformation.IPStatus.PacketTooBig" />
+      <MemberSignature Language="C++ CLI" Value="PacketTooBig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -428,6 +490,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11009</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because the packet containing the request is larger than the maximum transmission unit (MTU) of a node (router or gateway) located between the source and destination. The MTU defines the maximum size of a transmittable packet.</summary>
       </Docs>
@@ -436,6 +499,9 @@
       <MemberSignature Language="C#" Value="ParameterProblem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus ParameterProblem = int32(11015)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.ParameterProblem" />
+      <MemberSignature Language="VB.NET" Value="ParameterProblem" />
+      <MemberSignature Language="F#" Value="ParameterProblem = 11015" Usage="System.Net.NetworkInformation.IPStatus.ParameterProblem" />
+      <MemberSignature Language="C++ CLI" Value="ParameterProblem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -454,6 +520,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11015</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because a node (router or gateway) encountered problems while processing the packet header. This is the status if, for example, the header contains invalid field data or an unrecognized option.</summary>
       </Docs>
@@ -462,6 +529,9 @@
       <MemberSignature Language="C#" Value="SourceQuench" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus SourceQuench = int32(11016)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.SourceQuench" />
+      <MemberSignature Language="VB.NET" Value="SourceQuench" />
+      <MemberSignature Language="F#" Value="SourceQuench = 11016" Usage="System.Net.NetworkInformation.IPStatus.SourceQuench" />
+      <MemberSignature Language="C++ CLI" Value="SourceQuench" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -480,6 +550,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11016</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because the packet was discarded. This occurs when the source computer's output queue has insufficient storage space, or when packets arrive at the destination too quickly to be processed.</summary>
       </Docs>
@@ -488,6 +559,9 @@
       <MemberSignature Language="C#" Value="Success" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus Success = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.Success" />
+      <MemberSignature Language="VB.NET" Value="Success" />
+      <MemberSignature Language="F#" Value="Success = 0" Usage="System.Net.NetworkInformation.IPStatus.Success" />
+      <MemberSignature Language="C++ CLI" Value="Success" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -506,6 +580,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The ICMP echo request succeeded; an ICMP echo reply was received. When you get this status code, the other <see cref="T:System.Net.NetworkInformation.PingReply" /> properties contain valid data.</summary>
       </Docs>
@@ -514,6 +589,9 @@
       <MemberSignature Language="C#" Value="TimedOut" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus TimedOut = int32(11010)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.TimedOut" />
+      <MemberSignature Language="VB.NET" Value="TimedOut" />
+      <MemberSignature Language="F#" Value="TimedOut = 11010" Usage="System.Net.NetworkInformation.IPStatus.TimedOut" />
+      <MemberSignature Language="C++ CLI" Value="TimedOut" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -532,6 +610,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11010</MemberValue>
       <Docs>
         <summary>The ICMP echo Reply was not received within the allotted time. The default time allowed for replies is 5 seconds. You can change this value using the <see cref="Overload:System.Net.NetworkInformation.Ping.Send" /> or <see cref="Overload:System.Net.NetworkInformation.Ping.SendAsync" /> methods that take a <paramref name="timeout" /> parameter.</summary>
       </Docs>
@@ -540,6 +619,9 @@
       <MemberSignature Language="C#" Value="TimeExceeded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus TimeExceeded = int32(11041)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.TimeExceeded" />
+      <MemberSignature Language="VB.NET" Value="TimeExceeded" />
+      <MemberSignature Language="F#" Value="TimeExceeded = 11041" Usage="System.Net.NetworkInformation.IPStatus.TimeExceeded" />
+      <MemberSignature Language="C++ CLI" Value="TimeExceeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -558,6 +640,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11041</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because its Time to Live (TTL) value reached zero, causing the forwarding node (router or gateway) to discard the packet.</summary>
       </Docs>
@@ -566,6 +649,9 @@
       <MemberSignature Language="C#" Value="TtlExpired" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus TtlExpired = int32(11013)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.TtlExpired" />
+      <MemberSignature Language="VB.NET" Value="TtlExpired" />
+      <MemberSignature Language="F#" Value="TtlExpired = 11013" Usage="System.Net.NetworkInformation.IPStatus.TtlExpired" />
+      <MemberSignature Language="C++ CLI" Value="TtlExpired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -584,6 +670,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11013</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because its Time to Live (TTL) value reached zero, causing the forwarding node (router or gateway) to discard the packet.</summary>
       </Docs>
@@ -592,6 +679,9 @@
       <MemberSignature Language="C#" Value="TtlReassemblyTimeExceeded" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus TtlReassemblyTimeExceeded = int32(11014)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.TtlReassemblyTimeExceeded" />
+      <MemberSignature Language="VB.NET" Value="TtlReassemblyTimeExceeded" />
+      <MemberSignature Language="F#" Value="TtlReassemblyTimeExceeded = 11014" Usage="System.Net.NetworkInformation.IPStatus.TtlReassemblyTimeExceeded" />
+      <MemberSignature Language="C++ CLI" Value="TtlReassemblyTimeExceeded" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -610,6 +700,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11014</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because the packet was divided into fragments for transmission and all of the fragments were not received within the time allotted for reassembly. RFC 2460 (available at www.ietf.org) specifies 60 seconds as the time limit within which all packet fragments must be received.</summary>
       </Docs>
@@ -618,6 +709,9 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus Unknown = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = -1" Usage="System.Net.NetworkInformation.IPStatus.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -636,6 +730,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed for an unknown reason.</summary>
       </Docs>
@@ -644,6 +739,9 @@
       <MemberSignature Language="C#" Value="UnrecognizedNextHeader" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.NetworkInformation.IPStatus UnrecognizedNextHeader = int32(11043)" />
       <MemberSignature Language="DocId" Value="F:System.Net.NetworkInformation.IPStatus.UnrecognizedNextHeader" />
+      <MemberSignature Language="VB.NET" Value="UnrecognizedNextHeader" />
+      <MemberSignature Language="F#" Value="UnrecognizedNextHeader = 11043" Usage="System.Net.NetworkInformation.IPStatus.UnrecognizedNextHeader" />
+      <MemberSignature Language="C++ CLI" Value="UnrecognizedNextHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Ping</AssemblyName>
@@ -662,6 +760,7 @@
       <ReturnValue>
         <ReturnType>System.Net.NetworkInformation.IPStatus</ReturnType>
       </ReturnValue>
+      <MemberValue>11043</MemberValue>
       <Docs>
         <summary>The ICMP echo request failed because the Next Header field does not contain a recognized value. The Next Header field indicates the extension header type (if present) or the protocol above the IP layer, for example, TCP or UDP.</summary>
       </Docs>

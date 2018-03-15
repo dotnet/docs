@@ -1,7 +1,10 @@
-<Type Name="RunWorkerCompletedEventArgs" FullName="System.ComponentModel.RunWorkerCompletedEventArgs">
+﻿<Type Name="RunWorkerCompletedEventArgs" FullName="System.ComponentModel.RunWorkerCompletedEventArgs">
   <TypeSignature Language="C#" Value="public class RunWorkerCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RunWorkerCompletedEventArgs extends System.ComponentModel.AsyncCompletedEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.RunWorkerCompletedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class RunWorkerCompletedEventArgs&#xA;Inherits AsyncCompletedEventArgs" />
+  <TypeSignature Language="F#" Value="type RunWorkerCompletedEventArgs = class&#xA;    inherit AsyncCompletedEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RunWorkerCompletedEventArgs : System::ComponentModel::AsyncCompletedEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -49,6 +52,9 @@
       <MemberSignature Language="C#" Value="public RunWorkerCompletedEventArgs (object result, Exception error, bool cancelled);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object result, class System.Exception error, bool cancelled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.RunWorkerCompletedEventArgs.#ctor(System.Object,System.Exception,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (result As Object, error As Exception, cancelled As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.RunWorkerCompletedEventArgs : obj * Exception * bool -&gt; System.ComponentModel.RunWorkerCompletedEventArgs" Usage="new System.ComponentModel.RunWorkerCompletedEventArgs (result, error, cancelled)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RunWorkerCompletedEventArgs(System::Object ^ result, Exception ^ error, bool cancelled);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -82,6 +88,9 @@
       <MemberSignature Language="C#" Value="public object Result { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Result" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.RunWorkerCompletedEventArgs.Result" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Result As Object" />
+      <MemberSignature Language="F#" Value="member this.Result : obj" Usage="System.ComponentModel.RunWorkerCompletedEventArgs.Result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Result { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -131,6 +140,9 @@
       <MemberSignature Language="C#" Value="public object UserState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object UserState" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.RunWorkerCompletedEventArgs.UserState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserState As Object" />
+      <MemberSignature Language="F#" Value="member this.UserState : obj" Usage="System.ComponentModel.RunWorkerCompletedEventArgs.UserState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ UserState { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>

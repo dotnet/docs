@@ -1,7 +1,10 @@
-<Type Name="UnescapedXmlDiagnosticData" FullName="System.Diagnostics.UnescapedXmlDiagnosticData">
+﻿<Type Name="UnescapedXmlDiagnosticData" FullName="System.Diagnostics.UnescapedXmlDiagnosticData">
   <TypeSignature Language="C#" Value="public class UnescapedXmlDiagnosticData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UnescapedXmlDiagnosticData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.UnescapedXmlDiagnosticData" />
+  <TypeSignature Language="VB.NET" Value="Public Class UnescapedXmlDiagnosticData" />
+  <TypeSignature Language="F#" Value="type UnescapedXmlDiagnosticData = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UnescapedXmlDiagnosticData" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public UnescapedXmlDiagnosticData (string xmlPayload);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string xmlPayload) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.UnescapedXmlDiagnosticData.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (xmlPayload As String)" />
+      <MemberSignature Language="F#" Value="new System.Diagnostics.UnescapedXmlDiagnosticData : string -&gt; System.Diagnostics.UnescapedXmlDiagnosticData" Usage="new System.Diagnostics.UnescapedXmlDiagnosticData xmlPayload" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UnescapedXmlDiagnosticData(System::String ^ xmlPayload);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -73,6 +79,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.UnescapedXmlDiagnosticData.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="unescapedXmlDiagnosticData.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -92,6 +101,9 @@
       <MemberSignature Language="C#" Value="public string UnescapedXml { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UnescapedXml" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.UnescapedXmlDiagnosticData.UnescapedXml" />
+      <MemberSignature Language="VB.NET" Value="Public Property UnescapedXml As String" />
+      <MemberSignature Language="F#" Value="member this.UnescapedXml : string with get, set" Usage="System.Diagnostics.UnescapedXmlDiagnosticData.UnescapedXml" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UnescapedXml { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

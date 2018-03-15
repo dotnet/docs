@@ -1,7 +1,10 @@
-<Type Name="SoapHttpClientProtocol" FullName="System.Web.Services.Protocols.SoapHttpClientProtocol">
+﻿<Type Name="SoapHttpClientProtocol" FullName="System.Web.Services.Protocols.SoapHttpClientProtocol">
   <TypeSignature Language="C#" Value="public class SoapHttpClientProtocol : System.Web.Services.Protocols.HttpWebClientProtocol" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapHttpClientProtocol extends System.Web.Services.Protocols.HttpWebClientProtocol" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Protocols.SoapHttpClientProtocol" />
+  <TypeSignature Language="VB.NET" Value="Public Class SoapHttpClientProtocol&#xA;Inherits HttpWebClientProtocol" />
+  <TypeSignature Language="F#" Value="type SoapHttpClientProtocol = class&#xA;    inherit HttpWebClientProtocol" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapHttpClientProtocol : System::Web::Services::Protocols::HttpWebClientProtocol" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -55,6 +58,8 @@
       <MemberSignature Language="C#" Value="public SoapHttpClientProtocol ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHttpClientProtocol.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapHttpClientProtocol();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -71,6 +76,9 @@
       <MemberSignature Language="C#" Value="protected IAsyncResult BeginInvoke (string methodName, object[] parameters, AsyncCallback callback, object asyncState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.IAsyncResult BeginInvoke(string methodName, object[] parameters, class System.AsyncCallback callback, object asyncState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHttpClientProtocol.BeginInvoke(System.String,System.Object[],System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function BeginInvoke (methodName As String, parameters As Object(), callback As AsyncCallback, asyncState As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginInvoke : string * obj[] * AsyncCallback * obj -&gt; IAsyncResult" Usage="soapHttpClientProtocol.BeginInvoke (methodName, parameters, callback, asyncState)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; IAsyncResult ^ BeginInvoke(System::String ^ methodName, cli::array &lt;System::Object ^&gt; ^ parameters, AsyncCallback ^ callback, System::Object ^ asyncState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -136,6 +144,9 @@
       <MemberSignature Language="C#" Value="public void Discover ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Discover() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHttpClientProtocol.Discover" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Discover ()" />
+      <MemberSignature Language="F#" Value="member this.Discover : unit -&gt; unit" Usage="soapHttpClientProtocol.Discover " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Discover();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -183,6 +194,9 @@
       <MemberSignature Language="C#" Value="protected object[] EndInvoke (IAsyncResult asyncResult);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object[] EndInvoke(class System.IAsyncResult asyncResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHttpClientProtocol.EndInvoke(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function EndInvoke (asyncResult As IAsyncResult) As Object()" />
+      <MemberSignature Language="F#" Value="member this.EndInvoke : IAsyncResult -&gt; obj[]" Usage="soapHttpClientProtocol.EndInvoke asyncResult" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Object ^&gt; ^ EndInvoke(IAsyncResult ^ asyncResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -238,6 +252,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Xml.XmlReader GetReaderForMessage (System.Web.Services.Protocols.SoapClientMessage message, int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xml.XmlReader GetReaderForMessage(class System.Web.Services.Protocols.SoapClientMessage message, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHttpClientProtocol.GetReaderForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetReaderForMessage (message As SoapClientMessage, bufferSize As Integer) As XmlReader" />
+      <MemberSignature Language="F#" Value="abstract member GetReaderForMessage : System.Web.Services.Protocols.SoapClientMessage * int -&gt; System.Xml.XmlReader&#xA;override this.GetReaderForMessage : System.Web.Services.Protocols.SoapClientMessage * int -&gt; System.Xml.XmlReader" Usage="soapHttpClientProtocol.GetReaderForMessage (message, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xml::XmlReader ^ GetReaderForMessage(System::Web::Services::Protocols::SoapClientMessage ^ message, int bufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -263,6 +280,8 @@
       <MemberSignature Language="C#" Value="protected override System.Net.WebRequest GetWebRequest (Uri uri);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Net.WebRequest GetWebRequest(class System.Uri uri) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHttpClientProtocol.GetWebRequest(System.Uri)" />
+      <MemberSignature Language="F#" Value="override this.GetWebRequest : Uri -&gt; System.Net.WebRequest" Usage="soapHttpClientProtocol.GetWebRequest uri" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Net::WebRequest ^ GetWebRequest(Uri ^ uri);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -299,6 +318,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Xml.XmlWriter GetWriterForMessage (System.Web.Services.Protocols.SoapClientMessage message, int bufferSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Xml.XmlWriter GetWriterForMessage(class System.Web.Services.Protocols.SoapClientMessage message, int32 bufferSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHttpClientProtocol.GetWriterForMessage(System.Web.Services.Protocols.SoapClientMessage,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetWriterForMessage (message As SoapClientMessage, bufferSize As Integer) As XmlWriter" />
+      <MemberSignature Language="F#" Value="abstract member GetWriterForMessage : System.Web.Services.Protocols.SoapClientMessage * int -&gt; System.Xml.XmlWriter&#xA;override this.GetWriterForMessage : System.Web.Services.Protocols.SoapClientMessage * int -&gt; System.Xml.XmlWriter" Usage="soapHttpClientProtocol.GetWriterForMessage (message, bufferSize)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Xml::XmlWriter ^ GetWriterForMessage(System::Web::Services::Protocols::SoapClientMessage ^ message, int bufferSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -321,9 +343,17 @@
       </Docs>
     </Member>
     <Member MemberName="Invoke">
-      <MemberSignature Language="C#" Value="protected object[] Invoke (string method_name, object[] parameters);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object[] Invoke(string method_name, object[] parameters) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])" />
+      <MemberSignature Language="C#" Value="protected object[] Invoke (string methodName, object[] parameters);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object[] Invoke(string methodName, object[] parameters) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Function Invoke (methodName As String, parameters As Object()) As Object()" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="member this.Invoke : string * obj[] -&gt; obj[]" Usage="soapHttpClientProtocol.Invoke (method_name, parameters)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Object ^&gt; ^ Invoke(System::String ^ methodName, cli::array &lt;System::Object ^&gt; ^ parameters);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected object[] Invoke (string method_name, object[] parameters);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object[] Invoke(string method_name, object[] parameters) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHttpClientProtocol.Invoke(System.String,System.Object[])" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Function Invoke (method_name As String, parameters As Object()) As Object()" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; cli::array &lt;System::Object ^&gt; ^ Invoke(System::String ^ method_name, cli::array &lt;System::Object ^&gt; ^ parameters);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -334,10 +364,12 @@
         <ReturnType>System.Object[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="methodName" Type="System.String" />
-        <Parameter Name="parameters" Type="System.Object[]" />
+        <Parameter Name="methodName" Type="System.String" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="method_name" Type="System.String" Index="0" FrameworkAlternate="xamarinandroid-7.1" />
+        <Parameter Name="parameters" Type="System.Object[]" Index="1" />
       </Parameters>
       <Docs>
+        <param name="methodName">To be added.</param>
         <param name="method_name">To be added.</param>
         <param name="parameters">An array of objects that contains the parameters to pass to the XML Web service. The order of the values in the array corresponds to the order of the parameters in the calling method of the derived class.</param>
         <summary>Invokes an XML Web service method synchronously using SOAP.</summary>
@@ -374,10 +406,23 @@
         <altmember cref="T:System.Web.Services.Protocols.WebClientProtocol" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="InvokeAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Invokes the specified method asynchronously.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="InvokeAsync">
       <MemberSignature Language="C#" Value="protected void InvokeAsync (string methodName, object[] parameters, System.Threading.SendOrPostCallback callback);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InvokeAsync(string methodName, object[] parameters, class System.Threading.SendOrPostCallback callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub InvokeAsync (methodName As String, parameters As Object(), callback As SendOrPostCallback)" />
+      <MemberSignature Language="F#" Value="member this.InvokeAsync : string * obj[] * System.Threading.SendOrPostCallback -&gt; unit" Usage="soapHttpClientProtocol.InvokeAsync (methodName, parameters, callback)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InvokeAsync(System::String ^ methodName, cli::array &lt;System::Object ^&gt; ^ parameters, System::Threading::SendOrPostCallback ^ callback);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -404,6 +449,9 @@
       <MemberSignature Language="C#" Value="protected void InvokeAsync (string methodName, object[] parameters, System.Threading.SendOrPostCallback callback, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void InvokeAsync(string methodName, object[] parameters, class System.Threading.SendOrPostCallback callback, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Protocols.SoapHttpClientProtocol.InvokeAsync(System.String,System.Object[],System.Threading.SendOrPostCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub InvokeAsync (methodName As String, parameters As Object(), callback As SendOrPostCallback, userState As Object)" />
+      <MemberSignature Language="F#" Value="member this.InvokeAsync : string * obj[] * System.Threading.SendOrPostCallback * obj -&gt; unit" Usage="soapHttpClientProtocol.InvokeAsync (methodName, parameters, callback, userState)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void InvokeAsync(System::String ^ methodName, cli::array &lt;System::Object ^&gt; ^ parameters, System::Threading::SendOrPostCallback ^ callback, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -432,6 +480,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Services.Protocols.SoapProtocolVersion SoapVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Services.Protocols.SoapProtocolVersion SoapVersion" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Protocols.SoapHttpClientProtocol.SoapVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property SoapVersion As SoapProtocolVersion" />
+      <MemberSignature Language="F#" Value="member this.SoapVersion : System.Web.Services.Protocols.SoapProtocolVersion with get, set" Usage="System.Web.Services.Protocols.SoapHttpClientProtocol.SoapVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Services::Protocols::SoapProtocolVersion SoapVersion { System::Web::Services::Protocols::SoapProtocolVersion get(); void set(System::Web::Services::Protocols::SoapProtocolVersion value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -472,15 +523,5 @@
         <altmember cref="P:System.Web.HttpContext.Items" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="InvokeAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Invokes the specified method asynchronously.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

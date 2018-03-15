@@ -1,7 +1,10 @@
-<Type Name="XmlSchemaPatternFacet" FullName="System.Xml.Schema.XmlSchemaPatternFacet">
+﻿<Type Name="XmlSchemaPatternFacet" FullName="System.Xml.Schema.XmlSchemaPatternFacet">
   <TypeSignature Language="C#" Value="public class XmlSchemaPatternFacet : System.Xml.Schema.XmlSchemaFacet" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlSchemaPatternFacet extends System.Xml.Schema.XmlSchemaFacet" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaPatternFacet" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaPatternFacet&#xA;Inherits XmlSchemaFacet" />
+  <TypeSignature Language="F#" Value="type XmlSchemaPatternFacet = class&#xA;    inherit XmlSchemaFacet" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaPatternFacet : System::Xml::Schema::XmlSchemaFacet" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public XmlSchemaPatternFacet ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaPatternFacet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaPatternFacet();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

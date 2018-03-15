@@ -1,7 +1,10 @@
-<Type Name="TileBrush" FullName="System.Windows.Media.TileBrush">
+﻿<Type Name="TileBrush" FullName="System.Windows.Media.TileBrush">
   <TypeSignature Language="C#" Value="public abstract class TileBrush : System.Windows.Media.Brush" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract TileBrush extends System.Windows.Media.Brush" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.TileBrush" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class TileBrush&#xA;Inherits Brush" />
+  <TypeSignature Language="F#" Value="type TileBrush = class&#xA;    inherit Brush" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TileBrush abstract : System::Windows::Media::Brush" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -72,6 +75,8 @@ Components of a TileBrush with a TileMode of Tile
       <MemberSignature Language="C#" Value="protected TileBrush ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TileBrush.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; TileBrush();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -87,6 +92,9 @@ Components of a TileBrush with a TileMode of Tile
       <MemberSignature Language="C#" Value="public System.Windows.Media.AlignmentX AlignmentX { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.AlignmentX AlignmentX" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TileBrush.AlignmentX" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlignmentX As AlignmentX" />
+      <MemberSignature Language="F#" Value="member this.AlignmentX : System.Windows.Media.AlignmentX with get, set" Usage="System.Windows.Media.TileBrush.AlignmentX" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::AlignmentX AlignmentX { System::Windows::Media::AlignmentX get(); void set(System::Windows::Media::AlignmentX value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -128,6 +136,9 @@ Components of a TileBrush with a TileMode of Tile
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AlignmentXProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AlignmentXProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileBrush.AlignmentXProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AlignmentXProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable AlignmentXProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.TileBrush.AlignmentXProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AlignmentXProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -145,6 +156,9 @@ Components of a TileBrush with a TileMode of Tile
       <MemberSignature Language="C#" Value="public System.Windows.Media.AlignmentY AlignmentY { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.AlignmentY AlignmentY" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TileBrush.AlignmentY" />
+      <MemberSignature Language="VB.NET" Value="Public Property AlignmentY As AlignmentY" />
+      <MemberSignature Language="F#" Value="member this.AlignmentY : System.Windows.Media.AlignmentY with get, set" Usage="System.Windows.Media.TileBrush.AlignmentY" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::AlignmentY AlignmentY { System::Windows::Media::AlignmentY get(); void set(System::Windows::Media::AlignmentY value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -186,6 +200,9 @@ Components of a TileBrush with a TileMode of Tile
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty AlignmentYProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty AlignmentYProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileBrush.AlignmentYProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly AlignmentYProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable AlignmentYProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.TileBrush.AlignmentYProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ AlignmentYProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -203,6 +220,9 @@ Components of a TileBrush with a TileMode of Tile
       <MemberSignature Language="C#" Value="public System.Windows.Media.TileBrush Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.TileBrush Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TileBrush.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As TileBrush" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.TileBrush" Usage="tileBrush.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TileBrush ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -233,6 +253,9 @@ Components of a TileBrush with a TileMode of Tile
       <MemberSignature Language="C#" Value="public System.Windows.Media.TileBrush CloneCurrentValue ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.TileBrush CloneCurrentValue() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TileBrush.CloneCurrentValue" />
+      <MemberSignature Language="VB.NET" Value="Public Function CloneCurrentValue () As TileBrush" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValue : unit -&gt; System.Windows.Media.TileBrush" Usage="tileBrush.CloneCurrentValue " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::TileBrush ^ CloneCurrentValue();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -261,6 +284,9 @@ Components of a TileBrush with a TileMode of Tile
       <MemberSignature Language="C#" Value="protected abstract void GetContentBounds (out System.Windows.Rect contentBounds);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void GetContentBounds([out] valuetype System.Windows.Rect&amp; contentBounds) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.TileBrush.GetContentBounds(System.Windows.Rect@)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub GetContentBounds (ByRef contentBounds As Rect)" />
+      <MemberSignature Language="F#" Value="abstract member GetContentBounds :  -&gt; unit" Usage="tileBrush.GetContentBounds contentBounds" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void GetContentBounds([Runtime::InteropServices::Out] System::Windows::Rect % contentBounds);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -282,6 +308,9 @@ Components of a TileBrush with a TileMode of Tile
       <MemberSignature Language="C#" Value="public System.Windows.Media.Stretch Stretch { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Stretch Stretch" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TileBrush.Stretch" />
+      <MemberSignature Language="VB.NET" Value="Public Property Stretch As Stretch" />
+      <MemberSignature Language="F#" Value="member this.Stretch : System.Windows.Media.Stretch with get, set" Usage="System.Windows.Media.TileBrush.Stretch" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Stretch Stretch { System::Windows::Media::Stretch get(); void set(System::Windows::Media::Stretch value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -340,6 +369,9 @@ TileBrush with different Stretch settings
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty StretchProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty StretchProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileBrush.StretchProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly StretchProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable StretchProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.TileBrush.StretchProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ StretchProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -357,6 +389,9 @@ TileBrush with different Stretch settings
       <MemberSignature Language="C#" Value="public System.Windows.Media.TileMode TileMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.TileMode TileMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TileBrush.TileMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property TileMode As TileMode" />
+      <MemberSignature Language="F#" Value="member this.TileMode : System.Windows.Media.TileMode with get, set" Usage="System.Windows.Media.TileBrush.TileMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::TileMode TileMode { System::Windows::Media::TileMode get(); void set(System::Windows::Media::TileMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -395,6 +430,9 @@ Available tile modes for the TileMode enumeration
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty TileModeProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty TileModeProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileBrush.TileModeProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly TileModeProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable TileModeProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.TileBrush.TileModeProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ TileModeProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -412,6 +450,9 @@ Available tile modes for the TileMode enumeration
       <MemberSignature Language="C#" Value="public System.Windows.Rect Viewbox { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect Viewbox" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TileBrush.Viewbox" />
+      <MemberSignature Language="VB.NET" Value="Public Property Viewbox As Rect" />
+      <MemberSignature Language="F#" Value="member this.Viewbox : System.Windows.Rect with get, set" Usage="System.Windows.Media.TileBrush.Viewbox" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect Viewbox { System::Windows::Rect get(); void set(System::Windows::Rect value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -505,6 +546,9 @@ Similar TileBrush but with tiling and a different Viewport setting
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ViewboxProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ViewboxProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileBrush.ViewboxProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ViewboxProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ViewboxProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.TileBrush.ViewboxProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ViewboxProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -522,6 +566,9 @@ Similar TileBrush but with tiling and a different Viewport setting
       <MemberSignature Language="C#" Value="public System.Windows.Media.BrushMappingMode ViewboxUnits { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.BrushMappingMode ViewboxUnits" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TileBrush.ViewboxUnits" />
+      <MemberSignature Language="VB.NET" Value="Public Property ViewboxUnits As BrushMappingMode" />
+      <MemberSignature Language="F#" Value="member this.ViewboxUnits : System.Windows.Media.BrushMappingMode with get, set" Usage="System.Windows.Media.TileBrush.ViewboxUnits" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::BrushMappingMode ViewboxUnits { System::Windows::Media::BrushMappingMode get(); void set(System::Windows::Media::BrushMappingMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -561,6 +608,9 @@ Similar TileBrush but with tiling and a different Viewport setting
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ViewboxUnitsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ViewboxUnitsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileBrush.ViewboxUnitsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ViewboxUnitsProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ViewboxUnitsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.TileBrush.ViewboxUnitsProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ViewboxUnitsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -578,6 +628,9 @@ Similar TileBrush but with tiling and a different Viewport setting
       <MemberSignature Language="C#" Value="public System.Windows.Rect Viewport { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Rect Viewport" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TileBrush.Viewport" />
+      <MemberSignature Language="VB.NET" Value="Public Property Viewport As Rect" />
+      <MemberSignature Language="F#" Value="member this.Viewport : System.Windows.Rect with get, set" Usage="System.Windows.Media.TileBrush.Viewport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Rect Viewport { System::Windows::Rect get(); void set(System::Windows::Rect value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -630,6 +683,9 @@ Relative and absolute ViewportUnits
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ViewportProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ViewportProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileBrush.ViewportProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ViewportProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ViewportProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.TileBrush.ViewportProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ViewportProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -647,6 +703,9 @@ Relative and absolute ViewportUnits
       <MemberSignature Language="C#" Value="public System.Windows.Media.BrushMappingMode ViewportUnits { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.BrushMappingMode ViewportUnits" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.TileBrush.ViewportUnits" />
+      <MemberSignature Language="VB.NET" Value="Public Property ViewportUnits As BrushMappingMode" />
+      <MemberSignature Language="F#" Value="member this.ViewportUnits : System.Windows.Media.BrushMappingMode with get, set" Usage="System.Windows.Media.TileBrush.ViewportUnits" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::BrushMappingMode ViewportUnits { System::Windows::Media::BrushMappingMode get(); void set(System::Windows::Media::BrushMappingMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -691,6 +750,9 @@ Relative and absolute ViewportUnits
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ViewportUnitsProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ViewportUnitsProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.TileBrush.ViewportUnitsProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ViewportUnitsProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ViewportUnitsProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.TileBrush.ViewportUnitsProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ViewportUnitsProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

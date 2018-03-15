@@ -1,7 +1,10 @@
-<Type Name="QueryContext" FullName="System.Web.UI.WebControls.QueryContext">
+﻿<Type Name="QueryContext" FullName="System.Web.UI.WebControls.QueryContext">
   <TypeSignature Language="C#" Value="public class QueryContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.QueryContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class QueryContext" />
+  <TypeSignature Language="F#" Value="type QueryContext = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class QueryContext" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public QueryContext (System.Collections.Generic.IDictionary&lt;string,object&gt; whereParameters, System.Collections.Generic.IDictionary&lt;string,object&gt; orderGroupsByParameters, System.Collections.Specialized.IOrderedDictionary orderByParameters, System.Collections.Generic.IDictionary&lt;string,object&gt; groupByParameters, System.Collections.Generic.IDictionary&lt;string,object&gt; selectParameters, System.Web.UI.DataSourceSelectArguments arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IDictionary`2&lt;string, object&gt; whereParameters, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; orderGroupsByParameters, class System.Collections.Specialized.IOrderedDictionary orderByParameters, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; groupByParameters, class System.Collections.Generic.IDictionary`2&lt;string, object&gt; selectParameters, class System.Web.UI.DataSourceSelectArguments arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.QueryContext.#ctor(System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Specialized.IOrderedDictionary,System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.Object},System.Web.UI.DataSourceSelectArguments)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (whereParameters As IDictionary(Of String, Object), orderGroupsByParameters As IDictionary(Of String, Object), orderByParameters As IOrderedDictionary, groupByParameters As IDictionary(Of String, Object), selectParameters As IDictionary(Of String, Object), arguments As DataSourceSelectArguments)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.QueryContext : System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Collections.Specialized.IOrderedDictionary * System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Collections.Generic.IDictionary&lt;string, obj&gt; * System.Web.UI.DataSourceSelectArguments -&gt; System.Web.UI.WebControls.QueryContext" Usage="new System.Web.UI.WebControls.QueryContext (whereParameters, orderGroupsByParameters, orderByParameters, groupByParameters, selectParameters, arguments)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryContext(System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ whereParameters, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ orderGroupsByParameters, System::Collections::Specialized::IOrderedDictionary ^ orderByParameters, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ groupByParameters, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ selectParameters, System::Web::UI::DataSourceSelectArguments ^ arguments);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -47,6 +53,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataSourceSelectArguments Arguments { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.DataSourceSelectArguments Arguments" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryContext.Arguments" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Arguments As DataSourceSelectArguments" />
+      <MemberSignature Language="F#" Value="member this.Arguments : System.Web.UI.DataSourceSelectArguments" Usage="System.Web.UI.WebControls.QueryContext.Arguments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::DataSourceSelectArguments ^ Arguments { System::Web::UI::DataSourceSelectArguments ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -65,6 +74,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; GroupByParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; GroupByParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryContext.GroupByParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GroupByParameters As IDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.GroupByParameters : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Web.UI.WebControls.QueryContext.GroupByParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ GroupByParameters { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -83,6 +95,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary OrderByParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary OrderByParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryContext.OrderByParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OrderByParameters As IOrderedDictionary" />
+      <MemberSignature Language="F#" Value="member this.OrderByParameters : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.QueryContext.OrderByParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ OrderByParameters { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -101,6 +116,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; OrderGroupsByParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; OrderGroupsByParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryContext.OrderGroupsByParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OrderGroupsByParameters As IDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.OrderGroupsByParameters : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Web.UI.WebControls.QueryContext.OrderGroupsByParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ OrderGroupsByParameters { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -119,6 +137,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; SelectParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; SelectParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryContext.SelectParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectParameters As IDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.SelectParameters : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Web.UI.WebControls.QueryContext.SelectParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ SelectParameters { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -137,6 +158,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,object&gt; WhereParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, object&gt; WhereParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.QueryContext.WhereParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WhereParameters As IDictionary(Of String, Object)" />
+      <MemberSignature Language="F#" Value="member this.WhereParameters : System.Collections.Generic.IDictionary&lt;string, obj&gt;" Usage="System.Web.UI.WebControls.QueryContext.WhereParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ WhereParameters { System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

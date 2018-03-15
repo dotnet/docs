@@ -1,7 +1,10 @@
-<Type Name="PropertyManager" FullName="System.Windows.Forms.PropertyManager">
+﻿<Type Name="PropertyManager" FullName="System.Windows.Forms.PropertyManager">
   <TypeSignature Language="C#" Value="public class PropertyManager : System.Windows.Forms.BindingManagerBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyManager extends System.Windows.Forms.BindingManagerBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class PropertyManager&#xA;Inherits BindingManagerBase" />
+  <TypeSignature Language="F#" Value="type PropertyManager = class&#xA;    inherit BindingManagerBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PropertyManager : System::Windows::Forms::BindingManagerBase" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public PropertyManager ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PropertyManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -41,6 +46,9 @@
       <MemberSignature Language="C#" Value="public override void AddNew ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddNew() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.AddNew" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddNew ()" />
+      <MemberSignature Language="F#" Value="override this.AddNew : unit -&gt; unit" Usage="propertyManager.AddNew " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddNew();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -60,6 +68,9 @@
       <MemberSignature Language="C#" Value="public override void CancelCurrentEdit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CancelCurrentEdit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.CancelCurrentEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CancelCurrentEdit ()" />
+      <MemberSignature Language="F#" Value="override this.CancelCurrentEdit : unit -&gt; unit" Usage="propertyManager.CancelCurrentEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CancelCurrentEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -79,6 +90,9 @@
       <MemberSignature Language="C#" Value="public override int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyManager.Count" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Forms.PropertyManager.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Count { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +112,9 @@
       <MemberSignature Language="C#" Value="public override object Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyManager.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Current As Object" />
+      <MemberSignature Language="F#" Value="member this.Current : obj" Usage="System.Windows.Forms.PropertyManager.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Object ^ Current { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -123,6 +140,9 @@
       <MemberSignature Language="C#" Value="public override void EndCurrentEdit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void EndCurrentEdit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.EndCurrentEdit" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub EndCurrentEdit ()" />
+      <MemberSignature Language="F#" Value="override this.EndCurrentEdit : unit -&gt; unit" Usage="propertyManager.EndCurrentEdit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void EndCurrentEdit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -139,9 +159,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetListName">
-      <MemberSignature Language="C#" Value="protected override string GetListName (System.Collections.ArrayList listAccessors);" />
+      <MemberSignature Language="C#" Value="protected internal override string GetListName (System.Collections.ArrayList listAccessors);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance string GetListName(class System.Collections.ArrayList listAccessors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.GetListName(System.Collections.ArrayList)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Function GetListName (listAccessors As ArrayList) As String" />
+      <MemberSignature Language="F#" Value="override this.GetListName : System.Collections.ArrayList -&gt; string" Usage="propertyManager.GetListName listAccessors" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::String ^ GetListName(System::Collections::ArrayList ^ listAccessors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,9 +185,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnCurrentChanged">
-      <MemberSignature Language="C#" Value="protected override void OnCurrentChanged (EventArgs ea);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnCurrentChanged (EventArgs ea);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnCurrentChanged(class System.EventArgs ea) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.OnCurrentChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnCurrentChanged (ea As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnCurrentChanged : EventArgs -&gt; unit" Usage="propertyManager.OnCurrentChanged ea" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnCurrentChanged(EventArgs ^ ea);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -183,9 +209,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnCurrentItemChanged">
-      <MemberSignature Language="C#" Value="protected override void OnCurrentItemChanged (EventArgs ea);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnCurrentItemChanged (EventArgs ea);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnCurrentItemChanged(class System.EventArgs ea) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.OnCurrentItemChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnCurrentItemChanged (ea As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnCurrentItemChanged : EventArgs -&gt; unit" Usage="propertyManager.OnCurrentItemChanged ea" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnCurrentItemChanged(EventArgs ^ ea);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -214,6 +243,9 @@
       <MemberSignature Language="C#" Value="public override int Position { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Position" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.PropertyManager.Position" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Position As Integer" />
+      <MemberSignature Language="F#" Value="member this.Position : int with get, set" Usage="System.Windows.Forms.PropertyManager.Position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Position { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -232,6 +264,9 @@
       <MemberSignature Language="C#" Value="public override void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.RemoveAt : int -&gt; unit" Usage="propertyManager.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -254,6 +289,9 @@
       <MemberSignature Language="C#" Value="public override void ResumeBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResumeBinding() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.ResumeBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResumeBinding ()" />
+      <MemberSignature Language="F#" Value="override this.ResumeBinding : unit -&gt; unit" Usage="propertyManager.ResumeBinding " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResumeBinding();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -273,6 +311,9 @@
       <MemberSignature Language="C#" Value="public override void SuspendBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SuspendBinding() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.SuspendBinding" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SuspendBinding ()" />
+      <MemberSignature Language="F#" Value="override this.SuspendBinding : unit -&gt; unit" Usage="propertyManager.SuspendBinding " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SuspendBinding();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -298,6 +339,9 @@
       <MemberSignature Language="C#" Value="protected override void UpdateIsBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void UpdateIsBinding() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.UpdateIsBinding" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub UpdateIsBinding ()" />
+      <MemberSignature Language="F#" Value="override this.UpdateIsBinding : unit -&gt; unit" Usage="propertyManager.UpdateIsBinding " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void UpdateIsBinding();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

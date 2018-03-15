@@ -1,7 +1,10 @@
-<Type Name="DefaultSettingsSection" FullName="System.Transactions.Configuration.DefaultSettingsSection">
+﻿<Type Name="DefaultSettingsSection" FullName="System.Transactions.Configuration.DefaultSettingsSection">
   <TypeSignature Language="C#" Value="public class DefaultSettingsSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DefaultSettingsSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Transactions.Configuration.DefaultSettingsSection" />
+  <TypeSignature Language="VB.NET" Value="Public Class DefaultSettingsSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type DefaultSettingsSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DefaultSettingsSection : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Transactions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="public DefaultSettingsSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Transactions.Configuration.DefaultSettingsSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DefaultSettingsSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -55,6 +60,9 @@
       <MemberSignature Language="C#" Value="public string DistributedTransactionManagerName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DistributedTransactionManagerName" />
       <MemberSignature Language="DocId" Value="P:System.Transactions.Configuration.DefaultSettingsSection.DistributedTransactionManagerName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DistributedTransactionManagerName As String" />
+      <MemberSignature Language="F#" Value="member this.DistributedTransactionManagerName : string with get, set" Usage="System.Transactions.Configuration.DefaultSettingsSection.DistributedTransactionManagerName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DistributedTransactionManagerName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -93,6 +101,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Transactions.Configuration.DefaultSettingsSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Transactions.Configuration.DefaultSettingsSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>
@@ -111,6 +122,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan Timeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Timeout" />
       <MemberSignature Language="DocId" Value="P:System.Transactions.Configuration.DefaultSettingsSection.Timeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property Timeout As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.Timeout : TimeSpan with get, set" Usage="System.Transactions.Configuration.DefaultSettingsSection.Timeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Timeout { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Transactions</AssemblyName>

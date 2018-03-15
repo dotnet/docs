@@ -1,7 +1,10 @@
-<Type Name="ProtocolMappingElementCollection" FullName="System.ServiceModel.Configuration.ProtocolMappingElementCollection">
+﻿<Type Name="ProtocolMappingElementCollection" FullName="System.ServiceModel.Configuration.ProtocolMappingElementCollection">
   <TypeSignature Language="C#" Value="public sealed class ProtocolMappingElementCollection : System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection&lt;System.ServiceModel.Configuration.ProtocolMappingElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ProtocolMappingElementCollection extends System.ServiceModel.Configuration.ServiceModelEnhancedConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.ProtocolMappingElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.ProtocolMappingElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ProtocolMappingElementCollection&#xA;Inherits ServiceModelEnhancedConfigurationElementCollection(Of ProtocolMappingElement)" />
+  <TypeSignature Language="F#" Value="type ProtocolMappingElementCollection = class&#xA;    inherit ServiceModelEnhancedConfigurationElementCollection&lt;ProtocolMappingElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProtocolMappingElementCollection sealed : System::ServiceModel::Configuration::ServiceModelEnhancedConfigurationElementCollection&lt;System::ServiceModel::Configuration::ProtocolMappingElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public ProtocolMappingElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ProtocolMappingElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ProtocolMappingElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.ProtocolMappingElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="protocolMappingElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="DiscoveryEndpointElement" FullName="System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement">
+﻿<Type Name="DiscoveryEndpointElement" FullName="System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement">
   <TypeSignature Language="C#" Value="public class DiscoveryEndpointElement : System.ServiceModel.Configuration.StandardEndpointElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DiscoveryEndpointElement extends System.ServiceModel.Configuration.StandardEndpointElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class DiscoveryEndpointElement&#xA;Inherits StandardEndpointElement" />
+  <TypeSignature Language="F#" Value="type DiscoveryEndpointElement = class&#xA;    inherit StandardEndpointElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscoveryEndpointElement : System::ServiceModel::Configuration::StandardEndpointElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public DiscoveryEndpointElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscoveryEndpointElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -45,9 +50,11 @@
       </Docs>
     </Member>
     <Member MemberName="CreateServiceEndpoint">
-      <MemberSignature Language="C#" Value="protected override System.ServiceModel.Description.ServiceEndpoint CreateServiceEndpoint (System.ServiceModel.Description.ContractDescription contractDescription);" />
+      <MemberSignature Language="C#" Value="protected internal override System.ServiceModel.Description.ServiceEndpoint CreateServiceEndpoint (System.ServiceModel.Description.ContractDescription contractDescription);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance class System.ServiceModel.Description.ServiceEndpoint CreateServiceEndpoint(class System.ServiceModel.Description.ContractDescription contractDescription) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.CreateServiceEndpoint(System.ServiceModel.Description.ContractDescription)" />
+      <MemberSignature Language="F#" Value="override this.CreateServiceEndpoint : System.ServiceModel.Description.ContractDescription -&gt; System.ServiceModel.Description.ServiceEndpoint" Usage="discoveryEndpointElement.CreateServiceEndpoint contractDescription" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override System::ServiceModel::Description::ServiceEndpoint ^ CreateServiceEndpoint(System::ServiceModel::Description::ContractDescription ^ contractDescription);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -70,6 +77,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.ServiceDiscoveryMode DiscoveryMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Discovery.ServiceDiscoveryMode DiscoveryMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.DiscoveryMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiscoveryMode As ServiceDiscoveryMode" />
+      <MemberSignature Language="F#" Value="member this.DiscoveryMode : System.ServiceModel.Discovery.ServiceDiscoveryMode with get, set" Usage="System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.DiscoveryMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::ServiceDiscoveryMode DiscoveryMode { System::ServiceModel::Discovery::ServiceDiscoveryMode get(); void set(System::ServiceModel::Discovery::ServiceDiscoveryMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -100,6 +110,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Discovery.DiscoveryVersion DiscoveryVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Discovery.DiscoveryVersion DiscoveryVersion" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.DiscoveryVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property DiscoveryVersion As DiscoveryVersion" />
+      <MemberSignature Language="F#" Value="member this.DiscoveryVersion : System.ServiceModel.Discovery.DiscoveryVersion with get, set" Usage="System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.DiscoveryVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Discovery::DiscoveryVersion ^ DiscoveryVersion { System::ServiceModel::Discovery::DiscoveryVersion ^ get(); void set(System::ServiceModel::Discovery::DiscoveryVersion ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -123,9 +136,12 @@
       </Docs>
     </Member>
     <Member MemberName="EndpointType">
-      <MemberSignature Language="C#" Value="protected override Type EndpointType { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override Type EndpointType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type EndpointType" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.EndpointType" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property EndpointType As Type" />
+      <MemberSignature Language="F#" Value="member this.EndpointType : Type" Usage="System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.EndpointType" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property Type ^ EndpointType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -141,9 +157,12 @@
       </Docs>
     </Member>
     <Member MemberName="InitializeFrom">
-      <MemberSignature Language="C#" Value="protected override void InitializeFrom (System.ServiceModel.Description.ServiceEndpoint endpoint);" />
+      <MemberSignature Language="C#" Value="protected internal override void InitializeFrom (System.ServiceModel.Description.ServiceEndpoint endpoint);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void InitializeFrom(class System.ServiceModel.Description.ServiceEndpoint endpoint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.InitializeFrom(System.ServiceModel.Description.ServiceEndpoint)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub InitializeFrom (endpoint As ServiceEndpoint)" />
+      <MemberSignature Language="F#" Value="override this.InitializeFrom : System.ServiceModel.Description.ServiceEndpoint -&gt; unit" Usage="discoveryEndpointElement.InitializeFrom endpoint" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void InitializeFrom(System::ServiceModel::Description::ServiceEndpoint ^ endpoint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -165,6 +184,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan MaxResponseDelay { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan MaxResponseDelay" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.MaxResponseDelay" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxResponseDelay As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.MaxResponseDelay : TimeSpan with get, set" Usage="System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.MaxResponseDelay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan MaxResponseDelay { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -190,10 +212,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnApplyConfiguration">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When called or overridden by a derived class, applies the ConfigurationProperties on the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryEndpoint" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OnApplyConfiguration">
       <MemberSignature Language="C#" Value="protected override void OnApplyConfiguration (System.ServiceModel.Description.ServiceEndpoint endpoint, System.ServiceModel.Configuration.ChannelEndpointElement serviceEndpointElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Configuration.ChannelEndpointElement serviceEndpointElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.OnApplyConfiguration(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Configuration.ChannelEndpointElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnApplyConfiguration (endpoint As ServiceEndpoint, serviceEndpointElement As ChannelEndpointElement)" />
+      <MemberSignature Language="F#" Value="override this.OnApplyConfiguration : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Configuration.ChannelEndpointElement -&gt; unit" Usage="discoveryEndpointElement.OnApplyConfiguration (endpoint, serviceEndpointElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Configuration::ChannelEndpointElement ^ serviceEndpointElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -217,6 +251,8 @@
       <MemberSignature Language="C#" Value="protected override void OnApplyConfiguration (System.ServiceModel.Description.ServiceEndpoint endpoint, System.ServiceModel.Configuration.ServiceEndpointElement serviceEndpointElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnApplyConfiguration(class System.ServiceModel.Description.ServiceEndpoint endpoint, class System.ServiceModel.Configuration.ServiceEndpointElement serviceEndpointElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.OnApplyConfiguration(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Configuration.ServiceEndpointElement)" />
+      <MemberSignature Language="F#" Value="override this.OnApplyConfiguration : System.ServiceModel.Description.ServiceEndpoint * System.ServiceModel.Configuration.ServiceEndpointElement -&gt; unit" Usage="discoveryEndpointElement.OnApplyConfiguration (endpoint, serviceEndpointElement)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnApplyConfiguration(System::ServiceModel::Description::ServiceEndpoint ^ endpoint, System::ServiceModel::Configuration::ServiceEndpointElement ^ serviceEndpointElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -236,10 +272,21 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="OnInitializeAndValidate">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When called or overridden by a derived class, initializes and validates the specified endpoint element.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="OnInitializeAndValidate">
       <MemberSignature Language="C#" Value="protected override void OnInitializeAndValidate (System.ServiceModel.Configuration.ChannelEndpointElement channelEndpointElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitializeAndValidate(class System.ServiceModel.Configuration.ChannelEndpointElement channelEndpointElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.OnInitializeAndValidate(System.ServiceModel.Configuration.ChannelEndpointElement)" />
+      <MemberSignature Language="F#" Value="override this.OnInitializeAndValidate : System.ServiceModel.Configuration.ChannelEndpointElement -&gt; unit" Usage="discoveryEndpointElement.OnInitializeAndValidate channelEndpointElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitializeAndValidate(System::ServiceModel::Configuration::ChannelEndpointElement ^ channelEndpointElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -261,6 +308,8 @@
       <MemberSignature Language="C#" Value="protected override void OnInitializeAndValidate (System.ServiceModel.Configuration.ServiceEndpointElement serviceEndpointElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInitializeAndValidate(class System.ServiceModel.Configuration.ServiceEndpointElement serviceEndpointElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.OnInitializeAndValidate(System.ServiceModel.Configuration.ServiceEndpointElement)" />
+      <MemberSignature Language="F#" Value="override this.OnInitializeAndValidate : System.ServiceModel.Configuration.ServiceEndpointElement -&gt; unit" Usage="discoveryEndpointElement.OnInitializeAndValidate serviceEndpointElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInitializeAndValidate(System::ServiceModel::Configuration::ServiceEndpointElement ^ serviceEndpointElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -282,6 +331,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Discovery.Configuration.DiscoveryEndpointElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
@@ -296,23 +348,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="OnApplyConfiguration">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When called or overridden by a derived class, applies the ConfigurationProperties on the specified <see cref="T:System.ServiceModel.Discovery.DiscoveryEndpoint" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="OnInitializeAndValidate">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel.Discovery</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When called or overridden by a derived class, initializes and validates the specified endpoint element.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

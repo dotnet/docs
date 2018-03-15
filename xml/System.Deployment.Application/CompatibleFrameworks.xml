@@ -1,7 +1,10 @@
-<Type Name="CompatibleFrameworks" FullName="System.Deployment.Application.CompatibleFrameworks">
+﻿<Type Name="CompatibleFrameworks" FullName="System.Deployment.Application.CompatibleFrameworks">
   <TypeSignature Language="C#" Value="public class CompatibleFrameworks" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CompatibleFrameworks extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.CompatibleFrameworks" />
+  <TypeSignature Language="VB.NET" Value="Public Class CompatibleFrameworks" />
+  <TypeSignature Language="F#" Value="type CompatibleFrameworks = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CompatibleFrameworks" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IList&lt;System.Deployment.Application.CompatibleFramework&gt; Frameworks { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IList`1&lt;class System.Deployment.Application.CompatibleFramework&gt; Frameworks" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.CompatibleFrameworks.Frameworks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Frameworks As IList(Of CompatibleFramework)" />
+      <MemberSignature Language="F#" Value="member this.Frameworks : System.Collections.Generic.IList&lt;System.Deployment.Application.CompatibleFramework&gt;" Usage="System.Deployment.Application.CompatibleFrameworks.Frameworks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IList&lt;System::Deployment::Application::CompatibleFramework ^&gt; ^ Frameworks { System::Collections::Generic::IList&lt;System::Deployment::Application::CompatibleFramework ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public Uri SupportUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri SupportUrl" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.CompatibleFrameworks.SupportUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SupportUrl As Uri" />
+      <MemberSignature Language="F#" Value="member this.SupportUrl : Uri" Usage="System.Deployment.Application.CompatibleFrameworks.SupportUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ SupportUrl { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>

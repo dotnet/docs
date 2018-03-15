@@ -1,7 +1,10 @@
-<Type Name="VirtualizedItemPatternIdentifiers" FullName="System.Windows.Automation.VirtualizedItemPatternIdentifiers">
+﻿<Type Name="VirtualizedItemPatternIdentifiers" FullName="System.Windows.Automation.VirtualizedItemPatternIdentifiers">
   <TypeSignature Language="C#" Value="public static class VirtualizedItemPatternIdentifiers" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VirtualizedItemPatternIdentifiers extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.VirtualizedItemPatternIdentifiers" />
+  <TypeSignature Language="VB.NET" Value="Public Class VirtualizedItemPatternIdentifiers" />
+  <TypeSignature Language="F#" Value="type VirtualizedItemPatternIdentifiers = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class VirtualizedItemPatternIdentifiers abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.VirtualizedItemPatternIdentifiers.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.VirtualizedItemPatternIdentifiers.Pattern" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

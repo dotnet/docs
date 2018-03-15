@@ -1,7 +1,10 @@
-<Type Name="ComboBoxStyle" FullName="System.Windows.Forms.ComboBoxStyle">
+﻿<Type Name="ComboBoxStyle" FullName="System.Windows.Forms.ComboBoxStyle">
   <TypeSignature Language="C#" Value="public enum ComboBoxStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ComboBoxStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ComboBoxStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ComboBoxStyle" />
+  <TypeSignature Language="F#" Value="type ComboBoxStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ComboBoxStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="DropDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ComboBoxStyle DropDown = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ComboBoxStyle.DropDown" />
+      <MemberSignature Language="VB.NET" Value="DropDown" />
+      <MemberSignature Language="F#" Value="DropDown = 1" Usage="System.Windows.Forms.ComboBoxStyle.DropDown" />
+      <MemberSignature Language="C++ CLI" Value="DropDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -42,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ComboBoxStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the list is displayed by clicking the down arrow and that the text portion is editable. This means that the user can enter a new value and is not limited to selecting an existing value in the list. When using this setting, the <see cref="F:System.Windows.Forms.AutoCompleteMode.Append" /> value of <see cref="P:System.Windows.Forms.ComboBox.AutoCompleteMode" /> works the same as the <see cref="F:System.Windows.Forms.AutoCompleteMode.SuggestAppend" /> value. This is the default style.</summary>
       </Docs>
@@ -50,6 +57,9 @@
       <MemberSignature Language="C#" Value="DropDownList" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ComboBoxStyle DropDownList = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ComboBoxStyle.DropDownList" />
+      <MemberSignature Language="VB.NET" Value="DropDownList" />
+      <MemberSignature Language="F#" Value="DropDownList = 2" Usage="System.Windows.Forms.ComboBoxStyle.DropDownList" />
+      <MemberSignature Language="C++ CLI" Value="DropDownList" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ComboBoxStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the list is displayed by clicking the down arrow and that the text portion is not editable. This means that the user cannot enter a new value. Only values already in the list can be selected. The list displays only if <see cref="P:System.Windows.Forms.ComboBox.AutoCompleteMode" /> is <see cref="F:System.Windows.Forms.AutoCompleteMode.Suggest" /> or <see cref="F:System.Windows.Forms.AutoCompleteMode.SuggestAppend" />.</summary>
       </Docs>
@@ -66,6 +77,9 @@
       <MemberSignature Language="C#" Value="Simple" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ComboBoxStyle Simple = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ComboBoxStyle.Simple" />
+      <MemberSignature Language="VB.NET" Value="Simple" />
+      <MemberSignature Language="F#" Value="Simple = 0" Usage="System.Windows.Forms.ComboBoxStyle.Simple" />
+      <MemberSignature Language="C++ CLI" Value="Simple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -74,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ComboBoxStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the list is always visible and that the text portion is editable. This means that the user can enter a new value and is not limited to selecting an existing value in the list.</summary>
       </Docs>

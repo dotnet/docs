@@ -1,7 +1,10 @@
-<Type Name="RSAOAEPKeyExchangeFormatter" FullName="System.Security.Cryptography.RSAOAEPKeyExchangeFormatter">
+﻿<Type Name="RSAOAEPKeyExchangeFormatter" FullName="System.Security.Cryptography.RSAOAEPKeyExchangeFormatter">
   <TypeSignature Language="C#" Value="public class RSAOAEPKeyExchangeFormatter : System.Security.Cryptography.AsymmetricKeyExchangeFormatter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RSAOAEPKeyExchangeFormatter extends System.Security.Cryptography.AsymmetricKeyExchangeFormatter" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.RSAOAEPKeyExchangeFormatter" />
+  <TypeSignature Language="VB.NET" Value="Public Class RSAOAEPKeyExchangeFormatter&#xA;Inherits AsymmetricKeyExchangeFormatter" />
+  <TypeSignature Language="F#" Value="type RSAOAEPKeyExchangeFormatter = class&#xA;    inherit AsymmetricKeyExchangeFormatter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RSAOAEPKeyExchangeFormatter : System::Security::Cryptography::AsymmetricKeyExchangeFormatter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -49,10 +52,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAOAEPKeyExchangeFormatter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RSAOAEPKeyExchangeFormatter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RSAOAEPKeyExchangeFormatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +99,9 @@
       <MemberSignature Language="C#" Value="public RSAOAEPKeyExchangeFormatter (System.Security.Cryptography.AsymmetricAlgorithm key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.AsymmetricAlgorithm key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.#ctor(System.Security.Cryptography.AsymmetricAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (key As AsymmetricAlgorithm)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.RSAOAEPKeyExchangeFormatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.RSAOAEPKeyExchangeFormatter" Usage="new System.Security.Cryptography.RSAOAEPKeyExchangeFormatter key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RSAOAEPKeyExchangeFormatter(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -109,10 +127,23 @@
           <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateKeyExchange">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates the encrypted key exchange data.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateKeyExchange">
       <MemberSignature Language="C#" Value="public override byte[] CreateKeyExchange (byte[] rgbData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] CreateKeyExchange(unsigned int8[] rgbData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.CreateKeyExchange(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateKeyExchange (rgbData As Byte()) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.CreateKeyExchange : byte[] -&gt; byte[]" Usage="rSAOAEPKeyExchangeFormatter.CreateKeyExchange rgbData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ CreateKeyExchange(cli::array &lt;System::Byte&gt; ^ rgbData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -157,6 +188,9 @@
       <MemberSignature Language="C#" Value="public override byte[] CreateKeyExchange (byte[] rgbData, Type symAlgType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] CreateKeyExchange(unsigned int8[] rgbData, class System.Type symAlgType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.CreateKeyExchange(System.Byte[],System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateKeyExchange (rgbData As Byte(), symAlgType As Type) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.CreateKeyExchange : byte[] * Type -&gt; byte[]" Usage="rSAOAEPKeyExchangeFormatter.CreateKeyExchange (rgbData, symAlgType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ CreateKeyExchange(cli::array &lt;System::Byte&gt; ^ rgbData, Type ^ symAlgType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -205,6 +239,9 @@
       <MemberSignature Language="C#" Value="public byte[] Parameter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int8[] Parameter" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.Parameter" />
+      <MemberSignature Language="VB.NET" Value="Public Property Parameter As Byte()" />
+      <MemberSignature Language="F#" Value="member this.Parameter : byte[] with get, set" Usage="System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.Parameter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Byte&gt; ^ Parameter { cli::array &lt;System::Byte&gt; ^ get(); void set(cli::array &lt;System::Byte&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -243,6 +280,9 @@
       <MemberSignature Language="C#" Value="public override string Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Parameters" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Parameters As String" />
+      <MemberSignature Language="F#" Value="member this.Parameters : string" Usage="System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.Parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Parameters { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -281,6 +321,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.RandomNumberGenerator Rng { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.RandomNumberGenerator Rng" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.Rng" />
+      <MemberSignature Language="VB.NET" Value="Public Property Rng As RandomNumberGenerator" />
+      <MemberSignature Language="F#" Value="member this.Rng : System.Security.Cryptography.RandomNumberGenerator with get, set" Usage="System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.Rng" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::RandomNumberGenerator ^ Rng { System::Security::Cryptography::RandomNumberGenerator ^ get(); void set(System::Security::Cryptography::RandomNumberGenerator ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -324,6 +367,9 @@
       <MemberSignature Language="C#" Value="public override void SetKey (System.Security.Cryptography.AsymmetricAlgorithm key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetKey(class System.Security.Cryptography.AsymmetricAlgorithm key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetKey (key As AsymmetricAlgorithm)" />
+      <MemberSignature Language="F#" Value="override this.SetKey : System.Security.Cryptography.AsymmetricAlgorithm -&gt; unit" Usage="rSAOAEPKeyExchangeFormatter.SetKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetKey(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -368,25 +414,5 @@
           <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateKeyExchange">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates the encrypted key exchange data.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAOAEPKeyExchangeFormatter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="GeoPositionPermission" FullName="System.Device.Location.GeoPositionPermission">
+﻿<Type Name="GeoPositionPermission" FullName="System.Device.Location.GeoPositionPermission">
   <TypeSignature Language="C#" Value="public enum GeoPositionPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GeoPositionPermission extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Device.Location.GeoPositionPermission" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GeoPositionPermission" />
+  <TypeSignature Language="F#" Value="type GeoPositionPermission = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class GeoPositionPermission" />
   <AssemblyInfo>
     <AssemblyName>System.Device</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Denied" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Device.Location.GeoPositionPermission Denied = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionPermission.Denied" />
+      <MemberSignature Language="VB.NET" Value="Denied" />
+      <MemberSignature Language="F#" Value="Denied = 2" Usage="System.Device.Location.GeoPositionPermission.Denied" />
+      <MemberSignature Language="C++ CLI" Value="Denied" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Device.Location.GeoPositionPermission</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Location permissions are denied.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="Granted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Device.Location.GeoPositionPermission Granted = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionPermission.Granted" />
+      <MemberSignature Language="VB.NET" Value="Granted" />
+      <MemberSignature Language="F#" Value="Granted = 1" Usage="System.Device.Location.GeoPositionPermission.Granted" />
+      <MemberSignature Language="C++ CLI" Value="Granted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Device.Location.GeoPositionPermission</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Location permissions are granted.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Device.Location.GeoPositionPermission Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Device.Location.GeoPositionPermission.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Device.Location.GeoPositionPermission.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Device</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Device.Location.GeoPositionPermission</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Location permissions are not known. This status can occur while the provider is being initialized.</summary>
       </Docs>

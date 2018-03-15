@@ -1,7 +1,10 @@
-<Type Name="ContentRight" FullName="System.Security.RightsManagement.ContentRight">
+﻿<Type Name="ContentRight" FullName="System.Security.RightsManagement.ContentRight">
   <TypeSignature Language="C#" Value="public enum ContentRight" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ContentRight extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.RightsManagement.ContentRight" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ContentRight" />
+  <TypeSignature Language="F#" Value="type ContentRight = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ContentRight" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="DocumentEdit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.ContentRight DocumentEdit = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.DocumentEdit" />
+      <MemberSignature Language="VB.NET" Value="DocumentEdit" />
+      <MemberSignature Language="F#" Value="DocumentEdit = 11" Usage="System.Security.RightsManagement.ContentRight.DocumentEdit" />
+      <MemberSignature Language="C++ CLI" Value="DocumentEdit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -34,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.ContentRight</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>The user can edit the document that contains the protected content.</summary>
       </Docs>
@@ -42,6 +49,9 @@
       <MemberSignature Language="C#" Value="Edit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.ContentRight Edit = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Edit" />
+      <MemberSignature Language="VB.NET" Value="Edit" />
+      <MemberSignature Language="F#" Value="Edit = 1" Usage="System.Security.RightsManagement.ContentRight.Edit" />
+      <MemberSignature Language="C++ CLI" Value="Edit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -50,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.ContentRight</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The user can edit and encrypt the protected content.</summary>
       </Docs>
@@ -58,6 +69,9 @@
       <MemberSignature Language="C#" Value="Export" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.ContentRight Export = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Export" />
+      <MemberSignature Language="VB.NET" Value="Export" />
+      <MemberSignature Language="F#" Value="Export = 12" Usage="System.Security.RightsManagement.ContentRight.Export" />
+      <MemberSignature Language="C++ CLI" Value="Export" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -66,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.ContentRight</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>The user can export the protected content.</summary>
       </Docs>
@@ -74,6 +89,9 @@
       <MemberSignature Language="C#" Value="Extract" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.ContentRight Extract = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Extract" />
+      <MemberSignature Language="VB.NET" Value="Extract" />
+      <MemberSignature Language="F#" Value="Extract = 3" Usage="System.Security.RightsManagement.ContentRight.Extract" />
+      <MemberSignature Language="C++ CLI" Value="Extract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -82,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.ContentRight</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The user can extract (copy and paste) the protected content.</summary>
       </Docs>
@@ -90,6 +109,9 @@
       <MemberSignature Language="C#" Value="Forward" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.ContentRight Forward = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Forward" />
+      <MemberSignature Language="VB.NET" Value="Forward" />
+      <MemberSignature Language="F#" Value="Forward = 7" Usage="System.Security.RightsManagement.ContentRight.Forward" />
+      <MemberSignature Language="C++ CLI" Value="Forward" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -98,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.ContentRight</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The user can forward the protected content to another user.</summary>
       </Docs>
@@ -106,6 +129,9 @@
       <MemberSignature Language="C#" Value="ObjectModel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.ContentRight ObjectModel = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.ObjectModel" />
+      <MemberSignature Language="VB.NET" Value="ObjectModel" />
+      <MemberSignature Language="F#" Value="ObjectModel = 4" Usage="System.Security.RightsManagement.ContentRight.ObjectModel" />
+      <MemberSignature Language="C++ CLI" Value="ObjectModel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -114,6 +140,7 @@
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.ContentRight</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The user can control programmed access to the protected content.</summary>
       </Docs>
@@ -122,6 +149,9 @@
       <MemberSignature Language="C#" Value="Owner" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.ContentRight Owner = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Owner" />
+      <MemberSignature Language="VB.NET" Value="Owner" />
+      <MemberSignature Language="F#" Value="Owner = 5" Usage="System.Security.RightsManagement.ContentRight.Owner" />
+      <MemberSignature Language="C++ CLI" Value="Owner" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -130,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.ContentRight</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The user is the content owner.  The owner can edit and encrypt the protected content, and decrypt the signed <see cref="T:System.Security.RightsManagement.PublishLicense" />.</summary>
       </Docs>
@@ -138,6 +169,9 @@
       <MemberSignature Language="C#" Value="Print" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.ContentRight Print = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Print" />
+      <MemberSignature Language="VB.NET" Value="Print" />
+      <MemberSignature Language="F#" Value="Print = 2" Usage="System.Security.RightsManagement.ContentRight.Print" />
+      <MemberSignature Language="C++ CLI" Value="Print" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -146,6 +180,7 @@
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.ContentRight</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The user can print the protected content.</summary>
       </Docs>
@@ -154,6 +189,9 @@
       <MemberSignature Language="C#" Value="Reply" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.ContentRight Reply = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Reply" />
+      <MemberSignature Language="VB.NET" Value="Reply" />
+      <MemberSignature Language="F#" Value="Reply = 8" Usage="System.Security.RightsManagement.ContentRight.Reply" />
+      <MemberSignature Language="C++ CLI" Value="Reply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -162,6 +200,7 @@
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.ContentRight</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The user can reply to the sender of the protected content.</summary>
       </Docs>
@@ -170,6 +209,9 @@
       <MemberSignature Language="C#" Value="ReplyAll" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.ContentRight ReplyAll = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.ReplyAll" />
+      <MemberSignature Language="VB.NET" Value="ReplyAll" />
+      <MemberSignature Language="F#" Value="ReplyAll = 9" Usage="System.Security.RightsManagement.ContentRight.ReplyAll" />
+      <MemberSignature Language="C++ CLI" Value="ReplyAll" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -178,6 +220,7 @@
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.ContentRight</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The user can "reply all" to recipients of the protected content.</summary>
       </Docs>
@@ -186,6 +229,9 @@
       <MemberSignature Language="C#" Value="Sign" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.ContentRight Sign = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.Sign" />
+      <MemberSignature Language="VB.NET" Value="Sign" />
+      <MemberSignature Language="F#" Value="Sign = 10" Usage="System.Security.RightsManagement.ContentRight.Sign" />
+      <MemberSignature Language="C++ CLI" Value="Sign" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -194,6 +240,7 @@
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.ContentRight</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The user can digitally sign the protected content.</summary>
       </Docs>
@@ -202,6 +249,9 @@
       <MemberSignature Language="C#" Value="View" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.ContentRight View = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.View" />
+      <MemberSignature Language="VB.NET" Value="View" />
+      <MemberSignature Language="F#" Value="View = 0" Usage="System.Security.RightsManagement.ContentRight.View" />
+      <MemberSignature Language="C++ CLI" Value="View" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -210,6 +260,7 @@
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.ContentRight</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The user can view the protected content.</summary>
       </Docs>
@@ -218,6 +269,9 @@
       <MemberSignature Language="C#" Value="ViewRightsData" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.RightsManagement.ContentRight ViewRightsData = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Security.RightsManagement.ContentRight.ViewRightsData" />
+      <MemberSignature Language="VB.NET" Value="ViewRightsData" />
+      <MemberSignature Language="F#" Value="ViewRightsData = 6" Usage="System.Security.RightsManagement.ContentRight.ViewRightsData" />
+      <MemberSignature Language="C++ CLI" Value="ViewRightsData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -226,6 +280,7 @@
       <ReturnValue>
         <ReturnType>System.Security.RightsManagement.ContentRight</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The user can decrypt and view the rights specified in the signed <see cref="T:System.Security.RightsManagement.PublishLicense" />.</summary>
       </Docs>

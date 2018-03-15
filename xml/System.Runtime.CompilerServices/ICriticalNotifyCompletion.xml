@@ -1,7 +1,10 @@
-<Type Name="ICriticalNotifyCompletion" FullName="System.Runtime.CompilerServices.ICriticalNotifyCompletion">
+﻿<Type Name="ICriticalNotifyCompletion" FullName="System.Runtime.CompilerServices.ICriticalNotifyCompletion">
   <TypeSignature Language="C#" Value="public interface ICriticalNotifyCompletion : System.Runtime.CompilerServices.INotifyCompletion" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICriticalNotifyCompletion implements class System.Runtime.CompilerServices.INotifyCompletion" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.CompilerServices.ICriticalNotifyCompletion" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICriticalNotifyCompletion&#xA;Implements INotifyCompletion" />
+  <TypeSignature Language="F#" Value="type ICriticalNotifyCompletion = interface&#xA;    interface INotifyCompletion" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICriticalNotifyCompletion : System::Runtime::CompilerServices::INotifyCompletion" />
   <AssemblyInfo>
     <AssemblyName>System.Threading.Tasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public void UnsafeOnCompleted (Action continuation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UnsafeOnCompleted(class System.Action continuation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.CompilerServices.ICriticalNotifyCompletion.UnsafeOnCompleted(System.Action)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnsafeOnCompleted (continuation As Action)" />
+      <MemberSignature Language="F#" Value="abstract member UnsafeOnCompleted : Action -&gt; unit" Usage="iCriticalNotifyCompletion.UnsafeOnCompleted continuation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnsafeOnCompleted(Action ^ continuation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Threading.Tasks</AssemblyName>

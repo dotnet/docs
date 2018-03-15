@@ -1,7 +1,10 @@
-<Type Name="Panel" FullName="System.Web.UI.MobileControls.Panel">
+﻿<Type Name="Panel" FullName="System.Web.UI.MobileControls.Panel">
   <TypeSignature Language="C#" Value="public class Panel : System.Web.UI.MobileControls.MobileControl, System.Web.UI.MobileControls.ITemplateable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Panel extends System.Web.UI.MobileControls.MobileControl implements class System.Web.UI.MobileControls.ITemplateable" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Panel" />
+  <TypeSignature Language="VB.NET" Value="Public Class Panel&#xA;Inherits MobileControl&#xA;Implements ITemplateable" />
+  <TypeSignature Language="F#" Value="type Panel = class&#xA;    inherit MobileControl&#xA;    interface ITemplateable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Panel : System::Web::UI::MobileControls::MobileControl, System::Web::UI::MobileControls::ITemplateable" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -78,6 +81,8 @@
       <MemberSignature Language="C#" Value="public Panel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Panel.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Panel();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -94,6 +99,9 @@
       <MemberSignature Language="C#" Value="public override void AddLinkedForms (System.Collections.IList linkedForms);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddLinkedForms(class System.Collections.IList linkedForms) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Panel.AddLinkedForms(System.Collections.IList)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddLinkedForms (linkedForms As IList)" />
+      <MemberSignature Language="F#" Value="override this.AddLinkedForms : System.Collections.IList -&gt; unit" Usage="panel.AddLinkedForms linkedForms" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddLinkedForms(System::Collections::IList ^ linkedForms);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -116,6 +124,9 @@
       <MemberSignature Language="C#" Value="public override bool BreakAfter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BreakAfter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Panel.BreakAfter" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BreakAfter As Boolean" />
+      <MemberSignature Language="F#" Value="member this.BreakAfter : bool with get, set" Usage="System.Web.UI.MobileControls.Panel.BreakAfter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool BreakAfter { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -141,6 +152,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.Panel Content { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.Panel Content" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Panel.Content" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Content As Panel" />
+      <MemberSignature Language="F#" Value="member this.Content : System.Web.UI.MobileControls.Panel" Usage="System.Web.UI.MobileControls.Panel.Content" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::Panel ^ Content { System::Web::UI::MobileControls::Panel ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -154,7 +168,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -187,6 +201,9 @@
       <MemberSignature Language="C#" Value="public override void CreateDefaultTemplatedUI (bool doDataBind);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void CreateDefaultTemplatedUI(bool doDataBind) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Panel.CreateDefaultTemplatedUI(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub CreateDefaultTemplatedUI (doDataBind As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.CreateDefaultTemplatedUI : bool -&gt; unit" Usage="panel.CreateDefaultTemplatedUI doDataBind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void CreateDefaultTemplatedUI(bool doDataBind);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -209,6 +226,9 @@
       <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Panel.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="panel.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -231,6 +251,9 @@
       <MemberSignature Language="C#" Value="public virtual bool Paginate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Paginate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Panel.Paginate" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Paginate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Paginate : bool with get, set" Usage="System.Web.UI.MobileControls.Panel.Paginate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Paginate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -283,6 +306,9 @@
       <MemberSignature Language="C#" Value="protected override bool PaginateChildren { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool PaginateChildren" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Panel.PaginateChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property PaginateChildren As Boolean" />
+      <MemberSignature Language="F#" Value="member this.PaginateChildren : bool" Usage="System.Web.UI.MobileControls.Panel.PaginateChildren" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool PaginateChildren { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -303,6 +329,9 @@
       <MemberSignature Language="C#" Value="public override void PaginateRecursive (System.Web.UI.MobileControls.ControlPager pager);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PaginateRecursive(class System.Web.UI.MobileControls.ControlPager pager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Panel.PaginateRecursive(System.Web.UI.MobileControls.ControlPager)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub PaginateRecursive (pager As ControlPager)" />
+      <MemberSignature Language="F#" Value="override this.PaginateRecursive : System.Web.UI.MobileControls.ControlPager -&gt; unit" Usage="panel.PaginateRecursive pager" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PaginateRecursive(System::Web::UI::MobileControls::ControlPager ^ pager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

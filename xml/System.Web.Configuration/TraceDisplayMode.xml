@@ -1,7 +1,10 @@
-<Type Name="TraceDisplayMode" FullName="System.Web.Configuration.TraceDisplayMode">
+﻿<Type Name="TraceDisplayMode" FullName="System.Web.Configuration.TraceDisplayMode">
   <TypeSignature Language="C#" Value="public enum TraceDisplayMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TraceDisplayMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.TraceDisplayMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TraceDisplayMode" />
+  <TypeSignature Language="F#" Value="type TraceDisplayMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TraceDisplayMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="SortByCategory" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.TraceDisplayMode SortByCategory = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.TraceDisplayMode.SortByCategory" />
+      <MemberSignature Language="VB.NET" Value="SortByCategory" />
+      <MemberSignature Language="F#" Value="SortByCategory = 2" Usage="System.Web.Configuration.TraceDisplayMode.SortByCategory" />
+      <MemberSignature Language="C++ CLI" Value="SortByCategory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -42,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.TraceDisplayMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Emit trace messages alphabetically by category.</summary>
       </Docs>
@@ -50,6 +57,9 @@
       <MemberSignature Language="C#" Value="SortByTime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.TraceDisplayMode SortByTime = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.TraceDisplayMode.SortByTime" />
+      <MemberSignature Language="VB.NET" Value="SortByTime" />
+      <MemberSignature Language="F#" Value="SortByTime = 1" Usage="System.Web.Configuration.TraceDisplayMode.SortByTime" />
+      <MemberSignature Language="C++ CLI" Value="SortByTime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.TraceDisplayMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Emit trace messages in the order they were processed.</summary>
       </Docs>

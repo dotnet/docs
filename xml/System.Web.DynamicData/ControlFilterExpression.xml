@@ -1,7 +1,10 @@
-<Type Name="ControlFilterExpression" FullName="System.Web.DynamicData.ControlFilterExpression">
+﻿<Type Name="ControlFilterExpression" FullName="System.Web.DynamicData.ControlFilterExpression">
   <TypeSignature Language="C#" Value="public class ControlFilterExpression : System.Web.UI.WebControls.Expressions.DataSourceExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlFilterExpression extends System.Web.UI.WebControls.Expressions.DataSourceExpression" />
   <TypeSignature Language="DocId" Value="T:System.Web.DynamicData.ControlFilterExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class ControlFilterExpression&#xA;Inherits DataSourceExpression" />
+  <TypeSignature Language="F#" Value="type ControlFilterExpression = class&#xA;    inherit DataSourceExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ControlFilterExpression : System::Web::UI::WebControls::Expressions::DataSourceExpression" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DynamicData</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,6 +55,8 @@
       <MemberSignature Language="C#" Value="public ControlFilterExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ControlFilterExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -67,6 +72,9 @@
       <MemberSignature Language="C#" Value="public string Column { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Column" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ControlFilterExpression.Column" />
+      <MemberSignature Language="VB.NET" Value="Public Property Column As String" />
+      <MemberSignature Language="F#" Value="member this.Column : string with get, set" Usage="System.Web.DynamicData.ControlFilterExpression.Column" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Column { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -106,6 +114,9 @@
       <MemberSignature Language="C#" Value="public string ControlID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ControlID" />
       <MemberSignature Language="DocId" Value="P:System.Web.DynamicData.ControlFilterExpression.ControlID" />
+      <MemberSignature Language="VB.NET" Value="Public Property ControlID As String" />
+      <MemberSignature Language="F#" Value="member this.ControlID : string with get, set" Usage="System.Web.DynamicData.ControlFilterExpression.ControlID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ControlID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -143,6 +154,9 @@
       <MemberSignature Language="C#" Value="public override System.Linq.IQueryable GetQueryable (System.Linq.IQueryable source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Linq.IQueryable GetQueryable(class System.Linq.IQueryable source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.GetQueryable(System.Linq.IQueryable)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetQueryable (source As IQueryable) As IQueryable" />
+      <MemberSignature Language="F#" Value="override this.GetQueryable : System.Linq.IQueryable -&gt; System.Linq.IQueryable" Usage="controlFilterExpression.GetQueryable source" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Linq::IQueryable ^ GetQueryable(System::Linq::IQueryable ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -172,6 +186,9 @@
       <MemberSignature Language="C#" Value="protected override void LoadViewState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadViewState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadViewState (savedState As Object)" />
+      <MemberSignature Language="F#" Value="override this.LoadViewState : obj -&gt; unit" Usage="controlFilterExpression.LoadViewState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadViewState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -193,6 +210,9 @@
       <MemberSignature Language="C#" Value="protected override object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveViewState () As Object" />
+      <MemberSignature Language="F#" Value="override this.SaveViewState : unit -&gt; obj" Usage="controlFilterExpression.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -212,6 +232,9 @@
       <MemberSignature Language="C#" Value="public override void SetContext (System.Web.UI.Control owner, System.Web.HttpContext context, System.Web.UI.WebControls.IQueryableDataSource dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetContext(class System.Web.UI.Control owner, class System.Web.HttpContext context, class System.Web.UI.WebControls.IQueryableDataSource dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.SetContext(System.Web.UI.Control,System.Web.HttpContext,System.Web.UI.WebControls.IQueryableDataSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetContext (owner As Control, context As HttpContext, dataSource As IQueryableDataSource)" />
+      <MemberSignature Language="F#" Value="override this.SetContext : System.Web.UI.Control * System.Web.HttpContext * System.Web.UI.WebControls.IQueryableDataSource -&gt; unit" Usage="controlFilterExpression.SetContext (owner, context, dataSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetContext(System::Web::UI::Control ^ owner, System::Web::HttpContext ^ context, System::Web::UI::WebControls::IQueryableDataSource ^ dataSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>
@@ -237,6 +260,9 @@
       <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.DynamicData.ControlFilterExpression.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="controlFilterExpression.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DynamicData</AssemblyName>

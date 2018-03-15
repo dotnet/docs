@@ -1,7 +1,10 @@
-<Type Name="FaultCode" FullName="System.ServiceModel.FaultCode">
+﻿<Type Name="FaultCode" FullName="System.ServiceModel.FaultCode">
   <TypeSignature Language="C#" Value="public class FaultCode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FaultCode extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.FaultCode" />
+  <TypeSignature Language="VB.NET" Value="Public Class FaultCode" />
+  <TypeSignature Language="F#" Value="type FaultCode = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FaultCode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,10 +38,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultCode" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public FaultCode (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultCode.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultCode : string -&gt; System.ServiceModel.FaultCode" Usage="new System.ServiceModel.FaultCode name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultCode(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -64,6 +80,9 @@
       <MemberSignature Language="C#" Value="public FaultCode (string name, System.ServiceModel.FaultCode subCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.ServiceModel.FaultCode subCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultCode.#ctor(System.String,System.ServiceModel.FaultCode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, subCode As FaultCode)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultCode : string * System.ServiceModel.FaultCode -&gt; System.ServiceModel.FaultCode" Usage="new System.ServiceModel.FaultCode (name, subCode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultCode(System::String ^ name, System::ServiceModel::FaultCode ^ subCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -91,6 +110,9 @@
       <MemberSignature Language="C#" Value="public FaultCode (string name, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultCode.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, ns As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultCode : string * string -&gt; System.ServiceModel.FaultCode" Usage="new System.ServiceModel.FaultCode (name, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultCode(System::String ^ name, System::String ^ ns);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -129,6 +151,9 @@
       <MemberSignature Language="C#" Value="public FaultCode (string name, string ns, System.ServiceModel.FaultCode subCode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, string ns, class System.ServiceModel.FaultCode subCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultCode.#ctor(System.String,System.String,System.ServiceModel.FaultCode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, ns As String, subCode As FaultCode)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.FaultCode : string * string * System.ServiceModel.FaultCode -&gt; System.ServiceModel.FaultCode" Usage="new System.ServiceModel.FaultCode (name, ns, subCode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FaultCode(System::String ^ name, System::String ^ ns, System::ServiceModel::FaultCode ^ subCode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -158,10 +183,23 @@
           <paramref name="name" /> is an empty string.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateReceiverFaultCode">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a receiver fault code for a message.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateReceiverFaultCode">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.FaultCode CreateReceiverFaultCode (System.ServiceModel.FaultCode subCode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.FaultCode CreateReceiverFaultCode(class System.ServiceModel.FaultCode subCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultCode.CreateReceiverFaultCode(System.ServiceModel.FaultCode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateReceiverFaultCode (subCode As FaultCode) As FaultCode" />
+      <MemberSignature Language="F#" Value="static member CreateReceiverFaultCode : System.ServiceModel.FaultCode -&gt; System.ServiceModel.FaultCode" Usage="System.ServiceModel.FaultCode.CreateReceiverFaultCode subCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::FaultCode ^ CreateReceiverFaultCode(System::ServiceModel::FaultCode ^ subCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -187,6 +225,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.FaultCode CreateReceiverFaultCode (string name, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.FaultCode CreateReceiverFaultCode(string name, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultCode.CreateReceiverFaultCode(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateReceiverFaultCode (name As String, ns As String) As FaultCode" />
+      <MemberSignature Language="F#" Value="static member CreateReceiverFaultCode : string * string -&gt; System.ServiceModel.FaultCode" Usage="System.ServiceModel.FaultCode.CreateReceiverFaultCode (name, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::FaultCode ^ CreateReceiverFaultCode(System::String ^ name, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -208,10 +249,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateSenderFaultCode">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a sender fault code with the specified subcode.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateSenderFaultCode">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.FaultCode CreateSenderFaultCode (System.ServiceModel.FaultCode subCode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.FaultCode CreateSenderFaultCode(class System.ServiceModel.FaultCode subCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultCode.CreateSenderFaultCode(System.ServiceModel.FaultCode)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSenderFaultCode (subCode As FaultCode) As FaultCode" />
+      <MemberSignature Language="F#" Value="static member CreateSenderFaultCode : System.ServiceModel.FaultCode -&gt; System.ServiceModel.FaultCode" Usage="System.ServiceModel.FaultCode.CreateSenderFaultCode subCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::FaultCode ^ CreateSenderFaultCode(System::ServiceModel::FaultCode ^ subCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -243,6 +297,9 @@
       <MemberSignature Language="C#" Value="public static System.ServiceModel.FaultCode CreateSenderFaultCode (string name, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.FaultCode CreateSenderFaultCode(string name, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.FaultCode.CreateSenderFaultCode(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSenderFaultCode (name As String, ns As String) As FaultCode" />
+      <MemberSignature Language="F#" Value="static member CreateSenderFaultCode : string * string -&gt; System.ServiceModel.FaultCode" Usage="System.ServiceModel.FaultCode.CreateSenderFaultCode (name, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ServiceModel::FaultCode ^ CreateSenderFaultCode(System::String ^ name, System::String ^ ns);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -268,6 +325,9 @@
       <MemberSignature Language="C#" Value="public bool IsPredefinedFault { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPredefinedFault" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultCode.IsPredefinedFault" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPredefinedFault As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPredefinedFault : bool" Usage="System.ServiceModel.FaultCode.IsPredefinedFault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPredefinedFault { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -294,6 +354,9 @@
       <MemberSignature Language="C#" Value="public bool IsReceiverFault { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReceiverFault" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultCode.IsReceiverFault" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReceiverFault As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReceiverFault : bool" Usage="System.ServiceModel.FaultCode.IsReceiverFault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReceiverFault { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -320,6 +383,9 @@
       <MemberSignature Language="C#" Value="public bool IsSenderFault { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSenderFault" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultCode.IsSenderFault" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSenderFault As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSenderFault : bool" Usage="System.ServiceModel.FaultCode.IsSenderFault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSenderFault { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -346,6 +412,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultCode.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.ServiceModel.FaultCode.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -371,6 +440,9 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultCode.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string" Usage="System.ServiceModel.FaultCode.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -396,6 +468,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.FaultCode SubCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.FaultCode SubCode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.FaultCode.SubCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubCode As FaultCode" />
+      <MemberSignature Language="F#" Value="member this.SubCode : System.ServiceModel.FaultCode" Usage="System.ServiceModel.FaultCode.SubCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::FaultCode ^ SubCode { System::ServiceModel::FaultCode ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -417,35 +492,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.FaultCode" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateReceiverFaultCode">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a receiver fault code for a message.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateSenderFaultCode">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a sender fault code with the specified subcode.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

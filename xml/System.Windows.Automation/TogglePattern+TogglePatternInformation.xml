@@ -1,7 +1,10 @@
-<Type Name="TogglePattern+TogglePatternInformation" FullName="System.Windows.Automation.TogglePattern+TogglePatternInformation">
+﻿<Type Name="TogglePattern+TogglePatternInformation" FullName="System.Windows.Automation.TogglePattern+TogglePatternInformation">
   <TypeSignature Language="C#" Value="public struct TogglePattern.TogglePatternInformation" />
   <TypeSignature Language="ILAsm" Value=".class nested public sequential ansi sealed beforefieldinit TogglePattern/TogglePatternInformation extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.TogglePattern.TogglePatternInformation" />
+  <TypeSignature Language="VB.NET" Value="Public Structure TogglePattern.TogglePatternInformation" />
+  <TypeSignature Language="F#" Value="type TogglePattern.TogglePatternInformation = struct" />
+  <TypeSignature Language="C++ CLI" Value="public: value class TogglePattern::TogglePatternInformation" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.ToggleState ToggleState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.ToggleState ToggleState" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.TogglePattern.TogglePatternInformation.ToggleState" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ToggleState As ToggleState" />
+      <MemberSignature Language="F#" Value="member this.ToggleState : System.Windows.Automation.ToggleState" Usage="System.Windows.Automation.TogglePattern.TogglePatternInformation.ToggleState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::ToggleState ToggleState { System::Windows::Automation::ToggleState get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

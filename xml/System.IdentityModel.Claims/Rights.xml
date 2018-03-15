@@ -1,7 +1,10 @@
-<Type Name="Rights" FullName="System.IdentityModel.Claims.Rights">
+﻿<Type Name="Rights" FullName="System.IdentityModel.Claims.Rights">
   <TypeSignature Language="C#" Value="public static class Rights" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit Rights extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Claims.Rights" />
+  <TypeSignature Language="VB.NET" Value="Public Class Rights" />
+  <TypeSignature Language="F#" Value="type Rights = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Rights abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public static string Identity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string Identity" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.Rights.Identity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Identity As String" />
+      <MemberSignature Language="F#" Value="member this.Identity : string" Usage="System.IdentityModel.Claims.Rights.Identity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ Identity { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -46,6 +52,9 @@
       <MemberSignature Language="C#" Value="public static string PossessProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string PossessProperty" />
       <MemberSignature Language="DocId" Value="P:System.IdentityModel.Claims.Rights.PossessProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property PossessProperty As String" />
+      <MemberSignature Language="F#" Value="member this.PossessProperty : string" Usage="System.IdentityModel.Claims.Rights.PossessProperty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ PossessProperty { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="CodeActivityPublicEnvironmentAccessor" FullName="System.Activities.CodeActivityPublicEnvironmentAccessor">
+﻿<Type Name="CodeActivityPublicEnvironmentAccessor" FullName="System.Activities.CodeActivityPublicEnvironmentAccessor">
   <TypeSignature Language="C#" Value="public struct CodeActivityPublicEnvironmentAccessor" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CodeActivityPublicEnvironmentAccessor extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Activities.CodeActivityPublicEnvironmentAccessor" />
+  <TypeSignature Language="VB.NET" Value="Public Structure CodeActivityPublicEnvironmentAccessor" />
+  <TypeSignature Language="F#" Value="type CodeActivityPublicEnvironmentAccessor = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class CodeActivityPublicEnvironmentAccessor" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.CodeActivityMetadata ActivityMetadata { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Activities.CodeActivityMetadata ActivityMetadata" />
       <MemberSignature Language="DocId" Value="P:System.Activities.CodeActivityPublicEnvironmentAccessor.ActivityMetadata" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivityMetadata As CodeActivityMetadata" />
+      <MemberSignature Language="F#" Value="member this.ActivityMetadata : System.Activities.CodeActivityMetadata" Usage="System.Activities.CodeActivityPublicEnvironmentAccessor.ActivityMetadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::CodeActivityMetadata ActivityMetadata { System::Activities::CodeActivityMetadata get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public static System.Activities.CodeActivityPublicEnvironmentAccessor Create (System.Activities.CodeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Activities.CodeActivityPublicEnvironmentAccessor Create(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.Create(System.Activities.CodeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (metadata As CodeActivityMetadata) As CodeActivityPublicEnvironmentAccessor" />
+      <MemberSignature Language="F#" Value="static member Create : System.Activities.CodeActivityMetadata -&gt; System.Activities.CodeActivityPublicEnvironmentAccessor" Usage="System.Activities.CodeActivityPublicEnvironmentAccessor.Create metadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Activities::CodeActivityPublicEnvironmentAccessor Create(System::Activities::CodeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -59,6 +68,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="codeActivityPublicEnvironmentAccessor.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -82,6 +94,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="codeActivityPublicEnvironmentAccessor.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -101,6 +116,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Activities.CodeActivityPublicEnvironmentAccessor left, System.Activities.CodeActivityPublicEnvironmentAccessor right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Activities.CodeActivityPublicEnvironmentAccessor left, valuetype System.Activities.CodeActivityPublicEnvironmentAccessor right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.op_Equality(System.Activities.CodeActivityPublicEnvironmentAccessor,System.Activities.CodeActivityPublicEnvironmentAccessor)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As CodeActivityPublicEnvironmentAccessor, right As CodeActivityPublicEnvironmentAccessor) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Activities.CodeActivityPublicEnvironmentAccessor * System.Activities.CodeActivityPublicEnvironmentAccessor -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Activities::CodeActivityPublicEnvironmentAccessor left, System::Activities::CodeActivityPublicEnvironmentAccessor right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -126,6 +144,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Activities.CodeActivityPublicEnvironmentAccessor left, System.Activities.CodeActivityPublicEnvironmentAccessor right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Activities.CodeActivityPublicEnvironmentAccessor left, valuetype System.Activities.CodeActivityPublicEnvironmentAccessor right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.op_Inequality(System.Activities.CodeActivityPublicEnvironmentAccessor,System.Activities.CodeActivityPublicEnvironmentAccessor)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As CodeActivityPublicEnvironmentAccessor, right As CodeActivityPublicEnvironmentAccessor) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Activities.CodeActivityPublicEnvironmentAccessor * System.Activities.CodeActivityPublicEnvironmentAccessor -&gt; bool" Usage="System.Activities.CodeActivityPublicEnvironmentAccessor.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Activities::CodeActivityPublicEnvironmentAccessor left, System::Activities::CodeActivityPublicEnvironmentAccessor right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -151,6 +172,9 @@
       <MemberSignature Language="C#" Value="public bool TryGetAccessToPublicLocation (System.Activities.LocationReference publicLocation, System.Activities.ArgumentDirection accessDirection, out System.Activities.LocationReference equivalentLocation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetAccessToPublicLocation(class System.Activities.LocationReference publicLocation, valuetype System.Activities.ArgumentDirection accessDirection, [out] class System.Activities.LocationReference&amp; equivalentLocation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.TryGetAccessToPublicLocation(System.Activities.LocationReference,System.Activities.ArgumentDirection,System.Activities.LocationReference@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetAccessToPublicLocation (publicLocation As LocationReference, accessDirection As ArgumentDirection, ByRef equivalentLocation As LocationReference) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetAccessToPublicLocation : System.Activities.LocationReference * System.Activities.ArgumentDirection *  -&gt; bool" Usage="codeActivityPublicEnvironmentAccessor.TryGetAccessToPublicLocation (publicLocation, accessDirection, equivalentLocation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetAccessToPublicLocation(System::Activities::LocationReference ^ publicLocation, System::Activities::ArgumentDirection accessDirection, [Runtime::InteropServices::Out] System::Activities::LocationReference ^ % equivalentLocation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -178,6 +202,9 @@
       <MemberSignature Language="C#" Value="public bool TryGetReferenceToPublicLocation (System.Activities.LocationReference publicReference, out System.Activities.LocationReference equivalentReference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TryGetReferenceToPublicLocation(class System.Activities.LocationReference publicReference, [out] class System.Activities.LocationReference&amp; equivalentReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityPublicEnvironmentAccessor.TryGetReferenceToPublicLocation(System.Activities.LocationReference,System.Activities.LocationReference@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetReferenceToPublicLocation (publicReference As LocationReference, ByRef equivalentReference As LocationReference) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TryGetReferenceToPublicLocation : System.Activities.LocationReference *  -&gt; bool" Usage="codeActivityPublicEnvironmentAccessor.TryGetReferenceToPublicLocation (publicReference, equivalentReference)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TryGetReferenceToPublicLocation(System::Activities::LocationReference ^ publicReference, [Runtime::InteropServices::Out] System::Activities::LocationReference ^ % equivalentReference);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

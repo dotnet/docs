@@ -1,7 +1,10 @@
-<Type Name="SerializationContents" FullName="System.Windows.Forms.DataVisualization.Charting.SerializationContents">
+﻿<Type Name="SerializationContents" FullName="System.Windows.Forms.DataVisualization.Charting.SerializationContents">
   <TypeSignature Language="C#" Value="public enum SerializationContents" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SerializationContents extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.SerializationContents" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SerializationContents" />
+  <TypeSignature Language="F#" Value="type SerializationContents = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SerializationContents" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.SerializationContents All = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.SerializationContents.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="F#" Value="All = 7" Usage="System.Windows.Forms.DataVisualization.Charting.SerializationContents.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -38,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.SerializationContents</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Serialize all chart information. This includes all appearance properties and data point values.</summary>
       </Docs>
@@ -46,6 +53,9 @@
       <MemberSignature Language="C#" Value="Appearance" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.SerializationContents Appearance = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.SerializationContents.Appearance" />
+      <MemberSignature Language="VB.NET" Value="Appearance" />
+      <MemberSignature Language="F#" Value="Appearance = 4" Usage="System.Windows.Forms.DataVisualization.Charting.SerializationContents.Appearance" />
+      <MemberSignature Language="C++ CLI" Value="Appearance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -54,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.SerializationContents</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Serialize all appearance properties, such as color or line style, if they have non-default values.</summary>
       </Docs>
@@ -62,6 +73,9 @@
       <MemberSignature Language="C#" Value="Data" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.SerializationContents Data = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.SerializationContents.Data" />
+      <MemberSignature Language="VB.NET" Value="Data" />
+      <MemberSignature Language="F#" Value="Data = 2" Usage="System.Windows.Forms.DataVisualization.Charting.SerializationContents.Data" />
+      <MemberSignature Language="C++ CLI" Value="Data" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -70,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.SerializationContents</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Serialize data values from all chart series. Does not include appearance properties.</summary>
       </Docs>
@@ -78,6 +93,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataVisualization.Charting.SerializationContents Default = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataVisualization.Charting.SerializationContents.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = 1" Usage="System.Windows.Forms.DataVisualization.Charting.SerializationContents.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -86,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataVisualization.Charting.SerializationContents</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Serialize all non-default chart content. This includes appearance properties, series and their data points, axis minimums/maximums, and so forth.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="AssociationType" FullName="System.Data.Metadata.Edm.AssociationType">
+﻿<Type Name="AssociationType" FullName="System.Data.Metadata.Edm.AssociationType">
   <TypeSignature Language="C#" Value="public sealed class AssociationType : System.Data.Metadata.Edm.RelationshipType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssociationType extends System.Data.Metadata.Edm.RelationshipType" />
   <TypeSignature Language="DocId" Value="T:System.Data.Metadata.Edm.AssociationType" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssociationType&#xA;Inherits RelationshipType" />
+  <TypeSignature Language="F#" Value="type AssociationType = class&#xA;    inherit RelationshipType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssociationType sealed : System::Data::Metadata::Edm::RelationshipType" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.AssociationEndMember&gt; AssociationEndMembers { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1&lt;class System.Data.Metadata.Edm.AssociationEndMember&gt; AssociationEndMembers" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationType.AssociationEndMembers" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssociationEndMembers As ReadOnlyMetadataCollection(Of AssociationEndMember)" />
+      <MemberSignature Language="F#" Value="member this.AssociationEndMembers : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.AssociationEndMember&gt;" Usage="System.Data.Metadata.Edm.AssociationType.AssociationEndMembers" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::AssociationEndMember ^&gt; ^ AssociationEndMembers { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::AssociationEndMember ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -44,6 +50,9 @@
       <MemberSignature Language="C#" Value="public override System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.Metadata.Edm.BuiltInTypeKind BuiltInTypeKind" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationType.BuiltInTypeKind" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property BuiltInTypeKind As BuiltInTypeKind" />
+      <MemberSignature Language="F#" Value="member this.BuiltInTypeKind : System.Data.Metadata.Edm.BuiltInTypeKind" Usage="System.Data.Metadata.Edm.AssociationType.BuiltInTypeKind" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::Metadata::Edm::BuiltInTypeKind BuiltInTypeKind { System::Data::Metadata::Edm::BuiltInTypeKind get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -62,6 +71,9 @@
       <MemberSignature Language="C#" Value="public bool IsForeignKey { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsForeignKey" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationType.IsForeignKey" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsForeignKey As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsForeignKey : bool" Usage="System.Data.Metadata.Edm.AssociationType.IsForeignKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsForeignKey { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -80,6 +92,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.ReferentialConstraint&gt; ReferentialConstraints { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Metadata.Edm.ReadOnlyMetadataCollection`1&lt;class System.Data.Metadata.Edm.ReferentialConstraint&gt; ReferentialConstraints" />
       <MemberSignature Language="DocId" Value="P:System.Data.Metadata.Edm.AssociationType.ReferentialConstraints" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferentialConstraints As ReadOnlyMetadataCollection(Of ReferentialConstraint)" />
+      <MemberSignature Language="F#" Value="member this.ReferentialConstraints : System.Data.Metadata.Edm.ReadOnlyMetadataCollection&lt;System.Data.Metadata.Edm.ReferentialConstraint&gt;" Usage="System.Data.Metadata.Edm.AssociationType.ReferentialConstraints" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::ReferentialConstraint ^&gt; ^ ReferentialConstraints { System::Data::Metadata::Edm::ReadOnlyMetadataCollection&lt;System::Data::Metadata::Edm::ReferentialConstraint ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

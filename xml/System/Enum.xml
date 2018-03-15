@@ -1,7 +1,10 @@
-<Type Name="Enum" FullName="System.Enum">
+﻿<Type Name="Enum" FullName="System.Enum">
   <TypeSignature Language="C#" Value="public abstract class Enum : ValueType, IComparable, IConvertible, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract serializable beforefieldinit Enum extends System.ValueType implements class System.IComparable, class System.IConvertible, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Enum" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class Enum&#xA;Inherits ValueType&#xA;Implements IComparable, IConvertible, IFormattable" />
+  <TypeSignature Language="F#" Value="type Enum = class&#xA;    inherit ValueType&#xA;    interface IComparable&#xA;    interface IFormattable&#xA;    interface IConvertible" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Enum abstract : ValueType, IComparable, IConvertible, IFormattable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -234,6 +237,8 @@
       <MemberSignature Language="C#" Value="protected Enum ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; Enum();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -262,7 +267,13 @@
       <MemberSignature Language="C#" Value="public int CompareTo (object target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(object target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.CompareTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompareTo (target As Object) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member CompareTo : obj -&gt; int&#xA;override this.CompareTo : obj -&gt; int" Usage="enum.CompareTo target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int CompareTo(System::Object ^ target);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -339,6 +350,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="enum.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -397,6 +411,9 @@
       <MemberSignature Language="C#" Value="public static string Format (Type enumType, object value, string format);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Format(class System.Type enumType, object value, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.Format(System.Type,System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Format (enumType As Type, value As Object, format As String) As String" />
+      <MemberSignature Language="F#" Value="static member Format : Type * obj * string -&gt; string" Usage="System.Enum.Format (enumType, value, format)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Format(Type ^ enumType, System::Object ^ value, System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -478,6 +495,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="enum.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -515,6 +535,9 @@
       <MemberSignature Language="C#" Value="public static string GetName (Type enumType, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string GetName(class System.Type enumType, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.GetName(System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetName (enumType As Type, value As Object) As String" />
+      <MemberSignature Language="F#" Value="static member GetName : Type * obj -&gt; string" Usage="System.Enum.GetName (enumType, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ GetName(Type ^ enumType, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -581,6 +604,9 @@
       <MemberSignature Language="C#" Value="public static string[] GetNames (Type enumType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetNames(class System.Type enumType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.GetNames(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetNames (enumType As Type) As String()" />
+      <MemberSignature Language="F#" Value="static member GetNames : Type -&gt; string[]" Usage="System.Enum.GetNames enumType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ GetNames(Type ^ enumType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -646,7 +672,13 @@
       <MemberSignature Language="C#" Value="public TypeCode GetTypeCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.TypeCode GetTypeCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.GetTypeCode" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTypeCode () As TypeCode" />
+      <MemberSignature Language="F#" Value="abstract member GetTypeCode : unit -&gt; TypeCode&#xA;override this.GetTypeCode : unit -&gt; TypeCode" Usage="enum.GetTypeCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TypeCode GetTypeCode();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -676,6 +708,9 @@
       <MemberSignature Language="C#" Value="public static Type GetUnderlyingType (Type enumType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetUnderlyingType(class System.Type enumType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.GetUnderlyingType(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetUnderlyingType (enumType As Type) As Type" />
+      <MemberSignature Language="F#" Value="static member GetUnderlyingType : Type -&gt; Type" Usage="System.Enum.GetUnderlyingType enumType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetUnderlyingType(Type ^ enumType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -736,6 +771,9 @@
       <MemberSignature Language="C#" Value="public static Array GetValues (Type enumType);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Array GetValues(class System.Type enumType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.GetValues(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetValues (enumType As Type) As Array" />
+      <MemberSignature Language="F#" Value="static member GetValues : Type -&gt; Array" Usage="System.Enum.GetValues enumType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Array ^ GetValues(Type ^ enumType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -816,6 +854,9 @@
       <MemberSignature Language="C#" Value="public bool HasFlag (Enum flag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool HasFlag(class System.Enum flag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.HasFlag(System.Enum)" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasFlag (flag As Enum) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasFlag : Enum -&gt; bool" Usage="enum.HasFlag flag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasFlag(Enum ^ flag);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -887,6 +928,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public static bool IsDefined (Type enumType, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsDefined(class System.Type enumType, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.IsDefined(System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsDefined (enumType As Type, value As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsDefined : Type * obj -&gt; bool" Usage="System.Enum.IsDefined (enumType, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsDefined(Type ^ enumType, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -977,10 +1021,27 @@ thisInstance And flag = flag
         <altmember cref="M:System.Enum.HasFlag(System.Enum)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of the name or numeric value of one or more enumerated constants to an equivalent enumerated object.</summary>
+        <altmember cref="M:System.Enum.TryParse``1(System.String,``0@)" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Parse">
       <MemberSignature Language="C#" Value="public static object Parse (Type enumType, string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Parse(class System.Type enumType, string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.Parse(System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (enumType As Type, value As String) As Object" />
+      <MemberSignature Language="F#" Value="static member Parse : Type * string -&gt; obj" Usage="System.Enum.Parse (enumType, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Parse(Type ^ enumType, System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1061,6 +1122,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public static object Parse (Type enumType, string value, bool ignoreCase);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object Parse(class System.Type enumType, string value, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.Parse(System.Type,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (enumType As Type, value As String, ignoreCase As Boolean) As Object" />
+      <MemberSignature Language="F#" Value="static member Parse : Type * string * bool -&gt; obj" Usage="System.Enum.Parse (enumType, value, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ Parse(Type ^ enumType, System::String ^ value, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1143,6 +1207,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public static TEnum Parse&lt;TEnum&gt; (string value) where TEnum : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TEnum Parse&lt;struct .ctor (class System.ValueType) TEnum&gt;(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.Parse``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse(Of TEnum As Structure) (value As String) As TEnum" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; 'Enum (requires 'Enum : struct)" Usage="System.Enum.Parse value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEnum&gt;&#xA; where TEnum : value class static TEnum Parse(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1175,6 +1242,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public static TEnum Parse&lt;TEnum&gt; (string value, bool ignoreCase) where TEnum : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig !!TEnum Parse&lt;struct .ctor (class System.ValueType) TEnum&gt;(string value, bool ignoreCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.Parse``1(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse(Of TEnum As Structure) (value As String, ignoreCase As Boolean) As TEnum" />
+      <MemberSignature Language="F#" Value="static member Parse : string * bool -&gt; 'Enum (requires 'Enum : struct)" Usage="System.Enum.Parse (value, ignoreCase)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEnum&gt;&#xA; where TEnum : value class static TEnum Parse(System::String ^ value, bool ignoreCase);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -1209,7 +1279,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="TypeCode IConvertible.GetTypeCode ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.TypeCode System.IConvertible.GetTypeCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#GetTypeCode" />
+      <MemberSignature Language="VB.NET" Value="Function GetTypeCode () As TypeCode Implements IConvertible.GetTypeCode" />
+      <MemberSignature Language="C++ CLI" Value=" virtual TypeCode System.IConvertible.GetTypeCode() = IConvertible::GetTypeCode;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.GetTypeCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1230,7 +1305,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="bool IConvertible.ToBoolean (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.IConvertible.ToBoolean(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToBoolean(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToBoolean (provider As IFormatProvider) As Boolean Implements IConvertible.ToBoolean" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.IConvertible.ToBoolean(IFormatProvider ^ provider) = IConvertible::ToBoolean;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToBoolean(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1271,7 +1351,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="byte IConvertible.ToByte (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int8 System.IConvertible.ToByte(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToByte(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToByte (provider As IFormatProvider) As Byte Implements IConvertible.ToByte" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Byte System.IConvertible.ToByte(IFormatProvider ^ provider) = IConvertible::ToByte;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToByte(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1311,7 +1396,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="char IConvertible.ToChar (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance char System.IConvertible.ToChar(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToChar(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToChar (provider As IFormatProvider) As Char Implements IConvertible.ToChar" />
+      <MemberSignature Language="C++ CLI" Value=" virtual char System.IConvertible.ToChar(IFormatProvider ^ provider) = IConvertible::ToChar;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToChar(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1352,7 +1442,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="DateTime IConvertible.ToDateTime (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.DateTime System.IConvertible.ToDateTime(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToDateTime(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToDateTime (provider As IFormatProvider) As DateTime Implements IConvertible.ToDateTime" />
+      <MemberSignature Language="C++ CLI" Value=" virtual DateTime System.IConvertible.ToDateTime(IFormatProvider ^ provider) = IConvertible::ToDateTime;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToDateTime(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1393,7 +1488,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="decimal IConvertible.ToDecimal (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance valuetype System.Decimal System.IConvertible.ToDecimal(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToDecimal(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToDecimal (provider As IFormatProvider) As Decimal Implements IConvertible.ToDecimal" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Decimal System.IConvertible.ToDecimal(IFormatProvider ^ provider) = IConvertible::ToDecimal;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToDecimal(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1434,7 +1534,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="double IConvertible.ToDouble (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float64 System.IConvertible.ToDouble(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToDouble(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToDouble (provider As IFormatProvider) As Double Implements IConvertible.ToDouble" />
+      <MemberSignature Language="C++ CLI" Value=" virtual double System.IConvertible.ToDouble(IFormatProvider ^ provider) = IConvertible::ToDouble;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToDouble(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1475,7 +1580,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="short IConvertible.ToInt16 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int16 System.IConvertible.ToInt16(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToInt16(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToInt16 (provider As IFormatProvider) As Short Implements IConvertible.ToInt16" />
+      <MemberSignature Language="C++ CLI" Value=" virtual short System.IConvertible.ToInt16(IFormatProvider ^ provider) = IConvertible::ToInt16;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToInt16(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1515,7 +1625,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="int IConvertible.ToInt32 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.IConvertible.ToInt32(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToInt32(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToInt32 (provider As IFormatProvider) As Integer Implements IConvertible.ToInt32" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.IConvertible.ToInt32(IFormatProvider ^ provider) = IConvertible::ToInt32;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToInt32(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1555,7 +1670,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="long IConvertible.ToInt64 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int64 System.IConvertible.ToInt64(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToInt64(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToInt64 (provider As IFormatProvider) As Long Implements IConvertible.ToInt64" />
+      <MemberSignature Language="C++ CLI" Value=" virtual long System.IConvertible.ToInt64(IFormatProvider ^ provider) = IConvertible::ToInt64;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToInt64(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1595,7 +1715,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="sbyte IConvertible.ToSByte (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int8 System.IConvertible.ToSByte(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToSByte(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToSByte (provider As IFormatProvider) As SByte Implements IConvertible.ToSByte" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::SByte System.IConvertible.ToSByte(IFormatProvider ^ provider) = IConvertible::ToSByte;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToSByte(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1635,7 +1760,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="float IConvertible.ToSingle (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance float32 System.IConvertible.ToSingle(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToSingle(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToSingle (provider As IFormatProvider) As Single Implements IConvertible.ToSingle" />
+      <MemberSignature Language="C++ CLI" Value=" virtual float System.IConvertible.ToSingle(IFormatProvider ^ provider) = IConvertible::ToSingle;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToSingle(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1676,7 +1806,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="string IConvertible.ToString (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IConvertible.ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToString (provider As IFormatProvider) As String Implements IConvertible.ToString" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.IConvertible.ToString(IFormatProvider ^ provider) = IConvertible::ToString;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToString(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1704,7 +1839,11 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="object IConvertible.ToType (Type type, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.IConvertible.ToType(class System.Type type, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToType(System.Type,System.IFormatProvider)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.IConvertible.ToType(Type ^ type, IFormatProvider ^ provider) = IConvertible::ToType;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToType(System.Type,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1746,7 +1885,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="ushort IConvertible.ToUInt16 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int16 System.IConvertible.ToUInt16(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToUInt16(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToUInt16 (provider As IFormatProvider) As UShort Implements IConvertible.ToUInt16" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt16 System.IConvertible.ToUInt16(IFormatProvider ^ provider) = IConvertible::ToUInt16;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToUInt16(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1786,7 +1930,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="uint IConvertible.ToUInt32 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int32 System.IConvertible.ToUInt32(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToUInt32(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToUInt32 (provider As IFormatProvider) As UInteger Implements IConvertible.ToUInt32" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt32 System.IConvertible.ToUInt32(IFormatProvider ^ provider) = IConvertible::ToUInt32;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToUInt32(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1826,7 +1975,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="ulong IConvertible.ToUInt64 (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance unsigned int64 System.IConvertible.ToUInt64(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IConvertible#ToUInt64(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToUInt64 (provider As IFormatProvider) As ULong Implements IConvertible.ToUInt64" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::UInt64 System.IConvertible.ToUInt64(IFormatProvider ^ provider) = IConvertible::ToUInt64;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToUInt64(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -1866,7 +2020,12 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="string IFormattable.ToString (string format, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToString (format As String, provider As IFormatProvider) As String Implements IFormattable.ToString" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.IFormattable.ToString(System::String ^ format, IFormatProvider ^ provider) = IFormattable::ToString;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1894,10 +2053,23 @@ thisInstance And flag = flag
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToObject">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts a specified integer value to an enumeration member.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToObject">
       <MemberSignature Language="C#" Value="public static object ToObject (Type enumType, byte value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToObject(class System.Type enumType, unsigned int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As Byte) As Object" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * byte -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, System::Byte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1953,6 +2125,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public static object ToObject (Type enumType, short value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToObject(class System.Type enumType, int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As Short) As Object" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * int16 -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, short value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2008,6 +2183,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public static object ToObject (Type enumType, int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToObject(class System.Type enumType, int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As Integer) As Object" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * int -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, int value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2063,6 +2241,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public static object ToObject (Type enumType, long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToObject(class System.Type enumType, int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As Long) As Object" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * int64 -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2118,6 +2299,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public static object ToObject (Type enumType, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToObject(class System.Type enumType, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As Object) As Object" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * obj -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2178,6 +2362,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public static object ToObject (Type enumType, sbyte value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToObject(class System.Type enumType, int8 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.SByte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As SByte) As Object" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * sbyte -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, System::SByte value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2236,6 +2423,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public static object ToObject (Type enumType, ushort value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToObject(class System.Type enumType, unsigned int16 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.UInt16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As UShort) As Object" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * uint16 -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, System::UInt16 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2294,6 +2484,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public static object ToObject (Type enumType, uint value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToObject(class System.Type enumType, unsigned int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As UInteger) As Object" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * uint32 -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, System::UInt32 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2352,6 +2545,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public static object ToObject (Type enumType, ulong value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object ToObject(class System.Type enumType, unsigned int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.ToObject(System.Type,System.UInt64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToObject (enumType As Type, value As ULong) As Object" />
+      <MemberSignature Language="F#" Value="static member ToObject : Type * uint64 -&gt; obj" Usage="System.Enum.ToObject (enumType, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ ToObject(Type ^ enumType, System::UInt64 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2406,10 +2602,26 @@ thisInstance And flag = flag
         <altmember cref="M:System.Enum.IsDefined(System.Type,System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of this instance to its equivalent string representation.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="enum.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2471,7 +2683,13 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public string ToString (IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (provider As IFormatProvider) As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="enum.ToString provider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IConvertible.ToString(System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2507,6 +2725,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public string ToString (string format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.ToString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String) As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : string -&gt; string" Usage="enum.ToString format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2576,7 +2797,13 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public string ToString (string format, IFormatProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(string format, class System.IFormatProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, provider As IFormatProvider) As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : string * IFormatProvider -&gt; string" Usage="enum.ToString (format, provider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(System::String ^ format, IFormatProvider ^ provider);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -2624,10 +2851,23 @@ thisInstance And flag = flag
         <altmember cref="M:System.Enum.Format(System.Type,System.Object,System.String)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="TryParse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of the name or numeric value of one or more enumerated constants to an equivalent enumerated object. The return value indicates whether the conversion succeeded.</summary>
+        <altmember cref="M:System.Enum.Parse(System.Type,System.String)" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TryParse">
       <MemberSignature Language="C#" Value="public static bool TryParse (Type enumType, string value, out object result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(class System.Type enumType, string value, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.TryParse(System.Type,System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (enumType As Type, value As String, ByRef result As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryParse : Type * string *  -&gt; bool" Usage="System.Enum.TryParse (enumType, value, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(Type ^ enumType, System::String ^ value, [Runtime::InteropServices::Out] System::Object ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2654,6 +2894,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public static bool TryParse (Type enumType, string value, bool ignoreCase, out object result);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse(class System.Type enumType, string value, bool ignoreCase, [out] object&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.TryParse(System.Type,System.String,System.Boolean,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse (enumType As Type, value As String, ignoreCase As Boolean, ByRef result As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryParse : Type * string * bool *  -&gt; bool" Usage="System.Enum.TryParse (enumType, value, ignoreCase, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool TryParse(Type ^ enumType, System::String ^ value, bool ignoreCase, [Runtime::InteropServices::Out] System::Object ^ % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2682,6 +2925,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public static bool TryParse&lt;TEnum&gt; (string value, out TEnum result) where TEnum : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse&lt;struct .ctor (class System.ValueType) TEnum&gt;(string value, [out] !!TEnum&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.TryParse``1(System.String,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse(Of TEnum As Structure) (value As String, ByRef result As TEnum) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryParse : string *  -&gt; bool (requires 'Enum : struct)" Usage="System.Enum.TryParse (value, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEnum&gt;&#xA; where TEnum : value class static bool TryParse(System::String ^ value, [Runtime::InteropServices::Out] TEnum % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2752,6 +2998,9 @@ thisInstance And flag = flag
       <MemberSignature Language="C#" Value="public static bool TryParse&lt;TEnum&gt; (string value, bool ignoreCase, out TEnum result) where TEnum : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool TryParse&lt;struct .ctor (class System.ValueType) TEnum&gt;(string value, bool ignoreCase, [out] !!TEnum&amp; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Enum.TryParse``1(System.String,System.Boolean,``0@)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryParse(Of TEnum As Structure) (value As String, ignoreCase As Boolean, ByRef result As TEnum) As Boolean" />
+      <MemberSignature Language="F#" Value="static member TryParse : string * bool *  -&gt; bool (requires 'Enum : struct)" Usage="System.Enum.TryParse (value, ignoreCase, result)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename TEnum&gt;&#xA; where TEnum : value class static bool TryParse(System::String ^ value, bool ignoreCase, [Runtime::InteropServices::Out] TEnum % result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -2821,52 +3070,5 @@ thisInstance And flag = flag
         <altmember cref="M:System.Enum.Parse(System.Type,System.String,System.Boolean)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="ToObject">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts a specified integer value to an enumeration member.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the value of this instance to its equivalent string representation.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Parse">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the string representation of the name or numeric value of one or more enumerated constants to an equivalent enumerated object.</summary>
-        <altmember cref="M:System.Enum.TryParse``1(System.String,``0@)" />
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TryParse">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the string representation of the name or numeric value of one or more enumerated constants to an equivalent enumerated object. The return value indicates whether the conversion succeeded.</summary>
-        <altmember cref="M:System.Enum.Parse(System.Type,System.String)" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

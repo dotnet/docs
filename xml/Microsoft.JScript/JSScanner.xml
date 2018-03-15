@@ -1,7 +1,10 @@
-<Type Name="JSScanner" FullName="Microsoft.JScript.JSScanner">
+﻿<Type Name="JSScanner" FullName="Microsoft.JScript.JSScanner">
   <TypeSignature Language="C#" Value="public sealed class JSScanner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit JSScanner extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSScanner" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class JSScanner" />
+  <TypeSignature Language="F#" Value="type JSScanner = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JSScanner sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -20,10 +23,25 @@
     <altmember cref="T:Microsoft.JScript.AST" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.JScript</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSScanner" /> class.</summary>
+        <altmember cref="T:Microsoft.JScript.JSToken" />
+        <altmember cref="T:Microsoft.JScript.JSParser" />
+        <altmember cref="T:Microsoft.JScript.Context" />
+        <altmember cref="T:Microsoft.JScript.AST" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public JSScanner ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSScanner.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JSScanner();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -44,6 +62,9 @@
       <MemberSignature Language="C#" Value="public JSScanner (Microsoft.JScript.Context sourceContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Microsoft.JScript.Context sourceContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSScanner.#ctor(Microsoft.JScript.Context)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (sourceContext As Context)" />
+      <MemberSignature Language="F#" Value="new Microsoft.JScript.JSScanner : Microsoft.JScript.Context -&gt; Microsoft.JScript.JSScanner" Usage="new Microsoft.JScript.JSScanner sourceContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; JSScanner(Microsoft::JScript::Context ^ sourceContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -66,6 +87,9 @@
       <MemberSignature Language="C#" Value="public int GetCurrentLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetCurrentLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSScanner.GetCurrentLine" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCurrentLine () As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentLine : unit -&gt; int" Usage="jSScanner.GetCurrentLine " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetCurrentLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -90,6 +114,9 @@
       <MemberSignature Language="C#" Value="public int GetCurrentPosition (bool absolute);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetCurrentPosition(bool absolute) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSScanner.GetCurrentPosition(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetCurrentPosition (absolute As Boolean) As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetCurrentPosition : bool -&gt; int" Usage="jSScanner.GetCurrentPosition absolute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetCurrentPosition(bool absolute);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -117,6 +144,9 @@
       <MemberSignature Language="C#" Value="public void GetNextToken ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void GetNextToken() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSScanner.GetNextToken" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetNextToken ()" />
+      <MemberSignature Language="F#" Value="member this.GetNextToken : unit -&gt; unit" Usage="jSScanner.GetNextToken " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetNextToken();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -140,6 +170,9 @@
       <MemberSignature Language="C#" Value="public string GetSourceCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetSourceCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSScanner.GetSourceCode" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSourceCode () As String" />
+      <MemberSignature Language="F#" Value="member this.GetSourceCode : unit -&gt; string" Usage="jSScanner.GetSourceCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetSourceCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -171,6 +204,9 @@
       <MemberSignature Language="C#" Value="public int GetStartLinePosition ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetStartLinePosition() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSScanner.GetStartLinePosition" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStartLinePosition () As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetStartLinePosition : unit -&gt; int" Usage="jSScanner.GetStartLinePosition " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetStartLinePosition();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -195,6 +231,9 @@
       <MemberSignature Language="C#" Value="public string GetStringLiteral ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string GetStringLiteral() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSScanner.GetStringLiteral" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStringLiteral () As String" />
+      <MemberSignature Language="F#" Value="member this.GetStringLiteral : unit -&gt; string" Usage="jSScanner.GetStringLiteral " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetStringLiteral();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -219,6 +258,9 @@
       <MemberSignature Language="C#" Value="public bool GotEndOfLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GotEndOfLine() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSScanner.GotEndOfLine" />
+      <MemberSignature Language="VB.NET" Value="Public Function GotEndOfLine () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.GotEndOfLine : unit -&gt; bool" Usage="jSScanner.GotEndOfLine " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GotEndOfLine();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -244,6 +286,9 @@
       <MemberSignature Language="C#" Value="public static bool IsKeyword (Microsoft.JScript.JSToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsKeyword(valuetype Microsoft.JScript.JSToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSScanner.IsKeyword(Microsoft.JScript.JSToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsKeyword (token As JSToken) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsKeyword : Microsoft.JScript.JSToken -&gt; bool" Usage="Microsoft.JScript.JSScanner.IsKeyword token" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsKeyword(Microsoft::JScript::JSToken token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -271,6 +316,9 @@
       <MemberSignature Language="C#" Value="public static bool IsOperator (Microsoft.JScript.JSToken token);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsOperator(valuetype Microsoft.JScript.JSToken token) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSScanner.IsOperator(Microsoft.JScript.JSToken)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsOperator (token As JSToken) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsOperator : Microsoft.JScript.JSToken -&gt; bool" Usage="Microsoft.JScript.JSScanner.IsOperator token" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool IsOperator(Microsoft::JScript::JSToken token);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -298,6 +346,9 @@
       <MemberSignature Language="C#" Value="public void SetAuthoringMode (bool mode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAuthoringMode(bool mode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSScanner.SetAuthoringMode(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAuthoringMode (mode As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.SetAuthoringMode : bool -&gt; unit" Usage="jSScanner.SetAuthoringMode mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAuthoringMode(bool mode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -333,6 +384,9 @@
       <MemberSignature Language="C#" Value="public void SetSource (Microsoft.JScript.Context sourceContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSource(class Microsoft.JScript.Context sourceContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSScanner.SetSource(Microsoft.JScript.Context)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSource (sourceContext As Context)" />
+      <MemberSignature Language="F#" Value="member this.SetSource : Microsoft.JScript.Context -&gt; unit" Usage="jSScanner.SetSource sourceContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSource(Microsoft::JScript::Context ^ sourceContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -358,6 +412,9 @@
       <MemberSignature Language="C#" Value="public int SkipMultiLineComment ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 SkipMultiLineComment() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSScanner.SkipMultiLineComment" />
+      <MemberSignature Language="VB.NET" Value="Public Function SkipMultiLineComment () As Integer" />
+      <MemberSignature Language="F#" Value="member this.SkipMultiLineComment : unit -&gt; int" Usage="jSScanner.SkipMultiLineComment " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int SkipMultiLineComment();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -378,18 +435,5 @@
         <altmember cref="T:Microsoft.JScript.AST" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.JScript</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.JScript.JSScanner" /> class.</summary>
-        <altmember cref="T:Microsoft.JScript.JSToken" />
-        <altmember cref="T:Microsoft.JScript.JSParser" />
-        <altmember cref="T:Microsoft.JScript.Context" />
-        <altmember cref="T:Microsoft.JScript.AST" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

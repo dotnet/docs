@@ -1,7 +1,10 @@
-<Type Name="ComAwareEventInfo" FullName="System.Runtime.InteropServices.ComAwareEventInfo">
+﻿<Type Name="ComAwareEventInfo" FullName="System.Runtime.InteropServices.ComAwareEventInfo">
   <TypeSignature Language="C#" Value="public class ComAwareEventInfo : System.Reflection.EventInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComAwareEventInfo extends System.Reflection.EventInfo" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComAwareEventInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class ComAwareEventInfo&#xA;Inherits EventInfo" />
+  <TypeSignature Language="F#" Value="type ComAwareEventInfo = class&#xA;    inherit EventInfo" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComAwareEventInfo : System::Reflection::EventInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="public ComAwareEventInfo (Type type, string eventName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type, string eventName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComAwareEventInfo.#ctor(System.Type,System.String)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.InteropServices.ComAwareEventInfo : Type * string -&gt; System.Runtime.InteropServices.ComAwareEventInfo" Usage="new System.Runtime.InteropServices.ComAwareEventInfo (type, eventName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComAwareEventInfo(Type ^ type, System::String ^ eventName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -78,6 +83,9 @@
       <MemberSignature Language="C#" Value="public override void AddEventHandler (object target, Delegate handler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddEventHandler(object target, class System.Delegate handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComAwareEventInfo.AddEventHandler(System.Object,System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub AddEventHandler (target As Object, handler As Delegate)" />
+      <MemberSignature Language="F#" Value="override this.AddEventHandler : obj * Delegate -&gt; unit" Usage="comAwareEventInfo.AddEventHandler (target, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void AddEventHandler(System::Object ^ target, Delegate ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -137,6 +145,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.EventAttributes Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.EventAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComAwareEventInfo.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Attributes As EventAttributes" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.EventAttributes" Usage="System.Runtime.InteropServices.ComAwareEventInfo.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::EventAttributes Attributes { System::Reflection::EventAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -176,6 +187,9 @@
       <MemberSignature Language="C#" Value="public override Type DeclaringType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DeclaringType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComAwareEventInfo.DeclaringType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DeclaringType As Type" />
+      <MemberSignature Language="F#" Value="member this.DeclaringType : Type" Usage="System.Runtime.InteropServices.ComAwareEventInfo.DeclaringType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ DeclaringType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -209,6 +223,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.MethodInfo GetAddMethod (bool nonPublic);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.MethodInfo GetAddMethod(bool nonPublic) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComAwareEventInfo.GetAddMethod(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetAddMethod (nonPublic As Boolean) As MethodInfo" />
+      <MemberSignature Language="F#" Value="override this.GetAddMethod : bool -&gt; System.Reflection.MethodInfo" Usage="comAwareEventInfo.GetAddMethod nonPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::MethodInfo ^ GetAddMethod(bool nonPublic);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -246,10 +263,23 @@
           <paramref name="nonPublic" /> is <see langword="true" /> and the method used to add an event handler delegate is non-public, but the caller does not have permission to reflect on non-public methods.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns all attributes that are applied to this member.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCustomAttributes">
       <MemberSignature Language="C#" Value="public override object[] GetCustomAttributes (bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object[] GetCustomAttributes(bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComAwareEventInfo.GetCustomAttributes(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (inherit As Boolean) As Object()" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : bool -&gt; obj[]" Usage="comAwareEventInfo.GetCustomAttributes inherit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -292,6 +322,9 @@
       <MemberSignature Language="C#" Value="public override object[] GetCustomAttributes (Type attributeType, bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object[] GetCustomAttributes(class System.Type attributeType, bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComAwareEventInfo.GetCustomAttributes(System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (attributeType As Type, inherit As Boolean) As Object()" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : Type * bool -&gt; obj[]" Usage="comAwareEventInfo.GetCustomAttributes (attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -331,6 +364,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.MethodInfo GetRaiseMethod (bool nonPublic);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.MethodInfo GetRaiseMethod(bool nonPublic) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComAwareEventInfo.GetRaiseMethod(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRaiseMethod (nonPublic As Boolean) As MethodInfo" />
+      <MemberSignature Language="F#" Value="override this.GetRaiseMethod : bool -&gt; System.Reflection.MethodInfo" Usage="comAwareEventInfo.GetRaiseMethod nonPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::MethodInfo ^ GetRaiseMethod(bool nonPublic);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -373,6 +409,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.MethodInfo GetRemoveMethod (bool nonPublic);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.MethodInfo GetRemoveMethod(bool nonPublic) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComAwareEventInfo.GetRemoveMethod(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetRemoveMethod (nonPublic As Boolean) As MethodInfo" />
+      <MemberSignature Language="F#" Value="override this.GetRemoveMethod : bool -&gt; System.Reflection.MethodInfo" Usage="comAwareEventInfo.GetRemoveMethod nonPublic" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Reflection::MethodInfo ^ GetRemoveMethod(bool nonPublic);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -409,6 +448,9 @@
       <MemberSignature Language="C#" Value="public override bool IsDefined (Type attributeType, bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefined(class System.Type attributeType, bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComAwareEventInfo.IsDefined(System.Type,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefined (attributeType As Type, inherit As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsDefined : Type * bool -&gt; bool" Usage="comAwareEventInfo.IsDefined (attributeType, inherit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefined(Type ^ attributeType, bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -448,6 +490,9 @@
       <MemberSignature Language="C#" Value="public override string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComAwareEventInfo.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Runtime.InteropServices.ComAwareEventInfo.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -481,6 +526,9 @@
       <MemberSignature Language="C#" Value="public override Type ReflectedType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReflectedType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.InteropServices.ComAwareEventInfo.ReflectedType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property ReflectedType As Type" />
+      <MemberSignature Language="F#" Value="member this.ReflectedType : Type" Usage="System.Runtime.InteropServices.ComAwareEventInfo.ReflectedType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ReflectedType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -508,6 +556,9 @@
       <MemberSignature Language="C#" Value="public override void RemoveEventHandler (object target, Delegate handler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RemoveEventHandler(object target, class System.Delegate handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComAwareEventInfo.RemoveEventHandler(System.Object,System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub RemoveEventHandler (target As Object, handler As Delegate)" />
+      <MemberSignature Language="F#" Value="override this.RemoveEventHandler : obj * Delegate -&gt; unit" Usage="comAwareEventInfo.RemoveEventHandler (target, handler)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void RemoveEventHandler(System::Object ^ target, Delegate ^ handler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -587,15 +638,5 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetCustomAttributes">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, returns all attributes that are applied to this member.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

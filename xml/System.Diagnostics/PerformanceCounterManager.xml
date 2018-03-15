@@ -1,7 +1,10 @@
-<Type Name="PerformanceCounterManager" FullName="System.Diagnostics.PerformanceCounterManager">
+﻿<Type Name="PerformanceCounterManager" FullName="System.Diagnostics.PerformanceCounterManager">
   <TypeSignature Language="C#" Value="public sealed class PerformanceCounterManager : System.Diagnostics.ICollectData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PerformanceCounterManager extends System.Object implements class System.Diagnostics.ICollectData" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceCounterManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class PerformanceCounterManager&#xA;Implements ICollectData" />
+  <TypeSignature Language="F#" Value="type PerformanceCounterManager = class&#xA;    interface ICollectData" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PerformanceCounterManager sealed : System::Diagnostics::ICollectData" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,8 @@
       <MemberSignature Language="C#" Value="public PerformanceCounterManager ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PerformanceCounterManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,7 +73,12 @@
       <MemberSignature Language="C#" Value="void ICollectData.CloseData ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Diagnostics.ICollectData.CloseData() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterManager.System#Diagnostics#ICollectData#CloseData" />
+      <MemberSignature Language="VB.NET" Value="Sub CloseData () Implements ICollectData.CloseData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Diagnostics.ICollectData.CloseData() = System::Diagnostics::ICollectData::CloseData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.ICollectData.CloseData</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,7 +97,12 @@
       <MemberSignature Language="C#" Value="void ICollectData.CollectData (int callIdx, IntPtr valueNamePtr, IntPtr dataPtr, int totalBytes, out IntPtr res);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Diagnostics.ICollectData.CollectData(int32 callIdx, native int valueNamePtr, native int dataPtr, int32 totalBytes, [out] native int&amp; res) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceCounterManager.System#Diagnostics#ICollectData#CollectData(System.Int32,System.IntPtr,System.IntPtr,System.Int32,System.IntPtr@)" />
+      <MemberSignature Language="VB.NET" Value="Sub CollectData (callIdx As Integer, valueNamePtr As IntPtr, dataPtr As IntPtr, totalBytes As Integer, ByRef res As IntPtr) Implements ICollectData.CollectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Diagnostics.ICollectData.CollectData(int callIdx, IntPtr valueNamePtr, IntPtr dataPtr, int totalBytes, [Runtime::InteropServices::Out] IntPtr % res) = System::Diagnostics::ICollectData::CollectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Diagnostics.ICollectData.CollectData(System.Int32,System.IntPtr,System.IntPtr,System.Int32,System.IntPtr@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="IMetadataAware" FullName="System.Web.ModelBinding.IMetadataAware">
+﻿<Type Name="IMetadataAware" FullName="System.Web.ModelBinding.IMetadataAware">
   <TypeSignature Language="C#" Value="public interface IMetadataAware" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMetadataAware" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.IMetadataAware" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IMetadataAware" />
+  <TypeSignature Language="F#" Value="type IMetadataAware = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IMetadataAware" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="public void OnMetadataCreated (System.Web.ModelBinding.ModelMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnMetadataCreated(class System.Web.ModelBinding.ModelMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.IMetadataAware.OnMetadataCreated(System.Web.ModelBinding.ModelMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OnMetadataCreated (metadata As ModelMetadata)" />
+      <MemberSignature Language="F#" Value="abstract member OnMetadataCreated : System.Web.ModelBinding.ModelMetadata -&gt; unit" Usage="iMetadataAware.OnMetadataCreated metadata" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OnMetadataCreated(System::Web::ModelBinding::ModelMetadata ^ metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

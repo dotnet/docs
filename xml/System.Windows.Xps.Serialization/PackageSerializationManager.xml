@@ -1,7 +1,10 @@
-<Type Name="PackageSerializationManager" FullName="System.Windows.Xps.Serialization.PackageSerializationManager">
+﻿<Type Name="PackageSerializationManager" FullName="System.Windows.Xps.Serialization.PackageSerializationManager">
   <TypeSignature Language="C#" Value="public abstract class PackageSerializationManager : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PackageSerializationManager extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Serialization.PackageSerializationManager" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PackageSerializationManager&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type PackageSerializationManager = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PackageSerializationManager abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,8 @@
       <MemberSignature Language="C#" Value="protected PackageSerializationManager ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.PackageSerializationManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PackageSerializationManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -43,6 +48,9 @@
       <MemberSignature Language="C#" Value="public abstract void SaveAsXaml (object serializedObject);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SaveAsXaml(object serializedObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.PackageSerializationManager.SaveAsXaml(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SaveAsXaml (serializedObject As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SaveAsXaml : obj -&gt; unit" Usage="packageSerializationManager.SaveAsXaml serializedObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SaveAsXaml(System::Object ^ serializedObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -64,7 +72,12 @@
       <MemberSignature Language="C#" Value="void IDisposable.Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.IDisposable.Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Xps.Serialization.PackageSerializationManager.System#IDisposable#Dispose" />
+      <MemberSignature Language="VB.NET" Value="Sub Dispose () Implements IDisposable.Dispose" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.IDisposable.Dispose() = IDisposable::Dispose;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

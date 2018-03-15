@@ -1,7 +1,10 @@
-<Type Name="DockPosition" FullName="System.Windows.Automation.DockPosition">
+﻿<Type Name="DockPosition" FullName="System.Windows.Automation.DockPosition">
   <TypeSignature Language="C#" Value="public enum DockPosition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DockPosition extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.DockPosition" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DockPosition" />
+  <TypeSignature Language="F#" Value="type DockPosition = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DockPosition" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="Bottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.DockPosition Bottom = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.DockPosition.Bottom" />
+      <MemberSignature Language="VB.NET" Value="Bottom" />
+      <MemberSignature Language="F#" Value="Bottom = 2" Usage="System.Windows.Automation.DockPosition.Bottom" />
+      <MemberSignature Language="C++ CLI" Value="Bottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.DockPosition</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the UI Automation element is docked along the bottom edge of the docking container.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="Fill" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.DockPosition Fill = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.DockPosition.Fill" />
+      <MemberSignature Language="VB.NET" Value="Fill" />
+      <MemberSignature Language="F#" Value="Fill = 4" Usage="System.Windows.Automation.DockPosition.Fill" />
+      <MemberSignature Language="C++ CLI" Value="Fill" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -59,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.DockPosition</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that the UI Automation element is docked along all edges of the docking container and fills all available space within the container.</summary>
       </Docs>
@@ -67,6 +78,9 @@
       <MemberSignature Language="C#" Value="Left" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.DockPosition Left = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.DockPosition.Left" />
+      <MemberSignature Language="VB.NET" Value="Left" />
+      <MemberSignature Language="F#" Value="Left = 1" Usage="System.Windows.Automation.DockPosition.Left" />
+      <MemberSignature Language="C++ CLI" Value="Left" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -75,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.DockPosition</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the UI Automation element is docked along the left edge of the docking container.</summary>
       </Docs>
@@ -83,6 +98,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.DockPosition None = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.DockPosition.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 5" Usage="System.Windows.Automation.DockPosition.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -91,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.DockPosition</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Indicates that the UI Automation element is not docked to any edge of the docking container.</summary>
       </Docs>
@@ -99,6 +118,9 @@
       <MemberSignature Language="C#" Value="Right" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.DockPosition Right = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.DockPosition.Right" />
+      <MemberSignature Language="VB.NET" Value="Right" />
+      <MemberSignature Language="F#" Value="Right = 3" Usage="System.Windows.Automation.DockPosition.Right" />
+      <MemberSignature Language="C++ CLI" Value="Right" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -107,6 +129,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.DockPosition</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates that the UI Automation element is docked along the right edge of the docking container.</summary>
       </Docs>
@@ -115,6 +138,9 @@
       <MemberSignature Language="C#" Value="Top" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Automation.DockPosition Top = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.DockPosition.Top" />
+      <MemberSignature Language="VB.NET" Value="Top" />
+      <MemberSignature Language="F#" Value="Top = 0" Usage="System.Windows.Automation.DockPosition.Top" />
+      <MemberSignature Language="C++ CLI" Value="Top" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -123,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Automation.DockPosition</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that the UI Automation element is docked along the top edge of the docking container.</summary>
       </Docs>

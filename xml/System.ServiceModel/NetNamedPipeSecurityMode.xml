@@ -1,7 +1,10 @@
-<Type Name="NetNamedPipeSecurityMode" FullName="System.ServiceModel.NetNamedPipeSecurityMode">
+﻿<Type Name="NetNamedPipeSecurityMode" FullName="System.ServiceModel.NetNamedPipeSecurityMode">
   <TypeSignature Language="C#" Value="public enum NetNamedPipeSecurityMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NetNamedPipeSecurityMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.NetNamedPipeSecurityMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum NetNamedPipeSecurityMode" />
+  <TypeSignature Language="F#" Value="type NetNamedPipeSecurityMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class NetNamedPipeSecurityMode" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.NetNamedPipeSecurityMode None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.NetNamedPipeSecurityMode.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ServiceModel.NetNamedPipeSecurityMode.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -40,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.NetNamedPipeSecurityMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates no security is used with the named pipe transport.</summary>
       </Docs>
@@ -48,6 +55,9 @@
       <MemberSignature Language="C#" Value="Transport" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.NetNamedPipeSecurityMode Transport = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.NetNamedPipeSecurityMode.Transport" />
+      <MemberSignature Language="VB.NET" Value="Transport" />
+      <MemberSignature Language="F#" Value="Transport = 1" Usage="System.ServiceModel.NetNamedPipeSecurityMode.Transport" />
+      <MemberSignature Language="C++ CLI" Value="Transport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -57,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.NetNamedPipeSecurityMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that transport-level security is used with the named pipe transport.</summary>
       </Docs>

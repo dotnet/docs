@@ -1,7 +1,10 @@
-<Type Name="BuildMessage" FullName="Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage">
+﻿<Type Name="BuildMessage" FullName="Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage">
   <TypeSignature Language="C#" Value="public class BuildMessage : Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildMessage" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BuildMessage extends System.Object implements class Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildMessage" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage" />
+  <TypeSignature Language="VB.NET" Value="Public Class BuildMessage&#xA;Implements IBuildMessage" />
+  <TypeSignature Language="F#" Value="type BuildMessage = class&#xA;    interface IBuildMessage" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BuildMessage : Microsoft::Build::Tasks::Deployment::Bootstrapper::IBuildMessage" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,7 +27,13 @@
       <MemberSignature Language="C#" Value="public int HelpId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 HelpId" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage.HelpId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HelpId As Integer" />
+      <MemberSignature Language="F#" Value="member this.HelpId : int" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage.HelpId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HelpId { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildMessage.HelpId</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,7 +52,13 @@
       <MemberSignature Language="C#" Value="public string HelpKeyword { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string HelpKeyword" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage.HelpKeyword" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HelpKeyword As String" />
+      <MemberSignature Language="F#" Value="member this.HelpKeyword : string" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage.HelpKeyword" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ HelpKeyword { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildMessage.HelpKeyword</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,7 +77,13 @@
       <MemberSignature Language="C#" Value="public string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage.Message" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage.Message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Message { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildMessage.Message</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,7 +102,13 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessageSeverity Severity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessageSeverity Severity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage.Severity" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Severity As BuildMessageSeverity" />
+      <MemberSignature Language="F#" Value="member this.Severity : Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessageSeverity" Usage="Microsoft.Build.Tasks.Deployment.Bootstrapper.BuildMessage.Severity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Tasks::Deployment::Bootstrapper::BuildMessageSeverity Severity { Microsoft::Build::Tasks::Deployment::Bootstrapper::BuildMessageSeverity get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Build.Tasks.Deployment.Bootstrapper.IBuildMessage.Severity</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

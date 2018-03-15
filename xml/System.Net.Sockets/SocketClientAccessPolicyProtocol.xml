@@ -1,7 +1,10 @@
-<Type Name="SocketClientAccessPolicyProtocol" FullName="System.Net.Sockets.SocketClientAccessPolicyProtocol">
+﻿<Type Name="SocketClientAccessPolicyProtocol" FullName="System.Net.Sockets.SocketClientAccessPolicyProtocol">
   <TypeSignature Language="C#" Value="public enum SocketClientAccessPolicyProtocol" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocketClientAccessPolicyProtocol extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketClientAccessPolicyProtocol" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SocketClientAccessPolicyProtocol" />
+  <TypeSignature Language="F#" Value="type SocketClientAccessPolicyProtocol = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SocketClientAccessPolicyProtocol" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="Http" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketClientAccessPolicyProtocol Http = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketClientAccessPolicyProtocol.Http" />
+      <MemberSignature Language="VB.NET" Value="Http" />
+      <MemberSignature Language="F#" Value="Http = 1" Usage="System.Net.Sockets.SocketClientAccessPolicyProtocol.Http" />
+      <MemberSignature Language="C++ CLI" Value="Http" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -34,6 +40,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketClientAccessPolicyProtocol</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The socket policy file is downloaded using the HTTP protocol running on TCP port 943.</summary>
       </Docs>
@@ -42,6 +49,9 @@
       <MemberSignature Language="C#" Value="Tcp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketClientAccessPolicyProtocol Tcp = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketClientAccessPolicyProtocol.Tcp" />
+      <MemberSignature Language="VB.NET" Value="Tcp" />
+      <MemberSignature Language="F#" Value="Tcp = 0" Usage="System.Net.Sockets.SocketClientAccessPolicyProtocol.Tcp" />
+      <MemberSignature Language="C++ CLI" Value="Tcp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -50,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketClientAccessPolicyProtocol</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The socket policy file is downloaded using a custom TCP protocol running on TCP port 943.</summary>
       </Docs>

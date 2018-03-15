@@ -1,7 +1,10 @@
-<Type Name="DomainUpDown+DomainItemAccessibleObject" FullName="System.Windows.Forms.DomainUpDown+DomainItemAccessibleObject">
+﻿<Type Name="DomainUpDown+DomainItemAccessibleObject" FullName="System.Windows.Forms.DomainUpDown+DomainItemAccessibleObject">
   <TypeSignature Language="C#" Value="public class DomainUpDown.DomainItemAccessibleObject : System.Windows.Forms.AccessibleObject" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit DomainUpDown/DomainItemAccessibleObject extends System.Windows.Forms.AccessibleObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class DomainUpDown.DomainItemAccessibleObject&#xA;Inherits AccessibleObject" />
+  <TypeSignature Language="F#" Value="type DomainUpDown.DomainItemAccessibleObject = class&#xA;    inherit AccessibleObject" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class DomainUpDown::DomainItemAccessibleObject : System::Windows::Forms::AccessibleObject" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public DomainItemAccessibleObject (string name, System.Windows.Forms.AccessibleObject parent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, class System.Windows.Forms.AccessibleObject parent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject.#ctor(System.String,System.Windows.Forms.AccessibleObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, parent As AccessibleObject)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject : string * System.Windows.Forms.AccessibleObject -&gt; System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject" Usage="new System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject (name, parent)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DomainItemAccessibleObject(System::String ^ name, System::Windows::Forms::AccessibleObject ^ parent);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -64,6 +70,9 @@
       <MemberSignature Language="C#" Value="public override string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +92,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleObject Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.AccessibleObject Parent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Parent As AccessibleObject" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Windows.Forms.AccessibleObject" Usage="System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject.Parent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleObject ^ Parent { System::Windows::Forms::AccessibleObject ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -102,6 +114,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleRole Role { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleRole Role" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject.Role" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Role As AccessibleRole" />
+      <MemberSignature Language="F#" Value="member this.Role : System.Windows.Forms.AccessibleRole" Usage="System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject.Role" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleRole Role { System::Windows::Forms::AccessibleRole get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -121,6 +136,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.AccessibleStates State { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.AccessibleStates State" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject.State" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property State As AccessibleStates" />
+      <MemberSignature Language="F#" Value="member this.State : System.Windows.Forms.AccessibleStates" Usage="System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject.State" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::AccessibleStates State { System::Windows::Forms::AccessibleStates get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -140,6 +158,9 @@
       <MemberSignature Language="C#" Value="public override string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Windows.Forms.DomainUpDown.DomainItemAccessibleObject.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

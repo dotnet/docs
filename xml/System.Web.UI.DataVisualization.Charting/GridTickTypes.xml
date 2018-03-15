@@ -1,7 +1,10 @@
-<Type Name="GridTickTypes" FullName="System.Web.UI.DataVisualization.Charting.GridTickTypes">
+﻿<Type Name="GridTickTypes" FullName="System.Web.UI.DataVisualization.Charting.GridTickTypes">
   <TypeSignature Language="C#" Value="public enum GridTickTypes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GridTickTypes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.GridTickTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GridTickTypes" />
+  <TypeSignature Language="F#" Value="type GridTickTypes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class GridTickTypes" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.GridTickTypes All = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.GridTickTypes.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="F#" Value="All = 3" Usage="System.Web.UI.DataVisualization.Charting.GridTickTypes.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -38,6 +44,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.GridTickTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A tick mark and a grid line are shown.</summary>
       </Docs>
@@ -46,6 +53,9 @@
       <MemberSignature Language="C#" Value="Gridline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.GridTickTypes Gridline = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.GridTickTypes.Gridline" />
+      <MemberSignature Language="VB.NET" Value="Gridline" />
+      <MemberSignature Language="F#" Value="Gridline = 2" Usage="System.Web.UI.DataVisualization.Charting.GridTickTypes.Gridline" />
+      <MemberSignature Language="C++ CLI" Value="Gridline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -54,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.GridTickTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A grid line is shown.</summary>
       </Docs>
@@ -62,6 +73,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.GridTickTypes None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.GridTickTypes.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.UI.DataVisualization.Charting.GridTickTypes.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -70,6 +84,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.GridTickTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No tick mark or grid line is shown.</summary>
       </Docs>
@@ -78,6 +93,9 @@
       <MemberSignature Language="C#" Value="TickMark" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.GridTickTypes TickMark = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.GridTickTypes.TickMark" />
+      <MemberSignature Language="VB.NET" Value="TickMark" />
+      <MemberSignature Language="F#" Value="TickMark = 1" Usage="System.Web.UI.DataVisualization.Charting.GridTickTypes.TickMark" />
+      <MemberSignature Language="C++ CLI" Value="TickMark" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -86,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.GridTickTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A tick mark is shown.</summary>
       </Docs>

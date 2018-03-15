@@ -1,7 +1,10 @@
-<Type Name="BaseAddressPrefixFilterElementCollection" FullName="System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection">
+﻿<Type Name="BaseAddressPrefixFilterElementCollection" FullName="System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection">
   <TypeSignature Language="C#" Value="public sealed class BaseAddressPrefixFilterElementCollection : System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection&lt;System.ServiceModel.Configuration.BaseAddressPrefixFilterElement&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit BaseAddressPrefixFilterElementCollection extends System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1&lt;class System.ServiceModel.Configuration.BaseAddressPrefixFilterElement&gt;" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class BaseAddressPrefixFilterElementCollection&#xA;Inherits ServiceModelConfigurationElementCollection(Of BaseAddressPrefixFilterElement)" />
+  <TypeSignature Language="F#" Value="type BaseAddressPrefixFilterElementCollection = class&#xA;    inherit ServiceModelConfigurationElementCollection&lt;BaseAddressPrefixFilterElement&gt;" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BaseAddressPrefixFilterElementCollection sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElementCollection&lt;System::ServiceModel::Configuration::BaseAddressPrefixFilterElement ^&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public BaseAddressPrefixFilterElementCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BaseAddressPrefixFilterElementCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationElement CreateNewElement ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Configuration.ConfigurationElement CreateNewElement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection.CreateNewElement" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateNewElement () As ConfigurationElement" />
+      <MemberSignature Language="F#" Value="override this.CreateNewElement : unit -&gt; System.Configuration.ConfigurationElement" Usage="baseAddressPrefixFilterElementCollection.CreateNewElement " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Configuration::ConfigurationElement ^ CreateNewElement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -61,6 +69,9 @@
       <MemberSignature Language="C#" Value="protected override object GetElementKey (System.Configuration.ConfigurationElement element);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object GetElementKey(class System.Configuration.ConfigurationElement element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection.GetElementKey(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetElementKey (element As ConfigurationElement) As Object" />
+      <MemberSignature Language="F#" Value="override this.GetElementKey : System.Configuration.ConfigurationElement -&gt; obj" Usage="baseAddressPrefixFilterElementCollection.GetElementKey element" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ GetElementKey(System::Configuration::ConfigurationElement ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,6 +94,9 @@
       <MemberSignature Language="C#" Value="protected override bool ThrowOnDuplicate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ThrowOnDuplicate" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property ThrowOnDuplicate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ThrowOnDuplicate : bool" Usage="System.ServiceModel.Configuration.BaseAddressPrefixFilterElementCollection.ThrowOnDuplicate" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool ThrowOnDuplicate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

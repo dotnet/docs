@@ -1,7 +1,10 @@
-<Type Name="OperationInfoBase" FullName="System.Workflow.Activities.OperationInfoBase">
+﻿<Type Name="OperationInfoBase" FullName="System.Workflow.Activities.OperationInfoBase">
   <TypeSignature Language="C#" Value="public abstract class OperationInfoBase : System.Workflow.ComponentModel.DependencyObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit OperationInfoBase extends System.Workflow.ComponentModel.DependencyObject" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.OperationInfoBase" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class OperationInfoBase&#xA;Inherits DependencyObject" />
+  <TypeSignature Language="F#" Value="type OperationInfoBase = class&#xA;    inherit DependencyObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OperationInfoBase abstract : System::Workflow::ComponentModel::DependencyObject" />
   <AssemblyInfo>
     <AssemblyName>System.WorkflowServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,8 @@
       <MemberSignature Language="C#" Value="protected OperationInfoBase ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationInfoBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; OperationInfoBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -57,6 +62,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Workflow.Activities.OperationInfoBase Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Workflow.Activities.OperationInfoBase Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationInfoBase.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As OperationInfoBase" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Workflow.Activities.OperationInfoBase&#xA;override this.Clone : unit -&gt; System.Workflow.Activities.OperationInfoBase" Usage="operationInfoBase.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Workflow::Activities::OperationInfoBase ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -76,6 +84,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationInfoBase.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="operationInfoBase.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -96,9 +107,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetContractFullName">
-      <MemberSignature Language="C#" Value="protected abstract string GetContractFullName (IServiceProvider provider);" />
+      <MemberSignature Language="C#" Value="protected internal abstract string GetContractFullName (IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance string GetContractFullName(class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationInfoBase.GetContractFullName(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetContractFullName (provider As IServiceProvider) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetContractFullName : IServiceProvider -&gt; string" Usage="operationInfoBase.GetContractFullName provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::String ^ GetContractFullName(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -118,9 +132,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetContractType">
-      <MemberSignature Language="C#" Value="protected abstract Type GetContractType (IServiceProvider provider);" />
+      <MemberSignature Language="C#" Value="protected internal abstract Type GetContractType (IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Type GetContractType(class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationInfoBase.GetContractType(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetContractType (provider As IServiceProvider) As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetContractType : IServiceProvider -&gt; Type" Usage="operationInfoBase.GetContractType provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract Type ^ GetContractType(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -143,6 +160,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationInfoBase.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="operationInfoBase.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -159,9 +179,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetIsOneWay">
-      <MemberSignature Language="C#" Value="protected abstract bool GetIsOneWay (IServiceProvider provider);" />
+      <MemberSignature Language="C#" Value="protected internal abstract bool GetIsOneWay (IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance bool GetIsOneWay(class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationInfoBase.GetIsOneWay(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetIsOneWay (provider As IServiceProvider) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member GetIsOneWay : IServiceProvider -&gt; bool" Usage="operationInfoBase.GetIsOneWay provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract bool GetIsOneWay(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -183,9 +206,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetMethodInfo">
-      <MemberSignature Language="C#" Value="protected abstract System.Reflection.MethodInfo GetMethodInfo (IServiceProvider provider);" />
+      <MemberSignature Language="C#" Value="protected internal abstract System.Reflection.MethodInfo GetMethodInfo (IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Reflection.MethodInfo GetMethodInfo(class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationInfoBase.GetMethodInfo(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetMethodInfo (provider As IServiceProvider) As MethodInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetMethodInfo : IServiceProvider -&gt; System.Reflection.MethodInfo" Usage="operationInfoBase.GetMethodInfo provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Reflection::MethodInfo ^ GetMethodInfo(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -205,9 +231,12 @@
       </Docs>
     </Member>
     <Member MemberName="GetParameters">
-      <MemberSignature Language="C#" Value="protected abstract System.Workflow.Activities.OperationParameterInfoCollection GetParameters (IServiceProvider provider);" />
+      <MemberSignature Language="C#" Value="protected internal abstract System.Workflow.Activities.OperationParameterInfoCollection GetParameters (IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance class System.Workflow.Activities.OperationParameterInfoCollection GetParameters(class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.OperationInfoBase.GetParameters(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend MustOverride Function GetParameters (provider As IServiceProvider) As OperationParameterInfoCollection" />
+      <MemberSignature Language="F#" Value="abstract member GetParameters : IServiceProvider -&gt; System.Workflow.Activities.OperationParameterInfoCollection" Usage="operationInfoBase.GetParameters provider" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; abstract System::Workflow::Activities::OperationParameterInfoCollection ^ GetParameters(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -230,6 +259,9 @@
       <MemberSignature Language="C#" Value="public virtual string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationInfoBase.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Workflow.Activities.OperationInfoBase.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -248,6 +280,9 @@
       <MemberSignature Language="C#" Value="public virtual string PrincipalPermissionName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PrincipalPermissionName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property PrincipalPermissionName As String" />
+      <MemberSignature Language="F#" Value="member this.PrincipalPermissionName : string with get, set" Usage="System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PrincipalPermissionName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>
@@ -271,6 +306,9 @@
       <MemberSignature Language="C#" Value="public virtual string PrincipalPermissionRole { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PrincipalPermissionRole" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property PrincipalPermissionRole As String" />
+      <MemberSignature Language="F#" Value="member this.PrincipalPermissionRole : string with get, set" Usage="System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ PrincipalPermissionRole { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.WorkflowServices</AssemblyName>

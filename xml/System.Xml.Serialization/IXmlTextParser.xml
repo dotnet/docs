@@ -1,7 +1,10 @@
-<Type Name="IXmlTextParser" FullName="System.Xml.Serialization.IXmlTextParser">
+﻿<Type Name="IXmlTextParser" FullName="System.Xml.Serialization.IXmlTextParser">
   <TypeSignature Language="C#" Value="public interface IXmlTextParser" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IXmlTextParser" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.IXmlTextParser" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IXmlTextParser" />
+  <TypeSignature Language="F#" Value="type IXmlTextParser = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IXmlTextParser" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="public bool Normalized { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Normalized" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.IXmlTextParser.Normalized" />
+      <MemberSignature Language="VB.NET" Value="Public Property Normalized As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Normalized : bool with get, set" Usage="System.Xml.Serialization.IXmlTextParser.Normalized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Normalized { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -69,6 +75,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.WhitespaceHandling WhitespaceHandling { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Xml.WhitespaceHandling WhitespaceHandling" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.IXmlTextParser.WhitespaceHandling" />
+      <MemberSignature Language="VB.NET" Value="Public Property WhitespaceHandling As WhitespaceHandling" />
+      <MemberSignature Language="F#" Value="member this.WhitespaceHandling : System.Xml.WhitespaceHandling with get, set" Usage="System.Xml.Serialization.IXmlTextParser.WhitespaceHandling" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::WhitespaceHandling WhitespaceHandling { System::Xml::WhitespaceHandling get(); void set(System::Xml::WhitespaceHandling value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

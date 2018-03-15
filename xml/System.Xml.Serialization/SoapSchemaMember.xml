@@ -1,7 +1,10 @@
-<Type Name="SoapSchemaMember" FullName="System.Xml.Serialization.SoapSchemaMember">
+﻿<Type Name="SoapSchemaMember" FullName="System.Xml.Serialization.SoapSchemaMember">
   <TypeSignature Language="C#" Value="public class SoapSchemaMember" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapSchemaMember extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapSchemaMember" />
+  <TypeSignature Language="VB.NET" Value="Public Class SoapSchemaMember" />
+  <TypeSignature Language="F#" Value="type SoapSchemaMember = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapSchemaMember" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="public SoapSchemaMember ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapSchemaMember.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapSchemaMember();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -65,6 +70,9 @@
       <MemberSignature Language="C#" Value="public string MemberName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string MemberName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapSchemaMember.MemberName" />
+      <MemberSignature Language="VB.NET" Value="Public Property MemberName As String" />
+      <MemberSignature Language="F#" Value="member this.MemberName : string with get, set" Usage="System.Xml.Serialization.SoapSchemaMember.MemberName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ MemberName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -102,6 +110,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlQualifiedName MemberType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.XmlQualifiedName MemberType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapSchemaMember.MemberType" />
+      <MemberSignature Language="VB.NET" Value="Public Property MemberType As XmlQualifiedName" />
+      <MemberSignature Language="F#" Value="member this.MemberType : System.Xml.XmlQualifiedName with get, set" Usage="System.Xml.Serialization.SoapSchemaMember.MemberType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::XmlQualifiedName ^ MemberType { System::Xml::XmlQualifiedName ^ get(); void set(System::Xml::XmlQualifiedName ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

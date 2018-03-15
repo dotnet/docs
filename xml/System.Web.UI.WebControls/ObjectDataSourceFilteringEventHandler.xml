@@ -1,7 +1,10 @@
-<Type Name="ObjectDataSourceFilteringEventHandler" FullName="System.Web.UI.WebControls.ObjectDataSourceFilteringEventHandler">
+﻿<Type Name="ObjectDataSourceFilteringEventHandler" FullName="System.Web.UI.WebControls.ObjectDataSourceFilteringEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ObjectDataSourceFilteringEventHandler(object sender, ObjectDataSourceFilteringEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectDataSourceFilteringEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ObjectDataSourceFilteringEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ObjectDataSourceFilteringEventHandler(sender As Object, e As ObjectDataSourceFilteringEventArgs)" />
+  <TypeSignature Language="F#" Value="type ObjectDataSourceFilteringEventHandler = delegate of obj * ObjectDataSourceFilteringEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ObjectDataSourceFilteringEventHandler(System::Object ^ sender, ObjectDataSourceFilteringEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="IConnectionPoint" FullName="System.Runtime.InteropServices.ComTypes.IConnectionPoint">
+﻿<Type Name="IConnectionPoint" FullName="System.Runtime.InteropServices.ComTypes.IConnectionPoint">
   <TypeSignature Language="C#" Value="public interface IConnectionPoint" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IConnectionPoint" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IConnectionPoint" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IConnectionPoint" />
+  <TypeSignature Language="F#" Value="type IConnectionPoint = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IConnectionPoint" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,9 @@
       <MemberSignature Language="C#" Value="public void Advise (object pUnkSink, out int pdwCookie);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Advise(object pUnkSink, [out] int32&amp; pdwCookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise(System.Object,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Advise (pUnkSink As Object, ByRef pdwCookie As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Advise : obj *  -&gt; unit" Usage="iConnectionPoint.Advise (pUnkSink, pdwCookie)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Advise(System::Object ^ pUnkSink, [Runtime::InteropServices::Out] int % pdwCookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -91,6 +97,9 @@
       <MemberSignature Language="C#" Value="public void EnumConnections (out System.Runtime.InteropServices.ComTypes.IEnumConnections ppEnum);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void EnumConnections([out] class System.Runtime.InteropServices.ComTypes.IEnumConnections&amp; ppEnum) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.EnumConnections(System.Runtime.InteropServices.ComTypes.IEnumConnections@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EnumConnections (ByRef ppEnum As IEnumConnections)" />
+      <MemberSignature Language="F#" Value="abstract member EnumConnections :  -&gt; unit" Usage="iConnectionPoint.EnumConnections ppEnum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EnumConnections([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumConnections ^ % ppEnum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -133,6 +142,9 @@
       <MemberSignature Language="C#" Value="public void GetConnectionInterface (out Guid pIID);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetConnectionInterface([out] valuetype System.Guid&amp; pIID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionInterface(System.Guid@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetConnectionInterface (ByRef pIID As Guid)" />
+      <MemberSignature Language="F#" Value="abstract member GetConnectionInterface :  -&gt; unit" Usage="iConnectionPoint.GetConnectionInterface pIID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetConnectionInterface([Runtime::InteropServices::Out] Guid % pIID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -175,6 +187,9 @@
       <MemberSignature Language="C#" Value="public void GetConnectionPointContainer (out System.Runtime.InteropServices.ComTypes.IConnectionPointContainer ppCPC);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetConnectionPointContainer([out] class System.Runtime.InteropServices.ComTypes.IConnectionPointContainer&amp; ppCPC) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.GetConnectionPointContainer(System.Runtime.InteropServices.ComTypes.IConnectionPointContainer@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetConnectionPointContainer (ByRef ppCPC As IConnectionPointContainer)" />
+      <MemberSignature Language="F#" Value="abstract member GetConnectionPointContainer :  -&gt; unit" Usage="iConnectionPoint.GetConnectionPointContainer ppCPC" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetConnectionPointContainer([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IConnectionPointContainer ^ % ppCPC);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -217,6 +232,9 @@
       <MemberSignature Language="C#" Value="public void Unadvise (int dwCookie);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unadvise(int32 dwCookie) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Unadvise(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unadvise (dwCookie As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Unadvise : int -&gt; unit" Usage="iConnectionPoint.Unadvise dwCookie" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unadvise(int dwCookie);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

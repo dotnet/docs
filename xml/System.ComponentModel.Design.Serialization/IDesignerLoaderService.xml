@@ -1,7 +1,10 @@
-<Type Name="IDesignerLoaderService" FullName="System.ComponentModel.Design.Serialization.IDesignerLoaderService">
+﻿<Type Name="IDesignerLoaderService" FullName="System.ComponentModel.Design.Serialization.IDesignerLoaderService">
   <TypeSignature Language="C#" Value="public interface IDesignerLoaderService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDesignerLoaderService" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.IDesignerLoaderService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDesignerLoaderService" />
+  <TypeSignature Language="F#" Value="type IDesignerLoaderService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDesignerLoaderService" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public void AddLoadDependency ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddLoadDependency() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerLoaderService.AddLoadDependency" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddLoadDependency ()" />
+      <MemberSignature Language="F#" Value="abstract member AddLoadDependency : unit -&gt; unit" Usage="iDesignerLoaderService.AddLoadDependency " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddLoadDependency();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -68,6 +74,9 @@
       <MemberSignature Language="C#" Value="public void DependentLoadComplete (bool successful, System.Collections.ICollection errorCollection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DependentLoadComplete(bool successful, class System.Collections.ICollection errorCollection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerLoaderService.DependentLoadComplete(System.Boolean,System.Collections.ICollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DependentLoadComplete (successful As Boolean, errorCollection As ICollection)" />
+      <MemberSignature Language="F#" Value="abstract member DependentLoadComplete : bool * System.Collections.ICollection -&gt; unit" Usage="iDesignerLoaderService.DependentLoadComplete (successful, errorCollection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DependentLoadComplete(bool successful, System::Collections::ICollection ^ errorCollection);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -110,6 +119,9 @@
       <MemberSignature Language="C#" Value="public bool Reload ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Reload() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.IDesignerLoaderService.Reload" />
+      <MemberSignature Language="VB.NET" Value="Public Function Reload () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Reload : unit -&gt; bool" Usage="iDesignerLoaderService.Reload " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Reload();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

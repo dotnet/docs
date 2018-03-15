@@ -1,7 +1,10 @@
-<Type Name="TimeSpanSecondsOrInfiniteConverter" FullName="System.Configuration.TimeSpanSecondsOrInfiniteConverter">
+﻿<Type Name="TimeSpanSecondsOrInfiniteConverter" FullName="System.Configuration.TimeSpanSecondsOrInfiniteConverter">
   <TypeSignature Language="C#" Value="public sealed class TimeSpanSecondsOrInfiniteConverter : System.Configuration.TimeSpanSecondsConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TimeSpanSecondsOrInfiniteConverter extends System.Configuration.TimeSpanSecondsConverter" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.TimeSpanSecondsOrInfiniteConverter" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TimeSpanSecondsOrInfiniteConverter&#xA;Inherits TimeSpanSecondsConverter" />
+  <TypeSignature Language="F#" Value="type TimeSpanSecondsOrInfiniteConverter = class&#xA;    inherit TimeSpanSecondsConverter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TimeSpanSecondsOrInfiniteConverter sealed : System::Configuration::TimeSpanSecondsConverter" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="public TimeSpanSecondsOrInfiniteConverter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.TimeSpanSecondsOrInfiniteConverter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TimeSpanSecondsOrInfiniteConverter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -73,6 +78,9 @@
       <MemberSignature Language="C#" Value="public override object ConvertFrom (System.ComponentModel.ITypeDescriptorContext ctx, System.Globalization.CultureInfo ci, object data);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertFrom(class System.ComponentModel.ITypeDescriptorContext ctx, class System.Globalization.CultureInfo ci, object data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.TimeSpanSecondsOrInfiniteConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertFrom (ctx As ITypeDescriptorContext, ci As CultureInfo, data As Object) As Object" />
+      <MemberSignature Language="F#" Value="override this.ConvertFrom : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj -&gt; obj" Usage="timeSpanSecondsOrInfiniteConverter.ConvertFrom (ctx, ci, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertFrom(System::ComponentModel::ITypeDescriptorContext ^ ctx, System::Globalization::CultureInfo ^ ci, System::Object ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -115,6 +123,8 @@
       <MemberSignature Language="C#" Value="public override object ConvertTo (System.ComponentModel.ITypeDescriptorContext ctx, System.Globalization.CultureInfo ci, object value, Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ConvertTo(class System.ComponentModel.ITypeDescriptorContext ctx, class System.Globalization.CultureInfo ci, object value, class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.TimeSpanSecondsOrInfiniteConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
+      <MemberSignature Language="F#" Value="override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="timeSpanSecondsOrInfiniteConverter.ConvertTo (ctx, ci, value, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertTo(System::ComponentModel::ITypeDescriptorContext ^ ctx, System::Globalization::CultureInfo ^ ci, System::Object ^ value, Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

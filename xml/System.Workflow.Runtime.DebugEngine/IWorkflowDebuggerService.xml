@@ -1,7 +1,10 @@
-<Type Name="IWorkflowDebuggerService" FullName="System.Workflow.Runtime.DebugEngine.IWorkflowDebuggerService">
+﻿<Type Name="IWorkflowDebuggerService" FullName="System.Workflow.Runtime.DebugEngine.IWorkflowDebuggerService">
   <TypeSignature Language="C#" Value="public interface IWorkflowDebuggerService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IWorkflowDebuggerService" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.DebugEngine.IWorkflowDebuggerService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IWorkflowDebuggerService" />
+  <TypeSignature Language="F#" Value="type IWorkflowDebuggerService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IWorkflowDebuggerService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public void NotifyHandlerInvoked ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NotifyHandlerInvoked() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.IWorkflowDebuggerService.NotifyHandlerInvoked" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NotifyHandlerInvoked ()" />
+      <MemberSignature Language="F#" Value="abstract member NotifyHandlerInvoked : unit -&gt; unit" Usage="iWorkflowDebuggerService.NotifyHandlerInvoked " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NotifyHandlerInvoked();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="public void NotifyHandlerInvoking (Delegate delegateHandler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void NotifyHandlerInvoking(class System.Delegate delegateHandler) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Runtime.DebugEngine.IWorkflowDebuggerService.NotifyHandlerInvoking(System.Delegate)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NotifyHandlerInvoking (delegateHandler As Delegate)" />
+      <MemberSignature Language="F#" Value="abstract member NotifyHandlerInvoking : Delegate -&gt; unit" Usage="iWorkflowDebuggerService.NotifyHandlerInvoking delegateHandler" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NotifyHandlerInvoking(Delegate ^ delegateHandler);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="Duplexing" FullName="System.Printing.Duplexing">
+﻿<Type Name="Duplexing" FullName="System.Printing.Duplexing">
   <TypeSignature Language="C#" Value="public enum Duplexing" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Duplexing extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Printing.Duplexing" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Duplexing" />
+  <TypeSignature Language="F#" Value="type Duplexing = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class Duplexing" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="OneSided" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Duplexing OneSided = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.OneSided" />
+      <MemberSignature Language="VB.NET" Value="OneSided" />
+      <MemberSignature Language="F#" Value="OneSided = 1" Usage="System.Printing.Duplexing.OneSided" />
+      <MemberSignature Language="C++ CLI" Value="OneSided" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -54,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Duplexing</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Output prints on only one side of each sheet.</summary>
       </Docs>
@@ -62,6 +69,9 @@
       <MemberSignature Language="C#" Value="TwoSidedLongEdge" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Duplexing TwoSidedLongEdge = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.TwoSidedLongEdge" />
+      <MemberSignature Language="VB.NET" Value="TwoSidedLongEdge" />
+      <MemberSignature Language="F#" Value="TwoSidedLongEdge = 3" Usage="System.Printing.Duplexing.TwoSidedLongEdge" />
+      <MemberSignature Language="C++ CLI" Value="TwoSidedLongEdge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Duplexing</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Output prints on both sides of each sheet, which flips along the edge parallel to the <see cref="P:System.Printing.PrintDocumentImageableArea.MediaSizeHeight" />.</summary>
       </Docs>
@@ -78,6 +89,9 @@
       <MemberSignature Language="C#" Value="TwoSidedShortEdge" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Duplexing TwoSidedShortEdge = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.TwoSidedShortEdge" />
+      <MemberSignature Language="VB.NET" Value="TwoSidedShortEdge" />
+      <MemberSignature Language="F#" Value="TwoSidedShortEdge = 2" Usage="System.Printing.Duplexing.TwoSidedShortEdge" />
+      <MemberSignature Language="C++ CLI" Value="TwoSidedShortEdge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -86,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Duplexing</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Output prints on both sides of each sheet, which flips along the edge parallel to <see cref="P:System.Printing.PrintDocumentImageableArea.MediaSizeWidth" />.</summary>
       </Docs>
@@ -94,6 +109,9 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Printing.Duplexing Unknown = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Printing.Duplexing.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = 0" Usage="System.Printing.Duplexing.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -102,6 +120,7 @@
       <ReturnValue>
         <ReturnType>System.Printing.Duplexing</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The feature (whose options are represented by this enumeration) is set to an option not defined in the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="EventRoute" FullName="System.Windows.EventRoute">
+﻿<Type Name="EventRoute" FullName="System.Windows.EventRoute">
   <TypeSignature Language="C#" Value="public sealed class EventRoute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventRoute extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.EventRoute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventRoute" />
+  <TypeSignature Language="F#" Value="type EventRoute = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventRoute sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,8 @@
       <MemberSignature Language="C#" Value="public EventRoute (System.Windows.RoutedEvent routedEvent);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.RoutedEvent routedEvent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.EventRoute.#ctor(System.Windows.RoutedEvent)" />
+      <MemberSignature Language="F#" Value="new System.Windows.EventRoute : System.Windows.RoutedEvent -&gt; System.Windows.EventRoute" Usage="new System.Windows.EventRoute routedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EventRoute(System::Windows::RoutedEvent ^ routedEvent);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -46,6 +51,9 @@
       <MemberSignature Language="C#" Value="public void Add (object target, Delegate handler, bool handledEventsToo);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(object target, class System.Delegate handler, bool handledEventsToo) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.EventRoute.Add(System.Object,System.Delegate,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (target As Object, handler As Delegate, handledEventsToo As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Add : obj * Delegate * bool -&gt; unit" Usage="eventRoute.Add (target, handler, handledEventsToo)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Object ^ target, Delegate ^ handler, bool handledEventsToo);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +86,9 @@
       <MemberSignature Language="C#" Value="public object PeekBranchNode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object PeekBranchNode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.EventRoute.PeekBranchNode" />
+      <MemberSignature Language="VB.NET" Value="Public Function PeekBranchNode () As Object" />
+      <MemberSignature Language="F#" Value="member this.PeekBranchNode : unit -&gt; obj" Usage="eventRoute.PeekBranchNode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ PeekBranchNode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -102,6 +113,9 @@
       <MemberSignature Language="C#" Value="public object PeekBranchSource ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object PeekBranchSource() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.EventRoute.PeekBranchSource" />
+      <MemberSignature Language="VB.NET" Value="Public Function PeekBranchSource () As Object" />
+      <MemberSignature Language="F#" Value="member this.PeekBranchSource : unit -&gt; obj" Usage="eventRoute.PeekBranchSource " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ PeekBranchSource();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -126,6 +140,9 @@
       <MemberSignature Language="C#" Value="public object PopBranchNode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object PopBranchNode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.EventRoute.PopBranchNode" />
+      <MemberSignature Language="VB.NET" Value="Public Function PopBranchNode () As Object" />
+      <MemberSignature Language="F#" Value="member this.PopBranchNode : unit -&gt; obj" Usage="eventRoute.PopBranchNode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ PopBranchNode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -150,6 +167,9 @@
       <MemberSignature Language="C#" Value="public void PushBranchNode (object node, object source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PushBranchNode(object node, object source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.EventRoute.PushBranchNode(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PushBranchNode (node As Object, source As Object)" />
+      <MemberSignature Language="F#" Value="member this.PushBranchNode : obj * obj -&gt; unit" Usage="eventRoute.PushBranchNode (node, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PushBranchNode(System::Object ^ node, System::Object ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

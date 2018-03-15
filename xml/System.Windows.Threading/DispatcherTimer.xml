@@ -1,7 +1,10 @@
-<Type Name="DispatcherTimer" FullName="System.Windows.Threading.DispatcherTimer">
+﻿<Type Name="DispatcherTimer" FullName="System.Windows.Threading.DispatcherTimer">
   <TypeSignature Language="C#" Value="public class DispatcherTimer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DispatcherTimer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherTimer" />
+  <TypeSignature Language="VB.NET" Value="Public Class DispatcherTimer" />
+  <TypeSignature Language="F#" Value="type DispatcherTimer = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DispatcherTimer" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,10 +44,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Threading.DispatcherTimer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DispatcherTimer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherTimer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatcherTimer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -67,6 +81,9 @@
       <MemberSignature Language="C#" Value="public DispatcherTimer (System.Windows.Threading.DispatcherPriority priority);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Threading.DispatcherPriority priority) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherTimer.#ctor(System.Windows.Threading.DispatcherPriority)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (priority As DispatcherPriority)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Threading.DispatcherTimer : System.Windows.Threading.DispatcherPriority -&gt; System.Windows.Threading.DispatcherTimer" Usage="new System.Windows.Threading.DispatcherTimer priority" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatcherTimer(System::Windows::Threading::DispatcherPriority priority);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -92,6 +109,8 @@
       <MemberSignature Language="C#" Value="public DispatcherTimer (System.Windows.Threading.DispatcherPriority priority, System.Windows.Threading.Dispatcher dispatcher);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Threading.DispatcherPriority priority, class System.Windows.Threading.Dispatcher dispatcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherTimer.#ctor(System.Windows.Threading.DispatcherPriority,System.Windows.Threading.Dispatcher)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Threading.DispatcherTimer : System.Windows.Threading.DispatcherPriority * System.Windows.Threading.Dispatcher -&gt; System.Windows.Threading.DispatcherTimer" Usage="new System.Windows.Threading.DispatcherTimer (priority, dispatcher)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatcherTimer(System::Windows::Threading::DispatcherPriority priority, System::Windows::Threading::Dispatcher ^ dispatcher);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -114,6 +133,8 @@
       <MemberSignature Language="C#" Value="public DispatcherTimer (TimeSpan interval, System.Windows.Threading.DispatcherPriority priority, EventHandler callback, System.Windows.Threading.Dispatcher dispatcher);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.TimeSpan interval, valuetype System.Windows.Threading.DispatcherPriority priority, class System.EventHandler callback, class System.Windows.Threading.Dispatcher dispatcher) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherTimer.#ctor(System.TimeSpan,System.Windows.Threading.DispatcherPriority,System.EventHandler,System.Windows.Threading.Dispatcher)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Threading.DispatcherTimer : TimeSpan * System.Windows.Threading.DispatcherPriority * EventHandler * System.Windows.Threading.Dispatcher -&gt; System.Windows.Threading.DispatcherTimer" Usage="new System.Windows.Threading.DispatcherTimer (interval, priority, callback, dispatcher)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DispatcherTimer(TimeSpan interval, System::Windows::Threading::DispatcherPriority priority, EventHandler ^ callback, System::Windows::Threading::Dispatcher ^ dispatcher);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -142,6 +163,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Threading.Dispatcher Dispatcher { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Threading.Dispatcher Dispatcher" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherTimer.Dispatcher" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dispatcher As Dispatcher" />
+      <MemberSignature Language="F#" Value="member this.Dispatcher : System.Windows.Threading.Dispatcher" Usage="System.Windows.Threading.DispatcherTimer.Dispatcher" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Threading::Dispatcher ^ Dispatcher { System::Windows::Threading::Dispatcher ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -167,6 +191,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan Interval { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.TimeSpan Interval" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherTimer.Interval" />
+      <MemberSignature Language="VB.NET" Value="Public Property Interval As TimeSpan" />
+      <MemberSignature Language="F#" Value="member this.Interval : TimeSpan with get, set" Usage="System.Windows.Threading.DispatcherTimer.Interval" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property TimeSpan Interval { TimeSpan get(); void set(TimeSpan value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -200,6 +227,9 @@
       <MemberSignature Language="C#" Value="public bool IsEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherTimer.IsEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEnabled : bool with get, set" Usage="System.Windows.Threading.DispatcherTimer.IsEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -236,6 +266,9 @@
       <MemberSignature Language="C#" Value="public void Start ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Start() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherTimer.Start" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Start ()" />
+      <MemberSignature Language="F#" Value="member this.Start : unit -&gt; unit" Usage="dispatcherTimer.Start " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Start();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -275,6 +308,9 @@
       <MemberSignature Language="C#" Value="public void Stop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Threading.DispatcherTimer.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="dispatcherTimer.Stop " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -304,6 +340,9 @@
       <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Threading.DispatcherTimer.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Threading.DispatcherTimer.Tag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -322,6 +361,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Tick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Tick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Threading.DispatcherTimer.Tick" />
+      <MemberSignature Language="VB.NET" Value="Public Event Tick As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Tick : EventHandler " Usage="member this.Tick : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Tick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -345,14 +387,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Threading.DispatcherTimer" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

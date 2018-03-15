@@ -1,7 +1,10 @@
-<Type Name="VisualStyleElement+ScrollBar+GripperVertical" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ScrollBar+GripperVertical">
+﻿<Type Name="VisualStyleElement+ScrollBar+GripperVertical" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+ScrollBar+GripperVertical">
   <TypeSignature Language="C#" Value="public static class VisualStyleElement.ScrollBar.GripperVertical" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/ScrollBar/GripperVertical extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.GripperVertical" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualStyleElement.ScrollBar.GripperVertical" />
+  <TypeSignature Language="F#" Value="type VisualStyleElement.ScrollBar.GripperVertical = class" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class VisualStyleElement::ScrollBar::GripperVertical abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Normal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Normal" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.GripperVertical.Normal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Normal As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Normal : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.ScrollBar.GripperVertical.Normal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Normal { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

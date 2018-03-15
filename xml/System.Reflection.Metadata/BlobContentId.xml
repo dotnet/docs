@@ -1,7 +1,10 @@
-<Type Name="BlobContentId" FullName="System.Reflection.Metadata.BlobContentId">
+﻿<Type Name="BlobContentId" FullName="System.Reflection.Metadata.BlobContentId">
   <TypeSignature Language="C#" Value="public struct BlobContentId : IEquatable&lt;System.Reflection.Metadata.BlobContentId&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit BlobContentId extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Reflection.Metadata.BlobContentId&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.BlobContentId" />
+  <TypeSignature Language="VB.NET" Value="Public Structure BlobContentId&#xA;Implements IEquatable(Of BlobContentId)" />
+  <TypeSignature Language="F#" Value="type BlobContentId = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class BlobContentId : IEquatable&lt;System::Reflection::Metadata::BlobContentId&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="public BlobContentId (byte[] id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.#ctor(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (id As Byte())" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.BlobContentId : byte[] -&gt; System.Reflection.Metadata.BlobContentId" Usage="new System.Reflection.Metadata.BlobContentId id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BlobContentId(cli::array &lt;System::Byte&gt; ^ id);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -43,6 +49,9 @@
       <MemberSignature Language="C#" Value="public BlobContentId (System.Collections.Immutable.ImmutableArray&lt;byte&gt; id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Collections.Immutable.ImmutableArray`1&lt;unsigned int8&gt; id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.#ctor(System.Collections.Immutable.ImmutableArray{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (id As ImmutableArray(Of Byte))" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.BlobContentId : System.Collections.Immutable.ImmutableArray&lt;byte&gt; -&gt; System.Reflection.Metadata.BlobContentId" Usage="new System.Reflection.Metadata.BlobContentId id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BlobContentId(System::Collections::Immutable::ImmutableArray&lt;System::Byte&gt; id);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -62,6 +71,8 @@
       <MemberSignature Language="C#" Value="public BlobContentId (Guid guid, uint stamp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Guid guid, unsigned int32 stamp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.#ctor(System.Guid,System.UInt32)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.BlobContentId : Guid * uint32 -&gt; System.Reflection.Metadata.BlobContentId" Usage="new System.Reflection.Metadata.BlobContentId (guid, stamp)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BlobContentId(Guid guid, System::UInt32 stamp);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -83,6 +94,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="blobContentId.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -106,7 +120,13 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Reflection.Metadata.BlobContentId other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Reflection.Metadata.BlobContentId other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.Equals(System.Reflection.Metadata.BlobContentId)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As BlobContentId) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Reflection.Metadata.BlobContentId -&gt; bool" Usage="blobContentId.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Reflection::Metadata::BlobContentId other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
         <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -129,6 +149,9 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.BlobContentId FromHash (byte[] hashCode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.BlobContentId FromHash(unsigned int8[] hashCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.FromHash(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromHash (hashCode As Byte()) As BlobContentId" />
+      <MemberSignature Language="F#" Value="static member FromHash : byte[] -&gt; System.Reflection.Metadata.BlobContentId" Usage="System.Reflection.Metadata.BlobContentId.FromHash hashCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Metadata::BlobContentId FromHash(cli::array &lt;System::Byte&gt; ^ hashCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -152,6 +175,9 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.Metadata.BlobContentId FromHash (System.Collections.Immutable.ImmutableArray&lt;byte&gt; hashCode);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Reflection.Metadata.BlobContentId FromHash(valuetype System.Collections.Immutable.ImmutableArray`1&lt;unsigned int8&gt; hashCode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.FromHash(System.Collections.Immutable.ImmutableArray{System.Byte})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromHash (hashCode As ImmutableArray(Of Byte)) As BlobContentId" />
+      <MemberSignature Language="F#" Value="static member FromHash : System.Collections.Immutable.ImmutableArray&lt;byte&gt; -&gt; System.Reflection.Metadata.BlobContentId" Usage="System.Reflection.Metadata.BlobContentId.FromHash hashCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Reflection::Metadata::BlobContentId FromHash(System::Collections::Immutable::ImmutableArray&lt;System::Byte&gt; hashCode);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -175,6 +201,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="blobContentId.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -195,6 +224,9 @@
       <MemberSignature Language="C#" Value="public static Func&lt;System.Collections.Generic.IEnumerable&lt;System.Reflection.Metadata.Blob&gt;,System.Reflection.Metadata.BlobContentId&gt; GetTimeBasedProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Func`2&lt;class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Reflection.Metadata.Blob&gt;, valuetype System.Reflection.Metadata.BlobContentId&gt; GetTimeBasedProvider() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.GetTimeBasedProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTimeBasedProvider () As Func(Of IEnumerable(Of Blob), BlobContentId)" />
+      <MemberSignature Language="F#" Value="static member GetTimeBasedProvider : unit -&gt; Func&lt;seq&lt;System.Reflection.Metadata.Blob&gt;, System.Reflection.Metadata.BlobContentId&gt;" Usage="System.Reflection.Metadata.BlobContentId.GetTimeBasedProvider " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Func&lt;System::Collections::Generic::IEnumerable&lt;System::Reflection::Metadata::Blob&gt; ^, System::Reflection::Metadata::BlobContentId&gt; ^ GetTimeBasedProvider();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -215,6 +247,9 @@
       <MemberSignature Language="C#" Value="public Guid Guid { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Guid Guid" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobContentId.Guid" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Guid As Guid" />
+      <MemberSignature Language="F#" Value="member this.Guid : Guid" Usage="System.Reflection.Metadata.BlobContentId.Guid" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Guid Guid { Guid get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -234,6 +269,9 @@
       <MemberSignature Language="C#" Value="public bool IsDefault { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDefault" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobContentId.IsDefault" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDefault As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDefault : bool" Usage="System.Reflection.Metadata.BlobContentId.IsDefault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDefault { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -253,6 +291,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Reflection.Metadata.BlobContentId left, System.Reflection.Metadata.BlobContentId right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Reflection.Metadata.BlobContentId left, valuetype System.Reflection.Metadata.BlobContentId right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.op_Equality(System.Reflection.Metadata.BlobContentId,System.Reflection.Metadata.BlobContentId)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As BlobContentId, right As BlobContentId) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Reflection.Metadata.BlobContentId * System.Reflection.Metadata.BlobContentId -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Reflection::Metadata::BlobContentId left, System::Reflection::Metadata::BlobContentId right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -278,6 +319,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Reflection.Metadata.BlobContentId left, System.Reflection.Metadata.BlobContentId right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Reflection.Metadata.BlobContentId left, valuetype System.Reflection.Metadata.BlobContentId right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.BlobContentId.op_Inequality(System.Reflection.Metadata.BlobContentId,System.Reflection.Metadata.BlobContentId)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As BlobContentId, right As BlobContentId) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Reflection.Metadata.BlobContentId * System.Reflection.Metadata.BlobContentId -&gt; bool" Usage="System.Reflection.Metadata.BlobContentId.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Reflection::Metadata::BlobContentId left, System::Reflection::Metadata::BlobContentId right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -303,6 +347,9 @@
       <MemberSignature Language="C#" Value="public uint Stamp { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 Stamp" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.BlobContentId.Stamp" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Stamp As UInteger" />
+      <MemberSignature Language="F#" Value="member this.Stamp : uint32" Usage="System.Reflection.Metadata.BlobContentId.Stamp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt32 Stamp { System::UInt32 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

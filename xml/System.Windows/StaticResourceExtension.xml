@@ -1,7 +1,10 @@
-<Type Name="StaticResourceExtension" FullName="System.Windows.StaticResourceExtension">
+﻿<Type Name="StaticResourceExtension" FullName="System.Windows.StaticResourceExtension">
   <TypeSignature Language="C#" Value="public class StaticResourceExtension : System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StaticResourceExtension extends System.Windows.Markup.MarkupExtension" />
   <TypeSignature Language="DocId" Value="T:System.Windows.StaticResourceExtension" />
+  <TypeSignature Language="VB.NET" Value="Public Class StaticResourceExtension&#xA;Inherits MarkupExtension" />
+  <TypeSignature Language="F#" Value="type StaticResourceExtension = class&#xA;    inherit MarkupExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class StaticResourceExtension : System::Windows::Markup::MarkupExtension" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,10 +37,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.StaticResourceExtension" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public StaticResourceExtension ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.StaticResourceExtension.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StaticResourceExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -53,6 +67,9 @@
       <MemberSignature Language="C#" Value="public StaticResourceExtension (object resourceKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object resourceKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.StaticResourceExtension.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (resourceKey As Object)" />
+      <MemberSignature Language="F#" Value="new System.Windows.StaticResourceExtension : obj -&gt; System.Windows.StaticResourceExtension" Usage="new System.Windows.StaticResourceExtension resourceKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; StaticResourceExtension(System::Object ^ resourceKey);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -73,6 +90,9 @@
       <MemberSignature Language="C#" Value="public override object ProvideValue (IServiceProvider serviceProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ProvideValue(class System.IServiceProvider serviceProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.StaticResourceExtension.ProvideValue(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ProvideValue (serviceProvider As IServiceProvider) As Object" />
+      <MemberSignature Language="F#" Value="override this.ProvideValue : IServiceProvider -&gt; obj" Usage="staticResourceExtension.ProvideValue serviceProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ProvideValue(IServiceProvider ^ serviceProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -116,6 +136,9 @@
       <MemberSignature Language="C#" Value="public object ResourceKey { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ResourceKey" />
       <MemberSignature Language="DocId" Value="P:System.Windows.StaticResourceExtension.ResourceKey" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResourceKey As Object" />
+      <MemberSignature Language="F#" Value="member this.ResourceKey : obj with get, set" Usage="System.Windows.StaticResourceExtension.ResourceKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ResourceKey { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -143,14 +166,5 @@
         <exception cref="T:System.ArgumentNullException">Specified value as <see langword="null" />, either through markup extension usage or explicit construction.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.StaticResourceExtension" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

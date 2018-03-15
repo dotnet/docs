@@ -1,7 +1,10 @@
-<Type Name="CacheEntryRemovedReason" FullName="System.Runtime.Caching.CacheEntryRemovedReason">
+﻿<Type Name="CacheEntryRemovedReason" FullName="System.Runtime.Caching.CacheEntryRemovedReason">
   <TypeSignature Language="C#" Value="public enum CacheEntryRemovedReason" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CacheEntryRemovedReason extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Caching.CacheEntryRemovedReason" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CacheEntryRemovedReason" />
+  <TypeSignature Language="F#" Value="type CacheEntryRemovedReason = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CacheEntryRemovedReason" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Caching</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="CacheSpecificEviction" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Caching.CacheEntryRemovedReason CacheSpecificEviction = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheEntryRemovedReason.CacheSpecificEviction" />
+      <MemberSignature Language="VB.NET" Value="CacheSpecificEviction" />
+      <MemberSignature Language="F#" Value="CacheSpecificEviction = 4" Usage="System.Runtime.Caching.CacheEntryRemovedReason.CacheSpecificEviction" />
+      <MemberSignature Language="C++ CLI" Value="CacheSpecificEviction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A cache entry was evicted for as reason that is defined by a particular cache implementation.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="ChangeMonitorChanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Caching.CacheEntryRemovedReason ChangeMonitorChanged = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheEntryRemovedReason.ChangeMonitorChanged" />
+      <MemberSignature Language="VB.NET" Value="ChangeMonitorChanged" />
+      <MemberSignature Language="F#" Value="ChangeMonitorChanged = 3" Usage="System.Runtime.Caching.CacheEntryRemovedReason.ChangeMonitorChanged" />
+      <MemberSignature Language="C++ CLI" Value="ChangeMonitorChanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -51,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A cache entry was removed because a related dependency (such as a file or another cache entry) triggered eviction of the cache entry.</summary>
       </Docs>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="Evicted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Caching.CacheEntryRemovedReason Evicted = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheEntryRemovedReason.Evicted" />
+      <MemberSignature Language="VB.NET" Value="Evicted" />
+      <MemberSignature Language="F#" Value="Evicted = 2" Usage="System.Runtime.Caching.CacheEntryRemovedReason.Evicted" />
+      <MemberSignature Language="C++ CLI" Value="Evicted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A cache entry was removed to free memory in the cache. This occurs when a cache instance approaches cache-specific memory limits, or when a process or cache instance approaches computer-wide memory limits.</summary>
       </Docs>
@@ -75,6 +90,9 @@
       <MemberSignature Language="C#" Value="Expired" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Caching.CacheEntryRemovedReason Expired = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheEntryRemovedReason.Expired" />
+      <MemberSignature Language="VB.NET" Value="Expired" />
+      <MemberSignature Language="F#" Value="Expired = 1" Usage="System.Runtime.Caching.CacheEntryRemovedReason.Expired" />
+      <MemberSignature Language="C++ CLI" Value="Expired" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -83,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A cache entry was removed because it expired. Expiration can be based on an absolute time or on a sliding expiration time.</summary>
       </Docs>
@@ -91,6 +110,9 @@
       <MemberSignature Language="C#" Value="Removed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Caching.CacheEntryRemovedReason Removed = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Caching.CacheEntryRemovedReason.Removed" />
+      <MemberSignature Language="VB.NET" Value="Removed" />
+      <MemberSignature Language="F#" Value="Removed = 0" Usage="System.Runtime.Caching.CacheEntryRemovedReason.Removed" />
+      <MemberSignature Language="C++ CLI" Value="Removed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Caching</AssemblyName>
@@ -99,6 +121,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Caching.CacheEntryRemovedReason</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A cache entry was removed by using the <see cref="M:System.Runtime.Caching.ObjectCache.Remove(System.String,System.String)" /> or <see cref="M:System.Runtime.Caching.ObjectCache.Set(System.String,System.Object,System.DateTimeOffset,System.String)" /> method.</summary>
       </Docs>

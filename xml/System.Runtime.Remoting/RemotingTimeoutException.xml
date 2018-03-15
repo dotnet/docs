@@ -1,7 +1,10 @@
-<Type Name="RemotingTimeoutException" FullName="System.Runtime.Remoting.RemotingTimeoutException">
+﻿<Type Name="RemotingTimeoutException" FullName="System.Runtime.Remoting.RemotingTimeoutException">
   <TypeSignature Language="C#" Value="public class RemotingTimeoutException : System.Runtime.Remoting.RemotingException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit RemotingTimeoutException extends System.Runtime.Remoting.RemotingException" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.RemotingTimeoutException" />
+  <TypeSignature Language="VB.NET" Value="Public Class RemotingTimeoutException&#xA;Inherits RemotingException" />
+  <TypeSignature Language="F#" Value="type RemotingTimeoutException = class&#xA;    inherit RemotingException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RemotingTimeoutException : System::Runtime::Remoting::RemotingException" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,10 +38,22 @@
     <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.RemotingTimeoutException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RemotingTimeoutException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingTimeoutException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RemotingTimeoutException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -67,6 +82,9 @@
       <MemberSignature Language="C#" Value="public RemotingTimeoutException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingTimeoutException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.RemotingTimeoutException : string -&gt; System.Runtime.Remoting.RemotingTimeoutException" Usage="new System.Runtime.Remoting.RemotingTimeoutException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RemotingTimeoutException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -98,6 +116,9 @@
       <MemberSignature Language="C#" Value="public RemotingTimeoutException (string message, Exception InnerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception InnerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.RemotingTimeoutException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, InnerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.RemotingTimeoutException : string * Exception -&gt; System.Runtime.Remoting.RemotingTimeoutException" Usage="new System.Runtime.Remoting.RemotingTimeoutException (message, InnerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RemotingTimeoutException(System::String ^ message, Exception ^ InnerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -130,15 +151,5 @@
         <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.RemotingTimeoutException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

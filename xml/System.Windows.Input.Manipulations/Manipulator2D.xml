@@ -1,7 +1,10 @@
-<Type Name="Manipulator2D" FullName="System.Windows.Input.Manipulations.Manipulator2D">
+﻿<Type Name="Manipulator2D" FullName="System.Windows.Input.Manipulations.Manipulator2D">
   <TypeSignature Language="C#" Value="public struct Manipulator2D" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Manipulator2D extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.Manipulations.Manipulator2D" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Manipulator2D" />
+  <TypeSignature Language="F#" Value="type Manipulator2D = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class Manipulator2D" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public Manipulator2D (int id, float x, float y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 id, float32 x, float32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulations.Manipulator2D.#ctor(System.Int32,System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (id As Integer, x As Single, y As Single)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Input.Manipulations.Manipulator2D : int * single * single -&gt; System.Windows.Input.Manipulations.Manipulator2D" Usage="new System.Windows.Input.Manipulations.Manipulator2D (id, x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Manipulator2D(int id, float x, float y);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -49,6 +55,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulations.Manipulator2D.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="manipulator2D.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -72,6 +81,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulations.Manipulator2D.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="manipulator2D.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -91,6 +103,9 @@
       <MemberSignature Language="C#" Value="public int Id { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Id" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.Manipulator2D.Id" />
+      <MemberSignature Language="VB.NET" Value="Public Property Id As Integer" />
+      <MemberSignature Language="F#" Value="member this.Id : int with get, set" Usage="System.Windows.Input.Manipulations.Manipulator2D.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Id { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -109,6 +124,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Input.Manipulations.Manipulator2D manipulator1, System.Windows.Input.Manipulations.Manipulator2D manipulator2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Input.Manipulations.Manipulator2D manipulator1, valuetype System.Windows.Input.Manipulations.Manipulator2D manipulator2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulations.Manipulator2D.op_Equality(System.Windows.Input.Manipulations.Manipulator2D,System.Windows.Input.Manipulations.Manipulator2D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (manipulator1 As Manipulator2D, manipulator2 As Manipulator2D) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Input.Manipulations.Manipulator2D * System.Windows.Input.Manipulations.Manipulator2D -&gt; bool" Usage="manipulator1 = manipulator2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Input::Manipulations::Manipulator2D manipulator1, System::Windows::Input::Manipulations::Manipulator2D manipulator2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -136,6 +154,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Input.Manipulations.Manipulator2D manipulator1, System.Windows.Input.Manipulations.Manipulator2D manipulator2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Input.Manipulations.Manipulator2D manipulator1, valuetype System.Windows.Input.Manipulations.Manipulator2D manipulator2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.Manipulations.Manipulator2D.op_Inequality(System.Windows.Input.Manipulations.Manipulator2D,System.Windows.Input.Manipulations.Manipulator2D)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (manipulator1 As Manipulator2D, manipulator2 As Manipulator2D) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Input.Manipulations.Manipulator2D * System.Windows.Input.Manipulations.Manipulator2D -&gt; bool" Usage="System.Windows.Input.Manipulations.Manipulator2D.op_Inequality (manipulator1, manipulator2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Input::Manipulations::Manipulator2D manipulator1, System::Windows::Input::Manipulations::Manipulator2D manipulator2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -163,6 +184,9 @@
       <MemberSignature Language="C#" Value="public float X { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 X" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.Manipulator2D.X" />
+      <MemberSignature Language="VB.NET" Value="Public Property X As Single" />
+      <MemberSignature Language="F#" Value="member this.X : single with get, set" Usage="System.Windows.Input.Manipulations.Manipulator2D.X" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float X { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>
@@ -188,6 +212,9 @@
       <MemberSignature Language="C#" Value="public float Y { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Y" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.Manipulations.Manipulator2D.Y" />
+      <MemberSignature Language="VB.NET" Value="Public Property Y As Single" />
+      <MemberSignature Language="F#" Value="member this.Y : single with get, set" Usage="System.Windows.Input.Manipulations.Manipulator2D.Y" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Y { float get(); void set(float value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Input.Manipulations</AssemblyName>

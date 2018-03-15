@@ -1,7 +1,10 @@
-<Type Name="CodeActivityMetadata" FullName="System.Activities.CodeActivityMetadata">
+﻿<Type Name="CodeActivityMetadata" FullName="System.Activities.CodeActivityMetadata">
   <TypeSignature Language="C#" Value="public struct CodeActivityMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit CodeActivityMetadata extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Activities.CodeActivityMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Structure CodeActivityMetadata" />
+  <TypeSignature Language="F#" Value="type CodeActivityMetadata = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class CodeActivityMetadata" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public void AddArgument (System.Activities.RuntimeArgument argument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddArgument(class System.Activities.RuntimeArgument argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityMetadata.AddArgument(System.Activities.RuntimeArgument)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddArgument (argument As RuntimeArgument)" />
+      <MemberSignature Language="F#" Value="member this.AddArgument : System.Activities.RuntimeArgument -&gt; unit" Usage="codeActivityMetadata.AddArgument argument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddArgument(System::Activities::RuntimeArgument ^ argument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -40,6 +46,9 @@
       <MemberSignature Language="C#" Value="public void AddDefaultExtensionProvider&lt;T&gt; (Func&lt;T&gt; extensionProvider) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddDefaultExtensionProvider&lt;class T&gt;(class System.Func`1&lt;!!T&gt; extensionProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityMetadata.AddDefaultExtensionProvider``1(System.Func{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddDefaultExtensionProvider(Of T As Class) (extensionProvider As Func(Of T))" />
+      <MemberSignature Language="F#" Value="member this.AddDefaultExtensionProvider : Func&lt;'T (requires 'T : null)&gt; -&gt; unit (requires 'T : null)" Usage="codeActivityMetadata.AddDefaultExtensionProvider extensionProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class void AddDefaultExtensionProvider(Func&lt;T&gt; ^ extensionProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -93,6 +102,8 @@
       <MemberSignature Language="C#" Value="public void AddValidationError (System.Activities.Validation.ValidationError validationError);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddValidationError(class System.Activities.Validation.ValidationError validationError) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityMetadata.AddValidationError(System.Activities.Validation.ValidationError)" />
+      <MemberSignature Language="F#" Value="member this.AddValidationError : System.Activities.Validation.ValidationError -&gt; unit" Usage="codeActivityMetadata.AddValidationError validationError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValidationError(System::Activities::Validation::ValidationError ^ validationError);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -121,6 +132,9 @@
       <MemberSignature Language="C#" Value="public void AddValidationError (string validationErrorMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddValidationError(string validationErrorMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityMetadata.AddValidationError(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddValidationError (validationErrorMessage As String)" />
+      <MemberSignature Language="F#" Value="member this.AddValidationError : string -&gt; unit" Usage="codeActivityMetadata.AddValidationError validationErrorMessage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddValidationError(System::String ^ validationErrorMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -149,6 +163,8 @@
       <MemberSignature Language="C#" Value="public void Bind (System.Activities.Argument binding, System.Activities.RuntimeArgument argument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Bind(class System.Activities.Argument binding, class System.Activities.RuntimeArgument argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityMetadata.Bind(System.Activities.Argument,System.Activities.RuntimeArgument)" />
+      <MemberSignature Language="F#" Value="member this.Bind : System.Activities.Argument * System.Activities.RuntimeArgument -&gt; unit" Usage="codeActivityMetadata.Bind (binding, argument)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Bind(System::Activities::Argument ^ binding, System::Activities::RuntimeArgument ^ argument);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -172,6 +188,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.LocationReferenceEnvironment Environment { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.LocationReferenceEnvironment Environment" />
       <MemberSignature Language="DocId" Value="P:System.Activities.CodeActivityMetadata.Environment" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Environment As LocationReferenceEnvironment" />
+      <MemberSignature Language="F#" Value="member this.Environment : System.Activities.LocationReferenceEnvironment" Usage="System.Activities.CodeActivityMetadata.Environment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::LocationReferenceEnvironment ^ Environment { System::Activities::LocationReferenceEnvironment ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -190,6 +209,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityMetadata.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="codeActivityMetadata.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -213,6 +235,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.Activities.RuntimeArgument&gt; GetArgumentsWithReflection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.RuntimeArgument&gt; GetArgumentsWithReflection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityMetadata.GetArgumentsWithReflection" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetArgumentsWithReflection () As Collection(Of RuntimeArgument)" />
+      <MemberSignature Language="F#" Value="member this.GetArgumentsWithReflection : unit -&gt; System.Collections.ObjectModel.Collection&lt;System.Activities.RuntimeArgument&gt;" Usage="codeActivityMetadata.GetArgumentsWithReflection " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ObjectModel::Collection&lt;System::Activities::RuntimeArgument ^&gt; ^ GetArgumentsWithReflection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -239,6 +264,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityMetadata.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="codeActivityMetadata.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -258,6 +286,9 @@
       <MemberSignature Language="C#" Value="public bool HasViolations { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasViolations" />
       <MemberSignature Language="DocId" Value="P:System.Activities.CodeActivityMetadata.HasViolations" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasViolations As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasViolations : bool" Usage="System.Activities.CodeActivityMetadata.HasViolations" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasViolations { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -277,6 +308,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Activities.CodeActivityMetadata left, System.Activities.CodeActivityMetadata right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Activities.CodeActivityMetadata left, valuetype System.Activities.CodeActivityMetadata right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityMetadata.op_Equality(System.Activities.CodeActivityMetadata,System.Activities.CodeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As CodeActivityMetadata, right As CodeActivityMetadata) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Activities.CodeActivityMetadata * System.Activities.CodeActivityMetadata -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Activities::CodeActivityMetadata left, System::Activities::CodeActivityMetadata right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -302,6 +336,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Activities.CodeActivityMetadata left, System.Activities.CodeActivityMetadata right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Activities.CodeActivityMetadata left, valuetype System.Activities.CodeActivityMetadata right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityMetadata.op_Inequality(System.Activities.CodeActivityMetadata,System.Activities.CodeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As CodeActivityMetadata, right As CodeActivityMetadata) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Activities.CodeActivityMetadata * System.Activities.CodeActivityMetadata -&gt; bool" Usage="System.Activities.CodeActivityMetadata.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Activities::CodeActivityMetadata left, System::Activities::CodeActivityMetadata right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -327,6 +364,9 @@
       <MemberSignature Language="C#" Value="public void RequireExtension (Type extensionType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RequireExtension(class System.Type extensionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityMetadata.RequireExtension(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RequireExtension (extensionType As Type)" />
+      <MemberSignature Language="F#" Value="member this.RequireExtension : Type -&gt; unit" Usage="codeActivityMetadata.RequireExtension extensionType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RequireExtension(Type ^ extensionType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -355,6 +395,9 @@
       <MemberSignature Language="C#" Value="public void RequireExtension&lt;T&gt; () where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RequireExtension&lt;class T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityMetadata.RequireExtension``1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RequireExtension(Of T As Class) ()" />
+      <MemberSignature Language="F#" Value="member this.RequireExtension : unit -&gt; unit (requires 'T : null)" Usage="codeActivityMetadata.RequireExtension " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; where T : class void RequireExtension();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -388,6 +431,9 @@
       <MemberSignature Language="C#" Value="public void SetArgumentsCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.RuntimeArgument&gt; arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetArgumentsCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.RuntimeArgument&gt; arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityMetadata.SetArgumentsCollection(System.Collections.ObjectModel.Collection{System.Activities.RuntimeArgument})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetArgumentsCollection (arguments As Collection(Of RuntimeArgument))" />
+      <MemberSignature Language="F#" Value="member this.SetArgumentsCollection : System.Collections.ObjectModel.Collection&lt;System.Activities.RuntimeArgument&gt; -&gt; unit" Usage="codeActivityMetadata.SetArgumentsCollection arguments" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetArgumentsCollection(System::Collections::ObjectModel::Collection&lt;System::Activities::RuntimeArgument ^&gt; ^ arguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -409,6 +455,9 @@
       <MemberSignature Language="C#" Value="public void SetValidationErrorsCollection (System.Collections.ObjectModel.Collection&lt;System.Activities.Validation.ValidationError&gt; validationErrors);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetValidationErrorsCollection(class System.Collections.ObjectModel.Collection`1&lt;class System.Activities.Validation.ValidationError&gt; validationErrors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.CodeActivityMetadata.SetValidationErrorsCollection(System.Collections.ObjectModel.Collection{System.Activities.Validation.ValidationError})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetValidationErrorsCollection (validationErrors As Collection(Of ValidationError))" />
+      <MemberSignature Language="F#" Value="member this.SetValidationErrorsCollection : System.Collections.ObjectModel.Collection&lt;System.Activities.Validation.ValidationError&gt; -&gt; unit" Usage="codeActivityMetadata.SetValidationErrorsCollection validationErrors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetValidationErrorsCollection(System::Collections::ObjectModel::Collection&lt;System::Activities::Validation::ValidationError ^&gt; ^ validationErrors);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

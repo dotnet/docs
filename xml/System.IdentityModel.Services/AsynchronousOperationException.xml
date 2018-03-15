@@ -1,7 +1,10 @@
-<Type Name="AsynchronousOperationException" FullName="System.IdentityModel.Services.AsynchronousOperationException">
+﻿<Type Name="AsynchronousOperationException" FullName="System.IdentityModel.Services.AsynchronousOperationException">
   <TypeSignature Language="C#" Value="public class AsynchronousOperationException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit AsynchronousOperationException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Services.AsynchronousOperationException" />
+  <TypeSignature Language="VB.NET" Value="Public Class AsynchronousOperationException&#xA;Inherits Exception" />
+  <TypeSignature Language="F#" Value="type AsynchronousOperationException = class&#xA;    inherit Exception" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AsynchronousOperationException : Exception" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.AsynchronousOperationException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AsynchronousOperationException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.AsynchronousOperationException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AsynchronousOperationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -48,6 +62,9 @@
       <MemberSignature Language="C#" Value="public AsynchronousOperationException (Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.AsynchronousOperationException.#ctor(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.AsynchronousOperationException : Exception -&gt; System.IdentityModel.Services.AsynchronousOperationException" Usage="new System.IdentityModel.Services.AsynchronousOperationException innerException" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AsynchronousOperationException(Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -80,6 +97,9 @@
       <MemberSignature Language="C#" Value="public AsynchronousOperationException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.AsynchronousOperationException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.AsynchronousOperationException : string -&gt; System.IdentityModel.Services.AsynchronousOperationException" Usage="new System.IdentityModel.Services.AsynchronousOperationException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AsynchronousOperationException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -112,6 +132,9 @@
       <MemberSignature Language="C#" Value="protected AsynchronousOperationException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.AsynchronousOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.AsynchronousOperationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.IdentityModel.Services.AsynchronousOperationException" Usage="new System.IdentityModel.Services.AsynchronousOperationException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; AsynchronousOperationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -139,6 +162,9 @@
       <MemberSignature Language="C#" Value="public AsynchronousOperationException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Services.AsynchronousOperationException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Services.AsynchronousOperationException : string * Exception -&gt; System.IdentityModel.Services.AsynchronousOperationException" Usage="new System.IdentityModel.Services.AsynchronousOperationException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AsynchronousOperationException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel.Services</AssemblyName>
@@ -169,14 +195,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Services.AsynchronousOperationException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

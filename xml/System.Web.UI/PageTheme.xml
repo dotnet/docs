@@ -1,7 +1,10 @@
-<Type Name="PageTheme" FullName="System.Web.UI.PageTheme">
+﻿<Type Name="PageTheme" FullName="System.Web.UI.PageTheme">
   <TypeSignature Language="C#" Value="public abstract class PageTheme" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PageTheme extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.PageTheme" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class PageTheme" />
+  <TypeSignature Language="F#" Value="type PageTheme = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PageTheme abstract" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,8 @@
       <MemberSignature Language="C#" Value="protected PageTheme ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageTheme.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PageTheme();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,6 +54,9 @@
       <MemberSignature Language="C#" Value="protected abstract string AppRelativeTemplateSourceDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AppRelativeTemplateSourceDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageTheme.AppRelativeTemplateSourceDirectory" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property AppRelativeTemplateSourceDirectory As String" />
+      <MemberSignature Language="F#" Value="member this.AppRelativeTemplateSourceDirectory : string" Usage="System.Web.UI.PageTheme.AppRelativeTemplateSourceDirectory" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::String ^ AppRelativeTemplateSourceDirectory { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -75,6 +83,9 @@
       <MemberSignature Language="C#" Value="protected abstract System.Collections.IDictionary ControlSkins { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary ControlSkins" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageTheme.ControlSkins" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property ControlSkins As IDictionary" />
+      <MemberSignature Language="F#" Value="member this.ControlSkins : System.Collections.IDictionary" Usage="System.Web.UI.PageTheme.ControlSkins" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property System::Collections::IDictionary ^ ControlSkins { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -101,6 +112,9 @@
       <MemberSignature Language="C#" Value="public static object CreateSkinKey (Type controlType, string skinID);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object CreateSkinKey(class System.Type controlType, string skinID) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageTheme.CreateSkinKey(System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSkinKey (controlType As Type, skinID As String) As Object" />
+      <MemberSignature Language="F#" Value="static member CreateSkinKey : Type * string -&gt; obj" Usage="System.Web.UI.PageTheme.CreateSkinKey (controlType, skinID)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ CreateSkinKey(Type ^ controlType, System::String ^ skinID);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -123,10 +137,22 @@
           <paramref name="controlType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Eval">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Uses the <see cref="Overload:System.Web.UI.DataBinder.Eval" /> method of the <see cref="T:System.Web.UI.Page" /> control that the instance of the <see cref="T:System.Web.UI.PageTheme" /> class is associated with to evaluate a data-binding expression.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Eval">
       <MemberSignature Language="C#" Value="protected object Eval (string expression);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object Eval(string expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageTheme.Eval(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function Eval (expression As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Eval : string -&gt; obj" Usage="pageTheme.Eval expression" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ Eval(System::String ^ expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -156,6 +182,9 @@
       <MemberSignature Language="C#" Value="protected string Eval (string expression, string format);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string Eval(string expression, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageTheme.Eval(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function Eval (expression As String, format As String) As String" />
+      <MemberSignature Language="F#" Value="member this.Eval : string * string -&gt; string" Usage="pageTheme.Eval (expression, format)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ Eval(System::String ^ expression, System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -187,6 +216,9 @@
       <MemberSignature Language="C#" Value="protected abstract string[] LinkedStyleSheets { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] LinkedStyleSheets" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageTheme.LinkedStyleSheets" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride ReadOnly Property LinkedStyleSheets As String()" />
+      <MemberSignature Language="F#" Value="member this.LinkedStyleSheets : string[]" Usage="System.Web.UI.PageTheme.LinkedStyleSheets" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract property cli::array &lt;System::String ^&gt; ^ LinkedStyleSheets { cli::array &lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -212,6 +244,9 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.Page Page { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Page Page" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.PageTheme.Page" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Page As Page" />
+      <MemberSignature Language="F#" Value="member this.Page : System.Web.UI.Page" Usage="System.Web.UI.PageTheme.Page" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::Page ^ Page { System::Web::UI::Page ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -238,6 +273,9 @@
       <MemberSignature Language="C#" Value="public bool TestDeviceFilter (string deviceFilterName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool TestDeviceFilter(string deviceFilterName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageTheme.TestDeviceFilter(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TestDeviceFilter (deviceFilterName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.TestDeviceFilter : string -&gt; bool" Usage="pageTheme.TestDeviceFilter deviceFilterName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool TestDeviceFilter(System::String ^ deviceFilterName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -257,10 +295,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="XPath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides support for parsing and evaluating an XPath data-binding expression in theme skin files.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="XPath">
       <MemberSignature Language="C#" Value="protected object XPath (string xPathExpression);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object XPath(string xPathExpression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageTheme.XPath(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function XPath (xPathExpression As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.XPath : string -&gt; obj" Usage="pageTheme.XPath xPathExpression" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ XPath(System::String ^ xPathExpression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -292,6 +342,9 @@
       <MemberSignature Language="C#" Value="protected string XPath (string xPathExpression, string format);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string XPath(string xPathExpression, string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageTheme.XPath(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function XPath (xPathExpression As String, format As String) As String" />
+      <MemberSignature Language="F#" Value="member this.XPath : string * string -&gt; string" Usage="pageTheme.XPath (xPathExpression, format)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ XPath(System::String ^ xPathExpression, System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -326,6 +379,9 @@
       <MemberSignature Language="C#" Value="protected object XPath (string xPathExpression, System.Xml.IXmlNamespaceResolver resolver);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object XPath(string xPathExpression, class System.Xml.IXmlNamespaceResolver resolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageTheme.XPath(System.String,System.Xml.IXmlNamespaceResolver)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function XPath (xPathExpression As String, resolver As IXmlNamespaceResolver) As Object" />
+      <MemberSignature Language="F#" Value="member this.XPath : string * System.Xml.IXmlNamespaceResolver -&gt; obj" Usage="pageTheme.XPath (xPathExpression, resolver)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ XPath(System::String ^ xPathExpression, System::Xml::IXmlNamespaceResolver ^ resolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -361,6 +417,9 @@
       <MemberSignature Language="C#" Value="protected string XPath (string xPathExpression, string format, System.Xml.IXmlNamespaceResolver resolver);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string XPath(string xPathExpression, string format, class System.Xml.IXmlNamespaceResolver resolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageTheme.XPath(System.String,System.String,System.Xml.IXmlNamespaceResolver)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function XPath (xPathExpression As String, format As String, resolver As IXmlNamespaceResolver) As String" />
+      <MemberSignature Language="F#" Value="member this.XPath : string * string * System.Xml.IXmlNamespaceResolver -&gt; string" Usage="pageTheme.XPath (xPathExpression, format, resolver)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ XPath(System::String ^ xPathExpression, System::String ^ format, System::Xml::IXmlNamespaceResolver ^ resolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -394,10 +453,22 @@
         <altmember cref="T:System.Xml.XPath.XPathExpression" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="XPathSelect">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides run-time data binding against XML-based data in a theme skin file and returns a node collection that implements the <see cref="T:System.Collections.IEnumerable" /> interface.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="XPathSelect">
       <MemberSignature Language="C#" Value="protected System.Collections.IEnumerable XPathSelect (string xPathExpression);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Collections.IEnumerable XPathSelect(string xPathExpression) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageTheme.XPathSelect(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function XPathSelect (xPathExpression As String) As IEnumerable" />
+      <MemberSignature Language="F#" Value="member this.XPathSelect : string -&gt; System.Collections.IEnumerable" Usage="pageTheme.XPathSelect xPathExpression" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Collections::IEnumerable ^ XPathSelect(System::String ^ xPathExpression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -429,6 +500,9 @@
       <MemberSignature Language="C#" Value="protected System.Collections.IEnumerable XPathSelect (string xPathExpression, System.Xml.IXmlNamespaceResolver resolver);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance class System.Collections.IEnumerable XPathSelect(string xPathExpression, class System.Xml.IXmlNamespaceResolver resolver) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.PageTheme.XPathSelect(System.String,System.Xml.IXmlNamespaceResolver)" />
+      <MemberSignature Language="VB.NET" Value="Protected Function XPathSelect (xPathExpression As String, resolver As IXmlNamespaceResolver) As IEnumerable" />
+      <MemberSignature Language="F#" Value="member this.XPathSelect : string * System.Xml.IXmlNamespaceResolver -&gt; System.Collections.IEnumerable" Usage="pageTheme.XPathSelect (xPathExpression, resolver)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Collections::IEnumerable ^ XPathSelect(System::String ^ xPathExpression, System::Xml::IXmlNamespaceResolver ^ resolver);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -459,32 +533,5 @@
         <altmember cref="T:System.Xml.IXmlNamespaceResolver" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="XPathSelect">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides run-time data binding against XML-based data in a theme skin file and returns a node collection that implements the <see cref="T:System.Collections.IEnumerable" /> interface.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="XPath">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides support for parsing and evaluating an XPath data-binding expression in theme skin files.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Eval">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Uses the <see cref="Overload:System.Web.UI.DataBinder.Eval" /> method of the <see cref="T:System.Web.UI.Page" /> control that the instance of the <see cref="T:System.Web.UI.PageTheme" /> class is associated with to evaluate a data-binding expression.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

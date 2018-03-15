@@ -1,7 +1,10 @@
-<Type Name="EventLogStatus" FullName="System.Diagnostics.Eventing.Reader.EventLogStatus">
+﻿<Type Name="EventLogStatus" FullName="System.Diagnostics.Eventing.Reader.EventLogStatus">
   <TypeSignature Language="C#" Value="public sealed class EventLogStatus" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventLogStatus extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.Eventing.Reader.EventLogStatus" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EventLogStatus" />
+  <TypeSignature Language="F#" Value="type EventLogStatus = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EventLogStatus sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public string LogName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LogName" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogStatus.LogName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogName As String" />
+      <MemberSignature Language="F#" Value="member this.LogName : string" Usage="System.Diagnostics.Eventing.Reader.EventLogStatus.LogName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LogName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public int StatusCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StatusCode" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.Eventing.Reader.EventLogStatus.StatusCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StatusCode As Integer" />
+      <MemberSignature Language="F#" Value="member this.StatusCode : int" Usage="System.Diagnostics.Eventing.Reader.EventLogStatus.StatusCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StatusCode { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

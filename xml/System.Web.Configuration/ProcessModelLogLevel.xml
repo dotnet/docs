@@ -1,7 +1,10 @@
-<Type Name="ProcessModelLogLevel" FullName="System.Web.Configuration.ProcessModelLogLevel">
+﻿<Type Name="ProcessModelLogLevel" FullName="System.Web.Configuration.ProcessModelLogLevel">
   <TypeSignature Language="C#" Value="public enum ProcessModelLogLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProcessModelLogLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.ProcessModelLogLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ProcessModelLogLevel" />
+  <TypeSignature Language="F#" Value="type ProcessModelLogLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ProcessModelLogLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.ProcessModelLogLevel All = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelLogLevel.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="F#" Value="All = 1" Usage="System.Web.Configuration.ProcessModelLogLevel.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -45,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelLogLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that all process events are logged. This field is constant.</summary>
         <remarks>
@@ -62,6 +69,9 @@
       <MemberSignature Language="C#" Value="Errors" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.ProcessModelLogLevel Errors = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelLogLevel.Errors" />
+      <MemberSignature Language="VB.NET" Value="Errors" />
+      <MemberSignature Language="F#" Value="Errors = 2" Usage="System.Web.Configuration.ProcessModelLogLevel.Errors" />
+      <MemberSignature Language="C++ CLI" Value="Errors" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -70,6 +80,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelLogLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that only unexpected shutdowns, memory-limit shutdowns, and deadlock shutdowns are logged. This field is constant.</summary>
         <remarks>
@@ -87,6 +98,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.Configuration.ProcessModelLogLevel None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.Configuration.ProcessModelLogLevel.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Web.Configuration.ProcessModelLogLevel.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -95,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Web.Configuration.ProcessModelLogLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that no events are logged. This field is constant.</summary>
         <remarks>

@@ -1,7 +1,10 @@
-<Type Name="Architecture" FullName="System.Runtime.InteropServices.Architecture">
+﻿<Type Name="Architecture" FullName="System.Runtime.InteropServices.Architecture">
   <TypeSignature Language="C#" Value="public enum Architecture" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Architecture extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.Architecture" />
+  <TypeSignature Language="VB.NET" Value="Public Enum Architecture" />
+  <TypeSignature Language="F#" Value="type Architecture = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class Architecture" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +43,9 @@
       <MemberSignature Language="C#" Value="Arm" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.Architecture Arm = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.Architecture.Arm" />
+      <MemberSignature Language="VB.NET" Value="Arm" />
+      <MemberSignature Language="F#" Value="Arm = 2" Usage="System.Runtime.InteropServices.Architecture.Arm" />
+      <MemberSignature Language="C++ CLI" Value="Arm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -58,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.Architecture</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A 32-bit ARM processor architecture.</summary>
       </Docs>
@@ -66,6 +73,9 @@
       <MemberSignature Language="C#" Value="Arm64" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.Architecture Arm64 = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.Architecture.Arm64" />
+      <MemberSignature Language="VB.NET" Value="Arm64" />
+      <MemberSignature Language="F#" Value="Arm64 = 3" Usage="System.Runtime.InteropServices.Architecture.Arm64" />
+      <MemberSignature Language="C++ CLI" Value="Arm64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -84,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.Architecture</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A 64-bit ARM processor architecture.</summary>
       </Docs>
@@ -92,6 +103,9 @@
       <MemberSignature Language="C#" Value="X64" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.Architecture X64 = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.Architecture.X64" />
+      <MemberSignature Language="VB.NET" Value="X64" />
+      <MemberSignature Language="F#" Value="X64 = 1" Usage="System.Runtime.InteropServices.Architecture.X64" />
+      <MemberSignature Language="C++ CLI" Value="X64" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -110,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.Architecture</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>An Intel-based 64-bit processor architecture.</summary>
       </Docs>
@@ -118,6 +133,9 @@
       <MemberSignature Language="C#" Value="X86" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.Architecture X86 = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.Architecture.X86" />
+      <MemberSignature Language="VB.NET" Value="X86" />
+      <MemberSignature Language="F#" Value="X86 = 0" Usage="System.Runtime.InteropServices.Architecture.X86" />
+      <MemberSignature Language="C++ CLI" Value="X86" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices.RuntimeInformation</AssemblyName>
@@ -136,6 +154,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.Architecture</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>An Intel-based 32-bit processor architecture.</summary>
       </Docs>

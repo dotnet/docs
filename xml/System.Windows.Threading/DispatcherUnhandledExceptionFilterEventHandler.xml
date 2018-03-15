@@ -1,7 +1,10 @@
-<Type Name="DispatcherUnhandledExceptionFilterEventHandler" FullName="System.Windows.Threading.DispatcherUnhandledExceptionFilterEventHandler">
+﻿<Type Name="DispatcherUnhandledExceptionFilterEventHandler" FullName="System.Windows.Threading.DispatcherUnhandledExceptionFilterEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DispatcherUnhandledExceptionFilterEventHandler(object sender, DispatcherUnhandledExceptionFilterEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DispatcherUnhandledExceptionFilterEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Threading.DispatcherUnhandledExceptionFilterEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DispatcherUnhandledExceptionFilterEventHandler(sender As Object, e As DispatcherUnhandledExceptionFilterEventArgs)" />
+  <TypeSignature Language="F#" Value="type DispatcherUnhandledExceptionFilterEventHandler = delegate of obj * DispatcherUnhandledExceptionFilterEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DispatcherUnhandledExceptionFilterEventHandler(System::Object ^ sender, DispatcherUnhandledExceptionFilterEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

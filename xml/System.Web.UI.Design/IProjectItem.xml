@@ -1,7 +1,10 @@
-<Type Name="IProjectItem" FullName="System.Web.UI.Design.IProjectItem">
+﻿<Type Name="IProjectItem" FullName="System.Web.UI.Design.IProjectItem">
   <TypeSignature Language="C#" Value="public interface IProjectItem" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProjectItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.IProjectItem" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IProjectItem" />
+  <TypeSignature Language="F#" Value="type IProjectItem = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IProjectItem" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -17,6 +20,9 @@
       <MemberSignature Language="C#" Value="public string AppRelativeUrl { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AppRelativeUrl" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IProjectItem.AppRelativeUrl" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AppRelativeUrl As String" />
+      <MemberSignature Language="F#" Value="member this.AppRelativeUrl : string" Usage="System.Web.UI.Design.IProjectItem.AppRelativeUrl" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AppRelativeUrl { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -35,6 +41,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IProjectItem.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Web.UI.Design.IProjectItem.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -53,6 +62,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.Design.IProjectItem Parent { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.IProjectItem Parent" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IProjectItem.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As IProjectItem" />
+      <MemberSignature Language="F#" Value="member this.Parent : System.Web.UI.Design.IProjectItem" Usage="System.Web.UI.Design.IProjectItem.Parent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::Design::IProjectItem ^ Parent { System::Web::UI::Design::IProjectItem ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -71,6 +83,9 @@
       <MemberSignature Language="C#" Value="public string PhysicalPath { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PhysicalPath" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.IProjectItem.PhysicalPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PhysicalPath As String" />
+      <MemberSignature Language="F#" Value="member this.PhysicalPath : string" Usage="System.Web.UI.Design.IProjectItem.PhysicalPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PhysicalPath { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

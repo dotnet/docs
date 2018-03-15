@@ -1,7 +1,10 @@
-<Type Name="ClassicBorderStyle" FullName="Microsoft.Windows.Themes.ClassicBorderStyle">
+﻿<Type Name="ClassicBorderStyle" FullName="Microsoft.Windows.Themes.ClassicBorderStyle">
   <TypeSignature Language="C#" Value="public enum ClassicBorderStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClassicBorderStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Windows.Themes.ClassicBorderStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ClassicBorderStyle" />
+  <TypeSignature Language="F#" Value="type ClassicBorderStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ClassicBorderStyle" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework.Classic</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="AltPressed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle AltPressed = int32(15)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.AltPressed" />
+      <MemberSignature Language="VB.NET" Value="AltPressed" />
+      <MemberSignature Language="F#" Value="AltPressed = 15" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.AltPressed" />
+      <MemberSignature Language="C++ CLI" Value="AltPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>Used for the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> on a <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> in their pressed state.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="AltRaised" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle AltRaised = int32(14)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.AltRaised" />
+      <MemberSignature Language="VB.NET" Value="AltRaised" />
+      <MemberSignature Language="F#" Value="AltRaised = 14" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.AltRaised" />
+      <MemberSignature Language="C++ CLI" Value="AltRaised" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>Used for the <see cref="T:System.Windows.Controls.Primitives.Thumb" /> on a <see cref="T:System.Windows.Controls.Primitives.ScrollBar" /> in a normal state.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="Etched" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle Etched = int32(5)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.Etched" />
+      <MemberSignature Language="VB.NET" Value="Etched" />
+      <MemberSignature Language="F#" Value="Etched = 5" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.Etched" />
+      <MemberSignature Language="C++ CLI" Value="Etched" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Used for <see cref="T:System.Windows.Controls.GroupBox" />.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="HorizontalLine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle HorizontalLine = int32(6)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.HorizontalLine" />
+      <MemberSignature Language="VB.NET" Value="HorizontalLine" />
+      <MemberSignature Language="F#" Value="HorizontalLine = 6" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.HorizontalLine" />
+      <MemberSignature Language="C++ CLI" Value="HorizontalLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>Used for horizontal <see cref="T:System.Windows.Controls.Separator" />.</summary>
       </Docs>
@@ -82,6 +101,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -90,6 +112,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No border.</summary>
       </Docs>
@@ -98,6 +121,9 @@
       <MemberSignature Language="C#" Value="RadioButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle RadioButton = int32(16)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.RadioButton" />
+      <MemberSignature Language="VB.NET" Value="RadioButton" />
+      <MemberSignature Language="F#" Value="RadioButton = 16" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.RadioButton" />
+      <MemberSignature Language="C++ CLI" Value="RadioButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -106,6 +132,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Windows.Controls.RadioButton" /> border.</summary>
       </Docs>
@@ -114,6 +141,9 @@
       <MemberSignature Language="C#" Value="Raised" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle Raised = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.Raised" />
+      <MemberSignature Language="VB.NET" Value="Raised" />
+      <MemberSignature Language="F#" Value="Raised = 1" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.Raised" />
+      <MemberSignature Language="C++ CLI" Value="Raised" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -122,6 +152,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Used for <see cref="T:System.Windows.Controls.Button" /> elements in their normal state.</summary>
       </Docs>
@@ -130,6 +161,9 @@
       <MemberSignature Language="C#" Value="RaisedFocused" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle RaisedFocused = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.RaisedFocused" />
+      <MemberSignature Language="VB.NET" Value="RaisedFocused" />
+      <MemberSignature Language="F#" Value="RaisedFocused = 3" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.RaisedFocused" />
+      <MemberSignature Language="C++ CLI" Value="RaisedFocused" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -138,6 +172,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Used for <see cref="T:System.Windows.Controls.Button" /> elements that have keyboard focus or are the default <see cref="T:System.Windows.Controls.Button" />.</summary>
       </Docs>
@@ -146,6 +181,9 @@
       <MemberSignature Language="C#" Value="RaisedPressed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle RaisedPressed = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.RaisedPressed" />
+      <MemberSignature Language="VB.NET" Value="RaisedPressed" />
+      <MemberSignature Language="F#" Value="RaisedPressed = 2" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.RaisedPressed" />
+      <MemberSignature Language="C++ CLI" Value="RaisedPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -154,6 +192,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Used for <see cref="T:System.Windows.Controls.Button" /> elements in their pressed state.</summary>
       </Docs>
@@ -162,6 +201,9 @@
       <MemberSignature Language="C#" Value="Sunken" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle Sunken = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.Sunken" />
+      <MemberSignature Language="VB.NET" Value="Sunken" />
+      <MemberSignature Language="F#" Value="Sunken = 4" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.Sunken" />
+      <MemberSignature Language="C++ CLI" Value="Sunken" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -170,6 +212,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Used for <see cref="T:System.Windows.Controls.ListBox" />, <see cref="T:System.Windows.Controls.TextBox" />, and <see cref="T:System.Windows.Controls.CheckBox" />.</summary>
       </Docs>
@@ -178,6 +221,9 @@
       <MemberSignature Language="C#" Value="TabBottom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle TabBottom = int32(11)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.TabBottom" />
+      <MemberSignature Language="VB.NET" Value="TabBottom" />
+      <MemberSignature Language="F#" Value="TabBottom = 11" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.TabBottom" />
+      <MemberSignature Language="C++ CLI" Value="TabBottom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -186,6 +232,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>Used for <see cref="T:System.Windows.Controls.TabItem" />.</summary>
       </Docs>
@@ -194,6 +241,9 @@
       <MemberSignature Language="C#" Value="TabLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle TabLeft = int32(10)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.TabLeft" />
+      <MemberSignature Language="VB.NET" Value="TabLeft" />
+      <MemberSignature Language="F#" Value="TabLeft = 10" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.TabLeft" />
+      <MemberSignature Language="C++ CLI" Value="TabLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -202,6 +252,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>Used for <see cref="T:System.Windows.Controls.TabItem" />.</summary>
       </Docs>
@@ -210,6 +261,9 @@
       <MemberSignature Language="C#" Value="TabRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle TabRight = int32(8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.TabRight" />
+      <MemberSignature Language="VB.NET" Value="TabRight" />
+      <MemberSignature Language="F#" Value="TabRight = 8" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.TabRight" />
+      <MemberSignature Language="C++ CLI" Value="TabRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -218,6 +272,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Used for <see cref="T:System.Windows.Controls.TabItem" />.</summary>
       </Docs>
@@ -226,6 +281,9 @@
       <MemberSignature Language="C#" Value="TabTop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle TabTop = int32(9)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.TabTop" />
+      <MemberSignature Language="VB.NET" Value="TabTop" />
+      <MemberSignature Language="F#" Value="TabTop = 9" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.TabTop" />
+      <MemberSignature Language="C++ CLI" Value="TabTop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -234,6 +292,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>Used for <see cref="T:System.Windows.Controls.TabItem" />.</summary>
       </Docs>
@@ -242,6 +301,9 @@
       <MemberSignature Language="C#" Value="ThinPressed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle ThinPressed = int32(13)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.ThinPressed" />
+      <MemberSignature Language="VB.NET" Value="ThinPressed" />
+      <MemberSignature Language="F#" Value="ThinPressed = 13" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.ThinPressed" />
+      <MemberSignature Language="C++ CLI" Value="ThinPressed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -250,6 +312,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>Used for top level <see cref="T:System.Windows.Controls.MenuItem" /> in their pressed state.</summary>
       </Docs>
@@ -258,6 +321,9 @@
       <MemberSignature Language="C#" Value="ThinRaised" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle ThinRaised = int32(12)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.ThinRaised" />
+      <MemberSignature Language="VB.NET" Value="ThinRaised" />
+      <MemberSignature Language="F#" Value="ThinRaised = 12" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.ThinRaised" />
+      <MemberSignature Language="C++ CLI" Value="ThinRaised" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -266,6 +332,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>Used for top level <see cref="T:System.Windows.Controls.MenuItem" /> when the mouse or other input device is hovering over them.</summary>
       </Docs>
@@ -274,6 +341,9 @@
       <MemberSignature Language="C#" Value="VerticalLine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Windows.Themes.ClassicBorderStyle VerticalLine = int32(7)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Windows.Themes.ClassicBorderStyle.VerticalLine" />
+      <MemberSignature Language="VB.NET" Value="VerticalLine" />
+      <MemberSignature Language="F#" Value="VerticalLine = 7" Usage="Microsoft.Windows.Themes.ClassicBorderStyle.VerticalLine" />
+      <MemberSignature Language="C++ CLI" Value="VerticalLine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework.Classic</AssemblyName>
@@ -282,6 +352,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Windows.Themes.ClassicBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>Used for vertical <see cref="T:System.Windows.Controls.Separator" />.</summary>
       </Docs>

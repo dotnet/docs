@@ -1,7 +1,10 @@
-<Type Name="WebBrowserPermission" FullName="System.Security.Permissions.WebBrowserPermission">
+﻿<Type Name="WebBrowserPermission" FullName="System.Security.Permissions.WebBrowserPermission">
   <TypeSignature Language="C#" Value="public sealed class WebBrowserPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit WebBrowserPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.WebBrowserPermission" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebBrowserPermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
+  <TypeSignature Language="F#" Value="type WebBrowserPermission = class&#xA;    inherit CodeAccessPermission&#xA;    interface IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebBrowserPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>WindowsBase</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,10 +32,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>WindowsBase</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.WebBrowserPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebBrowserPermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.WebBrowserPermission.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBrowserPermission();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -55,6 +69,9 @@
       <MemberSignature Language="C#" Value="public WebBrowserPermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.WebBrowserPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.WebBrowserPermission : System.Security.Permissions.PermissionState -&gt; System.Security.Permissions.WebBrowserPermission" Usage="new System.Security.Permissions.WebBrowserPermission state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBrowserPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -88,6 +105,8 @@
       <MemberSignature Language="C#" Value="public WebBrowserPermission (System.Security.Permissions.WebBrowserPermissionLevel webBrowserPermissionLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.WebBrowserPermissionLevel webBrowserPermissionLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.WebBrowserPermission.#ctor(System.Security.Permissions.WebBrowserPermissionLevel)" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.WebBrowserPermission : System.Security.Permissions.WebBrowserPermissionLevel -&gt; System.Security.Permissions.WebBrowserPermission" Usage="new System.Security.Permissions.WebBrowserPermission webBrowserPermissionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebBrowserPermission(System::Security::Permissions::WebBrowserPermissionLevel webBrowserPermissionLevel);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -116,6 +135,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.WebBrowserPermission.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="webBrowserPermission.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -145,6 +167,8 @@
       <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement securityElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.WebBrowserPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="webBrowserPermission.FromXml securityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -175,6 +199,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.WebBrowserPermission.Intersect(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="webBrowserPermission.Intersect target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -206,6 +233,9 @@
       <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.WebBrowserPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="webBrowserPermission.IsSubsetOf target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -241,6 +271,9 @@
       <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.WebBrowserPermission.IsUnrestricted" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsUnrestricted : unit -&gt; bool&#xA;override this.IsUnrestricted : unit -&gt; bool" Usage="webBrowserPermission.IsUnrestricted " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -279,6 +312,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Permissions.WebBrowserPermissionLevel Level { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.WebBrowserPermissionLevel Level" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.WebBrowserPermission.Level" />
+      <MemberSignature Language="VB.NET" Value="Public Property Level As WebBrowserPermissionLevel" />
+      <MemberSignature Language="F#" Value="member this.Level : System.Security.Permissions.WebBrowserPermissionLevel with get, set" Usage="System.Security.Permissions.WebBrowserPermission.Level" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::WebBrowserPermissionLevel Level { System::Security::Permissions::WebBrowserPermissionLevel get(); void set(System::Security::Permissions::WebBrowserPermissionLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -314,6 +350,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.WebBrowserPermission.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="webBrowserPermission.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -342,6 +381,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.WebBrowserPermission.Union(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="webBrowserPermission.Union target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>WindowsBase</AssemblyName>
@@ -369,14 +411,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>WindowsBase</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.WebBrowserPermission" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

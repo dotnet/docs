@@ -1,7 +1,10 @@
-<Type Name="DesignTimeTemplateParser" FullName="System.Web.UI.DesignTimeTemplateParser">
+﻿<Type Name="DesignTimeTemplateParser" FullName="System.Web.UI.DesignTimeTemplateParser">
   <TypeSignature Language="C#" Value="public static class DesignTimeTemplateParser" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DesignTimeTemplateParser extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DesignTimeTemplateParser" />
+  <TypeSignature Language="VB.NET" Value="Public Class DesignTimeTemplateParser" />
+  <TypeSignature Language="F#" Value="type DesignTimeTemplateParser = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignTimeTemplateParser abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="public static System.Web.UI.Control ParseControl (System.Web.UI.DesignTimeParseData data);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.Control ParseControl(class System.Web.UI.DesignTimeParseData data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DesignTimeTemplateParser.ParseControl(System.Web.UI.DesignTimeParseData)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseControl (data As DesignTimeParseData) As Control" />
+      <MemberSignature Language="F#" Value="static member ParseControl : System.Web.UI.DesignTimeParseData -&gt; System.Web.UI.Control" Usage="System.Web.UI.DesignTimeTemplateParser.ParseControl data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::Control ^ ParseControl(System::Web::UI::DesignTimeParseData ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="public static System.Web.UI.Control[] ParseControls (System.Web.UI.DesignTimeParseData data);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.Control[] ParseControls(class System.Web.UI.DesignTimeParseData data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DesignTimeTemplateParser.ParseControls(System.Web.UI.DesignTimeParseData)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseControls (data As DesignTimeParseData) As Control()" />
+      <MemberSignature Language="F#" Value="static member ParseControls : System.Web.UI.DesignTimeParseData -&gt; System.Web.UI.Control[]" Usage="System.Web.UI.DesignTimeTemplateParser.ParseControls data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Web::UI::Control ^&gt; ^ ParseControls(System::Web::UI::DesignTimeParseData ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -73,6 +82,9 @@
       <MemberSignature Language="C#" Value="public static System.Web.UI.ITemplate ParseTemplate (System.Web.UI.DesignTimeParseData data);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.ITemplate ParseTemplate(class System.Web.UI.DesignTimeParseData data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DesignTimeTemplateParser.ParseTemplate(System.Web.UI.DesignTimeParseData)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseTemplate (data As DesignTimeParseData) As ITemplate" />
+      <MemberSignature Language="F#" Value="static member ParseTemplate : System.Web.UI.DesignTimeParseData -&gt; System.Web.UI.ITemplate" Usage="System.Web.UI.DesignTimeTemplateParser.ParseTemplate data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::ITemplate ^ ParseTemplate(System::Web::UI::DesignTimeParseData ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -96,6 +108,9 @@
       <MemberSignature Language="C#" Value="public static System.Web.UI.ControlBuilder ParseTheme (System.ComponentModel.Design.IDesignerHost host, string theme, string themePath);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Web.UI.ControlBuilder ParseTheme(class System.ComponentModel.Design.IDesignerHost host, string theme, string themePath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.DesignTimeTemplateParser.ParseTheme(System.ComponentModel.Design.IDesignerHost,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseTheme (host As IDesignerHost, theme As String, themePath As String) As ControlBuilder" />
+      <MemberSignature Language="F#" Value="static member ParseTheme : System.ComponentModel.Design.IDesignerHost * string * string -&gt; System.Web.UI.ControlBuilder" Usage="System.Web.UI.DesignTimeTemplateParser.ParseTheme (host, theme, themePath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Web::UI::ControlBuilder ^ ParseTheme(System::ComponentModel::Design::IDesignerHost ^ host, System::String ^ theme, System::String ^ themePath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

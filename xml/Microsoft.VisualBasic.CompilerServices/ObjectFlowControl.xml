@@ -1,7 +1,10 @@
-<Type Name="ObjectFlowControl" FullName="Microsoft.VisualBasic.CompilerServices.ObjectFlowControl">
+﻿<Type Name="ObjectFlowControl" FullName="Microsoft.VisualBasic.CompilerServices.ObjectFlowControl">
   <TypeSignature Language="C#" Value="public sealed class ObjectFlowControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ObjectFlowControl extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ObjectFlowControl" />
+  <TypeSignature Language="F#" Value="type ObjectFlowControl = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectFlowControl sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="public static void CheckForSyncLockOnValueType (object Expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static void CheckForSyncLockOnValueType(object Expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.CheckForSyncLockOnValueType(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CheckForSyncLockOnValueType (Expression As Object)" />
+      <MemberSignature Language="F#" Value="static member CheckForSyncLockOnValueType : obj -&gt; unit" Usage="Microsoft.VisualBasic.CompilerServices.ObjectFlowControl.CheckForSyncLockOnValueType Expression" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CheckForSyncLockOnValueType(System::Object ^ Expression);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

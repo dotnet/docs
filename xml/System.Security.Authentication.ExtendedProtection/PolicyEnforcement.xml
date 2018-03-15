@@ -1,7 +1,10 @@
-<Type Name="PolicyEnforcement" FullName="System.Security.Authentication.ExtendedProtection.PolicyEnforcement">
+﻿<Type Name="PolicyEnforcement" FullName="System.Security.Authentication.ExtendedProtection.PolicyEnforcement">
   <TypeSignature Language="C#" Value="public enum PolicyEnforcement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PolicyEnforcement extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.ExtendedProtection.PolicyEnforcement" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PolicyEnforcement" />
+  <TypeSignature Language="F#" Value="type PolicyEnforcement = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PolicyEnforcement" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="Always" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.ExtendedProtection.PolicyEnforcement Always = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" />
+      <MemberSignature Language="VB.NET" Value="Always" />
+      <MemberSignature Language="F#" Value="Always = 2" Usage="System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Always" />
+      <MemberSignature Language="C++ CLI" Value="Always" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -47,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Authentication.ExtendedProtection.PolicyEnforcement</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" /> is always enforced. Clients that don’t support extended protection will fail to authenticate.</summary>
       </Docs>
@@ -55,6 +62,9 @@
       <MemberSignature Language="C#" Value="Never" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.ExtendedProtection.PolicyEnforcement Never = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never" />
+      <MemberSignature Language="VB.NET" Value="Never" />
+      <MemberSignature Language="F#" Value="Never = 0" Usage="System.Security.Authentication.ExtendedProtection.PolicyEnforcement.Never" />
+      <MemberSignature Language="C++ CLI" Value="Never" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -73,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Authentication.ExtendedProtection.PolicyEnforcement</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" /> is never enforced and extended protection is disabled.</summary>
       </Docs>
@@ -81,6 +92,9 @@
       <MemberSignature Language="C#" Value="WhenSupported" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.ExtendedProtection.PolicyEnforcement WhenSupported = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported" />
+      <MemberSignature Language="VB.NET" Value="WhenSupported" />
+      <MemberSignature Language="F#" Value="WhenSupported = 1" Usage="System.Security.Authentication.ExtendedProtection.PolicyEnforcement.WhenSupported" />
+      <MemberSignature Language="C++ CLI" Value="WhenSupported" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Security</AssemblyName>
@@ -99,6 +113,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Authentication.ExtendedProtection.PolicyEnforcement</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Security.Authentication.ExtendedProtection.ExtendedProtectionPolicy" /> is enforced only if the client and server supports extended protection.</summary>
       </Docs>

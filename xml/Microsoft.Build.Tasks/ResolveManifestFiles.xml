@@ -1,7 +1,10 @@
-<Type Name="ResolveManifestFiles" FullName="Microsoft.Build.Tasks.ResolveManifestFiles">
+﻿<Type Name="ResolveManifestFiles" FullName="Microsoft.Build.Tasks.ResolveManifestFiles">
   <TypeSignature Language="C#" Value="public sealed class ResolveManifestFiles : Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResolveManifestFiles extends Microsoft.Build.Tasks.TaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.ResolveManifestFiles" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResolveManifestFiles&#xA;Inherits TaskExtension" />
+  <TypeSignature Language="F#" Value="type ResolveManifestFiles = class&#xA;    inherit TaskExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResolveManifestFiles sealed : Microsoft::Build::Tasks::TaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public ResolveManifestFiles ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveManifestFiles.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResolveManifestFiles();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -36,6 +41,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem DeploymentManifestEntryPoint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem DeploymentManifestEntryPoint" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveManifestFiles.DeploymentManifestEntryPoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeploymentManifestEntryPoint As ITaskItem" />
+      <MemberSignature Language="F#" Value="member this.DeploymentManifestEntryPoint : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.ResolveManifestFiles.DeploymentManifestEntryPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ DeploymentManifestEntryPoint { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -62,6 +70,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem EntryPoint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem EntryPoint" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveManifestFiles.EntryPoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property EntryPoint As ITaskItem" />
+      <MemberSignature Language="F#" Value="member this.EntryPoint : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.ResolveManifestFiles.EntryPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ EntryPoint { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -81,6 +92,9 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.ResolveManifestFiles.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="resolveManifestFiles.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -102,6 +116,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ExtraFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ExtraFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveManifestFiles.ExtraFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExtraFiles As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.ExtraFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveManifestFiles.ExtraFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ExtraFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -121,6 +138,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Files { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Files" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveManifestFiles.Files" />
+      <MemberSignature Language="VB.NET" Value="Public Property Files As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.Files : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveManifestFiles.Files" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ Files { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -140,6 +160,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ManagedAssemblies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ManagedAssemblies" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveManifestFiles.ManagedAssemblies" />
+      <MemberSignature Language="VB.NET" Value="Public Property ManagedAssemblies As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.ManagedAssemblies : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveManifestFiles.ManagedAssemblies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ManagedAssemblies { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -159,6 +182,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] NativeAssemblies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] NativeAssemblies" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveManifestFiles.NativeAssemblies" />
+      <MemberSignature Language="VB.NET" Value="Public Property NativeAssemblies As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.NativeAssemblies : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveManifestFiles.NativeAssemblies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ NativeAssemblies { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -178,6 +204,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] OutputAssemblies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] OutputAssemblies" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveManifestFiles.OutputAssemblies" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputAssemblies As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.OutputAssemblies : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveManifestFiles.OutputAssemblies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ OutputAssemblies { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -202,6 +231,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem OutputDeploymentManifestEntryPoint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem OutputDeploymentManifestEntryPoint" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveManifestFiles.OutputDeploymentManifestEntryPoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputDeploymentManifestEntryPoint As ITaskItem" />
+      <MemberSignature Language="F#" Value="member this.OutputDeploymentManifestEntryPoint : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.ResolveManifestFiles.OutputDeploymentManifestEntryPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ OutputDeploymentManifestEntryPoint { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -233,6 +265,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem OutputEntryPoint { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem OutputEntryPoint" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveManifestFiles.OutputEntryPoint" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputEntryPoint As ITaskItem" />
+      <MemberSignature Language="F#" Value="member this.OutputEntryPoint : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.ResolveManifestFiles.OutputEntryPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ OutputEntryPoint { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -257,6 +292,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] OutputFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] OutputFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveManifestFiles.OutputFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property OutputFiles As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.OutputFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveManifestFiles.OutputFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ OutputFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -281,6 +319,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] PublishFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] PublishFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveManifestFiles.PublishFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property PublishFiles As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.PublishFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveManifestFiles.PublishFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ PublishFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -300,6 +341,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] SatelliteAssemblies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] SatelliteAssemblies" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveManifestFiles.SatelliteAssemblies" />
+      <MemberSignature Language="VB.NET" Value="Public Property SatelliteAssemblies As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.SatelliteAssemblies : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.ResolveManifestFiles.SatelliteAssemblies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ SatelliteAssemblies { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -319,6 +363,9 @@
       <MemberSignature Language="C#" Value="public bool SigningManifests { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SigningManifests" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveManifestFiles.SigningManifests" />
+      <MemberSignature Language="VB.NET" Value="Public Property SigningManifests As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SigningManifests : bool with get, set" Usage="Microsoft.Build.Tasks.ResolveManifestFiles.SigningManifests" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SigningManifests { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -338,6 +385,9 @@
       <MemberSignature Language="C#" Value="public string TargetCulture { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetCulture" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveManifestFiles.TargetCulture" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetCulture As String" />
+      <MemberSignature Language="F#" Value="member this.TargetCulture : string with get, set" Usage="Microsoft.Build.Tasks.ResolveManifestFiles.TargetCulture" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetCulture { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -357,6 +407,9 @@
       <MemberSignature Language="C#" Value="public string TargetFrameworkVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetFrameworkVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.ResolveManifestFiles.TargetFrameworkVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetFrameworkVersion As String" />
+      <MemberSignature Language="F#" Value="member this.TargetFrameworkVersion : string with get, set" Usage="Microsoft.Build.Tasks.ResolveManifestFiles.TargetFrameworkVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetFrameworkVersion { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

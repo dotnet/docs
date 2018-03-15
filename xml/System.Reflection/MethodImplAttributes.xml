@@ -1,7 +1,10 @@
-<Type Name="MethodImplAttributes" FullName="System.Reflection.MethodImplAttributes">
+﻿<Type Name="MethodImplAttributes" FullName="System.Reflection.MethodImplAttributes">
   <TypeSignature Language="C#" Value="public enum MethodImplAttributes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed MethodImplAttributes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.MethodImplAttributes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MethodImplAttributes" />
+  <TypeSignature Language="F#" Value="type MethodImplAttributes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MethodImplAttributes" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -84,6 +87,9 @@
       <MemberSignature Language="C#" Value="AggressiveInlining" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes AggressiveInlining = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.AggressiveInlining" />
+      <MemberSignature Language="VB.NET" Value="AggressiveInlining" />
+      <MemberSignature Language="F#" Value="AggressiveInlining = 256" Usage="System.Reflection.MethodImplAttributes.AggressiveInlining" />
+      <MemberSignature Language="C++ CLI" Value="AggressiveInlining" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -110,6 +116,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Specifies that the method should be inlined wherever possible.</summary>
         <forInternalUseOnly />
@@ -119,6 +126,9 @@
       <MemberSignature Language="C#" Value="CodeTypeMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes CodeTypeMask = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.CodeTypeMask" />
+      <MemberSignature Language="VB.NET" Value="CodeTypeMask" />
+      <MemberSignature Language="F#" Value="CodeTypeMask = 3" Usage="System.Reflection.MethodImplAttributes.CodeTypeMask" />
+      <MemberSignature Language="C++ CLI" Value="CodeTypeMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -140,6 +150,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies flags about code type.</summary>
         <forInternalUseOnly />
@@ -149,6 +160,9 @@
       <MemberSignature Language="C#" Value="ForwardRef" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes ForwardRef = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.ForwardRef" />
+      <MemberSignature Language="VB.NET" Value="ForwardRef" />
+      <MemberSignature Language="F#" Value="ForwardRef = 16" Usage="System.Reflection.MethodImplAttributes.ForwardRef" />
+      <MemberSignature Language="C++ CLI" Value="ForwardRef" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -170,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Specifies that the method is not defined.</summary>
         <forInternalUseOnly />
@@ -179,6 +194,9 @@
       <MemberSignature Language="C#" Value="IL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes IL = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.IL" />
+      <MemberSignature Language="VB.NET" Value="IL" />
+      <MemberSignature Language="F#" Value="IL = 0" Usage="System.Reflection.MethodImplAttributes.IL" />
+      <MemberSignature Language="C++ CLI" Value="IL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -200,6 +218,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the method implementation is in Microsoft intermediate language (MSIL).</summary>
         <forInternalUseOnly />
@@ -209,6 +228,9 @@
       <MemberSignature Language="C#" Value="InternalCall" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes InternalCall = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.InternalCall" />
+      <MemberSignature Language="VB.NET" Value="InternalCall" />
+      <MemberSignature Language="F#" Value="InternalCall = 4096" Usage="System.Reflection.MethodImplAttributes.InternalCall" />
+      <MemberSignature Language="C++ CLI" Value="InternalCall" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -230,6 +252,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>Specifies an internal call.</summary>
         <forInternalUseOnly />
@@ -239,6 +262,9 @@
       <MemberSignature Language="C#" Value="Managed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes Managed = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.Managed" />
+      <MemberSignature Language="VB.NET" Value="Managed" />
+      <MemberSignature Language="F#" Value="Managed = 0" Usage="System.Reflection.MethodImplAttributes.Managed" />
+      <MemberSignature Language="C++ CLI" Value="Managed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -260,6 +286,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that the method is implemented in managed code.</summary>
         <forInternalUseOnly />
@@ -269,6 +296,9 @@
       <MemberSignature Language="C#" Value="ManagedMask" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes ManagedMask = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.ManagedMask" />
+      <MemberSignature Language="VB.NET" Value="ManagedMask" />
+      <MemberSignature Language="F#" Value="ManagedMask = 4" Usage="System.Reflection.MethodImplAttributes.ManagedMask" />
+      <MemberSignature Language="C++ CLI" Value="ManagedMask" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -290,6 +320,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies whether the method is implemented in managed or unmanaged code.</summary>
         <forInternalUseOnly />
@@ -299,6 +330,9 @@
       <MemberSignature Language="C#" Value="MaxMethodImplVal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes MaxMethodImplVal = int32(65535)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.MaxMethodImplVal" />
+      <MemberSignature Language="VB.NET" Value="MaxMethodImplVal" />
+      <MemberSignature Language="F#" Value="MaxMethodImplVal = 65535" Usage="System.Reflection.MethodImplAttributes.MaxMethodImplVal" />
+      <MemberSignature Language="C++ CLI" Value="MaxMethodImplVal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -316,6 +350,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>65535</MemberValue>
       <Docs>
         <summary>Specifies a range check value.</summary>
         <forInternalUseOnly />
@@ -325,6 +360,9 @@
       <MemberSignature Language="C#" Value="Native" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes Native = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.Native" />
+      <MemberSignature Language="VB.NET" Value="Native" />
+      <MemberSignature Language="F#" Value="Native = 1" Usage="System.Reflection.MethodImplAttributes.Native" />
+      <MemberSignature Language="C++ CLI" Value="Native" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -346,6 +384,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the method implementation is native.</summary>
         <forInternalUseOnly />
@@ -355,6 +394,9 @@
       <MemberSignature Language="C#" Value="NoInlining" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes NoInlining = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.NoInlining" />
+      <MemberSignature Language="VB.NET" Value="NoInlining" />
+      <MemberSignature Language="F#" Value="NoInlining = 8" Usage="System.Reflection.MethodImplAttributes.NoInlining" />
+      <MemberSignature Language="C++ CLI" Value="NoInlining" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -376,6 +418,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Specifies that the method cannot be inlined.</summary>
         <forInternalUseOnly />
@@ -385,6 +428,9 @@
       <MemberSignature Language="C#" Value="NoOptimization" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes NoOptimization = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.NoOptimization" />
+      <MemberSignature Language="VB.NET" Value="NoOptimization" />
+      <MemberSignature Language="F#" Value="NoOptimization = 64" Usage="System.Reflection.MethodImplAttributes.NoOptimization" />
+      <MemberSignature Language="C++ CLI" Value="NoOptimization" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -406,6 +452,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Specifies that the method is not optimized by the just-in-time (JIT) compiler or by native code generation (see [Ngen.exe](~/docs/framework/tools/ngen-exe-native-image-generator.md)) when debugging possible code generation problems.</summary>
         <forInternalUseOnly />
@@ -415,6 +462,9 @@
       <MemberSignature Language="C#" Value="OPTIL" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes OPTIL = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.OPTIL" />
+      <MemberSignature Language="VB.NET" Value="OPTIL" />
+      <MemberSignature Language="F#" Value="OPTIL = 2" Usage="System.Reflection.MethodImplAttributes.OPTIL" />
+      <MemberSignature Language="C++ CLI" Value="OPTIL" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -436,6 +486,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the method implementation is in Optimized Intermediate Language (OPTIL).</summary>
         <forInternalUseOnly />
@@ -445,6 +496,9 @@
       <MemberSignature Language="C#" Value="PreserveSig" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes PreserveSig = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.PreserveSig" />
+      <MemberSignature Language="VB.NET" Value="PreserveSig" />
+      <MemberSignature Language="F#" Value="PreserveSig = 128" Usage="System.Reflection.MethodImplAttributes.PreserveSig" />
+      <MemberSignature Language="C++ CLI" Value="PreserveSig" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -466,6 +520,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>Specifies that the method signature is exported exactly as declared.</summary>
         <forInternalUseOnly />
@@ -475,6 +530,9 @@
       <MemberSignature Language="C#" Value="Runtime" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes Runtime = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.Runtime" />
+      <MemberSignature Language="VB.NET" Value="Runtime" />
+      <MemberSignature Language="F#" Value="Runtime = 3" Usage="System.Reflection.MethodImplAttributes.Runtime" />
+      <MemberSignature Language="C++ CLI" Value="Runtime" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -496,6 +554,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Specifies that the method implementation is provided by the runtime.</summary>
         <forInternalUseOnly />
@@ -505,6 +564,9 @@
       <MemberSignature Language="C#" Value="Synchronized" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes Synchronized = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.Synchronized" />
+      <MemberSignature Language="VB.NET" Value="Synchronized" />
+      <MemberSignature Language="F#" Value="Synchronized = 32" Usage="System.Reflection.MethodImplAttributes.Synchronized" />
+      <MemberSignature Language="C++ CLI" Value="Synchronized" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -526,6 +588,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Specifies that the method is single-threaded through the body. Static methods (<see langword="Shared" /> in Visual Basic) lock on the type, whereas instance methods lock on the instance. You can also use the C# [lock statement](~/docs/csharp/language-reference/keywords/lock-statement.md) or the Visual Basic [SyncLock statement](~/docs/visual-basic/language-reference/statements/synclock-statement.md) for this purpose.</summary>
         <forInternalUseOnly />
@@ -535,6 +598,9 @@
       <MemberSignature Language="C#" Value="Unmanaged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Reflection.MethodImplAttributes Unmanaged = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Reflection.MethodImplAttributes.Unmanaged" />
+      <MemberSignature Language="VB.NET" Value="Unmanaged" />
+      <MemberSignature Language="F#" Value="Unmanaged = 4" Usage="System.Reflection.MethodImplAttributes.Unmanaged" />
+      <MemberSignature Language="C++ CLI" Value="Unmanaged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Primitives</AssemblyName>
@@ -556,6 +622,7 @@
       <ReturnValue>
         <ReturnType>System.Reflection.MethodImplAttributes</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that the method is implemented in unmanaged code.</summary>
         <forInternalUseOnly />

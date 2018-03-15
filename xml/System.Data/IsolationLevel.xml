@@ -1,7 +1,10 @@
-<Type Name="IsolationLevel" FullName="System.Data.IsolationLevel">
+﻿<Type Name="IsolationLevel" FullName="System.Data.IsolationLevel">
   <TypeSignature Language="C#" Value="public enum IsolationLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed IsolationLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.IsolationLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum IsolationLevel" />
+  <TypeSignature Language="F#" Value="type IsolationLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class IsolationLevel" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -137,6 +140,9 @@
       <MemberSignature Language="C#" Value="Chaos" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.IsolationLevel Chaos = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.Chaos" />
+      <MemberSignature Language="VB.NET" Value="Chaos" />
+      <MemberSignature Language="F#" Value="Chaos = 16" Usage="System.Data.IsolationLevel.Chaos" />
+      <MemberSignature Language="C++ CLI" Value="Chaos" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -155,6 +161,7 @@
       <ReturnValue>
         <ReturnType>System.Data.IsolationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The pending changes from more highly isolated transactions cannot be overwritten.</summary>
       </Docs>
@@ -163,6 +170,9 @@
       <MemberSignature Language="C#" Value="ReadCommitted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.IsolationLevel ReadCommitted = int32(4096)" />
       <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.ReadCommitted" />
+      <MemberSignature Language="VB.NET" Value="ReadCommitted" />
+      <MemberSignature Language="F#" Value="ReadCommitted = 4096" Usage="System.Data.IsolationLevel.ReadCommitted" />
+      <MemberSignature Language="C++ CLI" Value="ReadCommitted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -181,6 +191,7 @@
       <ReturnValue>
         <ReturnType>System.Data.IsolationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>4096</MemberValue>
       <Docs>
         <summary>Shared locks are held while the data is being read to avoid dirty reads, but the data can be changed before the end of the transaction, resulting in non-repeatable reads or phantom data.</summary>
       </Docs>
@@ -189,6 +200,9 @@
       <MemberSignature Language="C#" Value="ReadUncommitted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.IsolationLevel ReadUncommitted = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.ReadUncommitted" />
+      <MemberSignature Language="VB.NET" Value="ReadUncommitted" />
+      <MemberSignature Language="F#" Value="ReadUncommitted = 256" Usage="System.Data.IsolationLevel.ReadUncommitted" />
+      <MemberSignature Language="C++ CLI" Value="ReadUncommitted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -207,6 +221,7 @@
       <ReturnValue>
         <ReturnType>System.Data.IsolationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>A dirty read is possible, meaning that no shared locks are issued and no exclusive locks are honored.</summary>
       </Docs>
@@ -215,6 +230,9 @@
       <MemberSignature Language="C#" Value="RepeatableRead" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.IsolationLevel RepeatableRead = int32(65536)" />
       <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.RepeatableRead" />
+      <MemberSignature Language="VB.NET" Value="RepeatableRead" />
+      <MemberSignature Language="F#" Value="RepeatableRead = 65536" Usage="System.Data.IsolationLevel.RepeatableRead" />
+      <MemberSignature Language="C++ CLI" Value="RepeatableRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -233,6 +251,7 @@
       <ReturnValue>
         <ReturnType>System.Data.IsolationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>65536</MemberValue>
       <Docs>
         <summary>Locks are placed on all data that is used in a query, preventing other users from updating the data. Prevents non-repeatable reads but phantom rows are still possible.</summary>
       </Docs>
@@ -241,6 +260,9 @@
       <MemberSignature Language="C#" Value="Serializable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.IsolationLevel Serializable = int32(1048576)" />
       <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.Serializable" />
+      <MemberSignature Language="VB.NET" Value="Serializable" />
+      <MemberSignature Language="F#" Value="Serializable = 1048576" Usage="System.Data.IsolationLevel.Serializable" />
+      <MemberSignature Language="C++ CLI" Value="Serializable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -259,6 +281,7 @@
       <ReturnValue>
         <ReturnType>System.Data.IsolationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>1048576</MemberValue>
       <Docs>
         <summary>A range lock is placed on the <see cref="T:System.Data.DataSet" />, preventing other users from updating or inserting rows into the dataset until the transaction is complete.</summary>
       </Docs>
@@ -267,6 +290,9 @@
       <MemberSignature Language="C#" Value="Snapshot" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.IsolationLevel Snapshot = int32(16777216)" />
       <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.Snapshot" />
+      <MemberSignature Language="VB.NET" Value="Snapshot" />
+      <MemberSignature Language="F#" Value="Snapshot = 16777216" Usage="System.Data.IsolationLevel.Snapshot" />
+      <MemberSignature Language="C++ CLI" Value="Snapshot" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -285,6 +311,7 @@
       <ReturnValue>
         <ReturnType>System.Data.IsolationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>16777216</MemberValue>
       <Docs>
         <summary>Reduces blocking by storing a version of data that one application can read while another is modifying the same data. Indicates that from one transaction you cannot see changes made in other transactions, even if you requery.</summary>
       </Docs>
@@ -293,6 +320,9 @@
       <MemberSignature Language="C#" Value="Unspecified" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.IsolationLevel Unspecified = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.IsolationLevel.Unspecified" />
+      <MemberSignature Language="VB.NET" Value="Unspecified" />
+      <MemberSignature Language="F#" Value="Unspecified = -1" Usage="System.Data.IsolationLevel.Unspecified" />
+      <MemberSignature Language="C++ CLI" Value="Unspecified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -311,6 +341,7 @@
       <ReturnValue>
         <ReturnType>System.Data.IsolationLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>A different isolation level than the one specified is being used, but the level cannot be determined.</summary>
         <remarks>

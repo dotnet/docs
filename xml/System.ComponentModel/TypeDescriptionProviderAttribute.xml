@@ -1,7 +1,10 @@
-<Type Name="TypeDescriptionProviderAttribute" FullName="System.ComponentModel.TypeDescriptionProviderAttribute">
+﻿<Type Name="TypeDescriptionProviderAttribute" FullName="System.ComponentModel.TypeDescriptionProviderAttribute">
   <TypeSignature Language="C#" Value="public sealed class TypeDescriptionProviderAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TypeDescriptionProviderAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.TypeDescriptionProviderAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TypeDescriptionProviderAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type TypeDescriptionProviderAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeDescriptionProviderAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -51,10 +54,23 @@
     <altmember cref="T:System.ComponentModel.ICustomTypeDescriptor" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.TypeDescriptionProviderAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TypeDescriptionProviderAttribute (string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProviderAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.TypeDescriptionProviderAttribute : string -&gt; System.ComponentModel.TypeDescriptionProviderAttribute" Usage="new System.ComponentModel.TypeDescriptionProviderAttribute typeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeDescriptionProviderAttribute(System::String ^ typeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -94,6 +110,8 @@
       <MemberSignature Language="C#" Value="public TypeDescriptionProviderAttribute (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.TypeDescriptionProviderAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.TypeDescriptionProviderAttribute : Type -&gt; System.ComponentModel.TypeDescriptionProviderAttribute" Usage="new System.ComponentModel.TypeDescriptionProviderAttribute type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeDescriptionProviderAttribute(Type ^ type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -133,6 +151,9 @@
       <MemberSignature Language="C#" Value="public string TypeName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.TypeDescriptionProviderAttribute.TypeName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeName As String" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string" Usage="System.ComponentModel.TypeDescriptionProviderAttribute.TypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
@@ -166,15 +187,5 @@
         <altmember cref="T:System.ComponentModel.TypeDescriptionProvider" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.TypeDescriptionProviderAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="TransferSession" FullName="System.ServiceModel.Channels.TransferSession">
+﻿<Type Name="TransferSession" FullName="System.ServiceModel.Channels.TransferSession">
   <TypeSignature Language="C#" Value="public enum TransferSession" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TransferSession extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Channels.TransferSession" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TransferSession" />
+  <TypeSignature Language="F#" Value="type TransferSession = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TransferSession" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.TransferSession None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.TransferSession.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.ServiceModel.Channels.TransferSession.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.TransferSession</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that a session is not required to interact with the services on this contract.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="Ordered" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.TransferSession Ordered = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.TransferSession.Ordered" />
+      <MemberSignature Language="VB.NET" Value="Ordered" />
+      <MemberSignature Language="F#" Value="Ordered = 1" Usage="System.ServiceModel.Channels.TransferSession.Ordered" />
+      <MemberSignature Language="C++ CLI" Value="Ordered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -60,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.TransferSession</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that a session with ordered message delivery guarantees is required to interact with the services on this contract.</summary>
       </Docs>
@@ -68,6 +79,9 @@
       <MemberSignature Language="C#" Value="Unordered" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ServiceModel.Channels.TransferSession Unordered = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ServiceModel.Channels.TransferSession.Unordered" />
+      <MemberSignature Language="VB.NET" Value="Unordered" />
+      <MemberSignature Language="F#" Value="Unordered = 2" Usage="System.ServiceModel.Channels.TransferSession.Unordered" />
+      <MemberSignature Language="C++ CLI" Value="Unordered" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -77,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.ServiceModel.Channels.TransferSession</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that a session with unordered message delivery guarantees is sufficient to interact with the services on this contract.</summary>
       </Docs>

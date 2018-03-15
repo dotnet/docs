@@ -1,7 +1,10 @@
-<Type Name="SemanticValue" FullName="System.Speech.Recognition.SemanticValue">
+﻿<Type Name="SemanticValue" FullName="System.Speech.Recognition.SemanticValue">
   <TypeSignature Language="C#" Value="public sealed class SemanticValue : System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,System.Speech.Recognition.SemanticValue&gt;&gt;, System.Collections.Generic.IDictionary&lt;string,System.Speech.Recognition.SemanticValue&gt;, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,System.Speech.Recognition.SemanticValue&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SemanticValue extends System.Object implements class System.Collections.Generic.ICollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Speech.Recognition.SemanticValue&gt;&gt;, class System.Collections.Generic.IDictionary`2&lt;string, class System.Speech.Recognition.SemanticValue&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Speech.Recognition.SemanticValue&gt;&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SemanticValue" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SemanticValue&#xA;Implements ICollection(Of KeyValuePair(Of String, SemanticValue)), IDictionary(Of String, SemanticValue), IEnumerable(Of KeyValuePair(Of String, SemanticValue))" />
+  <TypeSignature Language="F#" Value="type SemanticValue = class&#xA;    interface IDictionary&lt;string, SemanticValue&gt;&#xA;    interface ICollection&lt;KeyValuePair&lt;string, SemanticValue&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;string, SemanticValue&gt;&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SemanticValue sealed : System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt;&gt;, System::Collections::Generic::IDictionary&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt;&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -210,6 +213,9 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="public SemanticValue (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Object)" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SemanticValue : obj -&gt; System.Speech.Recognition.SemanticValue" Usage="new System.Speech.Recognition.SemanticValue value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SemanticValue(System::Object ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -241,6 +247,9 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="public SemanticValue (string keyName, object value, float confidence);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string keyName, object value, float32 confidence) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.#ctor(System.String,System.Object,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (keyName As String, value As Object, confidence As Single)" />
+      <MemberSignature Language="F#" Value="new System.Speech.Recognition.SemanticValue : string * obj * single -&gt; System.Speech.Recognition.SemanticValue" Usage="new System.Speech.Recognition.SemanticValue (keyName, value, confidence)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SemanticValue(System::String ^ keyName, System::Object ^ value, float confidence);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -274,6 +283,9 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="public float Confidence { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float32 Confidence" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SemanticValue.Confidence" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Confidence As Single" />
+      <MemberSignature Language="F#" Value="member this.Confidence : single" Usage="System.Speech.Recognition.SemanticValue.Confidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float Confidence { float get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -336,7 +348,13 @@ internal static void CreateSemanticsTreeNodes(
       <MemberSignature Language="C#" Value="public bool Contains (System.Collections.Generic.KeyValuePair&lt;string,System.Speech.Recognition.SemanticValue&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Speech.Recognition.SemanticValue&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.Contains(System.Collections.Generic.KeyValuePair{System.String,System.Speech.Recognition.SemanticValue})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (item As KeyValuePair(Of String, SemanticValue)) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Collections.Generic.KeyValuePair&lt;string, System.Speech.Recognition.SemanticValue&gt; -&gt; bool&#xA;override this.Contains : System.Collections.Generic.KeyValuePair&lt;string, System.Speech.Recognition.SemanticValue&gt; -&gt; bool" Usage="semanticValue.Contains item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt; item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -358,7 +376,13 @@ internal static void CreateSemanticsTreeNodes(
       <MemberSignature Language="C#" Value="public bool ContainsKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.ContainsKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool&#xA;override this.ContainsKey : string -&gt; bool" Usage="semanticValue.ContainsKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ key);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -495,7 +519,13 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SemanticValue.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Speech.Recognition.SemanticValue.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -629,6 +659,9 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="semanticValue.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -652,6 +685,9 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="semanticValue.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -671,7 +707,13 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="public System.Speech.Recognition.SemanticValue this[string key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Speech.Recognition.SemanticValue Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SemanticValue.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As String) As SemanticValue" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Speech.Recognition.SemanticValue with get, set" Usage="System.Speech.Recognition.SemanticValue.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Speech::Recognition::SemanticValue ^ default[System::String ^] { System::Speech::Recognition::SemanticValue ^ get(System::String ^ key); void set(System::String ^ key, System::Speech::Recognition::SemanticValue ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -815,7 +857,12 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="void ICollection&lt;KeyValuePair&lt;string,SemanticValue&gt;&gt;.Add (System.Collections.Generic.KeyValuePair&lt;string,System.Speech.Recognition.SemanticValue&gt; key);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.Add(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Speech.Recognition.SemanticValue&gt; key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Speech#Recognition#SemanticValue&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{System.String,System.Speech.Recognition.SemanticValue})" />
+      <MemberSignature Language="VB.NET" Value="Sub Add (key As KeyValuePair(Of String, SemanticValue)) Implements ICollection(Of KeyValuePair(Of String, SemanticValue)).Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.Add(System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt; key) = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt;&gt;::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -836,7 +883,12 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="void ICollection&lt;KeyValuePair&lt;string,SemanticValue&gt;&gt;.Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Speech#Recognition#SemanticValue&gt;&gt;#Clear" />
+      <MemberSignature Language="VB.NET" Value="Sub Clear () Implements ICollection(Of KeyValuePair(Of String, SemanticValue)).Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.Clear() = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt;&gt;::Clear;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -854,6 +906,8 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="void ICollection&lt;KeyValuePair&lt;string,SemanticValue&gt;&gt;.CopyTo (System.Collections.Generic.KeyValuePair&lt;string,System.Speech.Recognition.SemanticValue&gt;[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.CopyTo(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Speech.Recognition.SemanticValue&gt;[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Speech#Recognition#SemanticValue&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Speech.Recognition.SemanticValue}[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub CopyTo (array As KeyValuePair(Of String, SemanticValue)(), index As Integer) Implements ICollection(Of KeyValuePair(Of String, SemanticValue)).CopyTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.CopyTo(cli::array &lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt;&gt; ^ array, int index) = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt;&gt;::CopyTo;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -877,7 +931,13 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Speech#Recognition#SemanticValue&gt;&gt;#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of String, SemanticValue)).IsReadOnly" />
+      <MemberSignature Language="F#" Usage="System.Speech.Recognition.SemanticValue.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -895,7 +955,12 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="bool ICollection&lt;KeyValuePair&lt;string,SemanticValue&gt;&gt;.Remove (System.Collections.Generic.KeyValuePair&lt;string,System.Speech.Recognition.SemanticValue&gt; key);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.Remove(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Speech.Recognition.SemanticValue&gt; key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Speech#Recognition#SemanticValue&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Speech.Recognition.SemanticValue})" />
+      <MemberSignature Language="VB.NET" Value="Function Remove (key As KeyValuePair(Of String, SemanticValue)) As Boolean Implements ICollection(Of KeyValuePair(Of String, SemanticValue)).Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.Remove(System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt; key) = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt;&gt;::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -917,7 +982,12 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="void IDictionary&lt;string,SemanticValue&gt;.Add (string key, System.Speech.Recognition.SemanticValue value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Add(string key, class System.Speech.Recognition.SemanticValue value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary&lt;System#String,System#Speech#Recognition#SemanticValue&gt;#Add(System.String,System.Speech.Recognition.SemanticValue)" />
+      <MemberSignature Language="VB.NET" Value="Sub Add (key As String, value As SemanticValue) Implements IDictionary(Of String, SemanticValue).Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Add(System::String ^ key, System::Speech::Recognition::SemanticValue ^ value) = System::Collections::Generic::IDictionary&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt;::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Add(`0,`1)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -940,7 +1010,13 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="System.Collections.Generic.ICollection&lt;string&gt; System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;string&gt; System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary&lt;System#String,System#Speech#Recognition#SemanticValue&gt;#Keys" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection(Of String) Implements IDictionary(Of String, SemanticValue).Keys" />
+      <MemberSignature Language="F#" Usage="System.Speech.Recognition.SemanticValue.System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Keys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Keys { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -958,7 +1034,12 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="bool IDictionary&lt;string,SemanticValue&gt;.Remove (string key);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Remove(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary&lt;System#String,System#Speech#Recognition#SemanticValue&gt;#Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function Remove (key As String) As Boolean Implements IDictionary(Of String, SemanticValue).Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Remove(System::String ^ key) = System::Collections::Generic::IDictionary&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt;::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -980,6 +1061,8 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="bool IDictionary&lt;string,SemanticValue&gt;.TryGetValue (string key, out System.Speech.Recognition.SemanticValue value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.TryGetValue(string key, [out] class System.Speech.Recognition.SemanticValue&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary&lt;System#String,System#Speech#Recognition#SemanticValue&gt;#TryGetValue(System.String,System.Speech.Recognition.SemanticValue@)" />
+      <MemberSignature Language="VB.NET" Value="Function TryGetValue (key As String, ByRef value As SemanticValue) As Boolean Implements IDictionary(Of String, SemanticValue).TryGetValue" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.TryGetValue(System::String ^ key, [Runtime::InteropServices::Out] System::Speech::Recognition::SemanticValue ^ % value) = System::Collections::Generic::IDictionary&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt;::TryGetValue;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -1004,7 +1087,13 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="System.Collections.Generic.ICollection&lt;System.Speech.Recognition.SemanticValue&gt; System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Speech.Recognition.SemanticValue&gt; System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Values" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IDictionary&lt;System#String,System#Speech#Recognition#SemanticValue&gt;#Values" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection(Of SemanticValue) Implements IDictionary(Of String, SemanticValue).Values" />
+      <MemberSignature Language="F#" Usage="System.Speech.Recognition.SemanticValue.System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Values" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::Speech::Recognition::SemanticValue ^&gt; ^ System.Collections.Generic.IDictionary&lt;System.String,System.Speech.Recognition.SemanticValue&gt;.Values { System::Collections::Generic::ICollection&lt;System::Speech::Recognition::SemanticValue ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1022,7 +1111,12 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string,System.Speech.Recognition.SemanticValue&gt;&gt; IEnumerable&lt;KeyValuePair&lt;string,SemanticValue&gt;&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Speech.Recognition.SemanticValue&gt;&gt; System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;System#String,System#Speech#Recognition#SemanticValue&gt;&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of String, SemanticValue)) Implements IEnumerable(Of KeyValuePair(Of String, SemanticValue)).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt;&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Speech.Recognition.SemanticValue&gt;&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Speech::Recognition::SemanticValue ^&gt;&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1041,7 +1135,12 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Speech.Recognition.SemanticValue.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1060,6 +1159,9 @@ newGrammar.SpeechRecognized +=
       <MemberSignature Language="C#" Value="public object Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Speech.Recognition.SemanticValue.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Speech.Recognition.SemanticValue.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>

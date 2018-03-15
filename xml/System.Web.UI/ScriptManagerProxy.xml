@@ -1,7 +1,10 @@
-<Type Name="ScriptManagerProxy" FullName="System.Web.UI.ScriptManagerProxy">
+﻿<Type Name="ScriptManagerProxy" FullName="System.Web.UI.ScriptManagerProxy">
   <TypeSignature Language="C#" Value="public class ScriptManagerProxy : System.Web.UI.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScriptManagerProxy extends System.Web.UI.Control" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ScriptManagerProxy" />
+  <TypeSignature Language="VB.NET" Value="Public Class ScriptManagerProxy&#xA;Inherits Control" />
+  <TypeSignature Language="F#" Value="type ScriptManagerProxy = class&#xA;    inherit Control&#xA;    interface IControl&#xA;    interface IClientUrlResolver" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ScriptManagerProxy : System::Web::UI::Control" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,6 +114,8 @@
       <MemberSignature Language="C#" Value="public ScriptManagerProxy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManagerProxy.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScriptManagerProxy();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -138,6 +143,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.AuthenticationServiceManager AuthenticationService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.AuthenticationServiceManager AuthenticationService" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.AuthenticationService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AuthenticationService As AuthenticationServiceManager" />
+      <MemberSignature Language="F#" Value="member this.AuthenticationService : System.Web.UI.AuthenticationServiceManager" Usage="System.Web.UI.ScriptManagerProxy.AuthenticationService" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::AuthenticationServiceManager ^ AuthenticationService { System::Web::UI::AuthenticationServiceManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -151,13 +159,13 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -182,6 +190,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.CompositeScriptReference CompositeScript { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.CompositeScriptReference CompositeScript" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.CompositeScript" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CompositeScript As CompositeScriptReference" />
+      <MemberSignature Language="F#" Value="member this.CompositeScript : System.Web.UI.CompositeScriptReference" Usage="System.Web.UI.ScriptManagerProxy.CompositeScript" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::CompositeScriptReference ^ CompositeScript { System::Web::UI::CompositeScriptReference ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -195,13 +206,13 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -217,6 +228,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.HistoryEventArgs&gt; Navigate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.HistoryEventArgs&gt; Navigate" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.ScriptManagerProxy.Navigate" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Navigate As EventHandler(Of HistoryEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.Navigate : EventHandler&lt;System.Web.UI.HistoryEventArgs&gt; " Usage="member this.Navigate : System.EventHandler&lt;System.Web.UI.HistoryEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::HistoryEventArgs ^&gt; ^ Navigate;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -243,9 +257,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnInit">
-      <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ScriptManagerProxy.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="scriptManagerProxy.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -267,6 +284,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ProfileServiceManager ProfileService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ProfileServiceManager ProfileService" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.ProfileService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProfileService As ProfileServiceManager" />
+      <MemberSignature Language="F#" Value="member this.ProfileService : System.Web.UI.ProfileServiceManager" Usage="System.Web.UI.ScriptManagerProxy.ProfileService" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ProfileServiceManager ^ ProfileService { System::Web::UI::ProfileServiceManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -280,13 +300,13 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -311,6 +331,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.RoleServiceManager RoleService { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.RoleServiceManager RoleService" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.RoleService" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RoleService As RoleServiceManager" />
+      <MemberSignature Language="F#" Value="member this.RoleService : System.Web.UI.RoleServiceManager" Usage="System.Web.UI.ScriptManagerProxy.RoleService" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::RoleServiceManager ^ RoleService { System::Web::UI::RoleServiceManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -324,13 +347,13 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -356,6 +379,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ScriptReferenceCollection Scripts { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ScriptReferenceCollection Scripts" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.Scripts" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Scripts As ScriptReferenceCollection" />
+      <MemberSignature Language="F#" Value="member this.Scripts : System.Web.UI.ScriptReferenceCollection" Usage="System.Web.UI.ScriptManagerProxy.Scripts" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ScriptReferenceCollection ^ Scripts { System::Web::UI::ScriptReferenceCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -375,7 +401,7 @@
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -403,6 +429,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ServiceReferenceCollection Services { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.ServiceReferenceCollection Services" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.Services" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Services As ServiceReferenceCollection" />
+      <MemberSignature Language="F#" Value="member this.Services : System.Web.UI.ServiceReferenceCollection" Usage="System.Web.UI.ScriptManagerProxy.Services" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::ServiceReferenceCollection ^ Services { System::Web::UI::ServiceReferenceCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -422,7 +451,7 @@
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -449,6 +478,9 @@
       <MemberSignature Language="C#" Value="public override bool Visible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ScriptManagerProxy.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.ScriptManagerProxy.Visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -459,7 +491,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>

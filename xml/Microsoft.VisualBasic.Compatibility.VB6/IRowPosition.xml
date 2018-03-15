@@ -1,7 +1,10 @@
-<Type Name="IRowPosition" FullName="Microsoft.VisualBasic.Compatibility.VB6.IRowPosition">
+﻿<Type Name="IRowPosition" FullName="Microsoft.VisualBasic.Compatibility.VB6.IRowPosition">
   <TypeSignature Language="C#" Value="public interface IRowPosition" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRowPosition" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.Compatibility.VB6.IRowPosition" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRowPosition" />
+  <TypeSignature Language="F#" Value="type IRowPosition = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRowPosition" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -15,7 +18,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("0C733A94-2A1C-11CE-ADE5-00AA0044773D")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public void ClearRowPosition ();" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void ClearRowPosition() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowPosition.ClearRowPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearRowPosition ()" />
+      <MemberSignature Language="F#" Value="abstract member ClearRowPosition : unit -&gt; unit" Usage="iRowPosition.ClearRowPosition " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearRowPosition();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -59,6 +65,9 @@
       <MemberSignature Language="C#" Value="public void GetRowPosition (out int hChapter, out int hRow, out int dbPositionFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetRowPosition([out] int32&amp; hChapter, [out] int32&amp; hRow, [out] int32&amp; dbPositionFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowPosition.GetRowPosition(System.Int32@,System.Int32@,System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetRowPosition (ByRef hChapter As Integer, ByRef hRow As Integer, ByRef dbPositionFlags As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member GetRowPosition :  *  *  -&gt; unit" Usage="iRowPosition.GetRowPosition (hChapter, hRow, dbPositionFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRowPosition([Runtime::InteropServices::Out] int % hChapter, [Runtime::InteropServices::Out] int % hRow, [Runtime::InteropServices::Out] int % dbPositionFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -91,6 +100,9 @@
       <MemberSignature Language="C#" Value="public void GetRowset (ref Guid iid, out object rowset);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void GetRowset([in]valuetype System.Guid&amp; iid, [out] object&amp; rowset) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowPosition.GetRowset(System.Guid@,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetRowset (ByRef iid As Guid, ByRef rowset As Object)" />
+      <MemberSignature Language="F#" Value="abstract member GetRowset :  *  -&gt; unit" Usage="iRowPosition.GetRowset (iid, rowset)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetRowset(Guid % iid, [Runtime::InteropServices::Out] System::Object ^ % rowset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -121,6 +133,9 @@
       <MemberSignature Language="C#" Value="public void Initialize (object rowset);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void Initialize([in]object rowset) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowPosition.Initialize(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (rowset As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : obj -&gt; unit" Usage="iRowPosition.Initialize rowset" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(System::Object ^ rowset);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>
@@ -149,6 +164,9 @@
       <MemberSignature Language="C#" Value="public void SetRowPosition (int hChapter, int hRow, int dbPositionFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public newslot virtual instance void SetRowPosition([in]int32 hChapter, [in]int32 hRow, [in]int32 dbPositionFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.Compatibility.VB6.IRowPosition.SetRowPosition(System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetRowPosition (hChapter As Integer, hRow As Integer, dbPositionFlags As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member SetRowPosition : int * int * int -&gt; unit" Usage="iRowPosition.SetRowPosition (hChapter, hRow, dbPositionFlags)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetRowPosition(int hChapter, int hRow, int dbPositionFlags);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic.Compatibility.Data</AssemblyName>

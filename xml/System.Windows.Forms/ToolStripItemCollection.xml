@@ -1,7 +1,10 @@
-<Type Name="ToolStripItemCollection" FullName="System.Windows.Forms.ToolStripItemCollection">
+﻿<Type Name="ToolStripItemCollection" FullName="System.Windows.Forms.ToolStripItemCollection">
   <TypeSignature Language="C#" Value="public class ToolStripItemCollection : System.Windows.Forms.Layout.ArrangedElementCollection, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripItemCollection extends System.Windows.Forms.Layout.ArrangedElementCollection implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolStripItemCollection&#xA;Inherits ArrangedElementCollection&#xA;Implements IList" />
+  <TypeSignature Language="F#" Value="type ToolStripItemCollection = class&#xA;    inherit ArrangedElementCollection&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolStripItemCollection : System::Windows::Forms::Layout::ArrangedElementCollection, System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +43,9 @@
       <MemberSignature Language="C#" Value="public ToolStripItemCollection (System.Windows.Forms.ToolStrip owner, System.Windows.Forms.ToolStripItem[] value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ToolStrip owner, class System.Windows.Forms.ToolStripItem[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.#ctor(System.Windows.Forms.ToolStrip,System.Windows.Forms.ToolStripItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ToolStrip, value As ToolStripItem())" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ToolStripItemCollection : System.Windows.Forms.ToolStrip * System.Windows.Forms.ToolStripItem[] -&gt; System.Windows.Forms.ToolStripItemCollection" Usage="new System.Windows.Forms.ToolStripItemCollection (owner, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolStripItemCollection(System::Windows::Forms::ToolStrip ^ owner, cli::array &lt;System::Windows::Forms::ToolStripItem ^&gt; ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -57,10 +63,21 @@
         <exception cref="T:System.ArgumentNullException">The <paramref name="owner" /> parameter is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a <see cref="T:System.Windows.Forms.ToolStripItem" /> to the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripItem Add (System.Drawing.Image image);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ToolStripItem Add(class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.Add(System.Drawing.Image)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Drawing.Image -&gt; System.Windows.Forms.ToolStripItem" Usage="toolStripItemCollection.Add image" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ToolStripItem ^ Add(System::Drawing::Image ^ image);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +100,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripItem Add (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ToolStripItem Add(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.Add(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (text As String) As ToolStripItem" />
+      <MemberSignature Language="F#" Value="member this.Add : string -&gt; System.Windows.Forms.ToolStripItem" Usage="toolStripItemCollection.Add text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ToolStripItem ^ Add(System::String ^ text);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,6 +125,9 @@
       <MemberSignature Language="C#" Value="public int Add (System.Windows.Forms.ToolStripItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Windows.Forms.ToolStripItem value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.Add(System.Windows.Forms.ToolStripItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (value As ToolStripItem) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Forms.ToolStripItem -&gt; int" Usage="toolStripItemCollection.Add value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Windows::Forms::ToolStripItem ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -128,6 +151,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripItem Add (string text, System.Drawing.Image image);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ToolStripItem Add(string text, class System.Drawing.Image image) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.Add(System.String,System.Drawing.Image)" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Drawing.Image -&gt; System.Windows.Forms.ToolStripItem" Usage="toolStripItemCollection.Add (text, image)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ToolStripItem ^ Add(System::String ^ text, System::Drawing::Image ^ image);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -152,6 +177,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripItem Add (string text, System.Drawing.Image image, EventHandler onClick);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ToolStripItem Add(string text, class System.Drawing.Image image, class System.EventHandler onClick) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.Add(System.String,System.Drawing.Image,System.EventHandler)" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Drawing.Image * EventHandler -&gt; System.Windows.Forms.ToolStripItem" Usage="toolStripItemCollection.Add (text, image, onClick)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Forms::ToolStripItem ^ Add(System::String ^ text, System::Drawing::Image ^ image, EventHandler ^ onClick);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -174,10 +201,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds <see cref="T:System.Windows.Forms.ToolStripItem" /> controls to the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public void AddRange (System.Windows.Forms.ToolStripItem[] toolStripItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Windows.Forms.ToolStripItem[] toolStripItems) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.AddRange(System.Windows.Forms.ToolStripItem[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (toolStripItems As ToolStripItem())" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Windows.Forms.ToolStripItem[] -&gt; unit" Usage="toolStripItemCollection.AddRange toolStripItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Windows::Forms::ToolStripItem ^&gt; ^ toolStripItems);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -208,6 +247,9 @@
       <MemberSignature Language="C#" Value="public void AddRange (System.Windows.Forms.ToolStripItemCollection toolStripItems);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Windows.Forms.ToolStripItemCollection toolStripItems) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.AddRange(System.Windows.Forms.ToolStripItemCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (toolStripItems As ToolStripItemCollection)" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Windows.Forms.ToolStripItemCollection -&gt; unit" Usage="toolStripItemCollection.AddRange toolStripItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::Windows::Forms::ToolStripItemCollection ^ toolStripItems);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -240,7 +282,13 @@
       <MemberSignature Language="C#" Value="public virtual void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="toolStripItemCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -273,6 +321,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Windows.Forms.ToolStripItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Windows.Forms.ToolStripItem value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.Contains(System.Windows.Forms.ToolStripItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (value As ToolStripItem) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Forms.ToolStripItem -&gt; bool" Usage="toolStripItemCollection.Contains value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Forms::ToolStripItem ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -296,6 +347,9 @@
       <MemberSignature Language="C#" Value="public virtual bool ContainsKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.ContainsKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ContainsKey (key As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : string -&gt; bool&#xA;override this.ContainsKey : string -&gt; bool" Usage="toolStripItemCollection.ContainsKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -326,6 +380,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Windows.Forms.ToolStripItem[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Windows.Forms.ToolStripItem[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.CopyTo(System.Windows.Forms.ToolStripItem[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ToolStripItem(), index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Windows.Forms.ToolStripItem[] * int -&gt; unit" Usage="toolStripItemCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Windows::Forms::ToolStripItem ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -349,6 +406,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ToolStripItem[] Find (string key, bool searchAllChildren);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Forms.ToolStripItem[] Find(string key, bool searchAllChildren) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.Find(System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find (key As String, searchAllChildren As Boolean) As ToolStripItem()" />
+      <MemberSignature Language="F#" Value="member this.Find : string * bool -&gt; System.Windows.Forms.ToolStripItem[]" Usage="toolStripItemCollection.Find (key, searchAllChildren)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Windows::Forms::ToolStripItem ^&gt; ^ Find(System::String ^ key, bool searchAllChildren);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -375,6 +435,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Windows.Forms.ToolStripItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Windows.Forms.ToolStripItem value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.IndexOf(System.Windows.Forms.ToolStripItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (value As ToolStripItem) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Forms.ToolStripItem -&gt; int" Usage="toolStripItemCollection.IndexOf value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Forms::ToolStripItem ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -397,6 +460,9 @@
       <MemberSignature Language="C#" Value="public virtual int IndexOfKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexOfKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.IndexOfKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function IndexOfKey (key As String) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member IndexOfKey : string -&gt; int&#xA;override this.IndexOfKey : string -&gt; int" Usage="toolStripItemCollection.IndexOfKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int IndexOfKey(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -428,6 +494,9 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Windows.Forms.ToolStripItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Windows.Forms.ToolStripItem value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.Insert(System.Int32,System.Windows.Forms.ToolStripItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, value As ToolStripItem)" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Windows.Forms.ToolStripItem -&gt; unit" Usage="toolStripItemCollection.Insert (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Windows::Forms::ToolStripItem ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -452,7 +521,13 @@
       <MemberSignature Language="C#" Value="public override bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Forms.ToolStripItemCollection.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -467,10 +542,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the item at the specified index.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ToolStripItem this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripItem Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(index As Integer) As ToolStripItem" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.ToolStripItem" Usage="System.Windows.Forms.ToolStripItemCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ToolStripItem ^ default[int] { System::Windows::Forms::ToolStripItem ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -493,6 +580,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ToolStripItem this[string key] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ToolStripItem Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(key As String) As ToolStripItem" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.ToolStripItem" Usage="System.Windows.Forms.ToolStripItemCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ToolStripItem ^ default[System::String ^] { System::Windows::Forms::ToolStripItem ^ get(System::String ^ key); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -515,6 +605,9 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Windows.Forms.ToolStripItem value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Windows.Forms.ToolStripItem value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.Remove(System.Windows.Forms.ToolStripItem)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (value As ToolStripItem)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Windows.Forms.ToolStripItem -&gt; unit" Usage="toolStripItemCollection.Remove value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Forms::ToolStripItem ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -548,7 +641,13 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="toolStripItemCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -581,6 +680,9 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveByKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveByKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.RemoveByKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveByKey (key As String)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveByKey : string -&gt; unit&#xA;override this.RemoveByKey : string -&gt; unit" Usage="toolStripItemCollection.RemoveByKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveByKey(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -610,7 +712,12 @@
       <MemberSignature Language="C#" Value="int IList.Add (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Add (value As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ value) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -639,7 +746,12 @@
       <MemberSignature Language="C#" Value="void IList.Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.System#Collections#IList#Clear" />
+      <MemberSignature Language="VB.NET" Value="Sub Clear () Implements IList.Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Clear() = System::Collections::IList::Clear;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -664,7 +776,12 @@
       <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.System#Collections#IList#Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (value As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ value) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -694,7 +811,12 @@
       <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function IndexOf (value As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ value) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -723,7 +845,12 @@
       <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, value As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -753,7 +880,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemCollection.System#Collections#IList#IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ToolStripItemCollection.System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -779,7 +912,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ToolStripItemCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.ToolStripItemCollection.System.Collections.IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -808,7 +947,12 @@
       <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Remove (value As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ value) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -836,7 +980,12 @@
       <MemberSignature Language="C#" Value="void IList.RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItemCollection.System#Collections#IList#RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub RemoveAt (index As Integer) Implements IList.RemoveAt" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.RemoveAt(int index) = System::Collections::IList::RemoveAt;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -860,32 +1009,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddRange">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds <see cref="T:System.Windows.Forms.ToolStripItem" /> controls to the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a <see cref="T:System.Windows.Forms.ToolStripItem" /> to the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the item at the specified index.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

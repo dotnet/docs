@@ -1,7 +1,10 @@
-<Type Name="VARDESC" FullName="System.Runtime.InteropServices.ComTypes.VARDESC">
+﻿<Type Name="VARDESC" FullName="System.Runtime.InteropServices.ComTypes.VARDESC">
   <TypeSignature Language="C#" Value="public struct VARDESC" />
   <TypeSignature Language="ILAsm" Value=".class public sequential sealed beforefieldinit VARDESC extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.VARDESC" />
+  <TypeSignature Language="VB.NET" Value="Public Structure VARDESC" />
+  <TypeSignature Language="F#" Value="type VARDESC = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class VARDESC" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION desc;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.VARDESC/DESCUNION desc" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.desc" />
+      <MemberSignature Language="VB.NET" Value="Public desc As VARDESC.DESCUNION " />
+      <MemberSignature Language="F#" Value="val mutable desc : System.Runtime.InteropServices.ComTypes.VARDESC.DESCUNION" Usage="System.Runtime.InteropServices.ComTypes.VARDESC.desc" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::VARDESC::DESCUNION desc;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -80,6 +86,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.ELEMDESC elemdescVar;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.ELEMDESC elemdescVar" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.elemdescVar" />
+      <MemberSignature Language="VB.NET" Value="Public elemdescVar As ELEMDESC " />
+      <MemberSignature Language="F#" Value="val mutable elemdescVar : System.Runtime.InteropServices.ComTypes.ELEMDESC" Usage="System.Runtime.InteropServices.ComTypes.VARDESC.elemdescVar" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::ELEMDESC elemdescVar;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -118,6 +127,9 @@
       <MemberSignature Language="C#" Value="public string lpstrSchema;" />
       <MemberSignature Language="ILAsm" Value=".field public string lpstrSchema" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.lpstrSchema" />
+      <MemberSignature Language="VB.NET" Value="Public lpstrSchema As String " />
+      <MemberSignature Language="F#" Value="val mutable lpstrSchema : string" Usage="System.Runtime.InteropServices.ComTypes.VARDESC.lpstrSchema" />
+      <MemberSignature Language="C++ CLI" Value="public: System::String ^ lpstrSchema;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -156,6 +168,9 @@
       <MemberSignature Language="C#" Value="public int memid;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 memid" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.memid" />
+      <MemberSignature Language="VB.NET" Value="Public memid As Integer " />
+      <MemberSignature Language="F#" Value="val mutable memid : int" Usage="System.Runtime.InteropServices.ComTypes.VARDESC.memid" />
+      <MemberSignature Language="C++ CLI" Value="public: int memid;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -194,6 +209,9 @@
       <MemberSignature Language="C#" Value="public System.Runtime.InteropServices.ComTypes.VARKIND varkind;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Runtime.InteropServices.ComTypes.VARKIND varkind" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.varkind" />
+      <MemberSignature Language="VB.NET" Value="Public varkind As VARKIND " />
+      <MemberSignature Language="F#" Value="val mutable varkind : System.Runtime.InteropServices.ComTypes.VARKIND" Usage="System.Runtime.InteropServices.ComTypes.VARDESC.varkind" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Runtime::InteropServices::ComTypes::VARKIND varkind;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -232,6 +250,9 @@
       <MemberSignature Language="C#" Value="public short wVarFlags;" />
       <MemberSignature Language="ILAsm" Value=".field public int16 wVarFlags" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARDESC.wVarFlags" />
+      <MemberSignature Language="VB.NET" Value="Public wVarFlags As Short " />
+      <MemberSignature Language="F#" Value="val mutable wVarFlags : int16" Usage="System.Runtime.InteropServices.ComTypes.VARDESC.wVarFlags" />
+      <MemberSignature Language="C++ CLI" Value="public: short wVarFlags;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

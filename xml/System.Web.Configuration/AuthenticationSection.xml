@@ -1,7 +1,10 @@
-<Type Name="AuthenticationSection" FullName="System.Web.Configuration.AuthenticationSection">
+﻿<Type Name="AuthenticationSection" FullName="System.Web.Configuration.AuthenticationSection">
   <TypeSignature Language="C#" Value="public sealed class AuthenticationSection : System.Configuration.ConfigurationSection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AuthenticationSection extends System.Configuration.ConfigurationSection" />
   <TypeSignature Language="DocId" Value="T:System.Web.Configuration.AuthenticationSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AuthenticationSection&#xA;Inherits ConfigurationSection" />
+  <TypeSignature Language="F#" Value="type AuthenticationSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AuthenticationSection sealed : System::Configuration::ConfigurationSection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -59,6 +62,8 @@
       <MemberSignature Language="C#" Value="public AuthenticationSection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthenticationSection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AuthenticationSection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -89,6 +94,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.FormsAuthenticationConfiguration Forms { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.FormsAuthenticationConfiguration Forms" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AuthenticationSection.Forms" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Forms As FormsAuthenticationConfiguration" />
+      <MemberSignature Language="F#" Value="member this.Forms : System.Web.Configuration.FormsAuthenticationConfiguration" Usage="System.Web.Configuration.AuthenticationSection.Forms" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::FormsAuthenticationConfiguration ^ Forms { System::Web::Configuration::FormsAuthenticationConfiguration ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -123,6 +131,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.AuthenticationMode Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.Configuration.AuthenticationMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AuthenticationSection.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As AuthenticationMode" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.Web.Configuration.AuthenticationMode with get, set" Usage="System.Web.Configuration.AuthenticationSection.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::AuthenticationMode Mode { System::Web::Configuration::AuthenticationMode get(); void set(System::Web::Configuration::AuthenticationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -157,6 +168,9 @@
       <MemberSignature Language="C#" Value="public System.Web.Configuration.PassportAuthentication Passport { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.Configuration.PassportAuthentication Passport" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AuthenticationSection.Passport" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Passport As PassportAuthentication" />
+      <MemberSignature Language="F#" Value="member this.Passport : System.Web.Configuration.PassportAuthentication" Usage="System.Web.Configuration.AuthenticationSection.Passport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::Configuration::PassportAuthentication ^ Passport { System::Web::Configuration::PassportAuthentication ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -193,6 +207,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.Web.Configuration.AuthenticationSection.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Web.Configuration.AuthenticationSection.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -211,6 +228,9 @@
       <MemberSignature Language="C#" Value="protected override void Reset (System.Configuration.ConfigurationElement parentElement);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Reset(class System.Configuration.ConfigurationElement parentElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Configuration.AuthenticationSection.Reset(System.Configuration.ConfigurationElement)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Reset (parentElement As ConfigurationElement)" />
+      <MemberSignature Language="F#" Value="override this.Reset : System.Configuration.ConfigurationElement -&gt; unit" Usage="authenticationSection.Reset parentElement" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Reset(System::Configuration::ConfigurationElement ^ parentElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

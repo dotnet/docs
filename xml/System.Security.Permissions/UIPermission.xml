@@ -1,7 +1,10 @@
-<Type Name="UIPermission" FullName="System.Security.Permissions.UIPermission">
+﻿<Type Name="UIPermission" FullName="System.Security.Permissions.UIPermission">
   <TypeSignature Language="C#" Value="public sealed class UIPermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit UIPermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.UIPermission" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UIPermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
+  <TypeSignature Language="F#" Value="type UIPermission = class&#xA;    inherit CodeAccessPermission&#xA;    interface IUnrestrictedPermission&#xA;    interface IBuiltInPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UIPermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -43,10 +46,23 @@
     <altmember cref="T:System.Security.Permissions.UIPermissionClipboard" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.UIPermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public UIPermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.UIPermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.UIPermission : System.Security.Permissions.PermissionState -&gt; System.Security.Permissions.UIPermission" Usage="new System.Security.Permissions.UIPermission state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -87,6 +103,9 @@
       <MemberSignature Language="C#" Value="public UIPermission (System.Security.Permissions.UIPermissionClipboard clipboardFlag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.UIPermissionClipboard clipboardFlag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.UIPermission.#ctor(System.Security.Permissions.UIPermissionClipboard)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (clipboardFlag As UIPermissionClipboard)" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.UIPermission : System.Security.Permissions.UIPermissionClipboard -&gt; System.Security.Permissions.UIPermission" Usage="new System.Security.Permissions.UIPermission clipboardFlag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPermission(System::Security::Permissions::UIPermissionClipboard clipboardFlag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -127,6 +146,9 @@
       <MemberSignature Language="C#" Value="public UIPermission (System.Security.Permissions.UIPermissionWindow windowFlag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.UIPermissionWindow windowFlag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.UIPermission.#ctor(System.Security.Permissions.UIPermissionWindow)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (windowFlag As UIPermissionWindow)" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.UIPermission : System.Security.Permissions.UIPermissionWindow -&gt; System.Security.Permissions.UIPermission" Usage="new System.Security.Permissions.UIPermission windowFlag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPermission(System::Security::Permissions::UIPermissionWindow windowFlag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -167,6 +189,9 @@
       <MemberSignature Language="C#" Value="public UIPermission (System.Security.Permissions.UIPermissionWindow windowFlag, System.Security.Permissions.UIPermissionClipboard clipboardFlag);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.UIPermissionWindow windowFlag, valuetype System.Security.Permissions.UIPermissionClipboard clipboardFlag) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.UIPermission.#ctor(System.Security.Permissions.UIPermissionWindow,System.Security.Permissions.UIPermissionClipboard)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (windowFlag As UIPermissionWindow, clipboardFlag As UIPermissionClipboard)" />
+      <MemberSignature Language="F#" Value="new System.Security.Permissions.UIPermission : System.Security.Permissions.UIPermissionWindow * System.Security.Permissions.UIPermissionClipboard -&gt; System.Security.Permissions.UIPermission" Usage="new System.Security.Permissions.UIPermission (windowFlag, clipboardFlag)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPermission(System::Security::Permissions::UIPermissionWindow windowFlag, System::Security::Permissions::UIPermissionClipboard clipboardFlag);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -208,6 +233,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Permissions.UIPermissionClipboard Clipboard { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.UIPermissionClipboard Clipboard" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.UIPermission.Clipboard" />
+      <MemberSignature Language="VB.NET" Value="Public Property Clipboard As UIPermissionClipboard" />
+      <MemberSignature Language="F#" Value="member this.Clipboard : System.Security.Permissions.UIPermissionClipboard with get, set" Usage="System.Security.Permissions.UIPermission.Clipboard" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::UIPermissionClipboard Clipboard { System::Security::Permissions::UIPermissionClipboard get(); void set(System::Security::Permissions::UIPermissionClipboard value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -231,6 +259,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.UIPermission.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="uIPermission.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -274,6 +305,9 @@
       <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement esd);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement esd) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.UIPermission.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXml (esd As SecurityElement)" />
+      <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="uIPermission.FromXml esd" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ esd);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -320,6 +354,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.UIPermission.Intersect(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="uIPermission.Intersect target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -367,6 +404,9 @@
       <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.UIPermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="uIPermission.IsSubsetOf target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -415,7 +455,13 @@
       <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.UIPermission.IsUnrestricted" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsUnrestricted : unit -&gt; bool" Usage="uIPermission.IsUnrestricted " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Security.Permissions.IUnrestrictedPermission.IsUnrestricted</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -447,6 +493,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.UIPermission.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="uIPermission.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -485,6 +534,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Permissions.UIPermission.Union(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="uIPermission.Union target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -532,6 +584,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Permissions.UIPermissionWindow Window { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Permissions.UIPermissionWindow Window" />
       <MemberSignature Language="DocId" Value="P:System.Security.Permissions.UIPermission.Window" />
+      <MemberSignature Language="VB.NET" Value="Public Property Window As UIPermissionWindow" />
+      <MemberSignature Language="F#" Value="member this.Window : System.Security.Permissions.UIPermissionWindow with get, set" Usage="System.Security.Permissions.UIPermission.Window" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Permissions::UIPermissionWindow Window { System::Security::Permissions::UIPermissionWindow get(); void set(System::Security::Permissions::UIPermissionWindow value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -562,15 +617,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Permissions.UIPermission" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

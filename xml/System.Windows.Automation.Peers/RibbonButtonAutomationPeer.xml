@@ -1,7 +1,10 @@
-<Type Name="RibbonButtonAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonButtonAutomationPeer">
+﻿<Type Name="RibbonButtonAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonButtonAutomationPeer">
   <TypeSignature Language="C#" Value="public class RibbonButtonAutomationPeer : System.Windows.Automation.Peers.ButtonAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonButtonAutomationPeer extends System.Windows.Automation.Peers.ButtonAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonButtonAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonButtonAutomationPeer&#xA;Inherits ButtonAutomationPeer" />
+  <TypeSignature Language="F#" Value="type RibbonButtonAutomationPeer = class&#xA;    inherit ButtonAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonButtonAutomationPeer : System::Windows::Automation::Peers::ButtonAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public RibbonButtonAutomationPeer (System.Windows.Controls.Ribbon.RibbonButton owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Ribbon.RibbonButton owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonButtonAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonButton)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonButton)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonButtonAutomationPeer : System.Windows.Controls.Ribbon.RibbonButton -&gt; System.Windows.Automation.Peers.RibbonButtonAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonButtonAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonButtonAutomationPeer(System::Windows::Controls::Ribbon::RibbonButton ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="protected override string GetAccessKeyCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetAccessKeyCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonButtonAutomationPeer.GetAccessKeyCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAccessKeyCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetAccessKeyCore : unit -&gt; string" Usage="ribbonButtonAutomationPeer.GetAccessKeyCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetAccessKeyCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -56,6 +65,9 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonButtonAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonButtonAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -75,6 +87,9 @@
       <MemberSignature Language="C#" Value="protected override string GetHelpTextCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetHelpTextCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonButtonAutomationPeer.GetHelpTextCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetHelpTextCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetHelpTextCore : unit -&gt; string" Usage="ribbonButtonAutomationPeer.GetHelpTextCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetHelpTextCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -94,6 +109,9 @@
       <MemberSignature Language="C#" Value="protected override string GetNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonButtonAutomationPeer.GetNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetNameCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetNameCore : unit -&gt; string" Usage="ribbonButtonAutomationPeer.GetNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

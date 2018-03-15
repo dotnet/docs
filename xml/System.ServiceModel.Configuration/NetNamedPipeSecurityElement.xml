@@ -1,7 +1,10 @@
-<Type Name="NetNamedPipeSecurityElement" FullName="System.ServiceModel.Configuration.NetNamedPipeSecurityElement">
+﻿<Type Name="NetNamedPipeSecurityElement" FullName="System.ServiceModel.Configuration.NetNamedPipeSecurityElement">
   <TypeSignature Language="C#" Value="public sealed class NetNamedPipeSecurityElement : System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NetNamedPipeSecurityElement extends System.ServiceModel.Configuration.ServiceModelConfigurationElement" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Configuration.NetNamedPipeSecurityElement" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetNamedPipeSecurityElement&#xA;Inherits ServiceModelConfigurationElement" />
+  <TypeSignature Language="F#" Value="type NetNamedPipeSecurityElement = class&#xA;    inherit ServiceModelConfigurationElement" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetNamedPipeSecurityElement sealed : System::ServiceModel::Configuration::ServiceModelConfigurationElement" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public NetNamedPipeSecurityElement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Configuration.NetNamedPipeSecurityElement.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetNamedPipeSecurityElement();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -35,6 +40,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.NetNamedPipeSecurityMode Mode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.NetNamedPipeSecurityMode Mode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetNamedPipeSecurityElement.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As NetNamedPipeSecurityMode" />
+      <MemberSignature Language="F#" Value="member this.Mode : System.ServiceModel.NetNamedPipeSecurityMode with get, set" Usage="System.ServiceModel.Configuration.NetNamedPipeSecurityElement.Mode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::NetNamedPipeSecurityMode Mode { System::ServiceModel::NetNamedPipeSecurityMode get(); void set(System::ServiceModel::NetNamedPipeSecurityMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -58,6 +66,9 @@
       <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetNamedPipeSecurityElement.Properties" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.ServiceModel.Configuration.NetNamedPipeSecurityElement.Properties" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -76,6 +87,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Configuration.NamedPipeTransportSecurityElement Transport { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Configuration.NamedPipeTransportSecurityElement Transport" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Configuration.NetNamedPipeSecurityElement.Transport" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Transport As NamedPipeTransportSecurityElement" />
+      <MemberSignature Language="F#" Value="member this.Transport : System.ServiceModel.Configuration.NamedPipeTransportSecurityElement" Usage="System.ServiceModel.Configuration.NetNamedPipeSecurityElement.Transport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Configuration::NamedPipeTransportSecurityElement ^ Transport { System::ServiceModel::Configuration::NamedPipeTransportSecurityElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

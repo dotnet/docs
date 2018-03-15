@@ -1,7 +1,10 @@
-<Type Name="StatusBarPanelStyle" FullName="System.Windows.Forms.StatusBarPanelStyle">
+﻿<Type Name="StatusBarPanelStyle" FullName="System.Windows.Forms.StatusBarPanelStyle">
   <TypeSignature Language="C#" Value="public enum StatusBarPanelStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatusBarPanelStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanelStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum StatusBarPanelStyle" />
+  <TypeSignature Language="F#" Value="type StatusBarPanelStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class StatusBarPanelStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="OwnerDraw" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.StatusBarPanelStyle OwnerDraw = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelStyle.OwnerDraw" />
+      <MemberSignature Language="VB.NET" Value="OwnerDraw" />
+      <MemberSignature Language="F#" Value="OwnerDraw = 2" Usage="System.Windows.Forms.StatusBarPanelStyle.OwnerDraw" />
+      <MemberSignature Language="C++ CLI" Value="OwnerDraw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBarPanelStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> is drawn by the owner.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.StatusBarPanelStyle Text = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.StatusBarPanelStyle.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 1" Usage="System.Windows.Forms.StatusBarPanelStyle.Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBarPanelStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> displays text in the standard font.</summary>
       </Docs>

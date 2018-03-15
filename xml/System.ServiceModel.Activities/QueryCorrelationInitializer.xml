@@ -1,7 +1,10 @@
-<Type Name="QueryCorrelationInitializer" FullName="System.ServiceModel.Activities.QueryCorrelationInitializer">
+﻿<Type Name="QueryCorrelationInitializer" FullName="System.ServiceModel.Activities.QueryCorrelationInitializer">
   <TypeSignature Language="C#" Value="public sealed class QueryCorrelationInitializer : System.ServiceModel.Activities.CorrelationInitializer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit QueryCorrelationInitializer extends System.ServiceModel.Activities.CorrelationInitializer" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.QueryCorrelationInitializer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class QueryCorrelationInitializer&#xA;Inherits CorrelationInitializer" />
+  <TypeSignature Language="F#" Value="type QueryCorrelationInitializer = class&#xA;    inherit CorrelationInitializer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class QueryCorrelationInitializer sealed : System::ServiceModel::Activities::CorrelationInitializer" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,8 @@
       <MemberSignature Language="C#" Value="public QueryCorrelationInitializer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.QueryCorrelationInitializer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; QueryCorrelationInitializer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -57,6 +62,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.MessageQuerySet MessageQuerySet { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.MessageQuerySet MessageQuerySet" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.QueryCorrelationInitializer.MessageQuerySet" />
+      <MemberSignature Language="VB.NET" Value="Public Property MessageQuerySet As MessageQuerySet" />
+      <MemberSignature Language="F#" Value="member this.MessageQuerySet : System.ServiceModel.MessageQuerySet with get, set" Usage="System.ServiceModel.Activities.QueryCorrelationInitializer.MessageQuerySet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::MessageQuerySet ^ MessageQuerySet { System::ServiceModel::MessageQuerySet ^ get(); void set(System::ServiceModel::MessageQuerySet ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

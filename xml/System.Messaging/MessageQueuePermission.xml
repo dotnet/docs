@@ -1,7 +1,10 @@
-<Type Name="MessageQueuePermission" FullName="System.Messaging.MessageQueuePermission">
+﻿<Type Name="MessageQueuePermission" FullName="System.Messaging.MessageQueuePermission">
   <TypeSignature Language="C#" Value="public sealed class MessageQueuePermission : System.Security.CodeAccessPermission, System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit MessageQueuePermission extends System.Security.CodeAccessPermission implements class System.Security.Permissions.IUnrestrictedPermission" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.MessageQueuePermission" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessageQueuePermission&#xA;Inherits CodeAccessPermission&#xA;Implements IUnrestrictedPermission" />
+  <TypeSignature Language="F#" Value="type MessageQueuePermission = class&#xA;    inherit CodeAccessPermission&#xA;    interface IUnrestrictedPermission" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageQueuePermission sealed : System::Security::CodeAccessPermission, System::Security::Permissions::IUnrestrictedPermission" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,10 +36,21 @@
     <altmember cref="T:System.Messaging.MessageQueuePermissionEntryCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Messaging</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueuePermission" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public MessageQueuePermission ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermission.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueuePermission();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -61,6 +75,9 @@
       <MemberSignature Language="C#" Value="public MessageQueuePermission (System.Messaging.MessageQueuePermissionEntry[] permissionAccessEntries);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Messaging.MessageQueuePermissionEntry[] permissionAccessEntries) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermission.#ctor(System.Messaging.MessageQueuePermissionEntry[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccessEntries As MessageQueuePermissionEntry())" />
+      <MemberSignature Language="F#" Value="new System.Messaging.MessageQueuePermission : System.Messaging.MessageQueuePermissionEntry[] -&gt; System.Messaging.MessageQueuePermission" Usage="new System.Messaging.MessageQueuePermission permissionAccessEntries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueuePermission(cli::array &lt;System::Messaging::MessageQueuePermissionEntry ^&gt; ^ permissionAccessEntries);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -88,6 +105,9 @@
       <MemberSignature Language="C#" Value="public MessageQueuePermission (System.Security.Permissions.PermissionState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Security.Permissions.PermissionState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermission.#ctor(System.Security.Permissions.PermissionState)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (state As PermissionState)" />
+      <MemberSignature Language="F#" Value="new System.Messaging.MessageQueuePermission : System.Security.Permissions.PermissionState -&gt; System.Messaging.MessageQueuePermission" Usage="new System.Messaging.MessageQueuePermission state" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueuePermission(System::Security::Permissions::PermissionState state);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -116,6 +136,9 @@
       <MemberSignature Language="C#" Value="public MessageQueuePermission (System.Messaging.MessageQueuePermissionAccess permissionAccess, string path);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Messaging.MessageQueuePermissionAccess permissionAccess, string path) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermission.#ctor(System.Messaging.MessageQueuePermissionAccess,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccess As MessageQueuePermissionAccess, path As String)" />
+      <MemberSignature Language="F#" Value="new System.Messaging.MessageQueuePermission : System.Messaging.MessageQueuePermissionAccess * string -&gt; System.Messaging.MessageQueuePermission" Usage="new System.Messaging.MessageQueuePermission (permissionAccess, path)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueuePermission(System::Messaging::MessageQueuePermissionAccess permissionAccess, System::String ^ path);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -145,6 +168,9 @@
       <MemberSignature Language="C#" Value="public MessageQueuePermission (System.Messaging.MessageQueuePermissionAccess permissionAccess, string machineName, string label, string category);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Messaging.MessageQueuePermissionAccess permissionAccess, string machineName, string label, string category) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermission.#ctor(System.Messaging.MessageQueuePermissionAccess,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (permissionAccess As MessageQueuePermissionAccess, machineName As String, label As String, category As String)" />
+      <MemberSignature Language="F#" Value="new System.Messaging.MessageQueuePermission : System.Messaging.MessageQueuePermissionAccess * string * string * string -&gt; System.Messaging.MessageQueuePermission" Usage="new System.Messaging.MessageQueuePermission (permissionAccess, machineName, label, category)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageQueuePermission(System::Messaging::MessageQueuePermissionAccess permissionAccess, System::String ^ machineName, System::String ^ label, System::String ^ category);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -178,6 +204,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Copy ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Copy() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermission.Copy" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Copy () As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Copy : unit -&gt; System.Security.IPermission" Usage="messageQueuePermission.Copy " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Copy();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -197,6 +226,8 @@
       <MemberSignature Language="C#" Value="public override void FromXml (System.Security.SecurityElement securityElement);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXml(class System.Security.SecurityElement securityElement) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermission.FromXml(System.Security.SecurityElement)" />
+      <MemberSignature Language="F#" Value="override this.FromXml : System.Security.SecurityElement -&gt; unit" Usage="messageQueuePermission.FromXml securityElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXml(System::Security::SecurityElement ^ securityElement);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -218,6 +249,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Intersect (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Intersect(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermission.Intersect(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Intersect (target As IPermission) As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Intersect : System.Security.IPermission -&gt; System.Security.IPermission" Usage="messageQueuePermission.Intersect target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Intersect(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -240,6 +274,9 @@
       <MemberSignature Language="C#" Value="public override bool IsSubsetOf (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsSubsetOf(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermission.IsSubsetOf(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsSubsetOf (target As IPermission) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsSubsetOf : System.Security.IPermission -&gt; bool" Usage="messageQueuePermission.IsSubsetOf target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsSubsetOf(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -263,6 +300,9 @@
       <MemberSignature Language="C#" Value="public bool IsUnrestricted ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsUnrestricted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermission.IsUnrestricted" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsUnrestricted () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsUnrestricted : unit -&gt; bool" Usage="messageQueuePermission.IsUnrestricted " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool IsUnrestricted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -283,6 +323,9 @@
       <MemberSignature Language="C#" Value="public System.Messaging.MessageQueuePermissionEntryCollection PermissionEntries { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Messaging.MessageQueuePermissionEntryCollection PermissionEntries" />
       <MemberSignature Language="DocId" Value="P:System.Messaging.MessageQueuePermission.PermissionEntries" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PermissionEntries As MessageQueuePermissionEntryCollection" />
+      <MemberSignature Language="F#" Value="member this.PermissionEntries : System.Messaging.MessageQueuePermissionEntryCollection" Usage="System.Messaging.MessageQueuePermission.PermissionEntries" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Messaging::MessageQueuePermissionEntryCollection ^ PermissionEntries { System::Messaging::MessageQueuePermissionEntryCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -310,6 +353,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.SecurityElement ToXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.SecurityElement ToXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermission.ToXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXml () As SecurityElement" />
+      <MemberSignature Language="F#" Value="override this.ToXml : unit -&gt; System.Security.SecurityElement" Usage="messageQueuePermission.ToXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::SecurityElement ^ ToXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -329,6 +375,9 @@
       <MemberSignature Language="C#" Value="public override System.Security.IPermission Union (System.Security.IPermission target);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Security.IPermission Union(class System.Security.IPermission target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Messaging.MessageQueuePermission.Union(System.Security.IPermission)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Union (target As IPermission) As IPermission" />
+      <MemberSignature Language="F#" Value="override this.Union : System.Security.IPermission -&gt; System.Security.IPermission" Usage="messageQueuePermission.Union target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Security::IPermission ^ Union(System::Security::IPermission ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -347,14 +396,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Messaging</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Messaging.MessageQueuePermission" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

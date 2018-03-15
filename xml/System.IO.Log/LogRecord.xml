@@ -1,7 +1,10 @@
-<Type Name="LogRecord" FullName="System.IO.Log.LogRecord">
+﻿<Type Name="LogRecord" FullName="System.IO.Log.LogRecord">
   <TypeSignature Language="C#" Value="public abstract class LogRecord : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit LogRecord extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.IO.Log.LogRecord" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class LogRecord&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type LogRecord = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LogRecord abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,8 @@
       <MemberSignature Language="C#" Value="protected LogRecord ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.LogRecord.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; LogRecord();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -38,6 +43,9 @@
       <MemberSignature Language="C#" Value="public abstract System.IO.Stream Data { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream Data" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogRecord.Data" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Data As Stream" />
+      <MemberSignature Language="F#" Value="member this.Data : System.IO.Stream" Usage="System.IO.Log.LogRecord.Data" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::IO::Stream ^ Data { System::IO::Stream ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -57,7 +65,13 @@
       <MemberSignature Language="C#" Value="public abstract void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IO.Log.LogRecord.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit" Usage="logRecord.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -85,6 +99,9 @@
       <MemberSignature Language="C#" Value="public abstract System.IO.Log.SequenceNumber Previous { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.SequenceNumber Previous" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogRecord.Previous" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Previous As SequenceNumber" />
+      <MemberSignature Language="F#" Value="member this.Previous : System.IO.Log.SequenceNumber" Usage="System.IO.Log.LogRecord.Previous" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::IO::Log::SequenceNumber Previous { System::IO::Log::SequenceNumber get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -110,6 +127,9 @@
       <MemberSignature Language="C#" Value="public abstract System.IO.Log.SequenceNumber SequenceNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.SequenceNumber SequenceNumber" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogRecord.SequenceNumber" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property SequenceNumber As SequenceNumber" />
+      <MemberSignature Language="F#" Value="member this.SequenceNumber : System.IO.Log.SequenceNumber" Usage="System.IO.Log.LogRecord.SequenceNumber" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::IO::Log::SequenceNumber SequenceNumber { System::IO::Log::SequenceNumber get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -128,6 +148,9 @@
       <MemberSignature Language="C#" Value="public abstract System.IO.Log.SequenceNumber User { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.IO.Log.SequenceNumber User" />
       <MemberSignature Language="DocId" Value="P:System.IO.Log.LogRecord.User" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property User As SequenceNumber" />
+      <MemberSignature Language="F#" Value="member this.User : System.IO.Log.SequenceNumber" Usage="System.IO.Log.LogRecord.User" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::IO::Log::SequenceNumber User { System::IO::Log::SequenceNumber get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>

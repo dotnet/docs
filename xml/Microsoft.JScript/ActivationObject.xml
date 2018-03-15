@@ -1,7 +1,10 @@
-<Type Name="ActivationObject" FullName="Microsoft.JScript.ActivationObject">
+﻿<Type Name="ActivationObject" FullName="Microsoft.JScript.ActivationObject">
   <TypeSignature Language="C#" Value="public abstract class ActivationObject : Microsoft.JScript.ScriptObject, Microsoft.JScript.IActivationObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ActivationObject extends Microsoft.JScript.ScriptObject implements class Microsoft.JScript.IActivationObject" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.ActivationObject" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ActivationObject&#xA;Inherits ScriptObject&#xA;Implements IActivationObject" />
+  <TypeSignature Language="F#" Value="type ActivationObject = class&#xA;    inherit ScriptObject&#xA;    interface IActivationObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivationObject abstract : Microsoft::JScript::ScriptObject, Microsoft::JScript::IActivationObject" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="protected virtual Microsoft.JScript.JSVariableField CreateField (string name, System.Reflection.FieldAttributes attributeFlags, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class Microsoft.JScript.JSVariableField CreateField(string name, valuetype System.Reflection.FieldAttributes attributeFlags, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.CreateField(System.String,System.Reflection.FieldAttributes,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateField (name As String, attributeFlags As FieldAttributes, value As Object) As JSVariableField" />
+      <MemberSignature Language="F#" Value="abstract member CreateField : string * System.Reflection.FieldAttributes * obj -&gt; Microsoft.JScript.JSVariableField&#xA;override this.CreateField : string * System.Reflection.FieldAttributes * obj -&gt; Microsoft.JScript.JSVariableField" Usage="activationObject.CreateField (name, attributeFlags, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Microsoft::JScript::JSVariableField ^ CreateField(System::String ^ name, System::Reflection::FieldAttributes attributeFlags, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -66,6 +72,9 @@
       <MemberSignature Language="C#" Value="protected System.Collections.ArrayList field_table;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Collections.ArrayList field_table" />
       <MemberSignature Language="DocId" Value="F:Microsoft.JScript.ActivationObject.field_table" />
+      <MemberSignature Language="VB.NET" Value="Protected field_table As ArrayList " />
+      <MemberSignature Language="F#" Value="val mutable field_table : System.Collections.ArrayList" Usage="Microsoft.JScript.ActivationObject.field_table" />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Collections::ArrayList ^ field_table;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -90,7 +99,13 @@
       <MemberSignature Language="C#" Value="public virtual object GetDefaultThisObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetDefaultThisObject() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.GetDefaultThisObject" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetDefaultThisObject () As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultThisObject : unit -&gt; obj&#xA;override this.GetDefaultThisObject : unit -&gt; obj" Usage="activationObject.GetDefaultThisObject " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetDefaultThisObject();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IActivationObject.GetDefaultThisObject</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -116,7 +131,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.FieldInfo GetField (string name, int lexLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo GetField(string name, int32 lexLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.GetField(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetField (name As String, lexLevel As Integer) As FieldInfo" />
+      <MemberSignature Language="F#" Value="override this.GetField : string * int -&gt; System.Reflection.FieldInfo" Usage="activationObject.GetField (name, lexLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::FieldInfo ^ GetField(System::String ^ name, int lexLevel);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IActivationObject.GetField(System.String,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -153,7 +174,13 @@
       <MemberSignature Language="C#" Value="public virtual Microsoft.JScript.GlobalScope GetGlobalScope ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.GlobalScope GetGlobalScope() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.GetGlobalScope" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetGlobalScope () As GlobalScope" />
+      <MemberSignature Language="F#" Value="abstract member GetGlobalScope : unit -&gt; Microsoft.JScript.GlobalScope&#xA;override this.GetGlobalScope : unit -&gt; Microsoft.JScript.GlobalScope" Usage="activationObject.GetGlobalScope " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Microsoft::JScript::GlobalScope ^ GetGlobalScope();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IActivationObject.GetGlobalScope</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -178,7 +205,13 @@
       <MemberSignature Language="C#" Value="public virtual System.Reflection.FieldInfo GetLocalField (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.FieldInfo GetLocalField(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.GetLocalField(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetLocalField (name As String) As FieldInfo" />
+      <MemberSignature Language="F#" Value="abstract member GetLocalField : string -&gt; System.Reflection.FieldInfo&#xA;override this.GetLocalField : string -&gt; System.Reflection.FieldInfo" Usage="activationObject.GetLocalField name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Reflection::FieldInfo ^ GetLocalField(System::String ^ name);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IActivationObject.GetLocalField(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -206,6 +239,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.MemberInfo[] GetMember (string name, System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.MemberInfo[] GetMember(string name, valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.GetMember(System.String,System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMember (name As String, bindingAttr As BindingFlags) As MemberInfo()" />
+      <MemberSignature Language="F#" Value="override this.GetMember : string * System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="activationObject.GetMember (name, bindingAttr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMember(System::String ^ name, System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -236,6 +272,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.MemberInfo[] GetMembers (System.Reflection.BindingFlags bindingAttr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.MemberInfo[] GetMembers(valuetype System.Reflection.BindingFlags bindingAttr) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.GetMembers(System.Reflection.BindingFlags)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetMembers (bindingAttr As BindingFlags) As MemberInfo()" />
+      <MemberSignature Language="F#" Value="override this.GetMembers : System.Reflection.BindingFlags -&gt; System.Reflection.MemberInfo[]" Usage="activationObject.GetMembers bindingAttr" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetMembers(System::Reflection::BindingFlags bindingAttr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -264,7 +303,13 @@
       <MemberSignature Language="C#" Value="public object GetMemberValue (string name, int lexlevel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetMemberValue(string name, int32 lexlevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.ActivationObject.GetMemberValue(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetMemberValue (name As String, lexlevel As Integer) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetMemberValue : string * int -&gt; obj&#xA;override this.GetMemberValue : string * int -&gt; obj" Usage="activationObject.GetMemberValue (name, lexlevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetMemberValue(System::String ^ name, int lexlevel);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.JScript.IActivationObject.GetMemberValue(System.String,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
         <AssemblyVersion>10.0.0.0</AssemblyVersion>

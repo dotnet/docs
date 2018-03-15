@@ -1,7 +1,10 @@
-<Type Name="ExtenderControl" FullName="System.Web.UI.ExtenderControl">
+﻿<Type Name="ExtenderControl" FullName="System.Web.UI.ExtenderControl">
   <TypeSignature Language="C#" Value="public abstract class ExtenderControl : System.Web.UI.Control, System.Web.UI.IExtenderControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ExtenderControl extends System.Web.UI.Control implements class System.Web.UI.IExtenderControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ExtenderControl" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ExtenderControl&#xA;Inherits Control&#xA;Implements IExtenderControl" />
+  <TypeSignature Language="F#" Value="type ExtenderControl = class&#xA;    inherit Control&#xA;    interface IExtenderControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExtenderControl abstract : System::Web::UI::Control, System::Web::UI::IExtenderControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +61,8 @@
       <MemberSignature Language="C#" Value="protected ExtenderControl ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExtenderControl.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ExtenderControl();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -73,7 +78,13 @@
       <MemberSignature Language="C#" Value="protected abstract System.Collections.Generic.IEnumerable&lt;System.Web.UI.ScriptDescriptor&gt; GetScriptDescriptors (System.Web.UI.Control targetControl);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.ScriptDescriptor&gt; GetScriptDescriptors(class System.Web.UI.Control targetControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExtenderControl.GetScriptDescriptors(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetScriptDescriptors (targetControl As Control) As IEnumerable(Of ScriptDescriptor)" />
+      <MemberSignature Language="F#" Value="abstract member GetScriptDescriptors : System.Web.UI.Control -&gt; seq&lt;System.Web.UI.ScriptDescriptor&gt;" Usage="extenderControl.GetScriptDescriptors targetControl" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptDescriptor ^&gt; ^ GetScriptDescriptors(System::Web::UI::Control ^ targetControl);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IExtenderControl.GetScriptDescriptors(System.Web.UI.Control)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -95,7 +106,13 @@
       <MemberSignature Language="C#" Value="protected abstract System.Collections.Generic.IEnumerable&lt;System.Web.UI.ScriptReference&gt; GetScriptReferences ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.ScriptReference&gt; GetScriptReferences() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExtenderControl.GetScriptReferences" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Function GetScriptReferences () As IEnumerable(Of ScriptReference)" />
+      <MemberSignature Language="F#" Value="abstract member GetScriptReferences : unit -&gt; seq&lt;System.Web.UI.ScriptReference&gt;" Usage="extenderControl.GetScriptReferences " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptReference ^&gt; ^ GetScriptReferences();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IExtenderControl.GetScriptReferences</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -111,9 +128,12 @@
       </Docs>
     </Member>
     <Member MemberName="OnPreRender">
-      <MemberSignature Language="C#" Value="protected override void OnPreRender (EventArgs e);" />
+      <MemberSignature Language="C#" Value="protected internal override void OnPreRender (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void OnPreRender(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExtenderControl.OnPreRender(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub OnPreRender (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnPreRender : EventArgs -&gt; unit" Usage="extenderControl.OnPreRender e" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void OnPreRender(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -139,9 +159,12 @@
       </Docs>
     </Member>
     <Member MemberName="Render">
-      <MemberSignature Language="C#" Value="protected override void Render (System.Web.UI.HtmlTextWriter writer);" />
+      <MemberSignature Language="C#" Value="protected internal override void Render (System.Web.UI.HtmlTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Render(class System.Web.UI.HtmlTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExtenderControl.Render(System.Web.UI.HtmlTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Render (writer As HtmlTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.HtmlTextWriter -&gt; unit" Usage="extenderControl.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Render(System::Web::UI::HtmlTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -164,7 +187,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerable&lt;System.Web.UI.ScriptDescriptor&gt; IExtenderControl.GetScriptDescriptors (System.Web.UI.Control targetControl);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.ScriptDescriptor&gt; System.Web.UI.IExtenderControl.GetScriptDescriptors(class System.Web.UI.Control targetControl) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExtenderControl.System#Web#UI#IExtenderControl#GetScriptDescriptors(System.Web.UI.Control)" />
+      <MemberSignature Language="VB.NET" Value="Function GetScriptDescriptors (targetControl As Control) As IEnumerable(Of ScriptDescriptor) Implements IExtenderControl.GetScriptDescriptors" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptDescriptor ^&gt; ^ System.Web.UI.IExtenderControl.GetScriptDescriptors(System::Web::UI::Control ^ targetControl) = System::Web::UI::IExtenderControl::GetScriptDescriptors;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IExtenderControl.GetScriptDescriptors(System.Web.UI.Control)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -186,7 +214,12 @@
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerable&lt;System.Web.UI.ScriptReference&gt; IExtenderControl.GetScriptReferences ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.UI.ScriptReference&gt; System.Web.UI.IExtenderControl.GetScriptReferences() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.ExtenderControl.System#Web#UI#IExtenderControl#GetScriptReferences" />
+      <MemberSignature Language="VB.NET" Value="Function GetScriptReferences () As IEnumerable(Of ScriptReference) Implements IExtenderControl.GetScriptReferences" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerable&lt;System::Web::UI::ScriptReference ^&gt; ^ System.Web.UI.IExtenderControl.GetScriptReferences() = System::Web::UI::IExtenderControl::GetScriptReferences;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.IExtenderControl.GetScriptReferences</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -205,6 +238,9 @@
       <MemberSignature Language="C#" Value="public string TargetControlID { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetControlID" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExtenderControl.TargetControlID" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetControlID As String" />
+      <MemberSignature Language="F#" Value="member this.TargetControlID : string with get, set" Usage="System.Web.UI.ExtenderControl.TargetControlID" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetControlID { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -234,6 +270,9 @@
       <MemberSignature Language="C#" Value="public override bool Visible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Visible" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ExtenderControl.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Visible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Visible : bool with get, set" Usage="System.Web.UI.ExtenderControl.Visible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool Visible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -244,7 +283,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>

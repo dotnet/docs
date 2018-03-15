@@ -1,7 +1,10 @@
-<Type Name="UdpAnySourceMulticastClient" FullName="System.Net.Sockets.UdpAnySourceMulticastClient">
+﻿<Type Name="UdpAnySourceMulticastClient" FullName="System.Net.Sockets.UdpAnySourceMulticastClient">
   <TypeSignature Language="C#" Value="public class UdpAnySourceMulticastClient : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UdpAnySourceMulticastClient extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.UdpAnySourceMulticastClient" />
+  <TypeSignature Language="VB.NET" Value="Public Class UdpAnySourceMulticastClient&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type UdpAnySourceMulticastClient = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UdpAnySourceMulticastClient : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public UdpAnySourceMulticastClient (System.Net.IPAddress groupAddress, int localPort);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Net.IPAddress groupAddress, int32 localPort) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.#ctor(System.Net.IPAddress,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (groupAddress As IPAddress, localPort As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Net.Sockets.UdpAnySourceMulticastClient : System.Net.IPAddress * int -&gt; System.Net.Sockets.UdpAnySourceMulticastClient" Usage="new System.Net.Sockets.UdpAnySourceMulticastClient (groupAddress, localPort)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UdpAnySourceMulticastClient(System::Net::IPAddress ^ groupAddress, int localPort);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -74,6 +80,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginJoinGroup (AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginJoinGroup(class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.BeginJoinGroup(System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginJoinGroup (callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginJoinGroup : AsyncCallback * obj -&gt; IAsyncResult" Usage="udpAnySourceMulticastClient.BeginJoinGroup (callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginJoinGroup(AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -122,6 +131,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginReceiveFromGroup (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginReceiveFromGroup(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.BeginReceiveFromGroup(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginReceiveFromGroup (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginReceiveFromGroup : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="udpAnySourceMulticastClient.BeginReceiveFromGroup (buffer, offset, count, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginReceiveFromGroup(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -192,6 +204,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSendTo (byte[] buffer, int offset, int count, System.Net.IPEndPoint remoteEndPoint, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSendTo(unsigned int8[] buffer, int32 offset, int32 count, class System.Net.IPEndPoint remoteEndPoint, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.IPEndPoint,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginSendTo (buffer As Byte(), offset As Integer, count As Integer, remoteEndPoint As IPEndPoint, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginSendTo : byte[] * int * int * System.Net.IPEndPoint * AsyncCallback * obj -&gt; IAsyncResult" Usage="udpAnySourceMulticastClient.BeginSendTo (buffer, offset, count, remoteEndPoint, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSendTo(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, System::Net::IPEndPoint ^ remoteEndPoint, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -270,6 +285,9 @@
       <MemberSignature Language="C#" Value="public IAsyncResult BeginSendToGroup (byte[] buffer, int offset, int count, AsyncCallback callback, object state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IAsyncResult BeginSendToGroup(unsigned int8[] buffer, int32 offset, int32 count, class System.AsyncCallback callback, object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.BeginSendToGroup(System.Byte[],System.Int32,System.Int32,System.AsyncCallback,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BeginSendToGroup (buffer As Byte(), offset As Integer, count As Integer, callback As AsyncCallback, state As Object) As IAsyncResult" />
+      <MemberSignature Language="F#" Value="member this.BeginSendToGroup : byte[] * int * int * AsyncCallback * obj -&gt; IAsyncResult" Usage="udpAnySourceMulticastClient.BeginSendToGroup (buffer, offset, count, callback, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IAsyncResult ^ BeginSendToGroup(cli::array &lt;System::Byte&gt; ^ buffer, int offset, int count, AsyncCallback ^ callback, System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -342,6 +360,9 @@
       <MemberSignature Language="C#" Value="public void BlockSource (System.Net.IPAddress sourceAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BlockSource(class System.Net.IPAddress sourceAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.BlockSource(System.Net.IPAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BlockSource (sourceAddress As IPAddress)" />
+      <MemberSignature Language="F#" Value="member this.BlockSource : System.Net.IPAddress -&gt; unit" Usage="udpAnySourceMulticastClient.BlockSource sourceAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BlockSource(System::Net::IPAddress ^ sourceAddress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -387,7 +408,13 @@
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="udpAnySourceMulticastClient.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -422,6 +449,9 @@
       <MemberSignature Language="C#" Value="public void EndJoinGroup (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndJoinGroup(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.EndJoinGroup(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndJoinGroup (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndJoinGroup : IAsyncResult -&gt; unit" Usage="udpAnySourceMulticastClient.EndJoinGroup result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndJoinGroup(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -466,6 +496,9 @@
       <MemberSignature Language="C#" Value="public int EndReceiveFromGroup (IAsyncResult result, out System.Net.IPEndPoint source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 EndReceiveFromGroup(class System.IAsyncResult result, [out] class System.Net.IPEndPoint&amp; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.EndReceiveFromGroup(System.IAsyncResult,System.Net.IPEndPoint@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function EndReceiveFromGroup (result As IAsyncResult, ByRef source As IPEndPoint) As Integer" />
+      <MemberSignature Language="F#" Value="member this.EndReceiveFromGroup : IAsyncResult *  -&gt; int" Usage="udpAnySourceMulticastClient.EndReceiveFromGroup (result, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int EndReceiveFromGroup(IAsyncResult ^ result, [Runtime::InteropServices::Out] System::Net::IPEndPoint ^ % source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -512,6 +545,9 @@
       <MemberSignature Language="C#" Value="public void EndSendTo (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndSendTo(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.EndSendTo(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndSendTo (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndSendTo : IAsyncResult -&gt; unit" Usage="udpAnySourceMulticastClient.EndSendTo result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndSendTo(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -555,6 +591,9 @@
       <MemberSignature Language="C#" Value="public void EndSendToGroup (IAsyncResult result);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndSendToGroup(class System.IAsyncResult result) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.EndSendToGroup(System.IAsyncResult)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndSendToGroup (result As IAsyncResult)" />
+      <MemberSignature Language="F#" Value="member this.EndSendToGroup : IAsyncResult -&gt; unit" Usage="udpAnySourceMulticastClient.EndSendToGroup result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndSendToGroup(IAsyncResult ^ result);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -598,6 +637,9 @@
       <MemberSignature Language="C#" Value="public bool MulticastLoopback { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MulticastLoopback" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpAnySourceMulticastClient.MulticastLoopback" />
+      <MemberSignature Language="VB.NET" Value="Public Property MulticastLoopback As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MulticastLoopback : bool with get, set" Usage="System.Net.Sockets.UdpAnySourceMulticastClient.MulticastLoopback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MulticastLoopback { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -635,6 +677,9 @@
       <MemberSignature Language="C#" Value="public int ReceiveBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ReceiveBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpAnySourceMulticastClient.ReceiveBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReceiveBufferSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.ReceiveBufferSize : int with get, set" Usage="System.Net.Sockets.UdpAnySourceMulticastClient.ReceiveBufferSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ReceiveBufferSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -675,6 +720,9 @@
       <MemberSignature Language="C#" Value="public int SendBufferSize { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SendBufferSize" />
       <MemberSignature Language="DocId" Value="P:System.Net.Sockets.UdpAnySourceMulticastClient.SendBufferSize" />
+      <MemberSignature Language="VB.NET" Value="Public Property SendBufferSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.SendBufferSize : int with get, set" Usage="System.Net.Sockets.UdpAnySourceMulticastClient.SendBufferSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int SendBufferSize { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -717,6 +765,9 @@
       <MemberSignature Language="C#" Value="public void UnblockSource (System.Net.IPAddress sourceAddress);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UnblockSource(class System.Net.IPAddress sourceAddress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Sockets.UdpAnySourceMulticastClient.UnblockSource(System.Net.IPAddress)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UnblockSource (sourceAddress As IPAddress)" />
+      <MemberSignature Language="F#" Value="member this.UnblockSource : System.Net.IPAddress -&gt; unit" Usage="udpAnySourceMulticastClient.UnblockSource sourceAddress" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UnblockSource(System::Net::IPAddress ^ sourceAddress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="CustomBuildEventHandler" FullName="Microsoft.Build.Framework.CustomBuildEventHandler">
+﻿<Type Name="CustomBuildEventHandler" FullName="Microsoft.Build.Framework.CustomBuildEventHandler">
   <TypeSignature Language="C#" Value="public delegate void CustomBuildEventHandler(object sender, CustomBuildEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CustomBuildEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.CustomBuildEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub CustomBuildEventHandler(sender As Object, e As CustomBuildEventArgs)" />
+  <TypeSignature Language="F#" Value="type CustomBuildEventHandler = delegate of obj * CustomBuildEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void CustomBuildEventHandler(System::Object ^ sender, CustomBuildEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

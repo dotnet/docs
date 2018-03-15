@@ -1,7 +1,10 @@
-<Type Name="CodeIdentifier" FullName="System.Xml.Serialization.CodeIdentifier">
+﻿<Type Name="CodeIdentifier" FullName="System.Xml.Serialization.CodeIdentifier">
   <TypeSignature Language="C#" Value="public class CodeIdentifier" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CodeIdentifier extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.CodeIdentifier" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeIdentifier" />
+  <TypeSignature Language="F#" Value="type CodeIdentifier = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeIdentifier" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +42,8 @@
       <MemberSignature Language="C#" Value="public CodeIdentifier ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifier.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeIdentifier();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -69,6 +74,9 @@
       <MemberSignature Language="C#" Value="public static string MakeCamel (string identifier);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MakeCamel(string identifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifier.MakeCamel(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeCamel (identifier As String) As String" />
+      <MemberSignature Language="F#" Value="static member MakeCamel : string -&gt; string" Usage="System.Xml.Serialization.CodeIdentifier.MakeCamel identifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ MakeCamel(System::String ^ identifier);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -110,6 +118,9 @@
       <MemberSignature Language="C#" Value="public static string MakePascal (string identifier);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MakePascal(string identifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifier.MakePascal(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakePascal (identifier As String) As String" />
+      <MemberSignature Language="F#" Value="static member MakePascal : string -&gt; string" Usage="System.Xml.Serialization.CodeIdentifier.MakePascal identifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ MakePascal(System::String ^ identifier);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -151,6 +162,9 @@
       <MemberSignature Language="C#" Value="public static string MakeValid (string identifier);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string MakeValid(string identifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.CodeIdentifier.MakeValid(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeValid (identifier As String) As String" />
+      <MemberSignature Language="F#" Value="static member MakeValid : string -&gt; string" Usage="System.Xml.Serialization.CodeIdentifier.MakeValid identifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ MakeValid(System::String ^ identifier);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="OperationAbortedException" FullName="System.Data.OperationAbortedException">
+﻿<Type Name="OperationAbortedException" FullName="System.Data.OperationAbortedException">
   <TypeSignature Language="C#" Value="public sealed class OperationAbortedException : SystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit OperationAbortedException extends System.SystemException" />
   <TypeSignature Language="DocId" Value="T:System.Data.OperationAbortedException" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OperationAbortedException&#xA;Inherits SystemException" />
+  <TypeSignature Language="F#" Value="type OperationAbortedException = class&#xA;    inherit SystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OperationAbortedException sealed : SystemException" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

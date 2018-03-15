@@ -1,7 +1,10 @@
-<Type Name="WriteLine" FullName="System.Activities.Statements.WriteLine">
+﻿<Type Name="WriteLine" FullName="System.Activities.Statements.WriteLine">
   <TypeSignature Language="C#" Value="public sealed class WriteLine : System.Activities.CodeActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WriteLine extends System.Activities.CodeActivity" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.WriteLine" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WriteLine&#xA;Inherits CodeActivity" />
+  <TypeSignature Language="F#" Value="type WriteLine = class&#xA;    inherit CodeActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WriteLine sealed : System::Activities::CodeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,8 @@
       <MemberSignature Language="C#" Value="public WriteLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.WriteLine.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WriteLine();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -39,6 +44,9 @@
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.CodeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.CodeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.WriteLine.CacheMetadata(System.Activities.CodeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As CodeActivityMetadata)" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.CodeActivityMetadata -&gt; unit" Usage="writeLine.CacheMetadata metadata" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::CodeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -60,6 +68,9 @@
       <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.CodeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.CodeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.WriteLine.Execute(System.Activities.CodeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As CodeActivityContext)" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.CodeActivityContext -&gt; unit" Usage="writeLine.Execute context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::CodeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -81,6 +92,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;string&gt; Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;string&gt; Text" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.WriteLine.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As InArgument(Of String)" />
+      <MemberSignature Language="F#" Value="member this.Text : System.Activities.InArgument&lt;string&gt; with get, set" Usage="System.Activities.Statements.WriteLine.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::String ^&gt; ^ Text { System::Activities::InArgument&lt;System::String ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::String ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -104,6 +118,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;System.IO.TextWriter&gt; TextWriter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;class System.IO.TextWriter&gt; TextWriter" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.WriteLine.TextWriter" />
+      <MemberSignature Language="VB.NET" Value="Public Property TextWriter As InArgument(Of TextWriter)" />
+      <MemberSignature Language="F#" Value="member this.TextWriter : System.Activities.InArgument&lt;System.IO.TextWriter&gt; with get, set" Usage="System.Activities.Statements.WriteLine.TextWriter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;System::IO::TextWriter ^&gt; ^ TextWriter { System::Activities::InArgument&lt;System::IO::TextWriter ^&gt; ^ get(); void set(System::Activities::InArgument&lt;System::IO::TextWriter ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>

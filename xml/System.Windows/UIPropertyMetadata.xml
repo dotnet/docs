@@ -1,7 +1,10 @@
-<Type Name="UIPropertyMetadata" FullName="System.Windows.UIPropertyMetadata">
+﻿<Type Name="UIPropertyMetadata" FullName="System.Windows.UIPropertyMetadata">
   <TypeSignature Language="C#" Value="public class UIPropertyMetadata : System.Windows.PropertyMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UIPropertyMetadata extends System.Windows.PropertyMetadata" />
   <TypeSignature Language="DocId" Value="T:System.Windows.UIPropertyMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Class UIPropertyMetadata&#xA;Inherits PropertyMetadata" />
+  <TypeSignature Language="F#" Value="type UIPropertyMetadata = class&#xA;    inherit PropertyMetadata" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UIPropertyMetadata : System::Windows::PropertyMetadata" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,10 +26,21 @@
     <altmember cref="T:System.Windows.FrameworkPropertyMetadata" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.UIPropertyMetadata" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public UIPropertyMetadata ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.UIPropertyMetadata.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPropertyMetadata();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -42,6 +56,9 @@
       <MemberSignature Language="C#" Value="public UIPropertyMetadata (object defaultValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.UIPropertyMetadata.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (defaultValue As Object)" />
+      <MemberSignature Language="F#" Value="new System.Windows.UIPropertyMetadata : obj -&gt; System.Windows.UIPropertyMetadata" Usage="new System.Windows.UIPropertyMetadata defaultValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPropertyMetadata(System::Object ^ defaultValue);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -60,6 +77,8 @@
       <MemberSignature Language="C#" Value="public UIPropertyMetadata (System.Windows.PropertyChangedCallback propertyChangedCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.PropertyChangedCallback propertyChangedCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.UIPropertyMetadata.#ctor(System.Windows.PropertyChangedCallback)" />
+      <MemberSignature Language="F#" Value="new System.Windows.UIPropertyMetadata : System.Windows.PropertyChangedCallback -&gt; System.Windows.UIPropertyMetadata" Usage="new System.Windows.UIPropertyMetadata propertyChangedCallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPropertyMetadata(System::Windows::PropertyChangedCallback ^ propertyChangedCallback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +97,8 @@
       <MemberSignature Language="C#" Value="public UIPropertyMetadata (object defaultValue, System.Windows.PropertyChangedCallback propertyChangedCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, class System.Windows.PropertyChangedCallback propertyChangedCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.UIPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback)" />
+      <MemberSignature Language="F#" Value="new System.Windows.UIPropertyMetadata : obj * System.Windows.PropertyChangedCallback -&gt; System.Windows.UIPropertyMetadata" Usage="new System.Windows.UIPropertyMetadata (defaultValue, propertyChangedCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPropertyMetadata(System::Object ^ defaultValue, System::Windows::PropertyChangedCallback ^ propertyChangedCallback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -98,6 +119,8 @@
       <MemberSignature Language="C#" Value="public UIPropertyMetadata (object defaultValue, System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.UIPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)" />
+      <MemberSignature Language="F#" Value="new System.Windows.UIPropertyMetadata : obj * System.Windows.PropertyChangedCallback * System.Windows.CoerceValueCallback -&gt; System.Windows.UIPropertyMetadata" Usage="new System.Windows.UIPropertyMetadata (defaultValue, propertyChangedCallback, coerceValueCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPropertyMetadata(System::Object ^ defaultValue, System::Windows::PropertyChangedCallback ^ propertyChangedCallback, System::Windows::CoerceValueCallback ^ coerceValueCallback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -120,6 +143,8 @@
       <MemberSignature Language="C#" Value="public UIPropertyMetadata (object defaultValue, System.Windows.PropertyChangedCallback propertyChangedCallback, System.Windows.CoerceValueCallback coerceValueCallback, bool isAnimationProhibited);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object defaultValue, class System.Windows.PropertyChangedCallback propertyChangedCallback, class System.Windows.CoerceValueCallback coerceValueCallback, bool isAnimationProhibited) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.UIPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback,System.Boolean)" />
+      <MemberSignature Language="F#" Value="new System.Windows.UIPropertyMetadata : obj * System.Windows.PropertyChangedCallback * System.Windows.CoerceValueCallback * bool -&gt; System.Windows.UIPropertyMetadata" Usage="new System.Windows.UIPropertyMetadata (defaultValue, propertyChangedCallback, coerceValueCallback, isAnimationProhibited)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UIPropertyMetadata(System::Object ^ defaultValue, System::Windows::PropertyChangedCallback ^ propertyChangedCallback, System::Windows::CoerceValueCallback ^ coerceValueCallback, bool isAnimationProhibited);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -144,6 +169,9 @@
       <MemberSignature Language="C#" Value="public bool IsAnimationProhibited { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAnimationProhibited" />
       <MemberSignature Language="DocId" Value="P:System.Windows.UIPropertyMetadata.IsAnimationProhibited" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsAnimationProhibited As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAnimationProhibited : bool with get, set" Usage="System.Windows.UIPropertyMetadata.IsAnimationProhibited" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAnimationProhibited { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -170,14 +198,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.UIPropertyMetadata" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

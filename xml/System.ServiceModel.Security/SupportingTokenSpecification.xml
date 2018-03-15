@@ -1,7 +1,10 @@
-<Type Name="SupportingTokenSpecification" FullName="System.ServiceModel.Security.SupportingTokenSpecification">
+﻿<Type Name="SupportingTokenSpecification" FullName="System.ServiceModel.Security.SupportingTokenSpecification">
   <TypeSignature Language="C#" Value="public class SupportingTokenSpecification : System.ServiceModel.Security.SecurityTokenSpecification" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SupportingTokenSpecification extends System.ServiceModel.Security.SecurityTokenSpecification" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SupportingTokenSpecification" />
+  <TypeSignature Language="VB.NET" Value="Public Class SupportingTokenSpecification&#xA;Inherits SecurityTokenSpecification" />
+  <TypeSignature Language="F#" Value="type SupportingTokenSpecification = class&#xA;    inherit SecurityTokenSpecification" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SupportingTokenSpecification : System::ServiceModel::Security::SecurityTokenSpecification" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,10 +25,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SupportingTokenSpecification" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SupportingTokenSpecification (System.IdentityModel.Tokens.SecurityToken token, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; tokenPolicies, System.ServiceModel.Security.SecurityTokenAttachmentMode attachmentMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityToken token, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; tokenPolicies, valuetype System.ServiceModel.Security.SecurityTokenAttachmentMode attachmentMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SupportingTokenSpecification.#ctor(System.IdentityModel.Tokens.SecurityToken,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Policy.IAuthorizationPolicy},System.ServiceModel.Security.SecurityTokenAttachmentMode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (token As SecurityToken, tokenPolicies As ReadOnlyCollection(Of IAuthorizationPolicy), attachmentMode As SecurityTokenAttachmentMode)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SupportingTokenSpecification : System.IdentityModel.Tokens.SecurityToken * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; * System.ServiceModel.Security.SecurityTokenAttachmentMode -&gt; System.ServiceModel.Security.SupportingTokenSpecification" Usage="new System.ServiceModel.Security.SupportingTokenSpecification (token, tokenPolicies, attachmentMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SupportingTokenSpecification(System::IdentityModel::Tokens::SecurityToken ^ token, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ tokenPolicies, System::ServiceModel::Security::SecurityTokenAttachmentMode attachmentMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -50,6 +65,9 @@
       <MemberSignature Language="C#" Value="public SupportingTokenSpecification (System.IdentityModel.Tokens.SecurityToken token, System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; tokenPolicies, System.ServiceModel.Security.SecurityTokenAttachmentMode attachmentMode, System.ServiceModel.Security.Tokens.SecurityTokenParameters tokenParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IdentityModel.Tokens.SecurityToken token, class System.Collections.ObjectModel.ReadOnlyCollection`1&lt;class System.IdentityModel.Policy.IAuthorizationPolicy&gt; tokenPolicies, valuetype System.ServiceModel.Security.SecurityTokenAttachmentMode attachmentMode, class System.ServiceModel.Security.Tokens.SecurityTokenParameters tokenParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SupportingTokenSpecification.#ctor(System.IdentityModel.Tokens.SecurityToken,System.Collections.ObjectModel.ReadOnlyCollection{System.IdentityModel.Policy.IAuthorizationPolicy},System.ServiceModel.Security.SecurityTokenAttachmentMode,System.ServiceModel.Security.Tokens.SecurityTokenParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (token As SecurityToken, tokenPolicies As ReadOnlyCollection(Of IAuthorizationPolicy), attachmentMode As SecurityTokenAttachmentMode, tokenParameters As SecurityTokenParameters)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SupportingTokenSpecification : System.IdentityModel.Tokens.SecurityToken * System.Collections.ObjectModel.ReadOnlyCollection&lt;System.IdentityModel.Policy.IAuthorizationPolicy&gt; * System.ServiceModel.Security.SecurityTokenAttachmentMode * System.ServiceModel.Security.Tokens.SecurityTokenParameters -&gt; System.ServiceModel.Security.SupportingTokenSpecification" Usage="new System.ServiceModel.Security.SupportingTokenSpecification (token, tokenPolicies, attachmentMode, tokenParameters)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SupportingTokenSpecification(System::IdentityModel::Tokens::SecurityToken ^ token, System::Collections::ObjectModel::ReadOnlyCollection&lt;System::IdentityModel::Policy::IAuthorizationPolicy ^&gt; ^ tokenPolicies, System::ServiceModel::Security::SecurityTokenAttachmentMode attachmentMode, System::ServiceModel::Security::Tokens::SecurityTokenParameters ^ tokenParameters);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -74,6 +92,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.SecurityTokenAttachmentMode SecurityTokenAttachmentMode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Security.SecurityTokenAttachmentMode SecurityTokenAttachmentMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.SupportingTokenSpecification.SecurityTokenAttachmentMode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SecurityTokenAttachmentMode As SecurityTokenAttachmentMode" />
+      <MemberSignature Language="F#" Value="member this.SecurityTokenAttachmentMode : System.ServiceModel.Security.SecurityTokenAttachmentMode" Usage="System.ServiceModel.Security.SupportingTokenSpecification.SecurityTokenAttachmentMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::SecurityTokenAttachmentMode SecurityTokenAttachmentMode { System::ServiceModel::Security::SecurityTokenAttachmentMode get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -103,14 +124,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SupportingTokenSpecification" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

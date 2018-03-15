@@ -1,7 +1,10 @@
-<Type Name="SerializationEntry" FullName="System.Runtime.Serialization.SerializationEntry">
+﻿<Type Name="SerializationEntry" FullName="System.Runtime.Serialization.SerializationEntry">
   <TypeSignature Language="C#" Value="public struct SerializationEntry" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SerializationEntry extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.SerializationEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SerializationEntry" />
+  <TypeSignature Language="F#" Value="type SerializationEntry = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class SerializationEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.SerializationEntry.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Runtime.Serialization.SerializationEntry.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -70,6 +76,9 @@
       <MemberSignature Language="C#" Value="public Type ObjectType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ObjectType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.SerializationEntry.ObjectType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ObjectType As Type" />
+      <MemberSignature Language="F#" Value="member this.ObjectType : Type" Usage="System.Runtime.Serialization.SerializationEntry.ObjectType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ObjectType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>
@@ -109,6 +118,9 @@
       <MemberSignature Language="C#" Value="public object Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Value" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Serialization.SerializationEntry.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Object" />
+      <MemberSignature Language="F#" Value="member this.Value : obj" Usage="System.Runtime.Serialization.SerializationEntry.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Value { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Formatters</AssemblyName>

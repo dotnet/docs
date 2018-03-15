@@ -1,7 +1,10 @@
-<Type Name="ToolboxComponentsCreatedEventArgs" FullName="System.Drawing.Design.ToolboxComponentsCreatedEventArgs">
+﻿<Type Name="ToolboxComponentsCreatedEventArgs" FullName="System.Drawing.Design.ToolboxComponentsCreatedEventArgs">
   <TypeSignature Language="C#" Value="public class ToolboxComponentsCreatedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolboxComponentsCreatedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxComponentsCreatedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ToolboxComponentsCreatedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type ToolboxComponentsCreatedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ToolboxComponentsCreatedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public ToolboxComponentsCreatedEventArgs (System.ComponentModel.IComponent[] components);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ComponentModel.IComponent[] components) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Design.ToolboxComponentsCreatedEventArgs.#ctor(System.ComponentModel.IComponent[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (components As IComponent())" />
+      <MemberSignature Language="F#" Value="new System.Drawing.Design.ToolboxComponentsCreatedEventArgs : System.ComponentModel.IComponent[] -&gt; System.Drawing.Design.ToolboxComponentsCreatedEventArgs" Usage="new System.Drawing.Design.ToolboxComponentsCreatedEventArgs components" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ToolboxComponentsCreatedEventArgs(cli::array &lt;System::ComponentModel::IComponent ^&gt; ^ components);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -55,6 +61,9 @@
       <MemberSignature Language="C#" Value="public System.ComponentModel.IComponent[] Components { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.IComponent[] Components" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Design.ToolboxComponentsCreatedEventArgs.Components" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Components As IComponent()" />
+      <MemberSignature Language="F#" Value="member this.Components : System.ComponentModel.IComponent[]" Usage="System.Drawing.Design.ToolboxComponentsCreatedEventArgs.Components" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::ComponentModel::IComponent ^&gt; ^ Components { cli::array &lt;System::ComponentModel::IComponent ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>

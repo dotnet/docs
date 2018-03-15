@@ -1,7 +1,10 @@
-<Type Name="XDeclaration" FullName="System.Xml.Linq.XDeclaration">
+﻿<Type Name="XDeclaration" FullName="System.Xml.Linq.XDeclaration">
   <TypeSignature Language="C#" Value="public class XDeclaration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XDeclaration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Linq.XDeclaration" />
+  <TypeSignature Language="VB.NET" Value="Public Class XDeclaration" />
+  <TypeSignature Language="F#" Value="type XDeclaration = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XDeclaration" />
   <AssemblyInfo>
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,10 +39,25 @@
     <altmember cref="P:System.Xml.Linq.XDocument.Declaration" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XDeclaration" /> class.</summary>
+        <altmember cref="M:System.Xml.Linq.XDeclaration.ToString" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XDeclaration (System.Xml.Linq.XDeclaration other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.Linq.XDeclaration other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDeclaration.#ctor(System.Xml.Linq.XDeclaration)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (other As XDeclaration)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XDeclaration : System.Xml.Linq.XDeclaration -&gt; System.Xml.Linq.XDeclaration" Usage="new System.Xml.Linq.XDeclaration other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XDeclaration(System::Xml::Linq::XDeclaration ^ other);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -77,6 +95,9 @@
       <MemberSignature Language="C#" Value="public XDeclaration (string version, string encoding, string standalone);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string version, string encoding, string standalone) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDeclaration.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (version As String, encoding As String, standalone As String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Linq.XDeclaration : string * string * string -&gt; System.Xml.Linq.XDeclaration" Usage="new System.Xml.Linq.XDeclaration (version, encoding, standalone)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XDeclaration(System::String ^ version, System::String ^ encoding, System::String ^ standalone);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -148,6 +169,9 @@ Console.WriteLine(File.ReadAllText("Root.xml"))
       <MemberSignature Language="C#" Value="public string Encoding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Encoding" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDeclaration.Encoding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Encoding As String" />
+      <MemberSignature Language="F#" Value="member this.Encoding : string with get, set" Usage="System.Xml.Linq.XDeclaration.Encoding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Encoding { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -281,6 +305,9 @@ Encoding of loaded document is:utf-16
       <MemberSignature Language="C#" Value="public string Standalone { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Standalone" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDeclaration.Standalone" />
+      <MemberSignature Language="VB.NET" Value="Public Property Standalone As String" />
+      <MemberSignature Language="F#" Value="member this.Standalone : string with get, set" Usage="System.Xml.Linq.XDeclaration.Standalone" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Standalone { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -345,6 +372,9 @@ yes
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Linq.XDeclaration.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xDeclaration.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -375,6 +405,9 @@ yes
       <MemberSignature Language="C#" Value="public string Version { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Version" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Linq.XDeclaration.Version" />
+      <MemberSignature Language="VB.NET" Value="Public Property Version As String" />
+      <MemberSignature Language="F#" Value="member this.Version : string with get, set" Usage="System.Xml.Linq.XDeclaration.Version" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Version { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml.XDocument</AssemblyName>
@@ -435,17 +468,5 @@ yes
         <altmember cref="P:System.Xml.Linq.XDeclaration.Standalone" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Linq.XDeclaration" /> class.</summary>
-        <altmember cref="M:System.Xml.Linq.XDeclaration.ToString" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

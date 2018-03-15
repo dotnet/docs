@@ -1,7 +1,10 @@
-<Type Name="DataProtectionPermissionFlags" FullName="System.Security.Permissions.DataProtectionPermissionFlags">
+﻿<Type Name="DataProtectionPermissionFlags" FullName="System.Security.Permissions.DataProtectionPermissionFlags">
   <TypeSignature Language="C#" Value="public enum DataProtectionPermissionFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed DataProtectionPermissionFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.DataProtectionPermissionFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataProtectionPermissionFlags" />
+  <TypeSignature Language="F#" Value="type DataProtectionPermissionFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataProtectionPermissionFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="AllFlags" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.DataProtectionPermissionFlags AllFlags = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.AllFlags" />
+      <MemberSignature Language="VB.NET" Value="AllFlags" />
+      <MemberSignature Language="F#" Value="AllFlags = 15" Usage="System.Security.Permissions.DataProtectionPermissionFlags.AllFlags" />
+      <MemberSignature Language="C++ CLI" Value="AllFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -41,6 +47,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>The ability to encrypt data, encrypt memory, unencrypt data, and unencrypt memory.</summary>
       </Docs>
@@ -49,6 +56,9 @@
       <MemberSignature Language="C#" Value="NoFlags" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.DataProtectionPermissionFlags NoFlags = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.NoFlags" />
+      <MemberSignature Language="VB.NET" Value="NoFlags" />
+      <MemberSignature Language="F#" Value="NoFlags = 0" Usage="System.Security.Permissions.DataProtectionPermissionFlags.NoFlags" />
+      <MemberSignature Language="C++ CLI" Value="NoFlags" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -57,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No protection abilities.</summary>
       </Docs>
@@ -65,6 +76,9 @@
       <MemberSignature Language="C#" Value="ProtectData" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.DataProtectionPermissionFlags ProtectData = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.ProtectData" />
+      <MemberSignature Language="VB.NET" Value="ProtectData" />
+      <MemberSignature Language="F#" Value="ProtectData = 1" Usage="System.Security.Permissions.DataProtectionPermissionFlags.ProtectData" />
+      <MemberSignature Language="C++ CLI" Value="ProtectData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -73,6 +87,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The ability to encrypt data.</summary>
       </Docs>
@@ -81,6 +96,9 @@
       <MemberSignature Language="C#" Value="ProtectMemory" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.DataProtectionPermissionFlags ProtectMemory = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.ProtectMemory" />
+      <MemberSignature Language="VB.NET" Value="ProtectMemory" />
+      <MemberSignature Language="F#" Value="ProtectMemory = 4" Usage="System.Security.Permissions.DataProtectionPermissionFlags.ProtectMemory" />
+      <MemberSignature Language="C++ CLI" Value="ProtectMemory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -89,6 +107,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The ability to encrypt memory.</summary>
       </Docs>
@@ -97,6 +116,9 @@
       <MemberSignature Language="C#" Value="UnprotectData" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.DataProtectionPermissionFlags UnprotectData = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.UnprotectData" />
+      <MemberSignature Language="VB.NET" Value="UnprotectData" />
+      <MemberSignature Language="F#" Value="UnprotectData = 2" Usage="System.Security.Permissions.DataProtectionPermissionFlags.UnprotectData" />
+      <MemberSignature Language="C++ CLI" Value="UnprotectData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -105,6 +127,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The ability to unencrypt data.</summary>
       </Docs>
@@ -113,6 +136,9 @@
       <MemberSignature Language="C#" Value="UnprotectMemory" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.DataProtectionPermissionFlags UnprotectMemory = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.DataProtectionPermissionFlags.UnprotectMemory" />
+      <MemberSignature Language="VB.NET" Value="UnprotectMemory" />
+      <MemberSignature Language="F#" Value="UnprotectMemory = 8" Usage="System.Security.Permissions.DataProtectionPermissionFlags.UnprotectMemory" />
+      <MemberSignature Language="C++ CLI" Value="UnprotectMemory" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -121,6 +147,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.DataProtectionPermissionFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The ability to unencrypt memory.</summary>
       </Docs>

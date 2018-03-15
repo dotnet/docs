@@ -1,7 +1,10 @@
-<Type Name="DoWorkEventArgs" FullName="System.ComponentModel.DoWorkEventArgs">
+﻿<Type Name="DoWorkEventArgs" FullName="System.ComponentModel.DoWorkEventArgs">
   <TypeSignature Language="C#" Value="public class DoWorkEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DoWorkEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DoWorkEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DoWorkEventArgs&#xA;Inherits CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type DoWorkEventArgs = class&#xA;    inherit CancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DoWorkEventArgs : System::ComponentModel::CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public DoWorkEventArgs (object argument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DoWorkEventArgs.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (argument As Object)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DoWorkEventArgs : obj -&gt; System.ComponentModel.DoWorkEventArgs" Usage="new System.ComponentModel.DoWorkEventArgs argument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DoWorkEventArgs(System::Object ^ argument);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -70,6 +76,9 @@
       <MemberSignature Language="C#" Value="public object Argument { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Argument" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DoWorkEventArgs.Argument" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Argument As Object" />
+      <MemberSignature Language="F#" Value="member this.Argument : obj" Usage="System.ComponentModel.DoWorkEventArgs.Argument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Argument { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -109,6 +118,9 @@
       <MemberSignature Language="C#" Value="public bool Cancel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Cancel" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DoWorkEventArgs.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Property Cancel As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Cancel : bool with get, set" Usage="System.ComponentModel.DoWorkEventArgs.Cancel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Cancel { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
@@ -127,6 +139,9 @@
       <MemberSignature Language="C#" Value="public object Result { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Result" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DoWorkEventArgs.Result" />
+      <MemberSignature Language="VB.NET" Value="Public Property Result As Object" />
+      <MemberSignature Language="F#" Value="member this.Result : obj with get, set" Usage="System.ComponentModel.DoWorkEventArgs.Result" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Result { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>

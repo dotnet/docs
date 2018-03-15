@@ -1,7 +1,10 @@
-<Type Name="MimeXmlBinding" FullName="System.Web.Services.Description.MimeXmlBinding">
+﻿<Type Name="MimeXmlBinding" FullName="System.Web.Services.Description.MimeXmlBinding">
   <TypeSignature Language="C#" Value="public sealed class MimeXmlBinding : System.Web.Services.Description.ServiceDescriptionFormatExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MimeXmlBinding extends System.Web.Services.Description.ServiceDescriptionFormatExtension" />
   <TypeSignature Language="DocId" Value="T:System.Web.Services.Description.MimeXmlBinding" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MimeXmlBinding&#xA;Inherits ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="F#" Value="type MimeXmlBinding = class&#xA;    inherit ServiceDescriptionFormatExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MimeXmlBinding sealed : System::Web::Services::Description::ServiceDescriptionFormatExtension" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Services</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -41,6 +44,8 @@
       <MemberSignature Language="C#" Value="public MimeXmlBinding ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Services.Description.MimeXmlBinding.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MimeXmlBinding();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>
@@ -57,6 +62,9 @@
       <MemberSignature Language="C#" Value="public string Part { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Part" />
       <MemberSignature Language="DocId" Value="P:System.Web.Services.Description.MimeXmlBinding.Part" />
+      <MemberSignature Language="VB.NET" Value="Public Property Part As String" />
+      <MemberSignature Language="F#" Value="member this.Part : string with get, set" Usage="System.Web.Services.Description.MimeXmlBinding.Part" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Part { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Services</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="TaskEventHandler" FullName="System.Web.TaskEventHandler">
+﻿<Type Name="TaskEventHandler" FullName="System.Web.TaskEventHandler">
   <TypeSignature Language="C#" Value="public delegate System.Threading.Tasks.Task TaskEventHandler(object sender, EventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TaskEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.TaskEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function TaskEventHandler(sender As Object, e As EventArgs) As Task " />
+  <TypeSignature Language="F#" Value="type TaskEventHandler = delegate of obj * EventArgs -&gt; Task" />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::Threading::Tasks::Task ^ TaskEventHandler(System::Object ^ sender, EventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

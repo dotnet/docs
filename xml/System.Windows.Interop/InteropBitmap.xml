@@ -1,7 +1,10 @@
-<Type Name="InteropBitmap" FullName="System.Windows.Interop.InteropBitmap">
+﻿<Type Name="InteropBitmap" FullName="System.Windows.Interop.InteropBitmap">
   <TypeSignature Language="C#" Value="public sealed class InteropBitmap : System.Windows.Media.Imaging.BitmapSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InteropBitmap extends System.Windows.Media.Imaging.BitmapSource" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Interop.InteropBitmap" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InteropBitmap&#xA;Inherits BitmapSource" />
+  <TypeSignature Language="F#" Value="type InteropBitmap = class&#xA;    inherit BitmapSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InteropBitmap sealed : System::Windows::Media::Imaging::BitmapSource" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.InteropBitmap.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="interopBitmap.CloneCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -49,6 +55,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.InteropBitmap.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="interopBitmap.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -78,6 +87,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.InteropBitmap.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="interopBitmap.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -105,6 +117,9 @@
       <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.InteropBitmap.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="interopBitmap.GetAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -134,6 +149,9 @@
       <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.InteropBitmap.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="interopBitmap.GetCurrentValueAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -159,10 +177,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Invalidate">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Forces the hosted non-WPF UI to be rendered.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Invalidate">
       <MemberSignature Language="C#" Value="public void Invalidate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.InteropBitmap.Invalidate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invalidate ()" />
+      <MemberSignature Language="F#" Value="member this.Invalidate : unit -&gt; unit" Usage="interopBitmap.Invalidate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -188,6 +218,9 @@
       <MemberSignature Language="C#" Value="public void Invalidate (Nullable&lt;System.Windows.Int32Rect&gt; dirtyRect);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Invalidate(valuetype System.Nullable`1&lt;valuetype System.Windows.Int32Rect&gt; dirtyRect) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Interop.InteropBitmap.Invalidate(System.Nullable{System.Windows.Int32Rect})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invalidate (dirtyRect As Nullable(Of Int32Rect))" />
+      <MemberSignature Language="F#" Value="member this.Invalidate : Nullable&lt;System.Windows.Int32Rect&gt; -&gt; unit" Usage="interopBitmap.Invalidate dirtyRect" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate(Nullable&lt;System::Windows::Int32Rect&gt; dirtyRect);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -212,14 +245,5 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">to call this method. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Invalidate">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Forces the hosted non-WPF UI to be rendered.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

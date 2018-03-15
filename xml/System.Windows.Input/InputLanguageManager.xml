@@ -1,7 +1,10 @@
-<Type Name="InputLanguageManager" FullName="System.Windows.Input.InputLanguageManager">
+﻿<Type Name="InputLanguageManager" FullName="System.Windows.Input.InputLanguageManager">
   <TypeSignature Language="C#" Value="public sealed class InputLanguageManager : System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit InputLanguageManager extends System.Windows.Threading.DispatcherObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Input.InputLanguageManager" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class InputLanguageManager&#xA;Inherits DispatcherObject" />
+  <TypeSignature Language="F#" Value="type InputLanguageManager = class&#xA;    inherit DispatcherObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InputLanguageManager sealed : System::Windows::Threading::DispatcherObject" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable AvailableInputLanguages { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerable AvailableInputLanguages" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputLanguageManager.AvailableInputLanguages" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AvailableInputLanguages As IEnumerable" />
+      <MemberSignature Language="F#" Value="member this.AvailableInputLanguages : System.Collections.IEnumerable" Usage="System.Windows.Input.InputLanguageManager.AvailableInputLanguages" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IEnumerable ^ AvailableInputLanguages { System::Collections::IEnumerable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -73,6 +79,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Input.InputLanguageManager Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Input.InputLanguageManager Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputLanguageManager.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As InputLanguageManager" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Windows.Input.InputLanguageManager" Usage="System.Windows.Input.InputLanguageManager.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Input::InputLanguageManager ^ Current { System::Windows::Input::InputLanguageManager ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +112,9 @@
       <MemberSignature Language="C#" Value="public System.Globalization.CultureInfo CurrentInputLanguage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Globalization.CultureInfo CurrentInputLanguage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputLanguageManager.CurrentInputLanguage" />
+      <MemberSignature Language="VB.NET" Value="Public Property CurrentInputLanguage As CultureInfo" />
+      <MemberSignature Language="F#" Value="member this.CurrentInputLanguage : System.Globalization.CultureInfo with get, set" Usage="System.Windows.Input.InputLanguageManager.CurrentInputLanguage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Globalization::CultureInfo ^ CurrentInputLanguage { System::Globalization::CultureInfo ^ get(); void set(System::Globalization::CultureInfo ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +151,9 @@
       <MemberSignature Language="C#" Value="public static System.Globalization.CultureInfo GetInputLanguage (System.Windows.DependencyObject target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Globalization.CultureInfo GetInputLanguage(class System.Windows.DependencyObject target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputLanguageManager.GetInputLanguage(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetInputLanguage (target As DependencyObject) As CultureInfo" />
+      <MemberSignature Language="F#" Value="static member GetInputLanguage : System.Windows.DependencyObject -&gt; System.Globalization.CultureInfo" Usage="System.Windows.Input.InputLanguageManager.GetInputLanguage target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Globalization::CultureInfo ^ GetInputLanguage(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -181,6 +196,9 @@
       <MemberSignature Language="C#" Value="public static bool GetRestoreInputLanguage (System.Windows.DependencyObject target);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool GetRestoreInputLanguage(class System.Windows.DependencyObject target) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputLanguageManager.GetRestoreInputLanguage(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRestoreInputLanguage (target As DependencyObject) As Boolean" />
+      <MemberSignature Language="F#" Value="static member GetRestoreInputLanguage : System.Windows.DependencyObject -&gt; bool" Usage="System.Windows.Input.InputLanguageManager.GetRestoreInputLanguage target" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool GetRestoreInputLanguage(System::Windows::DependencyObject ^ target);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -206,10 +224,29 @@
         <altmember cref="M:System.Windows.Input.InputLanguageManager.SetRestoreInputLanguage(System.Windows.DependencyObject,System.Boolean)" />
       </Docs>
     </Member>
+    <Member MemberName="InputLanguage">
+      <MemberSignature Language="C#" Value="see GetInputLanguage, and SetInputLanguage" />
+      <MemberSignature Language="ILAsm" Value="see GetInputLanguage, and SetInputLanguage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputLanguageManager.InputLanguage" />
+      <MemberSignature Language="VB.NET" Value="see GetInputLanguage, and SetInputLanguage" />
+      <MemberSignature Language="F#" Value="see GetInputLanguage, and SetInputLanguage" Usage="see GetInputLanguage, and SetInputLanguage" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="InputLanguageChanged">
       <MemberSignature Language="C#" Value="public event System.Windows.Input.InputLanguageEventHandler InputLanguageChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.InputLanguageEventHandler InputLanguageChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.InputLanguageManager.InputLanguageChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event InputLanguageChanged As InputLanguageEventHandler " />
+      <MemberSignature Language="F#" Value="member this.InputLanguageChanged : System.Windows.Input.InputLanguageEventHandler " Usage="member this.InputLanguageChanged : System.Windows.Input.InputLanguageEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::InputLanguageEventHandler ^ InputLanguageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -228,6 +265,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Input.InputLanguageEventHandler InputLanguageChanging;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Input.InputLanguageEventHandler InputLanguageChanging" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Input.InputLanguageManager.InputLanguageChanging" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event InputLanguageChanging As InputLanguageEventHandler " />
+      <MemberSignature Language="F#" Value="member this.InputLanguageChanging : System.Windows.Input.InputLanguageEventHandler " Usage="member this.InputLanguageChanging : System.Windows.Input.InputLanguageEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Input::InputLanguageEventHandler ^ InputLanguageChanging;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -246,6 +286,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty InputLanguageProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty InputLanguageProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputLanguageManager.InputLanguageProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InputLanguageProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable InputLanguageProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.InputLanguageManager.InputLanguageProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ InputLanguageProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -263,6 +306,9 @@
       <MemberSignature Language="C#" Value="public void RegisterInputLanguageSource (System.Windows.Input.IInputLanguageSource inputLanguageSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterInputLanguageSource(class System.Windows.Input.IInputLanguageSource inputLanguageSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputLanguageManager.RegisterInputLanguageSource(System.Windows.Input.IInputLanguageSource)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterInputLanguageSource (inputLanguageSource As IInputLanguageSource)" />
+      <MemberSignature Language="F#" Value="member this.RegisterInputLanguageSource : System.Windows.Input.IInputLanguageSource -&gt; unit" Usage="inputLanguageManager.RegisterInputLanguageSource inputLanguageSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterInputLanguageSource(System::Windows::Input::IInputLanguageSource ^ inputLanguageSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -285,6 +331,9 @@
       <MemberSignature Language="C#" Value="public void ReportInputLanguageChanged (System.Globalization.CultureInfo newLanguageId, System.Globalization.CultureInfo previousLanguageId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReportInputLanguageChanged(class System.Globalization.CultureInfo newLanguageId, class System.Globalization.CultureInfo previousLanguageId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputLanguageManager.ReportInputLanguageChanged(System.Globalization.CultureInfo,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReportInputLanguageChanged (newLanguageId As CultureInfo, previousLanguageId As CultureInfo)" />
+      <MemberSignature Language="F#" Value="member this.ReportInputLanguageChanged : System.Globalization.CultureInfo * System.Globalization.CultureInfo -&gt; unit" Usage="inputLanguageManager.ReportInputLanguageChanged (newLanguageId, previousLanguageId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReportInputLanguageChanged(System::Globalization::CultureInfo ^ newLanguageId, System::Globalization::CultureInfo ^ previousLanguageId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -311,6 +360,9 @@
       <MemberSignature Language="C#" Value="public bool ReportInputLanguageChanging (System.Globalization.CultureInfo newLanguageId, System.Globalization.CultureInfo previousLanguageId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool ReportInputLanguageChanging(class System.Globalization.CultureInfo newLanguageId, class System.Globalization.CultureInfo previousLanguageId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputLanguageManager.ReportInputLanguageChanging(System.Globalization.CultureInfo,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReportInputLanguageChanging (newLanguageId As CultureInfo, previousLanguageId As CultureInfo) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ReportInputLanguageChanging : System.Globalization.CultureInfo * System.Globalization.CultureInfo -&gt; bool" Usage="inputLanguageManager.ReportInputLanguageChanging (newLanguageId, previousLanguageId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool ReportInputLanguageChanging(System::Globalization::CultureInfo ^ newLanguageId, System::Globalization::CultureInfo ^ previousLanguageId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -334,10 +386,29 @@
         <altmember cref="M:System.Windows.Input.InputLanguageManager.ReportInputLanguageChanged(System.Globalization.CultureInfo,System.Globalization.CultureInfo)" />
       </Docs>
     </Member>
+    <Member MemberName="RestoreInputLanguage">
+      <MemberSignature Language="C#" Value="see GetRestoreInputLanguage, and SetRestoreInputLanguage" />
+      <MemberSignature Language="ILAsm" Value="see GetRestoreInputLanguage, and SetRestoreInputLanguage" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Input.InputLanguageManager.RestoreInputLanguage" />
+      <MemberSignature Language="VB.NET" Value="see GetRestoreInputLanguage, and SetRestoreInputLanguage" />
+      <MemberSignature Language="F#" Value="see GetRestoreInputLanguage, and SetRestoreInputLanguage" Usage="see GetRestoreInputLanguage, and SetRestoreInputLanguage" />
+      <MemberType>AttachedProperty</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="RestoreInputLanguageProperty">
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RestoreInputLanguageProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RestoreInputLanguageProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Input.InputLanguageManager.RestoreInputLanguageProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RestoreInputLanguageProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RestoreInputLanguageProperty : System.Windows.DependencyProperty" Usage="System.Windows.Input.InputLanguageManager.RestoreInputLanguageProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RestoreInputLanguageProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -355,6 +426,9 @@
       <MemberSignature Language="C#" Value="public static void SetInputLanguage (System.Windows.DependencyObject target, System.Globalization.CultureInfo inputLanguage);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetInputLanguage(class System.Windows.DependencyObject target, class System.Globalization.CultureInfo inputLanguage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputLanguageManager.SetInputLanguage(System.Windows.DependencyObject,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetInputLanguage (target As DependencyObject, inputLanguage As CultureInfo)" />
+      <MemberSignature Language="F#" Value="static member SetInputLanguage : System.Windows.DependencyObject * System.Globalization.CultureInfo -&gt; unit" Usage="System.Windows.Input.InputLanguageManager.SetInputLanguage (target, inputLanguage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetInputLanguage(System::Windows::DependencyObject ^ target, System::Globalization::CultureInfo ^ inputLanguage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -390,6 +464,9 @@
       <MemberSignature Language="C#" Value="public static void SetRestoreInputLanguage (System.Windows.DependencyObject target, bool restore);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void SetRestoreInputLanguage(class System.Windows.DependencyObject target, bool restore) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Input.InputLanguageManager.SetRestoreInputLanguage(System.Windows.DependencyObject,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetRestoreInputLanguage (target As DependencyObject, restore As Boolean)" />
+      <MemberSignature Language="F#" Value="static member SetRestoreInputLanguage : System.Windows.DependencyObject * bool -&gt; unit" Usage="System.Windows.Input.InputLanguageManager.SetRestoreInputLanguage (target, restore)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void SetRestoreInputLanguage(System::Windows::DependencyObject ^ target, bool restore);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

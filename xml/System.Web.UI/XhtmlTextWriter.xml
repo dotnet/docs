@@ -1,7 +1,10 @@
-<Type Name="XhtmlTextWriter" FullName="System.Web.UI.XhtmlTextWriter">
+﻿<Type Name="XhtmlTextWriter" FullName="System.Web.UI.XhtmlTextWriter">
   <TypeSignature Language="C#" Value="public class XhtmlTextWriter : System.Web.UI.HtmlTextWriter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XhtmlTextWriter extends System.Web.UI.HtmlTextWriter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.XhtmlTextWriter" />
+  <TypeSignature Language="VB.NET" Value="Public Class XhtmlTextWriter&#xA;Inherits HtmlTextWriter" />
+  <TypeSignature Language="F#" Value="type XhtmlTextWriter = class&#xA;    inherit HtmlTextWriter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XhtmlTextWriter : System::Web::UI::HtmlTextWriter" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -66,10 +69,22 @@
     <altmember cref="T:System.Web.UI.ChtmlTextWriter" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.XhtmlTextWriter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XhtmlTextWriter (System.IO.TextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.XhtmlTextWriter.#ctor(System.IO.TextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.XhtmlTextWriter : System.IO.TextWriter -&gt; System.Web.UI.XhtmlTextWriter" Usage="new System.Web.UI.XhtmlTextWriter writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XhtmlTextWriter(System::IO::TextWriter ^ writer);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -107,6 +122,9 @@
       <MemberSignature Language="C#" Value="public XhtmlTextWriter (System.IO.TextWriter writer, string tabString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.TextWriter writer, string tabString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.XhtmlTextWriter.#ctor(System.IO.TextWriter,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (writer As TextWriter, tabString As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.XhtmlTextWriter : System.IO.TextWriter * string -&gt; System.Web.UI.XhtmlTextWriter" Usage="new System.Web.UI.XhtmlTextWriter (writer, tabString)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XhtmlTextWriter(System::IO::TextWriter ^ writer, System::String ^ tabString);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -137,6 +155,9 @@
       <MemberSignature Language="C#" Value="public virtual void AddRecognizedAttribute (string elementName, string attributeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddRecognizedAttribute(string elementName, string attributeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.XhtmlTextWriter.AddRecognizedAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddRecognizedAttribute (elementName As String, attributeName As String)" />
+      <MemberSignature Language="F#" Value="abstract member AddRecognizedAttribute : string * string -&gt; unit&#xA;override this.AddRecognizedAttribute : string * string -&gt; unit" Usage="xhtmlTextWriter.AddRecognizedAttribute (elementName, attributeName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddRecognizedAttribute(System::String ^ elementName, System::String ^ attributeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -169,6 +190,9 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Hashtable CommonAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Hashtable CommonAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.XhtmlTextWriter.CommonAttributes" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property CommonAttributes As Hashtable" />
+      <MemberSignature Language="F#" Value="member this.CommonAttributes : System.Collections.Hashtable" Usage="System.Web.UI.XhtmlTextWriter.CommonAttributes" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Hashtable ^ CommonAttributes { System::Collections::Hashtable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -206,6 +230,9 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Hashtable ElementSpecificAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Hashtable ElementSpecificAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.XhtmlTextWriter.ElementSpecificAttributes" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property ElementSpecificAttributes As Hashtable" />
+      <MemberSignature Language="F#" Value="member this.ElementSpecificAttributes : System.Collections.Hashtable" Usage="System.Web.UI.XhtmlTextWriter.ElementSpecificAttributes" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Hashtable ^ ElementSpecificAttributes { System::Collections::Hashtable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -270,6 +297,9 @@
       <MemberSignature Language="C#" Value="public override bool IsValidFormAttribute (string attributeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsValidFormAttribute(string attributeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.XhtmlTextWriter.IsValidFormAttribute(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsValidFormAttribute (attributeName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsValidFormAttribute : string -&gt; bool" Usage="xhtmlTextWriter.IsValidFormAttribute attributeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsValidFormAttribute(System::String ^ attributeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -312,6 +342,9 @@
       <MemberSignature Language="C#" Value="protected override bool OnAttributeRender (string name, string value, System.Web.UI.HtmlTextWriterAttribute key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnAttributeRender(string name, string value, valuetype System.Web.UI.HtmlTextWriterAttribute key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.XhtmlTextWriter.OnAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnAttributeRender (name As String, value As String, key As HtmlTextWriterAttribute) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.OnAttributeRender : string * string * System.Web.UI.HtmlTextWriterAttribute -&gt; bool" Usage="xhtmlTextWriter.OnAttributeRender (name, value, key)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnAttributeRender(System::String ^ name, System::String ^ value, System::Web::UI::HtmlTextWriterAttribute key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -352,6 +385,9 @@
       <MemberSignature Language="C#" Value="protected override bool OnStyleAttributeRender (string name, string value, System.Web.UI.HtmlTextWriterStyle key);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnStyleAttributeRender(string name, string value, valuetype System.Web.UI.HtmlTextWriterStyle key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.XhtmlTextWriter.OnStyleAttributeRender(System.String,System.String,System.Web.UI.HtmlTextWriterStyle)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnStyleAttributeRender (name As String, value As String, key As HtmlTextWriterStyle) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.OnStyleAttributeRender : string * string * System.Web.UI.HtmlTextWriterStyle -&gt; bool" Usage="xhtmlTextWriter.OnStyleAttributeRender (name, value, key)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnStyleAttributeRender(System::String ^ name, System::String ^ value, System::Web::UI::HtmlTextWriterStyle key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -392,6 +428,9 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveRecognizedAttribute (string elementName, string attributeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveRecognizedAttribute(string elementName, string attributeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.XhtmlTextWriter.RemoveRecognizedAttribute(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveRecognizedAttribute (elementName As String, attributeName As String)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveRecognizedAttribute : string * string -&gt; unit&#xA;override this.RemoveRecognizedAttribute : string * string -&gt; unit" Usage="xhtmlTextWriter.RemoveRecognizedAttribute (elementName, attributeName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveRecognizedAttribute(System::String ^ elementName, System::String ^ attributeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -417,6 +456,9 @@
       <MemberSignature Language="C#" Value="public virtual void SetDocType (System.Web.UI.XhtmlMobileDocType docType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDocType(valuetype System.Web.UI.XhtmlMobileDocType docType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.XhtmlTextWriter.SetDocType(System.Web.UI.XhtmlMobileDocType)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub SetDocType (docType As XhtmlMobileDocType)" />
+      <MemberSignature Language="F#" Value="abstract member SetDocType : System.Web.UI.XhtmlMobileDocType -&gt; unit&#xA;override this.SetDocType : System.Web.UI.XhtmlMobileDocType -&gt; unit" Usage="xhtmlTextWriter.SetDocType docType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void SetDocType(System::Web::UI::XhtmlMobileDocType docType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -446,6 +488,9 @@
       <MemberSignature Language="C#" Value="protected System.Collections.Hashtable SuppressCommonAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Hashtable SuppressCommonAttributes" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.XhtmlTextWriter.SuppressCommonAttributes" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property SuppressCommonAttributes As Hashtable" />
+      <MemberSignature Language="F#" Value="member this.SuppressCommonAttributes : System.Collections.Hashtable" Usage="System.Web.UI.XhtmlTextWriter.SuppressCommonAttributes" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Collections::Hashtable ^ SuppressCommonAttributes { System::Collections::Hashtable ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -489,6 +534,9 @@
       <MemberSignature Language="C#" Value="public override void WriteBreak ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteBreak() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.XhtmlTextWriter.WriteBreak" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub WriteBreak ()" />
+      <MemberSignature Language="F#" Value="override this.WriteBreak : unit -&gt; unit" Usage="xhtmlTextWriter.WriteBreak " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void WriteBreak();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -513,14 +561,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.XhtmlTextWriter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

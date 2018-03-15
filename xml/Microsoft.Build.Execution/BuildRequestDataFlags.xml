@@ -1,7 +1,10 @@
-<Type Name="BuildRequestDataFlags" FullName="Microsoft.Build.Execution.BuildRequestDataFlags">
+﻿<Type Name="BuildRequestDataFlags" FullName="Microsoft.Build.Execution.BuildRequestDataFlags">
   <TypeSignature Language="C#" Value="public enum BuildRequestDataFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BuildRequestDataFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Execution.BuildRequestDataFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BuildRequestDataFlags" />
+  <TypeSignature Language="F#" Value="type BuildRequestDataFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class BuildRequestDataFlags" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="IgnoreExistingProjectState" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Execution.BuildRequestDataFlags IgnoreExistingProjectState = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.BuildRequestDataFlags.IgnoreExistingProjectState" />
+      <MemberSignature Language="VB.NET" Value="IgnoreExistingProjectState" />
+      <MemberSignature Language="F#" Value="IgnoreExistingProjectState = 4" Usage="Microsoft.Build.Execution.BuildRequestDataFlags.IgnoreExistingProjectState" />
+      <MemberSignature Language="C++ CLI" Value="IgnoreExistingProjectState" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -31,6 +37,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Execution.BuildRequestDataFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>When this flag is present and the project has previously been built on a node whose affinity is incompatible with the affinity this request requires, this build request ignores the project state (but not the target results) that was previously generated.</summary>
         <remarks>
@@ -49,6 +56,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Execution.BuildRequestDataFlags None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.BuildRequestDataFlags.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.Build.Execution.BuildRequestDataFlags.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -57,6 +67,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Execution.BuildRequestDataFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No flags.</summary>
       </Docs>
@@ -65,6 +76,9 @@
       <MemberSignature Language="C#" Value="ProvideProjectStateAfterBuild" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Execution.BuildRequestDataFlags ProvideProjectStateAfterBuild = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.BuildRequestDataFlags.ProvideProjectStateAfterBuild" />
+      <MemberSignature Language="VB.NET" Value="ProvideProjectStateAfterBuild" />
+      <MemberSignature Language="F#" Value="ProvideProjectStateAfterBuild = 2" Usage="Microsoft.Build.Execution.BuildRequestDataFlags.ProvideProjectStateAfterBuild" />
+      <MemberSignature Language="C++ CLI" Value="ProvideProjectStateAfterBuild" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -73,6 +87,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Execution.BuildRequestDataFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>When this flag is present, <see cref="T:Microsoft.Build.Execution.BuildResult" /> issued in response to this request will include <see cref="P:Microsoft.Build.Execution.BuildResult.ProjectStateAfterBuild" />.</summary>
       </Docs>
@@ -81,6 +96,9 @@
       <MemberSignature Language="C#" Value="ReplaceExistingProjectInstance" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Build.Execution.BuildRequestDataFlags ReplaceExistingProjectInstance = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Build.Execution.BuildRequestDataFlags.ReplaceExistingProjectInstance" />
+      <MemberSignature Language="VB.NET" Value="ReplaceExistingProjectInstance" />
+      <MemberSignature Language="F#" Value="ReplaceExistingProjectInstance = 1" Usage="Microsoft.Build.Execution.BuildRequestDataFlags.ReplaceExistingProjectInstance" />
+      <MemberSignature Language="C++ CLI" Value="ReplaceExistingProjectInstance" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -89,6 +107,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Build.Execution.BuildRequestDataFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>When this flag is present, the existing ProjectInstance in the build will be replaced by this one.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="IErrorHandler" FullName="Microsoft.JScript.IErrorHandler">
+﻿<Type Name="IErrorHandler" FullName="Microsoft.JScript.IErrorHandler">
   <TypeSignature Language="C#" Value="public interface IErrorHandler" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IErrorHandler" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IErrorHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IErrorHandler" />
+  <TypeSignature Language="F#" Value="type IErrorHandler = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IErrorHandler" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public bool OnCompilerError (Microsoft.JScript.IVsaFullErrorInfo error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool OnCompilerError(class Microsoft.JScript.IVsaFullErrorInfo error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IErrorHandler.OnCompilerError(Microsoft.JScript.IVsaFullErrorInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function OnCompilerError (error As IVsaFullErrorInfo) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member OnCompilerError : Microsoft.JScript.IVsaFullErrorInfo -&gt; bool" Usage="iErrorHandler.OnCompilerError error" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool OnCompilerError(Microsoft::JScript::IVsaFullErrorInfo ^ error);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

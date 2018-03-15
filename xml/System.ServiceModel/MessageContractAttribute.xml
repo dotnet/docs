@@ -1,7 +1,10 @@
-<Type Name="MessageContractAttribute" FullName="System.ServiceModel.MessageContractAttribute">
+﻿<Type Name="MessageContractAttribute" FullName="System.ServiceModel.MessageContractAttribute">
   <TypeSignature Language="C#" Value="public sealed class MessageContractAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MessageContractAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.MessageContractAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MessageContractAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type MessageContractAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MessageContractAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -62,6 +65,8 @@
       <MemberSignature Language="C#" Value="public MessageContractAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.MessageContractAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MessageContractAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +89,9 @@
       <MemberSignature Language="C#" Value="public bool HasProtectionLevel { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageContractAttribute.HasProtectionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HasProtectionLevel As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasProtectionLevel : bool" Usage="System.ServiceModel.MessageContractAttribute.HasProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HasProtectionLevel { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -111,6 +119,9 @@
       <MemberSignature Language="C#" Value="public bool IsWrapped { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsWrapped" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageContractAttribute.IsWrapped" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsWrapped As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsWrapped : bool with get, set" Usage="System.ServiceModel.MessageContractAttribute.IsWrapped" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsWrapped { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -144,6 +155,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Security.ProtectionLevel ProtectionLevel { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Net.Security.ProtectionLevel ProtectionLevel" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageContractAttribute.ProtectionLevel" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProtectionLevel As ProtectionLevel" />
+      <MemberSignature Language="F#" Value="member this.ProtectionLevel : System.Net.Security.ProtectionLevel with get, set" Usage="System.ServiceModel.MessageContractAttribute.ProtectionLevel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Net::Security::ProtectionLevel ProtectionLevel { System::Net::Security::ProtectionLevel get(); void set(System::Net::Security::ProtectionLevel value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -171,6 +185,9 @@
       <MemberSignature Language="C#" Value="public string WrapperName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string WrapperName" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageContractAttribute.WrapperName" />
+      <MemberSignature Language="VB.NET" Value="Public Property WrapperName As String" />
+      <MemberSignature Language="F#" Value="member this.WrapperName : string with get, set" Usage="System.ServiceModel.MessageContractAttribute.WrapperName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WrapperName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -205,6 +222,9 @@
       <MemberSignature Language="C#" Value="public string WrapperNamespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string WrapperNamespace" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.MessageContractAttribute.WrapperNamespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property WrapperNamespace As String" />
+      <MemberSignature Language="F#" Value="member this.WrapperNamespace : string with get, set" Usage="System.ServiceModel.MessageContractAttribute.WrapperNamespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WrapperNamespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

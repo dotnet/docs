@@ -1,7 +1,10 @@
-<Type Name="PropagationFlags" FullName="System.Security.AccessControl.PropagationFlags">
+﻿<Type Name="PropagationFlags" FullName="System.Security.AccessControl.PropagationFlags">
   <TypeSignature Language="C#" Value="public enum PropagationFlags" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropagationFlags extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.AccessControl.PropagationFlags" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PropagationFlags" />
+  <TypeSignature Language="F#" Value="type PropagationFlags = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PropagationFlags" />
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="InheritOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.PropagationFlags InheritOnly = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.PropagationFlags.InheritOnly" />
+      <MemberSignature Language="VB.NET" Value="InheritOnly" />
+      <MemberSignature Language="F#" Value="InheritOnly = 2" Usage="System.Security.AccessControl.PropagationFlags.InheritOnly" />
+      <MemberSignature Language="C++ CLI" Value="InheritOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.PropagationFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Specifies that the ACE is propagated only to child objects. This includes both container and leaf child objects.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.PropagationFlags None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.PropagationFlags.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.AccessControl.PropagationFlags.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -65,6 +75,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.PropagationFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that no inheritance flags are set.</summary>
       </Docs>
@@ -73,6 +84,9 @@
       <MemberSignature Language="C#" Value="NoPropagateInherit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.AccessControl.PropagationFlags NoPropagateInherit = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.AccessControl.PropagationFlags.NoPropagateInherit" />
+      <MemberSignature Language="VB.NET" Value="NoPropagateInherit" />
+      <MemberSignature Language="F#" Value="NoPropagateInherit = 1" Usage="System.Security.AccessControl.PropagationFlags.NoPropagateInherit" />
+      <MemberSignature Language="C++ CLI" Value="NoPropagateInherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
@@ -87,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Security.AccessControl.PropagationFlags</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that the ACE is not propagated to child objects.</summary>
       </Docs>

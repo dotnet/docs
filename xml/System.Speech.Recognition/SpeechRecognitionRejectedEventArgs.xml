@@ -1,7 +1,10 @@
-<Type Name="SpeechRecognitionRejectedEventArgs" FullName="System.Speech.Recognition.SpeechRecognitionRejectedEventArgs">
+﻿<Type Name="SpeechRecognitionRejectedEventArgs" FullName="System.Speech.Recognition.SpeechRecognitionRejectedEventArgs">
   <TypeSignature Language="C#" Value="public class SpeechRecognitionRejectedEventArgs : System.Speech.Recognition.RecognitionEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SpeechRecognitionRejectedEventArgs extends System.Speech.Recognition.RecognitionEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Recognition.SpeechRecognitionRejectedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class SpeechRecognitionRejectedEventArgs&#xA;Inherits RecognitionEventArgs" />
+  <TypeSignature Language="F#" Value="type SpeechRecognitionRejectedEventArgs = class&#xA;    inherit RecognitionEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SpeechRecognitionRejectedEventArgs : System::Speech::Recognition::RecognitionEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="FileIOPermissionAccess" FullName="System.Security.Permissions.FileIOPermissionAccess">
+﻿<Type Name="FileIOPermissionAccess" FullName="System.Security.Permissions.FileIOPermissionAccess">
   <TypeSignature Language="C#" Value="public enum FileIOPermissionAccess" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FileIOPermissionAccess extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Permissions.FileIOPermissionAccess" />
+  <TypeSignature Language="VB.NET" Value="Public Enum FileIOPermissionAccess" />
+  <TypeSignature Language="F#" Value="type FileIOPermissionAccess = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class FileIOPermissionAccess" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="AllAccess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileIOPermissionAccess AllAccess = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.AllAccess" />
+      <MemberSignature Language="VB.NET" Value="AllAccess" />
+      <MemberSignature Language="F#" Value="AllAccess = 15" Usage="System.Security.Permissions.FileIOPermissionAccess.AllAccess" />
+      <MemberSignature Language="C++ CLI" Value="AllAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -59,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.FileIOPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>
           <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Read" />, <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" />, and <see cref="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" /> access to a file or directory. <see cref="F:System.Security.Permissions.FileIOPermissionAccess.AllAccess" /> represents multiple <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /> values and causes an <see cref="T:System.ArgumentException" /> when used as the <paramref name="access" /> parameter for the <see cref="M:System.Security.Permissions.FileIOPermission.GetPathList(System.Security.Permissions.FileIOPermissionAccess)" /> method, which expects a single value.</summary>
@@ -68,6 +75,9 @@
       <MemberSignature Language="C#" Value="Append" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileIOPermissionAccess Append = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.Append" />
+      <MemberSignature Language="VB.NET" Value="Append" />
+      <MemberSignature Language="F#" Value="Append = 4" Usage="System.Security.Permissions.FileIOPermissionAccess.Append" />
+      <MemberSignature Language="C++ CLI" Value="Append" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -81,6 +91,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.FileIOPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Access to append material to a file or directory. <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Append" /> access includes the ability to create a new file or directory.</summary>
         <remarks>
@@ -99,6 +110,9 @@
       <MemberSignature Language="C#" Value="NoAccess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileIOPermissionAccess NoAccess = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.NoAccess" />
+      <MemberSignature Language="VB.NET" Value="NoAccess" />
+      <MemberSignature Language="F#" Value="NoAccess = 0" Usage="System.Security.Permissions.FileIOPermissionAccess.NoAccess" />
+      <MemberSignature Language="C++ CLI" Value="NoAccess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -112,6 +126,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.FileIOPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No access to a file or directory. <see cref="F:System.Security.Permissions.FileIOPermissionAccess.NoAccess" /> represents no valid <see cref="T:System.Security.Permissions.FileIOPermissionAccess" /> values and causes an <see cref="T:System.ArgumentException" /> when used as the parameter for <see cref="M:System.Security.Permissions.FileIOPermission.GetPathList(System.Security.Permissions.FileIOPermissionAccess)" />, which expects a single value.</summary>
       </Docs>
@@ -120,6 +135,9 @@
       <MemberSignature Language="C#" Value="PathDiscovery" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileIOPermissionAccess PathDiscovery = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />
+      <MemberSignature Language="VB.NET" Value="PathDiscovery" />
+      <MemberSignature Language="F#" Value="PathDiscovery = 8" Usage="System.Security.Permissions.FileIOPermissionAccess.PathDiscovery" />
+      <MemberSignature Language="C++ CLI" Value="PathDiscovery" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -133,6 +151,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.FileIOPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Access to the information in the path itself. This helps protect sensitive information in the path, such as user names, as well as information about the directory structure revealed in the path. This value does not grant access to files or folders represented by the path.</summary>
         <remarks>
@@ -151,6 +170,9 @@
       <MemberSignature Language="C#" Value="Read" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileIOPermissionAccess Read = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.Read" />
+      <MemberSignature Language="VB.NET" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 1" Usage="System.Security.Permissions.FileIOPermissionAccess.Read" />
+      <MemberSignature Language="C++ CLI" Value="Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -164,6 +186,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.FileIOPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Access to read from a file or directory.</summary>
       </Docs>
@@ -172,6 +195,9 @@
       <MemberSignature Language="C#" Value="Write" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Permissions.FileIOPermissionAccess Write = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Permissions.FileIOPermissionAccess.Write" />
+      <MemberSignature Language="VB.NET" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 2" Usage="System.Security.Permissions.FileIOPermissionAccess.Write" />
+      <MemberSignature Language="C++ CLI" Value="Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -185,6 +211,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Permissions.FileIOPermissionAccess</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Access to write to or delete a file or directory. <see cref="F:System.Security.Permissions.FileIOPermissionAccess.Write" /> access includes deleting and overwriting files or directories.</summary>
       </Docs>

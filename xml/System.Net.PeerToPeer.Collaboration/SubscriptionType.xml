@@ -1,7 +1,10 @@
-<Type Name="SubscriptionType" FullName="System.Net.PeerToPeer.Collaboration.SubscriptionType">
+﻿<Type Name="SubscriptionType" FullName="System.Net.PeerToPeer.Collaboration.SubscriptionType">
   <TypeSignature Language="C#" Value="public enum SubscriptionType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SubscriptionType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.PeerToPeer.Collaboration.SubscriptionType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SubscriptionType" />
+  <TypeSignature Language="F#" Value="type SubscriptionType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SubscriptionType" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="Allowed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.SubscriptionType Allowed = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.SubscriptionType.Allowed" />
+      <MemberSignature Language="VB.NET" Value="Allowed" />
+      <MemberSignature Language="F#" Value="Allowed = 1" Usage="System.Net.PeerToPeer.Collaboration.SubscriptionType.Allowed" />
+      <MemberSignature Language="C++ CLI" Value="Allowed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -27,6 +33,7 @@
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.SubscriptionType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies that a remote peer can subscribe to the local peer as well as receive event notifications.</summary>
       </Docs>
@@ -35,6 +42,9 @@
       <MemberSignature Language="C#" Value="Blocked" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.PeerToPeer.Collaboration.SubscriptionType Blocked = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Net.PeerToPeer.Collaboration.SubscriptionType.Blocked" />
+      <MemberSignature Language="VB.NET" Value="Blocked" />
+      <MemberSignature Language="F#" Value="Blocked = 0" Usage="System.Net.PeerToPeer.Collaboration.SubscriptionType.Blocked" />
+      <MemberSignature Language="C++ CLI" Value="Blocked" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -43,6 +53,7 @@
       <ReturnValue>
         <ReturnType>System.Net.PeerToPeer.Collaboration.SubscriptionType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that a remote peer can subscribe to the local peer, but will not receive event notifications.</summary>
       </Docs>

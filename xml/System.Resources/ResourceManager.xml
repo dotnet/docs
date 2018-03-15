@@ -1,7 +1,10 @@
-<Type Name="ResourceManager" FullName="System.Resources.ResourceManager">
+﻿<Type Name="ResourceManager" FullName="System.Resources.ResourceManager">
   <TypeSignature Language="C#" Value="public class ResourceManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ResourceManager extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResourceManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResourceManager" />
+  <TypeSignature Language="F#" Value="type ResourceManager = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ResourceManager" />
   <AssemblyInfo>
     <AssemblyName>System.Resources.ResourceManager</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -365,10 +368,22 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
     <altmember cref="T:System.Resources.SatelliteContractVersionAttribute" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResourceManager" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="protected ResourceManager ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ResourceManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -400,6 +415,9 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
       <MemberSignature Language="C#" Value="public ResourceManager (Type resourceSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type resourceSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (resourceSource As Type)" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResourceManager : Type -&gt; System.Resources.ResourceManager" Usage="new System.Resources.ResourceManager resourceSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceManager(Type ^ resourceSource);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Resources.ResourceManager</AssemblyName>
@@ -504,6 +522,8 @@ al /out:ru-RU\Greet.resources.dll /culture:ru-RU /embed: GreetingResources.ru-RU
       <MemberSignature Language="C#" Value="public ResourceManager (string baseName, System.Reflection.Assembly assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string baseName, class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.#ctor(System.String,System.Reflection.Assembly)" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResourceManager : string * System.Reflection.Assembly -&gt; System.Resources.ResourceManager" Usage="new System.Resources.ResourceManager (baseName, assembly)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceManager(System::String ^ baseName, System::Reflection::Assembly ^ assembly);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Resources.ResourceManager</AssemblyName>
@@ -593,6 +613,8 @@ csc Example.cs /resource:ExampleResources.resources
       <MemberSignature Language="C#" Value="public ResourceManager (string baseName, System.Reflection.Assembly assembly, Type usingResourceSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string baseName, class System.Reflection.Assembly assembly, class System.Type usingResourceSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.#ctor(System.String,System.Reflection.Assembly,System.Type)" />
+      <MemberSignature Language="F#" Value="new System.Resources.ResourceManager : string * System.Reflection.Assembly * Type -&gt; System.Resources.ResourceManager" Usage="new System.Resources.ResourceManager (baseName, assembly, usingResourceSet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ResourceManager(System::String ^ baseName, System::Reflection::Assembly ^ assembly, Type ^ usingResourceSet);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -645,6 +667,9 @@ csc Example.cs /resource:ExampleResources.resources
       <MemberSignature Language="C#" Value="public virtual string BaseName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BaseName" />
       <MemberSignature Language="DocId" Value="P:System.Resources.ResourceManager.BaseName" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property BaseName As String" />
+      <MemberSignature Language="F#" Value="member this.BaseName : string" Usage="System.Resources.ResourceManager.BaseName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ BaseName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -692,6 +717,9 @@ csc Example.cs /resource:ExampleResources.resources
       <MemberSignature Language="C#" Value="protected string BaseNameField;" />
       <MemberSignature Language="ILAsm" Value=".field family string BaseNameField" />
       <MemberSignature Language="DocId" Value="F:System.Resources.ResourceManager.BaseNameField" />
+      <MemberSignature Language="VB.NET" Value="Protected BaseNameField As String " />
+      <MemberSignature Language="F#" Value="val mutable BaseNameField : string" Usage="System.Resources.ResourceManager.BaseNameField" />
+      <MemberSignature Language="C++ CLI" Value="protected: System::String ^ BaseNameField;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -717,6 +745,9 @@ csc Example.cs /resource:ExampleResources.resources
       <MemberSignature Language="C#" Value="public static System.Resources.ResourceManager CreateFileBasedResourceManager (string baseName, string resourceDir, Type usingResourceSet);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Resources.ResourceManager CreateFileBasedResourceManager(string baseName, string resourceDir, class System.Type usingResourceSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.CreateFileBasedResourceManager(System.String,System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateFileBasedResourceManager (baseName As String, resourceDir As String, usingResourceSet As Type) As ResourceManager" />
+      <MemberSignature Language="F#" Value="static member CreateFileBasedResourceManager : string * string * Type -&gt; System.Resources.ResourceManager" Usage="System.Resources.ResourceManager.CreateFileBasedResourceManager (baseName, resourceDir, usingResourceSet)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Resources::ResourceManager ^ CreateFileBasedResourceManager(System::String ^ baseName, System::String ^ resourceDir, Type ^ usingResourceSet);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -766,6 +797,9 @@ csc Example.cs /resource:ExampleResources.resources
       <MemberSignature Language="C#" Value="protected System.Resources.UltimateResourceFallbackLocation FallbackLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Resources.UltimateResourceFallbackLocation FallbackLocation" />
       <MemberSignature Language="DocId" Value="P:System.Resources.ResourceManager.FallbackLocation" />
+      <MemberSignature Language="VB.NET" Value="Protected Property FallbackLocation As UltimateResourceFallbackLocation" />
+      <MemberSignature Language="F#" Value="member this.FallbackLocation : System.Resources.UltimateResourceFallbackLocation with get, set" Usage="System.Resources.ResourceManager.FallbackLocation" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Resources::UltimateResourceFallbackLocation FallbackLocation { System::Resources::UltimateResourceFallbackLocation get(); void set(System::Resources::UltimateResourceFallbackLocation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -804,6 +838,9 @@ csc Example.cs /resource:ExampleResources.resources
       <MemberSignature Language="C#" Value="protected static System.Globalization.CultureInfo GetNeutralResourcesLanguage (System.Reflection.Assembly a);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Globalization.CultureInfo GetNeutralResourcesLanguage(class System.Reflection.Assembly a) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetNeutralResourcesLanguage(System.Reflection.Assembly)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function GetNeutralResourcesLanguage (a As Assembly) As CultureInfo" />
+      <MemberSignature Language="F#" Value="static member GetNeutralResourcesLanguage : System.Reflection.Assembly -&gt; System.Globalization.CultureInfo" Usage="System.Resources.ResourceManager.GetNeutralResourcesLanguage a" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static System::Globalization::CultureInfo ^ GetNeutralResourcesLanguage(System::Reflection::Assembly ^ a);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -837,10 +874,23 @@ csc Example.cs /resource:ExampleResources.resources
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetObject">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the value of the specified non-string resource for the current culture.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetObject">
       <MemberSignature Language="C#" Value="public virtual object GetObject (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetObject(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetObject(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetObject (name As String) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetObject : string -&gt; obj&#xA;override this.GetObject : string -&gt; obj" Usage="resourceManager.GetObject name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetObject(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -927,6 +977,9 @@ GetObject.exe
       <MemberSignature Language="C#" Value="public virtual object GetObject (string name, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetObject(string name, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetObject(System.String,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetObject (name As String, culture As CultureInfo) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetObject : string * System.Globalization.CultureInfo -&gt; obj&#xA;override this.GetObject : string * System.Globalization.CultureInfo -&gt; obj" Usage="resourceManager.GetObject (name, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetObject(System::String ^ name, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1031,6 +1084,9 @@ ShowNumbers.exe
       <MemberSignature Language="C#" Value="protected virtual string GetResourceFileName (System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetResourceFileName(class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetResourceFileName(System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetResourceFileName (culture As CultureInfo) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetResourceFileName : System.Globalization.CultureInfo -&gt; string&#xA;override this.GetResourceFileName : System.Globalization.CultureInfo -&gt; string" Usage="resourceManager.GetResourceFileName culture" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetResourceFileName(System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1075,6 +1131,9 @@ ShowNumbers.exe
       <MemberSignature Language="C#" Value="public virtual System.Resources.ResourceSet GetResourceSet (System.Globalization.CultureInfo culture, bool createIfNotExists, bool tryParents);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Resources.ResourceSet GetResourceSet(class System.Globalization.CultureInfo culture, bool createIfNotExists, bool tryParents) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetResourceSet(System.Globalization.CultureInfo,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetResourceSet (culture As CultureInfo, createIfNotExists As Boolean, tryParents As Boolean) As ResourceSet" />
+      <MemberSignature Language="F#" Value="abstract member GetResourceSet : System.Globalization.CultureInfo * bool * bool -&gt; System.Resources.ResourceSet&#xA;override this.GetResourceSet : System.Globalization.CultureInfo * bool * bool -&gt; System.Resources.ResourceSet" Usage="resourceManager.GetResourceSet (culture, createIfNotExists, tryParents)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Resources::ResourceSet ^ GetResourceSet(System::Globalization::CultureInfo ^ culture, bool createIfNotExists, bool tryParents);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1190,6 +1249,9 @@ al /out:fr-FR\ShowNumbers.resources.dll /culture:fr-FR /embed:NumberResources.fr
       <MemberSignature Language="C#" Value="protected static Version GetSatelliteContractVersion (System.Reflection.Assembly a);" />
       <MemberSignature Language="ILAsm" Value=".method familystatic hidebysig class System.Version GetSatelliteContractVersion(class System.Reflection.Assembly a) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetSatelliteContractVersion(System.Reflection.Assembly)" />
+      <MemberSignature Language="VB.NET" Value="Protected Shared Function GetSatelliteContractVersion (a As Assembly) As Version" />
+      <MemberSignature Language="F#" Value="static member GetSatelliteContractVersion : System.Reflection.Assembly -&gt; Version" Usage="System.Resources.ResourceManager.GetSatelliteContractVersion a" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; static Version ^ GetSatelliteContractVersion(System::Reflection::Assembly ^ a);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1229,10 +1291,23 @@ al /out:fr-FR\ShowNumbers.resources.dll /culture:fr-FR /embed:NumberResources.fr
         <altmember cref="T:System.Resources.SatelliteContractVersionAttribute" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetStream">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an unmanaged memory stream object from a specified resource.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetStream">
       <MemberSignature Language="C#" Value="public System.IO.UnmanagedMemoryStream GetStream (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.UnmanagedMemoryStream GetStream(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetStream(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStream (name As String) As UnmanagedMemoryStream" />
+      <MemberSignature Language="F#" Value="member this.GetStream : string -&gt; System.IO.UnmanagedMemoryStream" Usage="resourceManager.GetStream name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::UnmanagedMemoryStream ^ GetStream(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1312,6 +1387,9 @@ csc GetStream.cs /resource:AppResources.resources
       <MemberSignature Language="C#" Value="public System.IO.UnmanagedMemoryStream GetStream (string name, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.UnmanagedMemoryStream GetStream(string name, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetStream(System.String,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStream (name As String, culture As CultureInfo) As UnmanagedMemoryStream" />
+      <MemberSignature Language="F#" Value="member this.GetStream : string * System.Globalization.CultureInfo -&gt; System.IO.UnmanagedMemoryStream" Usage="resourceManager.GetStream (name, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::IO::UnmanagedMemoryStream ^ GetStream(System::String ^ name, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1363,10 +1441,23 @@ csc GetStream.cs /resource:AppResources.resources
         <permission cref="T:System.Security.Permissions.ReflectionPermission">when invoked late-bound through mechanisms such as <see cref="M:System.Type.InvokeMember(System.String,System.Reflection.BindingFlags,System.Reflection.Binder,System.Object,System.Object[],System.Reflection.ParameterModifier[],System.Globalization.CultureInfo,System.String[])" />. Associated enumeration: <see cref="F:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetString">
+      <AssemblyInfo>
+        <AssemblyName>System.Resources.ResourceManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the specified string resource for the specified culture or current UI culture.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetString">
       <MemberSignature Language="C#" Value="public virtual string GetString (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetString(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetString (name As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetString : string -&gt; string&#xA;override this.GetString : string -&gt; string" Usage="resourceManager.GetString name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetString(System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Resources.ResourceManager</AssemblyName>
@@ -1458,6 +1549,9 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
       <MemberSignature Language="C#" Value="public virtual string GetString (string name, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetString(string name, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.GetString(System.String,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetString (name As String, culture As CultureInfo) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetString : string * System.Globalization.CultureInfo -&gt; string&#xA;override this.GetString : string * System.Globalization.CultureInfo -&gt; string" Usage="resourceManager.GetString (name, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetString(System::String ^ name, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Resources.ResourceManager</AssemblyName>
@@ -1555,6 +1649,9 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
       <MemberSignature Language="C#" Value="public static readonly int HeaderVersionNumber;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 HeaderVersionNumber" />
       <MemberSignature Language="DocId" Value="F:System.Resources.ResourceManager.HeaderVersionNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HeaderVersionNumber As Integer " />
+      <MemberSignature Language="F#" Value=" staticval mutable HeaderVersionNumber : int" Usage="System.Resources.ResourceManager.HeaderVersionNumber" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int HeaderVersionNumber;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1581,6 +1678,9 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
       <MemberSignature Language="C#" Value="public virtual bool IgnoreCase { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreCase" />
       <MemberSignature Language="DocId" Value="P:System.Resources.ResourceManager.IgnoreCase" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property IgnoreCase As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IgnoreCase : bool with get, set" Usage="System.Resources.ResourceManager.IgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IgnoreCase { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1621,6 +1721,9 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
       <MemberSignature Language="C#" Value="protected virtual System.Resources.ResourceSet InternalGetResourceSet (System.Globalization.CultureInfo culture, bool createIfNotExists, bool tryParents);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Resources.ResourceSet InternalGetResourceSet(class System.Globalization.CultureInfo culture, bool createIfNotExists, bool tryParents) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.InternalGetResourceSet(System.Globalization.CultureInfo,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function InternalGetResourceSet (culture As CultureInfo, createIfNotExists As Boolean, tryParents As Boolean) As ResourceSet" />
+      <MemberSignature Language="F#" Value="abstract member InternalGetResourceSet : System.Globalization.CultureInfo * bool * bool -&gt; System.Resources.ResourceSet&#xA;override this.InternalGetResourceSet : System.Globalization.CultureInfo * bool * bool -&gt; System.Resources.ResourceSet" Usage="resourceManager.InternalGetResourceSet (culture, createIfNotExists, tryParents)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Resources::ResourceSet ^ InternalGetResourceSet(System::Globalization::CultureInfo ^ culture, bool createIfNotExists, bool tryParents);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1671,6 +1774,9 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
       <MemberSignature Language="C#" Value="public static readonly int MagicNumber;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly int32 MagicNumber" />
       <MemberSignature Language="DocId" Value="F:System.Resources.ResourceManager.MagicNumber" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MagicNumber As Integer " />
+      <MemberSignature Language="F#" Value=" staticval mutable MagicNumber : int" Usage="System.Resources.ResourceManager.MagicNumber" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly int MagicNumber;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1708,6 +1814,9 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
       <MemberSignature Language="C#" Value="protected System.Reflection.Assembly MainAssembly;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Reflection.Assembly MainAssembly" />
       <MemberSignature Language="DocId" Value="F:System.Resources.ResourceManager.MainAssembly" />
+      <MemberSignature Language="VB.NET" Value="Protected MainAssembly As Assembly " />
+      <MemberSignature Language="F#" Value="val mutable MainAssembly : System.Reflection.Assembly" Usage="System.Resources.ResourceManager.MainAssembly" />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Reflection::Assembly ^ MainAssembly;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1741,6 +1850,9 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
       <MemberSignature Language="C#" Value="public virtual void ReleaseAllResources ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReleaseAllResources() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Resources.ResourceManager.ReleaseAllResources" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ReleaseAllResources ()" />
+      <MemberSignature Language="F#" Value="abstract member ReleaseAllResources : unit -&gt; unit&#xA;override this.ReleaseAllResources : unit -&gt; unit" Usage="resourceManager.ReleaseAllResources " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ReleaseAllResources();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1784,6 +1896,9 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
       <MemberSignature Language="C#" Value="protected System.Collections.Hashtable ResourceSets;" />
       <MemberSignature Language="ILAsm" Value=".field family class System.Collections.Hashtable ResourceSets" />
       <MemberSignature Language="DocId" Value="F:System.Resources.ResourceManager.ResourceSets" />
+      <MemberSignature Language="VB.NET" Value="Protected ResourceSets As Hashtable " />
+      <MemberSignature Language="F#" Value="val mutable ResourceSets : System.Collections.Hashtable" Usage="System.Resources.ResourceManager.ResourceSets" />
+      <MemberSignature Language="C++ CLI" Value="protected: System::Collections::Hashtable ^ ResourceSets;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1807,6 +1922,9 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
       <MemberSignature Language="C#" Value="public virtual Type ResourceSetType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ResourceSetType" />
       <MemberSignature Language="DocId" Value="P:System.Resources.ResourceManager.ResourceSetType" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property ResourceSetType As Type" />
+      <MemberSignature Language="F#" Value="member this.ResourceSetType : Type" Usage="System.Resources.ResourceManager.ResourceSetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ ResourceSetType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1830,45 +1948,5 @@ al /out:ru-RU\Showdate.resources.dll /culture:ru-RU /embed:DateStrings.ru-RU.res
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetStream">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an unmanaged memory stream object from a specified resource.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetObject">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the value of the specified non-string resource for the current culture.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetString">
-      <AssemblyInfo>
-        <AssemblyName>System.Resources.ResourceManager</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the specified string resource for the specified culture or current UI culture.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResourceManager" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

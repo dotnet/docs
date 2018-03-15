@@ -1,7 +1,10 @@
-<Type Name="GeneratorDirection" FullName="System.Windows.Controls.Primitives.GeneratorDirection">
+﻿<Type Name="GeneratorDirection" FullName="System.Windows.Controls.Primitives.GeneratorDirection">
   <TypeSignature Language="C#" Value="public enum GeneratorDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed GeneratorDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.GeneratorDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum GeneratorDirection" />
+  <TypeSignature Language="F#" Value="type GeneratorDirection = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class GeneratorDirection" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="Backward" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.GeneratorDirection Backward = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.GeneratorDirection.Backward" />
+      <MemberSignature Language="VB.NET" Value="Backward" />
+      <MemberSignature Language="F#" Value="Backward = 1" Usage="System.Windows.Controls.Primitives.GeneratorDirection.Backward" />
+      <MemberSignature Language="C++ CLI" Value="Backward" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.GeneratorDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies to generate items in a backward direction.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="Forward" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.Primitives.GeneratorDirection Forward = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.Primitives.GeneratorDirection.Forward" />
+      <MemberSignature Language="VB.NET" Value="Forward" />
+      <MemberSignature Language="F#" Value="Forward = 0" Usage="System.Windows.Controls.Primitives.GeneratorDirection.Forward" />
+      <MemberSignature Language="C++ CLI" Value="Forward" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.Primitives.GeneratorDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies to generate items in a forward direction.</summary>
       </Docs>

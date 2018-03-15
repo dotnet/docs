@@ -1,7 +1,10 @@
-<Type Name="AnnotationPositionChangingEventArgs" FullName="System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs">
+﻿<Type Name="AnnotationPositionChangingEventArgs" FullName="System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs">
   <TypeSignature Language="C#" Value="public class AnnotationPositionChangingEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnnotationPositionChangingEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class AnnotationPositionChangingEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type AnnotationPositionChangingEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AnnotationPositionChangingEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,8 @@
       <MemberSignature Language="C#" Value="public AnnotationPositionChangingEventArgs ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AnnotationPositionChangingEventArgs();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -43,6 +48,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.Annotation Annotation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.DataVisualization.Charting.Annotation Annotation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.Annotation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Annotation As Annotation" />
+      <MemberSignature Language="F#" Value="member this.Annotation : System.Windows.Forms.DataVisualization.Charting.Annotation with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.Annotation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::Annotation ^ Annotation { System::Windows::Forms::DataVisualization::Charting::Annotation ^ get(); void set(System::Windows::Forms::DataVisualization::Charting::Annotation ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -68,6 +76,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.PointF NewAnchorLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.PointF NewAnchorLocation" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewAnchorLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewAnchorLocation As PointF" />
+      <MemberSignature Language="F#" Value="member this.NewAnchorLocation : System.Drawing.PointF with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewAnchorLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::PointF NewAnchorLocation { System::Drawing::PointF get(); void set(System::Drawing::PointF value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -94,6 +105,9 @@
       <MemberSignature Language="C#" Value="public double NewAnchorLocationX { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 NewAnchorLocationX" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewAnchorLocationX" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewAnchorLocationX As Double" />
+      <MemberSignature Language="F#" Value="member this.NewAnchorLocationX : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewAnchorLocationX" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NewAnchorLocationX { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -119,6 +133,9 @@
       <MemberSignature Language="C#" Value="public double NewAnchorLocationY { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 NewAnchorLocationY" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewAnchorLocationY" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewAnchorLocationY As Double" />
+      <MemberSignature Language="F#" Value="member this.NewAnchorLocationY : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewAnchorLocationY" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NewAnchorLocationY { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -144,6 +161,9 @@
       <MemberSignature Language="C#" Value="public double NewLocationX { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 NewLocationX" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewLocationX" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewLocationX As Double" />
+      <MemberSignature Language="F#" Value="member this.NewLocationX : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewLocationX" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NewLocationX { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -169,6 +189,9 @@
       <MemberSignature Language="C#" Value="public double NewLocationY { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 NewLocationY" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewLocationY" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewLocationY As Double" />
+      <MemberSignature Language="F#" Value="member this.NewLocationY : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewLocationY" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NewLocationY { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -194,6 +217,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.RectangleF NewPosition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.RectangleF NewPosition" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewPosition" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewPosition As RectangleF" />
+      <MemberSignature Language="F#" Value="member this.NewPosition : System.Drawing.RectangleF with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewPosition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::RectangleF NewPosition { System::Drawing::RectangleF get(); void set(System::Drawing::RectangleF value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -220,6 +246,9 @@
       <MemberSignature Language="C#" Value="public double NewSizeHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 NewSizeHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewSizeHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewSizeHeight As Double" />
+      <MemberSignature Language="F#" Value="member this.NewSizeHeight : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewSizeHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NewSizeHeight { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -245,6 +274,9 @@
       <MemberSignature Language="C#" Value="public double NewSizeWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 NewSizeWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewSizeWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property NewSizeWidth As Double" />
+      <MemberSignature Language="F#" Value="member this.NewSizeWidth : double with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.AnnotationPositionChangingEventArgs.NewSizeWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double NewSizeWidth { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

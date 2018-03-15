@@ -1,7 +1,10 @@
-<Type Name="AssemblyAlgorithmIdAttribute" FullName="System.Reflection.AssemblyAlgorithmIdAttribute">
+﻿<Type Name="AssemblyAlgorithmIdAttribute" FullName="System.Reflection.AssemblyAlgorithmIdAttribute">
   <TypeSignature Language="C#" Value="public sealed class AssemblyAlgorithmIdAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AssemblyAlgorithmIdAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.AssemblyAlgorithmIdAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AssemblyAlgorithmIdAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type AssemblyAlgorithmIdAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyAlgorithmIdAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,10 +42,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyAlgorithmIdAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AssemblyAlgorithmIdAttribute (System.Configuration.Assemblies.AssemblyHashAlgorithm algorithmId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Configuration.Assemblies.AssemblyHashAlgorithm algorithmId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyAlgorithmIdAttribute.#ctor(System.Configuration.Assemblies.AssemblyHashAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (algorithmId As AssemblyHashAlgorithm)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyAlgorithmIdAttribute : System.Configuration.Assemblies.AssemblyHashAlgorithm -&gt; System.Reflection.AssemblyAlgorithmIdAttribute" Usage="new System.Reflection.AssemblyAlgorithmIdAttribute algorithmId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyAlgorithmIdAttribute(System::Configuration::Assemblies::AssemblyHashAlgorithm algorithmId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -70,6 +86,9 @@
       <MemberSignature Language="C#" Value="public AssemblyAlgorithmIdAttribute (uint algorithmId);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int32 algorithmId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.AssemblyAlgorithmIdAttribute.#ctor(System.UInt32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (algorithmId As UInteger)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.AssemblyAlgorithmIdAttribute : uint32 -&gt; System.Reflection.AssemblyAlgorithmIdAttribute" Usage="new System.Reflection.AssemblyAlgorithmIdAttribute algorithmId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyAlgorithmIdAttribute(System::UInt32 algorithmId);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +121,9 @@
       <MemberSignature Language="C#" Value="public uint AlgorithmId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance unsigned int32 AlgorithmId" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.AssemblyAlgorithmIdAttribute.AlgorithmId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AlgorithmId As UInteger" />
+      <MemberSignature Language="F#" Value="member this.AlgorithmId : uint32" Usage="System.Reflection.AssemblyAlgorithmIdAttribute.AlgorithmId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::UInt32 AlgorithmId { System::UInt32 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -131,15 +153,5 @@
         <altmember cref="T:System.Configuration.Assemblies.AssemblyHash" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Reflection.AssemblyAlgorithmIdAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

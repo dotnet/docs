@@ -1,7 +1,10 @@
-<Type Name="JSVariableField" FullName="Microsoft.JScript.JSVariableField">
+﻿<Type Name="JSVariableField" FullName="Microsoft.JScript.JSVariableField">
   <TypeSignature Language="C#" Value="public abstract class JSVariableField : Microsoft.JScript.JSField" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit JSVariableField extends Microsoft.JScript.JSField" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.JSVariableField" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class JSVariableField&#xA;Inherits JSField" />
+  <TypeSignature Language="F#" Value="type JSVariableField = class&#xA;    inherit JSField" />
+  <TypeSignature Language="C++ CLI" Value="public ref class JSVariableField abstract : Microsoft::JScript::JSField" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -23,6 +26,9 @@
       <MemberSignature Language="C#" Value="public override System.Reflection.FieldAttributes Attributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Reflection.FieldAttributes Attributes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSVariableField.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Attributes As FieldAttributes" />
+      <MemberSignature Language="F#" Value="member this.Attributes : System.Reflection.FieldAttributes" Usage="Microsoft.JScript.JSVariableField.Attributes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Reflection::FieldAttributes Attributes { System::Reflection::FieldAttributes get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -46,6 +52,9 @@
       <MemberSignature Language="C#" Value="public override Type DeclaringType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type DeclaringType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSVariableField.DeclaringType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property DeclaringType As Type" />
+      <MemberSignature Language="F#" Value="member this.DeclaringType : Type" Usage="Microsoft.JScript.JSVariableField.DeclaringType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ DeclaringType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -69,6 +78,9 @@
       <MemberSignature Language="C#" Value="public override Type FieldType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type FieldType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSVariableField.FieldType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property FieldType As Type" />
+      <MemberSignature Language="F#" Value="member this.FieldType : Type" Usage="Microsoft.JScript.JSVariableField.FieldType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property Type ^ FieldType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -92,6 +104,9 @@
       <MemberSignature Language="C#" Value="public override object[] GetCustomAttributes (bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object[] GetCustomAttributes(bool inherit) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.JSVariableField.GetCustomAttributes(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetCustomAttributes (inherit As Boolean) As Object()" />
+      <MemberSignature Language="F#" Value="override this.GetCustomAttributes : bool -&gt; obj[]" Usage="jSVariableField.GetCustomAttributes inherit" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Object ^&gt; ^ GetCustomAttributes(bool inherit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -120,6 +135,9 @@
       <MemberSignature Language="C#" Value="public override string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.JScript.JSVariableField.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.JScript.JSVariableField.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>

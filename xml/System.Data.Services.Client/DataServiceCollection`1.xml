@@ -1,7 +1,10 @@
-<Type Name="DataServiceCollection&lt;T&gt;" FullName="System.Data.Services.Client.DataServiceCollection&lt;T&gt;">
+﻿<Type Name="DataServiceCollection&lt;T&gt;" FullName="System.Data.Services.Client.DataServiceCollection&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class DataServiceCollection&lt;T&gt; : System.Collections.ObjectModel.ObservableCollection&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataServiceCollection`1&lt;T&gt; extends System.Collections.ObjectModel.ObservableCollection`1&lt;!T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.DataServiceCollection`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataServiceCollection(Of T)&#xA;Inherits ObservableCollection(Of T)" />
+  <TypeSignature Language="F#" Value="type DataServiceCollection&lt;'T&gt; = class&#xA;    inherit ObservableCollection&lt;'T&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA;public ref class DataServiceCollection : System::Collections::ObjectModel::ObservableCollection&lt;T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -44,10 +47,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Data.Services.Client.DataServiceCollection`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataServiceCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceCollection`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="public DataServiceCollection (System.Collections.Generic.IEnumerable&lt;T&gt; items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (items As IEnumerable(Of T))" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Client.DataServiceCollection&lt;'T&gt; : seq&lt;'T&gt; -&gt; System.Data.Services.Client.DataServiceCollection&lt;'T&gt;" Usage="new System.Data.Services.Client.DataServiceCollection&lt;'T&gt; items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceCollection(System::Collections::Generic::IEnumerable&lt;T&gt; ^ items);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -101,6 +119,9 @@
       <MemberSignature Language="C#" Value="public DataServiceCollection (System.Data.Services.Client.DataServiceContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Services.Client.DataServiceContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceCollection`1.#ctor(System.Data.Services.Client.DataServiceContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As DataServiceContext)" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Client.DataServiceCollection&lt;'T&gt; : System.Data.Services.Client.DataServiceContext -&gt; System.Data.Services.Client.DataServiceCollection&lt;'T&gt;" Usage="new System.Data.Services.Client.DataServiceCollection&lt;'T&gt; context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceCollection(System::Data::Services::Client::DataServiceContext ^ context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -129,6 +150,8 @@
       <MemberSignature Language="C#" Value="public DataServiceCollection (System.Collections.Generic.IEnumerable&lt;T&gt; items, System.Data.Services.Client.TrackingMode trackingMode);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; items, valuetype System.Data.Services.Client.TrackingMode trackingMode) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Data.Services.Client.TrackingMode)" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Client.DataServiceCollection&lt;'T&gt; : seq&lt;'T&gt; * System.Data.Services.Client.TrackingMode -&gt; System.Data.Services.Client.DataServiceCollection&lt;'T&gt;" Usage="new System.Data.Services.Client.DataServiceCollection&lt;'T&gt; (items, trackingMode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceCollection(System::Collections::Generic::IEnumerable&lt;T&gt; ^ items, System::Data::Services::Client::TrackingMode trackingMode);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -159,6 +182,9 @@
       <MemberSignature Language="C#" Value="public DataServiceCollection (System.Data.Services.Client.DataServiceContext context, string entitySetName, Func&lt;System.Data.Services.Client.EntityChangedParams,bool&gt; entityChangedCallback, Func&lt;System.Data.Services.Client.EntityCollectionChangedParams,bool&gt; collectionChangedCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Services.Client.DataServiceContext context, string entitySetName, class System.Func`2&lt;class System.Data.Services.Client.EntityChangedParams, bool&gt; entityChangedCallback, class System.Func`2&lt;class System.Data.Services.Client.EntityCollectionChangedParams, bool&gt; collectionChangedCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceCollection`1.#ctor(System.Data.Services.Client.DataServiceContext,System.String,System.Func{System.Data.Services.Client.EntityChangedParams,System.Boolean},System.Func{System.Data.Services.Client.EntityCollectionChangedParams,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (context As DataServiceContext, entitySetName As String, entityChangedCallback As Func(Of EntityChangedParams, Boolean), collectionChangedCallback As Func(Of EntityCollectionChangedParams, Boolean))" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Client.DataServiceCollection&lt;'T&gt; : System.Data.Services.Client.DataServiceContext * string * Func&lt;System.Data.Services.Client.EntityChangedParams, bool&gt; * Func&lt;System.Data.Services.Client.EntityCollectionChangedParams, bool&gt; -&gt; System.Data.Services.Client.DataServiceCollection&lt;'T&gt;" Usage="new System.Data.Services.Client.DataServiceCollection&lt;'T&gt; (context, entitySetName, entityChangedCallback, collectionChangedCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceCollection(System::Data::Services::Client::DataServiceContext ^ context, System::String ^ entitySetName, Func&lt;System::Data::Services::Client::EntityChangedParams ^, bool&gt; ^ entityChangedCallback, Func&lt;System::Data::Services::Client::EntityCollectionChangedParams ^, bool&gt; ^ collectionChangedCallback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -193,6 +219,8 @@
       <MemberSignature Language="C#" Value="public DataServiceCollection (System.Collections.Generic.IEnumerable&lt;T&gt; items, System.Data.Services.Client.TrackingMode trackingMode, string entitySetName, Func&lt;System.Data.Services.Client.EntityChangedParams,bool&gt; entityChangedCallback, Func&lt;System.Data.Services.Client.EntityCollectionChangedParams,bool&gt; collectionChangedCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; items, valuetype System.Data.Services.Client.TrackingMode trackingMode, string entitySetName, class System.Func`2&lt;class System.Data.Services.Client.EntityChangedParams, bool&gt; entityChangedCallback, class System.Func`2&lt;class System.Data.Services.Client.EntityCollectionChangedParams, bool&gt; collectionChangedCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0},System.Data.Services.Client.TrackingMode,System.String,System.Func{System.Data.Services.Client.EntityChangedParams,System.Boolean},System.Func{System.Data.Services.Client.EntityCollectionChangedParams,System.Boolean})" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Client.DataServiceCollection&lt;'T&gt; : seq&lt;'T&gt; * System.Data.Services.Client.TrackingMode * string * Func&lt;System.Data.Services.Client.EntityChangedParams, bool&gt; * Func&lt;System.Data.Services.Client.EntityCollectionChangedParams, bool&gt; -&gt; System.Data.Services.Client.DataServiceCollection&lt;'T&gt;" Usage="new System.Data.Services.Client.DataServiceCollection&lt;'T&gt; (items, trackingMode, entitySetName, entityChangedCallback, collectionChangedCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceCollection(System::Collections::Generic::IEnumerable&lt;T&gt; ^ items, System::Data::Services::Client::TrackingMode trackingMode, System::String ^ entitySetName, Func&lt;System::Data::Services::Client::EntityChangedParams ^, bool&gt; ^ entityChangedCallback, Func&lt;System::Data::Services::Client::EntityCollectionChangedParams ^, bool&gt; ^ collectionChangedCallback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -229,6 +257,8 @@
       <MemberSignature Language="C#" Value="public DataServiceCollection (System.Data.Services.Client.DataServiceContext context, System.Collections.Generic.IEnumerable&lt;T&gt; items, System.Data.Services.Client.TrackingMode trackingMode, string entitySetName, Func&lt;System.Data.Services.Client.EntityChangedParams,bool&gt; entityChangedCallback, Func&lt;System.Data.Services.Client.EntityCollectionChangedParams,bool&gt; collectionChangedCallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.Services.Client.DataServiceContext context, class System.Collections.Generic.IEnumerable`1&lt;!T&gt; items, valuetype System.Data.Services.Client.TrackingMode trackingMode, string entitySetName, class System.Func`2&lt;class System.Data.Services.Client.EntityChangedParams, bool&gt; entityChangedCallback, class System.Func`2&lt;class System.Data.Services.Client.EntityCollectionChangedParams, bool&gt; collectionChangedCallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceCollection`1.#ctor(System.Data.Services.Client.DataServiceContext,System.Collections.Generic.IEnumerable{`0},System.Data.Services.Client.TrackingMode,System.String,System.Func{System.Data.Services.Client.EntityChangedParams,System.Boolean},System.Func{System.Data.Services.Client.EntityCollectionChangedParams,System.Boolean})" />
+      <MemberSignature Language="F#" Value="new System.Data.Services.Client.DataServiceCollection&lt;'T&gt; : System.Data.Services.Client.DataServiceContext * seq&lt;'T&gt; * System.Data.Services.Client.TrackingMode * string * Func&lt;System.Data.Services.Client.EntityChangedParams, bool&gt; * Func&lt;System.Data.Services.Client.EntityCollectionChangedParams, bool&gt; -&gt; System.Data.Services.Client.DataServiceCollection&lt;'T&gt;" Usage="new System.Data.Services.Client.DataServiceCollection&lt;'T&gt; (context, items, trackingMode, entitySetName, entityChangedCallback, collectionChangedCallback)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataServiceCollection(System::Data::Services::Client::DataServiceContext ^ context, System::Collections::Generic::IEnumerable&lt;T&gt; ^ items, System::Data::Services::Client::TrackingMode trackingMode, System::String ^ entitySetName, Func&lt;System::Data::Services::Client::EntityChangedParams ^, bool&gt; ^ entityChangedCallback, Func&lt;System::Data::Services::Client::EntityCollectionChangedParams ^, bool&gt; ^ collectionChangedCallback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -269,6 +299,9 @@
       <MemberSignature Language="C#" Value="public void Clear (bool stopTracking);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear(bool stopTracking) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceCollection`1.Clear(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear (stopTracking As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Clear : bool -&gt; unit" Usage="dataServiceCollection.Clear stopTracking" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear(bool stopTracking);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -298,6 +331,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Services.Client.DataServiceQueryContinuation&lt;T&gt; Continuation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Services.Client.DataServiceQueryContinuation`1&lt;!T&gt; Continuation" />
       <MemberSignature Language="DocId" Value="P:System.Data.Services.Client.DataServiceCollection`1.Continuation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Continuation As DataServiceQueryContinuation(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Continuation : System.Data.Services.Client.DataServiceQueryContinuation&lt;'T&gt; with get, set" Usage="System.Data.Services.Client.DataServiceCollection&lt;'T&gt;.Continuation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Services::Client::DataServiceQueryContinuation&lt;T&gt; ^ Continuation { System::Data::Services::Client::DataServiceQueryContinuation&lt;T&gt; ^ get(); void set(System::Data::Services::Client::DataServiceQueryContinuation&lt;T&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -334,6 +370,9 @@
       <MemberSignature Language="C#" Value="public void Detach ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Detach() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceCollection`1.Detach" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Detach ()" />
+      <MemberSignature Language="F#" Value="member this.Detach : unit -&gt; unit" Usage="dataServiceCollection.Detach " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Detach();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -362,6 +401,9 @@
       <MemberSignature Language="C#" Value="protected override void InsertItem (int index, T item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, !T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceCollection`1.InsertItem(System.Int32,`0)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As T)" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * 'T -&gt; unit" Usage="dataServiceCollection.InsertItem (index, item)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -389,10 +431,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Services.Client</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads entities into the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Load">
       <MemberSignature Language="C#" Value="public void Load (System.Collections.Generic.IEnumerable&lt;T&gt; items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(class System.Collections.Generic.IEnumerable`1&lt;!T&gt; items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceCollection`1.Load(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (items As IEnumerable(Of T))" />
+      <MemberSignature Language="F#" Value="member this.Load : seq&lt;'T&gt; -&gt; unit" Usage="dataServiceCollection.Load items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(System::Collections::Generic::IEnumerable&lt;T&gt; ^ items);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -424,6 +479,9 @@
       <MemberSignature Language="C#" Value="public void Load (T item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Services.Client.DataServiceCollection`1.Load(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load (item As T)" />
+      <MemberSignature Language="F#" Value="member this.Load : 'T -&gt; unit" Usage="dataServiceCollection.Load item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load(T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -451,25 +509,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Load">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads entities into the collection.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Services.Client</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Data.Services.Client.DataServiceCollection`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

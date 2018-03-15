@@ -1,7 +1,10 @@
-<Type Name="VisualStyleElement+Window+Dialog" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+Window+Dialog">
+﻿<Type Name="VisualStyleElement+Window+Dialog" FullName="System.Windows.Forms.VisualStyles.VisualStyleElement+Window+Dialog">
   <TypeSignature Language="C#" Value="public static class VisualStyleElement.Window.Dialog" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed beforefieldinit VisualStyleElement/Window/Dialog extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.Dialog" />
+  <TypeSignature Language="VB.NET" Value="Public Class VisualStyleElement.Window.Dialog" />
+  <TypeSignature Language="F#" Value="type VisualStyleElement.Window.Dialog = class" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class VisualStyleElement::Window::Dialog abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Forms.VisualStyles.VisualStyleElement Normal { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Forms.VisualStyles.VisualStyleElement Normal" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.VisualStyles.VisualStyleElement.Window.Dialog.Normal" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Normal As VisualStyleElement" />
+      <MemberSignature Language="F#" Value="member this.Normal : System.Windows.Forms.VisualStyles.VisualStyleElement" Usage="System.Windows.Forms.VisualStyles.VisualStyleElement.Window.Dialog.Normal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Forms::VisualStyles::VisualStyleElement ^ Normal { System::Windows::Forms::VisualStyles::VisualStyleElement ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

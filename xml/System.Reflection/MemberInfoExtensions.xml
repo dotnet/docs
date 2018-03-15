@@ -1,7 +1,10 @@
-<Type Name="MemberInfoExtensions" FullName="System.Reflection.MemberInfoExtensions">
+﻿<Type Name="MemberInfoExtensions" FullName="System.Reflection.MemberInfoExtensions">
   <TypeSignature Language="C#" Value="public static class MemberInfoExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit MemberInfoExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.MemberInfoExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Module MemberInfoExtensions" />
+  <TypeSignature Language="F#" Value="type MemberInfoExtensions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MemberInfoExtensions abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public static int GetMetadataToken (this System.Reflection.MemberInfo member);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig int32 GetMetadataToken(class System.Reflection.MemberInfo member) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MemberInfoExtensions.GetMetadataToken(System.Reflection.MemberInfo)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function GetMetadataToken (member As MemberInfo) As Integer" />
+      <MemberSignature Language="F#" Value="static member GetMetadataToken : System.Reflection.MemberInfo -&gt; int" Usage="System.Reflection.MemberInfoExtensions.GetMetadataToken member" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static int GetMetadataToken(System::Reflection::MemberInfo ^ member);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>
@@ -43,6 +49,9 @@
       <MemberSignature Language="C#" Value="public static bool HasMetadataToken (this System.Reflection.MemberInfo member);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool HasMetadataToken(class System.Reflection.MemberInfo member) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.MemberInfoExtensions.HasMetadataToken(System.Reflection.MemberInfo)" />
+      <MemberSignature Language="VB.NET" Value="&lt;Extension()&gt;&#xA;Public Function HasMetadataToken (member As MemberInfo) As Boolean" />
+      <MemberSignature Language="F#" Value="static member HasMetadataToken : System.Reflection.MemberInfo -&gt; bool" Usage="System.Reflection.MemberInfoExtensions.HasMetadataToken member" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;[System::Runtime::CompilerServices::Extension]&#xA; static bool HasMetadataToken(System::Reflection::MemberInfo ^ member);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.TypeExtensions</AssemblyName>

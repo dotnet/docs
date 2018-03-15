@@ -1,7 +1,10 @@
-<Type Name="AccessTypes" FullName="System.Workflow.ComponentModel.Compiler.AccessTypes">
+﻿<Type Name="AccessTypes" FullName="System.Workflow.ComponentModel.Compiler.AccessTypes">
   <TypeSignature Language="C#" Value="public enum AccessTypes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AccessTypes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.ComponentModel.Compiler.AccessTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AccessTypes" />
+  <TypeSignature Language="F#" Value="type AccessTypes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AccessTypes" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="Read" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Compiler.AccessTypes Read = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Compiler.AccessTypes.Read" />
+      <MemberSignature Language="VB.NET" Value="Read" />
+      <MemberSignature Language="F#" Value="Read = 1" Usage="System.Workflow.ComponentModel.Compiler.AccessTypes.Read" />
+      <MemberSignature Language="C++ CLI" Value="Read" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Compiler.AccessTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Read access.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="ReadWrite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Compiler.AccessTypes ReadWrite = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Compiler.AccessTypes.ReadWrite" />
+      <MemberSignature Language="VB.NET" Value="ReadWrite" />
+      <MemberSignature Language="F#" Value="ReadWrite = 3" Usage="System.Workflow.ComponentModel.Compiler.AccessTypes.ReadWrite" />
+      <MemberSignature Language="C++ CLI" Value="ReadWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -59,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Compiler.AccessTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Read and write access.</summary>
       </Docs>
@@ -67,6 +78,9 @@
       <MemberSignature Language="C#" Value="Write" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.ComponentModel.Compiler.AccessTypes Write = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.ComponentModel.Compiler.AccessTypes.Write" />
+      <MemberSignature Language="VB.NET" Value="Write" />
+      <MemberSignature Language="F#" Value="Write = 2" Usage="System.Workflow.ComponentModel.Compiler.AccessTypes.Write" />
+      <MemberSignature Language="C++ CLI" Value="Write" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
@@ -75,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.ComponentModel.Compiler.AccessTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Write access.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="UCOMITypeComp" FullName="System.Runtime.InteropServices.UCOMITypeComp">
+﻿<Type Name="UCOMITypeComp" FullName="System.Runtime.InteropServices.UCOMITypeComp">
   <TypeSignature Language="C#" Value="public interface UCOMITypeComp" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UCOMITypeComp" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMITypeComp" />
+  <TypeSignature Language="VB.NET" Value="Public Interface UCOMITypeComp" />
+  <TypeSignature Language="F#" Value="type UCOMITypeComp = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class UCOMITypeComp" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="public void Bind (string szName, int lHashVal, short wFlags, out System.Runtime.InteropServices.UCOMITypeInfo ppTInfo, out System.Runtime.InteropServices.DESCKIND pDescKind, out System.Runtime.InteropServices.BINDPTR pBindPtr);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Bind(string szName, int32 lHashVal, int16 wFlags, [out] class System.Runtime.InteropServices.UCOMITypeInfo&amp; ppTInfo, [out] valuetype System.Runtime.InteropServices.DESCKIND&amp; pDescKind, [out] valuetype System.Runtime.InteropServices.BINDPTR&amp; pBindPtr) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMITypeComp.Bind(System.String,System.Int32,System.Int16,System.Runtime.InteropServices.UCOMITypeInfo@,System.Runtime.InteropServices.DESCKIND@,System.Runtime.InteropServices.BINDPTR@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Bind (szName As String, lHashVal As Integer, wFlags As Short, ByRef ppTInfo As UCOMITypeInfo, ByRef pDescKind As DESCKIND, ByRef pBindPtr As BINDPTR)" />
+      <MemberSignature Language="F#" Value="abstract member Bind : string * int * int16 *  *  *  -&gt; unit" Usage="uCOMITypeComp.Bind (szName, lHashVal, wFlags, ppTInfo, pDescKind, pBindPtr)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Bind(System::String ^ szName, int lHashVal, short wFlags, [Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMITypeInfo ^ % ppTInfo, [Runtime::InteropServices::Out] System::Runtime::InteropServices::DESCKIND % pDescKind, [Runtime::InteropServices::Out] System::Runtime::InteropServices::BINDPTR % pBindPtr);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +80,9 @@
       <MemberSignature Language="C#" Value="public void BindType (string szName, int lHashVal, out System.Runtime.InteropServices.UCOMITypeInfo ppTInfo, out System.Runtime.InteropServices.UCOMITypeComp ppTComp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BindType(string szName, int32 lHashVal, [out] class System.Runtime.InteropServices.UCOMITypeInfo&amp; ppTInfo, [out] class System.Runtime.InteropServices.UCOMITypeComp&amp; ppTComp) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMITypeComp.BindType(System.String,System.Int32,System.Runtime.InteropServices.UCOMITypeInfo@,System.Runtime.InteropServices.UCOMITypeComp@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BindType (szName As String, lHashVal As Integer, ByRef ppTInfo As UCOMITypeInfo, ByRef ppTComp As UCOMITypeComp)" />
+      <MemberSignature Language="F#" Value="abstract member BindType : string * int *  *  -&gt; unit" Usage="uCOMITypeComp.BindType (szName, lHashVal, ppTInfo, ppTComp)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BindType(System::String ^ szName, int lHashVal, [Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMITypeInfo ^ % ppTInfo, [Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMITypeComp ^ % ppTComp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

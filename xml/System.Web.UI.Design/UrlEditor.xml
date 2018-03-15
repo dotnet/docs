@@ -1,7 +1,10 @@
-<Type Name="UrlEditor" FullName="System.Web.UI.Design.UrlEditor">
+﻿<Type Name="UrlEditor" FullName="System.Web.UI.Design.UrlEditor">
   <TypeSignature Language="C#" Value="public class UrlEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UrlEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.UrlEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class UrlEditor&#xA;Inherits UITypeEditor" />
+  <TypeSignature Language="F#" Value="type UrlEditor = class&#xA;    inherit UITypeEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UrlEditor : System::Drawing::Design::UITypeEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,8 @@
       <MemberSignature Language="C#" Value="public UrlEditor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.UrlEditor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UrlEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -48,6 +53,9 @@
       <MemberSignature Language="C#" Value="protected virtual string Caption { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.UrlEditor.Caption" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property Caption As String" />
+      <MemberSignature Language="F#" Value="member this.Caption : string" Usage="System.Web.UI.Design.UrlEditor.Caption" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ Caption { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -66,6 +74,9 @@
       <MemberSignature Language="C#" Value="public override object EditValue (System.ComponentModel.ITypeDescriptorContext context, IServiceProvider provider, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object EditValue(class System.ComponentModel.ITypeDescriptorContext context, class System.IServiceProvider provider, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.UrlEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function EditValue (context As ITypeDescriptorContext, provider As IServiceProvider, value As Object) As Object" />
+      <MemberSignature Language="F#" Value="override this.EditValue : System.ComponentModel.ITypeDescriptorContext * IServiceProvider * obj -&gt; obj" Usage="urlEditor.EditValue (context, provider, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ EditValue(System::ComponentModel::ITypeDescriptorContext ^ context, IServiceProvider ^ provider, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -92,6 +103,9 @@
       <MemberSignature Language="C#" Value="protected virtual string Filter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.UrlEditor.Filter" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property Filter As String" />
+      <MemberSignature Language="F#" Value="member this.Filter : string" Usage="System.Web.UI.Design.UrlEditor.Filter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ Filter { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -127,6 +141,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Design.UITypeEditorEditStyle GetEditStyle (System.ComponentModel.ITypeDescriptorContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance valuetype System.Drawing.Design.UITypeEditorEditStyle GetEditStyle(class System.ComponentModel.ITypeDescriptorContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.UrlEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetEditStyle (context As ITypeDescriptorContext) As UITypeEditorEditStyle" />
+      <MemberSignature Language="F#" Value="override this.GetEditStyle : System.ComponentModel.ITypeDescriptorContext -&gt; System.Drawing.Design.UITypeEditorEditStyle" Usage="urlEditor.GetEditStyle context" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Drawing::Design::UITypeEditorEditStyle GetEditStyle(System::ComponentModel::ITypeDescriptorContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -150,6 +167,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.Design.UrlBuilderOptions Options { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Web.UI.Design.UrlBuilderOptions Options" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.UrlEditor.Options" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable ReadOnly Property Options As UrlBuilderOptions" />
+      <MemberSignature Language="F#" Value="member this.Options : System.Web.UI.Design.UrlBuilderOptions" Usage="System.Web.UI.Design.UrlEditor.Options" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Web::UI::Design::UrlBuilderOptions Options { System::Web::UI::Design::UrlBuilderOptions get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

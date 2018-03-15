@@ -1,7 +1,10 @@
-<Type Name="XmlDeserializationEvents" FullName="System.Xml.Serialization.XmlDeserializationEvents">
+﻿<Type Name="XmlDeserializationEvents" FullName="System.Xml.Serialization.XmlDeserializationEvents">
   <TypeSignature Language="C#" Value="public struct XmlDeserializationEvents" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit XmlDeserializationEvents extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.XmlDeserializationEvents" />
+  <TypeSignature Language="VB.NET" Value="Public Structure XmlDeserializationEvents" />
+  <TypeSignature Language="F#" Value="type XmlDeserializationEvents = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class XmlDeserializationEvents" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlAttributeEventHandler OnUnknownAttribute { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlAttributeEventHandler OnUnknownAttribute" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlDeserializationEvents.OnUnknownAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnUnknownAttribute As XmlAttributeEventHandler" />
+      <MemberSignature Language="F#" Value="member this.OnUnknownAttribute : System.Xml.Serialization.XmlAttributeEventHandler with get, set" Usage="System.Xml.Serialization.XmlDeserializationEvents.OnUnknownAttribute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlAttributeEventHandler ^ OnUnknownAttribute { System::Xml::Serialization::XmlAttributeEventHandler ^ get(); void set(System::Xml::Serialization::XmlAttributeEventHandler ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -55,6 +61,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlElementEventHandler OnUnknownElement { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlElementEventHandler OnUnknownElement" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlDeserializationEvents.OnUnknownElement" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnUnknownElement As XmlElementEventHandler" />
+      <MemberSignature Language="F#" Value="member this.OnUnknownElement : System.Xml.Serialization.XmlElementEventHandler with get, set" Usage="System.Xml.Serialization.XmlDeserializationEvents.OnUnknownElement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlElementEventHandler ^ OnUnknownElement { System::Xml::Serialization::XmlElementEventHandler ^ get(); void set(System::Xml::Serialization::XmlElementEventHandler ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -82,6 +91,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.XmlNodeEventHandler OnUnknownNode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.XmlNodeEventHandler OnUnknownNode" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlDeserializationEvents.OnUnknownNode" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnUnknownNode As XmlNodeEventHandler" />
+      <MemberSignature Language="F#" Value="member this.OnUnknownNode : System.Xml.Serialization.XmlNodeEventHandler with get, set" Usage="System.Xml.Serialization.XmlDeserializationEvents.OnUnknownNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::XmlNodeEventHandler ^ OnUnknownNode { System::Xml::Serialization::XmlNodeEventHandler ^ get(); void set(System::Xml::Serialization::XmlNodeEventHandler ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -109,6 +121,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Serialization.UnreferencedObjectEventHandler OnUnreferencedObject { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.Serialization.UnreferencedObjectEventHandler OnUnreferencedObject" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.XmlDeserializationEvents.OnUnreferencedObject" />
+      <MemberSignature Language="VB.NET" Value="Public Property OnUnreferencedObject As UnreferencedObjectEventHandler" />
+      <MemberSignature Language="F#" Value="member this.OnUnreferencedObject : System.Xml.Serialization.UnreferencedObjectEventHandler with get, set" Usage="System.Xml.Serialization.XmlDeserializationEvents.OnUnreferencedObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::Serialization::UnreferencedObjectEventHandler ^ OnUnreferencedObject { System::Xml::Serialization::UnreferencedObjectEventHandler ^ get(); void set(System::Xml::Serialization::UnreferencedObjectEventHandler ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

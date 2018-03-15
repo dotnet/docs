@@ -1,7 +1,10 @@
-<Type Name="DataViewManager" FullName="System.Data.DataViewManager">
+﻿<Type Name="DataViewManager" FullName="System.Data.DataViewManager">
   <TypeSignature Language="C#" Value="public class DataViewManager : System.ComponentModel.MarshalByValueComponent, System.Collections.IList, System.ComponentModel.IBindingList, System.ComponentModel.ITypedList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataViewManager extends System.ComponentModel.MarshalByValueComponent implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.ComponentModel.IBindingList, class System.ComponentModel.ITypedList" />
   <TypeSignature Language="DocId" Value="T:System.Data.DataViewManager" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataViewManager&#xA;Inherits MarshalByValueComponent&#xA;Implements IBindingList, IList, ITypedList" />
+  <TypeSignature Language="F#" Value="type DataViewManager = class&#xA;    inherit MarshalByValueComponent&#xA;    interface IBindingList&#xA;    interface ITypedList&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataViewManager : System::ComponentModel::MarshalByValueComponent, System::Collections::IList, System::ComponentModel::IBindingList, System::ComponentModel::ITypedList" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,10 +43,22 @@
     <threadsafe>This type is safe for multithreaded read operations. You must synchronize any write operations.</threadsafe>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.DataViewManager" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataViewManager ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataViewManager();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -68,6 +83,8 @@
       <MemberSignature Language="C#" Value="public DataViewManager (System.Data.DataSet dataSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.DataSet dataSet) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.#ctor(System.Data.DataSet)" />
+      <MemberSignature Language="F#" Value="new System.Data.DataViewManager : System.Data.DataSet -&gt; System.Data.DataViewManager" Usage="new System.Data.DataViewManager dataSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataViewManager(System::Data::DataSet ^ dataSet);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -95,6 +112,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataView CreateDataView (System.Data.DataTable table);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.DataView CreateDataView(class System.Data.DataTable table) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.CreateDataView(System.Data.DataTable)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateDataView (table As DataTable) As DataView" />
+      <MemberSignature Language="F#" Value="member this.CreateDataView : System.Data.DataTable -&gt; System.Data.DataView" Usage="dataViewManager.CreateDataView table" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::DataView ^ CreateDataView(System::Data::DataTable ^ table);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -126,6 +146,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataSet DataSet { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataSet DataSet" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.DataSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSet As DataSet" />
+      <MemberSignature Language="F#" Value="member this.DataSet : System.Data.DataSet with get, set" Usage="System.Data.DataViewManager.DataSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataSet ^ DataSet { System::Data::DataSet ^ get(); void set(System::Data::DataSet ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -158,6 +181,9 @@
       <MemberSignature Language="C#" Value="public string DataViewSettingCollectionString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataViewSettingCollectionString" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.DataViewSettingCollectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataViewSettingCollectionString As String" />
+      <MemberSignature Language="F#" Value="member this.DataViewSettingCollectionString : string with get, set" Usage="System.Data.DataViewManager.DataViewSettingCollectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataViewSettingCollectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -192,6 +218,9 @@
       <MemberSignature Language="C#" Value="public System.Data.DataViewSettingCollection DataViewSettings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.DataViewSettingCollection DataViewSettings" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.DataViewSettings" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataViewSettings As DataViewSettingCollection" />
+      <MemberSignature Language="F#" Value="member this.DataViewSettings : System.Data.DataViewSettingCollection" Usage="System.Data.DataViewManager.DataViewSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::DataViewSettingCollection ^ DataViewSettings { System::Data::DataViewSettingCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -208,7 +237,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -224,6 +253,9 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.ListChangedEventHandler ListChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.ListChangedEventHandler ListChanged" />
       <MemberSignature Language="DocId" Value="E:System.Data.DataViewManager.ListChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ListChanged As ListChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " Usage="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::ListChangedEventHandler ^ ListChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -250,6 +282,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnListChanged (System.ComponentModel.ListChangedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnListChanged(class System.ComponentModel.ListChangedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.OnListChanged(System.ComponentModel.ListChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnListChanged (e As ListChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnListChanged : System.ComponentModel.ListChangedEventArgs -&gt; unit&#xA;override this.OnListChanged : System.ComponentModel.ListChangedEventArgs -&gt; unit" Usage="dataViewManager.OnListChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnListChanged(System::ComponentModel::ListChangedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -280,6 +315,9 @@
       <MemberSignature Language="C#" Value="protected virtual void RelationCollectionChanged (object sender, System.ComponentModel.CollectionChangeEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RelationCollectionChanged(object sender, class System.ComponentModel.CollectionChangeEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.RelationCollectionChanged(System.Object,System.ComponentModel.CollectionChangeEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RelationCollectionChanged (sender As Object, e As CollectionChangeEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member RelationCollectionChanged : obj * System.ComponentModel.CollectionChangeEventArgs -&gt; unit&#xA;override this.RelationCollectionChanged : obj * System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="dataViewManager.RelationCollectionChanged (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RelationCollectionChanged(System::Object ^ sender, System::ComponentModel::CollectionChangeEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -312,7 +350,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -351,7 +393,13 @@
       <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.System#Collections#ICollection#Count" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
+      <MemberSignature Language="F#" Usage="System.Data.DataViewManager.System.Collections.ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -385,7 +433,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="F#" Usage="System.Data.DataViewManager.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -420,7 +474,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="F#" Usage="System.Data.DataViewManager.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -454,7 +514,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -489,7 +554,12 @@
       <MemberSignature Language="C#" Value="int IList.Add (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#Collections#IList#Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Add (value As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ value) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -527,7 +597,12 @@
       <MemberSignature Language="C#" Value="void IList.Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#Collections#IList#Clear" />
+      <MemberSignature Language="VB.NET" Value="Sub Clear () Implements IList.Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Clear() = System::Collections::IList::Clear;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -561,7 +636,12 @@
       <MemberSignature Language="C#" Value="bool IList.Contains (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#Collections#IList#Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (value As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ value) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -600,7 +680,12 @@
       <MemberSignature Language="C#" Value="int IList.IndexOf (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function IndexOf (value As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ value) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -638,7 +723,12 @@
       <MemberSignature Language="C#" Value="void IList.Insert (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, value As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ value) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -677,7 +767,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.System#Collections#IList#IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IList.IsFixedSize" />
+      <MemberSignature Language="F#" Usage="System.Data.DataViewManager.System.Collections.IList.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -712,7 +808,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IList.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IList.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.System#Collections#IList#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements IList.IsReadOnly" />
+      <MemberSignature Language="F#" Usage="System.Data.DataViewManager.System.Collections.IList.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IList.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -746,7 +848,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.System#Collections#IList#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
+      <MemberSignature Language="F#" Usage="System.Data.DataViewManager.System.Collections.IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -784,7 +892,12 @@
       <MemberSignature Language="C#" Value="void IList.Remove (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#Collections#IList#Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Remove (value As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ value) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -821,7 +934,12 @@
       <MemberSignature Language="C#" Value="void IList.RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#Collections#IList#RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub RemoveAt (index As Integer) Implements IList.RemoveAt" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.RemoveAt(int index) = System::Collections::IList::RemoveAt;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -858,6 +976,8 @@
       <MemberSignature Language="C#" Value="void IBindingList.AddIndex (System.ComponentModel.PropertyDescriptor property);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.IBindingList.AddIndex(class System.ComponentModel.PropertyDescriptor property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#ComponentModel#IBindingList#AddIndex(System.ComponentModel.PropertyDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddIndex (property As PropertyDescriptor) Implements IBindingList.AddIndex" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.AddIndex(System::ComponentModel::PropertyDescriptor ^ property) = System::ComponentModel::IBindingList::AddIndex;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -895,6 +1015,8 @@
       <MemberSignature Language="C#" Value="object IBindingList.AddNew ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ComponentModel.IBindingList.AddNew() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#ComponentModel#IBindingList#AddNew" />
+      <MemberSignature Language="VB.NET" Value="Function AddNew () As Object Implements IBindingList.AddNew" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.IBindingList.AddNew() = System::ComponentModel::IBindingList::AddNew;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -930,6 +1052,9 @@
       <MemberSignature Language="C#" Value="bool System.ComponentModel.IBindingList.AllowEdit { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IBindingList.AllowEdit" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.System#ComponentModel#IBindingList#AllowEdit" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property AllowEdit As Boolean Implements IBindingList.AllowEdit" />
+      <MemberSignature Language="F#" Usage="System.Data.DataViewManager.System.ComponentModel.IBindingList.AllowEdit" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.AllowEdit { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -964,6 +1089,9 @@
       <MemberSignature Language="C#" Value="bool System.ComponentModel.IBindingList.AllowNew { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IBindingList.AllowNew" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.System#ComponentModel#IBindingList#AllowNew" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property AllowNew As Boolean Implements IBindingList.AllowNew" />
+      <MemberSignature Language="F#" Usage="System.Data.DataViewManager.System.ComponentModel.IBindingList.AllowNew" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.AllowNew { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -998,6 +1126,9 @@
       <MemberSignature Language="C#" Value="bool System.ComponentModel.IBindingList.AllowRemove { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IBindingList.AllowRemove" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.System#ComponentModel#IBindingList#AllowRemove" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property AllowRemove As Boolean Implements IBindingList.AllowRemove" />
+      <MemberSignature Language="F#" Usage="System.Data.DataViewManager.System.ComponentModel.IBindingList.AllowRemove" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.AllowRemove { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1032,6 +1163,8 @@
       <MemberSignature Language="C#" Value="void IBindingList.ApplySort (System.ComponentModel.PropertyDescriptor property, System.ComponentModel.ListSortDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.IBindingList.ApplySort(class System.ComponentModel.PropertyDescriptor property, valuetype System.ComponentModel.ListSortDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#ComponentModel#IBindingList#ApplySort(System.ComponentModel.PropertyDescriptor,System.ComponentModel.ListSortDirection)" />
+      <MemberSignature Language="VB.NET" Value="Sub ApplySort (property As PropertyDescriptor, direction As ListSortDirection) Implements IBindingList.ApplySort" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.ApplySort(System::ComponentModel::PropertyDescriptor ^ property, System::ComponentModel::ListSortDirection direction) = System::ComponentModel::IBindingList::ApplySort;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1071,6 +1204,8 @@
       <MemberSignature Language="C#" Value="int IBindingList.Find (System.ComponentModel.PropertyDescriptor property, object key);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.ComponentModel.IBindingList.Find(class System.ComponentModel.PropertyDescriptor property, object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#ComponentModel#IBindingList#Find(System.ComponentModel.PropertyDescriptor,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Find (property As PropertyDescriptor, key As Object) As Integer Implements IBindingList.Find" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.ComponentModel.IBindingList.Find(System::ComponentModel::PropertyDescriptor ^ property, System::Object ^ key) = System::ComponentModel::IBindingList::Find;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1111,6 +1246,9 @@
       <MemberSignature Language="C#" Value="bool System.ComponentModel.IBindingList.IsSorted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IBindingList.IsSorted" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.System#ComponentModel#IBindingList#IsSorted" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSorted As Boolean Implements IBindingList.IsSorted" />
+      <MemberSignature Language="F#" Usage="System.Data.DataViewManager.System.ComponentModel.IBindingList.IsSorted" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.IsSorted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1145,6 +1283,8 @@
       <MemberSignature Language="C#" Value="void IBindingList.RemoveIndex (System.ComponentModel.PropertyDescriptor property);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.IBindingList.RemoveIndex(class System.ComponentModel.PropertyDescriptor property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#ComponentModel#IBindingList#RemoveIndex(System.ComponentModel.PropertyDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Sub RemoveIndex (property As PropertyDescriptor) Implements IBindingList.RemoveIndex" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.RemoveIndex(System::ComponentModel::PropertyDescriptor ^ property) = System::ComponentModel::IBindingList::RemoveIndex;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1182,6 +1322,8 @@
       <MemberSignature Language="C#" Value="void IBindingList.RemoveSort ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.IBindingList.RemoveSort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#ComponentModel#IBindingList#RemoveSort" />
+      <MemberSignature Language="VB.NET" Value="Sub RemoveSort () Implements IBindingList.RemoveSort" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.RemoveSort() = System::ComponentModel::IBindingList::RemoveSort;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1216,6 +1358,9 @@
       <MemberSignature Language="C#" Value="System.ComponentModel.ListSortDirection System.ComponentModel.IBindingList.SortDirection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ComponentModel.ListSortDirection System.ComponentModel.IBindingList.SortDirection" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.System#ComponentModel#IBindingList#SortDirection" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SortDirection As ListSortDirection Implements IBindingList.SortDirection" />
+      <MemberSignature Language="F#" Usage="System.Data.DataViewManager.System.ComponentModel.IBindingList.SortDirection" />
+      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::ListSortDirection System.ComponentModel.IBindingList.SortDirection { System::ComponentModel::ListSortDirection get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1250,6 +1395,9 @@
       <MemberSignature Language="C#" Value="System.ComponentModel.PropertyDescriptor System.ComponentModel.IBindingList.SortProperty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.PropertyDescriptor System.ComponentModel.IBindingList.SortProperty" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.System#ComponentModel#IBindingList#SortProperty" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SortProperty As PropertyDescriptor Implements IBindingList.SortProperty" />
+      <MemberSignature Language="F#" Usage="System.Data.DataViewManager.System.ComponentModel.IBindingList.SortProperty" />
+      <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::PropertyDescriptor ^ System.ComponentModel.IBindingList.SortProperty { System::ComponentModel::PropertyDescriptor ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1284,6 +1432,9 @@
       <MemberSignature Language="C#" Value="bool System.ComponentModel.IBindingList.SupportsChangeNotification { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IBindingList.SupportsChangeNotification" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.System#ComponentModel#IBindingList#SupportsChangeNotification" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportsChangeNotification As Boolean Implements IBindingList.SupportsChangeNotification" />
+      <MemberSignature Language="F#" Usage="System.Data.DataViewManager.System.ComponentModel.IBindingList.SupportsChangeNotification" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.SupportsChangeNotification { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1318,6 +1469,9 @@
       <MemberSignature Language="C#" Value="bool System.ComponentModel.IBindingList.SupportsSearching { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IBindingList.SupportsSearching" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.System#ComponentModel#IBindingList#SupportsSearching" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportsSearching As Boolean Implements IBindingList.SupportsSearching" />
+      <MemberSignature Language="F#" Usage="System.Data.DataViewManager.System.ComponentModel.IBindingList.SupportsSearching" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.SupportsSearching { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1352,6 +1506,9 @@
       <MemberSignature Language="C#" Value="bool System.ComponentModel.IBindingList.SupportsSorting { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.ComponentModel.IBindingList.SupportsSorting" />
       <MemberSignature Language="DocId" Value="P:System.Data.DataViewManager.System#ComponentModel#IBindingList#SupportsSorting" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SupportsSorting As Boolean Implements IBindingList.SupportsSorting" />
+      <MemberSignature Language="F#" Usage="System.Data.DataViewManager.System.ComponentModel.IBindingList.SupportsSorting" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.ComponentModel.IBindingList.SupportsSorting { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1386,6 +1543,8 @@
       <MemberSignature Language="C#" Value="System.ComponentModel.PropertyDescriptorCollection ITypedList.GetItemProperties (System.ComponentModel.PropertyDescriptor[] listAccessors);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.ComponentModel.PropertyDescriptorCollection System.ComponentModel.ITypedList.GetItemProperties(class System.ComponentModel.PropertyDescriptor[] listAccessors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#ComponentModel#ITypedList#GetItemProperties(System.ComponentModel.PropertyDescriptor[])" />
+      <MemberSignature Language="VB.NET" Value="Function GetItemProperties (listAccessors As PropertyDescriptor()) As PropertyDescriptorCollection Implements ITypedList.GetItemProperties" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::ComponentModel::PropertyDescriptorCollection ^ System.ComponentModel.ITypedList.GetItemProperties(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors) = System::ComponentModel::ITypedList::GetItemProperties;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1424,6 +1583,8 @@
       <MemberSignature Language="C#" Value="string ITypedList.GetListName (System.ComponentModel.PropertyDescriptor[] listAccessors);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.ComponentModel.ITypedList.GetListName(class System.ComponentModel.PropertyDescriptor[] listAccessors) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.System#ComponentModel#ITypedList#GetListName(System.ComponentModel.PropertyDescriptor[])" />
+      <MemberSignature Language="VB.NET" Value="Function GetListName (listAccessors As PropertyDescriptor()) As String Implements ITypedList.GetListName" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.ITypedList.GetListName(cli::array &lt;System::ComponentModel::PropertyDescriptor ^&gt; ^ listAccessors) = System::ComponentModel::ITypedList::GetListName;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1462,6 +1623,9 @@
       <MemberSignature Language="C#" Value="protected virtual void TableCollectionChanged (object sender, System.ComponentModel.CollectionChangeEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void TableCollectionChanged(object sender, class System.ComponentModel.CollectionChangeEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.DataViewManager.TableCollectionChanged(System.Object,System.ComponentModel.CollectionChangeEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub TableCollectionChanged (sender As Object, e As CollectionChangeEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member TableCollectionChanged : obj * System.ComponentModel.CollectionChangeEventArgs -&gt; unit&#xA;override this.TableCollectionChanged : obj * System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="dataViewManager.TableCollectionChanged (sender, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void TableCollectionChanged(System::Object ^ sender, System::ComponentModel::CollectionChangeEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1490,15 +1654,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.DataViewManager" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

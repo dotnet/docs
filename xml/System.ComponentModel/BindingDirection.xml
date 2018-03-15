@@ -1,7 +1,10 @@
-<Type Name="BindingDirection" FullName="System.ComponentModel.BindingDirection">
+﻿<Type Name="BindingDirection" FullName="System.ComponentModel.BindingDirection">
   <TypeSignature Language="C#" Value="public enum BindingDirection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BindingDirection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.BindingDirection" />
+  <TypeSignature Language="VB.NET" Value="Public Enum BindingDirection" />
+  <TypeSignature Language="F#" Value="type BindingDirection = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class BindingDirection" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="OneWay" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.BindingDirection OneWay = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.BindingDirection.OneWay" />
+      <MemberSignature Language="VB.NET" Value="OneWay" />
+      <MemberSignature Language="F#" Value="OneWay = 0" Usage="System.ComponentModel.BindingDirection.OneWay" />
+      <MemberSignature Language="C++ CLI" Value="OneWay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -44,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.BindingDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The template can only accept property values. Used with a generic <see cref="T:System.Web.UI.ITemplate" />.</summary>
       </Docs>
@@ -52,6 +59,9 @@
       <MemberSignature Language="C#" Value="TwoWay" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.BindingDirection TwoWay = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.BindingDirection.TwoWay" />
+      <MemberSignature Language="VB.NET" Value="TwoWay" />
+      <MemberSignature Language="F#" Value="TwoWay = 1" Usage="System.ComponentModel.BindingDirection.TwoWay" />
+      <MemberSignature Language="C++ CLI" Value="TwoWay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.BindingDirection</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The template can accept and expose property values. Used with an <see cref="T:System.Web.UI.IBindableTemplate" />.</summary>
       </Docs>

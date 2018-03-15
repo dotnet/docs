@@ -1,7 +1,10 @@
-<Type Name="IThemeResolutionService" FullName="System.Web.UI.IThemeResolutionService">
+﻿<Type Name="IThemeResolutionService" FullName="System.Web.UI.IThemeResolutionService">
   <TypeSignature Language="C#" Value="public interface IThemeResolutionService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IThemeResolutionService" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IThemeResolutionService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IThemeResolutionService" />
+  <TypeSignature Language="F#" Value="type IThemeResolutionService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IThemeResolutionService" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ThemeProvider[] GetAllThemeProviders ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.ThemeProvider[] GetAllThemeProviders() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IThemeResolutionService.GetAllThemeProviders" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetAllThemeProviders () As ThemeProvider()" />
+      <MemberSignature Language="F#" Value="abstract member GetAllThemeProviders : unit -&gt; System.Web.UI.ThemeProvider[]" Usage="iThemeResolutionService.GetAllThemeProviders " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Web::UI::ThemeProvider ^&gt; ^ GetAllThemeProviders();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -49,6 +55,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ThemeProvider GetStylesheetThemeProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.ThemeProvider GetStylesheetThemeProvider() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IThemeResolutionService.GetStylesheetThemeProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStylesheetThemeProvider () As ThemeProvider" />
+      <MemberSignature Language="F#" Value="abstract member GetStylesheetThemeProvider : unit -&gt; System.Web.UI.ThemeProvider" Usage="iThemeResolutionService.GetStylesheetThemeProvider " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::ThemeProvider ^ GetStylesheetThemeProvider();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -69,6 +78,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.ThemeProvider GetThemeProvider ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.ThemeProvider GetThemeProvider() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IThemeResolutionService.GetThemeProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetThemeProvider () As ThemeProvider" />
+      <MemberSignature Language="F#" Value="abstract member GetThemeProvider : unit -&gt; System.Web.UI.ThemeProvider" Usage="iThemeResolutionService.GetThemeProvider " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::ThemeProvider ^ GetThemeProvider();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

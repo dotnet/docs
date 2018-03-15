@@ -1,7 +1,10 @@
-<Type Name="ExpandoObject" FullName="System.Dynamic.ExpandoObject">
+﻿<Type Name="ExpandoObject" FullName="System.Dynamic.ExpandoObject">
   <TypeSignature Language="C#" Value="public sealed class ExpandoObject : System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.Collections.Generic.IDictionary&lt;string,object&gt;, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;, System.ComponentModel.INotifyPropertyChanged, System.Dynamic.IDynamicMetaObjectProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpandoObject extends System.Object implements class System.Collections.Generic.ICollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.Generic.IDictionary`2&lt;string, object&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt;, class System.Collections.IEnumerable, class System.ComponentModel.INotifyPropertyChanged, class System.Dynamic.IDynamicMetaObjectProvider" />
   <TypeSignature Language="DocId" Value="T:System.Dynamic.ExpandoObject" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ExpandoObject&#xA;Implements ICollection(Of KeyValuePair(Of String, Object)), IDictionary(Of String, Object), IDynamicMetaObjectProvider, IEnumerable(Of KeyValuePair(Of String, Object)), INotifyPropertyChanged" />
+  <TypeSignature Language="F#" Value="type ExpandoObject = class&#xA;    interface IDynamicMetaObjectProvider&#xA;    interface IDictionary&lt;string, obj&gt;&#xA;    interface INotifyPropertyChanged&#xA;    interface ICollection&lt;KeyValuePair&lt;string, obj&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;string, obj&gt;&gt;&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExpandoObject sealed : System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;, System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;, System::ComponentModel::INotifyPropertyChanged, System::Dynamic::IDynamicMetaObjectProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -170,6 +173,8 @@ End Module
       <MemberSignature Language="C#" Value="public ExpandoObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ExpandoObject.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExpandoObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -198,7 +203,12 @@ End Module
       <MemberSignature Language="C#" Value="void ICollection&lt;KeyValuePair&lt;string,object&gt;&gt;.Add (System.Collections.Generic.KeyValuePair&lt;string,object&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.Add(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;string,object&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Sub Add (item As KeyValuePair(Of String, Object)) Implements ICollection(Of KeyValuePair(Of String, Object)).Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.Add(System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt; item) = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -232,7 +242,12 @@ End Module
       <MemberSignature Language="C#" Value="void ICollection&lt;KeyValuePair&lt;string,object&gt;&gt;.Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;string,object&gt;&gt;#Clear" />
+      <MemberSignature Language="VB.NET" Value="Sub Clear () Implements ICollection(Of KeyValuePair(Of String, Object)).Clear" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.Clear() = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;::Clear;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -263,7 +278,12 @@ End Module
       <MemberSignature Language="C#" Value="bool ICollection&lt;KeyValuePair&lt;string,object&gt;&gt;.Contains (System.Collections.Generic.KeyValuePair&lt;string,object&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.Contains(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;string,object&gt;&gt;#Contains(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (item As KeyValuePair(Of String, Object)) As Boolean Implements ICollection(Of KeyValuePair(Of String, Object)).Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.Contains(System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt; item) = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;::Contains;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -298,6 +318,8 @@ End Module
       <MemberSignature Language="C#" Value="void ICollection&lt;KeyValuePair&lt;string,object&gt;&gt;.CopyTo (System.Collections.Generic.KeyValuePair&lt;string,object&gt;[] array, int arrayIndex);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.CopyTo(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;[] array, int32 arrayIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;string,object&gt;&gt;#CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.Object}[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub CopyTo (array As KeyValuePair(Of String, Object)(), arrayIndex As Integer) Implements ICollection(Of KeyValuePair(Of String, Object)).CopyTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.CopyTo(cli::array &lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ array, int arrayIndex) = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;::CopyTo;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -334,7 +356,13 @@ End Module
       <MemberSignature Language="C#" Value="int System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.Count" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;string,object&gt;&gt;#Count" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection(Of KeyValuePair(Of String, Object)).Count" />
+      <MemberSignature Language="F#" Usage="System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -365,7 +393,13 @@ End Module
       <MemberSignature Language="C#" Value="bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;string,object&gt;&gt;#IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsReadOnly As Boolean Implements ICollection(Of KeyValuePair(Of String, Object)).IsReadOnly" />
+      <MemberSignature Language="F#" Usage="System.Dynamic.ExpandoObject.System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;.IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -396,7 +430,12 @@ End Module
       <MemberSignature Language="C#" Value="bool ICollection&lt;KeyValuePair&lt;string,object&gt;&gt;.Remove (System.Collections.Generic.KeyValuePair&lt;string,object&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.Remove(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;string,object&gt;&gt;#Remove(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Function Remove (item As KeyValuePair(Of String, Object)) As Boolean Implements ICollection(Of KeyValuePair(Of String, Object)).Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.Remove(System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt; item) = System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -431,7 +470,12 @@ End Module
       <MemberSignature Language="C#" Value="void IDictionary&lt;string,object&gt;.Add (string key, object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.Generic.IDictionary&lt;string,object&gt;.Add(string key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;string,object&gt;#Add(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Add (key As String, value As Object) Implements IDictionary(Of String, Object).Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.Generic.IDictionary&lt;string,object&gt;.Add(System::String ^ key, System::Object ^ value) = System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt;::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Add(`0,`1)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -467,7 +511,12 @@ End Module
       <MemberSignature Language="C#" Value="bool IDictionary&lt;string,object&gt;.ContainsKey (string key);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.IDictionary&lt;string,object&gt;.ContainsKey(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;string,object&gt;#ContainsKey(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function ContainsKey (key As String) As Boolean Implements IDictionary(Of String, Object).ContainsKey" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.IDictionary&lt;string,object&gt;.ContainsKey(System::String ^ key) = System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt;::ContainsKey;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -502,7 +551,13 @@ End Module
       <MemberSignature Language="C#" Value="object System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Item[string key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.Generic.IDictionary&lt;string,object&gt;.Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;string,object&gt;#Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(key As String) As Object Implements IDictionary(Of String, Object).Item" />
+      <MemberSignature Language="F#" Usage="System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary&lt;string,object&gt;.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Item[System::String ^] { System::Object ^ get(System::String ^ key); void set(System::String ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -537,7 +592,13 @@ End Module
       <MemberSignature Language="C#" Value="System.Collections.Generic.ICollection&lt;string&gt; System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;string&gt; System.Collections.Generic.IDictionary&lt;string,object&gt;.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;string,object&gt;#Keys" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection(Of String) Implements IDictionary(Of String, Object).Keys" />
+      <MemberSignature Language="F#" Usage="System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary&lt;string,object&gt;.Keys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Keys { System::Collections::Generic::ICollection&lt;System::String ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -568,7 +629,12 @@ End Module
       <MemberSignature Language="C#" Value="bool IDictionary&lt;string,object&gt;.Remove (string key);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.IDictionary&lt;string,object&gt;.Remove(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;string,object&gt;#Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Function Remove (key As String) As Boolean Implements IDictionary(Of String, Object).Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.IDictionary&lt;string,object&gt;.Remove(System::String ^ key) = System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt;::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -603,6 +669,8 @@ End Module
       <MemberSignature Language="C#" Value="bool IDictionary&lt;string,object&gt;.TryGetValue (string key, out object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.Generic.IDictionary&lt;string,object&gt;.TryGetValue(string key, [out] object&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;string,object&gt;#TryGetValue(System.String,System.Object@)" />
+      <MemberSignature Language="VB.NET" Value="Function TryGetValue (key As String, ByRef value As Object) As Boolean Implements IDictionary(Of String, Object).TryGetValue" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.Generic.IDictionary&lt;string,object&gt;.TryGetValue(System::String ^ key, [Runtime::InteropServices::Out] System::Object ^ % value) = System::Collections::Generic::IDictionary&lt;System::String ^, System::Object ^&gt;::TryGetValue;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -640,7 +708,13 @@ End Module
       <MemberSignature Language="C#" Value="System.Collections.Generic.ICollection&lt;object&gt; System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;object&gt; System.Collections.Generic.IDictionary&lt;string,object&gt;.Values" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.ExpandoObject.System#Collections#Generic#IDictionary&lt;string,object&gt;#Values" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection(Of Object) Implements IDictionary(Of String, Object).Values" />
+      <MemberSignature Language="F#" Usage="System.Dynamic.ExpandoObject.System.Collections.Generic.IDictionary&lt;string,object&gt;.Values" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ System.Collections.Generic.IDictionary&lt;System.String,System.Object&gt;.Values { System::Collections::Generic::ICollection&lt;System::Object ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -671,7 +745,12 @@ End Module
       <MemberSignature Language="C#" Value="System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; IEnumerable&lt;KeyValuePair&lt;string,object&gt;&gt;.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ExpandoObject.System#Collections#Generic#IEnumerable&lt;System#Collections#Generic#KeyValuePair&lt;string,object&gt;&gt;#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of String, Object)) Implements IEnumerable(Of KeyValuePair(Of String, Object)).GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt; ^ System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt;.GetEnumerator() = System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Object ^&gt;&gt;::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -703,7 +782,12 @@ End Module
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ExpandoObject.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -731,11 +815,50 @@ End Module
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="System.ComponentModel.INotifyPropertyChanged.PropertyChanged">
+      <MemberSignature Language="C#" Value="event System.ComponentModel.PropertyChangedEventHandler System.ComponentModel.INotifyPropertyChanged.PropertyChanged;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.PropertyChangedEventHandler System.ComponentModel.INotifyPropertyChanged.PropertyChanged" />
+      <MemberSignature Language="DocId" Value="E:System.Dynamic.ExpandoObject.System#ComponentModel#INotifyPropertyChanged#PropertyChanged" />
+      <MemberSignature Language="VB.NET" Value="Custom Event PropertyChanged As PropertyChangedEventHandler Implements System.ComponentModel.INotifyPropertyChanged" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>netstandard</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.ComponentModel.PropertyChangedEventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject">
       <MemberSignature Language="C#" Value="System.Dynamic.DynamicMetaObject IDynamicMetaObjectProvider.GetMetaObject (System.Linq.Expressions.Expression parameter);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject(class System.Linq.Expressions.Expression parameter) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.ExpandoObject.System#Dynamic#IDynamicMetaObjectProvider#GetMetaObject(System.Linq.Expressions.Expression)" />
+      <MemberSignature Language="VB.NET" Value="Function GetMetaObject (parameter As Expression) As DynamicMetaObject Implements IDynamicMetaObjectProvider.GetMetaObject" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Dynamic::DynamicMetaObject ^ System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject(System::Linq::Expressions::Expression ^ parameter) = System::Dynamic::IDynamicMetaObjectProvider::GetMetaObject;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Dynamic.IDynamicMetaObjectProvider.GetMetaObject(System.Linq.Expressions.Expression)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>

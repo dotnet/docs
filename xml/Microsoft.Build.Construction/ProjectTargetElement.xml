@@ -1,7 +1,10 @@
-<Type Name="ProjectTargetElement" FullName="Microsoft.Build.Construction.ProjectTargetElement">
+﻿<Type Name="ProjectTargetElement" FullName="Microsoft.Build.Construction.ProjectTargetElement">
   <TypeSignature Language="C#" Value="public class ProjectTargetElement : Microsoft.Build.Construction.ProjectElementContainer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProjectTargetElement extends Microsoft.Build.Construction.ProjectElementContainer" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Construction.ProjectTargetElement" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProjectTargetElement&#xA;Inherits ProjectElementContainer" />
+  <TypeSignature Language="F#" Value="type ProjectTargetElement = class&#xA;    inherit ProjectElementContainer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProjectTargetElement : Microsoft::Build::Construction::ProjectElementContainer" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ProjectItemGroupElement AddItemGroup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Construction.ProjectItemGroupElement AddItemGroup() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ProjectTargetElement.AddItemGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddItemGroup () As ProjectItemGroupElement" />
+      <MemberSignature Language="F#" Value="member this.AddItemGroup : unit -&gt; Microsoft.Build.Construction.ProjectItemGroupElement" Usage="projectTargetElement.AddItemGroup " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Construction::ProjectItemGroupElement ^ AddItemGroup();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ProjectPropertyGroupElement AddPropertyGroup ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Construction.ProjectPropertyGroupElement AddPropertyGroup() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ProjectTargetElement.AddPropertyGroup" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddPropertyGroup () As ProjectPropertyGroupElement" />
+      <MemberSignature Language="F#" Value="member this.AddPropertyGroup : unit -&gt; Microsoft.Build.Construction.ProjectPropertyGroupElement" Usage="projectTargetElement.AddPropertyGroup " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Construction::ProjectPropertyGroupElement ^ AddPropertyGroup();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -76,6 +85,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ProjectTaskElement AddTask (string taskName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.Build.Construction.ProjectTaskElement AddTask(string taskName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Construction.ProjectTargetElement.AddTask(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function AddTask (taskName As String) As ProjectTaskElement" />
+      <MemberSignature Language="F#" Value="member this.AddTask : string -&gt; Microsoft.Build.Construction.ProjectTaskElement" Usage="projectTargetElement.AddTask taskName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Build::Construction::ProjectTaskElement ^ AddTask(System::String ^ taskName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -105,6 +117,9 @@
       <MemberSignature Language="C#" Value="public string AfterTargets { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AfterTargets" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.AfterTargets" />
+      <MemberSignature Language="VB.NET" Value="Public Property AfterTargets As String" />
+      <MemberSignature Language="F#" Value="member this.AfterTargets : string with get, set" Usage="Microsoft.Build.Construction.ProjectTargetElement.AfterTargets" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ AfterTargets { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -135,6 +150,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation AfterTargetsLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation AfterTargetsLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.AfterTargetsLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AfterTargetsLocation As ElementLocation" />
+      <MemberSignature Language="F#" Value="member this.AfterTargetsLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectTargetElement.AfterTargetsLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ AfterTargetsLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -153,6 +171,9 @@
       <MemberSignature Language="C#" Value="public string BeforeTargets { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string BeforeTargets" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.BeforeTargets" />
+      <MemberSignature Language="VB.NET" Value="Public Property BeforeTargets As String" />
+      <MemberSignature Language="F#" Value="member this.BeforeTargets : string with get, set" Usage="Microsoft.Build.Construction.ProjectTargetElement.BeforeTargets" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BeforeTargets { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -183,6 +204,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation BeforeTargetsLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation BeforeTargetsLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.BeforeTargetsLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BeforeTargetsLocation As ElementLocation" />
+      <MemberSignature Language="F#" Value="member this.BeforeTargetsLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectTargetElement.BeforeTargetsLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ BeforeTargetsLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -201,6 +225,9 @@
       <MemberSignature Language="C#" Value="public string DependsOnTargets { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DependsOnTargets" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.DependsOnTargets" />
+      <MemberSignature Language="VB.NET" Value="Public Property DependsOnTargets As String" />
+      <MemberSignature Language="F#" Value="member this.DependsOnTargets : string with get, set" Usage="Microsoft.Build.Construction.ProjectTargetElement.DependsOnTargets" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DependsOnTargets { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -231,6 +258,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation DependsOnTargetsLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation DependsOnTargetsLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.DependsOnTargetsLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DependsOnTargetsLocation As ElementLocation" />
+      <MemberSignature Language="F#" Value="member this.DependsOnTargetsLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectTargetElement.DependsOnTargetsLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ DependsOnTargetsLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -249,6 +279,9 @@
       <MemberSignature Language="C#" Value="public string Inputs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Inputs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.Inputs" />
+      <MemberSignature Language="VB.NET" Value="Public Property Inputs As String" />
+      <MemberSignature Language="F#" Value="member this.Inputs : string with get, set" Usage="Microsoft.Build.Construction.ProjectTargetElement.Inputs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Inputs { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -279,6 +312,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation InputsLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation InputsLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.InputsLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InputsLocation As ElementLocation" />
+      <MemberSignature Language="F#" Value="member this.InputsLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectTargetElement.InputsLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ InputsLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -297,6 +333,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectItemGroupElement&gt; ItemGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.Build.Construction.ProjectItemGroupElement&gt; ItemGroups" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.ItemGroups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemGroups As ICollection(Of ProjectItemGroupElement)" />
+      <MemberSignature Language="F#" Value="member this.ItemGroups : System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectItemGroupElement&gt;" Usage="Microsoft.Build.Construction.ProjectTargetElement.ItemGroups" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectItemGroupElement ^&gt; ^ ItemGroups { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectItemGroupElement ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -315,6 +354,9 @@
       <MemberSignature Language="C#" Value="public string KeepDuplicateOutputs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeepDuplicateOutputs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.KeepDuplicateOutputs" />
+      <MemberSignature Language="VB.NET" Value="Public Property KeepDuplicateOutputs As String" />
+      <MemberSignature Language="F#" Value="member this.KeepDuplicateOutputs : string with get, set" Usage="Microsoft.Build.Construction.ProjectTargetElement.KeepDuplicateOutputs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ KeepDuplicateOutputs { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -345,6 +387,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation KeepDuplicateOutputsLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation KeepDuplicateOutputsLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.KeepDuplicateOutputsLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property KeepDuplicateOutputsLocation As ElementLocation" />
+      <MemberSignature Language="F#" Value="member this.KeepDuplicateOutputsLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectTargetElement.KeepDuplicateOutputsLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ KeepDuplicateOutputsLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -363,6 +408,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Build.Construction.ProjectTargetElement.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -386,6 +434,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation NameLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation NameLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.NameLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NameLocation As ElementLocation" />
+      <MemberSignature Language="F#" Value="member this.NameLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectTargetElement.NameLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ NameLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -404,6 +455,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectOnErrorElement&gt; OnErrors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.Build.Construction.ProjectOnErrorElement&gt; OnErrors" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.OnErrors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OnErrors As ICollection(Of ProjectOnErrorElement)" />
+      <MemberSignature Language="F#" Value="member this.OnErrors : System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectOnErrorElement&gt;" Usage="Microsoft.Build.Construction.ProjectTargetElement.OnErrors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectOnErrorElement ^&gt; ^ OnErrors { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectOnErrorElement ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -422,6 +476,9 @@
       <MemberSignature Language="C#" Value="public string Outputs { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Outputs" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.Outputs" />
+      <MemberSignature Language="VB.NET" Value="Public Property Outputs As String" />
+      <MemberSignature Language="F#" Value="member this.Outputs : string with get, set" Usage="Microsoft.Build.Construction.ProjectTargetElement.Outputs" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Outputs { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -452,6 +509,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation OutputsLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation OutputsLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.OutputsLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OutputsLocation As ElementLocation" />
+      <MemberSignature Language="F#" Value="member this.OutputsLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectTargetElement.OutputsLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ OutputsLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -470,6 +530,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectPropertyGroupElement&gt; PropertyGroups { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.Build.Construction.ProjectPropertyGroupElement&gt; PropertyGroups" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.PropertyGroups" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PropertyGroups As ICollection(Of ProjectPropertyGroupElement)" />
+      <MemberSignature Language="F#" Value="member this.PropertyGroups : System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectPropertyGroupElement&gt;" Usage="Microsoft.Build.Construction.ProjectTargetElement.PropertyGroups" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectPropertyGroupElement ^&gt; ^ PropertyGroups { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectPropertyGroupElement ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -488,6 +551,9 @@
       <MemberSignature Language="C#" Value="public string Returns { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Returns" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.Returns" />
+      <MemberSignature Language="VB.NET" Value="Public Property Returns As String" />
+      <MemberSignature Language="F#" Value="member this.Returns : string with get, set" Usage="Microsoft.Build.Construction.ProjectTargetElement.Returns" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Returns { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -518,6 +584,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Construction.ElementLocation ReturnsLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Construction.ElementLocation ReturnsLocation" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.ReturnsLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReturnsLocation As ElementLocation" />
+      <MemberSignature Language="F#" Value="member this.ReturnsLocation : Microsoft.Build.Construction.ElementLocation" Usage="Microsoft.Build.Construction.ProjectTargetElement.ReturnsLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Construction::ElementLocation ^ ReturnsLocation { Microsoft::Build::Construction::ElementLocation ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -536,6 +605,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectTaskElement&gt; Tasks { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class Microsoft.Build.Construction.ProjectTaskElement&gt; Tasks" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Construction.ProjectTargetElement.Tasks" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tasks As ICollection(Of ProjectTaskElement)" />
+      <MemberSignature Language="F#" Value="member this.Tasks : System.Collections.Generic.ICollection&lt;Microsoft.Build.Construction.ProjectTaskElement&gt;" Usage="Microsoft.Build.Construction.ProjectTargetElement.Tasks" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectTaskElement ^&gt; ^ Tasks { System::Collections::Generic::ICollection&lt;Microsoft::Build::Construction::ProjectTaskElement ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

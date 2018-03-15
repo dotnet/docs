@@ -1,7 +1,10 @@
-<Type Name="INodeLogger" FullName="Microsoft.Build.Framework.INodeLogger">
+﻿<Type Name="INodeLogger" FullName="Microsoft.Build.Framework.INodeLogger">
   <TypeSignature Language="C#" Value="public interface INodeLogger : Microsoft.Build.Framework.ILogger" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INodeLogger implements class Microsoft.Build.Framework.ILogger" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.INodeLogger" />
+  <TypeSignature Language="VB.NET" Value="Public Interface INodeLogger&#xA;Implements ILogger" />
+  <TypeSignature Language="F#" Value="type INodeLogger = interface&#xA;    interface ILogger" />
+  <TypeSignature Language="C++ CLI" Value="public interface class INodeLogger : Microsoft::Build::Framework::ILogger" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public void Initialize (Microsoft.Build.Framework.IEventSource eventSource, int nodeCount);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Initialize(class Microsoft.Build.Framework.IEventSource eventSource, int32 nodeCount) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.INodeLogger.Initialize(Microsoft.Build.Framework.IEventSource,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Initialize (eventSource As IEventSource, nodeCount As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Initialize : Microsoft.Build.Framework.IEventSource * int -&gt; unit" Usage="iNodeLogger.Initialize (eventSource, nodeCount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Initialize(Microsoft::Build::Framework::IEventSource ^ eventSource, int nodeCount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

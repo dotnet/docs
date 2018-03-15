@@ -1,7 +1,10 @@
-<Type Name="Vector2" FullName="System.Numerics.Vector2">
+﻿<Type Name="Vector2" FullName="System.Numerics.Vector2">
   <TypeSignature Language="C#" Value="public struct Vector2 : IEquatable&lt;System.Numerics.Vector2&gt;, IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Vector2 extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Numerics.Vector2&gt;, class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.Numerics.Vector2" />
+  <TypeSignature Language="VB.NET" Value="Public Structure Vector2&#xA;Implements IEquatable(Of Vector2), IFormattable" />
+  <TypeSignature Language="F#" Value="type Vector2 = struct&#xA;    interface IFormattable" />
+  <TypeSignature Language="C++ CLI" Value="public value class Vector2 : IEquatable&lt;System::Numerics::Vector2&gt;, IFormattable" />
   <AssemblyInfo>
     <AssemblyName>System.Numerics.Vectors</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -42,10 +45,24 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Numerics.Vector2" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Vector2 (float value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.#ctor(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Single)" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Vector2 : single -&gt; System.Numerics.Vector2" Usage="new System.Numerics.Vector2 value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector2(float value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -75,6 +92,9 @@
       <MemberSignature Language="C#" Value="public Vector2 (float x, float y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float32 x, float32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.#ctor(System.Single,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (x As Single, y As Single)" />
+      <MemberSignature Language="F#" Value="new System.Numerics.Vector2 : single * single -&gt; System.Numerics.Vector2" Usage="new System.Numerics.Vector2 (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Vector2(float x, float y);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -106,6 +126,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Abs (System.Numerics.Vector2 value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Abs(valuetype System.Numerics.Vector2 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Abs(System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Abs (value As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Abs : System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Abs value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Abs(System::Numerics::Vector2 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -139,6 +162,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Add (System.Numerics.Vector2 left, System.Numerics.Vector2 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Add(valuetype System.Numerics.Vector2 left, valuetype System.Numerics.Vector2 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Add(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add (left As Vector2, right As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Add : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Add (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Add(System::Numerics::Vector2 left, System::Numerics::Vector2 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -174,6 +200,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Clamp (System.Numerics.Vector2 value1, System.Numerics.Vector2 min, System.Numerics.Vector2 max);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Clamp(valuetype System.Numerics.Vector2 value1, valuetype System.Numerics.Vector2 min, valuetype System.Numerics.Vector2 max) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Clamp(System.Numerics.Vector2,System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Clamp (value1 As Vector2, min As Vector2, max As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Clamp : System.Numerics.Vector2 * System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Clamp (value1, min, max)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Clamp(System::Numerics::Vector2 value1, System::Numerics::Vector2 min, System::Numerics::Vector2 max);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -207,10 +236,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CopyTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Copies the elements of the vector to an array.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (float[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(float32[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.CopyTo(System.Single[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Single())" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : single[] -&gt; unit" Usage="vector2.CopyTo array" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;float&gt; ^ array);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -255,6 +298,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (float[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(float32[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.CopyTo(System.Single[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As Single(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : single[] * int -&gt; unit" Usage="vector2.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;float&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -307,6 +353,9 @@
       <MemberSignature Language="C#" Value="public static float Distance (System.Numerics.Vector2 value1, System.Numerics.Vector2 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Distance(valuetype System.Numerics.Vector2 value1, valuetype System.Numerics.Vector2 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Distance(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Distance (value1 As Vector2, value2 As Vector2) As Single" />
+      <MemberSignature Language="F#" Value="static member Distance : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; single" Usage="System.Numerics.Vector2.Distance (value1, value2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Distance(System::Numerics::Vector2 value1, System::Numerics::Vector2 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -342,6 +391,9 @@
       <MemberSignature Language="C#" Value="public static float DistanceSquared (System.Numerics.Vector2 value1, System.Numerics.Vector2 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 DistanceSquared(valuetype System.Numerics.Vector2 value1, valuetype System.Numerics.Vector2 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.DistanceSquared(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DistanceSquared (value1 As Vector2, value2 As Vector2) As Single" />
+      <MemberSignature Language="F#" Value="static member DistanceSquared : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; single" Usage="System.Numerics.Vector2.DistanceSquared (value1, value2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float DistanceSquared(System::Numerics::Vector2 value1, System::Numerics::Vector2 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -373,10 +425,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Divide">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a division operation on a vector.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Divide">
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Divide (System.Numerics.Vector2 left, System.Numerics.Vector2 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Divide(valuetype System.Numerics.Vector2 left, valuetype System.Numerics.Vector2 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Divide(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Divide (left As Vector2, right As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Divide : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Divide (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Divide(System::Numerics::Vector2 left, System::Numerics::Vector2 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -412,6 +478,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Divide (System.Numerics.Vector2 left, float divisor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Divide(valuetype System.Numerics.Vector2 left, float32 divisor) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Divide(System.Numerics.Vector2,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Divide (left As Vector2, divisor As Single) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Divide : System.Numerics.Vector2 * single -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Divide (left, divisor)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Divide(System::Numerics::Vector2 left, float divisor);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -447,6 +516,9 @@
       <MemberSignature Language="C#" Value="public static float Dot (System.Numerics.Vector2 value1, System.Numerics.Vector2 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig float32 Dot(valuetype System.Numerics.Vector2 value1, valuetype System.Numerics.Vector2 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Dot(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Dot (value1 As Vector2, value2 As Vector2) As Single" />
+      <MemberSignature Language="F#" Value="static member Dot : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; single" Usage="System.Numerics.Vector2.Dot (value1, value2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static float Dot(System::Numerics::Vector2 value1, System::Numerics::Vector2 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -478,11 +550,28 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether this instance and a specified <see cref="T:System.Numerics.Vector2" /> instance or a specified object are equal.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public bool Equals (System.Numerics.Vector2 other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Numerics.Vector2 other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Equals(System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As Vector2) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Numerics.Vector2 -&gt; bool" Usage="vector2.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Numerics::Vector2 other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -523,6 +612,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="vector2.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -564,6 +656,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="vector2.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -594,6 +689,9 @@
       <MemberSignature Language="C#" Value="public float Length ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 Length() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Length" />
+      <MemberSignature Language="VB.NET" Value="Public Function Length () As Single" />
+      <MemberSignature Language="F#" Value="member this.Length : unit -&gt; single" Usage="vector2.Length " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; float Length();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -625,6 +723,9 @@
       <MemberSignature Language="C#" Value="public float LengthSquared ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float32 LengthSquared() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.LengthSquared" />
+      <MemberSignature Language="VB.NET" Value="Public Function LengthSquared () As Single" />
+      <MemberSignature Language="F#" Value="member this.LengthSquared : unit -&gt; single" Usage="vector2.LengthSquared " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; float LengthSquared();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -663,6 +764,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Lerp (System.Numerics.Vector2 value1, System.Numerics.Vector2 value2, float amount);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Lerp(valuetype System.Numerics.Vector2 value1, valuetype System.Numerics.Vector2 value2, float32 amount) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Lerp(System.Numerics.Vector2,System.Numerics.Vector2,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Lerp (value1 As Vector2, value2 As Vector2, amount As Single) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Lerp : System.Numerics.Vector2 * System.Numerics.Vector2 * single -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Lerp (value1, value2, amount)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Lerp(System::Numerics::Vector2 value1, System::Numerics::Vector2 value2, float amount);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -700,6 +804,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Max (System.Numerics.Vector2 value1, System.Numerics.Vector2 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Max(valuetype System.Numerics.Vector2 value1, valuetype System.Numerics.Vector2 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Max(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Max (value1 As Vector2, value2 As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Max : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Max (value1, value2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Max(System::Numerics::Vector2 value1, System::Numerics::Vector2 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -735,6 +842,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Min (System.Numerics.Vector2 value1, System.Numerics.Vector2 value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Min(valuetype System.Numerics.Vector2 value1, valuetype System.Numerics.Vector2 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Min(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Min (value1 As Vector2, value2 As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Min : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Min (value1, value2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Min(System::Numerics::Vector2 value1, System::Numerics::Vector2 value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -766,10 +876,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Multiply">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a multiplication operation on a vector.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Multiply">
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Multiply (System.Numerics.Vector2 left, System.Numerics.Vector2 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Multiply(valuetype System.Numerics.Vector2 left, valuetype System.Numerics.Vector2 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Multiply(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (left As Vector2, right As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Multiply (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Multiply(System::Numerics::Vector2 left, System::Numerics::Vector2 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -805,6 +929,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Multiply (System.Numerics.Vector2 left, float right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Multiply(valuetype System.Numerics.Vector2 left, float32 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Multiply(System.Numerics.Vector2,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (left As Vector2, right As Single) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Multiply : System.Numerics.Vector2 * single -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Multiply (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Multiply(System::Numerics::Vector2 left, float right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -840,6 +967,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Multiply (float left, System.Numerics.Vector2 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Multiply(float32 left, valuetype System.Numerics.Vector2 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Multiply(System.Single,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Multiply (left As Single, right As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Multiply : single * System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Multiply (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Multiply(float left, System::Numerics::Vector2 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -875,6 +1005,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Negate (System.Numerics.Vector2 value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Negate(valuetype System.Numerics.Vector2 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Negate(System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Negate (value As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Negate : System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Negate value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Negate(System::Numerics::Vector2 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -908,6 +1041,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Normalize (System.Numerics.Vector2 value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Normalize(valuetype System.Numerics.Vector2 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Normalize(System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Normalize (value As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Normalize : System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Normalize value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Normalize(System::Numerics::Vector2 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -941,6 +1077,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 One { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Numerics.Vector2 One" />
       <MemberSignature Language="DocId" Value="P:System.Numerics.Vector2.One" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property One As Vector2" />
+      <MemberSignature Language="F#" Value="member this.One : System.Numerics.Vector2" Usage="System.Numerics.Vector2.One" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::Vector2 One { System::Numerics::Vector2 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -970,6 +1109,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 operator + (System.Numerics.Vector2 left, System.Numerics.Vector2 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector2 op_Addition(valuetype System.Numerics.Vector2 left, valuetype System.Numerics.Vector2 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.op_Addition(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator + (left As Vector2, right As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member ( + ) : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="left + right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 operator +(System::Numerics::Vector2 left, System::Numerics::Vector2 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1008,10 +1150,24 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Division">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a division operation on a vector.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Division">
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 operator / (System.Numerics.Vector2 left, System.Numerics.Vector2 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector2 op_Division(valuetype System.Numerics.Vector2 left, valuetype System.Numerics.Vector2 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.op_Division(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator / (left As Vector2, right As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member ( / ) : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="left / right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 operator /(System::Numerics::Vector2 left, System::Numerics::Vector2 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1054,6 +1210,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 operator / (System.Numerics.Vector2 value1, float value2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector2 op_Division(valuetype System.Numerics.Vector2 value1, float32 value2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.op_Division(System.Numerics.Vector2,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator / (value1 As Vector2, value2 As Single) As Vector2" />
+      <MemberSignature Language="F#" Value="static member ( / ) : System.Numerics.Vector2 * single -&gt; System.Numerics.Vector2" Usage="value1 / value2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 operator /(System::Numerics::Vector2 value1, float value2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1096,6 +1255,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Numerics.Vector2 left, System.Numerics.Vector2 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Numerics.Vector2 left, valuetype System.Numerics.Vector2 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.op_Equality(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (left As Vector2, right As Vector2) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; bool" Usage="left = right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Numerics::Vector2 left, System::Numerics::Vector2 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1139,6 +1301,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Numerics.Vector2 left, System.Numerics.Vector2 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Numerics.Vector2 left, valuetype System.Numerics.Vector2 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.op_Inequality(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (left As Vector2, right As Vector2) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; bool" Usage="System.Numerics.Vector2.op_Inequality (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Numerics::Vector2 left, System::Numerics::Vector2 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1171,10 +1336,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="op_Multiply">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs a multiplication operation on a vector.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="op_Multiply">
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 operator * (System.Numerics.Vector2 left, System.Numerics.Vector2 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector2 op_Multiply(valuetype System.Numerics.Vector2 left, valuetype System.Numerics.Vector2 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.op_Multiply(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator * (left As Vector2, right As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="left * right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 operator *(System::Numerics::Vector2 left, System::Numerics::Vector2 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1217,6 +1396,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 operator * (System.Numerics.Vector2 left, float right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector2 op_Multiply(valuetype System.Numerics.Vector2 left, float32 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.op_Multiply(System.Numerics.Vector2,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator * (left As Vector2, right As Single) As Vector2" />
+      <MemberSignature Language="F#" Value="static member ( * ) : System.Numerics.Vector2 * single -&gt; System.Numerics.Vector2" Usage="left * right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 operator *(System::Numerics::Vector2 left, float right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1259,6 +1441,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 operator * (float left, System.Numerics.Vector2 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector2 op_Multiply(float32 left, valuetype System.Numerics.Vector2 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.op_Multiply(System.Single,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator * (left As Single, right As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member ( * ) : single * System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="left * right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 operator *(float left, System::Numerics::Vector2 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1301,6 +1486,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 operator - (System.Numerics.Vector2 left, System.Numerics.Vector2 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector2 op_Subtraction(valuetype System.Numerics.Vector2 left, valuetype System.Numerics.Vector2 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.op_Subtraction(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (left As Vector2, right As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member ( - ) : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="left - right" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 operator -(System::Numerics::Vector2 left, System::Numerics::Vector2 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1343,6 +1531,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 operator - (System.Numerics.Vector2 value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname valuetype System.Numerics.Vector2 op_UnaryNegation(valuetype System.Numerics.Vector2 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.op_UnaryNegation(System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator - (value As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member ( ~- ) : System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="- value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 operator -(System::Numerics::Vector2 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1383,6 +1574,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Reflect (System.Numerics.Vector2 vector, System.Numerics.Vector2 normal);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Reflect(valuetype System.Numerics.Vector2 vector, valuetype System.Numerics.Vector2 normal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Reflect(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Reflect (vector As Vector2, normal As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Reflect : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Reflect (vector, normal)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Reflect(System::Numerics::Vector2 vector, System::Numerics::Vector2 normal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1418,6 +1612,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 SquareRoot (System.Numerics.Vector2 value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 SquareRoot(valuetype System.Numerics.Vector2 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.SquareRoot(System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SquareRoot (value As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member SquareRoot : System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.SquareRoot value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 SquareRoot(System::Numerics::Vector2 value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1451,6 +1648,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Subtract (System.Numerics.Vector2 left, System.Numerics.Vector2 right);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Subtract(valuetype System.Numerics.Vector2 left, valuetype System.Numerics.Vector2 right) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Subtract(System.Numerics.Vector2,System.Numerics.Vector2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Subtract (left As Vector2, right As Vector2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Subtract : System.Numerics.Vector2 * System.Numerics.Vector2 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Subtract (left, right)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Subtract(System::Numerics::Vector2 left, System::Numerics::Vector2 right);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1482,10 +1682,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the string representation of the current <see cref="T:System.Numerics.Vector2" /> instance.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="vector2.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1523,6 +1737,9 @@
       <MemberSignature Language="C#" Value="public string ToString (string format);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(string format) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.ToString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String) As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : string -&gt; string" Usage="vector2.ToString format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToString(System::String ^ format);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1563,7 +1780,13 @@
       <MemberSignature Language="C#" Value="public string ToString (string format, IFormatProvider formatProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(string format, class System.IFormatProvider formatProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (format As String, formatProvider As IFormatProvider) As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : string * IFormatProvider -&gt; string" Usage="vector2.ToString (format, formatProvider)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ ToString(System::String ^ format, IFormatProvider ^ formatProvider);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -1601,10 +1824,24 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Transform">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Transforms a vector.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Transform">
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Transform (System.Numerics.Vector2 position, System.Numerics.Matrix3x2 matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Transform(valuetype System.Numerics.Vector2 position, valuetype System.Numerics.Matrix3x2 matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Transform(System.Numerics.Vector2,System.Numerics.Matrix3x2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Transform (position As Vector2, matrix As Matrix3x2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Transform : System.Numerics.Vector2 * System.Numerics.Matrix3x2 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Transform (position, matrix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Transform(System::Numerics::Vector2 position, System::Numerics::Matrix3x2 matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1640,6 +1877,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Transform (System.Numerics.Vector2 position, System.Numerics.Matrix4x4 matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Transform(valuetype System.Numerics.Vector2 position, valuetype System.Numerics.Matrix4x4 matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Transform(System.Numerics.Vector2,System.Numerics.Matrix4x4)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Transform (position As Vector2, matrix As Matrix4x4) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Transform : System.Numerics.Vector2 * System.Numerics.Matrix4x4 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Transform (position, matrix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Transform(System::Numerics::Vector2 position, System::Numerics::Matrix4x4 matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1675,6 +1915,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Transform (System.Numerics.Vector2 value, System.Numerics.Quaternion rotation);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 Transform(valuetype System.Numerics.Vector2 value, valuetype System.Numerics.Quaternion rotation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.Transform(System.Numerics.Vector2,System.Numerics.Quaternion)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Transform (value As Vector2, rotation As Quaternion) As Vector2" />
+      <MemberSignature Language="F#" Value="static member Transform : System.Numerics.Vector2 * System.Numerics.Quaternion -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.Transform (value, rotation)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 Transform(System::Numerics::Vector2 value, System::Numerics::Quaternion rotation);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1706,10 +1949,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="TransformNormal">
+      <AssemblyInfo>
+        <AssemblyName>System.Numerics.Vectors</AssemblyName>
+        <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.1.2.0</AssemblyVersion>
+        <AssemblyVersion>4.1.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Transforms a vector normal.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="TransformNormal">
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 TransformNormal (System.Numerics.Vector2 normal, System.Numerics.Matrix3x2 matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 TransformNormal(valuetype System.Numerics.Vector2 normal, valuetype System.Numerics.Matrix3x2 matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.TransformNormal(System.Numerics.Vector2,System.Numerics.Matrix3x2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TransformNormal (normal As Vector2, matrix As Matrix3x2) As Vector2" />
+      <MemberSignature Language="F#" Value="static member TransformNormal : System.Numerics.Vector2 * System.Numerics.Matrix3x2 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.TransformNormal (normal, matrix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 TransformNormal(System::Numerics::Vector2 normal, System::Numerics::Matrix3x2 matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1745,6 +2002,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 TransformNormal (System.Numerics.Vector2 normal, System.Numerics.Matrix4x4 matrix);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.Numerics.Vector2 TransformNormal(valuetype System.Numerics.Vector2 normal, valuetype System.Numerics.Matrix4x4 matrix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Numerics.Vector2.TransformNormal(System.Numerics.Vector2,System.Numerics.Matrix4x4)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TransformNormal (normal As Vector2, matrix As Matrix4x4) As Vector2" />
+      <MemberSignature Language="F#" Value="static member TransformNormal : System.Numerics.Vector2 * System.Numerics.Matrix4x4 -&gt; System.Numerics.Vector2" Usage="System.Numerics.Vector2.TransformNormal (normal, matrix)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Numerics::Vector2 TransformNormal(System::Numerics::Vector2 normal, System::Numerics::Matrix4x4 matrix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1780,6 +2040,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 UnitX { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Numerics.Vector2 UnitX" />
       <MemberSignature Language="DocId" Value="P:System.Numerics.Vector2.UnitX" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UnitX As Vector2" />
+      <MemberSignature Language="F#" Value="member this.UnitX : System.Numerics.Vector2" Usage="System.Numerics.Vector2.UnitX" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::Vector2 UnitX { System::Numerics::Vector2 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1809,6 +2072,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 UnitY { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Numerics.Vector2 UnitY" />
       <MemberSignature Language="DocId" Value="P:System.Numerics.Vector2.UnitY" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property UnitY As Vector2" />
+      <MemberSignature Language="F#" Value="member this.UnitY : System.Numerics.Vector2" Usage="System.Numerics.Vector2.UnitY" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::Vector2 UnitY { System::Numerics::Vector2 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1838,6 +2104,9 @@
       <MemberSignature Language="C#" Value="public float X;" />
       <MemberSignature Language="ILAsm" Value=".field public float32 X" />
       <MemberSignature Language="DocId" Value="F:System.Numerics.Vector2.X" />
+      <MemberSignature Language="VB.NET" Value="Public X As Single " />
+      <MemberSignature Language="F#" Value="val mutable X : single" Usage="System.Numerics.Vector2.X" />
+      <MemberSignature Language="C++ CLI" Value="public: float X;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1866,6 +2135,9 @@
       <MemberSignature Language="C#" Value="public float Y;" />
       <MemberSignature Language="ILAsm" Value=".field public float32 Y" />
       <MemberSignature Language="DocId" Value="F:System.Numerics.Vector2.Y" />
+      <MemberSignature Language="VB.NET" Value="Public Y As Single " />
+      <MemberSignature Language="F#" Value="val mutable Y : single" Usage="System.Numerics.Vector2.Y" />
+      <MemberSignature Language="C++ CLI" Value="public: float Y;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1894,6 +2166,9 @@
       <MemberSignature Language="C#" Value="public static System.Numerics.Vector2 Zero { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Numerics.Vector2 Zero" />
       <MemberSignature Language="DocId" Value="P:System.Numerics.Vector2.Zero" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Zero As Vector2" />
+      <MemberSignature Language="F#" Value="member this.Zero : System.Numerics.Vector2" Usage="System.Numerics.Vector2.Zero" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Numerics::Vector2 Zero { System::Numerics::Vector2 get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Numerics.Vectors</AssemblyName>
@@ -1919,115 +2194,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CopyTo">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Copies the elements of the vector to an array.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="TransformNormal">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Transforms a vector normal.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the string representation of the current <see cref="T:System.Numerics.Vector2" /> instance.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Transform">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Transforms a vector.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Multiply">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs a multiplication operation on a vector.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="op_Multiply">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs a multiplication operation on a vector.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether this instance and a specified <see cref="T:System.Numerics.Vector2" /> instance or a specified object are equal.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Divide">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs a division operation on a vector.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="op_Division">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs a division operation on a vector.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Numerics.Vectors</AssemblyName>
-        <AssemblyVersion>4.1.1.0</AssemblyVersion>
-        <AssemblyVersion>4.1.2.0</AssemblyVersion>
-        <AssemblyVersion>4.1.3.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.Numerics.Vector2" /> object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

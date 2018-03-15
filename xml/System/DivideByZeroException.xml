@@ -1,7 +1,10 @@
-<Type Name="DivideByZeroException" FullName="System.DivideByZeroException">
+﻿<Type Name="DivideByZeroException" FullName="System.DivideByZeroException">
   <TypeSignature Language="C#" Value="public class DivideByZeroException : ArithmeticException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DivideByZeroException extends System.ArithmeticException" />
   <TypeSignature Language="DocId" Value="T:System.DivideByZeroException" />
+  <TypeSignature Language="VB.NET" Value="Public Class DivideByZeroException&#xA;Inherits ArithmeticException" />
+  <TypeSignature Language="F#" Value="type DivideByZeroException = class&#xA;    inherit ArithmeticException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DivideByZeroException : ArithmeticException" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -70,10 +73,25 @@
     <altmember cref="T:System.Exception" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.DivideByZeroException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DivideByZeroException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DivideByZeroException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DivideByZeroException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -116,6 +134,9 @@
       <MemberSignature Language="C#" Value="public DivideByZeroException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DivideByZeroException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new DivideByZeroException : string -&gt; DivideByZeroException" Usage="new System.DivideByZeroException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DivideByZeroException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -161,6 +182,9 @@
       <MemberSignature Language="C#" Value="protected DivideByZeroException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DivideByZeroException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new DivideByZeroException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; DivideByZeroException" Usage="new System.DivideByZeroException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DivideByZeroException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -197,6 +221,9 @@
       <MemberSignature Language="C#" Value="public DivideByZeroException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DivideByZeroException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new DivideByZeroException : string * Exception -&gt; DivideByZeroException" Usage="new System.DivideByZeroException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DivideByZeroException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -241,18 +268,5 @@
         <altmember cref="T:System.Exception" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.DivideByZeroException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

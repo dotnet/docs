@@ -1,7 +1,10 @@
-<Type Name="XsdSchemaFileEditor" FullName="System.Web.UI.Design.XsdSchemaFileEditor">
+﻿<Type Name="XsdSchemaFileEditor" FullName="System.Web.UI.Design.XsdSchemaFileEditor">
   <TypeSignature Language="C#" Value="public class XsdSchemaFileEditor : System.Web.UI.Design.UrlEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XsdSchemaFileEditor extends System.Web.UI.Design.UrlEditor" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.XsdSchemaFileEditor" />
+  <TypeSignature Language="VB.NET" Value="Public Class XsdSchemaFileEditor&#xA;Inherits UrlEditor" />
+  <TypeSignature Language="F#" Value="type XsdSchemaFileEditor = class&#xA;    inherit UrlEditor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XsdSchemaFileEditor : System::Web::UI::Design::UrlEditor" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="public XsdSchemaFileEditor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.XsdSchemaFileEditor.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XsdSchemaFileEditor();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -57,6 +62,9 @@
       <MemberSignature Language="C#" Value="protected override string Caption { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Caption" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.XsdSchemaFileEditor.Caption" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Caption As String" />
+      <MemberSignature Language="F#" Value="member this.Caption : string" Usage="System.Web.UI.Design.XsdSchemaFileEditor.Caption" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ Caption { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -83,6 +91,9 @@
       <MemberSignature Language="C#" Value="protected override string Filter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Filter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.XsdSchemaFileEditor.Filter" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Filter As String" />
+      <MemberSignature Language="F#" Value="member this.Filter : string" Usage="System.Web.UI.Design.XsdSchemaFileEditor.Filter" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::String ^ Filter { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

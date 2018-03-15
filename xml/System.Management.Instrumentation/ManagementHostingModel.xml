@@ -1,7 +1,10 @@
-<Type Name="ManagementHostingModel" FullName="System.Management.Instrumentation.ManagementHostingModel">
+﻿<Type Name="ManagementHostingModel" FullName="System.Management.Instrumentation.ManagementHostingModel">
   <TypeSignature Language="C#" Value="public enum ManagementHostingModel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ManagementHostingModel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Management.Instrumentation.ManagementHostingModel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ManagementHostingModel" />
+  <TypeSignature Language="F#" Value="type ManagementHostingModel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ManagementHostingModel" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="Decoupled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.Instrumentation.ManagementHostingModel Decoupled = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.ManagementHostingModel.Decoupled" />
+      <MemberSignature Language="VB.NET" Value="Decoupled" />
+      <MemberSignature Language="F#" Value="Decoupled = 0" Usage="System.Management.Instrumentation.ManagementHostingModel.Decoupled" />
+      <MemberSignature Language="C++ CLI" Value="Decoupled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -35,6 +41,7 @@
       <ReturnValue>
         <ReturnType>System.Management.Instrumentation.ManagementHostingModel</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Activates the provider as a decoupled provider.</summary>
       </Docs>
@@ -43,6 +50,9 @@
       <MemberSignature Language="C#" Value="LocalService" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.Instrumentation.ManagementHostingModel LocalService = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.ManagementHostingModel.LocalService" />
+      <MemberSignature Language="VB.NET" Value="LocalService" />
+      <MemberSignature Language="F#" Value="LocalService = 2" Usage="System.Management.Instrumentation.ManagementHostingModel.LocalService" />
+      <MemberSignature Language="C++ CLI" Value="LocalService" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -51,6 +61,7 @@
       <ReturnValue>
         <ReturnType>System.Management.Instrumentation.ManagementHostingModel</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Activates the provider in the provider host process that is running under the LocalService account.</summary>
       </Docs>
@@ -59,6 +70,9 @@
       <MemberSignature Language="C#" Value="LocalSystem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.Instrumentation.ManagementHostingModel LocalSystem = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.ManagementHostingModel.LocalSystem" />
+      <MemberSignature Language="VB.NET" Value="LocalSystem" />
+      <MemberSignature Language="F#" Value="LocalSystem = 3" Usage="System.Management.Instrumentation.ManagementHostingModel.LocalSystem" />
+      <MemberSignature Language="C++ CLI" Value="LocalSystem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Management.Instrumentation.ManagementHostingModel</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Activates the provider in the provider host process that is running under the LocalSystem account.</summary>
       </Docs>
@@ -75,6 +90,9 @@
       <MemberSignature Language="C#" Value="NetworkService" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Management.Instrumentation.ManagementHostingModel NetworkService = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Management.Instrumentation.ManagementHostingModel.NetworkService" />
+      <MemberSignature Language="VB.NET" Value="NetworkService" />
+      <MemberSignature Language="F#" Value="NetworkService = 1" Usage="System.Management.Instrumentation.ManagementHostingModel.NetworkService" />
+      <MemberSignature Language="C++ CLI" Value="NetworkService" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -83,6 +101,7 @@
       <ReturnValue>
         <ReturnType>System.Management.Instrumentation.ManagementHostingModel</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Activates the provider in the provider host process that is running under the NetworkService account.</summary>
       </Docs>

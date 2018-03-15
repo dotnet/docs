@@ -1,7 +1,10 @@
-<Type Name="LinearQuaternionKeyFrame" FullName="System.Windows.Media.Animation.LinearQuaternionKeyFrame">
+﻿<Type Name="LinearQuaternionKeyFrame" FullName="System.Windows.Media.Animation.LinearQuaternionKeyFrame">
   <TypeSignature Language="C#" Value="public class LinearQuaternionKeyFrame : System.Windows.Media.Animation.QuaternionKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LinearQuaternionKeyFrame extends System.Windows.Media.Animation.QuaternionKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.LinearQuaternionKeyFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Class LinearQuaternionKeyFrame&#xA;Inherits QuaternionKeyFrame" />
+  <TypeSignature Language="F#" Value="type LinearQuaternionKeyFrame = class&#xA;    inherit QuaternionKeyFrame" />
+  <TypeSignature Language="C++ CLI" Value="public ref class LinearQuaternionKeyFrame : System::Windows::Media::Animation::QuaternionKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +29,21 @@
     <altmember cref="T:System.Windows.Media.Animation.QuaternionKeyFrameCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.LinearQuaternionKeyFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public LinearQuaternionKeyFrame ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearQuaternionKeyFrame.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearQuaternionKeyFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -45,6 +59,9 @@
       <MemberSignature Language="C#" Value="public LinearQuaternionKeyFrame (System.Windows.Media.Media3D.Quaternion value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Quaternion value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Quaternion)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.LinearQuaternionKeyFrame : System.Windows.Media.Media3D.Quaternion -&gt; System.Windows.Media.Animation.LinearQuaternionKeyFrame" Usage="new System.Windows.Media.Animation.LinearQuaternionKeyFrame value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearQuaternionKeyFrame(System::Windows::Media::Media3D::Quaternion value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -63,6 +80,8 @@
       <MemberSignature Language="C#" Value="public LinearQuaternionKeyFrame (System.Windows.Media.Media3D.Quaternion value, System.Windows.Media.Animation.KeyTime keyTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Quaternion value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Animation.KeyTime)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.LinearQuaternionKeyFrame : System.Windows.Media.Media3D.Quaternion * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.LinearQuaternionKeyFrame" Usage="new System.Windows.Media.Animation.LinearQuaternionKeyFrame (value, keyTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LinearQuaternionKeyFrame(System::Windows::Media::Media3D::Quaternion value, System::Windows::Media::Animation::KeyTime keyTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -83,6 +102,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearQuaternionKeyFrame.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="linearQuaternionKeyFrame.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -103,6 +125,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Media3D.Quaternion InterpolateValueCore (System.Windows.Media.Media3D.Quaternion baseValue, double keyFrameProgress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Media.Media3D.Quaternion InterpolateValueCore(valuetype System.Windows.Media.Media3D.Quaternion baseValue, float64 keyFrameProgress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.LinearQuaternionKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Quaternion,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Quaternion, keyFrameProgress As Double) As Quaternion" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : System.Windows.Media.Media3D.Quaternion * double -&gt; System.Windows.Media.Media3D.Quaternion" Usage="linearQuaternionKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Media3D::Quaternion InterpolateValueCore(System::Windows::Media::Media3D::Quaternion baseValue, double keyFrameProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -127,6 +152,9 @@
       <MemberSignature Language="C#" Value="public bool UseShortestPath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseShortestPath" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.LinearQuaternionKeyFrame.UseShortestPath" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseShortestPath As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseShortestPath : bool with get, set" Usage="System.Windows.Media.Animation.LinearQuaternionKeyFrame.UseShortestPath" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseShortestPath { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -159,6 +187,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty UseShortestPathProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty UseShortestPathProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Media.Animation.LinearQuaternionKeyFrame.UseShortestPathProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly UseShortestPathProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable UseShortestPathProperty : System.Windows.DependencyProperty" Usage="System.Windows.Media.Animation.LinearQuaternionKeyFrame.UseShortestPathProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ UseShortestPathProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -172,14 +203,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.LinearQuaternionKeyFrame" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

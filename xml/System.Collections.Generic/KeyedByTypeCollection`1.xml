@@ -1,7 +1,10 @@
-<Type Name="KeyedByTypeCollection&lt;TItem&gt;" FullName="System.Collections.Generic.KeyedByTypeCollection&lt;TItem&gt;">
+﻿<Type Name="KeyedByTypeCollection&lt;TItem&gt;" FullName="System.Collections.Generic.KeyedByTypeCollection&lt;TItem&gt;">
   <TypeSignature Language="C#" Value="public class KeyedByTypeCollection&lt;TItem&gt; : System.Collections.ObjectModel.KeyedCollection&lt;Type,TItem&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyedByTypeCollection`1&lt;TItem&gt; extends System.Collections.ObjectModel.KeyedCollection`2&lt;class System.Type, !TItem&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Collections.Generic.KeyedByTypeCollection`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class KeyedByTypeCollection(Of TItem)&#xA;Inherits KeyedCollection(Of Type, TItem)" />
+  <TypeSignature Language="F#" Value="type KeyedByTypeCollection&lt;'Item&gt; = class&#xA;    inherit KeyedCollection&lt;Type, 'Item&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename TItem&gt;&#xA;public ref class KeyedByTypeCollection : System::Collections::ObjectModel::KeyedCollection&lt;Type ^, TItem&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,10 +38,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.KeyedByTypeCollection`1" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public KeyedByTypeCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyedByTypeCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -59,6 +74,9 @@
       <MemberSignature Language="C#" Value="public KeyedByTypeCollection (System.Collections.Generic.IEnumerable&lt;TItem&gt; items);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;!TItem&gt; items) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (items As IEnumerable(Of TItem))" />
+      <MemberSignature Language="F#" Value="new System.Collections.Generic.KeyedByTypeCollection&lt;'Item&gt; : seq&lt;'Item&gt; -&gt; System.Collections.Generic.KeyedByTypeCollection&lt;'Item&gt;" Usage="new System.Collections.Generic.KeyedByTypeCollection&lt;'Item&gt; items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; KeyedByTypeCollection(System::Collections::Generic::IEnumerable&lt;TItem&gt; ^ items);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -84,6 +102,9 @@
       <MemberSignature Language="C#" Value="public T Find&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Find&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.Find``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function Find(Of T) () As T" />
+      <MemberSignature Language="F#" Value="member this.Find : unit -&gt; 'T" Usage="keyedByTypeCollection.Find " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Find();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -112,6 +133,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;T&gt; FindAll&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;!!T&gt; FindAll&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.FindAll``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindAll(Of T) () As Collection(Of T)" />
+      <MemberSignature Language="F#" Value="member this.FindAll : unit -&gt; System.Collections.ObjectModel.Collection&lt;'T&gt;" Usage="keyedByTypeCollection.FindAll " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Collections::ObjectModel::Collection&lt;T&gt; ^ FindAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -140,6 +164,9 @@
       <MemberSignature Language="C#" Value="protected override Type GetKeyForItem (TItem item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type GetKeyForItem(!TItem item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.GetKeyForItem(`0)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (item As TItem) As Type" />
+      <MemberSignature Language="F#" Value="override this.GetKeyForItem : 'Item -&gt; Type" Usage="keyedByTypeCollection.GetKeyForItem item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override Type ^ GetKeyForItem(TItem item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -166,9 +193,17 @@
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
-      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, TItem kind);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, !TItem kind) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.InsertItem(System.Int32,`0)" />
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, TItem item);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, !TItem item) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.InsertItem(System.Int32,`0)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, item As TItem)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="override this.InsertItem : int * 'Item -&gt; unit" Usage="keyedByTypeCollection.InsertItem (index, kind)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, TItem item);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected override void InsertItem (int index, TItem kind);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InsertItem(int32 index, !TItem kind) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.InsertItem(System.Int32,`0)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub InsertItem (index As Integer, kind As TItem)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InsertItem(int index, TItem kind);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -183,11 +218,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="item" Type="TItem" />
+        <Parameter Name="index" Type="System.Int32" Index="0" />
+        <Parameter Name="item" Type="TItem" Index="1" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="kind" Type="TItem" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index at which <c>item</c> should be inserted.</param>
+        <param name="item">To be added.</param>
         <param name="kind">To be added.</param>
         <summary>Inserts an element into the collection at a specific location.</summary>
         <remarks>To be added.</remarks>
@@ -199,6 +236,9 @@
       <MemberSignature Language="C#" Value="public T Remove&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance !!T Remove&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.Remove``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove(Of T) () As T" />
+      <MemberSignature Language="F#" Value="override this.Remove : unit -&gt; 'T" Usage="keyedByTypeCollection.Remove " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; T Remove();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -227,6 +267,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;T&gt; RemoveAll&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;!!T&gt; RemoveAll&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.RemoveAll``1" />
+      <MemberSignature Language="VB.NET" Value="Public Function RemoveAll(Of T) () As Collection(Of T)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAll : unit -&gt; System.Collections.ObjectModel.Collection&lt;'T&gt;" Usage="keyedByTypeCollection.RemoveAll " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Collections::ObjectModel::Collection&lt;T&gt; ^ RemoveAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -252,9 +295,17 @@
       </Docs>
     </Member>
     <Member MemberName="SetItem">
-      <MemberSignature Language="C#" Value="protected override void SetItem (int index, TItem kind);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, !TItem kind) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.SetItem(System.Int32,`0)" />
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, TItem item);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, !TItem item) cil managed" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.SetItem(System.Int32,`0)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, item As TItem)" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="override this.SetItem : int * 'Item -&gt; unit" Usage="keyedByTypeCollection.SetItem (index, kind)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, TItem item);" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="protected override void SetItem (int index, TItem kind);" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItem(int32 index, !TItem kind) cil managed" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="DocId" Value="M:System.Collections.Generic.KeyedByTypeCollection`1.SetItem(System.Int32,`0)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItem (index As Integer, kind As TItem)" FrameworkAlternate="xamarinandroid-7.1" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItem(int index, TItem kind);" FrameworkAlternate="xamarinandroid-7.1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -269,11 +320,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" />
-        <Parameter Name="item" Type="TItem" />
+        <Parameter Name="index" Type="System.Int32" Index="0" />
+        <Parameter Name="item" Type="TItem" Index="1" FrameworkAlternate="netcore-2.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="kind" Type="TItem" Index="1" FrameworkAlternate="xamarinandroid-7.1" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the <c>item</c> to be replaced.</param>
+        <param name="item">To be added.</param>
         <param name="kind">To be added.</param>
         <summary>Replaces the item at the specified index with a new object.</summary>
         <remarks>To be added.</remarks>
@@ -281,15 +334,5 @@
           <paramref name="item" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Collections.Generic.KeyedByTypeCollection`1" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

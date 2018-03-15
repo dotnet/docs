@@ -1,7 +1,10 @@
-<Type Name="CancelEventHandler" FullName="System.ComponentModel.CancelEventHandler">
+﻿<Type Name="CancelEventHandler" FullName="System.ComponentModel.CancelEventHandler">
   <TypeSignature Language="C#" Value="public delegate void CancelEventHandler(object sender, CancelEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CancelEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.CancelEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub CancelEventHandler(sender As Object, e As CancelEventArgs)" />
+  <TypeSignature Language="F#" Value="type CancelEventHandler = delegate of obj * CancelEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void CancelEventHandler(System::Object ^ sender, CancelEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>

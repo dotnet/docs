@@ -1,7 +1,10 @@
-<Type Name="SecurityAccessDeniedException" FullName="System.ServiceModel.Security.SecurityAccessDeniedException">
+﻿<Type Name="SecurityAccessDeniedException" FullName="System.ServiceModel.Security.SecurityAccessDeniedException">
   <TypeSignature Language="C#" Value="public class SecurityAccessDeniedException : System.ServiceModel.CommunicationException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SecurityAccessDeniedException extends System.ServiceModel.CommunicationException" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.SecurityAccessDeniedException" />
+  <TypeSignature Language="VB.NET" Value="Public Class SecurityAccessDeniedException&#xA;Inherits CommunicationException" />
+  <TypeSignature Language="F#" Value="type SecurityAccessDeniedException = class&#xA;    inherit CommunicationException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SecurityAccessDeniedException : System::ServiceModel::CommunicationException" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -22,10 +25,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SecurityAccessDeniedException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SecurityAccessDeniedException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAccessDeniedException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityAccessDeniedException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -42,6 +57,9 @@
       <MemberSignature Language="C#" Value="public SecurityAccessDeniedException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAccessDeniedException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SecurityAccessDeniedException : string -&gt; System.ServiceModel.Security.SecurityAccessDeniedException" Usage="new System.ServiceModel.Security.SecurityAccessDeniedException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityAccessDeniedException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -67,6 +85,9 @@
       <MemberSignature Language="C#" Value="protected SecurityAccessDeniedException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAccessDeniedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SecurityAccessDeniedException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.ServiceModel.Security.SecurityAccessDeniedException" Usage="new System.ServiceModel.Security.SecurityAccessDeniedException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SecurityAccessDeniedException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -92,6 +113,9 @@
       <MemberSignature Language="C#" Value="public SecurityAccessDeniedException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Security.SecurityAccessDeniedException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.ServiceModel.Security.SecurityAccessDeniedException : string * Exception -&gt; System.ServiceModel.Security.SecurityAccessDeniedException" Usage="new System.ServiceModel.Security.SecurityAccessDeniedException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SecurityAccessDeniedException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -115,15 +139,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.SecurityAccessDeniedException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

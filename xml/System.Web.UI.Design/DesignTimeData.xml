@@ -1,7 +1,10 @@
-<Type Name="DesignTimeData" FullName="System.Web.UI.Design.DesignTimeData">
+﻿<Type Name="DesignTimeData" FullName="System.Web.UI.Design.DesignTimeData">
   <TypeSignature Language="C#" Value="public sealed class DesignTimeData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignTimeData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.DesignTimeData" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DesignTimeData" />
+  <TypeSignature Language="F#" Value="type DesignTimeData = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DesignTimeData sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.DataTable CreateDummyDataBoundDataTable ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.DataTable CreateDummyDataBoundDataTable() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeData.CreateDummyDataBoundDataTable" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDummyDataBoundDataTable () As DataTable" />
+      <MemberSignature Language="F#" Value="static member CreateDummyDataBoundDataTable : unit -&gt; System.Data.DataTable" Usage="System.Web.UI.Design.DesignTimeData.CreateDummyDataBoundDataTable " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::DataTable ^ CreateDummyDataBoundDataTable();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -45,6 +51,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.DataTable CreateDummyDataTable ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.DataTable CreateDummyDataTable() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeData.CreateDummyDataTable" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDummyDataTable () As DataTable" />
+      <MemberSignature Language="F#" Value="static member CreateDummyDataTable : unit -&gt; System.Data.DataTable" Usage="System.Web.UI.Design.DesignTimeData.CreateDummyDataTable " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::DataTable ^ CreateDummyDataTable();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -67,10 +76,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateSampleDataTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a <see cref="T:System.Data.DataTable" /> object with the same schema as the provided data.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateSampleDataTable">
       <MemberSignature Language="C#" Value="public static System.Data.DataTable CreateSampleDataTable (System.Collections.IEnumerable referenceData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.DataTable CreateSampleDataTable(class System.Collections.IEnumerable referenceData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeData.CreateSampleDataTable(System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSampleDataTable (referenceData As IEnumerable) As DataTable" />
+      <MemberSignature Language="F#" Value="static member CreateSampleDataTable : System.Collections.IEnumerable -&gt; System.Data.DataTable" Usage="System.Web.UI.Design.DesignTimeData.CreateSampleDataTable referenceData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::DataTable ^ CreateSampleDataTable(System::Collections::IEnumerable ^ referenceData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -101,6 +122,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.DataTable CreateSampleDataTable (System.Collections.IEnumerable referenceData, bool useDataBoundData);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.DataTable CreateSampleDataTable(class System.Collections.IEnumerable referenceData, bool useDataBoundData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeData.CreateSampleDataTable(System.Collections.IEnumerable,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSampleDataTable (referenceData As IEnumerable, useDataBoundData As Boolean) As DataTable" />
+      <MemberSignature Language="F#" Value="static member CreateSampleDataTable : System.Collections.IEnumerable * bool -&gt; System.Data.DataTable" Usage="System.Web.UI.Design.DesignTimeData.CreateSampleDataTable (referenceData, useDataBoundData)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::DataTable ^ CreateSampleDataTable(System::Collections::IEnumerable ^ referenceData, bool useDataBoundData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -132,6 +156,9 @@
       <MemberSignature Language="C#" Value="public static readonly EventHandler DataBindingHandler;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.EventHandler DataBindingHandler" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.Design.DesignTimeData.DataBindingHandler" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DataBindingHandler As EventHandler " />
+      <MemberSignature Language="F#" Value=" staticval mutable DataBindingHandler : EventHandler" Usage="System.Web.UI.Design.DesignTimeData.DataBindingHandler" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly EventHandler ^ DataBindingHandler;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -149,6 +176,9 @@
       <MemberSignature Language="C#" Value="public static System.ComponentModel.PropertyDescriptorCollection GetDataFields (System.Collections.IEnumerable dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ComponentModel.PropertyDescriptorCollection GetDataFields(class System.Collections.IEnumerable dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeData.GetDataFields(System.Collections.IEnumerable)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDataFields (dataSource As IEnumerable) As PropertyDescriptorCollection" />
+      <MemberSignature Language="F#" Value="static member GetDataFields : System.Collections.IEnumerable -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="System.Web.UI.Design.DesignTimeData.GetDataFields dataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::ComponentModel::PropertyDescriptorCollection ^ GetDataFields(System::Collections::IEnumerable ^ dataSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -171,6 +201,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IEnumerable GetDataMember (System.ComponentModel.IListSource dataSource, string dataMember);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerable GetDataMember(class System.ComponentModel.IListSource dataSource, string dataMember) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeData.GetDataMember(System.ComponentModel.IListSource,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDataMember (dataSource As IListSource, dataMember As String) As IEnumerable" />
+      <MemberSignature Language="F#" Value="static member GetDataMember : System.ComponentModel.IListSource * string -&gt; System.Collections.IEnumerable" Usage="System.Web.UI.Design.DesignTimeData.GetDataMember (dataSource, dataMember)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IEnumerable ^ GetDataMember(System::ComponentModel::IListSource ^ dataSource, System::String ^ dataMember);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -208,6 +241,9 @@
       <MemberSignature Language="C#" Value="public static string[] GetDataMembers (object dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string[] GetDataMembers(object dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeData.GetDataMembers(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetDataMembers (dataSource As Object) As String()" />
+      <MemberSignature Language="F#" Value="static member GetDataMembers : obj -&gt; string[]" Usage="System.Web.UI.Design.DesignTimeData.GetDataMembers dataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::String ^&gt; ^ GetDataMembers(System::Object ^ dataSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -230,6 +266,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IEnumerable GetDesignTimeDataSource (System.Data.DataTable dataTable, int minimumRows);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerable GetDesignTimeDataSource(class System.Data.DataTable dataTable, int32 minimumRows) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeData.GetDesignTimeDataSource(System.Data.DataTable,System.Int32)" />
+      <MemberSignature Language="F#" Value="static member GetDesignTimeDataSource : System.Data.DataTable * int -&gt; System.Collections.IEnumerable" Usage="System.Web.UI.Design.DesignTimeData.GetDesignTimeDataSource (dataTable, minimumRows)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IEnumerable ^ GetDesignTimeDataSource(System::Data::DataTable ^ dataTable, int minimumRows);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -250,10 +288,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSelectedDataSource">
+      <AssemblyInfo>
+        <AssemblyName>System.Design</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a data source selected by name in the design host, represented by the specified component's site property.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetSelectedDataSource">
       <MemberSignature Language="C#" Value="public static object GetSelectedDataSource (System.ComponentModel.IComponent component, string dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetSelectedDataSource(class System.ComponentModel.IComponent component, string dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeData.GetSelectedDataSource(System.ComponentModel.IComponent,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSelectedDataSource (component As IComponent, dataSource As String) As Object" />
+      <MemberSignature Language="F#" Value="static member GetSelectedDataSource : System.ComponentModel.IComponent * string -&gt; obj" Usage="System.Web.UI.Design.DesignTimeData.GetSelectedDataSource (component, dataSource)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetSelectedDataSource(System::ComponentModel::IComponent ^ component, System::String ^ dataSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -278,6 +328,9 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IEnumerable GetSelectedDataSource (System.ComponentModel.IComponent component, string dataSource, string dataMember);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.IEnumerable GetSelectedDataSource(class System.ComponentModel.IComponent component, string dataSource, string dataMember) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.DesignTimeData.GetSelectedDataSource(System.ComponentModel.IComponent,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSelectedDataSource (component As IComponent, dataSource As String, dataMember As String) As IEnumerable" />
+      <MemberSignature Language="F#" Value="static member GetSelectedDataSource : System.ComponentModel.IComponent * string * string -&gt; System.Collections.IEnumerable" Usage="System.Web.UI.Design.DesignTimeData.GetSelectedDataSource (component, dataSource, dataMember)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Collections::IEnumerable ^ GetSelectedDataSource(System::ComponentModel::IComponent ^ component, System::String ^ dataSource, System::String ^ dataMember);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -300,23 +353,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateSampleDataTable">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a <see cref="T:System.Data.DataTable" /> object with the same schema as the provided data.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetSelectedDataSource">
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a data source selected by name in the design host, represented by the specified component's site property.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

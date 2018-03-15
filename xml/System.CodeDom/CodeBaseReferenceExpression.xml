@@ -1,7 +1,10 @@
-<Type Name="CodeBaseReferenceExpression" FullName="System.CodeDom.CodeBaseReferenceExpression">
+﻿<Type Name="CodeBaseReferenceExpression" FullName="System.CodeDom.CodeBaseReferenceExpression">
   <TypeSignature Language="C#" Value="public class CodeBaseReferenceExpression : System.CodeDom.CodeExpression" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeBaseReferenceExpression extends System.CodeDom.CodeExpression" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeBaseReferenceExpression" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeBaseReferenceExpression&#xA;Inherits CodeExpression" />
+  <TypeSignature Language="F#" Value="type CodeBaseReferenceExpression = class&#xA;    inherit CodeExpression" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeBaseReferenceExpression : System::CodeDom::CodeExpression" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="public CodeBaseReferenceExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeBaseReferenceExpression.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeBaseReferenceExpression();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

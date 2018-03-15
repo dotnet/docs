@@ -1,7 +1,10 @@
-<Type Name="ComponentSerializationService" FullName="System.ComponentModel.Design.Serialization.ComponentSerializationService">
+﻿<Type Name="ComponentSerializationService" FullName="System.ComponentModel.Design.Serialization.ComponentSerializationService">
   <TypeSignature Language="C#" Value="public abstract class ComponentSerializationService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ComponentSerializationService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.ComponentSerializationService" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ComponentSerializationService" />
+  <TypeSignature Language="F#" Value="type ComponentSerializationService = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComponentSerializationService abstract" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="protected ComponentSerializationService ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ComponentSerializationService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -72,6 +77,9 @@
       <MemberSignature Language="C#" Value="public abstract System.ComponentModel.Design.Serialization.SerializationStore CreateStore ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.Serialization.SerializationStore CreateStore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.CreateStore" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function CreateStore () As SerializationStore" />
+      <MemberSignature Language="F#" Value="abstract member CreateStore : unit -&gt; System.ComponentModel.Design.Serialization.SerializationStore" Usage="componentSerializationService.CreateStore " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ComponentModel::Design::Serialization::SerializationStore ^ CreateStore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,10 +114,23 @@
         <altmember cref="T:System.ComponentModel.Design.Serialization.SerializationStore" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Deserialize">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deserializes the given store to produce a collection of objects.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Deserialize">
       <MemberSignature Language="C#" Value="public abstract System.Collections.ICollection Deserialize (System.ComponentModel.Design.Serialization.SerializationStore store);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection Deserialize(class System.ComponentModel.Design.Serialization.SerializationStore store) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.Deserialize(System.ComponentModel.Design.Serialization.SerializationStore)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Deserialize (store As SerializationStore) As ICollection" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : System.ComponentModel.Design.Serialization.SerializationStore -&gt; System.Collections.ICollection" Usage="componentSerializationService.Deserialize store" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::ICollection ^ Deserialize(System::ComponentModel::Design::Serialization::SerializationStore ^ store);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -154,6 +175,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Collections.ICollection Deserialize (System.ComponentModel.Design.Serialization.SerializationStore store, System.ComponentModel.IContainer container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection Deserialize(class System.ComponentModel.Design.Serialization.SerializationStore store, class System.ComponentModel.IContainer container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.Deserialize(System.ComponentModel.Design.Serialization.SerializationStore,System.ComponentModel.IContainer)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Deserialize (store As SerializationStore, container As IContainer) As ICollection" />
+      <MemberSignature Language="F#" Value="abstract member Deserialize : System.ComponentModel.Design.Serialization.SerializationStore * System.ComponentModel.IContainer -&gt; System.Collections.ICollection" Usage="componentSerializationService.Deserialize (store, container)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::ICollection ^ Deserialize(System::ComponentModel::Design::Serialization::SerializationStore ^ store, System::ComponentModel::IContainer ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -199,10 +223,23 @@
         <altmember cref="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.Serialize(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="DeserializeTo">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Deserializes the given <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to the given container.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DeserializeTo">
       <MemberSignature Language="C#" Value="public void DeserializeTo (System.ComponentModel.Design.Serialization.SerializationStore store, System.ComponentModel.IContainer container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeserializeTo(class System.ComponentModel.Design.Serialization.SerializationStore store, class System.ComponentModel.IContainer container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.DeserializeTo(System.ComponentModel.Design.Serialization.SerializationStore,System.ComponentModel.IContainer)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeserializeTo (store As SerializationStore, container As IContainer)" />
+      <MemberSignature Language="F#" Value="member this.DeserializeTo : System.ComponentModel.Design.Serialization.SerializationStore * System.ComponentModel.IContainer -&gt; unit" Usage="componentSerializationService.DeserializeTo (store, container)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeserializeTo(System::ComponentModel::Design::Serialization::SerializationStore ^ store, System::ComponentModel::IContainer ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -248,6 +285,9 @@
       <MemberSignature Language="C#" Value="public void DeserializeTo (System.ComponentModel.Design.Serialization.SerializationStore store, System.ComponentModel.IContainer container, bool validateRecycledTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DeserializeTo(class System.ComponentModel.Design.Serialization.SerializationStore store, class System.ComponentModel.IContainer container, bool validateRecycledTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.DeserializeTo(System.ComponentModel.Design.Serialization.SerializationStore,System.ComponentModel.IContainer,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DeserializeTo (store As SerializationStore, container As IContainer, validateRecycledTypes As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.DeserializeTo : System.ComponentModel.Design.Serialization.SerializationStore * System.ComponentModel.IContainer * bool -&gt; unit" Usage="componentSerializationService.DeserializeTo (store, container, validateRecycledTypes)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DeserializeTo(System::ComponentModel::Design::Serialization::SerializationStore ^ store, System::ComponentModel::IContainer ^ container, bool validateRecycledTypes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -296,6 +336,9 @@
       <MemberSignature Language="C#" Value="public abstract void DeserializeTo (System.ComponentModel.Design.Serialization.SerializationStore store, System.ComponentModel.IContainer container, bool validateRecycledTypes, bool applyDefaults);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void DeserializeTo(class System.ComponentModel.Design.Serialization.SerializationStore store, class System.ComponentModel.IContainer container, bool validateRecycledTypes, bool applyDefaults) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.DeserializeTo(System.ComponentModel.Design.Serialization.SerializationStore,System.ComponentModel.IContainer,System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub DeserializeTo (store As SerializationStore, container As IContainer, validateRecycledTypes As Boolean, applyDefaults As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member DeserializeTo : System.ComponentModel.Design.Serialization.SerializationStore * System.ComponentModel.IContainer * bool * bool -&gt; unit" Usage="componentSerializationService.DeserializeTo (store, container, validateRecycledTypes, applyDefaults)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void DeserializeTo(System::ComponentModel::Design::Serialization::SerializationStore ^ store, System::ComponentModel::IContainer ^ container, bool validateRecycledTypes, bool applyDefaults);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -347,6 +390,8 @@
       <MemberSignature Language="C#" Value="public abstract System.ComponentModel.Design.Serialization.SerializationStore LoadStore (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.Serialization.SerializationStore LoadStore(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.LoadStore(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="abstract member LoadStore : System.IO.Stream -&gt; System.ComponentModel.Design.Serialization.SerializationStore" Usage="componentSerializationService.LoadStore stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::ComponentModel::Design::Serialization::SerializationStore ^ LoadStore(System::IO::Stream ^ stream);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -391,6 +436,9 @@
       <MemberSignature Language="C#" Value="public abstract void Serialize (System.ComponentModel.Design.Serialization.SerializationStore store, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Serialize(class System.ComponentModel.Design.Serialization.SerializationStore store, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.Serialize(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Serialize (store As SerializationStore, value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member Serialize : System.ComponentModel.Design.Serialization.SerializationStore * obj -&gt; unit" Usage="componentSerializationService.Serialize (store, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Serialize(System::ComponentModel::Design::Serialization::SerializationStore ^ store, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -438,6 +486,9 @@
       <MemberSignature Language="C#" Value="public abstract void SerializeAbsolute (System.ComponentModel.Design.Serialization.SerializationStore store, object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SerializeAbsolute(class System.ComponentModel.Design.Serialization.SerializationStore store, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeAbsolute(System.ComponentModel.Design.Serialization.SerializationStore,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SerializeAbsolute (store As SerializationStore, value As Object)" />
+      <MemberSignature Language="F#" Value="abstract member SerializeAbsolute : System.ComponentModel.Design.Serialization.SerializationStore * obj -&gt; unit" Usage="componentSerializationService.SerializeAbsolute (store, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SerializeAbsolute(System::ComponentModel::Design::Serialization::SerializationStore ^ store, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -490,6 +541,9 @@
       <MemberSignature Language="C#" Value="public abstract void SerializeMember (System.ComponentModel.Design.Serialization.SerializationStore store, object owningObject, System.ComponentModel.MemberDescriptor member);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SerializeMember(class System.ComponentModel.Design.Serialization.SerializationStore store, object owningObject, class System.ComponentModel.MemberDescriptor member) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeMember(System.ComponentModel.Design.Serialization.SerializationStore,System.Object,System.ComponentModel.MemberDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SerializeMember (store As SerializationStore, owningObject As Object, member As MemberDescriptor)" />
+      <MemberSignature Language="F#" Value="abstract member SerializeMember : System.ComponentModel.Design.Serialization.SerializationStore * obj * System.ComponentModel.MemberDescriptor -&gt; unit" Usage="componentSerializationService.SerializeMember (store, owningObject, member)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SerializeMember(System::ComponentModel::Design::Serialization::SerializationStore ^ store, System::Object ^ owningObject, System::ComponentModel::MemberDescriptor ^ member);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -539,6 +593,9 @@
       <MemberSignature Language="C#" Value="public abstract void SerializeMemberAbsolute (System.ComponentModel.Design.Serialization.SerializationStore store, object owningObject, System.ComponentModel.MemberDescriptor member);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SerializeMemberAbsolute(class System.ComponentModel.Design.Serialization.SerializationStore store, object owningObject, class System.ComponentModel.MemberDescriptor member) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.ComponentSerializationService.SerializeMemberAbsolute(System.ComponentModel.Design.Serialization.SerializationStore,System.Object,System.ComponentModel.MemberDescriptor)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub SerializeMemberAbsolute (store As SerializationStore, owningObject As Object, member As MemberDescriptor)" />
+      <MemberSignature Language="F#" Value="abstract member SerializeMemberAbsolute : System.ComponentModel.Design.Serialization.SerializationStore * obj * System.ComponentModel.MemberDescriptor -&gt; unit" Usage="componentSerializationService.SerializeMemberAbsolute (store, owningObject, member)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void SerializeMemberAbsolute(System::ComponentModel::Design::Serialization::SerializationStore ^ store, System::Object ^ owningObject, System::ComponentModel::MemberDescriptor ^ member);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -588,25 +645,5 @@
         <altmember cref="Overload:System.ComponentModel.Design.Serialization.ComponentSerializationService.Deserialize" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Deserialize">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Deserializes the given store to produce a collection of objects.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="DeserializeTo">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Deserializes the given <see cref="T:System.ComponentModel.Design.Serialization.SerializationStore" /> to the given container.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

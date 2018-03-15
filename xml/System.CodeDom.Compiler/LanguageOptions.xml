@@ -1,7 +1,10 @@
-<Type Name="LanguageOptions" FullName="System.CodeDom.Compiler.LanguageOptions">
+﻿<Type Name="LanguageOptions" FullName="System.CodeDom.Compiler.LanguageOptions">
   <TypeSignature Language="C#" Value="public enum LanguageOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed LanguageOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.LanguageOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LanguageOptions" />
+  <TypeSignature Language="F#" Value="type LanguageOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LanguageOptions" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="CaseInsensitive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.LanguageOptions CaseInsensitive = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.LanguageOptions.CaseInsensitive" />
+      <MemberSignature Language="VB.NET" Value="CaseInsensitive" />
+      <MemberSignature Language="F#" Value="CaseInsensitive = 1" Usage="System.CodeDom.Compiler.LanguageOptions.CaseInsensitive" />
+      <MemberSignature Language="C++ CLI" Value="CaseInsensitive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.LanguageOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The language is case-insensitive.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.CodeDom.Compiler.LanguageOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.CodeDom.Compiler.LanguageOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.CodeDom.Compiler.LanguageOptions.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -66,6 +76,7 @@
       <ReturnValue>
         <ReturnType>System.CodeDom.Compiler.LanguageOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The language has default characteristics.</summary>
       </Docs>

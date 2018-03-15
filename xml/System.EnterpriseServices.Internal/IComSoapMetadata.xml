@@ -1,7 +1,10 @@
-<Type Name="IComSoapMetadata" FullName="System.EnterpriseServices.Internal.IComSoapMetadata">
+﻿<Type Name="IComSoapMetadata" FullName="System.EnterpriseServices.Internal.IComSoapMetadata">
   <TypeSignature Language="C#" Value="public interface IComSoapMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComSoapMetadata" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.IComSoapMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComSoapMetadata" />
+  <TypeSignature Language="F#" Value="type IComSoapMetadata = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IComSoapMetadata" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="public string Generate (string SrcTypeLibFileName, string OutPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string Generate(string SrcTypeLibFileName, string OutPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComSoapMetadata.Generate(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Generate (SrcTypeLibFileName As String, OutPath As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member Generate : string * string -&gt; string" Usage="iComSoapMetadata.Generate (SrcTypeLibFileName, OutPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ Generate(System::String ^ SrcTypeLibFileName, System::String ^ OutPath);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -70,6 +76,9 @@
       <MemberSignature Language="C#" Value="public string GenerateSigned (string SrcTypeLibFileName, string OutPath, bool InstallGac, out string Error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GenerateSigned(string SrcTypeLibFileName, string OutPath, bool InstallGac, [out] string&amp; Error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IComSoapMetadata.GenerateSigned(System.String,System.String,System.Boolean,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateSigned (SrcTypeLibFileName As String, OutPath As String, InstallGac As Boolean, ByRef Error As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GenerateSigned : string * string * bool *  -&gt; string" Usage="iComSoapMetadata.GenerateSigned (SrcTypeLibFileName, OutPath, InstallGac, Error)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GenerateSigned(System::String ^ SrcTypeLibFileName, System::String ^ OutPath, bool InstallGac, [Runtime::InteropServices::Out] System::String ^ % Error);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ICodeCompiler" FullName="System.CodeDom.Compiler.ICodeCompiler">
+﻿<Type Name="ICodeCompiler" FullName="System.CodeDom.Compiler.ICodeCompiler">
   <TypeSignature Language="C#" Value="public interface ICodeCompiler" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICodeCompiler" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.Compiler.ICodeCompiler" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICodeCompiler" />
+  <TypeSignature Language="F#" Value="type ICodeCompiler = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICodeCompiler" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.Compiler.CompilerResults CompileAssemblyFromDom (System.CodeDom.Compiler.CompilerParameters options, System.CodeDom.CodeCompileUnit compilationUnit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.Compiler.CompilerResults CompileAssemblyFromDom(class System.CodeDom.Compiler.CompilerParameters options, class System.CodeDom.CodeCompileUnit compilationUnit) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeCompiler.CompileAssemblyFromDom(System.CodeDom.Compiler.CompilerParameters,System.CodeDom.CodeCompileUnit)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompileAssemblyFromDom (options As CompilerParameters, compilationUnit As CodeCompileUnit) As CompilerResults" />
+      <MemberSignature Language="F#" Value="abstract member CompileAssemblyFromDom : System.CodeDom.Compiler.CompilerParameters * System.CodeDom.CodeCompileUnit -&gt; System.CodeDom.Compiler.CompilerResults" Usage="iCodeCompiler.CompileAssemblyFromDom (options, compilationUnit)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::Compiler::CompilerResults ^ CompileAssemblyFromDom(System::CodeDom::Compiler::CompilerParameters ^ options, System::CodeDom::CodeCompileUnit ^ compilationUnit);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -73,6 +79,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.Compiler.CompilerResults CompileAssemblyFromDomBatch (System.CodeDom.Compiler.CompilerParameters options, System.CodeDom.CodeCompileUnit[] compilationUnits);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.Compiler.CompilerResults CompileAssemblyFromDomBatch(class System.CodeDom.Compiler.CompilerParameters options, class System.CodeDom.CodeCompileUnit[] compilationUnits) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeCompiler.CompileAssemblyFromDomBatch(System.CodeDom.Compiler.CompilerParameters,System.CodeDom.CodeCompileUnit[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompileAssemblyFromDomBatch (options As CompilerParameters, compilationUnits As CodeCompileUnit()) As CompilerResults" />
+      <MemberSignature Language="F#" Value="abstract member CompileAssemblyFromDomBatch : System.CodeDom.Compiler.CompilerParameters * System.CodeDom.CodeCompileUnit[] -&gt; System.CodeDom.Compiler.CompilerResults" Usage="iCodeCompiler.CompileAssemblyFromDomBatch (options, compilationUnits)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::Compiler::CompilerResults ^ CompileAssemblyFromDomBatch(System::CodeDom::Compiler::CompilerParameters ^ options, cli::array &lt;System::CodeDom::CodeCompileUnit ^&gt; ^ compilationUnits);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -106,6 +115,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.Compiler.CompilerResults CompileAssemblyFromFile (System.CodeDom.Compiler.CompilerParameters options, string fileName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.Compiler.CompilerResults CompileAssemblyFromFile(class System.CodeDom.Compiler.CompilerParameters options, string fileName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeCompiler.CompileAssemblyFromFile(System.CodeDom.Compiler.CompilerParameters,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompileAssemblyFromFile (options As CompilerParameters, fileName As String) As CompilerResults" />
+      <MemberSignature Language="F#" Value="abstract member CompileAssemblyFromFile : System.CodeDom.Compiler.CompilerParameters * string -&gt; System.CodeDom.Compiler.CompilerResults" Usage="iCodeCompiler.CompileAssemblyFromFile (options, fileName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::Compiler::CompilerResults ^ CompileAssemblyFromFile(System::CodeDom::Compiler::CompilerParameters ^ options, System::String ^ fileName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -138,6 +150,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.Compiler.CompilerResults CompileAssemblyFromFileBatch (System.CodeDom.Compiler.CompilerParameters options, string[] fileNames);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.Compiler.CompilerResults CompileAssemblyFromFileBatch(class System.CodeDom.Compiler.CompilerParameters options, string[] fileNames) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeCompiler.CompileAssemblyFromFileBatch(System.CodeDom.Compiler.CompilerParameters,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompileAssemblyFromFileBatch (options As CompilerParameters, fileNames As String()) As CompilerResults" />
+      <MemberSignature Language="F#" Value="abstract member CompileAssemblyFromFileBatch : System.CodeDom.Compiler.CompilerParameters * string[] -&gt; System.CodeDom.Compiler.CompilerResults" Usage="iCodeCompiler.CompileAssemblyFromFileBatch (options, fileNames)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::Compiler::CompilerResults ^ CompileAssemblyFromFileBatch(System::CodeDom::Compiler::CompilerParameters ^ options, cli::array &lt;System::String ^&gt; ^ fileNames);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -170,6 +185,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.Compiler.CompilerResults CompileAssemblyFromSource (System.CodeDom.Compiler.CompilerParameters options, string source);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.Compiler.CompilerResults CompileAssemblyFromSource(class System.CodeDom.Compiler.CompilerParameters options, string source) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeCompiler.CompileAssemblyFromSource(System.CodeDom.Compiler.CompilerParameters,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompileAssemblyFromSource (options As CompilerParameters, source As String) As CompilerResults" />
+      <MemberSignature Language="F#" Value="abstract member CompileAssemblyFromSource : System.CodeDom.Compiler.CompilerParameters * string -&gt; System.CodeDom.Compiler.CompilerResults" Usage="iCodeCompiler.CompileAssemblyFromSource (options, source)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::Compiler::CompilerResults ^ CompileAssemblyFromSource(System::CodeDom::Compiler::CompilerParameters ^ options, System::String ^ source);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -202,6 +220,9 @@
       <MemberSignature Language="C#" Value="public System.CodeDom.Compiler.CompilerResults CompileAssemblyFromSourceBatch (System.CodeDom.Compiler.CompilerParameters options, string[] sources);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.CodeDom.Compiler.CompilerResults CompileAssemblyFromSourceBatch(class System.CodeDom.Compiler.CompilerParameters options, string[] sources) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.Compiler.ICodeCompiler.CompileAssemblyFromSourceBatch(System.CodeDom.Compiler.CompilerParameters,System.String[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function CompileAssemblyFromSourceBatch (options As CompilerParameters, sources As String()) As CompilerResults" />
+      <MemberSignature Language="F#" Value="abstract member CompileAssemblyFromSourceBatch : System.CodeDom.Compiler.CompilerParameters * string[] -&gt; System.CodeDom.Compiler.CompilerResults" Usage="iCodeCompiler.CompileAssemblyFromSourceBatch (options, sources)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::CodeDom::Compiler::CompilerResults ^ CompileAssemblyFromSourceBatch(System::CodeDom::Compiler::CompilerParameters ^ options, cli::array &lt;System::String ^&gt; ^ sources);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

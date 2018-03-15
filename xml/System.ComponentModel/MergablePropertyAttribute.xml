@@ -1,7 +1,10 @@
-<Type Name="MergablePropertyAttribute" FullName="System.ComponentModel.MergablePropertyAttribute">
+﻿<Type Name="MergablePropertyAttribute" FullName="System.ComponentModel.MergablePropertyAttribute">
   <TypeSignature Language="C#" Value="public sealed class MergablePropertyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MergablePropertyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.MergablePropertyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MergablePropertyAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type MergablePropertyAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class MergablePropertyAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -73,6 +76,9 @@
       <MemberSignature Language="C#" Value="public MergablePropertyAttribute (bool allowMerge);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool allowMerge) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MergablePropertyAttribute.#ctor(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (allowMerge As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.MergablePropertyAttribute : bool -&gt; System.ComponentModel.MergablePropertyAttribute" Usage="new System.ComponentModel.MergablePropertyAttribute allowMerge" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; MergablePropertyAttribute(bool allowMerge);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -114,6 +120,9 @@
       <MemberSignature Language="C#" Value="public bool AllowMerge { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowMerge" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.MergablePropertyAttribute.AllowMerge" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllowMerge As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowMerge : bool" Usage="System.ComponentModel.MergablePropertyAttribute.AllowMerge" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowMerge { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -167,6 +176,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.MergablePropertyAttribute Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.MergablePropertyAttribute Default" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MergablePropertyAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As MergablePropertyAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.MergablePropertyAttribute" Usage="System.ComponentModel.MergablePropertyAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::MergablePropertyAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -204,6 +216,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MergablePropertyAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="mergablePropertyAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -237,6 +252,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MergablePropertyAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="mergablePropertyAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -266,6 +284,9 @@
       <MemberSignature Language="C#" Value="public override bool IsDefaultAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsDefaultAttribute() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.MergablePropertyAttribute.IsDefaultAttribute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function IsDefaultAttribute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsDefaultAttribute : unit -&gt; bool" Usage="mergablePropertyAttribute.IsDefaultAttribute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool IsDefaultAttribute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -295,6 +316,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.MergablePropertyAttribute No;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.MergablePropertyAttribute No" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MergablePropertyAttribute.No" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly No As MergablePropertyAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable No : System.ComponentModel.MergablePropertyAttribute" Usage="System.ComponentModel.MergablePropertyAttribute.No" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::MergablePropertyAttribute ^ No;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -331,6 +355,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.MergablePropertyAttribute Yes;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.MergablePropertyAttribute Yes" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.MergablePropertyAttribute.Yes" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Yes As MergablePropertyAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Yes : System.ComponentModel.MergablePropertyAttribute" Usage="System.ComponentModel.MergablePropertyAttribute.Yes" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::MergablePropertyAttribute ^ Yes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>

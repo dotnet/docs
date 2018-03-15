@@ -1,7 +1,10 @@
-<Type Name="ObjectListItem" FullName="System.Web.UI.MobileControls.ObjectListItem">
+﻿<Type Name="ObjectListItem" FullName="System.Web.UI.MobileControls.ObjectListItem">
   <TypeSignature Language="C#" Value="public class ObjectListItem : System.Web.UI.MobileControls.MobileListItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectListItem extends System.Web.UI.MobileControls.MobileListItem" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class ObjectListItem&#xA;Inherits MobileListItem" />
+  <TypeSignature Language="F#" Value="type ObjectListItem = class&#xA;    inherit MobileListItem" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectListItem : System::Web::UI::MobileControls::MobileListItem" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListItem.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="objectListItem.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -61,6 +67,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListItem.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="objectListItem.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -77,10 +86,24 @@
         <altmember cref="M:System.Web.UI.MobileControls.MobileListItem.GetHashCode" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Mobile</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets or sets the specified field by index or name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
+        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public string this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListItem.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As String" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : string with get, set" Usage="System.Web.UI.MobileControls.ObjectListItem.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[int] { System::String ^ get(int index); void set(int index, System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -105,6 +128,9 @@
       <MemberSignature Language="C#" Value="public string this[string key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListItem.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As String) As String" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string with get, set" Usage="System.Web.UI.MobileControls.ObjectListItem.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ key); void set(System::String ^ key, System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -136,6 +162,9 @@
       <MemberSignature Language="C#" Value="protected override bool OnBubbleEvent (object source, EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool OnBubbleEvent(object source, class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListItem.OnBubbleEvent(System.Object,System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnBubbleEvent (source As Object, e As EventArgs) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.OnBubbleEvent : obj * EventArgs -&gt; bool" Usage="objectListItem.OnBubbleEvent (source, e)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool OnBubbleEvent(System::Object ^ source, EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -158,16 +187,5 @@
         <altmember cref="M:System.Web.UI.MobileControls.MobileListItem.OnBubbleEvent(System.Object,System.EventArgs)" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Mobile</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets or sets the specified field by index or name. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
-        <altmember cref="T:System.Web.UI.MobileControls.ObjectList" />
-        <altmember cref="T:System.Web.UI.MobileControls.ObjectListItemCollection" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="IDataErrorInfo" FullName="System.ComponentModel.IDataErrorInfo">
+﻿<Type Name="IDataErrorInfo" FullName="System.ComponentModel.IDataErrorInfo">
   <TypeSignature Language="C#" Value="public interface IDataErrorInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataErrorInfo" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.IDataErrorInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataErrorInfo" />
+  <TypeSignature Language="F#" Value="type IDataErrorInfo = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataErrorInfo" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="public string Error { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Error" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IDataErrorInfo.Error" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Error As String" />
+      <MemberSignature Language="F#" Value="member this.Error : string" Usage="System.ComponentModel.IDataErrorInfo.Error" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Error { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -52,6 +58,9 @@
       <MemberSignature Language="C#" Value="public string this[string columnName] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.IDataErrorInfo.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(columnName As String) As String" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : string" Usage="System.ComponentModel.IDataErrorInfo.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ default[System::String ^] { System::String ^ get(System::String ^ columnName); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

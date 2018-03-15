@@ -1,7 +1,10 @@
-<Type Name="ResourcePool+TransactionEndDelegate" FullName="System.EnterpriseServices.ResourcePool+TransactionEndDelegate">
+﻿<Type Name="ResourcePool+TransactionEndDelegate" FullName="System.EnterpriseServices.ResourcePool+TransactionEndDelegate">
   <TypeSignature Language="C#" Value="public delegate void ResourcePool.TransactionEndDelegate(object resource);" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed ResourcePool/TransactionEndDelegate extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ResourcePool.TransactionEndDelegate" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ResourcePool.TransactionEndDelegate(resource As Object)" />
+  <TypeSignature Language="F#" Value="type ResourcePool.TransactionEndDelegate = delegate of obj -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public: delegate void ResourcePool::TransactionEndDelegate(System::Object ^ resource);" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

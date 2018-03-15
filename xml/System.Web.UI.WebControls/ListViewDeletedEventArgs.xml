@@ -1,7 +1,10 @@
-<Type Name="ListViewDeletedEventArgs" FullName="System.Web.UI.WebControls.ListViewDeletedEventArgs">
+﻿<Type Name="ListViewDeletedEventArgs" FullName="System.Web.UI.WebControls.ListViewDeletedEventArgs">
   <TypeSignature Language="C#" Value="public class ListViewDeletedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewDeletedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewDeletedEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListViewDeletedEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type ListViewDeletedEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListViewDeletedEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +53,8 @@
       <MemberSignature Language="C#" Value="public ListViewDeletedEventArgs (int affectedRows, Exception exception);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 affectedRows, class System.Exception exception) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.ListViewDeletedEventArgs.#ctor(System.Int32,System.Exception)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.ListViewDeletedEventArgs : int * Exception -&gt; System.Web.UI.WebControls.ListViewDeletedEventArgs" Usage="new System.Web.UI.WebControls.ListViewDeletedEventArgs (affectedRows, exception)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewDeletedEventArgs(int affectedRows, Exception ^ exception);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -91,6 +96,9 @@
       <MemberSignature Language="C#" Value="public int AffectedRows { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 AffectedRows" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.AffectedRows" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AffectedRows As Integer" />
+      <MemberSignature Language="F#" Value="member this.AffectedRows : int" Usage="System.Web.UI.WebControls.ListViewDeletedEventArgs.AffectedRows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int AffectedRows { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -135,6 +143,9 @@
       <MemberSignature Language="C#" Value="public Exception Exception { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Exception" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Exception" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Exception As Exception" />
+      <MemberSignature Language="F#" Value="member this.Exception : Exception" Usage="System.Web.UI.WebControls.ListViewDeletedEventArgs.Exception" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Exception { Exception ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -173,6 +184,9 @@
       <MemberSignature Language="C#" Value="public bool ExceptionHandled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ExceptionHandled" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled" />
+      <MemberSignature Language="VB.NET" Value="Public Property ExceptionHandled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ExceptionHandled : bool with get, set" Usage="System.Web.UI.WebControls.ListViewDeletedEventArgs.ExceptionHandled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ExceptionHandled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -209,6 +223,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary Keys" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As IOrderedDictionary" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.ListViewDeletedEventArgs.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ Keys { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -253,6 +270,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary Values" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.ListViewDeletedEventArgs.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As IOrderedDictionary" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.ListViewDeletedEventArgs.Values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ Values { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="NavigateEventHandler" FullName="System.Windows.Forms.NavigateEventHandler">
+﻿<Type Name="NavigateEventHandler" FullName="System.Windows.Forms.NavigateEventHandler">
   <TypeSignature Language="C#" Value="public delegate void NavigateEventHandler(object sender, NavigateEventArgs ne);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NavigateEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NavigateEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub NavigateEventHandler(sender As Object, ne As NavigateEventArgs)" />
+  <TypeSignature Language="F#" Value="type NavigateEventHandler = delegate of obj * NavigateEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void NavigateEventHandler(System::Object ^ sender, NavigateEventArgs ^ ne);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

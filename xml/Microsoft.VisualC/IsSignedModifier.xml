@@ -1,7 +1,10 @@
-<Type Name="IsSignedModifier" FullName="Microsoft.VisualC.IsSignedModifier">
+﻿<Type Name="IsSignedModifier" FullName="Microsoft.VisualC.IsSignedModifier">
   <TypeSignature Language="C#" Value="public sealed class IsSignedModifier" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit IsSignedModifier extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualC.IsSignedModifier" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class IsSignedModifier" />
+  <TypeSignature Language="F#" Value="type IsSignedModifier = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IsSignedModifier sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualC</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -25,6 +28,8 @@
       <MemberSignature Language="C#" Value="public IsSignedModifier ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualC.IsSignedModifier.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IsSignedModifier();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualC</AssemblyName>

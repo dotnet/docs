@@ -1,7 +1,10 @@
-<Type Name="FormattableString" FullName="System.FormattableString">
+﻿<Type Name="FormattableString" FullName="System.FormattableString">
   <TypeSignature Language="C#" Value="public abstract class FormattableString : IFormattable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FormattableString extends System.Object implements class System.IFormattable" />
   <TypeSignature Language="DocId" Value="T:System.FormattableString" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class FormattableString&#xA;Implements IFormattable" />
+  <TypeSignature Language="F#" Value="type FormattableString = class&#xA;    interface IFormattable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FormattableString abstract : IFormattable" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime</AssemblyName>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="protected FormattableString ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.FormattableString.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; FormattableString();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -69,6 +74,9 @@
       <MemberSignature Language="C#" Value="public abstract int ArgumentCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ArgumentCount" />
       <MemberSignature Language="DocId" Value="P:System.FormattableString.ArgumentCount" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property ArgumentCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.ArgumentCount : int" Usage="System.FormattableString.ArgumentCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int ArgumentCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -105,6 +113,9 @@
       <MemberSignature Language="C#" Value="public abstract string Format { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Format" />
       <MemberSignature Language="DocId" Value="P:System.FormattableString.Format" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Format As String" />
+      <MemberSignature Language="F#" Value="member this.Format : string" Usage="System.FormattableString.Format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::String ^ Format { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -146,6 +157,9 @@
       <MemberSignature Language="C#" Value="public abstract object GetArgument (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetArgument(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.FormattableString.GetArgument(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetArgument (index As Integer) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetArgument : int -&gt; obj" Usage="formattableString.GetArgument index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetArgument(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -179,6 +193,9 @@
       <MemberSignature Language="C#" Value="public abstract object[] GetArguments ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetArguments() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.FormattableString.GetArguments" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetArguments () As Object()" />
+      <MemberSignature Language="F#" Value="abstract member GetArguments : unit -&gt; obj[]" Usage="formattableString.GetArguments " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Object ^&gt; ^ GetArguments();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -216,6 +233,9 @@
       <MemberSignature Language="C#" Value="public static string Invariant (FormattableString formattable);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig string Invariant(class System.FormattableString formattable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.FormattableString.Invariant(System.FormattableString)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Invariant (formattable As FormattableString) As String" />
+      <MemberSignature Language="F#" Value="static member Invariant : FormattableString -&gt; string" Usage="System.FormattableString.Invariant formattable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::String ^ Invariant(FormattableString ^ formattable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -268,7 +288,12 @@ Invariant($"{{ lat = {latitude}; lon = {longitude} }}")
       <MemberSignature Language="C#" Value="string IFormattable.ToString (string ignored, IFormatProvider formatProvider);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance string System.IFormattable.ToString(string ignored, class System.IFormatProvider formatProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.FormattableString.System#IFormattable#ToString(System.String,System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Function ToString (ignored As String, formatProvider As IFormatProvider) As String Implements IFormattable.ToString" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.IFormattable.ToString(System::String ^ ignored, IFormatProvider ^ formatProvider) = IFormattable::ToString;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IFormattable.ToString(System.String,System.IFormatProvider)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
@@ -308,10 +333,24 @@ Invariant($"{{ lat = {latitude}; lon = {longitude} }}")
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the string that results from formatting the composite format string along with its arguments.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.FormattableString.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="formattableString.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -342,6 +381,9 @@ Invariant($"{{ lat = {latitude}; lon = {longitude} }}")
       <MemberSignature Language="C#" Value="public abstract string ToString (IFormatProvider formatProvider);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToString(class System.IFormatProvider formatProvider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.FormattableString.ToString(System.IFormatProvider)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function ToString (formatProvider As IFormatProvider) As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : IFormatProvider -&gt; string" Usage="formattableString.ToString formatProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ ToString(IFormatProvider ^ formatProvider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime</AssemblyName>
@@ -371,16 +413,5 @@ Invariant($"{{ lat = {latitude}; lon = {longitude} }}")
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the string that results from formatting the composite format string along with its arguments.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

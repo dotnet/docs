@@ -1,7 +1,10 @@
-<Type Name="DataGridViewCellStyle" FullName="System.Windows.Forms.DataGridViewCellStyle">
+﻿<Type Name="DataGridViewCellStyle" FullName="System.Windows.Forms.DataGridViewCellStyle">
   <TypeSignature Language="C#" Value="public class DataGridViewCellStyle : ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewCellStyle extends System.Object implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataGridViewCellStyle&#xA;Implements ICloneable" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellStyle = class&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataGridViewCellStyle : ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -57,10 +60,22 @@
     <altmember cref="T:System.Windows.Forms.DataGridViewCellFormattingEventArgs" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> class.</summary>
+        <altmember cref="T:System.Windows.Forms.DataGridView" />
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DataGridViewCellStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellStyle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewCellStyle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -77,6 +92,8 @@
       <MemberSignature Language="C#" Value="public DataGridViewCellStyle (System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellStyle.#ctor(System.Windows.Forms.DataGridViewCellStyle)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataGridViewCellStyle : System.Windows.Forms.DataGridViewCellStyle -&gt; System.Windows.Forms.DataGridViewCellStyle" Usage="new System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataGridViewCellStyle(System::Windows::Forms::DataGridViewCellStyle ^ dataGridViewCellStyle);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -98,6 +115,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewContentAlignment Alignment { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewContentAlignment Alignment" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.Alignment" />
+      <MemberSignature Language="VB.NET" Value="Public Property Alignment As DataGridViewContentAlignment" />
+      <MemberSignature Language="F#" Value="member this.Alignment : System.Windows.Forms.DataGridViewContentAlignment with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.Alignment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewContentAlignment Alignment { System::Windows::Forms::DataGridViewContentAlignment get(); void set(System::Windows::Forms::DataGridViewContentAlignment value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -133,6 +153,8 @@
       <MemberSignature Language="C#" Value="public virtual void ApplyStyle (System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyStyle(class System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellStyle.ApplyStyle(System.Windows.Forms.DataGridViewCellStyle)" />
+      <MemberSignature Language="F#" Value="abstract member ApplyStyle : System.Windows.Forms.DataGridViewCellStyle -&gt; unit&#xA;override this.ApplyStyle : System.Windows.Forms.DataGridViewCellStyle -&gt; unit" Usage="dataGridViewCellStyle.ApplyStyle dataGridViewCellStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplyStyle(System::Windows::Forms::DataGridViewCellStyle ^ dataGridViewCellStyle);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -164,6 +186,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -193,6 +218,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DataGridViewCellStyle Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Forms.DataGridViewCellStyle Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellStyle.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function Clone () As DataGridViewCellStyle" />
+      <MemberSignature Language="F#" Value="abstract member Clone : unit -&gt; System.Windows.Forms.DataGridViewCellStyle&#xA;override this.Clone : unit -&gt; System.Windows.Forms.DataGridViewCellStyle" Usage="dataGridViewCellStyle.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Windows::Forms::DataGridViewCellStyle ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -213,6 +241,9 @@
       <MemberSignature Language="C#" Value="public object DataSourceNullValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object DataSourceNullValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataSourceNullValue As Object" />
+      <MemberSignature Language="F#" Value="member this.DataSourceNullValue : obj with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ DataSourceNullValue { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -223,7 +254,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
@@ -265,6 +296,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object o);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellStyle.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (o As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="dataGridViewCellStyle.Equals o" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -289,6 +323,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -324,6 +361,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -358,6 +398,9 @@
       <MemberSignature Language="C#" Value="public string Format { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Format" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.Format" />
+      <MemberSignature Language="VB.NET" Value="Public Property Format As String" />
+      <MemberSignature Language="F#" Value="member this.Format : string with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.Format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Format { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -403,6 +446,9 @@
       <MemberSignature Language="C#" Value="public IFormatProvider FormatProvider { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IFormatProvider FormatProvider" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.FormatProvider" />
+      <MemberSignature Language="VB.NET" Value="Public Property FormatProvider As IFormatProvider" />
+      <MemberSignature Language="F#" Value="member this.FormatProvider : IFormatProvider with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.FormatProvider" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property IFormatProvider ^ FormatProvider { IFormatProvider ^ get(); void set(IFormatProvider ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -430,6 +476,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellStyle.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="dataGridViewCellStyle.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -450,6 +499,9 @@
       <MemberSignature Language="C#" Value="public bool IsDataSourceNullValueDefault { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDataSourceNullValueDefault" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.IsDataSourceNullValueDefault" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDataSourceNullValueDefault As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDataSourceNullValueDefault : bool" Usage="System.Windows.Forms.DataGridViewCellStyle.IsDataSourceNullValueDefault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDataSourceNullValueDefault { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -486,6 +538,9 @@
       <MemberSignature Language="C#" Value="public bool IsFormatProviderDefault { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFormatProviderDefault" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.IsFormatProviderDefault" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFormatProviderDefault As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFormatProviderDefault : bool" Usage="System.Windows.Forms.DataGridViewCellStyle.IsFormatProviderDefault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFormatProviderDefault { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -521,6 +576,9 @@
       <MemberSignature Language="C#" Value="public bool IsNullValueDefault { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNullValueDefault" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.IsNullValueDefault" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsNullValueDefault As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNullValueDefault : bool" Usage="System.Windows.Forms.DataGridViewCellStyle.IsNullValueDefault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullValueDefault { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -556,6 +614,9 @@
       <MemberSignature Language="C#" Value="public object NullValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object NullValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.NullValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property NullValue As Object" />
+      <MemberSignature Language="F#" Value="member this.NullValue : obj with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.NullValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ NullValue { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -607,6 +668,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Padding Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding Padding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.Padding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.Padding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -643,6 +707,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color SelectionBackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color SelectionBackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.SelectionBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionBackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.SelectionBackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.SelectionBackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color SelectionBackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -672,6 +739,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color SelectionForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color SelectionForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.SelectionForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.SelectionForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.SelectionForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color SelectionForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -706,7 +776,12 @@
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellStyle.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -733,6 +808,9 @@
       <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.Tag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -743,7 +821,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -760,6 +838,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridViewCellStyle.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dataGridViewCellStyle.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -780,6 +861,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataGridViewTriState WrapMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataGridViewTriState WrapMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataGridViewCellStyle.WrapMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property WrapMode As DataGridViewTriState" />
+      <MemberSignature Language="F#" Value="member this.WrapMode : System.Windows.Forms.DataGridViewTriState with get, set" Usage="System.Windows.Forms.DataGridViewCellStyle.WrapMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataGridViewTriState WrapMode { System::Windows::Forms::DataGridViewTriState get(); void set(System::Windows::Forms::DataGridViewTriState value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -816,15 +900,5 @@
         <altmember cref="T:System.Windows.Forms.DataGridView" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellStyle" /> class.</summary>
-        <altmember cref="T:System.Windows.Forms.DataGridView" />
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

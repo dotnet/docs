@@ -1,7 +1,10 @@
-<Type Name="ApplicationSecurityInfo" FullName="System.Security.Policy.ApplicationSecurityInfo">
+﻿<Type Name="ApplicationSecurityInfo" FullName="System.Security.Policy.ApplicationSecurityInfo">
   <TypeSignature Language="C#" Value="public sealed class ApplicationSecurityInfo" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationSecurityInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Security.Policy.ApplicationSecurityInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationSecurityInfo" />
+  <TypeSignature Language="F#" Value="type ApplicationSecurityInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationSecurityInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +36,8 @@
       <MemberSignature Language="C#" Value="public ApplicationSecurityInfo (ActivationContext activationContext);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.ActivationContext activationContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Policy.ApplicationSecurityInfo.#ctor(System.ActivationContext)" />
+      <MemberSignature Language="F#" Value="new System.Security.Policy.ApplicationSecurityInfo : ActivationContext -&gt; System.Security.Policy.ApplicationSecurityInfo" Usage="new System.Security.Policy.ApplicationSecurityInfo activationContext" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ApplicationSecurityInfo(ActivationContext ^ activationContext);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -62,6 +67,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Policy.Evidence ApplicationEvidence { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Policy.Evidence ApplicationEvidence" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationSecurityInfo.ApplicationEvidence" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationEvidence As Evidence" />
+      <MemberSignature Language="F#" Value="member this.ApplicationEvidence : System.Security.Policy.Evidence with get, set" Usage="System.Security.Policy.ApplicationSecurityInfo.ApplicationEvidence" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Policy::Evidence ^ ApplicationEvidence { System::Security::Policy::Evidence ^ get(); void set(System::Security::Policy::Evidence ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -90,6 +98,9 @@
       <MemberSignature Language="C#" Value="public ApplicationId ApplicationId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ApplicationId ApplicationId" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationSecurityInfo.ApplicationId" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationId As ApplicationId" />
+      <MemberSignature Language="F#" Value="member this.ApplicationId : ApplicationId with get, set" Usage="System.Security.Policy.ApplicationSecurityInfo.ApplicationId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ApplicationId ^ ApplicationId { ApplicationId ^ get(); void set(ApplicationId ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -118,6 +129,9 @@
       <MemberSignature Language="C#" Value="public System.Security.PermissionSet DefaultRequestSet { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.PermissionSet DefaultRequestSet" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationSecurityInfo.DefaultRequestSet" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultRequestSet As PermissionSet" />
+      <MemberSignature Language="F#" Value="member this.DefaultRequestSet : System.Security.PermissionSet with get, set" Usage="System.Security.Policy.ApplicationSecurityInfo.DefaultRequestSet" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::PermissionSet ^ DefaultRequestSet { System::Security::PermissionSet ^ get(); void set(System::Security::PermissionSet ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -146,6 +160,9 @@
       <MemberSignature Language="C#" Value="public ApplicationId DeploymentId { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ApplicationId DeploymentId" />
       <MemberSignature Language="DocId" Value="P:System.Security.Policy.ApplicationSecurityInfo.DeploymentId" />
+      <MemberSignature Language="VB.NET" Value="Public Property DeploymentId As ApplicationId" />
+      <MemberSignature Language="F#" Value="member this.DeploymentId : ApplicationId with get, set" Usage="System.Security.Policy.ApplicationSecurityInfo.DeploymentId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property ApplicationId ^ DeploymentId { ApplicationId ^ get(); void set(ApplicationId ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

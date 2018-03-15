@@ -1,7 +1,10 @@
-<Type Name="IInternalConfigurationBuilderHost" FullName="System.Configuration.Internal.IInternalConfigurationBuilderHost">
+﻿<Type Name="IInternalConfigurationBuilderHost" FullName="System.Configuration.Internal.IInternalConfigurationBuilderHost">
   <TypeSignature Language="C#" Value="public interface IInternalConfigurationBuilderHost" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IInternalConfigurationBuilderHost" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.Internal.IInternalConfigurationBuilderHost" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IInternalConfigurationBuilderHost" />
+  <TypeSignature Language="F#" Value="type IInternalConfigurationBuilderHost = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IInternalConfigurationBuilderHost" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +24,9 @@
       <MemberSignature Language="C#" Value="public System.Configuration.ConfigurationSection ProcessConfigurationSection (System.Configuration.ConfigurationSection configSection, System.Configuration.ConfigurationBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Configuration.ConfigurationSection ProcessConfigurationSection(class System.Configuration.ConfigurationSection configSection, class System.Configuration.ConfigurationBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigurationBuilderHost.ProcessConfigurationSection(System.Configuration.ConfigurationSection,System.Configuration.ConfigurationBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessConfigurationSection (configSection As ConfigurationSection, builder As ConfigurationBuilder) As ConfigurationSection" />
+      <MemberSignature Language="F#" Value="abstract member ProcessConfigurationSection : System.Configuration.ConfigurationSection * System.Configuration.ConfigurationBuilder -&gt; System.Configuration.ConfigurationSection" Usage="iInternalConfigurationBuilderHost.ProcessConfigurationSection (configSection, builder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Configuration::ConfigurationSection ^ ProcessConfigurationSection(System::Configuration::ConfigurationSection ^ configSection, System::Configuration::ConfigurationBuilder ^ builder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -46,6 +52,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.XmlNode ProcessRawXml (System.Xml.XmlNode rawXml, System.Configuration.ConfigurationBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Xml.XmlNode ProcessRawXml(class System.Xml.XmlNode rawXml, class System.Configuration.ConfigurationBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.Internal.IInternalConfigurationBuilderHost.ProcessRawXml(System.Xml.XmlNode,System.Configuration.ConfigurationBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ProcessRawXml (rawXml As XmlNode, builder As ConfigurationBuilder) As XmlNode" />
+      <MemberSignature Language="F#" Value="abstract member ProcessRawXml : System.Xml.XmlNode * System.Configuration.ConfigurationBuilder -&gt; System.Xml.XmlNode" Usage="iInternalConfigurationBuilderHost.ProcessRawXml (rawXml, builder)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::XmlNode ^ ProcessRawXml(System::Xml::XmlNode ^ rawXml, System::Configuration::ConfigurationBuilder ^ builder);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ProductBuilderCollection" FullName="Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilderCollection">
+﻿<Type Name="ProductBuilderCollection" FullName="Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilderCollection">
   <TypeSignature Language="C#" Value="public class ProductBuilderCollection : Microsoft.Build.Tasks.Deployment.Bootstrapper.IProductBuilderCollection, System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ProductBuilderCollection extends System.Object implements class Microsoft.Build.Tasks.Deployment.Bootstrapper.IProductBuilderCollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilderCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ProductBuilderCollection&#xA;Implements IEnumerable, IProductBuilderCollection" />
+  <TypeSignature Language="F#" Value="type ProductBuilderCollection = class&#xA;    interface IProductBuilderCollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ProductBuilderCollection : Microsoft::Build::Tasks::Deployment::Bootstrapper::IProductBuilderCollection, System::Collections::IEnumerable" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,7 +22,7 @@
   </Interfaces>
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.None)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -38,7 +41,13 @@
       <MemberSignature Language="C#" Value="public void Add (Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(class Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilderCollection.Add(Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (builder As ProductBuilder)" />
+      <MemberSignature Language="F#" Value="abstract member Add : Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder -&gt; unit&#xA;override this.Add : Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder -&gt; unit" Usage="productBuilderCollection.Add builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(Microsoft::Build::Tasks::Deployment::Bootstrapper::ProductBuilder ^ builder);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Tasks.Deployment.Bootstrapper.IProductBuilderCollection.Add(Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilder)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -60,7 +69,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Deployment.Bootstrapper.ProductBuilderCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="productBuilderCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

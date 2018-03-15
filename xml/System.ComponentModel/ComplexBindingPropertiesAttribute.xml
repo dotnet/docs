@@ -1,7 +1,10 @@
-<Type Name="ComplexBindingPropertiesAttribute" FullName="System.ComponentModel.ComplexBindingPropertiesAttribute">
+﻿<Type Name="ComplexBindingPropertiesAttribute" FullName="System.ComponentModel.ComplexBindingPropertiesAttribute">
   <TypeSignature Language="C#" Value="public sealed class ComplexBindingPropertiesAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ComplexBindingPropertiesAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.ComplexBindingPropertiesAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ComplexBindingPropertiesAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ComplexBindingPropertiesAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComplexBindingPropertiesAttribute sealed : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -54,10 +57,22 @@
     <altmember cref="T:System.ComponentModel.LookupBindingPropertiesAttribute" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ComplexBindingPropertiesAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ComplexBindingPropertiesAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComplexBindingPropertiesAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComplexBindingPropertiesAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -91,6 +106,9 @@
       <MemberSignature Language="C#" Value="public ComplexBindingPropertiesAttribute (string dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComplexBindingPropertiesAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dataSource As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.ComplexBindingPropertiesAttribute : string -&gt; System.ComponentModel.ComplexBindingPropertiesAttribute" Usage="new System.ComponentModel.ComplexBindingPropertiesAttribute dataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComplexBindingPropertiesAttribute(System::String ^ dataSource);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -127,6 +145,9 @@
       <MemberSignature Language="C#" Value="public ComplexBindingPropertiesAttribute (string dataSource, string dataMember);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string dataSource, string dataMember) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComplexBindingPropertiesAttribute.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dataSource As String, dataMember As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.ComplexBindingPropertiesAttribute : string * string -&gt; System.ComponentModel.ComplexBindingPropertiesAttribute" Usage="new System.ComponentModel.ComplexBindingPropertiesAttribute (dataSource, dataMember)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ComplexBindingPropertiesAttribute(System::String ^ dataSource, System::String ^ dataMember);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +186,9 @@
       <MemberSignature Language="C#" Value="public string DataMember { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataMember" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataMember As String" />
+      <MemberSignature Language="F#" Value="member this.DataMember : string" Usage="System.ComponentModel.ComplexBindingPropertiesAttribute.DataMember" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataMember { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -201,6 +225,9 @@
       <MemberSignature Language="C#" Value="public string DataSource { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataSource" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataSource As String" />
+      <MemberSignature Language="F#" Value="member this.DataSource : string" Usage="System.ComponentModel.ComplexBindingPropertiesAttribute.DataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataSource { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -237,6 +264,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.ComponentModel.ComplexBindingPropertiesAttribute Default;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.ComponentModel.ComplexBindingPropertiesAttribute Default" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.ComplexBindingPropertiesAttribute.Default" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Default As ComplexBindingPropertiesAttribute " />
+      <MemberSignature Language="F#" Value=" staticval mutable Default : System.ComponentModel.ComplexBindingPropertiesAttribute" Usage="System.ComponentModel.ComplexBindingPropertiesAttribute.Default" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::ComponentModel::ComplexBindingPropertiesAttribute ^ Default;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -270,6 +300,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComplexBindingPropertiesAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="complexBindingPropertiesAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -312,6 +345,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.ComplexBindingPropertiesAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="complexBindingPropertiesAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -337,15 +373,5 @@
         <altmember cref="M:System.Attribute.GetHashCode" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.ComplexBindingPropertiesAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

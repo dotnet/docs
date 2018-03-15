@@ -1,7 +1,10 @@
-<Type Name="ServerValidateEventHandler" FullName="System.Web.UI.WebControls.ServerValidateEventHandler">
+﻿<Type Name="ServerValidateEventHandler" FullName="System.Web.UI.WebControls.ServerValidateEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ServerValidateEventHandler(object source, ServerValidateEventArgs args);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServerValidateEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ServerValidateEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub ServerValidateEventHandler(source As Object, args As ServerValidateEventArgs)" />
+  <TypeSignature Language="F#" Value="type ServerValidateEventHandler = delegate of obj * ServerValidateEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void ServerValidateEventHandler(System::Object ^ source, ServerValidateEventArgs ^ args);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

@@ -1,7 +1,10 @@
-<Type Name="OffsetType" FullName="System.Windows.Forms.VisualStyles.OffsetType">
+﻿<Type Name="OffsetType" FullName="System.Windows.Forms.VisualStyles.OffsetType">
   <TypeSignature Language="C#" Value="public enum OffsetType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed OffsetType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.OffsetType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum OffsetType" />
+  <TypeSignature Language="F#" Value="type OffsetType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class OffsetType" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="AboveLastButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.OffsetType AboveLastButton = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.AboveLastButton" />
+      <MemberSignature Language="VB.NET" Value="AboveLastButton" />
+      <MemberSignature Language="F#" Value="AboveLastButton = 12" Usage="System.Windows.Forms.VisualStyles.OffsetType.AboveLastButton" />
+      <MemberSignature Language="C++ CLI" Value="AboveLastButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.OffsetType</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>The offset is applied from above the last button.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="BelowLastButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.OffsetType BelowLastButton = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.BelowLastButton" />
+      <MemberSignature Language="VB.NET" Value="BelowLastButton" />
+      <MemberSignature Language="F#" Value="BelowLastButton = 13" Usage="System.Windows.Forms.VisualStyles.OffsetType.BelowLastButton" />
+      <MemberSignature Language="C++ CLI" Value="BelowLastButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.OffsetType</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>The offset is applied from below the last button.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="BottomLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.OffsetType BottomLeft = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.BottomLeft" />
+      <MemberSignature Language="VB.NET" Value="BottomLeft" />
+      <MemberSignature Language="F#" Value="BottomLeft = 3" Usage="System.Windows.Forms.VisualStyles.OffsetType.BottomLeft" />
+      <MemberSignature Language="C++ CLI" Value="BottomLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.OffsetType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The offset is applied from the bottom left of the element.</summary>
       </Docs>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="BottomMiddle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.OffsetType BottomMiddle = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.BottomMiddle" />
+      <MemberSignature Language="VB.NET" Value="BottomMiddle" />
+      <MemberSignature Language="F#" Value="BottomMiddle = 5" Usage="System.Windows.Forms.VisualStyles.OffsetType.BottomMiddle" />
+      <MemberSignature Language="C++ CLI" Value="BottomMiddle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.OffsetType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The offset is applied from the bottom middle of the element.</summary>
       </Docs>
@@ -89,6 +108,9 @@
       <MemberSignature Language="C#" Value="BottomRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.OffsetType BottomRight = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.BottomRight" />
+      <MemberSignature Language="VB.NET" Value="BottomRight" />
+      <MemberSignature Language="F#" Value="BottomRight = 4" Usage="System.Windows.Forms.VisualStyles.OffsetType.BottomRight" />
+      <MemberSignature Language="C++ CLI" Value="BottomRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -97,6 +119,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.OffsetType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The offset is applied from the bottom right of the element.</summary>
       </Docs>
@@ -105,6 +128,9 @@
       <MemberSignature Language="C#" Value="LeftOfCaption" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.OffsetType LeftOfCaption = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.LeftOfCaption" />
+      <MemberSignature Language="VB.NET" Value="LeftOfCaption" />
+      <MemberSignature Language="F#" Value="LeftOfCaption = 8" Usage="System.Windows.Forms.VisualStyles.OffsetType.LeftOfCaption" />
+      <MemberSignature Language="C++ CLI" Value="LeftOfCaption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -113,6 +139,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.OffsetType</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The offset is applied from the left of the caption.</summary>
       </Docs>
@@ -121,6 +148,9 @@
       <MemberSignature Language="C#" Value="LeftOfLastButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.OffsetType LeftOfLastButton = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.LeftOfLastButton" />
+      <MemberSignature Language="VB.NET" Value="LeftOfLastButton" />
+      <MemberSignature Language="F#" Value="LeftOfLastButton = 10" Usage="System.Windows.Forms.VisualStyles.OffsetType.LeftOfLastButton" />
+      <MemberSignature Language="C++ CLI" Value="LeftOfLastButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -129,6 +159,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.OffsetType</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The offset is applied from the left of the last button.</summary>
       </Docs>
@@ -137,6 +168,9 @@
       <MemberSignature Language="C#" Value="MiddleLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.OffsetType MiddleLeft = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.MiddleLeft" />
+      <MemberSignature Language="VB.NET" Value="MiddleLeft" />
+      <MemberSignature Language="F#" Value="MiddleLeft = 6" Usage="System.Windows.Forms.VisualStyles.OffsetType.MiddleLeft" />
+      <MemberSignature Language="C++ CLI" Value="MiddleLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -145,6 +179,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.OffsetType</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The offset is applied from the middle left of the element.</summary>
       </Docs>
@@ -153,6 +188,9 @@
       <MemberSignature Language="C#" Value="MiddleRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.OffsetType MiddleRight = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.MiddleRight" />
+      <MemberSignature Language="VB.NET" Value="MiddleRight" />
+      <MemberSignature Language="F#" Value="MiddleRight = 7" Usage="System.Windows.Forms.VisualStyles.OffsetType.MiddleRight" />
+      <MemberSignature Language="C++ CLI" Value="MiddleRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -161,6 +199,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.OffsetType</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The offset is applied from the middle right of the element.</summary>
       </Docs>
@@ -169,6 +208,9 @@
       <MemberSignature Language="C#" Value="RightOfCaption" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.OffsetType RightOfCaption = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.RightOfCaption" />
+      <MemberSignature Language="VB.NET" Value="RightOfCaption" />
+      <MemberSignature Language="F#" Value="RightOfCaption = 9" Usage="System.Windows.Forms.VisualStyles.OffsetType.RightOfCaption" />
+      <MemberSignature Language="C++ CLI" Value="RightOfCaption" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -177,6 +219,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.OffsetType</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The offset is applied from the right of the caption.</summary>
       </Docs>
@@ -185,6 +228,9 @@
       <MemberSignature Language="C#" Value="RightOfLastButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.OffsetType RightOfLastButton = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.RightOfLastButton" />
+      <MemberSignature Language="VB.NET" Value="RightOfLastButton" />
+      <MemberSignature Language="F#" Value="RightOfLastButton = 11" Usage="System.Windows.Forms.VisualStyles.OffsetType.RightOfLastButton" />
+      <MemberSignature Language="C++ CLI" Value="RightOfLastButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -193,6 +239,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.OffsetType</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>The offset is applied from the right of the last button.</summary>
       </Docs>
@@ -201,6 +248,9 @@
       <MemberSignature Language="C#" Value="TopLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.OffsetType TopLeft = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.TopLeft" />
+      <MemberSignature Language="VB.NET" Value="TopLeft" />
+      <MemberSignature Language="F#" Value="TopLeft = 0" Usage="System.Windows.Forms.VisualStyles.OffsetType.TopLeft" />
+      <MemberSignature Language="C++ CLI" Value="TopLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -209,6 +259,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.OffsetType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The offset is applied from the top left of the element.</summary>
       </Docs>
@@ -217,6 +268,9 @@
       <MemberSignature Language="C#" Value="TopMiddle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.OffsetType TopMiddle = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.TopMiddle" />
+      <MemberSignature Language="VB.NET" Value="TopMiddle" />
+      <MemberSignature Language="F#" Value="TopMiddle = 2" Usage="System.Windows.Forms.VisualStyles.OffsetType.TopMiddle" />
+      <MemberSignature Language="C++ CLI" Value="TopMiddle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -225,6 +279,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.OffsetType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The offset is applied from the top middle of the element.</summary>
       </Docs>
@@ -233,6 +288,9 @@
       <MemberSignature Language="C#" Value="TopRight" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.VisualStyles.OffsetType TopRight = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.VisualStyles.OffsetType.TopRight" />
+      <MemberSignature Language="VB.NET" Value="TopRight" />
+      <MemberSignature Language="F#" Value="TopRight = 1" Usage="System.Windows.Forms.VisualStyles.OffsetType.TopRight" />
+      <MemberSignature Language="C++ CLI" Value="TopRight" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -241,6 +299,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.VisualStyles.OffsetType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The offset is applied from the top right of the element.</summary>
       </Docs>

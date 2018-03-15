@@ -1,7 +1,10 @@
-<Type Name="IItemContainerGenerator" FullName="System.Windows.Controls.Primitives.IItemContainerGenerator">
+﻿<Type Name="IItemContainerGenerator" FullName="System.Windows.Controls.Primitives.IItemContainerGenerator">
   <TypeSignature Language="C#" Value="public interface IItemContainerGenerator" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IItemContainerGenerator" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Primitives.IItemContainerGenerator" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IItemContainerGenerator" />
+  <TypeSignature Language="F#" Value="type IItemContainerGenerator = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IItemContainerGenerator" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,10 +24,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="GenerateNext">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the container element used to display the next item.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GenerateNext">
       <MemberSignature Language="C#" Value="public System.Windows.DependencyObject GenerateNext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.DependencyObject GenerateNext() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateNext () As DependencyObject" />
+      <MemberSignature Language="F#" Value="abstract member GenerateNext : unit -&gt; System.Windows.DependencyObject" Usage="iItemContainerGenerator.GenerateNext " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::DependencyObject ^ GenerateNext();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -51,6 +66,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.DependencyObject GenerateNext (out bool isNewlyRealized);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.DependencyObject GenerateNext([out] bool&amp; isNewlyRealized) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.GenerateNext(System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GenerateNext (ByRef isNewlyRealized As Boolean) As DependencyObject" />
+      <MemberSignature Language="F#" Value="abstract member GenerateNext :  -&gt; System.Windows.DependencyObject" Usage="iItemContainerGenerator.GenerateNext isNewlyRealized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::DependencyObject ^ GenerateNext([Runtime::InteropServices::Out] bool % isNewlyRealized);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -80,6 +98,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Primitives.GeneratorPosition GeneratorPositionFromIndex (int itemIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Windows.Controls.Primitives.GeneratorPosition GeneratorPositionFromIndex(int32 itemIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.GeneratorPositionFromIndex(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GeneratorPositionFromIndex (itemIndex As Integer) As GeneratorPosition" />
+      <MemberSignature Language="F#" Value="abstract member GeneratorPositionFromIndex : int -&gt; System.Windows.Controls.Primitives.GeneratorPosition" Usage="iItemContainerGenerator.GeneratorPositionFromIndex itemIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Controls::Primitives::GeneratorPosition GeneratorPositionFromIndex(int itemIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -102,6 +123,8 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.ItemContainerGenerator GetItemContainerGeneratorForPanel (System.Windows.Controls.Panel panel);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Controls.ItemContainerGenerator GetItemContainerGeneratorForPanel(class System.Windows.Controls.Panel panel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.GetItemContainerGeneratorForPanel(System.Windows.Controls.Panel)" />
+      <MemberSignature Language="F#" Value="abstract member GetItemContainerGeneratorForPanel : System.Windows.Controls.Panel -&gt; System.Windows.Controls.ItemContainerGenerator" Usage="iItemContainerGenerator.GetItemContainerGeneratorForPanel panel" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Controls::ItemContainerGenerator ^ GetItemContainerGeneratorForPanel(System::Windows::Controls::Panel ^ panel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -124,6 +147,9 @@
       <MemberSignature Language="C#" Value="public int IndexFromGeneratorPosition (System.Windows.Controls.Primitives.GeneratorPosition position);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 IndexFromGeneratorPosition(valuetype System.Windows.Controls.Primitives.GeneratorPosition position) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.IndexFromGeneratorPosition(System.Windows.Controls.Primitives.GeneratorPosition)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexFromGeneratorPosition (position As GeneratorPosition) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member IndexFromGeneratorPosition : System.Windows.Controls.Primitives.GeneratorPosition -&gt; int" Usage="iItemContainerGenerator.IndexFromGeneratorPosition position" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexFromGeneratorPosition(System::Windows::Controls::Primitives::GeneratorPosition position);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -148,6 +174,9 @@
       <MemberSignature Language="C#" Value="public void PrepareItemContainer (System.Windows.DependencyObject container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PrepareItemContainer(class System.Windows.DependencyObject container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.PrepareItemContainer(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PrepareItemContainer (container As DependencyObject)" />
+      <MemberSignature Language="F#" Value="abstract member PrepareItemContainer : System.Windows.DependencyObject -&gt; unit" Usage="iItemContainerGenerator.PrepareItemContainer container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PrepareItemContainer(System::Windows::DependencyObject ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -178,6 +207,9 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Windows.Controls.Primitives.GeneratorPosition position, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Remove(valuetype System.Windows.Controls.Primitives.GeneratorPosition position, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.Remove(System.Windows.Controls.Primitives.GeneratorPosition,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (position As GeneratorPosition, count As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Windows.Controls.Primitives.GeneratorPosition * int -&gt; unit" Usage="iItemContainerGenerator.Remove (position, count)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Controls::Primitives::GeneratorPosition position, int count);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -201,6 +233,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAll ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAll() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.RemoveAll" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAll ()" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAll : unit -&gt; unit" Usage="iItemContainerGenerator.RemoveAll " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAll();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -215,10 +250,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StartAt">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Prepares the generator to generate items, starting at the specified <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" />, and in the specified <see cref="T:System.Windows.Controls.Primitives.GeneratorDirection" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="StartAt">
       <MemberSignature Language="C#" Value="public IDisposable StartAt (System.Windows.Controls.Primitives.GeneratorPosition position, System.Windows.Controls.Primitives.GeneratorDirection direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IDisposable StartAt(valuetype System.Windows.Controls.Primitives.GeneratorPosition position, valuetype System.Windows.Controls.Primitives.GeneratorDirection direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt(System.Windows.Controls.Primitives.GeneratorPosition,System.Windows.Controls.Primitives.GeneratorDirection)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAt (position As GeneratorPosition, direction As GeneratorDirection) As IDisposable" />
+      <MemberSignature Language="F#" Value="abstract member StartAt : System.Windows.Controls.Primitives.GeneratorPosition * System.Windows.Controls.Primitives.GeneratorDirection -&gt; IDisposable" Usage="iItemContainerGenerator.StartAt (position, direction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ StartAt(System::Windows::Controls::Primitives::GeneratorPosition position, System::Windows::Controls::Primitives::GeneratorDirection direction);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -252,6 +299,9 @@
       <MemberSignature Language="C#" Value="public IDisposable StartAt (System.Windows.Controls.Primitives.GeneratorPosition position, System.Windows.Controls.Primitives.GeneratorDirection direction, bool allowStartAtRealizedItem);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IDisposable StartAt(valuetype System.Windows.Controls.Primitives.GeneratorPosition position, valuetype System.Windows.Controls.Primitives.GeneratorDirection direction, bool allowStartAtRealizedItem) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Primitives.IItemContainerGenerator.StartAt(System.Windows.Controls.Primitives.GeneratorPosition,System.Windows.Controls.Primitives.GeneratorDirection,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function StartAt (position As GeneratorPosition, direction As GeneratorDirection, allowStartAtRealizedItem As Boolean) As IDisposable" />
+      <MemberSignature Language="F#" Value="abstract member StartAt : System.Windows.Controls.Primitives.GeneratorPosition * System.Windows.Controls.Primitives.GeneratorDirection * bool -&gt; IDisposable" Usage="iItemContainerGenerator.StartAt (position, direction, allowStartAtRealizedItem)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ StartAt(System::Windows::Controls::Primitives::GeneratorPosition position, System::Windows::Controls::Primitives::GeneratorDirection direction, bool allowStartAtRealizedItem);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -281,23 +331,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="StartAt">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Prepares the generator to generate items, starting at the specified <see cref="T:System.Windows.Controls.Primitives.GeneratorPosition" />, and in the specified <see cref="T:System.Windows.Controls.Primitives.GeneratorDirection" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GenerateNext">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the container element used to display the next item.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

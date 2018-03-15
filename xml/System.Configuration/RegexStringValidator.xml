@@ -1,7 +1,10 @@
-<Type Name="RegexStringValidator" FullName="System.Configuration.RegexStringValidator">
+﻿<Type Name="RegexStringValidator" FullName="System.Configuration.RegexStringValidator">
   <TypeSignature Language="C#" Value="public class RegexStringValidator : System.Configuration.ConfigurationValidatorBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RegexStringValidator extends System.Configuration.ConfigurationValidatorBase" />
   <TypeSignature Language="DocId" Value="T:System.Configuration.RegexStringValidator" />
+  <TypeSignature Language="VB.NET" Value="Public Class RegexStringValidator&#xA;Inherits ConfigurationValidatorBase" />
+  <TypeSignature Language="F#" Value="type RegexStringValidator = class&#xA;    inherit ConfigurationValidatorBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RegexStringValidator : System::Configuration::ConfigurationValidatorBase" />
   <AssemblyInfo>
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public RegexStringValidator (string regex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string regex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.RegexStringValidator.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (regex As String)" />
+      <MemberSignature Language="F#" Value="new System.Configuration.RegexStringValidator : string -&gt; System.Configuration.RegexStringValidator" Usage="new System.Configuration.RegexStringValidator regex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RegexStringValidator(System::String ^ regex);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="public override bool CanValidate (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool CanValidate(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.RegexStringValidator.CanValidate(System.Type)" />
+      <MemberSignature Language="F#" Value="override this.CanValidate : Type -&gt; bool" Usage="regexStringValidator.CanValidate type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanValidate(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
@@ -107,6 +115,9 @@
       <MemberSignature Language="C#" Value="public override void Validate (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Validate(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Configuration.RegexStringValidator.Validate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Validate (value As Object)" />
+      <MemberSignature Language="F#" Value="override this.Validate : obj -&gt; unit" Usage="regexStringValidator.Validate value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Validate(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>

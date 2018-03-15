@@ -1,7 +1,10 @@
-<Type Name="LogRecordEnumeratorType" FullName="System.IO.Log.LogRecordEnumeratorType">
+﻿<Type Name="LogRecordEnumeratorType" FullName="System.IO.Log.LogRecordEnumeratorType">
   <TypeSignature Language="C#" Value="public enum LogRecordEnumeratorType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LogRecordEnumeratorType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.IO.Log.LogRecordEnumeratorType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LogRecordEnumeratorType" />
+  <TypeSignature Language="F#" Value="type LogRecordEnumeratorType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LogRecordEnumeratorType" />
   <AssemblyInfo>
     <AssemblyName>System.IO.Log</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="Next" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.LogRecordEnumeratorType Next = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogRecordEnumeratorType.Next" />
+      <MemberSignature Language="VB.NET" Value="Next" />
+      <MemberSignature Language="F#" Value="Next = 2" Usage="System.IO.Log.LogRecordEnumeratorType.Next" />
+      <MemberSignature Language="C++ CLI" Value="Next" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Log.LogRecordEnumeratorType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Records should be read in the order in which they were appended to the sequence.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Previous" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.LogRecordEnumeratorType Previous = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogRecordEnumeratorType.Previous" />
+      <MemberSignature Language="VB.NET" Value="Previous" />
+      <MemberSignature Language="F#" Value="Previous = 1" Usage="System.IO.Log.LogRecordEnumeratorType.Previous" />
+      <MemberSignature Language="C++ CLI" Value="Previous" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Log.LogRecordEnumeratorType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Records should be read in the order specified by the Previous sequence number of the log record.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="User" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.IO.Log.LogRecordEnumeratorType User = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.IO.Log.LogRecordEnumeratorType.User" />
+      <MemberSignature Language="VB.NET" Value="User" />
+      <MemberSignature Language="F#" Value="User = 0" Usage="System.IO.Log.LogRecordEnumeratorType.User" />
+      <MemberSignature Language="C++ CLI" Value="User" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IO.Log</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.IO.Log.LogRecordEnumeratorType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Records should be read in the order specified by the User sequence number of the log record.</summary>
       </Docs>

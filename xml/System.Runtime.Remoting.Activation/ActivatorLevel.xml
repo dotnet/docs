@@ -1,7 +1,10 @@
-<Type Name="ActivatorLevel" FullName="System.Runtime.Remoting.Activation.ActivatorLevel">
+﻿<Type Name="ActivatorLevel" FullName="System.Runtime.Remoting.Activation.ActivatorLevel">
   <TypeSignature Language="C#" Value="public enum ActivatorLevel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ActivatorLevel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Activation.ActivatorLevel" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ActivatorLevel" />
+  <TypeSignature Language="F#" Value="type ActivatorLevel = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ActivatorLevel" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="AppDomain" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Activation.ActivatorLevel AppDomain = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Activation.ActivatorLevel.AppDomain" />
+      <MemberSignature Language="VB.NET" Value="AppDomain" />
+      <MemberSignature Language="F#" Value="AppDomain = 12" Usage="System.Runtime.Remoting.Activation.ActivatorLevel.AppDomain" />
+      <MemberSignature Language="C++ CLI" Value="AppDomain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -40,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>Finds or creates a <see cref="T:System.AppDomain" />.</summary>
       </Docs>
@@ -48,6 +55,9 @@
       <MemberSignature Language="C#" Value="Construction" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Activation.ActivatorLevel Construction = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Activation.ActivatorLevel.Construction" />
+      <MemberSignature Language="VB.NET" Value="Construction" />
+      <MemberSignature Language="F#" Value="Construction = 4" Usage="System.Runtime.Remoting.Activation.ActivatorLevel.Construction" />
+      <MemberSignature Language="C++ CLI" Value="Construction" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -57,6 +67,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Constructs a blank object and runs the constructor.</summary>
       </Docs>
@@ -65,6 +76,9 @@
       <MemberSignature Language="C#" Value="Context" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Activation.ActivatorLevel Context = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Activation.ActivatorLevel.Context" />
+      <MemberSignature Language="VB.NET" Value="Context" />
+      <MemberSignature Language="F#" Value="Context = 8" Usage="System.Runtime.Remoting.Activation.ActivatorLevel.Context" />
+      <MemberSignature Language="C++ CLI" Value="Context" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +88,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Finds or creates a suitable context.</summary>
       </Docs>
@@ -82,6 +97,9 @@
       <MemberSignature Language="C#" Value="Machine" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Activation.ActivatorLevel Machine = int32(20)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Activation.ActivatorLevel.Machine" />
+      <MemberSignature Language="VB.NET" Value="Machine" />
+      <MemberSignature Language="F#" Value="Machine = 20" Usage="System.Runtime.Remoting.Activation.ActivatorLevel.Machine" />
+      <MemberSignature Language="C++ CLI" Value="Machine" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -91,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>20</MemberValue>
       <Docs>
         <summary>Finds a suitable computer.</summary>
       </Docs>
@@ -99,6 +118,9 @@
       <MemberSignature Language="C#" Value="Process" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.Remoting.Activation.ActivatorLevel Process = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.Remoting.Activation.ActivatorLevel.Process" />
+      <MemberSignature Language="VB.NET" Value="Process" />
+      <MemberSignature Language="F#" Value="Process = 16" Usage="System.Runtime.Remoting.Activation.ActivatorLevel.Process" />
+      <MemberSignature Language="C++ CLI" Value="Process" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -108,6 +130,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.Remoting.Activation.ActivatorLevel</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Starts a process.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="TextChangedEventHandler" FullName="System.Windows.Controls.TextChangedEventHandler">
+﻿<Type Name="TextChangedEventHandler" FullName="System.Windows.Controls.TextChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void TextChangedEventHandler(object sender, TextChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.TextChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub TextChangedEventHandler(sender As Object, e As TextChangedEventArgs)" />
+  <TypeSignature Language="F#" Value="type TextChangedEventHandler = delegate of obj * TextChangedEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void TextChangedEventHandler(System::Object ^ sender, TextChangedEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

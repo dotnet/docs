@@ -1,7 +1,10 @@
-<Type Name="DbGeography" FullName="System.Data.Spatial.DbGeography">
+﻿<Type Name="DbGeography" FullName="System.Data.Spatial.DbGeography">
   <TypeSignature Language="C#" Value="public class DbGeography" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit DbGeography extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Spatial.DbGeography" />
+  <TypeSignature Language="VB.NET" Value="Public Class DbGeography" />
+  <TypeSignature Language="F#" Value="type DbGeography = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DbGeography" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Area { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Area" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.Area" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Area As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.Area : Nullable&lt;double&gt;" Usage="System.Data.Spatial.DbGeography.Area" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; Area { Nullable&lt;double&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -45,6 +51,9 @@
       <MemberSignature Language="C#" Value="public byte[] AsBinary ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] AsBinary() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.AsBinary" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsBinary () As Byte()" />
+      <MemberSignature Language="F#" Value="member this.AsBinary : unit -&gt; byte[]" Usage="dbGeography.AsBinary " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ AsBinary();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -64,6 +73,9 @@
       <MemberSignature Language="C#" Value="public string AsGml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AsGml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.AsGml" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsGml () As String" />
+      <MemberSignature Language="F#" Value="member this.AsGml : unit -&gt; string" Usage="dbGeography.AsGml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ AsGml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -83,6 +95,9 @@
       <MemberSignature Language="C#" Value="public string AsText ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string AsText() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.AsText" />
+      <MemberSignature Language="VB.NET" Value="Public Function AsText () As String" />
+      <MemberSignature Language="F#" Value="member this.AsText : unit -&gt; string" Usage="dbGeography.AsText " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ AsText();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -102,6 +117,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeography Buffer (Nullable&lt;double&gt; distance);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbGeography Buffer(valuetype System.Nullable`1&lt;float64&gt; distance) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.Buffer(System.Nullable{System.Double})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Buffer (distance As Nullable(Of Double)) As DbGeography" />
+      <MemberSignature Language="F#" Value="member this.Buffer : Nullable&lt;double&gt; -&gt; System.Data.Spatial.DbGeography" Usage="dbGeography.Buffer distance" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Spatial::DbGeography ^ Buffer(Nullable&lt;double&gt; distance);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -124,6 +142,9 @@
       <MemberSignature Language="C#" Value="public int CoordinateSystemId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CoordinateSystemId" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.CoordinateSystemId" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CoordinateSystemId As Integer" />
+      <MemberSignature Language="F#" Value="member this.CoordinateSystemId : int" Usage="System.Data.Spatial.DbGeography.CoordinateSystemId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int CoordinateSystemId { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -142,6 +163,9 @@
       <MemberSignature Language="C#" Value="public static int DefaultCoordinateSystemId { get; }" />
       <MemberSignature Language="ILAsm" Value=".property int32 DefaultCoordinateSystemId" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.DefaultCoordinateSystemId" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultCoordinateSystemId As Integer" />
+      <MemberSignature Language="F#" Value="member this.DefaultCoordinateSystemId : int" Usage="System.Data.Spatial.DbGeography.DefaultCoordinateSystemId" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property int DefaultCoordinateSystemId { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -160,6 +184,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeography Difference (System.Data.Spatial.DbGeography other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbGeography Difference(class System.Data.Spatial.DbGeography other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.Difference(System.Data.Spatial.DbGeography)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Difference (other As DbGeography) As DbGeography" />
+      <MemberSignature Language="F#" Value="member this.Difference : System.Data.Spatial.DbGeography -&gt; System.Data.Spatial.DbGeography" Usage="dbGeography.Difference other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Spatial::DbGeography ^ Difference(System::Data::Spatial::DbGeography ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -185,6 +212,9 @@
       <MemberSignature Language="C#" Value="public int Dimension { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Dimension" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.Dimension" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dimension As Integer" />
+      <MemberSignature Language="F#" Value="member this.Dimension : int" Usage="System.Data.Spatial.DbGeography.Dimension" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Dimension { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -203,6 +233,9 @@
       <MemberSignature Language="C#" Value="public bool Disjoint (System.Data.Spatial.DbGeography other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Disjoint(class System.Data.Spatial.DbGeography other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.Disjoint(System.Data.Spatial.DbGeography)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Disjoint (other As DbGeography) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Disjoint : System.Data.Spatial.DbGeography -&gt; bool" Usage="dbGeography.Disjoint other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Disjoint(System::Data::Spatial::DbGeography ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -229,6 +262,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Distance (System.Data.Spatial.DbGeography other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Nullable`1&lt;float64&gt; Distance(class System.Data.Spatial.DbGeography other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.Distance(System.Data.Spatial.DbGeography)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Distance (other As DbGeography) As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.Distance : System.Data.Spatial.DbGeography -&gt; Nullable&lt;double&gt;" Usage="dbGeography.Distance other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Nullable&lt;double&gt; Distance(System::Data::Spatial::DbGeography ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -254,6 +290,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeography ElementAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbGeography ElementAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.ElementAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ElementAt (index As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="member this.ElementAt : int -&gt; System.Data.Spatial.DbGeography" Usage="dbGeography.ElementAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Spatial::DbGeography ^ ElementAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -276,6 +315,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; ElementCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; ElementCount" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.ElementCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementCount As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.ElementCount : Nullable&lt;int&gt;" Usage="System.Data.Spatial.DbGeography.ElementCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; ElementCount { Nullable&lt;int&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -294,6 +336,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Elevation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Elevation" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.Elevation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Elevation As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.Elevation : Nullable&lt;double&gt;" Usage="System.Data.Spatial.DbGeography.Elevation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; Elevation { Nullable&lt;double&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -312,6 +357,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeography EndPoint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Spatial.DbGeography EndPoint" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.EndPoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property EndPoint As DbGeography" />
+      <MemberSignature Language="F#" Value="member this.EndPoint : System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.EndPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Spatial::DbGeography ^ EndPoint { System::Data::Spatial::DbGeography ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -326,10 +374,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromBinary">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified well known binary value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromBinary">
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography FromBinary (byte[] wellKnownBinary);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography FromBinary(unsigned int8[] wellKnownBinary) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.FromBinary(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromBinary (wellKnownBinary As Byte()) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member FromBinary : byte[] -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.FromBinary wellKnownBinary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ FromBinary(cli::array &lt;System::Byte&gt; ^ wellKnownBinary);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -355,6 +415,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography FromBinary (byte[] wellKnownBinary, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography FromBinary(unsigned int8[] wellKnownBinary, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.FromBinary(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromBinary (wellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member FromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.FromBinary (wellKnownBinary, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ FromBinary(cli::array &lt;System::Byte&gt; ^ wellKnownBinary, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -381,10 +444,22 @@
         </exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromGml">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new.<see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified Geography Markup Language (GML) value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromGml">
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography FromGml (string geographyMarkup);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography FromGml(string geographyMarkup) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.FromGml(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromGml (geographyMarkup As String) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member FromGml : string -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.FromGml geographyMarkup" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ FromGml(System::String ^ geographyMarkup);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -410,6 +485,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography FromGml (string geographyMarkup, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography FromGml(string geographyMarkup, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.FromGml(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromGml (geographyMarkup As String, coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member FromGml : string * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.FromGml (geographyMarkup, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ FromGml(System::String ^ geographyMarkup, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -436,10 +514,22 @@
         </exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromText">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified well known text value.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromText">
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography FromText (string wellKnownText);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography FromText(string wellKnownText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.FromText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromText (wellKnownText As String) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member FromText : string -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.FromText wellKnownText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ FromText(System::String ^ wellKnownText);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -465,6 +555,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography FromText (string wellKnownText, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography FromText(string wellKnownText, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.FromText(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromText (wellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member FromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.FromText (wellKnownText, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ FromText(System::String ^ wellKnownText, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -495,6 +588,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography GeographyCollectionFromBinary (byte[] geographyCollectionWellKnownBinary, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography GeographyCollectionFromBinary(unsigned int8[] geographyCollectionWellKnownBinary, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.GeographyCollectionFromBinary(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GeographyCollectionFromBinary (geographyCollectionWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member GeographyCollectionFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.GeographyCollectionFromBinary (geographyCollectionWellKnownBinary, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ GeographyCollectionFromBinary(cli::array &lt;System::Byte&gt; ^ geographyCollectionWellKnownBinary, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -525,6 +621,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography GeographyCollectionFromText (string geographyCollectionWellKnownText, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography GeographyCollectionFromText(string geographyCollectionWellKnownText, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.GeographyCollectionFromText(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GeographyCollectionFromText (geographyCollectionWellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member GeographyCollectionFromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.GeographyCollectionFromText (geographyCollectionWellKnownText, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ GeographyCollectionFromText(System::String ^ geographyCollectionWellKnownText, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -555,6 +654,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeography Intersection (System.Data.Spatial.DbGeography other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbGeography Intersection(class System.Data.Spatial.DbGeography other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.Intersection(System.Data.Spatial.DbGeography)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Intersection (other As DbGeography) As DbGeography" />
+      <MemberSignature Language="F#" Value="member this.Intersection : System.Data.Spatial.DbGeography -&gt; System.Data.Spatial.DbGeography" Usage="dbGeography.Intersection other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Spatial::DbGeography ^ Intersection(System::Data::Spatial::DbGeography ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -580,6 +682,9 @@
       <MemberSignature Language="C#" Value="public bool Intersects (System.Data.Spatial.DbGeography other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Intersects(class System.Data.Spatial.DbGeography other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.Intersects(System.Data.Spatial.DbGeography)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Intersects (other As DbGeography) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Intersects : System.Data.Spatial.DbGeography -&gt; bool" Usage="dbGeography.Intersects other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Intersects(System::Data::Spatial::DbGeography ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -606,6 +711,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;bool&gt; IsClosed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;bool&gt; IsClosed" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.IsClosed" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsClosed As Nullable(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsClosed : Nullable&lt;bool&gt;" Usage="System.Data.Spatial.DbGeography.IsClosed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;bool&gt; IsClosed { Nullable&lt;bool&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -625,6 +733,9 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsEmpty : bool" Usage="System.Data.Spatial.DbGeography.IsEmpty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsEmpty { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -644,6 +755,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Latitude { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Latitude" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.Latitude" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Latitude As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.Latitude : Nullable&lt;double&gt;" Usage="System.Data.Spatial.DbGeography.Latitude" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; Latitude { Nullable&lt;double&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -662,6 +776,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Length" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.Length : Nullable&lt;double&gt;" Usage="System.Data.Spatial.DbGeography.Length" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; Length { Nullable&lt;double&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -680,6 +797,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography LineFromBinary (byte[] lineWellKnownBinary, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography LineFromBinary(unsigned int8[] lineWellKnownBinary, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.LineFromBinary(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LineFromBinary (lineWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member LineFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.LineFromBinary (lineWellKnownBinary, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ LineFromBinary(cli::array &lt;System::Byte&gt; ^ lineWellKnownBinary, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -710,6 +830,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography LineFromText (string lineWellKnownText, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography LineFromText(string lineWellKnownText, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.LineFromText(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LineFromText (lineWellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member LineFromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.LineFromText (lineWellKnownText, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ LineFromText(System::String ^ lineWellKnownText, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -740,6 +863,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Longitude { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Longitude" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.Longitude" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Longitude As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.Longitude : Nullable&lt;double&gt;" Usage="System.Data.Spatial.DbGeography.Longitude" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; Longitude { Nullable&lt;double&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -758,6 +884,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;double&gt; Measure { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;float64&gt; Measure" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.Measure" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Measure As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="member this.Measure : Nullable&lt;double&gt;" Usage="System.Data.Spatial.DbGeography.Measure" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;double&gt; Measure { Nullable&lt;double&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -776,6 +905,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography MultiLineFromBinary (byte[] multiLineWellKnownBinary, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography MultiLineFromBinary(unsigned int8[] multiLineWellKnownBinary, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.MultiLineFromBinary(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiLineFromBinary (multiLineWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member MultiLineFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.MultiLineFromBinary (multiLineWellKnownBinary, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ MultiLineFromBinary(cli::array &lt;System::Byte&gt; ^ multiLineWellKnownBinary, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -800,6 +932,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography MultiLineFromText (string multiLineWellKnownText, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography MultiLineFromText(string multiLineWellKnownText, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.MultiLineFromText(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiLineFromText (multiLineWellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member MultiLineFromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.MultiLineFromText (multiLineWellKnownText, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ MultiLineFromText(System::String ^ multiLineWellKnownText, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -824,6 +959,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography MultiPointFromBinary (byte[] multiPointWellKnownBinary, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography MultiPointFromBinary(unsigned int8[] multiPointWellKnownBinary, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.MultiPointFromBinary(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiPointFromBinary (multiPointWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member MultiPointFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.MultiPointFromBinary (multiPointWellKnownBinary, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ MultiPointFromBinary(cli::array &lt;System::Byte&gt; ^ multiPointWellKnownBinary, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -848,6 +986,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography MultiPointFromText (string multiPointWellKnownText, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography MultiPointFromText(string multiPointWellKnownText, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.MultiPointFromText(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiPointFromText (multiPointWellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member MultiPointFromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.MultiPointFromText (multiPointWellKnownText, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ MultiPointFromText(System::String ^ multiPointWellKnownText, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -872,6 +1013,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography MultiPolygonFromBinary (byte[] multiPolygonWellKnownBinary, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography MultiPolygonFromBinary(unsigned int8[] multiPolygonWellKnownBinary, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.MultiPolygonFromBinary(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiPolygonFromBinary (multiPolygonWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member MultiPolygonFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.MultiPolygonFromBinary (multiPolygonWellKnownBinary, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ MultiPolygonFromBinary(cli::array &lt;System::Byte&gt; ^ multiPolygonWellKnownBinary, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -896,6 +1040,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography MultiPolygonFromText (string multiPolygonWellKnownText, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography MultiPolygonFromText(string multiPolygonWellKnownText, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.MultiPolygonFromText(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiPolygonFromText (multiPolygonWellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member MultiPolygonFromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.MultiPolygonFromText (multiPolygonWellKnownText, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ MultiPolygonFromText(System::String ^ multiPolygonWellKnownText, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -920,6 +1067,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeography PointAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbGeography PointAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.PointAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function PointAt (index As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="member this.PointAt : int -&gt; System.Data.Spatial.DbGeography" Usage="dbGeography.PointAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Spatial::DbGeography ^ PointAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -942,6 +1092,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;int&gt; PointCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;int32&gt; PointCount" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.PointCount" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PointCount As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.PointCount : Nullable&lt;int&gt;" Usage="System.Data.Spatial.DbGeography.PointCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;int&gt; PointCount { Nullable&lt;int&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -960,6 +1113,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography PointFromBinary (byte[] pointWellKnownBinary, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography PointFromBinary(unsigned int8[] pointWellKnownBinary, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.PointFromBinary(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PointFromBinary (pointWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member PointFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.PointFromBinary (pointWellKnownBinary, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ PointFromBinary(cli::array &lt;System::Byte&gt; ^ pointWellKnownBinary, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -990,6 +1146,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography PointFromText (string pointWellKnownText, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography PointFromText(string pointWellKnownText, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.PointFromText(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PointFromText (pointWellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member PointFromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.PointFromText (pointWellKnownText, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ PointFromText(System::String ^ pointWellKnownText, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1020,6 +1179,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography PolygonFromBinary (byte[] polygonWellKnownBinary, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography PolygonFromBinary(unsigned int8[] polygonWellKnownBinary, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.PolygonFromBinary(System.Byte[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PolygonFromBinary (polygonWellKnownBinary As Byte(), coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member PolygonFromBinary : byte[] * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.PolygonFromBinary (polygonWellKnownBinary, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ PolygonFromBinary(cli::array &lt;System::Byte&gt; ^ polygonWellKnownBinary, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1050,6 +1212,9 @@
       <MemberSignature Language="C#" Value="public static System.Data.Spatial.DbGeography PolygonFromText (string polygonWellKnownText, int coordinateSystemId);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Data.Spatial.DbGeography PolygonFromText(string polygonWellKnownText, int32 coordinateSystemId) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.PolygonFromText(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PolygonFromText (polygonWellKnownText As String, coordinateSystemId As Integer) As DbGeography" />
+      <MemberSignature Language="F#" Value="static member PolygonFromText : string * int -&gt; System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.PolygonFromText (polygonWellKnownText, coordinateSystemId)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Data::Spatial::DbGeography ^ PolygonFromText(System::String ^ polygonWellKnownText, int coordinateSystemId);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1080,6 +1245,9 @@
       <MemberSignature Language="C#" Value="public object ProviderValue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object ProviderValue" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.ProviderValue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ProviderValue As Object" />
+      <MemberSignature Language="F#" Value="member this.ProviderValue : obj" Usage="System.Data.Spatial.DbGeography.ProviderValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ ProviderValue { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1098,6 +1266,9 @@
       <MemberSignature Language="C#" Value="public bool SpatialEquals (System.Data.Spatial.DbGeography other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SpatialEquals(class System.Data.Spatial.DbGeography other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.SpatialEquals(System.Data.Spatial.DbGeography)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SpatialEquals (other As DbGeography) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SpatialEquals : System.Data.Spatial.DbGeography -&gt; bool" Usage="dbGeography.SpatialEquals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool SpatialEquals(System::Data::Spatial::DbGeography ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1124,6 +1295,9 @@
       <MemberSignature Language="C#" Value="public string SpatialTypeName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SpatialTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.SpatialTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SpatialTypeName As String" />
+      <MemberSignature Language="F#" Value="member this.SpatialTypeName : string" Usage="System.Data.Spatial.DbGeography.SpatialTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SpatialTypeName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1142,6 +1316,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeography StartPoint { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Spatial.DbGeography StartPoint" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.StartPoint" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartPoint As DbGeography" />
+      <MemberSignature Language="F#" Value="member this.StartPoint : System.Data.Spatial.DbGeography" Usage="System.Data.Spatial.DbGeography.StartPoint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Spatial::DbGeography ^ StartPoint { System::Data::Spatial::DbGeography ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1160,6 +1337,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeography SymmetricDifference (System.Data.Spatial.DbGeography other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbGeography SymmetricDifference(class System.Data.Spatial.DbGeography other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.SymmetricDifference(System.Data.Spatial.DbGeography)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SymmetricDifference (other As DbGeography) As DbGeography" />
+      <MemberSignature Language="F#" Value="member this.SymmetricDifference : System.Data.Spatial.DbGeography -&gt; System.Data.Spatial.DbGeography" Usage="dbGeography.SymmetricDifference other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Spatial::DbGeography ^ SymmetricDifference(System::Data::Spatial::DbGeography ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1185,6 +1365,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="dbGeography.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1204,6 +1387,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeography Union (System.Data.Spatial.DbGeography other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Spatial.DbGeography Union(class System.Data.Spatial.DbGeography other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Spatial.DbGeography.Union(System.Data.Spatial.DbGeography)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Union (other As DbGeography) As DbGeography" />
+      <MemberSignature Language="F#" Value="member this.Union : System.Data.Spatial.DbGeography -&gt; System.Data.Spatial.DbGeography" Usage="dbGeography.Union other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Spatial::DbGeography ^ Union(System::Data::Spatial::DbGeography ^ other);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1229,6 +1415,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Spatial.DbGeographyWellKnownValue WellKnownValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Spatial.DbGeographyWellKnownValue WellKnownValue" />
       <MemberSignature Language="DocId" Value="P:System.Data.Spatial.DbGeography.WellKnownValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property WellKnownValue As DbGeographyWellKnownValue" />
+      <MemberSignature Language="F#" Value="member this.WellKnownValue : System.Data.Spatial.DbGeographyWellKnownValue with get, set" Usage="System.Data.Spatial.DbGeography.WellKnownValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Spatial::DbGeographyWellKnownValue ^ WellKnownValue { System::Data::Spatial::DbGeographyWellKnownValue ^ get(); void set(System::Data::Spatial::DbGeographyWellKnownValue ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -1248,32 +1437,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="FromGml">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new.<see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified Geography Markup Language (GML) value.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FromBinary">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified well known binary value.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FromText">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new <see cref="T:System.Data.Spatial.DbGeography" /> value based on the specified well known text value.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

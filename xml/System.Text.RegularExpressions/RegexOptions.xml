@@ -1,7 +1,10 @@
-<Type Name="RegexOptions" FullName="System.Text.RegularExpressions.RegexOptions">
+﻿<Type Name="RegexOptions" FullName="System.Text.RegularExpressions.RegexOptions">
   <TypeSignature Language="C#" Value="public enum RegexOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RegexOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Text.RegularExpressions.RegexOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RegexOptions" />
+  <TypeSignature Language="F#" Value="type RegexOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class RegexOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Text.RegularExpressions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,6 +71,9 @@
       <MemberSignature Language="C#" Value="Compiled" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.RegularExpressions.RegexOptions Compiled = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.Compiled" />
+      <MemberSignature Language="VB.NET" Value="Compiled" />
+      <MemberSignature Language="F#" Value="Compiled = 8" Usage="System.Text.RegularExpressions.RegexOptions.Compiled" />
+      <MemberSignature Language="C++ CLI" Value="Compiled" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -88,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.RegexOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Specifies that the regular expression is compiled to an assembly. This yields faster execution but increases startup time. This value should not be assigned to the <see cref="P:System.Text.RegularExpressions.RegexCompilationInfo.Options" /> property when calling the <see cref="M:System.Text.RegularExpressions.Regex.CompileToAssembly(System.Text.RegularExpressions.RegexCompilationInfo[],System.Reflection.AssemblyName)" /> method. For more information, see the "Compiled Regular Expressions" section in the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.</summary>
       </Docs>
@@ -96,6 +103,9 @@
       <MemberSignature Language="C#" Value="CultureInvariant" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.RegularExpressions.RegexOptions CultureInvariant = int32(512)" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.CultureInvariant" />
+      <MemberSignature Language="VB.NET" Value="CultureInvariant" />
+      <MemberSignature Language="F#" Value="CultureInvariant = 512" Usage="System.Text.RegularExpressions.RegexOptions.CultureInvariant" />
+      <MemberSignature Language="C++ CLI" Value="CultureInvariant" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -117,6 +127,7 @@
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.RegexOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>Specifies that cultural differences in language is ignored. For more information, see the "Comparison Using the Invariant Culture" section in the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.</summary>
       </Docs>
@@ -125,6 +136,9 @@
       <MemberSignature Language="C#" Value="ECMAScript" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.RegularExpressions.RegexOptions ECMAScript = int32(256)" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.ECMAScript" />
+      <MemberSignature Language="VB.NET" Value="ECMAScript" />
+      <MemberSignature Language="F#" Value="ECMAScript = 256" Usage="System.Text.RegularExpressions.RegexOptions.ECMAScript" />
+      <MemberSignature Language="C++ CLI" Value="ECMAScript" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -146,6 +160,7 @@
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.RegexOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Enables ECMAScript-compliant behavior for the expression. This value can be used only in conjunction with the <see cref="F:System.Text.RegularExpressions.RegexOptions.IgnoreCase" />, <see cref="F:System.Text.RegularExpressions.RegexOptions.Multiline" />, and <see cref="F:System.Text.RegularExpressions.RegexOptions.Compiled" /> values. The use of this value with any other values results in an exception.  
   
@@ -156,6 +171,9 @@
       <MemberSignature Language="C#" Value="ExplicitCapture" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.RegularExpressions.RegexOptions ExplicitCapture = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.ExplicitCapture" />
+      <MemberSignature Language="VB.NET" Value="ExplicitCapture" />
+      <MemberSignature Language="F#" Value="ExplicitCapture = 4" Usage="System.Text.RegularExpressions.RegexOptions.ExplicitCapture" />
+      <MemberSignature Language="C++ CLI" Value="ExplicitCapture" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -177,6 +195,7 @@
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.RegexOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Specifies that the only valid captures are explicitly named or numbered groups of the form (?&lt;name&gt;…). This allows unnamed parentheses to act as noncapturing groups without the syntactic clumsiness of the expression (?:…). For more information, see the "Explicit Captures Only" section in the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.</summary>
       </Docs>
@@ -185,6 +204,9 @@
       <MemberSignature Language="C#" Value="IgnoreCase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.RegularExpressions.RegexOptions IgnoreCase = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.IgnoreCase" />
+      <MemberSignature Language="VB.NET" Value="IgnoreCase" />
+      <MemberSignature Language="F#" Value="IgnoreCase = 1" Usage="System.Text.RegularExpressions.RegexOptions.IgnoreCase" />
+      <MemberSignature Language="C++ CLI" Value="IgnoreCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -206,6 +228,7 @@
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.RegexOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Specifies case-insensitive matching. For more information, see the "Case-Insensitive Matching " section in the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.</summary>
       </Docs>
@@ -214,6 +237,9 @@
       <MemberSignature Language="C#" Value="IgnorePatternWhitespace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.RegularExpressions.RegexOptions IgnorePatternWhitespace = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace" />
+      <MemberSignature Language="VB.NET" Value="IgnorePatternWhitespace" />
+      <MemberSignature Language="F#" Value="IgnorePatternWhitespace = 32" Usage="System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace" />
+      <MemberSignature Language="C++ CLI" Value="IgnorePatternWhitespace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -235,6 +261,7 @@
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.RegexOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Eliminates unescaped white space from the pattern and enables comments marked with #. However, this value does not affect or eliminate white space in [character classes](~/docs/standard/base-types/character-classes-in-regular-expressions.md), numeric [quantifiers](~/docs/standard/base-types/quantifiers-in-regular-expressions.md), or tokens that mark the beginning of individual [regular expression language elements](~/docs/standard/base-types/regular-expression-language-quick-reference.md). For more information, see the "Ignore White Space" section of the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.</summary>
       </Docs>
@@ -243,6 +270,9 @@
       <MemberSignature Language="C#" Value="Multiline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.RegularExpressions.RegexOptions Multiline = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.Multiline" />
+      <MemberSignature Language="VB.NET" Value="Multiline" />
+      <MemberSignature Language="F#" Value="Multiline = 2" Usage="System.Text.RegularExpressions.RegexOptions.Multiline" />
+      <MemberSignature Language="C++ CLI" Value="Multiline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -264,6 +294,7 @@
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.RegexOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Multiline mode. Changes the meaning of ^ and $ so they match at the beginning and end, respectively, of any line, and not just the beginning and end of the entire string. For more information, see the "Multiline Mode" section in the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.</summary>
       </Docs>
@@ -272,6 +303,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.RegularExpressions.RegexOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Text.RegularExpressions.RegexOptions.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -293,6 +327,7 @@
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.RegexOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Specifies that no options are set. For more information about the default behavior of the regular expression engine, see the "Default Options" section in the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.</summary>
       </Docs>
@@ -301,6 +336,9 @@
       <MemberSignature Language="C#" Value="RightToLeft" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.RegularExpressions.RegexOptions RightToLeft = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.RightToLeft" />
+      <MemberSignature Language="VB.NET" Value="RightToLeft" />
+      <MemberSignature Language="F#" Value="RightToLeft = 64" Usage="System.Text.RegularExpressions.RegexOptions.RightToLeft" />
+      <MemberSignature Language="C++ CLI" Value="RightToLeft" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -322,6 +360,7 @@
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.RegexOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Specifies that the search will be from right to left instead of from left to right. For more information, see the "Right-to-Left Mode" section in the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.</summary>
       </Docs>
@@ -330,6 +369,9 @@
       <MemberSignature Language="C#" Value="Singleline" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Text.RegularExpressions.RegexOptions Singleline = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Text.RegularExpressions.RegexOptions.Singleline" />
+      <MemberSignature Language="VB.NET" Value="Singleline" />
+      <MemberSignature Language="F#" Value="Singleline = 16" Usage="System.Text.RegularExpressions.RegexOptions.Singleline" />
+      <MemberSignature Language="C++ CLI" Value="Singleline" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Text.RegularExpressions</AssemblyName>
@@ -351,6 +393,7 @@
       <ReturnValue>
         <ReturnType>System.Text.RegularExpressions.RegexOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Specifies single-line mode. Changes the meaning of the dot (.) so it matches every character (instead of every character except \n). For more information, see the "Single-line Mode" section in the [Regular Expression Options](~/docs/standard/base-types/regular-expression-options.md) topic.</summary>
       </Docs>

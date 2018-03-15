@@ -1,7 +1,10 @@
-<Type Name="PrintQueueException" FullName="System.Printing.PrintQueueException">
+﻿<Type Name="PrintQueueException" FullName="System.Printing.PrintQueueException">
   <TypeSignature Language="C#" Value="public class PrintQueueException : System.Printing.PrintSystemException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit PrintQueueException extends System.Printing.PrintSystemException" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintQueueException" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrintQueueException&#xA;Inherits PrintSystemException" />
+  <TypeSignature Language="F#" Value="type PrintQueueException = class&#xA;    inherit PrintSystemException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintQueueException : System::Printing::PrintSystemException" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,10 +29,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintQueueException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PrintQueueException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintQueueException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -45,6 +59,9 @@
       <MemberSignature Language="C#" Value="public PrintQueueException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueueException : string -&gt; System.Printing.PrintQueueException" Usage="new System.Printing.PrintQueueException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintQueueException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -63,6 +80,9 @@
       <MemberSignature Language="C#" Value="protected PrintQueueException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueueException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Printing.PrintQueueException" Usage="new System.Printing.PrintQueueException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; PrintQueueException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -83,6 +103,9 @@
       <MemberSignature Language="C#" Value="public PrintQueueException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueueException : string * Exception -&gt; System.Printing.PrintQueueException" Usage="new System.Printing.PrintQueueException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintQueueException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -103,6 +126,9 @@
       <MemberSignature Language="C#" Value="public PrintQueueException (int errorCode, string message, string printerName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 errorCode, string message, string printerName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueException.#ctor(System.Int32,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String, printerName As String)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueueException : int * string * string -&gt; System.Printing.PrintQueueException" Usage="new System.Printing.PrintQueueException (errorCode, message, printerName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintQueueException(int errorCode, System::String ^ message, System::String ^ printerName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -125,6 +151,9 @@
       <MemberSignature Language="C#" Value="public PrintQueueException (int errorCode, string message, string printerName, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 errorCode, string message, string printerName, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueException.#ctor(System.Int32,System.String,System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String, printerName As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueueException : int * string * string * Exception -&gt; System.Printing.PrintQueueException" Usage="new System.Printing.PrintQueueException (errorCode, message, printerName, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintQueueException(int errorCode, System::String ^ message, System::String ^ printerName, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -149,6 +178,9 @@
       <MemberSignature Language="C#" Value="public PrintQueueException (int errorCode, string message, string printerName, string printerMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(int32 errorCode, string message, string printerName, string printerMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueException.#ctor(System.Int32,System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (errorCode As Integer, message As String, printerName As String, printerMessage As String)" />
+      <MemberSignature Language="F#" Value="new System.Printing.PrintQueueException : int * string * string * string -&gt; System.Printing.PrintQueueException" Usage="new System.Printing.PrintQueueException (errorCode, message, printerName, printerMessage)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; PrintQueueException(int errorCode, System::String ^ message, System::String ^ printerName, System::String ^ printerMessage);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -173,6 +205,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintQueueException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="printQueueException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -201,6 +236,9 @@
       <MemberSignature Language="C#" Value="public string PrinterName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string PrinterName" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintQueueException.PrinterName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PrinterName As String" />
+      <MemberSignature Language="F#" Value="member this.PrinterName : string" Usage="System.Printing.PrintQueueException.PrinterName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ PrinterName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -215,14 +253,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Printing.PrintQueueException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

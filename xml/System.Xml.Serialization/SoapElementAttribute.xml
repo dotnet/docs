@@ -1,7 +1,10 @@
-<Type Name="SoapElementAttribute" FullName="System.Xml.Serialization.SoapElementAttribute">
+﻿<Type Name="SoapElementAttribute" FullName="System.Xml.Serialization.SoapElementAttribute">
   <TypeSignature Language="C#" Value="public class SoapElementAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapElementAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapElementAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class SoapElementAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type SoapElementAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapElementAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -21,7 +24,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Property | System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.ReturnValue)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Field | System.AttributeTargets.Parameter | System.AttributeTargets.Property | System.AttributeTargets.ReturnValue)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -51,10 +54,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapElementAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SoapElementAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapElementAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapElementAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -90,6 +105,9 @@
       <MemberSignature Language="C#" Value="public SoapElementAttribute (string elementName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string elementName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapElementAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (elementName As String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.SoapElementAttribute : string -&gt; System.Xml.Serialization.SoapElementAttribute" Usage="new System.Xml.Serialization.SoapElementAttribute elementName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapElementAttribute(System::String ^ elementName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -128,6 +146,9 @@
       <MemberSignature Language="C#" Value="public string DataType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataType" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapElementAttribute.DataType" />
+      <MemberSignature Language="VB.NET" Value="Public Property DataType As String" />
+      <MemberSignature Language="F#" Value="member this.DataType : string with get, set" Usage="System.Xml.Serialization.SoapElementAttribute.DataType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -230,6 +251,9 @@
       <MemberSignature Language="C#" Value="public string ElementName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ElementName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapElementAttribute.ElementName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ElementName As String" />
+      <MemberSignature Language="F#" Value="member this.ElementName : string with get, set" Usage="System.Xml.Serialization.SoapElementAttribute.ElementName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ElementName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -268,6 +292,9 @@
       <MemberSignature Language="C#" Value="public bool IsNullable { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsNullable" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapElementAttribute.IsNullable" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsNullable As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNullable : bool with get, set" Usage="System.Xml.Serialization.SoapElementAttribute.IsNullable" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsNullable { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -310,15 +337,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapElementAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

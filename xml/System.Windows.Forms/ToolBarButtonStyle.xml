@@ -1,7 +1,10 @@
-<Type Name="ToolBarButtonStyle" FullName="System.Windows.Forms.ToolBarButtonStyle">
+﻿<Type Name="ToolBarButtonStyle" FullName="System.Windows.Forms.ToolBarButtonStyle">
   <TypeSignature Language="C#" Value="public enum ToolBarButtonStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolBarButtonStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBarButtonStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ToolBarButtonStyle" />
+  <TypeSignature Language="F#" Value="type ToolBarButtonStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ToolBarButtonStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="DropDownButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolBarButtonStyle DropDownButton = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarButtonStyle.DropDownButton" />
+      <MemberSignature Language="VB.NET" Value="DropDownButton" />
+      <MemberSignature Language="F#" Value="DropDownButton = 4" Usage="System.Windows.Forms.ToolBarButtonStyle.DropDownButton" />
+      <MemberSignature Language="C++ CLI" Value="DropDownButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolBarButtonStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A drop-down control that displays a menu or other window when clicked.</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="PushButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolBarButtonStyle PushButton = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarButtonStyle.PushButton" />
+      <MemberSignature Language="VB.NET" Value="PushButton" />
+      <MemberSignature Language="F#" Value="PushButton = 1" Usage="System.Windows.Forms.ToolBarButtonStyle.PushButton" />
+      <MemberSignature Language="C++ CLI" Value="PushButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -62,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolBarButtonStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A standard, three-dimensional button.</summary>
       </Docs>
@@ -70,6 +81,9 @@
       <MemberSignature Language="C#" Value="Separator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolBarButtonStyle Separator = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarButtonStyle.Separator" />
+      <MemberSignature Language="VB.NET" Value="Separator" />
+      <MemberSignature Language="F#" Value="Separator = 3" Usage="System.Windows.Forms.ToolBarButtonStyle.Separator" />
+      <MemberSignature Language="C++ CLI" Value="Separator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -78,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolBarButtonStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A space or line between toolbar buttons. The appearance depends on the value of the <see cref="P:System.Windows.Forms.ToolBar.Appearance" /> property.</summary>
       </Docs>
@@ -86,6 +101,9 @@
       <MemberSignature Language="C#" Value="ToggleButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolBarButtonStyle ToggleButton = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolBarButtonStyle.ToggleButton" />
+      <MemberSignature Language="VB.NET" Value="ToggleButton" />
+      <MemberSignature Language="F#" Value="ToggleButton = 2" Usage="System.Windows.Forms.ToolBarButtonStyle.ToggleButton" />
+      <MemberSignature Language="C++ CLI" Value="ToggleButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -94,6 +112,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolBarButtonStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A toggle button that appears sunken when clicked and retains the sunken appearance until clicked again.</summary>
       </Docs>

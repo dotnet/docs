@@ -1,7 +1,10 @@
-<Type Name="IModalService" FullName="System.Activities.Presentation.IModalService">
+﻿<Type Name="IModalService" FullName="System.Activities.Presentation.IModalService">
   <TypeSignature Language="C#" Value="public interface IModalService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IModalService" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.IModalService" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IModalService" />
+  <TypeSignature Language="F#" Value="type IModalService = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IModalService" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="public void SetModalState (bool isModal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetModalState(bool isModal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.IModalService.SetModalState(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetModalState (isModal As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member SetModalState : bool -&gt; unit" Usage="iModalService.SetModalState isModal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetModalState(bool isModal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="X509ThumbprintKeyIdentifierClause" FullName="System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause">
+﻿<Type Name="X509ThumbprintKeyIdentifierClause" FullName="System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause">
   <TypeSignature Language="C#" Value="public class X509ThumbprintKeyIdentifierClause : System.IdentityModel.Tokens.BinaryKeyIdentifierClause" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit X509ThumbprintKeyIdentifierClause extends System.IdentityModel.Tokens.BinaryKeyIdentifierClause" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" />
+  <TypeSignature Language="VB.NET" Value="Public Class X509ThumbprintKeyIdentifierClause&#xA;Inherits BinaryKeyIdentifierClause" />
+  <TypeSignature Language="F#" Value="type X509ThumbprintKeyIdentifierClause = class&#xA;    inherit BinaryKeyIdentifierClause" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509ThumbprintKeyIdentifierClause : System::IdentityModel::Tokens::BinaryKeyIdentifierClause" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,34 +35,22 @@
     </remarks>
   </Docs>
   <Members>
-    <Member MemberName=".ctor">
-      <MemberSignature Language="C#" Value="public X509ThumbprintKeyIdentifierClause (byte[] certificateThumbprint);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] certificateThumbprint) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.#ctor(System.Byte[])" />
-      <MemberType>Constructor</MemberType>
+    <MemberGroup MemberName=".ctor">
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Parameters>
-        <Parameter Name="thumbprint" Type="System.Byte[]" />
-      </Parameters>
       <Docs>
-        <param name="certificateThumbprint">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" /> class using the specified thumbprint for an X.509 certificate.</summary>
-        <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="certificateThumbprint" /> is <see langword="null" />.  
-  
- -or-  
-  
- <paramref name="certificateThumbprint" /> is zero length.</exception>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" /> class.</summary>
       </Docs>
-    </Member>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public X509ThumbprintKeyIdentifierClause (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (certificate As X509Certificate2)" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause certificate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509ThumbprintKeyIdentifierClause(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -83,10 +74,46 @@
           <paramref name="certificate" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public X509ThumbprintKeyIdentifierClause (byte[] thumbprint);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] thumbprint) cil managed" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.#ctor(System.Byte[])" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (thumbprint As Byte())" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="F#" Value="new System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause : byte[] -&gt; System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" Usage="new System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause certificateThumbprint" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509ThumbprintKeyIdentifierClause(cli::array &lt;System::Byte&gt; ^ thumbprint);" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+      <MemberSignature Language="C#" Value="public X509ThumbprintKeyIdentifierClause (byte[] certificateThumbprint);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(unsigned int8[] certificateThumbprint) cil managed" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.#ctor(System.Byte[])" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (certificateThumbprint As Byte())" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; X509ThumbprintKeyIdentifierClause(cli::array &lt;System::Byte&gt; ^ certificateThumbprint);" FrameworkAlternate="xamarinmac-3.0" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="thumbprint" Type="System.Byte[]" Index="0" FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1" />
+        <Parameter Name="certificateThumbprint" Type="System.Byte[]" Index="0" FrameworkAlternate="xamarinmac-3.0" />
+      </Parameters>
+      <Docs>
+        <param name="certificateThumbprint">To be added.</param>
+        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" /> class using the specified thumbprint for an X.509 certificate.</summary>
+        <remarks>To be added.</remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="certificateThumbprint" /> is <see langword="null" />.  
+  
+ -or-  
+  
+ <paramref name="certificateThumbprint" /> is zero length.</exception>
+      </Docs>
+    </Member>
     <Member MemberName="GetX509Thumbprint">
       <MemberSignature Language="C#" Value="public byte[] GetX509Thumbprint ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance unsigned int8[] GetX509Thumbprint() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.GetX509Thumbprint" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetX509Thumbprint () As Byte()" />
+      <MemberSignature Language="F#" Value="member this.GetX509Thumbprint : unit -&gt; byte[]" Usage="x509ThumbprintKeyIdentifierClause.GetX509Thumbprint " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; cli::array &lt;System::Byte&gt; ^ GetX509Thumbprint();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -106,6 +133,9 @@
       <MemberSignature Language="C#" Value="public bool Matches (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Matches(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.Matches(System.Security.Cryptography.X509Certificates.X509Certificate2)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Matches (certificate As X509Certificate2) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Matches : System.Security.Cryptography.X509Certificates.X509Certificate2 -&gt; bool" Usage="x509ThumbprintKeyIdentifierClause.Matches certificate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Matches(System::Security::Cryptography::X509Certificates::X509Certificate2 ^ certificate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -129,6 +159,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="x509ThumbprintKeyIdentifierClause.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -151,14 +184,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509ThumbprintKeyIdentifierClause" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="PrintSystemJobInfo" FullName="System.Printing.PrintSystemJobInfo">
+﻿<Type Name="PrintSystemJobInfo" FullName="System.Printing.PrintSystemJobInfo">
   <TypeSignature Language="C#" Value="public class PrintSystemJobInfo : System.Printing.PrintSystemObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi PrintSystemJobInfo extends System.Printing.PrintSystemObject" />
   <TypeSignature Language="DocId" Value="T:System.Printing.PrintSystemJobInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrintSystemJobInfo&#xA;Inherits PrintSystemObject" />
+  <TypeSignature Language="F#" Value="type PrintSystemJobInfo = class&#xA;    inherit PrintSystemObject" />
+  <TypeSignature Language="C++ CLI" Value="public ref class PrintSystemJobInfo : System::Printing::PrintSystemObject" />
   <AssemblyInfo>
     <AssemblyName>System.Printing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="public void Cancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Cancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemJobInfo.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Cancel ()" />
+      <MemberSignature Language="F#" Value="member this.Cancel : unit -&gt; unit" Usage="printSystemJobInfo.Cancel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Cancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -66,6 +72,9 @@
       <MemberSignature Language="C#" Value="public override void Commit ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Commit() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemJobInfo.Commit" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Commit ()" />
+      <MemberSignature Language="F#" Value="override this.Commit : unit -&gt; unit" Usage="printSystemJobInfo.Commit " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Commit();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -92,6 +101,8 @@
       <MemberSignature Language="C#" Value="public static System.Printing.PrintSystemJobInfo Get (System.Printing.PrintQueue printQueue, int jobIdentifier);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Printing.PrintSystemJobInfo Get(class System.Printing.PrintQueue printQueue, int32 jobIdentifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemJobInfo.Get(System.Printing.PrintQueue,System.Int32)" />
+      <MemberSignature Language="F#" Value="static member Get : System.Printing.PrintQueue * int -&gt; System.Printing.PrintSystemJobInfo" Usage="System.Printing.PrintSystemJobInfo.Get (printQueue, jobIdentifier)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Printing::PrintSystemJobInfo ^ Get(System::Printing::PrintQueue ^ printQueue, int jobIdentifier);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -124,6 +135,9 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintQueue HostingPrintQueue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PrintQueue HostingPrintQueue" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.HostingPrintQueue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HostingPrintQueue As PrintQueue" />
+      <MemberSignature Language="F#" Value="member this.HostingPrintQueue : System.Printing.PrintQueue" Usage="System.Printing.PrintSystemJobInfo.HostingPrintQueue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PrintQueue ^ HostingPrintQueue { System::Printing::PrintQueue ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -153,6 +167,9 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintServer HostingPrintServer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Printing.PrintServer HostingPrintServer" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.HostingPrintServer" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HostingPrintServer As PrintServer" />
+      <MemberSignature Language="F#" Value="member this.HostingPrintServer : System.Printing.PrintServer" Usage="System.Printing.PrintSystemJobInfo.HostingPrintServer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PrintServer ^ HostingPrintServer { System::Printing::PrintServer ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -171,6 +188,9 @@
       <MemberSignature Language="C#" Value="protected override sealed void InternalDispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void InternalDispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemJobInfo.InternalDispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides NotOverridable Sub InternalDispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.InternalDispose : bool -&gt; unit" Usage="printSystemJobInfo.InternalDispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void InternalDispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -198,6 +218,9 @@
       <MemberSignature Language="C#" Value="public bool IsBlocked { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsBlocked" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.IsBlocked" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsBlocked As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsBlocked : bool" Usage="System.Printing.PrintSystemJobInfo.IsBlocked" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsBlocked { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -228,6 +251,9 @@
       <MemberSignature Language="C#" Value="public bool IsCompleted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCompleted" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.IsCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCompleted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsCompleted : bool" Usage="System.Printing.PrintSystemJobInfo.IsCompleted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsCompleted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -258,6 +284,9 @@
       <MemberSignature Language="C#" Value="public bool IsDeleted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDeleted" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.IsDeleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeleted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDeleted : bool" Usage="System.Printing.PrintSystemJobInfo.IsDeleted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeleted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -293,6 +322,9 @@
       <MemberSignature Language="C#" Value="public bool IsDeleting { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsDeleting" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.IsDeleting" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsDeleting As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsDeleting : bool" Usage="System.Printing.PrintSystemJobInfo.IsDeleting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsDeleting { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -323,6 +355,9 @@
       <MemberSignature Language="C#" Value="public bool IsInError { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInError" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.IsInError" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsInError As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInError : bool" Usage="System.Printing.PrintSystemJobInfo.IsInError" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInError { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -353,6 +388,9 @@
       <MemberSignature Language="C#" Value="public bool IsOffline { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsOffline" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.IsOffline" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsOffline As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsOffline : bool" Usage="System.Printing.PrintSystemJobInfo.IsOffline" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsOffline { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -388,6 +426,9 @@
       <MemberSignature Language="C#" Value="public bool IsPaperOut { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPaperOut" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.IsPaperOut" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPaperOut As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPaperOut : bool" Usage="System.Printing.PrintSystemJobInfo.IsPaperOut" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPaperOut { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -418,6 +459,9 @@
       <MemberSignature Language="C#" Value="public bool IsPaused { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPaused" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.IsPaused" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPaused As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPaused : bool" Usage="System.Printing.PrintSystemJobInfo.IsPaused" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPaused { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -455,6 +499,9 @@
       <MemberSignature Language="C#" Value="public bool IsPrinted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPrinted" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.IsPrinted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrinted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPrinted : bool" Usage="System.Printing.PrintSystemJobInfo.IsPrinted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrinted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -485,6 +532,9 @@
       <MemberSignature Language="C#" Value="public bool IsPrinting { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsPrinting" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.IsPrinting" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsPrinting As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsPrinting : bool" Usage="System.Printing.PrintSystemJobInfo.IsPrinting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsPrinting { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -515,6 +565,9 @@
       <MemberSignature Language="C#" Value="public bool IsRestarted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRestarted" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.IsRestarted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRestarted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRestarted : bool" Usage="System.Printing.PrintSystemJobInfo.IsRestarted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRestarted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -544,6 +597,9 @@
       <MemberSignature Language="C#" Value="public bool IsRetained { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRetained" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.IsRetained" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRetained As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRetained : bool" Usage="System.Printing.PrintSystemJobInfo.IsRetained" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRetained { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -570,6 +626,9 @@
       <MemberSignature Language="C#" Value="public bool IsSpooling { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSpooling" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.IsSpooling" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSpooling As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSpooling : bool" Usage="System.Printing.PrintSystemJobInfo.IsSpooling" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSpooling { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -600,6 +659,9 @@
       <MemberSignature Language="C#" Value="public bool IsUserInterventionRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsUserInterventionRequired" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.IsUserInterventionRequired" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsUserInterventionRequired As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsUserInterventionRequired : bool" Usage="System.Printing.PrintSystemJobInfo.IsUserInterventionRequired" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsUserInterventionRequired { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -635,6 +697,9 @@
       <MemberSignature Language="C#" Value="public int JobIdentifier { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 JobIdentifier" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.JobIdentifier" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobIdentifier As Integer" />
+      <MemberSignature Language="F#" Value="member this.JobIdentifier : int" Usage="System.Printing.PrintSystemJobInfo.JobIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int JobIdentifier { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -673,6 +738,9 @@
       <MemberSignature Language="C#" Value="public string JobName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string JobName" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.JobName" />
+      <MemberSignature Language="VB.NET" Value="Public Property JobName As String" />
+      <MemberSignature Language="F#" Value="member this.JobName : string with get, set" Usage="System.Printing.PrintSystemJobInfo.JobName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ JobName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -702,6 +770,9 @@
       <MemberSignature Language="C#" Value="public int JobSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 JobSize" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.JobSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobSize As Integer" />
+      <MemberSignature Language="F#" Value="member this.JobSize : int" Usage="System.Printing.PrintSystemJobInfo.JobSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int JobSize { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -720,6 +791,9 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintJobStatus JobStatus { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Printing.PrintJobStatus JobStatus" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.JobStatus" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobStatus As PrintJobStatus" />
+      <MemberSignature Language="F#" Value="member this.JobStatus : System.Printing.PrintJobStatus" Usage="System.Printing.PrintSystemJobInfo.JobStatus" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PrintJobStatus JobStatus { System::Printing::PrintJobStatus get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -754,6 +828,9 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream JobStream { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream JobStream" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.JobStream" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property JobStream As Stream" />
+      <MemberSignature Language="F#" Value="member this.JobStream : System.IO.Stream" Usage="System.Printing.PrintSystemJobInfo.JobStream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ JobStream { System::IO::Stream ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -779,6 +856,9 @@
       <MemberSignature Language="C#" Value="public int NumberOfPages { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfPages" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.NumberOfPages" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumberOfPages As Integer" />
+      <MemberSignature Language="F#" Value="member this.NumberOfPages : int" Usage="System.Printing.PrintSystemJobInfo.NumberOfPages" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberOfPages { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -817,6 +897,9 @@
       <MemberSignature Language="C#" Value="public int NumberOfPagesPrinted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 NumberOfPagesPrinted" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.NumberOfPagesPrinted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NumberOfPagesPrinted As Integer" />
+      <MemberSignature Language="F#" Value="member this.NumberOfPagesPrinted : int" Usage="System.Printing.PrintSystemJobInfo.NumberOfPagesPrinted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int NumberOfPagesPrinted { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -835,6 +918,9 @@
       <MemberSignature Language="C#" Value="public void Pause ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Pause() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemJobInfo.Pause" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Pause ()" />
+      <MemberSignature Language="F#" Value="member this.Pause : unit -&gt; unit" Usage="printSystemJobInfo.Pause " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Pause();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -864,6 +950,9 @@
       <MemberSignature Language="C#" Value="public int PositionInPrintQueue { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PositionInPrintQueue" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.PositionInPrintQueue" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PositionInPrintQueue As Integer" />
+      <MemberSignature Language="F#" Value="member this.PositionInPrintQueue : int" Usage="System.Printing.PrintSystemJobInfo.PositionInPrintQueue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PositionInPrintQueue { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -882,6 +971,9 @@
       <MemberSignature Language="C#" Value="public System.Printing.PrintJobPriority Priority { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Printing.PrintJobPriority Priority" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.Priority" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Priority As PrintJobPriority" />
+      <MemberSignature Language="F#" Value="member this.Priority : System.Printing.PrintJobPriority" Usage="System.Printing.PrintSystemJobInfo.Priority" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Printing::PrintJobPriority Priority { System::Printing::PrintJobPriority get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -900,6 +992,9 @@
       <MemberSignature Language="C#" Value="public override void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemJobInfo.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Refresh ()" />
+      <MemberSignature Language="F#" Value="override this.Refresh : unit -&gt; unit" Usage="printSystemJobInfo.Refresh " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -928,6 +1023,9 @@
       <MemberSignature Language="C#" Value="public void Restart ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Restart() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemJobInfo.Restart" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Restart ()" />
+      <MemberSignature Language="F#" Value="member this.Restart : unit -&gt; unit" Usage="printSystemJobInfo.Restart " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Restart();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -953,6 +1051,9 @@
       <MemberSignature Language="C#" Value="public void Resume ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Resume() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Printing.PrintSystemJobInfo.Resume" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Resume ()" />
+      <MemberSignature Language="F#" Value="member this.Resume : unit -&gt; unit" Usage="printSystemJobInfo.Resume " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Resume();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -989,6 +1090,9 @@
       <MemberSignature Language="C#" Value="public int StartTimeOfDay { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 StartTimeOfDay" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.StartTimeOfDay" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property StartTimeOfDay As Integer" />
+      <MemberSignature Language="F#" Value="member this.StartTimeOfDay : int" Usage="System.Printing.PrintSystemJobInfo.StartTimeOfDay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int StartTimeOfDay { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1039,6 +1143,9 @@
       <MemberSignature Language="C#" Value="public string Submitter { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Submitter" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.Submitter" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Submitter As String" />
+      <MemberSignature Language="F#" Value="member this.Submitter : string" Usage="System.Printing.PrintSystemJobInfo.Submitter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Submitter { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1068,6 +1175,9 @@
       <MemberSignature Language="C#" Value="public DateTime TimeJobSubmitted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime TimeJobSubmitted" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.TimeJobSubmitted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeJobSubmitted As DateTime" />
+      <MemberSignature Language="F#" Value="member this.TimeJobSubmitted : DateTime" Usage="System.Printing.PrintSystemJobInfo.TimeJobSubmitted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime TimeJobSubmitted { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1086,6 +1196,9 @@
       <MemberSignature Language="C#" Value="public int TimeSinceStartedPrinting { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TimeSinceStartedPrinting" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.TimeSinceStartedPrinting" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeSinceStartedPrinting As Integer" />
+      <MemberSignature Language="F#" Value="member this.TimeSinceStartedPrinting : int" Usage="System.Printing.PrintSystemJobInfo.TimeSinceStartedPrinting" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TimeSinceStartedPrinting { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>
@@ -1104,6 +1217,9 @@
       <MemberSignature Language="C#" Value="public int UntilTimeOfDay { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 UntilTimeOfDay" />
       <MemberSignature Language="DocId" Value="P:System.Printing.PrintSystemJobInfo.UntilTimeOfDay" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UntilTimeOfDay As Integer" />
+      <MemberSignature Language="F#" Value="member this.UntilTimeOfDay : int" Usage="System.Printing.PrintSystemJobInfo.UntilTimeOfDay" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int UntilTimeOfDay { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Printing</AssemblyName>

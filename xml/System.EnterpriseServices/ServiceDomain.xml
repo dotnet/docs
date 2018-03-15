@@ -1,7 +1,10 @@
-<Type Name="ServiceDomain" FullName="System.EnterpriseServices.ServiceDomain">
+﻿<Type Name="ServiceDomain" FullName="System.EnterpriseServices.ServiceDomain">
   <TypeSignature Language="C#" Value="public sealed class ServiceDomain" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ServiceDomain extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.ServiceDomain" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ServiceDomain" />
+  <TypeSignature Language="F#" Value="type ServiceDomain = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ServiceDomain sealed" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public static void Enter (System.EnterpriseServices.ServiceConfig cfg);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void Enter(class System.EnterpriseServices.ServiceConfig cfg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServiceDomain.Enter(System.EnterpriseServices.ServiceConfig)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Enter (cfg As ServiceConfig)" />
+      <MemberSignature Language="F#" Value="static member Enter : System.EnterpriseServices.ServiceConfig -&gt; unit" Usage="System.EnterpriseServices.ServiceDomain.Enter cfg" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void Enter(System::EnterpriseServices::ServiceConfig ^ cfg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -61,6 +67,9 @@
       <MemberSignature Language="C#" Value="public static System.EnterpriseServices.TransactionStatus Leave ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.EnterpriseServices.TransactionStatus Leave() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.ServiceDomain.Leave" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Leave () As TransactionStatus" />
+      <MemberSignature Language="F#" Value="static member Leave : unit -&gt; System.EnterpriseServices.TransactionStatus" Usage="System.EnterpriseServices.ServiceDomain.Leave " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::EnterpriseServices::TransactionStatus Leave();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>

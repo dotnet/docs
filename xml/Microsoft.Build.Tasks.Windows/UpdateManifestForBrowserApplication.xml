@@ -1,7 +1,10 @@
-<Type Name="UpdateManifestForBrowserApplication" FullName="Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication">
+﻿<Type Name="UpdateManifestForBrowserApplication" FullName="Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication">
   <TypeSignature Language="C#" Value="public sealed class UpdateManifestForBrowserApplication : Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit UpdateManifestForBrowserApplication extends Microsoft.Build.Utilities.Task" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class UpdateManifestForBrowserApplication&#xA;Inherits Task" />
+  <TypeSignature Language="F#" Value="type UpdateManifestForBrowserApplication = class&#xA;    inherit Task" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UpdateManifestForBrowserApplication sealed : Microsoft::Build::Utilities::Task" />
   <AssemblyInfo>
     <AssemblyName>PresentationBuildTasks</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,8 @@
       <MemberSignature Language="C#" Value="public UpdateManifestForBrowserApplication ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UpdateManifestForBrowserApplication();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -36,6 +41,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] ApplicationManifest { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] ApplicationManifest" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication.ApplicationManifest" />
+      <MemberSignature Language="VB.NET" Value="Public Property ApplicationManifest As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.ApplicationManifest : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication.ApplicationManifest" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ ApplicationManifest { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -60,6 +68,9 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="updateManifestForBrowserApplication.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>
@@ -81,6 +92,9 @@
       <MemberSignature Language="C#" Value="public bool HostInBrowser { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HostInBrowser" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication.HostInBrowser" />
+      <MemberSignature Language="VB.NET" Value="Public Property HostInBrowser As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HostInBrowser : bool with get, set" Usage="Microsoft.Build.Tasks.Windows.UpdateManifestForBrowserApplication.HostInBrowser" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HostInBrowser { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationBuildTasks</AssemblyName>

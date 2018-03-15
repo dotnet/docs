@@ -1,7 +1,10 @@
-<Type Name="DataFormats+Format" FullName="System.Windows.Forms.DataFormats+Format">
+﻿<Type Name="DataFormats+Format" FullName="System.Windows.Forms.DataFormats+Format">
   <TypeSignature Language="C#" Value="public class DataFormats.Format" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit DataFormats/Format extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataFormats.Format" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataFormats.Format" />
+  <TypeSignature Language="F#" Value="type DataFormats.Format = class" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class DataFormats::Format" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="public Format (string name, int id);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name, int32 id) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataFormats.Format.#ctor(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String, id As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.DataFormats.Format : string * int -&gt; System.Windows.Forms.DataFormats.Format" Usage="new System.Windows.Forms.DataFormats.Format (name, id)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Format(System::String ^ name, int id);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +78,9 @@
       <MemberSignature Language="C#" Value="public int Id { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Id" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataFormats.Format.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As Integer" />
+      <MemberSignature Language="F#" Value="member this.Id : int" Usage="System.Windows.Forms.DataFormats.Format.Id" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Id { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -90,6 +99,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataFormats.Format.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="System.Windows.Forms.DataFormats.Format.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

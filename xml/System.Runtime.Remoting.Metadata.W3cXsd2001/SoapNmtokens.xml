@@ -1,7 +1,10 @@
-<Type Name="SoapNmtokens" FullName="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens">
+﻿<Type Name="SoapNmtokens" FullName="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens">
   <TypeSignature Language="C#" Value="public sealed class SoapNmtokens : System.Runtime.Remoting.Metadata.W3cXsd2001.ISoapXsd" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit SoapNmtokens extends System.Object implements class System.Runtime.Remoting.Metadata.W3cXsd2001.ISoapXsd" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class SoapNmtokens&#xA;Implements ISoapXsd" />
+  <TypeSignature Language="F#" Value="type SoapNmtokens = class&#xA;    interface ISoapXsd" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapNmtokens sealed : System::Runtime::Remoting::Metadata::W3cXsd2001::ISoapXsd" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -25,10 +28,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SoapNmtokens ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapNmtokens();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -45,6 +60,9 @@
       <MemberSignature Language="C#" Value="public SoapNmtokens (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As String)" />
+      <MemberSignature Language="F#" Value="new System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens : string -&gt; System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens" Usage="new System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapNmtokens(System::String ^ value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -64,7 +82,13 @@
       <MemberSignature Language="C#" Value="public string GetXsdType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetXsdType() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens.GetXsdType" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetXsdType () As String" />
+      <MemberSignature Language="F#" Value="abstract member GetXsdType : unit -&gt; string&#xA;override this.GetXsdType : unit -&gt; string" Usage="soapNmtokens.GetXsdType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ GetXsdType();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Remoting.Metadata.W3cXsd2001.ISoapXsd.GetXsdType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -84,6 +108,9 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens Parse (string value);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens Parse(string value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens.Parse(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (value As String) As SoapNmtokens" />
+      <MemberSignature Language="F#" Value="static member Parse : string -&gt; System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens.Parse value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Remoting::Metadata::W3cXsd2001::SoapNmtokens ^ Parse(System::String ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -107,6 +134,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="soapNmtokens.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -127,6 +157,9 @@
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -146,6 +179,9 @@
       <MemberSignature Language="C#" Value="public static string XsdType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property string XsdType" />
       <MemberSignature Language="DocId" Value="P:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens.XsdType" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property XsdType As String" />
+      <MemberSignature Language="F#" Value="member this.XsdType : string" Usage="System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens.XsdType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::String ^ XsdType { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -161,15 +197,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Runtime.Remoting.Metadata.W3cXsd2001.SoapNmtokens" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

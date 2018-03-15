@@ -1,7 +1,10 @@
-<Type Name="XmlDsigExcC14NWithCommentsTransform" FullName="System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform">
+﻿<Type Name="XmlDsigExcC14NWithCommentsTransform" FullName="System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform">
   <TypeSignature Language="C#" Value="public class XmlDsigExcC14NWithCommentsTransform : System.Security.Cryptography.Xml.XmlDsigExcC14NTransform" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDsigExcC14NWithCommentsTransform extends System.Security.Cryptography.Xml.XmlDsigExcC14NTransform" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlDsigExcC14NWithCommentsTransform&#xA;Inherits XmlDsigExcC14NTransform" />
+  <TypeSignature Language="F#" Value="type XmlDsigExcC14NWithCommentsTransform = class&#xA;    inherit XmlDsigExcC14NTransform" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlDsigExcC14NWithCommentsTransform : System::Security::Cryptography::Xml::XmlDsigExcC14NTransform" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,10 +46,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlDsigExcC14NWithCommentsTransform ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDsigExcC14NWithCommentsTransform();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -66,6 +80,9 @@
       <MemberSignature Language="C#" Value="public XmlDsigExcC14NWithCommentsTransform (string inclusiveNamespacesPrefixList);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string inclusiveNamespacesPrefixList) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (inclusiveNamespacesPrefixList As String)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform : string -&gt; System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform" Usage="new System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform inclusiveNamespacesPrefixList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDsigExcC14NWithCommentsTransform(System::String ^ inclusiveNamespacesPrefixList);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -91,14 +108,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

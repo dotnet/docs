@@ -1,7 +1,10 @@
-<Type Name="UCOMIEnumConnectionPoints" FullName="System.Runtime.InteropServices.UCOMIEnumConnectionPoints">
+﻿<Type Name="UCOMIEnumConnectionPoints" FullName="System.Runtime.InteropServices.UCOMIEnumConnectionPoints">
   <TypeSignature Language="C#" Value="public interface UCOMIEnumConnectionPoints" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract UCOMIEnumConnectionPoints" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.UCOMIEnumConnectionPoints" />
+  <TypeSignature Language="VB.NET" Value="Public Interface UCOMIEnumConnectionPoints" />
+  <TypeSignature Language="F#" Value="type UCOMIEnumConnectionPoints = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class UCOMIEnumConnectionPoints" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="public void Clone (out System.Runtime.InteropServices.UCOMIEnumConnectionPoints ppenum);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clone([out] class System.Runtime.InteropServices.UCOMIEnumConnectionPoints&amp; ppenum) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Clone(System.Runtime.InteropServices.UCOMIEnumConnectionPoints@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef ppenum As UCOMIEnumConnectionPoints)" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="uCOMIEnumConnectionPoints.Clone ppenum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] System::Runtime::InteropServices::UCOMIEnumConnectionPoints ^ % ppenum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -64,6 +70,9 @@
       <MemberSignature Language="C#" Value="public int Next (int celt, System.Runtime.InteropServices.UCOMIConnectionPoint[] rgelt, out int pceltFetched);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(int32 celt, [out] class System.Runtime.InteropServices.UCOMIConnectionPoint[] rgelt, [out] int32&amp; pceltFetched) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Next(System.Int32,System.Runtime.InteropServices.UCOMIConnectionPoint[],System.Int32@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Next (celt As Integer, rgelt As UCOMIConnectionPoint(), ByRef pceltFetched As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Next : int * System.Runtime.InteropServices.UCOMIConnectionPoint[] *  -&gt; int" Usage="uCOMIEnumConnectionPoints.Next (celt, rgelt, pceltFetched)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Next(int celt, cli::array &lt;System::Runtime::InteropServices::UCOMIConnectionPoint ^&gt; ^ rgelt, [Runtime::InteropServices::Out] int % pceltFetched);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -99,6 +108,9 @@
       <MemberSignature Language="C#" Value="public int Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Function Reset () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; int" Usage="uCOMIEnumConnectionPoints.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -126,6 +138,9 @@
       <MemberSignature Language="C#" Value="public int Skip (int celt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Skip(int32 celt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.UCOMIEnumConnectionPoints.Skip(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Skip (celt As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Skip : int -&gt; int" Usage="uCOMIEnumConnectionPoints.Skip celt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Skip(int celt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

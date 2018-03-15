@@ -1,7 +1,10 @@
-<Type Name="FontCollection" FullName="System.Drawing.Text.FontCollection">
+﻿<Type Name="FontCollection" FullName="System.Drawing.Text.FontCollection">
   <TypeSignature Language="C#" Value="public abstract class FontCollection : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FontCollection extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Text.FontCollection" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class FontCollection&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type FontCollection = class&#xA;    interface IDisposable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FontCollection abstract : IDisposable" />
   <AssemblyInfo>
     <AssemblyName>System.Drawing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,11 +29,26 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Drawing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Drawing.Text.FontCollection" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Text.FontCollection.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="fontCollection.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,6 +76,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Text.FontCollection.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="fontCollection.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -95,6 +116,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.FontFamily[] Families { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.FontFamily[] Families" />
       <MemberSignature Language="DocId" Value="P:System.Drawing.Text.FontCollection.Families" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Families As FontFamily()" />
+      <MemberSignature Language="F#" Value="member this.Families : System.Drawing.FontFamily[]" Usage="System.Drawing.Text.FontCollection.Families" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Drawing::FontFamily ^&gt; ^ Families { cli::array &lt;System::Drawing::FontFamily ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -113,6 +137,9 @@
       <MemberSignature Language="C#" Value="~FontCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Drawing.Text.FontCollection.Finalize" />
+      <MemberSignature Language="VB.NET" Value="Finalize ()" />
+      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="fontCollection.Finalize " />
+      <MemberSignature Language="C++ CLI" Value="!FontCollection ()" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Drawing</AssemblyName>
@@ -127,14 +154,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Drawing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Drawing.Text.FontCollection" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

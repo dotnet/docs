@@ -1,7 +1,10 @@
-<Type Name="SubToolset" FullName="Microsoft.Build.Evaluation.SubToolset">
+﻿<Type Name="SubToolset" FullName="Microsoft.Build.Evaluation.SubToolset">
   <TypeSignature Language="C#" Value="public class SubToolset" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SubToolset extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Evaluation.SubToolset" />
+  <TypeSignature Language="VB.NET" Value="Public Class SubToolset" />
+  <TypeSignature Language="F#" Value="type SubToolset = class&#xA;    interface INodePacketTranslatable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SubToolset" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IDictionary&lt;string,Microsoft.Build.Execution.ProjectPropertyInstance&gt; Properties { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.IDictionary`2&lt;string, class Microsoft.Build.Execution.ProjectPropertyInstance&gt; Properties" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.SubToolset.Properties" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Properties As IDictionary(Of String, ProjectPropertyInstance)" />
+      <MemberSignature Language="F#" Value="member this.Properties : System.Collections.Generic.IDictionary&lt;string, Microsoft.Build.Execution.ProjectPropertyInstance&gt;" Usage="Microsoft.Build.Evaluation.SubToolset.Properties" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Execution::ProjectPropertyInstance ^&gt; ^ Properties { System::Collections::Generic::IDictionary&lt;System::String ^, Microsoft::Build::Execution::ProjectPropertyInstance ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>
@@ -42,6 +48,9 @@
       <MemberSignature Language="C#" Value="public string SubToolsetVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SubToolsetVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Evaluation.SubToolset.SubToolsetVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SubToolsetVersion As String" />
+      <MemberSignature Language="F#" Value="member this.SubToolsetVersion : string" Usage="Microsoft.Build.Evaluation.SubToolset.SubToolsetVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SubToolsetVersion { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build</AssemblyName>

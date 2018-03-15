@@ -1,7 +1,10 @@
-<Type Name="AssemblyLoadEventArgs" FullName="System.AssemblyLoadEventArgs">
+﻿<Type Name="AssemblyLoadEventArgs" FullName="System.AssemblyLoadEventArgs">
   <TypeSignature Language="C#" Value="public class AssemblyLoadEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AssemblyLoadEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.AssemblyLoadEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class AssemblyLoadEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type AssemblyLoadEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AssemblyLoadEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -33,6 +36,9 @@
       <MemberSignature Language="C#" Value="public AssemblyLoadEventArgs (System.Reflection.Assembly loadedAssembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Assembly loadedAssembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AssemblyLoadEventArgs.#ctor(System.Reflection.Assembly)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (loadedAssembly As Assembly)" />
+      <MemberSignature Language="F#" Value="new AssemblyLoadEventArgs : System.Reflection.Assembly -&gt; AssemblyLoadEventArgs" Usage="new System.AssemblyLoadEventArgs loadedAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AssemblyLoadEventArgs(System::Reflection::Assembly ^ loadedAssembly);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -61,6 +67,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Assembly LoadedAssembly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Assembly LoadedAssembly" />
       <MemberSignature Language="DocId" Value="P:System.AssemblyLoadEventArgs.LoadedAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LoadedAssembly As Assembly" />
+      <MemberSignature Language="F#" Value="member this.LoadedAssembly : System.Reflection.Assembly" Usage="System.AssemblyLoadEventArgs.LoadedAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ LoadedAssembly { System::Reflection::Assembly ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

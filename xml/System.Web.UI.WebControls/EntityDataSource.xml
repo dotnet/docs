@@ -1,7 +1,10 @@
-<Type Name="EntityDataSource" FullName="System.Web.UI.WebControls.EntityDataSource">
+﻿<Type Name="EntityDataSource" FullName="System.Web.UI.WebControls.EntityDataSource">
   <TypeSignature Language="C#" Value="public class EntityDataSource : System.Web.UI.DataSourceControl, System.Web.DynamicData.IDynamicDataSource, System.Web.UI.WebControls.IQueryableDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EntityDataSource extends System.Web.UI.DataSourceControl implements class System.Web.DynamicData.IDynamicDataSource, class System.Web.UI.IDataSource, class System.Web.UI.WebControls.IQueryableDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.EntityDataSource" />
+  <TypeSignature Language="VB.NET" Value="Public Class EntityDataSource&#xA;Inherits DataSourceControl&#xA;Implements IDynamicDataSource, IQueryableDataSource" />
+  <TypeSignature Language="F#" Value="type EntityDataSource = class&#xA;    inherit DataSourceControl&#xA;    interface IDynamicDataSource&#xA;    interface IDataSource&#xA;    interface IQueryableDataSource" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EntityDataSource : System::Web::UI::DataSourceControl, System::Web::DynamicData::IDynamicDataSource, System::Web::UI::WebControls::IQueryableDataSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -109,10 +112,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public EntityDataSource ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSource.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityDataSource();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -128,6 +142,9 @@
       <MemberSignature Language="C#" Value="public EntityDataSource (System.Data.EntityClient.EntityConnection connection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Data.EntityClient.EntityConnection connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSource.#ctor(System.Data.EntityClient.EntityConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (connection As EntityConnection)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.EntityDataSource : System.Data.EntityClient.EntityConnection -&gt; System.Web.UI.WebControls.EntityDataSource" Usage="new System.Web.UI.WebControls.EntityDataSource connection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EntityDataSource(System::Data::EntityClient::EntityConnection ^ connection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -146,6 +163,9 @@
       <MemberSignature Language="C#" Value="public bool AutoGenerateOrderByClause { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoGenerateOrderByClause" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.AutoGenerateOrderByClause" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoGenerateOrderByClause As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoGenerateOrderByClause : bool with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.AutoGenerateOrderByClause" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoGenerateOrderByClause { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -223,7 +243,13 @@ AutoGenerateOrderByClause="True">
       <MemberSignature Language="C#" Value="public bool AutoGenerateWhereClause { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoGenerateWhereClause" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.AutoGenerateWhereClause" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoGenerateWhereClause As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoGenerateWhereClause : bool with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.AutoGenerateWhereClause" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoGenerateWhereClause { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.AutoGenerateWhereClause</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -292,6 +318,9 @@ AutoGenerateOrderByClause="True">
       <MemberSignature Language="C#" Value="public bool AutoPage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoPage" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.AutoPage" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoPage As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoPage : bool with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.AutoPage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoPage { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -330,6 +359,9 @@ AutoGenerateOrderByClause="True">
       <MemberSignature Language="C#" Value="public bool AutoSort { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AutoSort" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.AutoSort" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutoSort As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AutoSort : bool with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.AutoSort" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AutoSort { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -366,6 +398,9 @@ AutoGenerateOrderByClause="True">
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ParameterCollection CommandParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection CommandParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.CommandParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandParameters As ParameterCollection" />
+      <MemberSignature Language="F#" Value="member this.CommandParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.EntityDataSource.CommandParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ CommandParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -382,7 +417,7 @@ AutoGenerateOrderByClause="True">
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -445,6 +480,9 @@ AutoGenerateOrderByClause="True">
       <MemberSignature Language="C#" Value="public string CommandText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CommandText" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.CommandText" />
+      <MemberSignature Language="VB.NET" Value="Public Property CommandText As String" />
+      <MemberSignature Language="F#" Value="member this.CommandText : string with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.CommandText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CommandText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -516,6 +554,9 @@ AutoGenerateOrderByClause="True">
       <MemberSignature Language="C#" Value="public string ConnectionString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ConnectionString" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.ConnectionString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ConnectionString As String" />
+      <MemberSignature Language="F#" Value="member this.ConnectionString : string with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.ConnectionString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ConnectionString { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -543,6 +584,9 @@ AutoGenerateOrderByClause="True">
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs&gt; ContextCreated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs&gt; ContextCreated" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.EntityDataSource.ContextCreated" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ContextCreated As EventHandler(Of EntityDataSourceContextCreatedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ContextCreated : EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs&gt; " Usage="member this.ContextCreated : System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceContextCreatedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::EntityDataSourceContextCreatedEventArgs ^&gt; ^ ContextCreated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -574,6 +618,9 @@ AutoGenerateOrderByClause="True">
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs&gt; ContextCreating;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs&gt; ContextCreating" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.EntityDataSource.ContextCreating" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ContextCreating As EventHandler(Of EntityDataSourceContextCreatingEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ContextCreating : EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs&gt; " Usage="member this.ContextCreating : System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceContextCreatingEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::EntityDataSourceContextCreatingEventArgs ^&gt; ^ ContextCreating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -622,6 +669,9 @@ public partial class _Default : System.Web.UI.Page
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceContextDisposingEventArgs&gt; ContextDisposing;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.EntityDataSourceContextDisposingEventArgs&gt; ContextDisposing" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.EntityDataSource.ContextDisposing" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event ContextDisposing As EventHandler(Of EntityDataSourceContextDisposingEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ContextDisposing : EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceContextDisposingEventArgs&gt; " Usage="member this.ContextDisposing : System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceContextDisposingEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::EntityDataSourceContextDisposingEventArgs ^&gt; ^ ContextDisposing;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -665,14 +715,20 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="public Type ContextType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ContextType" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.ContextType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextType As Type" />
+      <MemberSignature Language="F#" Value="member this.ContextType : Type with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.ContextType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ContextType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.ContextType</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -695,6 +751,9 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="public string ContextTypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContextTypeName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.ContextTypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContextTypeName As String" />
+      <MemberSignature Language="F#" Value="member this.ContextTypeName : string with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.ContextTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContextTypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -728,6 +787,9 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="protected virtual System.Web.UI.WebControls.EntityDataSourceView CreateView ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Web.UI.WebControls.EntityDataSourceView CreateView() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSource.CreateView" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateView () As EntityDataSourceView" />
+      <MemberSignature Language="F#" Value="abstract member CreateView : unit -&gt; System.Web.UI.WebControls.EntityDataSourceView&#xA;override this.CreateView : unit -&gt; System.Web.UI.WebControls.EntityDataSourceView" Usage="entityDataSource.CreateView " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Web::UI::WebControls::EntityDataSourceView ^ CreateView();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -754,6 +816,9 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="public string DefaultContainerName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DefaultContainerName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.DefaultContainerName" />
+      <MemberSignature Language="VB.NET" Value="Public Property DefaultContainerName As String" />
+      <MemberSignature Language="F#" Value="member this.DefaultContainerName : string with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.DefaultContainerName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DefaultContainerName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -779,6 +844,9 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangedEventArgs&gt; Deleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.EntityDataSourceChangedEventArgs&gt; Deleted" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.EntityDataSource.Deleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Deleted As EventHandler(Of EntityDataSourceChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.Deleted : EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangedEventArgs&gt; " Usage="member this.Deleted : System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::EntityDataSourceChangedEventArgs ^&gt; ^ Deleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -810,6 +878,9 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ParameterCollection DeleteParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection DeleteParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.DeleteParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DeleteParameters As ParameterCollection" />
+      <MemberSignature Language="F#" Value="member this.DeleteParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.EntityDataSource.DeleteParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ DeleteParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -826,7 +897,7 @@ protected void EntityDataSource2_ContextDisposing(object sender,
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -849,6 +920,9 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangingEventArgs&gt; Deleting;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.EntityDataSourceChangingEventArgs&gt; Deleting" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.EntityDataSource.Deleting" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Deleting As EventHandler(Of EntityDataSourceChangingEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.Deleting : EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangingEventArgs&gt; " Usage="member this.Deleting : System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangingEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::EntityDataSourceChangingEventArgs ^&gt; ^ Deleting;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -884,7 +958,13 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="public bool EnableDelete { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableDelete" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.EnableDelete" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableDelete As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableDelete : bool with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.EnableDelete" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableDelete { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.EnableDelete</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -922,6 +1002,9 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="public bool EnableFlattening { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableFlattening" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.EnableFlattening" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableFlattening As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableFlattening : bool with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.EnableFlattening" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableFlattening { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -956,7 +1039,13 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="public bool EnableInsert { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableInsert" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.EnableInsert" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableInsert As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableInsert : bool with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.EnableInsert" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableInsert { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.EnableInsert</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -994,7 +1083,13 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="public bool EnableUpdate { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool EnableUpdate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.EnableUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Property EnableUpdate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.EnableUpdate : bool with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.EnableUpdate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool EnableUpdate { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.EnableUpdate</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1034,7 +1129,13 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="public string EntitySetName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EntitySetName" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.EntitySetName" />
+      <MemberSignature Language="VB.NET" Value="Public Property EntitySetName As String" />
+      <MemberSignature Language="F#" Value="member this.EntitySetName : string with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.EntitySetName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntitySetName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.EntitySetName</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1059,6 +1160,9 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="public string EntityTypeFilter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string EntityTypeFilter" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.EntityTypeFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property EntityTypeFilter As String" />
+      <MemberSignature Language="F#" Value="member this.EntityTypeFilter : string with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.EntityTypeFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ EntityTypeFilter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1084,6 +1188,9 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="protected override System.Web.UI.DataSourceView GetView (string viewName);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Web.UI.DataSourceView GetView(string viewName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSource.GetView(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetView (viewName As String) As DataSourceView" />
+      <MemberSignature Language="F#" Value="override this.GetView : string -&gt; System.Web.UI.DataSourceView" Usage="entityDataSource.GetView viewName" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Web::UI::DataSourceView ^ GetView(System::String ^ viewName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1113,6 +1220,9 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="protected override System.Collections.ICollection GetViewNames ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Collections.ICollection GetViewNames() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSource.GetViewNames" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetViewNames () As ICollection" />
+      <MemberSignature Language="F#" Value="override this.GetViewNames : unit -&gt; System.Collections.ICollection" Usage="entityDataSource.GetViewNames " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Collections::ICollection ^ GetViewNames();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1139,6 +1249,9 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="public string GroupBy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string GroupBy" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.GroupBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property GroupBy As String" />
+      <MemberSignature Language="F#" Value="member this.GroupBy : string with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.GroupBy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ GroupBy { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1165,6 +1278,9 @@ protected void EntityDataSource2_ContextDisposing(object sender,
       <MemberSignature Language="C#" Value="public string Include { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Include" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.Include" />
+      <MemberSignature Language="VB.NET" Value="Public Property Include As String" />
+      <MemberSignature Language="F#" Value="member this.Include : string with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.Include" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Include { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1232,6 +1348,9 @@ ObjectQuery<Contact> customers =
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangedEventArgs&gt; Inserted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.EntityDataSourceChangedEventArgs&gt; Inserted" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.EntityDataSource.Inserted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Inserted As EventHandler(Of EntityDataSourceChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.Inserted : EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangedEventArgs&gt; " Usage="member this.Inserted : System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::EntityDataSourceChangedEventArgs ^&gt; ^ Inserted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1265,6 +1384,9 @@ ObjectQuery<Contact> customers =
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangingEventArgs&gt; Inserting;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.EntityDataSourceChangingEventArgs&gt; Inserting" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.EntityDataSource.Inserting" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Inserting As EventHandler(Of EntityDataSourceChangingEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.Inserting : EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangingEventArgs&gt; " Usage="member this.Inserting : System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangingEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::EntityDataSourceChangingEventArgs ^&gt; ^ Inserting;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1300,6 +1422,9 @@ ObjectQuery<Contact> customers =
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ParameterCollection InsertParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection InsertParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.InsertParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InsertParameters As ParameterCollection" />
+      <MemberSignature Language="F#" Value="member this.InsertParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.EntityDataSource.InsertParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ InsertParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1316,7 +1441,7 @@ ObjectQuery<Contact> customers =
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1339,6 +1464,9 @@ ObjectQuery<Contact> customers =
       <MemberSignature Language="C#" Value="protected override void LoadControlState (object savedState);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void LoadControlState(object savedState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSource.LoadControlState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub LoadControlState (savedState As Object)" />
+      <MemberSignature Language="F#" Value="override this.LoadControlState : obj -&gt; unit" Usage="entityDataSource.LoadControlState savedState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void LoadControlState(System::Object ^ savedState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1360,6 +1488,9 @@ ObjectQuery<Contact> customers =
       <MemberSignature Language="C#" Value="protected override void OnInit (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInit(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSource.OnInit(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInit (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnInit : EventArgs -&gt; unit" Usage="entityDataSource.OnInit e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInit(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1381,6 +1512,9 @@ ObjectQuery<Contact> customers =
       <MemberSignature Language="C#" Value="protected override void OnUnload (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnUnload(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSource.OnUnload(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnUnload (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnUnload : EventArgs -&gt; unit" Usage="entityDataSource.OnUnload e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnUnload(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1402,6 +1536,9 @@ ObjectQuery<Contact> customers =
       <MemberSignature Language="C#" Value="public string OrderBy { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string OrderBy" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.OrderBy" />
+      <MemberSignature Language="VB.NET" Value="Public Property OrderBy As String" />
+      <MemberSignature Language="F#" Value="member this.OrderBy : string with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.OrderBy" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ OrderBy { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1458,6 +1595,9 @@ ObjectQuery<SalesOrderHeader> onlineOrders =
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ParameterCollection OrderByParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection OrderByParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.OrderByParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OrderByParameters As ParameterCollection" />
+      <MemberSignature Language="F#" Value="member this.OrderByParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.EntityDataSource.OrderByParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ OrderByParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1474,7 +1614,7 @@ ObjectQuery<SalesOrderHeader> onlineOrders =
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1516,7 +1656,13 @@ ObjectQuery<SalesOrderHeader> onlineOrders =
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.WebControls.QueryCreatedEventArgs&gt; QueryCreated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.QueryCreatedEventArgs&gt; QueryCreated" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.EntityDataSource.QueryCreated" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event QueryCreated As EventHandler(Of QueryCreatedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.QueryCreated : EventHandler&lt;System.Web.UI.WebControls.QueryCreatedEventArgs&gt; " Usage="member this.QueryCreated : System.EventHandler&lt;System.Web.UI.WebControls.QueryCreatedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event EventHandler&lt;System::Web::UI::WebControls::QueryCreatedEventArgs ^&gt; ^ QueryCreated;" />
       <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Web.UI.WebControls.IQueryableDataSource.QueryCreated</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1545,6 +1691,9 @@ ObjectQuery<SalesOrderHeader> onlineOrders =
       <MemberSignature Language="C#" Value="protected override object SaveControlState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object SaveControlState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSource.SaveControlState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function SaveControlState () As Object" />
+      <MemberSignature Language="F#" Value="override this.SaveControlState : unit -&gt; obj" Usage="entityDataSource.SaveControlState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ SaveControlState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1564,6 +1713,9 @@ ObjectQuery<SalesOrderHeader> onlineOrders =
       <MemberSignature Language="C#" Value="public string Select { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Select" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.Select" />
+      <MemberSignature Language="VB.NET" Value="Public Property Select As String" />
+      <MemberSignature Language="F#" Value="member this.Select : string with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.Select" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Select { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1626,6 +1778,9 @@ ObjectQuery<Product> products = context.Product
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs&gt; Selected;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs&gt; Selected" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.EntityDataSource.Selected" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Selected As EventHandler(Of EntityDataSourceSelectedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.Selected : EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs&gt; " Usage="member this.Selected : System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceSelectedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::EntityDataSourceSelectedEventArgs ^&gt; ^ Selected;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1661,6 +1816,9 @@ ObjectQuery<Product> products = context.Product
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceSelectingEventArgs&gt; Selecting;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.EntityDataSourceSelectingEventArgs&gt; Selecting" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.EntityDataSource.Selecting" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Selecting As EventHandler(Of EntityDataSourceSelectingEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.Selecting : EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceSelectingEventArgs&gt; " Usage="member this.Selecting : System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceSelectingEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::EntityDataSourceSelectingEventArgs ^&gt; ^ Selecting;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1696,6 +1854,9 @@ ObjectQuery<Product> products = context.Product
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ParameterCollection SelectParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection SelectParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.SelectParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectParameters As ParameterCollection" />
+      <MemberSignature Language="F#" Value="member this.SelectParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.EntityDataSource.SelectParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ SelectParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1712,7 +1873,7 @@ ObjectQuery<Product> products = context.Product
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1737,6 +1898,9 @@ ObjectQuery<Product> products = context.Product
       <MemberSignature Language="C#" Value="public bool StoreOriginalValuesInViewState { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool StoreOriginalValuesInViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.StoreOriginalValuesInViewState" />
+      <MemberSignature Language="VB.NET" Value="Public Property StoreOriginalValuesInViewState As Boolean" />
+      <MemberSignature Language="F#" Value="member this.StoreOriginalValuesInViewState : bool with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.StoreOriginalValuesInViewState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool StoreOriginalValuesInViewState { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1767,11 +1931,37 @@ ObjectQuery<Product> products = context.Product
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="System.Web.DynamicData.IDynamicDataSource.Exception">
+      <MemberSignature Language="C#" Value="event EventHandler&lt;System.Web.DynamicData.DynamicValidatorEventArgs&gt; System.Web.DynamicData.IDynamicDataSource.Exception;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.DynamicData.DynamicValidatorEventArgs&gt; System.Web.DynamicData.IDynamicDataSource.Exception" />
+      <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.EntityDataSource.System#Web#DynamicData#IDynamicDataSource#Exception" />
+      <MemberSignature Language="VB.NET" Value="Custom Event Exception As EventHandler(Of DynamicValidatorEventArgs) Implements System.Web.DynamicData.IDynamicDataSource" />
+      <MemberType>Event</MemberType>
+      <Implements>
+        <InterfaceMember>E:System.Web.DynamicData.IDynamicDataSource.Exception</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.EventHandler&lt;System.Web.DynamicData.DynamicValidatorEventArgs&gt;</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="System.Web.UI.WebControls.IQueryableDataSource.RaiseViewChanged">
       <MemberSignature Language="C#" Value="void IQueryableDataSource.RaiseViewChanged ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.WebControls.IQueryableDataSource.RaiseViewChanged() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSource.System#Web#UI#WebControls#IQueryableDataSource#RaiseViewChanged" />
+      <MemberSignature Language="VB.NET" Value="Sub RaiseViewChanged () Implements IQueryableDataSource.RaiseViewChanged" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.WebControls.IQueryableDataSource.RaiseViewChanged() = System::Web::UI::WebControls::IQueryableDataSource::RaiseViewChanged;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Web.UI.WebControls.IQueryableDataSource.RaiseViewChanged</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1789,6 +1979,9 @@ ObjectQuery<Product> products = context.Product
       <MemberSignature Language="C#" Value="protected override void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.EntityDataSource.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub TrackViewState ()" />
+      <MemberSignature Language="F#" Value="override this.TrackViewState : unit -&gt; unit" Usage="entityDataSource.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1814,6 +2007,9 @@ ObjectQuery<Product> products = context.Product
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangedEventArgs&gt; Updated;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.EntityDataSourceChangedEventArgs&gt; Updated" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.EntityDataSource.Updated" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Updated As EventHandler(Of EntityDataSourceChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.Updated : EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangedEventArgs&gt; " Usage="member this.Updated : System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::EntityDataSourceChangedEventArgs ^&gt; ^ Updated;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1847,6 +2043,9 @@ ObjectQuery<Product> products = context.Product
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ParameterCollection UpdateParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection UpdateParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.UpdateParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdateParameters As ParameterCollection" />
+      <MemberSignature Language="F#" Value="member this.UpdateParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.EntityDataSource.UpdateParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ UpdateParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1863,7 +2062,7 @@ ObjectQuery<Product> products = context.Product
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1886,6 +2085,9 @@ ObjectQuery<Product> products = context.Product
       <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangingEventArgs&gt; Updating;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Web.UI.WebControls.EntityDataSourceChangingEventArgs&gt; Updating" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.WebControls.EntityDataSource.Updating" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Updating As EventHandler(Of EntityDataSourceChangingEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.Updating : EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangingEventArgs&gt; " Usage="member this.Updating : System.EventHandler&lt;System.Web.UI.WebControls.EntityDataSourceChangingEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Web::UI::WebControls::EntityDataSourceChangingEventArgs ^&gt; ^ Updating;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
@@ -1923,7 +2125,13 @@ ObjectQuery<Product> products = context.Product
       <MemberSignature Language="C#" Value="public string Where { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Where" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.Where" />
+      <MemberSignature Language="VB.NET" Value="Public Property Where As String" />
+      <MemberSignature Language="F#" Value="member this.Where : string with get, set" Usage="System.Web.UI.WebControls.EntityDataSource.Where" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Where { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.Where</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1980,7 +2188,13 @@ ObjectQuery<SalesOrderHeader> onlineOrders =
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.ParameterCollection WhereParameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.ParameterCollection WhereParameters" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.EntityDataSource.WhereParameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WhereParameters As ParameterCollection" />
+      <MemberSignature Language="F#" Value="member this.WhereParameters : System.Web.UI.WebControls.ParameterCollection" Usage="System.Web.UI.WebControls.EntityDataSource.WhereParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::ParameterCollection ^ WhereParameters { System::Web::UI::WebControls::ParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Web.DynamicData.IDynamicDataSource.WhereParameters</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Web.Entity</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1996,7 +2210,7 @@ ObjectQuery<SalesOrderHeader> onlineOrders =
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.Web.UI.PersistenceMode(System.Web.UI.PersistenceMode.InnerProperty)</AttributeName>
+          <AttributeName>System.Web.UI.PersistenceMode</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2048,14 +2262,5 @@ ObjectQuery<SalesOrderHeader> onlineOrders =
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.EntityDataSource" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

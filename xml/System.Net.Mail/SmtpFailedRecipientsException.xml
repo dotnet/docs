@@ -1,7 +1,10 @@
-<Type Name="SmtpFailedRecipientsException" FullName="System.Net.Mail.SmtpFailedRecipientsException">
+﻿<Type Name="SmtpFailedRecipientsException" FullName="System.Net.Mail.SmtpFailedRecipientsException">
   <TypeSignature Language="C#" Value="public class SmtpFailedRecipientsException : System.Net.Mail.SmtpFailedRecipientException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit SmtpFailedRecipientsException extends System.Net.Mail.SmtpFailedRecipientException implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Net.Mail.SmtpFailedRecipientsException" />
+  <TypeSignature Language="VB.NET" Value="Public Class SmtpFailedRecipientsException&#xA;Inherits SmtpFailedRecipientException" />
+  <TypeSignature Language="F#" Value="type SmtpFailedRecipientsException = class&#xA;    inherit SmtpFailedRecipientException&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SmtpFailedRecipientsException : System::Net::Mail::SmtpFailedRecipientException" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,10 +43,22 @@
     <forInternalUseOnly />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpFailedRecipientsException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SmtpFailedRecipientsException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientsException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpFailedRecipientsException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -69,6 +84,9 @@
       <MemberSignature Language="C#" Value="public SmtpFailedRecipientsException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientsException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.SmtpFailedRecipientsException : string -&gt; System.Net.Mail.SmtpFailedRecipientsException" Usage="new System.Net.Mail.SmtpFailedRecipientsException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpFailedRecipientsException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +115,9 @@
       <MemberSignature Language="C#" Value="protected SmtpFailedRecipientsException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientsException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.SmtpFailedRecipientsException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Net.Mail.SmtpFailedRecipientsException" Usage="new System.Net.Mail.SmtpFailedRecipientsException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SmtpFailedRecipientsException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -134,6 +155,9 @@
       <MemberSignature Language="C#" Value="public SmtpFailedRecipientsException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientsException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.SmtpFailedRecipientsException : string * Exception -&gt; System.Net.Mail.SmtpFailedRecipientsException" Usage="new System.Net.Mail.SmtpFailedRecipientsException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpFailedRecipientsException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -164,6 +188,9 @@
       <MemberSignature Language="C#" Value="public SmtpFailedRecipientsException (string message, System.Net.Mail.SmtpFailedRecipientException[] innerExceptions);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Net.Mail.SmtpFailedRecipientException[] innerExceptions) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientsException.#ctor(System.String,System.Net.Mail.SmtpFailedRecipientException[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerExceptions As SmtpFailedRecipientException())" />
+      <MemberSignature Language="F#" Value="new System.Net.Mail.SmtpFailedRecipientsException : string * System.Net.Mail.SmtpFailedRecipientException[] -&gt; System.Net.Mail.SmtpFailedRecipientsException" Usage="new System.Net.Mail.SmtpFailedRecipientsException (message, innerExceptions)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SmtpFailedRecipientsException(System::String ^ message, cli::array &lt;System::Net::Mail::SmtpFailedRecipientException ^&gt; ^ innerExceptions);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -194,39 +221,38 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientsException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Mail</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
-        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
         <param name="info">To be added.</param>
         <param name="context">To be added.</param>
-        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> instance with the data that is needed to serialize the <see cref="T:System.Net.Mail.SmtpFailedRecipientsException" />.</summary>
+        <summary>To be added.</summary>
         <remarks>To be added.</remarks>
-        <forInternalUseOnly />
       </Docs>
     </Member>
     <Member MemberName="InnerExceptions">
       <MemberSignature Language="C#" Value="public System.Net.Mail.SmtpFailedRecipientException[] InnerExceptions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Net.Mail.SmtpFailedRecipientException[] InnerExceptions" />
       <MemberSignature Language="DocId" Value="P:System.Net.Mail.SmtpFailedRecipientsException.InnerExceptions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property InnerExceptions As SmtpFailedRecipientException()" />
+      <MemberSignature Language="F#" Value="member this.InnerExceptions : System.Net.Mail.SmtpFailedRecipientException[]" Usage="System.Net.Mail.SmtpFailedRecipientsException.InnerExceptions" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;System::Net::Mail::SmtpFailedRecipientException ^&gt; ^ InnerExceptions { cli::array &lt;System::Net::Mail::SmtpFailedRecipientException ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -255,51 +281,30 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.Mail.SmtpFailedRecipientsException.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>netstandard</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Net.Mail</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
-        <Parameter Name="streamingContext" Type="System.Runtime.Serialization.StreamingContext" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
         <param name="info">To be added.</param>
         <param name="context">To be added.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpFailedRecipientsException" /> class from the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" /> and <see cref="T:System.Runtime.Serialization.StreamingContext" /> instances.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor implements the <xref:System.Runtime.Serialization.ISerializable> interface for the <xref:System.Net.Mail.SmtpFailedRecipientsException> class.  
-  
- ]]></format>
-        </remarks>
-        <forInternalUseOnly />
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Net.Mail.SmtpFailedRecipientsException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="EntitySetRights" FullName="System.Data.Services.EntitySetRights">
+﻿<Type Name="EntitySetRights" FullName="System.Data.Services.EntitySetRights">
   <TypeSignature Language="C#" Value="public enum EntitySetRights" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EntitySetRights extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.EntitySetRights" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EntitySetRights" />
+  <TypeSignature Language="F#" Value="type EntitySetRights = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EntitySetRights" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights All = int32(63)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="F#" Value="All = 63" Usage="System.Data.Services.EntitySetRights.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -52,6 +58,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
+      <MemberValue>63</MemberValue>
       <Docs>
         <summary>Authorization to create, read, update, and delete data.</summary>
       </Docs>
@@ -60,6 +67,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="AllRead" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights AllRead = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.AllRead" />
+      <MemberSignature Language="VB.NET" Value="AllRead" />
+      <MemberSignature Language="F#" Value="AllRead = 3" Usage="System.Data.Services.EntitySetRights.AllRead" />
+      <MemberSignature Language="C++ CLI" Value="AllRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -68,6 +78,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Authorization to read data.</summary>
       </Docs>
@@ -76,6 +87,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="AllWrite" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights AllWrite = int32(60)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.AllWrite" />
+      <MemberSignature Language="VB.NET" Value="AllWrite" />
+      <MemberSignature Language="F#" Value="AllWrite = 60" Usage="System.Data.Services.EntitySetRights.AllWrite" />
+      <MemberSignature Language="C++ CLI" Value="AllWrite" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -84,6 +98,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
+      <MemberValue>60</MemberValue>
       <Docs>
         <summary>Authorization to write data.</summary>
       </Docs>
@@ -92,6 +107,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.Services.EntitySetRights.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -100,6 +118,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Denies all rights to access data.</summary>
       </Docs>
@@ -108,6 +127,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="ReadMultiple" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights ReadMultiple = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.ReadMultiple" />
+      <MemberSignature Language="VB.NET" Value="ReadMultiple" />
+      <MemberSignature Language="F#" Value="ReadMultiple = 2" Usage="System.Data.Services.EntitySetRights.ReadMultiple" />
+      <MemberSignature Language="C++ CLI" Value="ReadMultiple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -116,6 +138,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Authorization to read sets of data.</summary>
       </Docs>
@@ -124,6 +147,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="ReadSingle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights ReadSingle = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.ReadSingle" />
+      <MemberSignature Language="VB.NET" Value="ReadSingle" />
+      <MemberSignature Language="F#" Value="ReadSingle = 1" Usage="System.Data.Services.EntitySetRights.ReadSingle" />
+      <MemberSignature Language="C++ CLI" Value="ReadSingle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -132,6 +158,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Authorization to read single data items.</summary>
       </Docs>
@@ -140,6 +167,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="WriteAppend" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights WriteAppend = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.WriteAppend" />
+      <MemberSignature Language="VB.NET" Value="WriteAppend" />
+      <MemberSignature Language="F#" Value="WriteAppend = 4" Usage="System.Data.Services.EntitySetRights.WriteAppend" />
+      <MemberSignature Language="C++ CLI" Value="WriteAppend" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -148,6 +178,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Authorization to create new data items in data sets.</summary>
       </Docs>
@@ -156,6 +187,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="WriteDelete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights WriteDelete = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.WriteDelete" />
+      <MemberSignature Language="VB.NET" Value="WriteDelete" />
+      <MemberSignature Language="F#" Value="WriteDelete = 16" Usage="System.Data.Services.EntitySetRights.WriteDelete" />
+      <MemberSignature Language="C++ CLI" Value="WriteDelete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -164,6 +198,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Authorization to delete data items from data sets.</summary>
       </Docs>
@@ -172,6 +207,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="WriteMerge" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights WriteMerge = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.WriteMerge" />
+      <MemberSignature Language="VB.NET" Value="WriteMerge" />
+      <MemberSignature Language="F#" Value="WriteMerge = 32" Usage="System.Data.Services.EntitySetRights.WriteMerge" />
+      <MemberSignature Language="C++ CLI" Value="WriteMerge" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -180,6 +218,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Authorization to merge data.</summary>
       </Docs>
@@ -188,6 +227,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="WriteReplace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.EntitySetRights WriteReplace = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.EntitySetRights.WriteReplace" />
+      <MemberSignature Language="VB.NET" Value="WriteReplace" />
+      <MemberSignature Language="F#" Value="WriteReplace = 8" Usage="System.Data.Services.EntitySetRights.WriteReplace" />
+      <MemberSignature Language="C++ CLI" Value="WriteReplace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -196,6 +238,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.EntitySetRights</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Authorization to replace data.</summary>
       </Docs>

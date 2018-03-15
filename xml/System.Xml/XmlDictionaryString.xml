@@ -1,7 +1,10 @@
-<Type Name="XmlDictionaryString" FullName="System.Xml.XmlDictionaryString">
+﻿<Type Name="XmlDictionaryString" FullName="System.Xml.XmlDictionaryString">
   <TypeSignature Language="C#" Value="public class XmlDictionaryString" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XmlDictionaryString extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.XmlDictionaryString" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlDictionaryString" />
+  <TypeSignature Language="F#" Value="type XmlDictionaryString = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlDictionaryString" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
@@ -36,6 +39,9 @@
       <MemberSignature Language="C#" Value="public XmlDictionaryString (System.Xml.IXmlDictionary dictionary, string value, int key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.IXmlDictionary dictionary, string value, int32 key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryString.#ctor(System.Xml.IXmlDictionary,System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (dictionary As IXmlDictionary, value As String, key As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Xml.XmlDictionaryString : System.Xml.IXmlDictionary * string * int -&gt; System.Xml.XmlDictionaryString" Usage="new System.Xml.XmlDictionaryString (dictionary, value, key)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlDictionaryString(System::Xml::IXmlDictionary ^ dictionary, System::String ^ value, int key);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -79,6 +85,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.IXmlDictionary Dictionary { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Xml.IXmlDictionary Dictionary" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryString.Dictionary" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Dictionary As IXmlDictionary" />
+      <MemberSignature Language="F#" Value="member this.Dictionary : System.Xml.IXmlDictionary" Usage="System.Xml.XmlDictionaryString.Dictionary" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Xml::IXmlDictionary ^ Dictionary { System::Xml::IXmlDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -107,6 +116,9 @@
       <MemberSignature Language="C#" Value="public static System.Xml.XmlDictionaryString Empty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Xml.XmlDictionaryString Empty" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryString.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As XmlDictionaryString" />
+      <MemberSignature Language="F#" Value="member this.Empty : System.Xml.XmlDictionaryString" Usage="System.Xml.XmlDictionaryString.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Xml::XmlDictionaryString ^ Empty { System::Xml::XmlDictionaryString ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -135,6 +147,9 @@
       <MemberSignature Language="C#" Value="public int Key { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Key" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryString.Key" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Key As Integer" />
+      <MemberSignature Language="F#" Value="member this.Key : int" Usage="System.Xml.XmlDictionaryString.Key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Key { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -170,6 +185,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.XmlDictionaryString.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="xmlDictionaryString.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>
@@ -199,6 +217,9 @@
       <MemberSignature Language="C#" Value="public string Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Xml.XmlDictionaryString.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string" Usage="System.Xml.XmlDictionaryString.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Serialization.Xml</AssemblyName>

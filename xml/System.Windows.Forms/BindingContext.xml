@@ -1,7 +1,10 @@
-<Type Name="BindingContext" FullName="System.Windows.Forms.BindingContext">
+﻿<Type Name="BindingContext" FullName="System.Windows.Forms.BindingContext">
   <TypeSignature Language="C#" Value="public class BindingContext : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BindingContext extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingContext" />
+  <TypeSignature Language="VB.NET" Value="Public Class BindingContext&#xA;Implements ICollection" />
+  <TypeSignature Language="F#" Value="type BindingContext = class&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingContext : System::Collections::ICollection" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -135,6 +138,8 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       <MemberSignature Language="C#" Value="public BindingContext ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingContext.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; BindingContext();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -164,9 +169,12 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       </Docs>
     </Member>
     <Member MemberName="Add">
-      <MemberSignature Language="C#" Value="protected void Add (object dataSource, System.Windows.Forms.BindingManagerBase listManager);" />
+      <MemberSignature Language="C#" Value="protected internal void Add (object dataSource, System.Windows.Forms.BindingManagerBase listManager);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Add(object dataSource, class System.Windows.Forms.BindingManagerBase listManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingContext.Add(System.Object,System.Windows.Forms.BindingManagerBase)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub Add (dataSource As Object, listManager As BindingManagerBase)" />
+      <MemberSignature Language="F#" Value="member this.Add : obj * System.Windows.Forms.BindingManagerBase -&gt; unit" Usage="bindingContext.Add (dataSource, listManager)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void Add(System::Object ^ dataSource, System::Windows::Forms::BindingManagerBase ^ listManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -190,6 +198,9 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       <MemberSignature Language="C#" Value="protected virtual void AddCore (object dataSource, System.Windows.Forms.BindingManagerBase listManager);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddCore(object dataSource, class System.Windows.Forms.BindingManagerBase listManager) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingContext.AddCore(System.Object,System.Windows.Forms.BindingManagerBase)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddCore (dataSource As Object, listManager As BindingManagerBase)" />
+      <MemberSignature Language="F#" Value="abstract member AddCore : obj * System.Windows.Forms.BindingManagerBase -&gt; unit&#xA;override this.AddCore : obj * System.Windows.Forms.BindingManagerBase -&gt; unit" Usage="bindingContext.AddCore (dataSource, listManager)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddCore(System::Object ^ dataSource, System::Windows::Forms::BindingManagerBase ^ listManager);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -216,9 +227,12 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       </Docs>
     </Member>
     <Member MemberName="Clear">
-      <MemberSignature Language="C#" Value="protected void Clear ();" />
+      <MemberSignature Language="C#" Value="protected internal void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingContext.Clear" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="bindingContext.Clear " />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -237,6 +251,9 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       <MemberSignature Language="C#" Value="protected virtual void ClearCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void ClearCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingContext.ClearCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub ClearCore ()" />
+      <MemberSignature Language="F#" Value="abstract member ClearCore : unit -&gt; unit&#xA;override this.ClearCore : unit -&gt; unit" Usage="bindingContext.ClearCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void ClearCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -255,6 +272,9 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       <MemberSignature Language="C#" Value="public event System.ComponentModel.CollectionChangeEventHandler CollectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.CollectionChangeEventHandler CollectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingContext.CollectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CollectionChanged As CollectionChangeEventHandler " />
+      <MemberSignature Language="F#" Value="member this.CollectionChanged : System.ComponentModel.CollectionChangeEventHandler " Usage="member this.CollectionChanged : System.ComponentModel.CollectionChangeEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::CollectionChangeEventHandler ^ CollectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -284,10 +304,22 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
         <exception cref="T:System.NotImplementedException">Occurs in all cases.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Contains">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.BindingContext" /> contains the specified <see cref="T:System.Windows.Forms.BindingManagerBase" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Contains">
       <MemberSignature Language="C#" Value="public bool Contains (object dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(object dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingContext.Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (dataSource As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : obj -&gt; bool" Usage="bindingContext.Contains dataSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Object ^ dataSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -330,6 +362,9 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       <MemberSignature Language="C#" Value="public bool Contains (object dataSource, string dataMember);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(object dataSource, string dataMember) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingContext.Contains(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (dataSource As Object, dataMember As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : obj * string -&gt; bool" Usage="bindingContext.Contains (dataSource, dataMember)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Object ^ dataSource, System::String ^ dataMember);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -374,6 +409,9 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingContext.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Forms.BindingContext.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -396,10 +434,22 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Forms.BindingManagerBase" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public System.Windows.Forms.BindingManagerBase this[object dataSource] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.BindingManagerBase Item(object)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingContext.Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(dataSource As Object) As BindingManagerBase" />
+      <MemberSignature Language="F#" Value="member this.Item(obj) : System.Windows.Forms.BindingManagerBase" Usage="System.Windows.Forms.BindingContext.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BindingManagerBase ^ default[System::Object ^] { System::Windows::Forms::BindingManagerBase ^ get(System::Object ^ dataSource); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -445,6 +495,9 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       <MemberSignature Language="C#" Value="public System.Windows.Forms.BindingManagerBase this[object dataSource, string dataMember] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.BindingManagerBase Item(object, string)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingContext.Item(System.Object,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(dataSource As Object, dataMember As String) As BindingManagerBase" />
+      <MemberSignature Language="F#" Value="member this.Item(obj * string) : System.Windows.Forms.BindingManagerBase" Usage="System.Windows.Forms.BindingContext.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BindingManagerBase ^ default[System::Object ^, System::String ^] { System::Windows::Forms::BindingManagerBase ^ get(System::Object ^ dataSource, System::String ^ dataMember); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -507,6 +560,9 @@ BindingManagerBase bmOrders = this.BindingContext
       <MemberSignature Language="C#" Value="protected virtual void OnCollectionChanged (System.ComponentModel.CollectionChangeEventArgs ccevent);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCollectionChanged(class System.ComponentModel.CollectionChangeEventArgs ccevent) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingContext.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCollectionChanged (ccevent As CollectionChangeEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit&#xA;override this.OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="bindingContext.OnCollectionChanged ccevent" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCollectionChanged(System::ComponentModel::CollectionChangeEventArgs ^ ccevent);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -537,9 +593,12 @@ BindingManagerBase bmOrders = this.BindingContext
       </Docs>
     </Member>
     <Member MemberName="Remove">
-      <MemberSignature Language="C#" Value="protected void Remove (object dataSource);" />
+      <MemberSignature Language="C#" Value="protected internal void Remove (object dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void Remove(object dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingContext.Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub Remove (dataSource As Object)" />
+      <MemberSignature Language="F#" Value="member this.Remove : obj -&gt; unit" Usage="bindingContext.Remove dataSource" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void Remove(System::Object ^ dataSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -561,6 +620,9 @@ BindingManagerBase bmOrders = this.BindingContext
       <MemberSignature Language="C#" Value="protected virtual void RemoveCore (object dataSource);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void RemoveCore(object dataSource) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingContext.RemoveCore(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub RemoveCore (dataSource As Object)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveCore : obj -&gt; unit&#xA;override this.RemoveCore : obj -&gt; unit" Usage="bindingContext.RemoveCore dataSource" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void RemoveCore(System::Object ^ dataSource);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -582,7 +644,12 @@ BindingManagerBase bmOrders = this.BindingContext
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array ar, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array ar, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingContext.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Sub CopyTo (ar As Array, index As Integer) Implements ICollection.CopyTo" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ ar, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -614,7 +681,13 @@ BindingManagerBase bmOrders = this.BindingContext
       <MemberSignature Language="C#" Value="int System.Collections.ICollection.Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 System.Collections.ICollection.Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingContext.System#Collections#ICollection#Count" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Count As Integer Implements ICollection.Count" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.BindingContext.System.Collections.ICollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="property int System.Collections.ICollection.Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -643,7 +716,13 @@ BindingManagerBase bmOrders = this.BindingContext
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingContext.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.BindingContext.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -669,7 +748,13 @@ BindingManagerBase bmOrders = this.BindingContext
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.BindingContext.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="F#" Usage="System.Windows.Forms.BindingContext.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -687,7 +772,12 @@ BindingManagerBase bmOrders = this.BindingContext
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingContext.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -722,6 +812,8 @@ BindingManagerBase bmOrders = this.BindingContext
       <MemberSignature Language="C#" Value="public static void UpdateBinding (System.Windows.Forms.BindingContext newBindingContext, System.Windows.Forms.Binding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void UpdateBinding(class System.Windows.Forms.BindingContext newBindingContext, class System.Windows.Forms.Binding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.BindingContext.UpdateBinding(System.Windows.Forms.BindingContext,System.Windows.Forms.Binding)" />
+      <MemberSignature Language="F#" Value="static member UpdateBinding : System.Windows.Forms.BindingContext * System.Windows.Forms.Binding -&gt; unit" Usage="System.Windows.Forms.BindingContext.UpdateBinding (newBindingContext, binding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void UpdateBinding(System::Windows::Forms::BindingContext ^ newBindingContext, System::Windows::Forms::Binding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -748,23 +840,5 @@ BindingManagerBase bmOrders = this.BindingContext
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Contains">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.BindingContext" /> contains the specified <see cref="T:System.Windows.Forms.BindingManagerBase" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Forms.BindingManagerBase" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

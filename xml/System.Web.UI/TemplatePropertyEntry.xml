@@ -1,7 +1,10 @@
-<Type Name="TemplatePropertyEntry" FullName="System.Web.UI.TemplatePropertyEntry">
+﻿<Type Name="TemplatePropertyEntry" FullName="System.Web.UI.TemplatePropertyEntry">
   <TypeSignature Language="C#" Value="public class TemplatePropertyEntry : System.Web.UI.BuilderPropertyEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TemplatePropertyEntry extends System.Web.UI.BuilderPropertyEntry" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.TemplatePropertyEntry" />
+  <TypeSignature Language="VB.NET" Value="Public Class TemplatePropertyEntry&#xA;Inherits BuilderPropertyEntry" />
+  <TypeSignature Language="F#" Value="type TemplatePropertyEntry = class&#xA;    inherit BuilderPropertyEntry" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TemplatePropertyEntry : System::Web::UI::BuilderPropertyEntry" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="public bool BindableTemplate { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BindableTemplate" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.TemplatePropertyEntry.BindableTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BindableTemplate As Boolean" />
+      <MemberSignature Language="F#" Value="member this.BindableTemplate : bool" Usage="System.Web.UI.TemplatePropertyEntry.BindableTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BindableTemplate { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

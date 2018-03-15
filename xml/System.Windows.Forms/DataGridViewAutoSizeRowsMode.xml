@@ -1,7 +1,10 @@
-<Type Name="DataGridViewAutoSizeRowsMode" FullName="System.Windows.Forms.DataGridViewAutoSizeRowsMode">
+﻿<Type Name="DataGridViewAutoSizeRowsMode" FullName="System.Windows.Forms.DataGridViewAutoSizeRowsMode">
   <TypeSignature Language="C#" Value="public enum DataGridViewAutoSizeRowsMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewAutoSizeRowsMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewAutoSizeRowsMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewAutoSizeRowsMode" />
+  <TypeSignature Language="F#" Value="type DataGridViewAutoSizeRowsMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewAutoSizeRowsMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="AllCells" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAutoSizeRowsMode AllCells = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells" />
+      <MemberSignature Language="VB.NET" Value="AllCells" />
+      <MemberSignature Language="F#" Value="AllCells = 7" Usage="System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells" />
+      <MemberSignature Language="C++ CLI" Value="AllCells" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -51,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeRowsMode</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>The row heights adjust to fit the contents of all cells in the rows, including header cells.</summary>
       </Docs>
@@ -59,6 +66,9 @@
       <MemberSignature Language="C#" Value="AllCellsExceptHeaders" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAutoSizeRowsMode AllCellsExceptHeaders = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders" />
+      <MemberSignature Language="VB.NET" Value="AllCellsExceptHeaders" />
+      <MemberSignature Language="F#" Value="AllCellsExceptHeaders = 6" Usage="System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders" />
+      <MemberSignature Language="C++ CLI" Value="AllCellsExceptHeaders" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeRowsMode</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>The row heights adjust to fit the contents of all cells in the rows, excluding header cells.</summary>
       </Docs>
@@ -75,6 +86,9 @@
       <MemberSignature Language="C#" Value="AllHeaders" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAutoSizeRowsMode AllHeaders = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders" />
+      <MemberSignature Language="VB.NET" Value="AllHeaders" />
+      <MemberSignature Language="F#" Value="AllHeaders = 5" Usage="System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders" />
+      <MemberSignature Language="C++ CLI" Value="AllHeaders" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeRowsMode</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>The row heights adjust to fit the contents of the row header.</summary>
       </Docs>
@@ -91,6 +106,9 @@
       <MemberSignature Language="C#" Value="DisplayedCells" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAutoSizeRowsMode DisplayedCells = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells" />
+      <MemberSignature Language="VB.NET" Value="DisplayedCells" />
+      <MemberSignature Language="F#" Value="DisplayedCells = 11" Usage="System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells" />
+      <MemberSignature Language="C++ CLI" Value="DisplayedCells" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -99,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeRowsMode</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>The row heights adjust to fit the contents of all cells in rows currently displayed onscreen, including header cells.</summary>
       </Docs>
@@ -107,6 +126,9 @@
       <MemberSignature Language="C#" Value="DisplayedCellsExceptHeaders" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAutoSizeRowsMode DisplayedCellsExceptHeaders = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders" />
+      <MemberSignature Language="VB.NET" Value="DisplayedCellsExceptHeaders" />
+      <MemberSignature Language="F#" Value="DisplayedCellsExceptHeaders = 10" Usage="System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders" />
+      <MemberSignature Language="C++ CLI" Value="DisplayedCellsExceptHeaders" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -115,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeRowsMode</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>The row heights adjust to fit the contents of all cells in rows currently displayed onscreen, excluding header cells.</summary>
       </Docs>
@@ -123,6 +146,9 @@
       <MemberSignature Language="C#" Value="DisplayedHeaders" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAutoSizeRowsMode DisplayedHeaders = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders" />
+      <MemberSignature Language="VB.NET" Value="DisplayedHeaders" />
+      <MemberSignature Language="F#" Value="DisplayedHeaders = 9" Usage="System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedHeaders" />
+      <MemberSignature Language="C++ CLI" Value="DisplayedHeaders" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -131,6 +157,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeRowsMode</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The row heights adjust to fit the contents of the row headers currently displayed onscreen.</summary>
       </Docs>
@@ -139,6 +166,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewAutoSizeRowsMode None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewAutoSizeRowsMode.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DataGridViewAutoSizeRowsMode.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -147,6 +177,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewAutoSizeRowsMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The row heights do not automatically adjust.</summary>
       </Docs>

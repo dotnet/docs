@@ -1,7 +1,10 @@
-<Type Name="FlowDocumentScrollViewer" FullName="System.Windows.Controls.FlowDocumentScrollViewer">
+﻿<Type Name="FlowDocumentScrollViewer" FullName="System.Windows.Controls.FlowDocumentScrollViewer">
   <TypeSignature Language="C#" Value="public class FlowDocumentScrollViewer : System.Windows.Controls.Control, IServiceProvider, System.Windows.Markup.IAddChild" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi FlowDocumentScrollViewer extends System.Windows.Controls.Control implements class System.IServiceProvider, class System.Windows.Markup.IAddChild" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.FlowDocumentScrollViewer" />
+  <TypeSignature Language="VB.NET" Value="Public Class FlowDocumentScrollViewer&#xA;Inherits Control&#xA;Implements IAddChild, IServiceProvider" />
+  <TypeSignature Language="F#" Value="type FlowDocumentScrollViewer = class&#xA;    inherit Control&#xA;    interface IAddChild&#xA;    interface IServiceProvider&#xA;    interface IJournalState" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FlowDocumentScrollViewer : System::Windows::Controls::Control, IServiceProvider, System::Windows::Markup::IAddChild" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -62,6 +65,8 @@
       <MemberSignature Language="C#" Value="public FlowDocumentScrollViewer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FlowDocumentScrollViewer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -77,6 +82,9 @@
       <MemberSignature Language="C#" Value="public void CancelPrint ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CancelPrint() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.CancelPrint" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CancelPrint ()" />
+      <MemberSignature Language="F#" Value="member this.CancelPrint : unit -&gt; unit" Usage="flowDocumentScrollViewer.CancelPrint " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CancelPrint();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -96,6 +104,9 @@
       <MemberSignature Language="C#" Value="public bool CanDecreaseZoom { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanDecreaseZoom" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.CanDecreaseZoom" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanDecreaseZoom As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanDecreaseZoom : bool" Usage="System.Windows.Controls.FlowDocumentScrollViewer.CanDecreaseZoom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanDecreaseZoom { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -136,6 +147,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CanDecreaseZoomProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CanDecreaseZoomProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentScrollViewer.CanDecreaseZoomProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanDecreaseZoomProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CanDecreaseZoomProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentScrollViewer.CanDecreaseZoomProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanDecreaseZoomProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -153,6 +167,9 @@
       <MemberSignature Language="C#" Value="public bool CanIncreaseZoom { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool CanIncreaseZoom" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.CanIncreaseZoom" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CanIncreaseZoom As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CanIncreaseZoom : bool" Usage="System.Windows.Controls.FlowDocumentScrollViewer.CanIncreaseZoom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool CanIncreaseZoom { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -193,6 +210,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty CanIncreaseZoomProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty CanIncreaseZoomProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentScrollViewer.CanIncreaseZoomProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly CanIncreaseZoomProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable CanIncreaseZoomProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentScrollViewer.CanIncreaseZoomProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ CanIncreaseZoomProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -210,6 +230,9 @@
       <MemberSignature Language="C#" Value="public void DecreaseZoom ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DecreaseZoom() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.DecreaseZoom" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DecreaseZoom ()" />
+      <MemberSignature Language="F#" Value="member this.DecreaseZoom : unit -&gt; unit" Usage="flowDocumentScrollViewer.DecreaseZoom " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DecreaseZoom();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -241,6 +264,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.FlowDocument Document { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.FlowDocument Document" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.Document" />
+      <MemberSignature Language="VB.NET" Value="Public Property Document As FlowDocument" />
+      <MemberSignature Language="F#" Value="member this.Document : System.Windows.Documents.FlowDocument with get, set" Usage="System.Windows.Controls.FlowDocumentScrollViewer.Document" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::FlowDocument ^ Document { System::Windows::Documents::FlowDocument ^ get(); void set(System::Windows::Documents::FlowDocument ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -259,6 +285,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty DocumentProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty DocumentProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentScrollViewer.DocumentProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly DocumentProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable DocumentProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentScrollViewer.DocumentProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ DocumentProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -276,6 +305,9 @@
       <MemberSignature Language="C#" Value="public void Find ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Find() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.Find" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Find ()" />
+      <MemberSignature Language="F#" Value="member this.Find : unit -&gt; unit" Usage="flowDocumentScrollViewer.Find " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Find();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -315,6 +347,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.ScrollBarVisibility HorizontalScrollBarVisibility { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.ScrollBarVisibility HorizontalScrollBarVisibility" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.HorizontalScrollBarVisibility" />
+      <MemberSignature Language="VB.NET" Value="Public Property HorizontalScrollBarVisibility As ScrollBarVisibility" />
+      <MemberSignature Language="F#" Value="member this.HorizontalScrollBarVisibility : System.Windows.Controls.ScrollBarVisibility with get, set" Usage="System.Windows.Controls.FlowDocumentScrollViewer.HorizontalScrollBarVisibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ScrollBarVisibility HorizontalScrollBarVisibility { System::Windows::Controls::ScrollBarVisibility get(); void set(System::Windows::Controls::ScrollBarVisibility value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -360,6 +395,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty HorizontalScrollBarVisibilityProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty HorizontalScrollBarVisibilityProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentScrollViewer.HorizontalScrollBarVisibilityProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly HorizontalScrollBarVisibilityProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable HorizontalScrollBarVisibilityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentScrollViewer.HorizontalScrollBarVisibilityProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ HorizontalScrollBarVisibilityProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -377,6 +415,9 @@
       <MemberSignature Language="C#" Value="public void IncreaseZoom ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void IncreaseZoom() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.IncreaseZoom" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IncreaseZoom ()" />
+      <MemberSignature Language="F#" Value="member this.IncreaseZoom : unit -&gt; unit" Usage="flowDocumentScrollViewer.IncreaseZoom " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncreaseZoom();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -408,6 +449,9 @@
       <MemberSignature Language="C#" Value="public bool IsInactiveSelectionHighlightEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInactiveSelectionHighlightEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.IsInactiveSelectionHighlightEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInactiveSelectionHighlightEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInactiveSelectionHighlightEnabled : bool with get, set" Usage="System.Windows.Controls.FlowDocumentScrollViewer.IsInactiveSelectionHighlightEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsInactiveSelectionHighlightEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -443,6 +487,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsInactiveSelectionHighlightEnabledProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsInactiveSelectionHighlightEnabledProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentScrollViewer.IsInactiveSelectionHighlightEnabledProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsInactiveSelectionHighlightEnabledProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsInactiveSelectionHighlightEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentScrollViewer.IsInactiveSelectionHighlightEnabledProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsInactiveSelectionHighlightEnabledProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -460,6 +507,9 @@
       <MemberSignature Language="C#" Value="public bool IsSelectionActive { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSelectionActive" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.IsSelectionActive" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSelectionActive As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSelectionActive : bool" Usage="System.Windows.Controls.FlowDocumentScrollViewer.IsSelectionActive" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelectionActive { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -495,6 +545,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsSelectionActiveProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsSelectionActiveProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentScrollViewer.IsSelectionActiveProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectionActiveProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsSelectionActiveProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentScrollViewer.IsSelectionActiveProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSelectionActiveProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -512,6 +565,9 @@
       <MemberSignature Language="C#" Value="public bool IsSelectionEnabled { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSelectionEnabled" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.IsSelectionEnabled" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsSelectionEnabled As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSelectionEnabled : bool with get, set" Usage="System.Windows.Controls.FlowDocumentScrollViewer.IsSelectionEnabled" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSelectionEnabled { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -557,6 +613,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsSelectionEnabledProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsSelectionEnabledProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentScrollViewer.IsSelectionEnabledProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsSelectionEnabledProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsSelectionEnabledProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentScrollViewer.IsSelectionEnabledProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsSelectionEnabledProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -574,6 +633,9 @@
       <MemberSignature Language="C#" Value="public bool IsToolBarVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsToolBarVisible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.IsToolBarVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsToolBarVisible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsToolBarVisible : bool with get, set" Usage="System.Windows.Controls.FlowDocumentScrollViewer.IsToolBarVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsToolBarVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -626,6 +688,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty IsToolBarVisibleProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty IsToolBarVisibleProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentScrollViewer.IsToolBarVisibleProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly IsToolBarVisibleProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable IsToolBarVisibleProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentScrollViewer.IsToolBarVisibleProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ IsToolBarVisibleProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -640,9 +705,12 @@
       </Docs>
     </Member>
     <Member MemberName="LogicalChildren">
-      <MemberSignature Language="C#" Value="protected override System.Collections.IEnumerator LogicalChildren { get; }" />
+      <MemberSignature Language="C#" Value="protected internal override System.Collections.IEnumerator LogicalChildren { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IEnumerator LogicalChildren" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.LogicalChildren" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overrides ReadOnly Property LogicalChildren As IEnumerator" />
+      <MemberSignature Language="F#" Value="member this.LogicalChildren : System.Collections.IEnumerator" Usage="System.Windows.Controls.FlowDocumentScrollViewer.LogicalChildren" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual property System::Collections::IEnumerator ^ LogicalChildren { System::Collections::IEnumerator ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -661,6 +729,9 @@
       <MemberSignature Language="C#" Value="public double MaxZoom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 MaxZoom" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.MaxZoom" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaxZoom As Double" />
+      <MemberSignature Language="F#" Value="member this.MaxZoom : double with get, set" Usage="System.Windows.Controls.FlowDocumentScrollViewer.MaxZoom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MaxZoom { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -711,6 +782,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MaxZoomProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MaxZoomProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentScrollViewer.MaxZoomProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MaxZoomProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MaxZoomProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentScrollViewer.MaxZoomProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MaxZoomProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -728,6 +802,9 @@
       <MemberSignature Language="C#" Value="public double MinZoom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 MinZoom" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.MinZoom" />
+      <MemberSignature Language="VB.NET" Value="Public Property MinZoom As Double" />
+      <MemberSignature Language="F#" Value="member this.MinZoom : double with get, set" Usage="System.Windows.Controls.FlowDocumentScrollViewer.MinZoom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double MinZoom { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -778,6 +855,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty MinZoomProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty MinZoomProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentScrollViewer.MinZoomProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly MinZoomProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable MinZoomProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentScrollViewer.MinZoomProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ MinZoomProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -795,6 +875,9 @@
       <MemberSignature Language="C#" Value="public override void OnApplyTemplate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void OnApplyTemplate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.OnApplyTemplate" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub OnApplyTemplate ()" />
+      <MemberSignature Language="F#" Value="override this.OnApplyTemplate : unit -&gt; unit" Usage="flowDocumentScrollViewer.OnApplyTemplate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void OnApplyTemplate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -822,6 +905,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnCancelPrintCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnCancelPrintCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.OnCancelPrintCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnCancelPrintCommand ()" />
+      <MemberSignature Language="F#" Value="abstract member OnCancelPrintCommand : unit -&gt; unit&#xA;override this.OnCancelPrintCommand : unit -&gt; unit" Usage="flowDocumentScrollViewer.OnCancelPrintCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnCancelPrintCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -847,6 +933,9 @@
       <MemberSignature Language="C#" Value="protected override void OnContextMenuOpening (System.Windows.Controls.ContextMenuEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnContextMenuOpening(class System.Windows.Controls.ContextMenuEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.OnContextMenuOpening(System.Windows.Controls.ContextMenuEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnContextMenuOpening (e As ContextMenuEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnContextMenuOpening : System.Windows.Controls.ContextMenuEventArgs -&gt; unit" Usage="flowDocumentScrollViewer.OnContextMenuOpening e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnContextMenuOpening(System::Windows::Controls::ContextMenuEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -877,6 +966,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.AutomationPeer OnCreateAutomationPeer() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.OnCreateAutomationPeer" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function OnCreateAutomationPeer () As AutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.OnCreateAutomationPeer : unit -&gt; System.Windows.Automation.Peers.AutomationPeer" Usage="flowDocumentScrollViewer.OnCreateAutomationPeer " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationPeer ^ OnCreateAutomationPeer();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -903,6 +995,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDecreaseZoomCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDecreaseZoomCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.OnDecreaseZoomCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDecreaseZoomCommand ()" />
+      <MemberSignature Language="F#" Value="abstract member OnDecreaseZoomCommand : unit -&gt; unit&#xA;override this.OnDecreaseZoomCommand : unit -&gt; unit" Usage="flowDocumentScrollViewer.OnDecreaseZoomCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDecreaseZoomCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -928,6 +1023,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnFindCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFindCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.OnFindCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFindCommand ()" />
+      <MemberSignature Language="F#" Value="abstract member OnFindCommand : unit -&gt; unit&#xA;override this.OnFindCommand : unit -&gt; unit" Usage="flowDocumentScrollViewer.OnFindCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFindCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -953,6 +1051,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnIncreaseZoomCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnIncreaseZoomCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.OnIncreaseZoomCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnIncreaseZoomCommand ()" />
+      <MemberSignature Language="F#" Value="abstract member OnIncreaseZoomCommand : unit -&gt; unit&#xA;override this.OnIncreaseZoomCommand : unit -&gt; unit" Usage="flowDocumentScrollViewer.OnIncreaseZoomCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnIncreaseZoomCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -978,6 +1079,9 @@
       <MemberSignature Language="C#" Value="protected override void OnKeyDown (System.Windows.Input.KeyEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnKeyDown(class System.Windows.Input.KeyEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.OnKeyDown(System.Windows.Input.KeyEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnKeyDown (e As KeyEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnKeyDown : System.Windows.Input.KeyEventArgs -&gt; unit" Usage="flowDocumentScrollViewer.OnKeyDown e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnKeyDown(System::Windows::Input::KeyEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1014,6 +1118,9 @@
       <MemberSignature Language="C#" Value="protected override void OnMouseWheel (System.Windows.Input.MouseWheelEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnMouseWheel(class System.Windows.Input.MouseWheelEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.OnMouseWheel(System.Windows.Input.MouseWheelEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnMouseWheel (e As MouseWheelEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnMouseWheel : System.Windows.Input.MouseWheelEventArgs -&gt; unit" Usage="flowDocumentScrollViewer.OnMouseWheel e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnMouseWheel(System::Windows::Input::MouseWheelEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1044,6 +1151,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPrintCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPrintCommand() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.OnPrintCommand" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPrintCommand ()" />
+      <MemberSignature Language="F#" Value="abstract member OnPrintCommand : unit -&gt; unit&#xA;override this.OnPrintCommand : unit -&gt; unit" Usage="flowDocumentScrollViewer.OnPrintCommand " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPrintCommand();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1069,6 +1179,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnPrintCompleted ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnPrintCompleted() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.OnPrintCompleted" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnPrintCompleted ()" />
+      <MemberSignature Language="F#" Value="abstract member OnPrintCompleted : unit -&gt; unit&#xA;override this.OnPrintCompleted : unit -&gt; unit" Usage="flowDocumentScrollViewer.OnPrintCompleted " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnPrintCompleted();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1087,6 +1200,9 @@
       <MemberSignature Language="C#" Value="public void Print ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Print() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.Print" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Print ()" />
+      <MemberSignature Language="F#" Value="member this.Print : unit -&gt; unit" Usage="flowDocumentScrollViewer.Print " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Print();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1117,6 +1233,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Documents.TextSelection Selection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Documents.TextSelection Selection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.Selection" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Selection As TextSelection" />
+      <MemberSignature Language="F#" Value="member this.Selection : System.Windows.Documents.TextSelection" Usage="System.Windows.Controls.FlowDocumentScrollViewer.Selection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Documents::TextSelection ^ Selection { System::Windows::Documents::TextSelection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1151,6 +1270,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Brush SelectionBrush { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Brush SelectionBrush" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.SelectionBrush" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionBrush As Brush" />
+      <MemberSignature Language="F#" Value="member this.SelectionBrush : System.Windows.Media.Brush with get, set" Usage="System.Windows.Controls.FlowDocumentScrollViewer.SelectionBrush" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Brush ^ SelectionBrush { System::Windows::Media::Brush ^ get(); void set(System::Windows::Media::Brush ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1183,6 +1305,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SelectionBrushProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SelectionBrushProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentScrollViewer.SelectionBrushProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionBrushProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectionBrushProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentScrollViewer.SelectionBrushProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectionBrushProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1200,6 +1325,9 @@
       <MemberSignature Language="C#" Value="public double SelectionOpacity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 SelectionOpacity" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.SelectionOpacity" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectionOpacity As Double" />
+      <MemberSignature Language="F#" Value="member this.SelectionOpacity : double with get, set" Usage="System.Windows.Controls.FlowDocumentScrollViewer.SelectionOpacity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double SelectionOpacity { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1232,6 +1360,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty SelectionOpacityProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty SelectionOpacityProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentScrollViewer.SelectionOpacityProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SelectionOpacityProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SelectionOpacityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentScrollViewer.SelectionOpacityProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ SelectionOpacityProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1249,6 +1380,8 @@
       <MemberSignature Language="C#" Value="object IServiceProvider.GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.IServiceProvider.GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.System#IServiceProvider#GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Function GetService (serviceType As Type) As Object Implements IServiceProvider.GetService" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.IServiceProvider.GetService(Type ^ serviceType) = IServiceProvider::GetService;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1271,7 +1404,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddChild (object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddChild(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.System#Windows#Markup#IAddChild#AddChild(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddChild (value As Object) Implements IAddChild.AddChild" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddChild(System::Object ^ value) = System::Windows::Markup::IAddChild::AddChild;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddChild(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1292,7 +1430,12 @@
       <MemberSignature Language="C#" Value="void IAddChild.AddText (string text);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Windows.Markup.IAddChild.AddText(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.FlowDocumentScrollViewer.System#Windows#Markup#IAddChild#AddText(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Sub AddText (text As String) Implements IAddChild.AddText" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Windows.Markup.IAddChild.AddText(System::String ^ text) = System::Windows::Markup::IAddChild::AddText;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Markup.IAddChild.AddText(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -1313,6 +1456,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.ScrollBarVisibility VerticalScrollBarVisibility { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.ScrollBarVisibility VerticalScrollBarVisibility" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.VerticalScrollBarVisibility" />
+      <MemberSignature Language="VB.NET" Value="Public Property VerticalScrollBarVisibility As ScrollBarVisibility" />
+      <MemberSignature Language="F#" Value="member this.VerticalScrollBarVisibility : System.Windows.Controls.ScrollBarVisibility with get, set" Usage="System.Windows.Controls.FlowDocumentScrollViewer.VerticalScrollBarVisibility" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::ScrollBarVisibility VerticalScrollBarVisibility { System::Windows::Controls::ScrollBarVisibility get(); void set(System::Windows::Controls::ScrollBarVisibility value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1358,6 +1504,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty VerticalScrollBarVisibilityProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty VerticalScrollBarVisibilityProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentScrollViewer.VerticalScrollBarVisibilityProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly VerticalScrollBarVisibilityProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable VerticalScrollBarVisibilityProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentScrollViewer.VerticalScrollBarVisibilityProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ VerticalScrollBarVisibilityProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1375,6 +1524,9 @@
       <MemberSignature Language="C#" Value="public double Zoom { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Zoom" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.Zoom" />
+      <MemberSignature Language="VB.NET" Value="Public Property Zoom As Double" />
+      <MemberSignature Language="F#" Value="member this.Zoom : double with get, set" Usage="System.Windows.Controls.FlowDocumentScrollViewer.Zoom" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Zoom { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1424,6 +1576,9 @@
       <MemberSignature Language="C#" Value="public double ZoomIncrement { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 ZoomIncrement" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.FlowDocumentScrollViewer.ZoomIncrement" />
+      <MemberSignature Language="VB.NET" Value="Public Property ZoomIncrement As Double" />
+      <MemberSignature Language="F#" Value="member this.ZoomIncrement : double with get, set" Usage="System.Windows.Controls.FlowDocumentScrollViewer.ZoomIncrement" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double ZoomIncrement { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1475,6 +1630,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ZoomIncrementProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ZoomIncrementProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentScrollViewer.ZoomIncrementProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ZoomIncrementProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ZoomIncrementProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentScrollViewer.ZoomIncrementProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ZoomIncrementProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -1492,6 +1650,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty ZoomProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty ZoomProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.FlowDocumentScrollViewer.ZoomProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly ZoomProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable ZoomProperty : System.Windows.DependencyProperty" Usage="System.Windows.Controls.FlowDocumentScrollViewer.ZoomProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ ZoomProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

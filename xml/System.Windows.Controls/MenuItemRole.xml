@@ -1,7 +1,10 @@
-<Type Name="MenuItemRole" FullName="System.Windows.Controls.MenuItemRole">
+﻿<Type Name="MenuItemRole" FullName="System.Windows.Controls.MenuItemRole">
   <TypeSignature Language="C#" Value="public enum MenuItemRole" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MenuItemRole extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.MenuItemRole" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MenuItemRole" />
+  <TypeSignature Language="F#" Value="type MenuItemRole = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class MenuItemRole" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="SubmenuHeader" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.MenuItemRole SubmenuHeader = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItemRole.SubmenuHeader" />
+      <MemberSignature Language="VB.NET" Value="SubmenuHeader" />
+      <MemberSignature Language="F#" Value="SubmenuHeader = 3" Usage="System.Windows.Controls.MenuItemRole.SubmenuHeader" />
+      <MemberSignature Language="C++ CLI" Value="SubmenuHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.MenuItemRole</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Header for a submenu.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="SubmenuItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.MenuItemRole SubmenuItem = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItemRole.SubmenuItem" />
+      <MemberSignature Language="VB.NET" Value="SubmenuItem" />
+      <MemberSignature Language="F#" Value="SubmenuItem = 2" Usage="System.Windows.Controls.MenuItemRole.SubmenuItem" />
+      <MemberSignature Language="C++ CLI" Value="SubmenuItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.MenuItemRole</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Menu item in a submenu that can invoke commands.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="TopLevelHeader" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.MenuItemRole TopLevelHeader = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItemRole.TopLevelHeader" />
+      <MemberSignature Language="VB.NET" Value="TopLevelHeader" />
+      <MemberSignature Language="F#" Value="TopLevelHeader = 1" Usage="System.Windows.Controls.MenuItemRole.TopLevelHeader" />
+      <MemberSignature Language="C++ CLI" Value="TopLevelHeader" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.MenuItemRole</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Header for top-level menus.</summary>
       </Docs>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="TopLevelItem" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Controls.MenuItemRole TopLevelItem = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Controls.MenuItemRole.TopLevelItem" />
+      <MemberSignature Language="VB.NET" Value="TopLevelItem" />
+      <MemberSignature Language="F#" Value="TopLevelItem = 0" Usage="System.Windows.Controls.MenuItemRole.TopLevelItem" />
+      <MemberSignature Language="C++ CLI" Value="TopLevelItem" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +92,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Controls.MenuItemRole</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Top-level menu item that can invoke commands.</summary>
       </Docs>

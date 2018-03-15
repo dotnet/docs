@@ -1,7 +1,10 @@
-<Type Name="ForestTrustCollisionType" FullName="System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType">
+﻿<Type Name="ForestTrustCollisionType" FullName="System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType">
   <TypeSignature Language="C#" Value="public enum ForestTrustCollisionType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ForestTrustCollisionType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ForestTrustCollisionType" />
+  <TypeSignature Language="F#" Value="type ForestTrustCollisionType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ForestTrustCollisionType" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -22,6 +25,9 @@
       <MemberSignature Language="C#" Value="Domain" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType Domain = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType.Domain" />
+      <MemberSignature Language="VB.NET" Value="Domain" />
+      <MemberSignature Language="F#" Value="Domain = 1" Usage="System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType.Domain" />
+      <MemberSignature Language="C++ CLI" Value="Domain" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -31,6 +37,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The collision is between domain cross-references. This collision type indicates a collision with a domain in the same forest.</summary>
       </Docs>
@@ -39,6 +46,9 @@
       <MemberSignature Language="C#" Value="Other" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType Other = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType.Other" />
+      <MemberSignature Language="VB.NET" Value="Other" />
+      <MemberSignature Language="F#" Value="Other = 2" Usage="System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType.Other" />
+      <MemberSignature Language="C++ CLI" Value="Other" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -48,6 +58,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The collision is not a collision between top-level domains or domain cross references.</summary>
       </Docs>
@@ -56,6 +67,9 @@
       <MemberSignature Language="C#" Value="TopLevelName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType TopLevelName = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType.TopLevelName" />
+      <MemberSignature Language="VB.NET" Value="TopLevelName" />
+      <MemberSignature Language="F#" Value="TopLevelName = 0" Usage="System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType.TopLevelName" />
+      <MemberSignature Language="C++ CLI" Value="TopLevelName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ForestTrustCollisionType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The collision is between top-level domains. This collision type indicates a collision with a namespace element of another forest.</summary>
       </Docs>

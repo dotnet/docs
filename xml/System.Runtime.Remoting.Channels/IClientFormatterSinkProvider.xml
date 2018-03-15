@@ -1,7 +1,10 @@
-<Type Name="IClientFormatterSinkProvider" FullName="System.Runtime.Remoting.Channels.IClientFormatterSinkProvider">
+﻿<Type Name="IClientFormatterSinkProvider" FullName="System.Runtime.Remoting.Channels.IClientFormatterSinkProvider">
   <TypeSignature Language="C#" Value="public interface IClientFormatterSinkProvider : System.Runtime.Remoting.Channels.IClientChannelSinkProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IClientFormatterSinkProvider implements class System.Runtime.Remoting.Channels.IClientChannelSinkProvider" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Remoting.Channels.IClientFormatterSinkProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IClientFormatterSinkProvider&#xA;Implements IClientChannelSinkProvider" />
+  <TypeSignature Language="F#" Value="type IClientFormatterSinkProvider = interface&#xA;    interface IClientChannelSinkProvider" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IClientFormatterSinkProvider : System::Runtime::Remoting::Channels::IClientChannelSinkProvider" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

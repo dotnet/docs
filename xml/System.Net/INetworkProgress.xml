@@ -1,7 +1,10 @@
-<Type Name="INetworkProgress" FullName="System.Net.INetworkProgress">
+﻿<Type Name="INetworkProgress" FullName="System.Net.INetworkProgress">
   <TypeSignature Language="C#" Value="public interface INetworkProgress" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract INetworkProgress" />
   <TypeSignature Language="DocId" Value="T:System.Net.INetworkProgress" />
+  <TypeSignature Language="VB.NET" Value="Public Interface INetworkProgress" />
+  <TypeSignature Language="F#" Value="type INetworkProgress = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class INetworkProgress" />
   <AssemblyInfo>
     <AssemblyName>System.Net</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,9 +24,12 @@
   </Docs>
   <Members>
     <Member MemberName="ProgressChanged">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Net.NetworkProgressChangedEventArgs&gt; ProgressChanged;" />
+      <MemberSignature Language="C#" Value="event EventHandler&lt;System.Net.NetworkProgressChangedEventArgs&gt; ProgressChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Net.NetworkProgressChangedEventArgs&gt; ProgressChanged" />
       <MemberSignature Language="DocId" Value="E:System.Net.INetworkProgress.ProgressChanged" />
+      <MemberSignature Language="VB.NET" Value="Event ProgressChanged As EventHandler(Of NetworkProgressChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ProgressChanged : EventHandler&lt;System.Net.NetworkProgressChangedEventArgs&gt; " Usage="member this.ProgressChanged : System.EventHandler&lt;System.Net.NetworkProgressChangedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::NetworkProgressChangedEventArgs ^&gt; ^ ProgressChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -46,9 +52,12 @@
       </Docs>
     </Member>
     <Member MemberName="ProgressCompleted">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Net.NetworkProgressChangedEventArgs&gt; ProgressCompleted;" />
+      <MemberSignature Language="C#" Value="event EventHandler&lt;System.Net.NetworkProgressChangedEventArgs&gt; ProgressCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Net.NetworkProgressChangedEventArgs&gt; ProgressCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Net.INetworkProgress.ProgressCompleted" />
+      <MemberSignature Language="VB.NET" Value="Event ProgressCompleted As EventHandler(Of NetworkProgressChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ProgressCompleted : EventHandler&lt;System.Net.NetworkProgressChangedEventArgs&gt; " Usage="member this.ProgressCompleted : System.EventHandler&lt;System.Net.NetworkProgressChangedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::NetworkProgressChangedEventArgs ^&gt; ^ ProgressCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>
@@ -71,9 +80,12 @@
       </Docs>
     </Member>
     <Member MemberName="ProgressFailed">
-      <MemberSignature Language="C#" Value="public event EventHandler&lt;System.Net.NetworkProgressChangedEventArgs&gt; ProgressFailed;" />
+      <MemberSignature Language="C#" Value="event EventHandler&lt;System.Net.NetworkProgressChangedEventArgs&gt; ProgressFailed;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler`1&lt;class System.Net.NetworkProgressChangedEventArgs&gt; ProgressFailed" />
       <MemberSignature Language="DocId" Value="E:System.Net.INetworkProgress.ProgressFailed" />
+      <MemberSignature Language="VB.NET" Value="Event ProgressFailed As EventHandler(Of NetworkProgressChangedEventArgs) " />
+      <MemberSignature Language="F#" Value="member this.ProgressFailed : EventHandler&lt;System.Net.NetworkProgressChangedEventArgs&gt; " Usage="member this.ProgressFailed : System.EventHandler&lt;System.Net.NetworkProgressChangedEventArgs&gt; " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler&lt;System::Net::NetworkProgressChangedEventArgs ^&gt; ^ ProgressFailed;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net</AssemblyName>

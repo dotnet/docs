@@ -1,7 +1,10 @@
-<Type Name="InvokePatternIdentifiers" FullName="System.Windows.Automation.InvokePatternIdentifiers">
+﻿<Type Name="InvokePatternIdentifiers" FullName="System.Windows.Automation.InvokePatternIdentifiers">
   <TypeSignature Language="C#" Value="public static class InvokePatternIdentifiers" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit InvokePatternIdentifiers extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.InvokePatternIdentifiers" />
+  <TypeSignature Language="VB.NET" Value="Public Class InvokePatternIdentifiers" />
+  <TypeSignature Language="F#" Value="type InvokePatternIdentifiers = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InvokePatternIdentifiers abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationTypes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationEvent InvokedEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationEvent InvokedEvent" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InvokedEvent As AutomationEvent " />
+      <MemberSignature Language="F#" Value=" staticval mutable InvokedEvent : System.Windows.Automation.AutomationEvent" Usage="System.Windows.Automation.InvokePatternIdentifiers.InvokedEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationEvent ^ InvokedEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.Automation.AutomationPattern Pattern;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.Automation.AutomationPattern Pattern" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Automation.InvokePatternIdentifiers.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Pattern As AutomationPattern " />
+      <MemberSignature Language="F#" Value=" staticval mutable Pattern : System.Windows.Automation.AutomationPattern" Usage="System.Windows.Automation.InvokePatternIdentifiers.Pattern" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::Automation::AutomationPattern ^ Pattern;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationTypes</AssemblyName>

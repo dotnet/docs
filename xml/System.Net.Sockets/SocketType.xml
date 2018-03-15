@@ -1,7 +1,10 @@
-<Type Name="SocketType" FullName="System.Net.Sockets.SocketType">
+﻿<Type Name="SocketType" FullName="System.Net.Sockets.SocketType">
   <TypeSignature Language="C#" Value="public enum SocketType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SocketType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SocketType" />
+  <TypeSignature Language="F#" Value="type SocketType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SocketType" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -50,6 +53,9 @@
       <MemberSignature Language="C#" Value="Dgram" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketType Dgram = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Dgram" />
+      <MemberSignature Language="VB.NET" Value="Dgram" />
+      <MemberSignature Language="F#" Value="Dgram = 2" Usage="System.Net.Sockets.SocketType.Dgram" />
+      <MemberSignature Language="C++ CLI" Value="Dgram" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -68,6 +74,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Supports datagrams, which are connectionless, unreliable messages of a fixed (typically small) maximum length. Messages might be lost or duplicated and might arrive out of order. A <see cref="T:System.Net.Sockets.Socket" /> of type <see cref="F:System.Net.Sockets.SocketType.Dgram" /> requires no connection prior to sending and receiving data, and can communicate with multiple peers. <see cref="F:System.Net.Sockets.SocketType.Dgram" /> uses the Datagram Protocol (<see langword="ProtocolType" />.<see cref="F:System.Net.Sockets.ProtocolType.Udp" />) and the <see langword="AddressFamily" />.<see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> address family.</summary>
       </Docs>
@@ -76,6 +83,9 @@
       <MemberSignature Language="C#" Value="Raw" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketType Raw = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Raw" />
+      <MemberSignature Language="VB.NET" Value="Raw" />
+      <MemberSignature Language="F#" Value="Raw = 3" Usage="System.Net.Sockets.SocketType.Raw" />
+      <MemberSignature Language="C++ CLI" Value="Raw" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -94,6 +104,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Supports access to the underlying transport protocol. Using <see cref="F:System.Net.Sockets.SocketType.Raw" />, you can communicate using protocols like Internet Control Message Protocol (<see langword="ProtocolType" />.<see cref="F:System.Net.Sockets.ProtocolType.Icmp" />) and Internet Group Management Protocol (<see langword="ProtocolType" />.<see cref="F:System.Net.Sockets.ProtocolType.Igmp" />). Your application must provide a complete IP header when sending. Received datagrams return with the IP header and options intact.</summary>
       </Docs>
@@ -102,6 +113,9 @@
       <MemberSignature Language="C#" Value="Rdm" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketType Rdm = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Rdm" />
+      <MemberSignature Language="VB.NET" Value="Rdm" />
+      <MemberSignature Language="F#" Value="Rdm = 4" Usage="System.Net.Sockets.SocketType.Rdm" />
+      <MemberSignature Language="C++ CLI" Value="Rdm" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -120,6 +134,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketType</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Supports connectionless, message-oriented, reliably delivered messages, and preserves message boundaries in data. Rdm (Reliably Delivered Messages) messages arrive unduplicated and in order. Furthermore, the sender is notified if messages are lost. If you initialize a <see cref="T:System.Net.Sockets.Socket" /> using <see cref="F:System.Net.Sockets.SocketType.Rdm" />, you do not require a remote host connection before sending and receiving data. With <see cref="F:System.Net.Sockets.SocketType.Rdm" />, you can communicate with multiple peers.</summary>
       </Docs>
@@ -128,6 +143,9 @@
       <MemberSignature Language="C#" Value="Seqpacket" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketType Seqpacket = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Seqpacket" />
+      <MemberSignature Language="VB.NET" Value="Seqpacket" />
+      <MemberSignature Language="F#" Value="Seqpacket = 5" Usage="System.Net.Sockets.SocketType.Seqpacket" />
+      <MemberSignature Language="C++ CLI" Value="Seqpacket" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -146,6 +164,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketType</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>Provides connection-oriented and reliable two-way transfer of ordered byte streams across a network. <see cref="F:System.Net.Sockets.SocketType.Seqpacket" /> does not duplicate data, and it preserves boundaries within the data stream. A <see cref="T:System.Net.Sockets.Socket" /> of type <see cref="F:System.Net.Sockets.SocketType.Seqpacket" /> communicates with a single peer and requires a remote host connection before communication can begin.</summary>
       </Docs>
@@ -154,6 +173,9 @@
       <MemberSignature Language="C#" Value="Stream" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketType Stream = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Stream" />
+      <MemberSignature Language="VB.NET" Value="Stream" />
+      <MemberSignature Language="F#" Value="Stream = 1" Usage="System.Net.Sockets.SocketType.Stream" />
+      <MemberSignature Language="C++ CLI" Value="Stream" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -172,6 +194,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Supports reliable, two-way, connection-based byte streams without the duplication of data and without preservation of boundaries. A <see cref="T:System.Net.Sockets.Socket" /> of this type communicates with a single peer and requires a remote host connection before communication can begin. <see cref="F:System.Net.Sockets.SocketType.Stream" /> uses the Transmission Control Protocol (<see langword="ProtocolType" />.<see cref="F:System.Net.Sockets.ProtocolType.Tcp" />) and the <see langword="AddressFamily" />.<see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> address family.</summary>
       </Docs>
@@ -180,6 +203,9 @@
       <MemberSignature Language="C#" Value="Unknown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Net.Sockets.SocketType Unknown = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketType.Unknown" />
+      <MemberSignature Language="VB.NET" Value="Unknown" />
+      <MemberSignature Language="F#" Value="Unknown = -1" Usage="System.Net.Sockets.SocketType.Unknown" />
+      <MemberSignature Language="C++ CLI" Value="Unknown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -198,6 +224,7 @@
       <ReturnValue>
         <ReturnType>System.Net.Sockets.SocketType</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>Specifies an unknown <see cref="Socket" /> type.</summary>
       </Docs>

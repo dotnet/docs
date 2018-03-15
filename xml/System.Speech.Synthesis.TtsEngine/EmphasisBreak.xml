@@ -1,7 +1,10 @@
-<Type Name="EmphasisBreak" FullName="System.Speech.Synthesis.TtsEngine.EmphasisBreak">
+﻿<Type Name="EmphasisBreak" FullName="System.Speech.Synthesis.TtsEngine.EmphasisBreak">
   <TypeSignature Language="C#" Value="public enum EmphasisBreak" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EmphasisBreak extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Speech.Synthesis.TtsEngine.EmphasisBreak" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EmphasisBreak" />
+  <TypeSignature Language="F#" Value="type EmphasisBreak = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EmphasisBreak" />
   <AssemblyInfo>
     <AssemblyName>System.Speech</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="Default" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EmphasisBreak Default = int32(-7)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisBreak.Default" />
+      <MemberSignature Language="VB.NET" Value="Default" />
+      <MemberSignature Language="F#" Value="Default = -7" Usage="System.Speech.Synthesis.TtsEngine.EmphasisBreak.Default" />
+      <MemberSignature Language="C++ CLI" Value="Default" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -39,6 +45,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.EmphasisBreak</ReturnType>
       </ReturnValue>
+      <MemberValue>-7</MemberValue>
       <Docs>
         <summary>Normal word break.</summary>
       </Docs>
@@ -47,6 +54,9 @@
       <MemberSignature Language="C#" Value="ExtraStrong" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EmphasisBreak ExtraStrong = int32(-6)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisBreak.ExtraStrong" />
+      <MemberSignature Language="VB.NET" Value="ExtraStrong" />
+      <MemberSignature Language="F#" Value="ExtraStrong = -6" Usage="System.Speech.Synthesis.TtsEngine.EmphasisBreak.ExtraStrong" />
+      <MemberSignature Language="C++ CLI" Value="ExtraStrong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -55,6 +65,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.EmphasisBreak</ReturnType>
       </ReturnValue>
+      <MemberValue>-6</MemberValue>
       <Docs>
         <summary>Longest word break.</summary>
       </Docs>
@@ -63,6 +74,9 @@
       <MemberSignature Language="C#" Value="ExtraWeak" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EmphasisBreak ExtraWeak = int32(-2)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisBreak.ExtraWeak" />
+      <MemberSignature Language="VB.NET" Value="ExtraWeak" />
+      <MemberSignature Language="F#" Value="ExtraWeak = -2" Usage="System.Speech.Synthesis.TtsEngine.EmphasisBreak.ExtraWeak" />
+      <MemberSignature Language="C++ CLI" Value="ExtraWeak" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -71,6 +85,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.EmphasisBreak</ReturnType>
       </ReturnValue>
+      <MemberValue>-2</MemberValue>
       <Docs>
         <summary>Very small word break.</summary>
       </Docs>
@@ -79,6 +94,9 @@
       <MemberSignature Language="C#" Value="Medium" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EmphasisBreak Medium = int32(-4)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisBreak.Medium" />
+      <MemberSignature Language="VB.NET" Value="Medium" />
+      <MemberSignature Language="F#" Value="Medium = -4" Usage="System.Speech.Synthesis.TtsEngine.EmphasisBreak.Medium" />
+      <MemberSignature Language="C++ CLI" Value="Medium" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -87,6 +105,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.EmphasisBreak</ReturnType>
       </ReturnValue>
+      <MemberValue>-4</MemberValue>
       <Docs>
         <summary>Moderate word break.</summary>
       </Docs>
@@ -95,6 +114,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EmphasisBreak None = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisBreak.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = -1" Usage="System.Speech.Synthesis.TtsEngine.EmphasisBreak.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -103,6 +125,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.EmphasisBreak</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>No word break.</summary>
       </Docs>
@@ -111,6 +134,9 @@
       <MemberSignature Language="C#" Value="Strong" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EmphasisBreak Strong = int32(-5)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisBreak.Strong" />
+      <MemberSignature Language="VB.NET" Value="Strong" />
+      <MemberSignature Language="F#" Value="Strong = -5" Usage="System.Speech.Synthesis.TtsEngine.EmphasisBreak.Strong" />
+      <MemberSignature Language="C++ CLI" Value="Strong" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -119,6 +145,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.EmphasisBreak</ReturnType>
       </ReturnValue>
+      <MemberValue>-5</MemberValue>
       <Docs>
         <summary>Long word break.</summary>
       </Docs>
@@ -127,6 +154,9 @@
       <MemberSignature Language="C#" Value="Weak" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Speech.Synthesis.TtsEngine.EmphasisBreak Weak = int32(-3)" />
       <MemberSignature Language="DocId" Value="F:System.Speech.Synthesis.TtsEngine.EmphasisBreak.Weak" />
+      <MemberSignature Language="VB.NET" Value="Weak" />
+      <MemberSignature Language="F#" Value="Weak = -3" Usage="System.Speech.Synthesis.TtsEngine.EmphasisBreak.Weak" />
+      <MemberSignature Language="C++ CLI" Value="Weak" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Speech</AssemblyName>
@@ -135,6 +165,7 @@
       <ReturnValue>
         <ReturnType>System.Speech.Synthesis.TtsEngine.EmphasisBreak</ReturnType>
       </ReturnValue>
+      <MemberValue>-3</MemberValue>
       <Docs>
         <summary>Small word break.</summary>
       </Docs>

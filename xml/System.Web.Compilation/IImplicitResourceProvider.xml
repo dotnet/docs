@@ -1,7 +1,10 @@
-<Type Name="IImplicitResourceProvider" FullName="System.Web.Compilation.IImplicitResourceProvider">
+﻿<Type Name="IImplicitResourceProvider" FullName="System.Web.Compilation.IImplicitResourceProvider">
   <TypeSignature Language="C#" Value="public interface IImplicitResourceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IImplicitResourceProvider" />
   <TypeSignature Language="DocId" Value="T:System.Web.Compilation.IImplicitResourceProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IImplicitResourceProvider" />
+  <TypeSignature Language="F#" Value="type IImplicitResourceProvider = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IImplicitResourceProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection GetImplicitResourceKeys (string keyPrefix);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GetImplicitResourceKeys(string keyPrefix) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.IImplicitResourceProvider.GetImplicitResourceKeys(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetImplicitResourceKeys (keyPrefix As String) As ICollection" />
+      <MemberSignature Language="F#" Value="abstract member GetImplicitResourceKeys : string -&gt; System.Collections.ICollection" Usage="iImplicitResourceProvider.GetImplicitResourceKeys keyPrefix" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GetImplicitResourceKeys(System::String ^ keyPrefix);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +68,9 @@
       <MemberSignature Language="C#" Value="public object GetObject (System.Web.Compilation.ImplicitResourceKey key, System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetObject(class System.Web.Compilation.ImplicitResourceKey key, class System.Globalization.CultureInfo culture) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Compilation.IImplicitResourceProvider.GetObject(System.Web.Compilation.ImplicitResourceKey,System.Globalization.CultureInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetObject (key As ImplicitResourceKey, culture As CultureInfo) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetObject : System.Web.Compilation.ImplicitResourceKey * System.Globalization.CultureInfo -&gt; obj" Usage="iImplicitResourceProvider.GetObject (key, culture)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetObject(System::Web::Compilation::ImplicitResourceKey ^ key, System::Globalization::CultureInfo ^ culture);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

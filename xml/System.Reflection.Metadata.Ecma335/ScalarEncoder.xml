@@ -1,7 +1,10 @@
-<Type Name="ScalarEncoder" FullName="System.Reflection.Metadata.Ecma335.ScalarEncoder">
+﻿<Type Name="ScalarEncoder" FullName="System.Reflection.Metadata.Ecma335.ScalarEncoder">
   <TypeSignature Language="C#" Value="public struct ScalarEncoder" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit ScalarEncoder extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Reflection.Metadata.Ecma335.ScalarEncoder" />
+  <TypeSignature Language="VB.NET" Value="Public Structure ScalarEncoder" />
+  <TypeSignature Language="F#" Value="type ScalarEncoder = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class ScalarEncoder" />
   <AssemblyInfo>
     <AssemblyName>System.Reflection.Metadata</AssemblyName>
     <AssemblyVersion>1.4.1.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public ScalarEncoder (System.Reflection.Metadata.BlobBuilder builder);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Reflection.Metadata.BlobBuilder builder) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ScalarEncoder.#ctor(System.Reflection.Metadata.BlobBuilder)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (builder As BlobBuilder)" />
+      <MemberSignature Language="F#" Value="new System.Reflection.Metadata.Ecma335.ScalarEncoder : System.Reflection.Metadata.BlobBuilder -&gt; System.Reflection.Metadata.Ecma335.ScalarEncoder" Usage="new System.Reflection.Metadata.Ecma335.ScalarEncoder builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ScalarEncoder(System::Reflection::Metadata::BlobBuilder ^ builder);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -39,6 +45,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Metadata.BlobBuilder Builder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Metadata.BlobBuilder Builder" />
       <MemberSignature Language="DocId" Value="P:System.Reflection.Metadata.Ecma335.ScalarEncoder.Builder" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Builder As BlobBuilder" />
+      <MemberSignature Language="F#" Value="member this.Builder : System.Reflection.Metadata.BlobBuilder" Usage="System.Reflection.Metadata.Ecma335.ScalarEncoder.Builder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Metadata::BlobBuilder ^ Builder { System::Reflection::Metadata::BlobBuilder ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -58,6 +67,9 @@
       <MemberSignature Language="C#" Value="public void Constant (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Constant(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ScalarEncoder.Constant(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Constant (value As Object)" />
+      <MemberSignature Language="F#" Value="member this.Constant : obj -&gt; unit" Usage="scalarEncoder.Constant value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Constant(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -80,6 +92,9 @@
       <MemberSignature Language="C#" Value="public void NullArray ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void NullArray() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ScalarEncoder.NullArray" />
+      <MemberSignature Language="VB.NET" Value="Public Sub NullArray ()" />
+      <MemberSignature Language="F#" Value="member this.NullArray : unit -&gt; unit" Usage="scalarEncoder.NullArray " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void NullArray();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>
@@ -99,6 +114,9 @@
       <MemberSignature Language="C#" Value="public void SystemType (string serializedTypeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SystemType(string serializedTypeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Reflection.Metadata.Ecma335.ScalarEncoder.SystemType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SystemType (serializedTypeName As String)" />
+      <MemberSignature Language="F#" Value="member this.SystemType : string -&gt; unit" Usage="scalarEncoder.SystemType serializedTypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SystemType(System::String ^ serializedTypeName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Reflection.Metadata</AssemblyName>

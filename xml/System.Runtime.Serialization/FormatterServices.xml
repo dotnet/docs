@@ -1,7 +1,10 @@
-<Type Name="FormatterServices" FullName="System.Runtime.Serialization.FormatterServices">
+﻿<Type Name="FormatterServices" FullName="System.Runtime.Serialization.FormatterServices">
   <TypeSignature Language="C#" Value="public static class FormatterServices" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed FormatterServices extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.Serialization.FormatterServices" />
+  <TypeSignature Language="VB.NET" Value="Public Class FormatterServices" />
+  <TypeSignature Language="F#" Value="type FormatterServices = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FormatterServices abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="public static void CheckTypeSecurity (Type t, System.Runtime.Serialization.Formatters.TypeFilterLevel securityLevel);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void CheckTypeSecurity(class System.Type t, valuetype System.Runtime.Serialization.Formatters.TypeFilterLevel securityLevel) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.CheckTypeSecurity(System.Type,System.Runtime.Serialization.Formatters.TypeFilterLevel)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CheckTypeSecurity (t As Type, securityLevel As TypeFilterLevel)" />
+      <MemberSignature Language="F#" Value="static member CheckTypeSecurity : Type * System.Runtime.Serialization.Formatters.TypeFilterLevel -&gt; unit" Usage="System.Runtime.Serialization.FormatterServices.CheckTypeSecurity (t, securityLevel)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void CheckTypeSecurity(Type ^ t, System::Runtime::Serialization::Formatters::TypeFilterLevel securityLevel);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -84,6 +90,9 @@
       <MemberSignature Language="C#" Value="public static object[] GetObjectData (object obj, System.Reflection.MemberInfo[] members);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object[] GetObjectData(object obj, class System.Reflection.MemberInfo[] members) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.GetObjectData(System.Object,System.Reflection.MemberInfo[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetObjectData (obj As Object, members As MemberInfo()) As Object()" />
+      <MemberSignature Language="F#" Value="static member GetObjectData : obj * System.Reflection.MemberInfo[] -&gt; obj[]" Usage="System.Runtime.Serialization.FormatterServices.GetObjectData (obj, members)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Object ^&gt; ^ GetObjectData(System::Object ^ obj, cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ members);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -142,6 +151,8 @@
       <MemberSignature Language="C#" Value="public static object GetSafeUninitializedObject (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetSafeUninitializedObject(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.GetSafeUninitializedObject(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetSafeUninitializedObject : Type -&gt; obj" Usage="System.Runtime.Serialization.FormatterServices.GetSafeUninitializedObject type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetSafeUninitializedObject(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,10 +198,22 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">For providing serialization services. Associated enumerations: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />, <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSerializableMembers">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns all the serializable members for a particular class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetSerializableMembers">
       <MemberSignature Language="C#" Value="public static System.Reflection.MemberInfo[] GetSerializableMembers (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MemberInfo[] GetSerializableMembers(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.GetSerializableMembers(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetSerializableMembers : Type -&gt; System.Reflection.MemberInfo[]" Usage="System.Runtime.Serialization.FormatterServices.GetSerializableMembers type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetSerializableMembers(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -247,6 +270,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MemberInfo[] GetSerializableMembers (Type type, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Reflection.MemberInfo[] GetSerializableMembers(class System.Type type, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.GetSerializableMembers(System.Type,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="F#" Value="static member GetSerializableMembers : Type * System.Runtime.Serialization.StreamingContext -&gt; System.Reflection.MemberInfo[]" Usage="System.Runtime.Serialization.FormatterServices.GetSerializableMembers (type, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ GetSerializableMembers(Type ^ type, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -299,6 +324,9 @@
       <MemberSignature Language="C#" Value="public static System.Runtime.Serialization.ISerializationSurrogate GetSurrogateForCyclicalReference (System.Runtime.Serialization.ISerializationSurrogate innerSurrogate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Runtime.Serialization.ISerializationSurrogate GetSurrogateForCyclicalReference(class System.Runtime.Serialization.ISerializationSurrogate innerSurrogate) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.GetSurrogateForCyclicalReference(System.Runtime.Serialization.ISerializationSurrogate)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSurrogateForCyclicalReference (innerSurrogate As ISerializationSurrogate) As ISerializationSurrogate" />
+      <MemberSignature Language="F#" Value="static member GetSurrogateForCyclicalReference : System.Runtime.Serialization.ISerializationSurrogate -&gt; System.Runtime.Serialization.ISerializationSurrogate" Usage="System.Runtime.Serialization.FormatterServices.GetSurrogateForCyclicalReference innerSurrogate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Runtime::Serialization::ISerializationSurrogate ^ GetSurrogateForCyclicalReference(System::Runtime::Serialization::ISerializationSurrogate ^ innerSurrogate);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -338,6 +366,9 @@
       <MemberSignature Language="C#" Value="public static Type GetTypeFromAssembly (System.Reflection.Assembly assem, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Type GetTypeFromAssembly(class System.Reflection.Assembly assem, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.GetTypeFromAssembly(System.Reflection.Assembly,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTypeFromAssembly (assem As Assembly, name As String) As Type" />
+      <MemberSignature Language="F#" Value="static member GetTypeFromAssembly : System.Reflection.Assembly * string -&gt; Type" Usage="System.Runtime.Serialization.FormatterServices.GetTypeFromAssembly (assem, name)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Type ^ GetTypeFromAssembly(System::Reflection::Assembly ^ assem, System::String ^ name);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -381,6 +412,8 @@
       <MemberSignature Language="C#" Value="public static object GetUninitializedObject (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object GetUninitializedObject(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.GetUninitializedObject(System.Type)" />
+      <MemberSignature Language="F#" Value="static member GetUninitializedObject : Type -&gt; obj" Usage="System.Runtime.Serialization.FormatterServices.GetUninitializedObject type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ GetUninitializedObject(Type ^ type);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -430,6 +463,9 @@
       <MemberSignature Language="C#" Value="public static object PopulateObjectMembers (object obj, System.Reflection.MemberInfo[] members, object[] data);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig object PopulateObjectMembers(object obj, class System.Reflection.MemberInfo[] members, object[] data) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.Serialization.FormatterServices.PopulateObjectMembers(System.Object,System.Reflection.MemberInfo[],System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PopulateObjectMembers (obj As Object, members As MemberInfo(), data As Object()) As Object" />
+      <MemberSignature Language="F#" Value="static member PopulateObjectMembers : obj * System.Reflection.MemberInfo[] * obj[] -&gt; obj" Usage="System.Runtime.Serialization.FormatterServices.PopulateObjectMembers (obj, members, data)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Object ^ PopulateObjectMembers(System::Object ^ obj, cli::array &lt;System::Reflection::MemberInfo ^&gt; ^ members, cli::array &lt;System::Object ^&gt; ^ data);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -488,15 +524,5 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">For providing serialization services. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter" />, <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />.</permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetSerializableMembers">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns all the serializable members for a particular class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

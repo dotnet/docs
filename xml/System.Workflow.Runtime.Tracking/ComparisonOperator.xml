@@ -1,7 +1,10 @@
-<Type Name="ComparisonOperator" FullName="System.Workflow.Runtime.Tracking.ComparisonOperator">
+﻿<Type Name="ComparisonOperator" FullName="System.Workflow.Runtime.Tracking.ComparisonOperator">
   <TypeSignature Language="C#" Value="public enum ComparisonOperator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ComparisonOperator extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Tracking.ComparisonOperator" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ComparisonOperator" />
+  <TypeSignature Language="F#" Value="type ComparisonOperator = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ComparisonOperator" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="Equals" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Runtime.Tracking.ComparisonOperator Equals = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.Tracking.ComparisonOperator.Equals" />
+      <MemberSignature Language="VB.NET" Value="Equals" />
+      <MemberSignature Language="F#" Value="Equals = 0" Usage="System.Workflow.Runtime.Tracking.ComparisonOperator.Equals" />
+      <MemberSignature Language="C++ CLI" Value="Equals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -42,6 +48,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.ComparisonOperator</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Test for operand equality.</summary>
       </Docs>
@@ -50,6 +57,9 @@
       <MemberSignature Language="C#" Value="NotEquals" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Runtime.Tracking.ComparisonOperator NotEquals = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.Tracking.ComparisonOperator.NotEquals" />
+      <MemberSignature Language="VB.NET" Value="NotEquals" />
+      <MemberSignature Language="F#" Value="NotEquals = 1" Usage="System.Workflow.Runtime.Tracking.ComparisonOperator.NotEquals" />
+      <MemberSignature Language="C++ CLI" Value="NotEquals" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -58,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Tracking.ComparisonOperator</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Test for operand inequality.</summary>
       </Docs>

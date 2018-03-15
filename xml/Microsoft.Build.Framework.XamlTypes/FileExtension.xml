@@ -1,7 +1,10 @@
-<Type Name="FileExtension" FullName="Microsoft.Build.Framework.XamlTypes.FileExtension">
+﻿<Type Name="FileExtension" FullName="Microsoft.Build.Framework.XamlTypes.FileExtension">
   <TypeSignature Language="C#" Value="public sealed class FileExtension : Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FileExtension extends System.Object implements class Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.XamlTypes.FileExtension" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FileExtension&#xA;Implements IProjectSchemaNode" />
+  <TypeSignature Language="F#" Value="type FileExtension = class&#xA;    interface IProjectSchemaNode" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FileExtension sealed : Microsoft::Build::Framework::XamlTypes::IProjectSchemaNode" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -23,6 +26,8 @@
       <MemberSignature Language="C#" Value="public FileExtension ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.FileExtension.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; FileExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -38,6 +43,9 @@
       <MemberSignature Language="C#" Value="public string ContentType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ContentType" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.FileExtension.ContentType" />
+      <MemberSignature Language="VB.NET" Value="Public Property ContentType As String" />
+      <MemberSignature Language="F#" Value="member this.ContentType : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.FileExtension.ContentType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ ContentType { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -56,7 +64,12 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;object&gt; GetSchemaObjects (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;object&gt; GetSchemaObjects(class System.Type type) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.FileExtension.GetSchemaObjects(System.Type)" />
+      <MemberSignature Language="F#" Value="abstract member GetSchemaObjects : Type -&gt; seq&lt;obj&gt;&#xA;override this.GetSchemaObjects : Type -&gt; seq&lt;obj&gt;" Usage="fileExtension.GetSchemaObjects type" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;System::Object ^&gt; ^ GetSchemaObjects(Type ^ type);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode.GetSchemaObjects(System.Type)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,7 +96,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Type&gt; GetSchemaObjectTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; GetSchemaObjectTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.XamlTypes.FileExtension.GetSchemaObjectTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Iterator Overridable NotOverridable Function GetSchemaObjectTypes () As IEnumerable(Of Type)" />
+      <MemberSignature Language="F#" Value="abstract member GetSchemaObjectTypes : unit -&gt; seq&lt;Type&gt;&#xA;override this.GetSchemaObjectTypes : unit -&gt; seq&lt;Type&gt;" Usage="fileExtension.GetSchemaObjectTypes " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ GetSchemaObjectTypes();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:Microsoft.Build.Framework.XamlTypes.IProjectSchemaNode.GetSchemaObjectTypes</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -107,6 +126,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.XamlTypes.FileExtension.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="Microsoft.Build.Framework.XamlTypes.FileExtension.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

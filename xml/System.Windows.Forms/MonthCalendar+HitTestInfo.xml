@@ -1,7 +1,10 @@
-<Type Name="MonthCalendar+HitTestInfo" FullName="System.Windows.Forms.MonthCalendar+HitTestInfo">
+﻿<Type Name="MonthCalendar+HitTestInfo" FullName="System.Windows.Forms.MonthCalendar+HitTestInfo">
   <TypeSignature Language="C#" Value="public sealed class MonthCalendar.HitTestInfo" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit MonthCalendar/HitTestInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MonthCalendar.HitTestInfo" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MonthCalendar.HitTestInfo" />
+  <TypeSignature Language="F#" Value="type MonthCalendar.HitTestInfo = class" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class MonthCalendar::HitTestInfo sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.MonthCalendar.HitArea HitArea { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.MonthCalendar/HitArea HitArea" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.HitTestInfo.HitArea" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HitArea As MonthCalendar.HitArea" />
+      <MemberSignature Language="F#" Value="member this.HitArea : System.Windows.Forms.MonthCalendar.HitArea" Usage="System.Windows.Forms.MonthCalendar.HitTestInfo.HitArea" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::MonthCalendar::HitArea HitArea { System::Windows::Forms::MonthCalendar::HitArea get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -50,6 +56,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Point Point { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Point Point" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.HitTestInfo.Point" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Point As Point" />
+      <MemberSignature Language="F#" Value="member this.Point : System.Drawing.Point" Usage="System.Windows.Forms.MonthCalendar.HitTestInfo.Point" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Point Point { System::Drawing::Point get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -69,6 +78,9 @@
       <MemberSignature Language="C#" Value="public DateTime Time { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime Time" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.MonthCalendar.HitTestInfo.Time" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Time As DateTime" />
+      <MemberSignature Language="F#" Value="member this.Time : DateTime" Usage="System.Windows.Forms.MonthCalendar.HitTestInfo.Time" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime Time { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

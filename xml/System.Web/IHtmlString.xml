@@ -1,7 +1,10 @@
-<Type Name="IHtmlString" FullName="System.Web.IHtmlString">
+﻿<Type Name="IHtmlString" FullName="System.Web.IHtmlString">
   <TypeSignature Language="C#" Value="public interface IHtmlString" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IHtmlString" />
   <TypeSignature Language="DocId" Value="T:System.Web.IHtmlString" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IHtmlString" />
+  <TypeSignature Language="F#" Value="type IHtmlString = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IHtmlString" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,6 +19,9 @@
       <MemberSignature Language="C#" Value="public string ToHtmlString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string ToHtmlString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.IHtmlString.ToHtmlString" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToHtmlString () As String" />
+      <MemberSignature Language="F#" Value="abstract member ToHtmlString : unit -&gt; string" Usage="iHtmlString.ToHtmlString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ ToHtmlString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

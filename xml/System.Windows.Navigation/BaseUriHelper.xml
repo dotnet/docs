@@ -1,7 +1,10 @@
-<Type Name="BaseUriHelper" FullName="System.Windows.Navigation.BaseUriHelper">
+﻿<Type Name="BaseUriHelper" FullName="System.Windows.Navigation.BaseUriHelper">
   <TypeSignature Language="C#" Value="public static class BaseUriHelper" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed BaseUriHelper extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Navigation.BaseUriHelper" />
+  <TypeSignature Language="VB.NET" Value="Public Class BaseUriHelper" />
+  <TypeSignature Language="F#" Value="type BaseUriHelper = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BaseUriHelper abstract sealed" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty BaseUriProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty BaseUriProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Navigation.BaseUriHelper.BaseUriProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly BaseUriProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable BaseUriProperty : System.Windows.DependencyProperty" Usage="System.Windows.Navigation.BaseUriHelper.BaseUriProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ BaseUriProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public static Uri GetBaseUri (System.Windows.DependencyObject element);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Uri GetBaseUri(class System.Windows.DependencyObject element) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Navigation.BaseUriHelper.GetBaseUri(System.Windows.DependencyObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetBaseUri (element As DependencyObject) As Uri" />
+      <MemberSignature Language="F#" Value="static member GetBaseUri : System.Windows.DependencyObject -&gt; Uri" Usage="System.Windows.Navigation.BaseUriHelper.GetBaseUri element" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static Uri ^ GetBaseUri(System::Windows::DependencyObject ^ element);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

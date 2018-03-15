@@ -1,7 +1,10 @@
-<Type Name="ICheckBoxControl" FullName="System.Web.UI.ICheckBoxControl">
+﻿<Type Name="ICheckBoxControl" FullName="System.Web.UI.ICheckBoxControl">
   <TypeSignature Language="C#" Value="public interface ICheckBoxControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICheckBoxControl" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.ICheckBoxControl" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICheckBoxControl" />
+  <TypeSignature Language="F#" Value="type ICheckBoxControl = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICheckBoxControl" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="public bool Checked { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Checked" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.ICheckBoxControl.Checked" />
+      <MemberSignature Language="VB.NET" Value="Public Property Checked As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Checked : bool with get, set" Usage="System.Web.UI.ICheckBoxControl.Checked" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Checked { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,9 +68,12 @@
       </Docs>
     </Member>
     <Member MemberName="CheckedChanged">
-      <MemberSignature Language="C#" Value="public event EventHandler CheckedChanged;" />
+      <MemberSignature Language="C#" Value="event EventHandler CheckedChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler CheckedChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.ICheckBoxControl.CheckedChanged" />
+      <MemberSignature Language="VB.NET" Value="Event CheckedChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.CheckedChanged : EventHandler " Usage="member this.CheckedChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ CheckedChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="ActiveDirectorySiteCollection" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection">
+﻿<Type Name="ActiveDirectorySiteCollection" FullName="System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection">
   <TypeSignature Language="C#" Value="public class ActiveDirectorySiteCollection : System.Collections.CollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ActiveDirectorySiteCollection extends System.Collections.CollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ActiveDirectorySiteCollection&#xA;Inherits CollectionBase" />
+  <TypeSignature Language="F#" Value="type ActiveDirectorySiteCollection = class&#xA;    inherit CollectionBase" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActiveDirectorySiteCollection : System::Collections::CollectionBase" />
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public int Add (System.DirectoryServices.ActiveDirectory.ActiveDirectorySite site);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySite site) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection.Add(System.DirectoryServices.ActiveDirectory.ActiveDirectorySite)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (site As ActiveDirectorySite) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Add : System.DirectoryServices.ActiveDirectory.ActiveDirectorySite -&gt; int" Usage="activeDirectorySiteCollection.Add site" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::DirectoryServices::ActiveDirectory::ActiveDirectorySite ^ site);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -45,10 +51,23 @@
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddRange">
+      <AssemblyInfo>
+        <AssemblyName>System.DirectoryServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Appends a range of items to this collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public void AddRange (System.DirectoryServices.ActiveDirectory.ActiveDirectorySite[] sites);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySite[] sites) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection.AddRange(System.DirectoryServices.ActiveDirectory.ActiveDirectorySite[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (sites As ActiveDirectorySite())" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.DirectoryServices.ActiveDirectory.ActiveDirectorySite[] -&gt; unit" Usage="activeDirectorySiteCollection.AddRange sites" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::DirectoryServices::ActiveDirectory::ActiveDirectorySite ^&gt; ^ sites);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -77,6 +96,9 @@
       <MemberSignature Language="C#" Value="public void AddRange (System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection sites);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection sites) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection.AddRange(System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddRange (sites As ActiveDirectorySiteCollection)" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection -&gt; unit" Usage="activeDirectorySiteCollection.AddRange sites" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(System::DirectoryServices::ActiveDirectory::ActiveDirectorySiteCollection ^ sites);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -105,6 +127,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.DirectoryServices.ActiveDirectory.ActiveDirectorySite site);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySite site) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection.Contains(System.DirectoryServices.ActiveDirectory.ActiveDirectorySite)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (site As ActiveDirectorySite) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.DirectoryServices.ActiveDirectory.ActiveDirectorySite -&gt; bool" Usage="activeDirectorySiteCollection.Contains site" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::DirectoryServices::ActiveDirectory::ActiveDirectorySite ^ site);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -134,6 +159,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.DirectoryServices.ActiveDirectory.ActiveDirectorySite[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySite[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection.CopyTo(System.DirectoryServices.ActiveDirectory.ActiveDirectorySite[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As ActiveDirectorySite(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.DirectoryServices.ActiveDirectory.ActiveDirectorySite[] * int -&gt; unit" Usage="activeDirectorySiteCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::DirectoryServices::ActiveDirectory::ActiveDirectorySite ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -163,6 +191,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.DirectoryServices.ActiveDirectory.ActiveDirectorySite site);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySite site) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection.IndexOf(System.DirectoryServices.ActiveDirectory.ActiveDirectorySite)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (site As ActiveDirectorySite) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.DirectoryServices.ActiveDirectory.ActiveDirectorySite -&gt; int" Usage="activeDirectorySiteCollection.IndexOf site" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::DirectoryServices::ActiveDirectory::ActiveDirectorySite ^ site);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -191,6 +222,9 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.DirectoryServices.ActiveDirectory.ActiveDirectorySite site);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.DirectoryServices.ActiveDirectory.ActiveDirectorySite site) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection.Insert(System.Int32,System.DirectoryServices.ActiveDirectory.ActiveDirectorySite)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, site As ActiveDirectorySite)" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.DirectoryServices.ActiveDirectory.ActiveDirectorySite -&gt; unit" Usage="activeDirectorySiteCollection.Insert (index, site)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::DirectoryServices::ActiveDirectory::ActiveDirectorySite ^ site);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -223,6 +257,9 @@
       <MemberSignature Language="C#" Value="public System.DirectoryServices.ActiveDirectory.ActiveDirectorySite this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.DirectoryServices.ActiveDirectory.ActiveDirectorySite Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As ActiveDirectorySite" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.DirectoryServices.ActiveDirectory.ActiveDirectorySite with get, set" Usage="System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::DirectoryServices::ActiveDirectory::ActiveDirectorySite ^ default[int] { System::DirectoryServices::ActiveDirectory::ActiveDirectorySite ^ get(int index); void set(int index, System::DirectoryServices::ActiveDirectory::ActiveDirectorySite ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -251,6 +288,9 @@
       <MemberSignature Language="C#" Value="protected override void OnClearComplete ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClearComplete() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection.OnClearComplete" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClearComplete ()" />
+      <MemberSignature Language="F#" Value="override this.OnClearComplete : unit -&gt; unit" Usage="activeDirectorySiteCollection.OnClearComplete " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClearComplete();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -271,6 +311,9 @@
       <MemberSignature Language="C#" Value="protected override void OnInsertComplete (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnInsertComplete(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection.OnInsertComplete(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnInsertComplete (index As Integer, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnInsertComplete : int * obj -&gt; unit" Usage="activeDirectorySiteCollection.OnInsertComplete (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnInsertComplete(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -296,6 +339,9 @@
       <MemberSignature Language="C#" Value="protected override void OnRemoveComplete (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemoveComplete(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection.OnRemoveComplete(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemoveComplete (index As Integer, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnRemoveComplete : int * obj -&gt; unit" Usage="activeDirectorySiteCollection.OnRemoveComplete (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemoveComplete(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -321,6 +367,9 @@
       <MemberSignature Language="C#" Value="protected override void OnSetComplete (int index, object oldValue, object newValue);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSetComplete(int32 index, object oldValue, object newValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection.OnSetComplete(System.Int32,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSetComplete (index As Integer, oldValue As Object, newValue As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnSetComplete : int * obj * obj -&gt; unit" Usage="activeDirectorySiteCollection.OnSetComplete (index, oldValue, newValue)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSetComplete(int index, System::Object ^ oldValue, System::Object ^ newValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -348,6 +397,9 @@
       <MemberSignature Language="C#" Value="protected override void OnValidate (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidate(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection.OnValidate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnValidate : obj -&gt; unit" Usage="activeDirectorySiteCollection.OnValidate value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -371,6 +423,9 @@
       <MemberSignature Language="C#" Value="public void Remove (System.DirectoryServices.ActiveDirectory.ActiveDirectorySite site);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.DirectoryServices.ActiveDirectory.ActiveDirectorySite site) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.DirectoryServices.ActiveDirectory.ActiveDirectorySiteCollection.Remove(System.DirectoryServices.ActiveDirectory.ActiveDirectorySite)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (site As ActiveDirectorySite)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.DirectoryServices.ActiveDirectory.ActiveDirectorySite -&gt; unit" Usage="activeDirectorySiteCollection.Remove site" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::DirectoryServices::ActiveDirectory::ActiveDirectorySite ^ site);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
@@ -395,15 +450,5 @@
         <altmember cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySite" />
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddRange">
-      <AssemblyInfo>
-        <AssemblyName>System.DirectoryServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Appends a range of items to this collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

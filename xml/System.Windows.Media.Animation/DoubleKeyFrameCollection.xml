@@ -1,7 +1,10 @@
-<Type Name="DoubleKeyFrameCollection" FullName="System.Windows.Media.Animation.DoubleKeyFrameCollection">
+﻿<Type Name="DoubleKeyFrameCollection" FullName="System.Windows.Media.Animation.DoubleKeyFrameCollection">
   <TypeSignature Language="C#" Value="public class DoubleKeyFrameCollection : System.Windows.Freezable, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DoubleKeyFrameCollection extends System.Windows.Freezable implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.DoubleKeyFrameCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class DoubleKeyFrameCollection&#xA;Inherits Freezable&#xA;Implements IList" />
+  <TypeSignature Language="F#" Value="type DoubleKeyFrameCollection = class&#xA;    inherit Freezable&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DoubleKeyFrameCollection : System::Windows::Freezable, System::Collections::IList" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -53,6 +56,8 @@
       <MemberSignature Language="C#" Value="public DoubleKeyFrameCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DoubleKeyFrameCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -68,6 +73,9 @@
       <MemberSignature Language="C#" Value="public int Add (System.Windows.Media.Animation.DoubleKeyFrame keyFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Windows.Media.Animation.DoubleKeyFrame keyFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.Add(System.Windows.Media.Animation.DoubleKeyFrame)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (keyFrame As DoubleKeyFrame) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Media.Animation.DoubleKeyFrame -&gt; int" Usage="doubleKeyFrameCollection.Add keyFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Windows::Media::Animation::DoubleKeyFrame ^ keyFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -90,7 +98,13 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="doubleKeyFrameCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -108,6 +122,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.DoubleKeyFrameCollection Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.Animation.DoubleKeyFrameCollection Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As DoubleKeyFrameCollection" />
+      <MemberSignature Language="F#" Value="override this.Clone : unit -&gt; System.Windows.Media.Animation.DoubleKeyFrameCollection" Usage="doubleKeyFrameCollection.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Media::Animation::DoubleKeyFrameCollection ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -136,6 +153,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.CloneCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCore : System.Windows.Freezable -&gt; unit" Usage="doubleKeyFrameCollection.CloneCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -166,6 +186,9 @@
       <MemberSignature Language="C#" Value="protected override void CloneCurrentValueCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CloneCurrentValueCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.CloneCurrentValueCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CloneCurrentValueCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.CloneCurrentValueCore : System.Windows.Freezable -&gt; unit" Usage="doubleKeyFrameCollection.CloneCurrentValueCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CloneCurrentValueCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -197,6 +220,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Windows.Media.Animation.DoubleKeyFrame keyFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Windows.Media.Animation.DoubleKeyFrame keyFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.Contains(System.Windows.Media.Animation.DoubleKeyFrame)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (keyFrame As DoubleKeyFrame) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Windows.Media.Animation.DoubleKeyFrame -&gt; bool" Usage="doubleKeyFrameCollection.Contains keyFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Windows::Media::Animation::DoubleKeyFrame ^ keyFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -230,6 +256,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Windows.Media.Animation.DoubleKeyFrame[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Windows.Media.Animation.DoubleKeyFrame[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.CopyTo(System.Windows.Media.Animation.DoubleKeyFrame[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As DoubleKeyFrame(), index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : System.Windows.Media.Animation.DoubleKeyFrame[] * int -&gt; unit" Usage="doubleKeyFrameCollection.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Windows::Media::Animation::DoubleKeyFrame ^&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -253,7 +282,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleKeyFrameCollection.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Media.Animation.DoubleKeyFrameCollection.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -271,6 +306,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="doubleKeyFrameCollection.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -291,6 +329,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Media.Animation.DoubleKeyFrameCollection Empty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Media.Animation.DoubleKeyFrameCollection Empty" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleKeyFrameCollection.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As DoubleKeyFrameCollection" />
+      <MemberSignature Language="F#" Value="member this.Empty : System.Windows.Media.Animation.DoubleKeyFrameCollection" Usage="System.Windows.Media.Animation.DoubleKeyFrameCollection.Empty" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Media::Animation::DoubleKeyFrameCollection ^ Empty { System::Windows::Media::Animation::DoubleKeyFrameCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -309,6 +350,9 @@
       <MemberSignature Language="C#" Value="protected override bool FreezeCore (bool isChecking);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool FreezeCore(bool isChecking) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.FreezeCore(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function FreezeCore (isChecking As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.FreezeCore : bool -&gt; bool" Usage="doubleKeyFrameCollection.FreezeCore isChecking" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool FreezeCore(bool isChecking);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -333,6 +377,9 @@
       <MemberSignature Language="C#" Value="protected override void GetAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.GetAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="doubleKeyFrameCollection.GetAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -365,6 +412,9 @@
       <MemberSignature Language="C#" Value="protected override void GetCurrentValueAsFrozenCore (System.Windows.Freezable sourceFreezable);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void GetCurrentValueAsFrozenCore(class System.Windows.Freezable sourceFreezable) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.GetCurrentValueAsFrozenCore(System.Windows.Freezable)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub GetCurrentValueAsFrozenCore (sourceFreezable As Freezable)" />
+      <MemberSignature Language="F#" Value="override this.GetCurrentValueAsFrozenCore : System.Windows.Freezable -&gt; unit" Usage="doubleKeyFrameCollection.GetCurrentValueAsFrozenCore sourceFreezable" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void GetCurrentValueAsFrozenCore(System::Windows::Freezable ^ sourceFreezable);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -395,7 +445,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator&#xA;override this.GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="doubleKeyFrameCollection.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -431,6 +487,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Windows.Media.Animation.DoubleKeyFrame keyFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Windows.Media.Animation.DoubleKeyFrame keyFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.IndexOf(System.Windows.Media.Animation.DoubleKeyFrame)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (keyFrame As DoubleKeyFrame) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Windows.Media.Animation.DoubleKeyFrame -&gt; int" Usage="doubleKeyFrameCollection.IndexOf keyFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Windows::Media::Animation::DoubleKeyFrame ^ keyFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -465,6 +524,9 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Windows.Media.Animation.DoubleKeyFrame keyFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Windows.Media.Animation.DoubleKeyFrame keyFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.Insert(System.Int32,System.Windows.Media.Animation.DoubleKeyFrame)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, keyFrame As DoubleKeyFrame)" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Windows.Media.Animation.DoubleKeyFrame -&gt; unit" Usage="doubleKeyFrameCollection.Insert (index, keyFrame)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Windows::Media::Animation::DoubleKeyFrame ^ keyFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -488,7 +550,13 @@
       <MemberSignature Language="C#" Value="public bool IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleKeyFrameCollection.IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFixedSize As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFixedSize : bool" Usage="System.Windows.Media.Animation.DoubleKeyFrameCollection.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -507,7 +575,13 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleKeyFrameCollection.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Media.Animation.DoubleKeyFrameCollection.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -526,7 +600,13 @@
       <MemberSignature Language="C#" Value="public bool IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleKeyFrameCollection.IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsSynchronized As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsSynchronized : bool" Usage="System.Windows.Media.Animation.DoubleKeyFrameCollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -552,6 +632,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Animation.DoubleKeyFrame this[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Animation.DoubleKeyFrame Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleKeyFrameCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(index As Integer) As DoubleKeyFrame" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Media.Animation.DoubleKeyFrame with get, set" Usage="System.Windows.Media.Animation.DoubleKeyFrameCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Animation::DoubleKeyFrame ^ default[int] { System::Windows::Media::Animation::DoubleKeyFrame ^ get(int index); void set(int index, System::Windows::Media::Animation::DoubleKeyFrame ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -581,6 +664,9 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Windows.Media.Animation.DoubleKeyFrame keyFrame);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Windows.Media.Animation.DoubleKeyFrame keyFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.Remove(System.Windows.Media.Animation.DoubleKeyFrame)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (keyFrame As DoubleKeyFrame)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Windows.Media.Animation.DoubleKeyFrame -&gt; unit" Usage="doubleKeyFrameCollection.Remove keyFrame" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Windows::Media::Animation::DoubleKeyFrame ^ keyFrame);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -602,7 +688,13 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveAt : int -&gt; unit&#xA;override this.RemoveAt : int -&gt; unit" Usage="doubleKeyFrameCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.RemoveAt(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -623,7 +715,13 @@
       <MemberSignature Language="C#" Value="public object SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleKeyFrameCollection.SyncRoot" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SyncRoot As Object" />
+      <MemberSignature Language="F#" Value="member this.SyncRoot : obj" Usage="System.Windows.Media.Animation.DoubleKeyFrameCollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -641,7 +739,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -664,7 +766,12 @@
       <MemberSignature Language="C#" Value="int IList.Add (object keyFrame);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.Add(object keyFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.System#Collections#IList#Add(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Add (keyFrame As Object) As Integer Implements IList.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.Add(System::Object ^ keyFrame) = System::Collections::IList::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Add(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -686,7 +793,12 @@
       <MemberSignature Language="C#" Value="bool IList.Contains (object keyFrame);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IList.Contains(object keyFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.System#Collections#IList#Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (keyFrame As Object) As Boolean Implements IList.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IList.Contains(System::Object ^ keyFrame) = System::Collections::IList::Contains;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -709,7 +821,12 @@
       <MemberSignature Language="C#" Value="int IList.IndexOf (object keyFrame);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance int32 System.Collections.IList.IndexOf(object keyFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.System#Collections#IList#IndexOf(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function IndexOf (keyFrame As Object) As Integer Implements IList.IndexOf" />
+      <MemberSignature Language="C++ CLI" Value=" virtual int System.Collections.IList.IndexOf(System::Object ^ keyFrame) = System::Collections::IList::IndexOf;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.IndexOf(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -731,7 +848,12 @@
       <MemberSignature Language="C#" Value="void IList.Insert (int index, object keyFrame);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Insert(int32 index, object keyFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.System#Collections#IList#Insert(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Insert (index As Integer, keyFrame As Object) Implements IList.Insert" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Insert(int index, System::Object ^ keyFrame) = System::Collections::IList::Insert;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Insert(System.Int32,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -754,7 +876,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.IList.Item[int index] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IList.Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Animation.DoubleKeyFrameCollection.System#Collections#IList#Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(index As Integer) As Object Implements IList.Item" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.Animation.DoubleKeyFrameCollection.System.Collections.IList.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IList.Item[int] { System::Object ^ get(int index); void set(int index, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IList.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -776,7 +904,12 @@
       <MemberSignature Language="C#" Value="void IList.Remove (object keyFrame);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IList.Remove(object keyFrame) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DoubleKeyFrameCollection.System#Collections#IList#Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Remove (keyFrame As Object) Implements IList.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IList.Remove(System::Object ^ keyFrame) = System::Collections::IList::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IList.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

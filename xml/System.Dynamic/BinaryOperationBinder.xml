@@ -1,7 +1,10 @@
-<Type Name="BinaryOperationBinder" FullName="System.Dynamic.BinaryOperationBinder">
+﻿<Type Name="BinaryOperationBinder" FullName="System.Dynamic.BinaryOperationBinder">
   <TypeSignature Language="C#" Value="public abstract class BinaryOperationBinder : System.Dynamic.DynamicMetaObjectBinder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit BinaryOperationBinder extends System.Dynamic.DynamicMetaObjectBinder" />
   <TypeSignature Language="DocId" Value="T:System.Dynamic.BinaryOperationBinder" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class BinaryOperationBinder&#xA;Inherits DynamicMetaObjectBinder" />
+  <TypeSignature Language="F#" Value="type BinaryOperationBinder = class&#xA;    inherit DynamicMetaObjectBinder" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BinaryOperationBinder abstract : System::Dynamic::DynamicMetaObjectBinder" />
   <AssemblyInfo>
     <AssemblyName>System.Dynamic.Runtime</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="protected BinaryOperationBinder (System.Linq.Expressions.ExpressionType operation);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(valuetype System.Linq.Expressions.ExpressionType operation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BinaryOperationBinder.#ctor(System.Linq.Expressions.ExpressionType)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (operation As ExpressionType)" />
+      <MemberSignature Language="F#" Value="new System.Dynamic.BinaryOperationBinder : System.Linq.Expressions.ExpressionType -&gt; System.Dynamic.BinaryOperationBinder" Usage="new System.Dynamic.BinaryOperationBinder operation" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; BinaryOperationBinder(System::Linq::Expressions::ExpressionType operation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -63,6 +69,9 @@
       <MemberSignature Language="C#" Value="public override sealed System.Dynamic.DynamicMetaObject Bind (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject[] args);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Dynamic.DynamicMetaObject Bind(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject[] args) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BinaryOperationBinder.Bind(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Bind (target As DynamicMetaObject, args As DynamicMetaObject()) As DynamicMetaObject" />
+      <MemberSignature Language="F#" Value="override this.Bind : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject[] -&gt; System.Dynamic.DynamicMetaObject" Usage="binaryOperationBinder.Bind (target, args)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Dynamic::DynamicMetaObject ^ Bind(System::Dynamic::DynamicMetaObject ^ target, cli::array &lt;System::Dynamic::DynamicMetaObject ^&gt; ^ args);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -96,10 +105,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FallbackBinaryOperation">
+      <AssemblyInfo>
+        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs the binding of the binary dynamic operation if the target dynamic object cannot bind.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FallbackBinaryOperation">
       <MemberSignature Language="C#" Value="public System.Dynamic.DynamicMetaObject FallbackBinaryOperation (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject arg);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Dynamic.DynamicMetaObject FallbackBinaryOperation(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject arg) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BinaryOperationBinder.FallbackBinaryOperation(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FallbackBinaryOperation (target As DynamicMetaObject, arg As DynamicMetaObject) As DynamicMetaObject" />
+      <MemberSignature Language="F#" Value="member this.FallbackBinaryOperation : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject -&gt; System.Dynamic.DynamicMetaObject" Usage="binaryOperationBinder.FallbackBinaryOperation (target, arg)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Dynamic::DynamicMetaObject ^ FallbackBinaryOperation(System::Dynamic::DynamicMetaObject ^ target, System::Dynamic::DynamicMetaObject ^ arg);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -137,6 +158,9 @@
       <MemberSignature Language="C#" Value="public abstract System.Dynamic.DynamicMetaObject FallbackBinaryOperation (System.Dynamic.DynamicMetaObject target, System.Dynamic.DynamicMetaObject arg, System.Dynamic.DynamicMetaObject errorSuggestion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Dynamic.DynamicMetaObject FallbackBinaryOperation(class System.Dynamic.DynamicMetaObject target, class System.Dynamic.DynamicMetaObject arg, class System.Dynamic.DynamicMetaObject errorSuggestion) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Dynamic.BinaryOperationBinder.FallbackBinaryOperation(System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject,System.Dynamic.DynamicMetaObject)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function FallbackBinaryOperation (target As DynamicMetaObject, arg As DynamicMetaObject, errorSuggestion As DynamicMetaObject) As DynamicMetaObject" />
+      <MemberSignature Language="F#" Value="abstract member FallbackBinaryOperation : System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject * System.Dynamic.DynamicMetaObject -&gt; System.Dynamic.DynamicMetaObject" Usage="binaryOperationBinder.FallbackBinaryOperation (target, arg, errorSuggestion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Dynamic::DynamicMetaObject ^ FallbackBinaryOperation(System::Dynamic::DynamicMetaObject ^ target, System::Dynamic::DynamicMetaObject ^ arg, System::Dynamic::DynamicMetaObject ^ errorSuggestion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -176,6 +200,9 @@
       <MemberSignature Language="C#" Value="public System.Linq.Expressions.ExpressionType Operation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Linq.Expressions.ExpressionType Operation" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.BinaryOperationBinder.Operation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Operation As ExpressionType" />
+      <MemberSignature Language="F#" Value="member this.Operation : System.Linq.Expressions.ExpressionType" Usage="System.Dynamic.BinaryOperationBinder.Operation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Linq::Expressions::ExpressionType Operation { System::Linq::Expressions::ExpressionType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -207,6 +234,9 @@
       <MemberSignature Language="C#" Value="public override sealed Type ReturnType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type ReturnType" />
       <MemberSignature Language="DocId" Value="P:System.Dynamic.BinaryOperationBinder.ReturnType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable ReadOnly Property ReturnType As Type" />
+      <MemberSignature Language="F#" Value="member this.ReturnType : Type" Usage="System.Dynamic.BinaryOperationBinder.ReturnType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ ReturnType { Type ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Dynamic.Runtime</AssemblyName>
@@ -234,14 +264,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="FallbackBinaryOperation">
-      <AssemblyInfo>
-        <AssemblyName>System.Dynamic.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs the binding of the binary dynamic operation if the target dynamic object cannot bind.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

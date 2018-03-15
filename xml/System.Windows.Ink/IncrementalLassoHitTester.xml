@@ -1,7 +1,10 @@
-<Type Name="IncrementalLassoHitTester" FullName="System.Windows.Ink.IncrementalLassoHitTester">
+﻿<Type Name="IncrementalLassoHitTester" FullName="System.Windows.Ink.IncrementalLassoHitTester">
   <TypeSignature Language="C#" Value="public class IncrementalLassoHitTester : System.Windows.Ink.IncrementalHitTester" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IncrementalLassoHitTester extends System.Windows.Ink.IncrementalHitTester" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Ink.IncrementalLassoHitTester" />
+  <TypeSignature Language="VB.NET" Value="Public Class IncrementalLassoHitTester&#xA;Inherits IncrementalHitTester" />
+  <TypeSignature Language="F#" Value="type IncrementalLassoHitTester = class&#xA;    inherit IncrementalHitTester" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IncrementalLassoHitTester : System::Windows::Ink::IncrementalHitTester" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="protected override void AddPointsCore (System.Collections.Generic.IEnumerable&lt;System.Windows.Point&gt; points);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddPointsCore(class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Windows.Point&gt; points) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.IncrementalLassoHitTester.AddPointsCore(System.Collections.Generic.IEnumerable{System.Windows.Point})" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddPointsCore (points As IEnumerable(Of Point))" />
+      <MemberSignature Language="F#" Value="override this.AddPointsCore : seq&lt;System.Windows.Point&gt; -&gt; unit" Usage="incrementalLassoHitTester.AddPointsCore points" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddPointsCore(System::Collections::Generic::IEnumerable&lt;System::Windows::Point&gt; ^ points);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -55,6 +61,9 @@
       <MemberSignature Language="C#" Value="protected void OnSelectionChanged (System.Windows.Ink.LassoSelectionChangedEventArgs eventArgs);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnSelectionChanged(class System.Windows.Ink.LassoSelectionChangedEventArgs eventArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Ink.IncrementalLassoHitTester.OnSelectionChanged(System.Windows.Ink.LassoSelectionChangedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub OnSelectionChanged (eventArgs As LassoSelectionChangedEventArgs)" />
+      <MemberSignature Language="F#" Value="member this.OnSelectionChanged : System.Windows.Ink.LassoSelectionChangedEventArgs -&gt; unit" Usage="incrementalLassoHitTester.OnSelectionChanged eventArgs" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnSelectionChanged(System::Windows::Ink::LassoSelectionChangedEventArgs ^ eventArgs);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -76,6 +85,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Ink.LassoSelectionChangedEventHandler SelectionChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Ink.LassoSelectionChangedEventHandler SelectionChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Ink.IncrementalLassoHitTester.SelectionChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Event SelectionChanged As LassoSelectionChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectionChanged : System.Windows.Ink.LassoSelectionChangedEventHandler " Usage="member this.SelectionChanged : System.Windows.Ink.LassoSelectionChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Ink::LassoSelectionChangedEventHandler ^ SelectionChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

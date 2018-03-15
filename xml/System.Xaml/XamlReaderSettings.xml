@@ -1,7 +1,10 @@
-<Type Name="XamlReaderSettings" FullName="System.Xaml.XamlReaderSettings">
+﻿<Type Name="XamlReaderSettings" FullName="System.Xaml.XamlReaderSettings">
   <TypeSignature Language="C#" Value="public class XamlReaderSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlReaderSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlReaderSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlReaderSettings" />
+  <TypeSignature Language="F#" Value="type XamlReaderSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlReaderSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +31,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlReaderSettings" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XamlReaderSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlReaderSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlReaderSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -54,6 +68,9 @@
       <MemberSignature Language="C#" Value="public XamlReaderSettings (System.Xaml.XamlReaderSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlReaderSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlReaderSettings.#ctor(System.Xaml.XamlReaderSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (settings As XamlReaderSettings)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlReaderSettings : System.Xaml.XamlReaderSettings -&gt; System.Xaml.XamlReaderSettings" Usage="new System.Xaml.XamlReaderSettings settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlReaderSettings(System::Xaml::XamlReaderSettings ^ settings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -79,6 +96,9 @@
       <MemberSignature Language="C#" Value="public bool AllowProtectedMembersOnRoot { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowProtectedMembersOnRoot" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlReaderSettings.AllowProtectedMembersOnRoot" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowProtectedMembersOnRoot As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowProtectedMembersOnRoot : bool with get, set" Usage="System.Xaml.XamlReaderSettings.AllowProtectedMembersOnRoot" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool AllowProtectedMembersOnRoot { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -105,6 +125,9 @@
       <MemberSignature Language="C#" Value="public Uri BaseUri { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri BaseUri" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlReaderSettings.BaseUri" />
+      <MemberSignature Language="VB.NET" Value="Public Property BaseUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.BaseUri : Uri with get, set" Usage="System.Xaml.XamlReaderSettings.BaseUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ BaseUri { Uri ^ get(); void set(Uri ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -130,6 +153,9 @@
       <MemberSignature Language="C#" Value="public bool IgnoreUidsOnPropertyElements { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IgnoreUidsOnPropertyElements" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlReaderSettings.IgnoreUidsOnPropertyElements" />
+      <MemberSignature Language="VB.NET" Value="Public Property IgnoreUidsOnPropertyElements As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IgnoreUidsOnPropertyElements : bool with get, set" Usage="System.Xaml.XamlReaderSettings.IgnoreUidsOnPropertyElements" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IgnoreUidsOnPropertyElements { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -156,6 +182,9 @@
       <MemberSignature Language="C#" Value="public System.Reflection.Assembly LocalAssembly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Reflection.Assembly LocalAssembly" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlReaderSettings.LocalAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalAssembly As Assembly" />
+      <MemberSignature Language="F#" Value="member this.LocalAssembly : System.Reflection.Assembly with get, set" Usage="System.Xaml.XamlReaderSettings.LocalAssembly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Reflection::Assembly ^ LocalAssembly { System::Reflection::Assembly ^ get(); void set(System::Reflection::Assembly ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -174,6 +203,9 @@
       <MemberSignature Language="C#" Value="public bool ProvideLineInfo { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ProvideLineInfo" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlReaderSettings.ProvideLineInfo" />
+      <MemberSignature Language="VB.NET" Value="Public Property ProvideLineInfo As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ProvideLineInfo : bool with get, set" Usage="System.Xaml.XamlReaderSettings.ProvideLineInfo" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ProvideLineInfo { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -200,6 +232,9 @@
       <MemberSignature Language="C#" Value="public bool ValuesMustBeString { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ValuesMustBeString" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlReaderSettings.ValuesMustBeString" />
+      <MemberSignature Language="VB.NET" Value="Public Property ValuesMustBeString As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ValuesMustBeString : bool with get, set" Usage="System.Xaml.XamlReaderSettings.ValuesMustBeString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ValuesMustBeString { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -222,14 +257,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlReaderSettings" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

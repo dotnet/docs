@@ -1,7 +1,10 @@
-<Type Name="KeyRestrictionBehavior" FullName="System.Data.KeyRestrictionBehavior">
+﻿<Type Name="KeyRestrictionBehavior" FullName="System.Data.KeyRestrictionBehavior">
   <TypeSignature Language="C#" Value="public enum KeyRestrictionBehavior" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed KeyRestrictionBehavior extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.KeyRestrictionBehavior" />
+  <TypeSignature Language="VB.NET" Value="Public Enum KeyRestrictionBehavior" />
+  <TypeSignature Language="F#" Value="type KeyRestrictionBehavior = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class KeyRestrictionBehavior" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="AllowOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.KeyRestrictionBehavior AllowOnly = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.KeyRestrictionBehavior.AllowOnly" />
+      <MemberSignature Language="VB.NET" Value="AllowOnly" />
+      <MemberSignature Language="F#" Value="AllowOnly = 0" Usage="System.Data.KeyRestrictionBehavior.AllowOnly" />
+      <MemberSignature Language="C++ CLI" Value="AllowOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -44,6 +50,7 @@
       <ReturnValue>
         <ReturnType>System.Data.KeyRestrictionBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Default. Identifies the only additional connection string parameters that are allowed.</summary>
       </Docs>
@@ -52,6 +59,9 @@
       <MemberSignature Language="C#" Value="PreventUsage" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.KeyRestrictionBehavior PreventUsage = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.KeyRestrictionBehavior.PreventUsage" />
+      <MemberSignature Language="VB.NET" Value="PreventUsage" />
+      <MemberSignature Language="F#" Value="PreventUsage = 1" Usage="System.Data.KeyRestrictionBehavior.PreventUsage" />
+      <MemberSignature Language="C++ CLI" Value="PreventUsage" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -69,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Data.KeyRestrictionBehavior</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Identifies additional connection string parameters that are not allowed.</summary>
       </Docs>

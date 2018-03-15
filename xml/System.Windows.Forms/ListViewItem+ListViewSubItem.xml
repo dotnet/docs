@@ -1,7 +1,10 @@
-<Type Name="ListViewItem+ListViewSubItem" FullName="System.Windows.Forms.ListViewItem+ListViewSubItem">
+﻿<Type Name="ListViewItem+ListViewSubItem" FullName="System.Windows.Forms.ListViewItem+ListViewSubItem">
   <TypeSignature Language="C#" Value="public class ListViewItem.ListViewSubItem" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit ListViewItem/ListViewSubItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewItem.ListViewSubItem" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListViewItem.ListViewSubItem" />
+  <TypeSignature Language="F#" Value="type ListViewItem.ListViewSubItem = class" />
+  <TypeSignature Language="C++ CLI" Value="public: ref class ListViewItem::ListViewSubItem" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -64,10 +67,21 @@
     <altmember cref="T:System.Windows.Forms.ListViewItem" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ListViewSubItem ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.ListViewSubItem.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewSubItem();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +97,9 @@
       <MemberSignature Language="C#" Value="public ListViewSubItem (System.Windows.Forms.ListViewItem owner, string text);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ListViewItem owner, string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.ListViewSubItem.#ctor(System.Windows.Forms.ListViewItem,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As ListViewItem, text As String)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ListViewItem.ListViewSubItem : System.Windows.Forms.ListViewItem * string -&gt; System.Windows.Forms.ListViewItem.ListViewSubItem" Usage="new System.Windows.Forms.ListViewItem.ListViewSubItem (owner, text)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewSubItem(System::Windows::Forms::ListViewItem ^ owner, System::String ^ text);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -104,6 +121,8 @@
       <MemberSignature Language="C#" Value="public ListViewSubItem (System.Windows.Forms.ListViewItem owner, string text, System.Drawing.Color foreColor, System.Drawing.Color backColor, System.Drawing.Font font);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Forms.ListViewItem owner, string text, valuetype System.Drawing.Color foreColor, valuetype System.Drawing.Color backColor, class System.Drawing.Font font) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.ListViewSubItem.#ctor(System.Windows.Forms.ListViewItem,System.String,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Forms.ListViewItem.ListViewSubItem : System.Windows.Forms.ListViewItem * string * System.Drawing.Color * System.Drawing.Color * System.Drawing.Font -&gt; System.Windows.Forms.ListViewItem.ListViewSubItem" Usage="new System.Windows.Forms.ListViewItem.ListViewSubItem (owner, text, foreColor, backColor, font)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListViewSubItem(System::Windows::Forms::ListViewItem ^ owner, System::String ^ text, System::Drawing::Color foreColor, System::Drawing::Color backColor, System::Drawing::Font ^ font);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -133,6 +152,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ListViewSubItem.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ListViewItem.ListViewSubItem.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -162,6 +184,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle Bounds { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Rectangle Bounds" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ListViewSubItem.Bounds" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Bounds As Rectangle" />
+      <MemberSignature Language="F#" Value="member this.Bounds : System.Drawing.Rectangle" Usage="System.Windows.Forms.ListViewItem.ListViewSubItem.Bounds" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Rectangle Bounds { System::Drawing::Rectangle get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -192,6 +217,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ListViewSubItem.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Property Font As Font" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.ListViewItem.ListViewSubItem.Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -248,6 +276,9 @@ ListViewItem1.SubItems[1].Font = New Font(ListViewItem1.SubItems[1].Font, _
       <MemberSignature Language="C#" Value="public System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ListViewSubItem.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ListViewItem.ListViewSubItem.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -286,6 +317,9 @@ ListViewItem1.SubItems[1].Font = New Font(ListViewItem1.SubItems[1].Font, _
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ListViewSubItem.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Windows.Forms.ListViewItem.ListViewSubItem.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -316,6 +350,9 @@ ListViewItem1.SubItems[1].Font = New Font(ListViewItem1.SubItems[1].Font, _
       <MemberSignature Language="C#" Value="public void ResetStyle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetStyle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.ListViewSubItem.ResetStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetStyle ()" />
+      <MemberSignature Language="F#" Value="member this.ResetStyle : unit -&gt; unit" Usage="listViewSubItem.ResetStyle " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetStyle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -353,6 +390,9 @@ ListViewItem1.SubItems[1].Font = New Font(ListViewItem1.SubItems[1].Font, _
       <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ListViewSubItem.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Windows.Forms.ListViewItem.ListViewSubItem.Tag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -392,6 +432,9 @@ ListViewItem1.SubItems[1].Font = New Font(ListViewItem1.SubItems[1].Font, _
       <MemberSignature Language="C#" Value="public string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListViewItem.ListViewSubItem.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.ListViewItem.ListViewSubItem.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -426,6 +469,9 @@ ListViewItem1.SubItems[1].Font = New Font(ListViewItem1.SubItems[1].Font, _
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListViewItem.ListViewSubItem.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="listViewSubItem.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -442,14 +488,5 @@ ListViewItem1.SubItems[1].Font = New Font(ListViewItem1.SubItems[1].Font, _
         <altmember cref="M:System.Object.ToString" />
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItem.ListViewSubItem" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

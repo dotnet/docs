@@ -1,7 +1,10 @@
-<Type Name="AcknowledgeTypes" FullName="System.Messaging.AcknowledgeTypes">
+﻿<Type Name="AcknowledgeTypes" FullName="System.Messaging.AcknowledgeTypes">
   <TypeSignature Language="C#" Value="public enum AcknowledgeTypes" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed AcknowledgeTypes extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Messaging.AcknowledgeTypes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum AcknowledgeTypes" />
+  <TypeSignature Language="F#" Value="type AcknowledgeTypes = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class AcknowledgeTypes" />
   <AssemblyInfo>
     <AssemblyName>System.Messaging</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +52,9 @@
       <MemberSignature Language="C#" Value="FullReachQueue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes FullReachQueue = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.FullReachQueue" />
+      <MemberSignature Language="VB.NET" Value="FullReachQueue" />
+      <MemberSignature Language="F#" Value="FullReachQueue = 5" Usage="System.Messaging.AcknowledgeTypes.FullReachQueue" />
+      <MemberSignature Language="C++ CLI" Value="FullReachQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -57,6 +63,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A mask used to request positive acknowledgment if the original message reaches the queue or negative acknowledgment if the time-to-reach-queue timer expires or if the original message cannot be authenticated.</summary>
       </Docs>
@@ -65,6 +72,9 @@
       <MemberSignature Language="C#" Value="FullReceive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes FullReceive = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.FullReceive" />
+      <MemberSignature Language="VB.NET" Value="FullReceive" />
+      <MemberSignature Language="F#" Value="FullReceive = 14" Usage="System.Messaging.AcknowledgeTypes.FullReceive" />
+      <MemberSignature Language="C++ CLI" Value="FullReceive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -73,6 +83,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>A mask used to request positive acknowledgment if the original message is received from the queue before its time-to-be-received timer expires or negative acknowledgment otherwise.</summary>
       </Docs>
@@ -81,6 +92,9 @@
       <MemberSignature Language="C#" Value="NegativeReceive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes NegativeReceive = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.NegativeReceive" />
+      <MemberSignature Language="VB.NET" Value="NegativeReceive" />
+      <MemberSignature Language="F#" Value="NegativeReceive = 8" Usage="System.Messaging.AcknowledgeTypes.NegativeReceive" />
+      <MemberSignature Language="C++ CLI" Value="NegativeReceive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -89,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A mask used to request a negative acknowledgment when the original message fails to be received from the queue.</summary>
         <remarks>
@@ -105,6 +120,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Messaging.AcknowledgeTypes.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -113,6 +131,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A mask used to request that no acknowledgment messages (positive or negative) be posted.</summary>
       </Docs>
@@ -121,6 +140,9 @@
       <MemberSignature Language="C#" Value="NotAcknowledgeReachQueue" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes NotAcknowledgeReachQueue = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.NotAcknowledgeReachQueue" />
+      <MemberSignature Language="VB.NET" Value="NotAcknowledgeReachQueue" />
+      <MemberSignature Language="F#" Value="NotAcknowledgeReachQueue = 4" Usage="System.Messaging.AcknowledgeTypes.NotAcknowledgeReachQueue" />
+      <MemberSignature Language="C++ CLI" Value="NotAcknowledgeReachQueue" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -129,6 +151,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A mask used to request a negative acknowledgment when the original message cannot reach the queue. This can happen when the time-to-reach-queue timer expires or if a message cannot be authenticated.</summary>
       </Docs>
@@ -137,6 +160,9 @@
       <MemberSignature Language="C#" Value="NotAcknowledgeReceive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes NotAcknowledgeReceive = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.NotAcknowledgeReceive" />
+      <MemberSignature Language="VB.NET" Value="NotAcknowledgeReceive" />
+      <MemberSignature Language="F#" Value="NotAcknowledgeReceive = 12" Usage="System.Messaging.AcknowledgeTypes.NotAcknowledgeReceive" />
+      <MemberSignature Language="C++ CLI" Value="NotAcknowledgeReceive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -145,6 +171,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>A mask used to request a negative acknowledgment when an error occurs that prevents the original message from being received from the queue before its time-to-be-received timer expires.</summary>
       </Docs>
@@ -153,6 +180,9 @@
       <MemberSignature Language="C#" Value="PositiveArrival" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes PositiveArrival = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.PositiveArrival" />
+      <MemberSignature Language="VB.NET" Value="PositiveArrival" />
+      <MemberSignature Language="F#" Value="PositiveArrival = 1" Usage="System.Messaging.AcknowledgeTypes.PositiveArrival" />
+      <MemberSignature Language="C++ CLI" Value="PositiveArrival" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -161,6 +191,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A mask used to request a positive acknowledgment when the original message reaches the queue.</summary>
       </Docs>
@@ -169,6 +200,9 @@
       <MemberSignature Language="C#" Value="PositiveReceive" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Messaging.AcknowledgeTypes PositiveReceive = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Messaging.AcknowledgeTypes.PositiveReceive" />
+      <MemberSignature Language="VB.NET" Value="PositiveReceive" />
+      <MemberSignature Language="F#" Value="PositiveReceive = 2" Usage="System.Messaging.AcknowledgeTypes.PositiveReceive" />
+      <MemberSignature Language="C++ CLI" Value="PositiveReceive" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Messaging</AssemblyName>
@@ -177,6 +211,7 @@
       <ReturnValue>
         <ReturnType>System.Messaging.AcknowledgeTypes</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A mask used to request a positive acknowledgment when the original message is successfully retrieved from the queue.</summary>
       </Docs>

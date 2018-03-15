@@ -1,7 +1,10 @@
-<Type Name="ConsoleKey" FullName="System.ConsoleKey">
+﻿<Type Name="ConsoleKey" FullName="System.ConsoleKey">
   <TypeSignature Language="C#" Value="public enum ConsoleKey" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed ConsoleKey extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ConsoleKey" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ConsoleKey" />
+  <TypeSignature Language="F#" Value="type ConsoleKey = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ConsoleKey" />
   <AssemblyInfo>
     <AssemblyName>System.Console</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="A" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey A = int32(65)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.A" />
+      <MemberSignature Language="VB.NET" Value="A" />
+      <MemberSignature Language="F#" Value="A = 65" Usage="System.ConsoleKey.A" />
+      <MemberSignature Language="C++ CLI" Value="A" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -62,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>65</MemberValue>
       <Docs>
         <summary>The A key.</summary>
       </Docs>
@@ -70,6 +77,9 @@
       <MemberSignature Language="C#" Value="Add" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Add = int32(107)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Add" />
+      <MemberSignature Language="VB.NET" Value="Add" />
+      <MemberSignature Language="F#" Value="Add = 107" Usage="System.ConsoleKey.Add" />
+      <MemberSignature Language="C++ CLI" Value="Add" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -88,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>107</MemberValue>
       <Docs>
         <summary>The Add key (the addition key on the numeric keypad).</summary>
       </Docs>
@@ -96,6 +107,9 @@
       <MemberSignature Language="C#" Value="Applications" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Applications = int32(93)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Applications" />
+      <MemberSignature Language="VB.NET" Value="Applications" />
+      <MemberSignature Language="F#" Value="Applications = 93" Usage="System.ConsoleKey.Applications" />
+      <MemberSignature Language="C++ CLI" Value="Applications" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -113,6 +127,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>93</MemberValue>
       <Docs>
         <summary>The Application key (Microsoft Natural Keyboard).</summary>
       </Docs>
@@ -121,6 +136,9 @@
       <MemberSignature Language="C#" Value="Attention" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Attention = int32(246)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Attention" />
+      <MemberSignature Language="VB.NET" Value="Attention" />
+      <MemberSignature Language="F#" Value="Attention = 246" Usage="System.ConsoleKey.Attention" />
+      <MemberSignature Language="C++ CLI" Value="Attention" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -138,6 +156,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>246</MemberValue>
       <Docs>
         <summary>The ATTN key.</summary>
       </Docs>
@@ -146,6 +165,9 @@
       <MemberSignature Language="C#" Value="B" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey B = int32(66)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.B" />
+      <MemberSignature Language="VB.NET" Value="B" />
+      <MemberSignature Language="F#" Value="B = 66" Usage="System.ConsoleKey.B" />
+      <MemberSignature Language="C++ CLI" Value="B" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -164,6 +186,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>66</MemberValue>
       <Docs>
         <summary>The B key.</summary>
       </Docs>
@@ -172,6 +195,9 @@
       <MemberSignature Language="C#" Value="Backspace" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Backspace = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Backspace" />
+      <MemberSignature Language="VB.NET" Value="Backspace" />
+      <MemberSignature Language="F#" Value="Backspace = 8" Usage="System.ConsoleKey.Backspace" />
+      <MemberSignature Language="C++ CLI" Value="Backspace" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -190,6 +216,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The BACKSPACE key.</summary>
       </Docs>
@@ -198,6 +225,9 @@
       <MemberSignature Language="C#" Value="BrowserBack" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey BrowserBack = int32(166)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.BrowserBack" />
+      <MemberSignature Language="VB.NET" Value="BrowserBack" />
+      <MemberSignature Language="F#" Value="BrowserBack = 166" Usage="System.ConsoleKey.BrowserBack" />
+      <MemberSignature Language="C++ CLI" Value="BrowserBack" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -215,6 +245,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>166</MemberValue>
       <Docs>
         <summary>The Browser Back key (Windows 2000 or later).</summary>
       </Docs>
@@ -223,6 +254,9 @@
       <MemberSignature Language="C#" Value="BrowserFavorites" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey BrowserFavorites = int32(171)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.BrowserFavorites" />
+      <MemberSignature Language="VB.NET" Value="BrowserFavorites" />
+      <MemberSignature Language="F#" Value="BrowserFavorites = 171" Usage="System.ConsoleKey.BrowserFavorites" />
+      <MemberSignature Language="C++ CLI" Value="BrowserFavorites" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -240,6 +274,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>171</MemberValue>
       <Docs>
         <summary>The Browser Favorites key (Windows 2000 or later).</summary>
       </Docs>
@@ -248,6 +283,9 @@
       <MemberSignature Language="C#" Value="BrowserForward" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey BrowserForward = int32(167)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.BrowserForward" />
+      <MemberSignature Language="VB.NET" Value="BrowserForward" />
+      <MemberSignature Language="F#" Value="BrowserForward = 167" Usage="System.ConsoleKey.BrowserForward" />
+      <MemberSignature Language="C++ CLI" Value="BrowserForward" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -265,6 +303,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>167</MemberValue>
       <Docs>
         <summary>The Browser Forward key (Windows 2000 or later).</summary>
       </Docs>
@@ -273,6 +312,9 @@
       <MemberSignature Language="C#" Value="BrowserHome" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey BrowserHome = int32(172)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.BrowserHome" />
+      <MemberSignature Language="VB.NET" Value="BrowserHome" />
+      <MemberSignature Language="F#" Value="BrowserHome = 172" Usage="System.ConsoleKey.BrowserHome" />
+      <MemberSignature Language="C++ CLI" Value="BrowserHome" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -290,6 +332,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>172</MemberValue>
       <Docs>
         <summary>The Browser Home key (Windows 2000 or later).</summary>
       </Docs>
@@ -298,6 +341,9 @@
       <MemberSignature Language="C#" Value="BrowserRefresh" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey BrowserRefresh = int32(168)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.BrowserRefresh" />
+      <MemberSignature Language="VB.NET" Value="BrowserRefresh" />
+      <MemberSignature Language="F#" Value="BrowserRefresh = 168" Usage="System.ConsoleKey.BrowserRefresh" />
+      <MemberSignature Language="C++ CLI" Value="BrowserRefresh" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -315,6 +361,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>168</MemberValue>
       <Docs>
         <summary>The Browser Refresh key (Windows 2000 or later).</summary>
       </Docs>
@@ -323,6 +370,9 @@
       <MemberSignature Language="C#" Value="BrowserSearch" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey BrowserSearch = int32(170)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.BrowserSearch" />
+      <MemberSignature Language="VB.NET" Value="BrowserSearch" />
+      <MemberSignature Language="F#" Value="BrowserSearch = 170" Usage="System.ConsoleKey.BrowserSearch" />
+      <MemberSignature Language="C++ CLI" Value="BrowserSearch" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -340,6 +390,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>170</MemberValue>
       <Docs>
         <summary>The Browser Search key (Windows 2000 or later).</summary>
       </Docs>
@@ -348,6 +399,9 @@
       <MemberSignature Language="C#" Value="BrowserStop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey BrowserStop = int32(169)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.BrowserStop" />
+      <MemberSignature Language="VB.NET" Value="BrowserStop" />
+      <MemberSignature Language="F#" Value="BrowserStop = 169" Usage="System.ConsoleKey.BrowserStop" />
+      <MemberSignature Language="C++ CLI" Value="BrowserStop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -365,6 +419,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>169</MemberValue>
       <Docs>
         <summary>The Browser Stop key (Windows 2000 or later).</summary>
       </Docs>
@@ -373,6 +428,9 @@
       <MemberSignature Language="C#" Value="C" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey C = int32(67)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.C" />
+      <MemberSignature Language="VB.NET" Value="C" />
+      <MemberSignature Language="F#" Value="C = 67" Usage="System.ConsoleKey.C" />
+      <MemberSignature Language="C++ CLI" Value="C" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -391,6 +449,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>67</MemberValue>
       <Docs>
         <summary>The C key.</summary>
       </Docs>
@@ -399,6 +458,9 @@
       <MemberSignature Language="C#" Value="Clear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Clear = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Clear" />
+      <MemberSignature Language="VB.NET" Value="Clear" />
+      <MemberSignature Language="F#" Value="Clear = 12" Usage="System.ConsoleKey.Clear" />
+      <MemberSignature Language="C++ CLI" Value="Clear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -417,6 +479,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>The CLEAR key.</summary>
       </Docs>
@@ -425,6 +488,9 @@
       <MemberSignature Language="C#" Value="CrSel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey CrSel = int32(247)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.CrSel" />
+      <MemberSignature Language="VB.NET" Value="CrSel" />
+      <MemberSignature Language="F#" Value="CrSel = 247" Usage="System.ConsoleKey.CrSel" />
+      <MemberSignature Language="C++ CLI" Value="CrSel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -442,6 +508,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>247</MemberValue>
       <Docs>
         <summary>The CRSEL (CURSOR SELECT) key.</summary>
       </Docs>
@@ -450,6 +517,9 @@
       <MemberSignature Language="C#" Value="D" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey D = int32(68)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D" />
+      <MemberSignature Language="VB.NET" Value="D" />
+      <MemberSignature Language="F#" Value="D = 68" Usage="System.ConsoleKey.D" />
+      <MemberSignature Language="C++ CLI" Value="D" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -468,6 +538,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>68</MemberValue>
       <Docs>
         <summary>The D key.</summary>
       </Docs>
@@ -476,6 +547,9 @@
       <MemberSignature Language="C#" Value="D0" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey D0 = int32(48)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D0" />
+      <MemberSignature Language="VB.NET" Value="D0" />
+      <MemberSignature Language="F#" Value="D0 = 48" Usage="System.ConsoleKey.D0" />
+      <MemberSignature Language="C++ CLI" Value="D0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -494,6 +568,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>48</MemberValue>
       <Docs>
         <summary>The 0 key.</summary>
       </Docs>
@@ -502,6 +577,9 @@
       <MemberSignature Language="C#" Value="D1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey D1 = int32(49)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D1" />
+      <MemberSignature Language="VB.NET" Value="D1" />
+      <MemberSignature Language="F#" Value="D1 = 49" Usage="System.ConsoleKey.D1" />
+      <MemberSignature Language="C++ CLI" Value="D1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -520,6 +598,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>49</MemberValue>
       <Docs>
         <summary>The 1 key.</summary>
       </Docs>
@@ -528,6 +607,9 @@
       <MemberSignature Language="C#" Value="D2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey D2 = int32(50)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D2" />
+      <MemberSignature Language="VB.NET" Value="D2" />
+      <MemberSignature Language="F#" Value="D2 = 50" Usage="System.ConsoleKey.D2" />
+      <MemberSignature Language="C++ CLI" Value="D2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -546,6 +628,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>50</MemberValue>
       <Docs>
         <summary>The 2 key.</summary>
       </Docs>
@@ -554,6 +637,9 @@
       <MemberSignature Language="C#" Value="D3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey D3 = int32(51)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D3" />
+      <MemberSignature Language="VB.NET" Value="D3" />
+      <MemberSignature Language="F#" Value="D3 = 51" Usage="System.ConsoleKey.D3" />
+      <MemberSignature Language="C++ CLI" Value="D3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -572,6 +658,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>51</MemberValue>
       <Docs>
         <summary>The 3 key.</summary>
       </Docs>
@@ -580,6 +667,9 @@
       <MemberSignature Language="C#" Value="D4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey D4 = int32(52)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D4" />
+      <MemberSignature Language="VB.NET" Value="D4" />
+      <MemberSignature Language="F#" Value="D4 = 52" Usage="System.ConsoleKey.D4" />
+      <MemberSignature Language="C++ CLI" Value="D4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -598,6 +688,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>52</MemberValue>
       <Docs>
         <summary>The 4 key.</summary>
       </Docs>
@@ -606,6 +697,9 @@
       <MemberSignature Language="C#" Value="D5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey D5 = int32(53)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D5" />
+      <MemberSignature Language="VB.NET" Value="D5" />
+      <MemberSignature Language="F#" Value="D5 = 53" Usage="System.ConsoleKey.D5" />
+      <MemberSignature Language="C++ CLI" Value="D5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -624,6 +718,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>53</MemberValue>
       <Docs>
         <summary>The 5 key.</summary>
       </Docs>
@@ -632,6 +727,9 @@
       <MemberSignature Language="C#" Value="D6" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey D6 = int32(54)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D6" />
+      <MemberSignature Language="VB.NET" Value="D6" />
+      <MemberSignature Language="F#" Value="D6 = 54" Usage="System.ConsoleKey.D6" />
+      <MemberSignature Language="C++ CLI" Value="D6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -650,6 +748,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>54</MemberValue>
       <Docs>
         <summary>The 6 key.</summary>
       </Docs>
@@ -658,6 +757,9 @@
       <MemberSignature Language="C#" Value="D7" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey D7 = int32(55)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D7" />
+      <MemberSignature Language="VB.NET" Value="D7" />
+      <MemberSignature Language="F#" Value="D7 = 55" Usage="System.ConsoleKey.D7" />
+      <MemberSignature Language="C++ CLI" Value="D7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -676,6 +778,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>55</MemberValue>
       <Docs>
         <summary>The 7 key.</summary>
       </Docs>
@@ -684,6 +787,9 @@
       <MemberSignature Language="C#" Value="D8" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey D8 = int32(56)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D8" />
+      <MemberSignature Language="VB.NET" Value="D8" />
+      <MemberSignature Language="F#" Value="D8 = 56" Usage="System.ConsoleKey.D8" />
+      <MemberSignature Language="C++ CLI" Value="D8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -702,6 +808,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>56</MemberValue>
       <Docs>
         <summary>The 8 key.</summary>
       </Docs>
@@ -710,6 +817,9 @@
       <MemberSignature Language="C#" Value="D9" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey D9 = int32(57)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.D9" />
+      <MemberSignature Language="VB.NET" Value="D9" />
+      <MemberSignature Language="F#" Value="D9 = 57" Usage="System.ConsoleKey.D9" />
+      <MemberSignature Language="C++ CLI" Value="D9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -728,6 +838,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>57</MemberValue>
       <Docs>
         <summary>The 9 key.</summary>
       </Docs>
@@ -736,6 +847,9 @@
       <MemberSignature Language="C#" Value="Decimal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Decimal = int32(110)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Decimal" />
+      <MemberSignature Language="VB.NET" Value="Decimal" />
+      <MemberSignature Language="F#" Value="Decimal = 110" Usage="System.ConsoleKey.Decimal" />
+      <MemberSignature Language="C++ CLI" Value="Decimal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -754,6 +868,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>110</MemberValue>
       <Docs>
         <summary>The Decimal key (the decimal key on the numeric keypad).</summary>
       </Docs>
@@ -762,6 +877,9 @@
       <MemberSignature Language="C#" Value="Delete" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Delete = int32(46)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Delete" />
+      <MemberSignature Language="VB.NET" Value="Delete" />
+      <MemberSignature Language="F#" Value="Delete = 46" Usage="System.ConsoleKey.Delete" />
+      <MemberSignature Language="C++ CLI" Value="Delete" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -780,6 +898,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>46</MemberValue>
       <Docs>
         <summary>The DEL (DELETE) key.</summary>
       </Docs>
@@ -788,6 +907,9 @@
       <MemberSignature Language="C#" Value="Divide" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Divide = int32(111)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Divide" />
+      <MemberSignature Language="VB.NET" Value="Divide" />
+      <MemberSignature Language="F#" Value="Divide = 111" Usage="System.ConsoleKey.Divide" />
+      <MemberSignature Language="C++ CLI" Value="Divide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -806,6 +928,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>111</MemberValue>
       <Docs>
         <summary>The Divide key (the division key on the numeric keypad).</summary>
       </Docs>
@@ -814,6 +937,9 @@
       <MemberSignature Language="C#" Value="DownArrow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey DownArrow = int32(40)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.DownArrow" />
+      <MemberSignature Language="VB.NET" Value="DownArrow" />
+      <MemberSignature Language="F#" Value="DownArrow = 40" Usage="System.ConsoleKey.DownArrow" />
+      <MemberSignature Language="C++ CLI" Value="DownArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -832,6 +958,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>40</MemberValue>
       <Docs>
         <summary>The DOWN ARROW key.</summary>
       </Docs>
@@ -840,6 +967,9 @@
       <MemberSignature Language="C#" Value="E" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey E = int32(69)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.E" />
+      <MemberSignature Language="VB.NET" Value="E" />
+      <MemberSignature Language="F#" Value="E = 69" Usage="System.ConsoleKey.E" />
+      <MemberSignature Language="C++ CLI" Value="E" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -858,6 +988,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>69</MemberValue>
       <Docs>
         <summary>The E key.</summary>
       </Docs>
@@ -866,6 +997,9 @@
       <MemberSignature Language="C#" Value="End" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey End = int32(35)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.End" />
+      <MemberSignature Language="VB.NET" Value="End" />
+      <MemberSignature Language="F#" Value="End = 35" Usage="System.ConsoleKey.End" />
+      <MemberSignature Language="C++ CLI" Value="End" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -884,6 +1018,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>35</MemberValue>
       <Docs>
         <summary>The END key.</summary>
       </Docs>
@@ -892,6 +1027,9 @@
       <MemberSignature Language="C#" Value="Enter" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Enter = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Enter" />
+      <MemberSignature Language="VB.NET" Value="Enter" />
+      <MemberSignature Language="F#" Value="Enter = 13" Usage="System.ConsoleKey.Enter" />
+      <MemberSignature Language="C++ CLI" Value="Enter" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -910,6 +1048,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>The ENTER key.</summary>
       </Docs>
@@ -918,6 +1057,9 @@
       <MemberSignature Language="C#" Value="EraseEndOfFile" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey EraseEndOfFile = int32(249)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.EraseEndOfFile" />
+      <MemberSignature Language="VB.NET" Value="EraseEndOfFile" />
+      <MemberSignature Language="F#" Value="EraseEndOfFile = 249" Usage="System.ConsoleKey.EraseEndOfFile" />
+      <MemberSignature Language="C++ CLI" Value="EraseEndOfFile" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -935,6 +1077,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>249</MemberValue>
       <Docs>
         <summary>The ERASE EOF key.</summary>
       </Docs>
@@ -943,6 +1086,9 @@
       <MemberSignature Language="C#" Value="Escape" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Escape = int32(27)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Escape" />
+      <MemberSignature Language="VB.NET" Value="Escape" />
+      <MemberSignature Language="F#" Value="Escape = 27" Usage="System.ConsoleKey.Escape" />
+      <MemberSignature Language="C++ CLI" Value="Escape" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -961,6 +1107,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>27</MemberValue>
       <Docs>
         <summary>The ESC (ESCAPE) key.</summary>
       </Docs>
@@ -969,6 +1116,9 @@
       <MemberSignature Language="C#" Value="Execute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Execute = int32(43)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Execute" />
+      <MemberSignature Language="VB.NET" Value="Execute" />
+      <MemberSignature Language="F#" Value="Execute = 43" Usage="System.ConsoleKey.Execute" />
+      <MemberSignature Language="C++ CLI" Value="Execute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -987,6 +1137,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>43</MemberValue>
       <Docs>
         <summary>The EXECUTE key.</summary>
       </Docs>
@@ -995,6 +1146,9 @@
       <MemberSignature Language="C#" Value="ExSel" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey ExSel = int32(248)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.ExSel" />
+      <MemberSignature Language="VB.NET" Value="ExSel" />
+      <MemberSignature Language="F#" Value="ExSel = 248" Usage="System.ConsoleKey.ExSel" />
+      <MemberSignature Language="C++ CLI" Value="ExSel" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1012,6 +1166,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>248</MemberValue>
       <Docs>
         <summary>The EXSEL (EXTEND SELECTION) key.</summary>
       </Docs>
@@ -1020,6 +1175,9 @@
       <MemberSignature Language="C#" Value="F" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F = int32(70)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F" />
+      <MemberSignature Language="VB.NET" Value="F" />
+      <MemberSignature Language="F#" Value="F = 70" Usage="System.ConsoleKey.F" />
+      <MemberSignature Language="C++ CLI" Value="F" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1038,6 +1196,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>70</MemberValue>
       <Docs>
         <summary>The F key.</summary>
       </Docs>
@@ -1046,6 +1205,9 @@
       <MemberSignature Language="C#" Value="F1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F1 = int32(112)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F1" />
+      <MemberSignature Language="VB.NET" Value="F1" />
+      <MemberSignature Language="F#" Value="F1 = 112" Usage="System.ConsoleKey.F1" />
+      <MemberSignature Language="C++ CLI" Value="F1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1064,6 +1226,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>112</MemberValue>
       <Docs>
         <summary>The F1 key.</summary>
       </Docs>
@@ -1072,6 +1235,9 @@
       <MemberSignature Language="C#" Value="F10" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F10 = int32(121)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F10" />
+      <MemberSignature Language="VB.NET" Value="F10" />
+      <MemberSignature Language="F#" Value="F10 = 121" Usage="System.ConsoleKey.F10" />
+      <MemberSignature Language="C++ CLI" Value="F10" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1090,6 +1256,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>121</MemberValue>
       <Docs>
         <summary>The F10 key.</summary>
       </Docs>
@@ -1098,6 +1265,9 @@
       <MemberSignature Language="C#" Value="F11" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F11 = int32(122)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F11" />
+      <MemberSignature Language="VB.NET" Value="F11" />
+      <MemberSignature Language="F#" Value="F11 = 122" Usage="System.ConsoleKey.F11" />
+      <MemberSignature Language="C++ CLI" Value="F11" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1116,6 +1286,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>122</MemberValue>
       <Docs>
         <summary>The F11 key.</summary>
       </Docs>
@@ -1124,6 +1295,9 @@
       <MemberSignature Language="C#" Value="F12" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F12 = int32(123)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F12" />
+      <MemberSignature Language="VB.NET" Value="F12" />
+      <MemberSignature Language="F#" Value="F12 = 123" Usage="System.ConsoleKey.F12" />
+      <MemberSignature Language="C++ CLI" Value="F12" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1142,6 +1316,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>123</MemberValue>
       <Docs>
         <summary>The F12 key.</summary>
       </Docs>
@@ -1150,6 +1325,9 @@
       <MemberSignature Language="C#" Value="F13" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F13 = int32(124)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F13" />
+      <MemberSignature Language="VB.NET" Value="F13" />
+      <MemberSignature Language="F#" Value="F13 = 124" Usage="System.ConsoleKey.F13" />
+      <MemberSignature Language="C++ CLI" Value="F13" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1168,6 +1346,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>124</MemberValue>
       <Docs>
         <summary>The F13 key.</summary>
       </Docs>
@@ -1176,6 +1355,9 @@
       <MemberSignature Language="C#" Value="F14" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F14 = int32(125)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F14" />
+      <MemberSignature Language="VB.NET" Value="F14" />
+      <MemberSignature Language="F#" Value="F14 = 125" Usage="System.ConsoleKey.F14" />
+      <MemberSignature Language="C++ CLI" Value="F14" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1194,6 +1376,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>125</MemberValue>
       <Docs>
         <summary>The F14 key.</summary>
       </Docs>
@@ -1202,6 +1385,9 @@
       <MemberSignature Language="C#" Value="F15" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F15 = int32(126)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F15" />
+      <MemberSignature Language="VB.NET" Value="F15" />
+      <MemberSignature Language="F#" Value="F15 = 126" Usage="System.ConsoleKey.F15" />
+      <MemberSignature Language="C++ CLI" Value="F15" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1220,6 +1406,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>126</MemberValue>
       <Docs>
         <summary>The F15 key.</summary>
       </Docs>
@@ -1228,6 +1415,9 @@
       <MemberSignature Language="C#" Value="F16" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F16 = int32(127)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F16" />
+      <MemberSignature Language="VB.NET" Value="F16" />
+      <MemberSignature Language="F#" Value="F16 = 127" Usage="System.ConsoleKey.F16" />
+      <MemberSignature Language="C++ CLI" Value="F16" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1246,6 +1436,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>127</MemberValue>
       <Docs>
         <summary>The F16 key.</summary>
       </Docs>
@@ -1254,6 +1445,9 @@
       <MemberSignature Language="C#" Value="F17" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F17 = int32(128)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F17" />
+      <MemberSignature Language="VB.NET" Value="F17" />
+      <MemberSignature Language="F#" Value="F17 = 128" Usage="System.ConsoleKey.F17" />
+      <MemberSignature Language="C++ CLI" Value="F17" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1272,6 +1466,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>128</MemberValue>
       <Docs>
         <summary>The F17 key.</summary>
       </Docs>
@@ -1280,6 +1475,9 @@
       <MemberSignature Language="C#" Value="F18" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F18 = int32(129)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F18" />
+      <MemberSignature Language="VB.NET" Value="F18" />
+      <MemberSignature Language="F#" Value="F18 = 129" Usage="System.ConsoleKey.F18" />
+      <MemberSignature Language="C++ CLI" Value="F18" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1298,6 +1496,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>129</MemberValue>
       <Docs>
         <summary>The F18 key.</summary>
       </Docs>
@@ -1306,6 +1505,9 @@
       <MemberSignature Language="C#" Value="F19" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F19 = int32(130)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F19" />
+      <MemberSignature Language="VB.NET" Value="F19" />
+      <MemberSignature Language="F#" Value="F19 = 130" Usage="System.ConsoleKey.F19" />
+      <MemberSignature Language="C++ CLI" Value="F19" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1324,6 +1526,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>130</MemberValue>
       <Docs>
         <summary>The F19 key.</summary>
       </Docs>
@@ -1332,6 +1535,9 @@
       <MemberSignature Language="C#" Value="F2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F2 = int32(113)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F2" />
+      <MemberSignature Language="VB.NET" Value="F2" />
+      <MemberSignature Language="F#" Value="F2 = 113" Usage="System.ConsoleKey.F2" />
+      <MemberSignature Language="C++ CLI" Value="F2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1350,6 +1556,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>113</MemberValue>
       <Docs>
         <summary>The F2 key.</summary>
       </Docs>
@@ -1358,6 +1565,9 @@
       <MemberSignature Language="C#" Value="F20" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F20 = int32(131)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F20" />
+      <MemberSignature Language="VB.NET" Value="F20" />
+      <MemberSignature Language="F#" Value="F20 = 131" Usage="System.ConsoleKey.F20" />
+      <MemberSignature Language="C++ CLI" Value="F20" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1376,6 +1586,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>131</MemberValue>
       <Docs>
         <summary>The F20 key.</summary>
       </Docs>
@@ -1384,6 +1595,9 @@
       <MemberSignature Language="C#" Value="F21" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F21 = int32(132)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F21" />
+      <MemberSignature Language="VB.NET" Value="F21" />
+      <MemberSignature Language="F#" Value="F21 = 132" Usage="System.ConsoleKey.F21" />
+      <MemberSignature Language="C++ CLI" Value="F21" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1402,6 +1616,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>132</MemberValue>
       <Docs>
         <summary>The F21 key.</summary>
       </Docs>
@@ -1410,6 +1625,9 @@
       <MemberSignature Language="C#" Value="F22" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F22 = int32(133)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F22" />
+      <MemberSignature Language="VB.NET" Value="F22" />
+      <MemberSignature Language="F#" Value="F22 = 133" Usage="System.ConsoleKey.F22" />
+      <MemberSignature Language="C++ CLI" Value="F22" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1428,6 +1646,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>133</MemberValue>
       <Docs>
         <summary>The F22 key.</summary>
       </Docs>
@@ -1436,6 +1655,9 @@
       <MemberSignature Language="C#" Value="F23" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F23 = int32(134)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F23" />
+      <MemberSignature Language="VB.NET" Value="F23" />
+      <MemberSignature Language="F#" Value="F23 = 134" Usage="System.ConsoleKey.F23" />
+      <MemberSignature Language="C++ CLI" Value="F23" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1454,6 +1676,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>134</MemberValue>
       <Docs>
         <summary>The F23 key.</summary>
       </Docs>
@@ -1462,6 +1685,9 @@
       <MemberSignature Language="C#" Value="F24" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F24 = int32(135)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F24" />
+      <MemberSignature Language="VB.NET" Value="F24" />
+      <MemberSignature Language="F#" Value="F24 = 135" Usage="System.ConsoleKey.F24" />
+      <MemberSignature Language="C++ CLI" Value="F24" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1480,6 +1706,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>135</MemberValue>
       <Docs>
         <summary>The F24 key.</summary>
       </Docs>
@@ -1488,6 +1715,9 @@
       <MemberSignature Language="C#" Value="F3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F3 = int32(114)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F3" />
+      <MemberSignature Language="VB.NET" Value="F3" />
+      <MemberSignature Language="F#" Value="F3 = 114" Usage="System.ConsoleKey.F3" />
+      <MemberSignature Language="C++ CLI" Value="F3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1506,6 +1736,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>114</MemberValue>
       <Docs>
         <summary>The F3 key.</summary>
       </Docs>
@@ -1514,6 +1745,9 @@
       <MemberSignature Language="C#" Value="F4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F4 = int32(115)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F4" />
+      <MemberSignature Language="VB.NET" Value="F4" />
+      <MemberSignature Language="F#" Value="F4 = 115" Usage="System.ConsoleKey.F4" />
+      <MemberSignature Language="C++ CLI" Value="F4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1532,6 +1766,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>115</MemberValue>
       <Docs>
         <summary>The F4 key.</summary>
       </Docs>
@@ -1540,6 +1775,9 @@
       <MemberSignature Language="C#" Value="F5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F5 = int32(116)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F5" />
+      <MemberSignature Language="VB.NET" Value="F5" />
+      <MemberSignature Language="F#" Value="F5 = 116" Usage="System.ConsoleKey.F5" />
+      <MemberSignature Language="C++ CLI" Value="F5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1558,6 +1796,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>116</MemberValue>
       <Docs>
         <summary>The F5 key.</summary>
       </Docs>
@@ -1566,6 +1805,9 @@
       <MemberSignature Language="C#" Value="F6" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F6 = int32(117)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F6" />
+      <MemberSignature Language="VB.NET" Value="F6" />
+      <MemberSignature Language="F#" Value="F6 = 117" Usage="System.ConsoleKey.F6" />
+      <MemberSignature Language="C++ CLI" Value="F6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1584,6 +1826,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>117</MemberValue>
       <Docs>
         <summary>The F6 key.</summary>
       </Docs>
@@ -1592,6 +1835,9 @@
       <MemberSignature Language="C#" Value="F7" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F7 = int32(118)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F7" />
+      <MemberSignature Language="VB.NET" Value="F7" />
+      <MemberSignature Language="F#" Value="F7 = 118" Usage="System.ConsoleKey.F7" />
+      <MemberSignature Language="C++ CLI" Value="F7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1610,6 +1856,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>118</MemberValue>
       <Docs>
         <summary>The F7 key.</summary>
       </Docs>
@@ -1618,6 +1865,9 @@
       <MemberSignature Language="C#" Value="F8" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F8 = int32(119)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F8" />
+      <MemberSignature Language="VB.NET" Value="F8" />
+      <MemberSignature Language="F#" Value="F8 = 119" Usage="System.ConsoleKey.F8" />
+      <MemberSignature Language="C++ CLI" Value="F8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1636,6 +1886,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>119</MemberValue>
       <Docs>
         <summary>The F8 key.</summary>
       </Docs>
@@ -1644,6 +1895,9 @@
       <MemberSignature Language="C#" Value="F9" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey F9 = int32(120)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.F9" />
+      <MemberSignature Language="VB.NET" Value="F9" />
+      <MemberSignature Language="F#" Value="F9 = 120" Usage="System.ConsoleKey.F9" />
+      <MemberSignature Language="C++ CLI" Value="F9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1662,6 +1916,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>120</MemberValue>
       <Docs>
         <summary>The F9 key.</summary>
       </Docs>
@@ -1670,6 +1925,9 @@
       <MemberSignature Language="C#" Value="G" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey G = int32(71)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.G" />
+      <MemberSignature Language="VB.NET" Value="G" />
+      <MemberSignature Language="F#" Value="G = 71" Usage="System.ConsoleKey.G" />
+      <MemberSignature Language="C++ CLI" Value="G" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1688,6 +1946,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>71</MemberValue>
       <Docs>
         <summary>The G key.</summary>
       </Docs>
@@ -1696,6 +1955,9 @@
       <MemberSignature Language="C#" Value="H" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey H = int32(72)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.H" />
+      <MemberSignature Language="VB.NET" Value="H" />
+      <MemberSignature Language="F#" Value="H = 72" Usage="System.ConsoleKey.H" />
+      <MemberSignature Language="C++ CLI" Value="H" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1714,6 +1976,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>72</MemberValue>
       <Docs>
         <summary>The H key.</summary>
       </Docs>
@@ -1722,6 +1985,9 @@
       <MemberSignature Language="C#" Value="Help" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Help = int32(47)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Help" />
+      <MemberSignature Language="VB.NET" Value="Help" />
+      <MemberSignature Language="F#" Value="Help = 47" Usage="System.ConsoleKey.Help" />
+      <MemberSignature Language="C++ CLI" Value="Help" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1740,6 +2006,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>47</MemberValue>
       <Docs>
         <summary>The HELP key.</summary>
       </Docs>
@@ -1748,6 +2015,9 @@
       <MemberSignature Language="C#" Value="Home" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Home = int32(36)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Home" />
+      <MemberSignature Language="VB.NET" Value="Home" />
+      <MemberSignature Language="F#" Value="Home = 36" Usage="System.ConsoleKey.Home" />
+      <MemberSignature Language="C++ CLI" Value="Home" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1766,6 +2036,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>36</MemberValue>
       <Docs>
         <summary>The HOME key.</summary>
       </Docs>
@@ -1774,6 +2045,9 @@
       <MemberSignature Language="C#" Value="I" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey I = int32(73)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.I" />
+      <MemberSignature Language="VB.NET" Value="I" />
+      <MemberSignature Language="F#" Value="I = 73" Usage="System.ConsoleKey.I" />
+      <MemberSignature Language="C++ CLI" Value="I" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1792,6 +2066,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>73</MemberValue>
       <Docs>
         <summary>The I key.</summary>
       </Docs>
@@ -1800,6 +2075,9 @@
       <MemberSignature Language="C#" Value="Insert" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Insert = int32(45)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Insert" />
+      <MemberSignature Language="VB.NET" Value="Insert" />
+      <MemberSignature Language="F#" Value="Insert = 45" Usage="System.ConsoleKey.Insert" />
+      <MemberSignature Language="C++ CLI" Value="Insert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1818,6 +2096,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>45</MemberValue>
       <Docs>
         <summary>The INS (INSERT) key.</summary>
       </Docs>
@@ -1826,6 +2105,9 @@
       <MemberSignature Language="C#" Value="J" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey J = int32(74)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.J" />
+      <MemberSignature Language="VB.NET" Value="J" />
+      <MemberSignature Language="F#" Value="J = 74" Usage="System.ConsoleKey.J" />
+      <MemberSignature Language="C++ CLI" Value="J" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1844,6 +2126,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>74</MemberValue>
       <Docs>
         <summary>The J key.</summary>
       </Docs>
@@ -1852,6 +2135,9 @@
       <MemberSignature Language="C#" Value="K" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey K = int32(75)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.K" />
+      <MemberSignature Language="VB.NET" Value="K" />
+      <MemberSignature Language="F#" Value="K = 75" Usage="System.ConsoleKey.K" />
+      <MemberSignature Language="C++ CLI" Value="K" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1870,6 +2156,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>75</MemberValue>
       <Docs>
         <summary>The K key.</summary>
       </Docs>
@@ -1878,6 +2165,9 @@
       <MemberSignature Language="C#" Value="L" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey L = int32(76)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.L" />
+      <MemberSignature Language="VB.NET" Value="L" />
+      <MemberSignature Language="F#" Value="L = 76" Usage="System.ConsoleKey.L" />
+      <MemberSignature Language="C++ CLI" Value="L" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -1896,6 +2186,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>76</MemberValue>
       <Docs>
         <summary>The L key.</summary>
       </Docs>
@@ -1904,6 +2195,9 @@
       <MemberSignature Language="C#" Value="LaunchApp1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey LaunchApp1 = int32(182)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.LaunchApp1" />
+      <MemberSignature Language="VB.NET" Value="LaunchApp1" />
+      <MemberSignature Language="F#" Value="LaunchApp1 = 182" Usage="System.ConsoleKey.LaunchApp1" />
+      <MemberSignature Language="C++ CLI" Value="LaunchApp1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1921,6 +2215,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>182</MemberValue>
       <Docs>
         <summary>The Start Application 1 key (Microsoft Natural Keyboard, Windows 2000 or later).</summary>
       </Docs>
@@ -1929,6 +2224,9 @@
       <MemberSignature Language="C#" Value="LaunchApp2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey LaunchApp2 = int32(183)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.LaunchApp2" />
+      <MemberSignature Language="VB.NET" Value="LaunchApp2" />
+      <MemberSignature Language="F#" Value="LaunchApp2 = 183" Usage="System.ConsoleKey.LaunchApp2" />
+      <MemberSignature Language="C++ CLI" Value="LaunchApp2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1946,6 +2244,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>183</MemberValue>
       <Docs>
         <summary>The Start Application 2 key (Microsoft Natural Keyboard, Windows 2000 or later).</summary>
       </Docs>
@@ -1954,6 +2253,9 @@
       <MemberSignature Language="C#" Value="LaunchMail" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey LaunchMail = int32(180)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.LaunchMail" />
+      <MemberSignature Language="VB.NET" Value="LaunchMail" />
+      <MemberSignature Language="F#" Value="LaunchMail = 180" Usage="System.ConsoleKey.LaunchMail" />
+      <MemberSignature Language="C++ CLI" Value="LaunchMail" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1971,6 +2273,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>180</MemberValue>
       <Docs>
         <summary>The Start Mail key (Microsoft Natural Keyboard, Windows 2000 or later).</summary>
       </Docs>
@@ -1979,6 +2282,9 @@
       <MemberSignature Language="C#" Value="LaunchMediaSelect" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey LaunchMediaSelect = int32(181)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.LaunchMediaSelect" />
+      <MemberSignature Language="VB.NET" Value="LaunchMediaSelect" />
+      <MemberSignature Language="F#" Value="LaunchMediaSelect = 181" Usage="System.ConsoleKey.LaunchMediaSelect" />
+      <MemberSignature Language="C++ CLI" Value="LaunchMediaSelect" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1996,6 +2302,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>181</MemberValue>
       <Docs>
         <summary>The Select Media key (Microsoft Natural Keyboard, Windows 2000 or later).</summary>
       </Docs>
@@ -2004,6 +2311,9 @@
       <MemberSignature Language="C#" Value="LeftArrow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey LeftArrow = int32(37)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.LeftArrow" />
+      <MemberSignature Language="VB.NET" Value="LeftArrow" />
+      <MemberSignature Language="F#" Value="LeftArrow = 37" Usage="System.ConsoleKey.LeftArrow" />
+      <MemberSignature Language="C++ CLI" Value="LeftArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2022,6 +2332,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>37</MemberValue>
       <Docs>
         <summary>The LEFT ARROW key.</summary>
       </Docs>
@@ -2030,6 +2341,9 @@
       <MemberSignature Language="C#" Value="LeftWindows" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey LeftWindows = int32(91)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.LeftWindows" />
+      <MemberSignature Language="VB.NET" Value="LeftWindows" />
+      <MemberSignature Language="F#" Value="LeftWindows = 91" Usage="System.ConsoleKey.LeftWindows" />
+      <MemberSignature Language="C++ CLI" Value="LeftWindows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2047,6 +2361,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>91</MemberValue>
       <Docs>
         <summary>The left Windows logo key (Microsoft Natural Keyboard).</summary>
       </Docs>
@@ -2055,6 +2370,9 @@
       <MemberSignature Language="C#" Value="M" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey M = int32(77)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.M" />
+      <MemberSignature Language="VB.NET" Value="M" />
+      <MemberSignature Language="F#" Value="M = 77" Usage="System.ConsoleKey.M" />
+      <MemberSignature Language="C++ CLI" Value="M" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2073,6 +2391,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>77</MemberValue>
       <Docs>
         <summary>The M key.</summary>
       </Docs>
@@ -2081,6 +2400,9 @@
       <MemberSignature Language="C#" Value="MediaNext" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey MediaNext = int32(176)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.MediaNext" />
+      <MemberSignature Language="VB.NET" Value="MediaNext" />
+      <MemberSignature Language="F#" Value="MediaNext = 176" Usage="System.ConsoleKey.MediaNext" />
+      <MemberSignature Language="C++ CLI" Value="MediaNext" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2098,6 +2420,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>176</MemberValue>
       <Docs>
         <summary>The Media Next Track key (Windows 2000 or later).</summary>
       </Docs>
@@ -2106,6 +2429,9 @@
       <MemberSignature Language="C#" Value="MediaPlay" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey MediaPlay = int32(179)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.MediaPlay" />
+      <MemberSignature Language="VB.NET" Value="MediaPlay" />
+      <MemberSignature Language="F#" Value="MediaPlay = 179" Usage="System.ConsoleKey.MediaPlay" />
+      <MemberSignature Language="C++ CLI" Value="MediaPlay" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2123,6 +2449,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>179</MemberValue>
       <Docs>
         <summary>The Media Play/Pause key (Windows 2000 or later).</summary>
       </Docs>
@@ -2131,6 +2458,9 @@
       <MemberSignature Language="C#" Value="MediaPrevious" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey MediaPrevious = int32(177)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.MediaPrevious" />
+      <MemberSignature Language="VB.NET" Value="MediaPrevious" />
+      <MemberSignature Language="F#" Value="MediaPrevious = 177" Usage="System.ConsoleKey.MediaPrevious" />
+      <MemberSignature Language="C++ CLI" Value="MediaPrevious" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2148,6 +2478,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>177</MemberValue>
       <Docs>
         <summary>The Media Previous Track key (Windows 2000 or later).</summary>
       </Docs>
@@ -2156,6 +2487,9 @@
       <MemberSignature Language="C#" Value="MediaStop" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey MediaStop = int32(178)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.MediaStop" />
+      <MemberSignature Language="VB.NET" Value="MediaStop" />
+      <MemberSignature Language="F#" Value="MediaStop = 178" Usage="System.ConsoleKey.MediaStop" />
+      <MemberSignature Language="C++ CLI" Value="MediaStop" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2173,6 +2507,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>178</MemberValue>
       <Docs>
         <summary>The Media Stop key (Windows 2000 or later).</summary>
       </Docs>
@@ -2181,6 +2516,9 @@
       <MemberSignature Language="C#" Value="Multiply" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Multiply = int32(106)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Multiply" />
+      <MemberSignature Language="VB.NET" Value="Multiply" />
+      <MemberSignature Language="F#" Value="Multiply = 106" Usage="System.ConsoleKey.Multiply" />
+      <MemberSignature Language="C++ CLI" Value="Multiply" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2199,6 +2537,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>106</MemberValue>
       <Docs>
         <summary>The Multiply key (the multiplication key on the numeric keypad).</summary>
       </Docs>
@@ -2207,6 +2546,9 @@
       <MemberSignature Language="C#" Value="N" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey N = int32(78)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.N" />
+      <MemberSignature Language="VB.NET" Value="N" />
+      <MemberSignature Language="F#" Value="N = 78" Usage="System.ConsoleKey.N" />
+      <MemberSignature Language="C++ CLI" Value="N" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2225,6 +2567,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>78</MemberValue>
       <Docs>
         <summary>The N key.</summary>
       </Docs>
@@ -2233,6 +2576,9 @@
       <MemberSignature Language="C#" Value="NoName" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey NoName = int32(252)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NoName" />
+      <MemberSignature Language="VB.NET" Value="NoName" />
+      <MemberSignature Language="F#" Value="NoName = 252" Usage="System.ConsoleKey.NoName" />
+      <MemberSignature Language="C++ CLI" Value="NoName" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2250,6 +2596,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>252</MemberValue>
       <Docs>
         <summary>A constant reserved for future use.</summary>
       </Docs>
@@ -2258,6 +2605,9 @@
       <MemberSignature Language="C#" Value="NumPad0" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey NumPad0 = int32(96)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad0" />
+      <MemberSignature Language="VB.NET" Value="NumPad0" />
+      <MemberSignature Language="F#" Value="NumPad0 = 96" Usage="System.ConsoleKey.NumPad0" />
+      <MemberSignature Language="C++ CLI" Value="NumPad0" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2276,6 +2626,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>96</MemberValue>
       <Docs>
         <summary>The 0 key on the numeric keypad.</summary>
       </Docs>
@@ -2284,6 +2635,9 @@
       <MemberSignature Language="C#" Value="NumPad1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey NumPad1 = int32(97)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad1" />
+      <MemberSignature Language="VB.NET" Value="NumPad1" />
+      <MemberSignature Language="F#" Value="NumPad1 = 97" Usage="System.ConsoleKey.NumPad1" />
+      <MemberSignature Language="C++ CLI" Value="NumPad1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2302,6 +2656,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>97</MemberValue>
       <Docs>
         <summary>The 1 key on the numeric keypad.</summary>
       </Docs>
@@ -2310,6 +2665,9 @@
       <MemberSignature Language="C#" Value="NumPad2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey NumPad2 = int32(98)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad2" />
+      <MemberSignature Language="VB.NET" Value="NumPad2" />
+      <MemberSignature Language="F#" Value="NumPad2 = 98" Usage="System.ConsoleKey.NumPad2" />
+      <MemberSignature Language="C++ CLI" Value="NumPad2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2328,6 +2686,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>98</MemberValue>
       <Docs>
         <summary>The 2 key on the numeric keypad.</summary>
       </Docs>
@@ -2336,6 +2695,9 @@
       <MemberSignature Language="C#" Value="NumPad3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey NumPad3 = int32(99)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad3" />
+      <MemberSignature Language="VB.NET" Value="NumPad3" />
+      <MemberSignature Language="F#" Value="NumPad3 = 99" Usage="System.ConsoleKey.NumPad3" />
+      <MemberSignature Language="C++ CLI" Value="NumPad3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2354,6 +2716,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>99</MemberValue>
       <Docs>
         <summary>The 3 key on the numeric keypad.</summary>
       </Docs>
@@ -2362,6 +2725,9 @@
       <MemberSignature Language="C#" Value="NumPad4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey NumPad4 = int32(100)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad4" />
+      <MemberSignature Language="VB.NET" Value="NumPad4" />
+      <MemberSignature Language="F#" Value="NumPad4 = 100" Usage="System.ConsoleKey.NumPad4" />
+      <MemberSignature Language="C++ CLI" Value="NumPad4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2380,6 +2746,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>100</MemberValue>
       <Docs>
         <summary>The 4 key on the numeric keypad.</summary>
       </Docs>
@@ -2388,6 +2755,9 @@
       <MemberSignature Language="C#" Value="NumPad5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey NumPad5 = int32(101)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad5" />
+      <MemberSignature Language="VB.NET" Value="NumPad5" />
+      <MemberSignature Language="F#" Value="NumPad5 = 101" Usage="System.ConsoleKey.NumPad5" />
+      <MemberSignature Language="C++ CLI" Value="NumPad5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2406,6 +2776,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>101</MemberValue>
       <Docs>
         <summary>The 5 key on the numeric keypad.</summary>
       </Docs>
@@ -2414,6 +2785,9 @@
       <MemberSignature Language="C#" Value="NumPad6" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey NumPad6 = int32(102)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad6" />
+      <MemberSignature Language="VB.NET" Value="NumPad6" />
+      <MemberSignature Language="F#" Value="NumPad6 = 102" Usage="System.ConsoleKey.NumPad6" />
+      <MemberSignature Language="C++ CLI" Value="NumPad6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2432,6 +2806,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>102</MemberValue>
       <Docs>
         <summary>The 6 key on the numeric keypad.</summary>
       </Docs>
@@ -2440,6 +2815,9 @@
       <MemberSignature Language="C#" Value="NumPad7" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey NumPad7 = int32(103)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad7" />
+      <MemberSignature Language="VB.NET" Value="NumPad7" />
+      <MemberSignature Language="F#" Value="NumPad7 = 103" Usage="System.ConsoleKey.NumPad7" />
+      <MemberSignature Language="C++ CLI" Value="NumPad7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2458,6 +2836,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>103</MemberValue>
       <Docs>
         <summary>The 7 key on the numeric keypad.</summary>
       </Docs>
@@ -2466,6 +2845,9 @@
       <MemberSignature Language="C#" Value="NumPad8" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey NumPad8 = int32(104)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad8" />
+      <MemberSignature Language="VB.NET" Value="NumPad8" />
+      <MemberSignature Language="F#" Value="NumPad8 = 104" Usage="System.ConsoleKey.NumPad8" />
+      <MemberSignature Language="C++ CLI" Value="NumPad8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2484,6 +2866,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>104</MemberValue>
       <Docs>
         <summary>The 8 key on the numeric keypad.</summary>
       </Docs>
@@ -2492,6 +2875,9 @@
       <MemberSignature Language="C#" Value="NumPad9" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey NumPad9 = int32(105)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.NumPad9" />
+      <MemberSignature Language="VB.NET" Value="NumPad9" />
+      <MemberSignature Language="F#" Value="NumPad9 = 105" Usage="System.ConsoleKey.NumPad9" />
+      <MemberSignature Language="C++ CLI" Value="NumPad9" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2510,6 +2896,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>105</MemberValue>
       <Docs>
         <summary>The 9 key on the numeric keypad.</summary>
       </Docs>
@@ -2518,6 +2905,9 @@
       <MemberSignature Language="C#" Value="O" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey O = int32(79)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.O" />
+      <MemberSignature Language="VB.NET" Value="O" />
+      <MemberSignature Language="F#" Value="O = 79" Usage="System.ConsoleKey.O" />
+      <MemberSignature Language="C++ CLI" Value="O" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2536,6 +2926,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>79</MemberValue>
       <Docs>
         <summary>The O key.</summary>
       </Docs>
@@ -2544,6 +2935,9 @@
       <MemberSignature Language="C#" Value="Oem1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Oem1 = int32(186)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem1" />
+      <MemberSignature Language="VB.NET" Value="Oem1" />
+      <MemberSignature Language="F#" Value="Oem1 = 186" Usage="System.ConsoleKey.Oem1" />
+      <MemberSignature Language="C++ CLI" Value="Oem1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2562,6 +2956,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>186</MemberValue>
       <Docs>
         <summary>The OEM 1 key (OEM specific).</summary>
       </Docs>
@@ -2570,6 +2965,9 @@
       <MemberSignature Language="C#" Value="Oem102" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Oem102 = int32(226)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem102" />
+      <MemberSignature Language="VB.NET" Value="Oem102" />
+      <MemberSignature Language="F#" Value="Oem102 = 226" Usage="System.ConsoleKey.Oem102" />
+      <MemberSignature Language="C++ CLI" Value="Oem102" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2587,6 +2985,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>226</MemberValue>
       <Docs>
         <summary>The OEM 102 key (OEM specific).</summary>
       </Docs>
@@ -2595,6 +2994,9 @@
       <MemberSignature Language="C#" Value="Oem2" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Oem2 = int32(191)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem2" />
+      <MemberSignature Language="VB.NET" Value="Oem2" />
+      <MemberSignature Language="F#" Value="Oem2 = 191" Usage="System.ConsoleKey.Oem2" />
+      <MemberSignature Language="C++ CLI" Value="Oem2" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2613,6 +3015,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>191</MemberValue>
       <Docs>
         <summary>The OEM 2 key (OEM specific).</summary>
       </Docs>
@@ -2621,6 +3024,9 @@
       <MemberSignature Language="C#" Value="Oem3" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Oem3 = int32(192)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem3" />
+      <MemberSignature Language="VB.NET" Value="Oem3" />
+      <MemberSignature Language="F#" Value="Oem3 = 192" Usage="System.ConsoleKey.Oem3" />
+      <MemberSignature Language="C++ CLI" Value="Oem3" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2639,6 +3045,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>192</MemberValue>
       <Docs>
         <summary>The OEM 3 key (OEM specific).</summary>
       </Docs>
@@ -2647,6 +3054,9 @@
       <MemberSignature Language="C#" Value="Oem4" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Oem4 = int32(219)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem4" />
+      <MemberSignature Language="VB.NET" Value="Oem4" />
+      <MemberSignature Language="F#" Value="Oem4 = 219" Usage="System.ConsoleKey.Oem4" />
+      <MemberSignature Language="C++ CLI" Value="Oem4" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2665,6 +3075,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>219</MemberValue>
       <Docs>
         <summary>The OEM 4 key (OEM specific).</summary>
       </Docs>
@@ -2673,6 +3084,9 @@
       <MemberSignature Language="C#" Value="Oem5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Oem5 = int32(220)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem5" />
+      <MemberSignature Language="VB.NET" Value="Oem5" />
+      <MemberSignature Language="F#" Value="Oem5 = 220" Usage="System.ConsoleKey.Oem5" />
+      <MemberSignature Language="C++ CLI" Value="Oem5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2691,6 +3105,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>220</MemberValue>
       <Docs>
         <summary>The OEM 5 (OEM specific).</summary>
       </Docs>
@@ -2699,6 +3114,9 @@
       <MemberSignature Language="C#" Value="Oem6" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Oem6 = int32(221)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem6" />
+      <MemberSignature Language="VB.NET" Value="Oem6" />
+      <MemberSignature Language="F#" Value="Oem6 = 221" Usage="System.ConsoleKey.Oem6" />
+      <MemberSignature Language="C++ CLI" Value="Oem6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2717,6 +3135,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>221</MemberValue>
       <Docs>
         <summary>The OEM 6 key (OEM specific).</summary>
       </Docs>
@@ -2725,6 +3144,9 @@
       <MemberSignature Language="C#" Value="Oem7" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Oem7 = int32(222)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem7" />
+      <MemberSignature Language="VB.NET" Value="Oem7" />
+      <MemberSignature Language="F#" Value="Oem7 = 222" Usage="System.ConsoleKey.Oem7" />
+      <MemberSignature Language="C++ CLI" Value="Oem7" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2743,6 +3165,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>222</MemberValue>
       <Docs>
         <summary>The OEM 7 key (OEM specific).</summary>
       </Docs>
@@ -2751,6 +3174,9 @@
       <MemberSignature Language="C#" Value="Oem8" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Oem8 = int32(223)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Oem8" />
+      <MemberSignature Language="VB.NET" Value="Oem8" />
+      <MemberSignature Language="F#" Value="Oem8 = 223" Usage="System.ConsoleKey.Oem8" />
+      <MemberSignature Language="C++ CLI" Value="Oem8" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2769,6 +3195,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>223</MemberValue>
       <Docs>
         <summary>The OEM 8 key (OEM specific).</summary>
       </Docs>
@@ -2777,6 +3204,9 @@
       <MemberSignature Language="C#" Value="OemClear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey OemClear = int32(254)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.OemClear" />
+      <MemberSignature Language="VB.NET" Value="OemClear" />
+      <MemberSignature Language="F#" Value="OemClear = 254" Usage="System.ConsoleKey.OemClear" />
+      <MemberSignature Language="C++ CLI" Value="OemClear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2795,6 +3225,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>254</MemberValue>
       <Docs>
         <summary>The CLEAR key (OEM specific).</summary>
       </Docs>
@@ -2803,6 +3234,9 @@
       <MemberSignature Language="C#" Value="OemComma" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey OemComma = int32(188)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.OemComma" />
+      <MemberSignature Language="VB.NET" Value="OemComma" />
+      <MemberSignature Language="F#" Value="OemComma = 188" Usage="System.ConsoleKey.OemComma" />
+      <MemberSignature Language="C++ CLI" Value="OemComma" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2821,6 +3255,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>188</MemberValue>
       <Docs>
         <summary>The OEM Comma key on any country/region keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2829,6 +3264,9 @@
       <MemberSignature Language="C#" Value="OemMinus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey OemMinus = int32(189)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.OemMinus" />
+      <MemberSignature Language="VB.NET" Value="OemMinus" />
+      <MemberSignature Language="F#" Value="OemMinus = 189" Usage="System.ConsoleKey.OemMinus" />
+      <MemberSignature Language="C++ CLI" Value="OemMinus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2847,6 +3285,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>189</MemberValue>
       <Docs>
         <summary>The OEM Minus key on any country/region keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2855,6 +3294,9 @@
       <MemberSignature Language="C#" Value="OemPeriod" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey OemPeriod = int32(190)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.OemPeriod" />
+      <MemberSignature Language="VB.NET" Value="OemPeriod" />
+      <MemberSignature Language="F#" Value="OemPeriod = 190" Usage="System.ConsoleKey.OemPeriod" />
+      <MemberSignature Language="C++ CLI" Value="OemPeriod" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2873,6 +3315,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>190</MemberValue>
       <Docs>
         <summary>The OEM Period key on any country/region keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2881,6 +3324,9 @@
       <MemberSignature Language="C#" Value="OemPlus" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey OemPlus = int32(187)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.OemPlus" />
+      <MemberSignature Language="VB.NET" Value="OemPlus" />
+      <MemberSignature Language="F#" Value="OemPlus = 187" Usage="System.ConsoleKey.OemPlus" />
+      <MemberSignature Language="C++ CLI" Value="OemPlus" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2899,6 +3345,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>187</MemberValue>
       <Docs>
         <summary>The OEM Plus key on any country/region keyboard (Windows 2000 or later).</summary>
       </Docs>
@@ -2907,6 +3354,9 @@
       <MemberSignature Language="C#" Value="P" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey P = int32(80)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.P" />
+      <MemberSignature Language="VB.NET" Value="P" />
+      <MemberSignature Language="F#" Value="P = 80" Usage="System.ConsoleKey.P" />
+      <MemberSignature Language="C++ CLI" Value="P" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -2925,6 +3375,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>80</MemberValue>
       <Docs>
         <summary>The P key.</summary>
       </Docs>
@@ -2933,6 +3384,9 @@
       <MemberSignature Language="C#" Value="Pa1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Pa1 = int32(253)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Pa1" />
+      <MemberSignature Language="VB.NET" Value="Pa1" />
+      <MemberSignature Language="F#" Value="Pa1 = 253" Usage="System.ConsoleKey.Pa1" />
+      <MemberSignature Language="C++ CLI" Value="Pa1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2950,6 +3404,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>253</MemberValue>
       <Docs>
         <summary>The PA1 key.</summary>
       </Docs>
@@ -2958,6 +3413,9 @@
       <MemberSignature Language="C#" Value="Packet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Packet = int32(231)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Packet" />
+      <MemberSignature Language="VB.NET" Value="Packet" />
+      <MemberSignature Language="F#" Value="Packet = 231" Usage="System.ConsoleKey.Packet" />
+      <MemberSignature Language="C++ CLI" Value="Packet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2975,6 +3433,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>231</MemberValue>
       <Docs>
         <summary>The PACKET key (used to pass Unicode characters with keystrokes).</summary>
       </Docs>
@@ -2983,6 +3442,9 @@
       <MemberSignature Language="C#" Value="PageDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey PageDown = int32(34)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.PageDown" />
+      <MemberSignature Language="VB.NET" Value="PageDown" />
+      <MemberSignature Language="F#" Value="PageDown = 34" Usage="System.ConsoleKey.PageDown" />
+      <MemberSignature Language="C++ CLI" Value="PageDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3001,6 +3463,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>34</MemberValue>
       <Docs>
         <summary>The PAGE DOWN key.</summary>
       </Docs>
@@ -3009,6 +3472,9 @@
       <MemberSignature Language="C#" Value="PageUp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey PageUp = int32(33)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.PageUp" />
+      <MemberSignature Language="VB.NET" Value="PageUp" />
+      <MemberSignature Language="F#" Value="PageUp = 33" Usage="System.ConsoleKey.PageUp" />
+      <MemberSignature Language="C++ CLI" Value="PageUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3027,6 +3493,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>33</MemberValue>
       <Docs>
         <summary>The PAGE UP key.</summary>
       </Docs>
@@ -3035,6 +3502,9 @@
       <MemberSignature Language="C#" Value="Pause" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Pause = int32(19)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Pause" />
+      <MemberSignature Language="VB.NET" Value="Pause" />
+      <MemberSignature Language="F#" Value="Pause = 19" Usage="System.ConsoleKey.Pause" />
+      <MemberSignature Language="C++ CLI" Value="Pause" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3053,6 +3523,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>19</MemberValue>
       <Docs>
         <summary>The PAUSE key.</summary>
       </Docs>
@@ -3061,6 +3532,9 @@
       <MemberSignature Language="C#" Value="Play" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Play = int32(250)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Play" />
+      <MemberSignature Language="VB.NET" Value="Play" />
+      <MemberSignature Language="F#" Value="Play = 250" Usage="System.ConsoleKey.Play" />
+      <MemberSignature Language="C++ CLI" Value="Play" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3078,6 +3552,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>250</MemberValue>
       <Docs>
         <summary>The PLAY key.</summary>
       </Docs>
@@ -3086,6 +3561,9 @@
       <MemberSignature Language="C#" Value="Print" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Print = int32(42)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Print" />
+      <MemberSignature Language="VB.NET" Value="Print" />
+      <MemberSignature Language="F#" Value="Print = 42" Usage="System.ConsoleKey.Print" />
+      <MemberSignature Language="C++ CLI" Value="Print" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3104,6 +3582,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>42</MemberValue>
       <Docs>
         <summary>The PRINT key.</summary>
       </Docs>
@@ -3112,6 +3591,9 @@
       <MemberSignature Language="C#" Value="PrintScreen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey PrintScreen = int32(44)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.PrintScreen" />
+      <MemberSignature Language="VB.NET" Value="PrintScreen" />
+      <MemberSignature Language="F#" Value="PrintScreen = 44" Usage="System.ConsoleKey.PrintScreen" />
+      <MemberSignature Language="C++ CLI" Value="PrintScreen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3130,6 +3612,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>44</MemberValue>
       <Docs>
         <summary>The PRINT SCREEN key.</summary>
       </Docs>
@@ -3138,6 +3621,9 @@
       <MemberSignature Language="C#" Value="Process" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Process = int32(229)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Process" />
+      <MemberSignature Language="VB.NET" Value="Process" />
+      <MemberSignature Language="F#" Value="Process = 229" Usage="System.ConsoleKey.Process" />
+      <MemberSignature Language="C++ CLI" Value="Process" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3155,6 +3641,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>229</MemberValue>
       <Docs>
         <summary>The IME PROCESS key.</summary>
       </Docs>
@@ -3163,6 +3650,9 @@
       <MemberSignature Language="C#" Value="Q" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Q = int32(81)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Q" />
+      <MemberSignature Language="VB.NET" Value="Q" />
+      <MemberSignature Language="F#" Value="Q = 81" Usage="System.ConsoleKey.Q" />
+      <MemberSignature Language="C++ CLI" Value="Q" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3181,6 +3671,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>81</MemberValue>
       <Docs>
         <summary>The Q key.</summary>
       </Docs>
@@ -3189,6 +3680,9 @@
       <MemberSignature Language="C#" Value="R" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey R = int32(82)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.R" />
+      <MemberSignature Language="VB.NET" Value="R" />
+      <MemberSignature Language="F#" Value="R = 82" Usage="System.ConsoleKey.R" />
+      <MemberSignature Language="C++ CLI" Value="R" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3207,6 +3701,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>82</MemberValue>
       <Docs>
         <summary>The R key.</summary>
       </Docs>
@@ -3215,6 +3710,9 @@
       <MemberSignature Language="C#" Value="RightArrow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey RightArrow = int32(39)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.RightArrow" />
+      <MemberSignature Language="VB.NET" Value="RightArrow" />
+      <MemberSignature Language="F#" Value="RightArrow = 39" Usage="System.ConsoleKey.RightArrow" />
+      <MemberSignature Language="C++ CLI" Value="RightArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3233,6 +3731,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>39</MemberValue>
       <Docs>
         <summary>The RIGHT ARROW key.</summary>
       </Docs>
@@ -3241,6 +3740,9 @@
       <MemberSignature Language="C#" Value="RightWindows" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey RightWindows = int32(92)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.RightWindows" />
+      <MemberSignature Language="VB.NET" Value="RightWindows" />
+      <MemberSignature Language="F#" Value="RightWindows = 92" Usage="System.ConsoleKey.RightWindows" />
+      <MemberSignature Language="C++ CLI" Value="RightWindows" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3258,6 +3760,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>92</MemberValue>
       <Docs>
         <summary>The right Windows logo key (Microsoft Natural Keyboard).</summary>
       </Docs>
@@ -3266,6 +3769,9 @@
       <MemberSignature Language="C#" Value="S" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey S = int32(83)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.S" />
+      <MemberSignature Language="VB.NET" Value="S" />
+      <MemberSignature Language="F#" Value="S = 83" Usage="System.ConsoleKey.S" />
+      <MemberSignature Language="C++ CLI" Value="S" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3284,6 +3790,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>83</MemberValue>
       <Docs>
         <summary>The S key.</summary>
       </Docs>
@@ -3292,6 +3799,9 @@
       <MemberSignature Language="C#" Value="Select" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Select = int32(41)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Select" />
+      <MemberSignature Language="VB.NET" Value="Select" />
+      <MemberSignature Language="F#" Value="Select = 41" Usage="System.ConsoleKey.Select" />
+      <MemberSignature Language="C++ CLI" Value="Select" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3310,6 +3820,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>41</MemberValue>
       <Docs>
         <summary>The SELECT key.</summary>
       </Docs>
@@ -3318,6 +3829,9 @@
       <MemberSignature Language="C#" Value="Separator" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Separator = int32(108)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Separator" />
+      <MemberSignature Language="VB.NET" Value="Separator" />
+      <MemberSignature Language="F#" Value="Separator = 108" Usage="System.ConsoleKey.Separator" />
+      <MemberSignature Language="C++ CLI" Value="Separator" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3336,6 +3850,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>108</MemberValue>
       <Docs>
         <summary>The Separator key.</summary>
       </Docs>
@@ -3344,6 +3859,9 @@
       <MemberSignature Language="C#" Value="Sleep" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Sleep = int32(95)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Sleep" />
+      <MemberSignature Language="VB.NET" Value="Sleep" />
+      <MemberSignature Language="F#" Value="Sleep = 95" Usage="System.ConsoleKey.Sleep" />
+      <MemberSignature Language="C++ CLI" Value="Sleep" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3362,6 +3880,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>95</MemberValue>
       <Docs>
         <summary>The Computer Sleep key.</summary>
       </Docs>
@@ -3370,6 +3889,9 @@
       <MemberSignature Language="C#" Value="Spacebar" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Spacebar = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Spacebar" />
+      <MemberSignature Language="VB.NET" Value="Spacebar" />
+      <MemberSignature Language="F#" Value="Spacebar = 32" Usage="System.ConsoleKey.Spacebar" />
+      <MemberSignature Language="C++ CLI" Value="Spacebar" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3388,6 +3910,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>The SPACEBAR key.</summary>
       </Docs>
@@ -3396,6 +3919,9 @@
       <MemberSignature Language="C#" Value="Subtract" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Subtract = int32(109)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Subtract" />
+      <MemberSignature Language="VB.NET" Value="Subtract" />
+      <MemberSignature Language="F#" Value="Subtract = 109" Usage="System.ConsoleKey.Subtract" />
+      <MemberSignature Language="C++ CLI" Value="Subtract" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3414,6 +3940,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>109</MemberValue>
       <Docs>
         <summary>The Subtract key (the subtraction key on the numeric keypad).</summary>
       </Docs>
@@ -3422,6 +3949,9 @@
       <MemberSignature Language="C#" Value="T" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey T = int32(84)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.T" />
+      <MemberSignature Language="VB.NET" Value="T" />
+      <MemberSignature Language="F#" Value="T = 84" Usage="System.ConsoleKey.T" />
+      <MemberSignature Language="C++ CLI" Value="T" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3440,6 +3970,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>84</MemberValue>
       <Docs>
         <summary>The T key.</summary>
       </Docs>
@@ -3448,6 +3979,9 @@
       <MemberSignature Language="C#" Value="Tab" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Tab = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Tab" />
+      <MemberSignature Language="VB.NET" Value="Tab" />
+      <MemberSignature Language="F#" Value="Tab = 9" Usage="System.ConsoleKey.Tab" />
+      <MemberSignature Language="C++ CLI" Value="Tab" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3466,6 +4000,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>The TAB key.</summary>
       </Docs>
@@ -3474,6 +4009,9 @@
       <MemberSignature Language="C#" Value="U" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey U = int32(85)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.U" />
+      <MemberSignature Language="VB.NET" Value="U" />
+      <MemberSignature Language="F#" Value="U = 85" Usage="System.ConsoleKey.U" />
+      <MemberSignature Language="C++ CLI" Value="U" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3492,6 +4030,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>85</MemberValue>
       <Docs>
         <summary>The U key.</summary>
       </Docs>
@@ -3500,6 +4039,9 @@
       <MemberSignature Language="C#" Value="UpArrow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey UpArrow = int32(38)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.UpArrow" />
+      <MemberSignature Language="VB.NET" Value="UpArrow" />
+      <MemberSignature Language="F#" Value="UpArrow = 38" Usage="System.ConsoleKey.UpArrow" />
+      <MemberSignature Language="C++ CLI" Value="UpArrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3518,6 +4060,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>38</MemberValue>
       <Docs>
         <summary>The UP ARROW key.</summary>
       </Docs>
@@ -3526,6 +4069,9 @@
       <MemberSignature Language="C#" Value="V" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey V = int32(86)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.V" />
+      <MemberSignature Language="VB.NET" Value="V" />
+      <MemberSignature Language="F#" Value="V = 86" Usage="System.ConsoleKey.V" />
+      <MemberSignature Language="C++ CLI" Value="V" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3544,6 +4090,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>86</MemberValue>
       <Docs>
         <summary>The V key.</summary>
       </Docs>
@@ -3552,6 +4099,9 @@
       <MemberSignature Language="C#" Value="VolumeDown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey VolumeDown = int32(174)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.VolumeDown" />
+      <MemberSignature Language="VB.NET" Value="VolumeDown" />
+      <MemberSignature Language="F#" Value="VolumeDown = 174" Usage="System.ConsoleKey.VolumeDown" />
+      <MemberSignature Language="C++ CLI" Value="VolumeDown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3569,6 +4119,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>174</MemberValue>
       <Docs>
         <summary>The Volume Down key (Microsoft Natural Keyboard, Windows 2000 or later).</summary>
       </Docs>
@@ -3577,6 +4128,9 @@
       <MemberSignature Language="C#" Value="VolumeMute" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey VolumeMute = int32(173)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.VolumeMute" />
+      <MemberSignature Language="VB.NET" Value="VolumeMute" />
+      <MemberSignature Language="F#" Value="VolumeMute = 173" Usage="System.ConsoleKey.VolumeMute" />
+      <MemberSignature Language="C++ CLI" Value="VolumeMute" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3594,6 +4148,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>173</MemberValue>
       <Docs>
         <summary>The Volume Mute key (Microsoft Natural Keyboard, Windows 2000 or later).</summary>
       </Docs>
@@ -3602,6 +4157,9 @@
       <MemberSignature Language="C#" Value="VolumeUp" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey VolumeUp = int32(175)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.VolumeUp" />
+      <MemberSignature Language="VB.NET" Value="VolumeUp" />
+      <MemberSignature Language="F#" Value="VolumeUp = 175" Usage="System.ConsoleKey.VolumeUp" />
+      <MemberSignature Language="C++ CLI" Value="VolumeUp" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3619,6 +4177,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>175</MemberValue>
       <Docs>
         <summary>The Volume Up key (Microsoft Natural Keyboard, Windows 2000 or later).</summary>
       </Docs>
@@ -3627,6 +4186,9 @@
       <MemberSignature Language="C#" Value="W" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey W = int32(87)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.W" />
+      <MemberSignature Language="VB.NET" Value="W" />
+      <MemberSignature Language="F#" Value="W = 87" Usage="System.ConsoleKey.W" />
+      <MemberSignature Language="C++ CLI" Value="W" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3645,6 +4207,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>87</MemberValue>
       <Docs>
         <summary>The W key.</summary>
       </Docs>
@@ -3653,6 +4216,9 @@
       <MemberSignature Language="C#" Value="X" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey X = int32(88)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.X" />
+      <MemberSignature Language="VB.NET" Value="X" />
+      <MemberSignature Language="F#" Value="X = 88" Usage="System.ConsoleKey.X" />
+      <MemberSignature Language="C++ CLI" Value="X" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3671,6 +4237,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>88</MemberValue>
       <Docs>
         <summary>The X key.</summary>
       </Docs>
@@ -3679,6 +4246,9 @@
       <MemberSignature Language="C#" Value="Y" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Y = int32(89)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Y" />
+      <MemberSignature Language="VB.NET" Value="Y" />
+      <MemberSignature Language="F#" Value="Y = 89" Usage="System.ConsoleKey.Y" />
+      <MemberSignature Language="C++ CLI" Value="Y" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3697,6 +4267,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>89</MemberValue>
       <Docs>
         <summary>The Y key.</summary>
       </Docs>
@@ -3705,6 +4276,9 @@
       <MemberSignature Language="C#" Value="Z" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Z = int32(90)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Z" />
+      <MemberSignature Language="VB.NET" Value="Z" />
+      <MemberSignature Language="F#" Value="Z = 90" Usage="System.ConsoleKey.Z" />
+      <MemberSignature Language="C++ CLI" Value="Z" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Console</AssemblyName>
@@ -3723,6 +4297,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>90</MemberValue>
       <Docs>
         <summary>The Z key.</summary>
       </Docs>
@@ -3731,6 +4306,9 @@
       <MemberSignature Language="C#" Value="Zoom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ConsoleKey Zoom = int32(251)" />
       <MemberSignature Language="DocId" Value="F:System.ConsoleKey.Zoom" />
+      <MemberSignature Language="VB.NET" Value="Zoom" />
+      <MemberSignature Language="F#" Value="Zoom = 251" Usage="System.ConsoleKey.Zoom" />
+      <MemberSignature Language="C++ CLI" Value="Zoom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3748,6 +4326,7 @@
       <ReturnValue>
         <ReturnType>System.ConsoleKey</ReturnType>
       </ReturnValue>
+      <MemberValue>251</MemberValue>
       <Docs>
         <summary>The ZOOM key.</summary>
       </Docs>

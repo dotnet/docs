@@ -1,7 +1,10 @@
-<Type Name="CodeObject" FullName="System.CodeDom.CodeObject">
+﻿<Type Name="CodeObject" FullName="System.CodeDom.CodeObject">
   <TypeSignature Language="C#" Value="public class CodeObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit CodeObject extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.CodeDom.CodeObject" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeObject" />
+  <TypeSignature Language="F#" Value="type CodeObject = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeObject" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -16,7 +19,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -38,6 +41,8 @@
       <MemberSignature Language="C#" Value="public CodeObject ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.CodeDom.CodeObject.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeObject();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -57,6 +62,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.IDictionary UserData { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.IDictionary UserData" />
       <MemberSignature Language="DocId" Value="P:System.CodeDom.CodeObject.UserData" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserData As IDictionary" />
+      <MemberSignature Language="F#" Value="member this.UserData : System.Collections.IDictionary" Usage="System.CodeDom.CodeObject.UserData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::IDictionary ^ UserData { System::Collections::IDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

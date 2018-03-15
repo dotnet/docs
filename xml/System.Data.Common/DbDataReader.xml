@@ -1,7 +1,10 @@
-<Type Name="DbDataReader" FullName="System.Data.Common.DbDataReader">
+﻿<Type Name="DbDataReader" FullName="System.Data.Common.DbDataReader">
   <TypeSignature Language="C#" Value="public abstract class DbDataReader : MarshalByRefObject, IDisposable, System.Collections.IEnumerable, System.Data.IDataReader" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit DbDataReader extends System.MarshalByRefObject implements class System.Collections.IEnumerable, class System.Data.IDataReader, class System.Data.IDataRecord, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.DbDataReader" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class DbDataReader&#xA;Inherits MarshalByRefObject&#xA;Implements IDataReader, IDisposable, IEnumerable" />
+  <TypeSignature Language="F#" Value="type DbDataReader = class&#xA;    inherit MarshalByRefObject&#xA;    interface IDataReader&#xA;    interface IEnumerable&#xA;    interface IDisposable&#xA;    interface IDataRecord" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DbDataReader abstract : MarshalByRefObject, IDisposable, System::Collections::IEnumerable, System::Data::IDataReader" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="protected DbDataReader ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; DbDataReader();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -65,7 +70,13 @@
       <MemberSignature Language="C#" Value="public virtual void Close ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub Close ()" />
+      <MemberSignature Language="F#" Value="abstract member Close : unit -&gt; unit&#xA;override this.Close : unit -&gt; unit" Usage="dbDataReader.Close " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Close();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataReader.Close</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -92,7 +103,13 @@
       <MemberSignature Language="C#" Value="public abstract int Depth { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Depth" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.Depth" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property Depth As Integer" />
+      <MemberSignature Language="F#" Value="member this.Depth : int" Usage="System.Data.Common.DbDataReader.Depth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int Depth { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataReader.Depth</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -123,11 +140,27 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases the resources used by the <see cref="T:System.Data.Common.DbDataReader" /> and calls <see cref="M:System.Data.SqlClient.SqlDataReader.Close" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.Dispose" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Dispose ()" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : unit -&gt; unit&#xA;override this.Dispose : unit -&gt; unit" Usage="dbDataReader.Dispose " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Dispose();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IDisposable.Dispose</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -172,6 +205,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="abstract member Dispose : bool -&gt; unit&#xA;override this.Dispose : bool -&gt; unit" Usage="dbDataReader.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -211,7 +247,13 @@
       <MemberSignature Language="C#" Value="public abstract int FieldCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 FieldCount" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.FieldCount" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property FieldCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.FieldCount : int" Usage="System.Data.Common.DbDataReader.FieldCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int FieldCount { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataRecord.FieldCount</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -247,7 +289,13 @@
       <MemberSignature Language="C#" Value="public abstract bool GetBoolean (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool GetBoolean(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetBoolean(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetBoolean (ordinal As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member GetBoolean : int -&gt; bool" Usage="dbDataReader.GetBoolean ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool GetBoolean(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetBoolean(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -280,7 +328,13 @@
       <MemberSignature Language="C#" Value="public abstract byte GetByte (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8 GetByte(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetByte(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetByte (ordinal As Integer) As Byte" />
+      <MemberSignature Language="F#" Value="abstract member GetByte : int -&gt; byte" Usage="dbDataReader.GetByte ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Byte GetByte(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetByte(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -313,7 +367,13 @@
       <MemberSignature Language="C#" Value="public abstract long GetBytes (int ordinal, long dataOffset, byte[] buffer, int bufferOffset, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 GetBytes(int32 ordinal, int64 dataOffset, unsigned int8[] buffer, int32 bufferOffset, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetBytes (ordinal As Integer, dataOffset As Long, buffer As Byte(), bufferOffset As Integer, length As Integer) As Long" />
+      <MemberSignature Language="F#" Value="abstract member GetBytes : int * int64 * byte[] * int * int -&gt; int64" Usage="dbDataReader.GetBytes (ordinal, dataOffset, buffer, bufferOffset, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract long GetBytes(int ordinal, long dataOffset, cli::array &lt;System::Byte&gt; ^ buffer, int bufferOffset, int length);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -354,7 +414,13 @@
       <MemberSignature Language="C#" Value="public abstract char GetChar (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance char GetChar(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetChar(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetChar (ordinal As Integer) As Char" />
+      <MemberSignature Language="F#" Value="abstract member GetChar : int -&gt; char" Usage="dbDataReader.GetChar ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract char GetChar(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetChar(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -387,7 +453,13 @@
       <MemberSignature Language="C#" Value="public abstract long GetChars (int ordinal, long dataOffset, char[] buffer, int bufferOffset, int length);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 GetChars(int32 ordinal, int64 dataOffset, char[] buffer, int32 bufferOffset, int32 length) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetChars (ordinal As Integer, dataOffset As Long, buffer As Char(), bufferOffset As Integer, length As Integer) As Long" />
+      <MemberSignature Language="F#" Value="abstract member GetChars : int * int64 * char[] * int * int -&gt; int64" Usage="dbDataReader.GetChars (ordinal, dataOffset, buffer, bufferOffset, length)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract long GetChars(int ordinal, long dataOffset, cli::array &lt;char&gt; ^ buffer, int bufferOffset, int length);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -427,6 +499,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.DbDataReader GetData (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.DbDataReader GetData(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetData(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetData (ordinal As Integer) As DbDataReader" />
+      <MemberSignature Language="F#" Value="member this.GetData : int -&gt; System.Data.Common.DbDataReader" Usage="dbDataReader.GetData ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::DbDataReader ^ GetData(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -464,7 +539,13 @@
       <MemberSignature Language="C#" Value="public abstract string GetDataTypeName (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetDataTypeName(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetDataTypeName(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDataTypeName (ordinal As Integer) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetDataTypeName : int -&gt; string" Usage="dbDataReader.GetDataTypeName ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetDataTypeName(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetDataTypeName(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -519,7 +600,13 @@ private static void GetDataTypes(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract DateTime GetDateTime (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.DateTime GetDateTime(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetDateTime(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDateTime (ordinal As Integer) As DateTime" />
+      <MemberSignature Language="F#" Value="abstract member GetDateTime : int -&gt; DateTime" Usage="dbDataReader.GetDateTime ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract DateTime GetDateTime(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetDateTime(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -552,6 +639,9 @@ private static void GetDataTypes(String connectiongString) {
       <MemberSignature Language="C#" Value="protected virtual System.Data.Common.DbDataReader GetDbDataReader (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Data.Common.DbDataReader GetDbDataReader(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetDbDataReader(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetDbDataReader (ordinal As Integer) As DbDataReader" />
+      <MemberSignature Language="F#" Value="abstract member GetDbDataReader : int -&gt; System.Data.Common.DbDataReader&#xA;override this.GetDbDataReader : int -&gt; System.Data.Common.DbDataReader" Usage="dbDataReader.GetDbDataReader ordinal" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Data::Common::DbDataReader ^ GetDbDataReader(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -584,7 +674,13 @@ private static void GetDataTypes(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract decimal GetDecimal (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Decimal GetDecimal(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetDecimal(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDecimal (ordinal As Integer) As Decimal" />
+      <MemberSignature Language="F#" Value="abstract member GetDecimal : int -&gt; decimal" Usage="dbDataReader.GetDecimal ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Decimal GetDecimal(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetDecimal(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -617,7 +713,13 @@ private static void GetDataTypes(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract double GetDouble (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float64 GetDouble(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetDouble(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetDouble (ordinal As Integer) As Double" />
+      <MemberSignature Language="F#" Value="abstract member GetDouble : int -&gt; double" Usage="dbDataReader.GetDouble ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract double GetDouble(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetDouble(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -650,7 +752,13 @@ private static void GetDataTypes(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract System.Collections.IEnumerator GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.IEnumerator" Usage="dbDataReader.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Collections::IEnumerator ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -693,7 +801,13 @@ private static void GetDataTypes(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract Type GetFieldType (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetFieldType(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetFieldType(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetFieldType (ordinal As Integer) As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetFieldType : int -&gt; Type" Usage="dbDataReader.GetFieldType ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Type ^ GetFieldType(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetFieldType(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -726,6 +840,9 @@ private static void GetDataTypes(String connectiongString) {
       <MemberSignature Language="C#" Value="public virtual T GetFieldValue&lt;T&gt; (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance !!T GetFieldValue&lt;T&gt;(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetFieldValue``1(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetFieldValue(Of T) (ordinal As Integer) As T" />
+      <MemberSignature Language="F#" Value="abstract member GetFieldValue : int -&gt; 'T&#xA;override this.GetFieldValue : int -&gt; 'T" Usage="dbDataReader.GetFieldValue ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; virtual T GetFieldValue(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -798,6 +915,9 @@ private static void GetDataTypes(String connectiongString) {
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;T&gt; GetFieldValueAsync&lt;T&gt; (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;!!T&gt; GetFieldValueAsync&lt;T&gt;(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetFieldValueAsync``1(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFieldValueAsync(Of T) (ordinal As Integer) As Task(Of T)" />
+      <MemberSignature Language="F#" Value="member this.GetFieldValueAsync : int -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="dbDataReader.GetFieldValueAsync ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; System::Threading::Tasks::Task&lt;T&gt; ^ GetFieldValueAsync(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -862,6 +982,8 @@ private static void GetDataTypes(String connectiongString) {
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;T&gt; GetFieldValueAsync&lt;T&gt; (int ordinal, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;!!T&gt; GetFieldValueAsync&lt;T&gt;(int32 ordinal, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetFieldValueAsync``1(System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member GetFieldValueAsync : int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T&gt;&#xA;override this.GetFieldValueAsync : int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;'T&gt;" Usage="dbDataReader.GetFieldValueAsync (ordinal, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA;generic &lt;typename T&gt;&#xA; virtual System::Threading::Tasks::Task&lt;T&gt; ^ GetFieldValueAsync(int ordinal, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -928,7 +1050,13 @@ private static void GetDataTypes(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract float GetFloat (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance float32 GetFloat(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetFloat(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetFloat (ordinal As Integer) As Single" />
+      <MemberSignature Language="F#" Value="abstract member GetFloat : int -&gt; single" Usage="dbDataReader.GetFloat ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract float GetFloat(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetFloat(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -961,7 +1089,13 @@ private static void GetDataTypes(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract Guid GetGuid (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Guid GetGuid(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetGuid(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetGuid (ordinal As Integer) As Guid" />
+      <MemberSignature Language="F#" Value="abstract member GetGuid : int -&gt; Guid" Usage="dbDataReader.GetGuid ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract Guid GetGuid(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetGuid(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -994,7 +1128,13 @@ private static void GetDataTypes(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract short GetInt16 (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int16 GetInt16(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetInt16(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetInt16 (ordinal As Integer) As Short" />
+      <MemberSignature Language="F#" Value="abstract member GetInt16 : int -&gt; int16" Usage="dbDataReader.GetInt16 ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract short GetInt16(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetInt16(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1027,7 +1167,13 @@ private static void GetDataTypes(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract int GetInt32 (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetInt32(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetInt32(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetInt32 (ordinal As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetInt32 : int -&gt; int" Usage="dbDataReader.GetInt32 ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetInt32(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetInt32(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1084,7 +1230,13 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract long GetInt64 (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int64 GetInt64(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetInt64(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetInt64 (ordinal As Integer) As Long" />
+      <MemberSignature Language="F#" Value="abstract member GetInt64 : int -&gt; int64" Usage="dbDataReader.GetInt64 ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract long GetInt64(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetInt64(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1117,7 +1269,13 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract string GetName (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetName(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetName(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetName (ordinal As Integer) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetName : int -&gt; string" Usage="dbDataReader.GetName ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetName(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetName(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1149,7 +1307,13 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract int GetOrdinal (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetOrdinal(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetOrdinal(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetOrdinal (name As String) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetOrdinal : string -&gt; int" Usage="dbDataReader.GetOrdinal name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetOrdinal(System::String ^ name);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetOrdinal(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1182,6 +1346,9 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public virtual Type GetProviderSpecificFieldType (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Type GetProviderSpecificFieldType(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetProviderSpecificFieldType(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProviderSpecificFieldType (ordinal As Integer) As Type" />
+      <MemberSignature Language="F#" Value="abstract member GetProviderSpecificFieldType : int -&gt; Type&#xA;override this.GetProviderSpecificFieldType : int -&gt; Type" Usage="dbDataReader.GetProviderSpecificFieldType ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual Type ^ GetProviderSpecificFieldType(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1219,6 +1386,9 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public virtual object GetProviderSpecificValue (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetProviderSpecificValue(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetProviderSpecificValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProviderSpecificValue (ordinal As Integer) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetProviderSpecificValue : int -&gt; obj&#xA;override this.GetProviderSpecificValue : int -&gt; obj" Usage="dbDataReader.GetProviderSpecificValue ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetProviderSpecificValue(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1263,6 +1433,9 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public virtual int GetProviderSpecificValues (object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetProviderSpecificValues(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetProviderSpecificValues(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetProviderSpecificValues (values As Object()) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetProviderSpecificValues : obj[] -&gt; int&#xA;override this.GetProviderSpecificValues : obj[] -&gt; int" Usage="dbDataReader.GetProviderSpecificValues values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetProviderSpecificValues(cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1300,7 +1473,13 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public virtual System.Data.DataTable GetSchemaTable ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Data.DataTable GetSchemaTable() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetSchemaTable" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetSchemaTable () As DataTable" />
+      <MemberSignature Language="F#" Value="abstract member GetSchemaTable : unit -&gt; System.Data.DataTable&#xA;override this.GetSchemaTable : unit -&gt; System.Data.DataTable" Usage="dbDataReader.GetSchemaTable " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Data::DataTable ^ GetSchemaTable();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataReader.GetSchemaTable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -1329,6 +1508,9 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public virtual System.IO.Stream GetStream (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.Stream GetStream(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetStream(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetStream (ordinal As Integer) As Stream" />
+      <MemberSignature Language="F#" Value="abstract member GetStream : int -&gt; System.IO.Stream&#xA;override this.GetStream : int -&gt; System.IO.Stream" Usage="dbDataReader.GetStream ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::Stream ^ GetStream(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1389,7 +1571,13 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract string GetString (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetString(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetString(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetString (ordinal As Integer) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetString : int -&gt; string" Usage="dbDataReader.GetString ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::String ^ GetString(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetString(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1422,6 +1610,9 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public virtual System.IO.TextReader GetTextReader (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IO.TextReader GetTextReader(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetTextReader(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetTextReader (ordinal As Integer) As TextReader" />
+      <MemberSignature Language="F#" Value="abstract member GetTextReader : int -&gt; System.IO.TextReader&#xA;override this.GetTextReader : int -&gt; System.IO.TextReader" Usage="dbDataReader.GetTextReader ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::IO::TextReader ^ GetTextReader(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1486,7 +1677,13 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract object GetValue (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetValue(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetValue(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValue (ordinal As Integer) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetValue : int -&gt; obj" Usage="dbDataReader.GetValue ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract System::Object ^ GetValue(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetValue(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1518,7 +1715,13 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract int GetValues (object[] values);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetValues(object[] values) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.GetValues(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function GetValues (values As Object()) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetValues : obj[] -&gt; int" Usage="dbDataReader.GetValues values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract int GetValues(cli::array &lt;System::Object ^&gt; ^ values);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetValues(System.Object[])</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1550,6 +1753,9 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract bool HasRows { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HasRows" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.HasRows" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property HasRows As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HasRows : bool" Usage="System.Data.Common.DbDataReader.HasRows" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool HasRows { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1579,7 +1785,13 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract bool IsClosed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsClosed" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.IsClosed" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property IsClosed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsClosed : bool" Usage="System.Data.Common.DbDataReader.IsClosed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property bool IsClosed { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataReader.IsClosed</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1612,7 +1824,13 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract bool IsDBNull (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsDBNull(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function IsDBNull (ordinal As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsDBNull : int -&gt; bool" Usage="dbDataReader.IsDBNull ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool IsDBNull(int ordinal);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.IsDBNull(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1648,10 +1866,23 @@ private static void GetCredits(String connectiongString) {
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsDBNullAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>An asynchronous version of <see cref="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)" />, which gets a value that indicates whether the column contains non-existent or missing values.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsDBNullAsync">
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; IsDBNullAsync (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; IsDBNullAsync(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.IsDBNullAsync(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsDBNullAsync (ordinal As Integer) As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.IsDBNullAsync : int -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="dbDataReader.IsDBNullAsync ordinal" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ IsDBNullAsync(int ordinal);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1702,6 +1933,8 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; IsDBNullAsync (int ordinal, System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; IsDBNullAsync(int32 ordinal, valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.IsDBNullAsync(System.Int32,System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member IsDBNullAsync : int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.IsDBNullAsync : int * System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="dbDataReader.IsDBNullAsync (ordinal, cancellationToken)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;bool&gt; ^ IsDBNullAsync(int ordinal, System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1750,11 +1983,27 @@ private static void GetCredits(String connectiongString) {
         <exception cref="T:System.IndexOutOfRangeException">Trying to read a column that does not exist.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Item">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the value of a specified column as an instance of <see cref="T:System.Object" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public abstract object this[int ordinal] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public MustOverride ReadOnly Property Item(ordinal As Integer) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : obj" Usage="System.Data.Common.DbDataReader.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ default[int] { System::Object ^ get(int ordinal); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataRecord.Item(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1787,7 +2036,13 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract object this[string name] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Item(string)" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public MustOverride ReadOnly Property Item(name As String) As Object" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : obj" Usage="System.Data.Common.DbDataReader.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::Object ^ default[System::String ^] { System::Object ^ get(System::String ^ name); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataRecord.Item(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1820,7 +2075,13 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract bool NextResult ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool NextResult() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.NextResult" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function NextResult () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member NextResult : unit -&gt; bool" Usage="dbDataReader.NextResult " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool NextResult();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataReader.NextResult</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -1874,6 +2135,9 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; NextResultAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; NextResultAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.NextResultAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function NextResultAsync () As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.NextResultAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="dbDataReader.NextResultAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ NextResultAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1913,6 +2177,8 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; NextResultAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; NextResultAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.NextResultAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member NextResultAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.NextResultAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="dbDataReader.NextResultAsync cancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;bool&gt; ^ NextResultAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -1957,7 +2223,13 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract bool Read ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Read() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.Read" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Read () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Read : unit -&gt; bool" Usage="dbDataReader.Read " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool Read();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataReader.Read</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -2011,6 +2283,9 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public System.Threading.Tasks.Task&lt;bool&gt; ReadAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Threading.Tasks.Task`1&lt;bool&gt; ReadAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.ReadAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReadAsync () As Task(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.ReadAsync : unit -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="dbDataReader.ReadAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Threading::Tasks::Task&lt;bool&gt; ^ ReadAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -2048,6 +2323,8 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public virtual System.Threading.Tasks.Task&lt;bool&gt; ReadAsync (System.Threading.CancellationToken cancellationToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Threading.Tasks.Task`1&lt;bool&gt; ReadAsync(valuetype System.Threading.CancellationToken cancellationToken) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.ReadAsync(System.Threading.CancellationToken)" />
+      <MemberSignature Language="F#" Value="abstract member ReadAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;&#xA;override this.ReadAsync : System.Threading.CancellationToken -&gt; System.Threading.Tasks.Task&lt;bool&gt;" Usage="dbDataReader.ReadAsync cancellationToken" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Threading::Tasks::Task&lt;bool&gt; ^ ReadAsync(System::Threading::CancellationToken cancellationToken);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -2092,7 +2369,13 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public abstract int RecordsAffected { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 RecordsAffected" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.RecordsAffected" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property RecordsAffected As Integer" />
+      <MemberSignature Language="F#" Value="member this.RecordsAffected : int" Usage="System.Data.Common.DbDataReader.RecordsAffected" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property int RecordsAffected { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Data.IDataReader.RecordsAffected</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -2130,7 +2413,12 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="void IDataReader.Close ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Data.IDataReader.Close() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.System#Data#IDataReader#Close" />
+      <MemberSignature Language="VB.NET" Value="Sub Close () Implements IDataReader.Close" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Data.IDataReader.Close() = System::Data::IDataReader::Close;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataReader.Close</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -2148,7 +2436,12 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="System.Data.DataTable IDataReader.GetSchemaTable ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.DataTable System.Data.IDataReader.GetSchemaTable() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.System#Data#IDataReader#GetSchemaTable" />
+      <MemberSignature Language="VB.NET" Value="Function GetSchemaTable () As DataTable Implements IDataReader.GetSchemaTable" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::DataTable ^ System.Data.IDataReader.GetSchemaTable() = System::Data::IDataReader::GetSchemaTable;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataReader.GetSchemaTable</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -2167,7 +2460,12 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="System.Data.IDataReader IDataRecord.GetData (int ordinal);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Data.IDataReader System.Data.IDataRecord.GetData(int32 ordinal) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.DbDataReader.System#Data#IDataRecord#GetData(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Function GetData (ordinal As Integer) As IDataReader Implements IDataRecord.GetData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Data::IDataReader ^ System.Data.IDataRecord.GetData(int ordinal) = System::Data::IDataRecord::GetData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Data.IDataRecord.GetData(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -2206,6 +2504,9 @@ private static void GetCredits(String connectiongString) {
       <MemberSignature Language="C#" Value="public virtual int VisibleFieldCount { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VisibleFieldCount" />
       <MemberSignature Language="DocId" Value="P:System.Data.Common.DbDataReader.VisibleFieldCount" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable ReadOnly Property VisibleFieldCount As Integer" />
+      <MemberSignature Language="F#" Value="member this.VisibleFieldCount : int" Usage="System.Data.Common.DbDataReader.VisibleFieldCount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int VisibleFieldCount { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
@@ -2237,35 +2538,5 @@ private static void GetCredits(String connectiongString) {
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Common</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.Data.Common.DbDataReader" /> and calls <see cref="M:System.Data.SqlClient.SqlDataReader.Close" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsDBNullAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Common</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>An asynchronous version of <see cref="M:System.Data.Common.DbDataReader.IsDBNull(System.Int32)" />, which gets a value that indicates whether the column contains non-existent or missing values.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Item">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Common</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the value of a specified column as an instance of <see cref="T:System.Object" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

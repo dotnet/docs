@@ -1,7 +1,10 @@
-<Type Name="ChartHttpHandlerStorageType" FullName="System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType">
+﻿<Type Name="ChartHttpHandlerStorageType" FullName="System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType">
   <TypeSignature Language="C#" Value="public enum ChartHttpHandlerStorageType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ChartHttpHandlerStorageType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ChartHttpHandlerStorageType" />
+  <TypeSignature Language="F#" Value="type ChartHttpHandlerStorageType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ChartHttpHandlerStorageType" />
   <AssemblyInfo>
     <AssemblyName>System.Web.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -18,6 +21,9 @@
       <MemberSignature Language="C#" Value="File" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType File = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType.File" />
+      <MemberSignature Language="VB.NET" Value="File" />
+      <MemberSignature Language="F#" Value="File = 1" Usage="System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType.File" />
+      <MemberSignature Language="C++ CLI" Value="File" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -26,6 +32,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Chart images are stored in a file.</summary>
       </Docs>
@@ -34,6 +41,9 @@
       <MemberSignature Language="C#" Value="InProcess" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType InProcess = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType.InProcess" />
+      <MemberSignature Language="VB.NET" Value="InProcess" />
+      <MemberSignature Language="F#" Value="InProcess = 0" Usage="System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType.InProcess" />
+      <MemberSignature Language="C++ CLI" Value="InProcess" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -42,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Chart images are stored in the private process memory. You cannot use this option in a multiple-process or farm environment.</summary>
       </Docs>
@@ -50,6 +61,9 @@
       <MemberSignature Language="C#" Value="Session" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType Session = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType.Session" />
+      <MemberSignature Language="VB.NET" Value="Session" />
+      <MemberSignature Language="F#" Value="Session = 2" Usage="System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType.Session" />
+      <MemberSignature Language="C++ CLI" Value="Session" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.DataVisualization</AssemblyName>
@@ -58,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.DataVisualization.Charting.ChartHttpHandlerStorageType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Chart images are stored in the ASP.NET session.</summary>
       </Docs>

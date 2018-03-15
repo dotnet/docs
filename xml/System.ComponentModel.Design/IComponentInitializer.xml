@@ -1,7 +1,10 @@
-<Type Name="IComponentInitializer" FullName="System.ComponentModel.Design.IComponentInitializer">
+﻿<Type Name="IComponentInitializer" FullName="System.ComponentModel.Design.IComponentInitializer">
   <TypeSignature Language="C#" Value="public interface IComponentInitializer" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComponentInitializer" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IComponentInitializer" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IComponentInitializer" />
+  <TypeSignature Language="F#" Value="type IComponentInitializer = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IComponentInitializer" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="public void InitializeExistingComponent (System.Collections.IDictionary defaultValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeExistingComponent(class System.Collections.IDictionary defaultValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IComponentInitializer.InitializeExistingComponent(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InitializeExistingComponent (defaultValues As IDictionary)" />
+      <MemberSignature Language="F#" Value="abstract member InitializeExistingComponent : System.Collections.IDictionary -&gt; unit" Usage="iComponentInitializer.InitializeExistingComponent defaultValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitializeExistingComponent(System::Collections::IDictionary ^ defaultValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -81,6 +87,9 @@
       <MemberSignature Language="C#" Value="public void InitializeNewComponent (System.Collections.IDictionary defaultValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InitializeNewComponent(class System.Collections.IDictionary defaultValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.IComponentInitializer.InitializeNewComponent(System.Collections.IDictionary)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InitializeNewComponent (defaultValues As IDictionary)" />
+      <MemberSignature Language="F#" Value="abstract member InitializeNewComponent : System.Collections.IDictionary -&gt; unit" Usage="iComponentInitializer.InitializeNewComponent defaultValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InitializeNewComponent(System::Collections::IDictionary ^ defaultValues);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

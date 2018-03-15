@@ -1,7 +1,10 @@
-<Type Name="XmlSchemaValidationException" FullName="System.Xml.Schema.XmlSchemaValidationException">
+﻿<Type Name="XmlSchemaValidationException" FullName="System.Xml.Schema.XmlSchemaValidationException">
   <TypeSignature Language="C#" Value="public class XmlSchemaValidationException : System.Xml.Schema.XmlSchemaException" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit XmlSchemaValidationException extends System.Xml.Schema.XmlSchemaException" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaValidationException" />
+  <TypeSignature Language="VB.NET" Value="Public Class XmlSchemaValidationException&#xA;Inherits XmlSchemaException" />
+  <TypeSignature Language="F#" Value="type XmlSchemaValidationException = class&#xA;    inherit XmlSchemaException" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaValidationException : System::Xml::Schema::XmlSchemaException" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,10 +27,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaValidationException" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlSchemaValidationException ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidationException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaValidationException();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -52,6 +67,9 @@
       <MemberSignature Language="C#" Value="public XmlSchemaValidationException (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidationException.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Schema.XmlSchemaValidationException : string -&gt; System.Xml.Schema.XmlSchemaValidationException" Usage="new System.Xml.Schema.XmlSchemaValidationException message" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaValidationException(System::String ^ message);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -79,6 +97,9 @@
       <MemberSignature Language="C#" Value="protected XmlSchemaValidationException (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Schema.XmlSchemaValidationException : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Xml.Schema.XmlSchemaValidationException" Usage="new System.Xml.Schema.XmlSchemaValidationException (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XmlSchemaValidationException(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -115,6 +136,9 @@
       <MemberSignature Language="C#" Value="public XmlSchemaValidationException (string message, Exception innerException);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidationException.#ctor(System.String,System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Schema.XmlSchemaValidationException : string * Exception -&gt; System.Xml.Schema.XmlSchemaValidationException" Usage="new System.Xml.Schema.XmlSchemaValidationException (message, innerException)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaValidationException(System::String ^ message, Exception ^ innerException);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -144,6 +168,9 @@
       <MemberSignature Language="C#" Value="public XmlSchemaValidationException (string message, Exception innerException, int lineNumber, int linePosition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string message, class System.Exception innerException, int32 lineNumber, int32 linePosition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidationException.#ctor(System.String,System.Exception,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (message As String, innerException As Exception, lineNumber As Integer, linePosition As Integer)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Schema.XmlSchemaValidationException : string * Exception * int * int -&gt; System.Xml.Schema.XmlSchemaValidationException" Usage="new System.Xml.Schema.XmlSchemaValidationException (message, innerException, lineNumber, linePosition)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XmlSchemaValidationException(System::String ^ message, Exception ^ innerException, int lineNumber, int linePosition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -177,6 +204,9 @@
       <MemberSignature Language="C#" Value="public override void GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GetObjectData (info As SerializationInfo, context As StreamingContext)" />
+      <MemberSignature Language="F#" Value="override this.GetObjectData : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; unit" Usage="xmlSchemaValidationException.GetObjectData (info, context)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -210,9 +240,12 @@
       </Docs>
     </Member>
     <Member MemberName="SetSourceObject">
-      <MemberSignature Language="C#" Value="protected void SetSourceObject (object sourceObject);" />
+      <MemberSignature Language="C#" Value="protected internal void SetSourceObject (object sourceObject);" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance void SetSourceObject(object sourceObject) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaValidationException.SetSourceObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Sub SetSourceObject (sourceObject As Object)" />
+      <MemberSignature Language="F#" Value="member this.SetSourceObject : obj -&gt; unit" Usage="xmlSchemaValidationException.SetSourceObject sourceObject" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; void SetSourceObject(System::Object ^ sourceObject);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -250,6 +283,9 @@
       <MemberSignature Language="C#" Value="public object SourceObject { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SourceObject" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaValidationException.SourceObject" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceObject As Object" />
+      <MemberSignature Language="F#" Value="member this.SourceObject : obj" Usage="System.Xml.Schema.XmlSchemaValidationException.SourceObject" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SourceObject { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -282,15 +318,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Schema.XmlSchemaValidationException" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

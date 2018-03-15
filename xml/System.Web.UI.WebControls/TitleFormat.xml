@@ -1,7 +1,10 @@
-<Type Name="TitleFormat" FullName="System.Web.UI.WebControls.TitleFormat">
+﻿<Type Name="TitleFormat" FullName="System.Web.UI.WebControls.TitleFormat">
   <TypeSignature Language="C#" Value="public enum TitleFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TitleFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TitleFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TitleFormat" />
+  <TypeSignature Language="F#" Value="type TitleFormat = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TitleFormat" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="Month" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TitleFormat Month = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TitleFormat.Month" />
+      <MemberSignature Language="VB.NET" Value="Month" />
+      <MemberSignature Language="F#" Value="Month = 0" Usage="System.Web.UI.WebControls.TitleFormat.Month" />
+      <MemberSignature Language="C++ CLI" Value="Month" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -46,6 +52,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TitleFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Displays the title with the month but not the year (for example, "January").</summary>
       </Docs>
@@ -54,6 +61,9 @@
       <MemberSignature Language="C#" Value="MonthYear" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.TitleFormat MonthYear = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.TitleFormat.MonthYear" />
+      <MemberSignature Language="VB.NET" Value="MonthYear" />
+      <MemberSignature Language="F#" Value="MonthYear = 1" Usage="System.Web.UI.WebControls.TitleFormat.MonthYear" />
+      <MemberSignature Language="C++ CLI" Value="MonthYear" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -62,6 +72,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.TitleFormat</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Displays the title with both the month and the year (for example, "January 2000").</summary>
       </Docs>

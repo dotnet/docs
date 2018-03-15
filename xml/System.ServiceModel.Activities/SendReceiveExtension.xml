@@ -1,7 +1,10 @@
-<Type Name="SendReceiveExtension" FullName="System.ServiceModel.Activities.SendReceiveExtension">
+﻿<Type Name="SendReceiveExtension" FullName="System.ServiceModel.Activities.SendReceiveExtension">
   <TypeSignature Language="C#" Value="public abstract class SendReceiveExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit SendReceiveExtension extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Activities.SendReceiveExtension" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class SendReceiveExtension" />
+  <TypeSignature Language="F#" Value="type SendReceiveExtension = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SendReceiveExtension abstract" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,8 @@
       <MemberSignature Language="C#" Value="protected SendReceiveExtension ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReceiveExtension.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SendReceiveExtension();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -34,6 +39,8 @@
       <MemberSignature Language="C#" Value="public abstract void Cancel (System.Activities.Bookmark bookmark);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Cancel(class System.Activities.Bookmark bookmark) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReceiveExtension.Cancel(System.Activities.Bookmark)" />
+      <MemberSignature Language="F#" Value="abstract member Cancel : System.Activities.Bookmark -&gt; unit" Usage="sendReceiveExtension.Cancel bookmark" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Cancel(System::Activities::Bookmark ^ bookmark);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -55,6 +62,9 @@
       <MemberSignature Language="C#" Value="public abstract System.ServiceModel.Activities.HostSettings HostSettings { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ServiceModel.Activities.HostSettings HostSettings" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Activities.SendReceiveExtension.HostSettings" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride ReadOnly Property HostSettings As HostSettings" />
+      <MemberSignature Language="F#" Value="member this.HostSettings : System.ServiceModel.Activities.HostSettings" Usage="System.ServiceModel.Activities.SendReceiveExtension.HostSettings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract property System::ServiceModel::Activities::HostSettings ^ HostSettings { System::ServiceModel::Activities::HostSettings ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -73,6 +83,9 @@
       <MemberSignature Language="C#" Value="protected abstract void OnRegisterReceive (System.ServiceModel.Activities.ReceiveSettings settings, System.Runtime.DurableInstancing.InstanceKey correlatesWith, System.Activities.Bookmark receiveBookmark);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnRegisterReceive(class System.ServiceModel.Activities.ReceiveSettings settings, class System.Runtime.DurableInstancing.InstanceKey correlatesWith, class System.Activities.Bookmark receiveBookmark) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReceiveExtension.OnRegisterReceive(System.ServiceModel.Activities.ReceiveSettings,System.Runtime.DurableInstancing.InstanceKey,System.Activities.Bookmark)" />
+      <MemberSignature Language="VB.NET" Value="Protected MustOverride Sub OnRegisterReceive (settings As ReceiveSettings, correlatesWith As InstanceKey, receiveBookmark As Bookmark)" />
+      <MemberSignature Language="F#" Value="abstract member OnRegisterReceive : System.ServiceModel.Activities.ReceiveSettings * System.Runtime.DurableInstancing.InstanceKey * System.Activities.Bookmark -&gt; unit" Usage="sendReceiveExtension.OnRegisterReceive (settings, correlatesWith, receiveBookmark)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; abstract void OnRegisterReceive(System::ServiceModel::Activities::ReceiveSettings ^ settings, System::Runtime::DurableInstancing::InstanceKey ^ correlatesWith, System::Activities::Bookmark ^ receiveBookmark);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -98,6 +111,9 @@
       <MemberSignature Language="C#" Value="public abstract void OnUninitializeCorrelation (System.Runtime.DurableInstancing.InstanceKey correlationKey);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OnUninitializeCorrelation(class System.Runtime.DurableInstancing.InstanceKey correlationKey) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReceiveExtension.OnUninitializeCorrelation(System.Runtime.DurableInstancing.InstanceKey)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub OnUninitializeCorrelation (correlationKey As InstanceKey)" />
+      <MemberSignature Language="F#" Value="abstract member OnUninitializeCorrelation : System.Runtime.DurableInstancing.InstanceKey -&gt; unit" Usage="sendReceiveExtension.OnUninitializeCorrelation correlationKey" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void OnUninitializeCorrelation(System::Runtime::DurableInstancing::InstanceKey ^ correlationKey);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -119,6 +135,9 @@
       <MemberSignature Language="C#" Value="public void RegisterReceive (System.ServiceModel.Activities.ReceiveSettings settings, System.Runtime.DurableInstancing.InstanceKey correlatesWith, System.Activities.Bookmark receiveBookmark);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RegisterReceive(class System.ServiceModel.Activities.ReceiveSettings settings, class System.Runtime.DurableInstancing.InstanceKey correlatesWith, class System.Activities.Bookmark receiveBookmark) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReceiveExtension.RegisterReceive(System.ServiceModel.Activities.ReceiveSettings,System.Runtime.DurableInstancing.InstanceKey,System.Activities.Bookmark)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RegisterReceive (settings As ReceiveSettings, correlatesWith As InstanceKey, receiveBookmark As Bookmark)" />
+      <MemberSignature Language="F#" Value="member this.RegisterReceive : System.ServiceModel.Activities.ReceiveSettings * System.Runtime.DurableInstancing.InstanceKey * System.Activities.Bookmark -&gt; unit" Usage="sendReceiveExtension.RegisterReceive (settings, correlatesWith, receiveBookmark)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RegisterReceive(System::ServiceModel::Activities::ReceiveSettings ^ settings, System::Runtime::DurableInstancing::InstanceKey ^ correlatesWith, System::Activities::Bookmark ^ receiveBookmark);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>
@@ -144,6 +163,9 @@
       <MemberSignature Language="C#" Value="public abstract void Send (System.ServiceModel.Activities.MessageContext message, System.ServiceModel.Activities.SendSettings settings, System.Runtime.DurableInstancing.InstanceKey correlatesWith, System.Activities.Bookmark sendCompleteBookmark);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Send(class System.ServiceModel.Activities.MessageContext message, class System.ServiceModel.Activities.SendSettings settings, class System.Runtime.DurableInstancing.InstanceKey correlatesWith, class System.Activities.Bookmark sendCompleteBookmark) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ServiceModel.Activities.SendReceiveExtension.Send(System.ServiceModel.Activities.MessageContext,System.ServiceModel.Activities.SendSettings,System.Runtime.DurableInstancing.InstanceKey,System.Activities.Bookmark)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Sub Send (message As MessageContext, settings As SendSettings, correlatesWith As InstanceKey, sendCompleteBookmark As Bookmark)" />
+      <MemberSignature Language="F#" Value="abstract member Send : System.ServiceModel.Activities.MessageContext * System.ServiceModel.Activities.SendSettings * System.Runtime.DurableInstancing.InstanceKey * System.Activities.Bookmark -&gt; unit" Usage="sendReceiveExtension.Send (message, settings, correlatesWith, sendCompleteBookmark)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract void Send(System::ServiceModel::Activities::MessageContext ^ message, System::ServiceModel::Activities::SendSettings ^ settings, System::Runtime::DurableInstancing::InstanceKey ^ correlatesWith, System::Activities::Bookmark ^ sendCompleteBookmark);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel.Activities</AssemblyName>

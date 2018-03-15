@@ -1,7 +1,10 @@
-<Type Name="MailMessageEventHandler" FullName="System.Web.UI.WebControls.MailMessageEventHandler">
+﻿<Type Name="MailMessageEventHandler" FullName="System.Web.UI.WebControls.MailMessageEventHandler">
   <TypeSignature Language="C#" Value="public delegate void MailMessageEventHandler(object sender, MailMessageEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MailMessageEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.MailMessageEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub MailMessageEventHandler(sender As Object, e As MailMessageEventArgs)" />
+  <TypeSignature Language="F#" Value="type MailMessageEventHandler = delegate of obj * MailMessageEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void MailMessageEventHandler(System::Object ^ sender, MailMessageEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

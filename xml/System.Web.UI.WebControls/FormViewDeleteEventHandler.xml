@@ -1,7 +1,10 @@
-<Type Name="FormViewDeleteEventHandler" FullName="System.Web.UI.WebControls.FormViewDeleteEventHandler">
+﻿<Type Name="FormViewDeleteEventHandler" FullName="System.Web.UI.WebControls.FormViewDeleteEventHandler">
   <TypeSignature Language="C#" Value="public delegate void FormViewDeleteEventHandler(object sender, FormViewDeleteEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormViewDeleteEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.FormViewDeleteEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub FormViewDeleteEventHandler(sender As Object, e As FormViewDeleteEventArgs)" />
+  <TypeSignature Language="F#" Value="type FormViewDeleteEventHandler = delegate of obj * FormViewDeleteEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void FormViewDeleteEventHandler(System::Object ^ sender, FormViewDeleteEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

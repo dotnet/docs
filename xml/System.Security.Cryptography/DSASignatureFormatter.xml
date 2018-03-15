@@ -1,7 +1,10 @@
-<Type Name="DSASignatureFormatter" FullName="System.Security.Cryptography.DSASignatureFormatter">
+﻿<Type Name="DSASignatureFormatter" FullName="System.Security.Cryptography.DSASignatureFormatter">
   <TypeSignature Language="C#" Value="public class DSASignatureFormatter : System.Security.Cryptography.AsymmetricSignatureFormatter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DSASignatureFormatter extends System.Security.Cryptography.AsymmetricSignatureFormatter" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.DSASignatureFormatter" />
+  <TypeSignature Language="VB.NET" Value="Public Class DSASignatureFormatter&#xA;Inherits AsymmetricSignatureFormatter" />
+  <TypeSignature Language="F#" Value="type DSASignatureFormatter = class&#xA;    inherit AsymmetricSignatureFormatter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DSASignatureFormatter : System::Security::Cryptography::AsymmetricSignatureFormatter" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,10 +41,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSASignatureFormatter" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DSASignatureFormatter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSASignatureFormatter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DSASignatureFormatter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -66,6 +81,9 @@
       <MemberSignature Language="C#" Value="public DSASignatureFormatter (System.Security.Cryptography.AsymmetricAlgorithm key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Security.Cryptography.AsymmetricAlgorithm key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSASignatureFormatter.#ctor(System.Security.Cryptography.AsymmetricAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (key As AsymmetricAlgorithm)" />
+      <MemberSignature Language="F#" Value="new System.Security.Cryptography.DSASignatureFormatter : System.Security.Cryptography.AsymmetricAlgorithm -&gt; System.Security.Cryptography.DSASignatureFormatter" Usage="new System.Security.Cryptography.DSASignatureFormatter key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DSASignatureFormatter(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -104,6 +122,9 @@
       <MemberSignature Language="C#" Value="public override byte[] CreateSignature (byte[] rgbHash);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] CreateSignature(unsigned int8[] rgbHash) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSASignatureFormatter.CreateSignature(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function CreateSignature (rgbHash As Byte()) As Byte()" />
+      <MemberSignature Language="F#" Value="override this.CreateSignature : byte[] -&gt; byte[]" Usage="dSASignatureFormatter.CreateSignature rgbHash" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override cli::array &lt;System::Byte&gt; ^ CreateSignature(cli::array &lt;System::Byte&gt; ^ rgbHash);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -156,6 +177,9 @@
       <MemberSignature Language="C#" Value="public override void SetHashAlgorithm (string strName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetHashAlgorithm(string strName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSASignatureFormatter.SetHashAlgorithm(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetHashAlgorithm (strName As String)" />
+      <MemberSignature Language="F#" Value="override this.SetHashAlgorithm : string -&gt; unit" Usage="dSASignatureFormatter.SetHashAlgorithm strName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetHashAlgorithm(System::String ^ strName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -196,6 +220,9 @@
       <MemberSignature Language="C#" Value="public override void SetKey (System.Security.Cryptography.AsymmetricAlgorithm key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void SetKey(class System.Security.Cryptography.AsymmetricAlgorithm key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.DSASignatureFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub SetKey (key As AsymmetricAlgorithm)" />
+      <MemberSignature Language="F#" Value="override this.SetKey : System.Security.Cryptography.AsymmetricAlgorithm -&gt; unit" Usage="dSASignatureFormatter.SetKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void SetKey(System::Security::Cryptography::AsymmetricAlgorithm ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -224,15 +251,5 @@
           <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.DSASignatureFormatter" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

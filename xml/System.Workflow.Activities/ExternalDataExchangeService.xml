@@ -1,7 +1,10 @@
-<Type Name="ExternalDataExchangeService" FullName="System.Workflow.Activities.ExternalDataExchangeService">
+﻿<Type Name="ExternalDataExchangeService" FullName="System.Workflow.Activities.ExternalDataExchangeService">
   <TypeSignature Language="C#" Value="public class ExternalDataExchangeService : System.Workflow.Runtime.Hosting.WorkflowRuntimeService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ExternalDataExchangeService extends System.Workflow.Runtime.Hosting.WorkflowRuntimeService" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.ExternalDataExchangeService" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExternalDataExchangeService&#xA;Inherits WorkflowRuntimeService" />
+  <TypeSignature Language="F#" Value="type ExternalDataExchangeService = class&#xA;    inherit WorkflowRuntimeService" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ExternalDataExchangeService : System::Workflow::Runtime::Hosting::WorkflowRuntimeService" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,10 +34,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ExternalDataExchangeService" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ExternalDataExchangeService ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ExternalDataExchangeService.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExternalDataExchangeService();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -60,6 +74,9 @@
       <MemberSignature Language="C#" Value="public ExternalDataExchangeService (System.Collections.Specialized.NameValueCollection parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Specialized.NameValueCollection parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ExternalDataExchangeService.#ctor(System.Collections.Specialized.NameValueCollection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (parameters As NameValueCollection)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.ExternalDataExchangeService : System.Collections.Specialized.NameValueCollection -&gt; System.Workflow.Activities.ExternalDataExchangeService" Usage="new System.Workflow.Activities.ExternalDataExchangeService parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExternalDataExchangeService(System::Collections::Specialized::NameValueCollection ^ parameters);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -78,6 +95,9 @@
       <MemberSignature Language="C#" Value="public ExternalDataExchangeService (string configSectionName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string configSectionName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ExternalDataExchangeService.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (configSectionName As String)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.ExternalDataExchangeService : string -&gt; System.Workflow.Activities.ExternalDataExchangeService" Usage="new System.Workflow.Activities.ExternalDataExchangeService configSectionName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExternalDataExchangeService(System::String ^ configSectionName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -96,6 +116,9 @@
       <MemberSignature Language="C#" Value="public ExternalDataExchangeService (System.Workflow.Activities.ExternalDataExchangeServiceSection settings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Workflow.Activities.ExternalDataExchangeServiceSection settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ExternalDataExchangeService.#ctor(System.Workflow.Activities.ExternalDataExchangeServiceSection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (settings As ExternalDataExchangeServiceSection)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.ExternalDataExchangeService : System.Workflow.Activities.ExternalDataExchangeServiceSection -&gt; System.Workflow.Activities.ExternalDataExchangeService" Usage="new System.Workflow.Activities.ExternalDataExchangeService settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ExternalDataExchangeService(System::Workflow::Activities::ExternalDataExchangeServiceSection ^ settings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -114,6 +137,9 @@
       <MemberSignature Language="C#" Value="public virtual void AddService (object service);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddService(object service) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ExternalDataExchangeService.AddService(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub AddService (service As Object)" />
+      <MemberSignature Language="F#" Value="abstract member AddService : obj -&gt; unit&#xA;override this.AddService : obj -&gt; unit" Usage="externalDataExchangeService.AddService service" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddService(System::Object ^ service);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -148,6 +174,9 @@
       <MemberSignature Language="C#" Value="public virtual object GetService (Type serviceType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetService(class System.Type serviceType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ExternalDataExchangeService.GetService(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetService (serviceType As Type) As Object" />
+      <MemberSignature Language="F#" Value="abstract member GetService : Type -&gt; obj&#xA;override this.GetService : Type -&gt; obj" Usage="externalDataExchangeService.GetService serviceType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ GetService(Type ^ serviceType);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -173,6 +202,9 @@
       <MemberSignature Language="C#" Value="public virtual void RemoveService (object service);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveService(object service) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ExternalDataExchangeService.RemoveService(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub RemoveService (service As Object)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveService : obj -&gt; unit&#xA;override this.RemoveService : obj -&gt; unit" Usage="externalDataExchangeService.RemoveService service" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveService(System::Object ^ service);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -197,6 +229,9 @@
       <MemberSignature Language="C#" Value="protected override void Start ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Start() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.ExternalDataExchangeService.Start" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Start ()" />
+      <MemberSignature Language="F#" Value="override this.Start : unit -&gt; unit" Usage="externalDataExchangeService.Start " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Start();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -211,14 +246,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ExternalDataExchangeService" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

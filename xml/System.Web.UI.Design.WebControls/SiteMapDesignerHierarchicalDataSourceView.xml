@@ -1,7 +1,10 @@
-<Type Name="SiteMapDesignerHierarchicalDataSourceView" FullName="System.Web.UI.Design.WebControls.SiteMapDesignerHierarchicalDataSourceView">
+﻿<Type Name="SiteMapDesignerHierarchicalDataSourceView" FullName="System.Web.UI.Design.WebControls.SiteMapDesignerHierarchicalDataSourceView">
   <TypeSignature Language="C#" Value="public class SiteMapDesignerHierarchicalDataSourceView : System.Web.UI.Design.DesignerHierarchicalDataSourceView" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SiteMapDesignerHierarchicalDataSourceView extends System.Web.UI.Design.DesignerHierarchicalDataSourceView" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.Design.WebControls.SiteMapDesignerHierarchicalDataSourceView" />
+  <TypeSignature Language="VB.NET" Value="Public Class SiteMapDesignerHierarchicalDataSourceView&#xA;Inherits DesignerHierarchicalDataSourceView" />
+  <TypeSignature Language="F#" Value="type SiteMapDesignerHierarchicalDataSourceView = class&#xA;    inherit DesignerHierarchicalDataSourceView" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SiteMapDesignerHierarchicalDataSourceView : System::Web::UI::Design::DesignerHierarchicalDataSourceView" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -21,6 +24,9 @@
       <MemberSignature Language="C#" Value="public SiteMapDesignerHierarchicalDataSourceView (System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner owner, string viewPath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner owner, string viewPath) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SiteMapDesignerHierarchicalDataSourceView.#ctor(System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As SiteMapDataSourceDesigner, viewPath As String)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.Design.WebControls.SiteMapDesignerHierarchicalDataSourceView : System.Web.UI.Design.WebControls.SiteMapDataSourceDesigner * string -&gt; System.Web.UI.Design.WebControls.SiteMapDesignerHierarchicalDataSourceView" Usage="new System.Web.UI.Design.WebControls.SiteMapDesignerHierarchicalDataSourceView (owner, viewPath)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SiteMapDesignerHierarchicalDataSourceView(System::Web::UI::Design::WebControls::SiteMapDataSourceDesigner ^ owner, System::String ^ viewPath);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -41,6 +47,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.IHierarchicalEnumerable GetDesignTimeData (out bool isSampleData);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Web.UI.IHierarchicalEnumerable GetDesignTimeData([out] bool&amp; isSampleData) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.Design.WebControls.SiteMapDesignerHierarchicalDataSourceView.GetDesignTimeData(System.Boolean@)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDesignTimeData (ByRef isSampleData As Boolean) As IHierarchicalEnumerable" />
+      <MemberSignature Language="F#" Value="override this.GetDesignTimeData :  -&gt; System.Web.UI.IHierarchicalEnumerable" Usage="siteMapDesignerHierarchicalDataSourceView.GetDesignTimeData isSampleData" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Web::UI::IHierarchicalEnumerable ^ GetDesignTimeData([Runtime::InteropServices::Out] bool % isSampleData);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
@@ -64,6 +73,9 @@
       <MemberSignature Language="C#" Value="public override System.Web.UI.Design.IDataSourceSchema Schema { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.Design.IDataSourceSchema Schema" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.Design.WebControls.SiteMapDesignerHierarchicalDataSourceView.Schema" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Schema As IDataSourceSchema" />
+      <MemberSignature Language="F#" Value="member this.Schema : System.Web.UI.Design.IDataSourceSchema" Usage="System.Web.UI.Design.WebControls.SiteMapDesignerHierarchicalDataSourceView.Schema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Web::UI::Design::IDataSourceSchema ^ Schema { System::Web::UI::Design::IDataSourceSchema ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>

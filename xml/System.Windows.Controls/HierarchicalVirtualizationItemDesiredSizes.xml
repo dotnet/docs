@@ -1,7 +1,10 @@
-<Type Name="HierarchicalVirtualizationItemDesiredSizes" FullName="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes">
+﻿<Type Name="HierarchicalVirtualizationItemDesiredSizes" FullName="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes">
   <TypeSignature Language="C#" Value="public struct HierarchicalVirtualizationItemDesiredSizes" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit HierarchicalVirtualizationItemDesiredSizes extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" />
+  <TypeSignature Language="VB.NET" Value="Public Structure HierarchicalVirtualizationItemDesiredSizes" />
+  <TypeSignature Language="F#" Value="type HierarchicalVirtualizationItemDesiredSizes = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class HierarchicalVirtualizationItemDesiredSizes" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public HierarchicalVirtualizationItemDesiredSizes (System.Windows.Size logicalSize, System.Windows.Size logicalSizeInViewport, System.Windows.Size logicalSizeBeforeViewport, System.Windows.Size logicalSizeAfterViewport, System.Windows.Size pixelSize, System.Windows.Size pixelSizeInViewport, System.Windows.Size pixelSizeBeforeViewport, System.Windows.Size pixelSizeAfterViewport);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Size logicalSize, valuetype System.Windows.Size logicalSizeInViewport, valuetype System.Windows.Size logicalSizeBeforeViewport, valuetype System.Windows.Size logicalSizeAfterViewport, valuetype System.Windows.Size pixelSize, valuetype System.Windows.Size pixelSizeInViewport, valuetype System.Windows.Size pixelSizeBeforeViewport, valuetype System.Windows.Size pixelSizeAfterViewport) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.#ctor(System.Windows.Size,System.Windows.Size,System.Windows.Size,System.Windows.Size,System.Windows.Size,System.Windows.Size,System.Windows.Size,System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (logicalSize As Size, logicalSizeInViewport As Size, logicalSizeBeforeViewport As Size, logicalSizeAfterViewport As Size, pixelSize As Size, pixelSizeInViewport As Size, pixelSizeBeforeViewport As Size, pixelSizeAfterViewport As Size)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes : System.Windows.Size * System.Windows.Size * System.Windows.Size * System.Windows.Size * System.Windows.Size * System.Windows.Size * System.Windows.Size * System.Windows.Size -&gt; System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" Usage="new System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes (logicalSize, logicalSizeInViewport, logicalSizeBeforeViewport, logicalSizeAfterViewport, pixelSize, pixelSizeInViewport, pixelSizeBeforeViewport, pixelSizeAfterViewport)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; HierarchicalVirtualizationItemDesiredSizes(System::Windows::Size logicalSize, System::Windows::Size logicalSizeInViewport, System::Windows::Size logicalSizeBeforeViewport, System::Windows::Size logicalSizeAfterViewport, System::Windows::Size pixelSize, System::Windows::Size pixelSizeInViewport, System::Windows::Size pixelSizeBeforeViewport, System::Windows::Size pixelSizeAfterViewport);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -47,10 +53,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a value that indicates whether the specified object is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" /> object.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object oCompare);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object oCompare) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (oCompare As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="hierarchicalVirtualizationItemDesiredSizes.Equals oCompare" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ oCompare);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -74,6 +92,9 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes comparisonItemSizes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Equals(valuetype System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes comparisonItemSizes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.Equals(System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (comparisonItemSizes As HierarchicalVirtualizationItemDesiredSizes) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes -&gt; bool" Usage="hierarchicalVirtualizationItemDesiredSizes.Equals comparisonItemSizes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Equals(System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes comparisonItemSizes);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -97,6 +118,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="hierarchicalVirtualizationItemDesiredSizes.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -116,6 +140,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Size LogicalSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size LogicalSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogicalSize As Size" />
+      <MemberSignature Language="F#" Value="member this.LogicalSize : System.Windows.Size" Usage="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size LogicalSize { System::Windows::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -134,6 +161,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Size LogicalSizeAfterViewport { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size LogicalSizeAfterViewport" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSizeAfterViewport" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogicalSizeAfterViewport As Size" />
+      <MemberSignature Language="F#" Value="member this.LogicalSizeAfterViewport : System.Windows.Size" Usage="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSizeAfterViewport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size LogicalSizeAfterViewport { System::Windows::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -152,6 +182,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Size LogicalSizeBeforeViewport { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size LogicalSizeBeforeViewport" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSizeBeforeViewport" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogicalSizeBeforeViewport As Size" />
+      <MemberSignature Language="F#" Value="member this.LogicalSizeBeforeViewport : System.Windows.Size" Usage="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSizeBeforeViewport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size LogicalSizeBeforeViewport { System::Windows::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -170,6 +203,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Size LogicalSizeInViewport { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size LogicalSizeInViewport" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSizeInViewport" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LogicalSizeInViewport As Size" />
+      <MemberSignature Language="F#" Value="member this.LogicalSizeInViewport : System.Windows.Size" Usage="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.LogicalSizeInViewport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size LogicalSizeInViewport { System::Windows::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -188,6 +224,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes1, System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes1, valuetype System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.op_Equality(System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes,System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (itemDesiredSizes1 As HierarchicalVirtualizationItemDesiredSizes, itemDesiredSizes2 As HierarchicalVirtualizationItemDesiredSizes) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes * System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes -&gt; bool" Usage="itemDesiredSizes1 = itemDesiredSizes2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes1, System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -213,6 +252,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes1, System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes1, valuetype System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.op_Inequality(System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes,System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (itemDesiredSizes1 As HierarchicalVirtualizationItemDesiredSizes, itemDesiredSizes2 As HierarchicalVirtualizationItemDesiredSizes) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes * System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes -&gt; bool" Usage="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.op_Inequality (itemDesiredSizes1, itemDesiredSizes2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes1, System::Windows::Controls::HierarchicalVirtualizationItemDesiredSizes itemDesiredSizes2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -238,6 +280,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Size PixelSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size PixelSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSize" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelSize As Size" />
+      <MemberSignature Language="F#" Value="member this.PixelSize : System.Windows.Size" Usage="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSize" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size PixelSize { System::Windows::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -256,6 +301,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Size PixelSizeAfterViewport { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size PixelSizeAfterViewport" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSizeAfterViewport" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelSizeAfterViewport As Size" />
+      <MemberSignature Language="F#" Value="member this.PixelSizeAfterViewport : System.Windows.Size" Usage="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSizeAfterViewport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size PixelSizeAfterViewport { System::Windows::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -274,6 +322,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Size PixelSizeBeforeViewport { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size PixelSizeBeforeViewport" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSizeBeforeViewport" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelSizeBeforeViewport As Size" />
+      <MemberSignature Language="F#" Value="member this.PixelSizeBeforeViewport : System.Windows.Size" Usage="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSizeBeforeViewport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size PixelSizeBeforeViewport { System::Windows::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -292,6 +343,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Size PixelSizeInViewport { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Size PixelSizeInViewport" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSizeInViewport" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PixelSizeInViewport As Size" />
+      <MemberSignature Language="F#" Value="member this.PixelSizeInViewport : System.Windows.Size" Usage="System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes.PixelSizeInViewport" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Size PixelSizeInViewport { System::Windows::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -306,14 +360,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a value that indicates whether the specified object is equal to this <see cref="T:System.Windows.Controls.HierarchicalVirtualizationItemDesiredSizes" /> object.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

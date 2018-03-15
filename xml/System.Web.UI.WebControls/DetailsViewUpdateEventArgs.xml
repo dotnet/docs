@@ -1,7 +1,10 @@
-<Type Name="DetailsViewUpdateEventArgs" FullName="System.Web.UI.WebControls.DetailsViewUpdateEventArgs">
+﻿<Type Name="DetailsViewUpdateEventArgs" FullName="System.Web.UI.WebControls.DetailsViewUpdateEventArgs">
   <TypeSignature Language="C#" Value="public class DetailsViewUpdateEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DetailsViewUpdateEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.DetailsViewUpdateEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class DetailsViewUpdateEventArgs&#xA;Inherits CancelEventArgs" />
+  <TypeSignature Language="F#" Value="type DetailsViewUpdateEventArgs = class&#xA;    inherit CancelEventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DetailsViewUpdateEventArgs : System::ComponentModel::CancelEventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +53,9 @@
       <MemberSignature Language="C#" Value="public DetailsViewUpdateEventArgs (object commandArgument);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object commandArgument) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.#ctor(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (commandArgument As Object)" />
+      <MemberSignature Language="F#" Value="new System.Web.UI.WebControls.DetailsViewUpdateEventArgs : obj -&gt; System.Web.UI.WebControls.DetailsViewUpdateEventArgs" Usage="new System.Web.UI.WebControls.DetailsViewUpdateEventArgs commandArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DetailsViewUpdateEventArgs(System::Object ^ commandArgument);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -88,6 +94,9 @@
       <MemberSignature Language="C#" Value="public object CommandArgument { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object CommandArgument" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.CommandArgument" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CommandArgument As Object" />
+      <MemberSignature Language="F#" Value="member this.CommandArgument : obj" Usage="System.Web.UI.WebControls.DetailsViewUpdateEventArgs.CommandArgument" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ CommandArgument { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -117,6 +126,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary Keys" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As IOrderedDictionary" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.DetailsViewUpdateEventArgs.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ Keys { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -165,6 +177,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary NewValues { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary NewValues" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NewValues As IOrderedDictionary" />
+      <MemberSignature Language="F#" Value="member this.NewValues : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.DetailsViewUpdateEventArgs.NewValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ NewValues { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -213,6 +228,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.Specialized.IOrderedDictionary OldValues { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Specialized.IOrderedDictionary OldValues" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.DetailsViewUpdateEventArgs.OldValues" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OldValues As IOrderedDictionary" />
+      <MemberSignature Language="F#" Value="member this.OldValues : System.Collections.Specialized.IOrderedDictionary" Usage="System.Web.UI.WebControls.DetailsViewUpdateEventArgs.OldValues" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Specialized::IOrderedDictionary ^ OldValues { System::Collections::Specialized::IOrderedDictionary ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

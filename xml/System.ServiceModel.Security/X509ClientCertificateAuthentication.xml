@@ -1,7 +1,10 @@
-<Type Name="X509ClientCertificateAuthentication" FullName="System.ServiceModel.Security.X509ClientCertificateAuthentication">
+﻿<Type Name="X509ClientCertificateAuthentication" FullName="System.ServiceModel.Security.X509ClientCertificateAuthentication">
   <TypeSignature Language="C#" Value="public class X509ClientCertificateAuthentication" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit X509ClientCertificateAuthentication extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ServiceModel.Security.X509ClientCertificateAuthentication" />
+  <TypeSignature Language="VB.NET" Value="Public Class X509ClientCertificateAuthentication" />
+  <TypeSignature Language="F#" Value="type X509ClientCertificateAuthentication = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class X509ClientCertificateAuthentication" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -45,6 +48,9 @@
       <MemberSignature Language="C#" Value="public System.ServiceModel.Security.X509CertificateValidationMode CertificateValidationMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.ServiceModel.Security.X509CertificateValidationMode CertificateValidationMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property CertificateValidationMode As X509CertificateValidationMode" />
+      <MemberSignature Language="F#" Value="member this.CertificateValidationMode : System.ServiceModel.Security.X509CertificateValidationMode with get, set" Usage="System.ServiceModel.Security.X509ClientCertificateAuthentication.CertificateValidationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ServiceModel::Security::X509CertificateValidationMode CertificateValidationMode { System::ServiceModel::Security::X509CertificateValidationMode get(); void set(System::ServiceModel::Security::X509CertificateValidationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -98,6 +104,9 @@
       <MemberSignature Language="C#" Value="public System.IdentityModel.Selectors.X509CertificateValidator CustomCertificateValidator { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IdentityModel.Selectors.X509CertificateValidator CustomCertificateValidator" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.X509ClientCertificateAuthentication.CustomCertificateValidator" />
+      <MemberSignature Language="VB.NET" Value="Public Property CustomCertificateValidator As X509CertificateValidator" />
+      <MemberSignature Language="F#" Value="member this.CustomCertificateValidator : System.IdentityModel.Selectors.X509CertificateValidator with get, set" Usage="System.ServiceModel.Security.X509ClientCertificateAuthentication.CustomCertificateValidator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IdentityModel::Selectors::X509CertificateValidator ^ CustomCertificateValidator { System::IdentityModel::Selectors::X509CertificateValidator ^ get(); void set(System::IdentityModel::Selectors::X509CertificateValidator ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -147,6 +156,9 @@
       <MemberSignature Language="C#" Value="public bool IncludeWindowsGroups { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IncludeWindowsGroups" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.X509ClientCertificateAuthentication.IncludeWindowsGroups" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeWindowsGroups As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeWindowsGroups : bool with get, set" Usage="System.ServiceModel.Security.X509ClientCertificateAuthentication.IncludeWindowsGroups" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeWindowsGroups { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -193,6 +205,9 @@
       <MemberSignature Language="C#" Value="public bool MapClientCertificateToWindowsAccount { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MapClientCertificateToWindowsAccount" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.X509ClientCertificateAuthentication.MapClientCertificateToWindowsAccount" />
+      <MemberSignature Language="VB.NET" Value="Public Property MapClientCertificateToWindowsAccount As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MapClientCertificateToWindowsAccount : bool with get, set" Usage="System.ServiceModel.Security.X509ClientCertificateAuthentication.MapClientCertificateToWindowsAccount" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MapClientCertificateToWindowsAccount { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -239,6 +254,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.X509RevocationMode RevocationMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.X509RevocationMode RevocationMode" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.X509ClientCertificateAuthentication.RevocationMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property RevocationMode As X509RevocationMode" />
+      <MemberSignature Language="F#" Value="member this.RevocationMode : System.Security.Cryptography.X509Certificates.X509RevocationMode with get, set" Usage="System.ServiceModel.Security.X509ClientCertificateAuthentication.RevocationMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::X509RevocationMode RevocationMode { System::Security::Cryptography::X509Certificates::X509RevocationMode get(); void set(System::Security::Cryptography::X509Certificates::X509RevocationMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -286,6 +304,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.X509Certificates.StoreLocation TrustedStoreLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Security.Cryptography.X509Certificates.StoreLocation TrustedStoreLocation" />
       <MemberSignature Language="DocId" Value="P:System.ServiceModel.Security.X509ClientCertificateAuthentication.TrustedStoreLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property TrustedStoreLocation As StoreLocation" />
+      <MemberSignature Language="F#" Value="member this.TrustedStoreLocation : System.Security.Cryptography.X509Certificates.StoreLocation with get, set" Usage="System.ServiceModel.Security.X509ClientCertificateAuthentication.TrustedStoreLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::X509Certificates::StoreLocation TrustedStoreLocation { System::Security::Cryptography::X509Certificates::StoreLocation get(); void set(System::Security::Cryptography::X509Certificates::StoreLocation value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

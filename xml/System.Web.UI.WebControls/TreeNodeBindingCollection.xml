@@ -1,7 +1,10 @@
-<Type Name="TreeNodeBindingCollection" FullName="System.Web.UI.WebControls.TreeNodeBindingCollection">
+﻿<Type Name="TreeNodeBindingCollection" FullName="System.Web.UI.WebControls.TreeNodeBindingCollection">
   <TypeSignature Language="C#" Value="public sealed class TreeNodeBindingCollection : System.Web.UI.StateManagedCollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TreeNodeBindingCollection extends System.Web.UI.StateManagedCollection" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.TreeNodeBindingCollection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class TreeNodeBindingCollection&#xA;Inherits StateManagedCollection" />
+  <TypeSignature Language="F#" Value="type TreeNodeBindingCollection = class&#xA;    inherit StateManagedCollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TreeNodeBindingCollection sealed : System::Web::UI::StateManagedCollection" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -83,6 +86,9 @@
       <MemberSignature Language="C#" Value="public int Add (System.Web.UI.WebControls.TreeNodeBinding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 Add(class System.Web.UI.WebControls.TreeNodeBinding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Add(System.Web.UI.WebControls.TreeNodeBinding)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (binding As TreeNodeBinding) As Integer" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.WebControls.TreeNodeBinding -&gt; int" Usage="treeNodeBindingCollection.Add binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Add(System::Web::UI::WebControls::TreeNodeBinding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -149,6 +155,9 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Web.UI.WebControls.TreeNodeBinding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Contains(class System.Web.UI.WebControls.TreeNodeBinding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Contains(System.Web.UI.WebControls.TreeNodeBinding)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (binding As TreeNodeBinding) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Contains : System.Web.UI.WebControls.TreeNodeBinding -&gt; bool" Usage="treeNodeBindingCollection.Contains binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Contains(System::Web::UI::WebControls::TreeNodeBinding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -182,6 +191,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Web.UI.WebControls.TreeNodeBinding[] bindingArray, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(class System.Web.UI.WebControls.TreeNodeBinding[] bindingArray, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeBindingCollection.CopyTo(System.Web.UI.WebControls.TreeNodeBinding[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (bindingArray As TreeNodeBinding(), index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.CopyTo : System.Web.UI.WebControls.TreeNodeBinding[] * int -&gt; unit" Usage="treeNodeBindingCollection.CopyTo (bindingArray, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Web::UI::WebControls::TreeNodeBinding ^&gt; ^ bindingArray, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -228,6 +240,9 @@
       <MemberSignature Language="C#" Value="protected override object CreateKnownType (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance object CreateKnownType(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeBindingCollection.CreateKnownType(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateKnownType (index As Integer) As Object" />
+      <MemberSignature Language="F#" Value="override this.CreateKnownType : int -&gt; obj" Usage="treeNodeBindingCollection.CreateKnownType index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Object ^ CreateKnownType(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -250,6 +265,9 @@
       <MemberSignature Language="C#" Value="protected override Type[] GetKnownTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Type[] GetKnownTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeBindingCollection.GetKnownTypes" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKnownTypes () As Type()" />
+      <MemberSignature Language="F#" Value="override this.GetKnownTypes : unit -&gt; Type[]" Usage="treeNodeBindingCollection.GetKnownTypes " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override cli::array &lt;Type ^&gt; ^ GetKnownTypes();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -269,6 +287,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (System.Web.UI.WebControls.TreeNodeBinding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(class System.Web.UI.WebControls.TreeNodeBinding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeBindingCollection.IndexOf(System.Web.UI.WebControls.TreeNodeBinding)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (binding As TreeNodeBinding) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : System.Web.UI.WebControls.TreeNodeBinding -&gt; int" Usage="treeNodeBindingCollection.IndexOf binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::Web::UI::WebControls::TreeNodeBinding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -304,6 +325,9 @@
       <MemberSignature Language="C#" Value="public void Insert (int index, System.Web.UI.WebControls.TreeNodeBinding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Insert(int32 index, class System.Web.UI.WebControls.TreeNodeBinding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Insert(System.Int32,System.Web.UI.WebControls.TreeNodeBinding)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Insert (index As Integer, binding As TreeNodeBinding)" />
+      <MemberSignature Language="F#" Value="member this.Insert : int * System.Web.UI.WebControls.TreeNodeBinding -&gt; unit" Usage="treeNodeBindingCollection.Insert (index, binding)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Insert(int index, System::Web::UI::WebControls::TreeNodeBinding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -371,6 +395,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.WebControls.TreeNodeBinding this[int i] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.WebControls.TreeNodeBinding Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.WebControls.TreeNodeBindingCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(i As Integer) As TreeNodeBinding" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.WebControls.TreeNodeBinding with get, set" Usage="System.Web.UI.WebControls.TreeNodeBindingCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::WebControls::TreeNodeBinding ^ default[int] { System::Web::UI::WebControls::TreeNodeBinding ^ get(int i); void set(int i, System::Web::UI::WebControls::TreeNodeBinding ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -431,6 +458,9 @@
       <MemberSignature Language="C#" Value="protected override void OnClear ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnClear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeBindingCollection.OnClear" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnClear ()" />
+      <MemberSignature Language="F#" Value="override this.OnClear : unit -&gt; unit" Usage="treeNodeBindingCollection.OnClear " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnClear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -449,6 +479,9 @@
       <MemberSignature Language="C#" Value="protected override void OnRemoveComplete (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRemoveComplete(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeBindingCollection.OnRemoveComplete(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnRemoveComplete (index As Integer, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnRemoveComplete : int * obj -&gt; unit" Usage="treeNodeBindingCollection.OnRemoveComplete (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRemoveComplete(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -472,6 +505,9 @@
       <MemberSignature Language="C#" Value="protected override void OnValidate (object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnValidate(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeBindingCollection.OnValidate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnValidate (value As Object)" />
+      <MemberSignature Language="F#" Value="override this.OnValidate : obj -&gt; unit" Usage="treeNodeBindingCollection.OnValidate value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnValidate(System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -493,6 +529,9 @@
       <MemberSignature Language="C#" Value="public void Remove (System.Web.UI.WebControls.TreeNodeBinding binding);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(class System.Web.UI.WebControls.TreeNodeBinding binding) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeBindingCollection.Remove(System.Web.UI.WebControls.TreeNodeBinding)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (binding As TreeNodeBinding)" />
+      <MemberSignature Language="F#" Value="member this.Remove : System.Web.UI.WebControls.TreeNodeBinding -&gt; unit" Usage="treeNodeBindingCollection.Remove binding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::Web::UI::WebControls::TreeNodeBinding ^ binding);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -557,6 +596,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeBindingCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="treeNodeBindingCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -621,6 +663,9 @@
       <MemberSignature Language="C#" Value="protected override void SetDirtyObject (object o);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetDirtyObject(object o) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.WebControls.TreeNodeBindingCollection.SetDirtyObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetDirtyObject (o As Object)" />
+      <MemberSignature Language="F#" Value="override this.SetDirtyObject : obj -&gt; unit" Usage="treeNodeBindingCollection.SetDirtyObject o" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetDirtyObject(System::Object ^ o);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

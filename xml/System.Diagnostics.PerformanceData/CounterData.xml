@@ -1,7 +1,10 @@
-<Type Name="CounterData" FullName="System.Diagnostics.PerformanceData.CounterData">
+﻿<Type Name="CounterData" FullName="System.Diagnostics.PerformanceData.CounterData">
   <TypeSignature Language="C#" Value="public sealed class CounterData" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CounterData extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Diagnostics.PerformanceData.CounterData" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CounterData" />
+  <TypeSignature Language="F#" Value="type CounterData = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CounterData sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="public void Decrement ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Decrement() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterData.Decrement" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Decrement ()" />
+      <MemberSignature Language="F#" Value="member this.Decrement : unit -&gt; unit" Usage="counterData.Decrement " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Decrement();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -62,6 +68,9 @@
       <MemberSignature Language="C#" Value="public void Increment ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Increment() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterData.Increment" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Increment ()" />
+      <MemberSignature Language="F#" Value="member this.Increment : unit -&gt; unit" Usage="counterData.Increment " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Increment();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -96,6 +105,9 @@
       <MemberSignature Language="C#" Value="public void IncrementBy (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void IncrementBy(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.PerformanceData.CounterData.IncrementBy(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub IncrementBy (value As Long)" />
+      <MemberSignature Language="F#" Value="member this.IncrementBy : int64 -&gt; unit" Usage="counterData.IncrementBy value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void IncrementBy(long value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -133,6 +145,9 @@
       <MemberSignature Language="C#" Value="public long RawValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 RawValue" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceData.CounterData.RawValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property RawValue As Long" />
+      <MemberSignature Language="F#" Value="member this.RawValue : int64 with get, set" Usage="System.Diagnostics.PerformanceData.CounterData.RawValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long RawValue { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -166,6 +181,9 @@
       <MemberSignature Language="C#" Value="public long Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int64 Value" />
       <MemberSignature Language="DocId" Value="P:System.Diagnostics.PerformanceData.CounterData.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As Long" />
+      <MemberSignature Language="F#" Value="member this.Value : int64 with get, set" Usage="System.Diagnostics.PerformanceData.CounterData.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property long Value { long get(); void set(long value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

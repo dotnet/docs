@@ -1,7 +1,10 @@
-<Type Name="RibbonControlLength" FullName="System.Windows.Controls.Ribbon.RibbonControlLength">
+﻿<Type Name="RibbonControlLength" FullName="System.Windows.Controls.Ribbon.RibbonControlLength">
   <TypeSignature Language="C#" Value="public struct RibbonControlLength : IEquatable&lt;System.Windows.Controls.Ribbon.RibbonControlLength&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit RibbonControlLength extends System.ValueType implements class System.IEquatable`1&lt;valuetype System.Windows.Controls.Ribbon.RibbonControlLength&gt;" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.Ribbon.RibbonControlLength" />
+  <TypeSignature Language="VB.NET" Value="Public Structure RibbonControlLength&#xA;Implements IEquatable(Of RibbonControlLength)" />
+  <TypeSignature Language="F#" Value="type RibbonControlLength = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class RibbonControlLength : IEquatable&lt;System::Windows::Controls::Ribbon::RibbonControlLength&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +27,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> structure.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public RibbonControlLength (double pixels);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 pixels) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.#ctor(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (pixels As Double)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.Ribbon.RibbonControlLength : double -&gt; System.Windows.Controls.Ribbon.RibbonControlLength" Usage="new System.Windows.Controls.Ribbon.RibbonControlLength pixels" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonControlLength(double pixels);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -48,6 +63,9 @@
       <MemberSignature Language="C#" Value="public RibbonControlLength (double value, System.Windows.Controls.Ribbon.RibbonControlLengthUnitType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(float64 value, valuetype System.Windows.Controls.Ribbon.RibbonControlLengthUnitType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.#ctor(System.Double,System.Windows.Controls.Ribbon.RibbonControlLengthUnitType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Double, type As RibbonControlLengthUnitType)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Controls.Ribbon.RibbonControlLength : double * System.Windows.Controls.Ribbon.RibbonControlLengthUnitType -&gt; System.Windows.Controls.Ribbon.RibbonControlLength" Usage="new System.Windows.Controls.Ribbon.RibbonControlLength (value, type)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonControlLength(double value, System::Windows::Controls::Ribbon::RibbonControlLengthUnitType type);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -78,6 +96,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Controls.Ribbon.RibbonControlLength Auto { get; }" />
       <MemberSignature Language="ILAsm" Value=".property valuetype System.Windows.Controls.Ribbon.RibbonControlLength Auto" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlLength.Auto" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Auto As RibbonControlLength" />
+      <MemberSignature Language="F#" Value="member this.Auto : System.Windows.Controls.Ribbon.RibbonControlLength" Usage="System.Windows.Controls.Ribbon.RibbonControlLength.Auto" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Controls::Ribbon::RibbonControlLength Auto { System::Windows::Controls::Ribbon::RibbonControlLength get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -92,10 +113,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Equals">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether an object is equal to the current <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Equals">
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="ribbonControlLength.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -119,7 +152,13 @@
       <MemberSignature Language="C#" Value="public bool Equals (System.Windows.Controls.Ribbon.RibbonControlLength other);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Equals(valuetype System.Windows.Controls.Ribbon.RibbonControlLength other) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.Equals(System.Windows.Controls.Ribbon.RibbonControlLength)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Equals (other As RibbonControlLength) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : System.Windows.Controls.Ribbon.RibbonControlLength -&gt; bool" Usage="ribbonControlLength.Equals other" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Equals(System::Windows::Controls::Ribbon::RibbonControlLength other);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -142,6 +181,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="ribbonControlLength.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -161,6 +203,9 @@
       <MemberSignature Language="C#" Value="public bool IsAbsolute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAbsolute" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlLength.IsAbsolute" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAbsolute As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAbsolute : bool" Usage="System.Windows.Controls.Ribbon.RibbonControlLength.IsAbsolute" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAbsolute { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -180,6 +225,9 @@
       <MemberSignature Language="C#" Value="public bool IsAuto { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsAuto" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlLength.IsAuto" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsAuto As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsAuto : bool" Usage="System.Windows.Controls.Ribbon.RibbonControlLength.IsAuto" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsAuto { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -199,6 +247,9 @@
       <MemberSignature Language="C#" Value="public bool IsStar { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsStar" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlLength.IsStar" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsStar As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsStar : bool" Usage="System.Windows.Controls.Ribbon.RibbonControlLength.IsStar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsStar { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -218,6 +269,9 @@
       <MemberSignature Language="C#" Value="public static bool operator == (System.Windows.Controls.Ribbon.RibbonControlLength length1, System.Windows.Controls.Ribbon.RibbonControlLength length2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Equality(valuetype System.Windows.Controls.Ribbon.RibbonControlLength length1, valuetype System.Windows.Controls.Ribbon.RibbonControlLength length2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.op_Equality(System.Windows.Controls.Ribbon.RibbonControlLength,System.Windows.Controls.Ribbon.RibbonControlLength)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator == (length1 As RibbonControlLength, length2 As RibbonControlLength) As Boolean" />
+      <MemberSignature Language="F#" Value="static member ( = ) : System.Windows.Controls.Ribbon.RibbonControlLength * System.Windows.Controls.Ribbon.RibbonControlLength -&gt; bool" Usage="length1 = length2" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator ==(System::Windows::Controls::Ribbon::RibbonControlLength length1, System::Windows::Controls::Ribbon::RibbonControlLength length2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -243,6 +297,9 @@
       <MemberSignature Language="C#" Value="public static bool operator != (System.Windows.Controls.Ribbon.RibbonControlLength length1, System.Windows.Controls.Ribbon.RibbonControlLength length2);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname bool op_Inequality(valuetype System.Windows.Controls.Ribbon.RibbonControlLength length1, valuetype System.Windows.Controls.Ribbon.RibbonControlLength length2) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.op_Inequality(System.Windows.Controls.Ribbon.RibbonControlLength,System.Windows.Controls.Ribbon.RibbonControlLength)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator != (length1 As RibbonControlLength, length2 As RibbonControlLength) As Boolean" />
+      <MemberSignature Language="F#" Value="static member op_Inequality : System.Windows.Controls.Ribbon.RibbonControlLength * System.Windows.Controls.Ribbon.RibbonControlLength -&gt; bool" Usage="System.Windows.Controls.Ribbon.RibbonControlLength.op_Inequality (length1, length2)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static bool operator !=(System::Windows::Controls::Ribbon::RibbonControlLength length1, System::Windows::Controls::Ribbon::RibbonControlLength length2);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -268,6 +325,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Controls.Ribbon.RibbonControlLengthUnitType RibbonControlLengthUnitType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Controls.Ribbon.RibbonControlLengthUnitType RibbonControlLengthUnitType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlLength.RibbonControlLengthUnitType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RibbonControlLengthUnitType As RibbonControlLengthUnitType" />
+      <MemberSignature Language="F#" Value="member this.RibbonControlLengthUnitType : System.Windows.Controls.Ribbon.RibbonControlLengthUnitType" Usage="System.Windows.Controls.Ribbon.RibbonControlLength.RibbonControlLengthUnitType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Controls::Ribbon::RibbonControlLengthUnitType RibbonControlLengthUnitType { System::Windows::Controls::Ribbon::RibbonControlLengthUnitType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -286,6 +346,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Controls.Ribbon.RibbonControlLength.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="ribbonControlLength.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -305,6 +368,9 @@
       <MemberSignature Language="C#" Value="public double Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Controls.Ribbon.RibbonControlLength.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Double" />
+      <MemberSignature Language="F#" Value="member this.Value : double" Usage="System.Windows.Controls.Ribbon.RibbonControlLength.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Value { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -319,23 +385,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Equals">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether an object is equal to the current <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" />.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Controls.Ribbon.RibbonControlLength" /> structure.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

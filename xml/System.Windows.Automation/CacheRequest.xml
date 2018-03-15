@@ -1,7 +1,10 @@
-<Type Name="CacheRequest" FullName="System.Windows.Automation.CacheRequest">
+﻿<Type Name="CacheRequest" FullName="System.Windows.Automation.CacheRequest">
   <TypeSignature Language="C#" Value="public sealed class CacheRequest" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CacheRequest extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.CacheRequest" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CacheRequest" />
+  <TypeSignature Language="F#" Value="type CacheRequest = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CacheRequest sealed" />
   <AssemblyInfo>
     <AssemblyName>UIAutomationClient</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +52,8 @@
       <MemberSignature Language="C#" Value="public CacheRequest ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.CacheRequest.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CacheRequest();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -71,6 +76,9 @@
       <MemberSignature Language="C#" Value="public IDisposable Activate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IDisposable Activate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.CacheRequest.Activate" />
+      <MemberSignature Language="VB.NET" Value="Public Function Activate () As IDisposable" />
+      <MemberSignature Language="F#" Value="member this.Activate : unit -&gt; IDisposable" Usage="cacheRequest.Activate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IDisposable ^ Activate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -126,6 +134,9 @@
       <MemberSignature Language="C#" Value="public void Add (System.Windows.Automation.AutomationPattern pattern);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Windows.Automation.AutomationPattern pattern) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.CacheRequest.Add(System.Windows.Automation.AutomationPattern)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (pattern As AutomationPattern)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Automation.AutomationPattern -&gt; unit" Usage="cacheRequest.Add pattern" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Automation::AutomationPattern ^ pattern);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -163,6 +174,9 @@
       <MemberSignature Language="C#" Value="public void Add (System.Windows.Automation.AutomationProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Windows.Automation.AutomationProperty property) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.CacheRequest.Add(System.Windows.Automation.AutomationProperty)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (property As AutomationProperty)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Windows.Automation.AutomationProperty -&gt; unit" Usage="cacheRequest.Add property" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Windows::Automation::AutomationProperty ^ property);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -202,6 +216,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.AutomationElementMode AutomationElementMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.AutomationElementMode AutomationElementMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.CacheRequest.AutomationElementMode" />
+      <MemberSignature Language="VB.NET" Value="Public Property AutomationElementMode As AutomationElementMode" />
+      <MemberSignature Language="F#" Value="member this.AutomationElementMode : System.Windows.Automation.AutomationElementMode with get, set" Usage="System.Windows.Automation.CacheRequest.AutomationElementMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::AutomationElementMode AutomationElementMode { System::Windows::Automation::AutomationElementMode get(); void set(System::Windows::Automation::AutomationElementMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -240,6 +257,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.CacheRequest Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Automation.CacheRequest Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.CacheRequest.Clone" />
+      <MemberSignature Language="VB.NET" Value="Public Function Clone () As CacheRequest" />
+      <MemberSignature Language="F#" Value="member this.Clone : unit -&gt; System.Windows.Automation.CacheRequest" Usage="cacheRequest.Clone " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Windows::Automation::CacheRequest ^ Clone();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -259,6 +279,9 @@
       <MemberSignature Language="C#" Value="public static System.Windows.Automation.CacheRequest Current { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Windows.Automation.CacheRequest Current" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.CacheRequest.Current" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Current As CacheRequest" />
+      <MemberSignature Language="F#" Value="member this.Current : System.Windows.Automation.CacheRequest" Usage="System.Windows.Automation.CacheRequest.Current" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Windows::Automation::CacheRequest ^ Current { System::Windows::Automation::CacheRequest ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -277,6 +300,9 @@
       <MemberSignature Language="C#" Value="public void Pop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Pop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.CacheRequest.Pop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Pop ()" />
+      <MemberSignature Language="F#" Value="member this.Pop : unit -&gt; unit" Usage="cacheRequest.Pop " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Pop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -314,6 +340,9 @@
       <MemberSignature Language="C#" Value="public void Push ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Push() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.CacheRequest.Push" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Push ()" />
+      <MemberSignature Language="F#" Value="member this.Push : unit -&gt; unit" Usage="cacheRequest.Push " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Push();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -350,6 +379,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.Condition TreeFilter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Automation.Condition TreeFilter" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.CacheRequest.TreeFilter" />
+      <MemberSignature Language="VB.NET" Value="Public Property TreeFilter As Condition" />
+      <MemberSignature Language="F#" Value="member this.TreeFilter : System.Windows.Automation.Condition with get, set" Usage="System.Windows.Automation.CacheRequest.TreeFilter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::Condition ^ TreeFilter { System::Windows::Automation::Condition ^ get(); void set(System::Windows::Automation::Condition ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>
@@ -384,6 +416,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Automation.TreeScope TreeScope { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Automation.TreeScope TreeScope" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Automation.CacheRequest.TreeScope" />
+      <MemberSignature Language="VB.NET" Value="Public Property TreeScope As TreeScope" />
+      <MemberSignature Language="F#" Value="member this.TreeScope : System.Windows.Automation.TreeScope with get, set" Usage="System.Windows.Automation.CacheRequest.TreeScope" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Automation::TreeScope TreeScope { System::Windows::Automation::TreeScope get(); void set(System::Windows::Automation::TreeScope value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>UIAutomationClient</AssemblyName>

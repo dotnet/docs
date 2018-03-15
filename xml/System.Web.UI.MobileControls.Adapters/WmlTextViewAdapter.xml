@@ -1,7 +1,10 @@
-<Type Name="WmlTextViewAdapter" FullName="System.Web.UI.MobileControls.Adapters.WmlTextViewAdapter">
+﻿<Type Name="WmlTextViewAdapter" FullName="System.Web.UI.MobileControls.Adapters.WmlTextViewAdapter">
   <TypeSignature Language="C#" Value="public class WmlTextViewAdapter : System.Web.UI.MobileControls.Adapters.WmlControlAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WmlTextViewAdapter extends System.Web.UI.MobileControls.Adapters.WmlControlAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.WmlTextViewAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class WmlTextViewAdapter&#xA;Inherits WmlControlAdapter" />
+  <TypeSignature Language="F#" Value="type WmlTextViewAdapter = class&#xA;    inherit WmlControlAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WmlTextViewAdapter : System::Web::UI::MobileControls::Adapters::WmlControlAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,8 @@
       <MemberSignature Language="C#" Value="public WmlTextViewAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlTextViewAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WmlTextViewAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="protected System.Web.UI.MobileControls.TextView Control { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.TextView Control" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.WmlTextViewAdapter.Control" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property Control As TextView" />
+      <MemberSignature Language="F#" Value="member this.Control : System.Web.UI.MobileControls.TextView" Usage="System.Web.UI.MobileControls.Adapters.WmlTextViewAdapter.Control" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property System::Web::UI::MobileControls::TextView ^ Control { System::Web::UI::MobileControls::TextView ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -61,6 +69,9 @@
       <MemberSignature Language="C#" Value="public override void Render (System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Render(class System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.WmlTextViewAdapter.Render(System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Render (writer As WmlMobileTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.Render : System.Web.UI.MobileControls.Adapters.WmlMobileTextWriter -&gt; unit" Usage="wmlTextViewAdapter.Render writer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Render(System::Web::UI::MobileControls::Adapters::WmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

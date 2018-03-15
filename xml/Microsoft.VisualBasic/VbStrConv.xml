@@ -1,7 +1,10 @@
-<Type Name="VbStrConv" FullName="Microsoft.VisualBasic.VbStrConv">
+﻿<Type Name="VbStrConv" FullName="Microsoft.VisualBasic.VbStrConv">
   <TypeSignature Language="C#" Value="public enum VbStrConv" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VbStrConv extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.VbStrConv" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VbStrConv" />
+  <TypeSignature Language="F#" Value="type VbStrConv = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class VbStrConv" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -31,6 +34,9 @@
       <MemberSignature Language="C#" Value="Hiragana" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VbStrConv Hiragana = int32(32)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.Hiragana" />
+      <MemberSignature Language="VB.NET" Value="Hiragana" />
+      <MemberSignature Language="F#" Value="Hiragana = 32" Usage="Microsoft.VisualBasic.VbStrConv.Hiragana" />
+      <MemberSignature Language="C++ CLI" Value="Hiragana" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -39,6 +45,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Converts Katakana characters in the string to Hiragana characters. Applies to Japanese locale only. This member is equivalent to the Visual Basic constant <see langword="vbHiragana" />.</summary>
       </Docs>
@@ -47,6 +54,9 @@
       <MemberSignature Language="C#" Value="Katakana" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VbStrConv Katakana = int32(16)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.Katakana" />
+      <MemberSignature Language="VB.NET" Value="Katakana" />
+      <MemberSignature Language="F#" Value="Katakana = 16" Usage="Microsoft.VisualBasic.VbStrConv.Katakana" />
+      <MemberSignature Language="C++ CLI" Value="Katakana" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -55,6 +65,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Converts Hiragana characters in the string to Katakana characters. Applies to Japanese locale only. This member is equivalent to the Visual Basic constant <see langword="vbKatakana" />.</summary>
       </Docs>
@@ -63,6 +74,9 @@
       <MemberSignature Language="C#" Value="LinguisticCasing" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VbStrConv LinguisticCasing = int32(1024)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.LinguisticCasing" />
+      <MemberSignature Language="VB.NET" Value="LinguisticCasing" />
+      <MemberSignature Language="F#" Value="LinguisticCasing = 1024" Usage="Microsoft.VisualBasic.VbStrConv.LinguisticCasing" />
+      <MemberSignature Language="C++ CLI" Value="LinguisticCasing" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -71,6 +85,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
+      <MemberValue>1024</MemberValue>
       <Docs>
         <summary>Converts the string from file system rules for casing to linguistic rules. This member is equivalent to the Visual Basic constant <see langword="vbLinguisticCasing" />.</summary>
       </Docs>
@@ -79,6 +94,9 @@
       <MemberSignature Language="C#" Value="Lowercase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VbStrConv Lowercase = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.Lowercase" />
+      <MemberSignature Language="VB.NET" Value="Lowercase" />
+      <MemberSignature Language="F#" Value="Lowercase = 2" Usage="Microsoft.VisualBasic.VbStrConv.Lowercase" />
+      <MemberSignature Language="C++ CLI" Value="Lowercase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -87,6 +105,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Converts the string to lowercase characters. This member is equivalent to the Visual Basic constant <see langword="vbLowerCase" />.</summary>
       </Docs>
@@ -95,6 +114,9 @@
       <MemberSignature Language="C#" Value="Narrow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VbStrConv Narrow = int32(8)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.Narrow" />
+      <MemberSignature Language="VB.NET" Value="Narrow" />
+      <MemberSignature Language="F#" Value="Narrow = 8" Usage="Microsoft.VisualBasic.VbStrConv.Narrow" />
+      <MemberSignature Language="C++ CLI" Value="Narrow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -103,6 +125,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Converts wide (double-byte) characters in the string to narrow (single-byte) characters. Applies to Asian locales. This member is equivalent to the Visual Basic constant <see langword="vbNarrow" />.</summary>
       </Docs>
@@ -111,6 +134,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VbStrConv None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="Microsoft.VisualBasic.VbStrConv.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -119,6 +145,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Performs no conversion.</summary>
       </Docs>
@@ -127,6 +154,9 @@
       <MemberSignature Language="C#" Value="ProperCase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VbStrConv ProperCase = int32(3)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.ProperCase" />
+      <MemberSignature Language="VB.NET" Value="ProperCase" />
+      <MemberSignature Language="F#" Value="ProperCase = 3" Usage="Microsoft.VisualBasic.VbStrConv.ProperCase" />
+      <MemberSignature Language="C++ CLI" Value="ProperCase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -135,6 +165,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Converts the first letter of every word in the string to uppercase. This member is equivalent to the Visual Basic constant <see langword="vbProperCase" />.</summary>
       </Docs>
@@ -143,6 +174,9 @@
       <MemberSignature Language="C#" Value="SimplifiedChinese" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VbStrConv SimplifiedChinese = int32(256)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.SimplifiedChinese" />
+      <MemberSignature Language="VB.NET" Value="SimplifiedChinese" />
+      <MemberSignature Language="F#" Value="SimplifiedChinese = 256" Usage="Microsoft.VisualBasic.VbStrConv.SimplifiedChinese" />
+      <MemberSignature Language="C++ CLI" Value="SimplifiedChinese" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -151,6 +185,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
+      <MemberValue>256</MemberValue>
       <Docs>
         <summary>Converts the string to Simplified Chinese characters. This member is equivalent to the Visual Basic constant <see langword="vbSimplifiedChinese" />.</summary>
       </Docs>
@@ -159,6 +194,9 @@
       <MemberSignature Language="C#" Value="TraditionalChinese" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VbStrConv TraditionalChinese = int32(512)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.TraditionalChinese" />
+      <MemberSignature Language="VB.NET" Value="TraditionalChinese" />
+      <MemberSignature Language="F#" Value="TraditionalChinese = 512" Usage="Microsoft.VisualBasic.VbStrConv.TraditionalChinese" />
+      <MemberSignature Language="C++ CLI" Value="TraditionalChinese" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -167,6 +205,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
+      <MemberValue>512</MemberValue>
       <Docs>
         <summary>Converts the string to Traditional Chinese characters. This member is equivalent to the Visual Basic constant <see langword="vbTraditionalChinese" />.</summary>
       </Docs>
@@ -175,6 +214,9 @@
       <MemberSignature Language="C#" Value="Uppercase" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VbStrConv Uppercase = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.Uppercase" />
+      <MemberSignature Language="VB.NET" Value="Uppercase" />
+      <MemberSignature Language="F#" Value="Uppercase = 1" Usage="Microsoft.VisualBasic.VbStrConv.Uppercase" />
+      <MemberSignature Language="C++ CLI" Value="Uppercase" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -183,6 +225,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Converts the string to uppercase characters. This member is equivalent to the Visual Basic constant <see langword="vbUpperCase" />.</summary>
       </Docs>
@@ -191,6 +234,9 @@
       <MemberSignature Language="C#" Value="Wide" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.VbStrConv Wide = int32(4)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.VbStrConv.Wide" />
+      <MemberSignature Language="VB.NET" Value="Wide" />
+      <MemberSignature Language="F#" Value="Wide = 4" Usage="Microsoft.VisualBasic.VbStrConv.Wide" />
+      <MemberSignature Language="C++ CLI" Value="Wide" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -199,6 +245,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.VbStrConv</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Converts narrow (single-byte) characters in the string to wide (double-byte) characters. Applies to Asian locales. This member is equivalent to the Visual Basic constant <see langword="vbWide" />. [!INCLUDE[vbstrconv-wide](~/includes/vbstrconv-wide-md.md)]</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="EncryptedKey" FullName="System.Security.Cryptography.Xml.EncryptedKey">
+﻿<Type Name="EncryptedKey" FullName="System.Security.Cryptography.Xml.EncryptedKey">
   <TypeSignature Language="C#" Value="public sealed class EncryptedKey : System.Security.Cryptography.Xml.EncryptedType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EncryptedKey extends System.Security.Cryptography.Xml.EncryptedType" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.Xml.EncryptedKey" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncryptedKey&#xA;Inherits EncryptedType" />
+  <TypeSignature Language="F#" Value="type EncryptedKey = class&#xA;    inherit EncryptedType" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncryptedKey sealed : System::Security::Cryptography::Xml::EncryptedType" />
   <AssemblyInfo>
     <AssemblyName>System.Security</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="public EncryptedKey ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedKey.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncryptedKey();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -70,10 +75,21 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddReference">
+      <AssemblyInfo>
+        <AssemblyName>System.Security</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a<see langword="" />reference element to the <see langword="&amp;lt;ReferenceList&amp;gt;" /> element.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddReference">
       <MemberSignature Language="C#" Value="public void AddReference (System.Security.Cryptography.Xml.DataReference dataReference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddReference(class System.Security.Cryptography.Xml.DataReference dataReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedKey.AddReference(System.Security.Cryptography.Xml.DataReference)" />
+      <MemberSignature Language="F#" Value="member this.AddReference : System.Security.Cryptography.Xml.DataReference -&gt; unit" Usage="encryptedKey.AddReference dataReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddReference(System::Security::Cryptography::Xml::DataReference ^ dataReference);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -106,6 +122,8 @@
       <MemberSignature Language="C#" Value="public void AddReference (System.Security.Cryptography.Xml.KeyReference keyReference);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddReference(class System.Security.Cryptography.Xml.KeyReference keyReference) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedKey.AddReference(System.Security.Cryptography.Xml.KeyReference)" />
+      <MemberSignature Language="F#" Value="member this.AddReference : System.Security.Cryptography.Xml.KeyReference -&gt; unit" Usage="encryptedKey.AddReference keyReference" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddReference(System::Security::Cryptography::Xml::KeyReference ^ keyReference);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -138,6 +156,9 @@
       <MemberSignature Language="C#" Value="public string CarriedKeyName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CarriedKeyName" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedKey.CarriedKeyName" />
+      <MemberSignature Language="VB.NET" Value="Public Property CarriedKeyName As String" />
+      <MemberSignature Language="F#" Value="member this.CarriedKeyName : string with get, set" Usage="System.Security.Cryptography.Xml.EncryptedKey.CarriedKeyName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ CarriedKeyName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -175,6 +196,9 @@
       <MemberSignature Language="C#" Value="public override System.Xml.XmlElement GetXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Xml.XmlElement GetXml() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedKey.GetXml" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetXml () As XmlElement" />
+      <MemberSignature Language="F#" Value="override this.GetXml : unit -&gt; System.Xml.XmlElement" Usage="encryptedKey.GetXml " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Xml::XmlElement ^ GetXml();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -206,6 +230,9 @@
       <MemberSignature Language="C#" Value="public override void LoadXml (System.Xml.XmlElement value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void LoadXml(class System.Xml.XmlElement value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.Xml.EncryptedKey.LoadXml(System.Xml.XmlElement)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub LoadXml (value As XmlElement)" />
+      <MemberSignature Language="F#" Value="override this.LoadXml : System.Xml.XmlElement -&gt; unit" Usage="encryptedKey.LoadXml value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void LoadXml(System::Xml::XmlElement ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -248,6 +275,9 @@
       <MemberSignature Language="C#" Value="public string Recipient { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Recipient" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedKey.Recipient" />
+      <MemberSignature Language="VB.NET" Value="Public Property Recipient As String" />
+      <MemberSignature Language="F#" Value="member this.Recipient : string with get, set" Usage="System.Security.Cryptography.Xml.EncryptedKey.Recipient" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Recipient { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -285,6 +315,9 @@
       <MemberSignature Language="C#" Value="public System.Security.Cryptography.Xml.ReferenceList ReferenceList { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Security.Cryptography.Xml.ReferenceList ReferenceList" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.Xml.EncryptedKey.ReferenceList" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ReferenceList As ReferenceList" />
+      <MemberSignature Language="F#" Value="member this.ReferenceList : System.Security.Cryptography.Xml.ReferenceList" Usage="System.Security.Cryptography.Xml.EncryptedKey.ReferenceList" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Security::Cryptography::Xml::ReferenceList ^ ReferenceList { System::Security::Cryptography::Xml::ReferenceList ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security</AssemblyName>
@@ -318,14 +351,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddReference">
-      <AssemblyInfo>
-        <AssemblyName>System.Security</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a<see langword="" />reference element to the <see langword="&amp;lt;ReferenceList&amp;gt;" /> element.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="NativeActivityUpdateMapMetadata" FullName="System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata">
+﻿<Type Name="NativeActivityUpdateMapMetadata" FullName="System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata">
   <TypeSignature Language="C#" Value="public class NativeActivityUpdateMapMetadata : System.Activities.DynamicUpdate.UpdateMapMetadata" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NativeActivityUpdateMapMetadata extends System.Activities.DynamicUpdate.UpdateMapMetadata" />
   <TypeSignature Language="DocId" Value="T:System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata" />
+  <TypeSignature Language="VB.NET" Value="Public Class NativeActivityUpdateMapMetadata&#xA;Inherits UpdateMapMetadata" />
+  <TypeSignature Language="F#" Value="type NativeActivityUpdateMapMetadata = class&#xA;    inherit UpdateMapMetadata" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NativeActivityUpdateMapMetadata : System::Activities::DynamicUpdate::UpdateMapMetadata" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -40,10 +43,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="SaveOriginalValue">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates the object to save the original value for the current activity.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SaveOriginalValue">
       <MemberSignature Language="C#" Value="public void SaveOriginalValue (System.Activities.Activity updatedChildActivity, object originalValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveOriginalValue(class System.Activities.Activity updatedChildActivity, object originalValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata.SaveOriginalValue(System.Activities.Activity,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveOriginalValue (updatedChildActivity As Activity, originalValue As Object)" />
+      <MemberSignature Language="F#" Value="member this.SaveOriginalValue : System.Activities.Activity * obj -&gt; unit" Usage="nativeActivityUpdateMapMetadata.SaveOriginalValue (updatedChildActivity, originalValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveOriginalValue(System::Activities::Activity ^ updatedChildActivity, System::Object ^ originalValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -67,6 +82,9 @@
       <MemberSignature Language="C#" Value="public void SaveOriginalValue (string propertyName, object originalValue);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SaveOriginalValue(string propertyName, object originalValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata.SaveOriginalValue(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SaveOriginalValue (propertyName As String, originalValue As Object)" />
+      <MemberSignature Language="F#" Value="member this.SaveOriginalValue : string * obj -&gt; unit" Usage="nativeActivityUpdateMapMetadata.SaveOriginalValue (propertyName, originalValue)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SaveOriginalValue(System::String ^ propertyName, System::Object ^ originalValue);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -86,14 +104,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SaveOriginalValue">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates the object to save the original value for the current activity.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -1,7 +1,10 @@
-<Type Name="Rectangle" FullName="System.Windows.Shapes.Rectangle">
+﻿<Type Name="Rectangle" FullName="System.Windows.Shapes.Rectangle">
   <TypeSignature Language="C#" Value="public sealed class Rectangle : System.Windows.Shapes.Shape" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Rectangle extends System.Windows.Shapes.Shape" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Shapes.Rectangle" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Rectangle&#xA;Inherits Shape" />
+  <TypeSignature Language="F#" Value="type Rectangle = class&#xA;    inherit Shape" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Rectangle sealed : System::Windows::Shapes::Shape" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -30,6 +33,8 @@
       <MemberSignature Language="C#" Value="public Rectangle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shapes.Rectangle.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Rectangle();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -45,6 +50,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size ArrangeOverride (System.Windows.Size finalSize);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size ArrangeOverride(valuetype System.Windows.Size finalSize) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shapes.Rectangle.ArrangeOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ArrangeOverride (finalSize As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.ArrangeOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="rectangle.ArrangeOverride finalSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size ArrangeOverride(System::Windows::Size finalSize);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -67,6 +75,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Geometry DefiningGeometry { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry DefiningGeometry" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Rectangle.DefiningGeometry" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefiningGeometry As Geometry" />
+      <MemberSignature Language="F#" Value="member this.DefiningGeometry : System.Windows.Media.Geometry" Usage="System.Windows.Shapes.Rectangle.DefiningGeometry" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Media::Geometry ^ DefiningGeometry { System::Windows::Media::Geometry ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -85,6 +96,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Media.Transform GeometryTransform { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Transform GeometryTransform" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Rectangle.GeometryTransform" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property GeometryTransform As Transform" />
+      <MemberSignature Language="F#" Value="member this.GeometryTransform : System.Windows.Media.Transform" Usage="System.Windows.Shapes.Rectangle.GeometryTransform" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Transform ^ GeometryTransform { System::Windows::Media::Transform ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -103,6 +117,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Size MeasureOverride (System.Windows.Size constraint);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Size MeasureOverride(valuetype System.Windows.Size constraint) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shapes.Rectangle.MeasureOverride(System.Windows.Size)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function MeasureOverride (constraint As Size) As Size" />
+      <MemberSignature Language="F#" Value="override this.MeasureOverride : System.Windows.Size -&gt; System.Windows.Size" Usage="rectangle.MeasureOverride constraint" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Size MeasureOverride(System::Windows::Size constraint);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -125,6 +142,8 @@
       <MemberSignature Language="C#" Value="protected override void OnRender (System.Windows.Media.DrawingContext drawingContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnRender(class System.Windows.Media.DrawingContext drawingContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Shapes.Rectangle.OnRender(System.Windows.Media.DrawingContext)" />
+      <MemberSignature Language="F#" Value="override this.OnRender : System.Windows.Media.DrawingContext -&gt; unit" Usage="rectangle.OnRender drawingContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnRender(System::Windows::Media::DrawingContext ^ drawingContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -146,6 +165,9 @@
       <MemberSignature Language="C#" Value="public double RadiusX { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 RadiusX" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Rectangle.RadiusX" />
+      <MemberSignature Language="VB.NET" Value="Public Property RadiusX As Double" />
+      <MemberSignature Language="F#" Value="member this.RadiusX : double with get, set" Usage="System.Windows.Shapes.Rectangle.RadiusX" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RadiusX { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -183,6 +205,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RadiusXProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RadiusXProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Rectangle.RadiusXProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RadiusXProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RadiusXProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Rectangle.RadiusXProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RadiusXProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -201,6 +226,9 @@
       <MemberSignature Language="C#" Value="public double RadiusY { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 RadiusY" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Rectangle.RadiusY" />
+      <MemberSignature Language="VB.NET" Value="Public Property RadiusY As Double" />
+      <MemberSignature Language="F#" Value="member this.RadiusY : double with get, set" Usage="System.Windows.Shapes.Rectangle.RadiusY" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double RadiusY { double get(); void set(double value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -238,6 +266,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Windows.DependencyProperty RadiusYProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Windows.DependencyProperty RadiusYProperty" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Shapes.Rectangle.RadiusYProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly RadiusYProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable RadiusYProperty : System.Windows.DependencyProperty" Usage="System.Windows.Shapes.Rectangle.RadiusYProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Windows::DependencyProperty ^ RadiusYProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -256,6 +287,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Media.Geometry RenderedGeometry { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.Geometry RenderedGeometry" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Shapes.Rectangle.RenderedGeometry" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RenderedGeometry As Geometry" />
+      <MemberSignature Language="F#" Value="member this.RenderedGeometry : System.Windows.Media.Geometry" Usage="System.Windows.Shapes.Rectangle.RenderedGeometry" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Media::Geometry ^ RenderedGeometry { System::Windows::Media::Geometry ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

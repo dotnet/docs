@@ -1,7 +1,10 @@
-<Type Name="EncoderReplacementFallbackBuffer" FullName="System.Text.EncoderReplacementFallbackBuffer">
+﻿<Type Name="EncoderReplacementFallbackBuffer" FullName="System.Text.EncoderReplacementFallbackBuffer">
   <TypeSignature Language="C#" Value="public sealed class EncoderReplacementFallbackBuffer : System.Text.EncoderFallbackBuffer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EncoderReplacementFallbackBuffer extends System.Text.EncoderFallbackBuffer" />
   <TypeSignature Language="DocId" Value="T:System.Text.EncoderReplacementFallbackBuffer" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EncoderReplacementFallbackBuffer&#xA;Inherits EncoderFallbackBuffer" />
+  <TypeSignature Language="F#" Value="type EncoderReplacementFallbackBuffer = class&#xA;    inherit EncoderFallbackBuffer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EncoderReplacementFallbackBuffer sealed : System::Text::EncoderFallbackBuffer" />
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -38,6 +41,9 @@
       <MemberSignature Language="C#" Value="public EncoderReplacementFallbackBuffer (System.Text.EncoderReplacementFallback fallback);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Text.EncoderReplacementFallback fallback) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderReplacementFallbackBuffer.#ctor(System.Text.EncoderReplacementFallback)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (fallback As EncoderReplacementFallback)" />
+      <MemberSignature Language="F#" Value="new System.Text.EncoderReplacementFallbackBuffer : System.Text.EncoderReplacementFallback -&gt; System.Text.EncoderReplacementFallbackBuffer" Usage="new System.Text.EncoderReplacementFallbackBuffer fallback" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EncoderReplacementFallbackBuffer(System::Text::EncoderReplacementFallback ^ fallback);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -61,10 +67,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Fallback">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Prepares the replacement fallback buffer to use the current replacement string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Fallback">
       <MemberSignature Language="C#" Value="public override bool Fallback (char charUnknown, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Fallback(char charUnknown, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderReplacementFallbackBuffer.Fallback(System.Char,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Fallback (charUnknown As Char, index As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Fallback : char * int -&gt; bool" Usage="encoderReplacementFallbackBuffer.Fallback (charUnknown, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Fallback(char charUnknown, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -107,6 +126,9 @@
       <MemberSignature Language="C#" Value="public override bool Fallback (char charUnknownHigh, char charUnknownLow, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Fallback(char charUnknownHigh, char charUnknownLow, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderReplacementFallbackBuffer.Fallback(System.Char,System.Char,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Fallback (charUnknownHigh As Char, charUnknownLow As Char, index As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Fallback : char * char * int -&gt; bool" Usage="encoderReplacementFallbackBuffer.Fallback (charUnknownHigh, charUnknownLow, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Fallback(char charUnknownHigh, char charUnknownLow, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -156,6 +178,9 @@
       <MemberSignature Language="C#" Value="public override char GetNextChar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance char GetNextChar() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderReplacementFallbackBuffer.GetNextChar" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetNextChar () As Char" />
+      <MemberSignature Language="F#" Value="override this.GetNextChar : unit -&gt; char" Usage="encoderReplacementFallbackBuffer.GetNextChar " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override char GetNextChar();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -191,6 +216,9 @@
       <MemberSignature Language="C#" Value="public override bool MovePrevious ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool MovePrevious() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderReplacementFallbackBuffer.MovePrevious" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function MovePrevious () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.MovePrevious : unit -&gt; bool" Usage="encoderReplacementFallbackBuffer.MovePrevious " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool MovePrevious();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -220,6 +248,9 @@
       <MemberSignature Language="C#" Value="public override int Remaining { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Remaining" />
       <MemberSignature Language="DocId" Value="P:System.Text.EncoderReplacementFallbackBuffer.Remaining" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Remaining As Integer" />
+      <MemberSignature Language="F#" Value="member this.Remaining : int" Usage="System.Text.EncoderReplacementFallbackBuffer.Remaining" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int Remaining { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -254,6 +285,9 @@
       <MemberSignature Language="C#" Value="public override void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Text.EncoderReplacementFallbackBuffer.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Reset ()" />
+      <MemberSignature Language="F#" Value="override this.Reset : unit -&gt; unit" Usage="encoderReplacementFallbackBuffer.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -289,15 +323,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Fallback">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Prepares the replacement fallback buffer to use the current replacement string.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

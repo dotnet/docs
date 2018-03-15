@@ -1,7 +1,10 @@
-<Type Name="UnregisterAssembly" FullName="Microsoft.Build.Tasks.UnregisterAssembly">
+﻿<Type Name="UnregisterAssembly" FullName="Microsoft.Build.Tasks.UnregisterAssembly">
   <TypeSignature Language="C#" Value="public class UnregisterAssembly : Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit UnregisterAssembly extends Microsoft.Build.Tasks.AppDomainIsolatedTaskExtension" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Tasks.UnregisterAssembly" />
+  <TypeSignature Language="VB.NET" Value="Public Class UnregisterAssembly&#xA;Inherits AppDomainIsolatedTaskExtension" />
+  <TypeSignature Language="F#" Value="type UnregisterAssembly = class&#xA;    inherit AppDomainIsolatedTaskExtension" />
+  <TypeSignature Language="C++ CLI" Value="public ref class UnregisterAssembly : Microsoft::Build::Tasks::AppDomainIsolatedTaskExtension" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,8 @@
       <MemberSignature Language="C#" Value="public UnregisterAssembly ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.UnregisterAssembly.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; UnregisterAssembly();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -47,6 +52,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] Assemblies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] Assemblies" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.UnregisterAssembly.Assemblies" />
+      <MemberSignature Language="VB.NET" Value="Public Property Assemblies As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.Assemblies : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.UnregisterAssembly.Assemblies" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ Assemblies { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -66,6 +74,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem AssemblyListFile { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem AssemblyListFile" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.UnregisterAssembly.AssemblyListFile" />
+      <MemberSignature Language="VB.NET" Value="Public Property AssemblyListFile As ITaskItem" />
+      <MemberSignature Language="F#" Value="member this.AssemblyListFile : Microsoft.Build.Framework.ITaskItem with get, set" Usage="Microsoft.Build.Tasks.UnregisterAssembly.AssemblyListFile" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Build::Framework::ITaskItem ^ AssemblyListFile { Microsoft::Build::Framework::ITaskItem ^ get(); void set(Microsoft::Build::Framework::ITaskItem ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -92,6 +103,9 @@
       <MemberSignature Language="C#" Value="public override bool Execute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Execute() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Tasks.UnregisterAssembly.Execute" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Execute () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Execute : unit -&gt; bool" Usage="unregisterAssembly.Execute " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Execute();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>
@@ -113,6 +127,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.Build.Framework.ITaskItem[] TypeLibFiles { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Build.Framework.ITaskItem[] TypeLibFiles" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Tasks.UnregisterAssembly.TypeLibFiles" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeLibFiles As ITaskItem()" />
+      <MemberSignature Language="F#" Value="member this.TypeLibFiles : Microsoft.Build.Framework.ITaskItem[] with get, set" Usage="Microsoft.Build.Tasks.UnregisterAssembly.TypeLibFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ TypeLibFiles { cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ get(); void set(cli::array &lt;Microsoft::Build::Framework::ITaskItem ^&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Tasks.v4.0</AssemblyName>

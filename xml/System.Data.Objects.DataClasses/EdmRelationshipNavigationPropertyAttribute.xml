@@ -1,7 +1,10 @@
-<Type Name="EdmRelationshipNavigationPropertyAttribute" FullName="System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute">
+﻿<Type Name="EdmRelationshipNavigationPropertyAttribute" FullName="System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute">
   <TypeSignature Language="C#" Value="public sealed class EdmRelationshipNavigationPropertyAttribute : System.Data.Objects.DataClasses.EdmPropertyAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EdmRelationshipNavigationPropertyAttribute extends System.Data.Objects.DataClasses.EdmPropertyAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EdmRelationshipNavigationPropertyAttribute&#xA;Inherits EdmPropertyAttribute" />
+  <TypeSignature Language="F#" Value="type EdmRelationshipNavigationPropertyAttribute = class&#xA;    inherit EdmPropertyAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class EdmRelationshipNavigationPropertyAttribute sealed : System::Data::Objects::DataClasses::EdmPropertyAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,6 +42,9 @@
       <MemberSignature Language="C#" Value="public EdmRelationshipNavigationPropertyAttribute (string relationshipNamespaceName, string relationshipName, string targetRoleName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string relationshipNamespaceName, string relationshipName, string targetRoleName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute.#ctor(System.String,System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (relationshipNamespaceName As String, relationshipName As String, targetRoleName As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute : string * string * string -&gt; System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute" Usage="new System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute (relationshipNamespaceName, relationshipName, targetRoleName)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; EdmRelationshipNavigationPropertyAttribute(System::String ^ relationshipNamespaceName, System::String ^ relationshipName, System::String ^ targetRoleName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -68,6 +74,9 @@
       <MemberSignature Language="C#" Value="public string RelationshipName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RelationshipName" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute.RelationshipName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelationshipName As String" />
+      <MemberSignature Language="F#" Value="member this.RelationshipName : string" Usage="System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute.RelationshipName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelationshipName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -95,6 +104,9 @@
       <MemberSignature Language="C#" Value="public string RelationshipNamespaceName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RelationshipNamespaceName" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute.RelationshipNamespaceName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property RelationshipNamespaceName As String" />
+      <MemberSignature Language="F#" Value="member this.RelationshipNamespaceName : string" Usage="System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute.RelationshipNamespaceName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ RelationshipNamespaceName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -120,6 +132,9 @@
       <MemberSignature Language="C#" Value="public string TargetRoleName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TargetRoleName" />
       <MemberSignature Language="DocId" Value="P:System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute.TargetRoleName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TargetRoleName As String" />
+      <MemberSignature Language="F#" Value="member this.TargetRoleName : string" Usage="System.Data.Objects.DataClasses.EdmRelationshipNavigationPropertyAttribute.TargetRoleName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TargetRoleName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

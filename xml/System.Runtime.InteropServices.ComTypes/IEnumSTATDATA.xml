@@ -1,7 +1,10 @@
-<Type Name="IEnumSTATDATA" FullName="System.Runtime.InteropServices.ComTypes.IEnumSTATDATA">
+﻿<Type Name="IEnumSTATDATA" FullName="System.Runtime.InteropServices.ComTypes.IEnumSTATDATA">
   <TypeSignature Language="C#" Value="public interface IEnumSTATDATA" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEnumSTATDATA" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IEnumSTATDATA" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IEnumSTATDATA" />
+  <TypeSignature Language="F#" Value="type IEnumSTATDATA = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IEnumSTATDATA" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -21,7 +24,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("00000103-0000-0000-C000-000000000046")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="public void Clone (out System.Runtime.InteropServices.ComTypes.IEnumSTATDATA newEnum);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clone([out] class System.Runtime.InteropServices.ComTypes.IEnumSTATDATA&amp; newEnum) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumSTATDATA.Clone(System.Runtime.InteropServices.ComTypes.IEnumSTATDATA@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef newEnum As IEnumSTATDATA)" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="iEnumSTATDATA.Clone newEnum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumSTATDATA ^ % newEnum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -81,6 +87,9 @@
       <MemberSignature Language="C#" Value="public int Next (int celt, System.Runtime.InteropServices.ComTypes.STATDATA[] rgelt, int[] pceltFetched);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(int32 celt, [out] valuetype System.Runtime.InteropServices.ComTypes.STATDATA[] rgelt, [out] int32[] pceltFetched) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumSTATDATA.Next(System.Int32,System.Runtime.InteropServices.ComTypes.STATDATA[],System.Int32[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function Next (celt As Integer, rgelt As STATDATA(), pceltFetched As Integer()) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Next : int * System.Runtime.InteropServices.ComTypes.STATDATA[] * int[] -&gt; int" Usage="iEnumSTATDATA.Next (celt, rgelt, pceltFetched)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Next(int celt, cli::array &lt;System::Runtime::InteropServices::ComTypes::STATDATA&gt; ^ rgelt, cli::array &lt;int&gt; ^ pceltFetched);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -124,6 +133,9 @@
       <MemberSignature Language="C#" Value="public int Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumSTATDATA.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Function Reset () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; int" Usage="iEnumSTATDATA.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -159,6 +171,9 @@
       <MemberSignature Language="C#" Value="public int Skip (int celt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Skip(int32 celt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumSTATDATA.Skip(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Skip (celt As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Skip : int -&gt; int" Usage="iEnumSTATDATA.Skip celt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Skip(int celt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

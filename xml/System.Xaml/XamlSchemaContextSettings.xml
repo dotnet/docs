@@ -1,7 +1,10 @@
-<Type Name="XamlSchemaContextSettings" FullName="System.Xaml.XamlSchemaContextSettings">
+﻿<Type Name="XamlSchemaContextSettings" FullName="System.Xaml.XamlSchemaContextSettings">
   <TypeSignature Language="C#" Value="public class XamlSchemaContextSettings" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit XamlSchemaContextSettings extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xaml.XamlSchemaContextSettings" />
+  <TypeSignature Language="VB.NET" Value="Public Class XamlSchemaContextSettings" />
+  <TypeSignature Language="F#" Value="type XamlSchemaContextSettings = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XamlSchemaContextSettings" />
   <AssemblyInfo>
     <AssemblyName>System.Xaml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xaml</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlSchemaContextSettings" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XamlSchemaContextSettings ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContextSettings.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlSchemaContextSettings();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -34,6 +48,9 @@
       <MemberSignature Language="C#" Value="public XamlSchemaContextSettings (System.Xaml.XamlSchemaContextSettings settings);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xaml.XamlSchemaContextSettings settings) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xaml.XamlSchemaContextSettings.#ctor(System.Xaml.XamlSchemaContextSettings)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (settings As XamlSchemaContextSettings)" />
+      <MemberSignature Language="F#" Value="new System.Xaml.XamlSchemaContextSettings : System.Xaml.XamlSchemaContextSettings -&gt; System.Xaml.XamlSchemaContextSettings" Usage="new System.Xaml.XamlSchemaContextSettings settings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; XamlSchemaContextSettings(System::Xaml::XamlSchemaContextSettings ^ settings);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -52,6 +69,9 @@
       <MemberSignature Language="C#" Value="public bool FullyQualifyAssemblyNamesInClrNamespaces { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool FullyQualifyAssemblyNamesInClrNamespaces" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlSchemaContextSettings.FullyQualifyAssemblyNamesInClrNamespaces" />
+      <MemberSignature Language="VB.NET" Value="Public Property FullyQualifyAssemblyNamesInClrNamespaces As Boolean" />
+      <MemberSignature Language="F#" Value="member this.FullyQualifyAssemblyNamesInClrNamespaces : bool with get, set" Usage="System.Xaml.XamlSchemaContextSettings.FullyQualifyAssemblyNamesInClrNamespaces" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool FullyQualifyAssemblyNamesInClrNamespaces { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -79,6 +99,9 @@
       <MemberSignature Language="C#" Value="public bool SupportMarkupExtensionsWithDuplicateArity { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SupportMarkupExtensionsWithDuplicateArity" />
       <MemberSignature Language="DocId" Value="P:System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity" />
+      <MemberSignature Language="VB.NET" Value="Public Property SupportMarkupExtensionsWithDuplicateArity As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SupportMarkupExtensionsWithDuplicateArity : bool with get, set" Usage="System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SupportMarkupExtensionsWithDuplicateArity { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xaml</AssemblyName>
@@ -101,14 +124,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xaml</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xaml.XamlSchemaContextSettings" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

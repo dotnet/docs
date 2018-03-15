@@ -1,7 +1,10 @@
-<Type Name="DisplayColumnAttribute" FullName="System.ComponentModel.DataAnnotations.DisplayColumnAttribute">
+﻿<Type Name="DisplayColumnAttribute" FullName="System.ComponentModel.DataAnnotations.DisplayColumnAttribute">
   <TypeSignature Language="C#" Value="public class DisplayColumnAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DisplayColumnAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class DisplayColumnAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type DisplayColumnAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DisplayColumnAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -68,10 +71,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DisplayColumnAttribute (string displayColumn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string displayColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayColumnAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (displayColumn As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.DisplayColumnAttribute : string -&gt; System.ComponentModel.DataAnnotations.DisplayColumnAttribute" Usage="new System.ComponentModel.DataAnnotations.DisplayColumnAttribute displayColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DisplayColumnAttribute(System::String ^ displayColumn);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -106,6 +122,9 @@
       <MemberSignature Language="C#" Value="public DisplayColumnAttribute (string displayColumn, string sortColumn);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string displayColumn, string sortColumn) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayColumnAttribute.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (displayColumn As String, sortColumn As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.DisplayColumnAttribute : string * string -&gt; System.ComponentModel.DataAnnotations.DisplayColumnAttribute" Usage="new System.ComponentModel.DataAnnotations.DisplayColumnAttribute (displayColumn, sortColumn)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DisplayColumnAttribute(System::String ^ displayColumn, System::String ^ sortColumn);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -139,6 +158,9 @@
       <MemberSignature Language="C#" Value="public DisplayColumnAttribute (string displayColumn, string sortColumn, bool sortDescending);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string displayColumn, string sortColumn, bool sortDescending) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.DataAnnotations.DisplayColumnAttribute.#ctor(System.String,System.String,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (displayColumn As String, sortColumn As String, sortDescending As Boolean)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.DataAnnotations.DisplayColumnAttribute : string * string * bool -&gt; System.ComponentModel.DataAnnotations.DisplayColumnAttribute" Usage="new System.ComponentModel.DataAnnotations.DisplayColumnAttribute (displayColumn, sortColumn, sortDescending)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DisplayColumnAttribute(System::String ^ displayColumn, System::String ^ sortColumn, bool sortDescending);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -178,6 +200,9 @@
       <MemberSignature Language="C#" Value="public string DisplayColumn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DisplayColumn" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayColumnAttribute.DisplayColumn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DisplayColumn As String" />
+      <MemberSignature Language="F#" Value="member this.DisplayColumn : string" Usage="System.ComponentModel.DataAnnotations.DisplayColumnAttribute.DisplayColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DisplayColumn { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -202,6 +227,9 @@
       <MemberSignature Language="C#" Value="public string SortColumn { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SortColumn" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayColumnAttribute.SortColumn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortColumn As String" />
+      <MemberSignature Language="F#" Value="member this.SortColumn : string" Usage="System.ComponentModel.DataAnnotations.DisplayColumnAttribute.SortColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SortColumn { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -226,6 +254,9 @@
       <MemberSignature Language="C#" Value="public bool SortDescending { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool SortDescending" />
       <MemberSignature Language="DocId" Value="P:System.ComponentModel.DataAnnotations.DisplayColumnAttribute.SortDescending" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SortDescending As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SortDescending : bool" Usage="System.ComponentModel.DataAnnotations.DisplayColumnAttribute.SortDescending" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool SortDescending { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
@@ -247,15 +278,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Annotations</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.DataAnnotations.DisplayColumnAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

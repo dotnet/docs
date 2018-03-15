@@ -1,7 +1,10 @@
-<Type Name="LocalizedEntryCollection&lt;T&gt;" FullName="System.IdentityModel.Metadata.LocalizedEntryCollection&lt;T&gt;">
+﻿<Type Name="LocalizedEntryCollection&lt;T&gt;" FullName="System.IdentityModel.Metadata.LocalizedEntryCollection&lt;T&gt;">
   <TypeSignature Language="C#" Value="public class LocalizedEntryCollection&lt;T&gt; : System.Collections.ObjectModel.KeyedCollection&lt;System.Globalization.CultureInfo,T&gt; where T : LocalizedEntry" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LocalizedEntryCollection`1&lt;(class System.IdentityModel.Metadata.LocalizedEntry) T&gt; extends System.Collections.ObjectModel.KeyedCollection`2&lt;class System.Globalization.CultureInfo, !T&gt;" />
   <TypeSignature Language="DocId" Value="T:System.IdentityModel.Metadata.LocalizedEntryCollection`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class LocalizedEntryCollection(Of T)&#xA;Inherits KeyedCollection(Of CultureInfo, T)" />
+  <TypeSignature Language="F#" Value="type LocalizedEntryCollection&lt;'T (requires 'T :&gt; LocalizedEntry)&gt; = class&#xA;    inherit KeyedCollection&lt;CultureInfo, 'T (requires 'T :&gt; LocalizedEntry)&gt;" />
+  <TypeSignature Language="C++ CLI" Value="generic &lt;typename T&gt;&#xA; where T : LocalizedEntrypublic ref class LocalizedEntryCollection : System::Collections::ObjectModel::KeyedCollection&lt;System::Globalization::CultureInfo ^, T&gt;" />
   <AssemblyInfo>
     <AssemblyName>System.IdentityModel</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -31,6 +34,8 @@
       <MemberSignature Language="C#" Value="public LocalizedEntryCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.LocalizedEntryCollection`1.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; LocalizedEntryCollection();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>
@@ -46,6 +51,9 @@
       <MemberSignature Language="C#" Value="protected override System.Globalization.CultureInfo GetKeyForItem (T item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Globalization.CultureInfo GetKeyForItem(!T item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.IdentityModel.Metadata.LocalizedEntryCollection`1.GetKeyForItem(`0)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetKeyForItem (item As T) As CultureInfo" />
+      <MemberSignature Language="F#" Value="override this.GetKeyForItem : 'T -&gt; System.Globalization.CultureInfo" Usage="localizedEntryCollection.GetKeyForItem item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Globalization::CultureInfo ^ GetKeyForItem(T item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.IdentityModel</AssemblyName>

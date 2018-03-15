@@ -1,7 +1,10 @@
-<Type Name="ContractBase" FullName="System.AddIn.Pipeline.ContractBase">
+﻿<Type Name="ContractBase" FullName="System.AddIn.Pipeline.ContractBase">
   <TypeSignature Language="C#" Value="public class ContractBase : MarshalByRefObject, System.AddIn.Contract.IContract, System.Runtime.Remoting.Lifetime.ISponsor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContractBase extends System.MarshalByRefObject implements class System.AddIn.Contract.IContract, class System.Runtime.Remoting.Lifetime.ISponsor" />
   <TypeSignature Language="DocId" Value="T:System.AddIn.Pipeline.ContractBase" />
+  <TypeSignature Language="VB.NET" Value="Public Class ContractBase&#xA;Inherits MarshalByRefObject&#xA;Implements IContract, ISponsor" />
+  <TypeSignature Language="F#" Value="type ContractBase = class&#xA;    inherit MarshalByRefObject&#xA;    interface IContract&#xA;    interface ISponsor" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ContractBase : MarshalByRefObject, System::AddIn::Contract::IContract, System::Runtime::Remoting::Lifetime::ISponsor" />
   <AssemblyInfo>
     <AssemblyName>System.AddIn</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -33,6 +36,8 @@
       <MemberSignature Language="C#" Value="public ContractBase ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractBase.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ContractBase();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -48,7 +53,13 @@
       <MemberSignature Language="C#" Value="public int AcquireLifetimeToken ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 AcquireLifetimeToken() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractBase.AcquireLifetimeToken" />
+      <MemberSignature Language="VB.NET" Value="Public Function AcquireLifetimeToken () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member AcquireLifetimeToken : unit -&gt; int&#xA;override this.AcquireLifetimeToken : unit -&gt; int" Usage="contractBase.AcquireLifetimeToken " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int AcquireLifetimeToken();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.AddIn.Contract.IContract.AcquireLifetimeToken</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -68,7 +79,13 @@
       <MemberSignature Language="C#" Value="public virtual int GetRemoteHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetRemoteHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractBase.GetRemoteHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetRemoteHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetRemoteHashCode : unit -&gt; int&#xA;override this.GetRemoteHashCode : unit -&gt; int" Usage="contractBase.GetRemoteHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int GetRemoteHashCode();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.AddIn.Contract.IContract.GetRemoteHashCode</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -87,6 +104,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnFinalRevoke ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnFinalRevoke() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractBase.OnFinalRevoke" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnFinalRevoke ()" />
+      <MemberSignature Language="F#" Value="abstract member OnFinalRevoke : unit -&gt; unit&#xA;override this.OnFinalRevoke : unit -&gt; unit" Usage="contractBase.OnFinalRevoke " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnFinalRevoke();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -112,7 +132,13 @@
       <MemberSignature Language="C#" Value="public virtual System.AddIn.Contract.IContract QueryContract (string contractIdentifier);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.AddIn.Contract.IContract QueryContract(string contractIdentifier) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractBase.QueryContract(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function QueryContract (contractIdentifier As String) As IContract" />
+      <MemberSignature Language="F#" Value="abstract member QueryContract : string -&gt; System.AddIn.Contract.IContract&#xA;override this.QueryContract : string -&gt; System.AddIn.Contract.IContract" Usage="contractBase.QueryContract contractIdentifier" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::AddIn::Contract::IContract ^ QueryContract(System::String ^ contractIdentifier);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.AddIn.Contract.IContract.QueryContract(System.String)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -143,7 +169,13 @@
       <MemberSignature Language="C#" Value="public virtual bool RemoteEquals (System.AddIn.Contract.IContract contract);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool RemoteEquals(class System.AddIn.Contract.IContract contract) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractBase.RemoteEquals(System.AddIn.Contract.IContract)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RemoteEquals (contract As IContract) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member RemoteEquals : System.AddIn.Contract.IContract -&gt; bool&#xA;override this.RemoteEquals : System.AddIn.Contract.IContract -&gt; bool" Usage="contractBase.RemoteEquals contract" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool RemoteEquals(System::AddIn::Contract::IContract ^ contract);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.AddIn.Contract.IContract.RemoteEquals(System.AddIn.Contract.IContract)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -166,7 +198,13 @@
       <MemberSignature Language="C#" Value="public virtual string RemoteToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string RemoteToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractBase.RemoteToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function RemoteToString () As String" />
+      <MemberSignature Language="F#" Value="abstract member RemoteToString : unit -&gt; string&#xA;override this.RemoteToString : unit -&gt; string" Usage="contractBase.RemoteToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::String ^ RemoteToString();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.AddIn.Contract.IContract.RemoteToString</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -185,6 +223,9 @@
       <MemberSignature Language="C#" Value="public TimeSpan Renewal (System.Runtime.Remoting.Lifetime.ILease lease);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.TimeSpan Renewal(class System.Runtime.Remoting.Lifetime.ILease lease) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractBase.Renewal(System.Runtime.Remoting.Lifetime.ILease)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Renewal (lease As ILease) As TimeSpan" />
+      <MemberSignature Language="F#" Value="abstract member Renewal : System.Runtime.Remoting.Lifetime.ILease -&gt; TimeSpan&#xA;override this.Renewal : System.Runtime.Remoting.Lifetime.ILease -&gt; TimeSpan" Usage="contractBase.Renewal lease" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual TimeSpan Renewal(System::Runtime::Remoting::Lifetime::ILease ^ lease);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
@@ -215,7 +256,13 @@
       <MemberSignature Language="C#" Value="public void RevokeLifetimeToken (int token);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RevokeLifetimeToken(int32 token) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.AddIn.Pipeline.ContractBase.RevokeLifetimeToken(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RevokeLifetimeToken (token As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member RevokeLifetimeToken : int -&gt; unit&#xA;override this.RevokeLifetimeToken : int -&gt; unit" Usage="contractBase.RevokeLifetimeToken token" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RevokeLifetimeToken(int token);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.AddIn.Contract.IContract.RevokeLifetimeToken(System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.AddIn</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

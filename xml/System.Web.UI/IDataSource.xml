@@ -1,7 +1,10 @@
-<Type Name="IDataSource" FullName="System.Web.UI.IDataSource">
+﻿<Type Name="IDataSource" FullName="System.Web.UI.IDataSource">
   <TypeSignature Language="C#" Value="public interface IDataSource" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDataSource" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.IDataSource" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDataSource" />
+  <TypeSignature Language="F#" Value="type IDataSource = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IDataSource" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -39,9 +42,12 @@
   </Docs>
   <Members>
     <Member MemberName="DataSourceChanged">
-      <MemberSignature Language="C#" Value="public event EventHandler DataSourceChanged;" />
+      <MemberSignature Language="C#" Value="event EventHandler DataSourceChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler DataSourceChanged" />
       <MemberSignature Language="DocId" Value="E:System.Web.UI.IDataSource.DataSourceChanged" />
+      <MemberSignature Language="VB.NET" Value="Event DataSourceChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.DataSourceChanged : EventHandler " Usage="member this.DataSourceChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ DataSourceChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -68,6 +74,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.DataSourceView GetView (string viewName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Web.UI.DataSourceView GetView(string viewName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IDataSource.GetView(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetView (viewName As String) As DataSourceView" />
+      <MemberSignature Language="F#" Value="abstract member GetView : string -&gt; System.Web.UI.DataSourceView" Usage="iDataSource.GetView viewName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Web::UI::DataSourceView ^ GetView(System::String ^ viewName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -109,6 +118,9 @@
       <MemberSignature Language="C#" Value="public System.Collections.ICollection GetViewNames ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.ICollection GetViewNames() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.IDataSource.GetViewNames" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetViewNames () As ICollection" />
+      <MemberSignature Language="F#" Value="abstract member GetViewNames : unit -&gt; System.Collections.ICollection" Usage="iDataSource.GetViewNames " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::ICollection ^ GetViewNames();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

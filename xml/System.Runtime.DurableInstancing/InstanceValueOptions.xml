@@ -1,7 +1,10 @@
-<Type Name="InstanceValueOptions" FullName="System.Runtime.DurableInstancing.InstanceValueOptions">
+﻿<Type Name="InstanceValueOptions" FullName="System.Runtime.DurableInstancing.InstanceValueOptions">
   <TypeSignature Language="C#" Value="public enum InstanceValueOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InstanceValueOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.DurableInstancing.InstanceValueOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Enum InstanceValueOptions" />
+  <TypeSignature Language="F#" Value="type InstanceValueOptions = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class InstanceValueOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -26,6 +29,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.DurableInstancing.InstanceValueOptions None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceValueOptions.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Runtime.DurableInstancing.InstanceValueOptions.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -39,6 +45,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.DurableInstancing.InstanceValueOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that there are no instance values.</summary>
       </Docs>
@@ -47,6 +54,9 @@
       <MemberSignature Language="C#" Value="Optional" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.DurableInstancing.InstanceValueOptions Optional = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceValueOptions.Optional" />
+      <MemberSignature Language="VB.NET" Value="Optional" />
+      <MemberSignature Language="F#" Value="Optional = 1" Usage="System.Runtime.DurableInstancing.InstanceValueOptions.Optional" />
+      <MemberSignature Language="C++ CLI" Value="Optional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -60,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.DurableInstancing.InstanceValueOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that a host can function without knowing the value of this instance value.</summary>
       </Docs>
@@ -68,6 +79,9 @@
       <MemberSignature Language="C#" Value="WriteOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.DurableInstancing.InstanceValueOptions WriteOnly = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.DurableInstancing.InstanceValueOptions.WriteOnly" />
+      <MemberSignature Language="VB.NET" Value="WriteOnly" />
+      <MemberSignature Language="F#" Value="WriteOnly = 2" Usage="System.Runtime.DurableInstancing.InstanceValueOptions.WriteOnly" />
+      <MemberSignature Language="C++ CLI" Value="WriteOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.DurableInstancing</AssemblyName>
@@ -81,6 +95,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.DurableInstancing.InstanceValueOptions</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the instance value is write-only. The instance value can be used for administration purposes.</summary>
       </Docs>

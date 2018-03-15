@@ -1,7 +1,10 @@
-<Type Name="HelpContextType" FullName="System.ComponentModel.Design.HelpContextType">
+﻿<Type Name="HelpContextType" FullName="System.ComponentModel.Design.HelpContextType">
   <TypeSignature Language="C#" Value="public enum HelpContextType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HelpContextType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.HelpContextType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HelpContextType" />
+  <TypeSignature Language="F#" Value="type HelpContextType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class HelpContextType" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -34,6 +37,9 @@
       <MemberSignature Language="C#" Value="Ambient" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.HelpContextType Ambient = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpContextType.Ambient" />
+      <MemberSignature Language="VB.NET" Value="Ambient" />
+      <MemberSignature Language="F#" Value="Ambient = 0" Usage="System.ComponentModel.Design.HelpContextType.Ambient" />
+      <MemberSignature Language="C++ CLI" Value="Ambient" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -51,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.HelpContextType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A general context.</summary>
       </Docs>
@@ -59,6 +66,9 @@
       <MemberSignature Language="C#" Value="Selection" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.HelpContextType Selection = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpContextType.Selection" />
+      <MemberSignature Language="VB.NET" Value="Selection" />
+      <MemberSignature Language="F#" Value="Selection = 2" Usage="System.ComponentModel.Design.HelpContextType.Selection" />
+      <MemberSignature Language="C++ CLI" Value="Selection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -76,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.HelpContextType</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A selection.</summary>
       </Docs>
@@ -84,6 +95,9 @@
       <MemberSignature Language="C#" Value="ToolWindowSelection" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.HelpContextType ToolWindowSelection = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpContextType.ToolWindowSelection" />
+      <MemberSignature Language="VB.NET" Value="ToolWindowSelection" />
+      <MemberSignature Language="F#" Value="ToolWindowSelection = 3" Usage="System.ComponentModel.Design.HelpContextType.ToolWindowSelection" />
+      <MemberSignature Language="C++ CLI" Value="ToolWindowSelection" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -101,6 +115,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.HelpContextType</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A tool window selection.</summary>
       </Docs>
@@ -109,6 +124,9 @@
       <MemberSignature Language="C#" Value="Window" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.Design.HelpContextType Window = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.Design.HelpContextType.Window" />
+      <MemberSignature Language="VB.NET" Value="Window" />
+      <MemberSignature Language="F#" Value="Window = 1" Usage="System.ComponentModel.Design.HelpContextType.Window" />
+      <MemberSignature Language="C++ CLI" Value="Window" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -126,6 +144,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.HelpContextType</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A window.</summary>
       </Docs>

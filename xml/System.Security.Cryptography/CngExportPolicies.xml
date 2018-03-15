@@ -1,7 +1,10 @@
-<Type Name="CngExportPolicies" FullName="System.Security.Cryptography.CngExportPolicies">
+﻿<Type Name="CngExportPolicies" FullName="System.Security.Cryptography.CngExportPolicies">
   <TypeSignature Language="C#" Value="public enum CngExportPolicies" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CngExportPolicies extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.CngExportPolicies" />
+  <TypeSignature Language="VB.NET" Value="Public Enum CngExportPolicies" />
+  <TypeSignature Language="F#" Value="type CngExportPolicies = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class CngExportPolicies" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
@@ -40,6 +43,9 @@
       <MemberSignature Language="C#" Value="AllowArchiving" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngExportPolicies AllowArchiving = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngExportPolicies.AllowArchiving" />
+      <MemberSignature Language="VB.NET" Value="AllowArchiving" />
+      <MemberSignature Language="F#" Value="AllowArchiving = 4" Usage="System.Security.Cryptography.CngExportPolicies.AllowArchiving" />
+      <MemberSignature Language="C++ CLI" Value="AllowArchiving" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -58,6 +64,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngExportPolicies</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The private key can be exported one time for archiving purposes.</summary>
       </Docs>
@@ -66,6 +73,9 @@
       <MemberSignature Language="C#" Value="AllowExport" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngExportPolicies AllowExport = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngExportPolicies.AllowExport" />
+      <MemberSignature Language="VB.NET" Value="AllowExport" />
+      <MemberSignature Language="F#" Value="AllowExport = 1" Usage="System.Security.Cryptography.CngExportPolicies.AllowExport" />
+      <MemberSignature Language="C++ CLI" Value="AllowExport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -84,6 +94,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngExportPolicies</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The private key can be exported multiple times.</summary>
       </Docs>
@@ -92,6 +103,9 @@
       <MemberSignature Language="C#" Value="AllowPlaintextArchiving" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngExportPolicies AllowPlaintextArchiving = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngExportPolicies.AllowPlaintextArchiving" />
+      <MemberSignature Language="VB.NET" Value="AllowPlaintextArchiving" />
+      <MemberSignature Language="F#" Value="AllowPlaintextArchiving = 8" Usage="System.Security.Cryptography.CngExportPolicies.AllowPlaintextArchiving" />
+      <MemberSignature Language="C++ CLI" Value="AllowPlaintextArchiving" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -110,6 +124,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngExportPolicies</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The private key can be exported one time as plaintext.</summary>
       </Docs>
@@ -118,6 +133,9 @@
       <MemberSignature Language="C#" Value="AllowPlaintextExport" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngExportPolicies AllowPlaintextExport = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngExportPolicies.AllowPlaintextExport" />
+      <MemberSignature Language="VB.NET" Value="AllowPlaintextExport" />
+      <MemberSignature Language="F#" Value="AllowPlaintextExport = 2" Usage="System.Security.Cryptography.CngExportPolicies.AllowPlaintextExport" />
+      <MemberSignature Language="C++ CLI" Value="AllowPlaintextExport" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -136,6 +154,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngExportPolicies</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The private key can be exported multiple times as plaintext.</summary>
       </Docs>
@@ -144,6 +163,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Cryptography.CngExportPolicies None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Cryptography.CngExportPolicies.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Cryptography.CngExportPolicies.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
@@ -162,6 +184,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Cryptography.CngExportPolicies</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No export policies are established. Key export is allowed without restriction.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="ECDsa" FullName="System.Security.Cryptography.ECDsa">
+﻿<Type Name="ECDsa" FullName="System.Security.Cryptography.ECDsa">
   <TypeSignature Language="C#" Value="public abstract class ECDsa : System.Security.Cryptography.AsymmetricAlgorithm" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ECDsa extends System.Security.Cryptography.AsymmetricAlgorithm" />
   <TypeSignature Language="DocId" Value="T:System.Security.Cryptography.ECDsa" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class ECDsa&#xA;Inherits AsymmetricAlgorithm" />
+  <TypeSignature Language="F#" Value="type ECDsa = class&#xA;    inherit AsymmetricAlgorithm" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ECDsa abstract : System::Security::Cryptography::AsymmetricAlgorithm" />
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -37,6 +40,8 @@
       <MemberSignature Language="C#" Value="protected ECDsa ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; ECDsa();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -66,10 +71,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Create">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of an implementation of the Elliptic Curve Digital Signature Algorithm (ECDSA).</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Create">
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECDsa Create ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.ECDsa Create() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.Create" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create () As ECDsa" />
+      <MemberSignature Language="F#" Value="static member Create : unit -&gt; System.Security.Cryptography.ECDsa" Usage="System.Security.Cryptography.ECDsa.Create " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ECDsa ^ Create();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -99,6 +117,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECDsa Create (System.Security.Cryptography.ECCurve curve);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.ECDsa Create(valuetype System.Security.Cryptography.ECCurve curve) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.Create(System.Security.Cryptography.ECCurve)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (curve As ECCurve) As ECDsa" />
+      <MemberSignature Language="F#" Value="static member Create : System.Security.Cryptography.ECCurve -&gt; System.Security.Cryptography.ECDsa" Usage="System.Security.Cryptography.ECDsa.Create curve" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ECDsa ^ Create(System::Security::Cryptography::ECCurve curve);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -132,6 +153,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECDsa Create (System.Security.Cryptography.ECParameters parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.ECDsa Create(valuetype System.Security.Cryptography.ECParameters parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.Create(System.Security.Cryptography.ECParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (parameters As ECParameters) As ECDsa" />
+      <MemberSignature Language="F#" Value="static member Create : System.Security.Cryptography.ECParameters -&gt; System.Security.Cryptography.ECDsa" Usage="System.Security.Cryptography.ECDsa.Create parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ECDsa ^ Create(System::Security::Cryptography::ECParameters parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -165,6 +189,9 @@
       <MemberSignature Language="C#" Value="public static System.Security.Cryptography.ECDsa Create (string algorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Security.Cryptography.ECDsa Create(string algorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.Create(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create (algorithm As String) As ECDsa" />
+      <MemberSignature Language="F#" Value="static member Create : string -&gt; System.Security.Cryptography.ECDsa" Usage="System.Security.Cryptography.ECDsa.Create algorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Security::Cryptography::ECDsa ^ Create(System::String ^ algorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -214,6 +241,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.ECParameters ExportExplicitParameters (bool includePrivateParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Security.Cryptography.ECParameters ExportExplicitParameters(bool includePrivateParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.ExportExplicitParameters(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ExportExplicitParameters (includePrivateParameters As Boolean) As ECParameters" />
+      <MemberSignature Language="F#" Value="abstract member ExportExplicitParameters : bool -&gt; System.Security.Cryptography.ECParameters&#xA;override this.ExportExplicitParameters : bool -&gt; System.Security.Cryptography.ECParameters" Usage="eCDsa.ExportExplicitParameters includePrivateParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Cryptography::ECParameters ExportExplicitParameters(bool includePrivateParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -250,6 +280,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Security.Cryptography.ECParameters ExportParameters (bool includePrivateParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype System.Security.Cryptography.ECParameters ExportParameters(bool includePrivateParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.ExportParameters(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function ExportParameters (includePrivateParameters As Boolean) As ECParameters" />
+      <MemberSignature Language="F#" Value="abstract member ExportParameters : bool -&gt; System.Security.Cryptography.ECParameters&#xA;override this.ExportParameters : bool -&gt; System.Security.Cryptography.ECParameters" Usage="eCDsa.ExportParameters includePrivateParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Security::Cryptography::ECParameters ExportParameters(bool includePrivateParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -287,6 +320,9 @@
       <MemberSignature Language="C#" Value="public override void FromXmlString (string xmlString);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void FromXmlString(string xmlString) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.FromXmlString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub FromXmlString (xmlString As String)" />
+      <MemberSignature Language="F#" Value="override this.FromXmlString : string -&gt; unit" Usage="eCDsa.FromXmlString xmlString" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void FromXmlString(System::String ^ xmlString);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -308,6 +344,9 @@
       <MemberSignature Language="C#" Value="public virtual void GenerateKey (System.Security.Cryptography.ECCurve curve);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GenerateKey(valuetype System.Security.Cryptography.ECCurve curve) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.GenerateKey(System.Security.Cryptography.ECCurve)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub GenerateKey (curve As ECCurve)" />
+      <MemberSignature Language="F#" Value="abstract member GenerateKey : System.Security.Cryptography.ECCurve -&gt; unit&#xA;override this.GenerateKey : System.Security.Cryptography.ECCurve -&gt; unit" Usage="eCDsa.GenerateKey curve" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void GenerateKey(System::Security::Cryptography::ECCurve curve);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -336,10 +375,24 @@
         <exception cref="T:System.NotSupportedException">A derived class must override this method.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="HashData">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the hash value of binary data.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="HashData">
       <MemberSignature Language="C#" Value="protected virtual byte[] HashData (System.IO.Stream data, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance unsigned int8[] HashData(class System.IO.Stream data, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.HashData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function HashData (data As Stream, hashAlgorithm As HashAlgorithmName) As Byte()" />
+      <MemberSignature Language="F#" Value="abstract member HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.HashData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="eCDsa.HashData (data, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Byte&gt; ^ HashData(System::IO::Stream ^ data, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -376,6 +429,9 @@
       <MemberSignature Language="C#" Value="protected virtual byte[] HashData (byte[] data, int offset, int count, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance unsigned int8[] HashData(unsigned int8[] data, int32 offset, int32 count, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.HashData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function HashData (data As Byte(), offset As Integer, count As Integer, hashAlgorithm As HashAlgorithmName) As Byte()" />
+      <MemberSignature Language="F#" Value="abstract member HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.HashData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="eCDsa.HashData (data, offset, count, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual cli::array &lt;System::Byte&gt; ^ HashData(cli::array &lt;System::Byte&gt; ^ data, int offset, int count, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -416,6 +472,9 @@
       <MemberSignature Language="C#" Value="public virtual void ImportParameters (System.Security.Cryptography.ECParameters parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ImportParameters(valuetype System.Security.Cryptography.ECParameters parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.ImportParameters(System.Security.Cryptography.ECParameters)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Sub ImportParameters (parameters As ECParameters)" />
+      <MemberSignature Language="F#" Value="abstract member ImportParameters : System.Security.Cryptography.ECParameters -&gt; unit&#xA;override this.ImportParameters : System.Security.Cryptography.ECParameters -&gt; unit" Usage="eCDsa.ImportParameters parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ImportParameters(System::Security::Cryptography::ECParameters parameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -448,6 +507,9 @@
       <MemberSignature Language="C#" Value="public override string KeyExchangeAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string KeyExchangeAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDsa.KeyExchangeAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property KeyExchangeAlgorithm As String" />
+      <MemberSignature Language="F#" Value="member this.KeyExchangeAlgorithm : string" Usage="System.Security.Cryptography.ECDsa.KeyExchangeAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ KeyExchangeAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -484,6 +546,9 @@
       <MemberSignature Language="C#" Value="public override string SignatureAlgorithm { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SignatureAlgorithm" />
       <MemberSignature Language="DocId" Value="P:System.Security.Cryptography.ECDsa.SignatureAlgorithm" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property SignatureAlgorithm As String" />
+      <MemberSignature Language="F#" Value="member this.SignatureAlgorithm : string" Usage="System.Security.Cryptography.ECDsa.SignatureAlgorithm" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ SignatureAlgorithm { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -507,10 +572,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SignData">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Computes the hash value of the specified data and signs it.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SignData">
       <MemberSignature Language="C#" Value="public virtual byte[] SignData (byte[] data, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] SignData(unsigned int8[] data, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.SignData(System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SignData (data As Byte(), hashAlgorithm As HashAlgorithmName) As Byte()" />
+      <MemberSignature Language="F#" Value="abstract member SignData : byte[] * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.SignData : byte[] * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="eCDsa.SignData (data, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ SignData(cli::array &lt;System::Byte&gt; ^ data, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -550,6 +629,9 @@
       <MemberSignature Language="C#" Value="public virtual byte[] SignData (System.IO.Stream data, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] SignData(class System.IO.Stream data, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.SignData(System.IO.Stream,System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SignData (data As Stream, hashAlgorithm As HashAlgorithmName) As Byte()" />
+      <MemberSignature Language="F#" Value="abstract member SignData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.SignData : System.IO.Stream * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="eCDsa.SignData (data, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ SignData(System::IO::Stream ^ data, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -589,6 +671,9 @@
       <MemberSignature Language="C#" Value="public virtual byte[] SignData (byte[] data, int offset, int count, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] SignData(unsigned int8[] data, int32 offset, int32 count, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.SignData(System.Byte[],System.Int32,System.Int32,System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function SignData (data As Byte(), offset As Integer, count As Integer, hashAlgorithm As HashAlgorithmName) As Byte()" />
+      <MemberSignature Language="F#" Value="abstract member SignData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]&#xA;override this.SignData : byte[] * int * int * System.Security.Cryptography.HashAlgorithmName -&gt; byte[]" Usage="eCDsa.SignData (data, offset, count, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual cli::array &lt;System::Byte&gt; ^ SignData(cli::array &lt;System::Byte&gt; ^ data, int offset, int count, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -642,6 +727,9 @@
       <MemberSignature Language="C#" Value="public abstract byte[] SignHash (byte[] hash);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance unsigned int8[] SignHash(unsigned int8[] hash) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.SignHash(System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function SignHash (hash As Byte()) As Byte()" />
+      <MemberSignature Language="F#" Value="abstract member SignHash : byte[] -&gt; byte[]" Usage="eCDsa.SignHash hash" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract cli::array &lt;System::Byte&gt; ^ SignHash(cli::array &lt;System::Byte&gt; ^ hash);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -676,6 +764,9 @@
       <MemberSignature Language="C#" Value="public override string ToXmlString (bool includePrivateParameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToXmlString(bool includePrivateParameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.ToXmlString(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToXmlString (includePrivateParameters As Boolean) As String" />
+      <MemberSignature Language="F#" Value="override this.ToXmlString : bool -&gt; string" Usage="eCDsa.ToXmlString includePrivateParameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToXmlString(bool includePrivateParameters);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -694,10 +785,24 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="VerifyData">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies that a digital signature is valid.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="VerifyData">
       <MemberSignature Language="C#" Value="public bool VerifyData (byte[] data, byte[] signature, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyData(unsigned int8[] data, unsigned int8[] signature, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.VerifyData(System.Byte[],System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VerifyData (data As Byte(), signature As Byte(), hashAlgorithm As HashAlgorithmName) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.VerifyData : byte[] * byte[] * System.Security.Cryptography.HashAlgorithmName -&gt; bool" Usage="eCDsa.VerifyData (data, signature, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool VerifyData(cli::array &lt;System::Byte&gt; ^ data, cli::array &lt;System::Byte&gt; ^ signature, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -744,6 +849,9 @@
       <MemberSignature Language="C#" Value="public bool VerifyData (System.IO.Stream data, byte[] signature, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool VerifyData(class System.IO.Stream data, unsigned int8[] signature, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.VerifyData(System.IO.Stream,System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Function VerifyData (data As Stream, signature As Byte(), hashAlgorithm As HashAlgorithmName) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.VerifyData : System.IO.Stream * byte[] * System.Security.Cryptography.HashAlgorithmName -&gt; bool" Usage="eCDsa.VerifyData (data, signature, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool VerifyData(System::IO::Stream ^ data, cli::array &lt;System::Byte&gt; ^ signature, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -790,6 +898,9 @@
       <MemberSignature Language="C#" Value="public virtual bool VerifyData (byte[] data, int offset, int count, byte[] signature, System.Security.Cryptography.HashAlgorithmName hashAlgorithm);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool VerifyData(unsigned int8[] data, int32 offset, int32 count, unsigned int8[] signature, valuetype System.Security.Cryptography.HashAlgorithmName hashAlgorithm) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.VerifyData(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Security.Cryptography.HashAlgorithmName)" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Function VerifyData (data As Byte(), offset As Integer, count As Integer, signature As Byte(), hashAlgorithm As HashAlgorithmName) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member VerifyData : byte[] * int * int * byte[] * System.Security.Cryptography.HashAlgorithmName -&gt; bool&#xA;override this.VerifyData : byte[] * int * int * byte[] * System.Security.Cryptography.HashAlgorithmName -&gt; bool" Usage="eCDsa.VerifyData (data, offset, count, signature, hashAlgorithm)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool VerifyData(cli::array &lt;System::Byte&gt; ^ data, int offset, int count, cli::array &lt;System::Byte&gt; ^ signature, System::Security::Cryptography::HashAlgorithmName hashAlgorithm);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -850,6 +961,9 @@
       <MemberSignature Language="C#" Value="public abstract bool VerifyHash (byte[] hash, byte[] signature);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool VerifyHash(unsigned int8[] hash, unsigned int8[] signature) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Security.Cryptography.ECDsa.VerifyHash(System.Byte[],System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function VerifyHash (hash As Byte(), signature As Byte()) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member VerifyHash : byte[] * byte[] -&gt; bool" Usage="eCDsa.VerifyHash (hash, signature)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; abstract bool VerifyHash(cli::array &lt;System::Byte&gt; ^ hash, cli::array &lt;System::Byte&gt; ^ signature);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
@@ -889,48 +1003,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="VerifyData">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.3.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Verifies that a digital signature is valid.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Create">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.3.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of an implementation of the Elliptic Curve Digital Signature Algorithm (ECDSA).</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SignData">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.3.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Computes the hash value of the specified data and signs it.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="HashData">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Cryptography.Algorithms</AssemblyName>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-        <AssemblyVersion>4.2.0.0</AssemblyVersion>
-        <AssemblyVersion>4.3.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Computes the hash value of binary data.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

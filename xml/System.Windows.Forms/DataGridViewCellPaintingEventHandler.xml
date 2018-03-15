@@ -1,7 +1,10 @@
-<Type Name="DataGridViewCellPaintingEventHandler" FullName="System.Windows.Forms.DataGridViewCellPaintingEventHandler">
+﻿<Type Name="DataGridViewCellPaintingEventHandler" FullName="System.Windows.Forms.DataGridViewCellPaintingEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewCellPaintingEventHandler(object sender, DataGridViewCellPaintingEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewCellPaintingEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellPaintingEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewCellPaintingEventHandler(sender As Object, e As DataGridViewCellPaintingEventArgs)" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellPaintingEventHandler = delegate of obj * DataGridViewCellPaintingEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewCellPaintingEventHandler(System::Object ^ sender, DataGridViewCellPaintingEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

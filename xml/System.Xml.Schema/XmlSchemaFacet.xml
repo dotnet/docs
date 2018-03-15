@@ -1,7 +1,10 @@
-<Type Name="XmlSchemaFacet" FullName="System.Xml.Schema.XmlSchemaFacet">
+﻿<Type Name="XmlSchemaFacet" FullName="System.Xml.Schema.XmlSchemaFacet">
   <TypeSignature Language="C#" Value="public abstract class XmlSchemaFacet : System.Xml.Schema.XmlSchemaAnnotated" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit XmlSchemaFacet extends System.Xml.Schema.XmlSchemaAnnotated" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Schema.XmlSchemaFacet" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class XmlSchemaFacet&#xA;Inherits XmlSchemaAnnotated" />
+  <TypeSignature Language="F#" Value="type XmlSchemaFacet = class&#xA;    inherit XmlSchemaAnnotated" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlSchemaFacet abstract : System::Xml::Schema::XmlSchemaAnnotated" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="protected XmlSchemaFacet ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Schema.XmlSchemaFacet.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; XmlSchemaFacet();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -64,6 +69,9 @@
       <MemberSignature Language="C#" Value="public virtual bool IsFixed { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFixed" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaFacet.IsFixed" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property IsFixed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFixed : bool with get, set" Usage="System.Xml.Schema.XmlSchemaFacet.IsFixed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsFixed { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -108,6 +116,9 @@
       <MemberSignature Language="C#" Value="public string Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Value" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Schema.XmlSchemaFacet.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As String" />
+      <MemberSignature Language="F#" Value="member this.Value : string with get, set" Usage="System.Xml.Schema.XmlSchemaFacet.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Value { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>

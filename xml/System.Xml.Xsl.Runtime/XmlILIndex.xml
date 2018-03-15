@@ -1,7 +1,10 @@
-<Type Name="XmlILIndex" FullName="System.Xml.Xsl.Runtime.XmlILIndex">
+﻿<Type Name="XmlILIndex" FullName="System.Xml.Xsl.Runtime.XmlILIndex">
   <TypeSignature Language="C#" Value="public sealed class XmlILIndex" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit XmlILIndex extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Xsl.Runtime.XmlILIndex" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class XmlILIndex" />
+  <TypeSignature Language="F#" Value="type XmlILIndex = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class XmlILIndex sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.SqlXml</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="public void Add (string key, System.Xml.XPath.XPathNavigator navigator);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(string key, class System.Xml.XPath.XPathNavigator navigator) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlILIndex.Add(System.String,System.Xml.XPath.XPathNavigator)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (key As String, navigator As XPathNavigator)" />
+      <MemberSignature Language="F#" Value="member this.Add : string * System.Xml.XPath.XPathNavigator -&gt; unit" Usage="xmlILIndex.Add (key, navigator)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::String ^ key, System::Xml::XPath::XPathNavigator ^ navigator);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>
@@ -57,6 +63,9 @@
       <MemberSignature Language="C#" Value="public System.Xml.Xsl.Runtime.XmlQueryNodeSequence Lookup (string key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.Xsl.Runtime.XmlQueryNodeSequence Lookup(string key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Xsl.Runtime.XmlILIndex.Lookup(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Lookup (key As String) As XmlQueryNodeSequence" />
+      <MemberSignature Language="F#" Value="member this.Lookup : string -&gt; System.Xml.Xsl.Runtime.XmlQueryNodeSequence" Usage="xmlILIndex.Lookup key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Xml::Xsl::Runtime::XmlQueryNodeSequence ^ Lookup(System::String ^ key);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.SqlXml</AssemblyName>

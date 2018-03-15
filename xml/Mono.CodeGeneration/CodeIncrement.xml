@@ -1,7 +1,10 @@
-<Type Name="CodeIncrement" FullName="Mono.CodeGeneration.CodeIncrement">
+﻿<Type Name="CodeIncrement" FullName="Mono.CodeGeneration.CodeIncrement">
   <TypeSignature Language="C#" Value="public class CodeIncrement : Mono.CodeGeneration.CodeValueReference" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CodeIncrement extends Mono.CodeGeneration.CodeValueReference" />
   <TypeSignature Language="DocId" Value="T:Mono.CodeGeneration.CodeIncrement" />
+  <TypeSignature Language="VB.NET" Value="Public Class CodeIncrement&#xA;Inherits CodeValueReference" />
+  <TypeSignature Language="F#" Value="type CodeIncrement = class&#xA;    inherit CodeValueReference" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CodeIncrement : Mono::CodeGeneration::CodeValueReference" />
   <AssemblyInfo>
     <AssemblyName>System.ServiceModel</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -20,6 +23,9 @@
       <MemberSignature Language="C#" Value="public CodeIncrement (Mono.CodeGeneration.CodeValueReference exp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class Mono.CodeGeneration.CodeValueReference exp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeIncrement.#ctor(Mono.CodeGeneration.CodeValueReference)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (exp As CodeValueReference)" />
+      <MemberSignature Language="F#" Value="new Mono.CodeGeneration.CodeIncrement : Mono.CodeGeneration.CodeValueReference -&gt; Mono.CodeGeneration.CodeIncrement" Usage="new Mono.CodeGeneration.CodeIncrement exp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; CodeIncrement(Mono::CodeGeneration::CodeValueReference ^ exp);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -39,6 +45,9 @@
       <MemberSignature Language="C#" Value="public override void Generate (System.Reflection.Emit.ILGenerator gen);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Generate(class System.Reflection.Emit.ILGenerator gen) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeIncrement.Generate(System.Reflection.Emit.ILGenerator)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Generate (gen As ILGenerator)" />
+      <MemberSignature Language="F#" Value="override this.Generate : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeIncrement.Generate gen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Generate(System::Reflection::Emit::ILGenerator ^ gen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -61,6 +70,9 @@
       <MemberSignature Language="C#" Value="public override void GenerateAsStatement (System.Reflection.Emit.ILGenerator gen);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateAsStatement(class System.Reflection.Emit.ILGenerator gen) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeIncrement.GenerateAsStatement(System.Reflection.Emit.ILGenerator)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateAsStatement (gen As ILGenerator)" />
+      <MemberSignature Language="F#" Value="override this.GenerateAsStatement : System.Reflection.Emit.ILGenerator -&gt; unit" Usage="codeIncrement.GenerateAsStatement gen" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateAsStatement(System::Reflection::Emit::ILGenerator ^ gen);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -83,6 +95,9 @@
       <MemberSignature Language="C#" Value="public override void GenerateSet (System.Reflection.Emit.ILGenerator gen, Mono.CodeGeneration.CodeExpression value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void GenerateSet(class System.Reflection.Emit.ILGenerator gen, class Mono.CodeGeneration.CodeExpression value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeIncrement.GenerateSet(System.Reflection.Emit.ILGenerator,Mono.CodeGeneration.CodeExpression)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub GenerateSet (gen As ILGenerator, value As CodeExpression)" />
+      <MemberSignature Language="F#" Value="override this.GenerateSet : System.Reflection.Emit.ILGenerator * Mono.CodeGeneration.CodeExpression -&gt; unit" Usage="codeIncrement.GenerateSet (gen, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void GenerateSet(System::Reflection::Emit::ILGenerator ^ gen, Mono::CodeGeneration::CodeExpression ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -107,6 +122,9 @@
       <MemberSignature Language="C#" Value="public override Type GetResultType ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type GetResultType() cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeIncrement.GetResultType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetResultType () As Type" />
+      <MemberSignature Language="F#" Value="override this.GetResultType : unit -&gt; Type" Usage="codeIncrement.GetResultType " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetResultType();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>
@@ -127,6 +145,9 @@
       <MemberSignature Language="C#" Value="public override void PrintCode (Mono.CodeGeneration.CodeWriter cp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void PrintCode(class Mono.CodeGeneration.CodeWriter cp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.CodeGeneration.CodeIncrement.PrintCode(Mono.CodeGeneration.CodeWriter)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub PrintCode (cp As CodeWriter)" />
+      <MemberSignature Language="F#" Value="override this.PrintCode : Mono.CodeGeneration.CodeWriter -&gt; unit" Usage="codeIncrement.PrintCode cp" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void PrintCode(Mono::CodeGeneration::CodeWriter ^ cp);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ServiceModel</AssemblyName>

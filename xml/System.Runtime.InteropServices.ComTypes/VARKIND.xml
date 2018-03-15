@@ -1,7 +1,10 @@
-<Type Name="VARKIND" FullName="System.Runtime.InteropServices.ComTypes.VARKIND">
+﻿<Type Name="VARKIND" FullName="System.Runtime.InteropServices.ComTypes.VARKIND">
   <TypeSignature Language="C#" Value="public enum VARKIND" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed VARKIND extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.VARKIND" />
+  <TypeSignature Language="VB.NET" Value="Public Enum VARKIND" />
+  <TypeSignature Language="F#" Value="type VARKIND = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class VARKIND" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,6 +44,9 @@
       <MemberSignature Language="C#" Value="VAR_CONST" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARKIND VAR_CONST = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARKIND.VAR_CONST" />
+      <MemberSignature Language="VB.NET" Value="VAR_CONST" />
+      <MemberSignature Language="F#" Value="VAR_CONST = 2" Usage="System.Runtime.InteropServices.ComTypes.VARKIND.VAR_CONST" />
+      <MemberSignature Language="C++ CLI" Value="VAR_CONST" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -63,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The <see langword="VARDESC" /> structure describes a symbolic constant. There is no memory associated with it.</summary>
       </Docs>
@@ -71,6 +78,9 @@
       <MemberSignature Language="C#" Value="VAR_DISPATCH" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARKIND VAR_DISPATCH = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARKIND.VAR_DISPATCH" />
+      <MemberSignature Language="VB.NET" Value="VAR_DISPATCH" />
+      <MemberSignature Language="F#" Value="VAR_DISPATCH = 3" Usage="System.Runtime.InteropServices.ComTypes.VARKIND.VAR_DISPATCH" />
+      <MemberSignature Language="C++ CLI" Value="VAR_DISPATCH" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -93,6 +103,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The variable can be accessed only through <see langword="IDispatch::Invoke" />.</summary>
       </Docs>
@@ -101,6 +112,9 @@
       <MemberSignature Language="C#" Value="VAR_PERINSTANCE" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARKIND VAR_PERINSTANCE = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARKIND.VAR_PERINSTANCE" />
+      <MemberSignature Language="VB.NET" Value="VAR_PERINSTANCE" />
+      <MemberSignature Language="F#" Value="VAR_PERINSTANCE = 0" Usage="System.Runtime.InteropServices.ComTypes.VARKIND.VAR_PERINSTANCE" />
+      <MemberSignature Language="C++ CLI" Value="VAR_PERINSTANCE" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -123,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The variable is a field or member of the type. It exists at a fixed offset within each instance of the type.</summary>
       </Docs>
@@ -131,6 +146,9 @@
       <MemberSignature Language="C#" Value="VAR_STATIC" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Runtime.InteropServices.ComTypes.VARKIND VAR_STATIC = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Runtime.InteropServices.ComTypes.VARKIND.VAR_STATIC" />
+      <MemberSignature Language="VB.NET" Value="VAR_STATIC" />
+      <MemberSignature Language="F#" Value="VAR_STATIC = 1" Usage="System.Runtime.InteropServices.ComTypes.VARKIND.VAR_STATIC" />
+      <MemberSignature Language="C++ CLI" Value="VAR_STATIC" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -153,6 +171,7 @@
       <ReturnValue>
         <ReturnType>System.Runtime.InteropServices.ComTypes.VARKIND</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>There is only one instance of the variable.</summary>
       </Docs>

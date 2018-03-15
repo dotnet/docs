@@ -1,7 +1,10 @@
-<Type Name="ToolStripManagerRenderMode" FullName="System.Windows.Forms.ToolStripManagerRenderMode">
+﻿<Type Name="ToolStripManagerRenderMode" FullName="System.Windows.Forms.ToolStripManagerRenderMode">
   <TypeSignature Language="C#" Value="public enum ToolStripManagerRenderMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripManagerRenderMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripManagerRenderMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ToolStripManagerRenderMode" />
+  <TypeSignature Language="F#" Value="type ToolStripManagerRenderMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ToolStripManagerRenderMode" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="Custom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripManagerRenderMode Custom = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripManagerRenderMode.Custom" />
+      <MemberSignature Language="VB.NET" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 0" Usage="System.Windows.Forms.ToolStripManagerRenderMode.Custom" />
+      <MemberSignature Language="C++ CLI" Value="Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -40,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripManagerRenderMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates the use of a <see cref="T:System.Windows.Forms.ToolStripRenderer" /> other than <see cref="T:System.Windows.Forms.ToolStripProfessionalRenderer" /> or <see cref="T:System.Windows.Forms.ToolStripSystemRenderer" />.</summary>
       </Docs>
@@ -48,6 +55,9 @@
       <MemberSignature Language="C#" Value="Professional" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripManagerRenderMode Professional = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripManagerRenderMode.Professional" />
+      <MemberSignature Language="VB.NET" Value="Professional" />
+      <MemberSignature Language="F#" Value="Professional = 2" Usage="System.Windows.Forms.ToolStripManagerRenderMode.Professional" />
+      <MemberSignature Language="C++ CLI" Value="Professional" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -56,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripManagerRenderMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates the use of a <see cref="T:System.Windows.Forms.ToolStripProfessionalRenderer" /> to paint.</summary>
       </Docs>
@@ -64,6 +75,9 @@
       <MemberSignature Language="C#" Value="System" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.ToolStripManagerRenderMode System = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ToolStripManagerRenderMode.System" />
+      <MemberSignature Language="VB.NET" Value="System" />
+      <MemberSignature Language="F#" Value="System = 1" Usage="System.Windows.Forms.ToolStripManagerRenderMode.System" />
+      <MemberSignature Language="C++ CLI" Value="System" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -72,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripManagerRenderMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates the use of a <see cref="T:System.Windows.Forms.ToolStripSystemRenderer" /> to paint.</summary>
       </Docs>

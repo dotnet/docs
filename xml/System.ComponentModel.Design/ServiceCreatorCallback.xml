@@ -1,7 +1,10 @@
-<Type Name="ServiceCreatorCallback" FullName="System.ComponentModel.Design.ServiceCreatorCallback">
+﻿<Type Name="ServiceCreatorCallback" FullName="System.ComponentModel.Design.ServiceCreatorCallback">
   <TypeSignature Language="C#" Value="public delegate object ServiceCreatorCallback(IServiceContainer container, Type serviceType);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceCreatorCallback extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ServiceCreatorCallback" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Function ServiceCreatorCallback(container As IServiceContainer, serviceType As Type) As Object " />
+  <TypeSignature Language="F#" Value="type ServiceCreatorCallback = delegate of IServiceContainer * Type -&gt; obj" />
+  <TypeSignature Language="C++ CLI" Value="public delegate System::Object ^ ServiceCreatorCallback(IServiceContainer ^ container, Type ^ serviceType);" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>

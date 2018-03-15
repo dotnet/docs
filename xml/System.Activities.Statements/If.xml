@@ -1,7 +1,10 @@
-<Type Name="If" FullName="System.Activities.Statements.If">
+﻿<Type Name="If" FullName="System.Activities.Statements.If">
   <TypeSignature Language="C#" Value="public sealed class If : System.Activities.NativeActivity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit If extends System.Activities.NativeActivity" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Statements.If" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class If&#xA;Inherits NativeActivity" />
+  <TypeSignature Language="F#" Value="type If = class&#xA;    inherit NativeActivity" />
+  <TypeSignature Language="C++ CLI" Value="public ref class If sealed : System::Activities::NativeActivity" />
   <AssemblyInfo>
     <AssemblyName>System.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,10 +27,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.If" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public If ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.If.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; If();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -52,6 +66,9 @@
       <MemberSignature Language="C#" Value="public If (System.Activities.Activity&lt;bool&gt; condition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.Activity`1&lt;bool&gt; condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.If.#ctor(System.Activities.Activity{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (condition As Activity(Of Boolean))" />
+      <MemberSignature Language="F#" Value="new System.Activities.Statements.If : System.Activities.Activity&lt;bool&gt; -&gt; System.Activities.Statements.If" Usage="new System.Activities.Statements.If condition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; If(System::Activities::Activity&lt;bool&gt; ^ condition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -79,6 +96,9 @@
       <MemberSignature Language="C#" Value="public If (System.Activities.InArgument&lt;bool&gt; condition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Activities.InArgument`1&lt;bool&gt; condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.If.#ctor(System.Activities.InArgument{System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (condition As InArgument(Of Boolean))" />
+      <MemberSignature Language="F#" Value="new System.Activities.Statements.If : System.Activities.InArgument&lt;bool&gt; -&gt; System.Activities.Statements.If" Usage="new System.Activities.Statements.If condition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; If(System::Activities::InArgument&lt;bool&gt; ^ condition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -106,6 +126,9 @@
       <MemberSignature Language="C#" Value="public If (System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext,bool&gt;&gt; condition);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;class System.Activities.ActivityContext, bool&gt;&gt; condition) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.If.#ctor(System.Linq.Expressions.Expression{System.Func{System.Activities.ActivityContext,System.Boolean}})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (condition As Expression(Of Func(Of ActivityContext, Boolean)))" />
+      <MemberSignature Language="F#" Value="new System.Activities.Statements.If : System.Linq.Expressions.Expression&lt;Func&lt;System.Activities.ActivityContext, bool&gt;&gt; -&gt; System.Activities.Statements.If" Usage="new System.Activities.Statements.If condition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; If(System::Linq::Expressions::Expression&lt;Func&lt;System::Activities::ActivityContext ^, bool&gt; ^&gt; ^ condition);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -133,6 +156,9 @@
       <MemberSignature Language="C#" Value="protected override void CacheMetadata (System.Activities.NativeActivityMetadata metadata);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void CacheMetadata(valuetype System.Activities.NativeActivityMetadata metadata) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.If.CacheMetadata(System.Activities.NativeActivityMetadata)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub CacheMetadata (metadata As NativeActivityMetadata)" />
+      <MemberSignature Language="F#" Value="override this.CacheMetadata : System.Activities.NativeActivityMetadata -&gt; unit" Usage="if.CacheMetadata metadata" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void CacheMetadata(System::Activities::NativeActivityMetadata metadata);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -154,6 +180,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.InArgument&lt;bool&gt; Condition { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.InArgument`1&lt;bool&gt; Condition" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.If.Condition" />
+      <MemberSignature Language="VB.NET" Value="Public Property Condition As InArgument(Of Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Condition : System.Activities.InArgument&lt;bool&gt; with get, set" Usage="System.Activities.Statements.If.Condition" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::InArgument&lt;bool&gt; ^ Condition { System::Activities::InArgument&lt;bool&gt; ^ get(); void set(System::Activities::InArgument&lt;bool&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -189,6 +218,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Activity Else { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity Else" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.If.Else" />
+      <MemberSignature Language="VB.NET" Value="Public Property Else As Activity" />
+      <MemberSignature Language="F#" Value="member this.Else : System.Activities.Activity with get, set" Usage="System.Activities.Statements.If.Else" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Else { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -224,6 +256,9 @@
       <MemberSignature Language="C#" Value="protected override void Execute (System.Activities.NativeActivityContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Execute(class System.Activities.NativeActivityContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.If.Execute(System.Activities.NativeActivityContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Execute (context As NativeActivityContext)" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Activities.NativeActivityContext -&gt; unit" Usage="if.Execute context" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Execute(System::Activities::NativeActivityContext ^ context);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -245,6 +280,9 @@
       <MemberSignature Language="C#" Value="protected override void OnCreateDynamicUpdateMap (System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, System.Activities.Activity originalActivity);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnCreateDynamicUpdateMap(class System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata metadata, class System.Activities.Activity originalActivity) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Statements.If.OnCreateDynamicUpdateMap(System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata,System.Activities.Activity)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnCreateDynamicUpdateMap (metadata As NativeActivityUpdateMapMetadata, originalActivity As Activity)" />
+      <MemberSignature Language="F#" Value="override this.OnCreateDynamicUpdateMap : System.Activities.DynamicUpdate.NativeActivityUpdateMapMetadata * System.Activities.Activity -&gt; unit" Usage="if.OnCreateDynamicUpdateMap (metadata, originalActivity)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnCreateDynamicUpdateMap(System::Activities::DynamicUpdate::NativeActivityUpdateMapMetadata ^ metadata, System::Activities::Activity ^ originalActivity);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -268,6 +306,9 @@
       <MemberSignature Language="C#" Value="public System.Activities.Activity Then { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Activities.Activity Then" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Statements.If.Then" />
+      <MemberSignature Language="VB.NET" Value="Public Property Then As Activity" />
+      <MemberSignature Language="F#" Value="member this.Then : System.Activities.Activity with get, set" Usage="System.Activities.Statements.If.Then" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Activities::Activity ^ Then { System::Activities::Activity ^ get(); void set(System::Activities::Activity ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities</AssemblyName>
@@ -299,14 +340,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.If" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

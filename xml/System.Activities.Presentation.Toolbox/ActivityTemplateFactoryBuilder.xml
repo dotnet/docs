@@ -1,7 +1,10 @@
-<Type Name="ActivityTemplateFactoryBuilder" FullName="System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder">
+﻿<Type Name="ActivityTemplateFactoryBuilder" FullName="System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder">
   <TypeSignature Language="C#" Value="public sealed class ActivityTemplateFactoryBuilder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ActivityTemplateFactoryBuilder extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ActivityTemplateFactoryBuilder" />
+  <TypeSignature Language="F#" Value="type ActivityTemplateFactoryBuilder = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ActivityTemplateFactoryBuilder sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,8 @@
       <MemberSignature Language="C#" Value="public ActivityTemplateFactoryBuilder ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ActivityTemplateFactoryBuilder();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -42,6 +47,9 @@
       <MemberSignature Language="C#" Value="public object Implementation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Implementation" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.Implementation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Implementation As Object" />
+      <MemberSignature Language="F#" Value="member this.Implementation : obj with get, set" Usage="System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.Implementation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Implementation { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -68,6 +76,9 @@
       <MemberSignature Language="C#" Value="public string Name { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.Name" />
+      <MemberSignature Language="VB.NET" Value="Public Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string with get, set" Usage="System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.Name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -86,6 +97,9 @@
       <MemberSignature Language="C#" Value="public Type TargetType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type TargetType" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.TargetType" />
+      <MemberSignature Language="VB.NET" Value="Public Property TargetType As Type" />
+      <MemberSignature Language="F#" Value="member this.TargetType : Type with get, set" Usage="System.Activities.Presentation.Toolbox.ActivityTemplateFactoryBuilder.TargetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Type ^ TargetType { Type ^ get(); void set(Type ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="TypeResolvingOptions" FullName="System.Activities.Presentation.View.TypeResolvingOptions">
+﻿<Type Name="TypeResolvingOptions" FullName="System.Activities.Presentation.View.TypeResolvingOptions">
   <TypeSignature Language="C#" Value="public class TypeResolvingOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TypeResolvingOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Activities.Presentation.View.TypeResolvingOptions" />
+  <TypeSignature Language="VB.NET" Value="Public Class TypeResolvingOptions" />
+  <TypeSignature Language="F#" Value="type TypeResolvingOptions = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class TypeResolvingOptions" />
   <AssemblyInfo>
     <AssemblyName>System.Activities.Presentation</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -15,10 +18,21 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.View.TypeResolvingOptions" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public TypeResolvingOptions ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypeResolvingOptions.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeResolvingOptions();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -34,6 +48,9 @@
       <MemberSignature Language="C#" Value="public TypeResolvingOptions (System.Collections.Generic.IEnumerable&lt;Type&gt; defaultTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Collections.Generic.IEnumerable`1&lt;class System.Type&gt; defaultTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Activities.Presentation.View.TypeResolvingOptions.#ctor(System.Collections.Generic.IEnumerable{System.Type})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (defaultTypes As IEnumerable(Of Type))" />
+      <MemberSignature Language="F#" Value="new System.Activities.Presentation.View.TypeResolvingOptions : seq&lt;Type&gt; -&gt; System.Activities.Presentation.View.TypeResolvingOptions" Usage="new System.Activities.Presentation.View.TypeResolvingOptions defaultTypes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; TypeResolvingOptions(System::Collections::Generic::IEnumerable&lt;Type ^&gt; ^ defaultTypes);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -52,6 +69,9 @@
       <MemberSignature Language="C#" Value="public bool BrowseTypeDirectly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool BrowseTypeDirectly" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypeResolvingOptions.BrowseTypeDirectly" />
+      <MemberSignature Language="VB.NET" Value="Public Property BrowseTypeDirectly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.BrowseTypeDirectly : bool with get, set" Usage="System.Activities.Presentation.View.TypeResolvingOptions.BrowseTypeDirectly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BrowseTypeDirectly { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -71,6 +91,9 @@
       <MemberSignature Language="C#" Value="public Func&lt;Type,bool&gt; Filter { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Func`2&lt;class System.Type, bool&gt; Filter" />
       <MemberSignature Language="DocId" Value="P:System.Activities.Presentation.View.TypeResolvingOptions.Filter" />
+      <MemberSignature Language="VB.NET" Value="Public Property Filter As Func(Of Type, Boolean)" />
+      <MemberSignature Language="F#" Value="member this.Filter : Func&lt;Type, bool&gt; with get, set" Usage="System.Activities.Presentation.View.TypeResolvingOptions.Filter" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Func&lt;Type ^, bool&gt; ^ Filter { Func&lt;Type ^, bool&gt; ^ get(); void set(Func&lt;Type ^, bool&gt; ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Activities.Presentation</AssemblyName>
@@ -85,14 +108,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an instance of the <see cref="T:System.Activities.Presentation.View.TypeResolvingOptions" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

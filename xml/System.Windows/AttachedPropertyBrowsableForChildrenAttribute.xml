@@ -1,7 +1,10 @@
-<Type Name="AttachedPropertyBrowsableForChildrenAttribute" FullName="System.Windows.AttachedPropertyBrowsableForChildrenAttribute">
+﻿<Type Name="AttachedPropertyBrowsableForChildrenAttribute" FullName="System.Windows.AttachedPropertyBrowsableForChildrenAttribute">
   <TypeSignature Language="C#" Value="public sealed class AttachedPropertyBrowsableForChildrenAttribute : System.Windows.AttachedPropertyBrowsableAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AttachedPropertyBrowsableForChildrenAttribute extends System.Windows.AttachedPropertyBrowsableAttribute" />
   <TypeSignature Language="DocId" Value="T:System.Windows.AttachedPropertyBrowsableForChildrenAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AttachedPropertyBrowsableForChildrenAttribute&#xA;Inherits AttachedPropertyBrowsableAttribute" />
+  <TypeSignature Language="F#" Value="type AttachedPropertyBrowsableForChildrenAttribute = class&#xA;    inherit AttachedPropertyBrowsableAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class AttachedPropertyBrowsableForChildrenAttribute sealed : System::Windows::AttachedPropertyBrowsableAttribute" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -50,6 +53,8 @@
       <MemberSignature Language="C#" Value="public AttachedPropertyBrowsableForChildrenAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.AttachedPropertyBrowsableForChildrenAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; AttachedPropertyBrowsableForChildrenAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -72,6 +77,9 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.AttachedPropertyBrowsableForChildrenAttribute.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="attachedPropertyBrowsableForChildrenAttribute.Equals obj" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool Equals(System::Object ^ obj);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -102,6 +110,9 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.AttachedPropertyBrowsableForChildrenAttribute.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="attachedPropertyBrowsableForChildrenAttribute.GetHashCode " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int GetHashCode();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>
@@ -128,6 +139,9 @@
       <MemberSignature Language="C#" Value="public bool IncludeDescendants { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IncludeDescendants" />
       <MemberSignature Language="DocId" Value="P:System.Windows.AttachedPropertyBrowsableForChildrenAttribute.IncludeDescendants" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeDescendants As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeDescendants : bool with get, set" Usage="System.Windows.AttachedPropertyBrowsableForChildrenAttribute.IncludeDescendants" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeDescendants { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationFramework</AssemblyName>

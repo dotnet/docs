@@ -1,7 +1,10 @@
-<Type Name="DataGridViewCellBorderStyle" FullName="System.Windows.Forms.DataGridViewCellBorderStyle">
+﻿<Type Name="DataGridViewCellBorderStyle" FullName="System.Windows.Forms.DataGridViewCellBorderStyle">
   <TypeSignature Language="C#" Value="public enum DataGridViewCellBorderStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewCellBorderStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellBorderStyle" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewCellBorderStyle" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellBorderStyle = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewCellBorderStyle" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="Custom" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewCellBorderStyle Custom = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellBorderStyle.Custom" />
+      <MemberSignature Language="VB.NET" Value="Custom" />
+      <MemberSignature Language="F#" Value="Custom = 0" Usage="System.Windows.Forms.DataGridViewCellBorderStyle.Custom" />
+      <MemberSignature Language="C++ CLI" Value="Custom" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>A border that has been customized.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewCellBorderStyle None = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellBorderStyle.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 4" Usage="System.Windows.Forms.DataGridViewCellBorderStyle.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -59,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>No borders.</summary>
       </Docs>
@@ -67,6 +78,9 @@
       <MemberSignature Language="C#" Value="Raised" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewCellBorderStyle Raised = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellBorderStyle.Raised" />
+      <MemberSignature Language="VB.NET" Value="Raised" />
+      <MemberSignature Language="F#" Value="Raised = 2" Usage="System.Windows.Forms.DataGridViewCellBorderStyle.Raised" />
+      <MemberSignature Language="C++ CLI" Value="Raised" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -75,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>A three-dimensional raised border.</summary>
       </Docs>
@@ -83,6 +98,9 @@
       <MemberSignature Language="C#" Value="RaisedHorizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewCellBorderStyle RaisedHorizontal = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal" />
+      <MemberSignature Language="VB.NET" Value="RaisedHorizontal" />
+      <MemberSignature Language="F#" Value="RaisedHorizontal = 9" Usage="System.Windows.Forms.DataGridViewCellBorderStyle.RaisedHorizontal" />
+      <MemberSignature Language="C++ CLI" Value="RaisedHorizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -91,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>A horizontal three-dimensional raised border.</summary>
       </Docs>
@@ -99,6 +118,9 @@
       <MemberSignature Language="C#" Value="RaisedVertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewCellBorderStyle RaisedVertical = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical" />
+      <MemberSignature Language="VB.NET" Value="RaisedVertical" />
+      <MemberSignature Language="F#" Value="RaisedVertical = 6" Usage="System.Windows.Forms.DataGridViewCellBorderStyle.RaisedVertical" />
+      <MemberSignature Language="C++ CLI" Value="RaisedVertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -107,6 +129,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A vertical three-dimensional raised border.</summary>
       </Docs>
@@ -115,6 +138,9 @@
       <MemberSignature Language="C#" Value="Single" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewCellBorderStyle Single = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellBorderStyle.Single" />
+      <MemberSignature Language="VB.NET" Value="Single" />
+      <MemberSignature Language="F#" Value="Single = 1" Usage="System.Windows.Forms.DataGridViewCellBorderStyle.Single" />
+      <MemberSignature Language="C++ CLI" Value="Single" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -123,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>A single line border.</summary>
       </Docs>
@@ -131,6 +158,9 @@
       <MemberSignature Language="C#" Value="SingleHorizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewCellBorderStyle SingleHorizontal = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal" />
+      <MemberSignature Language="VB.NET" Value="SingleHorizontal" />
+      <MemberSignature Language="F#" Value="SingleHorizontal = 8" Usage="System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal" />
+      <MemberSignature Language="C++ CLI" Value="SingleHorizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -139,6 +169,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A horizontal single-line border.</summary>
       </Docs>
@@ -147,6 +178,9 @@
       <MemberSignature Language="C#" Value="SingleVertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewCellBorderStyle SingleVertical = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical" />
+      <MemberSignature Language="VB.NET" Value="SingleVertical" />
+      <MemberSignature Language="F#" Value="SingleVertical = 5" Usage="System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical" />
+      <MemberSignature Language="C++ CLI" Value="SingleVertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -155,6 +189,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A vertical single-line border.</summary>
       </Docs>
@@ -163,6 +198,9 @@
       <MemberSignature Language="C#" Value="Sunken" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewCellBorderStyle Sunken = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellBorderStyle.Sunken" />
+      <MemberSignature Language="VB.NET" Value="Sunken" />
+      <MemberSignature Language="F#" Value="Sunken = 3" Usage="System.Windows.Forms.DataGridViewCellBorderStyle.Sunken" />
+      <MemberSignature Language="C++ CLI" Value="Sunken" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -171,6 +209,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A three-dimensional sunken border.</summary>
       </Docs>
@@ -179,6 +218,9 @@
       <MemberSignature Language="C#" Value="SunkenHorizontal" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewCellBorderStyle SunkenHorizontal = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal" />
+      <MemberSignature Language="VB.NET" Value="SunkenHorizontal" />
+      <MemberSignature Language="F#" Value="SunkenHorizontal = 10" Usage="System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal" />
+      <MemberSignature Language="C++ CLI" Value="SunkenHorizontal" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -187,6 +229,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>A horizontal three-dimensional sunken border.</summary>
       </Docs>
@@ -195,6 +238,9 @@
       <MemberSignature Language="C#" Value="SunkenVertical" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewCellBorderStyle SunkenVertical = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical" />
+      <MemberSignature Language="VB.NET" Value="SunkenVertical" />
+      <MemberSignature Language="F#" Value="SunkenVertical = 7" Usage="System.Windows.Forms.DataGridViewCellBorderStyle.SunkenVertical" />
+      <MemberSignature Language="C++ CLI" Value="SunkenVertical" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -203,6 +249,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewCellBorderStyle</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>A vertical three-dimensional sunken border.</summary>
       </Docs>

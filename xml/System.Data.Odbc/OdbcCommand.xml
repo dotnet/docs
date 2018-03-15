@@ -1,7 +1,10 @@
-<Type Name="OdbcCommand" FullName="System.Data.Odbc.OdbcCommand">
+﻿<Type Name="OdbcCommand" FullName="System.Data.Odbc.OdbcCommand">
   <TypeSignature Language="C#" Value="public sealed class OdbcCommand : System.Data.Common.DbCommand, ICloneable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OdbcCommand extends System.Data.Common.DbCommand implements class System.ICloneable" />
   <TypeSignature Language="DocId" Value="T:System.Data.Odbc.OdbcCommand" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class OdbcCommand&#xA;Inherits DbCommand&#xA;Implements ICloneable" />
+  <TypeSignature Language="F#" Value="type OdbcCommand = class&#xA;    inherit DbCommand&#xA;    interface ICloneable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class OdbcCommand sealed : System::Data::Common::DbCommand, ICloneable" />
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -61,10 +64,21 @@
     <altmember cref="T:System.Data.Odbc.OdbcConnection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcCommand" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public OdbcCommand ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcCommand();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -100,6 +114,9 @@
       <MemberSignature Language="C#" Value="public OdbcCommand (string cmdText);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string cmdText) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cmdText As String)" />
+      <MemberSignature Language="F#" Value="new System.Data.Odbc.OdbcCommand : string -&gt; System.Data.Odbc.OdbcCommand" Usage="new System.Data.Odbc.OdbcCommand cmdText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcCommand(System::String ^ cmdText);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -122,6 +139,9 @@
       <MemberSignature Language="C#" Value="public OdbcCommand (string cmdText, System.Data.Odbc.OdbcConnection connection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string cmdText, class System.Data.Odbc.OdbcConnection connection) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.#ctor(System.String,System.Data.Odbc.OdbcConnection)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cmdText As String, connection As OdbcConnection)" />
+      <MemberSignature Language="F#" Value="new System.Data.Odbc.OdbcCommand : string * System.Data.Odbc.OdbcConnection -&gt; System.Data.Odbc.OdbcCommand" Usage="new System.Data.Odbc.OdbcCommand (cmdText, connection)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcCommand(System::String ^ cmdText, System::Data::Odbc::OdbcConnection ^ connection);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -146,6 +166,9 @@
       <MemberSignature Language="C#" Value="public OdbcCommand (string cmdText, System.Data.Odbc.OdbcConnection connection, System.Data.Odbc.OdbcTransaction transaction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string cmdText, class System.Data.Odbc.OdbcConnection connection, class System.Data.Odbc.OdbcTransaction transaction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.#ctor(System.String,System.Data.Odbc.OdbcConnection,System.Data.Odbc.OdbcTransaction)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (cmdText As String, connection As OdbcConnection, transaction As OdbcTransaction)" />
+      <MemberSignature Language="F#" Value="new System.Data.Odbc.OdbcCommand : string * System.Data.Odbc.OdbcConnection * System.Data.Odbc.OdbcTransaction -&gt; System.Data.Odbc.OdbcCommand" Usage="new System.Data.Odbc.OdbcCommand (cmdText, connection, transaction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; OdbcCommand(System::String ^ cmdText, System::Data::Odbc::OdbcConnection ^ connection, System::Data::Odbc::OdbcTransaction ^ transaction);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -188,6 +211,9 @@
       <MemberSignature Language="C#" Value="public override void Cancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Cancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.Cancel" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Cancel ()" />
+      <MemberSignature Language="F#" Value="override this.Cancel : unit -&gt; unit" Usage="odbcCommand.Cancel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Cancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -219,6 +245,9 @@
       <MemberSignature Language="C#" Value="public override string CommandText { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string CommandText" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcCommand.CommandText" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property CommandText As String" />
+      <MemberSignature Language="F#" Value="member this.CommandText : string with get, set" Usage="System.Data.Odbc.OdbcCommand.CommandText" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ CommandText { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -236,7 +265,7 @@
           <AttributeName>System.ComponentModel.Editor("Microsoft.VSDesigner.Data.Odbc.Design.OdbcCommandTextEditor, Microsoft.VSDesigner, Version=0.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.Drawing.Design.UITypeEditor, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -329,6 +358,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="public override int CommandTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 CommandTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcCommand.CommandTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property CommandTimeout As Integer" />
+      <MemberSignature Language="F#" Value="member this.CommandTimeout : int with get, set" Usage="System.Data.Odbc.OdbcCommand.CommandTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int CommandTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -358,6 +390,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="public override System.Data.CommandType CommandType { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.CommandType CommandType" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcCommand.CommandType" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property CommandType As CommandType" />
+      <MemberSignature Language="F#" Value="member this.CommandType : System.Data.CommandType with get, set" Usage="System.Data.Odbc.OdbcCommand.CommandType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::CommandType CommandType { System::Data::CommandType get(); void set(System::Data::CommandType value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -372,7 +407,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -411,6 +446,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="public System.Data.Odbc.OdbcConnection Connection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Odbc.OdbcConnection Connection" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcCommand.Connection" />
+      <MemberSignature Language="VB.NET" Value="Public Property Connection As OdbcConnection" />
+      <MemberSignature Language="F#" Value="member this.Connection : System.Data.Odbc.OdbcConnection with get, set" Usage="System.Data.Odbc.OdbcCommand.Connection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Odbc::OdbcConnection ^ Connection { System::Data::Odbc::OdbcConnection ^ get(); void set(System::Data::Odbc::OdbcConnection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -454,6 +492,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbParameter CreateDbParameter ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbParameter CreateDbParameter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.CreateDbParameter" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateDbParameter () As DbParameter" />
+      <MemberSignature Language="F#" Value="override this.CreateDbParameter : unit -&gt; System.Data.Common.DbParameter" Usage="odbcCommand.CreateDbParameter " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbParameter ^ CreateDbParameter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -477,6 +518,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="public System.Data.Odbc.OdbcParameter CreateParameter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Odbc.OdbcParameter CreateParameter() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.CreateParameter" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateParameter () As OdbcParameter" />
+      <MemberSignature Language="F#" Value="override this.CreateParameter : unit -&gt; System.Data.Odbc.OdbcParameter" Usage="odbcCommand.CreateParameter " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcParameter ^ CreateParameter();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -507,6 +551,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbConnection DbConnection { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DbConnection DbConnection" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcCommand.DbConnection" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Property DbConnection As DbConnection" />
+      <MemberSignature Language="F#" Value="member this.DbConnection : System.Data.Common.DbConnection with get, set" Usage="System.Data.Odbc.OdbcCommand.DbConnection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbConnection ^ DbConnection { System::Data::Common::DbConnection ^ get(); void set(System::Data::Common::DbConnection ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -529,6 +576,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbParameterCollection DbParameterCollection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DbParameterCollection DbParameterCollection" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcCommand.DbParameterCollection" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DbParameterCollection As DbParameterCollection" />
+      <MemberSignature Language="F#" Value="member this.DbParameterCollection : System.Data.Common.DbParameterCollection" Usage="System.Data.Odbc.OdbcCommand.DbParameterCollection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbParameterCollection ^ DbParameterCollection { System::Data::Common::DbParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -551,6 +601,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbTransaction DbTransaction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Common.DbTransaction DbTransaction" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcCommand.DbTransaction" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Property DbTransaction As DbTransaction" />
+      <MemberSignature Language="F#" Value="member this.DbTransaction : System.Data.Common.DbTransaction with get, set" Usage="System.Data.Odbc.OdbcCommand.DbTransaction" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Data::Common::DbTransaction ^ DbTransaction { System::Data::Common::DbTransaction ^ get(); void set(System::Data::Common::DbTransaction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -573,6 +626,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="public override bool DesignTimeVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool DesignTimeVisible" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcCommand.DesignTimeVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property DesignTimeVisible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.DesignTimeVisible : bool with get, set" Usage="System.Data.Odbc.OdbcCommand.DesignTimeVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool DesignTimeVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -609,6 +665,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="protected override void Dispose (bool disposing);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Dispose(bool disposing) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.Dispose(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Dispose (disposing As Boolean)" />
+      <MemberSignature Language="F#" Value="override this.Dispose : bool -&gt; unit" Usage="odbcCommand.Dispose disposing" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Dispose(bool disposing);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -634,6 +693,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="protected override System.Data.Common.DbDataReader ExecuteDbDataReader (System.Data.CommandBehavior behavior);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Data.Common.DbDataReader ExecuteDbDataReader(valuetype System.Data.CommandBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.ExecuteDbDataReader(System.Data.CommandBehavior)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function ExecuteDbDataReader (behavior As CommandBehavior) As DbDataReader" />
+      <MemberSignature Language="F#" Value="override this.ExecuteDbDataReader : System.Data.CommandBehavior -&gt; System.Data.Common.DbDataReader" Usage="odbcCommand.ExecuteDbDataReader behavior" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Data::Common::DbDataReader ^ ExecuteDbDataReader(System::Data::CommandBehavior behavior);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -660,6 +722,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="public override int ExecuteNonQuery ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 ExecuteNonQuery() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.ExecuteNonQuery" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ExecuteNonQuery () As Integer" />
+      <MemberSignature Language="F#" Value="override this.ExecuteNonQuery : unit -&gt; int" Usage="odbcCommand.ExecuteNonQuery " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override int ExecuteNonQuery();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -699,10 +764,22 @@ SELECT * FROM Customers WHERE CustomerID = ?
  The connection is not open.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ExecuteReader">
+      <AssemblyInfo>
+        <AssemblyName>System.Data</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sends the <see cref="P:System.Data.Odbc.OdbcCommand.CommandText" /> to the <see cref="P:System.Data.Odbc.OdbcCommand.Connection" /> and builds an <see cref="T:System.Data.Odbc.OdbcDataReader" />.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ExecuteReader">
       <MemberSignature Language="C#" Value="public System.Data.Odbc.OdbcDataReader ExecuteReader ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Odbc.OdbcDataReader ExecuteReader() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.ExecuteReader" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteReader () As OdbcDataReader" />
+      <MemberSignature Language="F#" Value="override this.ExecuteReader : unit -&gt; System.Data.Odbc.OdbcDataReader" Usage="odbcCommand.ExecuteReader " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcDataReader ^ ExecuteReader();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -735,6 +812,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="public System.Data.Odbc.OdbcDataReader ExecuteReader (System.Data.CommandBehavior behavior);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Odbc.OdbcDataReader ExecuteReader(valuetype System.Data.CommandBehavior behavior) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.ExecuteReader(System.Data.CommandBehavior)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ExecuteReader (behavior As CommandBehavior) As OdbcDataReader" />
+      <MemberSignature Language="F#" Value="override this.ExecuteReader : System.Data.CommandBehavior -&gt; System.Data.Odbc.OdbcDataReader" Usage="odbcCommand.ExecuteReader behavior" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Odbc::OdbcDataReader ^ ExecuteReader(System::Data::CommandBehavior behavior);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -777,6 +857,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="public override object ExecuteScalar ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object ExecuteScalar() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.ExecuteScalar" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ExecuteScalar () As Object" />
+      <MemberSignature Language="F#" Value="override this.ExecuteScalar : unit -&gt; obj" Usage="odbcCommand.ExecuteScalar " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ExecuteScalar();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -807,6 +890,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="public System.Data.Odbc.OdbcParameterCollection Parameters { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Odbc.OdbcParameterCollection Parameters" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcCommand.Parameters" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parameters As OdbcParameterCollection" />
+      <MemberSignature Language="F#" Value="member this.Parameters : System.Data.Odbc.OdbcParameterCollection" Usage="System.Data.Odbc.OdbcCommand.Parameters" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Odbc::OdbcParameterCollection ^ Parameters { System::Data::Odbc::OdbcParameterCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -818,7 +904,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -851,6 +937,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="public override void Prepare ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Prepare() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.Prepare" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Prepare ()" />
+      <MemberSignature Language="F#" Value="override this.Prepare : unit -&gt; unit" Usage="odbcCommand.Prepare " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Prepare();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -889,6 +978,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="public void ResetCommandTimeout ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ResetCommandTimeout() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.ResetCommandTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetCommandTimeout ()" />
+      <MemberSignature Language="F#" Value="member this.ResetCommandTimeout : unit -&gt; unit" Usage="odbcCommand.ResetCommandTimeout " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetCommandTimeout();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -918,7 +1010,12 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="object ICloneable.Clone ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.ICloneable.Clone() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Odbc.OdbcCommand.System#ICloneable#Clone" />
+      <MemberSignature Language="VB.NET" Value="Function Clone () As Object Implements ICloneable.Clone" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ICloneable.Clone() = ICloneable::Clone;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.ICloneable.Clone</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -948,6 +1045,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="public System.Data.Odbc.OdbcTransaction Transaction { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Data.Odbc.OdbcTransaction Transaction" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcCommand.Transaction" />
+      <MemberSignature Language="VB.NET" Value="Public Property Transaction As OdbcTransaction" />
+      <MemberSignature Language="F#" Value="member this.Transaction : System.Data.Odbc.OdbcTransaction with get, set" Usage="System.Data.Odbc.OdbcCommand.Transaction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Data::Odbc::OdbcTransaction ^ Transaction { System::Data::Odbc::OdbcTransaction ^ get(); void set(System::Data::Odbc::OdbcTransaction ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -962,7 +1062,7 @@ SELECT * FROM Customers WHERE CustomerID = ?
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -985,6 +1085,9 @@ SELECT * FROM Customers WHERE CustomerID = ?
       <MemberSignature Language="C#" Value="public override System.Data.UpdateRowSource UpdatedRowSource { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Data.UpdateRowSource UpdatedRowSource" />
       <MemberSignature Language="DocId" Value="P:System.Data.Odbc.OdbcCommand.UpdatedRowSource" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property UpdatedRowSource As UpdateRowSource" />
+      <MemberSignature Language="F#" Value="member this.UpdatedRowSource : System.Data.UpdateRowSource with get, set" Usage="System.Data.Odbc.OdbcCommand.UpdatedRowSource" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Data::UpdateRowSource UpdatedRowSource { System::Data::UpdateRowSource get(); void set(System::Data::UpdateRowSource value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -1017,23 +1120,5 @@ SELECT * FROM Customers WHERE CustomerID = ?
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Odbc.OdbcCommand" /> class.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ExecuteReader">
-      <AssemblyInfo>
-        <AssemblyName>System.Data</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sends the <see cref="P:System.Data.Odbc.OdbcCommand.CommandText" /> to the <see cref="P:System.Data.Odbc.OdbcCommand.Connection" /> and builds an <see cref="T:System.Data.Odbc.OdbcDataReader" />.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

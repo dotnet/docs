@@ -1,7 +1,10 @@
-<Type Name="ApplicationDeployment" FullName="System.Deployment.Application.ApplicationDeployment">
+﻿<Type Name="ApplicationDeployment" FullName="System.Deployment.Application.ApplicationDeployment">
   <TypeSignature Language="C#" Value="public sealed class ApplicationDeployment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ApplicationDeployment extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Deployment.Application.ApplicationDeployment" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ApplicationDeployment" />
+  <TypeSignature Language="F#" Value="type ApplicationDeployment = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ApplicationDeployment sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Deployment</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -49,6 +52,9 @@
       <MemberSignature Language="C#" Value="public Uri ActivationUri { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri ActivationUri" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.ActivationUri" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ActivationUri As Uri" />
+      <MemberSignature Language="F#" Value="member this.ActivationUri : Uri" Usage="System.Deployment.Application.ApplicationDeployment.ActivationUri" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ ActivationUri { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -78,10 +84,22 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CheckForDetailedUpdate">
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Performs the same operation as <see cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdate" />, but returns extended information about the available update.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CheckForDetailedUpdate">
       <MemberSignature Language="C#" Value="public System.Deployment.Application.UpdateCheckInfo CheckForDetailedUpdate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Deployment.Application.UpdateCheckInfo CheckForDetailedUpdate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Function CheckForDetailedUpdate () As UpdateCheckInfo" />
+      <MemberSignature Language="F#" Value="member this.CheckForDetailedUpdate : unit -&gt; System.Deployment.Application.UpdateCheckInfo" Usage="applicationDeployment.CheckForDetailedUpdate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Deployment::Application::UpdateCheckInfo ^ CheckForDetailedUpdate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -121,6 +139,9 @@
       <MemberSignature Language="C#" Value="public System.Deployment.Application.UpdateCheckInfo CheckForDetailedUpdate (bool persistUpdateCheckResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Deployment.Application.UpdateCheckInfo CheckForDetailedUpdate(bool persistUpdateCheckResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CheckForDetailedUpdate (persistUpdateCheckResult As Boolean) As UpdateCheckInfo" />
+      <MemberSignature Language="F#" Value="member this.CheckForDetailedUpdate : bool -&gt; System.Deployment.Application.UpdateCheckInfo" Usage="applicationDeployment.CheckForDetailedUpdate persistUpdateCheckResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Deployment::Application::UpdateCheckInfo ^ CheckForDetailedUpdate(bool persistUpdateCheckResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -139,10 +160,22 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CheckForUpdate">
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Checks <see cref="P:System.Deployment.Application.ApplicationDeployment.UpdateLocation" /> to determine whether a new update is available.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CheckForUpdate">
       <MemberSignature Language="C#" Value="public bool CheckForUpdate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CheckForUpdate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Function CheckForUpdate () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CheckForUpdate : unit -&gt; bool" Usage="applicationDeployment.CheckForUpdate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CheckForUpdate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -190,6 +223,9 @@
       <MemberSignature Language="C#" Value="public bool CheckForUpdate (bool persistUpdateCheckResult);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool CheckForUpdate(bool persistUpdateCheckResult) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdate(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CheckForUpdate (persistUpdateCheckResult As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.CheckForUpdate : bool -&gt; bool" Usage="applicationDeployment.CheckForUpdate persistUpdateCheckResult" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool CheckForUpdate(bool persistUpdateCheckResult);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -213,6 +249,9 @@
       <MemberSignature Language="C#" Value="public void CheckForUpdateAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckForUpdateAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CheckForUpdateAsync ()" />
+      <MemberSignature Language="F#" Value="member this.CheckForUpdateAsync : unit -&gt; unit" Usage="applicationDeployment.CheckForUpdateAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CheckForUpdateAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -259,6 +298,9 @@
       <MemberSignature Language="C#" Value="public void CheckForUpdateAsyncCancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CheckForUpdateAsyncCancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsyncCancel" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CheckForUpdateAsyncCancel ()" />
+      <MemberSignature Language="F#" Value="member this.CheckForUpdateAsyncCancel : unit -&gt; unit" Usage="applicationDeployment.CheckForUpdateAsyncCancel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void CheckForUpdateAsyncCancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -286,6 +328,9 @@
       <MemberSignature Language="C#" Value="public event System.Deployment.Application.CheckForUpdateCompletedEventHandler CheckForUpdateCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Deployment.Application.CheckForUpdateCompletedEventHandler CheckForUpdateCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Deployment.Application.ApplicationDeployment.CheckForUpdateCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CheckForUpdateCompleted As CheckForUpdateCompletedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.CheckForUpdateCompleted : System.Deployment.Application.CheckForUpdateCompletedEventHandler " Usage="member this.CheckForUpdateCompleted : System.Deployment.Application.CheckForUpdateCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Deployment::Application::CheckForUpdateCompletedEventHandler ^ CheckForUpdateCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -319,6 +364,9 @@
       <MemberSignature Language="C#" Value="public event System.Deployment.Application.DeploymentProgressChangedEventHandler CheckForUpdateProgressChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Deployment.Application.DeploymentProgressChangedEventHandler CheckForUpdateProgressChanged" />
       <MemberSignature Language="DocId" Value="E:System.Deployment.Application.ApplicationDeployment.CheckForUpdateProgressChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event CheckForUpdateProgressChanged As DeploymentProgressChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.CheckForUpdateProgressChanged : System.Deployment.Application.DeploymentProgressChangedEventHandler " Usage="member this.CheckForUpdateProgressChanged : System.Deployment.Application.DeploymentProgressChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Deployment::Application::DeploymentProgressChangedEventHandler ^ CheckForUpdateProgressChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -352,6 +400,9 @@
       <MemberSignature Language="C#" Value="public static System.Deployment.Application.ApplicationDeployment CurrentDeployment { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Deployment.Application.ApplicationDeployment CurrentDeployment" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.CurrentDeployment" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property CurrentDeployment As ApplicationDeployment" />
+      <MemberSignature Language="F#" Value="member this.CurrentDeployment : System.Deployment.Application.ApplicationDeployment" Usage="System.Deployment.Application.ApplicationDeployment.CurrentDeployment" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property System::Deployment::Application::ApplicationDeployment ^ CurrentDeployment { System::Deployment::Application::ApplicationDeployment ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -390,6 +441,9 @@
       <MemberSignature Language="C#" Value="public Version CurrentVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version CurrentVersion" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.CurrentVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CurrentVersion As Version" />
+      <MemberSignature Language="F#" Value="member this.CurrentVersion : Version" Usage="System.Deployment.Application.ApplicationDeployment.CurrentVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ CurrentVersion { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -426,6 +480,9 @@
       <MemberSignature Language="C#" Value="public string DataDirectory { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string DataDirectory" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.DataDirectory" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DataDirectory As String" />
+      <MemberSignature Language="F#" Value="member this.DataDirectory : string" Usage="System.Deployment.Application.ApplicationDeployment.DataDirectory" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ DataDirectory { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -444,6 +501,9 @@
       <MemberSignature Language="C#" Value="public void DownloadFileGroup (string groupName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DownloadFileGroup(string groupName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DownloadFileGroup (groupName As String)" />
+      <MemberSignature Language="F#" Value="member this.DownloadFileGroup : string -&gt; unit" Usage="applicationDeployment.DownloadFileGroup groupName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DownloadFileGroup(System::String ^ groupName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -489,10 +549,22 @@
         <altmember cref="Overload:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="DownloadFileGroupAsync">
+      <AssemblyInfo>
+        <AssemblyName>System.Deployment</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Downloads, on demand, a set of optional files in the background.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DownloadFileGroupAsync">
       <MemberSignature Language="C#" Value="public void DownloadFileGroupAsync (string groupName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DownloadFileGroupAsync(string groupName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DownloadFileGroupAsync (groupName As String)" />
+      <MemberSignature Language="F#" Value="member this.DownloadFileGroupAsync : string -&gt; unit" Usage="applicationDeployment.DownloadFileGroupAsync groupName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DownloadFileGroupAsync(System::String ^ groupName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -540,6 +612,9 @@
       <MemberSignature Language="C#" Value="public void DownloadFileGroupAsync (string groupName, object userState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DownloadFileGroupAsync(string groupName, object userState) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DownloadFileGroupAsync (groupName As String, userState As Object)" />
+      <MemberSignature Language="F#" Value="member this.DownloadFileGroupAsync : string * obj -&gt; unit" Usage="applicationDeployment.DownloadFileGroupAsync (groupName, userState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DownloadFileGroupAsync(System::String ^ groupName, System::Object ^ userState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -585,6 +660,9 @@
       <MemberSignature Language="C#" Value="public void DownloadFileGroupAsyncCancel (string groupName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void DownloadFileGroupAsyncCancel(string groupName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsyncCancel(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub DownloadFileGroupAsyncCancel (groupName As String)" />
+      <MemberSignature Language="F#" Value="member this.DownloadFileGroupAsyncCancel : string -&gt; unit" Usage="applicationDeployment.DownloadFileGroupAsyncCancel groupName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void DownloadFileGroupAsyncCancel(System::String ^ groupName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -608,6 +686,9 @@
       <MemberSignature Language="C#" Value="public event System.Deployment.Application.DownloadFileGroupCompletedEventHandler DownloadFileGroupCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Deployment.Application.DownloadFileGroupCompletedEventHandler DownloadFileGroupCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DownloadFileGroupCompleted As DownloadFileGroupCompletedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DownloadFileGroupCompleted : System.Deployment.Application.DownloadFileGroupCompletedEventHandler " Usage="member this.DownloadFileGroupCompleted : System.Deployment.Application.DownloadFileGroupCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Deployment::Application::DownloadFileGroupCompletedEventHandler ^ DownloadFileGroupCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -643,6 +724,9 @@
       <MemberSignature Language="C#" Value="public event System.Deployment.Application.DeploymentProgressChangedEventHandler DownloadFileGroupProgressChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Deployment.Application.DeploymentProgressChangedEventHandler DownloadFileGroupProgressChanged" />
       <MemberSignature Language="DocId" Value="E:System.Deployment.Application.ApplicationDeployment.DownloadFileGroupProgressChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DownloadFileGroupProgressChanged As DeploymentProgressChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DownloadFileGroupProgressChanged : System.Deployment.Application.DeploymentProgressChangedEventHandler " Usage="member this.DownloadFileGroupProgressChanged : System.Deployment.Application.DeploymentProgressChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Deployment::Application::DeploymentProgressChangedEventHandler ^ DownloadFileGroupProgressChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -678,6 +762,9 @@
       <MemberSignature Language="C#" Value="public bool IsFileGroupDownloaded (string groupName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsFileGroupDownloaded(string groupName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.IsFileGroupDownloaded(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsFileGroupDownloaded (groupName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFileGroupDownloaded : string -&gt; bool" Usage="applicationDeployment.IsFileGroupDownloaded groupName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsFileGroupDownloaded(System::String ^ groupName);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -723,6 +810,9 @@
       <MemberSignature Language="C#" Value="public bool IsFirstRun { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsFirstRun" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.IsFirstRun" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsFirstRun As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsFirstRun : bool" Usage="System.Deployment.Application.ApplicationDeployment.IsFirstRun" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsFirstRun { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -760,6 +850,9 @@
       <MemberSignature Language="C#" Value="public static bool IsNetworkDeployed { get; }" />
       <MemberSignature Language="ILAsm" Value=".property bool IsNetworkDeployed" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property IsNetworkDeployed As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsNetworkDeployed : bool" Usage="System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static property bool IsNetworkDeployed { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -797,6 +890,9 @@
       <MemberSignature Language="C#" Value="public DateTime TimeOfLastUpdateCheck { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.DateTime TimeOfLastUpdateCheck" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.TimeOfLastUpdateCheck" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TimeOfLastUpdateCheck As DateTime" />
+      <MemberSignature Language="F#" Value="member this.TimeOfLastUpdateCheck : DateTime" Usage="System.Deployment.Application.ApplicationDeployment.TimeOfLastUpdateCheck" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property DateTime TimeOfLastUpdateCheck { DateTime get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -834,6 +930,9 @@
       <MemberSignature Language="C#" Value="public bool Update ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool Update() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.Update" />
+      <MemberSignature Language="VB.NET" Value="Public Function Update () As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Update : unit -&gt; bool" Usage="applicationDeployment.Update " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Update();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -889,6 +988,9 @@
       <MemberSignature Language="C#" Value="public void UpdateAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.UpdateAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateAsync ()" />
+      <MemberSignature Language="F#" Value="member this.UpdateAsync : unit -&gt; unit" Usage="applicationDeployment.UpdateAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -940,6 +1042,9 @@
       <MemberSignature Language="C#" Value="public void UpdateAsyncCancel ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void UpdateAsyncCancel() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Deployment.Application.ApplicationDeployment.UpdateAsyncCancel" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UpdateAsyncCancel ()" />
+      <MemberSignature Language="F#" Value="member this.UpdateAsyncCancel : unit -&gt; unit" Usage="applicationDeployment.UpdateAsyncCancel " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UpdateAsyncCancel();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -966,6 +1071,9 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.AsyncCompletedEventHandler UpdateCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.AsyncCompletedEventHandler UpdateCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Deployment.Application.ApplicationDeployment.UpdateCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event UpdateCompleted As AsyncCompletedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.UpdateCompleted : System.ComponentModel.AsyncCompletedEventHandler " Usage="member this.UpdateCompleted : System.ComponentModel.AsyncCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::AsyncCompletedEventHandler ^ UpdateCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -1005,6 +1113,9 @@
       <MemberSignature Language="C#" Value="public string UpdatedApplicationFullName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string UpdatedApplicationFullName" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.UpdatedApplicationFullName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdatedApplicationFullName As String" />
+      <MemberSignature Language="F#" Value="member this.UpdatedApplicationFullName : string" Usage="System.Deployment.Application.ApplicationDeployment.UpdatedApplicationFullName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ UpdatedApplicationFullName { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -1023,6 +1134,9 @@
       <MemberSignature Language="C#" Value="public Version UpdatedVersion { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version UpdatedVersion" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.UpdatedVersion" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdatedVersion As Version" />
+      <MemberSignature Language="F#" Value="member this.UpdatedVersion : Version" Usage="System.Deployment.Application.ApplicationDeployment.UpdatedVersion" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Version ^ UpdatedVersion { Version ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -1060,6 +1174,9 @@
       <MemberSignature Language="C#" Value="public Uri UpdateLocation { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Uri UpdateLocation" />
       <MemberSignature Language="DocId" Value="P:System.Deployment.Application.ApplicationDeployment.UpdateLocation" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UpdateLocation As Uri" />
+      <MemberSignature Language="F#" Value="member this.UpdateLocation : Uri" Usage="System.Deployment.Application.ApplicationDeployment.UpdateLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Uri ^ UpdateLocation { Uri ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -1088,6 +1205,9 @@
       <MemberSignature Language="C#" Value="public event System.Deployment.Application.DeploymentProgressChangedEventHandler UpdateProgressChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Deployment.Application.DeploymentProgressChangedEventHandler UpdateProgressChanged" />
       <MemberSignature Language="DocId" Value="E:System.Deployment.Application.ApplicationDeployment.UpdateProgressChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event UpdateProgressChanged As DeploymentProgressChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.UpdateProgressChanged : System.Deployment.Application.DeploymentProgressChangedEventHandler " Usage="member this.UpdateProgressChanged : System.Deployment.Application.DeploymentProgressChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Deployment::Application::DeploymentProgressChangedEventHandler ^ UpdateProgressChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Deployment</AssemblyName>
@@ -1117,32 +1237,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="DownloadFileGroupAsync">
-      <AssemblyInfo>
-        <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Downloads, on demand, a set of optional files in the background.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CheckForUpdate">
-      <AssemblyInfo>
-        <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Checks <see cref="P:System.Deployment.Application.ApplicationDeployment.UpdateLocation" /> to determine whether a new update is available.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CheckForDetailedUpdate">
-      <AssemblyInfo>
-        <AssemblyName>System.Deployment</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Performs the same operation as <see cref="M:System.Deployment.Application.ApplicationDeployment.CheckForUpdate" />, but returns extended information about the available update.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

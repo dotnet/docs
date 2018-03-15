@@ -1,7 +1,10 @@
-<Type Name="InheritedExportAttribute" FullName="System.ComponentModel.Composition.InheritedExportAttribute">
+﻿<Type Name="InheritedExportAttribute" FullName="System.ComponentModel.Composition.InheritedExportAttribute">
   <TypeSignature Language="C#" Value="public class InheritedExportAttribute : System.ComponentModel.Composition.ExportAttribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InheritedExportAttribute extends System.ComponentModel.Composition.ExportAttribute" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Composition.InheritedExportAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class InheritedExportAttribute&#xA;Inherits ExportAttribute" />
+  <TypeSignature Language="F#" Value="type InheritedExportAttribute = class&#xA;    inherit ExportAttribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class InheritedExportAttribute : System::ComponentModel::Composition::ExportAttribute" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Composition</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -21,10 +24,22 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.InheritedExportAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public InheritedExportAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.InheritedExportAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InheritedExportAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -41,6 +56,9 @@
       <MemberSignature Language="C#" Value="public InheritedExportAttribute (string contractName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string contractName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.InheritedExportAttribute : string -&gt; System.ComponentModel.Composition.InheritedExportAttribute" Usage="new System.ComponentModel.Composition.InheritedExportAttribute contractName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InheritedExportAttribute(System::String ^ contractName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -60,6 +78,9 @@
       <MemberSignature Language="C#" Value="public InheritedExportAttribute (Type contractType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Type contractType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contractType As Type)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.InheritedExportAttribute : Type -&gt; System.ComponentModel.Composition.InheritedExportAttribute" Usage="new System.ComponentModel.Composition.InheritedExportAttribute contractType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InheritedExportAttribute(Type ^ contractType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -79,6 +100,9 @@
       <MemberSignature Language="C#" Value="public InheritedExportAttribute (string contractName, Type contractType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string contractName, class System.Type contractType) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Composition.InheritedExportAttribute.#ctor(System.String,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contractName As String, contractType As Type)" />
+      <MemberSignature Language="F#" Value="new System.ComponentModel.Composition.InheritedExportAttribute : string * Type -&gt; System.ComponentModel.Composition.InheritedExportAttribute" Usage="new System.ComponentModel.Composition.InheritedExportAttribute (contractName, contractType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; InheritedExportAttribute(System::String ^ contractName, Type ^ contractType);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Composition</AssemblyName>
@@ -96,15 +120,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.ComponentModel.Composition</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Composition.InheritedExportAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

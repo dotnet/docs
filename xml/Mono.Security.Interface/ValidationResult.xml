@@ -1,7 +1,10 @@
-<Type Name="ValidationResult" FullName="Mono.Security.Interface.ValidationResult">
+﻿<Type Name="ValidationResult" FullName="Mono.Security.Interface.ValidationResult">
   <TypeSignature Language="C#" Value="public class ValidationResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ValidationResult extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Mono.Security.Interface.ValidationResult" />
+  <TypeSignature Language="VB.NET" Value="Public Class ValidationResult" />
+  <TypeSignature Language="F#" Value="type ValidationResult = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ValidationResult" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public ValidationResult (bool trusted, bool user_denied, int error_code, Nullable&lt;Mono.Security.Interface.MonoSslPolicyErrors&gt; policy_errors);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(bool trusted, bool user_denied, int32 error_code, valuetype System.Nullable`1&lt;valuetype Mono.Security.Interface.MonoSslPolicyErrors&gt; policy_errors) cil managed" />
       <MemberSignature Language="DocId" Value="M:Mono.Security.Interface.ValidationResult.#ctor(System.Boolean,System.Boolean,System.Int32,System.Nullable{Mono.Security.Interface.MonoSslPolicyErrors})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (trusted As Boolean, user_denied As Boolean, error_code As Integer, policy_errors As Nullable(Of MonoSslPolicyErrors))" />
+      <MemberSignature Language="F#" Value="new Mono.Security.Interface.ValidationResult : bool * bool * int * Nullable&lt;Mono.Security.Interface.MonoSslPolicyErrors&gt; -&gt; Mono.Security.Interface.ValidationResult" Usage="new Mono.Security.Interface.ValidationResult (trusted, user_denied, error_code, policy_errors)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ValidationResult(bool trusted, bool user_denied, int error_code, Nullable&lt;Mono::Security::Interface::MonoSslPolicyErrors&gt; policy_errors);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -43,6 +49,9 @@
       <MemberSignature Language="C#" Value="public int ErrorCode { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ErrorCode" />
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.ValidationResult.ErrorCode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorCode As Integer" />
+      <MemberSignature Language="F#" Value="member this.ErrorCode : int" Usage="Mono.Security.Interface.ValidationResult.ErrorCode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ErrorCode { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -61,6 +70,9 @@
       <MemberSignature Language="C#" Value="public Nullable&lt;Mono.Security.Interface.MonoSslPolicyErrors&gt; PolicyErrors { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Nullable`1&lt;valuetype Mono.Security.Interface.MonoSslPolicyErrors&gt; PolicyErrors" />
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.ValidationResult.PolicyErrors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PolicyErrors As Nullable(Of MonoSslPolicyErrors)" />
+      <MemberSignature Language="F#" Value="member this.PolicyErrors : Nullable&lt;Mono.Security.Interface.MonoSslPolicyErrors&gt;" Usage="Mono.Security.Interface.ValidationResult.PolicyErrors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Nullable&lt;Mono::Security::Interface::MonoSslPolicyErrors&gt; PolicyErrors { Nullable&lt;Mono::Security::Interface::MonoSslPolicyErrors&gt; get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -79,6 +91,9 @@
       <MemberSignature Language="C#" Value="public bool Trusted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Trusted" />
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.ValidationResult.Trusted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Trusted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Trusted : bool" Usage="Mono.Security.Interface.ValidationResult.Trusted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Trusted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +112,9 @@
       <MemberSignature Language="C#" Value="public bool UserDenied { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UserDenied" />
       <MemberSignature Language="DocId" Value="P:Mono.Security.Interface.ValidationResult.UserDenied" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property UserDenied As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UserDenied : bool" Usage="Mono.Security.Interface.ValidationResult.UserDenied" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UserDenied { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

@@ -1,7 +1,10 @@
-<Type Name="DataAnnotationsModelValidator" FullName="System.Web.ModelBinding.DataAnnotationsModelValidator">
+﻿<Type Name="DataAnnotationsModelValidator" FullName="System.Web.ModelBinding.DataAnnotationsModelValidator">
   <TypeSignature Language="C#" Value="public class DataAnnotationsModelValidator : System.Web.ModelBinding.ModelValidator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataAnnotationsModelValidator extends System.Web.ModelBinding.ModelValidator" />
   <TypeSignature Language="DocId" Value="T:System.Web.ModelBinding.DataAnnotationsModelValidator" />
+  <TypeSignature Language="VB.NET" Value="Public Class DataAnnotationsModelValidator&#xA;Inherits ModelValidator" />
+  <TypeSignature Language="F#" Value="type DataAnnotationsModelValidator = class&#xA;    inherit ModelValidator" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataAnnotationsModelValidator : System::Web::ModelBinding::ModelValidator" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public DataAnnotationsModelValidator (System.Web.ModelBinding.ModelMetadata metadata, System.Web.ModelBinding.ModelBindingExecutionContext context, System.ComponentModel.DataAnnotations.ValidationAttribute attribute);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Web.ModelBinding.ModelMetadata metadata, class System.Web.ModelBinding.ModelBindingExecutionContext context, class System.ComponentModel.DataAnnotations.ValidationAttribute attribute) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelValidator.#ctor(System.Web.ModelBinding.ModelMetadata,System.Web.ModelBinding.ModelBindingExecutionContext,System.ComponentModel.DataAnnotations.ValidationAttribute)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (metadata As ModelMetadata, context As ModelBindingExecutionContext, attribute As ValidationAttribute)" />
+      <MemberSignature Language="F#" Value="new System.Web.ModelBinding.DataAnnotationsModelValidator : System.Web.ModelBinding.ModelMetadata * System.Web.ModelBinding.ModelBindingExecutionContext * System.ComponentModel.DataAnnotations.ValidationAttribute -&gt; System.Web.ModelBinding.DataAnnotationsModelValidator" Usage="new System.Web.ModelBinding.DataAnnotationsModelValidator (metadata, context, attribute)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DataAnnotationsModelValidator(System::Web::ModelBinding::ModelMetadata ^ metadata, System::Web::ModelBinding::ModelBindingExecutionContext ^ context, System::ComponentModel::DataAnnotations::ValidationAttribute ^ attribute);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -38,9 +44,12 @@
       </Docs>
     </Member>
     <Member MemberName="Attribute">
-      <MemberSignature Language="C#" Value="protected System.ComponentModel.DataAnnotations.ValidationAttribute Attribute { get; }" />
+      <MemberSignature Language="C#" Value="protected internal System.ComponentModel.DataAnnotations.ValidationAttribute Attribute { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.ComponentModel.DataAnnotations.ValidationAttribute Attribute" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.DataAnnotationsModelValidator.Attribute" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property Attribute As ValidationAttribute" />
+      <MemberSignature Language="F#" Value="member this.Attribute : System.ComponentModel.DataAnnotations.ValidationAttribute" Usage="System.Web.ModelBinding.DataAnnotationsModelValidator.Attribute" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::ComponentModel::DataAnnotations::ValidationAttribute ^ Attribute { System::ComponentModel::DataAnnotations::ValidationAttribute ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -56,9 +65,12 @@
       </Docs>
     </Member>
     <Member MemberName="ErrorMessage">
-      <MemberSignature Language="C#" Value="protected string ErrorMessage { get; }" />
+      <MemberSignature Language="C#" Value="protected internal string ErrorMessage { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ErrorMessage" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.DataAnnotationsModelValidator.ErrorMessage" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend ReadOnly Property ErrorMessage As String" />
+      <MemberSignature Language="F#" Value="member this.ErrorMessage : string" Usage="System.Web.ModelBinding.DataAnnotationsModelValidator.ErrorMessage" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; property System::String ^ ErrorMessage { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -77,6 +89,9 @@
       <MemberSignature Language="C#" Value="protected virtual string GetLocalizedErrorMessage (string errorMessage);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance string GetLocalizedErrorMessage(string errorMessage) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelValidator.GetLocalizedErrorMessage(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function GetLocalizedErrorMessage (errorMessage As String) As String" />
+      <MemberSignature Language="F#" Value="abstract member GetLocalizedErrorMessage : string -&gt; string&#xA;override this.GetLocalizedErrorMessage : string -&gt; string" Usage="dataAnnotationsModelValidator.GetLocalizedErrorMessage errorMessage" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::String ^ GetLocalizedErrorMessage(System::String ^ errorMessage);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -99,6 +114,9 @@
       <MemberSignature Language="C#" Value="protected string GetLocalizedString (string name, params object[] arguments);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance string GetLocalizedString(string name, object[] arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelValidator.GetLocalizedString(System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Function GetLocalizedString (name As String, ParamArray arguments As Object()) As String" />
+      <MemberSignature Language="F#" Value="member this.GetLocalizedString : string * obj[] -&gt; string" Usage="dataAnnotationsModelValidator.GetLocalizedString (name, arguments)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::String ^ GetLocalizedString(System::String ^ name, ... cli::array &lt;System::Object ^&gt; ^ arguments);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -129,6 +147,9 @@
       <MemberSignature Language="C#" Value="public override bool IsRequired { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRequired" />
       <MemberSignature Language="DocId" Value="P:System.Web.ModelBinding.DataAnnotationsModelValidator.IsRequired" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property IsRequired As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRequired : bool" Usage="System.Web.ModelBinding.DataAnnotationsModelValidator.IsRequired" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsRequired { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -148,6 +169,9 @@
       <MemberSignature Language="C#" Value="public override System.Collections.Generic.IEnumerable&lt;System.Web.ModelBinding.ModelValidationResult&gt; Validate (object container);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Collections.Generic.IEnumerable`1&lt;class System.Web.ModelBinding.ModelValidationResult&gt; Validate(object container) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.ModelBinding.DataAnnotationsModelValidator.Validate(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Iterator Overrides Function Validate (container As Object) As IEnumerable(Of ModelValidationResult)" />
+      <MemberSignature Language="F#" Value="override this.Validate : obj -&gt; seq&lt;System.Web.ModelBinding.ModelValidationResult&gt;" Usage="dataAnnotationsModelValidator.Validate container" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Collections::Generic::IEnumerable&lt;System::Web::ModelBinding::ModelValidationResult ^&gt; ^ Validate(System::Object ^ container);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

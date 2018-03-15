@@ -1,7 +1,10 @@
-<Type Name="TriState" FullName="Microsoft.VisualBasic.TriState">
+﻿<Type Name="TriState" FullName="Microsoft.VisualBasic.TriState">
   <TypeSignature Language="C#" Value="public enum TriState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TriState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.TriState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TriState" />
+  <TypeSignature Language="F#" Value="type TriState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class TriState" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -28,6 +31,9 @@
       <MemberSignature Language="C#" Value="False" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.TriState False = int32(0)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.TriState.False" />
+      <MemberSignature Language="VB.NET" Value="False" />
+      <MemberSignature Language="F#" Value="False = 0" Usage="Microsoft.VisualBasic.TriState.False" />
+      <MemberSignature Language="C++ CLI" Value="False" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -36,6 +42,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.TriState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>False. The numeric value of this member is 0.</summary>
       </Docs>
@@ -44,6 +51,9 @@
       <MemberSignature Language="C#" Value="True" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.TriState True = int32(-1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.TriState.True" />
+      <MemberSignature Language="VB.NET" Value="True" />
+      <MemberSignature Language="F#" Value="True = -1" Usage="Microsoft.VisualBasic.TriState.True" />
+      <MemberSignature Language="C++ CLI" Value="True" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -52,6 +62,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.TriState</ReturnType>
       </ReturnValue>
+      <MemberValue>-1</MemberValue>
       <Docs>
         <summary>True. The numeric value of this member is -1.</summary>
       </Docs>
@@ -60,6 +71,9 @@
       <MemberSignature Language="C#" Value="UseDefault" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.VisualBasic.TriState UseDefault = int32(-2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.VisualBasic.TriState.UseDefault" />
+      <MemberSignature Language="VB.NET" Value="UseDefault" />
+      <MemberSignature Language="F#" Value="UseDefault = -2" Usage="Microsoft.VisualBasic.TriState.UseDefault" />
+      <MemberSignature Language="C++ CLI" Value="UseDefault" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -68,6 +82,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.VisualBasic.TriState</ReturnType>
       </ReturnValue>
+      <MemberValue>-2</MemberValue>
       <Docs>
         <summary>Default setting. The numeric value of this member is -2.</summary>
       </Docs>

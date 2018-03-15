@@ -1,7 +1,10 @@
-<Type Name="FormatNumberEventArgs" FullName="System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs">
+﻿<Type Name="FormatNumberEventArgs" FullName="System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs">
   <TypeSignature Language="C#" Value="public class FormatNumberEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormatNumberEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs" />
+  <TypeSignature Language="VB.NET" Value="Public Class FormatNumberEventArgs&#xA;Inherits EventArgs" />
+  <TypeSignature Language="F#" Value="type FormatNumberEventArgs = class&#xA;    inherit EventArgs" />
+  <TypeSignature Language="C++ CLI" Value="public ref class FormatNumberEventArgs : EventArgs" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartElementType ElementType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartElementType ElementType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.ElementType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ElementType As ChartElementType" />
+      <MemberSignature Language="F#" Value="member this.ElementType : System.Windows.Forms.DataVisualization.Charting.ChartElementType" Usage="System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.ElementType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartElementType ElementType { System::Windows::Forms::DataVisualization::Charting::ChartElementType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="public string Format { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Format" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.Format" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Format As String" />
+      <MemberSignature Language="F#" Value="member this.Format : string" Usage="System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.Format" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Format { System::String ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -55,6 +64,9 @@
       <MemberSignature Language="C#" Value="public string LocalizedValue { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string LocalizedValue" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.LocalizedValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property LocalizedValue As String" />
+      <MemberSignature Language="F#" Value="member this.LocalizedValue : string with get, set" Usage="System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.LocalizedValue" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ LocalizedValue { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -73,6 +85,9 @@
       <MemberSignature Language="C#" Value="public object SenderTag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SenderTag" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.SenderTag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SenderTag As Object" />
+      <MemberSignature Language="F#" Value="member this.SenderTag : obj" Usage="System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.SenderTag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SenderTag { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -91,6 +106,9 @@
       <MemberSignature Language="C#" Value="public double Value { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance float64 Value" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.Value" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Value As Double" />
+      <MemberSignature Language="F#" Value="member this.Value : double" Usage="System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property double Value { double get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>
@@ -109,6 +127,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.DataVisualization.Charting.ChartValueType ValueType { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DataVisualization.Charting.ChartValueType ValueType" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.ValueType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ValueType As ChartValueType" />
+      <MemberSignature Language="F#" Value="member this.ValueType : System.Windows.Forms.DataVisualization.Charting.ChartValueType" Usage="System.Windows.Forms.DataVisualization.Charting.FormatNumberEventArgs.ValueType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::DataVisualization::Charting::ChartValueType ValueType { System::Windows::Forms::DataVisualization::Charting::ChartValueType get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms.DataVisualization</AssemblyName>

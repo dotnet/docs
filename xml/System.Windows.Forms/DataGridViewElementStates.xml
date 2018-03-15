@@ -1,7 +1,10 @@
-<Type Name="DataGridViewElementStates" FullName="System.Windows.Forms.DataGridViewElementStates">
+﻿<Type Name="DataGridViewElementStates" FullName="System.Windows.Forms.DataGridViewElementStates">
   <TypeSignature Language="C#" Value="public enum DataGridViewElementStates" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewElementStates extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewElementStates" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DataGridViewElementStates" />
+  <TypeSignature Language="F#" Value="type DataGridViewElementStates = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DataGridViewElementStates" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="Displayed" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates Displayed = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.Displayed" />
+      <MemberSignature Language="VB.NET" Value="Displayed" />
+      <MemberSignature Language="F#" Value="Displayed = 1" Usage="System.Windows.Forms.DataGridViewElementStates.Displayed" />
+      <MemberSignature Language="C++ CLI" Value="Displayed" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -51,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates the an element is currently displayed onscreen.</summary>
       </Docs>
@@ -59,6 +66,9 @@
       <MemberSignature Language="C#" Value="Frozen" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates Frozen = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.Frozen" />
+      <MemberSignature Language="VB.NET" Value="Frozen" />
+      <MemberSignature Language="F#" Value="Frozen = 2" Usage="System.Windows.Forms.DataGridViewElementStates.Frozen" />
+      <MemberSignature Language="C++ CLI" Value="Frozen" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that an element cannot be scrolled through the UI.</summary>
       </Docs>
@@ -75,6 +86,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Forms.DataGridViewElementStates.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -83,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that an element is in its default state.</summary>
       </Docs>
@@ -91,6 +106,9 @@
       <MemberSignature Language="C#" Value="ReadOnly" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates ReadOnly = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.ReadOnly" />
+      <MemberSignature Language="VB.NET" Value="ReadOnly" />
+      <MemberSignature Language="F#" Value="ReadOnly = 4" Usage="System.Windows.Forms.DataGridViewElementStates.ReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="ReadOnly" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -99,6 +117,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Indicates that an element will not accept user input to change its value.</summary>
       </Docs>
@@ -107,6 +126,9 @@
       <MemberSignature Language="C#" Value="Resizable" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates Resizable = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.Resizable" />
+      <MemberSignature Language="VB.NET" Value="Resizable" />
+      <MemberSignature Language="F#" Value="Resizable = 8" Usage="System.Windows.Forms.DataGridViewElementStates.Resizable" />
+      <MemberSignature Language="C++ CLI" Value="Resizable" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -115,6 +137,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>Indicates that an element can be resized through the UI. This value is ignored except when combined with the <see cref="F:System.Windows.Forms.DataGridViewElementStates.ResizableSet" /> value.</summary>
       </Docs>
@@ -123,6 +146,9 @@
       <MemberSignature Language="C#" Value="ResizableSet" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates ResizableSet = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.ResizableSet" />
+      <MemberSignature Language="VB.NET" Value="ResizableSet" />
+      <MemberSignature Language="F#" Value="ResizableSet = 16" Usage="System.Windows.Forms.DataGridViewElementStates.ResizableSet" />
+      <MemberSignature Language="C++ CLI" Value="ResizableSet" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -131,6 +157,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Indicates that an element does not inherit the resizable state of its parent.</summary>
       </Docs>
@@ -139,6 +166,9 @@
       <MemberSignature Language="C#" Value="Selected" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates Selected = int32(32)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.Selected" />
+      <MemberSignature Language="VB.NET" Value="Selected" />
+      <MemberSignature Language="F#" Value="Selected = 32" Usage="System.Windows.Forms.DataGridViewElementStates.Selected" />
+      <MemberSignature Language="C++ CLI" Value="Selected" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -147,6 +177,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
+      <MemberValue>32</MemberValue>
       <Docs>
         <summary>Indicates that an element is in a selected (highlighted) UI state.</summary>
       </Docs>
@@ -155,6 +186,9 @@
       <MemberSignature Language="C#" Value="Visible" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Forms.DataGridViewElementStates Visible = int32(64)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.DataGridViewElementStates.Visible" />
+      <MemberSignature Language="VB.NET" Value="Visible" />
+      <MemberSignature Language="F#" Value="Visible = 64" Usage="System.Windows.Forms.DataGridViewElementStates.Visible" />
+      <MemberSignature Language="C++ CLI" Value="Visible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -163,6 +197,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewElementStates</ReturnType>
       </ReturnValue>
+      <MemberValue>64</MemberValue>
       <Docs>
         <summary>Indicates that an element is visible (displayable).</summary>
       </Docs>

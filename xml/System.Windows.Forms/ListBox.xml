@@ -1,7 +1,10 @@
-<Type Name="ListBox" FullName="System.Windows.Forms.ListBox">
+﻿<Type Name="ListBox" FullName="System.Windows.Forms.ListBox">
   <TypeSignature Language="C#" Value="public class ListBox : System.Windows.Forms.ListControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListBox extends System.Windows.Forms.ListControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListBox" />
+  <TypeSignature Language="VB.NET" Value="Public Class ListBox&#xA;Inherits ListControl" />
+  <TypeSignature Language="F#" Value="type ListBox = class&#xA;    inherit ListControl" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ListBox : System::Windows::Forms::ListControl" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -24,7 +27,7 @@
       <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.ListBoxDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.ClassInterface</AttributeName>
     </Attribute>
     <Attribute>
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
@@ -100,6 +103,8 @@
       <MemberSignature Language="C#" Value="public ListBox ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ListBox();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -126,6 +131,9 @@
       <MemberSignature Language="C#" Value="protected virtual void AddItemsCore (object[] value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void AddItemsCore(object[] value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.AddItemsCore(System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub AddItemsCore (value As Object())" />
+      <MemberSignature Language="F#" Value="abstract member AddItemsCore : obj[] -&gt; unit&#xA;override this.AddItemsCore : obj[] -&gt; unit" Usage="listBox.AddItemsCore value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void AddItemsCore(cli::array &lt;System::Object ^&gt; ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -152,6 +160,9 @@
       <MemberSignature Language="C#" Value="protected override bool AllowSelection { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowSelection" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.AllowSelection" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property AllowSelection As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowSelection : bool" Usage="System.Windows.Forms.ListBox.AllowSelection" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property bool AllowSelection { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -171,6 +182,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color BackColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color BackColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackColor As Color" />
+      <MemberSignature Language="F#" Value="member this.BackColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ListBox.BackColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color BackColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -189,6 +203,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Image BackgroundImage { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Image BackgroundImage" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.BackgroundImage" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImage As Image" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImage : System.Drawing.Image with get, set" Usage="System.Windows.Forms.ListBox.BackgroundImage" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Image ^ BackgroundImage { System::Drawing::Image ^ get(); void set(System::Drawing::Image ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -222,6 +239,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.BackgroundImageChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageChanged : EventHandler " Usage="member this.BackgroundImageChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -254,6 +274,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.ImageLayout BackgroundImageLayout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.ImageLayout BackgroundImageLayout" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.BackgroundImageLayout" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property BackgroundImageLayout As ImageLayout" />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayout : System.Windows.Forms.ImageLayout with get, set" Usage="System.Windows.Forms.ListBox.BackgroundImageLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ImageLayout BackgroundImageLayout { System::Windows::Forms::ImageLayout get(); void set(System::Windows::Forms::ImageLayout value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -288,6 +311,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler BackgroundImageLayoutChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler BackgroundImageLayoutChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.BackgroundImageLayoutChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event BackgroundImageLayoutChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.BackgroundImageLayoutChanged : EventHandler " Usage="member this.BackgroundImageLayoutChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ BackgroundImageLayoutChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -320,6 +346,9 @@
       <MemberSignature Language="C#" Value="public void BeginUpdate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void BeginUpdate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.BeginUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub BeginUpdate ()" />
+      <MemberSignature Language="F#" Value="member this.BeginUpdate : unit -&gt; unit" Usage="listBox.BeginUpdate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void BeginUpdate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -355,6 +384,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.BorderStyle BorderStyle { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.BorderStyle BorderStyle" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.BorderStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property BorderStyle As BorderStyle" />
+      <MemberSignature Language="F#" Value="member this.BorderStyle : System.Windows.Forms.BorderStyle with get, set" Usage="System.Windows.Forms.ListBox.BorderStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::BorderStyle BorderStyle { System::Windows::Forms::BorderStyle get(); void set(System::Windows::Forms::BorderStyle value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -383,6 +415,9 @@
       <MemberSignature Language="C#" Value="public void ClearSelected ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ClearSelected() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.ClearSelected" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearSelected ()" />
+      <MemberSignature Language="F#" Value="member this.ClearSelected : unit -&gt; unit" Usage="listBox.ClearSelected " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearSelected();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -418,6 +453,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler Click;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Click" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.Click" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Click As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Click : EventHandler " Usage="member this.Click : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ Click;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -443,6 +481,9 @@
       <MemberSignature Language="C#" Value="public int ColumnWidth { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ColumnWidth" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.ColumnWidth" />
+      <MemberSignature Language="VB.NET" Value="Public Property ColumnWidth As Integer" />
+      <MemberSignature Language="F#" Value="member this.ColumnWidth : int with get, set" Usage="System.Windows.Forms.ListBox.ColumnWidth" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int ColumnWidth { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -485,6 +526,9 @@
       <MemberSignature Language="C#" Value="protected virtual System.Windows.Forms.ListBox.ObjectCollection CreateItemCollection ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance class System.Windows.Forms.ListBox/ObjectCollection CreateItemCollection() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.CreateItemCollection" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Function CreateItemCollection () As ListBox.ObjectCollection" />
+      <MemberSignature Language="F#" Value="abstract member CreateItemCollection : unit -&gt; System.Windows.Forms.ListBox.ObjectCollection&#xA;override this.CreateItemCollection : unit -&gt; System.Windows.Forms.ListBox.ObjectCollection" Usage="listBox.CreateItemCollection " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Windows::Forms::ListBox::ObjectCollection ^ CreateItemCollection();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -508,6 +552,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Forms.CreateParams CreateParams { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.CreateParams CreateParams" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.CreateParams" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property CreateParams As CreateParams" />
+      <MemberSignature Language="F#" Value="member this.CreateParams : System.Windows.Forms.CreateParams" Usage="System.Windows.Forms.ListBox.CreateParams" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Windows::Forms::CreateParams ^ CreateParams { System::Windows::Forms::CreateParams ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -527,6 +574,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListBox.IntegerCollection CustomTabOffsets { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListBox/IntegerCollection CustomTabOffsets" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.CustomTabOffsets" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomTabOffsets As ListBox.IntegerCollection" />
+      <MemberSignature Language="F#" Value="member this.CustomTabOffsets : System.Windows.Forms.ListBox.IntegerCollection" Usage="System.Windows.Forms.ListBox.CustomTabOffsets" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListBox::IntegerCollection ^ CustomTabOffsets { System::Windows::Forms::ListBox::IntegerCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -537,7 +587,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -560,6 +610,9 @@
       <MemberSignature Language="C#" Value="public const int DefaultItemHeight = 13;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 DefaultItemHeight = (13)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListBox.DefaultItemHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Const DefaultItemHeight As Integer  = 13" />
+      <MemberSignature Language="F#" Value="val mutable DefaultItemHeight : int" Usage="System.Windows.Forms.ListBox.DefaultItemHeight" />
+      <MemberSignature Language="C++ CLI" Value="public: int DefaultItemHeight = 13;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -578,6 +631,9 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Size DefaultSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Size DefaultSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.DefaultSize" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property DefaultSize As Size" />
+      <MemberSignature Language="F#" Value="member this.DefaultSize : System.Drawing.Size" Usage="System.Windows.Forms.ListBox.DefaultSize" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Drawing::Size DefaultSize { System::Drawing::Size get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -596,6 +652,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.DrawItemEventHandler DrawItem;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.DrawItemEventHandler DrawItem" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.DrawItem" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event DrawItem As DrawItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.DrawItem : System.Windows.Forms.DrawItemEventHandler " Usage="member this.DrawItem : System.Windows.Forms.DrawItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::DrawItemEventHandler ^ DrawItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -631,6 +690,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.DrawMode DrawMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.DrawMode DrawMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.DrawMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property DrawMode As DrawMode" />
+      <MemberSignature Language="F#" Value="member this.DrawMode : System.Windows.Forms.DrawMode with get, set" Usage="System.Windows.Forms.ListBox.DrawMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::DrawMode DrawMode { System::Windows::Forms::DrawMode get(); void set(System::Windows::Forms::DrawMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -641,7 +703,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -671,6 +733,9 @@
       <MemberSignature Language="C#" Value="public void EndUpdate ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void EndUpdate() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.EndUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub EndUpdate ()" />
+      <MemberSignature Language="F#" Value="member this.EndUpdate : unit -&gt; unit" Usage="listBox.EndUpdate " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void EndUpdate();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -702,10 +767,22 @@
         <altmember cref="M:System.Windows.Forms.ListBox.BeginUpdate" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindString">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the first item in the <see cref="T:System.Windows.Forms.ListBox" /> that starts with the specified string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindString">
       <MemberSignature Language="C#" Value="public int FindString (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindString(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.FindString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindString (s As String) As Integer" />
+      <MemberSignature Language="F#" Value="member this.FindString : string -&gt; int" Usage="listBox.FindString s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindString(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -747,6 +824,9 @@
       <MemberSignature Language="C#" Value="public int FindString (string s, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindString(string s, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.FindString(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindString (s As String, startIndex As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.FindString : string * int -&gt; int" Usage="listBox.FindString (s, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindString(System::String ^ s, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -789,10 +869,22 @@
         <altmember cref="M:System.Windows.Forms.ListBox.ObjectCollection.Contains(System.Object)" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindStringExact">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Finds the first item in the <see cref="T:System.Windows.Forms.ListBox" /> that exactly matches the specified string.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindStringExact">
       <MemberSignature Language="C#" Value="public int FindStringExact (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindStringExact(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.FindStringExact(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindStringExact (s As String) As Integer" />
+      <MemberSignature Language="F#" Value="member this.FindStringExact : string -&gt; int" Usage="listBox.FindStringExact s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindStringExact(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -833,6 +925,9 @@
       <MemberSignature Language="C#" Value="public int FindStringExact (string s, int startIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 FindStringExact(string s, int32 startIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.FindStringExact(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function FindStringExact (s As String, startIndex As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.FindStringExact : string * int -&gt; int" Usage="listBox.FindStringExact (s, startIndex)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int FindStringExact(System::String ^ s, int startIndex);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -879,6 +974,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Font Font { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Drawing.Font Font" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.Font" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Font As Font" />
+      <MemberSignature Language="F#" Value="member this.Font : System.Drawing.Font with get, set" Usage="System.Windows.Forms.ListBox.Font" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Font ^ Font { System::Drawing::Font ^ get(); void set(System::Drawing::Font ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -897,6 +995,9 @@
       <MemberSignature Language="C#" Value="public override System.Drawing.Color ForeColor { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Drawing.Color ForeColor" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property ForeColor As Color" />
+      <MemberSignature Language="F#" Value="member this.ForeColor : System.Drawing.Color with get, set" Usage="System.Windows.Forms.ListBox.ForeColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Drawing::Color ForeColor { System::Drawing::Color get(); void set(System::Drawing::Color value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -915,6 +1016,9 @@
       <MemberSignature Language="C#" Value="public int GetItemHeight (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 GetItemHeight(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.GetItemHeight(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItemHeight (index As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.GetItemHeight : int -&gt; int" Usage="listBox.GetItemHeight index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetItemHeight(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -945,6 +1049,9 @@
       <MemberSignature Language="C#" Value="public System.Drawing.Rectangle GetItemRectangle (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance valuetype System.Drawing.Rectangle GetItemRectangle(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.GetItemRectangle(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetItemRectangle (index As Integer) As Rectangle" />
+      <MemberSignature Language="F#" Value="member this.GetItemRectangle : int -&gt; System.Drawing.Rectangle" Usage="listBox.GetItemRectangle index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Drawing::Rectangle GetItemRectangle(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -975,6 +1082,9 @@
       <MemberSignature Language="C#" Value="protected override System.Drawing.Rectangle GetScaledBounds (System.Drawing.Rectangle bounds, System.Drawing.SizeF factor, System.Windows.Forms.BoundsSpecified specified);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Drawing.Rectangle GetScaledBounds(valuetype System.Drawing.Rectangle bounds, valuetype System.Drawing.SizeF factor, valuetype System.Windows.Forms.BoundsSpecified specified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.GetScaledBounds(System.Drawing.Rectangle,System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetScaledBounds (bounds As Rectangle, factor As SizeF, specified As BoundsSpecified) As Rectangle" />
+      <MemberSignature Language="F#" Value="override this.GetScaledBounds : System.Drawing.Rectangle * System.Drawing.SizeF * System.Windows.Forms.BoundsSpecified -&gt; System.Drawing.Rectangle" Usage="listBox.GetScaledBounds (bounds, factor, specified)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Drawing::Rectangle GetScaledBounds(System::Drawing::Rectangle bounds, System::Drawing::SizeF factor, System::Windows::Forms::BoundsSpecified specified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1013,6 +1123,9 @@
       <MemberSignature Language="C#" Value="public bool GetSelected (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool GetSelected(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.GetSelected(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSelected (index As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.GetSelected : int -&gt; bool" Usage="listBox.GetSelected index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool GetSelected(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1053,6 +1166,9 @@
       <MemberSignature Language="C#" Value="public int HorizontalExtent { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 HorizontalExtent" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.HorizontalExtent" />
+      <MemberSignature Language="VB.NET" Value="Public Property HorizontalExtent As Integer" />
+      <MemberSignature Language="F#" Value="member this.HorizontalExtent : int with get, set" Usage="System.Windows.Forms.ListBox.HorizontalExtent" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int HorizontalExtent { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1096,6 +1212,9 @@
       <MemberSignature Language="C#" Value="public bool HorizontalScrollbar { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool HorizontalScrollbar" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.HorizontalScrollbar" />
+      <MemberSignature Language="VB.NET" Value="Public Property HorizontalScrollbar As Boolean" />
+      <MemberSignature Language="F#" Value="member this.HorizontalScrollbar : bool with get, set" Usage="System.Windows.Forms.ListBox.HorizontalScrollbar" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool HorizontalScrollbar { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1136,10 +1255,22 @@
         <altmember cref="P:System.Windows.Forms.ListBox.HorizontalExtent" />
       </Docs>
     </Member>
+    <MemberGroup MemberName="IndexFromPoint">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the zero-based index of the item at the specified coordinates.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IndexFromPoint">
       <MemberSignature Language="C#" Value="public int IndexFromPoint (System.Drawing.Point p);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexFromPoint(valuetype System.Drawing.Point p) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.IndexFromPoint(System.Drawing.Point)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexFromPoint (p As Point) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexFromPoint : System.Drawing.Point -&gt; int" Usage="listBox.IndexFromPoint p" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexFromPoint(System::Drawing::Point p);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1178,6 +1309,9 @@
       <MemberSignature Language="C#" Value="public int IndexFromPoint (int x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexFromPoint(int32 x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.IndexFromPoint(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexFromPoint (x As Integer, y As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexFromPoint : int * int -&gt; int" Usage="listBox.IndexFromPoint (x, y)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexFromPoint(int x, int y);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1218,6 +1352,9 @@
       <MemberSignature Language="C#" Value="public bool IntegralHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IntegralHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.IntegralHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Property IntegralHeight As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IntegralHeight : bool with get, set" Usage="System.Windows.Forms.ListBox.IntegralHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IntegralHeight { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1231,7 +1368,7 @@
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1275,6 +1412,9 @@
       <MemberSignature Language="C#" Value="public virtual int ItemHeight { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 ItemHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.ItemHeight" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property ItemHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.ItemHeight : int with get, set" Usage="System.Windows.Forms.ListBox.ItemHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int ItemHeight { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1288,7 +1428,7 @@
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1317,6 +1457,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListBox.ObjectCollection Items { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListBox/ObjectCollection Items" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.Items" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Items As ListBox.ObjectCollection" />
+      <MemberSignature Language="F#" Value="member this.Items : System.Windows.Forms.ListBox.ObjectCollection" Usage="System.Windows.Forms.ListBox.Items" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListBox::ObjectCollection ^ Items { System::Windows::Forms::ListBox::ObjectCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1324,7 +1467,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ListControlStringCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
@@ -1368,6 +1511,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MeasureItemEventHandler MeasureItem;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MeasureItemEventHandler MeasureItem" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.MeasureItem" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MeasureItem As MeasureItemEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MeasureItem : System.Windows.Forms.MeasureItemEventHandler " Usage="member this.MeasureItem : System.Windows.Forms.MeasureItemEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MeasureItemEventHandler ^ MeasureItem;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1408,6 +1554,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.MouseEventHandler MouseClick;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.MouseEventHandler MouseClick" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.MouseClick" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event MouseClick As MouseEventHandler " />
+      <MemberSignature Language="F#" Value="member this.MouseClick : System.Windows.Forms.MouseEventHandler " Usage="member this.MouseClick : System.Windows.Forms.MouseEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::MouseEventHandler ^ MouseClick;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1433,6 +1582,9 @@
       <MemberSignature Language="C#" Value="public bool MultiColumn { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MultiColumn" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.MultiColumn" />
+      <MemberSignature Language="VB.NET" Value="Public Property MultiColumn As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MultiColumn : bool with get, set" Usage="System.Windows.Forms.ListBox.MultiColumn" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool MultiColumn { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1475,6 +1627,9 @@
       <MemberSignature Language="C#" Value="public const int NoMatches = -1;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 NoMatches = (-1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Forms.ListBox.NoMatches" />
+      <MemberSignature Language="VB.NET" Value="Public Const NoMatches As Integer  = -1" />
+      <MemberSignature Language="F#" Value="val mutable NoMatches : int" Usage="System.Windows.Forms.ListBox.NoMatches" />
+      <MemberSignature Language="C++ CLI" Value="public: int NoMatches = -1;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1500,6 +1655,9 @@
       <MemberSignature Language="C#" Value="protected override void OnChangeUICues (System.Windows.Forms.UICuesEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnChangeUICues(class System.Windows.Forms.UICuesEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnChangeUICues(System.Windows.Forms.UICuesEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnChangeUICues (e As UICuesEventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnChangeUICues : System.Windows.Forms.UICuesEventArgs -&gt; unit" Usage="listBox.OnChangeUICues e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnChangeUICues(System::Windows::Forms::UICuesEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1521,6 +1679,9 @@
       <MemberSignature Language="C#" Value="protected override void OnDataSourceChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDataSourceChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnDataSourceChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDataSourceChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnDataSourceChanged : EventArgs -&gt; unit" Usage="listBox.OnDataSourceChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDataSourceChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1542,6 +1703,9 @@
       <MemberSignature Language="C#" Value="protected override void OnDisplayMemberChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDisplayMemberChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnDisplayMemberChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDisplayMemberChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnDisplayMemberChanged : EventArgs -&gt; unit" Usage="listBox.OnDisplayMemberChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDisplayMemberChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1563,6 +1727,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnDrawItem (System.Windows.Forms.DrawItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnDrawItem(class System.Windows.Forms.DrawItemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnDrawItem (e As DrawItemEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnDrawItem : System.Windows.Forms.DrawItemEventArgs -&gt; unit&#xA;override this.OnDrawItem : System.Windows.Forms.DrawItemEventArgs -&gt; unit" Usage="listBox.OnDrawItem e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnDrawItem(System::Windows::Forms::DrawItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1605,6 +1772,9 @@
       <MemberSignature Language="C#" Value="protected override void OnFontChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnFontChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnFontChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnFontChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnFontChanged : EventArgs -&gt; unit" Usage="listBox.OnFontChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnFontChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1626,6 +1796,9 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleCreated (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleCreated(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnHandleCreated(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleCreated (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnHandleCreated : EventArgs -&gt; unit" Usage="listBox.OnHandleCreated e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleCreated(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1647,6 +1820,9 @@
       <MemberSignature Language="C#" Value="protected override void OnHandleDestroyed (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnHandleDestroyed(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnHandleDestroyed(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnHandleDestroyed (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnHandleDestroyed : EventArgs -&gt; unit" Usage="listBox.OnHandleDestroyed e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnHandleDestroyed(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1668,6 +1844,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnMeasureItem (System.Windows.Forms.MeasureItemEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnMeasureItem(class System.Windows.Forms.MeasureItemEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnMeasureItem(System.Windows.Forms.MeasureItemEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnMeasureItem (e As MeasureItemEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnMeasureItem : System.Windows.Forms.MeasureItemEventArgs -&gt; unit&#xA;override this.OnMeasureItem : System.Windows.Forms.MeasureItemEventArgs -&gt; unit" Usage="listBox.OnMeasureItem e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnMeasureItem(System::Windows::Forms::MeasureItemEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1702,6 +1881,9 @@
       <MemberSignature Language="C#" Value="protected override void OnParentChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnParentChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnParentChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnParentChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnParentChanged : EventArgs -&gt; unit" Usage="listBox.OnParentChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnParentChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1723,6 +1905,9 @@
       <MemberSignature Language="C#" Value="protected override void OnResize (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnResize(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnResize(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnResize (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnResize : EventArgs -&gt; unit" Usage="listBox.OnResize e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnResize(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1744,6 +1929,9 @@
       <MemberSignature Language="C#" Value="protected override void OnSelectedIndexChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSelectedIndexChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnSelectedIndexChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSelectedIndexChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnSelectedIndexChanged : EventArgs -&gt; unit" Usage="listBox.OnSelectedIndexChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSelectedIndexChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1765,6 +1953,9 @@
       <MemberSignature Language="C#" Value="protected override void OnSelectedValueChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnSelectedValueChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.OnSelectedValueChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnSelectedValueChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="override this.OnSelectedValueChanged : EventArgs -&gt; unit" Usage="listBox.OnSelectedValueChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnSelectedValueChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1786,6 +1977,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.Padding Padding { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.Padding Padding" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.Padding" />
+      <MemberSignature Language="VB.NET" Value="Public Property Padding As Padding" />
+      <MemberSignature Language="F#" Value="member this.Padding : System.Windows.Forms.Padding with get, set" Usage="System.Windows.Forms.ListBox.Padding" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::Padding Padding { System::Windows::Forms::Padding get(); void set(System::Windows::Forms::Padding value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1796,7 +1990,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
@@ -1822,6 +2016,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler PaddingChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler PaddingChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.PaddingChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event PaddingChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.PaddingChanged : EventHandler " Usage="member this.PaddingChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ PaddingChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1854,6 +2051,9 @@
       <MemberSignature Language="C#" Value="public event System.Windows.Forms.PaintEventHandler Paint;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Windows.Forms.PaintEventHandler Paint" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.Paint" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event Paint As PaintEventHandler " />
+      <MemberSignature Language="F#" Value="member this.Paint : System.Windows.Forms.PaintEventHandler " Usage="member this.Paint : System.Windows.Forms.PaintEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::Windows::Forms::PaintEventHandler ^ Paint;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1886,6 +2086,9 @@
       <MemberSignature Language="C#" Value="public int PreferredHeight { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 PreferredHeight" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.PreferredHeight" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreferredHeight As Integer" />
+      <MemberSignature Language="F#" Value="member this.PreferredHeight : int" Usage="System.Windows.Forms.ListBox.PreferredHeight" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PreferredHeight { int get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1896,7 +2099,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
@@ -1932,6 +2135,9 @@
       <MemberSignature Language="C#" Value="public override void Refresh ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Refresh() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.Refresh" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub Refresh ()" />
+      <MemberSignature Language="F#" Value="override this.Refresh : unit -&gt; unit" Usage="listBox.Refresh " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Refresh();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1950,6 +2156,9 @@
       <MemberSignature Language="C#" Value="protected override void RefreshItem (int index);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RefreshItem(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.RefreshItem(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RefreshItem (index As Integer)" />
+      <MemberSignature Language="F#" Value="override this.RefreshItem : int -&gt; unit" Usage="listBox.RefreshItem index" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RefreshItem(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1978,6 +2187,9 @@
       <MemberSignature Language="C#" Value="protected override void RefreshItems ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RefreshItems() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.RefreshItems" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RefreshItems ()" />
+      <MemberSignature Language="F#" Value="override this.RefreshItems : unit -&gt; unit" Usage="listBox.RefreshItems " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RefreshItems();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -1996,6 +2208,9 @@
       <MemberSignature Language="C#" Value="protected override void RescaleConstantsForDpi (int deviceDpiOld, int deviceDpiNew);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void RescaleConstantsForDpi(int32 deviceDpiOld, int32 deviceDpiNew) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.RescaleConstantsForDpi(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub RescaleConstantsForDpi (deviceDpiOld As Integer, deviceDpiNew As Integer)" />
+      <MemberSignature Language="F#" Value="override this.RescaleConstantsForDpi : int * int -&gt; unit" Usage="listBox.RescaleConstantsForDpi (deviceDpiOld, deviceDpiNew)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void RescaleConstantsForDpi(int deviceDpiOld, int deviceDpiNew);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2019,6 +2234,9 @@
       <MemberSignature Language="C#" Value="public override void ResetBackColor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResetBackColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.ResetBackColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetBackColor ()" />
+      <MemberSignature Language="F#" Value="override this.ResetBackColor : unit -&gt; unit" Usage="listBox.ResetBackColor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetBackColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2037,6 +2255,9 @@
       <MemberSignature Language="C#" Value="public override void ResetForeColor ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void ResetForeColor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.ResetForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Sub ResetForeColor ()" />
+      <MemberSignature Language="F#" Value="override this.ResetForeColor : unit -&gt; unit" Usage="listBox.ResetForeColor " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void ResetForeColor();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2055,6 +2276,9 @@
       <MemberSignature Language="C#" Value="public override System.Windows.Forms.RightToLeft RightToLeft { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.RightToLeft RightToLeft" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.RightToLeft" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property RightToLeft As RightToLeft" />
+      <MemberSignature Language="F#" Value="member this.RightToLeft : System.Windows.Forms.RightToLeft with get, set" Usage="System.Windows.Forms.ListBox.RightToLeft" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::RightToLeft RightToLeft { System::Windows::Forms::RightToLeft get(); void set(System::Windows::Forms::RightToLeft value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2080,6 +2304,9 @@
       <MemberSignature Language="C#" Value="protected override void ScaleControl (System.Drawing.SizeF factor, System.Windows.Forms.BoundsSpecified specified);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void ScaleControl(valuetype System.Drawing.SizeF factor, valuetype System.Windows.Forms.BoundsSpecified specified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.ScaleControl(System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub ScaleControl (factor As SizeF, specified As BoundsSpecified)" />
+      <MemberSignature Language="F#" Value="override this.ScaleControl : System.Drawing.SizeF * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="listBox.ScaleControl (factor, specified)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void ScaleControl(System::Drawing::SizeF factor, System::Windows::Forms::BoundsSpecified specified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2103,6 +2330,9 @@
       <MemberSignature Language="C#" Value="public bool ScrollAlwaysVisible { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool ScrollAlwaysVisible" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.ScrollAlwaysVisible" />
+      <MemberSignature Language="VB.NET" Value="Public Property ScrollAlwaysVisible As Boolean" />
+      <MemberSignature Language="F#" Value="member this.ScrollAlwaysVisible : bool with get, set" Usage="System.Windows.Forms.ListBox.ScrollAlwaysVisible" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ScrollAlwaysVisible { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2149,6 +2379,9 @@
       <MemberSignature Language="C#" Value="public override int SelectedIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SelectedIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.SelectedIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property SelectedIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.SelectedIndex : int with get, set" Usage="System.Windows.Forms.ListBox.SelectedIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property int SelectedIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2162,7 +2395,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2201,6 +2434,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler SelectedIndexChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SelectedIndexChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.SelectedIndexChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SelectedIndexChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SelectedIndexChanged : EventHandler " Usage="member this.SelectedIndexChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SelectedIndexChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2239,6 +2475,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListBox.SelectedIndexCollection SelectedIndices { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListBox/SelectedIndexCollection SelectedIndices" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.SelectedIndices" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedIndices As ListBox.SelectedIndexCollection" />
+      <MemberSignature Language="F#" Value="member this.SelectedIndices : System.Windows.Forms.ListBox.SelectedIndexCollection" Usage="System.Windows.Forms.ListBox.SelectedIndices" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListBox::SelectedIndexCollection ^ SelectedIndices { System::Windows::Forms::ListBox::SelectedIndexCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2249,7 +2488,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2286,6 +2525,9 @@
       <MemberSignature Language="C#" Value="public object SelectedItem { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object SelectedItem" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.SelectedItem" />
+      <MemberSignature Language="VB.NET" Value="Public Property SelectedItem As Object" />
+      <MemberSignature Language="F#" Value="member this.SelectedItem : obj with get, set" Usage="System.Windows.Forms.ListBox.SelectedItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ SelectedItem { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2299,7 +2541,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2333,6 +2575,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Forms.ListBox.SelectedObjectCollection SelectedItems { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListBox/SelectedObjectCollection SelectedItems" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.SelectedItems" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SelectedItems As ListBox.SelectedObjectCollection" />
+      <MemberSignature Language="F#" Value="member this.SelectedItems : System.Windows.Forms.ListBox.SelectedObjectCollection" Usage="System.Windows.Forms.ListBox.SelectedItems" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Forms::ListBox::SelectedObjectCollection ^ SelectedItems { System::Windows::Forms::ListBox::SelectedObjectCollection ^ get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2343,7 +2588,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2368,6 +2613,9 @@
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.SelectionMode SelectionMode { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Forms.SelectionMode SelectionMode" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.SelectionMode" />
+      <MemberSignature Language="VB.NET" Value="Public Overridable Property SelectionMode As SelectionMode" />
+      <MemberSignature Language="F#" Value="member this.SelectionMode : System.Windows.Forms.SelectionMode with get, set" Usage="System.Windows.Forms.ListBox.SelectionMode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::SelectionMode SelectionMode { System::Windows::Forms::SelectionMode get(); void set(System::Windows::Forms::SelectionMode value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2409,6 +2657,9 @@
       <MemberSignature Language="C#" Value="protected override void SetBoundsCore (int x, int y, int width, int height, System.Windows.Forms.BoundsSpecified specified);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetBoundsCore(int32 x, int32 y, int32 width, int32 height, valuetype System.Windows.Forms.BoundsSpecified specified) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetBoundsCore (x As Integer, y As Integer, width As Integer, height As Integer, specified As BoundsSpecified)" />
+      <MemberSignature Language="F#" Value="override this.SetBoundsCore : int * int * int * int * System.Windows.Forms.BoundsSpecified -&gt; unit" Usage="listBox.SetBoundsCore (x, y, width, height, specified)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetBoundsCore(int x, int y, int width, int height, System::Windows::Forms::BoundsSpecified specified);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2452,6 +2703,9 @@
       <MemberSignature Language="C#" Value="protected override void SetItemCore (int index, object value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItemCore(int32 index, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.SetItemCore(System.Int32,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItemCore (index As Integer, value As Object)" />
+      <MemberSignature Language="F#" Value="override this.SetItemCore : int * obj -&gt; unit" Usage="listBox.SetItemCore (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItemCore(int index, System::Object ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2475,6 +2729,9 @@
       <MemberSignature Language="C#" Value="protected override void SetItemsCore (System.Collections.IList value);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void SetItemsCore(class System.Collections.IList value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.SetItemsCore(System.Collections.IList)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub SetItemsCore (value As IList)" />
+      <MemberSignature Language="F#" Value="override this.SetItemsCore : System.Collections.IList -&gt; unit" Usage="listBox.SetItemsCore value" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void SetItemsCore(System::Collections::IList ^ value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2496,6 +2753,9 @@
       <MemberSignature Language="C#" Value="public void SetSelected (int index, bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetSelected(int32 index, bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.SetSelected(System.Int32,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetSelected (index As Integer, value As Boolean)" />
+      <MemberSignature Language="F#" Value="member this.SetSelected : int * bool -&gt; unit" Usage="listBox.SetSelected (index, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetSelected(int index, bool value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2539,6 +2799,9 @@
       <MemberSignature Language="C#" Value="protected virtual void Sort ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void Sort() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.Sort" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub Sort ()" />
+      <MemberSignature Language="F#" Value="abstract member Sort : unit -&gt; unit&#xA;override this.Sort : unit -&gt; unit" Usage="listBox.Sort " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void Sort();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2577,6 +2840,9 @@
       <MemberSignature Language="C#" Value="public bool Sorted { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool Sorted" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.Sorted" />
+      <MemberSignature Language="VB.NET" Value="Public Property Sorted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.Sorted : bool with get, set" Usage="System.Windows.Forms.ListBox.Sorted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool Sorted { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2619,6 +2885,9 @@
       <MemberSignature Language="C#" Value="public override string Text { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Text" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Property Text As String" />
+      <MemberSignature Language="F#" Value="member this.Text : string with get, set" Usage="System.Windows.Forms.ListBox.Text" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2632,7 +2901,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
@@ -2658,6 +2927,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler TextChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler TextChanged" />
       <MemberSignature Language="DocId" Value="E:System.Windows.Forms.ListBox.TextChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event TextChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.TextChanged : EventHandler " Usage="member this.TextChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ TextChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2683,6 +2955,9 @@
       <MemberSignature Language="C#" Value="public int TopIndex { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 TopIndex" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.TopIndex" />
+      <MemberSignature Language="VB.NET" Value="Public Property TopIndex As Integer" />
+      <MemberSignature Language="F#" Value="member this.TopIndex : int with get, set" Usage="System.Windows.Forms.ListBox.TopIndex" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TopIndex { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2693,7 +2968,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2725,6 +3000,9 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="listBox.ToString " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2744,6 +3022,9 @@
       <MemberSignature Language="C#" Value="public bool UseCustomTabOffsets { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseCustomTabOffsets" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.UseCustomTabOffsets" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseCustomTabOffsets As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseCustomTabOffsets : bool with get, set" Usage="System.Windows.Forms.ListBox.UseCustomTabOffsets" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseCustomTabOffsets { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2772,6 +3053,9 @@
       <MemberSignature Language="C#" Value="public bool UseTabStops { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool UseTabStops" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListBox.UseTabStops" />
+      <MemberSignature Language="VB.NET" Value="Public Property UseTabStops As Boolean" />
+      <MemberSignature Language="F#" Value="member this.UseTabStops : bool with get, set" Usage="System.Windows.Forms.ListBox.UseTabStops" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool UseTabStops { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2808,6 +3092,9 @@
       <MemberSignature Language="C#" Value="protected virtual void WmReflectCommand (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void WmReflectCommand(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.WmReflectCommand(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub WmReflectCommand (ByRef m As Message)" />
+      <MemberSignature Language="F#" Value="abstract member WmReflectCommand :  -&gt; unit&#xA;override this.WmReflectCommand :  -&gt; unit" Usage="listBox.WmReflectCommand m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void WmReflectCommand(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2829,6 +3116,9 @@
       <MemberSignature Language="C#" Value="protected override void WndProc (ref System.Windows.Forms.Message m);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void WndProc(valuetype System.Windows.Forms.Message&amp; m) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListBox.WndProc(System.Windows.Forms.Message@)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub WndProc (ByRef m As Message)" />
+      <MemberSignature Language="F#" Value="override this.WndProc :  -&gt; unit" Usage="listBox.WndProc m" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void WndProc(System::Windows::Forms::Message % m);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -2854,32 +3144,5 @@
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
     </Member>
-    <MemberGroup MemberName="IndexFromPoint">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the zero-based index of the item at the specified coordinates.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FindString">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Finds the first item in the <see cref="T:System.Windows.Forms.ListBox" /> that starts with the specified string.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FindStringExact">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Finds the first item in the <see cref="T:System.Windows.Forms.ListBox" /> that exactly matches the specified string.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

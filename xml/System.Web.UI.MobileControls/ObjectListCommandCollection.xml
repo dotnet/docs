@@ -1,7 +1,10 @@
-<Type Name="ObjectListCommandCollection" FullName="System.Web.UI.MobileControls.ObjectListCommandCollection">
+﻿<Type Name="ObjectListCommandCollection" FullName="System.Web.UI.MobileControls.ObjectListCommandCollection">
   <TypeSignature Language="C#" Value="public class ObjectListCommandCollection : System.Web.UI.MobileControls.ArrayListCollectionBase, System.Web.UI.IStateManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ObjectListCommandCollection extends System.Web.UI.MobileControls.ArrayListCollectionBase implements class System.Web.UI.IStateManager" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.ObjectListCommandCollection" />
+  <TypeSignature Language="VB.NET" Value="Public Class ObjectListCommandCollection&#xA;Inherits ArrayListCollectionBase&#xA;Implements IStateManager" />
+  <TypeSignature Language="F#" Value="type ObjectListCommandCollection = class&#xA;    inherit ArrayListCollectionBase&#xA;    interface IStateManager" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ObjectListCommandCollection : System::Web::UI::MobileControls::ArrayListCollectionBase, System::Web::UI::IStateManager" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="public void Add (System.Web.UI.MobileControls.ObjectListCommand command);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(class System.Web.UI.MobileControls.ObjectListCommand command) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListCommandCollection.Add(System.Web.UI.MobileControls.ObjectListCommand)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (command As ObjectListCommand)" />
+      <MemberSignature Language="F#" Value="member this.Add : System.Web.UI.MobileControls.ObjectListCommand -&gt; unit" Usage="objectListCommandCollection.Add command" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Add(System::Web::UI::MobileControls::ObjectListCommand ^ command);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -70,6 +76,9 @@
       <MemberSignature Language="C#" Value="public void AddAt (int index, System.Web.UI.MobileControls.ObjectListCommand command);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddAt(int32 index, class System.Web.UI.MobileControls.ObjectListCommand command) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListCommandCollection.AddAt(System.Int32,System.Web.UI.MobileControls.ObjectListCommand)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddAt (index As Integer, command As ObjectListCommand)" />
+      <MemberSignature Language="F#" Value="member this.AddAt : int * System.Web.UI.MobileControls.ObjectListCommand -&gt; unit" Usage="objectListCommandCollection.AddAt (index, command)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddAt(int index, System::Web::UI::MobileControls::ObjectListCommand ^ command);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -105,6 +114,9 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListCommandCollection.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="member this.Clear : unit -&gt; unit" Usage="objectListCommandCollection.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clear();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -135,6 +147,9 @@
       <MemberSignature Language="C#" Value="public int IndexOf (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance int32 IndexOf(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListCommandCollection.IndexOf(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function IndexOf (s As String) As Integer" />
+      <MemberSignature Language="F#" Value="member this.IndexOf : string -&gt; int" Usage="objectListCommandCollection.IndexOf s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int IndexOf(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -169,6 +184,9 @@
       <MemberSignature Language="C#" Value="protected bool IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListCommandCollection.IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected ReadOnly Property IsTrackingViewState As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsTrackingViewState : bool" Usage="System.Web.UI.MobileControls.ObjectListCommandCollection.IsTrackingViewState" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; property bool IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -188,6 +206,9 @@
       <MemberSignature Language="C#" Value="public System.Web.UI.MobileControls.ObjectListCommand this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Web.UI.MobileControls.ObjectListCommand Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListCommandCollection.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As ObjectListCommand" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Web.UI.MobileControls.ObjectListCommand" Usage="System.Web.UI.MobileControls.ObjectListCommandCollection.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Web::UI::MobileControls::ObjectListCommand ^ default[int] { System::Web::UI::MobileControls::ObjectListCommand ^ get(int index); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -211,6 +232,9 @@
       <MemberSignature Language="C#" Value="protected void LoadViewState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void LoadViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListCommandCollection.LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub LoadViewState (state As Object)" />
+      <MemberSignature Language="F#" Value="member this.LoadViewState : obj -&gt; unit" Usage="objectListCommandCollection.LoadViewState state" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void LoadViewState(System::Object ^ state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -232,6 +256,9 @@
       <MemberSignature Language="C#" Value="public void Remove (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Remove(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListCommandCollection.Remove(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Remove (s As String)" />
+      <MemberSignature Language="F#" Value="member this.Remove : string -&gt; unit" Usage="objectListCommandCollection.Remove s" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Remove(System::String ^ s);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -258,6 +285,9 @@
       <MemberSignature Language="C#" Value="public void RemoveAt (int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void RemoveAt(int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListCommandCollection.RemoveAt(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveAt (index As Integer)" />
+      <MemberSignature Language="F#" Value="member this.RemoveAt : int -&gt; unit" Usage="objectListCommandCollection.RemoveAt index" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveAt(int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -280,6 +310,9 @@
       <MemberSignature Language="C#" Value="protected object SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance object SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListCommandCollection.SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Function SaveViewState () As Object" />
+      <MemberSignature Language="F#" Value="member this.SaveViewState : unit -&gt; obj" Usage="objectListCommandCollection.SaveViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; System::Object ^ SaveViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -299,6 +332,9 @@
       <MemberSignature Language="C#" Value="bool System.Web.UI.IStateManager.IsTrackingViewState { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Web.UI.IStateManager.IsTrackingViewState" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.ObjectListCommandCollection.System#Web#UI#IStateManager#IsTrackingViewState" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsTrackingViewState As Boolean Implements IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="F#" Usage="System.Web.UI.MobileControls.ObjectListCommandCollection.System.Web.UI.IStateManager.IsTrackingViewState" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Web.UI.IStateManager.IsTrackingViewState { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -326,6 +362,8 @@
       <MemberSignature Language="C#" Value="void IStateManager.LoadViewState (object state);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.LoadViewState(object state) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListCommandCollection.System#Web#UI#IStateManager#LoadViewState(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub LoadViewState (state As Object) Implements IStateManager.LoadViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.LoadViewState(System::Object ^ state) = System::Web::UI::IStateManager::LoadViewState;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -355,6 +393,8 @@
       <MemberSignature Language="C#" Value="object IStateManager.SaveViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance object System.Web.UI.IStateManager.SaveViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListCommandCollection.System#Web#UI#IStateManager#SaveViewState" />
+      <MemberSignature Language="VB.NET" Value="Function SaveViewState () As Object Implements IStateManager.SaveViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.Web.UI.IStateManager.SaveViewState() = System::Web::UI::IStateManager::SaveViewState;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -382,6 +422,8 @@
       <MemberSignature Language="C#" Value="void IStateManager.TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Web.UI.IStateManager.TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListCommandCollection.System#Web#UI#IStateManager#TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Sub TrackViewState () Implements IStateManager.TrackViewState" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Web.UI.IStateManager.TrackViewState() = System::Web::UI::IStateManager::TrackViewState;" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -408,6 +450,9 @@
       <MemberSignature Language="C#" Value="protected void TrackViewState ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void TrackViewState() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.ObjectListCommandCollection.TrackViewState" />
+      <MemberSignature Language="VB.NET" Value="Protected Sub TrackViewState ()" />
+      <MemberSignature Language="F#" Value="member this.TrackViewState : unit -&gt; unit" Usage="objectListCommandCollection.TrackViewState " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; void TrackViewState();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

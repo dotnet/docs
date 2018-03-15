@@ -1,7 +1,10 @@
-<Type Name="RibbonContextMenuAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonContextMenuAutomationPeer">
+﻿<Type Name="RibbonContextMenuAutomationPeer" FullName="System.Windows.Automation.Peers.RibbonContextMenuAutomationPeer">
   <TypeSignature Language="C#" Value="public class RibbonContextMenuAutomationPeer : System.Windows.Automation.Peers.ItemsControlAutomationPeer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RibbonContextMenuAutomationPeer extends System.Windows.Automation.Peers.ItemsControlAutomationPeer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Automation.Peers.RibbonContextMenuAutomationPeer" />
+  <TypeSignature Language="VB.NET" Value="Public Class RibbonContextMenuAutomationPeer&#xA;Inherits ItemsControlAutomationPeer" />
+  <TypeSignature Language="F#" Value="type RibbonContextMenuAutomationPeer = class&#xA;    inherit ItemsControlAutomationPeer" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RibbonContextMenuAutomationPeer : System::Windows::Automation::Peers::ItemsControlAutomationPeer" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public RibbonContextMenuAutomationPeer (System.Windows.Controls.Ribbon.RibbonContextMenu owner);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Controls.Ribbon.RibbonContextMenu owner) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonContextMenuAutomationPeer.#ctor(System.Windows.Controls.Ribbon.RibbonContextMenu)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (owner As RibbonContextMenu)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Automation.Peers.RibbonContextMenuAutomationPeer : System.Windows.Controls.Ribbon.RibbonContextMenu -&gt; System.Windows.Automation.Peers.RibbonContextMenuAutomationPeer" Usage="new System.Windows.Automation.Peers.RibbonContextMenuAutomationPeer owner" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RibbonContextMenuAutomationPeer(System::Windows::Controls::Ribbon::RibbonContextMenu ^ owner);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -37,6 +43,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer (object item);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Automation.Peers.ItemAutomationPeer CreateItemAutomationPeer(object item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonContextMenuAutomationPeer.CreateItemAutomationPeer(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateItemAutomationPeer (item As Object) As ItemAutomationPeer" />
+      <MemberSignature Language="F#" Value="override this.CreateItemAutomationPeer : obj -&gt; System.Windows.Automation.Peers.ItemAutomationPeer" Usage="ribbonContextMenuAutomationPeer.CreateItemAutomationPeer item" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::ItemAutomationPeer ^ CreateItemAutomationPeer(System::Object ^ item);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -59,6 +68,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Automation.Peers.AutomationControlType GetAutomationControlTypeCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonContextMenuAutomationPeer.GetAutomationControlTypeCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetAutomationControlTypeCore () As AutomationControlType" />
+      <MemberSignature Language="F#" Value="override this.GetAutomationControlTypeCore : unit -&gt; System.Windows.Automation.Peers.AutomationControlType" Usage="ribbonContextMenuAutomationPeer.GetAutomationControlTypeCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Automation::Peers::AutomationControlType GetAutomationControlTypeCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -78,6 +90,9 @@
       <MemberSignature Language="C#" Value="protected override string GetClassNameCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance string GetClassNameCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonContextMenuAutomationPeer.GetClassNameCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function GetClassNameCore () As String" />
+      <MemberSignature Language="F#" Value="override this.GetClassNameCore : unit -&gt; string" Usage="ribbonContextMenuAutomationPeer.GetClassNameCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::String ^ GetClassNameCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>
@@ -97,6 +112,9 @@
       <MemberSignature Language="C#" Value="protected override bool IsContentElementCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance bool IsContentElementCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Automation.Peers.RibbonContextMenuAutomationPeer.IsContentElementCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function IsContentElementCore () As Boolean" />
+      <MemberSignature Language="F#" Value="override this.IsContentElementCore : unit -&gt; bool" Usage="ribbonContextMenuAutomationPeer.IsContentElementCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override bool IsContentElementCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Controls.Ribbon</AssemblyName>

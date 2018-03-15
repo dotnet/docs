@@ -1,7 +1,10 @@
-<Type Name="EntityStates" FullName="System.Data.Services.Client.EntityStates">
+﻿<Type Name="EntityStates" FullName="System.Data.Services.Client.EntityStates">
   <TypeSignature Language="C#" Value="public enum EntityStates" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed EntityStates extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.Client.EntityStates" />
+  <TypeSignature Language="VB.NET" Value="Public Enum EntityStates" />
+  <TypeSignature Language="F#" Value="type EntityStates = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class EntityStates" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services.Client</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -24,6 +27,9 @@
       <MemberSignature Language="C#" Value="Added" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.EntityStates Added = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.EntityStates.Added" />
+      <MemberSignature Language="VB.NET" Value="Added" />
+      <MemberSignature Language="F#" Value="Added = 4" Usage="System.Data.Services.Client.EntityStates.Added" />
+      <MemberSignature Language="C++ CLI" Value="Added" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Services.Client.EntityStates</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>The entity was added since the last call to <see cref="M:System.Data.Services.Client.DataServiceContext.SaveChanges" />.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="Deleted" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.EntityStates Deleted = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.EntityStates.Deleted" />
+      <MemberSignature Language="VB.NET" Value="Deleted" />
+      <MemberSignature Language="F#" Value="Deleted = 8" Usage="System.Data.Services.Client.EntityStates.Deleted" />
+      <MemberSignature Language="C++ CLI" Value="Deleted" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -50,6 +60,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Services.Client.EntityStates</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>The entity was deleted since the last call to <see cref="M:System.Data.Services.Client.DataServiceContext.SaveChanges" />.</summary>
       </Docs>
@@ -58,6 +69,9 @@
       <MemberSignature Language="C#" Value="Detached" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.EntityStates Detached = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.EntityStates.Detached" />
+      <MemberSignature Language="VB.NET" Value="Detached" />
+      <MemberSignature Language="F#" Value="Detached = 1" Usage="System.Data.Services.Client.EntityStates.Detached" />
+      <MemberSignature Language="C++ CLI" Value="Detached" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -67,6 +81,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Services.Client.EntityStates</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The entity was detached since the last call to <see cref="M:System.Data.Services.Client.DataServiceContext.SaveChanges" />.</summary>
       </Docs>
@@ -75,6 +90,9 @@
       <MemberSignature Language="C#" Value="Modified" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.EntityStates Modified = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.EntityStates.Modified" />
+      <MemberSignature Language="VB.NET" Value="Modified" />
+      <MemberSignature Language="F#" Value="Modified = 16" Usage="System.Data.Services.Client.EntityStates.Modified" />
+      <MemberSignature Language="C++ CLI" Value="Modified" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -84,6 +102,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Services.Client.EntityStates</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>The entity was modified since the last call to <see cref="M:System.Data.Services.Client.DataServiceContext.SaveChanges" />.</summary>
       </Docs>
@@ -92,6 +111,9 @@
       <MemberSignature Language="C#" Value="Unchanged" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.Client.EntityStates Unchanged = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.Client.EntityStates.Unchanged" />
+      <MemberSignature Language="VB.NET" Value="Unchanged" />
+      <MemberSignature Language="F#" Value="Unchanged = 2" Usage="System.Data.Services.Client.EntityStates.Unchanged" />
+      <MemberSignature Language="C++ CLI" Value="Unchanged" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services.Client</AssemblyName>
@@ -101,6 +123,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Services.Client.EntityStates</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The entity is unchanged since the last call to <see cref="M:System.Data.Services.Client.DataServiceContext.SaveChanges" />.</summary>
       </Docs>

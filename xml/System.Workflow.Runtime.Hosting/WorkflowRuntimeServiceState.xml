@@ -1,7 +1,10 @@
-<Type Name="WorkflowRuntimeServiceState" FullName="System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState">
+﻿<Type Name="WorkflowRuntimeServiceState" FullName="System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState">
   <TypeSignature Language="C#" Value="public enum WorkflowRuntimeServiceState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WorkflowRuntimeServiceState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState" />
+  <TypeSignature Language="VB.NET" Value="Public Enum WorkflowRuntimeServiceState" />
+  <TypeSignature Language="F#" Value="type WorkflowRuntimeServiceState = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class WorkflowRuntimeServiceState" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Runtime</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="Started" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState Started = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Started" />
+      <MemberSignature Language="VB.NET" Value="Started" />
+      <MemberSignature Language="F#" Value="Started = 2" Usage="System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Started" />
+      <MemberSignature Language="C++ CLI" Value="Started" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -40,6 +46,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Workflow.Runtime.Hosting.WorkflowRuntimeService" /> has started.</summary>
       </Docs>
@@ -48,6 +55,9 @@
       <MemberSignature Language="C#" Value="Starting" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState Starting = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Starting" />
+      <MemberSignature Language="VB.NET" Value="Starting" />
+      <MemberSignature Language="F#" Value="Starting = 1" Usage="System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Starting" />
+      <MemberSignature Language="C++ CLI" Value="Starting" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -56,6 +66,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Workflow.Runtime.Hosting.WorkflowRuntimeService" /> is starting. <see cref="M:System.Workflow.Runtime.Hosting.WorkflowRuntimeService.Start" /> changes the state of the <see cref="T:System.Workflow.Runtime.Hosting.WorkflowRuntimeService" /> to <see cref="F:System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Starting" />.</summary>
       </Docs>
@@ -64,6 +75,9 @@
       <MemberSignature Language="C#" Value="Stopped" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState Stopped = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Stopped" />
+      <MemberSignature Language="VB.NET" Value="Stopped" />
+      <MemberSignature Language="F#" Value="Stopped = 0" Usage="System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Stopped" />
+      <MemberSignature Language="C++ CLI" Value="Stopped" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -72,6 +86,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Workflow.Runtime.Hosting.WorkflowRuntimeService" /> has stopped.</summary>
       </Docs>
@@ -80,6 +95,9 @@
       <MemberSignature Language="C#" Value="Stopping" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState Stopping = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Stopping" />
+      <MemberSignature Language="VB.NET" Value="Stopping" />
+      <MemberSignature Language="F#" Value="Stopping = 3" Usage="System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Stopping" />
+      <MemberSignature Language="C++ CLI" Value="Stopping" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Runtime</AssemblyName>
@@ -88,6 +106,7 @@
       <ReturnValue>
         <ReturnType>System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Indicates that the <see cref="T:System.Workflow.Runtime.Hosting.WorkflowRuntimeService" /> is stopping. <see cref="M:System.Workflow.Runtime.Hosting.WorkflowRuntimeService.Stop" /> changes the state of the <see cref="T:System.Workflow.Runtime.Hosting.WorkflowRuntimeService" /> to <see cref="F:System.Workflow.Runtime.Hosting.WorkflowRuntimeServiceState.Stopping" />.</summary>
       </Docs>

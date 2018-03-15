@@ -5499,6 +5499,11 @@
     </Type>
     <Type Name="System.ServiceModel.ClientBase`1/BeginOperationDelegate" Id="T:System.ServiceModel.ClientBase`1.BeginOperationDelegate" />
     <Type Name="System.ServiceModel.ClientBase`1/ChannelBase`1" Id="T:System.ServiceModel.ClientBase`1.ChannelBase`1">
+      <Member Id="E:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#Closed" />
+      <Member Id="E:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#Closing" />
+      <Member Id="E:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#Faulted" />
+      <Member Id="E:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#Opened" />
+      <Member Id="E:System.ServiceModel.ClientBase`1.ChannelBase`1.System#ServiceModel#ICommunicationObject#Opening" />
       <Member Id="E:System.ServiceModel.ClientBase`1.ChannelBase`1.UnknownMessageReceived" />
       <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.#ctor(System.ServiceModel.ClientBase{`1})" />
       <Member Id="M:System.ServiceModel.ClientBase`1.ChannelBase`1.BeginDisplayInitializationUI(System.AsyncCallback,System.Object)" />
@@ -6807,6 +6812,7 @@
     <Type Name="System.Collections.ObjectModel.ObservableCollection`1" Id="T:System.Collections.ObjectModel.ObservableCollection`1">
       <Member Id="E:System.Collections.ObjectModel.ObservableCollection`1.CollectionChanged" />
       <Member Id="E:System.Collections.ObjectModel.ObservableCollection`1.PropertyChanged" />
+      <Member Id="E:System.Collections.ObjectModel.ObservableCollection`1.System#ComponentModel#INotifyPropertyChanged#PropertyChanged" />
       <Member Id="M:System.Collections.ObjectModel.ObservableCollection`1.#ctor" />
       <Member Id="M:System.Collections.ObjectModel.ObservableCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})" />
       <Member Id="M:System.Collections.ObjectModel.ObservableCollection`1.#ctor(System.Collections.Generic.List{`0})" />
@@ -6893,6 +6899,8 @@
     <Type Name="System.Collections.ObjectModel.ReadOnlyObservableCollection`1" Id="T:System.Collections.ObjectModel.ReadOnlyObservableCollection`1">
       <Member Id="E:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.CollectionChanged" />
       <Member Id="E:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.PropertyChanged" />
+      <Member Id="E:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.System#Collections#Specialized#INotifyCollectionChanged#CollectionChanged" />
+      <Member Id="E:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.System#ComponentModel#INotifyPropertyChanged#PropertyChanged" />
       <Member Id="M:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.#ctor(System.Collections.ObjectModel.ObservableCollection{`0})" />
       <Member Id="M:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.OnCollectionChanged(System.Collections.Specialized.NotifyCollectionChangedEventArgs)" />
       <Member Id="M:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)" />
@@ -15421,6 +15429,7 @@
       <Member Id="M:System.Dynamic.DynamicObject.TryUnaryOperation(System.Dynamic.UnaryOperationBinder,System.Object@)" />
     </Type>
     <Type Name="System.Dynamic.ExpandoObject" Id="T:System.Dynamic.ExpandoObject">
+      <Member Id="E:System.Dynamic.ExpandoObject.System#ComponentModel#INotifyPropertyChanged#PropertyChanged" />
       <Member Id="M:System.Dynamic.ExpandoObject.#ctor" />
       <Member Id="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;string,object&gt;&gt;#Add(System.Collections.Generic.KeyValuePair{System.String,System.Object})" />
       <Member Id="M:System.Dynamic.ExpandoObject.System#Collections#Generic#ICollection&lt;System#Collections#Generic#KeyValuePair&lt;string,object&gt;&gt;#Clear" />
@@ -34260,6 +34269,11 @@
       <Member Id="M:System.ServiceModel.ChannelFactory`1.CreateDescription" />
     </Type>
     <Type Name="System.ServiceModel.ClientBase`1" Id="T:System.ServiceModel.ClientBase`1">
+      <Member Id="E:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Closed" />
+      <Member Id="E:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Closing" />
+      <Member Id="E:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Faulted" />
+      <Member Id="E:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Opened" />
+      <Member Id="E:System.ServiceModel.ClientBase`1.System#ServiceModel#ICommunicationObject#Opening" />
       <Member Id="M:System.ServiceModel.ClientBase`1.#ctor" />
       <Member Id="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)" />
       <Member Id="M:System.ServiceModel.ClientBase`1.#ctor(System.ServiceModel.Description.ServiceEndpoint)" />
@@ -38497,8 +38511,6 @@
       <Member Id="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption)" />
       <Member Id="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.TimeSpan)" />
       <Member Id="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.TimeSpan,System.Transactions.TransactionScopeAsyncFlowOption)" />
-      <Member Id="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions)" />
-      <Member Id="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions,System.Transactions.EnterpriseServicesInteropOption)" />
       <Member Id="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionOptions,System.Transactions.TransactionScopeAsyncFlowOption)" />
       <Member Id="M:System.Transactions.TransactionScope.#ctor(System.Transactions.TransactionScopeOption,System.Transactions.TransactionScopeAsyncFlowOption)" />
       <Member Id="M:System.Transactions.TransactionScope.Complete" />

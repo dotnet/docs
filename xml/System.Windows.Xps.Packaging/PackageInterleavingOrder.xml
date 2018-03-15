@@ -1,7 +1,10 @@
-<Type Name="PackageInterleavingOrder" FullName="System.Windows.Xps.Packaging.PackageInterleavingOrder">
+﻿<Type Name="PackageInterleavingOrder" FullName="System.Windows.Xps.Packaging.PackageInterleavingOrder">
   <TypeSignature Language="C#" Value="public enum PackageInterleavingOrder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PackageInterleavingOrder extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Xps.Packaging.PackageInterleavingOrder" />
+  <TypeSignature Language="VB.NET" Value="Public Enum PackageInterleavingOrder" />
+  <TypeSignature Language="F#" Value="type PackageInterleavingOrder = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class PackageInterleavingOrder" />
   <AssemblyInfo>
     <AssemblyName>ReachFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -25,6 +28,9 @@
       <MemberSignature Language="C#" Value="ImagesLast" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.PackageInterleavingOrder ImagesLast = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.PackageInterleavingOrder.ImagesLast" />
+      <MemberSignature Language="VB.NET" Value="ImagesLast" />
+      <MemberSignature Language="F#" Value="ImagesLast = 3" Usage="System.Windows.Xps.Packaging.PackageInterleavingOrder.ImagesLast" />
+      <MemberSignature Language="C++ CLI" Value="ImagesLast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -33,6 +39,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.PackageInterleavingOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>The streaming order is: resource (other than images), page, document, document sequence, and images.</summary>
       </Docs>
@@ -41,6 +48,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.PackageInterleavingOrder None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.PackageInterleavingOrder.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.Xps.Packaging.PackageInterleavingOrder.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -49,6 +59,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.PackageInterleavingOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The streaming order is specified by the packaging system.</summary>
       </Docs>
@@ -57,6 +68,9 @@
       <MemberSignature Language="C#" Value="ResourceFirst" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.PackageInterleavingOrder ResourceFirst = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.PackageInterleavingOrder.ResourceFirst" />
+      <MemberSignature Language="VB.NET" Value="ResourceFirst" />
+      <MemberSignature Language="F#" Value="ResourceFirst = 1" Usage="System.Windows.Xps.Packaging.PackageInterleavingOrder.ResourceFirst" />
+      <MemberSignature Language="C++ CLI" Value="ResourceFirst" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -65,6 +79,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.PackageInterleavingOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The streaming order is: resource, page, document, and document sequence.</summary>
       </Docs>
@@ -73,6 +88,9 @@
       <MemberSignature Language="C#" Value="ResourceLast" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.Xps.Packaging.PackageInterleavingOrder ResourceLast = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.Xps.Packaging.PackageInterleavingOrder.ResourceLast" />
+      <MemberSignature Language="VB.NET" Value="ResourceLast" />
+      <MemberSignature Language="F#" Value="ResourceLast = 2" Usage="System.Windows.Xps.Packaging.PackageInterleavingOrder.ResourceLast" />
+      <MemberSignature Language="C++ CLI" Value="ResourceLast" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>ReachFramework</AssemblyName>
@@ -81,6 +99,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.Xps.Packaging.PackageInterleavingOrder</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The streaming order is: document sequence, document, page, and resource.</summary>
       </Docs>

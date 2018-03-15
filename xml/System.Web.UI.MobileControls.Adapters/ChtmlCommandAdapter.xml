@@ -1,7 +1,10 @@
-<Type Name="ChtmlCommandAdapter" FullName="System.Web.UI.MobileControls.Adapters.ChtmlCommandAdapter">
+﻿<Type Name="ChtmlCommandAdapter" FullName="System.Web.UI.MobileControls.Adapters.ChtmlCommandAdapter">
   <TypeSignature Language="C#" Value="public class ChtmlCommandAdapter : System.Web.UI.MobileControls.Adapters.HtmlCommandAdapter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ChtmlCommandAdapter extends System.Web.UI.MobileControls.Adapters.HtmlCommandAdapter" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.MobileControls.Adapters.ChtmlCommandAdapter" />
+  <TypeSignature Language="VB.NET" Value="Public Class ChtmlCommandAdapter&#xA;Inherits HtmlCommandAdapter" />
+  <TypeSignature Language="F#" Value="type ChtmlCommandAdapter = class&#xA;    inherit HtmlCommandAdapter" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ChtmlCommandAdapter : System::Web::UI::MobileControls::Adapters::HtmlCommandAdapter" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Mobile</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -32,6 +35,8 @@
       <MemberSignature Language="C#" Value="public ChtmlCommandAdapter ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlCommandAdapter.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; ChtmlCommandAdapter();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -47,6 +52,9 @@
       <MemberSignature Language="C#" Value="protected override void AddAttributes (System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void AddAttributes(class System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter writer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.UI.MobileControls.Adapters.ChtmlCommandAdapter.AddAttributes(System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub AddAttributes (writer As HtmlMobileTextWriter)" />
+      <MemberSignature Language="F#" Value="override this.AddAttributes : System.Web.UI.MobileControls.Adapters.HtmlMobileTextWriter -&gt; unit" Usage="chtmlCommandAdapter.AddAttributes writer" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void AddAttributes(System::Web::UI::MobileControls::Adapters::HtmlMobileTextWriter ^ writer);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>
@@ -69,6 +77,9 @@
       <MemberSignature Language="C#" Value="public override bool RequiresFormTag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool RequiresFormTag" />
       <MemberSignature Language="DocId" Value="P:System.Web.UI.MobileControls.Adapters.ChtmlCommandAdapter.RequiresFormTag" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property RequiresFormTag As Boolean" />
+      <MemberSignature Language="F#" Value="member this.RequiresFormTag : bool" Usage="System.Web.UI.MobileControls.Adapters.ChtmlCommandAdapter.RequiresFormTag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool RequiresFormTag { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Mobile</AssemblyName>

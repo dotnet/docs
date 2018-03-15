@@ -1,7 +1,10 @@
-<Type Name="LocalizationCategory" FullName="System.Windows.LocalizationCategory">
+﻿<Type Name="LocalizationCategory" FullName="System.Windows.LocalizationCategory">
   <TypeSignature Language="C#" Value="public enum LocalizationCategory" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LocalizationCategory extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.LocalizationCategory" />
+  <TypeSignature Language="VB.NET" Value="Public Enum LocalizationCategory" />
+  <TypeSignature Language="F#" Value="type LocalizationCategory = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class LocalizationCategory" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -35,6 +38,9 @@
       <MemberSignature Language="C#" Value="Button" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory Button = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Button" />
+      <MemberSignature Language="VB.NET" Value="Button" />
+      <MemberSignature Language="F#" Value="Button = 4" Usage="System.Windows.LocalizationCategory.Button" />
+      <MemberSignature Language="C++ CLI" Value="Button" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -43,6 +49,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Windows.Controls.Button" /> or related control.</summary>
       </Docs>
@@ -51,6 +58,9 @@
       <MemberSignature Language="C#" Value="CheckBox" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory CheckBox = int32(5)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.CheckBox" />
+      <MemberSignature Language="VB.NET" Value="CheckBox" />
+      <MemberSignature Language="F#" Value="CheckBox = 5" Usage="System.Windows.LocalizationCategory.CheckBox" />
+      <MemberSignature Language="C++ CLI" Value="CheckBox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -59,6 +69,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>5</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Windows.Controls.CheckBox" /> or related control.</summary>
       </Docs>
@@ -67,6 +78,9 @@
       <MemberSignature Language="C#" Value="ComboBox" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory ComboBox = int32(6)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.ComboBox" />
+      <MemberSignature Language="VB.NET" Value="ComboBox" />
+      <MemberSignature Language="F#" Value="ComboBox = 6" Usage="System.Windows.LocalizationCategory.ComboBox" />
+      <MemberSignature Language="C++ CLI" Value="ComboBox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -75,6 +89,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>6</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Windows.Controls.ComboBox" /> or related control such as <see cref="T:System.Windows.Controls.ComboBoxItem" />.</summary>
       </Docs>
@@ -83,6 +98,9 @@
       <MemberSignature Language="C#" Value="Font" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory Font = int32(14)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Font" />
+      <MemberSignature Language="VB.NET" Value="Font" />
+      <MemberSignature Language="F#" Value="Font = 14" Usage="System.Windows.LocalizationCategory.Font" />
+      <MemberSignature Language="C++ CLI" Value="Font" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -91,6 +109,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>14</MemberValue>
       <Docs>
         <summary>Font-related data such as font name, style, or size.</summary>
       </Docs>
@@ -99,6 +118,9 @@
       <MemberSignature Language="C#" Value="Hyperlink" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory Hyperlink = int32(11)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Hyperlink" />
+      <MemberSignature Language="VB.NET" Value="Hyperlink" />
+      <MemberSignature Language="F#" Value="Hyperlink = 11" Usage="System.Windows.LocalizationCategory.Hyperlink" />
+      <MemberSignature Language="C++ CLI" Value="Hyperlink" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -107,6 +129,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>11</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Windows.Documents.Hyperlink" /> or related control.</summary>
       </Docs>
@@ -115,6 +138,9 @@
       <MemberSignature Language="C#" Value="Ignore" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory Ignore = int32(16)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Ignore" />
+      <MemberSignature Language="VB.NET" Value="Ignore" />
+      <MemberSignature Language="F#" Value="Ignore = 16" Usage="System.Windows.LocalizationCategory.Ignore" />
+      <MemberSignature Language="C++ CLI" Value="Ignore" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -123,6 +149,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>16</MemberValue>
       <Docs>
         <summary>Do not localize this resource. This does not apply to any child nodes that might exist.</summary>
       </Docs>
@@ -131,6 +158,9 @@
       <MemberSignature Language="C#" Value="Inherit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory Inherit = int32(15)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Inherit" />
+      <MemberSignature Language="VB.NET" Value="Inherit" />
+      <MemberSignature Language="F#" Value="Inherit = 15" Usage="System.Windows.LocalizationCategory.Inherit" />
+      <MemberSignature Language="C++ CLI" Value="Inherit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -139,6 +169,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>15</MemberValue>
       <Docs>
         <summary>Inherits its category from a parent node.</summary>
       </Docs>
@@ -147,6 +178,9 @@
       <MemberSignature Language="C#" Value="Label" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory Label = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Label" />
+      <MemberSignature Language="VB.NET" Value="Label" />
+      <MemberSignature Language="F#" Value="Label = 3" Usage="System.Windows.LocalizationCategory.Label" />
+      <MemberSignature Language="C++ CLI" Value="Label" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -155,6 +189,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Windows.Controls.Label" /> or related control.</summary>
       </Docs>
@@ -163,6 +198,9 @@
       <MemberSignature Language="C#" Value="ListBox" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory ListBox = int32(7)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.ListBox" />
+      <MemberSignature Language="VB.NET" Value="ListBox" />
+      <MemberSignature Language="F#" Value="ListBox = 7" Usage="System.Windows.LocalizationCategory.ListBox" />
+      <MemberSignature Language="C++ CLI" Value="ListBox" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -171,6 +209,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>7</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Windows.Controls.ListBox" /> or related control such as <see cref="T:System.Windows.Controls.ListBoxItem" />.</summary>
       </Docs>
@@ -179,6 +218,9 @@
       <MemberSignature Language="C#" Value="Menu" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory Menu = int32(8)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Menu" />
+      <MemberSignature Language="VB.NET" Value="Menu" />
+      <MemberSignature Language="F#" Value="Menu = 8" Usage="System.Windows.LocalizationCategory.Menu" />
+      <MemberSignature Language="C++ CLI" Value="Menu" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -187,6 +229,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>8</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Windows.Controls.Menu" /> or related control such as <see cref="T:System.Windows.Controls.MenuItem" />.</summary>
       </Docs>
@@ -195,6 +238,9 @@
       <MemberSignature Language="C#" Value="NeverLocalize" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory NeverLocalize = int32(17)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.NeverLocalize" />
+      <MemberSignature Language="VB.NET" Value="NeverLocalize" />
+      <MemberSignature Language="F#" Value="NeverLocalize = 17" Usage="System.Windows.LocalizationCategory.NeverLocalize" />
+      <MemberSignature Language="C++ CLI" Value="NeverLocalize" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -203,6 +249,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>17</MemberValue>
       <Docs>
         <summary>Do not localize this resource, or any child nodes whose category is set to **Inherit**.</summary>
       </Docs>
@@ -211,6 +258,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Windows.LocalizationCategory.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -219,6 +269,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Resource does not belong to a standard category.</summary>
       </Docs>
@@ -227,6 +278,9 @@
       <MemberSignature Language="C#" Value="RadioButton" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory RadioButton = int32(9)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.RadioButton" />
+      <MemberSignature Language="VB.NET" Value="RadioButton" />
+      <MemberSignature Language="F#" Value="RadioButton = 9" Usage="System.Windows.LocalizationCategory.RadioButton" />
+      <MemberSignature Language="C++ CLI" Value="RadioButton" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -235,6 +289,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>9</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Windows.Controls.RadioButton" /> or related control.</summary>
       </Docs>
@@ -243,6 +298,9 @@
       <MemberSignature Language="C#" Value="Text" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory Text = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Text" />
+      <MemberSignature Language="VB.NET" Value="Text" />
+      <MemberSignature Language="F#" Value="Text = 1" Usage="System.Windows.LocalizationCategory.Text" />
+      <MemberSignature Language="C++ CLI" Value="Text" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -251,6 +309,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>For a lengthy piece of text.</summary>
       </Docs>
@@ -259,6 +318,9 @@
       <MemberSignature Language="C#" Value="TextFlow" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory TextFlow = int32(12)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.TextFlow" />
+      <MemberSignature Language="VB.NET" Value="TextFlow" />
+      <MemberSignature Language="F#" Value="TextFlow = 12" Usage="System.Windows.LocalizationCategory.TextFlow" />
+      <MemberSignature Language="C++ CLI" Value="TextFlow" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -267,6 +329,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>12</MemberValue>
       <Docs>
         <summary>For panels that can contain text.</summary>
       </Docs>
@@ -275,6 +338,9 @@
       <MemberSignature Language="C#" Value="Title" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory Title = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.Title" />
+      <MemberSignature Language="VB.NET" Value="Title" />
+      <MemberSignature Language="F#" Value="Title = 2" Usage="System.Windows.LocalizationCategory.Title" />
+      <MemberSignature Language="C++ CLI" Value="Title" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -283,6 +349,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>For a single line of text, such as text used for a title.</summary>
       </Docs>
@@ -291,6 +358,9 @@
       <MemberSignature Language="C#" Value="ToolTip" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory ToolTip = int32(10)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.ToolTip" />
+      <MemberSignature Language="VB.NET" Value="ToolTip" />
+      <MemberSignature Language="F#" Value="ToolTip = 10" Usage="System.Windows.LocalizationCategory.ToolTip" />
+      <MemberSignature Language="C++ CLI" Value="ToolTip" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -299,6 +369,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>10</MemberValue>
       <Docs>
         <summary>A <see cref="T:System.Windows.Controls.ToolTip" /> or related control.</summary>
       </Docs>
@@ -307,6 +378,9 @@
       <MemberSignature Language="C#" Value="XmlData" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Windows.LocalizationCategory XmlData = int32(13)" />
       <MemberSignature Language="DocId" Value="F:System.Windows.LocalizationCategory.XmlData" />
+      <MemberSignature Language="VB.NET" Value="XmlData" />
+      <MemberSignature Language="F#" Value="XmlData = 13" Usage="System.Windows.LocalizationCategory.XmlData" />
+      <MemberSignature Language="C++ CLI" Value="XmlData" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -315,6 +389,7 @@
       <ReturnValue>
         <ReturnType>System.Windows.LocalizationCategory</ReturnType>
       </ReturnValue>
+      <MemberValue>13</MemberValue>
       <Docs>
         <summary>[!INCLUDE[TLA#tla_xml](~/includes/tlasharptla-xml-md.md)] data.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="WebServiceFaultActivity" FullName="System.Workflow.Activities.WebServiceFaultActivity">
+﻿<Type Name="WebServiceFaultActivity" FullName="System.Workflow.Activities.WebServiceFaultActivity">
   <TypeSignature Language="C#" Value="public sealed class WebServiceFaultActivity : System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WebServiceFaultActivity extends System.Workflow.ComponentModel.Activity" />
   <TypeSignature Language="DocId" Value="T:System.Workflow.Activities.WebServiceFaultActivity" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WebServiceFaultActivity&#xA;Inherits Activity" />
+  <TypeSignature Language="F#" Value="type WebServiceFaultActivity = class&#xA;    inherit Activity&#xA;    interface IPropertyValueProvider" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WebServiceFaultActivity sealed : System::Workflow::ComponentModel::Activity" />
   <AssemblyInfo>
     <AssemblyName>System.Workflow.Activities</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -41,10 +44,21 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WebServiceFaultActivity" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public WebServiceFaultActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebServiceFaultActivity.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebServiceFaultActivity();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -60,6 +74,9 @@
       <MemberSignature Language="C#" Value="public WebServiceFaultActivity (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebServiceFaultActivity.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new System.Workflow.Activities.WebServiceFaultActivity : string -&gt; System.Workflow.Activities.WebServiceFaultActivity" Usage="new System.Workflow.Activities.WebServiceFaultActivity name" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; WebServiceFaultActivity(System::String ^ name);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -78,6 +95,9 @@
       <MemberSignature Language="C#" Value="protected override System.Workflow.ComponentModel.ActivityExecutionStatus Execute (System.Workflow.ComponentModel.ActivityExecutionContext executionContext);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Workflow.ComponentModel.ActivityExecutionStatus Execute(class System.Workflow.ComponentModel.ActivityExecutionContext executionContext) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebServiceFaultActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function Execute (executionContext As ActivityExecutionContext) As ActivityExecutionStatus" />
+      <MemberSignature Language="F#" Value="override this.Execute : System.Workflow.ComponentModel.ActivityExecutionContext -&gt; System.Workflow.ComponentModel.ActivityExecutionStatus" Usage="webServiceFaultActivity.Execute executionContext" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Workflow::ComponentModel::ActivityExecutionStatus Execute(System::Workflow::ComponentModel::ActivityExecutionContext ^ executionContext);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -100,6 +120,9 @@
       <MemberSignature Language="C#" Value="public Exception Fault { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Exception Fault" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WebServiceFaultActivity.Fault" />
+      <MemberSignature Language="VB.NET" Value="Public Property Fault As Exception" />
+      <MemberSignature Language="F#" Value="member this.Fault : Exception with get, set" Usage="System.Workflow.Activities.WebServiceFaultActivity.Fault" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Exception ^ Fault { Exception ^ get(); void set(Exception ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -113,7 +136,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Visible)</AttributeName>
+          <AttributeName>System.ComponentModel.DesignerSerializationVisibility</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
@@ -132,6 +155,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty FaultProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty FaultProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.WebServiceFaultActivity.FaultProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly FaultProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable FaultProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.WebServiceFaultActivity.FaultProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ FaultProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -156,6 +182,9 @@
       <MemberSignature Language="C#" Value="protected override void Initialize (IServiceProvider provider);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Initialize(class System.IServiceProvider provider) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Workflow.Activities.WebServiceFaultActivity.Initialize(System.IServiceProvider)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub Initialize (provider As IServiceProvider)" />
+      <MemberSignature Language="F#" Value="override this.Initialize : IServiceProvider -&gt; unit" Usage="webServiceFaultActivity.Initialize provider" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void Initialize(IServiceProvider ^ provider);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -177,6 +206,9 @@
       <MemberSignature Language="C#" Value="public string InputActivityName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string InputActivityName" />
       <MemberSignature Language="DocId" Value="P:System.Workflow.Activities.WebServiceFaultActivity.InputActivityName" />
+      <MemberSignature Language="VB.NET" Value="Public Property InputActivityName As String" />
+      <MemberSignature Language="F#" Value="member this.InputActivityName : string with get, set" Usage="System.Workflow.Activities.WebServiceFaultActivity.InputActivityName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ InputActivityName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -190,7 +222,7 @@
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
+          <AttributeName>System.ComponentModel.RefreshProperties</AttributeName>
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.Workflow.Activities.Common.PropertyValueProviderTypeConverter))</AttributeName>
@@ -209,6 +241,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty InputActivityNameProperty;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty InputActivityNameProperty" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.WebServiceFaultActivity.InputActivityNameProperty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly InputActivityNameProperty As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable InputActivityNameProperty : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.WebServiceFaultActivity.InputActivityNameProperty" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ InputActivityNameProperty;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -233,6 +268,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler SendingFault;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SendingFault" />
       <MemberSignature Language="DocId" Value="E:System.Workflow.Activities.WebServiceFaultActivity.SendingFault" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SendingFault As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SendingFault : EventHandler " Usage="member this.SendingFault : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SendingFault;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -255,6 +293,9 @@
       <MemberSignature Language="C#" Value="public static readonly System.Workflow.ComponentModel.DependencyProperty SendingFaultEvent;" />
       <MemberSignature Language="ILAsm" Value=".field public static initonly class System.Workflow.ComponentModel.DependencyProperty SendingFaultEvent" />
       <MemberSignature Language="DocId" Value="F:System.Workflow.Activities.WebServiceFaultActivity.SendingFaultEvent" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly SendingFaultEvent As DependencyProperty " />
+      <MemberSignature Language="F#" Value=" staticval mutable SendingFaultEvent : System.Workflow.ComponentModel.DependencyProperty" Usage="System.Workflow.Activities.WebServiceFaultActivity.SendingFaultEvent" />
+      <MemberSignature Language="C++ CLI" Value="public: static initonly System::Workflow::ComponentModel::DependencyProperty ^ SendingFaultEvent;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Workflow.Activities</AssemblyName>
@@ -275,14 +316,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.WebServiceFaultActivity" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

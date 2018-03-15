@@ -1,7 +1,10 @@
-<Type Name="HashAlgorithmType" FullName="System.Security.Authentication.HashAlgorithmType">
+﻿<Type Name="HashAlgorithmType" FullName="System.Security.Authentication.HashAlgorithmType">
   <TypeSignature Language="C#" Value="public enum HashAlgorithmType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HashAlgorithmType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Security.Authentication.HashAlgorithmType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum HashAlgorithmType" />
+  <TypeSignature Language="F#" Value="type HashAlgorithmType = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class HashAlgorithmType" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
@@ -44,6 +47,9 @@
       <MemberSignature Language="C#" Value="Md5" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.HashAlgorithmType Md5 = int32(32771)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.HashAlgorithmType.Md5" />
+      <MemberSignature Language="VB.NET" Value="Md5" />
+      <MemberSignature Language="F#" Value="Md5 = 32771" Usage="System.Security.Authentication.HashAlgorithmType.Md5" />
+      <MemberSignature Language="C++ CLI" Value="Md5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -62,6 +68,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
+      <MemberValue>32771</MemberValue>
       <Docs>
         <summary>The Message Digest 5 (MD5) hashing algorithm.</summary>
       </Docs>
@@ -70,6 +77,9 @@
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.HashAlgorithmType None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.HashAlgorithmType.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Security.Authentication.HashAlgorithmType.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -88,6 +98,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No hashing algorithm is used.</summary>
       </Docs>
@@ -96,6 +107,9 @@
       <MemberSignature Language="C#" Value="Sha1" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.HashAlgorithmType Sha1 = int32(32772)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.HashAlgorithmType.Sha1" />
+      <MemberSignature Language="VB.NET" Value="Sha1" />
+      <MemberSignature Language="F#" Value="Sha1 = 32772" Usage="System.Security.Authentication.HashAlgorithmType.Sha1" />
+      <MemberSignature Language="C++ CLI" Value="Sha1" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
@@ -114,6 +128,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
+      <MemberValue>32772</MemberValue>
       <Docs>
         <summary>The Secure Hashing Algorithm (SHA1).</summary>
       </Docs>
@@ -122,6 +137,9 @@
       <MemberSignature Language="C#" Value="Sha256" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.HashAlgorithmType Sha256 = int32(32780)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.HashAlgorithmType.Sha256" />
+      <MemberSignature Language="VB.NET" Value="Sha256" />
+      <MemberSignature Language="F#" Value="Sha256 = 32780" Usage="System.Security.Authentication.HashAlgorithmType.Sha256" />
+      <MemberSignature Language="C++ CLI" Value="Sha256" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -134,6 +152,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
+      <MemberValue>32780</MemberValue>
       <Docs>
         <summary>The Secure Hashing Algorithm 2 (SHA-2), using a 256-bit digest.</summary>
       </Docs>
@@ -142,6 +161,9 @@
       <MemberSignature Language="C#" Value="Sha384" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.HashAlgorithmType Sha384 = int32(32781)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.HashAlgorithmType.Sha384" />
+      <MemberSignature Language="VB.NET" Value="Sha384" />
+      <MemberSignature Language="F#" Value="Sha384 = 32781" Usage="System.Security.Authentication.HashAlgorithmType.Sha384" />
+      <MemberSignature Language="C++ CLI" Value="Sha384" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -154,6 +176,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
+      <MemberValue>32781</MemberValue>
       <Docs>
         <summary>The Secure Hashing Algorithm 2 (SHA-2), using a 384-bit digest.</summary>
       </Docs>
@@ -162,6 +185,9 @@
       <MemberSignature Language="C#" Value="Sha512" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Security.Authentication.HashAlgorithmType Sha512 = int32(32782)" />
       <MemberSignature Language="DocId" Value="F:System.Security.Authentication.HashAlgorithmType.Sha512" />
+      <MemberSignature Language="VB.NET" Value="Sha512" />
+      <MemberSignature Language="F#" Value="Sha512 = 32782" Usage="System.Security.Authentication.HashAlgorithmType.Sha512" />
+      <MemberSignature Language="C++ CLI" Value="Sha512" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -174,6 +200,7 @@
       <ReturnValue>
         <ReturnType>System.Security.Authentication.HashAlgorithmType</ReturnType>
       </ReturnValue>
+      <MemberValue>32782</MemberValue>
       <Docs>
         <summary>The Secure Hashing Algorithm 2 (SHA-2), using a 512-bit digest.</summary>
       </Docs>

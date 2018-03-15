@@ -1,7 +1,10 @@
-<Type Name="IISVirtualRoot" FullName="System.EnterpriseServices.Internal.IISVirtualRoot">
+﻿<Type Name="IISVirtualRoot" FullName="System.EnterpriseServices.Internal.IISVirtualRoot">
   <TypeSignature Language="C#" Value="public class IISVirtualRoot : System.EnterpriseServices.Internal.IComSoapIISVRoot" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit IISVirtualRoot extends System.Object implements class System.EnterpriseServices.Internal.IComSoapIISVRoot" />
   <TypeSignature Language="DocId" Value="T:System.EnterpriseServices.Internal.IISVirtualRoot" />
+  <TypeSignature Language="VB.NET" Value="Public Class IISVirtualRoot&#xA;Implements IComSoapIISVRoot" />
+  <TypeSignature Language="F#" Value="type IISVirtualRoot = class&#xA;    interface IComSoapIISVRoot" />
+  <TypeSignature Language="C++ CLI" Value="public ref class IISVirtualRoot : System::EnterpriseServices::Internal::IComSoapIISVRoot" />
   <AssemblyInfo>
     <AssemblyName>System.EnterpriseServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -42,6 +45,8 @@
       <MemberSignature Language="C#" Value="public IISVirtualRoot ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IISVirtualRoot.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; IISVirtualRoot();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
@@ -58,7 +63,13 @@
       <MemberSignature Language="C#" Value="public void Create (string RootWeb, string inPhysicalDirectory, string VirtualDirectory, out string Error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Create(string RootWeb, string inPhysicalDirectory, string VirtualDirectory, [out] string&amp; Error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IISVirtualRoot.Create(System.String,System.String,System.String,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Create (RootWeb As String, inPhysicalDirectory As String, VirtualDirectory As String, ByRef Error As String)" />
+      <MemberSignature Language="F#" Value="abstract member Create : string * string * string *  -&gt; unit&#xA;override this.Create : string * string * string *  -&gt; unit" Usage="iISVirtualRoot.Create (RootWeb, inPhysicalDirectory, VirtualDirectory, Error)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Create(System::String ^ RootWeb, System::String ^ inPhysicalDirectory, System::String ^ VirtualDirectory, [Runtime::InteropServices::Out] System::String ^ % Error);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapIISVRoot.Create(System.String,System.String,System.String,System.String@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -93,7 +104,13 @@
       <MemberSignature Language="C#" Value="public void Delete (string RootWeb, string PhysicalDirectory, string VirtualDirectory, out string Error);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete(string RootWeb, string PhysicalDirectory, string VirtualDirectory, [out] string&amp; Error) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.EnterpriseServices.Internal.IISVirtualRoot.Delete(System.String,System.String,System.String,System.String@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete (RootWeb As String, PhysicalDirectory As String, VirtualDirectory As String, ByRef Error As String)" />
+      <MemberSignature Language="F#" Value="abstract member Delete : string * string * string *  -&gt; unit&#xA;override this.Delete : string * string * string *  -&gt; unit" Usage="iISVirtualRoot.Delete (RootWeb, PhysicalDirectory, VirtualDirectory, Error)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Delete(System::String ^ RootWeb, System::String ^ PhysicalDirectory, System::String ^ VirtualDirectory, [Runtime::InteropServices::Out] System::String ^ % Error);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.EnterpriseServices.Internal.IComSoapIISVRoot.Delete(System.String,System.String,System.String,System.String@)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.EnterpriseServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>

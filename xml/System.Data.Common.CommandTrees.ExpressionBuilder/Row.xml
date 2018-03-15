@@ -1,7 +1,10 @@
-<Type Name="Row" FullName="System.Data.Common.CommandTrees.ExpressionBuilder.Row">
+﻿<Type Name="Row" FullName="System.Data.Common.CommandTrees.ExpressionBuilder.Row">
   <TypeSignature Language="C#" Value="public sealed class Row" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Row extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Data.Common.CommandTrees.ExpressionBuilder.Row" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class Row" />
+  <TypeSignature Language="F#" Value="type Row = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class Row sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Entity</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="public Row (System.Collections.Generic.KeyValuePair&lt;string,System.Data.Common.CommandTrees.DbExpression&gt; columnValue, params System.Collections.Generic.KeyValuePair&lt;string,System.Data.Common.CommandTrees.DbExpression&gt;[] columnValues);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Data.Common.CommandTrees.DbExpression&gt; columnValue, valuetype System.Collections.Generic.KeyValuePair`2&lt;string, class System.Data.Common.CommandTrees.DbExpression&gt;[] columnValues) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.Row.#ctor(System.Collections.Generic.KeyValuePair{System.String,System.Data.Common.CommandTrees.DbExpression},System.Collections.Generic.KeyValuePair{System.String,System.Data.Common.CommandTrees.DbExpression}[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (columnValue As KeyValuePair(Of String, DbExpression), ParamArray columnValues As KeyValuePair(Of String, DbExpression)())" />
+      <MemberSignature Language="F#" Value="new System.Data.Common.CommandTrees.ExpressionBuilder.Row : System.Collections.Generic.KeyValuePair&lt;string, System.Data.Common.CommandTrees.DbExpression&gt; * System.Collections.Generic.KeyValuePair&lt;string, System.Data.Common.CommandTrees.DbExpression&gt;[] -&gt; System.Data.Common.CommandTrees.ExpressionBuilder.Row" Usage="new System.Data.Common.CommandTrees.ExpressionBuilder.Row (columnValue, columnValues)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Row(System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Data::Common::CommandTrees::DbExpression ^&gt; columnValue, ... cli::array &lt;System::Collections::Generic::KeyValuePair&lt;System::String ^, System::Data::Common::CommandTrees::DbExpression ^&gt;&gt; ^ columnValues);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -45,6 +51,8 @@
       <MemberSignature Language="C#" Value="public static implicit operator System.Data.Common.CommandTrees.DbExpression (System.Data.Common.CommandTrees.ExpressionBuilder.Row row);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig specialname class System.Data.Common.CommandTrees.DbExpression op_Implicit(class System.Data.Common.CommandTrees.ExpressionBuilder.Row row) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.Row.op_Implicit(System.Data.Common.CommandTrees.ExpressionBuilder.Row)~System.Data.Common.CommandTrees.DbExpression" />
+      <MemberSignature Language="F#" Value="static member op_Implicit : System.Data.Common.CommandTrees.ExpressionBuilder.Row -&gt; System.Data.Common.CommandTrees.DbExpression" Usage="System.Data.Common.CommandTrees.ExpressionBuilder.Row.op_Implicit row" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static operator System::Data::Common::CommandTrees::DbExpression ^(System::Data::Common::CommandTrees::ExpressionBuilder::Row ^ row);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>
@@ -67,6 +75,9 @@
       <MemberSignature Language="C#" Value="public System.Data.Common.CommandTrees.DbNewInstanceExpression ToExpression ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Data.Common.CommandTrees.DbNewInstanceExpression ToExpression() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Data.Common.CommandTrees.ExpressionBuilder.Row.ToExpression" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToExpression () As DbNewInstanceExpression" />
+      <MemberSignature Language="F#" Value="member this.ToExpression : unit -&gt; System.Data.Common.CommandTrees.DbNewInstanceExpression" Usage="row.ToExpression " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Data::Common::CommandTrees::DbNewInstanceExpression ^ ToExpression();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Entity</AssemblyName>

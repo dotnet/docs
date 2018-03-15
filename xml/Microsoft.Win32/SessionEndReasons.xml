@@ -1,7 +1,10 @@
-<Type Name="SessionEndReasons" FullName="Microsoft.Win32.SessionEndReasons">
+﻿<Type Name="SessionEndReasons" FullName="Microsoft.Win32.SessionEndReasons">
   <TypeSignature Language="C#" Value="public enum SessionEndReasons" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SessionEndReasons extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.SessionEndReasons" />
+  <TypeSignature Language="VB.NET" Value="Public Enum SessionEndReasons" />
+  <TypeSignature Language="F#" Value="type SessionEndReasons = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class SessionEndReasons" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -19,6 +22,9 @@
       <MemberSignature Language="C#" Value="Logoff" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.SessionEndReasons Logoff = int32(1)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.SessionEndReasons.Logoff" />
+      <MemberSignature Language="VB.NET" Value="Logoff" />
+      <MemberSignature Language="F#" Value="Logoff = 1" Usage="Microsoft.Win32.SessionEndReasons.Logoff" />
+      <MemberSignature Language="C++ CLI" Value="Logoff" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -27,6 +33,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.SessionEndReasons</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The user is logging off and ending the current user session. The operating system continues to run.</summary>
       </Docs>
@@ -35,6 +42,9 @@
       <MemberSignature Language="C#" Value="SystemShutdown" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Win32.SessionEndReasons SystemShutdown = int32(2)" />
       <MemberSignature Language="DocId" Value="F:Microsoft.Win32.SessionEndReasons.SystemShutdown" />
+      <MemberSignature Language="VB.NET" Value="SystemShutdown" />
+      <MemberSignature Language="F#" Value="SystemShutdown = 2" Usage="Microsoft.Win32.SessionEndReasons.SystemShutdown" />
+      <MemberSignature Language="C++ CLI" Value="SystemShutdown" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -43,6 +53,7 @@
       <ReturnValue>
         <ReturnType>Microsoft.Win32.SessionEndReasons</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The operating system is shutting down.</summary>
       </Docs>

@@ -1,7 +1,10 @@
-<Type Name="ListViewCancelMode" FullName="System.Web.UI.WebControls.ListViewCancelMode">
+﻿<Type Name="ListViewCancelMode" FullName="System.Web.UI.WebControls.ListViewCancelMode">
   <TypeSignature Language="C#" Value="public enum ListViewCancelMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListViewCancelMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Web.UI.WebControls.ListViewCancelMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ListViewCancelMode" />
+  <TypeSignature Language="F#" Value="type ListViewCancelMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ListViewCancelMode" />
   <AssemblyInfo>
     <AssemblyName>System.Web.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -37,6 +40,9 @@
       <MemberSignature Language="C#" Value="CancelingEdit" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ListViewCancelMode CancelingEdit = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListViewCancelMode.CancelingEdit" />
+      <MemberSignature Language="VB.NET" Value="CancelingEdit" />
+      <MemberSignature Language="F#" Value="CancelingEdit = 0" Usage="System.Web.UI.WebControls.ListViewCancelMode.CancelingEdit" />
+      <MemberSignature Language="C++ CLI" Value="CancelingEdit" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -45,6 +51,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListViewCancelMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The user canceled an edit operation.</summary>
       </Docs>
@@ -53,6 +60,9 @@
       <MemberSignature Language="C#" Value="CancelingInsert" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Web.UI.WebControls.ListViewCancelMode CancelingInsert = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Web.UI.WebControls.ListViewCancelMode.CancelingInsert" />
+      <MemberSignature Language="VB.NET" Value="CancelingInsert" />
+      <MemberSignature Language="F#" Value="CancelingInsert = 1" Usage="System.Web.UI.WebControls.ListViewCancelMode.CancelingInsert" />
+      <MemberSignature Language="C++ CLI" Value="CancelingInsert" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web.Extensions</AssemblyName>
@@ -61,6 +71,7 @@
       <ReturnValue>
         <ReturnType>System.Web.UI.WebControls.ListViewCancelMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The user canceled an insert operation.</summary>
       </Docs>

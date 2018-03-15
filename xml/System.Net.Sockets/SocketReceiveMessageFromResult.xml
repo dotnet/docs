@@ -1,7 +1,10 @@
-<Type Name="SocketReceiveMessageFromResult" FullName="System.Net.Sockets.SocketReceiveMessageFromResult">
+﻿<Type Name="SocketReceiveMessageFromResult" FullName="System.Net.Sockets.SocketReceiveMessageFromResult">
   <TypeSignature Language="C#" Value="public struct SocketReceiveMessageFromResult" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit SocketReceiveMessageFromResult extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Net.Sockets.SocketReceiveMessageFromResult" />
+  <TypeSignature Language="VB.NET" Value="Public Structure SocketReceiveMessageFromResult" />
+  <TypeSignature Language="F#" Value="type SocketReceiveMessageFromResult = struct" />
+  <TypeSignature Language="C++ CLI" Value="public value class SocketReceiveMessageFromResult" />
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -29,6 +32,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.IPPacketInformation PacketInformation;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Net.Sockets.IPPacketInformation PacketInformation" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketReceiveMessageFromResult.PacketInformation" />
+      <MemberSignature Language="VB.NET" Value="Public PacketInformation As IPPacketInformation " />
+      <MemberSignature Language="F#" Value="val mutable PacketInformation : System.Net.Sockets.IPPacketInformation" Usage="System.Net.Sockets.SocketReceiveMessageFromResult.PacketInformation" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Net::Sockets::IPPacketInformation PacketInformation;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -56,6 +62,9 @@
       <MemberSignature Language="C#" Value="public int ReceivedBytes;" />
       <MemberSignature Language="ILAsm" Value=".field public int32 ReceivedBytes" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketReceiveMessageFromResult.ReceivedBytes" />
+      <MemberSignature Language="VB.NET" Value="Public ReceivedBytes As Integer " />
+      <MemberSignature Language="F#" Value="val mutable ReceivedBytes : int" Usage="System.Net.Sockets.SocketReceiveMessageFromResult.ReceivedBytes" />
+      <MemberSignature Language="C++ CLI" Value="public: int ReceivedBytes;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -83,6 +92,9 @@
       <MemberSignature Language="C#" Value="public System.Net.EndPoint RemoteEndPoint;" />
       <MemberSignature Language="ILAsm" Value=".field public class System.Net.EndPoint RemoteEndPoint" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketReceiveMessageFromResult.RemoteEndPoint" />
+      <MemberSignature Language="VB.NET" Value="Public RemoteEndPoint As EndPoint " />
+      <MemberSignature Language="F#" Value="val mutable RemoteEndPoint : System.Net.EndPoint" Usage="System.Net.Sockets.SocketReceiveMessageFromResult.RemoteEndPoint" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Net::EndPoint ^ RemoteEndPoint;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
@@ -110,6 +122,9 @@
       <MemberSignature Language="C#" Value="public System.Net.Sockets.SocketFlags SocketFlags;" />
       <MemberSignature Language="ILAsm" Value=".field public valuetype System.Net.Sockets.SocketFlags SocketFlags" />
       <MemberSignature Language="DocId" Value="F:System.Net.Sockets.SocketReceiveMessageFromResult.SocketFlags" />
+      <MemberSignature Language="VB.NET" Value="Public SocketFlags As SocketFlags " />
+      <MemberSignature Language="F#" Value="val mutable SocketFlags : System.Net.Sockets.SocketFlags" Usage="System.Net.Sockets.SocketReceiveMessageFromResult.SocketFlags" />
+      <MemberSignature Language="C++ CLI" Value="public: System::Net::Sockets::SocketFlags SocketFlags;" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>

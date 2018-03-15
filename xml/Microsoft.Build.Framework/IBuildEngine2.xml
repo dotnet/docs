@@ -1,7 +1,10 @@
-<Type Name="IBuildEngine2" FullName="Microsoft.Build.Framework.IBuildEngine2">
+﻿<Type Name="IBuildEngine2" FullName="Microsoft.Build.Framework.IBuildEngine2">
   <TypeSignature Language="C#" Value="public interface IBuildEngine2 : Microsoft.Build.Framework.IBuildEngine" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IBuildEngine2 implements class Microsoft.Build.Framework.IBuildEngine" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Build.Framework.IBuildEngine2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IBuildEngine2&#xA;Implements IBuildEngine" />
+  <TypeSignature Language="F#" Value="type IBuildEngine2 = interface&#xA;    interface IBuildEngine" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IBuildEngine2 : Microsoft::Build::Framework::IBuildEngine" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.Build.Framework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="public bool BuildProjectFile (string projectFileName, string[] targetNames, System.Collections.IDictionary globalProperties, System.Collections.IDictionary targetOutputs, string toolsVersion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool BuildProjectFile(string projectFileName, string[] targetNames, class System.Collections.IDictionary globalProperties, class System.Collections.IDictionary targetOutputs, string toolsVersion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine2.BuildProjectFile(System.String,System.String[],System.Collections.IDictionary,System.Collections.IDictionary,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BuildProjectFile (projectFileName As String, targetNames As String(), globalProperties As IDictionary, targetOutputs As IDictionary, toolsVersion As String) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member BuildProjectFile : string * string[] * System.Collections.IDictionary * System.Collections.IDictionary * string -&gt; bool" Usage="iBuildEngine2.BuildProjectFile (projectFileName, targetNames, globalProperties, targetOutputs, toolsVersion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool BuildProjectFile(System::String ^ projectFileName, cli::array &lt;System::String ^&gt; ^ targetNames, System::Collections::IDictionary ^ globalProperties, System::Collections::IDictionary ^ targetOutputs, System::String ^ toolsVersion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -67,6 +73,9 @@
       <MemberSignature Language="C#" Value="public bool BuildProjectFilesInParallel (string[] projectFileNames, string[] targetNames, System.Collections.IDictionary[] globalProperties, System.Collections.IDictionary[] targetOutputsPerProject, string[] toolsVersion, bool useResultsCache, bool unloadProjectsOnCompletion);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool BuildProjectFilesInParallel(string[] projectFileNames, string[] targetNames, class System.Collections.IDictionary[] globalProperties, class System.Collections.IDictionary[] targetOutputsPerProject, string[] toolsVersion, bool useResultsCache, bool unloadProjectsOnCompletion) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.Build.Framework.IBuildEngine2.BuildProjectFilesInParallel(System.String[],System.String[],System.Collections.IDictionary[],System.Collections.IDictionary[],System.String[],System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function BuildProjectFilesInParallel (projectFileNames As String(), targetNames As String(), globalProperties As IDictionary(), targetOutputsPerProject As IDictionary(), toolsVersion As String(), useResultsCache As Boolean, unloadProjectsOnCompletion As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member BuildProjectFilesInParallel : string[] * string[] * System.Collections.IDictionary[] * System.Collections.IDictionary[] * string[] * bool * bool -&gt; bool" Usage="iBuildEngine2.BuildProjectFilesInParallel (projectFileNames, targetNames, globalProperties, targetOutputsPerProject, toolsVersion, useResultsCache, unloadProjectsOnCompletion)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool BuildProjectFilesInParallel(cli::array &lt;System::String ^&gt; ^ projectFileNames, cli::array &lt;System::String ^&gt; ^ targetNames, cli::array &lt;System::Collections::IDictionary ^&gt; ^ globalProperties, cli::array &lt;System::Collections::IDictionary ^&gt; ^ targetOutputsPerProject, cli::array &lt;System::String ^&gt; ^ toolsVersion, bool useResultsCache, bool unloadProjectsOnCompletion);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>
@@ -109,6 +118,9 @@
       <MemberSignature Language="C#" Value="public bool IsRunningMultipleNodes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsRunningMultipleNodes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.Build.Framework.IBuildEngine2.IsRunningMultipleNodes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsRunningMultipleNodes As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsRunningMultipleNodes : bool" Usage="Microsoft.Build.Framework.IBuildEngine2.IsRunningMultipleNodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsRunningMultipleNodes { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.Build.Framework</AssemblyName>

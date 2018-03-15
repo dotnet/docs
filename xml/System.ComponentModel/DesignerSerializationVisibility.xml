@@ -1,7 +1,10 @@
-<Type Name="DesignerSerializationVisibility" FullName="System.ComponentModel.DesignerSerializationVisibility">
+﻿<Type Name="DesignerSerializationVisibility" FullName="System.ComponentModel.DesignerSerializationVisibility">
   <TypeSignature Language="C#" Value="public enum DesignerSerializationVisibility" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DesignerSerializationVisibility extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.DesignerSerializationVisibility" />
+  <TypeSignature Language="VB.NET" Value="Public Enum DesignerSerializationVisibility" />
+  <TypeSignature Language="F#" Value="type DesignerSerializationVisibility = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class DesignerSerializationVisibility" />
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -46,6 +49,9 @@
       <MemberSignature Language="C#" Value="Content" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DesignerSerializationVisibility Content = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerSerializationVisibility.Content" />
+      <MemberSignature Language="VB.NET" Value="Content" />
+      <MemberSignature Language="F#" Value="Content = 2" Usage="System.ComponentModel.DesignerSerializationVisibility.Content" />
+      <MemberSignature Language="C++ CLI" Value="Content" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -64,6 +70,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DesignerSerializationVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>The code generator produces code for the contents of the object, rather than for the object itself.</summary>
       </Docs>
@@ -72,6 +79,9 @@
       <MemberSignature Language="C#" Value="Hidden" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DesignerSerializationVisibility Hidden = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerSerializationVisibility.Hidden" />
+      <MemberSignature Language="VB.NET" Value="Hidden" />
+      <MemberSignature Language="F#" Value="Hidden = 0" Usage="System.ComponentModel.DesignerSerializationVisibility.Hidden" />
+      <MemberSignature Language="C++ CLI" Value="Hidden" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -90,6 +100,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DesignerSerializationVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>The code generator does not produce code for the object.</summary>
       </Docs>
@@ -98,6 +109,9 @@
       <MemberSignature Language="C#" Value="Visible" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.ComponentModel.DesignerSerializationVisibility Visible = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.ComponentModel.DesignerSerializationVisibility.Visible" />
+      <MemberSignature Language="VB.NET" Value="Visible" />
+      <MemberSignature Language="F#" Value="Visible = 1" Usage="System.ComponentModel.DesignerSerializationVisibility.Visible" />
+      <MemberSignature Language="C++ CLI" Value="Visible" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
@@ -116,6 +130,7 @@
       <ReturnValue>
         <ReturnType>System.ComponentModel.DesignerSerializationVisibility</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>The code generator produces code for the object.</summary>
       </Docs>

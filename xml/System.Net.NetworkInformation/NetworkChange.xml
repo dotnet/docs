@@ -1,7 +1,10 @@
-<Type Name="NetworkChange" FullName="System.Net.NetworkInformation.NetworkChange">
+﻿<Type Name="NetworkChange" FullName="System.Net.NetworkInformation.NetworkChange">
   <TypeSignature Language="C#" Value="public sealed class NetworkChange" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit NetworkChange extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.NetworkChange" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NetworkChange" />
+  <TypeSignature Language="F#" Value="type NetworkChange = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class NetworkChange sealed" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
@@ -47,6 +50,8 @@
       <MemberSignature Language="C#" Value="public NetworkChange ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkChange.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; NetworkChange();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -67,6 +72,9 @@
       <MemberSignature Language="C#" Value="public static event System.Net.NetworkInformation.NetworkAddressChangedEventHandler NetworkAddressChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Net.NetworkInformation.NetworkAddressChangedEventHandler NetworkAddressChanged" />
       <MemberSignature Language="DocId" Value="E:System.Net.NetworkInformation.NetworkChange.NetworkAddressChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event NetworkAddressChanged As NetworkAddressChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NetworkAddressChanged : System.Net.NetworkInformation.NetworkAddressChangedEventHandler " Usage="member this.NetworkAddressChanged : System.Net.NetworkInformation.NetworkAddressChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event System::Net::NetworkInformation::NetworkAddressChangedEventHandler ^ NetworkAddressChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Net.NetworkInformation</AssemblyName>
@@ -114,6 +122,9 @@
       <MemberSignature Language="C#" Value="public static event System.Net.NetworkInformation.NetworkAvailabilityChangedEventHandler NetworkAvailabilityChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.Net.NetworkInformation.NetworkAvailabilityChangedEventHandler NetworkAvailabilityChanged" />
       <MemberSignature Language="DocId" Value="E:System.Net.NetworkInformation.NetworkChange.NetworkAvailabilityChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Custom Event NetworkAvailabilityChanged As NetworkAvailabilityChangedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.NetworkAvailabilityChanged : System.Net.NetworkInformation.NetworkAvailabilityChangedEventHandler " Usage="member this.NetworkAvailabilityChanged : System.Net.NetworkInformation.NetworkAvailabilityChangedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static event System::Net::NetworkInformation::NetworkAvailabilityChangedEventHandler ^ NetworkAvailabilityChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -151,6 +162,9 @@
       <MemberSignature Language="C#" Value="public static void RegisterNetworkChange (System.Net.NetworkInformation.NetworkChange nc);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void RegisterNetworkChange(class System.Net.NetworkInformation.NetworkChange nc) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Net.NetworkInformation.NetworkChange.RegisterNetworkChange(System.Net.NetworkInformation.NetworkChange)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub RegisterNetworkChange (nc As NetworkChange)" />
+      <MemberSignature Language="F#" Value="static member RegisterNetworkChange : System.Net.NetworkInformation.NetworkChange -&gt; unit" Usage="System.Net.NetworkInformation.NetworkChange.RegisterNetworkChange nc" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static void RegisterNetworkChange(System::Net::NetworkInformation::NetworkChange ^ nc);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

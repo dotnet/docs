@@ -1,7 +1,10 @@
-<Type Name="UserPreferenceChangingEventHandler" FullName="Microsoft.Win32.UserPreferenceChangingEventHandler">
+﻿<Type Name="UserPreferenceChangingEventHandler" FullName="Microsoft.Win32.UserPreferenceChangingEventHandler">
   <TypeSignature Language="C#" Value="public delegate void UserPreferenceChangingEventHandler(object sender, UserPreferenceChangingEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UserPreferenceChangingEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:Microsoft.Win32.UserPreferenceChangingEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub UserPreferenceChangingEventHandler(sender As Object, e As UserPreferenceChangingEventArgs)" />
+  <TypeSignature Language="F#" Value="type UserPreferenceChangingEventHandler = delegate of obj * UserPreferenceChangingEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void UserPreferenceChangingEventHandler(System::Object ^ sender, UserPreferenceChangingEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

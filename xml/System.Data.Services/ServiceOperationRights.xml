@@ -1,7 +1,10 @@
-<Type Name="ServiceOperationRights" FullName="System.Data.Services.ServiceOperationRights">
+﻿<Type Name="ServiceOperationRights" FullName="System.Data.Services.ServiceOperationRights">
   <TypeSignature Language="C#" Value="public enum ServiceOperationRights" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ServiceOperationRights extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Services.ServiceOperationRights" />
+  <TypeSignature Language="VB.NET" Value="Public Enum ServiceOperationRights" />
+  <TypeSignature Language="F#" Value="type ServiceOperationRights = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class ServiceOperationRights" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Services</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -48,6 +51,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="All" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.ServiceOperationRights All = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.ServiceOperationRights.All" />
+      <MemberSignature Language="VB.NET" Value="All" />
+      <MemberSignature Language="F#" Value="All = 3" Usage="System.Data.Services.ServiceOperationRights.All" />
+      <MemberSignature Language="C++ CLI" Value="All" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -56,6 +62,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>All rights assigned to the service operation..</summary>
       </Docs>
@@ -64,6 +71,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="AllRead" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.ServiceOperationRights AllRead = int32(3)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.ServiceOperationRights.AllRead" />
+      <MemberSignature Language="VB.NET" Value="AllRead" />
+      <MemberSignature Language="F#" Value="AllRead = 3" Usage="System.Data.Services.ServiceOperationRights.AllRead" />
+      <MemberSignature Language="C++ CLI" Value="AllRead" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -72,6 +82,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
+      <MemberValue>3</MemberValue>
       <Docs>
         <summary>Authorization to read single or multiple data items deployed by the service operation.</summary>
       </Docs>
@@ -80,6 +91,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="None" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.ServiceOperationRights None = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.ServiceOperationRights.None" />
+      <MemberSignature Language="VB.NET" Value="None" />
+      <MemberSignature Language="F#" Value="None = 0" Usage="System.Data.Services.ServiceOperationRights.None" />
+      <MemberSignature Language="C++ CLI" Value="None" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -88,6 +102,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>No authorization to access the service operation.</summary>
       </Docs>
@@ -96,6 +111,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="OverrideEntitySetRights" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.ServiceOperationRights OverrideEntitySetRights = int32(4)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.ServiceOperationRights.OverrideEntitySetRights" />
+      <MemberSignature Language="VB.NET" Value="OverrideEntitySetRights" />
+      <MemberSignature Language="F#" Value="OverrideEntitySetRights = 4" Usage="System.Data.Services.ServiceOperationRights.OverrideEntitySetRights" />
+      <MemberSignature Language="C++ CLI" Value="OverrideEntitySetRights" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -104,6 +122,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
+      <MemberValue>4</MemberValue>
       <Docs>
         <summary>Overrides entity set rights that are explicitly defined in the data service with the service operation rights.</summary>
       </Docs>
@@ -112,6 +131,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="ReadMultiple" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.ServiceOperationRights ReadMultiple = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.ServiceOperationRights.ReadMultiple" />
+      <MemberSignature Language="VB.NET" Value="ReadMultiple" />
+      <MemberSignature Language="F#" Value="ReadMultiple = 2" Usage="System.Data.Services.ServiceOperationRights.ReadMultiple" />
+      <MemberSignature Language="C++ CLI" Value="ReadMultiple" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -120,6 +142,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Authorization to read multiple data items by using the service operation.</summary>
       </Docs>
@@ -128,6 +151,9 @@ namespace AccountingServiceWebApp
       <MemberSignature Language="C#" Value="ReadSingle" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Services.ServiceOperationRights ReadSingle = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Services.ServiceOperationRights.ReadSingle" />
+      <MemberSignature Language="VB.NET" Value="ReadSingle" />
+      <MemberSignature Language="F#" Value="ReadSingle = 1" Usage="System.Data.Services.ServiceOperationRights.ReadSingle" />
+      <MemberSignature Language="C++ CLI" Value="ReadSingle" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Services</AssemblyName>
@@ -136,6 +162,7 @@ namespace AccountingServiceWebApp
       <ReturnValue>
         <ReturnType>System.Data.Services.ServiceOperationRights</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Authorization to read a single data item by using the service operation.</summary>
       </Docs>

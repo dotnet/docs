@@ -1,7 +1,10 @@
-<Type Name="TreeViewCancelEventHandler" FullName="System.Windows.Forms.TreeViewCancelEventHandler">
+﻿<Type Name="TreeViewCancelEventHandler" FullName="System.Windows.Forms.TreeViewCancelEventHandler">
   <TypeSignature Language="C#" Value="public delegate void TreeViewCancelEventHandler(object sender, TreeViewCancelEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TreeViewCancelEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewCancelEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub TreeViewCancelEventHandler(sender As Object, e As TreeViewCancelEventArgs)" />
+  <TypeSignature Language="F#" Value="type TreeViewCancelEventHandler = delegate of obj * TreeViewCancelEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void TreeViewCancelEventHandler(System::Object ^ sender, TreeViewCancelEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

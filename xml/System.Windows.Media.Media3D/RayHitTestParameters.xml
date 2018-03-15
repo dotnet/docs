@@ -1,7 +1,10 @@
-<Type Name="RayHitTestParameters" FullName="System.Windows.Media.Media3D.RayHitTestParameters">
+﻿<Type Name="RayHitTestParameters" FullName="System.Windows.Media.Media3D.RayHitTestParameters">
   <TypeSignature Language="C#" Value="public sealed class RayHitTestParameters : System.Windows.Media.Media3D.HitTestParameters3D" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RayHitTestParameters extends System.Windows.Media.Media3D.HitTestParameters3D" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Media3D.RayHitTestParameters" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class RayHitTestParameters&#xA;Inherits HitTestParameters3D" />
+  <TypeSignature Language="F#" Value="type RayHitTestParameters = class&#xA;    inherit HitTestParameters3D" />
+  <TypeSignature Language="C++ CLI" Value="public ref class RayHitTestParameters sealed : System::Windows::Media::Media3D::HitTestParameters3D" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -27,6 +30,9 @@
       <MemberSignature Language="C#" Value="public RayHitTestParameters (System.Windows.Media.Media3D.Point3D origin, System.Windows.Media.Media3D.Vector3D direction);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Media3D.Point3D origin, valuetype System.Windows.Media.Media3D.Vector3D direction) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Media3D.RayHitTestParameters.#ctor(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (origin As Point3D, direction As Vector3D)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Media3D.RayHitTestParameters : System.Windows.Media.Media3D.Point3D * System.Windows.Media.Media3D.Vector3D -&gt; System.Windows.Media.Media3D.RayHitTestParameters" Usage="new System.Windows.Media.Media3D.RayHitTestParameters (origin, direction)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; RayHitTestParameters(System::Windows::Media::Media3D::Point3D origin, System::Windows::Media::Media3D::Vector3D direction);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -55,6 +61,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Vector3D Direction { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Media3D.Vector3D Direction" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayHitTestParameters.Direction" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Direction As Vector3D" />
+      <MemberSignature Language="F#" Value="member this.Direction : System.Windows.Media.Media3D.Vector3D" Usage="System.Windows.Media.Media3D.RayHitTestParameters.Direction" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Vector3D Direction { System::Windows::Media::Media3D::Vector3D get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -87,6 +96,9 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.Media3D.Point3D Origin { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype System.Windows.Media.Media3D.Point3D Origin" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.Media3D.RayHitTestParameters.Origin" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Origin As Point3D" />
+      <MemberSignature Language="F#" Value="member this.Origin : System.Windows.Media.Media3D.Point3D" Usage="System.Windows.Media.Media3D.RayHitTestParameters.Origin" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::Media3D::Point3D Origin { System::Windows::Media::Media3D::Point3D get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>

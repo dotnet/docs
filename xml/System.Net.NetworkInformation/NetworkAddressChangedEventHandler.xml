@@ -1,7 +1,10 @@
-<Type Name="NetworkAddressChangedEventHandler" FullName="System.Net.NetworkInformation.NetworkAddressChangedEventHandler">
+﻿<Type Name="NetworkAddressChangedEventHandler" FullName="System.Net.NetworkInformation.NetworkAddressChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void NetworkAddressChangedEventHandler(object sender, EventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NetworkAddressChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Net.NetworkInformation.NetworkAddressChangedEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub NetworkAddressChangedEventHandler(sender As Object, e As EventArgs)" />
+  <TypeSignature Language="F#" Value="type NetworkAddressChangedEventHandler = delegate of obj * EventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void NetworkAddressChangedEventHandler(System::Object ^ sender, EventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Net.NetworkInformation</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>

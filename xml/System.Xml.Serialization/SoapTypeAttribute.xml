@@ -1,7 +1,10 @@
-<Type Name="SoapTypeAttribute" FullName="System.Xml.Serialization.SoapTypeAttribute">
+﻿<Type Name="SoapTypeAttribute" FullName="System.Xml.Serialization.SoapTypeAttribute">
   <TypeSignature Language="C#" Value="public class SoapTypeAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SoapTypeAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Xml.Serialization.SoapTypeAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class SoapTypeAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type SoapTypeAttribute = class&#xA;    inherit Attribute" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoapTypeAttribute : Attribute" />
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
@@ -21,7 +24,7 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Struct | System.AttributeTargets.Enum | System.AttributeTargets.Interface)</AttributeName>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Class | System.AttributeTargets.Enum | System.AttributeTargets.Interface | System.AttributeTargets.Struct)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -53,10 +56,22 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapTypeAttribute" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SoapTypeAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapTypeAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapTypeAttribute();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -97,6 +112,9 @@
       <MemberSignature Language="C#" Value="public SoapTypeAttribute (string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapTypeAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.SoapTypeAttribute : string -&gt; System.Xml.Serialization.SoapTypeAttribute" Usage="new System.Xml.Serialization.SoapTypeAttribute typeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapTypeAttribute(System::String ^ typeName);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -140,6 +158,9 @@
       <MemberSignature Language="C#" Value="public SoapTypeAttribute (string typeName, string ns);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typeName, string ns) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Xml.Serialization.SoapTypeAttribute.#ctor(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (typeName As String, ns As String)" />
+      <MemberSignature Language="F#" Value="new System.Xml.Serialization.SoapTypeAttribute : string * string -&gt; System.Xml.Serialization.SoapTypeAttribute" Usage="new System.Xml.Serialization.SoapTypeAttribute (typeName, ns)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoapTypeAttribute(System::String ^ typeName, System::String ^ ns);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -187,6 +208,9 @@
       <MemberSignature Language="C#" Value="public bool IncludeInSchema { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IncludeInSchema" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapTypeAttribute.IncludeInSchema" />
+      <MemberSignature Language="VB.NET" Value="Public Property IncludeInSchema As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IncludeInSchema : bool with get, set" Usage="System.Xml.Serialization.SoapTypeAttribute.IncludeInSchema" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IncludeInSchema { bool get(); void set(bool value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -231,6 +255,9 @@
       <MemberSignature Language="C#" Value="public string Namespace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Namespace" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapTypeAttribute.Namespace" />
+      <MemberSignature Language="VB.NET" Value="Public Property Namespace As String" />
+      <MemberSignature Language="F#" Value="member this.Namespace : string with get, set" Usage="System.Xml.Serialization.SoapTypeAttribute.Namespace" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Namespace { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -274,6 +301,9 @@
       <MemberSignature Language="C#" Value="public string TypeName { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TypeName" />
       <MemberSignature Language="DocId" Value="P:System.Xml.Serialization.SoapTypeAttribute.TypeName" />
+      <MemberSignature Language="VB.NET" Value="Public Property TypeName As String" />
+      <MemberSignature Language="F#" Value="member this.TypeName : string with get, set" Usage="System.Xml.Serialization.SoapTypeAttribute.TypeName" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TypeName { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -313,15 +343,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.Serialization.SoapTypeAttribute" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

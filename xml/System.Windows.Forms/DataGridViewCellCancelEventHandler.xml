@@ -1,7 +1,10 @@
-<Type Name="DataGridViewCellCancelEventHandler" FullName="System.Windows.Forms.DataGridViewCellCancelEventHandler">
+﻿<Type Name="DataGridViewCellCancelEventHandler" FullName="System.Windows.Forms.DataGridViewCellCancelEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DataGridViewCellCancelEventHandler(object sender, DataGridViewCellCancelEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewCellCancelEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellCancelEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub DataGridViewCellCancelEventHandler(sender As Object, e As DataGridViewCellCancelEventArgs)" />
+  <TypeSignature Language="F#" Value="type DataGridViewCellCancelEventHandler = delegate of obj * DataGridViewCellCancelEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void DataGridViewCellCancelEventHandler(System::Object ^ sender, DataGridViewCellCancelEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

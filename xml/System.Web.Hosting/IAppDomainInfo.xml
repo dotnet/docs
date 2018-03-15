@@ -1,7 +1,10 @@
-<Type Name="IAppDomainInfo" FullName="System.Web.Hosting.IAppDomainInfo">
+﻿<Type Name="IAppDomainInfo" FullName="System.Web.Hosting.IAppDomainInfo">
   <TypeSignature Language="C#" Value="public interface IAppDomainInfo" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAppDomainInfo" />
   <TypeSignature Language="DocId" Value="T:System.Web.Hosting.IAppDomainInfo" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAppDomainInfo" />
+  <TypeSignature Language="F#" Value="type IAppDomainInfo = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IAppDomainInfo" />
   <AssemblyInfo>
     <AssemblyName>System.Web</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -12,7 +15,7 @@
       <AttributeName>System.Runtime.InteropServices.Guid("5BC9C234-6CD7-49bf-A07A-6FDB7F22DFFF")</AttributeName>
     </Attribute>
     <Attribute>
-      <AttributeName>System.Runtime.InteropServices.InterfaceType(System.Runtime.InteropServices.ComInterfaceType.InterfaceIsIUnknown)</AttributeName>
+      <AttributeName>System.Runtime.InteropServices.InterfaceType</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public string GetId ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetId() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainInfo.GetId" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetId () As String" />
+      <MemberSignature Language="F#" Value="abstract member GetId : unit -&gt; string" Usage="iAppDomainInfo.GetId " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetId();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -59,6 +65,9 @@
       <MemberSignature Language="C#" Value="public string GetPhysicalPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetPhysicalPath() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainInfo.GetPhysicalPath" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetPhysicalPath () As String" />
+      <MemberSignature Language="F#" Value="abstract member GetPhysicalPath : unit -&gt; string" Usage="iAppDomainInfo.GetPhysicalPath " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetPhysicalPath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -86,6 +95,9 @@
       <MemberSignature Language="C#" Value="public int GetSiteId ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetSiteId() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainInfo.GetSiteId" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSiteId () As Integer" />
+      <MemberSignature Language="F#" Value="abstract member GetSiteId : unit -&gt; int" Usage="iAppDomainInfo.GetSiteId " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int GetSiteId();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -113,6 +125,9 @@
       <MemberSignature Language="C#" Value="public string GetVirtualPath ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetVirtualPath() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainInfo.GetVirtualPath" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetVirtualPath () As String" />
+      <MemberSignature Language="F#" Value="abstract member GetVirtualPath : unit -&gt; string" Usage="iAppDomainInfo.GetVirtualPath " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::String ^ GetVirtualPath();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>
@@ -140,6 +155,9 @@
       <MemberSignature Language="C#" Value="public bool IsIdle ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsIdle() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Web.Hosting.IAppDomainInfo.IsIdle" />
+      <MemberSignature Language="VB.NET" Value="Public Function IsIdle () As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member IsIdle : unit -&gt; bool" Usage="iAppDomainInfo.IsIdle " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool IsIdle();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Web</AssemblyName>

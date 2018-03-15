@@ -1,7 +1,10 @@
-<Type Name="CleanUpVirtualizedItemEventHandler" FullName="System.Windows.Controls.CleanUpVirtualizedItemEventHandler">
+﻿<Type Name="CleanUpVirtualizedItemEventHandler" FullName="System.Windows.Controls.CleanUpVirtualizedItemEventHandler">
   <TypeSignature Language="C#" Value="public delegate void CleanUpVirtualizedItemEventHandler(object sender, CleanUpVirtualizedItemEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CleanUpVirtualizedItemEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Controls.CleanUpVirtualizedItemEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub CleanUpVirtualizedItemEventHandler(sender As Object, e As CleanUpVirtualizedItemEventArgs)" />
+  <TypeSignature Language="F#" Value="type CleanUpVirtualizedItemEventHandler = delegate of obj * CleanUpVirtualizedItemEventArgs -&gt; unit" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void CleanUpVirtualizedItemEventHandler(System::Object ^ sender, CleanUpVirtualizedItemEventArgs ^ e);" />
   <AssemblyInfo>
     <AssemblyName>PresentationFramework</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>

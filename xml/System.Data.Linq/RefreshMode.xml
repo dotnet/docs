@@ -1,7 +1,10 @@
-<Type Name="RefreshMode" FullName="System.Data.Linq.RefreshMode">
+﻿<Type Name="RefreshMode" FullName="System.Data.Linq.RefreshMode">
   <TypeSignature Language="C#" Value="public enum RefreshMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RefreshMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Data.Linq.RefreshMode" />
+  <TypeSignature Language="VB.NET" Value="Public Enum RefreshMode" />
+  <TypeSignature Language="F#" Value="type RefreshMode = " />
+  <TypeSignature Language="C++ CLI" Value="public enum class RefreshMode" />
   <AssemblyInfo>
     <AssemblyName>System.Data.Linq</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -43,6 +46,9 @@
       <MemberSignature Language="C#" Value="KeepChanges" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.RefreshMode KeepChanges = int32(1)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.RefreshMode.KeepChanges" />
+      <MemberSignature Language="VB.NET" Value="KeepChanges" />
+      <MemberSignature Language="F#" Value="KeepChanges = 1" Usage="System.Data.Linq.RefreshMode.KeepChanges" />
+      <MemberSignature Language="C++ CLI" Value="KeepChanges" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -51,6 +57,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Linq.RefreshMode</ReturnType>
       </ReturnValue>
+      <MemberValue>1</MemberValue>
       <Docs>
         <summary>Forces the <see cref="Overload:System.Data.Linq.DataContext.Refresh" /> method to keep the current value that has been changed, but updates the other values with the database values.</summary>
       </Docs>
@@ -59,6 +66,9 @@
       <MemberSignature Language="C#" Value="KeepCurrentValues" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.RefreshMode KeepCurrentValues = int32(0)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.RefreshMode.KeepCurrentValues" />
+      <MemberSignature Language="VB.NET" Value="KeepCurrentValues" />
+      <MemberSignature Language="F#" Value="KeepCurrentValues = 0" Usage="System.Data.Linq.RefreshMode.KeepCurrentValues" />
+      <MemberSignature Language="C++ CLI" Value="KeepCurrentValues" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -67,6 +77,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Linq.RefreshMode</ReturnType>
       </ReturnValue>
+      <MemberValue>0</MemberValue>
       <Docs>
         <summary>Forces the <see cref="Overload:System.Data.Linq.DataContext.Refresh" /> method to swap the original value with the values retrieved from the database. No current value is modified.</summary>
       </Docs>
@@ -75,6 +86,9 @@
       <MemberSignature Language="C#" Value="OverwriteCurrentValues" />
       <MemberSignature Language="ILAsm" Value=".field public static literal valuetype System.Data.Linq.RefreshMode OverwriteCurrentValues = int32(2)" />
       <MemberSignature Language="DocId" Value="F:System.Data.Linq.RefreshMode.OverwriteCurrentValues" />
+      <MemberSignature Language="VB.NET" Value="OverwriteCurrentValues" />
+      <MemberSignature Language="F#" Value="OverwriteCurrentValues = 2" Usage="System.Data.Linq.RefreshMode.OverwriteCurrentValues" />
+      <MemberSignature Language="C++ CLI" Value="OverwriteCurrentValues" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Data.Linq</AssemblyName>
@@ -83,6 +97,7 @@
       <ReturnValue>
         <ReturnType>System.Data.Linq.RefreshMode</ReturnType>
       </ReturnValue>
+      <MemberValue>2</MemberValue>
       <Docs>
         <summary>Forces the <see cref="Overload:System.Data.Linq.DataContext.Refresh" /> method to override all the current values with the values from the database.</summary>
       </Docs>

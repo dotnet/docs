@@ -1,7 +1,10 @@
-<Type Name="CharacterMetricsDictionary" FullName="System.Windows.Media.CharacterMetricsDictionary">
+﻿<Type Name="CharacterMetricsDictionary" FullName="System.Windows.Media.CharacterMetricsDictionary">
   <TypeSignature Language="C#" Value="public sealed class CharacterMetricsDictionary : System.Collections.Generic.ICollection&lt;System.Collections.Generic.KeyValuePair&lt;int,System.Windows.Media.CharacterMetrics&gt;&gt;, System.Collections.Generic.IDictionary&lt;int,System.Windows.Media.CharacterMetrics&gt;, System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;int,System.Windows.Media.CharacterMetrics&gt;&gt;, System.Collections.IDictionary" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit CharacterMetricsDictionary extends System.Object implements class System.Collections.Generic.ICollection`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;int32, class System.Windows.Media.CharacterMetrics&gt;&gt;, class System.Collections.Generic.IDictionary`2&lt;int32, class System.Windows.Media.CharacterMetrics&gt;, class System.Collections.Generic.IEnumerable`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;int32, class System.Windows.Media.CharacterMetrics&gt;&gt;, class System.Collections.ICollection, class System.Collections.IDictionary, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.CharacterMetricsDictionary" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CharacterMetricsDictionary&#xA;Implements ICollection(Of KeyValuePair(Of Integer, CharacterMetrics)), IDictionary, IDictionary(Of Integer, CharacterMetrics), IEnumerable(Of KeyValuePair(Of Integer, CharacterMetrics))" />
+  <TypeSignature Language="F#" Value="type CharacterMetricsDictionary = class&#xA;    interface IDictionary&lt;int, CharacterMetrics&gt;&#xA;    interface ICollection&lt;KeyValuePair&lt;int, CharacterMetrics&gt;&gt;&#xA;    interface seq&lt;KeyValuePair&lt;int, CharacterMetrics&gt;&gt;&#xA;    interface IEnumerable&#xA;    interface IDictionary&#xA;    interface ICollection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class CharacterMetricsDictionary sealed : System::Collections::Generic::ICollection&lt;System::Collections::Generic::KeyValuePair&lt;int, System::Windows::Media::CharacterMetrics ^&gt;&gt;, System::Collections::Generic::IDictionary&lt;int, System::Windows::Media::CharacterMetrics ^&gt;, System::Collections::Generic::IEnumerable&lt;System::Collections::Generic::KeyValuePair&lt;int, System::Windows::Media::CharacterMetrics ^&gt;&gt;, System::Collections::IDictionary" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,11 +31,26 @@
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a character code and associated <see cref="T:System.Windows.Media.CharacterMetrics" /> value to the collection.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (System.Collections.Generic.KeyValuePair&lt;int,System.Windows.Media.CharacterMetrics&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(valuetype System.Collections.Generic.KeyValuePair`2&lt;int32, class System.Windows.Media.CharacterMetrics&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.Add(System.Collections.Generic.KeyValuePair{System.Int32,System.Windows.Media.CharacterMetrics})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (item As KeyValuePair(Of Integer, CharacterMetrics))" />
+      <MemberSignature Language="F#" Value="abstract member Add : System.Collections.Generic.KeyValuePair&lt;int, System.Windows.Media.CharacterMetrics&gt; -&gt; unit&#xA;override this.Add : System.Collections.Generic.KeyValuePair&lt;int, System.Windows.Media.CharacterMetrics&gt; -&gt; unit" Usage="characterMetricsDictionary.Add item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(System::Collections::Generic::KeyValuePair&lt;int, System::Windows::Media::CharacterMetrics ^&gt; item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Add(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -58,7 +76,13 @@
       <MemberSignature Language="C#" Value="public void Add (int key, System.Windows.Media.CharacterMetrics value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Add(int32 key, class System.Windows.Media.CharacterMetrics value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.Add(System.Int32,System.Windows.Media.CharacterMetrics)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Add (key As Integer, value As CharacterMetrics)" />
+      <MemberSignature Language="F#" Value="abstract member Add : int * System.Windows.Media.CharacterMetrics -&gt; unit&#xA;override this.Add : int * System.Windows.Media.CharacterMetrics -&gt; unit" Usage="characterMetricsDictionary.Add (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Add(int key, System::Windows::Media::CharacterMetrics ^ value);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Add(`0,`1)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -81,7 +105,14 @@
       <MemberSignature Language="C#" Value="public void Clear ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clear() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.Clear" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clear ()" />
+      <MemberSignature Language="F#" Value="abstract member Clear : unit -&gt; unit&#xA;override this.Clear : unit -&gt; unit" Usage="characterMetricsDictionary.Clear " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Clear();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Clear</InterfaceMember>
+        <InterfaceMember>M:System.Collections.IDictionary.Clear</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -99,7 +130,13 @@
       <MemberSignature Language="C#" Value="public bool Contains (System.Collections.Generic.KeyValuePair&lt;int,System.Windows.Media.CharacterMetrics&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Contains(valuetype System.Collections.Generic.KeyValuePair`2&lt;int32, class System.Windows.Media.CharacterMetrics&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.Contains(System.Collections.Generic.KeyValuePair{System.Int32,System.Windows.Media.CharacterMetrics})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Contains (item As KeyValuePair(Of Integer, CharacterMetrics)) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Contains : System.Collections.Generic.KeyValuePair&lt;int, System.Windows.Media.CharacterMetrics&gt; -&gt; bool&#xA;override this.Contains : System.Collections.Generic.KeyValuePair&lt;int, System.Windows.Media.CharacterMetrics&gt; -&gt; bool" Usage="characterMetricsDictionary.Contains item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Contains(System::Collections::Generic::KeyValuePair&lt;int, System::Windows::Media::CharacterMetrics ^&gt; item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Contains(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -127,7 +164,13 @@
       <MemberSignature Language="C#" Value="public bool ContainsKey (int key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool ContainsKey(int32 key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.ContainsKey(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ContainsKey (key As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member ContainsKey : int -&gt; bool&#xA;override this.ContainsKey : int -&gt; bool" Usage="characterMetricsDictionary.ContainsKey key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool ContainsKey(int key);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.ContainsKey(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -150,6 +193,9 @@
       <MemberSignature Language="C#" Value="public void CopyTo (System.Collections.Generic.KeyValuePair&lt;int,System.Windows.Media.CharacterMetrics&gt;[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void CopyTo(valuetype System.Collections.Generic.KeyValuePair`2&lt;int32, class System.Windows.Media.CharacterMetrics&gt;[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.CopyTo(System.Collections.Generic.KeyValuePair{System.Int32,System.Windows.Media.CharacterMetrics}[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (array As KeyValuePair(Of Integer, CharacterMetrics)(), index As Integer)" />
+      <MemberSignature Language="F#" Value="abstract member CopyTo : System.Collections.Generic.KeyValuePair&lt;int, System.Windows.Media.CharacterMetrics&gt;[] * int -&gt; unit&#xA;override this.CopyTo : System.Collections.Generic.KeyValuePair&lt;int, System.Windows.Media.CharacterMetrics&gt;[] * int -&gt; unit" Usage="characterMetricsDictionary.CopyTo (array, index)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void CopyTo(cli::array &lt;System::Collections::Generic::KeyValuePair&lt;int, System::Windows::Media::CharacterMetrics ^&gt;&gt; ^ array, int index);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -178,7 +224,13 @@
       <MemberSignature Language="C#" Value="public int Count { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetricsDictionary.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="F#" Value="member this.Count : int" Usage="System.Windows.Media.CharacterMetricsDictionary.Count" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.Count</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -196,7 +248,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;int,System.Windows.Media.CharacterMetrics&gt;&gt; GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IEnumerator`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;int32, class System.Windows.Media.CharacterMetrics&gt;&gt; GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator(Of KeyValuePair(Of Integer, CharacterMetrics))" />
+      <MemberSignature Language="F#" Value="abstract member GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;int, System.Windows.Media.CharacterMetrics&gt;&gt;&#xA;override this.GetEnumerator : unit -&gt; System.Collections.Generic.IEnumerator&lt;System.Collections.Generic.KeyValuePair&lt;int, System.Windows.Media.CharacterMetrics&gt;&gt;" Usage="characterMetricsDictionary.GetEnumerator " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Collections::Generic::IEnumerator&lt;System::Collections::Generic::KeyValuePair&lt;int, System::Windows::Media::CharacterMetrics ^&gt;&gt; ^ GetEnumerator();" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IEnumerable`1.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -220,7 +278,14 @@
       <MemberSignature Language="C#" Value="public bool IsReadOnly { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsReadOnly" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetricsDictionary.IsReadOnly" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsReadOnly As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsReadOnly : bool" Usage="System.Windows.Media.CharacterMetricsDictionary.IsReadOnly" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsReadOnly { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.ICollection`1.IsReadOnly</InterfaceMember>
+        <InterfaceMember>P:System.Collections.IDictionary.IsReadOnly</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -239,7 +304,13 @@
       <MemberSignature Language="C#" Value="public System.Windows.Media.CharacterMetrics this[int key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Media.CharacterMetrics Item(int32)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetricsDictionary.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Property Item(key As Integer) As CharacterMetrics" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Media.CharacterMetrics with get, set" Usage="System.Windows.Media.CharacterMetricsDictionary.Item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Windows::Media::CharacterMetrics ^ default[int] { System::Windows::Media::CharacterMetrics ^ get(int key); void set(int key, System::Windows::Media::CharacterMetrics ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Item(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -261,7 +332,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;int&gt; Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;int32&gt; Keys" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetricsDictionary.Keys" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Keys As ICollection(Of Integer)" />
+      <MemberSignature Language="F#" Value="member this.Keys : System.Collections.Generic.ICollection&lt;int&gt;" Usage="System.Windows.Media.CharacterMetricsDictionary.Keys" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;int&gt; ^ Keys { System::Collections::Generic::ICollection&lt;int&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Keys</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -287,11 +364,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Remove">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the element from <see cref="T:System.Windows.Media.CharacterMetricsDictionary" /> based on the specified character code.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Remove">
       <MemberSignature Language="C#" Value="public bool Remove (System.Collections.Generic.KeyValuePair&lt;int,System.Windows.Media.CharacterMetrics&gt; item);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(valuetype System.Collections.Generic.KeyValuePair`2&lt;int32, class System.Windows.Media.CharacterMetrics&gt; item) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.Remove(System.Collections.Generic.KeyValuePair{System.Int32,System.Windows.Media.CharacterMetrics})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (item As KeyValuePair(Of Integer, CharacterMetrics)) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Remove : System.Collections.Generic.KeyValuePair&lt;int, System.Windows.Media.CharacterMetrics&gt; -&gt; bool&#xA;override this.Remove : System.Collections.Generic.KeyValuePair&lt;int, System.Windows.Media.CharacterMetrics&gt; -&gt; bool" Usage="characterMetricsDictionary.Remove item" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(System::Collections::Generic::KeyValuePair&lt;int, System::Windows::Media::CharacterMetrics ^&gt; item);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.ICollection`1.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -319,7 +411,13 @@
       <MemberSignature Language="C#" Value="public bool Remove (int key);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Remove(int32 key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.Remove(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Remove (key As Integer) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member Remove : int -&gt; bool&#xA;override this.Remove : int -&gt; bool" Usage="characterMetricsDictionary.Remove key" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool Remove(int key);" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.Generic.IDictionary`2.Remove(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -342,7 +440,11 @@
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ array, int index) = System::Collections::ICollection::CopyTo;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -372,7 +474,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.ICollection.IsSynchronized { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.ICollection.IsSynchronized" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetricsDictionary.System#Collections#ICollection#IsSynchronized" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsSynchronized As Boolean Implements ICollection.IsSynchronized" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.CharacterMetricsDictionary.System.Collections.ICollection.IsSynchronized" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.ICollection.IsSynchronized { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.IsSynchronized</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -398,7 +506,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.ICollection.SyncRoot { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.ICollection.SyncRoot" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetricsDictionary.System#Collections#ICollection#SyncRoot" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property SyncRoot As Object Implements ICollection.SyncRoot" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.CharacterMetricsDictionary.System.Collections.ICollection.SyncRoot" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.ICollection.SyncRoot { System::Object ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.ICollection.SyncRoot</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -423,7 +537,12 @@
       <MemberSignature Language="C#" Value="void IDictionary.Add (object key, object value);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Add(object key, object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.System#Collections#IDictionary#Add(System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Add (key As Object, value As Object) Implements IDictionary.Add" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IDictionary.Add(System::Object ^ key, System::Object ^ value) = System::Collections::IDictionary::Add;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IDictionary.Add(System.Object,System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -453,7 +572,12 @@
       <MemberSignature Language="C#" Value="bool IDictionary.Contains (object key);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.Collections.IDictionary.Contains(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.System#Collections#IDictionary#Contains(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Function Contains (key As Object) As Boolean Implements IDictionary.Contains" />
+      <MemberSignature Language="C++ CLI" Value=" virtual bool System.Collections.IDictionary.Contains(System::Object ^ key) = System::Collections::IDictionary::Contains;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IDictionary.Contains(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -484,7 +608,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IDictionaryEnumerator IDictionary.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IDictionaryEnumerator System.Collections.IDictionary.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.System#Collections#IDictionary#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IDictionaryEnumerator Implements IDictionary.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IDictionaryEnumerator ^ System.Collections.IDictionary.GetEnumerator() = System::Collections::IDictionary::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IDictionary.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -511,7 +640,13 @@
       <MemberSignature Language="C#" Value="bool System.Collections.IDictionary.IsFixedSize { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool System.Collections.IDictionary.IsFixedSize" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetricsDictionary.System#Collections#IDictionary#IsFixedSize" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property IsFixedSize As Boolean Implements IDictionary.IsFixedSize" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.CharacterMetricsDictionary.System.Collections.IDictionary.IsFixedSize" />
+      <MemberSignature Language="C++ CLI" Value="property bool System.Collections.IDictionary.IsFixedSize { bool get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionary.IsFixedSize</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -537,7 +672,13 @@
       <MemberSignature Language="C#" Value="object System.Collections.IDictionary.Item[object key] { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object System.Collections.IDictionary.Item(object)" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetricsDictionary.System#Collections#IDictionary#Item(System.Object)" />
+      <MemberSignature Language="VB.NET" Value=" Property Item(key As Object) As Object Implements IDictionary.Item" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.CharacterMetricsDictionary.System.Collections.IDictionary.Item" />
+      <MemberSignature Language="C++ CLI" Value="property System::Object ^ System.Collections.IDictionary.Item[System::Object ^] { System::Object ^ get(System::Object ^ key); void set(System::Object ^ key, System::Object ^ value); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionary.Item(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -567,7 +708,13 @@
       <MemberSignature Language="C#" Value="System.Collections.ICollection System.Collections.IDictionary.Keys { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Keys" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetricsDictionary.System#Collections#IDictionary#Keys" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Keys As ICollection Implements IDictionary.Keys" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.CharacterMetricsDictionary.System.Collections.IDictionary.Keys" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Keys { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionary.Keys</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -593,7 +740,12 @@
       <MemberSignature Language="C#" Value="void IDictionary.Remove (object key);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.IDictionary.Remove(object key) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.System#Collections#IDictionary#Remove(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Sub Remove (key As Object) Implements IDictionary.Remove" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.IDictionary.Remove(System::Object ^ key) = System::Collections::IDictionary::Remove;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IDictionary.Remove(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -622,7 +774,13 @@
       <MemberSignature Language="C#" Value="System.Collections.ICollection System.Collections.IDictionary.Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.ICollection System.Collections.IDictionary.Values" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetricsDictionary.System#Collections#IDictionary#Values" />
+      <MemberSignature Language="VB.NET" Value=" ReadOnly Property Values As ICollection Implements IDictionary.Values" />
+      <MemberSignature Language="F#" Usage="System.Windows.Media.CharacterMetricsDictionary.System.Collections.IDictionary.Values" />
+      <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System.Collections.IDictionary.Values { System::Collections::ICollection ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.IDictionary.Values</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -648,7 +806,12 @@
       <MemberSignature Language="C#" Value="System.Collections.IEnumerator IEnumerable.GetEnumerator ();" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance class System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.System#Collections#IEnumerable#GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Function GetEnumerator () As IEnumerator Implements IEnumerable.GetEnumerator" />
+      <MemberSignature Language="C++ CLI" Value=" virtual System::Collections::IEnumerator ^ System.Collections.IEnumerable.GetEnumerator() = System::Collections::IEnumerable::GetEnumerator;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -675,6 +838,9 @@
       <MemberSignature Language="C#" Value="public bool TryGetValue (int key, out System.Windows.Media.CharacterMetrics value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool TryGetValue(int32 key, [out] class System.Windows.Media.CharacterMetrics&amp; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.CharacterMetricsDictionary.TryGetValue(System.Int32,System.Windows.Media.CharacterMetrics@)" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryGetValue (key As Integer, ByRef value As CharacterMetrics) As Boolean" />
+      <MemberSignature Language="F#" Value="abstract member TryGetValue : int *  -&gt; bool&#xA;override this.TryGetValue : int *  -&gt; bool" Usage="characterMetricsDictionary.TryGetValue (key, value)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool TryGetValue(int key, [Runtime::InteropServices::Out] System::Windows::Media::CharacterMetrics ^ % value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -707,7 +873,13 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.ICollection&lt;System.Windows.Media.CharacterMetrics&gt; Values { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Collections.Generic.ICollection`1&lt;class System.Windows.Media.CharacterMetrics&gt; Values" />
       <MemberSignature Language="DocId" Value="P:System.Windows.Media.CharacterMetricsDictionary.Values" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Values As ICollection(Of CharacterMetrics)" />
+      <MemberSignature Language="F#" Value="member this.Values : System.Collections.Generic.ICollection&lt;System.Windows.Media.CharacterMetrics&gt;" Usage="System.Windows.Media.CharacterMetricsDictionary.Values" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Collections::Generic::ICollection&lt;System::Windows::Media::CharacterMetrics ^&gt; ^ Values { System::Collections::Generic::ICollection&lt;System::Windows::Media::CharacterMetrics ^&gt; ^ get(); };" />
       <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:System.Collections.Generic.IDictionary`2.Values</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -726,23 +898,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Remove">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the element from <see cref="T:System.Windows.Media.CharacterMetricsDictionary" /> based on the specified character code.</summary>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a character code and associated <see cref="T:System.Windows.Media.CharacterMetrics" /> value to the collection.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

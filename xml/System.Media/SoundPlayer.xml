@@ -1,7 +1,10 @@
-<Type Name="SoundPlayer" FullName="System.Media.SoundPlayer">
+﻿<Type Name="SoundPlayer" FullName="System.Media.SoundPlayer">
   <TypeSignature Language="C#" Value="public class SoundPlayer : System.ComponentModel.Component, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable SoundPlayer extends System.ComponentModel.Component implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Media.SoundPlayer" />
+  <TypeSignature Language="VB.NET" Value="Public Class SoundPlayer&#xA;Inherits Component&#xA;Implements ISerializable" />
+  <TypeSignature Language="F#" Value="type SoundPlayer = class&#xA;    inherit Component&#xA;    interface ISerializable" />
+  <TypeSignature Language="C++ CLI" Value="public ref class SoundPlayer : System::ComponentModel::Component, System::Runtime::Serialization::ISerializable" />
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -52,10 +55,21 @@
     <altmember cref="T:System.Media.SystemSounds" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Media.SoundPlayer" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SoundPlayer ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoundPlayer();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -78,6 +92,8 @@
       <MemberSignature Language="C#" Value="public SoundPlayer (System.IO.Stream stream);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.IO.Stream stream) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.#ctor(System.IO.Stream)" />
+      <MemberSignature Language="F#" Value="new System.Media.SoundPlayer : System.IO.Stream -&gt; System.Media.SoundPlayer" Usage="new System.Media.SoundPlayer stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoundPlayer(System::IO::Stream ^ stream);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -103,6 +119,9 @@
       <MemberSignature Language="C#" Value="public SoundPlayer (string soundLocation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string soundLocation) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (soundLocation As String)" />
+      <MemberSignature Language="F#" Value="new System.Media.SoundPlayer : string -&gt; System.Media.SoundPlayer" Usage="new System.Media.SoundPlayer soundLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; SoundPlayer(System::String ^ soundLocation);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -129,6 +148,8 @@
       <MemberSignature Language="C#" Value="protected SoundPlayer (System.Runtime.Serialization.SerializationInfo serializationInfo, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig specialname rtspecialname instance void .ctor(class System.Runtime.Serialization.SerializationInfo serializationInfo, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="F#" Value="new System.Media.SoundPlayer : System.Runtime.Serialization.SerializationInfo * System.Runtime.Serialization.StreamingContext -&gt; System.Media.SoundPlayer" Usage="new System.Media.SoundPlayer (serializationInfo, context)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; SoundPlayer(System::Runtime::Serialization::SerializationInfo ^ serializationInfo, System::Runtime::Serialization::StreamingContext context);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -150,6 +171,9 @@
       <MemberSignature Language="C#" Value="public bool IsLoadCompleted { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLoadCompleted" />
       <MemberSignature Language="DocId" Value="P:System.Media.SoundPlayer.IsLoadCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsLoadCompleted As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsLoadCompleted : bool" Usage="System.Media.SoundPlayer.IsLoadCompleted" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool IsLoadCompleted { bool get(); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -169,6 +193,9 @@
       <MemberSignature Language="C#" Value="public void Load ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Load() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.Load" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Load ()" />
+      <MemberSignature Language="F#" Value="member this.Load : unit -&gt; unit" Usage="soundPlayer.Load " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Load();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -213,6 +240,9 @@
       <MemberSignature Language="C#" Value="public void LoadAsync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadAsync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.LoadAsync" />
+      <MemberSignature Language="VB.NET" Value="Public Sub LoadAsync ()" />
+      <MemberSignature Language="F#" Value="member this.LoadAsync : unit -&gt; unit" Usage="soundPlayer.LoadAsync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void LoadAsync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -257,6 +287,9 @@
       <MemberSignature Language="C#" Value="public event System.ComponentModel.AsyncCompletedEventHandler LoadCompleted;" />
       <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.AsyncCompletedEventHandler LoadCompleted" />
       <MemberSignature Language="DocId" Value="E:System.Media.SoundPlayer.LoadCompleted" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event LoadCompleted As AsyncCompletedEventHandler " />
+      <MemberSignature Language="F#" Value="member this.LoadCompleted : System.ComponentModel.AsyncCompletedEventHandler " Usage="member this.LoadCompleted : System.ComponentModel.AsyncCompletedEventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event System::ComponentModel::AsyncCompletedEventHandler ^ LoadCompleted;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -293,6 +326,9 @@
       <MemberSignature Language="C#" Value="public int LoadTimeout { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 LoadTimeout" />
       <MemberSignature Language="DocId" Value="P:System.Media.SoundPlayer.LoadTimeout" />
+      <MemberSignature Language="VB.NET" Value="Public Property LoadTimeout As Integer" />
+      <MemberSignature Language="F#" Value="member this.LoadTimeout : int with get, set" Usage="System.Media.SoundPlayer.LoadTimeout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int LoadTimeout { int get(); void set(int value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -318,6 +354,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnLoadCompleted (System.ComponentModel.AsyncCompletedEventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnLoadCompleted(class System.ComponentModel.AsyncCompletedEventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.OnLoadCompleted(System.ComponentModel.AsyncCompletedEventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnLoadCompleted (e As AsyncCompletedEventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnLoadCompleted : System.ComponentModel.AsyncCompletedEventArgs -&gt; unit&#xA;override this.OnLoadCompleted : System.ComponentModel.AsyncCompletedEventArgs -&gt; unit" Usage="soundPlayer.OnLoadCompleted e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnLoadCompleted(System::ComponentModel::AsyncCompletedEventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -354,6 +393,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnSoundLocationChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnSoundLocationChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.OnSoundLocationChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnSoundLocationChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnSoundLocationChanged : EventArgs -&gt; unit&#xA;override this.OnSoundLocationChanged : EventArgs -&gt; unit" Usage="soundPlayer.OnSoundLocationChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnSoundLocationChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -390,6 +432,9 @@
       <MemberSignature Language="C#" Value="protected virtual void OnStreamChanged (EventArgs e);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnStreamChanged(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.OnStreamChanged(System.EventArgs)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnStreamChanged (e As EventArgs)" />
+      <MemberSignature Language="F#" Value="abstract member OnStreamChanged : EventArgs -&gt; unit&#xA;override this.OnStreamChanged : EventArgs -&gt; unit" Usage="soundPlayer.OnStreamChanged e" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnStreamChanged(EventArgs ^ e);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -426,6 +471,9 @@
       <MemberSignature Language="C#" Value="public void Play ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Play() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.Play" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Play ()" />
+      <MemberSignature Language="F#" Value="member this.Play : unit -&gt; unit" Usage="soundPlayer.Play " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Play();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -469,6 +517,9 @@
       <MemberSignature Language="C#" Value="public void PlayLooping ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PlayLooping() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.PlayLooping" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PlayLooping ()" />
+      <MemberSignature Language="F#" Value="member this.PlayLooping : unit -&gt; unit" Usage="soundPlayer.PlayLooping " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PlayLooping();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -514,6 +565,9 @@
       <MemberSignature Language="C#" Value="public void PlaySync ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void PlaySync() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.PlaySync" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PlaySync ()" />
+      <MemberSignature Language="F#" Value="member this.PlaySync : unit -&gt; unit" Usage="soundPlayer.PlaySync " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PlaySync();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -557,6 +611,9 @@
       <MemberSignature Language="C#" Value="public string SoundLocation { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string SoundLocation" />
       <MemberSignature Language="DocId" Value="P:System.Media.SoundPlayer.SoundLocation" />
+      <MemberSignature Language="VB.NET" Value="Public Property SoundLocation As String" />
+      <MemberSignature Language="F#" Value="member this.SoundLocation : string with get, set" Usage="System.Media.SoundPlayer.SoundLocation" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ SoundLocation { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -592,6 +649,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler SoundLocationChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler SoundLocationChanged" />
       <MemberSignature Language="DocId" Value="E:System.Media.SoundPlayer.SoundLocationChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event SoundLocationChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.SoundLocationChanged : EventHandler " Usage="member this.SoundLocationChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ SoundLocationChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -627,6 +687,9 @@
       <MemberSignature Language="C#" Value="public void Stop ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Stop() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.Stop" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Stop ()" />
+      <MemberSignature Language="F#" Value="member this.Stop : unit -&gt; unit" Usage="soundPlayer.Stop " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Stop();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -657,6 +720,9 @@
       <MemberSignature Language="C#" Value="public System.IO.Stream Stream { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.IO.Stream Stream" />
       <MemberSignature Language="DocId" Value="P:System.Media.SoundPlayer.Stream" />
+      <MemberSignature Language="VB.NET" Value="Public Property Stream As Stream" />
+      <MemberSignature Language="F#" Value="member this.Stream : System.IO.Stream with get, set" Usage="System.Media.SoundPlayer.Stream" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::IO::Stream ^ Stream { System::IO::Stream ^ get(); void set(System::IO::Stream ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -683,6 +749,9 @@
       <MemberSignature Language="C#" Value="public event EventHandler StreamChanged;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler StreamChanged" />
       <MemberSignature Language="DocId" Value="E:System.Media.SoundPlayer.StreamChanged" />
+      <MemberSignature Language="VB.NET" Value="Public Custom Event StreamChanged As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.StreamChanged : EventHandler " Usage="member this.StreamChanged : System.EventHandler " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; event EventHandler ^ StreamChanged;" />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -709,7 +778,12 @@
       <MemberSignature Language="C#" Value="void ISerializable.GetObjectData (System.Runtime.Serialization.SerializationInfo info, System.Runtime.Serialization.StreamingContext context);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Runtime.Serialization.ISerializable.GetObjectData(class System.Runtime.Serialization.SerializationInfo info, valuetype System.Runtime.Serialization.StreamingContext context) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Media.SoundPlayer.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" />
+      <MemberSignature Language="VB.NET" Value="Sub GetObjectData (info As SerializationInfo, context As StreamingContext) Implements ISerializable.GetObjectData" />
+      <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.Serialization.ISerializable.GetObjectData(System::Runtime::Serialization::SerializationInfo ^ info, System::Runtime::Serialization::StreamingContext context) = System::Runtime::Serialization::ISerializable::GetObjectData;" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -739,6 +813,9 @@
       <MemberSignature Language="C#" Value="public object Tag { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance object Tag" />
       <MemberSignature Language="DocId" Value="P:System.Media.SoundPlayer.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public Property Tag As Object" />
+      <MemberSignature Language="F#" Value="member this.Tag : obj with get, set" Usage="System.Media.SoundPlayer.Tag" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Tag { System::Object ^ get(); void set(System::Object ^ value); };" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -753,14 +830,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Media.SoundPlayer" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

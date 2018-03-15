@@ -1,7 +1,10 @@
-<Type Name="IEnumConnectionPoints" FullName="System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints">
+﻿<Type Name="IEnumConnectionPoints" FullName="System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints">
   <TypeSignature Language="C#" Value="public interface IEnumConnectionPoints" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IEnumConnectionPoints" />
   <TypeSignature Language="DocId" Value="T:System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IEnumConnectionPoints" />
+  <TypeSignature Language="F#" Value="type IEnumConnectionPoints = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IEnumConnectionPoints" />
   <AssemblyInfo>
     <AssemblyName>System.Runtime.InteropServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -47,6 +50,9 @@
       <MemberSignature Language="C#" Value="public void Clone (out System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints ppenum);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Clone([out] class System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints&amp; ppenum) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints.Clone(System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints@)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Clone (ByRef ppenum As IEnumConnectionPoints)" />
+      <MemberSignature Language="F#" Value="abstract member Clone :  -&gt; unit" Usage="iEnumConnectionPoints.Clone ppenum" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Clone([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumConnectionPoints ^ % ppenum);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -89,6 +95,9 @@
       <MemberSignature Language="C#" Value="public int Next (int celt, System.Runtime.InteropServices.ComTypes.IConnectionPoint[] rgelt, IntPtr pceltFetched);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Next(int32 celt, [out] class System.Runtime.InteropServices.ComTypes.IConnectionPoint[] rgelt, native int pceltFetched) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints.Next(System.Int32,System.Runtime.InteropServices.ComTypes.IConnectionPoint[],System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Next (celt As Integer, rgelt As IConnectionPoint(), pceltFetched As IntPtr) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Next : int * System.Runtime.InteropServices.ComTypes.IConnectionPoint[] * nativeint -&gt; int" Usage="iEnumConnectionPoints.Next (celt, rgelt, pceltFetched)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Next(int celt, cli::array &lt;System::Runtime::InteropServices::ComTypes::IConnectionPoint ^&gt; ^ rgelt, IntPtr pceltFetched);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -137,6 +146,9 @@
       <MemberSignature Language="C#" Value="public void Reset ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="F#" Value="abstract member Reset : unit -&gt; unit" Usage="iEnumConnectionPoints.Reset " />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>
@@ -176,6 +188,9 @@
       <MemberSignature Language="C#" Value="public int Skip (int celt);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 Skip(int32 celt) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Runtime.InteropServices.ComTypes.IEnumConnectionPoints.Skip(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Skip (celt As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="abstract member Skip : int -&gt; int" Usage="iEnumConnectionPoints.Skip celt" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; int Skip(int celt);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Runtime.InteropServices</AssemblyName>

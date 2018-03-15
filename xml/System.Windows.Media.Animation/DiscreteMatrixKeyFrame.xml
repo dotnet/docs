@@ -1,7 +1,10 @@
-<Type Name="DiscreteMatrixKeyFrame" FullName="System.Windows.Media.Animation.DiscreteMatrixKeyFrame">
+﻿<Type Name="DiscreteMatrixKeyFrame" FullName="System.Windows.Media.Animation.DiscreteMatrixKeyFrame">
   <TypeSignature Language="C#" Value="public class DiscreteMatrixKeyFrame : System.Windows.Media.Animation.MatrixKeyFrame" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DiscreteMatrixKeyFrame extends System.Windows.Media.Animation.MatrixKeyFrame" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Media.Animation.DiscreteMatrixKeyFrame" />
+  <TypeSignature Language="VB.NET" Value="Public Class DiscreteMatrixKeyFrame&#xA;Inherits MatrixKeyFrame" />
+  <TypeSignature Language="F#" Value="type DiscreteMatrixKeyFrame = class&#xA;    inherit MatrixKeyFrame" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DiscreteMatrixKeyFrame : System::Windows::Media::Animation::MatrixKeyFrame" />
   <AssemblyInfo>
     <AssemblyName>PresentationCore</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
@@ -28,10 +31,21 @@
     <altmember cref="T:System.Windows.Media.Animation.MatrixKeyFrameCollection" />
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DiscreteMatrixKeyFrame" /> class.</summary>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public DiscreteMatrixKeyFrame ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteMatrixKeyFrame.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteMatrixKeyFrame();" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -47,6 +61,9 @@
       <MemberSignature Language="C#" Value="public DiscreteMatrixKeyFrame (System.Windows.Media.Matrix value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Matrix value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteMatrixKeyFrame.#ctor(System.Windows.Media.Matrix)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (value As Matrix)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.DiscreteMatrixKeyFrame : System.Windows.Media.Matrix -&gt; System.Windows.Media.Animation.DiscreteMatrixKeyFrame" Usage="new System.Windows.Media.Animation.DiscreteMatrixKeyFrame value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteMatrixKeyFrame(System::Windows::Media::Matrix value);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -65,6 +82,8 @@
       <MemberSignature Language="C#" Value="public DiscreteMatrixKeyFrame (System.Windows.Media.Matrix value, System.Windows.Media.Animation.KeyTime keyTime);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Media.Matrix value, valuetype System.Windows.Media.Animation.KeyTime keyTime) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteMatrixKeyFrame.#ctor(System.Windows.Media.Matrix,System.Windows.Media.Animation.KeyTime)" />
+      <MemberSignature Language="F#" Value="new System.Windows.Media.Animation.DiscreteMatrixKeyFrame : System.Windows.Media.Matrix * System.Windows.Media.Animation.KeyTime -&gt; System.Windows.Media.Animation.DiscreteMatrixKeyFrame" Usage="new System.Windows.Media.Animation.DiscreteMatrixKeyFrame (value, keyTime)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; DiscreteMatrixKeyFrame(System::Windows::Media::Matrix value, System::Windows::Media::Animation::KeyTime keyTime);" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -85,6 +104,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Freezable CreateInstanceCore ();" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance class System.Windows.Freezable CreateInstanceCore() cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteMatrixKeyFrame.CreateInstanceCore" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function CreateInstanceCore () As Freezable" />
+      <MemberSignature Language="F#" Value="override this.CreateInstanceCore : unit -&gt; System.Windows.Freezable" Usage="discreteMatrixKeyFrame.CreateInstanceCore " />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Freezable ^ CreateInstanceCore();" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -105,6 +127,9 @@
       <MemberSignature Language="C#" Value="protected override System.Windows.Media.Matrix InterpolateValueCore (System.Windows.Media.Matrix baseValue, double keyFrameProgress);" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance valuetype System.Windows.Media.Matrix InterpolateValueCore(valuetype System.Windows.Media.Matrix baseValue, float64 keyFrameProgress) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Media.Animation.DiscreteMatrixKeyFrame.InterpolateValueCore(System.Windows.Media.Matrix,System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Protected Overrides Function InterpolateValueCore (baseValue As Matrix, keyFrameProgress As Double) As Matrix" />
+      <MemberSignature Language="F#" Value="override this.InterpolateValueCore : System.Windows.Media.Matrix * double -&gt; System.Windows.Media.Matrix" Usage="discreteMatrixKeyFrame.InterpolateValueCore (baseValue, keyFrameProgress)" />
+      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override System::Windows::Media::Matrix InterpolateValueCore(System::Windows::Media::Matrix baseValue, double keyFrameProgress);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>PresentationCore</AssemblyName>
@@ -125,14 +150,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Media.Animation.DiscreteMatrixKeyFrame" /> class.</summary>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

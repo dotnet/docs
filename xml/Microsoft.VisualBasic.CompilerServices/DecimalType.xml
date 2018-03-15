@@ -1,7 +1,10 @@
-<Type Name="DecimalType" FullName="Microsoft.VisualBasic.CompilerServices.DecimalType">
+﻿<Type Name="DecimalType" FullName="Microsoft.VisualBasic.CompilerServices.DecimalType">
   <TypeSignature Language="C#" Value="public sealed class DecimalType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DecimalType extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.VisualBasic.CompilerServices.DecimalType" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class DecimalType" />
+  <TypeSignature Language="F#" Value="type DecimalType = class" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DecimalType sealed" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.VisualBasic</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -32,6 +35,9 @@
       <MemberSignature Language="C#" Value="public static decimal FromBoolean (bool Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Decimal FromBoolean(bool Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DecimalType.FromBoolean(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromBoolean (Value As Boolean) As Decimal" />
+      <MemberSignature Language="F#" Value="static member FromBoolean : bool -&gt; decimal" Usage="Microsoft.VisualBasic.CompilerServices.DecimalType.FromBoolean Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal FromBoolean(bool Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -79,6 +85,9 @@
       <MemberSignature Language="C#" Value="public static decimal FromObject (object Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Decimal FromObject(object Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DecimalType.FromObject(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromObject (Value As Object) As Decimal" />
+      <MemberSignature Language="F#" Value="static member FromObject : obj -&gt; decimal" Usage="Microsoft.VisualBasic.CompilerServices.DecimalType.FromObject Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal FromObject(System::Object ^ Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -109,6 +118,9 @@
       <MemberSignature Language="C#" Value="public static decimal FromObject (object Value, System.Globalization.NumberFormatInfo NumberFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Decimal FromObject(object Value, class System.Globalization.NumberFormatInfo NumberFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DecimalType.FromObject(System.Object,System.Globalization.NumberFormatInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromObject (Value As Object, NumberFormat As NumberFormatInfo) As Decimal" />
+      <MemberSignature Language="F#" Value="static member FromObject : obj * System.Globalization.NumberFormatInfo -&gt; decimal" Usage="Microsoft.VisualBasic.CompilerServices.DecimalType.FromObject (Value, NumberFormat)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal FromObject(System::Object ^ Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -158,6 +170,9 @@
       <MemberSignature Language="C#" Value="public static decimal FromString (string Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Decimal FromString(string Value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DecimalType.FromString(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (Value As String) As Decimal" />
+      <MemberSignature Language="F#" Value="static member FromString : string -&gt; decimal" Usage="Microsoft.VisualBasic.CompilerServices.DecimalType.FromString Value" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal FromString(System::String ^ Value);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -188,6 +203,9 @@
       <MemberSignature Language="C#" Value="public static decimal FromString (string Value, System.Globalization.NumberFormatInfo NumberFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Decimal FromString(string Value, class System.Globalization.NumberFormatInfo NumberFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DecimalType.FromString(System.String,System.Globalization.NumberFormatInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromString (Value As String, NumberFormat As NumberFormatInfo) As Decimal" />
+      <MemberSignature Language="F#" Value="static member FromString : string * System.Globalization.NumberFormatInfo -&gt; decimal" Usage="Microsoft.VisualBasic.CompilerServices.DecimalType.FromString (Value, NumberFormat)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal FromString(System::String ^ Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>
@@ -220,6 +238,9 @@
       <MemberSignature Language="C#" Value="public static decimal Parse (string Value, System.Globalization.NumberFormatInfo NumberFormat);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Decimal Parse(string Value, class System.Globalization.NumberFormatInfo NumberFormat) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.VisualBasic.CompilerServices.DecimalType.Parse(System.String,System.Globalization.NumberFormatInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Parse (Value As String, NumberFormat As NumberFormatInfo) As Decimal" />
+      <MemberSignature Language="F#" Value="static member Parse : string * System.Globalization.NumberFormatInfo -&gt; decimal" Usage="Microsoft.VisualBasic.CompilerServices.DecimalType.Parse (Value, NumberFormat)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; static System::Decimal Parse(System::String ^ Value, System::Globalization::NumberFormatInfo ^ NumberFormat);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.VisualBasic</AssemblyName>

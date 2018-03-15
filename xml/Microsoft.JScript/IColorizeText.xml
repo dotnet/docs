@@ -1,7 +1,10 @@
-<Type Name="IColorizeText" FullName="Microsoft.JScript.IColorizeText">
+﻿<Type Name="IColorizeText" FullName="Microsoft.JScript.IColorizeText">
   <TypeSignature Language="C#" Value="public interface IColorizeText" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IColorizeText" />
   <TypeSignature Language="DocId" Value="T:Microsoft.JScript.IColorizeText" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IColorizeText" />
+  <TypeSignature Language="F#" Value="type IColorizeText = interface" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IColorizeText" />
   <AssemblyInfo>
     <AssemblyName>Microsoft.JScript</AssemblyName>
     <AssemblyVersion>10.0.0.0</AssemblyVersion>
@@ -30,6 +33,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.ITokenEnumerator Colorize (string sourceCode, Microsoft.JScript.SourceState state);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.JScript.ITokenEnumerator Colorize(string sourceCode, valuetype Microsoft.JScript.SourceState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IColorizeText.Colorize(System.String,Microsoft.JScript.SourceState)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Colorize (sourceCode As String, state As SourceState) As ITokenEnumerator" />
+      <MemberSignature Language="F#" Value="abstract member Colorize : string * Microsoft.JScript.SourceState -&gt; Microsoft.JScript.ITokenEnumerator" Usage="iColorizeText.Colorize (sourceCode, state)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::ITokenEnumerator ^ Colorize(System::String ^ sourceCode, Microsoft::JScript::SourceState state);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
@@ -59,6 +65,9 @@
       <MemberSignature Language="C#" Value="public Microsoft.JScript.SourceState GetStateForText (string sourceCode, Microsoft.JScript.SourceState currentState);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.JScript.SourceState GetStateForText(string sourceCode, valuetype Microsoft.JScript.SourceState currentState) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.JScript.IColorizeText.GetStateForText(System.String,Microsoft.JScript.SourceState)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStateForText (sourceCode As String, currentState As SourceState) As SourceState" />
+      <MemberSignature Language="F#" Value="abstract member GetStateForText : string * Microsoft.JScript.SourceState -&gt; Microsoft.JScript.SourceState" Usage="iColorizeText.GetStateForText (sourceCode, currentState)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::JScript::SourceState GetStateForText(System::String ^ sourceCode, Microsoft::JScript::SourceState currentState);" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>Microsoft.JScript</AssemblyName>
